@@ -334,7 +334,13 @@ export const decks: Deck[] = [
       delivery: "Digital download through Gumroad",
     },
     topicCoverage: [],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question: "poupar",
+        answer: "to save (money) — Tento poupar uma parte do meu salário. (I try to save a part of my salary.)",
+        imageUrl: "/samples/ciple-b1-portuguese-anki-deck-sample-1.png",
+      },
+    ],
     faqs: [
       {
         question: "What is the CIPLE B1 exam?",
@@ -372,7 +378,13 @@ export const decks: Deck[] = [
       delivery: "Digital download through Gumroad (159 MB)",
     },
     topicCoverage: [],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question: "impôt",
+        answer: "tax — Elle paie son impôt au bureau. (She pays her tax at the office.)",
+        imageUrl: "/samples/delf-b2-french-anki-deck-sample-1.png",
+      },
+    ],
     faqs: [
       {
         question: "What is the DELF B2 exam?",
@@ -414,7 +426,13 @@ export const decks: Deck[] = [
       delivery: "Digital download through Gumroad",
     },
     topicCoverage: [],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question: "avoir",
+        answer: "have — J'ai une tasse chaude de café. (I have a hot cup of coffee.) Frequency rank: 11.",
+        imageUrl: "/samples/delf-tcf-a2-french-anki-deck-sample-1.png",
+      },
+    ],
     faqs: [
       {
         question: "What exams does this deck cover?",
@@ -448,7 +466,13 @@ export const decks: Deck[] = [
       delivery: "Digital download through Gumroad (82.9 MB)",
     },
     topicCoverage: [],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question: "ik / jij",
+        answer: "I / you — Example: Ik sta hier alleen. (I stand here alone.) Includes native audio and bilingual example sentences.",
+        imageUrl: "/samples/dutch-a2-inburgering-anki-deck-sample-1.png",
+      },
+    ],
     faqs: [
       {
         question: "What is the Dutch Inburgering exam?",
@@ -524,7 +548,13 @@ export const decks: Deck[] = [
       delivery: "Digital download through Gumroad",
     },
     topicCoverage: [],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question: "cattivo",
+        answer: "mean — Lui sembra cattivo e poco amichevole. (He looks mean and unfriendly.)",
+        imageUrl: "/samples/celi-b1-italian-anki-deck-sample-1.png",
+      },
+    ],
     faqs: [
       {
         question: "What is the CELI B1 exam?",
@@ -560,7 +590,13 @@ export const decks: Deck[] = [
       delivery: "Digital download through Gumroad",
     },
     topicCoverage: [],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question: "Condensation reaction",
+        answer: "A reaction joining two monomers by forming a covalent bond with the release of one water molecule. Includes peptide bond and glycosidic bond examples.",
+        imageUrl: "/samples/ib-biology-sl-anki-deck-sample-1.png",
+      },
+    ],
     faqs: [
       {
         question: "What IB Biology topics are covered?",
@@ -600,7 +636,13 @@ export const decks: Deck[] = [
       delivery: "Digital download through Gumroad",
     },
     topicCoverage: [],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question: "What is the LME carry trade in metals?",
+        answer: "Buying physical metal (cash) and simultaneously selling 3-month futures to capture the contango. Profit = contango minus storage and financing costs.",
+        imageUrl: "/samples/bench-energy-metal-trader-anki-deck-sample-1.png",
+      },
+    ],
     faqs: [
       {
         question: "What does the Metal Trader's Lexicon cover?",

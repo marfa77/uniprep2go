@@ -21,10 +21,7 @@
   - Ultimate Commodity Trader Pack (3-in-1) — $39, bundle на Gumroad
   - Metal уже добавлен; Oil и Coal — нет
 
-- [ ] **Sample cards для колод без превью**
-  - Сейчас пустые `sampleCards[]` у language / professional / academic decks
-  - Без скриншотов падает конверсия на `/decks/[slug]`
-  - Источник: экспорт 2–3 карточек из `.apkg` или скриншоты с Gumroad
+- [x] **Sample cards для колод без превью** — скриншоты карточек с Gumroad (7 колод; CIPLE A2 и German A2 — на Gumroad нет card preview)
 
 ---
 
