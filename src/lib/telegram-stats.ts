@@ -33,6 +33,7 @@ export function toTelegramStatsMessage(stats: FunnelStats) {
     "",
     `Window started: ${stats.startedAt ?? "n/a"}`,
     `Last event: ${stats.updatedAt ?? "n/a"}`,
+    `Storage: ${stats.storage}`,
     "",
     "Top sources:",
     topSources || "- no source data yet",

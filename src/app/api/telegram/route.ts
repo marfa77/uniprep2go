@@ -26,7 +26,7 @@ export async function POST(request: Request) {
     return Response.json({ ok: false, error: "TELEGRAM_BOT_TOKEN is not configured" }, { status: 500 });
   }
 
-  const message = toTelegramStatsMessage(getFunnelStats());
+  const message = toTelegramStatsMessage(await getFunnelStats());
   const response = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
     method: "POST",
     headers: {

@@ -28,11 +28,13 @@ describe("telegram stats", () => {
       recentEvents: [],
       startedAt: "2026-05-31T15:00:00.000Z",
       updatedAt: "2026-05-31T15:10:00.000Z",
+      storage: "redis",
     };
 
     expect(toTelegramStatsMessage(stats)).toContain("UniPrep2Go funnel stats");
     expect(toTelegramStatsMessage(stats)).toContain("Page views: 3");
     expect(toTelegramStatsMessage(stats)).toContain("Gumroad clicks: 1");
     expect(toTelegramStatsMessage(stats)).toContain("CTA rate: 33.3%");
+    expect(toTelegramStatsMessage(stats)).toContain("Storage: redis");
   });
 });

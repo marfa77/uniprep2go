@@ -10,7 +10,7 @@ export async function POST(request: Request) {
     });
 
     console.info("[funnel_event]", JSON.stringify(event));
-    recordFunnelEvent(event);
+    await recordFunnelEvent(event);
 
     return new Response(null, { status: 204 });
   } catch (error) {
