@@ -25,11 +25,24 @@ export type SampleCard = {
   imageUrl: string;
 };
 
+export type ImportStep = {
+  title: string;
+  detail: string;
+};
+
+export type ComparisonRow = {
+  dimension: string;
+  deck: string;
+  curriculum: string;
+};
+
 type BaseDeck = {
   slug: string;
   title: string;
   shortName: string;
   subtitle: string;
+  directAnswer: string;
+  lastUpdated: string;
   audience: string;
   format: ".apkg" | ".csv" | "PDF";
   sampleUrl?: string;
@@ -37,6 +50,8 @@ type BaseDeck = {
   topicCoverage: TopicCoverage[];
   sampleCards: SampleCard[];
   faqs: DeckFaq[];
+  importSteps?: ImportStep[];
+  comparison?: ComparisonRow[];
 };
 
 export type DeckPrice = {
@@ -77,6 +92,9 @@ export const decks: Deck[] = [
     title: "CFA Level 1 Mastery: 342+ Smart Anki Flashcards",
     shortName: "CFA Level 1 Anki Deck",
     subtitle: "A concise Anki deck for CFA Level 1 candidates using spaced repetition.",
+    directAnswer:
+      "UniPrep2Go sells an independent CFA Level 1 Anki deck with 342+ flashcards covering all 10 CFA Level 1 topic areas, including core formulas and definitions. It is delivered as an Anki .apkg file for $11 USD through Gumroad. The deck is a supplementary spaced-repetition study aid for the 2026 exam cycle and is not official CFA Institute material or a replacement for the curriculum.",
+    lastUpdated: "2026-05-31",
     audience: "CFA Level 1 candidates who want structured recall practice for formulas, concepts, and topic definitions.",
     format: ".apkg",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/ivjmuu",
@@ -134,6 +152,63 @@ export const decks: Deck[] = [
         question: "How do buyers get access?",
         answer: "Buyers complete checkout on Gumroad and receive the digital download according to Gumroad's delivery flow.",
       },
+      {
+        question: "How do I import the deck into Anki?",
+        answer: "Download the .apkg file from your Gumroad receipt, open the desktop Anki app, choose File then Import, select the .apkg file, and the deck appears in your deck list ready for study.",
+      },
+      {
+        question: "Does the deck work on AnkiDroid and AnkiMobile?",
+        answer: "Yes. Import the .apkg file on Anki desktop and sync through AnkiWeb, or import the file directly in AnkiDroid (Android) and AnkiMobile (iOS).",
+      },
+    ],
+    importSteps: [
+      {
+        title: "Download the .apkg file",
+        detail: "After checkout, open your Gumroad receipt email or library and download the CFA Level 1 deck .apkg file to your computer.",
+      },
+      {
+        title: "Install the Anki desktop app",
+        detail: "Install the free Anki desktop app from apps.ankiweb.net if you do not already have it. The .apkg format imports most reliably on desktop.",
+      },
+      {
+        title: "Import the deck",
+        detail: "In Anki, choose File then Import, select the downloaded .apkg file, and confirm. The CFA Level 1 deck appears in your deck list.",
+      },
+      {
+        title: "Sync to mobile (optional)",
+        detail: "Create a free AnkiWeb account, sync from desktop, then sign in on AnkiDroid (Android) or AnkiMobile (iOS) to study the deck on your phone.",
+      },
+      {
+        title: "Start spaced repetition",
+        detail: "Open the deck and study daily. Anki schedules reviews automatically using spaced repetition to reinforce recall before the exam.",
+      },
+    ],
+    comparison: [
+      {
+        dimension: "Primary purpose",
+        deck: "Fast recall practice for formulas, definitions, and concepts.",
+        curriculum: "Complete learning, theory, and exam-standard practice questions.",
+      },
+      {
+        dimension: "Format",
+        deck: "342+ Anki flashcards (.apkg) using spaced repetition.",
+        curriculum: "Official readings, learning outcome statements, and item sets.",
+      },
+      {
+        dimension: "Best used for",
+        deck: "Daily review and memory retention between study sessions.",
+        curriculum: "Building first-time understanding and full topic coverage.",
+      },
+      {
+        dimension: "Official status",
+        deck: "Independent study aid. Not endorsed by CFA Institute.",
+        curriculum: "Official CFA Institute material and the authoritative source.",
+      },
+      {
+        dimension: "Recommended approach",
+        deck: "Use alongside the curriculum to lock in recall.",
+        curriculum: "Use as the primary source of truth for the exam.",
+      },
     ],
   },
   {
@@ -142,6 +217,9 @@ export const decks: Deck[] = [
     title: "CFA Level 1 Formula Anki Deck",
     shortName: "Formula Deck",
     subtitle: "A focused formula-recall deck for CFA Level 1 candidates.",
+    directAnswer:
+      "The CFA Level 1 Formula Anki Deck is a planned UniPrep2Go product focused on formula recall for CFA Level 1 candidates. It is not yet available for purchase.",
+    lastUpdated: "2026-05-31",
     audience: "Candidates who want a separate formula-only spaced repetition workflow.",
     format: ".apkg",
     facts: {
@@ -161,6 +239,9 @@ export const decks: Deck[] = [
     title: "CFA Level 2 Anki Deck",
     shortName: "CFA Level 2",
     subtitle: "A future deck for item-set based CFA Level 2 preparation.",
+    directAnswer:
+      "The CFA Level 2 Anki Deck is a planned UniPrep2Go product for item-set based CFA Level 2 preparation. It is not yet available for purchase.",
+    lastUpdated: "2026-05-31",
     audience: "Future CFA Level 2 candidates using Anki for concept retention.",
     format: ".apkg",
     facts: {
@@ -178,6 +259,14 @@ export const decks: Deck[] = [
 
 export const primaryDeck = decks[0] as AvailableDeck;
 
+export const availableDecks = decks.filter(
+  (deck): deck is AvailableDeck => deck.status === "available",
+);
+
 export function getDeckBySlug(slug: string) {
   return decks.find((deck) => deck.slug === slug);
+}
+
+export function getAvailableDeckBySlug(slug: string) {
+  return availableDecks.find((deck) => deck.slug === slug);
 }

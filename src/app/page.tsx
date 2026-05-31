@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FunnelTracker, TrackedGumroadLink } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
 import { decks, primaryDeck } from "@/lib/decks";
+import { absoluteUrl, siteConfig } from "@/lib/site";
 
 const priceLabel = `$${primaryDeck.price.amount} ${primaryDeck.price.currency}`;
 
@@ -21,31 +22,53 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://uniprep2go.study/#organization",
-      name: "UniPrep2Go",
-      url: "https://uniprep2go.study",
+      "@id": `${siteConfig.url}/#organization`,
+      name: siteConfig.name,
+      url: siteConfig.url,
+      description:
+        "Independent publisher of Anki flashcard decks for finance exam preparation, sold through Gumroad.",
+      email: siteConfig.contactEmail,
+      sameAs: [siteConfig.gumroadStoreUrl],
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        email: siteConfig.contactEmail,
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteConfig.url}/#website`,
+      name: siteConfig.name,
+      url: siteConfig.url,
+      publisher: { "@id": `${siteConfig.url}/#organization` },
     },
     {
       "@type": "Product",
-      "@id": "https://uniprep2go.study/#cfa-level-1-anki-deck",
+      "@id": `${siteConfig.url}/#cfa-level-1-anki-deck`,
       name: primaryDeck.title,
-      description: primaryDeck.subtitle,
+      description: primaryDeck.directAnswer,
       brand: {
-        "@id": "https://uniprep2go.study/#organization",
+        "@type": "Brand",
+        name: siteConfig.name,
       },
       category: "Education > Test Preparation > CFA",
-      url: "https://uniprep2go.study",
+      url: absoluteUrl(`/decks/${primaryDeck.slug}`),
+      image: primaryDeck.sampleCards.map((card) => absoluteUrl(card.imageUrl)),
       offers: {
         "@type": "Offer",
         url: primaryDeck.checkoutUrl,
         availability: "https://schema.org/InStock",
         price: primaryDeck.price.amount,
         priceCurrency: primaryDeck.price.currency,
+        seller: {
+          "@type": "Organization",
+          name: siteConfig.checkoutSeller,
+        },
       },
     },
     {
       "@type": "FAQPage",
-      "@id": "https://uniprep2go.study/#faq",
+      "@id": `${siteConfig.url}/#faq`,
       mainEntity: primaryDeck.faqs.map((faq) => ({
         "@type": "Question",
         name: faq.question,
@@ -103,6 +126,9 @@ export default function Home() {
                 {primaryDeck.subtitle} Built for candidates who want direct recall practice without marketing noise.
               </p>
             </div>
+            <p className="max-w-2xl rounded-2xl border border-[#18140f]/15 bg-[#fffaf0]/70 p-5 text-base leading-7 text-[#4f493e]">
+              {primaryDeck.directAnswer}
+            </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <TrackedGumroadLink
                 className="inline-flex items-center justify-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
@@ -242,7 +268,18 @@ export default function Home() {
                 key={deck.slug}
               >
                 <div>
-                  <h3 className="text-lg font-semibold">{deck.title}</h3>
+                  <h3 className="text-lg font-semibold">
+                    {deck.status === "available" ? (
+                      <Link
+                        className="underline decoration-[#18140f]/20 underline-offset-4 hover:decoration-[#18140f]"
+                        href={`/decks/${deck.slug}`}
+                      >
+                        {deck.title}
+                      </Link>
+                    ) : (
+                      deck.title
+                    )}
+                  </h3>
                   <p className="mt-1 text-sm leading-6 text-[#5f5749]">{deck.subtitle}</p>
                 </div>
                 <span className="w-fit rounded-full border border-[#18140f]/20 px-3 py-1 font-mono text-xs uppercase tracking-[0.14em] text-[#4f493e]">
@@ -250,6 +287,35 @@ export default function Home() {
                 </span>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="guides" className="mx-auto w-full max-w-6xl px-6 py-12 sm:px-10 lg:px-12">
+        <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr]">
+          <div>
+            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Guides</p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight">Buyer questions, answered</h2>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            <Link
+              className="rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70 p-5 transition hover:border-[#18140f]"
+              href="/how-to-import-cfa-anki-deck"
+            >
+              <h3 className="text-lg font-semibold">How to import the deck</h3>
+              <p className="mt-1 text-sm leading-6 text-[#5f5749]">
+                Step-by-step .apkg import for Anki desktop and mobile.
+              </p>
+            </Link>
+            <Link
+              className="rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70 p-5 transition hover:border-[#18140f]"
+              href="/cfa-level-1-anki-deck-vs-curriculum"
+            >
+              <h3 className="text-lg font-semibold">Deck vs official curriculum</h3>
+              <p className="mt-1 text-sm leading-6 text-[#5f5749]">
+                How the deck complements official CFA Level 1 study.
+              </p>
+            </Link>
           </div>
         </div>
       </section>

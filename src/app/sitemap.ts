@@ -1,19 +1,25 @@
 import type { MetadataRoute } from "next";
-import { decks } from "@/lib/decks";
+import { availableDecks } from "@/lib/decks";
+import { siteConfig } from "@/lib/site";
 
-const siteUrl = "https://uniprep2go.study";
+const siteUrl = siteConfig.url;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
-  const deckDocuments = decks
-    .filter((deck) => deck.status === "available")
-    .map((deck) => ({
-      url: `${siteUrl}/${deck.slug}.md`,
-      lastModified,
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    }));
+  const deckPages = availableDecks.map((deck) => ({
+    url: `${siteUrl}/decks/${deck.slug}`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  }));
+
+  const deckDocuments = availableDecks.map((deck) => ({
+    url: `${siteUrl}/${deck.slug}.md`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority: 0.85,
+  }));
 
   return [
     {
@@ -21,6 +27,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly",
       priority: 1,
+    },
+    {
+      url: `${siteUrl}/how-to-import-cfa-anki-deck`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${siteUrl}/cfa-level-1-anki-deck-vs-curriculum`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${siteUrl}/llms.txt`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
+    ...deckPages,
+    ...deckDocuments,
+    {
+      url: `${siteUrl}/contact`,
+      lastModified,
+      changeFrequency: "yearly",
+      priority: 0.5,
     },
     {
       url: `${siteUrl}/privacy`,
@@ -40,18 +72,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.4,
     },
-    {
-      url: `${siteUrl}/contact`,
-      lastModified,
-      changeFrequency: "yearly",
-      priority: 0.5,
-    },
-    {
-      url: `${siteUrl}/llms.txt`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.95,
-    },
-    ...deckDocuments,
   ];
 }

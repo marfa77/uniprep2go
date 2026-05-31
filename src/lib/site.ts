@@ -6,6 +6,7 @@ export const siteConfig = {
   contactEmail: "support@uniprep2go.study",
   checkoutProvider: "Gumroad",
   checkoutSeller: "PixID Studio",
+  gumroadStoreUrl: "https://pixidstudio.gumroad.com",
   googleAnalyticsId: "G-NDF8PVD7N3",
   ahrefsAnalyticsKey: "X11yI8gl/4QXmr55ol2GlA",
   legalLastUpdated: "2026-05-31",
@@ -17,3 +18,11 @@ export const legalLinks = [
   { href: "/cookies", label: "Cookie Policy" },
   { href: "/contact", label: "Contact" },
 ] as const;
+
+export function absoluteUrl(path: string) {
+  if (path.startsWith("http://") || path.startsWith("https://")) {
+    return path;
+  }
+
+  return `${siteConfig.url}${path.startsWith("/") ? path : `/${path}`}`;
+}
