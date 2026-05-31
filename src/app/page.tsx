@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FunnelTracker, TrackedGumroadLink } from "@/components/funnel-tracker";
+import { SiteFooter } from "@/components/site-footer";
 import { decks, primaryDeck } from "@/lib/decks";
 
 const priceLabel = `$${primaryDeck.price.amount} ${primaryDeck.price.currency}`;
@@ -294,9 +295,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="mx-auto w-full max-w-6xl px-6 pb-10 pt-4 text-xs leading-6 text-[#6d6252] sm:px-10 lg:px-12">
-        CFA Institute does not endorse, promote, or warrant this product. CFA&reg; and Chartered Financial Analyst&reg; are trademarks owned by CFA Institute. UniPrep2Go is an independent study aid publisher.
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

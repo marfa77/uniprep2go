@@ -2,6 +2,11 @@
 
 import { useEffect } from "react";
 import type { FunnelEventName } from "@/lib/analytics";
+import {
+  COOKIE_CONSENT_EVENT,
+  hasAnalyticsConsent,
+  readCookieConsent,
+} from "@/lib/cookie-consent";
 
 type FunnelTrackerProps = {
   deckSlug: string;
@@ -18,6 +23,10 @@ type TrackEventInput = {
 };
 
 export function trackFunnelEvent(input: TrackEventInput) {
+  if (!hasAnalyticsConsent(readCookieConsent())) {
+    return;
+  }
+
   const payload = {
     ...input,
     path: window.location.pathname,
@@ -44,35 +53,54 @@ export function trackFunnelEvent(input: TrackEventInput) {
 
 export function FunnelTracker({ deckSlug, sectionEvents }: FunnelTrackerProps) {
   useEffect(() => {
-    trackFunnelEvent({ name: "page_view", deckSlug, source: "landing_page" });
-
-    const seen = new Set<string>();
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const eventName = (entry.target as HTMLElement).dataset.funnelEvent as
-            | FunnelEventName
-            | undefined;
-
-          if (eventName && entry.isIntersecting && !seen.has(eventName)) {
-            seen.add(eventName);
-            trackFunnelEvent({ name: eventName, deckSlug, source: "section_view" });
-          }
-        });
-      },
-      { threshold: 0.35 },
-    );
-
-    sectionEvents.forEach(({ selector, name }) => {
-      const element = document.querySelector<HTMLElement>(selector);
-
-      if (element) {
-        element.dataset.funnelEvent = name;
-        observer.observe(element);
+    const startTracking = () => {
+      if (!hasAnalyticsConsent(readCookieConsent())) {
+        return;
       }
-    });
 
-    return () => observer.disconnect();
+      trackFunnelEvent({ name: "page_view", deckSlug, source: "landing_page" });
+
+      const seen = new Set<string>();
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const eventName = (entry.target as HTMLElement).dataset.funnelEvent as
+              | FunnelEventName
+              | undefined;
+
+            if (eventName && entry.isIntersecting && !seen.has(eventName)) {
+              seen.add(eventName);
+              trackFunnelEvent({ name: eventName, deckSlug, source: "section_view" });
+            }
+          });
+        },
+        { threshold: 0.35 },
+      );
+
+      sectionEvents.forEach(({ selector, name }) => {
+        const element = document.querySelector<HTMLElement>(selector);
+
+        if (element) {
+          element.dataset.funnelEvent = name;
+          observer.observe(element);
+        }
+      });
+
+      return () => observer.disconnect();
+    };
+
+    let cleanup = startTracking();
+
+    const handleConsentChange = () => {
+      cleanup?.();
+      cleanup = startTracking();
+    };
+
+    window.addEventListener(COOKIE_CONSENT_EVENT, handleConsentChange);
+    return () => {
+      cleanup?.();
+      window.removeEventListener(COOKIE_CONSENT_EVENT, handleConsentChange);
+    };
   }, [deckSlug, sectionEvents]);
 
   return null;
