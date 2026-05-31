@@ -658,6 +658,142 @@ export const decks: Deck[] = [
       },
     ],
   },
+  {
+    slug: "bench-energy-oil-trader-anki-deck",
+    category: "professional",
+    status: "available",
+    title: "Bench Energy: OIL Trader's Lexicon — 211 Anki Flashcards",
+    shortName: "Oil Trader's Lexicon",
+    subtitle: "Anki flashcard deck for crude oil and petroleum trading vocabulary.",
+    directAnswer:
+      "UniPrep2Go sells the Bench Energy Oil Trader's Lexicon, an Anki deck with 211 flashcards covering universal trading foundations, oil markets, and freight and shipping terminology. It is delivered as an Anki .apkg file for $19 USD through Gumroad. The deck targets commodity traders, analysts, and professionals joining oil trading desks.",
+    lastUpdated: "2026-05-31",
+    audience: "Oil commodity traders, refinery analysts, and professionals entering petroleum markets.",
+    format: ".apkg",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/ugngbd",
+    price: { amount: 19, currency: "USD" },
+    facts: {
+      cards: "211",
+      topics: "Trading foundation, oil markets, freight and shipping",
+      formulas: "Crude grades, benchmarks, refinery economics, OPEC, tanker trading",
+      examYear: "Professional reference",
+      delivery: "Digital download through Gumroad (3.14 MB)",
+    },
+    topicCoverage: [],
+    sampleCards: [
+      {
+        question: "What is Dated Brent and how does it differ from Brent futures?",
+        answer: "Physical spot price for actual BFOE cargoes loading in the North Sea within 10–25 days forward, published by Platts. The physical anchor for the entire Brent complex. Dated Brent = cash price.",
+        imageUrl: "/samples/bench-energy-oil-trader-anki-deck-sample-1.png",
+      },
+    ],
+    faqs: [
+      {
+        question: "What does the Oil Trader's Lexicon cover?",
+        answer: "211 cards in three blocks: Universal Trading Foundation (102 cards), Oil Markets (58 cards), and Freight and Shipping (51 cards). Covers crude grades, benchmarks, refinery economics, OPEC dynamics, tanker trading, and derivatives.",
+      },
+      {
+        question: "Who is this for?",
+        answer: "Professionals joining oil trading desks, refinery analysts, and commodity traders who need to compress the oil-trading vocabulary learning curve using spaced repetition.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
+      },
+    ],
+  },
+  {
+    slug: "bench-energy-coal-trader-anki-deck",
+    category: "professional",
+    status: "available",
+    title: "Bench Energy: Coal Trader's Lexicon — 221 Anki Flashcards",
+    shortName: "Coal Trader's Lexicon",
+    subtitle: "Anki flashcard deck for thermal coal and mining finance vocabulary.",
+    directAnswer:
+      "UniPrep2Go sells the Bench Energy Coal Trader's Lexicon, an Anki deck with 221 flashcards covering coal mining economics, thermal coal markets, freight, and trading terminology. It is delivered as an Anki .apkg file for $19 USD through Gumroad. The deck targets commodity traders, mining finance analysts, and professionals entering coal markets.",
+    lastUpdated: "2026-05-31",
+    audience: "Coal commodity traders, mining finance analysts, and professionals entering thermal coal markets.",
+    format: ".apkg",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/ipnqky",
+    price: { amount: 19, currency: "USD" },
+    facts: {
+      cards: "221",
+      topics: "Coal mining economics, thermal coal markets, freight and shipping",
+      formulas: "Netback calculations, strip ratios, API indices, freight routes",
+      examYear: "Professional reference",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [
+      {
+        question: "What is a netback calculation and why is it the most important number for a producer?",
+        answer: "Working backwards from market price at point of sale, subtracting all costs to arrive at value at point of production — the real revenue per tonne. Example: API2 $120/t CIF ARA → minus freight, port, rail → netback at mine.",
+        imageUrl: "/samples/bench-energy-coal-trader-anki-deck-sample-1.png",
+      },
+    ],
+    faqs: [
+      {
+        question: "What does the Coal Trader's Lexicon cover?",
+        answer: "221 cards covering coal mining economics, thermal coal market structure, API indices, freight routes, netback calculations, strip ratios, and trading terminology used on coal desks.",
+      },
+      {
+        question: "Who is this for?",
+        answer: "Commodity traders, mining finance analysts, and professionals entering thermal coal markets who want to systematise desk vocabulary using spaced repetition.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
+      },
+    ],
+  },
+  {
+    slug: "commodity-trader-pack-bundle",
+    category: "professional",
+    status: "available",
+    title: "The Ultimate Commodity Trader Pack — METAL, OIL, COAL (634 Cards)",
+    shortName: "Commodity Trader Pack (3-in-1)",
+    subtitle: "Bundle of Metal, Oil, and Coal Anki lexicon decks for commodity trading desks.",
+    directAnswer:
+      "UniPrep2Go sells the Ultimate Commodity Trader Pack, a 3-in-1 bundle of Bench Energy Anki decks covering metals (202 cards), oil (211 cards), and coal (221 cards) — 634 flashcards total. It is delivered as Anki .apkg files for $39 USD through Gumroad, saving $18 versus buying each deck separately at $19.",
+    lastUpdated: "2026-05-31",
+    audience: "Commodity traders and analysts who work across metals, oil, and coal markets.",
+    format: ".apkg",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/tzzgh",
+    price: { amount: 39, currency: "USD" },
+    facts: {
+      cards: "634",
+      topics: "Metals + oil + coal trading lexicons",
+      formulas: "Full Bench Energy coverage across three commodity classes",
+      examYear: "Professional reference",
+      delivery: "Digital download through Gumroad (bundle of 3 decks)",
+    },
+    topicCoverage: [],
+    sampleCards: [
+      {
+        question: "What is included in the Commodity Trader Pack?",
+        answer: "Three complete Anki decks: Metal Trader's Lexicon (202 cards), Oil Trader's Lexicon (211 cards), and Coal Trader's Lexicon (221 cards). Covers universal trading foundations plus commodity-specific vocabulary for all three markets.",
+        imageUrl: "/samples/commodity-trader-pack-bundle-sample-1.png",
+      },
+    ],
+    faqs: [
+      {
+        question: "What decks are included in the bundle?",
+        answer: "Metal Trader's Lexicon (202 cards), Oil Trader's Lexicon (211 cards), and Coal Trader's Lexicon (221 cards) — 634 cards total across all three Bench Energy decks.",
+      },
+      {
+        question: "How much do I save versus buying separately?",
+        answer: "Each deck costs $19 individually ($57 total). The bundle is $39 — a $18 saving.",
+      },
+      {
+        question: "Who is this bundle for?",
+        answer: "Commodity traders, analysts, and professionals who work across metals, oil, and coal markets and want complete desk vocabulary coverage in one purchase.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "Anki-compatible .apkg files delivered through Gumroad.",
+      },
+    ],
+  },
 ];
 
 export const primaryDeck = decks[0] as AvailableDeck;

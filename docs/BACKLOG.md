@@ -15,11 +15,7 @@
   - Действие: обновить цену на Gumroad + `src/lib/decks.ts` + JSON-LD на странице
   - Риск: низкий; текущая конверсия 4.8% даёт запас для теста
 
-- [ ] **Добавить на сайт оставшиеся Gumroad-колоды (commodities)**
-  - Oil Trader's Lexicon — $19, apkg готов в `Anki Generator/out/prep2go - OIL Commodity Pack/`
-  - Coal Trader's Lexicon — $19, apkg готов
-  - Ultimate Commodity Trader Pack (3-in-1) — $39, bundle на Gumroad
-  - Metal уже добавлен; Oil и Coal — нет
+- [x] **Добавить на сайт оставшиеся Gumroad-колоды (commodities)** — Oil (`ugngbd`), Coal (`ipnqky`), 3-in-1 bundle (`tzzgh`); Metal уже был
 
 - [x] **Sample cards для колод без превью** — скриншоты карточек с Gumroad (7 колод; CIPLE A2 и German A2 — на Gumroad нет card preview)
 
