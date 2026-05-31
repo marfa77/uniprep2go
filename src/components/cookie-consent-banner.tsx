@@ -25,8 +25,9 @@ export function CookieConsentBanner() {
         <div className="max-w-3xl space-y-2 text-sm leading-6 text-[#4f493e]">
           <p className="font-semibold text-[#18140f]">Cookies and analytics</p>
           <p>
-            We use strictly necessary local storage for your cookie choice and optional Google
-            Analytics, Ahrefs Analytics, and first-party funnel analytics when you accept. See our{" "}
+            We use strictly necessary local storage for your cookie choice. Optional Google
+            Analytics and Ahrefs Analytics load only when you accept. Basic first-party page metrics
+            run without cookies. See our{" "}
             <Link className="underline decoration-[#18140f]/30 underline-offset-4" href="/cookies">
               Cookie Policy
             </Link>{" "}

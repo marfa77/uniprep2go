@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { TrackedGumroadLink } from "@/components/funnel-tracker";
+import { FunnelTracker, TrackedGumroadLink } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { availableDecks, getAvailableDeckBySlug } from "@/lib/decks";
@@ -47,6 +47,13 @@ export default async function DeckPage({
 
   const priceLabel = `$${deck.price.amount} ${deck.price.currency}`;
 
+  const sectionEvents = [
+    { selector: "#facts", name: "product_facts_view" as const },
+    { selector: "#topic-matrix", name: "topic_matrix_view" as const },
+    { selector: "#sample-cards", name: "sample_cards_view" as const },
+    { selector: "#faq", name: "faq_view" as const },
+  ];
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -87,6 +94,7 @@ export default async function DeckPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <SiteHeader />
+      <FunnelTracker deckSlug={deck.slug} sectionEvents={sectionEvents} source="deck_page" />
 
       <article className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12">
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
@@ -115,7 +123,7 @@ export default async function DeckPage({
           </Link>
         </div>
 
-        <section className="mt-12">
+        <section id="facts" className="mt-12">
           <h2 className="text-2xl font-semibold tracking-tight">Product facts</h2>
           <dl className="mt-4 grid gap-px overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#18140f]/10 sm:grid-cols-2">
             {[
@@ -136,7 +144,7 @@ export default async function DeckPage({
           </dl>
         </section>
 
-        <section className="mt-12">
+        <section id="topic-matrix" className="mt-12">
           <h2 className="text-2xl font-semibold tracking-tight">Coverage by exam topic</h2>
           <div className="mt-4 overflow-x-auto rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
             <table className="w-full min-w-[640px] border-collapse text-left">
@@ -161,7 +169,7 @@ export default async function DeckPage({
         </section>
 
         {deck.sampleCards.length > 0 ? (
-          <section className="mt-12">
+          <section id="sample-cards" className="mt-12">
             <h2 className="text-2xl font-semibold tracking-tight">Sample cards</h2>
             <div className="mt-4 grid gap-4 sm:grid-cols-3">
               {deck.sampleCards.map((card) => (
@@ -186,7 +194,7 @@ export default async function DeckPage({
           </section>
         ) : null}
 
-        <section className="mt-12">
+        <section id="faq" className="mt-12">
           <h2 className="text-2xl font-semibold tracking-tight">FAQ</h2>
           <div className="mt-4 divide-y divide-[#18140f]/10 rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
             {deck.faqs.map((faq) => (

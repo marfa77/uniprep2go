@@ -244,7 +244,8 @@ export const cookieSections = sections([
     paragraphs: ["We group technologies into the following categories:"],
     bullets: [
       "Strictly necessary: required to remember your cookie consent choice.",
-      "Analytics: optional Google Analytics, Ahrefs Analytics, and first-party usage events that help us understand page performance and checkout intent.",
+      "Analytics (optional): Google Analytics and Ahrefs Analytics when you accept analytics cookies.",
+      "First-party metrics (always on): anonymous page views, section views, and checkout clicks sent to our own server without third-party cookies.",
       "Third-party checkout: technologies that may be set when you open {checkoutProvider} to complete a purchase.",
     ],
   },
@@ -256,7 +257,7 @@ export const cookieSections = sections([
       "uniprep2go_cookie_consent (local storage, strictly necessary): stores accepted or rejected analytics preference until you clear site data.",
       "Google Analytics cookies such as _ga and _ga_* (analytics, optional): used to measure site usage when you accept analytics cookies. Measurement ID: G-NDF8PVD7N3.",
       "Ahrefs Analytics script (analytics, optional): loads from analytics.ahrefs.com with site key X11yI8gl/4QXmr55ol2GlA when you accept analytics cookies.",
-      "First-party analytics events (analytics, optional): page views, section views, and checkout click events sent to /api/events when you accept analytics cookies.",
+      "First-party analytics events (first-party metrics, always on): page views, section views, and checkout click events sent to /api/events without third-party cookies.",
       "{checkoutProvider} checkout pages (third-party): may set their own cookies or storage when you leave our site to purchase a product.",
     ],
   },
@@ -265,7 +266,7 @@ export const cookieSections = sections([
     title: "Your choices",
     paragraphs: [
       "When you first visit the site, you can accept or reject optional analytics cookies using the banner. You can also change your browser settings to block or delete cookies and local storage.",
-      "Rejecting analytics cookies means we will not load Google Analytics, Ahrefs Analytics, or send optional funnel analytics events from your browser.",
+      "Rejecting analytics cookies means we will not load Google Analytics or Ahrefs Analytics. First-party page metrics still run because they do not use third-party cookies.",
     ],
   },
   {
