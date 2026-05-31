@@ -84,19 +84,19 @@ export const decks: Deck[] = [
     topicCoverage: cfaLevelOneTopics,
     sampleCards: [
       {
-        question: "What is the present value of a single future cash flow?",
-        answer: "The current value of a future amount discounted at rate r for n periods.",
-        imageUrl: "/samples/cfa-level-1-present-value-single-cash-flow.png",
+        question: "What is a forward contract?",
+        answer: "A private OTC agreement to buy or sell an asset at a specified forward price on a future date.",
+        imageUrl: "/samples/cfa-level-1-forward-contract.png",
       },
       {
-        question: "What is the present value of an ordinary annuity?",
-        answer: "Sum of discounted equal cash flows received at the end of each period.",
-        imageUrl: "/samples/cfa-level-1-present-value-ordinary-annuity.png",
+        question: "What is the no-arbitrage forward price for an asset with no income?",
+        answer: "The future value of the current spot price at the risk-free rate for the forward period.",
+        imageUrl: "/samples/cfa-level-1-no-arbitrage-forward-price.png",
       },
       {
-        question: "What is the PV of a growing perpetuity?",
-        answer: "PV of cash flows growing at constant rate g forever, discounted at rate r.",
-        imageUrl: "/samples/cfa-level-1-growing-perpetuity.png",
+        question: "What is the forward price for an asset that pays income?",
+        answer: "Spot price minus the present value of income, compounded at the risk-free rate.",
+        imageUrl: "/samples/cfa-level-1-forward-price-income-asset.png",
       },
     ],
     faqs: [
