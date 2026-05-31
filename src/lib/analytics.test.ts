@@ -11,19 +11,19 @@ describe("funnel analytics contract", () => {
       "catalog_view",
       "faq_view",
       "checkout_intent",
-      "gumroad_click",
+      "checkout_click",
     ]);
   });
 
   it("creates a valid event payload with deck and source context", () => {
     const event = createFunnelEvent({
-      name: "gumroad_click",
+      name: "checkout_click",
       deckSlug: "cfa-level-1-anki-deck",
       source: "hero_cta",
     });
 
     expect(event).toMatchObject({
-      name: "gumroad_click",
+      name: "checkout_click",
       deckSlug: "cfa-level-1-anki-deck",
       source: "hero_cta",
     });

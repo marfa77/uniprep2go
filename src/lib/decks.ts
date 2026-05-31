@@ -66,9 +66,13 @@ export type DeckPrice = {
   currency: "USD";
 };
 
+export type CheckoutProvider = "Gumroad" | "Lemon Squeezy";
+
 export type AvailableDeck = BaseDeck & {
   status: "available";
   checkoutUrl: string;
+  checkoutProvider: CheckoutProvider;
+  checkoutSeller: "PixID Studio" | "Prep2Go";
   price: DeckPrice;
 };
 
@@ -106,6 +110,8 @@ export const decks: Deck[] = [
     audience: "CFA Level 1 candidates who want structured recall practice for formulas, concepts, and topic definitions.",
     format: ".apkg",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/ivjmuu",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
     price: {
       amount: 11,
       currency: "USD",
@@ -243,6 +249,78 @@ export const decks: Deck[] = [
     faqs: [],
   },
   {
+    slug: "frm-part-1-anki-deck",
+    category: "finance",
+    status: "available",
+    title: "FRM Part 1 Anki Deck — 444 Exam Cards",
+    shortName: "FRM Part 1",
+    subtitle: "A focused Anki deck for FRM Part 1 active recall and formula retention.",
+    directAnswer:
+      "UniPrep2Go sells an independent FRM Part 1 Anki deck with 444 high-yield cards covering foundations of risk management, quantitative analysis, financial markets and products, valuation and risk models, VaR, Expected Shortfall, credit risk, operational risk, derivatives, fixed income, swaps, futures, options, Greeks, and risk governance. It is delivered as an Anki .apkg file for $11 USD through Gumroad. The deck is a supplementary spaced-repetition study aid and is not affiliated with or endorsed by GARP.",
+    lastUpdated: "2026-05-31",
+    audience: "FRM Part 1 candidates who want active recall practice for formulas, concepts, definitions, and risk-management logic.",
+    format: ".apkg",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/eeyvu",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    price: { amount: 11, currency: "USD" },
+    facts: {
+      cards: "444",
+      topics: "Full FRM Part 1 curriculum structure",
+      formulas: "Concise explanations, formulas, examples, and common mistakes",
+      examYear: "Current FRM Part 1 cycle",
+      delivery: "Digital download through Gumroad (364 KB)",
+    },
+    topicCoverage: [
+      { name: "Foundations of Risk Management", examWeight: "FRM Part 1 topic", cards: "High-yield cards" },
+      { name: "Quantitative Analysis", examWeight: "FRM Part 1 topic", cards: "High-yield cards" },
+      { name: "Financial Markets and Products", examWeight: "FRM Part 1 topic", cards: "High-yield cards" },
+      { name: "Valuation and Risk Models", examWeight: "FRM Part 1 topic", cards: "High-yield cards" },
+    ],
+    sampleCards: [
+      {
+        question: "What are the investment grade vs speculative grade rating boundaries?",
+        answer:
+          "Investment grade: Baa3/BBB- and above. Speculative grade or high yield: Ba1/BB+ and below. Fallen angels are IG bonds downgraded to HY; rising stars are HY bonds upgraded to IG.",
+        imageUrl: "/samples/frm-part-1-anki-deck-sample-1.png",
+      },
+      {
+        question: "What is a CDS and how does it work?",
+        answer:
+          "A credit default swap is insurance against bond default. The protection buyer pays a periodic CDS spread; if default occurs, the seller pays par minus recovery value.",
+        imageUrl: "/samples/frm-part-1-anki-deck-sample-2.png",
+      },
+      {
+        question: "What is credit risk (counterparty risk) in derivatives?",
+        answer:
+          "Counterparty credit risk is the risk that the counterparty defaults when the derivative has positive mark-to-market value to you. It is one-sided and only exists when the contract has positive value.",
+        imageUrl: "/samples/frm-part-1-anki-deck-sample-3.png",
+      },
+    ],
+    faqs: [
+      {
+        question: "What does the FRM Part 1 deck include?",
+        answer: "444 high-yield Anki cards covering the FRM Part 1 curriculum structure, including formulas, definitions, examples, common mistakes, and exam-style recall prompts.",
+      },
+      {
+        question: "Is this a question bank?",
+        answer: "No. It is a spaced-repetition study deck designed to help you remember formulas, concepts, definitions, and risk-management logic efficiently.",
+      },
+      {
+        question: "Does it support formulas?",
+        answer: "Yes. Formula cards use MathJax so equations remain sharp and readable in Anki.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
+      },
+      {
+        question: "Is this affiliated with GARP?",
+        answer: "No. This is an independent study aid and is not affiliated with, endorsed by, or sponsored by GARP. FRM is a trademark of the Global Association of Risk Professionals.",
+      },
+    ],
+  },
+  {
     slug: "cfa-level-2-anki-deck",
     category: "finance",
     status: "planned",
@@ -274,18 +352,20 @@ export const decks: Deck[] = [
     shortName: "CIPLE A2 Portuguese",
     subtitle: "Full Anki deck for CIPLE / CAPLE A2 European Portuguese exam preparation.",
     directAnswer:
-      "UniPrep2Go sells a CIPLE A2 European Portuguese Anki deck with 1600+ flashcards covering exam vocabulary, phrases, and examples with audio pronunciation and images. It is delivered as an Anki .apkg file for $19 USD through Gumroad. The deck targets CIPLE / CAPLE A2 candidates, Portuguese residency and citizenship applicants, and self-learners using spaced repetition.",
+      "UniPrep2Go sells a CIPLE A2 European Portuguese Anki deck with 1600+ flashcards covering exam vocabulary, phrases, and examples with audio pronunciation and images. It is delivered as an Anki .apkg file for $24.99 USD through Lemon Squeezy. The deck targets CIPLE / CAPLE A2 candidates, Portuguese residency and citizenship applicants, and self-learners using spaced repetition.",
     lastUpdated: "2026-05-31",
     audience: "CIPLE / CAPLE A2 exam candidates, Portuguese residency or citizenship applicants, self-learners.",
     format: ".apkg",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/ikvjw",
-    price: { amount: 19, currency: "USD" },
+    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/6f688637-f5ce-440f-8d2a-7614379ee3ca",
+    checkoutProvider: "Lemon Squeezy",
+    checkoutSeller: "Prep2Go",
+    price: { amount: 24.99, currency: "USD" },
     facts: {
       cards: "1600+",
       topics: "Vocabulary, phrases, everyday situations",
       formulas: "Audio pronunciation + contextual examples",
       examYear: "Current CAPLE cycle",
-      delivery: "Digital download through Gumroad",
+      delivery: "Digital download through Lemon Squeezy",
     },
     topicCoverage: [],
     sampleCards: [
@@ -321,7 +401,7 @@ export const decks: Deck[] = [
       },
       {
         question: "What file format is delivered?",
-        answer: "The deck is delivered as an Anki-compatible .apkg file through Gumroad.",
+        answer: "The deck is delivered as an Anki-compatible .apkg file through Lemon Squeezy.",
       },
       {
         question: "Does it include audio?",
@@ -337,18 +417,20 @@ export const decks: Deck[] = [
     shortName: "DELF B2 French",
     subtitle: "Vocabulary-first Anki deck for DELF B2 French exam preparation.",
     directAnswer:
-      "UniPrep2Go sells a DELF B2 French Anki deck with 2000+ flashcards covering every word needed for the B2 exam, each with a visual image, native French audio, and contextual example. It is delivered as an Anki .apkg file for $19 USD through Gumroad. The deck targets DELF B2 candidates who want vocabulary retained through spaced repetition rather than passive list study.",
+      "UniPrep2Go sells a DELF B2 French Anki deck with 2000+ flashcards covering every word needed for the B2 exam, each with a visual image, native French audio, and contextual example. It is delivered as an Anki .apkg file for $24.99 USD through Lemon Squeezy. The deck targets DELF B2 candidates who want vocabulary retained through spaced repetition rather than passive list study.",
     lastUpdated: "2026-05-31",
     audience: "DELF B2 exam candidates and advanced French learners using spaced repetition.",
     format: ".apkg",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/lcrzbr",
-    price: { amount: 19, currency: "USD" },
+    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/b764a5b4-6fb5-4f19-a90f-8f310a51a1eb",
+    checkoutProvider: "Lemon Squeezy",
+    checkoutSeller: "Prep2Go",
+    price: { amount: 24.99, currency: "USD" },
     facts: {
       cards: "2000+",
       topics: "DELF B2 vocabulary — full word list coverage",
       formulas: "Native audio + visual image + contextual example per card",
       examYear: "Current DELF cycle",
-      delivery: "Digital download through Gumroad (159 MB)",
+      delivery: "Digital download through Lemon Squeezy (159 MB)",
     },
     topicCoverage: [],
     sampleCards: [
@@ -384,7 +466,7 @@ export const decks: Deck[] = [
       },
       {
         question: "What file format is delivered?",
-        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
+        answer: "An Anki-compatible .apkg file delivered through Lemon Squeezy.",
       },
     ],
   },
@@ -396,18 +478,20 @@ export const decks: Deck[] = [
     shortName: "Dutch A2 Inburgering",
     subtitle: "1000 high-frequency Dutch words for the Inburgering A2 civic integration exam.",
     directAnswer:
-      "UniPrep2Go sells a Dutch A2 Inburgering Anki deck with 1000+ high-frequency words for the Dutch civic integration (Inburgering) exam. Each card includes the Dutch word, English gloss, bilingual example sentences, native audio, and illustrations. It is delivered as an Anki .apkg file for $19 USD through Gumroad. The deck targets migrants preparing for the Dutch Inburgering exam and A2 Dutch certification.",
+      "UniPrep2Go sells a Dutch A2 Inburgering Anki deck with 1000+ high-frequency words for the Dutch civic integration (Inburgering) exam. Each card includes the Dutch word, English gloss, bilingual example sentences, native audio, and illustrations. It is delivered as an Anki .apkg file for $24.99 USD through Lemon Squeezy. The deck targets migrants preparing for the Dutch Inburgering exam and A2 Dutch certification.",
     lastUpdated: "2026-05-31",
     audience: "Migrants preparing for the Dutch Inburgering exam and A2 Dutch language certification.",
     format: ".apkg",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/nrnwu",
-    price: { amount: 19, currency: "USD" },
+    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/d43d6fc1-02d2-462a-8cf8-d421c6a98c88",
+    checkoutProvider: "Lemon Squeezy",
+    checkoutSeller: "Prep2Go",
+    price: { amount: 24.99, currency: "USD" },
     facts: {
       cards: "1000+",
       topics: "Inburgering exam vocabulary — citizenship-style themes",
       formulas: "Native audio + bilingual examples + illustrations per card",
       examYear: "Current Inburgering cycle",
-      delivery: "Digital download through Gumroad (82.9 MB)",
+      delivery: "Digital download through Lemon Squeezy (82.9 MB)",
     },
     topicCoverage: [],
     sampleCards: [
@@ -442,7 +526,7 @@ export const decks: Deck[] = [
       },
       {
         question: "What file format is delivered?",
-        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
+        answer: "An Anki-compatible .apkg file delivered through Lemon Squeezy.",
       },
     ],
   },
@@ -454,18 +538,20 @@ export const decks: Deck[] = [
     shortName: "German A2",
     subtitle: "1000 essential German words for A2 certificate exams — Goethe, telc, ÖSD.",
     directAnswer:
-      "UniPrep2Go sells a German A2 Anki deck with 1000 essential words for Goethe-Institut, telc, and ÖSD A2 certificate exams. It is delivered as an Anki .apkg file for $19+ USD through Gumroad. The deck targets German A2 exam candidates using spaced repetition for vocabulary retention.",
+      "UniPrep2Go sells a German A2 Anki deck with 1000 essential words for Goethe-Institut, telc, and ÖSD A2 certificate exams. It is delivered as an Anki .apkg file for $24.99 USD through Lemon Squeezy. The deck targets German A2 exam candidates using spaced repetition for vocabulary retention.",
     lastUpdated: "2026-05-31",
     audience: "German A2 certificate exam candidates for Goethe-Institut, telc, or ÖSD.",
     format: ".apkg",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/uoolen",
-    price: { amount: 19, currency: "USD" },
+    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/6006b518-3a04-4e7a-a77d-1e3f4c0a6e58",
+    checkoutProvider: "Lemon Squeezy",
+    checkoutSeller: "Prep2Go",
+    price: { amount: 24.99, currency: "USD" },
     facts: {
       cards: "1000",
       topics: "A2-level German vocabulary",
       formulas: "Essential words with examples",
       examYear: "Current Goethe / telc / ÖSD cycle",
-      delivery: "Digital download through Gumroad",
+      delivery: "Digital download through Lemon Squeezy",
     },
     topicCoverage: [],
     sampleCards: [
@@ -492,7 +578,7 @@ export const decks: Deck[] = [
       },
       {
         question: "What file format is delivered?",
-        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
+        answer: "An Anki-compatible .apkg file delivered through Lemon Squeezy.",
       },
     ],
   },
@@ -504,18 +590,20 @@ export const decks: Deck[] = [
     shortName: "CELI B1 Italian",
     subtitle: "Vocabulary-first Anki deck for CELI B1 Italian certificate exam preparation.",
     directAnswer:
-      "UniPrep2Go sells a CELI B1 Italian Anki deck with 1,373 flashcards for the CELI B1 certificate from the Università per Stranieri di Perugia. It is delivered as an Anki .apkg file for $19 USD through Gumroad. The deck targets Italian B1 certification candidates who want vocabulary retained through spaced repetition rather than passive list study.",
+      "UniPrep2Go sells a CELI B1 Italian Anki deck with 1,373 flashcards for the CELI B1 certificate from the Università per Stranieri di Perugia. It is delivered as an Anki .apkg file for $24.99 USD through Lemon Squeezy. The deck targets Italian B1 certification candidates who want vocabulary retained through spaced repetition rather than passive list study.",
     lastUpdated: "2026-05-31",
     audience: "CELI B1 certificate candidates and intermediate Italian learners.",
     format: ".apkg",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/celib1",
-    price: { amount: 19, currency: "USD" },
+    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/8e19de0e-c430-49dd-b3b8-72ce5b6f7944",
+    checkoutProvider: "Lemon Squeezy",
+    checkoutSeller: "Prep2Go",
+    price: { amount: 24.99, currency: "USD" },
     facts: {
       cards: "1373",
       topics: "B1-level Italian vocabulary and phrases",
       formulas: "Exam-focused vocabulary",
       examYear: "Current CELI cycle",
-      delivery: "Digital download through Gumroad",
+      delivery: "Digital download through Lemon Squeezy",
     },
     topicCoverage: [],
     sampleCards: [
@@ -547,7 +635,7 @@ export const decks: Deck[] = [
       },
       {
         question: "What file format is delivered?",
-        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
+        answer: "An Anki-compatible .apkg file delivered through Lemon Squeezy.",
       },
     ],
   },
@@ -566,6 +654,8 @@ export const decks: Deck[] = [
     audience: "IB Biology Standard Level students using spaced repetition for exam preparation.",
     format: ".apkg",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/oakmtp",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
     price: { amount: 4.99, currency: "USD" },
     facts: {
       cards: "149",
@@ -612,6 +702,8 @@ export const decks: Deck[] = [
     audience: "Metals commodity traders, analysts, and professionals entering metals markets.",
     format: ".apkg",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/zpazj",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
     price: { amount: 19, currency: "USD" },
     facts: {
       cards: "202",
@@ -656,6 +748,8 @@ export const decks: Deck[] = [
     audience: "Oil commodity traders, refinery analysts, and professionals entering petroleum markets.",
     format: ".apkg",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/ugngbd",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
     price: { amount: 19, currency: "USD" },
     facts: {
       cards: "211",
@@ -700,6 +794,8 @@ export const decks: Deck[] = [
     audience: "Coal commodity traders, mining finance analysts, and professionals entering thermal coal markets.",
     format: ".apkg",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/ipnqky",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
     price: { amount: 19, currency: "USD" },
     facts: {
       cards: "221",
@@ -744,6 +840,8 @@ export const decks: Deck[] = [
     audience: "Commodity traders and analysts who work across metals, oil, and coal markets.",
     format: ".apkg",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/tzzgh",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
     price: { amount: 39, currency: "USD" },
     facts: {
       cards: "634",
@@ -839,7 +937,7 @@ export const siteFaqs = [
   {
     question: "What is UniPrep2Go?",
     answer:
-      "UniPrep2Go is an independent publisher of Anki flashcard decks for exam preparation, language certifications, professional training, and academic subjects. Decks are sold as digital .apkg downloads through Gumroad.",
+      "UniPrep2Go is an independent publisher of Anki flashcard decks for exam preparation, language certifications, professional training, and academic subjects. Decks are sold as digital .apkg downloads through Gumroad and Lemon Squeezy.",
   },
   {
     question: "What file format is delivered?",

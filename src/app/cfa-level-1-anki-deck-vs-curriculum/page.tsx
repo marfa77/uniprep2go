@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { TrackedGumroadLink } from "@/components/funnel-tracker";
+import { TrackedCheckoutLink } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { primaryDeck } from "@/lib/decks";
@@ -60,14 +60,14 @@ export default function ComparisonPage() {
         </p>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <TrackedGumroadLink
+          <TrackedCheckoutLink
             className="inline-flex items-center justify-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
             deckSlug={primaryDeck.slug}
             href={primaryDeck.checkoutUrl}
             source="comparison_cta"
           >
             Buy the deck — {priceLabel}
-          </TrackedGumroadLink>
+          </TrackedCheckoutLink>
           <Link
             className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
             href={`/decks/${primaryDeck.slug}`}

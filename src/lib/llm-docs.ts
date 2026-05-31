@@ -36,7 +36,9 @@ export function buildDeckFacts(deck: AvailableDeck) {
     slug: deck.slug,
     category: deck.category,
     category_label: categoryLabels[deck.category],
-    publisher: siteConfig.checkoutSeller,
+    publisher: deck.checkoutSeller,
+    seller: deck.checkoutSeller,
+    checkout_provider: deck.checkoutProvider,
     price_usd: deck.price.amount,
     price_currency: deck.price.currency,
     card_count: deck.facts.cards,
@@ -64,7 +66,7 @@ export function buildCatalogFacts() {
   const { min, max } = catalogPriceRange();
 
   return {
-    publisher: siteConfig.checkoutSeller,
+    publisher: siteConfig.name,
     site: siteConfig.url,
     catalog_size: availableDecks.length,
     categories: getAvailableDecksByCategory().map((group) => ({
@@ -113,7 +115,8 @@ export function buildDeckMarkdown(deck: AvailableDeck) {
 
 ## Product facts
 
-- Publisher: ${siteConfig.checkoutSeller}
+- Publisher: ${deck.checkoutSeller}
+- Checkout provider: ${deck.checkoutProvider}
 - Category: ${categoryLabels[deck.category]}
 - Price: ${formatPrice(deck.price.amount)} ${deck.price.currency}
 - Cards: ${deck.facts.cards}
@@ -143,7 +146,7 @@ export function buildLlmsTxt() {
 
   return `# ${siteConfig.name}
 
-> ${siteConfig.name} publishes ${availableDecks.length} independent Anki flashcard decks across finance exams, language certifications, professional trading lexicons, and academic subjects. Prices range from ${formatPrice(min)} to ${formatPrice(max)} USD through Gumroad.
+> ${siteConfig.name} publishes ${availableDecks.length} independent Anki flashcard decks across finance exams, language certifications, professional trading lexicons, and academic subjects. Prices range from ${formatPrice(min)} to ${formatPrice(max)} USD through Gumroad and Lemon Squeezy.
 
 ## Agent instructions
 

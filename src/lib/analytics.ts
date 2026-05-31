@@ -6,7 +6,7 @@ export const funnelEventNames = [
   "catalog_view",
   "faq_view",
   "checkout_intent",
-  "gumroad_click",
+  "checkout_click",
 ] as const;
 
 export type FunnelEventName = (typeof funnelEventNames)[number];

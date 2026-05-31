@@ -9,9 +9,9 @@ export function shouldReturnStats(text: string) {
 export function toTelegramStatsMessage(stats: FunnelStats) {
   const pageViews = stats.byEvent.page_view;
   const checkoutIntents = stats.byEvent.checkout_intent;
-  const gumroadClicks = stats.byEvent.gumroad_click;
+  const checkoutClicks = stats.byEvent.checkout_click;
   const ctaRate = pageViews > 0 ? `${((checkoutIntents / pageViews) * 100).toFixed(1)}%` : "n/a";
-  const clickRate = pageViews > 0 ? `${((gumroadClicks / pageViews) * 100).toFixed(1)}%` : "n/a";
+  const clickRate = pageViews > 0 ? `${((checkoutClicks / pageViews) * 100).toFixed(1)}%` : "n/a";
   const topSources = Object.entries(stats.bySource)
     .sort(([, left], [, right]) => right - left)
     .slice(0, 5)
@@ -27,7 +27,7 @@ export function toTelegramStatsMessage(stats: FunnelStats) {
     `Topic matrix views: ${stats.byEvent.topic_matrix_view}`,
     `FAQ views: ${stats.byEvent.faq_view}`,
     `Checkout intents: ${checkoutIntents}`,
-    `Gumroad clicks: ${gumroadClicks}`,
+    `Checkout clicks: ${checkoutClicks}`,
     `CTA rate: ${ctaRate}`,
     `Click rate: ${clickRate}`,
     "",

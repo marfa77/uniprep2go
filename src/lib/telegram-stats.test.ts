@@ -21,7 +21,7 @@ describe("telegram stats", () => {
         catalog_view: 0,
         faq_view: 0,
         checkout_intent: 1,
-        gumroad_click: 1,
+        checkout_click: 1,
       },
       byDeck: { "cfa-level-1-anki-deck": 7 },
       bySource: { hero_cta: 1 },
@@ -33,7 +33,7 @@ describe("telegram stats", () => {
 
     expect(toTelegramStatsMessage(stats)).toContain("UniPrep2Go funnel stats");
     expect(toTelegramStatsMessage(stats)).toContain("Page views: 3");
-    expect(toTelegramStatsMessage(stats)).toContain("Gumroad clicks: 1");
+    expect(toTelegramStatsMessage(stats)).toContain("Checkout clicks: 1");
     expect(toTelegramStatsMessage(stats)).toContain("CTA rate: 33.3%");
     expect(toTelegramStatsMessage(stats)).toContain("Storage: redis");
   });

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { FunnelTracker, TrackedGumroadLink } from "@/components/funnel-tracker";
+import { FunnelTracker, TrackedCheckoutLink } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { availableDecks, categoryLabels, getAvailableDeckBySlug } from "@/lib/decks";
@@ -72,7 +72,7 @@ export default async function DeckPage({
           availability: "https://schema.org/InStock",
           price: deck.price.amount,
           priceCurrency: deck.price.currency,
-          seller: { "@type": "Organization", name: siteConfig.checkoutSeller },
+          seller: { "@type": "Organization", name: deck.checkoutSeller },
         },
       },
       {
@@ -107,14 +107,14 @@ export default async function DeckPage({
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">{deck.directAnswer}</p>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <TrackedGumroadLink
+          <TrackedCheckoutLink
             className="inline-flex items-center justify-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
             deckSlug={deck.slug}
             href={deck.checkoutUrl}
             source="deck_page_cta"
           >
             Buy the deck — {priceLabel}
-          </TrackedGumroadLink>
+          </TrackedCheckoutLink>
           {deck.slug === "cfa-level-1-anki-deck" ? (
             <Link
               className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
@@ -140,6 +140,7 @@ export default async function DeckPage({
               ["Coverage", deck.facts.topics],
               ["Format", deck.format],
               ["Price", priceLabel],
+              ["Checkout", deck.checkoutProvider],
               ["Exam cycle", deck.facts.examYear],
               ["Delivery", deck.facts.delivery],
             ].map(([label, value]) => (

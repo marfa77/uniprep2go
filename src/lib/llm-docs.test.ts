@@ -19,6 +19,8 @@ describe("LLM documents", () => {
       card_count: "342+",
       format: ".apkg",
       checkout_url: "https://pixidstudio.gumroad.com/l/ivjmuu",
+      checkout_provider: "Gumroad",
+      seller: "PixID Studio",
       not_official_exam_material: true,
     });
     expect(facts.topic_coverage).toHaveLength(10);
@@ -67,6 +69,9 @@ describe("LLM documents", () => {
 
     expect(facts.category).toBe("language");
     expect(facts.category_label).toBe("Language Certifications");
+    expect(facts.checkout_provider).toBe("Lemon Squeezy");
+    expect(facts.seller).toBe("Prep2Go");
+    expect(facts.price_usd).toBe(24.99);
     expect(JSON.stringify(facts)).not.toContain('"exam":"CFA Level 1"');
   });
 

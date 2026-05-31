@@ -83,7 +83,7 @@ export function FunnelTracker({
   return null;
 }
 
-export function TrackedGumroadLink({
+export function TrackedCheckoutLink({
   children,
   className,
   deckSlug,
@@ -102,7 +102,7 @@ export function TrackedGumroadLink({
       href={href}
       onClick={() => {
         trackFunnelEvent({ name: "checkout_intent", deckSlug, source });
-        trackFunnelEvent({ name: "gumroad_click", deckSlug, source });
+        trackFunnelEvent({ name: "checkout_click", deckSlug, source });
       }}
       rel="noopener noreferrer"
       target="_blank"

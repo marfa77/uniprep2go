@@ -17,7 +17,7 @@ describe("funnel stats store", () => {
     );
     await recordFunnelEvent(
       createFunnelEvent({
-        name: "gumroad_click",
+        name: "checkout_click",
         deckSlug: "cfa-level-1-anki-deck",
         source: "hero_cta",
       }),
@@ -27,7 +27,7 @@ describe("funnel stats store", () => {
 
     expect(stats.totalEvents).toBe(2);
     expect(stats.byEvent.page_view).toBe(1);
-    expect(stats.byEvent.gumroad_click).toBe(1);
+    expect(stats.byEvent.checkout_click).toBe(1);
     expect(stats.byDeck["cfa-level-1-anki-deck"]).toBe(2);
     expect(stats.bySource.hero_cta).toBe(1);
     expect(stats.storage).toBe("memory");

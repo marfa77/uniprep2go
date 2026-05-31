@@ -13,7 +13,7 @@ export function SiteFooter() {
               is an independent study aid publisher.
             </p>
             <p>
-              Checkout and payment processing are provided by {siteConfig.checkoutProvider}. Digital
+              Checkout and payment processing are provided by {siteConfig.checkoutProviders}. Digital
               products are licensed for personal study use only.
             </p>
           </div>

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://uniprep2go.study"),
   title: "UniPrep2Go | Anki Deck Catalog",
   description:
-    "Browse independent Anki flashcard decks for CFA, CIPLE, DELF, commodity trading, IB Biology, and more. LLM-readable product facts and Gumroad checkout.",
+    "Browse independent Anki flashcard decks for CFA, CIPLE, DELF, commodity trading, IB Biology, and more. LLM-readable product facts and checkout links.",
   alternates: {
     canonical: "/",
   },

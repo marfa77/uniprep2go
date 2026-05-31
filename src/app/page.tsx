@@ -41,7 +41,7 @@ export default function HomePage() {
         description: siteConfig.description,
         publisher: {
           "@type": "Organization",
-          name: siteConfig.checkoutSeller,
+          name: siteConfig.name,
         },
       },
       {
@@ -58,7 +58,7 @@ export default function HomePage() {
             url: absoluteUrl(`/decks/${deck.slug}`),
             brand: {
               "@type": "Brand",
-              name: siteConfig.checkoutSeller,
+              name: deck.checkoutSeller,
             },
             offers: {
               "@type": "Offer",
@@ -66,6 +66,7 @@ export default function HomePage() {
               priceCurrency: deck.price.currency,
               availability: "https://schema.org/InStock",
               url: deck.checkoutUrl,
+              seller: { "@type": "Organization", name: deck.checkoutSeller },
             },
           },
         })),
@@ -108,8 +109,8 @@ export default function HomePage() {
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-zinc-600">
               {siteConfig.name} publishes {availableDecks.length} independent
               Anki flashcard decks across {categoryOrder.length} categories.
-              Download .apkg files from Gumroad and import into Anki on desktop,
-              mobile, or web.
+              Download .apkg files from Gumroad or Lemon Squeezy and import
+              into Anki on desktop, mobile, or web.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
@@ -119,12 +120,12 @@ export default function HomePage() {
                 Browse catalog
               </a>
               <a
-                href={siteConfig.gumroadStoreUrl}
+                href={siteConfig.lemonSqueezyStoreUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center rounded-lg border border-zinc-300 bg-white px-5 py-2.5 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
               >
-                Gumroad store
+                Prep2Go store
               </a>
             </div>
             <dl className="mt-10 grid gap-4 sm:grid-cols-3">
@@ -227,7 +228,7 @@ export default function HomePage() {
                             {deck.title}
                           </Link>
                           <p className="mt-1 text-sm text-zinc-600">
-                            {deck.facts.cards} cards · {deck.facts.examYear}
+                            {deck.facts.cards} cards · {deck.facts.examYear} · {deck.checkoutProvider}
                           </p>
                         </div>
                         <div className="flex shrink-0 items-center gap-4 text-sm">
@@ -269,12 +270,12 @@ export default function HomePage() {
             </p>
             <ul className="mt-6 space-y-2 text-sm">
               <li>
-                <a
+                <Link
                   href="/api/facts"
                   className="font-medium text-zinc-900 underline-offset-2 hover:underline"
                 >
                   /api/facts
-                </a>{" "}
+                </Link>{" "}
                 — full catalog JSON
               </li>
               <li>

@@ -13,8 +13,8 @@ function withSite(text: string) {
     .replaceAll("{siteUrl}", siteConfig.url)
     .replaceAll("{contactEmail}", siteConfig.contactEmail)
     .replaceAll("{lastUpdated}", siteConfig.legalLastUpdated)
-    .replaceAll("{checkoutProvider}", siteConfig.checkoutProvider)
-    .replaceAll("{checkoutSeller}", siteConfig.checkoutSeller);
+    .replaceAll("{checkoutProvider}", siteConfig.checkoutProviders)
+    .replaceAll("{checkoutSeller}", siteConfig.checkoutSellers);
 }
 
 function sections(input: LegalSection[]): LegalSection[] {

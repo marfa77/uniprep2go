@@ -35,8 +35,8 @@ export default function ContactPage() {
             {siteConfig.contactEmail}
           </a>
           <p className="mt-4 text-sm leading-6 text-[#5f5749]">
-            Purchases are completed on {siteConfig.checkoutProvider}. For download access, receipts,
-            or refund requests, start with your {siteConfig.checkoutProvider} order email.
+            Purchases are completed on {siteConfig.checkoutProviders}. For download access, receipts,
+            or refund requests, start with your checkout receipt email.
           </p>
         </div>
 
