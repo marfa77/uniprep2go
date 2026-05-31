@@ -14,8 +14,14 @@ import {
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
 export default function HomePage() {
-  const catalogGroups = getAvailableDecksByCategory();
   const featuredDecks = getFeaturedDecks();
+  const featuredSlugs = new Set(featuredDecks.map((deck) => deck.slug));
+  const catalogGroups = getAvailableDecksByCategory()
+    .map((group) => ({
+      ...group,
+      decks: group.decks.filter((deck) => !featuredSlugs.has(deck.slug)),
+    }))
+    .filter((group) => group.decks.length > 0);
   const prices = availableDecks.map((d) => d.price.amount);
   const minPrice = Math.min(...prices);
   const maxPrice = Math.max(...prices);

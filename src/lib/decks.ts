@@ -313,50 +313,6 @@ export const decks: Deck[] = [
     ],
   },
   {
-    slug: "ciple-b1-portuguese-anki-deck",
-    category: "language",
-    status: "available",
-    title: "CIPLE B1 Portuguese: 1600+ Anki Flashcards",
-    shortName: "CIPLE B1 Portuguese",
-    subtitle: "Full Anki deck for CIPLE B1 European Portuguese exam preparation.",
-    directAnswer:
-      "UniPrep2Go sells a CIPLE B1 European Portuguese Anki deck with 1600+ flashcards for the B1-level CAPLE certificate. It is delivered as an Anki .apkg file for $19 USD through Gumroad. The deck targets B1-level Portuguese certification candidates and residency applicants advancing from A2.",
-    lastUpdated: "2026-05-31",
-    audience: "CIPLE B1 certification candidates and Portuguese residency applicants at the B1 level.",
-    format: ".apkg",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/cipleb1",
-    price: { amount: 19, currency: "USD" },
-    facts: {
-      cards: "1600+",
-      topics: "B1-level vocabulary, phrases, grammar-in-context",
-      formulas: "Audio pronunciation + contextual examples",
-      examYear: "Current CAPLE cycle",
-      delivery: "Digital download through Gumroad",
-    },
-    topicCoverage: [],
-    sampleCards: [
-      {
-        question: "poupar",
-        answer: "to save (money) — Tento poupar uma parte do meu salário. (I try to save a part of my salary.)",
-        imageUrl: "/samples/ciple-b1-portuguese-anki-deck-sample-1.png",
-      },
-    ],
-    faqs: [
-      {
-        question: "What is the CIPLE B1 exam?",
-        answer: "The B1-level CAPLE certificate from the University of Lisbon. Required for some Portuguese residency and citizenship pathways and demonstrates intermediate competency in European Portuguese.",
-      },
-      {
-        question: "How is this different from the A2 deck?",
-        answer: "The B1 deck covers intermediate vocabulary, more complex phrases, and grammar-in-context appropriate for the B1 level. It is intended for learners who have already reached A2 level.",
-      },
-      {
-        question: "What file format is delivered?",
-        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
-      },
-    ],
-  },
-  {
     slug: "delf-b2-french-anki-deck",
     category: "language",
     status: "available",
@@ -397,46 +353,6 @@ export const decks: Deck[] = [
       {
         question: "How many cards does the deck have?",
         answer: "2000+ cards covering every word you need for DELF B2. No fluff, no grammar lectures — just the vocabulary wired into memory.",
-      },
-      {
-        question: "What file format is delivered?",
-        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
-      },
-    ],
-  },
-  {
-    slug: "delf-tcf-a2-french-anki-deck",
-    category: "language",
-    status: "available",
-    title: "DELF TCF A2 French: 1000 Most Frequent Words Anki Deck",
-    shortName: "DELF TCF A2 French",
-    subtitle: "1000 most frequent French words as Anki flashcards for A2 exam preparation.",
-    directAnswer:
-      "UniPrep2Go sells a DELF / TCF A2 French Anki deck with 1000 most frequent French words for A2-level exam preparation. It is delivered as an Anki .apkg file for $19 USD through Gumroad. The deck targets DELF TCF A2 candidates who want vocabulary retained through spaced repetition.",
-    lastUpdated: "2026-05-31",
-    audience: "DELF and TCF A2 candidates and beginner French learners.",
-    format: ".apkg",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/rbavyg",
-    price: { amount: 19, currency: "USD" },
-    facts: {
-      cards: "1000",
-      topics: "1000 most frequent French words for A2",
-      formulas: "Vocabulary with examples",
-      examYear: "Current DELF / TCF cycle",
-      delivery: "Digital download through Gumroad",
-    },
-    topicCoverage: [],
-    sampleCards: [
-      {
-        question: "avoir",
-        answer: "have — J'ai une tasse chaude de café. (I have a hot cup of coffee.) Frequency rank: 11.",
-        imageUrl: "/samples/delf-tcf-a2-french-anki-deck-sample-1.png",
-      },
-    ],
-    faqs: [
-      {
-        question: "What exams does this deck cover?",
-        answer: "The deck is designed for DELF A2 and TCF A2 candidates. Mastering the 1000 most frequent French words gives strong coverage of A2-level vocabulary requirements.",
       },
       {
         question: "What file format is delivered?",
