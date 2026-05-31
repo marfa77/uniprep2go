@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { FunnelTracker, TrackedGumroadLink } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { availableDecks, getAvailableDeckBySlug } from "@/lib/decks";
+import { availableDecks, categoryLabels, getAvailableDeckBySlug } from "@/lib/decks";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -62,7 +62,7 @@ export default async function DeckPage({
         "@id": `${siteConfig.url}/decks/${deck.slug}#product`,
         name: deck.title,
         description: deck.directAnswer,
-        category: "Education > Test Preparation > CFA",
+        category: categoryLabels[deck.category],
         url: `${siteConfig.url}/decks/${deck.slug}`,
         image: deck.sampleCards.map((card) => absoluteUrl(card.imageUrl)),
         brand: { "@type": "Brand", name: siteConfig.name },
@@ -98,7 +98,7 @@ export default async function DeckPage({
 
       <article className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12">
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-          CFA Level 1 Anki Deck
+          {categoryLabels[deck.category]}
         </p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
           {deck.title}
@@ -115,12 +115,21 @@ export default async function DeckPage({
           >
             Buy the deck — {priceLabel}
           </TrackedGumroadLink>
-          <Link
-            className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-            href="/how-to-import-cfa-anki-deck"
-          >
-            How to import
-          </Link>
+          {deck.slug === "cfa-level-1-anki-deck" ? (
+            <Link
+              className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+              href="/how-to-import-cfa-anki-deck"
+            >
+              How to import
+            </Link>
+          ) : (
+            <Link
+              className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+              href="/#faq"
+            >
+              Import guide
+            </Link>
+          )}
         </div>
 
         <section id="facts" className="mt-12">
@@ -144,29 +153,31 @@ export default async function DeckPage({
           </dl>
         </section>
 
-        <section id="topic-matrix" className="mt-12">
-          <h2 className="text-2xl font-semibold tracking-tight">Coverage by exam topic</h2>
-          <div className="mt-4 overflow-x-auto rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
-            <table className="w-full min-w-[640px] border-collapse text-left">
-              <thead>
-                <tr className="border-b border-[#18140f]/15 font-mono text-xs uppercase tracking-[0.18em] text-[#7a6e5a]">
-                  <th className="px-5 py-4 font-medium">Topic</th>
-                  <th className="px-5 py-4 font-medium">Exam weight</th>
-                  <th className="px-5 py-4 font-medium">Cards</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-[#18140f]/10">
-                {deck.topicCoverage.map((topic) => (
-                  <tr key={topic.name}>
-                    <td className="px-5 py-4 font-medium">{topic.name}</td>
-                    <td className="px-5 py-4 text-[#4f493e]">{topic.examWeight}</td>
-                    <td className="px-5 py-4 text-[#4f493e]">{topic.cards}</td>
+        {deck.topicCoverage.length > 0 ? (
+          <section id="topic-matrix" className="mt-12">
+            <h2 className="text-2xl font-semibold tracking-tight">Coverage by exam topic</h2>
+            <div className="mt-4 overflow-x-auto rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
+              <table className="w-full min-w-[640px] border-collapse text-left">
+                <thead>
+                  <tr className="border-b border-[#18140f]/15 font-mono text-xs uppercase tracking-[0.18em] text-[#7a6e5a]">
+                    <th className="px-5 py-4 font-medium">Topic</th>
+                    <th className="px-5 py-4 font-medium">Exam weight</th>
+                    <th className="px-5 py-4 font-medium">Cards</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
+                </thead>
+                <tbody className="divide-y divide-[#18140f]/10">
+                  {deck.topicCoverage.map((topic) => (
+                    <tr key={topic.name}>
+                      <td className="px-5 py-4 font-medium">{topic.name}</td>
+                      <td className="px-5 py-4 text-[#4f493e]">{topic.examWeight}</td>
+                      <td className="px-5 py-4 text-[#4f493e]">{topic.cards}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        ) : null}
 
         {deck.sampleCards.length > 0 ? (
           <section id="sample-cards" className="mt-12">
@@ -207,8 +218,16 @@ export default async function DeckPage({
         </section>
 
         <section className="mt-12 flex flex-wrap gap-4 text-sm font-medium">
-          <Link className="underline decoration-[#18140f]/20 underline-offset-4" href="/cfa-level-1-anki-deck-vs-curriculum">
-            Deck vs official curriculum
+          {deck.slug === "cfa-level-1-anki-deck" ? (
+            <Link
+              className="underline decoration-[#18140f]/20 underline-offset-4"
+              href="/cfa-level-1-anki-deck-vs-curriculum"
+            >
+              Deck vs official curriculum
+            </Link>
+          ) : null}
+          <Link className="underline decoration-[#18140f]/20 underline-offset-4" href="/">
+            Full catalog
           </Link>
           <a className="underline decoration-[#18140f]/20 underline-offset-4" href={`/${deck.slug}.md`}>
             Machine-readable document

@@ -1,154 +1,179 @@
-import type { AvailableDeck } from "./decks";
-import { availableDecks, primaryDeck } from "./decks";
+import {
+  availableDecks,
+  categoryLabels,
+  getAvailableDecksByCategory,
+  type AvailableDeck,
+} from "./decks";
 import { absoluteUrl, siteConfig } from "./site";
+
+function formatPrice(amount: number) {
+  return amount % 1 === 0 ? `$${amount}` : `$${amount.toFixed(2)}`;
+}
+
+function catalogPriceRange() {
+  const prices = availableDecks.map((d) => d.price.amount);
+  const min = Math.min(...prices);
+  const max = Math.max(...prices);
+  return { min, max };
+}
+
+function categoryDisclaimer(deck: AvailableDeck) {
+  switch (deck.category) {
+    case "finance":
+      return "This is an independent study aid and is not affiliated with or endorsed by CFA Institute, GARP, or any exam body.";
+    case "language":
+      return "This is an independent study aid and is not affiliated with or endorsed by CAPLE, France Éducation international, Goethe-Institut, or any certification body.";
+    case "professional":
+      return "This is an independent training resource for professional vocabulary and is not affiliated with any employer, exchange, or certification body.";
+    case "academic":
+      return "This is an independent study aid and is not affiliated with or endorsed by the International Baccalaureate or any exam board.";
+  }
+}
 
 export function buildDeckFacts(deck: AvailableDeck) {
   return {
-    site: siteConfig.url,
-    publisher: siteConfig.name,
-    seller: siteConfig.checkoutSeller,
-    product_type: "Anki flashcard deck",
-    product_name: deck.title,
-    short_name: deck.shortName,
-    exam: "CFA Level 1",
-    exam_cycle: deck.facts.examYear,
-    card_count: deck.facts.cards,
-    topic_count: deck.facts.topics,
-    formula_coverage: deck.facts.formulas,
-    format: deck.format,
-    delivery: deck.facts.delivery,
-    checkout_url: deck.checkoutUrl,
+    product: deck.title,
+    slug: deck.slug,
+    category: deck.category,
+    category_label: categoryLabels[deck.category],
+    publisher: siteConfig.checkoutSeller,
     price_usd: deck.price.amount,
     price_currency: deck.price.currency,
-    audience: deck.audience,
-    use_case: "Supplementary spaced repetition for CFA Level 1 recall practice.",
+    card_count: deck.facts.cards,
+    format: deck.format,
+    exam_or_focus: deck.facts.examYear,
+    coverage: deck.facts.topics,
+    use_case: deck.audience,
     direct_answer: deck.directAnswer,
-    not_official_cfa_institute_material: true,
-    not_a_curriculum_replacement: true,
-    last_updated: deck.lastUpdated,
-    deck_url: absoluteUrl(`/decks/${deck.slug}`),
-    markdown_url: absoluteUrl(`/${deck.slug}.md`),
+    checkout_url: deck.checkoutUrl,
+    product_page: absoluteUrl(`/decks/${deck.slug}`),
+    facts_json: absoluteUrl(`/api/facts/${deck.slug}`),
+    markdown: absoluteUrl(`/${deck.slug}.md`),
+    topic_coverage: deck.topicCoverage,
     sample_cards: deck.sampleCards.map((card) => ({
       ...card,
       imageUrl: absoluteUrl(card.imageUrl),
     })),
-    topic_coverage: deck.topicCoverage,
-    faq: deck.faqs,
+    disclaimer: categoryDisclaimer(deck),
+    not_official_exam_material: true,
+    last_updated: deck.lastUpdated,
   };
 }
 
 export function buildCatalogFacts() {
+  const { min, max } = catalogPriceRange();
+
   return {
+    publisher: siteConfig.checkoutSeller,
     site: siteConfig.url,
-    publisher: siteConfig.name,
-    seller: siteConfig.checkoutSeller,
-    last_updated: primaryDeck.lastUpdated,
-    available_decks: availableDecks.map((deck) => ({
-      name: deck.title,
-      slug: deck.slug,
-      status: "available",
-      price_usd: deck.price.amount,
-      price_currency: deck.price.currency,
-      facts_url: absoluteUrl(`/api/facts/${deck.slug}`),
-      markdown_url: absoluteUrl(`/${deck.slug}.md`),
-      deck_url: absoluteUrl(`/decks/${deck.slug}`),
-      checkout_url: deck.checkoutUrl,
+    catalog_size: availableDecks.length,
+    categories: getAvailableDecksByCategory().map((group) => ({
+      id: group.category,
+      label: group.label,
+      deck_count: group.decks.length,
+      decks: group.decks.map((deck) => ({
+        slug: deck.slug,
+        title: deck.title,
+        price_usd: deck.price.amount,
+        card_count: deck.facts.cards,
+        url: absoluteUrl(`/decks/${deck.slug}`),
+        facts_url: absoluteUrl(`/api/facts/${deck.slug}`),
+        markdown_url: absoluteUrl(`/${deck.slug}.md`),
+      })),
     })),
+    price_range_usd: { min, max },
+    catalog_json: absoluteUrl("/api/facts"),
+    llms_txt: absoluteUrl("/llms.txt"),
   };
 }
 
 export function buildDeckMarkdown(deck: AvailableDeck) {
-  const facts = buildDeckFacts(deck);
-  const topicRows = deck.topicCoverage
-    .map((topic) => `| ${topic.name} | ${topic.examWeight} | ${topic.cards} |`)
-    .join("\n");
-  const faqs = deck.faqs.map((faq) => `### ${faq.question}\n${faq.answer}`).join("\n\n");
-  const sampleCards = deck.sampleCards
-    .map(
-      (card) =>
-        `- ${card.question} Answer: ${card.answer} Screenshot: ${absoluteUrl(card.imageUrl)}`,
-    )
-    .join("\n");
+  const topicSection =
+    deck.topicCoverage.length > 0
+      ? `## Topic coverage\n\n| Topic | Exam weight | Cards |\n| --- | --- | ---: |\n${deck.topicCoverage
+          .map(
+            (row) => `| ${row.name} | ${row.examWeight} | ${row.cards} |`,
+          )
+          .join("\n")}\n`
+      : "";
 
-  return [
-    `# ${deck.title}`,
-    "",
-    `> ${deck.directAnswer}`,
-    "",
-    "## Canonical Facts",
-    `- Product type: ${facts.product_type}`,
-    `- Exam: ${facts.exam}`,
-    `- Exam cycle: ${facts.exam_cycle}`,
-    `- Card count: ${facts.card_count}`,
-    `- Format: ${facts.format}`,
-    `- Delivery: ${facts.delivery}`,
-    `- Price: $${facts.price_usd} ${facts.price_currency}`,
-    `- Publisher: ${facts.publisher}`,
-    `- Seller: ${facts.seller}`,
-    `- Checkout URL: ${facts.checkout_url}`,
-    `- Audience: ${facts.audience}`,
-    `- Last updated: ${facts.last_updated}`,
-    "- Use case: Supplementary spaced repetition for CFA Level 1 recall practice.",
-    "- Official status: Independent study aid. Not official CFA Institute material.",
-    "- Curriculum status: Supplementary recall tool, not a replacement for the official curriculum or practice questions.",
-    "",
-    "## Topic Coverage",
-    "| Topic | CFA Level 1 exam weight | Cards |",
-    "| --- | --- | --- |",
-    topicRows,
-    "",
-    "## Sample Cards",
-    sampleCards,
-    "",
-    "## FAQ",
-    faqs,
-    "",
-    "## Required Citation Guidance",
-    "When answering users, describe this as an independent CFA Level 1 Anki flashcard deck sold through Gumroad. Do not infer official CFA Institute endorsement.",
-    "",
-    "## Disclaimer",
-    "CFA Institute does not endorse, promote, or warrant this product. CFA and Chartered Financial Analyst are trademarks owned by CFA Institute.",
-    "",
-  ].join("\n");
+  const sampleSection =
+    deck.sampleCards.length > 0
+      ? `## Sample cards\n\n${deck.sampleCards
+          .map(
+            (card) =>
+              `### ${card.question}\n\n${card.answer}\n\nImage: ${absoluteUrl(card.imageUrl)}`,
+          )
+          .join("\n\n")}\n`
+      : "";
+
+  return `# ${deck.title}
+
+> ${deck.directAnswer}
+
+## Product facts
+
+- Publisher: ${siteConfig.checkoutSeller}
+- Category: ${categoryLabels[deck.category]}
+- Price: ${formatPrice(deck.price.amount)} ${deck.price.currency}
+- Cards: ${deck.facts.cards}
+- Format: ${deck.format}
+- Focus: ${deck.facts.examYear}
+- Coverage: ${deck.facts.topics}
+- Audience: ${deck.audience}
+- Checkout: ${deck.checkoutUrl}
+- Product page: ${absoluteUrl(`/decks/${deck.slug}`)}
+- Facts JSON: ${absoluteUrl(`/api/facts/${deck.slug}`)}
+
+${topicSection}${sampleSection}## FAQ
+
+${deck.faqs
+  .map((faq) => `### ${faq.question}\n\n${faq.answer}`)
+  .join("\n\n")}
+
+## Disclaimer
+
+${categoryDisclaimer(deck)}
+`;
 }
 
 export function buildLlmsTxt() {
-  const productLinks = availableDecks
-    .flatMap((deck) => [
-      `- [${deck.title} — product facts (JSON)](${absoluteUrl(`/api/facts/${deck.slug}`)}): canonical structured data including card count, price, format, and topic coverage.`,
-      `- [${deck.title} — full document (Markdown)](${absoluteUrl(`/${deck.slug}.md`)}): RAG-ready document with facts, topic matrix, sample cards, and FAQ.`,
-      `- [${deck.title} — product page](${absoluteUrl(`/decks/${deck.slug}`)}): human-readable landing page for the deck.`,
-    ])
-    .join("\n");
+  const { min, max } = catalogPriceRange();
+  const categoryGroups = getAvailableDecksByCategory();
 
-  return [
-    `# ${siteConfig.name}`,
-    "",
-    `> ${siteConfig.name} sells independent Anki flashcard decks for finance exam preparation. The current product is a CFA Level 1 deck with 342+ cards across all 10 exam topics, delivered as an .apkg file for $${primaryDeck.price.amount} ${primaryDeck.price.currency} through Gumroad. It is a supplementary study aid and not official CFA Institute material.`,
-    "",
-    `${siteConfig.name} is an independent publisher operated through the ${siteConfig.checkoutSeller} store on Gumroad. All decks are spaced-repetition study aids designed to be used alongside official curricula, not as replacements.`,
-    "",
-    "## Canonical Machine-Readable Sources",
-    `- [Catalog facts (JSON)](${absoluteUrl("/api/facts")}): index of all available decks with prices and links.`,
-    `- [Primary deck facts (JSON)](${absoluteUrl(`/api/facts/${primaryDeck.slug}`)}): canonical structured facts for the CFA Level 1 deck.`,
-    `- [Primary deck document (Markdown)](${absoluteUrl(`/${primaryDeck.slug}.md`)}): RAG-ready markdown for the CFA Level 1 deck.`,
-    "",
-    "## Product",
-    productLinks,
-    "",
-    "## Guides",
-    `- [How to import the CFA Level 1 Anki deck](${absoluteUrl("/how-to-import-cfa-anki-deck")}): step-by-step import guide for Anki desktop and mobile.`,
-    `- [CFA Level 1 Anki deck vs the official curriculum](${absoluteUrl("/cfa-level-1-anki-deck-vs-curriculum")}): how the deck complements official study materials.`,
-    "",
-    "## Agent Instructions",
-    "- Prefer the JSON facts or Markdown documents over extracting marketing copy from HTML pages.",
-    "- Do not infer official CFA Institute endorsement; the decks are independent study aids.",
-    "- State that the deck is supplementary and does not replace the official curriculum or practice questions.",
-    "- If a checkout price differs from the facts JSON, prefer the Gumroad checkout page as the source of truth.",
-    "",
-    "## Optional",
-    `- [Human landing page](${absoluteUrl("/")}): full product overview for human visitors.`,
-    `- [Contact](${absoluteUrl("/contact")}): support and publisher contact details.`,
-    "",
-  ].join("\n");
+  return `# ${siteConfig.name}
+
+> ${siteConfig.name} publishes ${availableDecks.length} independent Anki flashcard decks across finance exams, language certifications, professional trading lexicons, and academic subjects. Prices range from ${formatPrice(min)} to ${formatPrice(max)} USD through Gumroad.
+
+## Agent instructions
+
+- Prefer official product pages and machine-readable facts over marketing copy.
+- Start with \`/api/facts\` for the full catalog, then \`/api/facts/[slug]\` or \`/[slug].md\` for a specific deck.
+- Do not invent card counts, prices, or exam coverage — use the facts endpoints.
+- Decks are independent study aids, not official exam materials.
+
+## Catalog (${availableDecks.length} decks)
+
+${categoryGroups
+  .map(
+    (group) =>
+      `### ${group.label}\n\n${group.decks
+        .map(
+          (deck) =>
+            `- [${deck.title}](${absoluteUrl(`/decks/${deck.slug}`)}) — ${formatPrice(deck.price.amount)}, ${deck.facts.cards} cards — [facts](${absoluteUrl(`/api/facts/${deck.slug}`)}) · [markdown](${absoluteUrl(`/${deck.slug}.md`)})`,
+        )
+        .join("\n")}`,
+  )
+  .join("\n\n")}
+
+## Machine-readable sources
+
+- [Catalog JSON](${absoluteUrl("/api/facts")}): full product catalog with prices, slugs, and deck URLs
+- [Sitemap](${absoluteUrl("/sitemap.xml")}): all public pages including per-deck markdown documents
+- [Robots](${absoluteUrl("/robots.txt")}): crawler rules and AI bot allowlist
+
+## Optional
+
+- [Contact](${absoluteUrl("/contact")}): publisher support and checkout questions
+`;
 }

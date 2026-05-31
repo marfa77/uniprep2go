@@ -84,8 +84,12 @@
   - Описать полный каталог и категории
 
 - [ ] **Главная: hero не только про CFA**
-  - Сейчас landing заточен под CFA L1, хотя каталог уже multi-category
-  - Вариант: нейтральный hero «Exam prep decks» + featured products
+  - Сделано локально: catalog hub с featured decks, категориями, site-wide FAQ и ItemList JSON-LD
+
+- [x] **LLM layer для всех колод**
+  - Dynamic `/[slug].md` route для всех 13 decks
+  - `buildDeckFacts` / `buildDeckMarkdown` без CFA hardcode
+  - `buildLlmsTxt` и `/api/facts` описывают полный каталог
 
 ---
 

@@ -1,367 +1,319 @@
 import Link from "next/link";
-import Image from "next/image";
-import { FunnelTracker, TrackedGumroadLink } from "@/components/funnel-tracker";
+import { FunnelTracker } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
-import { getAvailableDecksByCategory, primaryDeck } from "@/lib/decks";
+import { SiteHeader } from "@/components/site-header";
+import {
+  availableDecks,
+  categoryLabels,
+  categoryOrder,
+  getAvailableDecksByCategory,
+  getFeaturedDecks,
+  primaryDeck,
+  siteFaqs,
+} from "@/lib/decks";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
-const priceLabel = `$${primaryDeck.price.amount} ${primaryDeck.price.currency}`;
+export default function HomePage() {
+  const catalogGroups = getAvailableDecksByCategory();
+  const featuredDecks = getFeaturedDecks();
+  const prices = availableDecks.map((d) => d.price.amount);
+  const minPrice = Math.min(...prices);
+  const maxPrice = Math.max(...prices);
 
-const productFacts = [
-  ["Product", primaryDeck.shortName],
-  ["Price", priceLabel],
-  ["Cards", primaryDeck.facts.cards],
-  ["Coverage", primaryDeck.facts.topics],
-  ["Format", primaryDeck.format],
-  ["Exam cycle", primaryDeck.facts.examYear],
-  ["Delivery", primaryDeck.facts.delivery],
-];
+  const sectionEvents = [
+    { selector: "#catalog", name: "catalog_view" as const },
+    { selector: "#faq", name: "faq_view" as const },
+  ];
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": `${siteConfig.url}/#organization`,
-      name: siteConfig.name,
-      url: siteConfig.url,
-      description:
-        "Independent publisher of Anki flashcard decks for finance exam preparation, sold through Gumroad.",
-      email: siteConfig.contactEmail,
-      sameAs: [siteConfig.gumroadStoreUrl],
-      contactPoint: {
-        "@type": "ContactPoint",
-        contactType: "customer support",
-        email: siteConfig.contactEmail,
-      },
-    },
-    {
-      "@type": "WebSite",
-      "@id": `${siteConfig.url}/#website`,
-      name: siteConfig.name,
-      url: siteConfig.url,
-      publisher: { "@id": `${siteConfig.url}/#organization` },
-    },
-    {
-      "@type": "Product",
-      "@id": `${siteConfig.url}/#cfa-level-1-anki-deck`,
-      name: primaryDeck.title,
-      description: primaryDeck.directAnswer,
-      brand: {
-        "@type": "Brand",
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
         name: siteConfig.name,
-      },
-      category: "Education > Test Preparation > CFA",
-      url: absoluteUrl(`/decks/${primaryDeck.slug}`),
-      image: primaryDeck.sampleCards.map((card) => absoluteUrl(card.imageUrl)),
-      offers: {
-        "@type": "Offer",
-        url: primaryDeck.checkoutUrl,
-        availability: "https://schema.org/InStock",
-        price: primaryDeck.price.amount,
-        priceCurrency: primaryDeck.price.currency,
-        seller: {
+        url: siteConfig.url,
+        description: siteConfig.description,
+        publisher: {
           "@type": "Organization",
           name: siteConfig.checkoutSeller,
         },
       },
-    },
-    {
-      "@type": "FAQPage",
-      "@id": `${siteConfig.url}/#faq`,
-      mainEntity: primaryDeck.faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: faq.answer,
-        },
-      })),
-    },
-  ],
-};
+      {
+        "@type": "ItemList",
+        name: `${siteConfig.name} Anki deck catalog`,
+        numberOfItems: availableDecks.length,
+        itemListElement: availableDecks.map((deck, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          item: {
+            "@type": "Product",
+            name: deck.title,
+            description: deck.directAnswer,
+            url: absoluteUrl(`/decks/${deck.slug}`),
+            brand: {
+              "@type": "Brand",
+              name: siteConfig.checkoutSeller,
+            },
+            offers: {
+              "@type": "Offer",
+              price: deck.price.amount,
+              priceCurrency: deck.price.currency,
+              availability: "https://schema.org/InStock",
+              url: deck.checkoutUrl,
+            },
+          },
+        })),
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: siteFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
+          },
+        })),
+      },
+    ],
+  };
 
-const sectionEvents = [
-  { selector: "#facts", name: "product_facts_view" },
-  { selector: "#topic-matrix", name: "topic_matrix_view" },
-  { selector: "#sample-cards", name: "sample_cards_view" },
-  { selector: "#catalog", name: "catalog_view" },
-  { selector: "#faq", name: "faq_view" },
-] as const;
-
-export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f7f3ea] text-[#18140f]">
-      <FunnelTracker deckSlug={primaryDeck.slug} sectionEvents={[...sectionEvents]} />
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-
-      <section className="mx-auto flex w-full max-w-6xl flex-col gap-12 px-6 py-10 sm:px-10 lg:px-12">
-        <nav className="flex items-center justify-between border-b border-[#18140f]/15 pb-5 text-sm">
-          <Link className="font-semibold tracking-tight" href="/" aria-label="UniPrep2Go home">
-            UniPrep2Go
-          </Link>
-          <TrackedGumroadLink
-            className="rounded-full border border-[#18140f]/25 px-4 py-2 font-medium transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-            deckSlug={primaryDeck.slug}
-            href={primaryDeck.checkoutUrl}
-            source="nav_cta"
-          >
-            Buy on Gumroad
-          </TrackedGumroadLink>
-        </nav>
-
-        <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
-          <div className="space-y-8">
-            <p className="font-mono text-xs uppercase tracking-[0.32em] text-[#1f3a5f]">
-              CFA Level 1 Anki Deck
+      <SiteHeader />
+      <FunnelTracker
+        deckSlug={primaryDeck.slug}
+        sectionEvents={sectionEvents}
+        source="home"
+      />
+      <main>
+        <section className="border-b border-zinc-200 bg-zinc-50">
+          <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
+            <p className="text-sm font-medium uppercase tracking-wide text-zinc-500">
+              Anki deck catalog
             </p>
-            <div className="space-y-5">
-              <h1 className="max-w-4xl text-5xl font-semibold tracking-[-0.055em] text-balance sm:text-6xl lg:text-7xl">
-                {primaryDeck.title}
-              </h1>
-              <p className="max-w-2xl text-lg leading-8 text-[#4f493e] sm:text-xl">
-                {primaryDeck.subtitle} Built for candidates who want direct recall practice without marketing noise.
-              </p>
-            </div>
-            <p className="max-w-2xl rounded-2xl border border-[#18140f]/15 bg-[#fffaf0]/70 p-5 text-base leading-7 text-[#4f493e]">
-              {primaryDeck.directAnswer}
+            <h1 className="mt-3 max-w-3xl text-4xl font-semibold tracking-tight text-zinc-900 sm:text-5xl">
+              Exam prep, languages, and professional decks — one catalog
+            </h1>
+            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-zinc-600">
+              {siteConfig.name} publishes {availableDecks.length} independent
+              Anki flashcard decks across {categoryOrder.length} categories.
+              Download .apkg files from Gumroad and import into Anki on desktop,
+              mobile, or web.
             </p>
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <TrackedGumroadLink
-                className="inline-flex items-center justify-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-                deckSlug={primaryDeck.slug}
-                href={primaryDeck.checkoutUrl}
-                source="hero_cta"
-              >
-                Buy the deck — {priceLabel}
-              </TrackedGumroadLink>
+            <div className="mt-8 flex flex-wrap gap-3">
               <a
-                className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-                href="#facts"
+                href="#catalog"
+                className="inline-flex items-center rounded-lg bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white hover:bg-zinc-800"
               >
-                Read product facts
+                Browse catalog
+              </a>
+              <a
+                href={siteConfig.gumroadStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center rounded-lg border border-zinc-300 bg-white px-5 py-2.5 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
+              >
+                Gumroad store
               </a>
             </div>
-          </div>
-
-          <aside className="border-y border-[#18140f]/20 py-6 lg:border-y-0 lg:border-l lg:pl-8">
-            <dl className="grid grid-cols-2 gap-x-8 gap-y-7">
-              {productFacts.slice(1, 5).map(([label, value]) => (
-                <div key={label}>
-                  <dt className="font-mono text-xs uppercase tracking-[0.18em] text-[#7a6e5a]">
-                    {label}
-                  </dt>
-                  <dd className="mt-2 text-2xl font-semibold tracking-tight">{value}</dd>
-                </div>
-              ))}
-            </dl>
-          </aside>
-        </div>
-      </section>
-
-      <section id="facts" className="mx-auto w-full max-w-6xl px-6 py-12 sm:px-10 lg:px-12">
-        <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr]">
-          <div>
-            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-              Machine-readable facts
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight">Product specification</h2>
-          </div>
-          <div className="overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
-            <dl className="divide-y divide-[#18140f]/10">
-              {productFacts.map(([label, value]) => (
-                <div className="grid gap-2 px-5 py-4 sm:grid-cols-[180px_1fr]" key={label}>
-                  <dt className="font-mono text-xs uppercase tracking-[0.18em] text-[#7a6e5a]">
-                    {label}
-                  </dt>
-                  <dd className="font-medium">{value}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <section id="topic-matrix" className="mx-auto w-full max-w-6xl px-6 py-12 sm:px-10 lg:px-12">
-        <div className="mb-6 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
-          <div>
-            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-              CFA Level 1 topic matrix
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight">Coverage by exam topic</h2>
-          </div>
-          <p className="max-w-md text-sm leading-6 text-[#5f5749]">
-            Exam weights are shown as reference ranges. The deck is a supplementary recall tool, not official curriculum content.
-          </p>
-        </div>
-        <div className="overflow-x-auto rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
-          <table className="w-full min-w-[720px] border-collapse text-left">
-            <thead>
-              <tr className="border-b border-[#18140f]/15 font-mono text-xs uppercase tracking-[0.18em] text-[#7a6e5a]">
-                <th className="px-5 py-4 font-medium">Topic</th>
-                <th className="px-5 py-4 font-medium">Exam weight</th>
-                <th className="px-5 py-4 font-medium">Cards</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-[#18140f]/10">
-              {primaryDeck.topicCoverage.map((topic) => (
-                <tr key={topic.name}>
-                  <td className="px-5 py-4 font-medium">{topic.name}</td>
-                  <td className="px-5 py-4 text-[#4f493e]">{topic.examWeight}</td>
-                  <td className="px-5 py-4 text-[#4f493e]">{topic.cards}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section id="sample-cards" className="mx-auto w-full max-w-6xl px-6 py-12 sm:px-10 lg:px-12">
-        <div className="mb-6 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
-          <div>
-            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-              Sample cards
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight">Real Anki card examples</h2>
-          </div>
-          <p className="max-w-md text-sm leading-6 text-[#5f5749]">
-            Screenshots show the actual card style: question, direct definition, and formula example in Anki.
-          </p>
-        </div>
-        <div className="grid gap-4 lg:grid-cols-3">
-          {primaryDeck.sampleCards.map((card) => (
-            <article
-              className="overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#18140f] shadow-sm"
-              key={card.imageUrl}
-            >
-              <Image
-                alt={`Sample Anki card: ${card.question}`}
-                className="h-auto w-full"
-                height={550}
-                src={card.imageUrl}
-                width={976}
-              />
-              <div className="border-t border-white/10 bg-[#fffaf0] p-5">
-                <h3 className="font-semibold">{card.question}</h3>
-                <p className="mt-2 text-sm leading-6 text-[#5f5749]">{card.answer}</p>
+            <dl className="mt-10 grid gap-4 sm:grid-cols-3">
+              <div className="rounded-xl border border-zinc-200 bg-white p-4">
+                <dt className="text-sm text-zinc-500">Decks</dt>
+                <dd className="mt-1 text-2xl font-semibold text-zinc-900">
+                  {availableDecks.length}
+                </dd>
               </div>
-            </article>
-          ))}
-        </div>
-      </section>
+              <div className="rounded-xl border border-zinc-200 bg-white p-4">
+                <dt className="text-sm text-zinc-500">Categories</dt>
+                <dd className="mt-1 text-2xl font-semibold text-zinc-900">
+                  {categoryOrder.length}
+                </dd>
+              </div>
+              <div className="rounded-xl border border-zinc-200 bg-white p-4">
+                <dt className="text-sm text-zinc-500">Price range</dt>
+                <dd className="mt-1 text-2xl font-semibold text-zinc-900">
+                  ${minPrice}–${maxPrice}
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </section>
 
-      <section id="catalog" className="mx-auto w-full max-w-6xl px-6 py-12 sm:px-10 lg:px-12">
-        <div className="mb-10">
-          <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Catalog</p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight">All decks</h2>
-        </div>
-        <div className="grid gap-10">
-          {getAvailableDecksByCategory().map(({ category, label, decks: categoryDecks }) => (
-            <div key={category}>
-              <p className="mb-4 font-mono text-xs uppercase tracking-[0.22em] text-[#7a6e5a]">
-                {label}
+        {featuredDecks.length > 0 && (
+          <section className="border-b border-zinc-200">
+            <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+              <h2 className="text-2xl font-semibold text-zinc-900">
+                Featured decks
+              </h2>
+              <p className="mt-2 text-zinc-600">
+                Popular picks across language, finance, and professional
+                training.
               </p>
-              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {categoryDecks.map((deck) => (
-                  <Link
-                    className="group flex flex-col justify-between rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70 p-5 transition hover:border-[#18140f]/40 hover:bg-[#fffaf0]"
-                    href={`/decks/${deck.slug}`}
+              <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {featuredDecks.map((deck) => (
+                  <article
                     key={deck.slug}
+                    className="flex flex-col rounded-xl border border-zinc-200 bg-white p-5"
                   >
-                    <div>
-                      <h3 className="font-semibold leading-snug group-hover:underline group-hover:decoration-[#18140f]/30 group-hover:underline-offset-4">
-                        {deck.shortName}
-                      </h3>
-                      <p className="mt-2 text-sm leading-6 text-[#5f5749]">{deck.subtitle}</p>
-                    </div>
-                    <div className="mt-4 flex items-center justify-between">
-                      <span className="font-mono text-sm font-semibold text-[#18140f]">
-                        ${deck.price.amount} {deck.price.currency}
+                    <p className="text-xs font-medium uppercase tracking-wide text-zinc-500">
+                      {categoryLabels[deck.category]}
+                    </p>
+                    <h3 className="mt-2 text-lg font-semibold text-zinc-900">
+                      <Link
+                        href={`/decks/${deck.slug}`}
+                        className="hover:underline"
+                      >
+                        {deck.title}
+                      </Link>
+                    </h3>
+                    <p className="mt-2 flex-1 text-sm leading-relaxed text-zinc-600">
+                      {deck.directAnswer}
+                    </p>
+                    <div className="mt-4 flex items-center justify-between text-sm">
+                      <span className="font-medium text-zinc-900">
+                        ${deck.price.amount} · {deck.facts.cards} cards
                       </span>
-                      <span className="font-mono text-xs text-[#8a7d68]">{deck.facts.cards} cards</span>
+                      <Link
+                        href={`/decks/${deck.slug}`}
+                        className="font-medium text-zinc-900 underline-offset-2 hover:underline"
+                      >
+                        View deck
+                      </Link>
                     </div>
-                  </Link>
+                  </article>
                 ))}
               </div>
             </div>
-          ))}
-        </div>
-      </section>
+          </section>
+        )}
 
-      <section id="guides" className="mx-auto w-full max-w-6xl px-6 py-12 sm:px-10 lg:px-12">
-        <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr]">
-          <div>
-            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Guides</p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight">Buyer questions, answered</h2>
-          </div>
-          <div className="grid gap-3 sm:grid-cols-2">
-            <Link
-              className="rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70 p-5 transition hover:border-[#18140f]"
-              href="/how-to-import-cfa-anki-deck"
-            >
-              <h3 className="text-lg font-semibold">How to import the deck</h3>
-              <p className="mt-1 text-sm leading-6 text-[#5f5749]">
-                Step-by-step .apkg import for Anki desktop and mobile.
-              </p>
-            </Link>
-            <Link
-              className="rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70 p-5 transition hover:border-[#18140f]"
-              href="/cfa-level-1-anki-deck-vs-curriculum"
-            >
-              <h3 className="text-lg font-semibold">Deck vs official curriculum</h3>
-              <p className="mt-1 text-sm leading-6 text-[#5f5749]">
-                How the deck complements official CFA Level 1 study.
-              </p>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section id="faq" className="mx-auto w-full max-w-6xl px-6 py-12 sm:px-10 lg:px-12">
-        <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr]">
-          <div>
-            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-              FAQ
+        <section id="catalog" className="border-b border-zinc-200">
+          <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+            <h2 className="text-2xl font-semibold text-zinc-900">
+              Full catalog
+            </h2>
+            <p className="mt-2 text-zinc-600">
+              All decks grouped by category. Each product page includes sample
+              cards, FAQ, and machine-readable facts for AI systems.
             </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight">Direct answers for candidates and AI systems</h2>
+            <div className="mt-10 space-y-12">
+              {catalogGroups.map((group) => (
+                <div key={group.category}>
+                  <h3 className="text-lg font-semibold text-zinc-900">
+                    {group.label}
+                  </h3>
+                  <ul className="mt-4 divide-y divide-zinc-200 rounded-xl border border-zinc-200 bg-white">
+                    {group.decks.map((deck) => (
+                      <li
+                        key={deck.slug}
+                        className="flex flex-col gap-3 px-5 py-4 sm:flex-row sm:items-center sm:justify-between"
+                      >
+                        <div>
+                          <Link
+                            href={`/decks/${deck.slug}`}
+                            className="font-medium text-zinc-900 hover:underline"
+                          >
+                            {deck.title}
+                          </Link>
+                          <p className="mt-1 text-sm text-zinc-600">
+                            {deck.facts.cards} cards · {deck.facts.examYear}
+                          </p>
+                        </div>
+                        <div className="flex shrink-0 items-center gap-4 text-sm">
+                          <span className="font-medium text-zinc-900">
+                            ${deck.price.amount}
+                          </span>
+                          <Link
+                            href={`/decks/${deck.slug}`}
+                            className="text-zinc-600 underline-offset-2 hover:text-zinc-900 hover:underline"
+                          >
+                            Details
+                          </Link>
+                          <a
+                            href={deck.checkoutUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-medium text-zinc-900 underline-offset-2 hover:underline"
+                          >
+                            Buy
+                          </a>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="divide-y divide-[#18140f]/10 rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
-            {primaryDeck.faqs.map((faq) => (
-              <article className="p-5" key={faq.question}>
-                <h3 className="font-semibold">{faq.question}</h3>
-                <p className="mt-2 leading-7 text-[#5f5749]">{faq.answer}</p>
-              </article>
-            ))}
+        </section>
+
+        <section id="llm-sources" className="border-b border-zinc-200 bg-zinc-50">
+          <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+            <h2 className="text-2xl font-semibold text-zinc-900">
+              Machine-readable sources
+            </h2>
+            <p className="mt-2 text-zinc-600">
+              Structured data for search engines, assistants, and RAG
+              pipelines.
+            </p>
+            <ul className="mt-6 space-y-2 text-sm">
+              <li>
+                <a
+                  href="/api/facts"
+                  className="font-medium text-zinc-900 underline-offset-2 hover:underline"
+                >
+                  /api/facts
+                </a>{" "}
+                — full catalog JSON
+              </li>
+              <li>
+                <a
+                  href="/llms.txt"
+                  className="font-medium text-zinc-900 underline-offset-2 hover:underline"
+                >
+                  /llms.txt
+                </a>{" "}
+                — LLM entrypoint with agent instructions
+              </li>
+              <li>
+                <code className="rounded bg-zinc-200 px-1.5 py-0.5 text-xs">
+                  /[slug].md
+                </code>{" "}
+                — per-deck markdown for RAG (e.g.{" "}
+                <a
+                  href="/cfa-level-1-anki-deck.md"
+                  className="font-medium text-zinc-900 underline-offset-2 hover:underline"
+                >
+                  cfa-level-1-anki-deck.md
+                </a>
+                )
+              </li>
+            </ul>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="mx-auto w-full max-w-6xl px-6 py-12 sm:px-10 lg:px-12">
-        <div className="rounded-[2rem] bg-[#18140f] p-7 text-[#fffaf0] sm:p-10">
-          <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#c9b98f]">
-            Checkout
-          </p>
-          <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl">
-            Buy the CFA Level 1 Anki deck for {priceLabel} through Gumroad.
-          </h2>
-          <p className="mt-4 max-w-2xl leading-7 text-[#e3d8c2]">
-            The product is delivered digitally. Use it as a supplementary spaced repetition tool alongside official materials and practice questions.
-          </p>
-          <TrackedGumroadLink
-            className="mt-7 inline-flex rounded-full bg-[#fffaf0] px-6 py-3 text-sm font-semibold text-[#18140f] transition hover:bg-[#c9b98f] focus:outline-none focus:ring-2 focus:ring-[#fffaf0]"
-            deckSlug={primaryDeck.slug}
-            href={primaryDeck.checkoutUrl}
-            source="checkout_cta"
-          >
-            Continue to Gumroad
-          </TrackedGumroadLink>
-        </div>
-      </section>
-
+        <section id="faq" className="border-b border-zinc-200">
+          <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+            <h2 className="text-2xl font-semibold text-zinc-900">FAQ</h2>
+            <dl className="mt-8 space-y-6">
+              {siteFaqs.map((faq) => (
+                <div key={faq.question}>
+                  <dt className="font-medium text-zinc-900">{faq.question}</dt>
+                  <dd className="mt-2 text-sm leading-relaxed text-zinc-600">
+                    {faq.answer}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

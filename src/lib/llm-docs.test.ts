@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { primaryDeck } from "./decks";
+import { availableDecks, primaryDeck } from "./decks";
 import {
   buildCatalogFacts,
   buildDeckFacts,
@@ -12,18 +12,17 @@ describe("LLM documents", () => {
     const facts = buildDeckFacts(primaryDeck);
 
     expect(facts).toMatchObject({
-      product_type: "Anki flashcard deck",
-      exam: "CFA Level 1",
+      slug: "cfa-level-1-anki-deck",
+      category: "finance",
+      price_usd: 11,
+      price_currency: "USD",
       card_count: "342+",
       format: ".apkg",
       checkout_url: "https://pixidstudio.gumroad.com/l/ivjmuu",
-      price_usd: 11,
-      price_currency: "USD",
-      last_updated: "2026-05-31",
+      not_official_exam_material: true,
     });
     expect(facts.topic_coverage).toHaveLength(10);
     expect(facts.sample_cards).toHaveLength(3);
-    expect(facts.not_official_cfa_institute_material).toBe(true);
   });
 
   it("uses absolute image URLs for sample cards", () => {
@@ -34,17 +33,16 @@ describe("LLM documents", () => {
     }
   });
 
-  it("builds a catalog index of available decks", () => {
+  it("builds a catalog index grouped by category", () => {
     const catalog = buildCatalogFacts();
 
-    expect(catalog.available_decks.length).toBeGreaterThanOrEqual(1);
-    expect(catalog.available_decks[0]).toMatchObject({
-      slug: "cfa-level-1-anki-deck",
-      status: "available",
+    expect(catalog.catalog_size).toBe(availableDecks.length);
+    expect(catalog.categories.length).toBeGreaterThanOrEqual(1);
+    expect(catalog.categories[0]?.decks[0]).toMatchObject({
+      slug: expect.any(String),
+      facts_url: expect.stringContaining("/api/facts/"),
+      markdown_url: expect.stringContaining(".md"),
     });
-    expect(catalog.available_decks[0]?.facts_url).toContain(
-      "/api/facts/cfa-level-1-anki-deck",
-    );
   });
 
   it("builds a compact markdown retrieval document", () => {
@@ -52,13 +50,38 @@ describe("LLM documents", () => {
 
     expect(markdown).toContain("# CFA Level 1 Mastery: 342+ Smart Anki Flashcards");
     expect(markdown).toContain("> ");
-    expect(markdown).toContain("## Canonical Facts");
-    expect(markdown).toContain("## Topic Coverage");
-    expect(markdown).toContain("## Sample Cards");
+    expect(markdown).toContain("## Product facts");
+    expect(markdown).toContain("## Topic coverage");
+    expect(markdown).toContain("## Sample cards");
     expect(markdown).toContain("## FAQ");
-    expect(markdown).toContain("CFA Institute does not endorse");
+    expect(markdown).toContain("CFA Institute");
   });
 
+  it("builds deck-specific facts for non-CFA decks", () => {
+    const deck = availableDecks.find(
+      (item) => item.slug === "ciple-a2-european-portuguese-anki-deck",
+    );
+
+    expect(deck).toBeDefined();
+    const facts = buildDeckFacts(deck!);
+
+    expect(facts.category).toBe("language");
+    expect(facts.category_label).toBe("Language Certifications");
+    expect(JSON.stringify(facts)).not.toContain('"exam":"CFA Level 1"');
+  });
+
+  it("builds markdown for any available deck slug", () => {
+    const deck = availableDecks.find(
+      (item) => item.slug === "bench-energy-oil-trader-anki-deck",
+    );
+
+    expect(deck).toBeDefined();
+    const markdown = buildDeckMarkdown(deck!);
+
+    expect(markdown).toContain("# Bench Energy: OIL Trader's Lexicon");
+    expect(markdown).toContain("## Product facts");
+    expect(markdown).not.toContain("10 CFA Level 1 topic areas");
+  });
   it("builds llms.txt following the llmstxt.org spec", () => {
     const llms = buildLlmsTxt();
 
@@ -66,8 +89,7 @@ describe("LLM documents", () => {
     expect(llms.split("\n").some((line) => line.startsWith("> "))).toBe(true);
     expect(llms).toContain("](https://");
     expect(llms).toContain("/api/facts");
-    expect(llms).toContain("/cfa-level-1-anki-deck.md");
-    expect(llms).toContain("/how-to-import-cfa-anki-deck");
-    expect(llms).toContain("Do not infer official CFA Institute endorsement");
+    expect(llms).toContain("/ciple-a2-european-portuguese-anki-deck.md");
+    expect(llms).toContain(`${availableDecks.length} independent Anki flashcard decks`);
   });
 });

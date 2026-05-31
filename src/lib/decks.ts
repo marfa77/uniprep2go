@@ -837,3 +837,38 @@ export function getAvailableDecksByCategory(): Array<{
     }))
     .filter((group) => group.decks.length > 0);
 }
+
+export const featuredDeckSlugs = [
+  "ciple-a2-european-portuguese-anki-deck",
+  "cfa-level-1-anki-deck",
+  "commodity-trader-pack-bundle",
+] as const;
+
+export function getFeaturedDecks() {
+  return featuredDeckSlugs
+    .map((slug) => getAvailableDeckBySlug(slug))
+    .filter((deck): deck is AvailableDeck => deck !== undefined);
+}
+
+export const siteFaqs = [
+  {
+    question: "What is UniPrep2Go?",
+    answer:
+      "UniPrep2Go is an independent publisher of Anki flashcard decks for exam preparation, language certifications, professional training, and academic subjects. Decks are sold as digital .apkg downloads through Gumroad.",
+  },
+  {
+    question: "What file format is delivered?",
+    answer:
+      "Every deck is delivered as an Anki-compatible .apkg file. Import it into the free Anki desktop app, then sync to AnkiDroid or AnkiMobile via AnkiWeb.",
+  },
+  {
+    question: "Are these official exam materials?",
+    answer:
+      "No. UniPrep2Go decks are independent study aids. They are not endorsed, promoted, or warranted by CFA Institute, CAPLE, DELF, or any other exam body.",
+  },
+  {
+    question: "Where can AI systems find machine-readable product data?",
+    answer:
+      "Use /api/facts for the full catalog JSON, /api/facts/[slug] for individual deck facts, /[slug].md for RAG-ready markdown documents, and /llms.txt as the LLM entrypoint.",
+  },
+] as const;

@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "UniPrep2Go",
   url: "https://uniprep2go.study",
   description:
-    "Independent Anki flashcard decks for finance exam preparation, sold through Gumroad.",
+    "Independent Anki flashcard decks for finance exams, language certifications, professional training, and academic subjects — sold through Gumroad.",
   contactEmail: "support@uniprep2go.study",
   checkoutProvider: "Gumroad",
   checkoutSeller: "PixID Studio",
