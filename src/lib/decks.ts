@@ -288,7 +288,24 @@ export const decks: Deck[] = [
       delivery: "Digital download through Gumroad",
     },
     topicCoverage: [],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question: "estar",
+        answer:
+          "be — Eu estou aqui na sala iluminada pelo sol. (I am here in the sunlit room.)",
+        imageUrl: "/samples/ciple-a2-european-portuguese-anki-deck-sample-1.png",
+      },
+      {
+        question: "eu",
+        answer: "i — Eu fico aqui sozinho. (I stand here alone.)",
+        imageUrl: "/samples/ciple-a2-european-portuguese-anki-deck-sample-2.png",
+      },
+      {
+        question: "tu",
+        answer: "you — Tu pareces feliz hoje! (You look happy today!)",
+        imageUrl: "/samples/ciple-a2-european-portuguese-anki-deck-sample-3.png",
+      },
+    ],
     faqs: [
       {
         question: "What is the CIPLE A2 exam?",
@@ -336,9 +353,20 @@ export const decks: Deck[] = [
     topicCoverage: [],
     sampleCards: [
       {
-        question: "impôt",
-        answer: "tax — Elle paie son impôt au bureau. (She pays her tax at the office.)",
+        question: "être",
+        answer:
+          "be — Je suis ici dans la pièce baignée de soleil. (I am here in the sunlit room.)",
         imageUrl: "/samples/delf-b2-french-anki-deck-sample-1.png",
+      },
+      {
+        question: "je",
+        answer: "i — Je me tiens ici seul. (I stand here alone.)",
+        imageUrl: "/samples/delf-b2-french-anki-deck-sample-2.png",
+      },
+      {
+        question: "tu",
+        answer: "you — Tu as l'air heureux aujourd'hui ! (You look happy today!)",
+        imageUrl: "/samples/delf-b2-french-anki-deck-sample-3.png",
       },
     ],
     faqs: [
@@ -384,9 +412,19 @@ export const decks: Deck[] = [
     topicCoverage: [],
     sampleCards: [
       {
-        question: "ik / jij",
-        answer: "I / you — Example: Ik sta hier alleen. (I stand here alone.) Includes native audio and bilingual example sentences.",
+        question: "zijn",
+        answer: "be — Ik ben hier in de zonnige kamer. (I am here in the sunlit room.)",
         imageUrl: "/samples/dutch-a2-inburgering-anki-deck-sample-1.png",
+      },
+      {
+        question: "ik",
+        answer: "i — Ik sta hier alleen. (I stand here alone.)",
+        imageUrl: "/samples/dutch-a2-inburgering-anki-deck-sample-2.png",
+      },
+      {
+        question: "jij",
+        answer: "you — Jij ziet er vandaag gelukkig uit! (You look happy today!)",
+        imageUrl: "/samples/dutch-a2-inburgering-anki-deck-sample-3.png",
       },
     ],
     faqs: [
@@ -430,7 +468,23 @@ export const decks: Deck[] = [
       delivery: "Digital download through Gumroad",
     },
     topicCoverage: [],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question: "sein",
+        answer: "be — Ich bin hier im sonnigen Zimmer. (I am here in the sunlit room.)",
+        imageUrl: "/samples/german-a2-anki-deck-sample-1.png",
+      },
+      {
+        question: "ich",
+        answer: "i — Ich stehe hier allein. (I stand here alone.)",
+        imageUrl: "/samples/german-a2-anki-deck-sample-2.png",
+      },
+      {
+        question: "du",
+        answer: "you — Du siehst heute glücklich aus! (You look happy today!)",
+        imageUrl: "/samples/german-a2-anki-deck-sample-3.png",
+      },
+    ],
     faqs: [
       {
         question: "Which German A2 exams does this deck cover?",
@@ -466,9 +520,20 @@ export const decks: Deck[] = [
     topicCoverage: [],
     sampleCards: [
       {
-        question: "cattivo",
-        answer: "mean — Lui sembra cattivo e poco amichevole. (He looks mean and unfriendly.)",
+        question: "essere",
+        answer:
+          "be — Io sono qui nella stanza illuminata dal sole. (I am here in the sunlit room.)",
         imageUrl: "/samples/celi-b1-italian-anki-deck-sample-1.png",
+      },
+      {
+        question: "io",
+        answer: "i — Io sto qui da solo. (I stand here alone.)",
+        imageUrl: "/samples/celi-b1-italian-anki-deck-sample-2.png",
+      },
+      {
+        question: "tu",
+        answer: "you — Tu sembri felice oggi! (You look happy today!)",
+        imageUrl: "/samples/celi-b1-italian-anki-deck-sample-3.png",
       },
     ],
     faqs: [
