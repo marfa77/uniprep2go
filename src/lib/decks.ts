@@ -1,5 +1,11 @@
 export type DeckStatus = "available" | "planned";
 
+export type DeckCategory =
+  | "finance"
+  | "language"
+  | "professional"
+  | "academic";
+
 export type TopicCoverage = {
   name: string;
   examWeight: string;
@@ -38,6 +44,7 @@ export type ComparisonRow = {
 
 type BaseDeck = {
   slug: string;
+  category: DeckCategory;
   title: string;
   shortName: string;
   subtitle: string;
@@ -88,6 +95,7 @@ export const cfaLevelOneTopics: TopicCoverage[] = [
 export const decks: Deck[] = [
   {
     slug: "cfa-level-1-anki-deck",
+    category: "finance",
     status: "available",
     title: "CFA Level 1 Mastery: 342+ Smart Anki Flashcards",
     shortName: "CFA Level 1 Anki Deck",
@@ -213,6 +221,7 @@ export const decks: Deck[] = [
   },
   {
     slug: "cfa-level-1-formula-deck",
+    category: "finance",
     status: "planned",
     title: "CFA Level 1 Formula Anki Deck",
     shortName: "Formula Deck",
@@ -235,6 +244,7 @@ export const decks: Deck[] = [
   },
   {
     slug: "cfa-level-2-anki-deck",
+    category: "finance",
     status: "planned",
     title: "CFA Level 2 Anki Deck",
     shortName: "CFA Level 2",
@@ -255,6 +265,315 @@ export const decks: Deck[] = [
     sampleCards: [],
     faqs: [],
   },
+  // ── Language certifications ──────────────────────────────────────────
+  {
+    slug: "ciple-a2-european-portuguese-anki-deck",
+    category: "language",
+    status: "available",
+    title: "CIPLE A2 European Portuguese: 1600+ Anki Flashcards",
+    shortName: "CIPLE A2 Portuguese",
+    subtitle: "Full Anki deck for CIPLE / CAPLE A2 European Portuguese exam preparation.",
+    directAnswer:
+      "UniPrep2Go sells a CIPLE A2 European Portuguese Anki deck with 1600+ flashcards covering exam vocabulary, phrases, and examples with audio pronunciation and images. It is delivered as an Anki .apkg file for $19 USD through Gumroad. The deck targets CIPLE / CAPLE A2 candidates, Portuguese residency and citizenship applicants, and self-learners using spaced repetition.",
+    lastUpdated: "2026-05-31",
+    audience: "CIPLE / CAPLE A2 exam candidates, Portuguese residency or citizenship applicants, self-learners.",
+    format: ".apkg",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/ikvjw",
+    price: { amount: 19, currency: "USD" },
+    facts: {
+      cards: "1600+",
+      topics: "Vocabulary, phrases, everyday situations",
+      formulas: "Audio pronunciation + contextual examples",
+      examYear: "Current CAPLE cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "What is the CIPLE A2 exam?",
+        answer: "CIPLE (Certificado Inicial de Português Língua Estrangeira) is the A2-level certificate issued by CAPLE at the University of Lisbon. It is required for Portuguese residency and citizenship applications.",
+      },
+      {
+        question: "What does the deck include?",
+        answer: "1600+ carefully curated Anki cards with European Portuguese vocabulary, phrases, contextual examples, audio pronunciation, and images where helpful.",
+      },
+      {
+        question: "Who is this deck for?",
+        answer: "CIPLE / CAPLE A2 candidates, people applying for Portuguese residency or citizenship who need the A2 language certificate, and self-learners using spaced repetition.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "The deck is delivered as an Anki-compatible .apkg file through Gumroad.",
+      },
+      {
+        question: "Does it include audio?",
+        answer: "Yes. Cards include audio pronunciation to help train your ear for European Portuguese.",
+      },
+    ],
+  },
+  {
+    slug: "ciple-b1-portuguese-anki-deck",
+    category: "language",
+    status: "available",
+    title: "CIPLE B1 Portuguese: 1600+ Anki Flashcards",
+    shortName: "CIPLE B1 Portuguese",
+    subtitle: "Full Anki deck for CIPLE B1 European Portuguese exam preparation.",
+    directAnswer:
+      "UniPrep2Go sells a CIPLE B1 European Portuguese Anki deck with 1600+ flashcards for the B1-level CAPLE certificate. It is delivered as an Anki .apkg file for $19 USD through Gumroad. The deck targets B1-level Portuguese certification candidates and residency applicants advancing from A2.",
+    lastUpdated: "2026-05-31",
+    audience: "CIPLE B1 certification candidates and Portuguese residency applicants at the B1 level.",
+    format: ".apkg",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/cipleb1",
+    price: { amount: 19, currency: "USD" },
+    facts: {
+      cards: "1600+",
+      topics: "B1-level vocabulary, phrases, grammar-in-context",
+      formulas: "Audio pronunciation + contextual examples",
+      examYear: "Current CAPLE cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "What is the CIPLE B1 exam?",
+        answer: "The B1-level CAPLE certificate from the University of Lisbon. Required for some Portuguese residency and citizenship pathways and demonstrates intermediate competency in European Portuguese.",
+      },
+      {
+        question: "How is this different from the A2 deck?",
+        answer: "The B1 deck covers intermediate vocabulary, more complex phrases, and grammar-in-context appropriate for the B1 level. It is intended for learners who have already reached A2 level.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
+      },
+    ],
+  },
+  {
+    slug: "delf-b2-french-anki-deck",
+    category: "language",
+    status: "available",
+    title: "DELF B2 Cracked: 2000+ French Anki Flashcards",
+    shortName: "DELF B2 French",
+    subtitle: "Vocabulary-first Anki deck for DELF B2 French exam preparation.",
+    directAnswer:
+      "UniPrep2Go sells a DELF B2 French Anki deck with 2000+ flashcards covering every word needed for the B2 exam, each with a visual image, native French audio, and contextual example. It is delivered as an Anki .apkg file for $19 USD through Gumroad. The deck targets DELF B2 candidates who want vocabulary retained through spaced repetition rather than passive list study.",
+    lastUpdated: "2026-05-31",
+    audience: "DELF B2 exam candidates and advanced French learners using spaced repetition.",
+    format: ".apkg",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/lcrzbr",
+    price: { amount: 19, currency: "USD" },
+    facts: {
+      cards: "2000+",
+      topics: "DELF B2 vocabulary — full word list coverage",
+      formulas: "Native audio + visual image + contextual example per card",
+      examYear: "Current DELF cycle",
+      delivery: "Digital download through Gumroad (159 MB)",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "What is the DELF B2 exam?",
+        answer: "DELF (Diplôme d'Études en Langue Française) is an official French language certificate issued by France Éducation International. The B2 level demonstrates upper-intermediate French proficiency.",
+      },
+      {
+        question: "What does each card include?",
+        answer: "Every card includes a visual image so your brain stores the word, native French audio so your ear recognises it, and a contextual example so you know exactly when to use it.",
+      },
+      {
+        question: "How many cards does the deck have?",
+        answer: "2000+ cards covering every word you need for DELF B2. No fluff, no grammar lectures — just the vocabulary wired into memory.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
+      },
+    ],
+  },
+  {
+    slug: "delf-tcf-a2-french-anki-deck",
+    category: "language",
+    status: "available",
+    title: "DELF TCF A2 French: 1000 Most Frequent Words Anki Deck",
+    shortName: "DELF TCF A2 French",
+    subtitle: "1000 most frequent French words as Anki flashcards for A2 exam preparation.",
+    directAnswer:
+      "UniPrep2Go sells a DELF / TCF A2 French Anki deck with 1000 most frequent French words for A2-level exam preparation. It is delivered as an Anki .apkg file for $19 USD through Gumroad. The deck targets DELF TCF A2 candidates who want vocabulary retained through spaced repetition.",
+    lastUpdated: "2026-05-31",
+    audience: "DELF and TCF A2 candidates and beginner French learners.",
+    format: ".apkg",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/rbavyg",
+    price: { amount: 19, currency: "USD" },
+    facts: {
+      cards: "1000",
+      topics: "1000 most frequent French words for A2",
+      formulas: "Vocabulary with examples",
+      examYear: "Current DELF / TCF cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "What exams does this deck cover?",
+        answer: "The deck is designed for DELF A2 and TCF A2 candidates. Mastering the 1000 most frequent French words gives strong coverage of A2-level vocabulary requirements.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
+      },
+    ],
+  },
+  {
+    slug: "german-a2-anki-deck",
+    category: "language",
+    status: "available",
+    title: "German A2: 1,000 Essential Words Anki Deck (Goethe / telc / ÖSD)",
+    shortName: "German A2",
+    subtitle: "1000 essential German words for A2 certificate exams — Goethe, telc, ÖSD.",
+    directAnswer:
+      "UniPrep2Go sells a German A2 Anki deck with 1000 essential words for Goethe-Institut, telc, and ÖSD A2 certificate exams. It is delivered as an Anki .apkg file for $19+ USD through Gumroad. The deck targets German A2 exam candidates using spaced repetition for vocabulary retention.",
+    lastUpdated: "2026-05-31",
+    audience: "German A2 certificate exam candidates for Goethe-Institut, telc, or ÖSD.",
+    format: ".apkg",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/uoolen",
+    price: { amount: 19, currency: "USD" },
+    facts: {
+      cards: "1000",
+      topics: "A2-level German vocabulary",
+      formulas: "Essential words with examples",
+      examYear: "Current Goethe / telc / ÖSD cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Which German A2 exams does this deck cover?",
+        answer: "The deck is designed for the three main A2 German certificates: Goethe-Institut A2, telc Deutsch A2, and ÖSD Zertifikat A2. The vocabulary list overlaps substantially across all three.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
+      },
+    ],
+  },
+  {
+    slug: "celi-b1-italian-anki-deck",
+    category: "language",
+    status: "available",
+    title: "CELI B1 Italian: 373 Anki Flashcards",
+    shortName: "CELI B1 Italian",
+    subtitle: "Anki deck for CELI B1 Italian certificate exam preparation.",
+    directAnswer:
+      "UniPrep2Go sells a CELI B1 Italian Anki deck with 373 flashcards for the CELI B1 certificate from the Università per Stranieri di Perugia. It is delivered as an Anki .apkg file for $19 USD through Gumroad. The deck targets Italian B1 certification candidates using spaced repetition.",
+    lastUpdated: "2026-05-31",
+    audience: "CELI B1 certificate candidates and intermediate Italian learners.",
+    format: ".apkg",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/celib1",
+    price: { amount: 19, currency: "USD" },
+    facts: {
+      cards: "373",
+      topics: "B1-level Italian vocabulary and phrases",
+      formulas: "Exam-focused vocabulary",
+      examYear: "Current CELI cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "What is the CELI B1 exam?",
+        answer: "CELI (Certificato di Conoscenza della Lingua Italiana) is an Italian language certificate from the Università per Stranieri di Perugia. The B1 level demonstrates intermediate Italian proficiency.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
+      },
+    ],
+  },
+
+  // ── Academic ──────────────────────────────────────────────────────────
+  {
+    slug: "ib-biology-sl-anki-deck",
+    category: "academic",
+    status: "available",
+    title: "IB Biology SL: Core Mastery — 149 Smart Anki Flashcards",
+    shortName: "IB Biology SL",
+    subtitle: "149 focused Anki flashcards for IB Biology Standard Level.",
+    directAnswer:
+      "UniPrep2Go sells an IB Biology SL Anki deck with 149 flashcards covering core concepts for the IB Biology Standard Level programme. It is delivered as an Anki .apkg file for $4.99 USD through Gumroad. The deck targets IB students using spaced repetition for concept recall.",
+    lastUpdated: "2026-05-31",
+    audience: "IB Biology Standard Level students using spaced repetition for exam preparation.",
+    format: ".apkg",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/oakmtp",
+    price: { amount: 4.99, currency: "USD" },
+    facts: {
+      cards: "149",
+      topics: "IB Biology SL core concepts",
+      formulas: "Key definitions and processes",
+      examYear: "Current IB cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "What IB Biology topics are covered?",
+        answer: "The deck covers core IB Biology SL concepts including cell biology, molecular biology, genetics, ecology, evolution, and human physiology.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
+      },
+      {
+        question: "Is this for SL only or also HL?",
+        answer: "The deck is focused on Standard Level core content. HL students can use it to reinforce the core topics they share with SL.",
+      },
+    ],
+  },
+
+  // ── Professional / Commodities ─────────────────────────────────────────
+  {
+    slug: "bench-energy-metal-trader-anki-deck",
+    category: "professional",
+    status: "available",
+    title: "Bench Energy: METAL Trader's Lexicon — 202 Anki Flashcards",
+    shortName: "Metal Trader's Lexicon",
+    subtitle: "Anki flashcard deck covering key terms for metals commodity trading.",
+    directAnswer:
+      "UniPrep2Go sells the Bench Energy Metal Trader's Lexicon, an Anki deck with 202 flashcards covering key vocabulary, terms, and concepts for metals commodity trading. It is delivered as an Anki .apkg file for $19 USD through Gumroad. The deck targets commodity traders, analysts, and professionals working in metals markets.",
+    lastUpdated: "2026-05-31",
+    audience: "Metals commodity traders, analysts, and professionals entering metals markets.",
+    format: ".apkg",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/zpazj",
+    price: { amount: 19, currency: "USD" },
+    facts: {
+      cards: "202",
+      topics: "Metals trading terminology and market concepts",
+      formulas: "Trading terms, pricing mechanics, market structure",
+      examYear: "Professional reference",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "What does the Metal Trader's Lexicon cover?",
+        answer: "Key terms, concepts, and vocabulary for metals commodity trading — including base metals, precious metals, pricing benchmarks, market structure, and trading mechanics.",
+      },
+      {
+        question: "Who is this for?",
+        answer: "Commodity traders, analysts, and professionals entering or working in metals markets who want to systematise their vocabulary using spaced repetition.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
+      },
+    ],
+  },
 ];
 
 export const primaryDeck = decks[0] as AvailableDeck;
@@ -269,4 +588,32 @@ export function getDeckBySlug(slug: string) {
 
 export function getAvailableDeckBySlug(slug: string) {
   return availableDecks.find((deck) => deck.slug === slug);
+}
+
+export const categoryLabels: Record<DeckCategory, string> = {
+  finance: "Finance Exams",
+  language: "Language Certifications",
+  professional: "Professional & Trading",
+  academic: "Academic",
+};
+
+export const categoryOrder: DeckCategory[] = [
+  "finance",
+  "language",
+  "professional",
+  "academic",
+];
+
+export function getAvailableDecksByCategory(): Array<{
+  category: DeckCategory;
+  label: string;
+  decks: AvailableDeck[];
+}> {
+  return categoryOrder
+    .map((category) => ({
+      category,
+      label: categoryLabels[category],
+      decks: availableDecks.filter((d) => d.category === category),
+    }))
+    .filter((group) => group.decks.length > 0);
 }

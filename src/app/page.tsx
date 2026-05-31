@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FunnelTracker, TrackedGumroadLink } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
-import { decks, primaryDeck } from "@/lib/decks";
+import { getAvailableDecksByCategory, primaryDeck } from "@/lib/decks";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
 const priceLabel = `$${primaryDeck.price.amount} ${primaryDeck.price.currency}`;
@@ -254,40 +254,40 @@ export default function Home() {
       </section>
 
       <section id="catalog" className="mx-auto w-full max-w-6xl px-6 py-12 sm:px-10 lg:px-12">
-        <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr]">
-          <div>
-            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-              Catalog
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight">Decks and future modules</h2>
-          </div>
-          <div className="grid gap-3">
-            {decks.map((deck) => (
-              <article
-                className="grid gap-4 rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70 p-5 sm:grid-cols-[1fr_auto] sm:items-center"
-                key={deck.slug}
-              >
-                <div>
-                  <h3 className="text-lg font-semibold">
-                    {deck.status === "available" ? (
-                      <Link
-                        className="underline decoration-[#18140f]/20 underline-offset-4 hover:decoration-[#18140f]"
-                        href={`/decks/${deck.slug}`}
-                      >
-                        {deck.title}
-                      </Link>
-                    ) : (
-                      deck.title
-                    )}
-                  </h3>
-                  <p className="mt-1 text-sm leading-6 text-[#5f5749]">{deck.subtitle}</p>
-                </div>
-                <span className="w-fit rounded-full border border-[#18140f]/20 px-3 py-1 font-mono text-xs uppercase tracking-[0.14em] text-[#4f493e]">
-                  {deck.status}
-                </span>
-              </article>
-            ))}
-          </div>
+        <div className="mb-10">
+          <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Catalog</p>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight">All decks</h2>
+        </div>
+        <div className="grid gap-10">
+          {getAvailableDecksByCategory().map(({ category, label, decks: categoryDecks }) => (
+            <div key={category}>
+              <p className="mb-4 font-mono text-xs uppercase tracking-[0.22em] text-[#7a6e5a]">
+                {label}
+              </p>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {categoryDecks.map((deck) => (
+                  <Link
+                    className="group flex flex-col justify-between rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70 p-5 transition hover:border-[#18140f]/40 hover:bg-[#fffaf0]"
+                    href={`/decks/${deck.slug}`}
+                    key={deck.slug}
+                  >
+                    <div>
+                      <h3 className="font-semibold leading-snug group-hover:underline group-hover:decoration-[#18140f]/30 group-hover:underline-offset-4">
+                        {deck.shortName}
+                      </h3>
+                      <p className="mt-2 text-sm leading-6 text-[#5f5749]">{deck.subtitle}</p>
+                    </div>
+                    <div className="mt-4 flex items-center justify-between">
+                      <span className="font-mono text-sm font-semibold text-[#18140f]">
+                        ${deck.price.amount} {deck.price.currency}
+                      </span>
+                      <span className="font-mono text-xs text-[#8a7d68]">{deck.facts.cards} cards</span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
