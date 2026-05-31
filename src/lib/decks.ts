@@ -446,18 +446,18 @@ export const decks: Deck[] = [
     slug: "celi-b1-italian-anki-deck",
     category: "language",
     status: "available",
-    title: "CELI B1 Italian: 373 Anki Flashcards",
+    title: "CELI B1 Cracked: 1,373 Italian Anki Flashcards",
     shortName: "CELI B1 Italian",
-    subtitle: "Anki deck for CELI B1 Italian certificate exam preparation.",
+    subtitle: "Vocabulary-first Anki deck for CELI B1 Italian certificate exam preparation.",
     directAnswer:
-      "UniPrep2Go sells a CELI B1 Italian Anki deck with 373 flashcards for the CELI B1 certificate from the Università per Stranieri di Perugia. It is delivered as an Anki .apkg file for $19 USD through Gumroad. The deck targets Italian B1 certification candidates using spaced repetition.",
+      "UniPrep2Go sells a CELI B1 Italian Anki deck with 1,373 flashcards for the CELI B1 certificate from the Università per Stranieri di Perugia. It is delivered as an Anki .apkg file for $19 USD through Gumroad. The deck targets Italian B1 certification candidates who want vocabulary retained through spaced repetition rather than passive list study.",
     lastUpdated: "2026-05-31",
     audience: "CELI B1 certificate candidates and intermediate Italian learners.",
     format: ".apkg",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/celib1",
     price: { amount: 19, currency: "USD" },
     facts: {
-      cards: "373",
+      cards: "1373",
       topics: "B1-level Italian vocabulary and phrases",
       formulas: "Exam-focused vocabulary",
       examYear: "Current CELI cycle",
@@ -475,6 +475,10 @@ export const decks: Deck[] = [
       {
         question: "What is the CELI B1 exam?",
         answer: "CELI (Certificato di Conoscenza della Lingua Italiana) is an Italian language certificate from the Università per Stranieri di Perugia. The B1 level demonstrates intermediate Italian proficiency.",
+      },
+      {
+        question: "How many cards does the deck have?",
+        answer: "1,373 cards covering B1-level Italian vocabulary for CELI preparation.",
       },
       {
         question: "What file format is delivered?",
