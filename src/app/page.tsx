@@ -3,8 +3,11 @@ import Image from "next/image";
 import { FunnelTracker, TrackedGumroadLink } from "@/components/funnel-tracker";
 import { decks, primaryDeck } from "@/lib/decks";
 
+const priceLabel = `$${primaryDeck.price.amount} ${primaryDeck.price.currency}`;
+
 const productFacts = [
   ["Product", primaryDeck.shortName],
+  ["Price", priceLabel],
   ["Cards", primaryDeck.facts.cards],
   ["Coverage", primaryDeck.facts.topics],
   ["Format", primaryDeck.format],
@@ -35,7 +38,8 @@ const jsonLd = {
         "@type": "Offer",
         url: primaryDeck.checkoutUrl,
         availability: "https://schema.org/InStock",
-        priceCurrency: "USD",
+        price: primaryDeck.price.amount,
+        priceCurrency: primaryDeck.price.currency,
       },
     },
     {
@@ -105,7 +109,7 @@ export default function Home() {
                 href={primaryDeck.checkoutUrl}
                 source="hero_cta"
               >
-                Buy the CFA Level 1 deck
+                Buy the deck — {priceLabel}
               </TrackedGumroadLink>
               <a
                 className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
@@ -274,7 +278,7 @@ export default function Home() {
             Checkout
           </p>
           <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl">
-            Buy the CFA Level 1 Anki deck through Gumroad.
+            Buy the CFA Level 1 Anki deck for {priceLabel} through Gumroad.
           </h2>
           <p className="mt-4 max-w-2xl leading-7 text-[#e3d8c2]">
             The product is delivered digitally. Use it as a supplementary spaced repetition tool alongside official materials and practice questions.

@@ -5,6 +5,7 @@ describe("deck catalog", () => {
   it("exposes the CFA Level 1 Anki deck as reusable product data", () => {
     expect(primaryDeck.slug).toBe("cfa-level-1-anki-deck");
     expect(primaryDeck.checkoutUrl).toBe("https://pixidstudio.gumroad.com/l/ivjmuu");
+    expect(primaryDeck.price).toEqual({ amount: 11, currency: "USD" });
     expect(primaryDeck.facts.cards).toBe("342+");
     expect(primaryDeck.format).toBe(".apkg");
     expect(primaryDeck.topicCoverage).toHaveLength(10);

@@ -39,9 +39,15 @@ type BaseDeck = {
   faqs: DeckFaq[];
 };
 
+export type DeckPrice = {
+  amount: number;
+  currency: "USD";
+};
+
 export type AvailableDeck = BaseDeck & {
   status: "available";
   checkoutUrl: string;
+  price: DeckPrice;
 };
 
 export type PlannedDeck = BaseDeck & {
@@ -74,6 +80,10 @@ export const decks: Deck[] = [
     audience: "CFA Level 1 candidates who want structured recall practice for formulas, concepts, and topic definitions.",
     format: ".apkg",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/ivjmuu",
+    price: {
+      amount: 11,
+      currency: "USD",
+    },
     facts: {
       cards: "342+",
       topics: "10 CFA Level 1 topic areas",

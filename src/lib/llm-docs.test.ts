@@ -12,6 +12,8 @@ describe("LLM documents", () => {
       card_count: "342+",
       format: ".apkg",
       checkout_url: "https://pixidstudio.gumroad.com/l/ivjmuu",
+      price_usd: 11,
+      price_currency: "USD",
     });
     expect(facts.topic_coverage).toHaveLength(10);
     expect(facts.sample_cards).toHaveLength(3);
