@@ -427,6 +427,48 @@ export const decks: Deck[] = [
     ],
   },
   {
+    slug: "dutch-a2-inburgering-anki-deck",
+    category: "language",
+    status: "available",
+    title: "Dutch A2 — Inburgering: 1000 Most Frequent Words Anki Deck",
+    shortName: "Dutch A2 Inburgering",
+    subtitle: "1000 high-frequency Dutch words for the Inburgering A2 civic integration exam.",
+    directAnswer:
+      "UniPrep2Go sells a Dutch A2 Inburgering Anki deck with 1000+ high-frequency words for the Dutch civic integration (Inburgering) exam. Each card includes the Dutch word, English gloss, bilingual example sentences, native audio, and illustrations. It is delivered as an Anki .apkg file for $19 USD through Gumroad. The deck targets migrants preparing for the Dutch Inburgering exam and A2 Dutch certification.",
+    lastUpdated: "2026-05-31",
+    audience: "Migrants preparing for the Dutch Inburgering exam and A2 Dutch language certification.",
+    format: ".apkg",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/nrnwu",
+    price: { amount: 19, currency: "USD" },
+    facts: {
+      cards: "1000+",
+      topics: "Inburgering exam vocabulary — citizenship-style themes",
+      formulas: "Native audio + bilingual examples + illustrations per card",
+      examYear: "Current Inburgering cycle",
+      delivery: "Digital download through Gumroad (82.9 MB)",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "What is the Dutch Inburgering exam?",
+        answer: "Inburgering is the Dutch civic integration exam required for many migrants seeking residency or citizenship in the Netherlands. The A2 language component tests everyday Dutch vocabulary and comprehension.",
+      },
+      {
+        question: "What does each card include?",
+        answer: "Each card includes the Dutch word, an English gloss, bilingual example sentences, native audio pronunciation, and illustrations where helpful.",
+      },
+      {
+        question: "Does it work with the free Anki app?",
+        answer: "Yes. Import the .apkg file into the free Anki desktop app, then sync to AnkiDroid or AnkiMobile via AnkiWeb.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
+      },
+    ],
+  },
+  {
     slug: "german-a2-anki-deck",
     category: "language",
     status: "available",
