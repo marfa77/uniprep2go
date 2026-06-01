@@ -9,7 +9,7 @@ import {
   primaryDeck,
   siteFaqs,
 } from "@/lib/decks";
-import { buildCatalogItemListJsonLd } from "@/lib/product-jsonld";
+import { buildCatalogItemListJsonLd, buildSiteOrganizationJsonLd } from "@/lib/product-jsonld";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
 export const revalidate = 3600;
@@ -42,10 +42,10 @@ export default async function HomePage() {
         url: siteConfig.url,
         description: siteConfig.description,
         publisher: {
-          "@type": "Organization",
-          name: siteConfig.name,
+          "@id": `${siteConfig.url}/#organization`,
         },
       },
+      buildSiteOrganizationJsonLd(),
       buildCatalogItemListJsonLd(availableDecks),
       {
         "@type": "FAQPage",

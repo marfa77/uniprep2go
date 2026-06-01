@@ -2,8 +2,10 @@ import { describe, expect, it } from "vitest";
 import { getCatalogDeckBySlug } from "./decks";
 import {
   buildCatalogItemListJsonLd,
+  buildDeckPageJsonLd,
   buildProductJsonLd,
   buildProductOffer,
+  getProductImages,
 } from "./product-jsonld";
 import { applyPendingPriceToDeck, applyPriceRecordToDeck } from "./checkout-pricing";
 
@@ -22,7 +24,7 @@ describe("product json-ld", () => {
 
   const pendingDeck = applyPendingPriceToDeck(catalogDeck);
 
-  it("includes price and currency together on valid offers", () => {
+  it("includes merchant-ready offer fields when price is known", () => {
     const offer = buildProductOffer(pricedDeck);
 
     expect(offer).toMatchObject({
@@ -31,14 +33,29 @@ describe("product json-ld", () => {
       priceCurrency: "USD",
       url: pricedDeck.checkoutUrl,
     });
+    expect(offer?.shippingDetails?.shippingRate).toMatchObject({
+      value: 0,
+      currency: "USD",
+    });
+    expect(offer?.hasMerchantReturnPolicy?.returnPolicyCategory).toBe(
+      "https://schema.org/MerchantReturnNotPermitted",
+    );
   });
 
-  it("omits offers when price is pending", () => {
+  it("omits product schema when price is pending", () => {
     expect(buildProductOffer(pendingDeck)).toBeNull();
+    expect(buildProductJsonLd(pendingDeck)).toBeNull();
+    expect(buildDeckPageJsonLd(pendingDeck)["@graph"]).toHaveLength(1);
+  });
 
-    const product = buildProductJsonLd(pendingDeck);
-    expect(product.offers).toBeUndefined();
-    expect(product["@id"]).toBe("https://uniprep2go.study/decks/cfa-level-1-anki-deck#product");
+  it("requires at least one image for merchant product schema", () => {
+    const deckWithoutImages = {
+      ...pricedDeck,
+      sampleCards: pricedDeck.sampleCards.map((card) => ({ ...card, imageUrl: "" })),
+    };
+
+    expect(getProductImages(deckWithoutImages)).toEqual([]);
+    expect(buildProductJsonLd(deckWithoutImages)).toBeNull();
   });
 
   it("does not nest Product objects in the homepage catalog list", () => {
@@ -50,5 +67,19 @@ describe("product json-ld", () => {
       url: "https://uniprep2go.study/decks/cfa-level-1-anki-deck",
     });
     expect(JSON.stringify(itemList)).not.toContain('"@type":"Product"');
+  });
+
+  it("uses Brand and absolute image URLs on deck pages", () => {
+    const graph = buildDeckPageJsonLd(pricedDeck)["@graph"];
+    const product = graph.find((node) => node["@type"] === "Product");
+
+    expect(product).toMatchObject({
+      brand: { "@type": "Brand", name: "PixID Studio" },
+      image: [
+        "https://uniprep2go.study/samples/cfa-level-1-anki-deck-sample-1.webp",
+        "https://uniprep2go.study/samples/cfa-level-1-anki-deck-sample-2.webp",
+        "https://uniprep2go.study/samples/cfa-level-1-anki-deck-sample-3.webp",
+      ],
+    });
   });
 });

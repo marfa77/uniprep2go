@@ -7,7 +7,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { catalogAvailableDecks, categoryLabels } from "@/lib/decks";
 import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
-import { buildProductJsonLd } from "@/lib/product-jsonld";
+import { buildDeckPageJsonLd } from "@/lib/product-jsonld";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
 export const revalidate = 3600;
@@ -58,25 +58,7 @@ export default async function DeckPage({
     { selector: "#faq", name: "faq_view" as const },
   ];
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        ...buildProductJsonLd(deck),
-        category: categoryLabels[deck.category],
-        brand: { "@type": "Brand", name: siteConfig.name },
-      },
-      {
-        "@type": "FAQPage",
-        "@id": `${siteConfig.url}/decks/${deck.slug}#faq`,
-        mainEntity: deck.faqs.map((faq) => ({
-          "@type": "Question",
-          name: faq.question,
-          acceptedAnswer: { "@type": "Answer", text: faq.answer },
-        })),
-      },
-    ],
-  };
+  const jsonLd = buildDeckPageJsonLd(deck);
 
   return (
     <main className="min-h-screen bg-[#f7f3ea] text-[#18140f]">
