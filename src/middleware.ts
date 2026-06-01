@@ -5,10 +5,20 @@ import {
   FUNNEL_EXCLUDE_QUERY,
   FUNNEL_INCLUDE_QUERY,
 } from "./lib/funnel-exclude";
+import { siteConfig } from "./lib/site";
 
 const EXCLUDE_COOKIE_MAX_AGE = 60 * 60 * 24 * 365 * 5;
+const CANONICAL_HOST = new URL(siteConfig.url).hostname;
 
 export function middleware(request: NextRequest) {
+  const hostname = request.nextUrl.hostname;
+
+  if (hostname.startsWith("www.") && hostname.slice(4) === CANONICAL_HOST) {
+    const url = request.nextUrl.clone();
+    url.hostname = CANONICAL_HOST;
+    return NextResponse.redirect(url, 308);
+  }
+
   const search = request.nextUrl.search;
   const response = NextResponse.next();
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { CookieConsentBanner } from "@/components/cookie-consent-banner";
 import { GoogleAnalytics } from "@/components/google-analytics";
+import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://uniprep2go.study"),
+  metadataBase: new URL(siteConfig.url),
   title: "UniPrep2Go | Anki Deck Catalog",
   description:
     "Browse independent Anki flashcard decks for CFA, CIPLE, DELF, commodity trading, IB Biology, and more. LLM-readable product facts and checkout links.",

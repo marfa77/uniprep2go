@@ -3,7 +3,7 @@ import sitemap from "../app/sitemap";
 import robots from "../app/robots";
 import { availableDecks } from "./decks";
 import { intentPages } from "./intent-pages";
-import { absoluteUrl } from "./site";
+import { absoluteUrl, siteConfig } from "./site";
 
 describe("intent pages visibility", () => {
   it("defines the initial high-intent visibility pages", () => {
@@ -39,6 +39,20 @@ describe("intent pages visibility", () => {
     }
 
     expect(urls).toContain(absoluteUrl("/llms-full.txt"));
+    expect(urls).toContain(`${siteConfig.url}/`);
+    expect(urls.every((url) => url.startsWith(siteConfig.url))).toBe(true);
+    expect(urls.some((url) => url.includes("://www."))).toBe(false);
+    expect(robots().sitemap).toBe(`${siteConfig.url}/sitemap.xml`);
+    expect(robots().host).toBe(siteConfig.url);
     expect(JSON.stringify(rules)).toContain("\"allow\":\"/\"");
+  });
+
+  it("lists every deck page and markdown doc in the sitemap", () => {
+    const urls = sitemap().map((entry) => entry.url);
+
+    for (const deck of availableDecks) {
+      expect(urls).toContain(absoluteUrl(`/decks/${deck.slug}`));
+      expect(urls).toContain(absoluteUrl(`/${deck.slug}.md`));
+    }
   });
 });
