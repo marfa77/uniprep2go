@@ -3,11 +3,11 @@ import Link from "next/link";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { contactSections } from "@/lib/legal-content";
-import { siteConfig } from "@/lib/site";
+import { customDeckMailtoUrl, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: `Contact ${siteConfig.name} for support, privacy requests, and product questions.`,
+  description: `Contact ${siteConfig.name} for support, custom deck inquiries, privacy requests, and product questions.`,
   alternates: {
     canonical: "/contact",
   },
@@ -22,9 +22,27 @@ export default function ContactPage() {
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Contact</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight">Get in touch</h1>
         <p className="mt-4 text-base leading-7 text-[#4f493e]">
-          Use the channels below for product questions, website issues, privacy requests, or legal
-          notices.
+          Use the channels below for product questions, custom deck requests, website issues,
+          privacy requests, or legal notices.
         </p>
+
+        <div className="mt-8 rounded-3xl border border-[#1f3a5f]/20 bg-[#fffaf0] p-6">
+          <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#1f3a5f]">
+            {siteConfig.customDeckInquiry.title}
+          </p>
+          <p className="mt-3 text-base leading-7 text-[#4f493e]">
+            {siteConfig.customDeckInquiry.summary}
+          </p>
+          <p className="mt-3 text-sm leading-6 text-[#5f5749]">
+            {siteConfig.customDeckInquiry.instructions}
+          </p>
+          <a
+            className="mt-5 inline-flex items-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
+            href={customDeckMailtoUrl()}
+          >
+            Request a custom deck
+          </a>
+        </div>
 
         <div className="mt-8 rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70 p-6">
           <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#7a6e5a]">Email</p>

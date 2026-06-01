@@ -54,6 +54,7 @@ describe("deck catalog", () => {
     expect(siteFaqs[1].answer).toContain("FINRA SIE");
     expect(siteFaqs[1].answer).toContain("California real estate");
     expect(siteFaqs[0].answer).toContain("Language decks remain available");
+    expect(siteFaqs.some((faq) => faq.question.includes("custom deck"))).toBe(true);
   });
 
   it("uses product covers for available deck catalog thumbnails", () => {

@@ -13,7 +13,7 @@ import {
   siteFaqs,
 } from "@/lib/decks";
 import { buildCatalogItemListJsonLd, buildSiteOrganizationJsonLd } from "@/lib/product-jsonld";
-import { siteConfig } from "@/lib/site";
+import { customDeckMailtoUrl, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "US Exam Prep Anki Decks | FINRA, Insurance, Real Estate, CFA | UniPrep2Go",
@@ -323,6 +323,37 @@ export default async function HomePage() {
                   </ul>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="custom-decks" className="border-b border-[#18140f]/10 bg-[#fffaf0]/40">
+          <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
+            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
+              Custom work
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
+              {siteConfig.customDeckInquiry.title}
+            </h2>
+            <p className="mt-3 max-w-3xl text-[#4f493e]">
+              {siteConfig.customDeckInquiry.summary}
+            </p>
+            <p className="mt-3 max-w-3xl text-sm leading-7 text-[#5f5749]">
+              {siteConfig.customDeckInquiry.instructions}
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a
+                className="inline-flex items-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
+                href={customDeckMailtoUrl()}
+              >
+                Request a custom deck
+              </a>
+              <Link
+                className="inline-flex items-center rounded-full border border-[#18140f]/20 bg-[#fffaf0]/70 px-6 py-3 text-sm font-semibold text-[#18140f] transition hover:border-[#18140f]"
+                href="/contact#custom-decks"
+              >
+                Contact page
+              </Link>
             </div>
           </div>
         </section>

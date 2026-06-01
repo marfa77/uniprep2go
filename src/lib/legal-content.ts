@@ -301,6 +301,14 @@ export const contactSections = sections([
     ],
   },
   {
+    id: "custom-decks",
+    title: "Custom decks on request",
+    paragraphs: [
+      "We build custom Anki decks to order for licensing exams, language certifications, corporate training, immigration topics, and niche subjects not yet listed in the catalog.",
+      "Email {contactEmail} with your exam or topic, target audience, preferred card count, and deadline. We will reply with scope, timeline, and pricing.",
+    ],
+  },
+  {
     id: "purchases",
     title: "Purchases and delivery",
     paragraphs: [

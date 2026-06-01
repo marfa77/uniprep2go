@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { legalLinks, siteConfig } from "./site";
+import { customDeckMailtoUrl, legalLinks, siteConfig } from "./site";
 
 describe("site config", () => {
   it("exposes legal contact and policy links", () => {
@@ -12,5 +12,11 @@ describe("site config", () => {
       "/cookies",
       "/contact",
     ]);
+  });
+
+  it("builds a custom deck inquiry mailto link", () => {
+    expect(customDeckMailtoUrl()).toBe(
+      "mailto:support@uniprep2go.study?subject=Custom%20deck%20inquiry",
+    );
   });
 });

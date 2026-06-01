@@ -14,6 +14,14 @@ export const siteConfig = {
     "Immigration survival guides and citizenship test prep in the Prep2Go Immigration iOS app",
   ],
   contactEmail: "support@uniprep2go.study",
+  customDeckInquiry: {
+    title: "Custom decks on request",
+    summary:
+      "We build custom Anki decks to order — licensing exams, language certifications, corporate training, immigration topics, and niche subjects not yet in the catalog.",
+    instructions:
+      "Email us with your exam or topic, target audience, preferred card count, and deadline. We will reply with scope, timeline, and pricing.",
+    mailtoSubject: "Custom deck inquiry",
+  },
   checkoutProviders: "Gumroad, Lemon Squeezy, and the Prep2Go Immigration App Store",
   checkoutSellers: "PixID Studio and Prep2Go",
   gumroadStoreUrl: "https://pixidstudio.gumroad.com",
@@ -29,6 +37,12 @@ export const legalLinks = [
   { href: "/cookies", label: "Cookie Policy" },
   { href: "/contact", label: "Contact" },
 ] as const;
+
+export function customDeckMailtoUrl() {
+  const subject = encodeURIComponent(siteConfig.customDeckInquiry.mailtoSubject);
+
+  return `mailto:${siteConfig.contactEmail}?subject=${subject}`;
+}
 
 export function absoluteUrl(path: string) {
   if (path.startsWith("http://") || path.startsWith("https://")) {

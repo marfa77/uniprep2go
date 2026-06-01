@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Link from "next/link";
 import { legalLinks, siteConfig } from "@/lib/site";
 
 export function SiteFooter() {
@@ -15,6 +16,16 @@ export function SiteFooter() {
             <p>
               Checkout and payment processing are provided by {siteConfig.checkoutProviders}. Digital
               products are licensed for personal study use only.
+            </p>
+            <p>
+              Need something not in the catalog?{" "}
+              <Link
+                className="font-medium text-[#4f493e] underline decoration-[#18140f]/20 underline-offset-4 transition hover:text-[#18140f]"
+                href="/contact#custom-decks"
+              >
+                We build custom Anki decks on request
+              </Link>
+              .
             </p>
           </div>
 
