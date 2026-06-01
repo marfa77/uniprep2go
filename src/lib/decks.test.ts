@@ -22,9 +22,9 @@ describe("deck catalog", () => {
 
   it("uses the latest Gumroad preview cards for CFA Level 1", () => {
     expect(primaryDeck.sampleCards.map((card) => card.imageUrl)).toEqual([
-      "/samples/cfa-level-1-anki-deck-sample-1.png",
-      "/samples/cfa-level-1-anki-deck-sample-2.png",
-      "/samples/cfa-level-1-anki-deck-sample-3.png",
+      "/samples/cfa-level-1-anki-deck-sample-1.webp",
+      "/samples/cfa-level-1-anki-deck-sample-2.webp",
+      "/samples/cfa-level-1-anki-deck-sample-3.webp",
     ]);
     expect(primaryDeck.sampleCards.map((card) => card.question)).toEqual([
       "What is a forward contract?",
@@ -92,10 +92,10 @@ describe("deck catalog", () => {
       if (deck?.slug === "delf-a2-printable-french-flashcards") {
         expect(deck.sampleCards).toHaveLength(4);
         expect(deck.sampleCards.map((card) => card.imageUrl)).toEqual([
-          "/samples/delf-a2-printable-french-flashcards-sample-1.png",
-          "/samples/delf-a2-printable-french-flashcards-sample-2.png",
-          "/samples/delf-a2-printable-french-flashcards-sample-3.png",
-          "/samples/delf-a2-printable-french-flashcards-sample-4.png",
+          "/samples/delf-a2-printable-french-flashcards-sample-1.webp",
+          "/samples/delf-a2-printable-french-flashcards-sample-2.webp",
+          "/samples/delf-a2-printable-french-flashcards-sample-3.webp",
+          "/samples/delf-a2-printable-french-flashcards-sample-4.webp",
         ]);
         return;
       }
@@ -143,9 +143,9 @@ describe("deck catalog", () => {
     expect(frmDeck?.facts.cards).toBe("444");
     expect(frmDeck?.sampleCards).toHaveLength(3);
     expect(frmDeck?.sampleCards.map((card) => card.imageUrl)).toEqual([
-      "/samples/frm-part-1-anki-deck-sample-1.png",
-      "/samples/frm-part-1-anki-deck-sample-2.png",
-      "/samples/frm-part-1-anki-deck-sample-3.png",
+      "/samples/frm-part-1-anki-deck-sample-1.webp",
+      "/samples/frm-part-1-anki-deck-sample-2.webp",
+      "/samples/frm-part-1-anki-deck-sample-3.webp",
     ]);
   });
 
@@ -200,9 +200,9 @@ describe("deck catalog", () => {
     expect(seriesSixtyThreeDeck?.facts.cards).toBe("250");
     expect(seriesSixtyThreeDeck?.sampleCards).toHaveLength(3);
     expect(seriesSixtyThreeDeck?.sampleCards.map((card) => card.imageUrl)).toEqual([
-      "/samples/series-63-anki-deck-sample-1.png",
-      "/samples/series-63-anki-deck-sample-2.png",
-      "/samples/series-63-anki-deck-sample-3.png",
+      "/samples/series-63-anki-deck-sample-1.webp",
+      "/samples/series-63-anki-deck-sample-2.webp",
+      "/samples/series-63-anki-deck-sample-3.webp",
     ]);
     expect(seriesSixtyThreeDeck?.sampleCards.map((card) => card.question)).toEqual([
       "What is a broker-dealer under state securities law?",
@@ -218,10 +218,10 @@ describe("deck catalog", () => {
     expect(printableDeck?.format).toBe("PDF");
     expect(printableDeck?.sampleCards).toHaveLength(4);
     expect(printableDeck?.sampleCards.map((card) => card.imageUrl)).toEqual([
-      "/samples/delf-a2-printable-french-flashcards-sample-1.png",
-      "/samples/delf-a2-printable-french-flashcards-sample-2.png",
-      "/samples/delf-a2-printable-french-flashcards-sample-3.png",
-      "/samples/delf-a2-printable-french-flashcards-sample-4.png",
+      "/samples/delf-a2-printable-french-flashcards-sample-1.webp",
+      "/samples/delf-a2-printable-french-flashcards-sample-2.webp",
+      "/samples/delf-a2-printable-french-flashcards-sample-3.webp",
+      "/samples/delf-a2-printable-french-flashcards-sample-4.webp",
     ]);
   });
 
@@ -238,9 +238,9 @@ describe("deck catalog", () => {
     expect(californiaRealEstateDeck?.facts.cards).toBe("400");
     expect(californiaRealEstateDeck?.sampleCards).toHaveLength(3);
     expect(californiaRealEstateDeck?.sampleCards.map((card) => card.imageUrl)).toEqual([
-      "/samples/california-real-estate-exam-anki-deck-sample-1.png",
-      "/samples/california-real-estate-exam-anki-deck-sample-2.png",
-      "/samples/california-real-estate-exam-anki-deck-sample-3.png",
+      "/samples/california-real-estate-exam-anki-deck-sample-1.webp",
+      "/samples/california-real-estate-exam-anki-deck-sample-2.webp",
+      "/samples/california-real-estate-exam-anki-deck-sample-3.webp",
     ]);
     expect(californiaRealEstateDeck?.sampleCards.map((card) => card.question)).toEqual([
       "What is real property?",
@@ -262,9 +262,9 @@ describe("deck catalog", () => {
     expect(lifeHealthDeck?.facts.cards).toBe("400");
     expect(lifeHealthDeck?.sampleCards).toHaveLength(3);
     expect(lifeHealthDeck?.sampleCards.map((card) => card.imageUrl)).toEqual([
-      "/samples/life-and-health-insurance-exam-anki-deck-sample-1.png",
-      "/samples/life-and-health-insurance-exam-anki-deck-sample-2.png",
-      "/samples/life-and-health-insurance-exam-anki-deck-sample-3.png",
+      "/samples/life-and-health-insurance-exam-anki-deck-sample-1.webp",
+      "/samples/life-and-health-insurance-exam-anki-deck-sample-2.webp",
+      "/samples/life-and-health-insurance-exam-anki-deck-sample-3.webp",
     ]);
     expect(lifeHealthDeck?.sampleCards.map((card) => card.question)).toEqual([
       "What is risk in insurance?",
@@ -286,9 +286,9 @@ describe("deck catalog", () => {
     expect(propertyCasualtyDeck?.facts.cards).toBe("400");
     expect(propertyCasualtyDeck?.sampleCards).toHaveLength(3);
     expect(propertyCasualtyDeck?.sampleCards.map((card) => card.imageUrl)).toEqual([
-      "/samples/property-casualty-insurance-exam-anki-deck-sample-1.png",
-      "/samples/property-casualty-insurance-exam-anki-deck-sample-2.png",
-      "/samples/property-casualty-insurance-exam-anki-deck-sample-3.png",
+      "/samples/property-casualty-insurance-exam-anki-deck-sample-1.webp",
+      "/samples/property-casualty-insurance-exam-anki-deck-sample-2.webp",
+      "/samples/property-casualty-insurance-exam-anki-deck-sample-3.webp",
     ]);
     expect(propertyCasualtyDeck?.sampleCards.map((card) => card.question)).toEqual([
       "What is risk in property and casualty insurance?",
@@ -303,9 +303,9 @@ describe("deck catalog", () => {
     expect(biologyDeck?.status).toBe("available");
     expect(biologyDeck?.sampleCards).toHaveLength(3);
     expect(biologyDeck?.sampleCards.map((card) => card.imageUrl)).toEqual([
-      "/samples/ib-biology-sl-anki-deck-sample-1.jpg",
-      "/samples/ib-biology-sl-anki-deck-sample-2.jpg",
-      "/samples/ib-biology-sl-anki-deck-sample-3.jpg",
+      "/samples/ib-biology-sl-anki-deck-sample-1.webp",
+      "/samples/ib-biology-sl-anki-deck-sample-2.webp",
+      "/samples/ib-biology-sl-anki-deck-sample-3.webp",
     ]);
     expect(biologyDeck?.sampleCards.map((card) => card.question)).toEqual([
       "Alpha vs Beta glucose",

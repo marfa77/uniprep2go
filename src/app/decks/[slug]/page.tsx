@@ -201,6 +201,7 @@ export default async function DeckPage({
                         alt={`Sample Anki card: ${card.question}`}
                         className="h-auto w-full"
                         height={550}
+                        sizes="(max-width: 640px) 100vw, 33vw"
                         src={card.imageUrl}
                         width={976}
                       />

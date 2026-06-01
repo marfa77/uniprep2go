@@ -22,7 +22,7 @@ describe("Prep2Go shop preview samples", () => {
     expect(samples).toHaveLength(3);
     expect(samples?.[0]).toMatchObject({
       question: "be",
-      imageUrl: "/shop-preview-media/Arabic_to_English/1.jpg",
+      imageUrl: "/shop-preview-media/Arabic_to_English/1.webp",
       audioUrl: "/shop-preview-media/Arabic_to_English/1.mp3",
     });
     expect(samples?.[0]?.answer).toContain("يكون");

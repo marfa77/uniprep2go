@@ -96,7 +96,7 @@ export function buildShopPreviewSampleCards(uniprepSlug: string): SampleCard[] |
       return {
         question: card.front,
         answer: formatSampleAnswer(shopKey, card),
-        imageUrl: `${mediaBase(shopKey, cardNumber)}.jpg`,
+        imageUrl: `${mediaBase(shopKey, cardNumber)}.webp`,
         audioUrlEs: `${mediaBase(shopKey, cardNumber)}_es.mp3`,
         audioUrlIt: `${mediaBase(shopKey, cardNumber)}_it.mp3`,
       };
@@ -105,7 +105,7 @@ export function buildShopPreviewSampleCards(uniprepSlug: string): SampleCard[] |
     return {
       question: card.front,
       answer: formatSampleAnswer(shopKey, card),
-      imageUrl: `${mediaBase(shopKey, cardNumber)}.jpg`,
+      imageUrl: `${mediaBase(shopKey, cardNumber)}.webp`,
       audioUrl: `${mediaBase(shopKey, cardNumber)}.mp3`,
     };
   });

@@ -1,6 +1,6 @@
 # Shop preview sample media (first 3 words/phrases)
 
-Images and audio for the "Sample (first 3 words/phrases)" table on deck preview pages (`/shop/preview/[slug]`). One folder per slug: `1.jpg`, `1.mp3`, `2.jpg`, `2.mp3`, `3.jpg`, `3.mp3`.
+Images and audio for the "Sample (first 3 words/phrases)" table on deck preview pages (`/shop/preview/[slug]`). One folder per slug: `1.webp`, `1.mp3`, `2.webp`, `2.mp3`, `3.webp`, `3.mp3`.
 
 **Two ways to fill:**
 
@@ -10,7 +10,7 @@ Images and audio for the "Sample (first 3 words/phrases)" table on deck preview 
    npx tsx scripts/copy-shop-preview-media-from-anki.ts
    ```
 
-   Copies first 3 cards' media from `Anki Generator/out/{deck}/media/` (1000000, 1000001, 1000002 → 1.jpg, 1.mp3, …). Set `ANKI_OUT` if needed.
+   Copies first 3 cards' media from `Anki Generator/out/{deck}/media/` (1000000, 1000001, 1000002 → 1.webp, 1.mp3, …). Set `ANKI_OUT` if needed.
 
 2. **From LITE .apkg** (phrase decks, Danish/Norwegian exam decks, or whenever Anki `out/` is missing):
    ```bash

@@ -195,31 +195,31 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     focus: "DELF A2 printable vocabulary cards",
     topics: "DELF A2 vocabulary, example sentences, images, and QR audio",
     audience: "DELF A2 learners who want printable French flashcards with audio QR support.",
-    fallbackCoverImage: "/samples/prep2go-delf-a2-printable-french-cover.jpg",
+    fallbackCoverImage: "/samples/prep2go-delf-a2-printable-french-cover.webp",
     format: "PDF",
     sampleCards: [
       {
         question: "What does a sample A4 page look like?",
         answer:
           "Each page has six cards with a French headword, English gloss, example sentences, illustration, topic label, and QR audio.",
-        imageUrl: "/samples/delf-a2-printable-french-flashcards-sample-1.png",
+        imageUrl: "/samples/delf-a2-printable-french-flashcards-sample-1.webp",
       },
       {
         question: "How do you print the cards at home?",
         answer: "Print at 100% scale on A4 paper and cut along the dashed lines — six cards per page.",
-        imageUrl: "/samples/delf-a2-printable-french-flashcards-sample-2.png",
+        imageUrl: "/samples/delf-a2-printable-french-flashcards-sample-2.webp",
       },
       {
         question: "How does QR audio work on each card?",
         answer:
           "Every card includes a QR code that opens Prep2Go French pronunciation audio while you review the printed card.",
-        imageUrl: "/samples/delf-a2-printable-french-flashcards-sample-3.png",
+        imageUrl: "/samples/delf-a2-printable-french-flashcards-sample-3.webp",
       },
       {
         question: "What is included in the PDF download?",
         answer:
           "360 printable DELF A2 cards on 60 A4 pages across two PDF files, with images, examples, cut lines, and QR audio.",
-        imageUrl: "/samples/delf-a2-printable-french-flashcards-sample-4.png",
+        imageUrl: "/samples/delf-a2-printable-french-flashcards-sample-4.webp",
       },
     ],
   }),
@@ -419,19 +419,19 @@ const rawDecks: Deck[] = [
         question: "What is a forward contract?",
         answer:
           "A private OTC agreement to buy or sell an asset at a specified forward price on a future date. No money changes hands upfront, and the contract is binding on both parties with no optionality.",
-        imageUrl: "/samples/cfa-level-1-anki-deck-sample-1.png",
+        imageUrl: "/samples/cfa-level-1-anki-deck-sample-1.webp",
       },
       {
         question: "What is the no-arbitrage forward price for an asset with no income?",
         answer:
           "The future value of the current spot price at the risk-free rate for the forward period. Forward price is the no-arbitrage price set to eliminate riskless profit.",
-        imageUrl: "/samples/cfa-level-1-anki-deck-sample-2.png",
+        imageUrl: "/samples/cfa-level-1-anki-deck-sample-2.webp",
       },
       {
         question: "What is the forward price for an asset that pays income?",
         answer:
           "Spot price minus the present value of income, compounded at the risk-free rate. Income reduces forward price because the holder of the spot asset receives it.",
-        imageUrl: "/samples/cfa-level-1-anki-deck-sample-3.png",
+        imageUrl: "/samples/cfa-level-1-anki-deck-sample-3.webp",
       },
     ],
     faqs: [
@@ -574,19 +574,19 @@ const rawDecks: Deck[] = [
         question: "What are the investment grade vs speculative grade rating boundaries?",
         answer:
           "Investment grade: Baa3/BBB- and above. Speculative grade or high yield: Ba1/BB+ and below. Fallen angels are IG bonds downgraded to HY; rising stars are HY bonds upgraded to IG.",
-        imageUrl: "/samples/frm-part-1-anki-deck-sample-1.png",
+        imageUrl: "/samples/frm-part-1-anki-deck-sample-1.webp",
       },
       {
         question: "What is a CDS and how does it work?",
         answer:
           "A credit default swap is insurance against bond default. The protection buyer pays a periodic CDS spread; if default occurs, the seller pays par minus recovery value.",
-        imageUrl: "/samples/frm-part-1-anki-deck-sample-2.png",
+        imageUrl: "/samples/frm-part-1-anki-deck-sample-2.webp",
       },
       {
         question: "What is credit risk (counterparty risk) in derivatives?",
         answer:
           "Counterparty credit risk is the risk that the counterparty defaults when the derivative has positive mark-to-market value to you. It is one-sided and only exists when the contract has positive value.",
-        imageUrl: "/samples/frm-part-1-anki-deck-sample-3.png",
+        imageUrl: "/samples/frm-part-1-anki-deck-sample-3.webp",
       },
     ],
     faqs: [
@@ -645,19 +645,19 @@ const rawDecks: Deck[] = [
         question: "What is the SEC?",
         answer:
           "The Securities and Exchange Commission is the federal regulator overseeing securities markets, issuers, exchanges, broker-dealers, investment advisers, and disclosure rules.",
-        imageUrl: "/samples/sie-exam-anki-deck-sample-1.png",
+        imageUrl: "/samples/sie-exam-anki-deck-sample-1.webp",
       },
       {
         question: "What is FINRA?",
         answer:
           "FINRA is a self-regulatory organization overseeing broker-dealers and registered representatives, including qualification exams, sales practice rules, and member firm supervision.",
-        imageUrl: "/samples/sie-exam-anki-deck-sample-2.png",
+        imageUrl: "/samples/sie-exam-anki-deck-sample-2.webp",
       },
       {
         question: "What does the MSRB regulate?",
         answer:
           "The Municipal Securities Rulemaking Board writes rules for municipal securities dealers, municipal advisors, and municipal market conduct.",
-        imageUrl: "/samples/sie-exam-anki-deck-sample-3.png",
+        imageUrl: "/samples/sie-exam-anki-deck-sample-3.webp",
       },
     ],
     faqs: [
@@ -716,19 +716,19 @@ const rawDecks: Deck[] = [
         question: "What must a registered representative remember when prospecting for new customers?",
         answer:
           "Prospecting communications must be fair, balanced, not misleading, properly supervised, and consistent with firm communication rules.",
-        imageUrl: "/samples/series-7-anki-deck-sample-1.png",
+        imageUrl: "/samples/series-7-anki-deck-sample-1.webp",
       },
       {
         question: "When does retail communication require heightened review?",
         answer:
           "Retail communication often requires principal approval before use depending on content and product, especially recommendations, rankings, options, investment companies, and new issue materials.",
-        imageUrl: "/samples/series-7-anki-deck-sample-2.png",
+        imageUrl: "/samples/series-7-anki-deck-sample-2.webp",
       },
       {
         question: "Who is an institutional customer?",
         answer:
           "An institutional customer includes banks, investment companies, advisers, insurance companies, and other entities meeting institutional criteria.",
-        imageUrl: "/samples/series-7-anki-deck-sample-3.png",
+        imageUrl: "/samples/series-7-anki-deck-sample-3.webp",
       },
     ],
     faqs: [
@@ -792,19 +792,19 @@ const rawDecks: Deck[] = [
         question: "What is a broker-dealer under state securities law?",
         answer:
           "A broker-dealer is a person engaged in the business of effecting securities transactions for the account of others or for its own account. A firm executing customer stock trades is a broker-dealer.",
-        imageUrl: "/samples/series-63-anki-deck-sample-1.png",
+        imageUrl: "/samples/series-63-anki-deck-sample-1.webp",
       },
       {
         question: "Why is an issuer usually excluded from broker-dealer definition?",
         answer:
           "An issuer selling its own securities is generally not treated as a broker-dealer merely for issuing those securities. A corporation issuing its own stock is an issuer, not a BD solely for that issuance.",
-        imageUrl: "/samples/series-63-anki-deck-sample-2.png",
+        imageUrl: "/samples/series-63-anki-deck-sample-2.webp",
       },
       {
         question: "Are agents themselves broker-dealers?",
         answer:
           "No. Individuals representing broker-dealers or issuers are agents, not broker-dealers. A registered rep of a BD is an agent.",
-        imageUrl: "/samples/series-63-anki-deck-sample-3.png",
+        imageUrl: "/samples/series-63-anki-deck-sample-3.webp",
       },
     ],
     faqs: [
@@ -873,19 +873,19 @@ const rawDecks: Deck[] = [
         question: "What is real property?",
         answer:
           "Real property is land plus things permanently attached to it and the rights associated with ownership. Land, buildings, fixtures, and appurtenant rights are real property.",
-        imageUrl: "/samples/california-real-estate-exam-anki-deck-sample-1.png",
+        imageUrl: "/samples/california-real-estate-exam-anki-deck-sample-1.webp",
       },
       {
         question: "What is personal property?",
         answer:
           "Personal property is movable property not classified as real property. Furniture, appliances not attached, and trade tools can be personal property.",
-        imageUrl: "/samples/california-real-estate-exam-anki-deck-sample-2.png",
+        imageUrl: "/samples/california-real-estate-exam-anki-deck-sample-2.webp",
       },
       {
         question: "What is a fixture?",
         answer:
           "A fixture is personal property that has become real property because it is attached or adapted with intent to be permanent. Built-in cabinets are usually fixtures.",
-        imageUrl: "/samples/california-real-estate-exam-anki-deck-sample-3.png",
+        imageUrl: "/samples/california-real-estate-exam-anki-deck-sample-3.webp",
       },
     ],
     faqs: [
@@ -955,19 +955,19 @@ const rawDecks: Deck[] = [
         question: "What is risk in insurance?",
         answer:
           "Risk is uncertainty or chance of loss. Insurance transfers certain financial consequences of risk from insured to insurer. Risk of premature death can be transferred through life insurance.",
-        imageUrl: "/samples/life-and-health-insurance-exam-anki-deck-sample-1.png",
+        imageUrl: "/samples/life-and-health-insurance-exam-anki-deck-sample-1.webp",
       },
       {
         question: "What is pure risk?",
         answer:
           "Pure risk involves only the chance of loss or no loss, not gain, and is generally insurable. Risk of sickness, disability, or death.",
-        imageUrl: "/samples/life-and-health-insurance-exam-anki-deck-sample-2.png",
+        imageUrl: "/samples/life-and-health-insurance-exam-anki-deck-sample-2.webp",
       },
       {
         question: "What is speculative risk?",
         answer:
           "Speculative risk involves chance of gain, loss, or no change and is generally not insurable. Starting a business or buying stock involves speculative risk.",
-        imageUrl: "/samples/life-and-health-insurance-exam-anki-deck-sample-3.png",
+        imageUrl: "/samples/life-and-health-insurance-exam-anki-deck-sample-3.webp",
       },
     ],
     faqs: [
@@ -1037,19 +1037,19 @@ const rawDecks: Deck[] = [
         question: "What is risk in property and casualty insurance?",
         answer:
           "Risk is uncertainty about financial loss; P&C insurance transfers covered property or liability loss risk to insurer. Risk of house fire or lawsuit from auto accident.",
-        imageUrl: "/samples/property-casualty-insurance-exam-anki-deck-sample-1.png",
+        imageUrl: "/samples/property-casualty-insurance-exam-anki-deck-sample-1.webp",
       },
       {
         question: "What is pure risk?",
         answer:
           "Pure risk has possibility of loss or no loss, not gain, and is generally insurable. Risk of theft, fire, or liability claim.",
-        imageUrl: "/samples/property-casualty-insurance-exam-anki-deck-sample-2.png",
+        imageUrl: "/samples/property-casualty-insurance-exam-anki-deck-sample-2.webp",
       },
       {
         question: "What is speculative risk?",
         answer:
           "Speculative risk has chance of gain, loss, or no change and is generally not insurable. Investing in rental property value appreciation.",
-        imageUrl: "/samples/property-casualty-insurance-exam-anki-deck-sample-3.png",
+        imageUrl: "/samples/property-casualty-insurance-exam-anki-deck-sample-3.webp",
       },
     ],
     faqs: [
@@ -1131,18 +1131,18 @@ const rawDecks: Deck[] = [
         question: "casa",
         answer:
           "house — A minha casa é pequena. (My house is small.)",
-        imageUrl: "/samples/ciple-a2-european-portuguese-anki-deck-sample-1.jpg",
+        imageUrl: "/samples/ciple-a2-european-portuguese-anki-deck-sample-1.webp",
       },
       {
         question: "trabalho",
         answer:
           "work — O meu trabalho fica no centro. (My work is in the city centre.)",
-        imageUrl: "/samples/ciple-a2-european-portuguese-anki-deck-sample-2.jpg",
+        imageUrl: "/samples/ciple-a2-european-portuguese-anki-deck-sample-2.webp",
       },
       {
         question: "tempo",
         answer: "time — Não tenho tempo hoje. (I don't have time today.)",
-        imageUrl: "/samples/ciple-a2-european-portuguese-anki-deck-sample-3.jpg",
+        imageUrl: "/samples/ciple-a2-european-portuguese-anki-deck-sample-3.webp",
       },
     ],
     faqs: [
@@ -1195,18 +1195,18 @@ const rawDecks: Deck[] = [
       {
         question: "maison",
         answer: "house — Ma maison est petite. (My house is small.)",
-        imageUrl: "/samples/delf-b2-french-anki-deck-sample-1.jpg",
+        imageUrl: "/samples/delf-b2-french-anki-deck-sample-1.webp",
       },
       {
         question: "travail",
         answer:
           "work — Mon travail est au centre-ville. (My work is in the city centre.)",
-        imageUrl: "/samples/delf-b2-french-anki-deck-sample-2.jpg",
+        imageUrl: "/samples/delf-b2-french-anki-deck-sample-2.webp",
       },
       {
         question: "temps",
         answer: "time — Je n'ai pas le temps aujourd'hui. (I don't have time today.)",
-        imageUrl: "/samples/delf-b2-french-anki-deck-sample-3.jpg",
+        imageUrl: "/samples/delf-b2-french-anki-deck-sample-3.webp",
       },
     ],
     faqs: [
@@ -1255,18 +1255,18 @@ const rawDecks: Deck[] = [
       {
         question: "huis",
         answer: "house — Mijn huis is klein. (My house is small.)",
-        imageUrl: "/samples/dutch-a2-inburgering-anki-deck-sample-1.jpg",
+        imageUrl: "/samples/dutch-a2-inburgering-anki-deck-sample-1.webp",
       },
       {
         question: "werk",
         answer:
           "work — Mijn werk is in het centrum. (My work is in the city centre.)",
-        imageUrl: "/samples/dutch-a2-inburgering-anki-deck-sample-2.jpg",
+        imageUrl: "/samples/dutch-a2-inburgering-anki-deck-sample-2.webp",
       },
       {
         question: "tijd",
         answer: "time — Ik heb vandaag geen tijd. (I don't have time today.)",
-        imageUrl: "/samples/dutch-a2-inburgering-anki-deck-sample-3.jpg",
+        imageUrl: "/samples/dutch-a2-inburgering-anki-deck-sample-3.webp",
       },
     ],
     faqs: [
@@ -1315,18 +1315,18 @@ const rawDecks: Deck[] = [
       {
         question: "Haus",
         answer: "house — Mein Haus ist klein. (My house is small.)",
-        imageUrl: "/samples/german-a2-anki-deck-sample-1.jpg",
+        imageUrl: "/samples/german-a2-anki-deck-sample-1.webp",
       },
       {
         question: "Arbeit",
         answer:
           "work — Meine Arbeit ist in der Innenstadt. (My work is in the city centre.)",
-        imageUrl: "/samples/german-a2-anki-deck-sample-2.jpg",
+        imageUrl: "/samples/german-a2-anki-deck-sample-2.webp",
       },
       {
         question: "Zeit",
         answer: "time — Ich habe heute keine Zeit. (I don't have time today.)",
-        imageUrl: "/samples/german-a2-anki-deck-sample-3.jpg",
+        imageUrl: "/samples/german-a2-anki-deck-sample-3.webp",
       },
     ],
     faqs: [
@@ -1367,18 +1367,18 @@ const rawDecks: Deck[] = [
       {
         question: "casa",
         answer: "house — La mia casa è piccola. (My house is small.)",
-        imageUrl: "/samples/celi-b1-italian-anki-deck-sample-1.jpg",
+        imageUrl: "/samples/celi-b1-italian-anki-deck-sample-1.webp",
       },
       {
         question: "lavoro",
         answer:
           "work — Il mio lavoro è nel centro. (My work is in the city centre.)",
-        imageUrl: "/samples/celi-b1-italian-anki-deck-sample-2.jpg",
+        imageUrl: "/samples/celi-b1-italian-anki-deck-sample-2.webp",
       },
       {
         question: "tempo",
         answer: "time — Non ho tempo oggi. (I don't have time today.)",
-        imageUrl: "/samples/celi-b1-italian-anki-deck-sample-3.jpg",
+        imageUrl: "/samples/celi-b1-italian-anki-deck-sample-3.webp",
       },
     ],
     faqs: [
@@ -1427,19 +1427,19 @@ const rawDecks: Deck[] = [
         question: "Alpha vs Beta glucose",
         answer:
           "In alpha-glucose, the OH group on carbon 1 is below the ring. In beta-glucose, the OH group on carbon 1 is above the ring. This difference affects which polymer is formed.",
-        imageUrl: "/samples/ib-biology-sl-anki-deck-sample-1.jpg",
+        imageUrl: "/samples/ib-biology-sl-anki-deck-sample-1.webp",
       },
       {
         question: "Cellulose structure and function",
         answer:
           "Beta-glucose monomers form straight chains via 1-4 glycosidic bonds. Alternating orientations allow hydrogen bonds between parallel chains, creating microfibrils with high tensile strength.",
-        imageUrl: "/samples/ib-biology-sl-anki-deck-sample-2.jpg",
+        imageUrl: "/samples/ib-biology-sl-anki-deck-sample-2.webp",
       },
       {
         question: "Starch structure",
         answer:
           "Amylose is unbranched and helical with 1-4 glycosidic bonds. Amylopectin is branched with 1-4 and 1-6 glycosidic bonds. Both are made from alpha-glucose.",
-        imageUrl: "/samples/ib-biology-sl-anki-deck-sample-3.jpg",
+        imageUrl: "/samples/ib-biology-sl-anki-deck-sample-3.webp",
       },
     ],
     faqs: [
@@ -1486,7 +1486,7 @@ const rawDecks: Deck[] = [
       {
         question: "What is the LME carry trade in metals?",
         answer: "Buying physical metal (cash) and simultaneously selling 3-month futures to capture the contango. Profit = contango minus storage and financing costs.",
-        imageUrl: "/samples/bench-energy-metal-trader-anki-deck-sample-1.png",
+        imageUrl: "/samples/bench-energy-metal-trader-anki-deck-sample-1.webp",
       },
     ],
     faqs: [
@@ -1531,7 +1531,7 @@ const rawDecks: Deck[] = [
       {
         question: "What is Dated Brent and how does it differ from Brent futures?",
         answer: "Physical spot price for actual BFOE cargoes loading in the North Sea within 10–25 days forward, published by Platts. The physical anchor for the entire Brent complex. Dated Brent = cash price.",
-        imageUrl: "/samples/bench-energy-oil-trader-anki-deck-sample-1.png",
+        imageUrl: "/samples/bench-energy-oil-trader-anki-deck-sample-1.webp",
       },
     ],
     faqs: [
@@ -1576,7 +1576,7 @@ const rawDecks: Deck[] = [
       {
         question: "What is a netback calculation and why is it the most important number for a producer?",
         answer: "Working backwards from market price at point of sale, subtracting all costs to arrive at value at point of production — the real revenue per tonne. Example: API2 $120/t CIF ARA → minus freight, port, rail → netback at mine.",
-        imageUrl: "/samples/bench-energy-coal-trader-anki-deck-sample-1.png",
+        imageUrl: "/samples/bench-energy-coal-trader-anki-deck-sample-1.webp",
       },
     ],
     faqs: [
@@ -1621,7 +1621,7 @@ const rawDecks: Deck[] = [
       {
         question: "What is included in the Commodity Trader Pack?",
         answer: "Three complete Anki decks: Metal Trader's Lexicon (202 cards), Oil Trader's Lexicon (211 cards), and Coal Trader's Lexicon (221 cards). Covers universal trading foundations plus commodity-specific vocabulary for all three markets.",
-        imageUrl: "/samples/commodity-trader-pack-bundle-sample-1.png",
+        imageUrl: "/samples/commodity-trader-pack-bundle-sample-1.webp",
       },
     ],
     faqs: [
