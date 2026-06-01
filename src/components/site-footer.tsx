@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Link from "next/link";
 import { legalLinks, siteConfig } from "@/lib/site";
 
 export function SiteFooter() {
