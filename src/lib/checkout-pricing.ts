@@ -6,8 +6,10 @@ import {
   getCatalogDeckBySlug,
   type AvailableDeck,
   type CatalogAvailableDeck,
+  type CheckoutProvider,
   type DeckPrice,
 } from "./decks";
+import { PREP2GO_APP_STORE_MONTHLY_PRICE } from "./prep2go-app-decks";
 import { getRedisClient } from "./redis";
 
 export const PRICE_PLACEHOLDER = "{PRICE}";
@@ -50,12 +52,22 @@ export function formatCheckoutPrice(amount: number) {
   return amount % 1 === 0 ? `$${amount}` : `$${amount.toFixed(2)}`;
 }
 
-export function formatDeckPriceLabel(deck: Pick<PricedDeck, "price">) {
-  if (deck.price.amount <= 0) {
+export function formatDeckPriceLabel(
+  deck: Pick<PricedDeck, "price" | "checkoutProvider" | "pricePending">,
+) {
+  if (deck.checkoutProvider === "App Store") {
+    return `From $${PREP2GO_APP_STORE_MONTHLY_PRICE}/mo`;
+  }
+
+  if (deck.pricePending || deck.price.amount <= 0) {
     return PENDING_PRICE_LABEL;
   }
 
   return `$${deck.price.amount} ${deck.price.currency}`;
+}
+
+export function getCheckoutActionLabel(provider: CheckoutProvider) {
+  return provider === "App Store" ? "App Store" : "Buy";
 }
 
 export function parseLemonVariantId(checkoutUrl: string) {
@@ -194,7 +206,18 @@ export async function fetchLemonPriceUsd(checkoutVariantKey: string, apiKey: str
   return variant.priceCents / 100;
 }
 
+export function applyAppStorePriceToDeck(deck: CatalogAvailableDeck): PricedDeck {
+  return {
+    ...deck,
+    price: { amount: PREP2GO_APP_STORE_MONTHLY_PRICE, currency: "USD" },
+  };
+}
+
 export async function syncDeckPrice(deck: CatalogAvailableDeck): Promise<SyncedPriceRecord> {
+  if (deck.checkoutProvider === "App Store") {
+    throw new Error(`App Store decks do not sync checkout prices for ${deck.slug}`);
+  }
+
   const syncedAt = new Date().toISOString();
 
   if (deck.checkoutProvider === "Gumroad") {
@@ -256,6 +279,10 @@ export async function writeCachedPrice(slug: string, record: SyncedPriceRecord) 
 }
 
 export async function resolveDeckPrice(deck: CatalogAvailableDeck): Promise<PricedDeck> {
+  if (deck.checkoutProvider === "App Store") {
+    return applyAppStorePriceToDeck(deck);
+  }
+
   const cached = await readCachedPrice(deck.slug);
   if (cached) {
     return applyPriceRecordToDeck(deck, cached);
@@ -348,19 +375,23 @@ export async function syncAllCheckoutPrices(): Promise<CheckoutPriceSyncResult> 
     errors: [],
   };
 
-  await mapWithConcurrency(catalogAvailableDecks, 5, async (deck) => {
-    try {
-      const record = await syncDeckPrice(deck);
-      await writeCachedPrice(deck.slug, record);
-      result.synced += 1;
-      result[record.source] += 1;
-    } catch (error) {
-      result.failed += 1;
-      result.errors.push(
-        `${deck.slug}: ${error instanceof Error ? error.message : "Unknown sync error"}`,
-      );
-    }
-  });
+  await mapWithConcurrency(
+    catalogAvailableDecks.filter((deck) => deck.checkoutProvider !== "App Store"),
+    5,
+    async (deck) => {
+      try {
+        const record = await syncDeckPrice(deck);
+        await writeCachedPrice(deck.slug, record);
+        result.synced += 1;
+        result[record.source] += 1;
+      } catch (error) {
+        result.failed += 1;
+        result.errors.push(
+          `${deck.slug}: ${error instanceof Error ? error.message : "Unknown sync error"}`,
+        );
+      }
+    },
+  );
 
   return result;
 }

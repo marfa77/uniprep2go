@@ -18,8 +18,18 @@ export type FunnelEvent = {
   occurredAt: string;
   source?: string;
   path?: string;
+  destinationUrl?: string;
   referrer?: string;
+  browserLanguage?: string;
+  browserLanguages?: string[];
+  acceptLanguage?: string;
+  country?: string;
+  region?: string;
+  city?: string;
+  timezone?: string;
+  screen?: string;
   userAgent?: string;
+  clientIp?: string;
   internal?: boolean;
 };
 
@@ -28,8 +38,18 @@ type FunnelEventInput = {
   deckSlug: string;
   source?: string;
   path?: string;
+  destinationUrl?: string;
   referrer?: string;
+  browserLanguage?: string;
+  browserLanguages?: string[];
+  acceptLanguage?: string;
+  country?: string;
+  region?: string;
+  city?: string;
+  timezone?: string;
+  screen?: string;
   userAgent?: string;
+  clientIp?: string;
   internal?: boolean;
 };
 
@@ -63,12 +83,31 @@ export function parseFunnelEvent(payload: unknown): FunnelEvent {
     deckSlug: candidate.deckSlug,
     source: optionalString(candidate.source),
     path: optionalString(candidate.path),
+    destinationUrl: optionalString(candidate.destinationUrl),
     referrer: optionalString(candidate.referrer),
+    browserLanguage: optionalString(candidate.browserLanguage),
+    browserLanguages: optionalStringArray(candidate.browserLanguages),
+    acceptLanguage: optionalString(candidate.acceptLanguage),
+    country: optionalString(candidate.country),
+    region: optionalString(candidate.region),
+    city: optionalString(candidate.city),
+    timezone: optionalString(candidate.timezone),
+    screen: optionalString(candidate.screen),
     userAgent: optionalString(candidate.userAgent),
+    clientIp: optionalString(candidate.clientIp),
     internal: candidate.internal === true,
   });
 }
 
 function optionalString(value: unknown) {
   return typeof value === "string" && value.length > 0 ? value : undefined;
+}
+
+function optionalStringArray(value: unknown) {
+  if (!Array.isArray(value)) {
+    return undefined;
+  }
+
+  const strings = value.filter((item): item is string => typeof item === "string" && item.length > 0);
+  return strings.length > 0 ? strings : undefined;
 }

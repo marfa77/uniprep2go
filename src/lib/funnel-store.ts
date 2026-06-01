@@ -14,6 +14,9 @@ const KEYS = {
   byEvent: "funnel:byEvent",
   byDeck: "funnel:byDeck",
   bySource: "funnel:bySource",
+  byCountry: "funnel:byCountry",
+  byLanguage: "funnel:byLanguage",
+  byReferrer: "funnel:byReferrer",
   startedAt: "funnel:startedAt",
   updatedAt: "funnel:updatedAt",
   recent: "funnel:recent",
@@ -24,6 +27,9 @@ const LIFETIME_KEYS = {
   byEvent: "funnel:lifetime:byEvent",
   byDeck: "funnel:lifetime:byDeck",
   bySource: "funnel:lifetime:bySource",
+  byCountry: "funnel:lifetime:byCountry",
+  byLanguage: "funnel:lifetime:byLanguage",
+  byReferrer: "funnel:lifetime:byReferrer",
   startedAt: "funnel:lifetime:startedAt",
   updatedAt: "funnel:lifetime:updatedAt",
 } as const;
@@ -76,6 +82,20 @@ function incrementAggregatePipeline(
     pipeline.hincrby(keys.bySource, event.source, 1);
   }
 
+  if (event.country) {
+    pipeline.hincrby(keys.byCountry, event.country, 1);
+  }
+
+  const language = event.browserLanguage ?? event.acceptLanguage?.split(",")[0]?.trim();
+  if (language) {
+    pipeline.hincrby(keys.byLanguage, language, 1);
+  }
+
+  const referrerHost = normalizeReferrerHost(event.referrer);
+  if (referrerHost) {
+    pipeline.hincrby(keys.byReferrer, referrerHost, 1);
+  }
+
   pipeline.set(keys.startedAt, event.occurredAt, { nx: true });
   pipeline.set(keys.updatedAt, event.occurredAt);
 }
@@ -84,11 +104,24 @@ async function readAggregate(
   client: NonNullable<ReturnType<typeof getRedisClient>>,
   keys: typeof KEYS | typeof LIFETIME_KEYS,
 ): Promise<FunnelAggregate> {
-  const [total, byEventRaw, byDeckRaw, bySourceRaw, startedAt, updatedAt] = await Promise.all([
+  const [
+    total,
+    byEventRaw,
+    byDeckRaw,
+    bySourceRaw,
+    byCountryRaw,
+    byLanguageRaw,
+    byReferrerRaw,
+    startedAt,
+    updatedAt,
+  ] = await Promise.all([
     client.get<number>(keys.total),
     client.hgetall<Record<string, unknown>>(keys.byEvent),
     client.hgetall<Record<string, unknown>>(keys.byDeck),
     client.hgetall<Record<string, unknown>>(keys.bySource),
+    client.hgetall<Record<string, unknown>>(keys.byCountry),
+    client.hgetall<Record<string, unknown>>(keys.byLanguage),
+    client.hgetall<Record<string, unknown>>(keys.byReferrer),
     client.get<string>(keys.startedAt),
     client.get<string>(keys.updatedAt),
   ]);
@@ -98,6 +131,9 @@ async function readAggregate(
     byEventRaw,
     byDeckRaw,
     bySourceRaw,
+    byCountryRaw,
+    byLanguageRaw,
+    byReferrerRaw,
     startedAt: startedAt ?? undefined,
     updatedAt: updatedAt ?? undefined,
   });
@@ -119,13 +155,25 @@ function parseRecent(entries: unknown[]): FunnelEvent[] {
     .filter((entry): entry is FunnelEvent => entry !== null);
 }
 
+function cloneAggregate(aggregate: FunnelAggregate): FunnelAggregate {
+  return {
+    ...aggregate,
+    byEvent: { ...aggregate.byEvent },
+    byDeck: { ...aggregate.byDeck },
+    bySource: { ...aggregate.bySource },
+    byCountry: { ...aggregate.byCountry },
+    byLanguage: { ...aggregate.byLanguage },
+    byReferrer: { ...aggregate.byReferrer },
+  };
+}
+
 function computeMemoryStats(): FunnelStats {
   const state = getMemoryState();
 
   return {
-    ...state.current,
+    ...cloneAggregate(state.current),
     recentEvents: [...state.recentEvents],
-    lifetime: { ...state.lifetime },
+    lifetime: cloneAggregate(state.lifetime),
     storage: "memory",
   };
 }
@@ -163,10 +211,13 @@ async function backfillLifetimeFromCurrent(client: NonNullable<ReturnType<typeof
     return;
   }
 
-  const [byEvent, byDeck, bySource, startedAt, updatedAt] = await Promise.all([
+  const [byEvent, byDeck, bySource, byCountry, byLanguage, byReferrer, startedAt, updatedAt] = await Promise.all([
     client.hgetall<Record<string, string>>(KEYS.byEvent),
     client.hgetall<Record<string, string>>(KEYS.byDeck),
     client.hgetall<Record<string, string>>(KEYS.bySource),
+    client.hgetall<Record<string, string>>(KEYS.byCountry),
+    client.hgetall<Record<string, string>>(KEYS.byLanguage),
+    client.hgetall<Record<string, string>>(KEYS.byReferrer),
     client.get<string>(KEYS.startedAt),
     client.get<string>(KEYS.updatedAt),
   ]);
@@ -184,6 +235,18 @@ async function backfillLifetimeFromCurrent(client: NonNullable<ReturnType<typeof
 
   for (const [key, value] of Object.entries(bySource ?? {})) {
     pipeline.hset(LIFETIME_KEYS.bySource, { [key]: value });
+  }
+
+  for (const [key, value] of Object.entries(byCountry ?? {})) {
+    pipeline.hset(LIFETIME_KEYS.byCountry, { [key]: value });
+  }
+
+  for (const [key, value] of Object.entries(byLanguage ?? {})) {
+    pipeline.hset(LIFETIME_KEYS.byLanguage, { [key]: value });
+  }
+
+  for (const [key, value] of Object.entries(byReferrer ?? {})) {
+    pipeline.hset(LIFETIME_KEYS.byReferrer, { [key]: value });
   }
 
   if (startedAt) {
@@ -240,8 +303,57 @@ export async function resetFunnelStats() {
     KEYS.byEvent,
     KEYS.byDeck,
     KEYS.bySource,
+    KEYS.byCountry,
+    KEYS.byLanguage,
+    KEYS.byReferrer,
     KEYS.startedAt,
     KEYS.updatedAt,
     KEYS.recent,
   );
+}
+
+export async function resetAllFunnelStats() {
+  const client = getRedisClient();
+
+  if (!client) {
+    const state = getMemoryState();
+    state.current = emptyAggregate();
+    state.lifetime = emptyAggregate();
+    state.recentEvents = [];
+    return;
+  }
+
+  await client.del(
+    KEYS.total,
+    KEYS.byEvent,
+    KEYS.byDeck,
+    KEYS.bySource,
+    KEYS.byCountry,
+    KEYS.byLanguage,
+    KEYS.byReferrer,
+    KEYS.startedAt,
+    KEYS.updatedAt,
+    KEYS.recent,
+    LIFETIME_KEYS.total,
+    LIFETIME_KEYS.byEvent,
+    LIFETIME_KEYS.byDeck,
+    LIFETIME_KEYS.bySource,
+    LIFETIME_KEYS.byCountry,
+    LIFETIME_KEYS.byLanguage,
+    LIFETIME_KEYS.byReferrer,
+    LIFETIME_KEYS.startedAt,
+    LIFETIME_KEYS.updatedAt,
+  );
+}
+
+function normalizeReferrerHost(referrer: string | undefined) {
+  if (!referrer) {
+    return undefined;
+  }
+
+  try {
+    return new URL(referrer).hostname.replace(/^www\./, "");
+  } catch {
+    return referrer.slice(0, 80);
+  }
 }

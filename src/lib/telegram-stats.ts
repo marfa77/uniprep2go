@@ -19,6 +19,16 @@ export function shouldResetStats(text: string) {
   );
 }
 
+export function shouldResetAllStats(text: string) {
+  const normalized = text.trim().toLowerCase();
+
+  return (
+    normalized === "reset-all-stats" ||
+    normalized === "/reset-all-stats" ||
+    normalized === "/reset-all-stats@mariccol_bot"
+  );
+}
+
 export function shouldSyncPrices(text: string) {
   const normalized = text.trim().toLowerCase();
 
@@ -69,11 +79,22 @@ function formatRecentEvents(stats: FunnelStats, limit = 20) {
   const lines = stats.recentEvents.slice(0, limit).map((event) => {
     const timestamp = event.occurredAt.replace("T", " ").replace(/\.\d{3}Z$/, " UTC");
     const source = event.source ?? "unknown";
+    const country = event.country ?? "??";
+    const language = event.browserLanguage ?? event.acceptLanguage?.split(",")[0]?.trim() ?? "n/a";
+    const referrer = event.referrer ? safeReferrerHost(event.referrer) : "direct";
 
-    return `- ${timestamp} · ${event.name} · ${event.deckSlug} · ${source}`;
+    return `- ${timestamp} · ${event.name} · ${event.deckSlug} · ${source} · ${country} · ${language} · ${referrer}`;
   });
 
   return ["Recent events", lines.join("\n") || "- no recent events yet"].join("\n");
+}
+
+function safeReferrerHost(referrer: string) {
+  try {
+    return new URL(referrer).hostname.replace(/^www\./, "");
+  } catch {
+    return referrer.slice(0, 40);
+  }
 }
 
 export function toTelegramStatsMessage(stats: FunnelStats) {
@@ -92,6 +113,12 @@ export function toTelegramStatsMessages(stats: FunnelStats) {
     formatRankedList("Top decks (current period)", stats.byDeck),
     formatRankedList("Top sources (all-time)", lifetimeSources),
     formatRankedList("Top sources (current period)", currentSources),
+    formatRankedList("Top countries (all-time)", stats.lifetime.byCountry),
+    formatRankedList("Top countries (current period)", stats.byCountry),
+    formatRankedList("Top browser languages (all-time)", stats.lifetime.byLanguage),
+    formatRankedList("Top browser languages (current period)", stats.byLanguage),
+    formatRankedList("Top referrers (all-time)", stats.lifetime.byReferrer),
+    formatRankedList("Top referrers (current period)", stats.byReferrer),
     formatRecentEvents(stats),
     `Storage: ${stats.storage}`,
   ];
@@ -147,6 +174,15 @@ export function toTelegramResetMessage() {
     "All-time stats were preserved.",
     "Send /stats for the full report.",
     "Send /sync to refresh checkout prices.",
+  ].join("\n");
+}
+
+export function toTelegramResetAllMessage() {
+  return [
+    "UniPrep2Go all funnel stats reset.",
+    "",
+    "Current period, lifetime stats, and recent events were cleared.",
+    "Send /stats for the new report.",
   ].join("\n");
 }
 

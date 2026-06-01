@@ -21,6 +21,7 @@ type TrackEventInput = {
   name: FunnelEventName;
   deckSlug: string;
   source?: string;
+  destinationUrl?: string;
 };
 
 function isFunnelExcluded() {
@@ -68,6 +69,10 @@ export function trackFunnelEvent(input: TrackEventInput) {
     ...input,
     path: window.location.pathname,
     referrer: document.referrer,
+    browserLanguage: navigator.language,
+    browserLanguages: Array.from(navigator.languages ?? []),
+    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+    screen: `${window.screen.width}x${window.screen.height}`,
     internal: false,
   };
 
@@ -157,7 +162,7 @@ export function TrackedCheckoutLink({
       href={href}
       onClick={() => {
         trackFunnelEvent({ name: "checkout_intent", deckSlug, source });
-        trackFunnelEvent({ name: "checkout_click", deckSlug, source });
+        trackFunnelEvent({ name: "checkout_click", deckSlug, source, destinationUrl: href });
       }}
       rel="noopener noreferrer"
       target="_blank"

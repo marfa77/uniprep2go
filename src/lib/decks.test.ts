@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { availableDecks, getDeckBySlug, primaryDeck } from "./decks";
+import { availableDecks, getDeckBySlug, primaryDeck, siteFaqs } from "./decks";
 
 describe("deck catalog", () => {
   it("exposes the CFA Level 1 Anki deck as reusable product data", () => {
@@ -9,6 +9,7 @@ describe("deck catalog", () => {
     expect(primaryDeck.checkoutSeller).toBe("PixID Studio");
     expect(primaryDeck.facts.cards).toBe("342+");
     expect(primaryDeck.format).toBe(".apkg");
+    expect(primaryDeck.coverImage).toBe("/covers/cfa-level-1-anki-deck.webp");
     expect(primaryDeck.topicCoverage).toHaveLength(10);
     expect(primaryDeck.sampleCards).toHaveLength(3);
     expect(primaryDeck.sampleCards[0]?.imageUrl).toContain("/samples/");
@@ -46,6 +47,24 @@ describe("deck catalog", () => {
       checkoutUrl:
         "https://ciple-a2.lemonsqueezy.com/checkout/buy/6f688637-f5ce-440f-8d2a-7614379ee3ca",
     });
+  });
+
+  it("positions the catalog as US-first while keeping language decks for long-tail SEO", () => {
+    expect(siteFaqs[0].answer).toContain("US-first");
+    expect(siteFaqs[1].answer).toContain("FINRA SIE");
+    expect(siteFaqs[1].answer).toContain("California real estate");
+    expect(siteFaqs[0].answer).toContain("Language decks remain available");
+  });
+
+  it("uses product covers for available deck catalog thumbnails", () => {
+    const missingCoverDecks = availableDecks.filter((deck) => !deck.coverImage);
+    expect(missingCoverDecks.map((deck) => deck.slug)).toEqual([]);
+
+    for (const deck of availableDecks) {
+      expect(deck.coverImage, deck.slug).toMatch(/^\/(covers|samples)\/.*cover.*\.webp$|^\/covers\/.*\.webp$/);
+      expect(deck.coverImage, deck.slug).not.toContain("-sample-");
+      expect(deck.coverImage, deck.slug).not.toContain("/shop-preview-media/");
+    }
   });
 
   it("includes every Lemon Squeezy deck product from Prep2Go shop", () => {
@@ -394,6 +413,28 @@ describe("deck catalog", () => {
       "bench-energy-coal-trader-anki-deck":
         "Coal Trader Anki Deck — 221 Commodity Flashcards",
       "commodity-trader-pack-bundle": "Commodity Trader Pack — 634 Anki Flashcards",
+      "us-adaptation-english-prep2go-app": "US Adaptation (English) — Prep2Go Immigration App",
+      "uae-survival-guide-prep2go-app": "UAE Survival Guide — Prep2Go Immigration App",
+      "saudi-arabia-survival-guide-prep2go-app":
+        "Saudi Arabia Survival Guide — Prep2Go Immigration App",
+      "singapore-survival-guide-prep2go-app": "Singapore Survival Guide — Prep2Go Immigration App",
+      "south-africa-survival-guide-prep2go-app":
+        "South Africa Survival Guide — Prep2Go Immigration App",
+      "australia-survival-guide-prep2go-app": "Australia Survival Guide — Prep2Go Immigration App",
+      "canada-survival-guide-prep2go-app": "Canada Survival Guide — Prep2Go Immigration App",
+      "germany-survival-guide-prep2go-app": "Germany Survival Guide — Prep2Go Immigration App",
+      "japan-survival-guide-prep2go-app": "Japan Survival Guide — Prep2Go Immigration App",
+      "netherlands-survival-guide-prep2go-app":
+        "Netherlands Survival Guide — Prep2Go Immigration App",
+      "uk-survival-guide-prep2go-app": "UK Survival Guide — Prep2Go Immigration App",
+      "portugal-survival-guide-prep2go-app": "Portugal Survival Guide — Prep2Go Immigration App",
+      "us-citizenship-test-prep2go-app": "U.S. Citizenship Test — Prep2Go Immigration App",
+      "leben-in-deutschland-prep2go-app": "Leben in Deutschland — Prep2Go Immigration App",
+      "naturalisation-francaise-prep2go-app":
+        "Naturalisation française — Prep2Go Immigration App",
+      "life-in-the-uk-prep2go-app": "Life in the UK — Prep2Go Immigration App",
+      "canadian-citizenship-prep2go-app": "Canadian Citizenship — Prep2Go Immigration App",
+      "australian-citizenship-prep2go-app": "Australian Citizenship — Prep2Go Immigration App",
     };
 
     expect(Object.fromEntries(availableDecks.map((deck) => [deck.slug, deck.title]))).toEqual(

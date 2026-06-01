@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import { FunnelTracker, TrackedCheckoutLink } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { formatDeckPriceLabel, getPricedDecks, getPricedDecksByCategory, getFeaturedPricedDecks } from "@/lib/checkout-pricing";
-import { getDeckThumbnailUrl } from "@/lib/deck-media";
+import { formatDeckPriceLabel, getCheckoutActionLabel, getFeaturedPricedDecks, getPricedDecks, getPricedDecksByCategory } from "@/lib/checkout-pricing";
+import { getDeckCoverUrl } from "@/lib/deck-media";
 import {
   categoryLabels,
   categoryOrder,
@@ -16,7 +16,23 @@ import { buildCatalogItemListJsonLd, buildSiteOrganizationJsonLd } from "@/lib/p
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
+  title: "US Exam Prep Anki Decks | FINRA, Insurance, Real Estate, CFA | UniPrep2Go",
+  description:
+    "US-first Anki deck catalog for FINRA SIE, Series 7, Series 63, insurance licensing, California real estate, CFA, FRM, and language certification prep.",
+  keywords: [
+    "US exam prep Anki decks",
+    "FINRA SIE Anki deck",
+    "Series 7 Anki deck",
+    "Series 63 Anki deck",
+    "insurance licensing exam flashcards",
+    "California real estate exam flashcards",
+    "CFA Anki deck",
+    "FRM Anki deck",
+  ],
   openGraph: {
+    title: "US exam prep Anki decks for licensing and finance credentials",
+    description:
+      "Independent Anki decks for FINRA, insurance, real estate, CFA, FRM, and language certification review.",
     images: [
       {
         url: "/home/hero.webp",
@@ -98,16 +114,16 @@ export default async function HomePage() {
           <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:items-center lg:py-20">
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-                Anki deck catalog
+                US exam prep Anki catalog
               </p>
               <h1 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight text-balance text-[#18140f] sm:text-5xl">
-                Exam prep, languages, and professional decks — one catalog
+                US licensing exams, finance credentials, and language decks — one catalog
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-8 text-[#4f493e]">
-                {siteConfig.name} publishes {availableDecks.length} independent
-                Anki flashcard decks across {categoryOrder.length} categories.
-                Download .apkg files from Gumroad or Lemon Squeezy and import
-                into Anki on desktop, mobile, or web.
+                {siteConfig.name} is US-first: FINRA SIE, Series 7, Series 63,
+                insurance licensing, California real estate, CFA, and FRM review
+                sit at the front of the catalog, with language certification
+                decks kept for long-tail search and global learners.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
@@ -127,15 +143,15 @@ export default async function HomePage() {
               </div>
               <dl className="mt-10 grid gap-4 sm:grid-cols-3">
                 <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-4">
-                  <dt className="text-sm text-[#7a6e5a]">Decks</dt>
+                  <dt className="text-sm text-[#7a6e5a]">US-first catalog</dt>
                   <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
-                    {availableDecks.length}
+                    FINRA + licensing
                   </dd>
                 </div>
                 <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-4">
-                  <dt className="text-sm text-[#7a6e5a]">Categories</dt>
+                  <dt className="text-sm text-[#7a6e5a]">Total decks</dt>
                   <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
-                    {categoryOrder.length}
+                    {availableDecks.length}
                   </dd>
                 </div>
                 <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-4">
@@ -167,12 +183,12 @@ export default async function HomePage() {
                 Featured decks
               </h2>
               <p className="mt-2 text-[#4f493e]">
-                Popular picks across language, finance, and professional
-                training.
+                Popular picks for US licensing, finance credentials, and
+                professional training.
               </p>
               <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {featuredDecks.map((deck) => {
-                  const thumbnail = getDeckThumbnailUrl(deck.sampleCards);
+                  const thumbnail = getDeckCoverUrl(deck);
 
                   return (
                     <article
@@ -185,12 +201,12 @@ export default async function HomePage() {
                           href={`/decks/${deck.slug}`}
                         >
                           <Image
-                            alt={`Sample card preview for ${deck.shortName}`}
-                            className="h-auto w-full"
-                            height={550}
+                            alt={`${deck.shortName} product cover`}
+                            className="aspect-[4/3] h-auto w-full object-cover object-top"
+                            height={750}
                             sizes="(max-width: 640px) 100vw, 33vw"
                             src={thumbnail}
-                            width={976}
+                            width={1005}
                           />
                         </Link>
                       ) : null}
@@ -235,8 +251,9 @@ export default async function HomePage() {
               Full catalog
             </h2>
             <p className="mt-2 text-[#4f493e]">
-              All decks grouped by category. Each product page includes sample
-              cards, FAQ, and machine-readable facts for AI systems.
+              US licensing and finance exams are prioritized first. Language
+              certification decks remain available as long-tail catalog pages
+              with sample cards, FAQ, and machine-readable facts for AI systems.
             </p>
             <div className="mt-10 space-y-12">
               {catalogGroups.map((group) => (
@@ -246,7 +263,7 @@ export default async function HomePage() {
                   </h3>
                   <ul className="mt-4 divide-y divide-[#18140f]/10 rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70">
                     {group.decks.map((deck) => {
-                      const thumbnail = getDeckThumbnailUrl(deck.sampleCards);
+                      const thumbnail = getDeckCoverUrl(deck);
 
                       return (
                         <li
@@ -297,7 +314,7 @@ export default async function HomePage() {
                               href={deck.checkoutUrl}
                               source="catalog_buy"
                             >
-                              Buy
+                              {getCheckoutActionLabel(deck.checkoutProvider)}
                             </TrackedCheckoutLink>
                           </div>
                         </li>

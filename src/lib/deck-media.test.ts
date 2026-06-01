@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { getDeckThumbnailUrl } from "./deck-media";
+import { getDeckCoverUrl, getDeckThumbnailUrl } from "./deck-media";
 
 describe("deck media", () => {
   it("returns the first sample card image when available", () => {
@@ -15,5 +15,14 @@ describe("deck media", () => {
     expect(
       getDeckThumbnailUrl([{ question: "Q1", answer: "A1", imageUrl: "" }]),
     ).toBeNull();
+  });
+
+  it("prefers product covers over sample card thumbnails", () => {
+    expect(
+      getDeckCoverUrl({
+        coverImage: "/covers/product.webp",
+        sampleCards: [{ question: "Q1", answer: "A1", imageUrl: "/samples/card.webp" }],
+      }),
+    ).toBe("/covers/product.webp");
   });
 });

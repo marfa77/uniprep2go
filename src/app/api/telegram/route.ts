@@ -1,12 +1,14 @@
 import { after } from "next/server";
 import { syncAllCheckoutPrices } from "@/lib/checkout-pricing";
-import { getFunnelStats, resetFunnelStats } from "@/lib/funnel-store";
+import { getFunnelStats, resetAllFunnelStats, resetFunnelStats } from "@/lib/funnel-store";
 import { rememberTelegramNotifyChatId } from "@/lib/telegram-notify";
 import {
   shouldResetStats,
+  shouldResetAllStats,
   shouldReturnStats,
   shouldSyncPrices,
   toTelegramResetMessage,
+  toTelegramResetAllMessage,
   toTelegramStatsMessages,
   toTelegramSyncMessage,
 } from "@/lib/telegram-stats";
@@ -32,9 +34,10 @@ export async function POST(request: Request) {
 
   const wantsStats = shouldReturnStats(text);
   const wantsReset = shouldResetStats(text);
+  const wantsResetAll = shouldResetAllStats(text);
   const wantsSync = shouldSyncPrices(text);
 
-  if (!wantsStats && !wantsReset && !wantsSync) {
+  if (!wantsStats && !wantsReset && !wantsResetAll && !wantsSync) {
     return Response.json({ ok: true });
   }
 
@@ -66,11 +69,15 @@ export async function POST(request: Request) {
     return Response.json({ ok: true });
   }
 
-  if (wantsReset) {
+  if (wantsResetAll) {
+    await resetAllFunnelStats();
+  } else if (wantsReset) {
     await resetFunnelStats();
   }
 
-  const messages = wantsReset
+  const messages = wantsResetAll
+    ? [toTelegramResetAllMessage()]
+    : wantsReset
     ? [toTelegramResetMessage()]
     : toTelegramStatsMessages(await getFunnelStats());
 

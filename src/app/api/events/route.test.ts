@@ -38,6 +38,8 @@ describe("POST /api/events", () => {
       headers: {
         "Content-Type": "application/json",
         "x-forwarded-for": "5.194.82.128",
+        "x-vercel-ip-country": "PT",
+        "accept-language": "pt-PT,pt;q=0.9,en;q=0.8",
         cookie: `${FUNNEL_EXCLUDE_COOKIE}=1`,
       },
       body: JSON.stringify({
@@ -45,6 +47,8 @@ describe("POST /api/events", () => {
         deckSlug: "cfa-level-1-anki-deck",
         source: "deck_page_cta",
         path: "/decks/cfa-level-1-anki-deck",
+        destinationUrl: "https://pixidstudio.gumroad.com/l/ivjmuu",
+        browserLanguage: "pt-PT",
       }),
     });
 
@@ -52,6 +56,12 @@ describe("POST /api/events", () => {
 
     expect(response.status).toBe(204);
     expect(notifyCheckoutClick).toHaveBeenCalledTimes(1);
+    expect(notifyCheckoutClick.mock.calls[0]?.[0]).toMatchObject({
+      country: "PT",
+      acceptLanguage: "pt-PT,pt;q=0.9,en;q=0.8",
+      clientIp: "5.194.82.128",
+      destinationUrl: "https://pixidstudio.gumroad.com/l/ivjmuu",
+    });
     expect(recordFunnelEvent).not.toHaveBeenCalled();
     expect(
       shouldRecordFunnelEvent(

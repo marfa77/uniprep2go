@@ -47,6 +47,7 @@ describe("LLM documents", () => {
       not_official_exam_material: true,
       price_pending: false,
       price_source: "gumroad",
+      cover_image: "https://uniprep2go.study/covers/cfa-level-1-anki-deck.webp",
     });
     expect(facts.topic_coverage).toHaveLength(10);
     expect(facts.sample_cards).toHaveLength(3);
@@ -64,9 +65,13 @@ describe("LLM documents", () => {
     const catalog = buildCatalogFacts(pricedCatalog);
 
     expect(catalog.catalog_size).toBe(catalogAvailableDecks.length);
+    expect(catalog.primary_market).toBe("United States");
+    expect(catalog.primary_positioning).toContain("US exam prep");
+    expect(catalog.primary_use_cases).toContain("FINRA SIE, Series 7, and Series 63 exam prep");
     expect(catalog.categories.length).toBeGreaterThanOrEqual(1);
     expect(catalog.categories[0]?.decks[0]).toMatchObject({
       slug: expect.any(String),
+      cover_image: expect.stringContaining("/covers/"),
       facts_url: expect.stringContaining("/api/facts/"),
       markdown_url: expect.stringContaining(".md"),
     });
@@ -133,6 +138,9 @@ describe("LLM documents", () => {
     expect(llms).toContain("/llms-full.txt");
     expect(llms).toContain("/ciple-a2-european-portuguese-anki-deck.md");
     expect(llms).toContain(`${catalogAvailableDecks.length} independent Anki flashcard decks`);
+    expect(llms).toContain("Primary market: United States");
+    expect(llms).toContain("US exam prep and professional licensing");
+    expect(llms).toContain("Language certification decks remain in the catalog for long-tail SEO");
   });
 
   it("builds a full GEO markdown bundle for LLM ingestion", () => {
@@ -140,6 +148,8 @@ describe("LLM documents", () => {
 
     expect(bundle).toContain("# UniPrep2Go full catalog for LLMs");
     expect(bundle).toContain("## Catalog summary");
+    expect(bundle).toContain("Primary market: United States");
+    expect(bundle).toContain("US exam prep and professional licensing");
     expect(bundle).toContain("## Available decks");
     expect(bundle).toContain("## Intent answer pages");
     expect(bundle).toContain("## Site FAQs");

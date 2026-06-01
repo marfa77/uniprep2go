@@ -1,11 +1,13 @@
 import { describe, expect, it } from "vitest";
 import { emptyAggregate } from "./funnel-aggregates";
 import {
+  shouldResetAllStats,
   shouldReturnStats,
   shouldSyncPrices,
   splitTelegramMessages,
   toTelegramStatsMessage,
   toTelegramStatsMessages,
+  toTelegramResetAllMessage,
   toTelegramSyncMessage,
 } from "./telegram-stats";
 import type { FunnelStats } from "./funnel-store";
@@ -25,6 +27,9 @@ const sampleStats: FunnelStats = {
   },
   byDeck: { "cfa-level-1-anki-deck": 7, "frm-part-1-anki-deck": 2 },
   bySource: { hero_cta: 1, deck_page: 2, section_view: 99 },
+  byCountry: { US: 5, PT: 2 },
+  byLanguage: { "en-US": 4, "pt-PT": 2 },
+  byReferrer: { "google.com": 4, "chatgpt.com": 2 },
   recentEvents: [
     {
       eventId: "evt_1",
@@ -32,6 +37,9 @@ const sampleStats: FunnelStats = {
       deckSlug: "cfa-level-1-anki-deck",
       occurredAt: "2026-05-31T15:10:00.000Z",
       source: "deck_page",
+      country: "US",
+      browserLanguage: "en-US",
+      referrer: "https://google.com/search?q=cfa+anki",
     },
   ],
   startedAt: "2026-05-31T15:00:00.000Z",
@@ -58,6 +66,9 @@ const sampleStats: FunnelStats = {
       home: 18,
       deck_page: 17,
     },
+    byCountry: { US: 100, CA: 20 },
+    byLanguage: { "en-US": 90, "en-CA": 20 },
+    byReferrer: { "google.com": 70, "chatgpt.com": 10 },
     startedAt: "2026-05-01T10:00:00.000Z",
     updatedAt: "2026-05-31T15:10:00.000Z",
   },
@@ -77,6 +88,13 @@ describe("telegram stats", () => {
     expect(shouldSyncPrices("/sync")).toBe(true);
     expect(shouldSyncPrices("/sync@mariccol_bot")).toBe(true);
     expect(shouldSyncPrices("/stats")).toBe(false);
+  });
+
+  it("recognizes full stats reset commands", () => {
+    expect(shouldResetAllStats("reset-all-stats")).toBe(true);
+    expect(shouldResetAllStats("/reset-all-stats")).toBe(true);
+    expect(shouldResetAllStats("/stats")).toBe(false);
+    expect(toTelegramResetAllMessage()).toContain("all funnel stats reset");
   });
 
   it("formats price sync results for Telegram", () => {
@@ -106,8 +124,14 @@ describe("telegram stats", () => {
     expect(message).toContain("Top decks (all-time)");
     expect(message).toContain("- cfa-level-1-anki-deck: 80");
     expect(message).toContain("Top sources (all-time)");
+    expect(message).toContain("Top countries (all-time)");
+    expect(message).toContain("- US: 100");
+    expect(message).toContain("Top browser languages (current period)");
+    expect(message).toContain("- en-US: 4");
+    expect(message).toContain("Top referrers (all-time)");
+    expect(message).toContain("- google.com: 70");
     expect(message).toContain("Recent events");
-    expect(message).toContain("checkout_click · cfa-level-1-anki-deck · deck_page");
+    expect(message).toContain("checkout_click · cfa-level-1-anki-deck · deck_page · US · en-US · google.com");
     expect(message).toContain("Storage: redis");
   });
 

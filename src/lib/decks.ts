@@ -1,4 +1,5 @@
 import { enrichDeckWithShopPreviews } from "./prep2go-shop-samples";
+import { prep2GoAppDecks } from "./prep2go-app-decks";
 
 export type DeckStatus = "available" | "planned";
 
@@ -6,6 +7,7 @@ export type DeckCategory =
   | "finance"
   | "language"
   | "professional"
+  | "immigration"
   | "academic";
 
 export type TopicCoverage = {
@@ -56,7 +58,8 @@ type BaseDeck = {
   directAnswer: string;
   lastUpdated: string;
   audience: string;
-  format: ".apkg" | ".csv" | "PDF";
+  format: ".apkg" | ".csv" | "PDF" | "App";
+  coverImage?: string;
   sampleUrl?: string;
   facts: DeckFacts;
   topicCoverage: TopicCoverage[];
@@ -71,7 +74,7 @@ export type DeckPrice = {
   currency: "USD";
 };
 
-export type CheckoutProvider = "Gumroad" | "Lemon Squeezy";
+export type CheckoutProvider = "Gumroad" | "Lemon Squeezy" | "App Store";
 
 export type CatalogAvailableDeck = BaseDeck & {
   status: "available";
@@ -117,6 +120,7 @@ type Prep2GoLanguageDeckInput = {
   focus: string;
   topics: string;
   audience: string;
+  coverImage?: string;
   fallbackCoverImage?: string;
   format?: ".apkg" | ".csv" | "PDF";
   sampleCards?: SampleCard[];
@@ -134,6 +138,7 @@ function buildPrep2GoLanguageDeck(input: Prep2GoLanguageDeckInput): CatalogAvail
     lastUpdated: "2026-05-31",
     audience: input.audience,
     format: input.format ?? ".apkg",
+    coverImage: input.coverImage ?? input.fallbackCoverImage,
     checkoutUrl: input.checkoutUrl,
     checkoutProvider: "Lemon Squeezy",
     checkoutSeller: "Prep2Go",
@@ -184,6 +189,7 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     focus: "Prøve i Dansk A2 exam vocabulary",
     topics: "Danish A2 exam vocabulary and practical example sentences",
     audience: "Danish A2 learners preparing for Prøve i Dansk with spaced repetition.",
+    coverImage: "/covers/danish-a2-prove-i-dansk-anki-deck.webp",
   }),
   buildPrep2GoLanguageDeck({
     slug: "delf-a2-printable-french-flashcards",
@@ -197,6 +203,7 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     audience: "DELF A2 learners who want printable French flashcards with audio QR support.",
     fallbackCoverImage: "/samples/prep2go-delf-a2-printable-french-cover.webp",
     format: "PDF",
+    coverImage: "/samples/prep2go-delf-a2-printable-french-cover.webp",
     sampleCards: [
       {
         question: "What does a sample A4 page look like?",
@@ -233,6 +240,7 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     focus: "Spanish and Italian paired vocabulary",
     topics: "Spanish and Italian paired headwords, English glosses, examples, and audio",
     audience: "Learners who want to study Spanish and Italian together through English using Anki.",
+    coverImage: "/covers/spanish-italian-paired-anki-deck.webp",
   }),
   buildPrep2GoLanguageDeck({
     slug: "ielts-toefl-english-for-arabic-speakers-anki-deck",
@@ -244,6 +252,7 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     focus: "IELTS, TOEFL, Cambridge, and PTE English vocabulary",
     topics: "IELTS and TOEFL English vocabulary with Arabic bilingual support",
     audience: "Arabic-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
+    coverImage: "/samples/prep2go-ielts-toefl-english-for-arabic-speakers-cover.webp",
   }),
   buildPrep2GoLanguageDeck({
     slug: "arabic-survival-phrases-anki-deck",
@@ -255,6 +264,7 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     focus: "Arabic survival phrases",
     topics: "Arabic travel phrases, practical communication, audio, and transliteration",
     audience: "Travelers and beginners who want Arabic survival phrases in Anki.",
+    coverImage: "/samples/prep2go-arabic-survival-phrases-cover.webp",
   }),
   buildPrep2GoLanguageDeck({
     slug: "dele-a2-ccse-spanish-citizenship-bundle",
@@ -266,6 +276,7 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     focus: "DELE A2 and CCSE Spanish citizenship exams",
     topics: "Spanish A2 vocabulary, CCSE constitution, institutions, geography, history, and daily life in Spain",
     audience: "Spanish citizenship applicants preparing for DELE A2 and CCSE with Anki.",
+    coverImage: "/samples/prep2go-dele-a2-ccse-spanish-citizenship-cover.webp",
   }),
   buildPrep2GoLanguageDeck({
     slug: "ielts-toefl-english-for-french-speakers-anki-deck",
@@ -277,6 +288,7 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     focus: "IELTS, TOEFL, Cambridge, and PTE English vocabulary",
     topics: "IELTS and TOEFL English vocabulary with French bilingual support",
     audience: "French-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
+    coverImage: "/samples/prep2go-ielts-toefl-english-for-french-speakers-cover.webp",
   }),
   buildPrep2GoLanguageDeck({
     slug: "ielts-toefl-english-for-portuguese-speakers-anki-deck",
@@ -288,6 +300,7 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     focus: "IELTS, TOEFL, Cambridge, and PTE English vocabulary",
     topics: "IELTS and TOEFL English vocabulary with Portuguese bilingual support",
     audience: "Portuguese-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
+    coverImage: "/samples/prep2go-ielts-toefl-english-for-portuguese-speakers-cover.webp",
   }),
   buildPrep2GoLanguageDeck({
     slug: "ielts-toefl-english-for-spanish-speakers-anki-deck",
@@ -299,6 +312,7 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     focus: "IELTS, TOEFL, Cambridge, and PTE English vocabulary",
     topics: "IELTS and TOEFL English vocabulary with Spanish bilingual support",
     audience: "Spanish-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
+    coverImage: "/samples/prep2go-ielts-toefl-english-for-spanish-speakers-cover.webp",
   }),
   buildPrep2GoLanguageDeck({
     slug: "ielts-toefl-english-for-turkish-speakers-anki-deck",
@@ -310,6 +324,7 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     focus: "IELTS, TOEFL, Cambridge, and PTE English vocabulary",
     topics: "IELTS and TOEFL English vocabulary with Turkish bilingual support",
     audience: "Turkish-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
+    coverImage: "/samples/prep2go-ielts-toefl-english-for-turkish-speakers-cover.webp",
   }),
   buildPrep2GoLanguageDeck({
     slug: "japanese-survival-phrases-anki-deck",
@@ -321,6 +336,7 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     focus: "Japanese survival phrases",
     topics: "Japanese travel phrases, practical communication, audio, and transliteration",
     audience: "Travelers and beginners who want Japanese survival phrases in Anki.",
+    coverImage: "/samples/prep2go-japanese-survival-phrases-cover.webp",
   }),
   buildPrep2GoLanguageDeck({
     slug: "korean-survival-phrases-anki-deck",
@@ -332,6 +348,7 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     focus: "Korean survival phrases",
     topics: "Korean travel phrases, practical communication, audio, and transliteration",
     audience: "Travelers and beginners who want Korean survival phrases in Anki.",
+    coverImage: "/samples/prep2go-korean-survival-phrases-cover.webp",
   }),
   buildPrep2GoLanguageDeck({
     slug: "russian-survival-phrases-anki-deck",
@@ -343,6 +360,7 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     focus: "Russian survival phrases",
     topics: "Russian travel phrases, practical communication, audio, and transliteration",
     audience: "Travelers and beginners who want Russian survival phrases in Anki.",
+    coverImage: "/samples/prep2go-russian-survival-phrases-cover.webp",
   }),
   buildPrep2GoLanguageDeck({
     slug: "norwegian-a2-norskprove-anki-deck",
@@ -354,6 +372,7 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     focus: "Norskprøve A2 exam vocabulary",
     topics: "Norwegian A2 exam vocabulary and practical example sentences",
     audience: "Norwegian A2 learners preparing for Norskprøve with spaced repetition.",
+    coverImage: "/samples/prep2go-norwegian-a2-norskprove-cover.webp",
   }),
   buildPrep2GoLanguageDeck({
     slug: "ciple-a2-grammar-anki-deck",
@@ -365,6 +384,7 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     focus: "CIPLE A2 Portuguese grammar",
     topics: "Portuguese A2 grammar explanations, article examples, and CIPLE-focused recall prompts",
     audience: "CIPLE A2 learners who want grammar recall practice in Anki.",
+    coverImage: "/samples/prep2go-ciple-a2-grammar-cover.webp",
   }),
   buildPrep2GoLanguageDeck({
     slug: "dele-a2-grammar-anki-deck",
@@ -376,6 +396,7 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     focus: "DELE A2 Spanish grammar",
     topics: "Spanish A2 grammar explanations, article examples, and DELE-focused recall prompts",
     audience: "DELE A2 learners who want grammar recall practice in Anki.",
+    coverImage: "/samples/prep2go-dele-a2-grammar-cover.webp",
   }),
   buildPrep2GoLanguageDeck({
     slug: "delf-b2-grammar-anki-deck",
@@ -387,6 +408,7 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     focus: "DELF B2 French grammar",
     topics: "French B2 grammar explanations, article examples, and DELF-focused recall prompts",
     audience: "DELF B2 learners who want grammar recall practice in Anki.",
+    coverImage: "/samples/prep2go-delf-b2-grammar-cover.webp",
   }),
 ];
 
@@ -403,6 +425,7 @@ const rawDecks: Deck[] = [
     lastUpdated: "2026-05-31",
     audience: "CFA Level 1 candidates who want structured recall practice for formulas, concepts, and topic definitions.",
     format: ".apkg",
+    coverImage: "/covers/cfa-level-1-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/ivjmuu",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
@@ -553,6 +576,7 @@ const rawDecks: Deck[] = [
     lastUpdated: "2026-05-31",
     audience: "FRM Part 1 candidates who want active recall practice for formulas, concepts, definitions, and risk-management logic.",
     format: ".apkg",
+    coverImage: "/covers/frm-part-1-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/eeyvu",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
@@ -624,6 +648,7 @@ const rawDecks: Deck[] = [
     lastUpdated: "2026-05-31",
     audience: "SIE exam candidates, finance interns, new hires, and career changers who want active-recall practice instead of passive rereading.",
     format: ".apkg",
+    coverImage: "/covers/sie-exam-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/qjocr",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
@@ -695,6 +720,7 @@ const rawDecks: Deck[] = [
     lastUpdated: "2026-05-31",
     audience: "Series 7 candidates sponsored by a FINRA member firm, new financial advisors, registered representative trainees, and SIE passers who want focused spaced-repetition review.",
     format: ".apkg",
+    coverImage: "/covers/series-7-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/lvzval",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
@@ -767,6 +793,7 @@ const rawDecks: Deck[] = [
     audience:
       "Series 63 candidates, new broker-dealer agents, SIE and Series 7 candidates who also need state registration, and financial services trainees who want spaced repetition instead of rereading outlines.",
     format: ".apkg",
+    coverImage: "/covers/series-63-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/vsbsgw",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
@@ -848,6 +875,7 @@ const rawDecks: Deck[] = [
     audience:
       "California real estate salesperson exam candidates, career changers entering real estate, pre-licensing students, and candidates who want active recall for agency, disclosures, contracts, and real estate math.",
     format: ".apkg",
+    coverImage: "/covers/california-real-estate-exam-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/qqrwpk",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
@@ -929,6 +957,7 @@ const rawDecks: Deck[] = [
     audience:
       "Life & Health insurance license candidates, new insurance producers, career changers entering insurance sales, pre-licensing students, and candidates who want active recall for policy provisions, riders, annuities, health plans, and insurance terminology.",
     format: ".apkg",
+    coverImage: "/covers/life-and-health-insurance-exam-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/jcrljf",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
@@ -1011,6 +1040,7 @@ const rawDecks: Deck[] = [
     audience:
       "Property & Casualty insurance license candidates, new insurance producers, career changers entering insurance sales, pre-licensing students, and candidates who want active recall for homeowners, auto, commercial lines, and policy provisions.",
     format: ".apkg",
+    coverImage: "/covers/property-casualty-insurance-exam-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/engqgt",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
@@ -1115,6 +1145,7 @@ const rawDecks: Deck[] = [
     lastUpdated: "2026-05-31",
     audience: "CIPLE / CAPLE A2 exam candidates, Portuguese residency or citizenship applicants, self-learners.",
     format: ".apkg",
+    coverImage: "/covers/ciple-a2-european-portuguese-anki-deck.webp",
     checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/6f688637-f5ce-440f-8d2a-7614379ee3ca",
     checkoutProvider: "Lemon Squeezy",
     checkoutSeller: "Prep2Go",
@@ -1180,6 +1211,7 @@ const rawDecks: Deck[] = [
     lastUpdated: "2026-05-31",
     audience: "DELF B2 exam candidates and advanced French learners using spaced repetition.",
     format: ".apkg",
+    coverImage: "/covers/delf-b2-french-anki-deck.webp",
     checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/b764a5b4-6fb5-4f19-a90f-8f310a51a1eb",
     checkoutProvider: "Lemon Squeezy",
     checkoutSeller: "Prep2Go",
@@ -1240,6 +1272,7 @@ const rawDecks: Deck[] = [
     lastUpdated: "2026-05-31",
     audience: "Migrants preparing for the Dutch Inburgering exam and A2 Dutch language certification.",
     format: ".apkg",
+    coverImage: "/covers/dutch-a2-inburgering-anki-deck.webp",
     checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/d43d6fc1-02d2-462a-8cf8-d421c6a98c88",
     checkoutProvider: "Lemon Squeezy",
     checkoutSeller: "Prep2Go",
@@ -1300,6 +1333,7 @@ const rawDecks: Deck[] = [
     lastUpdated: "2026-05-31",
     audience: "German A2 certificate exam candidates for Goethe-Institut, telc, or ÖSD.",
     format: ".apkg",
+    coverImage: "/covers/german-a2-anki-deck.webp",
     checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/6006b518-3a04-4e7a-a77d-1e3f4c0a6e58",
     checkoutProvider: "Lemon Squeezy",
     checkoutSeller: "Prep2Go",
@@ -1352,6 +1386,7 @@ const rawDecks: Deck[] = [
     lastUpdated: "2026-05-31",
     audience: "CELI B1 certificate candidates and intermediate Italian learners.",
     format: ".apkg",
+    coverImage: "/covers/celi-b1-italian-anki-deck.webp",
     checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/8e19de0e-c430-49dd-b3b8-72ce5b6f7944",
     checkoutProvider: "Lemon Squeezy",
     checkoutSeller: "Prep2Go",
@@ -1397,6 +1432,7 @@ const rawDecks: Deck[] = [
     ],
   },
   ...prep2GoAdditionalLanguageDecks,
+  ...prep2GoAppDecks,
 
   // ── Academic ──────────────────────────────────────────────────────────
   {
@@ -1411,6 +1447,7 @@ const rawDecks: Deck[] = [
     lastUpdated: "2026-05-31",
     audience: "IB Biology Standard Level students using spaced repetition for exam preparation.",
     format: ".apkg",
+    coverImage: "/covers/ib-biology-sl-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/oakmtp",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
@@ -1471,6 +1508,7 @@ const rawDecks: Deck[] = [
     lastUpdated: "2026-05-31",
     audience: "Metals commodity traders, analysts, and professionals entering metals markets.",
     format: ".apkg",
+    coverImage: "/covers/bench-energy-metal-trader-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/zpazj",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
@@ -1516,6 +1554,7 @@ const rawDecks: Deck[] = [
     lastUpdated: "2026-05-31",
     audience: "Oil commodity traders, refinery analysts, and professionals entering petroleum markets.",
     format: ".apkg",
+    coverImage: "/covers/bench-energy-oil-trader-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/ugngbd",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
@@ -1561,6 +1600,7 @@ const rawDecks: Deck[] = [
     lastUpdated: "2026-05-31",
     audience: "Coal commodity traders, mining finance analysts, and professionals entering thermal coal markets.",
     format: ".apkg",
+    coverImage: "/covers/bench-energy-coal-trader-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/ipnqky",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
@@ -1606,6 +1646,7 @@ const rawDecks: Deck[] = [
     lastUpdated: "2026-05-31",
     audience: "Commodity traders and analysts who work across metals, oil, and coal markets.",
     format: ".apkg",
+    coverImage: "/covers/commodity-trader-pack-bundle.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/tzzgh",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
@@ -1671,6 +1712,7 @@ export const categoryLabels: Record<DeckCategory, string> = {
   finance: "Finance Exams",
   language: "Language Certifications",
   professional: "Professional & Trading",
+  immigration: "Immigration & Adaptation",
   academic: "Academic",
 };
 
@@ -1678,6 +1720,7 @@ export const categoryOrder: DeckCategory[] = [
   "finance",
   "language",
   "professional",
+  "immigration",
   "academic",
 ];
 
@@ -1711,7 +1754,12 @@ export const siteFaqs = [
   {
     question: "What is UniPrep2Go?",
     answer:
-      "UniPrep2Go is an independent publisher of Anki flashcard decks for exam preparation, language certifications, professional training, and academic subjects. Decks are sold as digital downloads through Gumroad and Lemon Squeezy — usually Anki .apkg files, with other formats listed per product.",
+      "UniPrep2Go is a US-first catalog of independent Anki flashcard decks for licensing exams, finance credentials, language certifications, professional training, and academic subjects. The priority market is the United States, especially FINRA, insurance licensing, California real estate, CFA, and FRM candidates. Language decks remain available for long-tail search and global learners.",
+  },
+  {
+    question: "Which US exams does UniPrep2Go cover?",
+    answer:
+      "The catalog includes US-market decks for FINRA SIE, Series 7, Series 63, California real estate salesperson exam prep, Life & Health insurance licensing, and Property & Casualty insurance licensing, plus finance credential decks such as CFA Level 1 and FRM Part 1.",
   },
   {
     question: "What file format is delivered?",

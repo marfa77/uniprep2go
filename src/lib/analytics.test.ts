@@ -38,13 +38,28 @@ describe("funnel analytics contract", () => {
         deckSlug: "cfa-level-1-anki-deck",
         source: "footer_cta",
         path: "/",
+        destinationUrl: "https://pixidstudio.gumroad.com/l/ivjmuu",
         referrer: "https://chat.openai.com/",
+        browserLanguage: "en-US",
+        browserLanguages: ["en-US", "en"],
+        acceptLanguage: "en-US,en;q=0.9",
+        country: "US",
+        region: "CA",
+        city: "Los Angeles",
+        timezone: "America/Los_Angeles",
+        screen: "1440x900",
+        clientIp: "203.0.113.10",
       }),
     ).toMatchObject({
       name: "checkout_intent",
       deckSlug: "cfa-level-1-anki-deck",
       source: "footer_cta",
       path: "/",
+      destinationUrl: "https://pixidstudio.gumroad.com/l/ivjmuu",
+      browserLanguage: "en-US",
+      browserLanguages: ["en-US", "en"],
+      country: "US",
+      timezone: "America/Los_Angeles",
     });
 
     expect(() =>

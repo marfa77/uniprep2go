@@ -1,4 +1,9 @@
-import { beforeEach, describe, expect, it } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
+
+vi.mock("./redis", () => ({
+  getRedisClient: () => null,
+}));
+
 import { createFunnelEvent } from "./analytics";
 import { getFunnelStats, recordFunnelEvent, resetFunnelStats } from "./funnel-store";
 
@@ -15,6 +20,9 @@ describe("funnel stats store", () => {
         name: "page_view",
         deckSlug: "cfa-level-1-anki-deck",
         source: "landing_page",
+        country: "US",
+        browserLanguage: "en-US",
+        referrer: "https://google.com/search?q=sie+anki",
       }),
     );
     await recordFunnelEvent(
@@ -22,16 +30,26 @@ describe("funnel stats store", () => {
         name: "checkout_click",
         deckSlug: "cfa-level-1-anki-deck",
         source: "hero_cta",
+        country: "US",
+        browserLanguage: "en-US",
+        referrer: "https://google.com/search?q=sie+anki",
       }),
     );
 
     const stats = await getFunnelStats();
 
+    expect(stats.byEvent).toMatchObject({
+      page_view: 1,
+      checkout_click: 1,
+    });
     expect(stats.totalEvents - before.totalEvents).toBe(2);
     expect(stats.byEvent.page_view - before.byEvent.page_view).toBe(1);
     expect(stats.byEvent.checkout_click - before.byEvent.checkout_click).toBe(1);
     expect(stats.byDeck["cfa-level-1-anki-deck"] - (before.byDeck["cfa-level-1-anki-deck"] ?? 0)).toBe(2);
     expect(stats.bySource.hero_cta - (before.bySource.hero_cta ?? 0)).toBe(1);
+    expect(stats.byCountry.US - (before.byCountry.US ?? 0)).toBe(2);
+    expect(stats.byLanguage["en-US"] - (before.byLanguage["en-US"] ?? 0)).toBe(2);
+    expect(stats.byReferrer["google.com"] - (before.byReferrer["google.com"] ?? 0)).toBe(2);
     expect(stats.lifetime.totalEvents - before.lifetime.totalEvents).toBe(2);
     expect(stats.lifetime.byEvent.checkout_click - before.lifetime.byEvent.checkout_click).toBe(1);
     expect(["memory", "redis"]).toContain(stats.storage);

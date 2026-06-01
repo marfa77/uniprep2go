@@ -77,6 +77,12 @@ export function toCheckoutClickMessage(event: FunnelEvent, deck?: AvailableDeck 
     `Price: ${price}`,
     `Source: ${event.source ?? "unknown"}`,
     `Path: ${event.path ?? "n/a"}`,
+    `Destination: ${event.destinationUrl ?? checkoutUrl}`,
+    `Country: ${event.country ?? "n/a"}`,
+    `Region: ${event.region ?? "n/a"}`,
+    `City: ${event.city ?? "n/a"}`,
+    `Browser language: ${event.browserLanguage ?? event.acceptLanguage ?? "n/a"}`,
+    `Referrer: ${event.referrer ?? "direct"}`,
     `Checkout: ${checkoutUrl}`,
     `Time: ${event.occurredAt}`,
   ].join("\n");

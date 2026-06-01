@@ -6,7 +6,7 @@ import { FunnelTracker, TrackedCheckoutLink } from "@/components/funnel-tracker"
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { catalogAvailableDecks, categoryLabels } from "@/lib/decks";
-import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
+import { formatDeckPriceLabel, getCheckoutActionLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import { buildDeckPageJsonLd } from "@/lib/product-jsonld";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
@@ -50,6 +50,8 @@ export default async function DeckPage({
   }
 
   const priceLabel = formatDeckPriceLabel(deck);
+  const checkoutActionLabel =
+    deck.checkoutProvider === "App Store" ? "Open in App Store" : "Buy the deck";
 
   const sectionEvents = [
     { selector: "#facts", name: "product_facts_view" as const },
@@ -86,9 +88,18 @@ export default async function DeckPage({
             href={deck.checkoutUrl}
             source="deck_page_cta"
           >
-            Buy the deck — {priceLabel}
+            {checkoutActionLabel} — {priceLabel}
           </TrackedCheckoutLink>
-          {deck.slug === "cfa-level-1-anki-deck" ? (
+          {deck.checkoutProvider === "App Store" ? (
+            <Link
+              className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+              href={deck.checkoutUrl}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              View on App Store
+            </Link>
+          ) : deck.slug === "cfa-level-1-anki-deck" ? (
             <Link
               className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
               href="/how-to-import-cfa-anki-deck"

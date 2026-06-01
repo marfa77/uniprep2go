@@ -79,7 +79,7 @@ export function buildShopPreviewSampleCards(uniprepSlug: string): SampleCard[] |
       return {
         question: card.front,
         answer: formatSampleAnswer(shopKey, card),
-        imageUrl: `/samples/prep2go-grammar/${card.exampleNative}`,
+        imageUrl: `${mediaBase(shopKey, cardNumber)}.webp`,
       };
     }
 

@@ -5,6 +5,7 @@ import {
   buildDeckPageJsonLd,
   buildProductJsonLd,
   buildProductOffer,
+  buildSiteOrganizationJsonLd,
   getProductImages,
 } from "./product-jsonld";
 import { applyPendingPriceToDeck, applyPriceRecordToDeck } from "./checkout-pricing";
@@ -80,6 +81,19 @@ describe("product json-ld", () => {
         "https://uniprep2go.study/samples/cfa-level-1-anki-deck-sample-2.webp",
         "https://uniprep2go.study/samples/cfa-level-1-anki-deck-sample-3.webp",
       ],
+    });
+  });
+
+  it("publishes US-first organization context for search and LLMs", () => {
+    expect(buildSiteOrganizationJsonLd()).toMatchObject({
+      "@type": "Organization",
+      areaServed: {
+        "@type": "Country",
+        name: "United States",
+      },
+      knowsAbout: expect.arrayContaining([
+        "FINRA SIE, Series 7, and Series 63 exam prep",
+      ]),
     });
   });
 });

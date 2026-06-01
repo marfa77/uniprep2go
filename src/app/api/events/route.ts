@@ -5,6 +5,10 @@ import { shouldRecordFunnelEvent } from "@/lib/funnel-filter";
 import { recordFunnelEvent } from "@/lib/funnel-store";
 import { notifyCheckoutClick } from "@/lib/telegram-notify";
 
+function firstForwardedIp(value: string | null) {
+  return value?.split(",")[0]?.trim() || undefined;
+}
+
 async function parseEventPayload(request: Request) {
   const contentType = request.headers.get("content-type") ?? "";
 
@@ -26,6 +30,14 @@ export async function POST(request: Request) {
     const payload = await parseEventPayload(request);
     const event = parseFunnelEvent({
       ...payload,
+      acceptLanguage: request.headers.get("accept-language") ?? undefined,
+      country: request.headers.get("x-vercel-ip-country") ?? undefined,
+      region: request.headers.get("x-vercel-ip-country-region") ?? undefined,
+      city: request.headers.get("x-vercel-ip-city") ?? undefined,
+      clientIp:
+        firstForwardedIp(request.headers.get("x-forwarded-for")) ??
+        request.headers.get("x-real-ip") ??
+        undefined,
       userAgent: request.headers.get("user-agent") ?? undefined,
     });
 

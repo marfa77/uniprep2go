@@ -4,6 +4,8 @@ import {
   applyPendingPriceToDeck,
   applyPriceRecordToDeck,
   applySyncedPriceToDeck,
+  formatDeckPriceLabel,
+  getCheckoutActionLabel,
   parseGumroadPriceCentsFromHtml,
   parseLemonVariantId,
   resetLemonVariantIndexCache,
@@ -118,6 +120,18 @@ describe("checkout pricing", () => {
     expect(pending.price.amount).toBe(0);
     expect(pending.directAnswer).toContain("the checkout price");
     expect(pending.directAnswer).not.toContain(PRICE_PLACEHOLDER);
+  });
+
+  it("uses static App Store pricing for Prep2Go Immigration decks", async () => {
+    const deck = getCatalogDeckBySlug("us-citizenship-test-prep2go-app");
+    expect(deck).toBeDefined();
+
+    const priced = await resolveDeckPrice(deck!);
+
+    expect(priced.checkoutProvider).toBe("App Store");
+    expect(priced.price.amount).toBe(4.99);
+    expect(formatDeckPriceLabel(priced)).toBe("From $4.99/mo");
+    expect(getCheckoutActionLabel(priced.checkoutProvider)).toBe("App Store");
   });
 
   it("serves cached synced price on deck resolve", async () => {

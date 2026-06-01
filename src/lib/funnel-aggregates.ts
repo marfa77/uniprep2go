@@ -6,6 +6,9 @@ export type FunnelAggregate = {
   byEvent: Record<FunnelEventName, number>;
   byDeck: Record<string, number>;
   bySource: Record<string, number>;
+  byCountry: Record<string, number>;
+  byLanguage: Record<string, number>;
+  byReferrer: Record<string, number>;
   startedAt?: string;
   updatedAt?: string;
 };
@@ -23,6 +26,9 @@ export function emptyAggregate(): FunnelAggregate {
     byEvent: emptyByEvent(),
     byDeck: {},
     bySource: {},
+    byCountry: {},
+    byLanguage: {},
+    byReferrer: {},
   };
 }
 
@@ -35,8 +41,34 @@ export function applyEventToAggregate(aggregate: FunnelAggregate, event: FunnelE
     aggregate.bySource[event.source] = (aggregate.bySource[event.source] ?? 0) + 1;
   }
 
+  if (event.country) {
+    aggregate.byCountry[event.country] = (aggregate.byCountry[event.country] ?? 0) + 1;
+  }
+
+  const language = event.browserLanguage ?? event.acceptLanguage?.split(",")[0]?.trim();
+  if (language) {
+    aggregate.byLanguage[language] = (aggregate.byLanguage[language] ?? 0) + 1;
+  }
+
+  const referrerHost = normalizeReferrerHost(event.referrer);
+  if (referrerHost) {
+    aggregate.byReferrer[referrerHost] = (aggregate.byReferrer[referrerHost] ?? 0) + 1;
+  }
+
   aggregate.startedAt ??= event.occurredAt;
   aggregate.updatedAt = event.occurredAt;
+}
+
+function normalizeReferrerHost(referrer: string | undefined) {
+  if (!referrer) {
+    return undefined;
+  }
+
+  try {
+    return new URL(referrer).hostname.replace(/^www\./, "");
+  } catch {
+    return referrer.slice(0, 80);
+  }
 }
 
 export function toCountMap(raw: Record<string, unknown> | null): Record<string, number> {
@@ -58,6 +90,9 @@ export function aggregateFromCountMaps(input: {
   byEventRaw: Record<string, unknown> | null;
   byDeckRaw: Record<string, unknown> | null;
   bySourceRaw: Record<string, unknown> | null;
+  byCountryRaw?: Record<string, unknown> | null;
+  byLanguageRaw?: Record<string, unknown> | null;
+  byReferrerRaw?: Record<string, unknown> | null;
   startedAt?: string;
   updatedAt?: string;
 }): FunnelAggregate {
@@ -73,6 +108,9 @@ export function aggregateFromCountMaps(input: {
     byEvent,
     byDeck: toCountMap(input.byDeckRaw),
     bySource: toCountMap(input.bySourceRaw),
+    byCountry: toCountMap(input.byCountryRaw ?? null),
+    byLanguage: toCountMap(input.byLanguageRaw ?? null),
+    byReferrer: toCountMap(input.byReferrerRaw ?? null),
     startedAt: input.startedAt,
     updatedAt: input.updatedAt,
   };

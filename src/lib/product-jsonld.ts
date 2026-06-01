@@ -132,5 +132,10 @@ export function buildSiteOrganizationJsonLd() {
     "@id": `${siteConfig.url}/#organization`,
     name: siteConfig.name,
     url: siteConfig.url,
+    areaServed: {
+      "@type": "Country" as const,
+      name: siteConfig.primaryMarket,
+    },
+    knowsAbout: siteConfig.primaryUseCases,
   };
 }

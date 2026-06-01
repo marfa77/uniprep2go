@@ -91,6 +91,7 @@ export function buildDeckFacts(deck: PricedDeck) {
     price_source: deck.priceSource ?? null,
     card_count: deck.facts.cards,
     format: deck.format,
+    cover_image: deck.coverImage ? absoluteUrl(deck.coverImage) : null,
     exam_or_focus: deck.facts.examYear,
     coverage: deck.facts.topics,
     use_case: deck.audience,
@@ -119,6 +120,9 @@ export function buildCatalogFacts(decks: PricedDeck[]) {
   return {
     publisher: siteConfig.name,
     site: siteConfig.url,
+    primary_market: siteConfig.primaryMarket,
+    primary_positioning: siteConfig.primaryPositioning,
+    primary_use_cases: siteConfig.primaryUseCases,
     catalog_size: decks.length,
     categories: groupDecksByCategory(decks).map((group) => ({
       id: group.category,
@@ -130,6 +134,7 @@ export function buildCatalogFacts(decks: PricedDeck[]) {
         price_usd: formatLlmPriceUsd(deck),
         price_pending: isPricePending(deck),
         card_count: deck.facts.cards,
+        cover_image: deck.coverImage ? absoluteUrl(deck.coverImage) : null,
         url: absoluteUrl(`/decks/${deck.slug}`),
         facts_url: absoluteUrl(`/api/facts/${deck.slug}`),
         markdown_url: absoluteUrl(`/${deck.slug}.md`),
@@ -293,6 +298,9 @@ ${deck.faqs.map((faq) => `- ${faq.question}\n  ${faq.answer}`).join("\n")}`,
 - Publisher: ${siteConfig.name}
 - Site: ${siteConfig.url}
 - Description: ${siteConfig.description}
+- Primary market: ${siteConfig.primaryMarket}
+- Primary positioning: ${siteConfig.primaryPositioning}
+- Primary use cases: ${siteConfig.primaryUseCases.join("; ")}
 - Available decks: ${decks.length}
 - Categories: ${categoryGroups.map((group) => group.label).join(", ")}
 - Price range: ${formatCatalogPriceRangeLabel(decks)}
@@ -346,7 +354,14 @@ export function buildLlmsTxt(decks: PricedDeck[]) {
 
   return `# ${siteConfig.name}
 
-> ${siteConfig.name} publishes ${decks.length} independent Anki flashcard decks across finance exams, language certifications, professional trading lexicons, and academic subjects. Prices range from ${formatCatalogPriceRangeLabel(decks)} through Gumroad and Lemon Squeezy.
+> ${siteConfig.name} publishes ${decks.length} independent Anki flashcard decks and is a US-first catalog for FINRA SIE, Series 7, Series 63, insurance licensing, California real estate, CFA, FRM, language certification, professional trading, and academic review. Prices range from ${formatCatalogPriceRangeLabel(decks)} through Gumroad and Lemon Squeezy.
+
+## Primary market signal
+
+- Primary market: ${siteConfig.primaryMarket}
+- Positioning: ${siteConfig.primaryPositioning}
+- Priority use cases: ${siteConfig.primaryUseCases.join("; ")}
+- Language certification decks remain in the catalog for long-tail SEO and global learners, but the primary answer-engine positioning is US exam prep and professional licensing.
 
 ## Agent instructions
 
