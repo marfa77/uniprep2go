@@ -38,6 +38,11 @@ describe("prep2go app decks", () => {
       expect(deck.format).toBe("App");
       expect(deck.coverImage).toMatch(/^\/covers\/.*\.webp$/);
       expect(deck.slug).not.toMatch(/ciple|dele|delf|goethe|celi|inburgering|norsk|grammar|anki-deck$/i);
+      expect(deck.sampleCards).toHaveLength(3);
+      expect(deck.sampleCards.every((card) => card.imageUrl.startsWith("/samples/prep2go-immigration/"))).toBe(
+        true,
+      );
+      expect(deck.sampleCards.every((card) => card.question && card.answer.length > 20)).toBe(true);
     }
   });
 

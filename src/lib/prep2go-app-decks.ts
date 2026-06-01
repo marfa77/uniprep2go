@@ -1,3 +1,4 @@
+import immigrationSamples from "../data/prep2go-immigration-samples.json";
 import type { CatalogAvailableDeck, SampleCard } from "./decks";
 
 export const PREP2GO_APP_STORE_URL =
@@ -15,8 +16,11 @@ type Prep2GoAppDeckInput = {
   topics: string;
   audience: string;
   coverImage: string;
-  sampleCards: SampleCard[];
 };
+
+function immigrationSampleCards(slug: string): SampleCard[] {
+  return immigrationSamples[slug as keyof typeof immigrationSamples] ?? [];
+}
 
 function buildPrep2GoAppDeck(input: Prep2GoAppDeckInput): CatalogAvailableDeck {
   return {
@@ -42,7 +46,7 @@ function buildPrep2GoAppDeck(input: Prep2GoAppDeckInput): CatalogAvailableDeck {
       delivery: "Prep2Go Immigration iOS app on the App Store",
     },
     topicCoverage: [],
-    sampleCards: input.sampleCards,
+    sampleCards: immigrationSampleCards(input.slug),
     faqs: [
       {
         question: `What does ${input.shortName} include?`,
@@ -70,10 +74,6 @@ function appCover(slug: string) {
   return `/covers/${slug}.webp`;
 }
 
-function appSample(slug: string, question: string, answer: string): SampleCard[] {
-  return [{ question, answer, imageUrl: appCover(slug) }];
-}
-
 export const prep2GoAppDecks: CatalogAvailableDeck[] = [
   buildPrep2GoAppDeck({
     slug: "us-adaptation-english-prep2go-app",
@@ -86,11 +86,6 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "Healthcare, banking, housing, work, taxes, school, and community life in the USA",
     audience: "Newcomers to the United States who need practical English survival knowledge, not exam cramming.",
     coverImage: appCover("us-adaptation-english-prep2go-app"),
-    sampleCards: appSample(
-      "us-adaptation-english-prep2go-app",
-      "What is health insurance in the USA?",
-      "A private contract that covers some or all of your medical costs in exchange for a monthly premium.",
-    ),
   }),
   buildPrep2GoAppDeck({
     slug: "uae-survival-guide-prep2go-app",
@@ -103,11 +98,6 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "Emirates, visas, banking, districts, culture, and practical UAE relocation knowledge",
     audience: "Expats and professionals relocating to or living in the United Arab Emirates.",
     coverImage: appCover("uae-survival-guide-prep2go-app"),
-    sampleCards: appSample(
-      "uae-survival-guide-prep2go-app",
-      "What is Dubai in the UAE federation?",
-      "The most populous emirate and global business hub, home to millions of expats and a major financial center.",
-    ),
   }),
   buildPrep2GoAppDeck({
     slug: "saudi-arabia-survival-guide-prep2go-app",
@@ -120,11 +110,6 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "Regions, visas, banking, workplace culture, and daily life in Saudi Arabia",
     audience: "Expats preparing for life and work in Saudi Arabia.",
     coverImage: appCover("saudi-arabia-survival-guide-prep2go-app"),
-    sampleCards: appSample(
-      "saudi-arabia-survival-guide-prep2go-app",
-      "What is Riyadh?",
-      "The capital of Saudi Arabia and the country's main government and business center.",
-    ),
   }),
   buildPrep2GoAppDeck({
     slug: "singapore-survival-guide-prep2go-app",
@@ -137,11 +122,6 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "Visas, housing, banking, transport, and everyday life in Singapore",
     audience: "Expats and professionals moving to Singapore.",
     coverImage: appCover("singapore-survival-guide-prep2go-app"),
-    sampleCards: appSample(
-      "singapore-survival-guide-prep2go-app",
-      "What should newcomers learn first about Singapore?",
-      "Visa status, housing rules, banking setup, and the cost of everyday life in a highly regulated city-state.",
-    ),
   }),
   buildPrep2GoAppDeck({
     slug: "south-africa-survival-guide-prep2go-app",
@@ -154,11 +134,6 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "Visas, banking, safety, regions, and daily life in South Africa",
     audience: "Expats and newcomers adapting to life in South Africa.",
     coverImage: appCover("south-africa-survival-guide-prep2go-app"),
-    sampleCards: appSample(
-      "south-africa-survival-guide-prep2go-app",
-      "What should newcomers learn first about South Africa?",
-      "Visa rules, banking setup, regional differences, and practical safety expectations for daily life.",
-    ),
   }),
   buildPrep2GoAppDeck({
     slug: "australia-survival-guide-prep2go-app",
@@ -171,11 +146,6 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "Visas, Medicare, banking, housing, and everyday life in Australia",
     audience: "Expats and skilled migrants preparing for life in Australia.",
     coverImage: appCover("australia-survival-guide-prep2go-app"),
-    sampleCards: appSample(
-      "australia-survival-guide-prep2go-app",
-      "What should newcomers learn first about Australia?",
-      "Visa conditions, healthcare basics, banking setup, and the cost of housing in major cities.",
-    ),
   }),
   buildPrep2GoAppDeck({
     slug: "canada-survival-guide-prep2go-app",
@@ -188,11 +158,6 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "Visas, provincial systems, banking, housing, and daily life in Canada",
     audience: "Expats and newcomers adapting to life in Canada.",
     coverImage: appCover("canada-survival-guide-prep2go-app"),
-    sampleCards: appSample(
-      "canada-survival-guide-prep2go-app",
-      "What should newcomers learn first about Canada?",
-      "Visa or permit status, provincial healthcare rules, banking setup, and winter-cost housing realities.",
-    ),
   }),
   buildPrep2GoAppDeck({
     slug: "germany-survival-guide-prep2go-app",
@@ -205,11 +170,6 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "Visas, registration, banking, housing, and daily life in Germany",
     audience: "Expats and newcomers adapting to life in Germany.",
     coverImage: appCover("germany-survival-guide-prep2go-app"),
-    sampleCards: appSample(
-      "germany-survival-guide-prep2go-app",
-      "What should newcomers learn first about Germany?",
-      "Visa type, city registration, health insurance, and how housing contracts work.",
-    ),
   }),
   buildPrep2GoAppDeck({
     slug: "japan-survival-guide-prep2go-app",
@@ -222,11 +182,6 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "Visas, banking, housing, transport, and daily life in Japan",
     audience: "Expats and professionals adapting to life in Japan.",
     coverImage: appCover("japan-survival-guide-prep2go-app"),
-    sampleCards: appSample(
-      "japan-survival-guide-prep2go-app",
-      "What should newcomers learn first about Japan?",
-      "Visa status, residence card rules, banking setup, and apartment-search customs.",
-    ),
   }),
   buildPrep2GoAppDeck({
     slug: "netherlands-survival-guide-prep2go-app",
@@ -239,11 +194,6 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "Visas, BSN registration, banking, housing, and daily life in the Netherlands",
     audience: "Expats and newcomers adapting to life in the Netherlands.",
     coverImage: appCover("netherlands-survival-guide-prep2go-app"),
-    sampleCards: appSample(
-      "netherlands-survival-guide-prep2go-app",
-      "What should newcomers learn first about the Netherlands?",
-      "BSN registration, visa or permit status, housing shortages, and Dutch banking basics.",
-    ),
   }),
   buildPrep2GoAppDeck({
     slug: "uk-survival-guide-prep2go-app",
@@ -256,11 +206,6 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "Visas, NHS basics, banking, housing, and daily life in the UK",
     audience: "Expats and newcomers adapting to life in the United Kingdom.",
     coverImage: appCover("uk-survival-guide-prep2go-app"),
-    sampleCards: appSample(
-      "uk-survival-guide-prep2go-app",
-      "What should newcomers learn first about the UK?",
-      "Visa or settled status, NHS registration, banking setup, and tenancy rules.",
-    ),
   }),
   buildPrep2GoAppDeck({
     slug: "portugal-survival-guide-prep2go-app",
@@ -273,11 +218,6 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "Visas, residency, banking, housing, and daily life in Portugal",
     audience: "Expats and newcomers adapting to life in Portugal.",
     coverImage: appCover("portugal-survival-guide-prep2go-app"),
-    sampleCards: appSample(
-      "portugal-survival-guide-prep2go-app",
-      "What should newcomers learn first about Portugal?",
-      "Visa or residency route, NIF and banking setup, and how rental contracts work.",
-    ),
   }),
   buildPrep2GoAppDeck({
     slug: "us-citizenship-test-prep2go-app",
@@ -290,11 +230,6 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "American government, history, geography, and civic rights for naturalization",
     audience: "Green card holders preparing for the U.S. citizenship civics test.",
     coverImage: appCover("us-citizenship-test-prep2go-app"),
-    sampleCards: appSample(
-      "us-citizenship-test-prep2go-app",
-      "What is the supreme law of the land?",
-      "The Constitution.",
-    ),
   }),
   buildPrep2GoAppDeck({
     slug: "leben-in-deutschland-prep2go-app",
@@ -307,11 +242,6 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "German politics, history, society, and state-specific naturalization questions",
     audience: "Residents preparing for the German citizenship test.",
     coverImage: appCover("leben-in-deutschland-prep2go-app"),
-    sampleCards: appSample(
-      "leben-in-deutschland-prep2go-app",
-      "In Deutschland dürfen Menschen offen etwas gegen die Regierung sagen, weil …",
-      "hier Meinungsfreiheit gilt.",
-    ),
   }),
   buildPrep2GoAppDeck({
     slug: "naturalisation-francaise-prep2go-app",
@@ -324,11 +254,6 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "French history, institutions, symbols, and civic knowledge for naturalization",
     audience: "Applicants preparing for the French citizenship test.",
     coverImage: appCover("naturalisation-francaise-prep2go-app"),
-    sampleCards: appSample(
-      "naturalisation-francaise-prep2go-app",
-      "Quelle est la devise de la République française?",
-      "Liberté, Égalité, Fraternité.",
-    ),
   }),
   buildPrep2GoAppDeck({
     slug: "life-in-the-uk-prep2go-app",
@@ -341,11 +266,6 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "British values, history, government, and society for settlement and citizenship",
     audience: "Applicants preparing for the Life in the UK test.",
     coverImage: appCover("life-in-the-uk-prep2go-app"),
-    sampleCards: appSample(
-      "life-in-the-uk-prep2go-app",
-      "What are the fundamental principles of British life?",
-      "Democracy, the rule of law, individual liberty, tolerance, and participation in community life.",
-    ),
   }),
   buildPrep2GoAppDeck({
     slug: "canadian-citizenship-prep2go-app",
@@ -358,11 +278,6 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "Canadian history, values, institutions, symbols, and rights",
     audience: "Permanent residents preparing for the Canadian citizenship test.",
     coverImage: appCover("canadian-citizenship-prep2go-app"),
-    sampleCards: appSample(
-      "canadian-citizenship-prep2go-app",
-      "What does it mean to be Canadian?",
-      "Sharing values such as democracy, respect for rights and freedoms, and participation in Canadian society.",
-    ),
   }),
   buildPrep2GoAppDeck({
     slug: "australian-citizenship-prep2go-app",
@@ -375,10 +290,5 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "Australian history, values, government, and society",
     audience: "Permanent residents preparing for the Australian citizenship test.",
     coverImage: appCover("australian-citizenship-prep2go-app"),
-    sampleCards: appSample(
-      "australian-citizenship-prep2go-app",
-      "What are Australian values?",
-      "Values such as respect, equality, freedom, and a fair go within a democratic society.",
-    ),
   }),
 ];
