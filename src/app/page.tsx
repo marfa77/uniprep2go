@@ -1,8 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
+import type { Metadata } from "next";
 import { FunnelTracker, TrackedCheckoutLink } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { formatDeckPriceLabel, getPricedDecks, getPricedDecksByCategory, getFeaturedPricedDecks } from "@/lib/checkout-pricing";
+import { getDeckThumbnailUrl } from "@/lib/deck-media";
 import {
   categoryLabels,
   categoryOrder,
@@ -10,7 +13,24 @@ import {
   siteFaqs,
 } from "@/lib/decks";
 import { buildCatalogItemListJsonLd, buildSiteOrganizationJsonLd } from "@/lib/product-jsonld";
-import { absoluteUrl, siteConfig } from "@/lib/site";
+import { siteConfig } from "@/lib/site";
+
+export const metadata: Metadata = {
+  openGraph: {
+    images: [
+      {
+        url: "/home/hero.webp",
+        width: 1536,
+        height: 1024,
+        alt: "UniPrep2Go independent Anki flashcard decks for exam prep",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/home/hero.webp"],
+  },
+};
 
 export const revalidate = 3600;
 
@@ -74,160 +94,215 @@ export default async function HomePage() {
         source="home"
       />
       <main>
-        <section className="border-b border-zinc-200 bg-zinc-50">
-          <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
-            <p className="text-sm font-medium uppercase tracking-wide text-zinc-500">
-              Anki deck catalog
-            </p>
-            <h1 className="mt-3 max-w-3xl text-4xl font-semibold tracking-tight text-zinc-900 sm:text-5xl">
-              Exam prep, languages, and professional decks — one catalog
-            </h1>
-            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-zinc-600">
-              {siteConfig.name} publishes {availableDecks.length} independent
-              Anki flashcard decks across {categoryOrder.length} categories.
-              Download .apkg files from Gumroad or Lemon Squeezy and import
-              into Anki on desktop, mobile, or web.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href="#catalog"
-                className="inline-flex items-center rounded-lg bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white hover:bg-zinc-800"
-              >
-                Browse catalog
-              </a>
-              <a
-                href={siteConfig.lemonSqueezyStoreUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center rounded-lg border border-zinc-300 bg-white px-5 py-2.5 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
-              >
-                Prep2Go store
-              </a>
+        <section className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
+          <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:items-center lg:py-20">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
+                Anki deck catalog
+              </p>
+              <h1 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight text-balance text-[#18140f] sm:text-5xl">
+                Exam prep, languages, and professional decks — one catalog
+              </h1>
+              <p className="mt-5 max-w-xl text-lg leading-8 text-[#4f493e]">
+                {siteConfig.name} publishes {availableDecks.length} independent
+                Anki flashcard decks across {categoryOrder.length} categories.
+                Download .apkg files from Gumroad or Lemon Squeezy and import
+                into Anki on desktop, mobile, or web.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a
+                  href="#catalog"
+                  className="inline-flex items-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
+                >
+                  Browse catalog
+                </a>
+                <a
+                  href={siteConfig.lemonSqueezyStoreUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center rounded-full border border-[#18140f]/20 bg-[#fffaf0]/70 px-6 py-3 text-sm font-semibold text-[#18140f] transition hover:border-[#18140f]"
+                >
+                  Prep2Go store
+                </a>
+              </div>
+              <dl className="mt-10 grid gap-4 sm:grid-cols-3">
+                <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-4">
+                  <dt className="text-sm text-[#7a6e5a]">Decks</dt>
+                  <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
+                    {availableDecks.length}
+                  </dd>
+                </div>
+                <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-4">
+                  <dt className="text-sm text-[#7a6e5a]">Categories</dt>
+                  <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
+                    {categoryOrder.length}
+                  </dd>
+                </div>
+                <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-4">
+                  <dt className="text-sm text-[#7a6e5a]">Price range</dt>
+                  <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
+                    {minPrice > 0 ? `$${minPrice}–$${maxPrice}` : "See checkout"}
+                  </dd>
+                </div>
+              </dl>
             </div>
-            <dl className="mt-10 grid gap-4 sm:grid-cols-3">
-              <div className="rounded-xl border border-zinc-200 bg-white p-4">
-                <dt className="text-sm text-zinc-500">Decks</dt>
-                <dd className="mt-1 text-2xl font-semibold text-zinc-900">
-                  {availableDecks.length}
-                </dd>
-              </div>
-              <div className="rounded-xl border border-zinc-200 bg-white p-4">
-                <dt className="text-sm text-zinc-500">Categories</dt>
-                <dd className="mt-1 text-2xl font-semibold text-zinc-900">
-                  {categoryOrder.length}
-                </dd>
-              </div>
-              <div className="rounded-xl border border-zinc-200 bg-white p-4">
-                <dt className="text-sm text-zinc-500">Price range</dt>
-                <dd className="mt-1 text-2xl font-semibold text-zinc-900">
-                  {minPrice > 0 ? `$${minPrice}–$${maxPrice}` : "See checkout"}
-                </dd>
-              </div>
-            </dl>
+            <div className="relative overflow-hidden rounded-[2rem] border border-[#18140f]/10 bg-[#fffaf0] shadow-[0_24px_60px_-32px_rgba(24,20,15,0.35)]">
+              <Image
+                alt="Stack of premium Anki flashcards on a warm study desk"
+                className="h-auto w-full object-cover"
+                height={1024}
+                priority
+                sizes="(max-width: 1024px) 100vw, 560px"
+                src="/home/hero.webp"
+                width={1536}
+              />
+            </div>
           </div>
         </section>
 
         {featuredDecks.length > 0 && (
-          <section className="border-b border-zinc-200">
-            <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-              <h2 className="text-2xl font-semibold text-zinc-900">
+          <section className="border-b border-[#18140f]/10 bg-[#fffaf0]/40">
+            <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
+              <h2 className="text-2xl font-semibold tracking-tight text-[#18140f]">
                 Featured decks
               </h2>
-              <p className="mt-2 text-zinc-600">
+              <p className="mt-2 text-[#4f493e]">
                 Popular picks across language, finance, and professional
                 training.
               </p>
               <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {featuredDecks.map((deck) => (
-                  <article
-                    key={deck.slug}
-                    className="flex flex-col rounded-xl border border-zinc-200 bg-white p-5"
-                  >
-                    <p className="text-xs font-medium uppercase tracking-wide text-zinc-500">
-                      {categoryLabels[deck.category]}
-                    </p>
-                    <h3 className="mt-2 text-lg font-semibold text-zinc-900">
-                      <Link
-                        href={`/decks/${deck.slug}`}
-                        className="hover:underline"
-                      >
-                        {deck.title}
-                      </Link>
-                    </h3>
-                    <p className="mt-2 flex-1 text-sm leading-relaxed text-zinc-600">
-                      {deck.directAnswer}
-                    </p>
-                    <div className="mt-4 flex items-center justify-between text-sm">
-                      <span className="font-medium text-zinc-900">
-                        {formatDeckPriceLabel(deck)} · {deck.facts.cards} cards
-                      </span>
-                      <Link
-                        href={`/decks/${deck.slug}`}
-                        className="font-medium text-zinc-900 underline-offset-2 hover:underline"
-                      >
-                        View deck
-                      </Link>
-                    </div>
-                  </article>
-                ))}
+                {featuredDecks.map((deck) => {
+                  const thumbnail = getDeckThumbnailUrl(deck.sampleCards);
+
+                  return (
+                    <article
+                      key={deck.slug}
+                      className="overflow-hidden rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]"
+                    >
+                      {thumbnail ? (
+                        <Link
+                          className="block overflow-hidden bg-[#f6efe8]"
+                          href={`/decks/${deck.slug}`}
+                        >
+                          <Image
+                            alt={`Sample card preview for ${deck.shortName}`}
+                            className="h-auto w-full"
+                            height={550}
+                            sizes="(max-width: 640px) 100vw, 33vw"
+                            src={thumbnail}
+                            width={976}
+                          />
+                        </Link>
+                      ) : null}
+                      <div className="flex flex-col p-5">
+                        <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#1f3a5f]">
+                          {categoryLabels[deck.category]}
+                        </p>
+                        <h3 className="mt-2 text-lg font-semibold text-[#18140f]">
+                          <Link
+                            href={`/decks/${deck.slug}`}
+                            className="hover:underline"
+                          >
+                            {deck.title}
+                          </Link>
+                        </h3>
+                        <p className="mt-2 flex-1 text-sm leading-6 text-[#5f5749] line-clamp-4">
+                          {deck.directAnswer}
+                        </p>
+                        <div className="mt-4 flex items-center justify-between text-sm">
+                          <span className="font-medium text-[#18140f]">
+                            {formatDeckPriceLabel(deck)} · {deck.facts.cards} cards
+                          </span>
+                          <Link
+                            href={`/decks/${deck.slug}`}
+                            className="font-medium text-[#1f3a5f] underline-offset-2 hover:underline"
+                          >
+                            View deck
+                          </Link>
+                        </div>
+                      </div>
+                    </article>
+                  );
+                })}
               </div>
             </div>
           </section>
         )}
 
-        <section id="catalog" className="border-b border-zinc-200">
-          <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-            <h2 className="text-2xl font-semibold text-zinc-900">
+        <section id="catalog" className="border-b border-[#18140f]/10">
+          <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
+            <h2 className="text-2xl font-semibold tracking-tight text-[#18140f]">
               Full catalog
             </h2>
-            <p className="mt-2 text-zinc-600">
+            <p className="mt-2 text-[#4f493e]">
               All decks grouped by category. Each product page includes sample
               cards, FAQ, and machine-readable facts for AI systems.
             </p>
             <div className="mt-10 space-y-12">
               {catalogGroups.map((group) => (
                 <div key={group.category}>
-                  <h3 className="text-lg font-semibold text-zinc-900">
+                  <h3 className="text-lg font-semibold text-[#18140f]">
                     {group.label}
                   </h3>
-                  <ul className="mt-4 divide-y divide-zinc-200 rounded-xl border border-zinc-200 bg-white">
-                    {group.decks.map((deck) => (
-                      <li
-                        key={deck.slug}
-                        className="flex flex-col gap-3 px-5 py-4 sm:flex-row sm:items-center sm:justify-between"
-                      >
-                        <div>
-                          <Link
-                            href={`/decks/${deck.slug}`}
-                            className="font-medium text-zinc-900 hover:underline"
-                          >
-                            {deck.title}
-                          </Link>
-                          <p className="mt-1 text-sm text-zinc-600">
-                            {deck.facts.cards} cards · {deck.facts.examYear} · {deck.checkoutProvider}
-                          </p>
-                        </div>
-                        <div className="flex shrink-0 items-center gap-4 text-sm">
-                          <span className="font-medium text-zinc-900">
-                            {formatDeckPriceLabel(deck)}
-                          </span>
-                          <Link
-                            href={`/decks/${deck.slug}`}
-                            className="text-zinc-600 underline-offset-2 hover:text-zinc-900 hover:underline"
-                          >
-                            Details
-                          </Link>
-                          <TrackedCheckoutLink
-                            className="font-medium text-zinc-900 underline-offset-2 hover:underline"
-                            deckSlug={deck.slug}
-                            href={deck.checkoutUrl}
-                            source="catalog_buy"
-                          >
-                            Buy
-                          </TrackedCheckoutLink>
-                        </div>
-                      </li>
-                    ))}
+                  <ul className="mt-4 divide-y divide-[#18140f]/10 rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70">
+                    {group.decks.map((deck) => {
+                      const thumbnail = getDeckThumbnailUrl(deck.sampleCards);
+
+                      return (
+                        <li
+                          key={deck.slug}
+                          className="flex flex-col gap-4 px-5 py-4 sm:flex-row sm:items-center sm:justify-between"
+                        >
+                          <div className="flex min-w-0 items-start gap-4">
+                            {thumbnail ? (
+                              <Link
+                                className="shrink-0 overflow-hidden rounded-2xl border border-[#18140f]/10 bg-[#f6efe8]"
+                                href={`/decks/${deck.slug}`}
+                              >
+                                <Image
+                                  alt=""
+                                  aria-hidden
+                                  className="h-16 w-28 object-cover object-top"
+                                  height={64}
+                                  src={thumbnail}
+                                  width={112}
+                                />
+                              </Link>
+                            ) : null}
+                            <div className="min-w-0">
+                              <Link
+                                href={`/decks/${deck.slug}`}
+                                className="font-medium text-[#18140f] hover:underline"
+                              >
+                                {deck.title}
+                              </Link>
+                              <p className="mt-1 text-sm text-[#5f5749]">
+                                {deck.facts.cards} cards · {deck.facts.examYear} · {deck.checkoutProvider}
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex shrink-0 items-center gap-4 text-sm sm:pl-0">
+                            <span className="font-medium text-[#18140f]">
+                              {formatDeckPriceLabel(deck)}
+                            </span>
+                            <Link
+                              href={`/decks/${deck.slug}`}
+                              className="text-[#5f5749] underline-offset-2 hover:text-[#18140f] hover:underline"
+                            >
+                              Details
+                            </Link>
+                            <TrackedCheckoutLink
+                              className="font-medium text-[#1f3a5f] underline-offset-2 hover:underline"
+                              deckSlug={deck.slug}
+                              href={deck.checkoutUrl}
+                              source="catalog_buy"
+                            >
+                              Buy
+                            </TrackedCheckoutLink>
+                          </div>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               ))}
@@ -235,20 +310,20 @@ export default async function HomePage() {
           </div>
         </section>
 
-        <section id="llm-sources" className="border-b border-zinc-200 bg-zinc-50">
-          <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-            <h2 className="text-2xl font-semibold text-zinc-900">
+        <section id="llm-sources" className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
+          <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
+            <h2 className="text-2xl font-semibold tracking-tight text-[#18140f]">
               Machine-readable sources
             </h2>
-            <p className="mt-2 text-zinc-600">
+            <p className="mt-2 text-[#4f493e]">
               Structured data for search engines, assistants, and RAG
               pipelines.
             </p>
-            <ul className="mt-6 space-y-2 text-sm">
+            <ul className="mt-6 space-y-2 text-sm text-[#5f5749]">
               <li>
                 <Link
                   href="/api/facts"
-                  className="font-medium text-zinc-900 underline-offset-2 hover:underline"
+                  className="font-medium text-[#18140f] underline-offset-2 hover:underline"
                 >
                   /api/facts
                 </Link>{" "}
@@ -257,20 +332,20 @@ export default async function HomePage() {
               <li>
                 <a
                   href="/llms.txt"
-                  className="font-medium text-zinc-900 underline-offset-2 hover:underline"
+                  className="font-medium text-[#18140f] underline-offset-2 hover:underline"
                 >
                   /llms.txt
                 </a>{" "}
                 — LLM entrypoint with agent instructions
               </li>
               <li>
-                <code className="rounded bg-zinc-200 px-1.5 py-0.5 text-xs">
+                <code className="rounded bg-[#18140f]/5 px-1.5 py-0.5 text-xs">
                   /[slug].md
                 </code>{" "}
                 — per-deck markdown for RAG (e.g.{" "}
                 <a
                   href="/cfa-level-1-anki-deck.md"
-                  className="font-medium text-zinc-900 underline-offset-2 hover:underline"
+                  className="font-medium text-[#18140f] underline-offset-2 hover:underline"
                 >
                   cfa-level-1-anki-deck.md
                 </a>
@@ -280,14 +355,14 @@ export default async function HomePage() {
           </div>
         </section>
 
-        <section id="faq" className="border-b border-zinc-200">
-          <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-            <h2 className="text-2xl font-semibold text-zinc-900">FAQ</h2>
+        <section id="faq" className="border-b border-[#18140f]/10">
+          <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
+            <h2 className="text-2xl font-semibold tracking-tight text-[#18140f]">FAQ</h2>
             <dl className="mt-8 space-y-6">
               {siteFaqs.map((faq) => (
                 <div key={faq.question}>
-                  <dt className="font-medium text-zinc-900">{faq.question}</dt>
-                  <dd className="mt-2 text-sm leading-relaxed text-zinc-600">
+                  <dt className="font-medium text-[#18140f]">{faq.question}</dt>
+                  <dd className="mt-2 text-sm leading-7 text-[#5f5749]">
                     {faq.answer}
                   </dd>
                 </div>
