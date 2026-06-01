@@ -19,4 +19,10 @@ describe("site config", () => {
       "mailto:support@uniprep2go.study?subject=Custom%20deck%20inquiry",
     );
   });
+
+  it("uses a site-wide footer disclaimer", () => {
+    expect(siteConfig.footerDisclaimer.independence).toContain("independent publisher");
+    expect(siteConfig.footerDisclaimer.trademarks).toContain("CFA Institute");
+    expect(siteConfig.footerDisclaimer.trademarks).toContain("FINRA");
+  });
 });

@@ -162,7 +162,7 @@ export const termsSections = sections([
     title: "Educational disclaimer",
     paragraphs: [
       "{siteName} is an independent publisher. Our materials are supplementary study aids and do not replace official curriculum, learning outcomes, practice exams, or professional advice.",
-      "CFA Institute does not endorse, promote, or warrant our products. CFA and Chartered Financial Analyst are trademarks owned by CFA Institute.",
+      "CFA® and Chartered Financial Analyst® are trademarks owned by CFA Institute. Other exam, credential, and program names belong to their respective owners. No exam body or government authority — including CFA Institute, FINRA, GARP, IB, CAPLE, or immigration agencies — endorses, promotes, sponsors, or warrants our products.",
     ],
   },
   {

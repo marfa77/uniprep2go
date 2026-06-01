@@ -29,6 +29,12 @@ export const siteConfig = {
   googleAnalyticsId: "G-NDF8PVD7N3",
   ahrefsAnalyticsKey: "X11yI8gl/4QXmr55ol2GlA",
   legalLastUpdated: "2026-06-01",
+  footerDisclaimer: {
+    independence:
+      "UniPrep2Go is an independent publisher of supplementary study materials. Our Anki decks and app content are for personal exam preparation only — not official exam materials, curriculum replacements, practice exams, or professional advice.",
+    trademarks:
+      "CFA® and Chartered Financial Analyst® are trademarks owned by CFA Institute. Other exam, credential, and program names on this site belong to their respective owners. No exam body or government authority — including CFA Institute, FINRA, GARP, IB, CAPLE, or immigration agencies — endorses, promotes, sponsors, or warrants our products.",
+  },
 } as const;
 
 export const legalLinks = [

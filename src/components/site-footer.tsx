@@ -7,11 +7,8 @@ export function SiteFooter() {
       <div className="border-t border-[#18140f]/10 pt-6">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
           <div className="max-w-2xl space-y-3 text-xs leading-6 text-[#6d6252]">
-            <p>
-              CFA Institute does not endorse, promote, or warrant this product. CFA&reg; and
-              Chartered Financial Analyst&reg; are trademarks owned by CFA Institute. {siteConfig.name}{" "}
-              is an independent study aid publisher.
-            </p>
+            <p>{siteConfig.footerDisclaimer.independence}</p>
+            <p>{siteConfig.footerDisclaimer.trademarks}</p>
             <p>
               Checkout and payment processing are provided by {siteConfig.checkoutProviders}. Digital
               products are licensed for personal study use only.
