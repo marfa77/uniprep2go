@@ -189,26 +189,28 @@ export default async function DeckPage({
         {deck.sampleCards.length > 0 ? (
           <section id="sample-cards" className="mt-12">
             <h2 className="text-2xl font-semibold tracking-tight">Sample cards</h2>
-            <div className="mt-4 grid gap-4 sm:grid-cols-3">
+            <div className="mt-4 grid gap-4 sm:grid-cols-3 sm:items-start">
               {deck.sampleCards.map((card) => (
                 <article
-                  className="overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#18140f]"
+                  className="overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]"
                   key={`${card.question}-${card.imageUrl}-${card.audioUrl ?? ""}`}
                 >
                   {card.imageUrl ? (
-                    <Image
-                      alt={`Sample Anki card: ${card.question}`}
-                      className="h-auto w-full"
-                      height={550}
-                      src={card.imageUrl}
-                      width={976}
-                    />
+                    <div className="bg-[#f6efe8]">
+                      <Image
+                        alt={`Sample Anki card: ${card.question}`}
+                        className="h-auto w-full"
+                        height={550}
+                        src={card.imageUrl}
+                        width={976}
+                      />
+                    </div>
                   ) : (
                     <div className="flex min-h-48 items-center justify-center bg-gradient-to-br from-[#f4dccf] via-[#fff8f0] to-[#f6efe8] px-6 py-10 text-center">
                       <p className="text-2xl font-semibold text-[#18140f]">{card.question}</p>
                     </div>
                   )}
-                  <div className="border-t border-white/10 bg-[#fffaf0] p-5">
+                  <div className="p-5">
                     <h3 className="font-semibold">{card.question}</h3>
                     <p className="mt-2 text-sm leading-6 text-[#5f5749]">{card.answer}</p>
                     {card.audioUrl ? (
