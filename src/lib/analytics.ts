@@ -20,6 +20,7 @@ export type FunnelEvent = {
   path?: string;
   referrer?: string;
   userAgent?: string;
+  internal?: boolean;
 };
 
 type FunnelEventInput = {
@@ -29,6 +30,7 @@ type FunnelEventInput = {
   path?: string;
   referrer?: string;
   userAgent?: string;
+  internal?: boolean;
 };
 
 const funnelEventNameSet = new Set<string>(funnelEventNames);
@@ -63,6 +65,7 @@ export function parseFunnelEvent(payload: unknown): FunnelEvent {
     path: optionalString(candidate.path),
     referrer: optionalString(candidate.referrer),
     userAgent: optionalString(candidate.userAgent),
+    internal: candidate.internal === true,
   });
 }
 

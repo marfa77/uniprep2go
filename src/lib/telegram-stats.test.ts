@@ -1,6 +1,68 @@
 import { describe, expect, it } from "vitest";
-import { shouldReturnStats, toTelegramStatsMessage } from "./telegram-stats";
+import { emptyAggregate } from "./funnel-aggregates";
+import {
+  shouldReturnStats,
+  shouldSyncPrices,
+  splitTelegramMessages,
+  toTelegramStatsMessage,
+  toTelegramStatsMessages,
+  toTelegramSyncMessage,
+} from "./telegram-stats";
 import type { FunnelStats } from "./funnel-store";
+
+const sampleStats: FunnelStats = {
+  ...emptyAggregate(),
+  totalEvents: 7,
+  byEvent: {
+    page_view: 3,
+    product_facts_view: 1,
+    topic_matrix_view: 1,
+    sample_cards_view: 0,
+    catalog_view: 0,
+    faq_view: 0,
+    checkout_intent: 1,
+    checkout_click: 1,
+  },
+  byDeck: { "cfa-level-1-anki-deck": 7, "frm-part-1-anki-deck": 2 },
+  bySource: { hero_cta: 1, deck_page: 2, section_view: 99 },
+  recentEvents: [
+    {
+      eventId: "evt_1",
+      name: "checkout_click",
+      deckSlug: "cfa-level-1-anki-deck",
+      occurredAt: "2026-05-31T15:10:00.000Z",
+      source: "deck_page",
+    },
+  ],
+  startedAt: "2026-05-31T15:00:00.000Z",
+  updatedAt: "2026-05-31T15:10:00.000Z",
+  lifetime: {
+    ...emptyAggregate(),
+    totalEvents: 147,
+    byEvent: {
+      page_view: 46,
+      product_facts_view: 19,
+      topic_matrix_view: 13,
+      sample_cards_view: 4,
+      catalog_view: 2,
+      faq_view: 21,
+      checkout_intent: 3,
+      checkout_click: 1,
+    },
+    byDeck: {
+      "cfa-level-1-anki-deck": 80,
+      "frm-part-1-anki-deck": 20,
+    },
+    bySource: {
+      section_view: 95,
+      home: 18,
+      deck_page: 17,
+    },
+    startedAt: "2026-05-01T10:00:00.000Z",
+    updatedAt: "2026-05-31T15:10:00.000Z",
+  },
+  storage: "redis",
+};
 
 describe("telegram stats", () => {
   it("recognizes stats commands", () => {
@@ -10,31 +72,60 @@ describe("telegram stats", () => {
     expect(shouldReturnStats("hello")).toBe(false);
   });
 
-  it("formats the funnel summary for Telegram", () => {
-    const stats: FunnelStats = {
-      totalEvents: 7,
-      byEvent: {
-        page_view: 3,
-        product_facts_view: 1,
-        topic_matrix_view: 1,
-        sample_cards_view: 0,
-        catalog_view: 0,
-        faq_view: 0,
-        checkout_intent: 1,
-        checkout_click: 1,
-      },
-      byDeck: { "cfa-level-1-anki-deck": 7 },
-      bySource: { hero_cta: 1 },
-      recentEvents: [],
-      startedAt: "2026-05-31T15:00:00.000Z",
-      updatedAt: "2026-05-31T15:10:00.000Z",
-      storage: "redis",
-    };
+  it("recognizes sync commands", () => {
+    expect(shouldSyncPrices("sync")).toBe(true);
+    expect(shouldSyncPrices("/sync")).toBe(true);
+    expect(shouldSyncPrices("/sync@mariccol_bot")).toBe(true);
+    expect(shouldSyncPrices("/stats")).toBe(false);
+  });
 
-    expect(toTelegramStatsMessage(stats)).toContain("UniPrep2Go funnel stats");
-    expect(toTelegramStatsMessage(stats)).toContain("Page views: 3");
-    expect(toTelegramStatsMessage(stats)).toContain("Checkout clicks: 1");
-    expect(toTelegramStatsMessage(stats)).toContain("CTA rate: 33.3%");
-    expect(toTelegramStatsMessage(stats)).toContain("Storage: redis");
+  it("formats price sync results for Telegram", () => {
+    const message = toTelegramSyncMessage({
+      synced: 35,
+      gumroad: 13,
+      lemon: 0,
+      failed: 22,
+      errors: [],
+    });
+
+    expect(message).toContain("UniPrep2Go price sync complete");
+    expect(message).toContain("Synced: 35");
+    expect(message).toContain("Gumroad: 13");
+    expect(message).toContain("Failed: 22");
+    expect(message).toContain("Errors: none");
+  });
+
+  it("formats full lifetime and current-period stats for Telegram", () => {
+    const message = toTelegramStatsMessage(sampleStats);
+
+    expect(message).toContain("UniPrep2Go funnel stats");
+    expect(message).toContain("All-time");
+    expect(message).toContain("Current period (since last reset)");
+    expect(message).toContain("Total events: 147");
+    expect(message).toContain("Total events: 7");
+    expect(message).toContain("Top decks (all-time)");
+    expect(message).toContain("- cfa-level-1-anki-deck: 80");
+    expect(message).toContain("Top sources (all-time)");
+    expect(message).toContain("Recent events");
+    expect(message).toContain("checkout_click · cfa-level-1-anki-deck · deck_page");
+    expect(message).toContain("Storage: redis");
+  });
+
+  it("hides legacy section_view noise from top sources", () => {
+    const message = toTelegramStatsMessage(sampleStats);
+
+    expect(message).not.toContain("section_view");
+    expect(message).toContain("- home: 18");
+    expect(message).toContain("- deck_page: 17");
+  });
+
+  it("splits oversized Telegram messages into chunks", () => {
+    const messages = splitTelegramMessages("a".repeat(5000), 3900);
+
+    expect(messages.length).toBeGreaterThan(1);
+    expect(messages[0]).toContain("[1/");
+    expect(toTelegramStatsMessages(sampleStats).every((message) => message.length <= 4096)).toBe(
+      true,
+    );
   });
 });

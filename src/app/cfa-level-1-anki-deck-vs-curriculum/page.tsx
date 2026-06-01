@@ -3,6 +3,7 @@ import Link from "next/link";
 import { TrackedCheckoutLink } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import { primaryDeck } from "@/lib/decks";
 
 const directAnswer =
@@ -16,10 +17,16 @@ export const metadata: Metadata = {
   },
 };
 
-const rows = primaryDeck.comparison ?? [];
-const priceLabel = `$${primaryDeck.price.amount} ${primaryDeck.price.currency}`;
+export default async function ComparisonPage() {
+  const deck = await getPricedDeckBySlug(primaryDeck.slug);
 
-export default function ComparisonPage() {
+  if (!deck) {
+    return null;
+  }
+
+  const rows = deck.comparison ?? [];
+  const priceLabel = formatDeckPriceLabel(deck);
+
   return (
     <main className="min-h-screen bg-[#f7f3ea] text-[#18140f]">
       <SiteHeader />
@@ -53,26 +60,20 @@ export default function ComparisonPage() {
           </table>
         </div>
 
-        <p className="mt-8 max-w-3xl leading-7 text-[#4f493e]">
-          UniPrep2Go is an independent publisher. The deck does not include or replace official CFA
-          Institute readings, learning outcome statements, or mock exams. CFA Institute does not
-          endorse, promote, or warrant this product.
-        </p>
-
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <TrackedCheckoutLink
             className="inline-flex items-center justify-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-            deckSlug={primaryDeck.slug}
-            href={primaryDeck.checkoutUrl}
-            source="comparison_cta"
+            deckSlug={deck.slug}
+            href={deck.checkoutUrl}
+            source="comparison_page_cta"
           >
             Buy the deck — {priceLabel}
           </TrackedCheckoutLink>
           <Link
             className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-            href={`/decks/${primaryDeck.slug}`}
+            href={`/decks/${deck.slug}`}
           >
-            View the deck
+            View deck details
           </Link>
         </div>
       </article>

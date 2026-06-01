@@ -1,30 +1,31 @@
 import Link from "next/link";
-import { FunnelTracker } from "@/components/funnel-tracker";
+import { FunnelTracker, TrackedCheckoutLink } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { formatDeckPriceLabel, getPricedDecks, getPricedDecksByCategory, getFeaturedPricedDecks } from "@/lib/checkout-pricing";
 import {
-  availableDecks,
   categoryLabels,
   categoryOrder,
-  getAvailableDecksByCategory,
-  getFeaturedDecks,
   primaryDeck,
   siteFaqs,
 } from "@/lib/decks";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
-export default function HomePage() {
-  const featuredDecks = getFeaturedDecks();
+export const revalidate = 3600;
+
+export default async function HomePage() {
+  const availableDecks = await getPricedDecks();
+  const featuredDecks = await getFeaturedPricedDecks();
   const featuredSlugs = new Set(featuredDecks.map((deck) => deck.slug));
-  const catalogGroups = getAvailableDecksByCategory()
+  const catalogGroups = (await getPricedDecksByCategory())
     .map((group) => ({
       ...group,
       decks: group.decks.filter((deck) => !featuredSlugs.has(deck.slug)),
     }))
     .filter((group) => group.decks.length > 0);
-  const prices = availableDecks.map((d) => d.price.amount);
-  const minPrice = Math.min(...prices);
-  const maxPrice = Math.max(...prices);
+  const prices = availableDecks.map((d) => d.price.amount).filter((amount) => amount > 0);
+  const minPrice = prices.length > 0 ? Math.min(...prices) : 0;
+  const maxPrice = prices.length > 0 ? Math.max(...prices) : 0;
 
   const sectionEvents = [
     { selector: "#catalog", name: "catalog_view" as const },
@@ -62,8 +63,8 @@ export default function HomePage() {
             },
             offers: {
               "@type": "Offer",
-              price: deck.price.amount,
-              priceCurrency: deck.price.currency,
+              price: deck.price.amount > 0 ? deck.price.amount : undefined,
+              priceCurrency: deck.price.amount > 0 ? deck.price.currency : undefined,
               availability: "https://schema.org/InStock",
               url: deck.checkoutUrl,
               seller: { "@type": "Organization", name: deck.checkoutSeller },
@@ -144,7 +145,7 @@ export default function HomePage() {
               <div className="rounded-xl border border-zinc-200 bg-white p-4">
                 <dt className="text-sm text-zinc-500">Price range</dt>
                 <dd className="mt-1 text-2xl font-semibold text-zinc-900">
-                  ${minPrice}–${maxPrice}
+                  {minPrice > 0 ? `$${minPrice}–$${maxPrice}` : "See checkout"}
                 </dd>
               </div>
             </dl>
@@ -183,7 +184,7 @@ export default function HomePage() {
                     </p>
                     <div className="mt-4 flex items-center justify-between text-sm">
                       <span className="font-medium text-zinc-900">
-                        ${deck.price.amount} · {deck.facts.cards} cards
+                        {formatDeckPriceLabel(deck)} · {deck.facts.cards} cards
                       </span>
                       <Link
                         href={`/decks/${deck.slug}`}
@@ -233,7 +234,7 @@ export default function HomePage() {
                         </div>
                         <div className="flex shrink-0 items-center gap-4 text-sm">
                           <span className="font-medium text-zinc-900">
-                            ${deck.price.amount}
+                            {formatDeckPriceLabel(deck)}
                           </span>
                           <Link
                             href={`/decks/${deck.slug}`}
@@ -241,14 +242,14 @@ export default function HomePage() {
                           >
                             Details
                           </Link>
-                          <a
-                            href={deck.checkoutUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                          <TrackedCheckoutLink
                             className="font-medium text-zinc-900 underline-offset-2 hover:underline"
+                            deckSlug={deck.slug}
+                            href={deck.checkoutUrl}
+                            source="catalog_buy"
                           >
                             Buy
-                          </a>
+                          </TrackedCheckoutLink>
                         </div>
                       </li>
                     ))}

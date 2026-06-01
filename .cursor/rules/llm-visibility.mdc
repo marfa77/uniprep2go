@@ -1,0 +1,46 @@
+---
+description: GEO/LLM visibility — canonical facts, shop previews, and mandatory verification before done
+alwaysApply: true
+---
+
+# GEO / LLM Visibility
+
+This project optimizes for GEO (Generative Engine Optimization), not classic Google SEO. The goal is to maximize accurate inclusion in LLM answers from ChatGPT, Perplexity, Claude, Gemini, and similar systems.
+
+When changing deck data, product naming, prices, checkout URLs, samples, categories, public copy, or visibility strategy:
+
+- Think GEO first: prioritize extractable facts, direct answers, entity clarity, schema, citations, and machine-readable sources over keyword-stuffed SEO pages.
+- Do not assume "more pages" is the right move. Add a page only when it gives LLMs a self-contained answer to a real user question, with useful Q&A passages and links to canonical facts.
+- Keep canonical facts synchronized across `/api/facts`, `/api/facts/[slug]`, `/[slug].md`, `/llms.txt`, `/llms-full.txt`, sitemap, robots, JSON-LD, and product pages.
+- Structure GEO content with question-like headings, 40-100 word atomic answer paragraphs, FAQPage/WebPage/Product schema where relevant, and concrete facts such as card counts, prices, checkout provider, format, and audience.
+- Keep `/llms.txt` curated, not exhaustive: list high-signal product, intent, facts, markdown, and catalog URLs with one-line descriptions.
+- Include `/llms-full.txt` in sitemap and link it from `/llms.txt` as the one-shot catalog bundle for agents.
+- Ensure robots allow AI crawlers and that important GEO assets are crawlable without client-side interaction.
+- Add or update tests that prove changed facts and visibility pages are exposed through LLM-visible sources, not only rendered visually.
+- Preserve stable slugs unless the user explicitly asks to change URLs.
+- Prefer consistent product titles that include exam/skill, "Anki Deck", card count, and product type.
+- Position "English for [native language] Speakers" decks as IELTS / TOEFL preparation entry points for non-native English learners. Titles, direct answers, audience copy, FAQs, intent pages, and `/llms-full.txt` facts should connect them to IELTS vocabulary, TOEFL vocabulary, academic English, and exam readiness rather than generic English vocabulary only.
+
+## Sample cards and audio (Prep2Go language decks)
+
+- Never use shop **cover images** or pseudo-samples like "What is included in X?" when real preview cards exist on `prep2go.study/shop`.
+- Source sample cards from `src/data/shop-preview-samples.json` + `public/shop-preview-media/` via `src/lib/prep2go-shop-samples.ts` — same data as `/shop/preview/{slug}` in the CIPLE/Prep2Go project.
+- Each mapped Lemon deck must expose **3 real sample cards** with correct question/answer text, preview images, and audio URLs where the shop provides them.
+- Phrase decks: audio is required; image may be absent (text-only preview is OK).
+- Spanish + Italian paired deck: include both `audioUrlEs` and `audioUrlIt`.
+- Grammar decks: use article visuals from `public/samples/prep2go-grammar/`.
+- Finance/Gumroad decks: use actual Gumroad preview screenshots, not invented card text.
+- Only products without shop previews (e.g. printable PDF) may fall back to a single cover sample.
+
+## Mandatory verification before claiming LLM visibility is done
+
+Do not say LLM/GEO work is complete until all of the following pass:
+
+1. **Tests**: `npm test` green, including `prep2go-shop-samples.test.ts`, `llm-docs.test.ts`, and deck catalog tests.
+2. **Catalog sync**: every `availableDecks` entry appears in `/api/facts`, `/llms.txt`, `/llms-full.txt`, and its `/[slug].md` with matching title, price, card count, checkout URL, and sample cards.
+3. **Sample integrity**: no deck with shop preview mapping has cover-only or placeholder samples; spot-check at least one IELTS/TOEFL deck, one citizenship deck, and one finance deck in `/api/facts/[slug]`.
+4. **Intent pages**: language intent page lists all language decks and current IELTS/TOEFL positioning — not a stale subset.
+5. **Production spot-check** (after deploy): curl or fetch `200` for `/llms.txt`, `/llms-full.txt`, `/api/facts`, and changed `/api/facts/[slug]`; confirm sample `imageUrl`/`audioUrl` are absolute and load.
+6. **Sitemap**: `/llms.txt`, `/llms-full.txt`, all deck pages, and all `/*.md` documents are listed.
+
+If any check fails, fix before deploy and re-verify.

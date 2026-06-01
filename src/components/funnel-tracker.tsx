@@ -2,6 +2,11 @@
 
 import { useEffect } from "react";
 import type { FunnelEventName } from "@/lib/analytics";
+import {
+  FUNNEL_EXCLUDE_QUERY,
+  FUNNEL_EXCLUDE_STORAGE_KEY,
+  FUNNEL_INCLUDE_QUERY,
+} from "@/lib/funnel-exclude";
 
 type FunnelTrackerProps = {
   deckSlug: string;
@@ -18,12 +23,62 @@ type TrackEventInput = {
   source?: string;
 };
 
+function isFunnelExcluded() {
+  if (typeof window === "undefined") {
+    return false;
+  }
+
+  if (window.location.search.includes(FUNNEL_INCLUDE_QUERY)) {
+    window.localStorage.removeItem(FUNNEL_EXCLUDE_STORAGE_KEY);
+    return false;
+  }
+
+  if (window.location.search.includes(FUNNEL_EXCLUDE_QUERY)) {
+    window.localStorage.setItem(FUNNEL_EXCLUDE_STORAGE_KEY, "1");
+    return true;
+  }
+
+  if (window.localStorage.getItem(FUNNEL_EXCLUDE_STORAGE_KEY) === "1") {
+    return true;
+  }
+
+  const hostname = window.location.hostname.toLowerCase();
+
+  return (
+    hostname === "localhost" ||
+    hostname === "127.0.0.1" ||
+    hostname.endsWith(".local")
+  );
+}
+
+function sendCheckoutClickEvent(payload: Record<string, unknown>) {
+  void fetch("/api/events", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+    keepalive: true,
+  });
+}
+
 export function trackFunnelEvent(input: TrackEventInput) {
+  const excluded = isFunnelExcluded();
   const payload = {
     ...input,
     path: window.location.pathname,
     referrer: document.referrer,
+    internal: false,
   };
+
+  if (input.name === "checkout_click") {
+    sendCheckoutClickEvent(payload);
+    return;
+  }
+
+  if (excluded) {
+    return;
+  }
 
   const body = JSON.stringify(payload);
 
@@ -61,7 +116,7 @@ export function FunnelTracker({
 
           if (eventName && entry.isIntersecting && !seen.has(eventName)) {
             seen.add(eventName);
-            trackFunnelEvent({ name: eventName, deckSlug, source: "section_view" });
+            trackFunnelEvent({ name: eventName, deckSlug, source });
           }
         });
       },

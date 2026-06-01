@@ -1,7 +1,12 @@
+import { getPricedDecks } from "@/lib/checkout-pricing";
 import { buildLlmsTxt } from "@/lib/llm-docs";
 
-export function GET() {
-  return new Response(buildLlmsTxt(), {
+export const revalidate = 3600;
+
+export async function GET() {
+  const decks = await getPricedDecks();
+
+  return new Response(buildLlmsTxt(decks), {
     headers: {
       "Cache-Control": "public, max-age=3600, s-maxage=86400",
       "Content-Type": "text/plain; charset=utf-8",

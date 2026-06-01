@@ -1,8 +1,13 @@
-import type { FunnelEvent, FunnelEventName } from "./analytics";
-import { funnelEventNames } from "./analytics";
+import type { FunnelEvent } from "./analytics";
+import {
+  aggregateFromCountMaps,
+  applyEventToAggregate,
+  emptyAggregate,
+  type FunnelAggregate,
+} from "./funnel-aggregates";
 import { getRedisClient } from "./redis";
 
-const MAX_RECENT_EVENTS = 25;
+const MAX_RECENT_EVENTS = 100;
 
 const KEYS = {
   total: "funnel:total",
@@ -14,69 +19,88 @@ const KEYS = {
   recent: "funnel:recent",
 } as const;
 
+const LIFETIME_KEYS = {
+  total: "funnel:lifetime:total",
+  byEvent: "funnel:lifetime:byEvent",
+  byDeck: "funnel:lifetime:byDeck",
+  bySource: "funnel:lifetime:bySource",
+  startedAt: "funnel:lifetime:startedAt",
+  updatedAt: "funnel:lifetime:updatedAt",
+} as const;
+
 type FunnelStatsState = {
-  events: FunnelEvent[];
+  current: FunnelAggregate;
+  lifetime: FunnelAggregate;
+  recentEvents: FunnelEvent[];
 };
 
 type GlobalWithFunnelStats = typeof globalThis & {
   __uniprep2goFunnelStats?: FunnelStatsState;
 };
 
-export type FunnelStats = {
-  totalEvents: number;
-  byEvent: Record<FunnelEventName, number>;
-  byDeck: Record<string, number>;
-  bySource: Record<string, number>;
+export type FunnelStats = FunnelAggregate & {
   recentEvents: FunnelEvent[];
-  startedAt?: string;
-  updatedAt?: string;
+  lifetime: FunnelAggregate;
   storage: "redis" | "memory";
 };
-
-function emptyByEvent() {
-  return Object.fromEntries(funnelEventNames.map((name) => [name, 0])) as Record<
-    FunnelEventName,
-    number
-  >;
-}
 
 function getMemoryState() {
   const globalStore = globalThis as GlobalWithFunnelStats;
 
   if (!globalStore.__uniprep2goFunnelStats) {
-    globalStore.__uniprep2goFunnelStats = { events: [] };
+    globalStore.__uniprep2goFunnelStats = {
+      current: emptyAggregate(),
+      lifetime: emptyAggregate(),
+      recentEvents: [],
+    };
   }
 
   return globalStore.__uniprep2goFunnelStats;
 }
 
-export async function recordFunnelEvent(event: FunnelEvent) {
-  const client = getRedisClient();
+function appendRecentEvent(state: FunnelStatsState, event: FunnelEvent) {
+  state.recentEvents.unshift(event);
+  state.recentEvents = state.recentEvents.slice(0, MAX_RECENT_EVENTS);
+}
 
-  if (!client) {
-    getMemoryState().events.push(event);
-    return;
+function incrementAggregatePipeline(
+  pipeline: ReturnType<NonNullable<ReturnType<typeof getRedisClient>>["pipeline"]>,
+  keys: typeof KEYS | typeof LIFETIME_KEYS,
+  event: FunnelEvent,
+) {
+  pipeline.incr(keys.total);
+  pipeline.hincrby(keys.byEvent, event.name, 1);
+  pipeline.hincrby(keys.byDeck, event.deckSlug, 1);
+
+  if (event.source) {
+    pipeline.hincrby(keys.bySource, event.source, 1);
   }
 
-  try {
-    const pipeline = client.pipeline();
-    pipeline.incr(KEYS.total);
-    pipeline.hincrby(KEYS.byEvent, event.name, 1);
-    pipeline.hincrby(KEYS.byDeck, event.deckSlug, 1);
+  pipeline.set(keys.startedAt, event.occurredAt, { nx: true });
+  pipeline.set(keys.updatedAt, event.occurredAt);
+}
 
-    if (event.source) {
-      pipeline.hincrby(KEYS.bySource, event.source, 1);
-    }
+async function readAggregate(
+  client: NonNullable<ReturnType<typeof getRedisClient>>,
+  keys: typeof KEYS | typeof LIFETIME_KEYS,
+): Promise<FunnelAggregate> {
+  const [total, byEventRaw, byDeckRaw, bySourceRaw, startedAt, updatedAt] = await Promise.all([
+    client.get<number>(keys.total),
+    client.hgetall<Record<string, unknown>>(keys.byEvent),
+    client.hgetall<Record<string, unknown>>(keys.byDeck),
+    client.hgetall<Record<string, unknown>>(keys.bySource),
+    client.get<string>(keys.startedAt),
+    client.get<string>(keys.updatedAt),
+  ]);
 
-    pipeline.set(KEYS.startedAt, event.occurredAt, { nx: true });
-    pipeline.set(KEYS.updatedAt, event.occurredAt);
-    pipeline.lpush(KEYS.recent, JSON.stringify(event));
-    pipeline.ltrim(KEYS.recent, 0, MAX_RECENT_EVENTS - 1);
-
-    await pipeline.exec();
-  } catch (error) {
-    console.error("[funnel_store] failed to persist event", error);
-  }
+  return aggregateFromCountMaps({
+    total: Number(total) || 0,
+    byEventRaw,
+    byDeckRaw,
+    bySourceRaw,
+    startedAt: startedAt ?? undefined,
+    updatedAt: updatedAt ?? undefined,
+  });
 }
 
 function parseRecent(entries: unknown[]): FunnelEvent[] {
@@ -95,45 +119,82 @@ function parseRecent(entries: unknown[]): FunnelEvent[] {
     .filter((entry): entry is FunnelEvent => entry !== null);
 }
 
-function toCountMap(raw: Record<string, unknown> | null): Record<string, number> {
-  const result: Record<string, number> = {};
-
-  if (!raw) {
-    return result;
-  }
-
-  for (const [key, value] of Object.entries(raw)) {
-    result[key] = Number(value) || 0;
-  }
-
-  return result;
-}
-
 function computeMemoryStats(): FunnelStats {
-  const events = getMemoryState().events;
-  const byEvent = emptyByEvent();
-  const byDeck: Record<string, number> = {};
-  const bySource: Record<string, number> = {};
-
-  events.forEach((event) => {
-    byEvent[event.name] += 1;
-    byDeck[event.deckSlug] = (byDeck[event.deckSlug] ?? 0) + 1;
-
-    if (event.source) {
-      bySource[event.source] = (bySource[event.source] ?? 0) + 1;
-    }
-  });
+  const state = getMemoryState();
 
   return {
-    totalEvents: events.length,
-    byEvent,
-    byDeck,
-    bySource,
-    recentEvents: events.slice(-MAX_RECENT_EVENTS).reverse(),
-    startedAt: events[0]?.occurredAt,
-    updatedAt: events.at(-1)?.occurredAt,
+    ...state.current,
+    recentEvents: [...state.recentEvents],
+    lifetime: { ...state.lifetime },
     storage: "memory",
   };
+}
+
+export async function recordFunnelEvent(event: FunnelEvent) {
+  const client = getRedisClient();
+
+  if (!client) {
+    const state = getMemoryState();
+    applyEventToAggregate(state.current, event);
+    applyEventToAggregate(state.lifetime, event);
+    appendRecentEvent(state, event);
+    return;
+  }
+
+  try {
+    const pipeline = client.pipeline();
+    incrementAggregatePipeline(pipeline, KEYS, event);
+    incrementAggregatePipeline(pipeline, LIFETIME_KEYS, event);
+    pipeline.lpush(KEYS.recent, JSON.stringify(event));
+    pipeline.ltrim(KEYS.recent, 0, MAX_RECENT_EVENTS - 1);
+    await pipeline.exec();
+  } catch (error) {
+    console.error("[funnel_store] failed to persist event", error);
+  }
+}
+
+async function backfillLifetimeFromCurrent(client: NonNullable<ReturnType<typeof getRedisClient>>) {
+  const [currentTotal, lifetimeTotal] = await Promise.all([
+    client.get<number>(KEYS.total),
+    client.get<number>(LIFETIME_KEYS.total),
+  ]);
+
+  if (Number(lifetimeTotal) > 0 || Number(currentTotal) <= 0) {
+    return;
+  }
+
+  const [byEvent, byDeck, bySource, startedAt, updatedAt] = await Promise.all([
+    client.hgetall<Record<string, string>>(KEYS.byEvent),
+    client.hgetall<Record<string, string>>(KEYS.byDeck),
+    client.hgetall<Record<string, string>>(KEYS.bySource),
+    client.get<string>(KEYS.startedAt),
+    client.get<string>(KEYS.updatedAt),
+  ]);
+
+  const pipeline = client.pipeline();
+  pipeline.set(LIFETIME_KEYS.total, String(currentTotal ?? 0));
+
+  for (const [key, value] of Object.entries(byEvent ?? {})) {
+    pipeline.hset(LIFETIME_KEYS.byEvent, { [key]: value });
+  }
+
+  for (const [key, value] of Object.entries(byDeck ?? {})) {
+    pipeline.hset(LIFETIME_KEYS.byDeck, { [key]: value });
+  }
+
+  for (const [key, value] of Object.entries(bySource ?? {})) {
+    pipeline.hset(LIFETIME_KEYS.bySource, { [key]: value });
+  }
+
+  if (startedAt) {
+    pipeline.set(LIFETIME_KEYS.startedAt, startedAt);
+  }
+
+  if (updatedAt) {
+    pipeline.set(LIFETIME_KEYS.updatedAt, updatedAt);
+  }
+
+  await pipeline.exec();
 }
 
 export async function getFunnelStats(): Promise<FunnelStats> {
@@ -144,32 +205,18 @@ export async function getFunnelStats(): Promise<FunnelStats> {
   }
 
   try {
-    const [total, byEventRaw, byDeckRaw, bySourceRaw, startedAt, updatedAt, recentRaw] =
-      await Promise.all([
-        client.get<number>(KEYS.total),
-        client.hgetall<Record<string, unknown>>(KEYS.byEvent),
-        client.hgetall<Record<string, unknown>>(KEYS.byDeck),
-        client.hgetall<Record<string, unknown>>(KEYS.bySource),
-        client.get<string>(KEYS.startedAt),
-        client.get<string>(KEYS.updatedAt),
-        client.lrange(KEYS.recent, 0, MAX_RECENT_EVENTS - 1),
-      ]);
+    await backfillLifetimeFromCurrent(client);
 
-    const byEvent = emptyByEvent();
-    const byEventCounts = toCountMap(byEventRaw);
-
-    for (const name of funnelEventNames) {
-      byEvent[name] = byEventCounts[name] ?? 0;
-    }
+    const [current, lifetime, recentRaw] = await Promise.all([
+      readAggregate(client, KEYS),
+      readAggregate(client, LIFETIME_KEYS),
+      client.lrange(KEYS.recent, 0, MAX_RECENT_EVENTS - 1),
+    ]);
 
     return {
-      totalEvents: Number(total) || 0,
-      byEvent,
-      byDeck: toCountMap(byDeckRaw),
-      bySource: toCountMap(bySourceRaw),
+      ...current,
       recentEvents: parseRecent(recentRaw ?? []),
-      startedAt: startedAt ?? undefined,
-      updatedAt: updatedAt ?? undefined,
+      lifetime,
       storage: "redis",
     };
   } catch (error) {
@@ -182,7 +229,9 @@ export async function resetFunnelStats() {
   const client = getRedisClient();
 
   if (!client) {
-    getMemoryState().events = [];
+    const state = getMemoryState();
+    state.current = emptyAggregate();
+    state.recentEvents = [];
     return;
   }
 

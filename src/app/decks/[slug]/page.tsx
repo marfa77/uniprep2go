@@ -5,11 +5,14 @@ import { notFound } from "next/navigation";
 import { FunnelTracker, TrackedCheckoutLink } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { availableDecks, categoryLabels, getAvailableDeckBySlug } from "@/lib/decks";
+import { catalogAvailableDecks, categoryLabels } from "@/lib/decks";
+import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
+export const revalidate = 3600;
+
 export function generateStaticParams() {
-  return availableDecks.map((deck) => ({ slug: deck.slug }));
+  return catalogAvailableDecks.map((deck) => ({ slug: deck.slug }));
 }
 
 export async function generateMetadata({
@@ -18,7 +21,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const deck = getAvailableDeckBySlug(slug);
+  const deck = await getPricedDeckBySlug(slug);
 
   if (!deck) {
     return { title: "Deck not found" };
@@ -39,13 +42,13 @@ export default async function DeckPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const deck = getAvailableDeckBySlug(slug);
+  const deck = await getPricedDeckBySlug(slug);
 
   if (!deck) {
     notFound();
   }
 
-  const priceLabel = `$${deck.price.amount} ${deck.price.currency}`;
+  const priceLabel = formatDeckPriceLabel(deck);
 
   const sectionEvents = [
     { selector: "#facts", name: "product_facts_view" as const },
@@ -64,14 +67,17 @@ export default async function DeckPage({
         description: deck.directAnswer,
         category: categoryLabels[deck.category],
         url: `${siteConfig.url}/decks/${deck.slug}`,
-        image: deck.sampleCards.map((card) => absoluteUrl(card.imageUrl)),
+        image: deck.sampleCards
+          .filter((card) => card.imageUrl)
+          .map((card) => absoluteUrl(card.imageUrl)),
         brand: { "@type": "Brand", name: siteConfig.name },
         offers: {
           "@type": "Offer",
           url: deck.checkoutUrl,
           availability: "https://schema.org/InStock",
-          price: deck.price.amount,
-          priceCurrency: deck.price.currency,
+          ...(deck.price.amount > 0
+            ? { price: deck.price.amount, priceCurrency: deck.price.currency }
+            : {}),
           seller: { "@type": "Organization", name: deck.checkoutSeller },
         },
       },
@@ -187,18 +193,49 @@ export default async function DeckPage({
               {deck.sampleCards.map((card) => (
                 <article
                   className="overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#18140f]"
-                  key={card.imageUrl}
+                  key={`${card.question}-${card.imageUrl}-${card.audioUrl ?? ""}`}
                 >
-                  <Image
-                    alt={`Sample Anki card: ${card.question}`}
-                    className="h-auto w-full"
-                    height={550}
-                    src={card.imageUrl}
-                    width={976}
-                  />
+                  {card.imageUrl ? (
+                    <Image
+                      alt={`Sample Anki card: ${card.question}`}
+                      className="h-auto w-full"
+                      height={550}
+                      src={card.imageUrl}
+                      width={976}
+                    />
+                  ) : (
+                    <div className="flex min-h-48 items-center justify-center bg-gradient-to-br from-[#f4dccf] via-[#fff8f0] to-[#f6efe8] px-6 py-10 text-center">
+                      <p className="text-2xl font-semibold text-[#18140f]">{card.question}</p>
+                    </div>
+                  )}
                   <div className="border-t border-white/10 bg-[#fffaf0] p-5">
                     <h3 className="font-semibold">{card.question}</h3>
                     <p className="mt-2 text-sm leading-6 text-[#5f5749]">{card.answer}</p>
+                    {card.audioUrl ? (
+                      <audio controls preload="metadata" src={card.audioUrl} className="mt-4 h-10 w-full">
+                        Your browser does not support the audio element.
+                      </audio>
+                    ) : null}
+                    {card.audioUrlEs ? (
+                      <div className="mt-4 space-y-2">
+                        <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#8a7d68]">
+                          Spanish audio
+                        </p>
+                        <audio controls preload="metadata" src={card.audioUrlEs} className="h-10 w-full">
+                          Your browser does not support the audio element.
+                        </audio>
+                      </div>
+                    ) : null}
+                    {card.audioUrlIt ? (
+                      <div className="mt-4 space-y-2">
+                        <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#8a7d68]">
+                          Italian audio
+                        </p>
+                        <audio controls preload="metadata" src={card.audioUrlIt} className="h-10 w-full">
+                          Your browser does not support the audio element.
+                        </audio>
+                      </div>
+                    ) : null}
                   </div>
                 </article>
               ))}

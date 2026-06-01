@@ -1,16 +1,56 @@
 import { parseFunnelEvent } from "@/lib/analytics";
+import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
+import { getCatalogDeckBySlug } from "@/lib/decks";
+import { shouldRecordFunnelEvent } from "@/lib/funnel-filter";
 import { recordFunnelEvent } from "@/lib/funnel-store";
+import { notifyCheckoutClick } from "@/lib/telegram-notify";
+
+async function parseEventPayload(request: Request) {
+  const contentType = request.headers.get("content-type") ?? "";
+
+  if (contentType.includes("application/json")) {
+    return request.json();
+  }
+
+  const text = await request.text();
+
+  if (!text) {
+    throw new Error("Funnel event payload is empty");
+  }
+
+  return JSON.parse(text) as unknown;
+}
 
 export async function POST(request: Request) {
   try {
-    const payload = await request.json();
+    const payload = await parseEventPayload(request);
     const event = parseFunnelEvent({
       ...payload,
       userAgent: request.headers.get("user-agent") ?? undefined,
     });
 
-    console.info("[funnel_event]", JSON.stringify(event));
-    await recordFunnelEvent(event);
+    if (event.name === "checkout_click") {
+      const deck =
+        (await getPricedDeckBySlug(event.deckSlug)) ?? getCatalogDeckBySlug(event.deckSlug);
+
+      try {
+        const sent = await notifyCheckoutClick(event, deck);
+
+        if (!sent) {
+          console.warn("[telegram_notify] checkout alert not sent", {
+            deckSlug: event.deckSlug,
+            source: event.source,
+          });
+        }
+      } catch (error) {
+        console.error("[telegram_notify] checkout alert failed", error);
+      }
+    }
+
+    if (shouldRecordFunnelEvent(event, request)) {
+      console.info("[funnel_event]", JSON.stringify(event));
+      await recordFunnelEvent(event);
+    }
 
     return new Response(null, { status: 204 });
   } catch (error) {

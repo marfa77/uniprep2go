@@ -1,8 +1,11 @@
-import { availableDecks, getAvailableDeckBySlug } from "@/lib/decks";
+import { catalogAvailableDecks } from "@/lib/decks";
+import { getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import { buildDeckFacts } from "@/lib/llm-docs";
 
+export const revalidate = 3600;
+
 export function generateStaticParams() {
-  return availableDecks.map((deck) => ({ slug: deck.slug }));
+  return catalogAvailableDecks.map((deck) => ({ slug: deck.slug }));
 }
 
 export async function GET(
@@ -10,7 +13,7 @@ export async function GET(
   { params }: { params: Promise<{ slug: string }> },
 ) {
   const { slug } = await params;
-  const deck = getAvailableDeckBySlug(slug);
+  const deck = await getPricedDeckBySlug(slug);
 
   if (!deck) {
     return Response.json({ error: "Deck not found" }, { status: 404 });

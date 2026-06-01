@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
-import { availableDecks } from "@/lib/decks";
-import { siteConfig } from "@/lib/site";
+import { availableDecks } from "../lib/decks";
+import { intentPages } from "../lib/intent-pages";
+import { siteConfig } from "../lib/site";
 
 const siteUrl = siteConfig.url;
 
@@ -19,6 +20,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified,
     changeFrequency: "monthly" as const,
     priority: 0.85,
+  }));
+
+  const intentAnswerPages = intentPages.map((page) => ({
+    url: `${siteUrl}/${page.slug}`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
   }));
 
   return [
@@ -46,6 +54,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.95,
     },
+    {
+      url: `${siteUrl}/llms-full.txt`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
+    ...intentAnswerPages,
     ...deckPages,
     ...deckDocuments,
     {

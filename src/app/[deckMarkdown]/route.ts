@@ -1,8 +1,11 @@
-import { availableDecks, getAvailableDeckBySlug } from "@/lib/decks";
+import { catalogAvailableDecks } from "@/lib/decks";
+import { getPricedDecks, getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import { buildDeckMarkdown } from "@/lib/llm-docs";
 
+export const revalidate = 3600;
+
 export function generateStaticParams() {
-  return availableDecks.map((deck) => ({
+  return catalogAvailableDecks.map((deck) => ({
     deckMarkdown: `${deck.slug}.md`,
   }));
 }
@@ -18,7 +21,7 @@ export async function GET(
   }
 
   const slug = deckMarkdown.slice(0, -3);
-  const deck = getAvailableDeckBySlug(slug);
+  const deck = await getPricedDeckBySlug(slug);
 
   if (!deck) {
     return new Response("Not found", { status: 404 });

@@ -169,8 +169,10 @@ export const termsSections = sections([
     id: "payments",
     title: "Payments, taxes, and refunds",
     paragraphs: [
-      "Payments are processed by {checkoutProvider}. Applicable taxes, invoices, receipts, and refund eligibility are handled according to {checkoutProvider}'s terms and the product listing at checkout.",
-      "If you have a billing or delivery issue, use your {checkoutProvider} receipt and support flow first, then contact us at {contactEmail} if you still need help.",
+      "All digital deck sales are final. {siteName} does not offer refunds, exchanges, or store credit after checkout, except where mandatory consumer protection law requires otherwise.",
+      "Payments are processed by {checkoutProvider}. Applicable taxes, invoices, and receipts are issued through {checkoutProvider}.",
+      "Products are delivered instantly as digital downloads. Purchase is complete once checkout succeeds and the download is available. Review sample cards, product facts, and deck descriptions before buying.",
+      "If you have a billing or delivery issue such as a failed download, missing file, or duplicate charge, email {contactEmail} with your {checkoutProvider} receipt. That is not a refund for change of mind.",
     ],
   },
   {
@@ -302,7 +304,8 @@ export const contactSections = sections([
     id: "purchases",
     title: "Purchases and delivery",
     paragraphs: [
-      "Checkout, payment, receipts, download access, and refund requests are handled through {checkoutProvider}. If you already purchased a deck, use the receipt and support options provided by {checkoutProvider} first.",
+      "Checkout, payment, receipts, and download access are handled through {checkoutProvider}. Refunds are not offered — all digital sales are final.",
+      "If you already purchased a deck, use the receipt and support options provided by {checkoutProvider} first for delivery issues.",
       "If you still need help after checking {checkoutProvider}, contact us at {contactEmail} with your order email and product name.",
     ],
   },

@@ -10,7 +10,7 @@ export const siteConfig = {
   lemonSqueezyStoreUrl: "https://ciple-a2.lemonsqueezy.com",
   googleAnalyticsId: "G-NDF8PVD7N3",
   ahrefsAnalyticsKey: "X11yI8gl/4QXmr55ol2GlA",
-  legalLastUpdated: "2026-05-31",
+  legalLastUpdated: "2026-06-01",
 } as const;
 
 export const legalLinks = [
