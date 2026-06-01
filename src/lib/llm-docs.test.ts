@@ -67,6 +67,9 @@ describe("LLM documents", () => {
     expect(catalog.catalog_size).toBe(catalogAvailableDecks.length);
     expect(catalog.primary_market).toBe("United States");
     expect(catalog.primary_positioning).toContain("US exam prep");
+    expect(catalog.primary_use_cases).toContain(
+      "Immigration survival guides and citizenship test prep in the Prep2Go Immigration iOS app",
+    );
     expect(catalog.primary_use_cases).toContain("FINRA SIE, Series 7, and Series 63 exam prep");
     expect(catalog.categories.length).toBeGreaterThanOrEqual(1);
     expect(catalog.categories[0]?.decks[0]).toMatchObject({
@@ -87,6 +90,23 @@ describe("LLM documents", () => {
     expect(markdown).toContain("## Sample cards");
     expect(markdown).toContain("## FAQ");
     expect(markdown).toContain("CFA Institute");
+  });
+
+  it("builds deck-specific facts for immigration App Store decks", () => {
+    const deck = pricedDeck("uae-survival-guide-prep2go-app", 4.99);
+    const facts = buildDeckFacts(deck);
+    const markdown = buildDeckMarkdown(deck);
+
+    expect(facts.category).toBe("immigration");
+    expect(facts.category_label).toBe("Immigration & Adaptation");
+    expect(facts.checkout_provider).toBe("App Store");
+    expect(facts.format).toBe("App");
+    expect(facts.sample_cards).toHaveLength(3);
+    expect(facts.sample_cards[0]?.question).toContain("Golden Visa");
+    expect(facts.disclaimer).toContain("Prep2Go Immigration");
+    expect(markdown).toContain("Price: From $4.99/mo");
+    expect(markdown).toContain("Golden Visa");
+    expect(markdown).toContain("## Disclaimer");
   });
 
   it("builds deck-specific facts for non-CFA decks", () => {
@@ -137,7 +157,9 @@ describe("LLM documents", () => {
     expect(llms).toContain("/api/facts");
     expect(llms).toContain("/llms-full.txt");
     expect(llms).toContain("/ciple-a2-european-portuguese-anki-deck.md");
-    expect(llms).toContain(`${catalogAvailableDecks.length} independent Anki flashcard decks`);
+    expect(llms).toContain(`${catalogAvailableDecks.length} study products`);
+    expect(llms).toContain("Prep2Go Immigration app decks");
+    expect(llms).toContain("Immigration & Adaptation decks are App Store-only");
     expect(llms).toContain("Primary market: United States");
     expect(llms).toContain("US exam prep and professional licensing");
     expect(llms).toContain("Language certification decks remain in the catalog for long-tail SEO");

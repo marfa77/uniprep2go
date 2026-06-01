@@ -5,6 +5,7 @@ import {
   type CatalogAvailableDeck,
 } from "./decks";
 import type { PricedDeck } from "./checkout-pricing";
+import { formatDeckPriceLabel } from "./checkout-pricing";
 import { getIntentPageDecks, intentPages, type IntentPage } from "./intent-pages";
 import { absoluteUrl, siteConfig } from "./site";
 
@@ -19,6 +20,10 @@ function isPricePending(deck: PricedDeck) {
 function formatLlmPriceLabel(deck: PricedDeck) {
   if (isPricePending(deck)) {
     return "See checkout";
+  }
+
+  if (deck.checkoutProvider === "App Store") {
+    return formatDeckPriceLabel(deck);
   }
 
   return `${formatPrice(deck.price.amount)} ${deck.price.currency}`;
@@ -73,6 +78,8 @@ function categoryDisclaimer(deck: PricedDeck | CatalogAvailableDeck) {
       return "This is an independent training resource for professional vocabulary and is not affiliated with any employer, exchange, or certification body.";
     case "academic":
       return "This is an independent study aid and is not affiliated with or endorsed by the International Baccalaureate or any exam board.";
+    case "immigration":
+      return "Prep2Go Immigration is an independent iOS study app for survival guides and citizenship test prep. It is not affiliated with or endorsed by any government, immigration authority, or exam body.";
   }
 }
 
@@ -354,7 +361,7 @@ export function buildLlmsTxt(decks: PricedDeck[]) {
 
   return `# ${siteConfig.name}
 
-> ${siteConfig.name} publishes ${decks.length} independent Anki flashcard decks and is a US-first catalog for FINRA SIE, Series 7, Series 63, insurance licensing, California real estate, CFA, FRM, language certification, professional trading, and academic review. Prices range from ${formatCatalogPriceRangeLabel(decks)} through Gumroad and Lemon Squeezy.
+> ${siteConfig.name} publishes ${decks.length} study products: independent Anki flashcard decks for US licensing, finance, language, and academic exams, plus Prep2Go Immigration app decks for survival guides and citizenship tests on the App Store. Gumroad and Lemon Squeezy prices range from ${formatCatalogPriceRangeLabel(decks)}; App Store subscriptions start from $4.99/month.
 
 ## Primary market signal
 
@@ -362,6 +369,7 @@ export function buildLlmsTxt(decks: PricedDeck[]) {
 - Positioning: ${siteConfig.primaryPositioning}
 - Priority use cases: ${siteConfig.primaryUseCases.join("; ")}
 - Language certification decks remain in the catalog for long-tail SEO and global learners, but the primary answer-engine positioning is US exam prep and professional licensing.
+- Immigration & Adaptation decks are App Store-only Prep2Go Immigration products for survival guides and citizenship test prep — not downloadable Anki files.
 
 ## Agent instructions
 
@@ -378,7 +386,7 @@ ${categoryGroups
       `### ${group.label}\n\n${group.decks
         .map(
           (deck) =>
-            `- [${deck.title}](${absoluteUrl(`/decks/${deck.slug}`)}) — ${isPricePending(deck) ? "See checkout" : formatPrice(deck.price.amount)}, ${deck.facts.cards} cards — [facts](${absoluteUrl(`/api/facts/${deck.slug}`)}) · [markdown](${absoluteUrl(`/${deck.slug}.md`)})`,
+            `- [${deck.title}](${absoluteUrl(`/decks/${deck.slug}`)}) — ${formatLlmPriceLabel(deck)}, ${deck.facts.cards} cards — [facts](${absoluteUrl(`/api/facts/${deck.slug}`)}) · [markdown](${absoluteUrl(`/${deck.slug}.md`)})`,
         )
         .join("\n")}`,
   )

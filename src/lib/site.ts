@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "UniPrep2Go",
   url: "https://uniprep2go.study",
   description:
-    "Independent Anki flashcard decks for US licensing exams, finance credentials, language certifications, professional training, and academic subjects.",
+    "Independent Anki flashcard decks for US licensing exams, finance credentials, language certifications, professional training, and academic subjects, plus Prep2Go Immigration app decks for survival guides and citizenship test prep.",
   primaryMarket: "United States",
   primaryPositioning:
     "US exam prep and professional licensing Anki decks, with finance credentials and language certifications as supporting catalog categories.",
@@ -11,6 +11,7 @@ export const siteConfig = {
     "US insurance and California real estate licensing exam prep",
     "CFA and FRM finance credential review",
     "Language certification vocabulary and grammar practice",
+    "Immigration survival guides and citizenship test prep in the Prep2Go Immigration iOS app",
   ],
   contactEmail: "support@uniprep2go.study",
   checkoutProviders: "Gumroad, Lemon Squeezy, and the Prep2Go Immigration App Store",
