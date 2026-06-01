@@ -29,7 +29,7 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
         description: page.description,
         url: absoluteUrl(`/${page.slug}`),
         about: decks.map((deck) => ({
-          "@type": "Product",
+          "@type": "WebPage",
           name: deck.title,
           url: absoluteUrl(`/decks/${deck.slug}`),
         })),

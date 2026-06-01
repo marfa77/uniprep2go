@@ -9,6 +9,7 @@ import {
   primaryDeck,
   siteFaqs,
 } from "@/lib/decks";
+import { buildCatalogItemListJsonLd } from "@/lib/product-jsonld";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
 export const revalidate = 3600;
@@ -45,33 +46,7 @@ export default async function HomePage() {
           name: siteConfig.name,
         },
       },
-      {
-        "@type": "ItemList",
-        name: `${siteConfig.name} Anki deck catalog`,
-        numberOfItems: availableDecks.length,
-        itemListElement: availableDecks.map((deck, index) => ({
-          "@type": "ListItem",
-          position: index + 1,
-          item: {
-            "@type": "Product",
-            name: deck.title,
-            description: deck.directAnswer,
-            url: absoluteUrl(`/decks/${deck.slug}`),
-            brand: {
-              "@type": "Brand",
-              name: deck.checkoutSeller,
-            },
-            offers: {
-              "@type": "Offer",
-              price: deck.price.amount > 0 ? deck.price.amount : undefined,
-              priceCurrency: deck.price.amount > 0 ? deck.price.currency : undefined,
-              availability: "https://schema.org/InStock",
-              url: deck.checkoutUrl,
-              seller: { "@type": "Organization", name: deck.checkoutSeller },
-            },
-          },
-        })),
-      },
+      buildCatalogItemListJsonLd(availableDecks),
       {
         "@type": "FAQPage",
         mainEntity: siteFaqs.map((faq) => ({

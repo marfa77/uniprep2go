@@ -7,6 +7,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { catalogAvailableDecks, categoryLabels } from "@/lib/decks";
 import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
+import { buildProductJsonLd } from "@/lib/product-jsonld";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
 export const revalidate = 3600;
@@ -61,25 +62,9 @@ export default async function DeckPage({
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Product",
-        "@id": `${siteConfig.url}/decks/${deck.slug}#product`,
-        name: deck.title,
-        description: deck.directAnswer,
+        ...buildProductJsonLd(deck),
         category: categoryLabels[deck.category],
-        url: `${siteConfig.url}/decks/${deck.slug}`,
-        image: deck.sampleCards
-          .filter((card) => card.imageUrl)
-          .map((card) => absoluteUrl(card.imageUrl)),
         brand: { "@type": "Brand", name: siteConfig.name },
-        offers: {
-          "@type": "Offer",
-          url: deck.checkoutUrl,
-          availability: "https://schema.org/InStock",
-          ...(deck.price.amount > 0
-            ? { price: deck.price.amount, priceCurrency: deck.price.currency }
-            : {}),
-          seller: { "@type": "Organization", name: deck.checkoutSeller },
-        },
       },
       {
         "@type": "FAQPage",
