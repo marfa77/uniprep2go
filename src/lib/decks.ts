@@ -1575,6 +1575,79 @@ const rawDecks: Deck[] = [
       },
     ],
   },
+  {
+    slug: "servsafe-manager-complete-study-guide",
+    category: "professional",
+    status: "available",
+    title: "ServSafe Manager Complete Study Guide — PDF + 70 Practice Questions",
+    shortName: "ServSafe Manager Study Guide",
+    subtitle: "Printable ServSafe Manager PDF cram guide with practice questions and answer rationales.",
+    directAnswer:
+      "UniPrep2Go sells an independent ServSafe Manager Complete Study Guide PDF with an 18-page printable study guide, 2-page quick-reference cram sheet, 70 exam-style multiple-choice questions, complete answer rationales, a 7-day study plan, last-day checklist, and glossary. It is delivered as a printable PDF digital download for {PRICE} through Gumroad. The guide is an independent study aid and is not official ServSafe, National Restaurant Association, or FDA material.",
+    lastUpdated: "2026-06-02",
+    audience:
+      "First-time ServSafe Manager test takers, retesters, restaurant managers, and busy food service professionals who want a structured printable review system.",
+    format: "PDF",
+    coverImage: "/covers/servsafe-manager-complete-study-guide.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/lyvna",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "70 practice questions",
+      topics:
+        "ServSafe Manager study guide, quick-reference cram sheet, food safety domains, time and temperature control, hygiene, cross-contamination, allergens, HACCP, answer rationales, 7-day study plan, checklist, and glossary",
+      formulas: "Printable PDF review pages, exam-style practice questions, rationale-based explanations, and quick-reference food safety rules",
+      examYear: "Current ServSafe Manager food safety review",
+      delivery: "Printable PDF digital download through Gumroad",
+    },
+    topicCoverage: [
+      { name: "Printable Study Guide", examWeight: "18 pages", cards: "Domain-by-domain plain-English review" },
+      { name: "Quick-Reference Cram Sheet", examWeight: "2 pages", cards: "Temps, cooling, storage order, Big 6, and HACCP" },
+      { name: "Practice Questions", examWeight: "70 questions", cards: "Exam-style MCQs with answer rationales" },
+      { name: "Study Workflow", examWeight: "7-day plan", cards: "Last-day checklist and glossary" },
+    ],
+    sampleCards: [
+      {
+        question: "What does the ServSafe Manager PDF include?",
+        answer:
+          "An 18-page printable study guide, 2-page cram sheet, 70 practice questions with answer rationales, 7-day study plan, checklist, and glossary.",
+        imageUrl: "/samples/servsafe-manager-complete-study-guide-sample-1.webp",
+      },
+      {
+        question: "How is the guide meant to be used?",
+        answer:
+          "Use the printable review pages for quick domain study, then work through the 70 exam-style questions and read the rationale for each answer.",
+        imageUrl: "/samples/servsafe-manager-complete-study-guide-sample-2.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "What does the ServSafe Manager Complete Study Guide include?",
+        answer:
+          "It includes an 18-page printable PDF study guide, a 2-page quick-reference cram sheet, 70 exam-style multiple-choice questions, complete answer rationales, a 7-day study plan, last-day checklist, and glossary.",
+      },
+      {
+        question: "Is this an Anki deck?",
+        answer:
+          "No. This product is a printable PDF study guide and practice-question pack. The separate ServSafe Manager Anki Deck is available as a .apkg flashcard product.",
+      },
+      {
+        question: "Who is this PDF for?",
+        answer:
+          "It is for first-time ServSafe Manager test takers, retesters, restaurant managers, hospitality students, and busy food service professionals who want structured printable review.",
+      },
+      {
+        question: "Is this official ServSafe material?",
+        answer:
+          "No. This is an independent educational product and is not affiliated with, endorsed by, or sponsored by ServSafe, the National Restaurant Association, or the FDA.",
+      },
+      {
+        question: "Does this guarantee a passing score?",
+        answer:
+          "No. It is a supplementary study aid and does not guarantee an exam result. State and local food safety rules may vary.",
+      },
+    ],
+  },
 
   // ── Professional / Commodities ─────────────────────────────────────────
   {

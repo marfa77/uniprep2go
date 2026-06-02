@@ -78,6 +78,27 @@ describe("LLM documents", () => {
     expect(markdown).toContain("food safety");
   });
 
+  it("exposes the ServSafe Manager PDF guide as a printable practice product", () => {
+    const deck = pricedDeck("servsafe-manager-complete-study-guide", 11);
+    const facts = buildDeckFacts(deck);
+    const markdown = buildDeckMarkdown(deck);
+
+    expect(facts).toMatchObject({
+      slug: "servsafe-manager-complete-study-guide",
+      category: "professional",
+      card_count: "70 practice questions",
+      checkout_url: "https://pixidstudio.gumroad.com/l/lyvna",
+      checkout_provider: "Gumroad",
+      format: "PDF",
+      cover_image: "https://uniprep2go.study/covers/servsafe-manager-complete-study-guide.webp",
+    });
+    expect(facts.sample_cards).toHaveLength(2);
+    expect(markdown).toContain("ServSafe Manager Complete Study Guide");
+    expect(markdown).toContain("18-page printable PDF study guide");
+    expect(markdown).toContain("70 exam-style multiple-choice questions");
+  });
+
+
   it("uses absolute image URLs for sample cards", () => {
     const facts = buildDeckFacts(primaryPriced);
 

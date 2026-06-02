@@ -339,6 +339,28 @@ describe("deck catalog", () => {
     expect(servSafeDeck?.directAnswer).toContain("ServSafe Manager Anki deck");
   });
 
+  it("includes the ServSafe Manager PDF guide as a printable practice product", () => {
+    const servSafeGuide = getDeckBySlug("servsafe-manager-complete-study-guide");
+
+    expect(servSafeGuide?.status).toBe("available");
+    expect(servSafeGuide).toMatchObject({
+      category: "professional",
+      checkoutUrl: "https://pixidstudio.gumroad.com/l/lyvna",
+      checkoutProvider: "Gumroad",
+      checkoutSeller: "PixID Studio",
+      format: "PDF",
+      coverImage: "/covers/servsafe-manager-complete-study-guide.webp",
+    });
+    expect(servSafeGuide?.facts.cards).toBe("70 practice questions");
+    expect(servSafeGuide?.sampleCards).toHaveLength(2);
+    expect(servSafeGuide?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/servsafe-manager-complete-study-guide-sample-1.webp",
+      "/samples/servsafe-manager-complete-study-guide-sample-2.webp",
+    ]);
+    expect(servSafeGuide?.directAnswer).toContain("18-page printable study guide");
+    expect(servSafeGuide?.directAnswer).toContain("70 exam-style multiple-choice questions");
+  });
+
   it("uses three real sample previews for the IB Biology SL deck", () => {
     const biologyDeck = getDeckBySlug("ib-biology-sl-anki-deck");
 
@@ -430,6 +452,8 @@ describe("deck catalog", () => {
         "DELF B2 French Grammar Anki Deck — 200 Cards",
       "ib-biology-sl-anki-deck": "IB Biology SL Anki Deck — 149 Smart Flashcards",
       "servsafe-manager-anki-deck": "ServSafe Manager Anki Deck — 300 Food Safety Flashcards",
+      "servsafe-manager-complete-study-guide":
+        "ServSafe Manager Complete Study Guide — PDF + 70 Practice Questions",
       "bench-energy-metal-trader-anki-deck":
         "Metal Trader Anki Deck — 202 Commodity Flashcards",
       "bench-energy-oil-trader-anki-deck":

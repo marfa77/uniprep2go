@@ -37,6 +37,10 @@ function buildDeckSeoTitle(deck: Awaited<ReturnType<typeof getPricedDeckBySlug>>
     return "ServSafe Manager Anki Deck | 300 Cards + Free Practice Test";
   }
 
+  if (deck.slug === "servsafe-manager-complete-study-guide") {
+    return "ServSafe Manager Study Guide PDF | 70 Practice Questions";
+  }
+
   if (deck.slug === "series-7-anki-deck") {
     return "2026 Series 7 Top-Off Anki Deck | Suitability & Options";
   }
@@ -62,6 +66,10 @@ function buildDeckSeoDescription(deck: Awaited<ReturnType<typeof getPricedDeckBy
 
   if (deck.slug === "servsafe-manager-anki-deck") {
     return `${base} Covers ServSafe Manager food safety topics with a linked free 90-question practice test, 120-minute mock, and 75% target.`;
+  }
+
+  if (deck.slug === "servsafe-manager-complete-study-guide") {
+    return `${base} Includes an 18-page printable guide, 2-page cram sheet, 70 practice questions, rationales, 7-day plan, checklist, and glossary.`;
   }
 
   if (deck.slug === "series-7-anki-deck") {
