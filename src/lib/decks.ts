@@ -1659,6 +1659,86 @@ const rawDecks: Deck[] = [
       },
     ],
   },
+  {
+    slug: "ptcb-pharmacy-technician-anki-deck",
+    category: "professional",
+    status: "available",
+    title: "PTCB Pharmacy Technician Anki Deck — 300 High-Yield Flashcards",
+    shortName: "PTCB Pharmacy Technician",
+    subtitle: "Focused Anki deck for U.S. PTCE pharmacy technician exam prep.",
+    directAnswer:
+      "UniPrep2Go sells an independent PTCB Pharmacy Technician Anki deck with 300 high-yield flashcards covering top 200 drugs, brand/generic recall, drug classes, sig abbreviations, pharmacy math, DEA schedules, federal law, patient safety, and dispensing workflow. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck is a supplementary active-recall study aid for the PTCE and is not official PTCB, NHA, FDA, or DEA material.",
+    lastUpdated: "2026-06-02",
+    audience:
+      "Pharmacy technician candidates, pharmacy tech students, career changers preparing for the PTCE, and technicians who want daily brand/generic and sig-code recall on their phone.",
+    format: ".apkg",
+    coverImage: "/covers/ptcb-pharmacy-technician-anki-deck.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/yvifxh",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "300",
+      topics:
+        "PTCE pharmacy technician prep: top 200 drugs, brand/generic, drug classes, sig codes, pharmacy math, DEA schedules, HIPAA, recalls, patient safety, order entry, and inventory workflow",
+      formulas: "Brand/generic recall, sig abbreviations, days-supply math, DEA schedule rules, and high-alert safety concepts",
+      examYear: "Current U.S. PTCE / pharmacy technician review",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [
+      { name: "Top 200 Drugs", examWeight: "Core PTCE topic", cards: "Brand ↔ generic ↔ class with primary use" },
+      { name: "Sig Codes & Abbreviations", examWeight: "Core PTCE topic", cards: "Common U.S. pharmacy abbreviations" },
+      { name: "Pharmacy Math", examWeight: "Core PTCE topic", cards: "Days supply, conversions, alligation-style problems" },
+      { name: "Federal Law & Safety", examWeight: "Core PTCE topic", cards: "DEA schedules, HIPAA, recalls, high-alert safety" },
+      { name: "Order Entry & Inventory", examWeight: "Core PTCE topic", cards: "Dispensing workflow, labeling, handling basics" },
+    ],
+    sampleCards: [
+      {
+        question: "Prinivil — generic name, class, and primary use",
+        answer:
+          "Generic: Lisinopril. Class: ACE inhibitor. Primary use: hypertension and heart failure. Key note: dry cough is a common side effect.",
+        imageUrl: "/samples/ptcb-pharmacy-technician-anki-deck-sample-1.webp",
+      },
+      {
+        question: "Common brand names for Lisinopril",
+        answer:
+          "Prinivil and Zestril. Class: ACE inhibitor. Useful when the prescription uses the brand name but the pharmacy dispenses generic Lisinopril.",
+        imageUrl: "/samples/ptcb-pharmacy-technician-anki-deck-sample-2.webp",
+      },
+      {
+        question: "Norvasc — generic name, class, and primary use",
+        answer:
+          "Generic: Amlodipine. Class: CCB (dihydropyridine). Primary use: hypertension and angina. Key note: peripheral edema.",
+        imageUrl: "/samples/ptcb-pharmacy-technician-anki-deck-sample-3.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "What does the PTCB Pharmacy Technician deck include?",
+        answer:
+          "300 Anki flashcards covering top 200 drugs, sig codes, pharmacy math, DEA schedules, federal law, patient safety, and order-entry workflow, plus 2 legal intro cards and a READ_FIRST.txt file in the download folder.",
+      },
+      {
+        question: "Who is this deck for?",
+        answer:
+          "Pharmacy technician candidates preparing for the PTCE, pharmacy tech students, and technicians who want short daily recall sessions on brand/generic pairs, sig abbreviations, and exam math.",
+      },
+      {
+        question: "Is this official PTCB material?",
+        answer:
+          "No. This is an independent study aid and is not affiliated with, endorsed by, or sponsored by PTCB, the Pharmacy Technician Certification Board, NHA, FDA, or DEA.",
+      },
+      {
+        question: "Does this work for ExCPT / NHA too?",
+        answer:
+          "Many topics overlap U.S. pharmacy technician curricula, but the deck is written for PTCE-style prep. Verify your exam blueprint before relying on it as your only study source.",
+      },
+      {
+        question: "Does this guarantee a passing score?",
+        answer:
+          "No. It is a supplementary retention tool and does not guarantee an exam result. Your outcome depends on consistent study and your broader prep plan.",
+      },
+    ],
+  },
 
   // ── Professional / Commodities ─────────────────────────────────────────
   {
@@ -1924,7 +2004,7 @@ export const siteFaqs = [
   {
     question: "Which US exams does UniPrep2Go cover?",
     answer:
-      "The catalog includes US-market decks for FINRA SIE, Series 7, Series 63, California real estate salesperson exam prep, Life & Health insurance licensing, and Property & Casualty insurance licensing, plus finance credential decks such as CFA Level 1 and FRM Part 1.",
+      "The catalog includes US-market decks for FINRA SIE, Series 7, Series 63, California real estate salesperson exam prep, Life & Health insurance licensing, Property & Casualty insurance licensing, PTCB pharmacy technician exam prep, and ServSafe Manager food safety review, plus finance credential decks such as CFA Level 1 and FRM Part 1.",
   },
   {
     question: "What is an Anki deck?",

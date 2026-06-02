@@ -363,6 +363,28 @@ describe("deck catalog", () => {
     expect(servSafeGuide?.directAnswer).toContain("70 exam-style multiple-choice questions");
   });
 
+  it("includes the PTCB Pharmacy Technician deck as a full PTCE prep product", () => {
+    const ptcbDeck = getDeckBySlug("ptcb-pharmacy-technician-anki-deck");
+
+    expect(ptcbDeck?.status).toBe("available");
+    expect(ptcbDeck).toMatchObject({
+      category: "professional",
+      checkoutUrl: "https://pixidstudio.gumroad.com/l/yvifxh",
+      checkoutProvider: "Gumroad",
+      checkoutSeller: "PixID Studio",
+      format: ".apkg",
+      coverImage: "/covers/ptcb-pharmacy-technician-anki-deck.webp",
+    });
+    expect(ptcbDeck?.facts.cards).toBe("300");
+    expect(ptcbDeck?.sampleCards).toHaveLength(3);
+    expect(ptcbDeck?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/ptcb-pharmacy-technician-anki-deck-sample-1.webp",
+      "/samples/ptcb-pharmacy-technician-anki-deck-sample-2.webp",
+      "/samples/ptcb-pharmacy-technician-anki-deck-sample-3.webp",
+    ]);
+    expect(ptcbDeck?.directAnswer).toContain("PTCB Pharmacy Technician Anki deck");
+  });
+
   it("uses three real sample previews for the IB Biology SL deck", () => {
     const biologyDeck = getDeckBySlug("ib-biology-sl-anki-deck");
 
@@ -456,6 +478,8 @@ describe("deck catalog", () => {
       "servsafe-manager-anki-deck": "ServSafe Manager Anki Deck — 300 Food Safety Flashcards",
       "servsafe-manager-complete-study-guide":
         "ServSafe Manager Complete Study Guide — PDF + 70 Practice Questions",
+      "ptcb-pharmacy-technician-anki-deck":
+        "PTCB Pharmacy Technician Anki Deck — 300 High-Yield Flashcards",
       "bench-energy-metal-trader-anki-deck":
         "Metal Trader Anki Deck — 202 Commodity Flashcards",
       "bench-energy-oil-trader-anki-deck":

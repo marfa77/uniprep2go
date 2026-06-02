@@ -37,6 +37,10 @@ function buildDeckSeoTitle(deck: Awaited<ReturnType<typeof getPricedDeckBySlug>>
     return "ServSafe Manager Anki Deck | 300 Cards + Free Practice Test";
   }
 
+  if (deck.slug === "ptcb-pharmacy-technician-anki-deck") {
+    return "PTCB Pharmacy Technician Anki Deck | 300 PTCE Flashcards";
+  }
+
   if (deck.slug === "servsafe-manager-complete-study-guide") {
     return "ServSafe Manager Study Guide PDF | 70 Practice Questions";
   }
@@ -66,6 +70,10 @@ function buildDeckSeoDescription(deck: Awaited<ReturnType<typeof getPricedDeckBy
 
   if (deck.slug === "servsafe-manager-anki-deck") {
     return `${base} Covers ServSafe Manager food safety topics with a linked free 90-question practice test, 120-minute mock, and 75% target.`;
+  }
+
+  if (deck.slug === "ptcb-pharmacy-technician-anki-deck") {
+    return `${base} Covers top 200 drugs, sig codes, pharmacy math, DEA schedules, and PTCE-style dispensing workflow for daily phone review.`;
   }
 
   if (deck.slug === "servsafe-manager-complete-study-guide") {
