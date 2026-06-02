@@ -266,11 +266,7 @@ export default async function HomePage() {
                         >
                           <Image
                             alt={`${deck.shortName} product cover`}
-                            className={
-                              deck.format === "PDF"
-                                ? "aspect-[4/3] h-auto w-full bg-[#f6efe8] object-contain object-center p-3"
-                                : "aspect-[4/3] h-auto w-full object-cover object-top"
-                            }
+                            className="aspect-[4/3] h-auto w-full bg-[#f6efe8] object-contain object-center p-3"
                             height={750}
                             sizes="(max-width: 640px) 100vw, 33vw"
                             src={thumbnail}
@@ -404,7 +400,7 @@ export default async function HomePage() {
                                 <Image
                                   alt=""
                                   aria-hidden
-                                  className="h-16 w-28 object-cover object-top"
+                                  className="h-16 w-28 bg-[#f6efe8] object-contain object-center p-1"
                                   height={64}
                                   src={thumbnail}
                                   width={112}
