@@ -247,8 +247,8 @@ export default async function HomePage() {
                 Featured decks
               </h2>
               <p className="mt-2 text-[#4f493e]">
-                Popular picks for US licensing, finance credentials, and
-                professional training.
+                Top US picks for food safety certification, FINRA licensing, and printable
+                exam prep.
               </p>
               <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {featuredDecks.map((deck) => {
@@ -291,13 +291,14 @@ export default async function HomePage() {
                         </p>
                         <div className="mt-4 flex items-center justify-between text-sm">
                           <span className="font-medium text-[#18140f]">
-                            {formatDeckPriceLabel(deck)} · {deck.facts.cards} cards
+                            {formatDeckPriceLabel(deck)} ·{" "}
+                            {deck.format === "PDF" ? deck.facts.cards : `${deck.facts.cards} cards`}
                           </span>
                           <Link
                             href={`/decks/${deck.slug}`}
                             className="font-medium text-[#1f3a5f] underline-offset-2 hover:underline"
                           >
-                            View deck
+                            {deck.format === "PDF" ? "View PDF" : "View deck"}
                           </Link>
                         </div>
                       </div>

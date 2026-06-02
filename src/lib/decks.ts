@@ -1904,9 +1904,9 @@ export function getAvailableDecksByCategory(): Array<{
 }
 
 export const featuredDeckSlugs = [
-  "ciple-a2-european-portuguese-anki-deck",
-  "cfa-level-1-anki-deck",
-  "commodity-trader-pack-bundle",
+  "servsafe-manager-anki-deck",
+  "servsafe-manager-complete-study-guide",
+  "sie-exam-anki-deck",
 ] as const;
 
 export function getFeaturedDecks() {
