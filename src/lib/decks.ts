@@ -1581,9 +1581,9 @@ const rawDecks: Deck[] = [
     status: "available",
     title: "ServSafe Manager Complete Study Guide — PDF + 70 Practice Questions",
     shortName: "ServSafe Manager Study Guide",
-    subtitle: "42-page printable ServSafe Manager PDF guide with cram sheets, practice questions, and answer rationales.",
+    subtitle: "40-page printable ServSafe Manager PDF guide with cram sheets, practice questions, and answer rationales.",
     directAnswer:
-      "UniPrep2Go sells an independent ServSafe Manager Complete Study Guide PDF with 42 pages: 8 exam domains fully explained, a 7-day study plan, a 2-page quick-reference cram sheet, 70 exam-style multiple-choice questions, complete answer rationales, glossary, last-day checklist, and companion notes for drilling the 300-card Anki deck. It is delivered as a printable PDF digital download for {PRICE} through Gumroad. The guide is an independent study aid and is not official ServSafe, National Restaurant Association, FDA, or health department material.",
+      "UniPrep2Go sells an independent ServSafe Manager Complete Study Guide PDF with 40 pages of study content: 8 exam domains fully explained, a 7-day study plan, a 2-page quick-reference cram sheet, 70 exam-style multiple-choice questions, complete answer rationales, glossary, last-day checklist, and companion notes for drilling the 300-card Anki deck. It is delivered as a printable PDF digital download for {PRICE} through Gumroad. The guide is an independent study aid and is not official ServSafe, National Restaurant Association, FDA, or health department material.",
     lastUpdated: "2026-06-02",
     audience:
       "First-time ServSafe Manager test takers, retesters, restaurant managers, and busy food service professionals who want a structured printable review system.",
@@ -1593,7 +1593,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "42 pages + 70 practice questions",
+      cards: "40 pages + 70 practice questions",
       topics:
         "ServSafe Manager complete study guide: 8 exam domains, quick-reference cram sheet, Big 6 pathogens, allergens, time and temperature control, flow of food, cleaning and sanitizing, facilities, HACCP, 70 practice questions, answer rationales, glossary, last-day checklist, and companion Anki deck workflow",
       formulas: "Printable PDF review pages, FDA Food Code-aligned quick-reference rules, exam-style practice questions, answer rationales, and last-day checklist",
@@ -1601,28 +1601,28 @@ const rawDecks: Deck[] = [
       delivery: "Printable PDF digital download through Gumroad",
     },
     topicCoverage: [
-      { name: "Complete PDF Guide", examWeight: "42 pages", cards: "8 exam domains fully explained" },
+      { name: "Complete PDF Guide", examWeight: "40 pages", cards: "8 exam domains fully explained" },
       { name: "Quick-Reference Cram Sheet", examWeight: "2 pages", cards: "Temps, cooling, storage order, Big 6, allergens, 3-comp sink, and HACCP" },
       { name: "Practice Questions", examWeight: "70 questions", cards: "Exam-style MCQs with answer rationales" },
       { name: "Study Workflow", examWeight: "7-day plan", cards: "Two focused sessions per day, last-day checklist, glossary, and companion Anki drill notes" },
     ],
     sampleCards: [
       {
-        question: "The last-day cram sheet people actually need",
+        question: "Quick-reference cram sheet for exam-day numbers",
         answer:
-          "A readable 2-page reference for the numbers that decide the exam: danger zone, cooking temperatures, receiving temps, cooling steps, storage order, Big 6 pathogens, allergens, HACCP, and cleaning reminders.",
+          "The 2-page cram sheet puts the danger zone, minimum cooking temperatures, and receiving limits in one scannable layout — the numbers that win or lose the ServSafe Manager exam.",
         imageUrl: "/samples/servsafe-manager-complete-study-guide-sample-1.webp",
       },
       {
-        question: "High-yield rules in one place",
+        question: "9 major allergens and the 7 HACCP principles",
         answer:
-          "The guide turns scattered food-safety facts into compact recall blocks: Big 6 exclusion rules, the 9 U.S. allergens, handwashing, no bare-hand contact, three-compartment sink order, and the 7 HACCP principles.",
+          "Allergen tags and a numbered HACCP walkthrough make two of the most testable topic areas easy to review the morning of the exam.",
         imageUrl: "/samples/servsafe-manager-complete-study-guide-sample-2.webp",
       },
       {
-        question: "Answer rationales, not just an answer key",
+        question: "The Big 6 pathogens — exclude vs. restrict",
         answer:
-          "After the 70 exam-style questions, the rationale section explains why the correct answer is right, so missed questions become targeted review instead of guesswork.",
+          "Each Big 6 pathogen is mapped to linked foods, key controls, and when a sick handler must be excluded from the operation — not just restricted.",
         imageUrl: "/samples/servsafe-manager-complete-study-guide-sample-3.webp",
       },
     ],
@@ -1630,7 +1630,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the ServSafe Manager Complete Study Guide include?",
         answer:
-          "It includes a 42-page printable PDF with 8 exam domains fully explained, a 7-day study plan, 2-page quick-reference cram sheet, 70 exam-style multiple-choice questions, complete answer rationales, glossary, last-day checklist, and companion notes for using the 300-card Anki deck.",
+          "It includes a 40-page printable PDF with 8 exam domains fully explained, a 7-day study plan, 2-page quick-reference cram sheet, 70 exam-style multiple-choice questions, complete answer rationales, glossary, last-day checklist, and companion notes for using the 300-card Anki deck.",
       },
       {
         question: "Is this an Anki deck?",

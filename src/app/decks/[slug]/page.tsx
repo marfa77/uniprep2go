@@ -69,7 +69,7 @@ function buildDeckSeoDescription(deck: Awaited<ReturnType<typeof getPricedDeckBy
   }
 
   if (deck.slug === "servsafe-manager-complete-study-guide") {
-    return `${base} Includes an 18-page printable guide, 2-page cram sheet, 70 practice questions, rationales, 7-day plan, checklist, and glossary.`;
+    return `${base} Includes a 40-page printable guide, 2-page cram sheet, 70 practice questions, rationales, 7-day plan, checklist, and glossary.`;
   }
 
   if (deck.slug === "series-7-anki-deck") {
@@ -326,8 +326,8 @@ export default async function DeckPage({
             </h2>
             {deck.format === "PDF" ? (
               <p className="mt-2 max-w-2xl text-sm leading-7 text-[#5f5749]">
-                Three real zoomed excerpts from the PDF: the cram sheet, the high-yield safety
-                rules, and the answer-rationale section.
+                Three real excerpts from the PDF: the cram sheet, allergens + HACCP, and the Big 6
+                pathogen table.
               </p>
             ) : null}
             <div

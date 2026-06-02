@@ -351,14 +351,14 @@ describe("deck catalog", () => {
       format: "PDF",
       coverImage: "/covers/servsafe-manager-complete-study-guide.webp",
     });
-    expect(servSafeGuide?.facts.cards).toBe("42 pages + 70 practice questions");
+    expect(servSafeGuide?.facts.cards).toBe("40 pages + 70 practice questions");
     expect(servSafeGuide?.sampleCards).toHaveLength(3);
     expect(servSafeGuide?.sampleCards.map((card) => card.imageUrl)).toEqual([
       "/samples/servsafe-manager-complete-study-guide-sample-1.webp",
       "/samples/servsafe-manager-complete-study-guide-sample-2.webp",
       "/samples/servsafe-manager-complete-study-guide-sample-3.webp",
     ]);
-    expect(servSafeGuide?.directAnswer).toContain("42 pages");
+    expect(servSafeGuide?.directAnswer).toContain("40 pages");
     expect(servSafeGuide?.directAnswer).toContain("8 exam domains fully explained");
     expect(servSafeGuide?.directAnswer).toContain("70 exam-style multiple-choice questions");
   });
