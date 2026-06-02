@@ -259,14 +259,6 @@ export function MockExamClient({ config, questions, accessState, runnable }: Moc
               Question bank loading — check back soon
             </p>
           )}
-          {cta?.interestCaptureEnabled ? (
-            <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-              <MockInterestCta compact config={config} cta={cta} />
-              <p className="max-w-sm text-xs leading-5 text-[#7a6e5a]">
-                Register interest for paid mock access after the free start cap.
-              </p>
-            </div>
-          ) : null}
           </div>
         </div>
       )}
