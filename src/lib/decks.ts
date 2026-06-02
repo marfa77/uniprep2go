@@ -1608,21 +1608,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "Quick-reference cram sheet",
+        question: "The last-day cram sheet people actually need",
         answer:
-          "The PDF includes a 2-page last-day cram sheet with the temperature danger zone, cooking temperatures, receiving rules, cooling steps, storage order, Big 6 pathogens, allergens, HACCP, and cleaning reminders.",
+          "A readable 2-page reference for the numbers that decide the exam: danger zone, cooking temperatures, receiving temps, cooling steps, storage order, Big 6 pathogens, allergens, HACCP, and cleaning reminders.",
         imageUrl: "/samples/servsafe-manager-complete-study-guide-sample-1.webp",
       },
       {
-        question: "Big 6, allergens, hygiene, and HACCP",
+        question: "High-yield rules in one place",
         answer:
-          "Domain pages explain high-frequency test concepts in plain English, including Big 6 exclusion rules, 9 U.S. allergens, handwashing, no bare-hand contact, and the 7 HACCP principles.",
+          "The guide turns scattered food-safety facts into compact recall blocks: Big 6 exclusion rules, the 9 U.S. allergens, handwashing, no bare-hand contact, three-compartment sink order, and the 7 HACCP principles.",
         imageUrl: "/samples/servsafe-manager-complete-study-guide-sample-2.webp",
       },
       {
-        question: "70 practice questions with rationales",
+        question: "Answer rationales, not just an answer key",
         answer:
-          "The practice section includes 70 exam-style multiple-choice questions across all domains, followed by an answer key that explains why each correct answer is right.",
+          "After the 70 exam-style questions, the rationale section explains why the correct answer is right, so missed questions become targeted review instead of guesswork.",
         imageUrl: "/samples/servsafe-manager-complete-study-guide-sample-3.webp",
       },
     ],

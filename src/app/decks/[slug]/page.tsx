@@ -326,37 +326,47 @@ export default async function DeckPage({
             </h2>
             {deck.format === "PDF" ? (
               <p className="mt-2 max-w-2xl text-sm leading-7 text-[#5f5749]">
-                Real cropped pages from the PDF, zoomed so the study layout and practice-question
-                format are readable before checkout.
+                Three real zoomed excerpts from the PDF: the cram sheet, the high-yield safety
+                rules, and the answer-rationale section.
               </p>
             ) : null}
             <div
               className={
                 deck.format === "PDF"
-                  ? "mt-5 grid gap-5 lg:grid-cols-2 lg:items-start"
+                  ? "mt-5 space-y-6"
                   : "mt-4 grid gap-4 sm:grid-cols-3 sm:items-start"
               }
             >
               {deck.sampleCards.map((card) => (
                 <article
-                  className="overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]"
+                  className={
+                    deck.format === "PDF"
+                      ? "overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#fffaf0] shadow-[0_18px_48px_-36px_rgba(24,20,15,0.5)]"
+                      : "overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]"
+                  }
                   key={`${card.question}-${card.imageUrl}-${card.audioUrl ?? ""}`}
                 >
+                  {deck.format === "PDF" ? (
+                    <div className="border-b border-[#18140f]/10 p-5 sm:p-6">
+                      <h3 className="text-xl font-semibold leading-tight">{card.question}</h3>
+                      <p className="mt-3 max-w-2xl text-sm leading-7 text-[#5f5749]">{card.answer}</p>
+                    </div>
+                  ) : null}
                   {card.imageUrl ? (
                     <div
                       className={
                         deck.format === "PDF"
-                          ? "flex max-h-[520px] items-start justify-center overflow-hidden bg-[#f6efe8] p-3"
+                          ? "flex max-h-[700px] items-start justify-center overflow-hidden bg-[#f6efe8] p-3 sm:p-5"
                           : "bg-[#f6efe8]"
                       }
                     >
                       <Image
                         alt={deck.format === "PDF" ? `PDF preview: ${card.question}` : `Sample Anki card: ${card.question}`}
                         className={deck.format === "PDF" ? "h-auto w-full rounded-2xl" : "h-auto w-full"}
-                        height={deck.format === "PDF" ? 1700 : 550}
-                        sizes={deck.format === "PDF" ? "(max-width: 1024px) 100vw, 430px" : "(max-width: 640px) 100vw, 33vw"}
+                        height={deck.format === "PDF" ? 1780 : 550}
+                        sizes={deck.format === "PDF" ? "(max-width: 1024px) 100vw, 896px" : "(max-width: 640px) 100vw, 33vw"}
                         src={card.imageUrl}
-                        width={deck.format === "PDF" ? 1600 : 976}
+                        width={deck.format === "PDF" ? 2200 : 976}
                       />
                     </div>
                   ) : (
@@ -364,35 +374,37 @@ export default async function DeckPage({
                       <p className="text-2xl font-semibold text-[#18140f]">{card.question}</p>
                     </div>
                   )}
-                  <div className="p-5">
-                    <h3 className="font-semibold">{card.question}</h3>
-                    <p className="mt-2 text-sm leading-6 text-[#5f5749]">{card.answer}</p>
-                    {card.audioUrl ? (
-                      <audio controls preload="metadata" src={card.audioUrl} className="mt-4 h-10 w-full">
-                        Your browser does not support the audio element.
-                      </audio>
-                    ) : null}
-                    {card.audioUrlEs ? (
-                      <div className="mt-4 space-y-2">
-                        <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#8a7d68]">
-                          Spanish audio
-                        </p>
-                        <audio controls preload="metadata" src={card.audioUrlEs} className="h-10 w-full">
+                  {deck.format !== "PDF" ? (
+                    <div className="p-5">
+                      <h3 className="font-semibold">{card.question}</h3>
+                      <p className="mt-3 text-sm leading-7 text-[#5f5749]">{card.answer}</p>
+                      {card.audioUrl ? (
+                        <audio controls preload="metadata" src={card.audioUrl} className="mt-4 h-10 w-full">
                           Your browser does not support the audio element.
                         </audio>
-                      </div>
-                    ) : null}
-                    {card.audioUrlIt ? (
-                      <div className="mt-4 space-y-2">
-                        <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#8a7d68]">
-                          Italian audio
-                        </p>
-                        <audio controls preload="metadata" src={card.audioUrlIt} className="h-10 w-full">
-                          Your browser does not support the audio element.
-                        </audio>
-                      </div>
-                    ) : null}
-                  </div>
+                      ) : null}
+                      {card.audioUrlEs ? (
+                        <div className="mt-4 space-y-2">
+                          <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#8a7d68]">
+                            Spanish audio
+                          </p>
+                          <audio controls preload="metadata" src={card.audioUrlEs} className="h-10 w-full">
+                            Your browser does not support the audio element.
+                          </audio>
+                        </div>
+                      ) : null}
+                      {card.audioUrlIt ? (
+                        <div className="mt-4 space-y-2">
+                          <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#8a7d68]">
+                            Italian audio
+                          </p>
+                          <audio controls preload="metadata" src={card.audioUrlIt} className="h-10 w-full">
+                            Your browser does not support the audio element.
+                          </audio>
+                        </div>
+                      ) : null}
+                    </div>
+                  ) : null}
                 </article>
               ))}
             </div>
