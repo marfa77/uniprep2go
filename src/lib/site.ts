@@ -2,10 +2,10 @@ export const siteConfig = {
   name: "UniPrep2Go",
   url: "https://uniprep2go.study",
   description:
-    "Independent Anki flashcard decks for US licensing exams, finance credentials, language certifications, professional training, and academic subjects, plus Prep2Go Immigration app decks for survival guides and citizenship test prep.",
+    "Independent exam prep: Anki decks, printable PDF cram sheets, and free timed mocks for US licensing, finance credentials, language certifications, professional training, and academic subjects, plus Prep2Go Immigration app decks.",
   primaryMarket: "United States",
   primaryPositioning:
-    "US exam prep and professional licensing Anki decks, with finance credentials and language certifications as supporting catalog categories.",
+    "US exam prep and professional licensing study products — Anki decks, printable PDFs, and free timed mocks — with finance credentials and language certifications as supporting catalog categories.",
   primaryUseCases: [
     "FINRA SIE, Series 7, and Series 63 exam prep",
     "US insurance and California real estate licensing exam prep",

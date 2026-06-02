@@ -14,6 +14,7 @@ import {
 import { buildCatalogItemListJsonLd, buildSiteOrganizationJsonLd } from "@/lib/product-jsonld";
 import { getAllMockExams } from "@/lib/mock-exams/configs";
 import { buildMockExamItemListJsonLd } from "@/lib/mock-exams/llm";
+import { buildMockSeoTitle } from "@/lib/mock-exams/seo";
 import { isMockExamRunnable } from "@/lib/mock-exams/question-bank";
 import { customDeckMailtoUrl, siteConfig } from "@/lib/site";
 
@@ -66,6 +67,7 @@ export default async function HomePage() {
   const minPrice = prices.length > 0 ? Math.min(...prices) : 0;
   const maxPrice = prices.length > 0 ? Math.max(...prices) : 0;
   const mockExams = getAllMockExams();
+  const pdfProductCount = availableDecks.filter((deck) => deck.format === "PDF").length;
 
   const sectionEvents = [
     { selector: "#catalog", name: "catalog_view" as const },
@@ -119,16 +121,16 @@ export default async function HomePage() {
           <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:items-center lg:py-20">
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-                US exam prep Anki catalog
+                US exam prep catalog
               </p>
               <h1 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight text-balance text-[#18140f] sm:text-5xl">
-                US licensing exams, finance credentials, and language decks — one catalog
+                Anki decks, printable PDFs, and free mocks — one catalog
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-8 text-[#4f493e]">
                 {siteConfig.name} is US-first: FINRA SIE, Series 7, Series 63,
-                insurance licensing, California real estate, CFA, and FRM review
-                sit at the front of the catalog, with language certification
-                decks kept for long-tail search and global learners.
+                insurance licensing, California real estate, ServSafe, CFA, and FRM
+                sit at the front of the catalog, with free timed mocks and printable
+                PDF cram sheets alongside Anki decks.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
@@ -148,16 +150,21 @@ export default async function HomePage() {
               </div>
               <dl className="mt-10 grid gap-4 sm:grid-cols-3">
                 <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-4">
-                  <dt className="text-sm text-[#7a6e5a]">US-first catalog</dt>
+                  <dt className="text-sm text-[#7a6e5a]">Product formats</dt>
                   <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
-                    FINRA + licensing
+                    Decks · mocks · PDFs
                   </dd>
                 </div>
                 <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-4">
-                  <dt className="text-sm text-[#7a6e5a]">Total decks</dt>
+                  <dt className="text-sm text-[#7a6e5a]">Catalog size</dt>
                   <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
-                    {availableDecks.length}
+                    {availableDecks.length} decks · {mockExams.length} mocks
                   </dd>
+                  {pdfProductCount > 0 ? (
+                    <dd className="mt-1 text-sm text-[#7a6e5a]">
+                      plus {pdfProductCount} printable PDF{pdfProductCount === 1 ? "" : "s"}
+                    </dd>
+                  ) : null}
                 </div>
                 <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-4">
                   <dt className="text-sm text-[#7a6e5a]">Price range</dt>
@@ -305,15 +312,15 @@ export default async function HomePage() {
         <section id="mock-exams" className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
           <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
             <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-              Finance mock exams
+              Free practice tests
             </p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
-              Free SIE full mock plus readiness checks during launch month
+              SIE, ServSafe Manager, CFA, insurance, and real estate practice tests
             </h2>
             <p className="mt-3 max-w-3xl text-[#4f493e]">
-              The SIE bank is a full timed mock. CFA, FRM, FINRA Series, insurance, and real estate
-              previews are readiness diagnostics built from the same Anki deck content, with topic
-              scoring, wrong-answer review, and a linked deck repair plan.
+              Full timed mocks for SIE and ServSafe Manager, plus readiness checks for CFA, FRM, FINRA
+              Series, insurance, and real estate — all with topic scoring, wrong-answer review, and a
+              linked deck repair plan.
             </p>
             <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               {mockExams.map((mock) => {
@@ -335,7 +342,9 @@ export default async function HomePage() {
                     <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-[#1f3a5f]">
                       {live ? "Full mock available" : "Readiness preview"}
                     </p>
-                    <h3 className="mt-2 text-base font-semibold text-[#18140f]">{mock.shortTitle}</h3>
+                    <h3 className="mt-2 text-base font-semibold text-[#18140f]">
+                      {buildMockSeoTitle(mock)}
+                    </h3>
                     <p className="mt-2 text-xs leading-5 text-[#5f5749]">
                       {mock.questionCount} q · {mock.durationMinutes} min · pass {mock.passRule.passPercent}%
                     </p>
@@ -350,7 +359,7 @@ export default async function HomePage() {
               className="mt-6 inline-flex text-sm font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
               href="/mock-exams"
             >
-              View all finance mocks
+              View all practice tests
             </Link>
           </div>
         </section>

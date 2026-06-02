@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${siteUrl}/mock-exams/${mock.slug}`,
     lastModified,
     changeFrequency: "monthly" as const,
-    priority: 0.88,
+    priority: 0.9,
   }));
 
   return [

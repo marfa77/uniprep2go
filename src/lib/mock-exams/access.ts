@@ -1,4 +1,8 @@
 import { getMockExamConfig } from "./configs";
+import {
+  mockPaidTransitionCtaDescription,
+  mockPaidTransitionCtaLabel,
+} from "./pricing";
 import type { MockAccessState } from "./types";
 
 export function getMockAccessState(mockSlug: string): MockAccessState | null {
@@ -15,9 +19,8 @@ export function getMockAccessState(mockSlug: string): MockAccessState | null {
         accessMode: config.accessMode,
         fullReportUnlocked: true,
         interestCaptureEnabled: true,
-        ctaLabel: "Notify me when paid report packs launch",
-        ctaDescription:
-          "Full reports are free during launch month. We may introduce Gumroad report packs later — register interest so we know what to ship.",
+        ctaLabel: mockPaidTransitionCtaLabel,
+        ctaDescription: mockPaidTransitionCtaDescription,
       };
     case "gumroad_license":
       return {

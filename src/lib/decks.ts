@@ -1835,7 +1835,7 @@ export const siteFaqs = [
   {
     question: "What is UniPrep2Go?",
     answer:
-      "UniPrep2Go is a US-first catalog of independent Anki flashcard decks for licensing exams, finance credentials, language certifications, professional training, and academic subjects, plus Prep2Go Immigration app decks for survival guides and citizenship test prep on the App Store. The priority market is the United States, especially FINRA, insurance licensing, California real estate, CFA, and FRM candidates. Language decks remain available for long-tail search and global learners.",
+      "UniPrep2Go is a US-first catalog of independent exam prep products: Anki flashcard decks, printable PDF cram sheets, and free timed mock exams for licensing exams, finance credentials, language certifications, professional training, and academic subjects, plus Prep2Go Immigration app decks for survival guides and citizenship test prep on the App Store. The priority market is the United States, especially FINRA, insurance licensing, California real estate, ServSafe, CFA, and FRM candidates. Language decks remain available for long-tail search and global learners.",
   },
   {
     question: "Which US exams does UniPrep2Go cover?",

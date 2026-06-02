@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { getMockAccessState, isFullReportUnlocked } from "./access";
 import { getAllMockExams, getMockExamConfig, validateMockExamConfig } from "./configs";
 import { buildMockExamFacts, buildMockExamMarkdown, buildMockExamPageJsonLd } from "./llm";
+import { buildMockSeoDescription } from "./seo";
 import { getQuestionBankForExam, isMockExamRunnable, validateQuestionBank } from "./question-bank";
 import { buildMockReport, shuffleQuestions } from "./scoring";
 import type { MockQuestion } from "./types";
@@ -174,7 +175,7 @@ describe("llm visibility", () => {
     const facts = buildMockExamFacts(config!);
     expect(facts.type).toBe("finance_mock_exam");
     expect(facts.linked_deck_slug).toBe("sie-exam-anki-deck");
-    expect(facts.price).toContain("Free");
+    expect(facts.price).toContain("Free for first 20 mock starts");
     expect(facts.report_features).toContain("weighted topic diagnosis");
     expect(facts.question_source).toContain("not AI-generated from scratch");
 
@@ -218,6 +219,7 @@ describe("llm visibility", () => {
       isAccessibleForFree: true,
     });
     expect(course?.teaches).toContain("Ethical and Professional Standards");
+    expect(buildMockSeoDescription(config!)).toContain("60 timed questions");
     expect(breadcrumb).toMatchObject({
       itemListElement: expect.arrayContaining([
         expect.objectContaining({ position: 1, name: "Home" }),

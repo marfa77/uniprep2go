@@ -1,4 +1,5 @@
 import { filterReportingSources } from "./funnel-filter";
+import { formatMockStartProgress } from "./mock-exams/pricing";
 import type { CheckoutPriceSyncResult } from "./checkout-pricing";
 import type { FunnelAggregate } from "./funnel-aggregates";
 import type { FunnelStats } from "./funnel-store";
@@ -66,7 +67,7 @@ function formatSummaryBlock(title: string, aggregate: FunnelAggregate) {
     `CTA rate: ${rates.ctaRate}`,
     `Click rate: ${rates.clickRate}`,
     `Mock landing views: ${aggregate.byEvent.mock_landing_view}`,
-    `Mock starts: ${mockStarts}`,
+    `Mock starts: ${formatMockStartProgress(mockStarts)} (free cap)`,
     `Mock completions: ${mockCompletions}`,
     `Mock completion rate: ${mockCompletionRate}`,
     `Mock pass verdicts: ${aggregate.byEvent.mock_pass_verdict}`,

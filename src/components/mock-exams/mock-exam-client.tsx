@@ -3,6 +3,7 @@
 import Link from "next/link";
 import type { MockAccessState, MockExamConfig, MockQuestion, MockReport } from "@/lib/mock-exams/types";
 import { getMockCta } from "@/lib/mock-exams/access";
+import { mockFreeAccessNotice } from "@/lib/mock-exams/pricing";
 import { buildMockReport, createAttemptSeed, shuffleQuestions } from "@/lib/mock-exams/scoring";
 import { MockInterestCta } from "./mock-interest-cta";
 import { MockReportPanel } from "./mock-report";
@@ -222,8 +223,7 @@ export function MockExamClient({ config, questions, accessState, runnable }: Moc
           <li>Repair plan linking back to the Anki deck</li>
         </ul>
         <p className="mt-6 rounded-2xl border border-[#1f3a5f]/15 bg-[#f7f3ea] p-4 text-sm leading-7 text-[#4f493e]">
-          Full reports are free during launch month. We may introduce Gumroad report packs later; your
-          feedback determines what ships.
+          {mockFreeAccessNotice}
         </p>
       </section>
 
@@ -263,7 +263,7 @@ export function MockExamClient({ config, questions, accessState, runnable }: Moc
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
               <MockInterestCta compact config={config} cta={cta} />
               <p className="max-w-sm text-xs leading-5 text-[#7a6e5a]">
-                Free during launch month. This tells us whether paid report packs are worth building.
+                Register interest for paid mock access after the free start cap.
               </p>
             </div>
           ) : null}

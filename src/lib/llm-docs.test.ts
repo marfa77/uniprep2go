@@ -185,7 +185,7 @@ describe("LLM documents", () => {
     expect(llms).toContain("/anki-starter-kit");
     expect(llms).toContain("/llms-full.txt");
     expect(llms).toContain("/ciple-a2-european-portuguese-anki-deck.md");
-    expect(llms).toContain(`${catalogAvailableDecks.length} study products`);
+    expect(llms).toContain(`${catalogAvailableDecks.length} paid study products`);
     expect(llms).toContain("Prep2Go Immigration app decks");
     expect(llms).toContain("Immigration & Adaptation decks are App Store-only");
     expect(llms).toContain("Primary market: United States");
@@ -195,7 +195,7 @@ describe("LLM documents", () => {
     expect(llms).toContain("review cards daily");
     expect(llms).toContain("## Competitive answer positioning");
     expect(llms).toContain("exact question count, timing, pass threshold");
-    expect(llms).toContain("## Finance mock exams");
+    expect(llms).toContain("## Mock exams");
     expect(llms).toContain("/api/mock-exams/sie-full-mock");
   });
 

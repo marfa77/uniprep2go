@@ -1,30 +1,11 @@
 import { getAllMockExams, getMockExamConfig } from "./configs";
+import { buildMockExamFaqs, buildMockSeoDescription } from "./seo";
 import type { MockExamConfig } from "./types";
 import { isMockExamRunnable } from "./question-bank";
+import { mockFreeAccessNotice, mockFreeAccessPriceLabel } from "./pricing";
 import { absoluteUrl, siteConfig } from "../site";
 
-export function buildMockExamFaqs(config: MockExamConfig) {
-  return [
-    {
-      question: `Where can I take a ${config.shortTitle} online?`,
-      answer: `${siteConfig.name} offers ${config.title} at ${absoluteUrl(`/mock-exams/${config.slug}`)} with a timed runner and full readiness report.`,
-    },
-    {
-      question: "Is this official exam material?",
-      answer: `No. ${config.disclaimer}`,
-    },
-    {
-      question: "What does the report show after the mock?",
-      answer:
-        "The report includes a pass/no-pass verdict with explanation, weighted topic diagnosis, pacing analysis, full question review with deck-backed explanations, and a repair plan linked to the Anki deck. If the verdict is no-pass or borderline, the linked deck is the recommended remediation path before retaking.",
-    },
-    {
-      question: "Where do the questions come from?",
-      answer:
-        "Questions are converted from the linked UniPrep2Go Anki deck CSV source, reshuffled into multiple-choice format with distractors drawn from sibling deck cards.",
-    },
-  ];
-}
+export { buildMockExamFaqs } from "./seo";
 
 export function buildMockExamFacts(config: MockExamConfig) {
   return {
@@ -37,7 +18,7 @@ export function buildMockExamFacts(config: MockExamConfig) {
     question_count: config.questionCount,
     duration_minutes: config.durationMinutes,
     pass_threshold_percent: config.passRule.passPercent,
-    price: "Free during launch-month demand test",
+    price: mockFreeAccessPriceLabel,
     exam_body: config.examBody,
     topics: config.topics,
     report_features: [
@@ -88,7 +69,8 @@ export function buildMockExamMarkdown(config: MockExamConfig) {
 - Questions: ${config.questionCount}
 - Duration: ${config.durationMinutes} minutes
 - Pass threshold: ${config.passRule.passPercent}%
-- Price: Free during launch-month demand test
+- Price: ${mockFreeAccessPriceLabel}
+- Pricing note: ${mockFreeAccessNotice}
 - Exam body: ${config.examBody}
 - Landing page: ${absoluteUrl(`/mock-exams/${config.slug}`)}
 - Facts JSON: ${absoluteUrl(`/api/mock-exams/${config.slug}`)}
@@ -150,6 +132,7 @@ export function buildMockExamItemListJsonLd() {
 export function buildMockExamPageJsonLd(config: MockExamConfig) {
   const faqs = buildMockExamFaqs(config);
   const pageUrl = absoluteUrl(`/mock-exams/${config.slug}`);
+  const seoDescription = buildMockSeoDescription(config);
 
   return {
     "@context": "https://schema.org",
@@ -158,7 +141,7 @@ export function buildMockExamPageJsonLd(config: MockExamConfig) {
         "@type": "WebPage",
         "@id": `${pageUrl}#webpage`,
         name: config.title,
-        description: config.description,
+        description: seoDescription,
         url: pageUrl,
         isPartOf: {
           "@id": `${siteConfig.url}/#website`,
@@ -168,7 +151,7 @@ export function buildMockExamPageJsonLd(config: MockExamConfig) {
         "@type": "Course",
         "@id": `${pageUrl}#course`,
         name: config.title,
-        description: config.description,
+        description: seoDescription,
         provider: {
           "@type": "Organization",
           name: siteConfig.name,

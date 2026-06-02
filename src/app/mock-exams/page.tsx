@@ -3,20 +3,29 @@ import type { Metadata } from "next";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { getAllMockExams } from "@/lib/mock-exams/configs";
+import { buildMockSeoTitle } from "@/lib/mock-exams/seo";
+import { mockFreeAccessNotice } from "@/lib/mock-exams/pricing";
 import { isMockExamRunnable } from "@/lib/mock-exams/question-bank";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Free Mock Exams & Readiness Checks | UniPrep2Go",
+  title: "Free Practice Tests & Mock Exams | SIE, ServSafe, CFA, Insurance | UniPrep2Go",
   description:
-    "Free timed SIE, ServSafe Manager, CFA, FRM, Series 7, Series 63, insurance, and California real estate readiness checks with topic scoring and pass/no-pass reports.",
+    "Free online practice tests and mock exams for FINRA SIE, ServSafe Manager, CFA Level 1, Series 7, insurance licensing, and California real estate. Timed questions, topic scoring, and pass/no-pass reports.",
+  keywords: [
+    "free practice test",
+    "mock exam online",
+    "sie practice test",
+    "servsafe manager practice test",
+    "insurance license practice exam",
+  ],
   alternates: {
     canonical: "/mock-exams",
   },
   openGraph: {
-    title: "Free Mock Exams & Readiness Checks | UniPrep2Go",
+    title: "Free Practice Tests & Mock Exams | UniPrep2Go",
     description:
-      "Free timed SIE, ServSafe Manager, CFA, FRM, Series 7, Series 63, insurance, and California real estate readiness checks with topic scoring and pass/no-pass reports.",
+      "Free online practice tests for SIE, ServSafe Manager, CFA, Series 7, insurance, and California real estate with topic scoring and answer review.",
     url: "/mock-exams",
     type: "website",
   },
@@ -32,14 +41,15 @@ export default function MockExamsIndexPage() {
       <SiteHeader />
 
       <article className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12">
-        <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Finance mock exams</p>
+        <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Free practice tests</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-          Timed mocks built from UniPrep2Go deck content
+          Free online practice tests and mock exams
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          {siteConfig.name} converts deck cards into exam-style multiple choice, scores weighted topics,
-          and returns a full pass/no-pass readiness report. Use it as a baseline diagnostic before
-          you decide what to drill next. Free during launch month.
+          {siteConfig.name} converts deck content into timed practice tests with weighted topic scoring,
+          answer review, and a pass/no-pass readiness report. Start with SIE, ServSafe Manager, CFA, FINRA,
+          insurance, or California real estate diagnostics before you decide what to drill next.{" "}
+          {mockFreeAccessNotice}
         </p>
         <ul className="mt-6 grid gap-3 text-sm leading-6 text-[#4f493e] sm:grid-cols-3">
           <li className="rounded-2xl bg-[#18140f]/5 px-4 py-3">Timed exam-style questions</li>
@@ -58,7 +68,7 @@ export default function MockExamsIndexPage() {
                 href={`/mock-exams/${mock.slug}`}
               >
                 <div className="flex flex-wrap items-center justify-between gap-3">
-                  <h2 className="text-xl font-semibold">{mock.title}</h2>
+                  <h2 className="text-xl font-semibold">{buildMockSeoTitle(mock)}</h2>
                   <span className="rounded-full bg-[#1f3a5f]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-[#1f3a5f]">
                     {mock.status === "live" ? "Full mock available" : "Preview readiness check"}
                   </span>

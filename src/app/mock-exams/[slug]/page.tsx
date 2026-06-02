@@ -2,37 +2,23 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { FunnelTracker } from "@/components/funnel-tracker";
 import { MockExamClient } from "@/components/mock-exams/mock-exam-client";
+import { MockSeoSections } from "@/components/mock-exams/mock-seo-sections";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { getMockAccessState } from "@/lib/mock-exams/access";
 import { getAllMockExams, getMockExamConfig } from "@/lib/mock-exams/configs";
 import { buildMockExamPageJsonLd } from "@/lib/mock-exams/llm";
+import { mockFreeAccessPriceLabel } from "@/lib/mock-exams/pricing";
 import { getQuestionBank, isMockExamRunnable } from "@/lib/mock-exams/question-bank";
+import {
+  buildMockSeoDescription,
+  buildMockSeoKeywords,
+  buildMockSeoPageCopy,
+  buildMockSeoTitle,
+} from "@/lib/mock-exams/seo";
 import { absoluteUrl } from "@/lib/site";
 
 export const revalidate = 3600;
-
-function buildMockSeoTitle(config: NonNullable<ReturnType<typeof getMockExamConfig>>) {
-  if (config.slug === "sie-full-mock") {
-    return "Free 2026 SIE Mock Exam | 75 Questions + Score Report";
-  }
-
-  if (config.slug === "cfa-level-1-readiness-check") {
-    return "Free CFA Level 1 Readiness Check | 60 Questions + Report";
-  }
-
-  if (config.slug === "servsafe-manager-mock") {
-    return "Free 2026 ServSafe Manager Mock Exam | 90 Questions + Score Report";
-  }
-
-  return `Free ${config.shortTitle} | ${config.questionCount}-Question Diagnostic`;
-}
-
-function buildMockSeoDescription(config: NonNullable<ReturnType<typeof getMockExamConfig>>) {
-  const type = config.status === "live" ? "mock exam" : "readiness diagnostic";
-
-  return `Take a free timed ${type}: ${config.questionCount} questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% target, topic scoring, explanations, and pass/no-pass report.`;
-}
 
 export function generateStaticParams() {
   return getAllMockExams().map((config) => ({ slug: config.slug }));
@@ -52,10 +38,12 @@ export async function generateMetadata({
 
   const title = buildMockSeoTitle(config);
   const description = buildMockSeoDescription(config);
+  const keywords = buildMockSeoKeywords(config);
 
   return {
     title,
     description,
+    keywords,
     alternates: {
       canonical: `/mock-exams/${config.slug}`,
     },
@@ -89,6 +77,7 @@ export default async function MockExamPage({
   const questions = getQuestionBank(slug);
   const runnable = isMockExamRunnable(slug);
   const jsonLd = buildMockExamPageJsonLd(config);
+  const seoCopy = buildMockSeoPageCopy(config);
 
   return (
     <main className="min-h-screen bg-[#f7f3ea] text-[#18140f]">
@@ -99,7 +88,10 @@ export default async function MockExamPage({
       <SiteHeader />
       <FunnelTracker
         deckSlug={config.linkedDeckSlug}
-        sectionEvents={[{ selector: "#mock-landing", name: "mock_landing_view" }]}
+        sectionEvents={[
+          { selector: "#mock-landing", name: "mock_landing_view" },
+          { selector: "#mock-faq", name: "faq_view" },
+        ]}
         source={`mock:${config.slug}`}
       />
 
@@ -109,13 +101,13 @@ export default async function MockExamPage({
       >
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
           {config.slug === "servsafe-manager-mock"
-            ? "Professional certification mocks · free during launch month"
-            : "Finance mock exams · free during launch month"}
+            ? `Professional certification mocks · ${mockFreeAccessPriceLabel.toLowerCase()}`
+            : `Exam prep mocks · ${mockFreeAccessPriceLabel.toLowerCase()}`}
         </p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
-          {config.title}
+          {seoCopy.headline}
         </h1>
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">{config.description}</p>
+        <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">{seoCopy.intro}</p>
         <p className="mt-4 text-sm text-[#7a6e5a]">
           Linked deck:{" "}
           <a className="underline decoration-[#18140f]/20 underline-offset-4" href={`/decks/${config.linkedDeckSlug}`}>
@@ -139,6 +131,8 @@ export default async function MockExamPage({
             runnable={runnable}
           />
         ) : null}
+
+        <MockSeoSections config={config} />
       </article>
 
       <SiteFooter />

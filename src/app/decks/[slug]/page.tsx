@@ -10,6 +10,7 @@ import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricin
 import { getDeckCoverUrl } from "@/lib/deck-media";
 import { buildDeckPageJsonLd } from "@/lib/product-jsonld";
 import { getAllMockExams } from "@/lib/mock-exams/configs";
+import { buildMockSeoTitle } from "@/lib/mock-exams/seo";
 
 export const revalidate = 3600;
 
@@ -29,7 +30,11 @@ function buildDeckSeoTitle(deck: Awaited<ReturnType<typeof getPricedDeckBySlug>>
   }
 
   if (deck.slug === "sie-exam-anki-deck") {
-    return "2026 SIE Exam Anki Deck | 300 Cards + Free Mock";
+    return "2026 SIE Exam Anki Deck | 300 Cards + Free Practice Test";
+  }
+
+  if (deck.slug === "servsafe-manager-anki-deck") {
+    return "ServSafe Manager Anki Deck | 300 Cards + Free Practice Test";
   }
 
   if (deck.slug === "series-7-anki-deck") {
@@ -52,15 +57,19 @@ function buildDeckSeoDescription(deck: Awaited<ReturnType<typeof getPricedDeckBy
   const base = `${deck.facts.cards} cards, ${deck.format} download, ${deck.facts.topics}. ${price} via ${deck.checkoutProvider}.`;
 
   if (deck.slug === "sie-exam-anki-deck") {
-    return `${base} Covers current FINRA SIE topic weights with a linked free 75-question, 105-minute mock and 70% target.`;
+    return `${base} Covers current FINRA SIE topic weights with a linked free 75-question SIE practice test, 105-minute mock, and 70% target.`;
+  }
+
+  if (deck.slug === "servsafe-manager-anki-deck") {
+    return `${base} Covers ServSafe Manager food safety topics with a linked free 90-question practice test, 120-minute mock, and 75% target.`;
   }
 
   if (deck.slug === "series-7-anki-deck") {
     return `${base} Focuses on FINRA job functions, suitability, options, products, and a linked 60-question readiness check.`;
   }
 
-  if (deck.category === "finance") {
-    return `${base} Independent active-recall study aid with sample cards and free linked readiness checks where available.`;
+  if (deck.category === "finance" || deck.category === "professional") {
+    return `${base} Independent active-recall study aid with sample cards and free linked practice tests where available.`;
   }
 
   return `${base} Independent spaced-repetition study aid with sample cards and import guidance.`;
@@ -198,20 +207,20 @@ export default async function DeckPage({
         {linkedMock ? (
           <section className="mt-8 rounded-3xl border border-[#1f3a5f]/15 bg-[#fffaf0] p-5">
             <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#1f3a5f]">
-              Free readiness check
+              Free practice test
             </p>
             <h2 className="mt-2 text-xl font-semibold tracking-tight">
-              Test this deck with {linkedMock.questionCount} timed questions
+              {buildMockSeoTitle(linkedMock)}
             </h2>
             <p className="mt-2 text-sm leading-7 text-[#4f493e]">
-              Run the linked {linkedMock.shortTitle} for topic scoring, answer review, and a pass/no-pass
-              remediation plan before deciding what to drill next.
+              Run the linked {linkedMock.questionCount}-question timed practice test for topic scoring,
+              answer review, and a pass/no-pass remediation plan before deciding what to drill next.
             </p>
             <Link
               className="mt-4 inline-flex rounded-full border border-[#1f3a5f]/25 px-5 py-2.5 text-sm font-semibold text-[#1f3a5f] transition hover:border-[#1f3a5f]"
               href={`/mock-exams/${linkedMock.slug}`}
             >
-              Start free readiness check
+              Start free practice test
             </Link>
           </section>
         ) : null}
