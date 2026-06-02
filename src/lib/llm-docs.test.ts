@@ -86,15 +86,16 @@ describe("LLM documents", () => {
     expect(facts).toMatchObject({
       slug: "servsafe-manager-complete-study-guide",
       category: "professional",
-      card_count: "70 practice questions",
+      card_count: "42 pages + 70 practice questions",
       checkout_url: "https://pixidstudio.gumroad.com/l/lyvna",
       checkout_provider: "Gumroad",
       format: "PDF",
       cover_image: "https://uniprep2go.study/covers/servsafe-manager-complete-study-guide.webp",
     });
-    expect(facts.sample_cards).toHaveLength(2);
+    expect(facts.sample_cards).toHaveLength(3);
     expect(markdown).toContain("ServSafe Manager Complete Study Guide");
-    expect(markdown).toContain("18-page printable PDF study guide");
+    expect(markdown).toContain("42-page printable PDF");
+    expect(markdown).toContain("8 exam domains fully explained");
     expect(markdown).toContain("70 exam-style multiple-choice questions");
   });
 

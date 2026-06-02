@@ -146,8 +146,22 @@ export default async function DeckPage({
 
   const priceLabel = formatDeckPriceLabel(deck);
   const checkoutActionLabel =
-    deck.checkoutProvider === "App Store" ? "Open in App Store" : "Buy the deck";
+    deck.checkoutProvider === "App Store"
+      ? "Open in App Store"
+      : deck.format === "PDF"
+        ? "Buy the PDF"
+        : "Buy the deck";
   const linkedMock = getAllMockExams().find((mock) => mock.linkedDeckSlug === deck.slug);
+  const secondaryCta =
+    deck.format === "PDF"
+      ? {
+          href: "/mock-exams/servsafe-manager-mock",
+          label: "Try free practice test",
+        }
+      : {
+          href: "/#faq",
+          label: "Import guide",
+        };
 
   const sectionEvents = [
     { selector: "#facts", name: "product_facts_view" as const },
@@ -157,6 +171,7 @@ export default async function DeckPage({
   ];
 
   const jsonLd = buildDeckPageJsonLd(deck);
+  const heroImage = getDeckCoverUrl(deck);
 
   return (
     <main className="min-h-screen bg-[#f7f3ea] text-[#18140f]">
@@ -175,7 +190,22 @@ export default async function DeckPage({
           {deck.title}
         </h1>
 
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">{deck.directAnswer}</p>
+        <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(220px,0.42fr)] lg:items-start">
+          <p className="max-w-3xl text-lg leading-8 text-[#4f493e]">{deck.directAnswer}</p>
+          {heroImage ? (
+            <div className="overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#fffaf0] shadow-[0_18px_50px_-34px_rgba(24,20,15,0.45)]">
+              <Image
+                alt={`${deck.shortName} product preview`}
+                className="h-auto w-full"
+                height={768}
+                priority={deck.format === "PDF"}
+                sizes="(max-width: 1024px) 100vw, 360px"
+                src={heroImage}
+                width={1376}
+              />
+            </div>
+          ) : null}
+        </div>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <TrackedCheckoutLink
@@ -205,9 +235,9 @@ export default async function DeckPage({
           ) : (
             <Link
               className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-              href="/#faq"
+              href={secondaryCta.href}
             >
-              Import guide
+              {secondaryCta.label}
             </Link>
           )}
         </div>
@@ -237,7 +267,7 @@ export default async function DeckPage({
           <h2 className="text-2xl font-semibold tracking-tight">Product facts</h2>
           <dl className="mt-4 grid gap-px overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#18140f]/10 sm:grid-cols-2">
             {[
-              ["Cards", deck.facts.cards],
+              [deck.format === "PDF" ? "Contents" : "Cards", deck.facts.cards],
               ["Coverage", deck.facts.topics],
               ["Format", deck.format],
               ["Price", priceLabel],
@@ -257,14 +287,22 @@ export default async function DeckPage({
 
         {deck.topicCoverage.length > 0 ? (
           <section id="topic-matrix" className="mt-12">
-            <h2 className="text-2xl font-semibold tracking-tight">Coverage by exam topic</h2>
+            <h2 className="text-2xl font-semibold tracking-tight">
+              {deck.format === "PDF" ? "What is inside the PDF" : "Coverage by exam topic"}
+            </h2>
             <div className="mt-4 overflow-x-auto rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
               <table className="w-full min-w-[640px] border-collapse text-left">
                 <thead>
                   <tr className="border-b border-[#18140f]/15 font-mono text-xs uppercase tracking-[0.18em] text-[#7a6e5a]">
-                    <th className="px-5 py-4 font-medium">Topic</th>
-                    <th className="px-5 py-4 font-medium">Exam weight</th>
-                    <th className="px-5 py-4 font-medium">Cards</th>
+                    <th className="px-5 py-4 font-medium">
+                      {deck.format === "PDF" ? "Section" : "Topic"}
+                    </th>
+                    <th className="px-5 py-4 font-medium">
+                      {deck.format === "PDF" ? "Length" : "Exam weight"}
+                    </th>
+                    <th className="px-5 py-4 font-medium">
+                      {deck.format === "PDF" ? "What you get" : "Cards"}
+                    </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#18140f]/10">
@@ -283,7 +321,9 @@ export default async function DeckPage({
 
         {deck.sampleCards.length > 0 ? (
           <section id="sample-cards" className="mt-12">
-            <h2 className="text-2xl font-semibold tracking-tight">Sample cards</h2>
+            <h2 className="text-2xl font-semibold tracking-tight">
+              {deck.format === "PDF" ? "PDF previews" : "Sample cards"}
+            </h2>
             <div className="mt-4 grid gap-4 sm:grid-cols-3 sm:items-start">
               {deck.sampleCards.map((card) => (
                 <article
@@ -293,7 +333,7 @@ export default async function DeckPage({
                   {card.imageUrl ? (
                     <div className="bg-[#f6efe8]">
                       <Image
-                        alt={`Sample Anki card: ${card.question}`}
+                        alt={deck.format === "PDF" ? `PDF preview: ${card.question}` : `Sample Anki card: ${card.question}`}
                         className="h-auto w-full"
                         height={550}
                         sizes="(max-width: 640px) 100vw, 33vw"
