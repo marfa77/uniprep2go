@@ -324,21 +324,39 @@ export default async function DeckPage({
             <h2 className="text-2xl font-semibold tracking-tight">
               {deck.format === "PDF" ? "PDF previews" : "Sample cards"}
             </h2>
-            <div className="mt-4 grid gap-4 sm:grid-cols-3 sm:items-start">
+            {deck.format === "PDF" ? (
+              <p className="mt-2 max-w-2xl text-sm leading-7 text-[#5f5749]">
+                Real cropped pages from the PDF, zoomed so the study layout and practice-question
+                format are readable before checkout.
+              </p>
+            ) : null}
+            <div
+              className={
+                deck.format === "PDF"
+                  ? "mt-5 grid gap-5 lg:grid-cols-2 lg:items-start"
+                  : "mt-4 grid gap-4 sm:grid-cols-3 sm:items-start"
+              }
+            >
               {deck.sampleCards.map((card) => (
                 <article
                   className="overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]"
                   key={`${card.question}-${card.imageUrl}-${card.audioUrl ?? ""}`}
                 >
                   {card.imageUrl ? (
-                    <div className="bg-[#f6efe8]">
+                    <div
+                      className={
+                        deck.format === "PDF"
+                          ? "flex max-h-[520px] items-start justify-center overflow-hidden bg-[#f6efe8] p-3"
+                          : "bg-[#f6efe8]"
+                      }
+                    >
                       <Image
                         alt={deck.format === "PDF" ? `PDF preview: ${card.question}` : `Sample Anki card: ${card.question}`}
-                        className="h-auto w-full"
-                        height={550}
-                        sizes="(max-width: 640px) 100vw, 33vw"
+                        className={deck.format === "PDF" ? "h-auto w-full rounded-2xl" : "h-auto w-full"}
+                        height={deck.format === "PDF" ? 1700 : 550}
+                        sizes={deck.format === "PDF" ? "(max-width: 1024px) 100vw, 430px" : "(max-width: 640px) 100vw, 33vw"}
                         src={card.imageUrl}
-                        width={976}
+                        width={deck.format === "PDF" ? 1600 : 976}
                       />
                     </div>
                   ) : (
