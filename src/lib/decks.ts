@@ -1985,7 +1985,7 @@ export function getAvailableDecksByCategory(): Array<{
 
 export const featuredDeckSlugs = [
   "servsafe-manager-anki-deck",
-  "servsafe-manager-complete-study-guide",
+  "ptcb-pharmacy-technician-anki-deck",
   "sie-exam-anki-deck",
 ] as const;
 

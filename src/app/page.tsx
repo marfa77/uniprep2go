@@ -128,9 +128,9 @@ export default async function HomePage() {
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-8 text-[#4f493e]">
                 {siteConfig.name} is US-first: FINRA SIE, Series 7, Series 63,
-                insurance licensing, California real estate, ServSafe, CFA, and FRM
-                sit at the front of the catalog, with free timed mocks and printable
-                PDF cram sheets alongside Anki decks.
+                insurance licensing, California real estate, ServSafe, PTCB pharmacy
+                technician prep, CFA, and FRM sit at the front of the catalog, with free
+                timed mocks and printable PDF cram sheets alongside Anki decks.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
@@ -247,7 +247,7 @@ export default async function HomePage() {
                 Featured decks
               </h2>
               <p className="mt-2 text-[#4f493e]">
-                Top US picks for food safety certification, FINRA licensing, and printable
+                Top US picks for food safety, pharmacy technician licensing, and FINRA
                 exam prep.
               </p>
               <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
