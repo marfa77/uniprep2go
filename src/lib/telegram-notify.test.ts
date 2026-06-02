@@ -2,7 +2,8 @@ import { describe, expect, it } from "vitest";
 import { createFunnelEvent } from "./analytics";
 import { applyPriceRecordToDeck } from "./checkout-pricing";
 import { getCatalogDeckBySlug } from "./decks";
-import { toCheckoutClickMessage } from "./telegram-notify";
+import { getMockExamConfig } from "./mock-exams/configs";
+import { toCheckoutClickMessage, toMockStartedMessage } from "./telegram-notify";
 
 describe("telegram checkout alerts", () => {
   it("formats Gumroad and Lemon checkout click messages with deck facts", () => {
@@ -51,5 +52,36 @@ describe("telegram checkout alerts", () => {
 
     expect(lemonMessage).toContain("Provider: Lemon Squeezy");
     expect(lemonMessage).toContain("https://ciple-a2.lemonsqueezy.com/checkout/buy/");
+  });
+});
+
+describe("telegram mock alerts", () => {
+  it("formats mock start messages with source and visitor context", () => {
+    const mock = getMockExamConfig("series-7-readiness-check");
+    expect(mock).toBeDefined();
+
+    const message = toMockStartedMessage(
+      createFunnelEvent({
+        name: "mock_started",
+        deckSlug: "series-7-anki-deck",
+        source: "mock:series-7-readiness-check:start",
+        path: "/mock-exams/series-7-readiness-check",
+        referrer: "https://google.com/search?q=series+7+mock",
+        browserLanguage: "en-US",
+        country: "US",
+        region: "CA",
+        city: "Los Angeles",
+        screen: "1440x900",
+        clientIp: "203.0.113.42",
+        userAgent: "Mozilla/5.0",
+      }),
+      mock,
+    );
+
+    expect(message).toContain("UniPrep2Go mock started");
+    expect(message).toContain("Mock: Series 7 Readiness Check");
+    expect(message).toContain("Linked deck: series-7-anki-deck");
+    expect(message).toContain("Referrer: https://google.com/search?q=series+7+mock");
+    expect(message).toContain("IP: 203.0.113.42");
   });
 });

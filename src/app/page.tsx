@@ -8,17 +8,19 @@ import { formatDeckPriceLabel, getCheckoutActionLabel, getFeaturedPricedDecks, g
 import { getDeckCoverUrl } from "@/lib/deck-media";
 import {
   categoryLabels,
-  categoryOrder,
   primaryDeck,
   siteFaqs,
 } from "@/lib/decks";
 import { buildCatalogItemListJsonLd, buildSiteOrganizationJsonLd } from "@/lib/product-jsonld";
+import { getAllMockExams } from "@/lib/mock-exams/configs";
+import { buildMockExamItemListJsonLd } from "@/lib/mock-exams/llm";
+import { isMockExamRunnable } from "@/lib/mock-exams/question-bank";
 import { customDeckMailtoUrl, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "US Exam Prep Anki Decks | FINRA, Insurance, Real Estate, CFA | UniPrep2Go",
+  title: "2026 Exam Prep Anki Decks | FINRA, CFA, FRM, Insurance | UniPrep2Go",
   description:
-    "US-first Anki deck catalog for FINRA SIE, Series 7, Series 63, insurance licensing, California real estate, CFA, FRM, and language certification prep.",
+    "Independent 2026 Anki .apkg decks and free readiness checks for FINRA SIE, Series 7, Series 63, insurance, California real estate, CFA, FRM, and language exams.",
   keywords: [
     "US exam prep Anki decks",
     "FINRA SIE Anki deck",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
     "FRM Anki deck",
   ],
   openGraph: {
-    title: "US exam prep Anki decks for licensing and finance credentials",
+    title: "2026 exam prep Anki decks for FINRA, CFA, FRM, insurance, and real estate",
     description:
-      "Independent Anki decks for FINRA, insurance, real estate, CFA, FRM, and language certification review.",
+      "Independent Anki .apkg decks plus free readiness checks with topic scoring and pass/no-pass reports.",
     images: [
       {
         url: "/home/hero.webp",
@@ -63,6 +65,7 @@ export default async function HomePage() {
   const prices = availableDecks.map((d) => d.price.amount).filter((amount) => amount > 0);
   const minPrice = prices.length > 0 ? Math.min(...prices) : 0;
   const maxPrice = prices.length > 0 ? Math.max(...prices) : 0;
+  const mockExams = getAllMockExams();
 
   const sectionEvents = [
     { selector: "#catalog", name: "catalog_view" as const },
@@ -74,6 +77,7 @@ export default async function HomePage() {
     "@graph": [
       {
         "@type": "WebSite",
+        "@id": `${siteConfig.url}/#website`,
         name: siteConfig.name,
         url: siteConfig.url,
         description: siteConfig.description,
@@ -83,6 +87,7 @@ export default async function HomePage() {
       },
       buildSiteOrganizationJsonLd(),
       buildCatalogItemListJsonLd(availableDecks),
+      buildMockExamItemListJsonLd(),
       {
         "@type": "FAQPage",
         mainEntity: siteFaqs.map((faq) => ({
@@ -176,6 +181,58 @@ export default async function HomePage() {
           </div>
         </section>
 
+        <section className="border-b border-[#18140f]/10 bg-[#fffaf0]">
+          <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 sm:px-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
+                New to Anki?
+              </p>
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
+                What are Anki decks?
+              </h2>
+              <p className="mt-4 leading-7 text-[#4f493e]">
+                An Anki deck is a set of digital flashcards for the Anki spaced-repetition app.
+                UniPrep2Go decks are usually delivered as <code className="rounded bg-[#18140f]/5 px-1.5 py-0.5 text-sm">.apkg</code> files:
+                import the file once, then review a small queue of cards every day.
+              </p>
+              <Link
+                className="mt-5 inline-flex text-sm font-semibold text-[#1f3a5f] underline-offset-4 hover:underline"
+                href="/anki-starter-kit"
+              >
+                Open the 15-minute Anki Starter Kit
+              </Link>
+            </div>
+
+            <ol className="grid gap-4 sm:grid-cols-3">
+              {[
+                {
+                  title: "Install Anki",
+                  detail: "Use the free desktop app first; it imports .apkg files most reliably.",
+                },
+                {
+                  title: "Import the deck",
+                  detail: "Open Anki, choose File then Import, and select the downloaded deck file.",
+                },
+                {
+                  title: "Review daily",
+                  detail: "Anki schedules harder cards sooner and easier cards later, so practice stays focused.",
+                },
+              ].map((step, index) => (
+                <li
+                  className="rounded-3xl border border-[#18140f]/10 bg-[#f7f3ea] p-5"
+                  key={step.title}
+                >
+                  <span className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-[#1f3a5f]">
+                    Step {index + 1}
+                  </span>
+                  <h3 className="mt-3 font-semibold text-[#18140f]">{step.title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-[#5f5749]">{step.detail}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+
         {featuredDecks.length > 0 && (
           <section className="border-b border-[#18140f]/10 bg-[#fffaf0]/40">
             <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
@@ -245,6 +302,59 @@ export default async function HomePage() {
           </section>
         )}
 
+        <section id="mock-exams" className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
+          <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
+            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
+              Finance mock exams
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
+              Free SIE full mock plus readiness checks during launch month
+            </h2>
+            <p className="mt-3 max-w-3xl text-[#4f493e]">
+              The SIE bank is a full timed mock. CFA, FRM, FINRA Series, insurance, and real estate
+              previews are readiness diagnostics built from the same Anki deck content, with topic
+              scoring, wrong-answer review, and a linked deck repair plan.
+            </p>
+            <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              {mockExams.map((mock) => {
+                const live = mock.status === "live";
+                const ctaLabel = isMockExamRunnable(mock.slug)
+                  ? live
+                    ? "Start free mock"
+                    : "Start readiness check"
+                  : "View details";
+
+                return (
+                  <Link
+                    key={mock.slug}
+                    className={`group rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-4 transition hover:-translate-y-0.5 hover:border-[#1f3a5f]/30 ${
+                      live ? "md:col-span-2 lg:col-span-2" : ""
+                    }`}
+                    href={`/mock-exams/${mock.slug}`}
+                  >
+                    <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-[#1f3a5f]">
+                      {live ? "Full mock available" : "Readiness preview"}
+                    </p>
+                    <h3 className="mt-2 text-base font-semibold text-[#18140f]">{mock.shortTitle}</h3>
+                    <p className="mt-2 text-xs leading-5 text-[#5f5749]">
+                      {mock.questionCount} q · {mock.durationMinutes} min · pass {mock.passRule.passPercent}%
+                    </p>
+                    <p className="mt-4 text-sm font-medium text-[#1f3a5f] group-hover:underline">
+                      {ctaLabel}
+                    </p>
+                  </Link>
+                );
+              })}
+            </div>
+            <Link
+              className="mt-6 inline-flex text-sm font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+              href="/mock-exams"
+            >
+              View all finance mocks
+            </Link>
+          </div>
+        </section>
+
         <section id="catalog" className="border-b border-[#18140f]/10">
           <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
             <h2 className="text-2xl font-semibold tracking-tight text-[#18140f]">
@@ -273,6 +383,7 @@ export default async function HomePage() {
                           <div className="flex min-w-0 items-start gap-4">
                             {thumbnail ? (
                               <Link
+                                aria-label={`View ${deck.title}`}
                                 className="shrink-0 overflow-hidden rounded-2xl border border-[#18140f]/10 bg-[#f6efe8]"
                                 href={`/decks/${deck.slug}`}
                               >
@@ -376,6 +487,15 @@ export default async function HomePage() {
                   /api/facts
                 </Link>{" "}
                 — full catalog JSON
+              </li>
+              <li>
+                <Link
+                  href="/api/mock-exams"
+                  className="font-medium text-[#18140f] underline-offset-2 hover:underline"
+                >
+                  /api/mock-exams
+                </Link>{" "}
+                — finance mock exam facts JSON
               </li>
               <li>
                 <a

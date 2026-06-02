@@ -6,11 +6,65 @@ import { FunnelTracker, TrackedCheckoutLink } from "@/components/funnel-tracker"
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { catalogAvailableDecks, categoryLabels } from "@/lib/decks";
-import { formatDeckPriceLabel, getCheckoutActionLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
+import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
+import { getDeckCoverUrl } from "@/lib/deck-media";
 import { buildDeckPageJsonLd } from "@/lib/product-jsonld";
-import { absoluteUrl, siteConfig } from "@/lib/site";
+import { getAllMockExams } from "@/lib/mock-exams/configs";
 
 export const revalidate = 3600;
+
+function buildDeckSeoTitle(deck: Awaited<ReturnType<typeof getPricedDeckBySlug>>) {
+  if (!deck) {
+    return "Deck not found";
+  }
+
+  const year = deck.facts.examYear.includes("2026") ? "2026 " : "";
+
+  if (deck.slug === "cfa-level-1-anki-deck") {
+    return "2026 CFA Level 1 Anki Deck | 342+ Formula Flashcards";
+  }
+
+  if (deck.slug === "frm-part-1-anki-deck") {
+    return "2026 FRM Part 1 Anki Deck | 444 Formula Flashcards";
+  }
+
+  if (deck.slug === "sie-exam-anki-deck") {
+    return "2026 SIE Exam Anki Deck | 300 Cards + Free Mock";
+  }
+
+  if (deck.slug === "series-7-anki-deck") {
+    return "2026 Series 7 Top-Off Anki Deck | Suitability & Options";
+  }
+
+  if (deck.slug === "series-63-anki-deck") {
+    return "2026 Series 63 Anki Deck | State Law Flashcards";
+  }
+
+  return `${year}${deck.shortName} Anki Deck | UniPrep2Go`;
+}
+
+function buildDeckSeoDescription(deck: Awaited<ReturnType<typeof getPricedDeckBySlug>>) {
+  if (!deck) {
+    return "";
+  }
+
+  const price = formatDeckPriceLabel(deck);
+  const base = `${deck.facts.cards} cards, ${deck.format} download, ${deck.facts.topics}. ${price} via ${deck.checkoutProvider}.`;
+
+  if (deck.slug === "sie-exam-anki-deck") {
+    return `${base} Covers current FINRA SIE topic weights with a linked free 75-question, 105-minute mock and 70% target.`;
+  }
+
+  if (deck.slug === "series-7-anki-deck") {
+    return `${base} Focuses on FINRA job functions, suitability, options, products, and a linked 60-question readiness check.`;
+  }
+
+  if (deck.category === "finance") {
+    return `${base} Independent active-recall study aid with sample cards and free linked readiness checks where available.`;
+  }
+
+  return `${base} Independent spaced-repetition study aid with sample cards and import guidance.`;
+}
 
 export function generateStaticParams() {
   return catalogAvailableDecks.map((deck) => ({ slug: deck.slug }));
@@ -28,11 +82,35 @@ export async function generateMetadata({
     return { title: "Deck not found" };
   }
 
+  const image = getDeckCoverUrl(deck);
+  const title = buildDeckSeoTitle(deck);
+  const description = buildDeckSeoDescription(deck);
+
   return {
-    title: deck.title,
-    description: deck.directAnswer,
+    title,
+    description,
     alternates: {
       canonical: `/decks/${deck.slug}`,
+    },
+    openGraph: {
+      title,
+      description,
+      url: `/decks/${deck.slug}`,
+      type: "website",
+      images: image
+        ? [
+            {
+              url: image,
+              alt: `${deck.shortName} Anki deck preview`,
+            },
+          ]
+        : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: image ? [image] : undefined,
     },
   };
 }
@@ -52,6 +130,7 @@ export default async function DeckPage({
   const priceLabel = formatDeckPriceLabel(deck);
   const checkoutActionLabel =
     deck.checkoutProvider === "App Store" ? "Open in App Store" : "Buy the deck";
+  const linkedMock = getAllMockExams().find((mock) => mock.linkedDeckSlug === deck.slug);
 
   const sectionEvents = [
     { selector: "#facts", name: "product_facts_view" as const },
@@ -115,6 +194,27 @@ export default async function DeckPage({
             </Link>
           )}
         </div>
+
+        {linkedMock ? (
+          <section className="mt-8 rounded-3xl border border-[#1f3a5f]/15 bg-[#fffaf0] p-5">
+            <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#1f3a5f]">
+              Free readiness check
+            </p>
+            <h2 className="mt-2 text-xl font-semibold tracking-tight">
+              Test this deck with {linkedMock.questionCount} timed questions
+            </h2>
+            <p className="mt-2 text-sm leading-7 text-[#4f493e]">
+              Run the linked {linkedMock.shortTitle} for topic scoring, answer review, and a pass/no-pass
+              remediation plan before deciding what to drill next.
+            </p>
+            <Link
+              className="mt-4 inline-flex rounded-full border border-[#1f3a5f]/25 px-5 py-2.5 text-sm font-semibold text-[#1f3a5f] transition hover:border-[#1f3a5f]"
+              href={`/mock-exams/${linkedMock.slug}`}
+            >
+              Start free readiness check
+            </Link>
+          </section>
+        ) : null}
 
         <section id="facts" className="mt-12">
           <h2 className="text-2xl font-semibold tracking-tight">Product facts</h2>

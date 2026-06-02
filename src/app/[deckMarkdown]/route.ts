@@ -1,5 +1,5 @@
 import { catalogAvailableDecks } from "@/lib/decks";
-import { getPricedDecks, getPricedDeckBySlug } from "@/lib/checkout-pricing";
+import { getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import { buildDeckMarkdown } from "@/lib/llm-docs";
 
 export const revalidate = 3600;

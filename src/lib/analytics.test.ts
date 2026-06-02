@@ -12,6 +12,16 @@ describe("funnel analytics contract", () => {
       "faq_view",
       "checkout_intent",
       "checkout_click",
+      "mock_landing_view",
+      "mock_started",
+      "mock_question_answered",
+      "mock_completed",
+      "mock_result_view",
+      "mock_pass_verdict",
+      "mock_no_pass_verdict",
+      "mock_unlock_interest",
+      "mock_deck_cta_click",
+      "mock_checkout_placeholder_click",
     ]);
   });
 

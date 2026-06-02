@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: "UniPrep2Go | Anki Deck Catalog",
+  title: "UniPrep2Go | 2026 Exam Prep Anki Decks",
   description:
-    "Browse independent Anki flashcard decks for CFA, CIPLE, DELF, commodity trading, IB Biology, and more. LLM-readable product facts and checkout links.",
+    "Independent 2026 Anki decks and free readiness checks for CFA, FRM, FINRA, CIPLE, DELF, insurance, real estate, and other exam prep.",
   alternates: {
     canonical: "/",
   },

@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { availableDecks } from "../lib/decks";
+import { getAllMockExams } from "../lib/mock-exams/configs";
 import { intentPages } from "../lib/intent-pages";
 import { siteConfig } from "../lib/site";
 
@@ -15,18 +16,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  const deckDocuments = availableDecks.map((deck) => ({
-    url: `${siteUrl}/${deck.slug}.md`,
-    lastModified,
-    changeFrequency: "monthly" as const,
-    priority: 0.85,
-  }));
-
   const intentAnswerPages = intentPages.map((page) => ({
     url: `${siteUrl}/${page.slug}`,
     lastModified,
     changeFrequency: "monthly" as const,
     priority: 0.8,
+  }));
+
+  const mockPages = getAllMockExams().map((mock) => ({
+    url: `${siteUrl}/mock-exams/${mock.slug}`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority: 0.88,
   }));
 
   return [
@@ -43,26 +44,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${siteUrl}/anki-starter-kit`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.82,
+    },
+    {
       url: `${siteUrl}/cfa-level-1-anki-deck-vs-curriculum`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: `${siteUrl}/llms.txt`,
+      url: `${siteUrl}/mock-exams`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.95,
+      priority: 0.9,
     },
-    {
-      url: `${siteUrl}/llms-full.txt`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.95,
-    },
+    ...mockPages,
     ...intentAnswerPages,
     ...deckPages,
-    ...deckDocuments,
     {
       url: `${siteUrl}/contact`,
       lastModified,

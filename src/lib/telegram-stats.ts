@@ -47,6 +47,10 @@ function formatRates(aggregate: FunnelAggregate) {
 
 function formatSummaryBlock(title: string, aggregate: FunnelAggregate) {
   const rates = formatRates(aggregate);
+  const mockStarts = aggregate.byEvent.mock_started;
+  const mockCompletions = aggregate.byEvent.mock_completed;
+  const mockCompletionRate =
+    mockStarts > 0 ? `${((mockCompletions / mockStarts) * 100).toFixed(1)}%` : "n/a";
 
   return [
     title,
@@ -61,6 +65,13 @@ function formatSummaryBlock(title: string, aggregate: FunnelAggregate) {
     `Checkout clicks: ${rates.checkoutClicks}`,
     `CTA rate: ${rates.ctaRate}`,
     `Click rate: ${rates.clickRate}`,
+    `Mock landing views: ${aggregate.byEvent.mock_landing_view}`,
+    `Mock starts: ${mockStarts}`,
+    `Mock completions: ${mockCompletions}`,
+    `Mock completion rate: ${mockCompletionRate}`,
+    `Mock pass verdicts: ${aggregate.byEvent.mock_pass_verdict}`,
+    `Mock no-pass verdicts: ${aggregate.byEvent.mock_no_pass_verdict}`,
+    `Mock interest clicks: ${aggregate.byEvent.mock_unlock_interest}`,
     `Window started: ${aggregate.startedAt ?? "n/a"}`,
     `Last event: ${aggregate.updatedAt ?? "n/a"}`,
   ].join("\n");
@@ -73,6 +84,78 @@ function formatRankedList(title: string, entries: Record<string, number>, limit 
     .map(([key, count]) => `- ${key}: ${count}`);
 
   return [title, lines.join("\n") || "- no data yet"].join("\n");
+}
+
+const mockEventLabels = {
+  landing: "landing",
+  start: "starts",
+  complete: "completions",
+  result_view: "results",
+  pass: "pass",
+  no_pass: "no-pass",
+  unlock_interest: "interest",
+  deck_cta_click: "deck CTA",
+} as const;
+
+function parseMockSource(source: string) {
+  const match = source.match(/^mock:([^:]+):(.+)$/);
+
+  if (!match) {
+    return undefined;
+  }
+
+  return { slug: match[1], action: normalizeMockAction(match[2]) };
+}
+
+function normalizeMockAction(action: string) {
+  if (action === "started") {
+    return "start";
+  }
+
+  if (action === "completed") {
+    return "complete";
+  }
+
+  if (action === "landing_view") {
+    return "landing";
+  }
+
+  if (action === "interest" || action.startsWith("interest:")) {
+    return "unlock_interest";
+  }
+
+  if (action.startsWith("verdict:")) {
+    return "result_view";
+  }
+
+  return action;
+}
+
+function formatMockBreakdown(title: string, aggregate: FunnelAggregate) {
+  const byMock: Record<string, Record<string, number>> = {};
+
+  for (const [source, count] of Object.entries(aggregate.bySource)) {
+    const parsed = parseMockSource(source);
+
+    if (!parsed) {
+      continue;
+    }
+
+    byMock[parsed.slug] ??= {};
+    byMock[parsed.slug][parsed.action] = (byMock[parsed.slug][parsed.action] ?? 0) + count;
+  }
+
+  const lines = Object.entries(byMock)
+    .map(([slug, counts]) => {
+      const parts = Object.entries(mockEventLabels)
+        .map(([action, label]) => `${label} ${counts[action] ?? 0}`)
+        .join(" · ");
+
+      return `- ${slug}: ${parts}`;
+    })
+    .sort();
+
+  return [title, lines.join("\n") || "- no mock data yet"].join("\n");
 }
 
 function formatRecentEvents(stats: FunnelStats, limit = 20) {
@@ -111,6 +194,8 @@ export function toTelegramStatsMessages(stats: FunnelStats) {
     formatSummaryBlock("Current period (since last reset)", stats),
     formatRankedList("Top decks (all-time)", stats.lifetime.byDeck),
     formatRankedList("Top decks (current period)", stats.byDeck),
+    formatMockBreakdown("Mock exams breakdown (all-time)", stats.lifetime),
+    formatMockBreakdown("Mock exams breakdown (current period)", stats),
     formatRankedList("Top sources (all-time)", lifetimeSources),
     formatRankedList("Top sources (current period)", currentSources),
     formatRankedList("Top countries (all-time)", stats.lifetime.byCountry),

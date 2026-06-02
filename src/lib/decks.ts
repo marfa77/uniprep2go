@@ -1495,6 +1495,87 @@ const rawDecks: Deck[] = [
     ],
   },
 
+  // ── Professional / Food Safety ─────────────────────────────────────────
+  {
+    slug: "servsafe-manager-anki-deck",
+    category: "professional",
+    status: "available",
+    title: "ServSafe Manager Anki Deck — 300 Food Safety Flashcards",
+    shortName: "ServSafe Manager",
+    subtitle: "A focused Anki deck for ServSafe Manager food safety review.",
+    directAnswer:
+      "UniPrep2Go sells an independent ServSafe Manager Anki deck with 300 high-yield food safety flashcards covering foodborne illness, time and temperature control, cross-contamination, personal hygiene, cleaning and sanitizing, receiving and storage, HACCP basics, and manager responsibilities. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck is a supplementary active-recall study aid and is not official ServSafe or National Restaurant Association material.",
+    lastUpdated: "2026-06-02",
+    audience:
+      "Restaurant managers, food handlers moving into supervisor roles, hospitality students, and ServSafe Manager candidates who want spaced-repetition review instead of rereading notes.",
+    format: ".apkg",
+    coverImage: "/covers/servsafe-manager-anki-deck.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/ldpevc",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "300",
+      topics:
+        "ServSafe Manager food safety concepts: foodborne illness, TCS food, time and temperature control, contamination prevention, hygiene, cleaning, sanitizing, receiving, storage, HACCP, and manager duties",
+      formulas: "Food safety definitions, prevention rules, common exam traps, and scenario-style recall prompts",
+      examYear: "Current ServSafe Manager food safety review",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [
+      { name: "Foodborne Illness and Contamination", examWeight: "ServSafe Manager topic", cards: "High-yield cards" },
+      { name: "Time and Temperature Control", examWeight: "ServSafe Manager topic", cards: "High-yield cards" },
+      { name: "Personal Hygiene and Cross-Contamination", examWeight: "ServSafe Manager topic", cards: "High-yield cards" },
+      { name: "Cleaning, Sanitizing, Receiving, and Storage", examWeight: "ServSafe Manager topic", cards: "High-yield cards" },
+      { name: "HACCP and Manager Responsibilities", examWeight: "ServSafe Manager topic", cards: "High-yield cards" },
+    ],
+    sampleCards: [
+      {
+        question: "What is the temperature danger zone?",
+        answer:
+          "The range where pathogens can grow quickly in TCS food. ServSafe commonly teaches 41°F to 135°F; managers limit how long food stays in that range.",
+        imageUrl: "/samples/servsafe-manager-anki-deck-sample-1.webp",
+      },
+      {
+        question: "What is cross-contamination?",
+        answer:
+          "The transfer of pathogens from one food or surface to another, often through hands, cutting boards, utensils, storage errors, or unclean equipment.",
+        imageUrl: "/samples/servsafe-manager-anki-deck-sample-2.webp",
+      },
+      {
+        question: "What does sanitizing do?",
+        answer:
+          "Sanitizing reduces pathogens on a cleaned surface to safe levels. Clean first, then sanitize with the correct concentration and contact time.",
+        imageUrl: "/samples/servsafe-manager-anki-deck-sample-3.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "What does the ServSafe Manager deck include?",
+        answer:
+          "300 Anki flashcards for food safety review, including contamination, foodborne illness, TCS foods, time-temperature control, hygiene, cleaning, sanitizing, receiving, storage, HACCP basics, and manager duties.",
+      },
+      {
+        question: "Who is this deck for?",
+        answer:
+          "It is for ServSafe Manager candidates, restaurant managers, food-service supervisors, hospitality students, and food handlers who want active-recall review.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
+      },
+      {
+        question: "Is this official ServSafe material?",
+        answer:
+          "No. This is an independent study aid and is not affiliated with, endorsed by, or sponsored by ServSafe or the National Restaurant Association.",
+      },
+      {
+        question: "Does this replace the official course or exam practice?",
+        answer:
+          "No. Use it as a spaced-repetition supplement for definitions, rules, and food safety recall alongside your official training, handbook, and practice questions.",
+      },
+    ],
+  },
+
   // ── Professional / Commodities ─────────────────────────────────────────
   {
     slug: "bench-energy-metal-trader-anki-deck",
@@ -1760,6 +1841,11 @@ export const siteFaqs = [
     question: "Which US exams does UniPrep2Go cover?",
     answer:
       "The catalog includes US-market decks for FINRA SIE, Series 7, Series 63, California real estate salesperson exam prep, Life & Health insurance licensing, and Property & Casualty insurance licensing, plus finance credential decks such as CFA Level 1 and FRM Part 1.",
+  },
+  {
+    question: "What is an Anki deck?",
+    answer:
+      "An Anki deck is a collection of digital flashcards used in the Anki spaced-repetition app. You import a .apkg deck, answer cards each day, and Anki automatically schedules harder cards more often and easier cards less often so you review before you forget.",
   },
   {
     question: "What file format is delivered?",

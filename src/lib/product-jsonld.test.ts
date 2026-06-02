@@ -46,7 +46,11 @@ describe("product json-ld", () => {
   it("omits product schema when price is pending", () => {
     expect(buildProductOffer(pendingDeck)).toBeNull();
     expect(buildProductJsonLd(pendingDeck)).toBeNull();
-    expect(buildDeckPageJsonLd(pendingDeck)["@graph"]).toHaveLength(1);
+    expect(buildDeckPageJsonLd(pendingDeck)["@graph"].map((node) => node["@type"])).toEqual([
+      "WebPage",
+      "FAQPage",
+      "BreadcrumbList",
+    ]);
   });
 
   it("requires at least one image for merchant product schema", () => {
@@ -73,6 +77,8 @@ describe("product json-ld", () => {
   it("uses Brand and absolute image URLs on deck pages", () => {
     const graph = buildDeckPageJsonLd(pricedDeck)["@graph"];
     const product = graph.find((node) => node["@type"] === "Product");
+    const webpage = graph.find((node) => node["@type"] === "WebPage");
+    const breadcrumb = graph.find((node) => node["@type"] === "BreadcrumbList");
 
     expect(product).toMatchObject({
       brand: { "@type": "Brand", name: "PixID Studio" },
@@ -82,11 +88,27 @@ describe("product json-ld", () => {
         "https://uniprep2go.study/samples/cfa-level-1-anki-deck-sample-3.webp",
       ],
     });
+    expect(webpage).toMatchObject({
+      "@id": "https://uniprep2go.study/decks/cfa-level-1-anki-deck#webpage",
+      about: {
+        "@id": "https://uniprep2go.study/decks/cfa-level-1-anki-deck#product",
+      },
+    });
+    expect(breadcrumb).toMatchObject({
+      itemListElement: expect.arrayContaining([
+        expect.objectContaining({ position: 1, name: "Home" }),
+        expect.objectContaining({ position: 3, name: pricedDeck.shortName }),
+      ]),
+    });
   });
 
   it("publishes US-first organization context for search and LLMs", () => {
     expect(buildSiteOrganizationJsonLd()).toMatchObject({
       "@type": "Organization",
+      contactPoint: {
+        "@type": "ContactPoint",
+        email: "support@uniprep2go.study",
+      },
       areaServed: {
         "@type": "Country",
         name: "United States",

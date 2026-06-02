@@ -3,6 +3,7 @@ import sitemap from "../app/sitemap";
 import robots from "../app/robots";
 import { availableDecks } from "./decks";
 import { intentPages } from "./intent-pages";
+import { getAllMockExams } from "./mock-exams/configs";
 import { absoluteUrl, siteConfig } from "./site";
 
 describe("intent pages visibility", () => {
@@ -38,21 +39,41 @@ describe("intent pages visibility", () => {
       expect(urls).toContain(absoluteUrl(`/${page.slug}`));
     }
 
-    expect(urls).toContain(absoluteUrl("/llms-full.txt"));
     expect(urls).toContain(`${siteConfig.url}/`);
+    expect(urls).toContain(absoluteUrl("/anki-starter-kit"));
+    expect(urls).toContain(absoluteUrl("/decks/servsafe-manager-anki-deck"));
     expect(urls.every((url) => url.startsWith(siteConfig.url))).toBe(true);
     expect(urls.some((url) => url.includes("://www."))).toBe(false);
-    expect(robots().sitemap).toBe(`${siteConfig.url}/sitemap.xml`);
+    expect(urls.every((url) => !url.endsWith(".md"))).toBe(true);
+    expect(urls.every((url) => !url.includes("/api/"))).toBe(true);
+    expect(urls).not.toContain(absoluteUrl("/llms.txt"));
+    expect(urls).not.toContain(absoluteUrl("/llms-full.txt"));
+    expect(robots().sitemap).toEqual([
+      `${siteConfig.url}/sitemap.xml`,
+      `${siteConfig.url}/llm-sitemap.xml`,
+    ]);
     expect(robots().host).toBe(siteConfig.url);
     expect(JSON.stringify(rules)).toContain("\"allow\":\"/\"");
   });
 
-  it("lists every deck page and markdown doc in the sitemap", () => {
+  it("lists every HTML deck page in the sitemap", () => {
     const urls = sitemap().map((entry) => entry.url);
 
     for (const deck of availableDecks) {
       expect(urls).toContain(absoluteUrl(`/decks/${deck.slug}`));
-      expect(urls).toContain(absoluteUrl(`/${deck.slug}.md`));
+      expect(urls).not.toContain(absoluteUrl(`/${deck.slug}.md`));
+    }
+  });
+
+  it("lists every mock HTML page in the Google sitemap", () => {
+    const urls = sitemap().map((entry) => entry.url);
+
+    expect(urls).toContain(absoluteUrl("/mock-exams"));
+
+    for (const mock of getAllMockExams()) {
+      expect(urls).toContain(absoluteUrl(`/mock-exams/${mock.slug}`));
+      expect(urls).not.toContain(absoluteUrl(`/api/mock-exams/${mock.slug}`));
+      expect(urls).not.toContain(absoluteUrl(`/mock-exams/${mock.slug}/markdown`));
     }
   });
 });

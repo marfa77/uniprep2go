@@ -317,6 +317,28 @@ describe("deck catalog", () => {
     ]);
   });
 
+  it("includes the ServSafe Manager deck as a full food safety product", () => {
+    const servSafeDeck = getDeckBySlug("servsafe-manager-anki-deck");
+
+    expect(servSafeDeck?.status).toBe("available");
+    expect(servSafeDeck).toMatchObject({
+      category: "professional",
+      checkoutUrl: "https://pixidstudio.gumroad.com/l/ldpevc",
+      checkoutProvider: "Gumroad",
+      checkoutSeller: "PixID Studio",
+      format: ".apkg",
+      coverImage: "/covers/servsafe-manager-anki-deck.webp",
+    });
+    expect(servSafeDeck?.facts.cards).toBe("300");
+    expect(servSafeDeck?.sampleCards).toHaveLength(3);
+    expect(servSafeDeck?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/servsafe-manager-anki-deck-sample-1.webp",
+      "/samples/servsafe-manager-anki-deck-sample-2.webp",
+      "/samples/servsafe-manager-anki-deck-sample-3.webp",
+    ]);
+    expect(servSafeDeck?.directAnswer).toContain("ServSafe Manager Anki deck");
+  });
+
   it("uses three real sample previews for the IB Biology SL deck", () => {
     const biologyDeck = getDeckBySlug("ib-biology-sl-anki-deck");
 
@@ -407,6 +429,7 @@ describe("deck catalog", () => {
       "delf-b2-grammar-anki-deck":
         "DELF B2 French Grammar Anki Deck — 200 Cards",
       "ib-biology-sl-anki-deck": "IB Biology SL Anki Deck — 149 Smart Flashcards",
+      "servsafe-manager-anki-deck": "ServSafe Manager Anki Deck — 300 Food Safety Flashcards",
       "bench-energy-metal-trader-anki-deck":
         "Metal Trader Anki Deck — 202 Commodity Flashcards",
       "bench-energy-oil-trader-anki-deck":

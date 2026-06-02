@@ -52,7 +52,7 @@ function isFunnelExcluded() {
   );
 }
 
-function sendCheckoutClickEvent(payload: Record<string, unknown>) {
+function sendImmediateEvent(payload: Record<string, unknown>) {
   void fetch("/api/events", {
     method: "POST",
     headers: {
@@ -76,8 +76,8 @@ export function trackFunnelEvent(input: TrackEventInput) {
     internal: false,
   };
 
-  if (input.name === "checkout_click") {
-    sendCheckoutClickEvent(payload);
+  if (input.name === "checkout_click" || input.name === "mock_started") {
+    sendImmediateEvent(payload);
     return;
   }
 

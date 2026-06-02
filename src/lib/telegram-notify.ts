@@ -1,6 +1,7 @@
 import type { FunnelEvent } from "./analytics";
 import type { AvailableDeck, CatalogAvailableDeck } from "./decks";
 import { formatDeckPriceLabel } from "./checkout-pricing";
+import type { MockExamConfig } from "./mock-exams/types";
 import { getRedisClient } from "./redis";
 import { sendTelegramMessage } from "./telegram-client";
 
@@ -88,6 +89,31 @@ export function toCheckoutClickMessage(event: FunnelEvent, deck?: AvailableDeck 
   ].join("\n");
 }
 
+export function toMockStartedMessage(event: FunnelEvent, mock?: MockExamConfig) {
+  const mockTitle = mock?.title ?? event.source?.replace(/^mock:/, "") ?? "unknown mock";
+  const mockSlug = mock?.slug ?? event.source?.match(/^mock:([^:]+)/)?.[1] ?? "unknown";
+  const linkedDeck = mock?.linkedDeckSlug ?? event.deckSlug;
+
+  return [
+    "UniPrep2Go mock started",
+    "",
+    `Mock: ${mockTitle}`,
+    `Mock slug: ${mockSlug}`,
+    `Linked deck: ${linkedDeck}`,
+    `Source: ${event.source ?? "unknown"}`,
+    `Path: ${event.path ?? "n/a"}`,
+    `Country: ${event.country ?? "n/a"}`,
+    `Region: ${event.region ?? "n/a"}`,
+    `City: ${event.city ?? "n/a"}`,
+    `Browser language: ${event.browserLanguage ?? event.acceptLanguage ?? "n/a"}`,
+    `Screen: ${event.screen ?? "n/a"}`,
+    `Referrer: ${event.referrer ?? "direct"}`,
+    `IP: ${event.clientIp ?? "n/a"}`,
+    `User agent: ${event.userAgent ?? "n/a"}`,
+    `Time: ${event.occurredAt}`,
+  ].join("\n");
+}
+
 export async function notifyCheckoutClick(
   event: FunnelEvent,
   deck?: AvailableDeck | CatalogAvailableDeck,
@@ -100,4 +126,15 @@ export async function notifyCheckoutClick(
   }
 
   return sendTelegramMessage(chatId, toCheckoutClickMessage(event, deck));
+}
+
+export async function notifyMockStarted(event: FunnelEvent, mock?: MockExamConfig) {
+  const chatId = await getTelegramNotifyChatId();
+
+  if (!chatId) {
+    console.warn("[telegram_notify] no chat id configured; send /stats once or set TELEGRAM_CHAT_ID");
+    return false;
+  }
+
+  return sendTelegramMessage(chatId, toMockStartedMessage(event, mock));
 }

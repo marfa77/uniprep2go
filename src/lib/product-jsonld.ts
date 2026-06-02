@@ -85,10 +85,26 @@ export function buildProductJsonLd(deck: AvailableDeck) {
 
 export function buildDeckPageJsonLd(deck: AvailableDeck) {
   const product = buildProductJsonLd(deck);
+  const deckUrl = absoluteUrl(`/decks/${deck.slug}`);
 
   return {
     "@context": "https://schema.org",
     "@graph": [
+      {
+        "@type": "WebPage" as const,
+        "@id": `${deckUrl}#webpage`,
+        name: deck.title,
+        description: deck.directAnswer,
+        url: deckUrl,
+        isPartOf: {
+          "@id": `${siteConfig.url}/#website`,
+        },
+        about: product
+          ? {
+              "@id": `${deckUrl}#product`,
+            }
+          : undefined,
+      },
       ...(product
         ? [
             {
@@ -105,6 +121,30 @@ export function buildDeckPageJsonLd(deck: AvailableDeck) {
           name: faq.question,
           acceptedAnswer: { "@type": "Answer" as const, text: faq.answer },
         })),
+      },
+      {
+        "@type": "BreadcrumbList" as const,
+        "@id": `${deckUrl}#breadcrumb`,
+        itemListElement: [
+          {
+            "@type": "ListItem" as const,
+            position: 1,
+            name: "Home",
+            item: siteConfig.url,
+          },
+          {
+            "@type": "ListItem" as const,
+            position: 2,
+            name: categoryLabels[deck.category as DeckCategory],
+            item: `${siteConfig.url}/#catalog`,
+          },
+          {
+            "@type": "ListItem" as const,
+            position: 3,
+            name: deck.shortName,
+            item: deckUrl,
+          },
+        ],
       },
     ],
   };
@@ -132,6 +172,11 @@ export function buildSiteOrganizationJsonLd() {
     "@id": `${siteConfig.url}/#organization`,
     name: siteConfig.name,
     url: siteConfig.url,
+    contactPoint: {
+      "@type": "ContactPoint" as const,
+      email: siteConfig.contactEmail,
+      contactType: "customer support",
+    },
     areaServed: {
       "@type": "Country" as const,
       name: siteConfig.primaryMarket,

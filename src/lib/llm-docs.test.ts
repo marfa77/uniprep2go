@@ -48,9 +48,34 @@ describe("LLM documents", () => {
       price_pending: false,
       price_source: "gumroad",
       cover_image: "https://uniprep2go.study/covers/cfa-level-1-anki-deck.webp",
+      study_mode: "active recall and spaced repetition",
+      linked_readiness_check: {
+        slug: "cfa-level-1-readiness-check",
+        question_count: 60,
+      },
     });
+    expect(facts.serp_answer).toContain("342+ cards");
     expect(facts.topic_coverage).toHaveLength(10);
     expect(facts.sample_cards).toHaveLength(3);
+  });
+
+  it("exposes the ServSafe Manager deck as a full catalog product", () => {
+    const deck = pricedDeck("servsafe-manager-anki-deck", 11);
+    const facts = buildDeckFacts(deck);
+    const markdown = buildDeckMarkdown(deck);
+
+    expect(facts).toMatchObject({
+      slug: "servsafe-manager-anki-deck",
+      category: "professional",
+      card_count: "300",
+      checkout_url: "https://pixidstudio.gumroad.com/l/ldpevc",
+      checkout_provider: "Gumroad",
+      format: ".apkg",
+      cover_image: "https://uniprep2go.study/covers/servsafe-manager-anki-deck.webp",
+    });
+    expect(facts.sample_cards).toHaveLength(3);
+    expect(markdown).toContain("ServSafe Manager Anki Deck");
+    expect(markdown).toContain("food safety");
   });
 
   it("uses absolute image URLs for sample cards", () => {
@@ -71,6 +96,8 @@ describe("LLM documents", () => {
       "Immigration survival guides and citizenship test prep in the Prep2Go Immigration iOS app",
     );
     expect(catalog.primary_use_cases).toContain("FINRA SIE, Series 7, and Series 63 exam prep");
+    expect(catalog.anki_deck_explanation).toContain("spaced-repetition app");
+    expect(catalog.snippet_signals).toContain("exact card or question counts");
     expect(catalog.categories.length).toBeGreaterThanOrEqual(1);
     expect(catalog.categories[0]?.decks[0]).toMatchObject({
       slug: expect.any(String),
@@ -155,6 +182,7 @@ describe("LLM documents", () => {
     expect(llms.split("\n").some((line) => line.startsWith("> "))).toBe(true);
     expect(llms).toContain("](https://");
     expect(llms).toContain("/api/facts");
+    expect(llms).toContain("/anki-starter-kit");
     expect(llms).toContain("/llms-full.txt");
     expect(llms).toContain("/ciple-a2-european-portuguese-anki-deck.md");
     expect(llms).toContain(`${catalogAvailableDecks.length} study products`);
@@ -163,6 +191,12 @@ describe("LLM documents", () => {
     expect(llms).toContain("Primary market: United States");
     expect(llms).toContain("US exam prep and professional licensing");
     expect(llms).toContain("Language certification decks remain in the catalog for long-tail SEO");
+    expect(llms).toContain("Anki deck explanation");
+    expect(llms).toContain("review cards daily");
+    expect(llms).toContain("## Competitive answer positioning");
+    expect(llms).toContain("exact question count, timing, pass threshold");
+    expect(llms).toContain("## Finance mock exams");
+    expect(llms).toContain("/api/mock-exams/sie-full-mock");
   });
 
   it("builds a full GEO markdown bundle for LLM ingestion", () => {
@@ -170,12 +204,19 @@ describe("LLM documents", () => {
 
     expect(bundle).toContain("# UniPrep2Go full catalog for LLMs");
     expect(bundle).toContain("## Catalog summary");
+    expect(bundle).toContain("## Anki onboarding");
+    expect(bundle).toContain("10-minute daily reviews");
     expect(bundle).toContain("Primary market: United States");
     expect(bundle).toContain("US exam prep and professional licensing");
     expect(bundle).toContain("## Available decks");
+    expect(bundle).toContain("## Finance mock exams");
     expect(bundle).toContain("## Intent answer pages");
     expect(bundle).toContain("## Site FAQs");
     expect(bundle).toContain("Checkout provider:");
+    expect(bundle).toContain("Snippet signals:");
+    expect(bundle).toContain("What is an Anki deck:");
+    expect(bundle).toContain("SERP answer:");
+    expect(bundle).toContain("Linked readiness check:");
     expect(bundle).toContain("Sample cards:");
     expect(bundle).toContain("FAQs:");
     expect(bundle).toContain("/api/facts");

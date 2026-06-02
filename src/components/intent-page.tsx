@@ -43,6 +43,24 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
           acceptedAnswer: { "@type": "Answer", text: faq.answer },
         })),
       },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${siteConfig.url}/${page.slug}#breadcrumb`,
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: siteConfig.url,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: page.title,
+            item: absoluteUrl(`/${page.slug}`),
+          },
+        ],
+      },
     ],
   };
 

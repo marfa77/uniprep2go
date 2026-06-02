@@ -44,7 +44,7 @@ export function SiteFooter() {
           </nav>
         </div>
 
-        <p className="mt-6 text-xs text-[#8a7d68]">
+        <p className="mt-6 text-xs text-[#6d6252]">
           Last updated {siteConfig.legalLastUpdated}. &copy; {new Date().getFullYear()}{" "}
           {siteConfig.name}
         </p>
