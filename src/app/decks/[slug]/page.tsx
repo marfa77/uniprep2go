@@ -41,6 +41,10 @@ function buildDeckSeoTitle(deck: Awaited<ReturnType<typeof getPricedDeckBySlug>>
     return "PTCB Pharmacy Technician Anki Deck | 300 PTCE Flashcards";
   }
 
+  if (deck.slug === "cat4-level-d-anki-deck-printable-pdf") {
+    return "CAT4 Level D Anki Deck + PDF | Grade 7 Verbal & Quantitative";
+  }
+
   if (deck.slug === "servsafe-manager-complete-study-guide") {
     return "ServSafe Manager Study Guide PDF | 70 Practice Questions";
   }
@@ -74,6 +78,10 @@ function buildDeckSeoDescription(deck: Awaited<ReturnType<typeof getPricedDeckBy
 
   if (deck.slug === "ptcb-pharmacy-technician-anki-deck") {
     return `${base} Covers top 200 drugs, sig codes, pharmacy math, DEA schedules, and PTCE-style dispensing workflow for daily phone review.`;
+  }
+
+  if (deck.slug === "cat4-level-d-anki-deck-printable-pdf") {
+    return `${base} Includes a 200-card Anki deck plus a ~49-page printable PDF workbook for CAT4 Level D verbal and quantitative subtests.`;
   }
 
   if (deck.slug === "servsafe-manager-complete-study-guide") {

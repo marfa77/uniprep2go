@@ -385,6 +385,28 @@ describe("deck catalog", () => {
     expect(ptcbDeck?.directAnswer).toContain("PTCB Pharmacy Technician Anki deck");
   });
 
+  it("includes the CAT4 Level D bundle as an academic prep product", () => {
+    const cat4Bundle = getDeckBySlug("cat4-level-d-anki-deck-printable-pdf");
+
+    expect(cat4Bundle?.status).toBe("available");
+    expect(cat4Bundle).toMatchObject({
+      category: "academic",
+      checkoutUrl: "https://pixidstudio.gumroad.com/l/mhgni",
+      checkoutProvider: "Gumroad",
+      checkoutSeller: "PixID Studio",
+      format: ".apkg",
+      coverImage: "/covers/cat4-level-d-anki-deck-printable-pdf.webp",
+    });
+    expect(cat4Bundle?.facts.cards).toBe("200 Anki cards + 49-page PDF");
+    expect(cat4Bundle?.sampleCards).toHaveLength(3);
+    expect(cat4Bundle?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/cat4-level-d-anki-deck-printable-pdf-sample-1.webp",
+      "/samples/cat4-level-d-anki-deck-printable-pdf-sample-2.webp",
+      "/samples/cat4-level-d-anki-deck-printable-pdf-sample-3.webp",
+    ]);
+    expect(cat4Bundle?.directAnswer).toContain("CAT4 Level D");
+  });
+
   it("uses three real sample previews for the IB Biology SL deck", () => {
     const biologyDeck = getDeckBySlug("ib-biology-sl-anki-deck");
 
@@ -475,6 +497,8 @@ describe("deck catalog", () => {
       "delf-b2-grammar-anki-deck":
         "DELF B2 French Grammar Anki Deck — 200 Cards",
       "ib-biology-sl-anki-deck": "IB Biology SL Anki Deck — 149 Smart Flashcards",
+      "cat4-level-d-anki-deck-printable-pdf":
+        "CAT4 Level D Anki Deck + Printable PDF — Grade 7 Verbal & Quantitative",
       "servsafe-manager-anki-deck": "ServSafe Manager Anki Deck — 300 Food Safety Flashcards",
       "servsafe-manager-complete-study-guide":
         "ServSafe Manager Complete Study Guide — PDF + 70 Practice Questions",

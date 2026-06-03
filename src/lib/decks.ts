@@ -1495,6 +1495,88 @@ const rawDecks: Deck[] = [
     ],
   },
 
+  {
+    slug: "cat4-level-d-anki-deck-printable-pdf",
+    category: "academic",
+    status: "available",
+    title: "CAT4 Level D Anki Deck + Printable PDF — Grade 7 Verbal & Quantitative",
+    shortName: "CAT4 Level D",
+    subtitle: "200-card Anki deck plus a 49-page printable CAT4 Level D workbook.",
+    directAnswer:
+      "UniPrep2Go sells an independent prep2go CAT4 Level D bundle with a 200-card Anki deck and a ~49-page printable PDF workbook for Verbal Classification, Verbal Analogies, Number Analogies, and Number Series. It is delivered as a digital download for {PRICE} through Gumroad. The bundle is a supplementary study system for CAT4 Level D (Grade 7 / Year 7) and is not official GL Assessment or CAT4 material.",
+    lastUpdated: "2026-06-02",
+    audience:
+      "Parents and tutors preparing students for CAT4 Level D at UK independent schools, grammar schools, and Year 7 / Grade 7 entry.",
+    format: ".apkg",
+    coverImage: "/covers/cat4-level-d-anki-deck-printable-pdf.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/mhgni",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "200 Anki cards + 49-page PDF",
+      topics:
+        "CAT4 Level D verbal and quantitative prep: Verbal Classification, Verbal Analogies, Number Analogies, Number Series, method cards, worked examples, and printable practice cards",
+      formulas: "Reasoning patterns, analogy logic, number-series rules, and timed printable practice blocks",
+      examYear: "CAT4 Level D (Grade 7 / Year 7)",
+      delivery: "Digital download through Gumroad (.apkg + PDF)",
+    },
+    topicCoverage: [
+      { name: "Anki Deck", examWeight: "200 cards", cards: "Method cards + 4 subtests × 48 worked examples" },
+      { name: "Verbal Classification", examWeight: "CAT4 subtest", cards: "Worked examples with full explanations" },
+      { name: "Verbal Analogies", examWeight: "CAT4 subtest", cards: "Worked examples with full explanations" },
+      { name: "Number Analogies", examWeight: "CAT4 subtest", cards: "Worked examples with full explanations" },
+      { name: "Number Series", examWeight: "CAT4 subtest", cards: "Worked examples with full explanations" },
+      { name: "Printable PDF", examWeight: "~49 pages", cards: "192 worked-example cards with answers and insights" },
+    ],
+    sampleCards: [
+      {
+        question: "Verbal analogy practice cards from the printable PDF",
+        answer:
+          "Each printable card shows a CAT4-style analogy, five answer choices, the correct answer, and a short insight explaining the relationship pattern.",
+        imageUrl: "/samples/cat4-level-d-anki-deck-printable-pdf-sample-1.webp",
+      },
+      {
+        question: "Number analogy patterns with worked insights",
+        answer:
+          "Number analogy cards teach the rule behind each pair sequence — double-and-add, square, triple, subtract, and other CAT4-style transformations.",
+        imageUrl: "/samples/cat4-level-d-anki-deck-printable-pdf-sample-2.webp",
+      },
+      {
+        question: "Number series cards for the final review week",
+        answer:
+          "Number series pages include full worked sequences, answer keys, and insight lines so missed patterns become targeted Anki review.",
+        imageUrl: "/samples/cat4-level-d-anki-deck-printable-pdf-sample-3.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "What does the CAT4 Level D bundle include?",
+        answer:
+          "A 200-card Anki deck (.apkg) and a ~49-page printable PDF workbook with 192 worked-example cards, answer keys, and insights across Verbal Classification, Verbal Analogies, Number Analogies, and Number Series.",
+      },
+      {
+        question: "Which CAT4 subtests are covered?",
+        answer:
+          "Verbal Classification, Verbal Analogies, Number Analogies, and Number Series. Spatial subtests are not included in this bundle.",
+      },
+      {
+        question: "Who is this bundle for?",
+        answer:
+          "Parents and tutors preparing students for CAT4 Level D at UK independent or grammar schools, typically Year 7 / Grade 7 entry.",
+      },
+      {
+        question: "Is this official CAT4 material?",
+        answer:
+          "No. This is an independent prep2go product in CAT4-style format and is not affiliated with, endorsed by, or sponsored by GL Assessment or CAT4.",
+      },
+      {
+        question: "How should I use the Anki deck and PDF together?",
+        answer:
+          "Start with method cards in Anki, practice timed blocks on paper with the PDF, check answers, then repeat weak subtests in Anki during the final review week.",
+      },
+    ],
+  },
+
   // ── Professional / Food Safety ─────────────────────────────────────────
   {
     slug: "servsafe-manager-anki-deck",
