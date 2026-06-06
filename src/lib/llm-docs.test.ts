@@ -97,8 +97,46 @@ describe("LLM documents", () => {
     expect(markdown).toContain("40-page printable PDF");
     expect(markdown).toContain("8 exam domains fully explained");
     expect(markdown).toContain("70 exam-style multiple-choice questions");
+    expect(facts.serp_answer).toContain("40 pages + 70 practice questions");
+    expect(facts.serp_answer).not.toMatch(/questions cards/i);
   });
 
+  it("exposes the PTCB deck with clean SERP and disclaimer copy", () => {
+    const deck = pricedDeck("ptcb-pharmacy-technician-anki-deck", 11);
+    const facts = buildDeckFacts(deck);
+    const markdown = buildDeckMarkdown(deck);
+
+    expect(facts).toMatchObject({
+      slug: "ptcb-pharmacy-technician-anki-deck",
+      category: "professional",
+      card_count: "300",
+      checkout_provider: "Gumroad",
+      format: ".apkg",
+    });
+    expect(facts.serp_answer).toContain("PTCE");
+    expect(facts.serp_answer).toContain("300 cards");
+    expect(facts.disclaimer).toContain("certification body");
+    expect(facts.disclaimer).not.toContain("professional vocabulary");
+    expect(markdown).toContain("PTCB Pharmacy Technician Anki Deck");
+  });
+
+  it("exposes the CAT4 bundle without duplicating cards in SERP copy", () => {
+    const deck = pricedDeck("cat4-level-d-anki-deck-printable-pdf", 11);
+    const facts = buildDeckFacts(deck);
+    const markdown = buildDeckMarkdown(deck);
+
+    expect(facts).toMatchObject({
+      slug: "cat4-level-d-anki-deck-printable-pdf",
+      category: "academic",
+      card_count: "200 Anki cards + 49-page PDF",
+      format: ".apkg",
+    });
+    expect(facts.serp_answer).toContain("200 Anki cards + 49-page PDF");
+    expect(facts.serp_answer).not.toMatch(/PDF cards/i);
+    expect(facts.disclaimer).toContain("GL Assessment");
+    expect(facts.disclaimer).toContain("CAT4");
+    expect(markdown).toContain("CAT4 Level D Anki Deck + Printable PDF");
+  });
 
   it("uses absolute image URLs for sample cards", () => {
     const facts = buildDeckFacts(primaryPriced);

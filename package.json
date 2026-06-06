@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
-    "build:mock-banks": "python3 scripts/build-mock-banks.py"
+    "build:mock-banks": "python3 scripts/build-mock-banks.py",
+    "indexnow:deploy": "tsx src/lib/run-indexnow-deploy.ts",
+    "indexnow:ping": "tsx scripts/ping-indexnow.ts"
   },
   "dependencies": {
     "@upstash/redis": "^1.38.0",
@@ -24,6 +26,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
     "tailwindcss": "^4",
+    "tsx": "^4.20.3",
     "typescript": "^5",
     "vitest": "^4.1.7"
   }

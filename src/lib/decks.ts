@@ -1501,9 +1501,9 @@ const rawDecks: Deck[] = [
     status: "available",
     title: "CAT4 Level D Anki Deck + Printable PDF — Grade 7 Verbal & Quantitative",
     shortName: "CAT4 Level D",
-    subtitle: "200-card Anki deck plus a 49-page printable CAT4 Level D workbook.",
+    subtitle: "200-card Anki deck + 49-page printable workbook for CAT4 Level D verbal and quantitative subtests.",
     directAnswer:
-      "UniPrep2Go sells an independent prep2go CAT4 Level D bundle with a 200-card Anki deck and a ~49-page printable PDF workbook for Verbal Classification, Verbal Analogies, Number Analogies, and Number Series. It is delivered as a digital download for {PRICE} through Gumroad. The bundle is a supplementary study system for CAT4 Level D (Grade 7 / Year 7) and is not official GL Assessment or CAT4 material.",
+      "CAT4 Level D bundle for Year 7 / Grade 7 selective entry: 200 Anki cards for daily pattern review plus a ~49-page printable PDF with 192 worked examples across Verbal Classification, Verbal Analogies, Number Analogies, and Number Series. Use Anki for method cards and weak-spot review; use the PDF for timed paper practice with answer keys and insight notes. Independent study material — not affiliated with GL Assessment or CAT4. Instant download for {PRICE} through Gumroad.",
     lastUpdated: "2026-06-02",
     audience:
       "Parents and tutors preparing students for CAT4 Level D at UK independent schools, grammar schools, and Year 7 / Grade 7 entry.",
@@ -1515,7 +1515,7 @@ const rawDecks: Deck[] = [
     facts: {
       cards: "200 Anki cards + 49-page PDF",
       topics:
-        "CAT4 Level D verbal and quantitative prep: Verbal Classification, Verbal Analogies, Number Analogies, Number Series, method cards, worked examples, and printable practice cards",
+        "Verbal Classification, Verbal Analogies, Number Analogies, and Number Series",
       formulas: "Reasoning patterns, analogy logic, number-series rules, and timed printable practice blocks",
       examYear: "CAT4 Level D (Grade 7 / Year 7)",
       delivery: "Digital download through Gumroad (.apkg + PDF)",
@@ -1747,9 +1747,9 @@ const rawDecks: Deck[] = [
     status: "available",
     title: "PTCB Pharmacy Technician Anki Deck — 300 High-Yield Flashcards",
     shortName: "PTCB Pharmacy Technician",
-    subtitle: "Focused Anki deck for U.S. PTCE pharmacy technician exam prep.",
+    subtitle: "300 flashcards for PTCE prep — top 200 drugs, sig codes, pharmacy math, and federal law.",
     directAnswer:
-      "UniPrep2Go sells an independent PTCB Pharmacy Technician Anki deck with 300 high-yield flashcards covering top 200 drugs, brand/generic recall, drug classes, sig abbreviations, pharmacy math, DEA schedules, federal law, patient safety, and dispensing workflow. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck is a supplementary active-recall study aid for the PTCE and is not official PTCB, NHA, FDA, or DEA material.",
+      "Built for pharmacy technicians preparing for the PTCE: 300 Anki flashcards covering the top 200 brand/generic pairs, drug classes, sig abbreviations, days-supply math, DEA schedules, HIPAA basics, recalls, and order-entry workflow. Short daily sessions on your phone beat rereading notes the week before the exam. Independent study aid — not official PTCB, NHA, FDA, or DEA material. .apkg download for {PRICE} via Gumroad.",
     lastUpdated: "2026-06-02",
     audience:
       "Pharmacy technician candidates, pharmacy tech students, career changers preparing for the PTCE, and technicians who want daily brand/generic and sig-code recall on their phone.",
@@ -1761,7 +1761,7 @@ const rawDecks: Deck[] = [
     facts: {
       cards: "300",
       topics:
-        "PTCE pharmacy technician prep: top 200 drugs, brand/generic, drug classes, sig codes, pharmacy math, DEA schedules, HIPAA, recalls, patient safety, order entry, and inventory workflow",
+        "Top 200 drugs, sig codes, pharmacy math, DEA schedules, federal law, and dispensing workflow",
       formulas: "Brand/generic recall, sig abbreviations, days-supply math, DEA schedule rules, and high-alert safety concepts",
       examYear: "Current U.S. PTCE / pharmacy technician review",
       delivery: "Digital download through Gumroad",
@@ -2023,6 +2023,28 @@ export const catalogAvailableDecks = decks.filter(
 
 /** Catalog decks without resolved checkout prices. Prefer getPricedDecks(). */
 export const availableDecks = catalogAvailableDecks;
+
+/** Human-readable content size for SEO, UI, and LLM snippets without duplicating "cards". */
+export function formatDeckContentLabel(deck: {
+  format: BaseDeck["format"];
+  facts: Pick<DeckFacts, "cards">;
+}): string {
+  const { cards } = deck.facts;
+
+  if (deck.format === "PDF") {
+    return cards;
+  }
+
+  if (
+    /\bcards?\b/i.test(cards) ||
+    /\bpages?\b/i.test(cards) ||
+    /questions|vocabulary plus/i.test(cards)
+  ) {
+    return cards;
+  }
+
+  return `${cards} cards`;
+}
 
 export function getDeckBySlug(slug: string) {
   return decks.find((deck) => deck.slug === slug);

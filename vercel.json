@@ -1,6 +1,6 @@
 {
   "framework": "nextjs",
-  "buildCommand": "npm run build",
+  "buildCommand": "npm run build && npm run indexnow:deploy",
   "redirects": [
     {
       "source": "/:path*",
@@ -12,6 +12,12 @@
       ],
       "destination": "https://uniprep2go.study/:path*",
       "permanent": true
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron/indexnow",
+      "schedule": "15 13 * * 1"
     }
   ]
 }

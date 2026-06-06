@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { FunnelTracker, TrackedCheckoutLink } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { catalogAvailableDecks, categoryLabels } from "@/lib/decks";
+import { catalogAvailableDecks, categoryLabels, formatDeckContentLabel } from "@/lib/decks";
 import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import { getDeckCoverUrl } from "@/lib/deck-media";
 import { buildDeckPageJsonLd } from "@/lib/product-jsonld";
@@ -66,7 +66,7 @@ function buildDeckSeoDescription(deck: Awaited<ReturnType<typeof getPricedDeckBy
   }
 
   const price = formatDeckPriceLabel(deck);
-  const base = `${deck.facts.cards} cards, ${deck.format} download, ${deck.facts.topics}. ${price} via ${deck.checkoutProvider}.`;
+  const base = `${formatDeckContentLabel(deck)}, ${deck.format} download, ${deck.facts.topics}. ${price} via ${deck.checkoutProvider}.`;
 
   if (deck.slug === "sie-exam-anki-deck") {
     return `${base} Covers current FINRA SIE topic weights with a linked free 75-question SIE practice test, 105-minute mock, and 70% target.`;
@@ -77,11 +77,11 @@ function buildDeckSeoDescription(deck: Awaited<ReturnType<typeof getPricedDeckBy
   }
 
   if (deck.slug === "ptcb-pharmacy-technician-anki-deck") {
-    return `${base} Covers top 200 drugs, sig codes, pharmacy math, DEA schedules, and PTCE-style dispensing workflow for daily phone review.`;
+    return `300 PTCE flashcards: top 200 brand/generic pairs, sig codes, pharmacy math, DEA schedules, and dispensing workflow. ${price} via Gumroad. Independent study aid — not official PTCB material.`;
   }
 
   if (deck.slug === "cat4-level-d-anki-deck-printable-pdf") {
-    return `${base} Includes a 200-card Anki deck plus a ~49-page printable PDF workbook for CAT4 Level D verbal and quantitative subtests.`;
+    return `CAT4 Level D bundle: 200-card Anki deck + 49-page PDF for verbal and quantitative subtests. Worked examples for Year 7 / Grade 7 entry. ${price} via Gumroad. Not official GL Assessment material.`;
   }
 
   if (deck.slug === "servsafe-manager-complete-study-guide") {
@@ -207,7 +207,11 @@ export default async function DeckPage({
         </h1>
 
         <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(220px,0.42fr)] lg:items-start">
-          <p className="max-w-3xl text-lg leading-8 text-[#4f493e]">{deck.directAnswer}</p>
+          <div className="max-w-3xl space-y-4">
+            <p className="text-xl leading-8 text-[#18140f]">{deck.subtitle}</p>
+            <p className="text-base leading-7 text-[#5f5749]">{deck.audience}</p>
+            <p className="text-sm leading-7 text-[#6d6252]">{deck.directAnswer}</p>
+          </div>
           {heroImage ? (
             <div className="overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#fffaf0] shadow-[0_18px_50px_-34px_rgba(24,20,15,0.45)]">
               <Image

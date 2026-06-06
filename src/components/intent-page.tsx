@@ -2,6 +2,7 @@ import Link from "next/link";
 import { TrackedCheckoutLink } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { formatDeckContentLabel } from "@/lib/decks";
 import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import { getIntentPageDecks, getIntentPagePrimaryDeck, type IntentPage } from "@/lib/intent-pages";
 import { absoluteUrl, siteConfig } from "@/lib/site";
@@ -112,7 +113,7 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
                 </h3>
                 <p className="mt-2 text-sm leading-6 text-[#5f5749]">{deck.directAnswer}</p>
                 <p className="mt-3 font-mono text-xs uppercase tracking-[0.16em] text-[#7a6e5a]">
-                  {deck.facts.cards} cards · {formatDeckPriceLabel(deck)} · {deck.checkoutProvider}
+                  {formatDeckContentLabel(deck)} · {formatDeckPriceLabel(deck)} · {deck.checkoutProvider}
                 </p>
               </article>
             ))}

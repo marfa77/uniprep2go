@@ -382,7 +382,8 @@ describe("deck catalog", () => {
       "/samples/ptcb-pharmacy-technician-anki-deck-sample-2.webp",
       "/samples/ptcb-pharmacy-technician-anki-deck-sample-3.webp",
     ]);
-    expect(ptcbDeck?.directAnswer).toContain("PTCB Pharmacy Technician Anki deck");
+    expect(ptcbDeck?.directAnswer).toContain("PTCE");
+    expect(ptcbDeck?.directAnswer).not.toContain("UniPrep2Go sells");
   });
 
   it("includes the CAT4 Level D bundle as an academic prep product", () => {
@@ -405,6 +406,8 @@ describe("deck catalog", () => {
       "/samples/cat4-level-d-anki-deck-printable-pdf-sample-3.webp",
     ]);
     expect(cat4Bundle?.directAnswer).toContain("CAT4 Level D");
+    expect(cat4Bundle?.directAnswer).not.toContain("prep2go CAT4");
+    expect(cat4Bundle?.directAnswer).not.toContain("UniPrep2Go sells");
   });
 
   it("uses three real sample previews for the IB Biology SL deck", () => {

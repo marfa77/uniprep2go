@@ -8,6 +8,7 @@ import { formatDeckPriceLabel, getCheckoutActionLabel, getFeaturedPricedDecks, g
 import { getDeckCoverUrl } from "@/lib/deck-media";
 import {
   categoryLabels,
+  formatDeckContentLabel,
   primaryDeck,
   siteFaqs,
 } from "@/lib/decks";
@@ -286,13 +287,13 @@ export default async function HomePage() {
                             {deck.title}
                           </Link>
                         </h3>
-                        <p className="mt-2 flex-1 text-sm leading-6 text-[#5f5749] line-clamp-4">
-                          {deck.directAnswer}
+                        <p className="mt-2 flex-1 text-sm leading-6 text-[#5f5749] line-clamp-3">
+                          {deck.subtitle}
                         </p>
                         <div className="mt-4 flex items-center justify-between text-sm">
                           <span className="font-medium text-[#18140f]">
                             {formatDeckPriceLabel(deck)} ·{" "}
-                            {deck.format === "PDF" ? deck.facts.cards : `${deck.facts.cards} cards`}
+                            {formatDeckContentLabel(deck)}
                           </span>
                           <Link
                             href={`/decks/${deck.slug}`}
@@ -415,7 +416,7 @@ export default async function HomePage() {
                                 {deck.title}
                               </Link>
                               <p className="mt-1 text-sm text-[#5f5749]">
-                                {deck.facts.cards} cards · {deck.facts.examYear} · {deck.checkoutProvider}
+                                {formatDeckContentLabel(deck)} · {deck.facts.examYear} · {deck.checkoutProvider}
                               </p>
                             </div>
                           </div>

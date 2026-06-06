@@ -1,6 +1,7 @@
 import {
   categoryLabels,
   categoryOrder,
+  formatDeckContentLabel,
   siteFaqs,
   type CatalogAvailableDeck,
 } from "./decks";
@@ -89,9 +90,9 @@ function categoryDisclaimer(deck: PricedDeck | CatalogAvailableDeck) {
     case "language":
       return "This is an independent study aid and is not affiliated with or endorsed by CAPLE, France Éducation international, Goethe-Institut, or any certification body.";
     case "professional":
-      return "This is an independent training resource for professional vocabulary and is not affiliated with any employer, exchange, or certification body.";
+      return "This is an independent study aid and is not affiliated with or endorsed by any employer, certification body, or exam authority.";
     case "academic":
-      return "This is an independent study aid and is not affiliated with or endorsed by the International Baccalaureate or any exam board.";
+      return "This is an independent study aid and is not affiliated with or endorsed by the International Baccalaureate, GL Assessment, CAT4, or any exam board.";
     case "immigration":
       return "Prep2Go Immigration is an independent iOS study app for survival guides and citizenship test prep. It is not affiliated with or endorsed by any government, immigration authority, or exam body.";
   }
@@ -124,7 +125,7 @@ export function buildDeckFacts(deck: PricedDeck) {
     coverage: deck.facts.topics,
     use_case: deck.audience,
     study_mode: deck.category === "finance" ? "active recall and spaced repetition" : "spaced repetition",
-    serp_answer: `${deck.title}: ${deck.facts.cards} cards, ${deck.format}, ${deck.facts.topics}, ${deck.facts.examYear}.`,
+    serp_answer: `${deck.title}: ${formatDeckContentLabel(deck)}, ${deck.format}, ${deck.facts.topics}, ${deck.facts.examYear}.`,
     linked_readiness_check: linkedMock
       ? {
           slug: linkedMock.slug,
@@ -254,7 +255,7 @@ export function buildIntentMarkdown(page: IntentPage) {
 ${decks
   .map(
     (deck) =>
-      `- [${deck.title}](${absoluteUrl(`/decks/${deck.slug}`)}) — ${deck.facts.cards} cards, ${deck.checkoutProvider} checkout`,
+      `- [${deck.title}](${absoluteUrl(`/decks/${deck.slug}`)}) — ${formatDeckContentLabel(deck)}, ${deck.checkoutProvider} checkout`,
   )
   .join("\n")}
 
@@ -305,7 +306,7 @@ Direct answer: ${deck.directAnswer}
 - Coverage: ${deck.facts.topics}
 - Audience: ${deck.audience}
 - Study mode: ${deck.category === "finance" ? "active recall and spaced repetition" : "spaced repetition"}
-- SERP answer: ${deck.title}: ${deck.facts.cards} cards, ${deck.format}, ${deck.facts.topics}, ${deck.facts.examYear}.
+- SERP answer: ${deck.title}: ${formatDeckContentLabel(deck)}, ${deck.format}, ${deck.facts.topics}, ${deck.facts.examYear}.
 - Linked readiness check: ${linkedReadinessCheckUrl(deck)}
 - Product page: ${absoluteUrl(`/decks/${deck.slug}`)}
 - Facts JSON: ${absoluteUrl(`/api/facts/${deck.slug}`)}
@@ -456,7 +457,7 @@ ${categoryGroups
       `### ${group.label}\n\n${group.decks
         .map(
           (deck) =>
-            `- [${deck.title}](${absoluteUrl(`/decks/${deck.slug}`)}) — ${formatLlmPriceLabel(deck)}, ${deck.facts.cards} cards — [facts](${absoluteUrl(`/api/facts/${deck.slug}`)}) · [markdown](${absoluteUrl(`/${deck.slug}.md`)})`,
+            `- [${deck.title}](${absoluteUrl(`/decks/${deck.slug}`)}) — ${formatLlmPriceLabel(deck)}, ${formatDeckContentLabel(deck)} — [facts](${absoluteUrl(`/api/facts/${deck.slug}`)}) · [markdown](${absoluteUrl(`/${deck.slug}.md`)})`,
         )
         .join("\n")}`,
   )
