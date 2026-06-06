@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "UniPrep2Go",
-  url: "https://uniprep2go.study",
+  url: "https://www.uniprep2go.study",
   description:
     "Independent exam prep: Anki decks, printable PDF cram sheets, and free timed mocks for US licensing, finance credentials, language certifications, professional training, and academic subjects, plus Prep2Go Immigration app decks.",
   primaryMarket: "United States",

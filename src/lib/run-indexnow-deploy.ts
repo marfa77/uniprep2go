@@ -1,8 +1,8 @@
 /**
  * Post-build IndexNow ping on Vercel production (main only).
- * Lives in src/lib/ because scripts/ may be excluded from the build context.
+ * Mirrors bench-energy-news: submit all sitemap URLs after deploy.
  */
-import { shouldRunIndexNowOnDeploy, submitIndexNowForDeploy } from "@/lib/indexnow";
+import { shouldRunIndexNowOnDeploy, submitIndexNowSitemap } from "@/lib/indexnow";
 
 async function main(): Promise<void> {
   if (!shouldRunIndexNowOnDeploy()) {
@@ -10,16 +10,16 @@ async function main(): Promise<void> {
     return;
   }
 
-  const result = await submitIndexNowForDeploy();
+  const result = await submitIndexNowSitemap();
   console.log(
-    `[indexnow:deploy] scope=${result.scope ?? "n/a"} status=${result.status} urls=${result.urlCount} ok=${result.ok}`,
+    `[indexnow:deploy] status=${result.status} urls=${result.urlCount} ok=${result.ok}`,
   );
   if (result.error) console.error("[indexnow:deploy] error:", result.error);
   if (result.body) console.log("[indexnow:deploy] body:", result.body);
 
   if (!result.ok && result.urlCount > 0) {
     console.warn(
-      "[indexnow:deploy] ping failed — deploy continues; retry via cron or npm run indexnow:ping -- --all",
+      "[indexnow:deploy] ping failed — deploy continues; retry via npm run indexnow:submit -- --sitemap",
     );
   }
 }

@@ -7,11 +7,11 @@
       "has": [
         {
           "type": "host",
-          "value": "www.uniprep2go.study"
+          "value": "uniprep2go.study"
         }
       ],
-      "destination": "https://uniprep2go.study/:path*",
-      "permanent": true
+      "destination": "https://www.uniprep2go.study/:path*",
+      "statusCode": 301
     }
   ],
   "crons": [

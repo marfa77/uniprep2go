@@ -43,7 +43,7 @@ describe("intent pages visibility", () => {
     expect(urls).toContain(absoluteUrl("/anki-starter-kit"));
     expect(urls).toContain(absoluteUrl("/decks/servsafe-manager-anki-deck"));
     expect(urls.every((url) => url.startsWith(siteConfig.url))).toBe(true);
-    expect(urls.some((url) => url.includes("://www."))).toBe(false);
+    expect(urls.some((url) => url.includes("://www."))).toBe(true);
     expect(urls.every((url) => !url.endsWith(".md"))).toBe(true);
     expect(urls.every((url) => !url.includes("/api/"))).toBe(true);
     expect(urls).not.toContain(absoluteUrl("/llms.txt"));

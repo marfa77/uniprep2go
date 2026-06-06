@@ -215,7 +215,7 @@ describe("llm visibility", () => {
       "BreadcrumbList",
     ]);
     expect(course).toMatchObject({
-      "@id": "https://uniprep2go.study/mock-exams/cfa-level-1-readiness-check#course",
+      "@id": "https://www.uniprep2go.study/mock-exams/cfa-level-1-readiness-check#course",
       isAccessibleForFree: true,
     });
     expect(course?.teaches).toContain("Ethical and Professional Standards");

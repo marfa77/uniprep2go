@@ -44,7 +44,7 @@ describe("funnel filter", () => {
 
     expect(
       detectInternalClientContext({
-        hostname: "uniprep2go.study",
+        hostname: "www.uniprep2go.study",
         search: "?funnel=exclude",
       }),
     ).toBe(true);

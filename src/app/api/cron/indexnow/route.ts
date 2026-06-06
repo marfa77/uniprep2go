@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getIndexNowUrls, submitIndexNowUrls } from "@/lib/indexnow";
+import { submitIndexNowSitemap } from "@/lib/indexnow";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -11,20 +11,18 @@ function isAuthorized(request: Request): boolean {
   return request.headers.get("authorization") === `Bearer ${secret}`;
 }
 
-/** Weekly safety-net: ping all catalog URLs to IndexNow (Bing). */
+/** Weekly safety-net: ping all sitemap URLs to IndexNow (Bing). */
 export async function GET(request: Request) {
   if (!isAuthorized(request)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const urls = getIndexNowUrls();
-  const result = await submitIndexNowUrls(urls);
+  const result = await submitIndexNowSitemap();
 
   return NextResponse.json({
     ok: result.ok,
     status: result.status,
     urlCount: result.urlCount,
-    scope: "all",
     error: result.error,
     body: result.body,
   });
