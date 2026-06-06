@@ -69,7 +69,7 @@ describe("product json-ld", () => {
     expect(itemList.itemListElement[0]).toMatchObject({
       "@type": "ListItem",
       position: 1,
-      url: "https://www.uniprep2go.study/decks/cfa-level-1-anki-deck",
+      url: "https://uniprep2go.study/decks/cfa-level-1-anki-deck",
     });
     expect(JSON.stringify(itemList)).not.toContain('"@type":"Product"');
   });
@@ -83,15 +83,15 @@ describe("product json-ld", () => {
     expect(product).toMatchObject({
       brand: { "@type": "Brand", name: "PixID Studio" },
       image: [
-        "https://www.uniprep2go.study/samples/cfa-level-1-anki-deck-sample-1.webp",
-        "https://www.uniprep2go.study/samples/cfa-level-1-anki-deck-sample-2.webp",
-        "https://www.uniprep2go.study/samples/cfa-level-1-anki-deck-sample-3.webp",
+        "https://uniprep2go.study/samples/cfa-level-1-anki-deck-sample-1.webp",
+        "https://uniprep2go.study/samples/cfa-level-1-anki-deck-sample-2.webp",
+        "https://uniprep2go.study/samples/cfa-level-1-anki-deck-sample-3.webp",
       ],
     });
     expect(webpage).toMatchObject({
-      "@id": "https://www.uniprep2go.study/decks/cfa-level-1-anki-deck#webpage",
+      "@id": "https://uniprep2go.study/decks/cfa-level-1-anki-deck#webpage",
       about: {
-        "@id": "https://www.uniprep2go.study/decks/cfa-level-1-anki-deck#product",
+        "@id": "https://uniprep2go.study/decks/cfa-level-1-anki-deck#product",
       },
     });
     expect(breadcrumb).toMatchObject({

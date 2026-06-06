@@ -47,7 +47,7 @@ describe("LLM documents", () => {
       not_official_exam_material: true,
       price_pending: false,
       price_source: "gumroad",
-      cover_image: "https://www.uniprep2go.study/covers/cfa-level-1-anki-deck.webp",
+      cover_image: "https://uniprep2go.study/covers/cfa-level-1-anki-deck.webp",
       study_mode: "active recall and spaced repetition",
       linked_readiness_check: {
         slug: "cfa-level-1-readiness-check",
@@ -71,7 +71,7 @@ describe("LLM documents", () => {
       checkout_url: "https://pixidstudio.gumroad.com/l/ldpevc",
       checkout_provider: "Gumroad",
       format: ".apkg",
-      cover_image: "https://www.uniprep2go.study/covers/servsafe-manager-anki-deck.webp",
+      cover_image: "https://uniprep2go.study/covers/servsafe-manager-anki-deck.webp",
     });
     expect(facts.sample_cards).toHaveLength(3);
     expect(markdown).toContain("ServSafe Manager Anki Deck");
@@ -90,7 +90,7 @@ describe("LLM documents", () => {
       checkout_url: "https://pixidstudio.gumroad.com/l/lyvna",
       checkout_provider: "Gumroad",
       format: "PDF",
-      cover_image: "https://www.uniprep2go.study/covers/servsafe-manager-complete-study-guide.webp",
+      cover_image: "https://uniprep2go.study/covers/servsafe-manager-complete-study-guide.webp",
     });
     expect(facts.sample_cards).toHaveLength(3);
     expect(markdown).toContain("ServSafe Manager Complete Study Guide");

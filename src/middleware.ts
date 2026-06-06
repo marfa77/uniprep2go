@@ -9,14 +9,11 @@ import { siteConfig } from "./lib/site";
 
 const EXCLUDE_COOKIE_MAX_AGE = 60 * 60 * 24 * 365 * 5;
 const CANONICAL_HOST = new URL(siteConfig.url).hostname;
-const APEX_HOST = CANONICAL_HOST.startsWith("www.")
-  ? CANONICAL_HOST.slice(4)
-  : CANONICAL_HOST;
 
 export function middleware(request: NextRequest) {
   const hostname = request.nextUrl.hostname;
 
-  if (hostname === APEX_HOST) {
+  if (hostname.startsWith("www.") && hostname.slice(4) === CANONICAL_HOST) {
     const url = request.nextUrl.clone();
     url.hostname = CANONICAL_HOST;
     return NextResponse.redirect(url, 308);

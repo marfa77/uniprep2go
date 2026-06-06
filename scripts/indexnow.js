@@ -8,7 +8,7 @@
  *
  * Env:
  *   INDEXNOW_KEY — API key (must match public/{key}.txt)
- *   NEXT_PUBLIC_SITE_URL or SITE_URL — site origin (default https://www.uniprep2go.study)
+ *   NEXT_PUBLIC_SITE_URL or SITE_URL — site origin (default https://uniprep2go.study)
  */
 const fs = require("fs");
 const path = require("path");
@@ -20,7 +20,7 @@ const INDEXNOW_KEY =
 const SITE_ORIGIN = (
   process.env.NEXT_PUBLIC_SITE_URL?.trim() ||
   process.env.SITE_URL?.trim() ||
-  "https://www.uniprep2go.study"
+  "https://uniprep2go.study"
 ).replace(/\/$/, "");
 const HOST = new URL(SITE_ORIGIN).host;
 const KEY_LOCATION = `${SITE_ORIGIN}/${INDEXNOW_KEY}.txt`;
