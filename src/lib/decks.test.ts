@@ -156,7 +156,7 @@ describe("deck catalog", () => {
     expect(frmDeck?.status).toBe("available");
     expect(frmDeck).toMatchObject({
       category: "finance",
-      checkoutUrl: "https://pixidstudio.gumroad.com/l/eeyvu",
+      checkoutUrl: "https://pixidstudio.gumroad.com/l/eeyvu?wanted=true",
       checkoutProvider: "Gumroad",
       checkoutSeller: "PixID Studio",
     });
@@ -175,7 +175,7 @@ describe("deck catalog", () => {
     expect(sieDeck?.status).toBe("available");
     expect(sieDeck).toMatchObject({
       category: "finance",
-      checkoutUrl: "https://pixidstudio.gumroad.com/l/qjocr",
+      checkoutUrl: "https://pixidstudio.gumroad.com/l/qjocr?wanted=true",
       checkoutProvider: "Gumroad",
       checkoutSeller: "PixID Studio",
     });
@@ -194,7 +194,7 @@ describe("deck catalog", () => {
     expect(seriesSevenDeck?.status).toBe("available");
     expect(seriesSevenDeck).toMatchObject({
       category: "finance",
-      checkoutUrl: "https://pixidstudio.gumroad.com/l/lvzval",
+      checkoutUrl: "https://pixidstudio.gumroad.com/l/lvzval?wanted=true",
       checkoutProvider: "Gumroad",
       checkoutSeller: "PixID Studio",
     });
@@ -213,7 +213,7 @@ describe("deck catalog", () => {
     expect(seriesSixtyThreeDeck?.status).toBe("available");
     expect(seriesSixtyThreeDeck).toMatchObject({
       category: "finance",
-      checkoutUrl: "https://pixidstudio.gumroad.com/l/vsbsgw",
+      checkoutUrl: "https://pixidstudio.gumroad.com/l/vsbsgw?wanted=true",
       checkoutProvider: "Gumroad",
       checkoutSeller: "PixID Studio",
     });
@@ -251,7 +251,7 @@ describe("deck catalog", () => {
     expect(californiaRealEstateDeck?.status).toBe("available");
     expect(californiaRealEstateDeck).toMatchObject({
       category: "finance",
-      checkoutUrl: "https://pixidstudio.gumroad.com/l/qqrwpk",
+      checkoutUrl: "https://pixidstudio.gumroad.com/l/qqrwpk?wanted=true",
       checkoutProvider: "Gumroad",
       checkoutSeller: "PixID Studio",
     });
@@ -275,7 +275,7 @@ describe("deck catalog", () => {
     expect(lifeHealthDeck?.status).toBe("available");
     expect(lifeHealthDeck).toMatchObject({
       category: "finance",
-      checkoutUrl: "https://pixidstudio.gumroad.com/l/jcrljf",
+      checkoutUrl: "https://pixidstudio.gumroad.com/l/jcrljf?wanted=true",
       checkoutProvider: "Gumroad",
       checkoutSeller: "PixID Studio",
     });
@@ -299,7 +299,7 @@ describe("deck catalog", () => {
     expect(propertyCasualtyDeck?.status).toBe("available");
     expect(propertyCasualtyDeck).toMatchObject({
       category: "finance",
-      checkoutUrl: "https://pixidstudio.gumroad.com/l/engqgt",
+      checkoutUrl: "https://pixidstudio.gumroad.com/l/engqgt?wanted=true",
       checkoutProvider: "Gumroad",
       checkoutSeller: "PixID Studio",
     });
@@ -323,7 +323,7 @@ describe("deck catalog", () => {
     expect(servSafeDeck?.status).toBe("available");
     expect(servSafeDeck).toMatchObject({
       category: "professional",
-      checkoutUrl: "https://pixidstudio.gumroad.com/l/ldpevc",
+      checkoutUrl: "https://pixidstudio.gumroad.com/l/ldpevc?wanted=true",
       checkoutProvider: "Gumroad",
       checkoutSeller: "PixID Studio",
       format: ".apkg",
@@ -345,7 +345,7 @@ describe("deck catalog", () => {
     expect(servSafeGuide?.status).toBe("available");
     expect(servSafeGuide).toMatchObject({
       category: "professional",
-      checkoutUrl: "https://pixidstudio.gumroad.com/l/lyvna",
+      checkoutUrl: "https://pixidstudio.gumroad.com/l/lyvna?wanted=true",
       checkoutProvider: "Gumroad",
       checkoutSeller: "PixID Studio",
       format: "PDF",
@@ -369,7 +369,7 @@ describe("deck catalog", () => {
     expect(ptcbDeck?.status).toBe("available");
     expect(ptcbDeck).toMatchObject({
       category: "professional",
-      checkoutUrl: "https://pixidstudio.gumroad.com/l/yvifxh",
+      checkoutUrl: "https://pixidstudio.gumroad.com/l/yvifxh?wanted=true",
       checkoutProvider: "Gumroad",
       checkoutSeller: "PixID Studio",
       format: ".apkg",
@@ -392,7 +392,7 @@ describe("deck catalog", () => {
     expect(cat4Bundle?.status).toBe("available");
     expect(cat4Bundle).toMatchObject({
       category: "academic",
-      checkoutUrl: "https://pixidstudio.gumroad.com/l/mhgni",
+      checkoutUrl: "https://pixidstudio.gumroad.com/l/mhgni?wanted=true",
       checkoutProvider: "Gumroad",
       checkoutSeller: "PixID Studio",
       format: ".apkg",

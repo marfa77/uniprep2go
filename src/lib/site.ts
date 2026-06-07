@@ -25,7 +25,7 @@ export const siteConfig = {
   checkoutProviders: "Gumroad, Lemon Squeezy, and the Prep2Go Immigration App Store",
   checkoutSellers: "PixID Studio and Prep2Go",
   gumroadStoreUrl: "https://pixidstudio.gumroad.com",
-  starterDeckUrl: "https://pixidstudio.gumroad.com/l/ldpevc",
+  starterDeckUrl: "https://pixidstudio.gumroad.com/l/ldpevc?wanted=true",
   lemonSqueezyStoreUrl: "https://ciple-a2.lemonsqueezy.com",
   googleAnalyticsId: "G-NDF8PVD7N3",
   ahrefsAnalyticsKey: "X11yI8gl/4QXmr55ol2GlA",

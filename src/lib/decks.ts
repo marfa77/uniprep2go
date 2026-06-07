@@ -577,7 +577,7 @@ const rawDecks: Deck[] = [
     audience: "FRM Part 1 candidates who want active recall practice for formulas, concepts, definitions, and risk-management logic.",
     format: ".apkg",
     coverImage: "/covers/frm-part-1-anki-deck.webp",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/eeyvu",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/eeyvu?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
@@ -649,7 +649,7 @@ const rawDecks: Deck[] = [
     audience: "SIE exam candidates, finance interns, new hires, and career changers who want active-recall practice instead of passive rereading.",
     format: ".apkg",
     coverImage: "/covers/sie-exam-anki-deck.webp",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/qjocr",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/qjocr?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
@@ -721,7 +721,7 @@ const rawDecks: Deck[] = [
     audience: "Series 7 candidates sponsored by a FINRA member firm, new financial advisors, registered representative trainees, and SIE passers who want focused spaced-repetition review.",
     format: ".apkg",
     coverImage: "/covers/series-7-anki-deck.webp",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/lvzval",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/lvzval?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
@@ -794,7 +794,7 @@ const rawDecks: Deck[] = [
       "Series 63 candidates, new broker-dealer agents, SIE and Series 7 candidates who also need state registration, and financial services trainees who want spaced repetition instead of rereading outlines.",
     format: ".apkg",
     coverImage: "/covers/series-63-anki-deck.webp",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/vsbsgw",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/vsbsgw?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
@@ -876,7 +876,7 @@ const rawDecks: Deck[] = [
       "California real estate salesperson exam candidates, career changers entering real estate, pre-licensing students, and candidates who want active recall for agency, disclosures, contracts, and real estate math.",
     format: ".apkg",
     coverImage: "/covers/california-real-estate-exam-anki-deck.webp",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/qqrwpk",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/qqrwpk?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
@@ -958,7 +958,7 @@ const rawDecks: Deck[] = [
       "Life & Health insurance license candidates, new insurance producers, career changers entering insurance sales, pre-licensing students, and candidates who want active recall for policy provisions, riders, annuities, health plans, and insurance terminology.",
     format: ".apkg",
     coverImage: "/covers/life-and-health-insurance-exam-anki-deck.webp",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/jcrljf",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/jcrljf?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
@@ -1041,7 +1041,7 @@ const rawDecks: Deck[] = [
       "Property & Casualty insurance license candidates, new insurance producers, career changers entering insurance sales, pre-licensing students, and candidates who want active recall for homeowners, auto, commercial lines, and policy provisions.",
     format: ".apkg",
     coverImage: "/covers/property-casualty-insurance-exam-anki-deck.webp",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/engqgt",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/engqgt?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
@@ -1448,7 +1448,7 @@ const rawDecks: Deck[] = [
     audience: "IB Biology Standard Level students using spaced repetition for exam preparation.",
     format: ".apkg",
     coverImage: "/covers/ib-biology-sl-anki-deck.webp",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/oakmtp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/oakmtp?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
@@ -1509,7 +1509,7 @@ const rawDecks: Deck[] = [
       "Parents and tutors preparing students for CAT4 Level D at UK independent schools, grammar schools, and Year 7 / Grade 7 entry.",
     format: ".apkg",
     coverImage: "/covers/cat4-level-d-anki-deck-printable-pdf.webp",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/mhgni",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/mhgni?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
@@ -1592,7 +1592,7 @@ const rawDecks: Deck[] = [
       "Restaurant managers, food handlers moving into supervisor roles, hospitality students, and ServSafe Manager candidates who want spaced-repetition review instead of rereading notes.",
     format: ".apkg",
     coverImage: "/covers/servsafe-manager-anki-deck.webp",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/ldpevc",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/ldpevc?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
@@ -1671,7 +1671,7 @@ const rawDecks: Deck[] = [
       "First-time ServSafe Manager test takers, retesters, restaurant managers, and busy food service professionals who want a structured printable review system.",
     format: "PDF",
     coverImage: "/covers/servsafe-manager-complete-study-guide.webp",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/lyvna",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/lyvna?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
@@ -1755,7 +1755,7 @@ const rawDecks: Deck[] = [
       "Pharmacy technician candidates, pharmacy tech students, career changers preparing for the PTCE, and technicians who want daily brand/generic and sig-code recall on their phone.",
     format: ".apkg",
     coverImage: "/covers/ptcb-pharmacy-technician-anki-deck.webp",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/yvifxh",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/yvifxh?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
@@ -1836,7 +1836,7 @@ const rawDecks: Deck[] = [
     audience: "Metals commodity traders, analysts, and professionals entering metals markets.",
     format: ".apkg",
     coverImage: "/covers/bench-energy-metal-trader-anki-deck.webp",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/zpazj",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/zpazj?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
@@ -1882,7 +1882,7 @@ const rawDecks: Deck[] = [
     audience: "Oil commodity traders, refinery analysts, and professionals entering petroleum markets.",
     format: ".apkg",
     coverImage: "/covers/bench-energy-oil-trader-anki-deck.webp",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/ugngbd",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/ugngbd?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
@@ -1928,7 +1928,7 @@ const rawDecks: Deck[] = [
     audience: "Coal commodity traders, mining finance analysts, and professionals entering thermal coal markets.",
     format: ".apkg",
     coverImage: "/covers/bench-energy-coal-trader-anki-deck.webp",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/ipnqky",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/ipnqky?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
@@ -1974,7 +1974,7 @@ const rawDecks: Deck[] = [
     audience: "Commodity traders and analysts who work across metals, oil, and coal markets.",
     format: ".apkg",
     coverImage: "/covers/commodity-trader-pack-bundle.webp",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/tzzgh",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/tzzgh?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
