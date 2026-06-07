@@ -1,7 +1,8 @@
 import Link from "next/link";
-import type { MockExamConfig } from "@/lib/mock-exams/types";
+import { getCatalogDeckBySlug } from "@/lib/decks";
 import { buildMockExamFaqs, buildMockSeoPageCopy } from "@/lib/mock-exams/seo";
 import { mockFreeAccessNotice } from "@/lib/mock-exams/pricing";
+import type { MockExamConfig } from "@/lib/mock-exams/types";
 
 type MockSeoSectionsProps = {
   config: MockExamConfig;
@@ -10,6 +11,7 @@ type MockSeoSectionsProps = {
 export function MockSeoSections({ config }: MockSeoSectionsProps) {
   const copy = buildMockSeoPageCopy(config);
   const faqs = buildMockExamFaqs(config);
+  const linkedDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
 
   return (
     <>
@@ -41,7 +43,7 @@ export function MockSeoSections({ config }: MockSeoSectionsProps) {
           className="mt-5 inline-flex text-sm font-semibold text-[#1f3a5f] underline-offset-4 hover:underline"
           href={`/decks/${config.linkedDeckSlug}`}
         >
-          Drill weak topics with the linked {config.linkedDeckSlug.replace(/-/g, " ")}
+          Drill weak topics with {linkedDeck?.shortName ?? "the linked"} flashcards
         </Link>
       </section>
 

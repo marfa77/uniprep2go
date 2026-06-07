@@ -20,9 +20,9 @@ import { isMockExamRunnable } from "@/lib/mock-exams/question-bank";
 import { customDeckMailtoUrl, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "2026 Exam Prep Anki Decks | FINRA, CFA, FRM, Insurance | UniPrep2Go",
+  title: "2026 Exam Prep | Free Practice Tests, Flashcards & PDFs | UniPrep2Go",
   description:
-    "Independent 2026 Anki .apkg decks and free readiness checks for FINRA SIE, Series 7, Series 63, insurance, California real estate, CFA, FRM, and language exams.",
+    "Free FINRA SIE, CFA, FRM, ServSafe, and insurance practice tests plus independent flashcard decks and PDF study guides for US licensing and finance exams.",
   keywords: [
     "US exam prep Anki decks",
     "FINRA SIE Anki deck",
@@ -135,19 +135,33 @@ export default async function HomePage() {
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
-                  href="#catalog"
+                  href="#mock-exams"
                   className="inline-flex items-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
                 >
-                  Browse catalog
+                  Free practice tests
                 </a>
                 <a
-                  href={siteConfig.lemonSqueezyStoreUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#catalog"
                   className="inline-flex items-center rounded-full border border-[#18140f]/20 bg-[#fffaf0]/70 px-6 py-3 text-sm font-semibold text-[#18140f] transition hover:border-[#18140f]"
                 >
-                  Prep2Go store
+                  Browse decks
                 </a>
+              </div>
+              <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium text-[#1f3a5f]">
+                {[
+                  { href: "/mock-exams/sie-full-mock", label: "SIE practice test" },
+                  { href: "/mock-exams/frm-part-1-readiness-check", label: "FRM readiness check" },
+                  { href: "/mock-exams/cfa-level-1-readiness-check", label: "CFA practice test" },
+                  { href: "/mock-exams/servsafe-manager-mock", label: "ServSafe mock" },
+                ].map((link) => (
+                  <Link
+                    key={link.href}
+                    className="underline-offset-4 hover:underline"
+                    href={link.href}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
               </div>
               <dl className="mt-10 grid gap-4 sm:grid-cols-3">
                 <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-4">

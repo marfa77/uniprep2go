@@ -5,99 +5,21 @@ import { notFound } from "next/navigation";
 import { FunnelTracker, TrackedCheckoutLink } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { catalogAvailableDecks, categoryLabels, formatDeckContentLabel } from "@/lib/decks";
+import { DeckSeoSections } from "@/components/decks/deck-seo-sections";
+import { catalogAvailableDecks, categoryLabels } from "@/lib/decks";
 import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
+import {
+  buildDeckSeoDescription,
+  buildDeckSeoHeadline,
+  buildDeckSeoKeywords,
+  buildDeckSeoTitle,
+  getDeckLinkedMock,
+} from "@/lib/deck-seo";
 import { getDeckCoverUrl } from "@/lib/deck-media";
 import { buildDeckPageJsonLd } from "@/lib/product-jsonld";
-import { getAllMockExams } from "@/lib/mock-exams/configs";
 import { buildMockSeoTitle } from "@/lib/mock-exams/seo";
 
 export const revalidate = 3600;
-
-function buildDeckSeoTitle(deck: Awaited<ReturnType<typeof getPricedDeckBySlug>>) {
-  if (!deck) {
-    return "Deck not found";
-  }
-
-  const year = deck.facts.examYear.includes("2026") ? "2026 " : "";
-
-  if (deck.slug === "cfa-level-1-anki-deck") {
-    return "2026 CFA Level 1 Anki Deck | 342+ Formula Flashcards";
-  }
-
-  if (deck.slug === "frm-part-1-anki-deck") {
-    return "2026 FRM Part 1 Anki Deck | 444 Formula Flashcards";
-  }
-
-  if (deck.slug === "sie-exam-anki-deck") {
-    return "2026 SIE Exam Anki Deck | 300 Cards + Free Practice Test";
-  }
-
-  if (deck.slug === "servsafe-manager-anki-deck") {
-    return "ServSafe Manager Anki Deck | 300 Cards + Free Practice Test";
-  }
-
-  if (deck.slug === "ptcb-pharmacy-technician-anki-deck") {
-    return "PTCB Pharmacy Technician Anki Deck | 300 PTCE Flashcards";
-  }
-
-  if (deck.slug === "cat4-level-d-anki-deck-printable-pdf") {
-    return "CAT4 Level D Anki Deck + PDF | Grade 7 Verbal & Quantitative";
-  }
-
-  if (deck.slug === "servsafe-manager-complete-study-guide") {
-    return "ServSafe Manager Study Guide PDF | 70 Practice Questions";
-  }
-
-  if (deck.slug === "series-7-anki-deck") {
-    return "2026 Series 7 Top-Off Anki Deck | Suitability & Options";
-  }
-
-  if (deck.slug === "series-63-anki-deck") {
-    return "2026 Series 63 Anki Deck | State Law Flashcards";
-  }
-
-  return `${year}${deck.shortName} Anki Deck | UniPrep2Go`;
-}
-
-function buildDeckSeoDescription(deck: Awaited<ReturnType<typeof getPricedDeckBySlug>>) {
-  if (!deck) {
-    return "";
-  }
-
-  const price = formatDeckPriceLabel(deck);
-  const base = `${formatDeckContentLabel(deck)}, ${deck.format} download, ${deck.facts.topics}. ${price} via ${deck.checkoutProvider}.`;
-
-  if (deck.slug === "sie-exam-anki-deck") {
-    return `${base} Covers current FINRA SIE topic weights with a linked free 75-question SIE practice test, 105-minute mock, and 70% target.`;
-  }
-
-  if (deck.slug === "servsafe-manager-anki-deck") {
-    return `${base} Covers ServSafe Manager food safety topics with a linked free 90-question practice test, 120-minute mock, and 75% target.`;
-  }
-
-  if (deck.slug === "ptcb-pharmacy-technician-anki-deck") {
-    return `300 PTCE flashcards: top 200 brand/generic pairs, sig codes, pharmacy math, DEA schedules, and dispensing workflow. ${price} via Gumroad. Independent study aid — not official PTCB material.`;
-  }
-
-  if (deck.slug === "cat4-level-d-anki-deck-printable-pdf") {
-    return `CAT4 Level D bundle: 200-card Anki deck + 49-page PDF for verbal and quantitative subtests. Worked examples for Year 7 / Grade 7 entry. ${price} via Gumroad. Not official GL Assessment material.`;
-  }
-
-  if (deck.slug === "servsafe-manager-complete-study-guide") {
-    return `${base} Includes a 40-page printable guide, 2-page cram sheet, 70 practice questions, rationales, 7-day plan, checklist, and glossary.`;
-  }
-
-  if (deck.slug === "series-7-anki-deck") {
-    return `${base} Focuses on FINRA job functions, suitability, options, products, and a linked 60-question readiness check.`;
-  }
-
-  if (deck.category === "finance" || deck.category === "professional") {
-    return `${base} Independent active-recall study aid with sample cards and free linked practice tests where available.`;
-  }
-
-  return `${base} Independent spaced-repetition study aid with sample cards and import guidance.`;
-}
 
 export function generateStaticParams() {
   return catalogAvailableDecks.map((deck) => ({ slug: deck.slug }));
@@ -118,10 +40,12 @@ export async function generateMetadata({
   const image = getDeckCoverUrl(deck);
   const title = buildDeckSeoTitle(deck);
   const description = buildDeckSeoDescription(deck);
+  const keywords = buildDeckSeoKeywords(deck);
 
   return {
     title,
     description,
+    keywords,
     alternates: {
       canonical: `/decks/${deck.slug}`,
     },
@@ -167,17 +91,26 @@ export default async function DeckPage({
       : deck.format === "PDF"
         ? "Buy the PDF"
         : "Buy the deck";
-  const linkedMock = getAllMockExams().find((mock) => mock.linkedDeckSlug === deck.slug);
-  const secondaryCta =
-    deck.format === "PDF"
+  const linkedMock = getDeckLinkedMock(deck.slug);
+  const secondaryCta = linkedMock
+    ? {
+        href: `/mock-exams/${linkedMock.slug}`,
+        label: `Free ${deck.shortName} practice test`,
+      }
+    : deck.format === "PDF"
       ? {
           href: "/mock-exams/servsafe-manager-mock",
           label: "Try free practice test",
         }
-      : {
-          href: "/#faq",
-          label: "Import guide",
-        };
+      : deck.slug === "cfa-level-1-anki-deck"
+        ? {
+            href: "/how-to-import-cfa-anki-deck",
+            label: "How to import",
+          }
+        : {
+            href: "/anki-starter-kit",
+            label: "Anki starter kit",
+          };
 
   const sectionEvents = [
     { selector: "#facts", name: "product_facts_view" as const },
@@ -203,7 +136,7 @@ export default async function DeckPage({
           {categoryLabels[deck.category]}
         </p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
-          {deck.title}
+          {buildDeckSeoHeadline(deck)}
         </h1>
 
         <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(220px,0.42fr)] lg:items-start">
@@ -245,13 +178,6 @@ export default async function DeckPage({
             >
               View on App Store
             </Link>
-          ) : deck.slug === "cfa-level-1-anki-deck" ? (
-            <Link
-              className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-              href="/how-to-import-cfa-anki-deck"
-            >
-              How to import
-            </Link>
           ) : (
             <Link
               className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
@@ -261,6 +187,8 @@ export default async function DeckPage({
             </Link>
           )}
         </div>
+
+        <DeckSeoSections deck={deck} />
 
         {linkedMock ? (
           <section className="mt-8 rounded-3xl border border-[#1f3a5f]/15 bg-[#fffaf0] p-5">
@@ -278,7 +206,7 @@ export default async function DeckPage({
               className="mt-4 inline-flex rounded-full border border-[#1f3a5f]/25 px-5 py-2.5 text-sm font-semibold text-[#1f3a5f] transition hover:border-[#1f3a5f]"
               href={`/mock-exams/${linkedMock.slug}`}
             >
-              Start free practice test
+              Start free {deck.shortName} practice test
             </Link>
           </section>
         ) : null}

@@ -31,13 +31,16 @@ describe("intent pages visibility", () => {
     expect(page?.directAnswer).toContain("22 language exam Anki decks");
   });
 
-  it("publishes intent pages in sitemap and allows crawlers through robots", () => {
+  it("keeps deck and mock magnets in sitemap instead of legacy intent URLs", () => {
     const urls = sitemap().map((entry) => entry.url);
     const rules = robots().rules;
 
     for (const page of intentPages) {
-      expect(urls).toContain(absoluteUrl(`/${page.slug}`));
+      expect(urls).not.toContain(absoluteUrl(`/${page.slug}`));
     }
+
+    expect(urls).toContain(absoluteUrl("/decks/frm-part-1-anki-deck"));
+    expect(urls).toContain(absoluteUrl("/mock-exams/frm-part-1-readiness-check"));
 
     expect(urls).toContain(`${siteConfig.url}/`);
     expect(urls).toContain(absoluteUrl("/anki-starter-kit"));

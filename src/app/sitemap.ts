@@ -1,7 +1,6 @@
 import type { MetadataRoute } from "next";
 import { availableDecks } from "../lib/decks";
 import { getAllMockExams } from "../lib/mock-exams/configs";
-import { intentPages } from "../lib/intent-pages";
 import { siteConfig } from "../lib/site";
 
 const siteUrl = siteConfig.url;
@@ -13,21 +12,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${siteUrl}/decks/${deck.slug}`,
     lastModified,
     changeFrequency: "monthly" as const,
-    priority: 0.9,
-  }));
-
-  const intentAnswerPages = intentPages.map((page) => ({
-    url: `${siteUrl}/${page.slug}`,
-    lastModified,
-    changeFrequency: "monthly" as const,
-    priority: 0.8,
+    priority: 0.92,
   }));
 
   const mockPages = getAllMockExams().map((mock) => ({
     url: `${siteUrl}/mock-exams/${mock.slug}`,
     lastModified,
-    changeFrequency: "monthly" as const,
-    priority: 0.9,
+    changeFrequency: "weekly" as const,
+    priority: 0.95,
   }));
 
   return [
@@ -58,11 +50,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${siteUrl}/mock-exams`,
       lastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
+      changeFrequency: "weekly",
+      priority: 0.95,
     },
     ...mockPages,
-    ...intentAnswerPages,
     ...deckPages,
     {
       url: `${siteUrl}/contact`,

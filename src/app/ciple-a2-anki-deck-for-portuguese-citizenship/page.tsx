@@ -1,17 +1,5 @@
-import type { Metadata } from "next";
-import { IntentPageView } from "@/components/intent-page";
-import { getIntentPageBySlug } from "@/lib/intent-pages";
-
-const page = getIntentPageBySlug("ciple-a2-anki-deck-for-portuguese-citizenship");
-
-export const metadata: Metadata = {
-  title: page?.title,
-  description: page?.description,
-  alternates: {
-    canonical: "/ciple-a2-anki-deck-for-portuguese-citizenship",
-  },
-};
+import { permanentRedirect } from "next/navigation";
 
 export default function CipleA2AnkiDeckForPortugueseCitizenshipPage() {
-  return <IntentPageView page={page!} />;
+  permanentRedirect("/decks/ciple-a2-european-portuguese-anki-deck");
 }
