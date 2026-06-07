@@ -10,7 +10,7 @@ const pricedDeck = {
   slug: "cfa-level-1-anki-deck",
   title: "CFA Level 1 Anki Deck",
   checkoutProvider: "Gumroad",
-  checkoutUrl: "https://pixidstudio.gumroad.com/l/ivjmuu",
+  checkoutUrl: "https://pixidstudio.gumroad.com/l/ivjmuu?wanted=true",
   price: { amount: 11, currency: "USD" },
 };
 
@@ -49,7 +49,7 @@ describe("POST /api/events", () => {
         deckSlug: "cfa-level-1-anki-deck",
         source: "deck_page_cta",
         path: "/decks/cfa-level-1-anki-deck",
-        destinationUrl: "https://pixidstudio.gumroad.com/l/ivjmuu",
+        destinationUrl: "https://pixidstudio.gumroad.com/l/ivjmuu?wanted=true",
         browserLanguage: "pt-PT",
       }),
     });
@@ -62,7 +62,7 @@ describe("POST /api/events", () => {
       country: "PT",
       acceptLanguage: "pt-PT,pt;q=0.9,en;q=0.8",
       clientIp: "5.194.82.128",
-      destinationUrl: "https://pixidstudio.gumroad.com/l/ivjmuu",
+      destinationUrl: "https://pixidstudio.gumroad.com/l/ivjmuu?wanted=true",
     });
     expect(recordFunnelEvent).not.toHaveBeenCalled();
     expect(

@@ -426,7 +426,7 @@ const rawDecks: Deck[] = [
     audience: "CFA Level 1 candidates who want structured recall practice for formulas, concepts, and topic definitions.",
     format: ".apkg",
     coverImage: "/covers/cfa-level-1-anki-deck.webp",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/ivjmuu",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/ivjmuu?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {

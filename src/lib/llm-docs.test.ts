@@ -41,7 +41,7 @@ describe("LLM documents", () => {
       price_currency: "USD",
       card_count: "342+",
       format: ".apkg",
-      checkout_url: "https://pixidstudio.gumroad.com/l/ivjmuu",
+      checkout_url: "https://pixidstudio.gumroad.com/l/ivjmuu?wanted=true",
       checkout_provider: "Gumroad",
       seller: "PixID Studio",
       not_official_exam_material: true,

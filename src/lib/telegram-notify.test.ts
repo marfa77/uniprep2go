@@ -38,7 +38,7 @@ describe("telegram checkout alerts", () => {
 
     expect(gumroadMessage).toContain("UniPrep2Go checkout click");
     expect(gumroadMessage).toContain("Provider: Gumroad");
-    expect(gumroadMessage).toContain("https://pixidstudio.gumroad.com/l/ivjmuu");
+    expect(gumroadMessage).toContain("https://pixidstudio.gumroad.com/l/ivjmuu?wanted=true");
 
     const lemonMessage = toCheckoutClickMessage(
       createFunnelEvent({
