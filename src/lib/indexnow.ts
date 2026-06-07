@@ -2,7 +2,7 @@ import { siteConfig } from "@/lib/site";
 
 /** Hex key (8–128 chars) — also served at `/{INDEXNOW_KEY}.txt` in `public/`. */
 export const INDEXNOW_KEY =
-  process.env.INDEXNOW_KEY?.trim() || "5de26981f808467db78e7afe1b1d2b28";
+  process.env.INDEXNOW_KEY?.trim() || "b0a3b2c557564641bb339e85be23e893";
 
 const INDEXNOW_ENDPOINT =
   process.env.INDEXNOW_ENDPOINT?.trim() || "https://api.indexnow.org/indexnow";
