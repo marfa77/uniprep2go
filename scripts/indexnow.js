@@ -16,7 +16,7 @@ require("dotenv").config({ path: path.resolve(process.cwd(), ".env.local") });
 require("dotenv").config({ path: path.resolve(process.cwd(), ".env") });
 
 const INDEXNOW_KEY =
-  process.env.INDEXNOW_KEY?.trim() || "b0a3b2c557564641bb339e85be23e893";
+  process.env.INDEXNOW_KEY?.trim() || "6af1f2a1a1484637b69c33f55d1ccd2b";
 const SITE_ORIGIN = (
   process.env.NEXT_PUBLIC_SITE_URL?.trim() ||
   process.env.SITE_URL?.trim() ||
