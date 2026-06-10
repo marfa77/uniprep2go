@@ -90,6 +90,7 @@ const sampleStats: FunnelStats = {
       "/mock-exams/cfa-level-1-readiness-check": 8,
       "/": 9,
     },
+    periodByCountry: { US: 12, PT: 4, DE: 2 },
   },
   storage: "redis",
 };
@@ -140,6 +141,8 @@ describe("telegram stats", () => {
     expect(message).toContain("UniPrep2Go · growth pulse");
     expect(message).toContain("Unique users: 23 period · 128 lifetime");
     expect(message).toContain("Google 12 · ChatGPT 4 · Direct 5 · Other 2");
+    expect(message).toContain("Countries (unique, period):");
+    expect(message).toContain("US 12 · PT 4 · DE 2");
     expect(message).toContain("cfa-level-1-anki-deck: 14 view → 2 intent → 1 convert (7.1%)");
     expect(message).toContain("mock · cfa-level-1-readiness-check: 8 view → 3 intent → 0 convert (0.0%)");
     expect(message).toContain("/decks/cfa-level-1-anki-deck — 14");
@@ -148,8 +151,20 @@ describe("telegram stats", () => {
     expect(message).toContain("09.06: 23 / 88 ▪▪▪▪▪▪▪▪▪▪▪▪");
     expect(message).not.toContain("All-time");
     expect(message).not.toContain("Recent events");
-    expect(message).not.toContain("Top countries");
     expect(message).not.toContain("Last 7 days");
+  });
+
+  it("falls back to visit counts when unique country data is missing", () => {
+    const message = toTelegramStatsMessage({
+      ...sampleStats,
+      byCountry: { US: 45, PT: 12 },
+      visitors: {
+        ...sampleStats.visitors,
+        periodByCountry: {},
+      },
+    });
+
+    expect(message).toContain("US 45 · PT 12 (visits)");
   });
 
   it("formats the 7-day dynamics block like the reference example", () => {

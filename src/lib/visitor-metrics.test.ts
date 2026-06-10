@@ -19,6 +19,7 @@ describe("visitor metrics", () => {
         visitorId: "vis_a",
         path: "/decks/cfa-level-1-anki-deck",
         referrer: "https://google.com/search?q=cfa",
+        country: "US",
       }),
     );
     recordVisitorMetricInMemory(
@@ -27,6 +28,7 @@ describe("visitor metrics", () => {
         deckSlug: "cfa-level-1-anki-deck",
         visitorId: "vis_a",
         path: "/decks/cfa-level-1-anki-deck",
+        country: "US",
       }),
     );
     recordVisitorMetricInMemory(
@@ -37,6 +39,7 @@ describe("visitor metrics", () => {
         source: "mock:cfa-level-1-readiness-check:landing",
         path: "/mock-exams/cfa-level-1-readiness-check",
         referrer: "https://chatgpt.com/",
+        country: "PT",
       }),
     );
 
@@ -45,6 +48,7 @@ describe("visitor metrics", () => {
     expect(metrics.periodUnique).toBe(2);
     expect(metrics.periodByChannel.google).toBe(1);
     expect(metrics.periodByChannel.chatgpt).toBe(1);
+    expect(metrics.periodByCountry).toEqual({ US: 1, PT: 1 });
     expect(metrics.products["cfa-level-1-anki-deck"]).toMatchObject({
       visitors: 1,
       intents: 1,

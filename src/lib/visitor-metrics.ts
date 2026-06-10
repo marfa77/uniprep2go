@@ -14,6 +14,7 @@ export type VisitorMetrics = {
   periodUnique: number;
   lifetimeByChannel: Record<TrafficChannel, number>;
   periodByChannel: Record<TrafficChannel, number>;
+  periodByCountry: Record<string, number>;
   dailyUnique: DailyUniqueCounts;
   dailyPageViews: DailyUniqueCounts;
   products: Record<string, ProductUniqueMetrics>;
@@ -26,6 +27,7 @@ export function emptyVisitorMetrics(): VisitorMetrics {
     periodUnique: 0,
     lifetimeByChannel: { google: 0, chatgpt: 0, direct: 0, other: 0 },
     periodByChannel: { google: 0, chatgpt: 0, direct: 0, other: 0 },
+    periodByCountry: {},
     dailyUnique: {},
     dailyPageViews: {},
     products: {},
@@ -45,6 +47,7 @@ type VisitorSetStore = {
   periodProductVisitors: Map<string, Set<string>>;
   periodProductIntents: Map<string, Set<string>>;
   periodProductConversions: Map<string, Set<string>>;
+  periodCountry: Map<string, Set<string>>;
   pathVisitors: Map<string, Set<string>>;
   dailyPageViews: Map<string, number>;
 };
@@ -78,6 +81,7 @@ function getMemoryVisitorSets(): VisitorSetStore {
       periodProductVisitors: new Map(),
       periodProductIntents: new Map(),
       periodProductConversions: new Map(),
+      periodCountry: new Map(),
       pathVisitors: new Map(),
       dailyPageViews: new Map(),
     };
@@ -93,6 +97,7 @@ export function resetPeriodVisitorSets() {
   store.periodProductVisitors.clear();
   store.periodProductIntents.clear();
   store.periodProductConversions.clear();
+  store.periodCountry.clear();
   store.pathVisitors.clear();
 }
 
@@ -110,9 +115,20 @@ export function resetAllVisitorSets() {
     periodProductVisitors: new Map(),
     periodProductIntents: new Map(),
     periodProductConversions: new Map(),
+    periodCountry: new Map(),
     pathVisitors: new Map(),
     dailyPageViews: new Map(),
   };
+}
+
+function normalizeCountryCode(country: string | undefined) {
+  const code = country?.trim().toUpperCase();
+
+  if (!code || code === "XX") {
+    return undefined;
+  }
+
+  return code;
 }
 
 function dayKey(isoTimestamp: string) {
@@ -183,6 +199,12 @@ export function recordVisitorMetricInMemory(event: FunnelEvent) {
   store.period.add(visitorId);
   store.lifetimeChannel[channel].add(visitorId);
   store.periodChannel[channel].add(visitorId);
+
+  const country = normalizeCountryCode(event.country);
+
+  if (country) {
+    addToSetMap(store.periodCountry, country, visitorId);
+  }
 
   const dailyBucket = store.daily.get(date) ?? new Set<string>();
   dailyBucket.add(visitorId);
@@ -265,6 +287,7 @@ export function readVisitorMetricsFromMemory(): VisitorMetrics {
       direct: store.periodChannel.direct.size,
       other: store.periodChannel.other.size,
     },
+    periodByCountry: mapSetSizes(store.periodCountry),
     dailyUnique,
     dailyPageViews,
     products: productMetrics,
@@ -288,6 +311,8 @@ export const VISITOR_REDIS_KEYS = {
   pathVisitors: (path: string) => `funnel:path:visitors:${encodeURIComponent(path)}`,
   productIndex: "funnel:product:index",
   pathIndex: "funnel:path:index",
+  periodCountry: (countryCode: string) => `funnel:visitors:period:country:${countryCode}`,
+  countryIndex: "funnel:country:index",
 } as const;
 
 export function visitorMetricRedisOperations(event: FunnelEvent) {
@@ -298,6 +323,7 @@ export function visitorMetricRedisOperations(event: FunnelEvent) {
   }
 
   const channel = classifyTrafficChannel(event.referrer);
+  const country = normalizeCountryCode(event.country);
   const date = dayKey(event.occurredAt);
   const productKey = resolveProductKey(event);
   const ops: Array<(pipeline: {
@@ -317,6 +343,13 @@ export function visitorMetricRedisOperations(event: FunnelEvent) {
   ops.push((pipeline) => {
     pipeline.expire(VISITOR_REDIS_KEYS.daily(date), 60 * 60 * 24 * 45);
   });
+
+  if (country) {
+    ops.push((pipeline) => {
+      pipeline.sadd(VISITOR_REDIS_KEYS.periodCountry(country), visitorId);
+      pipeline.sadd(VISITOR_REDIS_KEYS.countryIndex, country);
+    });
+  }
 
   if (event.path) {
     ops.push((pipeline) => {
@@ -401,6 +434,7 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
     periodOther,
     productKeys,
     pathKeys,
+    countryKeys,
   ] = await Promise.all([
     client.scard(VISITOR_REDIS_KEYS.lifetime),
     client.scard(VISITOR_REDIS_KEYS.period),
@@ -414,6 +448,7 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
     client.scard(VISITOR_REDIS_KEYS.periodChannel("other")),
     client.smembers<string>(VISITOR_REDIS_KEYS.productIndex),
     client.smembers<string>(VISITOR_REDIS_KEYS.pathIndex),
+    client.smembers<string>(VISITOR_REDIS_KEYS.countryIndex),
   ]);
 
   const dayKeys = recentDayKeys(14);
@@ -444,6 +479,12 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
     paths[path] = await client.scard(VISITOR_REDIS_KEYS.pathVisitors(path));
   }
 
+  const periodByCountry: Record<string, number> = {};
+
+  for (const countryCode of countryKeys ?? []) {
+    periodByCountry[countryCode] = await client.scard(VISITOR_REDIS_KEYS.periodCountry(countryCode));
+  }
+
   return {
     lifetimeUnique,
     periodUnique,
@@ -459,6 +500,7 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
       direct: periodDirect,
       other: periodOther,
     },
+    periodByCountry,
     dailyUnique,
     dailyPageViews,
     products,
@@ -487,6 +529,22 @@ export function periodProductRedisKeys(productKey: string) {
     VISITOR_REDIS_KEYS.periodProductIntents(productKey),
     VISITOR_REDIS_KEYS.periodProductConversions(productKey),
   ];
+}
+
+export async function deletePeriodCountryRedisKeys(
+  client: RedisLike & { del: (...keys: string[]) => Promise<number>; smembers: <T = string>(key: string) => Promise<T[]> },
+) {
+  const countryKeys = await client.smembers<string>(VISITOR_REDIS_KEYS.countryIndex);
+
+  if (countryKeys.length === 0) {
+    await client.del(VISITOR_REDIS_KEYS.countryIndex);
+    return;
+  }
+
+  await client.del(
+    ...countryKeys.map((countryCode) => VISITOR_REDIS_KEYS.periodCountry(countryCode)),
+    VISITOR_REDIS_KEYS.countryIndex,
+  );
 }
 
 export async function deletePeriodProductRedisKeys(

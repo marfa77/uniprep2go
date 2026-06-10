@@ -138,6 +138,36 @@ function formatProductLine(productKey: string, metrics: ProductUniqueMetrics) {
   return `- ${formatProductLabel(productKey)}: ${metrics.visitors} view → ${metrics.intents} intent → ${metrics.conversions} convert (${conversionRate})`;
 }
 
+function formatTopCountries(
+  uniqueByCountry: Record<string, number>,
+  visitsByCountry: Record<string, number>,
+  limit = 8,
+) {
+  const uniqueEntries = Object.entries(uniqueByCountry).filter(([, count]) => count > 0);
+
+  if (uniqueEntries.length > 0) {
+    return uniqueEntries
+      .sort(([, left], [, right]) => right - left)
+      .slice(0, limit)
+      .map(([country, count]) => `${country} ${count}`)
+      .join(" · ");
+  }
+
+  const visitEntries = Object.entries(visitsByCountry).filter(([, count]) => count > 0);
+
+  if (visitEntries.length === 0) {
+    return "- no country data yet";
+  }
+
+  return (
+    visitEntries
+      .sort(([, left], [, right]) => right - left)
+      .slice(0, limit)
+      .map(([country, count]) => `${country} ${count}`)
+      .join(" · ") + " (visits)"
+  );
+}
+
 function formatTopPaths(paths: Record<string, number>, limit = 6) {
   const lines = Object.entries(paths)
     .sort(([, left], [, right]) => right - left)
@@ -173,6 +203,9 @@ export function toTelegramStatsMessages(stats: FunnelStats) {
     "",
     "Sources (unique, period):",
     formatChannelLine(visitors.periodByChannel),
+    "",
+    "Countries (unique, period):",
+    formatTopCountries(visitors.periodByCountry, stats.byCountry),
     "",
     "Decks & mocks (unique view → intent → convert):",
     products.length > 0

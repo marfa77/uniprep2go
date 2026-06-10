@@ -9,6 +9,7 @@ import { getRedisClient } from "./redis";
 import {
   deleteIndexedRedisKeys,
   deleteAllProductRedisKeys,
+  deletePeriodCountryRedisKeys,
   deletePeriodProductRedisKeys,
   emptyVisitorMetrics,
   periodVisitorRedisKeysForReset,
@@ -348,6 +349,7 @@ export async function resetFunnelStats() {
   await deleteIndexedRedisKeys(client, VISITOR_REDIS_KEYS.pathIndex, (path) => [
     VISITOR_REDIS_KEYS.pathVisitors(path),
   ]);
+  await deletePeriodCountryRedisKeys(client);
   await deletePeriodProductRedisKeys(client);
 }
 
@@ -393,6 +395,7 @@ export async function resetAllFunnelStats() {
   await deleteIndexedRedisKeys(client, VISITOR_REDIS_KEYS.pathIndex, (path) => [
     VISITOR_REDIS_KEYS.pathVisitors(path),
   ]);
+  await deletePeriodCountryRedisKeys(client);
   await deleteAllProductRedisKeys(client);
 }
 
