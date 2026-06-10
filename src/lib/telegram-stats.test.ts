@@ -57,6 +57,8 @@ const sampleStats: FunnelStats = {
     ...emptyVisitorMetrics(),
     lifetimeUnique: 128,
     periodUnique: 23,
+    periodNew: 18,
+    periodReturning: 5,
     periodByChannel: {
       google: 12,
       chatgpt: 4,
@@ -140,6 +142,7 @@ describe("telegram stats", () => {
     expect(messages).toHaveLength(1);
     expect(message).toContain("UniPrep2Go · growth pulse");
     expect(message).toContain("Unique users: 23 period · 128 lifetime");
+    expect(message).toContain("new 18 · returning 5 (21.7% return rate)");
     expect(message).toContain("Google 12 · ChatGPT 4 · Direct 5 · Other 2");
     expect(message).toContain("Countries (unique, period):");
     expect(message).toContain("US 12 · PT 4 · DE 2");

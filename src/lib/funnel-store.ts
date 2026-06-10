@@ -22,6 +22,7 @@ import {
   resetPeriodVisitorSets,
   VISITOR_REDIS_KEYS,
   visitorMetricRedisOperations,
+  resolveVisitorReturnStatus,
   type VisitorMetrics,
 } from "./visitor-metrics";
 
@@ -222,7 +223,9 @@ export async function recordFunnelEvent(event: FunnelEvent) {
       operation(pipeline);
     }
 
-    for (const operation of visitorMetricRedisOperations(event)) {
+    const returnStatus = await resolveVisitorReturnStatus(client, event.visitorId);
+
+    for (const operation of visitorMetricRedisOperations(event, returnStatus)) {
       operation(pipeline);
     }
 

@@ -12,6 +12,8 @@ export type ProductUniqueMetrics = {
 export type VisitorMetrics = {
   lifetimeUnique: number;
   periodUnique: number;
+  periodNew: number;
+  periodReturning: number;
   lifetimeByChannel: Record<TrafficChannel, number>;
   periodByChannel: Record<TrafficChannel, number>;
   periodByCountry: Record<string, number>;
@@ -25,6 +27,8 @@ export function emptyVisitorMetrics(): VisitorMetrics {
   return {
     lifetimeUnique: 0,
     periodUnique: 0,
+    periodNew: 0,
+    periodReturning: 0,
     lifetimeByChannel: { google: 0, chatgpt: 0, direct: 0, other: 0 },
     periodByChannel: { google: 0, chatgpt: 0, direct: 0, other: 0 },
     periodByCountry: {},
@@ -38,6 +42,8 @@ export function emptyVisitorMetrics(): VisitorMetrics {
 type VisitorSetStore = {
   lifetime: Set<string>;
   period: Set<string>;
+  periodNew: Set<string>;
+  periodReturning: Set<string>;
   lifetimeChannel: Record<TrafficChannel, Set<string>>;
   periodChannel: Record<TrafficChannel, Set<string>>;
   daily: Map<string, Set<string>>;
@@ -72,6 +78,8 @@ function getMemoryVisitorSets(): VisitorSetStore {
     globalStore.__uniprep2goVisitorSets = {
       lifetime: new Set(),
       period: new Set(),
+      periodNew: new Set(),
+      periodReturning: new Set(),
       lifetimeChannel: emptyChannelSets(),
       periodChannel: emptyChannelSets(),
       daily: new Map(),
@@ -93,6 +101,8 @@ function getMemoryVisitorSets(): VisitorSetStore {
 export function resetPeriodVisitorSets() {
   const store = getMemoryVisitorSets();
   store.period.clear();
+  store.periodNew.clear();
+  store.periodReturning.clear();
   store.periodChannel = emptyChannelSets();
   store.periodProductVisitors.clear();
   store.periodProductIntents.clear();
@@ -106,6 +116,8 @@ export function resetAllVisitorSets() {
   globalStore.__uniprep2goVisitorSets = {
     lifetime: new Set(),
     period: new Set(),
+    periodNew: new Set(),
+    periodReturning: new Set(),
     lifetimeChannel: emptyChannelSets(),
     periodChannel: emptyChannelSets(),
     daily: new Map(),
@@ -194,9 +206,20 @@ export function recordVisitorMetricInMemory(event: FunnelEvent) {
   const store = getMemoryVisitorSets();
   const channel = classifyTrafficChannel(event.referrer);
   const date = dayKey(event.occurredAt);
+  const alreadyInPeriod = store.period.has(visitorId);
+  const isReturning = !alreadyInPeriod && store.lifetime.has(visitorId);
 
   store.lifetime.add(visitorId);
   store.period.add(visitorId);
+
+  if (!alreadyInPeriod) {
+    if (isReturning) {
+      store.periodReturning.add(visitorId);
+    } else {
+      store.periodNew.add(visitorId);
+    }
+  }
+
   store.lifetimeChannel[channel].add(visitorId);
   store.periodChannel[channel].add(visitorId);
 
@@ -275,6 +298,8 @@ export function readVisitorMetricsFromMemory(): VisitorMetrics {
   return {
     lifetimeUnique: store.lifetime.size,
     periodUnique: store.period.size,
+    periodNew: store.periodNew.size,
+    periodReturning: store.periodReturning.size,
     lifetimeByChannel: {
       google: store.lifetimeChannel.google.size,
       chatgpt: store.lifetimeChannel.chatgpt.size,
@@ -298,6 +323,8 @@ export function readVisitorMetricsFromMemory(): VisitorMetrics {
 export const VISITOR_REDIS_KEYS = {
   lifetime: "funnel:visitors:lifetime",
   period: "funnel:visitors:period",
+  periodNew: "funnel:visitors:period:new",
+  periodReturning: "funnel:visitors:period:returning",
   lifetimeChannel: (channel: TrafficChannel) => `funnel:visitors:lifetime:channel:${channel}`,
   periodChannel: (channel: TrafficChannel) => `funnel:visitors:period:channel:${channel}`,
   daily: (date: string) => `funnel:visitors:day:${date}`,
@@ -315,7 +342,36 @@ export const VISITOR_REDIS_KEYS = {
   countryIndex: "funnel:country:index",
 } as const;
 
-export function visitorMetricRedisOperations(event: FunnelEvent) {
+export type VisitorReturnStatus = {
+  alreadyInPeriod: boolean;
+  isReturning: boolean;
+};
+
+export async function resolveVisitorReturnStatus(
+  client: { sismember: (key: string, member: string) => Promise<number | boolean> },
+  visitorId: string | undefined,
+): Promise<VisitorReturnStatus> {
+  const normalizedVisitorId = visitorId?.trim();
+
+  if (!normalizedVisitorId) {
+    return { alreadyInPeriod: false, isReturning: false };
+  }
+
+  const [alreadyInPeriod, knownBefore] = await Promise.all([
+    client.sismember(VISITOR_REDIS_KEYS.period, normalizedVisitorId),
+    client.sismember(VISITOR_REDIS_KEYS.lifetime, normalizedVisitorId),
+  ]);
+
+  return {
+    alreadyInPeriod: Boolean(alreadyInPeriod),
+    isReturning: !alreadyInPeriod && Boolean(knownBefore),
+  };
+}
+
+export function visitorMetricRedisOperations(
+  event: FunnelEvent,
+  returnStatus: VisitorReturnStatus = { alreadyInPeriod: false, isReturning: false },
+) {
   const visitorId = event.visitorId?.trim();
 
   if (!visitorId) {
@@ -343,6 +399,16 @@ export function visitorMetricRedisOperations(event: FunnelEvent) {
   ops.push((pipeline) => {
     pipeline.expire(VISITOR_REDIS_KEYS.daily(date), 60 * 60 * 24 * 45);
   });
+
+  if (!returnStatus.alreadyInPeriod) {
+    ops.push((pipeline) => {
+      if (returnStatus.isReturning) {
+        pipeline.sadd(VISITOR_REDIS_KEYS.periodReturning, visitorId);
+      } else {
+        pipeline.sadd(VISITOR_REDIS_KEYS.periodNew, visitorId);
+      }
+    });
+  }
 
   if (country) {
     ops.push((pipeline) => {
@@ -424,6 +490,8 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
   const [
     lifetimeUnique,
     periodUnique,
+    periodNew,
+    periodReturning,
     lifetimeGoogle,
     lifetimeChatgpt,
     lifetimeDirect,
@@ -438,6 +506,8 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
   ] = await Promise.all([
     client.scard(VISITOR_REDIS_KEYS.lifetime),
     client.scard(VISITOR_REDIS_KEYS.period),
+    client.scard(VISITOR_REDIS_KEYS.periodNew),
+    client.scard(VISITOR_REDIS_KEYS.periodReturning),
     client.scard(VISITOR_REDIS_KEYS.lifetimeChannel("google")),
     client.scard(VISITOR_REDIS_KEYS.lifetimeChannel("chatgpt")),
     client.scard(VISITOR_REDIS_KEYS.lifetimeChannel("direct")),
@@ -488,6 +558,8 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
   return {
     lifetimeUnique,
     periodUnique,
+    periodNew,
+    periodReturning,
     lifetimeByChannel: {
       google: lifetimeGoogle,
       chatgpt: lifetimeChatgpt,
@@ -511,6 +583,8 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
 export function periodVisitorRedisKeysForReset() {
   return [
     VISITOR_REDIS_KEYS.period,
+    VISITOR_REDIS_KEYS.periodNew,
+    VISITOR_REDIS_KEYS.periodReturning,
     ...TRAFFIC_CHANNELS.map((channel) => VISITOR_REDIS_KEYS.periodChannel(channel)),
   ];
 }

@@ -5,6 +5,7 @@ import {
   readVisitorMetricsFromMemory,
   recordVisitorMetricInMemory,
   resetAllVisitorSets,
+  resetPeriodVisitorSets,
   resolveProductKey,
 } from "./visitor-metrics";
 
@@ -60,6 +61,47 @@ describe("visitor metrics", () => {
       conversions: 0,
     });
     expect(metrics.paths["/decks/cfa-level-1-anki-deck"]).toBe(1);
+    expect(metrics.periodNew).toBe(2);
+    expect(metrics.periodReturning).toBe(0);
+  });
+
+  it("tracks returning users on repeat visits", () => {
+    resetAllVisitorSets();
+
+    recordVisitorMetricInMemory(
+      createFunnelEvent({
+        name: "page_view",
+        deckSlug: "cfa-level-1-anki-deck",
+        visitorId: "vis_a",
+        path: "/",
+      }),
+    );
+
+    resetPeriodVisitorSets();
+
+    recordVisitorMetricInMemory(
+      createFunnelEvent({
+        name: "page_view",
+        deckSlug: "cfa-level-1-anki-deck",
+        visitorId: "vis_a",
+        path: "/decks/cfa-level-1-anki-deck",
+      }),
+    );
+    recordVisitorMetricInMemory(
+      createFunnelEvent({
+        name: "page_view",
+        deckSlug: "cfa-level-1-anki-deck",
+        visitorId: "vis_b",
+        path: "/",
+      }),
+    );
+
+    const metrics = readVisitorMetricsFromMemory();
+
+    expect(metrics.periodUnique).toBe(2);
+    expect(metrics.periodNew).toBe(1);
+    expect(metrics.periodReturning).toBe(1);
+    expect(metrics.lifetimeUnique).toBe(2);
   });
 
   it("resolves mock product keys from source or path", () => {

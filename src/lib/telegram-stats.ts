@@ -138,6 +138,16 @@ function formatProductLine(productKey: string, metrics: ProductUniqueMetrics) {
   return `- ${formatProductLabel(productKey)}: ${metrics.visitors} view → ${metrics.intents} intent → ${metrics.conversions} convert (${conversionRate})`;
 }
 
+function formatReturningUsers(periodNew: number, periodReturning: number, periodUnique: number) {
+  if (periodUnique <= 0) {
+    return "- no user data yet";
+  }
+
+  const returnRate = formatRate(periodReturning, periodUnique);
+
+  return `new ${periodNew} · returning ${periodReturning} (${returnRate} return rate)`;
+}
+
 function formatTopCountries(
   uniqueByCountry: Record<string, number>,
   visitsByCountry: Record<string, number>,
@@ -200,6 +210,7 @@ export function toTelegramStatsMessages(stats: FunnelStats) {
     "",
     `Trend: ${growth.label}`,
     `Unique users: ${visitors.periodUnique} period · ${visitors.lifetimeUnique} lifetime`,
+    formatReturningUsers(visitors.periodNew, visitors.periodReturning, visitors.periodUnique),
     "",
     "Sources (unique, period):",
     formatChannelLine(visitors.periodByChannel),
