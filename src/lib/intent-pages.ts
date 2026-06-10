@@ -16,6 +16,8 @@ export type IntentPage = {
   directAnswer: string;
   deckSlugs: string[];
   primaryDeckSlug: string;
+  mockSlug?: string;
+  indexInSitemap?: boolean;
   proofPoints: string[];
   sections: Array<{
     title: string;

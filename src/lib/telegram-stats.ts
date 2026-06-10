@@ -1,8 +1,7 @@
-import { filterReportingSources } from "./funnel-filter";
-import { formatMockStartProgress } from "./mock-exams/pricing";
 import type { CheckoutPriceSyncResult } from "./checkout-pricing";
-import type { FunnelAggregate } from "./funnel-aggregates";
 import type { FunnelStats } from "./funnel-store";
+import { trafficChannelLabels, type TrafficChannel } from "./traffic-channel";
+import type { ProductUniqueMetrics } from "./visitor-metrics";
 
 export function shouldReturnStats(text: string) {
   const normalized = text.trim().toLowerCase();
@@ -36,180 +35,159 @@ export function shouldSyncPrices(text: string) {
   return normalized === "sync" || normalized === "/sync" || normalized === "/sync@mariccol_bot";
 }
 
-function formatRates(aggregate: FunnelAggregate) {
-  const pageViews = aggregate.byEvent.page_view;
-  const checkoutIntents = aggregate.byEvent.checkout_intent;
-  const checkoutClicks = aggregate.byEvent.checkout_click;
-  const ctaRate = pageViews > 0 ? `${((checkoutIntents / pageViews) * 100).toFixed(1)}%` : "n/a";
-  const clickRate = pageViews > 0 ? `${((checkoutClicks / pageViews) * 100).toFixed(1)}%` : "n/a";
+function formatRate(numerator: number, denominator: number) {
+  if (denominator <= 0) {
+    return "0%";
+  }
 
-  return { pageViews, checkoutIntents, checkoutClicks, ctaRate, clickRate };
+  return `${((numerator / denominator) * 100).toFixed(1)}%`;
 }
 
-function formatSummaryBlock(title: string, aggregate: FunnelAggregate) {
-  const rates = formatRates(aggregate);
-  const mockStarts = aggregate.byEvent.mock_started;
-  const mockCompletions = aggregate.byEvent.mock_completed;
-  const mockCompletionRate =
-    mockStarts > 0 ? `${((mockCompletions / mockStarts) * 100).toFixed(1)}%` : "n/a";
-
-  return [
-    title,
-    `Total events: ${aggregate.totalEvents}`,
-    `Page views: ${rates.pageViews}`,
-    `Product facts views: ${aggregate.byEvent.product_facts_view}`,
-    `Topic matrix views: ${aggregate.byEvent.topic_matrix_view}`,
-    `Sample cards views: ${aggregate.byEvent.sample_cards_view}`,
-    `Catalog views: ${aggregate.byEvent.catalog_view}`,
-    `FAQ views: ${aggregate.byEvent.faq_view}`,
-    `Checkout intents: ${rates.checkoutIntents}`,
-    `Checkout clicks: ${rates.checkoutClicks}`,
-    `CTA rate: ${rates.ctaRate}`,
-    `Click rate: ${rates.clickRate}`,
-    `Mock landing views: ${aggregate.byEvent.mock_landing_view}`,
-    `Mock starts: ${formatMockStartProgress(mockStarts)} (free cap)`,
-    `Mock completions: ${mockCompletions}`,
-    `Mock completion rate: ${mockCompletionRate}`,
-    `Mock pass verdicts: ${aggregate.byEvent.mock_pass_verdict}`,
-    `Mock no-pass verdicts: ${aggregate.byEvent.mock_no_pass_verdict}`,
-    `Mock interest clicks: ${aggregate.byEvent.mock_unlock_interest}`,
-    `Window started: ${aggregate.startedAt ?? "n/a"}`,
-    `Last event: ${aggregate.updatedAt ?? "n/a"}`,
-  ].join("\n");
+function formatShortDate(isoDate: string) {
+  const [, month, day] = isoDate.split("-");
+  return `${day}.${month}`;
 }
 
-function formatRankedList(title: string, entries: Record<string, number>, limit = 15) {
-  const lines = Object.entries(entries)
-    .sort(([, left], [, right]) => right - left)
-    .slice(0, limit)
-    .map(([key, count]) => `- ${key}: ${count}`);
+function formatVisitorBar(visitorCount: number) {
+  if (visitorCount <= 0) {
+    return " ·";
+  }
 
-  return [title, lines.join("\n") || "- no data yet"].join("\n");
+  return ` ${"▪".repeat(Math.min(visitorCount, 12))}`;
 }
 
-const mockEventLabels = {
-  landing: "landing",
-  start: "starts",
-  complete: "completions",
-  result_view: "results",
-  pass: "pass",
-  no_pass: "no-pass",
-  unlock_interest: "interest",
-  deck_cta_click: "deck CTA",
-} as const;
+export function formatSevenDayDynamics(
+  dailyUnique: Record<string, number>,
+  dailyPageViews: Record<string, number>,
+  days = 7,
+  now = new Date(),
+) {
+  const dayKeys = recentDayKeys(days, now);
+  const lines = dayKeys.map((day) => {
+    const visitors = dailyUnique[day] ?? 0;
+    const views = dailyPageViews[day] ?? 0;
 
-function parseMockSource(source: string) {
-  const match = source.match(/^mock:([^:]+):(.+)$/);
-
-  if (!match) {
-    return undefined;
-  }
-
-  return { slug: match[1], action: normalizeMockAction(match[2]) };
-}
-
-function normalizeMockAction(action: string) {
-  if (action === "started") {
-    return "start";
-  }
-
-  if (action === "completed") {
-    return "complete";
-  }
-
-  if (action === "landing_view") {
-    return "landing";
-  }
-
-  if (action === "interest" || action.startsWith("interest:")) {
-    return "unlock_interest";
-  }
-
-  if (action.startsWith("verdict:")) {
-    return "result_view";
-  }
-
-  return action;
-}
-
-function formatMockBreakdown(title: string, aggregate: FunnelAggregate) {
-  const byMock: Record<string, Record<string, number>> = {};
-
-  for (const [source, count] of Object.entries(aggregate.bySource)) {
-    const parsed = parseMockSource(source);
-
-    if (!parsed) {
-      continue;
-    }
-
-    byMock[parsed.slug] ??= {};
-    byMock[parsed.slug][parsed.action] = (byMock[parsed.slug][parsed.action] ?? 0) + count;
-  }
-
-  const lines = Object.entries(byMock)
-    .map(([slug, counts]) => {
-      const parts = Object.entries(mockEventLabels)
-        .map(([action, label]) => `${label} ${counts[action] ?? 0}`)
-        .join(" · ");
-
-      return `- ${slug}: ${parts}`;
-    })
-    .sort();
-
-  return [title, lines.join("\n") || "- no mock data yet"].join("\n");
-}
-
-function formatRecentEvents(stats: FunnelStats, limit = 20) {
-  const lines = stats.recentEvents.slice(0, limit).map((event) => {
-    const timestamp = event.occurredAt.replace("T", " ").replace(/\.\d{3}Z$/, " UTC");
-    const source = event.source ?? "unknown";
-    const country = event.country ?? "??";
-    const language = event.browserLanguage ?? event.acceptLanguage?.split(",")[0]?.trim() ?? "n/a";
-    const referrer = event.referrer ? safeReferrerHost(event.referrer) : "direct";
-
-    return `- ${timestamp} · ${event.name} · ${event.deckSlug} · ${source} · ${country} · ${language} · ${referrer}`;
+    return `  ${formatShortDate(day)}: ${visitors} / ${views}${formatVisitorBar(visitors)}`;
   });
 
-  return ["Recent events", lines.join("\n") || "- no recent events yet"].join("\n");
+  return ["Динамика 7 дней (посетители / просмотры)", ...lines].join("\n");
 }
 
-function safeReferrerHost(referrer: string) {
-  try {
-    return new URL(referrer).hostname.replace(/^www\./, "");
-  } catch {
-    return referrer.slice(0, 40);
+function sumDailyWindow(dailyUnique: Record<string, number>, dayKeys: string[]) {
+  return dayKeys.reduce((total, day) => total + (dailyUnique[day] ?? 0), 0);
+}
+
+function recentDayKeys(days: number, anchorDate = new Date()) {
+  const keys: string[] = [];
+
+  for (let offset = days - 1; offset >= 0; offset -= 1) {
+    const date = new Date(anchorDate);
+    date.setUTCDate(date.getUTCDate() - offset);
+    keys.push(date.toISOString().slice(0, 10));
   }
+
+  return keys;
+}
+
+export function computeGrowthSignal(dailyUnique: Record<string, number>, now = new Date()) {
+  const last7 = recentDayKeys(7, now);
+  const previous7 = recentDayKeys(7, new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000));
+  const current = sumDailyWindow(dailyUnique, last7);
+  const previous = sumDailyWindow(dailyUnique, previous7);
+
+  if (current === 0 && previous === 0) {
+    return { label: "— no traffic yet", deltaPercent: 0 };
+  }
+
+  if (previous === 0) {
+    return { label: "↑ new traffic", deltaPercent: 100 };
+  }
+
+  const deltaPercent = Math.round(((current - previous) / previous) * 100);
+
+  if (deltaPercent >= 15) {
+    return { label: `↑ growing (+${deltaPercent}% vs prior 7d)`, deltaPercent };
+  }
+
+  if (deltaPercent <= -15) {
+    return { label: `↓ cooling (${deltaPercent}% vs prior 7d)`, deltaPercent };
+  }
+
+  return { label: `→ plateau (${deltaPercent >= 0 ? "+" : ""}${deltaPercent}% vs prior 7d)`, deltaPercent };
+}
+
+function formatChannelLine(byChannel: Record<TrafficChannel, number>) {
+  const channels: TrafficChannel[] = ["google", "chatgpt", "direct", "other"];
+
+  return channels
+    .map((channel) => `${trafficChannelLabels[channel]} ${byChannel[channel] ?? 0}`)
+    .join(" · ");
+}
+
+function formatProductLabel(productKey: string) {
+  if (productKey.startsWith("mock:")) {
+    return productKey.replace(/^mock:/, "mock · ");
+  }
+
+  return productKey;
+}
+
+function formatProductLine(productKey: string, metrics: ProductUniqueMetrics) {
+  const conversionRate = formatRate(metrics.conversions, metrics.visitors);
+
+  return `- ${formatProductLabel(productKey)}: ${metrics.visitors} view → ${metrics.intents} intent → ${metrics.conversions} convert (${conversionRate})`;
+}
+
+function formatTopPaths(paths: Record<string, number>, limit = 6) {
+  const lines = Object.entries(paths)
+    .sort(([, left], [, right]) => right - left)
+    .slice(0, limit)
+    .map(([path, count]) => `- ${path} — ${count}`);
+
+  return lines.join("\n") || "- no page data yet";
+}
+
+function formatPeriodRange(stats: FunnelStats) {
+  const start = stats.startedAt?.slice(0, 10) ?? "n/a";
+  const end = stats.updatedAt?.slice(0, 10) ?? "n/a";
+
+  return `${start} → ${end}`;
 }
 
 export function toTelegramStatsMessage(stats: FunnelStats) {
-  return toTelegramStatsMessages(stats).join("\n\n");
+  return toTelegramStatsMessages(stats)[0] ?? "UniPrep2Go · no stats yet";
 }
 
 export function toTelegramStatsMessages(stats: FunnelStats) {
-  const lifetimeSources = filterReportingSources(stats.lifetime.bySource);
-  const currentSources = filterReportingSources(stats.bySource);
+  const visitors = stats.visitors;
+  const growth = computeGrowthSignal(visitors.dailyUnique);
+  const products = Object.entries(visitors.products).sort(
+    ([, left], [, right]) => right.visitors - left.visitors,
+  );
 
-  const sections = [
-    "UniPrep2Go funnel stats",
-    formatSummaryBlock("All-time", stats.lifetime),
-    formatSummaryBlock("Current period (since last reset)", stats),
-    formatRankedList("Top decks (all-time)", stats.lifetime.byDeck),
-    formatRankedList("Top decks (current period)", stats.byDeck),
-    formatMockBreakdown("Mock exams breakdown (all-time)", stats.lifetime),
-    formatMockBreakdown("Mock exams breakdown (current period)", stats),
-    formatRankedList("Top sources (all-time)", lifetimeSources),
-    formatRankedList("Top sources (current period)", currentSources),
-    formatRankedList("Top countries (all-time)", stats.lifetime.byCountry),
-    formatRankedList("Top countries (current period)", stats.byCountry),
-    formatRankedList("Top browser languages (all-time)", stats.lifetime.byLanguage),
-    formatRankedList("Top browser languages (current period)", stats.byLanguage),
-    formatRankedList("Top referrers (all-time)", stats.lifetime.byReferrer),
-    formatRankedList("Top referrers (current period)", stats.byReferrer),
-    formatRecentEvents(stats),
-    `Storage: ${stats.storage}`,
+  const lines = [
+    "UniPrep2Go · growth pulse",
+    "",
+    `Trend: ${growth.label}`,
+    `Unique users: ${visitors.periodUnique} period · ${visitors.lifetimeUnique} lifetime`,
+    "",
+    "Sources (unique, period):",
+    formatChannelLine(visitors.periodByChannel),
+    "",
+    "Decks & mocks (unique view → intent → convert):",
+    products.length > 0
+      ? products.map(([productKey, metrics]) => formatProductLine(productKey, metrics)).join("\n")
+      : "- no product traffic yet",
+    "",
+    "Top pages (period):",
+    formatTopPaths(visitors.paths),
+    "",
+    formatSevenDayDynamics(visitors.dailyUnique, visitors.dailyPageViews),
+    "",
+    `Period: ${formatPeriodRange(stats)} · storage: ${stats.storage}`,
   ];
 
-  return splitTelegramMessages(sections.join("\n\n"));
+  return splitTelegramMessages(lines.join("\n"));
 }
 
 export function splitTelegramMessages(text: string, maxLength = 3900) {
@@ -255,20 +233,18 @@ export function splitTelegramMessages(text: string, maxLength = 3900) {
 
 export function toTelegramResetMessage() {
   return [
-    "UniPrep2Go current period reset.",
+    "UniPrep2Go period reset.",
     "",
-    "All-time stats were preserved.",
-    "Send /stats for the full report.",
-    "Send /sync to refresh checkout prices.",
+    "Lifetime stats were preserved.",
+    "Send /stats for the growth pulse.",
   ].join("\n");
 }
 
 export function toTelegramResetAllMessage() {
   return [
-    "UniPrep2Go all funnel stats reset.",
+    "UniPrep2Go all stats reset.",
     "",
-    "Current period, lifetime stats, and recent events were cleared.",
-    "Send /stats for the new report.",
+    "Send /stats for a fresh growth pulse.",
   ].join("\n");
 }
 

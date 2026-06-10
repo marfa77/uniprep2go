@@ -9,15 +9,17 @@ import { isMockExamRunnable } from "@/lib/mock-exams/question-bank";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Free Practice Tests & Mock Exams | SIE, ServSafe, CFA, Insurance | UniPrep2Go",
+  title: "Free Practice Tests Online | SIE, ServSafe, Insurance, CFA, FRM | UniPrep2Go",
   description:
-    "Free online practice tests and mock exams for FINRA SIE, ServSafe Manager, CFA Level 1, Series 7, insurance licensing, and California real estate. Timed questions, topic scoring, and pass/no-pass reports.",
+    "Free online practice tests for Americans: FINRA SIE (75 q), ServSafe Manager (90 q), CFA Level 1, FRM Part 1, Series 7, Series 63, Life & Health insurance, Property & Casualty, and California real estate. Timed, scored, no signup.",
   keywords: [
     "free practice test",
-    "mock exam online",
-    "sie practice test",
+    "free sie practice test",
     "servsafe manager practice test",
     "insurance license practice exam",
+    "series 7 practice test",
+    "frm part 1 practice test",
+    "california real estate practice test",
   ],
   alternates: {
     canonical: "/mock-exams",
@@ -43,12 +45,13 @@ export default function MockExamsIndexPage() {
       <article className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12">
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Free practice tests</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-          Free online practice tests and mock exams
+          Free online practice tests for US licensing and finance exams
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
           {siteConfig.name} converts deck content into timed practice tests with weighted topic scoring,
-          answer review, and a pass/no-pass readiness report. Start with SIE, ServSafe Manager, CFA, FINRA,
-          insurance, or California real estate diagnostics before you decide what to drill next.{" "}
+          answer review, and a pass/no-pass readiness report. Americans use these free mocks for FINRA SIE,
+          ServSafe Manager, insurance producer licensing, California real estate, CFA Level 1, FRM Part 1,
+          and FINRA Series exams — then drill weak topics with the linked Anki flashcard deck.{" "}
           {mockFreeAccessNotice}
         </p>
         <ul className="mt-6 grid gap-3 text-sm leading-6 text-[#4f493e] sm:grid-cols-3">

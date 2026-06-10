@@ -20,23 +20,24 @@ import { isMockExamRunnable } from "@/lib/mock-exams/question-bank";
 import { customDeckMailtoUrl, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "2026 Exam Prep | Free Practice Tests, Flashcards & PDFs | UniPrep2Go",
+  title: "Free SIE & ServSafe Practice Tests + US Licensing Flashcards | UniPrep2Go",
   description:
-    "Free FINRA SIE, CFA, FRM, ServSafe, and insurance practice tests plus independent flashcard decks and PDF study guides for US licensing and finance exams.",
+    "Free FINRA SIE and ServSafe Manager practice tests online. Anki flashcards for PTCB pharmacy tech, Series 7, insurance licensing, California real estate, CFA, and FRM — timed mocks with topic scoring.",
   keywords: [
-    "US exam prep Anki decks",
-    "FINRA SIE Anki deck",
-    "Series 7 Anki deck",
-    "Series 63 Anki deck",
-    "insurance licensing exam flashcards",
-    "California real estate exam flashcards",
-    "CFA Anki deck",
-    "FRM Anki deck",
+    "free sie practice test",
+    "servsafe manager practice test",
+    "ptcb flashcards",
+    "insurance license practice exam",
+    "series 7 practice test",
+    "california real estate exam prep",
+    "pharmacy technician exam prep",
+    "cfa anki deck",
+    "frm anki deck",
   ],
   openGraph: {
-    title: "2026 exam prep Anki decks for FINRA, CFA, FRM, insurance, and real estate",
+    title: "Free US licensing practice tests + Anki flashcards | UniPrep2Go",
     description:
-      "Independent Anki .apkg decks plus free readiness checks with topic scoring and pass/no-pass reports.",
+      "Timed free mocks for SIE, ServSafe, CFA, insurance, and real estate plus independent flashcard decks for FINRA, PTCB, and finance exams.",
     images: [
       {
         url: "/home/hero.webp",
@@ -125,13 +126,13 @@ export default async function HomePage() {
                 US exam prep catalog
               </p>
               <h1 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight text-balance text-[#18140f] sm:text-5xl">
-                Anki decks, printable PDFs, and free mocks — one catalog
+                Free practice tests and flashcards for US licensing exams
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-8 text-[#4f493e]">
-                {siteConfig.name} is US-first: FINRA SIE, Series 7, Series 63,
-                insurance licensing, California real estate, ServSafe, PTCB pharmacy
-                technician prep, CFA, and FRM sit at the front of the catalog, with free
-                timed mocks and printable PDF cram sheets alongside Anki decks.
+                {siteConfig.name} helps Americans prep for FINRA SIE, Series 7, Series 63,
+                PTCB pharmacy technician, insurance producer, California real estate, ServSafe
+                Manager, CFA, and FRM — with free timed online mocks plus Anki decks and printable
+                PDFs you can review on your phone between shifts or study sessions.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
@@ -149,10 +150,14 @@ export default async function HomePage() {
               </div>
               <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium text-[#1f3a5f]">
                 {[
-                  { href: "/mock-exams/sie-full-mock", label: "SIE practice test" },
-                  { href: "/mock-exams/frm-part-1-readiness-check", label: "FRM readiness check" },
+                  { href: "/mock-exams/sie-full-mock", label: "Free SIE practice test" },
+                  { href: "/mock-exams/servsafe-manager-mock", label: "ServSafe practice test" },
+                  { href: "/decks/ptcb-pharmacy-technician-anki-deck", label: "PTCB flashcards" },
+                  { href: "/mock-exams/life-and-health-insurance-readiness-check", label: "Insurance practice test" },
+                  { href: "/mock-exams/california-real-estate-readiness-check", label: "CA real estate mock" },
                   { href: "/mock-exams/cfa-level-1-readiness-check", label: "CFA practice test" },
-                  { href: "/mock-exams/servsafe-manager-mock", label: "ServSafe mock" },
+                  { href: "/mock-exams/frm-part-1-readiness-check", label: "FRM practice test" },
+                  { href: "/mock-exams/series-7-readiness-check", label: "Series 7 mock" },
                 ].map((link) => (
                   <Link
                     key={link.href}
@@ -262,10 +267,10 @@ export default async function HomePage() {
                 Featured decks
               </h2>
               <p className="mt-2 text-[#4f493e]">
-                Top US picks for food safety, pharmacy technician licensing, and FINRA
-                exam prep.
+                Top US picks: food safety, pharmacy tech, FINRA securities, and CFA
+                formula recall — each with sample cards and checkout on Gumroad.
               </p>
-              <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                 {featuredDecks.map((deck) => {
                   const thumbnail = getDeckCoverUrl(deck);
 
@@ -331,12 +336,14 @@ export default async function HomePage() {
               Free practice tests
             </p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
-              SIE, ServSafe Manager, CFA, insurance, and real estate practice tests
+              Free SIE, ServSafe, insurance, and real estate practice tests online
             </h2>
             <p className="mt-3 max-w-3xl text-[#4f493e]">
-              Full timed mocks for SIE and ServSafe Manager, plus readiness checks for CFA, FRM, FINRA
-              Series, insurance, and real estate — all with topic scoring, wrong-answer review, and a
-              linked deck repair plan.
+              Americans searching for a free SIE practice test, ServSafe Manager mock exam,
+              or insurance license practice questions can start here — no signup wall.
+              Full timed mocks for SIE and ServSafe; readiness checks for CFA, FRM, Series 7,
+              Series 63, Life &amp; Health, Property &amp; Casualty, and California real estate.
+              Every report shows topic-level weak spots and links back to the matching flashcard deck.
             </p>
             <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               {mockExams.map((mock) => {
@@ -392,7 +399,7 @@ export default async function HomePage() {
             </p>
             <div className="mt-10 space-y-12">
               {catalogGroups.map((group) => (
-                <div key={group.category}>
+                <div key={group.category} id={`catalog-${group.category}`}>
                   <h3 className="text-lg font-semibold text-[#18140f]">
                     {group.label}
                   </h3>
@@ -541,6 +548,20 @@ export default async function HomePage() {
                   className="font-medium text-[#18140f] underline-offset-2 hover:underline"
                 >
                   cfa-level-1-anki-deck.md
+                </a>
+                ,{" "}
+                <Link
+                  href="/decks/cat4-level-d-anki-deck-printable-pdf"
+                  className="font-medium text-[#18140f] underline-offset-2 hover:underline"
+                >
+                  CAT4 Level D deck page
+                </Link>
+                ,{" "}
+                <a
+                  href="/cat4-level-d-anki-deck-printable-pdf.md"
+                  className="font-medium text-[#18140f] underline-offset-2 hover:underline"
+                >
+                  cat4-level-d-anki-deck-printable-pdf.md
                 </a>
                 )
               </li>

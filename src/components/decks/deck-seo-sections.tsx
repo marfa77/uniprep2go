@@ -50,6 +50,23 @@ export function DeckSeoSections({ deck }: DeckSeoSectionsProps) {
           >
             Take the free {deck.shortName} practice test first
           </Link>
+        ) : deck.slug === "ptcb-pharmacy-technician-anki-deck" ? (
+          <p className="mt-5 text-sm leading-7 text-[#4f493e]">
+            No free PTCB mock yet — start with 10–15 flashcards per day for brand/generic pairs
+            and sig codes. Browse free timed mocks for{" "}
+            <Link className="font-semibold text-[#1f3a5f] underline-offset-4 hover:underline" href="/mock-exams/sie-full-mock">
+              SIE
+            </Link>
+            ,{" "}
+            <Link className="font-semibold text-[#1f3a5f] underline-offset-4 hover:underline" href="/mock-exams/servsafe-manager-mock">
+              ServSafe
+            </Link>
+            , and{" "}
+            <Link className="font-semibold text-[#1f3a5f] underline-offset-4 hover:underline" href="/mock-exams">
+              insurance licensing
+            </Link>
+            .
+          </p>
         ) : null}
       </section>
 

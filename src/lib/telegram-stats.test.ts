@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { emptyAggregate } from "./funnel-aggregates";
+import { emptyVisitorMetrics } from "./visitor-metrics";
 import {
   shouldResetAllStats,
   shouldReturnStats,
@@ -9,6 +10,8 @@ import {
   toTelegramStatsMessages,
   toTelegramResetAllMessage,
   toTelegramSyncMessage,
+  computeGrowthSignal,
+  formatSevenDayDynamics,
 } from "./telegram-stats";
 import type { FunnelStats } from "./funnel-store";
 
@@ -39,7 +42,6 @@ const sampleStats: FunnelStats = {
   bySource: {
     hero_cta: 1,
     deck_page: 2,
-    section_view: 99,
     "mock:cfa-level-1-readiness-check:landing": 1,
     "mock:cfa-level-1-readiness-check:start": 1,
     "mock:cfa-level-1-readiness-check:unlock_interest": 1,
@@ -47,64 +49,47 @@ const sampleStats: FunnelStats = {
   byCountry: { US: 5, PT: 2 },
   byLanguage: { "en-US": 4, "pt-PT": 2 },
   byReferrer: { "google.com": 4, "chatgpt.com": 2 },
-  recentEvents: [
-    {
-      eventId: "evt_1",
-      name: "checkout_click",
-      deckSlug: "cfa-level-1-anki-deck",
-      occurredAt: "2026-05-31T15:10:00.000Z",
-      source: "deck_page",
-      country: "US",
-      browserLanguage: "en-US",
-      referrer: "https://google.com/search?q=cfa+anki",
-    },
-  ],
+  recentEvents: [],
   startedAt: "2026-05-31T15:00:00.000Z",
-  updatedAt: "2026-05-31T15:10:00.000Z",
-  lifetime: {
-    ...emptyAggregate(),
-    totalEvents: 147,
-    byEvent: {
-      page_view: 46,
-      product_facts_view: 19,
-      topic_matrix_view: 13,
-      sample_cards_view: 4,
-      catalog_view: 2,
-      faq_view: 21,
-      checkout_intent: 3,
-      checkout_click: 1,
-      mock_landing_view: 3,
-      mock_started: 2,
-      mock_question_answered: 0,
-      mock_completed: 1,
-      mock_result_view: 1,
-      mock_pass_verdict: 0,
-      mock_no_pass_verdict: 1,
-      mock_unlock_interest: 1,
-      mock_deck_cta_click: 1,
-      mock_checkout_placeholder_click: 0,
+  updatedAt: "2026-06-10T15:10:00.000Z",
+  lifetime: emptyAggregate(),
+  visitors: {
+    ...emptyVisitorMetrics(),
+    lifetimeUnique: 128,
+    periodUnique: 23,
+    periodByChannel: {
+      google: 12,
+      chatgpt: 4,
+      direct: 5,
+      other: 2,
     },
-    byDeck: {
-      "cfa-level-1-anki-deck": 80,
-      "frm-part-1-anki-deck": 20,
+    dailyUnique: {
+      "2026-06-04": 0,
+      "2026-06-05": 10,
+      "2026-06-06": 19,
+      "2026-06-07": 9,
+      "2026-06-08": 22,
+      "2026-06-09": 23,
+      "2026-06-10": 0,
     },
-    bySource: {
-      section_view: 95,
-      home: 18,
-      deck_page: 17,
-      "mock:cfa-level-1-readiness-check:landing": 3,
-      "mock:cfa-level-1-readiness-check:start": 2,
-      "mock:cfa-level-1-readiness-check:complete": 1,
-      "mock:cfa-level-1-readiness-check:verdict:no_pass": 1,
-      "mock:cfa-level-1-readiness-check:no_pass": 1,
-      "mock:cfa-level-1-readiness-check:interest:NO PASS": 1,
-      "mock:cfa-level-1-readiness-check:deck_cta_click": 1,
+    dailyPageViews: {
+      "2026-06-04": 0,
+      "2026-06-05": 114,
+      "2026-06-06": 169,
+      "2026-06-07": 156,
+      "2026-06-08": 210,
+      "2026-06-09": 88,
+      "2026-06-10": 0,
     },
-    byCountry: { US: 100, CA: 20 },
-    byLanguage: { "en-US": 90, "en-CA": 20 },
-    byReferrer: { "google.com": 70, "chatgpt.com": 10 },
-    startedAt: "2026-05-01T10:00:00.000Z",
-    updatedAt: "2026-05-31T15:10:00.000Z",
+    products: {
+      "cfa-level-1-anki-deck": { visitors: 14, intents: 2, conversions: 1 },
+      "mock:cfa-level-1-readiness-check": { visitors: 8, intents: 3, conversions: 0 },
+    },
+    paths: {
+      "/decks/cfa-level-1-anki-deck": 14,
+      "/mock-exams/cfa-level-1-readiness-check": 8,
+      "/": 9,
+    },
   },
   storage: "redis",
 };
@@ -128,7 +113,7 @@ describe("telegram stats", () => {
     expect(shouldResetAllStats("reset-all-stats")).toBe(true);
     expect(shouldResetAllStats("/reset-all-stats")).toBe(true);
     expect(shouldResetAllStats("/stats")).toBe(false);
-    expect(toTelegramResetAllMessage()).toContain("all funnel stats reset");
+    expect(toTelegramResetAllMessage()).toContain("all stats reset");
   });
 
   it("formats price sync results for Telegram", () => {
@@ -147,47 +132,70 @@ describe("telegram stats", () => {
     expect(message).toContain("Errors: none");
   });
 
-  it("formats full lifetime and current-period stats for Telegram", () => {
+  it("formats a single growth-focused stats message", () => {
+    const messages = toTelegramStatsMessages(sampleStats);
     const message = toTelegramStatsMessage(sampleStats);
 
-    expect(message).toContain("UniPrep2Go funnel stats");
-    expect(message).toContain("All-time");
-    expect(message).toContain("Current period (since last reset)");
-    expect(message).toContain("Total events: 147");
-    expect(message).toContain("Total events: 7");
-    expect(message).toContain("Top decks (all-time)");
-    expect(message).toContain("- cfa-level-1-anki-deck: 80");
-    expect(message).toContain("Mock exams breakdown (all-time)");
-    expect(message).toContain(
-      "- cfa-level-1-readiness-check: landing 3 · starts 2 · completions 1 · results 1 · pass 0 · no-pass 1 · interest 1 · deck CTA 1",
+    expect(messages).toHaveLength(1);
+    expect(message).toContain("UniPrep2Go · growth pulse");
+    expect(message).toContain("Unique users: 23 period · 128 lifetime");
+    expect(message).toContain("Google 12 · ChatGPT 4 · Direct 5 · Other 2");
+    expect(message).toContain("cfa-level-1-anki-deck: 14 view → 2 intent → 1 convert (7.1%)");
+    expect(message).toContain("mock · cfa-level-1-readiness-check: 8 view → 3 intent → 0 convert (0.0%)");
+    expect(message).toContain("/decks/cfa-level-1-anki-deck — 14");
+    expect(message).toContain("Динамика 7 дней (посетители / просмотры)");
+    expect(message).toContain("05.06: 10 / 114 ▪▪▪▪▪▪▪▪▪▪");
+    expect(message).toContain("09.06: 23 / 88 ▪▪▪▪▪▪▪▪▪▪▪▪");
+    expect(message).not.toContain("All-time");
+    expect(message).not.toContain("Recent events");
+    expect(message).not.toContain("Top countries");
+    expect(message).not.toContain("Last 7 days");
+  });
+
+  it("formats the 7-day dynamics block like the reference example", () => {
+    const block = formatSevenDayDynamics(
+      sampleStats.visitors.dailyUnique,
+      sampleStats.visitors.dailyPageViews,
+      7,
+      new Date("2026-06-10T12:00:00.000Z"),
     );
-    expect(message).toContain("Top sources (all-time)");
-    expect(message).toContain("Top countries (all-time)");
-    expect(message).toContain("- US: 100");
-    expect(message).toContain("Top browser languages (current period)");
-    expect(message).toContain("- en-US: 4");
-    expect(message).toContain("Top referrers (all-time)");
-    expect(message).toContain("- google.com: 70");
-    expect(message).toContain("Recent events");
-    expect(message).toContain("checkout_click · cfa-level-1-anki-deck · deck_page · US · en-US · google.com");
-    expect(message).toContain("Storage: redis");
+
+    expect(block).toContain("Динамика 7 дней (посетители / просмотры)");
+    expect(block).toContain("04.06: 0 / 0 ·");
+    expect(block).toContain("05.06: 10 / 114 ▪▪▪▪▪▪▪▪▪▪");
+    expect(block).toContain("06.06: 19 / 169 ▪▪▪▪▪▪▪▪▪▪▪▪");
+    expect(block).toContain("10.06: 0 / 0 ·");
   });
 
-  it("hides legacy section_view noise from top sources", () => {
-    const message = toTelegramStatsMessage(sampleStats);
+  it("computes growth vs prior week", () => {
+    const signal = computeGrowthSignal(
+      {
+        "2026-06-04": 0,
+        "2026-06-05": 10,
+        "2026-06-06": 19,
+        "2026-06-07": 9,
+        "2026-06-08": 22,
+        "2026-06-09": 23,
+        "2026-06-10": 0,
+        "2026-06-03": 2,
+        "2026-06-02": 2,
+        "2026-06-01": 2,
+        "2026-05-31": 2,
+        "2026-05-30": 2,
+        "2026-05-29": 2,
+        "2026-05-28": 2,
+      },
+      new Date("2026-06-10T12:00:00.000Z"),
+    );
 
-    expect(message).not.toContain("section_view");
-    expect(message).toContain("- home: 18");
-    expect(message).toContain("- deck_page: 17");
+    expect(signal.label).toContain("↑ growing");
   });
 
-  it("splits oversized Telegram messages into chunks", () => {
+  it("splits only when the message is too long", () => {
     const messages = splitTelegramMessages("a".repeat(5000), 3900);
 
     expect(messages.length).toBeGreaterThan(1);
     expect(messages[0]).toContain("[1/");
-    expect(toTelegramStatsMessages(sampleStats).every((message) => message.length <= 4096)).toBe(
-      true,
-    );
+    expect(toTelegramStatsMessages(sampleStats).every((message) => message.length <= 4096)).toBe(true);
   });
 });

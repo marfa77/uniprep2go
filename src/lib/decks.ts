@@ -2067,10 +2067,10 @@ export const categoryLabels: Record<DeckCategory, string> = {
 
 export const categoryOrder: DeckCategory[] = [
   "finance",
-  "language",
   "professional",
   "immigration",
   "academic",
+  "language",
 ];
 
 export function getAvailableDecksByCategory(): Array<{
@@ -2091,12 +2091,22 @@ export const featuredDeckSlugs = [
   "servsafe-manager-anki-deck",
   "ptcb-pharmacy-technician-anki-deck",
   "sie-exam-anki-deck",
+  "cfa-level-1-anki-deck",
 ] as const;
 
 export function getFeaturedDecks() {
   return featuredDeckSlugs
     .map((slug) => getCatalogDeckBySlug(slug))
     .filter((deck): deck is CatalogAvailableDeck => deck !== undefined);
+}
+
+export function getRelatedDecks(
+  deck: CatalogAvailableDeck,
+  limit = 4,
+): CatalogAvailableDeck[] {
+  return catalogAvailableDecks
+    .filter((candidate) => candidate.slug !== deck.slug && candidate.category === deck.category)
+    .slice(0, limit);
 }
 
 export const siteFaqs = [
@@ -2109,6 +2119,11 @@ export const siteFaqs = [
     question: "Which US exams does UniPrep2Go cover?",
     answer:
       "The catalog includes US-market decks for FINRA SIE, Series 7, Series 63, California real estate salesperson exam prep, Life & Health insurance licensing, Property & Casualty insurance licensing, PTCB pharmacy technician exam prep, and ServSafe Manager food safety review, plus finance credential decks such as CFA Level 1 and FRM Part 1.",
+  },
+  {
+    question: "Are there free practice tests for US licensing exams?",
+    answer:
+      "Yes. UniPrep2Go publishes free timed online practice tests for FINRA SIE (75 questions), ServSafe Manager (90 questions), and readiness checks for CFA Level 1, FRM Part 1, Series 7, Series 63, Life & Health insurance, Property & Casualty insurance, and the California real estate salesperson exam. Each mock includes topic scoring, answer review, and a linked flashcard deck repair plan at uniprep2go.study/mock-exams.",
   },
   {
     question: "What is an Anki deck?",

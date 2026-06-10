@@ -6,6 +6,23 @@ import {
   type FunnelAggregate,
 } from "./funnel-aggregates";
 import { getRedisClient } from "./redis";
+import {
+  deleteIndexedRedisKeys,
+  deleteAllProductRedisKeys,
+  deletePeriodProductRedisKeys,
+  emptyVisitorMetrics,
+  periodVisitorRedisKeysForReset,
+  readVisitorMetricsFromMemory,
+  readVisitorMetricsFromRedis,
+  dailyTrafficRedisOperations,
+  recordDailyTrafficMetricsInMemory,
+  recordVisitorMetricInMemory,
+  resetAllVisitorSets,
+  resetPeriodVisitorSets,
+  VISITOR_REDIS_KEYS,
+  visitorMetricRedisOperations,
+  type VisitorMetrics,
+} from "./visitor-metrics";
 
 const MAX_RECENT_EVENTS = 100;
 
@@ -47,6 +64,7 @@ type GlobalWithFunnelStats = typeof globalThis & {
 export type FunnelStats = FunnelAggregate & {
   recentEvents: FunnelEvent[];
   lifetime: FunnelAggregate;
+  visitors: VisitorMetrics;
   storage: "redis" | "memory";
 };
 
@@ -174,6 +192,7 @@ function computeMemoryStats(): FunnelStats {
     ...cloneAggregate(state.current),
     recentEvents: [...state.recentEvents],
     lifetime: cloneAggregate(state.lifetime),
+    visitors: readVisitorMetricsFromMemory(),
     storage: "memory",
   };
 }
@@ -186,6 +205,8 @@ export async function recordFunnelEvent(event: FunnelEvent) {
     applyEventToAggregate(state.current, event);
     applyEventToAggregate(state.lifetime, event);
     appendRecentEvent(state, event);
+    recordDailyTrafficMetricsInMemory(event);
+    recordVisitorMetricInMemory(event);
     return;
   }
 
@@ -195,6 +216,15 @@ export async function recordFunnelEvent(event: FunnelEvent) {
     incrementAggregatePipeline(pipeline, LIFETIME_KEYS, event);
     pipeline.lpush(KEYS.recent, JSON.stringify(event));
     pipeline.ltrim(KEYS.recent, 0, MAX_RECENT_EVENTS - 1);
+
+    for (const operation of dailyTrafficRedisOperations(event)) {
+      operation(pipeline);
+    }
+
+    for (const operation of visitorMetricRedisOperations(event)) {
+      operation(pipeline);
+    }
+
     await pipeline.exec();
   } catch (error) {
     console.error("[funnel_store] failed to persist event", error);
@@ -270,16 +300,18 @@ export async function getFunnelStats(): Promise<FunnelStats> {
   try {
     await backfillLifetimeFromCurrent(client);
 
-    const [current, lifetime, recentRaw] = await Promise.all([
+    const [current, lifetime, recentRaw, visitors] = await Promise.all([
       readAggregate(client, KEYS),
       readAggregate(client, LIFETIME_KEYS),
       client.lrange(KEYS.recent, 0, MAX_RECENT_EVENTS - 1),
+      readVisitorMetricsFromRedis(client).catch(() => emptyVisitorMetrics()),
     ]);
 
     return {
       ...current,
       recentEvents: parseRecent(recentRaw ?? []),
       lifetime,
+      visitors,
       storage: "redis",
     };
   } catch (error) {
@@ -295,6 +327,7 @@ export async function resetFunnelStats() {
     const state = getMemoryState();
     state.current = emptyAggregate();
     state.recentEvents = [];
+    resetPeriodVisitorSets();
     return;
   }
 
@@ -309,7 +342,13 @@ export async function resetFunnelStats() {
     KEYS.startedAt,
     KEYS.updatedAt,
     KEYS.recent,
+    ...periodVisitorRedisKeysForReset(),
   );
+
+  await deleteIndexedRedisKeys(client, VISITOR_REDIS_KEYS.pathIndex, (path) => [
+    VISITOR_REDIS_KEYS.pathVisitors(path),
+  ]);
+  await deletePeriodProductRedisKeys(client);
 }
 
 export async function resetAllFunnelStats() {
@@ -320,6 +359,7 @@ export async function resetAllFunnelStats() {
     state.current = emptyAggregate();
     state.lifetime = emptyAggregate();
     state.recentEvents = [];
+    resetAllVisitorSets();
     return;
   }
 
@@ -343,7 +383,17 @@ export async function resetAllFunnelStats() {
     LIFETIME_KEYS.byReferrer,
     LIFETIME_KEYS.startedAt,
     LIFETIME_KEYS.updatedAt,
+    VISITOR_REDIS_KEYS.lifetime,
+    ...periodVisitorRedisKeysForReset(),
+    ...(["google", "chatgpt", "direct", "other"] as const).map((channel) =>
+      VISITOR_REDIS_KEYS.lifetimeChannel(channel),
+    ),
   );
+
+  await deleteIndexedRedisKeys(client, VISITOR_REDIS_KEYS.pathIndex, (path) => [
+    VISITOR_REDIS_KEYS.pathVisitors(path),
+  ]);
+  await deleteAllProductRedisKeys(client);
 }
 
 function normalizeReferrerHost(referrer: string | undefined) {

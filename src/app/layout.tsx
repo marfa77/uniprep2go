@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: "UniPrep2Go | 2026 Exam Prep Anki Decks",
+  title: "UniPrep2Go | US Exam Prep — Free Practice Tests & Flashcards",
   description:
-    "Independent 2026 Anki decks and free readiness checks for CFA, FRM, FINRA, CIPLE, DELF, insurance, real estate, and other exam prep.",
+    "Free practice tests and flashcard decks for FINRA SIE, PTCB, insurance licensing, ServSafe, California real estate, CFA, and FRM. Independent study aids for US candidates.",
   alternates: {
     canonical: "/",
   },

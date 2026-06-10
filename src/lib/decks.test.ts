@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { availableDecks, getDeckBySlug, primaryDeck, siteFaqs } from "./decks";
+import { availableDecks, getCatalogDeckBySlug, getDeckBySlug, getRelatedDecks, primaryDeck, siteFaqs } from "./decks";
 
 describe("deck catalog", () => {
   it("exposes the CFA Level 1 Anki deck as reusable product data", () => {
@@ -408,6 +408,22 @@ describe("deck catalog", () => {
     expect(cat4Bundle?.directAnswer).toContain("CAT4 Level D");
     expect(cat4Bundle?.directAnswer).not.toContain("prep2go CAT4");
     expect(cat4Bundle?.directAnswer).not.toContain("UniPrep2Go sells");
+  });
+
+  it("links academic decks to other products in the same category", () => {
+    const cat4 = getCatalogDeckBySlug("cat4-level-d-anki-deck-printable-pdf");
+    const biology = getCatalogDeckBySlug("ib-biology-sl-anki-deck");
+
+    expect(cat4).toBeDefined();
+    expect(biology).toBeDefined();
+
+    const relatedToCat4 = getRelatedDecks(cat4!);
+    expect(relatedToCat4.some((deck) => deck.slug === "ib-biology-sl-anki-deck")).toBe(true);
+
+    const relatedToBiology = getRelatedDecks(biology!);
+    expect(relatedToBiology.some((deck) => deck.slug === "cat4-level-d-anki-deck-printable-pdf")).toBe(
+      true,
+    );
   });
 
   it("uses three real sample previews for the IB Biology SL deck", () => {

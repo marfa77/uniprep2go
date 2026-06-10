@@ -7,6 +7,7 @@ import {
   FUNNEL_EXCLUDE_STORAGE_KEY,
   FUNNEL_INCLUDE_QUERY,
 } from "@/lib/funnel-exclude";
+import { getOrCreateVisitorId } from "@/lib/visitor-id";
 
 type FunnelTrackerProps = {
   deckSlug: string;
@@ -67,6 +68,7 @@ export function trackFunnelEvent(input: TrackEventInput) {
   const excluded = isFunnelExcluded();
   const payload = {
     ...input,
+    visitorId: getOrCreateVisitorId(),
     path: window.location.pathname,
     referrer: document.referrer,
     browserLanguage: navigator.language,

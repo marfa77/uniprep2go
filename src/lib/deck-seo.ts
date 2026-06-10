@@ -127,61 +127,193 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     title: "CFA Level 1 Exam Prep 2026 | 342+ Flashcards + Free Practice Test",
     headline: "CFA Level 1 Exam Prep — 342+ Flashcards + Free Mock",
     studyLabel: "CFA Level 1 exam prep",
+    description:
+      "CFA Level 1 exam prep with 342+ Anki flashcards across all 10 topic weights plus a linked free 60-question practice test. Covers ethics, quant, economics, FRA, equity, fixed income, derivatives, and portfolio management. Independent study aid — not CFA Institute material.",
+    keywords: [
+      "cfa level 1 anki deck",
+      "cfa level 1 flashcards",
+      "cfa level 1 practice test",
+      "cfa formula flashcards",
+      "best cfa level 1 study materials",
+    ],
+    intro:
+      "US and global CFA Level 1 candidates use spaced-repetition flashcards to retain formulas and definitions across all 10 curriculum topics — then run the free readiness check to see which weights need more work.",
   },
   "frm-part-1-anki-deck": {
     title: "FRM Part 1 Exam Prep 2026 | 444 Flashcards + Free Practice Test",
     headline: "FRM Part 1 Exam Prep — 444 Flashcards + Free Mock",
     studyLabel: "FRM Part 1 exam prep",
+    description:
+      "FRM Part 1 exam prep with 444 Anki flashcards for foundations of risk, quant, markets, products, and valuation models — plus a free 50-question timed practice test. Independent GARP-style prep — not official FRM material.",
+    keywords: [
+      "frm part 1 anki deck",
+      "frm part 1 flashcards",
+      "frm part 1 practice test",
+      "garp frm prep",
+      "frm formula deck",
+    ],
+    intro:
+      "Risk and finance professionals preparing for FRM Part 1 use daily Anki review for VaR, Greeks, credit risk, and market mechanics, then validate weak topics with the free FRM readiness check.",
   },
   "sie-exam-anki-deck": {
     title: "FINRA SIE Exam Prep 2026 | 300 Flashcards + Free Practice Test",
     headline: "FINRA SIE Exam Prep — 300 Flashcards + Free Mock",
     studyLabel: "FINRA SIE exam prep",
+    description:
+      "FINRA SIE exam prep with 300 Anki flashcards aligned to official topic weights — capital markets, products and risks, trading, customer accounts, and regulations — plus a free 75-question SIE practice test online. For US securities industry entrants.",
+    keywords: [
+      "sie exam prep",
+      "finra sie flashcards",
+      "free sie practice test",
+      "sie anki deck",
+      "securities industry essentials study guide",
+    ],
+    intro:
+      "Americans entering brokerage and securities roles start with the SIE — this deck covers FINRA topic weights for daily recall, and the linked free mock mirrors the 75-question / 105-minute format.",
   },
   "series-7-anki-deck": {
-    title: "Series 7 Exam Prep 2026 | Flashcards + Free Practice Test",
-    headline: "Series 7 Top-Off Exam Prep — Flashcards + Free Mock",
+    title: "Series 7 Exam Prep 2026 | 300 Flashcards + Free Practice Test",
+    headline: "Series 7 Top-Off Exam Prep — 300 Flashcards + Free Mock",
     studyLabel: "Series 7 exam prep",
+    description:
+      "Series 7 Top-Off exam prep with 300 flashcards for suitability, options, products, order handling, and FINRA job functions — plus a free 60-question Series 7 practice test. For registered rep candidates in the United States.",
+    keywords: [
+      "series 7 exam prep",
+      "series 7 flashcards",
+      "series 7 practice test",
+      "finra series 7 anki",
+      "series 7 top off study guide",
+    ],
+    intro:
+      "US Series 7 candidates drill suitability, investment products, and order-flow rules on their phone between full-length Q-banks — then use the free readiness check for a timed baseline.",
   },
   "series-63-anki-deck": {
-    title: "Series 63 Exam Prep 2026 | Flashcards + Free Practice Test",
-    headline: "Series 63 Exam Prep — Flashcards + Free Mock",
+    title: "Series 63 Exam Prep 2026 | 250 Flashcards + Free Practice Test",
+    headline: "Series 63 Exam Prep — 250 Flashcards + Free Mock",
     studyLabel: "Series 63 exam prep",
+    description:
+      "Series 63 state law exam prep with 250 Anki flashcards for NASAA topics — agent registration, ethical practices, communications, and investment adviser basics — plus a free 60-question practice test.",
+    keywords: [
+      "series 63 exam prep",
+      "series 63 flashcards",
+      "series 63 practice test",
+      "nasaa series 63",
+      "uniform securities act study guide",
+    ],
+    intro:
+      "After passing the SIE and Series 7, US reps use this deck for NASAA state-law recall — registration, ethics, and adviser rules that repeat on the Series 63.",
   },
   "servsafe-manager-anki-deck": {
     title: "ServSafe Manager Exam Prep | 300 Flashcards + Free Practice Test",
     headline: "ServSafe Manager Exam Prep — 300 Flashcards + Free Mock",
     studyLabel: "ServSafe Manager exam prep",
+    description:
+      "ServSafe Manager / CFPM exam prep with 300 food safety flashcards — time and temperature, HACCP, hygiene, contamination — plus a free 90-question ServSafe practice test online. For US restaurant managers and kitchen supervisors.",
+    keywords: [
+      "servsafe manager exam prep",
+      "servsafe manager practice test",
+      "certified food protection manager",
+      "servsafe flashcards",
+      "food safety manager study guide",
+    ],
+    intro:
+      "American restaurant managers preparing for the ServSafe Manager certification review food safety rules on Anki during breaks, then take the free 90-question mock before scheduling the proctored exam.",
   },
   "ptcb-pharmacy-technician-anki-deck": {
-    title: "PTCB Exam Prep | 300 Pharmacy Tech Flashcards",
-    headline: "PTCB Pharmacy Technician Exam Prep — 300 Flashcards",
-    studyLabel: "PTCB exam prep",
+    title: "PTCB Exam Prep 2026 | 300 PTCE Flashcards (Drugs, Sig Codes, Math)",
+    headline: "PTCB Pharmacy Technician Exam Prep — 300 PTCE Flashcards",
+    studyLabel: "PTCB / PTCE exam prep",
+    description:
+      "PTCB pharmacy technician exam prep with 300 Anki flashcards for the PTCE: top 200 brand/generic drugs, sig abbreviations, days-supply math, DEA schedules, and federal law. Daily phone review for US pharmacy tech candidates — independent, not official PTCB material.",
+    keywords: [
+      "ptcb exam prep",
+      "ptce flashcards",
+      "pharmacy technician study guide",
+      "ptcb anki deck",
+      "top 200 drugs ptcb",
+      "pharmacy technician certification prep",
+    ],
+    intro:
+      "US pharmacy technician candidates use this deck for daily brand/generic and sig-code recall — the high-volume PTCE material that is hard to retain from textbooks alone. Review 10–15 cards per day on your phone before exam day.",
   },
   "california-real-estate-exam-anki-deck": {
-    title: "California Real Estate Exam Prep | Flashcards + Free Practice Test",
-    headline: "California Real Estate Exam Prep — Flashcards + Free Mock",
+    title: "California Real Estate Exam Prep | 400 Flashcards + Free Practice Test",
+    headline: "California Real Estate Exam Prep — 400 Flashcards + Free Mock",
     studyLabel: "California real estate exam prep",
+    description:
+      "California DRE salesperson exam prep with 400 Anki flashcards for agency, contracts, financing, disclosures, and property law — plus a free 60-question California real estate practice test.",
+    keywords: [
+      "california real estate exam prep",
+      "ca real estate practice test",
+      "california salesperson exam flashcards",
+      "dre exam study guide",
+      "real estate license california",
+    ],
+    intro:
+      "California real estate license candidates use spaced repetition for agency law, contracts, and mandated disclosures — then run the free readiness check before paying for a full prep course.",
   },
   "life-and-health-insurance-exam-anki-deck": {
-    title: "Life & Health Insurance Exam Prep | Flashcards + Free Practice Test",
-    headline: "Life & Health Insurance Exam Prep — Flashcards + Free Mock",
+    title: "Life & Health Insurance Exam Prep | 400 Flashcards + Free Practice Test",
+    headline: "Life & Health Insurance Exam Prep — 400 Flashcards + Free Mock",
     studyLabel: "Life & Health insurance exam prep",
+    description:
+      "Life and Health insurance license exam prep with 400 flashcards for policy types, annuities, Medicare basics, and producer responsibilities — plus a free 60-question insurance practice test for US licensing candidates.",
+    keywords: [
+      "life and health insurance practice test",
+      "insurance license exam prep",
+      "life health insurance flashcards",
+      "insurance producer exam",
+      "state insurance exam study guide",
+    ],
+    intro:
+      "Americans studying for state Life & Health producer licensing use Anki for policy provisions, annuities, and cost-sharing concepts — then validate with the free timed practice test.",
   },
   "property-casualty-insurance-exam-anki-deck": {
-    title: "Property & Casualty Insurance Exam Prep | Flashcards + Free Practice Test",
-    headline: "Property & Casualty Insurance Exam Prep — Flashcards + Free Mock",
+    title: "Property & Casualty Insurance Exam Prep | 400 Flashcards + Free Practice Test",
+    headline: "Property & Casualty Insurance Exam Prep — 400 Flashcards + Free Mock",
     studyLabel: "Property & Casualty insurance exam prep",
+    description:
+      "Property and Casualty insurance license exam prep with 400 flashcards for homeowners, auto, commercial lines, and workers comp — plus a free 60-question P&C insurance practice test.",
+    keywords: [
+      "property casualty insurance practice test",
+      "p&c insurance exam prep",
+      "insurance license flashcards",
+      "homeowners insurance exam questions",
+      "casualty insurance study guide",
+    ],
+    intro:
+      "US P&C licensing candidates drill policy structures, exclusions, and commercial lines on Anki, then use the free readiness check before state exam registration.",
   },
   "servsafe-manager-complete-study-guide": {
     title: "ServSafe Manager Exam Prep | PDF Study Guide + 70 Practice Questions",
-    headline: "ServSafe Manager Exam Prep — Printable Study Guide + Practice Questions",
+    headline: "ServSafe Manager Exam Prep — Printable Study Guide + 70 Questions",
     studyLabel: "ServSafe Manager exam prep",
+    description:
+      "ServSafe Manager printable PDF study guide: 40 pages, 70 practice questions with rationales, 2-page cram sheet, and 7-day study plan. Pairs with the 300-card Anki deck and free 90-question mock.",
+    keywords: [
+      "servsafe manager study guide pdf",
+      "servsafe manager practice questions",
+      "food manager exam cram sheet",
+      "servsafe pdf download",
+    ],
+    intro:
+      "Managers who prefer printable study material use this PDF for domain review and 70 exam-style questions — then drill weak topics in the companion Anki deck or free online mock.",
   },
   "cat4-level-d-anki-deck-printable-pdf": {
     title: "CAT4 Level D Exam Prep | 200 Flashcards + Printable PDF",
     headline: "CAT4 Level D Exam Prep — Anki Deck + Printable PDF",
     studyLabel: "CAT4 Level D exam prep",
+    description:
+      "CAT4 Level D bundle with 200 Anki flashcards and a 49-page printable PDF for Verbal Classification, Verbal Analogies, Number Analogies, and Number Series. Built for Year 7 / Grade 7 selective entry. Independent prep — not official GL Assessment material.",
+    keywords: [
+      "cat4 level d prep",
+      "cat4 anki deck",
+      "cat4 printable pdf",
+      "grade 7 cat4 practice",
+      "year 7 selective entry prep",
+      "verbal classification cat4",
+      "number series cat4",
+    ],
   },
 };
 
@@ -251,6 +383,12 @@ export function buildDeckSearchFaqs(deck: CatalogAvailableDeck) {
     faqs.push({
       question: `Is there a free ${deck.shortName} practice test?`,
       answer: `Yes. Take ${buildMockSeoTitle(mock)} at ${mockUrl}. It includes ${mock.questionCount} timed questions, topic scoring, and a remediation plan linked back to this deck.`,
+    });
+  } else if (deck.slug === "ptcb-pharmacy-technician-anki-deck") {
+    faqs.push({
+      question: "Is there a free PTCB practice test?",
+      answer:
+        "UniPrep2Go does not yet publish a standalone PTCB mock exam. Use this 300-card deck for daily brand/generic, sig-code, and pharmacy-math recall on your phone — the highest-yield PTCE material. Free timed practice tests for SIE, ServSafe, insurance, and real estate are at uniprep2go.study/mock-exams.",
     });
   }
 

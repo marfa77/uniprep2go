@@ -133,6 +133,57 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfile>> = {
     audience: "Insurance producer candidates preparing for state Life & Health licensing exams.",
     practiceTestLabel: "Life & Health insurance practice test",
   },
+  "frm-part-1-readiness-check": {
+    title: "Free FRM Part 1 Practice Test 2026 | 50-Question Readiness Check",
+    description:
+      "Free FRM Part 1 practice questions online: 50 timed questions across all 4 GARP topic weights, 120 minutes, topic scoring, answer review, and pass/no-pass report. Independent FRM prep — not GARP material.",
+    keywords: [
+      "frm part 1 practice test",
+      "frm mock exam",
+      "free frm practice questions",
+      "garp frm readiness check",
+      "frm part 1 exam prep",
+    ],
+    headline: "Free FRM Part 1 Readiness Check",
+    intro:
+      "A timed FRM Part 1 diagnostic sampled across foundations of risk, quant, financial markets and products, and valuation and risk models — with weighted topic feedback.",
+    audience: "FRM Part 1 candidates who want a timed baseline before committing to a full mock provider.",
+    practiceTestLabel: "FRM Part 1 practice test",
+  },
+  "series-63-readiness-check": {
+    title: "Free Series 63 Practice Test | 60-Question NASAA Readiness Check",
+    description:
+      "Free Series 63 practice questions online: 60 timed questions on NASAA state law topics, 90 minutes, 72% target, topic scoring, and answer review. Independent Series 63 prep — not official NASAA material.",
+    keywords: [
+      "series 63 practice test",
+      "series 63 mock exam",
+      "nasaa series 63 questions",
+      "uniform securities act practice test",
+      "free series 63 exam prep",
+    ],
+    headline: "Free Series 63 Readiness Check",
+    intro:
+      "A Series 63 readiness check built from UniPrep2Go deck content across broker-dealer regulation, agent registration, ethics, communications, and investment adviser basics.",
+    audience: "Series 63 candidates who need a timed diagnostic after SIE and Series 7 prep.",
+    practiceTestLabel: "Series 63 practice test",
+  },
+  "property-casualty-insurance-readiness-check": {
+    title: "Free Property & Casualty Insurance Practice Test | 60 Questions",
+    description:
+      "Free Property and Casualty insurance licensing practice online: 60 timed questions, 90 minutes, 70% target, topic scoring, and answer review. Independent P&C prep — not official state exam material.",
+    keywords: [
+      "property casualty insurance practice test",
+      "p&c insurance license exam",
+      "homeowners insurance exam questions",
+      "casualty insurance mock exam",
+      "insurance producer practice test",
+    ],
+    headline: "Free Property & Casualty Insurance Readiness Check",
+    intro:
+      "A P&C insurance licensing readiness check covering homeowners, personal auto, commercial property, general liability, workers compensation, and key regulation concepts.",
+    audience: "Property & Casualty insurance producer candidates preparing for state licensing exams.",
+    practiceTestLabel: "Property & Casualty insurance practice test",
+  },
 };
 
 export function getMockSeoProfile(config: MockExamConfig) {

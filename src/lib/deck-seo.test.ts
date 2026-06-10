@@ -17,7 +17,7 @@ describe("deck SEO magnets", () => {
     expect(buildDeckSeoTitle(deck!)).not.toMatch(/Anki Deck/i);
 
     expect(buildDeckSeoHeadline(deck!)).toContain("FRM Part 1 Exam Prep");
-    expect(buildDeckSeoDescription(deck!)).toContain("readiness check");
+    expect(buildDeckSeoDescription(deck!)).toContain("practice test");
   });
 
   it("frames SIE as exam prep with free mock", () => {
@@ -38,5 +38,13 @@ describe("deck SEO magnets", () => {
     const deck = getDeckBySlug("ciple-a2-european-portuguese-anki-deck");
     expect(buildDeckSeoTitle(deck!)).toContain("Exam Prep");
     expect(buildDeckSeoTitle(deck!)).not.toContain("UniPrep2Go");
+  });
+
+  it("uses a stable CAT4 exam prep description and keywords", () => {
+    const deck = getDeckBySlug("cat4-level-d-anki-deck-printable-pdf");
+    expect(deck).toBeDefined();
+    expect(buildDeckSeoTitle(deck!)).toContain("CAT4 Level D Exam Prep");
+    expect(buildDeckSeoDescription(deck!)).toContain("49-page printable PDF");
+    expect(buildDeckSeoDescription(deck!)).toContain("GL Assessment");
   });
 });

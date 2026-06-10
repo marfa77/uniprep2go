@@ -26,6 +26,7 @@ export type FunnelEvent = {
   name: FunnelEventName;
   deckSlug: string;
   occurredAt: string;
+  visitorId?: string;
   source?: string;
   path?: string;
   destinationUrl?: string;
@@ -46,6 +47,8 @@ export type FunnelEvent = {
 type FunnelEventInput = {
   name: FunnelEventName;
   deckSlug: string;
+  occurredAt?: string;
+  visitorId?: string;
   source?: string;
   path?: string;
   destinationUrl?: string;
@@ -91,6 +94,7 @@ export function parseFunnelEvent(payload: unknown): FunnelEvent {
   return createFunnelEvent({
     name: candidate.name as FunnelEventName,
     deckSlug: candidate.deckSlug,
+    visitorId: optionalString(candidate.visitorId),
     source: optionalString(candidate.source),
     path: optionalString(candidate.path),
     destinationUrl: optionalString(candidate.destinationUrl),

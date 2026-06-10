@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { FunnelTracker, TrackedCheckoutLink } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { DeckRelatedDecks } from "@/components/decks/deck-related-decks";
 import { DeckSeoSections } from "@/components/decks/deck-seo-sections";
 import { catalogAvailableDecks, categoryLabels } from "@/lib/decks";
 import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
@@ -17,6 +18,7 @@ import {
 } from "@/lib/deck-seo";
 import { getDeckCoverUrl } from "@/lib/deck-media";
 import { buildDeckPageJsonLd } from "@/lib/product-jsonld";
+import { buildSocialMetadata } from "@/lib/social-metadata";
 import { buildMockSeoTitle } from "@/lib/mock-exams/seo";
 
 export const revalidate = 3600;
@@ -49,26 +51,13 @@ export async function generateMetadata({
     alternates: {
       canonical: `/decks/${deck.slug}`,
     },
-    openGraph: {
+    ...buildSocialMetadata({
       title,
       description,
-      url: `/decks/${deck.slug}`,
-      type: "website",
-      images: image
-        ? [
-            {
-              url: image,
-              alt: `${deck.shortName} Anki deck preview`,
-            },
-          ]
-        : undefined,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: image ? [image] : undefined,
-    },
+      path: `/decks/${deck.slug}`,
+      image,
+      imageAlt: `${deck.shortName} exam prep preview`,
+    }),
   };
 }
 
@@ -135,6 +124,26 @@ export default async function DeckPage({
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
           {categoryLabels[deck.category]}
         </p>
+        <nav aria-label="Breadcrumb" className="mt-3 text-sm text-[#5f5749]">
+          <ol className="flex flex-wrap items-center gap-2">
+            <li>
+              <Link className="hover:text-[#18140f] hover:underline" href="/">
+                Home
+              </Link>
+            </li>
+            <li aria-hidden="true">/</li>
+            <li>
+              <Link
+                className="hover:text-[#18140f] hover:underline"
+                href={`/#catalog-${deck.category}`}
+              >
+                {categoryLabels[deck.category]}
+              </Link>
+            </li>
+            <li aria-hidden="true">/</li>
+            <li className="text-[#18140f]">{deck.shortName}</li>
+          </ol>
+        </nav>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
           {buildDeckSeoHeadline(deck)}
         </h1>
@@ -371,6 +380,8 @@ export default async function DeckPage({
           </div>
         </section>
 
+        <DeckRelatedDecks deck={deck} />
+
         <section className="mt-12 flex flex-wrap gap-4 text-sm font-medium">
           {deck.slug === "cfa-level-1-anki-deck" ? (
             <Link
@@ -380,6 +391,9 @@ export default async function DeckPage({
               Deck vs official curriculum
             </Link>
           ) : null}
+          <Link className="underline decoration-[#18140f]/20 underline-offset-4" href={`/#catalog-${deck.category}`}>
+            {categoryLabels[deck.category]} catalog
+          </Link>
           <Link className="underline decoration-[#18140f]/20 underline-offset-4" href="/">
             Full catalog
           </Link>
