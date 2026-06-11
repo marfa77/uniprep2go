@@ -1,4 +1,5 @@
 import { availableDecks } from "@/lib/decks";
+import { intentPages } from "@/lib/intent-pages";
 import { getAllMockExams } from "@/lib/mock-exams/configs";
 import { absoluteUrl } from "@/lib/site";
 
@@ -10,6 +11,8 @@ export function GET() {
     absoluteUrl("/llms-full.txt"),
     absoluteUrl("/api/facts"),
     absoluteUrl("/api/mock-exams"),
+    ...intentPages.map((page) => absoluteUrl(`/${page.slug}`)),
+    ...intentPages.map((page) => absoluteUrl(`/${page.slug}/markdown`)),
     ...availableDecks.map((deck) => absoluteUrl(`/${deck.slug}.md`)),
     ...availableDecks.map((deck) => absoluteUrl(`/api/facts/${deck.slug}`)),
     ...getAllMockExams().map((mock) => absoluteUrl(`/api/mock-exams/${mock.slug}`)),

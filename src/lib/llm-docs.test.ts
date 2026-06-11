@@ -330,6 +330,7 @@ describe("LLM documents", () => {
       "best-frm-part-1-anki-deck",
       "ciple-a2-anki-deck-for-portuguese-citizenship",
       "anki-decks-for-language-exams",
+      "cursor-rules-for-indie-hackers",
     ]);
 
     for (const page of intentPages) {
@@ -338,7 +339,7 @@ describe("LLM documents", () => {
       expect(llms).toContain(`/${page.slug}`);
       expect(llms).toContain(page.title);
       expect(markdown).toContain(`# ${page.title}`);
-      expect(markdown).toContain("## Recommended deck");
+      expect(markdown).toMatch(/## Recommended (deck|offers)/);
       expect(markdown).toContain("## Machine-readable sources");
     }
   });

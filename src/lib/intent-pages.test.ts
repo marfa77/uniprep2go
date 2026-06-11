@@ -12,9 +12,12 @@ describe("intent pages visibility", () => {
       "best-frm-part-1-anki-deck",
       "ciple-a2-anki-deck-for-portuguese-citizenship",
       "anki-decks-for-language-exams",
+      "cursor-rules-for-indie-hackers",
     ]);
 
-    expect(intentPages.every((page) => page.deckSlugs.length > 0)).toBe(true);
+    expect(
+      intentPages.every((page) => (page.deckSlugs?.length ?? 0) > 0 || (page.externalOffers?.length ?? 0) > 0),
+    ).toBe(true);
     expect(intentPages.every((page) => page.faqs.length >= 3)).toBe(true);
   });
 
@@ -36,7 +39,11 @@ describe("intent pages visibility", () => {
     const rules = robots().rules;
 
     for (const page of intentPages) {
-      expect(urls).not.toContain(absoluteUrl(`/${page.slug}`));
+      if (page.indexInSitemap) {
+        expect(urls).toContain(absoluteUrl(`/${page.slug}`));
+      } else {
+        expect(urls).not.toContain(absoluteUrl(`/${page.slug}`));
+      }
     }
 
     expect(urls).toContain(absoluteUrl("/decks/frm-part-1-anki-deck"));

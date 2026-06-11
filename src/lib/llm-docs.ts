@@ -245,19 +245,40 @@ ${categoryDisclaimer(deck)}
 
 export function buildIntentMarkdown(page: IntentPage) {
   const decks = getIntentPageDecks(page);
+  const offers = page.externalOffers ?? [];
+
+  const recommendedSection =
+    offers.length > 0
+      ? offers
+          .map(
+            (offer) =>
+              `- [${offer.name}](${offer.url}) — ${offer.price}${offer.note ? ` (${offer.note})` : ""}`,
+          )
+          .join("\n")
+      : decks
+          .map(
+            (deck) =>
+              `- [${deck.title}](${absoluteUrl(`/decks/${deck.slug}`)}) — ${formatDeckContentLabel(deck)}, ${deck.checkoutProvider} checkout`,
+          )
+          .join("\n");
+
+  const machineSources =
+    offers.length > 0
+      ? offers.map((offer) => `- [${offer.name}](${offer.url})`).join("\n")
+      : decks
+          .map(
+            (deck) =>
+              `- [${deck.slug} facts JSON](${absoluteUrl(`/api/facts/${deck.slug}`)}) · [markdown](${absoluteUrl(`/${deck.slug}.md`)})`,
+          )
+          .join("\n");
 
   return `# ${page.title}
 
 > ${page.directAnswer}
 
-## Recommended deck
+## Recommended ${offers.length > 0 ? "offers" : "deck"}
 
-${decks
-  .map(
-    (deck) =>
-      `- [${deck.title}](${absoluteUrl(`/decks/${deck.slug}`)}) — ${formatDeckContentLabel(deck)}, ${deck.checkoutProvider} checkout`,
-  )
-  .join("\n")}
+${recommendedSection}
 
 ## Why this page exists
 
@@ -265,14 +286,10 @@ ${page.sections.map((section) => `### ${section.title}\n\n${section.body}`).join
 
 ## Machine-readable sources
 
-${decks
-  .map(
-    (deck) =>
-      `- [${deck.slug} facts JSON](${absoluteUrl(`/api/facts/${deck.slug}`)}) · [markdown](${absoluteUrl(`/${deck.slug}.md`)})`,
-  )
-  .join("\n")}
+${machineSources}
 - [Catalog JSON](${absoluteUrl("/api/facts")})
 - [llms.txt](${absoluteUrl("/llms.txt")})
+- [Page URL](${absoluteUrl(`/${page.slug}`)})
 
 ## FAQ
 
@@ -393,14 +410,21 @@ ${getAllMockExams()
 
 ${intentPages
   .map(
-    (page) => `### ${page.title}
+    (page) => {
+      const deckLine =
+        page.deckSlugs?.length
+          ? `- Related deck slugs: ${page.deckSlugs.join(", ")}\n- Primary deck slug: ${page.primaryDeckSlug ?? "n/a"}`
+          : page.externalOffers?.length
+            ? `- External offers:\n${page.externalOffers.map((o) => `  - ${o.name} (${o.price}): ${o.url}`).join("\n")}`
+            : "- Related deck slugs: none";
+
+      return `### ${page.title}
 
 - Slug: ${page.slug}
 - URL: ${absoluteUrl(`/${page.slug}`)}
 - Description: ${page.description}
 - Direct answer: ${page.directAnswer}
-- Related deck slugs: ${page.deckSlugs.join(", ")}
-- Primary deck slug: ${page.primaryDeckSlug}
+${deckLine}
 
 Proof points:
 ${page.proofPoints.map((point) => `- ${point}`).join("\n")}
@@ -409,7 +433,8 @@ Sections:
 ${page.sections.map((section) => `- ${section.title}: ${section.body}`).join("\n")}
 
 FAQs:
-${page.faqs.map((faq) => `- ${faq.question}\n  ${faq.answer}`).join("\n")}`,
+${page.faqs.map((faq) => `- ${faq.question}\n  ${faq.answer}`).join("\n")}`;
+    },
   )
   .join("\n\n")}
 
