@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { buildSocialMetadata } from "@/lib/social-metadata";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
 const slug = "cursor-rules-for-indie-hackers";
+const coverPath = "/cursor-ship-kit/cover.png";
+const coverAlt =
+  "ai-collaboration.mdc open in Cursor — ANTI-PATTERNS table from Cursor Ship Kit";
 
 const directAnswer =
   "The best Cursor rules for indie hackers are opinionated .mdc files with DO sections, ANTI-PATTERNS, and stack-specific globs — not generic GitHub clean-code lists. Cursor Ship Kit ships 13 rules plus 6 agent workflows extracted from real solo products (marketplace ingest, programmatic SEO, Gumroad webhooks, Telegram ops). Pro is $39 on Gumroad; a rules-only Basic tier is $19; a free ai-collaboration.mdc preview is pay-what-you-want.";
@@ -69,13 +74,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `/${slug}`,
   },
-  openGraph: {
+  ...buildSocialMetadata({
     title: "Cursor rules for indie hackers",
     description: directAnswer,
-    url: absoluteUrl(`/${slug}`),
-    siteName: siteConfig.name,
-    type: "article",
-  },
+    path: `/${slug}`,
+    image: absoluteUrl(coverPath),
+    imageAlt: coverAlt,
+    imageWidth: 1280,
+    imageHeight: 720,
+  }),
 };
 
 export default function CursorRulesForIndieHackersPage() {
@@ -117,6 +124,20 @@ export default function CursorRulesForIndieHackersPage() {
           Cursor rules for indie hackers
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">{directAnswer}</p>
+
+        <figure className="mt-8 overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#18140f] shadow-lg">
+          <Image
+            alt={coverAlt}
+            className="h-auto w-full"
+            height={720}
+            priority
+            src={coverPath}
+            width={1280}
+          />
+          <figcaption className="border-t border-white/10 bg-[#0f1419] px-5 py-3 font-mono text-xs text-[#8b9cb3]">
+            Real .mdc from Cursor Ship Kit — DO + ANTI-PATTERNS, not generic clean-code advice
+          </figcaption>
+        </figure>
 
         <div className="mt-6 rounded-2xl border border-[#1f3a5f]/20 bg-[#1f3a5f]/5 px-5 py-4 text-sm">
           <strong>Launch:</strong> use code{" "}
