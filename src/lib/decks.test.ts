@@ -49,14 +49,14 @@ describe("deck catalog", () => {
       format: "PDF",
       coverImage: "/covers/cfa-level-1-formula-reference-2026.webp",
     });
-    expect(formulaRef?.facts.cards).toBe("46 pages + 80 recall questions");
+    expect(formulaRef?.facts.cards).toBe("54 pages + 80 recall questions");
     expect(formulaRef?.sampleCards).toHaveLength(3);
     expect(formulaRef?.sampleCards.map((card) => card.imageUrl)).toEqual([
       "/samples/cfa-level-1-formula-reference-2026-sample-1.webp",
       "/samples/cfa-level-1-formula-reference-2026-sample-2.webp",
       "/samples/cfa-level-1-formula-reference-2026-sample-3.webp",
     ]);
-    expect(formulaRef?.directAnswer).toContain("217 formulas");
+    expect(formulaRef?.directAnswer).toContain("250 typeset formulas");
     expect(formulaRef?.directAnswer).not.toMatch(/study guide/i);
     expect(formulaRef?.title).not.toMatch(/study guide/i);
   });
@@ -512,7 +512,7 @@ describe("deck catalog", () => {
     const expectedTitles: Record<string, string> = {
       "cfa-level-1-anki-deck": "CFA Level 1 Anki Deck — 342+ Smart Flashcards",
       "cfa-level-1-formula-reference-2026":
-        "CFA Level 1 Formula Reference 2026 — 217 Formulas + 80 Recall Questions (PDF)",
+        "CFA Level 1 Formula Reference 2026 — 250 Formulas + 98 Definitions + 80-Question Drill (PDF)",
       "frm-part-1-anki-deck": "FRM Part 1 Anki Deck — 444 Exam Flashcards",
       "sie-exam-anki-deck": "SIE Exam Anki Deck — 300 High-Yield Flashcards",
       "series-7-anki-deck": "Series 7 Anki Deck — 300 High-Yield Flashcards",

@@ -6,7 +6,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "cfa-level-1-anki-deck":
     "342+ flashcards mapped to all 10 CFA Level 1 topic weights — pairs with the printable 2026 formula reference PDF.",
   "cfa-level-1-formula-reference-2026":
-    "46-page 2026 formula reference: 217 typeset formulas by topic plus an 80-question recall drill with answer key.",
+    "54-page 2026 formula reference: 250 formulas + 98 definitions by topic plus an 80-question recall drill with answer key.",
   "frm-part-1-anki-deck":
     "444 cards across FRM Part 1 foundations, quant, markets, and valuation — with a free 50-question readiness check.",
   "sie-exam-anki-deck":
@@ -23,7 +23,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "cfa-level-1-anki-deck":
     "Ethics, quant, FRA, and fixed-income cards include the formula families CFA Level 1 repeats every cycle: TVM and statistics, ratio analysis, forward pricing, duration, and derivatives payoff logic. Pair with the formula reference PDF for printable tables and an 80-question recall drill; use the free 60-question readiness check for topic scoring.",
   "cfa-level-1-formula-reference-2026":
-    "217 formulas across Quant (53), Fixed Income (37), Derivatives (35), and the remaining Level 1 topics — each row is concept, typeset formula, one-line meaning. The 80-question drill tests see-the-formula/name-the-concept recall. Same validated bank as the Anki deck.",
+    "348 entries — 250 formulas and 98 definitions across Quant (65), Fixed Income (51), Derivatives (49), and the remaining Level 1 topics. The 80-question drill tests see-the-formula/name-the-concept recall. Same validated bank as the Anki deck.",
   "frm-part-1-anki-deck":
     "Cards track GARP Part 1 structure: risk governance, VaR and Expected Shortfall, credit and operational risk, fixed income and derivatives Greeks. The free FRM mock scores topic gaps so you drill valuation models and market mechanics — not random card volume.",
   "sie-exam-anki-deck":
@@ -51,7 +51,7 @@ export const positioningOverrides: Partial<
     ourEdge: [
       "342+ cards across all 10 CFA Institute Level 1 topic weights in the table below",
       "2026 cycle formulas and definitions — ethics through portfolio management",
-      "Pairs with printable formula reference (217 formulas + 80 recall drill)",
+      "Pairs with printable formula reference (250 formulas + 98 definitions + 80 recall drill)",
       "Free 60-question CFA Level 1 readiness check with topic scoring",
     ],
     summaryProse:
@@ -59,7 +59,7 @@ export const positioningOverrides: Partial<
   },
   "cfa-level-1-formula-reference-2026": {
     ourEdge: [
-      "217 typeset formulas across all 10 Level 1 topics in the table below",
+      "250 formulas + 98 definitions across all 10 Level 1 topics in the table below",
       "80-question formula recall drill with explained answer key",
       "Print-ready US Letter PDF — companion, not curriculum replacement",
       "Same validated item bank as the 342+ card CFA Level 1 Anki deck",
@@ -160,7 +160,7 @@ Candidates lose points confusing forward vs futures margin flows, mis-stating in
 
   "cfa-level-1-formula-reference-2026": `### What is inside
 
-217 formulas and definitions across Quantitative Methods (53), Fixed Income (37), Derivatives (35), Economics (22), FSA (22), Equity (15), Portfolio Management (15), Ethics & GIPS (8), Corporate Issuers (6), and Alternatives (4). Each table row shows concept, typeset formula, and a one-line plain-English meaning. The 80-question Formula Recall Drill shows a formula and asks you to name the concept — same-topic distractors mirror exam phrasing.
+348 entries — 250 typeset formulas and 98 examiner-style definitions across Quantitative Methods (65), Fixed Income (51), Derivatives (49), FSA (44), Economics (36), Ethics & GIPS (28), Portfolio Management (27), Equity (23), Corporate Issuers (14), and Alternatives (11). Each table row shows concept, typeset formula, and a one-line plain-English meaning. The 80-question Formula Recall Drill shows a formula and asks you to name the concept — same-topic distractors mirror exam phrasing.
 
 ### Four-week recall plan with the Anki deck and free mock
 

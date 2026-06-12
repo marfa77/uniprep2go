@@ -128,7 +128,7 @@ describe("LLM documents", () => {
     expect(facts).toMatchObject({
       slug: "cfa-level-1-formula-reference-2026",
       category: "finance",
-      card_count: "46 pages + 80 recall questions",
+      card_count: "54 pages + 80 recall questions",
       checkout_url: "https://pixidstudio.gumroad.com/l/cfa-level-1-formula-reference-2026?wanted=true",
       checkout_provider: "Gumroad",
       format: "PDF",
@@ -136,9 +136,9 @@ describe("LLM documents", () => {
     });
     expect(facts.sample_cards).toHaveLength(3);
     expect(markdown).toContain("CFA Level 1 Formula Reference");
-    expect(markdown).toContain("217 formulas");
+    expect(markdown).toContain("250 formulas");
     expect(markdown).not.toMatch(/study guide/i);
-    expect(facts.serp_answer).toContain("46 pages + 80 recall questions");
+    expect(facts.serp_answer).toContain("54 pages + 80 recall questions");
   });
 
   it("exposes the PTCB Study Guide 2026 as a printable practice product", () => {

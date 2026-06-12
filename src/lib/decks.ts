@@ -565,13 +565,13 @@ const rawDecks: Deck[] = [
     category: "finance",
     status: "available",
     title:
-      "CFA Level 1 Formula Reference 2026 — 217 Formulas + 80 Recall Questions (PDF)",
+      "CFA Level 1 Formula Reference 2026 — 250 Formulas + 98 Definitions + 80-Question Drill (PDF)",
     shortName: "CFA Level 1 Formula Reference",
     subtitle:
-      "46-page printable formula quick reference for the 2026 cycle — 217 typeset formulas by topic plus an 80-question recall drill.",
+      "54-page printable formula quick reference for the 2026 cycle — 250 typeset formulas, 98 key definitions, and an 80-question recall drill.",
     directAnswer:
-      "UniPrep2Go sells an independent CFA Level 1 Formula & Definitions Quick Reference PDF with 46 printable pages: 217 formulas and definitions organized across all 10 Level 1 topic areas (concept, typeset formula, one-line meaning), an 80-question Formula Recall Drill with explained answer key, and a clickable table of contents. Built from the same validated item bank as the CFA Level 1 Anki deck. Delivered as a grayscale-friendly US Letter PDF for {PRICE} through Gumroad. Recall companion — not CFA Institute curriculum or a study course.",
-    lastUpdated: "2026-06-06",
+      "UniPrep2Go sells an independent CFA Level 1 Formula & Definitions Quick Reference PDF with 54 printable pages: 348 entries (250 typeset formulas and 98 examiner-style definitions) organized across all 10 Level 1 topic areas (concept, typeset formula, one-line meaning), an 80-question Formula Recall Drill with explained answer key, and a clickable table of contents. Built from the same validated item bank as the CFA Level 1 Anki deck. Delivered as a grayscale-friendly US Letter PDF for {PRICE} through Gumroad. Recall companion — not CFA Institute curriculum or a study course.",
+    lastUpdated: "2026-06-12",
     audience:
       "CFA Level 1 candidates who need fast formula retrieval under exam timing — print the reference, run the recall drill, and pair with spaced-repetition review on the companion Anki deck.",
     format: "PDF",
@@ -580,25 +580,25 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "46 pages + 80 recall questions",
+      cards: "54 pages + 80 recall questions",
       topics:
-        "217 CFA Level 1 formulas and definitions across Quant, Economics, FSA, Corporate Issuers, Equity, Fixed Income, Derivatives, Alternatives, Portfolio Management, and Ethics & GIPS",
+        "250 CFA Level 1 formulas and 98 key definitions across Quant, Economics, FSA, Corporate Issuers, Equity, Fixed Income, Derivatives, Alternatives, Portfolio Management, and Ethics & GIPS",
       formulas:
         "Typeset formula tables by topic, one-line plain-English meanings, and 80-question formula-recall drill with explanations",
       examYear: "2026 CFA Level 1 preparation cycle",
       delivery: "Printable PDF digital download through Gumroad",
     },
     topicCoverage: [
-      { name: "Quantitative Methods", examWeight: "53 formulas", cards: "TVM, statistics, regression — typeset with one-line meanings" },
-      { name: "Economics", examWeight: "22 formulas", cards: "Micro, macro, and currency parity relationships" },
-      { name: "Financial Statement Analysis", examWeight: "22 formulas", cards: "Ratios, cash flow linkages, inventory methods" },
-      { name: "Corporate Issuers", examWeight: "6 formulas", cards: "Capital structure and governance metrics" },
-      { name: "Equity Investments", examWeight: "15 formulas", cards: "Multiples, DDM, and index construction" },
-      { name: "Fixed Income", examWeight: "37 formulas", cards: "Duration, convexity, yields, and pricing" },
-      { name: "Derivatives", examWeight: "35 formulas", cards: "Forwards, futures, options, and swaps" },
-      { name: "Alternative Investments", examWeight: "4 formulas", cards: "Core alternatives metrics" },
-      { name: "Portfolio Management", examWeight: "15 formulas", cards: "CAPM, Sharpe, and portfolio risk/return" },
-      { name: "Ethics & GIPS", examWeight: "8 formulas", cards: "Key ethics and GIPS definitions" },
+      { name: "Quantitative Methods", examWeight: "65 entries", cards: "TVM, statistics, regression — typeset with one-line meanings" },
+      { name: "Economics", examWeight: "36 entries", cards: "Micro, macro, and currency parity relationships" },
+      { name: "Financial Statement Analysis", examWeight: "44 entries", cards: "Ratios, cash flow linkages, inventory methods" },
+      { name: "Corporate Issuers", examWeight: "14 entries", cards: "Capital structure and governance metrics" },
+      { name: "Equity Investments", examWeight: "23 entries", cards: "Multiples, DDM, and index construction" },
+      { name: "Fixed Income", examWeight: "51 entries", cards: "Duration, convexity, yields, and pricing" },
+      { name: "Derivatives", examWeight: "49 entries", cards: "Forwards, futures, options, and swaps" },
+      { name: "Alternative Investments", examWeight: "11 entries", cards: "Core alternatives metrics" },
+      { name: "Portfolio Management", examWeight: "27 entries", cards: "CAPM, Sharpe, and portfolio risk/return" },
+      { name: "Ethics & GIPS", examWeight: "28 entries", cards: "Key ethics and GIPS definitions" },
       { name: "Formula Recall Drill", examWeight: "80 questions", cards: "See the formula, name the concept — explained answer key" },
     ],
     sampleCards: [
@@ -625,7 +625,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the CFA Level 1 Formula Reference include?",
         answer:
-          "A 46-page printable PDF with 217 formulas and definitions across 10 Level 1 topic areas, an 80-question Formula Recall Drill with explained answer key, and a clickable table of contents.",
+          "A 54-page printable PDF with 250 formulas and 98 key definitions across 10 Level 1 topic areas, an 80-question Formula Recall Drill with explained answer key, and a clickable table of contents.",
       },
       {
         question: "Is this a CFA study course or curriculum replacement?",

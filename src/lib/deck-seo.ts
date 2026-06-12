@@ -140,11 +140,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "US and global CFA Level 1 candidates use spaced-repetition flashcards to retain formulas and definitions across all 10 curriculum topics — pair with the formula reference PDF for printable tables and an 80-question recall drill.",
   },
   "cfa-level-1-formula-reference-2026": {
-    title: "CFA Level 1 Formula Reference 2026 | 217 Formulas + 80 Recall Drill (PDF)",
-    headline: "CFA Level 1 Formula Reference — 217 Formulas + Recall Drill",
+    title: "CFA Level 1 Formula Reference 2026 | 250 Formulas + 98 Definitions + 80-Question Drill",
+    headline: "CFA Level 1 Formula Reference — 250 Formulas + 98 Definitions",
     studyLabel: "CFA Level 1 exam prep",
     description:
-      "CFA Level 1 formula quick reference PDF: 217 typeset formulas across 10 topic areas, 80-question recall drill with explanations, print-ready layout. Pairs with 342+ Anki deck and free 60-question mock. Recall companion — not CFA Institute curriculum.",
+      "CFA Level 1 formula quick reference PDF: 250 typeset formulas and 98 key definitions across 10 topic areas, 80-question recall drill with explanations, 54 print-ready pages. Pairs with 342+ Anki deck and free 60-question mock. Recall companion — not CFA Institute curriculum.",
     keywords: [
       "cfa level 1 formula sheet",
       "cfa level 1 formula reference",
