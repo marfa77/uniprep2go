@@ -386,6 +386,29 @@ describe("deck catalog", () => {
     expect(ptcbDeck?.directAnswer).not.toContain("UniPrep2Go sells");
   });
 
+  it("includes the PTCB Study Guide 2026 as a printable PTCE prep product", () => {
+    const ptcbGuide = getDeckBySlug("ptcb-study-guide-2026");
+
+    expect(ptcbGuide?.status).toBe("available");
+    expect(ptcbGuide).toMatchObject({
+      category: "professional",
+      checkoutUrl: "https://pixidstudio.gumroad.com/l/ptcb-study-guide-2026?wanted=true",
+      checkoutProvider: "Gumroad",
+      checkoutSeller: "PixID Studio",
+      format: "PDF",
+      coverImage: "/covers/ptcb-study-guide-2026.webp",
+    });
+    expect(ptcbGuide?.facts.cards).toBe("30 pages + 80 practice questions");
+    expect(ptcbGuide?.sampleCards).toHaveLength(3);
+    expect(ptcbGuide?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/ptcb-study-guide-2026-sample-1.webp",
+      "/samples/ptcb-study-guide-2026-sample-2.webp",
+      "/samples/ptcb-study-guide-2026-sample-3.webp",
+    ]);
+    expect(ptcbGuide?.directAnswer).toContain("January 2026 PTCE");
+    expect(ptcbGuide?.directAnswer).toContain("80-question practice exam");
+  });
+
   it("includes the CAT4 Level D bundle as an academic prep product", () => {
     const cat4Bundle = getDeckBySlug("cat4-level-d-anki-deck-printable-pdf");
 
@@ -523,6 +546,8 @@ describe("deck catalog", () => {
         "ServSafe Manager Complete Study Guide — PDF + 70 Practice Questions",
       "ptcb-pharmacy-technician-anki-deck":
         "PTCB Pharmacy Technician Anki Deck — 300 High-Yield Flashcards",
+      "ptcb-study-guide-2026":
+        "PTCB Exam Study Guide 2026 — Complete PTCE Review + 80-Question Practice Exam + Cheat Sheets (PDF)",
       "bench-energy-metal-trader-anki-deck":
         "Metal Trader Anki Deck — 202 Commodity Flashcards",
       "bench-energy-oil-trader-anki-deck":

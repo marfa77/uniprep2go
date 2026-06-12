@@ -120,6 +120,26 @@ describe("LLM documents", () => {
     expect(markdown).toContain("PTCB Pharmacy Technician Anki Deck");
   });
 
+  it("exposes the PTCB Study Guide 2026 as a printable practice product", () => {
+    const deck = pricedDeck("ptcb-study-guide-2026", 19);
+    const facts = buildDeckFacts(deck);
+    const markdown = buildDeckMarkdown(deck);
+
+    expect(facts).toMatchObject({
+      slug: "ptcb-study-guide-2026",
+      category: "professional",
+      card_count: "30 pages + 80 practice questions",
+      checkout_url: "https://pixidstudio.gumroad.com/l/ptcb-study-guide-2026?wanted=true",
+      checkout_provider: "Gumroad",
+      format: "PDF",
+      cover_image: "https://uniprep2go.study/covers/ptcb-study-guide-2026.webp",
+    });
+    expect(facts.sample_cards).toHaveLength(3);
+    expect(markdown).toContain("PTCB Exam Study Guide 2026");
+    expect(markdown).toContain("80-question practice exam");
+    expect(facts.serp_answer).toContain("30 pages + 80 practice questions");
+  });
+
   it("exposes the CAT4 bundle without duplicating cards in SERP copy", () => {
     const deck = pricedDeck("cat4-level-d-anki-deck-printable-pdf", 11);
     const facts = buildDeckFacts(deck);

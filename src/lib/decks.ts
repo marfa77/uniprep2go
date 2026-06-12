@@ -1782,14 +1782,14 @@ const rawDecks: Deck[] = [
       topics:
         "Top 200 drugs, sig codes, pharmacy math, DEA schedules, federal law, and dispensing workflow",
       formulas: "Brand/generic recall, sig abbreviations, days-supply math, DEA schedule rules, and high-alert safety concepts",
-      examYear: "Current U.S. PTCE / pharmacy technician review",
+      examYear: "January 2026 PTCE / pharmacy technician review",
       delivery: "Digital download through Gumroad",
     },
     topicCoverage: [
       { name: "Top 200 Drugs", examWeight: "Core PTCE topic", cards: "Brand ↔ generic ↔ class with primary use" },
       { name: "Sig Codes & Abbreviations", examWeight: "Core PTCE topic", cards: "Common U.S. pharmacy abbreviations" },
-      { name: "Pharmacy Math", examWeight: "Core PTCE topic", cards: "Days supply, conversions, alligation-style problems" },
-      { name: "Federal Law & Safety", examWeight: "Core PTCE topic", cards: "DEA schedules, HIPAA, recalls, high-alert safety" },
+      { name: "Pharmacy Math", examWeight: "Core PTCE topic", cards: "Days supply, conversions, ratio/proportion problems" },
+      { name: "Federal Law & Safety", examWeight: "18.75% (2026)", cards: "DEA schedules, HIPAA, recalls, DSCSA traceability" },
       { name: "Order Entry & Inventory", examWeight: "Core PTCE topic", cards: "Dispensing workflow, labeling, handling basics" },
     ],
     sampleCards: [
@@ -1837,6 +1837,94 @@ const rawDecks: Deck[] = [
         question: "Does this guarantee a passing score?",
         answer:
           "No. It is a supplementary retention tool and does not guarantee an exam result. Your outcome depends on consistent study and your broader prep plan.",
+      },
+    ],
+  },
+  {
+    slug: "ptcb-study-guide-2026",
+    category: "professional",
+    status: "available",
+    title: "PTCB Exam Study Guide 2026 — Complete PTCE Review + 80-Question Practice Exam + Cheat Sheets (PDF)",
+    shortName: "PTCB Study Guide 2026",
+    subtitle:
+      "30-page printable PTCE study guide for the January 2026 blueprint — domain-weighted chapters, 80-question practice exam, and print-ready cheat sheets.",
+    directAnswer:
+      "UniPrep2Go sells an independent PTCB Exam Study Guide 2026 PDF with 30 printable pages: four review chapters sized to the January 2026 PTCE domain weights (Medications 35%, Federal Requirements 18.75%, Patient Safety & QA 23.75%, Order Entry & Processing 22.5%), a full-length 80-question practice exam with domain-scored answer key and explanations, three cheat sheets (60 drugs A–Z, 45 sig codes, pharmacy math formulas), and a 4-week study plan. Built from the same validated 300-card item bank as the PTCB Anki deck. Delivered as a grayscale-friendly US Letter PDF for {PRICE} through Gumroad. Independent study aid — not official PTCB, NHA, FDA, or DEA material.",
+    lastUpdated: "2026-06-06",
+    audience:
+      "PTCE candidates who want one structured printable document — read domain chapters, take the 80-question practice exam, print cheat sheets, and pair with spaced-repetition drills on the companion Anki deck.",
+    format: "PDF",
+    coverImage: "/covers/ptcb-study-guide-2026.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/ptcb-study-guide-2026?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "30 pages + 80 practice questions",
+      topics:
+        "January 2026 PTCE blueprint: Medications, Federal Requirements (including DSCSA), Patient Safety & QA, Order Entry & Processing, 80-question practice exam, drug/sig/math cheat sheets, and 4-week study plan",
+      formulas:
+        "Printable domain-weighted review chapters, full-length PTCE-length practice exam with explanations, and three print-ready cheat sheets",
+      examYear: "January 2026 PTCE / pharmacy technician certification review",
+      delivery: "Printable PDF digital download through Gumroad",
+    },
+    topicCoverage: [
+      { name: "Medications", examWeight: "35%", cards: "Brand/generic, classes, high-alert safety, interactions" },
+      { name: "Federal Requirements", examWeight: "18.75%", cards: "DEA schedules, HIPAA, recalls, DSCSA traceability" },
+      { name: "Patient Safety & QA", examWeight: "23.75%", cards: "Error prevention, high-alert drugs, quality assurance" },
+      { name: "Order Entry & Processing", examWeight: "22.5%", cards: "Sig codes, dispensing workflow, inventory basics" },
+      { name: "Practice Exam", examWeight: "80 questions", cards: "28/15/19/18 by domain — scored answer key with rationales" },
+      { name: "Cheat Sheets", examWeight: "3 pages", cards: "60 drugs A–Z, 45 sig codes, math formulas with examples" },
+    ],
+    sampleCards: [
+      {
+        question: "2026 PTCE domain weights at a glance",
+        answer:
+          "The at-a-glance table maps the January 2026 blueprint: Medications 35%, Federal Requirements 18.75% (DSCSA added), Patient Safety 23.75%, Order Entry 22.5% — compounding and alligation removed.",
+        imageUrl: "/samples/ptcb-study-guide-2026-sample-1.webp",
+      },
+      {
+        question: "60 high-yield drugs A–Z cheat sheet",
+        answer:
+          "Print-ready drug list with brand, generic, class, and primary use — the fastest pre-exam scan for look-alike/sound-alike pairs the PTCE repeats.",
+        imageUrl: "/samples/ptcb-study-guide-2026-sample-2.webp",
+      },
+      {
+        question: "Practice exam question with full rationale",
+        answer:
+          "Each of the 80 practice questions includes why the correct answer is right and why the tempting distractor is wrong — mapped to the validated item bank.",
+        imageUrl: "/samples/ptcb-study-guide-2026-sample-3.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "What does the PTCB Exam Study Guide 2026 include?",
+        answer:
+          "A 30-page printable PDF with four domain-weighted review chapters (January 2026 PTCE blueprint), an 80-question full-length practice exam with domain-scored answer key and explanations, three print-ready cheat sheets (drugs, sig codes, math), and a 4-week study plan.",
+      },
+      {
+        question: "Is this updated for the January 2026 PTCE?",
+        answer:
+          "Yes. Chapter sizes follow the 2026 domain weights — Federal Requirements at 18.75% with DSCSA coverage, and compounding/alligation topics removed from the outline.",
+      },
+      {
+        question: "Does this pair with the PTCB Anki deck?",
+        answer:
+          "Yes. The guide and 300-card Anki deck share the same validated item bank. Use the PDF for structured reading and the timed practice exam; use the Anki deck for daily brand/generic and sig-code recall on your phone.",
+      },
+      {
+        question: "Who is this PDF for?",
+        answer:
+          "PTCE candidates who want one structured printable document. It is a focused exam-prep companion, not a full pharmacology textbook or curriculum replacement.",
+      },
+      {
+        question: "Is this official PTCB material?",
+        answer:
+          "No. This is an independent educational product and is not affiliated with, endorsed by, or sponsored by PTCB, the Pharmacy Technician Certification Board, NHA, FDA, or DEA.",
+      },
+      {
+        question: "How should I use it before exam day?",
+        answer:
+          "Follow the 4-week plan: read each domain chapter, take the 80-question practice exam, review every explanation, print the cheat sheets, and drill matching topics in the companion Anki deck if you use it.",
       },
     ],
   },

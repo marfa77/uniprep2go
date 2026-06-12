@@ -224,7 +224,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "PTCB Pharmacy Technician Exam Prep — 300 PTCE Flashcards",
     studyLabel: "PTCB / PTCE exam prep",
     description:
-      "PTCB pharmacy technician exam prep with 300 Anki flashcards for the PTCE: top 200 brand/generic drugs, sig abbreviations, days-supply math, DEA schedules, and federal law. Daily phone review for US pharmacy tech candidates — independent, not official PTCB material.",
+      "PTCB pharmacy technician exam prep with 300 Anki flashcards for the January 2026 PTCE: top 200 brand/generic drugs, sig abbreviations, days-supply math, DEA schedules, DSCSA, and federal law. Pairs with the printable 2026 study guide PDF. Independent — not official PTCB material.",
     keywords: [
       "ptcb exam prep",
       "ptce flashcards",
@@ -234,7 +234,23 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "pharmacy technician certification prep",
     ],
     intro:
-      "US pharmacy technician candidates use this deck for daily brand/generic and sig-code recall — the high-volume PTCE material that is hard to retain from textbooks alone. Review 10–15 cards per day on your phone before exam day.",
+      "US pharmacy technician candidates use this deck for daily brand/generic and sig-code recall — the high-volume PTCE material that is hard to retain from textbooks alone. Pair with the 2026 printable study guide for domain chapters and an 80-question practice exam.",
+  },
+  "ptcb-study-guide-2026": {
+    title: "PTCB Exam Study Guide 2026 | PDF + 80-Question PTCE Practice Exam",
+    headline: "PTCB Exam Study Guide 2026 — Printable PTCE Review + Practice Test",
+    studyLabel: "PTCB / PTCE exam prep",
+    description:
+      "PTCB Exam Study Guide 2026 PDF: 30 pages aligned to the January 2026 PTCE blueprint, 80-question practice exam with explanations, drug/sig/math cheat sheets, and 4-week plan. Pairs with the 300-card Anki deck. Independent — not official PTCB material.",
+    keywords: [
+      "ptcb study guide 2026",
+      "ptce practice exam",
+      "pharmacy technician study guide pdf",
+      "ptcb cheat sheet",
+      "ptce 2026 blueprint",
+    ],
+    intro:
+      "Candidates who prefer printable study material use this PDF for 2026 domain-weighted chapters and a full-length 80-question practice exam — then drill weak topics in the companion PTCB Anki deck.",
   },
   "california-real-estate-exam-anki-deck": {
     title: "California Real Estate Exam Prep | 400 Flashcards + Free Practice Test",
@@ -388,7 +404,13 @@ export function buildDeckSearchFaqs(deck: CatalogAvailableDeck) {
     faqs.push({
       question: "Is there a free PTCB practice test?",
       answer:
-        "UniPrep2Go does not yet publish a standalone PTCB mock exam. Use this 300-card deck for daily brand/generic, sig-code, and pharmacy-math recall on your phone — the highest-yield PTCE material. Free timed practice tests for SIE, ServSafe, insurance, and real estate are at uniprep2go.study/mock-exams.",
+        "UniPrep2Go does not yet publish a free online PTCB mock exam. Use this 300-card deck for daily brand/generic, sig-code, and pharmacy-math recall on your phone. The companion PTCB Study Guide 2026 PDF includes an 80-question full-length practice exam with explanations.",
+    });
+  } else if (deck.slug === "ptcb-study-guide-2026") {
+    faqs.push({
+      question: "Does this pair with the PTCB Anki deck?",
+      answer:
+        "Yes. The PDF and 300-card Anki deck share the same validated item bank. Read the domain chapters and take the 80-question practice exam in the guide; use the Anki deck for spaced-repetition drills on your phone between shifts.",
     });
   }
 

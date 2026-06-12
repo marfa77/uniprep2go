@@ -45,6 +45,7 @@ describe("deck money pages", () => {
     for (const slug of [
       "cfa-level-1-anki-deck",
       "ptcb-pharmacy-technician-anki-deck",
+      "ptcb-study-guide-2026",
       "servsafe-manager-anki-deck",
     ]) {
       const content = getDeckUniqueContent(getDeckBySlug(slug)!);

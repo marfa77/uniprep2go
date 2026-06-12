@@ -42,7 +42,13 @@ function buildExamFaqs(deck: CatalogAvailableDeck): DeckFaq[] {
     faqs.push({
       question: "How do sig codes and top-200 drugs fit PTCE prep?",
       answer:
-        "The deck front-loads brand/generic pairs, sig abbreviations, and days-supply math — the high-volume PTCE categories that textbooks spread across chapters. Review 10–15 cards per day on your phone; use free SIE or ServSafe mocks on UniPrep2Go for timed-exam rhythm.",
+        "The deck front-loads brand/generic pairs, sig abbreviations, and days-supply math — the high-volume PTCE categories that textbooks spread across chapters. Pair with the PTCB Study Guide 2026 PDF for domain chapters and an 80-question practice exam; review 10–15 Anki cards per day on your phone.",
+    });
+  } else if (deck.slug === "ptcb-study-guide-2026") {
+    faqs.push({
+      question: "Is this updated for the January 2026 PTCE?",
+      answer:
+        "Yes. Chapter sizes follow the 2026 domain weights — Federal Requirements at 18.75% with DSCSA, and compounding/alligation removed. The 80-question practice exam is distributed 28/15/19/18 by domain.",
     });
   } else {
     faqs.push({

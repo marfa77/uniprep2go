@@ -12,7 +12,9 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "series-7-anki-deck":
     "300 Top-Off cards for suitability, products, and order flow — plus a free 60-question Series 7 mock.",
   "ptcb-pharmacy-technician-anki-deck":
-    "300 PTCE cards for top-200 drugs, sig codes, and pharmacy math — built for phone review between shifts.",
+    "300 PTCE cards for top-200 drugs, sig codes, and pharmacy math — pairs with the 2026 printable study guide PDF.",
+  "ptcb-study-guide-2026":
+    "30-page January 2026 PTCE PDF: domain-weighted chapters, 80-question practice exam, and print-ready cheat sheets.",
 };
 
 export const longDescriptionOverrides: Partial<Record<string, string>> = {
@@ -25,7 +27,9 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "series-7-anki-deck":
     "Job-function outline coverage: suitability, options strategies, margin, municipal rules, and trade processing. Pair 15–20 cards per day with the free Top-Off mock to catch weak suitability and products chapters early.",
   "ptcb-pharmacy-technician-anki-deck":
-    "Front-load brand/generic pairs, sig abbreviations, DEA schedules, and days-supply math — the PTCE categories that do not stick from a single textbook read. No standalone PTCB mock yet; use 10–15 cards per shift on your phone.",
+    "Front-load brand/generic pairs, sig abbreviations, DEA schedules, DSCSA, and days-supply math — aligned to the January 2026 PTCE blueprint. Pair with the printable study guide for domain chapters and an 80-question practice exam; drill 10–15 cards per shift on your phone.",
+  "ptcb-study-guide-2026":
+    "Four chapters sized to 2026 domain weights (Medications 35%, Federal 18.75%, Patient Safety 23.75%, Order Entry 22.5%). The 80-question exam mirrors PTCE length (28/15/19/18). Every question maps to the validated 300-card item bank shared with the PTCB Anki deck.",
   "servsafe-manager-anki-deck":
     "Temperature danger zones, HACCP steps, Big 6 pathogens, and manager responsibilities appear as short recall prompts. Run the free 90-question ServSafe mock first — it maps directly to the domains in the coverage table.",
   "california-real-estate-exam-anki-deck":
@@ -75,13 +79,23 @@ export const positioningOverrides: Partial<
   },
   "ptcb-pharmacy-technician-anki-deck": {
     ourEdge: [
-      "300 cards: top-200 brand/generic, sig codes, math, DEA, HIPAA",
-      "PTCE high-volume categories front-loaded for shift-length review",
-      "Scripted pharmacy items — not unverified community decks",
+      "300 cards: top-200 brand/generic, sig codes, math, DEA, DSCSA",
+      "January 2026 PTCE blueprint — compounding/alligation removed",
+      "Pairs with printable 2026 study guide (80-question practice exam)",
       "10–15 cards/day workflow fits working technicians",
     ],
     summaryProse:
       "PTCE rewards drug names, sig codes, and math speed — not 2,000 low-yield cards. Three hundred validated prompts beat a mega-pack when you have 15 minutes between fills.",
+  },
+  "ptcb-study-guide-2026": {
+    ourEdge: [
+      "30 pages aligned to January 2026 PTCE domain weights in the table",
+      "80-question practice exam with domain-scored answer key and rationales",
+      "3 print-ready cheat sheets: 60 drugs, 45 sig codes, math formulas",
+      "Same validated item bank as the 300-card PTCB Anki deck",
+    ],
+    summaryProse:
+      "Most PTCB guides still teach the old outline. This PDF matches the 2026 blueprint — Federal Requirements at 18.75% with DSCSA, no wasted chapters on removed compounding topics.",
   },
   "servsafe-manager-anki-deck": {
     ourEdge: [
@@ -156,15 +170,27 @@ Representatives mix suitability standards for elderly clients, options exercise 
 
   "ptcb-pharmacy-technician-anki-deck": `### What is inside
 
-Roughly 300 prompts organized for PTCE: top 200 brand/generic pairs, common sig codes (q.d., b.i.d., p.r.n.), days-supply calculations, DEA schedules, recall and error-prevention workflow, and federal law basics. Math cards use the short integer setups the exam favors.
+Roughly 300 prompts organized for the January 2026 PTCE: top 200 brand/generic pairs, common sig codes (q.d., b.i.d., p.r.n.), days-supply calculations, DEA schedules, DSCSA traceability basics, recall and error-prevention workflow, and federal law. Math cards use the short integer setups the exam favors — no alligation or compounding (removed from the 2026 outline).
 
-### Shift-friendly study plan
+### Shift-friendly study plan with the study guide
 
-**Weeks 8–6:** 15 cards per shift — brand/generic only. **Weeks 5–3:** Add sig codes and math cards. **Weeks 2–1:** Mixed review decks; time yourself on math cards. No free PTCB mock on UniPrep2Go yet — use SIE or ServSafe mocks only for timed-multiple-choice rhythm.
+**Weeks 4–3:** Read Medications and Federal Requirements chapters in the [PTCB Study Guide 2026](/decks/ptcb-study-guide-2026); 15 Anki cards per shift. **Week 2:** Take the guide's 80-question practice exam; drill missed domains in Anki only. **Final week:** Print cheat sheets from the guide; mixed Anki review — 10–15 cards per shift.
 
 ### Pitfalls this deck targets
 
-Technicians miss look-alike/sound-alike pairs, misread sig abbreviations, and forget schedule II storage rules. Cards repeat high-error pairs the NHA blueprint emphasizes.`,
+Technicians miss look-alike/sound-alike pairs, misread sig abbreviations, and forget schedule II storage rules. Cards repeat high-error pairs the 2026 blueprint emphasizes.`,
+
+  "ptcb-study-guide-2026": `### What is inside
+
+Four review chapters sized to January 2026 PTCE weights: Medications (35%), Federal Requirements (18.75% — including DSCSA), Patient Safety & QA (23.75%), and Order Entry & Processing (22.5%). The 80-question practice exam matches real PTCE scored length (28/15/19/18) with a domain-scored answer key. Three cheat sheets cover 60 high-yield drugs A–Z, 45 prescription sig codes, and pharmacy math formulas with worked examples.
+
+### 4-week study plan with the Anki deck
+
+**Week 1:** Medications chapter + 15 [PTCB Anki](/decks/ptcb-pharmacy-technician-anki-deck) cards/day. **Week 2:** Federal Requirements and Patient Safety chapters. **Week 3:** Order Entry chapter; take the 80-question practice exam under timed conditions. **Week 4:** Review every missed explanation; print cheat sheets; Anki review only on weak domains.
+
+### Pitfalls this deck targets
+
+Candidates still study removed compounding/alligation topics or under-weight Federal Requirements. This guide front-loads DSCSA and DEA schedule rules at the new 18.75% weight — every practice question maps to a verified card in the shared item bank.`,
 
   "servsafe-manager-anki-deck": `### What is inside
 
