@@ -50,6 +50,12 @@ function buildExamFaqs(deck: CatalogAvailableDeck): DeckFaq[] {
       answer:
         "Yes. Chapter sizes follow the 2026 domain weights — Federal Requirements at 18.75% with DSCSA, and compounding/alligation removed. The 80-question practice exam is distributed 28/15/19/18 by domain.",
     });
+  } else if (deck.slug === "cfa-level-1-formula-reference-2026") {
+    faqs.push({
+      question: "Does this pair with the CFA Level 1 Anki deck?",
+      answer:
+        "Yes. The PDF and 342+ card Anki deck share the same validated item bank. Use the reference for printable formula tables and the 80-question recall drill; use Anki for daily spaced-repetition on your phone.",
+    });
   } else {
     faqs.push({
       question: `How is this ${deck.shortName} deck organized?`,

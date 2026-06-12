@@ -120,6 +120,27 @@ describe("LLM documents", () => {
     expect(markdown).toContain("PTCB Pharmacy Technician Anki Deck");
   });
 
+  it("exposes the CFA Level 1 Formula Reference as a printable recall product", () => {
+    const deck = pricedDeck("cfa-level-1-formula-reference-2026", 14);
+    const facts = buildDeckFacts(deck);
+    const markdown = buildDeckMarkdown(deck);
+
+    expect(facts).toMatchObject({
+      slug: "cfa-level-1-formula-reference-2026",
+      category: "finance",
+      card_count: "46 pages + 80 recall questions",
+      checkout_url: "https://pixidstudio.gumroad.com/l/cfa-level-1-formula-reference-2026?wanted=true",
+      checkout_provider: "Gumroad",
+      format: "PDF",
+      cover_image: "https://uniprep2go.study/covers/cfa-level-1-formula-reference-2026.webp",
+    });
+    expect(facts.sample_cards).toHaveLength(3);
+    expect(markdown).toContain("CFA Level 1 Formula Reference");
+    expect(markdown).toContain("217 formulas");
+    expect(markdown).not.toMatch(/study guide/i);
+    expect(facts.serp_answer).toContain("46 pages + 80 recall questions");
+  });
+
   it("exposes the PTCB Study Guide 2026 as a printable practice product", () => {
     const deck = pricedDeck("ptcb-study-guide-2026", 19);
     const facts = buildDeckFacts(deck);

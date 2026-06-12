@@ -37,6 +37,30 @@ describe("deck catalog", () => {
     expect(primaryDeck.sampleCards[2]?.answer).toContain("Income reduces forward price");
   });
 
+  it("includes the CFA Level 1 Formula Reference as a printable recall product", () => {
+    const formulaRef = getDeckBySlug("cfa-level-1-formula-reference-2026");
+
+    expect(formulaRef?.status).toBe("available");
+    expect(formulaRef).toMatchObject({
+      category: "finance",
+      checkoutUrl: "https://pixidstudio.gumroad.com/l/cfa-level-1-formula-reference-2026?wanted=true",
+      checkoutProvider: "Gumroad",
+      checkoutSeller: "PixID Studio",
+      format: "PDF",
+      coverImage: "/covers/cfa-level-1-formula-reference-2026.webp",
+    });
+    expect(formulaRef?.facts.cards).toBe("46 pages + 80 recall questions");
+    expect(formulaRef?.sampleCards).toHaveLength(3);
+    expect(formulaRef?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/cfa-level-1-formula-reference-2026-sample-1.webp",
+      "/samples/cfa-level-1-formula-reference-2026-sample-2.webp",
+      "/samples/cfa-level-1-formula-reference-2026-sample-3.webp",
+    ]);
+    expect(formulaRef?.directAnswer).toContain("217 formulas");
+    expect(formulaRef?.directAnswer).not.toMatch(/study guide/i);
+    expect(formulaRef?.title).not.toMatch(/study guide/i);
+  });
+
   it("uses Lemon Squeezy as the primary checkout for language decks", () => {
     const cipleDeck = getDeckBySlug("ciple-a2-european-portuguese-anki-deck");
 
@@ -487,6 +511,8 @@ describe("deck catalog", () => {
   it("uses a consistent public title pattern for available decks", () => {
     const expectedTitles: Record<string, string> = {
       "cfa-level-1-anki-deck": "CFA Level 1 Anki Deck — 342+ Smart Flashcards",
+      "cfa-level-1-formula-reference-2026":
+        "CFA Level 1 Formula Reference 2026 — 217 Formulas + 80 Recall Questions (PDF)",
       "frm-part-1-anki-deck": "FRM Part 1 Anki Deck — 444 Exam Flashcards",
       "sie-exam-anki-deck": "SIE Exam Anki Deck — 300 High-Yield Flashcards",
       "series-7-anki-deck": "Series 7 Anki Deck — 300 High-Yield Flashcards",

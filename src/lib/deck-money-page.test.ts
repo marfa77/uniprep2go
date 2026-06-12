@@ -44,6 +44,7 @@ describe("deck money pages", () => {
   it("includes exam-specific unique content for priority decks", () => {
     for (const slug of [
       "cfa-level-1-anki-deck",
+      "cfa-level-1-formula-reference-2026",
       "ptcb-pharmacy-technician-anki-deck",
       "ptcb-study-guide-2026",
       "servsafe-manager-anki-deck",

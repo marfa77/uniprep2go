@@ -128,16 +128,32 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "CFA Level 1 Exam Prep — 342+ Flashcards + Free Mock",
     studyLabel: "CFA Level 1 exam prep",
     description:
-      "CFA Level 1 exam prep with 342+ Anki flashcards across all 10 topic weights plus a linked free 60-question practice test. Covers ethics, quant, economics, FRA, equity, fixed income, derivatives, and portfolio management. Independent study aid — not CFA Institute material.",
+      "CFA Level 1 exam prep with 342+ Anki flashcards across all 10 topic weights plus a linked free 60-question practice test. Pairs with the printable 2026 formula reference PDF. Independent study aid — not CFA Institute material.",
     keywords: [
       "cfa level 1 anki deck",
       "cfa level 1 flashcards",
       "cfa level 1 practice test",
       "cfa formula flashcards",
-      "best cfa level 1 study materials",
+      "cfa level 1 formula sheet",
     ],
     intro:
-      "US and global CFA Level 1 candidates use spaced-repetition flashcards to retain formulas and definitions across all 10 curriculum topics — then run the free readiness check to see which weights need more work.",
+      "US and global CFA Level 1 candidates use spaced-repetition flashcards to retain formulas and definitions across all 10 curriculum topics — pair with the formula reference PDF for printable tables and an 80-question recall drill.",
+  },
+  "cfa-level-1-formula-reference-2026": {
+    title: "CFA Level 1 Formula Reference 2026 | 217 Formulas + 80 Recall Drill (PDF)",
+    headline: "CFA Level 1 Formula Reference — 217 Formulas + Recall Drill",
+    studyLabel: "CFA Level 1 exam prep",
+    description:
+      "CFA Level 1 formula quick reference PDF: 217 typeset formulas across 10 topic areas, 80-question recall drill with explanations, print-ready layout. Pairs with 342+ Anki deck and free 60-question mock. Recall companion — not CFA Institute curriculum.",
+    keywords: [
+      "cfa level 1 formula sheet",
+      "cfa level 1 formula reference",
+      "cfa formula cheat sheet",
+      "cfa level 1 recall drill",
+      "cfa level 1 quick reference pdf",
+    ],
+    intro:
+      "Candidates who need sub-three-second formula retrieval print this reference for typeset formula tables and an 80-question recall drill — then run the free readiness check and drill weak topics in the companion Anki deck.",
   },
   "frm-part-1-anki-deck": {
     title: "FRM Part 1 Exam Prep 2026 | 444 Flashcards + Free Practice Test",
