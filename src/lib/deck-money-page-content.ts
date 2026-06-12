@@ -1,0 +1,287 @@
+import type { CatalogAvailableDeck } from "./decks";
+import type { DeckPositioning } from "./deck-positioning";
+import { getDeckLinkedMock } from "./deck-seo";
+
+export const pitchOverrides: Partial<Record<string, string>> = {
+  "cfa-level-1-anki-deck":
+    "342+ flashcards mapped to all 10 CFA Level 1 topic weights — sized for daily formula recall, not curriculum replacement.",
+  "frm-part-1-anki-deck":
+    "444 cards across FRM Part 1 foundations, quant, markets, and valuation — with a free 50-question readiness check.",
+  "sie-exam-anki-deck":
+    "300 cards aligned to FINRA SIE topic weights, paired with a free 75-question timed mock.",
+  "series-7-anki-deck":
+    "300 Top-Off cards for suitability, products, and order flow — plus a free 60-question Series 7 mock.",
+  "ptcb-pharmacy-technician-anki-deck":
+    "300 PTCE cards for top-200 drugs, sig codes, and pharmacy math — built for phone review between shifts.",
+};
+
+export const longDescriptionOverrides: Partial<Record<string, string>> = {
+  "cfa-level-1-anki-deck":
+    "Ethics, quant, FRA, and fixed-income cards include the formula families CFA Level 1 repeats every cycle: TVM and statistics, ratio analysis, forward pricing, duration, and derivatives payoff logic. Use the free 60-question readiness check to see which of the 10 topic weights need more reps before exam day.",
+  "frm-part-1-anki-deck":
+    "Cards track GARP Part 1 structure: risk governance, VaR and Expected Shortfall, credit and operational risk, fixed income and derivatives Greeks. The free FRM mock scores topic gaps so you drill valuation models and market mechanics — not random card volume.",
+  "sie-exam-anki-deck":
+    "FINRA weights drive the deck: capital markets, products and risks, trading, customer accounts, and prohibited activities. The linked SIE mock mirrors the 75-question / 105-minute format so you know which chapters deserve another week of Anki before scheduling the real exam.",
+  "series-7-anki-deck":
+    "Job-function outline coverage: suitability, options strategies, margin, municipal rules, and trade processing. Pair 15–20 cards per day with the free Top-Off mock to catch weak suitability and products chapters early.",
+  "ptcb-pharmacy-technician-anki-deck":
+    "Front-load brand/generic pairs, sig abbreviations, DEA schedules, and days-supply math — the PTCE categories that do not stick from a single textbook read. No standalone PTCB mock yet; use 10–15 cards per shift on your phone.",
+  "servsafe-manager-anki-deck":
+    "Temperature danger zones, HACCP steps, Big 6 pathogens, and manager responsibilities appear as short recall prompts. Run the free 90-question ServSafe mock first — it maps directly to the domains in the coverage table.",
+  "california-real-estate-exam-anki-deck":
+    "Agency fiduciary duties, disclosure timelines, financing math, and California-specific practice cards mirror DRE topic areas. The free 60-question CA mock highlights which contract and property-law sections need another pass.",
+  "life-and-health-insurance-exam-anki-deck":
+    "Policy provisions, riders, annuities, Medicare basics, and replacement rules — the Life & Health producer exam staples. Use the free insurance mock for timed practice, then filter Anki to missed topic areas.",
+  "property-casualty-insurance-exam-anki-deck":
+    "Homeowners, personal auto, CGL, workers comp, and commercial property structures — aligned to national P&C licensing outlines. Pair with the free P&C mock before state exam registration.",
+};
+
+export const positioningOverrides: Partial<
+  Record<string, Partial<Pick<DeckPositioning, "ourEdge" | "summaryProse">>>
+> = {
+  "cfa-level-1-anki-deck": {
+    ourEdge: [
+      "342+ cards across all 10 CFA Institute Level 1 topic weights in the table below",
+      "2026 cycle formulas and definitions — ethics through portfolio management",
+      "Free 60-question CFA Level 1 readiness check with topic scoring",
+      "Item bank validated before release — no anonymous community uploads",
+    ],
+    summaryProse:
+      "Fewer than 400 weighted flashcards beat a 3,000-card dump for CFA Level 1: ethics, FRA, and quant alone account for a third of the exam. This deck matches the 10 topic weights in the table — run the free mock to see where your daily 25-card session should focus.",
+  },
+  "frm-part-1-anki-deck": {
+    ourEdge: [
+      "444 cards across FRM Part 1 foundations, quant, markets, and valuation models",
+      "VaR, ES, Greeks, credit risk, and governance prompts from the coverage table",
+      "Free 50-question FRM Part 1 timed practice test",
+      "Current-cycle scope only — no legacy Part 1 material mixed in",
+    ],
+  },
+  "sie-exam-anki-deck": {
+    ourEdge: [
+      "300 cards aligned to FINRA SIE topic weights (see table)",
+      "Capital markets, products, trading, accounts, and regulatory framework",
+      "Free 75-question SIE practice test — same question count as the live exam",
+      "Validation pass on scripted items before publish",
+    ],
+  },
+  "series-7-anki-deck": {
+    ourEdge: [
+      "300 cards mapped to FINRA Series 7 Top-Off job functions",
+      "Suitability, options, bonds, margin, and settlement recall",
+      "Free 60-question Series 7 practice test with topic breakdown",
+      "Weighted to Top-Off outline — not a generic securities dump",
+    ],
+  },
+  "ptcb-pharmacy-technician-anki-deck": {
+    ourEdge: [
+      "300 cards: top-200 brand/generic, sig codes, math, DEA, HIPAA",
+      "PTCE high-volume categories front-loaded for shift-length review",
+      "Scripted pharmacy items — not unverified community decks",
+      "10–15 cards/day workflow fits working technicians",
+    ],
+    summaryProse:
+      "PTCE rewards drug names, sig codes, and math speed — not 2,000 low-yield cards. Three hundred validated prompts beat a mega-pack when you have 15 minutes between fills.",
+  },
+  "servsafe-manager-anki-deck": {
+    ourEdge: [
+      "300 cards: time/temperature, HACCP, hygiene, allergens, manager duties",
+      "Matches ServSafe Manager / CFPM domain structure",
+      "Free 90-question ServSafe practice test online",
+      "Pairs with printable PDF study guide in the catalog",
+    ],
+  },
+  "california-real-estate-exam-anki-deck": {
+    ourEdge: [
+      "400 cards across California DRE salesperson topic areas",
+      "Agency, disclosures, financing, and property law prompts",
+      "Free California real estate practice test with scoring",
+      "State-specific content — not a generic national deck relabeled",
+    ],
+  },
+  "life-and-health-insurance-exam-anki-deck": {
+    ourEdge: [
+      "400 Life & Health cards: policies, riders, annuities, Medicare",
+      "National producer-exam core topics in the coverage table",
+      "Free Life & Health insurance practice test",
+      "Sized for licensing prep — not unlimited insurance trivia",
+    ],
+  },
+  "property-casualty-insurance-exam-anki-deck": {
+    ourEdge: [
+      "400 P&C cards: homeowners, auto, CGL, workers comp, BOP",
+      "National licensing outline weights reflected in the table",
+      "Free Property & Casualty practice test",
+      "Commercial and personal lines separated by topic rows",
+    ],
+  },
+};
+
+const uniqueContentBySlug: Partial<Record<string, string>> = {
+  "cfa-level-1-anki-deck": `### What is inside
+
+The deck spans all 10 CFA Level 1 topic areas in the coverage table. Quantitative Methods cards drill TVM, probability, hypothesis testing, and regression output interpretation. Financial Statement Analysis covers ratio families (liquidity, activity, solvency, profitability), inventory methods, and cash-flow linkages. Fixed Income and Derivatives cards include duration, convexity, forward/futures pricing, and option payoff diagrams. Ethics cards use the Code and Standards framing the exam repeats every sitting.
+
+### 60-day study plan with the free mock
+
+**Days 60–45:** 20 new cards per day across ethics and quant while skimming curriculum readings. **Days 44–30:** Run the free 60-question readiness check; add 15 cards/day from your three lowest topic scores (often FRA, fixed income, or derivatives). **Days 29–7:** Review only — no new cards — and retake the mock weekly. **Final week:** Ethics-only passes plus flagged formulas from the remediation plan.
+
+### Pitfalls this deck targets
+
+Candidates lose points confusing forward vs futures margin flows, mis-stating inventory COGS under LIFO/FIFO, and mixing standard error with standard deviation. Cards call out those traps explicitly rather than listing definitions alone.`,
+
+  "sie-exam-anki-deck": `### What is inside
+
+Cards follow FINRA's SIE outline: how capital markets function, equity and debt products, options basics, customer account types, AML red flags, and prohibited activities. Product-and-risk cards emphasize what can be sold to whom — the suitability logic the 75-question exam tests repeatedly.
+
+### Four-week SIE plan with the free mock
+
+**Week 1:** Products and risks — 25 new cards/day. **Week 2:** Trading, markets, and customer accounts. **Week 3:** Take the free 75-question mock under 105-minute timing; drill missed chapters only. **Week 4:** Regulatory framework and prohibited-activities review — retake mock if any topic stays below 70%.
+
+### Pitfalls this deck targets
+
+New entrants confuse IPO vs secondary offerings, margin account rules, and when a recommendation requires a suitability review. Cards phrase prompts the way FINRA multiple-choice questions do — short stem, one clear distinction.`,
+
+  "series-7-anki-deck": `### What is inside
+
+Top-Off coverage: seeking business and opening accounts, investment products (equity, debt, options, funds), recommendations and suitability, order handling, confirmations, settlement, and regulatory records. Options cards include spreads, straddles, and margin requirements. Municipal securities and MSRB rules have dedicated prompts.
+
+### Study plan with the free mock
+
+Run the free 60-question Series 7 practice test after one pass through products and suitability cards. Use topic scores to decide whether options or municipal chapters need a second week. Aim for 20 cards/day while working full time — the deck is sized for that cadence, not 100-card marathon sessions.
+
+### Pitfalls this deck targets
+
+Representatives mix suitability standards for elderly clients, options exercise vs assignment, and when a principal must approve a trade. Cards isolate those rule boundaries.`,
+
+  "ptcb-pharmacy-technician-anki-deck": `### What is inside
+
+Roughly 300 prompts organized for PTCE: top 200 brand/generic pairs, common sig codes (q.d., b.i.d., p.r.n.), days-supply calculations, DEA schedules, recall and error-prevention workflow, and federal law basics. Math cards use the short integer setups the exam favors.
+
+### Shift-friendly study plan
+
+**Weeks 8–6:** 15 cards per shift — brand/generic only. **Weeks 5–3:** Add sig codes and math cards. **Weeks 2–1:** Mixed review decks; time yourself on math cards. No free PTCB mock on UniPrep2Go yet — use SIE or ServSafe mocks only for timed-multiple-choice rhythm.
+
+### Pitfalls this deck targets
+
+Technicians miss look-alike/sound-alike pairs, misread sig abbreviations, and forget schedule II storage rules. Cards repeat high-error pairs the NHA blueprint emphasizes.`,
+
+  "servsafe-manager-anki-deck": `### What is inside
+
+Food safety manager prompts: TCS temperature danger zone (41°F–135°F), cooking temperatures for poultry and ground meat, HACCP principles, hand-washing sequence, cross-contamination controls, Big 6 pathogens, and manager verification duties. Cards mirror ServSafe Manager domain language.
+
+### Plan with the free 90-question mock
+
+Read manager book chapters once, then 20 cards/day. Take the free ServSafe mock two weeks before your proctored exam — focus review on domains scoring under 75%. Final three days: temperature and HACCP cards only.
+
+### Pitfalls this deck targets
+
+Managers confuse cleaning vs sanitizing steps, cooling time limits, and when to exclude ill employees. Cards use the exact temperature thresholds ServSafe tests.`,
+
+  "frm-part-1-anki-deck": `### What is inside
+
+444 cards across Part 1: risk governance, CAPM and regression diagnostics, futures/forwards/swaps/options mechanics, VaR and Expected Shortfall methods, credit risk metrics, operational risk frameworks, and fixed-income valuation. Greeks and volatility surfaces appear in valuation-and-risk-models rows.
+
+### Plan with the free FRM mock
+
+**Phase 1 (6 weeks out):** 25 cards/day from quant and markets. **Phase 2:** Free 50-question mock — remap daily reviews to valuation models and credit if those topics score low. **Final month:** No new cards; ES and VaR calculation prompts daily.
+
+### Pitfalls this deck targets
+
+Candidates swap parametric vs historical VaR, mis-state delta-gamma approximations, and confuse settlement conventions on derivatives. Cards flag those calculation boundaries.`,
+
+  "california-real-estate-exam-anki-deck": `### What is inside
+
+400 prompts across DRE salesperson topics: property ownership, land use, agency law, fiduciary duties, contracts, financing, transfers, disclosures (transfer disclosure statement, agency disclosure), and practice-of-real-estate regulations. Math cards cover prorations, commission splits, and loan-to-value setups.
+
+### Plan with the free CA mock
+
+Complete pre-license coursework first, then 20 cards/day. Run the free California practice test at 30 days out; concentrate on agency and disclosure cards if those domains score lowest. California-specific disclosure timing is repeated more than national decks cover.
+
+### Pitfalls this deck targets
+
+Applicants confuse agency relationships (seller's agent vs dual agent), disclosure delivery deadlines, and trust fund handling. Cards use California statutory framing.`,
+
+  "life-and-health-insurance-exam-anki-deck": `### What is inside
+
+Life & Health licensing cards: policy types (term, whole, universal), riders, annuities, group vs individual health, Medicare Parts A–D basics, HIPAA privacy, replacement regulations, and producer licensing duties. Cards track national outline language state exams adapt.
+
+### Plan with the free mock
+
+20 cards/day for four weeks, then the free Life & Health practice test. Review annuity and Medicare sections twice — they carry disproportionate question share. Pair with P&C deck only if pursuing both lines.
+
+### Pitfalls this deck targets
+
+Producers confuse replacement notice periods, Medicare eligibility ages, and tax treatment of qualified vs non-qualified plans. Cards state the rule boundary, not generic definitions.`,
+
+  "property-casualty-insurance-exam-anki-deck": `### What is inside
+
+P&C cards: homeowners policy sections, personal auto liability/medical/UM, commercial property causes of loss, CGL occurrence vs claims-made, workers compensation monopolistic states, and BOP packaging. Exclusion cards (pollution, professional liability) are explicit.
+
+### Plan with the free mock
+
+Alternate personal-lines and commercial-lines weeks — 20 cards/day. Take the free P&C mock at 21 days out; workers comp and CGL often score lowest for first-time sitters. Drill those table rows.
+
+### Pitfalls this deck targets
+
+Candidates mix HO-3 vs HO-6 coverage, mis-apply collision vs comprehensive auto triggers, and forget workers comp exclusive remedy. Cards target those distinctions.`,
+};
+
+function buildGenericUniqueContent(deck: CatalogAvailableDeck): string | undefined {
+  if (deck.category === "language" && deck.topicCoverage.length === 0) {
+    const formatNote =
+      deck.format === ".csv"
+        ? "CSV import for custom Anki fields"
+        : deck.format === "PDF"
+          ? "printable PDF pages for offline drills"
+          : "Anki .apkg with example sentences and audio where included";
+    return `### Vocabulary scope for ${deck.shortName}
+
+${deck.facts.cards} ${deck.shortName} prompts target ${deck.facts.topics.toLowerCase()} for ${deck.facts.examYear}. ${formatNote} — preview the ${deck.slug} samples above before importing.
+
+### Daily workflow for ${deck.slug}
+
+Add 15–20 new ${deck.shortName} cards per day, suspend leeches after two misses, and keep speaking/listening practice separate from Anki reps.
+
+<!-- TODO(owner): verify item-bank specifics for ${deck.slug} -->`;
+  }
+
+  if (deck.format === "App" && deck.category === "immigration") {
+    return `### What the ${deck.shortName} app covers
+
+${deck.facts.topics} for ${deck.facts.examYear} prep in the Prep2Go Immigration app (${deck.slug}). Screenshots and subscription terms are on the App Store product page.
+
+### Suggested cadence for ${deck.shortName}
+
+One ${deck.shortName} chapter per week, then citizenship or integration quiz loops before you file paperwork. Content tracks official themes but is not government-endorsed.
+
+<!-- TODO(owner): verify item-bank specifics for ${deck.slug} -->`;
+  }
+
+  if (deck.topicCoverage.length === 0) {
+    return undefined;
+  }
+
+  const topicList = deck.topicCoverage
+    .slice(0, 4)
+    .map((t) => `${t.name} (${t.cards})`)
+    .join("; ");
+  const mock = getDeckLinkedMock(deck.slug);
+  const mockLine = mock
+    ? ` Week four: free ${deck.shortName} mock (${mock.questionCount} questions) — review only missed table rows.`
+    : ` Week four: review-only passes through your lowest-count table rows.`;
+
+  return `### Coverage focus for ${deck.shortName}
+
+${deck.facts.cards} items align to ${deck.facts.topics.toLowerCase()}: ${topicList}.
+
+### Suggested review cadence
+
+Weeks 1–3: 20 new ${deck.shortName} cards per day.${mockLine}
+
+<!-- TODO(owner): verify item-bank specifics for ${deck.slug} -->`;
+}
+
+export function getDeckUniqueContent(deck: CatalogAvailableDeck): string | undefined {
+  return uniqueContentBySlug[deck.slug] ?? buildGenericUniqueContent(deck);
+}

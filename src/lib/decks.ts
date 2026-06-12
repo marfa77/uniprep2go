@@ -49,13 +49,32 @@ export type ComparisonRow = {
   curriculum: string;
 };
 
+export type DeckPositioningAlternative = {
+  type: string;
+  cards: string;
+  tradeoffs: string[];
+};
+
+export type DeckPositioningData = {
+  alternatives: [DeckPositioningAlternative, DeckPositioningAlternative];
+  ourEdge: string[];
+  summaryProse?: string;
+};
+
 type BaseDeck = {
   slug: string;
   category: DeckCategory;
   title: string;
   shortName: string;
   subtitle: string;
+  /** One-sentence hero pitch; falls back to subtitle when omitted. */
+  shortPitch?: string;
   directAnswer: string;
+  /** Two–three sentence overview; falls back to SEO intro when omitted. */
+  longDescription?: string;
+  /** Exam-specific prose section (markdown); may live in deck-money-page-content.ts */
+  uniqueContent?: string;
+  positioning?: DeckPositioningData;
   lastUpdated: string;
   audience: string;
   format: ".apkg" | ".csv" | "PDF" | "App";

@@ -5,8 +5,12 @@ import { notFound } from "next/navigation";
 import { FunnelTracker, TrackedCheckoutLink } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { DeckPositioningSection } from "@/components/decks/deck-positioning-section";
 import { DeckRelatedDecks } from "@/components/decks/deck-related-decks";
 import { DeckSeoSections } from "@/components/decks/deck-seo-sections";
+import { DeckUniqueContentSection } from "@/components/decks/deck-unique-content-section";
+import { buildMergedDeckFaqs } from "@/lib/deck-faq";
+import { getDeckShortPitch } from "@/lib/deck-page-copy";
 import { catalogAvailableDecks, categoryLabels } from "@/lib/decks";
 import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import {
@@ -105,8 +109,12 @@ export default async function DeckPage({
     { selector: "#facts", name: "product_facts_view" as const },
     { selector: "#topic-matrix", name: "topic_matrix_view" as const },
     { selector: "#sample-cards", name: "sample_cards_view" as const },
+    { selector: "#how-this-compares", name: "positioning_view" as const },
     { selector: "#faq", name: "faq_view" as const },
   ];
+
+  const mergedFaqs = buildMergedDeckFaqs(deck);
+  const shortPitch = getDeckShortPitch(deck);
 
   const jsonLd = buildDeckPageJsonLd(deck);
   const heroImage = getDeckCoverUrl(deck);
@@ -149,10 +157,8 @@ export default async function DeckPage({
         </h1>
 
         <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(220px,0.42fr)] lg:items-start">
-          <div className="max-w-3xl space-y-4">
-            <p className="text-xl leading-8 text-[#18140f]">{deck.subtitle}</p>
-            <p className="text-base leading-7 text-[#5f5749]">{deck.audience}</p>
-            <p className="text-sm leading-7 text-[#6d6252]">{deck.directAnswer}</p>
+          <div className="max-w-3xl">
+            <p className="text-xl leading-8 text-[#18140f]">{shortPitch}</p>
           </div>
           {heroImage ? (
             <div className="overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#fffaf0] shadow-[0_18px_50px_-34px_rgba(24,20,15,0.45)]">
@@ -368,10 +374,13 @@ export default async function DeckPage({
           </section>
         ) : null}
 
+        <DeckPositioningSection deck={deck} />
+        <DeckUniqueContentSection deck={deck} />
+
         <section id="faq" className="mt-12">
           <h2 className="text-2xl font-semibold tracking-tight">FAQ</h2>
           <div className="mt-4 divide-y divide-[#18140f]/10 rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
-            {deck.faqs.map((faq) => (
+            {mergedFaqs.map((faq) => (
               <article className="p-5" key={faq.question}>
                 <h3 className="font-semibold">{faq.question}</h3>
                 <p className="mt-2 leading-7 text-[#5f5749]">{faq.answer}</p>

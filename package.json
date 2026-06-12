@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run check:boilerplate && next build",
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
+    "check:boilerplate": "node scripts/check-boilerplate.mjs",
     "build:mock-banks": "python3 scripts/build-mock-banks.py",
     "indexnow:deploy": "tsx src/lib/run-indexnow-deploy.ts",
     "indexnow:submit": "node scripts/indexnow.js --sitemap"

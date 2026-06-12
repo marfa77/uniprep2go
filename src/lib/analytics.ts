@@ -3,6 +3,7 @@ export const funnelEventNames = [
   "product_facts_view",
   "topic_matrix_view",
   "sample_cards_view",
+  "positioning_view",
   "catalog_view",
   "faq_view",
   "checkout_intent",
