@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FooterCredit } from "@/components/footer-credit";
 import { legalLinks, siteConfig } from "@/lib/site";
 
 export function SiteFooter() {
@@ -48,6 +49,7 @@ export function SiteFooter() {
           Last updated {siteConfig.legalLastUpdated}. &copy; {new Date().getFullYear()}{" "}
           {siteConfig.name}
         </p>
+        <FooterCredit className="footer-credit mt-3 text-xs text-[#6d6252]" />
       </div>
     </footer>
   );
