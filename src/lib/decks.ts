@@ -1261,21 +1261,21 @@ const rawDecks: Deck[] = [
     topicCoverage: cfaLevelTwoTopics,
     sampleCards: [
       {
-        question: "What is liability-driven investing?",
+        question: "What is free cash flow to the firm (FCFF)?",
         answer:
-          "Investment strategy where the asset portfolio is constructed to match (or exceed) the value and duration of specific liabilities — pension funds are key users.",
+          "Cash available to all capital providers after operating expenses, taxes, reinvestment, and working capital needs. FCFF = NI + NCC + Int(1 − t) − FCInv − WCInv. Common mistake: forgetting to tax-adjust interest when starting from NI.",
         imageUrl: "/samples/cfa-level-2-anki-deck-sample-1.webp",
       },
       {
-        question: "What is the no-arbitrage forward price for an asset with no income?",
+        question: "What is free cash flow to equity (FCFE)?",
         answer:
-          "Future value of the current spot price at the risk-free rate for the forward period. F₀ = S₀ × (1+r)^T.",
+          "Cash available to equity holders after all expenses, reinvestment, debt flows, and preferred dividends. FCFE = NI + NCC − FCInv − WCInv + Net Borrowing. Common mistake: using FCFF discounted at cost of equity.",
         imageUrl: "/samples/cfa-level-2-anki-deck-sample-2.webp",
       },
       {
-        question: "What is the simple linear regression model?",
+        question: "How do you compute FCFF from CFO?",
         answer:
-          "Y = b₀ + b₁X + ε — models the linear relationship between dependent variable Y and independent variable X with intercept, slope, and error term.",
+          "Start with CFO, add back after-tax interest, subtract net investment in fixed and working capital. FCFF = CFO + Int(1 − t) − FCInv − WCInv. Common mistake: subtracting interest from CFO without tax adjustment.",
         imageUrl: "/samples/cfa-level-2-anki-deck-sample-3.webp",
       },
     ],

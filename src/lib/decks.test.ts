@@ -174,6 +174,27 @@ describe("deck catalog", () => {
     }
   });
 
+  it("includes the CFA Level 2 Anki deck with three Gumroad preview cards", () => {
+    const l2Deck = getDeckBySlug("cfa-level-2-anki-deck");
+
+    expect(l2Deck?.status).toBe("available");
+    expect(l2Deck?.facts.cards).toBe("495");
+    expect(l2Deck?.sampleCards).toHaveLength(3);
+    expect(l2Deck?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/cfa-level-2-anki-deck-sample-1.webp",
+      "/samples/cfa-level-2-anki-deck-sample-2.webp",
+      "/samples/cfa-level-2-anki-deck-sample-3.webp",
+    ]);
+    expect(l2Deck?.sampleCards.map((card) => card.question)).toEqual([
+      "What is free cash flow to the firm (FCFF)?",
+      "What is free cash flow to equity (FCFE)?",
+      "How do you compute FCFF from CFO?",
+    ]);
+    expect(l2Deck?.sampleCards[0]?.answer).toContain("FCFF = NI + NCC");
+    expect(l2Deck?.sampleCards[1]?.answer).toContain("Net Borrowing");
+    expect(l2Deck?.sampleCards[2]?.answer).toContain("FCFF = CFO");
+  });
+
   it("includes the FRM Part 1 deck with three Gumroad preview cards", () => {
     const frmDeck = getDeckBySlug("frm-part-1-anki-deck");
 
