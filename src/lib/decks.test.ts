@@ -513,6 +513,9 @@ describe("deck catalog", () => {
       "cfa-level-1-anki-deck": "CFA Level 1 Anki Deck — 342+ Smart Flashcards",
       "cfa-level-1-formula-reference-2026":
         "CFA Level 1 Formula Reference 2026 — 250 Formulas + 98 Definitions + 80-Question Drill (PDF)",
+      "cfa-level-2-anki-deck": "CFA Level 2 Anki Deck — 495 Flashcards",
+      "cfa-level-2-formula-reference-2026":
+        "CFA Level 2 Formula Reference 2026 — 219 Formulas + 276 Definitions + 80-Question Drill (PDF)",
       "frm-part-1-anki-deck": "FRM Part 1 Anki Deck — 444 Exam Flashcards",
       "sie-exam-anki-deck": "SIE Exam Anki Deck — 300 High-Yield Flashcards",
       "series-7-anki-deck": "Series 7 Anki Deck — 300 High-Yield Flashcards",

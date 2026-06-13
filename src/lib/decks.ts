@@ -129,6 +129,19 @@ export const cfaLevelOneTopics: TopicCoverage[] = [
   { name: "Portfolio Management", examWeight: "8-12%", cards: "25+" },
 ];
 
+export const cfaLevelTwoTopics: TopicCoverage[] = [
+  { name: "Financial Statement Analysis", examWeight: "10-15%", cards: "66" },
+  { name: "Equity Valuation", examWeight: "10-15%", cards: "66" },
+  { name: "Quantitative Methods", examWeight: "5-10%", cards: "63" },
+  { name: "Fixed Income", examWeight: "10-15%", cards: "62" },
+  { name: "Portfolio Management", examWeight: "10-15%", cards: "62" },
+  { name: "Ethical and Professional Standards", examWeight: "10-15%", cards: "40" },
+  { name: "Corporate Issuers", examWeight: "5-10%", cards: "40" },
+  { name: "Derivatives", examWeight: "5-10%", cards: "38" },
+  { name: "Alternative Investments", examWeight: "5-10%", cards: "36" },
+  { name: "Economics", examWeight: "5-10%", cards: "22" },
+];
+
 type Prep2GoLanguageDeckInput = {
   slug: string;
   title: string;
@@ -1225,25 +1238,177 @@ const rawDecks: Deck[] = [
   {
     slug: "cfa-level-2-anki-deck",
     category: "finance",
-    status: "planned",
-    title: "CFA Level 2 Anki Deck",
+    status: "available",
+    title: "CFA Level 2 Anki Deck — 495 Flashcards",
     shortName: "CFA Level 2",
-    subtitle: "A future deck for item-set based CFA Level 2 preparation.",
+    subtitle: "A vignette-depth Anki deck for CFA Level 2 candidates using spaced repetition.",
     directAnswer:
-      "The CFA Level 2 Anki Deck is a planned UniPrep2Go product for item-set based CFA Level 2 preparation. It is not yet available for purchase.",
-    lastUpdated: "2026-05-31",
-    audience: "Future CFA Level 2 candidates using Anki for concept retention.",
+      "UniPrep2Go sells an independent CFA Level 2 Anki deck with 495 flashcards covering all 10 CFA Level 2 topic areas, including FSA, equity and fixed income valuation, portfolio management, derivatives, and ethics application. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck is a supplementary spaced-repetition study aid for the 2026 exam cycle and is not official CFA Institute material or a replacement for the curriculum.",
+    lastUpdated: "2026-06-13",
+    audience: "CFA Level 2 candidates who want structured recall practice for vignette-depth formulas, concepts, and application-level definitions.",
     format: ".apkg",
+    coverImage: "/covers/cfa-level-2-anki-deck.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/cfa-level-2-anki?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
     facts: {
-      cards: "Planned",
-      topics: "CFA Level 2 topic areas",
-      formulas: "Planned",
-      examYear: "Future release",
-      delivery: "Digital download",
+      cards: "495",
+      topics: "10 CFA Level 2 topic areas",
+      formulas: "MathJax formulas, examples, and common exam mistakes",
+      examYear: "2026 preparation cycle",
+      delivery: "Digital download through Gumroad",
     },
-    topicCoverage: [],
-    sampleCards: [],
-    faqs: [],
+    topicCoverage: cfaLevelTwoTopics,
+    sampleCards: [
+      {
+        question: "What is liability-driven investing?",
+        answer:
+          "Investment strategy where the asset portfolio is constructed to match (or exceed) the value and duration of specific liabilities — pension funds are key users.",
+        imageUrl: "/samples/cfa-level-2-anki-deck-sample-1.webp",
+      },
+      {
+        question: "What is the no-arbitrage forward price for an asset with no income?",
+        answer:
+          "Future value of the current spot price at the risk-free rate for the forward period. F₀ = S₀ × (1+r)^T.",
+        imageUrl: "/samples/cfa-level-2-anki-deck-sample-2.webp",
+      },
+      {
+        question: "What is the simple linear regression model?",
+        answer:
+          "Y = b₀ + b₁X + ε — models the linear relationship between dependent variable Y and independent variable X with intercept, slope, and error term.",
+        imageUrl: "/samples/cfa-level-2-anki-deck-sample-3.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is included in the CFA Level 2 Anki deck?",
+        answer: "The product includes 495 Anki flashcards covering CFA Level 2 concepts, formulas, vignette logic, and application-level definitions across all 10 topic areas.",
+      },
+      {
+        question: "How is this different from the Level 1 deck?",
+        answer: "Level 2 is vignette-depth: FSA intercorporate issues, pension accounting, arbitrage-free fixed income, FCF and residual income valuation, active PM, and ethics application. It is not a copy of the L1 deck.",
+      },
+      {
+        question: "Is this official CFA Institute material?",
+        answer: "No. This is an independent study aid and is not endorsed, promoted, or warranted by CFA Institute.",
+      },
+      {
+        question: "How do I import the deck into Anki?",
+        answer: "Download the .apkg file from your Gumroad receipt, open the desktop Anki app, choose File then Import, select the .apkg file, and the deck appears in your deck list ready for study.",
+      },
+      {
+        question: "Does the deck pair with a formula reference?",
+        answer:
+          "Yes. The 60-page CFA Level 2 Formula Reference PDF shares the same validated item bank — use it for printable tables and the 80-question recall drill; use this deck for daily spaced repetition.",
+      },
+      {
+        question: "Does the deck work on AnkiDroid and AnkiMobile?",
+        answer: "Yes. Import the .apkg file on Anki desktop and sync through AnkiWeb, or import the file directly in AnkiDroid (Android) and AnkiMobile (iOS).",
+      },
+    ],
+    importSteps: [
+      {
+        title: "Download the .apkg file",
+        detail: "After checkout, open your Gumroad receipt email or library and download the CFA Level 2 deck .apkg file to your computer.",
+      },
+      {
+        title: "Import into Anki",
+        detail: "Open Anki on desktop, choose File → Import, select the downloaded .apkg, and confirm the import.",
+      },
+      {
+        title: "Sync to mobile",
+        detail: "Use AnkiWeb to sync the deck to AnkiMobile (iOS) or AnkiDroid (Android) for daily review.",
+      },
+    ],
+  },
+  {
+    slug: "cfa-level-2-formula-reference-2026",
+    category: "finance",
+    status: "available",
+    title:
+      "CFA Level 2 Formula Reference 2026 — 219 Formulas + 276 Definitions + 80-Question Drill (PDF)",
+    shortName: "CFA Level 2 Formula Reference",
+    subtitle:
+      "60-page printable formula quick reference for the 2026 cycle — 219 typeset formulas, 276 examiner-style definitions, and an 80-question recall drill.",
+    directAnswer:
+      "UniPrep2Go sells an independent CFA Level 2 Formula & Definitions Quick Reference PDF with 60 printable pages: 495 entries (219 typeset formulas and 276 examiner-style definitions) organized across all 10 Level 2 topic areas (concept, typeset formula, one-line meaning), an 80-question Formula Recall Drill with explained answer key, and a clickable table of contents. Built from the same validated item bank as the CFA Level 2 Anki deck. Delivered as a grayscale-friendly US Letter PDF for {PRICE} through Gumroad. Recall companion — not CFA Institute curriculum or a study course.",
+    lastUpdated: "2026-06-13",
+    audience:
+      "CFA Level 2 candidates who need fast formula retrieval under item-set exam timing — print the reference, run the recall drill, and pair with spaced-repetition review on the companion Anki deck.",
+    format: "PDF",
+    coverImage: "/covers/cfa-level-2-formula-reference-2026.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/cfa-level-2-formula-reference-2026?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "60 pages + 80 recall questions",
+      topics:
+        "219 CFA Level 2 formulas and 276 definitions across Quant, Economics, Financial Reporting, Corporate Issuers, Equity Valuation, Fixed Income, Derivatives, Alternatives, Portfolio Management, and Ethics",
+      formulas:
+        "Typeset formula tables by topic, one-line plain-English meanings, and 80-question formula-recall drill with explanations",
+      examYear: "2026 CFA Level 2 preparation cycle",
+      delivery: "Printable PDF digital download through Gumroad",
+    },
+    topicCoverage: [
+      { name: "Quantitative Methods", examWeight: "67 entries", cards: "Regression, ML, time-series — typeset with one-line meanings" },
+      { name: "Economics", examWeight: "22 entries", cards: "Currency equilibrium and growth models" },
+      { name: "Financial Reporting", examWeight: "66 entries", cards: "Pensions, FX translation, intercorporate accounting" },
+      { name: "Corporate Issuers", examWeight: "40 entries", cards: "M&A, capital structure, ESG, bank analysis" },
+      { name: "Equity Valuation", examWeight: "66 entries", cards: "Residual income, FCFF/FCFE, multiples, private company" },
+      { name: "Fixed Income", examWeight: "62 entries", cards: "Arbitrage-free pricing, credit models, term structure" },
+      { name: "Derivatives", examWeight: "38 entries", cards: "BSM, binomial trees, swaps" },
+      { name: "Alternative Investments", examWeight: "36 entries", cards: "Commodities, REITs, hedge funds" },
+      { name: "Portfolio Management", examWeight: "62 entries", cards: "Multifactor models, APT, active PM" },
+      { name: "Ethics & Standards", examWeight: "40 entries", cards: "Application-level ethics recall" },
+      { name: "Formula Recall Drill", examWeight: "80 questions", cards: "See the formula, name the concept — explained answer key" },
+    ],
+    sampleCards: [
+      {
+        question: "Cover — Level 2 formula reference at a glance",
+        answer:
+          "60 print-ready pages with 219 typeset formulas and 276 definitions organized across all 10 Level 2 topic areas.",
+        imageUrl: "/samples/cfa-level-2-formula-reference-2026-sample-1.webp",
+      },
+      {
+        question: "Fixed Income formula table — typeset math at a glance",
+        answer:
+          "Each row shows concept, typeset formula, and a one-line plain-English meaning — the fastest pre-exam scan for arbitrage-free and credit-model families Level 2 repeats.",
+        imageUrl: "/samples/cfa-level-2-formula-reference-2026-sample-2.webp",
+      },
+      {
+        question: "Formula Recall Drill — see the formula, name the concept",
+        answer:
+          "80 questions with same-topic distractors test whether you can retrieve the concept behind a displayed formula under item-set exam timing.",
+        imageUrl: "/samples/cfa-level-2-formula-reference-2026-sample-3.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "What does the CFA Level 2 Formula Reference include?",
+        answer:
+          "A 60-page printable PDF with 219 formulas and 276 definitions across 10 Level 2 topic areas, an 80-question Formula Recall Drill with explained answer key, and a clickable table of contents.",
+      },
+      {
+        question: "Is this a CFA study course or curriculum replacement?",
+        answer:
+          "No. This is a recall companion — it helps you retrieve formulas you already studied. It includes foundational quantitative and ethics review carried over from Level 1 so it works standalone, but it will not teach you the L2 curriculum.",
+      },
+      {
+        question: "Does this pair with the CFA Level 2 Anki deck?",
+        answer:
+          "Yes. The PDF and 495-card Anki deck share the same validated item bank. Use the reference for printable formula tables and the recall drill; use Anki for daily spaced-repetition on your phone.",
+      },
+      {
+        question: "Is this official CFA Institute material?",
+        answer:
+          "No. This is an independent educational product. CFA Institute does not endorse, promote, or warrant the accuracy or quality of this product.",
+      },
+      {
+        question: "How should I use it before exam day?",
+        answer:
+          "Print or bookmark weak topic tables, run the 80-question recall drill under timed conditions, review every explanation, then drill matching cards in the companion Anki deck on missed topics.",
+      },
+    ],
   },
   // ── Language certifications ──────────────────────────────────────────
   {

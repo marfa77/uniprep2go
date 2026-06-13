@@ -139,6 +139,38 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     intro:
       "US and global CFA Level 1 candidates use spaced-repetition flashcards to retain formulas and definitions across all 10 curriculum topics — pair with the formula reference PDF for printable tables and an 80-question recall drill.",
   },
+  "cfa-level-2-anki-deck": {
+    title: "CFA Level 2 Exam Prep 2026 | 495 Flashcards for Item-Set Review",
+    headline: "CFA Level 2 Exam Prep — 495 Flashcards",
+    studyLabel: "CFA Level 2 exam prep",
+    description:
+      "CFA Level 2 exam prep with 495 Anki flashcards across all 10 topic areas — vignette-depth FSA, equity and fixed income valuation, portfolio management, derivatives, and ethics application. Independent study aid — not CFA Institute material.",
+    keywords: [
+      "cfa level 2 anki deck",
+      "cfa level 2 flashcards",
+      "cfa level 2 study guide",
+      "cfa level 2 item set prep",
+      "cfa level 2 formulas",
+    ],
+    intro:
+      "CFA Level 2 candidates use spaced-repetition flashcards to retain vignette-depth formulas and application logic across all ten equally weighted curriculum topics between practice item sets.",
+  },
+  "cfa-level-2-formula-reference-2026": {
+    title: "CFA Level 2 Formula Reference 2026 | 219 Formulas + 80 Recall Drill",
+    headline: "CFA Level 2 Formula Reference — 219 Formulas + 80 Recall Drill",
+    studyLabel: "CFA Level 2 exam prep",
+    description:
+      "CFA Level 2 formula quick reference PDF: 219 typeset formulas and 276 examiner-style definitions across 10 topic areas, 80-question recall drill with explanations, 60 print-ready pages. Pairs with 495-card Anki deck. Recall companion — not CFA Institute curriculum.",
+    keywords: [
+      "cfa level 2 formula sheet",
+      "cfa level 2 formula reference",
+      "cfa level 2 recall drill",
+      "cfa level 2 quick reference pdf",
+      "cfa level 2 formulas",
+    ],
+    intro:
+      "Candidates who need sub-three-second formula retrieval under item-set timing print this reference for typeset formula tables and an 80-question recall drill — then drill weak topics in the companion Anki deck.",
+  },
   "cfa-level-1-formula-reference-2026": {
     title: "CFA Level 1 Formula Reference 2026 | 250 Formulas + 98 Definitions + 80-Question Drill",
     headline: "CFA Level 1 Formula Reference — 250 Formulas + 98 Definitions",
