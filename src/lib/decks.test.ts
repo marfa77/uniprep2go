@@ -1,7 +1,21 @@
 import { describe, expect, it } from "vitest";
-import { availableDecks, getCatalogDeckBySlug, getDeckBySlug, getRelatedDecks, primaryDeck, siteFaqs } from "./decks";
+import { availableDecks, getAvailableDecksByCategory, getCatalogDeckBySlug, getDeckBySlug, getRelatedDecks, primaryDeck, siteFaqs } from "./decks";
 
 describe("deck catalog", () => {
+  it("keeps featured decks in the finance catalog and places CFA Level 2 next to Level 1", () => {
+    const finance = getAvailableDecksByCategory().find((group) => group.category === "finance");
+    const slugs = finance?.decks.map((deck) => deck.slug) ?? [];
+
+    expect(slugs).toContain("cfa-level-1-anki-deck");
+    expect(slugs).toContain("sie-exam-anki-deck");
+    expect(slugs.indexOf("cfa-level-2-anki-deck")).toBe(
+      slugs.indexOf("cfa-level-1-anki-deck") + 1,
+    );
+    expect(slugs.indexOf("cfa-level-2-formula-reference-2026")).toBe(
+      slugs.indexOf("cfa-level-1-formula-reference-2026") + 1,
+    );
+  });
+
   it("exposes the CFA Level 1 Anki deck as reusable product data", () => {
     expect(primaryDeck.slug).toBe("cfa-level-1-anki-deck");
     expect(primaryDeck.checkoutUrl).toBe("https://pixidstudio.gumroad.com/l/ivjmuu?wanted=true");

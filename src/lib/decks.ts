@@ -2439,6 +2439,37 @@ export const categoryOrder: DeckCategory[] = [
   "language",
 ];
 
+export function getCatalogDeckOrder(): string[] {
+  const relocateAfter = new Map([
+    ["cfa-level-2-anki-deck", "cfa-level-1-anki-deck"],
+    ["cfa-level-2-formula-reference-2026", "cfa-level-1-formula-reference-2026"],
+  ]);
+  const relocated = new Set(relocateAfter.keys());
+  const base = catalogAvailableDecks
+    .map((deck) => deck.slug)
+    .filter((slug) => !relocated.has(slug));
+  const order: string[] = [];
+
+  for (const slug of base) {
+    order.push(slug);
+    for (const [movedSlug, anchorSlug] of relocateAfter) {
+      if (anchorSlug === slug) {
+        order.push(movedSlug);
+      }
+    }
+  }
+
+  return order;
+}
+
+export function sortDecksByCatalogOrder<T extends { slug: string }>(decks: T[]): T[] {
+  const order = new Map(getCatalogDeckOrder().map((slug, index) => [slug, index]));
+
+  return [...decks].sort(
+    (left, right) => (order.get(left.slug) ?? 999) - (order.get(right.slug) ?? 999),
+  );
+}
+
 export function getAvailableDecksByCategory(): Array<{
   category: DeckCategory;
   label: string;
@@ -2448,7 +2479,9 @@ export function getAvailableDecksByCategory(): Array<{
     .map((category) => ({
       category,
       label: categoryLabels[category],
-      decks: catalogAvailableDecks.filter((d) => d.category === category),
+      decks: sortDecksByCatalogOrder(
+        catalogAvailableDecks.filter((deck) => deck.category === category),
+      ),
     }))
     .filter((group) => group.decks.length > 0);
 }

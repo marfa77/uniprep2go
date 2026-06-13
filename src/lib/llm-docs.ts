@@ -3,6 +3,7 @@ import {
   categoryOrder,
   formatDeckContentLabel,
   siteFaqs,
+  sortDecksByCatalogOrder,
   type CatalogAvailableDeck,
 } from "./decks";
 import type { PricedDeck } from "./checkout-pricing";
@@ -71,7 +72,7 @@ function groupDecksByCategory(decks: PricedDeck[]) {
     .map((category) => ({
       category,
       label: categoryLabels[category],
-      decks: decks.filter((deck) => deck.category === category),
+      decks: sortDecksByCatalogOrder(decks.filter((deck) => deck.category === category)),
     }))
     .filter((group) => group.decks.length > 0);
 }

@@ -4,6 +4,7 @@ import {
   categoryOrder,
   featuredDeckSlugs,
   getCatalogDeckBySlug,
+  sortDecksByCatalogOrder,
   type AvailableDeck,
   type CatalogAvailableDeck,
   type CheckoutProvider,
@@ -324,7 +325,7 @@ export async function getPricedDecksByCategory() {
     .map((category) => ({
       category,
       label: categoryLabels[category],
-      decks: decks.filter((deck) => deck.category === category),
+      decks: sortDecksByCatalogOrder(decks.filter((deck) => deck.category === category)),
     }))
     .filter((group) => group.decks.length > 0);
 }

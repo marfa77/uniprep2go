@@ -58,13 +58,7 @@ export const revalidate = 3600;
 export default async function HomePage() {
   const availableDecks = await getPricedDecks();
   const featuredDecks = await getFeaturedPricedDecks();
-  const featuredSlugs = new Set(featuredDecks.map((deck) => deck.slug));
-  const catalogGroups = (await getPricedDecksByCategory())
-    .map((group) => ({
-      ...group,
-      decks: group.decks.filter((deck) => !featuredSlugs.has(deck.slug)),
-    }))
-    .filter((group) => group.decks.length > 0);
+  const catalogGroups = await getPricedDecksByCategory();
   const prices = availableDecks.map((d) => d.price.amount).filter((amount) => amount > 0);
   const minPrice = prices.length > 0 ? Math.min(...prices) : 0;
   const maxPrice = prices.length > 0 ? Math.max(...prices) : 0;
