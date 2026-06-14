@@ -37,7 +37,7 @@ describe("deck money pages", () => {
     expect(new Set(questions).size).toBe(questions.length);
     expect(faqs.length).toBeGreaterThanOrEqual(6);
     expect(faqs.length).toBeLessThanOrEqual(8);
-    expect(faqs.some((f) => /practice test/i.test(f.question))).toBe(true);
+    expect(faqs.some((f) => /CFA Level 1|passing score|questions are on/i.test(f.question))).toBe(true);
     expect(faqs.some((f) => /file format|import|official/i.test(f.question))).toBe(true);
   });
 

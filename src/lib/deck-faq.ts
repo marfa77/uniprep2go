@@ -5,6 +5,7 @@ import { absoluteUrl } from "./site";
 import { getDeckShortPitch, getDeckLongDescription, formatExamFocusedContent } from "./deck-page-copy";
 import { getDeckPositioning } from "./deck-positioning";
 import { getDeckUniqueContent } from "./deck-money-page-content";
+import { getExamFactsProfileForDeck } from "./exam-facts";
 
 function normalizeQuestion(question: string): string {
   return question.toLowerCase().replace(/\s+/g, " ").trim();
@@ -73,9 +74,16 @@ function buildExamFaqs(deck: CatalogAvailableDeck): DeckFaq[] {
   return faqs.slice(0, 3);
 }
 
-/** Single FAQ block: up to 3 exam-specific + 3–5 product/delivery (deduped). */
+/** Single FAQ block: candidate Q&A from exam layer + product/delivery (deduped). */
 export function buildMergedDeckFaqs(deck: CatalogAvailableDeck): DeckFaq[] {
-  const examFaqs = buildExamFaqs(deck);
+  const examProfile = getExamFactsProfileForDeck(deck.slug);
+  const candidateFaqs: DeckFaq[] =
+    examProfile?.candidate_qa.map((item) => ({
+      question: item.q,
+      answer: item.a,
+    })) ?? [];
+
+  const examFaqs = candidateFaqs.length > 0 ? candidateFaqs : buildExamFaqs(deck);
   const examQuestions = new Set(examFaqs.map((f) => normalizeQuestion(f.question)));
 
   const productFaqs = deck.faqs.filter((faq) => {

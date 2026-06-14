@@ -1,5 +1,6 @@
 export const funnelEventNames = [
   "page_view",
+  "exam_facts_view",
   "product_facts_view",
   "topic_matrix_view",
   "sample_cards_view",

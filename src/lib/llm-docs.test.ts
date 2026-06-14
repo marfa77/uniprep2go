@@ -112,12 +112,21 @@ describe("LLM documents", () => {
       card_count: "300",
       checkout_provider: "Gumroad",
       format: ".apkg",
+      citable_exam_layer: true,
     });
+    expect(facts.exam_facts).toMatchObject({
+      passing_score: expect.stringContaining("1,400"),
+    });
+    expect(facts.domain_weights).toHaveLength(4);
+    expect(facts.candidate_qa?.length).toBeGreaterThanOrEqual(4);
     expect(facts.serp_answer).toContain("PTCE");
     expect(facts.serp_answer).toContain("300 cards");
     expect(facts.disclaimer).toContain("certification body");
     expect(facts.disclaimer).not.toContain("professional vocabulary");
-    expect(markdown).toContain("PTCB Pharmacy Technician Anki Deck");
+    expect(markdown).toContain("PTCE) — 2026 Facts, Topics & Prep");
+    expect(markdown).toContain("1,400 scaled score");
+    expect(markdown).toContain("Prep resources from UniPrep2Go");
+    expect(markdown).toContain("Product facts");
   });
 
   it("exposes the CFA Level 1 Formula Reference as a printable recall product", () => {
@@ -211,12 +220,14 @@ describe("LLM documents", () => {
   it("builds a compact markdown retrieval document", () => {
     const markdown = buildDeckMarkdown(primaryPriced);
 
-    expect(markdown).toContain("# CFA Level 1 Anki Deck — 342+ Smart Flashcards");
+    expect(markdown).toContain("# CFA Level 1 Exam — Facts, Topic Weights & Prep");
     expect(markdown).toContain("> ");
+    expect(markdown).toContain("## CFA Level 1 exam facts");
     expect(markdown).toContain("## Product facts");
+    expect(markdown).toContain("- CFA Level 1 Anki Deck — 342+ Smart Flashcards");
     expect(markdown).toContain("## Topic coverage");
     expect(markdown).toContain("## Sample cards");
-    expect(markdown).toContain("## FAQ");
+    expect(markdown).toContain("## Product FAQ");
     expect(markdown).toContain("CFA Institute");
   });
 
@@ -270,7 +281,7 @@ describe("LLM documents", () => {
         .find((item) => item.slug === deck.slug);
 
       expect(facts.product).toBe(deck.title);
-      expect(markdown).toContain(`# ${deck.title}`);
+      expect(markdown).toContain(deck.title);
       expect(llms).toContain(deck.title);
       expect(catalogDeck?.title).toBe(deck.title);
     }

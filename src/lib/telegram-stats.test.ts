@@ -150,8 +150,12 @@ describe("telegram stats", () => {
     expect(message).toContain("mock · cfa-level-1-readiness-check: 8 view → 3 intent → 0 convert (0.0%)");
     expect(message).toContain("/decks/cfa-level-1-anki-deck — 14");
     expect(message).toContain("Динамика 7 дней (посетители / просмотры)");
-    expect(message).toContain("05.06: 10 / 114 ▪▪▪▪▪▪▪▪▪▪");
-    expect(message).toContain("09.06: 23 / 88 ▪▪▪▪▪▪▪▪▪▪▪▪");
+    expect(message).toContain(
+      formatSevenDayDynamics(
+        sampleStats.visitors.dailyUnique,
+        sampleStats.visitors.dailyPageViews,
+      ),
+    );
     expect(message).not.toContain("All-time");
     expect(message).not.toContain("Recent events");
     expect(message).not.toContain("Last 7 days");

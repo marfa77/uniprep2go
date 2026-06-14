@@ -1,5 +1,6 @@
 import type { AvailableDeck } from "./decks";
 import { categoryLabels, type DeckCategory } from "./decks";
+import { buildMergedDeckFaqs } from "./deck-faq";
 import { absoluteUrl, siteConfig } from "./site";
 
 type ProductOfferInput = Pick<
@@ -86,6 +87,7 @@ export function buildProductJsonLd(deck: AvailableDeck) {
 export function buildDeckPageJsonLd(deck: AvailableDeck) {
   const product = buildProductJsonLd(deck);
   const deckUrl = absoluteUrl(`/decks/${deck.slug}`);
+  const mergedFaqs = buildMergedDeckFaqs(deck);
 
   return {
     "@context": "https://schema.org",
@@ -116,7 +118,7 @@ export function buildDeckPageJsonLd(deck: AvailableDeck) {
       {
         "@type": "FAQPage" as const,
         "@id": `${siteConfig.url}/decks/${deck.slug}#faq`,
-        mainEntity: deck.faqs.map((faq) => ({
+        mainEntity: mergedFaqs.map((faq) => ({
           "@type": "Question" as const,
           name: faq.question,
           acceptedAnswer: { "@type": "Answer" as const, text: faq.answer },

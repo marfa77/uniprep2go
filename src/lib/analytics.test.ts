@@ -5,9 +5,11 @@ describe("funnel analytics contract", () => {
   it("supports the landing funnel events that should be logged", () => {
     expect(funnelEventNames).toEqual([
       "page_view",
+      "exam_facts_view",
       "product_facts_view",
       "topic_matrix_view",
       "sample_cards_view",
+      "positioning_view",
       "catalog_view",
       "faq_view",
       "checkout_intent",

@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { FunnelTracker, TrackedCheckoutLink } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { DeckExamFactsSection } from "@/components/decks/deck-exam-facts-section";
 import { DeckPositioningSection } from "@/components/decks/deck-positioning-section";
 import { DeckRelatedDecks } from "@/components/decks/deck-related-decks";
 import { DeckSeoSections } from "@/components/decks/deck-seo-sections";
@@ -106,6 +107,7 @@ export default async function DeckPage({
           };
 
   const sectionEvents = [
+    { selector: "#exam-facts", name: "exam_facts_view" as const },
     { selector: "#facts", name: "product_facts_view" as const },
     { selector: "#topic-matrix", name: "topic_matrix_view" as const },
     { selector: "#sample-cards", name: "sample_cards_view" as const },
@@ -204,6 +206,8 @@ export default async function DeckPage({
         </div>
 
         <DeckSeoSections deck={deck} />
+
+        <DeckExamFactsSection deck={deck} />
 
         {linkedMock ? (
           <section className="mt-8 rounded-3xl border border-[#1f3a5f]/15 bg-[#fffaf0] p-5">
