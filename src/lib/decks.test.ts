@@ -91,7 +91,7 @@ describe("deck catalog", () => {
     expect(siteFaqs[0].answer).toContain("US-first");
     expect(siteFaqs[1].answer).toContain("FINRA SIE");
     expect(siteFaqs[1].answer).toContain("California real estate");
-    expect(siteFaqs[0].answer).toContain("Language decks remain available");
+    expect(siteFaqs[0].answer).toContain("free timed online practice tests");
     expect(siteFaqs.some((faq) => faq.question.includes("custom deck"))).toBe(true);
   });
 

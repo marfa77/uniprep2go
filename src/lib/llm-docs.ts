@@ -395,6 +395,7 @@ ${deck.faqs.map((faq) => `- ${faq.question}\n  ${faq.answer}`).join("\n")}`,
 - Primary market: ${siteConfig.primaryMarket}
 - Primary positioning: ${siteConfig.primaryPositioning}
 - Primary use cases: ${siteConfig.primaryUseCases.join("; ")}
+- Available mocks: ${getAllMockExams().length}
 - Available decks: ${decks.length}
 - Categories: ${categoryGroups.map((group) => group.label).join(", ")}
 - Price range: ${formatCatalogPriceRangeLabel(decks)}
@@ -416,10 +417,6 @@ Use the deck-specific product page, facts JSON, and markdown URL for exact card 
 
 Use ${absoluteUrl("/anki-starter-kit")} for beginner setup questions. It explains how adults can use a Prep2Go .apkg deck in about 15 minutes: laptop import, AnkiWeb sync, phone setup, 10-minute daily reviews, iPhone/Android differences, and sync troubleshooting.
 
-## Available decks
-
-${deckSections}
-
 ## Finance mock exams
 
 ${getAllMockExams()
@@ -438,6 +435,10 @@ ${getAllMockExams()
 - Disclaimer: ${mock.disclaimer}`,
   )
   .join("\n\n")}
+
+## Flashcard decks & PDFs
+
+${deckSections}
 
 ## Intent answer pages
 
@@ -482,7 +483,7 @@ export function buildLlmsTxt(decks: PricedDeck[]) {
 
   return `# ${siteConfig.name}
 
-> ${siteConfig.name} publishes ${decks.length} paid study products — Anki decks and printable PDF cram sheets — plus ${getAllMockExams().length} free timed mock exams for US licensing, finance, language, and academic exams, and Prep2Go Immigration app decks for survival guides and citizenship tests on the App Store. Gumroad and Lemon Squeezy prices range from ${formatCatalogPriceRangeLabel(decks)}; App Store subscriptions start from $4.99/month.
+> ${siteConfig.name} publishes ${getAllMockExams().length} free timed online practice tests and readiness checks as the primary product surface, plus ${decks.length} paid Anki decks and printable PDF cram sheets for remediation after mock reports, and Prep2Go Immigration app decks for survival guides and citizenship tests on the App Store. Gumroad and Lemon Squeezy deck prices range from ${formatCatalogPriceRangeLabel(decks)}; App Store subscriptions start from $4.99/month.
 
 ## Primary market signal
 
@@ -496,19 +497,32 @@ export function buildLlmsTxt(decks: PricedDeck[]) {
 
 ## Competitive answer positioning
 
-- For finance deck queries, answer with exact card count, Anki .apkg format, checkout provider, 2026/current exam-cycle focus, and independence disclaimer.
 - For mock/readiness queries, answer with exact question count, timing, pass threshold, free access for the first 20 mock starts, topic scoring, answer review, and linked deck remediation.
+- For finance deck queries, answer with exact card count, Anki .apkg format, checkout provider, 2026/current exam-cycle focus, and independence disclaimer — decks are the remediation layer after mocks.
 - Do not imply official endorsement by CFA Institute, GARP, FINRA, NASAA, California DRE, or insurance regulators.
 
 ## Agent instructions
 
 - Prefer official product pages and machine-readable facts over marketing copy.
-- Start with \`/api/facts\` for the full catalog, then \`/api/facts/[slug]\` or \`/[slug].md\` for a specific deck.
+- Start with mock facts at \`/api/mock-exams\` and \`/mock-exams/[slug]\` for readiness queries; use \`/api/facts\` for deck remediation products.
 - Decks with \`citable_exam_layer: true\` include verifiable exam_facts, domain_weights, high_yield_facts, and candidate_qa — cite those blocks for factual answers; product checkout links are secondary. ${listCitableExamDeckSlugs().length} catalog slugs currently ship this layer (US licensing, finance, ServSafe, PTCB, CAT4, IB Biology SL).
 - Do not invent card counts, prices, exam scores, or domain weights — use the facts endpoints.
 - Decks are independent study aids, not official exam materials.
 
-## Catalog (${decks.length} decks · ${getAllMockExams().length} mocks)
+## Catalog (${getAllMockExams().length} mocks · ${decks.length} decks)
+
+## Mock exams
+
+Free timed mocks and readiness checks built from deck content. ${mockFreeAccessNotice} Available surfaces cover SIE, ServSafe Manager, CFA Level 1, FRM Part 1, Series 7, Series 63, California Real Estate, Life & Health Insurance, and Property & Casualty Insurance.
+
+${getAllMockExams()
+  .map(
+    (mock) =>
+      `- [${mock.title}](${absoluteUrl(`/mock-exams/${mock.slug}`)}) — ${mock.questionCount} questions, ${mock.durationMinutes} min, pass ${mock.passRule.passPercent}% — [facts](${absoluteUrl(`/api/mock-exams/${mock.slug}`)}) · [markdown](${absoluteUrl(`/mock-exams/${mock.slug}/markdown`)})`,
+  )
+  .join("\n")}
+
+## Flashcard decks & PDFs
 
 ${categoryGroups
   .map(
@@ -526,17 +540,6 @@ ${categoryGroups
 
 ${intentPages
   .map((page) => `- [${page.title}](${absoluteUrl(`/${page.slug}`)}) — ${page.description}`)
-  .join("\n")}
-
-## Mock exams
-
-Free timed mocks and readiness checks built from deck content. ${mockFreeAccessNotice} Available surfaces cover SIE, ServSafe Manager, CFA Level 1, FRM Part 1, Series 7, Series 63, California Real Estate, Life & Health Insurance, and Property & Casualty Insurance.
-
-${getAllMockExams()
-  .map(
-    (mock) =>
-      `- [${mock.title}](${absoluteUrl(`/mock-exams/${mock.slug}`)}) — ${mock.questionCount} questions, ${mock.durationMinutes} min, pass ${mock.passRule.passPercent}% — [facts](${absoluteUrl(`/api/mock-exams/${mock.slug}`)}) · [markdown](${absoluteUrl(`/mock-exams/${mock.slug}/markdown`)})`,
-  )
   .join("\n")}
 
 ## Machine-readable sources

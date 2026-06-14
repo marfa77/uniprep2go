@@ -2381,11 +2381,14 @@ const rawDecks: Deck[] = [
 
 export const decks: Deck[] = rawDecks.map(enrichDeckWithShopPreviews);
 
-export const primaryDeck = decks[0] as CatalogAvailableDeck;
-
 export const catalogAvailableDecks = decks.filter(
   (deck): deck is CatalogAvailableDeck => deck.status === "available",
 );
+
+/** Canonical CFA L1 deck record for CFA-specific routes and linked-mock remediation — not the site-wide primary product. */
+export const primaryDeck = catalogAvailableDecks.find(
+  (deck) => deck.slug === "cfa-level-1-anki-deck",
+)!;
 
 /** Catalog decks without resolved checkout prices. Prefer getPricedDecks(). */
 export const availableDecks = catalogAvailableDecks;
@@ -2512,7 +2515,7 @@ export const siteFaqs = [
   {
     question: "What is UniPrep2Go?",
     answer:
-      "UniPrep2Go is a US-first catalog of independent exam prep products: Anki flashcard decks, printable PDF cram sheets, and free timed mock exams for licensing exams, finance credentials, language certifications, professional training, and academic subjects, plus Prep2Go Immigration app decks for survival guides and citizenship test prep on the App Store. The priority market is the United States, especially FINRA, insurance licensing, California real estate, ServSafe, CFA, and FRM candidates. Language decks remain available for long-tail search and global learners.",
+      "UniPrep2Go is a US-first exam prep site built around free timed online practice tests and readiness checks — with topic scoring, answer review, and pass/no-pass reports — plus independent Anki flashcard decks and printable PDF cram sheets you can use to drill weak topics after a mock. The catalog also includes Prep2Go Immigration app decks for survival guides and citizenship test prep on the App Store. Priority markets are the United States: FINRA, insurance licensing, California real estate, ServSafe, CFA, and FRM.",
   },
   {
     question: "Which US exams does UniPrep2Go cover?",

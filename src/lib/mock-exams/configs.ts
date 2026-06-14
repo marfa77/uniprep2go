@@ -375,6 +375,19 @@ export const mockExamConfigs: MockExamConfig[] = [
   },
 ];
 
+/** Flagship live mock — used for homepage funnel defaults and LLM primary-product signals. */
+export const primaryMockSlug = "sie-full-mock";
+
+export function getPrimaryMock(): MockExamConfig {
+  const config = getMockExamConfig(primaryMockSlug);
+  if (!config) {
+    throw new Error(`Primary mock config missing: ${primaryMockSlug}`);
+  }
+  return config;
+}
+
+export const primaryMock = getPrimaryMock();
+
 export function getMockExamConfig(slug: string) {
   return mockExamConfigs.find((config) => config.slug === slug);
 }

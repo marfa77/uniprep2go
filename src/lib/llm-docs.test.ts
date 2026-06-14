@@ -201,7 +201,7 @@ describe("LLM documents", () => {
 
     expect(catalog.catalog_size).toBe(catalogAvailableDecks.length);
     expect(catalog.primary_market).toBe("United States");
-    expect(catalog.primary_positioning).toContain("US exam prep");
+    expect(catalog.primary_positioning).toContain("free timed online");
     expect(catalog.primary_use_cases).toContain(
       "Immigration survival guides and citizenship test prep in the Prep2Go Immigration iOS app",
     );
@@ -297,11 +297,9 @@ describe("LLM documents", () => {
     expect(llms).toContain("/anki-starter-kit");
     expect(llms).toContain("/llms-full.txt");
     expect(llms).toContain("/ciple-a2-european-portuguese-anki-deck.md");
-    expect(llms).toContain(`${catalogAvailableDecks.length} paid study products`);
-    expect(llms).toContain("Prep2Go Immigration app decks");
-    expect(llms).toContain("Immigration & Adaptation decks are App Store-only");
+    expect(llms).toContain("free timed online practice tests");
     expect(llms).toContain("Primary market: United States");
-    expect(llms).toContain("US exam prep and professional licensing");
+    expect(llms).toContain("free timed online mocks and readiness checks");
     expect(llms).toContain("Language certification decks remain in the catalog for long-tail SEO");
     expect(llms).toContain("Anki deck explanation");
     expect(llms).toContain("review cards daily");
@@ -319,8 +317,8 @@ describe("LLM documents", () => {
     expect(bundle).toContain("## Anki onboarding");
     expect(bundle).toContain("10-minute daily reviews");
     expect(bundle).toContain("Primary market: United States");
-    expect(bundle).toContain("US exam prep and professional licensing");
-    expect(bundle).toContain("## Available decks");
+    expect(bundle).toContain("free timed online mocks and readiness checks");
+    expect(bundle).toContain("## Flashcard decks & PDFs");
     expect(bundle).toContain("## Finance mock exams");
     expect(bundle).toContain("## Intent answer pages");
     expect(bundle).toContain("## Site FAQs");

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { getMockAccessState, isFullReportUnlocked } from "./access";
-import { getAllMockExams, getMockExamConfig, validateMockExamConfig } from "./configs";
+import { getAllMockExams, getMockExamConfig, primaryMock, validateMockExamConfig } from "./configs";
 import { buildMockExamFacts, buildMockExamMarkdown, buildMockExamPageJsonLd } from "./llm";
 import { buildMockSeoDescription } from "./seo";
 import { getQuestionBankForExam, isMockExamRunnable, validateQuestionBank } from "./question-bank";
@@ -12,6 +12,12 @@ describe("mock exam configs", () => {
     for (const config of getAllMockExams()) {
       expect(validateMockExamConfig(config)).toEqual([]);
     }
+  });
+
+  it("defines SIE as the primary mock product", () => {
+    expect(primaryMock.slug).toBe("sie-full-mock");
+    expect(primaryMock.linkedDeckSlug).toBe("sie-exam-anki-deck");
+    expect(primaryMock.status).toBe("live");
   });
 
   it("defines SIE topic counts that sum to 75", () => {

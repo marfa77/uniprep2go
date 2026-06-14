@@ -11,12 +11,20 @@ export function SiteHeader() {
       >
         {siteConfig.name}
       </Link>
-      <Link
-        className="font-medium text-[#4f493e] transition hover:text-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-        href="/contact"
-      >
-        Contact
-      </Link>
+      <div className="flex items-center gap-4">
+        <Link
+          className="font-medium text-[#4f493e] transition hover:text-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+          href="/mock-exams"
+        >
+          Practice tests
+        </Link>
+        <Link
+          className="font-medium text-[#4f493e] transition hover:text-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+          href="/contact"
+        >
+          Contact
+        </Link>
+      </div>
     </nav>
   );
 }
