@@ -40,13 +40,32 @@ function parseArgs(argv) {
   return args;
 }
 
+const VALIDATION_RETRIES = 3;
+const VALIDATION_CONCURRENCY = Number(process.env.MOCK_BANK_VALIDATE_CONCURRENCY ?? 4);
+
+async function mapWithConcurrency(items, concurrency, mapper) {
+  const results = new Array(items.length);
+  let nextIndex = 0;
+
+  async function worker() {
+    while (nextIndex < items.length) {
+      const index = nextIndex;
+      nextIndex += 1;
+      results[index] = await mapper(items[index], index);
+    }
+  }
+
+  await Promise.all(Array.from({ length: Math.min(concurrency, items.length) }, () => worker()));
+  return results;
+}
+
 async function crossValidateQuestion(credentials, question) {
   const optionsBlock = question.options
     .map((option) => `(${option.id}) ${option.text}`)
     .join("\n");
 
   const system = `You are an independent exam-item reviewer. Solve the MCQ cold, then audit quality.
-Return JSON:
+Return JSON only:
 {
   "chosenOptionId": "a"|"b"|"c"|"d",
   "matchesMarkedCorrect": boolean,
@@ -66,24 +85,36 @@ MARKED CORRECT: (${question.correctOptionId})
 
 Review the item. Do not trust the marked answer — solve independently first.`;
 
-  const result = await chatJson({
-    credentials,
-    model: VALIDATOR_MODEL,
-    system,
-    user,
-    temperature: 0.1,
-    maxTokens: 1024,
-    role: "validator",
-  });
+  let lastError = null;
+  for (let attempt = 1; attempt <= VALIDATION_RETRIES; attempt += 1) {
+    try {
+      const result = await chatJson({
+        credentials,
+        model: VALIDATOR_MODEL,
+        system,
+        user,
+        temperature: 0.1,
+        maxTokens: 1024,
+        role: "validator",
+      });
 
-  const approved =
-    result.approved === true &&
-    result.matchesMarkedCorrect === true &&
-    result.chosenOptionId === question.correctOptionId &&
-    Array.isArray(result.issues) &&
-    result.issues.length === 0;
+      const approved =
+        result.approved === true &&
+        result.matchesMarkedCorrect === true &&
+        result.chosenOptionId === question.correctOptionId &&
+        Array.isArray(result.issues) &&
+        result.issues.length === 0;
 
-  return { approved, result };
+      return { approved, result };
+    } catch (error) {
+      lastError = error;
+      if (attempt < VALIDATION_RETRIES) {
+        await new Promise((resolve) => setTimeout(resolve, attempt * 500));
+      }
+    }
+  }
+
+  throw lastError ?? new Error("Validation failed");
 }
 
 async function validateExam(credentials, config, { apply, limit }) {
@@ -100,7 +131,7 @@ async function validateExam(credentials, config, { apply, limit }) {
   }
 
   const toValidate = limit ? questions.slice(0, limit) : questions;
-  console.log(`\n=== validate ${config.slug} (${toValidate.length} questions, ${VALIDATOR_MODEL}) ===`);
+  console.log(`\n=== validate ${config.slug} (${toValidate.length} questions, ${VALIDATOR_MODEL}, concurrency ${VALIDATION_CONCURRENCY}) ===`);
 
   const report = {
     slug: config.slug,
@@ -111,19 +142,26 @@ async function validateExam(credentials, config, { apply, limit }) {
     rejected: [],
   };
 
-  for (const question of toValidate) {
+  const outcomes = await mapWithConcurrency(toValidate, VALIDATION_CONCURRENCY, async (question) => {
     try {
       const { approved, result } = await crossValidateQuestion(credentials, question);
-      if (approved) {
-        report.approved.push(question.id);
-        console.log(`  ok ${question.id}`);
-      } else {
-        report.rejected.push({ id: question.id, result });
-        console.warn(`  reject ${question.id}: ${JSON.stringify(result)}`);
-      }
+      return { question, approved, result, error: null };
     } catch (error) {
-      report.rejected.push({ id: question.id, error: error.message });
-      console.warn(`  error ${question.id}: ${error.message}`);
+      return { question, approved: false, result: null, error: error.message };
+    }
+  });
+
+  for (const outcome of outcomes) {
+    const { question, approved, result, error } = outcome;
+    if (approved) {
+      report.approved.push(question.id);
+      console.log(`  ok ${question.id}`);
+    } else if (error) {
+      report.rejected.push({ id: question.id, error });
+      console.warn(`  error ${question.id}: ${error}`);
+    } else {
+      report.rejected.push({ id: question.id, result });
+      console.warn(`  reject ${question.id}: ${JSON.stringify(result)}`);
     }
   }
 

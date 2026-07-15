@@ -26,20 +26,20 @@ describe("anki-deck-launch", () => {
 
   it("launches planned building decks as available with pending apkg", () => {
     const launched = applyAnkiDeckLaunch({
-      slug: "hvac-epa-608-anki-deck",
+      slug: "leed-green-associate-anki-deck",
       category: "professional",
       status: "planned",
-      title: "HVAC EPA 608 Anki Deck",
-      shortName: "EPA 608 HVAC",
-      subtitle: "A planned spaced-repetition deck for EPA Section 608 Core and Types I–III.",
+      title: "LEED Green Associate Anki Deck",
+      shortName: "LEED GA",
+      subtitle: "A planned spaced-repetition deck for LEED GA.",
       directAnswer: "Planned product.",
       lastUpdated: "2026-06-02",
-      audience: "HVAC technicians.",
+      audience: "LEED candidates.",
       format: ".apkg",
-      coverImage: "/covers/hvac-epa-608-anki-deck.webp",
+      coverImage: "/covers/leed-green-associate-anki-deck.webp",
       facts: {
         cards: "Planned",
-        topics: "EPA 608 Core and Types",
+        topics: "LEED topics",
         formulas: "Planned",
         examYear: "Current",
         delivery: "Planned",
@@ -52,20 +52,40 @@ describe("anki-deck-launch", () => {
     expect(launched.status).toBe("available");
     if (launched.status === "available") {
       expect(launched.apkgStatus).toBe("pending");
-      expect(launched.checkoutUrl).toContain("hvac-epa-608-anki-deck");
+      expect(launched.checkoutUrl).toContain("leed-green-associate-anki-deck");
       expect(launched.checkoutProvider).toBe("Gumroad");
-      expect(launched.facts.cards).toBe("200+");
+      expect(launched.facts.cards).toBe("250+");
       expect(launched.importSteps?.length).toBeGreaterThan(0);
     }
   });
 
-  it("exposes launched EPA deck in catalog with checkout", () => {
+  it("exposes launched EPA deck in catalog with checkout and ready apkg", () => {
     const epa = getCatalogDeckBySlug("hvac-epa-608-anki-deck");
     expect(epa).toBeDefined();
     expect(epa?.status).toBe("available");
-    expect(epa?.apkgStatus).toBe("pending");
+    expect(epa?.apkgStatus).toBe("ready");
     expect(epa?.checkoutUrl).toContain("gumroad.com/l/hvac-epa-608-anki-deck");
     expect(epa?.coverImage).toBe("/covers/hvac-epa-608-anki-deck.webp");
+    expect(epa?.sampleCards).toHaveLength(3);
+    expect(epa?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/hvac-epa-608-anki-deck-sample-1.webp",
+      "/samples/hvac-epa-608-anki-deck-sample-2.webp",
+      "/samples/hvac-epa-608-anki-deck-sample-3.webp",
+    ]);
+  });
+
+  it("exposes launched BMS deck in catalog with checkout and ready apkg", () => {
+    const bms = getCatalogDeckBySlug("bms-building-automation-anki-deck");
+    expect(bms).toBeDefined();
+    expect(bms?.status).toBe("available");
+    expect(bms?.apkgStatus).toBe("ready");
+    expect(bms?.checkoutUrl).toContain("gumroad.com/l/bms-building-automation-anki-deck");
+    expect(bms?.sampleCards).toHaveLength(3);
+    expect(bms?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/bms-building-automation-anki-deck-sample-1.webp",
+      "/samples/bms-building-automation-anki-deck-sample-2.webp",
+      "/samples/bms-building-automation-anki-deck-sample-3.webp",
+    ]);
   });
 
   it("launches all building deck slugs into catalog", () => {

@@ -27,8 +27,19 @@ export function buildGumroadCheckoutUrl(permalink: string) {
   return `${GUMROAD_STORE}/l/${permalink}?wanted=true`;
 }
 
-export function getGumroadProductRecord(slug: string) {
+type GumroadProductRecord = (typeof gumroadCatalog.products)[BuildingAnkiDeckSlug];
+
+export function getGumroadProductRecord(slug: string): GumroadProductRecord | null {
   return gumroadCatalog.products[slug as BuildingAnkiDeckSlug] ?? null;
+}
+
+export function isApkgReadyOnGumroad(slug: string) {
+  const product = getGumroadProductRecord(slug);
+  return Boolean(
+    product &&
+      "apkgUploadedAt" in product &&
+      typeof product.apkgUploadedAt === "string",
+  );
 }
 
 export function getLinkedMockForDeck(deckSlug: string) {
@@ -54,28 +65,41 @@ function upgradeTopicCoverage(topicCoverage: TopicCoverage[]): TopicCoverage[] {
   }));
 }
 
-function buildDirectAnswer(deck: PlannedDeck, cardLabel: string, mockPath: string | null) {
+function buildDirectAnswer(
+  deck: PlannedDeck,
+  cardLabel: string,
+  mockPath: string | null,
+  apkgReady: boolean,
+) {
   const mockLine = mockPath
     ? ` Built from the same validated item bank as the free readiness check at ${absoluteUrl(mockPath)}.`
     : "";
+  const deliveryLine = apkgReady
+    ? `It is delivered as an Anki .apkg file for {PRICE} through Gumroad with instant download after checkout.`
+    : `Checkout is open on Gumroad for {PRICE}; the Anki .apkg download activates after the question bank passes QA (typically within days of purchase).`;
   return (
     `UniPrep2Go sells an independent ${deck.shortName} Anki deck with ${cardLabel} high-yield flashcards for active recall and exam terminology.${mockLine} ` +
-    `Checkout is open on Gumroad for {PRICE}; the Anki .apkg download activates after the question bank passes QA (typically within days of purchase). ` +
-    `The deck is a supplementary study aid and is not official exam material.`
+    `${deliveryLine} The deck is a supplementary study aid and is not official exam material.`
   );
 }
 
-function buildLaunchFaqs(deck: PlannedDeck, mockPath: string | null): DeckFaq[] {
+function buildLaunchFaqs(deck: PlannedDeck, mockPath: string | null, apkgReady: boolean): DeckFaq[] {
   const kept = deck.faqs.filter(
     (faq) =>
       !/when will|not yet available|not yet on sale|planned but not/i.test(faq.question),
   );
 
-  const deliveryFaq: DeckFaq = {
-    question: "When do I receive the .apkg file?",
-    answer:
-      "Complete checkout on Gumroad now. Your receipt is issued immediately; the Anki .apkg download link in your Gumroad library activates once the deck file is released after bank validation (same items as the free readiness check).",
-  };
+  const deliveryFaq: DeckFaq = apkgReady
+    ? {
+        question: "When do I receive the .apkg file?",
+        answer:
+          "Immediately after checkout. Open your Gumroad receipt or library and download the Anki .apkg file, then import it in Anki desktop (File → Import).",
+      }
+    : {
+        question: "When do I receive the .apkg file?",
+        answer:
+          "Complete checkout on Gumroad now. Your receipt is issued immediately; the Anki .apkg download link in your Gumroad library activates once the deck file is released after bank validation (same items as the free readiness check).",
+      };
 
   const mockFaq: DeckFaq | null = mockPath
     ? {
@@ -87,23 +111,45 @@ function buildLaunchFaqs(deck: PlannedDeck, mockPath: string | null): DeckFaq[] 
   return [deliveryFaq, ...(mockFaq ? [mockFaq] : []), ...kept];
 }
 
-const DEFAULT_IMPORT_STEPS: ImportStep[] = [
-  {
-    title: "Complete checkout on Gumroad",
-    detail:
-      "Buy the deck on Gumroad. Your receipt and library entry are created immediately even if the .apkg file is still being finalized.",
-  },
-  {
-    title: "Wait for the .apkg release email",
-    detail:
-      "When bank QA completes, Gumroad adds the Anki .apkg to your library. Re-open your receipt or Gumroad library to download.",
-  },
-  {
-    title: "Import into Anki",
-    detail:
-      "Open the desktop Anki app, choose File → Import, select the .apkg file, and confirm. The deck appears in your deck list ready for spaced repetition.",
-  },
-];
+function buildImportSteps(apkgReady: boolean): ImportStep[] {
+  if (apkgReady) {
+    return [
+      {
+        title: "Download the .apkg file",
+        detail:
+          "After checkout, open your Gumroad receipt email or library and download the Anki .apkg file to your computer.",
+      },
+      {
+        title: "Import into Anki",
+        detail:
+          "Open the desktop Anki app, choose File → Import, select the .apkg file, and confirm. The deck appears in your deck list ready for spaced repetition.",
+      },
+      {
+        title: "Sync to mobile (optional)",
+        detail:
+          "Import on Anki desktop first, then sync through AnkiWeb to AnkiMobile or AnkiDroid.",
+      },
+    ];
+  }
+
+  return [
+    {
+      title: "Complete checkout on Gumroad",
+      detail:
+        "Buy the deck on Gumroad. Your receipt and library entry are created immediately even if the .apkg file is still being finalized.",
+    },
+    {
+      title: "Wait for the .apkg release email",
+      detail:
+        "When bank QA completes, Gumroad adds the Anki .apkg to your library. Re-open your receipt or Gumroad library to download.",
+    },
+    {
+      title: "Import into Anki",
+      detail:
+        "Open the desktop Anki app, choose File → Import, select the .apkg file, and confirm. The deck appears in your deck list ready for spaced repetition.",
+    },
+  ];
+}
 
 export function isBuildingAnkiDeckSlug(slug: string): slug is BuildingAnkiDeckSlug {
   return slug in gumroadCatalog.products;
@@ -127,11 +173,12 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
   const mockPath = mock ? `/mock-exams/${mock.slug}` : null;
   const cardCount = estimateAnkiDeckCardCount(deck.slug);
   const cardLabel = formatAnkiDeckCardLabel(cardCount);
+  const apkgReady = isApkgReadyOnGumroad(deck.slug);
 
   const launched: CatalogAvailableDeck = {
     ...deck,
     status: "available",
-    apkgStatus: "pending",
+    apkgStatus: apkgReady ? "ready" : "pending",
     checkoutUrl: buildGumroadCheckoutUrl(product.permalink),
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
@@ -139,16 +186,18 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
     subtitle: deck.subtitle
       .replace(/^A planned (deck|spaced-repetition deck) for /i, "Anki deck for ")
       .replace(/^A planned /i, "A focused "),
-    directAnswer: buildDirectAnswer(deck, cardLabel, mockPath),
+    directAnswer: buildDirectAnswer(deck, cardLabel, mockPath, apkgReady),
     lastUpdated: "2026-07-15",
     facts: {
       ...deck.facts,
       cards: cardLabel,
-      delivery: "Digital .apkg through Gumroad (download after bank QA)",
+      delivery: apkgReady
+        ? "Digital .apkg through Gumroad (instant download)"
+        : "Digital .apkg through Gumroad (download after bank QA)",
     },
     topicCoverage: upgradeTopicCoverage(deck.topicCoverage),
-    faqs: buildLaunchFaqs(deck, mockPath),
-    importSteps: DEFAULT_IMPORT_STEPS,
+    faqs: buildLaunchFaqs(deck, mockPath, apkgReady),
+    importSteps: buildImportSteps(apkgReady),
   };
 
   return launched;

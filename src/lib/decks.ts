@@ -2368,7 +2368,29 @@ const rawDecks: Deck[] = [
       { name: "Platform Operations", examWeight: "Alarms, trends, schedules", cards: "Planned" },
       { name: "Integration and Commissioning", examWeight: "Field checkout domain", cards: "Planned" },
     ],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question:
+          "A BACnet network segment has devices with MAC addresses 5, 12, 18, and 25. Which device will serve as the designated router if all devices have the same router priority?",
+        answer:
+          "Correct: (d) Device with MAC address 25. When BACnet devices have the same router priority, the device with the highest MAC address becomes the designated router.",
+        imageUrl: "/samples/bms-building-automation-anki-deck-sample-1.webp",
+      },
+      {
+        question:
+          "What is the primary purpose of the BACnet Device Object in a building automation system?",
+        answer:
+          "Correct: (b) To provide basic device identification and network configuration information. The Device Object is mandatory and is the fundamental identifying object on the network.",
+        imageUrl: "/samples/bms-building-automation-anki-deck-sample-2.webp",
+      },
+      {
+        question:
+          "In a BACnet/IP network, a device needs to discover other devices on a remote subnet. Which BACnet service is primarily responsible for this discovery process?",
+        answer:
+          "Correct: (c) Who-Is service forwarded through BACnet Broadcast Management Devices (BBMDs). Standard broadcasts do not cross subnet boundaries without BBMD forwarding.",
+        imageUrl: "/samples/bms-building-automation-anki-deck-sample-3.webp",
+      },
+    ],
     faqs: [
       {
         question: "Is there a free BMS practice test?",
@@ -2414,7 +2436,29 @@ const rawDecks: Deck[] = [
       { name: "Type II — High-Pressure", examWeight: "25 official exam questions", cards: "Planned" },
       { name: "Type III — Low-Pressure", examWeight: "25 official exam questions", cards: "Planned" },
     ],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question:
+          "When working with refrigerant recovery equipment, what is the minimum required recovery efficiency for stationary refrigeration and air conditioning equipment?",
+        answer:
+          "Correct: (c) 90% of the refrigerant charge. EPA rules require at least 90% recovery efficiency for stationary equipment before disposal or major repair.",
+        imageUrl: "/samples/hvac-epa-608-anki-deck-sample-1.webp",
+      },
+      {
+        question:
+          "A technician suspects acid and moisture contamination in a recovered refrigerant stream. Which precaution best protects recovery equipment during evacuation?",
+        answer:
+          "Correct: (c) Install an in-line filter drier ahead of the recovery machine inlet. Filter driers trap contaminants before they reach the recovery unit.",
+        imageUrl: "/samples/hvac-epa-608-anki-deck-sample-2.webp",
+      },
+      {
+        question:
+          "What is the maximum allowable leak rate for commercial refrigeration equipment containing 50 or more pounds of refrigerant before repair is required?",
+        answer:
+          "Correct: (c) 20% annually. Commercial refrigeration has a 20% annual leak threshold — stricter than some industrial categories but different from comfort cooling rules.",
+        imageUrl: "/samples/hvac-epa-608-anki-deck-sample-3.webp",
+      },
+    ],
     faqs: [
       {
         question: "Is there a free EPA 608 practice test?",

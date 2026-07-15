@@ -3074,7 +3074,7 @@
     "id": "leed-green-associate-readiness-check-location-transportation-044",
     "examSlug": "leed-green-associate-readiness-check",
     "topicId": "location-transportation",
-    "prompt": "A development team is planning a new retail center and wants to reduce the environmental impact of customer and employee transportation. The project site is located in a car-dependent suburban area with limited existing transit infrastructure. Which strategy would be most effective for earning LEED Location and Transportation credits in this context?",
+    "prompt": "A suburban retail center cannot meet LEED transit-access thresholds because no high-frequency transit serves the site. The owner still wants a Location and Transportation strategy that is realistic for a car-dependent market. Which approach best fits that constraint?",
     "options": [
       {
         "id": "a",
@@ -3082,26 +3082,26 @@
       },
       {
         "id": "b",
-        "text": "Reduce parking capacity below local zoning requirements"
+        "text": "Reduce parking capacity below local zoning requirements without providing alternatives"
       },
       {
         "id": "c",
-        "text": "Install covered bicycle storage and repair facilities"
+        "text": "Install covered bicycle storage and repair facilities only"
       },
       {
         "id": "d",
-        "text": "Locate near existing high-frequency transit routes"
+        "text": "Relocate the project to an urban site with existing rail service"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "In a car-dependent suburban context with limited transit, providing electric vehicle charging stations is the most practical strategy to reduce transportation environmental impact while accommodating the reality of vehicle dependency. This supports the transition to cleaner vehicle technologies.",
+    "explanation": "When transit access is unavailable, EV charging is a practical LT-related strategy that supports lower-emission vehicle use without assuming riders can reach the site by bus or rail. Simply cutting parking below zoning without alternatives can harm retail access, and bicycle facilities alone are unlikely to shift mode share in a car-dependent suburban retail context.",
     "distractorExplanations": {
-      "b": "Reducing parking capacity in a car-dependent area without viable alternatives could create accessibility issues and may not be practical for retail customers who need to transport purchases.",
-      "c": "While bicycle facilities are beneficial, they may have limited impact in suburban areas where distances and infrastructure make cycling impractical for many users.",
-      "d": "The scenario states the area has limited transit infrastructure, so high-frequency routes are not available to locate near."
+      "b": "Parking reductions without viable travel alternatives can create access problems and may not be permitted by zoning.",
+      "c": "Bicycle facilities help, but they alone are unlikely to be the most effective strategy for suburban retail customers carrying purchases.",
+      "d": "Relocating the project is outside the scope of a strategy for the selected suburban site."
     },
-    "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
     "id": "leed-green-associate-readiness-check-location-transportation-045",
@@ -3800,11 +3800,11 @@
     "id": "leed-green-associate-readiness-check-sites-water-016",
     "examSlug": "leed-green-associate-readiness-check",
     "topicId": "sites-water",
-    "prompt": "A LEED project team is designing a green roof system for a commercial office building to address multiple sustainability objectives. The building is located in an urban area with limited ground-level space for landscaping. The green roof must provide environmental benefits while remaining economically viable for the building owner. Which green roof approach would most effectively contribute to LEED credit achievement across multiple categories?",
+    "prompt": "A LEED project team is designing a green roof for a commercial office building in an urban area. The owner wants heat island and stormwater benefits with low irrigation demand and manageable maintenance cost. Which green roof approach best matches those priorities?",
     "options": [
       {
         "id": "a",
-        "text": "Extensive green roof with native drought-tolerant plants and minimal irrigation system"
+        "text": "Extensive green roof with native drought-tolerant plants and minimal irrigation"
       },
       {
         "id": "b",
@@ -3820,14 +3820,14 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "An extensive green roof with native drought-tolerant plants provides the best balance of LEED benefits including heat island reduction, stormwater management, and habitat creation while minimizing water use and maintenance requirements. This approach supports multiple LEED credit categories cost-effectively.",
+    "explanation": "An extensive green roof with native drought-tolerant planting provides heat island reduction and stormwater management while keeping irrigation and maintenance low. That balance is typically the most cost-effective vegetated roof strategy for commercial owners pursuing multiple LEED site credits.",
     "distractorExplanations": {
-      "b": "Intensive green roofs require significant irrigation and maintenance, which conflicts with water efficiency goals and increases operational costs without proportional LEED benefits.",
-      "c": "Modular systems may not provide the same level of environmental benefits as integrated green roof designs and often require more resources for installation and replacement.",
-      "d": "While hybrid systems can be effective, the complexity and cost often outweigh the additional benefits compared to a well-designed extensive system for most commercial applications."
+      "b": "Intensive roofs increase irrigation, weight, and maintenance cost, which works against the owner's low-maintenance requirement.",
+      "c": "Modular systems can work, but the option emphasizes automation and pre-grown mats without the same clear low-water profile as extensive native planting.",
+      "d": "A hybrid intensive area adds cost and maintenance beyond what is needed to meet the stated owner priorities."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
     "id": "leed-green-associate-readiness-check-sites-water-017",
@@ -4031,7 +4031,7 @@
     "id": "leed-green-associate-readiness-check-sites-water-023",
     "examSlug": "leed-green-associate-readiness-check",
     "topicId": "sites-water",
-    "prompt": "A healthcare facility is designing an integrated water management approach that addresses both indoor water conservation and outdoor stormwater control. The facility includes patient care areas, administrative offices, and therapeutic gardens. The project team has calculated that landscape irrigation represents 40% of total water use during peak growing season. Which water management strategy would provide the most comprehensive sustainability benefits?",
+    "prompt": "A healthcare facility is designing water management for patient care areas, offices, and therapeutic gardens. Landscape irrigation is 40% of peak-season water use. The owner wants a practical strategy that reduces potable demand indoors and outdoors without using on-site greywater reuse in patient-care settings. Which approach best fits?",
     "options": [
       {
         "id": "a",
@@ -4051,14 +4051,14 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Combining indoor efficiency measures with rainwater harvesting addresses both major water use categories while creating a closed-loop system. High-efficiency fixtures reduce overall demand, while rainwater collection provides a sustainable source for the significant irrigation needs, reducing both potable water consumption and stormwater runoff.",
+    "explanation": "High-efficiency fixtures reduce indoor potable demand, while rainwater harvesting supplies non-potable irrigation for therapeutic gardens. This integrated approach addresses both major use categories without introducing greywater reuse complexities in a healthcare environment.",
     "distractorExplanations": {
-      "b": "Focusing only on indoor conservation ignores the substantial irrigation demand (40% of total use) and misses opportunities for integrated water cycle management that provides greater overall benefits.",
-      "c": "While xeriscaping reduces irrigation needs, therapeutic gardens in healthcare settings provide important patient benefits that may require some irrigation, and this approach doesn't address indoor water use.",
-      "d": "Constructed wetlands for greywater treatment can be complex and costly for healthcare facilities, and may not be appropriate for all therapeutic garden applications due to health and safety considerations."
+      "b": "Indoor conservation alone ignores the 40% irrigation load and misses stormwater benefits from rainwater capture.",
+      "c": "Eliminating irrigation may conflict with therapeutic garden needs, and permeable paving alone does not reduce potable irrigation demand indoors.",
+      "d": "On-site greywater wetlands add regulatory and infection-control complexity that makes this less practical for healthcare facilities than rainwater and fixture efficiency."
     },
     "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
     "id": "leed-green-associate-readiness-check-sites-water-024",
@@ -4593,7 +4593,7 @@
     "id": "leed-green-associate-readiness-check-sites-water-040",
     "examSlug": "leed-green-associate-readiness-check",
     "topicId": "sites-water",
-    "prompt": "A manufacturing facility is implementing heat island reduction strategies for their roof and hardscape areas. The 200,000 square foot building has a large flat roof and extensive parking areas. The project team wants to minimize surface temperatures while considering maintenance requirements and cost effectiveness. Which combination of strategies would most effectively address both roof and non-roof heat island reduction requirements?",
+    "prompt": "A manufacturing facility must reduce heat island effects on both its large flat roof and extensive parking areas while keeping maintenance practical. Which combination best addresses roof and non-roof requirements together?",
     "options": [
       {
         "id": "a",
@@ -4612,15 +4612,15 @@
         "text": "Install solar panels covering the entire roof and use standard asphalt paving"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "LEED heat island reduction requires addressing both roof surfaces (through high reflectance, vegetated roofs, or solar panels) and non-roof surfaces (through shading, reflective materials, or permeable paving). Reflective roof coating provides cost-effective roof heat island reduction, while strategically planted shade trees address hardscape areas efficiently and provide long-term benefits.",
+    "correctOptionId": "b",
+    "explanation": "Extensive green roofs address roof heat island reduction, while permeable paving and parking shade structures directly treat hardscape surfaces. Together they provide a balanced roof and non-roof strategy rather than relying on seasonal tree shade alone or leaving parking on standard asphalt.",
     "distractorExplanations": {
-      "a": "While both strategies address heat island reduction, light-colored concrete alone may not provide sufficient reflectance values, and this approach lacks the environmental co-benefits of vegetation or renewable energy.",
-      "b": "Though effective for heat island reduction, extensive green roofs and comprehensive shade structures represent a high-cost approach that may not be practical for large manufacturing facilities with maintenance constraints.",
-      "d": "Solar panels address roof heat island reduction effectively, but standard asphalt paving creates significant heat island effects that would need additional mitigation strategies for non-roof surfaces."
+      "a": "Light-colored paving may help, but this option does not combine vegetated roof treatment with structured hardscape shading or permeability.",
+      "c": "Reflective coating helps the roof, but deciduous trees provide only seasonal partial shade and may not fully treat large parking areas.",
+      "d": "Solar panels can count for roof heat island strategies, but standard asphalt paving worsens non-roof heat island performance."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
     "id": "leed-green-associate-readiness-check-sites-water-041",

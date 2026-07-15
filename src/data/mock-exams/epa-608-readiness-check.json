@@ -69,34 +69,34 @@
     "id": "epa-608-readiness-check-core-003",
     "examSlug": "epa-608-readiness-check",
     "topicId": "core",
-    "prompt": "Which safety precaution is most critical when recovering refrigerant from a system that may contain moisture or acid contamination?",
+    "prompt": "A technician suspects acid and moisture contamination in a recovered refrigerant stream. Which precaution best protects recovery equipment during evacuation?",
     "options": [
       {
         "id": "a",
-        "text": "Use only brass fittings to prevent galvanic corrosion"
+        "text": "Use only brass fittings on all service hoses"
       },
       {
         "id": "b",
-        "text": "Wear appropriate personal protective equipment including safety glasses and gloves"
+        "text": "Skip recovery and vent the charge to atmosphere"
       },
       {
         "id": "c",
-        "text": "Ensure recovery cylinder is pre-cooled to prevent pressure buildup"
+        "text": "Install an in-line filter drier ahead of the recovery machine inlet"
       },
       {
         "id": "d",
-        "text": "Install a liquid-line filter drier before the recovery machine"
+        "text": "Raise recovery cylinder temperature above 120°F"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "When moisture and acid contamination are present, refrigerants can become corrosive and potentially harmful to skin and eyes. Proper PPE including safety glasses and chemical-resistant gloves is essential to protect the technician from exposure to contaminated refrigerant.",
+    "correctOptionId": "c",
+    "explanation": "Acid and moisture can damage recovery equipment and contaminate cylinders. An in-line filter drier before the recovery machine helps trap contaminants and protect the unit during recovery.",
     "distractorExplanations": {
-      "a": "While brass fittings resist corrosion better than steel, this doesn't address the immediate safety risk to the technician from contaminated refrigerant exposure.",
-      "c": "Pre-cooling recovery cylinders is not a standard safety practice and doesn't protect against the hazards of contaminated refrigerant contact with the technician.",
-      "d": "Filter driers protect equipment from contamination but don't provide personal protection for the technician handling potentially corrosive refrigerant."
+      "a": "Fitting material selection does not replace contaminant filtration before the recovery machine.",
+      "b": "Venting regulated refrigerant is prohibited under Section 608.",
+      "d": "Heating cylinders does not address acid contamination and can create unsafe pressure conditions."
     },
     "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
     "id": "epa-608-readiness-check-core-004",
@@ -630,34 +630,34 @@
     "id": "epa-608-readiness-check-core-020",
     "examSlug": "epa-608-readiness-check",
     "topicId": "core",
-    "prompt": "A technician is preparing to service a commercial refrigeration system and notices the recovery equipment certification label is damaged and unreadable. What action should the technician take?",
+    "prompt": "Under EPA Section 608, who must certify that technicians are properly trained before they may purchase refrigerant in containers larger than small cans?",
     "options": [
       {
         "id": "a",
-        "text": "Proceed with recovery using visual inspection to verify equipment functionality"
+        "text": "The equipment owner"
       },
       {
         "id": "b",
-        "text": "Use alternative recovery equipment that has proper EPA certification documentation"
+        "text": "An EPA-approved certifying organization"
       },
       {
         "id": "c",
-        "text": "Contact the equipment manufacturer to obtain a replacement certification label"
+        "text": "The local building department"
       },
       {
         "id": "d",
-        "text": "Document the damaged label and continue with recovery operations"
+        "text": "The refrigerant distributor only"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "EPA regulations require that recovery equipment be properly certified and that certification must be verifiable. If certification cannot be verified due to damaged or missing labels, the technician must use properly certified equipment instead of proceeding with questionable equipment.",
+    "explanation": "EPA Section 608 requires technicians to pass a proctored exam administered by an EPA-approved certifying organization before handling regulated refrigerants or purchasing refrigerant except in small cans for motor vehicle A/C service.",
     "distractorExplanations": {
-      "a": "Visual inspection cannot substitute for proper EPA certification documentation, and proceeding would violate regulations.",
-      "c": "While obtaining a replacement label may be done later, the immediate need is to use properly certified equipment for the current job.",
-      "d": "Simply documenting the problem does not resolve the regulatory requirement to use certified equipment."
+      "a": "Owners may require training, but EPA certification comes from approved certifying organizations, not the owner alone.",
+      "c": "Building departments enforce codes but do not issue EPA Section 608 technician certification.",
+      "d": "Distributors verify certification at sale but do not certify technicians."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
     "id": "epa-608-readiness-check-core-021",
@@ -1720,34 +1720,34 @@
     "id": "epa-608-readiness-check-type-1-003",
     "examSlug": "epa-608-readiness-check",
     "topicId": "type-1",
-    "prompt": "A technician is servicing a small appliance refrigerator and needs to add refrigerant. What is the maximum amount of refrigerant that can be added to the system during servicing without requiring refrigerant recovery?",
+    "prompt": "Which statement best describes EPA requirements before opening a small appliance refrigeration circuit for service?",
     "options": [
       {
         "id": "a",
-        "text": "2 ounces"
+        "text": "Refrigerant must be recovered to required levels before opening the sealed system"
       },
       {
         "id": "b",
-        "text": "4 ounces"
+        "text": "Up to 2 pounds may be vented if the appliance is older than 10 years"
       },
       {
         "id": "c",
-        "text": "6 ounces"
+        "text": "Recovery is optional when the factory charge is under 5 pounds"
       },
       {
         "id": "d",
-        "text": "No refrigerant can be added without recovery"
+        "text": "Only Universal certification allows small-appliance service"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "EPA regulations allow technicians to add up to 2 ounces of refrigerant to a small appliance during servicing without first recovering the existing refrigerant. This de minimis exception recognizes that small amounts may be needed for leak testing or minor top-offs.",
+    "explanation": "Before opening a sealed refrigeration circuit, technicians must recover refrigerant to EPA-required levels using certified equipment; intentional venting is prohibited.",
     "distractorExplanations": {
-      "b": "4 ounces exceeds the EPA's de minimis allowance for adding refrigerant to small appliances without recovery.",
-      "c": "6 ounces significantly exceeds the 2-ounce limit and would require full refrigerant recovery before adding refrigerant.",
-      "d": "This is incorrect as EPA does provide a de minimis exception allowing up to 2 ounces to be added without prior recovery."
+      "b": "Age of equipment does not permit venting regulated refrigerant.",
+      "c": "The 5-pound limit defines Type I equipment class, not an exemption from recovery before opening the circuit.",
+      "d": "Type I certification covers small appliances; Universal is broader but not the only allowed credential."
     },
-    "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
     "id": "epa-608-readiness-check-type-1-004",
@@ -1885,34 +1885,34 @@
     "id": "epa-608-readiness-check-type-1-008",
     "examSlug": "epa-608-readiness-check",
     "topicId": "type-1",
-    "prompt": "Which refrigerant charge amount defines the upper limit for classification as a 'small appliance' under EPA Section 608 regulations?",
+    "prompt": "A technician is servicing a domestic refrigerator with a fully hermetic system. Which EPA certification type is required?",
     "options": [
       {
         "id": "a",
-        "text": "5 pounds or less"
+        "text": "Type I only"
       },
       {
         "id": "b",
-        "text": "10 pounds or less"
+        "text": "Type II only"
       },
       {
         "id": "c",
-        "text": "15 pounds or less"
+        "text": "Type III only"
       },
       {
         "id": "d",
-        "text": "20 pounds or less"
+        "text": "Universal only"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Under EPA Section 608 regulations, a small appliance is defined as any appliance that is fully manufactured, charged, and hermetically sealed in a factory with 5 pounds or less of refrigerant. This includes household refrigerators, freezers, dehumidifiers, and window air conditioners.",
+    "explanation": "Type I covers small appliances such as domestic refrigerators, freezers, and room air conditioners with 5 pounds or less of refrigerant and fully hermetic systems.",
     "distractorExplanations": {
-      "b": "10 pounds exceeds the small appliance threshold and would fall under different EPA 608 categories",
-      "c": "15 pounds is well above the small appliance limit and represents commercial equipment classifications",
-      "d": "20 pounds represents larger commercial systems that require Type II or Type III certification to service"
+      "b": "Type II covers high-pressure appliances like residential split systems, not typical domestic hermetic refrigerators.",
+      "c": "Type III covers low-pressure centrifugal chillers, not small appliances.",
+      "d": "Universal certification includes Type I, but Type I alone is the minimum required category for this equipment class."
     },
     "difficulty": "easy",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
     "id": "epa-608-readiness-check-type-1-009",
@@ -1951,34 +1951,34 @@
     "id": "epa-608-readiness-check-type-1-010",
     "examSlug": "epa-608-readiness-check",
     "topicId": "type-1",
-    "prompt": "A technician is servicing a window air conditioning unit that contains 3 ounces of R-410A. The unit's evaporator coil has developed a leak and needs replacement. What must the technician do with the refrigerant before beginning repairs?",
+    "prompt": "When recovering refrigerant from a small appliance, what is the primary reason to use recovery equipment listed for that appliance class?",
     "options": [
       {
         "id": "a",
-        "text": "Recover the refrigerant to at least 4 inches of mercury vacuum absolute"
+        "text": "To increase compressor oil viscosity"
       },
       {
         "id": "b",
-        "text": "Vent the refrigerant to atmosphere since the charge is less than 5 pounds"
+        "text": "To meet EPA recovery efficiency requirements for that appliance type"
       },
       {
         "id": "c",
-        "text": "Transfer the refrigerant to another identical unit for temporary storage"
+        "text": "To eliminate the need for leak detection"
       },
       {
         "id": "d",
-        "text": "Leave the refrigerant in the system and seal the leak with stop-leak additive"
+        "text": "To avoid replacing filter-driers after service"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "EPA regulations require recovery of refrigerant from small appliances to at least 4 inches of mercury vacuum absolute when the compressor is operational, regardless of charge size. All refrigerant must be recovered before opening the system for repairs.",
+    "correctOptionId": "b",
+    "explanation": "EPA requires recovery devices tested for the applicable appliance category to achieve specified recovery efficiencies before refrigerant is opened to the atmosphere or disposed.",
     "distractorExplanations": {
-      "b": "Venting refrigerant to atmosphere is prohibited under EPA Section 608 regardless of system size or charge amount.",
-      "c": "Transferring refrigerant between systems without proper recovery equipment and procedures violates EPA regulations and could contaminate both systems.",
-      "d": "Stop-leak additives are not an acceptable substitute for proper refrigerant recovery, and leaving refrigerant in a leaking system violates environmental protection requirements."
+      "a": "Recovery equipment does not change oil viscosity; it removes refrigerant vapor and liquid.",
+      "c": "Recovery does not replace leak inspection requirements after repair.",
+      "d": "Filter-drier replacement depends on system contamination, not recovery device listing alone."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
     "id": "epa-608-readiness-check-type-1-011",
@@ -2110,39 +2110,6 @@
       "d": "Commercial classification depends on refrigerant charge amount, not the type of equipment - this unit falls under small appliance limits"
     },
     "difficulty": "easy",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
-  },
-  {
-    "id": "epa-608-readiness-check-type-1-015",
-    "examSlug": "epa-608-readiness-check",
-    "topicId": "type-1",
-    "prompt": "A technician is working on a compact refrigerator that contains 4.5 ounces of R-134a. The compressor is operational, but there is a suspected leak in the evaporator. What is the minimum vacuum level that must be achieved during refrigerant recovery?",
-    "options": [
-      {
-        "id": "a",
-        "text": "0 inches of mercury vacuum"
-      },
-      {
-        "id": "b",
-        "text": "4 inches of mercury vacuum"
-      },
-      {
-        "id": "c",
-        "text": "10 inches of mercury vacuum"
-      },
-      {
-        "id": "d",
-        "text": "15 inches of mercury vacuum"
-      }
-    ],
-    "correctOptionId": "b",
-    "explanation": "For small appliances with operating compressors, EPA regulations require achieving 4 inches of mercury vacuum during refrigerant recovery. This ensures adequate refrigerant removal while accounting for the compressor's ability to assist in the recovery process.",
-    "distractorExplanations": {
-      "a": "Zero vacuum would indicate no recovery effort, which violates EPA requirements for refrigerant removal before servicing.",
-      "c": "10 inches of mercury vacuum is the requirement for non-operating compressors, not operating ones.",
-      "d": "15 inches of mercury vacuum exceeds EPA requirements and is not a standard recovery level for small appliances."
-    },
-    "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
   },
   {
@@ -3268,39 +3235,6 @@
     "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
   },
   {
-    "id": "epa-608-readiness-check-type-1-050",
-    "examSlug": "epa-608-readiness-check",
-    "topicId": "type-1",
-    "prompt": "A technician is servicing a small appliance portable air conditioner that contains 14 ounces of R-410A refrigerant. The unit's reversing valve is stuck in heating mode and the compressor operates intermittently due to high pressure cutout activation. The repair requires replacing the reversing valve solenoid coil. What recovery equipment certification level is required for this repair?",
-    "options": [
-      {
-        "id": "a",
-        "text": "System-dependent (passive) recovery equipment only"
-      },
-      {
-        "id": "b",
-        "text": "Self-contained recovery equipment certified to ARI Standard 740"
-      },
-      {
-        "id": "c",
-        "text": "Either system-dependent or self-contained recovery equipment may be used"
-      },
-      {
-        "id": "d",
-        "text": "No recovery equipment required since the compressor still operates"
-      }
-    ],
-    "correctOptionId": "c",
-    "explanation": "For small appliances containing more than 5 pounds of refrigerant, EPA regulations allow the use of either system-dependent (passive) or self-contained recovery equipment. Since 14 ounces is less than 5 pounds, this unit falls under small appliance regulations where both recovery methods are acceptable.",
-    "distractorExplanations": {
-      "a": "This incorrectly suggests only passive recovery is allowed, but self-contained equipment is also permitted for small appliances.",
-      "b": "This incorrectly requires only self-contained equipment, but passive recovery methods are also acceptable for small appliances under 5 pounds.",
-      "d": "This is incorrect because any repair that opens the refrigerant circuit requires recovery regardless of compressor operation status."
-    },
-    "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
-  },
-  {
     "id": "epa-608-readiness-check-type-2-001",
     "examSlug": "epa-608-readiness-check",
     "topicId": "type-2",
@@ -3323,15 +3257,15 @@
         "text": "30% annually"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "EPA regulations specify that comfort cooling appliances containing 50 or more pounds of refrigerant must not exceed a 15% annual leak rate. This threshold helps ensure efficient operation and minimizes environmental impact from refrigerant losses.",
+    "correctOptionId": "a",
+    "explanation": "EPA leak repair rules set a 10% annual leak rate threshold for comfort cooling appliances with 50 or more pounds of refrigerant.",
     "distractorExplanations": {
-      "a": "10% is the leak rate threshold for commercial refrigeration equipment, not comfort cooling appliances.",
-      "c": "20% exceeds the EPA limit and would require immediate leak repair for comfort cooling systems.",
-      "d": "30% is far above any allowable leak rate and would constitute a significant violation requiring immediate action."
+      "b": "15% applies to other equipment categories, not comfort cooling at this threshold.",
+      "c": "20% is the commercial refrigeration threshold for large systems, not comfort cooling.",
+      "d": "30% exceeds any EPA annual leak rate allowance for regulated appliances."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
     "id": "epa-608-readiness-check-type-2-002",
@@ -3370,34 +3304,34 @@
     "id": "epa-608-readiness-check-type-2-003",
     "examSlug": "epa-608-readiness-check",
     "topicId": "type-2",
-    "prompt": "What is the required evacuation level for a high-pressure appliance before charging with a new refrigerant?",
+    "prompt": "A residential split-system condensing unit uses R-410A. Which EPA certification type covers this equipment?",
     "options": [
       {
         "id": "a",
-        "text": "500 microns"
+        "text": "Type I"
       },
       {
         "id": "b",
-        "text": "1000 microns"
+        "text": "Type II"
       },
       {
         "id": "c",
-        "text": "1500 microns"
+        "text": "Type III"
       },
       {
         "id": "d",
-        "text": "10 inches of mercury vacuum"
+        "text": "Type I and III only"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "High-pressure appliances must be evacuated to 500 microns or below before charging with refrigerant. This deep vacuum ensures removal of moisture and non-condensables that could damage the system or reduce efficiency.",
+    "correctOptionId": "b",
+    "explanation": "R-410A operates above atmospheric pressure at typical service conditions, classifying the system as high-pressure equipment covered by Type II certification.",
     "distractorExplanations": {
-      "b": "1000 microns is insufficient for high-pressure systems and may leave moisture that could cause system problems.",
-      "c": "1500 microns is far too high and would likely result in system contamination and poor performance.",
-      "d": "10 inches of mercury vacuum is equivalent to about 254,000 microns, which is completely inadequate for proper system preparation."
+      "a": "Type I is limited to small appliances, not split-system condensing units.",
+      "c": "Type III is for low-pressure equipment such as large centrifugal chillers using R-123 or similar.",
+      "d": "Type III is not required for high-pressure split systems."
     },
     "difficulty": "easy",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
     "id": "epa-608-readiness-check-type-2-004",
@@ -3466,37 +3400,37 @@
     "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
   },
   {
-    "id": "epa-608-readiness-check-type-2-007",
+    "id": "epa-608-readiness-check-type-2-006",
     "examSlug": "epa-608-readiness-check",
     "topicId": "type-2",
-    "prompt": "What is the primary reason that Type II appliances require different recovery procedures compared to Type I appliances?",
+    "prompt": "Before opening a high-pressure system for a major repair, a technician must:",
     "options": [
       {
         "id": "a",
-        "text": "Type II appliances contain larger quantities of refrigerant"
+        "text": "Vent refrigerant to speed up the job if the charge is under 5 pounds"
       },
       {
         "id": "b",
-        "text": "Type II appliances operate at higher pressures and temperatures"
+        "text": "Recover refrigerant to required vacuum levels using approved equipment"
       },
       {
         "id": "c",
-        "text": "Type II appliances use only CFC refrigerants"
+        "text": "Add nitrogen only and skip recovery on R-410A systems"
       },
       {
         "id": "d",
-        "text": "Type II appliances are always located indoors"
+        "text": "Replace the compressor without isolating the circuit"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Type II appliances are classified as high-pressure systems because they operate at higher pressures and temperatures than Type I appliances. This requires different recovery equipment and procedures to safely handle the higher operating conditions.",
+    "explanation": "EPA regulations prohibit intentional venting. Technicians must recover refrigerant to prescribed evacuation levels with certified recovery equipment before major service that opens the circuit.",
     "distractorExplanations": {
-      "a": "While Type II appliances may contain larger quantities of refrigerant, this is not the primary distinguishing factor that determines recovery procedures.",
-      "c": "Type II appliances can use various refrigerants including HCFCs and HFCs, not exclusively CFCs.",
-      "d": "Type II appliances can be located both indoors and outdoors, and location does not determine the classification or recovery procedures."
+      "a": "Venting regulated refrigerant is illegal regardless of small charge size on non-exempt equipment.",
+      "c": "Nitrogen may be used for pressure testing after recovery, not as a substitute for recovery.",
+      "d": "Opening the circuit without recovery violates Section 608 venting prohibitions."
     },
-    "difficulty": "easy",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
     "id": "epa-608-readiness-check-type-2-008",
@@ -3766,34 +3700,34 @@
     "id": "epa-608-readiness-check-type-2-016",
     "examSlug": "epa-608-readiness-check",
     "topicId": "type-2",
-    "prompt": "A technician is preparing to service a packaged rooftop unit containing 12 pounds of R-410A. The unit has a refrigerant leak in the liquid line that requires cutting and brazing. What recovery requirement must be met before opening the system?",
+    "prompt": "A technician will cut and braze a leaking liquid line on a packaged rooftop unit containing 12 pounds of R-410A. What recovery level is required before opening the system?",
     "options": [
       {
         "id": "a",
-        "text": "Recover refrigerant to 0 psig"
+        "text": "0 psig only"
       },
       {
         "id": "b",
-        "text": "Recover refrigerant to 10 inches of mercury vacuum"
+        "text": "4 inches of mercury vacuum"
       },
       {
         "id": "c",
-        "text": "Recover refrigerant to 15 inches of mercury vacuum"
+        "text": "15 inches of mercury vacuum"
       },
       {
         "id": "d",
-        "text": "Recover at least 80% of the refrigerant charge"
+        "text": "Recover 80% of charge by weight only"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "For Type II appliances (high-pressure systems), EPA regulations require recovery to 10 inches of mercury vacuum when the system will be opened for service. This ensures minimal refrigerant loss to the atmosphere during repair work.",
+    "correctOptionId": "c",
+    "explanation": "For high-pressure appliances with more than 5 pounds of refrigerant opened for major repair, EPA requires recovery to 15 inches of mercury vacuum (or equivalent evacuation level for the appliance type).",
     "distractorExplanations": {
-      "a": "Recovering only to 0 psig is insufficient for Type II appliances and would allow significant refrigerant loss when the system is opened.",
-      "c": "15 inches of mercury vacuum is the requirement for Type III appliances (low-pressure systems), not Type II high-pressure systems.",
-      "d": "There is no EPA requirement to recover only a percentage of the charge; the vacuum level requirement must be met regardless of charge amount."
+      "a": "0 psig leaves refrigerant in the system and does not meet evacuation requirements before opening.",
+      "b": "Four inches of mercury is below the required evacuation level for this high-pressure major repair scenario.",
+      "d": "EPA specifies evacuation levels, not a percentage-only recovery shortcut before opening the circuit."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
     "id": "epa-608-readiness-check-type-2-018",
@@ -3826,39 +3760,6 @@
       "d": "2 years exceeds the EPA requirement and would result in violations for failing to implement required leak repair measures."
     },
     "difficulty": "easy",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
-  },
-  {
-    "id": "epa-608-readiness-check-type-2-018",
-    "examSlug": "epa-608-readiness-check",
-    "topicId": "type-2",
-    "prompt": "A technician is working on a Type II appliance containing 15 pounds of R-404A. The system has been off for several hours and shows 85 psig on both high and low side gauges. What does this pressure reading most likely indicate?",
-    "options": [
-      {
-        "id": "a",
-        "text": "The system has a refrigerant leak"
-      },
-      {
-        "id": "b",
-        "text": "The compressor valves are stuck open"
-      },
-      {
-        "id": "c",
-        "text": "The system pressures have equalized normally"
-      },
-      {
-        "id": "d",
-        "text": "There is moisture contamination in the system"
-      }
-    ],
-    "correctOptionId": "c",
-    "explanation": "When a Type II system has been off for several hours, the pressures on both the high and low sides will equalize to the saturation pressure corresponding to the ambient temperature. This is normal system behavior and indicates the refrigerant is in equilibrium.",
-    "distractorExplanations": {
-      "a": "Equal pressures after the system has been off does not indicate a leak; this is normal pressure equalization.",
-      "b": "Stuck compressor valves would be evident during operation, not when the system has been off for hours.",
-      "d": "Moisture contamination would not specifically cause equal high and low side pressures when the system is off."
-    },
-    "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
   },
   {
@@ -4892,70 +4793,37 @@
     "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
   },
   {
-    "id": "epa-608-readiness-check-type-2-049",
+    "id": "epa-608-readiness-check-type-3-001",
     "examSlug": "epa-608-readiness-check",
-    "topicId": "type-2",
-    "prompt": "A technician is servicing a Type II chiller system containing 85 pounds of R-123 that has been shut down for equipment modifications. The work requires cutting and brazing new piping connections to the evaporator. The system currently shows 5 psig on both high and low side gauges. What recovery requirement must be met before beginning the brazing work?",
+    "topicId": "type-3",
+    "prompt": "When leak checking a low-pressure chiller, why is purging non-condensables to the atmosphere generally prohibited?",
     "options": [
       {
         "id": "a",
-        "text": "Recover refrigerant to 0 psig on both sides"
+        "text": "It always improves chiller efficiency"
       },
       {
         "id": "b",
-        "text": "Recover refrigerant to 10 inches of mercury vacuum"
+        "text": "It can release regulated refrigerant mixed with the non-condensables"
       },
       {
         "id": "c",
-        "text": "Recover refrigerant to 15 inches of mercury vacuum"
+        "text": "It eliminates the need for oil analysis"
       },
       {
         "id": "d",
-        "text": "No recovery required since system pressure is below 10 psig"
+        "text": "It replaces the requirement for annual tune-ups"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "When opening Type II appliances for major repairs involving cutting or brazing, EPA regulations require recovery to 10 inches of mercury vacuum regardless of the initial system pressure. This ensures minimal refrigerant loss during the repair process.",
+    "explanation": "Purging can vent refrigerant along with air and non-condensables. EPA requires recovery and proper handling so regulated refrigerant is not released during purge or service operations.",
     "distractorExplanations": {
-      "a": "Simply reaching 0 psig is insufficient for Type II appliances when opening the system for major repairs - a vacuum level must be achieved.",
-      "c": "15 inches of mercury vacuum is the requirement for Type II appliances only when using passive recovery methods or when the compressor is non-functional.",
-      "d": "Recovery is always required when opening Type II systems for repairs, regardless of the initial pressure reading."
-    },
-    "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
-  },
-  {
-    "id": "epa-608-readiness-check-type-2-050",
-    "examSlug": "epa-608-readiness-check",
-    "topicId": "type-2",
-    "prompt": "A Type II rooftop unit originally charged with 25 pounds of R-407C has experienced multiple refrigerant additions over the past year. The service records show additions of 3 pounds in February, 2 pounds in May, 4 pounds in August, and 3 pounds in December. What action is required based on these service records?",
-    "options": [
-      {
-        "id": "a",
-        "text": "Continue normal operation as leak rate is within acceptable limits"
-      },
-      {
-        "id": "b",
-        "text": "Repair the leak within 30 days of discovery"
-      },
-      {
-        "id": "c",
-        "text": "Immediately shut down the system until repairs are completed"
-      },
-      {
-        "id": "d",
-        "text": "Increase monitoring frequency but no immediate repair required"
-      }
-    ],
-    "correctOptionId": "b",
-    "explanation": "The system has leaked 12 pounds out of 25 pounds (48% annual leak rate), which exceeds the 35% threshold for Type II appliances. EPA regulations require repair within 30 days when the annual leak rate exceeds 35% of the system's full charge.",
-    "distractorExplanations": {
-      "a": "A 48% annual leak rate significantly exceeds the 35% threshold for Type II appliances and requires mandatory repair action.",
-      "c": "EPA regulations do not require immediate shutdown - systems may continue operating during the 30-day repair period.",
-      "d": "When leak rates exceed regulatory thresholds, repair is mandatory within specified timeframes, not just increased monitoring."
+      "a": "Controlled removal of non-condensables may help performance, but venting is not an unrestricted efficiency shortcut.",
+      "c": "Oil analysis is unrelated to purge venting rules.",
+      "d": "Maintenance schedules are separate from refrigerant venting prohibitions."
     },
     "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
     "id": "epa-608-readiness-check-type-3-003",
@@ -6446,165 +6314,297 @@
     "id": "epa-608-readiness-check-type-3-050",
     "examSlug": "epa-608-readiness-check",
     "topicId": "type-3",
-    "prompt": "What is the maximum allowable standing pressure test requirement for low-pressure appliances after completing repairs that required opening the refrigerant circuit?",
+    "prompt": "Which equipment type is primarily associated with EPA Type III certification?",
     "options": [
       {
         "id": "a",
-        "text": "0 psig (vacuum test only)"
+        "text": "Low-pressure centrifugal chillers"
       },
       {
         "id": "b",
-        "text": "10 psig with nitrogen"
+        "text": "Domestic chest freezers"
       },
       {
         "id": "c",
-        "text": "50 psig with nitrogen"
+        "text": "Motor vehicle air conditioners only"
       },
       {
         "id": "d",
-        "text": "150 psig with nitrogen"
+        "text": "Window room air conditioners only"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Low-pressure appliances must be pressure tested at 10 psig with nitrogen after repairs that open the refrigerant circuit. This relatively low pressure reflects the system's normal operating range and prevents damage to components designed for low-pressure operation.",
+    "correctOptionId": "a",
+    "explanation": "Type III covers low-pressure appliances, most commonly large centrifugal chillers that operate below atmospheric pressure on the low side.",
     "distractorExplanations": {
-      "a": "While vacuum testing is important for low-pressure systems, a standing pressure test is also required to verify system integrity after repairs.",
-      "c": "50 psig exceeds the safe pressure testing limits for low-pressure appliances and could damage system components.",
-      "d": "150 psig is the pressure test requirement for high-pressure appliances, not low-pressure systems which operate at much lower pressures."
-    },
-    "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
-  },
-  {
-    "id": "epa-608-readiness-check-type-3-047",
-    "examSlug": "epa-608-readiness-check",
-    "topicId": "type-3",
-    "prompt": "What is the primary method for detecting leaks in a low-pressure appliance during routine maintenance?",
-    "options": [
-      {
-        "id": "a",
-        "text": "Electronic leak detector with heated diode sensor"
-      },
-      {
-        "id": "b",
-        "text": "Soap bubble test at suspected leak points"
-      },
-      {
-        "id": "c",
-        "text": "Vacuum test to measure pressure rise over time"
-      },
-      {
-        "id": "d",
-        "text": "Ultrasonic leak detection equipment"
-      }
-    ],
-    "correctOptionId": "c",
-    "explanation": "Low-pressure appliances operate below atmospheric pressure, so traditional leak detection methods that work for positive pressure systems are ineffective. A vacuum test that measures pressure rise over time is the standard method for detecting air infiltration in these systems.",
-    "distractorExplanations": {
-      "a": "Electronic leak detectors are designed for positive pressure systems and cannot detect air infiltration in vacuum systems.",
-      "b": "Soap bubble tests only work when refrigerant is escaping outward under positive pressure, not when air is infiltrating inward.",
-      "d": "Ultrasonic detectors are primarily used for high-pressure gas leaks and are not suitable for detecting air infiltration in vacuum systems."
-    },
-    "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
-  },
-  {
-    "id": "epa-608-readiness-check-type-3-048",
-    "examSlug": "epa-608-readiness-check",
-    "topicId": "type-3",
-    "prompt": "Which component failure is most likely to cause a low-pressure appliance to lose its vacuum and allow air infiltration?",
-    "options": [
-      {
-        "id": "a",
-        "text": "Compressor motor burnout"
-      },
-      {
-        "id": "b",
-        "text": "Purge unit malfunction"
-      },
-      {
-        "id": "c",
-        "text": "Condenser tube leak"
-      },
-      {
-        "id": "d",
-        "text": "Expansion valve sticking closed"
-      }
-    ],
-    "correctOptionId": "b",
-    "explanation": "The purge unit is critical for removing non-condensable gases from low-pressure systems. When it malfunctions, air and other gases accumulate, causing the system to lose vacuum and operate inefficiently. This is the most common cause of vacuum loss in low-pressure appliances.",
-    "distractorExplanations": {
-      "a": "While compressor failure affects system operation, it doesn't directly cause vacuum loss or air infiltration into the refrigerant circuit.",
-      "c": "Condenser tube leaks would cause refrigerant loss to the water side, but wouldn't necessarily cause air infiltration or vacuum loss.",
-      "d": "A stuck expansion valve affects refrigerant flow but doesn't directly cause air infiltration or vacuum loss in the system."
-    },
-    "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
-  },
-  {
-    "id": "epa-608-readiness-check-type-3-049",
-    "examSlug": "epa-608-readiness-check",
-    "topicId": "type-3",
-    "prompt": "What is the minimum recovery efficiency required when using active recovery equipment on a low-pressure appliance containing CFC-11?",
-    "options": [
-      {
-        "id": "a",
-        "text": "80 percent of the refrigerant must be recovered"
-      },
-      {
-        "id": "b",
-        "text": "85 percent of the refrigerant must be recovered"
-      },
-      {
-        "id": "c",
-        "text": "90 percent of the refrigerant must be recovered"
-      },
-      {
-        "id": "d",
-        "text": "95 percent of the refrigerant must be recovered"
-      }
-    ],
-    "correctOptionId": "c",
-    "explanation": "EPA regulations require that active recovery equipment achieve 90 percent efficiency when recovering refrigerant from low-pressure appliances. This ensures maximum refrigerant recovery while accounting for the practical limitations of recovery equipment in vacuum systems.",
-    "distractorExplanations": {
-      "a": "80 percent is below the required efficiency standard and would result in excessive refrigerant loss to the atmosphere.",
-      "b": "85 percent is the required efficiency for some high-pressure systems, but low-pressure appliances require higher recovery rates.",
-      "d": "95 percent exceeds the required standard and may not be practically achievable with standard recovery equipment on vacuum systems."
+      "b": "Chest freezers are small appliances under Type I.",
+      "c": "Motor vehicle A/C has separate EPA requirements; Type III targets low-pressure stationary equipment.",
+      "d": "Window units are Type I small appliances."
     },
     "difficulty": "easy",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
-    "id": "epa-608-readiness-check-type-3-050",
+    "id": "epa-608-readiness-check-type-1-014",
     "examSlug": "epa-608-readiness-check",
-    "topicId": "type-3",
-    "prompt": "What is the most important consideration when selecting recovery equipment for a low-pressure centrifugal chiller containing CFC-11?",
+    "topicId": "type-1",
+    "prompt": "A technician replaces a failed compressor on a household window air conditioner. What is the maximum refrigerant charge that typically classifies this unit as a Type I small appliance?",
     "options": [
       {
         "id": "a",
-        "text": "The recovery unit must be capable of achieving 29 inches of mercury vacuum"
+        "text": "5 pounds or less of refrigerant"
       },
       {
         "id": "b",
-        "text": "The recovery unit must have active recovery capability rather than passive recovery only"
+        "text": "15 pounds or less of refrigerant"
       },
       {
         "id": "c",
-        "text": "The recovery unit must be equipped with a heated separator to handle liquid refrigerant"
+        "text": "50 pounds or less of refrigerant"
       },
       {
         "id": "d",
-        "text": "The recovery unit must have dual-stage compression for low-pressure applications"
+        "text": "Any charge if the system is hermetic"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Low-pressure appliances like centrifugal chillers require active recovery equipment because passive recovery methods cannot achieve the necessary vacuum levels to remove refrigerant effectively from these systems that operate below atmospheric pressure.",
+    "correctOptionId": "a",
+    "explanation": "EPA Type I covers small appliances that are manufactured, charged, and hermetically sealed in a factory with 5 pounds or less of refrigerant.",
     "distractorExplanations": {
-      "a": "While deep vacuum is important, 29 inches of mercury is not the defining requirement for low-pressure recovery equipment selection",
-      "c": "Heated separators are useful but not the primary consideration when selecting recovery equipment for low-pressure systems",
-      "d": "Dual-stage compression is not a specific requirement for low-pressure appliance recovery equipment"
+      "b": "Fifteen pounds exceeds the Type I small-appliance charge limit.",
+      "c": "Fifty pounds describes larger equipment outside Type I scope.",
+      "d": "Hermetic construction alone does not remove the 5-pound charge cap for Type I classification."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+  },
+  {
+    "id": "epa-608-readiness-check-type-1-048",
+    "examSlug": "epa-608-readiness-check",
+    "topicId": "type-1",
+    "prompt": "After recovering refrigerant from a small appliance, where must the recovered refrigerant be sent?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To an EPA-certified reclaimer, distributor, or recycler approved to accept it"
+      },
+      {
+        "id": "b",
+        "text": "Directly to a municipal landfill if the charge is under 1 pound"
+      },
+      {
+        "id": "c",
+        "text": "Back into the atmosphere through a purge valve"
+      },
+      {
+        "id": "d",
+        "text": "Only to the original equipment manufacturer"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Recovered refrigerant must be handled by certified reclaimers or approved recipients; intentional venting is prohibited.",
+    "distractorExplanations": {
+      "b": "Landfill disposal of refrigerant cylinders or vented refrigerant is not permitted.",
+      "c": "Venting regulated refrigerant violates Section 608.",
+      "d": "Manufacturers are not the only approved destination for recovered refrigerant."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+  },
+  {
+    "id": "epa-608-readiness-check-type-2-007",
+    "examSlug": "epa-608-readiness-check",
+    "topicId": "type-2",
+    "prompt": "When adding R-410A to a residential split system, why must technicians use a tank with a reverse-threaded (left-hand) service valve?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To prevent accidental use of the wrong refrigerant on an R-410A system"
+      },
+      {
+        "id": "b",
+        "text": "Because R-410A cannot be stored in standard cylinders"
+      },
+      {
+        "id": "c",
+        "text": "To increase recovery speed on high-pressure systems"
+      },
+      {
+        "id": "d",
+        "text": "Because R-410A requires oxygen service fittings"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "R-410A systems use unique left-hand threads on service ports and cylinders to reduce cross-contamination with other refrigerants such as R-22.",
+    "distractorExplanations": {
+      "b": "R-410A is stored in standard refrigerant cylinders with left-hand fittings, not exotic containers.",
+      "c": "Thread orientation is a safety and compatibility measure, not a recovery-speed feature.",
+      "d": "R-410A does not use oxygen-service fittings; left-hand threads are the distinguishing feature."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+  },
+  {
+    "id": "epa-608-readiness-check-type-2-017",
+    "examSlug": "epa-608-readiness-check",
+    "topicId": "type-2",
+    "prompt": "A technician pressure-tests a repaired R-22 split system with dry nitrogen. When is it acceptable to release the nitrogen?",
+    "options": [
+      {
+        "id": "a",
+        "text": "After confirming the test pressure is released to atmosphere in a ventilated area with no mixed refrigerant present"
+      },
+      {
+        "id": "b",
+        "text": "Only if refrigerant is vented first to speed up the test"
+      },
+      {
+        "id": "c",
+        "text": "Never — nitrogen must be recovered into a refrigerant cylinder"
+      },
+      {
+        "id": "d",
+        "text": "Only when the system charge is below 3 pounds"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Dry nitrogen used for leak testing may be vented after the test if no regulated refrigerant is mixed with it and safe venting practices are followed.",
+    "distractorExplanations": {
+      "b": "Refrigerant must be recovered before testing; venting refrigerant is prohibited.",
+      "c": "Nitrogen used alone for leak testing does not require recovery into refrigerant cylinders.",
+      "d": "The small-charge exception does not govern nitrogen venting after a leak test."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+  },
+  {
+    "id": "epa-608-readiness-check-type-2-034",
+    "examSlug": "epa-608-readiness-check",
+    "topicId": "type-2",
+    "prompt": "Which leak rate threshold applies to commercial refrigeration equipment with more than 50 pounds of refrigerant under EPA regulations?",
+    "options": [
+      {
+        "id": "a",
+        "text": "20% annual leak rate before repair requirements apply"
+      },
+      {
+        "id": "b",
+        "text": "5% annual leak rate before repair requirements apply"
+      },
+      {
+        "id": "c",
+        "text": "0% — any detectable leak requires immediate system replacement"
+      },
+      {
+        "id": "d",
+        "text": "35% annual leak rate before repair requirements apply"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "EPA leak repair rules set category-specific thresholds; commercial refrigeration with more than 50 pounds is commonly cited at a 20% annual leak rate trigger for repair and recordkeeping.",
+    "distractorExplanations": {
+      "b": "Five percent applies to other appliance categories such as comfort cooling, not this commercial refrigeration threshold.",
+      "c": "EPA rules require repair within specified timeframes at defined leak rates, not automatic replacement at any leak.",
+      "d": "Thirty-five percent is not the commercial refrigeration threshold under EPA leak repair requirements."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+  },
+  {
+    "id": "epa-608-readiness-check-type-3-002",
+    "examSlug": "epa-608-readiness-check",
+    "topicId": "type-3",
+    "prompt": "Why must low-pressure chillers be kept under a slight positive pressure during extended shutdowns?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To prevent air and moisture from entering the system through leaks on the low side"
+      },
+      {
+        "id": "b",
+        "text": "To eliminate the need for oil changes"
+      },
+      {
+        "id": "c",
+        "text": "To allow direct venting of non-condensables without recovery"
+      },
+      {
+        "id": "d",
+        "text": "To convert the chiller to a high-pressure appliance"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Low-pressure systems operate below atmospheric pressure on the evaporator side; positive pressure during shutdown reduces air and moisture ingress that causes acids and non-condensables.",
+    "distractorExplanations": {
+      "b": "Oil maintenance is still required; pressure control addresses contamination ingress, not lubrication intervals.",
+      "c": "Non-condensables must still be handled without venting regulated refrigerant.",
+      "d": "Operating pressure classification is fixed by equipment design, not shutdown pressurization."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+  },
+  {
+    "id": "epa-608-readiness-check-type-3-016",
+    "examSlug": "epa-608-readiness-check",
+    "topicId": "type-3",
+    "prompt": "When recovering refrigerant from a low-pressure centrifugal chiller, what is the typical first step before opening the machine?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Warm the refrigerant to drive vapor into the condenser and start recovery from the proper low-side access"
+      },
+      {
+        "id": "b",
+        "text": "Vent the purge unit directly to atmosphere"
+      },
+      {
+        "id": "c",
+        "text": "Add R-410A to raise system pressure above 100 psig"
+      },
+      {
+        "id": "d",
+        "text": "Remove all oil before any recovery begins"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Low-pressure chiller recovery often requires controlled heating to boil refrigerant off the evaporator bundle and route vapor for recovery because the machine operates below atmospheric pressure on the low side.",
+    "distractorExplanations": {
+      "b": "Venting through the purge unit can release regulated refrigerant and violates recovery requirements.",
+      "c": "Mixing incompatible refrigerants such as R-410A into a low-pressure chiller is improper and dangerous.",
+      "d": "Oil removal is not the first recovery step; refrigerant must be recovered before major opening of the circuit."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+  },
+  {
+    "id": "epa-608-readiness-check-type-3-025",
+    "examSlug": "epa-608-readiness-check",
+    "topicId": "type-3",
+    "prompt": "A technician is leak testing a low-pressure chiller after replacing a tube bundle gasket. Which practice complies with EPA requirements?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pressurize with dry nitrogen and soap-bubble test before pulling a deep vacuum and charging"
+      },
+      {
+        "id": "b",
+        "text": "Use controlled R-123 release to locate leaks by smell"
+      },
+      {
+        "id": "c",
+        "text": "Skip leak testing if the chiller passed operation last season"
+      },
+      {
+        "id": "d",
+        "text": "Vent the entire charge to atmosphere to speed gasket seating"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "After major repairs, technicians leak test with an inert trace gas such as nitrogen, then evacuate and charge; intentional refrigerant venting for leak detection is prohibited.",
+    "distractorExplanations": {
+      "b": "Using refrigerant release as a leak tracer violates venting prohibitions.",
+      "c": "Prior season performance does not replace post-repair leak verification.",
+      "d": "Venting the charge is illegal and unnecessary for gasket replacement."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   }
 ]

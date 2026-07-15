@@ -11,6 +11,7 @@
     "check:boilerplate": "node scripts/check-boilerplate.mjs",
     "build:mock-banks": "python3 scripts/build-mock-banks.py",
     "generate:mock-banks": "node scripts/generate-mock-banks-openrouter.mjs",
+    "merge:local-banks": "node scripts/merge-local-mock-questions.mjs",
     "validate:mock-banks": "node scripts/validate-mock-banks-openrouter.mjs",
     "generate:deck-covers": "node scripts/generate-deck-covers.mjs --catalog --force",
     "generate:deck-covers:missing": "node scripts/generate-deck-covers.mjs --all-missing",

@@ -64,7 +64,15 @@ export function loadCredentials() {
 function extractJson(text) {
   const fenced = text.match(/```(?:json)?\s*([\s\S]*?)```/);
   const raw = fenced ? fenced[1].trim() : text.trim();
-  return JSON.parse(raw);
+  try {
+    return JSON.parse(raw);
+  } catch (error) {
+    const objectMatch = raw.match(/\{[\s\S]*\}/);
+    if (objectMatch) {
+      return JSON.parse(objectMatch[0]);
+    }
+    throw error;
+  }
 }
 
 async function chatJsonOpenRouter({
