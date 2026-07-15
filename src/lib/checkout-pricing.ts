@@ -209,8 +209,8 @@ export function getDeckCheckoutCtaLabel(
     return `Get ${deck.shortName} PDF${priceSuffix}`;
   }
 
-  const cards = deck.facts.cards;
-  const cardPart = cards > 0 ? `${cards}-Card ` : "";
+  const cardMatch = deck.facts.cards.match(/^\d+/);
+  const cardPart = cardMatch ? `${cardMatch[0]}-Card ` : "";
   return `Get ${cardPart}${deck.shortName} Deck${priceSuffix}`;
 }
 
