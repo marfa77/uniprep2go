@@ -1927,7 +1927,29 @@ const rawDecks: Deck[] = [
       { name: "Level 2/3 Application and Advice", examWeight: "Submission + interview", cards: "Planned" },
       { name: "Case Study and Interview Structure", examWeight: "APC final assessment", cards: "Planned" },
     ],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question:
+          "On site you notice water pooling near temporary electrics. The contractor says it is under control. What do you do?",
+        answer:
+          "Correct: (b) Report the hazard and do not enter the affected area until remedied. H&S requires immediate escalation of observed risks.",
+        imageUrl: "/samples/mrics-anki-deck-sample-1.webp",
+      },
+      {
+        question:
+          "You attend a RICS branch event on digital surveying. Which CPD entry best meets APC expectations?",
+        answer:
+          "Correct: (c) Two hours structured learning with three techniques you will trial on your next instruction. Structured, reflected CPD linked to pathway competencies strengthens the APC record.",
+        imageUrl: "/samples/mrics-anki-deck-sample-2.webp",
+      },
+      {
+        question:
+          "Your multidisciplinary team architect keeps missing cost review deadlines. What teamwork action is best?",
+        answer:
+          "Correct: (d) Agree a shared milestone plan with clear inputs, owners, and a coordination call before submission. Effective teamwork uses shared planning and early escalation.",
+        imageUrl: "/samples/mrics-anki-deck-sample-3.webp",
+      },
+    ],
     faqs: [
       {
         question: "Is there a free MRICS practice test?",

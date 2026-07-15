@@ -173,6 +173,20 @@ describe("anki-deck-launch", () => {
     ]);
   });
 
+  it("exposes launched MRICS deck with sample card screenshots", () => {
+    const mrics = getCatalogDeckBySlug("mrics-anki-deck");
+    expect(mrics).toBeDefined();
+    expect(mrics?.status).toBe("available");
+    expect(mrics?.apkgStatus).toBe("ready");
+    expect(mrics?.checkoutUrl).toContain("gumroad.com/l/mrics-anki-deck");
+    expect(mrics?.sampleCards).toHaveLength(3);
+    expect(mrics?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/mrics-anki-deck-sample-1.webp",
+      "/samples/mrics-anki-deck-sample-2.webp",
+      "/samples/mrics-anki-deck-sample-3.webp",
+    ]);
+  });
+
   it("launches all building deck slugs into catalog", () => {
     const slugs = [
       "hvac-epa-608-anki-deck",
