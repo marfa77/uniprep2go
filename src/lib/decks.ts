@@ -2111,7 +2111,28 @@ const rawDecks: Deck[] = [
       { name: "Fire Protection, Security, and Network", examWeight: "~35%", cards: "Planned" },
       { name: "Data Centre Operations", examWeight: "15%", cards: "Planned" },
     ],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question:
+          "ASHRAE TC 9.9 recommended inlet air temperature ranges for most IT equipment are:",
+        answer:
+          "Correct: (a) Defined environmental classes allowing wider bands than legacy 20–25°C-only designs. TC 9.9 classes support higher supply temps where equipment allows, improving economizer hours.",
+        imageUrl: "/samples/cdcp-anki-deck-sample-1.webp",
+      },
+      {
+        question:
+          "A CRAH (Computer Room Air Handler) differs from a CRAC primarily because:",
+        answer:
+          "Correct: (a) CRAH uses chilled water coils while CRAC typically has integral refrigeration. CRAHs are air handlers connected to central chiller plants; CRACs are self-contained DX units.",
+        imageUrl: "/samples/cdcp-anki-deck-sample-2.webp",
+      },
+      {
+        question: "Chilled water supply temperature elevation (within ASHRAE limits) can:",
+        answer:
+          "Correct: (a) Improve chiller efficiency and increase free cooling hours. Higher CHW temps raise evaporator temperature and reduce chiller lift.",
+        imageUrl: "/samples/cdcp-anki-deck-sample-3.webp",
+      },
+    ],
     faqs: [
       {
         question: "Is there a free CDCP practice test?",

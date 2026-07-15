@@ -103,6 +103,20 @@ describe("anki-deck-launch", () => {
     ]);
   });
 
+  it("exposes launched CDCP deck with sample card screenshots", () => {
+    const cdcp = getCatalogDeckBySlug("cdcp-anki-deck");
+    expect(cdcp).toBeDefined();
+    expect(cdcp?.status).toBe("available");
+    expect(cdcp?.apkgStatus).toBe("ready");
+    expect(cdcp?.checkoutUrl).toContain("gumroad.com/l/cdcp-anki-deck");
+    expect(cdcp?.sampleCards).toHaveLength(3);
+    expect(cdcp?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/cdcp-anki-deck-sample-1.webp",
+      "/samples/cdcp-anki-deck-sample-2.webp",
+      "/samples/cdcp-anki-deck-sample-3.webp",
+    ]);
+  });
+
   it("launches all building deck slugs into catalog", () => {
     const slugs = [
       "hvac-epa-608-anki-deck",
