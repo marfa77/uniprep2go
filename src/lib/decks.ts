@@ -1995,7 +1995,29 @@ const rawDecks: Deck[] = [
       { name: "Project Finance & Construction Technology", examWeight: "Core Level 3", cards: "Planned" },
       { name: "Mandatory Ethics & Optional Competencies", examWeight: "Ethics L3; 2 optional L2", cards: "Planned" },
     ],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question:
+          "A BOQ for NEC Option B requires activity schedule instead of traditional BOQ. What quantification focus changes?",
+        answer:
+          "Correct: (a) Price against defined activities/milestones with scope references rather than only trade bills. NEC Option B uses BOQ; quantification must align with the chosen NEC option.",
+        imageUrl: "/samples/mrics-quantity-surveying-anki-deck-sample-1.webp",
+      },
+      {
+        question:
+          "An apprentice QS measures external paving. The drawing shows 1,250 m² but site boundaries reduce workable area. What action is required?",
+        answer:
+          "Correct: (b) Adjust quantity to workable area per drawings and site constraints, note assumption in query if unclear. Measurement must reflect constructible scope with queries for ambiguities.",
+        imageUrl: "/samples/mrics-quantity-surveying-anki-deck-sample-2.webp",
+      },
+      {
+        question:
+          "NRM3 is requested for maintenance quantification on a shopping centre. Its primary use is:",
+        answer:
+          "Correct: (c) Order of cost estimates and elemental cost planning for building maintenance works. NRM3 supports measurement and cost planning of maintenance works.",
+        imageUrl: "/samples/mrics-quantity-surveying-anki-deck-sample-3.webp",
+      },
+    ],
     faqs: [
       {
         question: "Is there a free MRICS Quantity Surveying practice test?",

@@ -187,6 +187,20 @@ describe("anki-deck-launch", () => {
     ]);
   });
 
+  it("exposes launched MRICS QS deck with sample card screenshots", () => {
+    const mricsQs = getCatalogDeckBySlug("mrics-quantity-surveying-anki-deck");
+    expect(mricsQs).toBeDefined();
+    expect(mricsQs?.status).toBe("available");
+    expect(mricsQs?.apkgStatus).toBe("ready");
+    expect(mricsQs?.checkoutUrl).toContain("gumroad.com/l/mrics-quantity-surveying-anki-deck");
+    expect(mricsQs?.sampleCards).toHaveLength(3);
+    expect(mricsQs?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/mrics-quantity-surveying-anki-deck-sample-1.webp",
+      "/samples/mrics-quantity-surveying-anki-deck-sample-2.webp",
+      "/samples/mrics-quantity-surveying-anki-deck-sample-3.webp",
+    ]);
+  });
+
   it("launches all building deck slugs into catalog", () => {
     const slugs = [
       "hvac-epa-608-anki-deck",
