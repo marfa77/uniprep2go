@@ -23,6 +23,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CATALOG_PATH = join(root, "src/data/gumroad/building-anki-decks.json");
 const SPECS_PATH = join(root, "src/data/building-deck-specs.json");
 const COVERS_DIR = join(root, "public/covers");
+const GUMROAD_THUMBS_DIR = join(root, "public/gumroad-thumbnails");
 
 const PRODUCT_CREATE_DELAY_MS = Number(process.env.GUMROAD_CREATE_DELAY_MS ?? 5000);
 const ANKI_GENERATOR_ROOT =
@@ -62,12 +63,13 @@ function resolveGumroadToken() {
 }
 
 function parseArgs(argv) {
-  const args = { slug: null, dryRun: false, force: false, assetsOnly: false };
+  const args = { slug: null, dryRun: false, force: false, assetsOnly: false, thumbnailsOnly: false };
   for (let i = 2; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg === "--dry-run") args.dryRun = true;
     else if (arg === "--force") args.force = true;
     else if (arg === "--assets-only") args.assetsOnly = true;
+    else if (arg === "--thumbnails-only") args.thumbnailsOnly = true;
     else if (arg === "--slug") args.slug = argv[++i];
   }
   return args;
@@ -115,23 +117,23 @@ async function loadDeckMeta() {
   return { getAllMockExams: configs.getAllMockExams, titles };
 }
 
+/** Gumroad expects HTML descriptions; plain \\n via CLI gets stored as literal backslash-n. */
 function buildProductDescription({ title, mockPath, apkgReady }) {
   const delivery = apkgReady
-    ? "DELIVERY: Instant download. After checkout, open your Gumroad library or receipt and download the Anki .apkg file immediately."
-    : "DELIVERY: Complete checkout now. Your Gumroad receipt is issued immediately. The Anki .apkg download link activates in your Gumroad library once the deck file is uploaded.";
+    ? "Instant download. After checkout, open your Gumroad library or receipt and download the Anki <code>.apkg</code> file immediately."
+    : "Complete checkout now. Your Gumroad receipt is issued immediately. The Anki <code>.apkg</code> download link activates in your Gumroad library once the deck file is uploaded.";
+
+  const mockLink = mockPath
+    ? `<p>Built from the same validated item bank as the <a href="${mockPath}">free readiness check</a>.</p>`
+    : "<p>Pairs with the free UniPrep2Go readiness check on <a href=\"https://uniprep2go.study/mock-exams\">uniprep2go.study</a>.</p>";
 
   return [
-    `${title} — independent UniPrep2Go Anki deck for active recall.`,
-    mockPath
-      ? `Built from the same validated item bank as the free readiness check: ${mockPath}`
-      : "Pairs with the free UniPrep2Go readiness check on uniprep2go.study.",
-    "",
-    delivery,
-    "",
-    "Import into Anki desktop (File → Import), then sync to AnkiMobile or AnkiDroid via AnkiWeb.",
-    "",
-    "Independent study aid — not official exam material.",
-  ].join("\n");
+    `<p><strong>${title}</strong> — independent UniPrep2Go Anki deck for active recall.</p>`,
+    mockLink,
+    `<p><strong>Delivery:</strong> ${delivery}</p>`,
+    "<p>Import into Anki desktop (File → Import), then sync to AnkiMobile or AnkiDroid via AnkiWeb.</p>",
+    "<p><em>Independent study aid — not official exam material.</em></p>",
+  ].join("");
 }
 
 function resolveCoverPath(slug) {
@@ -145,7 +147,42 @@ function buildApkgDisplayName(slug, titles) {
   return `${safe}_Anki_Deck.apkg`;
 }
 
-function prepareSquareThumbnail(coverPath) {
+async function putGumroadDescriptionAsync(productId, description, dryRun) {
+  if (dryRun) {
+    return;
+  }
+  const token = resolveGumroadToken();
+  if (!token) {
+    throw new Error("GUMROAD_ACCESS_TOKEN required to update description");
+  }
+  const response = await fetch(`https://api.gumroad.com/v2/products/${productId}`, {
+    method: "PUT",
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ description }),
+  });
+  const payload = await response.json();
+  if (!response.ok || !payload.success) {
+    throw new Error(`Gumroad description update failed: ${JSON.stringify(payload).slice(0, 200)}`);
+  }
+}
+
+function resolveGumroadThumbnailPath(slug) {
+  const jpg = join(GUMROAD_THUMBS_DIR, `${slug}.jpg`);
+  if (existsSync(jpg)) {
+    return jpg;
+  }
+  return null;
+}
+
+function prepareSquareThumbnail(coverPath, slug) {
+  const prebuilt = slug ? resolveGumroadThumbnailPath(slug) : null;
+  if (prebuilt) {
+    return { thumbJpg: prebuilt, workDir: null, prebuilt: true };
+  }
+
   const workDir = mkdtempSync(join(tmpdir(), "gumroad-thumb-"));
   const fullPng = join(workDir, "full.png");
   const squarePng = join(workDir, "square.png");
@@ -156,11 +193,16 @@ function prepareSquareThumbnail(coverPath) {
     const dims = execSync(`sips -g pixelWidth -g pixelHeight "${fullPng}"`, { encoding: "utf8" });
     const width = Number(dims.match(/pixelWidth: (\d+)/)?.[1] ?? 0);
     const height = Number(dims.match(/pixelHeight: (\d+)/)?.[1] ?? 0);
+    // Landscape site covers: crop the right (monogram) panel, not the left cream strip.
     const side = Math.min(width, height);
-    execSync(`sips -c ${side} ${side} "${fullPng}" --out "${squarePng}"`, { stdio: "ignore" });
+    const cropX = Math.max(0, width - side);
+    execSync(
+      `sips -c ${side} ${side} --cropOffset ${cropX} 0 "${fullPng}" --out "${squarePng}"`,
+      { stdio: "ignore" },
+    );
     execSync(`sips -z 1200 1200 "${squarePng}" --out "${squarePng}"`, { stdio: "ignore" });
     execSync(`sips -s format jpeg "${squarePng}" --out "${thumbJpg}"`, { stdio: "ignore" });
-    return { thumbJpg, workDir };
+    return { thumbJpg, workDir, prebuilt: false };
   } catch (error) {
     rmSync(workDir, { recursive: true, force: true });
     throw error;
@@ -201,6 +243,20 @@ async function createGumroadProduct({ token, name, priceCents, description, perm
   return payload.product;
 }
 
+function uploadProductThumbnail({ productId, slug, coverPath, dryRun }) {
+  const { thumbJpg, workDir, prebuilt } = prepareSquareThumbnail(coverPath, slug);
+  try {
+    console.log(
+      `  thumbnail: 1200×1200 JPEG${prebuilt ? " (blueprint square)" : " (cropped fallback)"}`,
+    );
+    runGumroad(`products thumbnail set ${productId} --image "${thumbJpg}"`, { dryRun });
+  } finally {
+    if (workDir) {
+      rmSync(workDir, { recursive: true, force: true });
+    }
+  }
+}
+
 function uploadProductAssets({
   productId,
   slug,
@@ -215,9 +271,11 @@ function uploadProductAssets({
     { dryRun },
   );
 
-  const { thumbJpg, workDir: thumbDir } = prepareSquareThumbnail(coverPath);
+  const { thumbJpg, workDir, prebuilt } = prepareSquareThumbnail(coverPath, slug);
   try {
-    console.log(`  assets: thumbnail (1200×1200 JPEG from ${coverPath})`);
+    console.log(
+      `  assets: thumbnail (1200×1200 JPEG${prebuilt ? ", blueprint square" : ", cropped fallback"})`,
+    );
     runGumroad(`products thumbnail set ${productId} --image "${thumbJpg}"`, { dryRun });
 
     const { coverPng, workDir: coverDir } = prepareCoverPng(coverPath);
@@ -228,8 +286,30 @@ function uploadProductAssets({
       rmSync(coverDir, { recursive: true, force: true });
     }
   } finally {
-    rmSync(thumbDir, { recursive: true, force: true });
+    if (workDir) {
+      rmSync(workDir, { recursive: true, force: true });
+    }
   }
+}
+
+async function syncProductThumbnail({ slug, record, dryRun }) {
+  const productId = record.gumroadProductId;
+  if (!productId) {
+    throw new Error(`${slug}: gumroadProductId missing`);
+  }
+  const coverPath = resolveCoverPath(slug);
+  if (!coverPath) {
+    throw new Error(`${slug}: cover not found at public/covers/${slug}.webp`);
+  }
+
+  if (dryRun) {
+    console.log(`  would set square thumbnail`);
+    return;
+  }
+
+  uploadProductThumbnail({ productId, slug, coverPath, dryRun: false });
+  runGumroad(`products publish ${productId}`);
+  console.log(`  thumbnail uploaded + product published`);
 }
 
 async function syncProductAssets({
@@ -277,7 +357,8 @@ async function syncProductAssets({
     dryRun: false,
   });
 
-  runGumroad(`products update ${productId} --description ${JSON.stringify(description)}`);
+  // Prefer polish_building_gumroad.py for rich HTML; only set a minimal HTML fallback here.
+  await putGumroadDescriptionAsync(productId, description, dryRun);
   runGumroad(`products publish ${productId}`);
 
   catalog.products[slug] = {
@@ -300,6 +381,9 @@ async function main() {
     ? [args.slug]
     : Object.keys(catalog.products).filter((slug) => {
         if (args.force) return true;
+        if (args.thumbnailsOnly) {
+          return Boolean(catalog.products[slug].gumroadProductId);
+        }
         if (args.assetsOnly) {
           return catalog.products[slug].gumroadProductId && !catalog.products[slug].apkgUploadedAt;
         }
@@ -307,10 +391,25 @@ async function main() {
       });
 
   if (allSlugs.length === 0) {
-    if (args.assetsOnly) {
+    if (args.thumbnailsOnly) {
+      console.log("No products with gumroadProductId found for thumbnail upload.");
+    } else if (args.assetsOnly) {
       console.log("No products need asset upload (all have apkgUploadedAt).");
     } else {
       console.log("All building deck Gumroad products already linked. Use --force to recreate.");
+    }
+    return;
+  }
+
+  if (args.thumbnailsOnly) {
+    console.log(`${args.dryRun ? "Dry-run" : "Upload thumbnails for"} ${allSlugs.length} product(s)`);
+    for (const slug of allSlugs) {
+      console.log(`→ ${slug}`);
+      await syncProductThumbnail({
+        slug,
+        record: catalog.products[slug],
+        dryRun: args.dryRun,
+      });
     }
     return;
   }

@@ -567,7 +567,7 @@ describe("deck catalog", () => {
       "delf-b2-french-anki-deck": "DELF B2 French Anki Deck — 2000+ Flashcards",
       "dutch-a2-inburgering-anki-deck":
         "Dutch A2 Inburgering Anki Deck — 1000+ Flashcards",
-      "gmat-focus-anki-deck": "GMAT Focus Anki Deck — 150+ Flashcards",
+      "gmat-focus-anki-deck": "GMAT Focus Anki Deck — 400+ Flashcards",
       "german-a2-anki-deck": "German A2 Anki Deck — 1000 Flashcards",
       "celi-b1-italian-anki-deck": "CELI B1 Italian Anki Deck — 1,373 Flashcards",
       "danish-a2-prove-i-dansk-anki-deck":

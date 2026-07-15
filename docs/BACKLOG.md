@@ -2,7 +2,133 @@
 
 Приоритизированный список задач по продукту, сайту и каталогу колод.
 
-Обновлено: 2026-05-31
+Обновлено: 2026-07-15
+
+---
+
+## 🎯 Следующие экзамены (roadmap расширения каталога)
+
+**Критерий отбора:** дополняет уже существующий кластер, хорошо ложится на pipeline **mock → deck → Gumroad**, даёт **MCQ / recall**, а не essay-only.
+
+### Что уже есть (baseline)
+
+| Кластер | Экзамены |
+|---------|----------|
+| **Building / sustainability** | EPA 608, BMS, LEED GA, LEED AP BD+C, WELL AP, CEM, ASHRAE, CDCP, NEBOSH, CFPS, MRICS APC, MRICS QS |
+| **MBA** | GMAT Focus |
+| **Finance (US)** | SIE, Series 7, Series 63, CFA L1, CFA L2, FRM Part 1 |
+| **US licensing** | Insurance L&H, Insurance P&C, CA Real Estate, ServSafe, PTCB |
+| **Language** | 22+ Prep2Go decks |
+
+**Инфраструктура:** registry → mock bank → validation → Anki `.apkg` → Gumroad → `/decks` + `/mock-exams` + hub `/building-certification-anki-decks`.
+
+---
+
+### Tier 1 — максимально логично (дополняет live-кластеры)
+
+#### Green building / LEED pathway
+
+| Экзамен | Зачем | Кластер |
+|---------|-------|---------|
+| **LEED AP O+M** | Естественный шаг после BD+C; та же аудитория USGBC | `green-building` |
+| **LEED AP ID+C** | Интерьеры, дизайнеры рядом с WELL AP | `green-building` |
+| **CMVP** (AEE) | Пара к CEM — measurement & verification | `green-building` / AEE |
+| **SITES AP** или **ENV SP** | Расширение sustainability без нового домена | `green-building` |
+
+#### Facility / HVAC / energy
+
+| Экзамен | Зачем | Кластер |
+|---------|-------|---------|
+| **CMVP**, **REP** (AEE) | CEM уже есть — та же экосистема AEE | `green-building` / AEE |
+| **NATE** (HVAC tech) | Аудитория EPA 608 + BMS, другой угол | `hvac-controls` |
+| **IFMA CFM / FMP** | Facility managers после BMS/CEM | `hvac-controls` |
+
+#### Data centre
+
+| Экзамен | Зачем | Кластер |
+|---------|-------|---------|
+| **DCDC** (EPI advanced) | Upsell после CDCP | `datacenter` |
+| **CTDC** (Uptime) | Конкурирующий стандарт, тот же ICP | `datacenter` |
+
+#### Safety / fire (рядом с NEBOSH + CFPS)
+
+| Экзамен | Зачем | Кластер |
+|---------|-------|---------|
+| **CSP** (BCSP) | US safety pro, complement NEBOSH | `safety-fire` |
+| **CHST / ASP** | Construction safety, OSHA-adjacent | `safety-fire` |
+| **OSHA 30-Hour** (Construction / General) | Огромный спрос, MCQ-friendly summary deck | `safety-fire` |
+
+#### Construction / PM (рядом с MRICS)
+
+| Экзамен | Зачем | Кластер |
+|---------|-------|---------|
+| **PMP** (PMI) | Универсальный; QS/APC кандидаты часто идут параллельно | `construction-surveying` |
+| **CCM** (CMAA) | Construction management, US counterpart MRICS | `construction-surveying` |
+| **CCS / CCP** (AACE) | Cost/controls — близко MRICS QS | `construction-surveying` |
+
+#### MBA / grad (рядом с GMAT)
+
+| Экзамен | Зачем | Кластер |
+|---------|-------|---------|
+| **GRE General** | Тот же pipeline (Quant + Verbal + формулы) | `mba-admissions` |
+| **EA** (Executive Assessment) | Короткий MBA diagnostic, меньше конкуренции | `mba-admissions` |
+
+**Рекомендуемый порядок Tier 1:** LEED AP O+M → GRE → PMP → CMVP → DCDC.
+
+---
+
+### Tier 2 — US licensing (сайт US-first)
+
+| Экзамен | Зачем | Примечание |
+|---------|-------|------------|
+| **Series 65 / 66** | Логичное продолжение SIE → 7 → 63 | Finance cluster |
+| **Series 24** | Principal / supervisor track | Finance cluster |
+| **Real estate — FL, TX, NY** | CA уже есть; multi-state SEO | US licensing |
+
+---
+
+### Tier 3 — finance (расширение CFA/FRM)
+
+| Экзамен | Зачем |
+|---------|-------|
+| **CFA Level 3** | L1/L2 уже есть |
+| **CAIA Level 1** | Alternatives, overlap с CFA alt investments |
+| **SCR** (Sustainability & Climate Risk) | CFA Institute + green building audience |
+
+---
+
+### Tier 4 — сильный спрос, но другой формат / сложнее
+
+| Экзамен | Комментарий |
+|---------|-------------|
+| **ARE 5.0** (архитектор US) | 6 divisions — лучше по одному division или overview deck |
+| **PE / FE** (NCEES) | Большой рынок, много формул — как GMAT, но шире |
+| **NCIDQ** | Дизайн интерьеров, рядом WELL / LEED ID+C |
+| **LSAT / MCAT** | Огромный TAM, но другая команда контента |
+
+---
+
+### Практичный порядок запуска (3 волны)
+
+```
+Волна A — quick wins (без нового deck content)
+  1. ~~PTCB readiness mock → привязка к существующему deck~~ ✅ (2026-07-15)
+  2. Homepage / hub cross-links для новых кластеров (сделано для building)
+
+Волна B — Tier 1 cluster extensions
+  3. LEED AP O+M          (green-building)
+  4. GRE General          (mba-admissions, клон GMAT pipeline)
+  5. PMP                  (construction-surveying)
+  6. CMVP                 (green-building / AEE)
+  7. DCDC                 (datacenter upsell)
+
+Волна C — US licensing + finance depth
+  8. Series 65/66
+  9. CFA L3 / CAIA L1
+  10. Real estate FL/TX/NY
+```
+
+**Оценка объёма bank на экзамен:** 4–5 topics × 50 Q = 200–250 MCQ в bank; session subsample по конфигу mock (как GMAT 45 из 200).
 
 ---
 
@@ -23,29 +149,9 @@
 
 ## 🚀 Следующие продукты (по результатам market research)
 
-### #1 — FRM Part 1 Anki Deck (оценка 9.5/10)
-
-- [ ] **Собрать и опубликовать FRM Part 1 deck**
-  - Рынок: ~50k кандидатов/год, **ноль платных Anki decks** на Gumroad/Etsy/TPT
-  - Конкурент FRM Quiz Bank: $199/мес (подписка, не Anki) — высокий потолок WTP
-  - Контент: quant, derivatives, fixed income, CAPM — **пересекается с CFA L1**
-  - Рекомендуемая цена: **$15–18**
-  - Действие: собрать deck в Anki Generator → Gumroad → `decks.ts` → `/decks/[slug]`
-
-### #2 — CFA Level 2 Anki Deck (оценка 8.0/10)
-
-- [ ] **Собрать CFA L2 deck как cross-sell для L1-покупателей**
-  - Аудитория: те же r/CFA (213k), каждый сдавший L1 = следующий покупатель
-  - Конкуренты на Etsy: $17.55–$27; бесплатный Noji (1558 cards) — слабая дистрибуция
-  - Рекомендуемая цена: **$18–22**
-  - На сайте уже есть запись `cfa-level-2-anki-deck` со статусом `planned`
-
-### #3 — CFA L1 Formula Deck (быстрый spin-off)
-
-- [ ] **Formula-only deck для CFA L1**
-  - Выделить формулы из основной колоды в отдельный продукт
-  - Бандл: Full deck + Formula deck за $17–18 (vs $11 + $9 поштучно)
-  - На сайте уже есть запись `cfa-level-1-formula-deck` со статусом `planned`
+- [x] FRM Part 1 Anki Deck — live
+- [x] CFA Level 2 Anki Deck — live
+- [x] CFA L1 Formula Reference PDF — live
 
 ---
 
@@ -93,67 +199,36 @@
 
 ---
 
+### Building certification line — shipped (2026-07)
+
+- [x] 13 building decks: EPA 608, BMS, LEED GA/AP BD+C, WELL AP, CEM, ASHRAE, CDCP, NEBOSH, CFPS, MRICS×2, GMAT Focus
+- [x] Mock banks 200 Q, Gumroad checkout, hub `/building-certification-anki-decks`
+- [x] Cluster navigation: companions, related decks, homepage repair pairs
+
+### HVAC / EPA 608
+
+- [x] EPA Section 608 readiness mock + deck + Gumroad
+- [x] BMS / BAS readiness mock + deck + Gumroad
+
+### LEED, WELL AP & CEM
+
+- [x] LEED GA, LEED AP BD+C, WELL AP, CEM — mock + deck + Gumroad
+
+### ASHRAE, CDCP, NEBOSH, CFPS, MRICS, GMAT
+
+- [x] Все readiness mocks + Anki decks + sample screenshots (кроме GMAT formulas polish)
+
+---
+
 ## 💡 Позже (Low Priority)
 
 ### CPA — не приоритет сейчас
 
 - [ ] **CPA FAR section deck** (оценка 6.5/10)
   - r/CPA 100k+, но рынок защищён Becker/NINJA ($1500+ с встроенными flashcards)
-  - Нет paid Anki decks на Gumroad, но нужна accounting-экспертиза
-  - Цена: $12–16 за section
-  - Отложить до FRM + L2
+  - Отложить до расширения finance Tier 3
 
-### HVAC / EPA 608
-
-- [x] EPA Section 608 readiness mock + exam-facts doc layer (2026-06-02)
-- [ ] HVAC EPA 608 Anki deck (planned)
-
-### BMS / Building Automation
-
-- [x] BMS / BAS readiness mock + exam-facts doc layer (2026-06-02)
-- [ ] BMS Building Automation Anki deck (planned)
-
-### LEED, WELL AP & CEM (green building / wellness / energy)
-
-- [x] LEED Green Associate readiness mock + exam-facts (2026-06-02)
-- [x] LEED AP BD+C readiness mock + exam-facts (2026-06-02)
-- [x] WELL AP readiness mock + exam-facts (2026-06-02)
-- [x] CEM readiness mock + exam-facts (2026-06-02)
-- [ ] LEED GA, LEED AP BD+C, WELL AP, and CEM Anki decks (planned)
-
-### ASHRAE certifications
-
-- [x] ASHRAE certifications readiness mock + exam-facts (BCxP, BEMP, BEAP, CHD, HBDP, HFDP, OPMP) (2026-06-02)
-- [ ] ASHRAE certifications Anki deck (planned)
-
-### CDCP (data centre)
-
-- [x] CDCP readiness mock + exam-facts (EXIN EPI) (2026-06-02)
-- [ ] CDCP Anki deck (planned)
-
-### NEBOSH (occupational health & safety)
-
-- [x] NEBOSH IGC readiness mock + exam-facts (GIC1/GIC2) (2026-06-02)
-- [ ] NEBOSH IGC Anki deck (planned)
-
-### CFPS (fire protection)
-
-- [x] CFPS readiness mock + exam-facts (NFPA eight domains) (2026-06-02)
-- [ ] CFPS Anki deck (planned)
-
-### MRICS (chartered surveying)
-
-- [x] MRICS/APC readiness mock + exam-facts (2026-06-02)
-- [x] MRICS Quantity Surveying pathway readiness mock + exam-facts (2026-06-02)
-- [ ] MRICS APC Anki deck (planned)
-- [ ] MRICS Quantity Surveying Anki deck (planned)
-
-### GMAT — не приоритет
-
-- [x] GMAT Focus readiness mock + exam-facts doc layer (2026-06-02)
-- [ ] GMAT Anki deck (оценка низкая)
-  - 200k кандидатов, но аудитория MBA-applicants, не finance professionals
-  - Anki-культура слабее; официальные GMAC digital cards уже есть
+*(Старые секции HVAC/LEED/MRICS ниже — см. «Building certification line — shipped» выше.)*
 
 ---
 

@@ -7,6 +7,7 @@ import californiaRealEstatePreviewBank from "@/data/mock-exams/california-real-e
 import lifeHealthPreviewBank from "@/data/mock-exams/life-and-health-insurance-preview.json";
 import propertyCasualtyPreviewBank from "@/data/mock-exams/property-casualty-insurance-preview.json";
 import servSafeManagerMockBank from "@/data/mock-exams/servsafe-manager-mock.json";
+import ptcbPharmacyTechnicianMockBank from "@/data/mock-exams/ptcb-pharmacy-technician-mock.json";
 import gmatFocusReadinessBank from "@/data/mock-exams/gmat-focus-readiness-check.json";
 import epa608ReadinessBank from "@/data/mock-exams/epa-608-readiness-check.json";
 import bmsBasReadinessBank from "@/data/mock-exams/bms-bas-readiness-check.json";
@@ -20,6 +21,9 @@ import neboshReadinessBank from "@/data/mock-exams/nebosh-readiness-check.json";
 import cfpsReadinessBank from "@/data/mock-exams/cfps-readiness-check.json";
 import mricsReadinessBank from "@/data/mock-exams/mrics-readiness-check.json";
 import mricsQuantitySurveyingReadinessBank from "@/data/mock-exams/mrics-quantity-surveying-readiness-check.json";
+import cfaLevel2ReadinessBank from "@/data/mock-exams/cfa-level-2-readiness-check.json";
+import delfB2ReadinessBank from "@/data/mock-exams/delf-b2-readiness-check.json";
+import usCitizenshipReadinessBank from "@/data/mock-exams/us-citizenship-readiness-check.json";
 import { getMockExamConfig } from "./configs";
 import type { MockQuestion } from "./types";
 
@@ -33,6 +37,7 @@ const banksBySlug: Record<string, MockQuestion[]> = {
   "life-and-health-insurance-readiness-check": lifeHealthPreviewBank as unknown as MockQuestion[],
   "property-casualty-insurance-readiness-check": propertyCasualtyPreviewBank as unknown as MockQuestion[],
   "servsafe-manager-mock": servSafeManagerMockBank as unknown as MockQuestion[],
+  "ptcb-pharmacy-technician-mock": ptcbPharmacyTechnicianMockBank as unknown as MockQuestion[],
   "gmat-focus-readiness-check": gmatFocusReadinessBank as unknown as MockQuestion[],
   "epa-608-readiness-check": epa608ReadinessBank as unknown as MockQuestion[],
   "bms-bas-readiness-check": bmsBasReadinessBank as unknown as MockQuestion[],
@@ -46,6 +51,9 @@ const banksBySlug: Record<string, MockQuestion[]> = {
   "cfps-readiness-check": cfpsReadinessBank as unknown as MockQuestion[],
   "mrics-readiness-check": mricsReadinessBank as unknown as MockQuestion[],
   "mrics-quantity-surveying-readiness-check": mricsQuantitySurveyingReadinessBank as unknown as MockQuestion[],
+  "cfa-level-2-readiness-check": cfaLevel2ReadinessBank as unknown as MockQuestion[],
+  "delf-b2-readiness-check": delfB2ReadinessBank as unknown as MockQuestion[],
+  "us-citizenship-readiness-check": usCitizenshipReadinessBank as unknown as MockQuestion[],
 };
 
 export function getQuestionBank(examSlug: string) {

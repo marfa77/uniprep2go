@@ -1,0 +1,191 @@
+# SEO Audit — gmat
+
+**Date:** 2026-07-15T17:05:20.903Z
+**Site:** https://uniprep2go.study
+**Overall score:** 77
+
+## Executive summary
+GMAT Focus products show strong technical foundation (85/100) but suffer from content positioning gaps (72/100) and conversion friction (75/100). Critical issues: products marked as 'building/preview' despite being live, missing high-intent commercial keywords like 'gmat prep course' and 'gmat diagnostic test', and miscategorization hurting discoverability. Quick wins available in title optimization and status corrections that could drive 15-25% conversion lift.
+
+## Rule checks (0)
+
+## Top 10 actions
+1. **Fix product status: Change 'isBuilding: true' to 'available' for gmat-focus-anki-deck and 'status: preview' to 'live' for gmat-focus-readiness-check** — owner: Technical, effort: Low, impact: High - removes conversion friction and user confusion
+2. **Update gmat-focus-anki-deck title from 'GMAT Focus Exam Prep | 400+ cards' to 'GMAT Focus Prep Course | 400+ Flashcards + Practice Test'** — owner: Content, effort: Low, impact: High - targets 'gmat prep course' commercial keyword
+3. **Update gmat-focus-readiness-check title from 'Free GMAT Focus Practice Test | 45-Question Readiness Check' to 'Free GMAT Focus Diagnostic Test | 45 Questions | Score Predictor'** — owner: Content, effort: Low, impact: High - targets 'gmat diagnostic test' high-intent keyword
+4. **Recategorize GMAT Focus deck from 'building-certification-anki-decks' to new MBA prep category or finance/academic section** — owner: Technical, effort: Medium, impact: High - improves user experience and reduces bounce rate
+5. **Add cross-sell CTA on mock-exams/gmat-focus-readiness-check: 'Strengthen weak areas with 400+ GMAT Focus flashcards' button linking to deck** — owner: Conversion, effort: Low, impact: High - expected 15-25% increase in mock-to-deck conversion
+6. **Update gmat-focus-anki-deck description to: 'Complete GMAT Focus prep course: 400+ flashcards covering Quant, Verbal, and Data Insights sections. Includes free diagnostic test. Anki format for spaced repetition study. Independent prep alternative to Kaplan/Magoosh.'** — owner: Content, effort: Low, impact: Medium - improves E-A-T and commercial positioning
+7. **Update gmat-focus-readiness-check description to: 'Free GMAT Focus diagnostic test: 45 official-style questions across all 3 sections (Quant, Verbal, Data Insights). 90-minute timer, instant scoring, detailed explanations. Identify weak areas before your real exam. Not affiliated with GMAC.'** — owner: Content, effort: Low, impact: Medium - improves clarity and E-A-T
+8. **Add social proof on decks/gmat-focus-anki-deck: 'Test your readiness first with our free 45-question practice exam'** — owner: Conversion, effort: Low, impact: Medium - expected 10-15% increase in engagement
+9. **Create 'GMAT Focus vs Original GMAT: Complete Comparison Guide 2026' blog post targeting 'gmat focus vs gmat' keyword** — owner: Content, effort: High, impact: Medium - captures informational traffic for new format confusion
+10. **Create 'GMAT Data Insights Section: Complete Study Guide' blog post targeting 'gmat data insights practice' keyword** — owner: Content, effort: High, impact: Medium - low competition opportunity for new GMAT section
+
+## This week
+- Fix product status flags (rank 1)
+- Update both product titles (ranks 2-3)
+- Add mock-to-deck cross-sell CTA (rank 5)
+- Update product descriptions (ranks 6-7)
+
+## Technical SEO Analyst
+Score: 85
+
+```json
+{
+  "score": 85,
+  "critical_issues": [],
+  "indexation_gaps": [],
+  "quick_wins": [
+    "Update the title tag for the GMAT Focus Anki deck to match the headline for better keyword alignment and click-through rate. Current: 'GMAT Focus Exam Prep | 400+ cards | UniPrep2Go'. Suggested: 'GMAT Focus Exam Prep — 400+ cards + Free Mock | UniPrep2Go'.",
+    "Update the title tag for the GMAT Focus Readiness Check mock exam to match the headline for better keyword alignment and click-through rate. Current: 'Free GMAT Focus Practice Test | 45-Question Readiness Ch… | UniPrep2Go'. Suggested: 'Free GMAT Focus Readiness Check | UniPrep2Go'.",
+    "Ensure the 'isBuilding' flag for the 'gmat-focus-anki-deck' is accurate. If it's not a building certification, this categorization might be misleading for internal linking and user navigation.",
+    "Review the description for the GMAT Focus Anki deck. While within length limits, consider if 'Independent study aid' could be replaced with more descriptive or keyword-rich phrases to enhance relevance and CTR.",
+    "Review the description for the GMAT Focus Readiness Check mock exam. While within length limits, consider if 'Independent GMAT prep — not GMAC material' could be integrated more smoothly or if a stronger call to action could be included."
+  ]
+}
+```
+
+## Content & Keyword Strategist
+Score: 72
+
+```json
+{
+  "score": 72,
+  "keyword_gaps": [
+    {
+      "keyword": "gmat prep course",
+      "intent": "commercial",
+      "target_page": "gmat-focus-anki-deck",
+      "rationale": "High-volume commercial intent keyword that competitors like Kaplan and Magoosh dominate. Your deck could capture users looking for structured prep materials."
+    },
+    {
+      "keyword": "gmat study plan",
+      "intent": "informational",
+      "target_page": "new blog post",
+      "rationale": "Popular informational query where you could create content linking to your deck and mock exam as part of a comprehensive study strategy."
+    },
+    {
+      "keyword": "gmat focus vs gmat",
+      "intent": "informational",
+      "target_page": "new comparison page",
+      "rationale": "Many test-takers are confused about the new GMAT Focus format. This comparison content could drive significant traffic."
+    },
+    {
+      "keyword": "gmat diagnostic test",
+      "intent": "commercial",
+      "target_page": "gmat-focus-readiness-check",
+      "rationale": "Your mock exam serves this purpose but isn't optimized for this high-intent keyword that drives conversions."
+    },
+    {
+      "keyword": "gmat data insights practice",
+      "intent": "commercial",
+      "target_page": "gmat-focus-anki-deck",
+      "rationale": "Data Insights is new to GMAT Focus and has less competition. You mention it but don't emphasize this unique section enough."
+    }
+  ],
+  "copy_improvements": [
+    {
+      "slug": "gmat-focus-anki-deck",
+      "field": "title",
+      "current": "GMAT Focus Exam Prep | 400+ cards",
+      "suggested": "GMAT Focus Prep Course | 400+ Flashcards + Practice Test",
+      "why": "Include 'course' for higher commercial intent, mention practice test for completeness, and use 'flashcards' which is more searchable than 'cards'"
+    },
+    {
+      "slug": "gmat-focus-anki-deck",
+      "field": "description",
+      "current": "GMAT Focus exam prep with 400+ cards covering quantitative reasoning, verbal reasoning, data insights. .apkg format for daily spaced-repetition review. Independent study aid.",
+      "suggested": "Complete GMAT Focus prep course: 400+ flashcards covering Quant, Verbal, and Data Insights sections. Includes free diagnostic test. Anki format for spaced repetition study. Independent prep alternative to Kaplan/Magoosh.",
+      "why": "Add 'complete course', mention free diagnostic, use section abbreviations, and position against major competitors for E-A-T"
+    },
+    {
+      "slug": "gmat-focus-readiness-check",
+      "field": "title",
+      "current": "Free GMAT Focus Practice Test | 45-Question Readiness Check",
+      "suggested": "Free GMAT Focus Diagnostic Test | 45 Questions | Score Predictor",
+      "why": "'Diagnostic test' has higher search volume than 'readiness check', and 'score predictor' adds value proposition"
+    },
+    {
+      "slug": "gmat-focus-readiness-check",
+      "field": "description",
+      "current": "Free GMAT Focus practice questions online: 45 timed questions across Quant, Verbal, and Data Insights, 90 minutes, 70% readiness target, section diagnosis, and full answer review. Independent GMAT prep — not GMAC material.",
+      "suggested": "Free GMAT Focus diagnostic test: 45 official-style questions across all 3 sections (Quant, Verbal, Data Insights). 90-minute timer, instant scoring, detailed explanations. Identify weak areas before your real exam. Not affiliated with GMAC.",
+      "why": "Lead with 'diagnostic test', emphasize 'official-style', add 'instant scoring', and clarify GMAC relationship for E-A-T"
+    }
+  ],
+  "content_opportunities": [
+    {
+      "type": "blog",
+      "topic": "GMAT Focus vs Original GMAT: Complete Comparison Guide 2026",
+      "target_keyword": "gmat focus vs gmat"
+    },
+    {
+      "type": "blog",
+      "topic": "GMAT Data Insights Section: Complete Study Guide",
+      "target_keyword": "gmat data insights practice"
+    },
+    {
+      "type": "intent-page",
+      "topic": "GMAT Study Plan: 3-Month Prep Schedule",
+      "target_keyword": "gmat study plan"
+    },
+    {
+      "type": "faq",
+      "topic": "GMAT Focus FAQ Schema for deck page",
+      "target_keyword": "gmat focus questions"
+    },
+    {
+      "type": "blog",
+      "topic": "Free GMAT Practice Tests vs Paid Courses: Which is Better?",
+      "target_keyword": "free gmat practice test"
+    }
+  ]
+}
+```
+
+## Conversion & Funnel Strategist
+Score: 75
+
+```json
+{
+  "score": 75,
+  "funnel_breaks": [
+    {
+      "step": "deck",
+      "slug": "gmat-focus-anki-deck",
+      "issue": "Deck page shows 'isBuilding: true' status but is live and indexed - confusing state",
+      "fix": "Update deck status to 'available' to match actual live state"
+    },
+    {
+      "step": "mock",
+      "slug": "gmat-focus-readiness-check",
+      "issue": "Mock exam shows 'status: preview' but is live and indexed - may impact user confidence",
+      "fix": "Change mock status to 'live' to match actual availability"
+    }
+  ],
+  "launch_blockers": [
+    {
+      "product": "gmat-focus-anki-deck",
+      "blocker": "Deck marked as 'isBuilding: true' despite being live with Gumroad checkout",
+      "owner_action": "Update product status to 'available' in content management system"
+    }
+  ],
+  "cro_recommendations": [
+    {
+      "page": "mock-exams/gmat-focus-readiness-check",
+      "change": "Add prominent CTA button linking to Anki deck after mock completion with messaging like 'Strengthen weak areas with 400+ GMAT Focus flashcards'",
+      "expected_impact": "15-25% increase in mock-to-deck conversion"
+    },
+    {
+      "page": "decks/gmat-focus-anki-deck",
+      "change": "Add social proof element mentioning the free mock exam as validation tool: 'Test your readiness first with our free 45-question practice exam'",
+      "expected_impact": "10-15% increase in deck page engagement and trust"
+    },
+    {
+      "page": "building-certification-anki-decks",
+      "change": "GMAT Focus is miscategorized under 'building certification' - move to finance/academic section or create separate MBA prep category",
+      "expected_impact": "Improved user experience and reduced bounce rate for GMAT seekers"
+    }
+  ]
+}
+```

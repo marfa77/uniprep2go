@@ -2,6 +2,8 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { MockExamConfig, MockQuestion } from "@/lib/mock-exams/types";
+import { formulaBelongsOnFront } from "@/lib/mock-exams/formula-placement";
+import { FormulaBlock } from "./formula-block";
 import { MathContent } from "./math-content";
 import { QuestionContent } from "./question-content";
 import { trackMockEvent } from "./mock-analytics";
@@ -213,9 +215,9 @@ export function MockRunner({ config, questions, onComplete, onExit }: MockRunner
         <div className="text-xl font-semibold leading-8 text-[#18140f]">
           <QuestionContent text={currentQuestion.prompt} />
         </div>
-        {currentQuestion.formula ? (
+        {formulaBelongsOnFront(currentQuestion) ? (
           <div className="mt-4 overflow-x-auto rounded-2xl border border-[#18140f]/10 bg-[#f7f3ea] p-4 text-base">
-            <MathContent text={currentQuestion.formula} />
+            <FormulaBlock text={currentQuestion.formula!} />
           </div>
         ) : null}
         <div className="mt-6 space-y-3">

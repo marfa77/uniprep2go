@@ -39,17 +39,11 @@ function buildExamFaqs(deck: CatalogAvailableDeck): DeckFaq[] {
       question: `Is there a free ${deck.shortName} practice test?`,
       answer: `Yes — ${buildMockSeoTitle(mock)} at ${mockUrl}. The ${deck.shortName} mock has ${mock.questionCount} timed questions, topic scoring, and a remediation plan tied to this deck.`,
     });
-  } else if (deck.slug === "ptcb-pharmacy-technician-anki-deck") {
-    faqs.push({
-      question: "How do sig codes and top-200 drugs fit PTCE prep?",
-      answer:
-        "The deck front-loads brand/generic pairs, sig abbreviations, and days-supply math — the high-volume PTCE categories that textbooks spread across chapters. Pair with the PTCB Study Guide 2026 PDF for domain chapters and an 80-question practice exam; review 10–15 Anki cards per day on your phone.",
-    });
   } else if (deck.slug === "ptcb-study-guide-2026") {
     faqs.push({
       question: "Is this updated for the January 2026 PTCE?",
       answer:
-        "Yes. Chapter sizes follow the 2026 domain weights — Federal Requirements at 18.75% with DSCSA, and compounding/alligation removed. The 80-question practice exam is distributed 28/15/19/18 by domain.",
+        "Yes. Chapter sizes follow the 2026 domain weights — Federal Requirements at 18.75% with DSCSA, and compounding/alligation removed. The 80-question practice exam is distributed 28/15/19/18 by domain. Take the free 90-question online PTCB mock for timed domain scoring before or after the PDF exam.",
     });
   } else if (deck.slug === "cfa-level-1-formula-reference-2026") {
     faqs.push({

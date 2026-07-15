@@ -12,8 +12,9 @@ describe("page-layout", () => {
     expect(extra).toHaveLength(2);
   });
 
-  it("shows practice mock promo only for mock-first deck pages", () => {
-    expect(shouldShowDeckPracticeMockSection("cfa-level-1-formula-reference-2026", true)).toBe(true);
-    expect(shouldShowDeckPracticeMockSection("mrics-quantity-surveying-anki-deck", false)).toBe(false);
+  it("shows practice mock promo when a linked or companion mock exists", () => {
+    expect(shouldShowDeckPracticeMockSection("cfa-level-1-formula-reference-2026")).toBe(true);
+    expect(shouldShowDeckPracticeMockSection("cfa-level-1-anki-deck")).toBe(true);
+    expect(shouldShowDeckPracticeMockSection("mrics-quantity-surveying-anki-deck")).toBe(true);
   });
 });

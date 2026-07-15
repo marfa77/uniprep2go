@@ -6,6 +6,9 @@ const financeDisclaimer =
 const servSafeDisclaimer =
   "This is an independent readiness diagnostic. It is not official ServSafe or National Restaurant Association exam material and does not guarantee an exam result.";
 
+const ptcbDisclaimer =
+  "This is an independent readiness diagnostic. It is not official PTCB, PTCE, NHA, FDA, or DEA exam material and does not guarantee certification.";
+
 const gmatDisclaimer =
   "This is an independent readiness diagnostic. It is not official GMAC GMAT exam material and does not predict your official GMAT score.";
 
@@ -38,6 +41,12 @@ const cfpsDisclaimer =
 
 const ricsDisclaimer =
   "This is an independent readiness diagnostic. It is not official RICS APC assessment material and does not award MRICS chartered membership.";
+
+const languageDisclaimer =
+  "This is an independent readiness diagnostic. It is not official exam or certification material from DELF, CIEP, CAPLE, or other awarding bodies.";
+
+const citizenshipDisclaimer =
+  "This is an independent civics practice tool. It is not official USCIS test material and does not guarantee naturalization interview results.";
 
 export const mockExamConfigs: MockExamConfig[] = [
   {
@@ -135,6 +144,110 @@ export const mockExamConfigs: MockExamConfig[] = [
       "A 60-question CFA Level 1 readiness diagnostic with weighted topic scoring. Full question bank coming soon — request access to be notified.",
     examBody: "CFA Institute",
     lastUpdated: "2026-06-01",
+  },
+  {
+    slug: "cfa-level-2-readiness-check",
+    title: "CFA Level 2 Readiness Check",
+    shortTitle: "CFA L2 Readiness",
+    linkedDeckSlug: "cfa-level-2-anki-deck",
+    status: "preview",
+    accessMode: "free_demand_test",
+    durationMinutes: 90,
+    questionCount: 60,
+    passRule: {
+      type: "readiness_check",
+      passPercent: 70,
+      borderlinePercent: 65,
+      verdictLabels: {
+        pass: "READINESS PASS",
+        noPass: "NO PASS",
+        borderline: "BORDERLINE RISK",
+      },
+    },
+    topics: [
+      { id: "ethics", label: "Ethical and Professional Standards", questionCount: 6, weightPercent: 10, targetPercent: 70 },
+      { id: "quant", label: "Quantitative Methods", questionCount: 6, weightPercent: 10, targetPercent: 70 },
+      { id: "economics", label: "Economics", questionCount: 6, weightPercent: 10, targetPercent: 70 },
+      { id: "fra", label: "Financial Statement Analysis", questionCount: 6, weightPercent: 10, targetPercent: 70 },
+      { id: "corp-finance", label: "Corporate Issuers", questionCount: 6, weightPercent: 10, targetPercent: 70 },
+      { id: "equity", label: "Equity Valuation", questionCount: 6, weightPercent: 10, targetPercent: 70 },
+      { id: "fixed-income", label: "Fixed Income", questionCount: 6, weightPercent: 10, targetPercent: 70 },
+      { id: "derivatives", label: "Derivatives", questionCount: 6, weightPercent: 10, targetPercent: 70 },
+      { id: "alternatives", label: "Alternative Investments", questionCount: 6, weightPercent: 10, targetPercent: 70 },
+      { id: "portfolio", label: "Portfolio Management", questionCount: 6, weightPercent: 10, targetPercent: 70 },
+    ],
+    officialSourceNote:
+      "Readiness check sampled across CFA Level 2 topic weights with vignette-style application prompts. Not a full CFA Institute mock exam.",
+    disclaimer: financeDisclaimer,
+    description:
+      "A 60-question CFA Level 2 readiness diagnostic with weighted topic scoring across all ten curriculum areas. Independent prep — not CFA Institute material.",
+    examBody: "CFA Institute",
+    lastUpdated: "2026-07-15",
+  },
+  {
+    slug: "delf-b2-readiness-check",
+    title: "DELF B2 French Readiness Check",
+    shortTitle: "DELF B2 Readiness",
+    linkedDeckSlug: "delf-b2-french-anki-deck",
+    status: "preview",
+    accessMode: "free_demand_test",
+    durationMinutes: 60,
+    questionCount: 40,
+    passRule: {
+      type: "readiness_check",
+      passPercent: 70,
+      borderlinePercent: 65,
+      verdictLabels: {
+        pass: "READINESS PASS",
+        noPass: "NO PASS",
+        borderline: "BORDERLINE RISK",
+      },
+    },
+    topics: [
+      { id: "comprehension", label: "Reading & Listening Comprehension", questionCount: 10, weightPercent: 25, targetPercent: 70 },
+      { id: "grammar", label: "Grammar & Structure (B2)", questionCount: 10, weightPercent: 25, targetPercent: 70 },
+      { id: "vocabulary", label: "Vocabulary & Idioms", questionCount: 10, weightPercent: 25, targetPercent: 70 },
+      { id: "production", label: "Written & Oral Production Skills", questionCount: 10, weightPercent: 25, targetPercent: 70 },
+    ],
+    officialSourceNote:
+      "Readiness check for DELF B2 French vocabulary and structure — not an official CIEP/DELF exam simulation.",
+    disclaimer: languageDisclaimer,
+    description:
+      "A 40-question DELF B2 readiness diagnostic covering comprehension, grammar, vocabulary, and production skills. Independent prep — not official DELF material.",
+    examBody: "CIEP / DELF",
+    lastUpdated: "2026-07-15",
+  },
+  {
+    slug: "us-citizenship-readiness-check",
+    title: "U.S. Citizenship Civics Readiness Check",
+    shortTitle: "U.S. Citizenship Readiness",
+    linkedDeckSlug: "us-citizenship-test-prep2go-app",
+    status: "preview",
+    accessMode: "free_demand_test",
+    durationMinutes: 30,
+    questionCount: 30,
+    passRule: {
+      type: "readiness_check",
+      passPercent: 80,
+      borderlinePercent: 70,
+      verdictLabels: {
+        pass: "READINESS PASS",
+        noPass: "NO PASS",
+        borderline: "BORDERLINE RISK",
+      },
+    },
+    topics: [
+      { id: "government", label: "American Government & Civics", questionCount: 10, weightPercent: 34, targetPercent: 80 },
+      { id: "history", label: "American History", questionCount: 10, weightPercent: 33, targetPercent: 80 },
+      { id: "geography", label: "Geography, Symbols & Holidays", questionCount: 10, weightPercent: 33, targetPercent: 80 },
+    ],
+    officialSourceNote:
+      "Readiness check based on USCIS civics test themes (2025 pool). Not an official USCIS naturalization interview.",
+    disclaimer: citizenshipDisclaimer,
+    description:
+      "A 30-question U.S. citizenship civics readiness check covering government, history, and geography — pairs with the Prep2Go Immigration app. Independent prep — not USCIS material.",
+    examBody: "USCIS",
+    lastUpdated: "2026-07-15",
   },
   {
     slug: "frm-part-1-readiness-check",
@@ -407,6 +520,63 @@ export const mockExamConfigs: MockExamConfig[] = [
     lastUpdated: "2026-06-02",
   },
   {
+    slug: "ptcb-pharmacy-technician-mock",
+    title: "PTCB Pharmacy Technician Mock Exam",
+    shortTitle: "PTCB / PTCE Mock",
+    linkedDeckSlug: "ptcb-pharmacy-technician-anki-deck",
+    status: "live",
+    accessMode: "free_demand_test",
+    durationMinutes: 110,
+    questionCount: 90,
+    passRule: {
+      type: "score_threshold",
+      passPercent: 70,
+      borderlinePercent: 68,
+      verdictLabels: {
+        pass: "PASS",
+        noPass: "NO PASS",
+        borderline: "BORDERLINE RISK",
+      },
+    },
+    topics: [
+      {
+        id: "medications",
+        label: "Medications",
+        questionCount: 32,
+        weightPercent: 35,
+        targetPercent: 70,
+      },
+      {
+        id: "federal-requirements",
+        label: "Federal Requirements",
+        questionCount: 17,
+        weightPercent: 19,
+        targetPercent: 70,
+      },
+      {
+        id: "patient-safety",
+        label: "Patient Safety and Quality Assurance",
+        questionCount: 21,
+        weightPercent: 24,
+        targetPercent: 70,
+      },
+      {
+        id: "order-entry",
+        label: "Order Entry and Processing",
+        questionCount: 20,
+        weightPercent: 22,
+        targetPercent: 70,
+      },
+    ],
+    officialSourceNote:
+      "Modeled on the January 2026 PTCE outline: 90 questions, 110 minutes, domain weights (Medications 35%, Federal Requirements 18.75%, Patient Safety 23.75%, Order Entry 22.5%). Official PTCE pass is a scaled score of 1,400 — this mock uses a 70% diagnostic threshold.",
+    disclaimer: ptcbDisclaimer,
+    description:
+      "A timed 90-question PTCB / PTCE mock with 2026 domain-weighted scoring, full question review, and a pass/no-pass readiness verdict before you drill the linked Anki deck.",
+    examBody: "PTCB / PTCE",
+    lastUpdated: "2026-07-15",
+  },
+  {
     slug: "gmat-focus-readiness-check",
     title: "GMAT Focus Readiness Check",
     shortTitle: "GMAT Focus Readiness",
@@ -456,8 +626,8 @@ export const mockExamConfigs: MockExamConfig[] = [
     examBody: "GMAC",
     lastUpdated: "2026-06-02",
     questionSourceNote:
-      "Original UniPrep2Go questions authored for the GMAT Focus Edition readiness check (67 Quant, 67 Verbal, 66 Data Insights in the Anki bank; 45-question timed session).",
-    ankiDeckCardCount: 200,
+      "Original UniPrep2Go questions authored for the GMAT Focus Edition readiness check (134 Quant, 133 Verbal, 133 Data Insights in the Anki bank; 45-question timed session).",
+    ankiDeckCardCount: 400,
   },
   {
     slug: "epa-608-readiness-check",

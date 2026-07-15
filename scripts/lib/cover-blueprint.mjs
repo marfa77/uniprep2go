@@ -14,6 +14,7 @@ export const COVER_WIDTH = 1005;
 export const COVER_HEIGHT = 561;
 export const HERO_WIDTH = 1200;
 export const HERO_HEIGHT = 630;
+export const GUMROAD_THUMB_SIZE = 1200;
 
 const COLORS = {
   cream: "#f7f3ea",
@@ -39,6 +40,8 @@ const PANEL_THEMES = {
   building: { bg: "#234a52", fg: "#fffaf0" },
   hvac: { bg: "#1f3a5f", fg: "#fffaf0" },
   safety: { bg: "#3d4f3a", fg: "#fffaf0" },
+  datacenter: { bg: "#1a3352", fg: "#fffaf0" },
+  survey: { bg: "#2f3d52", fg: "#fffaf0" },
   language: { bg: "#4a3d52", fg: "#fffaf0" },
   study: { bg: "#1f3a5f", fg: "#fffaf0" },
   hero: { bg: "#152238", fg: "#fffaf0" },
@@ -233,6 +236,73 @@ export function buildCoverSvg({
       ${buildRightPanel({ panelLeft, width, height, panelKind, monogram: code, badge })}
     </svg>`,
   );
+}
+
+/** Square product thumbnail for Gumroad listings (1200×1200). */
+export function buildSquareThumbnailSvg({
+  size = GUMROAD_THUMB_SIZE,
+  title,
+  subtitle,
+  badge = "Anki Deck",
+  panelKind = "study",
+  monogram,
+}) {
+  const theme = PANEL_THEMES[panelKind] ?? PANEL_THEMES.study;
+  const code = inferMonogram(title, monogram);
+  const monoLines = code.split("\n");
+  const monoSize = monoLines.length > 1 ? 118 : monoLines[0].length > 8 ? 96 : 132;
+  const cx = size / 2;
+  const cy = size * 0.46;
+  const displayTitle = simplifyCoverTitle(title);
+  const titleLines = wrapLines(displayTitle, 14).slice(0, 2);
+  const titleSize = titleLines.length > 1 ? 34 : 38;
+  const titleStartY = size - 118;
+  const monoTspans = monoLines
+    .map(
+      (line, index) =>
+        `<tspan x="${cx}" dy="${index === 0 ? 0 : monoSize * 0.92}">${escapeXml(line)}</tspan>`,
+    )
+    .join("");
+  const titleTspans = titleLines
+    .map(
+      (line, index) =>
+        `<tspan x="${cx}" dy="${index === 0 ? 0 : titleSize * 1.12}">${escapeXml(line)}</tspan>`,
+    )
+    .join("");
+
+  return Buffer.from(
+    `<svg width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="sqGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="${theme.bg}"/>
+          <stop offset="100%" stop-color="${COLORS.navyDeep}"/>
+        </linearGradient>
+        <radialGradient id="sqGlow" cx="50%" cy="40%" r="58%">
+          <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
+          <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#sqGrad)"/>
+      <rect width="100%" height="100%" fill="url(#sqGlow)"/>
+      <circle cx="${size * 0.84}" cy="${size * 0.14}" r="${size * 0.18}" fill="#ffffff" opacity="0.05"/>
+      <g transform="translate(44, 40) scale(1.05)">${LOGO_SVG}</g>
+      ${flashcardStack(size * 0.1, size * 0.62, theme.fg, 0.24)}
+      <text x="${cx}" y="${cy - (monoLines.length > 1 ? 18 : 0)}" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="${monoSize}" font-weight="700" letter-spacing="0.05em" fill="${theme.fg}">${monoTspans}</text>
+      <rect x="0" y="${size - 148}" width="${size}" height="148" fill="${COLORS.cream}"/>
+      <rect x="${size * 0.38}" y="${size - 148}" width="${size * 0.24}" height="5" rx="2.5" fill="${COLORS.amber}"/>
+      <text x="${cx}" y="${titleStartY}" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="${titleSize}" font-weight="700" fill="${COLORS.ink}">${titleTspans}</text>
+      <text x="${cx}" y="${size - 36}" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="0.16em" fill="${COLORS.muted}">${escapeXml(badge.toUpperCase())}</text>
+    </svg>`,
+  );
+}
+
+export async function writeSquareThumbnailJpg(outPath, options) {
+  const svg = buildSquareThumbnailSvg(options);
+  const size = options.size ?? GUMROAD_THUMB_SIZE;
+  const buffer = await sharp(svg).jpeg({ quality: 90, mozjpeg: true }).resize(size, size).toBuffer();
+  mkdirSync(dirname(outPath), { recursive: true });
+  writeFileSync(outPath, buffer);
+  return { outPath, bytes: buffer.length };
 }
 
 export async function renderCoverWebp(svgBuffer, { maxBytes = 80 * 1024 } = {}) {

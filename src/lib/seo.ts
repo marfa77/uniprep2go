@@ -74,12 +74,28 @@ export const defaultMetadata: Metadata = {
   },
 };
 
-export function truncateSeoTitle(title: string, max = SEO_TITLE_MAX): string {
+/** Trim to max length on a word boundary — no ellipsis (clean SERP display). */
+export function fitSeoTitle(title: string, max = SEO_TITLE_MAX): string {
   const trimmed = title.trim();
   if (trimmed.length <= max) {
     return trimmed;
   }
-  return `${trimmed.slice(0, max - 1).trim()}…`;
+  let cut = trimmed.slice(0, max);
+  const lastSpace = cut.lastIndexOf(" ");
+  if (lastSpace > Math.floor(max * 0.55)) {
+    cut = cut.slice(0, lastSpace);
+  }
+  return cut.trim();
+}
+
+/** @deprecated Prefer fitSeoTitle — kept for tests and hub pages with title template suffix. */
+export function truncateSeoTitle(title: string, max = SEO_TITLE_MAX): string {
+  return fitSeoTitle(title, max);
+}
+
+/** Leaf product/mock pages — skip layout `| SiteName` suffix so titles are not double-truncated in SERPs. */
+export function leafPageTitle(title: string, max = 60): Metadata["title"] {
+  return { absolute: fitSeoTitle(title, max) };
 }
 
 /** Runnable mocks only — empty banks stay human-accessible but out of the index/sitemap. */

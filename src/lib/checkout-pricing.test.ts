@@ -134,8 +134,8 @@ describe("checkout pricing", () => {
     expect(getCheckoutActionLabel(priced.checkoutProvider)).toBe("App Store");
   });
 
-  it("uses catalog default price for building decks without live Gumroad products", async () => {
-    const fetchMock = vi.fn();
+  it("syncs live building decks from Gumroad and falls back to catalog default on failure", async () => {
+    const fetchMock = vi.fn().mockResolvedValue({ ok: false, status: 404, statusText: "Not Found" });
     vi.stubGlobal("fetch", fetchMock);
 
     const deck = getCatalogDeckBySlug("hvac-epa-608-anki-deck");
@@ -143,7 +143,7 @@ describe("checkout pricing", () => {
 
     const priced = await resolveDeckPrice(deck!);
 
-    expect(fetchMock).not.toHaveBeenCalled();
+    expect(fetchMock).toHaveBeenCalled();
     expect(priced.price.amount).toBe(11);
     expect(priced.directAnswer).toContain("$11 USD");
 

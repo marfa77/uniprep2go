@@ -1,4 +1,5 @@
 import type { CatalogAvailableDeck, DeckFaq } from "./decks";
+import { getDeckPracticeMock } from "./deck-funnel";
 
 /** Primary FAQ count before "More questions" collapse. */
 export const VISIBLE_FAQ_COUNT = 3;
@@ -10,9 +11,9 @@ export function splitFaqs(faqs: DeckFaq[]) {
   };
 }
 
-/** Companion-mock decks already promote practice in the hero — skip the extra promo block. */
-export function shouldShowDeckPracticeMockSection(deckSlug: string, mockFirst: boolean) {
-  return mockFirst;
+/** Show the practice-mock promo whenever a linked or companion mock exists. */
+export function shouldShowDeckPracticeMockSection(deckSlug: string) {
+  return Boolean(getDeckPracticeMock(deckSlug));
 }
 
 export function deckMoreAboutHint(deck: CatalogAvailableDeck) {

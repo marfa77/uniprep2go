@@ -5,6 +5,7 @@ import { buildMockExamFacts, buildMockExamMarkdown, buildMockExamPageJsonLd } fr
 import { buildMockSeoDescription } from "./seo";
 import { getQuestionBankForExam, isMockExamRunnable, validateQuestionBank } from "./question-bank";
 import { buildMockReport, shuffleQuestions, selectSessionQuestions } from "./scoring";
+import { formulaBelongsOnFront } from "./formula-placement";
 import type { MockQuestion } from "./types";
 
 describe("mock exam configs", () => {
@@ -30,6 +31,13 @@ describe("mock exam configs", () => {
     const config = getMockExamConfig("servsafe-manager-mock");
     expect(config?.questionCount).toBe(90);
     expect(config?.passRule.passPercent).toBe(75);
+    expect(config?.topics.reduce((sum, topic) => sum + (topic.questionCount ?? 0), 0)).toBe(90);
+  });
+
+  it("defines PTCB topic counts that sum to 90", () => {
+    const config = getMockExamConfig("ptcb-pharmacy-technician-mock");
+    expect(config?.questionCount).toBe(90);
+    expect(config?.passRule.passPercent).toBe(70);
     expect(config?.topics.reduce((sum, topic) => sum + (topic.questionCount ?? 0), 0)).toBe(90);
   });
 });
@@ -83,6 +91,7 @@ describe("question bank from deck content", () => {
   it("marks live and preview mocks as runnable when banks are complete", () => {
     expect(isMockExamRunnable("sie-full-mock")).toBe(true);
     expect(isMockExamRunnable("servsafe-manager-mock")).toBe(true);
+    expect(isMockExamRunnable("ptcb-pharmacy-technician-mock")).toBe(true);
     expect(isMockExamRunnable("cfa-level-1-readiness-check")).toBe(true);
     expect(isMockExamRunnable("frm-part-1-readiness-check")).toBe(true);
   });
@@ -100,6 +109,16 @@ describe("question bank from deck content", () => {
     expect(equationQuestion?.prompt).not.toMatch(/\^/);
   });
 
+  it("shows GMAT reference formulas only in review, not during the question", () => {
+    const { questions } = getQuestionBankForExam("gmat-focus-readiness-check");
+    const discountQuestion = questions.find((question) => question.id.endsWith("-001"));
+    const equationQuestion = questions.find((question) => question.id.endsWith("-011"));
+
+    expect(discountQuestion?.formula).toContain("Final Price");
+    expect(formulaBelongsOnFront(discountQuestion!)).toBe(false);
+    expect(formulaBelongsOnFront(equationQuestion!)).toBe(true);
+  });
+
   it("marks new preview readiness mocks runnable with minimal 10-per-topic banks", () => {
     for (const slug of [
       "epa-608-readiness-check",
@@ -114,6 +133,9 @@ describe("question bank from deck content", () => {
       "cfps-readiness-check",
       "mrics-readiness-check",
       "mrics-quantity-surveying-readiness-check",
+      "cfa-level-2-readiness-check",
+      "delf-b2-readiness-check",
+      "us-citizenship-readiness-check",
     ]) {
       expect(isMockExamRunnable(slug)).toBe(true);
       const { errors } = getQuestionBankForExam(slug);
@@ -126,6 +148,13 @@ describe("question bank from deck content", () => {
     expect(errors).toEqual([]);
     expect(questions).toHaveLength(90);
     expect(questions[0]?.sourceNote).toContain("servsafe_manager_300_authored.csv");
+  });
+
+  it("loads a complete PTCB bank sourced from deck CSV export", () => {
+    const { questions, errors } = getQuestionBankForExam("ptcb-pharmacy-technician-mock");
+    expect(errors).toEqual([]);
+    expect(questions).toHaveLength(90);
+    expect(questions[0]?.sourceNote).toContain("ptcb_pharmacy_tech_300_authored.csv");
   });
 });
 
@@ -278,6 +307,7 @@ describe("llm visibility", () => {
 
     expect(graph.map((node) => node["@type"])).toEqual([
       "WebPage",
+      "Quiz",
       "Course",
       "FAQPage",
       "BreadcrumbList",

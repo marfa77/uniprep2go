@@ -80,6 +80,20 @@ function rememberGumroadFailure(slug: string) {
   getGumroadFailureCache().set(slug, Date.now());
 }
 
+/** Fallback when Gumroad HTML scrape fails but the product is in our building catalog. */
+export function getBuildingGumroadFallbackPriceRecord(slug: string): SyncedPriceRecord | null {
+  if (!isBuildingAnkiDeckSlug(slug)) {
+    return null;
+  }
+
+  const cents = gumroadCatalog.defaultPriceCents;
+  return {
+    amount: cents / 100,
+    currency: "USD",
+    syncedAt: new Date().toISOString(),
+    source: "gumroad",
+  };
+}
 /** Building decks without a live Gumroad product — use catalog default, never scrape 404 URLs. */
 export function getStaticBuildingDeckPriceRecord(slug: string): SyncedPriceRecord | null {
   if (!isBuildingAnkiDeckSlug(slug)) {
@@ -91,13 +105,7 @@ export function getStaticBuildingDeckPriceRecord(slug: string): SyncedPriceRecor
     return null;
   }
 
-  const cents = gumroadCatalog.defaultPriceCents;
-  return {
-    amount: cents / 100,
-    currency: "USD",
-    syncedAt: new Date().toISOString(),
-    source: "gumroad",
-  };
+  return getBuildingGumroadFallbackPriceRecord(slug);
 }
 
 export function formatCheckoutPrice(amount: number) {
@@ -346,6 +354,10 @@ export async function resolveDeckPrice(deck: CatalogAvailableDeck): Promise<Pric
   }
 
   if (isGumroadFailureCached(deck.slug)) {
+    const buildingFallback = getBuildingGumroadFallbackPriceRecord(deck.slug);
+    if (buildingFallback) {
+      return applyPriceRecordToDeck(deck, buildingFallback);
+    }
     return applyPendingPriceToDeck(deck);
   }
 
@@ -356,6 +368,10 @@ export async function resolveDeckPrice(deck: CatalogAvailableDeck): Promise<Pric
   } catch (error) {
     rememberGumroadFailure(deck.slug);
     console.warn(`[checkout_pricing] price unavailable for ${deck.slug}`, error);
+    const buildingFallback = getBuildingGumroadFallbackPriceRecord(deck.slug);
+    if (buildingFallback) {
+      return applyPriceRecordToDeck(deck, buildingFallback);
+    }
     return applyPendingPriceToDeck(deck);
   }
 }

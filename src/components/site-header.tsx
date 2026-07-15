@@ -23,6 +23,18 @@ export function SiteHeader() {
       <div className="flex items-center gap-4">
         <Link
           className="font-medium text-[#4f493e] transition hover:text-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+          href="/#catalog"
+        >
+          Decks
+        </Link>
+        <Link
+          className="font-medium text-[#4f493e] transition hover:text-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+          href="/building-certification-anki-decks"
+        >
+          Building certs
+        </Link>
+        <Link
+          className="font-medium text-[#4f493e] transition hover:text-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
           href="/mock-exams"
         >
           Practice tests

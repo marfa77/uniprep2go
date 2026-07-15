@@ -77,11 +77,12 @@ const usPriorityMockLinks = [
   },
   {
     title: "State licensing exams",
-    body: "Insurance producer and California real estate readiness checks before paid prep decisions.",
+    body: "Insurance producer, California real estate, and PTCB pharmacy technician readiness checks before paid prep decisions.",
     links: [
       { href: "/mock-exams/life-and-health-insurance-readiness-check", label: "Life & Health insurance mock" },
       { href: "/mock-exams/property-and-casualty-insurance-readiness-check", label: "P&C insurance mock" },
       { href: "/mock-exams/california-real-estate-readiness-check", label: "California real estate mock" },
+      { href: "/mock-exams/ptcb-pharmacy-technician-mock", label: "Free PTCB / PTCE practice test" },
     ],
   },
   {

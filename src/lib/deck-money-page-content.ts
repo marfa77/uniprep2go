@@ -1,6 +1,7 @@
 import type { CatalogAvailableDeck } from "./decks";
 import type { DeckPositioning } from "./deck-positioning";
 import { getDeckLinkedMock } from "./deck-seo";
+import { getDeckPracticeMock } from "./deck-funnel";
 
 export const pitchOverrides: Partial<Record<string, string>> = {
   "cfa-level-1-anki-deck":
@@ -152,11 +153,47 @@ The deck spans all 10 CFA Level 1 topic areas in the coverage table. Quantitativ
 
 ### 60-day study plan with the formula reference and free mock
 
-**Days 60–45:** 20 new cards per day across ethics and quant while skimming curriculum readings. **Days 44–30:** Print weak-topic tables from the [Formula Reference](/decks/cfa-level-1-formula-reference-2026); run the free 60-question readiness check. **Days 29–7:** Review only — take the reference's 80-question recall drill; retake the mock weekly. **Final week:** Ethics-only Anki passes plus flagged formulas from both drill answer keys.
+**Days 60–45:** 20 new cards per day across ethics and quant while skimming curriculum readings. **Days 44–30:** Print weak-topic tables from the [matching CFA Level 1 formula sheet](/decks/cfa-level-1-formula-reference-2026); run the [free 60-question readiness check](/mock-exams/cfa-level-1-readiness-check). **Days 29–7:** Review only — take the reference's 80-question recall drill; retake the mock weekly. **Final week:** Ethics-only Anki passes plus flagged formulas from both drill answer keys.
 
 ### Pitfalls this deck targets
 
 Candidates lose points confusing forward vs futures margin flows, mis-stating inventory COGS under LIFO/FIFO, and mixing standard error with standard deviation. Cards call out those traps explicitly rather than listing definitions alone.`,
+
+  "cfa-level-2-anki-deck": `### What is inside
+
+495 cards across all ten equally weighted CFA Level 2 topics — vignette-depth FSA, equity and fixed income valuation models, derivatives strategies, portfolio management, and ethics application. Prompts emphasize item-set logic: given a short case, which adjustment or valuation method applies?
+
+### Study plan with the free mock and formula reference
+
+**Weeks 1–2:** 20 new cards/day across ethics and FSA. **Week 3:** Run the [free 60-question CFA Level 2 mock](/mock-exams/cfa-level-2-readiness-check). **Week 4+:** Drill only weak topics from the report; pair with the [Level 2 formula reference PDF](/decks/cfa-level-2-formula-reference-2026) for printable recall tables.
+
+### Pitfalls this deck targets
+
+Level 2 failures often come from mis-applying inventory and lease adjustments in FSA vignettes, confusing FCFF vs FCFE setups, and weak ethics judgment under time pressure.`,
+
+  "ciple-a2-european-portuguese-anki-deck": `### CIPLE A2 exam format
+
+CIPLE A2 (CAPLE) tests four skills: reading and listening comprehension, written production, and oral interaction. The A2 level expects simple connected text on familiar topics — family, work, daily routines, and public services.
+
+### Study plan with sample cards
+
+Use 15–20 new cards per day from the deck's European Portuguese vocabulary and grammar prompts. Pair Anki with weekly speaking practice — the exam rewards active recall, not passive list reading. Preview the sample cards above for audio and example-sentence format.
+
+### What makes this deck different
+
+Each card includes European Portuguese (PT-PT) audio and contextual examples aligned to CIPLE A2 themes — citizenship, residency, and integration vocabulary that generic Brazilian Portuguese decks miss.`,
+
+  "delf-b2-french-anki-deck": `### DELF B2 exam format
+
+DELF B2 evaluates four skills: oral comprehension, written comprehension, written production, and oral production. B2 expects argumentation, nuance, and vocabulary beyond everyday conversation — formal registers, idioms, and structured essays.
+
+### Study plan with the free practice test
+
+Run the [free 40-question DELF B2 readiness check](/mock-exams/delf-b2-readiness-check) to baseline grammar and vocabulary gaps, then drill 20 cards/day from this 2000+ word deck. Keep listening practice separate from Anki — the deck builds lexical depth, not oral fluency alone.
+
+### What makes this deck different
+
+Every card pairs a French word with a visual image, native audio, and a contextual example sentence — designed for retention at B2 depth, not A1 survival phrases.`,
 
   "cfa-level-1-formula-reference-2026": `### What is inside
 
@@ -200,7 +237,7 @@ Roughly 300 prompts organized for the January 2026 PTCE: top 200 brand/generic p
 
 ### Shift-friendly study plan with the study guide
 
-**Weeks 4–3:** Read Medications and Federal Requirements chapters in the [PTCB Study Guide 2026](/decks/ptcb-study-guide-2026); 15 Anki cards per shift. **Week 2:** Take the guide's 80-question practice exam; drill missed domains in Anki only. **Final week:** Print cheat sheets from the guide; mixed Anki review — 10–15 cards per shift.
+**Start:** Take the [free 90-question PTCB mock](/mock-exams/ptcb-pharmacy-technician-mock) for domain-weighted baseline scores. **Weeks 4–3:** Read Medications and Federal Requirements chapters in the [PTCB Study Guide 2026](/decks/ptcb-study-guide-2026); 15 Anki cards per shift. **Week 2:** Take the guide's 80-question practice exam; drill missed domains in Anki only. **Final week:** Print cheat sheets from the guide; mixed Anki review — 10–15 cards per shift.
 
 ### Pitfalls this deck targets
 
@@ -212,7 +249,7 @@ Four review chapters sized to January 2026 PTCE weights: Medications (35%), Fede
 
 ### 4-week study plan with the Anki deck
 
-**Week 1:** Medications chapter + 15 [PTCB Anki](/decks/ptcb-pharmacy-technician-anki-deck) cards/day. **Week 2:** Federal Requirements and Patient Safety chapters. **Week 3:** Order Entry chapter; take the 80-question practice exam under timed conditions. **Week 4:** Review every missed explanation; print cheat sheets; Anki review only on weak domains.
+**Week 1:** Take the [free 90-question PTCB mock](/mock-exams/ptcb-pharmacy-technician-mock), then Medications chapter + 15 [PTCB Anki](/decks/ptcb-pharmacy-technician-anki-deck) cards/day. **Week 2:** Federal Requirements and Patient Safety chapters. **Week 3:** Order Entry chapter; take the 80-question practice exam under timed conditions. **Week 4:** Review every missed explanation; print cheat sheets; Anki review only on weak domains.
 
 ### Pitfalls this deck targets
 
@@ -318,7 +355,7 @@ One ${deck.shortName} chapter per week, then citizenship or integration quiz loo
     .slice(0, 4)
     .map((t) => `${t.name} (${t.cards})`)
     .join("; ");
-  const mock = getDeckLinkedMock(deck.slug);
+  const mock = getDeckPracticeMock(deck.slug);
   const mockLine = mock
     ? ` Week four: free ${deck.shortName} mock (${mock.questionCount} questions) — review only missed table rows.`
     : ` Week four: review-only passes through your lowest-count table rows.`;

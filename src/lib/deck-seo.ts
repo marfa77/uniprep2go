@@ -6,6 +6,7 @@ import {
 import { getAllMockExams } from "./mock-exams/configs";
 import { buildMockSeoTitle } from "./mock-exams/seo";
 import type { MockExamConfig } from "./mock-exams/types";
+import { fitSeoTitle, SEO_TITLE_MAX } from "./seo";
 import { absoluteUrl, siteConfig } from "./site";
 
 type DeckSeoProfile = {
@@ -28,7 +29,7 @@ function yearPrefix(examYear: string): string {
 
 function mockSuffix(mock?: MockExamConfig): string {
   if (!mock) return "";
-  return mock.status === "live" ? " + Free Practice Test" : " + Free Readiness Check";
+  return mock.status === "live" ? " + Free Practice Test" : " + Free Mock";
 }
 
 function contentLabel(deck: CatalogAvailableDeck): string {
@@ -124,7 +125,7 @@ function defaultKeywords(deck: CatalogAvailableDeck, mock?: MockExamConfig): str
 
 const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   "cfa-level-1-anki-deck": {
-    title: "CFA Level 1 Exam Prep 2026 | 342+ Flashcards + Free Practice Test",
+    title: "CFA L1 Flashcards 2026 | 342 Cards + Free Mock",
     headline: "CFA Level 1 Exam Prep — 342+ Flashcards + Free Mock",
     studyLabel: "CFA Level 1 exam prep",
     description:
@@ -134,29 +135,29 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "cfa level 1 flashcards",
       "cfa level 1 practice test",
       "cfa formula flashcards",
-      "cfa level 1 formula sheet",
+      "cfa level 1 mock exam",
     ],
     intro:
-      "US and global CFA Level 1 candidates use spaced-repetition flashcards to retain formulas and definitions across all 10 curriculum topics — pair with the formula reference PDF for printable tables and an 80-question recall drill.",
+      "US and global CFA Level 1 candidates use spaced-repetition flashcards to retain formulas and definitions across all 10 curriculum topics — pair with the matching CFA Level 1 formula sheet PDF for printable tables and an 80-question recall drill.",
   },
   "cfa-level-2-anki-deck": {
-    title: "CFA Level 2 Exam Prep 2026 | 495 Flashcards for Item-Set Review",
-    headline: "CFA Level 2 Exam Prep — 495 Flashcards",
+    title: "CFA L2 Flashcards 2026 | 495 Cards + Free Mock",
+    headline: "CFA Level 2 Exam Prep — 495 Flashcards + Free Mock",
     studyLabel: "CFA Level 2 exam prep",
     description:
-      "CFA Level 2 exam prep with 495 Anki flashcards across all 10 topic areas — vignette-depth FSA, equity and fixed income valuation, portfolio management, derivatives, and ethics application. Independent study aid — not CFA Institute material.",
+      "CFA Level 2 exam prep with 495 Anki flashcards across all 10 topic areas — vignette-depth FSA, equity and fixed income valuation, portfolio management, derivatives, and ethics application. Includes a free 60-question readiness check. Independent study aid — not CFA Institute material.",
     keywords: [
       "cfa level 2 anki deck",
       "cfa level 2 flashcards",
-      "cfa level 2 study guide",
+      "cfa level 2 practice test",
       "cfa level 2 item set prep",
-      "cfa level 2 formulas",
+      "cfa level 2 mock exam",
     ],
     intro:
-      "CFA Level 2 candidates use spaced-repetition flashcards to retain vignette-depth formulas and application logic across all ten equally weighted curriculum topics between practice item sets.",
+      "CFA Level 2 candidates use spaced-repetition flashcards to retain vignette-depth formulas and application logic across all ten equally weighted curriculum topics — run the free readiness check before item-set practice blocks.",
   },
   "cfa-level-2-formula-reference-2026": {
-    title: "CFA Level 2 Formula Reference 2026 | 219 Formulas + 80 Recall Drill",
+    title: "CFA L2 Formula Reference 2026 | 219 Formulas + Drill",
     headline: "CFA Level 2 Formula Reference — 219 Formulas + 80 Recall Drill",
     studyLabel: "CFA Level 2 exam prep",
     description:
@@ -172,23 +173,23 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Candidates who need sub-three-second formula retrieval under item-set timing print this reference for typeset formula tables and an 80-question recall drill — then drill weak topics in the companion Anki deck.",
   },
   "cfa-level-1-formula-reference-2026": {
-    title: "CFA Level 1 Formula Reference 2026 | 250 Formulas + 98 Definitions + 80-Question Drill",
+    title: "CFA L1 Formula Sheet PDF 2026 | 250 Formulas + Drill",
     headline: "CFA Level 1 Formula Reference — 250 Formulas + 98 Definitions",
     studyLabel: "CFA Level 1 exam prep",
     description:
       "CFA Level 1 formula quick reference PDF: 250 typeset formulas and 98 key definitions across 10 topic areas, 80-question recall drill with explanations, 54 print-ready pages. Pairs with 342+ Anki deck and free 60-question mock. Recall companion — not CFA Institute curriculum.",
     keywords: [
+      "free cfa level 1 formula sheet pdf",
       "cfa level 1 formula sheet",
       "cfa level 1 formula reference",
       "cfa formula cheat sheet",
       "cfa level 1 recall drill",
-      "cfa level 1 quick reference pdf",
     ],
     intro:
       "Candidates who need sub-three-second formula retrieval print this reference for typeset formula tables and an 80-question recall drill — then run the free readiness check and drill weak topics in the companion Anki deck.",
   },
   "frm-part-1-anki-deck": {
-    title: "FRM Part 1 Exam Prep 2026 | 444 Flashcards + Free Practice Test",
+    title: "FRM Part 1 Prep 2026 | 444 Cards + Free Practice Test",
     headline: "FRM Part 1 Exam Prep — 444 Flashcards + Free Mock",
     studyLabel: "FRM Part 1 exam prep",
     description:
@@ -204,23 +205,23 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Risk and finance professionals preparing for FRM Part 1 use daily Anki review for VaR, Greeks, credit risk, and market mechanics, then validate weak topics with the free FRM readiness check.",
   },
   "sie-exam-anki-deck": {
-    title: "FINRA SIE Exam Prep 2026 | 300 Flashcards + Free Practice Test",
+    title: "Free SIE Practice Test + 300 Cards | FINRA 2026",
     headline: "FINRA SIE Exam Prep — 300 Flashcards + Free Mock",
     studyLabel: "FINRA SIE exam prep",
     description:
-      "FINRA SIE exam prep with 300 Anki flashcards aligned to official topic weights — capital markets, products and risks, trading, customer accounts, and regulations — plus a free 75-question SIE practice test online. For US securities industry entrants.",
+      "FINRA SIE exam prep with 300 Anki flashcards aligned to official topic weights — capital markets, products and risks, trading, customer accounts, and regulations — plus a free 75-question SIE practice test online. Free SIE study guide alternative for US securities industry entrants.",
     keywords: [
       "sie exam prep",
+      "sie exam study guide free",
       "finra sie flashcards",
       "free sie practice test",
       "sie anki deck",
-      "securities industry essentials study guide",
     ],
     intro:
       "Americans entering brokerage and securities roles start with the SIE — this deck covers FINRA topic weights for daily recall, and the linked free mock mirrors the 75-question / 105-minute format.",
   },
   "series-7-anki-deck": {
-    title: "Series 7 Exam Prep 2026 | 300 Flashcards + Free Practice Test",
+    title: "Series 7 Prep 2026 | 300 Cards + Free Practice Test",
     headline: "Series 7 Top-Off Exam Prep — 300 Flashcards + Free Mock",
     studyLabel: "Series 7 exam prep",
     description:
@@ -236,7 +237,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "US Series 7 candidates drill suitability, investment products, and order-flow rules on their phone between full-length Q-banks — then use the free readiness check for a timed baseline.",
   },
   "series-63-anki-deck": {
-    title: "Series 63 Exam Prep 2026 | 250 Flashcards + Free Practice Test",
+    title: "Series 63 Prep 2026 | 250 Cards + Free Practice Test",
     headline: "Series 63 Exam Prep — 250 Flashcards + Free Mock",
     studyLabel: "Series 63 exam prep",
     description:
@@ -252,8 +253,8 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "After passing the SIE and Series 7, US reps use this deck for NASAA state-law recall — registration, ethics, and adviser rules that repeat on the Series 63.",
   },
   "servsafe-manager-anki-deck": {
-    title: "ServSafe Manager Exam Prep | 300 Flashcards + Free Practice Test",
-    headline: "ServSafe Manager Exam Prep — 300 Flashcards + Free Mock",
+    title: "ServSafe Manager Prep | 300 Cards + Free Mock",
+    headline: "ServSafe Manager Practice Test Free — 300 Cards + 90 Questions",
     studyLabel: "ServSafe Manager exam prep",
     description:
       "ServSafe Manager / CFPM exam prep with 300 food safety flashcards — time and temperature, HACCP, hygiene, contamination — plus a free 90-question ServSafe practice test online. For US restaurant managers and kitchen supervisors.",
@@ -268,40 +269,40 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "American restaurant managers preparing for the ServSafe Manager certification review food safety rules on Anki during breaks, then take the free 90-question mock before scheduling the proctored exam.",
   },
   "ptcb-pharmacy-technician-anki-deck": {
-    title: "PTCB Exam Prep 2026 | 300 PTCE Flashcards (Drugs, Sig Codes, Math)",
-    headline: "PTCB Pharmacy Technician Exam Prep — 300 PTCE Flashcards",
+    title: "PTCB Prep 2026 | 300 PTCE Cards + Free Mock",
+    headline: "PTCB Pharmacy Technician Exam Prep — 300 PTCE Flashcards + Free Mock",
     studyLabel: "PTCB / PTCE exam prep",
     description:
-      "PTCB pharmacy technician exam prep with 300 Anki flashcards for the January 2026 PTCE: top 200 brand/generic drugs, sig abbreviations, days-supply math, DEA schedules, DSCSA, and federal law. Pairs with the printable 2026 study guide PDF. Independent — not official PTCB material.",
+      "Free PTCB practice test included. 300 Anki flashcards for the January 2026 PTCE: top 200 brand/generic drugs, sig abbreviations, days-supply math, DEA schedules, DSCSA, and federal law. Includes a linked free 90-question timed mock with 2026 domain-weighted scoring. Independent — not official PTCB material.",
     keywords: [
       "ptcb exam prep",
+      "ptcb practice test 2025",
+      "ptcb practice test 2026",
       "ptce flashcards",
-      "pharmacy technician study guide",
-      "ptcb anki deck",
-      "top 200 drugs ptcb",
-      "pharmacy technician certification prep",
+      "free ptcb practice test",
     ],
     intro:
-      "US pharmacy technician candidates use this deck for daily brand/generic and sig-code recall — the high-volume PTCE material that is hard to retain from textbooks alone. Pair with the 2026 printable study guide for domain chapters and an 80-question practice exam.",
+      "US pharmacy technician candidates take the free 90-question PTCB mock first, then drill weak domains with daily brand/generic and sig-code flashcards. Pair with the 2026 printable study guide for domain chapters and an additional 80-question PDF practice exam.",
   },
   "ptcb-study-guide-2026": {
     title: "PTCB Exam Study Guide 2026 | PDF + 80-Question PTCE Practice Exam",
     headline: "PTCB Exam Study Guide 2026 — Printable PTCE Review + Practice Test",
     studyLabel: "PTCB / PTCE exam prep",
     description:
-      "PTCB Exam Study Guide 2026 PDF: 30 pages aligned to the January 2026 PTCE blueprint, 80-question practice exam with explanations, drug/sig/math cheat sheets, and 4-week plan. Pairs with the 300-card Anki deck. Independent — not official PTCB material.",
+      "PTCB Exam Study Guide 2026 PDF: 30 pages aligned to the January 2026 PTCE blueprint, 80-question practice exam with explanations, drug/sig/math cheat sheets, and 4-week plan. Pairs with the free 90-question online mock and 300-card Anki deck. Independent — not official PTCB material.",
     keywords: [
       "ptcb study guide 2026",
       "ptce practice exam",
       "pharmacy technician study guide pdf",
+      "free ptcb practice test",
       "ptcb cheat sheet",
       "ptce 2026 blueprint",
     ],
     intro:
-      "Candidates who prefer printable study material use this PDF for 2026 domain-weighted chapters and a full-length 80-question practice exam — then drill weak topics in the companion PTCB Anki deck.",
+      "Candidates who prefer printable study material use this PDF for 2026 domain-weighted chapters and an 80-question practice exam — then take the free online PTCB mock for timed domain scoring and drill weak topics in the companion Anki deck.",
   },
   "california-real-estate-exam-anki-deck": {
-    title: "California Real Estate Exam Prep | 400 Flashcards + Free Practice Test",
+    title: "CA Real Estate Prep | 400 Cards + Free Practice Test",
     headline: "California Real Estate Exam Prep — 400 Flashcards + Free Mock",
     studyLabel: "California real estate exam prep",
     description:
@@ -317,7 +318,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "California real estate license candidates use spaced repetition for agency law, contracts, and mandated disclosures — then run the free readiness check before paying for a full prep course.",
   },
   "life-and-health-insurance-exam-anki-deck": {
-    title: "Life & Health Insurance Exam Prep | 400 Flashcards + Free Practice Test",
+    title: "Life & Health Insurance Prep | 400 Cards + Mock",
     headline: "Life & Health Insurance Exam Prep — 400 Flashcards + Free Mock",
     studyLabel: "Life & Health insurance exam prep",
     description:
@@ -333,7 +334,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Americans studying for state Life & Health producer licensing use Anki for policy provisions, annuities, and cost-sharing concepts — then validate with the free timed practice test.",
   },
   "property-casualty-insurance-exam-anki-deck": {
-    title: "Property & Casualty Insurance Exam Prep | 400 Flashcards + Free Practice Test",
+    title: "P&C Insurance Prep | 400 Cards + Free Practice Test",
     headline: "Property & Casualty Insurance Exam Prep — 400 Flashcards + Free Mock",
     studyLabel: "Property & Casualty insurance exam prep",
     description:
@@ -349,7 +350,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "US P&C licensing candidates drill policy structures, exclusions, and commercial lines on Anki, then use the free readiness check before state exam registration.",
   },
   "servsafe-manager-complete-study-guide": {
-    title: "ServSafe Manager Exam Prep | PDF Study Guide + 70 Practice Questions",
+    title: "ServSafe Manager Study Guide | PDF + 70 Questions",
     headline: "ServSafe Manager Exam Prep — Printable Study Guide + 70 Questions",
     studyLabel: "ServSafe Manager exam prep",
     description:
@@ -364,7 +365,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Managers who prefer printable study material use this PDF for domain review and 70 exam-style questions — then drill weak topics in the companion Anki deck or free online mock.",
   },
   "cat4-level-d-anki-deck-printable-pdf": {
-    title: "CAT4 Level D Exam Prep | 200 Flashcards + Printable PDF",
+    title: "CAT4 Level D Exam Prep | 200 Cards + Printable PDF",
     headline: "CAT4 Level D Exam Prep — Anki Deck + Printable PDF",
     studyLabel: "CAT4 Level D exam prep",
     description:
@@ -378,6 +379,70 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "verbal classification cat4",
       "number series cat4",
     ],
+  },
+  "gmat-focus-anki-deck": {
+    title: "GMAT Focus Exam Prep | 400 Cards + Free Mock",
+    headline: "GMAT Focus Exam Prep — 400 Flashcards + Free Mock",
+    studyLabel: "GMAT Focus exam prep",
+    description:
+      "GMAT Focus exam prep with 400 Anki flashcards for Quant, Verbal, and Data Insights — plus a free 45-question timed readiness check with section scoring. Independent MBA prep — not GMAC material.",
+    keywords: [
+      "gmat focus anki deck",
+      "gmat focus flashcards",
+      "gmat focus practice test",
+      "gmat prep course alternative",
+      "mba admissions test prep",
+      "gmat diagnostic test",
+    ],
+    intro:
+      "MBA applicants drill high-yield GMAT Focus question types on Anki, then validate weak sections with the free timed readiness check before official GMAC prep or tutoring.",
+    audience:
+      "MBA and business master's applicants using spaced repetition alongside official GMAC materials.",
+  },
+  "hvac-epa-608-anki-deck": {
+    title: "EPA 608 HVAC Prep | 200+ Cards + Free Mock",
+  },
+  "bms-building-automation-anki-deck": {
+    title: "BMS / BAS Exam Prep | 200+ Cards + Free Mock",
+  },
+  "leed-green-associate-anki-deck": {
+    title: "LEED GA Prep | 250+ Cards + Free Mock",
+    description:
+      "LEED Green Associate exam prep: 250+ flashcards covering v4.1 concepts and process domains. Free 50-question practice test included. Instant download for USGBC credential candidates. Independent prep — not USGBC exam material.",
+    keywords: [
+      "leed green associate exam prep",
+      "leed ga exam prep free",
+      "leed green associate flashcards",
+      "free leed practice test",
+      "leed ga study guide",
+    ],
+  },
+  "leed-ap-bd-c-anki-deck": {
+    title: "LEED AP BD+C Prep | 250+ Cards + Free Mock",
+  },
+  "well-ap-anki-deck": {
+    title: "WELL AP Exam Prep | 250+ Cards + Free Mock",
+  },
+  "cem-anki-deck": {
+    title: "CEM Exam Prep | 250+ Cards + Free Mock",
+  },
+  "ashrae-certifications-anki-deck": {
+    title: "ASHRAE Cert Prep | 250+ Cards + Free Mock",
+  },
+  "cdcp-anki-deck": {
+    title: "CDCP Exam Prep | 250+ Cards + Free Mock",
+  },
+  "nebosh-anki-deck": {
+    title: "NEBOSH IGC Prep | 250+ Cards + Free Mock",
+  },
+  "cfps-anki-deck": {
+    title: "CFPS Exam Prep | 400+ Cards + Free Mock",
+  },
+  "mrics-anki-deck": {
+    title: "MRICS APC Prep | 250+ Cards + Free Mock",
+  },
+  "mrics-quantity-surveying-anki-deck": {
+    title: "MRICS QS Prep | 250+ Cards + Free Mock",
   },
 };
 
@@ -406,7 +471,7 @@ export function getDeckSeoProfile(deck: CatalogAvailableDeck, mock = getLinkedMo
 }
 
 export function buildDeckSeoTitle(deck: CatalogAvailableDeck) {
-  return getDeckSeoProfile(deck).title;
+  return fitSeoTitle(getDeckSeoProfile(deck).title, SEO_TITLE_MAX);
 }
 
 export function buildDeckSeoDescription(deck: CatalogAvailableDeck) {
@@ -447,12 +512,6 @@ export function buildDeckSearchFaqs(deck: CatalogAvailableDeck) {
     faqs.push({
       question: `Is there a free ${deck.shortName} practice test?`,
       answer: `Yes. Take ${buildMockSeoTitle(mock)} at ${mockUrl}. It includes ${mock.questionCount} timed questions, topic scoring, and a remediation plan linked back to this deck.`,
-    });
-  } else if (deck.slug === "ptcb-pharmacy-technician-anki-deck") {
-    faqs.push({
-      question: "Is there a free PTCB practice test?",
-      answer:
-        "UniPrep2Go does not yet publish a free online PTCB mock exam. Use this 300-card deck for daily brand/generic, sig-code, and pharmacy-math recall on your phone. The companion PTCB Study Guide 2026 PDF includes an 80-question full-length practice exam with explanations.",
     });
   } else if (deck.slug === "ptcb-study-guide-2026") {
     faqs.push({

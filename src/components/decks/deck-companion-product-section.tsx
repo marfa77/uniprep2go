@@ -26,7 +26,9 @@ export function DeckCompanionProductSection({
           className="inline-flex rounded-full border border-[#18140f]/20 bg-[#fffaf0] px-5 py-2.5 text-sm font-semibold text-[#18140f] transition hover:border-[#1f3a5f]"
           href={`/decks/${companion.slug}`}
         >
-          View {companion.format === "PDF" ? "PDF" : "deck"} — {priceLabel}
+          {companion.format === "PDF" && companion.slug.includes("formula")
+            ? `View matching ${companion.shortName} formula sheet — ${priceLabel}`
+            : `View ${companion.format === "PDF" ? "PDF" : "deck"} — ${priceLabel}`}
         </Link>
         <span className="text-xs text-[#7a6e5a]">
           Same validated bank as this {deck.format === "PDF" ? "PDF" : "deck"}

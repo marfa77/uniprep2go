@@ -628,6 +628,9 @@ async function main() {
       "cfps-readiness-check",
       "mrics-readiness-check",
       "mrics-quantity-surveying-readiness-check",
+      "cfa-level-2-readiness-check",
+      "delf-b2-readiness-check",
+      "us-citizenship-readiness-check",
     ]);
     if (!EMPTY_ONLY.has(config.slug)) {
       continue;

@@ -24,6 +24,12 @@ import {
   getDeckBySlug,
   siteFaqs,
 } from "@/lib/decks";
+import {
+  BUILDING_CERTIFICATION_HUB_SLUG,
+  BUILDING_CLUSTER_LABELS,
+  BUILDING_MOCK_DECK_REPAIR_PAIRS,
+  type BuildingClusterId,
+} from "@/lib/building-cert-clusters";
 import { buildCatalogItemListJsonLd, buildSiteOrganizationJsonLd } from "@/lib/product-jsonld";
 import { getAllMockExams, getMockExamConfig, primaryMock } from "@/lib/mock-exams/configs";
 import { buildMockExamItemListJsonLd } from "@/lib/mock-exams/llm";
@@ -53,12 +59,16 @@ const examPathLinks = [
   },
   {
     title: "Building, safety & sustainability",
-    description: "EPA 608 HVAC, LEED, BMS, MRICS, CFPS, and NEBOSH readiness checks with linked decks.",
+    description:
+      "13 certification pathways — EPA 608, LEED, WELL AP, BMS, MRICS, CFPS, NEBOSH, CDCP, CEM, ASHRAE, and GMAT Focus — each with a free mock and linked Anki deck.",
     links: [
+      { href: `/${BUILDING_CERTIFICATION_HUB_SLUG}`, label: "All building certification pathways" },
       { href: "/mock-exams/epa-608-readiness-check", label: "EPA 608 readiness check" },
       { href: "/mock-exams/leed-green-associate-readiness-check", label: "LEED GA readiness check" },
-      { href: "/mock-exams/bms-bas-readiness-check", label: "BMS / BAS readiness check" },
+      { href: "/mock-exams/leed-ap-bd-c-readiness-check", label: "LEED AP BD+C readiness check" },
+      { href: "/mock-exams/well-ap-readiness-check", label: "WELL AP readiness check" },
       { href: "/mock-exams/mrics-readiness-check", label: "MRICS APC readiness check" },
+      { href: "/mock-exams/gmat-focus-readiness-check", label: "GMAT Focus readiness check" },
     ],
   },
   {
@@ -67,6 +77,7 @@ const examPathLinks = [
     links: [
       { href: "/mock-exams/life-and-health-insurance-readiness-check", label: "Life & Health mock" },
       { href: "/mock-exams/property-and-casualty-insurance-readiness-check", label: "P&C mock" },
+      { href: "/mock-exams/ptcb-pharmacy-technician-mock", label: "Free PTCB practice test" },
       { href: "/decks/ptcb-pharmacy-technician-anki-deck", label: "PTCB flashcards" },
       { href: "/decks/california-real-estate-exam-anki-deck", label: "CA real estate deck" },
     ],
@@ -76,6 +87,7 @@ const examPathLinks = [
     description: "CFA and FRM readiness checks paired with formula references and focused Anki decks.",
     links: [
       { href: "/mock-exams/cfa-level-1-readiness-check", label: "CFA Level 1 mock" },
+      { href: "/mock-exams/cfa-level-2-readiness-check", label: "CFA Level 2 mock" },
       { href: "/decks/cfa-level-1-anki-deck", label: "CFA Level 1 deck" },
       { href: "/decks/cfa-level-2-anki-deck", label: "CFA Level 2 deck" },
       { href: "/decks/frm-part-1-anki-deck", label: "FRM Part 1 deck" },
@@ -85,6 +97,7 @@ const examPathLinks = [
     title: "Language and citizenship exams",
     description: "European Portuguese, French, German, Dutch, Italian, and immigration-focused Anki decks.",
     links: [
+      { href: "/mock-exams/delf-b2-readiness-check", label: "Free DELF B2 practice test" },
       { href: "/decks/ciple-a2-european-portuguese-anki-deck", label: "CIPLE A2 Portuguese" },
       { href: "/decks/delf-b2-french-anki-deck", label: "DELF B2 French" },
       { href: "/decks/dutch-a2-inburgering-anki-deck", label: "Dutch A2 Inburgering" },
@@ -93,16 +106,17 @@ const examPathLinks = [
   },
 ];
 
-/** Curated mock → deck repair pairs for the homepage funnel (not the full mock index). */
+/** US licensing & finance mock → deck pairs. Building certs are in #building-repair-pairs. */
 const mockDeckRepairPairSlugs: Array<{ mockSlug: string; deckSlug: string }> = [
   { mockSlug: "sie-full-mock", deckSlug: "sie-exam-anki-deck" },
   { mockSlug: "servsafe-manager-mock", deckSlug: "servsafe-manager-anki-deck" },
   { mockSlug: "cfa-level-1-readiness-check", deckSlug: "cfa-level-1-anki-deck" },
-  { mockSlug: "epa-608-readiness-check", deckSlug: "hvac-epa-608-anki-deck" },
-  { mockSlug: "leed-green-associate-readiness-check", deckSlug: "leed-green-associate-anki-deck" },
+  { mockSlug: "cfa-level-2-readiness-check", deckSlug: "cfa-level-2-anki-deck" },
+  { mockSlug: "delf-b2-readiness-check", deckSlug: "delf-b2-french-anki-deck" },
+  { mockSlug: "us-citizenship-readiness-check", deckSlug: "us-citizenship-test-prep2go-app" },
   { mockSlug: "life-and-health-insurance-readiness-check", deckSlug: "life-and-health-insurance-exam-anki-deck" },
   { mockSlug: "california-real-estate-readiness-check", deckSlug: "california-real-estate-exam-anki-deck" },
-  { mockSlug: "mrics-readiness-check", deckSlug: "mrics-anki-deck" },
+  { mockSlug: "ptcb-pharmacy-technician-mock", deckSlug: "ptcb-pharmacy-technician-anki-deck" },
 ];
 
 const howItWorksSteps = [
@@ -132,11 +146,12 @@ export async function generateMetadata(): Promise<Metadata> {
     finalize({
       title,
       description:
-        "Free online practice tests for SIE, ServSafe Manager, insurance, real estate, CFA, FRM, and Series exams, plus Anki flashcards and PDF study guides for weak-topic review.",
+        "Free online practice tests for SIE, ServSafe Manager, PTCB, insurance, real estate, CFA, FRM, and Series exams, plus Anki flashcards and PDF study guides for weak-topic review.",
       keywords: [
         "free sie practice test",
-        "servsafe manager practice test",
+        "ptcb practice test",
         "ptcb flashcards",
+        "servsafe manager practice test",
         "insurance license practice exam",
         "series 7 practice test",
         "california real estate exam prep",
@@ -189,6 +204,30 @@ function resolveRepairPairs(pricedBySlug: Map<string, PricedDeck>) {
   });
 }
 
+function resolveBuildingRepairPairs(pricedBySlug: Map<string, PricedDeck>) {
+  return BUILDING_MOCK_DECK_REPAIR_PAIRS.flatMap(({ mockSlug, deckSlug, clusterId }) => {
+    const mock = getMockExamConfig(mockSlug);
+    const deck = getDeckBySlug(deckSlug);
+    if (!mock || !deck) return [];
+
+    return [{ mock, deck, pricedDeck: pricedBySlug.get(deckSlug) ?? null, clusterId }];
+  });
+}
+
+function groupBuildingPairsByCluster(
+  pairs: ReturnType<typeof resolveBuildingRepairPairs>,
+) {
+  const grouped = new Map<BuildingClusterId, typeof pairs>();
+
+  for (const pair of pairs) {
+    const existing = grouped.get(pair.clusterId) ?? [];
+    existing.push(pair);
+    grouped.set(pair.clusterId, existing);
+  }
+
+  return grouped;
+}
+
 export default async function HomePage() {
   const availableDecks = await getPricedDecks();
   const catalogGroups = await getPricedDecksByCategory();
@@ -199,9 +238,12 @@ export default async function HomePage() {
   const mockExams = getAllMockExams();
   const pdfProductCount = availableDecks.filter((deck) => deck.format === "PDF").length;
   const repairPairs = resolveRepairPairs(pricedBySlug);
+  const buildingRepairPairs = resolveBuildingRepairPairs(pricedBySlug);
+  const buildingPairsByCluster = groupBuildingPairsByCluster(buildingRepairPairs);
 
   const sectionEvents = [
     { selector: "#repair-pairs", name: "mock_landing_view" as const },
+    { selector: "#building-repair-pairs", name: "mock_landing_view" as const },
     { selector: "#catalog", name: "catalog_view" as const },
     { selector: "#faq", name: "faq_view" as const },
   ];
@@ -491,7 +533,89 @@ export default async function HomePage() {
           </div>
         </section>
 
-        {/* 5. Collapsed catalog */}
+        {/* 5. Building certification repair pairs — full 13-pathway line */}
+        <section id="building-repair-pairs" className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
+          <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
+            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
+              Building certification line
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
+              13 mock → deck pathways by certification cluster
+            </h2>
+            <p className="mt-3 max-w-3xl text-[#4f493e]">
+              Each building, safety, sustainability, and MBA credential pairs a free readiness check
+              with a linked Anki deck — grouped by study pathway so you can see what comes next.{" "}
+              <Link
+                className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+                href={`/${BUILDING_CERTIFICATION_HUB_SLUG}`}
+              >
+                Full building certification hub
+              </Link>
+              .
+            </p>
+            <div className="mt-10 space-y-10">
+              {Array.from(buildingPairsByCluster.entries()).map(([clusterId, pairs]) => (
+                <div id={clusterId} key={clusterId}>
+                  <h3 className="text-lg font-semibold text-[#18140f]">
+                    {BUILDING_CLUSTER_LABELS[clusterId]}
+                  </h3>
+                  <div className="mt-4 grid gap-4 lg:grid-cols-2">
+                    {pairs.map(({ mock, deck, pricedDeck }) => {
+                      const deckIsPlanned = deck.status === "planned";
+
+                      return (
+                        <article
+                          className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-5"
+                          key={mock.slug}
+                        >
+                          <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                            <div className="min-w-0 flex-1">
+                              <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-[#1f3a5f]">
+                                Readiness check
+                              </p>
+                              <Link
+                                className="mt-1 block font-semibold text-[#18140f] hover:underline"
+                                href={`/mock-exams/${mock.slug}`}
+                              >
+                                {mock.shortTitle}
+                              </Link>
+                              <p className="mt-1 text-sm text-[#5f5749]">
+                                {mock.questionCount} q · {mock.durationMinutes} min
+                              </p>
+                            </div>
+                            <span aria-hidden="true" className="hidden text-[#7a6e5a] sm:block">
+                              →
+                            </span>
+                            <div className="min-w-0 flex-1">
+                              <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-[#1f3a5f]">
+                                {deckIsPlanned ? "Planned deck" : "Linked deck"}
+                              </p>
+                              <Link
+                                className="mt-1 block font-semibold text-[#18140f] hover:underline"
+                                href={`/decks/${deck.slug}`}
+                              >
+                                {deck.shortName}
+                              </Link>
+                              <p className="mt-1 text-sm text-[#5f5749]">
+                                {pricedDeck
+                                  ? `${formatDeckPriceLabel(pricedDeck)} · ${formatDeckContentLabel(pricedDeck)}`
+                                  : deckIsPlanned
+                                    ? "Planned · not yet on sale"
+                                    : "See deck page"}
+                              </p>
+                            </div>
+                          </div>
+                        </article>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 6. Collapsed catalog */}
         <section id="catalog" className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
           <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
             <h2 className="text-2xl font-semibold tracking-tight text-[#18140f]">

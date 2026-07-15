@@ -21,6 +21,11 @@ import { DeckRelatedDecks } from "@/components/decks/deck-related-decks";
 import { DeckSeoSections } from "@/components/decks/deck-seo-sections";
 import { DeckUniqueContentSection } from "@/components/decks/deck-unique-content-section";
 import { CollapsibleDetails } from "@/components/ui/collapsible-details";
+import {
+  BUILDING_CERTIFICATION_HUB_SLUG,
+  getBuildingClusterStudyPaths,
+  isBuildingCertDeckSlug,
+} from "@/lib/building-cert-clusters";
 import { buildMergedDeckFaqs } from "@/lib/deck-faq";
 import {
   getCompanionDeck,
@@ -44,7 +49,7 @@ import {
   shouldShowDeckPracticeMockSection,
   splitFaqs,
 } from "@/lib/page-layout";
-import { finalize, truncateSeoTitle } from "@/lib/seo";
+import { finalize, leafPageTitle } from "@/lib/seo";
 import { buildSocialMetadata } from "@/lib/social-metadata";
 
 export const revalidate = 3600;
@@ -66,7 +71,8 @@ export async function generateMetadata({
   }
 
   const image = getDeckCoverUrl(deck);
-  const title = truncateSeoTitle(buildDeckSeoTitle(deck));
+  const seoTitle = buildDeckSeoTitle(deck);
+  const title = leafPageTitle(seoTitle);
   const description = buildDeckSeoDescription(deck);
   const keywords = buildDeckSeoKeywords(deck);
   const examProfile = getExamFactsProfileForDeck(deck.slug);
@@ -81,7 +87,7 @@ export async function generateMetadata({
         canonical: `/decks/${deck.slug}`,
       },
       ...buildSocialMetadata({
-        title,
+        title: seoTitle,
         description,
         path: `/decks/${deck.slug}`,
         image,
@@ -158,32 +164,39 @@ export default async function DeckPage({
   const mergedFaqs = buildMergedDeckFaqs(deck);
   const { primary: primaryFaqs, extra: extraFaqs } = splitFaqs(mergedFaqs);
   const shortPitch = getDeckShortPitch(deck);
-  const showPracticeMockSection = practiceMock && shouldShowDeckPracticeMockSection(deck.slug, mockFirst);
+  const showPracticeMockSection = practiceMock && shouldShowDeckPracticeMockSection(deck.slug);
 
   const jsonLd = buildDeckPageJsonLd(deck);
   const heroImage = getDeckCoverUrl(deck);
   const relatedStudyPaths = [
-    ...(practiceMock
-      ? [
-          {
-            href: `/mock-exams/${practiceMock.slug}`,
-            label: `Free ${deck.shortName} practice test`,
-            note: `${practiceMock.questionCount} questions with topic scoring`,
-          },
-        ]
-      : []),
-    ...(companionDeck
-      ? [
-          {
-            href: `/decks/${companionDeck.slug}`,
-            label: companionDeck.shortName,
-            note:
-              deck.format === "PDF"
-                ? "Daily spaced-repetition companion"
-                : "Printable formula reference",
-          },
-        ]
-      : []),
+    ...(isBuildingCertDeckSlug(deck.slug)
+      ? getBuildingClusterStudyPaths(deck.slug)
+      : [
+          ...(practiceMock
+            ? [
+                {
+                  href: `/mock-exams/${practiceMock.slug}`,
+                  label: `Free ${deck.shortName} practice test`,
+                  note: `${practiceMock.questionCount} questions with topic scoring`,
+                },
+              ]
+            : []),
+          ...(companionDeck
+            ? [
+                {
+                  href: `/decks/${companionDeck.slug}`,
+                  label:
+                    companionDeck.format === "PDF" && companionDeck.slug.includes("formula")
+                      ? `Matching ${companionDeck.shortName} formula sheet`
+                      : companionDeck.shortName,
+                  note:
+                    deck.format === "PDF"
+                      ? "Daily spaced-repetition companion"
+                      : "Printable formula reference",
+                },
+              ]
+            : []),
+        ]),
   ];
 
   return (
@@ -250,15 +263,17 @@ export default async function DeckPage({
           variant="deck"
         />
 
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          {practiceMock ? (
+            <Link
+              className="inline-flex items-center justify-center rounded-full bg-[#1f3a5f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#152238] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+              href={`/mock-exams/${practiceMock.slug}`}
+            >
+              Take free {practiceMock.questionCount}-question practice test
+            </Link>
+          ) : null}
           {mockFirst && practiceMock ? (
             <>
-              <Link
-                className="inline-flex items-center justify-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-                href={`/mock-exams/${practiceMock.slug}`}
-              >
-                Start free practice test
-              </Link>
               <TrackedCheckoutLink
                 className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
                 deckSlug={deck.slug}
@@ -287,7 +302,7 @@ export default async function DeckPage({
                 >
                   View on App Store
                 </Link>
-              ) : (
+              ) : practiceMock ? null : (
                 <Link
                   className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
                   href={secondaryCta.href}
@@ -522,6 +537,14 @@ export default async function DeckPage({
         <DeckRelatedDecks deck={deck} />
 
         <section className="mt-10 flex flex-wrap gap-x-4 gap-y-2 text-sm text-[#7a6e5a]">
+          {isBuildingCertDeckSlug(deck.slug) ? (
+            <Link
+              className="underline decoration-[#18140f]/20 underline-offset-4"
+              href={`/${BUILDING_CERTIFICATION_HUB_SLUG}`}
+            >
+              Building certification hub
+            </Link>
+          ) : null}
           <Link className="underline decoration-[#18140f]/20 underline-offset-4" href={`/#catalog-${deck.category}`}>
             {categoryLabels[deck.category]} catalog
           </Link>

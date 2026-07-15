@@ -229,6 +229,19 @@ describe("anki-deck-launch", () => {
     ]);
   });
 
+  it("exposes launched GMAT Focus deck with sample card screenshots", () => {
+    const gmat = getCatalogDeckBySlug("gmat-focus-anki-deck");
+    expect(gmat).toBeDefined();
+    expect(gmat?.status).toBe("available");
+    expect(gmat?.sampleCards).toHaveLength(3);
+    expect(gmat?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/gmat-focus-anki-deck-sample-1.webp",
+      "/samples/gmat-focus-anki-deck-sample-2.webp",
+      "/samples/gmat-focus-anki-deck-sample-3.webp",
+    ]);
+    expect(gmat?.faqs.some((faq) => /400/i.test(faq.answer))).toBe(true);
+  });
+
   it("launches all building deck slugs into catalog", () => {
     const slugs = [
       "hvac-epa-608-anki-deck",

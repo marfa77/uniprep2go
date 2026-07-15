@@ -62,6 +62,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.95,
     },
+    {
+      url: `${siteUrl}/building-certification-anki-decks`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.94,
+    },
     ...mockPages,
     ...deckPages,
     {

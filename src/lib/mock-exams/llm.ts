@@ -156,6 +156,17 @@ export function buildMockExamPageJsonLd(config: MockExamConfig) {
         },
       },
       {
+        "@type": "Quiz",
+        "@id": `${pageUrl}#quiz`,
+        name: config.title,
+        description: seoDescription,
+        url: pageUrl,
+        educationalLevel: "Professional certification prep",
+        numberOfQuestions: config.questionCount,
+        about: config.examBody,
+        isAccessibleForFree: config.accessMode === "free_demand_test",
+      },
+      {
         "@type": "Course",
         "@id": `${pageUrl}#course`,
         name: config.title,

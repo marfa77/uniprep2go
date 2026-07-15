@@ -1,4 +1,6 @@
 import type { MockExamConfig, MockReport } from "@/lib/mock-exams/types";
+import { getCatalogDeckBySlug } from "@/lib/decks";
+import { FormulaBlock } from "./formula-block";
 import { MathContent } from "./math-content";
 import { QuestionContent } from "./question-content";
 
@@ -33,6 +35,7 @@ type MockReportPanelProps = {
 };
 
 export function MockReportPanel({ config, report }: MockReportPanelProps) {
+  const linkedDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
   const shouldRecommendDeck =
     report.verdict === "NO PASS" || report.verdict === "BORDERLINE RISK";
   const repairPlanSection = (
@@ -147,7 +150,7 @@ export function MockReportPanel({ config, report }: MockReportPanelProps) {
               </p>
               {item.formula ? (
                 <div className="mt-3 overflow-x-auto rounded-xl border border-[#18140f]/10 bg-[#fffaf0] p-3 text-sm">
-                  <MathContent text={item.formula} />
+                  <FormulaBlock text={item.formula} />
                 </div>
               ) : null}
               <p className="mt-3 text-sm leading-7">
@@ -172,6 +175,32 @@ export function MockReportPanel({ config, report }: MockReportPanelProps) {
               ) : null}
             </details>
           ))}
+        </div>
+      </section>
+
+      <section className="rounded-3xl border border-[#1f3a5f]/20 bg-[#fffaf0] p-6 sm:p-8">
+        <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Full study system</p>
+        <h3 className="mt-3 text-2xl font-semibold tracking-tight">
+          Ready for daily drilling on {linkedDeck?.shortName ?? config.linkedDeckSlug.replace(/-/g, " ")}?
+        </h3>
+        <p className="mt-4 max-w-3xl text-sm leading-7 text-[#4f493e]">
+          {shouldRecommendDeck
+            ? "Your mock score shows gaps this report cannot fix alone. The linked Anki deck covers the same topic map with spaced repetition — drill weak areas, then retake this mock in 3–7 days."
+            : "Strong mock result — keep momentum with the linked Anki deck for daily active recall on the same topics you just tested."}
+        </p>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <a
+            className="inline-flex rounded-full bg-[#18140f] px-5 py-2.5 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
+            href={report.linkedDeckUrl}
+          >
+            {linkedDeck?.checkoutUrl ? "Get the full Anki deck" : "Open linked Anki deck"}
+          </a>
+          <a
+            className="inline-flex rounded-full border border-[#18140f]/20 px-5 py-2.5 text-sm font-semibold text-[#18140f] transition hover:border-[#18140f]"
+            href={`/mock-exams/${config.slug}`}
+          >
+            Retake this mock
+          </a>
         </div>
       </section>
 

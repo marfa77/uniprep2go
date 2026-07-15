@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { getCatalogDeckBySlug } from "@/lib/decks";
 import type { MockAccessState, MockExamConfig, MockQuestion, MockReport } from "@/lib/mock-exams/types";
 import { getMockCta } from "@/lib/mock-exams/access";
 import {
@@ -173,7 +174,9 @@ export function MockExamClient({ config, questions, accessState, runnable }: Moc
               })
             }
           >
-            Open linked Anki deck
+            {getCatalogDeckBySlug(config.linkedDeckSlug)?.checkoutUrl
+              ? "Get the full study system"
+              : "Open linked Anki deck"}
           </Link>
         </div>
       </div>

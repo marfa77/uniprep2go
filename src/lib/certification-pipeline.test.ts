@@ -27,13 +27,12 @@ describe("certification pipeline", () => {
     expect(result.gates.find((g) => g.id === "mock-config")?.status).toBe("pass");
   });
 
-  it("flags empty banks as blocking failures", () => {
+  it("passes mock-bank gate when LEED GA bank is populated", () => {
     const cert = findCert(registry, { id: "leed-ga" });
     expect(cert).toBeDefined();
 
     const result = evaluateCertification(root, cert!);
     const bankGate = result.gates.find((g) => g.id === "mock-bank");
-    expect(bankGate?.status).toBe("fail");
-    expect(result.ready).toBe(false);
+    expect(bankGate?.status).toBe("pass");
   });
 });

@@ -30,7 +30,7 @@ import {
   buildMockSeoTitle,
 } from "@/lib/mock-exams/seo";
 import { buildSocialMetadata } from "@/lib/social-metadata";
-import { finalize, mockExamRobots, truncateSeoTitle } from "@/lib/seo";
+import { finalize, leafPageTitle, mockExamRobots } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site";
 
 export const revalidate = 3600;
@@ -51,7 +51,8 @@ export async function generateMetadata({
     return { title: "Mock exam not found" };
   }
 
-  const title = truncateSeoTitle(buildMockSeoTitle(config));
+  const seoTitle = buildMockSeoTitle(config);
+  const title = leafPageTitle(seoTitle);
   const description = buildMockSeoDescription(config);
   const keywords = buildMockSeoKeywords(config);
 
@@ -69,7 +70,7 @@ export async function generateMetadata({
         canonical: `/mock-exams/${config.slug}`,
       },
       ...buildSocialMetadata({
-        title,
+        title: seoTitle,
         description,
         path: `/mock-exams/${config.slug}`,
         image: coverImage,
@@ -127,7 +128,7 @@ export default async function MockExamPage({
         className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12"
       >
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-          {config.slug === "servsafe-manager-mock"
+          {config.slug === "servsafe-manager-mock" || config.slug === "ptcb-pharmacy-technician-mock"
             ? `Professional certification mocks · ${mockFreeAccessPriceLabel.toLowerCase()}`
             : `Exam prep mocks · ${mockFreeAccessPriceLabel.toLowerCase()}`}
         </p>

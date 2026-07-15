@@ -21,6 +21,7 @@ FINANCE_DIR = Path(
 INSURANCE_DIR = FINANCE_DIR.parent / "Insurance"
 REAL_ESTATE_DIR = FINANCE_DIR.parent / "RealEstate"
 SERVSAFE_DIR = FINANCE_DIR.parent / "ServSafe"
+PTCB_DIR = FINANCE_DIR.parent / "PTCB"
 OUT_DIR = ROOT / "src" / "data" / "mock-exams"
 
 SIE_SECTION_TO_TOPIC = {
@@ -61,6 +62,23 @@ SERVSAFE_TOPIC_COUNTS = {
     "personal-hygiene-contamination": 15,
     "cleaning-storage": 21,
     "management-haccp": 24,
+}
+
+PTCB_SECTION_TO_TOPIC = {
+    "TOP-200": "medications",
+    "FEDERAL-LAW": "federal-requirements",
+    "PATIENT-SAFETY": "patient-safety",
+    "INVENTORY": "patient-safety",
+    "ORDER-ENTRY": "order-entry",
+    "SIG-CODES": "order-entry",
+    "PHARM-MATH": "order-entry",
+}
+
+PTCB_TOPIC_COUNTS = {
+    "medications": 32,
+    "federal-requirements": 17,
+    "patient-safety": 21,
+    "order-entry": 20,
 }
 
 CFA_SECTION_PREFIX_TO_TOPIC = {
@@ -466,12 +484,22 @@ def main() -> None:
         SERVSAFE_SECTION_TO_TOPIC,
     )
 
+    ptcb_grouped = load_section_mapped_cards(
+        PTCB_DIR / "ptcb_pharmacy_tech_300_authored.csv",
+        PTCB_SECTION_TO_TOPIC,
+    )
+
     banks = {
         "sie-full-mock.json": build_bank("sie-full-mock", sie_grouped, SIE_TOPIC_COUNTS),
         "servsafe-manager-mock.json": build_bank(
             "servsafe-manager-mock",
             servsafe_grouped,
             SERVSAFE_TOPIC_COUNTS,
+        ),
+        "ptcb-pharmacy-technician-mock.json": build_bank(
+            "ptcb-pharmacy-technician-mock",
+            ptcb_grouped,
+            PTCB_TOPIC_COUNTS,
         ),
         "cfa-level-1-preview.json": build_bank(
             "cfa-level-1-readiness-check",

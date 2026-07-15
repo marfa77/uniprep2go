@@ -30,7 +30,7 @@ export function DeckPracticeMockSection({
         className="mt-4 inline-flex rounded-full bg-[#1f3a5f] px-5 py-2.5 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#152238]"
         href={`/mock-exams/${mock.slug}`}
       >
-        Start free {deck.shortName} practice test
+        Take free {mock.questionCount}-question {deck.shortName} practice test
       </Link>
     </section>
   );

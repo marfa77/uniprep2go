@@ -93,6 +93,7 @@ describe("intent pages visibility", () => {
       expect(urls).not.toContain(absoluteUrl(`/mock-exams/${mock.slug}/markdown`));
     }
 
-    expect(getAllMockExams().some((mock) => !isMockExamRunnable(mock.slug))).toBe(true);
+    expect(urls).toContain(absoluteUrl("/building-certification-anki-decks"));
+    expect(getAllMockExams().every((mock) => isMockExamRunnable(mock.slug))).toBe(true);
   });
 });

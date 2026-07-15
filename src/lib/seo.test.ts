@@ -11,12 +11,12 @@ import {
 import { absoluteUrl } from "./site";
 
 describe("seo utilities (Barakhlo patterns)", () => {
-  it("truncates long titles for Ahrefs-safe length", () => {
+  it("truncates long titles for Ahrefs-safe length without ellipsis", () => {
     const long =
       "Free MRICS Quantity Surveying APC Readiness Check Practice Test Online";
     const truncated = truncateSeoTitle(long);
     expect(truncated.length).toBeLessThanOrEqual(57);
-    expect(truncated.endsWith("…")).toBe(true);
+    expect(truncated.endsWith("…")).toBe(false);
   });
 
   it("enriches Open Graph with absolute URLs and site defaults", () => {
@@ -36,8 +36,8 @@ describe("seo utilities (Barakhlo patterns)", () => {
 
   it("noindexes mocks with empty or incomplete banks", () => {
     expect(shouldIndexMockExam("epa-608-readiness-check")).toBe(true);
-    expect(shouldIndexMockExam("bms-bas-readiness-check")).toBe(false);
-    expect(mockExamRobots("bms-bas-readiness-check")).toEqual(thinContentRobots);
+    expect(shouldIndexMockExam("bms-bas-readiness-check")).toBe(true);
+    expect(mockExamRobots("bms-bas-readiness-check")).toBeUndefined();
     expect(mockExamRobots("sie-full-mock")).toBeUndefined();
   });
 

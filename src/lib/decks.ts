@@ -1801,17 +1801,39 @@ const rawDecks: Deck[] = [
       { name: "Verbal Reasoning", examWeight: "33% of GMAT total score", cards: "Planned" },
       { name: "Data Insights", examWeight: "33% of GMAT total score", cards: "Planned" },
     ],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question:
+          "A shirt originally priced $80 is discounted by 25%, and then the discounted price is reduced by an additional 10%. What is the final price?",
+        answer:
+          "Correct: (a) $54. Sequential discounts multiply remaining-price factors: 80 × 0.75 × 0.90 = 54.",
+        imageUrl: "/samples/gmat-focus-anki-deck-sample-1.webp",
+      },
+      {
+        question:
+          "The city's new bike-share program has reduced traffic congestion, as evidenced by a 15% drop in average commute times since the program launched. Therefore, the city should expand the bike-share program to all neighborhoods.\n\nWhich of the following is an assumption required by the argument?",
+        answer:
+          "Correct: (a) The drop in commute times was primarily caused by the bike-share program rather than by other factors introduced during the same period.",
+        imageUrl: "/samples/gmat-focus-anki-deck-sample-2.webp",
+      },
+      {
+        question:
+          "Is x > 0?\n\n(1) x² = 16\n(2) x³ = -64\n\nWhich Data Sufficiency answer is correct?",
+        answer:
+          "Correct: (b) Statement (2) alone is sufficient — x³ = -64 gives x = -4, a definitive NO to x > 0.",
+        imageUrl: "/samples/gmat-focus-anki-deck-sample-3.webp",
+      },
+    ],
     faqs: [
       {
         question: "Is there a free GMAT practice test?",
         answer:
-          "Yes. Take the free 45-question GMAT Focus readiness check at uniprep2go.study/mock-exams/gmat-focus-readiness-check — timed section scoring and full answer review.",
+          "Yes. Take the free 45-question GMAT Focus readiness check at uniprep2go.study/mock-exams/gmat-focus-readiness-check — timed section scoring and full answer review. The paid Anki deck includes 400 cards from the same validated bank for daily drilling.",
       },
       {
-        question: "When will the GMAT Anki deck be available?",
+        question: "How many cards are in the GMAT Focus Anki deck?",
         answer:
-          "The deck is planned but not yet on sale. Use the readiness check now and request access on the mock page to be notified when the deck launches.",
+          "The deck includes 400 flashcards across Quantitative Reasoning, Verbal Reasoning, and Data Insights — built from the same validated item bank as the free readiness check.",
       },
     ],
   },
@@ -3326,7 +3348,8 @@ export function getAvailableDecksByCategory(): Array<{
 
 export const featuredDeckSlugs = [
   "servsafe-manager-anki-deck",
-  "ptcb-pharmacy-technician-anki-deck",
+  "hvac-epa-608-anki-deck",
+  "leed-green-associate-anki-deck",
   "sie-exam-anki-deck",
   "cfa-level-1-anki-deck",
 ] as const;
@@ -3350,17 +3373,17 @@ export const siteFaqs = [
   {
     question: "What is UniPrep2Go?",
     answer:
-      "UniPrep2Go is a US-first exam prep site built around free timed online practice tests and readiness checks — with topic scoring, answer review, and pass/no-pass reports — plus independent Anki flashcard decks and printable PDF cram sheets you can use to drill weak topics after a mock. The catalog also includes Prep2Go Immigration app decks for survival guides and citizenship test prep on the App Store. Priority markets are the United States: FINRA, insurance licensing, California real estate, ServSafe, CFA, and FRM.",
+      "UniPrep2Go is a US-first exam prep site built around free timed online practice tests and readiness checks — with topic scoring, answer review, and pass/no-pass reports — plus independent Anki flashcard decks and printable PDF cram sheets you can use to drill weak topics after a mock. The catalog includes US licensing (FINRA, insurance, real estate, ServSafe, PTCB), building and sustainability credentials (EPA 608, LEED, WELL AP, BMS, MRICS, CFPS, NEBOSH, CDCP, CEM, ASHRAE), finance exams (CFA, FRM), MBA admissions (GMAT Focus), language certifications, and Prep2Go Immigration app decks on the App Store.",
   },
   {
     question: "Which US exams does UniPrep2Go cover?",
     answer:
-      "The catalog includes US-market decks for FINRA SIE, Series 7, Series 63, California real estate salesperson exam prep, Life & Health insurance licensing, Property & Casualty insurance licensing, PTCB pharmacy technician exam prep, and ServSafe Manager food safety review, plus finance credential decks such as CFA Level 1 and FRM Part 1.",
+      "The catalog includes US-market decks for FINRA SIE, Series 7, Series 63, California real estate salesperson exam prep, Life & Health insurance licensing, Property & Casualty insurance licensing, PTCB pharmacy technician exam prep, and ServSafe Manager food safety review, plus finance credential decks such as CFA Level 1 and FRM Part 1, and building credentials such as EPA 608 HVAC, LEED Green Associate, LEED AP BD+C, WELL AP, BMS/BAS, MRICS APC, CFPS, NEBOSH, CDCP, CEM, and ASHRAE.",
   },
   {
     question: "Are there free practice tests for US licensing exams?",
     answer:
-      "Yes. UniPrep2Go publishes free timed online practice tests for FINRA SIE (75 questions), ServSafe Manager (90 questions), and readiness checks for CFA Level 1, FRM Part 1, Series 7, Series 63, Life & Health insurance, Property & Casualty insurance, and the California real estate salesperson exam. Each mock includes topic scoring, answer review, and a linked flashcard deck repair plan at uniprep2go.study/mock-exams.",
+      "Yes. UniPrep2Go publishes free timed online practice tests for FINRA SIE (75 questions), ServSafe Manager (90 questions), and readiness checks for CFA Level 1, FRM Part 1, Series 7, Series 63, Life & Health insurance, Property & Casualty insurance, California real estate, EPA 608 HVAC, LEED Green Associate, LEED AP BD+C, BMS/BAS, MRICS, CFPS, NEBOSH, CDCP, WELL AP, CEM, ASHRAE, and GMAT Focus. Each mock includes topic scoring, answer review, and a linked flashcard deck repair plan at uniprep2go.study/mock-exams.",
   },
   {
     question: "What is an Anki deck?",

@@ -1,5 +1,6 @@
 import type { MockExamConfig } from "./types";
 import { mockFreeAccessPriceLabel } from "./pricing";
+import { fitSeoTitle, SEO_TITLE_MAX } from "../seo";
 import { absoluteUrl, siteConfig } from "../site";
 
 type MockSeoProfile = {
@@ -68,6 +69,25 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfile>> = {
     audience:
       "Restaurant managers, kitchen supervisors, hospitality students, and CFPM candidates who need a timed food safety baseline before exam day.",
     practiceTestLabel: "ServSafe Manager practice test",
+  },
+  "ptcb-pharmacy-technician-mock": {
+    title: "Free PTCB Practice Test 2026 | 90-Question PTCE Mock Exam Online",
+    description:
+      "Take a free PTCB / PTCE practice test online: 90 timed questions, 110 minutes, 2026 domain-weighted scoring (Medications 35%, Federal Requirements 19%, Patient Safety 24%, Order Entry 23%), answer explanations, and pass/no-pass report. Independent mock — not official PTCB material.",
+    keywords: [
+      "ptcb practice test",
+      "ptcb mock exam",
+      "free ptcb practice test",
+      "ptce practice exam",
+      "pharmacy technician practice test",
+      "ptcb exam questions",
+    ],
+    headline: "Free PTCB Pharmacy Technician Practice Test",
+    intro:
+      "A full-length PTCB / PTCE mock aligned to the January 2026 content outline: 90 questions, 110 minutes, and domain-weighted topic diagnosis across medications, federal requirements, patient safety, and order entry — sourced from the same validated item bank as the UniPrep2Go Anki deck.",
+    audience:
+      "Pharmacy technician candidates, pharmacy tech students, and career changers preparing for the PTCE who want a timed baseline before buying prep courses or drilling flashcards.",
+    practiceTestLabel: "PTCB / PTCE practice test",
   },
   "cfa-level-1-readiness-check": {
     title: "Free CFA Level 1 Practice Test | 60-Question Readiness Check",
@@ -185,7 +205,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfile>> = {
     practiceTestLabel: "Property & Casualty insurance practice test",
   },
   "gmat-focus-readiness-check": {
-    title: "Free GMAT Focus Practice Test | 45-Question Readiness Check",
+    title: "Free GMAT Focus Practice Test | 45-Question Mock",
     description:
       "Free GMAT Focus practice questions online: 45 timed questions across Quant, Verbal, and Data Insights, 90 minutes, 70% readiness target, section diagnosis, and full answer review. Independent GMAT prep — not GMAC material.",
     keywords: [
@@ -203,7 +223,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfile>> = {
     practiceTestLabel: "GMAT Focus practice test",
   },
   "epa-608-readiness-check": {
-    title: "Free EPA 608 Practice Test | 40-Question HVAC Readiness Check",
+    title: "Free EPA 608 Practice Test | 40-Question Mock",
     description:
       "Free EPA Section 608 practice questions online: 40 timed questions across Core, Type I, Type II, and Type III, 75 minutes, 70% readiness target, section diagnosis, and full answer review. Independent HVAC prep — not U.S. EPA exam material.",
     keywords: [
@@ -222,7 +242,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfile>> = {
     practiceTestLabel: "EPA 608 practice test",
   },
   "bms-bas-readiness-check": {
-    title: "Free BMS Practice Test | 40-Question Building Automation Readiness Check",
+    title: "Free BMS Practice Test | 40-Question BAS Mock",
     description:
       "Free BMS / BAS practice questions online: 40 timed questions across BACnet, HVAC sequences, alarms and trends, and commissioning, 75 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent building automation prep — not Tridium or BACnet International exam material.",
     keywords: [
@@ -434,6 +454,55 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfile>> = {
       "Assistant quantity surveyors, cost consultants, commercial managers, and QS graduates preparing for MRICS on the Quantity Surveying and Construction pathway.",
     practiceTestLabel: "MRICS Quantity Surveying practice questions",
   },
+  "cfa-level-2-readiness-check": {
+    title: "Free CFA Level 2 Practice Test | 60-Question Mock",
+    description:
+      "Free CFA Level 2 practice questions online: 60 timed questions across all ten topic areas, 90 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent prep — not CFA Institute material.",
+    keywords: [
+      "cfa level 2 practice test",
+      "cfa level 2 mock exam",
+      "free cfa level 2 questions",
+      "cfa level 2 readiness check",
+      "cfa level 2 item set prep",
+    ],
+    headline: "Free CFA Level 2 Readiness Check",
+    intro:
+      "A timed CFA Level 2 readiness diagnostic with vignette-style application prompts across ethics, FSA, equity, fixed income, derivatives, and portfolio management.",
+    audience: "CFA Level 2 candidates who passed Level 1 and want a baseline before item-set practice blocks.",
+    practiceTestLabel: "CFA Level 2 practice test",
+  },
+  "delf-b2-readiness-check": {
+    title: "Free DELF B2 Practice Test | 40-Question Mock",
+    description:
+      "Free DELF B2 French practice questions: 40 timed items across comprehension, grammar, vocabulary, and production skills, 60 minutes, 70% readiness target, and full answer review. Independent prep — not official DELF material.",
+    keywords: [
+      "delf b2 practice test",
+      "delf b2 exam prep free",
+      "french b2 mock exam",
+      "delf b2 vocabulary test",
+    ],
+    headline: "Free DELF B2 French Readiness Check",
+    intro:
+      "A timed DELF B2 readiness diagnostic covering B2-level grammar, vocabulary, and comprehension before the official four-skills exam.",
+    audience: "DELF B2 candidates and advanced French learners using spaced repetition for vocabulary retention.",
+    practiceTestLabel: "DELF B2 practice test",
+  },
+  "us-citizenship-readiness-check": {
+    title: "Free U.S. Citizenship Practice Test | 30 Civics Questions",
+    description:
+      "Free U.S. citizenship civics practice test: 30 timed questions on American government, history, and geography, 30 minutes, 80% readiness target, and full answer review. Pairs with the Prep2Go Immigration app. Independent prep — not USCIS material.",
+    keywords: [
+      "us citizenship practice test",
+      "uscis civics test free",
+      "naturalization test practice",
+      "citizenship test questions 2025",
+    ],
+    headline: "Free U.S. Citizenship Civics Readiness Check",
+    intro:
+      "A timed civics readiness check modeled on USCIS naturalization themes — government structure, American history, and geography/symbols.",
+    audience: "Green card holders preparing for the U.S. naturalization civics interview.",
+    practiceTestLabel: "U.S. citizenship practice test",
+  },
 };
 
 export function getMockSeoProfile(config: MockExamConfig) {
@@ -441,7 +510,7 @@ export function getMockSeoProfile(config: MockExamConfig) {
 }
 
 export function buildMockSeoTitle(config: MockExamConfig) {
-  return getMockSeoProfile(config).title;
+  return fitSeoTitle(getMockSeoProfile(config).title, SEO_TITLE_MAX);
 }
 
 export function buildMockSeoDescription(config: MockExamConfig) {

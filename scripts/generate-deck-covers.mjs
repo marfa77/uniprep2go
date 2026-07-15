@@ -8,7 +8,8 @@
  *   node scripts/generate-deck-covers.mjs --all-missing
  *   node scripts/generate-deck-covers.mjs --all-missing --force
  *   node scripts/generate-deck-covers.mjs --hero
- *   node scripts/generate-deck-covers.mjs --dry-run
+ *   node scripts/generate-deck-covers.mjs --gumroad-thumbnails --all-building --force
+ *   node scripts/generate-deck-covers.mjs --gumroad-thumbnails --slug gmat-focus-anki-deck
  */
 
 import { existsSync, readFileSync } from "node:fs";
@@ -20,10 +21,13 @@ import {
   HERO_HEIGHT,
   HERO_WIDTH,
   writeCoverWebp,
+  writeSquareThumbnailJpg,
+  GUMROAD_THUMB_SIZE,
 } from "./lib/cover-blueprint.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const COVERS_DIR = join(root, "public/covers");
+const GUMROAD_THUMBS_DIR = join(root, "public/gumroad-thumbnails");
 const HERO_PATH = join(root, "public/home/hero.webp");
 
 /** @type {Record<string, { title: string; subtitle: string; badge?: string; panelKind: string }>} */
@@ -58,21 +62,25 @@ const DECK_CONFIGS = {
   "ashrae-certifications-anki-deck": {
     title: "ASHRAE\nCertifications Anki Deck",
     subtitle: "HVAC design and standards flashcards",
+    monogram: "ASHRAE",
     panelKind: "hvac",
   },
   "cdcp-anki-deck": {
     title: "CDCP Anki Deck",
     subtitle: "Certified Data Centre Professional flashcards",
+    monogram: "CDCP",
     panelKind: "datacenter",
   },
   "nebosh-anki-deck": {
     title: "NEBOSH Anki Deck",
     subtitle: "Occupational health and safety flashcards",
+    monogram: "NEBOSH",
     panelKind: "safety",
   },
   "cfps-anki-deck": {
     title: "CFPS Anki Deck",
     subtitle: "Certified Fire Protection Specialist flashcards",
+    monogram: "CFPS",
     panelKind: "safety",
   },
   "bms-building-automation-anki-deck": {
@@ -83,16 +91,19 @@ const DECK_CONFIGS = {
   "mrics-anki-deck": {
     title: "MRICS Anki Deck",
     subtitle: "Chartered surveyor assessment flashcards",
+    monogram: "MRICS",
     panelKind: "survey",
   },
   "mrics-quantity-surveying-anki-deck": {
     title: "MRICS Quantity\nSurveying Anki Deck",
     subtitle: "QS pathway assessment flashcards",
+    monogram: "MRICS\nQS",
     panelKind: "survey",
   },
   "gmat-focus-anki-deck": {
     title: "GMAT Focus\nAnki Deck",
     subtitle: "Business school admissions flashcards",
+    monogram: "GMAT",
     panelKind: "finance",
   },
 };
@@ -184,6 +195,8 @@ function parseArgs(argv) {
     dryRun: false,
     force: false,
     hero: false,
+    gumroadThumbnails: false,
+    allBuilding: false,
   };
   for (let i = 2; i < argv.length; i += 1) {
     const arg = argv[i];
@@ -192,6 +205,8 @@ function parseArgs(argv) {
     else if (arg === "--dry-run") args.dryRun = true;
     else if (arg === "--force") args.force = true;
     else if (arg === "--hero") args.hero = true;
+    else if (arg === "--gumroad-thumbnails") args.gumroadThumbnails = true;
+    else if (arg === "--all-building") args.allBuilding = true;
     else if (arg === "--slug") args.slug = argv[++i];
   }
   return args;
@@ -245,7 +260,53 @@ async function generateSiteHero({ dryRun = false, force = false } = {}) {
   return { outPath: HERO_PATH, bytes, quality };
 }
 
+async function generateGumroadThumbnail(slug, config, { dryRun = false, force = false } = {}) {
+  const outPath = join(GUMROAD_THUMBS_DIR, `${slug}.jpg`);
+  if (existsSync(outPath) && !force) {
+    console.log(`  skip ${slug} — Gumroad thumbnail exists (use --force)`);
+    return { slug, skipped: true };
+  }
+
+  console.log(`→ ${slug} (Gumroad 1200×1200)`);
+  if (dryRun) {
+    console.log(`  dry-run: ${outPath} [${config.panelKind}]`);
+    return { slug, dryRun: true };
+  }
+
+  const { bytes } = await writeSquareThumbnailJpg(outPath, {
+    size: GUMROAD_THUMB_SIZE,
+    title: config.title,
+    subtitle: config.subtitle,
+    badge: config.badge ?? "Anki Deck",
+    panelKind: config.panelKind,
+    monogram: config.monogram,
+  });
+
+  console.log(`  saved ${outPath} (${Math.round(bytes / 1024)} KB)`);
+  return { slug, outPath, bytes };
+}
+
+const BUILDING_DECK_SLUGS = [
+  "hvac-epa-608-anki-deck",
+  "bms-building-automation-anki-deck",
+  "leed-green-associate-anki-deck",
+  "leed-ap-bd-c-anki-deck",
+  "well-ap-anki-deck",
+  "cem-anki-deck",
+  "ashrae-certifications-anki-deck",
+  "cdcp-anki-deck",
+  "nebosh-anki-deck",
+  "cfps-anki-deck",
+  "mrics-anki-deck",
+  "mrics-quantity-surveying-anki-deck",
+  "gmat-focus-anki-deck",
+];
+
 function resolveSlugs(args, deckConfigs) {
+  if (args.allBuilding) {
+    return BUILDING_DECK_SLUGS.filter((slug) => deckConfigs[slug]);
+  }
+
   if (args.slug) {
     if (!deckConfigs[args.slug]) {
       throw new Error(`Unknown slug: ${args.slug}. Known: ${Object.keys(deckConfigs).join(", ")}`);
@@ -271,8 +332,10 @@ async function main() {
   };
   const slugs = resolveSlugs(args, deckConfigs);
 
-  if (!args.hero && slugs.length === 0 && !args.allMissing && !args.catalog && !args.slug) {
-    throw new Error("Pass --slug <slug>, --all-missing, --catalog, and/or --hero");
+  if (!args.hero && slugs.length === 0 && !args.allMissing && !args.catalog && !args.slug && !args.gumroadThumbnails && !args.allBuilding) {
+    throw new Error(
+      "Pass --slug <slug>, --all-missing, --catalog, --all-building, --gumroad-thumbnails, and/or --hero",
+    );
   }
 
   const results = [];
@@ -281,7 +344,17 @@ async function main() {
     results.push(await generateSiteHero(args));
   }
 
-  if (slugs.length > 0) {
+  if (slugs.length > 0 && args.gumroadThumbnails) {
+    console.log(`Generating ${slugs.length} Gumroad square thumbnail(s)…\n`);
+    for (const slug of slugs) {
+      try {
+        results.push(await generateGumroadThumbnail(slug, deckConfigs[slug], args));
+      } catch (error) {
+        console.error(`  ✗ ${slug}: ${error.message}`);
+        results.push({ slug, error: error.message });
+      }
+    }
+  } else if (slugs.length > 0) {
     console.log(`Generating ${slugs.length} blueprint cover(s)…\n`);
     for (const slug of slugs) {
       try {

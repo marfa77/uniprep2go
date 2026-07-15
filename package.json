@@ -19,7 +19,11 @@
     "scaffold:certification": "node scripts/scaffold-certification.mjs",
     "validate:certification": "node scripts/validate-certification-pipeline.mjs",
     "indexnow:deploy": "tsx src/lib/run-indexnow-deploy.ts",
-    "indexnow:submit": "node scripts/indexnow.js --sitemap"
+    "indexnow:submit": "node scripts/indexnow.js --sitemap",
+    "audit:seo": "npx tsx scripts/seo-audit-openrouter.mjs --scope all --live",
+    "audit:seo:rules": "npx tsx scripts/seo-audit-openrouter.mjs --scope all --rules-only",
+    "audit:seo:gmat": "npx tsx scripts/seo-audit-openrouter.mjs --scope gmat --live",
+    "audit:seo:building": "npx tsx scripts/seo-audit-openrouter.mjs --scope building --live"
   },
   "dependencies": {
     "@upstash/redis": "^1.38.0",

@@ -36,6 +36,12 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
       "Common ServSafe Manager / CFPM format: 90 questions, 120 minutes, 75% pass — independent mock, not National Restaurant Association material.",
   },
   {
+    query: "PTCB practice test free",
+    mockSlug: "ptcb-pharmacy-technician-mock",
+    disambiguation:
+      "January 2026 PTCE format: 90 questions, 110 minutes, four domain weights — independent mock, not PTCB exam material.",
+  },
+  {
     query: "CFA Level 1 practice test free",
     mockSlug: "cfa-level-1-readiness-check",
     disambiguation:
@@ -106,6 +112,60 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     mockSlug: "mrics-quantity-surveying-readiness-check",
     disambiguation:
       "Quantity Surveying pathway requires six core technical competencies to Level 3 plus mandatory ethics — not a standalone MCQ exam.",
+  },
+  {
+    query: "BMS BAS practice test free",
+    mockSlug: "bms-bas-readiness-check",
+    disambiguation:
+      "Building automation readiness check covers BACnet, HVAC sequences, and operator workflows — independent prep, not vendor certification.",
+  },
+  {
+    query: "LEED AP BD+C practice questions",
+    mockSlug: "leed-ap-bd-c-readiness-check",
+    disambiguation:
+      "Official GBCI LEED AP BD+C exam uses item scenarios across BD+C domains — this timed readiness check drills representative MCQs only.",
+  },
+  {
+    query: "WELL AP exam practice test",
+    mockSlug: "well-ap-readiness-check",
+    disambiguation:
+      "IWBI WELL AP exam covers WELL v2 concepts across air, water, nourishment, light, movement, thermal comfort, sound, materials, mind, and community — independent prep only.",
+  },
+  {
+    query: "CFPS practice exam NFPA",
+    mockSlug: "cfps-readiness-check",
+    disambiguation:
+      "NFPA Certified Fire Protection Specialist is a Prometric exam across eight handbook domains — this readiness check is supplementary drill, not NFPA material.",
+  },
+  {
+    query: "NEBOSH IGC practice questions",
+    mockSlug: "nebosh-readiness-check",
+    disambiguation:
+      "NEBOSH International General Certificate uses scenario-based assessment through accredited Learning Partners — this MCQ readiness check drills knowledge areas only.",
+  },
+  {
+    query: "CDCP data centre practice test",
+    mockSlug: "cdcp-readiness-check",
+    disambiguation:
+      "EXIN EPI CDCP covers facilities, power, cooling, fire, security, and operations — verify current blueprint at exin.com; independent prep only.",
+  },
+  {
+    query: "GMAT Focus practice test free",
+    mockSlug: "gmat-focus-readiness-check",
+    disambiguation:
+      "Official GMAT Focus Edition has three 45-minute sections (Quant, Verbal, Data Insights) — this 45-question readiness check is a diagnostic baseline, not a GMAC mock.",
+  },
+  {
+    query: "CEM certified energy manager exam prep",
+    mockSlug: "cem-readiness-check",
+    disambiguation:
+      "AEE Certified Energy Manager exam spans 14 body-of-knowledge areas — independent readiness check only, not AEE exam material.",
+  },
+  {
+    query: "ASHRAE certification practice questions",
+    mockSlug: "ashrae-certifications-readiness-check",
+    disambiguation:
+      "ASHRAE offers multiple credential pathways — this readiness check drills HVAC design and operations concepts for general ASHRAE exam prep.",
   },
 ];
 
@@ -326,7 +386,7 @@ export function buildSiteAiDescription(): string {
 }
 
 export function buildSiteAiCategory(): string {
-  return "exam-prep;us-licensing;free-practice-tests;anki-decks";
+  return "exam-prep;us-licensing;building-certifications;free-practice-tests;anki-decks";
 }
 
 /** Mock exams index page strip. */
