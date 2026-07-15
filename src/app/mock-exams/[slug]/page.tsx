@@ -74,7 +74,7 @@ export async function generateMetadata({
         description,
         path: `/mock-exams/${config.slug}`,
         image: coverImage,
-        imageAlt: title,
+        imageAlt: seoTitle,
         imageWidth: 1200,
         imageHeight: 630,
       }),
