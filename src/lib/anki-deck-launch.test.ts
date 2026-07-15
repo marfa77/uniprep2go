@@ -89,6 +89,20 @@ describe("anki-deck-launch", () => {
     ]);
   });
 
+  it("exposes launched ASHRAE deck with sample card screenshots", () => {
+    const ashrae = getCatalogDeckBySlug("ashrae-certifications-anki-deck");
+    expect(ashrae).toBeDefined();
+    expect(ashrae?.status).toBe("available");
+    expect(ashrae?.apkgStatus).toBe("ready");
+    expect(ashrae?.checkoutUrl).toContain("gumroad.com/l/ashrae-certifications-anki-deck");
+    expect(ashrae?.sampleCards).toHaveLength(3);
+    expect(ashrae?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/ashrae-certifications-anki-deck-sample-1.webp",
+      "/samples/ashrae-certifications-anki-deck-sample-2.webp",
+      "/samples/ashrae-certifications-anki-deck-sample-3.webp",
+    ]);
+  });
+
   it("launches all building deck slugs into catalog", () => {
     const slugs = [
       "hvac-epa-608-anki-deck",

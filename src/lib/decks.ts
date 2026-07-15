@@ -2157,7 +2157,27 @@ const rawDecks: Deck[] = [
       { name: "HVAC / High-Performance Design (CHD, HBDP, HFDP)", examWeight: "ASHRAE credentials", cards: "Planned" },
       { name: "Operations & Performance (OPMP)", examWeight: "ASHRAE credential", cards: "Planned" },
     ],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question:
+          "BCxP (Building Commissioning Professional) certification validates ability to:",
+        answer:
+          "Correct: (a) Lead and manage the commissioning process from design through occupancy per owner requirements. BCxP emphasizes owner advocacy and process management across project phases.",
+        imageUrl: "/samples/ashrae-certifications-anki-deck-sample-1.webp",
+      },
+      {
+        question: "The Owner's Project Requirements (OPR) document defines:",
+        answer:
+          "Correct: (a) Owner's measurable performance expectations for systems and the facility. OPR is the foundation against which commissioning verifies success.",
+        imageUrl: "/samples/ashrae-certifications-anki-deck-sample-2.webp",
+      },
+      {
+        question: "Basis of Design (BOD) translates OPR into:",
+        answer:
+          "Correct: (a) Design team assumptions, standards, and system selections explaining how requirements will be met. CxA reviews BOD for alignment with OPR early in design.",
+        imageUrl: "/samples/ashrae-certifications-anki-deck-sample-3.webp",
+      },
+    ],
     faqs: [
       {
         question: "Is there a free ASHRAE certification practice test?",
