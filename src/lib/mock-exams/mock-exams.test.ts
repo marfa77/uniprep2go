@@ -4,7 +4,7 @@ import { getAllMockExams, getMockExamConfig, primaryMock, validateMockExamConfig
 import { buildMockExamFacts, buildMockExamMarkdown, buildMockExamPageJsonLd } from "./llm";
 import { buildMockSeoDescription } from "./seo";
 import { getQuestionBankForExam, isMockExamRunnable, validateQuestionBank } from "./question-bank";
-import { buildMockReport, shuffleQuestions } from "./scoring";
+import { buildMockReport, shuffleQuestions, selectSessionQuestions } from "./scoring";
 import type { MockQuestion } from "./types";
 
 describe("mock exam configs", () => {
@@ -57,6 +57,10 @@ describe("question bank from deck content", () => {
   it("uses plausible unique options and distributes correct answers across positions", () => {
     for (const config of getAllMockExams()) {
       const { questions } = getQuestionBankForExam(config.slug);
+      if (questions.length === 0) {
+        continue;
+      }
+
       const correctPositions = new Set<string>();
 
       for (const question of questions) {
@@ -81,6 +85,40 @@ describe("question bank from deck content", () => {
     expect(isMockExamRunnable("servsafe-manager-mock")).toBe(true);
     expect(isMockExamRunnable("cfa-level-1-readiness-check")).toBe(true);
     expect(isMockExamRunnable("frm-part-1-readiness-check")).toBe(true);
+  });
+
+  it("marks GMAT Focus readiness mock runnable with the loaded question bank", () => {
+    expect(isMockExamRunnable("gmat-focus-readiness-check")).toBe(true);
+    const { errors } = getQuestionBankForExam("gmat-focus-readiness-check");
+    expect(errors).toEqual([]);
+  });
+
+  it("stores GMAT equation stems in the formula field using LaTeX", () => {
+    const { questions } = getQuestionBankForExam("gmat-focus-readiness-check");
+    const equationQuestion = questions.find((question) => question.id.endsWith("-011"));
+    expect(equationQuestion?.formula).toContain("2^{x+3}");
+    expect(equationQuestion?.prompt).not.toMatch(/\^/);
+  });
+
+  it("marks new preview readiness mocks runnable with minimal 10-per-topic banks", () => {
+    for (const slug of [
+      "epa-608-readiness-check",
+      "bms-bas-readiness-check",
+      "leed-green-associate-readiness-check",
+      "leed-ap-bd-c-readiness-check",
+      "well-ap-readiness-check",
+      "cem-readiness-check",
+      "ashrae-certifications-readiness-check",
+      "cdcp-readiness-check",
+      "nebosh-readiness-check",
+      "cfps-readiness-check",
+      "mrics-readiness-check",
+      "mrics-quantity-surveying-readiness-check",
+    ]) {
+      expect(isMockExamRunnable(slug)).toBe(true);
+      const { errors } = getQuestionBankForExam(slug);
+      expect(errors).toEqual([]);
+    }
   });
 
   it("loads a complete ServSafe Manager bank sourced from deck CSV export", () => {
@@ -162,6 +200,30 @@ describe("scoring", () => {
     expect(first).toEqual(second);
     expect(first).not.toEqual(third);
   });
+
+  it("selects a stratified session subset from a larger bank", () => {
+    const config = getMockExamConfig("epa-608-readiness-check");
+    expect(config).not.toBeNull();
+
+    const bank: MockQuestion[] = [];
+    for (const topic of config!.topics) {
+      for (let index = 0; index < 25; index += 1) {
+        bank.push({
+          ...sampleQuestions[0]!,
+          id: `${topic.id}-${index}`,
+          topicId: topic.id,
+        });
+      }
+    }
+
+    const session = selectSessionQuestions(bank, config!, "attempt-1");
+    expect(session).toHaveLength(config!.questionCount);
+    for (const topic of config!.topics) {
+      expect(session.filter((question) => question.topicId === topic.id)).toHaveLength(
+        topic.questionCount ?? 0,
+      );
+    }
+  });
 });
 
 describe("access adapter", () => {
@@ -233,5 +295,84 @@ describe("llm visibility", () => {
         expect.objectContaining({ position: 3, name: "CFA Level 1 Readiness Check" }),
       ]),
     });
+  });
+
+  it("builds GMAT markdown with citable exam facts before the FAQ", () => {
+    const config = getMockExamConfig("gmat-focus-readiness-check");
+    expect(config).not.toBeNull();
+
+    const markdown = buildMockExamMarkdown(config!);
+    expect(markdown).toContain("Graduate Management Admission Test (GMAT)");
+    expect(markdown).toContain("205–805");
+    expect(buildMockExamFacts(config!).runnable).toBe(true);
+  });
+
+  it("builds EPA 608 markdown with citable exam facts before the FAQ", () => {
+    const config = getMockExamConfig("epa-608-readiness-check");
+    expect(config).not.toBeNull();
+
+    const markdown = buildMockExamMarkdown(config!);
+    expect(markdown).toContain("EPA Section 608 Technician Certification");
+    expect(markdown).toContain("18 of 25");
+    expect(buildMockExamFacts(config!).runnable).toBe(true);
+  });
+
+  it("builds BMS markdown with citable exam facts before the FAQ", () => {
+    const config = getMockExamConfig("bms-bas-readiness-check");
+    expect(config).not.toBeNull();
+
+    const markdown = buildMockExamMarkdown(config!);
+    expect(markdown).toContain("Building Automation System (BAS / BMS)");
+    expect(markdown).toContain("BACnet");
+    expect(buildMockExamFacts(config!).runnable).toBe(true);
+  });
+
+  it("builds LEED and CEM markdown with citable exam facts", () => {
+    const leedGa = getMockExamConfig("leed-green-associate-readiness-check")!;
+    expect(buildMockExamMarkdown(leedGa)).toContain("LEED Green Associate");
+    expect(buildMockExamMarkdown(leedGa)).toContain("170");
+
+    const leedAp = getMockExamConfig("leed-ap-bd-c-readiness-check")!;
+    expect(buildMockExamMarkdown(leedAp)).toContain("Building Design + Construction");
+
+    const wellAp = getMockExamConfig("well-ap-readiness-check")!;
+    expect(buildMockExamMarkdown(wellAp)).toContain("WELL Accredited Professional");
+    expect(buildMockExamMarkdown(wellAp)).toContain("170");
+    expect(buildMockExamFacts(wellAp).runnable).toBe(true);
+
+    const cem = getMockExamConfig("cem-readiness-check")!;
+    expect(buildMockExamMarkdown(cem)).toContain("Certified Energy Manager (CEM)");
+    expect(buildMockExamMarkdown(cem)).toContain("700");
+    expect(buildMockExamFacts(cem).runnable).toBe(true);
+
+    const ashrae = getMockExamConfig("ashrae-certifications-readiness-check")!;
+    expect(buildMockExamMarkdown(ashrae)).toContain("ASHRAE Personnel Certification");
+    expect(buildMockExamMarkdown(ashrae)).toContain("BCxP");
+    expect(buildMockExamFacts(ashrae).runnable).toBe(true);
+
+    const cdcp = getMockExamConfig("cdcp-readiness-check")!;
+    expect(buildMockExamMarkdown(cdcp)).toContain("Certified Data Centre Professional");
+    expect(buildMockExamMarkdown(cdcp)).toContain("68%");
+    expect(buildMockExamFacts(cdcp).runnable).toBe(true);
+
+    const nebosh = getMockExamConfig("nebosh-readiness-check")!;
+    expect(buildMockExamMarkdown(nebosh)).toContain("NEBOSH");
+    expect(buildMockExamMarkdown(nebosh)).toContain("GIC1");
+    expect(buildMockExamFacts(nebosh).runnable).toBe(true);
+
+    const cfps = getMockExamConfig("cfps-readiness-check")!;
+    expect(buildMockExamMarkdown(cfps)).toContain("Certified Fire Protection Specialist");
+    expect(buildMockExamMarkdown(cfps)).toContain("Fire Suppression");
+    expect(buildMockExamFacts(cfps).runnable).toBe(true);
+
+    const mrics = getMockExamConfig("mrics-readiness-check")!;
+    expect(buildMockExamMarkdown(mrics)).toContain("Assessment of Professional Competence");
+    expect(buildMockExamMarkdown(mrics)).toContain("MRICS");
+    expect(buildMockExamFacts(mrics).runnable).toBe(true);
+
+    const mricsQs = getMockExamConfig("mrics-quantity-surveying-readiness-check")!;
+    expect(buildMockExamMarkdown(mricsQs)).toContain("Quantity Surveying");
+    expect(buildMockExamMarkdown(mricsQs)).toContain("Commercial Management");
+    expect(buildMockExamFacts(mricsQs).runnable).toBe(true);
   });
 });

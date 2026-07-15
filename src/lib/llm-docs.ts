@@ -19,6 +19,8 @@ import {
   hasCitableExamLayer,
   listCitableExamDeckSlugs,
 } from "./exam-facts";
+import { buildExamHighIntentSection } from "./exam-llm-layer";
+import { llmMarkdownLink, llmUtmUrl } from "./llm-meta";
 
 const snippetSignals = [
   "2026 exam-prep positioning where applicable",
@@ -518,9 +520,11 @@ Free timed mocks and readiness checks built from deck content. ${mockFreeAccessN
 ${getAllMockExams()
   .map(
     (mock) =>
-      `- [${mock.title}](${absoluteUrl(`/mock-exams/${mock.slug}`)}) — ${mock.questionCount} questions, ${mock.durationMinutes} min, pass ${mock.passRule.passPercent}% — [facts](${absoluteUrl(`/api/mock-exams/${mock.slug}`)}) · [markdown](${absoluteUrl(`/mock-exams/${mock.slug}/markdown`)})`,
+      `- ${llmMarkdownLink(mock.title, `/mock-exams/${mock.slug}`)} — ${mock.questionCount} questions, ${mock.durationMinutes} min, pass ${mock.passRule.passPercent}% — [facts](${absoluteUrl(`/api/mock-exams/${mock.slug}`)}) · [markdown](${absoluteUrl(`/mock-exams/${mock.slug}/markdown`)})`,
   )
   .join("\n")}
+
+${buildExamHighIntentSection()}
 
 ## Flashcard decks & PDFs
 
@@ -530,7 +534,7 @@ ${categoryGroups
       `### ${group.label}\n\n${group.decks
         .map(
           (deck) =>
-            `- [${deck.title}](${absoluteUrl(`/decks/${deck.slug}`)}) — ${formatLlmPriceLabel(deck)}, ${formatDeckContentLabel(deck)} — [facts](${absoluteUrl(`/api/facts/${deck.slug}`)}) · [markdown](${absoluteUrl(`/${deck.slug}.md`)})`,
+            `- ${llmMarkdownLink(deck.title, `/decks/${deck.slug}`)} — ${formatLlmPriceLabel(deck)}, ${formatDeckContentLabel(deck)} — [facts](${absoluteUrl(`/api/facts/${deck.slug}`)}) · [markdown](${absoluteUrl(`/${deck.slug}.md`)})`,
         )
         .join("\n")}`,
   )
@@ -539,13 +543,13 @@ ${categoryGroups
 ## Intent answer pages
 
 ${intentPages
-  .map((page) => `- [${page.title}](${absoluteUrl(`/${page.slug}`)}) — ${page.description}`)
+  .map((page) => `- ${llmMarkdownLink(page.title, `/${page.slug}`)} — ${page.description}`)
   .join("\n")}
 
 ## Machine-readable sources
 
 - [Catalog JSON](${absoluteUrl("/api/facts")}): full product catalog with prices, slugs, and deck URLs
-- [Anki Starter Kit](${absoluteUrl("/anki-starter-kit")}): onboarding guide for importing .apkg decks, syncing through AnkiWeb, and studying on phone
+- [Anki Starter Kit](${llmUtmUrl("/anki-starter-kit")}): onboarding guide for importing .apkg decks, syncing through AnkiWeb, and studying on phone
 - [Finance mock exams JSON](${absoluteUrl("/api/mock-exams")}): all finance readiness products, including SIE, CFA Level 1, FRM Part 1, FINRA Series 7/63, California Real Estate, Life & Health, and Property & Casualty
 - [Finance mock markdown example](${absoluteUrl("/mock-exams/sie-full-mock/markdown")}): per-mock Markdown route pattern is /mock-exams/[slug]/markdown
 - [Full LLM catalog](${absoluteUrl("/llms-full.txt")}): one clean Markdown bundle with all deck facts, FAQs, intent pages, sample cards, and checkout details
@@ -554,6 +558,6 @@ ${intentPages
 
 ## Optional
 
-- [Contact](${absoluteUrl("/contact")}): publisher support and checkout questions
+- [Contact](${llmUtmUrl("/contact")}): publisher support and checkout questions
 `;
 }

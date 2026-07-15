@@ -3,14 +3,30 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { FunnelTracker, TrackedCheckoutLink } from "@/components/funnel-tracker";
+import { LlmFactsStrip } from "@/components/llm/llm-facts-strip";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import {
+  buildDeckAiCategory,
+  buildDeckAiDescription,
+} from "@/lib/exam-llm-layer";
+import { getExamFactsProfileForDeck } from "@/lib/exam-facts";
+import { withAiMetadata } from "@/lib/llm-meta";
+import { DeckApkgPendingNotice } from "@/components/decks/deck-apkg-pending-notice";
+import { DeckCompanionProductSection } from "@/components/decks/deck-companion-product-section";
 import { DeckExamFactsSection } from "@/components/decks/deck-exam-facts-section";
 import { DeckPositioningSection } from "@/components/decks/deck-positioning-section";
+import { DeckPracticeMockSection } from "@/components/decks/deck-practice-mock-section";
 import { DeckRelatedDecks } from "@/components/decks/deck-related-decks";
 import { DeckSeoSections } from "@/components/decks/deck-seo-sections";
 import { DeckUniqueContentSection } from "@/components/decks/deck-unique-content-section";
+import { CollapsibleDetails } from "@/components/ui/collapsible-details";
 import { buildMergedDeckFaqs } from "@/lib/deck-faq";
+import {
+  getCompanionDeck,
+  getDeckPracticeMock,
+  isMockFirstDeckPage,
+} from "@/lib/deck-funnel";
 import { getDeckShortPitch } from "@/lib/deck-page-copy";
 import { catalogAvailableDecks, categoryLabels } from "@/lib/decks";
 import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
@@ -21,10 +37,15 @@ import {
   buildDeckSeoTitle,
   getDeckLinkedMock,
 } from "@/lib/deck-seo";
-import { getDeckCoverUrl } from "@/lib/deck-media";
+import { getDeckCoverUrl, isPreoptimizedPublicImage } from "@/lib/deck-media";
 import { buildDeckPageJsonLd } from "@/lib/product-jsonld";
+import {
+  deckMoreAboutHint,
+  shouldShowDeckPracticeMockSection,
+  splitFaqs,
+} from "@/lib/page-layout";
+import { finalize, truncateSeoTitle } from "@/lib/seo";
 import { buildSocialMetadata } from "@/lib/social-metadata";
-import { buildMockSeoTitle } from "@/lib/mock-exams/seo";
 
 export const revalidate = 3600;
 
@@ -45,25 +66,34 @@ export async function generateMetadata({
   }
 
   const image = getDeckCoverUrl(deck);
-  const title = buildDeckSeoTitle(deck);
+  const title = truncateSeoTitle(buildDeckSeoTitle(deck));
   const description = buildDeckSeoDescription(deck);
   const keywords = buildDeckSeoKeywords(deck);
+  const examProfile = getExamFactsProfileForDeck(deck.slug);
+  const linkedMockForMeta = getDeckLinkedMock(deck.slug);
 
-  return {
-    title,
-    description,
-    keywords,
-    alternates: {
-      canonical: `/decks/${deck.slug}`,
-    },
-    ...buildSocialMetadata({
+  return withAiMetadata(
+    finalize({
       title,
       description,
-      path: `/decks/${deck.slug}`,
-      image,
-      imageAlt: `${deck.shortName} exam prep preview`,
+      keywords,
+      alternates: {
+        canonical: `/decks/${deck.slug}`,
+      },
+      ...buildSocialMetadata({
+        title,
+        description,
+        path: `/decks/${deck.slug}`,
+        image,
+        imageAlt: `${deck.shortName} exam prep preview`,
+      }),
     }),
-  };
+    {
+      aiDescription: buildDeckAiDescription(deck, examProfile, linkedMockForMeta),
+      aiCategory: buildDeckAiCategory(deck),
+      path: `/decks/${deck.slug}`,
+    },
+  );
 }
 
 export default async function DeckPage({
@@ -86,9 +116,16 @@ export default async function DeckPage({
         ? "Buy the PDF"
         : "Buy the deck";
   const linkedMock = getDeckLinkedMock(deck.slug);
-  const secondaryCta = linkedMock
+  const practiceMock = getDeckPracticeMock(deck.slug);
+  const mockFirst = isMockFirstDeckPage(deck.slug);
+  const companionDeck = getCompanionDeck(deck.slug);
+  const pricedCompanionDeck = companionDeck
+    ? await getPricedDeckBySlug(companionDeck.slug)
+    : null;
+  const examFactsProfile = getExamFactsProfileForDeck(deck.slug);
+  const secondaryCta = practiceMock
     ? {
-        href: `/mock-exams/${linkedMock.slug}`,
+        href: `/mock-exams/${practiceMock.slug}`,
         label: `Free ${deck.shortName} practice test`,
       }
     : deck.format === "PDF"
@@ -107,19 +144,47 @@ export default async function DeckPage({
           };
 
   const sectionEvents = [
-    { selector: "#exam-facts", name: "exam_facts_view" as const },
+    ...(practiceMock
+      ? [{ selector: "#practice-mock", name: "mock_landing_view" as const }]
+      : []),
     { selector: "#facts", name: "product_facts_view" as const },
     { selector: "#topic-matrix", name: "topic_matrix_view" as const },
     { selector: "#sample-cards", name: "sample_cards_view" as const },
     { selector: "#how-this-compares", name: "positioning_view" as const },
+    { selector: "#exam-facts", name: "exam_facts_view" as const },
     { selector: "#faq", name: "faq_view" as const },
   ];
 
   const mergedFaqs = buildMergedDeckFaqs(deck);
+  const { primary: primaryFaqs, extra: extraFaqs } = splitFaqs(mergedFaqs);
   const shortPitch = getDeckShortPitch(deck);
+  const showPracticeMockSection = practiceMock && shouldShowDeckPracticeMockSection(deck.slug, mockFirst);
 
   const jsonLd = buildDeckPageJsonLd(deck);
   const heroImage = getDeckCoverUrl(deck);
+  const relatedStudyPaths = [
+    ...(practiceMock
+      ? [
+          {
+            href: `/mock-exams/${practiceMock.slug}`,
+            label: `Free ${deck.shortName} practice test`,
+            note: `${practiceMock.questionCount} questions with topic scoring`,
+          },
+        ]
+      : []),
+    ...(companionDeck
+      ? [
+          {
+            href: `/decks/${companionDeck.slug}`,
+            label: companionDeck.shortName,
+            note:
+              deck.format === "PDF"
+                ? "Daily spaced-repetition companion"
+                : "Printable formula reference",
+          },
+        ]
+      : []),
+  ];
 
   return (
     <main className="min-h-screen bg-[#f7f3ea] text-[#18140f]">
@@ -171,119 +236,79 @@ export default async function DeckPage({
                 priority={deck.format === "PDF"}
                 sizes="(max-width: 1024px) 100vw, 360px"
                 src={heroImage}
+                unoptimized={isPreoptimizedPublicImage(heroImage)}
                 width={1376}
               />
             </div>
           ) : null}
         </div>
 
+        <LlmFactsStrip
+          deck={deck}
+          linkedMock={linkedMock}
+          profile={examFactsProfile}
+          variant="deck"
+        />
+
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <TrackedCheckoutLink
-            className="inline-flex items-center justify-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-            deckSlug={deck.slug}
-            href={deck.checkoutUrl}
-            source="deck_page_cta"
-          >
-            {checkoutActionLabel} — {priceLabel}
-          </TrackedCheckoutLink>
-          {deck.checkoutProvider === "App Store" ? (
-            <Link
-              className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-              href={deck.checkoutUrl}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              View on App Store
-            </Link>
+          {mockFirst && practiceMock ? (
+            <>
+              <Link
+                className="inline-flex items-center justify-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+                href={`/mock-exams/${practiceMock.slug}`}
+              >
+                Start free practice test
+              </Link>
+              <TrackedCheckoutLink
+                className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+                deckSlug={deck.slug}
+                href={deck.checkoutUrl}
+                source="deck_page_cta"
+              >
+                {checkoutActionLabel} — {priceLabel}
+              </TrackedCheckoutLink>
+            </>
           ) : (
-            <Link
-              className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-              href={secondaryCta.href}
-            >
-              {secondaryCta.label}
-            </Link>
+            <>
+              <TrackedCheckoutLink
+                className="inline-flex items-center justify-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+                deckSlug={deck.slug}
+                href={deck.checkoutUrl}
+                source="deck_page_cta"
+              >
+                {checkoutActionLabel} — {priceLabel}
+              </TrackedCheckoutLink>
+              {deck.checkoutProvider === "App Store" ? (
+                <Link
+                  className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+                  href={deck.checkoutUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  View on App Store
+                </Link>
+              ) : (
+                <Link
+                  className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+                  href={secondaryCta.href}
+                >
+                  {secondaryCta.label}
+                </Link>
+              )}
+            </>
           )}
         </div>
 
-        <DeckSeoSections deck={deck} />
+        <DeckApkgPendingNotice deck={deck} />
 
-        <DeckExamFactsSection deck={deck} />
-
-        {linkedMock ? (
-          <section className="mt-8 rounded-3xl border border-[#1f3a5f]/15 bg-[#fffaf0] p-5">
-            <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#1f3a5f]">
-              Free practice test
-            </p>
-            <h2 className="mt-2 text-xl font-semibold tracking-tight">
-              {buildMockSeoTitle(linkedMock)}
-            </h2>
-            <p className="mt-2 text-sm leading-7 text-[#4f493e]">
-              Run the linked {linkedMock.questionCount}-question timed practice test for topic scoring,
-              answer review, and a pass/no-pass remediation plan before deciding what to drill next.
-            </p>
-            <Link
-              className="mt-4 inline-flex rounded-full border border-[#1f3a5f]/25 px-5 py-2.5 text-sm font-semibold text-[#1f3a5f] transition hover:border-[#1f3a5f]"
-              href={`/mock-exams/${linkedMock.slug}`}
-            >
-              Start free {deck.shortName} practice test
-            </Link>
-          </section>
-        ) : null}
-
-        <section id="facts" className="mt-12">
-          <h2 className="text-2xl font-semibold tracking-tight">Product facts</h2>
-          <dl className="mt-4 grid gap-px overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#18140f]/10 sm:grid-cols-2">
-            {[
-              [deck.format === "PDF" ? "Contents" : "Cards", deck.facts.cards],
-              ["Coverage", deck.facts.topics],
-              ["Format", deck.format],
-              ["Price", priceLabel],
-              ["Checkout", deck.checkoutProvider],
-              ["Exam cycle", deck.facts.examYear],
-              ["Delivery", deck.facts.delivery],
-            ].map(([label, value]) => (
-              <div className="bg-[#fffaf0] px-5 py-4" key={label}>
-                <dt className="font-mono text-xs uppercase tracking-[0.18em] text-[#7a6e5a]">
-                  {label}
-                </dt>
-                <dd className="mt-2 font-medium">{value}</dd>
-              </div>
-            ))}
-          </dl>
-        </section>
-
-        {deck.topicCoverage.length > 0 ? (
-          <section id="topic-matrix" className="mt-12">
-            <h2 className="text-2xl font-semibold tracking-tight">
-              {deck.format === "PDF" ? "What is inside the PDF" : "Coverage by exam topic"}
-            </h2>
-            <div className="mt-4 overflow-x-auto rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
-              <table className="w-full min-w-[640px] border-collapse text-left">
-                <thead>
-                  <tr className="border-b border-[#18140f]/15 font-mono text-xs uppercase tracking-[0.18em] text-[#7a6e5a]">
-                    <th className="px-5 py-4 font-medium">
-                      {deck.format === "PDF" ? "Section" : "Topic"}
-                    </th>
-                    <th className="px-5 py-4 font-medium">
-                      {deck.format === "PDF" ? "Length" : "Exam weight"}
-                    </th>
-                    <th className="px-5 py-4 font-medium">
-                      {deck.format === "PDF" ? "What you get" : "Cards"}
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[#18140f]/10">
-                  {deck.topicCoverage.map((topic) => (
-                    <tr key={topic.name}>
-                      <td className="px-5 py-4 font-medium">{topic.name}</td>
-                      <td className="px-5 py-4 text-[#4f493e]">{topic.examWeight}</td>
-                      <td className="px-5 py-4 text-[#4f493e]">{topic.cards}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </section>
+        {showPracticeMockSection ? (
+          <div id="practice-mock">
+            <DeckPracticeMockSection
+              companionMock={mockFirst}
+              deck={deck}
+              mock={practiceMock}
+            />
+          </div>
         ) : null}
 
         {deck.sampleCards.length > 0 ? (
@@ -293,8 +318,7 @@ export default async function DeckPage({
             </h2>
             {deck.format === "PDF" ? (
               <p className="mt-2 max-w-2xl text-sm leading-7 text-[#5f5749]">
-                Three real excerpts from the PDF: the cram sheet, allergens + HACCP, and the Big 6
-                pathogen table.
+                Real excerpts from the PDF so you can judge layout and depth before checkout.
               </p>
             ) : null}
             <div
@@ -378,44 +402,132 @@ export default async function DeckPage({
           </section>
         ) : null}
 
-        <DeckPositioningSection deck={deck} />
-        <DeckUniqueContentSection deck={deck} />
+        {pricedCompanionDeck ? (
+          <DeckCompanionProductSection companion={pricedCompanionDeck} deck={deck} />
+        ) : null}
 
-        <section id="faq" className="mt-12">
-          <h2 className="text-2xl font-semibold tracking-tight">FAQ</h2>
+        <section id="facts" className="mt-12">
+          <h2 className="text-2xl font-semibold tracking-tight">Product facts</h2>
+          <dl className="mt-4 grid gap-px overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#18140f]/10 sm:grid-cols-2">
+            {[
+              [deck.format === "PDF" ? "Contents" : "Cards", deck.facts.cards],
+              ["Coverage", deck.facts.topics],
+              ["Format", deck.format],
+              ["Price", priceLabel],
+              ["Checkout", deck.checkoutProvider],
+              ["Exam cycle", deck.facts.examYear],
+              ["Delivery", deck.facts.delivery],
+            ].map(([label, value]) => (
+              <div className="bg-[#fffaf0] px-5 py-4" key={label}>
+                <dt className="font-mono text-xs uppercase tracking-[0.18em] text-[#7a6e5a]">
+                  {label}
+                </dt>
+                <dd className="mt-2 font-medium">{value}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+
+        {deck.topicCoverage.length > 0 ? (
+          <section id="topic-matrix" className="mt-12">
+            <h2 className="text-2xl font-semibold tracking-tight">
+              {deck.format === "PDF" ? "What is inside the PDF" : "Coverage by exam topic"}
+            </h2>
+            <div className="mt-4 overflow-x-auto rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
+              <table className="w-full min-w-[640px] border-collapse text-left">
+                <thead>
+                  <tr className="border-b border-[#18140f]/15 font-mono text-xs uppercase tracking-[0.18em] text-[#7a6e5a]">
+                    <th className="px-5 py-4 font-medium">
+                      {deck.format === "PDF" ? "Section" : "Topic"}
+                    </th>
+                    <th className="px-5 py-4 font-medium">
+                      {deck.format === "PDF" ? "Length" : "Exam weight"}
+                    </th>
+                    <th className="px-5 py-4 font-medium">
+                      {deck.format === "PDF" ? "What you get" : "Cards"}
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[#18140f]/10">
+                  {deck.topicCoverage.map((topic) => (
+                    <tr key={topic.name}>
+                      <td className="px-5 py-4 font-medium">{topic.name}</td>
+                      <td className="px-5 py-4 text-[#4f493e]">{topic.examWeight}</td>
+                      <td className="px-5 py-4 text-[#4f493e]">{topic.cards}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        ) : null}
+
+        <CollapsibleDetails
+          hint={deckMoreAboutHint(deck)}
+          id="more-about"
+          summary={`More about ${deck.shortName}`}
+        >
+          <div className="space-y-10 [&_section]:!mt-0">
+            <DeckSeoSections deck={deck} />
+            <DeckPositioningSection deck={deck} />
+            <DeckUniqueContentSection deck={deck} />
+            {examFactsProfile ? (
+              <DeckExamFactsSection deck={deck} profile={examFactsProfile} compact />
+            ) : null}
+          </div>
+        </CollapsibleDetails>
+
+        <section id="faq" className="mt-8">
+          <h2 className="text-xl font-semibold tracking-tight">FAQ</h2>
           <div className="mt-4 divide-y divide-[#18140f]/10 rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
-            {mergedFaqs.map((faq) => (
+            {primaryFaqs.map((faq) => (
               <article className="p-5" key={faq.question}>
                 <h3 className="font-semibold">{faq.question}</h3>
-                <p className="mt-2 leading-7 text-[#5f5749]">{faq.answer}</p>
+                <p className="mt-2 text-sm leading-7 text-[#5f5749]">{faq.answer}</p>
               </article>
             ))}
           </div>
+          {extraFaqs.length > 0 ? (
+            <CollapsibleDetails className="mt-4" summary={`More questions (${extraFaqs.length})`}>
+              <div className="divide-y divide-[#18140f]/10">
+                {extraFaqs.map((faq) => (
+                  <article className="py-4 first:pt-0 last:pb-0" key={faq.question}>
+                    <h3 className="font-semibold">{faq.question}</h3>
+                    <p className="mt-2 text-sm leading-7 text-[#5f5749]">{faq.answer}</p>
+                  </article>
+                ))}
+              </div>
+            </CollapsibleDetails>
+          ) : null}
         </section>
+
+        {relatedStudyPaths.length > 0 ? (
+          <section className="mt-8 rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-5">
+            <h2 className="text-lg font-semibold tracking-tight">Also useful</h2>
+            <div className="mt-3 grid gap-3 sm:grid-cols-2">
+              {relatedStudyPaths.map((path) => (
+                <Link
+                  className="rounded-2xl border border-[#18140f]/10 bg-[#f7f3ea] px-4 py-3 transition hover:border-[#1f3a5f]/30"
+                  href={path.href}
+                  key={`${path.href}-${path.label}`}
+                >
+                  <span className="block text-sm font-semibold text-[#18140f]">{path.label}</span>
+                  <span className="mt-1 block text-xs leading-5 text-[#5f5749]">{path.note}</span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        ) : null}
 
         <DeckRelatedDecks deck={deck} />
 
-        <section className="mt-12 flex flex-wrap gap-4 text-sm font-medium">
-          {deck.slug === "cfa-level-1-anki-deck" ? (
-            <Link
-              className="underline decoration-[#18140f]/20 underline-offset-4"
-              href="/cfa-level-1-anki-deck-vs-curriculum"
-            >
-              Deck vs official curriculum
-            </Link>
-          ) : null}
+        <section className="mt-10 flex flex-wrap gap-x-4 gap-y-2 text-sm text-[#7a6e5a]">
           <Link className="underline decoration-[#18140f]/20 underline-offset-4" href={`/#catalog-${deck.category}`}>
             {categoryLabels[deck.category]} catalog
           </Link>
           <Link className="underline decoration-[#18140f]/20 underline-offset-4" href="/">
             Full catalog
           </Link>
-          <a className="underline decoration-[#18140f]/20 underline-offset-4" href={`/${deck.slug}.md`}>
-            Machine-readable document
-          </a>
-          <a className="underline decoration-[#18140f]/20 underline-offset-4" href={`/api/facts/${deck.slug}`}>
-            Product facts (JSON)
-          </a>
         </section>
 
         <p className="mt-10 text-xs text-[#8a7d68]">Last updated {deck.lastUpdated}.</p>

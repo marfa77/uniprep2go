@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable @typescript-eslint/no-require-imports */
 /**
  * Submit URLs to IndexNow (Bing, Yandex, and other participating engines).
  *
@@ -16,7 +17,7 @@ require("dotenv").config({ path: path.resolve(process.cwd(), ".env.local") });
 require("dotenv").config({ path: path.resolve(process.cwd(), ".env") });
 
 const INDEXNOW_KEY =
-  process.env.INDEXNOW_KEY?.trim() || "b0a3b2c557564641bb339e85be23e893";
+  process.env.INDEXNOW_KEY?.trim() || "103c35e5a1cf96456da9556f33401485";
 const SITE_ORIGIN = (
   process.env.NEXT_PUBLIC_SITE_URL?.trim() ||
   process.env.SITE_URL?.trim() ||

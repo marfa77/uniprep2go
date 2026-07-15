@@ -4,6 +4,8 @@ import robots from "../app/robots";
 import { availableDecks } from "./decks";
 import { intentPages } from "./intent-pages";
 import { getAllMockExams } from "./mock-exams/configs";
+import { isMockExamRunnable } from "./mock-exams/question-bank";
+import { shouldIndexMockExam } from "./seo";
 import { absoluteUrl, siteConfig } from "./site";
 
 describe("intent pages visibility", () => {
@@ -75,15 +77,22 @@ describe("intent pages visibility", () => {
     }
   });
 
-  it("lists every mock HTML page in the Google sitemap", () => {
+  it("lists runnable mock HTML pages in the Google sitemap", () => {
     const urls = sitemap().map((entry) => entry.url);
 
     expect(urls).toContain(absoluteUrl("/mock-exams"));
 
     for (const mock of getAllMockExams()) {
-      expect(urls).toContain(absoluteUrl(`/mock-exams/${mock.slug}`));
+      const mockUrl = absoluteUrl(`/mock-exams/${mock.slug}`);
+      if (shouldIndexMockExam(mock.slug)) {
+        expect(urls).toContain(mockUrl);
+      } else {
+        expect(urls).not.toContain(mockUrl);
+      }
       expect(urls).not.toContain(absoluteUrl(`/api/mock-exams/${mock.slug}`));
       expect(urls).not.toContain(absoluteUrl(`/mock-exams/${mock.slug}/markdown`));
     }
+
+    expect(getAllMockExams().some((mock) => !isMockExamRunnable(mock.slug))).toBe(true);
   });
 });

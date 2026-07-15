@@ -307,6 +307,8 @@ describe("LLM documents", () => {
     expect(llms).toContain("exact question count, timing, pass threshold");
     expect(llms).toContain("## Mock exams");
     expect(llms).toContain("/api/mock-exams/sie-full-mock");
+    expect(llms).toContain("## High-Intent mock answers (US licensing · finance · building)");
+    expect(llms).toContain("free SIE practice test online");
   });
 
   it("builds a full GEO markdown bundle for LLM ingestion", () => {

@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { CookieConsentBanner } from "@/components/cookie-consent-banner";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { PixidOrganizationSchema } from "@/components/pixid-organization-schema";
-import { siteConfig } from "@/lib/site";
+import { defaultMetadata } from "@/lib/seo";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,15 +16,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.url),
-  title: "UniPrep2Go | US Exam Prep — Free Practice Tests & Flashcards",
-  description:
-    "Free practice tests and flashcard decks for FINRA SIE, PTCB, insurance licensing, ServSafe, California real estate, CFA, and FRM. Independent study aids for US candidates.",
-  alternates: {
-    canonical: "/",
-  },
-};
+export const metadata: Metadata = defaultMetadata;
 
 export default function RootLayout({
   children,

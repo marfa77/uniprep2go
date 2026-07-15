@@ -4,6 +4,10 @@ import type { MockExamConfig } from "./types";
 import { isMockExamRunnable } from "./question-bank";
 import { mockFreeAccessNotice, mockFreeAccessPriceLabel } from "./pricing";
 import { absoluteUrl, siteConfig } from "../site";
+import {
+  buildExamFactsMarkdownSection,
+  getExamFactsProfileForDeck,
+} from "../exam-facts";
 
 export { buildMockExamFaqs } from "./seo";
 
@@ -55,6 +59,10 @@ export function buildMockExamCatalogFacts() {
 
 export function buildMockExamMarkdown(config: MockExamConfig) {
   const faqs = buildMockExamFaqs(config);
+  const examFactsProfile = getExamFactsProfileForDeck(config.linkedDeckSlug);
+  const examFactsSection = examFactsProfile
+    ? `\n${buildExamFactsMarkdownSection(examFactsProfile)}\n`
+    : "";
 
   return `# ${config.title}
 
@@ -85,7 +93,7 @@ export function buildMockExamMarkdown(config: MockExamConfig) {
 
 ## Question source
 
-Questions are converted from the linked UniPrep2Go Anki deck content and reshuffled into exam-style multiple choice. They are not generated from scratch without the deck source.
+${config.questionSourceNote ?? "Questions are converted from the linked UniPrep2Go Anki deck content and reshuffled into exam-style multiple choice. They are not generated from scratch without the deck source."}
 
 ## Structure
 
@@ -102,7 +110,7 @@ ${config.topics
 ## Official source note
 
 ${config.officialSourceNote}
-
+${examFactsSection}
 ## FAQ
 
 ${faqs.map((faq) => `### ${faq.question}\n\n${faq.answer}`).join("\n\n")}

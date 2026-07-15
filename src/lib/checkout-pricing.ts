@@ -10,6 +10,8 @@ import {
   type CheckoutProvider,
   type DeckPrice,
 } from "./decks";
+import gumroadCatalog from "@/data/gumroad/building-anki-decks.json";
+import { getGumroadProductRecord, isBuildingAnkiDeckSlug } from "./anki-deck-launch";
 import { PREP2GO_APP_STORE_MONTHLY_PRICE } from "./prep2go-app-decks";
 import { getRedisClient } from "./redis";
 
@@ -34,9 +36,12 @@ export type CheckoutPriceSyncResult = {
 
 const CACHE_KEY = "checkout:prices";
 const PENDING_PRICE_LABEL = "See checkout";
+/** Do not re-hit Gumroad after a failed price scrape for this long. */
+const GUMROAD_FAILURE_CACHE_MS = 60 * 60 * 1000;
 
 type GlobalWithCheckoutPrices = typeof globalThis & {
   __uniprep2goCheckoutPrices?: Map<string, SyncedPriceRecord>;
+  __uniprep2goGumroadFailures?: Map<string, number>;
 };
 
 function getMemoryCache() {
@@ -47,6 +52,52 @@ function getMemoryCache() {
   }
 
   return globalStore.__uniprep2goCheckoutPrices;
+}
+
+function getGumroadFailureCache() {
+  const globalStore = globalThis as GlobalWithCheckoutPrices;
+
+  if (!globalStore.__uniprep2goGumroadFailures) {
+    globalStore.__uniprep2goGumroadFailures = new Map();
+  }
+
+  return globalStore.__uniprep2goGumroadFailures;
+}
+
+function isGumroadFailureCached(slug: string) {
+  const failedAt = getGumroadFailureCache().get(slug);
+  if (!failedAt) {
+    return false;
+  }
+  if (Date.now() - failedAt > GUMROAD_FAILURE_CACHE_MS) {
+    getGumroadFailureCache().delete(slug);
+    return false;
+  }
+  return true;
+}
+
+function rememberGumroadFailure(slug: string) {
+  getGumroadFailureCache().set(slug, Date.now());
+}
+
+/** Building decks without a live Gumroad product — use catalog default, never scrape 404 URLs. */
+export function getStaticBuildingDeckPriceRecord(slug: string): SyncedPriceRecord | null {
+  if (!isBuildingAnkiDeckSlug(slug)) {
+    return null;
+  }
+
+  const product = getGumroadProductRecord(slug);
+  if (product?.gumroadProductId) {
+    return null;
+  }
+
+  const cents = gumroadCatalog.defaultPriceCents;
+  return {
+    amount: cents / 100,
+    currency: "USD",
+    syncedAt: new Date().toISOString(),
+    source: "gumroad",
+  };
 }
 
 export function formatCheckoutPrice(amount: number) {
@@ -289,11 +340,21 @@ export async function resolveDeckPrice(deck: CatalogAvailableDeck): Promise<Pric
     return applyPriceRecordToDeck(deck, cached);
   }
 
+  const staticBuilding = getStaticBuildingDeckPriceRecord(deck.slug);
+  if (staticBuilding) {
+    return applyPriceRecordToDeck(deck, staticBuilding);
+  }
+
+  if (isGumroadFailureCached(deck.slug)) {
+    return applyPendingPriceToDeck(deck);
+  }
+
   try {
     const synced = await syncDeckPrice(deck);
     await writeCachedPrice(deck.slug, synced);
     return applyPriceRecordToDeck(deck, synced);
   } catch (error) {
+    rememberGumroadFailure(deck.slug);
     console.warn(`[checkout_pricing] price unavailable for ${deck.slug}`, error);
     return applyPendingPriceToDeck(deck);
   }

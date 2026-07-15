@@ -2,70 +2,206 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { FunnelTracker, TrackedCheckoutLink } from "@/components/funnel-tracker";
+import { LlmFactsStrip } from "@/components/llm/llm-facts-strip";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { formatDeckPriceLabel, getCheckoutActionLabel, getFeaturedPricedDecks, getPricedDecks, getPricedDecksByCategory } from "@/lib/checkout-pricing";
-import { getDeckCoverUrl } from "@/lib/deck-media";
 import {
-  categoryLabels,
+  buildSiteAiCategory,
+  buildSiteAiDescription,
+} from "@/lib/exam-llm-layer";
+import { withAiMetadata } from "@/lib/llm-meta";
+import { finalize, truncateSeoTitle } from "@/lib/seo";
+import {
+  formatDeckPriceLabel,
+  getCheckoutActionLabel,
+  getPricedDecks,
+  getPricedDecksByCategory,
+  type PricedDeck,
+} from "@/lib/checkout-pricing";
+import { getDeckCoverUrl, isPreoptimizedPublicImage } from "@/lib/deck-media";
+import {
   formatDeckContentLabel,
+  getDeckBySlug,
   siteFaqs,
 } from "@/lib/decks";
 import { buildCatalogItemListJsonLd, buildSiteOrganizationJsonLd } from "@/lib/product-jsonld";
-import { getAllMockExams, primaryMock } from "@/lib/mock-exams/configs";
+import { getAllMockExams, getMockExamConfig, primaryMock } from "@/lib/mock-exams/configs";
 import { buildMockExamItemListJsonLd } from "@/lib/mock-exams/llm";
-import { buildMockSeoTitle } from "@/lib/mock-exams/seo";
 import { isMockExamRunnable } from "@/lib/mock-exams/question-bank";
-import { customDeckMailtoUrl, siteConfig } from "@/lib/site";
+import { siteConfig } from "@/lib/site";
+import type { MockExamConfig } from "@/lib/mock-exams/types";
 
-export const metadata: Metadata = {
-  title: "Free SIE & ServSafe Practice Tests + US Licensing Flashcards | UniPrep2Go",
-  description:
-    "Free FINRA SIE and ServSafe Manager practice tests online. Anki flashcards for PTCB pharmacy tech, Series 7, insurance licensing, California real estate, CFA, and FRM — timed mocks with topic scoring.",
-  keywords: [
-    "free sie practice test",
-    "servsafe manager practice test",
-    "ptcb flashcards",
-    "insurance license practice exam",
-    "series 7 practice test",
-    "california real estate exam prep",
-    "pharmacy technician exam prep",
-    "cfa anki deck",
-    "frm anki deck",
-  ],
-  openGraph: {
-    title: "Free US licensing practice tests + flashcard decks | UniPrep2Go",
-    description:
-      "Timed free mocks for SIE, ServSafe, CFA, insurance, and real estate — plus independent Anki decks and PDFs to drill weak topics after your report.",
-    images: [
-      {
-        url: "/home/hero.webp",
-        width: 1536,
-        height: 1024,
-        alt: "UniPrep2Go free online practice tests and exam prep flashcards",
-      },
+const examPathLinks = [
+  {
+    title: "FINRA securities exam prep",
+    description: "Start with the free SIE mock, then drill SIE, Series 7, and Series 63 flashcards.",
+    links: [
+      { href: "/mock-exams/sie-full-mock", label: "Free SIE practice test" },
+      { href: "/decks/sie-exam-anki-deck", label: "SIE flashcards" },
+      { href: "/decks/series-7-anki-deck", label: "Series 7 deck" },
+      { href: "/decks/series-63-anki-deck", label: "Series 63 deck" },
     ],
   },
-  twitter: {
-    card: "summary_large_image",
-    images: ["/home/hero.webp"],
+  {
+    title: "Food safety and ServSafe Manager",
+    description: "Use the 90-question ServSafe mock before the Anki deck or printable study guide.",
+    links: [
+      { href: "/mock-exams/servsafe-manager-mock", label: "Free ServSafe practice test" },
+      { href: "/decks/servsafe-manager-anki-deck", label: "ServSafe flashcards" },
+      { href: "/decks/servsafe-manager-complete-study-guide", label: "Printable study guide" },
+    ],
   },
-};
+  {
+    title: "Building, safety & sustainability",
+    description: "EPA 608 HVAC, LEED, BMS, MRICS, CFPS, and NEBOSH readiness checks with linked decks.",
+    links: [
+      { href: "/mock-exams/epa-608-readiness-check", label: "EPA 608 readiness check" },
+      { href: "/mock-exams/leed-green-associate-readiness-check", label: "LEED GA readiness check" },
+      { href: "/mock-exams/bms-bas-readiness-check", label: "BMS / BAS readiness check" },
+      { href: "/mock-exams/mrics-readiness-check", label: "MRICS APC readiness check" },
+    ],
+  },
+  {
+    title: "US licensing exams",
+    description: "Insurance, California real estate, and pharmacy tech prep with mocks, decks, and PDFs.",
+    links: [
+      { href: "/mock-exams/life-and-health-insurance-readiness-check", label: "Life & Health mock" },
+      { href: "/mock-exams/property-and-casualty-insurance-readiness-check", label: "P&C mock" },
+      { href: "/decks/ptcb-pharmacy-technician-anki-deck", label: "PTCB flashcards" },
+      { href: "/decks/california-real-estate-exam-anki-deck", label: "CA real estate deck" },
+    ],
+  },
+  {
+    title: "Finance credentials",
+    description: "CFA and FRM readiness checks paired with formula references and focused Anki decks.",
+    links: [
+      { href: "/mock-exams/cfa-level-1-readiness-check", label: "CFA Level 1 mock" },
+      { href: "/decks/cfa-level-1-anki-deck", label: "CFA Level 1 deck" },
+      { href: "/decks/cfa-level-2-anki-deck", label: "CFA Level 2 deck" },
+      { href: "/decks/frm-part-1-anki-deck", label: "FRM Part 1 deck" },
+    ],
+  },
+  {
+    title: "Language and citizenship exams",
+    description: "European Portuguese, French, German, Dutch, Italian, and immigration-focused Anki decks.",
+    links: [
+      { href: "/decks/ciple-a2-european-portuguese-anki-deck", label: "CIPLE A2 Portuguese" },
+      { href: "/decks/delf-b2-french-anki-deck", label: "DELF B2 French" },
+      { href: "/decks/dutch-a2-inburgering-anki-deck", label: "Dutch A2 Inburgering" },
+      { href: "/#catalog-language", label: "All language decks" },
+    ],
+  },
+];
+
+/** Curated mock → deck repair pairs for the homepage funnel (not the full mock index). */
+const mockDeckRepairPairSlugs: Array<{ mockSlug: string; deckSlug: string }> = [
+  { mockSlug: "sie-full-mock", deckSlug: "sie-exam-anki-deck" },
+  { mockSlug: "servsafe-manager-mock", deckSlug: "servsafe-manager-anki-deck" },
+  { mockSlug: "cfa-level-1-readiness-check", deckSlug: "cfa-level-1-anki-deck" },
+  { mockSlug: "epa-608-readiness-check", deckSlug: "hvac-epa-608-anki-deck" },
+  { mockSlug: "leed-green-associate-readiness-check", deckSlug: "leed-green-associate-anki-deck" },
+  { mockSlug: "life-and-health-insurance-readiness-check", deckSlug: "life-and-health-insurance-exam-anki-deck" },
+  { mockSlug: "california-real-estate-readiness-check", deckSlug: "california-real-estate-exam-anki-deck" },
+  { mockSlug: "mrics-readiness-check", deckSlug: "mrics-anki-deck" },
+];
+
+const howItWorksSteps = [
+  {
+    title: "Take a free timed mock",
+    detail:
+      "Pick a practice test or readiness check — no signup wall. Work under real timing with topic-weighted scoring.",
+  },
+  {
+    title: "Read your readiness report",
+    detail:
+      "See pass/no-pass verdict, weak topics, pacing notes, and full answer review with explanations.",
+  },
+  {
+    title: "Drill weak topics daily",
+    detail:
+      "Use the linked Anki deck or printable PDF for spaced-repetition repair between study sessions.",
+  },
+];
+
+export async function generateMetadata(): Promise<Metadata> {
+  const title = truncateSeoTitle(
+    "Free Practice Tests + Anki Flashcards for US Licensing, Finance & Language Exams",
+  );
+
+  return withAiMetadata(
+    finalize({
+      title,
+      description:
+        "Free online practice tests for SIE, ServSafe Manager, insurance, real estate, CFA, FRM, and Series exams, plus Anki flashcards and PDF study guides for weak-topic review.",
+      keywords: [
+        "free sie practice test",
+        "servsafe manager practice test",
+        "ptcb flashcards",
+        "insurance license practice exam",
+        "series 7 practice test",
+        "california real estate exam prep",
+        "pharmacy technician exam prep",
+        "cfa anki deck",
+        "frm anki deck",
+      ],
+      alternates: { canonical: "/" },
+      openGraph: {
+        title: "Free US licensing practice tests + flashcard decks | UniPrep2Go",
+        description:
+          "Timed free mocks for SIE, ServSafe, CFA, insurance, and real estate — plus independent Anki decks and PDFs to drill weak topics after your report.",
+        url: "/",
+        images: [
+          {
+            url: "/home/hero.webp",
+            width: 1200,
+            height: 630,
+            alt: "UniPrep2Go free online practice tests and exam prep flashcards",
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        images: ["/home/hero.webp"],
+      },
+    }),
+    {
+      aiDescription: buildSiteAiDescription(),
+      aiCategory: buildSiteAiCategory(),
+      path: "/",
+    },
+  );
+}
 
 export const revalidate = 3600;
 
+function mockCtaLabel(mock: MockExamConfig) {
+  if (!isMockExamRunnable(mock.slug)) return "View details";
+  return mock.status === "live" ? "Start free mock" : "Start readiness check";
+}
+
+function resolveRepairPairs(pricedBySlug: Map<string, PricedDeck>) {
+  return mockDeckRepairPairSlugs.flatMap(({ mockSlug, deckSlug }) => {
+    const mock = getMockExamConfig(mockSlug);
+    const deck = getDeckBySlug(deckSlug);
+    if (!mock || !deck) return [];
+
+    return [{ mock, deck, pricedDeck: pricedBySlug.get(deckSlug) ?? null }];
+  });
+}
+
 export default async function HomePage() {
   const availableDecks = await getPricedDecks();
-  const featuredDecks = await getFeaturedPricedDecks();
   const catalogGroups = await getPricedDecksByCategory();
+  const pricedBySlug = new Map(availableDecks.map((deck) => [deck.slug, deck]));
   const prices = availableDecks.map((d) => d.price.amount).filter((amount) => amount > 0);
   const minPrice = prices.length > 0 ? Math.min(...prices) : 0;
   const maxPrice = prices.length > 0 ? Math.max(...prices) : 0;
   const mockExams = getAllMockExams();
   const pdfProductCount = availableDecks.filter((deck) => deck.format === "PDF").length;
+  const repairPairs = resolveRepairPairs(pricedBySlug);
 
   const sectionEvents = [
-    { selector: "#mock-exams", name: "mock_landing_view" as const },
+    { selector: "#repair-pairs", name: "mock_landing_view" as const },
     { selector: "#catalog", name: "catalog_view" as const },
     { selector: "#faq", name: "faq_view" as const },
   ];
@@ -113,6 +249,7 @@ export default async function HomePage() {
         source={`mock:${primaryMock.slug}:home`}
       />
       <main>
+        {/* 1. Hero */}
         <section className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
           <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:items-center lg:py-20">
             <div>
@@ -130,7 +267,7 @@ export default async function HomePage() {
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
-                  href="#mock-exams"
+                  href="#repair-pairs"
                   className="inline-flex items-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
                 >
                   Free practice tests
@@ -141,25 +278,6 @@ export default async function HomePage() {
                 >
                   Browse flashcard decks
                 </a>
-              </div>
-              <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium text-[#1f3a5f]">
-                {[
-                  { href: "/mock-exams/sie-full-mock", label: "Free SIE practice test" },
-                  { href: "/mock-exams/servsafe-manager-mock", label: "ServSafe practice test" },
-                  { href: "/mock-exams/life-and-health-insurance-readiness-check", label: "Insurance practice test" },
-                  { href: "/mock-exams/california-real-estate-readiness-check", label: "CA real estate mock" },
-                  { href: "/mock-exams/cfa-level-1-readiness-check", label: "CFA practice test" },
-                  { href: "/mock-exams/frm-part-1-readiness-check", label: "FRM practice test" },
-                  { href: "/mock-exams/series-7-readiness-check", label: "Series 7 mock" },
-                ].map((link) => (
-                  <Link
-                    key={link.href}
-                    className="underline-offset-4 hover:underline"
-                    href={link.href}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
               </div>
               <dl className="mt-10 grid gap-4 sm:grid-cols-3">
                 <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-4">
@@ -186,116 +304,78 @@ export default async function HomePage() {
                   </dd>
                 </div>
               </dl>
+              <LlmFactsStrip
+                deckCount={availableDecks.length}
+                mockCount={mockExams.length}
+                variant="site"
+              />
             </div>
             <div className="relative overflow-hidden rounded-[2rem] border border-[#18140f]/10 bg-[#fffaf0] shadow-[0_24px_60px_-32px_rgba(24,20,15,0.35)]">
               <Image
-                alt="Timed online practice test on a laptop with exam prep flashcards nearby"
+                alt="UniPrep2Go free online practice tests for US licensing exams"
                 className="h-auto w-full object-cover"
-                height={1024}
+                height={630}
                 priority
                 sizes="(max-width: 1024px) 100vw, 560px"
                 src="/home/hero.webp"
-                width={1536}
+                unoptimized
+                width={1200}
               />
             </div>
           </div>
         </section>
 
-        <section id="mock-exams" className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
-          <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
+        {/* 2. Exam picker by vertical */}
+        <section className="border-b border-[#18140f]/10 bg-[#fffaf0]">
+          <div className="mx-auto max-w-6xl px-6 py-12 sm:px-10">
             <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-              Primary product
+              Popular exam paths
             </p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
-              Free SIE, ServSafe, insurance, and real estate practice tests online
+              Find the right practice test, deck, or PDF without guessing
             </h2>
             <p className="mt-3 max-w-3xl text-[#4f493e]">
-              Start here — no signup wall. Full timed mocks for SIE and ServSafe; readiness checks
-              for CFA, FRM, Series 7, Series 63, Life &amp; Health, Property &amp; Casualty, and
-              California real estate. Every report shows topic-level weak spots and links to the
-              matching flashcard deck when you need remediation.
+              Highest-intent entry points by exam vertical — each path links to existing mock pages,
+              deck pages, or catalog anchors in one click.
             </p>
-            <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-              {mockExams.map((mock) => {
-                const live = mock.status === "live";
-                const ctaLabel = isMockExamRunnable(mock.slug)
-                  ? live
-                    ? "Start free mock"
-                    : "Start readiness check"
-                  : "View details";
-
-                return (
-                  <Link
-                    key={mock.slug}
-                    className={`group rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-4 transition hover:-translate-y-0.5 hover:border-[#1f3a5f]/30 ${
-                      live ? "md:col-span-2 lg:col-span-2" : ""
-                    }`}
-                    href={`/mock-exams/${mock.slug}`}
-                  >
-                    <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-[#1f3a5f]">
-                      {live ? "Full mock available" : "Readiness preview"}
-                    </p>
-                    <h3 className="mt-2 text-base font-semibold text-[#18140f]">
-                      {buildMockSeoTitle(mock)}
-                    </h3>
-                    <p className="mt-2 text-xs leading-5 text-[#5f5749]">
-                      {mock.questionCount} q · {mock.durationMinutes} min · pass {mock.passRule.passPercent}%
-                    </p>
-                    <p className="mt-4 text-sm font-medium text-[#1f3a5f] group-hover:underline">
-                      {ctaLabel}
-                    </p>
-                  </Link>
-                );
-              })}
+            <div className="mt-8 grid gap-4 md:grid-cols-2">
+              {examPathLinks.map((path) => (
+                <article
+                  className="rounded-3xl border border-[#18140f]/10 bg-[#f7f3ea] p-5"
+                  key={path.title}
+                >
+                  <h3 className="text-lg font-semibold text-[#18140f]">{path.title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-[#5f5749]">{path.description}</p>
+                  <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium text-[#1f3a5f]">
+                    {path.links.map((link) => (
+                      <Link className="underline-offset-4 hover:underline" href={link.href} key={link.href}>
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+                </article>
+              ))}
             </div>
-            <Link
-              className="mt-6 inline-flex text-sm font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
-              href="/mock-exams"
-            >
-              View all practice tests
-            </Link>
           </div>
         </section>
 
-        <section className="border-b border-[#18140f]/10 bg-[#fffaf0]">
-          <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 sm:px-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-            <div>
-              <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-                After your mock
-              </p>
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
-                Drill weak topics with Anki decks
-              </h2>
-              <p className="mt-4 leading-7 text-[#4f493e]">
-                Mocks show which topics need repair. UniPrep2Go decks are spaced-repetition
-                flashcards — usually <code className="rounded bg-[#18140f]/5 px-1.5 py-0.5 text-sm">.apkg</code> files
-                you import once, then review in short daily sessions on your phone.
-              </p>
-              <Link
-                className="mt-5 inline-flex text-sm font-semibold text-[#1f3a5f] underline-offset-4 hover:underline"
-                href="/anki-starter-kit"
-              >
-                Open the 15-minute Anki Starter Kit
-              </Link>
-            </div>
-
-            <ol className="grid gap-4 sm:grid-cols-3">
-              {[
-                {
-                  title: "Install Anki",
-                  detail: "Use the free desktop app first; it imports .apkg files most reliably.",
-                },
-                {
-                  title: "Import the deck",
-                  detail: "Open Anki, choose File then Import, and select the downloaded deck file.",
-                },
-                {
-                  title: "Review daily",
-                  detail: "Anki schedules harder cards sooner and easier cards later, so practice stays focused.",
-                },
-              ].map((step, index) => (
+        {/* 3. How it works */}
+        <section id="how-it-works" className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
+          <div className="mx-auto max-w-6xl px-6 py-12 sm:px-10">
+            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
+              How it works
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
+              Mock first, drill second
+            </h2>
+            <p className="mt-3 max-w-3xl text-[#4f493e]">
+              UniPrep2Go is built around a simple repair loop: diagnose with a free timed mock, then
+              fix weak topics with spaced-repetition flashcards.
+            </p>
+            <ol className="mt-8 grid gap-4 md:grid-cols-3">
+              {howItWorksSteps.map((step, index) => (
                 <li
-                  className="rounded-3xl border border-[#18140f]/10 bg-[#f7f3ea] p-5"
+                  className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-5"
                   key={step.title}
                 >
                   <span className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-[#1f3a5f]">
@@ -306,103 +386,152 @@ export default async function HomePage() {
                 </li>
               ))}
             </ol>
+            <Link
+              className="mt-6 inline-flex text-sm font-semibold text-[#1f3a5f] underline-offset-4 hover:underline"
+              href="/anki-starter-kit"
+            >
+              Open the 15-minute Anki Starter Kit
+            </Link>
           </div>
         </section>
 
-        {featuredDecks.length > 0 && (
-          <section className="border-b border-[#18140f]/10 bg-[#fffaf0]/40">
-            <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
-              <h2 className="text-2xl font-semibold tracking-tight text-[#18140f]">
-                Flashcard decks &amp; PDFs
-              </h2>
-              <p className="mt-2 text-[#4f493e]">
-                Paid Anki decks and printable cram sheets for daily repair after a mock report —
-                ServSafe, pharmacy tech, FINRA securities, and CFA formula recall.
-              </p>
-              <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                {featuredDecks.map((deck) => {
-                  const thumbnail = getDeckCoverUrl(deck);
+        {/* 4. Mock → deck repair pairs */}
+        <section id="repair-pairs" className="border-b border-[#18140f]/10 bg-[#fffaf0]">
+          <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
+            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
+              Mock → deck repair
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
+              Free practice test paired with the flashcard deck to fix weak topics
+            </h2>
+            <p className="mt-3 max-w-3xl text-[#4f493e]">
+              These are the highest-intent mock and deck combinations — start the mock, read the
+              report, then drill the linked product. Full index:{" "}
+              <Link className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline" href="/mock-exams">
+                all {mockExams.length} practice tests
+              </Link>
+              .
+            </p>
+            <div className="mt-8 space-y-4">
+              {repairPairs.map(({ mock, deck, pricedDeck }) => {
+                const thumbnail = getDeckCoverUrl(deck);
+                const deckIsPlanned = deck.status === "planned";
 
-                  return (
-                    <article
-                      key={deck.slug}
-                      className="overflow-hidden rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]"
+                return (
+                  <article
+                    className="grid gap-4 rounded-3xl border border-[#18140f]/10 bg-[#f7f3ea] p-5 lg:grid-cols-[1fr_auto_1fr] lg:items-stretch"
+                    key={mock.slug}
+                  >
+                    <div className="flex flex-col rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-5">
+                      <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-[#1f3a5f]">
+                        {mock.status === "live" ? "Full mock" : "Readiness check"}
+                      </p>
+                      <h3 className="mt-2 text-lg font-semibold text-[#18140f]">{mock.shortTitle}</h3>
+                      <p className="mt-2 flex-1 text-sm leading-6 text-[#5f5749]">
+                        {mock.questionCount} questions · {mock.durationMinutes} min · pass{" "}
+                        {mock.passRule.passPercent}%
+                      </p>
+                      <Link
+                        className="mt-4 inline-flex text-sm font-semibold text-[#1f3a5f] underline-offset-4 hover:underline"
+                        href={`/mock-exams/${mock.slug}`}
+                      >
+                        {mockCtaLabel(mock)}
+                      </Link>
+                    </div>
+
+                    <div
+                      aria-hidden="true"
+                      className="hidden items-center justify-center px-2 text-2xl text-[#7a6e5a] lg:flex"
                     >
+                      →
+                    </div>
+
+                    <div className="flex gap-4 rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-5">
                       {thumbnail ? (
                         <Link
-                          className="block overflow-hidden bg-[#f6efe8]"
+                          className="shrink-0 overflow-hidden rounded-xl border border-[#18140f]/10 bg-[#f6efe8]"
                           href={`/decks/${deck.slug}`}
                         >
                           <Image
-                            alt={`${deck.shortName} product cover`}
-                            className="aspect-[4/3] h-auto w-full bg-[#f6efe8] object-contain object-center p-3"
-                            height={750}
-                            sizes="(max-width: 640px) 100vw, 33vw"
+                            alt=""
+                            aria-hidden
+                            className="h-20 w-36 object-cover object-[78%_center]"
+                            height={80}
                             src={thumbnail}
-                            width={1005}
+                            unoptimized={isPreoptimizedPublicImage(thumbnail)}
+                            width={144}
                           />
                         </Link>
                       ) : null}
-                      <div className="flex flex-col p-5">
-                        <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#1f3a5f]">
-                          {categoryLabels[deck.category]}
+                      <div className="flex min-w-0 flex-col">
+                        <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-[#1f3a5f]">
+                          {deckIsPlanned ? "Planned deck" : "Linked deck"}
                         </p>
                         <h3 className="mt-2 text-lg font-semibold text-[#18140f]">
-                          <Link
-                            href={`/decks/${deck.slug}`}
-                            className="hover:underline"
-                          >
-                            {deck.title}
+                          <Link className="hover:underline" href={`/decks/${deck.slug}`}>
+                            {deck.shortName}
                           </Link>
                         </h3>
-                        <p className="mt-2 flex-1 text-sm leading-6 text-[#5f5749] line-clamp-3">
+                        <p className="mt-2 flex-1 text-sm leading-6 text-[#5f5749] line-clamp-2">
                           {deck.subtitle}
                         </p>
-                        <div className="mt-4 flex items-center justify-between text-sm">
-                          <span className="font-medium text-[#18140f]">
-                            {formatDeckPriceLabel(deck)} ·{" "}
-                            {formatDeckContentLabel(deck)}
-                          </span>
-                          <Link
-                            href={`/decks/${deck.slug}`}
-                            className="font-medium text-[#1f3a5f] underline-offset-2 hover:underline"
-                          >
-                            {deck.format === "PDF" ? "View PDF" : "View deck"}
-                          </Link>
-                        </div>
+                        <p className="mt-3 text-sm font-medium text-[#18140f]">
+                          {pricedDeck
+                            ? `${formatDeckPriceLabel(pricedDeck)} · ${formatDeckContentLabel(pricedDeck)}`
+                            : deckIsPlanned
+                              ? "Planned · not yet on sale"
+                              : "See deck page"}
+                        </p>
                       </div>
-                    </article>
-                  );
-                })}
-              </div>
+                    </div>
+                  </article>
+                );
+              })}
             </div>
-          </section>
-        )}
+          </div>
+        </section>
 
-        <section id="catalog" className="border-b border-[#18140f]/10">
+        {/* 5. Collapsed catalog */}
+        <section id="catalog" className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
           <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
             <h2 className="text-2xl font-semibold tracking-tight text-[#18140f]">
               Flashcard deck catalog
             </h2>
             <p className="mt-2 text-[#4f493e]">
-              Secondary paid products for daily drilling after a mock report. US licensing and
-              finance exams are prioritized first; language certification decks remain available
-              as long-tail catalog pages with sample cards, FAQ, and machine-readable facts.
+              Paid Anki decks and printable PDFs for daily drilling after a mock report. Expand a
+              category to browse — US licensing and finance exams are listed first.
             </p>
-            <div className="mt-10 space-y-12">
+            <div className="mt-8 space-y-3">
               {catalogGroups.map((group) => (
-                <div key={group.category} id={`catalog-${group.category}`}>
-                  <h3 className="text-lg font-semibold text-[#18140f]">
-                    {group.label}
-                  </h3>
-                  <ul className="mt-4 divide-y divide-[#18140f]/10 rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70">
+                <details
+                  className="group rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 open:bg-[#fffaf0]"
+                  id={`catalog-${group.category}`}
+                  key={group.category}
+                >
+                  <summary className="cursor-pointer list-none px-5 py-4 marker:content-none [&::-webkit-details-marker]:hidden">
+                    <div className="flex items-center justify-between gap-4">
+                      <div>
+                        <h3 className="text-lg font-semibold text-[#18140f]">{group.label}</h3>
+                        <p className="mt-1 text-sm text-[#5f5749]">
+                          {group.decks.length} product{group.decks.length === 1 ? "" : "s"}
+                        </p>
+                      </div>
+                      <span
+                        aria-hidden="true"
+                        className="text-sm font-medium text-[#1f3a5f] transition group-open:rotate-180"
+                      >
+                        ▼
+                      </span>
+                    </div>
+                  </summary>
+                  <ul className="divide-y divide-[#18140f]/10 border-t border-[#18140f]/10">
                     {group.decks.map((deck) => {
                       const thumbnail = getDeckCoverUrl(deck);
 
                       return (
                         <li
-                          key={deck.slug}
                           className="flex flex-col gap-4 px-5 py-4 sm:flex-row sm:items-center sm:justify-between"
+                          key={deck.slug}
                         >
                           <div className="flex min-w-0 items-start gap-4">
                             {thumbnail ? (
@@ -414,22 +543,24 @@ export default async function HomePage() {
                                 <Image
                                   alt=""
                                   aria-hidden
-                                  className="h-16 w-28 bg-[#f6efe8] object-contain object-center p-1"
+                                  className="h-16 w-28 object-cover object-[78%_center]"
                                   height={64}
                                   src={thumbnail}
+                                  unoptimized={isPreoptimizedPublicImage(thumbnail)}
                                   width={112}
                                 />
                               </Link>
                             ) : null}
                             <div className="min-w-0">
                               <Link
-                                href={`/decks/${deck.slug}`}
                                 className="font-medium text-[#18140f] hover:underline"
+                                href={`/decks/${deck.slug}`}
                               >
                                 {deck.title}
                               </Link>
                               <p className="mt-1 text-sm text-[#5f5749]">
-                                {formatDeckContentLabel(deck)} · {deck.facts.examYear} · {deck.checkoutProvider}
+                                {formatDeckContentLabel(deck)} · {deck.facts.examYear} ·{" "}
+                                {deck.checkoutProvider}
                               </p>
                             </div>
                           </div>
@@ -438,8 +569,8 @@ export default async function HomePage() {
                               {formatDeckPriceLabel(deck)}
                             </span>
                             <Link
-                              href={`/decks/${deck.slug}`}
                               className="text-[#5f5749] underline-offset-2 hover:text-[#18140f] hover:underline"
+                              href={`/decks/${deck.slug}`}
                             >
                               Details
                             </Link>
@@ -456,121 +587,21 @@ export default async function HomePage() {
                       );
                     })}
                   </ul>
-                </div>
+                </details>
               ))}
             </div>
           </div>
         </section>
 
-        <section id="custom-decks" className="border-b border-[#18140f]/10 bg-[#fffaf0]/40">
-          <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
-            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-              Custom work
-            </p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
-              {siteConfig.customDeckInquiry.title}
-            </h2>
-            <p className="mt-3 max-w-3xl text-[#4f493e]">
-              {siteConfig.customDeckInquiry.summary}
-            </p>
-            <p className="mt-3 max-w-3xl text-sm leading-7 text-[#5f5749]">
-              {siteConfig.customDeckInquiry.instructions}
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <a
-                className="inline-flex items-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
-                href={customDeckMailtoUrl()}
-              >
-                Request a custom deck
-              </a>
-              <Link
-                className="inline-flex items-center rounded-full border border-[#18140f]/20 bg-[#fffaf0]/70 px-6 py-3 text-sm font-semibold text-[#18140f] transition hover:border-[#18140f]"
-                href="/contact#custom-decks"
-              >
-                Contact page
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        <section id="llm-sources" className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
-          <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
-            <h2 className="text-2xl font-semibold tracking-tight text-[#18140f]">
-              Machine-readable sources
-            </h2>
-            <p className="mt-2 text-[#4f493e]">
-              Structured data for search engines, assistants, and RAG
-              pipelines.
-            </p>
-            <ul className="mt-6 space-y-2 text-sm text-[#5f5749]">
-              <li>
-                <Link
-                  href="/api/facts"
-                  className="font-medium text-[#18140f] underline-offset-2 hover:underline"
-                >
-                  /api/facts
-                </Link>{" "}
-                — full catalog JSON
-              </li>
-              <li>
-                <Link
-                  href="/api/mock-exams"
-                  className="font-medium text-[#18140f] underline-offset-2 hover:underline"
-                >
-                  /api/mock-exams
-                </Link>{" "}
-                — finance mock exam facts JSON
-              </li>
-              <li>
-                <a
-                  href="/llms.txt"
-                  className="font-medium text-[#18140f] underline-offset-2 hover:underline"
-                >
-                  /llms.txt
-                </a>{" "}
-                — LLM entrypoint with agent instructions
-              </li>
-              <li>
-                <code className="rounded bg-[#18140f]/5 px-1.5 py-0.5 text-xs">
-                  /[slug].md
-                </code>{" "}
-                — per-deck markdown for RAG (e.g.{" "}
-                <a
-                  href="/cfa-level-1-anki-deck.md"
-                  className="font-medium text-[#18140f] underline-offset-2 hover:underline"
-                >
-                  cfa-level-1-anki-deck.md
-                </a>
-                ,{" "}
-                <Link
-                  href="/decks/cat4-level-d-anki-deck-printable-pdf"
-                  className="font-medium text-[#18140f] underline-offset-2 hover:underline"
-                >
-                  CAT4 Level D deck page
-                </Link>
-                ,{" "}
-                <a
-                  href="/cat4-level-d-anki-deck-printable-pdf.md"
-                  className="font-medium text-[#18140f] underline-offset-2 hover:underline"
-                >
-                  cat4-level-d-anki-deck-printable-pdf.md
-                </a>
-                )
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="faq" className="border-b border-[#18140f]/10">
+        {/* 6. FAQ */}
+        <section id="faq" className="border-b border-[#18140f]/10 bg-[#fffaf0]">
           <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
             <h2 className="text-2xl font-semibold tracking-tight text-[#18140f]">FAQ</h2>
             <dl className="mt-8 space-y-6">
               {siteFaqs.map((faq) => (
                 <div key={faq.question}>
                   <dt className="font-medium text-[#18140f]">{faq.question}</dt>
-                  <dd className="mt-2 text-sm leading-7 text-[#5f5749]">
-                    {faq.answer}
-                  </dd>
+                  <dd className="mt-2 text-sm leading-7 text-[#5f5749]">{faq.answer}</dd>
                 </div>
               ))}
             </dl>

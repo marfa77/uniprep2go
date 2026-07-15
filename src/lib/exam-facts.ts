@@ -781,6 +781,982 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "International Baccalaureate and IB are registered trademarks of the International Baccalaureate Organization.",
   },
+  gmat: {
+    examKey: "gmat",
+    pageHeading: "GMAT Exam — Focus Edition Facts, Sections & Prep",
+    intro:
+      "The GMAT is the graduate management admission test administered by GMAC for MBA and business master's programs. Since February 2024 the Focus Edition format is the only GMAT delivery. This page summarizes official structure and scoring; UniPrep2Go products are independent prep (not GMAC material).",
+    exam_facts: {
+      exam_name: "Graduate Management Admission Test (GMAT)",
+      administered_by: "Graduate Management Admission Council (GMAC)",
+      question_count: "64 questions total (21 Quantitative + 23 Verbal + 20 Data Insights)",
+      scored_count: "64",
+      time_limit: "2 hours 15 minutes test time (optional 10-minute break; section order is flexible)",
+      scoring_scale: "Total score 205–805 (10-point intervals, ending in 5); section scores 60–90 each",
+      passing_score: "No pass/fail score — schools set their own score expectations",
+      delivery: "Computer-based at Pearson VUE test centers or online proctored (verify current options at mba.com)",
+      outline_effective_date: "GMAT Focus Edition (legacy GMAT retired January 31, 2024)",
+      verify_at_url: "https://www.mba.com/exams/gmat-exam/about/exam-structure",
+    },
+    official_sources: [
+      {
+        label: "GMAC — GMAT exam structure",
+        url: "https://www.mba.com/exams/gmat-exam/about/exam-structure",
+      },
+      {
+        label: "GMAC — GMAT scores",
+        url: "https://www.mba.com/exams/gmat-exam/scores",
+      },
+      {
+        label: "GMAC — GMAT exam overview",
+        url: "https://www.mba.com/exams/gmat-exam",
+      },
+    ],
+    domain_weights: [
+      { domain: "Quantitative Reasoning", weight: "33% of total score (21 questions, 45 minutes)" },
+      { domain: "Verbal Reasoning", weight: "33% of total score (23 questions, 45 minutes)" },
+      { domain: "Data Insights", weight: "33% of total score (20 questions, 45 minutes)" },
+    ],
+    whats_changed: [
+      "Legacy GMAT (AWA + IR + Quant + Verbal, 200–800 scale) was retired January 31, 2024; the Focus Edition is now the only GMAT format.",
+      "Sentence Correction was removed from Verbal; Quant de-emphasizes geometry; Data Insights replaces standalone Integrated Reasoning and includes Data Sufficiency.",
+      "Total score now ranges 205–805 with three equally weighted section scores (60–90 each).",
+      "Test takers choose section order and may edit up to three answers per section (per GMAC delivery features — verify at mba.com).",
+      "GMAC announced GMAT Superscore (best section scores across attempts) launching August 2026 — verify timing at mba.com/scores.",
+    ],
+    high_yield_facts: [
+      "All three sections contribute equally to the total score — no Quant-only weighting as on the legacy exam.",
+      "Data Insights allows an on-screen calculator; Quant and Verbal do not.",
+      "Unanswered questions incur a score penalty — pacing to finish each section matters.",
+      "Official scores typically arrive within 3–5 days with performance by content domain and question type on the score report.",
+      "GMAT scores are valid for five years for most business school applications.",
+      "Verbal tests Reading Comprehension and Critical Reasoning only (no Sentence Correction on Focus).",
+    ],
+    candidate_qa: [
+      {
+        q: "How long is the GMAT and how many questions are on it?",
+        a: "64 questions in 2 hours 15 minutes: Quantitative Reasoning (21 q / 45 min), Verbal Reasoning (23 q / 45 min), and Data Insights (20 q / 45 min), plus an optional 10-minute break.",
+      },
+      {
+        q: "What is a good GMAT score?",
+        a: "There is no universal passing score. Total scores run 205–805; competitive MBA programs often cite medians in the 645–715 range, but requirements vary by school.",
+      },
+      {
+        q: "What changed from the old GMAT to the Focus Edition?",
+        a: "Shorter format, no AWA essay, Data Insights replaces IR, Sentence Correction removed, geometry reduced in Quant, and a 205–805 total score with three equal section weights.",
+      },
+    ],
+    trademark_note:
+      "GMAT is a registered trademark of the Graduate Management Admission Council (GMAC).",
+  },
+  "epa-608": {
+    examKey: "epa-608",
+    pageHeading: "EPA Section 608 Technician Certification — Facts, Types & Prep",
+    intro:
+      "EPA Section 608 certification is required under the Clean Air Act for HVAC technicians who maintain, service, repair, or dispose of equipment that could release refrigerants. This page summarizes the Core and Type I–III exam structure; UniPrep2Go products are independent prep (not U.S. EPA exam material).",
+    exam_facts: {
+      exam_name: "EPA Section 608 Technician Certification",
+      administered_by: "U.S. Environmental Protection Agency (via EPA-approved certifying organizations)",
+      question_count: "100 multiple-choice for Universal (25 Core + 25 Type I + 25 Type II + 25 Type III)",
+      scored_count: "25 per section taken (sections scored independently)",
+      time_limit: "Varies by certifying organization; many providers allow ~30 minutes per 25-question section",
+      scoring_scale: "Percent correct per section (independent section scores)",
+      passing_score: "Minimum 18 of 25 correct (72%) in each section taken; Core must pass for any certification",
+      delivery: "Closed-book proctored exam at approved testing organizations (in-person or online proctored — verify with your certifier)",
+      outline_effective_date: "Section 608 refrigerant management regulations (verify current AIM Act / HFC rules at epa.gov)",
+      verify_at_url: "https://www.epa.gov/section608/technician-certification",
+    },
+    official_sources: [
+      {
+        label: "EPA — Section 608 technician certification",
+        url: "https://www.epa.gov/section608/technician-certification",
+      },
+      {
+        label: "EPA — Stationary Refrigeration and Air Conditioning",
+        url: "https://www.epa.gov/section608",
+      },
+      {
+        label: "EPA Section 608 preparatory manual (reference outline)",
+        url: "https://www.epa.gov/section608/technician-certification",
+      },
+    ],
+    domain_weights: [
+      { domain: "Core", weight: "25 questions — ozone depletion, Clean Air Act, Montreal Protocol, recovery, safety, shipping" },
+      { domain: "Type I (Small Appliances)", weight: "25 questions — appliances with ≤5 lb refrigerant (typically sealed systems)" },
+      { domain: "Type II (High-Pressure)", weight: "25 questions — residential/commercial AC, heat pumps, high-pressure equipment" },
+      { domain: "Type III (Low-Pressure)", weight: "25 questions — low-pressure centrifugal chillers and similar systems" },
+    ],
+    whats_changed: [
+      "AIM Act (2020) and subsequent EPA rules phase down HFC production and consumption — verify current substitute refrigerant and leak-repair requirements at epa.gov.",
+      "New flammable (A2L) refrigerants require additional safety training and handling rules beyond legacy CFC/HCFC/HFC content — confirm current EPA guidance before exam day.",
+      "Section 608 certification does not expire, but technicians must follow current regulations regardless of original test date.",
+    ],
+    high_yield_facts: [
+      "Venting refrigerant to the atmosphere is illegal — recovery is required before opening or disposing of systems.",
+      "Core section must pass before any Type certification counts; Universal requires passing Core plus Types I, II, and III.",
+      "Each section is graded independently: 18 correct out of 25 (72%) is the common passing threshold per section.",
+      "Type I covers small appliances; Type II covers high-pressure systems; Type III covers low-pressure chillers.",
+      "Recovery cylinders must be DOT-approved, labeled by refrigerant type, and not overfilled past 80% capacity by weight.",
+      "Leak repair thresholds and timelines differ by system charge size — high-pressure commercial rules are heavily tested on Type II.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the EPA 608 Universal exam?",
+        a: "100 multiple-choice questions total: 25 in Core, 25 in Type I, 25 in Type II, and 25 in Type III. Each section is scored separately.",
+      },
+      {
+        q: "What score do you need to pass EPA 608?",
+        a: "You need at least 18 of 25 correct (72%) in every section you take. Failing one section does not invalidate a passing score in another, but Core must pass for any certification.",
+      },
+      {
+        q: "Does EPA 608 certification expire?",
+        a: "EPA Section 608 technician certification does not expire, but you must comply with current refrigerant regulations and handling requirements.",
+      },
+    ],
+  },
+  "bms-bas": {
+    examKey: "bms-bas",
+    pageHeading: "Building Management System (BMS) / BAS — Facts, Credentials & Prep",
+    intro:
+      "Building Management Systems (BMS) and Building Automation Systems (BAS) control HVAC, lighting, and plant equipment in commercial buildings. There is no single U.S. federal BMS licensing exam — technicians typically combine protocol knowledge (BACnet), vendor platform training, and field commissioning experience. This page summarizes verifiable industry structure; UniPrep2Go products are independent prep (not Tridium or BACnet International certification material).",
+    exam_facts: {
+      exam_name: "Building Automation System (BAS / BMS) technician credentials",
+      administered_by:
+        "No unified national exam — common paths include Tridium Niagara 4 Technical Certification Program (TCP), manufacturer training (e.g., Siemens, Johnson Controls, Schneider), and BACnet International education",
+      question_count:
+        "Varies by credential (e.g., Tridium Niagara 4 TCP: 5-day course with practical final assessment on Day 5 — not a standalone multiple-choice licensure exam)",
+      time_limit: "Varies by certifying organization (Niagara 4 TCP is typically a full-day practical lab exam after four training days)",
+      scoring_scale: "Pass/fail or completion certificate per vendor program — no universal scaled score",
+      passing_score: "No single passing score — employer and project requirements vary (verify with your training provider)",
+      delivery: "Instructor-led training with hands-on labs; some providers offer remote proctored Niagara 4 TCP (verify with Tridium University or authorized partners)",
+      outline_effective_date: "ASHRAE Standard 135-2024 (BACnet); ASHRAE Guideline 36 high-performance sequences (verify current edition at ashrae.org)",
+      verify_at_url: "https://www.bacnetinternational.org/",
+    },
+    official_sources: [
+      {
+        label: "BACnet International — protocol and BTL product certification program",
+        url: "https://www.bacnetinternational.org/",
+      },
+      {
+        label: "BACnet Testing Laboratories (BTL) — product conformance listing",
+        url: "https://btl.org/",
+      },
+      {
+        label: "ASHRAE — Standard 135 (BACnet) and professional development",
+        url: "https://www.ashrae.org/professional-development",
+      },
+      {
+        label: "Tridium — Niagara platform training (verify TCP availability at Tridium University)",
+        url: "https://www.tridium.com/",
+      },
+    ],
+    domain_weights: [
+      { domain: "BACnet protocol and networking", weight: "Objects, services, MS/TP, IP, BBMD, device profiles (B-ASC, B-BC, B-OWS, etc.)" },
+      { domain: "HVAC control sequences", weight: "AHU/VAV/chiller/boiler logic, setpoints, PID, ASHRAE Guideline 36 sequences" },
+      { domain: "BMS platform operations", weight: "Alarms, trends/histories, schedules, graphics, user roles, backups" },
+      { domain: "Integration and commissioning", weight: "Point-to-point checkout, Modbus and multi-protocol drivers, troubleshooting, documentation" },
+    ],
+    whats_changed: [
+      "ASHRAE published BACnet Standard 135-2024 — verify current revision for object definitions and networking features at ashrae.org.",
+      "BACnet Secure Connect (BACnet/SC) adoption is increasing for IT-friendly building networks — confirm current deployment guidance at bacnetinternational.org.",
+      "BTL (BACnet Testing Laboratories) certifies products, not individuals — job requirements often cite BTL-Listed devices plus vendor technician credentials.",
+      "Tridium Niagara 4 remains a widely requested integration platform credential; TCP format and delivery vary by authorized training partner.",
+    ],
+    high_yield_facts: [
+      "BACnet is ASHRAE Standard 135 — the open protocol for building automation interoperability; BTL Listing applies to products, not people.",
+      "Common BACnet device profiles include B-ASC (application specific controller), B-AAC (advanced application controller), B-BC (building controller), and B-OWS (operator workstation).",
+      "BBMD (BACnet Broadcast Management Device) enables BACnet/IP communication across IP subnets.",
+      "COV (Change of Value) reporting reduces polling traffic compared with constant read requests.",
+      "Niagara 4 TCP is a 5-day instructor-led program ending with a practical station-configuration assessment — not a generic multiple-choice licensure test.",
+      "Commissioning includes verifying I/O mapping, alarm routing, sequence logic, and as-built documentation before turnover.",
+    ],
+    candidate_qa: [
+      {
+        q: "Is there one official BMS technician license exam in the United States?",
+        a: "No single federal BAS/BMS license exists. Employers typically require vendor platform training (e.g., Tridium Niagara 4 TCP), manufacturer certifications, and demonstrated BACnet and HVAC controls competency.",
+      },
+      {
+        q: "What is BTL certification — can a technician get BTL certified?",
+        a: "BTL certifies BACnet products for protocol conformance, administered by BACnet International. Individuals are not BTL-certified; technicians work with BTL-Listed devices and pursue vendor or training credentials instead.",
+      },
+      {
+        q: "What is Tridium Niagara 4 TCP?",
+        a: "The Niagara 4 Technical Certification Program is a multi-day Tridium training path with hands-on labs and a practical final assessment, commonly requested for BMS integrator and controls engineer roles.",
+      },
+    ],
+  },
+  "leed-green-associate": {
+    examKey: "leed-green-associate",
+    pageHeading: "LEED Green Associate — Exam Facts, Domains & Prep",
+    intro:
+      "The LEED Green Associate credential from USGBC/GBCI demonstrates general knowledge of green building and LEED project support. This page summarizes official exam structure; UniPrep2Go products are independent prep (not USGBC exam material).",
+    exam_facts: {
+      exam_name: "LEED Green Associate",
+      administered_by: "Green Business Certification Inc. (GBCI) / U.S. Green Building Council (USGBC)",
+      question_count: "100 multiple-choice (includes unscored pretest items per GBCI policy — verify current handbook)",
+      scored_count: "100-item form (pretest items not identified during exam)",
+      time_limit: "2 hours test time (plus optional tutorial and survey at Prometric)",
+      scoring_scale: "125–200 scaled score",
+      passing_score: "170 scaled score (minimum competency threshold)",
+      delivery: "Prometric test center or online remote proctored exam",
+      outline_effective_date: "GBCI updates LEED professional exams annually (verify current LEED v4/v5 handbook at usgbc.org)",
+      verify_at_url: "https://www.usgbc.org/credentials/leed-green-associate",
+    },
+    official_sources: [
+      {
+        label: "USGBC — LEED Green Associate credential",
+        url: "https://www.usgbc.org/credentials/leed-green-associate",
+      },
+      {
+        label: "GBCI — exam results and passing score",
+        url: "https://support.usgbc.org/hc/en-us/articles/6826371188371-Exam-Results",
+      },
+      {
+        label: "LEED Green Associate candidate handbook (USGBC GitBook)",
+        url: "https://usgbc.gitbook.io/leed-candidate-handbooks/leed-green-associate-candidate-handbook",
+      },
+    ],
+    domain_weights: [
+      { domain: "LEED Process and Integrative Strategies", weight: "Project roles, certification process, integrative design" },
+      { domain: "Location and Transportation", weight: "Site selection, transit, compact development" },
+      { domain: "Sustainable Sites and Water Efficiency", weight: "Site management, stormwater, irrigation, water use reduction" },
+      { domain: "Energy and Atmosphere", weight: "Energy performance, refrigerants, renewable energy, metering" },
+      { domain: "Materials and Resources / Indoor Environmental Quality", weight: "Waste, materials, IAQ, lighting, acoustic and comfort concepts" },
+    ],
+    whats_changed: [
+      "GBCI publishes annual exam updates; verify the current LEED Green Associate candidate handbook before scheduling.",
+      "LEED v5 beta exams may delay score reporting — standard LEED v4 exams typically show scores immediately after completion (verify at support.usgbc.org).",
+      "LEED Green Associates must complete 15 continuing education hours every 2 years to maintain the credential.",
+    ],
+    high_yield_facts: [
+      "Passing score is 170 on a 125–200 scale for all GBCI LEED professional exams.",
+      "LEED Green Associate is the prerequisite credential for LEED AP specialty exams.",
+      "LEED AP combined exams require passing both Green Associate and specialty parts in the same application period.",
+      "Three failed attempts within 12 months triggers a 90-day waiting period before re-registering (GBCI retake policy).",
+      "Exam fee is typically $200 for USGBC members and $250 for non-members (verify current pricing at usgbc.org).",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the LEED Green Associate exam?",
+        a: "100 multiple-choice questions in a 2-hour period at Prometric (plus optional tutorial and survey time).",
+      },
+      {
+        q: "What score do you need to pass the LEED Green Associate exam?",
+        a: "A scaled score of 170 or higher on the 125–200 scale.",
+      },
+      {
+        q: "Do I need experience to sit for the LEED Green Associate exam?",
+        a: "No formal prerequisites — the credential is designed for professionals newer to LEED and green building.",
+      },
+    ],
+    trademark_note:
+      "LEED and USGBC are registered trademarks of the U.S. Green Building Council. GBCI is a registered trademark of Green Business Certification Inc.",
+  },
+  "leed-ap-bd-c": {
+    examKey: "leed-ap-bd-c",
+    pageHeading: "LEED AP BD+C — Exam Facts, Credit Categories & Prep",
+    intro:
+      "LEED AP with specialty Building Design + Construction (BD+C) validates advanced knowledge of LEED for new construction and major renovation projects. Requires an active LEED Green Associate. UniPrep2Go products are independent prep (not USGBC material).",
+    exam_facts: {
+      exam_name: "LEED AP Building Design + Construction (BD+C)",
+      administered_by: "Green Business Certification Inc. (GBCI) / U.S. Green Building Council (USGBC)",
+      question_count: "100 multiple-choice specialty exam (LEED Green Associate required separately unless taking combined exam)",
+      scored_count: "100-item specialty form",
+      time_limit: "2 hours specialty exam time (4 hours 20 minutes total for combined GA + AP exam)",
+      scoring_scale: "125–200 scaled score",
+      passing_score: "170 scaled score on the specialty exam (and on GA if taking combined exam)",
+      delivery: "Prometric test center or online remote proctored",
+      outline_effective_date: "Annual GBCI exam updates; BD+C aligns to LEED rating system credits and prerequisites",
+      verify_at_url: "https://www.usgbc.org/credentials/leed-ap-build-design-construction",
+    },
+    official_sources: [
+      {
+        label: "USGBC — LEED AP BD+C credential",
+        url: "https://www.usgbc.org/credentials/leed-ap-build-design-construction",
+      },
+      {
+        label: "GBCI — exam results and passing score",
+        url: "https://support.usgbc.org/hc/en-us/articles/6826371188371-Exam-Results",
+      },
+      {
+        label: "LEED AP BD+C candidate handbook (verify at USGBC credentials)",
+        url: "https://www.usgbc.org/credentials",
+      },
+    ],
+    domain_weights: [
+      { domain: "Integrative Process, Location and Transportation", weight: "IP and LT credit categories" },
+      { domain: "Sustainable Sites and Water Efficiency", weight: "SS and WE credits" },
+      { domain: "Energy and Atmosphere", weight: "EA prerequisites and credits — heavily weighted study area" },
+      { domain: "Materials and Resources", weight: "MR credits including EPDs, sourcing, and waste" },
+      { domain: "Indoor Environmental Quality", weight: "IEQ credits — air quality, lighting, comfort" },
+    ],
+    whats_changed: [
+      "Other LEED AP specialties (O+M, ID+C, Homes, ND) use separate exams — BD+C is for new construction and major renovation.",
+      "Combined GA + AP exams require 170+ on both parts within the same application period.",
+      "LEED APs must earn 30 continuing education hours every 2 years to maintain the credential (with GA maintenance requirements).",
+    ],
+    high_yield_facts: [
+      "You must hold an active LEED Green Associate before earning LEED AP BD+C (unless passing both in one combined sitting).",
+      "BD+C applies to new construction and major renovation of commercial and institutional buildings.",
+      "Prerequisites (P) must be met before corresponding credits (C) can be earned on real LEED projects — exam questions test this logic.",
+      "Minimum program requirements and rating system selection (e.g., LEED v4.1 BD+C) frame many exam scenarios.",
+      "Regional priority and impact area concepts appear across multiple credit categories.",
+    ],
+    candidate_qa: [
+      {
+        q: "What is the difference between LEED Green Associate and LEED AP BD+C?",
+        a: "Green Associate is the broad entry credential; LEED AP BD+C is an advanced specialty focused on design and construction projects.",
+      },
+      {
+        q: "How long is the LEED AP BD+C exam?",
+        a: "100 multiple-choice questions in 2 hours for the specialty-only exam.",
+      },
+      {
+        q: "Are there other LEED AP specialties besides BD+C?",
+        a: "Yes — O+M (operations), ID+C (interior), Homes, and ND (neighborhood) each have separate specialty exams.",
+      },
+    ],
+    trademark_note:
+      "LEED and USGBC are registered trademarks of the U.S. Green Building Council. GBCI is a registered trademark of Green Business Certification Inc.",
+  },
+  "well-ap": {
+    examKey: "well-ap",
+    pageHeading: "WELL Accredited Professional (WELL AP) — Exam Facts, Concepts & Prep",
+    intro:
+      "The WELL Accredited Professional (WELL AP) credential from IWBI demonstrates expertise in the WELL Building Standard and human health in the built environment. GBCI administers the exam on behalf of IWBI. UniPrep2Go products are independent prep (not IWBI exam material).",
+    exam_facts: {
+      exam_name: "WELL Accredited Professional (WELL AP)",
+      administered_by: "Green Business Certification Inc. (GBCI) on behalf of the International WELL Building Institute (IWBI)",
+      question_count: "115 multiple-choice (100 scored + 15 unscored pilot questions)",
+      scored_count: "100",
+      time_limit: "2 hours 30 minutes",
+      scoring_scale: "125–200 scaled score",
+      passing_score: "170 scaled score",
+      delivery: "Prometric test centers or Prometric ProProctor remote proctoring (verify at wellcertified.com)",
+      outline_effective_date: "WELL AP exam based on WELL Building Standard v2 (verify current candidate handbook at support.wellcertified.com)",
+      verify_at_url: "https://support.wellcertified.com/hc/en-us/articles/25696901381015-WELL-AP-overview",
+    },
+    official_sources: [
+      {
+        label: "IWBI — WELL AP overview",
+        url: "https://support.wellcertified.com/hc/en-us/articles/25696901381015-WELL-AP-overview",
+      },
+      {
+        label: "IWBI — Get to know the WELL AP exam",
+        url: "https://support.wellcertified.com/hc/en-us/articles/25696922685079-Get-to-know-the-WELL-AP-exam",
+      },
+      {
+        label: "WELL AP candidate handbook (PDF)",
+        url: "https://www.usgbc.org/sites/default/files/2023-02/WELL%20AP%20Candidate%20Handbook.pdf",
+      },
+    ],
+    domain_weights: [
+      { domain: "Air", weight: "11 scored questions" },
+      { domain: "Water", weight: "9 scored questions" },
+      { domain: "Nourishment", weight: "10 scored questions" },
+      { domain: "Light", weight: "9 scored questions" },
+      { domain: "Movement", weight: "7 scored questions" },
+      { domain: "Thermal Comfort", weight: "7 scored questions" },
+      { domain: "Sound", weight: "8 scored questions" },
+      { domain: "Materials", weight: "9 scored questions" },
+      { domain: "Mind", weight: "9 scored questions" },
+      { domain: "Community", weight: "9 scored questions" },
+      { domain: "WELL Certification and WELL Portfolio", weight: "12 scored questions" },
+    ],
+    whats_changed: [
+      "WELL AP exam v2 includes a project scenario embedded in the exam session — not available before test day.",
+      "A second embedded PDF provides selected WELL v2 reference tables; review 'Get to know the WELL AP exam' content before scheduling.",
+      "Exam registration fee was reduced to $299 USD (verify current pricing at wellcertified.com).",
+      "WELL APs must complete continuing education requirements to maintain the credential (verify current CE rules in the candidate handbook).",
+      "After three unsuccessful exam attempts, candidates must wait 90 days before registering again.",
+    ],
+    high_yield_facts: [
+      "Passing score is 170 on the 125–200 scale — same scaled scoring model as LEED professional exams.",
+      "WELL Certification and Portfolio (12 questions) and Air (11 questions) are the highest-weight knowledge domains.",
+      "Exam is closed book but includes embedded scenario and reference PDFs — know how to navigate them quickly.",
+      "Cognitive levels tested: recall, application, and analysis — scenario-based questions require linking concepts to project context.",
+      "No formal prerequisites, but IWBI recommends exposure to health and well-being in the built environment and prior WELL project experience.",
+      "You have 12 months from registration to schedule and sit the exam via Prometric.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the WELL AP exam?",
+        a: "115 multiple-choice questions in 2.5 hours — 100 scored plus 15 unscored pilot questions randomly distributed.",
+      },
+      {
+        q: "What score do you need to pass the WELL AP exam?",
+        a: "A scaled score of at least 170 on the 125–200 scale.",
+      },
+      {
+        q: "Is the WELL AP exam open book?",
+        a: "It is closed book, but the exam session includes embedded PDFs — a project scenario and selected WELL v2 reference material you can consult during the test.",
+      },
+      {
+        q: "What is the difference between LEED AP and WELL AP?",
+        a: "LEED AP credentials (USGBC/GBCI) focus on environmental sustainability and green building rating systems. WELL AP (IWBI/GBCI) focuses on human health and well-being in buildings via the WELL Building Standard — separate exams and credentials.",
+      },
+      {
+        q: "What WELL v2 concepts are tested?",
+        a: "Eleven knowledge domains: Air, Water, Nourishment, Light, Movement, Thermal Comfort, Sound, Materials, Mind, Community, plus WELL Certification and Portfolio process.",
+      },
+    ],
+    trademark_note:
+      "WELL, WELL AP, and IWBI are trademarks of the International WELL Building Institute. GBCI is a registered trademark of Green Business Certification Inc.",
+  },
+  cem: {
+    examKey: "cem",
+    pageHeading: "Certified Energy Manager (CEM) — Exam Facts, Body of Knowledge & Prep",
+    intro:
+      "The Certified Energy Manager (CEM) credential from the Association of Energy Engineers (AEE) recognizes expertise in optimizing energy use across facilities and industrial systems. This page summarizes official exam structure; UniPrep2Go products are independent prep (not AEE exam material).",
+    exam_facts: {
+      exam_name: "Certified Energy Manager (CEM)",
+      administered_by: "Association of Energy Engineers (AEE)",
+      question_count: "130 multiple-choice and true/false (120 scored + 10 unscored pretest items)",
+      scored_count: "120",
+      time_limit: "4 hours",
+      scoring_scale: "0–1,040 scaled score",
+      passing_score: "700 scaled score",
+      delivery: "Proctored at AEE-approved seminars, testing centers, or remote proctoring (verify at aeecenter.org)",
+      outline_effective_date: "U.S. CEM Body of Knowledge & Study Guide (verify current version at aeecenter.org)",
+      verify_at_url: "https://www.aeecenter.org/certifications/certified-energy-manager",
+    },
+    official_sources: [
+      {
+        label: "AEE — Certified Energy Manager certification",
+        url: "https://www.aeecenter.org/certifications/certified-energy-manager",
+      },
+      {
+        label: "AEE — CEM Body of Knowledge & Study Guide (PDF)",
+        url: "https://www.aeecenter.org/wp-content/uploads/2024/03/CEM-BodyofKnowledge_StudyGuide_1.7.pdf",
+      },
+      {
+        label: "AEE — CEM certification handbook",
+        url: "https://www.aeecenter.org/wp-content/uploads/2024/03/CEMHandbook-2.13.pdf",
+      },
+    ],
+    domain_weights: [
+      { domain: "Energy and Sustainability Policies, Codes, and Standards", weight: "6–8%" },
+      { domain: "Energy Rates, Tariffs, and Supply Options", weight: "5–7%" },
+      { domain: "Energy Audits and Instrumentation", weight: "7–11%" },
+      { domain: "Energy Accounting and Economics", weight: "6–10%" },
+      { domain: "Electrical Power Systems and Motors", weight: "7–11%" },
+      { domain: "Lighting Systems", weight: "5–7%" },
+      { domain: "HVAC Systems and Building Envelope", weight: "10–16%" },
+      { domain: "Building Automation, Controls and AI Systems", weight: "6–10%" },
+      { domain: "Energy Storage Systems", weight: "3–5%" },
+      { domain: "Boiler and Steam Systems", weight: "4–6%" },
+      { domain: "Distributed Generation & Renewable Energy", weight: "4–6%" },
+      { domain: "Industrial Systems", weight: "6–8%" },
+      { domain: "Operations, Maintenance and Commissioning", weight: "7–11%" },
+      { domain: "ESPC and Measurement & Verification", weight: "3–5%" },
+    ],
+    whats_changed: [
+      "AEE requires completion of an approved preparatory seminar (live, virtual, or self-paced) before sitting for the CEM exam — verify current requirements.",
+      "CEM recertification is required every 3 years with continuing education and a maintenance fee.",
+      "Exam is open book — printed references and notes in a binder allowed; computers and phones prohibited during the exam.",
+    ],
+    high_yield_facts: [
+      "Passing score is 700 on a 0–1,040 scaled score — not a simple percentage.",
+      "HVAC Systems and Building Envelope is the highest-weight subject area (up to 16% of scored content).",
+      "No penalty for wrong answers — answer every question on the 130-item form.",
+      "AEE offers a 65-question paid self-evaluation exam that mirrors half the official exam length (verify at aeecenter.org/cemresources).",
+      "Non-programmable calculator permitted; programmable calculators and exam software on personal devices are prohibited.",
+      "CEM application file must be completed within 3 years of passing the exam or the process restarts.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the CEM exam?",
+        a: "130 questions in 4 hours — 120 scored plus 10 unscored pretest items randomly placed on the form.",
+      },
+      {
+        q: "What score do you need to pass the CEM exam?",
+        a: "A scaled score of at least 700 on the 0–1,040 scale.",
+      },
+      {
+        q: "Is the CEM exam open book?",
+        a: "Yes — open book and open notes with printed materials in a binder; verify prohibited items in the current AEE handbook.",
+      },
+    ],
+  },
+  "ashrae-certifications": {
+    examKey: "ashrae-certifications",
+    pageHeading: "ASHRAE Certifications — BCxP, BEMP, BEAP, CHD, HBDP, HFDP, OPMP Facts & Prep",
+    intro:
+      "ASHRAE offers seven ANSI-accredited personnel certification programs (ISO/IEC 17024) for building energy, commissioning, HVAC design, and operations professionals. Each credential has its own eligibility requirements, exam blueprint, and passing score. UniPrep2Go products are independent prep (not ASHRAE exam material).",
+    exam_facts: {
+      exam_name: "ASHRAE Personnel Certification Programs (BCxP, BEAP, BEMP, CHD, HBDP, HFDP, OPMP)",
+      administered_by: "American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE)",
+      question_count:
+        "Most exams: 115 multiple-choice (100 scored + 15 pretest); BCxP: 130 items (120 scored + 10 pretest); HFDP: same 115-item form with 2-hour time limit",
+      scored_count: "100 (BCxP: 120 scored items)",
+      time_limit: "2.5 hours for most exams; 2 hours for HFDP; BCxP uses extended form — verify candidate guidebook",
+      scoring_scale: "Raw score out of scored items; pass point set per credential via Angoff methodology",
+      passing_score:
+        "Varies by credential — BCxP 83/120, BEAP 68/100, BEMP 69/100, CHD 70/100, HBDP 70/100, HFDP 72/100 (verify current FAQs at ashrae.org)",
+      delivery: "Computer-based testing year-round through ASHRAE's exam provider (verify scheduling at ashrae.org)",
+      outline_effective_date: "Each credential has a candidate guidebook and exam blueprint — verify current edition before scheduling",
+      verify_at_url: "https://www.ashrae.org/professional-development/ashrae-certification/certification-faqs",
+    },
+    official_sources: [
+      {
+        label: "ASHRAE — Certification FAQs (exam format and passing scores)",
+        url: "https://www.ashrae.org/professional-development/ashrae-certification/certification-faqs",
+      },
+      {
+        label: "ASHRAE — Candidate guidebooks",
+        url: "https://www.ashrae.org/professional-development/ashrae-certification/ashrae-certification-candidate-guidebooks",
+      },
+      {
+        label: "ASHRAE — Official certification practice exams",
+        url: "https://www.ashrae.org/professional-development/ashrae-certification/certification-exams/ashrae-certification-practice-exams",
+      },
+    ],
+    domain_weights: [
+      { domain: "BCxP — Building Commissioning Professional", weight: "Lead and manage commissioning processes (120 scored items, pass 83/120)" },
+      { domain: "BEAP — Building Energy Assessment Professional", weight: "Assess building energy performance (100 scored, pass 68/100)" },
+      { domain: "BEMP — Building Energy Modeling Professional", weight: "Energy modeling software, calibration, and interpretation (100 scored, pass 69/100)" },
+      { domain: "CHD — Certified HVAC Designer", weight: "HVAC system design competency (100 scored, pass 70/100)" },
+      { domain: "HBDP — High-Performance Building Design Professional", weight: "Integrated high-performance design (100 scored, pass 70/100)" },
+      { domain: "HFDP — Healthcare Facility Design Professional", weight: "Healthcare HVAC and IEQ design (100 scored, pass 72/100, 2-hour exam)" },
+      { domain: "OPMP — Operations and Performance Management Professional", weight: "Existing building operations and performance (100 scored — verify pass score at ashrae.org)" },
+    ],
+    whats_changed: [
+      "All seven ASHRAE certification programs are accredited under ANSI/ISO/IEC 17024 — verify current ANAB listing at ashrae.org.",
+      "BEMP exam content outline was updated with new tasks — an updated BEMP Study Guide was planned for Society Year 2025–26 (verify at ashrae.org).",
+      "BCxP eligibility and PDH rules include updates for 2026 teaching credit limits — verify the current BCxP candidate guidebook.",
+      "ASHRAE publishes 30-question official practice exams per credential ($49, one-time use) — not required for eligibility.",
+    ],
+    high_yield_facts: [
+      "Most ASHRAE exams: 115 total items with 100 scored and 15 unidentified pretest questions interspersed throughout the form.",
+      "BCxP is the exception: 130 items with 120 scored and 10 pretest items — highest pass threshold at 83/120.",
+      "Cognitive levels tested: recall, application, and analysis — not memorization alone.",
+      "Each credential has separate eligibility (education + years of experience) — verify the checklist in the candidate guidebook before applying.",
+      "Certificants must earn Professional Development Hours (PDHs) to renew — requirements vary by credential (e.g., BCxP: 50 PDHs per 3-year cycle).",
+      "ASHRAE Standard 90.1 (energy) and Guideline 36 (sequences of operation) underpin many exam blueprints across HBDP, OPMP, and BEMP.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many ASHRAE personnel certifications are there?",
+        a: "Seven ANSI-accredited programs: BCxP, BEAP, BEMP, CHD, HBDP, HFDP, and OPMP — each with a separate exam and eligibility requirements.",
+      },
+      {
+        q: "How long are ASHRAE certification exams?",
+        a: "Most exams allow 2.5 hours for 115 items (100 scored). HFDP allows 2 hours. Non-native English speakers may request an additional 30 minutes.",
+      },
+      {
+        q: "What score do you need to pass the BEMP exam?",
+        a: "69 correct out of 100 scored items (per ASHRAE certification FAQs — verify current pass points before scheduling).",
+      },
+    ],
+    trademark_note:
+      "ASHRAE is a registered trademark of the American Society of Heating, Refrigerating and Air-Conditioning Engineers.",
+  },
+  cdcp: {
+    examKey: "cdcp",
+    pageHeading: "Certified Data Centre Professional (CDCP) — Exam Facts, Domains & Prep",
+    intro:
+      "The EXIN EPI Certified Data Centre Professional (CDCP) credential validates foundational knowledge of data centre facility infrastructure and operations. Accredited training through an EPI authorized partner is required before sitting the exam. UniPrep2Go products are independent prep (not EXIN or EPI exam material).",
+    exam_facts: {
+      exam_name: "EXIN EPI Certified Data Centre Professional (CDCP)",
+      administered_by: "EXIN (accredited by EPI — Enterprise Products Integration)",
+      question_count: "40 multiple-choice",
+      scored_count: "40",
+      time_limit: "60 minutes",
+      passing_score: "68% (27 of 40 correct)",
+      delivery: "Computer-based or paper-based at end of accredited EPI CDCP training course (verify delivery route with your training partner)",
+      outline_effective_date: "EXIN EPI CDCP preparation guide (verify current edition at exin.com)",
+      verify_at_url: "https://www.exin.com/technologies-software/exin-epi-data-centre-management/certified-data-centre-professional",
+    },
+    official_sources: [
+      {
+        label: "EXIN — Certified Data Centre Professional",
+        url: "https://www.exin.com/technologies-software/exin-epi-data-centre-management/certified-data-centre-professional",
+      },
+      {
+        label: "EPI — CDCP preparation guide (PDF)",
+        url: "https://www.epi-certification.com/uploads/file/exam%20prep/english_preparation_guide_cdcp_201706__.pdf",
+      },
+      {
+        label: "EPI — Certified Data Centre Professional training",
+        url: "https://www.epi-ap.com/services/1/3/4/Certified_Data_Centre_Professional_(CDCP)",
+      },
+    ],
+    domain_weights: [
+      { domain: "Facilities — Mission Critical Site, Standards, Location & Building", weight: "~7.5% (3 of 40 questions)" },
+      { domain: "Facilities — Raised Floor, Lighting, Racks, and Network Infrastructure", weight: "~17.5% (7 of 40)" },
+      { domain: "Facilities — Power Infrastructure", weight: "15% (6 of 40)" },
+      { domain: "Facilities — Electro Magnetic Fields (EMF)", weight: "5% (2 of 40)" },
+      { domain: "Facilities — Cooling Infrastructure", weight: "10% (4 of 40)" },
+      { domain: "Facilities — Water Supply", weight: "2.5% (1 of 40)" },
+      { domain: "Facilities — Fire Protection", weight: "15% (6 of 40)" },
+      { domain: "Facilities — Physical Security, Safety, and Auxiliary Systems", weight: "12.5% (5 of 40)" },
+      { domain: "Operations — Operational Considerations", weight: "15% (6 of 40)" },
+    ],
+    whats_changed: [
+      "CDCP is part of the EXIN EPI Data Centre Training Framework — CDCS (specialist) and CDCE (expert) are higher tiers on the same pathway.",
+      "Certificate validity is 3 years — recertification through EPI's recertification programme (verify current options at epi-ap.com).",
+      "EXIN lists training as mandatory — candidates typically sit the exam immediately after the 2-day accredited CDCP course.",
+      "An electronic dictionary is permitted during the exam; other electronic aids and open-book references are not.",
+    ],
+    high_yield_facts: [
+      "Pass mark is 27 of 40 (68%) — closed book, 60 minutes.",
+      "Facilities of the Data Centre accounts for ~85% of exam questions (34 of 40); Operations ~15% (6 of 40).",
+      "Power Infrastructure (6 questions) and Fire Protection (6 questions) are the highest-weight subtopics on the facilities side.",
+      "Standards referenced include TIA-942, Uptime Institute Tier classification, EN 50600 / ISO 22237, and ASHRAE TC 9.9 thermal guidelines.",
+      "Hot aisle / cold aisle containment, free cooling, and CRAC/CRAH topologies are core cooling concepts.",
+      "PUE (Power Usage Effectiveness) is the primary data centre energy efficiency metric.",
+      "NFPA 75/76 and clean-agent suppression systems are common fire-protection knowledge areas.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the CDCP exam?",
+        a: "40 multiple-choice questions in 60 minutes — all 40 are scored.",
+      },
+      {
+        q: "What score do you need to pass the CDCP exam?",
+        a: "68% — at least 27 correct answers out of 40.",
+      },
+      {
+        q: "Is the CDCP exam open book?",
+        a: "No. The exam is closed book. EXIN permits an (electronic) dictionary only.",
+      },
+      {
+        q: "Do I need training before the CDCP exam?",
+        a: "Yes. EXIN lists accredited EPI training as mandatory. The exam is typically taken at the end of the 2-day CDCP course.",
+      },
+      {
+        q: "How long is the CDCP certificate valid?",
+        a: "3 years. Recertify through EPI's recertification programme or progress to CDCS/CDCE credentials.",
+      },
+    ],
+    trademark_note:
+      "CDCP is a registered certification mark of EPI. EXIN is an independent exam and certification institute.",
+  },
+  nebosh: {
+    examKey: "nebosh",
+    pageHeading: "NEBOSH International General Certificate (IGC) — Exam Facts, Syllabus & Prep",
+    intro:
+      "NEBOSH (National Examination Board in Occupational Safety and Health) offers globally recognised occupational health and safety qualifications. The International General Certificate (IGC) is the flagship Level 3 qualification, assessed by Unit GIC1 (open-book examination) and Unit GIC2 (practical risk assessment). UniPrep2Go products are independent prep (not NEBOSH assessment material).",
+    exam_facts: {
+      exam_name: "NEBOSH International General Certificate in Occupational Health and Safety (IGC)",
+      administered_by: "NEBOSH (delivered through accredited Learning Partners)",
+      question_count:
+        "GIC1: scenario-based open-book examination (100 marks); GIC2: practical workplace risk assessment — not multiple-choice",
+      scored_count: "GIC1: 100 marks (qualification grade); GIC2: pass/refer only (does not affect Distinction/Credit/Pass grade)",
+      time_limit: "GIC1: 5 hours; GIC2: 4 hours (verify with your Learning Partner)",
+      passing_score:
+        "GIC1: 45% provisional pass (45/100); grades — Distinction 75+, Credit 65–74, Pass 45–64. GIC2: pass standard in GIC2 guidance (verify at nebosh.org.uk)",
+      delivery: "GIC1: remote open-book examination (OBE) via NEBOSH online platform; GIC2: practical submission per NEBOSH template",
+      outline_effective_date: "IGC learner guide v1, specification June 2025, publication January 2026",
+      verify_at_url: "https://www.nebosh.org.uk/qualifications/nebosh-international-general-certificate-in-occupational-health-and-safety/",
+    },
+    official_sources: [
+      {
+        label: "NEBOSH — International General Certificate (IGC)",
+        url: "https://www.nebosh.org.uk/qualifications/nebosh-international-general-certificate-in-occupational-health-and-safety/",
+      },
+      {
+        label: "NEBOSH — GIC learner guide (PDF, January 2026)",
+        url: "https://www.nebosh.org.uk/documents/gic-syllabus-guide-for-learners/gic-learner-guide-v1.pdf",
+      },
+      {
+        label: "NEBOSH — Where to study (accredited Learning Partners)",
+        url: "https://www.nebosh.org.uk/qualifications/where-to-study/",
+      },
+    ],
+    domain_weights: [
+      { domain: "Element 1 — Why we should manage workplace health and safety", weight: "GIC1 OBE + GIC2 practical" },
+      { domain: "Element 2 — How health and safety management systems work", weight: "GIC1 OBE + GIC2 practical (ISO 45001, ILO-OSH 2001)" },
+      { domain: "Element 3 — Managing risk: people and processes", weight: "GIC1 OBE + GIC2 practical (culture, human factors, change, SSOW, PTW)" },
+      { domain: "Element 4 — Health and safety monitoring and measuring", weight: "GIC1 OBE (incidents, audits, reviews)" },
+      { domain: "Element 5 — Physical and psychological health", weight: "GIC1 OBE; hazards assessed in GIC2" },
+      { domain: "Element 6 — Musculoskeletal health", weight: "GIC1 OBE; hazards assessed in GIC2" },
+      { domain: "Element 7 — Chemical and biological agents", weight: "GIC1 OBE; hazards assessed in GIC2" },
+      { domain: "Element 8 — General workplace issues", weight: "GIC1 OBE; hazards assessed in GIC2" },
+      { domain: "Element 9 — Work equipment", weight: "GIC1 OBE; hazards assessed in GIC2" },
+      { domain: "Element 10 — Fire", weight: "GIC1 OBE; hazards assessed in GIC2" },
+      { domain: "Element 11 — Electricity", weight: "GIC1 OBE; hazards assessed in GIC2" },
+      { domain: "Unit GIC2 — Risk assessment (5-step approach, hierarchy of control)", weight: "Practical assessment only — pass/refer" },
+    ],
+    whats_changed: [
+      "The revised IGC syllabus (GIC1/GIC2 units) replaced the previous IG1/IG2 structure — learner guide published January 2026.",
+      "GIC1 is a 5-hour open-book scenario examination marked out of 100; qualification grade (Distinction/Credit/Pass) is based on GIC1 only.",
+      "GIC2 is a 4-hour practical risk assessment using the official NEBOSH template — pass/refer only, does not affect the qualification grade.",
+      "You have five years from your first successful unit ('declaration date') to pass both units and complete the qualification.",
+      "NEBOSH also offers National General Certificate (NGC), Construction, Fire, Environment, and Diploma qualifications — each with separate syllabuses and assessments.",
+    ],
+    high_yield_facts: [
+      "GIC1 pass mark is 45% (45/100) — but aim higher; Distinction requires 75+ and Credit requires 65–74.",
+      "GIC1 answers must be supported by evidence from the scenario — generic textbook answers without scenario linkage score poorly.",
+      "Hierarchy of control: eliminate → substitute → engineering → administrative → PPE (last resort).",
+      "ISO 45001 and ILO-OSH 2001 are the reference management system frameworks in the syllabus.",
+      "GIC2 requires a suitable and sufficient risk assessment using the 5-step approach on a real or realistic workplace.",
+      "IOSH Associate (AIOSH) and Tech IOSH membership routes open after achieving the IGC parchment.",
+      "Contractor selection, monitoring, and management appear in both GIC1 and GIC2 assessments.",
+    ],
+    candidate_qa: [
+      {
+        q: "How is the NEBOSH IGC assessed?",
+        a: "Two units: GIC1 (5-hour open-book scenario examination, 100 marks) and GIC2 (4-hour practical risk assessment). You must pass both within five years.",
+      },
+      {
+        q: "What score do you need to pass NEBOSH GIC1?",
+        a: "45% provisional pass (45 marks out of 100). Distinction is 75+, Credit is 65–74.",
+      },
+      {
+        q: "Does GIC2 affect my NEBOSH grade?",
+        a: "No. Qualification grade (Distinction/Credit/Pass) is based on GIC1 only. GIC2 is assessed as Pass or Refer.",
+      },
+      {
+        q: "Is the NEBOSH IGC exam open book?",
+        a: "GIC1 is an open-book examination (OBE) — you may use course notes and reference materials during the 5-hour sitting. GIC2 is a practical workplace risk assessment, not a closed-book MCQ test.",
+      },
+      {
+        q: "What other NEBOSH qualifications exist?",
+        a: "NEBOSH offers National General Certificate (NGC), Certificates in Construction Health and Safety, Fire Safety, Environmental Management, and the National/International Diploma — each with separate unit assessments.",
+      },
+    ],
+    trademark_note:
+      "NEBOSH is a registered trademark of The National Examination Board in Occupational Safety and Health.",
+  },
+  cfps: {
+    examKey: "cfps",
+    pageHeading: "Certified Fire Protection Specialist (CFPS) — Exam Facts, Domains & Prep",
+    intro:
+      "The Certified Fire Protection Specialist (CFPS) credential from NFPA recognizes expertise in fire protection, life safety, and fire science. The computer-based exam is open book and references the NFPA Fire Protection Handbook. UniPrep2Go products are independent prep (not NFPA exam material).",
+    exam_facts: {
+      exam_name: "Certified Fire Protection Specialist (CFPS)",
+      administered_by: "National Fire Protection Association (NFPA) via Prometric test centers",
+      question_count: "100 multiple-choice",
+      scored_count: "100",
+      time_limit: "3 hours",
+      passing_score: "Not published by NFPA — results reported as Pass or Fail only (no percentage or scaled score)",
+      delivery: "Computer-based at Prometric test centers worldwide (English; verify other languages at nfpa.org/cfps)",
+      outline_effective_date: "Exam content aligned with NFPA Fire Protection Handbook, 21st Edition (exam updated June 2024)",
+      verify_at_url: "https://www.nfpa.org/cfps",
+    },
+    official_sources: [
+      {
+        label: "NFPA — Certified Fire Protection Specialist (CFPS)",
+        url: "https://www.nfpa.org/cfps",
+      },
+      {
+        label: "NFPA — CFPS certification handbook (PDF)",
+        url: "https://www.nfpa.org/-/media/project/storefront/catalog/files/certification/cfps/cfpshandbook.pdf",
+      },
+      {
+        label: "NFPA — Fire Protection Handbook, 21st Edition",
+        url: "https://www.nfpa.org/products/fire-protection-handbook-21st-edition",
+      },
+    ],
+    domain_weights: [
+      { domain: "Fire Suppression", weight: "22%" },
+      { domain: "Safety in the Built Environment", weight: "16%" },
+      { domain: "Detection and Alarm", weight: "14%" },
+      { domain: "Fire Prevention: Programs, Materials, Processes, and Environments", weight: "12%" },
+      { domain: "Information and Analysis for Fire Protection and Fire Science", weight: "9%" },
+      { domain: "Facility Fire Hazard Management", weight: "9%" },
+      { domain: "Organizing for Fire and Rescue Services", weight: "9%" },
+      { domain: "Confining Fires", weight: "9%" },
+    ],
+    whats_changed: [
+      "As of June 19, 2024, CFPS exam content reflects the NFPA Fire Protection Handbook, 21st Edition (2023), including new chapters on energy storage systems and cannabis facilities.",
+      "Only an original print copy of the Fire Protection Handbook, 21st Edition is permitted in the exam room — electronic, photocopied, or loose pages are not allowed.",
+      "Permanent adhesive tabs are allowed; sticky notes, flags, and paper clips are prohibited per NFPA handbook guidance.",
+      "CFPS certification renewal is required every 3 years with 50 continuing education points and an annual maintenance fee (verify at nfpa.org).",
+    ],
+    high_yield_facts: [
+      "Fire Suppression (22%) and Safety in the Built Environment (16%) together account for 38% of exam content — highest-weight domains.",
+      "The exam is open book, but only the original printed 21st Edition Fire Protection Handbook — know how to navigate it quickly.",
+      "NFPA does not publish the passing score; you receive Pass/Fail immediately with a domain diagnostic if you do not pass.",
+      "Three eligibility pathways combine education and fire protection experience (from bachelor's + 2 years to high school + 6 years — verify current requirements).",
+      "NFPA sells a practice examination with 100 retired questions — useful but not required for eligibility.",
+      "Prometric delivers the exam; schedule through NFPA after application approval.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the CFPS exam?",
+        a: "100 multiple-choice questions in 3 hours at a Prometric test center.",
+      },
+      {
+        q: "What score do you need to pass the CFPS exam?",
+        a: "NFPA does not publish a passing percentage or scaled score. Results are reported as Pass or Fail only.",
+      },
+      {
+        q: "Is the CFPS exam open book?",
+        a: "Yes — but only an original print copy of the NFPA Fire Protection Handbook, 21st Edition is permitted. Electronic copies and photocopies are not allowed.",
+      },
+      {
+        q: "What reference book is required for CFPS?",
+        a: "The NFPA Fire Protection Handbook, 21st Edition (2023). Exam content was updated in June 2024 to align with this edition.",
+      },
+      {
+        q: "What are the CFPS exam domains?",
+        a: "Eight domains: Fire Suppression (22%), Safety in the Built Environment (16%), Detection and Alarm (14%), Fire Prevention (12%), and four domains at 9% each (Information and Analysis, Facility Hazard Management, Organizing for Fire and Rescue, Confining Fires).",
+      },
+    ],
+    trademark_note:
+      "CFPS and NFPA are trademarks of the National Fire Protection Association.",
+  },
+  mrics: {
+    examKey: "mrics",
+    pageHeading: "MRICS — Assessment of Professional Competence (APC) Facts & Prep",
+    intro:
+      "MRICS (Member of the Royal Institution of Chartered Surveyors) is the chartered grade for land, property, construction, and infrastructure professionals. Qualification is through the RICS Assessment of Professional Competence (APC): written submissions and a final assessment interview — not a standalone multiple-choice exam. UniPrep2Go products are independent prep (not RICS assessment material).",
+    exam_facts: {
+      exam_name: "RICS Assessment of Professional Competence (APC) — MRICS chartered membership",
+      administered_by: "Royal Institution of Chartered Surveyors (RICS)",
+      question_count:
+        "No multiple-choice exam — written submission (summary of experience + 3,000-word case study) plus 60-minute final assessment interview",
+      time_limit:
+        "Final assessment interview: 60 minutes (10-min case study presentation, 10-min presentation Q&A, 30-min technical competency questioning, 10-min mandatory/ethics questioning)",
+      passing_score: "Competency-based pass/refer at final assessment — RICS does not publish a percentage score",
+      delivery: "Written submission via RICS Assessment Platform; final interview in person or by video (verify current format at rics.org)",
+      outline_effective_date: "APC Candidate Guide (June 2025, amended March 2026 — verify at rics.org)",
+      verify_at_url: "https://www.rics.org/join-rics/rics-member-grades/chartered-member-mrics/assessment-of-professional-competence-apc",
+    },
+    official_sources: [
+      {
+        label: "RICS — Assessment of Professional Competence (APC)",
+        url: "https://www.rics.org/join-rics/rics-member-grades/chartered-member-mrics/assessment-of-professional-competence-apc",
+      },
+      {
+        label: "RICS — APC submissions and assessment",
+        url: "https://www.rics.org/candidates/assessment-information/apc-submissions-assessment",
+      },
+      {
+        label: "RICS — APC Candidate Guide (PDF, March 2026 amendment)",
+        url: "https://www.rics.org/content/dam/ricsglobal/documents/join-rics/APC-Candidate-Guide_June-2025-amended-March-2026.pdf",
+      },
+    ],
+    domain_weights: [
+      { domain: "Mandatory competencies", weight: "Personal, interpersonal, and business skills common to all 22 sector pathways" },
+      { domain: "Core technical competencies", weight: "Primary technical skills of your chosen sector pathway (Level 1–3)" },
+      { domain: "Optional technical competencies", weight: "Additional pathway-specific skills selected from RICS competency list" },
+      { domain: "Summary of experience", weight: "Mandatory competencies ~1,500 words; technical competencies ~3,000–4,000 words" },
+      { domain: "Case study", weight: "3,000 words on a project within the last 24 months demonstrating Level 3 advice" },
+      { domain: "CPD and Professionalism Module", weight: "48 hours CPD (12 months) or 96 hours (24-month structured training); Rules of Conduct module required" },
+      { domain: "Final assessment interview", weight: "60 minutes — presentation, technical probing at Level 3, mandatory/ethics questioning" },
+    ],
+    whats_changed: [
+      "From 1 January 2026, candidates may make up to five attempts to pass the RICS assessment (attempts before this date do not count toward the limit).",
+      "Competencies are assessed at three levels: Level 1 (knowledge), Level 2 (application), Level 3 (reasoned advice) — interview questioning typically starts at Level 3.",
+      "Ethics and Rules of Conduct questioning can result in automatic referral if answered unsatisfactorily — regardless of technical performance.",
+      "22 sector pathways cover disciplines including building surveying, quantity surveying, commercial property, project management, valuation, and infrastructure (verify pathway guide at rics.org).",
+    ],
+    high_yield_facts: [
+      "MRICS is not earned through a multiple-choice test — you must pass written submission review and the final assessment interview.",
+      "Case study project must be no older than 24 months and demonstrate your personal Level 3 reasoned advice.",
+      "Interview structure: 10-min presentation → 10-min presentation questions → 30-min technical competency questions → 10-min mandatory/ethics questions.",
+      "Level 3 answers require reasoned advice backed by strong Level 1 knowledge — assessors probe from experience down to underlying theory.",
+      "Structured training routes: APC 12 (12 months) or APC 24 (24 months) with diary/logbook; experienced routes may skip structured training with 10+ years and accredited degree.",
+      "Proposer and seconder support is required as part of the submission process via the Assessment Platform.",
+    ],
+    candidate_qa: [
+      {
+        q: "Is there a multiple-choice exam for MRICS?",
+        a: "No. MRICS qualification is through the APC: written submissions (summary of experience and case study) plus a 60-minute final assessment interview.",
+      },
+      {
+        q: "What is the MRICS final assessment interview format?",
+        a: "60 minutes total: 10-minute case study presentation, 10 minutes on the presentation, 30 minutes on technical competencies, and 10 minutes on mandatory competencies and ethics.",
+      },
+      {
+        q: "How many APC attempts are allowed?",
+        a: "From 1 January 2026, up to five attempts to pass. Earlier attempts do not count toward this limit (verify at rics.org).",
+      },
+      {
+        q: "What CPD is required for APC submission?",
+        a: "48 hours of CPD in the last 12 months (or 96 hours in 24 months if on a 24-month structured training route), plus completion of the RICS Professionalism Module.",
+      },
+      {
+        q: "How many RICS sector pathways are there?",
+        a: "22 sector pathways — you choose one based on your qualifications, experience, and job role (e.g., building surveying, quantity surveying, commercial property). Each has a pathway guide listing mandatory, core, and optional competencies.",
+      },
+    ],
+    trademark_note:
+      "MRICS and RICS are registered trademarks of the Royal Institution of Chartered Surveyors.",
+  },
+  "mrics-quantity-surveying": {
+    examKey: "mrics-quantity-surveying",
+    pageHeading: "MRICS Quantity Surveying — APC Pathway Facts & Prep",
+    intro:
+      "The RICS Quantity Surveying and Construction sector pathway leads to MRICS chartered membership through the Assessment of Professional Competence (APC). Candidates demonstrate six core technical competencies to Level 3, two optional competencies to Level 2, and mandatory competencies including Ethics at Level 3 — via written submission and a final assessment interview. UniPrep2Go products are independent prep (not RICS assessment material).",
+    exam_facts: {
+      exam_name: "RICS APC — Quantity Surveying and Construction pathway (MRICS)",
+      administered_by: "Royal Institution of Chartered Surveyors (RICS)",
+      question_count:
+        "No multiple-choice exam — written submission (summary of experience + 3,000-word case study on a QS project) plus 60-minute final assessment interview",
+      time_limit:
+        "Final assessment interview: 60 minutes (10-min case study presentation + 50 minutes questioning on QS competencies and ethics)",
+      passing_score: "Competency-based pass/refer — RICS does not publish a percentage score",
+      delivery: "RICS Assessment Platform submission; final interview in person or by video (verify at rics.org)",
+      outline_effective_date: "Quantity Surveying and Construction pathway guide (December 2025 — verify at rics.org/join-rics/sector-pathways)",
+      verify_at_url: "https://www.rics.org/join-rics/sector-pathways",
+    },
+    official_sources: [
+      {
+        label: "RICS — Sector pathways (Quantity Surveying and Construction)",
+        url: "https://www.rics.org/join-rics/sector-pathways",
+      },
+      {
+        label: "RICS — Quantity Surveying and Construction pathway guide (PDF, December 2025)",
+        url: "https://www.rics.org/content/dam/ricsglobal/documents/join-rics/QS-and-construction_December-2025.pdf",
+      },
+      {
+        label: "RICS — Requirements and competencies guide (December 2025)",
+        url: "https://www.rics.org/content/dam/ricsglobal/documents/join-rics/Requirements-and-competencies_December-2025.pdf",
+      },
+    ],
+    domain_weights: [
+      { domain: "Commercial management (of construction works) OR Design economics and cost planning", weight: "Core to Level 3 — choose one based on contracting vs consulting role" },
+      { domain: "Construction technology and environmental services", weight: "Core to Level 3" },
+      { domain: "Contract practice", weight: "Core to Level 3 (JCT, NEC, FIDIC per practice context)" },
+      { domain: "Procurement and tendering", weight: "Core to Level 3" },
+      { domain: "Project finance (control and reporting)", weight: "Core to Level 3" },
+      { domain: "Quantification and costing (of construction works)", weight: "Core to Level 3 (measurement, BOQ, NRM/SMM conventions)" },
+      { domain: "Optional competencies (two to Level 2)", weight: "e.g. Risk management, Contract administration, Programming and planning, Sustainability — verify pathway guide list" },
+      { domain: "Mandatory competencies", weight: "Ethics to Level 3; Client care, Communication, H&S to Level 2; others to Level 1" },
+    ],
+    whats_changed: [
+      "December 2025 pathway guide aligns MRICS QS requirements with the global Requirements and competencies structure.",
+      "Contractors typically take Commercial management to Level 3; consultants typically take Design economics and cost planning to Level 3 — the other may be selected as an optional to Level 2.",
+      "From 1 January 2026, up to five assessment attempts are permitted (earlier attempts do not count toward the limit).",
+      "Case study must reflect a project within the last 24 months where you personally gave Level 3 reasoned advice.",
+    ],
+    high_yield_facts: [
+      "Six core QS competencies all require Level 3 — interview questioning starts at Level 3 and probes down to Level 1 knowledge.",
+      "Commercial management vs Design economics and cost planning is the key fork: contracting/commercial roles vs PQS/consulting cost planning.",
+      "Contract practice covers standard forms (JCT, NEC, etc.) — know how your chosen form allocates risk, payment, and variations.",
+      "Quantification and costing requires demonstrable measurement skills, pricing logic, and cost plan evolution from feasibility to final account.",
+      "Ethics at mandatory Level 3 — unsatisfactory ethics answers can cause automatic referral regardless of technical performance.",
+      "Two optional competencies to Level 2 — common choices include Risk management, Contract administration, and Programming and planning.",
+    ],
+    candidate_qa: [
+      {
+        q: "What are the MRICS Quantity Surveying core competencies?",
+        a: "Six to Level 3: Commercial management OR Design economics and cost planning; Construction technology and environmental services; Contract practice; Procurement and tendering; Project finance (control and reporting); Quantification and costing.",
+      },
+      {
+        q: "Should I choose Commercial management or Design economics and cost planning?",
+        a: "Contracting/commercial environments typically choose Commercial management to Level 3. Consulting (public or private sector PQS) typically choose Design economics and cost planning to Level 3. The other can often be taken as an optional to Level 2.",
+      },
+      {
+        q: "How many optional competencies do QS APC candidates need?",
+        a: "Two optional competencies to Level 2, selected from the pathway list (e.g., Risk management, Contract administration, Capital allowances, Programming and planning — verify current guide).",
+      },
+      {
+        q: "Is there a written exam for MRICS Quantity Surveying?",
+        a: "No multiple-choice exam. You submit a summary of experience and 3,000-word case study, then attend a 60-minute final assessment interview.",
+      },
+      {
+        q: "What mandatory competency level is required for Ethics?",
+        a: "Level 3 for Ethics, Rules of Conduct and professionalism — the only mandatory competency at Level 3 across all pathways.",
+      },
+    ],
+    trademark_note:
+      "MRICS and RICS are registered trademarks of the Royal Institution of Chartered Surveyors.",
+  },
 };
 
 /** Deck slug → shared exam profile key. Language decks are omitted intentionally. */
@@ -803,6 +1779,19 @@ const deckExamKeyMap: Record<string, string> = {
   "cfa-level-2-formula-reference-2026": "cfa-level-2",
   "cat4-level-d-anki-deck-printable-pdf": "cat4-level-d",
   "ib-biology-sl-anki-deck": "ib-biology-sl",
+  "gmat-focus-anki-deck": "gmat",
+  "hvac-epa-608-anki-deck": "epa-608",
+  "bms-building-automation-anki-deck": "bms-bas",
+  "leed-green-associate-anki-deck": "leed-green-associate",
+  "leed-ap-bd-c-anki-deck": "leed-ap-bd-c",
+  "well-ap-anki-deck": "well-ap",
+  "cem-anki-deck": "cem",
+  "ashrae-certifications-anki-deck": "ashrae-certifications",
+  "cdcp-anki-deck": "cdcp",
+  "nebosh-anki-deck": "nebosh",
+  "cfps-anki-deck": "cfps",
+  "mrics-anki-deck": "mrics",
+  "mrics-quantity-surveying-anki-deck": "mrics-quantity-surveying",
 };
 
 export function getExamFactsProfileForDeck(slug: string): ExamFactsProfile | null {

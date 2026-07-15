@@ -184,6 +184,256 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfile>> = {
     audience: "Property & Casualty insurance producer candidates preparing for state licensing exams.",
     practiceTestLabel: "Property & Casualty insurance practice test",
   },
+  "gmat-focus-readiness-check": {
+    title: "Free GMAT Focus Practice Test | 45-Question Readiness Check",
+    description:
+      "Free GMAT Focus practice questions online: 45 timed questions across Quant, Verbal, and Data Insights, 90 minutes, 70% readiness target, section diagnosis, and full answer review. Independent GMAT prep — not GMAC material.",
+    keywords: [
+      "gmat focus practice test",
+      "gmat mock exam",
+      "free gmat practice questions",
+      "gmat readiness check",
+      "gmat focus edition practice",
+    ],
+    headline: "Free GMAT Focus Readiness Check",
+    intro:
+      "A timed GMAT Focus readiness diagnostic modeled on the official three-section format: Quantitative Reasoning, Verbal Reasoning, and Data Insights with equal section weights and a 205–805 style score prep target.",
+    audience:
+      "MBA and business master's applicants who want a baseline timed diagnostic before official GMAC prep or tutoring.",
+    practiceTestLabel: "GMAT Focus practice test",
+  },
+  "epa-608-readiness-check": {
+    title: "Free EPA 608 Practice Test | 40-Question HVAC Readiness Check",
+    description:
+      "Free EPA Section 608 practice questions online: 40 timed questions across Core, Type I, Type II, and Type III, 75 minutes, 70% readiness target, section diagnosis, and full answer review. Independent HVAC prep — not U.S. EPA exam material.",
+    keywords: [
+      "epa 608 practice test",
+      "hvac certification practice test",
+      "epa 608 study guide",
+      "free epa 608 practice questions",
+      "hvac technician exam",
+      "epa 608 core type 1 2 3",
+    ],
+    headline: "Free EPA Section 608 HVAC Readiness Check",
+    intro:
+      "A timed EPA 608 readiness diagnostic modeled on the Universal certification format: Core plus Types I, II, and III with the official 18-of-25 (72%) pass threshold per section as your prep target.",
+    audience:
+      "HVAC technicians, apprentices, and trade-school students preparing for EPA Section 608 refrigerant certification before scheduling an approved proctored exam.",
+    practiceTestLabel: "EPA 608 practice test",
+  },
+  "bms-bas-readiness-check": {
+    title: "Free BMS Practice Test | 40-Question Building Automation Readiness Check",
+    description:
+      "Free BMS / BAS practice questions online: 40 timed questions across BACnet, HVAC sequences, alarms and trends, and commissioning, 75 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent building automation prep — not Tridium or BACnet International exam material.",
+    keywords: [
+      "bms practice test",
+      "building automation practice exam",
+      "bas technician test",
+      "bacnet practice questions",
+      "niagara 4 study guide",
+      "building management system exam",
+    ],
+    headline: "Free BMS / BAS Building Automation Readiness Check",
+    intro:
+      "A timed building automation readiness diagnostic covering BACnet networking, HVAC control sequences, operator platform workflows, and commissioning — the core domains BMS technicians face before vendor certifications like Tridium Niagara 4 TCP.",
+    audience:
+      "BMS engineers, controls technicians, facility automation staff, and integrator apprentices preparing for BAS roles or vendor certification training.",
+    practiceTestLabel: "BMS practice test",
+  },
+  "leed-green-associate-readiness-check": {
+    title: "Free LEED Green Associate Practice Test | 50-Question Readiness Check",
+    description:
+      "Free LEED Green Associate practice questions online: 50 timed questions across LEED knowledge domains, 100 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent green building prep — not USGBC exam material.",
+    keywords: [
+      "leed green associate practice test",
+      "leed ga exam questions",
+      "free leed practice test",
+      "leed green associate study guide",
+      "gbci leed exam prep",
+    ],
+    headline: "Free LEED Green Associate Readiness Check",
+    intro:
+      "A timed LEED GA readiness diagnostic modeled on the official 100-question GBCI exam structure with a 170 scaled-score pass target on the real test (125–200 scale).",
+    audience:
+      "Architects, engineers, sustainability consultants, and students entering green building who want a baseline before USGBC exam registration.",
+    practiceTestLabel: "LEED Green Associate practice test",
+  },
+  "leed-ap-bd-c-readiness-check": {
+    title: "Free LEED AP BD+C Practice Test | 50-Question Readiness Check",
+    description:
+      "Free LEED AP Building Design + Construction practice questions: 50 timed questions, 100 minutes, 70% readiness target, credit-category diagnosis, and full answer review. Independent LEED AP prep — not USGBC material.",
+    keywords: [
+      "leed ap bd+c practice test",
+      "leed ap exam questions",
+      "leed ap building design and construction",
+      "free leed ap practice test",
+      "gbci leed ap prep",
+    ],
+    headline: "Free LEED AP BD+C Readiness Check",
+    intro:
+      "A timed LEED AP BD+C readiness diagnostic for the design and construction specialty — prerequisites, credits, and LEED project roles. Requires LEED Green Associate for the official AP credential.",
+    audience:
+      "Design professionals, sustainability consultants, and LEED GA holders preparing for the LEED AP BD+C specialty exam.",
+    practiceTestLabel: "LEED AP BD+C practice test",
+  },
+  "well-ap-readiness-check": {
+    title: "Free WELL AP Practice Test | 50-Question WELL Accredited Professional Readiness Check",
+    description:
+      "Free WELL AP practice questions online: 50 timed questions across WELL v2 concepts and certification process, 100 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent prep — not IWBI exam material.",
+    keywords: [
+      "well ap practice test",
+      "well accredited professional exam",
+      "well v2 exam prep",
+      "iwbi well ap study guide",
+      "free well ap practice questions",
+      "well building standard exam",
+      "gbci well ap prep",
+    ],
+    headline: "Free WELL Accredited Professional (WELL AP) Readiness Check",
+    intro:
+      "A timed WELL AP readiness diagnostic across WELL v2 knowledge domains. Official exam: 115 questions, 2.5 hours, scaled pass score 170 (125–200 scale), delivered by GBCI for IWBI.",
+    audience:
+      "Architects, designers, building operators, HR/wellness professionals, and sustainability consultants preparing for the WELL Accredited Professional credential.",
+    practiceTestLabel: "WELL AP practice test",
+  },
+  "cem-readiness-check": {
+    title: "Free CEM Practice Test | 65-Question Certified Energy Manager Readiness Check",
+    description:
+      "Free Certified Energy Manager practice questions online: 65 timed questions across AEE Body of Knowledge domains, 120 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent CEM prep — not AEE exam material.",
+    keywords: [
+      "cem practice test",
+      "certified energy manager exam",
+      "aee cem study guide",
+      "free cem practice questions",
+      "energy manager certification test",
+    ],
+    headline: "Free Certified Energy Manager (CEM) Readiness Check",
+    intro:
+      "A timed CEM readiness diagnostic sized to AEE's half-length self-evaluation format. Official CEM exam: 130 questions, 4 hours, open book, scaled pass score 700 (0–1040).",
+    audience:
+      "Energy managers, facility engineers, sustainability professionals, and HVAC/electrical engineers preparing for AEE CEM certification.",
+    practiceTestLabel: "CEM practice test",
+  },
+  "ashrae-certifications-readiness-check": {
+    title: "Free ASHRAE Certification Practice Test | 50-Question Readiness Check",
+    description:
+      "Free ASHRAE certification practice questions online: 50 timed questions across BEMP, BEAP, BCxP, CHD/HBDP/HFDP, and OPMP domains, 100 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent prep — not ASHRAE exam material.",
+    keywords: [
+      "ashrae certification practice test",
+      "bemp exam prep",
+      "bcxp practice questions",
+      "beap study guide",
+      "chd ashrae exam",
+      "opmp certification",
+      "ashrae hbdp practice test",
+    ],
+    headline: "Free ASHRAE Certifications Readiness Check",
+    intro:
+      "A timed readiness diagnostic sampled across ASHRAE's ANSI-accredited personnel certifications — energy modeling, assessment, commissioning, HVAC design, healthcare facility design, and operations management.",
+    audience:
+      "HVAC engineers, energy modelers, commissioning providers, facility managers, and designers preparing for ASHRAE BCxP, BEMP, BEAP, CHD, HBDP, HFDP, or OPMP exams.",
+    practiceTestLabel: "ASHRAE certification practice test",
+  },
+  "cdcp-readiness-check": {
+    title: "Free CDCP Practice Test | 40-Question Certified Data Centre Professional Readiness Check",
+    description:
+      "Free CDCP practice questions online: 40 timed questions across data centre facilities and operations domains, 60 minutes, 68% readiness target (matches official pass mark), topic diagnosis, and full answer review. Independent prep — not EXIN or EPI exam material.",
+    keywords: [
+      "cdcp practice test",
+      "certified data centre professional exam",
+      "exin cdcp study guide",
+      "epi cdcp prep",
+      "free cdcp practice questions",
+      "data centre certification test",
+      "tia-942 exam prep",
+    ],
+    headline: "Free Certified Data Centre Professional (CDCP) Readiness Check",
+    intro:
+      "A timed CDCP readiness diagnostic matching the official EXIN EPI exam length — 40 closed-book multiple-choice questions in 60 minutes with a 68% pass target (27/40).",
+    audience:
+      "Data centre operators, facility engineers, IT infrastructure staff, and technicians preparing for the EXIN EPI Certified Data Centre Professional credential after accredited EPI training.",
+    practiceTestLabel: "CDCP practice test",
+  },
+  "nebosh-readiness-check": {
+    title: "Free NEBOSH Practice Test | 50-Question IGC Readiness Check",
+    description:
+      "Free NEBOSH practice questions online: 50 timed questions across IGC GIC1 syllabus elements and GIC2 risk assessment skills, 100 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent prep — not NEBOSH assessment material.",
+    keywords: [
+      "nebosh practice test",
+      "nebosh igc exam",
+      "nebosh gic1 prep",
+      "nebosh gic2 risk assessment",
+      "free nebosh practice questions",
+      "nebosh international general certificate",
+      "health and safety exam prep",
+    ],
+    headline: "Free NEBOSH International General Certificate (IGC) Readiness Check",
+    intro:
+      "A timed readiness diagnostic across NEBOSH IGC syllabus elements — health and safety management systems, workplace hazards, and risk assessment. Official assessments: GIC1 open-book examination (5 hours) and GIC2 practical risk assessment (4 hours).",
+    audience:
+      "Health and safety officers, supervisors, managers, and career changers preparing for the NEBOSH International General Certificate (IGC) through an accredited Learning Partner.",
+    practiceTestLabel: "NEBOSH practice test",
+  },
+  "cfps-readiness-check": {
+    title: "Free CFPS Practice Test | 50-Question Certified Fire Protection Specialist Readiness Check",
+    description:
+      "Free CFPS practice questions online: 50 timed questions across NFPA's eight fire protection domains, 90 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent prep — not NFPA exam material.",
+    keywords: [
+      "cfps practice test",
+      "certified fire protection specialist exam",
+      "nfpa cfps prep",
+      "fire protection handbook exam",
+      "free cfps practice questions",
+      "fire suppression certification",
+      "prometric cfps exam",
+    ],
+    headline: "Free Certified Fire Protection Specialist (CFPS) Readiness Check",
+    intro:
+      "A timed CFPS readiness diagnostic weighted to NFPA's exam blueprint. Official CFPS: 100 multiple-choice questions in 3 hours, open book with the NFPA Fire Protection Handbook (21st Edition).",
+    audience:
+      "Fire protection engineers, fire marshals, AHJ staff, consultants, and safety professionals preparing for NFPA's Certified Fire Protection Specialist credential.",
+    practiceTestLabel: "CFPS practice test",
+  },
+  "mrics-readiness-check": {
+    title: "Free MRICS Practice Questions | 50-Question APC Readiness Check",
+    description:
+      "Free MRICS/APC practice questions online: 50 timed questions across mandatory competencies, ethics, technical pathway knowledge, and final interview prep, 100 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent prep — not RICS assessment material.",
+    keywords: [
+      "mrics practice questions",
+      "rics apc exam prep",
+      "assessment of professional competence",
+      "chartered surveyor interview prep",
+      "free mrics apc questions",
+      "rics ethics rules of conduct",
+      "mrics case study prep",
+    ],
+    headline: "Free MRICS (Chartered Member) APC Readiness Check",
+    intro:
+      "A timed readiness diagnostic for RICS Assessment of Professional Competence knowledge — mandatory and technical competencies, ethics, and interview preparation. Official MRICS qualification: written submission plus 60-minute final assessment interview (not a multiple-choice exam).",
+    audience:
+      "Quantity surveyors, building surveyors, commercial property professionals, project managers, and valuers preparing for RICS APC and MRICS chartered membership.",
+    practiceTestLabel: "MRICS APC practice questions",
+  },
+  "mrics-quantity-surveying-readiness-check": {
+    title: "Free MRICS Quantity Surveying Practice Questions | 50-Question APC Readiness Check",
+    description:
+      "Free MRICS Quantity Surveying APC practice questions: 50 timed questions across QS core competencies (cost planning, measurement, contracts, procurement, project finance), 100 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent prep — not RICS material.",
+    keywords: [
+      "mrics quantity surveying practice questions",
+      "rics qs apc prep",
+      "quantity surveyor apc interview",
+      "commercial management competency",
+      "design economics cost planning",
+      "rics contract practice jct nec",
+      "free quantity surveying apc questions",
+    ],
+    headline: "Free MRICS Quantity Surveying APC Readiness Check",
+    intro:
+      "A timed readiness diagnostic for the RICS Quantity Surveying and Construction pathway — six core competencies to Level 3, mandatory ethics, and final interview preparation. Official route: written submission plus 60-minute assessment interview.",
+    audience:
+      "Assistant quantity surveyors, cost consultants, commercial managers, and QS graduates preparing for MRICS on the Quantity Surveying and Construction pathway.",
+    practiceTestLabel: "MRICS Quantity Surveying practice questions",
+  },
 };
 
 export function getMockSeoProfile(config: MockExamConfig) {

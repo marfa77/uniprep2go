@@ -1,5 +1,6 @@
 import { enrichDeckWithShopPreviews } from "./prep2go-shop-samples";
 import { prep2GoAppDecks } from "./prep2go-app-decks";
+import { applyAnkiDeckLaunchToCatalog } from "./anki-deck-launch";
 
 export type DeckStatus = "available" | "planned";
 
@@ -79,6 +80,8 @@ type BaseDeck = {
   audience: string;
   format: ".apkg" | ".csv" | "PDF" | "App";
   coverImage?: string;
+  /** .apkg checkout live but file not uploaded yet (building decks). */
+  apkgStatus?: "pending" | "ready";
   sampleUrl?: string;
   facts: DeckFacts;
   topicCoverage: TopicCoverage[];
@@ -1774,6 +1777,46 @@ const rawDecks: Deck[] = [
   },
 
   {
+    slug: "gmat-focus-anki-deck",
+    category: "academic",
+    status: "planned",
+    coverImage: "/covers/gmat-focus-anki-deck.webp",
+    title: "GMAT Focus Anki Deck",
+    shortName: "GMAT Focus",
+    subtitle: "A planned spaced-repetition deck for GMAT Quant, Verbal, and Data Insights.",
+    directAnswer:
+      "The GMAT Focus Anki Deck is a planned UniPrep2Go product for MBA applicants preparing for the GMAC GMAT. It is not yet available for purchase. Take the free GMAT Focus readiness check to benchmark weak sections first.",
+    lastUpdated: "2026-06-02",
+    audience: "MBA and business master's applicants using spaced repetition alongside official GMAC prep.",
+    format: ".apkg",
+    facts: {
+      cards: "Planned",
+      topics: "Quantitative Reasoning, Verbal Reasoning, Data Insights",
+      formulas: "Planned high-yield GMAT concepts and question-type drills",
+      examYear: "GMAT Focus Edition (205–805 scale)",
+      delivery: "Digital download (planned)",
+    },
+    topicCoverage: [
+      { name: "Quantitative Reasoning", examWeight: "33% of GMAT total score", cards: "Planned" },
+      { name: "Verbal Reasoning", examWeight: "33% of GMAT total score", cards: "Planned" },
+      { name: "Data Insights", examWeight: "33% of GMAT total score", cards: "Planned" },
+    ],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Is there a free GMAT practice test?",
+        answer:
+          "Yes. Take the free 45-question GMAT Focus readiness check at uniprep2go.study/mock-exams/gmat-focus-readiness-check — timed section scoring and full answer review.",
+      },
+      {
+        question: "When will the GMAT Anki deck be available?",
+        answer:
+          "The deck is planned but not yet on sale. Use the readiness check now and request access on the mock page to be notified when the deck launches.",
+      },
+    ],
+  },
+
+  {
     slug: "cat4-level-d-anki-deck-printable-pdf",
     category: "academic",
     status: "available",
@@ -1856,6 +1899,540 @@ const rawDecks: Deck[] = [
   },
 
   // ── Professional / Food Safety ─────────────────────────────────────────
+  {
+    slug: "mrics-anki-deck",
+    category: "professional",
+    status: "planned",
+    coverImage: "/covers/mrics-anki-deck.webp",
+    title: "MRICS APC Anki Deck",
+    shortName: "MRICS / APC",
+    subtitle: "A planned deck for RICS Assessment of Professional Competence and final interview prep.",
+    directAnswer:
+      "The MRICS APC Anki Deck is a planned UniPrep2Go product covering mandatory competencies, ethics, and pathway technical knowledge for RICS chartered membership. It is not yet available for purchase. Take the free MRICS readiness check to benchmark weak areas.",
+    lastUpdated: "2026-06-02",
+    audience:
+      "Quantity surveyors, building surveyors, commercial property professionals, and project managers preparing for RICS APC and MRICS membership.",
+    format: ".apkg",
+    facts: {
+      cards: "Planned",
+      topics: "Mandatory, core, and optional APC competencies; ethics; case study and interview prep",
+      formulas: "Planned valuation, measurement, and technical pathway reference facts",
+      examYear: "Current RICS APC cycle (Candidate Guide March 2026 amendment)",
+      delivery: "Digital download (planned)",
+    },
+    topicCoverage: [
+      { name: "Mandatory Competencies", examWeight: "All pathways", cards: "Planned" },
+      { name: "Ethics and Rules of Conduct", examWeight: "Final interview (auto-refer risk)", cards: "Planned" },
+      { name: "Core Technical Competencies", examWeight: "Pathway-specific Level 1–3", cards: "Planned" },
+      { name: "Level 2/3 Application and Advice", examWeight: "Submission + interview", cards: "Planned" },
+      { name: "Case Study and Interview Structure", examWeight: "APC final assessment", cards: "Planned" },
+    ],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Is there a free MRICS practice test?",
+        answer:
+          "Yes. Take the free 50-question APC readiness check at uniprep2go.study/mock-exams/mrics-readiness-check.",
+      },
+      {
+        question: "Does this replace the RICS APC submission or interview?",
+        answer:
+          "No. MRICS requires written submissions and a 60-minute final assessment interview administered by RICS. This deck and mock are supplementary knowledge prep only.",
+      },
+      {
+        question: "Is this official RICS material?",
+        answer: "No. Independent study aid — not affiliated with or endorsed by RICS.",
+      },
+    ],
+  },
+  {
+    slug: "mrics-quantity-surveying-anki-deck",
+    category: "professional",
+    status: "planned",
+    coverImage: "/covers/mrics-quantity-surveying-anki-deck.webp",
+    title: "MRICS Quantity Surveying Anki Deck",
+    shortName: "MRICS QS",
+    subtitle: "A planned deck for the RICS Quantity Surveying and Construction APC pathway.",
+    directAnswer:
+      "The MRICS Quantity Surveying Anki Deck is a planned UniPrep2Go product covering QS core competencies, mandatory ethics, and interview prep. It is not yet available for purchase. Take the free QS pathway readiness check to benchmark weak competencies.",
+    lastUpdated: "2026-06-02",
+    audience:
+      "Assistant quantity surveyors, cost consultants, commercial managers, and QS graduates on the Quantity Surveying and Construction APC pathway.",
+    format: ".apkg",
+    facts: {
+      cards: "Planned",
+      topics: "Six QS core competencies to Level 3, two optional to Level 2, mandatory ethics",
+      formulas: "Planned measurement, cost plan, cash flow, and contract valuation facts",
+      examYear: "RICS QS pathway guide (December 2025)",
+      delivery: "Digital download (planned)",
+    },
+    topicCoverage: [
+      { name: "Commercial Management / Cost Planning", examWeight: "Core Level 3", cards: "Planned" },
+      { name: "Quantification and Costing", examWeight: "Core Level 3", cards: "Planned" },
+      { name: "Contract Practice & Procurement", examWeight: "Core Level 3", cards: "Planned" },
+      { name: "Project Finance & Construction Technology", examWeight: "Core Level 3", cards: "Planned" },
+      { name: "Mandatory Ethics & Optional Competencies", examWeight: "Ethics L3; 2 optional L2", cards: "Planned" },
+    ],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Is there a free MRICS Quantity Surveying practice test?",
+        answer:
+          "Yes. Take the free 50-question QS pathway readiness check at uniprep2go.study/mock-exams/mrics-quantity-surveying-readiness-check.",
+      },
+      {
+        question: "How is this different from the general MRICS readiness check?",
+        answer:
+          "The general MRICS mock covers APC structure for all pathways. This QS-specific mock targets Quantity Surveying core competencies — measurement, contracts, commercial management, and cost planning.",
+      },
+      {
+        question: "Is this official RICS material?",
+        answer: "No. Independent study aid — not affiliated with or endorsed by RICS.",
+      },
+    ],
+  },
+  {
+    slug: "cfps-anki-deck",
+    category: "professional",
+    status: "planned",
+    coverImage: "/covers/cfps-anki-deck.webp",
+    title: "CFPS Anki Deck",
+    shortName: "CFPS",
+    subtitle: "A planned deck for NFPA Certified Fire Protection Specialist exam prep.",
+    directAnswer:
+      "The CFPS Anki Deck is a planned UniPrep2Go product covering NFPA's eight CFPS exam domains. It is not yet available for purchase. Take the free CFPS readiness check to benchmark weak domains.",
+    lastUpdated: "2026-06-02",
+    audience:
+      "Fire protection engineers, fire marshals, AHJ staff, consultants, and safety professionals preparing for NFPA's Certified Fire Protection Specialist credential.",
+    format: ".apkg",
+    facts: {
+      cards: "Planned",
+      topics: "All eight NFPA CFPS blueprint domains (Fire Protection Handbook, 21st Ed.)",
+      formulas: "Planned hydraulics, occupancy calculations, and code reference facts",
+      examYear: "NFPA CFPS blueprint (Handbook 21st Edition, exam updated June 2024)",
+      delivery: "Digital download (planned)",
+    },
+    topicCoverage: [
+      { name: "Fire Suppression", examWeight: "22%", cards: "Planned" },
+      { name: "Safety in the Built Environment", examWeight: "16%", cards: "Planned" },
+      { name: "Detection and Alarm", examWeight: "14%", cards: "Planned" },
+      { name: "Fire Prevention Programs & Environments", examWeight: "12%", cards: "Planned" },
+      { name: "Information & Analysis / Hazard Management / Rescue / Confining Fires", examWeight: "9% each", cards: "Planned" },
+    ],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Is there a free CFPS practice test?",
+        answer:
+          "Yes. Take the free 50-question readiness check at uniprep2go.study/mock-exams/cfps-readiness-check.",
+      },
+      {
+        question: "Does this replace NFPA's official CFPS practice examination?",
+        answer:
+          "No. NFPA sells a practice exam with 100 retired questions at nfpa.org. This deck and mock are independent supplementary prep.",
+      },
+      {
+        question: "Is this official NFPA material?",
+        answer: "No. Independent study aid — not affiliated with or endorsed by NFPA.",
+      },
+    ],
+  },
+  {
+    slug: "nebosh-anki-deck",
+    category: "professional",
+    status: "planned",
+    coverImage: "/covers/nebosh-anki-deck.webp",
+    title: "NEBOSH IGC Anki Deck",
+    shortName: "NEBOSH IGC",
+    subtitle: "A planned deck for NEBOSH International General Certificate (GIC1/GIC2) exam prep.",
+    directAnswer:
+      "The NEBOSH IGC Anki Deck is a planned UniPrep2Go product covering NEBOSH International General Certificate syllabus elements. It is not yet available for purchase. Take the free NEBOSH readiness check to benchmark weak domains.",
+    lastUpdated: "2026-06-02",
+    audience:
+      "Health and safety officers, supervisors, managers, and career changers preparing for the NEBOSH International General Certificate through an accredited Learning Partner.",
+    format: ".apkg",
+    facts: {
+      cards: "Planned",
+      topics: "GIC1 Elements 1–11 and GIC2 risk assessment skills per NEBOSH IGC syllabus",
+      formulas: "Planned hierarchy of control, risk rating, and incident investigation facts",
+      examYear: "NEBOSH IGC syllabus (January 2026 learner guide)",
+      delivery: "Digital download (planned)",
+    },
+    topicCoverage: [
+      { name: "H&S Management Systems and Culture", examWeight: "GIC1 Elements 1–4", cards: "Planned" },
+      { name: "Physical, Psychological, and Musculoskeletal Health", examWeight: "GIC1 Elements 5–6", cards: "Planned" },
+      { name: "Chemical, Biological, and Workplace Hazards", examWeight: "GIC1 Elements 7–8", cards: "Planned" },
+      { name: "Work Equipment, Fire, and Electricity", examWeight: "GIC1 Elements 9–11", cards: "Planned" },
+      { name: "Risk Assessment (GIC2)", examWeight: "GIC2 practical unit", cards: "Planned" },
+    ],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Is there a free NEBOSH practice test?",
+        answer:
+          "Yes. Take the free 50-question readiness check at uniprep2go.study/mock-exams/nebosh-readiness-check.",
+      },
+      {
+        question: "Does this replace NEBOSH official assessments?",
+        answer:
+          "No. Official GIC1 and GIC2 assessments are administered by NEBOSH through accredited Learning Partners. This deck and mock are supplementary independent prep.",
+      },
+      {
+        question: "Is this official NEBOSH material?",
+        answer: "No. Independent study aid — not affiliated with or endorsed by NEBOSH.",
+      },
+    ],
+  },
+  {
+    slug: "cdcp-anki-deck",
+    category: "professional",
+    status: "planned",
+    coverImage: "/covers/cdcp-anki-deck.webp",
+    title: "CDCP Anki Deck",
+    shortName: "CDCP",
+    subtitle: "A planned deck for EXIN EPI Certified Data Centre Professional exam prep.",
+    directAnswer:
+      "The CDCP Anki Deck is a planned UniPrep2Go product covering EXIN EPI Certified Data Centre Professional exam domains. It is not yet available for purchase. Take the free CDCP readiness check to benchmark weak domains.",
+    lastUpdated: "2026-06-02",
+    audience:
+      "Data centre operators, facility engineers, and IT infrastructure professionals preparing for the EXIN EPI CDCP credential after accredited EPI training.",
+    format: ".apkg",
+    facts: {
+      cards: "Planned",
+      topics: "Facilities (power, cooling, fire, security) and Operations per EXIN EPI CDCP blueprint",
+      formulas: "Planned PUE, cooling capacity, UPS sizing, and tier-classification facts",
+      examYear: "Current EXIN EPI CDCP cycle",
+      delivery: "Digital download (planned)",
+    },
+    topicCoverage: [
+      { name: "Site, Standards, and Building", examWeight: "~7.5%", cards: "Planned" },
+      { name: "Power Infrastructure and EMF", examWeight: "~20%", cards: "Planned" },
+      { name: "Cooling, Water, and Thermal", examWeight: "~12.5%", cards: "Planned" },
+      { name: "Fire Protection, Security, and Network", examWeight: "~35%", cards: "Planned" },
+      { name: "Data Centre Operations", examWeight: "15%", cards: "Planned" },
+    ],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Is there a free CDCP practice test?",
+        answer:
+          "Yes. Take the free 40-question readiness check at uniprep2go.study/mock-exams/cdcp-readiness-check.",
+      },
+      {
+        question: "Does this replace EXIN or EPI official training?",
+        answer:
+          "No. Accredited EPI CDCP training is mandatory before the official exam. This deck and mock are supplementary independent prep.",
+      },
+      {
+        question: "Is this official EXIN or EPI material?",
+        answer: "No. Independent study aid — not affiliated with or endorsed by EXIN or EPI.",
+      },
+    ],
+  },
+  {
+    slug: "ashrae-certifications-anki-deck",
+    category: "professional",
+    status: "planned",
+    coverImage: "/covers/ashrae-certifications-anki-deck.webp",
+    title: "ASHRAE Certifications Anki Deck",
+    shortName: "ASHRAE Certs",
+    subtitle: "A planned deck for BCxP, BEMP, BEAP, CHD, HBDP, HFDP, and OPMP exam prep.",
+    directAnswer:
+      "The ASHRAE Certifications Anki Deck is a planned UniPrep2Go product covering ASHRAE's ANSI-accredited credential exams. It is not yet available for purchase. Take the free ASHRAE certifications readiness check to benchmark weak domains.",
+    lastUpdated: "2026-06-02",
+    audience:
+      "HVAC engineers, energy modelers, commissioning agents, and facility professionals pursuing ASHRAE BCxP, BEMP, BEAP, CHD, HBDP, HFDP, or OPMP credentials.",
+    format: ".apkg",
+    facts: {
+      cards: "Planned",
+      topics: "BEMP, BEAP, BCxP, CHD, HBDP, HFDP, OPMP exam blueprints",
+      formulas: "Planned energy modeling, commissioning, HVAC design, and operations facts",
+      examYear: "Current ASHRAE certification cycle",
+      delivery: "Digital download (planned)",
+    },
+    topicCoverage: [
+      { name: "Building Energy Modeling (BEMP)", examWeight: "ASHRAE credential", cards: "Planned" },
+      { name: "Building Energy Assessment (BEAP)", examWeight: "ASHRAE credential", cards: "Planned" },
+      { name: "Building Commissioning (BCxP)", examWeight: "ASHRAE credential", cards: "Planned" },
+      { name: "HVAC / High-Performance Design (CHD, HBDP, HFDP)", examWeight: "ASHRAE credentials", cards: "Planned" },
+      { name: "Operations & Performance (OPMP)", examWeight: "ASHRAE credential", cards: "Planned" },
+    ],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Is there a free ASHRAE certification practice test?",
+        answer:
+          "Yes. Take the free 50-question readiness check at uniprep2go.study/mock-exams/ashrae-certifications-readiness-check.",
+      },
+      {
+        question: "Does this replace ASHRAE official practice exams?",
+        answer:
+          "No. ASHRAE sells official 30-question practice exams per credential at ashrae.org. This deck and mock are independent prep.",
+      },
+      {
+        question: "Is this official ASHRAE material?",
+        answer: "No. Independent study aid — not affiliated with or endorsed by ASHRAE.",
+      },
+    ],
+  },
+  {
+    slug: "leed-green-associate-anki-deck",
+    category: "professional",
+    status: "planned",
+    coverImage: "/covers/leed-green-associate-anki-deck.webp",
+    title: "LEED Green Associate Anki Deck",
+    shortName: "LEED GA",
+    subtitle: "A planned spaced-repetition deck for LEED Green Associate exam domains.",
+    directAnswer:
+      "The LEED Green Associate Anki Deck is a planned UniPrep2Go product for sustainability and design professionals preparing for the GBCI LEED GA exam. It is not yet available for purchase. Take the free LEED GA readiness check first.",
+    lastUpdated: "2026-06-02",
+    audience: "Architects, engineers, sustainability consultants, and students entering green building and LEED project roles.",
+    format: ".apkg",
+    facts: {
+      cards: "Planned",
+      topics: "LEED process, location, sites, water, energy, materials, IEQ",
+      formulas: "Planned credit thresholds, terminology, and high-yield GA facts",
+      examYear: "Current GBCI LEED Green Associate cycle",
+      delivery: "Digital download (planned)",
+    },
+    topicCoverage: [
+      { name: "Integrative Process and Project Context", examWeight: "LEED GA domain", cards: "Planned" },
+      { name: "Location and Transportation", examWeight: "LEED GA domain", cards: "Planned" },
+      { name: "Sustainable Sites and Water", examWeight: "LEED GA domain", cards: "Planned" },
+      { name: "Energy and Atmosphere", examWeight: "LEED GA domain", cards: "Planned" },
+      { name: "Materials and IEQ", examWeight: "LEED GA domain", cards: "Planned" },
+    ],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Is there a free LEED Green Associate practice test?",
+        answer:
+          "Yes. Take the free 50-question LEED GA readiness check at uniprep2go.study/mock-exams/leed-green-associate-readiness-check.",
+      },
+      {
+        question: "Is this official USGBC material?",
+        answer: "No. Independent study aid — not affiliated with or endorsed by USGBC or GBCI.",
+      },
+    ],
+  },
+  {
+    slug: "leed-ap-bd-c-anki-deck",
+    category: "professional",
+    status: "planned",
+    coverImage: "/covers/leed-ap-bd-c-anki-deck.webp",
+    title: "LEED AP BD+C Anki Deck",
+    shortName: "LEED AP BD+C",
+    subtitle: "A planned deck for the LEED AP Building Design + Construction specialty.",
+    directAnswer:
+      "The LEED AP BD+C Anki Deck is a planned UniPrep2Go product for professionals pursuing the GBCI LEED AP BD+C credential (requires LEED GA). Take the free readiness check to benchmark weak credit categories.",
+    lastUpdated: "2026-06-02",
+    audience: "Design professionals and LEED GA holders preparing for the BD+C specialty exam.",
+    format: ".apkg",
+    facts: {
+      cards: "Planned",
+      topics: "BD+C prerequisites and credits across SS, WE, EA, MR, IEQ, LT, IP",
+      formulas: "Planned credit thresholds, compliance paths, and AP-level scenario facts",
+      examYear: "Current GBCI LEED AP BD+C cycle",
+      delivery: "Digital download (planned)",
+    },
+    topicCoverage: [
+      { name: "Integrative Process and Location", examWeight: "BD+C categories", cards: "Planned" },
+      { name: "Sustainable Sites and Water", examWeight: "BD+C categories", cards: "Planned" },
+      { name: "Energy and Atmosphere", examWeight: "BD+C categories", cards: "Planned" },
+      { name: "Materials and Resources", examWeight: "BD+C categories", cards: "Planned" },
+      { name: "Indoor Environmental Quality", examWeight: "BD+C categories", cards: "Planned" },
+    ],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Is there a free LEED AP BD+C practice test?",
+        answer:
+          "Yes. Take the free 50-question readiness check at uniprep2go.study/mock-exams/leed-ap-bd-c-readiness-check.",
+      },
+      {
+        question: "Do I need LEED Green Associate first?",
+        answer: "Yes — GBCI requires an active LEED GA before earning LEED AP BD+C (unless passing both in one combined exam sitting).",
+      },
+    ],
+  },
+  {
+    slug: "well-ap-anki-deck",
+    category: "professional",
+    status: "planned",
+    coverImage: "/covers/well-ap-anki-deck.webp",
+    title: "WELL AP Anki Deck",
+    shortName: "WELL AP",
+    subtitle: "A planned deck for the WELL Accredited Professional (WELL v2) exam.",
+    directAnswer:
+      "The WELL AP Anki Deck is a planned UniPrep2Go product covering IWBI WELL v2 knowledge domains and certification process. It is not yet available for purchase. Take the free WELL AP readiness check to benchmark weak concepts.",
+    lastUpdated: "2026-06-02",
+    audience:
+      "Architects, designers, building operators, and wellness professionals preparing for the WELL Accredited Professional credential.",
+    format: ".apkg",
+    facts: {
+      cards: "Planned",
+      topics: "WELL v2 concepts (Air through Community) and certification/portfolio process",
+      formulas: "Planned threshold, feature, and verification reference facts",
+      examYear: "Current IWBI WELL AP exam cycle (WELL v2)",
+      delivery: "Digital download (planned)",
+    },
+    topicCoverage: [
+      { name: "Air, Water, and Nourishment", examWeight: "30 scored questions", cards: "Planned" },
+      { name: "Light, Movement, and Thermal Comfort", examWeight: "23 scored questions", cards: "Planned" },
+      { name: "Sound and Materials", examWeight: "17 scored questions", cards: "Planned" },
+      { name: "Mind and Community", examWeight: "18 scored questions", cards: "Planned" },
+      { name: "WELL Certification and Portfolio", examWeight: "12 scored questions", cards: "Planned" },
+    ],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Is there a free WELL AP practice test?",
+        answer:
+          "Yes. Take the free 50-question readiness check at uniprep2go.study/mock-exams/well-ap-readiness-check.",
+      },
+      {
+        question: "Is WELL AP the same as LEED AP?",
+        answer:
+          "No. WELL AP (IWBI) tests human health and well-being via the WELL Building Standard. LEED AP (USGBC) tests green building and sustainability — separate credentials and exams.",
+      },
+      {
+        question: "Is this official IWBI material?",
+        answer: "No. Independent study aid — not affiliated with or endorsed by IWBI or GBCI.",
+      },
+    ],
+  },
+  {
+    slug: "cem-anki-deck",
+    category: "professional",
+    status: "planned",
+    coverImage: "/covers/cem-anki-deck.webp",
+    title: "Certified Energy Manager (CEM) Anki Deck",
+    shortName: "CEM",
+    subtitle: "A planned spaced-repetition deck for the AEE CEM Body of Knowledge.",
+    directAnswer:
+      "The CEM Anki Deck is a planned UniPrep2Go product for energy managers and facility engineers preparing for AEE Certified Energy Manager certification. Take the free 65-question readiness check first.",
+    lastUpdated: "2026-06-02",
+    audience: "Energy managers, facility engineers, and sustainability professionals pursuing AEE CEM certification.",
+    format: ".apkg",
+    facts: {
+      cards: "Planned",
+      topics: "14 AEE CEM Body of Knowledge subject areas",
+      formulas: "Planned audit calculations, HVAC/electrical formulas, economics, and M&V facts",
+      examYear: "Current AEE CEM certification cycle",
+      delivery: "Digital download (planned)",
+    },
+    topicCoverage: [
+      { name: "Policy, Audits, and Economics", examWeight: "CEM BoK", cards: "Planned" },
+      { name: "Electrical and Lighting", examWeight: "CEM BoK", cards: "Planned" },
+      { name: "HVAC and Building Envelope", examWeight: "CEM BoK (10–16%)", cards: "Planned" },
+      { name: "Industrial and Renewables", examWeight: "CEM BoK", cards: "Planned" },
+      { name: "Commissioning and ESPC", examWeight: "CEM BoK", cards: "Planned" },
+    ],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Is there a free CEM practice test?",
+        answer:
+          "Yes. Take the free 65-question CEM readiness check at uniprep2go.study/mock-exams/cem-readiness-check.",
+      },
+      {
+        question: "Is this official AEE material?",
+        answer: "No. Independent study aid — not affiliated with or endorsed by the Association of Energy Engineers.",
+      },
+    ],
+  },
+  {
+    slug: "bms-building-automation-anki-deck",
+    category: "professional",
+    status: "planned",
+    coverImage: "/covers/bms-building-automation-anki-deck.webp",
+    title: "BMS Building Automation Anki Deck",
+    shortName: "BMS / BAS",
+    subtitle: "A planned spaced-repetition deck for BACnet, HVAC sequences, and BMS platform operations.",
+    directAnswer:
+      "The BMS Building Automation Anki Deck is a planned UniPrep2Go product for controls technicians and BMS engineers. It is not yet available for purchase. Take the free BMS readiness check to benchmark weak domains before vendor training.",
+    lastUpdated: "2026-06-02",
+    audience:
+      "BMS engineers, BACnet integrators, controls technicians, and facility automation staff preparing for BAS roles or Niagara 4 TCP-style training.",
+    format: ".apkg",
+    facts: {
+      cards: "Planned",
+      topics: "BACnet networking, HVAC control sequences, alarms/trends/schedules, integration and commissioning",
+      formulas: "Planned protocol rules, sequence logic, alarm priorities, and commissioning checkpoints",
+      examYear: "Current BAS / BMS industry practice",
+      delivery: "Digital download (planned)",
+    },
+    topicCoverage: [
+      { name: "BACnet Protocol and Networking", examWeight: "Core BMS domain", cards: "Planned" },
+      { name: "HVAC Control Sequences", examWeight: "Core BMS domain", cards: "Planned" },
+      { name: "Platform Operations", examWeight: "Alarms, trends, schedules", cards: "Planned" },
+      { name: "Integration and Commissioning", examWeight: "Field checkout domain", cards: "Planned" },
+    ],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Is there a free BMS practice test?",
+        answer:
+          "Yes. Take the free 40-question BMS readiness check at uniprep2go.study/mock-exams/bms-bas-readiness-check — timed topic scoring and full answer review.",
+      },
+      {
+        question: "Does this replace Tridium Niagara 4 TCP?",
+        answer:
+          "No. Niagara 4 TCP is an official Tridium training and practical assessment path. This deck and mock are independent prep for BACnet and BAS fundamentals.",
+      },
+      {
+        question: "Is this official BACnet or Tridium material?",
+        answer:
+          "No. This is an independent study aid and is not affiliated with BACnet International, Tridium, or ASHRAE.",
+      },
+    ],
+  },
+  {
+    slug: "hvac-epa-608-anki-deck",
+    category: "professional",
+    status: "planned",
+    coverImage: "/covers/hvac-epa-608-anki-deck.webp",
+    title: "HVAC EPA 608 Anki Deck",
+    shortName: "EPA 608 HVAC",
+    subtitle: "A planned spaced-repetition deck for EPA Section 608 Core and Types I–III.",
+    directAnswer:
+      "The HVAC EPA 608 Anki Deck is a planned UniPrep2Go product for technicians preparing for U.S. EPA Section 608 refrigerant certification. It is not yet available for purchase. Take the free EPA 608 readiness check to benchmark weak sections first.",
+    lastUpdated: "2026-06-02",
+    audience:
+      "HVAC technicians, apprentices, and trade-school students who want active recall for Core, Type I, Type II, and Type III exam topics.",
+    format: ".apkg",
+    facts: {
+      cards: "Planned",
+      topics: "EPA 608 Core, Type I (small appliances), Type II (high-pressure), Type III (low-pressure)",
+      formulas: "Planned recovery levels, leak rates, regulatory thresholds, and safety rules",
+      examYear: "Current Section 608 technician certification cycle",
+      delivery: "Digital download (planned)",
+    },
+    topicCoverage: [
+      { name: "Core", examWeight: "25 official exam questions", cards: "Planned" },
+      { name: "Type I — Small Appliances", examWeight: "25 official exam questions", cards: "Planned" },
+      { name: "Type II — High-Pressure", examWeight: "25 official exam questions", cards: "Planned" },
+      { name: "Type III — Low-Pressure", examWeight: "25 official exam questions", cards: "Planned" },
+    ],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Is there a free EPA 608 practice test?",
+        answer:
+          "Yes. Take the free 40-question EPA 608 readiness check at uniprep2go.study/mock-exams/epa-608-readiness-check — timed section scoring and full answer review.",
+      },
+      {
+        question: "When will the HVAC EPA 608 Anki deck be available?",
+        answer:
+          "The deck is planned but not yet on sale. Use the readiness check now and request access on the mock page to be notified when the deck launches.",
+      },
+      {
+        question: "Is this official EPA exam material?",
+        answer:
+          "No. This is an independent study aid and is not affiliated with or endorsed by the U.S. Environmental Protection Agency.",
+      },
+    ],
+  },
   {
     slug: "servsafe-manager-anki-deck",
     category: "professional",
@@ -2379,7 +2956,9 @@ const rawDecks: Deck[] = [
   },
 ];
 
-export const decks: Deck[] = rawDecks.map(enrichDeckWithShopPreviews);
+export const decks: Deck[] = applyAnkiDeckLaunchToCatalog(
+  rawDecks.map(enrichDeckWithShopPreviews),
+);
 
 export const catalogAvailableDecks = decks.filter(
   (deck): deck is CatalogAvailableDeck => deck.status === "available",

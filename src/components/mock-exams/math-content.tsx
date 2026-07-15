@@ -35,7 +35,10 @@ export function MathContent({ text, className }: MathContentProps) {
       <Script id="mathjax-config" strategy="afterInteractive">
         {`
           window.MathJax = {
-            tex: { inlineMath: [['$', '$'], ['\\\\(', '\\\\)']], displayMath: [['$$', '$$'], ['\\\\[', '\\\\]']] },
+            tex: {
+              inlineMath: [['\\\\(', '\\\\)']],
+              displayMath: [['\\\\[', '\\\\]']]
+            },
             svg: { fontCache: 'global' }
           };
         `}

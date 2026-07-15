@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "description": "Single registry for building-certification pipeline. mockSlug + deckSlug drive codegen, validation, and Gumroad.",
+  "defaultPriceCents": 1100,
+  "certifications": [
+    {
+      "id": "epa-608",
+      "mockSlug": "epa-608-readiness-check",
+      "deckSlug": "hvac-epa-608-anki-deck",
+      "gumroadPermalink": "hvac-epa-608-anki-deck",
+      "examFactsKey": "epa-608",
+      "category": "professional",
+      "coverPanelKind": "hvac"
+    },
+    {
+      "id": "bms-bas",
+      "mockSlug": "bms-bas-readiness-check",
+      "deckSlug": "bms-building-automation-anki-deck",
+      "gumroadPermalink": "bms-building-automation-anki-deck",
+      "examFactsKey": null,
+      "category": "professional",
+      "coverPanelKind": "hvac"
+    },
+    {
+      "id": "leed-ga",
+      "mockSlug": "leed-green-associate-readiness-check",
+      "deckSlug": "leed-green-associate-anki-deck",
+      "gumroadPermalink": "leed-green-associate-anki-deck",
+      "examFactsKey": null,
+      "category": "professional",
+      "coverPanelKind": "building"
+    },
+    {
+      "id": "leed-ap-bdc",
+      "mockSlug": "leed-ap-bd-c-readiness-check",
+      "deckSlug": "leed-ap-bd-c-anki-deck",
+      "gumroadPermalink": "leed-ap-bd-c-anki-deck",
+      "examFactsKey": null,
+      "category": "professional",
+      "coverPanelKind": "building"
+    },
+    {
+      "id": "well-ap",
+      "mockSlug": "well-ap-readiness-check",
+      "deckSlug": "well-ap-anki-deck",
+      "gumroadPermalink": "well-ap-anki-deck",
+      "examFactsKey": null,
+      "category": "professional",
+      "coverPanelKind": "building"
+    },
+    {
+      "id": "cem",
+      "mockSlug": "cem-readiness-check",
+      "deckSlug": "cem-anki-deck",
+      "gumroadPermalink": "cem-anki-deck",
+      "examFactsKey": null,
+      "category": "professional",
+      "coverPanelKind": "building"
+    },
+    {
+      "id": "ashrae",
+      "mockSlug": "ashrae-certifications-readiness-check",
+      "deckSlug": "ashrae-certifications-anki-deck",
+      "gumroadPermalink": "ashrae-certifications-anki-deck",
+      "examFactsKey": null,
+      "category": "professional",
+      "coverPanelKind": "hvac"
+    },
+    {
+      "id": "cdcp",
+      "mockSlug": "cdcp-readiness-check",
+      "deckSlug": "cdcp-anki-deck",
+      "gumroadPermalink": "cdcp-anki-deck",
+      "examFactsKey": null,
+      "category": "professional",
+      "coverPanelKind": "datacenter"
+    },
+    {
+      "id": "nebosh",
+      "mockSlug": "nebosh-readiness-check",
+      "deckSlug": "nebosh-anki-deck",
+      "gumroadPermalink": "nebosh-anki-deck",
+      "examFactsKey": null,
+      "category": "professional",
+      "coverPanelKind": "safety"
+    },
+    {
+      "id": "cfps",
+      "mockSlug": "cfps-readiness-check",
+      "deckSlug": "cfps-anki-deck",
+      "gumroadPermalink": "cfps-anki-deck",
+      "examFactsKey": null,
+      "category": "professional",
+      "coverPanelKind": "safety"
+    },
+    {
+      "id": "mrics",
+      "mockSlug": "mrics-readiness-check",
+      "deckSlug": "mrics-anki-deck",
+      "gumroadPermalink": "mrics-anki-deck",
+      "examFactsKey": null,
+      "category": "professional",
+      "coverPanelKind": "survey"
+    },
+    {
+      "id": "mrics-qs",
+      "mockSlug": "mrics-quantity-surveying-readiness-check",
+      "deckSlug": "mrics-quantity-surveying-anki-deck",
+      "gumroadPermalink": "mrics-quantity-surveying-anki-deck",
+      "examFactsKey": null,
+      "category": "professional",
+      "coverPanelKind": "survey"
+    },
+    {
+      "id": "gmat-focus",
+      "mockSlug": "gmat-focus-readiness-check",
+      "deckSlug": "gmat-focus-anki-deck",
+      "gumroadPermalink": "gmat-focus-anki-deck",
+      "examFactsKey": null,
+      "category": "academic",
+      "coverPanelKind": "finance",
+      "skipMockBankGeneration": true
+    }
+  ]
+}

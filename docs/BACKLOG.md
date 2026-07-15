@@ -103,8 +103,54 @@
   - Цена: $12–16 за section
   - Отложить до FRM + L2
 
+### HVAC / EPA 608
+
+- [x] EPA Section 608 readiness mock + exam-facts doc layer (2026-06-02)
+- [ ] HVAC EPA 608 Anki deck (planned)
+
+### BMS / Building Automation
+
+- [x] BMS / BAS readiness mock + exam-facts doc layer (2026-06-02)
+- [ ] BMS Building Automation Anki deck (planned)
+
+### LEED, WELL AP & CEM (green building / wellness / energy)
+
+- [x] LEED Green Associate readiness mock + exam-facts (2026-06-02)
+- [x] LEED AP BD+C readiness mock + exam-facts (2026-06-02)
+- [x] WELL AP readiness mock + exam-facts (2026-06-02)
+- [x] CEM readiness mock + exam-facts (2026-06-02)
+- [ ] LEED GA, LEED AP BD+C, WELL AP, and CEM Anki decks (planned)
+
+### ASHRAE certifications
+
+- [x] ASHRAE certifications readiness mock + exam-facts (BCxP, BEMP, BEAP, CHD, HBDP, HFDP, OPMP) (2026-06-02)
+- [ ] ASHRAE certifications Anki deck (planned)
+
+### CDCP (data centre)
+
+- [x] CDCP readiness mock + exam-facts (EXIN EPI) (2026-06-02)
+- [ ] CDCP Anki deck (planned)
+
+### NEBOSH (occupational health & safety)
+
+- [x] NEBOSH IGC readiness mock + exam-facts (GIC1/GIC2) (2026-06-02)
+- [ ] NEBOSH IGC Anki deck (planned)
+
+### CFPS (fire protection)
+
+- [x] CFPS readiness mock + exam-facts (NFPA eight domains) (2026-06-02)
+- [ ] CFPS Anki deck (planned)
+
+### MRICS (chartered surveying)
+
+- [x] MRICS/APC readiness mock + exam-facts (2026-06-02)
+- [x] MRICS Quantity Surveying pathway readiness mock + exam-facts (2026-06-02)
+- [ ] MRICS APC Anki deck (planned)
+- [ ] MRICS Quantity Surveying Anki deck (planned)
+
 ### GMAT — не приоритет
 
+- [x] GMAT Focus readiness mock + exam-facts doc layer (2026-06-02)
 - [ ] GMAT Anki deck (оценка низкая)
   - 200k кандидатов, но аудитория MBA-applicants, не finance professionals
   - Anki-культура слабее; официальные GMAC digital cards уже есть

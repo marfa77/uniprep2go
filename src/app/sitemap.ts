@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { availableDecks } from "../lib/decks";
 import { getAllMockExams } from "../lib/mock-exams/configs";
+import { shouldIndexMockExam } from "../lib/seo";
 import { siteConfig } from "../lib/site";
 
 const siteUrl = siteConfig.url;
@@ -15,7 +16,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.92,
   }));
 
-  const mockPages = getAllMockExams().map((mock) => ({
+  const mockPages = getAllMockExams()
+    .filter((mock) => shouldIndexMockExam(mock.slug))
+    .map((mock) => ({
     url: `${siteUrl}/mock-exams/${mock.slug}`,
     lastModified,
     changeFrequency: "weekly" as const,

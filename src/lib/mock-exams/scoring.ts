@@ -42,6 +42,54 @@ export function shuffleQuestions(questions: MockQuestion[], attemptSeed: string)
   return copy;
 }
 
+function sampleWithoutReplacement<T>(items: T[], count: number, random: () => number) {
+  if (count >= items.length) {
+    return [...items];
+  }
+
+  const pool = [...items];
+  const selected: T[] = [];
+
+  for (let index = 0; index < count; index += 1) {
+    const pickIndex = Math.floor(random() * pool.length);
+    selected.push(pool[pickIndex]!);
+    pool.splice(pickIndex, 1);
+  }
+
+  return selected;
+}
+
+/** Pick the session question set from a larger bank using topic quotas from config. */
+export function selectSessionQuestions(
+  questions: MockQuestion[],
+  config: MockExamConfig,
+  attemptSeed: string,
+) {
+  const topicsWithCounts = config.topics.filter(
+    (topic): topic is typeof topic & { questionCount: number } =>
+      typeof topic.questionCount === "number",
+  );
+
+  if (topicsWithCounts.length === 0) {
+    if (questions.length <= config.questionCount) {
+      return questions;
+    }
+
+    const random = mulberry32(hashSeed(`${attemptSeed}:session`));
+    return sampleWithoutReplacement(questions, config.questionCount, random);
+  }
+
+  const random = mulberry32(hashSeed(`${attemptSeed}:session`));
+  const selected: MockQuestion[] = [];
+
+  for (const topic of topicsWithCounts) {
+    const topicPool = questions.filter((question) => question.topicId === topic.id);
+    selected.push(...sampleWithoutReplacement(topicPool, topic.questionCount, random));
+  }
+
+  return selected;
+}
+
 function getTopicWeightPercent(config: MockExamConfig, topicId: string) {
   const topic = config.topics.find((item) => item.id === topicId);
 

@@ -134,6 +134,22 @@ describe("checkout pricing", () => {
     expect(getCheckoutActionLabel(priced.checkoutProvider)).toBe("App Store");
   });
 
+  it("uses catalog default price for building decks without live Gumroad products", async () => {
+    const fetchMock = vi.fn();
+    vi.stubGlobal("fetch", fetchMock);
+
+    const deck = getCatalogDeckBySlug("hvac-epa-608-anki-deck");
+    expect(deck).toBeDefined();
+
+    const priced = await resolveDeckPrice(deck!);
+
+    expect(fetchMock).not.toHaveBeenCalled();
+    expect(priced.price.amount).toBe(11);
+    expect(priced.directAnswer).toContain("$11 USD");
+
+    vi.unstubAllGlobals();
+  });
+
   it("serves cached synced price on deck resolve", async () => {
     const deck = getCatalogDeckBySlug("cfa-level-1-anki-deck");
     expect(deck).toBeDefined();

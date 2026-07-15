@@ -1,0 +1,1501 @@
+[
+  {
+    "id": "gmat-focus-readiness-check-001",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "quant",
+    "prompt": "A shirt originally priced $80 is discounted by 25%, and then the discounted price is reduced by an additional 10%. What is the final price?",
+    "formula": "$$\\text{Final Price} = P \\times (1 - d_1) \\times (1 - d_2)$$",
+    "options": [
+      {
+        "id": "a",
+        "text": "$54"
+      },
+      {
+        "id": "b",
+        "text": "$56"
+      },
+      {
+        "id": "c",
+        "text": "$60"
+      },
+      {
+        "id": "d",
+        "text": "$52"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Sequential discounts multiply the remaining-price factors: 80 × 0.75 × 0.90 = 54.",
+    "distractorExplanations": {
+      "b": "This results from treating the two discounts as a single 30% discount (80 × 0.70 = 56) instead of applying them in sequence.",
+      "c": "This only applies the first 25% discount and forgets to apply the second 10% discount.",
+      "d": "This adds the percentages (25% + 10% = 35%) and applies a single 35% discount, which is not how sequential discounts work."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-002",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "quant",
+    "prompt": "In a class of 40 students, the ratio of boys to girls is 3:5. How many girls are in the class?",
+    "options": [
+      {
+        "id": "a",
+        "text": "25"
+      },
+      {
+        "id": "b",
+        "text": "15"
+      },
+      {
+        "id": "c",
+        "text": "24"
+      },
+      {
+        "id": "d",
+        "text": "16"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The ratio 3:5 splits the class into 8 equal parts (3 + 5 = 8). Each part is 40 ÷ 8 = 5 students, so girls = 5 × 5 = 25.",
+    "distractorExplanations": {
+      "b": "15 is the number of boys (3 parts × 5), not girls — a common mix-up of which group corresponds to which ratio term.",
+      "c": "This comes from incorrectly computing 3/5 × 40 instead of using the correct part-of-8 fraction.",
+      "d": "This comes from computing 2/5 × 40, using the wrong fraction entirely."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-003",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "quant",
+    "prompt": "Sara is twice as old as Tom. In 6 years, Sara will be 1.5 times as old as Tom. How old is Tom now?",
+    "options": [
+      {
+        "id": "a",
+        "text": "6"
+      },
+      {
+        "id": "b",
+        "text": "8"
+      },
+      {
+        "id": "c",
+        "text": "12"
+      },
+      {
+        "id": "d",
+        "text": "9"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Let Tom's age be T, so Sara's age is 2T. In 6 years: 2T + 6 = 1.5(T + 6). Expanding: 2T + 6 = 1.5T + 9, so 0.5T = 3, giving T = 6.",
+    "distractorExplanations": {
+      "b": "8 does not satisfy the equation; it likely results from an arithmetic slip while isolating T.",
+      "c": "12 is Sara's current age (2 × 6), not Tom's — a common trap of answering with the wrong person's age.",
+      "d": "9 results from solving the equation incorrectly, such as mishandling the constant terms."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-004",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "quant",
+    "prompt": "Machine A can complete a job alone in 6 hours, and Machine B can complete the same job alone in 4 hours. Working together at their respective constant rates, how long will it take them to complete the job?",
+    "formula": "$$\\frac{1}{t} = \\frac{1}{t_1} + \\frac{1}{t_2}$$",
+    "options": [
+      {
+        "id": "a",
+        "text": "2.4 hours"
+      },
+      {
+        "id": "b",
+        "text": "2 hours"
+      },
+      {
+        "id": "c",
+        "text": "5 hours"
+      },
+      {
+        "id": "d",
+        "text": "3 hours"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Combined rate = 1/6 + 1/4 = 2/12 + 3/12 = 5/12 of the job per hour. Time = 1 ÷ (5/12) = 12/5 = 2.4 hours.",
+    "distractorExplanations": {
+      "b": "2 hours would be correct only if the rates were being averaged rather than added, which is not how combined work rates function.",
+      "c": "5 hours is close to Machine A's time alone and does not reflect any correct combination of the two rates.",
+      "d": "3 hours is the simple average of 6 and 4 minus an adjustment, but combined work-rate problems require adding rates, not averaging times."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-005",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "quant",
+    "prompt": "How many liters of a 20% acid solution must be mixed with 5 liters of a 50% acid solution to create a 30% acid solution?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10 liters"
+      },
+      {
+        "id": "b",
+        "text": "5 liters"
+      },
+      {
+        "id": "c",
+        "text": "7.5 liters"
+      },
+      {
+        "id": "d",
+        "text": "15 liters"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Let x = liters of the 20% solution. Total acid must equal 30% of the total volume: 0.20x + 0.50(5) = 0.30(x + 5). This gives 0.20x + 2.5 = 0.30x + 1.5, so 1 = 0.10x, and x = 10.",
+    "distractorExplanations": {
+      "b": "5 liters assumes the two solutions should be mixed in equal amounts, which does not satisfy the required 30% concentration.",
+      "c": "7.5 liters results from an arithmetic error when solving the mixture equation.",
+      "d": "15 liters overshoots the required amount and does not satisfy the concentration equation when checked."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-006",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "quant",
+    "prompt": "A committee of 4 people is to be chosen from a pool of 6 men and 5 women. How many different committees are possible that include at least 2 women?",
+    "options": [
+      {
+        "id": "a",
+        "text": "215"
+      },
+      {
+        "id": "b",
+        "text": "210"
+      },
+      {
+        "id": "c",
+        "text": "165"
+      },
+      {
+        "id": "d",
+        "text": "225"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Total committees of 4 from 11 people: C(11,4) = 330. Subtract committees with fewer than 2 women: 0 women = C(6,4) = 15; 1 woman = C(5,1)×C(6,3) = 5×20 = 100. Excluded total = 115, so at least 2 women = 330 − 115 = 215.",
+    "distractorExplanations": {
+      "b": "210 results from a small arithmetic slip when subtracting the excluded cases from the total of 330.",
+      "c": "165 is exactly half of 330 and does not correspond to any correct case-counting approach for this problem.",
+      "d": "225 results from miscounting the 1-woman case, which understates the number of committees to exclude."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-007",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "quant",
+    "prompt": "If n is a positive integer and 15n is a perfect square, what is the smallest possible value of n?",
+    "options": [
+      {
+        "id": "a",
+        "text": "15"
+      },
+      {
+        "id": "b",
+        "text": "5"
+      },
+      {
+        "id": "c",
+        "text": "3"
+      },
+      {
+        "id": "d",
+        "text": "225"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "15 = 3¹ × 5¹. For 15n to be a perfect square, every prime factor must have an even exponent, so n must supply one more factor of 3 and one more factor of 5, i.e., n = 3 × 5 = 15. Then 15 × 15 = 225 = 15².",
+    "distractorExplanations": {
+      "b": "n = 5 gives 15 × 5 = 75 = 3 × 5², which still has an odd exponent on 3, so it is not a perfect square.",
+      "c": "n = 3 gives 15 × 3 = 45 = 3² × 5, which still has an odd exponent on 5, so it is not a perfect square.",
+      "d": "225 is the resulting perfect square (15²), not the value of n itself — a common mix-up between n and the square it produces."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-008",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "quant",
+    "prompt": "The average of 5 numbers is 20. If one number is removed, the average of the remaining 4 numbers is 18. What was the value of the removed number?",
+    "options": [
+      {
+        "id": "a",
+        "text": "28"
+      },
+      {
+        "id": "b",
+        "text": "24"
+      },
+      {
+        "id": "c",
+        "text": "20"
+      },
+      {
+        "id": "d",
+        "text": "32"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Sum of all 5 numbers = 5 × 20 = 100. Sum of the remaining 4 numbers = 4 × 18 = 72. The removed number = 100 − 72 = 28.",
+    "distractorExplanations": {
+      "b": "24 results from an arithmetic error when subtracting 72 from 100.",
+      "c": "20 simply repeats the original average and is not the result of the required subtraction.",
+      "d": "32 results from miscalculating one of the two sums before subtracting."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-009",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "quant",
+    "prompt": "A triangle has a base of 12 and a height of 8. A second triangle has a base of 8 and the same area as the first triangle. What is the height of the second triangle?",
+    "formula": "$$A = \\frac{1}{2} \\times \\text{base} \\times \\text{height}$$",
+    "options": [
+      {
+        "id": "a",
+        "text": "12"
+      },
+      {
+        "id": "b",
+        "text": "8"
+      },
+      {
+        "id": "c",
+        "text": "6"
+      },
+      {
+        "id": "d",
+        "text": "16"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Area of the first triangle = (1/2)(12)(8) = 48. For the second triangle, (1/2)(8)(h) = 48, so h = 96/8 = 12.",
+    "distractorExplanations": {
+      "b": "8 assumes the second triangle has the same height as the first, which is not implied by the problem.",
+      "c": "6 results from a division error when solving for h.",
+      "d": "16 results from doubling the correct height by mistake."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-010",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "quant",
+    "prompt": "A bag contains 4 red, 3 blue, and 5 green marbles. Two marbles are drawn at random without replacement. What is the probability that both marbles are green?",
+    "formula": "$$P(A \\text{ and } B) = P(A) \\times P(B \\mid A)$$",
+    "options": [
+      {
+        "id": "a",
+        "text": "5/33"
+      },
+      {
+        "id": "b",
+        "text": "5/12"
+      },
+      {
+        "id": "c",
+        "text": "1/6"
+      },
+      {
+        "id": "d",
+        "text": "25/144"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "P(first green) = 5/12. P(second green | first green) = 4/11, since one green marble and one total marble have been removed. P(both green) = (5/12)(4/11) = 20/132 = 5/33.",
+    "distractorExplanations": {
+      "b": "5/12 is only the probability that the first marble drawn is green; it ignores the second draw entirely.",
+      "c": "1/6 is a plausible-looking simplified fraction but does not result from the correct multiplication of the two draw probabilities.",
+      "d": "25/144 results from treating the draws as independent with replacement, squaring 5/12, which is incorrect since the marbles are drawn without replacement."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-011",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "quant",
+    "prompt": "What is the value of x?",
+    "formula": "$$2^{x+3} = 8^{x-1}$$",
+    "options": [
+      {
+        "id": "a",
+        "text": "3"
+      },
+      {
+        "id": "b",
+        "text": "2"
+      },
+      {
+        "id": "c",
+        "text": "4"
+      },
+      {
+        "id": "d",
+        "text": "6"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Rewrite 8 as 2³, so 8^(x-1) = 2^(3x-3). Since the bases are equal, the exponents must be equal: x + 3 = 3x − 3. Solving gives 6 = 2x, so x = 3.",
+    "distractorExplanations": {
+      "b": "2 results from an arithmetic slip while isolating x in the exponent equation.",
+      "c": "4 results from a sign error when moving terms across the equation.",
+      "d": "6 is the value of 2x before the final division step and is mistakenly given as the answer instead of x."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-012",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "quant",
+    "prompt": "What is the simple interest earned on a $2,000 deposit at an annual interest rate of 5% over 3 years?",
+    "formula": "$$I = P \\times r \\times t$$",
+    "options": [
+      {
+        "id": "a",
+        "text": "$300"
+      },
+      {
+        "id": "b",
+        "text": "$200"
+      },
+      {
+        "id": "c",
+        "text": "$350"
+      },
+      {
+        "id": "d",
+        "text": "$100"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Simple interest is calculated as I = P × r × t = 2,000 × 0.05 × 3 = 300.",
+    "distractorExplanations": {
+      "b": "$200 results from using only 2 years instead of the full 3-year term.",
+      "c": "$350 does not correspond to the correct application of the 5% annual rate over 3 years.",
+      "d": "$100 results from using only 1 year instead of the full 3-year term."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-013",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "quant",
+    "prompt": "What is the value of x?",
+    "formula": "$$3x + 2y = 16, \\quad x - y = 2$$",
+    "options": [
+      {
+        "id": "a",
+        "text": "4"
+      },
+      {
+        "id": "b",
+        "text": "2"
+      },
+      {
+        "id": "c",
+        "text": "6"
+      },
+      {
+        "id": "d",
+        "text": "3"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "From the second equation, x = y + 2. Substituting into the first equation: 3(y + 2) + 2y = 16, so 3y + 6 + 2y = 16, giving 5y = 10 and y = 2. Then x = y + 2 = 4.",
+    "distractorExplanations": {
+      "b": "2 is the value of y, not x — a common mix-up between the two variables solved in the system.",
+      "c": "6 results from an arithmetic error when combining like terms after substitution.",
+      "d": "3 does not satisfy either original equation and results from a setup error."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-014",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "quant",
+    "prompt": "In the sequence 4, 9, 16, 25, ..., the nth term follows the rule shown below. What is the 6th term?",
+    "formula": "$$a_n = (n+1)^2$$",
+    "options": [
+      {
+        "id": "a",
+        "text": "49"
+      },
+      {
+        "id": "b",
+        "text": "36"
+      },
+      {
+        "id": "c",
+        "text": "64"
+      },
+      {
+        "id": "d",
+        "text": "45"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Using the given rule, the 6th term is (6+1)^2 = 7^2 = 49.",
+    "distractorExplanations": {
+      "b": "36 = 6^2 results from squaring n directly instead of (n+1), an off-by-one error.",
+      "c": "64 = 8^2 results from squaring (n+2) instead of (n+1), overshifting the index.",
+      "d": "45 does not match the defined pattern and results from an arithmetic slip."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-015",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "quant",
+    "prompt": "A circle has the circumference shown below. What is the area of the circle?",
+    "formula": "$$C = 18\\pi, \\quad C = 2\\pi r, \\quad A = \\pi r^2$$",
+    "options": [
+      {
+        "id": "a",
+        "text": "81π"
+      },
+      {
+        "id": "b",
+        "text": "18π"
+      },
+      {
+        "id": "c",
+        "text": "9π"
+      },
+      {
+        "id": "d",
+        "text": "162π"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Circumference = 2πr = 18π, so r = 9. Area = πr² = π(9²) = 81π.",
+    "distractorExplanations": {
+      "b": "18π simply restates the given circumference and is not the area.",
+      "c": "9π uses the radius itself instead of the radius squared in the area formula.",
+      "d": "162π results from doubling the correct area by mistake."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-016",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "verbal",
+    "prompt": "The city's new bike-share program has reduced traffic congestion, as evidenced by a 15% drop in average commute times since the program launched. Therefore, the city should expand the bike-share program to all neighborhoods.\n\nWhich of the following is an assumption required by the argument?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The drop in commute times was primarily caused by the bike-share program rather than by other factors introduced during the same period."
+      },
+      {
+        "id": "b",
+        "text": "Bike-share programs are less expensive to maintain than public bus systems."
+      },
+      {
+        "id": "c",
+        "text": "Residents in all neighborhoods have an equal interest in cycling."
+      },
+      {
+        "id": "d",
+        "text": "The city has sufficient funding to expand the program immediately."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The argument concludes that the bike-share program caused the drop in commute times based on a correlation. This reasoning requires assuming that no other factor introduced around the same time was actually responsible for the improvement.",
+    "distractorExplanations": {
+      "b": "Cost comparisons to bus systems are not addressed by or required for the argument as stated.",
+      "c": "Equal interest in cycling across neighborhoods would support the expansion's success but is not required for the causal claim about commute times.",
+      "d": "Funding availability is a practical concern for implementation, not a logical requirement of the argument's reasoning."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-017",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "verbal",
+    "prompt": "Since Company X switched to remote work, employee turnover has decreased by 20%. Therefore, remote work policies improve employee retention.\n\nWhich finding, if true, would most strengthen the argument?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A survey of departing employees before the remote policy cited commute stress as the top reason for leaving, and this factor has been eliminated for remote workers."
+      },
+      {
+        "id": "b",
+        "text": "Company X's revenue increased during the same period."
+      },
+      {
+        "id": "c",
+        "text": "Other companies in the same industry have not adopted remote work."
+      },
+      {
+        "id": "d",
+        "text": "Employee turnover at Company X was already declining slightly before the remote policy began."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "This finding directly ties a specific, previously cited cause of turnover to a change eliminated by the remote policy, strengthening the causal link between remote work and improved retention.",
+    "distractorExplanations": {
+      "b": "Revenue is a separate metric and does not address the causal relationship between remote work and turnover.",
+      "c": "Other companies' policies do not provide evidence about why turnover changed specifically at Company X.",
+      "d": "A pre-existing declining trend would suggest other factors were already at play, which weakens rather than strengthens the causal claim."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-018",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "verbal",
+    "prompt": "A study found that students who eat breakfast score higher on morning tests than students who skip breakfast. Therefore, schools should mandate breakfast for all students to improve test scores.\n\nWhich of the following, if true, most weakens the argument?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Students who eat breakfast in the study tend to come from households with more resources for tutoring and educational support, which may independently explain their higher scores."
+      },
+      {
+        "id": "b",
+        "text": "Some students dislike the taste of typical breakfast foods offered at school."
+      },
+      {
+        "id": "c",
+        "text": "Breakfast mandates would require additional school funding."
+      },
+      {
+        "id": "d",
+        "text": "Test scores in the afternoon showed no difference between the two groups."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "This finding introduces a confounding variable (household resources) that could independently explain the score difference, undermining the claim that breakfast itself causes higher scores.",
+    "distractorExplanations": {
+      "b": "Taste preferences are a practical implementation concern, not a challenge to the causal claim connecting breakfast to test scores.",
+      "c": "Funding requirements are a practical objection to the recommendation, not a weakening of the underlying causal reasoning.",
+      "d": "Afternoon scores are outside the scope of the argument, which specifically concerns morning test performance."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-019",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "verbal",
+    "prompt": "All members of the Riverside Hiking Club own hiking boots. Maria owns hiking boots.\n\nWhich conclusion can be properly drawn from these two statements alone?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No valid conclusion about Maria's club membership can be drawn from the statements alone."
+      },
+      {
+        "id": "b",
+        "text": "Maria is a member of the Riverside Hiking Club."
+      },
+      {
+        "id": "c",
+        "text": "Maria is not a member of the Riverside Hiking Club."
+      },
+      {
+        "id": "d",
+        "text": "Everyone who owns hiking boots is a member of the Riverside Hiking Club."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The statements establish that club membership implies boot ownership, not the reverse. Owning hiking boots does not guarantee club membership, since other people may own hiking boots without belonging to the club.",
+    "distractorExplanations": {
+      "b": "This commits the logical error of affirming the consequent — assuming that boot ownership implies club membership when only the reverse was stated.",
+      "c": "This is also unsupported; the statements provide no information that would rule out Maria's membership.",
+      "d": "This reverses the original conditional statement, which is a logically invalid conclusion to draw."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-020",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "verbal",
+    "prompt": "Every successful entrepreneur I've studied dropped out of college. Therefore, dropping out of college increases one's chances of becoming a successful entrepreneur.\n\nWhich of the following best describes a flaw in the argument's reasoning?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It generalizes from a possibly unrepresentative sample of entrepreneurs who happen to have dropped out, ignoring successful entrepreneurs who completed college and unsuccessful people who also dropped out."
+      },
+      {
+        "id": "b",
+        "text": "It fails to define what counts as a \"successful\" entrepreneur."
+      },
+      {
+        "id": "c",
+        "text": "It assumes all entrepreneurs want to be successful."
+      },
+      {
+        "id": "d",
+        "text": "It does not account for inflation over time."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The argument draws a general causal conclusion from a narrow, self-selected sample, without considering successful entrepreneurs who stayed in college or unsuccessful people who also dropped out — a classic sampling bias flaw.",
+    "distractorExplanations": {
+      "b": "While a stricter definition would improve rigor, the core flaw is the sampling bias, not merely a lack of definitional precision.",
+      "c": "This assumption is not relevant to the causal claim being made about dropping out and success rates.",
+      "d": "Inflation has no bearing on the logical structure of this argument."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-021",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "verbal",
+    "prompt": "Critics argue that raising the minimum wage always leads to significant job losses. However, several regional studies have found only marginal employment effects following minimum wage increases in specific local markets. Still, economists caution that results from local labor markets may not generalize to national policy, since national increases remove the option for businesses to relocate to nearby lower-wage areas.\n\nThe underlined portion (\"results from local labor markets may not generalize to national policy\") plays which role in the argument?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It qualifies the preceding evidence by identifying a limitation on how broadly the finding can be applied."
+      },
+      {
+        "id": "b",
+        "text": "It restates the critics' original claim without modification."
+      },
+      {
+        "id": "c",
+        "text": "It provides new empirical evidence contradicting the regional studies."
+      },
+      {
+        "id": "d",
+        "text": "It summarizes the overall conclusion of the passage."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The phrase introduces a caveat about the scope of the regional findings, limiting how confidently they can be extended to national policy — a qualification rather than new evidence or a restated claim.",
+    "distractorExplanations": {
+      "b": "The critics' original claim was about job losses generally; this phrase instead qualifies the regional evidence, so it is not a restatement.",
+      "c": "The phrase expresses a caution about generalizability, not new empirical data.",
+      "d": "The passage does not reach a single final conclusion; this phrase is a limiting qualification within a balanced discussion."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-022",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "verbal",
+    "prompt": "A company claims its new fertilizer increases crop yield by 30%, based on a single farm trial conducted last season.\n\nTo evaluate the reliability of this claim, it would be most useful to know:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Whether the trial included a control group of comparable fields using standard fertilizer under similar conditions."
+      },
+      {
+        "id": "b",
+        "text": "The name of the farm where the trial occurred."
+      },
+      {
+        "id": "c",
+        "text": "The retail price of the new fertilizer."
+      },
+      {
+        "id": "d",
+        "text": "How many employees work at the fertilizer company."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Without a comparable control group, it is impossible to isolate the fertilizer's effect from other variables such as weather, soil quality, or farming practices that season.",
+    "distractorExplanations": {
+      "b": "The farm's name has no bearing on the scientific validity of the yield claim.",
+      "c": "Price is a separate commercial consideration unrelated to whether the yield claim is reliable.",
+      "d": "Company size has no bearing on whether the trial's methodology supports the causal claim."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-023",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "verbal",
+    "prompt": "Sales of physical books have increased for the third consecutive year, even though e-reader ownership has also grown steadily over the same period.\n\nWhich of the following, if true, best resolves the apparent paradox?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Many consumers who own e-readers still prefer physical copies for gifting and for genres like children's books and cookbooks."
+      },
+      {
+        "id": "b",
+        "text": "E-readers have become significantly cheaper in the past three years."
+      },
+      {
+        "id": "c",
+        "text": "Physical book prices have decreased."
+      },
+      {
+        "id": "d",
+        "text": "E-reader battery life has improved."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "This explains why both trends can rise simultaneously: the same consumers who adopt e-readers still have distinct occasions and genres for which they prefer physical books, so the two markets are not purely substitutive.",
+    "distractorExplanations": {
+      "b": "Cheaper e-readers would be expected to further reduce demand for physical books, not explain why physical book sales are also rising.",
+      "c": "Lower book prices could explain rising book sales alone, but does not address why e-reader ownership is simultaneously growing rather than declining.",
+      "d": "Improved battery life would be expected to increase e-reader appeal and does not explain the simultaneous rise in physical book sales."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-024",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "verbal",
+    "prompt": "The new tax policy will increase total government revenue, because it lowers the tax rate on small businesses, which will encourage them to report income they previously underreported to avoid high taxes.\n\nWhich of the following is an assumption on which the argument depends?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The increase in reported income resulting from lower rates will be large enough to offset the revenue lost from the rate reduction itself."
+      },
+      {
+        "id": "b",
+        "text": "Small businesses currently underreport all of their income."
+      },
+      {
+        "id": "c",
+        "text": "Large corporations will also benefit from the tax policy."
+      },
+      {
+        "id": "d",
+        "text": "Government spending will remain constant."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The conclusion that total revenue will increase depends on the gain from newly reported income outweighing the loss from the lower rate applied to previously reported income. If this were false, the argument's conclusion would not follow.",
+    "distractorExplanations": {
+      "b": "The argument only requires that some previously underreported income becomes reported, not that businesses were underreporting all of their income.",
+      "c": "The argument concerns small businesses specifically; large corporations' treatment is not relevant to this conclusion.",
+      "d": "Government spending levels do not affect whether the tax policy itself increases revenue."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-025",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "verbal",
+    "prompt": "Coral reefs, though occupying less than 1% of the ocean floor, support approximately 25% of all marine species. This disproportionate biodiversity arises from the structural complexity reefs provide: their branching formations create countless microhabitats for fish, invertebrates, and algae. However, rising ocean temperatures have triggered widespread coral bleaching, in which corals expel the symbiotic algae that supply most of their energy and color, leaving them vulnerable to starvation and disease.\n\nAccording to the passage, coral bleaching primarily results in which of the following?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The loss of a symbiotic energy source that leaves corals more susceptible to starvation and disease."
+      },
+      {
+        "id": "b",
+        "text": "A permanent increase in the ocean floor area occupied by reefs."
+      },
+      {
+        "id": "c",
+        "text": "An increase in the number of fish species that inhabit reefs."
+      },
+      {
+        "id": "d",
+        "text": "A decrease in ocean temperatures near affected reefs."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The passage states directly that bleaching involves corals expelling symbiotic algae that supply most of their energy, leaving them vulnerable to starvation and disease.",
+    "distractorExplanations": {
+      "b": "The passage does not discuss any change in the physical area occupied by reefs.",
+      "c": "The passage suggests bleaching threatens reef biodiversity; it does not state that fish species increase as a result.",
+      "d": "Rising temperatures are described as the cause of bleaching, not a result of it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-026",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "verbal",
+    "prompt": "The gig economy, characterized by short-term contracts and freelance work rather than permanent employment, has grown rapidly over the past decade. Proponents argue it offers workers flexibility and autonomy unavailable in traditional jobs. Critics counter that this flexibility often comes at the cost of job security, benefits, and predictable income, disproportionately affecting workers who rely on gig work as a primary, rather than supplementary, source of income.\n\nThe passage suggests that critics of the gig economy are most concerned with which of the following?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The trade-off between flexibility and stability, particularly for those dependent on gig work as their main income."
+      },
+      {
+        "id": "b",
+        "text": "The overall growth rate of the gig economy compared to traditional employment."
+      },
+      {
+        "id": "c",
+        "text": "The types of platforms used to connect gig workers with clients."
+      },
+      {
+        "id": "d",
+        "text": "The geographic distribution of gig workers."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The passage states that critics focus on the cost of flexibility in terms of job security, benefits, and predictable income, especially for workers relying on gig work as their primary income.",
+    "distractorExplanations": {
+      "b": "Growth rate comparisons are mentioned as context but are not identified as the critics' specific concern.",
+      "c": "The passage does not mention specific platforms as a point of concern for critics.",
+      "d": "Geographic distribution is not discussed in the passage."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-027",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "verbal",
+    "prompt": "Honeybees communicate the location of food sources to their hive-mates through a behavior known as the waggle dance. By varying the duration and angle of the dance, a returning forager can indicate both the distance and direction of a food source relative to the sun's position.\n\nAccording to the passage, what two pieces of information does the waggle dance convey?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The distance and direction of a food source."
+      },
+      {
+        "id": "b",
+        "text": "The quantity and quality of a food source."
+      },
+      {
+        "id": "c",
+        "text": "The temperature and humidity of the hive."
+      },
+      {
+        "id": "d",
+        "text": "The age and health of the forager bee."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The passage explicitly states that the duration and angle of the dance indicate both the distance and direction of the food source.",
+    "distractorExplanations": {
+      "b": "Quantity and quality are not mentioned in the passage as information conveyed by the dance.",
+      "c": "Temperature and humidity are not discussed anywhere in the passage.",
+      "d": "The age and health of the forager bee are not mentioned in the passage."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-028",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "verbal",
+    "prompt": "Behavioral economists have documented a phenomenon known as loss aversion, in which individuals experience the pain of a loss more intensely than the pleasure of an equivalent gain. This asymmetry helps explain why investors often hold onto losing stocks longer than winning ones: selling a losing position forces the investor to realize and confront the loss, whereas holding onto the stock allows the loss to remain merely theoretical. Critics of this explanation note that transaction costs and tax considerations can also motivate investors to delay selling, complicating efforts to isolate loss aversion as the sole cause.\n\nThe passage indicates that critics of the loss-aversion explanation for investor behavior primarily argue that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Other factors, such as transaction costs and taxes, may also contribute to the behavior, making it difficult to attribute the effect to loss aversion alone."
+      },
+      {
+        "id": "b",
+        "text": "Loss aversion does not exist in financial markets."
+      },
+      {
+        "id": "c",
+        "text": "Investors are entirely rational and unaffected by psychological biases."
+      },
+      {
+        "id": "d",
+        "text": "Winning stocks are held longer than losing stocks."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The passage states that critics point to transaction costs and tax considerations as alternative or additional explanations, complicating the claim that loss aversion alone explains the behavior.",
+    "distractorExplanations": {
+      "b": "The critics are described as questioning whether loss aversion is the sole cause, not denying its existence entirely.",
+      "c": "This overstates the critics' position; the passage does not suggest they claim investors are entirely rational.",
+      "d": "This contradicts the passage, which states that losing stocks tend to be held longer, not winning ones."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-029",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "verbal",
+    "prompt": "Urban heat islands occur when cities experience significantly warmer temperatures than surrounding rural areas, primarily due to the heat-absorbing properties of concrete and asphalt combined with reduced vegetation. Efforts to counteract this effect include planting urban trees, installing reflective \"cool roofs,\" and creating green spaces, all of which help offset heat absorption and lower ambient temperatures.\n\nBased on the passage, which of the following would most likely reduce the urban heat island effect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increasing the proportion of vegetated and reflective surfaces relative to concrete and asphalt."
+      },
+      {
+        "id": "b",
+        "text": "Increasing the density of paved roads within a city."
+      },
+      {
+        "id": "c",
+        "text": "Removing urban parks to make room for new construction."
+      },
+      {
+        "id": "d",
+        "text": "Painting rooftops with heat-absorbing dark materials."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The passage identifies vegetation and reflective surfaces as counteracting measures to heat absorption, so increasing their proportion relative to concrete and asphalt would reduce the effect.",
+    "distractorExplanations": {
+      "b": "More paved roads would increase heat-absorbing surface area, worsening rather than reducing the effect.",
+      "c": "Removing parks would reduce vegetation, which the passage identifies as a mitigating factor, worsening the effect.",
+      "d": "Heat-absorbing dark materials would increase heat absorption, the opposite of the reflective \"cool roofs\" described in the passage."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-030",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "verbal",
+    "prompt": "While the placebo effect is often dismissed as a mere psychological artifact, growing evidence suggests it can trigger measurable physiological changes, including the release of endogenous opioids and dopamine. These biochemical responses can produce real reductions in perceived pain, even when the treatment administered contains no active therapeutic ingredient. This has led some researchers to argue that placebo responses should be viewed not as a nuisance to be controlled for in clinical trials, but as a legitimate component of the body's response to care.\n\nThe passage suggests that some researchers now view the placebo effect as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A genuine physiological response worth studying in its own right, rather than only a confound to eliminate in trials."
+      },
+      {
+        "id": "b",
+        "text": "Entirely psychological and without any biological basis."
+      },
+      {
+        "id": "c",
+        "text": "Evidence that clinical trials are fundamentally flawed."
+      },
+      {
+        "id": "d",
+        "text": "Something that only affects pain perception and no other physiological processes."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The passage states that some researchers argue the placebo response should be viewed as a legitimate component of the body's response to care, not merely a nuisance to control for, given its measurable biochemical basis.",
+    "distractorExplanations": {
+      "b": "This contradicts the passage, which specifically cites biochemical changes (opioid and dopamine release) as evidence against a purely psychological explanation.",
+      "c": "The passage does not suggest that clinical trials themselves are flawed, only that the placebo response deserves more attention.",
+      "d": "The passage discusses pain reduction as an example, not as the only physiological process affected."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-031",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "data-insights",
+    "prompt": "Is x > 0?\n\n(For all Data Sufficiency questions, use the following answer framework: (a) Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient. (b) Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient. (c) BOTH statements TOGETHER are sufficient, but neither statement alone is sufficient. (d) NEITHER statement alone NOR both statements together are sufficient to answer the question.)",
+    "formula": "$$\\text{(1) } x^2 = 16 \\\\ \\text{(2) } x^3 = -64$$",
+    "options": [
+      {
+        "id": "a",
+        "text": "Statement (1) alone is sufficient, but statement (2) alone is not sufficient."
+      },
+      {
+        "id": "b",
+        "text": "Statement (2) alone is sufficient, but statement (1) alone is not sufficient."
+      },
+      {
+        "id": "c",
+        "text": "Both statements together are sufficient, but neither alone is sufficient."
+      },
+      {
+        "id": "d",
+        "text": "Neither statement alone nor both together are sufficient."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Statement (1): x² = 16 gives x = 4 or x = -4, so it cannot definitively answer whether x > 0 — not sufficient alone. Statement (2): x³ = -64 has exactly one real solution, x = -4 (cube roots are unique for real numbers), which definitively answers the question \"is x > 0\" with a firm NO. A definitive NO is sufficient, so statement (2) alone is sufficient.",
+    "distractorExplanations": {
+      "a": "This incorrectly treats statement (1) as sufficient, but x² = 16 allows two possible values of x with different signs.",
+      "c": "This is incorrect because statement (2) alone already provides a definitive answer, so both statements together are not required.",
+      "d": "This incorrectly assumes statement (2) is ambiguous like statement (1), overlooking that a real cube root is unique."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-032",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "data-insights",
+    "prompt": "What is the value of y?\n\n(1) See equation below.\n(2) y is a positive integer less than 10.\n\n(For all Data Sufficiency questions, use the following answer framework: (a) Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient. (b) Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient. (c) BOTH statements TOGETHER are sufficient, but neither statement alone is sufficient. (d) NEITHER statement alone NOR both statements together are sufficient to answer the question.)",
+    "formula": "$$\\text{(1) } 3y + 5 = 20$$",
+    "options": [
+      {
+        "id": "a",
+        "text": "Statement (1) alone is sufficient, but statement (2) alone is not sufficient."
+      },
+      {
+        "id": "b",
+        "text": "Statement (2) alone is sufficient, but statement (1) alone is not sufficient."
+      },
+      {
+        "id": "c",
+        "text": "Both statements together are sufficient, but neither alone is sufficient."
+      },
+      {
+        "id": "d",
+        "text": "Neither statement alone nor both together are sufficient."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Statement (1): 3y + 5 = 20 gives a single unique solution, y = 5, so it is sufficient alone. Statement (2) only narrows y to one of several possible positive integers (1 through 9), which is not sufficient alone.",
+    "distractorExplanations": {
+      "b": "This is incorrect because statement (2) allows multiple possible values of y and cannot determine a single value.",
+      "c": "This is incorrect because statement (1) alone already determines a unique value of y.",
+      "d": "This is incorrect because statement (1) alone is sufficient to answer the question."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-033",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "data-insights",
+    "prompt": "Is quadrilateral ABCD a square?\n\n(1) All four sides of ABCD have equal length.\n(2) All four angles of ABCD are right angles.\n\n(For all Data Sufficiency questions, use the following answer framework: (a) Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient. (b) Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient. (c) BOTH statements TOGETHER are sufficient, but neither statement alone is sufficient. (d) NEITHER statement alone NOR both statements together are sufficient to answer the question.)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Statement (1) alone is sufficient, but statement (2) alone is not sufficient."
+      },
+      {
+        "id": "b",
+        "text": "Statement (2) alone is sufficient, but statement (1) alone is not sufficient."
+      },
+      {
+        "id": "c",
+        "text": "Both statements together are sufficient, but neither alone is sufficient."
+      },
+      {
+        "id": "d",
+        "text": "Neither statement alone nor both together are sufficient."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Statement (1) alone allows for a rhombus that is not a square (equal sides but not necessarily right angles), so it is not sufficient. Statement (2) alone allows for a rectangle that is not a square (right angles but not necessarily equal sides), so it is not sufficient. Together, equal sides and right angles uniquely define a square, so both statements together are sufficient.",
+    "distractorExplanations": {
+      "a": "This is incorrect because equal sides alone do not rule out a non-square rhombus.",
+      "b": "This is incorrect because right angles alone do not rule out a non-square rectangle.",
+      "d": "This is incorrect because the two statements together do uniquely determine that ABCD is a square."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-034",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "data-insights",
+    "prompt": "If a and b are integers, is the product shown below even?\n\n(1) a is even.\n(2) b is odd.\n\n(For all Data Sufficiency questions, use the following answer framework: (a) Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient. (b) Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient. (c) BOTH statements TOGETHER are sufficient, but neither statement alone is sufficient. (d) NEITHER statement alone NOR both statements together are sufficient to answer the question.)",
+    "formula": "$$a \\times b$$",
+    "options": [
+      {
+        "id": "a",
+        "text": "Statement (1) alone is sufficient, but statement (2) alone is not sufficient."
+      },
+      {
+        "id": "b",
+        "text": "Statement (2) alone is sufficient, but statement (1) alone is not sufficient."
+      },
+      {
+        "id": "c",
+        "text": "Both statements together are sufficient, but neither alone is sufficient."
+      },
+      {
+        "id": "d",
+        "text": "Neither statement alone nor both together are sufficient."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Statement (1): if a is even, then a × b is even regardless of the value of b, since an even number times any integer is even. This is sufficient alone. Statement (2) only tells us about b; a could be even or odd, so a × b could be even or odd — not sufficient alone.",
+    "distractorExplanations": {
+      "b": "This is incorrect because knowing only that b is odd tells us nothing about whether a is even or odd, so the product's parity cannot be determined.",
+      "c": "This is incorrect because statement (1) alone is already sufficient without needing statement (2).",
+      "d": "This is incorrect because statement (1) alone is sufficient to answer the question."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-035",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "data-insights",
+    "prompt": "A store sold x units of a product in January and y units in February. Is x > y?\n\n(1) The store's revenue from the product was higher in January than in February.\n(2) The price per unit was the same in both months and greater than zero.\n\n(For all Data Sufficiency questions, use the following answer framework: (a) Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient. (b) Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient. (c) BOTH statements TOGETHER are sufficient, but neither statement alone is sufficient. (d) NEITHER statement alone NOR both statements together are sufficient to answer the question.)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Statement (1) alone is sufficient, but statement (2) alone is not sufficient."
+      },
+      {
+        "id": "b",
+        "text": "Statement (2) alone is sufficient, but statement (1) alone is not sufficient."
+      },
+      {
+        "id": "c",
+        "text": "Both statements together are sufficient, but neither alone is sufficient."
+      },
+      {
+        "id": "d",
+        "text": "Neither statement alone nor both together are sufficient."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Statement (1) alone is not sufficient because higher January revenue could result from a higher price rather than more units sold. Statement (2) alone is not sufficient because it says nothing about which month had higher revenue or more units. Together: since price per unit is constant and positive, revenue is directly proportional to units sold, so higher January revenue directly implies x > y.",
+    "distractorExplanations": {
+      "a": "This is incorrect because revenue alone, without knowing that price was constant, cannot isolate the number of units sold.",
+      "b": "This is incorrect because knowing the price was constant, without knowing which month had higher revenue, does not indicate which month had more units.",
+      "d": "This is incorrect because the two statements together do allow revenue to be directly translated into a comparison of units sold."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-036",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "data-insights",
+    "prompt": "The table shows the number of units sold by four sales regions in Q1 and Q2.\n\n| Region | Q1 Units | Q2 Units |\n|---|---:|---:|\n| North | 120 | 150 |\n| South | 200 | 180 |\n| East | 90 | 110 |\n| West | 160 | 170 |\n\nWhich region had the largest percentage increase in units sold from Q1 to Q2?",
+    "formula": "$$\\%\\ \\text{Increase} = \\frac{\\text{New} - \\text{Old}}{\\text{Old}} \\times 100\\%$$",
+    "options": [
+      {
+        "id": "a",
+        "text": "North"
+      },
+      {
+        "id": "b",
+        "text": "South"
+      },
+      {
+        "id": "c",
+        "text": "East"
+      },
+      {
+        "id": "d",
+        "text": "West"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Percentage changes: North = (150-120)/120 = 25%; South = (180-200)/200 = -10% (a decrease); East = (110-90)/90 ≈ 22.2%; West = (170-160)/160 = 6.25%. North has the largest increase at 25%.",
+    "distractorExplanations": {
+      "b": "South actually experienced a decrease in units sold from Q1 to Q2, not an increase.",
+      "c": "East had a substantial increase (about 22.2%) but it is still lower than North's 25% increase.",
+      "d": "West's increase (6.25%) is the smallest positive change among the four regions, not the largest."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-037",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "data-insights",
+    "prompt": "The table shows the calorie and protein content per serving for four snack bars.\n\n| Bar | Calories | Protein (g) |\n|---|---:|---:|\n| Alpha | 200 | 10 |\n| Beta | 250 | 20 |\n| Gamma | 180 | 8 |\n| Delta | 220 | 15 |\n\nWhich bar has the highest protein-to-calorie ratio (grams of protein per calorie)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Alpha"
+      },
+      {
+        "id": "b",
+        "text": "Beta"
+      },
+      {
+        "id": "c",
+        "text": "Gamma"
+      },
+      {
+        "id": "d",
+        "text": "Delta"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Ratios: Alpha = 10/200 = 0.050; Beta = 20/250 = 0.080; Gamma = 8/180 ≈ 0.044; Delta = 15/220 ≈ 0.068. Beta has the highest ratio at 0.080 grams of protein per calorie.",
+    "distractorExplanations": {
+      "a": "Alpha's ratio (0.050) is lower than Beta's and does not represent the highest value in the table.",
+      "c": "Gamma has the lowest protein-to-calorie ratio of the four bars, not the highest.",
+      "d": "Delta's ratio (approximately 0.068) is the second highest, close to but still lower than Beta's."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-038",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "data-insights",
+    "prompt": "The table shows quarterly revenue (in $ thousands) for a company over one year.\n\n| Quarter | Revenue |\n|---|---:|\n| Q1 | 400 |\n| Q2 | 460 |\n| Q3 | 420 |\n| Q4 | 520 |\n\nThe company's yearly target is to reach or exceed $1,800 thousand in total annual revenue. Did the company meet the target, and by how much did it exceed the target (if at all)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The company met the target exactly, exceeding it by $0."
+      },
+      {
+        "id": "b",
+        "text": "The company exceeded the target by $20 thousand."
+      },
+      {
+        "id": "c",
+        "text": "The company fell short of the target by $20 thousand."
+      },
+      {
+        "id": "d",
+        "text": "The company exceeded the target by $200 thousand."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Total annual revenue = 400 + 460 + 420 + 520 = 1,800, which exactly equals the target of $1,800 thousand. The company reached the target exactly, exceeding it by $0.",
+    "distractorExplanations": {
+      "b": "This results from an arithmetic error when summing the four quarterly figures.",
+      "c": "This incorrectly concludes the company fell short; the correct sum equals the target exactly, not below it.",
+      "d": "This results from a significant summation error; the correct total is exactly 1,800, not 2,000."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-039",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "data-insights",
+    "prompt": "The table shows the number of employees and average annual salary at four company departments.\n\n| Department | Employees | Avg. Annual Salary ($) |\n|---|---:|---:|\n| Sales | 20 | 60,000 |\n| Engineering | 15 | 90,000 |\n| Marketing | 10 | 55,000 |\n| Support | 25 | 45,000 |\n\nWhat is the total monthly payroll for the Engineering department?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$112,500"
+      },
+      {
+        "id": "b",
+        "text": "$1,350,000"
+      },
+      {
+        "id": "c",
+        "text": "$90,000"
+      },
+      {
+        "id": "d",
+        "text": "$135,000"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Annual Engineering payroll = 15 employees × $90,000 = $1,350,000. Monthly payroll = $1,350,000 ÷ 12 = $112,500.",
+    "distractorExplanations": {
+      "b": "$1,350,000 is the correct annual payroll figure, but the question asks for the monthly amount, which requires dividing by 12.",
+      "c": "$90,000 is simply the average salary per employee, not the department's total monthly payroll.",
+      "d": "$135,000 results from a division error when converting the annual payroll to a monthly figure."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-040",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "data-insights",
+    "prompt": "A line chart shows a company's monthly website traffic (in thousands of visits): January: 50, February: 65, March: 60, April: 80, May: 75, June: 95. In how many months (other than January, which has no prior month for comparison) did traffic decrease compared to the previous month?",
+    "options": [
+      {
+        "id": "a",
+        "text": "2"
+      },
+      {
+        "id": "b",
+        "text": "1"
+      },
+      {
+        "id": "c",
+        "text": "3"
+      },
+      {
+        "id": "d",
+        "text": "0"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Month-over-month changes: Feb (+15), Mar (-5, a decrease), Apr (+20), May (-5, a decrease), Jun (+20). Traffic decreased in exactly 2 months: March and May.",
+    "distractorExplanations": {
+      "b": "This undercounts the decreases; there are two months (March and May) where traffic dropped from the prior month, not one.",
+      "c": "This overcounts the decreases; only March and May show a decline, not three months.",
+      "d": "This is incorrect because traffic did decline in both March and May relative to the preceding month."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-041",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "data-insights",
+    "prompt": "A bar chart shows the number of customer complaints received per week over four weeks: Week 1: 12, Week 2: 18, Week 3: 9, Week 4: 15. What is the average number of complaints per week over the four-week period?",
+    "formula": "$$\\text{Average} = \\frac{\\text{Sum of values}}{\\text{Number of values}}$$",
+    "options": [
+      {
+        "id": "a",
+        "text": "13.5"
+      },
+      {
+        "id": "b",
+        "text": "14"
+      },
+      {
+        "id": "c",
+        "text": "12"
+      },
+      {
+        "id": "d",
+        "text": "15"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Average = (12 + 18 + 9 + 15) / 4 = 54 / 4 = 13.5.",
+    "distractorExplanations": {
+      "b": "14 results from a rounding or arithmetic error when dividing the total by 4.",
+      "c": "12 is simply Week 1's value, not the average across all four weeks.",
+      "d": "15 is simply Week 4's value, not the average across all four weeks."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-042",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "data-insights",
+    "prompt": "A line chart shows a startup's monthly active users (in thousands) for five months: Month 1: 10, Month 2: 15, Month 3: 22, Month 4: 31, Month 5: 42. The month-over-month increase has been growing by exactly 2 thousand users each month (the increase from Month 1 to Month 2 was 5, from Month 2 to Month 3 was 7, from Month 3 to Month 4 was 9, from Month 4 to Month 5 was 11). If this pattern continues, what is the projected increase in users from Month 5 to Month 6?",
+    "options": [
+      {
+        "id": "a",
+        "text": "13 thousand"
+      },
+      {
+        "id": "b",
+        "text": "11 thousand"
+      },
+      {
+        "id": "c",
+        "text": "15 thousand"
+      },
+      {
+        "id": "d",
+        "text": "9 thousand"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The increases form an arithmetic sequence with a common difference of 2: 5, 7, 9, 11, and the next increase continues the pattern at 11 + 2 = 13 thousand.",
+    "distractorExplanations": {
+      "b": "11 thousand was the increase from Month 4 to Month 5; the pattern requires the next increase to be 2 thousand more than this, not the same.",
+      "c": "15 thousand overshoots the pattern by adding 4 instead of the established common difference of 2.",
+      "d": "9 thousand was the increase from Month 3 to Month 4, two steps behind the increase that should be projected next."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-043",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "data-insights",
+    "prompt": "Source 1 (HR Policy Memo): \"Employees are eligible for the annual performance bonus only if they have completed at least 6 months of continuous employment by December 31 and have received a performance rating of 'Meets Expectations' or higher.\"\n\nSource 2 (Employee Record): \"Jordan was hired on August 1 of the current year. Jordan's most recent performance review, completed in November, rated Jordan as 'Exceeds Expectations.'\"\n\nBased on both sources, is Jordan eligible for the annual performance bonus this year?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No, because Jordan has not completed 6 months of continuous employment by December 31."
+      },
+      {
+        "id": "b",
+        "text": "Yes, because Jordan's performance rating exceeds the minimum requirement."
+      },
+      {
+        "id": "c",
+        "text": "Yes, because both eligibility conditions are met."
+      },
+      {
+        "id": "d",
+        "text": "No, because Jordan's performance rating is not high enough."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "From August 1 to December 31 is only 5 months of employment, one month short of the required 6-month minimum. Despite an excellent performance rating, Jordan does not meet the tenure requirement and is therefore not eligible.",
+    "distractorExplanations": {
+      "b": "This ignores the separate tenure requirement, which Jordan does not satisfy regardless of the strong performance rating.",
+      "c": "This incorrectly concludes both conditions are met; the tenure condition specifically is not satisfied.",
+      "d": "This misidentifies the issue — Jordan's rating actually exceeds the minimum requirement; the problem is the length of employment, not the rating."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-044",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "data-insights",
+    "prompt": "Source 1 (Shipping Policy): \"Orders over $50 qualify for free standard shipping. Orders of $50 or under incur a flat $6 shipping fee. Expedited shipping is an additional $12 regardless of order size.\"\n\nSource 2 (Order Summary): \"Customer's order total (before shipping): $45. Customer selected expedited shipping.\"\n\nWhat is the total shipping cost for this order?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$18"
+      },
+      {
+        "id": "b",
+        "text": "$12"
+      },
+      {
+        "id": "c",
+        "text": "$6"
+      },
+      {
+        "id": "d",
+        "text": "$0"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Since the order total ($45) does not exceed $50, it does not qualify for free shipping and incurs the flat $6 fee. Adding the $12 expedited shipping surcharge gives a total shipping cost of $6 + $12 = $18.",
+    "distractorExplanations": {
+      "b": "$12 accounts only for the expedited shipping surcharge and omits the flat $6 fee that applies to orders under $50.",
+      "c": "$6 accounts only for the flat shipping fee and omits the additional $12 expedited shipping charge.",
+      "d": "$0 incorrectly assumes the order qualifies for free shipping, but the $45 order total is at or under the $50 threshold, which does not qualify."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  },
+  {
+    "id": "gmat-focus-readiness-check-045",
+    "examSlug": "gmat-focus-readiness-check",
+    "topicId": "data-insights",
+    "prompt": "Source 1 (Flight Schedule): \"Flight 204 departs at 9:15 AM local time from City A and arrives in City B after a flight duration of 4 hours 30 minutes. City B is in a time zone 2 hours ahead of City A.\"\n\nSource 2 (Connecting Flight Info): \"Flight 507 departs from City B to City C. Passengers connecting from Flight 204 need a minimum layover of 1 hour in City B.\"\n\nWhat is the earliest local time (in City B) that Flight 507 could depart for a passenger connecting from Flight 204?",
+    "options": [
+      {
+        "id": "a",
+        "text": "4:45 PM"
+      },
+      {
+        "id": "b",
+        "text": "3:45 PM"
+      },
+      {
+        "id": "c",
+        "text": "2:45 PM"
+      },
+      {
+        "id": "d",
+        "text": "5:45 PM"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Flight 204 departs at 9:15 AM City A time and flies for 4 hours 30 minutes, arriving at 1:45 PM in City A's time frame. Converting to City B time (2 hours ahead) gives an arrival of 3:45 PM City B time. Adding the required 1-hour minimum layover gives an earliest departure of 4:45 PM City B time.",
+    "distractorExplanations": {
+      "b": "3:45 PM is the arrival time in City B but omits the required 1-hour minimum layover before the connecting flight can depart.",
+      "c": "2:45 PM fails to apply the 2-hour time zone adjustment when converting the arrival time to City B's local time.",
+      "d": "5:45 PM adds an extra hour beyond the correctly calculated departure time, likely from double-counting part of the layover or time difference."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
+  }
+]

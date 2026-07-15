@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { MockExamConfig, MockQuestion } from "@/lib/mock-exams/types";
 import { MathContent } from "./math-content";
+import { QuestionContent } from "./question-content";
 import { trackMockEvent } from "./mock-analytics";
 
 type MockRunnerProps = {
@@ -117,7 +118,9 @@ export function MockRunner({ config, questions, onComplete, onExit }: MockRunner
                     <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#1f3a5f]">
                       Q{index + 1} · {topic}
                     </p>
-                    <p className="mt-2 text-sm leading-7 text-[#18140f]">{question.prompt}</p>
+                    <div className="mt-2 text-sm leading-7 text-[#18140f]">
+                      <QuestionContent text={question.prompt} />
+                    </div>
                   </div>
                   <span
                     className={`shrink-0 rounded-full px-3 py-1 text-xs font-semibold ${
@@ -207,11 +210,11 @@ export function MockRunner({ config, questions, onComplete, onExit }: MockRunner
       </div>
 
       <div className="mt-8 rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 sm:p-8">
-        <h2 className="text-xl font-semibold leading-8 text-[#18140f]">
-          <MathContent text={currentQuestion.prompt} />
-        </h2>
+        <div className="text-xl font-semibold leading-8 text-[#18140f]">
+          <QuestionContent text={currentQuestion.prompt} />
+        </div>
         {currentQuestion.formula ? (
-          <div className="mt-4 overflow-x-auto rounded-2xl border border-[#18140f]/10 bg-[#f7f3ea] p-4 text-sm">
+          <div className="mt-4 overflow-x-auto rounded-2xl border border-[#18140f]/10 bg-[#f7f3ea] p-4 text-base">
             <MathContent text={currentQuestion.formula} />
           </div>
         ) : null}

@@ -1,25 +1,39 @@
 import type { CatalogAvailableDeck } from "@/lib/decks";
-import { getExamFactsProfileForDeck } from "@/lib/exam-facts";
+import { getExamFactsProfileForDeck, type ExamFactsProfile } from "@/lib/exam-facts";
 
 type DeckExamFactsSectionProps = {
-  deck: CatalogAvailableDeck;
+  deck?: CatalogAvailableDeck;
+  profile?: ExamFactsProfile | null;
+  /** Inside a collapsible block — skip outer section chrome. */
+  compact?: boolean;
 };
 
-export function DeckExamFactsSection({ deck }: DeckExamFactsSectionProps) {
-  const profile = getExamFactsProfileForDeck(deck.slug);
+export function DeckExamFactsSection({
+  deck,
+  profile: profileProp,
+  compact = false,
+}: DeckExamFactsSectionProps) {
+  const profile =
+    profileProp ?? (deck ? getExamFactsProfileForDeck(deck.slug) : null);
   if (!profile) return null;
 
   const { exam_facts: facts } = profile;
 
-  return (
-    <section id="exam-facts" className="mt-12">
-      <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-        Exam facts
+  const content = (
+    <>
+      {!compact ? (
+        <>
+          <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
+            Exam facts
+          </p>
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight">{facts.exam_name}</h2>
+        </>
+      ) : null}
+      <p className={compact ? "text-sm leading-7 text-[#4f493e]" : "mt-3 text-sm leading-7 text-[#4f493e]"}>
+        {profile.intro}
       </p>
-      <h2 className="mt-3 text-2xl font-semibold tracking-tight">{facts.exam_name}</h2>
-      <p className="mt-3 text-sm leading-7 text-[#4f493e]">{profile.intro}</p>
 
-      <dl className="mt-6 grid gap-px overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#18140f]/10 sm:grid-cols-2">
+      <dl className={`grid gap-px overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#18140f]/10 sm:grid-cols-2 ${compact ? "mt-4" : "mt-6"}`}>
         {[
           ["Questions", facts.question_count],
           ["Time", facts.time_limit],
@@ -101,6 +115,16 @@ export function DeckExamFactsSection({ deck }: DeckExamFactsSectionProps) {
         </a>
         . Independent study aid — not official exam material.
       </p>
+    </>
+  );
+
+  if (compact) {
+    return content;
+  }
+
+  return (
+    <section id="exam-facts" className="mt-12">
+      {content}
     </section>
   );
 }

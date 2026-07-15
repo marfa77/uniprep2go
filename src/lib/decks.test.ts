@@ -551,6 +551,7 @@ describe("deck catalog", () => {
       "cfa-level-2-anki-deck": "CFA Level 2 Anki Deck — 495 Flashcards",
       "cfa-level-2-formula-reference-2026":
         "CFA Level 2 Formula Reference 2026 — 219 Formulas + 276 Definitions + 80-Question Drill (PDF)",
+      "cfps-anki-deck": "CFPS Anki Deck — 400+ Flashcards",
       "frm-part-1-anki-deck": "FRM Part 1 Anki Deck — 444 Exam Flashcards",
       "sie-exam-anki-deck": "SIE Exam Anki Deck — 300 High-Yield Flashcards",
       "series-7-anki-deck": "Series 7 Anki Deck — 300 High-Yield Flashcards",
@@ -566,6 +567,7 @@ describe("deck catalog", () => {
       "delf-b2-french-anki-deck": "DELF B2 French Anki Deck — 2000+ Flashcards",
       "dutch-a2-inburgering-anki-deck":
         "Dutch A2 Inburgering Anki Deck — 1000+ Flashcards",
+      "gmat-focus-anki-deck": "GMAT Focus Anki Deck — 150+ Flashcards",
       "german-a2-anki-deck": "German A2 Anki Deck — 1000 Flashcards",
       "celi-b1-italian-anki-deck": "CELI B1 Italian Anki Deck — 1,373 Flashcards",
       "danish-a2-prove-i-dansk-anki-deck":
@@ -602,6 +604,7 @@ describe("deck catalog", () => {
         "DELE A2 Spanish Grammar Anki Deck — 200 Cards",
       "delf-b2-grammar-anki-deck":
         "DELF B2 French Grammar Anki Deck — 200 Cards",
+      "hvac-epa-608-anki-deck": "EPA 608 HVAC Anki Deck — 200+ Flashcards",
       "ib-biology-sl-anki-deck": "IB Biology SL Anki Deck — 149 Smart Flashcards",
       "cat4-level-d-anki-deck-printable-pdf":
         "CAT4 Level D Anki Deck + Printable PDF — Grade 7 Verbal & Quantitative",
@@ -618,7 +621,11 @@ describe("deck catalog", () => {
         "Oil Trader Anki Deck — 211 Commodity Flashcards",
       "bench-energy-coal-trader-anki-deck":
         "Coal Trader Anki Deck — 221 Commodity Flashcards",
+      "bms-building-automation-anki-deck":
+        "BMS / BAS Anki Deck — 200+ Flashcards",
       "commodity-trader-pack-bundle": "Commodity Trader Pack — 634 Anki Flashcards",
+      "cdcp-anki-deck": "CDCP Anki Deck — 250+ Flashcards",
+      "cem-anki-deck": "CEM Anki Deck — 250+ Flashcards",
       "us-adaptation-english-prep2go-app": "US Adaptation (English) — Prep2Go Immigration App",
       "uae-survival-guide-prep2go-app": "UAE Survival Guide — Prep2Go Immigration App",
       "saudi-arabia-survival-guide-prep2go-app":
@@ -626,19 +633,29 @@ describe("deck catalog", () => {
       "singapore-survival-guide-prep2go-app": "Singapore Survival Guide — Prep2Go Immigration App",
       "south-africa-survival-guide-prep2go-app":
         "South Africa Survival Guide — Prep2Go Immigration App",
+      "ashrae-certifications-anki-deck":
+        "ASHRAE Certs Anki Deck — 250+ Flashcards",
       "australia-survival-guide-prep2go-app": "Australia Survival Guide — Prep2Go Immigration App",
       "canada-survival-guide-prep2go-app": "Canada Survival Guide — Prep2Go Immigration App",
       "germany-survival-guide-prep2go-app": "Germany Survival Guide — Prep2Go Immigration App",
       "japan-survival-guide-prep2go-app": "Japan Survival Guide — Prep2Go Immigration App",
       "netherlands-survival-guide-prep2go-app":
         "Netherlands Survival Guide — Prep2Go Immigration App",
+      "nebosh-anki-deck": "NEBOSH IGC Anki Deck — 250+ Flashcards",
       "uk-survival-guide-prep2go-app": "UK Survival Guide — Prep2Go Immigration App",
       "portugal-survival-guide-prep2go-app": "Portugal Survival Guide — Prep2Go Immigration App",
       "us-citizenship-test-prep2go-app": "U.S. Citizenship Test — Prep2Go Immigration App",
       "leben-in-deutschland-prep2go-app": "Leben in Deutschland — Prep2Go Immigration App",
+      "leed-ap-bd-c-anki-deck": "LEED AP BD+C Anki Deck — 250+ Flashcards",
+      "leed-green-associate-anki-deck": "LEED GA Anki Deck — 250+ Flashcards",
+      "life-in-the-uk-prep2go-app": "Life in the UK — Prep2Go Immigration App",
+      "mrics-anki-deck": "MRICS / APC Anki Deck — 250+ Flashcards",
+      "mrics-quantity-surveying-anki-deck":
+        "MRICS QS Anki Deck — 250+ Flashcards",
       "naturalisation-francaise-prep2go-app":
         "Naturalisation française — Prep2Go Immigration App",
       "life-in-the-uk-prep2go-app": "Life in the UK — Prep2Go Immigration App",
+      "well-ap-anki-deck": "WELL AP Anki Deck — 250+ Flashcards",
       "canadian-citizenship-prep2go-app": "Canadian Citizenship — Prep2Go Immigration App",
       "australian-citizenship-prep2go-app": "Australian Citizenship — Prep2Go Immigration App",
     };

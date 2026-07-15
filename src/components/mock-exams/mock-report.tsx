@@ -1,5 +1,6 @@
 import type { MockExamConfig, MockReport } from "@/lib/mock-exams/types";
 import { MathContent } from "./math-content";
+import { QuestionContent } from "./question-content";
 
 function verdictStyles(verdict: MockReport["verdict"]) {
   switch (verdict) {
@@ -142,7 +143,7 @@ export function MockReportPanel({ config, report }: MockReportPanelProps) {
                 Q{index + 1} · {item.topicLabel} · {item.isCorrect ? "Correct" : "Incorrect"}
               </summary>
               <p className="mt-3 text-sm leading-7 text-[#4f493e]">
-                <MathContent text={item.prompt} />
+                <QuestionContent text={item.prompt} />
               </p>
               {item.formula ? (
                 <div className="mt-3 overflow-x-auto rounded-xl border border-[#18140f]/10 bg-[#fffaf0] p-3 text-sm">

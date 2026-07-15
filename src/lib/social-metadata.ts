@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { siteConfig } from "./site";
+import { finalize } from "./seo";
+import { absoluteUrl } from "./site";
 
 type SocialMetadataInput = {
   title: string;
@@ -14,23 +15,25 @@ type SocialMetadataInput = {
 export function buildSocialMetadata(
   input: SocialMetadataInput,
 ): Pick<Metadata, "openGraph" | "twitter"> {
-  const image = input.image
+  const imageUrl = input.image
+    ? input.image.startsWith("http")
+      ? input.image
+      : absoluteUrl(input.image)
+    : undefined;
+  const image = imageUrl
     ? {
-        url: input.image,
+        url: imageUrl,
         alt: input.imageAlt ?? input.title,
         width: input.imageWidth ?? 1376,
         height: input.imageHeight ?? 768,
       }
     : undefined;
 
-  return {
+  return finalize({
     openGraph: {
       title: input.title,
       description: input.description,
       url: input.path,
-      type: "website",
-      siteName: siteConfig.name,
-      locale: "en_US",
       images: image ? [image] : undefined,
     },
     twitter: {
@@ -39,5 +42,5 @@ export function buildSocialMetadata(
       description: input.description,
       images: image ? [image.url] : undefined,
     },
-  };
+  });
 }

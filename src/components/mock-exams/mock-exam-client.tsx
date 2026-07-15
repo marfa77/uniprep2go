@@ -3,8 +3,12 @@
 import Link from "next/link";
 import type { MockAccessState, MockExamConfig, MockQuestion, MockReport } from "@/lib/mock-exams/types";
 import { getMockCta } from "@/lib/mock-exams/access";
-import { mockFreeAccessNotice } from "@/lib/mock-exams/pricing";
-import { buildMockReport, createAttemptSeed, shuffleQuestions } from "@/lib/mock-exams/scoring";
+import {
+  buildMockReport,
+  createAttemptSeed,
+  selectSessionQuestions,
+  shuffleQuestions,
+} from "@/lib/mock-exams/scoring";
 import { MockInterestCta } from "./mock-interest-cta";
 import { MockReportPanel } from "./mock-report";
 import { MockRunner } from "./mock-runner";
@@ -52,8 +56,9 @@ export function MockExamClient({ config, questions, accessState, runnable }: Moc
       return questions;
     }
 
-    return shuffleQuestions(questions, attemptSeed);
-  }, [attemptSeed, questions]);
+    const sessionQuestions = selectSessionQuestions(questions, config, attemptSeed);
+    return shuffleQuestions(sessionQuestions, attemptSeed);
+  }, [attemptSeed, config, questions]);
 
   function startMock() {
     const seed = createAttemptSeed();
@@ -176,94 +181,80 @@ export function MockExamClient({ config, questions, accessState, runnable }: Moc
   }
 
   return (
-    <div className="space-y-8">
+    <div className="mt-8 space-y-6">
       {config.status === "preview" ? (
-        <div className="rounded-3xl border border-[#1f3a5f]/20 bg-[#fffaf0] p-5 text-sm leading-7 text-[#4f493e]">
-          Preview readiness check built from the linked deck content. Full mock coverage is still expanding.
-        </div>
+        <p className="rounded-2xl border border-[#1f3a5f]/15 bg-[#fffaf0] px-4 py-3 text-sm text-[#4f493e]">
+          Preview readiness check — question bank may still be loading.
+        </p>
       ) : null}
 
-      <section className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold tracking-tight">Exam structure</h2>
-        <dl className="mt-6 grid gap-4 sm:grid-cols-3">
+      <section className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-5 sm:p-6">
+        <dl className="grid gap-4 sm:grid-cols-3">
           <div>
             <dt className="font-mono text-xs uppercase tracking-[0.2em] text-[#1f3a5f]">Questions</dt>
-            <dd className="mt-2 text-lg font-semibold">{config.questionCount}</dd>
+            <dd className="mt-1 text-lg font-semibold">{config.questionCount}</dd>
           </div>
           <div>
             <dt className="font-mono text-xs uppercase tracking-[0.2em] text-[#1f3a5f]">Timing</dt>
-            <dd className="mt-2 text-lg font-semibold">{formatDuration(config.durationMinutes)}</dd>
+            <dd className="mt-1 text-lg font-semibold">{formatDuration(config.durationMinutes)}</dd>
           </div>
           <div>
             <dt className="font-mono text-xs uppercase tracking-[0.2em] text-[#1f3a5f]">Pass threshold</dt>
-            <dd className="mt-2 text-lg font-semibold">{config.passRule.passPercent}%</dd>
+            <dd className="mt-1 text-lg font-semibold">{config.passRule.passPercent}%</dd>
           </div>
         </dl>
-        <p className="mt-6 text-sm leading-7 text-[#5f5749]">{config.officialSourceNote}</p>
-        <ul className="mt-6 space-y-3 text-sm leading-7 text-[#4f493e]">
-          {config.topics.map((topic) => (
-            <li key={topic.id}>
-              <span className="font-medium text-[#18140f]">{topic.label}</span>
-              {typeof topic.questionCount === "number"
-                ? ` — ${topic.questionCount} questions`
-                : typeof topic.weightPercent === "number"
-                  ? ` — ${topic.weightPercent}% weight`
-                  : ""}
-            </li>
-          ))}
-        </ul>
-      </section>
 
-      <section className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold tracking-tight">What the report includes</h2>
-        <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-7 text-[#4f493e]">
-          <li>Pass / no-pass verdict with a plain-English explanation of why</li>
-          <li>Weighted topic diagnosis with missed-question pointers</li>
-          <li>Full question review with deck-backed explanations</li>
-          <li>Repair plan linking back to the Anki deck</li>
-        </ul>
-        <p className="mt-6 rounded-2xl border border-[#1f3a5f]/15 bg-[#f7f3ea] p-4 text-sm leading-7 text-[#4f493e]">
-          {mockFreeAccessNotice}
-        </p>
-      </section>
-
-      {screen === "instructions" ? (
-        <section className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 sm:p-8">
-          <h2 className="text-2xl font-semibold tracking-tight">Before you start</h2>
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-7 text-[#4f493e]">
-            <li>Questions come from the linked UniPrep2Go deck content, reshuffled into exam-style MCQ.</li>
-            <li>You can review answers before submitting.</li>
-            <li>The timer tracks pacing against the official timing target.</li>
-          </ul>
-          <button
-            className="mt-6 rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
-            onClick={beginExam}
-            type="button"
-          >
-            Begin timed mock
-          </button>
-        </section>
-      ) : (
-        <div className="space-y-3">
-          <div className="flex flex-wrap items-center gap-3">
-          {runnable ? (
+        {screen === "instructions" ? (
+          <div className="mt-5 border-t border-[#18140f]/10 pt-5">
+            <p className="text-sm leading-7 text-[#4f493e]">
+              Timed session from the linked deck bank. Review answers before submit; report shows topic gaps and repair plan.
+            </p>
             <button
-              className="inline-flex h-11 items-center rounded-full bg-[#18140f] px-5 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
-              onClick={startMock}
+              className="mt-4 rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
+              onClick={beginExam}
               type="button"
             >
-              {startButtonLabel(config)}
+              Begin timed mock
             </button>
-          ) : (
-            <p className="inline-flex h-11 items-center rounded-full border border-[#18140f]/20 px-5 text-sm font-semibold text-[#5f5749]">
-              Question bank loading — check back soon
-            </p>
-          )}
           </div>
-        </div>
-      )}
+        ) : (
+          <div className="mt-5 border-t border-[#18140f]/10 pt-5">
+            {runnable ? (
+              <button
+                className="inline-flex h-11 items-center rounded-full bg-[#18140f] px-5 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
+                onClick={startMock}
+                type="button"
+              >
+                {startButtonLabel(config)}
+              </button>
+            ) : (
+              <p className="text-sm font-medium text-[#5f5749]">
+                Question bank loading — check back soon
+              </p>
+            )}
+          </div>
+        )}
 
-      <p className="text-sm leading-7 text-[#7a6e5a]">{config.disclaimer}</p>
+        <details className="group mt-4">
+          <summary className="cursor-pointer list-none text-sm font-medium text-[#1f3a5f] [&::-webkit-details-marker]:hidden">
+            Topic breakdown ▾
+          </summary>
+          <ul className="mt-3 space-y-2 text-sm leading-6 text-[#4f493e]">
+            {config.topics.map((topic) => (
+              <li key={topic.id}>
+                <span className="font-medium text-[#18140f]">{topic.label}</span>
+                {typeof topic.questionCount === "number"
+                  ? ` — ${topic.questionCount} questions`
+                  : typeof topic.weightPercent === "number"
+                    ? ` — ${topic.weightPercent}%`
+                    : ""}
+              </li>
+            ))}
+          </ul>
+        </details>
+      </section>
+
+      <p className="text-xs leading-6 text-[#7a6e5a]">{config.disclaimer}</p>
     </div>
   );
 }

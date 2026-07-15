@@ -43,6 +43,8 @@ export type MockExamConfig = {
   lastUpdated: string;
   /** Future Gumroad product id — not used in demand-test mode */
   gumroadProductId?: string;
+  /** Override for markdown/LLM when questions are not deck-sourced */
+  questionSourceNote?: string;
 };
 
 export type MockQuestionOption = {

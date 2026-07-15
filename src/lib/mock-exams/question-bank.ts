@@ -7,6 +7,19 @@ import californiaRealEstatePreviewBank from "@/data/mock-exams/california-real-e
 import lifeHealthPreviewBank from "@/data/mock-exams/life-and-health-insurance-preview.json";
 import propertyCasualtyPreviewBank from "@/data/mock-exams/property-casualty-insurance-preview.json";
 import servSafeManagerMockBank from "@/data/mock-exams/servsafe-manager-mock.json";
+import gmatFocusReadinessBank from "@/data/mock-exams/gmat-focus-readiness-check.json";
+import epa608ReadinessBank from "@/data/mock-exams/epa-608-readiness-check.json";
+import bmsBasReadinessBank from "@/data/mock-exams/bms-bas-readiness-check.json";
+import leedGreenAssociateReadinessBank from "@/data/mock-exams/leed-green-associate-readiness-check.json";
+import leedApBdCReadinessBank from "@/data/mock-exams/leed-ap-bd-c-readiness-check.json";
+import wellApReadinessBank from "@/data/mock-exams/well-ap-readiness-check.json";
+import cemReadinessBank from "@/data/mock-exams/cem-readiness-check.json";
+import ashraeCertificationsReadinessBank from "@/data/mock-exams/ashrae-certifications-readiness-check.json";
+import cdcpReadinessBank from "@/data/mock-exams/cdcp-readiness-check.json";
+import neboshReadinessBank from "@/data/mock-exams/nebosh-readiness-check.json";
+import cfpsReadinessBank from "@/data/mock-exams/cfps-readiness-check.json";
+import mricsReadinessBank from "@/data/mock-exams/mrics-readiness-check.json";
+import mricsQuantitySurveyingReadinessBank from "@/data/mock-exams/mrics-quantity-surveying-readiness-check.json";
 import { getMockExamConfig } from "./configs";
 import type { MockQuestion } from "./types";
 
@@ -20,6 +33,19 @@ const banksBySlug: Record<string, MockQuestion[]> = {
   "life-and-health-insurance-readiness-check": lifeHealthPreviewBank as unknown as MockQuestion[],
   "property-casualty-insurance-readiness-check": propertyCasualtyPreviewBank as unknown as MockQuestion[],
   "servsafe-manager-mock": servSafeManagerMockBank as unknown as MockQuestion[],
+  "gmat-focus-readiness-check": gmatFocusReadinessBank as unknown as MockQuestion[],
+  "epa-608-readiness-check": epa608ReadinessBank as unknown as MockQuestion[],
+  "bms-bas-readiness-check": bmsBasReadinessBank as unknown as MockQuestion[],
+  "leed-green-associate-readiness-check": leedGreenAssociateReadinessBank as unknown as MockQuestion[],
+  "leed-ap-bd-c-readiness-check": leedApBdCReadinessBank as unknown as MockQuestion[],
+  "well-ap-readiness-check": wellApReadinessBank as unknown as MockQuestion[],
+  "cem-readiness-check": cemReadinessBank as unknown as MockQuestion[],
+  "ashrae-certifications-readiness-check": ashraeCertificationsReadinessBank as unknown as MockQuestion[],
+  "cdcp-readiness-check": cdcpReadinessBank as unknown as MockQuestion[],
+  "nebosh-readiness-check": neboshReadinessBank as unknown as MockQuestion[],
+  "cfps-readiness-check": cfpsReadinessBank as unknown as MockQuestion[],
+  "mrics-readiness-check": mricsReadinessBank as unknown as MockQuestion[],
+  "mrics-quantity-surveying-readiness-check": mricsQuantitySurveyingReadinessBank as unknown as MockQuestion[],
 };
 
 export function getQuestionBank(examSlug: string) {
@@ -80,12 +106,24 @@ export function validateQuestionBank(
     }
   }
 
+  const config = getMockExamConfig(examSlug);
+  const isPreview = config?.status === "preview";
+
   for (const topic of topics) {
     if (typeof topic.questionCount !== "number") {
       continue;
     }
 
     const topicCount = questions.filter((question) => question.topicId === topic.id).length;
+
+    if (isPreview) {
+      if (topicCount < topic.questionCount) {
+        errors.push(
+          `Topic ${topic.id} expected at least ${topic.questionCount} questions, found ${topicCount}`,
+        );
+      }
+      continue;
+    }
 
     if (topicCount !== topic.questionCount) {
       errors.push(
