@@ -24,7 +24,7 @@ describe("anki-deck-launch", () => {
     expect(estimateAnkiDeckCardCount("leed-green-associate-anki-deck")).toBe(250);
   });
 
-  it("launches planned building decks as available with pending apkg", () => {
+  it("launches planned building decks as available with ready apkg when uploaded", () => {
     const launched = applyAnkiDeckLaunch({
       slug: "leed-green-associate-anki-deck",
       category: "professional",
@@ -51,10 +51,11 @@ describe("anki-deck-launch", () => {
 
     expect(launched.status).toBe("available");
     if (launched.status === "available") {
-      expect(launched.apkgStatus).toBe("pending");
+      expect(launched.apkgStatus).toBe("ready");
       expect(launched.checkoutUrl).toContain("leed-green-associate-anki-deck");
       expect(launched.checkoutProvider).toBe("Gumroad");
       expect(launched.facts.cards).toBe("250+");
+      expect(launched.facts.delivery).toContain("instant download");
       expect(launched.importSteps?.length).toBeGreaterThan(0);
     }
   });

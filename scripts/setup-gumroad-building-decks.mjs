@@ -21,6 +21,7 @@ import { tmpdir } from "node:os";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CATALOG_PATH = join(root, "src/data/gumroad/building-anki-decks.json");
+const SPECS_PATH = join(root, "src/data/building-deck-specs.json");
 const COVERS_DIR = join(root, "public/covers");
 
 const PRODUCT_CREATE_DELAY_MS = Number(process.env.GUMROAD_CREATE_DELAY_MS ?? 5000);
@@ -28,11 +29,20 @@ const ANKI_GENERATOR_ROOT =
   process.env.ANKI_GENERATOR_ROOT?.trim() ||
   join(dirname(root), "Anki Generator");
 
-/** Relative paths under ANKI_GENERATOR_ROOT for exported .apkg files. */
-const APKG_RELATIVE_PATHS = {
-  "hvac-epa-608-anki-deck": "out/building/EPA_608_HVAC_FULL_200.apkg",
-  "bms-building-automation-anki-deck": "out/building/BMS_BAS_Building_Automation_FULL_200.apkg",
-};
+/** Load deck specs (apkg paths, Gumroad titles). */
+function loadSpecs() {
+  return JSON.parse(readFileSync(SPECS_PATH, "utf8"));
+}
+
+function resolveApkgPath(slug) {
+  const spec = loadSpecs()[slug];
+  if (!spec) {
+    return null;
+  }
+  const relative = `out/building/${spec.filePrefix}_FULL_${spec.cardCount}.apkg`;
+  const absolute = join(ANKI_GENERATOR_ROOT, relative);
+  return existsSync(absolute) ? absolute : null;
+}
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -98,21 +108,10 @@ function runGumroad(args, { dryRun = false } = {}) {
 
 async function loadDeckMeta() {
   const configs = await import("../src/lib/mock-exams/configs.ts");
-  const titles = {
-    "hvac-epa-608-anki-deck": "HVAC EPA 608 Anki Deck — 200 Flashcards (Section 608 Exam Prep)",
-    "bms-building-automation-anki-deck": "BMS Building Automation Anki Deck — 200 Flashcards (BAS Exam Prep)",
-    "leed-green-associate-anki-deck": "LEED Green Associate Anki Deck — 250+ Flashcards",
-    "leed-ap-bd-c-anki-deck": "LEED AP BD+C Anki Deck — 250+ Flashcards",
-    "well-ap-anki-deck": "WELL AP Anki Deck — 250+ Flashcards",
-    "cem-anki-deck": "CEM Anki Deck — 250+ Flashcards",
-    "ashrae-certifications-anki-deck": "ASHRAE Certifications Anki Deck — 250+ Flashcards",
-    "cdcp-anki-deck": "CDCP Anki Deck — 250+ Flashcards",
-    "nebosh-anki-deck": "NEBOSH IGC Anki Deck — 250+ Flashcards",
-    "cfps-anki-deck": "CFPS Anki Deck — 400+ Flashcards",
-    "mrics-anki-deck": "MRICS / APC Anki Deck — 250+ Flashcards",
-    "mrics-quantity-surveying-anki-deck": "MRICS Quantity Surveying Anki Deck — 250+ Flashcards",
-    "gmat-focus-anki-deck": "GMAT Focus Anki Deck — 200+ Flashcards",
-  };
+  const specs = loadSpecs();
+  const titles = Object.fromEntries(
+    Object.entries(specs).map(([slug, spec]) => [slug, spec.gumroadName]),
+  );
   return { getAllMockExams: configs.getAllMockExams, titles };
 }
 
@@ -133,15 +132,6 @@ function buildProductDescription({ title, mockPath, apkgReady }) {
     "",
     "Independent study aid — not official exam material.",
   ].join("\n");
-}
-
-function resolveApkgPath(slug) {
-  const relative = APKG_RELATIVE_PATHS[slug];
-  if (!relative) {
-    return null;
-  }
-  const absolute = join(ANKI_GENERATOR_ROOT, relative);
-  return existsSync(absolute) ? absolute : null;
 }
 
 function resolveCoverPath(slug) {
@@ -259,7 +249,7 @@ async function syncProductAssets({
   const coverPath = resolveCoverPath(slug);
   if (!apkgPath) {
     throw new Error(
-      `${slug}: .apkg not found. Set APKG_RELATIVE_PATHS in setup script and export deck under ${ANKI_GENERATOR_ROOT}`,
+      `${slug}: .apkg not found. Export deck via building_deck_pipeline under ${ANKI_GENERATOR_ROOT}`,
     );
   }
   if (!coverPath) {
