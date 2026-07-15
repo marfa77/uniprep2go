@@ -131,6 +131,20 @@ describe("anki-deck-launch", () => {
     ]);
   });
 
+  it("exposes launched CFPS deck with sample card screenshots", () => {
+    const cfps = getCatalogDeckBySlug("cfps-anki-deck");
+    expect(cfps).toBeDefined();
+    expect(cfps?.status).toBe("available");
+    expect(cfps?.apkgStatus).toBe("ready");
+    expect(cfps?.checkoutUrl).toContain("gumroad.com/l/cfps-anki-deck");
+    expect(cfps?.sampleCards).toHaveLength(3);
+    expect(cfps?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/cfps-anki-deck-sample-1.webp",
+      "/samples/cfps-anki-deck-sample-2.webp",
+      "/samples/cfps-anki-deck-sample-3.webp",
+    ]);
+  });
+
   it("launches all building deck slugs into catalog", () => {
     const slugs = [
       "hvac-epa-608-anki-deck",

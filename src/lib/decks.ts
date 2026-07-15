@@ -2019,7 +2019,27 @@ const rawDecks: Deck[] = [
       { name: "Fire Prevention Programs & Environments", examWeight: "12%", cards: "Planned" },
       { name: "Information & Analysis / Hazard Management / Rescue / Confining Fires", examWeight: "9% each", cards: "Planned" },
     ],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question:
+          "Before discharging CO2 into a normally occupied enclosure, NFPA 12 requires:",
+        answer:
+          "Correct: (b) Predischarge alarms and time delay or personnel accounting to allow evacuation. CO2 is asphyxiant; lockout and warning devices protect occupants from lethal oxygen displacement.",
+        imageUrl: "/samples/cfps-anki-deck-sample-1.webp",
+      },
+      {
+        question: "A total flooding CO2 system design concentration depends primarily on:",
+        answer:
+          "Correct: (c) Fuel type, enclosure volume, and minimum design concentration from NFPA 12 tables. CO2 quantity = concentration × adjusted volume; deep-seated fires may need extended holding periods.",
+        imageUrl: "/samples/cfps-anki-deck-sample-2.webp",
+      },
+      {
+        question: "Clean agent systems covered under NFPA 2001 are characterized by:",
+        answer:
+          "Correct: (d) Electrically nonconductive gaseous agents that extinguish by heat absorption and/or oxygen reduction without residue. Clean agents (HFCs, FK-5-1-12, inert gases) protect sensitive equipment in enclosures with concentration-based design.",
+        imageUrl: "/samples/cfps-anki-deck-sample-3.webp",
+      },
+    ],
     faqs: [
       {
         question: "Is there a free CFPS practice test?",
