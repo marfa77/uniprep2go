@@ -51,6 +51,9 @@ export function estimateAnkiDeckCardCount(deckSlug: string): number {
   if (!mock) {
     return 200;
   }
+  if (typeof mock.ankiDeckCardCount === "number") {
+    return mock.ankiDeckCardCount;
+  }
   return mock.topics.length * ANKI_BANK_CARDS_PER_TOPIC;
 }
 

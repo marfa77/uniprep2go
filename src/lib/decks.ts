@@ -2129,7 +2129,28 @@ const rawDecks: Deck[] = [
       { name: "Work Equipment, Fire, and Electricity", examWeight: "GIC1 Elements 9–11", cards: "Planned" },
       { name: "Risk Assessment (GIC2)", examWeight: "GIC2 practical unit", cards: "Planned" },
     ],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question:
+          "A cleaner mixes bleach and acid-based descaler in a toilet bowl, producing chlorine gas. The immediate priority is:",
+        answer:
+          "Correct: (a) Evacuate and ventilate the area, ensure affected people get fresh air and medical help, and review COSHH controls. Incompatible chemicals can release toxic gases; emergency response is evacuation, ventilation, medical care, and investigation.",
+        imageUrl: "/samples/nebosh-anki-deck-sample-1.webp",
+      },
+      {
+        question: "Before using a new solvent, an employer must ensure workers have access to:",
+        answer:
+          "Correct: (b) A current Safety Data Sheet (SDS) with hazards, controls, PPE, and emergency measures. COSHH requires hazard information via SDS and risk assessment before use of hazardous substances.",
+        imageUrl: "/samples/nebosh-anki-deck-sample-2.webp",
+      },
+      {
+        question:
+          "Local Exhaust Ventilation (LEV) on a welding bench fails airflow tests. The best action is:",
+        answer:
+          "Correct: (c) Take the LEV out of service until repaired, use alternative controls, and notify workers. LEV must be maintained and examined; failed extraction requires repair or substitute controls.",
+        imageUrl: "/samples/nebosh-anki-deck-sample-3.webp",
+      },
+    ],
     faqs: [
       {
         question: "Is there a free NEBOSH practice test?",

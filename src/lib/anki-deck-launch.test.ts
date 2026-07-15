@@ -201,6 +201,20 @@ describe("anki-deck-launch", () => {
     ]);
   });
 
+  it("exposes launched NEBOSH deck with sample card screenshots", () => {
+    const nebosh = getCatalogDeckBySlug("nebosh-anki-deck");
+    expect(nebosh).toBeDefined();
+    expect(nebosh?.status).toBe("available");
+    expect(nebosh?.apkgStatus).toBe("ready");
+    expect(nebosh?.checkoutUrl).toContain("gumroad.com/l/nebosh-anki-deck");
+    expect(nebosh?.sampleCards).toHaveLength(3);
+    expect(nebosh?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/nebosh-anki-deck-sample-1.webp",
+      "/samples/nebosh-anki-deck-sample-2.webp",
+      "/samples/nebosh-anki-deck-sample-3.webp",
+    ]);
+  });
+
   it("launches all building deck slugs into catalog", () => {
     const slugs = [
       "hvac-epa-608-anki-deck",

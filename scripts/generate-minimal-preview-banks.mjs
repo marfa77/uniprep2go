@@ -4,7 +4,9 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const SKIP_SLUGS = new Set(["gmat-focus-readiness-check"]);
+const SKIP_SLUGS = new Set([
+  "gmat-focus-readiness-check", // expanded via generate-mock-banks-openrouter
+]);
 
 const TOPIC_FACTS = {
   core: {

@@ -456,7 +456,8 @@ export const mockExamConfigs: MockExamConfig[] = [
     examBody: "GMAC",
     lastUpdated: "2026-06-02",
     questionSourceNote:
-      "Original UniPrep2Go questions authored for the GMAT Focus Edition readiness check (15 Quant, 15 Verbal, 15 Data Insights).",
+      "Original UniPrep2Go questions authored for the GMAT Focus Edition readiness check (67 Quant, 67 Verbal, 66 Data Insights in the Anki bank; 45-question timed session).",
+    ankiDeckCardCount: 200,
   },
   {
     slug: "epa-608-readiness-check",

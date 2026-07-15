@@ -45,6 +45,8 @@ export type MockExamConfig = {
   gumroadProductId?: string;
   /** Override for markdown/LLM when questions are not deck-sourced */
   questionSourceNote?: string;
+  /** Total cards in linked Anki deck when bank size differs from topics × 50 */
+  ankiDeckCardCount?: number;
 };
 
 export type MockQuestionOption = {
