@@ -237,7 +237,7 @@ export function runRuleChecks(inventory) {
         message: `Mock title ${mock.titleLen} chars: "${mock.title}"`,
       });
     }
-    if (!mock.indexed && mock.linkedDeckSlug) {
+    if (!mock.indexed && mock.status === "live" && mock.linkedDeckSlug) {
       const deck = inventory.decks.find((d) => d.slug === mock.linkedDeckSlug);
       if (deck?.checkoutUrl && (deck.gumroadLinked || deck.checkoutProvider === "Gumroad" || deck.checkoutProvider === "Lemon Squeezy")) {
         issues.push({

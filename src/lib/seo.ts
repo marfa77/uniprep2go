@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getMockExamConfig } from "./mock-exams/configs";
 import { isMockExamRunnable } from "./mock-exams/question-bank";
 import { absoluteUrl, siteConfig } from "./site";
 
@@ -98,8 +99,12 @@ export function leafPageTitle(title: string, max = 60): Metadata["title"] {
   return { absolute: fitSeoTitle(title, max) };
 }
 
-/** Runnable mocks only — empty banks stay human-accessible but out of the index/sitemap. */
+/** Live mocks with complete banks only — preview mocks stay accessible but noindex. */
 export function shouldIndexMockExam(slug: string): boolean {
+  const config = getMockExamConfig(slug);
+  if (!config || config.status !== "live") {
+    return false;
+  }
   return isMockExamRunnable(slug);
 }
 
@@ -138,12 +143,17 @@ export function finalize(meta: Metadata): Metadata {
 
 export function homeMetadata(): Metadata {
   return finalize({
-    title: "Free Practice Tests & Readiness Checks",
-    description: SERVICE_DESCRIPTION_SHORT,
+    title: {
+      absolute:
+        "Free Practice Tests & Anki Decks | SIE, CFA, Insurance, Real Estate | UniPrep2Go",
+    },
+    description:
+      "26 free timed mocks and 74 Anki decks for SIE, CFA, FRM, insurance, and real estate. No signup. Start with the free FINRA SIE practice test.",
     alternates: { canonical: absoluteUrl("/") },
     openGraph: {
-      title: `${SITE_NAME} — Free Practice Tests & Exam Prep`,
-      description: SERVICE_TAGLINE,
+      title: "Free Practice Tests & Anki Decks | SIE, CFA, Insurance | UniPrep2Go",
+      description:
+        "26 free timed mocks and 74 Anki decks for US licensing and finance. Start with the free FINRA SIE practice test — no signup.",
       url: absoluteUrl("/"),
     },
   });

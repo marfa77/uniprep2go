@@ -2,6 +2,7 @@ import { getAllMockExams, getMockExamConfig } from "./configs";
 import { buildMockExamFaqs, buildMockSeoDescription } from "./seo";
 import type { MockExamConfig } from "./types";
 import { isMockExamRunnable } from "./question-bank";
+import { shouldIndexMockExam } from "../seo";
 import { mockFreeAccessNotice, mockFreeAccessPriceLabel } from "./pricing";
 import { absoluteUrl, siteConfig } from "../site";
 import {
@@ -121,19 +122,43 @@ ${config.disclaimer}
 `;
 }
 
-export function buildMockExamItemListJsonLd() {
-  const mocks = getAllMockExams();
+export function buildMockExamItemListJsonLd(options?: { indexedOnly?: boolean }) {
+  const indexedOnly = options?.indexedOnly ?? false;
+  const mocks = getAllMockExams().filter(
+    (mock) => !indexedOnly || shouldIndexMockExam(mock.slug),
+  );
 
   return {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: "UniPrep2Go finance mock exams",
+    "@type": "ItemList" as const,
+    name: "UniPrep2Go free practice tests",
+    numberOfItems: mocks.length,
     itemListElement: mocks.map((mock, index) => ({
-      "@type": "ListItem",
+      "@type": "ListItem" as const,
       position: index + 1,
       name: mock.title,
       url: absoluteUrl(`/mock-exams/${mock.slug}`),
     })),
+  };
+}
+
+export function buildFeaturedMockItemListJsonLd(slugs: string[]) {
+  const bySlug = new Map(getAllMockExams().map((mock) => [mock.slug, mock]));
+
+  return {
+    "@type": "ItemList" as const,
+    name: "UniPrep2Go featured US licensing practice tests",
+    itemListElement: slugs.flatMap((slug, index) => {
+      const mock = bySlug.get(slug);
+      if (!mock) return [];
+      return [
+        {
+          "@type": "ListItem" as const,
+          position: index + 1,
+          name: mock.title,
+          url: absoluteUrl(`/mock-exams/${mock.slug}`),
+        },
+      ];
+    }),
   };
 }
 

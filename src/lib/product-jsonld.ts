@@ -8,10 +8,20 @@ type ProductOfferInput = Pick<
   "checkoutUrl" | "checkoutSeller" | "price" | "pricePending"
 >;
 
-export function getProductImages(deck: Pick<AvailableDeck, "sampleCards">) {
-  return deck.sampleCards
+export function getProductImages(deck: Pick<AvailableDeck, "sampleCards" | "coverImage">) {
+  const fromSamples = deck.sampleCards
     .filter((card) => card.imageUrl)
     .map((card) => absoluteUrl(card.imageUrl));
+
+  if (fromSamples.length > 0) {
+    return fromSamples;
+  }
+
+  if (deck.coverImage) {
+    return [absoluteUrl(deck.coverImage)];
+  }
+
+  return [];
 }
 
 export function buildProductOffer(deck: ProductOfferInput) {

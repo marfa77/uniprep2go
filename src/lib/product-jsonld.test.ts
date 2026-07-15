@@ -56,6 +56,7 @@ describe("product json-ld", () => {
   it("requires at least one image for merchant product schema", () => {
     const deckWithoutImages = {
       ...pricedDeck,
+      coverImage: "",
       sampleCards: pricedDeck.sampleCards.map((card) => ({ ...card, imageUrl: "" })),
     };
 

@@ -37,7 +37,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfile>> = {
   "sie-full-mock": {
     title: "Free FINRA SIE Practice Test 2026 | 75-Question Mock Exam Online",
     description:
-      "Take a free FINRA SIE practice test online: 75 timed questions, 105 minutes, 70% pass target, FINRA topic-weighted scoring, full answer review, and pass/no-pass report. Independent SIE mock — not official FINRA material.",
+      "The only completely free, no-signup, FINRA-topic-weighted 75-question SIE mock with instant pass/no-pass report — updated for 2026. Timed 105 minutes, 70% pass target, full answer review. Independent SIE mock — not official FINRA material.",
     keywords: [
       "free sie practice test",
       "sie mock exam",
@@ -455,7 +455,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfile>> = {
     practiceTestLabel: "MRICS Quantity Surveying practice questions",
   },
   "cfa-level-2-readiness-check": {
-    title: "Free CFA Level 2 Practice Test | 60-Question Mock",
+    title: "Free CFA Level 2 Mock Exam 2026 | 60 Questions",
     description:
       "Free CFA Level 2 practice questions online: 60 timed questions across all ten topic areas, 90 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent prep — not CFA Institute material.",
     keywords: [
@@ -470,22 +470,6 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfile>> = {
       "A timed CFA Level 2 readiness diagnostic with vignette-style application prompts across ethics, FSA, equity, fixed income, derivatives, and portfolio management.",
     audience: "CFA Level 2 candidates who passed Level 1 and want a baseline before item-set practice blocks.",
     practiceTestLabel: "CFA Level 2 practice test",
-  },
-  "delf-b2-readiness-check": {
-    title: "Free DELF B2 Practice Test | 40-Question Mock",
-    description:
-      "Free DELF B2 French practice questions: 40 timed items across comprehension, grammar, vocabulary, and production skills, 60 minutes, 70% readiness target, and full answer review. Independent prep — not official DELF material.",
-    keywords: [
-      "delf b2 practice test",
-      "delf b2 exam prep free",
-      "french b2 mock exam",
-      "delf b2 vocabulary test",
-    ],
-    headline: "Free DELF B2 French Readiness Check",
-    intro:
-      "A timed DELF B2 readiness diagnostic covering B2-level grammar, vocabulary, and comprehension before the official four-skills exam.",
-    audience: "DELF B2 candidates and advanced French learners using spaced repetition for vocabulary retention.",
-    practiceTestLabel: "DELF B2 practice test",
   },
   "us-citizenship-readiness-check": {
     title: "Free U.S. Citizenship Practice Test | 30 Civics Questions",

@@ -49,7 +49,8 @@ describe("intent pages visibility", () => {
     }
 
     expect(urls).toContain(absoluteUrl("/decks/frm-part-1-anki-deck"));
-    expect(urls).toContain(absoluteUrl("/mock-exams/frm-part-1-readiness-check"));
+    expect(urls).toContain(absoluteUrl("/mock-exams/sie-full-mock"));
+    expect(urls).not.toContain(absoluteUrl("/mock-exams/frm-part-1-readiness-check"));
 
     expect(urls).toContain(`${siteConfig.url}/`);
     expect(urls).toContain(absoluteUrl("/anki-starter-kit"));

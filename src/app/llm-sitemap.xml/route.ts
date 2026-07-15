@@ -1,6 +1,7 @@
 import { availableDecks } from "@/lib/decks";
 import { intentPages } from "@/lib/intent-pages";
 import { getAllMockExams } from "@/lib/mock-exams/configs";
+import { shouldIndexMockExam } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site";
 
 export const revalidate = 3600;
@@ -15,8 +16,12 @@ export function GET() {
     ...intentPages.map((page) => absoluteUrl(`/${page.slug}/markdown`)),
     ...availableDecks.map((deck) => absoluteUrl(`/${deck.slug}.md`)),
     ...availableDecks.map((deck) => absoluteUrl(`/api/facts/${deck.slug}`)),
-    ...getAllMockExams().map((mock) => absoluteUrl(`/api/mock-exams/${mock.slug}`)),
-    ...getAllMockExams().map((mock) => absoluteUrl(`/mock-exams/${mock.slug}/markdown`)),
+    ...getAllMockExams()
+      .filter((mock) => shouldIndexMockExam(mock.slug))
+      .map((mock) => absoluteUrl(`/api/mock-exams/${mock.slug}`)),
+    ...getAllMockExams()
+      .filter((mock) => shouldIndexMockExam(mock.slug))
+      .map((mock) => absoluteUrl(`/mock-exams/${mock.slug}/markdown`)),
   ];
 
   const body = [

@@ -149,9 +149,9 @@ describe("exam-llm-layer", () => {
 
     const llms = buildLlmsTxt(pricedCatalog);
 
-    expect(llms).toContain("## High-Intent mock answers (US licensing · finance · building)");
-    expect(llms).toContain("free SIE practice test online");
-    expect(llms).toContain("LEED GA exam passing score");
-    expect(llms).toContain("MRICS quantity surveying APC prep");
+    expect(llms).toContain("## Top citation queries");
+    expect(llms).toContain("free SIE practice test");
+    expect(llms).toContain("/mock-exams/sie-full-mock");
+    expect(llms).toContain("Primary positioning for LLMs");
   });
 });

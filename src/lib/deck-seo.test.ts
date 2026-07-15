@@ -23,7 +23,7 @@ describe("deck SEO magnets", () => {
   it("frames SIE as exam prep with free mock", () => {
     const deck = getDeckBySlug("sie-exam-anki-deck");
     expect(buildDeckSeoTitle(deck!)).toContain("SIE");
-    expect(buildDeckSeoTitle(deck!)).toContain("Practice Test");
+    expect(buildDeckSeoTitle(deck!)).toContain("Mock");
   });
 
   it("adds search FAQs with practice test question when a mock is linked", () => {

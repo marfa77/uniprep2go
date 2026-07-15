@@ -11,6 +11,7 @@ import {
   type DeckPrice,
 } from "./decks";
 import gumroadCatalog from "@/data/gumroad/building-anki-decks.json";
+import catalogListPrices from "@/data/catalog-list-prices.json";
 import { getGumroadProductRecord, isBuildingAnkiDeckSlug } from "./anki-deck-launch";
 import { PREP2GO_APP_STORE_MONTHLY_PRICE } from "./prep2go-app-decks";
 import { getRedisClient } from "./redis";
@@ -108,6 +109,61 @@ export function getStaticBuildingDeckPriceRecord(slug: string): SyncedPriceRecor
   return getBuildingGumroadFallbackPriceRecord(slug);
 }
 
+type CatalogListPriceConfig = {
+  defaults: {
+    Gumroad: { apkg: number; PDF: number };
+    "Lemon Squeezy": { apkg: number; PDF: number };
+    buildingGumroadUsd: number;
+  };
+  overrides: Record<string, number>;
+};
+
+const listPriceConfig = catalogListPrices as CatalogListPriceConfig;
+
+/** Static list prices when live checkout scrape fails — keeps CTAs and Product schema on-page. */
+export function getCatalogListPriceRecord(deck: CatalogAvailableDeck): SyncedPriceRecord | null {
+  const override = listPriceConfig.overrides[deck.slug];
+  if (override !== undefined) {
+    return {
+      amount: override,
+      currency: "USD",
+      syncedAt: new Date().toISOString(),
+      source: deck.checkoutProvider === "Lemon Squeezy" ? "lemon" : "gumroad",
+    };
+  }
+
+  if (deck.checkoutProvider === "Gumroad" && isBuildingAnkiDeckSlug(deck.slug)) {
+    return {
+      amount: listPriceConfig.defaults.buildingGumroadUsd,
+      currency: "USD",
+      syncedAt: new Date().toISOString(),
+      source: "gumroad",
+    };
+  }
+
+  if (deck.checkoutProvider === "Lemon Squeezy") {
+    const formatKey = deck.format === "PDF" ? "PDF" : "apkg";
+    return {
+      amount: listPriceConfig.defaults["Lemon Squeezy"][formatKey],
+      currency: "USD",
+      syncedAt: new Date().toISOString(),
+      source: "lemon",
+    };
+  }
+
+  if (deck.checkoutProvider === "Gumroad") {
+    const formatKey = deck.format === "PDF" ? "PDF" : "apkg";
+    return {
+      amount: listPriceConfig.defaults.Gumroad[formatKey],
+      currency: "USD",
+      syncedAt: new Date().toISOString(),
+      source: "gumroad",
+    };
+  }
+
+  return null;
+}
+
 export function formatCheckoutPrice(amount: number) {
   return amount % 1 === 0 ? `$${amount}` : `$${amount.toFixed(2)}`;
 }
@@ -127,7 +183,35 @@ export function formatDeckPriceLabel(
 }
 
 export function getCheckoutActionLabel(provider: CheckoutProvider) {
-  return provider === "App Store" ? "App Store" : "Buy";
+  if (provider === "App Store") {
+    return "Open in App Store";
+  }
+  if (provider === "Gumroad") {
+    return "Buy on Gumroad";
+  }
+  if (provider === "Lemon Squeezy") {
+    return "Buy on Lemon Squeezy";
+  }
+  return "Buy";
+}
+
+export function getDeckCheckoutCtaLabel(
+  deck: Pick<PricedDeck, "slug" | "shortName" | "format" | "facts" | "checkoutProvider" | "price" | "pricePending">,
+  priceLabel: string,
+) {
+  if (deck.checkoutProvider === "App Store") {
+    return getCheckoutActionLabel(deck.checkoutProvider);
+  }
+
+  const priceSuffix = deck.pricePending || deck.price.amount <= 0 ? "" : ` — ${priceLabel}`;
+
+  if (deck.format === "PDF") {
+    return `Get ${deck.shortName} PDF${priceSuffix}`;
+  }
+
+  const cards = deck.facts.cards;
+  const cardPart = cards > 0 ? `${cards}-Card ` : "";
+  return `Get ${cardPart}${deck.shortName} Deck${priceSuffix}`;
 }
 
 export function parseLemonVariantId(checkoutUrl: string) {
@@ -358,6 +442,10 @@ export async function resolveDeckPrice(deck: CatalogAvailableDeck): Promise<Pric
     if (buildingFallback) {
       return applyPriceRecordToDeck(deck, buildingFallback);
     }
+    const catalogFallback = getCatalogListPriceRecord(deck);
+    if (catalogFallback) {
+      return applyPriceRecordToDeck(deck, catalogFallback);
+    }
     return applyPendingPriceToDeck(deck);
   }
 
@@ -371,6 +459,10 @@ export async function resolveDeckPrice(deck: CatalogAvailableDeck): Promise<Pric
     const buildingFallback = getBuildingGumroadFallbackPriceRecord(deck.slug);
     if (buildingFallback) {
       return applyPriceRecordToDeck(deck, buildingFallback);
+    }
+    const catalogFallback = getCatalogListPriceRecord(deck);
+    if (catalogFallback) {
+      return applyPriceRecordToDeck(deck, catalogFallback);
     }
     return applyPendingPriceToDeck(deck);
   }

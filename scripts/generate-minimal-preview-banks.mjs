@@ -597,10 +597,16 @@ function makeQuestion(examSlug, topicId, topicLabel, seq) {
 
 async function main() {
   const { mockExamConfigs } = await import("../src/lib/mock-exams/configs.ts");
+  const { getCatalogDeckBySlug } = await import("../src/lib/decks.ts");
 
   for (const config of mockExamConfigs) {
     if (SKIP_SLUGS.has(config.slug)) continue;
     if (config.status !== "preview") continue;
+
+    const linkedDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
+    if (linkedDeck?.category === "language") {
+      continue;
+    }
 
     const bankPath = join(root, `src/data/mock-exams/${config.slug}.json`);
     let existing = [];
@@ -629,7 +635,6 @@ async function main() {
       "mrics-readiness-check",
       "mrics-quantity-surveying-readiness-check",
       "cfa-level-2-readiness-check",
-      "delf-b2-readiness-check",
       "us-citizenship-readiness-check",
     ]);
     if (!EMPTY_ONLY.has(config.slug)) {

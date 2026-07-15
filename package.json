@@ -23,7 +23,9 @@
     "audit:seo": "npx tsx scripts/seo-audit-openrouter.mjs --scope all --live",
     "audit:seo:rules": "npx tsx scripts/seo-audit-openrouter.mjs --scope all --rules-only",
     "audit:seo:gmat": "npx tsx scripts/seo-audit-openrouter.mjs --scope gmat --live",
-    "audit:seo:building": "npx tsx scripts/seo-audit-openrouter.mjs --scope building --live"
+    "audit:seo:building": "npx tsx scripts/seo-audit-openrouter.mjs --scope building --live",
+    "audit:visibility": "npx tsx scripts/visibility-audit-openrouter.mjs --scope all --live",
+    "audit:visibility:rules": "npx tsx scripts/visibility-audit-openrouter.mjs --scope all --rules-only"
   },
   "dependencies": {
     "@upstash/redis": "^1.38.0",

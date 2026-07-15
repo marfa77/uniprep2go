@@ -131,7 +131,7 @@ describe("checkout pricing", () => {
     expect(priced.checkoutProvider).toBe("App Store");
     expect(priced.price.amount).toBe(4.99);
     expect(formatDeckPriceLabel(priced)).toBe("From $4.99/mo");
-    expect(getCheckoutActionLabel(priced.checkoutProvider)).toBe("App Store");
+    expect(getCheckoutActionLabel(priced.checkoutProvider)).toBe("Open in App Store");
   });
 
   it("syncs live building decks from Gumroad and falls back to catalog default on failure", async () => {

@@ -10,7 +10,7 @@ import {
   buildSiteAiDescription,
 } from "@/lib/exam-llm-layer";
 import { withAiMetadata } from "@/lib/llm-meta";
-import { finalize, truncateSeoTitle } from "@/lib/seo";
+import { finalize, homeMetadata, shouldIndexMockExam } from "@/lib/seo";
 import {
   formatDeckPriceLabel,
   getCheckoutActionLabel,
@@ -32,8 +32,7 @@ import {
 } from "@/lib/building-cert-clusters";
 import { buildCatalogItemListJsonLd, buildSiteOrganizationJsonLd } from "@/lib/product-jsonld";
 import { getAllMockExams, getMockExamConfig, primaryMock } from "@/lib/mock-exams/configs";
-import { buildMockExamItemListJsonLd } from "@/lib/mock-exams/llm";
-import { isMockExamRunnable } from "@/lib/mock-exams/question-bank";
+import { buildFeaturedMockItemListJsonLd, buildMockExamItemListJsonLd } from "@/lib/mock-exams/llm";
 import { siteConfig } from "@/lib/site";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
 
@@ -97,11 +96,10 @@ const examPathLinks = [
     title: "Language and citizenship exams",
     description: "European Portuguese, French, German, Dutch, Italian, and immigration-focused Anki decks.",
     links: [
-      { href: "/mock-exams/delf-b2-readiness-check", label: "Free DELF B2 practice test" },
+      { href: "/language-certification-decks", label: "All language decks" },
       { href: "/decks/ciple-a2-european-portuguese-anki-deck", label: "CIPLE A2 Portuguese" },
       { href: "/decks/delf-b2-french-anki-deck", label: "DELF B2 French" },
       { href: "/decks/dutch-a2-inburgering-anki-deck", label: "Dutch A2 Inburgering" },
-      { href: "/#catalog-language", label: "All language decks" },
     ],
   },
 ];
@@ -112,7 +110,6 @@ const mockDeckRepairPairSlugs: Array<{ mockSlug: string; deckSlug: string }> = [
   { mockSlug: "servsafe-manager-mock", deckSlug: "servsafe-manager-anki-deck" },
   { mockSlug: "cfa-level-1-readiness-check", deckSlug: "cfa-level-1-anki-deck" },
   { mockSlug: "cfa-level-2-readiness-check", deckSlug: "cfa-level-2-anki-deck" },
-  { mockSlug: "delf-b2-readiness-check", deckSlug: "delf-b2-french-anki-deck" },
   { mockSlug: "us-citizenship-readiness-check", deckSlug: "us-citizenship-test-prep2go-app" },
   { mockSlug: "life-and-health-insurance-readiness-check", deckSlug: "life-and-health-insurance-exam-anki-deck" },
   { mockSlug: "california-real-estate-readiness-check", deckSlug: "california-real-estate-exam-anki-deck" },
@@ -137,60 +134,29 @@ const howItWorksSteps = [
   },
 ];
 
-export async function generateMetadata(): Promise<Metadata> {
-  const title = truncateSeoTitle(
-    "Free Practice Tests + Anki Flashcards for US Licensing, Finance & Language Exams",
-  );
+const featuredMockSlugs = [
+  "sie-full-mock",
+  "cfa-level-1-readiness-check",
+  "cfa-level-2-readiness-check",
+  "frm-part-1-readiness-check",
+  "servsafe-manager-mock",
+  "ptcb-pharmacy-technician-mock",
+  "series-7-readiness-check",
+  "life-and-health-insurance-readiness-check",
+] as const;
 
-  return withAiMetadata(
-    finalize({
-      title,
-      description:
-        "Free online practice tests for SIE, ServSafe Manager, PTCB, insurance, real estate, CFA, FRM, and Series exams, plus Anki flashcards and PDF study guides for weak-topic review.",
-      keywords: [
-        "free sie practice test",
-        "ptcb practice test",
-        "ptcb flashcards",
-        "servsafe manager practice test",
-        "insurance license practice exam",
-        "series 7 practice test",
-        "california real estate exam prep",
-        "pharmacy technician exam prep",
-        "cfa anki deck",
-        "frm anki deck",
-      ],
-      alternates: { canonical: "/" },
-      openGraph: {
-        title: "Free US licensing practice tests + flashcard decks | UniPrep2Go",
-        description:
-          "Timed free mocks for SIE, ServSafe, CFA, insurance, and real estate — plus independent Anki decks and PDFs to drill weak topics after your report.",
-        url: "/",
-        images: [
-          {
-            url: "/home/hero.webp",
-            width: 1200,
-            height: 630,
-            alt: "UniPrep2Go free online practice tests and exam prep flashcards",
-          },
-        ],
-      },
-      twitter: {
-        card: "summary_large_image",
-        images: ["/home/hero.webp"],
-      },
-    }),
-    {
-      aiDescription: buildSiteAiDescription(),
-      aiCategory: buildSiteAiCategory(),
-      path: "/",
-    },
-  );
+export async function generateMetadata(): Promise<Metadata> {
+  return withAiMetadata(homeMetadata(), {
+    aiDescription: buildSiteAiDescription(),
+    aiCategory: buildSiteAiCategory(),
+    path: "/",
+  });
 }
 
 export const revalidate = 3600;
 
 function mockCtaLabel(mock: MockExamConfig) {
-  if (!isMockExamRunnable(mock.slug)) return "View details";
+  if (!shouldIndexMockExam(mock.slug) && mock.status !== "live") return "Start readiness check";
   return mock.status === "live" ? "Start free mock" : "Start readiness check";
 }
 
@@ -236,6 +202,10 @@ export default async function HomePage() {
   const minPrice = prices.length > 0 ? Math.min(...prices) : 0;
   const maxPrice = prices.length > 0 ? Math.max(...prices) : 0;
   const mockExams = getAllMockExams();
+  const indexedMockCount = mockExams.filter((mock) => shouldIndexMockExam(mock.slug)).length;
+  const featuredMocks = featuredMockSlugs
+    .map((slug) => getMockExamConfig(slug))
+    .filter((mock): mock is MockExamConfig => mock !== undefined);
   const pdfProductCount = availableDecks.filter((deck) => deck.format === "PDF").length;
   const repairPairs = resolveRepairPairs(pricedBySlug);
   const buildingRepairPairs = resolveBuildingRepairPairs(pricedBySlug);
@@ -263,7 +233,8 @@ export default async function HomePage() {
       },
       buildSiteOrganizationJsonLd(),
       buildCatalogItemListJsonLd(availableDecks),
-      buildMockExamItemListJsonLd(),
+      buildMockExamItemListJsonLd({ indexedOnly: true }),
+      buildFeaturedMockItemListJsonLd([...featuredMockSlugs]),
       {
         "@type": "FAQPage",
         mainEntity: siteFaqs.map((faq) => ({
@@ -299,39 +270,38 @@ export default async function HomePage() {
                 Free practice tests first
               </p>
               <h1 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight text-balance text-[#18140f] sm:text-5xl">
-                Free online practice tests for US licensing exams
+                {indexedMockCount} Free Timed Mocks &amp; {availableDecks.length} Anki Decks for US Licensing &amp; Finance
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-8 text-[#4f493e]">
-                Start with a timed mock or readiness check on {siteConfig.name} — topic scoring,
-                answer review, and a pass/no-pass report that shows what to fix next. When the mock
-                flags weak areas, use the linked Anki decks and printable PDFs for daily drilling
-                between shifts or study sessions.
+                Start with a free timed practice test — topic scoring, answer review, and a pass/no-pass report.
+                When the mock flags weak areas, drill with the linked Anki deck or printable PDF. No signup required.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <a
-                  href="#repair-pairs"
-                  className="inline-flex items-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
+                <Link
+                  href="/mock-exams/sie-full-mock"
+                  className="inline-flex min-h-12 items-center rounded-lg bg-[#1f3a5f] px-6 py-3 text-base font-semibold text-[#fffaf0] transition hover:bg-[#152238] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+                  aria-label="Start timed FINRA SIE practice test"
                 >
-                  Free practice tests
-                </a>
-                <a
-                  href="#catalog"
-                  className="inline-flex items-center rounded-full border border-[#18140f]/20 bg-[#fffaf0]/70 px-6 py-3 text-sm font-semibold text-[#18140f] transition hover:border-[#18140f]"
+                  Start Free SIE Practice Test
+                </Link>
+                <Link
+                  href="/mock-exams"
+                  className="inline-flex min-h-12 items-center rounded-lg border border-[#18140f]/20 bg-[#fffaf0]/70 px-6 py-3 text-base font-semibold text-[#18140f] transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
                 >
-                  Browse flashcard decks
-                </a>
+                  Browse All {mockExams.length} Free Mocks
+                </Link>
               </div>
               <dl className="mt-10 grid gap-4 sm:grid-cols-3">
                 <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-4">
-                  <dt className="text-sm text-[#7a6e5a]">Product formats</dt>
+                  <dt className="text-sm text-[#7a6e5a]">Live practice tests</dt>
                   <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
-                    Mocks · decks · PDFs
+                    {indexedMockCount} indexed mocks
                   </dd>
                 </div>
                 <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-4">
-                  <dt className="text-sm text-[#7a6e5a]">Catalog size</dt>
+                  <dt className="text-sm text-[#7a6e5a]">Anki &amp; PDF catalog</dt>
                   <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
-                    {mockExams.length} mocks · {availableDecks.length} decks
+                    {availableDecks.length} decks
                   </dd>
                   {pdfProductCount > 0 ? (
                     <dd className="mt-1 text-sm text-[#7a6e5a]">
@@ -363,6 +333,36 @@ export default async function HomePage() {
                 unoptimized
                 width={1200}
               />
+            </div>
+          </div>
+        </section>
+
+        {/* Featured free mocks */}
+        <section className="border-b border-[#18140f]/10 bg-[#fffaf0]">
+          <div className="mx-auto max-w-6xl px-6 py-12 sm:px-10">
+            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Start here</p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
+              Top free practice tests for US licensing &amp; finance
+            </h2>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {featuredMocks.map((mock) => (
+                <article
+                  className="flex flex-col rounded-3xl border border-[#18140f]/10 bg-[#f7f3ea] p-5"
+                  key={mock.slug}
+                >
+                  <h3 className="text-lg font-semibold text-[#18140f]">{mock.shortTitle}</h3>
+                  <p className="mt-2 flex-1 text-sm leading-6 text-[#5f5749]">
+                    {mock.questionCount} questions · {mock.durationMinutes} min · pass {mock.passRule.passPercent}%
+                  </p>
+                  <Link
+                    aria-label={`${mockCtaLabel(mock)} for ${mock.shortTitle}`}
+                    className="mt-4 inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-4 py-2.5 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#152238]"
+                    href={`/mock-exams/${mock.slug}`}
+                  >
+                    {mockCtaLabel(mock)}
+                  </Link>
+                </article>
+              ))}
             </div>
           </div>
         </section>

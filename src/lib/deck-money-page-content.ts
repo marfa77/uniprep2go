@@ -187,9 +187,9 @@ Each card includes European Portuguese (PT-PT) audio and contextual examples ali
 
 DELF B2 evaluates four skills: oral comprehension, written comprehension, written production, and oral production. B2 expects argumentation, nuance, and vocabulary beyond everyday conversation — formal registers, idioms, and structured essays.
 
-### Study plan with the free practice test
+### Study plan
 
-Run the [free 40-question DELF B2 readiness check](/mock-exams/delf-b2-readiness-check) to baseline grammar and vocabulary gaps, then drill 20 cards/day from this 2000+ word deck. Keep listening practice separate from Anki — the deck builds lexical depth, not oral fluency alone.
+Drill 20 cards/day from this 2000+ word deck for eight weeks before your DELF session. Keep listening and oral production practice separate from Anki — the deck builds lexical depth and grammar recall, not spoken fluency alone.
 
 ### What makes this deck different
 

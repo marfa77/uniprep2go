@@ -22,22 +22,22 @@ export function SiteHeader() {
       </Link>
       <div className="flex items-center gap-4">
         <Link
-          className="font-medium text-[#4f493e] transition hover:text-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-          href="/#catalog"
+          className="font-medium text-[#4f493e] transition hover:text-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f]"
+          href="/mock-exams"
         >
-          Decks
+          Free mocks
         </Link>
         <Link
-          className="font-medium text-[#4f493e] transition hover:text-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+          className="font-medium text-[#4f493e] transition hover:text-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f]"
+          href="/#catalog"
+        >
+          Anki decks
+        </Link>
+        <Link
+          className="font-medium text-[#4f493e] transition hover:text-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f]"
           href="/building-certification-anki-decks"
         >
           Building certs
-        </Link>
-        <Link
-          className="font-medium text-[#4f493e] transition hover:text-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-          href="/mock-exams"
-        >
-          Practice tests
         </Link>
         <Link
           className="font-medium text-[#4f493e] transition hover:text-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"

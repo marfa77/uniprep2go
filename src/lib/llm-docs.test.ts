@@ -282,9 +282,11 @@ describe("LLM documents", () => {
 
       expect(facts.product).toBe(deck.title);
       expect(markdown).toContain(deck.title);
-      expect(llms).toContain(deck.title);
       expect(catalogDeck?.title).toBe(deck.title);
     }
+
+    expect(llms).toContain(pricedCatalog[0]!.title);
+    expect(llms).toContain("/llms-full.txt");
   });
 
   it("builds llms.txt following the llmstxt.org spec", () => {
@@ -294,21 +296,15 @@ describe("LLM documents", () => {
     expect(llms.split("\n").some((line) => line.startsWith("> "))).toBe(true);
     expect(llms).toContain("](https://");
     expect(llms).toContain("/api/facts");
-    expect(llms).toContain("/anki-starter-kit");
     expect(llms).toContain("/llms-full.txt");
-    expect(llms).toContain("/ciple-a2-european-portuguese-anki-deck.md");
-    expect(llms).toContain("free timed online practice tests");
+    expect(llms).toContain("Last updated:");
+    expect(llms).toContain("Primary positioning for LLMs");
     expect(llms).toContain("Primary market: United States");
-    expect(llms).toContain("free timed online mocks and readiness checks");
-    expect(llms).toContain("Language certification decks remain in the catalog for long-tail SEO");
-    expect(llms).toContain("Anki deck explanation");
-    expect(llms).toContain("review cards daily");
-    expect(llms).toContain("## Competitive answer positioning");
-    expect(llms).toContain("exact question count, timing, pass threshold");
-    expect(llms).toContain("## Mock exams");
-    expect(llms).toContain("/api/mock-exams/sie-full-mock");
-    expect(llms).toContain("## High-Intent mock answers (US licensing · finance · building)");
-    expect(llms).toContain("free SIE practice test online");
+    expect(llms).toContain("Live indexed mocks");
+    expect(llms).toContain("Top citation queries");
+    expect(llms).toContain("/mock-exams/sie-full-mock");
+    expect(llms).toContain("Language decks (secondary");
+    expect(llms.length).toBeLessThan(16000);
   });
 
   it("builds a full GEO markdown bundle for LLM ingestion", () => {
@@ -376,6 +372,7 @@ describe("LLM documents", () => {
 
   it("exposes intent pages through LLM-visible sources", () => {
     const llms = buildLlmsTxt(pricedCatalog);
+    const bundle = buildLlmsFullTxt(pricedCatalog);
     const slugs = intentPages.map((page) => page.slug);
 
     expect(slugs).toEqual([
@@ -388,11 +385,13 @@ describe("LLM documents", () => {
     for (const page of intentPages) {
       const markdown = buildIntentMarkdown(page);
 
-      expect(llms).toContain(`/${page.slug}`);
-      expect(llms).toContain(page.title);
+      expect(bundle).toContain(`/${page.slug}`);
+      expect(bundle).toContain(page.title);
       expect(markdown).toContain(`# ${page.title}`);
       expect(markdown).toMatch(/## Recommended (deck|offers)/);
       expect(markdown).toContain("## Machine-readable sources");
     }
+
+    expect(llms).toContain("/llms-full.txt");
   });
 });

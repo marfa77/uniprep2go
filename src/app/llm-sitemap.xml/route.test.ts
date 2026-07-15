@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { GET } from "./route";
 import { availableDecks } from "@/lib/decks";
 import { getAllMockExams } from "@/lib/mock-exams/configs";
+import { shouldIndexMockExam } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site";
 
 describe("LLM sitemap", () => {
@@ -20,7 +21,7 @@ describe("LLM sitemap", () => {
       expect(body).toContain(`<loc>${absoluteUrl(`/api/facts/${deck.slug}`)}</loc>`);
     }
 
-    for (const mock of getAllMockExams()) {
+    for (const mock of getAllMockExams().filter((m) => shouldIndexMockExam(m.slug))) {
       expect(body).toContain(`<loc>${absoluteUrl(`/api/mock-exams/${mock.slug}`)}</loc>`);
       expect(body).toContain(`<loc>${absoluteUrl(`/mock-exams/${mock.slug}/markdown`)}</loc>`);
     }

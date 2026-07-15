@@ -42,9 +42,6 @@ const cfpsDisclaimer =
 const ricsDisclaimer =
   "This is an independent readiness diagnostic. It is not official RICS APC assessment material and does not award MRICS chartered membership.";
 
-const languageDisclaimer =
-  "This is an independent readiness diagnostic. It is not official exam or certification material from DELF, CIEP, CAPLE, or other awarding bodies.";
-
 const citizenshipDisclaimer =
   "This is an independent civics practice tool. It is not official USCIS test material and does not guarantee naturalization interview results.";
 
@@ -150,7 +147,7 @@ export const mockExamConfigs: MockExamConfig[] = [
     title: "CFA Level 2 Readiness Check",
     shortTitle: "CFA L2 Readiness",
     linkedDeckSlug: "cfa-level-2-anki-deck",
-    status: "preview",
+    status: "live",
     accessMode: "free_demand_test",
     durationMinutes: 90,
     questionCount: 60,
@@ -182,39 +179,6 @@ export const mockExamConfigs: MockExamConfig[] = [
     description:
       "A 60-question CFA Level 2 readiness diagnostic with weighted topic scoring across all ten curriculum areas. Independent prep — not CFA Institute material.",
     examBody: "CFA Institute",
-    lastUpdated: "2026-07-15",
-  },
-  {
-    slug: "delf-b2-readiness-check",
-    title: "DELF B2 French Readiness Check",
-    shortTitle: "DELF B2 Readiness",
-    linkedDeckSlug: "delf-b2-french-anki-deck",
-    status: "preview",
-    accessMode: "free_demand_test",
-    durationMinutes: 60,
-    questionCount: 40,
-    passRule: {
-      type: "readiness_check",
-      passPercent: 70,
-      borderlinePercent: 65,
-      verdictLabels: {
-        pass: "READINESS PASS",
-        noPass: "NO PASS",
-        borderline: "BORDERLINE RISK",
-      },
-    },
-    topics: [
-      { id: "comprehension", label: "Reading & Listening Comprehension", questionCount: 10, weightPercent: 25, targetPercent: 70 },
-      { id: "grammar", label: "Grammar & Structure (B2)", questionCount: 10, weightPercent: 25, targetPercent: 70 },
-      { id: "vocabulary", label: "Vocabulary & Idioms", questionCount: 10, weightPercent: 25, targetPercent: 70 },
-      { id: "production", label: "Written & Oral Production Skills", questionCount: 10, weightPercent: 25, targetPercent: 70 },
-    ],
-    officialSourceNote:
-      "Readiness check for DELF B2 French vocabulary and structure — not an official CIEP/DELF exam simulation.",
-    disclaimer: languageDisclaimer,
-    description:
-      "A 40-question DELF B2 readiness diagnostic covering comprehension, grammar, vocabulary, and production skills. Independent prep — not official DELF material.",
-    examBody: "CIEP / DELF",
     lastUpdated: "2026-07-15",
   },
   {

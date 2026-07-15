@@ -22,7 +22,6 @@ import cfpsReadinessBank from "@/data/mock-exams/cfps-readiness-check.json";
 import mricsReadinessBank from "@/data/mock-exams/mrics-readiness-check.json";
 import mricsQuantitySurveyingReadinessBank from "@/data/mock-exams/mrics-quantity-surveying-readiness-check.json";
 import cfaLevel2ReadinessBank from "@/data/mock-exams/cfa-level-2-readiness-check.json";
-import delfB2ReadinessBank from "@/data/mock-exams/delf-b2-readiness-check.json";
 import usCitizenshipReadinessBank from "@/data/mock-exams/us-citizenship-readiness-check.json";
 import { getMockExamConfig } from "./configs";
 import type { MockQuestion } from "./types";
@@ -52,7 +51,6 @@ const banksBySlug: Record<string, MockQuestion[]> = {
   "mrics-readiness-check": mricsReadinessBank as unknown as MockQuestion[],
   "mrics-quantity-surveying-readiness-check": mricsQuantitySurveyingReadinessBank as unknown as MockQuestion[],
   "cfa-level-2-readiness-check": cfaLevel2ReadinessBank as unknown as MockQuestion[],
-  "delf-b2-readiness-check": delfB2ReadinessBank as unknown as MockQuestion[],
   "us-citizenship-readiness-check": usCitizenshipReadinessBank as unknown as MockQuestion[],
 };
 

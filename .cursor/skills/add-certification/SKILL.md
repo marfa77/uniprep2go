@@ -21,6 +21,8 @@ Minimum:
 
 Optional: target audience, competitor queries, price override.
 
+**Do not create mock exams for `language` category decks** (DELF, CIPLE, DELE, etc.). Language products are Anki-only; no `/mock-exams/*` config, bank, or funnel links.
+
 ## Reference implementation
 
 Copy patterns from **EPA 608**:

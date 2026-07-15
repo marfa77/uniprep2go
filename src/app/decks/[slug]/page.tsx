@@ -34,7 +34,7 @@ import {
 } from "@/lib/deck-funnel";
 import { getDeckShortPitch } from "@/lib/deck-page-copy";
 import { catalogAvailableDecks, categoryLabels } from "@/lib/decks";
-import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
+import { formatDeckPriceLabel, getDeckCheckoutCtaLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import {
   buildDeckSeoDescription,
   buildDeckSeoHeadline,
@@ -115,12 +115,7 @@ export default async function DeckPage({
   }
 
   const priceLabel = formatDeckPriceLabel(deck);
-  const checkoutActionLabel =
-    deck.checkoutProvider === "App Store"
-      ? "Open in App Store"
-      : deck.format === "PDF"
-        ? "Buy the PDF"
-        : "Buy the deck";
+  const checkoutCtaLabel = getDeckCheckoutCtaLabel(deck, priceLabel);
   const linkedMock = getDeckLinkedMock(deck.slug);
   const practiceMock = getDeckPracticeMock(deck.slug);
   const mockFirst = isMockFirstDeckPage(deck.slug);
@@ -264,55 +259,46 @@ export default async function DeckPage({
         />
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <TrackedCheckoutLink
+            aria-label={`${checkoutCtaLabel} on ${deck.checkoutProvider}`}
+            className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-6 py-3 text-base font-semibold text-[#fffaf0] transition hover:bg-[#152238] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+            deckSlug={deck.slug}
+            href={deck.checkoutUrl}
+            source="deck_page_cta"
+          >
+            {checkoutCtaLabel}
+          </TrackedCheckoutLink>
           {practiceMock ? (
             <Link
-              className="inline-flex items-center justify-center rounded-full bg-[#1f3a5f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#152238] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+              aria-label={`Try free ${practiceMock.questionCount}-question ${deck.shortName} practice test`}
+              className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#18140f]/25 px-6 py-3 text-base font-semibold transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
               href={`/mock-exams/${practiceMock.slug}`}
             >
-              Take free {practiceMock.questionCount}-question practice test
+              Try free {practiceMock.questionCount}-question practice test
             </Link>
-          ) : null}
-          {mockFirst && practiceMock ? (
-            <>
-              <TrackedCheckoutLink
-                className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-                deckSlug={deck.slug}
-                href={deck.checkoutUrl}
-                source="deck_page_cta"
-              >
-                {checkoutActionLabel} — {priceLabel}
-              </TrackedCheckoutLink>
-            </>
+          ) : deck.checkoutProvider === "App Store" ? (
+            <Link
+              className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#18140f]/25 px-6 py-3 text-base font-semibold transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+              href={deck.checkoutUrl}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              View on App Store
+            </Link>
           ) : (
-            <>
-              <TrackedCheckoutLink
-                className="inline-flex items-center justify-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-                deckSlug={deck.slug}
-                href={deck.checkoutUrl}
-                source="deck_page_cta"
-              >
-                {checkoutActionLabel} — {priceLabel}
-              </TrackedCheckoutLink>
-              {deck.checkoutProvider === "App Store" ? (
-                <Link
-                  className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-                  href={deck.checkoutUrl}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  View on App Store
-                </Link>
-              ) : practiceMock ? null : (
-                <Link
-                  className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-                  href={secondaryCta.href}
-                >
-                  {secondaryCta.label}
-                </Link>
-              )}
-            </>
+            <Link
+              className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#18140f]/25 px-6 py-3 text-base font-semibold transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+              href={secondaryCta.href}
+            >
+              {secondaryCta.label}
+            </Link>
           )}
         </div>
+        {deck.checkoutProvider !== "App Store" ? (
+          <p className="mt-3 text-sm text-[#5f5749]">
+            Instant {deck.format === "PDF" ? "PDF" : ".apkg"} download · {deck.checkoutProvider} secure checkout
+          </p>
+        ) : null}
 
         <DeckApkgPendingNotice deck={deck} />
 

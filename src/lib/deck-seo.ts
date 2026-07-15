@@ -125,7 +125,7 @@ function defaultKeywords(deck: CatalogAvailableDeck, mock?: MockExamConfig): str
 
 const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   "cfa-level-1-anki-deck": {
-    title: "CFA L1 Flashcards 2026 | 342 Cards + Free Mock",
+    title: "Best CFA Level 1 Anki Deck 2026 | 342 Cards + Free Mock",
     headline: "CFA Level 1 Exam Prep — 342+ Flashcards + Free Mock",
     studyLabel: "CFA Level 1 exam prep",
     description:
@@ -173,8 +173,8 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Candidates who need sub-three-second formula retrieval under item-set timing print this reference for typeset formula tables and an 80-question recall drill — then drill weak topics in the companion Anki deck.",
   },
   "cfa-level-1-formula-reference-2026": {
-    title: "CFA L1 Formula Sheet PDF 2026 | 250 Formulas + Drill",
-    headline: "CFA Level 1 Formula Reference — 250 Formulas + 98 Definitions",
+    title: "CFA L1 Formula Sheet PDF 2026 | 250 Formulas + Free Mock",
+    headline: "CFA Level 1 Formula Sheet PDF 2026 — 250 Formulas, 98 Definitions + Free Mock",
     studyLabel: "CFA Level 1 exam prep",
     description:
       "CFA Level 1 formula quick reference PDF: 250 typeset formulas and 98 key definitions across 10 topic areas, 80-question recall drill with explanations, 54 print-ready pages. Pairs with 342+ Anki deck and free 60-question mock. Recall companion — not CFA Institute curriculum.",
@@ -205,11 +205,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Risk and finance professionals preparing for FRM Part 1 use daily Anki review for VaR, Greeks, credit risk, and market mechanics, then validate weak topics with the free FRM readiness check.",
   },
   "sie-exam-anki-deck": {
-    title: "Free SIE Practice Test + 300 Cards | FINRA 2026",
+    title: "SIE Anki Deck 2026 | 300 Cards + Free 75-Q Mock",
     headline: "FINRA SIE Exam Prep — 300 Flashcards + Free Mock",
     studyLabel: "FINRA SIE exam prep",
     description:
-      "FINRA SIE exam prep with 300 Anki flashcards aligned to official topic weights — capital markets, products and risks, trading, customer accounts, and regulations — plus a free 75-question SIE practice test online. Free SIE study guide alternative for US securities industry entrants.",
+      "FINRA SIE exam prep: 300 Anki flashcards + free 75-question timed mock exam. Topic-weighted to official FINRA blueprint. Independent study aid — not official FINRA material. Perfect SIE study guide alternative.",
     keywords: [
       "sie exam prep",
       "sie exam study guide free",
@@ -221,7 +221,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Americans entering brokerage and securities roles start with the SIE — this deck covers FINRA topic weights for daily recall, and the linked free mock mirrors the 75-question / 105-minute format.",
   },
   "series-7-anki-deck": {
-    title: "Series 7 Prep 2026 | 300 Cards + Free Practice Test",
+    title: "Series 7 Anki Deck 2026 | 300 Cards + Free Mock",
     headline: "Series 7 Top-Off Exam Prep — 300 Flashcards + Free Mock",
     studyLabel: "Series 7 exam prep",
     description:

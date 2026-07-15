@@ -7,151 +7,91 @@ import {
   buildMockIndexAiCategory,
   buildMockIndexAiDescription,
 } from "@/lib/exam-llm-layer";
-import { getAllMockExams } from "@/lib/mock-exams/configs";
+import { getAllMockExams, getMockExamConfig } from "@/lib/mock-exams/configs";
 import { buildMockExamItemListJsonLd } from "@/lib/mock-exams/llm";
 import { buildMockSeoTitle } from "@/lib/mock-exams/seo";
 import { mockFreeAccessNotice } from "@/lib/mock-exams/pricing";
-import { isMockExamRunnable } from "@/lib/mock-exams/question-bank";
 import { withAiMetadata } from "@/lib/llm-meta";
-import { finalize, truncateSeoTitle } from "@/lib/seo";
+import { finalize, leafPageTitle, shouldIndexMockExam } from "@/lib/seo";
 import { absoluteUrl, siteConfig } from "@/lib/site";
+import { getCatalogDeckBySlug } from "@/lib/decks";
 
-const usPriorityMockLinks = [
+const featuredMockSlugs = [
+  "sie-full-mock",
+  "cfa-level-1-readiness-check",
+  "cfa-level-2-readiness-check",
+  "frm-part-1-readiness-check",
+  "servsafe-manager-mock",
+  "ptcb-pharmacy-technician-mock",
+  "series-7-readiness-check",
+  "life-and-health-insurance-readiness-check",
+] as const;
+
+const mockClusters = [
   {
-    title: "FINRA securities licensing",
-    body: "SIE first, then Series 7 and Series 63 readiness checks for registered-rep candidates.",
-    links: [
-      { href: "/mock-exams/sie-full-mock", label: "Free SIE practice test" },
-      { href: "/mock-exams/series-7-readiness-check", label: "Series 7 readiness check" },
-      { href: "/mock-exams/series-63-readiness-check", label: "Series 63 readiness check" },
+    id: "licensing",
+    label: "US licensing & insurance",
+    slugs: [
+      "sie-full-mock",
+      "series-7-readiness-check",
+      "series-63-readiness-check",
+      "life-and-health-insurance-readiness-check",
+      "property-and-casualty-insurance-readiness-check",
+      "california-real-estate-readiness-check",
+      "ptcb-pharmacy-technician-mock",
+      "servsafe-manager-mock",
     ],
   },
   {
-    title: "Food safety manager certification",
-    body: "ServSafe Manager / CFPM practice with a 90-question timed mock and domain review.",
-    links: [{ href: "/mock-exams/servsafe-manager-mock", label: "Free ServSafe Manager practice test" }],
-  },
-  {
-    title: "HVAC / EPA refrigerant certification",
-    body: "EPA Section 608 readiness check for Core plus Types I–III before your proctored certifier exam.",
-    links: [{ href: "/mock-exams/epa-608-readiness-check", label: "EPA 608 HVAC readiness check" }],
-  },
-  {
-    title: "Building automation (BMS / BAS)",
-    body: "BACnet, HVAC sequences, operator workflows, and commissioning baseline before vendor platform training.",
-    links: [{ href: "/mock-exams/bms-bas-readiness-check", label: "BMS / BAS readiness check" }],
-  },
-  {
-    title: "Chartered surveying (MRICS / APC)",
-    body: "RICS APC readiness checks — general chartered pathway plus Quantity Surveying and Construction specialty competencies before submission and final interview.",
-    links: [
-      { href: "/mock-exams/mrics-readiness-check", label: "MRICS APC readiness check (all pathways)" },
-      { href: "/mock-exams/mrics-quantity-surveying-readiness-check", label: "MRICS Quantity Surveying readiness check" },
+    id: "finance",
+    label: "Finance credentials",
+    slugs: [
+      "cfa-level-1-readiness-check",
+      "cfa-level-2-readiness-check",
+      "frm-part-1-readiness-check",
+      "gmat-focus-readiness-check",
     ],
   },
   {
-    title: "Fire protection (CFPS)",
-    body: "NFPA Certified Fire Protection Specialist readiness check — eight exam domains weighted to the Fire Protection Handbook blueprint before Prometric scheduling.",
-    links: [{ href: "/mock-exams/cfps-readiness-check", label: "CFPS readiness check" }],
-  },
-  {
-    title: "Occupational health & safety (NEBOSH)",
-    body: "NEBOSH International General Certificate readiness check — management systems, workplace hazards, and GIC2 risk assessment before accredited Learning Partner training.",
-    links: [{ href: "/mock-exams/nebosh-readiness-check", label: "NEBOSH IGC readiness check" }],
-  },
-  {
-    title: "Data centre professional (CDCP)",
-    body: "EXIN EPI Certified Data Centre Professional readiness check — facilities, power, cooling, fire, security, and operations before accredited training.",
-    links: [{ href: "/mock-exams/cdcp-readiness-check", label: "CDCP readiness check" }],
-  },
-  {
-    title: "Green building & wellness credentials",
-    body: "LEED, WELL AP, CEM, and ASHRAE readiness checks before USGBC, IWBI, AEE, or ASHRAE exam registration.",
-    links: [
-      { href: "/mock-exams/leed-green-associate-readiness-check", label: "LEED GA readiness check" },
-      { href: "/mock-exams/leed-ap-bd-c-readiness-check", label: "LEED AP BD+C readiness check" },
-      { href: "/mock-exams/well-ap-readiness-check", label: "WELL AP readiness check" },
-      { href: "/mock-exams/cem-readiness-check", label: "CEM readiness check" },
-      { href: "/mock-exams/ashrae-certifications-readiness-check", label: "ASHRAE certifications readiness check" },
+    id: "building",
+    label: "Building & sustainability",
+    slugs: [
+      "epa-608-readiness-check",
+      "leed-green-associate-readiness-check",
+      "well-ap-readiness-check",
+      "mrics-readiness-check",
     ],
   },
-  {
-    title: "State licensing exams",
-    body: "Insurance producer, California real estate, and PTCB pharmacy technician readiness checks before paid prep decisions.",
-    links: [
-      { href: "/mock-exams/life-and-health-insurance-readiness-check", label: "Life & Health insurance mock" },
-      { href: "/mock-exams/property-and-casualty-insurance-readiness-check", label: "P&C insurance mock" },
-      { href: "/mock-exams/california-real-estate-readiness-check", label: "California real estate mock" },
-      { href: "/mock-exams/ptcb-pharmacy-technician-mock", label: "Free PTCB / PTCE practice test" },
-    ],
-  },
-  {
-    title: "Finance credential diagnostics",
-    body: "CFA and FRM readiness checks to find weak topic rows before you drill formulas or flashcards.",
-    links: [
-      { href: "/mock-exams/cfa-level-1-readiness-check", label: "CFA Level 1 readiness check" },
-      { href: "/mock-exams/frm-part-1-readiness-check", label: "FRM Part 1 readiness check" },
-    ],
-  },
-  {
-    title: "MBA admissions (GMAT Focus)",
-    body: "Timed Quant, Verbal, and Data Insights baseline before official GMAC prep or tutoring.",
-    links: [{ href: "/mock-exams/gmat-focus-readiness-check", label: "GMAT Focus readiness check" }],
-  },
-];
+] as const;
+
+function mockCtaLabel(status: string) {
+  return status === "live" ? "Start free mock" : "Start readiness check";
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   const mockCount = getAllMockExams().length;
-  const title = truncateSeoTitle(
-    "Free Practice Tests | SIE, MRICS, LEED, WELL AP, CFPS",
-  );
 
   return withAiMetadata(
     finalize({
-      title,
+      title: leafPageTitle("Free Mock Exams 2026 | SIE, CFA, FRM, ServSafe & More"),
       description:
-        "Free online practice tests: FINRA SIE, MRICS APC, LEED, WELL AP, CFPS, NEBOSH, CDCP, CEM, ASHRAE, ServSafe, EPA 608, BMS, GMAT, CFA, insurance, and more. Timed, scored, no signup.",
+        "Free timed mock exams for SIE, CFA, FRM, ServSafe, PTCB, insurance, and real estate. Topic scoring, answer review, no signup.",
       keywords: [
         "free practice test",
-        "mrics practice questions",
-        "mrics quantity surveying apc",
-        "rics qs prep",
-        "chartered surveyor exam",
-        "well accredited professional exam",
-        "well v2 exam prep",
-        "certified fire protection specialist exam",
-        "nfpa cfps prep",
-        "nebosh practice test",
-        "nebosh igc exam",
-        "nebosh gic1 prep",
-        "cdcp practice test",
-        "certified data centre professional exam",
-        "exin cdcp prep",
-        "ashrae certification practice test",
-        "bemp exam prep",
-        "bcxp practice test",
-        "leed green associate practice test",
-        "leed ap practice test",
-        "cem practice test",
         "free sie practice test",
+        "cfa level 1 mock exam",
+        "cfa level 2 mock exam",
         "servsafe manager practice test",
-        "epa 608 practice test",
-        "bms practice test",
-        "building automation practice exam",
-        "hvac certification practice test",
-        "gmat focus practice test",
-        "insurance license practice exam",
-        "series 7 practice test",
         "frm part 1 practice test",
-        "california real estate practice test",
+        "insurance license practice exam",
       ],
       alternates: {
         canonical: "/mock-exams",
       },
       openGraph: {
-        title: "Free Practice Tests & Mock Exams | UniPrep2Go",
+        title: "Free Timed Mock Exams | UniPrep2Go",
         description:
-          "Free online practice tests for SIE, MRICS, LEED, WELL AP, CFPS, NEBOSH, CDCP, CEM, ASHRAE, ServSafe, EPA 608, BMS, GMAT, CFA, insurance, and California real estate with topic scoring and answer review.",
+          "Free online practice tests for US licensing and finance with topic scoring and answer review.",
         url: "/mock-exams",
         type: "website",
         images: [
@@ -159,16 +99,9 @@ export async function generateMetadata(): Promise<Metadata> {
             url: "/home/hero.webp",
             width: 1200,
             height: 630,
-            alt: "UniPrep2Go free practice tests — SIE, ServSafe, insurance, CFA, Series 7",
+            alt: "UniPrep2Go free practice tests",
           },
         ],
-      },
-      twitter: {
-        card: "summary_large_image",
-        title: "Free Practice Tests & Mock Exams | UniPrep2Go",
-        description:
-          "Free timed mocks for SIE, ServSafe Manager, CFA, insurance, and real estate with topic scoring and answer review.",
-        images: ["/home/hero.webp"],
       },
     }),
     {
@@ -183,7 +116,11 @@ export const revalidate = 3600;
 
 export default function MockExamsIndexPage() {
   const mocks = getAllMockExams();
+  const indexedCount = mocks.filter((mock) => shouldIndexMockExam(mock.slug)).length;
   const pageUrl = absoluteUrl("/mock-exams");
+  const featuredMocks = featuredMockSlugs
+    .map((slug) => getMockExamConfig(slug))
+    .filter((mock) => mock !== undefined);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -191,13 +128,13 @@ export default function MockExamsIndexPage() {
       {
         "@type": "WebPage",
         "@id": `${pageUrl}#webpage`,
-        name: "Free Practice Tests Online | UniPrep2Go",
+        name: "Free Timed Mock Exams for US Licensing & Finance",
         description:
-          "Free online practice tests for SIE, ServSafe Manager, CFA, FRM, Series 7, insurance, and California real estate. Timed, scored, no signup.",
+          "Free online practice tests for SIE, ServSafe, CFA, FRM, insurance, and California real estate.",
         url: pageUrl,
         isPartOf: { "@id": `${siteConfig.url}/#website` },
       },
-      buildMockExamItemListJsonLd(),
+      buildMockExamItemListJsonLd({ indexedOnly: true }),
     ],
   };
 
@@ -212,72 +149,124 @@ export default function MockExamsIndexPage() {
       <article className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12">
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Free practice tests</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-          Free online practice tests for US licensing and finance exams
+          Free timed mock exams for US licensing &amp; finance
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          {siteConfig.name} converts deck content into timed practice tests with weighted topic scoring,
-          answer review, and a pass/no-pass readiness report. Americans use these free mocks for FINRA SIE,
-          ServSafe Manager, insurance producer licensing, California real estate, CFA Level 1, FRM Part 1,
-          and FINRA Series exams — then drill weak topics with the linked Anki flashcard deck.{" "}
-          {mockFreeAccessNotice}
+          {indexedCount} live indexed mocks plus {mocks.length - indexedCount} preview readiness checks.
+          Timed scoring, topic breakdown, and linked Anki deck repair. {mockFreeAccessNotice}
         </p>
         <LlmFactsStrip mockCount={mocks.length} variant="mock-index" />
-        <ul className="mt-6 grid gap-3 text-sm leading-6 text-[#4f493e] sm:grid-cols-3">
-          <li className="rounded-2xl bg-[#18140f]/5 px-4 py-3">Timed exam-style questions</li>
-          <li className="rounded-2xl bg-[#18140f]/5 px-4 py-3">Weighted topic score breakdown</li>
-          <li className="rounded-2xl bg-[#18140f]/5 px-4 py-3">Wrong-answer review and linked deck repair plan</li>
-        </ul>
 
-        <section className="mt-10 rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-5 sm:p-6">
-          <h2 className="text-2xl font-semibold tracking-tight">
-            US exam prep: mocks first, decks second
-          </h2>
-          <p className="mt-3 text-sm leading-7 text-[#4f493e]">
-            Use the free mock to learn whether you are ready. If the report exposes weak topics,
-            move to the linked Anki deck or PDF for daily remediation.
-          </p>
-          <div className="mt-5 grid gap-4 md:grid-cols-2">
-            {usPriorityMockLinks.map((group) => (
-              <article className="rounded-2xl bg-[#18140f]/5 p-4" key={group.title}>
-                <h3 className="font-semibold text-[#18140f]">{group.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-[#5f5749]">{group.body}</p>
-                <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium text-[#1f3a5f]">
-                  {group.links.map((link) => (
-                    <Link className="underline-offset-4 hover:underline" href={link.href} key={link.href}>
-                      {link.label}
+        <section className="mt-10">
+          <h2 className="text-2xl font-semibold tracking-tight">Featured free mocks</h2>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2">
+            {featuredMocks.map((mock) => {
+              const linkedDeck = getCatalogDeckBySlug(mock.linkedDeckSlug);
+              return (
+                <article
+                  className="flex flex-col rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-5"
+                  key={mock.slug}
+                >
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <h3 className="text-lg font-semibold">{buildMockSeoTitle(mock)}</h3>
+                    <span className="rounded-full bg-[#1f3a5f]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-[#1f3a5f]">
+                      {mock.status === "live" ? "Live" : "Preview"}
+                    </span>
+                  </div>
+                  <p className="mt-2 flex-1 text-sm text-[#5f5749]">
+                    {mock.questionCount} questions · {mock.durationMinutes} min · pass {mock.passRule.passPercent}%
+                  </p>
+                  {linkedDeck ? (
+                    <Link
+                      className="mt-2 text-sm font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+                      href={`/decks/${linkedDeck.slug}`}
+                    >
+                      {linkedDeck.shortName} Anki deck
                     </Link>
-                  ))}
-                </div>
-              </article>
-            ))}
+                  ) : null}
+                  <Link
+                    aria-label={`${mockCtaLabel(mock.status)} for ${mock.shortTitle}`}
+                    className="mt-4 inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-4 py-2.5 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#152238]"
+                    href={`/mock-exams/${mock.slug}`}
+                  >
+                    {mockCtaLabel(mock.status)}
+                  </Link>
+                </article>
+              );
+            })}
           </div>
         </section>
 
-        <div className="mt-10 space-y-4">
-          {mocks.map((mock) => {
-            const runnable = isMockExamRunnable(mock.slug);
+        {mockClusters.map((cluster) => (
+          <section className="mt-12" key={cluster.id}>
+            <h2 className="text-2xl font-semibold tracking-tight">{cluster.label}</h2>
+            <ul className="mt-5 space-y-3">
+              {cluster.slugs.map((slug) => {
+                const mock = getMockExamConfig(slug);
+                if (!mock) return null;
+                const linkedDeck = getCatalogDeckBySlug(mock.linkedDeckSlug);
+                return (
+                  <li key={slug}>
+                    <Link
+                      className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] px-4 py-3 hover:border-[#1f3a5f]/30"
+                      href={`/mock-exams/${slug}`}
+                    >
+                      <span className="font-medium">{mock.shortTitle}</span>
+                      <span className="text-sm text-[#5f5749]">
+                        {mock.questionCount} Q · {mock.status}
+                        {linkedDeck ? ` · ${linkedDeck.shortName} deck` : ""}
+                      </span>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        ))}
 
-            return (
-              <Link
-                key={mock.slug}
-                className="block rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 transition hover:border-[#1f3a5f]/30"
-                href={`/mock-exams/${mock.slug}`}
-              >
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                  <h2 className="text-xl font-semibold">{buildMockSeoTitle(mock)}</h2>
-                  <span className="rounded-full bg-[#1f3a5f]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-[#1f3a5f]">
-                    {mock.status === "live" ? "Full mock available" : "Preview readiness check"}
-                  </span>
-                </div>
-                <p className="mt-3 text-sm leading-7 text-[#4f493e]">{mock.description}</p>
-                <p className="mt-4 text-sm text-[#5f5749]">
-                  {mock.questionCount} questions · {mock.durationMinutes} minutes · pass {mock.passRule.passPercent}%
-                  {runnable ? "" : " · bank expanding"}
-                </p>
-              </Link>
-            );
-          })}
-        </div>
+        <section className="mt-12 rounded-3xl border border-[#18140f]/10 bg-[#18140f]/5 p-5">
+          <h2 className="text-lg font-semibold">Browse all Anki decks</h2>
+          <p className="mt-2 text-sm text-[#5f5749]">
+            After your mock report, drill weak topics with the linked flashcard deck.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-4 text-sm font-medium text-[#1f3a5f]">
+            <Link className="underline-offset-4 hover:underline" href="/finance-anki-decks">
+              Finance decks
+            </Link>
+            <Link className="underline-offset-4 hover:underline" href="/building-certification-anki-decks">
+              Building certs
+            </Link>
+            <Link className="underline-offset-4 hover:underline" href="/#catalog">
+              Full catalog
+            </Link>
+          </div>
+        </section>
+
+        <details className="mt-10 rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-5">
+          <summary className="cursor-pointer font-semibold">All {mocks.length} mocks (machine-readable)</summary>
+          <div className="mt-4 overflow-x-auto">
+            <table className="w-full text-left text-sm">
+              <thead>
+                <tr className="border-b border-[#18140f]/10 text-[#5f5749]">
+                  <th className="py-2 pr-4">Slug</th>
+                  <th className="py-2 pr-4">Status</th>
+                  <th className="py-2 pr-4">Questions</th>
+                  <th className="py-2">Linked deck</th>
+                </tr>
+              </thead>
+              <tbody>
+                {mocks.map((mock) => (
+                  <tr className="border-b border-[#18140f]/5" key={mock.slug}>
+                    <td className="py-2 pr-4 font-mono text-xs">{mock.slug}</td>
+                    <td className="py-2 pr-4">{mock.status}</td>
+                    <td className="py-2 pr-4">{mock.questionCount}</td>
+                    <td className="py-2">{mock.linkedDeckSlug}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </details>
       </article>
 
       <SiteFooter />

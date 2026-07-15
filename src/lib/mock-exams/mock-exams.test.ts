@@ -21,6 +21,14 @@ describe("mock exam configs", () => {
     expect(primaryMock.status).toBe("live");
   });
 
+  it("does not attach mocks to language certification decks", async () => {
+    const { getCatalogDeckBySlug } = await import("../decks");
+    for (const config of getAllMockExams()) {
+      const deck = getCatalogDeckBySlug(config.linkedDeckSlug);
+      expect(deck?.category, config.slug).not.toBe("language");
+    }
+  });
+
   it("defines SIE topic counts that sum to 75", () => {
     const config = getMockExamConfig("sie-full-mock");
     expect(config?.questionCount).toBe(75);
@@ -134,7 +142,6 @@ describe("question bank from deck content", () => {
       "mrics-readiness-check",
       "mrics-quantity-surveying-readiness-check",
       "cfa-level-2-readiness-check",
-      "delf-b2-readiness-check",
       "us-citizenship-readiness-check",
     ]) {
       expect(isMockExamRunnable(slug)).toBe(true);

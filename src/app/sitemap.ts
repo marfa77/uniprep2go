@@ -68,6 +68,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.94,
     },
+    {
+      url: `${siteUrl}/finance-anki-decks`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.93,
+    },
+    {
+      url: `${siteUrl}/language-certification-decks`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.88,
+    },
     ...mockPages,
     ...deckPages,
     {

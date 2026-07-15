@@ -34,16 +34,17 @@ describe("seo utilities (Barakhlo patterns)", () => {
     expect(meta.openGraph?.url).toBe(absoluteUrl("/mock-exams/sie-full-mock"));
   });
 
-  it("noindexes mocks with empty or incomplete banks", () => {
-    expect(shouldIndexMockExam("epa-608-readiness-check")).toBe(true);
-    expect(shouldIndexMockExam("bms-bas-readiness-check")).toBe(true);
-    expect(mockExamRobots("bms-bas-readiness-check")).toBeUndefined();
+  it("noindexes preview mocks even when banks are runnable", () => {
+    expect(shouldIndexMockExam("epa-608-readiness-check")).toBe(false);
+    expect(mockExamRobots("epa-608-readiness-check")).toEqual(thinContentRobots);
+    expect(shouldIndexMockExam("sie-full-mock")).toBe(true);
     expect(mockExamRobots("sie-full-mock")).toBeUndefined();
   });
 
-  it("aligns indexability with runnable mock state", () => {
+  it("indexes only live mocks with runnable banks", () => {
     for (const mock of getAllMockExams()) {
-      expect(shouldIndexMockExam(mock.slug)).toBe(isMockExamRunnable(mock.slug));
+      const expected = mock.status === "live" && isMockExamRunnable(mock.slug);
+      expect(shouldIndexMockExam(mock.slug)).toBe(expected);
     }
   });
 });
