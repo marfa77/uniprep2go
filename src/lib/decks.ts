@@ -2303,7 +2303,29 @@ const rawDecks: Deck[] = [
       { name: "Materials and Resources", examWeight: "BD+C categories", cards: "Planned" },
       { name: "Indoor Environmental Quality", examWeight: "BD+C categories", cards: "Planned" },
     ],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question:
+          "A project team is conducting an integrative design charrette for a new office building. Which participant would be MOST critical during early conceptual design to optimize energy performance and daylighting?",
+        answer:
+          "Correct: (b) Building envelope consultant. Envelope expertise is essential early because thermal performance, daylighting, and energy efficiency integrate at the building skin.",
+        imageUrl: "/samples/leed-ap-bd-c-anki-deck-sample-1.webp",
+      },
+      {
+        question:
+          "A mixed-use development near transit wants a strategy that addresses multiple Location and Transportation credit intents through coordinated policies and mode-shift programs. Which option best fits?",
+        answer:
+          "Correct: (d) Implement a comprehensive transportation demand management program. TDM combines policies, incentives, and monitoring to reduce drive-alone trips across multiple LT strategies.",
+        imageUrl: "/samples/leed-ap-bd-c-anki-deck-sample-2.webp",
+      },
+      {
+        question:
+          "During integrative process, the mechanical engineer finds a conflict between optimal energy performance and acceptable indoor air quality. What should the team do FIRST?",
+        answer:
+          "Correct: (d) Schedule a collaborative workshop with all relevant disciplines. Integrative process emphasizes cross-discipline problem-solving to find synergistic solutions.",
+        imageUrl: "/samples/leed-ap-bd-c-anki-deck-sample-3.webp",
+      },
+    ],
     faqs: [
       {
         question: "Is there a free LEED AP BD+C practice test?",

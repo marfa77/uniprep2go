@@ -145,6 +145,20 @@ describe("anki-deck-launch", () => {
     ]);
   });
 
+  it("exposes launched LEED AP BD+C deck with sample card screenshots", () => {
+    const leedAp = getCatalogDeckBySlug("leed-ap-bd-c-anki-deck");
+    expect(leedAp).toBeDefined();
+    expect(leedAp?.status).toBe("available");
+    expect(leedAp?.apkgStatus).toBe("ready");
+    expect(leedAp?.checkoutUrl).toContain("gumroad.com/l/leed-ap-bd-c-anki-deck");
+    expect(leedAp?.sampleCards).toHaveLength(3);
+    expect(leedAp?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/leed-ap-bd-c-anki-deck-sample-1.webp",
+      "/samples/leed-ap-bd-c-anki-deck-sample-2.webp",
+      "/samples/leed-ap-bd-c-anki-deck-sample-3.webp",
+    ]);
+  });
+
   it("launches all building deck slugs into catalog", () => {
     const slugs = [
       "hvac-epa-608-anki-deck",
