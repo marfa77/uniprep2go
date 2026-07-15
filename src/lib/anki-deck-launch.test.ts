@@ -215,6 +215,20 @@ describe("anki-deck-launch", () => {
     ]);
   });
 
+  it("exposes launched WELL AP deck with sample card screenshots", () => {
+    const wellAp = getCatalogDeckBySlug("well-ap-anki-deck");
+    expect(wellAp).toBeDefined();
+    expect(wellAp?.status).toBe("available");
+    expect(wellAp?.apkgStatus).toBe("ready");
+    expect(wellAp?.checkoutUrl).toContain("gumroad.com/l/well-ap-anki-deck");
+    expect(wellAp?.sampleCards).toHaveLength(3);
+    expect(wellAp?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/well-ap-anki-deck-sample-1.webp",
+      "/samples/well-ap-anki-deck-sample-2.webp",
+      "/samples/well-ap-anki-deck-sample-3.webp",
+    ]);
+  });
+
   it("launches all building deck slugs into catalog", () => {
     const slugs = [
       "hvac-epa-608-anki-deck",

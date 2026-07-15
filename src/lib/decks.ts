@@ -2453,7 +2453,29 @@ const rawDecks: Deck[] = [
       { name: "Mind and Community", examWeight: "18 scored questions", cards: "Planned" },
       { name: "WELL Certification and Portfolio", examWeight: "12 scored questions", cards: "Planned" },
     ],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question:
+          "A building project team is selecting air filtration media for a ventilation system serving a densely occupied open-plan office. The team wants to reduce PM2.5 from outdoor intake and minimize microbial growth on filter media. Which combination best meets these goals?",
+        answer:
+          "Correct: (b) MERV 13 filter made of synthetic polymer; low moisture retention. MERV 13 captures at least 85% of 1–3 micron particles, reducing PM2.5; low moisture retention discourages microbial growth per WELL Air filtration concepts.",
+        imageUrl: "/samples/well-ap-anki-deck-sample-1.webp",
+      },
+      {
+        question:
+          "A building owner wants to implement the WELL Nourishment concept by offering healthy food options in an on-site cafeteria. To earn a point under Feature N03 (Fruits and Vegetables), what minimum percentage of total food offerings must be fruits and non-starchy vegetables?",
+        answer:
+          "Correct: (c) 50%. WELL v2 Feature N03 requires at least 50% of cafeteria food offerings to be fruits and non-starchy vegetables to encourage nutrient-dense choices aligned with dietary guidelines.",
+        imageUrl: "/samples/well-ap-anki-deck-sample-2.webp",
+      },
+      {
+        question:
+          "A project team pursuing the WELL Water concept aims for the optimization point for Feature 27 (Drinking Water Quality) after meeting the precondition tests for lead, arsenic, and mercury. Which contaminant is explicitly listed as an additional test in WELL v2 Feature 27?",
+        answer:
+          "Correct: (a) Chromium (hexavalent). Feature 27 optimization requires testing additional contaminants beyond the precondition list; hexavalent chromium (Cr⁶⁺) is one of them.",
+        imageUrl: "/samples/well-ap-anki-deck-sample-3.webp",
+      },
+    ],
     faqs: [
       {
         question: "Is there a free WELL AP practice test?",
