@@ -2263,7 +2263,29 @@ const rawDecks: Deck[] = [
       { name: "Energy and Atmosphere", examWeight: "LEED GA domain", cards: "Planned" },
       { name: "Materials and IEQ", examWeight: "LEED GA domain", cards: "Planned" },
     ],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question:
+          "During pre-design, the integrative process requires establishing performance targets early. Which approach best demonstrates this methodology?",
+        answer:
+          "Correct: (c) Defining sustainability goals and performance metrics before design development begins. Integrative process emphasizes early goal-setting so the team aligns decisions with sustainability objectives from the start.",
+        imageUrl: "/samples/leed-green-associate-anki-deck-sample-1.webp",
+      },
+      {
+        question:
+          "A mechanical engineer finds that daylight harvesting could reduce HVAC size requirements. This best illustrates which integrative process principle?",
+        answer:
+          "Correct: (b) Systems thinking and cross-disciplinary collaboration. Systems thinking considers how building systems interact and identifies synergies across disciplines.",
+        imageUrl: "/samples/leed-green-associate-anki-deck-sample-2.webp",
+      },
+      {
+        question:
+          "When establishing sustainability context during integrative process planning, which factor is most critical?",
+        answer:
+          "Correct: (b) The local climate, site conditions, and regional environmental priorities. Context analysis informs which LEED credits and strategies fit the specific project location.",
+        imageUrl: "/samples/leed-green-associate-anki-deck-sample-3.webp",
+      },
+    ],
     faqs: [
       {
         question: "Is there a free LEED Green Associate practice test?",
