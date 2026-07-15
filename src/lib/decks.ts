@@ -2369,7 +2369,27 @@ const rawDecks: Deck[] = [
       { name: "Industrial and Renewables", examWeight: "CEM BoK", cards: "Planned" },
       { name: "Commissioning and ESPC", examWeight: "CEM BoK", cards: "Planned" },
     ],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question: "IPMVP Option B is characterized by:",
+        answer:
+          "Correct: (a) Retrofit isolation with utility-grade measurement of energy use at the ECM level. Option B uses periodic or continuous measurements at specific retrofits to quantify savings.",
+        imageUrl: "/samples/cem-anki-deck-sample-1.webp",
+      },
+      {
+        question: "In an Energy Savings Performance Contract (ESPC), the ESCO typically:",
+        answer:
+          "Correct: (a) Designs, installs, and often guarantees savings financed through future energy cost reductions. ESCOs assume implementation and performance risk per contract, repaid via savings stream.",
+        imageUrl: "/samples/cem-anki-deck-sample-2.webp",
+      },
+      {
+        question:
+          "The commissioning authority (CxA) on a new construction project should:",
+        answer:
+          "Correct: (a) Review design, witness testing, and verify systems operate per owner's project requirements. Independent or qualified CxA verifies design intent through plans review, submittals, and testing.",
+        imageUrl: "/samples/cem-anki-deck-sample-3.webp",
+      },
+    ],
     faqs: [
       {
         question: "Is there a free CEM practice test?",

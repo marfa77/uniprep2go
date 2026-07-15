@@ -117,6 +117,20 @@ describe("anki-deck-launch", () => {
     ]);
   });
 
+  it("exposes launched CEM deck with sample card screenshots", () => {
+    const cem = getCatalogDeckBySlug("cem-anki-deck");
+    expect(cem).toBeDefined();
+    expect(cem?.status).toBe("available");
+    expect(cem?.apkgStatus).toBe("ready");
+    expect(cem?.checkoutUrl).toContain("gumroad.com/l/cem-anki-deck");
+    expect(cem?.sampleCards).toHaveLength(3);
+    expect(cem?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/cem-anki-deck-sample-1.webp",
+      "/samples/cem-anki-deck-sample-2.webp",
+      "/samples/cem-anki-deck-sample-3.webp",
+    ]);
+  });
+
   it("launches all building deck slugs into catalog", () => {
     const slugs = [
       "hvac-epa-608-anki-deck",
