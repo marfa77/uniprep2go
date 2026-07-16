@@ -1,4 +1,4 @@
-import type { CatalogAvailableDeck } from "./decks";
+import type { Deck } from "./decks";
 import type { DeckPositioning } from "./deck-positioning";
 import { getDeckLinkedMock } from "./deck-seo";
 import { getDeckPracticeMock } from "./deck-funnel";
@@ -316,7 +316,7 @@ Alternate personal-lines and commercial-lines weeks — 20 cards/day. Take the f
 Candidates mix HO-3 vs HO-6 coverage, mis-apply collision vs comprehensive auto triggers, and forget workers comp exclusive remedy. Cards target those distinctions.`,
 };
 
-function buildGenericUniqueContent(deck: CatalogAvailableDeck): string | undefined {
+function buildGenericUniqueContent(deck: Deck): string | undefined {
   if (deck.category === "language" && deck.topicCoverage.length === 0) {
     const formatNote =
       deck.format === ".csv"
@@ -371,6 +371,6 @@ Weeks 1–3: 20 new ${deck.shortName} cards per day.${mockLine}
 <!-- TODO(owner): verify item-bank specifics for ${deck.slug} -->`;
 }
 
-export function getDeckUniqueContent(deck: CatalogAvailableDeck): string | undefined {
+export function getDeckUniqueContent(deck: Deck): string | undefined {
   return uniqueContentBySlug[deck.slug] ?? buildGenericUniqueContent(deck);
 }

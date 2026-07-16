@@ -1,0 +1,1982 @@
+[
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-001",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "Forward typing determines:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Antibodies in serum only"
+      },
+      {
+        "id": "b",
+        "text": "ABO antigens on red cells using anti-A and anti-B reagents"
+      },
+      {
+        "id": "c",
+        "text": "Rh genotype by DNA only"
+      },
+      {
+        "id": "d",
+        "text": "Platelet count"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Forward (cell) typing detects A/B antigens on patient RBCs.",
+    "distractorExplanations": {
+      "a": "That is reverse typing.",
+      "c": "Serology types phenotype primarily.",
+      "d": "Hematology test."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-002",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "Reverse typing uses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Patient red cells + anti-A/B"
+      },
+      {
+        "id": "b",
+        "text": "Patient serum/plasma + A1 and B reagent cells"
+      },
+      {
+        "id": "c",
+        "text": "Only saline without cells"
+      },
+      {
+        "id": "d",
+        "text": "Anti-D only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Reverse typing confirms ABO by detecting expected isoagglutinins.",
+    "distractorExplanations": {
+      "a": "Forward typing.",
+      "c": "Needs reagent cells.",
+      "d": "Rh typing uses anti-D."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-003",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "The Rh(D) typing discrepancy most concerning for a woman of childbearing potential is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Clear-cut D-positive"
+      },
+      {
+        "id": "b",
+        "text": "Weak D / discrepant D that may require further testing per policy"
+      },
+      {
+        "id": "c",
+        "text": "ABO identical results"
+      },
+      {
+        "id": "d",
+        "text": "Negative antibody screen with known history of no transfusion"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Weak D interpretation affects RhIG and transfusion decisions; follow current AABB/lab policy.",
+    "distractorExplanations": {
+      "a": "Straightforward.",
+      "c": "Expected consistency.",
+      "d": "Less urgent than D discrepancy."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-004",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "An antibody screen detects:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unexpected RBC antibodies using screening cells"
+      },
+      {
+        "id": "b",
+        "text": "Only ABO antibodies"
+      },
+      {
+        "id": "c",
+        "text": "HIV antigen exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Serum glucose"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Antibody screens use O screening cells to detect alloantibodies clinically significant for transfusion.",
+    "distractorExplanations": {
+      "b": "ABO is typed separately.",
+      "c": "Infectious disease testing differs.",
+      "d": "Chemistry."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-005",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "The antiglobulin (AHG) phase is critical because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "It detects IgG antibodies that may not agglutinate in saline"
+      },
+      {
+        "id": "b",
+        "text": "It measures hemoglobin directly"
+      },
+      {
+        "id": "c",
+        "text": "It replaces forward typing"
+      },
+      {
+        "id": "d",
+        "text": "It sterilizes blood units"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "AHG bridges IgG-sensitized RBCs for visible agglutination (IAT).",
+    "distractorExplanations": {
+      "b": "Hematology.",
+      "c": "ABO typing separate.",
+      "d": "Not sterilization."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-006",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "A major crossmatch primarily tests:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Donor serum vs patient cells"
+      },
+      {
+        "id": "b",
+        "text": "Patient serum/plasma vs donor red cells"
+      },
+      {
+        "id": "c",
+        "text": "Patient cells vs patient serum only"
+      },
+      {
+        "id": "d",
+        "text": "Platelet compatibility only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Major XM: recipient antibodies against donor RBCs.",
+    "distractorExplanations": {
+      "a": "Minor XM (less used routinely now).",
+      "c": "Autocontrol.",
+      "d": "Platelets different."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-007",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "Which antibody is most associated with severe hemolytic disease of the fetus/newborn historically?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Anti-D"
+      },
+      {
+        "id": "b",
+        "text": "Anti-Leb"
+      },
+      {
+        "id": "c",
+        "text": "Anti-P1 that is cold and clinically insignificant always"
+      },
+      {
+        "id": "d",
+        "text": "Anti-M always clinically insignificant without exception"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Anti-D is the classic cause of severe HDFN; RhIG prevents alloimmunization.",
+    "distractorExplanations": {
+      "b": "Lewis usually not clinically significant for HDN.",
+      "c": "Many cold antibodies insignificant.",
+      "d": "Most anti-M insignificant but not absolute framing for this stem."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-008",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "Fresh frozen plasma (FFP) is indicated primarily to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Raise hemoglobin in anemia without coagulopathy"
+      },
+      {
+        "id": "b",
+        "text": "Replace multiple clotting factors in coagulopathy when indicated"
+      },
+      {
+        "id": "c",
+        "text": "Treat iron deficiency alone"
+      },
+      {
+        "id": "d",
+        "text": "Provide platelets exclusively"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "FFP provides plasma coagulation factors; not a first-line O2-carrying product.",
+    "distractorExplanations": {
+      "a": "RBCs treat anemia.",
+      "c": "Iron therapy/RBCs as indicated.",
+      "d": "Platelet units for thrombocytopenia."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-009",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "A unit labeled CMV-safe for at-risk neonates is often:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leukoreduced and/or CMV-seronegative per policy"
+      },
+      {
+        "id": "b",
+        "text": "Never irradiated"
+      },
+      {
+        "id": "c",
+        "text": "Always whole blood only"
+      },
+      {
+        "id": "d",
+        "text": "Stored at 37°C"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Leukoreduction/CMV-seronegative strategies reduce CMV transmission risk.",
+    "distractorExplanations": {
+      "b": "Irradiation prevents TA-GVHD in selected patients.",
+      "c": "Components vary.",
+      "d": "RBCs stored refrigerated."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-010",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "In ABO discrepancy with weaker-than-expected reverse reactions in elderly patients, consider:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hypogammaglobulinemia / weak isoagglutinins"
+      },
+      {
+        "id": "b",
+        "text": "That reverse typing is never needed"
+      },
+      {
+        "id": "c",
+        "text": "Automatic group AB without testing"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring all discrepancies"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Weak reverse reactions can reflect low antibody titers; resolve before transfusion.",
+    "distractorExplanations": {
+      "b": "Reverse typing is standard for confirmation.",
+      "c": "Unsafe assumption.",
+      "d": "Must resolve."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-011",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "Rh immune globulin (RhIG) is given to Rh-negative mothers to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prevent formation of anti-D after exposure to D-positive RBCs"
+      },
+      {
+        "id": "b",
+        "text": "Treat already formed high-titer anti-D as the sole therapy always"
+      },
+      {
+        "id": "c",
+        "text": "Convert Rh-negative RBCs to Rh-positive"
+      },
+      {
+        "id": "d",
+        "text": "Replace FFP"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "RhIG suppresses anti-D alloimmunization when indicated (antenatal/postpartum/etc.).",
+    "distractorExplanations": {
+      "b": "Does not erase established alloimmunization as sole concept.",
+      "c": "Cannot change phenotype.",
+      "d": "Different product."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-012",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "A positive DAT (direct antiglobulin test) indicates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "In vivo coating of RBCs with IgG and/or complement"
+      },
+      {
+        "id": "b",
+        "text": "Always a laboratory labeling error only"
+      },
+      {
+        "id": "c",
+        "text": "Normal finding in all healthy donors"
+      },
+      {
+        "id": "d",
+        "text": "Elevated serum sodium"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "DAT detects immunoglobulin/complement already bound to patient RBCs.",
+    "distractorExplanations": {
+      "b": "May be true immune hemolysis.",
+      "c": "Usually negative in healthy people.",
+      "d": "Chemistry."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-013",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "Emergency uncrossmatched blood for a bleeding unknown patient is typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Group AB plasma and AB RBCs always first"
+      },
+      {
+        "id": "b",
+        "text": "Group O RBCs (often O-negative for women of childbearing potential per policy)"
+      },
+      {
+        "id": "c",
+        "text": "Any random unit without documentation"
+      },
+      {
+        "id": "d",
+        "text": "Platelets only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "O RBCs are universal donor red cells in emergencies; Rh choice follows policy/risk.",
+    "distractorExplanations": {
+      "a": "AB plasma is universal plasma; RBCs differ.",
+      "c": "Traceability required.",
+      "d": "Not for RBC oxygen delivery."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-014",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "Antibody identification panel interpretation requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignoring dosage and phase reactions"
+      },
+      {
+        "id": "b",
+        "text": "Ruling out antibodies using negative reactions and considering phase, dosage, and patient history"
+      },
+      {
+        "id": "c",
+        "text": "Selecting the first antibody listed alphabetically"
+      },
+      {
+        "id": "d",
+        "text": "Never performing an autocontrol"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Systematic rule-outs and clinical correlation identify alloantibodies.",
+    "distractorExplanations": {
+      "a": "Dosage/phase matter.",
+      "c": "Not a method.",
+      "d": "Autocontrol helps detect autoantibodies."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-015",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "Leukoreduction of RBC units primarily reduces risk of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Febrile nonhemolytic transfusion reactions and CMV transmission (and HLA alloimmunization)"
+      },
+      {
+        "id": "b",
+        "text": "Iron overload completely"
+      },
+      {
+        "id": "c",
+        "text": "All allergic reactions forever"
+      },
+      {
+        "id": "d",
+        "text": "ABO mismatches"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Removing WBCs decreases FNHTR, CMV risk, and alloimmunization risk.",
+    "distractorExplanations": {
+      "b": "Iron overload still possible with chronic transfusion.",
+      "c": "Allergic reactions often plasma protein related.",
+      "d": "ABO compatibility still required."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-001",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "Elevated serum creatinine most directly suggests:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Improved GFR always"
+      },
+      {
+        "id": "b",
+        "text": "Reduced glomerular filtration / impaired kidney function"
+      },
+      {
+        "id": "c",
+        "text": "Acute hepatitis specifically"
+      },
+      {
+        "id": "d",
+        "text": "Hyperthyroidism only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Creatinine rises when GFR falls (with caveats of muscle mass/assay).",
+    "distractorExplanations": {
+      "a": "Opposite.",
+      "c": "Liver enzymes more specific for hepatitis.",
+      "d": "Thyroid tests differ."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-002",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "Hyponatremia means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Low serum sodium"
+      },
+      {
+        "id": "b",
+        "text": "High serum sodium"
+      },
+      {
+        "id": "c",
+        "text": "Low serum potassium"
+      },
+      {
+        "id": "d",
+        "text": "High serum calcium"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Hypo- = low; Na+ is sodium.",
+    "distractorExplanations": {
+      "b": "Hypernatremia.",
+      "c": "Hypokalemia.",
+      "d": "Hypercalcemia."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-003",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "Which analyte is a sensitive marker of hepatocellular injury?",
+    "options": [
+      {
+        "id": "a",
+        "text": "ALT (and AST)"
+      },
+      {
+        "id": "b",
+        "text": "Amylase exclusively for liver"
+      },
+      {
+        "id": "c",
+        "text": "Troponin I for hepatocytes"
+      },
+      {
+        "id": "d",
+        "text": "PSA"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ALT/AST rise with hepatocyte damage; ALT more liver-specific.",
+    "distractorExplanations": {
+      "b": "Amylase more pancreas/salivary.",
+      "c": "Troponin is cardiac.",
+      "d": "Prostate marker."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-004",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "HbA1c reflects average glycemia over approximately:",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 day"
+      },
+      {
+        "id": "b",
+        "text": "2–3 months"
+      },
+      {
+        "id": "c",
+        "text": "10 years"
+      },
+      {
+        "id": "d",
+        "text": "1 hour postprandial only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A1c correlates with RBC lifespan ~120 days; clinically ~2–3 months average glucose.",
+    "distractorExplanations": {
+      "a": "Too short.",
+      "c": "Too long.",
+      "d": "OGTT/postprandial differ."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-005",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A critically high potassium result should first prompt:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Immediate reporting after checking for hemolysis/sample integrity and clinical correlation per protocol"
+      },
+      {
+        "id": "b",
+        "text": "Discarding without notification"
+      },
+      {
+        "id": "c",
+        "text": "Waiting a week"
+      },
+      {
+        "id": "d",
+        "text": "Averaging with yesterday's result silently"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Critical values require rapid verification for preanalytics (hemolysis falsely ↑K+) and clinician notification.",
+    "distractorExplanations": {
+      "b": "Must communicate criticals — discarding without notification is unsafe.",
+      "c": "Delay harms patients.",
+      "d": "Silent averaging is improper."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-006",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "Lipemic specimens can interfere with assays mainly by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Improving all spectrophotometric accuracy"
+      },
+      {
+        "id": "b",
+        "text": "Causing turbidity/volume displacement errors in some methods"
+      },
+      {
+        "id": "c",
+        "text": "Increasing sodium by flame photometry always beneficially"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating the need for QC"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Lipemia causes optical and sometimes electrolyte artifacts; ultracentrifugation/clearing may help.",
+    "distractorExplanations": {
+      "a": "Worsens many optical assays.",
+      "c": "Interference is problematic.",
+      "d": "QC still required."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-007",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "CK-MB and troponin are used primarily to evaluate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Myocardial injury"
+      },
+      {
+        "id": "b",
+        "text": "Renal tubular acidosis only"
+      },
+      {
+        "id": "c",
+        "text": "Bone turnover exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Thyroid nodules"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Cardiac troponins (and historically CK-MB) mark myocardial injury.",
+    "distractorExplanations": {
+      "b": "Electrolytes/ABG help RTA.",
+      "c": "ALP/CTX etc. for bone.",
+      "d": "Thyroid imaging/labs."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-008",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "Anion gap metabolic acidosis is suggested by low bicarbonate with elevated anion gap; a common cause is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lactic acidosis or ketoacidosis"
+      },
+      {
+        "id": "b",
+        "text": "Vomiting-induced metabolic alkalosis"
+      },
+      {
+        "id": "c",
+        "text": "Hyperchloremic normal gap only always"
+      },
+      {
+        "id": "d",
+        "text": "Respiratory alkalosis alone"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "HAGMA causes include lactate, ketones, toxins (MUDPILES/GOLDMARK mnemonics).",
+    "distractorExplanations": {
+      "b": "Vomiting → alkalosis.",
+      "c": "Different pattern (NAGMA).",
+      "d": "Respiratory process."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-009",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "Bilirubin fractionation: elevated conjugated (direct) bilirubin suggests:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hepatic excretion defect / cholestasis or hepatocellular conjugated hyperbilirubinemia"
+      },
+      {
+        "id": "b",
+        "text": "Only hemolysis with purely unconjugated rise always"
+      },
+      {
+        "id": "c",
+        "text": "Normal neonatal physiologic jaundice exclusively always conjugated"
+      },
+      {
+        "id": "d",
+        "text": "Laboratory impossibility"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Conjugated hyperbilirubinemia points to hepatic/cholestatic pathways; hemolysis raises unconjugated.",
+    "distractorExplanations": {
+      "b": "Hemolysis → unconjugated.",
+      "c": "Physiologic neonatal often unconjugated.",
+      "d": "Common pattern."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-010",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "TSH is typically high in:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Primary hypothyroidism"
+      },
+      {
+        "id": "b",
+        "text": "Primary hyperthyroidism"
+      },
+      {
+        "id": "c",
+        "text": "All euthyroid patients"
+      },
+      {
+        "id": "d",
+        "text": "Factitious thyrotoxicosis from excess T4 always low-normal only without exception"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Primary hypo: low thyroid hormones → high TSH.",
+    "distractorExplanations": {
+      "b": "Primary hyper: TSH suppressed.",
+      "c": "Euthyroid TSH normal.",
+      "d": "Excess exogenous hormone suppresses TSH."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-011",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "Serum osmolality is most contributed by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sodium, glucose, and urea (BUN)"
+      },
+      {
+        "id": "b",
+        "text": "Albumin only"
+      },
+      {
+        "id": "c",
+        "text": "Calcium only"
+      },
+      {
+        "id": "d",
+        "text": "Iron only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Calculated osm ≈ 2Na + glucose/18 + BUN/2.8 (conventional units).",
+    "distractorExplanations": {
+      "b": "Colloid oncotic pressure more than osmoles count.",
+      "c": "Minor osmoles.",
+      "d": "Trace."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-012",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A glucose sample left unseparated on cells at room temperature for hours may show:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Falsely increased glucose due to glycolysis"
+      },
+      {
+        "id": "b",
+        "text": "Falsely decreased glucose due to glycolysis"
+      },
+      {
+        "id": "c",
+        "text": "No change ever"
+      },
+      {
+        "id": "d",
+        "text": "Conversion to sodium"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Cellular glycolysis consumes glucose unless fluoride tubes/prompt separation used.",
+    "distractorExplanations": {
+      "a": "Opposite direction.",
+      "c": "Changes occur.",
+      "d": "Nonsense."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-013",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "Elevated ALP with elevated GGT suggests:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hepatic/biliary source of ALP more than bone alone"
+      },
+      {
+        "id": "b",
+        "text": "Pure bone source certainty"
+      },
+      {
+        "id": "c",
+        "text": "Always normal pregnancy only"
+      },
+      {
+        "id": "d",
+        "text": "Cardiac troponin elevation"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "GGT supports hepatic origin of ALP elevation; bone ALP lacks GGT rise.",
+    "distractorExplanations": {
+      "b": "Bone ALP usually normal GGT.",
+      "c": "Pregnancy ALP can rise (placental) with context.",
+      "d": "Different markers."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-014",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "Therapeutic drug monitoring trough levels are drawn:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Just before the next dose"
+      },
+      {
+        "id": "b",
+        "text": "At peak random anytime without protocol"
+      },
+      {
+        "id": "c",
+        "text": "One week after stopping therapy always"
+      },
+      {
+        "id": "d",
+        "text": "Only from arterial blood"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Troughs assess minimum concentration before redosing for many drugs.",
+    "distractorExplanations": {
+      "b": "Peaks are timed post-dose.",
+      "c": "Not trough definition.",
+      "d": "Usually venous."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-015",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "Hyperkalemia ECG risk makes lab-clinician communication urgent because K+ > ~6–6.5 mEq/L can cause:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Peaked T waves and arrhythmias"
+      },
+      {
+        "id": "b",
+        "text": "Only bradycardia from hypokalemia"
+      },
+      {
+        "id": "c",
+        "text": "Pathognomonic ST elevation MI always"
+      },
+      {
+        "id": "d",
+        "text": "No cardiac effects"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Severe hyperkalemia is cardiotoxic; critical notification is mandatory.",
+    "distractorExplanations": {
+      "b": "Hypokalemia has other ECG changes.",
+      "c": "Not equivalent to STEMI criteria.",
+      "d": "Cardiac effects are key."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-001",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "Mean corpuscular volume (MCV) classifies anemias as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Microcytic, normocytic, or macrocytic"
+      },
+      {
+        "id": "b",
+        "text": "Only hypochromic always"
+      },
+      {
+        "id": "c",
+        "text": "Platelet size exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Clotting factor levels"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "MCV is the RBC size index used in anemia workups.",
+    "distractorExplanations": {
+      "b": "MCHC relates to chromia.",
+      "c": "MPV is platelets.",
+      "d": "Coag assays."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-002",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "Iron deficiency anemia typically shows:",
+    "options": [
+      {
+        "id": "a",
+        "text": "High MCV and high ferritin"
+      },
+      {
+        "id": "b",
+        "text": "Low MCV, low ferritin, high TIBC"
+      },
+      {
+        "id": "c",
+        "text": "High ferritin and low TIBC always like anemia of chronic disease pattern"
+      },
+      {
+        "id": "d",
+        "text": "Normal iron studies always"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "IDA: microcytic hypochromic with low ferritin/iron and elevated TIBC.",
+    "distractorExplanations": {
+      "a": "Opposite pattern.",
+      "c": "ACD often low TIBC/high ferritin.",
+      "d": "Abnormal in IDA."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-003",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "Schistocytes on peripheral smear suggest:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Microangiopathic hemolytic process"
+      },
+      {
+        "id": "b",
+        "text": "Iron overload exclusively"
+      },
+      {
+        "id": "c",
+        "text": "Normal newborn smear always"
+      },
+      {
+        "id": "d",
+        "text": "Vitamin C toxicity"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fragmented RBCs occur in MAHA (DIC, TTP, HUS, mechanical valves, etc.).",
+    "distractorExplanations": {
+      "b": "Different findings.",
+      "c": "Not normal.",
+      "d": "Unrelated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-004",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "A left shift in the WBC differential refers to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increased immature neutrophils (bands/metas) in circulation"
+      },
+      {
+        "id": "b",
+        "text": "Increased lymphocytes only always"
+      },
+      {
+        "id": "c",
+        "text": "Decreased WBC count definitionally"
+      },
+      {
+        "id": "d",
+        "text": "Eosinopenia only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Left shift indicates myeloid immaturity often with infection/inflammation.",
+    "distractorExplanations": {
+      "b": "Lymphocytosis different.",
+      "c": "Count may be high or low.",
+      "d": "Different lineage."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-005",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "PT/INR primarily monitors:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Extrinsic pathway / warfarin therapy"
+      },
+      {
+        "id": "b",
+        "text": "Intrinsic pathway only / heparin exclusively"
+      },
+      {
+        "id": "c",
+        "text": "Platelet aggregation only"
+      },
+      {
+        "id": "d",
+        "text": "Fibrin degradation exclusively without PT"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "PT/INR assesses factors VII pathway and warfarin effect.",
+    "distractorExplanations": {
+      "b": "aPTT more for heparin/intrinsic.",
+      "c": "Platelet function tests differ.",
+      "d": "FDPs/D-dimer separate."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-006",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "aPTT prolongation with normal PT may indicate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Factor VIII/IX deficiency or heparin effect (among other intrinsic pathway issues)"
+      },
+      {
+        "id": "b",
+        "text": "Isolated factor VII deficiency only"
+      },
+      {
+        "id": "c",
+        "text": "Always vitamin K deficiency alone exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Normal hemostasis certainty"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Intrinsic pathway defects and unfractionated heparin prolong aPTT more than PT.",
+    "distractorExplanations": {
+      "b": "VII prolongs PT.",
+      "c": "Vit K affects II, VII, IX, X — both PT/aPTT can rise.",
+      "d": "Abnormal result."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-007",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "D-dimer elevation indicates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fibrin formation and fibrinolysis have occurred (nonspecific)"
+      },
+      {
+        "id": "b",
+        "text": "Certain absence of thrombosis always"
+      },
+      {
+        "id": "c",
+        "text": "Only liver synthetic failure specifically"
+      },
+      {
+        "id": "d",
+        "text": "Iron deficiency"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "D-dimer is sensitive but not specific; used to help exclude VTE when pretest probability low.",
+    "distractorExplanations": {
+      "b": "Elevation has many causes.",
+      "c": "Not specific.",
+      "d": "Unrelated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-008",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "Hemoglobin electrophoresis is useful to diagnose:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hemoglobinopathies such as sickle cell disease/trait"
+      },
+      {
+        "id": "b",
+        "text": "Acute bacterial meningitis exclusively"
+      },
+      {
+        "id": "c",
+        "text": "Myocardial infarction"
+      },
+      {
+        "id": "d",
+        "text": "Hypothyroidism"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Separates Hb variants (S, C, A2, F, etc.).",
+    "distractorExplanations": {
+      "b": "CSF studies.",
+      "c": "Troponin.",
+      "d": "TSH/FT4."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-009",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "Reticulocyte count rises when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bone marrow increases RBC production (e.g., response to hemolysis/blood loss after iron available)"
+      },
+      {
+        "id": "b",
+        "text": "Marrow fails completely with no stress"
+      },
+      {
+        "id": "c",
+        "text": "Only in iron deficiency without treatment ever"
+      },
+      {
+        "id": "d",
+        "text": "Platelets clump"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Reticulocytosis marks marrow response to anemia.",
+    "distractorExplanations": {
+      "b": "Aplastic processes have low retics.",
+      "c": "IDA retics low until iron repleted.",
+      "d": "Platelet artifact."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-010",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "EDTA as anticoagulant in CBC tubes works by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chelating calcium"
+      },
+      {
+        "id": "b",
+        "text": "Activating thrombin"
+      },
+      {
+        "id": "c",
+        "text": "Providing tissue factor"
+      },
+      {
+        "id": "d",
+        "text": "Lysing all WBCs intentionally for RBC count only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "EDTA binds Ca2+ to prevent clotting for hematology counts.",
+    "distractorExplanations": {
+      "b": "Opposite of anticoagulation.",
+      "c": "Would promote clotting.",
+      "d": "WBCs preserved for differential."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-011",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "Pseudothrombocytopenia due to EDTA is suspected when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Platelet clumps are seen on smear and count is higher in citrate tube"
+      },
+      {
+        "id": "b",
+        "text": "True DIC is proven by smear alone without labs"
+      },
+      {
+        "id": "c",
+        "text": "MCV is high"
+      },
+      {
+        "id": "d",
+        "text": "INR is 1.0"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "EDTA-dependent antibodies clump platelets in vitro; recollect in citrate.",
+    "distractorExplanations": {
+      "b": "Need clinical/lab correlation for DIC.",
+      "c": "RBC index.",
+      "d": "Coag normal doesn't explain."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-012",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "Hypersegmented neutrophils are classically associated with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "B12/folate deficiency"
+      },
+      {
+        "id": "b",
+        "text": "Iron deficiency exclusively"
+      },
+      {
+        "id": "c",
+        "text": "Acute blood loss only"
+      },
+      {
+        "id": "d",
+        "text": "Aspirin therapy specifically"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Megaloblastic anemias show hypersegmented PMNs.",
+    "distractorExplanations": {
+      "b": "Microcytic anemia pattern.",
+      "c": "Normocytic often.",
+      "d": "Not classic for hypersegmentation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-013",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "Primary hemostasis involves mainly:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Platelet adhesion/aggregation and vessel wall"
+      },
+      {
+        "id": "b",
+        "text": "Vitamin K–dependent factor cascade only"
+      },
+      {
+        "id": "c",
+        "text": "Fibrinolysis exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Complement cascade only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Primary hemostasis = platelets + endothelium; secondary = coagulation factors → fibrin.",
+    "distractorExplanations": {
+      "b": "Secondary hemostasis.",
+      "c": "Clot breakdown.",
+      "d": "Innate immunity."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-014",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "Blasts on peripheral smear in an adult with cytopenias most urgently suggest:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Possible acute leukemia requiring prompt hematopathology workup"
+      },
+      {
+        "id": "b",
+        "text": "Normal finding in all adults"
+      },
+      {
+        "id": "c",
+        "text": "Only viral URI"
+      },
+      {
+        "id": "d",
+        "text": "Iron deficiency certainty"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Circulating blasts warrant urgent evaluation for acute leukemia.",
+    "distractorExplanations": {
+      "b": "Abnormal.",
+      "c": "Not explained by simple URI.",
+      "d": "Different smear."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-015",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "ESR is a nonspecific marker that rises with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inflammation (also anemia, pregnancy, etc.)"
+      },
+      {
+        "id": "b",
+        "text": "Only myocardial infarction specifically"
+      },
+      {
+        "id": "c",
+        "text": "Decreased fibrinogen always"
+      },
+      {
+        "id": "d",
+        "text": "Dehydration causing polycythemia exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ESR increases with acute-phase proteins/rouleaux; nonspecific.",
+    "distractorExplanations": {
+      "b": "Troponin for MI.",
+      "c": "Low fibrinogen can lower ESR.",
+      "d": "Polycythemia may lower ESR."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-001",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "Gram-positive organisms stain:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Purple/blue due to thick peptidoglycan retaining crystal violet"
+      },
+      {
+        "id": "b",
+        "text": "Pink/red because of outer membrane only"
+      },
+      {
+        "id": "c",
+        "text": "Green with acid-fast only"
+      },
+      {
+        "id": "d",
+        "text": "Colorless always"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Crystal violet–iodine complex is retained in Gram-positive walls.",
+    "distractorExplanations": {
+      "b": "Gram-negatives take safranin counterstain.",
+      "c": "AFB use different stains.",
+      "d": "They take stain."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-002",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "Catalase test differentiates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Staphylococcus (positive) from Streptococcus (negative)"
+      },
+      {
+        "id": "b",
+        "text": "All Gram-negatives from each other"
+      },
+      {
+        "id": "c",
+        "text": "Viruses from fungi"
+      },
+      {
+        "id": "d",
+        "text": "Mycobacteria species definitively alone"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Staphylococci are catalase-positive; streptococci/enterococci catalase-negative.",
+    "distractorExplanations": {
+      "b": "Need other tests.",
+      "c": "Different methods.",
+      "d": "Needs more ID methods."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-003",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "A positive coagulase test is characteristic of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Staphylococcus aureus"
+      },
+      {
+        "id": "b",
+        "text": "Staphylococcus epidermidis typically"
+      },
+      {
+        "id": "c",
+        "text": "Streptococcus pyogenes"
+      },
+      {
+        "id": "d",
+        "text": "Escherichia coli"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "S. aureus is coagulase-positive (with rare exceptions).",
+    "distractorExplanations": {
+      "b": "CoNS are coagulase-negative.",
+      "c": "Strep.",
+      "d": "GNB."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-004",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "Acid-fast staining is used for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mycobacterium species"
+      },
+      {
+        "id": "b",
+        "text": "All streptococci"
+      },
+      {
+        "id": "c",
+        "text": "Influenza virus particles in light microscopy routinely"
+      },
+      {
+        "id": "d",
+        "text": "Plasmodium only with Gram stain"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Mycolic acids retain carbol fuchsin in AFB stains.",
+    "distractorExplanations": {
+      "b": "Gram stain.",
+      "c": "Viruses need other methods.",
+      "d": "Malaria uses Giemsa; not Gram AFB concept."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-005",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "ELISA immunoassays detect antigen or antibody using:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Enzyme-labeled conjugates producing a measurable color/signal"
+      },
+      {
+        "id": "b",
+        "text": "Only Gram stain"
+      },
+      {
+        "id": "c",
+        "text": "Flame photometry of sodium"
+      },
+      {
+        "id": "d",
+        "text": "Westergren pipettes exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ELISA uses enzyme-substrate systems for sensitive Ag/Ab detection.",
+    "distractorExplanations": {
+      "b": "Microscopy.",
+      "c": "Electrolytes.",
+      "d": "ESR method."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-006",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "Zone of inhibition in Kirby-Bauer testing indicates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Antimicrobial activity against the organism under standardized conditions"
+      },
+      {
+        "id": "b",
+        "text": "That the drug is toxic to humans"
+      },
+      {
+        "id": "c",
+        "text": "Exact MIC in µg/mL without charts"
+      },
+      {
+        "id": "d",
+        "text": "Viral load"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Disk diffusion zones are interpreted with CLSI breakpoints; MIC needs dilution methods.",
+    "distractorExplanations": {
+      "b": "In vitro activity ≠ host toxicity.",
+      "c": "Zones correlate but aren't MIC numbers.",
+      "d": "Molecular/viral assays."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-007",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "Which organism is an obligate intracellular bacterium causing atypical pneumonia, detected often by NAAT/serology rather than routine sputum culture?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mycoplasma pneumoniae"
+      },
+      {
+        "id": "b",
+        "text": "Staphylococcus aureus"
+      },
+      {
+        "id": "c",
+        "text": "Pseudomonas aeruginosa on MacConkey as lactose fermenter always"
+      },
+      {
+        "id": "d",
+        "text": "Candida albicans"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "M. pneumoniae lacks cell wall; not seen on Gram stain; diagnosed by PCR/serology.",
+    "distractorExplanations": {
+      "b": "Grows on routine media.",
+      "c": "Pseudomonas is oxidase+ nonfermenter.",
+      "d": "Yeast."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-008",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "IgM antibodies typically indicate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Recent/primary immune response (often)"
+      },
+      {
+        "id": "b",
+        "text": "Only remote immunity years later exclusively"
+      },
+      {
+        "id": "c",
+        "text": "No immune response"
+      },
+      {
+        "id": "d",
+        "text": "Complement protein C3 level"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "IgM rises early; IgG indicates later/past exposure (context-dependent).",
+    "distractorExplanations": {
+      "b": "IgG more for remote.",
+      "c": "Opposite.",
+      "d": "Different analyte."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-009",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "Blood culture contamination is suggested by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Single bottle growth of skin flora (e.g., CoNS) with mismatched clinical picture"
+      },
+      {
+        "id": "b",
+        "text": "Multiple sets growing the same Gram-negative rod in a septic patient"
+      },
+      {
+        "id": "c",
+        "text": "Growth of E. coli in all bottles with pyelonephritis"
+      },
+      {
+        "id": "d",
+        "text": "S. aureus in multiple sets with endocarditis signs"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Common contaminants appear in single sets; true pathogens often repeatedly isolated with compatible clinic.",
+    "distractorExplanations": {
+      "b": "Likely true bacteremia.",
+      "c": "True infection pattern.",
+      "d": "True infection pattern."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-010",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "Selective media such as MacConkey agar are designed to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inhibit Gram-positives and differentiate lactose fermentation among Gram-negatives"
+      },
+      {
+        "id": "b",
+        "text": "Grow only viruses"
+      },
+      {
+        "id": "c",
+        "text": "Kill all Gram-negatives"
+      },
+      {
+        "id": "d",
+        "text": "Measure antibody titers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Bile salts/crystal violet select for GNB; lactose fermentation shows pink colonies.",
+    "distractorExplanations": {
+      "b": "Cell culture/molecular for viruses.",
+      "c": "GNB grow.",
+      "d": "Serology."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-011",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "Western blot / immunoblot historically confirmed:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Specific antibodies to separated protein antigens (e.g., older HIV algorithms)"
+      },
+      {
+        "id": "b",
+        "text": "Serum sodium"
+      },
+      {
+        "id": "c",
+        "text": "Gram stain morphology"
+      },
+      {
+        "id": "d",
+        "text": "ESR"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Immunoblots detect Ab reactivity to specific proteins after separation.",
+    "distractorExplanations": {
+      "b": "Chemistry.",
+      "c": "Microscopy.",
+      "d": "Inflammation marker."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-012",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "Type I hypersensitivity is mediated primarily by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "IgE"
+      },
+      {
+        "id": "b",
+        "text": "IgG only against basement membrane"
+      },
+      {
+        "id": "c",
+        "text": "IgA secretory only"
+      },
+      {
+        "id": "d",
+        "text": "IgD exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Immediate hypersensitivity (anaphylaxis/allergy) is IgE-mast cell mediated.",
+    "distractorExplanations": {
+      "b": "Type II examples differ.",
+      "c": "Mucosal immunity.",
+      "d": "B-cell receptor role, not classic type I effector."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-013",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "Clostridioides difficile infection laboratory diagnosis commonly uses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stool testing for toxins and/or toxin gene NAAT per algorithm"
+      },
+      {
+        "id": "b",
+        "text": "Throat culture on blood agar only"
+      },
+      {
+        "id": "c",
+        "text": "Urine dipstick nitrite"
+      },
+      {
+        "id": "d",
+        "text": "Blood smear for parasites"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Labs use GDH/toxin EIA ± NAAT algorithms on unformed stool.",
+    "distractorExplanations": {
+      "b": "Wrong specimen/pathogen approach.",
+      "c": "UTI screen.",
+      "d": "Different."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-014",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "Quality control for antimicrobial susceptibility testing requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Testing appropriate ATCC control strains with acceptable ranges"
+      },
+      {
+        "id": "b",
+        "text": "Skipping controls if busy"
+      },
+      {
+        "id": "c",
+        "text": "Using expired disks routinely"
+      },
+      {
+        "id": "d",
+        "text": "Interpreting zones without standards"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "CLSI QC with reference strains validates method performance.",
+    "distractorExplanations": {
+      "b": "QC is mandatory.",
+      "c": "Expired reagents invalid.",
+      "d": "Breakpoints required."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-015",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "India ink or cryptococcal antigen testing is used for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cryptococcus neoformans/gattii in CSF/serum contexts"
+      },
+      {
+        "id": "b",
+        "text": "Group A strep pharyngitis exclusively"
+      },
+      {
+        "id": "c",
+        "text": "Malaria thick smears only"
+      },
+      {
+        "id": "d",
+        "text": "TB PCR exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Capsule visualization/antigen assays support cryptococcal meningitis diagnosis.",
+    "distractorExplanations": {
+      "b": "Rapid strep/culture.",
+      "c": "Giemsa smears.",
+      "d": "Different pathogens."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  }
+]

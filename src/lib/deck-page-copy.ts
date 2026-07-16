@@ -1,14 +1,14 @@
-import type { CatalogAvailableDeck } from "./decks";
+import type { Deck } from "./decks";
 import { getDeckSeoProfile } from "./deck-seo";
 import { pitchOverrides, longDescriptionOverrides } from "./deck-money-page-content";
 
 /** Hero one-liner — distinct from audience and longDescription. */
-export function getDeckShortPitch(deck: CatalogAvailableDeck): string {
+export function getDeckShortPitch(deck: Deck): string {
   return pitchOverrides[deck.slug] ?? deck.subtitle;
 }
 
 /** Overview block — 2–3 sentences; not repeated elsewhere on the page. */
-export function getDeckLongDescription(deck: CatalogAvailableDeck): string {
+export function getDeckLongDescription(deck: Deck): string {
   if (longDescriptionOverrides[deck.slug]) {
     return longDescriptionOverrides[deck.slug]!;
   }
@@ -16,7 +16,7 @@ export function getDeckLongDescription(deck: CatalogAvailableDeck): string {
 }
 
 /** Bullet label for exam-focused content size (fixes "{count}+ of …" grammar). */
-export function formatExamFocusedContent(deck: CatalogAvailableDeck): string {
+export function formatExamFocusedContent(deck: Deck): string {
   const { cards } = deck.facts;
 
   if (deck.format === "PDF") {

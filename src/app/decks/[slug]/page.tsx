@@ -20,6 +20,7 @@ import { DeckPracticeMockSection } from "@/components/decks/deck-practice-mock-s
 import { DeckRelatedDecks } from "@/components/decks/deck-related-decks";
 import { DeckSeoSections } from "@/components/decks/deck-seo-sections";
 import { DeckUniqueContentSection } from "@/components/decks/deck-unique-content-section";
+import { DeckWaitlistCta } from "@/components/decks/deck-waitlist-cta";
 import { CollapsibleDetails } from "@/components/ui/collapsible-details";
 import {
   BUILDING_CERTIFICATION_HUB_SLUG,
@@ -33,7 +34,14 @@ import {
   isMockFirstDeckPage,
 } from "@/lib/deck-funnel";
 import { getDeckShortPitch } from "@/lib/deck-page-copy";
-import { catalogAvailableDecks, categoryLabels } from "@/lib/decks";
+import {
+  catalogAvailableDecks,
+  catalogPlannedDecks,
+  categoryLabels,
+  getDeckBySlug,
+  type AvailableDeck,
+  type Deck,
+} from "@/lib/decks";
 import { formatDeckPriceLabel, getDeckCheckoutCtaLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import {
   buildDeckSeoDescription,
@@ -57,7 +65,17 @@ import { buildSocialMetadata } from "@/lib/social-metadata";
 export const revalidate = 3600;
 
 export function generateStaticParams() {
-  return catalogAvailableDecks.map((deck) => ({ slug: deck.slug }));
+  return [...catalogAvailableDecks, ...catalogPlannedDecks].map((deck) => ({
+    slug: deck.slug,
+  }));
+}
+
+async function resolveDeckPage(slug: string): Promise<Deck | null> {
+  const priced = await getPricedDeckBySlug(slug);
+  if (priced) return priced;
+
+  const deck = getDeckBySlug(slug);
+  return deck?.status === "planned" ? deck : null;
 }
 
 export async function generateMetadata({
@@ -66,7 +84,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const deck = await getPricedDeckBySlug(slug);
+  const deck = await resolveDeckPage(slug);
 
   if (!deck) {
     return { title: "Deck not found" };
@@ -110,21 +128,24 @@ export default async function DeckPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const deck = await getPricedDeckBySlug(slug);
+  const deck = await resolveDeckPage(slug);
 
   if (!deck) {
     notFound();
   }
 
-  const priceLabel = formatDeckPriceLabel(deck);
-  const checkoutCtaLabel = getDeckCheckoutCtaLabel(deck, priceLabel);
+  const isPlanned = deck.status === "planned";
+  const availableDeck = !isPlanned ? (deck as AvailableDeck) : null;
+  const priceLabel = availableDeck ? formatDeckPriceLabel(availableDeck) : "Coming soon";
+  const checkoutCtaLabel = availableDeck
+    ? getDeckCheckoutCtaLabel(availableDeck, priceLabel)
+    : "Notify me when Anki launches";
   const linkedMock = getDeckLinkedMock(deck.slug);
   const practiceMock = getDeckPracticeMock(deck.slug);
   const mockFirst = isMockFirstDeckPage(deck.slug);
   const companionDeck = getCompanionDeck(deck.slug);
-  const pricedCompanionDeck = companionDeck
-    ? await getPricedDeckBySlug(companionDeck.slug)
-    : null;
+  const pricedCompanionDeck =
+    !isPlanned && companionDeck ? await getPricedDeckBySlug(companionDeck.slug) : null;
   const examFactsProfile = getExamFactsProfileForDeck(deck.slug);
   const secondaryCta = practiceMock
     ? {
@@ -166,7 +187,7 @@ export default async function DeckPage({
   const shortPitch = getDeckShortPitch(deck);
   const showPracticeMockSection = practiceMock && shouldShowDeckPracticeMockSection(deck.slug);
 
-  const jsonLd = buildDeckPageJsonLd(deck);
+  const jsonLd = availableDeck ? buildDeckPageJsonLd(availableDeck) : null;
   const heroImage = getDeckCoverUrl(deck);
   const relatedStudyPaths = [
     ...(isBuildingCertDeckSlug(deck.slug)
@@ -201,10 +222,12 @@ export default async function DeckPage({
 
   return (
     <main className="min-h-screen bg-[#f7f3ea] text-[#18140f]">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      {jsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      ) : null}
       <SiteHeader />
       <FunnelTracker deckSlug={deck.slug} sectionEvents={sectionEvents} source="deck_page" />
 
@@ -264,7 +287,25 @@ export default async function DeckPage({
         />
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-          {mockFirst && practiceMock ? (
+          {isPlanned ? (
+            <>
+              {practiceMock ? (
+                <Link
+                  aria-label={`Try free ${practiceMock.questionCount}-question ${deck.shortName} practice test`}
+                  className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-6 py-3 text-base font-semibold text-[#fffaf0] transition hover:bg-[#152238] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+                  href={`/mock-exams/${practiceMock.slug}`}
+                >
+                  Try free {practiceMock.questionCount}-question practice test
+                </Link>
+              ) : null}
+              <DeckWaitlistCta
+                compact
+                deckSlug={deck.slug}
+                deckTitle={deck.shortName}
+                mockSlug={practiceMock?.slug}
+              />
+            </>
+          ) : mockFirst && practiceMock ? (
             <>
               <Link
                 aria-label={`Try free ${practiceMock.questionCount}-question ${deck.shortName} practice test`}
@@ -274,10 +315,10 @@ export default async function DeckPage({
                 Try free {practiceMock.questionCount}-question practice test
               </Link>
               <TrackedCheckoutLink
-                aria-label={`${checkoutCtaLabel} on ${deck.checkoutProvider}`}
+                aria-label={`${checkoutCtaLabel} on ${availableDeck!.checkoutProvider}`}
                 className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#18140f]/25 px-6 py-3 text-base font-semibold transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
                 deckSlug={deck.slug}
-                href={deck.checkoutUrl}
+                href={availableDeck!.checkoutUrl}
                 source="deck_page_cta"
               >
                 {checkoutCtaLabel}
@@ -286,10 +327,10 @@ export default async function DeckPage({
           ) : (
             <>
               <TrackedCheckoutLink
-                aria-label={`${checkoutCtaLabel} on ${deck.checkoutProvider}`}
+                aria-label={`${checkoutCtaLabel} on ${availableDeck!.checkoutProvider}`}
                 className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-6 py-3 text-base font-semibold text-[#fffaf0] transition hover:bg-[#152238] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
                 deckSlug={deck.slug}
-                href={deck.checkoutUrl}
+                href={availableDeck!.checkoutUrl}
                 source="deck_page_cta"
               >
                 {checkoutCtaLabel}
@@ -302,10 +343,10 @@ export default async function DeckPage({
                 >
                   Try free {practiceMock.questionCount}-question practice test
                 </Link>
-              ) : deck.checkoutProvider === "App Store" ? (
+              ) : availableDeck?.checkoutProvider === "App Store" ? (
                 <Link
                   className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#18140f]/25 px-6 py-3 text-base font-semibold transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
-                  href={deck.checkoutUrl}
+                  href={availableDeck.checkoutUrl}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -322,13 +363,26 @@ export default async function DeckPage({
             </>
           )}
         </div>
-        {deck.checkoutProvider !== "App Store" ? (
+        {isPlanned ? (
           <p className="mt-3 text-sm text-[#5f5749]">
-            Instant {deck.format === "PDF" ? "PDF" : ".apkg"} download · {deck.checkoutProvider} secure checkout
+            Anki deck planned — free practice test is live now. Waitlist pings the founder in Telegram.
+          </p>
+        ) : availableDeck?.checkoutProvider !== "App Store" ? (
+          <p className="mt-3 text-sm text-[#5f5749]">
+            Instant {deck.format === "PDF" ? "PDF" : ".apkg"} download · {availableDeck!.checkoutProvider}{" "}
+            secure checkout
           </p>
         ) : null}
 
-        <DeckApkgPendingNotice deck={deck} />
+        {isPlanned ? (
+          <DeckWaitlistCta
+            deckSlug={deck.slug}
+            deckTitle={deck.shortName}
+            mockSlug={practiceMock?.slug}
+          />
+        ) : null}
+
+        {availableDeck ? <DeckApkgPendingNotice deck={availableDeck} /> : null}
 
         {showPracticeMockSection ? (
           <div id="practice-mock">
@@ -431,16 +485,19 @@ export default async function DeckPage({
           </section>
         ) : null}
 
-        {deck.checkoutProvider !== "App Store" && deck.sampleCards.length > 0 ? (
+        {!isPlanned &&
+        availableDeck?.checkoutProvider !== "App Store" &&
+        deck.sampleCards.length > 0 ? (
           <section className="mt-10 rounded-3xl border border-[#1f3a5f]/20 bg-[#fffaf0] p-6 sm:p-8">
             <h2 className="text-xl font-semibold tracking-tight">Ready to drill with the full deck?</h2>
             <p className="mt-2 max-w-2xl text-sm leading-7 text-[#5f5749]">
-              Instant {deck.format === "PDF" ? "PDF" : ".apkg"} download after {deck.checkoutProvider} checkout.
+              Instant {deck.format === "PDF" ? "PDF" : ".apkg"} download after {availableDeck.checkoutProvider}{" "}
+              checkout.
             </p>
             <TrackedCheckoutLink
               className="mt-4 inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-6 py-3 text-base font-semibold text-[#fffaf0] transition hover:bg-[#152238]"
               deckSlug={deck.slug}
-              href={deck.checkoutUrl}
+              href={availableDeck.checkoutUrl}
               source="deck_page_post_samples"
             >
               {checkoutCtaLabel}
@@ -460,7 +517,7 @@ export default async function DeckPage({
               ["Coverage", deck.facts.topics],
               ["Format", deck.format],
               ["Price", priceLabel],
-              ["Checkout", deck.checkoutProvider],
+              ["Checkout", isPlanned ? "Waitlist" : availableDeck?.checkoutProvider],
               ["Exam cycle", deck.facts.examYear],
               ["Delivery", deck.facts.delivery],
             ].map(([label, value]) => (

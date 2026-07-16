@@ -1,9 +1,9 @@
-import type { CatalogAvailableDeck } from "@/lib/decks";
+import type { Deck } from "@/lib/decks";
 import { getDeckPositioning } from "@/lib/deck-positioning";
 import { formatExamFocusedContent } from "@/lib/deck-page-copy";
 
 type DeckPositioningSectionProps = {
-  deck: CatalogAvailableDeck;
+  deck: Deck;
 };
 
 export function DeckPositioningSection({ deck }: DeckPositioningSectionProps) {

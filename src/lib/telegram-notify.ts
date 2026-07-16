@@ -138,3 +138,69 @@ export async function notifyMockStarted(event: FunnelEvent, mock?: MockExamConfi
 
   return sendTelegramMessage(chatId, toMockStartedMessage(event, mock));
 }
+
+export function toDeckWaitlistMessage(
+  event: FunnelEvent,
+  deck?: AvailableDeck | CatalogAvailableDeck | { slug: string; title: string; status?: string },
+) {
+  return [
+    "UniPrep2Go deck waitlist request",
+    "",
+    `Deck: ${deck?.title ?? event.deckSlug}`,
+    `Slug: ${event.deckSlug}`,
+    `Status: ${deck && "status" in deck ? deck.status : "planned"}`,
+    `Source: ${event.source ?? "unknown"}`,
+    `Path: ${event.path ?? "n/a"}`,
+    `Country: ${event.country ?? "n/a"}`,
+    `Region: ${event.region ?? "n/a"}`,
+    `City: ${event.city ?? "n/a"}`,
+    `Browser language: ${event.browserLanguage ?? event.acceptLanguage ?? "n/a"}`,
+    `Referrer: ${event.referrer ?? "direct"}`,
+    `IP: ${event.clientIp ?? "n/a"}`,
+    `User agent: ${event.userAgent ?? "n/a"}`,
+    `Time: ${event.occurredAt}`,
+  ].join("\n");
+}
+
+export function toMockInterestMessage(event: FunnelEvent, mock?: MockExamConfig) {
+  return [
+    "UniPrep2Go mock interest",
+    "",
+    `Mock: ${mock?.title ?? event.source ?? "unknown"}`,
+    `Mock slug: ${mock?.slug ?? "unknown"}`,
+    `Linked deck: ${mock?.linkedDeckSlug ?? event.deckSlug}`,
+    `Source: ${event.source ?? "unknown"}`,
+    `Path: ${event.path ?? "n/a"}`,
+    `Country: ${event.country ?? "n/a"}`,
+    `Region: ${event.region ?? "n/a"}`,
+    `City: ${event.city ?? "n/a"}`,
+    `Browser language: ${event.browserLanguage ?? event.acceptLanguage ?? "n/a"}`,
+    `Referrer: ${event.referrer ?? "direct"}`,
+    `Time: ${event.occurredAt}`,
+  ].join("\n");
+}
+
+export async function notifyDeckWaitlistInterest(
+  event: FunnelEvent,
+  deck?: AvailableDeck | CatalogAvailableDeck | { slug: string; title: string; status?: string },
+) {
+  const chatId = await getTelegramNotifyChatId();
+
+  if (!chatId) {
+    console.warn("[telegram_notify] no chat id configured; send /stats once or set TELEGRAM_CHAT_ID");
+    return false;
+  }
+
+  return sendTelegramMessage(chatId, toDeckWaitlistMessage(event, deck));
+}
+
+export async function notifyMockInterest(event: FunnelEvent, mock?: MockExamConfig) {
+  const chatId = await getTelegramNotifyChatId();
+
+  if (!chatId) {
+    console.warn("[telegram_notify] no chat id configured; send /stats once or set TELEGRAM_CHAT_ID");
+    return false;
+  }
+
+  return sendTelegramMessage(chatId, toMockInterestMessage(event, mock));
+}

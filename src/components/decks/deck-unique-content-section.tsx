@@ -1,8 +1,8 @@
-import type { CatalogAvailableDeck } from "@/lib/decks";
+import type { Deck } from "@/lib/decks";
 import { getDeckUniqueContent } from "@/lib/deck-money-page-content";
 
 type DeckUniqueContentSectionProps = {
-  deck: CatalogAvailableDeck;
+  deck: Deck;
 };
 
 function parseSections(markdown: string) {

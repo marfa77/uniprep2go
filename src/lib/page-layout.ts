@@ -1,4 +1,4 @@
-import type { CatalogAvailableDeck, DeckFaq } from "./decks";
+import type { Deck, DeckFaq } from "./decks";
 import { getDeckPracticeMock } from "./deck-funnel";
 
 /** Primary FAQ count before "More questions" collapse. */
@@ -19,6 +19,6 @@ export function shouldShowDeckPracticeMockSection(deckSlug: string) {
   return Boolean(getDeckPracticeMock(deckSlug));
 }
 
-export function deckMoreAboutHint(deck: CatalogAvailableDeck) {
+export function deckMoreAboutHint(deck: Deck) {
   return `Study tips, positioning, and how this ${deck.format === "PDF" ? "PDF" : "deck"} compares`;
 }

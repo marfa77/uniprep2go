@@ -39,13 +39,67 @@ import type { MockExamConfig } from "@/lib/mock-exams/types";
 
 const examPathLinks = [
   {
+    title: "Allied health certifications",
+    description: "NHA CCMA, phlebotomy, pharmacy tech, and medical admin readiness checks — free timed mocks.",
+    links: [
+      { href: "/mock-exams?q=nha", label: "Browse NHA mocks" },
+      { href: "/mock-exams/nha-ccma-readiness-check", label: "NHA CCMA mock" },
+      { href: "/mock-exams/nha-cpt-phlebotomy-readiness-check", label: "NHA CPT phlebotomy" },
+      { href: "/mock-exams/ptcb-pharmacy-technician-mock", label: "PTCB practice test" },
+    ],
+  },
+  {
+    title: "CDL & commercial driving",
+    description: "General knowledge plus HazMat, passenger, and school bus endorsement practice.",
+    links: [
+      { href: "/mock-exams?q=cdl", label: "All CDL mocks" },
+      { href: "/mock-exams/cdl-general-knowledge-readiness-check", label: "CDL General Knowledge" },
+      { href: "/mock-exams/cdl-hazmat-readiness-check", label: "CDL HazMat" },
+    ],
+  },
+  {
+    title: "State real estate licensing",
+    description: "Florida, Texas, New York, and California salesperson readiness checks.",
+    links: [
+      { href: "/mock-exams?q=real%20estate", label: "All real estate mocks" },
+      { href: "/mock-exams/fl-real-estate-readiness-check", label: "Florida RE mock" },
+      { href: "/mock-exams/tx-real-estate-readiness-check", label: "Texas RE mock" },
+    ],
+  },
+  {
+    title: "Nursing & nurse aide",
+    description: "NNAAP CNA and NCLEX-PN style readiness checks before clinical skills day.",
+    links: [
+      { href: "/mock-exams?q=nursing", label: "Nursing mocks" },
+      { href: "/mock-exams/nnaap-cna-readiness-check", label: "NNAAP CNA mock" },
+      { href: "/mock-exams/nclex-pn-readiness-check", label: "NCLEX-PN readiness" },
+    ],
+  },
+  {
+    title: "Personal training (CPT)",
+    description: "NASM, ISSA, and ACE CPT practice tests for domain scoring before exam day.",
+    links: [
+      { href: "/mock-exams?q=cpt", label: "All CPT mocks" },
+      { href: "/mock-exams/nasm-cpt-readiness-check", label: "NASM CPT" },
+      { href: "/mock-exams/ace-cpt-readiness-check", label: "ACE CPT" },
+    ],
+  },
+  {
+    title: "Dental assisting & hygiene",
+    description: "DANB ICE/GC and NBDHE readiness checks for chairside and hygiene pathways.",
+    links: [
+      { href: "/mock-exams?q=dental", label: "Dental mocks" },
+      { href: "/mock-exams/danb-ice-readiness-check", label: "DANB ICE" },
+      { href: "/mock-exams/nbdhe-readiness-check", label: "NBDHE readiness" },
+    ],
+  },
+  {
     title: "FINRA securities exam prep",
     description: "Start with the free SIE mock, then drill SIE, Series 7, and Series 63 flashcards.",
     links: [
       { href: "/mock-exams/sie-full-mock", label: "Free SIE practice test" },
       { href: "/decks/sie-exam-anki-deck", label: "SIE flashcards" },
       { href: "/decks/series-7-anki-deck", label: "Series 7 deck" },
-      { href: "/decks/series-63-anki-deck", label: "Series 63 deck" },
     ],
   },
   {
@@ -60,30 +114,12 @@ const examPathLinks = [
   {
     title: "Building, safety & sustainability",
     description:
-      "14 certification pathways — EPA 608, LEED, WELL AP, BMS, MRICS, CFPS, NEBOSH, CDCP, CEM, ASHRAE, GMAT Focus, and PMP — each with a free mock and linked Anki deck.",
+      "EPA 608, LEED, WELL AP, MRICS, and PMP pathways — each with a free mock and linked Anki deck.",
     links: [
       { href: `/${BUILDING_CERTIFICATION_HUB_SLUG}`, label: "All building certification pathways" },
       { href: "/mock-exams/epa-608-readiness-check", label: "EPA 608 readiness check" },
       { href: "/mock-exams/leed-green-associate-readiness-check", label: "LEED GA readiness check" },
-      { href: "/mock-exams/leed-ap-bd-c-readiness-check", label: "LEED AP BD+C readiness check" },
-      { href: "/mock-exams/leed-ap-om-readiness-check", label: "LEED AP O+M readiness check" },
-      { href: "/mock-exams/well-ap-readiness-check", label: "WELL AP readiness check" },
-      { href: "/mock-exams/mrics-readiness-check", label: "MRICS APC readiness check" },
-      { href: "/mock-exams/gmat-focus-readiness-check", label: "GMAT Focus readiness check" },
-      { href: "/mock-exams/gre-readiness-check", label: "GRE General readiness check" },
-      { href: "/mock-exams/sat-readiness-check", label: "Digital SAT readiness check" },
       { href: "/mock-exams/pmp-readiness-check", label: "PMP readiness check" },
-    ],
-  },
-  {
-    title: "US licensing exams",
-    description: "Insurance, California real estate, and pharmacy tech prep with mocks, decks, and PDFs.",
-    links: [
-      { href: "/mock-exams/life-and-health-insurance-readiness-check", label: "Life & Health mock" },
-      { href: "/mock-exams/property-and-casualty-insurance-readiness-check", label: "P&C mock" },
-      { href: "/mock-exams/ptcb-pharmacy-technician-mock", label: "Free PTCB practice test" },
-      { href: "/decks/ptcb-pharmacy-technician-anki-deck", label: "PTCB flashcards" },
-      { href: "/decks/california-real-estate-exam-anki-deck", label: "CA real estate deck" },
     ],
   },
   {
@@ -92,19 +128,7 @@ const examPathLinks = [
     links: [
       { href: "/mock-exams/cfa-level-1-readiness-check", label: "CFA Level 1 mock" },
       { href: "/mock-exams/cfa-level-2-readiness-check", label: "CFA Level 2 mock" },
-      { href: "/decks/cfa-level-1-anki-deck", label: "CFA Level 1 deck" },
-      { href: "/decks/cfa-level-2-anki-deck", label: "CFA Level 2 deck" },
       { href: "/decks/frm-part-1-anki-deck", label: "FRM Part 1 deck" },
-    ],
-  },
-  {
-    title: "Language and citizenship exams",
-    description: "European Portuguese, French, German, Dutch, Italian, and immigration-focused Anki decks.",
-    links: [
-      { href: "/language-certification-decks", label: "All language decks" },
-      { href: "/decks/ciple-a2-european-portuguese-anki-deck", label: "CIPLE A2 Portuguese" },
-      { href: "/decks/delf-b2-french-anki-deck", label: "DELF B2 French" },
-      { href: "/decks/dutch-a2-inburgering-anki-deck", label: "Dutch A2 Inburgering" },
     ],
   },
 ];
@@ -141,13 +165,13 @@ const howItWorksSteps = [
 
 const featuredMockSlugs = [
   "sie-full-mock",
-  "cfa-level-1-readiness-check",
-  "cfa-level-2-readiness-check",
-  "frm-part-1-readiness-check",
+  "cdl-general-knowledge-readiness-check",
+  "nha-ccma-readiness-check",
+  "nremt-emt-readiness-check",
   "servsafe-manager-mock",
+  "fl-real-estate-readiness-check",
   "ptcb-pharmacy-technician-mock",
-  "series-7-readiness-check",
-  "life-and-health-insurance-readiness-check",
+  "cfa-level-1-readiness-check",
 ] as const;
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -370,6 +394,16 @@ export default async function HomePage() {
                 </article>
               ))}
             </div>
+            <p className="mt-6 text-sm text-[#5f5749]">
+              <Link
+                className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+                href="/mock-exams"
+              >
+                Browse all free practice tests
+              </Link>
+              {" — "}
+              search CDL, NHA, real estate, CPT, and 40+ niche exams.
+            </p>
           </div>
         </section>
 

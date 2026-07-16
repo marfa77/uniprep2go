@@ -1,6 +1,8 @@
 import { enrichDeckWithShopPreviews } from "./prep2go-shop-samples";
 import { prep2GoAppDecks } from "./prep2go-app-decks";
 import { applyAnkiDeckLaunchToCatalog } from "./anki-deck-launch";
+import { wave1PlannedDecks } from "./wave1-planned-decks";
+import { wave2PlannedDecks } from "./wave2-planned-decks";
 
 export type DeckStatus = "available" | "planned";
 
@@ -3536,11 +3538,15 @@ const rawDecks: Deck[] = [
 ];
 
 export const decks: Deck[] = applyAnkiDeckLaunchToCatalog(
-  rawDecks.map(enrichDeckWithShopPreviews),
+  [...rawDecks, ...wave1PlannedDecks, ...wave2PlannedDecks].map(enrichDeckWithShopPreviews),
 );
 
 export const catalogAvailableDecks = decks.filter(
   (deck): deck is CatalogAvailableDeck => deck.status === "available",
+);
+
+export const catalogPlannedDecks = decks.filter(
+  (deck): deck is PlannedDeck => deck.status === "planned",
 );
 
 /** Canonical CFA L1 deck record for CFA-specific routes and linked-mock remediation — not the site-wide primary product. */
@@ -3662,7 +3668,7 @@ export function getFeaturedDecks() {
 }
 
 export function getRelatedDecks(
-  deck: CatalogAvailableDeck,
+  deck: Pick<Deck, "slug" | "category">,
   limit = 4,
 ): CatalogAvailableDeck[] {
   return catalogAvailableDecks

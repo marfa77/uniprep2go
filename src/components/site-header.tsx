@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { siteConfig } from "@/lib/site";
+import { HeaderMockSearch } from "@/components/header-mock-search";
 import { MobileSiteNav } from "@/components/mobile-site-nav";
+import { siteConfig } from "@/lib/site";
 
 export function SiteHeader() {
   return (
@@ -28,6 +29,7 @@ export function SiteHeader() {
         >
           Free mocks
         </Link>
+        <HeaderMockSearch />
         <Link
           className="font-medium text-[#4f493e] transition hover:text-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f]"
           href="/#catalog"

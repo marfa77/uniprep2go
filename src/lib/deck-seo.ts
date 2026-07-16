@@ -1,6 +1,7 @@
 import {
   formatDeckContentLabel,
   type CatalogAvailableDeck,
+  type Deck,
   type DeckCategory,
 } from "./decks";
 import { getAllMockExams } from "./mock-exams/configs";
@@ -8,6 +9,9 @@ import { buildMockSeoTitle } from "./mock-exams/seo";
 import type { MockExamConfig } from "./mock-exams/types";
 import { fitSeoTitle, SEO_TITLE_MAX } from "./seo";
 import { absoluteUrl, siteConfig } from "./site";
+
+/** Available or planned catalog deck — SEO helpers only need shared BaseDeck fields. */
+type SeoDeck = CatalogAvailableDeck | Deck;
 
 type DeckSeoProfile = {
   title: string;
@@ -32,17 +36,17 @@ function mockSuffix(mock?: MockExamConfig): string {
   return mock.status === "live" ? " + Free Practice Test" : " + Free Mock";
 }
 
-function contentLabel(deck: CatalogAvailableDeck): string {
+function contentLabel(deck: SeoDeck): string {
   return formatDeckContentLabel(deck);
 }
 
-function studyLabelFor(deck: CatalogAvailableDeck): string {
+function studyLabelFor(deck: SeoDeck): string {
   if (deck.format === "App") return `${deck.shortName} study app`;
   if (deck.format === "PDF") return `${deck.shortName} study guide`;
   return `${deck.shortName} exam prep`;
 }
 
-function defaultTitle(deck: CatalogAvailableDeck, mock?: MockExamConfig): string {
+function defaultTitle(deck: SeoDeck, mock?: MockExamConfig): string {
   const year = yearPrefix(deck.facts.examYear);
   const content = contentLabel(deck);
   const suffix = mockSuffix(mock);
@@ -62,7 +66,7 @@ function defaultTitle(deck: CatalogAvailableDeck, mock?: MockExamConfig): string
   }
 }
 
-function defaultHeadline(deck: CatalogAvailableDeck, mock?: MockExamConfig): string {
+function defaultHeadline(deck: SeoDeck, mock?: MockExamConfig): string {
   const year = yearPrefix(deck.facts.examYear).trim();
   const prefix = year ? `${year} ` : "";
   const content = contentLabel(deck);
@@ -78,7 +82,7 @@ function defaultHeadline(deck: CatalogAvailableDeck, mock?: MockExamConfig): str
   return `${prefix}${deck.shortName} Exam Prep — ${content}`;
 }
 
-function defaultDescription(deck: CatalogAvailableDeck, mock?: MockExamConfig): string {
+function defaultDescription(deck: SeoDeck, mock?: MockExamConfig): string {
   const content = contentLabel(deck);
   const topics = deck.facts.topics;
   const mockLine = mock
@@ -96,7 +100,7 @@ function defaultDescription(deck: CatalogAvailableDeck, mock?: MockExamConfig): 
   return `${deck.shortName} exam prep with ${content.toLowerCase()} covering ${topics.toLowerCase()}. ${deck.format} format for daily spaced-repetition review. Independent study aid.`;
 }
 
-function defaultKeywords(deck: CatalogAvailableDeck, mock?: MockExamConfig): string[] {
+function defaultKeywords(deck: SeoDeck, mock?: MockExamConfig): string[] {
   const base = deck.shortName.toLowerCase();
   const keywords = [
     `${base} exam prep`,
@@ -478,7 +482,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
 };
 
 function mergeProfile(
-  deck: CatalogAvailableDeck,
+  deck: SeoDeck,
   mock?: MockExamConfig,
 ): DeckSeoProfile {
   const defaults: DeckSeoProfile = {
@@ -497,27 +501,27 @@ function mergeProfile(
   return { ...defaults, ...override };
 }
 
-export function getDeckSeoProfile(deck: CatalogAvailableDeck, mock = getLinkedMock(deck.slug)) {
+export function getDeckSeoProfile(deck: SeoDeck, mock = getLinkedMock(deck.slug)) {
   return mergeProfile(deck, mock);
 }
 
-export function buildDeckSeoTitle(deck: CatalogAvailableDeck) {
+export function buildDeckSeoTitle(deck: SeoDeck) {
   return fitSeoTitle(getDeckSeoProfile(deck).title, SEO_TITLE_MAX);
 }
 
-export function buildDeckSeoDescription(deck: CatalogAvailableDeck) {
+export function buildDeckSeoDescription(deck: SeoDeck) {
   return getDeckSeoProfile(deck).description;
 }
 
-export function buildDeckSeoKeywords(deck: CatalogAvailableDeck) {
+export function buildDeckSeoKeywords(deck: SeoDeck) {
   return getDeckSeoProfile(deck).keywords;
 }
 
-export function buildDeckSeoHeadline(deck: CatalogAvailableDeck) {
+export function buildDeckSeoHeadline(deck: SeoDeck) {
   return getDeckSeoProfile(deck).headline;
 }
 
-export function buildDeckSearchFaqs(deck: CatalogAvailableDeck) {
+export function buildDeckSearchFaqs(deck: SeoDeck) {
   const profile = getDeckSeoProfile(deck);
   const mock = getLinkedMock(deck.slug);
   const pageUrl = absoluteUrl(`/decks/${deck.slug}`);
@@ -555,7 +559,7 @@ export function buildDeckSearchFaqs(deck: CatalogAvailableDeck) {
   return faqs;
 }
 
-export function buildDeckSeoPageCopy(deck: CatalogAvailableDeck) {
+export function buildDeckSeoPageCopy(deck: SeoDeck) {
   const profile = getDeckSeoProfile(deck);
 
   return {

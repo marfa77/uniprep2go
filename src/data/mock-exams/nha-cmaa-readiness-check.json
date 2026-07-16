@@ -1,0 +1,1982 @@
+[
+  {
+    "id": "nha-cmaa-readiness-check-scheduling-front-001",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "scheduling-front",
+    "prompt": "When scheduling a new patient appointment, the CMAA should collect:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Demographics, insurance info, chief reason for visit, and provider/time needs"
+      },
+      {
+        "id": "b",
+        "text": "Only the patient's favorite color"
+      },
+      {
+        "id": "c",
+        "text": "No callback number"
+      },
+      {
+        "id": "d",
+        "text": "Diagnosis codes invented without a provider"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Complete intake reduces denials and no-shows; MAs/admins don't invent diagnoses.",
+    "distractorExplanations": {
+      "b": "Color irrelevant.",
+      "c": "Need contact info.",
+      "d": "Coding needs clinical documentation."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-scheduling-front-002",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "scheduling-front",
+    "prompt": "A matrix/template in scheduling is used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bill insurance automatically without claims"
+      },
+      {
+        "id": "b",
+        "text": "Block times for visit types, procedures, and provider preferences"
+      },
+      {
+        "id": "c",
+        "text": "Replace the need for patient names"
+      },
+      {
+        "id": "d",
+        "text": "Store PHI on public social media"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Templates improve flow (physicals vs acute slots, catch-up time).",
+    "distractorExplanations": {
+      "a": "Billing is separate.",
+      "c": "Names still required.",
+      "d": "PHI not for social media."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-scheduling-front-003",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "scheduling-front",
+    "prompt": "Double-booking may be appropriate when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Used randomly without clinical judgment causing chronic backlog"
+      },
+      {
+        "id": "b",
+        "text": "Patients are never informed of delays"
+      },
+      {
+        "id": "c",
+        "text": "Two patients can be seen in overlapping slots planned for short visits/provider workflow"
+      },
+      {
+        "id": "d",
+        "text": "It replaces triage of urgent needs"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Intentional overlap differs from chaotic overbooking; communicate wait times.",
+    "distractorExplanations": {
+      "a": "Random overload harms care.",
+      "b": "Communication required.",
+      "d": "Urgency still triaged."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-scheduling-front-004",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "scheduling-front",
+    "prompt": "When a patient arrives late, the CMAA should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Refuse all future care permanently without policy"
+      },
+      {
+        "id": "b",
+        "text": "Argue at the front desk loudly with PHI details"
+      },
+      {
+        "id": "c",
+        "text": "Skip checking them in entirely while they wait indefinitely without update"
+      },
+      {
+        "id": "d",
+        "text": "Follow office policy—possibly reschedule or fit in without disrupting critical care"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Policies balance fairness and access; maintain professionalism/privacy.",
+    "distractorExplanations": {
+      "a": "Permanent bans need proper process.",
+      "b": "Loud PHI breaches privacy.",
+      "c": "Updates/customer service matter."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-scheduling-front-005",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "scheduling-front",
+    "prompt": "Referral scheduling often requires verifying:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Insurance authorization/referral numbers and specialist network status"
+      },
+      {
+        "id": "b",
+        "text": "Only the referring doctor's hobbies"
+      },
+      {
+        "id": "c",
+        "text": "That no records are sent ever"
+      },
+      {
+        "id": "d",
+        "text": "Cash prices for the specialist without patient consent discussions when relevant finances apply—skip all verification"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Missing auth causes denials; collect/send needed clinical records.",
+    "distractorExplanations": {
+      "b": "Hobbies irrelevant.",
+      "c": "Records usually needed.",
+      "d": "Eligibility/auth verification is core."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-scheduling-front-006",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "scheduling-front",
+    "prompt": "Wave scheduling means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "One patient per day only"
+      },
+      {
+        "id": "b",
+        "text": "Several patients scheduled at the same hour and seen in arrival/order workflow"
+      },
+      {
+        "id": "c",
+        "text": "No appointments—walk-ins only always"
+      },
+      {
+        "id": "d",
+        "text": "Random cancellation of all new patients"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Wave/modified wave are classic office scheduling methods taught in admin programs.",
+    "distractorExplanations": {
+      "a": "Not one per day.",
+      "c": "Walk-in systems differ.",
+      "d": "Not cancellation schemes."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-scheduling-front-007",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "scheduling-front",
+    "prompt": "An encounter form/superbill is used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Replace the medical record entirely"
+      },
+      {
+        "id": "b",
+        "text": "Serve as a controlled substance Rx pad always"
+      },
+      {
+        "id": "c",
+        "text": "Capture services/procedures/diagnoses for billing from the visit"
+      },
+      {
+        "id": "d",
+        "text": "Check out library books"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Superbills feed claim creation; documentation must still support codes.",
+    "distractorExplanations": {
+      "a": "EHR/chart remains legal record.",
+      "b": "Not a DEA Rx form inherently.",
+      "d": "Not library."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-scheduling-front-008",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "scheduling-front",
+    "prompt": "When handling a phone triage-type call about chest pain, the CMAA should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Schedule a visit in three months without escalation"
+      },
+      {
+        "id": "b",
+        "text": "Diagnose GERD confidently"
+      },
+      {
+        "id": "c",
+        "text": "Ignore because they are not clinical"
+      },
+      {
+        "id": "d",
+        "text": "Follow emergency protocols—advise calling 911/ER per script and escalate immediately"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Admin staff use protocols; life-threat symptoms get emergency direction.",
+    "distractorExplanations": {
+      "a": "Delay dangerous.",
+      "b": "Don't diagnose.",
+      "c": "Escalation is required."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-scheduling-front-009",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "scheduling-front",
+    "prompt": "No-show policies should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Applied consistently, documented, and explained in patient communications"
+      },
+      {
+        "id": "b",
+        "text": "Used to publicly shame patients in the waiting room"
+      },
+      {
+        "id": "c",
+        "text": "Different for every staff mood"
+      },
+      {
+        "id": "d",
+        "text": "Hidden from patients entirely always"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Clear policies reduce conflict and support continuity.",
+    "distractorExplanations": {
+      "b": "Public shame unethical/HIPAA risk.",
+      "c": "Consistency matters.",
+      "d": "Patients should know expectations."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-scheduling-front-010",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "scheduling-front",
+    "prompt": "Cluster scheduling groups:",
+    "options": [
+      {
+        "id": "a",
+        "text": "All emergency surgeries in the lobby"
+      },
+      {
+        "id": "b",
+        "text": "Similar appointments together (e.g., all physicals in a block)"
+      },
+      {
+        "id": "c",
+        "text": "No like appointments ever"
+      },
+      {
+        "id": "d",
+        "text": "Only billing calls at midnight without staffing"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Clustering improves efficiency for rooms/equipment/staffing.",
+    "distractorExplanations": {
+      "a": "Emergencies need appropriate settings.",
+      "c": "Clustering is the definition.",
+      "d": "Staffing must match."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-scheduling-front-011",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "scheduling-front",
+    "prompt": "Wave scheduling is designed to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Book only one patient per day"
+      },
+      {
+        "id": "b",
+        "text": "Schedule multiple patients at the same arrival time to improve flow, then space them"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate check-in entirely"
+      },
+      {
+        "id": "d",
+        "text": "Force all visits to be walk-in only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Wave scheduling clusters arrivals to reduce idle provider time while managing wait.",
+    "distractorExplanations": {
+      "a": "Incorrect: Book only one patient per day",
+      "c": "Incorrect: Eliminate check-in entirely",
+      "d": "Incorrect: Force all visits to be walk-in only"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-scheduling-front-012",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "scheduling-front",
+    "prompt": "When verifying insurance before a visit, the CMAA should typically confirm:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the patient's favorite pharmacy"
+      },
+      {
+        "id": "b",
+        "text": "Eligibility, coverage, and referral/authorization requirements as applicable"
+      },
+      {
+        "id": "c",
+        "text": "The physician's personal NPI by guessing"
+      },
+      {
+        "id": "d",
+        "text": "Nothing if the patient has a card photo"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Eligibility and auth checks reduce denials and surprise patient bills.",
+    "distractorExplanations": {
+      "a": "Incorrect: Only the patient's favorite pharmacy",
+      "c": "Incorrect: The physician's personal NPI by guessing",
+      "d": "Incorrect: Nothing if the patient has a card photo"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-scheduling-front-013",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "scheduling-front",
+    "prompt": "A no-show policy is most effective when it is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Secret and never told to patients"
+      },
+      {
+        "id": "b",
+        "text": "Clearly communicated, consistently applied, and documented"
+      },
+      {
+        "id": "c",
+        "text": "Changed randomly each hour"
+      },
+      {
+        "id": "d",
+        "text": "Used to refuse emergencies illegally"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Transparent, consistent no-show policies support operations and fairness.",
+    "distractorExplanations": {
+      "a": "Incorrect: Secret and never told to patients",
+      "c": "Incorrect: Changed randomly each hour",
+      "d": "Incorrect: Used to refuse emergencies illegally"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-scheduling-front-014",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "scheduling-front",
+    "prompt": "Which information is essential when creating a new patient demographic record?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Accurate legal name, DOB, contact, and insurance identifiers"
+      },
+      {
+        "id": "b",
+        "text": "Only a nickname"
+      },
+      {
+        "id": "c",
+        "text": "The CMAA's home address"
+      },
+      {
+        "id": "d",
+        "text": "The patient's social media passwords"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Correct demographics underpin registration, billing, and clinical identification.",
+    "distractorExplanations": {
+      "b": "Incorrect: Only a nickname",
+      "c": "Incorrect: The CMAA's home address",
+      "d": "Incorrect: The patient's social media passwords"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-scheduling-front-015",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "scheduling-front",
+    "prompt": "If two patients arrive claiming the same appointment slot, the CMAA should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Argue loudly in the waiting room"
+      },
+      {
+        "id": "b",
+        "text": "Review the schedule/documentation calmly and escalate per office protocol to resolve the conflict"
+      },
+      {
+        "id": "c",
+        "text": "Delete both charts"
+      },
+      {
+        "id": "d",
+        "text": "Charge both patients double automatically"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "De-escalate, verify records, and follow protocol; protect privacy while resolving errors.",
+    "distractorExplanations": {
+      "a": "Incorrect: Argue loudly in the waiting room",
+      "c": "Incorrect: Delete both charts",
+      "d": "Incorrect: Charge both patients double automatically"
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-medical-records-001",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "medical-records",
+    "prompt": "The legal health record is best described as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Documentation of care used for clinical, legal, and billing purposes under retention rules"
+      },
+      {
+        "id": "b",
+        "text": "Only sticky notes never entered"
+      },
+      {
+        "id": "c",
+        "text": "The waiting room sign-in clipboard as the full chart"
+      },
+      {
+        "id": "d",
+        "text": "Social media messages exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Entries should be timely, accurate, authenticated, and complete.",
+    "distractorExplanations": {
+      "b": "Sticky notes inadequate alone.",
+      "c": "Sign-in isn't the full record.",
+      "d": "Social media not the legal record."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-medical-records-002",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "medical-records",
+    "prompt": "HIPAA allows PHI disclosure without authorization for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Marketing sale of PHI without limits always"
+      },
+      {
+        "id": "b",
+        "text": "Treatment, payment, and healthcare operations (TPO) under the Privacy Rule"
+      },
+      {
+        "id": "c",
+        "text": "Public gossip"
+      },
+      {
+        "id": "d",
+        "text": "Employer curiosity without involvement"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Minimum necessary applies to many payment/operations uses; treatment has nuances.",
+    "distractorExplanations": {
+      "a": "Marketing often needs auth.",
+      "c": "Gossip prohibited.",
+      "d": "Employers generally need authorization/other legal basis."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-medical-records-003",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "medical-records",
+    "prompt": "A valid authorization to release records generally includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only a verbal 'sure' from an unknown caller"
+      },
+      {
+        "id": "b",
+        "text": "Provider initials alone forever"
+      },
+      {
+        "id": "c",
+        "text": "Who, what, to whom, purpose, expiration, and signature/date elements"
+      },
+      {
+        "id": "d",
+        "text": "Blank unsigned forms filled later by staff creatively"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Defective authorizations should be rejected/fixed before release.",
+    "distractorExplanations": {
+      "a": "Caller verbal insufficient alone.",
+      "b": "Need proper patient/personal representative signature.",
+      "d": "No creative backdating."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-medical-records-004",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "medical-records",
+    "prompt": "Correcting an EHR error should follow policy such as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deleting the encounter entirely to hide the mistake"
+      },
+      {
+        "id": "b",
+        "text": "Altering another clinician's note silently"
+      },
+      {
+        "id": "c",
+        "text": "Inserting false times"
+      },
+      {
+        "id": "d",
+        "text": "Addendum/correction that preserves the original entry (no obliteration)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Audit trails track changes; honesty protects legal integrity.",
+    "distractorExplanations": {
+      "a": "Deletion to hide is misconduct.",
+      "b": "Don't alter others' notes improperly.",
+      "c": "False times fraudulent."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-medical-records-005",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "medical-records",
+    "prompt": "ROI (release of information) turnaround should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Follow federal/state timelines and facility procedures with tracking logs"
+      },
+      {
+        "id": "b",
+        "text": "Ignore urgent care continuum needs always"
+      },
+      {
+        "id": "c",
+        "text": "Release entire charts to anyone paying cash without checks"
+      },
+      {
+        "id": "d",
+        "text": "Mail records to unverified addresses casually"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Verify identity/authority; account for sensitive records (psych/HIV/substance) special rules.",
+    "distractorExplanations": {
+      "b": "Urgent TPO pathways exist.",
+      "c": "Identity/authority required.",
+      "d": "Address verification matters."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-medical-records-006",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "medical-records",
+    "prompt": "The Notice of Privacy Practices (NPP) is provided to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only pharmaceutical sales reps"
+      },
+      {
+        "id": "b",
+        "text": "Patients to explain uses of PHI and patient rights, with acknowledgment efforts"
+      },
+      {
+        "id": "c",
+        "text": "No one—it's optional wallpaper"
+      },
+      {
+        "id": "d",
+        "text": "Competitors for marketing lists"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Covered entities must make NPP available and retain acknowledgments when required.",
+    "distractorExplanations": {
+      "a": "Not for drug reps as the patient duty.",
+      "c": "Required, not optional.",
+      "d": "Not a marketing list tool."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-medical-records-007",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "medical-records",
+    "prompt": "Minimum necessary standard means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Everyone in the building may read all charts"
+      },
+      {
+        "id": "b",
+        "text": "Reception must memorize full psychiatric notes"
+      },
+      {
+        "id": "c",
+        "text": "Limit PHI access/use/disclosure to the least needed for the purpose (with treatment exceptions nuances)"
+      },
+      {
+        "id": "d",
+        "text": "Billers need full psychotherapy process notes always"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Role-based access implements minimum necessary.",
+    "distractorExplanations": {
+      "a": "Open access violates HIPAA.",
+      "b": "Reception needs scheduling-minimum.",
+      "d": "Specially protected notes have extra limits."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-medical-records-008",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "medical-records",
+    "prompt": "Retention of adult medical records is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "One week maximum always nationwide"
+      },
+      {
+        "id": "b",
+        "text": "Destroyed immediately after each visit always"
+      },
+      {
+        "id": "c",
+        "text": "Kept forever in the front desk drawer unlocked with no policy"
+      },
+      {
+        "id": "d",
+        "text": "Governed by state law and payer/accreditation policies (often years beyond last visit)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Know that retention varies; follow the strictest applicable rule/policy.",
+    "distractorExplanations": {
+      "a": "One week too short generally.",
+      "b": "Immediate destruction improper.",
+      "c": "Secure storage required."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-medical-records-009",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "medical-records",
+    "prompt": "A personal representative for an adult patient is typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Someone with legal authority (e.g., healthcare power of attorney) as defined by law"
+      },
+      {
+        "id": "b",
+        "text": "Any coworker"
+      },
+      {
+        "id": "c",
+        "text": "A journalist"
+      },
+      {
+        "id": "d",
+        "text": "Anyone who knows the patient's birthday"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Verify authority before discussing PHI or obtaining authorizations.",
+    "distractorExplanations": {
+      "b": "Coworkers lack authority by default.",
+      "c": "Press has no right.",
+      "d": "DOB knowledge ≠ authority."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-medical-records-010",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "medical-records",
+    "prompt": "Faxing PHI safely includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Faxing to wrong numbers without verification routinely"
+      },
+      {
+        "id": "b",
+        "text": "Verifying numbers, using cover sheets, and placing machines in secure areas"
+      },
+      {
+        "id": "c",
+        "text": "Posting faxes on public boards"
+      },
+      {
+        "id": "d",
+        "text": "Disabling transmission audits always"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Misdirected faxes are common breaches—confirm before send.",
+    "distractorExplanations": {
+      "a": "Verification prevents breaches.",
+      "c": "Public posting is disclosure.",
+      "d": "Audits help investigate."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-medical-records-011",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "medical-records",
+    "prompt": "Under HIPAA, protected health information (PHI) includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only hospital cafeteria menus"
+      },
+      {
+        "id": "b",
+        "text": "Individually identifiable health information in any form"
+      },
+      {
+        "id": "c",
+        "text": "Weather reports"
+      },
+      {
+        "id": "d",
+        "text": "Publicly posted clinic hours with no patient data"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "PHI is health information that can identify an individual.",
+    "distractorExplanations": {
+      "a": "Incorrect: Only hospital cafeteria menus",
+      "c": "Incorrect: Weather reports",
+      "d": "Incorrect: Publicly posted clinic hours with no patient data"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-medical-records-012",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "medical-records",
+    "prompt": "When releasing records to a third party, the CMAA generally needs:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A verbal request from any caller"
+      },
+      {
+        "id": "b",
+        "text": "A valid patient authorization (or another permitted disclosure) covering the request"
+      },
+      {
+        "id": "c",
+        "text": "Only the requester's email address"
+      },
+      {
+        "id": "d",
+        "text": "Permission from a pharmaceutical sales rep"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Most non-TPO disclosures require proper authorization or another HIPAA pathway.",
+    "distractorExplanations": {
+      "a": "Incorrect: A verbal request from any caller",
+      "c": "Incorrect: Only the requester's email address",
+      "d": "Incorrect: Permission from a pharmaceutical sales rep"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-medical-records-013",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "medical-records",
+    "prompt": "How should a paper chart error typically be corrected?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Erase thoroughly until unreadable"
+      },
+      {
+        "id": "b",
+        "text": "Draw a single line through the error, initial/date, and enter the correction per policy (no obliteration)"
+      },
+      {
+        "id": "c",
+        "text": "Use white-out to hide the original"
+      },
+      {
+        "id": "d",
+        "text": "Remove the page from the chart"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Corrections must remain legible and auditable.",
+    "distractorExplanations": {
+      "a": "Incorrect: Erase thoroughly until unreadable",
+      "c": "Incorrect: Use white-out to hide the original",
+      "d": "Incorrect: Remove the page from the chart"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-medical-records-014",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "medical-records",
+    "prompt": "Retention of medical records should follow:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Whatever is convenient that week"
+      },
+      {
+        "id": "b",
+        "text": "State law, payer, and facility retention policies"
+      },
+      {
+        "id": "c",
+        "text": "Only social media trends"
+      },
+      {
+        "id": "d",
+        "text": "Immediate shredding after each visit always"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Retention periods are legally and organizationally defined.",
+    "distractorExplanations": {
+      "a": "Incorrect: Whatever is convenient that week",
+      "c": "Incorrect: Only social media trends",
+      "d": "Incorrect: Immediate shredding after each visit always"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-medical-records-015",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "medical-records",
+    "prompt": "Role-based access controls in an EHR help ensure:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Every employee can see all celebrity charts"
+      },
+      {
+        "id": "b",
+        "text": "Workforce members access only the PHI needed for their job functions"
+      },
+      {
+        "id": "c",
+        "text": "Passwords are shared at the front desk"
+      },
+      {
+        "id": "d",
+        "text": "Audit logs are disabled"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Minimum necessary access reduces privacy risk.",
+    "distractorExplanations": {
+      "a": "Incorrect: Every employee can see all celebrity charts",
+      "c": "Incorrect: Passwords are shared at the front desk",
+      "d": "Incorrect: Audit logs are disabled"
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-billing-coding-basics-001",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "billing-coding-basics",
+    "prompt": "CPT codes primarily describe:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Procedures and services performed"
+      },
+      {
+        "id": "b",
+        "text": "Diagnoses only"
+      },
+      {
+        "id": "c",
+        "text": "Drug NDCs only"
+      },
+      {
+        "id": "d",
+        "text": "Place of service only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ICD-10-CM = diagnoses; CPT/HCPCS = services/supplies.",
+    "distractorExplanations": {
+      "b": "Diagnoses are ICD.",
+      "c": "NDC identifies drugs.",
+      "d": "POS is a claim field."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-billing-coding-basics-002",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "billing-coding-basics",
+    "prompt": "A claim denial for 'timely filing' means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The patient was on time for the visit"
+      },
+      {
+        "id": "b",
+        "text": "The claim was submitted after the payer's deadline"
+      },
+      {
+        "id": "c",
+        "text": "The provider's license expired that day always as the only meaning"
+      },
+      {
+        "id": "d",
+        "text": "CPT and ICD mismatched only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Track filing limits; appeal/correct within payer rules.",
+    "distractorExplanations": {
+      "a": "Appointment punctuality unrelated.",
+      "c": "License issues different denial.",
+      "d": "Code mismatch is another denial reason."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-billing-coding-basics-003",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "billing-coding-basics",
+    "prompt": "Coordination of benefits (COB) determines:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Which exam room to use"
+      },
+      {
+        "id": "b",
+        "text": "The provider's lunch break"
+      },
+      {
+        "id": "c",
+        "text": "Which insurance pays first when a patient has multiple coverages"
+      },
+      {
+        "id": "d",
+        "text": "Whether SOAP notes are required"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Primary vs secondary billing order prevents overpayment.",
+    "distractorExplanations": {
+      "a": "Rooms unrelated.",
+      "b": "Lunch unrelated.",
+      "d": "Docs always required clinically."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-billing-coding-basics-004",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "billing-coding-basics",
+    "prompt": "An Advanced Beneficiary Notice (ABN) relates to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Always guaranteeing Medicaid payment"
+      },
+      {
+        "id": "b",
+        "text": "Workers' comp exclusive remedy only"
+      },
+      {
+        "id": "c",
+        "text": "Dental cleanings exclusively worldwide"
+      },
+      {
+        "id": "d",
+        "text": "Medicare situations where a service may not be covered and patient may be financially liable"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Proper ABN issuance matters before the service when required.",
+    "distractorExplanations": {
+      "a": "Not a Medicaid guarantee.",
+      "b": "Different systems.",
+      "c": "Not only dental."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-billing-coding-basics-005",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "billing-coding-basics",
+    "prompt": "ICD-10-CM codes should be selected based on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Provider documentation to the highest specificity supported"
+      },
+      {
+        "id": "b",
+        "text": "Whichever code pays most regardless of documentation"
+      },
+      {
+        "id": "c",
+        "text": "Patient preference for scary-sounding diseases"
+      },
+      {
+        "id": "d",
+        "text": "Random codebook pages"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Codes must be supported; upcoding is fraud risk.",
+    "distractorExplanations": {
+      "b": "Payment-driven coding noncompliant.",
+      "c": "Patients don't pick DX codes.",
+      "d": "Random improper."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-billing-coding-basics-006",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "billing-coding-basics",
+    "prompt": "A clean claim is one that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Is printed on green paper only"
+      },
+      {
+        "id": "b",
+        "text": "Has complete/accurate data enabling payer processing without pending for missing info"
+      },
+      {
+        "id": "c",
+        "text": "Contains no diagnosis"
+      },
+      {
+        "id": "d",
+        "text": "Uses nickname instead of legal name always"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Front-desk data quality (subscriber ID, DOB, NPI, POS) drives clean claims.",
+    "distractorExplanations": {
+      "a": "Paper color irrelevant.",
+      "c": "Diagnosis required generally.",
+      "d": "Legal names/IDs needed."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-billing-coding-basics-007",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "billing-coding-basics",
+    "prompt": "Day sheet/accounts receivable concepts help the office track:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only clinical vitals"
+      },
+      {
+        "id": "b",
+        "text": "Sterilizer BI results"
+      },
+      {
+        "id": "c",
+        "text": "Charges, payments, adjustments, and outstanding balances"
+      },
+      {
+        "id": "d",
+        "text": "Employee blood titers only"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Posting accuracy prevents billing disputes.",
+    "distractorExplanations": {
+      "a": "Vitals clinical.",
+      "b": "BI is SPD/dental.",
+      "d": "Titers occupational health."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-billing-coding-basics-008",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "billing-coding-basics",
+    "prompt": "Modifier 25 is used when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bilateral surgery"
+      },
+      {
+        "id": "b",
+        "text": "Assistant surgeon"
+      },
+      {
+        "id": "c",
+        "text": "Repeat lab test only"
+      },
+      {
+        "id": "d",
+        "text": "A significant, separately identifiable E/M is billed same day as a procedure"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Documentation must support separateness from the procedure's inherent E/M.",
+    "distractorExplanations": {
+      "a": "50 bilateral.",
+      "b": "80 assistant.",
+      "c": "91 repeat clinical diagnostic lab."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-billing-coding-basics-009",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "billing-coding-basics",
+    "prompt": "Patient statements should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Clearly show dates of service, charges, payments, and amount due with appeal/question contacts"
+      },
+      {
+        "id": "b",
+        "text": "Include other patients' balances 'for comparison'"
+      },
+      {
+        "id": "c",
+        "text": "Hide the provider NPI forever when required on claims differently—confuse patients intentionally"
+      },
+      {
+        "id": "d",
+        "text": "Threaten violence"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Transparent billing is ethical and often regulated by state rules.",
+    "distractorExplanations": {
+      "b": "Others' PHI forbidden.",
+      "c": "Don't intentionally confuse.",
+      "d": "Threats illegal."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-billing-coding-basics-010",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "billing-coding-basics",
+    "prompt": "Preauthorization differs from precertification discussions in that both generally mean:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A guarantee of payment in all cases without meeting terms"
+      },
+      {
+        "id": "b",
+        "text": "Payer approval processes required before certain services for coverage"
+      },
+      {
+        "id": "c",
+        "text": "Only a clinical consent form"
+      },
+      {
+        "id": "d",
+        "text": "An OSHA requirement"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Auth doesn't always guarantee final payment if eligibility/medical necessity fails.",
+    "distractorExplanations": {
+      "a": "Not absolute guarantee.",
+      "c": "Consent is separate.",
+      "d": "OSHA is safety."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-billing-coding-basics-011",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "billing-coding-basics",
+    "prompt": "A deductible is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The fixed amount paid at every visit regardless of plan design"
+      },
+      {
+        "id": "b",
+        "text": "The amount the patient must pay before the plan begins paying covered services (per plan rules)"
+      },
+      {
+        "id": "c",
+        "text": "The provider's tax ID"
+      },
+      {
+        "id": "d",
+        "text": "A type of CPT modifier"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Deductibles are patient responsibility before insurance payment applies (subject to plan design).",
+    "distractorExplanations": {
+      "a": "Incorrect: The fixed amount paid at every visit regardless of plan design",
+      "c": "Incorrect: The provider's tax ID",
+      "d": "Incorrect: A type of CPT modifier"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-billing-coding-basics-012",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "billing-coding-basics",
+    "prompt": "Which claim form is commonly used for professional (physician) billing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "UB-04 only"
+      },
+      {
+        "id": "b",
+        "text": "CMS-1500"
+      },
+      {
+        "id": "c",
+        "text": "SDS sheet"
+      },
+      {
+        "id": "d",
+        "text": "DEA Form 222 for all visits"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "CMS-1500 is the standard professional claim; UB-04 is institutional.",
+    "distractorExplanations": {
+      "a": "Incorrect: UB-04 only",
+      "c": "Incorrect: SDS sheet",
+      "d": "Incorrect: DEA Form 222 for all visits"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-billing-coding-basics-013",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "billing-coding-basics",
+    "prompt": "Coordination of benefits (COB) is needed when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A patient has no insurance"
+      },
+      {
+        "id": "b",
+        "text": "A patient has more than one insurance plan that may cover the same services"
+      },
+      {
+        "id": "c",
+        "text": "Only cash-pay visits occur"
+      },
+      {
+        "id": "d",
+        "text": "The clinic buys new printers"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "COB determines primary vs secondary payment order.",
+    "distractorExplanations": {
+      "a": "Incorrect: A patient has no insurance",
+      "c": "Incorrect: Only cash-pay visits occur",
+      "d": "Incorrect: The clinic buys new printers"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-billing-coding-basics-014",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "billing-coding-basics",
+    "prompt": "An encounter form / superbill typically lists:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only employee vacation days"
+      },
+      {
+        "id": "b",
+        "text": "Common diagnoses and procedures to support charge capture for a visit"
+      },
+      {
+        "id": "c",
+        "text": "Pharmacy inventory par levels"
+      },
+      {
+        "id": "d",
+        "text": "MRI images"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Superbills help capture services/diagnoses for billing.",
+    "distractorExplanations": {
+      "a": "Incorrect: Only employee vacation days",
+      "c": "Incorrect: Pharmacy inventory par levels",
+      "d": "Incorrect: MRI images"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-billing-coding-basics-015",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "billing-coding-basics",
+    "prompt": "If a claim is denied for missing information, the CMAA should generally:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Resubmit the identical claim without review"
+      },
+      {
+        "id": "b",
+        "text": "Review the denial reason, correct the claim/documentation, and resubmit or appeal as appropriate"
+      },
+      {
+        "id": "c",
+        "text": "Bill the patient triple automatically"
+      },
+      {
+        "id": "d",
+        "text": "Delete the patient's chart"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Denial management requires root-cause correction and proper resubmission/appeal.",
+    "distractorExplanations": {
+      "a": "Incorrect: Resubmit the identical claim without review",
+      "c": "Incorrect: Bill the patient triple automatically",
+      "d": "Incorrect: Delete the patient's chart"
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-communication-ethics-001",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "communication-ethics",
+    "prompt": "Active listening includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paraphrasing, clarifying, and attending to verbal/nonverbal cues"
+      },
+      {
+        "id": "b",
+        "text": "Interrupting with solutions immediately always"
+      },
+      {
+        "id": "c",
+        "text": "Looking only at the computer never the patient"
+      },
+      {
+        "id": "d",
+        "text": "Finishing every sentence for the patient"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Builds rapport and reduces errors in intake.",
+    "distractorExplanations": {
+      "b": "Interruptions block info.",
+      "c": "Eye contact/attention matters culturally appropriately.",
+      "d": "Don't overtake their narrative."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-communication-ethics-002",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "communication-ethics",
+    "prompt": "If a patient is hostile, the CMAA should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Match their insults"
+      },
+      {
+        "id": "b",
+        "text": "Stay calm, set boundaries, ensure safety, and involve supervisor/security as needed"
+      },
+      {
+        "id": "c",
+        "text": "Reveal another patient's information to distract them"
+      },
+      {
+        "id": "d",
+        "text": "Lock them in a room alone without protocol"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "De-escalation and safety first; document incidents.",
+    "distractorExplanations": {
+      "a": "Insults escalate.",
+      "c": "PHI bait is illegal.",
+      "d": "Unsafe confinement risks."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-communication-ethics-003",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "communication-ethics",
+    "prompt": "Empathy differs from sympathy in that empathy:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Means diagnosing their disease"
+      },
+      {
+        "id": "b",
+        "text": "Requires sharing PHI of similar patients"
+      },
+      {
+        "id": "c",
+        "text": "Seeks to understand the patient's feelings/perspective without necessarily sharing the same emotion"
+      },
+      {
+        "id": "d",
+        "text": "Is unprofessional always"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Empathic statements validate experience; remain professional boundaries.",
+    "distractorExplanations": {
+      "a": "Not diagnosing.",
+      "b": "Don't share others' PHI.",
+      "d": "Empathy is professional."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-communication-ethics-004",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "communication-ethics",
+    "prompt": "Ethics of confidentiality means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sharing charts with friends for learning without approval"
+      },
+      {
+        "id": "b",
+        "text": "Posting de-identified funny cases that are actually identifiable"
+      },
+      {
+        "id": "c",
+        "text": "Selling celebrity visit rumors"
+      },
+      {
+        "id": "d",
+        "text": "Not discussing patient information with unauthorized persons"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Even 'interesting cases' need authorization or proper de-identification standards.",
+    "distractorExplanations": {
+      "a": "Friends unauthorized.",
+      "b": "Inadequate de-ID fails.",
+      "c": "Rumors unethical/illegal."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-communication-ethics-005",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "communication-ethics",
+    "prompt": "When cultural/language barriers exist, best practice is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use qualified interpreters rather than minor children when possible"
+      },
+      {
+        "id": "b",
+        "text": "Speak louder English only"
+      },
+      {
+        "id": "c",
+        "text": "Guess medical terms in mime for consent"
+      },
+      {
+        "id": "d",
+        "text": "Skip informed intake questions"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Language access improves safety and compliance with requirements.",
+    "distractorExplanations": {
+      "b": "Volume ≠ translation.",
+      "c": "Mime inadequate for consent.",
+      "d": "Intake still needed."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-communication-ethics-006",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "communication-ethics",
+    "prompt": "Professional boundaries include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Becoming business partners with every patient casually"
+      },
+      {
+        "id": "b",
+        "text": "Avoiding dual relationships that exploit patients and keeping communications appropriate"
+      },
+      {
+        "id": "c",
+        "text": "Dating patients while they are under active care as best practice"
+      },
+      {
+        "id": "d",
+        "text": "Accepting lavish gifts that influence scheduling unfairly"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Follow office policies on gifts/relationships.",
+    "distractorExplanations": {
+      "a": "Dual relationships risky.",
+      "c": "Dating patients unethical generally.",
+      "d": "Gift policies prevent favoritism."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-communication-ethics-007",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "communication-ethics",
+    "prompt": "If you overhear coworkers gossiping about a patient's STI, you should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Join in with more details"
+      },
+      {
+        "id": "b",
+        "text": "Post it anonymously online"
+      },
+      {
+        "id": "c",
+        "text": "Remind them of privacy rules and report per policy if needed"
+      },
+      {
+        "id": "d",
+        "text": "Ignore repeated systemic violations forever"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Everyone is responsible for the privacy culture.",
+    "distractorExplanations": {
+      "a": "Joining worsens breach.",
+      "b": "Online posting is a breach.",
+      "d": "Systemic issues need reporting."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-communication-ethics-008",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "communication-ethics",
+    "prompt": "Informed consent discussions are primarily the responsibility of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The front desk diagnosing risks independently"
+      },
+      {
+        "id": "b",
+        "text": "The billing company alone"
+      },
+      {
+        "id": "c",
+        "text": "A pharmaceutical sales rep"
+      },
+      {
+        "id": "d",
+        "text": "The provider performing the procedure, with CMAA supporting forms/logistics"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Admin staff witness/organize consents but don't replace clinician disclosure.",
+    "distractorExplanations": {
+      "a": "Front desk doesn't give clinical informed consent alone.",
+      "b": "Billing ≠ consent.",
+      "c": "Reps don't consent patients."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-communication-ethics-009",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "communication-ethics",
+    "prompt": "Customer service recovery after a registration error should include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apology, correction, and prevention steps without blaming the patient unfairly"
+      },
+      {
+        "id": "b",
+        "text": "Hiding the error in claims"
+      },
+      {
+        "id": "c",
+        "text": "Charging an 'embarrassment fee'"
+      },
+      {
+        "id": "d",
+        "text": "Yelling that the patient filled forms wrong only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Service recovery rebuilds trust and reduces complaints/reviews fallout.",
+    "distractorExplanations": {
+      "b": "Hiding creates compliance risk.",
+      "c": "Fees punitive/unethical.",
+      "d": "Shared responsibility, professional tone."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-communication-ethics-010",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "communication-ethics",
+    "prompt": "Workplace harassment should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Accepted as 'just joking' always"
+      },
+      {
+        "id": "b",
+        "text": "Reported per HR policy; patients and staff deserve a respectful environment"
+      },
+      {
+        "id": "c",
+        "text": "Retaliated against reporters"
+      },
+      {
+        "id": "d",
+        "text": "Filmed and posted publicly with PHI"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Follow zero-tolerance procedures; protect reporters from retaliation.",
+    "distractorExplanations": {
+      "a": "Jokes can be harassment.",
+      "c": "Retaliation prohibited.",
+      "d": "Public posting worsens harm/privacy."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-communication-ethics-011",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "communication-ethics",
+    "prompt": "When leaving a telephone message for a patient, the CMAA should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Announce the full diagnosis and lab values on voicemail"
+      },
+      {
+        "id": "b",
+        "text": "Leave minimal necessary information per policy to protect privacy"
+      },
+      {
+        "id": "c",
+        "text": "Discuss results with whoever answers the phone"
+      },
+      {
+        "id": "d",
+        "text": "Post the message on the clinic Facebook page"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Messages should avoid unnecessary PHI disclosure.",
+    "distractorExplanations": {
+      "a": "Incorrect: Announce the full diagnosis and lab values on voicemail",
+      "c": "Incorrect: Discuss results with whoever answers the phone",
+      "d": "Incorrect: Post the message on the clinic Facebook page"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-communication-ethics-012",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "communication-ethics",
+    "prompt": "Empathy in patient communication means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Agreeing that policies never apply"
+      },
+      {
+        "id": "b",
+        "text": "Acknowledging feelings while remaining professional and solution-focused"
+      },
+      {
+        "id": "c",
+        "text": "Sharing other patients' stories in detail"
+      },
+      {
+        "id": "d",
+        "text": "Avoiding eye contact and walking away"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Empathy validates emotion without abandoning professional boundaries.",
+    "distractorExplanations": {
+      "a": "Incorrect: Agreeing that policies never apply",
+      "c": "Incorrect: Sharing other patients' stories in detail",
+      "d": "Incorrect: Avoiding eye contact and walking away"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-communication-ethics-013",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "communication-ethics",
+    "prompt": "A conflict of interest example for a CMAA is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Following the attendance policy"
+      },
+      {
+        "id": "b",
+        "text": "Accepting kickbacks to refer patients to a specific vendor"
+      },
+      {
+        "id": "c",
+        "text": "Clocking out on time"
+      },
+      {
+        "id": "d",
+        "text": "Attending HIPAA training"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Kickbacks and biased referrals violate ethics and often law (e.g., anti-kickback rules).",
+    "distractorExplanations": {
+      "a": "Incorrect: Following the attendance policy",
+      "c": "Incorrect: Clocking out on time",
+      "d": "Incorrect: Attending HIPAA training"
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-communication-ethics-014",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "communication-ethics",
+    "prompt": "Which is appropriate when a language barrier exists?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rely on a minor child to interpret complex medical information routinely"
+      },
+      {
+        "id": "b",
+        "text": "Use a qualified interpreter/service per facility policy"
+      },
+      {
+        "id": "c",
+        "text": "Speak louder in English only"
+      },
+      {
+        "id": "d",
+        "text": "Skip informed forms entirely"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Qualified interpreters support accurate, ethical communication.",
+    "distractorExplanations": {
+      "a": "Incorrect: Rely on a minor child to interpret complex medical information routinely",
+      "c": "Incorrect: Speak louder in English only",
+      "d": "Incorrect: Skip informed forms entirely"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-cmaa-readiness-check-communication-ethics-015",
+    "examSlug": "nha-cmaa-readiness-check",
+    "topicId": "communication-ethics",
+    "prompt": "Professional boundaries with patients include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Becoming financially entangled with patients for personal gain"
+      },
+      {
+        "id": "b",
+        "text": "Maintaining a therapeutic, respectful relationship without exploitation"
+      },
+      {
+        "id": "c",
+        "text": "Asking patients for large personal loans"
+      },
+      {
+        "id": "d",
+        "text": "Dating patients while accessing their charts for curiosity"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Administrative staff must maintain professional, non-exploitative boundaries.",
+    "distractorExplanations": {
+      "a": "Incorrect: Becoming financially entangled with patients for personal gain",
+      "c": "Incorrect: Asking patients for large personal loans",
+      "d": "Incorrect: Dating patients while accessing their charts for curiosity"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  }
+]

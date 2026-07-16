@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { availableDecks } from "../lib/decks";
+import { availableDecks, catalogPlannedDecks } from "../lib/decks";
 import { getAllMockExams } from "../lib/mock-exams/configs";
 import { shouldIndexMockExam } from "../lib/seo";
 import { siteConfig } from "../lib/site";
@@ -14,6 +14,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified,
     changeFrequency: "monthly" as const,
     priority: 0.92,
+  }));
+
+  const plannedDeckPages = catalogPlannedDecks.map((deck) => ({
+    url: `${siteUrl}/decks/${deck.slug}`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
   }));
 
   const mockPages = getAllMockExams()
@@ -100,6 +107,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...mockPages,
     ...deckPages,
+    ...plannedDeckPages,
     {
       url: `${siteUrl}/contact`,
       lastModified,

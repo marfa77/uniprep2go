@@ -1,4 +1,4 @@
-import type { CatalogAvailableDeck, DeckFaq } from "./decks";
+import type { Deck, DeckFaq } from "./decks";
 import { getDeckSeoProfile, getDeckLinkedMock } from "./deck-seo";
 import { buildMockSeoTitle } from "./mock-exams/seo";
 import { absoluteUrl } from "./site";
@@ -19,7 +19,7 @@ function isProductFaq(faq: DeckFaq): boolean {
   return PRODUCT_QUESTION_PATTERNS.some((pattern) => pattern.test(faq.question));
 }
 
-function buildExamFaqs(deck: CatalogAvailableDeck): DeckFaq[] {
+function buildExamFaqs(deck: Deck): DeckFaq[] {
   const profile = getDeckSeoProfile(deck);
   const mock = getDeckLinkedMock(deck.slug);
   const pageUrl = absoluteUrl(`/decks/${deck.slug}`);
@@ -69,7 +69,7 @@ function buildExamFaqs(deck: CatalogAvailableDeck): DeckFaq[] {
 }
 
 /** Single FAQ block: candidate Q&A from exam layer + product/delivery (deduped). */
-export function buildMergedDeckFaqs(deck: CatalogAvailableDeck): DeckFaq[] {
+export function buildMergedDeckFaqs(deck: Deck): DeckFaq[] {
   const examProfile = getExamFactsProfileForDeck(deck.slug);
   const candidateFaqs: DeckFaq[] =
     examProfile?.candidate_qa.map((item) => ({
@@ -106,7 +106,7 @@ export function buildMergedDeckFaqs(deck: CatalogAvailableDeck): DeckFaq[] {
 }
 
 /** Plain text export for boilerplate CI (visible page copy only). */
-export function collectDeckPageVisibleText(deck: CatalogAvailableDeck): string {
+export function collectDeckPageVisibleText(deck: Deck): string {
   const positioning = getDeckPositioning(deck);
   const unique = getDeckUniqueContent(deck);
   const faqs = buildMergedDeckFaqs(deck);

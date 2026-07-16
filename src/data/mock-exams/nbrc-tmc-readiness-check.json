@@ -1,0 +1,1982 @@
+[
+  {
+    "id": "nbrc-tmc-readiness-check-patient-data-001",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "patient-data",
+    "prompt": "A PaO2 of 55 mm Hg on room air most closely indicates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hypoxemia"
+      },
+      {
+        "id": "b",
+        "text": "Hyperoxia"
+      },
+      {
+        "id": "c",
+        "text": "Normal oxygenation for a healthy young adult"
+      },
+      {
+        "id": "d",
+        "text": "Metabolic alkalosis only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "PaO2 below ~60 mm Hg reflects clinically important hypoxemia; normal room-air PaO2 is roughly 80\u2013100 mm Hg.",
+    "distractorExplanations": {
+      "b": "Hyperoxia is elevated oxygen tension.",
+      "c": "55 mm Hg is below normal adult PaO2.",
+      "d": "PaO2 alone does not define metabolic alkalosis."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-patient-data-002",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "patient-data",
+    "prompt": "An elevated PaCO2 with acidemia is consistent with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Respiratory alkalosis"
+      },
+      {
+        "id": "b",
+        "text": "Respiratory acidosis (acute or chronic depending on HCO3\u2212 compensation)"
+      },
+      {
+        "id": "c",
+        "text": "Metabolic alkalosis as the primary process always"
+      },
+      {
+        "id": "d",
+        "text": "Normal acid\u2013base balance"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "CO2 retention lowers pH (respiratory acidosis); metabolic compensation raises HCO3\u2212 over time.",
+    "distractorExplanations": {
+      "a": "Low PaCO2 causes respiratory alkalosis.",
+      "c": "Primary metabolic alkalosis raises HCO3\u2212/pH patterns differently.",
+      "d": "Acidemia with high CO2 is not normal."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-patient-data-003",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "patient-data",
+    "prompt": "The A-a oxygen gradient widens with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perfect matching of ventilation and perfusion only"
+      },
+      {
+        "id": "b",
+        "text": "Breathing room air at sea level with normal lungs only"
+      },
+      {
+        "id": "c",
+        "text": "V/Q mismatch, shunt, or diffusion limitation"
+      },
+      {
+        "id": "d",
+        "text": "Hyperventilation in normal lungs exclusively decreasing A-a"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Widened A-aDO2 suggests pulmonary gas-exchange inefficiency rather than pure hypoventilation.",
+    "distractorExplanations": {
+      "a": "Ideal V/Q keeps A-a relatively normal.",
+      "b": "Normal lungs have a small A-a gradient.",
+      "d": "Hyperventilation alone does not create a large A-a like shunt does."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-patient-data-004",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "patient-data",
+    "prompt": "A sudden drop in SpO2 with unilateral absence of breath sounds after central line placement suggests:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Improved lung recruitment"
+      },
+      {
+        "id": "b",
+        "text": "Normal finding after all line placements"
+      },
+      {
+        "id": "c",
+        "text": "Need to increase tidal volume blindly without assessment"
+      },
+      {
+        "id": "d",
+        "text": "Possible pneumothorax\u2014assess and notify the team urgently"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Iatrogenic pneumothorax can follow subclavian/internal jugular attempts; asymmetric exam is a red flag.",
+    "distractorExplanations": {
+      "a": "Recruitment would not silence one side suddenly.",
+      "b": "This is not a normal expected finding.",
+      "c": "Blind VT increases can worsen pneumothorax."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-patient-data-005",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "patient-data",
+    "prompt": "Peak inspiratory pressure (PIP) rising with unchanged tidal volume may indicate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Decreased compliance or increased airway resistance"
+      },
+      {
+        "id": "b",
+        "text": "Improved compliance always"
+      },
+      {
+        "id": "c",
+        "text": "Disconnected ventilator circuit"
+      },
+      {
+        "id": "d",
+        "text": "Guaranteed resolution of bronchospasm"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Higher pressure for the same volume means the respiratory system is stiffer or more resistive.",
+    "distractorExplanations": {
+      "b": "Improved compliance lowers pressures.",
+      "c": "Disconnection typically drops pressures/volumes.",
+      "d": "Bronchospasm raises resistive pressures."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-patient-data-006",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "patient-data",
+    "prompt": "Plateau pressure (Pplat) best reflects:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only airway resistance during peak flow"
+      },
+      {
+        "id": "b",
+        "text": "Alveolar pressure related to tidal volume and respiratory system compliance (no flow)"
+      },
+      {
+        "id": "c",
+        "text": "Atmospheric pressure at the mouth always"
+      },
+      {
+        "id": "d",
+        "text": "FiO2 setting"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Inspiratory hold (zero flow) yields Pplat used for compliance and lung-protective limits.",
+    "distractorExplanations": {
+      "a": "PIP includes resistive pressure; Pplat does not.",
+      "c": "Mouth pressure during hold approximates alveolar pressure, not always Patm.",
+      "d": "FiO2 is independent of Pplat."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-patient-data-007",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "patient-data",
+    "prompt": "A patient with suspected CO poisoning may show:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pulse oximetry that always detects CO accurately"
+      },
+      {
+        "id": "b",
+        "text": "No need for ABG/CO-oximetry ever"
+      },
+      {
+        "id": "c",
+        "text": "Normal or high SpO2 readings that do not reflect true oxygen content\u2014use CO-oximetry"
+      },
+      {
+        "id": "d",
+        "text": "Cyanosis that pulse oximeters quantify as COHb%"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Standard SpO2 cannot reliably distinguish oxyhemoglobin from carboxyhemoglobin; CO-oximetry measures COHb.",
+    "distractorExplanations": {
+      "a": "Pulse ox is misleading in CO poisoning.",
+      "b": "CO-oximetry is indicated.",
+      "d": "SpO2 does not report COHb%."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-patient-data-008",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "patient-data",
+    "prompt": "Dull percussion and bronchial breath sounds over a lung region suggest:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Large pneumothorax with hyperresonance"
+      },
+      {
+        "id": "b",
+        "text": "Normal aerated lung in all cases"
+      },
+      {
+        "id": "c",
+        "text": "Pleural effusion with hyperresonance always"
+      },
+      {
+        "id": "d",
+        "text": "Consolidation (e.g., pneumonia) more than pneumothorax"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Consolidation increases transmission of bronchial sounds and dulls percussion; pneumothorax is hyperresonant with decreased sounds.",
+    "distractorExplanations": {
+      "a": "Pneumothorax is hyperresonant with \u2193 sounds.",
+      "b": "These findings are abnormal.",
+      "c": "Effusions are dull but breath sounds are usually diminished, not bronchial."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-patient-data-009",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "patient-data",
+    "prompt": "An SBT readiness screen commonly includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Adequate oxygenation, hemodynamic stability, and resolution of the indication for ventilation (conceptually)"
+      },
+      {
+        "id": "b",
+        "text": "FiO2 1.0 and PEEP 20 as ideal readiness"
+      },
+      {
+        "id": "c",
+        "text": "Uncontrolled shock as a green light"
+      },
+      {
+        "id": "d",
+        "text": "pH 7.10 with rising PaCO2 as ideal"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Liberation readiness requires gas exchange and clinical stability sufficient to trial spontaneous breathing.",
+    "distractorExplanations": {
+      "b": "High FiO2/PEEP suggest ongoing failure.",
+      "c": "Shock precludes readiness.",
+      "d": "Severe acidosis/hypoventilation are contraindications."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-patient-data-010",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "patient-data",
+    "prompt": "A restrictive spirometry pattern typically shows:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Obstruction with FEV1/FVC markedly reduced as the only pattern possible"
+      },
+      {
+        "id": "b",
+        "text": "Reduced FVC with FEV1/FVC normal or high"
+      },
+      {
+        "id": "c",
+        "text": "Increased TLC in pure restriction"
+      },
+      {
+        "id": "d",
+        "text": "Normal volumes with no change ever"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Restriction lowers volumes; the FEV1/FVC ratio is preserved/elevated, unlike obstruction.",
+    "distractorExplanations": {
+      "a": "Low FEV1/FVC defines obstruction.",
+      "c": "Restriction lowers TLC.",
+      "d": "Restriction changes volumes."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-patient-data-011",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "patient-data",
+    "prompt": "Pedal edema, elevated JVP, and loud P2 in a COPD patient suggest possible:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Simple dehydration only"
+      },
+      {
+        "id": "b",
+        "text": "Guaranteed normal right heart pressures"
+      },
+      {
+        "id": "c",
+        "text": "Cor pulmonale / pulmonary hypertension complications"
+      },
+      {
+        "id": "d",
+        "text": "Left-lower-lobe pneumonia exclusively"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Chronic lung disease can cause pulmonary hypertension and right-heart strain with systemic congestion signs.",
+    "distractorExplanations": {
+      "a": "Edema/JVP elevation are not pure dehydration signs here.",
+      "b": "Findings suggest elevated right-sided pressures.",
+      "d": "Pneumonia alone does not explain this constellation."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-patient-data-012",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "patient-data",
+    "prompt": "Capnography showing a sudden drop of ETCO2 to near zero may indicate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Improved alveolar ventilation only"
+      },
+      {
+        "id": "b",
+        "text": "Normal steady-state ventilation"
+      },
+      {
+        "id": "c",
+        "text": "Sensor working with rising CO2 production only"
+      },
+      {
+        "id": "d",
+        "text": "Circuit disconnection, esophageal intubation, or catastrophic drop in pulmonary blood flow"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Abrupt ETCO2 loss is an emergency signal for airway/circuit failure or circulatory collapse.",
+    "distractorExplanations": {
+      "a": "Improved ventilation lowers ETCO2 gradually, not to zero suddenly from airway loss patterns.",
+      "b": "Steady state has a waveform.",
+      "c": "Rising production increases ETCO2."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-patient-data-013",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "patient-data",
+    "prompt": "Hemodynamic data: low CVP, low PCWP, and low cardiac output suggest:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hypovolemia"
+      },
+      {
+        "id": "b",
+        "text": "Fluid overload with high filling pressures"
+      },
+      {
+        "id": "c",
+        "text": "Left ventricular failure with high PCWP"
+      },
+      {
+        "id": "d",
+        "text": "Normal euvolemia with high output"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Low filling pressures with low output fit volume depletion; LV failure typically elevates PCWP.",
+    "distractorExplanations": {
+      "b": "Overload raises filling pressures.",
+      "c": "LV failure \u2192 high PCWP.",
+      "d": "Low output is not high-output euvolemia."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-patient-data-014",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "patient-data",
+    "prompt": "A patient with Guillain-Barr\u00e9 is monitored with vital capacity (VC) and NIF because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "These tests measure only kidney function"
+      },
+      {
+        "id": "b",
+        "text": "Declining VC/NIF can signal impending ventilatory failure"
+      },
+      {
+        "id": "c",
+        "text": "Guillain-Barr\u00e9 never affects respiration"
+      },
+      {
+        "id": "d",
+        "text": "Spirometry replaces all neurologic exams forever"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Neuromuscular weakness progresses to hypoventilation; serial respiratory muscle metrics guide ICU timing.",
+    "distractorExplanations": {
+      "a": "VC/NIF are respiratory muscle tests.",
+      "c": "GBS commonly threatens respiration.",
+      "d": "Neuro exam remains essential."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-patient-data-015",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "patient-data",
+    "prompt": "Methemoglobin clinically may present with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bright cherry-red skin pathognomonic for methemoglobin only"
+      },
+      {
+        "id": "b",
+        "text": "No effect on oxygen carrying"
+      },
+      {
+        "id": "c",
+        "text": "Cyanosis and chocolate-brown blood with SpO2/PaO2 discrepancies\u2014confirm with CO-oximetry"
+      },
+      {
+        "id": "d",
+        "text": "Automatic resolution by increasing room-air only always"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "MetHb impairs oxygen delivery; methylene blue may be used clinically\u2014diagnosis needs CO-oximetry.",
+    "distractorExplanations": {
+      "a": "Cherry-red is classically associated with CO, not MetHb.",
+      "b": "MetHb reduces functional oxygen carrying.",
+      "d": "Significant MetHb needs specific therapy, not just room air."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-equipment-001",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "equipment",
+    "prompt": "A nebulizer that sputters and delivers little aerosol most likely needs:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Checking solution volume, connections, gas flow, and for clogs"
+      },
+      {
+        "id": "b",
+        "text": "Increasing patient anxiety as the fix"
+      },
+      {
+        "id": "c",
+        "text": "Removing the mouthpiece permanently"
+      },
+      {
+        "id": "d",
+        "text": "Setting flow to zero"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Aerosol output depends on adequate volume, intact circuitry, and proper driving flow.",
+    "distractorExplanations": {
+      "b": "Anxiety does not fix devices.",
+      "c": "Interface is needed for delivery.",
+      "d": "Zero flow stops aerosol."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-equipment-002",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "equipment",
+    "prompt": "Oxygen blender failure to a set FiO2 should prompt:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assuming the dial is always accurate without checks"
+      },
+      {
+        "id": "b",
+        "text": "Verification with an oxygen analyzer and troubleshooting gas supplies/blender"
+      },
+      {
+        "id": "c",
+        "text": "Ignoring patient SpO2 changes"
+      },
+      {
+        "id": "d",
+        "text": "Replacing ABG machines only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Analyzers confirm delivered FiO2; air/O2 supply pressures affect blender output.",
+    "distractorExplanations": {
+      "a": "Dials can be wrong if blender/supply fails.",
+      "c": "SpO2 changes are clinical clues.",
+      "d": "ABG machines do not fix blenders."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-equipment-003",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "equipment",
+    "prompt": "A galvanic fuel-cell O2 analyzer reads inaccurately if:",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is calibrated to 21% and 100% appropriately always forever without aging"
+      },
+      {
+        "id": "b",
+        "text": "Batteries are irrelevant in all analyzer types"
+      },
+      {
+        "id": "c",
+        "text": "The fuel cell is depleted or the device is not calibrated to known gases"
+      },
+      {
+        "id": "d",
+        "text": "Room air is 100% oxygen"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fuel cells age; calibration to known O2 concentrations maintains accuracy.",
+    "distractorExplanations": {
+      "a": "Cells deplete and need replacement/calibration.",
+      "b": "Power/electronics matter for many devices.",
+      "d": "Room air is ~21% O2."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-equipment-004",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "equipment",
+    "prompt": "Heated wire circuits on ventilators primarily help:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eliminate the need for any humidification system"
+      },
+      {
+        "id": "b",
+        "text": "Cool inspired gas to freezing"
+      },
+      {
+        "id": "c",
+        "text": "Replace HEPA filtration always"
+      },
+      {
+        "id": "d",
+        "text": "Reduce condensate in the inspiratory limb and maintain humidified gas temperature"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Heated wires limit rainout while delivering warm humidified gas to artificial airways.",
+    "distractorExplanations": {
+      "a": "Humidifiers are still required.",
+      "b": "Goal is warm, not freezing, gas.",
+      "c": "Filters serve infection-control roles separately."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-equipment-005",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "equipment",
+    "prompt": "A sudden ventilator low-pressure alarm most commonly suggests:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leak or disconnection in the patient circuit"
+      },
+      {
+        "id": "b",
+        "text": "Patient biting the tube causing high pressure only"
+      },
+      {
+        "id": "c",
+        "text": "Kinked ET tube causing high pressure only"
+      },
+      {
+        "id": "d",
+        "text": "Improved seal with zero leaks"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Low-pressure/low-VT alarms flag leaks, disconnections, or inadequate delivered pressure.",
+    "distractorExplanations": {
+      "b": "Biting/kinks typically cause high-pressure alarms.",
+      "c": "Kinks \u2192 high pressure.",
+      "d": "Zero leaks would not trigger low-pressure alarms."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-equipment-006",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "equipment",
+    "prompt": "High-pressure ventilator alarms may be caused by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Circuit disconnection only"
+      },
+      {
+        "id": "b",
+        "text": "Coughing, secretions, biting, bronchospasm, or decreased compliance"
+      },
+      {
+        "id": "c",
+        "text": "Expiratory valve removal only as low pressure"
+      },
+      {
+        "id": "d",
+        "text": "FiO2 set to 0.21 only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Anything raising impedance to inflation can trigger high-pressure limits.",
+    "distractorExplanations": {
+      "a": "Disconnection \u2192 low pressure.",
+      "c": "Major leaks \u2192 low pressure.",
+      "d": "FiO2 alone does not set PIP alarms."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-equipment-007",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "equipment",
+    "prompt": "Capnograph calibration/quality issues include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Never needing any verification"
+      },
+      {
+        "id": "b",
+        "text": "Using it underwater routinely"
+      },
+      {
+        "id": "c",
+        "text": "Sensor contamination, loose connections, and need for periodic zero/span checks per device"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring flatline waveforms during intubation checks"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "ETCO2 devices require maintenance; waveform interpretation depends on valid sensors.",
+    "distractorExplanations": {
+      "a": "Verification is part of QC.",
+      "b": "Sensors are not for underwater use.",
+      "d": "Flatline during intubation is a critical clue\u2014not ignored."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-equipment-008",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "equipment",
+    "prompt": "A pulse oximeter probe reading poorly on a cold, vasoconstricted finger may improve by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Clamping the probe harder until pain guarantees accuracy"
+      },
+      {
+        "id": "b",
+        "text": "Trusting a flat SpO2 of 50% without clinical correlation"
+      },
+      {
+        "id": "c",
+        "text": "Painting nails with opaque polish and ignoring artifacts"
+      },
+      {
+        "id": "d",
+        "text": "Warming the site or using an alternate site/probe designed for low perfusion"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Perfusion and probe placement affect SpO2 accuracy; correlate with clinical picture/ABG when needed.",
+    "distractorExplanations": {
+      "a": "Painful clamping is inappropriate.",
+      "b": "Implausible values need verification.",
+      "c": "Polish can artifactually affect readings."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-equipment-009",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "equipment",
+    "prompt": "Autoclaving or improper chemical exposure of reusable devices can:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Damage equipment\u2014follow manufacturer sterilization IFUs"
+      },
+      {
+        "id": "b",
+        "text": "Always improve calibration automatically"
+      },
+      {
+        "id": "c",
+        "text": "Be ignored because all plastics tolerate any sterilant"
+      },
+      {
+        "id": "d",
+        "text": "Replace the need for cleaning soil first"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "IFUs specify compatible disinfection/sterilization; soil must be cleaned before sterilization.",
+    "distractorExplanations": {
+      "b": "Damage can ruin calibration/function.",
+      "c": "Material compatibility varies.",
+      "d": "Cleaning precedes sterilization."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-equipment-010",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "equipment",
+    "prompt": "An oxygen concentrator that fails to reach specified O2 purity should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Left in use for COPD patients indefinitely"
+      },
+      {
+        "id": "b",
+        "text": "Removed from service and repaired/replaced; verify with analyzer"
+      },
+      {
+        "id": "c",
+        "text": "Used as a toy for children"
+      },
+      {
+        "id": "d",
+        "text": "Assumed fine if the compressor is loud"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Substandard purity endangers patients relying on home/long-term O2 systems.",
+    "distractorExplanations": {
+      "a": "Continued use risks hypoxemia.",
+      "c": "Not a toy.",
+      "d": "Noise \u2260 purity."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-equipment-011",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "equipment",
+    "prompt": "Wright respirometer (or similar) used for VC/VT measurement requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Blocking the exhalation path completely as standard"
+      },
+      {
+        "id": "b",
+        "text": "No zero reference or observation of needle/digital output"
+      },
+      {
+        "id": "c",
+        "text": "Proper assembly, leak-free connections, and correct patient technique coaching"
+      },
+      {
+        "id": "d",
+        "text": "Measuring during cough only for resting VT"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Volume devices need intact circuitry and coached efforts for valid spirometric bedside measures.",
+    "distractorExplanations": {
+      "a": "Complete blockage prevents measurement/harms patient.",
+      "b": "Output must be observed/recorded.",
+      "d": "Cough volumes are not resting VT."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-equipment-012",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "equipment",
+    "prompt": "Heliox delivery systems require attention to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Using air-calibrated flowmeters without correction factors when required"
+      },
+      {
+        "id": "b",
+        "text": "Ignoring mixture labels"
+      },
+      {
+        "id": "c",
+        "text": "Delivering heliox through devices never approved/assessed for low-density gas"
+      },
+      {
+        "id": "d",
+        "text": "Correct gas mixture, appropriately calibrated flow devices, and airway/device compatibility"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Low-density heliox alters flowmeter behavior and may affect some nebulizers/ventilators.",
+    "distractorExplanations": {
+      "a": "Corrections/special meters are often needed.",
+      "b": "Labels identify mixture (e.g., 80/20).",
+      "c": "Device compatibility matters."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-equipment-013",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "equipment",
+    "prompt": "Battery-powered suction devices for transport should be checked for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Charge status, vacuum capability, and canister/tubing readiness"
+      },
+      {
+        "id": "b",
+        "text": "Color of the carrying case only"
+      },
+      {
+        "id": "c",
+        "text": "Whether they play music"
+      },
+      {
+        "id": "d",
+        "text": "Skipping checks because transport is short"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Transport emergencies need functioning suction regardless of trip length.",
+    "distractorExplanations": {
+      "b": "Case color is irrelevant.",
+      "c": "Music is not a clinical function.",
+      "d": "Short trips still need readiness."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-equipment-014",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "equipment",
+    "prompt": "A false-high cuff pressure reading may result from:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Always reflecting true tracheal mucosal pressure perfectly"
+      },
+      {
+        "id": "b",
+        "text": "Measuring while the patient is coughing or using a faulty gauge"
+      },
+      {
+        "id": "c",
+        "text": "Deflating the cuff completely as a measurement method for pressure"
+      },
+      {
+        "id": "d",
+        "text": "Disconnecting the pilot balloon permanently"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Cuff pressure should be measured at rest with a functioning manometer; goals avoid under-/overinflation.",
+    "distractorExplanations": {
+      "a": "Dynamic conditions distort readings.",
+      "c": "Deflation measures nothing useful for pressure.",
+      "d": "Pilot disconnection prevents cuff management."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-equipment-015",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "equipment",
+    "prompt": "Quality control for blood gas analyzers includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Never running controls"
+      },
+      {
+        "id": "b",
+        "text": "Reporting patient results when controls fail without investigation"
+      },
+      {
+        "id": "c",
+        "text": "Running control materials, documenting results, and corrective action when out of range"
+      },
+      {
+        "id": "d",
+        "text": "Using expired reagents routinely"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "CLIA-style QC principles apply: controls, documentation, and troubleshooting before reporting.",
+    "distractorExplanations": {
+      "a": "Controls are mandatory.",
+      "b": "Failed QC blocks patient reporting.",
+      "d": "Expired reagents threaten accuracy."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-therapeutics-001",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "therapeutics",
+    "prompt": "Indications for oxygen therapy include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Documented hypoxemia or clinical conditions with high risk of hypoxemia"
+      },
+      {
+        "id": "b",
+        "text": "Routine use to treat anxiety without assessment forever"
+      },
+      {
+        "id": "c",
+        "text": "Treating hyperoxia intentionally in all neonates without limits"
+      },
+      {
+        "id": "d",
+        "text": "Replacing ventilation in apnea"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "O2 treats hypoxemia; it does not ventilate and excess O2 has risks (e.g., neonates, COPD drive debates\u2014titrate).",
+    "distractorExplanations": {
+      "b": "Anxiety needs appropriate assessment/therapy.",
+      "c": "Neonates need careful O2 targeting.",
+      "d": "Apnea needs ventilation/airway support."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-therapeutics-002",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "therapeutics",
+    "prompt": "A simple mask typically delivers approximately:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Exact FiO2 1.0 like a tight nonrebreather always"
+      },
+      {
+        "id": "b",
+        "text": "Moderate FiO2 that varies with fit and flow\u2014often roughly 0.35\u20130.50 range conceptually"
+      },
+      {
+        "id": "c",
+        "text": "Room air only at 15 L/min"
+      },
+      {
+        "id": "d",
+        "text": "Heliox 80/20 exclusively"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Simple masks provide variable moderate FiO2; NRBs approach higher FiO2 with good fit/flow.",
+    "distractorExplanations": {
+      "a": "NRB/high-flow systems differ.",
+      "c": "Adequate flow raises FiO2 above room air.",
+      "d": "Heliox needs specific setups."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-therapeutics-003",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "therapeutics",
+    "prompt": "Incentive spirometry is primarily used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deliver aerosolized antibiotics automatically"
+      },
+      {
+        "id": "b",
+        "text": "Measure ABGs"
+      },
+      {
+        "id": "c",
+        "text": "Encourage sustained maximal inspiration to prevent/treat atelectasis"
+      },
+      {
+        "id": "d",
+        "text": "Replace CPAP for OSA at home always"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "IS coaches lung expansion after surgery/immobility; technique and frequency matter.",
+    "distractorExplanations": {
+      "a": "IS is not a nebulizer.",
+      "b": "ABGs need blood sampling/analyzers.",
+      "d": "OSA therapy is typically CPAP/BiPAP ordered clinically."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-therapeutics-004",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "therapeutics",
+    "prompt": "PEP therapy helps by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eliminating the need to cough ever"
+      },
+      {
+        "id": "b",
+        "text": "Causing mandatory pneumothorax in all users"
+      },
+      {
+        "id": "c",
+        "text": "Replacing inhaled bronchodilators for all asthma forever"
+      },
+      {
+        "id": "d",
+        "text": "Providing expiratory resistance to stent airways and improve secretion clearance/recruitment"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "PEP/OPEP devices aid airway clearance adjunctively with coughing and hydration as appropriate.",
+    "distractorExplanations": {
+      "a": "Cough remains important.",
+      "b": "Pneumothorax is a risk in select patients\u2014not a goal.",
+      "c": "Bronchodilators remain key in bronchospasm."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-therapeutics-005",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "therapeutics",
+    "prompt": "NPPV (BiPAP) for COPD exacerbation is contraindicated when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Respiratory arrest, inability to protect airway, or untreated pneumothorax (among classic contraindications)"
+      },
+      {
+        "id": "b",
+        "text": "Mild hypercapnia with alert cooperative patient always"
+      },
+      {
+        "id": "c",
+        "text": "Patient preference for a mask trial when appropriate"
+      },
+      {
+        "id": "d",
+        "text": "pH 7.30 with intact mentation as an absolute ban always"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "NPPV needs a spontaneously breathing, protectable airway; arrest/aspiration risk needs intubation pathway.",
+    "distractorExplanations": {
+      "b": "Mild hypercapnia is a common NPPV indication.",
+      "c": "Appropriate trials are used clinically.",
+      "d": "Many guidelines support NPPV at that pH if mentation allows."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-therapeutics-006",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "therapeutics",
+    "prompt": "Lung-protective ventilation in ARDS targets:",
+    "options": [
+      {
+        "id": "a",
+        "text": "VT 12\u201315 mL/kg always"
+      },
+      {
+        "id": "b",
+        "text": "Lower tidal volumes (e.g., ~6 mL/kg PBW) and limited plateau pressures"
+      },
+      {
+        "id": "c",
+        "text": "Pplat unrestricted above 40 cm H2O as a goal"
+      },
+      {
+        "id": "d",
+        "text": "Zero PEEP in all severe shunts"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "ARDSnet-style strategies reduce volutrauma with low VT and Pplat limits plus appropriate PEEP.",
+    "distractorExplanations": {
+      "a": "High VT increases mortality risk in ARDS.",
+      "c": "High Pplat risks overdistension.",
+      "d": "PEEP is used to support oxygenation/recruitment."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-therapeutics-007",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "therapeutics",
+    "prompt": "Albuterol is primarily a:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Loop diuretic"
+      },
+      {
+        "id": "b",
+        "text": "Anticholinergic only"
+      },
+      {
+        "id": "c",
+        "text": "Short-acting \u03b22-agonist bronchodilator"
+      },
+      {
+        "id": "d",
+        "text": "Systemic corticosteroid"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "SABA therapy relaxes bronchial smooth muscle for bronchospasm relief.",
+    "distractorExplanations": {
+      "a": "Diuretics are different class.",
+      "b": "Ipratropium is anticholinergic.",
+      "d": "Steroids are anti-inflammatory, not SABA."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-therapeutics-008",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "therapeutics",
+    "prompt": "Inhaled hypertonic saline is used in some patients to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Treat hypernatremia as an IV fluid"
+      },
+      {
+        "id": "b",
+        "text": "Replace all antibiotics"
+      },
+      {
+        "id": "c",
+        "text": "Cure pulmonary embolism"
+      },
+      {
+        "id": "d",
+        "text": "Hydrate airway mucus and facilitate clearance (e.g., select CF care pathways)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Hypertonic saline is an airway clearance adjunct in appropriate protocols\u2014not systemic sodium repair via nebulizer intent.",
+    "distractorExplanations": {
+      "a": "IV saline treats systemic sodium/volume issues.",
+      "b": "Antibiotics treat infection.",
+      "c": "PE needs anticoagulation/reperfusion strategies."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-therapeutics-009",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "therapeutics",
+    "prompt": "Recruitment maneuvers and high PEEP strategies require caution because they may cause:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hypotension and barotrauma in susceptible patients"
+      },
+      {
+        "id": "b",
+        "text": "Guaranteed improvement without risks"
+      },
+      {
+        "id": "c",
+        "text": "Lower pleural pressures only with no hemodynamics effect"
+      },
+      {
+        "id": "d",
+        "text": "Automatic weaning success"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Increased intrathoracic pressure can reduce venous return; overdistension risks pneumothorax.",
+    "distractorExplanations": {
+      "b": "Risks are real and monitored.",
+      "c": "Hemodynamics often change.",
+      "d": "Recruitment \u2260 automatic weaning."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-therapeutics-010",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "therapeutics",
+    "prompt": "Prone positioning in severe ARDS is used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Treat only ankle edema"
+      },
+      {
+        "id": "b",
+        "text": "Improve oxygenation by redistributing perfusion/ventilation in many patients"
+      },
+      {
+        "id": "c",
+        "text": "Replace antibiotics for pneumonia always"
+      },
+      {
+        "id": "d",
+        "text": "Guarantee zero facial pressure injuries without skin care"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Proning can improve V/Q in severe ARDS; teams manage lines, airway, and pressure points.",
+    "distractorExplanations": {
+      "a": "Proning is a lung strategy, not ankle therapy.",
+      "c": "Antibiotics still treat infection.",
+      "d": "Pressure-injury prevention remains essential."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-therapeutics-011",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "therapeutics",
+    "prompt": "Aerosolized medication delivery during mechanical ventilation is improved by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Placing the nebulizer distal to a heated humidifier rainout swamp without thought always"
+      },
+      {
+        "id": "b",
+        "text": "Turning off all gas flow forever"
+      },
+      {
+        "id": "c",
+        "text": "Optimal nebulizer/MDI adapter placement, synchronizing when appropriate, and minimizing circuit dead-stock losses per best practice"
+      },
+      {
+        "id": "d",
+        "text": "Never considering bias flow or continuous vs breath-actuated devices"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Device position and ventilator interactions affect inhaled dose; follow evidence-based aerosol practices.",
+    "distractorExplanations": {
+      "a": "Humidifiers/condensates can reduce delivery.",
+      "b": "Flow is needed for jet nebs.",
+      "d": "Device type/flow matters."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-therapeutics-012",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "therapeutics",
+    "prompt": "Chest physiotherapy (postural drainage/percussion) is relatively contraindicated in:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stable patients with retained secretions who benefit"
+      },
+      {
+        "id": "b",
+        "text": "CF patients on approved airway clearance regimens"
+      },
+      {
+        "id": "c",
+        "text": "Patients who tolerate Trendelenburg alternatives when ordered"
+      },
+      {
+        "id": "d",
+        "text": "Active hemoptysis, unstable spinal injury, or untreated pneumothorax (classic cautions)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "External maneuvers can worsen bleeding, fractures, or air leaks\u2014screen contraindications.",
+    "distractorExplanations": {
+      "a": "Appropriately selected patients benefit.",
+      "b": "CF commonly uses airway clearance.",
+      "c": "Modified positions may be used when appropriate."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-therapeutics-013",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "therapeutics",
+    "prompt": "The primary goal of bronchial hygiene therapy is to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assist removal of retained secretions and improve ventilation/perfusion where secretions impair gas exchange"
+      },
+      {
+        "id": "b",
+        "text": "Raise ICP intentionally in all neuro patients"
+      },
+      {
+        "id": "c",
+        "text": "Replace intubation for complete airway obstruction by foreign body without ALS"
+      },
+      {
+        "id": "d",
+        "text": "Cure interstitial fibrosis permanently"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Clearance therapies target mucus plugging/retention\u2014not structural fibrosis cure or unsafe ICP rises.",
+    "distractorExplanations": {
+      "b": "Some techniques can raise ICP\u2014caution in neuro injury.",
+      "c": "Foreign-body obstruction needs airway algorithms.",
+      "d": "Fibrosis is not cured by CPT."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-therapeutics-014",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "therapeutics",
+    "prompt": "When titrating O2 in a patient at risk for hypercapnic respiratory failure, best practice is to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Always give FiO2 1.0 without monitoring"
+      },
+      {
+        "id": "b",
+        "text": "Target appropriate SpO2 goals and monitor ventilation/ABG as clinically indicated"
+      },
+      {
+        "id": "c",
+        "text": "Withhold all oxygen despite SpO2 70%"
+      },
+      {
+        "id": "d",
+        "text": "Ignore rising PaCO2 and somnolence"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Titrate to goals (often ~88\u201392% in at-risk COPD per many protocols) while watching for CO2 retention/clinical decline.",
+    "distractorExplanations": {
+      "a": "Unmonitored pure O2 can be harmful in some patients.",
+      "c": "Severe hypoxemia still needs oxygen.",
+      "d": "Rising CO2/somnolence need action."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-therapeutics-015",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "therapeutics",
+    "prompt": "Intrapulmonary percussive ventilation (IPV) / high-frequency chest wall devices are used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Measure DLCO"
+      },
+      {
+        "id": "b",
+        "text": "Provide definitive PE thrombolysis"
+      },
+      {
+        "id": "c",
+        "text": "Mobilize secretions as part of an airway clearance program"
+      },
+      {
+        "id": "d",
+        "text": "Replace renal dialysis"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "High-frequency devices are clearance adjuncts selected by clinical protocol and tolerance.",
+    "distractorExplanations": {
+      "a": "DLCO is a PF lab test.",
+      "b": "PE therapy is pharmacologic/procedural.",
+      "d": "Dialysis is renal support."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-emergency-001",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "emergency",
+    "prompt": "The first action for an unresponsive, apneic patient is to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Activate emergency response and begin CAB/ABCs with airway opening and ventilation/CPR as indicated"
+      },
+      {
+        "id": "b",
+        "text": "Obtain a full history before any airway action"
+      },
+      {
+        "id": "c",
+        "text": "Start with arterial line placement only"
+      },
+      {
+        "id": "d",
+        "text": "Wait for a chest X-ray before opening the airway"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Basic life support priorities precede advanced diagnostics in arrest/near-arrest.",
+    "distractorExplanations": {
+      "b": "History can wait seconds that save the brain.",
+      "c": "Lines are not first.",
+      "d": "Imaging follows stabilization."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-emergency-002",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "emergency",
+    "prompt": "Suspected tension pneumothorax with hypotension and tracheal deviation needs:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Incentive spirometry as first-line"
+      },
+      {
+        "id": "b",
+        "text": "Immediate decompression per emergency protocol and supportive oxygen/ventilation"
+      },
+      {
+        "id": "c",
+        "text": "Delay until a scheduled clinic visit next week"
+      },
+      {
+        "id": "d",
+        "text": "Only increasing PEEP further without assessment"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Tension physiology is immediately life-threatening; decompression is the priority.",
+    "distractorExplanations": {
+      "a": "IS is irrelevant in tension PTX.",
+      "c": "Delay is deadly.",
+      "d": "More PEEP can worsen PTX."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-emergency-003",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "emergency",
+    "prompt": "Foreign-body airway obstruction with severe signs in a conscious adult is treated with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Offering water and leaving the patient alone"
+      },
+      {
+        "id": "b",
+        "text": "Blind finger sweeps in all conscious adults routinely"
+      },
+      {
+        "id": "c",
+        "text": "Abdominal thrusts (Heimlich) or approved protocol until expulsion/unresponsiveness pathways"
+      },
+      {
+        "id": "d",
+        "text": "Peak flow measurement first"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Severe FBAO needs immediate dislodgement maneuvers per BLS guidelines.",
+    "distractorExplanations": {
+      "a": "Leaving is dangerous.",
+      "b": "Blind sweeps can worsen obstruction.",
+      "d": "Peak flow wastes time."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-emergency-004",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "emergency",
+    "prompt": "During cardiac arrest, ETCO2 suddenly rises toward normal with ROSC because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The analyzer always fails at ROSC"
+      },
+      {
+        "id": "b",
+        "text": "Oxygen tanks empty at ROSC"
+      },
+      {
+        "id": "c",
+        "text": "PEEP automatically doubles"
+      },
+      {
+        "id": "d",
+        "text": "Pulmonary blood flow resumes and delivers CO2 to the lungs"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "ETCO2 is a surrogate of pulmonary perfusion during CPR; rise suggests ROSC.",
+    "distractorExplanations": {
+      "a": "Analyzers can be valid markers.",
+      "b": "O2 supply is separate.",
+      "c": "PEEP is set, not auto-doubled by ROSC."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-emergency-005",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "emergency",
+    "prompt": "Accidental extubation with inadequate breathing requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Airway support with BVM and preparation for reintubation as needed"
+      },
+      {
+        "id": "b",
+        "text": "Ignoring desaturation"
+      },
+      {
+        "id": "c",
+        "text": "Oral feeding immediately"
+      },
+      {
+        "id": "d",
+        "text": "Removing oxygen to stimulate breathing always"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Re-establish oxygenation/ventilation first; then secure a definitive airway.",
+    "distractorExplanations": {
+      "b": "Desaturation is an emergency.",
+      "c": "Feeding risks aspiration.",
+      "d": "Removing O2 is harmful."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-emergency-006",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "emergency",
+    "prompt": "Malignant hyperthermia crisis support includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Giving more succinylcholine to finish the case"
+      },
+      {
+        "id": "b",
+        "text": "Stopping triggering agents, hyperventilating with 100% O2, and supporting dantrolene/protocol care"
+      },
+      {
+        "id": "c",
+        "text": "Covering with heavy blankets to raise temperature further"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring rising ETCO2 and rigidity"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "MH is a hypermetabolic emergency; anesthesia teams lead dantrolene protocols while RTs support ventilation/cooling logistics.",
+    "distractorExplanations": {
+      "a": "Succinylcholine is a trigger.",
+      "c": "Cooling, not heating, is needed.",
+      "d": "Rising ETCO2/rigidity are classic signs."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-emergency-007",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "emergency",
+    "prompt": "Status asthmaticus deteriorating on NPPV with exhaustion suggests:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stopping all bronchodilators"
+      },
+      {
+        "id": "b",
+        "text": "Mandatory high respiratory rates with zero expiratory time"
+      },
+      {
+        "id": "c",
+        "text": "Need for intubation/mechanical ventilation with strategy to avoid air trapping"
+      },
+      {
+        "id": "d",
+        "text": "Discharge home"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fatigue/hypercapnia despite maximal therapy indicates invasive support; vent strategies allow exhalation.",
+    "distractorExplanations": {
+      "a": "Bronchodilators remain central.",
+      "b": "High rates worsen auto-PEEP.",
+      "d": "Discharge is inappropriate."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-emergency-008",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "emergency",
+    "prompt": "Massive hemoptysis initial priorities include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chest PT percussion on the bleeding lung aggressively as first step"
+      },
+      {
+        "id": "b",
+        "text": "Anticoagulation bolus"
+      },
+      {
+        "id": "c",
+        "text": "Incentive spirometry in the hallway alone"
+      },
+      {
+        "id": "d",
+        "text": "Airway protection (often bleeding side down), oxygenation, and urgent team/bronchoscopy pathways"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Protect the airway and non-bleeding lung; control bleeding with specialist care.",
+    "distractorExplanations": {
+      "a": "Percussion can worsen bleeding.",
+      "b": "Anticoagulation worsens bleeding.",
+      "c": "IS is not the priority."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-emergency-009",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "emergency",
+    "prompt": "Fire in the OR with an airway fire requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stop ventilation/gases as protocol directs, remove burning tube, extinguish, and re-establish airway/oxygenation"
+      },
+      {
+        "id": "b",
+        "text": "Increase FiO2 to 1.0 into the fire"
+      },
+      {
+        "id": "c",
+        "text": "Continue laser use"
+      },
+      {
+        "id": "d",
+        "text": "Ignore smoke in the airway"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Airway fire algorithms prioritize removing the fuel/oxidizer source and protecting the patient.",
+    "distractorExplanations": {
+      "b": "High O2 feeds fire.",
+      "c": "Energy devices must stop.",
+      "d": "Smoke/thermal injury needs management."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-emergency-010",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "emergency",
+    "prompt": "Auto-PEEP with progressive hypotension on the ventilator may require:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increasing rate further without assessing auto-PEEP"
+      },
+      {
+        "id": "b",
+        "text": "Temporarily disconnecting to allow exhalation / lowering rate and I:E adjustments per protocol"
+      },
+      {
+        "id": "c",
+        "text": "Ignoring plateau and intrinsic PEEP measurements"
+      },
+      {
+        "id": "d",
+        "text": "Adding more tidal volume immediately"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Severe air trapping impairs venous return; allow exhalation and adjust settings.",
+    "distractorExplanations": {
+      "a": "Higher rates worsen trapping.",
+      "c": "Measurement guides therapy.",
+      "d": "Larger VT can worsen hyperinflation."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-emergency-011",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "emergency",
+    "prompt": "Anaphylaxis with respiratory distress is treated urgently with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Delayed observation only for stridor"
+      },
+      {
+        "id": "b",
+        "text": "Oral antihistamine as the only drug for anaphylactic shock"
+      },
+      {
+        "id": "c",
+        "text": "Epinephrine IM (per protocol), airway/oxygen support, and emergency activation"
+      },
+      {
+        "id": "d",
+        "text": "Removing IV access permanently first"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "IM epinephrine is first-line for anaphylaxis; airway support is concurrent.",
+    "distractorExplanations": {
+      "a": "Stridor needs immediate action.",
+      "b": "Antihistamines are adjuncts, not sole shock therapy.",
+      "d": "IV access is needed for resuscitation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-emergency-012",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "emergency",
+    "prompt": "Post-intubation deterioration with asymmetric chest rise after clavicle line placement suggests:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Normal equal ventilation"
+      },
+      {
+        "id": "b",
+        "text": "Need to add a bite block only"
+      },
+      {
+        "id": "c",
+        "text": "Immediate oral diet"
+      },
+      {
+        "id": "d",
+        "text": "Mainstem intubation or pneumothorax\u2014assess, auscultate, adjust tube depth, image/decompress as indicated"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Acute asymmetry after intubation/central lines demands rapid differentiation of tube malposition vs PTX.",
+    "distractorExplanations": {
+      "a": "Asymmetry is abnormal.",
+      "b": "Bite blocks do not fix PTX/mainstem.",
+      "c": "Diet is irrelevant."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-emergency-013",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "emergency",
+    "prompt": "Hyperkalemia with ECG changes may need respiratory therapy support for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ventilatory support if arrest/respiratory failure occurs while medical therapy (calcium, shifts) proceeds"
+      },
+      {
+        "id": "b",
+        "text": "Routine incentive spirometry as definitive K+ removal"
+      },
+      {
+        "id": "c",
+        "text": "Heliox as first-line for hyperkalemia"
+      },
+      {
+        "id": "d",
+        "text": "Stopping all cardiac monitors"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "RTs manage airway/ventilation emergencies while medical teams shift/remove potassium.",
+    "distractorExplanations": {
+      "b": "IS does not lower K+.",
+      "c": "Heliox is for airway obstruction contexts.",
+      "d": "Monitoring is essential."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-emergency-014",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "emergency",
+    "prompt": "Disaster/mass-casualty oxygen allocation planning emphasizes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Giving every victim FiO2 1.0 indefinitely without assessment"
+      },
+      {
+        "id": "b",
+        "text": "Titrating O2 to clinically appropriate targets and conserving resources with triage frameworks"
+      },
+      {
+        "id": "c",
+        "text": "Hoarding all cylinders unused while patients desaturate"
+      },
+      {
+        "id": "d",
+        "text": "Disabling pulse oximeters to save batteries only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Crisis standards still aim for best outcomes with limited O2\u2014assessment and titration matter.",
+    "distractorExplanations": {
+      "a": "Blind 100% wastes supply and may harm.",
+      "c": "Unused stockpiles while patients suffer is unethical.",
+      "d": "SpO2 guides titration."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "nbrc-tmc-readiness-check-emergency-015",
+    "examSlug": "nbrc-tmc-readiness-check",
+    "topicId": "emergency",
+    "prompt": "Difficult airway algorithms prioritize:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Repeated failed attempts without oxygenation strategy"
+      },
+      {
+        "id": "b",
+        "text": "Sending the only skilled operator away"
+      },
+      {
+        "id": "c",
+        "text": "Oxygenation first, calling for help, and progressing through established failed-airway pathways (including surgical airway when needed)"
+      },
+      {
+        "id": "d",
+        "text": "Avoiding BVM/extraglottic rescue devices on principle"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Cannot-intubate/cannot-oxygenate pathways emphasize oxygen, help, and rescue devices/cricothyrotomy.",
+    "distractorExplanations": {
+      "a": "Repetition without oxygen kills.",
+      "b": "Help improves success.",
+      "d": "Rescue devices are integral."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  }
+]

@@ -22,6 +22,7 @@ describe("funnel analytics contract", () => {
       "mock_pass_verdict",
       "mock_no_pass_verdict",
       "mock_unlock_interest",
+      "deck_waitlist_interest",
       "mock_deck_cta_click",
       "mock_checkout_placeholder_click",
     ]);

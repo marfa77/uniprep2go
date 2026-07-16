@@ -15,6 +15,7 @@
     "validate:mock-banks": "node scripts/validate-mock-banks-openrouter.mjs",
     "generate:deck-covers": "node scripts/generate-deck-covers.mjs --catalog --force",
     "generate:deck-covers:missing": "node scripts/generate-deck-covers.mjs --all-missing",
+    "generate:mock-cluster-images": "tsx scripts/generate-mock-cluster-images.ts",
     "setup:gumroad-building-decks": "node scripts/setup-gumroad-building-decks.mjs",
     "scaffold:certification": "node scripts/scaffold-certification.mjs",
     "validate:certification": "node scripts/validate-certification-pipeline.mjs",

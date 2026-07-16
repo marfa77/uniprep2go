@@ -1,11 +1,11 @@
 import Link from "next/link";
-import type { CatalogAvailableDeck } from "@/lib/decks";
+import type { Deck } from "@/lib/decks";
 import { getDeckLongDescription, formatExamFocusedContent } from "@/lib/deck-page-copy";
 import { getDeckLinkedMock } from "@/lib/deck-seo";
 import { getDeckSeoProfile } from "@/lib/deck-seo";
 
 type DeckSeoSectionsProps = {
-  deck: CatalogAvailableDeck;
+  deck: Deck;
 };
 
 export function DeckSeoSections({ deck }: DeckSeoSectionsProps) {

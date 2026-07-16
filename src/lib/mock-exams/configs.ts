@@ -1,4 +1,6 @@
 import type { MockExamConfig } from "./types";
+import { wave1MockExamConfigs } from "./wave1-configs";
+import { wave2MockExamConfigs } from "./wave2-configs";
 
 const financeDisclaimer =
   "This is an independent readiness diagnostic. It is not official FINRA, CFA Institute, or GARP exam material and does not guarantee an exam result.";
@@ -1619,6 +1621,8 @@ export const mockExamConfigs: MockExamConfig[] = [
     questionSourceNote:
       "Original UniPrep2Go questions (250-item bank, 50 per competency area) authored via OpenRouter with Gemini cross-validation; each session samples 10 per area.",
   },
+  ...wave1MockExamConfigs,
+  ...wave2MockExamConfigs,
 ];
 
 /** Flagship live mock — used for homepage funnel defaults and LLM primary-product signals. */

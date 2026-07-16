@@ -1,8 +1,8 @@
-import type { CatalogAvailableDeck } from "@/lib/decks";
+import type { Deck } from "@/lib/decks";
 import { getExamFactsProfileForDeck, type ExamFactsProfile } from "@/lib/exam-facts";
 
 type DeckExamFactsSectionProps = {
-  deck?: CatalogAvailableDeck;
+  deck?: Deck;
   profile?: ExamFactsProfile | null;
   /** Inside a collapsible block — skip outer section chrome. */
   compact?: boolean;

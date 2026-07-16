@@ -182,7 +182,8 @@ function isConversionEvent(event: FunnelEvent) {
   return (
     event.name === "checkout_click" ||
     event.name === "mock_deck_cta_click" ||
-    event.name === "mock_unlock_interest"
+    event.name === "mock_unlock_interest" ||
+    event.name === "deck_waitlist_interest"
   );
 }
 

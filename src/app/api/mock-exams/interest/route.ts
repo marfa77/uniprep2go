@@ -4,6 +4,7 @@ import { shouldRecordFunnelEvent } from "@/lib/funnel-filter";
 import { recordFunnelEvent } from "@/lib/funnel-store";
 import { getMockAccessState } from "@/lib/mock-exams/access";
 import { getMockExamConfig } from "@/lib/mock-exams/configs";
+import { notifyMockInterest } from "@/lib/telegram-notify";
 
 function normalizeVerdict(value: unknown) {
   return typeof value === "string" && value.length <= 40 ? value : undefined;
@@ -37,6 +38,15 @@ export async function POST(request: Request) {
       city: request.headers.get("x-vercel-ip-city") ?? undefined,
       userAgent: request.headers.get("user-agent") ?? undefined,
     });
+
+    try {
+      const sent = await notifyMockInterest(event, config);
+      if (!sent) {
+        console.warn("[telegram_notify] mock interest alert not sent", { mockSlug: config.slug });
+      }
+    } catch (error) {
+      console.error("[telegram_notify] mock interest alert failed", error);
+    }
 
     if (shouldRecordFunnelEvent(event, request)) {
       await recordFunnelEvent(event);

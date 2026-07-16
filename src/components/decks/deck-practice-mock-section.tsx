@@ -1,10 +1,10 @@
 import Link from "next/link";
-import type { CatalogAvailableDeck } from "@/lib/decks";
+import type { Deck } from "@/lib/decks";
 import { buildMockSeoTitle } from "@/lib/mock-exams/seo";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
 
 type DeckPracticeMockSectionProps = {
-  deck: CatalogAvailableDeck;
+  deck: Deck;
   mock: MockExamConfig;
   /** When mock links to a sibling deck (e.g. formula PDF → CFA mock). */
   companionMock?: boolean;

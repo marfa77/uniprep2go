@@ -1,0 +1,1982 @@
+[
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-001",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Ultrasound is defined as sound with frequency:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Greater than 20 kHz (above human hearing)"
+      },
+      {
+        "id": "b",
+        "text": "Less than 20 Hz only"
+      },
+      {
+        "id": "c",
+        "text": "Exactly equal to audible midrange always"
+      },
+      {
+        "id": "d",
+        "text": "Only ionizing gamma energy"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Diagnostic ultrasound commonly uses MHz frequencies.",
+    "distractorExplanations": {
+      "b": "<20 Hz is infrasound.",
+      "c": "Audible is ~20 Hz–20 kHz.",
+      "d": "Ultrasound is non-ionizing mechanical waves."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-002",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Wavelength equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Frequency times period only as wavelength"
+      },
+      {
+        "id": "b",
+        "text": "Propagation speed divided by frequency (c/f)"
+      },
+      {
+        "id": "c",
+        "text": "Density divided by stiffness only"
+      },
+      {
+        "id": "d",
+        "text": "PRP times DF"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "λ = c/f; higher frequency → shorter wavelength → better axial resolution generally.",
+    "distractorExplanations": {
+      "a": "f×T = 1, not λ.",
+      "c": "Density/stiffness relate to speed.",
+      "d": "PRP/DF are pulsed wave timing."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-003",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Propagation speed is determined primarily by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the ultrasound machine brand"
+      },
+      {
+        "id": "b",
+        "text": "Operator shoe size"
+      },
+      {
+        "id": "c",
+        "text": "Medium stiffness (elasticity) and density"
+      },
+      {
+        "id": "d",
+        "text": "Display brightness alone"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Soft tissue average ~1540 m/s; stiffer media generally faster sound.",
+    "distractorExplanations": {
+      "a": "Machine assumes speeds.",
+      "b": "Operator irrelevant.",
+      "d": "Brightness is display."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-004",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Acoustic impedance (Z) equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Frequency × wavelength"
+      },
+      {
+        "id": "b",
+        "text": "Power × time only"
+      },
+      {
+        "id": "c",
+        "text": "Amplitude / 2 always"
+      },
+      {
+        "id": "d",
+        "text": "Density × propagation speed"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Reflection depends on impedance mismatch at boundaries.",
+    "distractorExplanations": {
+      "a": "fλ = c.",
+      "b": "Power×time = energy.",
+      "c": "Not amplitude/2 definition."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-005",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Period and frequency are:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reciprocals (T = 1/f)"
+      },
+      {
+        "id": "b",
+        "text": "Unrelated"
+      },
+      {
+        "id": "c",
+        "text": "Always equal numerically in MHz"
+      },
+      {
+        "id": "d",
+        "text": "Determined only by the medium, not the source"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Source (transducer) determines frequency/period; medium determines speed.",
+    "distractorExplanations": {
+      "b": "They are related.",
+      "c": "Not numerically equal generally.",
+      "d": "Frequency set by source."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-006",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Power is proportional to amplitude:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cubed always only"
+      },
+      {
+        "id": "b",
+        "text": "Squared (≈ A^2)"
+      },
+      {
+        "id": "c",
+        "text": "To the zeroth power only"
+      },
+      {
+        "id": "d",
+        "text": "Inversely only always"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Intensity also ∝ A^2; important for bioeffects/output discussions.",
+    "distractorExplanations": {
+      "a": "Squared is standard relation.",
+      "c": "Not zero.",
+      "d": "Not purely inverse."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-007",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Attenuation in soft tissue increases when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Frequency decreases with path fixed always reducing attenuation"
+      },
+      {
+        "id": "b",
+        "text": "You freeze the image"
+      },
+      {
+        "id": "c",
+        "text": "Path length or frequency increases"
+      },
+      {
+        "id": "d",
+        "text": "Gain is increased (true attenuation change)"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Attenuation coefficient rises with frequency; more depth → more loss.",
+    "distractorExplanations": {
+      "a": "Lower f penetrates better.",
+      "b": "Freeze doesn't change physics.",
+      "d": "Gain amplifies display, not true attenuation."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-008",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "The decibel (dB) scale for intensity ratios is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Linear always with 1 dB = 1 Pascal exactly"
+      },
+      {
+        "id": "b",
+        "text": "Unrelated to ratios"
+      },
+      {
+        "id": "c",
+        "text": "Only used for ECG"
+      },
+      {
+        "id": "d",
+        "text": "Logarithmic: 3 dB ≈ factor of 2; 10 dB ≈ factor of 10"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Know common dB doublings for intensity/amplitude conventions taught in SPI.",
+    "distractorExplanations": {
+      "a": "dB is log ratio.",
+      "b": "It compares ratios.",
+      "c": "Used widely in ultrasound."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-009",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Specular reflection occurs when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The interface is large and smooth relative to wavelength"
+      },
+      {
+        "id": "b",
+        "text": "Scatterers are much smaller than wavelength only (Rayleigh)"
+      },
+      {
+        "id": "c",
+        "text": "There is no impedance mismatch"
+      },
+      {
+        "id": "d",
+        "text": "Sound stops existing"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Specular reflections are angle-dependent; diffuse scattering from rough surfaces.",
+    "distractorExplanations": {
+      "b": "Rayleigh is small scatterers.",
+      "c": "Mismatch needed for reflection.",
+      "d": "Sound continues."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-010",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Snell's law relates to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only absorption in bone"
+      },
+      {
+        "id": "b",
+        "text": "Refraction—bending of the beam when speed changes across an oblique interface"
+      },
+      {
+        "id": "c",
+        "text": "Electrical safety grounding"
+      },
+      {
+        "id": "d",
+        "text": "Doppler packet size exclusively"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Refraction can laterally displace structures (e.g., edge artifacts/duodenum-type teaching cases).",
+    "distractorExplanations": {
+      "a": "Absorption is different.",
+      "c": "Grounding electrical.",
+      "d": "Packet size Doppler."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-011",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Intensity of an ultrasound beam is proportional to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amplitude squared (for a given medium relationship)"
+      },
+      {
+        "id": "b",
+        "text": "Propagation speed only, never amplitude"
+      },
+      {
+        "id": "c",
+        "text": "PRP alone"
+      },
+      {
+        "id": "d",
+        "text": "Frame rate alone"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Acoustic intensity relates to amplitude squared (power/area considerations).",
+    "distractorExplanations": {
+      "b": "Incorrect: Propagation speed only, never amplitude",
+      "c": "Incorrect: PRP alone",
+      "d": "Incorrect: Frame rate alone"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-012",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Refraction occurs when a sound beam:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hits a boundary at 90° with identical impedances"
+      },
+      {
+        "id": "b",
+        "text": "Obliquely encounters a boundary between media with different propagation speeds"
+      },
+      {
+        "id": "c",
+        "text": "Is completely absorbed with no reflection ever"
+      },
+      {
+        "id": "d",
+        "text": "Travels only in air"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Snell's law: refraction needs oblique incidence and speed mismatch.",
+    "distractorExplanations": {
+      "a": "Incorrect: Hits a boundary at 90° with identical impedances",
+      "c": "Incorrect: Is completely absorbed with no reflection ever",
+      "d": "Incorrect: Travels only in air"
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-013",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Pulse repetition frequency (PRF) is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The number of pulses transmitted per second"
+      },
+      {
+        "id": "b",
+        "text": "The time from the start of one pulse to the end of that pulse only"
+      },
+      {
+        "id": "c",
+        "text": "Always equal to operating frequency"
+      },
+      {
+        "id": "d",
+        "text": "Unrelated to imaging depth"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "PRF is pulse rate; deeper imaging generally requires lower PRF.",
+    "distractorExplanations": {
+      "b": "Incorrect: The time from the start of one pulse to the end of that pulse only",
+      "c": "Incorrect: Always equal to operating frequency",
+      "d": "Incorrect: Unrelated to imaging depth"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-014",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Increasing imaging depth while keeping other factors constant typically requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Higher PRF"
+      },
+      {
+        "id": "b",
+        "text": "Lower PRF to allow time for echoes to return"
+      },
+      {
+        "id": "c",
+        "text": "Shorter listening time"
+      },
+      {
+        "id": "d",
+        "text": "Elimination of the range equation"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Deeper echoes take longer; PRF must decrease to avoid range ambiguity.",
+    "distractorExplanations": {
+      "a": "Incorrect: Higher PRF",
+      "c": "Incorrect: Shorter listening time",
+      "d": "Incorrect: Elimination of the range equation"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-015",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Decibels (dB) in ultrasound describe:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Absolute temperature only"
+      },
+      {
+        "id": "b",
+        "text": "Relative changes in intensity or amplitude on a logarithmic scale"
+      },
+      {
+        "id": "c",
+        "text": "Only transducer footprint width in millimeters"
+      },
+      {
+        "id": "d",
+        "text": "Blood viscosity"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "dB express ratios (e.g., attenuation, gain changes) logarithmically.",
+    "distractorExplanations": {
+      "a": "Incorrect: Absolute temperature only",
+      "c": "Incorrect: Only transducer footprint width in millimeters",
+      "d": "Incorrect: Blood viscosity"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-001",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "Piezoelectric effect means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Certain materials convert pressure to electricity and vice versa"
+      },
+      {
+        "id": "b",
+        "text": "Sound creates light only"
+      },
+      {
+        "id": "c",
+        "text": "Magnets create ultrasound exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Gel generates frequency"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "PZT elements transmit and receive; Curie temperature destroys piezoelectricity if overheated.",
+    "distractorExplanations": {
+      "b": "Not primarily photoelastic definition here.",
+      "c": "Not magnetism definition.",
+      "d": "Gel couples sound."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-002",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "Matching layer function is to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increase electrical noise intentionally"
+      },
+      {
+        "id": "b",
+        "text": "Improve transmission between PZT and tissue by intermediate impedance"
+      },
+      {
+        "id": "c",
+        "text": "Cool the computer CPU"
+      },
+      {
+        "id": "d",
+        "text": "Eliminate the need for gel always"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Matching layer thickness ~1/4 wavelength design concept.",
+    "distractorExplanations": {
+      "a": "Noise unwanted.",
+      "c": "CPU unrelated.",
+      "d": "Gel still used."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-003",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "Backing/damping material mainly:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increases ringing forever for better Q"
+      },
+      {
+        "id": "b",
+        "text": "Sets the imaging depth alone"
+      },
+      {
+        "id": "c",
+        "text": "Shortens spatial pulse length improving axial resolution (at cost of sensitivity)"
+      },
+      {
+        "id": "d",
+        "text": "Determines blood viscosity"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Low-Q damped transducers for imaging; continuous wave Doppler lightly damped.",
+    "distractorExplanations": {
+      "a": "Damping reduces ringing.",
+      "b": "Depth is timing/PRP related.",
+      "d": "Viscosity physiologic."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-004",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "Axial resolution improves with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wider beams only"
+      },
+      {
+        "id": "b",
+        "text": "Lower frequency always"
+      },
+      {
+        "id": "c",
+        "text": "More cycles in the pulse always"
+      },
+      {
+        "id": "d",
+        "text": "Shorter spatial pulse length (higher frequency / more damping)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "AR ≈ SPL/2; fewer cycles and shorter λ help.",
+    "distractorExplanations": {
+      "a": "Lateral related to beam width.",
+      "b": "Lower f worsens AR generally.",
+      "c": "More cycles lengthen SPL."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-005",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "Lateral resolution is best at the:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Focus (narrowest beam width)"
+      },
+      {
+        "id": "b",
+        "text": "Fraunhofer far zone always widest"
+      },
+      {
+        "id": "c",
+        "text": "Extreme sides of a sector far from center always"
+      },
+      {
+        "id": "d",
+        "text": "Cable connector"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Focusing improves lateral resolution at the focal zone; multiple foci reduce frame rate.",
+    "distractorExplanations": {
+      "b": "Far zone diverges.",
+      "c": "Sector edges may worsen.",
+      "d": "Connector unrelated."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-006",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "Linear sequenced arrays create rectangular images by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mechanical single element rotation only"
+      },
+      {
+        "id": "b",
+        "text": "Firing groups of elements in sequence across the face"
+      },
+      {
+        "id": "c",
+        "text": "Only phased steering without sequencing"
+      },
+      {
+        "id": "d",
+        "text": "Random element firing without pattern"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Linear = rectangle; convex = blunted sector; phased = sector from small footprint.",
+    "distractorExplanations": {
+      "a": "Mechanical old sector probes differ.",
+      "c": "Phased uses timing delays primarily.",
+      "d": "Patterned firing needed."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-007",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "Phased array steering uses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only mechanical motors always"
+      },
+      {
+        "id": "b",
+        "text": "Changing gel brands"
+      },
+      {
+        "id": "c",
+        "text": "Minute time delays (phasing) across elements to steer/focus the beam"
+      },
+      {
+        "id": "d",
+        "text": "Adjusting hospital Wi-Fi"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Electronic beam forming enables sector imaging from small probes (cardiac).",
+    "distractorExplanations": {
+      "a": "Motors in some mechanical transducers historically.",
+      "b": "Gel coupling.",
+      "d": "Wi-Fi unrelated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-008",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "Grating lobes are reduced by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increasing output power only as the lobe fix"
+      },
+      {
+        "id": "b",
+        "text": "Removing the matching layer"
+      },
+      {
+        "id": "c",
+        "text": "Using no damping"
+      },
+      {
+        "id": "d",
+        "text": "Apodization, subdicing, and tight element spacing concepts"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Grating/side lobes create artifacts and degrade lateral resolution.",
+    "distractorExplanations": {
+      "a": "Power doesn't remove lobes.",
+      "b": "Matching layer needed.",
+      "c": "Damping for pulse length."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-009",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "Duty factor is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pulse duration divided by pulse repetition period (fraction of time transmitting)"
+      },
+      {
+        "id": "b",
+        "text": "Always 100% for pulsed imaging"
+      },
+      {
+        "id": "c",
+        "text": "PRP times PD"
+      },
+      {
+        "id": "d",
+        "text": "Frame rate times lines"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "DF is unitless; CW Doppler DF = 1; imaging DF very small.",
+    "distractorExplanations": {
+      "b": "Imaging DF << 1.",
+      "c": "That's not the definition product for DF.",
+      "d": "Frame rate related but not DF definition."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-010",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "Spatial pulse length equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Frequency / period"
+      },
+      {
+        "id": "b",
+        "text": "Number of cycles × wavelength"
+      },
+      {
+        "id": "c",
+        "text": "PRP × DF only as SPL"
+      },
+      {
+        "id": "d",
+        "text": "Depth × 13 μs only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "SPL determines axial resolution; PD = n × T.",
+    "distractorExplanations": {
+      "a": "f = 1/T.",
+      "c": "PRP×DF = PD, not SPL.",
+      "d": "13 μs/cm-rule is range equation timing."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-011",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "The piezoelectric effect describes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conversion between electrical energy and mechanical (sound) energy in crystals"
+      },
+      {
+        "id": "b",
+        "text": "Only heating of tissue without vibration"
+      },
+      {
+        "id": "c",
+        "text": "Color map assignment in Doppler"
+      },
+      {
+        "id": "d",
+        "text": "TGC slope calculation alone"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Piezoelectric materials expand/contract with voltage and generate voltage from pressure.",
+    "distractorExplanations": {
+      "b": "Incorrect: Only heating of tissue without vibration",
+      "c": "Incorrect: Color map assignment in Doppler",
+      "d": "Incorrect: TGC slope calculation alone"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-012",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "Increasing the number of transmit foci typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Improves lateral resolution at multiple depths but can reduce frame rate"
+      },
+      {
+        "id": "b",
+        "text": "Always increases temporal resolution"
+      },
+      {
+        "id": "c",
+        "text": "Eliminates the need for a matching layer"
+      },
+      {
+        "id": "d",
+        "text": "Removes all side lobes permanently"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Multiple foci improve lateral resolution over depth at a temporal-resolution cost.",
+    "distractorExplanations": {
+      "b": "Incorrect: Always increases temporal resolution",
+      "c": "Incorrect: Eliminates the need for a matching layer",
+      "d": "Incorrect: Removes all side lobes permanently"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-013",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "Spatial pulse length (SPL) equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Number of cycles in the pulse × wavelength"
+      },
+      {
+        "id": "b",
+        "text": "PRF × duty factor"
+      },
+      {
+        "id": "c",
+        "text": "Frame rate × depth"
+      },
+      {
+        "id": "d",
+        "text": "Only the crystal thickness in centimeters"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "SPL = n × λ; shorter SPL improves axial resolution.",
+    "distractorExplanations": {
+      "b": "Incorrect: PRF × duty factor",
+      "c": "Incorrect: Frame rate × depth",
+      "d": "Incorrect: Only the crystal thickness in centimeters"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-014",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "A convex (curved) array produces an image that is typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A sector from a tiny footprint with electronic steering only like phased array"
+      },
+      {
+        "id": "b",
+        "text": "Blunted-sector shaped with a wider field at depth from sequential firing along a curved face"
+      },
+      {
+        "id": "c",
+        "text": "A perfect rectangle with no divergence"
+      },
+      {
+        "id": "d",
+        "text": "Only M-mode lines"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Curved arrays create blunted sector formats common in abdominal imaging.",
+    "distractorExplanations": {
+      "a": "Incorrect: A sector from a tiny footprint with electronic steering only like phased array",
+      "c": "Incorrect: A perfect rectangle with no divergence",
+      "d": "Incorrect: Only M-mode lines"
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-015",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "Bandwidth of a transducer relates to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The range of frequencies in the transmitted/received pulse"
+      },
+      {
+        "id": "b",
+        "text": "Only the physical cable length"
+      },
+      {
+        "id": "c",
+        "text": "The patient's heart rate"
+      },
+      {
+        "id": "d",
+        "text": "Hospital Wi-Fi speed"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Broader bandwidth (more damping) shortens pulses and improves axial resolution.",
+    "distractorExplanations": {
+      "b": "Incorrect: Only the physical cable length",
+      "c": "Incorrect: The patient's heart rate",
+      "d": "Incorrect: Hospital Wi-Fi speed"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-001",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "The Doppler shift is proportional to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reflector speed and the cosine of the Doppler angle, and operating frequency"
+      },
+      {
+        "id": "b",
+        "text": "Only the brightness gain"
+      },
+      {
+        "id": "c",
+        "text": "Only patient age"
+      },
+      {
+        "id": "d",
+        "text": "PRF exclusively without velocity"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "fd = 2v f0 cosθ / c; angle critical for velocity estimates.",
+    "distractorExplanations": {
+      "b": "Gain is display.",
+      "c": "Age unrelated.",
+      "d": "PRF sets aliasing limits."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-002",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "At a Doppler angle of 90°:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shift is maximum"
+      },
+      {
+        "id": "b",
+        "text": "Cosine is 0 so no Doppler shift is detected"
+      },
+      {
+        "id": "c",
+        "text": "Velocity is automatically doubled"
+      },
+      {
+        "id": "d",
+        "text": "Aliasing disappears magically always"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Avoid 90°; aim for ≤60° for quantitative vascular Doppler when possible.",
+    "distractorExplanations": {
+      "a": "Max at 0°.",
+      "c": "Not auto double.",
+      "d": "Aliasing separate issue."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-003",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "Aliasing in pulsed Doppler occurs when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wall filter is appropriately set always as definition of aliasing"
+      },
+      {
+        "id": "b",
+        "text": "CW Doppler is used (CW aliases the same way)"
+      },
+      {
+        "id": "c",
+        "text": "Nyquist limit is exceeded (shift > PRF/2)"
+      },
+      {
+        "id": "d",
+        "text": "Gain is too low only"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fix aliasing by increasing PRF/scale, adjusting baseline, lower f0, shallower sample, or switch to CW.",
+    "distractorExplanations": {
+      "a": "Wall filter ≠ aliasing definition.",
+      "b": "CW does not alias the same (no PRF sampling limit).",
+      "d": "Low gain isn't aliasing."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-004",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "Continuous-wave Doppler advantage is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Precise depth range resolution of the source of shift"
+      },
+      {
+        "id": "b",
+        "text": "No need for two crystals/elements concepts"
+      },
+      {
+        "id": "c",
+        "text": "Immunity to any angle effects"
+      },
+      {
+        "id": "d",
+        "text": "Ability to measure high velocities without aliasing"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "CW lacks range resolution; PW has sample volume depth selectivity.",
+    "distractorExplanations": {
+      "a": "CW lacks range resolution.",
+      "b": "CW typically uses two elements.",
+      "c": "Angle still matters."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-005",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "Bernoulli equation simplified in echo estimates pressure gradients from:",
+    "options": [
+      {
+        "id": "a",
+        "text": "4v^2 (modified Bernoulli)"
+      },
+      {
+        "id": "b",
+        "text": "v/4 only"
+      },
+      {
+        "id": "c",
+        "text": "2v"
+      },
+      {
+        "id": "d",
+        "text": "PRF × depth"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ΔP ≈ 4v² relates peak velocity to pressure drop across stenoses/valves.",
+    "distractorExplanations": {
+      "b": "Not v/4.",
+      "c": "Not 2v.",
+      "d": "PRF/depth Doppler setup."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-006",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "Reynolds number predicts:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only optical refraction"
+      },
+      {
+        "id": "b",
+        "text": "Tendency for laminar vs turbulent flow"
+      },
+      {
+        "id": "c",
+        "text": "Ultrasound frequency"
+      },
+      {
+        "id": "d",
+        "text": "Frame rate"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "High Reynolds (high velocity, large diameter, low viscosity) → turbulence; spectral window fill-in.",
+    "distractorExplanations": {
+      "a": "Optics separate.",
+      "c": "Frequency transducer.",
+      "d": "Frame rate imaging."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-007",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "Color Doppler packet size (ensemble length) tradeoff:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Larger packets always increase frame rate"
+      },
+      {
+        "id": "b",
+        "text": "Packet size does not affect color quality"
+      },
+      {
+        "id": "c",
+        "text": "Larger packets improve velocity estimates but reduce frame rate"
+      },
+      {
+        "id": "d",
+        "text": "Packets replace ECG gating needs always"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Color is multi-pulse; compromises among area, depth, packets, and PRF.",
+    "distractorExplanations": {
+      "a": "Larger packets slow frame rate.",
+      "b": "Quality affected.",
+      "d": "ECG separate."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-008",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "Wall filters (high-pass) remove:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the highest arterial velocities always as their purpose"
+      },
+      {
+        "id": "b",
+        "text": "ECG signals in the ultrasound machine power cord"
+      },
+      {
+        "id": "c",
+        "text": "All useful diastolic venous flow by design goal when set optimally always"
+      },
+      {
+        "id": "d",
+        "text": "Low-frequency Doppler shifts from vessel wall/clutter motion"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Excessive wall filter can wipe out slow flow (e.g., venous/diastolic).",
+    "distractorExplanations": {
+      "a": "Not for removing peak arterial.",
+      "b": "Not electrical ECG filtering definition.",
+      "c": "Overfiltering harms slow flow."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-009",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "Power Doppler displays:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Strength/amplitude of Doppler shifts rather than mean velocity/direction primarily"
+      },
+      {
+        "id": "b",
+        "text": "Exact velocity and direction like spectral with numbers always"
+      },
+      {
+        "id": "c",
+        "text": "Only CT Hounsfield units"
+      },
+      {
+        "id": "d",
+        "text": "Aliasing as its main numeric output"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Power Doppler more sensitive to flow presence, less angle dependent, no direction/velocity values like color.",
+    "distractorExplanations": {
+      "b": "Not quantitative velocity like PW.",
+      "c": "Not CT.",
+      "d": "Doesn't display aliasing velocities the same."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-010",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "Spectral broadening may indicate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perfectly laminar flow with tiny sample always"
+      },
+      {
+        "id": "b",
+        "text": "Turbulent flow or large sample volume encompassing varied velocities"
+      },
+      {
+        "id": "c",
+        "text": "Frozen image only"
+      },
+      {
+        "id": "d",
+        "text": "Absent Doppler shift at 0°"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fill-in of spectral window suggests turbulence or technical factors.",
+    "distractorExplanations": {
+      "a": "Laminar has clear window typically.",
+      "c": "Freeze unrelated.",
+      "d": "0° maximizes shift."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-011",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "The Doppler equation shows Doppler shift increases when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reflector speed increases (toward/away component) or operating frequency increases, for a given angle factor"
+      },
+      {
+        "id": "b",
+        "text": "Propagation speed in tissue becomes infinite"
+      },
+      {
+        "id": "c",
+        "text": "The Doppler angle is exactly 90°"
+      },
+      {
+        "id": "d",
+        "text": "PRF is set to zero"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "fd ∝ 2v f0 cosθ / c; higher v or f0 increases shift (angle matters).",
+    "distractorExplanations": {
+      "b": "Incorrect: Propagation speed in tissue becomes infinite",
+      "c": "Incorrect: The Doppler angle is exactly 90°",
+      "d": "Incorrect: PRF is set to zero"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-012",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "Power Doppler imaging is particularly useful because it:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Provides exact velocity and direction as well as CW Doppler"
+      },
+      {
+        "id": "b",
+        "text": "Is more sensitive to low flow and less angle-dependent than velocity color Doppler, without showing direction/velocity magnitude the same way"
+      },
+      {
+        "id": "c",
+        "text": "Never produces flash artifact"
+      },
+      {
+        "id": "d",
+        "text": "Replaces spectral Doppler entirely for stenosis grading"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Power Doppler encodes strength of the Doppler signal; it is relatively angle-insensitive compared with color velocity maps.",
+    "distractorExplanations": {
+      "a": "Incorrect: Provides exact velocity and direction as well as CW Doppler",
+      "c": "Incorrect: Never produces flash artifact",
+      "d": "Incorrect: Replaces spectral Doppler entirely for stenosis grading"
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-013",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "Laminar flow is characterized by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chaotic multidirectional velocities filling the spectrum at rest"
+      },
+      {
+        "id": "b",
+        "text": "Streamlined layers with a relatively narrow range of velocities in a vessel"
+      },
+      {
+        "id": "c",
+        "text": "Only flow at 90° to the beam"
+      },
+      {
+        "id": "d",
+        "text": "Absence of any Doppler shift at all angles"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Laminar flow is orderly; turbulence widens the spectral envelope.",
+    "distractorExplanations": {
+      "a": "Incorrect: Chaotic multidirectional velocities filling the spectrum at rest",
+      "c": "Incorrect: Only flow at 90° to the beam",
+      "d": "Incorrect: Absence of any Doppler shift at all angles"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-014",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "Sample volume (gate) size in pulsed Doppler affects:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the B-mode frequency"
+      },
+      {
+        "id": "b",
+        "text": "Which portion of the vessel is interrogated and how much spectral broadening may appear"
+      },
+      {
+        "id": "c",
+        "text": "Whether refraction can occur"
+      },
+      {
+        "id": "d",
+        "text": "Crystal damping material composition"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Larger gates include more velocity components and can increase spectral broadening.",
+    "distractorExplanations": {
+      "a": "Incorrect: Only the B-mode frequency",
+      "c": "Incorrect: Whether refraction can occur",
+      "d": "Incorrect: Crystal damping material composition"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-015",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "Autocorrelation in color Doppler is used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Estimate mean Doppler shifts rapidly across many gates for color display"
+      },
+      {
+        "id": "b",
+        "text": "Measure only tissue harmonic imaging MI"
+      },
+      {
+        "id": "c",
+        "text": "Calibrate the thermal index printer"
+      },
+      {
+        "id": "d",
+        "text": "Replace the need for a transducer"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Color flow uses autocorrelation (or similar) for fast mean-velocity estimates.",
+    "distractorExplanations": {
+      "b": "Incorrect: Measure only tissue harmonic imaging MI",
+      "c": "Incorrect: Calibrate the thermal index printer",
+      "d": "Incorrect: Replace the need for a transducer"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-001",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Shadowing artifact occurs distal to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Highly attenuating/reflecting structures (e.g., calcification, stone, bone)"
+      },
+      {
+        "id": "b",
+        "text": "Fluid-filled simple cysts primarily as enhancement opposite"
+      },
+      {
+        "id": "c",
+        "text": "Only gain being too high as true shadow physics"
+      },
+      {
+        "id": "d",
+        "text": "Doppler angle of 0°"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Useful diagnostically for stones; distinguish from improper TGC.",
+    "distractorExplanations": {
+      "b": "Cysts cause enhancement.",
+      "c": "Gain is technical display.",
+      "d": "Angle Doppler."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-002",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Acoustic enhancement is seen distal to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gallstones typically as enhancement"
+      },
+      {
+        "id": "b",
+        "text": "Low-attenuating fluid (cysts, bladder)"
+      },
+      {
+        "id": "c",
+        "text": "Bone"
+      },
+      {
+        "id": "d",
+        "text": "Air/bowel gas typically"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Through-transmission helps confirm cystic nature.",
+    "distractorExplanations": {
+      "a": "Stones shadow.",
+      "c": "Bone shadows.",
+      "d": "Gas shadows/scatters."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-003",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Reverberation artifact appears as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A mirror image only below the diaphragm always as the only form"
+      },
+      {
+        "id": "b",
+        "text": "Color aliasing exclusively"
+      },
+      {
+        "id": "c",
+        "text": "Multiple equally spaced echoes at increasing depths from strong parallel reflectors"
+      },
+      {
+        "id": "d",
+        "text": "Electrical interference spikes only"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Comet-tail/ring-down are related variants taught in SPI.",
+    "distractorExplanations": {
+      "a": "Mirror is different artifact.",
+      "b": "Aliasing Doppler.",
+      "d": "Electrical different."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-004",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Mirror image artifact commonly occurs around:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only inside the transducer cable"
+      },
+      {
+        "id": "b",
+        "text": "Never in abdominal imaging"
+      },
+      {
+        "id": "c",
+        "text": "When PRF is zero"
+      },
+      {
+        "id": "d",
+        "text": "Strong reflectors like diaphragm/pleura creating a duplicated structure"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Liver lesions can appear mirrored into lung/base regions.",
+    "distractorExplanations": {
+      "a": "Cable unrelated.",
+      "b": "Common abdominally.",
+      "c": "PRF zero not imaging."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-005",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Side lobe/grating lobe artifacts can create:",
+    "options": [
+      {
+        "id": "a",
+        "text": "False echoes that appear to originate from the main beam path"
+      },
+      {
+        "id": "b",
+        "text": "Perfectly accurate anatomy always"
+      },
+      {
+        "id": "c",
+        "text": "Only Doppler shifts without B-mode impact"
+      },
+      {
+        "id": "d",
+        "text": "Sterility of probes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Reduce with apodization; recognize as artifact vs real masses.",
+    "distractorExplanations": {
+      "b": "They reduce accuracy.",
+      "c": "Also affect B-mode.",
+      "d": "Not about sterility."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-006",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "The ALARA principle means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Always max MI/TI for prettier images"
+      },
+      {
+        "id": "b",
+        "text": "Use output exposures As Low As Reasonably Achievable for diagnostic quality"
+      },
+      {
+        "id": "c",
+        "text": "Ignore thermal indices"
+      },
+      {
+        "id": "d",
+        "text": "Ultrasound is ionizing so dose like CT"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Monitor MI/TI; reduce power, dwell time, and use appropriate modes.",
+    "distractorExplanations": {
+      "a": "Max output not ALARA.",
+      "c": "TI/MI guide risk.",
+      "d": "US non-ionizing."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-007",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Mechanical index (MI) relates most to risk of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only heating in bone exclusively as MI meaning"
+      },
+      {
+        "id": "b",
+        "text": "Electrical shock"
+      },
+      {
+        "id": "c",
+        "text": "Cavitation bioeffects"
+      },
+      {
+        "id": "d",
+        "text": "Laser burns"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "TI relates to heating; MI to mechanical/cavitation; contrast agents raise cavitation concern.",
+    "distractorExplanations": {
+      "a": "TI ~ thermal.",
+      "b": "Electrical safety separate.",
+      "d": "Laser unrelated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-008",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Thermal index (TI) estimates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the Nyquist limit"
+      },
+      {
+        "id": "b",
+        "text": "Exact temperature in every voxel always perfectly"
+      },
+      {
+        "id": "c",
+        "text": "Film badge radiation dose"
+      },
+      {
+        "id": "d",
+        "text": "Potential tissue heating from ultrasound absorption"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "TIS/TIB/TIC variants depend on assumptions; minimize dwell especially with bone/fetal concerns.",
+    "distractorExplanations": {
+      "a": "Nyquist Doppler.",
+      "b": "Estimate not perfect map.",
+      "c": "Not ionizing film badges."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-009",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Range ambiguity artifact occurs when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Echoes from deep structures return after the next pulse is sent (PRP too short)"
+      },
+      {
+        "id": "b",
+        "text": "Frequency is zero"
+      },
+      {
+        "id": "c",
+        "text": "Gel is correctly applied"
+      },
+      {
+        "id": "d",
+        "text": "CW Doppler is range gated precisely"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Reduce by lowering PRF/scale or adjusting depth/timing expectations.",
+    "distractorExplanations": {
+      "b": "f=0 not imaging.",
+      "c": "Gel good practice.",
+      "d": "CW lacks PW ranging."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-010",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Slice thickness artifact can fill in:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only spectral windows in a beneficial way always"
+      },
+      {
+        "id": "b",
+        "text": "Anechoic structures with false echoes from beam elevation thickness"
+      },
+      {
+        "id": "c",
+        "text": "TI displays"
+      },
+      {
+        "id": "d",
+        "text": "Patient ID fields"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Elevational focusing/1.5D arrays reduce slice thickness artifacts.",
+    "distractorExplanations": {
+      "a": "Not beneficial fill-in.",
+      "c": "TI separate.",
+      "d": "ID unrelated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-011",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Comet-tail artifact is a form of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reverberation from closely spaced strong reflectors"
+      },
+      {
+        "id": "b",
+        "text": "Refraction shadowing only"
+      },
+      {
+        "id": "c",
+        "text": "Doppler aliasing"
+      },
+      {
+        "id": "d",
+        "text": "Speed error from fat exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Comet-tail is a dense reverberation pattern from metal/cholesterol etc.",
+    "distractorExplanations": {
+      "b": "Incorrect: Refraction shadowing only",
+      "c": "Incorrect: Doppler aliasing",
+      "d": "Incorrect: Speed error from fat exclusively"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-012",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Range ambiguity artifact can occur when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "PRF is so high that echoes from deep structures return after the next pulse is sent"
+      },
+      {
+        "id": "b",
+        "text": "Gain is set to zero"
+      },
+      {
+        "id": "c",
+        "text": "Only CW Doppler is used for imaging depth"
+      },
+      {
+        "id": "d",
+        "text": "The matching layer is perfect"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "If listening time is too short, late echoes are mis-mapped to shallow depths.",
+    "distractorExplanations": {
+      "b": "Incorrect: Gain is set to zero",
+      "c": "Incorrect: Only CW Doppler is used for imaging depth",
+      "d": "Incorrect: The matching layer is perfect"
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-013",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Which bioeffect is more associated with cavitation risk?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only skin burns from the keyboard"
+      },
+      {
+        "id": "b",
+        "text": "Mechanical/nonthermal effects monitored conceptually by MI"
+      },
+      {
+        "id": "c",
+        "text": "Solely the thermal index for bone"
+      },
+      {
+        "id": "d",
+        "text": "MRI projectile risk"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "MI relates to mechanical (cavitation) bioeffect potential.",
+    "distractorExplanations": {
+      "a": "Incorrect: Only skin burns from the keyboard",
+      "c": "Incorrect: Solely the thermal index for bone",
+      "d": "Incorrect: MRI projectile risk"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-014",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Edge shadowing (refraction shadow) often appears:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Distal to the edges of a curved structure such as a cyst"
+      },
+      {
+        "id": "b",
+        "text": "Only inside the transducer housing"
+      },
+      {
+        "id": "c",
+        "text": "As color bruit exclusively"
+      },
+      {
+        "id": "d",
+        "text": "When MI is zero"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Beam refraction at curved borders can create edge shadows.",
+    "distractorExplanations": {
+      "b": "Incorrect: Only inside the transducer housing",
+      "c": "Incorrect: As color bruit exclusively",
+      "d": "Incorrect: When MI is zero"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-015",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "To practice ALARA during obstetric ultrasound, a sonographer should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use maximum output and dwell time on one spot indefinitely"
+      },
+      {
+        "id": "b",
+        "text": "Minimize output and exposure time while obtaining diagnostic images"
+      },
+      {
+        "id": "c",
+        "text": "Disable freeze and record for hours continuously"
+      },
+      {
+        "id": "d",
+        "text": "Ignore TI/MI displays always"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "ALARA: as low as reasonably achievable exposure consistent with diagnostic needs.",
+    "distractorExplanations": {
+      "a": "Incorrect: Use maximum output and dwell time on one spot indefinitely",
+      "c": "Incorrect: Disable freeze and record for hours continuously",
+      "d": "Incorrect: Ignore TI/MI displays always"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  }
+]

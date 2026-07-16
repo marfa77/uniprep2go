@@ -172,11 +172,7 @@ function deckSubtitleForCover(deck) {
     .slice(0, 64);
 }
 
-async function loadCatalogDeckConfigs() {
-  const decksSource = readFileSync(join(root, "src/lib/decks.ts"), "utf8");
-  /** @type {Record<string, { title: string; subtitle: string; badge?: string; panelKind: string }>} */
-  const configs = {};
-
+function parseDeckBlocksFromSource(decksSource, configs) {
   const deckBlocks = decksSource.split(/\n  \{\n    slug: "/).slice(1);
   for (const block of deckBlocks) {
     const slug = block.match(/^([^"]+)"/)?.[1];
@@ -206,6 +202,46 @@ async function loadCatalogDeckConfigs() {
       badge: format === "PDF" ? "Printable PDF" : "Anki Deck",
       panelKind: inferPanelKind(slug, category),
     };
+  }
+
+  return configs;
+}
+
+async function loadCatalogDeckConfigs() {
+  /** @type {Record<string, { title: string; subtitle: string; badge?: string; panelKind: string }>} */
+  const configs = {};
+  parseDeckBlocksFromSource(readFileSync(join(root, "src/lib/decks.ts"), "utf8"), configs);
+
+  // Wave planned decks live outside decks.ts object literals.
+  // Prefer EXTRA_COVER_CONFIGS JSON (set by tsx wrapper) — Node can't resolve TS path imports.
+  if (process.env.EXTRA_COVER_CONFIGS) {
+    try {
+      Object.assign(configs, JSON.parse(process.env.EXTRA_COVER_CONFIGS));
+    } catch (error) {
+      console.warn("  EXTRA_COVER_CONFIGS parse failed:", error instanceof Error ? error.message : error);
+    }
+  }
+
+  for (const waveModule of ["../src/lib/mock-exams/wave1-configs.ts"]) {
+    try {
+      const mod = await import(waveModule);
+      const list = mod.wave1MockExamConfigs ?? [];
+      for (const mock of list) {
+        const slug = mock.linkedDeckSlug;
+        configs[slug] = {
+          title: deckTitleForCover(mock.shortTitle),
+          subtitle: deckSubtitleForCover({
+            subtitle: mock.description,
+            facts: { cards: "Planned" },
+          }),
+          monogram: mock.shortTitle,
+          badge: "Anki Deck",
+          panelKind: inferPanelKind(slug, "professional"),
+        };
+      }
+    } catch (error) {
+      console.warn(`  ${waveModule} cover configs skipped:`, error instanceof Error ? error.message : error);
+    }
   }
 
   return configs;

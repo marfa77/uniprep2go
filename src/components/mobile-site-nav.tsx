@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { HeaderMockSearch } from "@/components/header-mock-search";
 
 const navLinks = [
   { href: "/mock-exams", label: "Free mocks" },
@@ -28,9 +29,12 @@ export function MobileSiteNav() {
       {open ? (
         <nav
           aria-label="Mobile"
-          className="absolute right-0 top-[calc(100%+0.5rem)] z-50 min-w-[12rem] rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-2 shadow-lg"
+          className="absolute right-0 top-[calc(100%+0.5rem)] z-50 min-w-[16rem] rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-2 shadow-lg"
           id="mobile-site-menu"
         >
+          <div className="px-2 pb-2 pt-1">
+            <HeaderMockSearch compact onSubmitted={() => setOpen(false)} />
+          </div>
           {navLinks.map((link) => (
             <Link
               className="block rounded-xl px-4 py-3 text-sm font-medium text-[#18140f] transition hover:bg-[#f7f3ea] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f]"

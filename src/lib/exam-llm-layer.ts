@@ -10,8 +10,12 @@ import { absoluteUrl, siteConfig } from "./site";
 
 export type DeckLlmInput = Pick<
   CatalogAvailableDeck,
-  "slug" | "title" | "shortName" | "directAnswer" | "category" | "format" | "facts" | "checkoutUrl" | "checkoutProvider"
->;
+  "slug" | "title" | "shortName" | "directAnswer" | "category" | "format" | "facts"
+> & {
+  checkoutUrl?: string;
+  checkoutProvider?: CatalogAvailableDeck["checkoutProvider"];
+  status?: "available" | "planned";
+};
 
 export type HighIntentMockBlock = {
   /** Primary user query to match in llms.txt */
@@ -52,6 +56,42 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     mockSlug: "series-7-readiness-check",
     disambiguation:
       "FINRA Series 7 is a long licensing exam — this readiness check samples representative topics; verify current outline at finra.org.",
+  },
+  {
+    query: "CDL general knowledge practice test free",
+    mockSlug: "cdl-general-knowledge-readiness-check",
+    disambiguation:
+      "State CDL knowledge exams follow FMCSA handbook topics — this 40-question readiness check is an independent diagnostic, not a DMV exam.",
+  },
+  {
+    query: "NHA CCMA practice test free",
+    mockSlug: "nha-ccma-readiness-check",
+    disambiguation:
+      "NHA CCMA is a clinical medical assistant certification exam — this readiness check is independent prep, not NHA exam material.",
+  },
+  {
+    query: "NREMT EMT practice test free",
+    mockSlug: "nremt-emt-readiness-check",
+    disambiguation:
+      "NREMT EMT cognitive exam covers airway, cardiology, trauma, and medical/ops — this readiness check is independent, not an NREMT exam.",
+  },
+  {
+    query: "Florida real estate practice exam free",
+    mockSlug: "fl-real-estate-readiness-check",
+    disambiguation:
+      "Florida sales associate licensing is administered via DBPR/FREC — this readiness check is independent prep, not a state exam.",
+  },
+  {
+    query: "AAPC CPC practice test free",
+    mockSlug: "aapc-cpc-readiness-check",
+    disambiguation:
+      "AAPC CPC tests medical coding knowledge — this readiness check covers guidelines and coding concepts; not an AAPC certification exam.",
+  },
+  {
+    query: "MBLEx practice test free",
+    mockSlug: "mblex-readiness-check",
+    disambiguation:
+      "FSMTB MBLEx is the national massage therapy exam — this readiness check is independent prep, not FSMTB material.",
   },
   {
     query: "FRM Part 1 practice questions",

@@ -5,10 +5,10 @@ import {
   getRelatedBuildingDecks,
   isBuildingCertDeckSlug,
 } from "@/lib/building-cert-clusters";
-import { categoryLabels, getRelatedDecks, type CatalogAvailableDeck } from "@/lib/decks";
+import { categoryLabels, getRelatedDecks, type Deck } from "@/lib/decks";
 
 type DeckRelatedDecksProps = {
-  deck: CatalogAvailableDeck;
+  deck: Deck;
 };
 
 export function DeckRelatedDecks({ deck }: DeckRelatedDecksProps) {

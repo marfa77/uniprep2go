@@ -1,0 +1,548 @@
+{
+  "title": "50 US niche certifications — mock-only roadmap",
+  "unit": "United States",
+  "exclusions": [
+    "IT",
+    "finance/securities",
+    "already live on UniPrep2Go (ServSafe Manager, PTCB, EPA 608, PMP, CA RE, insurance L&H/P&C, LEED/WELL/building cluster)"
+  ],
+  "selectionRules": {
+    "minAnnualExams": 2000,
+    "preferLowSerpCompetition": true,
+    "productMode": "mock-only (planned deck stub OK)",
+    "upsellPolicy": "Ship free timed mocks first with full SEO/GEO/LLM. After ~30 days, review starts/completions/IndexNow/organic — build Anki (.apkg) + Gumroad only for mocks that actually launch (traction).",
+    "volumeNotes": "Volumes are published exam administrations or strong workforce proxies; ~ means estimate from workforce openings / state program size when board does not publish exact count."
+  },
+  "waves": {
+    "wave1_ship_first": [
+      "cdl-general-knowledge",
+      "nha-ccma",
+      "nremt-emt",
+      "nha-cpt-phlebotomy",
+      "fl-real-estate",
+      "tx-real-estate",
+      "aapc-cpc",
+      "mblex",
+      "nha-cet-ekg",
+      "nha-cpct",
+      "nha-excpt",
+      "arrt-radiography",
+      "nremt-paramedic",
+      "danb-rhs",
+      "danb-ice",
+      "crcst",
+      "nha-cmaa",
+      "ardms-spi",
+      "nbstsa-cst",
+      "vtne"
+    ]
+  },
+  "certs": [
+    {
+      "id": "cdl-general-knowledge",
+      "name": "CDL General Knowledge (CLP)",
+      "body": "State DMV / FMCSA",
+      "cluster": "transport",
+      "annualVolume": 200000,
+      "volumeSource": "TX alone ~50k skills/yr; national knowledge attempts much higher",
+      "comp": "med",
+      "priority": 1,
+      "note": "Ship as national FMCSA handbook-aligned knowledge mock"
+    },
+    {
+      "id": "nha-ccma",
+      "name": "NHA CCMA (Clinical Medical Assistant)",
+      "body": "NHA",
+      "cluster": "allied-health",
+      "annualVolume": 78681,
+      "volumeSource": "NHA 2024 pass-rate report",
+      "comp": "med",
+      "priority": 1
+    },
+    {
+      "id": "nremt-emt",
+      "name": "NREMT EMT",
+      "body": "NREMT",
+      "cluster": "ems",
+      "annualVolume": 70000,
+      "volumeSource": "~ national EMT pipeline (high; exact yearly CBT count varies)",
+      "comp": "med",
+      "priority": 1
+    },
+    {
+      "id": "nha-cpt-phlebotomy",
+      "name": "NHA CPT (Phlebotomy Technician)",
+      "body": "NHA",
+      "cluster": "allied-health",
+      "annualVolume": 57457,
+      "volumeSource": "NHA 2024",
+      "comp": "med",
+      "priority": 1
+    },
+    {
+      "id": "fl-real-estate",
+      "name": "Florida Real Estate Sales Associate",
+      "body": "DBPR / Florida Real Estate Commission",
+      "cluster": "real-estate",
+      "annualVolume": 30000,
+      "volumeSource": "~",
+      "comp": "med",
+      "priority": 1
+    },
+    {
+      "id": "tx-real-estate",
+      "name": "Texas Real Estate Salesperson",
+      "body": "TREC",
+      "cluster": "real-estate",
+      "annualVolume": 25000,
+      "volumeSource": "~ large state licensee pipeline",
+      "comp": "med",
+      "priority": 1
+    },
+    {
+      "id": "aapc-cpc",
+      "name": "AAPC CPC (Medical Coding)",
+      "body": "AAPC",
+      "cluster": "health-admin",
+      "annualVolume": 20000,
+      "volumeSource": "~ large CPC exam pipeline",
+      "comp": "med",
+      "priority": 1
+    },
+    {
+      "id": "mblex",
+      "name": "MBLEx (Massage Therapy)",
+      "body": "FSMTB",
+      "cluster": "bodywork",
+      "annualVolume": 20000,
+      "volumeSource": "~ FSMTB national massage exam",
+      "comp": "low",
+      "priority": 1
+    },
+    {
+      "id": "nha-cet-ekg",
+      "name": "NHA CET (EKG Technician)",
+      "body": "NHA",
+      "cluster": "allied-health",
+      "annualVolume": 19241,
+      "volumeSource": "NHA 2024",
+      "comp": "low",
+      "priority": 1
+    },
+    {
+      "id": "nha-cpct",
+      "name": "NHA CPCT/A (Patient Care Technician)",
+      "body": "NHA",
+      "cluster": "allied-health",
+      "annualVolume": 17816,
+      "volumeSource": "NHA 2024",
+      "comp": "low",
+      "priority": 1
+    },
+    {
+      "id": "nha-excpt",
+      "name": "NHA ExCPT (Pharmacy Technician)",
+      "body": "NHA",
+      "cluster": "allied-health",
+      "annualVolume": 16519,
+      "volumeSource": "NHA 2024",
+      "comp": "med",
+      "priority": 1,
+      "note": "Alt to PTCB — different blueprint; PTCB already on site"
+    },
+    {
+      "id": "arrt-radiography",
+      "name": "ARRT Radiography (R)",
+      "body": "ARRT",
+      "cluster": "imaging",
+      "annualVolume": 15879,
+      "volumeSource": "ARRT Annual Exam Report 2024",
+      "comp": "med",
+      "priority": 1
+    },
+    {
+      "id": "nremt-paramedic",
+      "name": "NREMT Paramedic",
+      "body": "NREMT",
+      "cluster": "ems",
+      "annualVolume": 15000,
+      "volumeSource": "~",
+      "comp": "med",
+      "priority": 1
+    },
+    {
+      "id": "danb-rhs",
+      "name": "DANB RHS (Radiation Health & Safety)",
+      "body": "DANB",
+      "cluster": "dental",
+      "annualVolume": 15000,
+      "volumeSource": "~ dental assisting gateway",
+      "comp": "low",
+      "priority": 1
+    },
+    {
+      "id": "danb-ice",
+      "name": "DANB ICE (Infection Control)",
+      "body": "DANB",
+      "cluster": "dental",
+      "annualVolume": 12000,
+      "volumeSource": "~",
+      "comp": "low",
+      "priority": 1
+    },
+    {
+      "id": "crcst",
+      "name": "HSPA CRCST (Sterile Processing)",
+      "body": "HSPA (IAHCSMM)",
+      "cluster": "surgical",
+      "annualVolume": 10000,
+      "volumeSource": "~ large hospital SPD workforce",
+      "comp": "low",
+      "priority": 1
+    },
+    {
+      "id": "nha-cmaa",
+      "name": "NHA CMAA (Medical Administrative Assistant)",
+      "body": "NHA",
+      "cluster": "allied-health",
+      "annualVolume": 9390,
+      "volumeSource": "NHA 2024",
+      "comp": "low",
+      "priority": 1
+    },
+    {
+      "id": "ardms-spi",
+      "name": "ARDMS SPI (Sonography Principles & Instrumentation)",
+      "body": "ARDMS",
+      "cluster": "imaging",
+      "annualVolume": 8000,
+      "volumeSource": "~ gateway exam for sonography pathways",
+      "comp": "med",
+      "priority": 1
+    },
+    {
+      "id": "nbstsa-cst",
+      "name": "NBSTSA CST (Surgical Technologist)",
+      "body": "NBSTSA",
+      "cluster": "surgical",
+      "annualVolume": 8000,
+      "volumeSource": "~ CAAHEP program graduate volume",
+      "comp": "low",
+      "priority": 1
+    },
+    {
+      "id": "vtne",
+      "name": "VTNE (Veterinary Technician)",
+      "body": "AAVSB",
+      "cluster": "veterinary",
+      "annualVolume": 8000,
+      "volumeSource": "~ AAVSB national exam",
+      "comp": "low",
+      "priority": 1
+    },
+    {
+      "id": "nha-cbcs",
+      "name": "NHA CBCS (Billing & Coding Specialist)",
+      "body": "NHA",
+      "cluster": "allied-health",
+      "annualVolume": 6905,
+      "volumeSource": "NHA 2024",
+      "comp": "low",
+      "priority": 1
+    },
+    {
+      "id": "arrt-ct",
+      "name": "ARRT Computed Tomography",
+      "body": "ARRT",
+      "cluster": "imaging",
+      "annualVolume": 6606,
+      "volumeSource": "ARRT 2024",
+      "comp": "low",
+      "priority": 1
+    },
+    {
+      "id": "ccht-dialysis",
+      "name": "NNCC CCHT (Dialysis Technician)",
+      "body": "NNCC",
+      "cluster": "allied-health",
+      "annualVolume": 5000,
+      "volumeSource": "~ dialysis employer demand",
+      "comp": "low",
+      "priority": 1
+    },
+    {
+      "id": "arrt-mri",
+      "name": "ARRT MRI",
+      "body": "ARRT",
+      "cluster": "imaging",
+      "annualVolume": 4121,
+      "volumeSource": "ARRT 2024",
+      "comp": "low",
+      "priority": 1
+    },
+    {
+      "id": "aha-bls-provider",
+      "name": "AHA BLS Provider",
+      "body": "American Heart Association",
+      "cluster": "cpr",
+      "annualVolume": 500000,
+      "volumeSource": "~ massive healthcare onboarding; cognitive + skills",
+      "comp": "high",
+      "priority": 2,
+      "note": "Cognitive-only mock; skills still required in-person"
+    },
+    {
+      "id": "nnaap-cna",
+      "name": "NNAAP / state CNA exam",
+      "body": "Credentia / state NNAAP",
+      "cluster": "nursing-support",
+      "annualVolume": 100000,
+      "volumeSource": "~ multi-state nurse aide testing volume",
+      "comp": "high",
+      "priority": 2,
+      "note": "State variants — start with CA/TX/FL knowledge test packs"
+    },
+    {
+      "id": "cosmetology-state",
+      "name": "State Cosmetology Theory (PSI/NIC)",
+      "body": "NIC / PSI / state board",
+      "cluster": "beauty",
+      "annualVolume": 80000,
+      "volumeSource": "~ national beauty school graduates",
+      "comp": "med",
+      "priority": 2,
+      "note": "Ship as NIC theory mock + state packs later"
+    },
+    {
+      "id": "nclex-pn",
+      "name": "NCLEX-PN",
+      "body": "NCSBN",
+      "cluster": "nursing",
+      "annualVolume": 63150,
+      "volumeSource": "NCSBN/HRSA 2024 total PN candidates",
+      "comp": "high",
+      "priority": 2
+    },
+    {
+      "id": "nasm-cpt",
+      "name": "NASM CPT",
+      "body": "NASM",
+      "cluster": "fitness",
+      "annualVolume": 40000,
+      "volumeSource": "~ largest CPT brand exam volume",
+      "comp": "high",
+      "priority": 2
+    },
+    {
+      "id": "esthetician-state",
+      "name": "State Esthetician Theory (NIC)",
+      "body": "NIC / state board",
+      "cluster": "beauty",
+      "annualVolume": 40000,
+      "volumeSource": "~",
+      "comp": "low",
+      "priority": 2
+    },
+    {
+      "id": "cdl-hazmat",
+      "name": "CDL HazMat endorsement",
+      "body": "TSA / state",
+      "cluster": "transport",
+      "annualVolume": 30000,
+      "volumeSource": "~ endorsement pipeline",
+      "comp": "low",
+      "priority": 2
+    },
+    {
+      "id": "aswb-masters",
+      "name": "ASWB Masters (Social Work)",
+      "body": "ASWB",
+      "cluster": "social-work",
+      "annualVolume": 30000,
+      "volumeSource": "~ ASWB exam family",
+      "comp": "med",
+      "priority": 2
+    },
+    {
+      "id": "cdl-passenger",
+      "name": "CDL Passenger (P) endorsement",
+      "body": "State DMV",
+      "cluster": "transport",
+      "annualVolume": 25000,
+      "volumeSource": "~",
+      "comp": "low",
+      "priority": 2
+    },
+    {
+      "id": "issa-cpt",
+      "name": "ISSA CPT",
+      "body": "ISSA",
+      "cluster": "fitness",
+      "annualVolume": 20000,
+      "volumeSource": "~",
+      "comp": "med",
+      "priority": 2
+    },
+    {
+      "id": "ny-real-estate",
+      "name": "New York Real Estate Salesperson",
+      "body": "NY DOS",
+      "cluster": "real-estate",
+      "annualVolume": 20000,
+      "volumeSource": "~",
+      "comp": "med",
+      "priority": 2
+    },
+    {
+      "id": "cda-childcare",
+      "name": "CDA (Child Development Associate)",
+      "body": "Council for Professional Recognition",
+      "cluster": "education",
+      "annualVolume": 20000,
+      "volumeSource": "~ CDA credentialing volume",
+      "comp": "low",
+      "priority": 2
+    },
+    {
+      "id": "ace-cpt",
+      "name": "ACE CPT",
+      "body": "ACE",
+      "cluster": "fitness",
+      "annualVolume": 15000,
+      "volumeSource": "~",
+      "comp": "med",
+      "priority": 2
+    },
+    {
+      "id": "cdl-school-bus",
+      "name": "CDL School Bus (S) endorsement",
+      "body": "State DMV",
+      "cluster": "transport",
+      "annualVolume": 15000,
+      "volumeSource": "~",
+      "comp": "low",
+      "priority": 2
+    },
+    {
+      "id": "nbrc-tmc",
+      "name": "NBRC TMC (Respiratory Therapist)",
+      "body": "NBRC",
+      "cluster": "allied-health",
+      "annualVolume": 10000,
+      "volumeSource": "~ NBRC annual exam ops (multi-exam suite >2k each)",
+      "comp": "med",
+      "priority": 2
+    },
+    {
+      "id": "pest-control-applicator",
+      "name": "Structural Pest Control Applicator",
+      "body": "State agriculture dept",
+      "cluster": "trades",
+      "annualVolume": 10000,
+      "volumeSource": "~ CA/FL/TX applicator exams",
+      "comp": "low",
+      "priority": 2
+    },
+    {
+      "id": "aama-cma",
+      "name": "AAMA CMA (Certified Medical Assistant)",
+      "body": "AAMA",
+      "cluster": "allied-health",
+      "annualVolume": 8000,
+      "volumeSource": "~ from active CMA population / school pipelines",
+      "comp": "med",
+      "priority": 2
+    },
+    {
+      "id": "danb-gc",
+      "name": "DANB GC (General Chairside) / CDA path",
+      "body": "DANB",
+      "cluster": "dental",
+      "annualVolume": 8000,
+      "volumeSource": "~",
+      "comp": "low",
+      "priority": 2
+    },
+    {
+      "id": "nbdhe",
+      "name": "NBDHE (Dental Hygiene)",
+      "body": "JCNDE / ADA",
+      "cluster": "dental",
+      "annualVolume": 7000,
+      "volumeSource": "~ annual hygiene graduates",
+      "comp": "med",
+      "priority": 2
+    },
+    {
+      "id": "ascp-mls",
+      "name": "ASCP MLS (Medical Lab Scientist)",
+      "body": "ASCP BOC",
+      "cluster": "lab",
+      "annualVolume": 5000,
+      "volumeSource": "~",
+      "comp": "med",
+      "priority": 2
+    },
+    {
+      "id": "rd-exam",
+      "name": "CDR RD Exam (Registered Dietitian)",
+      "body": "CDR / Academy of Nutrition",
+      "cluster": "nutrition",
+      "annualVolume": 5000,
+      "volumeSource": "~",
+      "comp": "med",
+      "priority": 2
+    },
+    {
+      "id": "wastewater-1",
+      "name": "Wastewater Operator (Grade 1–2)",
+      "body": "State / ABC",
+      "cluster": "utilities",
+      "annualVolume": 5000,
+      "volumeSource": "~",
+      "comp": "low",
+      "priority": 2
+    },
+    {
+      "id": "ardms-abd",
+      "name": "ARDMS Abdomen (AB)",
+      "body": "ARDMS",
+      "cluster": "imaging",
+      "annualVolume": 4000,
+      "volumeSource": "~ specialty volume proxy",
+      "comp": "med",
+      "priority": 2
+    },
+    {
+      "id": "ascp-mlt",
+      "name": "ASCP MLT (Medical Lab Technician)",
+      "body": "ASCP BOC",
+      "cluster": "lab",
+      "annualVolume": 4000,
+      "volumeSource": "~ BOC MLT annual",
+      "comp": "low",
+      "priority": 2
+    },
+    {
+      "id": "ardms-obgyn",
+      "name": "ARDMS OB/GYN",
+      "body": "ARDMS",
+      "cluster": "imaging",
+      "annualVolume": 3500,
+      "volumeSource": "~ specialty volume proxy",
+      "comp": "med",
+      "priority": 2
+    },
+    {
+      "id": "arrt-mammography",
+      "name": "ARRT Mammography",
+      "body": "ARRT",
+      "cluster": "imaging",
+      "annualVolume": 2190,
+      "volumeSource": "ARRT 2024",
+      "comp": "low",
+      "priority": 2
+    }
+  ],
+  "selectedCount": 50
+}

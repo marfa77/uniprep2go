@@ -1,0 +1,1982 @@
+[
+  {
+    "id": "nha-excpt-readiness-check-pharmacology-001",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "pharmacology",
+    "prompt": "A drug's generic name is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The official nonproprietary name (e.g., ibuprofen)"
+      },
+      {
+        "id": "b",
+        "text": "Always the brand name like Advil only"
+      },
+      {
+        "id": "c",
+        "text": "The NDC package code only"
+      },
+      {
+        "id": "d",
+        "text": "The DEA schedule number only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Generic names identify the active ingredient; brands are proprietary.",
+    "distractorExplanations": {
+      "b": "Brand ≠ generic.",
+      "c": "NDC identifies package/labeler/product.",
+      "d": "Schedules are controlled substance classes."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-pharmacology-002",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "pharmacology",
+    "prompt": "Pharmacokinetics primarily studies:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only drug pricing"
+      },
+      {
+        "id": "b",
+        "text": "ADME: absorption, distribution, metabolism, and excretion"
+      },
+      {
+        "id": "c",
+        "text": "Only tablet colors"
+      },
+      {
+        "id": "d",
+        "text": "Only pharmacy floor plans"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "PK describes what the body does to the drug; PD is what the drug does to the body.",
+    "distractorExplanations": {
+      "a": "Pricing is business.",
+      "c": "Color is imprint ID aid.",
+      "d": "Layout is operations."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-pharmacology-003",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "pharmacology",
+    "prompt": "An antagonist drug:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Always increases receptor activation maximally"
+      },
+      {
+        "id": "b",
+        "text": "Is only a vitamin"
+      },
+      {
+        "id": "c",
+        "text": "Blocks or diminishes agonist activity at a receptor"
+      },
+      {
+        "id": "d",
+        "text": "Cannot bind any receptor"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Antagonists occupy receptors without activating them (or block activation pathways).",
+    "distractorExplanations": {
+      "a": "That describes agonists.",
+      "b": "Vitamins vary.",
+      "d": "Antagonists do bind/block."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-pharmacology-004",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "pharmacology",
+    "prompt": "Which route typically has the fastest onset?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Oral tablets"
+      },
+      {
+        "id": "b",
+        "text": "Transdermal patches"
+      },
+      {
+        "id": "c",
+        "text": "Rectal suppositories generally faster than IV"
+      },
+      {
+        "id": "d",
+        "text": "Intravenous (IV)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "IV delivers drug directly to bloodstream; oral undergoes absorption/first-pass often.",
+    "distractorExplanations": {
+      "a": "Oral slower/variable.",
+      "b": "Patches are slow/steady.",
+      "c": "Rectal not faster than IV."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-pharmacology-005",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "pharmacology",
+    "prompt": "ACE inhibitors are commonly associated with which side effect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dry cough (and risk of hyperkalemia/angioedema)"
+      },
+      {
+        "id": "b",
+        "text": "Orange urine only as the hallmark"
+      },
+      {
+        "id": "c",
+        "text": "Tendon rupture as the primary class effect like fluoroquinolones"
+      },
+      {
+        "id": "d",
+        "text": "Serotonin syndrome exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ACEI cough from bradykinin; monitor K+ and angioedema warning.",
+    "distractorExplanations": {
+      "b": "Orange urine more rifampin-type teaching.",
+      "c": "Tendon risk: FQs.",
+      "d": "Serotonin syndrome: MAOI/SSRI combos."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-pharmacology-006",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "pharmacology",
+    "prompt": "Warfarin anticoagulation is monitored with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only aPTT always as the sole warfarin test"
+      },
+      {
+        "id": "b",
+        "text": "INR (derived from PT)"
+      },
+      {
+        "id": "c",
+        "text": "HbA1c"
+      },
+      {
+        "id": "d",
+        "text": "TSH only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Warfarin affects vitamin K–dependent factors monitored by PT/INR; heparin often aPTT/anti-Xa.",
+    "distractorExplanations": {
+      "a": "aPTT more heparin pathway classic.",
+      "c": "A1c is diabetes.",
+      "d": "TSH is thyroid."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-pharmacology-007",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "pharmacology",
+    "prompt": "A bacteriostatic antibiotic:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Always sterilizes blood instantly"
+      },
+      {
+        "id": "b",
+        "text": "Is an antiviral only"
+      },
+      {
+        "id": "c",
+        "text": "Inhibits bacterial growth/reproduction without necessarily killing immediately"
+      },
+      {
+        "id": "d",
+        "text": "Raises blood glucose as its antimicrobial mechanism"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Bactericidal kills; bacteriostatic inhibits—host immunity helps clear infection.",
+    "distractorExplanations": {
+      "a": "Not instant sterilization definition.",
+      "b": "Antibiotics target bacteria.",
+      "d": "Glucose unrelated to mechanism."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-pharmacology-008",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "pharmacology",
+    "prompt": "NSAIDs can increase risk of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Improved platelet function always"
+      },
+      {
+        "id": "b",
+        "text": "Cure of all infections"
+      },
+      {
+        "id": "c",
+        "text": "Lowering INR when combined with warfarin always safely"
+      },
+      {
+        "id": "d",
+        "text": "GI bleeding and kidney injury, especially in high-risk patients"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "NSAIDs inhibit COX; caution with ulcers, CKD, and anticoagulants.",
+    "distractorExplanations": {
+      "a": "They impair platelets ( esp. aspirin irreversible).",
+      "b": "Not antibiotics.",
+      "c": "Often increase bleeding risk with warfarin."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-pharmacology-009",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "pharmacology",
+    "prompt": "Insulin is used to treat:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Diabetes mellitus by promoting glucose uptake/storage"
+      },
+      {
+        "id": "b",
+        "text": "Hypothyroidism as first-line"
+      },
+      {
+        "id": "c",
+        "text": "Bacterial pneumonia as monotherapy"
+      },
+      {
+        "id": "d",
+        "text": "Vitamin B12 deficiency primarily"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Insulin lowers blood glucose; different types have different onsets/peaks.",
+    "distractorExplanations": {
+      "b": "Hypothyroid: levothyroxine.",
+      "c": "Pneumonia: antibiotics.",
+      "d": "B12: replacement."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-pharmacology-010",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "pharmacology",
+    "prompt": "A narrow therapeutic index drug requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No monitoring ever"
+      },
+      {
+        "id": "b",
+        "text": "Careful dosing and often therapeutic drug monitoring"
+      },
+      {
+        "id": "c",
+        "text": "OTC self-titration freely for all ages"
+      },
+      {
+        "id": "d",
+        "text": "Mixing all doses into one weekly megadose always"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Examples often include warfarin, digoxin, lithium, phenytoin—small level changes matter.",
+    "distractorExplanations": {
+      "a": "Monitoring common.",
+      "c": "Not casual OTC titration.",
+      "d": "Megadoses dangerous."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-pharmacology-011",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "pharmacology",
+    "prompt": "Which drug class is omeprazole typically associated with?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Loop diuretic for acute pulmonary edema"
+      },
+      {
+        "id": "b",
+        "text": "Short-acting insulin for DKA only"
+      },
+      {
+        "id": "c",
+        "text": "Proton pump inhibitor used to reduce gastric acid"
+      },
+      {
+        "id": "d",
+        "text": "Opioid antitussive"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Omeprazole is a PPI for GERD/ulcer acid suppression—not a diuretic, insulin, or opioid.",
+    "distractorExplanations": {
+      "a": "Furosemide is a loop diuretic.",
+      "b": "Insulins are different agents.",
+      "d": "Codeine-type antitussives are opioids."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-pharmacology-012",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "pharmacology",
+    "prompt": "A common serious adverse effect to counsel about with warfarin is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bright orange urine as the therapeutic goal"
+      },
+      {
+        "id": "b",
+        "text": "Complete absence of any interaction potential"
+      },
+      {
+        "id": "c",
+        "text": "Immediate cure of infections"
+      },
+      {
+        "id": "d",
+        "text": "Bleeding/bruising risk and need for INR monitoring/drug-diet interactions"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Warfarin anticoagulation requires bleeding vigilance and interaction awareness.",
+    "distractorExplanations": {
+      "a": "Orange urine is not the goal (phenazopyridine colors urine).",
+      "b": "Many interactions exist.",
+      "c": "Warfarin is not an antibiotic."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-pharmacology-013",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "pharmacology",
+    "prompt": "Which medication is a short-acting beta-2 agonist used for acute bronchospasm?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Albuterol"
+      },
+      {
+        "id": "b",
+        "text": "Montelukast as a rescue inhaler identical to albuterol"
+      },
+      {
+        "id": "c",
+        "text": "Fluticasone nasal spray for sudden severe asthma attack as sole rescue"
+      },
+      {
+        "id": "d",
+        "text": "Metformin"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Albuterol is the classic SABA rescue; controllers/other classes are not equivalent acute rescue.",
+    "distractorExplanations": {
+      "b": "Montelukast is not a SABA rescue inhaler.",
+      "c": "ICS/nasal steroids are not acute rescue alone.",
+      "d": "Metformin is for diabetes."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-pharmacology-014",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "pharmacology",
+    "prompt": "ACE inhibitors (e.g., lisinopril) are commonly associated with which adverse effect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Orange skin discoloration as intended therapy"
+      },
+      {
+        "id": "b",
+        "text": "Dry cough (and risk of hyperkalemia/angioedema)"
+      },
+      {
+        "id": "c",
+        "text": "Opioid withdrawal syndrome"
+      },
+      {
+        "id": "d",
+        "text": "Immediate hypoglycemia in all non-diabetics"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "ACEI cough and angioedema/hyperkalemia are key counseling/monitoring points.",
+    "distractorExplanations": {
+      "a": "Not an intended pigment effect.",
+      "c": "Not opioid-related.",
+      "d": "Hypoglycemia is not the classic ACEI effect."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-pharmacology-015",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "pharmacology",
+    "prompt": "Which statement about narrow therapeutic index drugs is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They never require refills counseling"
+      },
+      {
+        "id": "b",
+        "text": "They are always OTC"
+      },
+      {
+        "id": "c",
+        "text": "Small dose/level changes can cause toxicity or loss of efficacy—extra verification is critical"
+      },
+      {
+        "id": "d",
+        "text": "Counting is unnecessary because errors cannot harm"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "NTI drugs (e.g., digoxin, warfarin, levothyroxine nuances) need careful dosing accuracy.",
+    "distractorExplanations": {
+      "a": "Counseling still matters.",
+      "b": "Many NTI drugs are Rx-only.",
+      "d": "Errors can be severe."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-federal-law-001",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "federal-law",
+    "prompt": "Controlled substance schedules (I–V) are established under the:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Controlled Substances Act enforced by the DEA"
+      },
+      {
+        "id": "b",
+        "text": "FDA food menu labeling only"
+      },
+      {
+        "id": "c",
+        "text": "USP compounding chapters only"
+      },
+      {
+        "id": "d",
+        "text": "OSHA bloodborne pathogen standard only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "DEA schedules reflect abuse potential/accepted medical use; C-I has no accepted medical use in US.",
+    "distractorExplanations": {
+      "b": "FDA regulates drugs/devices/food differently.",
+      "c": "USP standards for quality/compounding.",
+      "d": "OSHA is workplace safety."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-federal-law-002",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "federal-law",
+    "prompt": "A Schedule II prescription refill rule is generally:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unlimited refills for 3 years"
+      },
+      {
+        "id": "b",
+        "text": "No refills; a new prescription is required for each fill (with limited emergency exceptions)"
+      },
+      {
+        "id": "c",
+        "text": "Five refills in 6 months like some C-III/IV rules"
+      },
+      {
+        "id": "d",
+        "text": "Refills without any prescription"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "C-II cannot be refilled; C-III/IV often up to 5 refills in 6 months.",
+    "distractorExplanations": {
+      "a": "No multi-year unlimited.",
+      "c": "That's III/IV pattern.",
+      "d": "Rx required."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-federal-law-003",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "federal-law",
+    "prompt": "Pseudoephedrine sales restrictions relate to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only child-resistant caps on all OTC vitamins forever as the sole rule"
+      },
+      {
+        "id": "b",
+        "text": "DEA Schedule I listing of pseudoephedrine"
+      },
+      {
+        "id": "c",
+        "text": "Combat Methamphetamine Epidemic Act (CMEA) daily/monthly limits and logbook/ID requirements"
+      },
+      {
+        "id": "d",
+        "text": "Ban on all cold medicines nationwide"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "CMEA regulates ephedrine/pseudoephedrine/PPA sales behind counter with limits.",
+    "distractorExplanations": {
+      "a": "CRC is PPPA separate topic.",
+      "b": "PSE is not CI.",
+      "d": "Cold meds still sold with limits."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-federal-law-004",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "federal-law",
+    "prompt": "OBRA '90 is associated with requiring:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only DEA form 222 for all OTCs"
+      },
+      {
+        "id": "b",
+        "text": "Elimination of patient profiles"
+      },
+      {
+        "id": "c",
+        "text": "Mandatory mail-order only"
+      },
+      {
+        "id": "d",
+        "text": "Prospective drug utilization review and offer to counsel Medicaid patients (and influenced counseling standards)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "OBRA '90 drove DUR and counseling offer requirements especially for Medicaid.",
+    "distractorExplanations": {
+      "a": "222 is C-II ordering.",
+      "b": "Profiles are kept.",
+      "c": "Mail-order not mandated by OBRA alone."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-federal-law-005",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "federal-law",
+    "prompt": "DEA Form 222 is used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Order Schedule I/II controlled substances"
+      },
+      {
+        "id": "b",
+        "text": "Report all HIPAA breaches"
+      },
+      {
+        "id": "c",
+        "text": "File state board renewals only"
+      },
+      {
+        "id": "d",
+        "text": "Document immunization administration only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "222 (or CSOS electronic) orders C-I/II; Form 106 reports theft/loss; 41 for destruction.",
+    "distractorExplanations": {
+      "b": "HIPAA is HHS/OCR.",
+      "c": "Board renewals differ.",
+      "d": "Immunizations documented elsewhere."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-federal-law-006",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "federal-law",
+    "prompt": "Child-resistant packaging is required under the:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sherman Antitrust Act"
+      },
+      {
+        "id": "b",
+        "text": "Poison Prevention Packaging Act (PPPA) for many oral Rx/OTC products with exceptions"
+      },
+      {
+        "id": "c",
+        "text": "Fair Labor Standards Act only"
+      },
+      {
+        "id": "d",
+        "text": "Americans with Disabilities Act only as packaging law"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "PPPA aims to reduce pediatric poisonings; easy-open may be requested with documentation.",
+    "distractorExplanations": {
+      "a": "Antitrust is competition.",
+      "c": "FLSA is wages/hours.",
+      "d": "ADA is disability rights."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-federal-law-007",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "federal-law",
+    "prompt": "HIPAA in pharmacy practice primarily protects:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Drug acquisition costs only"
+      },
+      {
+        "id": "b",
+        "text": "Technician lunch breaks only"
+      },
+      {
+        "id": "c",
+        "text": "Patient PHI from improper use/disclosure"
+      },
+      {
+        "id": "d",
+        "text": "DEA schedule decisions"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Minimum necessary and secure handling of prescriptions/profiles apply.",
+    "distractorExplanations": {
+      "a": "Costs are business.",
+      "b": "Breaks are labor.",
+      "d": "DEA schedules controlled substances."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-federal-law-008",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "federal-law",
+    "prompt": "FDA recalls: a Class I recall means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unlikely to cause adverse health consequences (Class III concept)"
+      },
+      {
+        "id": "b",
+        "text": "Only labeling misspelling with no risk ever"
+      },
+      {
+        "id": "c",
+        "text": "A DEA diversion audit"
+      },
+      {
+        "id": "d",
+        "text": "Reasonable probability of serious adverse health consequences or death"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Class I most serious; Class II temporary/reversible remote probability; Class III unlikely.",
+    "distractorExplanations": {
+      "a": "That is Class III.",
+      "b": "Minor labeling may be III.",
+      "c": "Recall ≠ DEA audit."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-federal-law-009",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "federal-law",
+    "prompt": "Who may legally prescribe controlled substances?",
+    "options": [
+      {
+        "id": "a",
+        "text": "DEA-registered practitioners acting within scope/state law"
+      },
+      {
+        "id": "b",
+        "text": "Any pharmacy cashier"
+      },
+      {
+        "id": "c",
+        "text": "Unlicensed friends with pads"
+      },
+      {
+        "id": "d",
+        "text": "Manufacturers' sales reps for patients directly always"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Prescribers need authority and DEA registration for controlled Rx.",
+    "distractorExplanations": {
+      "b": "Cashiers don't prescribe.",
+      "c": "Unlicensed prescribing illegal.",
+      "d": "Reps don't prescribe for patients."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-federal-law-010",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "federal-law",
+    "prompt": "Medication Guides (MedGuides) are FDA-required when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "All topical cosmetics"
+      },
+      {
+        "id": "b",
+        "text": "Certain drugs have serious risks needing patient information each dispensing as specified"
+      },
+      {
+        "id": "c",
+        "text": "Only hospital floor stock saline"
+      },
+      {
+        "id": "d",
+        "text": "Never for any outpatient Rx"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "MedGuides are part of REMS/labeling risk communication for select drugs.",
+    "distractorExplanations": {
+      "a": "Cosmetics differ.",
+      "c": "Saline not typical MedGuide focus.",
+      "d": "Outpatient MedGuides exist for listed drugs."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-federal-law-011",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "federal-law",
+    "prompt": "Under federal controlled substance schedules, Schedule II drugs:",
+    "options": [
+      {
+        "id": "a",
+        "text": "May be sold OTC without limits"
+      },
+      {
+        "id": "b",
+        "text": "Have no medical use in the U.S. (like Schedule I)"
+      },
+      {
+        "id": "c",
+        "text": "Have high abuse potential and generally cannot be refilled; require compliant prescriptions"
+      },
+      {
+        "id": "d",
+        "text": "Can be refilled five times in six months like many Schedule IV examples without restriction differences"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "C-II drugs have strict ordering/refill rules distinct from III–V; Schedule I has no accepted medical use federally.",
+    "distractorExplanations": {
+      "a": "C-II are not OTC.",
+      "b": "C-II have accepted use under strict control.",
+      "d": "Refill rules differ from III–V."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-federal-law-012",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "federal-law",
+    "prompt": "The Combat Methamphetamine Epidemic Act restricts retail sales of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "All topical hydrocortisone 0.5%"
+      },
+      {
+        "id": "b",
+        "text": "Insulin vials exclusively"
+      },
+      {
+        "id": "c",
+        "text": "Normal saline flushes only"
+      },
+      {
+        "id": "d",
+        "text": "Pseudoephedrine/ephedrine/phenylpropanolamine products with ID/log and quantity limits"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "CMEA targets precursor chemicals used to make methamphetamine.",
+    "distractorExplanations": {
+      "a": "Hydrocortisone is not the CMEA focus.",
+      "b": "Insulin has other rules.",
+      "c": "Saline is not a CMEA precursor control."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-federal-law-013",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "federal-law",
+    "prompt": "Which is a key purpose of the FDA regarding medications?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Overseeing safety/effectiveness of drugs/devices and regulating labeling/manufacturing standards"
+      },
+      {
+        "id": "b",
+        "text": "Setting all state Medicaid reimbursement rates exclusively"
+      },
+      {
+        "id": "c",
+        "text": "Licensing individual pharmacy technicians in every state"
+      },
+      {
+        "id": "d",
+        "text": "Operating community pharmacies for retail profit"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "FDA regulates drug products; state boards license personnel; CMS/states handle much reimbursement.",
+    "distractorExplanations": {
+      "b": "Reimbursement is not FDA's core role.",
+      "c": "Tech licensing is state-based.",
+      "d": "FDA is not a retail pharmacy chain."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-federal-law-014",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "federal-law",
+    "prompt": "HIPAA in the pharmacy setting requires staff to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Discuss therapies loudly using full names in the waiting area for convenience"
+      },
+      {
+        "id": "b",
+        "text": "Use/disclose PHI only for permitted purposes and safeguard records/conversations"
+      },
+      {
+        "id": "c",
+        "text": "Sell patient medication lists to marketers freely"
+      },
+      {
+        "id": "d",
+        "text": "Post prescription details on personal social media for education"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Minimum necessary and privacy safeguards apply in pharmacies.",
+    "distractorExplanations": {
+      "a": "Public discussion is improper.",
+      "c": "Sale of PHI is illegal.",
+      "d": "Social posts are breaches."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-federal-law-015",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "federal-law",
+    "prompt": "A valid prescription for a controlled substance generally must include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the drug name with no patient identity"
+      },
+      {
+        "id": "b",
+        "text": "A nickname for the prescriber without NPI/DEA when required"
+      },
+      {
+        "id": "c",
+        "text": "Patient name, drug name/strength, quantity, directions, date, and prescriber information/signature as required by law"
+      },
+      {
+        "id": "d",
+        "text": "Quantity written as 'as much as you want' without a numeric amount when a quantity is required"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Controlled Rx elements are tightly specified federally/state; incomplete Rxs cannot be filled as-is.",
+    "distractorExplanations": {
+      "a": "Patient identity is required.",
+      "b": "Prescriber identifiers matter for controlled Rx.",
+      "d": "Quantities must be clear."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-order-entry-001",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "order-entry",
+    "prompt": "DAW 1 typically indicates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Substitution not allowed by prescriber (dispense as written)"
+      },
+      {
+        "id": "b",
+        "text": "Patient requests brand when substitution allowed (often DAW 2)"
+      },
+      {
+        "id": "c",
+        "text": "Pharmacist selects brand arbitrarily without codes"
+      },
+      {
+        "id": "d",
+        "text": "OTC status"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "DAW codes communicate product selection intent for claims.",
+    "distractorExplanations": {
+      "b": "DAW 2 often patient requested brand.",
+      "c": "Codes are standardized.",
+      "d": "OTC ≠ DAW."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-order-entry-002",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "order-entry",
+    "prompt": "A sig of 'i po bid prn pain' means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inject two intramuscularly weekly"
+      },
+      {
+        "id": "b",
+        "text": "Take one by mouth twice daily as needed for pain"
+      },
+      {
+        "id": "c",
+        "text": "Instill in both eyes at bedtime only"
+      },
+      {
+        "id": "d",
+        "text": "Apply topically once monthly"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "i=1, po=by mouth, bid=twice daily, prn=as needed.",
+    "distractorExplanations": {
+      "a": "Not IM weekly.",
+      "c": "Eyes would be ou/od/os gtt.",
+      "d": "Topical monthly wrong."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-order-entry-003",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "order-entry",
+    "prompt": "When a prescription is missing the strength and multiple exist, the technician should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guess the most common strength"
+      },
+      {
+        "id": "b",
+        "text": "Pick the highest strength for faster effect"
+      },
+      {
+        "id": "c",
+        "text": "Clarify with the pharmacist/prescriber before processing"
+      },
+      {
+        "id": "d",
+        "text": "Omit strength on the label"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Ambiguities require clarification to prevent errors.",
+    "distractorExplanations": {
+      "a": "Guessing is dangerous.",
+      "b": "Highest strength risky.",
+      "d": "Labels need correct strength."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-order-entry-004",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "order-entry",
+    "prompt": "Tall Man lettering is used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Indicate controlled schedules"
+      },
+      {
+        "id": "b",
+        "text": "Show AWP pricing"
+      },
+      {
+        "id": "c",
+        "text": "Mark refrigeration only"
+      },
+      {
+        "id": "d",
+        "text": "Distinguish look-alike drug names (e.g., hydrALAZINE vs hydrOXYzine)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "ISMP/FDA tall man lettering reduces selection errors.",
+    "distractorExplanations": {
+      "a": "Schedules are C-II etc.",
+      "b": "Pricing separate.",
+      "c": "Fridge stickers differ."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-order-entry-005",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "order-entry",
+    "prompt": "e-Prescribing controlled substances (EPCS) requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Identity-proofed prescribers and certified EPCS systems meeting DEA requirements"
+      },
+      {
+        "id": "b",
+        "text": "Any email from an unknown address"
+      },
+      {
+        "id": "c",
+        "text": "Text messages without security"
+      },
+      {
+        "id": "d",
+        "text": "Verbal only forever for all C-II"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "EPCS has specific security controls; verbal C-II limited to emergencies with follow-up.",
+    "distractorExplanations": {
+      "b": "Insecure email insufficient.",
+      "c": "Unsecured texts insufficient.",
+      "d": "Emergency verbal has strict limits."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-order-entry-006",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "order-entry",
+    "prompt": "Days' supply calculation requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the patient's age"
+      },
+      {
+        "id": "b",
+        "text": "Quantity dispensed and directions (dose × frequency) to compute duration"
+      },
+      {
+        "id": "c",
+        "text": "Only the color of tablets"
+      },
+      {
+        "id": "d",
+        "text": "Only the NPI"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Insurance adjudication often rejects wrong days' supply.",
+    "distractorExplanations": {
+      "a": "Age alone insufficient.",
+      "c": "Color irrelevant.",
+      "d": "NPI is provider ID."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-order-entry-007",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "order-entry",
+    "prompt": "A therapeutic duplication alert during DUR means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The patient is allergic to inactive dye only always"
+      },
+      {
+        "id": "b",
+        "text": "The drug is OTC"
+      },
+      {
+        "id": "c",
+        "text": "Two drugs with the same therapeutic effect/class may be overlapping inappropriately"
+      },
+      {
+        "id": "d",
+        "text": "The SIG is perfect"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Pharmacists evaluate duplication alerts (e.g., two NSAIDs).",
+    "distractorExplanations": {
+      "a": "Allergy is different DUR message.",
+      "b": "OTC status separate.",
+      "d": "SIG issues differ."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-order-entry-008",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "order-entry",
+    "prompt": "NDC numbers identify:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Patient MRN only"
+      },
+      {
+        "id": "b",
+        "text": "DEA registrant only"
+      },
+      {
+        "id": "c",
+        "text": "ICD-10 diagnosis only"
+      },
+      {
+        "id": "d",
+        "text": "Labeler, product, and package size (10–11 digit formats)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "NDCs are central to product selection and billing.",
+    "distractorExplanations": {
+      "a": "MRN is patient.",
+      "b": "DEA is registrant.",
+      "c": "ICD is diagnosis."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-order-entry-009",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "order-entry",
+    "prompt": "Prior authorization (PA) is needed when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A payer requires approval before covering a medication under plan rules"
+      },
+      {
+        "id": "b",
+        "text": "The drug is always OTC candy"
+      },
+      {
+        "id": "c",
+        "text": "The pharmacist wants a lunch break"
+      },
+      {
+        "id": "d",
+        "text": "NDC is valid and preferred with open coverage"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "PA workflows involve clinical criteria submissions; technicians assist with process under pharmacist oversight.",
+    "distractorExplanations": {
+      "b": "OTC candy not PA drugs.",
+      "c": "Breaks unrelated.",
+      "d": "Preferred covered drugs may not need PA."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-order-entry-010",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "order-entry",
+    "prompt": "Auxiliary labels should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contradict the prescription directions intentionally"
+      },
+      {
+        "id": "b",
+        "text": "Reinforce key warnings (e.g., take with food, may cause drowsiness) without replacing counseling"
+      },
+      {
+        "id": "c",
+        "text": "Replace the need for a prescription label"
+      },
+      {
+        "id": "d",
+        "text": "List unrelated diagnoses"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Aux labels support safe use; pharmacist counseling remains important.",
+    "distractorExplanations": {
+      "a": "Never contradict Rx.",
+      "c": "Primary label still required.",
+      "d": "Diagnoses on aux labels inappropriate."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-order-entry-011",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "order-entry",
+    "prompt": "The sig 'i tab po bid prn pain' means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inject two tablets weekly"
+      },
+      {
+        "id": "b",
+        "text": "Take one tablet in each eye at bedtime only"
+      },
+      {
+        "id": "c",
+        "text": "Take one tablet by mouth twice daily as needed for pain"
+      },
+      {
+        "id": "d",
+        "text": "Apply topically four times daily"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "po=by mouth, bid=twice daily, prn=as needed.",
+    "distractorExplanations": {
+      "a": "Not an injection sig.",
+      "b": "Eye sigs use ou/od/os language.",
+      "d": "Topical would specify application site."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-order-entry-012",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "order-entry",
+    "prompt": "A prescription is written for a medication with a serious allergy listed in the profile. The technician should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Delete the allergy to clear the alert"
+      },
+      {
+        "id": "b",
+        "text": "Dispense a full course anyway to avoid delay without notice"
+      },
+      {
+        "id": "c",
+        "text": "Tell the patient allergies do not matter for oral drugs"
+      },
+      {
+        "id": "d",
+        "text": "Alert the pharmacist before dispensing—do not override silently"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Allergy alerts require pharmacist clinical judgment.",
+    "distractorExplanations": {
+      "a": "Deleting allergies falsifies the record.",
+      "b": "Silent overrides risk harm.",
+      "c": "Oral drugs can cause allergies."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-order-entry-013",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "order-entry",
+    "prompt": "Which is the best practice when the directions are unclear on a new Rx?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Clarify with the pharmacist/prescriber before dispensing"
+      },
+      {
+        "id": "b",
+        "text": "Guess the most common directions for that drug"
+      },
+      {
+        "id": "c",
+        "text": "Leave the label blank"
+      },
+      {
+        "id": "d",
+        "text": "Use another patient's directions"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Ambiguous sigs are a top error source—clarify.",
+    "distractorExplanations": {
+      "b": "Guessing causes wrong use.",
+      "c": "Blank labels are unacceptable.",
+      "d": "Wrong-patient directions are dangerous."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-order-entry-014",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "order-entry",
+    "prompt": "DAW codes communicate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the patient's favorite color"
+      },
+      {
+        "id": "b",
+        "text": "Dispense-as-written / product selection intents affecting generic substitution"
+      },
+      {
+        "id": "c",
+        "text": "DEA schedule automatically"
+      },
+      {
+        "id": "d",
+        "text": "Beyond-use dating for compounds only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "DAW indicates whether substitution is allowed/required for billing/product choice.",
+    "distractorExplanations": {
+      "a": "Color is irrelevant.",
+      "c": "Schedules are separate.",
+      "d": "BUD is compounding stability."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-order-entry-015",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "order-entry",
+    "prompt": "When entering a pediatric liquid dose, a critical safety step is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assume mg and mL are always identical numbers"
+      },
+      {
+        "id": "b",
+        "text": "Round up aggressively to the next bottle size without checking dose"
+      },
+      {
+        "id": "c",
+        "text": "Verify weight-based calculations and units (mg vs mL) with the pharmacist as required"
+      },
+      {
+        "id": "d",
+        "text": "Ignore decimal points because children tolerate errors"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Unit mix-ups and decimal errors are major pediatric risks.",
+    "distractorExplanations": {
+      "a": "mg ≠ mL.",
+      "b": "Rounding without clinical check is unsafe.",
+      "d": "Children are more vulnerable to dosing errors."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-dispensing-practice-001",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "dispensing-practice",
+    "prompt": "The 'five rights' of medication administration/dispensing emphasize right:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Patient, drug, dose, route, and time (plus documentation/education concepts)"
+      },
+      {
+        "id": "b",
+        "text": "Price, parking, posters, pens, and phones"
+      },
+      {
+        "id": "c",
+        "text": "Color, shape, taste, smell, and sound only"
+      },
+      {
+        "id": "d",
+        "text": "Only the right shelf"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Verification prevents wrong-patient/wrong-drug errors.",
+    "distractorExplanations": {
+      "b": "Business items irrelevant.",
+      "c": "Physical descriptors aid checks but aren't the five rights.",
+      "d": "Shelf location insufficient."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-dispensing-practice-002",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "dispensing-practice",
+    "prompt": "Beyond-use dating for a nonsterile compounded aqueous oral liquid (USP general concepts) is often:",
+    "options": [
+      {
+        "id": "a",
+        "text": "3 years always"
+      },
+      {
+        "id": "b",
+        "text": "14 days refrigerated when otherwise stable/appropriate (classic teaching default unless literature differs)"
+      },
+      {
+        "id": "c",
+        "text": "Indefinite at room temp always"
+      },
+      {
+        "id": "d",
+        "text": "1 hour always like sterile immediate use only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "USP <795> BUDs depend on water activity/type; know common exam defaults and that manufacturer/stability data can modify.",
+    "distractorExplanations": {
+      "a": "3 years is commercial packaged often.",
+      "c": "Not indefinite.",
+      "d": "1 hour is different sterile concept."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-dispensing-practice-003",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "dispensing-practice",
+    "prompt": "Sterile compounding PPE typically includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Street clothes only inside the PEC"
+      },
+      {
+        "id": "b",
+        "text": "Jewelry encouraged on hands"
+      },
+      {
+        "id": "c",
+        "text": "Hair cover, face mask, gown, sterile gloves (and eye cover as required) with proper garbing order"
+      },
+      {
+        "id": "d",
+        "text": "No hand hygiene before gloves"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "USP <797> garbing and aseptic technique protect CSPs from contamination.",
+    "distractorExplanations": {
+      "a": "Street clothes shed particles.",
+      "b": "Jewelry sheds/tears gloves.",
+      "d": "Hand hygiene required."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-dispensing-practice-004",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "dispensing-practice",
+    "prompt": "A laminar airflow workbench's critical principle is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Blocking HEPA airflow with large objects permanently is ideal"
+      },
+      {
+        "id": "b",
+        "text": "Talking across open sterile vials is encouraged"
+      },
+      {
+        "id": "c",
+        "text": "Cleaning is optional weekly only"
+      },
+      {
+        "id": "d",
+        "text": "First air (uninterrupted HEPA-filtered air) must contact critical sites"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Don't obstruct first air; clean with appropriate agents (often sterile IPA) frequently.",
+    "distractorExplanations": {
+      "a": "Obstruction contaminates.",
+      "b": "Talking sheds particles.",
+      "c": "Cleaning is frequent/required."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-dispensing-practice-005",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "dispensing-practice",
+    "prompt": "Unit-dose packaging in hospitals helps:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reduce errors and track doses to administration time"
+      },
+      {
+        "id": "b",
+        "text": "Eliminate the need for pharmacist checks always"
+      },
+      {
+        "id": "c",
+        "text": "Allow unlabeled meds"
+      },
+      {
+        "id": "d",
+        "text": "Mix all patients' meds in one cup routinely"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Unit dose supports safety; verification still required.",
+    "distractorExplanations": {
+      "b": "Checks still needed.",
+      "c": "Labels required.",
+      "d": "Multi-patient mixing dangerous."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-dispensing-practice-006",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "dispensing-practice",
+    "prompt": "When counting controlled substances on a tray, best practice includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Estimating quantities visually only for C-II"
+      },
+      {
+        "id": "b",
+        "text": "Double-counting and documenting perpetual inventory per policy"
+      },
+      {
+        "id": "c",
+        "text": "Leaving stock bottles unlocked in public waiting areas"
+      },
+      {
+        "id": "d",
+        "text": "Sharing biometric safe access casually"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "C-II perpetual inventory and secure storage are critical.",
+    "distractorExplanations": {
+      "a": "Estimates invite diversion errors.",
+      "c": "Public access improper.",
+      "d": "Access control required."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-dispensing-practice-007",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "dispensing-practice",
+    "prompt": "Eye drops should be labeled/administered with care to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Touch the tip firmly to the cornea each time as required"
+      },
+      {
+        "id": "b",
+        "text": "Share bottles between unrelated patients routinely"
+      },
+      {
+        "id": "c",
+        "text": "Avoid contamination of the dropper tip and follow which eye (OD/OS/OU)"
+      },
+      {
+        "id": "d",
+        "text": "Store frozen solid always"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Aseptic handling and correct laterality matter.",
+    "distractorExplanations": {
+      "a": "Tip contact contaminates/injures.",
+      "b": "Sharing risks infection.",
+      "d": "Freezing often damages."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-dispensing-practice-008",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "dispensing-practice",
+    "prompt": "If a dispensing error is discovered after the patient left, the technician should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hide the error"
+      },
+      {
+        "id": "b",
+        "text": "Blame the patient"
+      },
+      {
+        "id": "c",
+        "text": "Wait until annual inventory"
+      },
+      {
+        "id": "d",
+        "text": "Notify the pharmacist immediately so patient can be contacted and error corrected per policy"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Rapid disclosure/mitigation protects patients and is an ethical/legal duty.",
+    "distractorExplanations": {
+      "a": "Hiding worsens harm/liability.",
+      "b": "Patient blame inappropriate.",
+      "c": "Delay dangerous."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-dispensing-practice-009",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "dispensing-practice",
+    "prompt": "Refrigerated medications generally should be stored at approximately:",
+    "options": [
+      {
+        "id": "a",
+        "text": "2–8°C (36–46°F) unless the label specifies otherwise"
+      },
+      {
+        "id": "b",
+        "text": "−20°C freezer for all refrigerated labels"
+      },
+      {
+        "id": "c",
+        "text": "37°C incubator"
+      },
+      {
+        "id": "d",
+        "text": "Room temperature always if fridge is full"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Monitor fridge logs; do not use food fridges improperly; vaccines have strict rules.",
+    "distractorExplanations": {
+      "b": "Freezer is colder than refrigerated.",
+      "c": "Body temp too warm.",
+      "d": "Don't leave fridge items at room temp contrary to label."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-dispensing-practice-010",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "dispensing-practice",
+    "prompt": "Hazardous drug handling (USP <800> concepts) includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Crushing chemo tablets unprotected on the retail counter"
+      },
+      {
+        "id": "b",
+        "text": "Using appropriate PPE and containment when compounding/handling HDs"
+      },
+      {
+        "id": "c",
+        "text": "Pregnant staff handling HDs without protections when policies restrict"
+      },
+      {
+        "id": "d",
+        "text": "Disposing HD waste in regular paper recycle"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "NIOSH HD lists and <800> protect workers/environment.",
+    "distractorExplanations": {
+      "a": "Unprotected crushing creates exposure.",
+      "c": "Pregnancy precautions exist.",
+      "d": "HD waste has special streams."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-dispensing-practice-011",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "dispensing-practice",
+    "prompt": "The final check before dispensing should verify:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the bag color"
+      },
+      {
+        "id": "b",
+        "text": "That the cheapest drug was substituted without reviewing alerts"
+      },
+      {
+        "id": "c",
+        "text": "Right patient, drug, strength, quantity, directions, and appropriate packaging/labels"
+      },
+      {
+        "id": "d",
+        "text": "That pills were touched with bare hands after floor contact"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The five/seven rights style check prevents dispensing errors.",
+    "distractorExplanations": {
+      "a": "Bag color is irrelevant.",
+      "b": "Alert review matters.",
+      "d": "Contaminated pills must not be dispensed."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-dispensing-practice-012",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "dispensing-practice",
+    "prompt": "Which statement about counting trays/spatulas is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Never clean trays because residue improves adherence"
+      },
+      {
+        "id": "b",
+        "text": "Use the same tray immediately after hazardous powders without decontamination"
+      },
+      {
+        "id": "c",
+        "text": "Lick the spatula to remove powder"
+      },
+      {
+        "id": "d",
+        "text": "Clean them to prevent cross-contamination, especially after allergens like penicillin/sulfa per policy"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Tray contamination can cause allergic exposures and mix-ups.",
+    "distractorExplanations": {
+      "a": "Residue is a contamination risk.",
+      "b": "Hazardous residue needs proper cleaning.",
+      "c": "Licking is unsanitary."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-dispensing-practice-013",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "dispensing-practice",
+    "prompt": "Unit-dose packaging in hospitals is intended to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Provide individually labeled doses to reduce errors and support tracking"
+      },
+      {
+        "id": "b",
+        "text": "Remove all labeling to speed nurses"
+      },
+      {
+        "id": "c",
+        "text": "Allow sharing leftover doses between patients freely"
+      },
+      {
+        "id": "d",
+        "text": "Eliminate the need for pharmacist oversight"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Unit dose improves safety and accountability.",
+    "distractorExplanations": {
+      "b": "Labels are essential.",
+      "c": "Sharing doses is improper.",
+      "d": "Pharmacy oversight remains."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-dispensing-practice-014",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "dispensing-practice",
+    "prompt": "For nonsterile compounding, beyond-use dating should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Always set to 10 years for creams"
+      },
+      {
+        "id": "b",
+        "text": "Assigned using USP guidance and formula documentation—not arbitrary distant dates"
+      },
+      {
+        "id": "c",
+        "text": "Ignored if the product looks fine"
+      },
+      {
+        "id": "d",
+        "text": "Copied from an unrelated manufacturer's bottle without assessment"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "BUD depends on formulation/water content/storage per USP standards and policies.",
+    "distractorExplanations": {
+      "a": "Decade-long BUD is inappropriate.",
+      "c": "Appearance alone is insufficient.",
+      "d": "Wrong BUD sources cause instability risks."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "nha-excpt-readiness-check-dispensing-practice-015",
+    "examSlug": "nha-excpt-readiness-check",
+    "topicId": "dispensing-practice",
+    "prompt": "When reconstituting an antibiotic suspension, the technician should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Add tap water estimated by eye without measuring"
+      },
+      {
+        "id": "b",
+        "text": "Omit the shake-well auxiliary label always"
+      },
+      {
+        "id": "c",
+        "text": "Use the correct diluent volume, mix thoroughly, and label with BUD/storage/shake well as required"
+      },
+      {
+        "id": "d",
+        "text": "Store all reconstitutions in the freezer unless told otherwise"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Accurate reconstitution and labeling ensure dose accuracy and stability.",
+    "distractorExplanations": {
+      "a": "Unmeasured diluent causes wrong concentration.",
+      "b": "Shake-well is often required.",
+      "d": "Freezing can destroy suspensions."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  }
+]

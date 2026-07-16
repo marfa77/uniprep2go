@@ -1,4 +1,4 @@
-import type { CatalogAvailableDeck } from "./decks";
+import type { Deck } from "./decks";
 import { positioningOverrides } from "./deck-money-page-content";
 import { getDeckLinkedMock } from "./deck-seo";
 
@@ -34,20 +34,20 @@ const DEFAULT_MEGA: DeckPositioningAlternative = {
   ],
 };
 
-function examCycleLabel(deck: CatalogAvailableDeck): string {
+function examCycleLabel(deck: Deck): string {
   const year = deck.facts.examYear;
   if (/2026/i.test(year)) return "2026";
   if (/current/i.test(year)) return "current";
   return year.replace(/ preparation cycle$/i, "").trim();
 }
 
-function contentUnit(deck: CatalogAvailableDeck): string {
+function contentUnit(deck: Deck): string {
   if (deck.format === "PDF") return "pages and practice items";
   if (deck.format === "App") return "study modules";
   return "flashcards";
 }
 
-function buildDefaultSummary(deck: CatalogAvailableDeck, cardLabel: string): string {
+function buildDefaultSummary(deck: Deck, cardLabel: string): string {
   const mock = getDeckLinkedMock(deck.slug);
   const mockNote = mock
     ? ` Start with the free ${mock.questionCount}-question ${deck.shortName} practice test, then drill weak rows from the table.`
@@ -58,7 +58,7 @@ function buildDefaultSummary(deck: CatalogAvailableDeck, cardLabel: string): str
 
 /** Comparison block for money pages — generic alternative categories only. */
 export function buildDeckPositioning(
-  deck: CatalogAvailableDeck,
+  deck: Deck,
   overrides?: Partial<Pick<DeckPositioning, "ourEdge" | "summaryProse">>,
 ): DeckPositioning {
   const mock = getDeckLinkedMock(deck.slug);
@@ -81,6 +81,6 @@ export function buildDeckPositioning(
   };
 }
 
-export function getDeckPositioning(deck: CatalogAvailableDeck): DeckPositioning {
+export function getDeckPositioning(deck: Deck): DeckPositioning {
   return buildDeckPositioning(deck, positioningOverrides[deck.slug]);
 }

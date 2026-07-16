@@ -1,0 +1,1982 @@
+[
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-001",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "ICD-10-CM codes are used primarily to report:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Diagnoses and symptoms/reasons for the encounter"
+      },
+      {
+        "id": "b",
+        "text": "Only CPT surgical procedures"
+      },
+      {
+        "id": "c",
+        "text": "Only anesthesia time units"
+      },
+      {
+        "id": "d",
+        "text": "Place of service exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ICD-10-CM classifies diseases/symptoms; CPT/HCPCS report services/procedures/supplies.",
+    "distractorExplanations": {
+      "b": "CPT is procedures/services.",
+      "c": "Anesthesia uses CPT + time/modifiers concepts.",
+      "d": "POS is a claim field, not diagnosis coding."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-002",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "When a definitive diagnosis is established after workup, outpatient coding generally reports:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only 'rule out cancer' forever"
+      },
+      {
+        "id": "b",
+        "text": "The confirmed diagnosis rather than the previously suspected rule-out alone when confirmed"
+      },
+      {
+        "id": "c",
+        "text": "Signs/symptoms instead of confirmed DX always"
+      },
+      {
+        "id": "d",
+        "text": "No diagnosis codes"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Outpatient rules differ from inpatient uncertain diagnosis rules; code confirmed conditions to the highest specificity supported.",
+    "distractorExplanations": {
+      "a": "Do not code uncertain outpatient diagnoses as if confirmed.",
+      "c": "Symptoms used when no confirmed DX.",
+      "d": "Claims need diagnosis codes."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-003",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "CPT Category I codes generally describe:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Emerging technologies only as Category III"
+      },
+      {
+        "id": "b",
+        "text": "Temporary national codes only as HCPCS G/Q always"
+      },
+      {
+        "id": "c",
+        "text": "Established medical services and procedures widely performed"
+      },
+      {
+        "id": "d",
+        "text": "Dental CDT exclusively"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Category I are main CPT services; Category III are emerging; HCPCS Level II covers many supplies/drugs/services.",
+    "distractorExplanations": {
+      "a": "Cat III are temporary emerging.",
+      "b": "HCPCS II is separate system.",
+      "d": "CDT is dental."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-004",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "NEC in ICD-10-CM means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Not enough caffeine"
+      },
+      {
+        "id": "b",
+        "text": "Never ever code"
+      },
+      {
+        "id": "c",
+        "text": "Non-exempt condition always"
+      },
+      {
+        "id": "d",
+        "text": "Not elsewhere classified — other specified when a more precise code is unavailable"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "NEC/NOS conventions guide residual code selection when documentation specificity is limited or classification lacks detail.",
+    "distractorExplanations": {
+      "a": "Silly expansion.",
+      "b": "Codes are assigned when supported.",
+      "c": "NEC is a classification convention."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-005",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "A combination code is used when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A single code captures a condition and its manifestation/associated condition as directed"
+      },
+      {
+        "id": "b",
+        "text": "Two unrelated visits are merged illegally"
+      },
+      {
+        "id": "c",
+        "text": "Modifiers replace all diagnosis coding"
+      },
+      {
+        "id": "d",
+        "text": "Place of service is 22"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Guidelines instruct use of combination codes when available rather than multiple codes unnecessarily.",
+    "distractorExplanations": {
+      "b": "Visits aren't combined via DX combo rules that way.",
+      "c": "Modifiers adjust services.",
+      "d": "POS 22 is outpatient hospital."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-006",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "Sequencing the principal/first-listed diagnosis should reflect:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The code that pays the most always regardless of documentation"
+      },
+      {
+        "id": "b",
+        "text": "The main reason for the encounter/admission per guidelines"
+      },
+      {
+        "id": "c",
+        "text": "Alphabetical first code in the book"
+      },
+      {
+        "id": "d",
+        "text": "The patient's favorite diagnosis"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Code sequencing follows official guidelines and documentation—not reimbursement maximization schemes.",
+    "distractorExplanations": {
+      "a": "Upcoding/sequencing for payment only is noncompliant.",
+      "c": "Alpha order isn't sequencing.",
+      "d": "Patient preference isn't coding rule."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-007",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "CPT guidelines and notes at section/heading levels are:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Optional suggestions only"
+      },
+      {
+        "id": "b",
+        "text": "Relevant only to ICD-10-PCS"
+      },
+      {
+        "id": "c",
+        "text": "Instructional and must be followed for correct coding"
+      },
+      {
+        "id": "d",
+        "text": "Used solely for dental claims"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Parenthetical notes, includes/excludes-type instructions, and section guidelines control code use.",
+    "distractorExplanations": {
+      "a": "They are not optional.",
+      "b": "PCS is inpatient procedures.",
+      "d": "Dental uses CDT primarily."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-008",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "External cause codes (V00–Y99 concepts) are used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Replace all diagnosis codes on every claim"
+      },
+      {
+        "id": "b",
+        "text": "Report only E/M services"
+      },
+      {
+        "id": "c",
+        "text": "Indicate POS"
+      },
+      {
+        "id": "d",
+        "text": "Provide information about how an injury/poisoning occurred, when required/assigned"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "External causes supplement injury coding; they do not replace the injury diagnosis.",
+    "distractorExplanations": {
+      "a": "They supplement, not replace.",
+      "b": "E/M is CPT.",
+      "c": "POS is separate."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-009",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "Laterality in ICD-10-CM means coding must capture:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Left, right, or bilateral when the classification provides those options and documentation supports them"
+      },
+      {
+        "id": "b",
+        "text": "Only unspecified always if paid better"
+      },
+      {
+        "id": "c",
+        "text": "No side information ever"
+      },
+      {
+        "id": "d",
+        "text": "Provider specialty only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Choose the most specific laterality code supported; unspecified if not documented.",
+    "distractorExplanations": {
+      "b": "Don't pick unspecified to manipulate payment.",
+      "c": "Laterality exists in many codes.",
+      "d": "Specialty isn't laterality."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-010",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "What is the purpose of the Alphabetic Index and Tabular List process in ICD-10-CM?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use only the Index and never the Tabular"
+      },
+      {
+        "id": "b",
+        "text": "Locate a candidate code in the Index, then verify and complete coding in the Tabular List"
+      },
+      {
+        "id": "c",
+        "text": "Use only Google without books/guidelines"
+      },
+      {
+        "id": "d",
+        "text": "Assign CPT from the ICD Index"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Never code from the Index alone; Tabular instructions control final assignment.",
+    "distractorExplanations": {
+      "a": "Tabular verification is mandatory.",
+      "c": "Official classification required.",
+      "d": "ICD Index is not for CPT."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-011",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "When a definitive diagnosis has not been established for an outpatient encounter, ICD-10-CM coding should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Always use a Z00 code only"
+      },
+      {
+        "id": "b",
+        "text": "Code signs, symptoms, or abnormal findings that are documented as the reason for the encounter"
+      },
+      {
+        "id": "c",
+        "text": "Omit diagnosis codes entirely"
+      },
+      {
+        "id": "d",
+        "text": "Use inpatient principal diagnosis rules exclusively"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Outpatient guidelines allow coding of documented signs/symptoms when no confirmed diagnosis exists.",
+    "distractorExplanations": {
+      "a": "Incorrect: Always use a Z00 code only",
+      "c": "Incorrect: Omit diagnosis codes entirely",
+      "d": "Incorrect: Use inpatient principal diagnosis rules exclusively"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-012",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "Which code set is used primarily to report medical procedures and services by physicians?",
+    "options": [
+      {
+        "id": "a",
+        "text": "ICD-10-CM only"
+      },
+      {
+        "id": "b",
+        "text": "CPT (HCPCS Level I)"
+      },
+      {
+        "id": "c",
+        "text": "DSM-5 only"
+      },
+      {
+        "id": "d",
+        "text": "NDC drug package codes only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "CPT codes describe procedures/services; ICD-10-CM describes diagnoses.",
+    "distractorExplanations": {
+      "a": "Incorrect: ICD-10-CM only",
+      "c": "Incorrect: DSM-5 only",
+      "d": "Incorrect: NDC drug package codes only"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-013",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "Excludes1 notes in ICD-10-CM generally mean:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The codes may always be reported together"
+      },
+      {
+        "id": "b",
+        "text": "The conditions are mutually exclusive and should not be coded together"
+      },
+      {
+        "id": "c",
+        "text": "The note can be ignored if the coder prefers"
+      },
+      {
+        "id": "d",
+        "text": "Only inpatient coders read Excludes notes"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Excludes1 indicates the excluded condition should not be coded with the code (true exclude).",
+    "distractorExplanations": {
+      "a": "Incorrect: The codes may always be reported together",
+      "c": "Incorrect: The note can be ignored if the coder prefers",
+      "d": "Incorrect: Only inpatient coders read Excludes notes"
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-014",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "HCPCS Level II codes are primarily used for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inpatient DRG assignment only"
+      },
+      {
+        "id": "b",
+        "text": "Supplies, drugs, durable medical equipment, and certain services not in CPT"
+      },
+      {
+        "id": "c",
+        "text": "Replacing all ICD-10-PCS codes"
+      },
+      {
+        "id": "d",
+        "text": "Dental tooth numbering only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Level II HCPCS covers products/services outside CPT (e.g., DME, injectables).",
+    "distractorExplanations": {
+      "a": "Incorrect: Inpatient DRG assignment only",
+      "c": "Incorrect: Replacing all ICD-10-PCS codes",
+      "d": "Incorrect: Dental tooth numbering only"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-015",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "Place of service codes on professional claims indicate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The patient's home ZIP forever"
+      },
+      {
+        "id": "b",
+        "text": "The setting where the service was rendered"
+      },
+      {
+        "id": "c",
+        "text": "The diagnosis related group"
+      },
+      {
+        "id": "d",
+        "text": "The anesthesia base units"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "POS codes identify the service location (office, inpatient hospital, etc.).",
+    "distractorExplanations": {
+      "a": "Incorrect: The patient's home ZIP forever",
+      "c": "Incorrect: The diagnosis related group",
+      "d": "Incorrect: The anesthesia base units"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-001",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "Office/outpatient E/M level selection (current AMA framework) is based primarily on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Medical decision making or total time on the date of the encounter, per guidelines"
+      },
+      {
+        "id": "b",
+        "text": "Only the number of bullet exam elements from 1995 forever exclusively"
+      },
+      {
+        "id": "c",
+        "text": "Patient age only"
+      },
+      {
+        "id": "d",
+        "text": "Whether the patient brought cookies"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Since 2021 office E/M revisions, MDM or time drives levels; older exam-bullet counting is not the current office paradigm.",
+    "distractorExplanations": {
+      "b": "1995/97 exam scoring is largely superseded for office/outpatient.",
+      "c": "Age alone doesn't set level.",
+      "d": "Cookies irrelevant."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-002",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "New patient vs established patient for E/M depends on whether the patient has received face-to-face professional services from the same group/specialty within:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The past three days only"
+      },
+      {
+        "id": "b",
+        "text": "The past three years"
+      },
+      {
+        "id": "c",
+        "text": "Ten years always"
+      },
+      {
+        "id": "d",
+        "text": "Never—everyone is always new"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "CPT defines established as seen by same specialty/group within 3 years (with nuances).",
+    "distractorExplanations": {
+      "a": "Three days is wrong.",
+      "c": "Ten years is wrong.",
+      "d": "Distinction exists."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-003",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "Medical Decision Making complexity considers:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the font size of the note"
+      },
+      {
+        "id": "b",
+        "text": "Only how long the patient waited"
+      },
+      {
+        "id": "c",
+        "text": "Number/complexity of problems, data reviewed/analyzed, and risk of management"
+      },
+      {
+        "id": "d",
+        "text": "Whether the waiting room was full"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "MDM elements are problems, data, and risk under AMA E/M methodology.",
+    "distractorExplanations": {
+      "a": "Formatting irrelevant.",
+      "b": "Wait time isn't MDM.",
+      "d": "Census isn't MDM."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-004",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "Time-based office E/M coding includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the minute the provider entered the room"
+      },
+      {
+        "id": "b",
+        "text": "Staff coffee breaks"
+      },
+      {
+        "id": "c",
+        "text": "Time spent by the patient driving"
+      },
+      {
+        "id": "d",
+        "text": "Total time on the date of the encounter spent on the patient's care (including non-face-to-face), per CPT rules"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Counseling/coordination and other activities on that date may count when using time, per definitions.",
+    "distractorExplanations": {
+      "a": "Door-entry instant is incomplete.",
+      "b": "Breaks aren't patient care time.",
+      "c": "Patient drive time doesn't count."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-005",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "A preventive medicine E/M visit is distinct from a problem-oriented visit because it:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Focuses on routine preventive evaluation appropriate to age/risk rather than a chief complaint problem management primarily"
+      },
+      {
+        "id": "b",
+        "text": "Always uses critical care codes"
+      },
+      {
+        "id": "c",
+        "text": "Is reported with only anesthesia codes"
+      },
+      {
+        "id": "d",
+        "text": "Never requires a diagnosis code"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Preventive visits use preventive CPT codes; significant separately identifiable problem E/M may be reported with modifier 25 when supported.",
+    "distractorExplanations": {
+      "b": "Critical care is different.",
+      "c": "Anesthesia is separate.",
+      "d": "Diagnosis/Z codes still used."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-006",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "Modifier 25 indicates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bilateral procedure"
+      },
+      {
+        "id": "b",
+        "text": "Significant, separately identifiable E/M service by the same physician on the same day as a procedure"
+      },
+      {
+        "id": "c",
+        "text": "Reduced services"
+      },
+      {
+        "id": "d",
+        "text": "Repeat procedure by another physician"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Modifier 25 appends to the E/M, not the procedure, when documentation supports separateness.",
+    "distractorExplanations": {
+      "a": "50 is bilateral.",
+      "c": "52 is reduced.",
+      "d": "77 is repeat by another."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-007",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "Critical care coding requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Any brief hallway chat"
+      },
+      {
+        "id": "b",
+        "text": "Only suture removal"
+      },
+      {
+        "id": "c",
+        "text": "High-complexity decision making for critically ill/injured patients with specific time thresholds and organ system failure risk"
+      },
+      {
+        "id": "d",
+        "text": "Well-child care"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Critical care is a defined CPT service with time and clinical criteria—not ordinary E/M.",
+    "distractorExplanations": {
+      "a": "Hallway chat isn't critical care.",
+      "b": "Suture removal is minor.",
+      "d": "Well-child is preventive."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-008",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "Consultation codes vs transfer of care: a consultation conceptually involves:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Always taking over complete care without request"
+      },
+      {
+        "id": "b",
+        "text": "Only emergency intubation"
+      },
+      {
+        "id": "c",
+        "text": "Only nursing facility discharge"
+      },
+      {
+        "id": "d",
+        "text": "Advice/opinion requested by another provider, with report back (payer policies vary widely on consult codes)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Many payers (notably Medicare historically) limit consult coding; understand request/render/report concepts and current payer rules.",
+    "distractorExplanations": {
+      "a": "Transfer of care differs from consult.",
+      "b": "Intubation is procedure.",
+      "c": "NF discharge has its own E/M."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-009",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "Place of service code on a claim identifies:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Where the service was rendered (e.g., office, outpatient hospital, ED)"
+      },
+      {
+        "id": "b",
+        "text": "The diagnosis family only"
+      },
+      {
+        "id": "c",
+        "text": "The modifier list"
+      },
+      {
+        "id": "d",
+        "text": "NPI taxonomy exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "POS affects payment and must match the service setting.",
+    "distractorExplanations": {
+      "b": "DX are separate fields.",
+      "c": "Modifiers are separate.",
+      "d": "Taxonomy is provider classification."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-010",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "When billing an E/M with a minor procedure the same day, documentation should show:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No history or MDM for the E/M portion ever"
+      },
+      {
+        "id": "b",
+        "text": "The E/M is significant and separately identifiable beyond the usual pre/post work of the procedure if both are billed"
+      },
+      {
+        "id": "c",
+        "text": "That the procedure was not performed"
+      },
+      {
+        "id": "d",
+        "text": "Only a cloned note from another patient"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Payers scrutinize same-day E/M + procedure; modifier 25 and solid documentation are key.",
+    "distractorExplanations": {
+      "a": "E/M needs support.",
+      "c": "Procedure must have been done if billed.",
+      "d": "Cloning wrong-patient notes is fraud risk."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-011",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "For office/outpatient E/M visits, prolonged service reporting (when applicable) generally requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No time documentation"
+      },
+      {
+        "id": "b",
+        "text": "Meeting time thresholds beyond the primary E/M level when using time-based prolonged codes"
+      },
+      {
+        "id": "c",
+        "text": "Always coding critical care instead"
+      },
+      {
+        "id": "d",
+        "text": "Using only the lowest E/M level"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Prolonged services depend on documented total time beyond the coded E/M threshold.",
+    "distractorExplanations": {
+      "a": "Incorrect: No time documentation",
+      "c": "Incorrect: Always coding critical care instead",
+      "d": "Incorrect: Using only the lowest E/M level"
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-012",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "Which element is part of medical decision making (MDM) under current office E/M guidelines?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Number of family members in the waiting room"
+      },
+      {
+        "id": "b",
+        "text": "Number and complexity of problems addressed"
+      },
+      {
+        "id": "c",
+        "text": "Color of the clinic walls"
+      },
+      {
+        "id": "d",
+        "text": "Whether the patient arrived early"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "MDM includes problems addressed, data, and risk of management.",
+    "distractorExplanations": {
+      "a": "Incorrect: Number of family members in the waiting room",
+      "c": "Incorrect: Color of the clinic walls",
+      "d": "Incorrect: Whether the patient arrived early"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-013",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "A consultation CPT service (when payer recognizes consults) typically requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No request from another clinician"
+      },
+      {
+        "id": "b",
+        "text": "A request for opinion/advice, rendering of services, and a written report back to the requesting source"
+      },
+      {
+        "id": "c",
+        "text": "Only a nursing phone triage note"
+      },
+      {
+        "id": "d",
+        "text": "That the consultant become the primary care physician automatically"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Classic consult requirements: request, render, report (payer policies vary).",
+    "distractorExplanations": {
+      "a": "Incorrect: No request from another clinician",
+      "c": "Incorrect: Only a nursing phone triage note",
+      "d": "Incorrect: That the consultant become the primary care physician automatically"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-014",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "Emergency department E/M codes are selected based primarily on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Whether the patient has insurance"
+      },
+      {
+        "id": "b",
+        "text": "The documented key components/MDM appropriate to ED E/M levels (not typical office time rules)"
+      },
+      {
+        "id": "c",
+        "text": "Only the length of the waiting room delay"
+      },
+      {
+        "id": "d",
+        "text": "The ambulance company name"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "ED E/M leveling follows ED-specific CPT rules emphasizing history/exam/MDM as applicable.",
+    "distractorExplanations": {
+      "a": "Incorrect: Whether the patient has insurance",
+      "c": "Incorrect: Only the length of the waiting room delay",
+      "d": "Incorrect: The ambulance company name"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-015",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "When coding a problem-oriented visit during a scheduled preventive visit (same day), correct coding often involves:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Billing only the problem visit and never the preventive"
+      },
+      {
+        "id": "b",
+        "text": "Reporting both services when significant and separately identifiable, with modifier 25 on the problem E/M when appropriate"
+      },
+      {
+        "id": "c",
+        "text": "Using two identical preventive codes"
+      },
+      {
+        "id": "d",
+        "text": "Omitting diagnoses for the problem"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Significant separately identifiable problem E/M may be reported with preventive care using modifier 25.",
+    "distractorExplanations": {
+      "a": "Incorrect: Billing only the problem visit and never the preventive",
+      "c": "Incorrect: Using two identical preventive codes",
+      "d": "Incorrect: Omitting diagnoses for the problem"
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-001",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "The surgical package (global surgery) typically includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Local infiltration, certain related E/M, and routine postoperative care within the global period as defined"
+      },
+      {
+        "id": "b",
+        "text": "All unrelated surgeries for 10 years"
+      },
+      {
+        "id": "c",
+        "text": "Only the anesthesia code"
+      },
+      {
+        "id": "d",
+        "text": "Never any follow-up visits"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "CPT surgical package and payer global periods define what is bundled vs separately reportable.",
+    "distractorExplanations": {
+      "b": "Unrelated services may be separate.",
+      "c": "Anesthesia often separate.",
+      "d": "Post-op visits in global are often bundled."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-002",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "Modifier 78 indicates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Staged/related procedure by same physician (58)"
+      },
+      {
+        "id": "b",
+        "text": "Unplanned return to the OR for a related procedure during the postoperative period"
+      },
+      {
+        "id": "c",
+        "text": "Unrelated procedure in postop (79)"
+      },
+      {
+        "id": "d",
+        "text": "Bilateral (50)"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Know 58/78/79 distinctions for returns during global periods.",
+    "distractorExplanations": {
+      "a": "58 is staged/planned more extensive etc.",
+      "c": "79 is unrelated.",
+      "d": "50 is bilateral."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-003",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "NCCI edits primarily exist to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increase RVUs automatically"
+      },
+      {
+        "id": "b",
+        "text": "Replace ICD-10 guidelines"
+      },
+      {
+        "id": "c",
+        "text": "Prevent improper reporting of services that should not be billed together"
+      },
+      {
+        "id": "d",
+        "text": "Assign anesthesia ASAs"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "NCCI PTP edits and MUEs control unbundling; modifiers may bypass when clinically appropriate (e.g., 59/X{EPSU}).",
+    "distractorExplanations": {
+      "a": "Edits limit improper payment.",
+      "b": "ICD guidelines remain.",
+      "d": "Anesthesia has separate concepts."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-004",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "Anesthesia coding typically uses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only E/M office codes"
+      },
+      {
+        "id": "b",
+        "text": "Only ICD procedure codes on professional claims always"
+      },
+      {
+        "id": "c",
+        "text": "Dental prophy codes"
+      },
+      {
+        "id": "d",
+        "text": "CPT anesthesia codes with base units + time units + modifying units (payer rules)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Anesthesia payment formulas combine base and time; physical status/qualifying circumstances may apply.",
+    "distractorExplanations": {
+      "a": "E/M isn't anesthesia billing.",
+      "b": "PCS is inpatient hospital procedures.",
+      "c": "Dental prophy is dental."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-005",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "Modifier 51 is used for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Multiple procedures performed at the same session by the same provider (when applicable)"
+      },
+      {
+        "id": "b",
+        "text": "Assistant surgeon"
+      },
+      {
+        "id": "c",
+        "text": "Bilateral only"
+      },
+      {
+        "id": "d",
+        "text": "Decision for surgery"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Multiple procedure reductions often apply; some codes are modifier 51 exempt.",
+    "distractorExplanations": {
+      "b": "80/82 assistant surgery.",
+      "c": "50 bilateral.",
+      "d": "57 decision for surgery on E/M."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-006",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "Separate procedure designation in CPT means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "It must always be billed with every surgery"
+      },
+      {
+        "id": "b",
+        "text": "The code is usually component of a larger service and not reported in addition when integral"
+      },
+      {
+        "id": "c",
+        "text": "It replaces anesthesia"
+      },
+      {
+        "id": "d",
+        "text": "It is never payable under any circumstance"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "If performed alone for a distinct reason, a 'separate procedure' may be reportable; otherwise bundled.",
+    "distractorExplanations": {
+      "a": "Not always add-on.",
+      "c": "Anesthesia separate.",
+      "d": "Payable when truly separate/sole."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-007",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "Wound repair coding selection depends mainly on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only patient insurance plan name"
+      },
+      {
+        "id": "b",
+        "text": "Only the suture brand"
+      },
+      {
+        "id": "c",
+        "text": "Complexity (simple/intermediate/complex), length, and location"
+      },
+      {
+        "id": "d",
+        "text": "Time of day only"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Add lengths of same classification/anatomic grouping per CPT rules; intermediate includes layered closure etc.",
+    "distractorExplanations": {
+      "a": "Payer name doesn't choose complexity.",
+      "b": "Brand irrelevant.",
+      "d": "Time of day irrelevant."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-008",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "Global surgical periods commonly used by Medicare concepts include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only 365-day globals for every code"
+      },
+      {
+        "id": "b",
+        "text": "No postoperative period ever"
+      },
+      {
+        "id": "c",
+        "text": "Globals apply only to pathology"
+      },
+      {
+        "id": "d",
+        "text": "0-day, 10-day, and 90-day globals depending on the procedure"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Minor procedures often 0/10; major often 90—verify each code.",
+    "distractorExplanations": {
+      "a": "Not universally 365.",
+      "b": "Globals exist for many surgeries.",
+      "c": "Pathology has different concepts."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-009",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "Assistant surgeon modifiers (e.g., 80) indicate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Another surgeon assists the primary surgeon when medically necessary and allowed"
+      },
+      {
+        "id": "b",
+        "text": "The patient assisted scrub tech"
+      },
+      {
+        "id": "c",
+        "text": "Bilateral surgery"
+      },
+      {
+        "id": "d",
+        "text": "Reduced anesthesia time only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Documentation must support necessity; payer assistant policies vary (including PA/NP assisting modifiers).",
+    "distractorExplanations": {
+      "b": "Patient isn't assistant surgeon.",
+      "c": "50 is bilateral.",
+      "d": "Anesthesia time differs."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-010",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "Add-on codes in CPT are identified by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Being listed only in ICD-10-CM"
+      },
+      {
+        "id": "b",
+        "text": "A '+' symbol and are never reported as stand-alone primary codes"
+      },
+      {
+        "id": "c",
+        "text": "Always requiring modifier 51"
+      },
+      {
+        "id": "d",
+        "text": "Only applying to DME"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Add-on codes are reported in addition to a primary code; modifier 51 is typically not used on add-ons.",
+    "distractorExplanations": {
+      "a": "They're CPT convention.",
+      "c": "51 usually not appended to add-ons.",
+      "d": "Not only DME."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-011",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "The surgical package (global surgery) typically includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "All unrelated E/M visits for one year"
+      },
+      {
+        "id": "b",
+        "text": "The procedure and related typical pre-/intra-/postoperative care for the global period"
+      },
+      {
+        "id": "c",
+        "text": "Only the anesthesia professional's time"
+      },
+      {
+        "id": "d",
+        "text": "Never any postoperative visits"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Global surgical package covers the operation and routine related care in the global period.",
+    "distractorExplanations": {
+      "a": "Incorrect: All unrelated E/M visits for one year",
+      "c": "Incorrect: Only the anesthesia professional's time",
+      "d": "Incorrect: Never any postoperative visits"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-012",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "Modifier 51 is generally used to indicate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bilateral procedure"
+      },
+      {
+        "id": "b",
+        "text": "Multiple procedures performed at the same session by the same provider"
+      },
+      {
+        "id": "c",
+        "text": "Assistant surgeon"
+      },
+      {
+        "id": "d",
+        "text": "Discontinued procedure"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Modifier 51 reports multiple procedures; payer edits may affect its use.",
+    "distractorExplanations": {
+      "a": "Incorrect: Bilateral procedure",
+      "c": "Incorrect: Assistant surgeon",
+      "d": "Incorrect: Discontinued procedure"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-013",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "Anesthesia time for reporting typically begins when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The surgeon makes the incision only"
+      },
+      {
+        "id": "b",
+        "text": "The anesthesiologist begins to prepare the patient for anesthesia in the OR/procedure area"
+      },
+      {
+        "id": "c",
+        "text": "The patient schedules the surgery online"
+      },
+      {
+        "id": "d",
+        "text": "The recovery room nurse discharges the patient"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Anesthesia time starts with preparation for anesthesia induction and ends when the anesthesiologist is no longer in personal attendance.",
+    "distractorExplanations": {
+      "a": "Incorrect: The surgeon makes the incision only",
+      "c": "Incorrect: The patient schedules the surgery online",
+      "d": "Incorrect: The recovery room nurse discharges the patient"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-014",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "Separate procedure designation in CPT means the service is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Always billed in addition to a more extensive related procedure"
+      },
+      {
+        "id": "b",
+        "text": "Usually considered integral to a larger procedure and not separately reported when performed as part of that larger service"
+      },
+      {
+        "id": "c",
+        "text": "Only for radiology"
+      },
+      {
+        "id": "d",
+        "text": "Never payable under any circumstance"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "“Separate procedure” codes are typically not unbundled from a more comprehensive related procedure.",
+    "distractorExplanations": {
+      "a": "Incorrect: Always billed in addition to a more extensive related procedure",
+      "c": "Incorrect: Only for radiology",
+      "d": "Incorrect: Never payable under any circumstance"
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-015",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "Physical status modifiers (P1–P6) in anesthesia coding describe:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The patient's ASA physical status classification"
+      },
+      {
+        "id": "b",
+        "text": "The hospital's trauma level"
+      },
+      {
+        "id": "c",
+        "text": "Whether the case was elective marketing"
+      },
+      {
+        "id": "d",
+        "text": "The CPT surgical global days"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Anesthesia physical status modifiers communicate ASA classification for risk/payment policies.",
+    "distractorExplanations": {
+      "b": "Incorrect: The hospital's trauma level",
+      "c": "Incorrect: Whether the case was elective marketing",
+      "d": "Incorrect: The CPT surgical global days"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-001",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": " Upcoding is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reporting a higher-level service than documented/supported"
+      },
+      {
+        "id": "b",
+        "text": "Reporting a lower level than performed intentionally always as the definition"
+      },
+      {
+        "id": "c",
+        "text": "Using the correct code"
+      },
+      {
+        "id": "d",
+        "text": "Appending a correct modifier"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Upcoding is a compliance/fraud risk; downcoding underreports services.",
+    "distractorExplanations": {
+      "b": "That's downcoding/under coding concepts.",
+      "c": "Correct coding is compliant.",
+      "d": "Proper modifiers are fine."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-002",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "The False Claims Act targets:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Honest clerical corrections via timely voids/replacements"
+      },
+      {
+        "id": "b",
+        "text": "Knowingly submitting false or fraudulent claims to the government"
+      },
+      {
+        "id": "c",
+        "text": "Patient thank-you cards"
+      },
+      {
+        "id": "d",
+        "text": "Scheduling reminders"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Knowledge includes deliberate ignorance/reckless disregard in FCA jurisprudence—compliance programs matter.",
+    "distractorExplanations": {
+      "a": "Good-faith corrections differ.",
+      "c": "Courtesy cards fine.",
+      "d": "Reminders fine."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-003",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "HIPAA privacy rules govern:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only CPT relative value units"
+      },
+      {
+        "id": "b",
+        "text": "Only OSHA sharps logs"
+      },
+      {
+        "id": "c",
+        "text": "Protected health information use and disclosure"
+      },
+      {
+        "id": "d",
+        "text": "Federal highway speed limits"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Covered entities must safeguard PHI; minimum necessary and patient rights apply.",
+    "distractorExplanations": {
+      "a": "RVUs are payment.",
+      "b": "OSHA is safety.",
+      "d": "Speed limits are traffic."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-004",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "HCPCS Level II codes commonly report:",
+    "options": [
+      {
+        "id": "a",
+        "text": "ICD diagnoses"
+      },
+      {
+        "id": "b",
+        "text": "Only inpatient ICD-10-PCS"
+      },
+      {
+        "id": "c",
+        "text": "Only anesthesia base units"
+      },
+      {
+        "id": "d",
+        "text": "Drugs, supplies, DME, and certain services not in CPT"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A-codes, J-codes, etc., are Level II examples used on claims with CPT as applicable.",
+    "distractorExplanations": {
+      "a": "Diagnoses are ICD.",
+      "b": "PCS is hospital inpatient procedures.",
+      "c": "Anesthesia base is CPT anesthesia methodology."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-005",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "ABN (Advance Beneficiary Notice) is used when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A provider believes Medicare may deny a service as not reasonable/necessary and the beneficiary may be liable"
+      },
+      {
+        "id": "b",
+        "text": "Medicaid always pays 100%"
+      },
+      {
+        "id": "c",
+        "text": "A service is always covered without issue"
+      },
+      {
+        "id": "d",
+        "text": "The patient is under age 1 always"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ABN shifts financial liability for expected denials when properly executed for Medicare Part B situations.",
+    "distractorExplanations": {
+      "b": "Not a Medicaid payment guarantee.",
+      "c": "Covered services don't need ABN for that reason.",
+      "d": "Age unrelated generally."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-006",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "National Provider Identifier (NPI) is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A diagnosis code"
+      },
+      {
+        "id": "b",
+        "text": "A unique identification number for covered health care providers"
+      },
+      {
+        "id": "c",
+        "text": "A place of service code"
+      },
+      {
+        "id": "d",
+        "text": "A patient's SSN replacement on all public posts"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "NPIs identify providers on claims; do not confuse with taxonomy or PIN legacy systems.",
+    "distractorExplanations": {
+      "a": "DX are ICD.",
+      "c": "POS is two-digit setting.",
+      "d": "SSNs must not be publicly posted."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-007",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "Unbundling means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Using a panel code correctly"
+      },
+      {
+        "id": "b",
+        "text": "Following NCCI"
+      },
+      {
+        "id": "c",
+        "text": "Billing component codes separately when a comprehensive code includes them, contrary to rules"
+      },
+      {
+        "id": "d",
+        "text": "Reporting one inclusive code properly"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Unbundling to increase payment violates NCCI/CPT inclusive coding principles.",
+    "distractorExplanations": {
+      "a": "Correct panel use is fine.",
+      "b": "Following NCCI is compliant.",
+      "d": "Inclusive coding is proper."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-008",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "Medical necessity means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Any service a patient requests for convenience only always payable"
+      },
+      {
+        "id": "b",
+        "text": "The most expensive option always"
+      },
+      {
+        "id": "c",
+        "text": "Services without documentation"
+      },
+      {
+        "id": "d",
+        "text": "Services are reasonable and necessary for diagnosis/treatment per payer coverage criteria"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Coverage policies/LCDs/NCDs define necessity; documentation must support it.",
+    "distractorExplanations": {
+      "a": "Convenience isn't automatic necessity.",
+      "b": "Cost ≠ necessity.",
+      "c": "No documentation fails audits."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-009",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "A compliance program commonly includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Policies, training, auditing, and a process to report/respond to issues"
+      },
+      {
+        "id": "b",
+        "text": "Encouraging silent upcoding goals"
+      },
+      {
+        "id": "c",
+        "text": "Destroying records after one week always"
+      },
+      {
+        "id": "d",
+        "text": "Sharing passwords among all staff"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "OIG seven-element concepts emphasize prevention and detection of fraud/abuse.",
+    "distractorExplanations": {
+      "b": "Upcoding goals are illegal.",
+      "c": "Retention schedules are longer.",
+      "d": "Password sharing breaks security."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-010",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "Modifier 59 (or X{EPSU}) is used to indicate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bilateral surgery"
+      },
+      {
+        "id": "b",
+        "text": "A distinct procedural service not normally reported together, when criteria are met"
+      },
+      {
+        "id": "c",
+        "text": "Assistant surgeon"
+      },
+      {
+        "id": "d",
+        "text": "Increased E/M complexity automatically"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Use distinct-service modifiers only with documentation; overuse is an audit target.",
+    "distractorExplanations": {
+      "a": "50 bilateral.",
+      "c": "80 assistant.",
+      "d": "E/M complexity isn't 59."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-011",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "The False Claims Act primarily targets:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Late employee time cards only"
+      },
+      {
+        "id": "b",
+        "text": "Knowingly submitting false or fraudulent claims for government payment"
+      },
+      {
+        "id": "c",
+        "text": "Patient no-shows"
+      },
+      {
+        "id": "d",
+        "text": "HIPAA training attendance"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "FCA liability attaches to knowing false claims to federal healthcare programs.",
+    "distractorExplanations": {
+      "a": "Incorrect: Late employee time cards only",
+      "c": "Incorrect: Patient no-shows",
+      "d": "Incorrect: HIPAA training attendance"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-012",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "Upcoding means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Selecting a code that accurately reflects documentation"
+      },
+      {
+        "id": "b",
+        "text": "Reporting a higher-level service than supported by documentation to increase payment"
+      },
+      {
+        "id": "c",
+        "text": "Using ICD-10-CM seventh characters correctly"
+      },
+      {
+        "id": "d",
+        "text": "Appending modifier 59 appropriately"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Upcoding is a compliance risk and potential fraud when unsupported.",
+    "distractorExplanations": {
+      "a": "Incorrect: Selecting a code that accurately reflects documentation",
+      "c": "Incorrect: Using ICD-10-CM seventh characters correctly",
+      "d": "Incorrect: Appending modifier 59 appropriately"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-013",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "NCCI edits are designed to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increase unrelated diagnosis codes"
+      },
+      {
+        "id": "b",
+        "text": "Prevent improper payment of services that should not be billed together"
+      },
+      {
+        "id": "c",
+        "text": "Replace medical necessity policies"
+      },
+      {
+        "id": "d",
+        "text": "Assign DRGs for physician claims"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "National Correct Coding Initiative edits promote correct coding and avoid unbundling.",
+    "distractorExplanations": {
+      "a": "Incorrect: Increase unrelated diagnosis codes",
+      "c": "Incorrect: Replace medical necessity policies",
+      "d": "Incorrect: Assign DRGs for physician claims"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-014",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "An Advance Beneficiary Notice (ABN) is used in Medicare contexts primarily to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guarantee payment from Medicaid"
+      },
+      {
+        "id": "b",
+        "text": "Notify a beneficiary that Medicare may deny a service so they can accept financial responsibility"
+      },
+      {
+        "id": "c",
+        "text": "Replace the CMS-1500 form"
+      },
+      {
+        "id": "d",
+        "text": "Authorize a research study without consent"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "ABNs shift potential financial liability for anticipated Medicare noncoverage when properly used.",
+    "distractorExplanations": {
+      "a": "Incorrect: Guarantee payment from Medicaid",
+      "c": "Incorrect: Replace the CMS-1500 form",
+      "d": "Incorrect: Authorize a research study without consent"
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-015",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "Medical necessity for coding/billing means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The service is convenient for the clinic schedule"
+      },
+      {
+        "id": "b",
+        "text": "The service is reasonable and necessary for diagnosis or treatment per payer/coverage rules and documentation"
+      },
+      {
+        "id": "c",
+        "text": "Any requested service must be paid"
+      },
+      {
+        "id": "d",
+        "text": "Only cosmetic procedures qualify"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Coverage depends on documented medical necessity aligned with payer policies.",
+    "distractorExplanations": {
+      "a": "Incorrect: The service is convenient for the clinic schedule",
+      "c": "Incorrect: Any requested service must be paid",
+      "d": "Incorrect: Only cosmetic procedures qualify"
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  }
+]
