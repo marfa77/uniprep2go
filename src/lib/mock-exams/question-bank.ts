@@ -88,7 +88,17 @@ export function validateQuestionBank(
     return errors;
   }
 
-  if (questions.length !== expectedCount && getMockExamConfig(examSlug)?.status === "live") {
+  const hasTopicQuotas = topics.some((topic) => typeof topic.questionCount === "number");
+
+  // Sale-grade banks (e.g. SAT 350 / session 49) are larger than the timed session.
+  // Require at least the session size; exact equality only for legacy 1:1 banks.
+  if (questions.length < expectedCount) {
+    errors.push(`Expected at least ${expectedCount} questions, found ${questions.length}`);
+  } else if (
+    questions.length !== expectedCount &&
+    getMockExamConfig(examSlug)?.status === "live" &&
+    !hasTopicQuotas
+  ) {
     errors.push(`Expected ${expectedCount} questions, found ${questions.length}`);
   }
 
@@ -114,9 +124,6 @@ export function validateQuestionBank(
     }
   }
 
-  const config = getMockExamConfig(examSlug);
-  const isPreview = config?.status === "preview";
-
   for (const topic of topics) {
     if (typeof topic.questionCount !== "number") {
       continue;
@@ -124,18 +131,9 @@ export function validateQuestionBank(
 
     const topicCount = questions.filter((question) => question.topicId === topic.id).length;
 
-    if (isPreview) {
-      if (topicCount < topic.questionCount) {
-        errors.push(
-          `Topic ${topic.id} expected at least ${topic.questionCount} questions, found ${topicCount}`,
-        );
-      }
-      continue;
-    }
-
-    if (topicCount !== topic.questionCount) {
+    if (topicCount < topic.questionCount) {
       errors.push(
-        `Topic ${topic.id} expected ${topic.questionCount} questions, found ${topicCount}`,
+        `Topic ${topic.id} expected at least ${topic.questionCount} questions, found ${topicCount}`,
       );
     }
   }
@@ -150,10 +148,6 @@ export function isMockExamRunnable(examSlug: string) {
     return false;
   }
 
-  if (config.status === "live") {
-    return questions.length === config.questionCount && errors.length === 0;
-  }
-
-  // Preview readiness checks can run when the bank meets the configured count.
+  // Live and preview both run when the bank covers the timed session (exact or oversized Anki bank).
   return questions.length >= config.questionCount && errors.length === 0;
 }

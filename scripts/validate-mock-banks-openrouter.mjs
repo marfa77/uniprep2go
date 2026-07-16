@@ -185,8 +185,12 @@ async function main() {
   const credentials = loadCredentials();
   const { mockExamConfigs } = await import("../src/lib/mock-exams/configs.ts");
 
+  // Default --all validates preview registry banks. Explicit --slug also allows live
+  // (sale-grade banks that graduated to indexed mocks, e.g. Digital SAT).
   let configs = mockExamConfigs.filter(
-    (config) => config.status === "preview" && TARGET_SLUGS.has(config.slug),
+    (config) =>
+      TARGET_SLUGS.has(config.slug) &&
+      (config.status === "preview" || config.status === "live"),
   );
 
   if (args.slug) {
@@ -196,6 +200,8 @@ async function main() {
     }
   } else if (!args.all) {
     throw new Error("Pass --slug <slug> or --all");
+  } else {
+    configs = configs.filter((config) => config.status === "preview");
   }
 
   console.log(`Validator: ${VALIDATOR_MODEL} via OpenRouter`);

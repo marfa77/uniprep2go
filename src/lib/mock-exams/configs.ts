@@ -601,7 +601,7 @@ export const mockExamConfigs: MockExamConfig[] = [
     title: "Digital SAT Readiness Check",
     shortTitle: "SAT Readiness",
     linkedDeckSlug: "sat-anki-deck",
-    status: "preview",
+    status: "live",
     accessMode: "free_demand_test",
     durationMinutes: 70,
     questionCount: 49,
