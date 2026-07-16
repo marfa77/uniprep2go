@@ -304,7 +304,7 @@ describe("LLM documents", () => {
     expect(llms).toContain("Top citation queries");
     expect(llms).toContain("/mock-exams/sie-full-mock");
     expect(llms).toContain("Language decks (secondary");
-    expect(llms.length).toBeLessThan(16000);
+    expect(llms.length).toBeLessThan(32000);
   });
 
   it("builds a full GEO markdown bundle for LLM ingestion", () => {

@@ -45,6 +45,8 @@ import {
 import { getDeckCoverUrl, isPreoptimizedPublicImage } from "@/lib/deck-media";
 import { buildDeckPageJsonLd } from "@/lib/product-jsonld";
 import {
+  VISIBLE_FAQ_COUNT,
+  VISIBLE_FAQ_COUNT_WITH_EXAM,
   deckMoreAboutHint,
   shouldShowDeckPracticeMockSection,
   splitFaqs,
@@ -157,7 +159,10 @@ export default async function DeckPage({
   ];
 
   const mergedFaqs = buildMergedDeckFaqs(deck);
-  const { primary: primaryFaqs, extra: extraFaqs } = splitFaqs(mergedFaqs);
+  const { primary: primaryFaqs, extra: extraFaqs } = splitFaqs(
+    mergedFaqs,
+    examFactsProfile ? VISIBLE_FAQ_COUNT_WITH_EXAM : VISIBLE_FAQ_COUNT,
+  );
   const shortPitch = getDeckShortPitch(deck);
   const showPracticeMockSection = practiceMock && shouldShowDeckPracticeMockSection(deck.slug);
 
@@ -259,39 +264,62 @@ export default async function DeckPage({
         />
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-          <TrackedCheckoutLink
-            aria-label={`${checkoutCtaLabel} on ${deck.checkoutProvider}`}
-            className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-6 py-3 text-base font-semibold text-[#fffaf0] transition hover:bg-[#152238] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
-            deckSlug={deck.slug}
-            href={deck.checkoutUrl}
-            source="deck_page_cta"
-          >
-            {checkoutCtaLabel}
-          </TrackedCheckoutLink>
-          {practiceMock ? (
-            <Link
-              aria-label={`Try free ${practiceMock.questionCount}-question ${deck.shortName} practice test`}
-              className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#18140f]/25 px-6 py-3 text-base font-semibold transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
-              href={`/mock-exams/${practiceMock.slug}`}
-            >
-              Try free {practiceMock.questionCount}-question practice test
-            </Link>
-          ) : deck.checkoutProvider === "App Store" ? (
-            <Link
-              className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#18140f]/25 px-6 py-3 text-base font-semibold transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
-              href={deck.checkoutUrl}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              View on App Store
-            </Link>
+          {mockFirst && practiceMock ? (
+            <>
+              <Link
+                aria-label={`Try free ${practiceMock.questionCount}-question ${deck.shortName} practice test`}
+                className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-6 py-3 text-base font-semibold text-[#fffaf0] transition hover:bg-[#152238] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+                href={`/mock-exams/${practiceMock.slug}`}
+              >
+                Try free {practiceMock.questionCount}-question practice test
+              </Link>
+              <TrackedCheckoutLink
+                aria-label={`${checkoutCtaLabel} on ${deck.checkoutProvider}`}
+                className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#18140f]/25 px-6 py-3 text-base font-semibold transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+                deckSlug={deck.slug}
+                href={deck.checkoutUrl}
+                source="deck_page_cta"
+              >
+                {checkoutCtaLabel}
+              </TrackedCheckoutLink>
+            </>
           ) : (
-            <Link
-              className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#18140f]/25 px-6 py-3 text-base font-semibold transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
-              href={secondaryCta.href}
-            >
-              {secondaryCta.label}
-            </Link>
+            <>
+              <TrackedCheckoutLink
+                aria-label={`${checkoutCtaLabel} on ${deck.checkoutProvider}`}
+                className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-6 py-3 text-base font-semibold text-[#fffaf0] transition hover:bg-[#152238] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+                deckSlug={deck.slug}
+                href={deck.checkoutUrl}
+                source="deck_page_cta"
+              >
+                {checkoutCtaLabel}
+              </TrackedCheckoutLink>
+              {practiceMock ? (
+                <Link
+                  aria-label={`Try free ${practiceMock.questionCount}-question ${deck.shortName} practice test`}
+                  className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#18140f]/25 px-6 py-3 text-base font-semibold transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+                  href={`/mock-exams/${practiceMock.slug}`}
+                >
+                  Try free {practiceMock.questionCount}-question practice test
+                </Link>
+              ) : deck.checkoutProvider === "App Store" ? (
+                <Link
+                  className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#18140f]/25 px-6 py-3 text-base font-semibold transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+                  href={deck.checkoutUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  View on App Store
+                </Link>
+              ) : (
+                <Link
+                  className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#18140f]/25 px-6 py-3 text-base font-semibold transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+                  href={secondaryCta.href}
+                >
+                  {secondaryCta.label}
+                </Link>
+              )}
+            </>
           )}
         </div>
         {deck.checkoutProvider !== "App Store" ? (
@@ -403,6 +431,23 @@ export default async function DeckPage({
           </section>
         ) : null}
 
+        {deck.checkoutProvider !== "App Store" && deck.sampleCards.length > 0 ? (
+          <section className="mt-10 rounded-3xl border border-[#1f3a5f]/20 bg-[#fffaf0] p-6 sm:p-8">
+            <h2 className="text-xl font-semibold tracking-tight">Ready to drill with the full deck?</h2>
+            <p className="mt-2 max-w-2xl text-sm leading-7 text-[#5f5749]">
+              Instant {deck.format === "PDF" ? "PDF" : ".apkg"} download after {deck.checkoutProvider} checkout.
+            </p>
+            <TrackedCheckoutLink
+              className="mt-4 inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-6 py-3 text-base font-semibold text-[#fffaf0] transition hover:bg-[#152238]"
+              deckSlug={deck.slug}
+              href={deck.checkoutUrl}
+              source="deck_page_post_samples"
+            >
+              {checkoutCtaLabel}
+            </TrackedCheckoutLink>
+          </section>
+        ) : null}
+
         {pricedCompanionDeck ? (
           <DeckCompanionProductSection companion={pricedCompanionDeck} deck={deck} />
         ) : null}
@@ -463,6 +508,10 @@ export default async function DeckPage({
           </section>
         ) : null}
 
+        {examFactsProfile ? (
+          <DeckExamFactsSection deck={deck} profile={examFactsProfile} />
+        ) : null}
+
         <CollapsibleDetails
           hint={deckMoreAboutHint(deck)}
           id="more-about"
@@ -472,14 +521,15 @@ export default async function DeckPage({
             <DeckSeoSections deck={deck} />
             <DeckPositioningSection deck={deck} />
             <DeckUniqueContentSection deck={deck} />
-            {examFactsProfile ? (
-              <DeckExamFactsSection deck={deck} profile={examFactsProfile} compact />
-            ) : null}
           </div>
         </CollapsibleDetails>
 
         <section id="faq" className="mt-8">
-          <h2 className="text-xl font-semibold tracking-tight">FAQ</h2>
+          <h2 className="text-xl font-semibold tracking-tight">
+            {examFactsProfile
+              ? `${examFactsProfile.exam_facts.exam_name} & product FAQ`
+              : "FAQ"}
+          </h2>
           <div className="mt-4 divide-y divide-[#18140f]/10 rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
             {primaryFaqs.map((faq) => (
               <article className="p-5" key={faq.question}>

@@ -648,7 +648,7 @@ export function buildMockExamHubFaqs(indexedCount: number, totalCount: number) {
   return [
     {
       question: "How many free practice tests does UniPrep2Go offer?",
-      answer: `${indexedCount} live indexed timed mocks have complete question banks and are promoted in search (currently FINRA SIE, Series 7, CFA Level 1, CFA Level 2, ServSafe Manager, and PTCB). ${previewCount} additional preview readiness checks are on-site for other exams but stay noindex until banks are complete — ${mockFreeAccessNotice}`,
+      answer: `${indexedCount} live indexed timed mocks have complete question banks and are promoted in search — including FINRA SIE, Series 7, CFA, FRM, ServSafe, PTCB, EPA 608, LEED, MRICS, GMAT Focus, and other monetized pathways. ${previewCount > 0 ? `${previewCount} additional readiness checks stay noindex until banks are complete. ` : ""}${mockFreeAccessNotice}`,
     },
     {
       question: "Do I need to sign up for the free mocks?",

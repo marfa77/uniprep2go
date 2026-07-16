@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { LlmFactsStrip } from "@/components/llm/llm-facts-strip";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import {
@@ -62,6 +63,12 @@ export default async function LanguageCertificationDecksPage() {
       />
       <SiteHeader />
       <article className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12">
+        <LlmFactsStrip
+          hubName="language certification hub"
+          hubPath="/language-certification-decks"
+          pathwayCount={languageDecks.length}
+          variant="hub"
+        />
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Language &amp; immigration</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
           Language certification Anki decks

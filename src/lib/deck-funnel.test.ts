@@ -13,7 +13,7 @@ describe("deck funnel", () => {
 
   it("marks formula PDF pages as mock-first", () => {
     expect(isMockFirstDeckPage("cfa-level-1-formula-reference-2026")).toBe(true);
-    expect(isMockFirstDeckPage("cfa-level-1-anki-deck")).toBe(false);
+    expect(isMockFirstDeckPage("cfa-level-1-anki-deck")).toBe(true);
   });
 
   it("links formula PDF to CFA Level 1 Anki deck", () => {

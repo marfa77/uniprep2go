@@ -441,6 +441,55 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
     ],
   },
+  "us-citizenship": {
+    examKey: "us-citizenship",
+    pageHeading: "U.S. Citizenship Civics Test — Facts & Prep",
+    intro:
+      "The USCIS naturalization civics test covers American government, history, and integrated civics. This page summarizes the public question-pool format plus independent UniPrep2Go study products (not official USCIS interview material).",
+    exam_facts: {
+      exam_name: "USCIS Naturalization Civics Test",
+      administered_by: "U.S. Citizenship and Immigration Services (USCIS)",
+      question_count: "Up to 10 oral questions from a published civics pool (2025 update in use for many applicants)",
+      scored_count: "10 asked; 6 correct to pass",
+      time_limit: "Oral interview portion — no fixed written timer for the civics Q&A",
+      passing_score: "6 of 10 correct answers",
+      delivery: "In-person naturalization interview with a USCIS officer",
+      verify_at_url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources",
+    },
+    official_sources: [
+      {
+        label: "USCIS citizenship study materials",
+        url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources",
+      },
+    ],
+    domain_weights: [
+      { domain: "American Government", weight: "Civics pool theme" },
+      { domain: "American History", weight: "Civics pool theme" },
+      { domain: "Integrated Civics (geography, symbols, holidays)", weight: "Civics pool theme" },
+    ],
+    high_yield_facts: [
+      "Applicants must answer 6 of 10 civics questions correctly to pass the civics portion.",
+      "Questions are drawn from a published USCIS civics test pool — study the official list for your filing date rules.",
+      "The English speaking/reading/writing parts are separate from the civics Q&A.",
+      "Officers ask orally; answers should be clear spoken English at the interview.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many USCIS civics questions must I answer correctly?",
+        a: "You must correctly answer 6 out of 10 civics questions asked during the naturalization interview.",
+      },
+      {
+        q: "Is the civics test multiple choice?",
+        a: "No. A USCIS officer asks the questions orally and you answer aloud — it is not a written multiple-choice exam.",
+      },
+      {
+        q: "Where can I verify the official civics question pool?",
+        a: "USCIS publishes the official study materials and question pool at uscis.gov/citizenship — always verify against your application date rules.",
+      },
+    ],
+    trademark_note:
+      "USCIS and related marks are trademarks of the U.S. Department of Homeland Security. Not affiliated with or endorsed by USCIS.",
+  },
   servsafe: {
     examKey: "servsafe",
     pageHeading: "ServSafe Manager Certification Exam — Facts & Prep",
@@ -2088,6 +2137,7 @@ const deckExamKeyMap: Record<string, string> = {
   "cfps-anki-deck": "cfps",
   "mrics-anki-deck": "mrics",
   "mrics-quantity-surveying-anki-deck": "mrics-quantity-surveying",
+  "us-citizenship-test-prep2go-app": "us-citizenship",
 };
 
 export function getExamFactsProfileForDeck(slug: string): ExamFactsProfile | null {

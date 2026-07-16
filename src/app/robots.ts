@@ -30,7 +30,13 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       })),
     ],
-    sitemap: [`${siteConfig.url}/sitemap.xml`, `${siteConfig.url}/llm-sitemap.xml`],
+    // Point answer-engine / LLM crawlers at citation surfaces (llms.txt + machine sitemaps).
+    sitemap: [
+      `${siteConfig.url}/sitemap.xml`,
+      `${siteConfig.url}/llm-sitemap.xml`,
+      `${siteConfig.url}/llms.txt`,
+      `${siteConfig.url}/llms-full.txt`,
+    ],
     host: siteConfig.url,
   };
 }

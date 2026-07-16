@@ -4,6 +4,9 @@ import {
   buildDeckDataLlmCommercial,
   buildDeckDataLlmDifferentiators,
   buildDeckDataLlmFacts,
+  buildHubDataLlmCommercial,
+  buildHubDataLlmDifferentiators,
+  buildHubDataLlmFacts,
   buildMockDataLlmCommercial,
   buildMockDataLlmDifferentiators,
   buildMockDataLlmFacts,
@@ -42,11 +45,19 @@ type MockIndexLlmFactsStripProps = {
   mockCount: number;
 };
 
+type HubLlmFactsStripProps = {
+  variant: "hub";
+  hubName: string;
+  hubPath: string;
+  pathwayCount: number;
+};
+
 export type LlmFactsStripProps =
   | MockLlmFactsStripProps
   | DeckLlmFactsStripProps
   | SiteLlmFactsStripProps
-  | MockIndexLlmFactsStripProps;
+  | MockIndexLlmFactsStripProps
+  | HubLlmFactsStripProps;
 
 function resolveLlmStripContent(props: LlmFactsStripProps): {
   facts: string;
@@ -77,6 +88,12 @@ function resolveLlmStripContent(props: LlmFactsStripProps): {
         facts: buildMockIndexDataLlmFacts(props.mockCount),
         commercial: buildMockIndexDataLlmCommercial(),
         differentiators: buildMockIndexDataLlmDifferentiators(),
+      };
+    case "hub":
+      return {
+        facts: buildHubDataLlmFacts(props.hubName, props.pathwayCount),
+        commercial: buildHubDataLlmCommercial(props.hubPath),
+        differentiators: buildHubDataLlmDifferentiators(props.hubName),
       };
   }
 }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { LlmFactsStrip } from "@/components/llm/llm-facts-strip";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
@@ -13,7 +14,7 @@ import {
 import { formatDeckContentLabel, getCatalogDeckBySlug } from "@/lib/decks";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { getMockExamConfig } from "@/lib/mock-exams/configs";
-import { finalize, truncateSeoTitle } from "@/lib/seo";
+import { finalize, leafPageTitle } from "@/lib/seo";
 import { buildSocialMetadata } from "@/lib/social-metadata";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
@@ -30,11 +31,11 @@ const clusterOrder: BuildingClusterId[] = [
 ];
 
 export async function generateMetadata(): Promise<Metadata> {
-  const title = truncateSeoTitle(
-    "Building Certification Anki Decks | EPA 608, LEED, MRICS, WELL AP, GMAT",
-  );
+  // Absolute title ≤57 chars — skip layout "| UniPrep2Go" suffix.
+  const seoTitle = "Building Cert Anki Decks | EPA 608, LEED, MRICS";
+  const title = leafPageTitle(seoTitle);
   const description =
-    "15 certification pathways — free readiness checks paired with Anki decks for EPA 608, LEED, WELL AP, BMS, MRICS, CFPS, NEBOSH, CDCP, CEM, ASHRAE, GMAT Focus, Digital SAT, and PMP.";
+    "15 pathways with free readiness checks + Anki decks: EPA 608, LEED, WELL AP, BMS, MRICS, CFPS, NEBOSH, CDCP, CEM, ASHRAE, GMAT, SAT, PMP.";
 
   return withAiMetadata(
     finalize({
@@ -52,7 +53,7 @@ export async function generateMetadata(): Promise<Metadata> {
       ],
       alternates: { canonical: `/${BUILDING_CERTIFICATION_HUB_SLUG}` },
       ...buildSocialMetadata({
-        title,
+        title: seoTitle,
         description,
         path: `/${BUILDING_CERTIFICATION_HUB_SLUG}`,
         image: "/home/hero.webp",
@@ -112,6 +113,12 @@ export default async function BuildingCertificationHubPage() {
       <SiteHeader />
 
       <article className="mx-auto w-full max-w-6xl px-6 py-12 sm:px-10 lg:px-12">
+        <LlmFactsStrip
+          hubName="building certification hub"
+          hubPath={`/${BUILDING_CERTIFICATION_HUB_SLUG}`}
+          pathwayCount={BUILDING_MOCK_DECK_REPAIR_PAIRS.length}
+          variant="hub"
+        />
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
           Building certification hub
         </p>

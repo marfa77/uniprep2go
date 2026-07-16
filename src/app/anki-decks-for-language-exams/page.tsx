@@ -1,5 +1,5 @@
 import { permanentRedirect } from "next/navigation";
 
 export default function AnkiDecksForLanguageExamsPage() {
-  permanentRedirect("/#catalog");
+  permanentRedirect("/language-certification-decks");
 }

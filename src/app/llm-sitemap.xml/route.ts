@@ -7,13 +7,17 @@ import { absoluteUrl } from "@/lib/site";
 export const revalidate = 3600;
 
 export function GET() {
+  const renderableIntentPages = intentPages.filter(
+    (page) => page.slug !== "anki-decks-for-language-exams",
+  );
+
   const urls = [
     absoluteUrl("/llms.txt"),
     absoluteUrl("/llms-full.txt"),
     absoluteUrl("/api/facts"),
     absoluteUrl("/api/mock-exams"),
-    ...intentPages.map((page) => absoluteUrl(`/${page.slug}`)),
-    ...intentPages.map((page) => absoluteUrl(`/${page.slug}/markdown`)),
+    ...renderableIntentPages.map((page) => absoluteUrl(`/${page.slug}`)),
+    ...renderableIntentPages.map((page) => absoluteUrl(`/${page.slug}/markdown`)),
     ...availableDecks.map((deck) => absoluteUrl(`/${deck.slug}.md`)),
     ...availableDecks.map((deck) => absoluteUrl(`/api/facts/${deck.slug}`)),
     ...getAllMockExams()

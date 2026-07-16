@@ -463,6 +463,18 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   "mrics-quantity-surveying-anki-deck": {
     title: "MRICS QS Prep | 250+ Cards + Free Mock",
   },
+  "gre-anki-deck": {
+    title: "GRE Exam Prep | 350 Verbal & Quant Cards + Mock",
+  },
+  "bench-energy-metal-trader-anki-deck": {
+    title: "Metal Trader Lexicon | 202 Commodity Anki Cards",
+  },
+  "bench-energy-oil-trader-anki-deck": {
+    title: "Oil Trader Lexicon | 211 Crude Oil Anki Cards",
+  },
+  "bench-energy-coal-trader-anki-deck": {
+    title: "Coal Trader Lexicon | 221 Thermal Coal Anki Cards",
+  },
 };
 
 function mergeProfile(

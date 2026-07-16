@@ -50,7 +50,8 @@ describe("intent pages visibility", () => {
 
     expect(urls).toContain(absoluteUrl("/decks/frm-part-1-anki-deck"));
     expect(urls).toContain(absoluteUrl("/mock-exams/sie-full-mock"));
-    expect(urls).not.toContain(absoluteUrl("/mock-exams/frm-part-1-readiness-check"));
+    // FRM readiness check is live/indexed — keep it in the sitemap for AEO citation.
+    expect(urls).toContain(absoluteUrl("/mock-exams/frm-part-1-readiness-check"));
 
     expect(urls).toContain(`${siteConfig.url}/`);
     expect(urls).toContain(absoluteUrl("/anki-starter-kit"));
@@ -59,11 +60,13 @@ describe("intent pages visibility", () => {
     expect(urls.some((url) => url.includes("://www."))).toBe(false);
     expect(urls.every((url) => !url.endsWith(".md"))).toBe(true);
     expect(urls.every((url) => !url.includes("/api/"))).toBe(true);
-    expect(urls).not.toContain(absoluteUrl("/llms.txt"));
-    expect(urls).not.toContain(absoluteUrl("/llms-full.txt"));
+    expect(urls).toContain(absoluteUrl("/llms.txt"));
+    expect(urls).toContain(absoluteUrl("/llms-full.txt"));
     expect(robots().sitemap).toEqual([
       `${siteConfig.url}/sitemap.xml`,
       `${siteConfig.url}/llm-sitemap.xml`,
+      `${siteConfig.url}/llms.txt`,
+      `${siteConfig.url}/llms-full.txt`,
     ]);
     expect(robots().host).toBe(siteConfig.url);
     expect(JSON.stringify(rules)).toContain("\"allow\":\"/\"");

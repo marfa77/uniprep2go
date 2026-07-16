@@ -45,7 +45,7 @@ export function getCompanionDeck(deckSlug: string): CatalogAvailableDeck | undef
   return getCatalogDeckBySlug(companionSlug);
 }
 
-/** PDF / guide pages without a direct mock link — lead with free practice test. */
+/** Deck pages with a linked or companion practice test — lead with free mock CTA. */
 export function isMockFirstDeckPage(deckSlug: string): boolean {
-  return Boolean(getDeckPracticeMock(deckSlug) && !getDeckLinkedMock(deckSlug));
+  return Boolean(getDeckPracticeMock(deckSlug));
 }

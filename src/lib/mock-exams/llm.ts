@@ -1,3 +1,4 @@
+import { getCatalogDeckBySlug } from "../decks";
 import { getAllMockExams, getMockExamConfig } from "./configs";
 import { buildMockExamFaqs, buildMockSeoDescription } from "./seo";
 import type { MockExamConfig } from "./types";
@@ -12,20 +13,41 @@ import {
 
 export { buildMockExamFaqs } from "./seo";
 
+export function mockExamHubBreadcrumbLabel() {
+  return "US exam practice tests";
+}
+
 export function buildMockExamFacts(config: MockExamConfig) {
+  const linkedDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
+  const seoIndexed = shouldIndexMockExam(config.slug);
+
   return {
     product: config.title,
     slug: config.slug,
     type: "finance_mock_exam",
+    publisher: siteConfig.name,
+    seller: linkedDeck?.checkoutSeller ?? "PixID Studio",
     linked_deck_slug: config.linkedDeckSlug,
+    linked_deck_url: absoluteUrl(`/decks/${config.linkedDeckSlug}`),
+    linked_deck_checkout_url: linkedDeck?.checkoutUrl ?? null,
     status: config.status,
+    index_status: seoIndexed ? "indexed" : "noindex",
+    seo_indexed: seoIndexed,
     access_mode: config.accessMode,
     question_count: config.questionCount,
     duration_minutes: config.durationMinutes,
     pass_threshold_percent: config.passRule.passPercent,
     price: mockFreeAccessPriceLabel,
+    pricing_note: mockFreeAccessNotice,
     exam_body: config.examBody,
     topics: config.topics,
+    funnel: {
+      step_1: "free_timed_mock",
+      step_2: "topic_readiness_report",
+      step_3: "linked_deck_remediation",
+      linked_deck_slug: config.linkedDeckSlug,
+      linked_deck_product_url: absoluteUrl(`/decks/${config.linkedDeckSlug}`),
+    },
     report_features: [
       "pass/no-pass readiness verdict",
       "weighted topic diagnosis",
@@ -143,11 +165,13 @@ export function buildMockExamItemListJsonLd(options?: { indexedOnly?: boolean })
 
 export function buildFeaturedMockItemListJsonLd(slugs: string[]) {
   const bySlug = new Map(getAllMockExams().map((mock) => [mock.slug, mock]));
+  const indexedSlugs = slugs.filter((slug) => shouldIndexMockExam(slug));
 
   return {
     "@type": "ItemList" as const,
     name: "UniPrep2Go featured US licensing practice tests",
-    itemListElement: slugs.flatMap((slug, index) => {
+    numberOfItems: indexedSlugs.length,
+    itemListElement: indexedSlugs.flatMap((slug, index) => {
       const mock = bySlug.get(slug);
       if (!mock) return [];
       return [
@@ -231,7 +255,7 @@ export function buildMockExamPageJsonLd(config: MockExamConfig) {
           {
             "@type": "ListItem",
             position: 2,
-            name: "Finance mock exams",
+            name: mockExamHubBreadcrumbLabel(),
             item: absoluteUrl("/mock-exams"),
           },
           {

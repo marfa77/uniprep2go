@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/lib/site";
+import { MobileSiteNav } from "@/components/mobile-site-nav";
 
 export function SiteHeader() {
   return (
@@ -13,14 +14,14 @@ export function SiteHeader() {
         <Image
           alt=""
           aria-hidden
-          className="h-6 w-auto"
-          height={24}
+          className="h-7 w-auto"
+          height={28}
           priority
           src="/brand/uniprep2go-mark.svg"
-          width={132}
+          width={168}
         />
       </Link>
-      <div className="flex items-center gap-4">
+      <div className="hidden items-center gap-4 sm:flex">
         <Link
           className="font-medium text-[#4f493e] transition hover:text-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f]"
           href="/mock-exams"
@@ -46,6 +47,7 @@ export function SiteHeader() {
           Contact
         </Link>
       </div>
+      <MobileSiteNav />
     </nav>
   );
 }

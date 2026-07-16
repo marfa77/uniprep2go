@@ -99,7 +99,7 @@ export function leafPageTitle(title: string, max = 60): Metadata["title"] {
   return { absolute: fitSeoTitle(title, max) };
 }
 
-/** Live mocks with complete banks only — preview mocks stay accessible but noindex. */
+/** Live mocks with complete runnable banks are indexable. */
 export function shouldIndexMockExam(slug: string): boolean {
   const config = getMockExamConfig(slug);
   if (!config || config.status !== "live") {
@@ -142,19 +142,36 @@ export function finalize(meta: Metadata): Metadata {
 }
 
 export function homeMetadata(): Metadata {
+  // Keep absolute title ≤57 chars (Ahrefs / audit TITLE_MAX).
+  const title = "Free US Exam Practice Tests | SIE, CFA, LEED";
+  const description =
+    "Free timed practice tests for FINRA, CFA, ServSafe, PTCB, EPA 608, LEED, and more — paired with Anki decks for weak-topic repair. No signup.";
+
   return finalize({
     title: {
-      absolute:
-        "Free Practice Tests & Anki Decks | SIE, CFA, Insurance, Real Estate | UniPrep2Go",
+      absolute: title,
     },
-    description:
-      "26 free timed mocks and 74 Anki decks for SIE, CFA, FRM, insurance, and real estate. No signup. Start with the free FINRA SIE practice test.",
+    description,
     alternates: { canonical: absoluteUrl("/") },
     openGraph: {
-      title: "Free Practice Tests & Anki Decks | SIE, CFA, Insurance | UniPrep2Go",
-      description:
-        "26 free timed mocks and 74 Anki decks for US licensing and finance. Start with the free FINRA SIE practice test — no signup.",
+      title,
+      description,
       url: absoluteUrl("/"),
+      images: [
+        {
+          url: "/home/hero.webp",
+          width: 1200,
+          height: 630,
+          alt: "UniPrep2Go free online practice tests for US licensing exams",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description:
+        "Timed mocks with topic reports — plus Anki decks for daily drilling. Start with a free practice test.",
+      images: ["/home/hero.webp"],
     },
   });
 }

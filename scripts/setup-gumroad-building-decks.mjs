@@ -96,7 +96,7 @@ async function loadDeckMeta() {
   return { getAllMockExams: configs.getAllMockExams, titles };
 }
 
-/** Gumroad expects HTML descriptions; plain \\n via CLI gets stored as literal backslash-n. */
+/** Minimal HTML fallback on create. Prefer `python3 scripts/polish-building-gumroad.py` afterward for exam context + FAQ + samples. */
 function buildProductDescription({ title, mockPath, apkgReady }) {
   const delivery = apkgReady
     ? "Instant download. After checkout, open your Gumroad library or receipt and download the Anki <code>.apkg</code> file immediately."
@@ -108,6 +108,7 @@ function buildProductDescription({ title, mockPath, apkgReady }) {
 
   return [
     `<p><strong>${title}</strong> — independent UniPrep2Go Anki deck for active recall.</p>`,
+    "<p><strong>Note:</strong> Run <code>python3 scripts/polish-building-gumroad.py --slug …</code> after create to publish full exam context, FAQ, and sample-card screenshots.</p>",
     mockLink,
     `<p><strong>Delivery:</strong> ${delivery}</p>`,
     "<p>Import into Anki desktop (File → Import), then sync to AnkiMobile or AnkiDroid via AnkiWeb.</p>",

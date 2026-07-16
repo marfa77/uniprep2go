@@ -5,7 +5,6 @@ import {
   finalize,
   mockExamRobots,
   shouldIndexMockExam,
-  thinContentRobots,
   truncateSeoTitle,
 } from "./seo";
 import { absoluteUrl } from "./site";
@@ -34,9 +33,9 @@ describe("seo utilities (Barakhlo patterns)", () => {
     expect(meta.openGraph?.url).toBe(absoluteUrl("/mock-exams/sie-full-mock"));
   });
 
-  it("noindexes preview mocks even when banks are runnable", () => {
-    expect(shouldIndexMockExam("epa-608-readiness-check")).toBe(false);
-    expect(mockExamRobots("epa-608-readiness-check")).toEqual(thinContentRobots);
+  it("indexes live runnable mocks linked to monetized decks", () => {
+    expect(shouldIndexMockExam("epa-608-readiness-check")).toBe(true);
+    expect(mockExamRobots("epa-608-readiness-check")).toBeUndefined();
     expect(shouldIndexMockExam("sie-full-mock")).toBe(true);
     expect(mockExamRobots("sie-full-mock")).toBeUndefined();
   });

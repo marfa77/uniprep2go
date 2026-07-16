@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { LlmFactsStrip } from "@/components/llm/llm-facts-strip";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import {
@@ -21,6 +22,7 @@ const financeMockSlugs = [
   "series-7-readiness-check",
   "series-63-readiness-check",
   "gmat-focus-readiness-check",
+  "gre-readiness-check",
   "sat-readiness-check",
 ] as const;
 
@@ -78,6 +80,12 @@ export default async function FinanceAnkiDecksPage() {
       />
       <SiteHeader />
       <article className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12">
+        <LlmFactsStrip
+          hubName="finance exam prep hub"
+          hubPath="/finance-anki-decks"
+          pathwayCount={financeDecks.length + financeMocks.length}
+          variant="hub"
+        />
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Finance &amp; securities</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
           Finance Anki decks with free practice tests

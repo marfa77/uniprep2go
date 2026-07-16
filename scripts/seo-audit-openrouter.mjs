@@ -20,6 +20,7 @@ import {
   collectInventory,
   collectLiveSamples,
   runRuleChecks,
+  synthesizeLocalAudit,
 } from "./lib/seo-audit-collect.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -197,7 +198,15 @@ async function main() {
   let specialists = [];
   let synthesis = null;
 
-  if (!args.rulesOnly) {
+  if (args.rulesOnly) {
+    console.log("→ Local synthesis (rules + live, no OpenRouter)");
+    synthesis = {
+      agent: "local_rules",
+      label: "Local SEO Rules Engine",
+      model: "local",
+      report: synthesizeLocalAudit(inventory, ruleIssues, liveSamples),
+    };
+  } else {
     const credentials = loadCredentials();
     const specialistKeys = ["technical_seo", "content_marketer", "conversion_strategist"];
     specialists = await Promise.all(

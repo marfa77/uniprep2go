@@ -103,6 +103,27 @@ export function DeckExamFactsSection({
         </div>
       ) : null}
 
+      {/* Visible Q&A for People-Also-Ask / AEO — not buried in a collapsible. */}
+      {!compact && profile.candidate_qa.length > 0 ? (
+        <div className="mt-10" id="exam-questions">
+          <h3 className="text-lg font-semibold tracking-tight">
+            Common {facts.exam_name} questions
+          </h3>
+          <p className="mt-2 text-sm leading-7 text-[#5f5749]">
+            Straight answers to the questions candidates usually search before buying prep or booking
+            the exam.
+          </p>
+          <div className="mt-6 space-y-6">
+            {profile.candidate_qa.map((item) => (
+              <article key={item.q}>
+                <h4 className="text-base font-semibold text-[#18140f]">{item.q}</h4>
+                <p className="mt-2 text-sm leading-7 text-[#4f493e]">{item.a}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      ) : null}
+
       <p className="mt-6 text-xs leading-6 text-[#7a6e5a]">
         Verify current exam fees, scheduling, and administrative details at{" "}
         <a

@@ -63,6 +63,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: `${siteUrl}/llms.txt`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    {
+      url: `${siteUrl}/llms-full.txt`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.65,
+    },
+    {
+      url: `${siteUrl}/decks`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.94,
+    },
+    {
       url: `${siteUrl}/building-certification-anki-decks`,
       lastModified,
       changeFrequency: "weekly",
