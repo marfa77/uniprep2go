@@ -486,7 +486,8 @@ export default async function DeckPage({
         ) : null}
 
         {!isPlanned &&
-        availableDeck?.checkoutProvider !== "App Store" &&
+        availableDeck &&
+        availableDeck.checkoutProvider !== "App Store" &&
         deck.sampleCards.length > 0 ? (
           <section className="mt-10 rounded-3xl border border-[#1f3a5f]/20 bg-[#fffaf0] p-6 sm:p-8">
             <h2 className="text-xl font-semibold tracking-tight">Ready to drill with the full deck?</h2>
@@ -505,8 +506,8 @@ export default async function DeckPage({
           </section>
         ) : null}
 
-        {pricedCompanionDeck ? (
-          <DeckCompanionProductSection companion={pricedCompanionDeck} deck={deck} />
+        {pricedCompanionDeck && availableDeck ? (
+          <DeckCompanionProductSection companion={pricedCompanionDeck} deck={availableDeck} />
         ) : null}
 
         <section id="facts" className="mt-12">
