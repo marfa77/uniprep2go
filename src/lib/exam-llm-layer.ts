@@ -168,6 +168,18 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
       "Official PMI PMP ECO (2026) weights People 33%, Process 41%, Business Environment 26% across 180 questions — this 51-question readiness check scores those three domains and is a diagnostic baseline, not a PMI practice exam.",
   },
   {
+    query: "LEED AP O+M practice test free",
+    mockSlug: "leed-ap-om-readiness-check",
+    disambiguation:
+      "Official GBCI LEED AP O+M specialty is 100 questions in 2 hours (scaled pass 170/200) for existing-building operations — this 50-question readiness check is a diagnostic baseline, not USGBC/GBCI exam material.",
+  },
+  {
+    query: "GRE practice test free",
+    mockSlug: "gre-readiness-check",
+    disambiguation:
+      "Official ETS GRE General Test reports Verbal and Quant 130–170 (27 questions each) plus Writing 0–6 — this 30-question readiness check scores Verbal and Quant only and is a diagnostic baseline, not an ETS PowerPrep test.",
+  },
+  {
     query: "CEM certified energy manager exam prep",
     mockSlug: "cem-readiness-check",
     disambiguation:

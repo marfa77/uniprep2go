@@ -11,10 +11,12 @@ import ptcbPharmacyTechnicianMockBank from "@/data/mock-exams/ptcb-pharmacy-tech
 import gmatFocusReadinessBank from "@/data/mock-exams/gmat-focus-readiness-check.json";
 import satReadinessBank from "@/data/mock-exams/sat-readiness-check.json";
 import pmpReadinessBank from "@/data/mock-exams/pmp-readiness-check.json";
+import greReadinessBank from "@/data/mock-exams/gre-readiness-check.json";
 import epa608ReadinessBank from "@/data/mock-exams/epa-608-readiness-check.json";
 import bmsBasReadinessBank from "@/data/mock-exams/bms-bas-readiness-check.json";
 import leedGreenAssociateReadinessBank from "@/data/mock-exams/leed-green-associate-readiness-check.json";
 import leedApBdCReadinessBank from "@/data/mock-exams/leed-ap-bd-c-readiness-check.json";
+import leedApOmReadinessBank from "@/data/mock-exams/leed-ap-om-readiness-check.json";
 import wellApReadinessBank from "@/data/mock-exams/well-ap-readiness-check.json";
 import cemReadinessBank from "@/data/mock-exams/cem-readiness-check.json";
 import ashraeCertificationsReadinessBank from "@/data/mock-exams/ashrae-certifications-readiness-check.json";
@@ -42,10 +44,12 @@ const banksBySlug: Record<string, MockQuestion[]> = {
   "gmat-focus-readiness-check": gmatFocusReadinessBank as unknown as MockQuestion[],
   "sat-readiness-check": satReadinessBank as unknown as MockQuestion[],
   "pmp-readiness-check": pmpReadinessBank as unknown as MockQuestion[],
+  "gre-readiness-check": greReadinessBank as unknown as MockQuestion[],
   "epa-608-readiness-check": epa608ReadinessBank as unknown as MockQuestion[],
   "bms-bas-readiness-check": bmsBasReadinessBank as unknown as MockQuestion[],
   "leed-green-associate-readiness-check": leedGreenAssociateReadinessBank as unknown as MockQuestion[],
   "leed-ap-bd-c-readiness-check": leedApBdCReadinessBank as unknown as MockQuestion[],
+  "leed-ap-om-readiness-check": leedApOmReadinessBank as unknown as MockQuestion[],
   "well-ap-readiness-check": wellApReadinessBank as unknown as MockQuestion[],
   "cem-readiness-check": cemReadinessBank as unknown as MockQuestion[],
   "ashrae-certifications-readiness-check": ashraeCertificationsReadinessBank as unknown as MockQuestion[],

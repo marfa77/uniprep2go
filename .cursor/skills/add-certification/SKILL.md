@@ -57,7 +57,7 @@ If overall % can pass while a scored section fails, set `passRule.requireAllTopi
 | Layer | Size |
 |-------|------|
 | Timed session | `sum(topic.questionCount)` (e.g. SAT 27+22=49) |
-| Sale / Anki bank | User target or default **~50/topic** via OpenRouter; academic large banks via local expand scripts (`scripts/expand-*-bank-local.py`) when API cost/time is high |
+| Sale / Anki bank | User target or default **~50/topic** via **local** `scripts/expand-*-bank-local.py` only (never OpenRouter for bank authoring) |
 | After LLM validate `--apply` | Sync `ankiDeckCardCount`, `building-deck-specs.json` `cardCount` / `gumroadName`, deck copy, SEO titles |
 
 Live mocks may have banks **larger than** session size. Runnable rules use `>=` topic quotas (`question-bank.ts`). Validator accepts `--slug` for live registry banks.
@@ -128,15 +128,17 @@ npm run generate:deck-covers -- --slug {deckSlug}
 npm run generate:deck-covers -- --gumroad-thumbnails --slug {deckSlug}
 ```
 
-### 7. Bank generation
+### 7. Bank generation (ALWAYS LOCAL — never OpenRouter)
 
-**Prefer OpenRouter** when key resolves:
+**Hard rule:** mock question banks are generated **only with local expand scripts**. Do **not** call `npm run generate:mock-banks` / OpenRouter for bank authoring.
 
 ```bash
-MOCK_BANK_QUESTIONS_PER_TOPIC={N} npm run generate:mock-banks -- --slug {mockSlug}
+# Pattern: scripts/expand-{id}-bank-local.py (see expand-sat-bank-local.py / expand-gmat-bank-local.py)
+python3 scripts/expand-{id}-bank-local.py
+# Writes src/data/mock-exams/{mockSlug}.json + .generation-cache/{mockSlug}/
 ```
 
-**Else** local expand (SAT/GMAT pattern): `scripts/expand-{id}-bank-local.py` → write bank JSON + optional `.generation-cache/`.
+If no expand script exists for the cert yet, **create one** (template factories + seeded RNG), then run it. OpenRouter bank generation is forbidden for this pipeline.
 
 ### 8. LLM bank validation (mandatory)
 
@@ -225,14 +227,16 @@ Warnings: gumroad-live, mock-validation, llm-high-intent, homepage-links, mock-i
 |--------|---------|
 | `scaffold:certification` | Registry + checklist |
 | `validate:certification` | Blocking gates |
-| `generate:mock-banks` | OpenRouter bank gen |
+| `expand-*-bank-local.py` | **Local** bank gen (required) |
+| `generate:mock-banks` | ❌ Do not use for banks |
 | `validate:mock-banks` | Gemini cross-validation (+ `--apply`) |
 | `generate:deck-covers` | Cover + `--gumroad-thumbnails` |
 | `setup:gumroad-building-decks` | Create / assets / publish |
 
 ## Orchestration tips
 
-- Parallelize: bank gen ‖ cover gen ‖ wire-up; then validate → apkg → Gumroad → deploy
+- Parallelize: **local** bank expand ‖ cover gen ‖ wire-up; then validate → apkg → Gumroad → deploy
+- Never start OpenRouter bank generation even if a key is present
 - Parent agent always re-runs `validate:certification` after subagents
 - Never commit `scripts/local-banks/`, `scripts/*-bank-data/`, or raw OpenRouter keys
 - Keep `.env.local` out of git; persist tokens there for the next run

@@ -44,6 +44,12 @@ const DECK_CONFIGS = {
     monogram: "LEED GA",
     panelKind: "building",
   },
+  "leed-ap-om-anki-deck": {
+    title: "LEED AP O+M\nAnki Deck",
+    subtitle: "Existing building operations flashcards",
+    monogram: "O+M",
+    panelKind: "building",
+  },
   "leed-ap-bd-c-anki-deck": {
     title: "LEED AP BD+C\nAnki Deck",
     subtitle: "Building design + construction specialty flashcards",
@@ -116,6 +122,12 @@ const DECK_CONFIGS = {
     title: "PMP\nAnki Deck",
     subtitle: "Project management certification flashcards",
     monogram: "PMP",
+    panelKind: "finance",
+  },
+  "gre-anki-deck": {
+    title: "GRE General\nAnki Deck",
+    subtitle: "Graduate admissions flashcards",
+    monogram: "GRE",
     panelKind: "finance",
   },
 };
@@ -303,6 +315,7 @@ const BUILDING_DECK_SLUGS = [
   "bms-building-automation-anki-deck",
   "leed-green-associate-anki-deck",
   "leed-ap-bd-c-anki-deck",
+  "leed-ap-om-anki-deck",
   "well-ap-anki-deck",
   "cem-anki-deck",
   "ashrae-certifications-anki-deck",
@@ -314,6 +327,7 @@ const BUILDING_DECK_SLUGS = [
   "gmat-focus-anki-deck",
   "sat-anki-deck",
   "pmp-anki-deck",
+  "gre-anki-deck",
 ];
 
 function resolveSlugs(args, deckConfigs) {

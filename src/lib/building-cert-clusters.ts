@@ -28,6 +28,7 @@ export const BUILDING_CLUSTER_MEMBERS: Record<BuildingClusterId, readonly string
   "green-building": [
     "leed-green-associate-anki-deck",
     "leed-ap-bd-c-anki-deck",
+    "leed-ap-om-anki-deck",
     "well-ap-anki-deck",
     "cem-anki-deck",
   ],
@@ -39,7 +40,7 @@ export const BUILDING_CLUSTER_MEMBERS: Record<BuildingClusterId, readonly string
   "safety-fire": ["nebosh-anki-deck", "cfps-anki-deck"],
   "construction-surveying": ["mrics-anki-deck", "mrics-quantity-surveying-anki-deck"],
   datacenter: ["cdcp-anki-deck"],
-  "mba-admissions": ["gmat-focus-anki-deck"],
+  "mba-admissions": ["gmat-focus-anki-deck", "gre-anki-deck"],
   "college-admissions": ["sat-anki-deck"],
   "project-management": ["pmp-anki-deck"],
 };
@@ -53,7 +54,8 @@ const DECK_TO_CLUSTER = Object.fromEntries(
 /** Cross-sell pairs within the building certification line. */
 export const BUILDING_COMPANION_DECK_BY_SLUG: Record<string, string> = {
   "leed-green-associate-anki-deck": "leed-ap-bd-c-anki-deck",
-  "leed-ap-bd-c-anki-deck": "leed-green-associate-anki-deck",
+  "leed-ap-bd-c-anki-deck": "leed-ap-om-anki-deck",
+  "leed-ap-om-anki-deck": "leed-ap-bd-c-anki-deck",
   "well-ap-anki-deck": "leed-green-associate-anki-deck",
   "cem-anki-deck": "leed-ap-bd-c-anki-deck",
   "hvac-epa-608-anki-deck": "bms-building-automation-anki-deck",

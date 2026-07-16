@@ -18,6 +18,9 @@ const satDisclaimer =
 const pmpDisclaimer =
   "This is an independent readiness diagnostic. It is not official PMI PMP exam material and does not award the Project Management Professional credential.";
 
+const greDisclaimer =
+  "This is an independent readiness diagnostic. It is not official ETS GRE exam material and does not predict your official GRE scores.";
+
 const epa608Disclaimer =
   "This is an independent readiness diagnostic. It is not official U.S. EPA Section 608 exam material and does not certify you to handle refrigerants.";
 
@@ -703,6 +706,54 @@ export const mockExamConfigs: MockExamConfig[] = [
     ankiDeckCardCount: 346,
   },
   {
+    slug: "gre-readiness-check",
+    title: "GRE General Readiness Check",
+    shortTitle: "GRE Readiness",
+    linkedDeckSlug: "gre-anki-deck",
+    status: "live",
+    accessMode: "free_demand_test",
+    durationMinutes: 45,
+    questionCount: 30,
+    passRule: {
+      type: "readiness_check",
+      passPercent: 70,
+      borderlinePercent: 65,
+      // Official GRE reports Verbal and Quant as separate 130–170 scores; both must clear target.
+      requireAllTopicsAtTarget: true,
+      verdictLabels: {
+        pass: "READINESS PASS",
+        noPass: "NO PASS",
+        borderline: "BORDERLINE RISK",
+      },
+    },
+    topics: [
+      {
+        id: "verbal",
+        label: "Verbal Reasoning",
+        questionCount: 15,
+        weightPercent: 50,
+        targetPercent: 70,
+      },
+      {
+        id: "quant",
+        label: "Quantitative Reasoning",
+        questionCount: 15,
+        weightPercent: 50,
+        targetPercent: 70,
+      },
+    ],
+    officialSourceNote:
+      "Modeled on the ETS GRE General Test: Verbal Reasoning and Quantitative Reasoning each report 130–170 (27 questions per measure across two section-level adaptive sections). Analytical Writing (0–6) is a separate essay measure and is not part of this MCQ readiness check. Sample session is 15+15. Not an ETS practice test and not adaptive.",
+    disclaimer: greDisclaimer,
+    description:
+      "A 30-question GRE General readiness diagnostic scored on the two official MCQ axes — Verbal Reasoning and Quantitative Reasoning — with pacing feedback and full answer review. Independent prep aligned to ETS section types.",
+    examBody: "ETS",
+    lastUpdated: "2026-07-16",
+    questionSourceNote:
+      "Original UniPrep2Go questions authored for the GRE General readiness check (175 Verbal + 175 Quant in the Anki bank; 30-question timed session).",
+    ankiDeckCardCount: 350,
+  },
+  {
     slug: "epa-608-readiness-check",
     title: "EPA Section 608 HVAC Certification Readiness Check",
     shortTitle: "EPA 608 Readiness",
@@ -951,6 +1002,73 @@ export const mockExamConfigs: MockExamConfig[] = [
     lastUpdated: "2026-06-02",
     questionSourceNote:
       "Original UniPrep2Go questions (250-item bank, 50 per domain) authored via OpenRouter with Gemini cross-validation; each session samples 10 per domain.",
+  },
+  {
+    slug: "leed-ap-om-readiness-check",
+    title: "LEED AP O+M Readiness Check",
+    shortTitle: "LEED AP O+M Readiness",
+    linkedDeckSlug: "leed-ap-om-anki-deck",
+    status: "live",
+    accessMode: "free_demand_test",
+    durationMinutes: 100,
+    questionCount: 50,
+    passRule: {
+      type: "readiness_check",
+      passPercent: 70,
+      borderlinePercent: 65,
+      verdictLabels: {
+        pass: "READINESS PASS",
+        noPass: "NO PASS",
+        borderline: "BORDERLINE RISK",
+      },
+    },
+    topics: [
+      {
+        id: "process-integrative",
+        label: "LEED Process and Integrative Planning",
+        questionCount: 10,
+        weightPercent: 20,
+        targetPercent: 70,
+      },
+      {
+        id: "location-sites",
+        label: "Location, Transportation, and Sustainable Sites",
+        questionCount: 8,
+        weightPercent: 16,
+        targetPercent: 70,
+      },
+      {
+        id: "water-efficiency",
+        label: "Water Efficiency",
+        questionCount: 5,
+        weightPercent: 10,
+        targetPercent: 70,
+      },
+      {
+        id: "energy-atmosphere",
+        label: "Energy and Atmosphere",
+        questionCount: 12,
+        weightPercent: 24,
+        targetPercent: 70,
+      },
+      {
+        id: "materials-ieq",
+        label: "Materials, Resources, and Indoor Environmental Quality",
+        questionCount: 15,
+        weightPercent: 30,
+        targetPercent: 70,
+      },
+    ],
+    officialSourceNote:
+      "Modeled on the GBCI LEED AP Operations + Maintenance specialty exam (100 questions, 2 hours, scaled pass 170/200). Topic weights approximate LEED v5 O+M knowledge domains, emphasizing Energy and Atmosphere and Indoor Environmental Quality. Requires an active LEED Green Associate for the specialty-only path. Not USGBC/GBCI exam material.",
+    disclaimer: usgbcDisclaimer,
+    description:
+      "A 50-question LEED AP O+M readiness diagnostic across process/integrative planning, site and transportation, water, energy/atmosphere, and materials/IEQ — with pacing feedback and full answer review. Independent prep for existing-building operations credentials.",
+    examBody: "GBCI / USGBC",
+    lastUpdated: "2026-07-16",
+    questionSourceNote:
+      "Original UniPrep2Go questions authored for the LEED AP O+M readiness check (250 cards across five domain groups; 50-question timed session).",
+    ankiDeckCardCount: 250,
   },
   {
     slug: "well-ap-readiness-check",

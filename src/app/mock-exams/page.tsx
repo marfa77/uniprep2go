@@ -50,6 +50,7 @@ const mockClusters = [
       "cfa-level-2-readiness-check",
       "frm-part-1-readiness-check",
       "gmat-focus-readiness-check",
+      "gre-readiness-check",
       "sat-readiness-check",
     ],
   },
@@ -59,6 +60,7 @@ const mockClusters = [
     slugs: [
       "epa-608-readiness-check",
       "leed-green-associate-readiness-check",
+      "leed-ap-om-readiness-check",
       "well-ap-readiness-check",
       "mrics-readiness-check",
       "pmp-readiness-check",

@@ -922,6 +922,81 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "SAT and College Board are trademarks of the College Board. UniPrep2Go is not affiliated with or endorsed by the College Board.",
   },
+  "gre": {
+    examKey: "gre",
+    pageHeading: "GRE General Test — Sections, Scoring & Prep Facts",
+    intro:
+      "The GRE General Test is ETS's graduate admissions exam. It reports Verbal Reasoning and Quantitative Reasoning scores from 130–170 each, plus Analytical Writing from 0–6. This page summarizes official structure; UniPrep2Go products are independent prep (not ETS material).",
+    exam_facts: {
+      exam_name: "GRE General Test",
+      administered_by: "ETS (Educational Testing Service)",
+      question_count: "1 Analytical Writing task + 54 objective questions (27 Verbal + 27 Quantitative)",
+      scored_count: "All Verbal and Quantitative questions contribute to section scores; Writing scored separately",
+      time_limit: "1 hour 58 minutes total (Writing 30 min; Verbal 41 min across two sections; Quant 47 min across two sections)",
+      scoring_scale: "Verbal 130–170; Quantitative 130–170; Analytical Writing 0–6 (half-point increments)",
+      passing_score: "No pass/fail score — graduate programs set their own expectations for Verbal, Quant, and Writing",
+      delivery: "Computer-delivered at test centers or at home (where offered) — verify current options at ets.org/gre",
+      outline_effective_date: "Shorter GRE General Test format (from September 22, 2023)",
+      verify_at_url: "https://www.ets.org/gre/test-takers/general-test/prepare/test-structure.html",
+    },
+    official_sources: [
+      {
+        label: "ETS — GRE General Test structure",
+        url: "https://www.ets.org/gre/test-takers/general-test/prepare/test-structure.html",
+      },
+      {
+        label: "ETS — Getting your GRE scores",
+        url: "https://www.ets.org/gre/test-takers/general-test/scores/get-scores.html",
+      },
+      {
+        label: "ETS — GRE General Test overview",
+        url: "https://www.ets.org/gre/test-takers/general-test.html",
+      },
+    ],
+    domain_weights: [
+      {
+        domain: "Verbal Reasoning",
+        weight: "Section score 130–170 (27 questions across two adaptive sections: Text Completion, Sentence Equivalence, Reading Comprehension)",
+      },
+      {
+        domain: "Quantitative Reasoning",
+        weight: "Section score 130–170 (27 questions across two adaptive sections: arithmetic, algebra, geometry, data analysis; on-screen calculator)",
+      },
+      {
+        domain: "Analytical Writing",
+        weight: "Separate 0–6 score — one Analyze an Issue essay (30 minutes); not part of UniPrep2Go MCQ readiness check",
+      },
+    ],
+    whats_changed: [
+      "From September 22, 2023 the GRE General Test shortened to about 1 hour 58 minutes.",
+      "Analytical Writing dropped from two tasks to one Analyze an Issue task.",
+      "Verbal and Quant each use 12 + 15 question sections (27 total per measure) with section-level adaptive difficulty.",
+      "Verbal and Quant score scales remain 130–170; Writing remains 0–6.",
+    ],
+    high_yield_facts: [
+      "Official reportable MCQ axes are Verbal and Quant (130–170 each) — treat them as separate scores, not one blended percentage.",
+      "Section 2 difficulty depends on Section 1 performance within each measure.",
+      "No guessing penalty — answer every question.",
+      "Analytical Writing is scored separately and is not included in MCQ practice banks.",
+      "ETS PowerPrep remains the closest official full-length adaptive practice.",
+    ],
+    candidate_qa: [
+      {
+        q: "How is the GRE General Test scored?",
+        a: "You receive Verbal and Quantitative scores from 130 to 170 each, plus an Analytical Writing score from 0 to 6. Programs usually review all three.",
+      },
+      {
+        q: "How long is the GRE and how many questions are on it?",
+        a: "About 1 hour 58 minutes: one 30-minute Issue essay, 27 Verbal questions (41 minutes), and 27 Quantitative questions (47 minutes).",
+      },
+      {
+        q: "Is the GRE adaptive?",
+        a: "Yes for Verbal and Quant — section-level adaptive. How you do on the first section of a measure affects the difficulty of the second section.",
+      },
+    ],
+    trademark_note:
+      "GRE® is a registered trademark of ETS. UniPrep2Go is not affiliated with or endorsed by ETS.",
+  },
   "pmp": {
     examKey: "pmp",
     pageHeading: "PMP — Domains, Scoring & Prep Facts",
@@ -1199,6 +1274,75 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     ],
     trademark_note:
       "LEED and USGBC are registered trademarks of the U.S. Green Building Council. GBCI is a registered trademark of Green Business Certification Inc.",
+  },
+  "leed-ap-om": {
+    examKey: "leed-ap-om",
+    pageHeading: "LEED AP O+M — Domains, Scoring & Prep Facts",
+    intro:
+      "LEED AP Operations + Maintenance is a GBCI specialty credential for professionals who improve performance of existing buildings through operations and maintenance. The specialty exam is 100 multiple-choice questions in 2 hours with a scaled passing score of 170/200. UniPrep2Go products are independent prep (not USGBC/GBCI material).",
+    exam_facts: {
+      exam_name: "LEED AP Operations + Maintenance (LEED AP O+M)",
+      administered_by: "GBCI (Green Business Certification Inc.) / USGBC",
+      question_count: "100 multiple-choice questions (specialty exam)",
+      scored_count: "Includes scored items; unscored pretest items may appear",
+      time_limit: "2 hours for the specialty exam",
+      scoring_scale: "Scaled score out of 200",
+      passing_score: "170 out of 200",
+      delivery: "Prometric test center or online remote proctoring — verify current options at usgbc.org / gbci.org",
+      outline_effective_date: "LEED AP O+M specialty; LEED v5 transition window in 2026 (verify current handbook for your test date)",
+      verify_at_url: "https://www.usgbc.org/credentials/leed-ap",
+    },
+    official_sources: [
+      {
+        label: "USGBC — LEED AP with specialty",
+        url: "https://www.usgbc.org/credentials/leed-ap",
+      },
+      {
+        label: "USGBC — About the LEED AP with specialty exam",
+        url: "https://support.usgbc.org/hc/en-us/articles/4404371728019-About-the-LEED-AP-with-specialty-exam",
+      },
+      {
+        label: "USGBC — LEED v5 exam information",
+        url: "https://support.usgbc.org/hc/en-us/articles/29656794179987-LEED-v5-exam-information",
+      },
+    ],
+    domain_weights: [
+      { domain: "LEED Process", weight: "~10 questions — MPRs, certification cycle, addenda, innovation/pilot" },
+      { domain: "Integrative Process Planning and Assessments", weight: "~10 questions — CFR/O+M plan, resilience, human impact, worker safety" },
+      { domain: "Location and Transportation", weight: "~8 questions — sustainable transportation performance, TDM, EVs, bike infrastructure" },
+      { domain: "Sustainable Sites", weight: "~5 questions — heat island, light pollution, bird collision" },
+      { domain: "Water Efficiency", weight: "~7 questions — metering, water use intensity, advanced metering" },
+      { domain: "Energy and Atmosphere", weight: "~21 questions — energy monitoring, commissioning, refrigerants, GHG, renewables (heaviest domain)" },
+      { domain: "Materials and Resources", weight: "~7 questions — waste diversion and reduction strategies" },
+      { domain: "Indoor Environmental Quality", weight: "~17 questions — ventilation, IAQ, green cleaning, IPM, occupant experience" },
+    ],
+    whats_changed: [
+      "LEED v5 commercial systems (including O+M) launched in 2025; LEED AP specialty exams transition toward v5 content through 2026 beta/final windows.",
+      "O+M emphasizes performance periods, ongoing reporting, and existing-building operations rather than new-construction design credits.",
+      "Energy and Atmosphere and Indoor Environmental Quality remain the heaviest specialty domains for O+M.",
+    ],
+    high_yield_facts: [
+      "Specialty exam: 100 MCQ in 2 hours; scaled pass 170/200.",
+      "Active LEED Green Associate is required for the specialty-only registration path.",
+      "Study operations performance periods, metering, retro-/monitoring-based commissioning, waste diversion, and IAQ operations — not BD+C design modeling alone.",
+      "Verify whether your test date is still v4-aligned or v5-aligned using the current GBCI/USGBC handbook.",
+    ],
+    candidate_qa: [
+      {
+        q: "What is the LEED AP O+M passing score?",
+        a: "A scaled score of 170 out of 200 on the 100-question specialty exam.",
+      },
+      {
+        q: "How is LEED AP O+M different from LEED AP BD+C?",
+        a: "O+M focuses on operating and maintaining existing buildings. BD+C focuses on design and construction of new buildings and major renovations.",
+      },
+      {
+        q: "Do I need LEED Green Associate first?",
+        a: "Yes for the specialty-only path. Some candidates can sit a combined GA + AP exam where offered — confirm current GBCI options.",
+      },
+    ],
+    trademark_note:
+      "LEED® and USGBC® are trademarks of the U.S. Green Building Council. GBCI® is a trademark of Green Business Certification Inc. UniPrep2Go is not affiliated with or endorsed by USGBC or GBCI.",
   },
   "leed-ap-bd-c": {
     examKey: "leed-ap-bd-c",
@@ -1930,10 +2074,12 @@ const deckExamKeyMap: Record<string, string> = {
   "gmat-focus-anki-deck": "gmat",
   "sat-anki-deck": "sat",
   "pmp-anki-deck": "pmp",
+  "gre-anki-deck": "gre",
   "hvac-epa-608-anki-deck": "epa-608",
   "bms-building-automation-anki-deck": "bms-bas",
   "leed-green-associate-anki-deck": "leed-green-associate",
   "leed-ap-bd-c-anki-deck": "leed-ap-bd-c",
+  "leed-ap-om-anki-deck": "leed-ap-om",
   "well-ap-anki-deck": "well-ap",
   "cem-anki-deck": "cem",
   "ashrae-certifications-anki-deck": "ashrae-certifications",

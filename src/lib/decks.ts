@@ -1994,6 +1994,82 @@ const rawDecks: Deck[] = [
     ],
   },
 
+
+  {
+    slug: "gre-anki-deck",
+    category: "academic",
+    status: "planned",
+    coverImage: "/covers/gre-anki-deck.webp",
+    title: "GRE General Anki Deck",
+    shortName: "GRE",
+    subtitle: "A planned spaced-repetition deck for GRE Verbal Reasoning and Quantitative Reasoning.",
+    directAnswer:
+      "The GRE General Anki Deck is a planned UniPrep2Go product with 350 flashcards across Verbal and Quantitative Reasoning. It is not yet available for purchase. Take the free GRE readiness check to benchmark both scored sections first.",
+    lastUpdated: "2026-07-16",
+    audience:
+      "Graduate school applicants preparing for the ETS GRE General Test using spaced repetition alongside PowerPrep.",
+    format: ".apkg",
+    facts: {
+      cards: "350",
+      topics: "Verbal Reasoning, Quantitative Reasoning",
+      formulas: "High-yield GRE Verbal (TC/SE/RC) and Quant (arithmetic, algebra, geometry, data analysis) drills",
+      examYear: "GRE General Test (Verbal/Quant 130–170)",
+      delivery: "Digital download (planned)",
+    },
+    topicCoverage: [
+      {
+        name: "Verbal Reasoning",
+        examWeight: "Section score 130–170 (27 official questions)",
+        cards: "175",
+      },
+      {
+        name: "Quantitative Reasoning",
+        examWeight: "Section score 130–170 (27 official questions)",
+        cards: "175",
+      },
+    ],
+    sampleCards: [
+      {
+        question:
+          "The scientist's theory was initially dismissed as ______, but subsequent experiments provided compelling evidence that forced even skeptical peers to reconsider.",
+        answer:
+          "Correct: (c) specious. Sentence completion rewards precise vocabulary for a claim that looked false but later gained support.",
+        imageUrl: "/samples/gre-anki-deck-sample-1.webp",
+      },
+      {
+        question:
+          "If 3x + 2y = 18 and x − y = 1, what is the value of x + y?",
+        answer:
+          "Correct: (d) 7. From x − y = 1 and 3x + 2y = 18, solve to x = 4 and y = 3, so x + y = 7.",
+        imageUrl: "/samples/gre-anki-deck-sample-2.webp",
+      },
+      {
+        question:
+          "Which of the following, if true, most weakens an argument that city bike lanes caused a drop in car congestion solely because bike trips rose after lanes opened?",
+        answer:
+          "Correct: (a) A major employer moved remote work policies at the same time, independently cutting commute volume. Classic GRE RC weaken item — alternate cause.",
+        imageUrl: "/samples/gre-anki-deck-sample-3.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is there a free GRE practice test?",
+        answer:
+          "Yes. Take the free 30-question GRE General readiness check at uniprep2go.study/mock-exams/gre-readiness-check — scored on Verbal and Quant with full answer review. The paid Anki deck includes 350 cards from the same validated bank for daily drilling.",
+      },
+      {
+        question: "How is this mock scored compared with the real GRE?",
+        answer:
+          "The official GRE General Test reports Verbal and Quantitative scores from 130–170 each (plus Analytical Writing 0–6). Our readiness check uses the two MCQ axes — both must meet the readiness target for a pass. Writing is not included.",
+      },
+      {
+        question: "How many cards are in the GRE Anki deck?",
+        answer:
+          "The deck includes 350 flashcards — 175 Verbal and 175 Quantitative — built from the same validated item bank as the free readiness check.",
+      },
+    ],
+  },
+
   {
     slug: "cat4-level-d-anki-deck-printable-pdf",
     category: "academic",
@@ -2603,6 +2679,76 @@ const rawDecks: Deck[] = [
       },
     ],
   },
+  {
+    slug: "leed-ap-om-anki-deck",
+    category: "professional",
+    status: "planned",
+    coverImage: "/covers/leed-ap-om-anki-deck.webp",
+    title: "LEED AP O+M Anki Deck",
+    shortName: "LEED AP O+M",
+    subtitle: "A planned spaced-repetition deck for LEED AP Operations + Maintenance on existing buildings.",
+    directAnswer:
+      "The LEED AP O+M Anki Deck is a planned UniPrep2Go product with 250 flashcards for GBCI LEED AP Operations + Maintenance. It is not yet available for purchase. Take the free LEED AP O+M readiness check first. Requires LEED Green Associate for the specialty pathway.",
+    lastUpdated: "2026-07-16",
+    audience:
+      "Facility managers, building engineers, and LEED Green Associates pursuing LEED AP O+M for existing-building operations.",
+    format: ".apkg",
+    facts: {
+      cards: "250",
+      topics: "Process & integrative planning, location & sites, water, energy & atmosphere, materials & IEQ",
+      formulas: "High-yield O+M performance, metering, commissioning, waste, IAQ, and green cleaning drills",
+      examYear: "LEED AP O+M (GBCI specialty; LEED v5 transition window)",
+      delivery: "Digital download (planned)",
+    },
+    topicCoverage: [
+      { name: "LEED Process and Integrative Planning", examWeight: "~20% of O+M domains", cards: "50" },
+      { name: "Location, Transportation, and Sustainable Sites", examWeight: "~16%", cards: "50" },
+      { name: "Water Efficiency", examWeight: "~10%", cards: "50" },
+      { name: "Energy and Atmosphere", examWeight: "~24% (heaviest O+M domain)", cards: "50" },
+      { name: "Materials, Resources, and IEQ", examWeight: "~30%", cards: "50" },
+    ],
+    sampleCards: [
+      {
+        question:
+          "During an O+M performance period, the team notices Energy Star scores dropped after occupancy rose. What should they verify first before changing HVAC setpoints?",
+        answer:
+          "Correct: (b) Whether the reporting period still meets minimum occupancy and baseline comparison rules. O+M energy credits hinge on valid performance-period conditions before operational tweaks.",
+        imageUrl: "/samples/leed-ap-om-anki-deck-sample-1.webp",
+      },
+      {
+        question:
+          "A facility wants credit for waste diversion but seasonal holiday packaging spikes distort monthly totals. What is the best documentation approach?",
+        answer:
+          "Correct: (a) Track intermittent and seasonal streams consistently across the full performance period and document diversion methods. O+M Materials domains expect complete period data, not cherry-picked quiet months.",
+        imageUrl: "/samples/leed-ap-om-anki-deck-sample-2.webp",
+      },
+      {
+        question:
+          "Occupant surveys show low satisfaction with air quality near a loading dock. Which IEQ response best fits LEED O+M practice?",
+        answer:
+          "Correct: (c) Investigate ventilation/filtration performance and source pathways, then adjust operations or testing—not only reissue the survey. IEQ credits pair monitoring with corrective facility stewardship.",
+        imageUrl: "/samples/leed-ap-om-anki-deck-sample-3.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is there a free LEED AP O+M practice test?",
+        answer:
+          "Yes. Take the free 50-question LEED AP O+M readiness check at uniprep2go.study/mock-exams/leed-ap-om-readiness-check. The paid Anki deck includes 250 cards from the same validated bank.",
+      },
+      {
+        question: "Do I need LEED Green Associate before LEED AP O+M?",
+        answer:
+          "Yes for the specialty-only exam path — an active LEED GA is required. Combined GA + AP sittings may be available in some languages/centers; verify current GBCI registration options.",
+      },
+      {
+        question: "How is this different from LEED AP BD+C?",
+        answer:
+          "BD+C targets design and construction of new buildings/major renovations. O+M targets ongoing operations and maintenance of existing buildings — metering, performance periods, commissioning, waste, and IAQ operations.",
+      },
+    ],
+  },
+
   {
     slug: "well-ap-anki-deck",
     category: "professional",

@@ -260,6 +260,25 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfile>> = {
       "Project managers and aspirants preparing for the PMI PMP certification who want a domain-weighted baseline before a full-length mock or paid study course.",
     practiceTestLabel: "PMP practice test",
   },
+  "gre-readiness-check": {
+    title: "Free GRE Practice Test | 30-Question Mock",
+    description:
+      "Free GRE General practice questions online: 30 timed questions across Verbal Reasoning and Quantitative Reasoning, 45 minutes, 70% readiness target with both section axes required, and full answer review. Independent GRE prep — not ETS material.",
+    keywords: [
+      "gre practice test",
+      "gre mock exam",
+      "free gre practice questions",
+      "gre readiness check",
+      "gre verbal practice",
+      "gre quant practice test",
+    ],
+    headline: "Free GRE General Readiness Check",
+    intro:
+      "A timed GRE General readiness diagnostic scored on the two official ETS MCQ axes — Verbal Reasoning and Quantitative Reasoning (130–170 each). Both sections must clear the readiness bar for a pass. Analytical Writing is not included in this MCQ check.",
+    audience:
+      "Graduate and business school applicants who want a baseline timed diagnostic before official ETS PowerPrep or tutoring.",
+    practiceTestLabel: "GRE practice test",
+  },
   "epa-608-readiness-check": {
     title: "Free EPA 608 Practice Test | 40-Question Mock",
     description:
@@ -333,6 +352,24 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfile>> = {
     audience:
       "Design professionals, sustainability consultants, and LEED GA holders preparing for the LEED AP BD+C specialty exam.",
     practiceTestLabel: "LEED AP BD+C practice test",
+  },
+  "leed-ap-om-readiness-check": {
+    title: "Free LEED AP O+M Practice Test | 50-Question Mock",
+    description:
+      "Free LEED AP Operations + Maintenance practice questions online: 50 timed questions across process, sites, water, energy, and IEQ for existing buildings, 100 minutes, 70% readiness target, and full answer review. Independent LEED prep — not USGBC/GBCI material.",
+    keywords: [
+      "leed ap o+m practice test",
+      "leed operations and maintenance exam",
+      "leed om practice questions",
+      "leed ap om readiness check",
+      "existing building leed exam prep",
+    ],
+    headline: "Free LEED AP O+M Readiness Check",
+    intro:
+      "A timed LEED AP Operations + Maintenance readiness diagnostic for existing-building teams — process and integrative planning, transportation and sites, water, energy/atmosphere, and materials/IEQ — aligned to GBCI specialty domains.",
+    audience:
+      "Facility managers, sustainability leads, and LEED Green Associates preparing for the LEED AP O+M specialty exam on existing buildings.",
+    practiceTestLabel: "LEED AP O+M practice test",
   },
   "well-ap-readiness-check": {
     title: "Free WELL AP Practice Test | 50-Question WELL Accredited Professional Readiness Check",

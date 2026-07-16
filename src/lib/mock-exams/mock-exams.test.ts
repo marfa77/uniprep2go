@@ -87,6 +87,27 @@ describe("mock exam configs", () => {
     expect(config?.passRule.passPercent).toBe(70);
     expect(validateMockExamConfig(config!)).toEqual([]);
   });
+
+
+  it("defines LEED AP O+M topic counts that sum to 50", () => {
+    const config = getMockExamConfig("leed-ap-om-readiness-check");
+    expect(config?.questionCount).toBe(50);
+    expect(config?.topics.reduce((sum, topic) => sum + (topic.questionCount ?? 0), 0)).toBe(50);
+    expect(config?.topics.map((t) => t.weightPercent).reduce((a, b) => a + b, 0)).toBe(100);
+    expect(validateMockExamConfig(config!)).toEqual([]);
+  });
+
+  it("defines GRE General readiness check with Verbal/Quant section scoring", () => {
+    const config = getMockExamConfig("gre-readiness-check");
+    expect(config).not.toBeNull();
+    expect(config?.questionCount).toBe(30);
+    expect(config?.topics).toHaveLength(2);
+    expect(config?.topics.map((topic) => topic.id)).toEqual(["verbal", "quant"]);
+    expect(config?.topics.map((topic) => topic.weightPercent)).toEqual([50, 50]);
+    expect(config?.topics.reduce((sum, topic) => sum + (topic.questionCount ?? 0), 0)).toBe(30);
+    expect(config?.passRule.requireAllTopicsAtTarget).toBe(true);
+    expect(validateMockExamConfig(config!)).toEqual([]);
+  });
 });
 
 describe("question bank from deck content", () => {
