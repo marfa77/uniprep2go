@@ -49,3 +49,33 @@ export function nicheReadinessConfig(
     },
   });
 }
+
+/** Bankless waitlist niche — indexed SEO guide + notify CTA until the bank ships. */
+export function nicheWaitlistConfig(
+  partial: Omit<
+    MockExamConfigDraft,
+    "accessMode" | "passRule" | "disclaimer" | "lastUpdated" | "status"
+  > & {
+    passPercent?: number;
+    lastUpdated?: string;
+  },
+): MockExamConfig {
+  const { passPercent = 70, lastUpdated = "2026-07-16", ...rest } = partial;
+  return finalizeMockExamConfig({
+    ...rest,
+    accessMode: "coming_soon",
+    status: "coming_soon",
+    disclaimer: NICHE_DISCLAIMER,
+    lastUpdated,
+    passRule: {
+      type: "readiness_check",
+      passPercent,
+      borderlinePercent: passPercent - 5,
+      verdictLabels: {
+        pass: "READINESS PASS",
+        noPass: "NO PASS",
+        borderline: "BORDERLINE RISK",
+      },
+    },
+  });
+}

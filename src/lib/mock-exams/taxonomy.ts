@@ -1,6 +1,7 @@
 import type { MockClusterImageType } from "./cluster-images";
 import type { MockExamConfig, MockExamConfigDraft, MockExamTaxonomy, MockVerticalId } from "./types";
 import { wave3TaxonomyEntries } from "./wave3-taxonomy";
+import { wave4TaxonomyEntries } from "./wave4-taxonomy";
 
 export type MockVerticalDefinition = {
   id: MockVerticalId;
@@ -602,6 +603,7 @@ export function getFamilyLabel(familyId: string) {
 const TAXONOMY_LOOKUP: Record<string, TaxonomyEntry> = {
   ...TAXONOMY_BY_SLUG,
   ...wave3TaxonomyEntries,
+  ...wave4TaxonomyEntries,
 };
 
 export function getTaxonomyForSlug(slug: string): MockExamTaxonomy {

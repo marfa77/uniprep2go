@@ -37,8 +37,9 @@ export function getMockAccessState(mockSlug: string): MockAccessState | null {
         accessMode: config.accessMode,
         fullReportUnlocked: false,
         interestCaptureEnabled: true,
-        ctaLabel: "Request early access",
-        ctaDescription: "This mock is not live yet. Register interest to get notified when it launches.",
+        ctaLabel: "Notify me when this launches",
+        ctaDescription:
+          "This free timed practice test is on the waitlist. Tap notify and we’ll ping the founder (Telegram) when the question bank goes live — no spam list.",
       };
   }
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getMockExamConfig } from "./mock-exams/configs";
+import { getNicheExamExplainer } from "./mock-exams/niche-exam-explainers";
 import { isMockExamRunnable } from "./mock-exams/question-bank";
 import { absoluteUrl, siteConfig } from "./site";
 
@@ -99,13 +100,24 @@ export function leafPageTitle(title: string, max = 60): Metadata["title"] {
   return { absolute: fitSeoTitle(title, max) };
 }
 
-/** Live mocks with complete runnable banks are indexable. */
+/**
+ * Indexable mocks:
+ * - live + runnable bank
+ * - coming_soon waitlist pages with a niche explainer (thick SEO guide + notify CTA)
+ */
 export function shouldIndexMockExam(slug: string): boolean {
   const config = getMockExamConfig(slug);
-  if (!config || config.status !== "live") {
+  if (!config) {
     return false;
   }
-  return isMockExamRunnable(slug);
+  if (config.status === "live") {
+    return isMockExamRunnable(slug);
+  }
+  if (config.status === "coming_soon") {
+    const explainer = getNicheExamExplainer(slug);
+    return Boolean(explainer?.whatIsExam && (explainer.examFaqs?.length ?? 0) >= 6);
+  }
+  return false;
 }
 
 export function mockExamRobots(slug: string): Metadata["robots"] | undefined {

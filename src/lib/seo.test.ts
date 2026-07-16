@@ -40,10 +40,20 @@ describe("seo utilities (Barakhlo patterns)", () => {
     expect(mockExamRobots("sie-full-mock")).toBeUndefined();
   });
 
-  it("indexes only live mocks with runnable banks", () => {
+  it("indexes live runnable mocks and thick coming_soon waitlist mocks", () => {
     for (const mock of getAllMockExams()) {
-      const expected = mock.status === "live" && isMockExamRunnable(mock.slug);
-      expect(shouldIndexMockExam(mock.slug)).toBe(expected);
+      const expected =
+        mock.status === "live"
+          ? isMockExamRunnable(mock.slug)
+          : mock.status === "coming_soon"
+            ? shouldIndexMockExam(mock.slug)
+            : false;
+      if (mock.status === "live") {
+        expect(shouldIndexMockExam(mock.slug)).toBe(expected);
+      } else if (mock.status === "coming_soon") {
+        expect(shouldIndexMockExam(mock.slug)).toBe(true);
+        expect(mockExamRobots(mock.slug)).toBeUndefined();
+      }
     }
   });
 });

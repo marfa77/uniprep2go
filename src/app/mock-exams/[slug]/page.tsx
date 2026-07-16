@@ -10,7 +10,10 @@ import {
   MockExamAboutVisibleSection,
   MockExamFeaturedFaqSection,
   MockExamFaqSection,
+  MockExamHowToPrepareSection,
+  MockExamTopicOutlineSection,
   MockExamWhatIsSection,
+  MockExamWhoForSection,
 } from "@/components/mock-exams/mock-seo-sections";
 import { CollapsibleDetails } from "@/components/ui/collapsible-details";
 import { SiteFooter } from "@/components/site-footer";
@@ -148,9 +151,11 @@ export default async function MockExamPage({
         className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12"
       >
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-          {config.slug === "servsafe-manager-mock" || config.slug === "ptcb-pharmacy-technician-mock"
-            ? "Professional certification mocks · free timed practice test"
-            : "Exam prep mocks · free timed practice test"}
+          {config.status === "coming_soon"
+            ? "Exam prep · free practice test coming soon · notify me"
+            : config.slug === "servsafe-manager-mock" || config.slug === "ptcb-pharmacy-technician-mock"
+              ? "Professional certification mocks · free timed practice test"
+              : "Exam prep mocks · free timed practice test"}
         </p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
           {seoCopy.headline}
@@ -161,8 +166,9 @@ export default async function MockExamPage({
             : seoCopy.whatIsExam}
         </p>
         <p className="mt-3 max-w-2xl text-base leading-7 text-[#5f5749]">
-          {config.questionCount} questions · {config.durationMinutes} min · {config.passRule.passPercent}% pass
-          target · free
+          {config.status === "coming_soon"
+            ? `Planned ${config.questionCount} questions · ${config.durationMinutes} min · ${config.passRule.passPercent}% pass target · notify when live`
+            : `${config.questionCount} questions · ${config.durationMinutes} min · ${config.passRule.passPercent}% pass target · free`}
           {seoCopy.administeredBy ? ` · ${seoCopy.administeredBy}` : ""}
         </p>
         <OfficialSourceTrustStrip className="mt-4 max-w-2xl" compact />
@@ -185,6 +191,9 @@ export default async function MockExamPage({
         ) : null}
 
         <MockExamWhatIsSection config={config} />
+        <MockExamWhoForSection config={config} />
+        <MockExamHowToPrepareSection config={config} />
+        <MockExamTopicOutlineSection config={config} />
         <MockExamAboutVisibleSection config={config} />
 
         <MockExamFeaturedFaqSection config={config} limit={6} />

@@ -64,7 +64,11 @@ export function MockInterestCta({ config, cta, report, compact = false }: MockIn
         onClick={registerInterest}
         type="button"
       >
-        {status === "done" ? "Thanks — interest recorded" : status === "error" ? "Try again" : "Register interest"}
+        {status === "done"
+          ? "Thanks — we will notify you"
+          : status === "error"
+            ? "Try again"
+            : cta.label}
       </button>
     </section>
   );

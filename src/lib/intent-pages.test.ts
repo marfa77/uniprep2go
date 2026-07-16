@@ -98,6 +98,10 @@ describe("intent pages visibility", () => {
     }
 
     expect(urls).toContain(absoluteUrl("/building-certification-anki-decks"));
-    expect(getAllMockExams().every((mock) => isMockExamRunnable(mock.slug))).toBe(true);
+    expect(
+      getAllMockExams()
+        .filter((mock) => mock.status === "live")
+        .every((mock) => isMockExamRunnable(mock.slug)),
+    ).toBe(true);
   });
 });

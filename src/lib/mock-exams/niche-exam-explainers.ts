@@ -4,6 +4,7 @@
  */
 
 import { wave3ExamExplainers } from "./wave3-explainers";
+import { wave4ExamExplainers } from "./wave4-explainers";
 
 export type NicheExamExplainer = {
   /** Practice-test product name for H1 / titles */
@@ -14,6 +15,12 @@ export type NicheExamExplainer = {
   administeredBy: string;
   /** Official format note when publicly known */
   officialFormat?: string;
+  /** Who should pursue this exam (SEO body) */
+  whoFor?: string;
+  /** Prep guidance while the timed bank is on the waitlist */
+  howToPrepare?: string;
+  /** Optional per-topic blurbs for outline sections */
+  topicBlurbs?: Array<{ id: string; label: string; blurb: string }>;
   /** Informational PAA FAQs about the real exam (not the mock product) */
   examFaqs: Array<{ question: string; answer: string }>;
   keywords: string[];
@@ -620,5 +627,10 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
 };
 
 export function getNicheExamExplainer(slug: string) {
-  return nicheExamExplainers[slug] ?? wave3ExamExplainers[slug] ?? null;
+  return (
+    nicheExamExplainers[slug] ??
+    wave3ExamExplainers[slug] ??
+    wave4ExamExplainers[slug] ??
+    null
+  );
 }

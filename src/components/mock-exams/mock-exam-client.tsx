@@ -233,6 +233,8 @@ export function MockExamClient({ config, questions, accessState, linkedCheckout,
               >
                 {startButtonLabel(config)}
               </button>
+            ) : cta?.interestCaptureEnabled ? (
+              <MockInterestCta compact config={config} cta={cta} />
             ) : (
               <p className="text-sm font-medium text-[#5f5749]">
                 Question bank loading — check back soon

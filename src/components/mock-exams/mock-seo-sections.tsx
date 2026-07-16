@@ -34,9 +34,55 @@ export function MockExamWhatIsSection({ config }: { config: MockExamConfig }) {
   );
 }
 
+export function MockExamWhoForSection({ config }: { config: MockExamConfig }) {
+  const copy = buildMockSeoPageCopy(config);
+  return (
+    <section className="mt-10" id="who-for">
+      <h2 className="text-2xl font-semibold tracking-tight">Who this exam is for</h2>
+      <p className="mt-4 text-base leading-8 text-[#4f493e]">{copy.whoFor}</p>
+    </section>
+  );
+}
+
+export function MockExamHowToPrepareSection({ config }: { config: MockExamConfig }) {
+  const copy = buildMockSeoPageCopy(config);
+  return (
+    <section className="mt-10" id="how-to-prepare">
+      <h2 className="text-2xl font-semibold tracking-tight">How to prepare</h2>
+      <p className="mt-4 text-base leading-8 text-[#4f493e]">{copy.howToPrepare}</p>
+    </section>
+  );
+}
+
+export function MockExamTopicOutlineSection({ config }: { config: MockExamConfig }) {
+  const copy = buildMockSeoPageCopy(config);
+  const blurbs = copy.topicBlurbs ?? [];
+
+  return (
+    <section className="mt-10" id="topic-outline">
+      <h2 className="text-2xl font-semibold tracking-tight">Topic outline</h2>
+      <p className="mt-4 text-base leading-8 text-[#4f493e]">
+        Core domains candidates usually study for {config.shortTitle}: {copy.topicSummary}.
+      </p>
+      <ul className="mt-5 space-y-4">
+        {config.topics.map((topic) => {
+          const blurb = blurbs.find((b) => b.id === topic.id)?.blurb;
+          return (
+            <li key={topic.id} className="border-l-2 border-[#1f3a5f]/25 pl-4">
+              <p className="font-semibold text-[#18140f]">{topic.label}</p>
+              {blurb ? <p className="mt-1 text-sm leading-7 text-[#4f493e]">{blurb}</p> : null}
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+}
+
 export function MockExamAboutSection({ config }: { config: MockExamConfig }) {
   const copy = buildMockSeoPageCopy(config);
   const linkedDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
+  const waitlist = copy.isWaitlist;
 
   return (
     <div className="space-y-4 text-sm leading-7 text-[#4f493e]">
@@ -45,11 +91,14 @@ export function MockExamAboutSection({ config }: { config: MockExamConfig }) {
         <span className="font-medium text-[#18140f]">Built for:</span> {copy.audience}
       </p>
       <p>
-        <span className="font-medium text-[#18140f]">Topics on this practice test:</span>{" "}
+        <span className="font-medium text-[#18140f]">
+          {waitlist ? "Planned topics on this practice test:" : "Topics on this practice test:"}
+        </span>{" "}
         {copy.topicSummary}.
       </p>
       <ul className="grid gap-2 sm:grid-cols-2">
         <li className="rounded-2xl bg-[#18140f]/5 px-4 py-3">
+          {waitlist ? "Planned: " : ""}
           {config.questionCount} timed multiple-choice questions
         </li>
         <li className="rounded-2xl bg-[#18140f]/5 px-4 py-3">
@@ -59,15 +108,17 @@ export function MockExamAboutSection({ config }: { config: MockExamConfig }) {
           {config.passRule.passPercent}% pass threshold with topic breakdown
         </li>
         <li className="rounded-2xl bg-[#18140f]/5 px-4 py-3">
-          Full answer review after you submit
+          {waitlist ? "Notify when the bank launches" : "Full answer review after you submit"}
         </li>
       </ul>
-      <p className="text-[#5f5749]">{mockFreeAccessNotice}</p>
+      {!waitlist ? <p className="text-[#5f5749]">{mockFreeAccessNotice}</p> : null}
       <Link
         className="inline-flex font-semibold text-[#1f3a5f] underline-offset-4 hover:underline"
         href={`/decks/${config.linkedDeckSlug}`}
       >
-        Drill weak topics with {linkedDeck?.shortName ?? "the linked"} flashcards
+        {waitlist
+          ? `Join the ${linkedDeck?.shortName ?? "linked"} Anki waitlist`
+          : `Drill weak topics with ${linkedDeck?.shortName ?? "the linked"} flashcards`}
       </Link>
     </div>
   );
@@ -79,7 +130,11 @@ export function MockExamAboutVisibleSection({ config }: { config: MockExamConfig
 
   return (
     <section className="mt-10" id="mock-about">
-      <h2 className="text-2xl font-semibold tracking-tight">About this free {copy.practiceTestLabel}</h2>
+      <h2 className="text-2xl font-semibold tracking-tight">
+        {copy.isWaitlist
+          ? `About the planned free ${copy.practiceTestLabel}`
+          : `About this free ${copy.practiceTestLabel}`}
+      </h2>
       <div className="mt-4">
         <MockExamAboutSection config={config} />
       </div>

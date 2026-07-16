@@ -30,11 +30,42 @@ function defaultProfile(config: MockExamConfig): MockSeoProfile {
   const niche = getNicheExamExplainer(config.slug);
   const examLabel = config.examBody;
   const practiceName = niche?.practiceTestName ?? `${config.shortTitle} Practice Test`;
+  const waitlist = config.status === "coming_soon";
   const type = config.status === "live" ? "practice test" : "readiness check";
   const aliasKeywords = (config.searchAliases ?? []).flatMap((alias) => [
     `${alias.toLowerCase()} practice test`,
     `${alias.toLowerCase()} practice exam`,
   ]);
+
+  if (waitlist) {
+    return {
+      title: `Free ${practiceName} 2026 | Coming Soon`,
+      description: niche
+        ? `${practiceName} coming soon on UniPrep2Go: planned ${config.questionCount}-question timed diagnostic (${config.durationMinutes} min, ${config.passRule.passPercent}% target) with topic scoring. Notify when it launches. ${niche.administeredBy}. Independent prep — not official exam material.`
+        : `${config.shortTitle} free practice test coming soon: planned ${config.questionCount} timed questions, notify when live. Independent prep — not official exam material.`,
+      keywords: [
+        ...(niche?.keywords ?? []),
+        `free ${config.shortTitle.toLowerCase()} practice test`,
+        `${config.shortTitle.toLowerCase()} practice exam`,
+        `${examLabel.toLowerCase()} practice questions`,
+        ...aliasKeywords,
+      ].slice(0, 12),
+      headline: `Free ${practiceName} (Coming Soon)`,
+      intro: `${config.description} The timed question bank is on the waitlist — use Notify me when this launches, and study the exam guide on this page meanwhile.`,
+      audience:
+        niche?.whoFor ??
+        (niche
+          ? `Candidates preparing for ${niche.practiceTestName.replace(/ Practice Test$/i, "")} who want a timed diagnostic with topic-level feedback when it launches.`
+          : `Candidates preparing for ${examLabel} licensing or certification exams who want a timed diagnostic with topic-level feedback.`),
+      practiceTestLabel: practiceName.replace(/^Free\s+/i, ""),
+      whatIsExam:
+        niche?.whatIsExam ??
+        `${config.shortTitle} is an exam pathway administered under ${examLabel}. ${config.officialSourceNote} This UniPrep2Go page is an independent exam guide and waitlist for a free timed practice test — not official exam material.`,
+      administeredBy: niche?.administeredBy ?? examLabel,
+      officialFormat: niche?.officialFormat,
+      examFaqs: niche?.examFaqs,
+    };
+  }
 
   return {
     title: `Free ${practiceName} 2026 | ${config.questionCount} Questions Online`,
@@ -50,9 +81,11 @@ function defaultProfile(config: MockExamConfig): MockSeoProfile {
     ].slice(0, 12),
     headline: `Free ${practiceName}`,
     intro: `${config.description} Use this free timed ${type} as a baseline before exam day or before drilling the linked Anki deck.`,
-    audience: niche
-      ? `Candidates preparing for ${niche.practiceTestName.replace(/ Practice Test$/i, "")} who want a timed diagnostic with topic-level feedback.`
-      : `Candidates preparing for ${examLabel} licensing or certification exams who want a timed diagnostic with topic-level feedback.`,
+    audience:
+      niche?.whoFor ??
+      (niche
+        ? `Candidates preparing for ${niche.practiceTestName.replace(/ Practice Test$/i, "")} who want a timed diagnostic with topic-level feedback.`
+        : `Candidates preparing for ${examLabel} licensing or certification exams who want a timed diagnostic with topic-level feedback.`),
     practiceTestLabel: practiceName.replace(/^Free\s+/i, ""),
     whatIsExam:
       niche?.whatIsExam ??
@@ -628,20 +661,25 @@ export function buildMockSeoKeywords(config: MockExamConfig) {
 export function buildMockSearchFaqs(config: MockExamConfig) {
   const profile = getMockSeoProfile(config);
   const examFaqs = profile.examFaqs ?? [];
+  const waitlist = config.status === "coming_soon";
 
   return [
     ...examFaqs,
     {
       question: `Is there a free ${profile.practiceTestLabel}?`,
-      answer: `Yes — ${siteConfig.name} hosts a free online ${profile.practiceTestLabel} with ${config.questionCount} timed questions, ${config.durationMinutes} minutes, a ${config.passRule.passPercent}% pass target, topic scoring, and a full answer review report. ${mockFreeAccessPriceLabel}.`,
+      answer: waitlist
+        ? `A free ${profile.practiceTestLabel} is coming soon on ${siteConfig.name}: planned ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% pass target, and topic scoring. Use Notify me when this launches on this page.`
+        : `Yes — ${siteConfig.name} hosts a free online ${profile.practiceTestLabel} with ${config.questionCount} timed questions, ${config.durationMinutes} minutes, a ${config.passRule.passPercent}% pass target, topic scoring, and a full answer review report. ${mockFreeAccessPriceLabel}.`,
     },
     {
       question: `How many questions are on this free ${profile.practiceTestLabel}?`,
-      answer: `This UniPrep2Go ${config.status === "live" ? "practice test" : "readiness check"} has ${config.questionCount} multiple-choice questions timed against a ${config.durationMinutes}-minute target. ${config.officialSourceNote}`,
+      answer: waitlist
+        ? `The planned UniPrep2Go readiness check will have ${config.questionCount} multiple-choice questions timed against a ${config.durationMinutes}-minute target. ${config.officialSourceNote}`
+        : `This UniPrep2Go ${config.status === "live" ? "practice test" : "readiness check"} has ${config.questionCount} multiple-choice questions timed against a ${config.durationMinutes}-minute target. ${config.officialSourceNote}`,
     },
     {
       question: `What score do you need on this ${profile.practiceTestLabel}?`,
-      answer: `The pass target on this practice test is ${config.passRule.passPercent}%. Your report also breaks down performance by topic so you can see weak areas before the real exam.`,
+      answer: `The pass target on this practice test is ${config.passRule.passPercent}%. ${waitlist ? "When the bank launches, " : ""}Your report also breaks down performance by topic so you can see weak areas before the real exam.`,
     },
     {
       question: `Who should take this ${profile.practiceTestLabel}?`,
@@ -687,11 +725,17 @@ export function buildMockSeoPageCopy(config: MockExamConfig) {
     headline: profile.headline,
     intro: profile.intro,
     audience: profile.audience,
+    whoFor: niche?.whoFor ?? profile.audience,
+    howToPrepare:
+      niche?.howToPrepare ??
+      `Review the official ${config.examBody} outline for ${config.shortTitle}, study each topic on this page, and use Notify me when this launches so you can take the free timed diagnostic when the bank ships.`,
     topicSummary: config.topics.map((topic) => topic.label).join(", "),
+    topicBlurbs: niche?.topicBlurbs ?? [],
     practiceTestLabel: profile.practiceTestLabel,
     whatIsExam: profile.whatIsExam,
     administeredBy: profile.administeredBy,
     officialFormat: profile.officialFormat,
+    isWaitlist: config.status === "coming_soon",
     whatIsHeading: niche
       ? `What is the ${niche.practiceTestName.replace(/ Practice Test$/i, "")} exam?`
       : `What is the ${config.shortTitle} exam?`,
@@ -704,7 +748,7 @@ export function buildMockExamHubFaqs(indexedCount: number, totalCount: number) {
   return [
     {
       question: "How many free practice tests does UniPrep2Go offer?",
-      answer: `${indexedCount} live indexed timed mocks have complete question banks and are promoted in search — including FINRA SIE, Series 7, CFA, FRM, ServSafe, PTCB, EPA 608, LEED, MRICS, GMAT Focus, and other monetized pathways. ${previewCount > 0 ? `${previewCount} additional readiness checks stay noindex until banks are complete. ` : ""}${mockFreeAccessNotice}`,
+      answer: `${indexedCount} indexed exam pages are promoted in search — including live timed mocks (FINRA SIE, Series 7, CFA, FRM, ServSafe, PTCB, EPA 608, LEED, MRICS, GMAT Focus, and other pathways) plus waitlist readiness guides with notify CTAs. ${previewCount > 0 ? `${previewCount} additional pages are not yet indexed. ` : ""}${mockFreeAccessNotice}`,
     },
     {
       question: "Do I need to sign up for the free mocks?",
