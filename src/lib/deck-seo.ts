@@ -400,11 +400,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "MBA and business master's applicants using spaced repetition alongside official GMAC materials.",
   },
   "sat-anki-deck": {
-    title: "Digital SAT Exam Prep | 350 Cards + Free Mock",
-    headline: "Digital SAT Exam Prep — 350 Flashcards + Free Mock",
+    title: "Digital SAT Exam Prep | 342 Cards + Free Mock",
+    headline: "Digital SAT Exam Prep — 342 Flashcards + Free Mock",
     studyLabel: "Digital SAT exam prep",
     description:
-      "Digital SAT exam prep with 350 Anki flashcards for Reading and Writing and Math — plus a free 49-question timed readiness check scored on both official section axes. Independent college admissions prep — not College Board material.",
+      "Digital SAT exam prep with 342 Anki flashcards for Reading and Writing and Math — plus a free 49-question timed readiness check scored on both official section axes. Independent college admissions prep — not College Board material.",
     keywords: [
       "digital sat anki deck",
       "sat flashcards",

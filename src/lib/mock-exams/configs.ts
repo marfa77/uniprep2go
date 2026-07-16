@@ -642,7 +642,7 @@ export const mockExamConfigs: MockExamConfig[] = [
     lastUpdated: "2026-07-16",
     questionSourceNote:
       "Original UniPrep2Go questions authored for the Digital SAT readiness check (175 Reading and Writing + 175 Math in the Anki bank; 49-question timed session).",
-    ankiDeckCardCount: 350,
+    ankiDeckCardCount: 342,
   },
   {
     slug: "epa-608-readiness-check",

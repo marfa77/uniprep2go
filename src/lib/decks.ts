@@ -1847,13 +1847,13 @@ const rawDecks: Deck[] = [
     shortName: "Digital SAT",
     subtitle: "A planned spaced-repetition deck for Digital SAT Reading and Writing and Math.",
     directAnswer:
-      "The Digital SAT Anki Deck is a planned UniPrep2Go product with 350 flashcards across Reading and Writing and Math. It is not yet available for purchase. Take the free Digital SAT readiness check to benchmark both scored sections first.",
+      "The Digital SAT Anki Deck is a planned UniPrep2Go product with 342 flashcards across Reading and Writing and Math. It is not yet available for purchase. Take the free Digital SAT readiness check to benchmark both scored sections first.",
     lastUpdated: "2026-07-16",
     audience:
       "High school students preparing for the Digital SAT using spaced repetition alongside College Board Bluebook practice.",
     format: ".apkg",
     facts: {
-      cards: "350",
+      cards: "342",
       topics: "Reading and Writing, Math",
       formulas: "High-yield Digital SAT section skills, grammar rules, algebra, and data analysis drills",
       examYear: "Digital SAT Suite (400–1600 scale)",
@@ -1868,7 +1868,7 @@ const rawDecks: Deck[] = [
       {
         name: "Math",
         examWeight: "Section score 200–800 (44 official questions)",
-        cards: "175",
+        cards: "167",
       },
     ],
     sampleCards: [
@@ -1895,7 +1895,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free Digital SAT practice test?",
         answer:
-          "Yes. Take the free 49-question Digital SAT readiness check at uniprep2go.study/mock-exams/sat-readiness-check — scored on Reading and Writing and Math with full answer review. The paid Anki deck includes 350 cards from the same validated bank for daily drilling.",
+          "Yes. Take the free 49-question Digital SAT readiness check at uniprep2go.study/mock-exams/sat-readiness-check — scored on Reading and Writing and Math with full answer review. The paid Anki deck includes 342 cards from the same validated bank for daily drilling.",
       },
       {
         question: "How is this mock scored compared with the real SAT?",
@@ -1905,7 +1905,7 @@ const rawDecks: Deck[] = [
       {
         question: "How many cards are in the Digital SAT Anki deck?",
         answer:
-          "The deck includes 350 flashcards — 175 Reading and Writing and 175 Math — built from the same validated item bank as the free readiness check.",
+          "The deck includes 342 flashcards — 175 Reading and Writing and 167 Math — built from the same validated item bank as the free readiness check.",
       },
     ],
   },
