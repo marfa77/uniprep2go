@@ -48,9 +48,14 @@ export function MockExamAboutSection({ config }: { config: MockExamConfig }) {
   );
 }
 
-export function MockExamFaqSection({ config }: { config: MockExamConfig }) {
-  const copy = buildMockSeoPageCopy(config);
-  const faqs = buildMockExamFaqs(config);
+export function MockExamFaqSection({
+  config,
+  skip = 0,
+}: {
+  config: MockExamConfig;
+  skip?: number;
+}) {
+  const faqs = buildMockExamFaqs(config).slice(skip);
 
   return (
     <dl className="space-y-5">
@@ -61,6 +66,32 @@ export function MockExamFaqSection({ config }: { config: MockExamConfig }) {
         </div>
       ))}
     </dl>
+  );
+}
+
+/** Top FAQs as visible headings for AEO snippet readiness — remainder stay in collapsible FAQ. */
+export function MockExamFeaturedFaqSection({
+  config,
+  limit = 4,
+}: {
+  config: MockExamConfig;
+  limit?: number;
+}) {
+  const copy = buildMockSeoPageCopy(config);
+  const faqs = buildMockExamFaqs(config).slice(0, limit);
+
+  return (
+    <section className="mt-10" id="mock-faq-featured">
+      <h2 className="text-2xl font-semibold tracking-tight">{copy.practiceTestLabel} — quick answers</h2>
+      <div className="mt-6 space-y-6">
+        {faqs.map((faq) => (
+          <article key={faq.question}>
+            <h3 className="text-lg font-semibold text-[#18140f]">{faq.question}</h3>
+            <p className="mt-2 text-sm leading-7 text-[#4f493e]">{faq.answer}</p>
+          </article>
+        ))}
+      </div>
+    </section>
   );
 }
 

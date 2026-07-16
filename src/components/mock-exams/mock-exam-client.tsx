@@ -12,6 +12,7 @@ import {
 } from "@/lib/mock-exams/scoring";
 import { MockInterestCta } from "./mock-interest-cta";
 import { MockReportPanel } from "./mock-report";
+import type { LinkedDeckCheckout } from "./mock-report-handoff";
 import { MockRunner } from "./mock-runner";
 import { trackMockEvent } from "./mock-analytics";
 import { useEffect, useMemo, useState } from "react";
@@ -22,6 +23,7 @@ type MockExamClientProps = {
   config: MockExamConfig;
   questions: MockQuestion[];
   accessState: MockAccessState;
+  linkedCheckout: LinkedDeckCheckout | null;
   runnable: boolean;
 };
 
@@ -37,7 +39,7 @@ function scrollToTop() {
   window.requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "smooth" }));
 }
 
-export function MockExamClient({ config, questions, accessState, runnable }: MockExamClientProps) {
+export function MockExamClient({ config, questions, accessState, linkedCheckout, runnable }: MockExamClientProps) {
   const [screen, setScreen] = useState<Screen>("landing");
   const [attemptSeed, setAttemptSeed] = useState<string>("");
   const [report, setReport] = useState<MockReport | null>(null);
@@ -149,22 +151,25 @@ export function MockExamClient({ config, questions, accessState, runnable }: Moc
   }
 
   if (screen === "results" && report) {
+    const linkedDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
+    const hideInterestCta = Boolean(linkedCheckout?.checkoutUrl);
+
     return (
       <div className="space-y-8">
-        <MockReportPanel config={config} report={report} />
-        {cta?.interestCaptureEnabled ? (
+        <MockReportPanel config={config} linkedCheckout={linkedCheckout} report={report} />
+        {cta?.interestCaptureEnabled && !hideInterestCta ? (
           <MockInterestCta config={config} cta={cta} report={report} />
         ) : null}
         <div className="flex flex-wrap gap-3">
           <button
-            className="rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
+            className="rounded-lg bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
             onClick={startMock}
             type="button"
           >
             Retake mock
           </button>
           <Link
-            className="inline-flex items-center rounded-full border border-[#18140f]/20 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f]"
+            className="inline-flex items-center rounded-lg border border-[#18140f]/20 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f]"
             href={`/decks/${config.linkedDeckSlug}`}
             onClick={() =>
               trackMockEvent({
@@ -174,9 +179,7 @@ export function MockExamClient({ config, questions, accessState, runnable }: Moc
               })
             }
           >
-            {getCatalogDeckBySlug(config.linkedDeckSlug)?.checkoutUrl
-              ? "Get the full study system"
-              : "Open linked Anki deck"}
+            {linkedDeck?.checkoutUrl ? "View deck page" : "Open linked Anki deck"}
           </Link>
         </div>
       </div>
