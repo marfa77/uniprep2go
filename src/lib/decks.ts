@@ -1881,8 +1881,9 @@ const rawDecks: Deck[] = [
       },
       {
         question:
-          "As used in the sentence below, 'attenuated' most nearly means: \"The signal became attenuated as distance increased.\"",
-        answer: "Correct: (b) weakened. In context, 'attenuated' conveys the sense of 'weakened'.",
+          "Passage: After a city added protected bike lanes, weekday cycling trips rose for 6 consecutive years, while reported bicycle-car collisions fell by 12%. Which inference is best supported by the passage?",
+        answer:
+          "Correct: (d) Protected bike lanes were associated with safer and more frequent cycling. The passage links protected lanes to rising trips and fewer collisions, contrary to critics' prediction.",
         imageUrl: "/samples/sat-anki-deck-sample-2.webp",
       },
       {
