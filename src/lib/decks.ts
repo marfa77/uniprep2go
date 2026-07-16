@@ -1887,8 +1887,10 @@ const rawDecks: Deck[] = [
         imageUrl: "/samples/sat-anki-deck-sample-2.webp",
       },
       {
-        question: "What is the value of x? (square-root algebra item)",
-        answer: "Correct: (a) 144. Square both sides: x = 12² = 144.",
+        question:
+          "In a draft essay (item 24), a writer includes a brief anecdote about a failed launch. What is the most likely purpose of that inclusion?",
+        answer:
+          "Correct: (c) Illustrate a claim about learning from early setbacks. Authors typically insert such material to serve a clear rhetorical function in the argument.",
         imageUrl: "/samples/sat-anki-deck-sample-3.webp",
       },
     ],
