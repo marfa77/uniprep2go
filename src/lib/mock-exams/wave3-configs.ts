@@ -327,7 +327,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to NCSBN themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question NCLEX-RN readiness check with topic scoring.",
     examBody: "NCSBN",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["NCLEX-RN", "RN license exam"],
   }),
   nicheReadinessConfig({
@@ -783,7 +783,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to IRS themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question IRS Enrolled Agent readiness check with topic scoring.",
     examBody: "IRS",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["enrolled agent", "EA exam", "SEE"],
   }),
   nicheReadinessConfig({
@@ -802,7 +802,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to NASAA / FINRA delivery themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Series 65 readiness check with topic scoring.",
     examBody: "NASAA / FINRA delivery",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["Series 65", "investment adviser exam"],
   }),
   nicheReadinessConfig({
@@ -1049,7 +1049,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to NMLS / SAFE MLO themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question SAFE MLO readiness check with topic scoring.",
     examBody: "NMLS / SAFE MLO",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["SAFE MLO", "NMLS exam", "mortgage loan originator"],
   }),
   nicheReadinessConfig({
