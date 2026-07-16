@@ -1874,23 +1874,20 @@ const rawDecks: Deck[] = [
     sampleCards: [
       {
         question:
-          "Which choice most logically completes the text?\n\nResearchers found that urban tree canopy reduces summer surface temperatures. Therefore, cities that expand planting programs are likely to _____.",
+          "Passage: During wartime rationing, households received coupons limiting purchases of sugar and meat. Officials hoped the system would distribute scarce goods more evenly across income levels. What is the main point of the passage?",
         answer:
-          "Correct: experience lower average surface temperatures in summer. The conclusion follows directly from the stated causal relationship between canopy and temperature.",
+          "Correct: (a) Rationing aimed to share scarce goods more fairly. The main point summarizes the historical claim supported by the details given.",
         imageUrl: "/samples/sat-anki-deck-sample-1.webp",
       },
       {
         question:
-          "Which choice completes the text so that it conforms to the conventions of Standard English?\n\nThe committee, after reviewing the proposals, _____ a single vendor.",
-        answer:
-          "Correct: selected. The subject \"committee\" is singular, so the past-tense verb must agree: selected.",
+          "As used in the sentence below, 'attenuated' most nearly means: \"The signal became attenuated as distance increased.\"",
+        answer: "Correct: (b) weakened. In context, 'attenuated' conveys the sense of 'weakened'.",
         imageUrl: "/samples/sat-anki-deck-sample-2.webp",
       },
       {
-        question:
-          "If 3(x − 2) = 2x + 5, what is the value of x?",
-        answer:
-          "Correct: 11. Expand: 3x − 6 = 2x + 5 → x = 11.",
+        question: "What is the value of x? (square-root algebra item)",
+        answer: "Correct: (a) 144. Square both sides: x = 12² = 144.",
         imageUrl: "/samples/sat-anki-deck-sample-3.webp",
       },
     ],
