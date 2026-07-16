@@ -2,157 +2,246 @@
 name: add-certification
 description: >-
   End-to-end UniPrep2Go certification pipeline — mock exam, Anki deck, site funnel,
-  SEO, LLM layer, Gumroad product, covers, bank generation and validation. Use when
-  the user names a new certification, exam, credential, or asks to add a topic
-  under key (мок, анки, сайт, SEO, воронка, LLM, Gumroad, картинки).
+  SEO, GEO/LLM, Gumroad product, covers, bank generation/validation, .apkg export,
+  publish, and production deploy. Use when the user names a new certification, exam,
+  credential, or asks for a full under-key pathway (мок, анки, сайт, SEO, воронка,
+  LLM, Gumroad, картинки, полный пайплайн).
 ---
 
 # Add Certification (UniPrep2Go)
 
-User provides **certification name + exam context**. Agent delivers the full product surface.
+**Under-key default:** when the user names a certification, run the **full pipeline** below without asking permission for each step. Orchestrate with subagents for bank gen, validation, apkg, and Gumroad when useful; parent agent validates gates and deploys.
 
-## Input from user
+## What the user provides
 
-Minimum:
-- Certification / exam name (e.g. "WELL AP", "EPA 608", "MRICS QS")
-- Exam body and independence disclaimer entity
-- Official exam format (questions, time, pass rule) if known
-- 4–8 topic domains for mock + deck
+**Required**
+- Certification / exam name (e.g. "Digital SAT", "WELL AP", "EPA 608")
 
-Optional: target audience, competitor queries, price override.
+**Optional (agent researches if missing)**
+- Exam body, official format, scoring axes, topic domains, price override, audience
 
-**Do not create mock exams for `language` category decks** (DELF, CIPLE, DELE, etc.). Language products are Anki-only; no `/mock-exams/*` config, bank, or funnel links.
+**User-only asset (do not invent as final product art)**
+- **Sample card screenshots** (`public/samples/{deckSlug}-sample-{1,2,3}.webp`) — wait for user captures when possible. Until then ship with cover + placeholders or bank-styled previews, then swap when screenshots arrive.
 
-## Reference implementation
+**Do not create mocks for `language` category decks** (DELF, CIPLE, DELE, etc.). Language = Anki-only.
 
-Copy patterns from **EPA 608**:
-- Mock: `epa-608-readiness-check` in `configs.ts`
-- Deck: `hvac-epa-608-anki-deck` in `decks.ts`
-- Registry: `src/data/certifications/registry.json`
+## Reference implementations
 
-## Pipeline (execute in order)
+| Pattern | Use when |
+|---------|----------|
+| **Digital SAT** (`sat-readiness-check` / `sat-anki-deck`) | Academic admissions; official **section axes** (not arbitrary 4–8 topics); oversized sale bank + sampled session; `requireAllTopicsAtTarget` |
+| **GMAT Focus** | Multi-section academic readiness; large bank; preview→live after QA |
+| **EPA 608** | Professional building/HVAC; 4 domain topics; registry building line |
 
-### 0. Scaffold registry entry
+## Auth (never “lose” tokens)
+
+| Secret | Resolution |
+|--------|------------|
+| Gumroad | `scripts/lib/gumroad-auth.mjs` → `.env.local` → `~/.config/gumroad` → `gumroad auth token` (auto-persist to `.env.local`) |
+| OpenRouter | `scripts/lib/openrouter.mjs` loads `.env.local`, then sibling projects (`CIPLE A2/ciple-master/.env.local`, Anki Generator). **Persist** into uniprep2go `.env.local` when found elsewhere |
+
+Do not stop because `GUMROAD_ACCESS_TOKEN` / `OPENROUTER_API_KEY` are missing from process.env — resolve and sync first.
+
+## Scoring axes rule
+
+**Look up how the real exam is scored**, then map mock `topics` to those axes:
+
+- Digital SAT → **2** section scores (Reading and Writing, Math), not 8 content domains as pass axes
+- GMAT Focus → **3** sections (Quant, Verbal, Data Insights)
+- EPA 608 → Core + Types I–III
+
+If overall % can pass while a scored section fails, set `passRule.requireAllTopicsAtTarget: true` (SAT pattern).
+
+## Bank sizing
+
+| Layer | Size |
+|-------|------|
+| Timed session | `sum(topic.questionCount)` (e.g. SAT 27+22=49) |
+| Sale / Anki bank | User target or default **~50/topic** via OpenRouter; academic large banks via local expand scripts (`scripts/expand-*-bank-local.py`) when API cost/time is high |
+| After LLM validate `--apply` | Sync `ankiDeckCardCount`, `building-deck-specs.json` `cardCount` / `gumroadName`, deck copy, SEO titles |
+
+Live mocks may have banks **larger than** session size. Runnable rules use `>=` topic quotas (`question-bank.ts`). Validator accepts `--slug` for live registry banks.
+
+## Pipeline (execute in order — do not skip)
+
+### 0. Spec + registry
 
 ```bash
-# Create spec from scripts/templates/certification.spec.json
-npm run scaffold:certification -- --spec scripts/templates/my-cert.spec.json
+# Fill scripts/templates/{id}.spec.json from certification.spec.json
+npm run scaffold:certification -- --spec scripts/templates/{id}.spec.json
 ```
 
-Slugs convention:
-- `mockSlug`: `{kebab}-readiness-check`
-- `deckSlug`: `{kebab}-anki-deck` (building/professional)
-- `gumroadPermalink`: usually same as `deckSlug`
+Slugs: `mockSlug` = `{kebab}-readiness-check`, `deckSlug` = `{kebab}-anki-deck`, `gumroadPermalink` ≈ `deckSlug`.
+
+Also add entry to:
+- `src/data/building-deck-specs.json` (apkg metadata: `filePrefix`, `cardCount`, `topics`, `gumroadName`)
+- Cluster map in `src/lib/building-cert-clusters.ts` when it is a new pathway group
 
 ### 1. Mock exam
 
 | File | Action |
 |------|--------|
-| `src/lib/mock-exams/configs.ts` | Add config: topics (4–8), `questionCount`, `durationMinutes`, `passRule`, `linkedDeckSlug`, `status: "preview"`, disclaimer |
-| `src/lib/mock-exams/seo.ts` | Full SEO profile: title, description, keywords, headline, intro, audience |
-| `src/lib/mock-exams/question-bank.ts` | Import `[]` bank + `banksBySlug` entry |
-| `src/data/mock-exams/{mockSlug}.json` | `[]` until generation completes |
+| `src/lib/mock-exams/configs.ts` | topics = **official score axes**, session counts, weights sum 100, `passRule`, `linkedDeckSlug`, start `status: "preview"`, `ankiDeckCardCount`, disclaimer |
+| `src/lib/mock-exams/seo.ts` | Full SEO profile |
+| `src/lib/mock-exams/question-bank.ts` | Import + `banksBySlug` |
+| `src/data/mock-exams/{mockSlug}.json` | `[]` then fill |
 
-Session size = sum of topic `questionCount` (usually 10/topic). Bank size = 50 questions/topic.
-
-### 2. Anki deck
+### 2. Anki deck + catalog
 
 | File | Action |
 |------|--------|
-| `src/lib/decks.ts` | `status: "planned"`, `topicCoverage`, faqs, `coverImage`, professional category |
+| `src/lib/decks.ts` | `status: "planned"`, topicCoverage, faqs, `coverImage`, `sampleCards` paths (even if images pending) |
 | `src/data/gumroad/building-anki-decks.json` | `{ permalink, gumroadProductId: null }` |
-| `scripts/setup-gumroad-building-decks.mjs` | Add Gumroad product title in `titles` map |
+| `src/data/catalog-list-prices.json` | Explicit override (building default USD **11** unless product differs) |
+| `src/data/building-deck-specs.json` | Spec for apkg export |
 
-Launch layer (`anki-deck-launch.ts`) auto-applies when deck is in gumroad catalog — no edit needed.
+Launch layer (`anki-deck-launch.ts`) flips planned → available when Gumroad permalink exists.
 
 ### 3. Site funnel
 
 | File | Action |
 |------|--------|
-| `src/app/decks/[slug]/page.tsx` | Auto via `getDeckPracticeMock` when `linkedDeckSlug` set |
-| `src/app/page.tsx` | Add repair pair `{ mockSlug, deckSlug }` or section link |
-| `src/app/mock-exams/page.tsx` | Add to `usPriorityMockLinks` |
+| Deck page | Auto via `linkedDeckSlug` |
+| `src/app/page.tsx` | Discovery / repair link |
+| `src/app/mock-exams/page.tsx` | Cluster / priority list |
+| Hub pages | `finance-anki-decks` / building hub as relevant |
 
-### 4. SEO
+### 4. SEO / indexation
 
-- Mock page: auto `noindex` until bank runnable (`src/lib/seo.ts`)
-- Titles truncated in page `generateMetadata` only (`truncateSeoTitle`)
-- Sitemap includes mock only when `shouldIndexMockExam(slug)`
+- Start `preview` → `noindex` until bank runnable
+- After bank QA + validation: set `status: "live"` so `shouldIndexMockExam` indexes
+- Deck SEO profile in `src/lib/deck-seo.ts` when framing is non-default
 
-### 5. LLM / GEO layer
-
-| File | Action |
-|------|--------|
-| `src/lib/exam-facts.ts` | Add `examKey` + deck slug mapping (recommended) |
-| `src/lib/exam-llm-layer.ts` | Add `HIGH_INTENT_MOCK_BLOCKS` entry with real user query + disambiguation |
-| `/llms.txt` | Auto-sync via `llm-docs.ts` after catalog update |
-
-Run `npm test` — `exam-llm-layer.test.ts`, `llm-docs.test.ts`.
-
-### 6. Covers
+### 5. LLM / GEO
 
 | File | Action |
 |------|--------|
-| `scripts/generate-deck-covers.mjs` | `DECK_CONFIGS[deckSlug]` with title, subtitle, panelKind |
-| Run | `npm run generate:deck-covers -- --slug {deckSlug}` |
+| `src/lib/exam-facts.ts` | Profile + `deckExamKeyMap` (required for academic/high-intent certs) |
+| `src/lib/exam-llm-layer.ts` | `HIGH_INTENT_MOCK_BLOCKS` with real query + disambiguation |
+| `llms.txt` | Auto via `llm-docs.ts` |
 
-### 7. Bank generation & validation
+### 6. Covers + Gumroad thumbnail (agent-owned)
 
 ```bash
-npm run generate:mock-banks -- --slug {mockSlug}
+# DECK_CONFIGS entry in scripts/generate-deck-covers.mjs first
+npm run generate:deck-covers -- --slug {deckSlug}
+npm run generate:deck-covers -- --gumroad-thumbnails --slug {deckSlug}
+```
+
+### 7. Bank generation
+
+**Prefer OpenRouter** when key resolves:
+
+```bash
+MOCK_BANK_QUESTIONS_PER_TOPIC={N} npm run generate:mock-banks -- --slug {mockSlug}
+```
+
+**Else** local expand (SAT/GMAT pattern): `scripts/expand-{id}-bank-local.py` → write bank JSON + optional `.generation-cache/`.
+
+### 8. LLM bank validation (mandatory)
+
+```bash
 npm run validate:mock-banks -- --slug {mockSlug}
-npm run validate:mock-banks -- --slug {mockSlug} --apply   # if report clean
+npm run validate:mock-banks -- --slug {mockSlug} --apply   # drop rejects
 ```
 
-Requires `OPENROUTER_API_KEY`. Generator: Claude Sonnet 4. Validator: Gemini 2.5 Flash.
+Then sync all **card count** strings/specs to post-apply size. Re-run session/topic quota tests.
 
-### 8. Gumroad (when token available)
+Reports live under `src/data/mock-exams/.validation-reports/` (gitignored; gate checks local file).
+
+### 9. Promote to live
+
+When bank runnable + validation report exists:
+1. `status: "live"` in mock config
+2. Confirm `isMockExamRunnable(mockSlug) === true`
+3. Confirm `shouldIndexMockExam(mockSlug) === true`
+
+### 10. .apkg export (Anki Generator)
 
 ```bash
+# Sync building_deck_specs.json into Anki Generator if needed
+cd "../Anki Generator"
+PYTHONPATH=. python3 -m internal_deck_generator.py.building_deck_pipeline \
+  --deck-slug {deckSlug} \
+  --uniprep2go-root "/Users/pavelveselov/Projects/uniprep2go"
+# Expect: out/building/{filePrefix}_FULL_{cardCount}.apkg
+```
+
+### 11. Gumroad create + assets + publish
+
+```bash
+cd uniprep2go
+node -e "import {ensureGumroadAccessToken} from './scripts/lib/gumroad-auth.mjs'; console.log(ensureGumroadAccessToken().source)"
 npm run setup:gumroad-building-decks -- --slug {deckSlug}
+# If product exists and apkg arrived later:
+npm run setup:gumroad-building-decks -- --slug {deckSlug} --assets-only
 ```
 
-Gumroad auth auto-resolves via `scripts/lib/gumroad-auth.mjs` (`.env.local` → `~/.config/gumroad` → `gumroad auth token`) and syncs into `.env.local`. Permalink must match catalog.
+Catalog must end with non-null `gumroadProductId`, `shortUrl`, `apkgUploadedAt`, `publishedAt`.
 
-### 9. Gate validation (mandatory before done)
+### 12. Sample screenshots (USER)
+
+Paths expected by deck:
+`public/samples/{deckSlug}-sample-1.webp` … `-sample-3.webp`
+
+Agent:
+1. Wire `sampleCards[].imageUrl` in `decks.ts`
+2. On user drop: convert/resize (~701×1024 WebP) and commit
+3. Do **not** block Gumroad/live/deploy waiting for screenshots — swap later
+
+### 13. Gates + tests + deploy
 
 ```bash
-npm run validate:certification -- --mock {mockSlug}
+npm run validate:certification -- --mock {mockSlug}   # 0 blocking failures
 npm test
 npm run build
+git add … && git commit && git push origin main       # Vercel production
 ```
 
-**Do not claim done until `validate:certification` has zero blocking failures.**
+**Do not claim done** until `validate:certification` has zero blocking failures and Gumroad product is live with apkg (unless user explicitly deferred commerce).
 
-### 10. Post-launch (after bank QA)
+## Definition of done
 
-- Export `.apkg` from validated bank
-- Upload to Gumroad product
-- Set `apkgStatus: "ready"` in launch layer when implemented
+- [ ] Registry + mock + SEO + bank import
+- [ ] Deck + gumroad catalog + list price + building-deck-specs
+- [ ] Cover + Gumroad thumbnail
+- [ ] Funnel + homepage + mock index + exam-facts + HIGH_INTENT
+- [ ] Bank generated, LLM-validated, counts synced
+- [ ] Mock `live` + indexable
+- [ ] `.apkg` built and uploaded; Gumroad published
+- [ ] `validate:certification` READY
+- [ ] Pushed to `main` (prod)
+- [ ] Sample screenshots: user-provided (or noted as pending swap)
 
 ## Gate reference
 
-Blocking failures (`validate:certification`):
-- mock-config, mock-seo, deck-catalog, gumroad-catalog, mock-bank, mock-bank-import, cover-image, cover-config, funnel-link
+Blocking: mock-config, mock-seo, deck-catalog, gumroad-catalog, mock-bank, mock-bank-import, cover-image, cover-config, funnel-link, exam-facts (when `examFactsKey` set)
 
-Warnings (ship OK but improve):
-- gumroad-live (no API product yet)
-- mock-validation (not validated)
-- exam-facts, llm-high-intent, homepage-links, mock-index-links
+Warnings: gumroad-live, mock-validation, llm-high-intent, homepage-links, mock-index-links
 
 ## npm scripts
 
 | Script | Purpose |
 |--------|---------|
-| `scaffold:certification` | Append registry + print checklist |
-| `validate:certification` | All gates for one or all certs |
-| `generate:mock-banks` | OpenRouter bank generation |
-| `validate:mock-banks` | Gemini cross-validation |
-| `generate:deck-covers` | Blueprint WebP covers |
-| `setup:gumroad-building-decks` | Gumroad API product create |
+| `scaffold:certification` | Registry + checklist |
+| `validate:certification` | Blocking gates |
+| `generate:mock-banks` | OpenRouter bank gen |
+| `validate:mock-banks` | Gemini cross-validation (+ `--apply`) |
+| `generate:deck-covers` | Cover + `--gumroad-thumbnails` |
+| `setup:gumroad-building-decks` | Create / assets / publish |
+
+## Orchestration tips
+
+- Parallelize: bank gen ‖ cover gen ‖ wire-up; then validate → apkg → Gumroad → deploy
+- Parent agent always re-runs `validate:certification` after subagents
+- Never commit `scripts/local-banks/`, `scripts/*-bank-data/`, or raw OpenRouter keys
+- Keep `.env.local` out of git; persist tokens there for the next run
 
 ## Additional resources
 
 - Registry: [src/data/certifications/registry.json](../../src/data/certifications/registry.json)
 - Spec template: [scripts/templates/certification.spec.json](../../scripts/templates/certification.spec.json)
+- SAT reference spec: [scripts/templates/sat.spec.json](../../scripts/templates/sat.spec.json)
+- Gumroad auth: [scripts/lib/gumroad-auth.mjs](../../scripts/lib/gumroad-auth.mjs)
+- OpenRouter: [scripts/lib/openrouter.mjs](../../scripts/lib/openrouter.mjs)
 - LLM rules: [.cursor/rules/llm-visibility.mdc](../../.cursor/rules/llm-visibility.mdc)

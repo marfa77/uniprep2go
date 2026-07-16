@@ -1,8 +1,9 @@
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "../..");
+const ENV_LOCAL_PATH = join(ROOT, ".env.local");
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
 
 export const GENERATOR_MODEL =
@@ -15,6 +16,8 @@ const ENV_PATHS = [
   join(ROOT, ".env"),
   join(ROOT, "../Anki Generator/internal_deck_generator/.env"),
   join(ROOT, "../CIPLE A2/ciple-master/.env.local"),
+  join(ROOT, "../PixID3/.env.local"),
+  join(ROOT, "../UAEPropertyAIBot/.env.local"),
 ];
 
 function parseEnvFile(path) {
@@ -45,17 +48,43 @@ function loadEnvFiles() {
   }
 }
 
+function persistOpenRouterKeyToEnvLocal(token) {
+  const normalized = token?.trim();
+  if (!normalized) return false;
+
+  let content = existsSync(ENV_LOCAL_PATH) ? readFileSync(ENV_LOCAL_PATH, "utf8") : "";
+  const line = `OPENROUTER_API_KEY=${normalized}`;
+  if (/^OPENROUTER_API_KEY=/m.test(content)) {
+    content = content.replace(/^OPENROUTER_API_KEY=.*$/m, line);
+  } else {
+    const suffix = content.length > 0 && !content.endsWith("\n") ? "\n" : "";
+    content = `${content}${suffix}${line}\n`;
+  }
+  writeFileSync(ENV_LOCAL_PATH, content, { encoding: "utf8", mode: 0o600 });
+  process.env.OPENROUTER_API_KEY = normalized;
+  return true;
+}
+
 export function getOpenRouterApiKey() {
   loadEnvFiles();
-  return process.env.OPENROUTER_API_KEY?.trim() || "";
+  const key = process.env.OPENROUTER_API_KEY?.trim() || "";
+  if (key) {
+    // Keep uniprep2go .env.local in sync when key was found in a sibling project.
+    const local = existsSync(ENV_LOCAL_PATH) ? readFileSync(ENV_LOCAL_PATH, "utf8") : "";
+    if (!/^OPENROUTER_API_KEY=.+/m.test(local)) {
+      persistOpenRouterKeyToEnvLocal(key);
+    }
+  }
+  return key;
 }
 
 export function loadCredentials() {
-  loadEnvFiles();
   const openRouterApiKey = getOpenRouterApiKey();
 
   if (!openRouterApiKey) {
-    throw new Error("Set OPENROUTER_API_KEY in .env.local");
+    throw new Error(
+      "OPENROUTER_API_KEY not found. Add to .env.local or a sibling project env (CIPLE/PixID). Scripts auto-sync into uniprep2go .env.local.",
+    );
   }
 
   return { openRouterApiKey };

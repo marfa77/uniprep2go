@@ -7,9 +7,13 @@
   "category": "professional",
   "coverPanelKind": "building",
   "skipMockBankGeneration": false,
+  "targetBankCards": 200,
+  "listPriceUsd": 11,
   "_notes": {
     "coverPanelKind": "building | hvac | safety | survey | datacenter | finance",
     "category": "professional | finance | academic | language | immigration",
-    "userProvides": "certification name, exam body, official format, topic domains, disclaimers"
+    "scoringAxes": "Map mock topics to official scored sections/axes (e.g. SAT=2, GMAT=3), not every content domain",
+    "userProvides": "Certification name. Optional: exam body, format, price. Sample screenshots only — agent does the rest under key.",
+    "agentOwns": "mock, bank, Anki, SEO/GEO/LLM, covers, Gumroad, .apkg, live indexation, deploy"
   }
 }
