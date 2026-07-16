@@ -9,6 +9,7 @@ import propertyCasualtyPreviewBank from "@/data/mock-exams/property-casualty-ins
 import servSafeManagerMockBank from "@/data/mock-exams/servsafe-manager-mock.json";
 import ptcbPharmacyTechnicianMockBank from "@/data/mock-exams/ptcb-pharmacy-technician-mock.json";
 import gmatFocusReadinessBank from "@/data/mock-exams/gmat-focus-readiness-check.json";
+import satReadinessBank from "@/data/mock-exams/sat-readiness-check.json";
 import epa608ReadinessBank from "@/data/mock-exams/epa-608-readiness-check.json";
 import bmsBasReadinessBank from "@/data/mock-exams/bms-bas-readiness-check.json";
 import leedGreenAssociateReadinessBank from "@/data/mock-exams/leed-green-associate-readiness-check.json";
@@ -38,6 +39,7 @@ const banksBySlug: Record<string, MockQuestion[]> = {
   "servsafe-manager-mock": servSafeManagerMockBank as unknown as MockQuestion[],
   "ptcb-pharmacy-technician-mock": ptcbPharmacyTechnicianMockBank as unknown as MockQuestion[],
   "gmat-focus-readiness-check": gmatFocusReadinessBank as unknown as MockQuestion[],
+  "sat-readiness-check": satReadinessBank as unknown as MockQuestion[],
   "epa-608-readiness-check": epa608ReadinessBank as unknown as MockQuestion[],
   "bms-bas-readiness-check": bmsBasReadinessBank as unknown as MockQuestion[],
   "leed-green-associate-readiness-check": leedGreenAssociateReadinessBank as unknown as MockQuestion[],

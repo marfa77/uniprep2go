@@ -3,6 +3,8 @@ export const FUNNEL_EXCLUDE_STORAGE_KEY = "uniprep2go:funnel:exclude";
 export const FUNNEL_EXCLUDE_QUERY = "funnel=exclude";
 export const FUNNEL_INCLUDE_QUERY = "funnel=include";
 
+import { isBotUserAgent } from "./traffic-bot";
+
 export function parseExcludeIps() {
   return (process.env.FUNNEL_EXCLUDE_IPS ?? "")
     .split(",")
@@ -33,8 +35,13 @@ export function shouldExcludeFunnelTraffic(input: {
   cookieHeader?: string | null;
   clientIp?: string;
   hostname?: string;
+  userAgent?: string | null;
 }) {
   if (input.internal) {
+    return true;
+  }
+
+  if (isBotUserAgent(input.userAgent)) {
     return true;
   }
 

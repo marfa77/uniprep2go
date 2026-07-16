@@ -9,7 +9,7 @@
  *   node scripts/setup-gumroad-building-decks.mjs --slug hvac-epa-608-anki-deck --assets-only
  *
  * Env:
- *   GUMROAD_ACCESS_TOKEN — or `gumroad auth token` CLI
+ *   GUMROAD_ACCESS_TOKEN — auto-resolved from .env.local, gumroad CLI config, or `gumroad auth token`
  *   ANKI_GENERATOR_ROOT — path to Anki Generator repo (default: ../Anki Generator)
  */
 
@@ -18,6 +18,10 @@ import { execSync } from "node:child_process";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { tmpdir } from "node:os";
+import {
+  ensureGumroadAccessToken,
+  loadLocalEnvFiles,
+} from "./lib/gumroad-auth.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CATALOG_PATH = join(root, "src/data/gumroad/building-anki-decks.json");
@@ -50,16 +54,11 @@ function sleep(ms) {
 }
 
 function resolveGumroadToken() {
-  const envToken = process.env.GUMROAD_ACCESS_TOKEN?.trim();
-  if (envToken) {
-    return envToken;
+  const { token, source } = ensureGumroadAccessToken({ persist: true });
+  if (token && source && source !== "env" && source !== "env.local") {
+    console.log(`  gumroad auth: resolved from ${source} (synced to .env.local)`);
   }
-
-  try {
-    return execSync("gumroad auth token", { encoding: "utf8" }).trim();
-  } catch {
-    return "";
-  }
+  return token;
 }
 
 function parseArgs(argv) {
@@ -76,28 +75,8 @@ function parseArgs(argv) {
 }
 
 function loadEnv() {
-  for (const file of [".env.local", ".env"]) {
-    try {
-      const lines = readFileSync(join(root, file), "utf8").split("\n");
-      for (const line of lines) {
-        const trimmed = line.trim();
-        if (!trimmed || trimmed.startsWith("#")) continue;
-        const eq = trimmed.indexOf("=");
-        if (eq === -1) continue;
-        const key = trimmed.slice(0, eq).trim();
-        let value = trimmed.slice(eq + 1).trim();
-        if (
-          (value.startsWith('"') && value.endsWith('"')) ||
-          (value.startsWith("'") && value.endsWith("'"))
-        ) {
-          value = value.slice(1, -1);
-        }
-        if (!process.env[key]) process.env[key] = value;
-      }
-    } catch {
-      // optional env files
-    }
-  }
+  loadLocalEnvFiles();
+  ensureGumroadAccessToken({ persist: true });
 }
 
 function runGumroad(args, { dryRun = false } = {}) {
@@ -463,7 +442,7 @@ async function main() {
 
     if (!token) {
       throw new Error(
-        "Set GUMROAD_ACCESS_TOKEN in .env.local or run `gumroad login` (Finance decks uses `gumroad auth token`)",
+        "Gumroad token not found. Run `gumroad login`, or set GUMROAD_ACCESS_TOKEN. Scripts auto-read ~/.config/gumroad and sync into .env.local.",
       );
     }
 

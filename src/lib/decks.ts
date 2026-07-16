@@ -1839,6 +1839,81 @@ const rawDecks: Deck[] = [
   },
 
   {
+    slug: "sat-anki-deck",
+    category: "academic",
+    status: "planned",
+    coverImage: "/covers/sat-anki-deck.webp",
+    title: "Digital SAT Anki Deck",
+    shortName: "Digital SAT",
+    subtitle: "A planned spaced-repetition deck for Digital SAT Reading and Writing and Math.",
+    directAnswer:
+      "The Digital SAT Anki Deck is a planned UniPrep2Go product with 350 flashcards across Reading and Writing and Math. It is not yet available for purchase. Take the free Digital SAT readiness check to benchmark both scored sections first.",
+    lastUpdated: "2026-07-16",
+    audience:
+      "High school students preparing for the Digital SAT using spaced repetition alongside College Board Bluebook practice.",
+    format: ".apkg",
+    facts: {
+      cards: "350",
+      topics: "Reading and Writing, Math",
+      formulas: "High-yield Digital SAT section skills, grammar rules, algebra, and data analysis drills",
+      examYear: "Digital SAT Suite (400–1600 scale)",
+      delivery: "Digital download (planned)",
+    },
+    topicCoverage: [
+      {
+        name: "Reading and Writing",
+        examWeight: "Section score 200–800 (54 official questions)",
+        cards: "175",
+      },
+      {
+        name: "Math",
+        examWeight: "Section score 200–800 (44 official questions)",
+        cards: "175",
+      },
+    ],
+    sampleCards: [
+      {
+        question:
+          "Which choice most logically completes the text?\n\nResearchers found that urban tree canopy reduces summer surface temperatures. Therefore, cities that expand planting programs are likely to _____.",
+        answer:
+          "Correct: experience lower average surface temperatures in summer. The conclusion follows directly from the stated causal relationship between canopy and temperature.",
+        imageUrl: "/samples/sat-anki-deck-sample-1.webp",
+      },
+      {
+        question:
+          "Which choice completes the text so that it conforms to the conventions of Standard English?\n\nThe committee, after reviewing the proposals, _____ a single vendor.",
+        answer:
+          "Correct: selected. The subject \"committee\" is singular, so the past-tense verb must agree: selected.",
+        imageUrl: "/samples/sat-anki-deck-sample-2.webp",
+      },
+      {
+        question:
+          "If 3(x − 2) = 2x + 5, what is the value of x?",
+        answer:
+          "Correct: 11. Expand: 3x − 6 = 2x + 5 → x = 11.",
+        imageUrl: "/samples/sat-anki-deck-sample-3.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is there a free Digital SAT practice test?",
+        answer:
+          "Yes. Take the free 49-question Digital SAT readiness check at uniprep2go.study/mock-exams/sat-readiness-check — scored on Reading and Writing and Math with full answer review. The paid Anki deck includes 350 cards from the same validated bank for daily drilling.",
+      },
+      {
+        question: "How is this mock scored compared with the real SAT?",
+        answer:
+          "The official Digital SAT reports two section scores (Reading and Writing and Math) that sum to 400–1600. Our readiness check uses the same two axes — both sections must meet the readiness target for a pass — rather than a single blended percentage alone.",
+      },
+      {
+        question: "How many cards are in the Digital SAT Anki deck?",
+        answer:
+          "The deck includes 350 flashcards — 175 Reading and Writing and 175 Math — built from the same validated item bank as the free readiness check.",
+      },
+    ],
+  },
+
+  {
     slug: "cat4-level-d-anki-deck-printable-pdf",
     category: "academic",
     status: "available",
@@ -3383,7 +3458,7 @@ export const siteFaqs = [
   {
     question: "Are there free practice tests for US licensing exams?",
     answer:
-      "Yes. UniPrep2Go publishes free timed online practice tests for FINRA SIE (75 questions), ServSafe Manager (90 questions), and readiness checks for CFA Level 1, FRM Part 1, Series 7, Series 63, Life & Health insurance, Property & Casualty insurance, California real estate, EPA 608 HVAC, LEED Green Associate, LEED AP BD+C, BMS/BAS, MRICS, CFPS, NEBOSH, CDCP, WELL AP, CEM, ASHRAE, and GMAT Focus. Each mock includes topic scoring, answer review, and a linked flashcard deck repair plan at uniprep2go.study/mock-exams.",
+      "Yes — UniPrep2Go publishes 6 live indexed free timed mocks (FINRA SIE, Series 7, CFA Level 1, CFA Level 2, ServSafe Manager, PTCB) plus additional preview readiness checks for other US licensing and finance exams. Each runnable mock includes topic scoring, answer review, and a linked flashcard deck repair plan at uniprep2go.study/mock-exams. Mocks are free for the first 20 starts per device; preview-only exams are not promoted as full free tests until question banks are complete.",
   },
   {
     question: "What is an Anki deck?",

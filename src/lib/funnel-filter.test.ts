@@ -22,6 +22,16 @@ describe("funnel filter", () => {
     expect(shouldRecordFunnelEvent({ internal: false }, request)).toBe(false);
   });
 
+  it("skips bot user agents on the server", () => {
+    const request = {
+      headers: new Headers({
+        "user-agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+      }),
+    } as Request;
+
+    expect(shouldRecordFunnelEvent({ internal: false }, request)).toBe(false);
+  });
+
   it("hides legacy section_view noise from top sources", () => {
     expect(
       filterReportingSources({

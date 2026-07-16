@@ -18,6 +18,11 @@ export type MockPassRule = {
   type: "score_threshold" | "readiness_check";
   passPercent: number;
   borderlinePercent?: number;
+  /**
+   * When true, every scored topic/section must meet its targetPercent for a pass
+   * (used for multi-section exams like Digital SAT: Reading & Writing + Math).
+   */
+  requireAllTopicsAtTarget?: boolean;
   verdictLabels: {
     pass: MockVerdict;
     noPass: MockVerdict;

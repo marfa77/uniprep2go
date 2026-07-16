@@ -132,10 +132,28 @@ function formatProductLabel(productKey: string) {
   return productKey;
 }
 
+const TOP_PRODUCTS_LIMIT = 10;
+
 function formatProductLine(productKey: string, metrics: ProductUniqueMetrics) {
   const conversionRate = formatRate(metrics.conversions, metrics.visitors);
 
   return `- ${formatProductLabel(productKey)}: ${metrics.visitors} view → ${metrics.intents} intent → ${metrics.conversions} convert (${conversionRate})`;
+}
+
+function formatTopProducts(products: Array<[string, ProductUniqueMetrics]>) {
+  if (products.length === 0) {
+    return "- no product traffic yet";
+  }
+
+  const topProducts = products.slice(0, TOP_PRODUCTS_LIMIT);
+  const lines = topProducts.map(([productKey, metrics]) => formatProductLine(productKey, metrics));
+  const hiddenCount = products.length - topProducts.length;
+
+  if (hiddenCount > 0) {
+    lines.push(`- ...and ${hiddenCount} more`);
+  }
+
+  return lines.join("\n");
 }
 
 function formatReturningUsers(periodNew: number, periodReturning: number, periodUnique: number) {
@@ -219,9 +237,7 @@ export function toTelegramStatsMessages(stats: FunnelStats) {
     formatTopCountries(visitors.periodByCountry, stats.byCountry),
     "",
     "Decks & mocks (unique view → intent → convert):",
-    products.length > 0
-      ? products.map(([productKey, metrics]) => formatProductLine(productKey, metrics)).join("\n")
-      : "- no product traffic yet",
+    formatTopProducts(products),
     "",
     "Top pages (period):",
     formatTopPaths(visitors.paths),

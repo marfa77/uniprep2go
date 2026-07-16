@@ -9,7 +9,7 @@ import {
 } from "@/lib/exam-llm-layer";
 import { getAllMockExams, getMockExamConfig } from "@/lib/mock-exams/configs";
 import { buildMockExamItemListJsonLd } from "@/lib/mock-exams/llm";
-import { buildMockSeoTitle } from "@/lib/mock-exams/seo";
+import { buildMockExamHubFaqs, buildMockSeoTitle } from "@/lib/mock-exams/seo";
 import { mockFreeAccessNotice } from "@/lib/mock-exams/pricing";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { finalize, leafPageTitle, shouldIndexMockExam } from "@/lib/seo";
@@ -50,6 +50,7 @@ const mockClusters = [
       "cfa-level-2-readiness-check",
       "frm-part-1-readiness-check",
       "gmat-focus-readiness-check",
+      "sat-readiness-check",
     ],
   },
   {
@@ -117,6 +118,7 @@ export const revalidate = 3600;
 export default function MockExamsIndexPage() {
   const mocks = getAllMockExams();
   const indexedCount = mocks.filter((mock) => shouldIndexMockExam(mock.slug)).length;
+  const hubFaqs = buildMockExamHubFaqs(indexedCount, mocks.length);
   const pageUrl = absoluteUrl("/mock-exams");
   const featuredMocks = featuredMockSlugs
     .map((slug) => getMockExamConfig(slug))
@@ -135,6 +137,18 @@ export default function MockExamsIndexPage() {
         isPartOf: { "@id": `${siteConfig.url}/#website` },
       },
       buildMockExamItemListJsonLd({ indexedOnly: true }),
+      {
+        "@type": "FAQPage",
+        "@id": `${pageUrl}#faq`,
+        mainEntity: hubFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
+          },
+        })),
+      },
     ],
   };
 
@@ -240,6 +254,18 @@ export default function MockExamsIndexPage() {
               Full catalog
             </Link>
           </div>
+        </section>
+
+        <section className="mt-12" id="faq">
+          <h2 className="text-2xl font-semibold tracking-tight">Practice test FAQ</h2>
+          <dl className="mt-6 space-y-6">
+            {hubFaqs.map((faq) => (
+              <div key={faq.question}>
+                <dt className="text-lg font-semibold text-[#18140f]">{faq.question}</dt>
+                <dd className="mt-2 text-sm leading-7 text-[#5f5749]">{faq.answer}</dd>
+              </div>
+            ))}
+          </dl>
         </section>
 
         <details className="mt-10 rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-5">

@@ -21,6 +21,7 @@ const financeMockSlugs = [
   "series-7-readiness-check",
   "series-63-readiness-check",
   "gmat-focus-readiness-check",
+  "sat-readiness-check",
 ] as const;
 
 export async function generateMetadata(): Promise<Metadata> {

@@ -213,6 +213,28 @@ describe("telegram stats", () => {
     expect(signal.label).toContain("↑ growing");
   });
 
+  it("shows only top 10 decks and mocks in the growth pulse", () => {
+    const products = Object.fromEntries(
+      Array.from({ length: 15 }, (_, index) => [
+        `deck-${index + 1}`,
+        { visitors: 15 - index, intents: 0, conversions: 0 },
+      ]),
+    );
+
+    const message = toTelegramStatsMessage({
+      ...sampleStats,
+      visitors: {
+        ...sampleStats.visitors,
+        products,
+      },
+    });
+
+    expect(message).toContain("deck-1: 15 view");
+    expect(message).toContain("deck-10: 6 view");
+    expect(message).not.toContain("deck-11:");
+    expect(message).toContain("- ...and 5 more");
+  });
+
   it("splits only when the message is too long", () => {
     const messages = splitTelegramMessages("a".repeat(5000), 3900);
 

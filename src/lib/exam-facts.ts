@@ -849,6 +849,79 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "GMAT is a registered trademark of the Graduate Management Admission Council (GMAC).",
   },
+  "sat": {
+    examKey: "sat",
+    pageHeading: "Digital SAT — Sections, Scoring & Prep Facts",
+    intro:
+      "The Digital SAT is College Board's college admissions exam. It reports two section scores — Reading and Writing and Math — that combine to a 400–1600 total. This page summarizes official structure and scoring; UniPrep2Go products are independent prep (not College Board material).",
+    exam_facts: {
+      exam_name: "Digital SAT",
+      administered_by: "College Board",
+      question_count: "98 questions total (54 Reading and Writing + 44 Math)",
+      scored_count: "98",
+      time_limit: "2 hours 14 minutes (64 minutes Reading and Writing + 70 minutes Math, plus a 10-minute break)",
+      scoring_scale: "Total 400–1600; section scores 200–800 each for Reading and Writing and Math",
+      passing_score: "No pass/fail score — colleges set their own expectations; many still use section and total benchmarks",
+      delivery: "Digital adaptive (Bluebook app) at test centers or school-day administrations — verify current options at satsuite.collegeboard.org",
+      outline_effective_date: "Digital SAT Suite (international digital rollout complete; U.S. digital SAT from 2024)",
+      verify_at_url: "https://satsuite.collegeboard.org/sat/whats-on-the-test/structure",
+    },
+    official_sources: [
+      {
+        label: "College Board — How the SAT is structured",
+        url: "https://satsuite.collegeboard.org/sat/whats-on-the-test/structure",
+      },
+      {
+        label: "College Board — Understanding SAT scores (PDF)",
+        url: "https://satsuite.collegeboard.org/media/pdf/sat-sd-understanding-scores.pdf",
+      },
+      {
+        label: "College Board — SAT Suite overview",
+        url: "https://satsuite.collegeboard.org/sat",
+      },
+    ],
+    domain_weights: [
+      {
+        domain: "Reading and Writing",
+        weight: "Section score 200–800 (54 questions, 64 minutes; domains: Information and Ideas, Craft and Structure, Expression of Ideas, Standard English Conventions)",
+      },
+      {
+        domain: "Math",
+        weight: "Section score 200–800 (44 questions, 70 minutes; domains: Algebra, Advanced Math, Problem-Solving and Data Analysis, Geometry and Trigonometry)",
+      },
+    ],
+    whats_changed: [
+      "Paper SAT with separate Reading, Writing and Language, and Math (calculator / no-calculator) sections was replaced by the Digital SAT Suite.",
+      "Scores still combine to 400–1600, but only two section scores are reported: Reading and Writing and Math.",
+      "Each section uses two adaptive modules; Module 2 difficulty depends on Module 1 performance.",
+      "Reading and Writing uses short passages with one question each; Math allows a built-in calculator throughout.",
+      "College Board score reports also show performance across eight content domains inside the two sections.",
+    ],
+    high_yield_facts: [
+      "Official scoring is two axes — Reading and Writing and Math — not a single blended percentage alone.",
+      "Total score = Reading and Writing section score + Math section score (each 200–800).",
+      "Content domains (four in RW, four in Math) appear on the score report for skills insight but are not separate section scores.",
+      "Unanswered questions hurt — pacing to finish each module matters.",
+      "Bluebook practice tests from College Board remain the closest full-length adaptive simulation.",
+      "SAT scores are typically valid for five years for college applications (verify school policies).",
+    ],
+    candidate_qa: [
+      {
+        q: "How is the Digital SAT scored?",
+        a: "You receive two section scores — Reading and Writing and Math — each from 200 to 800. They add up to a total score from 400 to 1600.",
+      },
+      {
+        q: "How long is the Digital SAT and how many questions are on it?",
+        a: "98 questions in 2 hours 14 minutes: Reading and Writing (54 questions, 64 minutes) and Math (44 questions, 70 minutes), plus a 10-minute break between sections.",
+      },
+      {
+        q: "Is the Digital SAT adaptive?",
+        a: "Yes. Each section has two modules. How you perform on Module 1 determines whether Module 2 is easier or harder.",
+      },
+    ],
+    trademark_note:
+      "SAT and College Board are trademarks of the College Board. UniPrep2Go is not affiliated with or endorsed by the College Board.",
+  },
   "epa-608": {
     examKey: "epa-608",
     pageHeading: "EPA Section 608 Technician Certification — Facts, Types & Prep",
@@ -1780,6 +1853,7 @@ const deckExamKeyMap: Record<string, string> = {
   "cat4-level-d-anki-deck-printable-pdf": "cat4-level-d",
   "ib-biology-sl-anki-deck": "ib-biology-sl",
   "gmat-focus-anki-deck": "gmat",
+  "sat-anki-deck": "sat",
   "hvac-epa-608-anki-deck": "epa-608",
   "bms-building-automation-anki-deck": "bms-bas",
   "leed-green-associate-anki-deck": "leed-green-associate",

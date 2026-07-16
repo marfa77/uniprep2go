@@ -1,5 +1,5 @@
 import type { MockExamConfig } from "./types";
-import { mockFreeAccessPriceLabel } from "./pricing";
+import { mockFreeAccessNotice, mockFreeAccessPriceLabel } from "./pricing";
 import { fitSeoTitle, SEO_TITLE_MAX } from "../seo";
 import { absoluteUrl, siteConfig } from "../site";
 
@@ -37,7 +37,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfile>> = {
   "sie-full-mock": {
     title: "Free FINRA SIE Practice Test 2026 | 75-Question Mock Exam Online",
     description:
-      "The only completely free, no-signup, FINRA-topic-weighted 75-question SIE mock with instant pass/no-pass report — updated for 2026. Timed 105 minutes, 70% pass target, full answer review. Independent SIE mock — not official FINRA material.",
+      "Free, no-signup FINRA-topic-weighted 75-question SIE mock with instant pass/no-pass report — updated for 2026. Timed 105 minutes, 70% pass target, full answer review. Independent SIE mock — not official FINRA material.",
     keywords: [
       "free sie practice test",
       "sie mock exam",
@@ -221,6 +221,25 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfile>> = {
     audience:
       "MBA and business master's applicants who want a baseline timed diagnostic before official GMAC prep or tutoring.",
     practiceTestLabel: "GMAT Focus practice test",
+  },
+  "sat-readiness-check": {
+    title: "Free Digital SAT Practice Test | 49-Question Mock",
+    description:
+      "Free Digital SAT practice questions online: 49 timed questions across Reading and Writing and Math, 70 minutes, 70% readiness target with both section axes required, and full answer review. Independent SAT prep — not College Board material.",
+    keywords: [
+      "digital sat practice test",
+      "sat mock exam",
+      "free sat practice questions",
+      "sat readiness check",
+      "sat reading and writing practice",
+      "sat math practice test",
+    ],
+    headline: "Free Digital SAT Readiness Check",
+    intro:
+      "A timed Digital SAT readiness diagnostic scored on the two official College Board axes — Reading and Writing and Math — with a 400–1600 style prep target. Both sections must clear the readiness bar for a pass.",
+    audience:
+      "High school students and parents who want a baseline timed diagnostic before Bluebook practice or tutoring.",
+    practiceTestLabel: "Digital SAT practice test",
   },
   "epa-608-readiness-check": {
     title: "Free EPA 608 Practice Test | 40-Question Mock",
@@ -507,12 +526,11 @@ export function buildMockSeoKeywords(config: MockExamConfig) {
 
 export function buildMockSearchFaqs(config: MockExamConfig) {
   const profile = getMockSeoProfile(config);
-  const pageUrl = absoluteUrl(`/mock-exams/${config.slug}`);
 
   return [
     {
       question: `Is there a free ${profile.practiceTestLabel}?`,
-      answer: `Yes. ${siteConfig.name} offers a free online ${profile.practiceTestLabel} at ${pageUrl} with ${config.questionCount} timed questions, ${config.durationMinutes} minutes, a ${config.passRule.passPercent}% pass target, topic scoring, and a full answer review report. ${mockFreeAccessPriceLabel}.`,
+      answer: `Yes — ${siteConfig.name} hosts a free online ${profile.practiceTestLabel} with ${config.questionCount} timed questions, ${config.durationMinutes} minutes, a ${config.passRule.passPercent}% pass target, topic scoring, and a full answer review report. ${mockFreeAccessPriceLabel}.`,
     },
     {
       question: `How many questions are on this ${config.shortTitle}?`,
@@ -546,7 +564,7 @@ export function buildMockExamFaqs(config: MockExamConfig) {
     {
       question: "What does the report show after the mock?",
       answer:
-        "The report includes a pass/no-pass verdict with explanation, weighted topic diagnosis, pacing analysis, full question review with deck-backed explanations, and a repair plan linked to the Anki deck. If the verdict is no-pass or borderline, the linked deck is the recommended remediation path before retaking.",
+        "Your report shows a pass/no-pass verdict with explanation, weighted topic diagnosis, pacing analysis, full question review with deck-backed explanations, and a repair plan linked to the Anki deck. If the verdict is no-pass or borderline, drill the linked deck before retaking.",
     },
     {
       question: "Where do the questions come from?",
@@ -563,7 +581,33 @@ export function buildMockSeoPageCopy(config: MockExamConfig) {
     headline: profile.headline,
     intro: profile.intro,
     audience: profile.audience,
-    practiceTestLabel: profile.practiceTestLabel,
     topicSummary: config.topics.map((topic) => topic.label).join(", "),
+    practiceTestLabel: profile.practiceTestLabel,
   };
+}
+
+export function buildMockExamHubFaqs(indexedCount: number, totalCount: number) {
+  const previewCount = totalCount - indexedCount;
+
+  return [
+    {
+      question: "How many free practice tests does UniPrep2Go offer?",
+      answer: `${indexedCount} live indexed timed mocks have complete question banks and are promoted in search (currently FINRA SIE, Series 7, CFA Level 1, CFA Level 2, ServSafe Manager, and PTCB). ${previewCount} additional preview readiness checks are on-site for other exams but stay noindex until banks are complete — ${mockFreeAccessNotice}`,
+    },
+    {
+      question: "Do I need to sign up for the free mocks?",
+      answer:
+        "No signup wall — start a timed mock directly from the landing page. Your readiness report appears immediately after submit with topic scoring and answer review.",
+    },
+    {
+      question: "What happens after the mock report?",
+      answer:
+        "Your report flags weak topics and links to the matching Anki deck or PDF for spaced-repetition repair. Buy the deck only when you want daily drilling on gaps the mock surfaced.",
+    },
+    {
+      question: "Are these official exam materials?",
+      answer:
+        "No. UniPrep2Go mocks and decks are independent study aids — not endorsed, promoted, or warranted by FINRA, CFA Institute, PTCB, ServSafe, or any exam body.",
+    },
+  ] as const;
 }

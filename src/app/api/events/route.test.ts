@@ -141,4 +141,27 @@ describe("POST /api/events", () => {
 
     delete process.env.FUNNEL_EXCLUDE_IPS;
   });
+
+  it("does not record funnel stats for bot user agents", async () => {
+    const { POST } = await import("@/app/api/events/route");
+    const request = new Request("https://uniprep2go.study/api/events", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "user-agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+        "x-vercel-ip-country": "US",
+      },
+      body: JSON.stringify({
+        name: "page_view",
+        deckSlug: "sie-exam-anki-deck",
+        source: "landing_page",
+        path: "/decks/sie-exam-anki-deck",
+      }),
+    });
+
+    const response = await POST(request);
+
+    expect(response.status).toBe(204);
+    expect(recordFunnelEvent).not.toHaveBeenCalled();
+  });
 });

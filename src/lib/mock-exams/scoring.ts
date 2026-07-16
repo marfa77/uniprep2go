@@ -232,10 +232,31 @@ function determineVerdict(
     .filter((topic) => topic.weightPercent >= 15)
     .map((topic) => topic.label);
 
-  if (scorePercent >= passRule.passPercent && criticalTopics.length === 0) {
+  const belowTargetTopics = topicResults.filter((topic) => topic.scorePercent < topic.targetPercent);
+  const belowTargetLabels = belowTargetTopics.map((topic) => topic.label);
+
+  if (
+    scorePercent >= passRule.passPercent &&
+    criticalTopics.length === 0 &&
+    (!passRule.requireAllTopicsAtTarget || belowTargetTopics.length === 0)
+  ) {
     return {
       verdict: labels.pass,
-      explanation: `Overall score ${scorePercent}% cleared the ${passRule.passPercent}% threshold with no critically weak weighted topics. You are exam-ready on this mock's evidence, but keep drilling weak spots before test day.`,
+      explanation: `Overall score ${scorePercent}% cleared the ${passRule.passPercent}% threshold with no critically weak weighted topics${
+        passRule.requireAllTopicsAtTarget ? " and every scored section at target" : ""
+      }. You are exam-ready on this mock's evidence, but keep drilling weak spots before test day.`,
+    };
+  }
+
+  if (
+    passRule.requireAllTopicsAtTarget &&
+    scorePercent >= passRule.passPercent &&
+    belowTargetTopics.length > 0 &&
+    criticalTopics.length === 0
+  ) {
+    return {
+      verdict: labels.borderline ?? "BORDERLINE RISK",
+      explanation: `Overall score ${scorePercent}% cleared ${passRule.passPercent}%, but section target(s) were missed: ${belowTargetLabels.join(", ")}. Digital SAT reports separate Reading and Writing and Math scores — balance both sections before test day.`,
     };
   }
 

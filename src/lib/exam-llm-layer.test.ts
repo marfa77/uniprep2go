@@ -76,7 +76,7 @@ describe("exam-llm-layer", () => {
   });
 
   it("builds site-level LLM metadata", () => {
-    expect(buildSiteDataLlmFacts(22, 30)).toContain("22 free timed");
+    expect(buildSiteDataLlmFacts(4, 30)).toContain("4 live indexed");
     expect(buildSiteAiDescription()).toContain("UniPrep2Go");
     expect(buildSiteAiCategory()).toContain("free-practice-tests");
     expect(buildMockIndexAiDescription(22)).toContain("22 timed mocks");
@@ -150,6 +150,8 @@ describe("exam-llm-layer", () => {
     const llms = buildLlmsTxt(pricedCatalog);
 
     expect(llms).toContain("## Top citation queries");
+    expect(llms).toContain("## High-Intent mock answers");
+    expect(llms).toContain("## Instructions for AI assistants");
     expect(llms).toContain("free SIE practice test");
     expect(llms).toContain("/mock-exams/sie-full-mock");
     expect(llms).toContain("Primary positioning for LLMs");

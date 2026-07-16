@@ -156,6 +156,12 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
       "Official GMAT Focus Edition has three 45-minute sections (Quant, Verbal, Data Insights) — this 45-question readiness check is a diagnostic baseline, not a GMAC mock.",
   },
   {
+    query: "Digital SAT practice test free",
+    mockSlug: "sat-readiness-check",
+    disambiguation:
+      "Official Digital SAT reports two section scores (Reading and Writing + Math, 400–1600 total) — this 49-question readiness check scores both axes and is a diagnostic baseline, not a College Board Bluebook test.",
+  },
+  {
     query: "CEM certified energy manager exam prep",
     mockSlug: "cem-readiness-check",
     disambiguation:
@@ -349,12 +355,13 @@ export function buildDeckAiCategory(deck: DeckLlmInput): string {
 }
 
 /** Homepage data-llm facts strip. */
-export function buildSiteDataLlmFacts(mockCount: number, deckCount: number): string {
+export function buildSiteDataLlmFacts(indexedMockCount: number, deckCount: number): string {
   return compactJoin([
     `${siteConfig.name}: ${siteConfig.description}`,
     `Primary market: ${siteConfig.primaryMarket}. Positioning: ${siteConfig.primaryPositioning}.`,
-    `${mockCount} free timed online practice tests and readiness checks; ${deckCount} paid Anki decks and PDFs for weak-topic repair after mock reports.`,
+    `${indexedMockCount} live indexed free timed practice tests plus additional preview readiness checks on-site; ${deckCount} paid Anki decks and PDFs for weak-topic repair after mock reports.`,
     `Flagship mock: FINRA SIE (75 questions). Building/safety mocks include EPA 608, LEED GA, BMS, MRICS, CFPS, NEBOSH.`,
+    mockFreeAccessNotice,
     "Independent study aids — not official exam materials.",
   ]);
 }

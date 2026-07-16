@@ -15,6 +15,7 @@ export function shouldRecordFunnelEvent(
     internal: event.internal,
     cookieHeader: request?.headers.get("cookie"),
     clientIp: request ? getClientIpFromRequest(request) : undefined,
+    userAgent: request?.headers.get("user-agent"),
   })) {
     return false;
   }

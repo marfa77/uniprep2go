@@ -48,6 +48,28 @@ describe("mock exam configs", () => {
     expect(config?.passRule.passPercent).toBe(70);
     expect(config?.topics.reduce((sum, topic) => sum + (topic.questionCount ?? 0), 0)).toBe(90);
   });
+
+  it("defines Digital SAT readiness check with section-balanced scoring", () => {
+    const config = getMockExamConfig("sat-readiness-check");
+    expect(config).not.toBeNull();
+    expect(config?.questionCount).toBe(49);
+    expect(config?.topics).toHaveLength(2);
+    expect(config?.topics.map((topic) => topic.id)).toEqual(["reading-and-writing", "math"]);
+    expect(config?.topics.find((topic) => topic.id === "reading-and-writing")).toMatchObject({
+      questionCount: 27,
+      weightPercent: 55,
+      targetPercent: 70,
+    });
+    expect(config?.topics.find((topic) => topic.id === "math")).toMatchObject({
+      questionCount: 22,
+      weightPercent: 45,
+      targetPercent: 70,
+    });
+    expect(config?.passRule.requireAllTopicsAtTarget).toBe(true);
+    expect(config?.passRule.passPercent).toBe(70);
+    expect(config?.passRule.verdictLabels.pass).toBe("READINESS PASS");
+    expect(validateMockExamConfig(config!)).toEqual([]);
+  });
 });
 
 describe("question bank from deck content", () => {
@@ -108,6 +130,21 @@ describe("question bank from deck content", () => {
     expect(isMockExamRunnable("gmat-focus-readiness-check")).toBe(true);
     const { errors } = getQuestionBankForExam("gmat-focus-readiness-check");
     expect(errors).toEqual([]);
+  });
+
+  it("marks Digital SAT readiness mock runnable when the bank meets topic quotas", () => {
+    const { questions, errors } = getQuestionBankForExam("sat-readiness-check");
+    if (questions.length < 49) {
+      // Bank is still being authored elsewhere — scoring/config tests cover logic without it.
+      expect(isMockExamRunnable("sat-readiness-check")).toBe(false);
+      return;
+    }
+
+    expect(isMockExamRunnable("sat-readiness-check")).toBe(true);
+    expect(errors).toEqual([]);
+    expect(questions.length).toBeGreaterThanOrEqual(49);
+    expect(questions.filter((q) => q.topicId === "reading-and-writing").length).toBeGreaterThanOrEqual(27);
+    expect(questions.filter((q) => q.topicId === "math").length).toBeGreaterThanOrEqual(22);
   });
 
   it("stores GMAT equation stems in the formula field using LaTeX", () => {
@@ -260,6 +297,119 @@ describe("scoring", () => {
       );
     }
   });
+
+  function buildSatSectionQuestions(topicId: string, count: number): MockQuestion[] {
+    return Array.from({ length: count }, (_, index) => ({
+      id: `${topicId}-${index}`,
+      examSlug: "sat-readiness-check",
+      topicId,
+      prompt: `${topicId} question ${index}`,
+      options: [
+        { id: "a", text: "Correct" },
+        { id: "b", text: "Wrong 1" },
+        { id: "c", text: "Wrong 2" },
+        { id: "d", text: "Wrong 3" },
+      ],
+      correctOptionId: "a",
+      explanation: "Correct choice.",
+      distractorExplanations: {
+        b: "Wrong",
+        c: "Wrong",
+        d: "Wrong",
+      },
+      difficulty: "medium" as const,
+      sourceNote: "test",
+    }));
+  }
+
+  function answersWithCorrectCount(questions: MockQuestion[], correctCount: number) {
+    const answers: Record<string, string> = {};
+    questions.forEach((question, index) => {
+      answers[question.id] = index < correctCount ? "a" : "b";
+    });
+    return answers;
+  }
+
+  it("scores Digital SAT borderline when overall clears 70% but one section is below target", () => {
+    const rw = buildSatSectionQuestions("reading-and-writing", 20);
+    const math = buildSatSectionQuestions("math", 20);
+    const questions = [...rw, ...math];
+    // RW 90%, Math 65% (below 70% target, not critical), overall 78%
+    const answers = {
+      ...answersWithCorrectCount(rw, 18),
+      ...answersWithCorrectCount(math, 13),
+    };
+
+    const report = buildMockReport(
+      {
+        examSlug: "sat-readiness-check",
+        attemptSeed: "sat-borderline",
+        answers,
+        elapsedSeconds: 3600,
+        startedAt: "2026-07-16T10:00:00.000Z",
+        completedAt: "2026-07-16T11:00:00.000Z",
+      },
+      questions,
+    );
+
+    expect(report.scorePercent).toBeGreaterThanOrEqual(70);
+    expect(report.topicResults.find((topic) => topic.topicId === "math")?.scorePercent).toBeLessThan(70);
+    expect(report.verdict).toBe("BORDERLINE RISK");
+    expect(report.verdict).not.toBe("READINESS PASS");
+  });
+
+  it("scores Digital SAT readiness pass when both sections meet target and overall clears 70%", () => {
+    const rw = buildSatSectionQuestions("reading-and-writing", 20);
+    const math = buildSatSectionQuestions("math", 20);
+    const questions = [...rw, ...math];
+    // RW 90%, Math 70%, overall 80%
+    const answers = {
+      ...answersWithCorrectCount(rw, 18),
+      ...answersWithCorrectCount(math, 14),
+    };
+
+    const report = buildMockReport(
+      {
+        examSlug: "sat-readiness-check",
+        attemptSeed: "sat-pass",
+        answers,
+        elapsedSeconds: 3600,
+        startedAt: "2026-07-16T10:00:00.000Z",
+        completedAt: "2026-07-16T11:00:00.000Z",
+      },
+      questions,
+    );
+
+    expect(report.scorePercent).toBeGreaterThanOrEqual(70);
+    expect(report.topicResults.every((topic) => topic.scorePercent >= topic.targetPercent)).toBe(true);
+    expect(report.verdict).toBe("READINESS PASS");
+  });
+
+  it("scores Digital SAT no pass when overall is below 70%", () => {
+    const rw = buildSatSectionQuestions("reading-and-writing", 20);
+    const math = buildSatSectionQuestions("math", 20);
+    const questions = [...rw, ...math];
+    // RW 50%, Math 50%, overall 50%
+    const answers = {
+      ...answersWithCorrectCount(rw, 10),
+      ...answersWithCorrectCount(math, 10),
+    };
+
+    const report = buildMockReport(
+      {
+        examSlug: "sat-readiness-check",
+        attemptSeed: "sat-fail",
+        answers,
+        elapsedSeconds: 3600,
+        startedAt: "2026-07-16T10:00:00.000Z",
+        completedAt: "2026-07-16T11:00:00.000Z",
+      },
+      questions,
+    );
+
+    expect(report.scorePercent).toBeLessThan(70);
+    expect(report.verdict).toBe("NO PASS");
+  });
 });
 
 describe("access adapter", () => {
@@ -300,7 +450,7 @@ describe("llm visibility", () => {
       expect(facts.linked_deck_slug).toBe(config.linkedDeckSlug);
       expect(markdown).toContain(`# ${config.title}`);
       expect(markdown).toContain(`/api/mock-exams/${config.slug}`);
-      expect(markdown).toContain("recommended remediation path");
+      expect(markdown).toContain("drill the linked deck before retaking");
     }
   });
 
@@ -328,7 +478,7 @@ describe("llm visibility", () => {
     expect(breadcrumb).toMatchObject({
       itemListElement: expect.arrayContaining([
         expect.objectContaining({ position: 1, name: "Home" }),
-        expect.objectContaining({ position: 2, name: "Finance mock exams" }),
+        expect.objectContaining({ position: 2, name: "US exam practice tests" }),
         expect.objectContaining({ position: 3, name: "CFA Level 1 Readiness Check" }),
       ]),
     });

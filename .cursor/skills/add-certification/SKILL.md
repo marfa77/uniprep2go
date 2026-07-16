@@ -112,7 +112,7 @@ Requires `OPENROUTER_API_KEY`. Generator: Claude Sonnet 4. Validator: Gemini 2.5
 npm run setup:gumroad-building-decks -- --slug {deckSlug}
 ```
 
-Requires `GUMROAD_ACCESS_TOKEN` in `.env.local`. Permalink must match catalog.
+Gumroad auth auto-resolves via `scripts/lib/gumroad-auth.mjs` (`.env.local` → `~/.config/gumroad` → `gumroad auth token`) and syncs into `.env.local`. Permalink must match catalog.
 
 ### 9. Gate validation (mandatory before done)
 

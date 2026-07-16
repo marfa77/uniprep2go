@@ -12,6 +12,9 @@ const ptcbDisclaimer =
 const gmatDisclaimer =
   "This is an independent readiness diagnostic. It is not official GMAC GMAT exam material and does not predict your official GMAT score.";
 
+const satDisclaimer =
+  "This is an independent readiness diagnostic. It is not official College Board SAT exam material and does not predict your official Digital SAT score.";
+
 const epa608Disclaimer =
   "This is an independent readiness diagnostic. It is not official U.S. EPA Section 608 exam material and does not certify you to handle refrigerants.";
 
@@ -108,7 +111,7 @@ export const mockExamConfigs: MockExamConfig[] = [
     title: "CFA Level 1 Readiness Check",
     shortTitle: "CFA L1 Readiness",
     linkedDeckSlug: "cfa-level-1-anki-deck",
-    status: "preview",
+    status: "live",
     accessMode: "free_demand_test",
     durationMinutes: 90,
     questionCount: 60,
@@ -138,9 +141,9 @@ export const mockExamConfigs: MockExamConfig[] = [
       "Readiness check sampled across CFA Level 1 topic weights. Not a full CFA Institute mock exam.",
     disclaimer: financeDisclaimer,
     description:
-      "A 60-question CFA Level 1 readiness diagnostic with weighted topic scoring. Full question bank coming soon — request access to be notified.",
+      "A free 60-question CFA Level 1 readiness diagnostic with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
     examBody: "CFA Institute",
-    lastUpdated: "2026-06-01",
+    lastUpdated: "2026-07-16",
   },
   {
     slug: "cfa-level-2-readiness-check",
@@ -251,7 +254,7 @@ export const mockExamConfigs: MockExamConfig[] = [
     title: "Series 7 Readiness Check",
     shortTitle: "Series 7 Readiness",
     linkedDeckSlug: "series-7-anki-deck",
-    status: "preview",
+    status: "live",
     accessMode: "free_demand_test",
     durationMinutes: 90,
     questionCount: 60,
@@ -275,9 +278,9 @@ export const mockExamConfigs: MockExamConfig[] = [
       "Readiness check sampled from the Series 7 deck across FINRA job-function areas. Not a full official FINRA practice exam.",
     disclaimer: financeDisclaimer,
     description:
-      "A 60-question Series 7 readiness diagnostic built from UniPrep2Go deck content, with weighted topic diagnosis and full question review.",
+      "A free 60-question Series 7 readiness diagnostic built from UniPrep2Go deck content, with FINRA job-function weighted scoring, answer review, and a linked Anki deck repair plan.",
     examBody: "FINRA",
-    lastUpdated: "2026-06-01",
+    lastUpdated: "2026-07-16",
   },
   {
     slug: "series-63-readiness-check",
@@ -592,6 +595,54 @@ export const mockExamConfigs: MockExamConfig[] = [
     questionSourceNote:
       "Original UniPrep2Go questions authored for the GMAT Focus Edition readiness check (134 Quant, 133 Verbal, 133 Data Insights in the Anki bank; 45-question timed session).",
     ankiDeckCardCount: 400,
+  },
+  {
+    slug: "sat-readiness-check",
+    title: "Digital SAT Readiness Check",
+    shortTitle: "SAT Readiness",
+    linkedDeckSlug: "sat-anki-deck",
+    status: "preview",
+    accessMode: "free_demand_test",
+    durationMinutes: 70,
+    questionCount: 49,
+    passRule: {
+      type: "readiness_check",
+      passPercent: 70,
+      borderlinePercent: 65,
+      // Official SAT reports two section scores (RW + Math); both must clear target for a pass.
+      requireAllTopicsAtTarget: true,
+      verdictLabels: {
+        pass: "READINESS PASS",
+        noPass: "NO PASS",
+        borderline: "BORDERLINE RISK",
+      },
+    },
+    topics: [
+      {
+        id: "reading-and-writing",
+        label: "Reading and Writing",
+        questionCount: 27,
+        weightPercent: 55,
+        targetPercent: 70,
+      },
+      {
+        id: "math",
+        label: "Math",
+        questionCount: 22,
+        weightPercent: 45,
+        targetPercent: 70,
+      },
+    ],
+    officialSourceNote:
+      "Modeled on the Digital SAT Suite: two scored sections — Reading and Writing (54 questions, 64 minutes) and Math (44 questions, 70 minutes) — combining to a 400–1600 total (200–800 each). This readiness check uses a 27+22 question sample with section-balanced scoring. Not a College Board practice test and not adaptive.",
+    disclaimer: satDisclaimer,
+    description:
+      "A 49-question Digital SAT readiness diagnostic scored on the two official axes — Reading and Writing and Math — with pacing feedback and full answer review. Independent prep aligned to College Board section types.",
+    examBody: "College Board",
+    lastUpdated: "2026-07-16",
+    questionSourceNote:
+      "Original UniPrep2Go questions authored for the Digital SAT readiness check (175 Reading and Writing + 175 Math in the Anki bank; 49-question timed session).",
+    ankiDeckCardCount: 350,
   },
   {
     slug: "epa-608-readiness-check",

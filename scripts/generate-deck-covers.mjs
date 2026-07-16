@@ -106,6 +106,12 @@ const DECK_CONFIGS = {
     monogram: "GMAT",
     panelKind: "finance",
   },
+  "sat-anki-deck": {
+    title: "Digital SAT\nAnki Deck",
+    subtitle: "College admissions flashcards",
+    monogram: "SAT",
+    panelKind: "finance",
+  },
 };
 
 const HERO_CONFIG = {
@@ -123,7 +129,7 @@ function inferPanelKind(slug, category) {
   if (/hvac|epa|ashrae|bms|refriger|automation/i.test(slug)) return "hvac";
   if (/leed|well|cem|building|energy|mrics|cdcp/i.test(slug)) return "building";
   if (/cfps|nebosh|servsafe|safety|fire/i.test(slug)) return "safety";
-  if (/cfa|frm|sie|series|finra|gmat|finance|insurance|bench-energy|trader|commodity/i.test(slug)) {
+  if (/cfa|frm|sie|series|finra|gmat|sat|finance|insurance|bench-energy|trader|commodity/i.test(slug)) {
     return "finance";
   }
   if (category === "language" || category === "immigration") return "language";
@@ -300,6 +306,7 @@ const BUILDING_DECK_SLUGS = [
   "mrics-anki-deck",
   "mrics-quantity-surveying-anki-deck",
   "gmat-focus-anki-deck",
+  "sat-anki-deck",
 ];
 
 function resolveSlugs(args, deckConfigs) {

@@ -10,7 +10,7 @@ import {
   buildSiteAiDescription,
 } from "@/lib/exam-llm-layer";
 import { withAiMetadata } from "@/lib/llm-meta";
-import { finalize, homeMetadata, shouldIndexMockExam } from "@/lib/seo";
+import { homeMetadata, shouldIndexMockExam } from "@/lib/seo";
 import {
   formatDeckPriceLabel,
   getCheckoutActionLabel,
@@ -68,6 +68,7 @@ const examPathLinks = [
       { href: "/mock-exams/well-ap-readiness-check", label: "WELL AP readiness check" },
       { href: "/mock-exams/mrics-readiness-check", label: "MRICS APC readiness check" },
       { href: "/mock-exams/gmat-focus-readiness-check", label: "GMAT Focus readiness check" },
+      { href: "/mock-exams/sat-readiness-check", label: "Digital SAT readiness check" },
     ],
   },
   {
@@ -270,11 +271,11 @@ export default async function HomePage() {
                 Free practice tests first
               </p>
               <h1 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight text-balance text-[#18140f] sm:text-5xl">
-                {indexedMockCount} Free Timed Mocks &amp; {availableDecks.length} Anki Decks for US Licensing &amp; Finance
+                Diagnose exam gaps with free timed mocks — then drill with Anki
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-8 text-[#4f493e]">
-                Start with a free timed practice test — topic scoring, answer review, and a pass/no-pass report.
-                When the mock flags weak areas, drill with the linked Anki deck or printable PDF. No signup required.
+                {indexedMockCount} live indexed practice tests plus {mockExams.length - indexedMockCount} preview readiness checks and{" "}
+                {availableDecks.length} Anki decks/PDFs. Start with topic scoring and a pass/no-pass report — no signup.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
@@ -288,7 +289,7 @@ export default async function HomePage() {
                   href="/mock-exams"
                   className="inline-flex min-h-12 items-center rounded-lg border border-[#18140f]/20 bg-[#fffaf0]/70 px-6 py-3 text-base font-semibold text-[#18140f] transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
                 >
-                  Browse All {mockExams.length} Free Mocks
+                  Browse all practice tests
                 </Link>
               </div>
               <dl className="mt-10 grid gap-4 sm:grid-cols-3">
@@ -318,7 +319,7 @@ export default async function HomePage() {
               </dl>
               <LlmFactsStrip
                 deckCount={availableDecks.length}
-                mockCount={mockExams.length}
+                mockCount={indexedMockCount}
                 variant="site"
               />
             </div>
@@ -524,6 +525,16 @@ export default async function HomePage() {
                               ? "Planned · not yet on sale"
                               : "See deck page"}
                         </p>
+                        {pricedDeck?.checkoutUrl && !deckIsPlanned ? (
+                          <TrackedCheckoutLink
+                            className="mt-3 inline-flex text-sm font-semibold text-[#1f3a5f] underline-offset-4 hover:underline"
+                            deckSlug={deck.slug}
+                            href={pricedDeck.checkoutUrl}
+                            source="home_repair_pair_buy"
+                          >
+                            {getCheckoutActionLabel(pricedDeck.checkoutProvider)} — {formatDeckPriceLabel(pricedDeck)}
+                          </TrackedCheckoutLink>
+                        ) : null}
                       </div>
                     </div>
                   </article>
