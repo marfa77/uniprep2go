@@ -7,9 +7,10 @@ import { DeckExamFactsSection } from "@/components/decks/deck-exam-facts-section
 import { MockExamClient } from "@/components/mock-exams/mock-exam-client";
 import type { LinkedDeckCheckout } from "@/components/mock-exams/mock-report-handoff";
 import {
-  MockExamAboutSection,
+  MockExamAboutVisibleSection,
   MockExamFeaturedFaqSection,
   MockExamFaqSection,
+  MockExamWhatIsSection,
 } from "@/components/mock-exams/mock-seo-sections";
 import { CollapsibleDetails } from "@/components/ui/collapsible-details";
 import { SiteFooter } from "@/components/site-footer";
@@ -154,9 +155,15 @@ export default async function MockExamPage({
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
           {seoCopy.headline}
         </h1>
-        <p className="mt-4 max-w-2xl text-base leading-7 text-[#4f493e]">
+        <p className="mt-4 max-w-3xl text-lg leading-8 text-[#4f493e]">
+          {seoCopy.whatIsExam.length > 220
+            ? `${seoCopy.whatIsExam.slice(0, 220).replace(/\s+\S*$/, "")}…`
+            : seoCopy.whatIsExam}
+        </p>
+        <p className="mt-3 max-w-2xl text-base leading-7 text-[#5f5749]">
           {config.questionCount} questions · {config.durationMinutes} min · {config.passRule.passPercent}% pass
           target · free
+          {seoCopy.administeredBy ? ` · ${seoCopy.administeredBy}` : ""}
         </p>
         <OfficialSourceTrustStrip className="mt-4 max-w-2xl" compact />
 
@@ -177,22 +184,17 @@ export default async function MockExamPage({
           />
         ) : null}
 
-        <CollapsibleDetails
-          hint="Audience, topics, and how this check fits your study plan"
-          id="mock-about"
-          summary="About this practice test"
-        >
-          <MockExamAboutSection config={config} />
-        </CollapsibleDetails>
+        <MockExamWhatIsSection config={config} />
+        <MockExamAboutVisibleSection config={config} />
 
-        <MockExamFeaturedFaqSection config={config} />
+        <MockExamFeaturedFaqSection config={config} limit={6} />
 
         <CollapsibleDetails
           hint="Additional format, scoring, and disclaimer questions"
           id="mock-faq"
           summary="More FAQ"
         >
-          <MockExamFaqSection config={config} skip={4} />
+          <MockExamFaqSection config={config} skip={6} />
         </CollapsibleDetails>
 
         {examFactsProfile ? (

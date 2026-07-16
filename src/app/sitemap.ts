@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { availableDecks, catalogPlannedDecks } from "../lib/decks";
 import { getAllMockExams } from "../lib/mock-exams/configs";
+import { getVerticalSummaries } from "../lib/mock-exams/hub-clusters";
 import { shouldIndexMockExam } from "../lib/seo";
 import { siteConfig } from "../lib/site";
 
@@ -26,10 +27,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const mockPages = getAllMockExams()
     .filter((mock) => shouldIndexMockExam(mock.slug))
     .map((mock) => ({
-    url: `${siteUrl}/mock-exams/${mock.slug}`,
+      url: `${siteUrl}/mock-exams/${mock.slug}`,
+      lastModified,
+      changeFrequency: "weekly" as const,
+      priority: 0.95,
+    }));
+
+  const mockVerticalPages = getVerticalSummaries().map((vertical) => ({
+    url: `${siteUrl}/mock-exams/v/${vertical.id}`,
     lastModified,
     changeFrequency: "weekly" as const,
-    priority: 0.95,
+    priority: 0.9,
   }));
 
   return [
@@ -105,6 +113,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.88,
     },
+    ...mockVerticalPages,
     ...mockPages,
     ...deckPages,
     ...plannedDeckPages,

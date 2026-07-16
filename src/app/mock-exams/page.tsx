@@ -2,11 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { LlmFactsStrip } from "@/components/llm/llm-facts-strip";
-import {
-  MockExamsHubCatalog,
-  type MockHubClusterCard,
-  type MockHubFeaturedCard,
-} from "@/components/mock-exams/mock-exams-hub-catalog";
+import { MockExamsHubCatalog } from "@/components/mock-exams/mock-exams-hub-catalog";
 import { OfficialSourceTrustStrip } from "@/components/official-source-trust";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -14,10 +10,10 @@ import {
   buildMockIndexAiCategory,
   buildMockIndexAiDescription,
 } from "@/lib/exam-llm-layer";
-import { getMockClusterImage } from "@/lib/mock-exams/cluster-images";
 import { getAllMockExams, getMockExamConfig } from "@/lib/mock-exams/configs";
-import { featuredMockHubSlugs, mockHubClusters } from "@/lib/mock-exams/hub-clusters";
+import { featuredMockHubSlugs, getVerticalSummaries } from "@/lib/mock-exams/hub-clusters";
 import { buildMockExamItemListJsonLd } from "@/lib/mock-exams/llm";
+import { buildMockSearchIndex } from "@/lib/mock-exams/search-index";
 import { buildMockExamHubFaqs, buildMockSeoTitle } from "@/lib/mock-exams/seo";
 import { mockFreeAccessNotice } from "@/lib/mock-exams/pricing";
 import { withAiMetadata } from "@/lib/llm-meta";
@@ -29,7 +25,7 @@ function mockCtaLabel(status: string) {
   return status === "live" ? "Start free mock" : "Start readiness check";
 }
 
-function buildFeaturedCards(): MockHubFeaturedCard[] {
+function buildFeaturedCards() {
   return featuredMockHubSlugs.flatMap((slug) => {
     const mock = getMockExamConfig(slug);
     if (!mock) return [];
@@ -55,30 +51,6 @@ function buildFeaturedCards(): MockHubFeaturedCard[] {
       },
     ];
   });
-}
-
-function buildClusterCards(): MockHubClusterCard[] {
-  return mockHubClusters.map((cluster) => ({
-    id: cluster.id,
-    label: cluster.label,
-    imageSrc: getMockClusterImage(cluster.imageType),
-    items: cluster.slugs.flatMap((slug) => {
-      const mock = getMockExamConfig(slug);
-      if (!mock) return [];
-      const linkedDeck =
-        getCatalogDeckBySlug(mock.linkedDeckSlug) ?? getDeckBySlug(mock.linkedDeckSlug);
-      return [
-        {
-          slug: mock.slug,
-          shortTitle: mock.shortTitle,
-          questionCount: mock.questionCount,
-          status: mock.status,
-          examBody: mock.examBody,
-          deckNote: linkedDeck?.shortName,
-        },
-      ];
-    }),
-  }));
 }
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -133,7 +105,8 @@ export default function MockExamsIndexPage() {
   const hubFaqs = buildMockExamHubFaqs(indexedCount, mocks.length);
   const pageUrl = absoluteUrl("/mock-exams");
   const featured = buildFeaturedCards();
-  const clusters = buildClusterCards();
+  const verticals = getVerticalSummaries();
+  const searchIndex = buildMockSearchIndex();
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -177,8 +150,9 @@ export default function MockExamsIndexPage() {
           Free timed mock exams for US licensing &amp; finance
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          {indexedCount} live indexed mocks plus {mocks.length - indexedCount} preview readiness checks.
-          Timed scoring, topic breakdown, and linked Anki deck repair. {mockFreeAccessNotice}
+          {indexedCount} live indexed mocks across {verticals.length} exam paths, plus{" "}
+          {mocks.length - indexedCount} preview readiness checks. Timed scoring, topic breakdown, and
+          linked Anki deck repair. {mockFreeAccessNotice}
         </p>
         <OfficialSourceTrustStrip className="mt-6 max-w-3xl" />
         <LlmFactsStrip mockCount={mocks.length} variant="mock-index" />
@@ -188,7 +162,11 @@ export default function MockExamsIndexPage() {
             <div className="mt-8 h-14 animate-pulse rounded-2xl border border-[#18140f]/10 bg-[#fffaf0]" />
           }
         >
-          <MockExamsHubCatalog clusters={clusters} featured={featured} />
+          <MockExamsHubCatalog
+            featured={featured}
+            searchIndex={searchIndex}
+            verticals={verticals}
+          />
         </Suspense>
 
         <section className="mt-12 rounded-3xl border border-[#18140f]/10 bg-[#18140f]/5 p-5">
@@ -220,32 +198,6 @@ export default function MockExamsIndexPage() {
             ))}
           </dl>
         </section>
-
-        <details className="mt-10 rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-5">
-          <summary className="cursor-pointer font-semibold">All {mocks.length} mocks (machine-readable)</summary>
-          <div className="mt-4 overflow-x-auto">
-            <table className="w-full text-left text-sm">
-              <thead>
-                <tr className="border-b border-[#18140f]/10 text-[#5f5749]">
-                  <th className="py-2 pr-4">Slug</th>
-                  <th className="py-2 pr-4">Status</th>
-                  <th className="py-2 pr-4">Questions</th>
-                  <th className="py-2">Linked deck</th>
-                </tr>
-              </thead>
-              <tbody>
-                {mocks.map((mock) => (
-                  <tr className="border-b border-[#18140f]/5" key={mock.slug}>
-                    <td className="py-2 pr-4 font-mono text-xs">{mock.slug}</td>
-                    <td className="py-2 pr-4">{mock.status}</td>
-                    <td className="py-2 pr-4">{mock.questionCount}</td>
-                    <td className="py-2">{mock.linkedDeckSlug}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </details>
       </article>
 
       <SiteFooter />

@@ -1,6 +1,11 @@
 import { getCatalogDeckBySlug } from "../decks";
 import { getAllMockExams, getMockExamConfig } from "./configs";
-import { buildMockExamFaqs, buildMockSeoDescription } from "./seo";
+import {
+  buildMockExamFaqs,
+  buildMockSeoDescription,
+  buildMockSeoPageCopy,
+  getMockSeoProfile,
+} from "./seo";
 import type { MockExamConfig } from "./types";
 import { isMockExamRunnable } from "./question-bank";
 import { shouldIndexMockExam } from "../seo";
@@ -20,11 +25,13 @@ export function mockExamHubBreadcrumbLabel() {
 export function buildMockExamFacts(config: MockExamConfig) {
   const linkedDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
   const seoIndexed = shouldIndexMockExam(config.slug);
+  const seo = getMockSeoProfile(config);
+  const pageCopy = buildMockSeoPageCopy(config);
 
   return {
-    product: config.title,
+    product: seo.headline,
     slug: config.slug,
-    type: "finance_mock_exam",
+    type: "practice_test",
     publisher: siteConfig.name,
     seller: linkedDeck?.checkoutSeller ?? "PixID Studio",
     linked_deck_slug: config.linkedDeckSlug,
@@ -40,6 +47,12 @@ export function buildMockExamFacts(config: MockExamConfig) {
     price: mockFreeAccessPriceLabel,
     pricing_note: mockFreeAccessNotice,
     exam_body: config.examBody,
+    vertical_id: config.verticalId,
+    family_id: config.familyId,
+    search_aliases: config.searchAliases ?? [],
+    what_is_exam: pageCopy.whatIsExam,
+    administered_by: pageCopy.administeredBy ?? config.examBody,
+    official_format: pageCopy.officialFormat ?? null,
     topics: config.topics,
     funnel: {
       step_1: "free_timed_mock",
@@ -55,12 +68,15 @@ export function buildMockExamFacts(config: MockExamConfig) {
       "full answer review",
       "linked Anki deck repair plan for no-pass or borderline results",
     ],
-    question_source: "Converted from the linked UniPrep2Go Anki deck content, not AI-generated from scratch.",
+    question_source:
+      config.questionSourceNote ??
+      "Original UniPrep2Go practice items aligned to published topic outlines — not leaked official exam questions.",
     official_source_note: config.officialSourceNote,
-    description: config.description,
+    description: buildMockSeoDescription(config),
     disclaimer: config.disclaimer,
     runnable: isMockExamRunnable(config.slug),
     landing_page: absoluteUrl(`/mock-exams/${config.slug}`),
+    vertical_page: absoluteUrl(`/mock-exams/v/${config.verticalId}`),
     facts_json: absoluteUrl(`/api/mock-exams/${config.slug}`),
     markdown: absoluteUrl(`/mock-exams/${config.slug}/markdown`),
     not_official_exam_material: true,
@@ -82,18 +98,29 @@ export function buildMockExamCatalogFacts() {
 
 export function buildMockExamMarkdown(config: MockExamConfig) {
   const faqs = buildMockExamFaqs(config);
+  const seo = getMockSeoProfile(config);
+  const pageCopy = buildMockSeoPageCopy(config);
   const examFactsProfile = getExamFactsProfileForDeck(config.linkedDeckSlug);
   const examFactsSection = examFactsProfile
     ? `\n${buildExamFactsMarkdownSection(examFactsProfile)}\n`
     : "";
 
-  return `# ${config.title}
+  return `# ${seo.headline}
 
-> ${config.description}
+> ${buildMockSeoDescription(config)}
 
+## ${pageCopy.whatIsHeading}
+
+${pageCopy.whatIsExam}
+
+- Administered by: ${pageCopy.administeredBy ?? config.examBody}
+${pageCopy.officialFormat ? `- Official format: ${pageCopy.officialFormat}\n` : ""}
 ## Product facts
 
 - Slug: ${config.slug}
+- Practice test label: ${pageCopy.practiceTestLabel}
+- Vertical: ${config.verticalId} (${absoluteUrl(`/mock-exams/v/${config.verticalId}`)})
+- Family: ${config.familyId}
 - Linked deck: ${config.linkedDeckSlug}
 - Status: ${config.status}
 - Access mode: ${config.accessMode}
@@ -103,8 +130,16 @@ export function buildMockExamMarkdown(config: MockExamConfig) {
 - Price: ${mockFreeAccessPriceLabel}
 - Pricing note: ${mockFreeAccessNotice}
 - Exam body: ${config.examBody}
+- Search aliases: ${(config.searchAliases ?? []).join(", ") || "n/a"}
 - Landing page: ${absoluteUrl(`/mock-exams/${config.slug}`)}
 - Facts JSON: ${absoluteUrl(`/api/mock-exams/${config.slug}`)}
+
+## About this free practice test
+
+${pageCopy.intro}
+
+- Built for: ${pageCopy.audience}
+- Topics: ${pageCopy.topicSummary}
 
 ## Report features
 
@@ -116,7 +151,7 @@ export function buildMockExamMarkdown(config: MockExamConfig) {
 
 ## Question source
 
-${config.questionSourceNote ?? "Questions are converted from the linked UniPrep2Go Anki deck content and reshuffled into exam-style multiple choice. They are not generated from scratch without the deck source."}
+${config.questionSourceNote ?? "Original UniPrep2Go practice items aligned to published topic outlines — not leaked official exam questions."}
 
 ## Structure
 

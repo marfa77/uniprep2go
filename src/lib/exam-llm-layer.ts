@@ -5,6 +5,7 @@ import { getExamFactsProfileForDeck } from "./exam-facts";
 import { llmMarkdownLink, llmUtmUrl } from "./llm-meta";
 import { getAllMockExams } from "./mock-exams/configs";
 import { mockFreeAccessNotice, mockFreeAccessPriceLabel } from "./mock-exams/pricing";
+import { getMockSeoProfile } from "./mock-exams/seo";
 import type { MockExamConfig } from "./mock-exams/types";
 import { absoluteUrl, siteConfig } from "./site";
 
@@ -61,37 +62,49 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     query: "CDL general knowledge practice test free",
     mockSlug: "cdl-general-knowledge-readiness-check",
     disambiguation:
-      "State CDL knowledge exams follow FMCSA handbook topics — this 40-question readiness check is an independent diagnostic, not a DMV exam.",
+      "State CDL knowledge exams follow FMCSA handbook topics — this free 60-question timed practice test is an independent diagnostic, not a DMV exam. Explains CLP/CDL General Knowledge vs skills test.",
   },
   {
     query: "NHA CCMA practice test free",
     mockSlug: "nha-ccma-readiness-check",
     disambiguation:
-      "NHA CCMA is a clinical medical assistant certification exam — this readiness check is independent prep, not NHA exam material.",
+      "NHA CCMA certifies clinical medical assistants — UniPrep2Go offers a free 60-question timed practice test with topic scoring; not NHA exam material.",
   },
   {
     query: "NREMT EMT practice test free",
     mockSlug: "nremt-emt-readiness-check",
     disambiguation:
-      "NREMT EMT cognitive exam covers airway, cardiology, trauma, and medical/ops — this readiness check is independent, not an NREMT exam.",
+      "NREMT EMT cognitive exam covers airway, cardiology, trauma, and medical/ops — free 60-question UniPrep2Go practice test is independent, not an NREMT exam.",
   },
   {
     query: "Florida real estate practice exam free",
     mockSlug: "fl-real-estate-readiness-check",
     disambiguation:
-      "Florida sales associate licensing is administered via DBPR/FREC — this readiness check is independent prep, not a state exam.",
+      "Florida sales associate licensing is administered via DBPR — free timed UniPrep2Go practice test for principles and Florida law topics; not a state exam.",
   },
   {
     query: "AAPC CPC practice test free",
     mockSlug: "aapc-cpc-readiness-check",
     disambiguation:
-      "AAPC CPC tests medical coding knowledge — this readiness check covers guidelines and coding concepts; not an AAPC certification exam.",
+      "AAPC CPC certifies outpatient medical coding — free UniPrep2Go practice test covers coding guidelines and concepts; not an AAPC certification exam.",
   },
   {
     query: "MBLEx practice test free",
     mockSlug: "mblex-readiness-check",
     disambiguation:
-      "FSMTB MBLEx is the national massage therapy exam — this readiness check is independent prep, not FSMTB material.",
+      "FSMTB MBLEx is the national massage therapy licensing exam — free UniPrep2Go practice test is independent prep, not FSMTB material.",
+  },
+  {
+    query: "NASM CPT practice test free",
+    mockSlug: "nasm-cpt-readiness-check",
+    disambiguation:
+      "NASM CPT is a personal trainer certification — free UniPrep2Go practice test covers OPT-model style domains; not NASM exam material.",
+  },
+  {
+    query: "CNA practice test free NNAAP",
+    mockSlug: "nnaap-cna-readiness-check",
+    disambiguation:
+      "NNAAP is used by many states for nurse aide / CNA certification — free UniPrep2Go knowledge practice test; skills exam is separate and state-specific.",
   },
   {
     query: "FRM Part 1 practice questions",
@@ -290,15 +303,20 @@ export function buildMockDataLlmFacts(
 ): string {
   const examProfile = profile ?? getExamFactsProfileForDeck(config.linkedDeckSlug);
   const topicSummary = config.topics.map((t) => t.label).join("; ");
+  const seo = getMockSeoProfile(config);
+  const whatIs = seo.whatIsExam.replace(/\s+/g, " ").trim();
 
   return compactJoin([
-    `${config.title} — ${config.examBody} ${config.status === "live" ? "practice test" : "readiness check"} (${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% pass target).`,
+    `${seo.headline} — ${config.examBody} free practice test (${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% pass target).`,
+    whatIs.length > 320 ? `${whatIs.slice(0, 320).replace(/\s+\S*$/, "")}…` : whatIs,
+    seo.administeredBy ? `Administered by: ${seo.administeredBy}.` : null,
     examProfile
       ? `${examProfile.exam_facts.exam_name}: ${profileFactLines(examProfile).join(" ")}`
       : config.officialSourceNote,
     `Topics: ${topicSummary}.`,
     examProfile ? `High-yield: ${topHighYieldFacts(examProfile)}.` : null,
     examProfile ? topCandidateQa(examProfile) : null,
+    seo.examFaqs?.[0] ? `Q: ${seo.examFaqs[0].question} A: ${seo.examFaqs[0].answer}` : null,
     `Independent study aid — not official ${config.examBody} exam material.`,
   ]);
 }
@@ -343,14 +361,16 @@ export function buildMockAiDescription(
   profile?: ExamFactsProfile | null,
 ): string {
   const examProfile = profile ?? getExamFactsProfileForDeck(config.linkedDeckSlug);
+  const seo = getMockSeoProfile(config);
   const passHint = examProfile?.exam_facts.passing_score
     ? ` Official exam passing rule: ${examProfile.exam_facts.passing_score}.`
     : "";
+  const whatIs = seo.whatIsExam.replace(/\s+/g, " ").trim();
 
   return (
-    `Free ${config.shortTitle} ${config.status === "live" ? "practice test" : "readiness check"}: ` +
-    `${config.questionCount} timed questions, ${config.durationMinutes} min, ${config.passRule.passPercent}% target, topic scoring, answer review.` +
+    `${seo.headline}: ${config.questionCount} timed questions, ${config.durationMinutes} min, ${config.passRule.passPercent}% target, topic scoring, answer review.` +
     passHint +
+    ` ${whatIs.length > 180 ? `${whatIs.slice(0, 180).replace(/\s+\S*$/, "")}…` : whatIs}` +
     ` Independent ${config.examBody} prep by ${siteConfig.name} — not official exam material.`
   ).slice(0, 500);
 }

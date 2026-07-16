@@ -42,7 +42,7 @@ const examPathLinks = [
     title: "Allied health certifications",
     description: "NHA CCMA, phlebotomy, pharmacy tech, and medical admin readiness checks — free timed mocks.",
     links: [
-      { href: "/mock-exams?q=nha", label: "Browse NHA mocks" },
+      { href: "/mock-exams/v/allied-health", label: "Browse allied health mocks" },
       { href: "/mock-exams/nha-ccma-readiness-check", label: "NHA CCMA mock" },
       { href: "/mock-exams/nha-cpt-phlebotomy-readiness-check", label: "NHA CPT phlebotomy" },
       { href: "/mock-exams/ptcb-pharmacy-technician-mock", label: "PTCB practice test" },
@@ -52,7 +52,7 @@ const examPathLinks = [
     title: "CDL & commercial driving",
     description: "General knowledge plus HazMat, passenger, and school bus endorsement practice.",
     links: [
-      { href: "/mock-exams?q=cdl", label: "All CDL mocks" },
+      { href: "/mock-exams/v/transport", label: "All CDL mocks" },
       { href: "/mock-exams/cdl-general-knowledge-readiness-check", label: "CDL General Knowledge" },
       { href: "/mock-exams/cdl-hazmat-readiness-check", label: "CDL HazMat" },
     ],
@@ -61,7 +61,7 @@ const examPathLinks = [
     title: "State real estate licensing",
     description: "Florida, Texas, New York, and California salesperson readiness checks.",
     links: [
-      { href: "/mock-exams?q=real%20estate", label: "All real estate mocks" },
+      { href: "/mock-exams/v/real-estate", label: "All real estate mocks" },
       { href: "/mock-exams/fl-real-estate-readiness-check", label: "Florida RE mock" },
       { href: "/mock-exams/tx-real-estate-readiness-check", label: "Texas RE mock" },
     ],
@@ -70,7 +70,7 @@ const examPathLinks = [
     title: "Nursing & nurse aide",
     description: "NNAAP CNA and NCLEX-PN style readiness checks before clinical skills day.",
     links: [
-      { href: "/mock-exams?q=nursing", label: "Nursing mocks" },
+      { href: "/mock-exams/v/nursing", label: "Nursing mocks" },
       { href: "/mock-exams/nnaap-cna-readiness-check", label: "NNAAP CNA mock" },
       { href: "/mock-exams/nclex-pn-readiness-check", label: "NCLEX-PN readiness" },
     ],
@@ -79,7 +79,7 @@ const examPathLinks = [
     title: "Personal training (CPT)",
     description: "NASM, ISSA, and ACE CPT practice tests for domain scoring before exam day.",
     links: [
-      { href: "/mock-exams?q=cpt", label: "All CPT mocks" },
+      { href: "/mock-exams/v/fitness", label: "All CPT mocks" },
       { href: "/mock-exams/nasm-cpt-readiness-check", label: "NASM CPT" },
       { href: "/mock-exams/ace-cpt-readiness-check", label: "ACE CPT" },
     ],
@@ -88,7 +88,7 @@ const examPathLinks = [
     title: "Dental assisting & hygiene",
     description: "DANB ICE/GC and NBDHE readiness checks for chairside and hygiene pathways.",
     links: [
-      { href: "/mock-exams?q=dental", label: "Dental mocks" },
+      { href: "/mock-exams/v/dental", label: "Dental mocks" },
       { href: "/mock-exams/danb-ice-readiness-check", label: "DANB ICE" },
       { href: "/mock-exams/nbdhe-readiness-check", label: "NBDHE readiness" },
     ],

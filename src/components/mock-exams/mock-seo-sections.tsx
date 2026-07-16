@@ -10,6 +10,30 @@ type MockSeoSectionsProps = {
   variant?: "full";
 };
 
+/** Always-visible exam context for SEO / AEO — not buried in a collapsible. */
+export function MockExamWhatIsSection({ config }: { config: MockExamConfig }) {
+  const copy = buildMockSeoPageCopy(config);
+
+  return (
+    <section className="mt-10" id="what-is-exam">
+      <h2 className="text-2xl font-semibold tracking-tight">{copy.whatIsHeading}</h2>
+      <div className="mt-4 space-y-4 text-base leading-8 text-[#4f493e]">
+        <p>{copy.whatIsExam}</p>
+        {copy.administeredBy ? (
+          <p>
+            <span className="font-medium text-[#18140f]">Administered by:</span> {copy.administeredBy}
+          </p>
+        ) : null}
+        {copy.officialFormat ? (
+          <p>
+            <span className="font-medium text-[#18140f]">Official format:</span> {copy.officialFormat}
+          </p>
+        ) : null}
+      </div>
+    </section>
+  );
+}
+
 export function MockExamAboutSection({ config }: { config: MockExamConfig }) {
   const copy = buildMockSeoPageCopy(config);
   const linkedDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
@@ -21,7 +45,8 @@ export function MockExamAboutSection({ config }: { config: MockExamConfig }) {
         <span className="font-medium text-[#18140f]">Built for:</span> {copy.audience}
       </p>
       <p>
-        <span className="font-medium text-[#18140f]">Topics:</span> {copy.topicSummary}.
+        <span className="font-medium text-[#18140f]">Topics on this practice test:</span>{" "}
+        {copy.topicSummary}.
       </p>
       <ul className="grid gap-2 sm:grid-cols-2">
         <li className="rounded-2xl bg-[#18140f]/5 px-4 py-3">
@@ -34,7 +59,7 @@ export function MockExamAboutSection({ config }: { config: MockExamConfig }) {
           {config.passRule.passPercent}% pass threshold with topic breakdown
         </li>
         <li className="rounded-2xl bg-[#18140f]/5 px-4 py-3">
-          Full answer review linked to the Anki deck
+          Full answer review after you submit
         </li>
       </ul>
       <p className="text-[#5f5749]">{mockFreeAccessNotice}</p>
@@ -45,6 +70,20 @@ export function MockExamAboutSection({ config }: { config: MockExamConfig }) {
         Drill weak topics with {linkedDeck?.shortName ?? "the linked"} flashcards
       </Link>
     </div>
+  );
+}
+
+/** Visible about block with H2 (not a details/summary). */
+export function MockExamAboutVisibleSection({ config }: { config: MockExamConfig }) {
+  const copy = buildMockSeoPageCopy(config);
+
+  return (
+    <section className="mt-10" id="mock-about">
+      <h2 className="text-2xl font-semibold tracking-tight">About this free {copy.practiceTestLabel}</h2>
+      <div className="mt-4">
+        <MockExamAboutSection config={config} />
+      </div>
+    </section>
   );
 }
 

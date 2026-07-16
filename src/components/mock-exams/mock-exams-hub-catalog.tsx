@@ -4,6 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
+import {
+  filterMockSearchIndex,
+  type MockSearchIndexItem,
+} from "@/lib/mock-exams/search-index";
 
 export type MockHubFeaturedCard = {
   slug: string;
@@ -19,45 +23,32 @@ export type MockHubFeaturedCard = {
   ctaLabel: string;
 };
 
-export type MockHubClusterCard = {
+export type MockHubVerticalCard = {
   id: string;
   label: string;
+  description: string;
+  count: number;
   imageSrc: string;
-  items: Array<{
-    slug: string;
-    shortTitle: string;
-    questionCount: number;
-    status: string;
-    examBody: string;
-    deckNote?: string;
-  }>;
+  href: string;
 };
 
 type MockExamsHubCatalogProps = {
   featured: MockHubFeaturedCard[];
-  clusters: MockHubClusterCard[];
+  verticals: MockHubVerticalCard[];
+  searchIndex: MockSearchIndexItem[];
 };
 
-function normalize(value: string) {
-  return value.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-}
-
-function matchesQuery(
-  query: string,
-  fields: string[],
-) {
-  const tokens = normalize(query).split(/\s+/).filter(Boolean);
-  if (tokens.length === 0) return true;
-  const haystack = normalize(fields.join(" "));
-  return tokens.every((token) => haystack.includes(token));
-}
-
-export function MockExamsHubCatalog({ featured, clusters }: MockExamsHubCatalogProps) {
+export function MockExamsHubCatalog({
+  featured,
+  verticals,
+  searchIndex,
+}: MockExamsHubCatalogProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const initialQ = searchParams.get("q") ?? "";
   const [query, setQuery] = useState(initialQ);
   const deferredQuery = useDeferredValue(query);
+  const hasQuery = deferredQuery.trim().length > 0;
 
   useEffect(() => {
     setQuery(searchParams.get("q") ?? "");
@@ -77,34 +68,32 @@ export function MockExamsHubCatalog({ featured, clusters }: MockExamsHubCatalogP
     return () => window.clearTimeout(handle);
   }, [query, router, searchParams]);
 
-  const filteredFeatured = useMemo(
-    () =>
-      featured.filter((mock) =>
-        matchesQuery(deferredQuery, [mock.title, mock.shortTitle, mock.examBody, mock.slug]),
-      ),
-    [featured, deferredQuery],
+  const searchResults = useMemo(
+    () => (hasQuery ? filterMockSearchIndex(searchIndex, deferredQuery) : []),
+    [searchIndex, deferredQuery, hasQuery],
   );
 
-  const filteredClusters = useMemo(
-    () =>
-      clusters
-        .map((cluster) => ({
-          ...cluster,
-          items: cluster.items.filter((item) =>
-            matchesQuery(deferredQuery, [
-              item.shortTitle,
-              item.examBody,
-              item.slug,
-              cluster.label,
-            ]),
-          ),
-        }))
-        .filter((cluster) => cluster.items.length > 0),
-    [clusters, deferredQuery],
-  );
+  const filteredFeatured = useMemo(() => {
+    if (!hasQuery) return featured;
+    const matched = new Set(searchResults.map((item) => item.slug));
+    return featured.filter((mock) => matched.has(mock.slug));
+  }, [featured, hasQuery, searchResults]);
 
-  const hasQuery = deferredQuery.trim().length > 0;
-  const noMatches = hasQuery && filteredFeatured.length === 0 && filteredClusters.length === 0;
+  const filteredVerticals = useMemo(() => {
+    if (!hasQuery) return verticals;
+    const counts = new Map<string, number>();
+    for (const item of searchResults) {
+      counts.set(item.verticalId, (counts.get(item.verticalId) ?? 0) + 1);
+    }
+    return verticals
+      .map((vertical) => ({
+        ...vertical,
+        count: counts.get(vertical.id) ?? 0,
+      }))
+      .filter((vertical) => vertical.count > 0);
+  }, [verticals, hasQuery, searchResults]);
+
+  const noMatches = hasQuery && searchResults.length === 0;
 
   return (
     <>
@@ -126,7 +115,8 @@ export function MockExamsHubCatalog({ featured, clusters }: MockExamsHubCatalogP
         {hasQuery ? (
           <div className="mt-3 flex flex-wrap items-center gap-3 text-sm text-[#5f5749]">
             <span>
-              Showing matches for “{deferredQuery.trim()}”
+              {searchResults.length} match{searchResults.length === 1 ? "" : "es"} for “
+              {deferredQuery.trim()}”
             </span>
             <button
               className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
@@ -153,11 +143,35 @@ export function MockExamsHubCatalog({ featured, clusters }: MockExamsHubCatalogP
         </p>
       ) : null}
 
-      {!noMatches && filteredFeatured.length > 0 ? (
+      {hasQuery && searchResults.length > 0 ? (
         <section className="mt-10">
-          <h2 className="text-2xl font-semibold tracking-tight">
-            {hasQuery ? "Matching featured mocks" : "Featured free mocks"}
-          </h2>
+          <h2 className="text-2xl font-semibold tracking-tight">Matching practice tests</h2>
+          <ul className="mt-5 divide-y divide-[#18140f]/10 overflow-hidden rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]">
+            {searchResults.map((item) => (
+              <li key={item.slug}>
+                <Link
+                  className="flex flex-wrap items-center justify-between gap-3 px-4 py-3 transition hover:bg-[#f7f3ea]"
+                  href={item.href}
+                >
+                  <span>
+                    <span className="font-medium">{item.shortTitle}</span>
+                    <span className="mt-0.5 block text-xs text-[#8a7d68]">
+                      {item.verticalLabel} · {item.familyLabel}
+                    </span>
+                  </span>
+                  <span className="text-sm text-[#5f5749]">
+                    {item.questionCount} Q · {item.status}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+
+      {!hasQuery && filteredFeatured.length > 0 ? (
+        <section className="mt-10">
+          <h2 className="text-2xl font-semibold tracking-tight">Featured free mocks</h2>
           <div className="mt-5 grid gap-4 sm:grid-cols-2">
             {filteredFeatured.map((mock) => (
               <article
@@ -194,42 +208,52 @@ export function MockExamsHubCatalog({ featured, clusters }: MockExamsHubCatalogP
         </section>
       ) : null}
 
-      {filteredClusters.map((cluster) => (
-        <section className="mt-12" key={cluster.id}>
-          <div className="overflow-hidden rounded-3xl border border-[#18140f]/10">
-            <div className="relative h-36 w-full sm:h-44">
-              <Image
-                alt=""
-                className="object-cover"
-                fill
-                sizes="(max-width: 896px) 100vw, 896px"
-                src={cluster.imageSrc}
-                unoptimized
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#18140f]/75 via-[#18140f]/25 to-transparent" />
-              <h2 className="absolute bottom-4 left-4 right-4 text-2xl font-semibold tracking-tight text-[#fffaf0]">
-                {cluster.label}
-              </h2>
-            </div>
-            <ul className="space-y-0 divide-y divide-[#18140f]/10 bg-[#fffaf0]">
-              {cluster.items.map((item) => (
-                <li key={item.slug}>
-                  <Link
-                    className="flex flex-wrap items-center justify-between gap-3 px-4 py-3 transition hover:bg-[#f7f3ea]"
-                    href={`/mock-exams/${item.slug}`}
-                  >
-                    <span className="font-medium">{item.shortTitle}</span>
-                    <span className="text-sm text-[#5f5749]">
-                      {item.questionCount} Q · {item.status}
-                      {item.deckNote ? ` · ${item.deckNote}` : ""}
+      {!noMatches ? (
+        <section className="mt-12">
+          <h2 className="text-2xl font-semibold tracking-tight">
+            {hasQuery ? "Matching exam paths" : "Browse by exam path"}
+          </h2>
+          <p className="mt-2 max-w-2xl text-sm leading-7 text-[#5f5749]">
+            {hasQuery
+              ? "Open a path to see only the exams that matched your search."
+              : "Pick a vertical — lists live on dedicated pages so this hub stays scannable as the catalog grows."}
+          </p>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            {filteredVerticals.map((vertical) => (
+              <Link
+                className="group overflow-hidden rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] transition hover:border-[#1f3a5f]/40"
+                href={
+                  hasQuery
+                    ? `${vertical.href}?q=${encodeURIComponent(deferredQuery.trim())}`
+                    : vertical.href
+                }
+                key={vertical.id}
+              >
+                <div className="relative h-28 w-full">
+                  <Image
+                    alt=""
+                    className="object-cover transition duration-300 group-hover:scale-[1.02]"
+                    fill
+                    sizes="(max-width: 640px) 100vw, 448px"
+                    src={vertical.imageSrc}
+                    unoptimized
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#18140f]/80 via-[#18140f]/30 to-transparent" />
+                  <div className="absolute bottom-3 left-3 right-3 flex items-end justify-between gap-2">
+                    <h3 className="text-lg font-semibold tracking-tight text-[#fffaf0]">
+                      {vertical.label}
+                    </h3>
+                    <span className="rounded-full bg-[#fffaf0]/15 px-2.5 py-1 text-xs font-semibold text-[#fffaf0]">
+                      {vertical.count}
                     </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+                  </div>
+                </div>
+                <p className="px-4 py-3 text-sm leading-6 text-[#5f5749]">{vertical.description}</p>
+              </Link>
+            ))}
           </div>
         </section>
-      ))}
+      ) : null}
     </>
   );
 }

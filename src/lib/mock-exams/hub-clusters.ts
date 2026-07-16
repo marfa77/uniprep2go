@@ -1,192 +1,12 @@
-import type { MockClusterImageType } from "./cluster-images";
-
-export type MockHubCluster = {
-  id: string;
-  label: string;
-  imageType: MockClusterImageType;
-  slugs: string[];
-};
-
-export const mockHubClusters: MockHubCluster[] = [
-  {
-    id: "transport",
-    label: "CDL & commercial driving",
-    imageType: "transport",
-    slugs: [
-      "cdl-general-knowledge-readiness-check",
-      "cdl-hazmat-readiness-check",
-      "cdl-passenger-readiness-check",
-      "cdl-school-bus-readiness-check",
-    ],
-  },
-  {
-    id: "allied-health",
-    label: "Allied health certifications",
-    imageType: "allied-health",
-    slugs: [
-      "nha-ccma-readiness-check",
-      "nha-cpt-phlebotomy-readiness-check",
-      "nha-cpct-readiness-check",
-      "nha-excpt-readiness-check",
-      "nha-cmaa-readiness-check",
-      "nha-cbcs-readiness-check",
-      "ccht-dialysis-readiness-check",
-      "aama-cma-readiness-check",
-      "nbrc-tmc-readiness-check",
-      "ptcb-pharmacy-technician-mock",
-    ],
-  },
-  {
-    id: "ems",
-    label: "EMS & emergency care",
-    imageType: "ems",
-    slugs: ["nremt-emt-readiness-check", "nremt-paramedic-readiness-check"],
-  },
-  {
-    id: "cpr",
-    label: "CPR & BLS",
-    imageType: "cpr",
-    slugs: ["aha-bls-provider-readiness-check"],
-  },
-  {
-    id: "nursing",
-    label: "Nursing & nurse aide",
-    imageType: "nursing",
-    slugs: ["nnaap-cna-readiness-check", "nclex-pn-readiness-check"],
-  },
-  {
-    id: "real-estate",
-    label: "State real estate licensing",
-    imageType: "real-estate",
-    slugs: [
-      "fl-real-estate-readiness-check",
-      "tx-real-estate-readiness-check",
-      "ny-real-estate-readiness-check",
-      "california-real-estate-readiness-check",
-    ],
-  },
-  {
-    id: "health-admin",
-    label: "Medical coding & admin",
-    imageType: "health-admin",
-    slugs: ["aapc-cpc-readiness-check", "nha-cbcs-readiness-check"],
-  },
-  {
-    id: "bodywork",
-    label: "Massage therapy",
-    imageType: "bodywork",
-    slugs: ["mblex-readiness-check"],
-  },
-  {
-    id: "beauty",
-    label: "Cosmetology & esthetics",
-    imageType: "beauty",
-    slugs: ["cosmetology-state-readiness-check", "esthetician-state-readiness-check"],
-  },
-  {
-    id: "fitness",
-    label: "Personal training",
-    imageType: "fitness",
-    slugs: [
-      "nasm-cpt-readiness-check",
-      "issa-cpt-readiness-check",
-      "ace-cpt-readiness-check",
-    ],
-  },
-  {
-    id: "dental",
-    label: "Dental assisting & hygiene",
-    imageType: "dental",
-    slugs: ["danb-ice-readiness-check", "danb-gc-readiness-check", "nbdhe-readiness-check"],
-  },
-  {
-    id: "surgical",
-    label: "Surgical & sterile processing",
-    imageType: "surgical",
-    slugs: ["crcst-readiness-check", "nbstsa-cst-readiness-check"],
-  },
-  {
-    id: "imaging",
-    label: "Diagnostic imaging physics",
-    imageType: "imaging",
-    slugs: ["ardms-spi-readiness-check"],
-  },
-  {
-    id: "lab",
-    label: "Medical laboratory",
-    imageType: "lab",
-    slugs: ["ascp-mls-readiness-check"],
-  },
-  {
-    id: "nutrition",
-    label: "Nutrition & dietetics",
-    imageType: "nutrition",
-    slugs: ["rd-exam-readiness-check"],
-  },
-  {
-    id: "social-work",
-    label: "Social work licensure",
-    imageType: "social-work",
-    slugs: ["aswb-masters-readiness-check"],
-  },
-  {
-    id: "education",
-    label: "Early childhood education",
-    imageType: "education",
-    slugs: ["cda-childcare-readiness-check"],
-  },
-  {
-    id: "trades",
-    label: "Trades & applicator licenses",
-    imageType: "trades",
-    slugs: ["pest-control-applicator-readiness-check"],
-  },
-  {
-    id: "veterinary",
-    label: "Veterinary technician",
-    imageType: "veterinary",
-    slugs: ["vtne-readiness-check"],
-  },
-  {
-    id: "licensing",
-    label: "US licensing & insurance",
-    imageType: "licensing",
-    slugs: [
-      "sie-full-mock",
-      "series-7-readiness-check",
-      "series-63-readiness-check",
-      "life-and-health-insurance-readiness-check",
-      "property-casualty-insurance-readiness-check",
-      "servsafe-manager-mock",
-    ],
-  },
-  {
-    id: "finance",
-    label: "Finance credentials",
-    imageType: "finance",
-    slugs: [
-      "cfa-level-1-readiness-check",
-      "cfa-level-2-readiness-check",
-      "frm-part-1-readiness-check",
-      "gmat-focus-readiness-check",
-      "gre-readiness-check",
-      "sat-readiness-check",
-    ],
-  },
-  {
-    id: "building",
-    label: "Building & sustainability",
-    imageType: "building",
-    slugs: [
-      "epa-608-readiness-check",
-      "leed-green-associate-readiness-check",
-      "leed-ap-om-readiness-check",
-      "well-ap-readiness-check",
-      "mrics-readiness-check",
-      "pmp-readiness-check",
-    ],
-  },
-];
+import { getMockClusterImage } from "./cluster-images";
+import { getAllMockExams } from "./configs";
+import {
+  getFamilyLabel,
+  getVerticalDefinition,
+  MOCK_VERTICALS,
+  type MockVerticalDefinition,
+} from "./taxonomy";
+import type { MockExamConfig, MockVerticalId } from "./types";
 
 export const featuredMockHubSlugs = [
   "sie-full-mock",
@@ -198,3 +18,66 @@ export const featuredMockHubSlugs = [
   "fl-real-estate-readiness-check",
   "aapc-cpc-readiness-check",
 ] as const;
+
+export type MockVerticalSummary = MockVerticalDefinition & {
+  count: number;
+  imageSrc: string;
+  href: string;
+};
+
+export function getMocksByVertical(verticalId: MockVerticalId): MockExamConfig[] {
+  return getAllMockExams()
+    .filter((mock) => mock.verticalId === verticalId)
+    .sort((a, b) => a.shortTitle.localeCompare(b.shortTitle));
+}
+
+export function getVerticalSummaries(): MockVerticalSummary[] {
+  const mocks = getAllMockExams();
+  return MOCK_VERTICALS.map((vertical) => {
+    const count = mocks.filter((mock) => mock.verticalId === vertical.id).length;
+    return {
+      ...vertical,
+      count,
+      imageSrc: getMockClusterImage(vertical.imageType),
+      href: `/mock-exams/v/${vertical.id}`,
+    };
+  }).filter((vertical) => vertical.count > 0);
+}
+
+export function getVerticalOrThrow(verticalId: string): MockVerticalDefinition {
+  const vertical = getVerticalDefinition(verticalId as MockVerticalId);
+  if (!vertical) {
+    throw new Error(`Unknown mock vertical: ${verticalId}`);
+  }
+  return vertical;
+}
+
+export type MockFamilyGroup = {
+  familyId: string;
+  label: string;
+  mocks: MockExamConfig[];
+};
+
+export function groupMocksByFamily(mocks: MockExamConfig[]): MockFamilyGroup[] {
+  const byFamily = new Map<string, MockExamConfig[]>();
+  for (const mock of mocks) {
+    const list = byFamily.get(mock.familyId) ?? [];
+    list.push(mock);
+    byFamily.set(mock.familyId, list);
+  }
+  return [...byFamily.entries()]
+    .map(([familyId, familyMocks]) => ({
+      familyId,
+      label: getFamilyLabel(familyId),
+      mocks: familyMocks.sort((a, b) => a.shortTitle.localeCompare(b.shortTitle)),
+    }))
+    .sort((a, b) => a.label.localeCompare(b.label));
+}
+
+/** @deprecated Prefer getVerticalSummaries — kept for any leftover imports. */
+export const mockHubClusters = MOCK_VERTICALS.map((vertical) => ({
+  id: vertical.id,
+  label: vertical.label,
+  imageType: vertical.imageType,
+  slugs: [] as string[],
+}));

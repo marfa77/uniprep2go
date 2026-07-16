@@ -30,6 +30,39 @@ export type MockPassRule = {
   };
 };
 
+/** Top-level browse/SEO vertical (~15–25 across the catalog). */
+export type MockVerticalId =
+  | "transport"
+  | "allied-health"
+  | "ems"
+  | "cpr"
+  | "nursing"
+  | "real-estate"
+  | "health-admin"
+  | "bodywork"
+  | "beauty"
+  | "fitness"
+  | "dental"
+  | "surgical"
+  | "imaging"
+  | "lab"
+  | "nutrition"
+  | "social-work"
+  | "education"
+  | "trades"
+  | "veterinary"
+  | "licensing"
+  | "finance"
+  | "building";
+
+export type MockExamTaxonomy = {
+  verticalId: MockVerticalId;
+  /** Subgroup within a vertical (e.g. nha, cdl-endorsements, state-re). */
+  familyId: string;
+  /** Extra search tokens (CCMA, CDL GK, etc.). */
+  searchAliases?: string[];
+};
+
 export type MockExamConfig = {
   slug: string;
   title: string;
@@ -46,6 +79,9 @@ export type MockExamConfig = {
   description: string;
   examBody: string;
   lastUpdated: string;
+  verticalId: MockVerticalId;
+  familyId: string;
+  searchAliases?: string[];
   /** Future Gumroad product id — not used in demand-test mode */
   gumroadProductId?: string;
   /** Override for markdown/LLM when questions are not deck-sourced */
@@ -53,6 +89,10 @@ export type MockExamConfig = {
   /** Total cards in linked Anki deck when bank size differs from topics × 50 */
   ankiDeckCardCount?: number;
 };
+
+/** Config authoring shape — taxonomy may be filled from the slug registry. */
+export type MockExamConfigDraft = Omit<MockExamConfig, keyof MockExamTaxonomy> &
+  Partial<MockExamTaxonomy>;
 
 export type MockQuestionOption = {
   id: string;

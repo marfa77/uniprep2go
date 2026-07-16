@@ -1,4 +1,5 @@
-import type { MockExamConfig } from "./types";
+import { finalizeMockExamConfigs } from "./taxonomy";
+import type { MockExamConfig, MockExamConfigDraft } from "./types";
 import { wave1MockExamConfigs } from "./wave1-configs";
 import { wave2MockExamConfigs } from "./wave2-configs";
 
@@ -56,7 +57,7 @@ const ricsDisclaimer =
 const citizenshipDisclaimer =
   "This is an independent civics practice tool. It is not official USCIS test material and does not guarantee naturalization interview results.";
 
-export const mockExamConfigs: MockExamConfig[] = [
+const mockExamConfigDrafts: MockExamConfigDraft[] = [
   {
     slug: "sie-full-mock",
     title: "FINRA SIE Full Mock Exam",
@@ -1625,6 +1626,8 @@ export const mockExamConfigs: MockExamConfig[] = [
   ...wave2MockExamConfigs,
 ];
 
+export const mockExamConfigs: MockExamConfig[] = finalizeMockExamConfigs(mockExamConfigDrafts);
+
 /** Flagship live mock — used for homepage funnel defaults and LLM primary-product signals. */
 export const primaryMockSlug = "sie-full-mock";
 
@@ -1652,6 +1655,14 @@ export function getAllMockExams() {
 
 export function validateMockExamConfig(config: MockExamConfig) {
   const errors: string[] = [];
+
+  if (!config.verticalId) {
+    errors.push("verticalId is required");
+  }
+
+  if (!config.familyId) {
+    errors.push("familyId is required");
+  }
 
   if (config.topics.length === 0) {
     errors.push("At least one topic is required");

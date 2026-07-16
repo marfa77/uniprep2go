@@ -1,4 +1,5 @@
 import type { MockExamConfig } from "./types";
+import { getNicheExamExplainer } from "./niche-exam-explainers";
 import { mockFreeAccessNotice, mockFreeAccessPriceLabel } from "./pricing";
 import { fitSeoTitle, SEO_TITLE_MAX } from "../seo";
 import { absoluteUrl, siteConfig } from "../site";
@@ -11,29 +12,58 @@ type MockSeoProfile = {
   intro: string;
   audience: string;
   practiceTestLabel: string;
+  /** Visible “what is this certification/exam?” copy for SEO */
+  whatIsExam: string;
+  administeredBy?: string;
+  officialFormat?: string;
+  examFaqs?: Array<{ question: string; answer: string }>;
 };
 
+/** Hand-authored overrides — exam context can come from niche explainers. */
+type MockSeoProfileOverride = Omit<
+  MockSeoProfile,
+  "whatIsExam" | "administeredBy" | "officialFormat" | "examFaqs"
+> &
+  Partial<Pick<MockSeoProfile, "whatIsExam" | "administeredBy" | "officialFormat" | "examFaqs">>;
+
 function defaultProfile(config: MockExamConfig): MockSeoProfile {
+  const niche = getNicheExamExplainer(config.slug);
   const examLabel = config.examBody;
+  const practiceName = niche?.practiceTestName ?? `${config.shortTitle} Practice Test`;
   const type = config.status === "live" ? "practice test" : "readiness check";
+  const aliasKeywords = (config.searchAliases ?? []).flatMap((alias) => [
+    `${alias.toLowerCase()} practice test`,
+    `${alias.toLowerCase()} practice exam`,
+  ]);
 
   return {
-    title: `Free ${config.shortTitle} ${type} | ${config.questionCount} Questions Online`,
-    description: `Take a free online ${examLabel} ${type}: ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% pass target, topic scoring, answer review, and pass/no-pass report. Independent prep — not official exam material.`,
+    title: `Free ${practiceName} 2026 | ${config.questionCount} Questions Online`,
+    description: niche
+      ? `Free ${practiceName.toLowerCase()}: ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% pass target, topic scoring, and answer review. ${niche.administeredBy}. Independent prep — not official exam material.`
+      : `Take a free online ${examLabel} ${type}: ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% pass target, topic scoring, answer review, and pass/no-pass report. Independent prep — not official exam material.`,
     keywords: [
+      ...(niche?.keywords ?? []),
       `free ${config.shortTitle.toLowerCase()} practice test`,
       `${config.shortTitle.toLowerCase()} mock exam`,
       `${examLabel.toLowerCase()} practice questions`,
-      `${config.questionCount} question mock exam`,
-    ],
-    headline: config.title,
-    intro: `${config.description} Use it as a baseline ${type} before you buy a full course or drill with the linked Anki deck.`,
-    audience: `Candidates preparing for ${examLabel} licensing or certification exams who want a timed diagnostic with topic-level feedback.`,
-    practiceTestLabel: `${config.shortTitle} practice test`,
+      ...aliasKeywords,
+    ].slice(0, 12),
+    headline: `Free ${practiceName}`,
+    intro: `${config.description} Use this free timed ${type} as a baseline before exam day or before drilling the linked Anki deck.`,
+    audience: niche
+      ? `Candidates preparing for ${niche.practiceTestName.replace(/ Practice Test$/i, "")} who want a timed diagnostic with topic-level feedback.`
+      : `Candidates preparing for ${examLabel} licensing or certification exams who want a timed diagnostic with topic-level feedback.`,
+    practiceTestLabel: practiceName.replace(/^Free\s+/i, ""),
+    whatIsExam:
+      niche?.whatIsExam ??
+      `${config.shortTitle} is an exam pathway administered under ${examLabel}. ${config.officialSourceNote} This UniPrep2Go page is an independent timed practice test — not official exam material.`,
+    administeredBy: niche?.administeredBy ?? examLabel,
+    officialFormat: niche?.officialFormat,
+    examFaqs: niche?.examFaqs,
   };
 }
 
-const mockSeoProfiles: Partial<Record<string, MockSeoProfile>> = {
+const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "sie-full-mock": {
     title: "Free FINRA SIE Practice Test 2026 | 75-Question Mock Exam Online",
     description:
@@ -564,8 +594,23 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfile>> = {
   },
 };
 
-export function getMockSeoProfile(config: MockExamConfig) {
-  return mockSeoProfiles[config.slug] ?? defaultProfile(config);
+export function getMockSeoProfile(config: MockExamConfig): MockSeoProfile {
+  const defaults = defaultProfile(config);
+  const override = mockSeoProfiles[config.slug];
+  const niche = getNicheExamExplainer(config.slug);
+  const merged = { ...defaults, ...override };
+
+  return {
+    ...merged,
+    whatIsExam:
+      override?.whatIsExam ??
+      niche?.whatIsExam ??
+      defaults.whatIsExam,
+    administeredBy: override?.administeredBy ?? niche?.administeredBy ?? defaults.administeredBy,
+    officialFormat: override?.officialFormat ?? niche?.officialFormat ?? defaults.officialFormat,
+    examFaqs: override?.examFaqs ?? niche?.examFaqs ?? defaults.examFaqs,
+    keywords: [...new Set([...(niche?.keywords ?? []), ...merged.keywords])].slice(0, 12),
+  };
 }
 
 export function buildMockSeoTitle(config: MockExamConfig) {
@@ -582,22 +627,24 @@ export function buildMockSeoKeywords(config: MockExamConfig) {
 
 export function buildMockSearchFaqs(config: MockExamConfig) {
   const profile = getMockSeoProfile(config);
+  const examFaqs = profile.examFaqs ?? [];
 
   return [
+    ...examFaqs,
     {
       question: `Is there a free ${profile.practiceTestLabel}?`,
       answer: `Yes — ${siteConfig.name} hosts a free online ${profile.practiceTestLabel} with ${config.questionCount} timed questions, ${config.durationMinutes} minutes, a ${config.passRule.passPercent}% pass target, topic scoring, and a full answer review report. ${mockFreeAccessPriceLabel}.`,
     },
     {
-      question: `How many questions are on this ${config.shortTitle}?`,
-      answer: `This ${config.status === "live" ? "mock exam" : "readiness check"} has ${config.questionCount} multiple-choice questions timed against a ${config.durationMinutes}-minute target. ${config.officialSourceNote}`,
+      question: `How many questions are on this free ${profile.practiceTestLabel}?`,
+      answer: `This UniPrep2Go ${config.status === "live" ? "practice test" : "readiness check"} has ${config.questionCount} multiple-choice questions timed against a ${config.durationMinutes}-minute target. ${config.officialSourceNote}`,
     },
     {
-      question: `What score do you need to pass this ${config.shortTitle}?`,
-      answer: `The pass target on this mock is ${config.passRule.passPercent}%. Your report also breaks down performance by topic so you can see weak areas before retaking the real exam.`,
+      question: `What score do you need on this ${profile.practiceTestLabel}?`,
+      answer: `The pass target on this practice test is ${config.passRule.passPercent}%. Your report also breaks down performance by topic so you can see weak areas before the real exam.`,
     },
     {
-      question: `Who should take this ${config.shortTitle}?`,
+      question: `Who should take this ${profile.practiceTestLabel}?`,
       answer: profile.audience,
     },
   ];
@@ -606,6 +653,9 @@ export function buildMockSearchFaqs(config: MockExamConfig) {
 export function buildMockExamFaqs(config: MockExamConfig) {
   const profile = getMockSeoProfile(config);
   const pageUrl = absoluteUrl(`/mock-exams/${config.slug}`);
+  const bankNote = config.questionSourceNote
+    ? config.questionSourceNote
+    : "Questions are original UniPrep2Go practice items aligned to published topic outlines — not leaked official exam questions.";
 
   return [
     ...buildMockSearchFaqs(config),
@@ -620,18 +670,18 @@ export function buildMockExamFaqs(config: MockExamConfig) {
     {
       question: "What does the report show after the mock?",
       answer:
-        "Your report shows a pass/no-pass verdict with explanation, weighted topic diagnosis, pacing analysis, full question review with deck-backed explanations, and a repair plan linked to the Anki deck. If the verdict is no-pass or borderline, drill the linked deck before retaking.",
+        "Your report shows a pass/no-pass verdict with explanation, topic diagnosis, pacing notes, full question review with explanations, and a repair plan linked to the Anki deck waitlist or deck when available.",
     },
     {
       question: "Where do the questions come from?",
-      answer:
-        "Questions are converted from the linked UniPrep2Go Anki deck CSV source, reshuffled into multiple-choice format with distractors drawn from sibling deck cards.",
+      answer: bankNote,
     },
   ];
 }
 
 export function buildMockSeoPageCopy(config: MockExamConfig) {
   const profile = getMockSeoProfile(config);
+  const niche = getNicheExamExplainer(config.slug);
 
   return {
     headline: profile.headline,
@@ -639,6 +689,12 @@ export function buildMockSeoPageCopy(config: MockExamConfig) {
     audience: profile.audience,
     topicSummary: config.topics.map((topic) => topic.label).join(", "),
     practiceTestLabel: profile.practiceTestLabel,
+    whatIsExam: profile.whatIsExam,
+    administeredBy: profile.administeredBy,
+    officialFormat: profile.officialFormat,
+    whatIsHeading: niche
+      ? `What is the ${niche.practiceTestName.replace(/ Practice Test$/i, "")} exam?`
+      : `What is the ${config.shortTitle} exam?`,
   };
 }
 

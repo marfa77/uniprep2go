@@ -1,4 +1,5 @@
-import type { MockExamConfig, MockTopic } from "./types";
+import { finalizeMockExamConfig } from "./taxonomy";
+import type { MockExamConfig, MockExamConfigDraft, MockTopic } from "./types";
 
 const nicheDisclaimer =
   "This is an independent readiness diagnostic from UniPrep2Go. It is not official exam-board material and does not award certification or guarantee a passing score.";
@@ -20,13 +21,16 @@ function fourTopics(
 }
 
 function readinessConfig(
-  partial: Omit<MockExamConfig, "accessMode" | "passRule" | "disclaimer" | "lastUpdated" | "status"> & {
+  partial: Omit<
+    MockExamConfigDraft,
+    "accessMode" | "passRule" | "disclaimer" | "lastUpdated" | "status"
+  > & {
     status?: MockExamConfig["status"];
     passPercent?: number;
   },
 ): MockExamConfig {
   const { passPercent = 70, status = "live", ...rest } = partial;
-  return {
+  return finalizeMockExamConfig({
     ...rest,
     accessMode: "free_demand_test",
     status,
@@ -42,7 +46,7 @@ function readinessConfig(
         borderline: "BORDERLINE RISK",
       },
     },
-  };
+  });
 }
 
 /**
