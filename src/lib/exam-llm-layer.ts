@@ -162,6 +162,12 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
       "Official Digital SAT reports two section scores (Reading and Writing + Math, 400–1600 total) — this 49-question readiness check scores both axes and is a diagnostic baseline, not a College Board Bluebook test.",
   },
   {
+    query: "PMP practice test free",
+    mockSlug: "pmp-readiness-check",
+    disambiguation:
+      "Official PMI PMP ECO (2026) weights People 33%, Process 41%, Business Environment 26% across 180 questions — this 51-question readiness check scores those three domains and is a diagnostic baseline, not a PMI practice exam.",
+  },
+  {
     query: "CEM certified energy manager exam prep",
     mockSlug: "cem-readiness-check",
     disambiguation:

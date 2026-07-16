@@ -59,7 +59,7 @@ const examPathLinks = [
   {
     title: "Building, safety & sustainability",
     description:
-      "13 certification pathways — EPA 608, LEED, WELL AP, BMS, MRICS, CFPS, NEBOSH, CDCP, CEM, ASHRAE, and GMAT Focus — each with a free mock and linked Anki deck.",
+      "14 certification pathways — EPA 608, LEED, WELL AP, BMS, MRICS, CFPS, NEBOSH, CDCP, CEM, ASHRAE, GMAT Focus, and PMP — each with a free mock and linked Anki deck.",
     links: [
       { href: `/${BUILDING_CERTIFICATION_HUB_SLUG}`, label: "All building certification pathways" },
       { href: "/mock-exams/epa-608-readiness-check", label: "EPA 608 readiness check" },
@@ -69,6 +69,7 @@ const examPathLinks = [
       { href: "/mock-exams/mrics-readiness-check", label: "MRICS APC readiness check" },
       { href: "/mock-exams/gmat-focus-readiness-check", label: "GMAT Focus readiness check" },
       { href: "/mock-exams/sat-readiness-check", label: "Digital SAT readiness check" },
+      { href: "/mock-exams/pmp-readiness-check", label: "PMP readiness check" },
     ],
   },
   {
@@ -544,14 +545,14 @@ export default async function HomePage() {
           </div>
         </section>
 
-        {/* 5. Building certification repair pairs — full 13-pathway line */}
+        {/* 5. Building certification repair pairs — full pathway line */}
         <section id="building-repair-pairs" className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
           <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
             <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
               Building certification line
             </p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
-              13 mock → deck pathways by certification cluster
+              Mock → deck pathways by certification cluster
             </h2>
             <p className="mt-3 max-w-3xl text-[#4f493e]">
               Each building, safety, sustainability, and MBA credential pairs a free readiness check

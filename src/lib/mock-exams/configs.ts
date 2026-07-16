@@ -15,6 +15,9 @@ const gmatDisclaimer =
 const satDisclaimer =
   "This is an independent readiness diagnostic. It is not official College Board SAT exam material and does not predict your official Digital SAT score.";
 
+const pmpDisclaimer =
+  "This is an independent readiness diagnostic. It is not official PMI PMP exam material and does not award the Project Management Professional credential.";
+
 const epa608Disclaimer =
   "This is an independent readiness diagnostic. It is not official U.S. EPA Section 608 exam material and does not certify you to handle refrigerants.";
 
@@ -643,6 +646,61 @@ export const mockExamConfigs: MockExamConfig[] = [
     questionSourceNote:
       "Original UniPrep2Go questions authored for the Digital SAT readiness check (175 Reading and Writing + 175 Math in the Anki bank; 49-question timed session).",
     ankiDeckCardCount: 342,
+  },
+  {
+    slug: "pmp-readiness-check",
+    title: "PMP Readiness Check",
+    shortTitle: "PMP Readiness",
+    linkedDeckSlug: "pmp-anki-deck",
+    status: "live",
+    accessMode: "free_demand_test",
+    durationMinutes: 70,
+    questionCount: 51,
+    passRule: {
+      type: "readiness_check",
+      passPercent: 70,
+      borderlinePercent: 65,
+      // PMI reports domain performance; all three ECO domains must clear target for a pass.
+      requireAllTopicsAtTarget: true,
+      verdictLabels: {
+        pass: "READINESS PASS",
+        noPass: "NO PASS",
+        borderline: "BORDERLINE RISK",
+      },
+    },
+    topics: [
+      {
+        id: "people",
+        label: "People",
+        questionCount: 17,
+        weightPercent: 33,
+        targetPercent: 70,
+      },
+      {
+        id: "process",
+        label: "Process",
+        questionCount: 21,
+        weightPercent: 41,
+        targetPercent: 70,
+      },
+      {
+        id: "business-environment",
+        label: "Business Environment",
+        questionCount: 13,
+        weightPercent: 26,
+        targetPercent: 70,
+      },
+    ],
+    officialSourceNote:
+      "Modeled on the PMI PMP Exam Content Outline (2026): People 33%, Process 41%, Business Environment 26%. Official exam is 180 questions (170 scored + 10 pretest) in 240 minutes with ~40% predictive and ~60% agile/hybrid approaches. This readiness check uses a 17+21+13 domain-weighted sample. Not a PMI practice exam.",
+    disclaimer: pmpDisclaimer,
+    description:
+      "A 51-question PMP readiness diagnostic scored on the three official ECO domains — People, Process, and Business Environment — with pacing feedback and full answer review. Independent prep aligned to the 2026 PMI outline.",
+    examBody: "PMI",
+    lastUpdated: "2026-07-16",
+    questionSourceNote:
+      "Original UniPrep2Go questions authored for the PMP readiness check (115 People + 115 Process + 116 Business Environment in the Anki bank; 51-question timed session).",
+    ankiDeckCardCount: 346,
   },
   {
     slug: "epa-608-readiness-check",

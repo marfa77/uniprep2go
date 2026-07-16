@@ -922,6 +922,81 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "SAT and College Board are trademarks of the College Board. UniPrep2Go is not affiliated with or endorsed by the College Board.",
   },
+  "pmp": {
+    examKey: "pmp",
+    pageHeading: "PMP — Domains, Scoring & Prep Facts",
+    intro:
+      "The Project Management Professional (PMP) certification is administered by PMI. The 2026 Exam Content Outline organizes the exam into three domains — People, Process, and Business Environment — and PMI reports performance by domain. This page summarizes official structure; UniPrep2Go products are independent prep (not PMI exam material).",
+    exam_facts: {
+      exam_name: "Project Management Professional (PMP)",
+      administered_by: "Project Management Institute (PMI)",
+      question_count: "180 questions total (170 scored + 10 unscored pretest)",
+      scored_count: "170",
+      time_limit: "240 minutes (4 hours) with two 10-minute breaks under the July 2026 format",
+      scoring_scale: "Domain performance levels across People, Process, and Business Environment (PMI does not publish a fixed percentage cut score)",
+      passing_score: "No published fixed pass percentage — candidates must meet PMI's psychometric standard and review domain performance on the score report",
+      delivery: "Computer-based testing at Pearson VUE centers or online proctored (verify current options at pmi.org)",
+      outline_effective_date: "PMP Examination Content Outline 2026 (live from July 9, 2026)",
+      verify_at_url: "https://www.pmi.org/certifications/project-management-pmp",
+    },
+    official_sources: [
+      {
+        label: "PMI — PMP certification overview",
+        url: "https://www.pmi.org/certifications/project-management-pmp",
+      },
+      {
+        label: "PMI — PMP Examination Content Outline 2026 (PDF)",
+        url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/new-pmp-examination-content-outline-2026.pdf",
+      },
+      {
+        label: "PMI — Certification handbook",
+        url: "https://www.pmi.org/certifications/certification-resources/handbook",
+      },
+    ],
+    domain_weights: [
+      {
+        domain: "People",
+        weight: "33% of exam items (leadership, team performance, conflict, stakeholder engagement)",
+      },
+      {
+        domain: "Process",
+        weight: "41% of exam items (delivery approach, planning, quality, risk, schedule, budget, changes)",
+      },
+      {
+        domain: "Business Environment",
+        weight: "26% of exam items (strategy alignment, compliance, benefits, governance, external factors)",
+      },
+    ],
+    whats_changed: [
+      "From July 9, 2026 the ECO rebalances domains to People 33%, Process 41%, Business Environment 26% (Business Environment rises sharply from 8%).",
+      "Exam timing moves to 240 minutes with 170 scored and 10 pretest items (still 180 total).",
+      "Approach mix shifts toward roughly 40% predictive and 60% adaptive/agile plus hybrid items across domains.",
+      "PMBOK Guide 8th Edition supports the outline as a reference; the ECO remains the exam blueprint.",
+    ],
+    high_yield_facts: [
+      "Study and diagnose by the three ECO domains — PMI reports domain performance, not a single public cut score.",
+      "Business Environment is much heavier in 2026 — value delivery, compliance, and organizational strategy matter more than older outlines suggested.",
+      "Predictive, agile, and hybrid approaches appear across all three domains rather than as a separate domain.",
+      "Situational judgment dominates: choose the next best action that protects agreements, baselines, and value.",
+      "Eligibility requires documented project leadership experience and 35 contact hours (or CAPM) — verify current rules at pmi.org.",
+    ],
+    candidate_qa: [
+      {
+        q: "How is the PMP exam scored?",
+        a: "PMI uses a psychometric passing standard and reports performance by domain (People, Process, and Business Environment). There is no official published percentage cut score.",
+      },
+      {
+        q: "What are the PMP domain weights in 2026?",
+        a: "People 33%, Process 41%, and Business Environment 26% under the 2026 Exam Content Outline that went live July 9, 2026.",
+      },
+      {
+        q: "How long is the PMP exam and how many questions are on it?",
+        a: "180 questions in 240 minutes: 170 scored and 10 unscored pretest questions, with two 10-minute breaks under the July 2026 format.",
+      },
+    ],
+    trademark_note:
+      "PMP, PMI, and PMBOK are trademarks of the Project Management Institute. UniPrep2Go is not affiliated with or endorsed by PMI.",
+  },
   "epa-608": {
     examKey: "epa-608",
     pageHeading: "EPA Section 608 Technician Certification — Facts, Types & Prep",
@@ -1854,6 +1929,7 @@ const deckExamKeyMap: Record<string, string> = {
   "ib-biology-sl-anki-deck": "ib-biology-sl",
   "gmat-focus-anki-deck": "gmat",
   "sat-anki-deck": "sat",
+  "pmp-anki-deck": "pmp",
   "hvac-epa-608-anki-deck": "epa-608",
   "bms-building-automation-anki-deck": "bms-bas",
   "leed-green-associate-anki-deck": "leed-green-associate",

@@ -112,6 +112,12 @@ const DECK_CONFIGS = {
     monogram: "SAT",
     panelKind: "finance",
   },
+  "pmp-anki-deck": {
+    title: "PMP\nAnki Deck",
+    subtitle: "Project management certification flashcards",
+    monogram: "PMP",
+    panelKind: "finance",
+  },
 };
 
 const HERO_CONFIG = {
@@ -307,6 +313,7 @@ const BUILDING_DECK_SLUGS = [
   "mrics-quantity-surveying-anki-deck",
   "gmat-focus-anki-deck",
   "sat-anki-deck",
+  "pmp-anki-deck",
 ];
 
 function resolveSlugs(args, deckConfigs) {

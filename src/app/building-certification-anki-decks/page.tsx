@@ -18,7 +18,7 @@ import { buildSocialMetadata } from "@/lib/social-metadata";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
 const directAnswer =
-  "UniPrep2Go publishes 13 building, safety, sustainability, and MBA certification pathways — each with a free timed readiness check and a linked Anki flashcard deck. Clusters include EPA 608 + BMS (HVAC), LEED GA → LEED AP BD+C → WELL AP, MRICS APC + Quantity Surveying, NEBOSH + CFPS, CDCP data centre, CEM energy, ASHRAE, and GMAT Focus.";
+  "UniPrep2Go publishes 15 building, safety, sustainability, admissions, and project-management certification pathways — each with a free timed readiness check and a linked Anki flashcard deck. Clusters include EPA 608 + BMS (HVAC), LEED GA → LEED AP BD+C → WELL AP, MRICS APC + Quantity Surveying, NEBOSH + CFPS, CDCP data centre, CEM energy, ASHRAE, GMAT Focus, Digital SAT, and PMP.";
 
 const clusterOrder: BuildingClusterId[] = [
   "hvac-controls",
@@ -34,7 +34,7 @@ export async function generateMetadata(): Promise<Metadata> {
     "Building Certification Anki Decks | EPA 608, LEED, MRICS, WELL AP, GMAT",
   );
   const description =
-    "13 building and sustainability certification pathways — free readiness checks paired with Anki decks for EPA 608, LEED, WELL AP, BMS, MRICS, CFPS, NEBOSH, CDCP, CEM, ASHRAE, and GMAT Focus.";
+    "15 certification pathways — free readiness checks paired with Anki decks for EPA 608, LEED, WELL AP, BMS, MRICS, CFPS, NEBOSH, CDCP, CEM, ASHRAE, GMAT Focus, Digital SAT, and PMP.";
 
   return withAiMetadata(
     finalize({

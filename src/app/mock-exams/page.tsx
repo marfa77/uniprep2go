@@ -61,6 +61,7 @@ const mockClusters = [
       "leed-green-associate-readiness-check",
       "well-ap-readiness-check",
       "mrics-readiness-check",
+      "pmp-readiness-check",
     ],
   },
 ] as const;

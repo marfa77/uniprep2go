@@ -242,6 +242,23 @@ describe("anki-deck-launch", () => {
     expect(gmat?.faqs.some((faq) => /400/i.test(faq.answer))).toBe(true);
   });
 
+
+  it("exposes launched PMP deck with sample card screenshots", () => {
+    const pmp = getCatalogDeckBySlug("pmp-anki-deck");
+    expect(pmp).toBeDefined();
+    expect(pmp?.status).toBe("available");
+    expect(pmp?.apkgStatus).toBe("ready");
+    expect(pmp?.title).toBe("PMP Anki Deck — 346+ Flashcards");
+    expect(pmp?.checkoutUrl).toContain("gumroad.com/l/pmp-anki-deck");
+    expect(pmp?.sampleCards).toHaveLength(3);
+    expect(pmp?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/pmp-anki-deck-sample-1.webp",
+      "/samples/pmp-anki-deck-sample-2.webp",
+      "/samples/pmp-anki-deck-sample-3.webp",
+    ]);
+    expect(pmp?.faqs.some((faq) => /346/i.test(faq.answer))).toBe(true);
+  });
+
   it("launches all building deck slugs into catalog", () => {
     const slugs = [
       "hvac-epa-608-anki-deck",
@@ -249,6 +266,8 @@ describe("anki-deck-launch", () => {
       "leed-green-associate-anki-deck",
       "mrics-anki-deck",
       "gmat-focus-anki-deck",
+      "sat-anki-deck",
+      "pmp-anki-deck",
     ];
 
     for (const slug of slugs) {

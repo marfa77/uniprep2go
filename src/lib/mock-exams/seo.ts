@@ -241,6 +241,25 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfile>> = {
       "High school students and parents who want a baseline timed diagnostic before Bluebook practice or tutoring.",
     practiceTestLabel: "Digital SAT practice test",
   },
+  "pmp-readiness-check": {
+    title: "Free PMP Practice Test | 51-Question Mock",
+    description:
+      "Free PMP practice questions online: 51 timed questions across People, Process, and Business Environment (2026 ECO weights), 70 minutes, 70% readiness target with all domains required, and full answer review. Independent PMP prep — not PMI exam material.",
+    keywords: [
+      "pmp practice test",
+      "pmp mock exam",
+      "free pmp practice questions",
+      "pmp readiness check",
+      "pmp exam prep",
+      "project management professional practice test",
+    ],
+    headline: "Free PMP Readiness Check",
+    intro:
+      "A timed PMP readiness diagnostic scored on the three official PMI Exam Content Outline domains — People (33%), Process (41%), and Business Environment (26%). All three domains must clear the readiness bar for a pass.",
+    audience:
+      "Project managers and aspirants preparing for the PMI PMP certification who want a domain-weighted baseline before a full-length mock or paid study course.",
+    practiceTestLabel: "PMP practice test",
+  },
   "epa-608-readiness-check": {
     title: "Free EPA 608 Practice Test | 40-Question Mock",
     description:

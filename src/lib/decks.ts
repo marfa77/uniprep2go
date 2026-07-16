@@ -1913,6 +1913,87 @@ const rawDecks: Deck[] = [
     ],
   },
 
+
+  {
+    slug: "pmp-anki-deck",
+    category: "professional",
+    status: "planned",
+    coverImage: "/covers/pmp-anki-deck.webp",
+    title: "PMP Anki Deck",
+    shortName: "PMP",
+    subtitle: "A planned spaced-repetition deck for PMI PMP People, Process, and Business Environment domains.",
+    directAnswer:
+      "The PMP Anki Deck is a planned UniPrep2Go product with 346 flashcards across the three 2026 Exam Content Outline domains. It is not yet available for purchase. Take the free PMP readiness check to benchmark People, Process, and Business Environment first.",
+    lastUpdated: "2026-07-16",
+    audience:
+      "Project managers preparing for the PMI Project Management Professional (PMP) exam using spaced repetition alongside ECO-aligned study.",
+    format: ".apkg",
+    facts: {
+      cards: "346",
+      topics: "People, Process, Business Environment",
+      formulas: "High-yield PMP ECO tasks, predictive/agile/hybrid scenarios, and domain judgment drills",
+      examYear: "PMP Exam Content Outline 2026",
+      delivery: "Digital download (planned)",
+    },
+    topicCoverage: [
+      {
+        name: "People",
+        examWeight: "33% of PMP exam (2026 ECO)",
+        cards: "115",
+      },
+      {
+        name: "Process",
+        examWeight: "41% of PMP exam (2026 ECO)",
+        cards: "115",
+      },
+      {
+        name: "Business Environment",
+        examWeight: "26% of PMP exam (2026 ECO)",
+        cards: "116",
+      },
+    ],
+    sampleCards: [
+      {
+        question:
+          "A project manager is closing a complex infrastructure project that involved multiple vendors and internal teams. The final deliverable has been accepted, but several lessons learned sessions still need to be conducted with different stakeholder groups. Which closing process activity should be completed first?",
+        answer:
+          "Correct: (d) Complete formal acceptance documentation with the customer. Formal acceptance comes first in Close Project or Phase before archiving, releasing resources, or final performance reporting.",
+        imageUrl: "/samples/pmp-anki-deck-sample-1.webp",
+      },
+      {
+        question:
+          "A project manager is establishing a risk management process for a project with both predictive and agile components. The predictive portions require formal risk registers while the agile portions need more adaptive risk handling. What integrated risk management approach should be implemented?",
+        answer:
+          "Correct: (b) Apply different risk management approaches based on the delivery method of each component. Hybrid delivery tailors risk practice to predictive vs agile workstreams.",
+        imageUrl: "/samples/pmp-anki-deck-sample-2.webp",
+      },
+      {
+        question:
+          "A project team member consistently delivers high-quality work but rarely participates in team discussions or collaborative activities. Other team members have started excluding them from informal communications. How should the project manager address this situation?",
+        answer:
+          "Correct: (c) Have a private conversation to understand their perspective and coach them on team engagement. People-domain leadership starts with one-to-one coaching before public confrontation.",
+        imageUrl: "/samples/pmp-anki-deck-sample-3.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is there a free PMP practice test?",
+        answer:
+          "Yes. Take the free 51-question PMP readiness check at uniprep2go.study/mock-exams/pmp-readiness-check — scored on People, Process, and Business Environment with full answer review. The paid Anki deck includes 346 cards from the same validated bank for daily drilling.",
+      },
+      {
+        question: "How is this mock scored compared with the real PMP?",
+        answer:
+          "The official PMP Exam Content Outline (2026) weights People 33%, Process 41%, and Business Environment 26%, and PMI reports domain performance. Our readiness check uses the same three axes — all domains must meet the readiness target for a pass.",
+      },
+      {
+        question: "How many cards are in the PMP Anki deck?",
+        answer:
+          "The deck includes 346 flashcards across People, Process, and Business Environment — built from the same validated item bank as the free readiness check.",
+      },
+    ],
+  },
+
   {
     slug: "cat4-level-d-anki-deck-printable-pdf",
     category: "academic",

@@ -9,7 +9,8 @@ export type BuildingClusterId =
   | "construction-surveying"
   | "datacenter"
   | "mba-admissions"
-  | "college-admissions";
+  | "college-admissions"
+  | "project-management";
 
 export const BUILDING_CLUSTER_LABELS: Record<BuildingClusterId, string> = {
   "green-building": "Green building & wellness",
@@ -19,6 +20,7 @@ export const BUILDING_CLUSTER_LABELS: Record<BuildingClusterId, string> = {
   datacenter: "Data centre operations",
   "mba-admissions": "MBA admissions",
   "college-admissions": "College admissions",
+  "project-management": "Project management",
 };
 
 /** Pathway order within each cluster — used for related decks and hub navigation. */
@@ -39,6 +41,7 @@ export const BUILDING_CLUSTER_MEMBERS: Record<BuildingClusterId, readonly string
   datacenter: ["cdcp-anki-deck"],
   "mba-admissions": ["gmat-focus-anki-deck"],
   "college-admissions": ["sat-anki-deck"],
+  "project-management": ["pmp-anki-deck"],
 };
 
 const DECK_TO_CLUSTER = Object.fromEntries(

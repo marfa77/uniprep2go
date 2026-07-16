@@ -70,6 +70,23 @@ describe("mock exam configs", () => {
     expect(config?.passRule.verdictLabels.pass).toBe("READINESS PASS");
     expect(validateMockExamConfig(config!)).toEqual([]);
   });
+
+  it("defines PMP readiness check with ECO domain-balanced scoring", () => {
+    const config = getMockExamConfig("pmp-readiness-check");
+    expect(config).not.toBeNull();
+    expect(config?.questionCount).toBe(51);
+    expect(config?.topics).toHaveLength(3);
+    expect(config?.topics.map((topic) => topic.id)).toEqual([
+      "people",
+      "process",
+      "business-environment",
+    ]);
+    expect(config?.topics.map((topic) => topic.weightPercent)).toEqual([33, 41, 26]);
+    expect(config?.topics.reduce((sum, topic) => sum + (topic.questionCount ?? 0), 0)).toBe(51);
+    expect(config?.passRule.requireAllTopicsAtTarget).toBe(true);
+    expect(config?.passRule.passPercent).toBe(70);
+    expect(validateMockExamConfig(config!)).toEqual([]);
+  });
 });
 
 describe("question bank from deck content", () => {
