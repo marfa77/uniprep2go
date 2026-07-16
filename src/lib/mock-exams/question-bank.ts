@@ -69,6 +69,7 @@ import ascpMlsBank from "@/data/mock-exams/ascp-mls-readiness-check.json";
 import rdExamBank from "@/data/mock-exams/rd-exam-readiness-check.json";
 import { getMockExamConfig } from "./configs";
 import type { MockQuestion } from "./types";
+import { wave3BanksBySlug } from "./wave3-banks";
 
 const banksBySlug: Record<string, MockQuestion[]> = {
   "sie-full-mock": sieFullMockBank as unknown as MockQuestion[],
@@ -140,6 +141,7 @@ const banksBySlug: Record<string, MockQuestion[]> = {
   "nbdhe-readiness-check": nbdheBank as unknown as MockQuestion[],
   "ascp-mls-readiness-check": ascpMlsBank as unknown as MockQuestion[],
   "rd-exam-readiness-check": rdExamBank as unknown as MockQuestion[],
+  ...wave3BanksBySlug,
 };
 
 export function getQuestionBank(examSlug: string) {

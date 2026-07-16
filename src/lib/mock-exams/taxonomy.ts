@@ -1,5 +1,6 @@
 import type { MockClusterImageType } from "./cluster-images";
 import type { MockExamConfig, MockExamConfigDraft, MockExamTaxonomy, MockVerticalId } from "./types";
+import { wave3TaxonomyEntries } from "./wave3-taxonomy";
 
 export type MockVerticalDefinition = {
   id: MockVerticalId;
@@ -213,6 +214,31 @@ export const MOCK_FAMILY_LABELS: Record<string, string> = {
   rics: "RICS / MRICS",
   pmp: "Project management",
   bms: "Building automation",
+  "rn-licensure": "RN licensure (NCLEX-RN)",
+  "med-aide": "Medication aide",
+  hha: "Home health aide",
+  aba: "ABA / RBT",
+  scribe: "Medical scribe",
+  "rehab-aide": "Rehab aide",
+  optician: "Optician (ABO)",
+  "nutrition-coach": "Nutrition coaching",
+  cscs: "Strength & conditioning (CSCS)",
+  nails: "Nail technology",
+  barber: "Barbering",
+  hr: "Human resources",
+  "six-sigma": "Six Sigma",
+  tax: "Tax (Enrolled Agent)",
+  praxis: "Praxis",
+  parapro: "ParaPro",
+  security: "Security officer",
+  notary: "Notary public",
+  osha: "OSHA / workplace safety",
+  mlo: "Mortgage loan originator",
+  water: "Water / wastewater",
+  appraisal: "Real estate appraisal",
+  funeral: "Funeral service",
+  solar: "Solar (NABCEP)",
+  "vet-assistant": "Veterinary assistant",
 };
 
 type TaxonomyEntry = MockExamTaxonomy;
@@ -573,8 +599,13 @@ export function getFamilyLabel(familyId: string) {
   return MOCK_FAMILY_LABELS[familyId] ?? familyId.replace(/-/g, " ");
 }
 
+const TAXONOMY_LOOKUP: Record<string, TaxonomyEntry> = {
+  ...TAXONOMY_BY_SLUG,
+  ...wave3TaxonomyEntries,
+};
+
 export function getTaxonomyForSlug(slug: string): MockExamTaxonomy {
-  const entry = TAXONOMY_BY_SLUG[slug];
+  const entry = TAXONOMY_LOOKUP[slug];
   if (!entry) {
     throw new Error(`Missing mock taxonomy for slug: ${slug}`);
   }

@@ -107,6 +107,36 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
       "NNAAP is used by many states for nurse aide / CNA certification — free UniPrep2Go knowledge practice test; skills exam is separate and state-specific.",
   },
   {
+    query: "NCLEX-RN practice test free",
+    mockSlug: "nclex-rn-readiness-check",
+    disambiguation:
+      "NCLEX-RN is the RN licensure exam from NCSBN — free UniPrep2Go 60-question readiness check is independent practice, not an NCSBN exam.",
+  },
+  {
+    query: "Series 65 practice test free",
+    mockSlug: "series-65-readiness-check",
+    disambiguation:
+      "Series 65 qualifies investment adviser representatives — free UniPrep2Go readiness check is independent prep, not NASAA/FINRA exam material.",
+  },
+  {
+    query: "SAFE MLO practice test free",
+    mockSlug: "mortgage-loan-originator-readiness-check",
+    disambiguation:
+      "SAFE MLO national test is required for mortgage loan originators via NMLS — free UniPrep2Go practice test is independent prep.",
+  },
+  {
+    query: "SHRM-CP practice test free",
+    mockSlug: "shrm-cp-readiness-check",
+    disambiguation:
+      "SHRM-CP certifies HR professionals — free UniPrep2Go readiness check covers people/organization/workplace themes; not a SHRM exam.",
+  },
+  {
+    query: "IRS enrolled agent practice test free",
+    mockSlug: "enrolled-agent-readiness-check",
+    disambiguation:
+      "The IRS Special Enrollment Examination (SEE) qualifies Enrolled Agents — free UniPrep2Go readiness check is independent practice, not an IRS exam.",
+  },
+  {
     query: "FRM Part 1 practice questions",
     mockSlug: "frm-part-1-readiness-check",
     disambiguation:

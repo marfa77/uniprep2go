@@ -3,6 +3,8 @@
  * Used for visible H2 sections, meta, and informational FAQs.
  */
 
+import { wave3ExamExplainers } from "./wave3-explainers";
+
 export type NicheExamExplainer = {
   /** Practice-test product name for H1 / titles */
   practiceTestName: string;
@@ -618,5 +620,5 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
 };
 
 export function getNicheExamExplainer(slug: string) {
-  return nicheExamExplainers[slug] ?? null;
+  return nicheExamExplainers[slug] ?? wave3ExamExplainers[slug] ?? null;
 }

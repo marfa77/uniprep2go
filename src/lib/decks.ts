@@ -3,6 +3,7 @@ import { prep2GoAppDecks } from "./prep2go-app-decks";
 import { applyAnkiDeckLaunchToCatalog } from "./anki-deck-launch";
 import { wave1PlannedDecks } from "./wave1-planned-decks";
 import { wave2PlannedDecks } from "./wave2-planned-decks";
+import { wave3PlannedDecks } from "./wave3-planned-decks";
 
 export type DeckStatus = "available" | "planned";
 
@@ -3538,7 +3539,9 @@ const rawDecks: Deck[] = [
 ];
 
 export const decks: Deck[] = applyAnkiDeckLaunchToCatalog(
-  [...rawDecks, ...wave1PlannedDecks, ...wave2PlannedDecks].map(enrichDeckWithShopPreviews),
+  [...rawDecks, ...wave1PlannedDecks, ...wave2PlannedDecks, ...wave3PlannedDecks].map(
+    enrichDeckWithShopPreviews,
+  ),
 );
 
 export const catalogAvailableDecks = decks.filter(

@@ -2,6 +2,7 @@ import { finalizeMockExamConfigs } from "./taxonomy";
 import type { MockExamConfig, MockExamConfigDraft } from "./types";
 import { wave1MockExamConfigs } from "./wave1-configs";
 import { wave2MockExamConfigs } from "./wave2-configs";
+import { wave3MockExamConfigs } from "./wave3-configs";
 
 const financeDisclaimer =
   "This is an independent readiness diagnostic. It is not official FINRA, CFA Institute, or GARP exam material and does not guarantee an exam result.";
@@ -1624,6 +1625,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
   },
   ...wave1MockExamConfigs,
   ...wave2MockExamConfigs,
+  ...wave3MockExamConfigs,
 ];
 
 export const mockExamConfigs: MockExamConfig[] = finalizeMockExamConfigs(mockExamConfigDrafts);
