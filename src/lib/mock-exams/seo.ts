@@ -643,7 +643,7 @@ export function buildMockSeoPageCopy(config: MockExamConfig) {
 }
 
 export function buildMockExamHubFaqs(indexedCount: number, totalCount: number) {
-  const previewCount = totalCount - indexedCount;
+  const previewCount = Math.max(0, totalCount - indexedCount);
 
   return [
     {
@@ -663,7 +663,12 @@ export function buildMockExamHubFaqs(indexedCount: number, totalCount: number) {
     {
       question: "Are these official exam materials?",
       answer:
-        "No. UniPrep2Go mocks and decks are independent study aids — not endorsed, promoted, or warranted by FINRA, CFA Institute, PTCB, ServSafe, or any exam body.",
+        "No — we do not redistribute official exam questions. UniPrep2Go mocks are independent study aids. Topic weights, timing, and pass targets are modeled on published official outlines and blueprints; question text is original practice content. Not endorsed by FINRA, CFA Institute, PTCB, ServSafe, or any exam body.",
+    },
+    {
+      question: "Where do topic weights and exam structure come from?",
+      answer:
+        "From official public sources only — published content outlines, blueprints, and candidate handbooks from the relevant exam body. We use those documents for domain weights and readiness thresholds. Practice questions are authored by UniPrep2Go and are not leaked official items.",
     },
   ] as const;
 }

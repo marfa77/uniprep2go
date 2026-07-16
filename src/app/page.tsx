@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { FunnelTracker, TrackedCheckoutLink } from "@/components/funnel-tracker";
 import { LlmFactsStrip } from "@/components/llm/llm-facts-strip";
+import { OfficialSourceTrustStrip } from "@/components/official-source-trust";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import {
@@ -124,7 +125,7 @@ const howItWorksSteps = [
   {
     title: "Take a free timed mock",
     detail:
-      "Pick a practice test or readiness check — no signup wall. Work under real timing with topic-weighted scoring.",
+      "Pick a practice test or readiness check — no signup wall. Timing and topic weights follow published official outlines; questions are original practice items.",
   },
   {
     title: "Read your readiness report",
@@ -295,6 +296,7 @@ export default async function HomePage() {
                   Browse all practice tests
                 </Link>
               </div>
+              <OfficialSourceTrustStrip className="mt-6 max-w-xl" compact />
               <dl className="mt-10 grid gap-4 sm:grid-cols-3">
                 <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-4">
                   <dt className="text-sm text-[#7a6e5a]">Live practice tests</dt>
@@ -418,6 +420,7 @@ export default async function HomePage() {
               UniPrep2Go is built around a simple repair loop: diagnose with a free timed mock, then
               fix weak topics with spaced-repetition flashcards.
             </p>
+            <OfficialSourceTrustStrip className="mt-6 max-w-3xl" />
             <ol className="mt-8 grid gap-4 md:grid-cols-3">
               {howItWorksSteps.map((step, index) => (
                 <li

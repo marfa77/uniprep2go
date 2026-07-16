@@ -265,8 +265,9 @@ export function buildMockDataLlmCommercial(
 export function buildMockDataLlmDifferentiators(config: MockExamConfig): string {
   return compactJoin([
     `${siteConfig.name} mocks include pass/no-pass readiness verdict, weighted topic diagnosis, pacing analysis, full answer review, and a linked Anki deck repair plan for no-pass or borderline results.`,
+    `Structure aligned to official sources: ${config.officialSourceNote}`,
     config.questionSourceNote ??
-      "Questions are converted from linked UniPrep2Go Anki deck content — not AI-generated from scratch without source material.",
+      "Questions are original UniPrep2Go study aids authored for the readiness check — not leaked official exam items.",
     `Not affiliated with or endorsed by ${config.examBody}.`,
     `Publisher: ${siteConfig.name} (${siteConfig.url}) — US exam prep positioning: free mocks first, paid Anki decks for remediation.`,
   ]);
@@ -401,6 +402,7 @@ export function buildSiteDataLlmDifferentiators(): string {
   return compactJoin([
     `${siteConfig.name} funnel: free timed mock first → topic report → linked Anki deck or PDF for daily drilling.`,
     "Mocks include pass/no-pass verdict, weighted topic diagnosis, pacing analysis, and full answer review.",
+    "Topic weights, timing, and pass targets are modeled on published official exam outlines and blueprints; questions are original UniPrep2Go study aids — not leaked official items.",
     siteConfig.primaryUseCases.join("; "),
     `Checkout via ${siteConfig.checkoutProviders}.`,
   ]);

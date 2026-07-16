@@ -2031,23 +2031,23 @@ const rawDecks: Deck[] = [
     sampleCards: [
       {
         question:
-          "The scientist's theory was initially dismissed as ______, but subsequent experiments provided compelling evidence that forced even skeptical peers to reconsider.",
+          "A water tank can be filled by pipe A alone in 12 hours and by pipe B alone in 18 hours. If both pipes work together for 4 hours and then pipe A is closed, how many additional hours will it take pipe B alone to finish filling the tank?",
         answer:
-          "Correct: (c) specious. Sentence completion rewards precise vocabulary for a claim that looked false but later gained support.",
+          "Correct: (c) 10 hours. Combined rate 1/12 + 1/18 = 5/36; after 4 hours they fill 5/9, so B alone needs 10 more hours for the remaining 4/9.",
         imageUrl: "/samples/gre-anki-deck-sample-1.webp",
       },
       {
         question:
-          "If 3x + 2y = 18 and x − y = 1, what is the value of x + y?",
+          "Despite the composer's reputation for creating ______ works that challenged audiences, her latest symphony was surprisingly ______, featuring melodies that even casual listeners could easily appreciate and remember.",
         answer:
-          "Correct: (d) 7. From x − y = 1 and 3x + 2y = 18, solve to x = 4 and y = 3, so x + y = 7.",
+          "Correct: (d) abstruse ... accessible. 'Despite' sets up a contrast: her usual difficult work versus a surprisingly approachable new symphony.",
         imageUrl: "/samples/gre-anki-deck-sample-2.webp",
       },
       {
         question:
-          "Which of the following, if true, most weakens an argument that city bike lanes caused a drop in car congestion solely because bike trips rose after lanes opened?",
+          "In a coordinate plane, the vertices of a parallelogram are located at points A, B, C, and D. If three of the vertices are A(2, 3), B(7, 5), and C(9, 1), what are the coordinates of the fourth vertex D?",
         answer:
-          "Correct: (a) A major employer moved remote work policies at the same time, independently cutting commute volume. Classic GRE RC weaken item — alternate cause.",
+          "Correct: (a) (4, −1). Opposite sides are equal as vectors: using AB = DC (or AD = BC) yields D(4, −1).",
         imageUrl: "/samples/gre-anki-deck-sample-3.webp",
       },
     ],
@@ -2710,23 +2710,22 @@ const rawDecks: Deck[] = [
     sampleCards: [
       {
         question:
-          "During an O+M performance period, the team notices Energy Star scores dropped after occupancy rose. What should they verify first before changing HVAC setpoints?",
+          "A campus is adding 2 EV charging stations for O+M transportation credits. What else should the team verify?",
         answer:
-          "Correct: (b) Whether the reporting period still meets minimum occupancy and baseline comparison rules. O+M energy credits hinge on valid performance-period conditions before operational tweaks.",
+          "Correct: (a) Confirm stations are installed, powered, and accessible for intended users during the performance period. Chargers must be available for occupants/visitors as intended and documented during the performance period.",
         imageUrl: "/samples/leed-ap-om-anki-deck-sample-1.webp",
       },
       {
-        question:
-          "A facility wants credit for waste diversion but seasonal holiday packaging spikes distort monthly totals. What is the best documentation approach?",
+        question: "An O+M team wants to reduce site runoff pollution. Which action is most aligned?",
         answer:
-          "Correct: (a) Track intermittent and seasonal streams consistently across the full performance period and document diversion methods. O+M Materials domains expect complete period data, not cherry-picked quiet months.",
+          "Correct: (b) Maintain bioretention areas and keep storm inlets clear of sediment and debris. O+M site credits favor maintaining vegetated practices and reducing untreated runoff.",
         imageUrl: "/samples/leed-ap-om-anki-deck-sample-2.webp",
       },
       {
         question:
-          "Occupant surveys show low satisfaction with air quality near a loading dock. Which IEQ response best fits LEED O+M practice?",
+          "Operators want energy savings without capital retrofit. Which AHU optimal start action helps?",
         answer:
-          "Correct: (c) Investigate ventilation/filtration performance and source pathways, then adjust operations or testing—not only reissue the survey. IEQ credits pair monitoring with corrective facility stewardship.",
+          "Correct: (b) Implement and verify BAS schedules/setpoints that match actual occupancy. Tuning schedules and setpoints is a core O+M energy strategy when comfort requirements are still met.",
         imageUrl: "/samples/leed-ap-om-anki-deck-sample-3.webp",
       },
     ],
@@ -3700,7 +3699,12 @@ export const siteFaqs = [
   {
     question: "Are these official exam materials?",
     answer:
-      "No. UniPrep2Go decks are independent study aids. They are not endorsed, promoted, or warranted by CFA Institute, CAPLE, DELF, or any other exam body.",
+      "No — UniPrep2Go does not sell or redistribute official exam questions. Mocks and decks are independent study aids. We do align topic weights, timing, and pass targets to published official outlines and blueprints from the exam bodies (FINRA, CFA Institute, GBCI/USGBC, ETS, PMI, and others). Products are not endorsed, promoted, or warranted by those organizations.",
+  },
+  {
+    question: "Where do UniPrep2Go topic weights and exam structure come from?",
+    answer:
+      "From official public sources only — published exam content outlines, blueprints, candidate handbooks, and scoring rules from the relevant exam body. We use those documents to set domain weights, session length, and readiness thresholds. Question text is original UniPrep2Go authorship for practice, not material copied from live or retired official exams.",
   },
   {
     question: "Do you offer refunds?",

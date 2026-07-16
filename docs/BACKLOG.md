@@ -164,7 +164,7 @@
 | Колодa | Экзамен | Карточки | На Gumroad | На сайте | Приоритет |
 |--------|---------|----------|------------|----------|-----------|
 | Dutch Inburgering A2 | 1000 | ✅ | ✅ | готово |
-| Spanish A2 | DELE | 1000 | ❌ | ❌ | 🔥 высокий — большая аудитория |
+| Spanish A2 | DELE | 1000 | ✅* | ✅* | закрыто — Grammar + CCSE bundle (*отдельный FULL 1000 SKU не нужен) |
 | Norwegian A2 | Norskprøve | 1000 | ❌ | ❌ | средний — мало конкурентов |
 | Danish A2 | PD2/PD3 | 1000 | ❌ | ❌ | нишевый |
 | English A2 (×5 языков) | для Arabic/French/PT/ES/TR speakers | 1000 | ❌ | ❌ | отдельные SKU |
@@ -174,7 +174,7 @@
 | CIPLE A2/B1, DELF, German, CELI | — | — | ✅ | ✅ | готово |
 
 - [x] **Dutch Inburgering A2** — Gumroad: https://pixidstudio.gumroad.com/l/nrnwu → добавлено в `decks.ts`
-- [ ] **Spanish DELE A2** — загрузить на Gumroad ($19) → добавить в `decks.ts`
+- [x] **Spanish DELE A2** — отдельный FULL 1000 SKU не нужен; на сайте уже `dele-a2-grammar-anki-deck` + `dele-a2-ccse-spanish-citizenship-bundle` (мок не делаем — language Anki-only)
 - [ ] **Norwegian Norskprøve A2** — загрузить на Gumroad ($19) → добавить в `decks.ts`
 
 ---

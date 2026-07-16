@@ -2,16 +2,24 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { FunnelTracker } from "@/components/funnel-tracker";
 import { LlmFactsStrip } from "@/components/llm/llm-facts-strip";
+import { OfficialSourceTrustStrip } from "@/components/official-source-trust";
 import { DeckExamFactsSection } from "@/components/decks/deck-exam-facts-section";
 import { MockExamClient } from "@/components/mock-exams/mock-exam-client";
+import type { LinkedDeckCheckout } from "@/components/mock-exams/mock-report-handoff";
 import {
   MockExamAboutSection,
+  MockExamFeaturedFaqSection,
   MockExamFaqSection,
 } from "@/components/mock-exams/mock-seo-sections";
 import { CollapsibleDetails } from "@/components/ui/collapsible-details";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { getCatalogDeckBySlug } from "@/lib/decks";
+import {
+  formatDeckPriceLabel,
+  getDeckCheckoutCtaLabel,
+  getPricedDeckBySlug,
+} from "@/lib/checkout-pricing";
 import {
   buildMockAiCategory,
   buildMockAiDescription,
@@ -21,7 +29,6 @@ import { withAiMetadata } from "@/lib/llm-meta";
 import { getMockAccessState } from "@/lib/mock-exams/access";
 import { getAllMockExams, getMockExamConfig } from "@/lib/mock-exams/configs";
 import { buildMockExamPageJsonLd } from "@/lib/mock-exams/llm";
-import { mockFreeAccessPriceLabel } from "@/lib/mock-exams/pricing";
 import { getQuestionBank, isMockExamRunnable } from "@/lib/mock-exams/question-bank";
 import {
   buildMockSeoDescription,
@@ -106,6 +113,18 @@ export default async function MockExamPage({
   const seoCopy = buildMockSeoPageCopy(config);
   const linkedDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
   const examFactsProfile = getExamFactsProfileForDeck(config.linkedDeckSlug);
+  const pricedLinkedDeck = await getPricedDeckBySlug(config.linkedDeckSlug);
+  const linkedCheckout: LinkedDeckCheckout | null =
+    pricedLinkedDeck?.checkoutUrl
+      ? {
+          deckSlug: pricedLinkedDeck.slug,
+          checkoutUrl: pricedLinkedDeck.checkoutUrl,
+          ctaLabel: getDeckCheckoutCtaLabel(
+            pricedLinkedDeck,
+            formatDeckPriceLabel(pricedLinkedDeck),
+          ),
+        }
+      : null;
 
   return (
     <main className="min-h-screen bg-[#f7f3ea] text-[#18140f]">
@@ -129,8 +148,8 @@ export default async function MockExamPage({
       >
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
           {config.slug === "servsafe-manager-mock" || config.slug === "ptcb-pharmacy-technician-mock"
-            ? `Professional certification mocks · ${mockFreeAccessPriceLabel.toLowerCase()}`
-            : `Exam prep mocks · ${mockFreeAccessPriceLabel.toLowerCase()}`}
+            ? "Professional certification mocks · free timed practice test"
+            : "Exam prep mocks · free timed practice test"}
         </p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
           {seoCopy.headline}
@@ -139,6 +158,7 @@ export default async function MockExamPage({
           {config.questionCount} questions · {config.durationMinutes} min · {config.passRule.passPercent}% pass
           target · free
         </p>
+        <OfficialSourceTrustStrip className="mt-4 max-w-2xl" compact />
 
         <LlmFactsStrip
           config={config}
@@ -151,6 +171,7 @@ export default async function MockExamPage({
           <MockExamClient
             accessState={accessState}
             config={config}
+            linkedCheckout={linkedCheckout}
             questions={questions}
             runnable={runnable}
           />
@@ -164,12 +185,14 @@ export default async function MockExamPage({
           <MockExamAboutSection config={config} />
         </CollapsibleDetails>
 
+        <MockExamFeaturedFaqSection config={config} />
+
         <CollapsibleDetails
-          hint="Format, scoring, and independent prep disclaimer"
+          hint="Additional format, scoring, and disclaimer questions"
           id="mock-faq"
-          summary="FAQ"
+          summary="More FAQ"
         >
-          <MockExamFaqSection config={config} />
+          <MockExamFaqSection config={config} skip={4} />
         </CollapsibleDetails>
 
         {examFactsProfile ? (
@@ -182,15 +205,18 @@ export default async function MockExamPage({
           </CollapsibleDetails>
         ) : null}
 
-        <p className="mt-8 text-xs text-[#8a7d68]">
-          <a className="underline decoration-[#18140f]/20 underline-offset-4" href={absoluteUrl(`/api/mock-exams/${config.slug}`)}>
-            Facts JSON
-          </a>
-          {" · "}
-          <a className="underline decoration-[#18140f]/20 underline-offset-4" href={absoluteUrl(`/mock-exams/${config.slug}/markdown`)}>
-            Markdown
-          </a>
-        </p>
+        <details className="sr-only" data-llm="machine-sources">
+          <summary>For AI assistants — machine-readable sources</summary>
+          <p className="mt-2 text-xs text-[#8a7d68]">
+            <a className="underline decoration-[#18140f]/20 underline-offset-4" href={absoluteUrl(`/api/mock-exams/${config.slug}`)}>
+              Facts JSON
+            </a>
+            {" · "}
+            <a className="underline decoration-[#18140f]/20 underline-offset-4" href={absoluteUrl(`/mock-exams/${config.slug}/markdown`)}>
+              Markdown
+            </a>
+          </p>
+        </details>
       </article>
 
       <SiteFooter />

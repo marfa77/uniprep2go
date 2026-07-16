@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { LlmFactsStrip } from "@/components/llm/llm-facts-strip";
+import { OfficialSourceTrustStrip } from "@/components/official-source-trust";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import {
@@ -172,6 +173,7 @@ export default function MockExamsIndexPage() {
           {indexedCount} live indexed mocks plus {mocks.length - indexedCount} preview readiness checks.
           Timed scoring, topic breakdown, and linked Anki deck repair. {mockFreeAccessNotice}
         </p>
+        <OfficialSourceTrustStrip className="mt-6 max-w-3xl" />
         <LlmFactsStrip mockCount={mocks.length} variant="mock-index" />
 
         <section className="mt-10">

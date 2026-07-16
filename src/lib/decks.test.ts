@@ -93,6 +93,11 @@ describe("deck catalog", () => {
     expect(siteFaqs[1].answer).toContain("California real estate");
     expect(siteFaqs[0].answer).toContain("free timed online practice tests");
     expect(siteFaqs.some((faq) => faq.question.includes("custom deck"))).toBe(true);
+    expect(
+      siteFaqs.some((faq) =>
+        faq.answer.includes("published official outlines and blueprints"),
+      ),
+    ).toBe(true);
   });
 
   it("uses product covers for available deck catalog thumbnails", () => {
@@ -570,6 +575,8 @@ describe("deck catalog", () => {
       "gmat-focus-anki-deck": "GMAT Focus Anki Deck — 400+ Flashcards",
       "sat-anki-deck": "Digital SAT Anki Deck — 342+ Flashcards",
       "pmp-anki-deck": "PMP Anki Deck — 346+ Flashcards",
+      "gre-anki-deck": "GRE Anki Deck — 350+ Flashcards",
+      "leed-ap-om-anki-deck": "LEED AP O+M Anki Deck — 250+ Flashcards",
       "german-a2-anki-deck": "German A2 Anki Deck — 1000 Flashcards",
       "celi-b1-italian-anki-deck": "CELI B1 Italian Anki Deck — 1,373 Flashcards",
       "danish-a2-prove-i-dansk-anki-deck":
