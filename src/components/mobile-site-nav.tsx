@@ -9,6 +9,7 @@ const navLinks = [
   { href: "/mock-exams", label: "Free mocks" },
   { href: "/#catalog", label: "Anki decks" },
   { href: "/building-certification-anki-decks", label: "Building certs" },
+  { href: "/comics/gaivota-em-portugal", label: "Comics" },
   { href: "/contact", label: "Contact" },
 ] as const;
 
