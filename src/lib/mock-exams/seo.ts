@@ -1,5 +1,6 @@
 import type { MockExamConfig } from "./types";
 import { getNicheExamExplainer } from "./niche-exam-explainers";
+import { getMockOfficialResources } from "./official-resources";
 import { mockFreeAccessNotice, mockFreeAccessPriceLabel } from "./pricing";
 import { fitSeoTitle, SEO_TITLE_MAX } from "../seo";
 import { absoluteUrl, siteConfig } from "../site";
@@ -720,22 +721,27 @@ export function buildMockExamFaqs(config: MockExamConfig) {
 export function buildMockSeoPageCopy(config: MockExamConfig) {
   const profile = getMockSeoProfile(config);
   const niche = getNicheExamExplainer(config.slug);
+  const official = getMockOfficialResources(config);
+  const waitlist = config.status === "coming_soon";
+  const defaultHowToPrepare = waitlist
+    ? `Review the official ${official.certifier} outline for ${config.shortTitle}, study each topic on this page${official.verifyAtUrl ? ` (verify details at the official site)` : ""}, and use Notify me when this launches so you can take the free timed diagnostic when the bank ships.`
+    : `Start with this free timed diagnostic to see which ${config.shortTitle} domains are weak, then review the published ${official.certifier} outline${official.verifyAtUrl ? ` on the official site` : ""} and drill missed topics with the linked Anki deck before exam day.`;
 
   return {
     headline: profile.headline,
     intro: profile.intro,
     audience: profile.audience,
     whoFor: niche?.whoFor ?? profile.audience,
-    howToPrepare:
-      niche?.howToPrepare ??
-      `Review the official ${config.examBody} outline for ${config.shortTitle}, study each topic on this page, and use Notify me when this launches so you can take the free timed diagnostic when the bank ships.`,
+    howToPrepare: niche?.howToPrepare ?? defaultHowToPrepare,
     topicSummary: config.topics.map((topic) => topic.label).join(", "),
     topicBlurbs: niche?.topicBlurbs ?? [],
     practiceTestLabel: profile.practiceTestLabel,
     whatIsExam: profile.whatIsExam,
-    administeredBy: profile.administeredBy,
+    administeredBy: profile.administeredBy ?? official.certifier,
     officialFormat: profile.officialFormat,
-    isWaitlist: config.status === "coming_soon",
+    verifyAtUrl: official.verifyAtUrl,
+    officialSources: official.sources,
+    isWaitlist: waitlist,
     whatIsHeading: niche
       ? `What is the ${niche.practiceTestName.replace(/ Practice Test$/i, "")} exam?`
       : `What is the ${config.shortTitle} exam?`,

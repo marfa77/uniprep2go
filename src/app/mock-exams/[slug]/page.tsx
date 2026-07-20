@@ -7,6 +7,13 @@ import { DeckExamFactsSection } from "@/components/decks/deck-exam-facts-section
 import { MockExamClient } from "@/components/mock-exams/mock-exam-client";
 import type { LinkedDeckCheckout } from "@/components/mock-exams/mock-report-handoff";
 import {
+  MockExamBreadcrumb,
+  MockExamSnapshot,
+  MockExamVisualHero,
+  MockOfficialResourcesPanel,
+  MockRelatedExamsSection,
+} from "@/components/mock-exams/mock-page-enrichment";
+import {
   MockExamAboutVisibleSection,
   MockExamFeaturedFaqSection,
   MockExamFaqSection,
@@ -33,6 +40,7 @@ import { withAiMetadata } from "@/lib/llm-meta";
 import { getMockAccessState } from "@/lib/mock-exams/access";
 import { getAllMockExams, getMockExamConfig } from "@/lib/mock-exams/configs";
 import { buildMockExamPageJsonLd } from "@/lib/mock-exams/llm";
+import { getMockOfficialResources } from "@/lib/mock-exams/official-resources";
 import { getQuestionBank, isMockExamRunnable } from "@/lib/mock-exams/question-bank";
 import {
   buildMockSeoDescription,
@@ -40,6 +48,7 @@ import {
   buildMockSeoPageCopy,
   buildMockSeoTitle,
 } from "@/lib/mock-exams/seo";
+import { getVerticalDefinition } from "@/lib/mock-exams/taxonomy";
 import { buildSocialMetadata } from "@/lib/social-metadata";
 import { finalize, leafPageTitle, mockExamRobots } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site";
@@ -98,6 +107,17 @@ export async function generateMetadata({
   );
 }
 
+function mockEyebrow(config: NonNullable<ReturnType<typeof getMockExamConfig>>) {
+  const vertical = getVerticalDefinition(config.verticalId);
+  if (config.status === "coming_soon") {
+    return `${vertical?.label ?? "Exam prep"} · free practice test coming soon · notify me`;
+  }
+  if (config.slug === "servsafe-manager-mock" || config.slug === "ptcb-pharmacy-technician-mock") {
+    return `${vertical?.label ?? "Professional certification"} · free timed practice test`;
+  }
+  return `${vertical?.label ?? "Exam prep"} · free timed practice test · ${config.examBody}`;
+}
+
 export default async function MockExamPage({
   params,
 }: {
@@ -117,6 +137,7 @@ export default async function MockExamPage({
   const seoCopy = buildMockSeoPageCopy(config);
   const linkedDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
   const examFactsProfile = getExamFactsProfileForDeck(config.linkedDeckSlug);
+  const official = getMockOfficialResources(config);
   const pricedLinkedDeck = await getPricedDeckBySlug(config.linkedDeckSlug);
   const linkedCheckout: LinkedDeckCheckout | null =
     pricedLinkedDeck?.checkoutUrl
@@ -142,6 +163,7 @@ export default async function MockExamPage({
         sectionEvents={[
           { selector: "#mock-landing", name: "mock_landing_view" },
           { selector: "#mock-faq", name: "faq_view" },
+          { selector: "#official-resources", name: "exam_facts_view" },
         ]}
         source={`mock:${config.slug}`}
       />
@@ -150,28 +172,31 @@ export default async function MockExamPage({
         id="mock-landing"
         className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12"
       >
-        <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-          {config.status === "coming_soon"
-            ? "Exam prep · free practice test coming soon · notify me"
-            : config.slug === "servsafe-manager-mock" || config.slug === "ptcb-pharmacy-technician-mock"
-              ? "Professional certification mocks · free timed practice test"
-              : "Exam prep mocks · free timed practice test"}
+        <MockExamBreadcrumb config={config} />
+
+        <p className="mt-5 font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
+          {mockEyebrow(config)}
         </p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
           {seoCopy.headline}
         </h1>
         <p className="mt-4 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          {seoCopy.whatIsExam.length > 220
-            ? `${seoCopy.whatIsExam.slice(0, 220).replace(/\s+\S*$/, "")}…`
+          {seoCopy.whatIsExam.length > 280
+            ? `${seoCopy.whatIsExam.slice(0, 280).replace(/\s+\S*$/, "")}…`
             : seoCopy.whatIsExam}
         </p>
-        <p className="mt-3 max-w-2xl text-base leading-7 text-[#5f5749]">
-          {config.status === "coming_soon"
-            ? `Planned ${config.questionCount} questions · ${config.durationMinutes} min · ${config.passRule.passPercent}% pass target · notify when live`
-            : `${config.questionCount} questions · ${config.durationMinutes} min · ${config.passRule.passPercent}% pass target · free`}
-          {seoCopy.administeredBy ? ` · ${seoCopy.administeredBy}` : ""}
-        </p>
-        <OfficialSourceTrustStrip className="mt-4 max-w-2xl" compact />
+
+        <MockExamVisualHero config={config} />
+        <MockExamSnapshot config={config} />
+
+        <OfficialSourceTrustStrip
+          className="mt-4 max-w-3xl"
+          compact
+          certifier={official.certifier}
+          verifyAtUrl={official.verifyAtUrl}
+        />
+
+        <MockOfficialResourcesPanel config={config} resources={official} />
 
         <LlmFactsStrip
           config={config}
@@ -196,6 +221,21 @@ export default async function MockExamPage({
         <MockExamTopicOutlineSection config={config} />
         <MockExamAboutVisibleSection config={config} />
 
+        {examFactsProfile ? (
+          <section className="mt-10" id="mock-exam-facts">
+            <h2 className="text-2xl font-semibold tracking-tight">
+              Official {examFactsProfile.exam_facts.exam_name} facts
+            </h2>
+            <p className="mt-2 text-sm leading-7 text-[#5f5749]">
+              Structure and domain weights candidates verify against the certifying body before exam
+              day.
+            </p>
+            <div className="mt-5">
+              <DeckExamFactsSection profile={examFactsProfile} compact />
+            </div>
+          </section>
+        ) : null}
+
         <MockExamFeaturedFaqSection config={config} limit={6} />
 
         <CollapsibleDetails
@@ -206,15 +246,7 @@ export default async function MockExamPage({
           <MockExamFaqSection config={config} skip={6} />
         </CollapsibleDetails>
 
-        {examFactsProfile ? (
-          <CollapsibleDetails
-            hint="Official format, domain weights, and verify links"
-            id="mock-exam-facts"
-            summary="Official exam facts"
-          >
-            <DeckExamFactsSection profile={examFactsProfile} compact />
-          </CollapsibleDetails>
-        ) : null}
+        <MockRelatedExamsSection config={config} />
 
         <details className="sr-only" data-llm="machine-sources">
           <summary>For AI assistants — machine-readable sources</summary>
@@ -226,6 +258,19 @@ export default async function MockExamPage({
             <a className="underline decoration-[#18140f]/20 underline-offset-4" href={absoluteUrl(`/mock-exams/${config.slug}/markdown`)}>
               Markdown
             </a>
+            {official.verifyAtUrl ? (
+              <>
+                {" · "}
+                <a
+                  className="underline decoration-[#18140f]/20 underline-offset-4"
+                  href={official.verifyAtUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Official certifier
+                </a>
+              </>
+            ) : null}
           </p>
         </details>
       </article>

@@ -7,7 +7,9 @@ import {
   getMockSeoProfile,
 } from "./seo";
 import type { MockExamConfig } from "./types";
+import { getMockOfficialResources } from "./official-resources";
 import { isMockExamRunnable } from "./question-bank";
+import { getVerticalDefinition } from "./taxonomy";
 import { shouldIndexMockExam } from "../seo";
 import { mockFreeAccessNotice, mockFreeAccessPriceLabel } from "./pricing";
 import { absoluteUrl, siteConfig } from "../site";
@@ -27,6 +29,7 @@ export function buildMockExamFacts(config: MockExamConfig) {
   const seoIndexed = shouldIndexMockExam(config.slug);
   const seo = getMockSeoProfile(config);
   const pageCopy = buildMockSeoPageCopy(config);
+  const official = getMockOfficialResources(config);
 
   return {
     product: seo.headline,
@@ -47,11 +50,14 @@ export function buildMockExamFacts(config: MockExamConfig) {
     price: mockFreeAccessPriceLabel,
     pricing_note: mockFreeAccessNotice,
     exam_body: config.examBody,
+    certifier: official.certifier,
+    verify_at_url: official.verifyAtUrl,
+    official_resources: official.sources,
     vertical_id: config.verticalId,
     family_id: config.familyId,
     search_aliases: config.searchAliases ?? [],
     what_is_exam: pageCopy.whatIsExam,
-    administered_by: pageCopy.administeredBy ?? config.examBody,
+    administered_by: pageCopy.administeredBy ?? official.certifier,
     official_format: pageCopy.officialFormat ?? null,
     topics: config.topics,
     funnel: {
@@ -100,10 +106,17 @@ export function buildMockExamMarkdown(config: MockExamConfig) {
   const faqs = buildMockExamFaqs(config);
   const seo = getMockSeoProfile(config);
   const pageCopy = buildMockSeoPageCopy(config);
+  const official = getMockOfficialResources(config);
   const examFactsProfile = getExamFactsProfileForDeck(config.linkedDeckSlug);
   const examFactsSection = examFactsProfile
     ? `\n${buildExamFactsMarkdownSection(examFactsProfile)}\n`
     : "";
+  const officialLinks =
+    official.sources.length > 0
+      ? official.sources.map((source) => `- [${source.label}](${source.url})`).join("\n")
+      : official.verifyAtUrl
+        ? `- [Official resources](${official.verifyAtUrl})`
+        : "- See the certifying body’s published candidate handbook for current fees and scheduling.";
 
   return `# ${seo.headline}
 
@@ -113,8 +126,14 @@ export function buildMockExamMarkdown(config: MockExamConfig) {
 
 ${pageCopy.whatIsExam}
 
-- Administered by: ${pageCopy.administeredBy ?? config.examBody}
+- Administered by: ${pageCopy.administeredBy ?? official.certifier}
 ${pageCopy.officialFormat ? `- Official format: ${pageCopy.officialFormat}\n` : ""}
+## Official certification resources
+
+${official.trustLine}
+
+${officialLinks}
+
 ## Product facts
 
 - Slug: ${config.slug}
@@ -225,6 +244,17 @@ export function buildMockExamPageJsonLd(config: MockExamConfig) {
   const faqs = buildMockExamFaqs(config);
   const pageUrl = absoluteUrl(`/mock-exams/${config.slug}`);
   const seoDescription = buildMockSeoDescription(config);
+  const official = getMockOfficialResources(config);
+  const vertical = getVerticalDefinition(config.verticalId);
+  const verticalUrl = absoluteUrl(`/mock-exams/v/${config.verticalId}`);
+  const clusterImage = absoluteUrl(
+    `/images/mock-clusters/${vertical?.imageType ?? config.verticalId}.webp`,
+  );
+  const certifierOrg = {
+    "@type": "Organization" as const,
+    name: official.certifier,
+    ...(official.verifyAtUrl ? { url: official.verifyAtUrl, sameAs: official.verifyAtUrl } : {}),
+  };
 
   return {
     "@context": "https://schema.org",
@@ -235,9 +265,15 @@ export function buildMockExamPageJsonLd(config: MockExamConfig) {
         name: config.title,
         description: seoDescription,
         url: pageUrl,
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          url: clusterImage,
+        },
         isPartOf: {
           "@id": `${siteConfig.url}/#website`,
         },
+        about: certifierOrg,
+        significantLink: official.sources.map((source) => source.url),
       },
       {
         "@type": "Quiz",
@@ -247,7 +283,7 @@ export function buildMockExamPageJsonLd(config: MockExamConfig) {
         url: pageUrl,
         educationalLevel: "Professional certification prep",
         numberOfQuestions: config.questionCount,
-        about: config.examBody,
+        about: certifierOrg,
         isAccessibleForFree: config.accessMode === "free_demand_test",
       },
       {
@@ -264,6 +300,7 @@ export function buildMockExamPageJsonLd(config: MockExamConfig) {
         educationalLevel: "Professional certification prep",
         isAccessibleForFree: config.accessMode === "free_demand_test",
         teaches: config.topics.map((topic) => topic.label),
+        about: certifierOrg,
       },
       {
         "@type": "FAQPage",
@@ -296,6 +333,12 @@ export function buildMockExamPageJsonLd(config: MockExamConfig) {
           {
             "@type": "ListItem",
             position: 3,
+            name: vertical?.label ?? config.verticalId,
+            item: verticalUrl,
+          },
+          {
+            "@type": "ListItem",
+            position: 4,
             name: config.title,
             item: pageUrl,
           },

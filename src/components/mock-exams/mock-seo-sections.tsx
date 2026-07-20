@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getCatalogDeckBySlug } from "@/lib/decks";
+import { getMockOfficialResources } from "@/lib/mock-exams/official-resources";
 import { buildMockExamFaqs, buildMockSeoPageCopy } from "@/lib/mock-exams/seo";
 import { mockFreeAccessNotice } from "@/lib/mock-exams/pricing";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
@@ -13,6 +14,7 @@ type MockSeoSectionsProps = {
 /** Always-visible exam context for SEO / AEO — not buried in a collapsible. */
 export function MockExamWhatIsSection({ config }: { config: MockExamConfig }) {
   const copy = buildMockSeoPageCopy(config);
+  const official = getMockOfficialResources(config);
 
   return (
     <section className="mt-10" id="what-is-exam">
@@ -22,11 +24,44 @@ export function MockExamWhatIsSection({ config }: { config: MockExamConfig }) {
         {copy.administeredBy ? (
           <p>
             <span className="font-medium text-[#18140f]">Administered by:</span> {copy.administeredBy}
+            {official.verifyAtUrl ? (
+              <>
+                {" "}
+                (
+                <a
+                  className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+                  href={official.verifyAtUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  official site ↗
+                </a>
+                )
+              </>
+            ) : null}
           </p>
         ) : null}
         {copy.officialFormat ? (
           <p>
             <span className="font-medium text-[#18140f]">Official format:</span> {copy.officialFormat}
+          </p>
+        ) : null}
+        {official.sources.length > 1 ? (
+          <p>
+            <span className="font-medium text-[#18140f]">Official resources:</span>{" "}
+            {official.sources.map((source, index) => (
+              <span key={source.url}>
+                {index > 0 ? " · " : null}
+                <a
+                  className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+                  href={source.url}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  {source.label}
+                </a>
+              </span>
+            ))}
           </p>
         ) : null}
       </div>
@@ -46,17 +81,32 @@ export function MockExamWhoForSection({ config }: { config: MockExamConfig }) {
 
 export function MockExamHowToPrepareSection({ config }: { config: MockExamConfig }) {
   const copy = buildMockSeoPageCopy(config);
+  const official = getMockOfficialResources(config);
   return (
     <section className="mt-10" id="how-to-prepare">
       <h2 className="text-2xl font-semibold tracking-tight">How to prepare</h2>
       <p className="mt-4 text-base leading-8 text-[#4f493e]">{copy.howToPrepare}</p>
+      {official.verifyAtUrl ? (
+        <p className="mt-3 text-sm leading-7 text-[#5f5749]">
+          Confirm current fees, eligibility, and scheduling with{" "}
+          <a
+            className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+            href={official.verifyAtUrl}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {official.certifier}
+          </a>{" "}
+          before you book the real exam.
+        </p>
+      ) : null}
     </section>
   );
 }
 
 export function MockExamTopicOutlineSection({ config }: { config: MockExamConfig }) {
   const copy = buildMockSeoPageCopy(config);
-  const blurbs = copy.topicBlurbs ?? [];
+  const blurbs: Array<{ id: string; label: string; blurb: string }> = copy.topicBlurbs ?? [];
 
   return (
     <section className="mt-10" id="topic-outline">
@@ -66,7 +116,7 @@ export function MockExamTopicOutlineSection({ config }: { config: MockExamConfig
       </p>
       <ul className="mt-5 space-y-4">
         {config.topics.map((topic) => {
-          const blurb = blurbs.find((b) => b.id === topic.id)?.blurb;
+          const blurb = blurbs.find((item) => item.id === topic.id)?.blurb;
           return (
             <li key={topic.id} className="border-l-2 border-[#1f3a5f]/25 pl-4">
               <p className="font-semibold text-[#18140f]">{topic.label}</p>

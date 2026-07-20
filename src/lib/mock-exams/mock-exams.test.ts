@@ -477,9 +477,13 @@ describe("llm visibility", () => {
 
     const markdown = buildMockExamMarkdown(config!);
     expect(markdown).toMatch(/SIE/i);
+    expect(markdown).toContain("## Official certification resources");
+    expect(markdown).toContain("finra.org");
     expect(markdown).toContain("## Report features");
     expect(markdown).toContain("## Question source");
     expect(markdown).toContain("does not guarantee an exam result");
+    expect(facts.verify_at_url).toContain("finra.org");
+    expect(facts.official_resources?.length).toBeGreaterThan(0);
   });
 
   it("exposes every configured mock through LLM facts and markdown", () => {
@@ -533,7 +537,8 @@ describe("llm visibility", () => {
       itemListElement: expect.arrayContaining([
         expect.objectContaining({ position: 1, name: "Home" }),
         expect.objectContaining({ position: 2, name: "US exam practice tests" }),
-        expect.objectContaining({ position: 3, name: "CFA Level 1 Readiness Check" }),
+        expect.objectContaining({ position: 3, name: "Finance credentials" }),
+        expect.objectContaining({ position: 4, name: "CFA Level 1 Readiness Check" }),
       ]),
     });
   });
