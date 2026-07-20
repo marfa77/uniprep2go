@@ -39,10 +39,10 @@ export default function Ep0225DeAbrilPage() {
         <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">25 de Abril</h1>
         <p className="mt-2 text-lg text-[#5c574e]">Carnation Revolution · Lisboa, 1974</p>
 
-        <div className="mt-8 overflow-hidden border-2 border-[#0e0e0e]">
+        <div className="mt-8 overflow-hidden border-2 border-[#0e0e0e] bg-[#111]">
           <Image
             alt="Cover: 25 de Abril comic"
-            className="h-auto w-full object-cover"
+            className="mx-auto h-auto max-h-[min(52vh,420px)] w-full object-contain"
             height={900}
             priority
             src="/comics/gaivota-em-portugal/02-25-de-abril/ep02-cover.jpg"
