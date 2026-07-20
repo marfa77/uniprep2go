@@ -20,8 +20,10 @@ import { DeckPracticeMockSection } from "@/components/decks/deck-practice-mock-s
 import { DeckRelatedDecks } from "@/components/decks/deck-related-decks";
 import { DeckSeoSections } from "@/components/decks/deck-seo-sections";
 import { DeckUniqueContentSection } from "@/components/decks/deck-unique-content-section";
+import { DeckStickyCheckoutBar } from "@/components/decks/deck-sticky-checkout-bar";
 import { DeckWaitlistCta } from "@/components/decks/deck-waitlist-cta";
 import { CollapsibleDetails } from "@/components/ui/collapsible-details";
+import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 import {
   BUILDING_CERTIFICATION_HUB_SLUG,
   getBuildingClusterStudyPaths,
@@ -231,7 +233,11 @@ export default async function DeckPage({
       <SiteHeader />
       <FunnelTracker deckSlug={deck.slug} sectionEvents={sectionEvents} source="deck_page" />
 
-      <article className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12">
+      <article
+        className="mx-auto w-full max-w-4xl px-6 py-10 pb-28 sm:px-10 lg:px-12"
+        id="main-content"
+        tabIndex={-1}
+      >
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
           {categoryLabels[deck.category]}
         </p>
@@ -286,13 +292,16 @@ export default async function DeckPage({
           variant="deck"
         />
 
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+        <div
+          className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
+          id="deck-hero-cta"
+        >
           {isPlanned ? (
             <>
               {practiceMock ? (
                 <Link
                   aria-label={`Try free ${practiceMock.questionCount}-question ${deck.shortName} practice test`}
-                  className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-6 py-3 text-base font-semibold text-[#fffaf0] transition hover:bg-[#152238] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+                  className={btnPrimary}
                   href={`/mock-exams/${practiceMock.slug}`}
                 >
                   Try free {practiceMock.questionCount}-question practice test
@@ -309,14 +318,14 @@ export default async function DeckPage({
             <>
               <Link
                 aria-label={`Try free ${practiceMock.questionCount}-question ${deck.shortName} practice test`}
-                className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-6 py-3 text-base font-semibold text-[#fffaf0] transition hover:bg-[#152238] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+                className={btnPrimary}
                 href={`/mock-exams/${practiceMock.slug}`}
               >
                 Try free {practiceMock.questionCount}-question practice test
               </Link>
               <TrackedCheckoutLink
                 aria-label={`${checkoutCtaLabel} on ${availableDeck!.checkoutProvider}`}
-                className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#18140f]/25 px-6 py-3 text-base font-semibold transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+                className={btnSecondary}
                 deckSlug={deck.slug}
                 href={availableDeck!.checkoutUrl}
                 source="deck_page_cta"
@@ -328,7 +337,7 @@ export default async function DeckPage({
             <>
               <TrackedCheckoutLink
                 aria-label={`${checkoutCtaLabel} on ${availableDeck!.checkoutProvider}`}
-                className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-6 py-3 text-base font-semibold text-[#fffaf0] transition hover:bg-[#152238] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+                className={btnPrimary}
                 deckSlug={deck.slug}
                 href={availableDeck!.checkoutUrl}
                 source="deck_page_cta"
@@ -338,14 +347,14 @@ export default async function DeckPage({
               {practiceMock ? (
                 <Link
                   aria-label={`Try free ${practiceMock.questionCount}-question ${deck.shortName} practice test`}
-                  className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#18140f]/25 px-6 py-3 text-base font-semibold transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+                  className={btnSecondary}
                   href={`/mock-exams/${practiceMock.slug}`}
                 >
                   Try free {practiceMock.questionCount}-question practice test
                 </Link>
               ) : availableDeck?.checkoutProvider === "App Store" ? (
                 <Link
-                  className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#18140f]/25 px-6 py-3 text-base font-semibold transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+                  className={btnSecondary}
                   href={availableDeck.checkoutUrl}
                   rel="noopener noreferrer"
                   target="_blank"
@@ -353,10 +362,7 @@ export default async function DeckPage({
                   View on App Store
                 </Link>
               ) : (
-                <Link
-                  className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#18140f]/25 px-6 py-3 text-base font-semibold transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
-                  href={secondaryCta.href}
-                >
+                <Link className={btnSecondary} href={secondaryCta.href}>
                   {secondaryCta.label}
                 </Link>
               )}
@@ -496,7 +502,7 @@ export default async function DeckPage({
               checkout.
             </p>
             <TrackedCheckoutLink
-              className="mt-4 inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-6 py-3 text-base font-semibold text-[#fffaf0] transition hover:bg-[#152238]"
+              className={`mt-4 ${btnPrimary}`}
               deckSlug={deck.slug}
               href={availableDeck.checkoutUrl}
               source="deck_page_post_samples"
@@ -649,6 +655,23 @@ export default async function DeckPage({
 
         <p className="mt-10 text-xs text-[#8a7d68]">Last updated {deck.lastUpdated}.</p>
       </article>
+
+      <DeckStickyCheckoutBar
+        checkoutCtaLabel={isPlanned ? undefined : checkoutCtaLabel}
+        checkoutUrl={isPlanned ? undefined : availableDeck?.checkoutUrl}
+        deckSlug={deck.slug}
+        practiceMockHref={
+          practiceMock ? `/mock-exams/${practiceMock.slug}` : undefined
+        }
+        practiceMockLabel={
+          practiceMock
+            ? `Free ${practiceMock.questionCount}-q test`
+            : undefined
+        }
+        priceLabel={isPlanned ? "Planned · waitlist" : priceLabel}
+        shortName={deck.shortName}
+        variant={isPlanned ? "planned" : mockFirst ? "mock-first" : "buy"}
+      />
 
       <SiteFooter />
     </main>

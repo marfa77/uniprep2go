@@ -36,6 +36,12 @@ import { getAllMockExams, getMockExamConfig, primaryMock } from "@/lib/mock-exam
 import { buildFeaturedMockItemListJsonLd, buildMockExamItemListJsonLd } from "@/lib/mock-exams/llm";
 import { siteConfig } from "@/lib/site";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
+import {
+  btnPrimary,
+  btnPrimarySm,
+  btnSecondary,
+  btnSecondarySm,
+} from "@/lib/ui-button-classes";
 
 const examPathLinks = [
   {
@@ -290,8 +296,8 @@ export default async function HomePage() {
         sectionEvents={sectionEvents}
         source={`mock:${primaryMock.slug}:home`}
       />
-      <main>
-        {/* 1. Hero */}
+      <main id="main-content" tabIndex={-1}>
+        {/* 1. Hero — brand, headline, one sentence, CTAs, image */}
         <section className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
           <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:items-center lg:py-20">
             <div>
@@ -302,59 +308,21 @@ export default async function HomePage() {
                 Diagnose exam gaps with free timed mocks — then drill with Anki
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-8 text-[#4f493e]">
-                {indexedMockCount} live indexed practice tests
-                {mockExams.length - indexedMockCount > 0
-                  ? ` plus ${mockExams.length - indexedMockCount} preview readiness checks`
-                  : ""}{" "}
-                and {availableDecks.length} Anki decks/PDFs. Start with topic scoring and a
-                pass/no-pass report — no signup — then buy the linked deck to drill weak topics.
+                Start with a timed mock and pass/no-pass topic report — no signup — then buy the
+                linked Anki deck to drill weak areas.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
                   href="/mock-exams/sie-full-mock"
-                  className="inline-flex min-h-12 items-center rounded-lg bg-[#1f3a5f] px-6 py-3 text-base font-semibold text-[#fffaf0] transition hover:bg-[#152238] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+                  className={btnPrimary}
                   aria-label="Start timed FINRA SIE practice test"
                 >
                   Start Free SIE Practice Test
                 </Link>
-                <Link
-                  href="/mock-exams"
-                  className="inline-flex min-h-12 items-center rounded-lg border border-[#18140f]/20 bg-[#fffaf0]/70 px-6 py-3 text-base font-semibold text-[#18140f] transition hover:border-[#18140f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
-                >
+                <Link href="/mock-exams" className={btnSecondary}>
                   Browse all practice tests
                 </Link>
               </div>
-              <OfficialSourceTrustStrip className="mt-6 max-w-xl" compact />
-              <dl className="mt-10 grid gap-4 sm:grid-cols-3">
-                <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-4">
-                  <dt className="text-sm text-[#7a6e5a]">Live practice tests</dt>
-                  <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
-                    {indexedMockCount} indexed mocks
-                  </dd>
-                </div>
-                <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-4">
-                  <dt className="text-sm text-[#7a6e5a]">Anki &amp; PDF catalog</dt>
-                  <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
-                    {availableDecks.length} decks
-                  </dd>
-                  {pdfProductCount > 0 ? (
-                    <dd className="mt-1 text-sm text-[#7a6e5a]">
-                      plus {pdfProductCount} printable PDF{pdfProductCount === 1 ? "" : "s"}
-                    </dd>
-                  ) : null}
-                </div>
-                <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 p-4">
-                  <dt className="text-sm text-[#7a6e5a]">Price range</dt>
-                  <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
-                    {minPrice > 0 ? `$${minPrice}–$${maxPrice}` : "See checkout"}
-                  </dd>
-                </div>
-              </dl>
-              <LlmFactsStrip
-                deckCount={availableDecks.length}
-                mockCount={indexedMockCount}
-                variant="site"
-              />
             </div>
             <div className="relative overflow-hidden rounded-[2rem] border border-[#18140f]/10 bg-[#fffaf0] shadow-[0_24px_60px_-32px_rgba(24,20,15,0.35)]">
               <Image
@@ -371,8 +339,48 @@ export default async function HomePage() {
           </div>
         </section>
 
+        {/* At a glance — stats + trust below first viewport */}
+        <section className="border-b border-[#18140f]/10 bg-[#fffaf0]" aria-label="Catalog snapshot">
+          <div className="mx-auto max-w-6xl px-6 py-10 sm:px-10">
+            <OfficialSourceTrustStrip className="max-w-3xl" compact />
+            <dl className="mt-8 grid gap-4 sm:grid-cols-3">
+              <div className="rounded-3xl border border-[#18140f]/10 bg-[#f7f3ea] p-4">
+                <dt className="text-sm text-[#7a6e5a]">Live practice tests</dt>
+                <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
+                  {indexedMockCount} indexed mocks
+                  {mockExams.length - indexedMockCount > 0
+                    ? ` · ${mockExams.length - indexedMockCount} preview`
+                    : ""}
+                </dd>
+              </div>
+              <div className="rounded-3xl border border-[#18140f]/10 bg-[#f7f3ea] p-4">
+                <dt className="text-sm text-[#7a6e5a]">Anki &amp; PDF catalog</dt>
+                <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
+                  {availableDecks.length} decks
+                </dd>
+                {pdfProductCount > 0 ? (
+                  <dd className="mt-1 text-sm text-[#7a6e5a]">
+                    plus {pdfProductCount} printable PDF{pdfProductCount === 1 ? "" : "s"}
+                  </dd>
+                ) : null}
+              </div>
+              <div className="rounded-3xl border border-[#18140f]/10 bg-[#f7f3ea] p-4">
+                <dt className="text-sm text-[#7a6e5a]">Price range</dt>
+                <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
+                  {minPrice > 0 ? `$${minPrice}–$${maxPrice}` : "See checkout"}
+                </dd>
+              </div>
+            </dl>
+            <LlmFactsStrip
+              deckCount={availableDecks.length}
+              mockCount={indexedMockCount}
+              variant="site"
+            />
+          </div>
+        </section>
+
         {/* Featured free mocks */}
-        <section className="border-b border-[#18140f]/10 bg-[#fffaf0]">
+        <section className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
           <div className="mx-auto max-w-6xl px-6 py-12 sm:px-10">
             <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Start here</p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
@@ -390,7 +398,7 @@ export default async function HomePage() {
                   </p>
                   <Link
                     aria-label={`${mockCtaLabel(mock)} for ${mock.shortTitle}`}
-                    className="mt-4 inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-4 py-2.5 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#152238]"
+                    className={`mt-4 ${btnPrimarySm}`}
                     href={`/mock-exams/${mock.slug}`}
                   >
                     {mockCtaLabel(mock)}
@@ -519,7 +527,7 @@ export default async function HomePage() {
                         {mock.passRule.passPercent}%
                       </p>
                       <Link
-                        className="mt-4 inline-flex text-sm font-semibold text-[#1f3a5f] underline-offset-4 hover:underline"
+                        className={`mt-4 ${btnPrimarySm}`}
                         href={`/mock-exams/${mock.slug}`}
                       >
                         {mockCtaLabel(mock)}
@@ -571,12 +579,13 @@ export default async function HomePage() {
                         </p>
                         {pricedDeck?.checkoutUrl && !deckIsPlanned ? (
                           <TrackedCheckoutLink
-                            className="mt-3 inline-flex text-sm font-semibold text-[#1f3a5f] underline-offset-4 hover:underline"
+                            className={`mt-3 ${btnSecondarySm}`}
                             deckSlug={deck.slug}
                             href={pricedDeck.checkoutUrl}
                             source="home_repair_pair_buy"
                           >
-                            {getCheckoutActionLabel(pricedDeck.checkoutProvider)} — {formatDeckPriceLabel(pricedDeck)}
+                            {getCheckoutActionLabel(pricedDeck.checkoutProvider)} —{" "}
+                            {formatDeckPriceLabel(pricedDeck)}
                           </TrackedCheckoutLink>
                         ) : null}
                       </div>
@@ -748,13 +757,13 @@ export default async function HomePage() {
                               {formatDeckPriceLabel(deck)}
                             </span>
                             <Link
-                              className="text-[#5f5749] underline-offset-2 hover:text-[#18140f] hover:underline"
+                              className={btnSecondarySm}
                               href={`/decks/${deck.slug}`}
                             >
                               Details
                             </Link>
                             <TrackedCheckoutLink
-                              className="font-medium text-[#1f3a5f] underline-offset-2 hover:underline"
+                              className={btnPrimarySm}
                               deckSlug={deck.slug}
                               href={deck.checkoutUrl}
                               source="catalog_buy"

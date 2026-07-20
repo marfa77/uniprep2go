@@ -144,7 +144,11 @@ export default function MockExamsIndexPage() {
       />
       <SiteHeader />
 
-      <article className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12">
+      <article
+        className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12"
+        id="main-content"
+        tabIndex={-1}
+      >
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Free practice tests</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
           Free timed mock exams for US licensing &amp; finance

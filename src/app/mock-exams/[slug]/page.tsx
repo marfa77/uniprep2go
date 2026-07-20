@@ -42,6 +42,7 @@ import { getAllMockExams, getMockExamConfig } from "@/lib/mock-exams/configs";
 import { buildMockExamPageJsonLd } from "@/lib/mock-exams/llm";
 import { getMockOfficialResources } from "@/lib/mock-exams/official-resources";
 import { getQuestionBank, isMockExamRunnable } from "@/lib/mock-exams/question-bank";
+import { parseMockSessionMode } from "@/lib/mock-exams/session-mode";
 import {
   buildMockSeoDescription,
   buildMockSeoKeywords,
@@ -120,10 +121,14 @@ function mockEyebrow(config: NonNullable<ReturnType<typeof getMockExamConfig>>) 
 
 export default async function MockExamPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ slug: string }>;
+  searchParams: Promise<{ mode?: string }>;
 }) {
   const { slug } = await params;
+  const { mode } = await searchParams;
+  const initialMode = parseMockSessionMode(mode);
   const config = getMockExamConfig(slug);
 
   if (!config) {
@@ -161,7 +166,7 @@ export default async function MockExamPage({
       <FunnelTracker
         deckSlug={config.linkedDeckSlug}
         sectionEvents={[
-          { selector: "#mock-landing", name: "mock_landing_view" },
+          { selector: "#main-content", name: "mock_landing_view" },
           { selector: "#mock-faq", name: "faq_view" },
           { selector: "#official-resources", name: "exam_facts_view" },
         ]}
@@ -169,7 +174,8 @@ export default async function MockExamPage({
       />
 
       <article
-        id="mock-landing"
+        id="main-content"
+        tabIndex={-1}
         className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12"
       >
         <MockExamBreadcrumb config={config} />
@@ -209,6 +215,7 @@ export default async function MockExamPage({
           <MockExamClient
             accessState={accessState}
             config={config}
+            initialMode={initialMode}
             linkedCheckout={linkedCheckout}
             questions={questions}
             runnable={runnable}

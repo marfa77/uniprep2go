@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { contactSections } from "@/lib/legal-content";
 import { customDeckMailtoUrl, siteConfig } from "@/lib/site";
+import { btnPrimary } from "@/lib/ui-button-classes";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -18,7 +19,11 @@ export default function ContactPage() {
     <main className="min-h-screen bg-[#f7f3ea] text-[#18140f]">
       <SiteHeader />
 
-      <article className="mx-auto w-full max-w-3xl px-6 py-10 sm:px-10 lg:px-12">
+      <article
+        className="mx-auto w-full max-w-3xl px-6 py-10 sm:px-10 lg:px-12"
+        id="main-content"
+        tabIndex={-1}
+      >
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Contact</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight">Get in touch</h1>
         <p className="mt-4 text-base leading-7 text-[#4f493e]">
@@ -36,10 +41,7 @@ export default function ContactPage() {
           <p className="mt-3 text-sm leading-6 text-[#5f5749]">
             {siteConfig.customDeckInquiry.instructions}
           </p>
-          <a
-            className="mt-5 inline-flex items-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
-            href={customDeckMailtoUrl()}
-          >
+          <a className={`mt-5 ${btnPrimary}`} href={customDeckMailtoUrl()}>
             Request a custom deck
           </a>
         </div>

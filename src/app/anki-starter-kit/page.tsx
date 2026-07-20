@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { siteConfig } from "@/lib/site";
+import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
 const directAnswer =
   "The Anki Starter Kit for adults shows how to use a Prep2Go .apkg deck in about 15 minutes: install Anki on a laptop, import the deck, create a free AnkiWeb account, press Sync, then study daily reviews on your phone.";
@@ -139,7 +140,7 @@ export default function AnkiStarterKitPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <SiteHeader />
 
-      <article>
+      <article id="main-content" tabIndex={-1}>
         <section className="border-b border-[#18140f]/10">
           <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:px-10 lg:grid-cols-[1fr_0.9fr] lg:items-center lg:py-20">
             <div>
@@ -152,7 +153,7 @@ export default function AnkiStarterKitPage() {
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[#4f493e]">{directAnswer}</p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
-                  className="inline-flex items-center justify-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+                  className={btnPrimary}
                   href={siteConfig.starterDeckUrl}
                   rel="noopener noreferrer"
                   target="_blank"
@@ -160,7 +161,7 @@ export default function AnkiStarterKitPage() {
                   Download the ServSafe Manager deck
                 </a>
                 <a
-                  className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+                  className={btnSecondary}
                   href="https://app.gumroad.com/library"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -294,7 +295,7 @@ export default function AnkiStarterKitPage() {
             </dl>
             <div className="mt-10 flex flex-wrap gap-3">
               <a
-                className="inline-flex items-center justify-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
+                className={btnPrimary}
                 href={siteConfig.starterDeckUrl}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -302,7 +303,7 @@ export default function AnkiStarterKitPage() {
                 Download the ServSafe Manager deck
               </a>
               <a
-                className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f]"
+                className={btnSecondary}
                 href="https://app.gumroad.com/library"
                 rel="noopener noreferrer"
                 target="_blank"

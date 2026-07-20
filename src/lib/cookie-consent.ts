@@ -29,6 +29,16 @@ export function writeCookieConsent(value: CookieConsentValue) {
 }
 
 export function subscribeToCookieConsent(onStoreChange: () => void) {
+  const onStorage = (event: StorageEvent) => {
+    if (event.key === COOKIE_CONSENT_KEY || event.key === null) {
+      onStoreChange();
+    }
+  };
+
   window.addEventListener(COOKIE_CONSENT_EVENT, onStoreChange);
-  return () => window.removeEventListener(COOKIE_CONSENT_EVENT, onStoreChange);
+  window.addEventListener("storage", onStorage);
+  return () => {
+    window.removeEventListener(COOKIE_CONSENT_EVENT, onStoreChange);
+    window.removeEventListener("storage", onStorage);
+  };
 }

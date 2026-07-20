@@ -12,6 +12,7 @@ import { withAiMetadata } from "@/lib/llm-meta";
 import { finalize, leafPageTitle } from "@/lib/seo";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { buildCatalogItemListJsonLd } from "@/lib/product-jsonld";
+import { btnChip } from "@/lib/ui-button-classes";
 
 export async function generateMetadata(): Promise<Metadata> {
   const title = leafPageTitle("Anki Decks & Exam Prep Catalog | UniPrep2Go");
@@ -63,7 +64,11 @@ export default async function DecksHubPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <SiteHeader />
-      <article className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12">
+      <article
+        className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12"
+        id="main-content"
+        tabIndex={-1}
+      >
         <LlmFactsStrip
           hubName="Anki decks catalog"
           hubPath="/decks"
@@ -85,22 +90,13 @@ export default async function DecksHubPage() {
         </p>
 
         <div className="mt-6 flex flex-wrap gap-3 text-sm">
-          <Link
-            className="rounded-full border border-[#18140f]/15 bg-[#fffaf0] px-4 py-2 font-medium hover:border-[#1f3a5f]/40"
-            href="/finance-anki-decks"
-          >
+          <Link className={btnChip} href="/finance-anki-decks">
             Finance hub
           </Link>
-          <Link
-            className="rounded-full border border-[#18140f]/15 bg-[#fffaf0] px-4 py-2 font-medium hover:border-[#1f3a5f]/40"
-            href="/building-certification-anki-decks"
-          >
+          <Link className={btnChip} href="/building-certification-anki-decks">
             Building &amp; safety hub
           </Link>
-          <Link
-            className="rounded-full border border-[#18140f]/15 bg-[#fffaf0] px-4 py-2 font-medium hover:border-[#1f3a5f]/40"
-            href="/language-certification-decks"
-          >
+          <Link className={btnChip} href="/language-certification-decks">
             Language hub
           </Link>
         </div>

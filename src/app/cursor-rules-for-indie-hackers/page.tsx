@@ -5,6 +5,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { buildSocialMetadata } from "@/lib/social-metadata";
 import { absoluteUrl, siteConfig } from "@/lib/site";
+import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
 const slug = "cursor-rules-for-indie-hackers";
 const coverPath = "/cursor-ship-kit/cover.png";
@@ -116,7 +117,7 @@ export default function CursorRulesForIndieHackersPage() {
       />
       <SiteHeader />
 
-      <article className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12">
+      <article id="main-content" tabIndex={-1} className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12">
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
           Cursor · solo builders
         </p>
@@ -147,7 +148,7 @@ export default function CursorRulesForIndieHackersPage() {
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <a
-            className="inline-flex items-center justify-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+            className={btnPrimary}
             href={gumroad.pro}
             rel="noopener noreferrer"
             target="_blank"
@@ -155,7 +156,7 @@ export default function CursorRulesForIndieHackersPage() {
             Get Cursor Ship Kit Pro — $39
           </a>
           <a
-            className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+            className={btnSecondary}
             href={gumroad.free}
             rel="noopener noreferrer"
             target="_blank"
@@ -163,7 +164,7 @@ export default function CursorRulesForIndieHackersPage() {
             Free preview (.mdc)
           </a>
           <a
-            className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+            className={btnSecondary}
             href={gumroad.basic}
             rel="noopener noreferrer"
             target="_blank"

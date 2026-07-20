@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { MockExamConfig, MockReport } from "@/lib/mock-exams/types";
+import { btnPrimary, btnSecondarySm, cx } from "@/lib/ui-button-classes";
 
 type MockInterestCtaProps = {
   config: MockExamConfig;
@@ -14,8 +15,25 @@ type MockInterestCtaProps = {
   compact?: boolean;
 };
 
+function statusMessage(
+  status: "idle" | "loading" | "done" | "error",
+  idleFallback = "",
+): string {
+  if (status === "done") {
+    return "Interest recorded — we will notify you.";
+  }
+  if (status === "error") {
+    return "Something went wrong. Please try again.";
+  }
+  if (status === "loading") {
+    return "Sending your request…";
+  }
+  return idleFallback;
+}
+
 export function MockInterestCta({ config, cta, report, compact = false }: MockInterestCtaProps) {
   const [status, setStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
+  const liveMessage = statusMessage(status);
 
   async function registerInterest() {
     setStatus("loading");
@@ -43,14 +61,19 @@ export function MockInterestCta({ config, cta, report, compact = false }: MockIn
 
   if (compact) {
     return (
-      <button
-        className="inline-flex h-11 items-center rounded-full border border-[#1f3a5f]/25 px-5 text-sm font-semibold text-[#1f3a5f] transition hover:border-[#1f3a5f] disabled:opacity-50"
-        disabled={status === "loading" || status === "done"}
-        onClick={registerInterest}
-        type="button"
-      >
-        {status === "done" ? "Interest recorded" : cta.label}
-      </button>
+      <span className="inline-flex flex-col gap-1">
+        <button
+          className={btnSecondarySm}
+          disabled={status === "loading" || status === "done"}
+          onClick={registerInterest}
+          type="button"
+        >
+          {status === "done" ? "Interest recorded" : status === "error" ? "Try again" : cta.label}
+        </button>
+        <span aria-live="polite" className="sr-only" role="status">
+          {liveMessage}
+        </span>
+      </span>
     );
   }
 
@@ -59,7 +82,7 @@ export function MockInterestCta({ config, cta, report, compact = false }: MockIn
       <h3 className="text-2xl font-semibold tracking-tight">{cta.label}</h3>
       <p className="mt-3 text-sm leading-7 text-[#4f493e]">{cta.description}</p>
       <button
-        className="mt-6 rounded-full bg-[#1f3a5f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#18140f] disabled:opacity-50"
+        className={cx("mt-6", btnPrimary)}
         disabled={status === "loading" || status === "done"}
         onClick={registerInterest}
         type="button"
@@ -68,8 +91,21 @@ export function MockInterestCta({ config, cta, report, compact = false }: MockIn
           ? "Thanks — we will notify you"
           : status === "error"
             ? "Try again"
-            : cta.label}
+            : status === "loading"
+              ? "Sending…"
+              : cta.label}
       </button>
+      <p
+        aria-live="polite"
+        className={cx(
+          "mt-3 text-sm",
+          status === "error" ? "text-[#7a2e2e]" : "text-[#2f5d3a]",
+          status === "idle" ? "sr-only" : "",
+        )}
+        role="status"
+      >
+        {liveMessage || "\u00a0"}
+      </p>
     </section>
   );
 }

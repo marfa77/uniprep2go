@@ -2,15 +2,26 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { MockExamConfig, MockQuestion } from "@/lib/mock-exams/types";
+import {
+  canChangeLearnAnswer,
+  learnOptionFeedback,
+  type MockSessionMode,
+} from "@/lib/mock-exams/session-mode";
 import { formulaBelongsOnFront } from "@/lib/mock-exams/formula-placement";
 import { FormulaBlock } from "./formula-block";
 import { MathContent } from "./math-content";
 import { QuestionContent } from "./question-content";
 import { trackMockEvent } from "./mock-analytics";
+import {
+  formatMockClock,
+  MockSessionChrome,
+  MockStickyToolbar,
+} from "./mock-session-chrome";
 
 type MockRunnerProps = {
   config: MockExamConfig;
   questions: MockQuestion[];
+  mode?: MockSessionMode;
   onComplete: (input: {
     answers: Record<string, string>;
     elapsedSeconds: number;
@@ -19,15 +30,36 @@ type MockRunnerProps = {
   onExit: () => void;
 };
 
-function formatClock(totalSeconds: number) {
-  const minutes = Math.floor(totalSeconds / 60);
-  const seconds = totalSeconds % 60;
-  return `${minutes}:${seconds.toString().padStart(2, "0")}`;
+function learnOptionClass(tone: ReturnType<typeof learnOptionFeedback>, selected: boolean) {
+  switch (tone) {
+    case "correct":
+      return "border-[#2f5d3a] bg-[#e7f3ea] text-[#1f3d28]";
+    case "incorrect":
+      return "border-[#7a2e2e] bg-[#fff0f0] text-[#5c2222]";
+    default:
+      return selected
+        ? "border-[#1f3a5f] bg-[#1f3a5f]/5 text-[#18140f]"
+        : "border-[#18140f]/10 bg-[#f7f3ea] hover:border-[#18140f]/25";
+  }
 }
 
-export function MockRunner({ config, questions, onComplete, onExit }: MockRunnerProps) {
+function learnOptionPrefix(tone: ReturnType<typeof learnOptionFeedback>) {
+  if (tone === "correct") return "Correct · ";
+  if (tone === "incorrect") return "Your answer · ";
+  return "";
+}
+
+export function MockRunner({
+  config,
+  questions,
+  mode = "exam",
+  onComplete,
+  onExit,
+}: MockRunnerProps) {
+  const isLearn = mode === "learn";
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [revealedByQuestion, setRevealedByQuestion] = useState<Record<string, boolean>>({});
   const [reviewMode, setReviewMode] = useState(false);
   const [confirmSubmit, setConfirmSubmit] = useState(false);
   const [startedAt] = useState(() => new Date().toISOString());
@@ -38,8 +70,19 @@ export function MockRunner({ config, questions, onComplete, onExit }: MockRunner
   const currentQuestion = questions[currentIndex];
   const topicLabel =
     config.topics.find((topic) => topic.id === currentQuestion?.topicId)?.label ?? "Topic";
+  const currentRevealed = currentQuestion
+    ? Boolean(revealedByQuestion[currentQuestion.id])
+    : false;
+  const selectedOptionId = currentQuestion ? (answers[currentQuestion.id] ?? null) : null;
 
   useEffect(() => {
+    if (isLearn) {
+      const timer = window.setInterval(() => {
+        setElapsedSeconds((value) => value + 1);
+      }, 1000);
+      return () => window.clearInterval(timer);
+    }
+
     const timer = window.setInterval(() => {
       setElapsedSeconds((value) => {
         const nextValue = Math.min(durationSeconds, value + 1);
@@ -52,7 +95,7 @@ export function MockRunner({ config, questions, onComplete, onExit }: MockRunner
     }, 1000);
 
     return () => window.clearInterval(timer);
-  }, [answers, durationSeconds, onComplete, startedAt]);
+  }, [answers, durationSeconds, isLearn, onComplete, startedAt]);
 
   const answeredCount = useMemo(
     () => questions.filter((question) => answers[question.id]).length,
@@ -64,16 +107,27 @@ export function MockRunner({ config, questions, onComplete, onExit }: MockRunner
       return;
     }
 
+    if (isLearn && !canChangeLearnAnswer(currentRevealed)) {
+      return;
+    }
+
     setAnswers((previous) => ({
       ...previous,
       [currentQuestion.id]: optionId,
     }));
 
+    if (isLearn) {
+      setRevealedByQuestion((previous) => ({
+        ...previous,
+        [currentQuestion.id]: true,
+      }));
+    }
+
     trackMockEvent({
       name: "mock_question_answered",
       deckSlug: config.linkedDeckSlug,
       mockSlug: config.slug,
-      source: `mock:${config.slug}:q:${currentQuestion.id}`,
+      source: `mock:${config.slug}:${mode}:q:${currentQuestion.id}`,
     });
   }
 
@@ -85,14 +139,24 @@ export function MockRunner({ config, questions, onComplete, onExit }: MockRunner
     onComplete({ answers, elapsedSeconds, startedAt });
   }
 
-  if (reviewMode) {
+  function goNextOrFinish() {
+    if (currentIndex >= questions.length - 1) {
+      submitExam();
+      return;
+    }
+    setCurrentIndex((value) => Math.min(questions.length - 1, value + 1));
+    window.requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "smooth" }));
+  }
+
+  if (reviewMode && !isLearn) {
     return (
       <div className="mx-auto max-w-4xl px-6 py-8 sm:px-10">
         <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 sm:p-8">
-          <h2 className="text-2xl font-semibold tracking-tight">Review before submit</h2>
+          <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#1f3a5f]">Exam · review</p>
+          <h2 className="mt-2 text-2xl font-semibold tracking-tight">Review before submit</h2>
           <p className="mt-3 text-sm leading-7 text-[#4f493e]">
-            {answeredCount} of {questions.length} answered · elapsed {formatClock(elapsedSeconds)} · target{" "}
-            {formatClock(durationSeconds)}
+            {answeredCount} of {questions.length} answered · elapsed {formatMockClock(elapsedSeconds)} · target{" "}
+            {formatMockClock(durationSeconds)}
           </p>
           {elapsedSeconds >= durationSeconds ? (
             <p className="mt-3 rounded-2xl border border-[#7a2e2e]/20 bg-[#fff0f0] p-3 text-sm leading-7 text-[#7a2e2e]">
@@ -108,7 +172,7 @@ export function MockRunner({ config, questions, onComplete, onExit }: MockRunner
               return (
                 <button
                   key={question.id}
-                  className="flex w-full items-start justify-between gap-4 px-4 py-4 text-left transition hover:bg-[#f7f3ea]"
+                  className="flex min-h-14 w-full items-start justify-between gap-4 px-4 py-4 text-left transition hover:bg-[#f7f3ea] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[#1f3a5f]"
                   onClick={() => {
                     setCurrentIndex(index);
                     setReviewMode(false);
@@ -139,14 +203,14 @@ export function MockRunner({ config, questions, onComplete, onExit }: MockRunner
           </div>
           <div className="mt-6 flex flex-wrap gap-3">
             <button
-              className="rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
+              className="inline-flex min-h-12 flex-1 items-center justify-center rounded-full bg-[#18140f] px-6 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] sm:flex-none"
               onClick={() => setConfirmSubmit(true)}
               type="button"
             >
               Submit mock
             </button>
             <button
-              className="rounded-full border border-[#18140f]/20 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f]"
+              className="inline-flex min-h-12 items-center rounded-full border border-[#18140f]/20 px-6 text-sm font-semibold transition hover:border-[#18140f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f]"
               onClick={() => setReviewMode(false)}
               type="button"
             >
@@ -157,22 +221,26 @@ export function MockRunner({ config, questions, onComplete, onExit }: MockRunner
 
         {confirmSubmit ? (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#18140f]/40 p-6">
-            <div className="max-w-md rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 shadow-xl">
+            <div
+              aria-modal="true"
+              className="w-full max-w-md rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 shadow-xl"
+              role="dialog"
+            >
               <h3 className="text-xl font-semibold">Submit this attempt?</h3>
               <p className="mt-3 text-sm leading-7 text-[#4f493e]">
                 You answered {answeredCount} of {questions.length}. The readiness report will score all
                 questions, including blanks.
               </p>
-              <div className="mt-6 flex gap-3">
+              <div className="mt-6 flex flex-col gap-2 sm:flex-row">
                 <button
-                  className="rounded-full bg-[#18140f] px-5 py-2.5 text-sm font-semibold text-[#fffaf0]"
+                  className="inline-flex min-h-12 flex-1 items-center justify-center rounded-full bg-[#18140f] px-5 text-sm font-semibold text-[#fffaf0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f]"
                   onClick={submitExam}
                   type="button"
                 >
                   Confirm submit
                 </button>
                 <button
-                  className="rounded-full border border-[#18140f]/20 px-5 py-2.5 text-sm font-semibold"
+                  className="inline-flex min-h-12 flex-1 items-center justify-center rounded-full border border-[#18140f]/20 px-5 text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f]"
                   onClick={() => setConfirmSubmit(false)}
                   type="button"
                 >
@@ -190,28 +258,27 @@ export function MockRunner({ config, questions, onComplete, onExit }: MockRunner
     return null;
   }
 
+  const distractorExplanation =
+    isLearn && currentRevealed && selectedOptionId && selectedOptionId !== currentQuestion.correctOptionId
+      ? (currentQuestion.distractorExplanations[selectedOptionId] ?? null)
+      : null;
+  const isCorrect =
+    isLearn && currentRevealed && selectedOptionId === currentQuestion.correctOptionId;
+
   return (
-    <div className="mx-auto max-w-4xl px-6 py-8 sm:px-10">
-      <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
-        <div>
-          <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">{config.shortTitle}</p>
-          <p className="mt-2 text-sm text-[#5f5749]">
-            Question {currentIndex + 1} of {questions.length} · {topicLabel}
-          </p>
-        </div>
-        <div className="rounded-full border border-[#18140f]/15 bg-[#fffaf0] px-4 py-2 font-mono text-sm">
-          {formatClock(elapsedSeconds)} / {formatClock(durationSeconds)}
-        </div>
-      </div>
+    <div className="mx-auto max-w-4xl px-6 pb-4 pt-2 sm:px-10">
+      <MockSessionChrome
+        answeredCount={answeredCount}
+        durationSeconds={durationSeconds}
+        elapsedSeconds={elapsedSeconds}
+        mode={mode}
+        questionCount={questions.length}
+        questionIndex={currentIndex}
+        shortTitle={config.shortTitle}
+        topicLabel={topicLabel}
+      />
 
-      <div className="h-2 overflow-hidden rounded-full bg-[#18140f]/10">
-        <div
-          className="h-full bg-[#1f3a5f] transition-all"
-          style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}
-        />
-      </div>
-
-      <div className="mt-8 rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 sm:p-8">
+      <div className="mt-6 rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 sm:p-8">
         <div className="text-xl font-semibold leading-8 text-[#18140f]">
           <QuestionContent text={currentQuestion.prompt} />
         </div>
@@ -220,65 +287,99 @@ export function MockRunner({ config, questions, onComplete, onExit }: MockRunner
             <FormulaBlock text={currentQuestion.formula!} />
           </div>
         ) : null}
-        <div className="mt-6 space-y-3">
+        <div
+          aria-label="Answer choices"
+          className="mt-6 space-y-3"
+          role="radiogroup"
+        >
           {currentQuestion.options.map((option) => {
-            const selected = answers[currentQuestion.id] === option.id;
+            const selected = selectedOptionId === option.id;
+            const tone = isLearn
+              ? learnOptionFeedback({
+                  optionId: option.id,
+                  correctOptionId: currentQuestion.correctOptionId,
+                  selectedOptionId,
+                  revealed: currentRevealed,
+                })
+              : "neutral";
+            const prefix = isLearn && currentRevealed ? learnOptionPrefix(tone) : "";
 
             return (
               <button
                 key={option.id}
-                className={`w-full rounded-2xl border px-4 py-4 text-left text-sm leading-7 transition ${
-                  selected
-                    ? "border-[#1f3a5f] bg-[#1f3a5f]/5 text-[#18140f]"
-                    : "border-[#18140f]/10 bg-[#f7f3ea] hover:border-[#18140f]/25"
-                }`}
+                aria-checked={selected}
+                className={`flex min-h-12 w-full items-start rounded-2xl border px-4 py-4 text-left text-sm leading-7 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] ${
+                  isLearn
+                    ? learnOptionClass(tone, selected)
+                    : selected
+                      ? "border-[#1f3a5f] bg-[#1f3a5f]/5 text-[#18140f]"
+                      : "border-[#18140f]/10 bg-[#f7f3ea] hover:border-[#18140f]/25"
+                } ${isLearn && currentRevealed ? "cursor-default" : ""}`}
+                disabled={isLearn && currentRevealed}
                 onClick={() => selectAnswer(option.id)}
+                role="radio"
                 type="button"
               >
-                <span className="mr-3 font-semibold uppercase">{option.id}.</span>
-                <MathContent text={option.text} />
+                <span className="mr-3 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-current/20 text-xs font-bold uppercase">
+                  {option.id}
+                </span>
+                <span>
+                  {prefix ? <span className="font-semibold">{prefix}</span> : null}
+                  <MathContent text={option.text} />
+                </span>
               </button>
             );
           })}
         </div>
+
+        {isLearn && currentRevealed ? (
+          <div
+            aria-live="polite"
+            className={`mt-6 rounded-2xl border p-4 text-sm leading-7 ${
+              isCorrect
+                ? "border-[#2f5d3a]/30 bg-[#e7f3ea] text-[#1f3d28]"
+                : "border-[#7a2e2e]/25 bg-[#fff0f0] text-[#5c2222]"
+            }`}
+            role="status"
+          >
+            <p className="font-semibold">{isCorrect ? "Correct" : "Incorrect"}</p>
+            <p className="mt-2 text-[#4f493e]">
+              <MathContent text={currentQuestion.explanation} />
+            </p>
+            {distractorExplanation ? (
+              <p className="mt-2 text-[#5f5749]">Why your choice was wrong: {distractorExplanation}</p>
+            ) : null}
+          </div>
+        ) : null}
       </div>
 
-      <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
-        <div className="flex gap-3">
-          <button
-            className="rounded-full border border-[#18140f]/20 px-5 py-2.5 text-sm font-semibold disabled:opacity-40"
-            disabled={currentIndex === 0}
-            onClick={() => setCurrentIndex((value) => Math.max(0, value - 1))}
-            type="button"
-          >
-            Previous
-          </button>
-          <button
-            className="rounded-full border border-[#18140f]/20 px-5 py-2.5 text-sm font-semibold disabled:opacity-40"
-            disabled={currentIndex >= questions.length - 1}
-            onClick={() => setCurrentIndex((value) => Math.min(questions.length - 1, value + 1))}
-            type="button"
-          >
-            Next
-          </button>
-        </div>
-        <div className="flex gap-3">
-          <button
-            className="rounded-full border border-[#18140f]/20 px-5 py-2.5 text-sm font-semibold"
-            onClick={onExit}
-            type="button"
-          >
-            Exit
-          </button>
-          <button
-            className="rounded-full bg-[#18140f] px-5 py-2.5 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
-            onClick={() => setReviewMode(true)}
-            type="button"
-          >
-            Review & submit
-          </button>
-        </div>
-      </div>
+      <MockStickyToolbar
+        onExit={onExit}
+        onNext={
+          isLearn
+            ? undefined
+            : () => setCurrentIndex((value) => Math.min(questions.length - 1, value + 1))
+        }
+        nextDisabled={!isLearn && currentIndex >= questions.length - 1}
+        onPrevious={() => setCurrentIndex((value) => Math.max(0, value - 1))}
+        previousDisabled={currentIndex === 0}
+        primaryDisabled={isLearn ? !currentRevealed : false}
+        primaryLabel={
+          isLearn
+            ? currentIndex >= questions.length - 1
+              ? "See report"
+              : "Next"
+            : "Review & submit"
+        }
+        onPrimary={
+          isLearn
+            ? goNextOrFinish
+            : () => {
+                setReviewMode(true);
+                window.requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "smooth" }));
+              }
+        }
+      />
     </div>
   );
 }

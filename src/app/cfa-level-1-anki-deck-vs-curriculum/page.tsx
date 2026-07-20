@@ -5,6 +5,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import { primaryDeck } from "@/lib/decks";
+import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
 const directAnswer =
   "The CFA Level 1 Anki deck and the official CFA curriculum serve different roles. The deck is a 342+ card spaced-repetition tool for fast recall of formulas, definitions, and concepts. The official curriculum is the authoritative source for full learning and exam-standard practice. Use the deck alongside the curriculum, not as a replacement for it.";
@@ -31,7 +32,7 @@ export default async function ComparisonPage() {
     <main className="min-h-screen bg-[#f7f3ea] text-[#18140f]">
       <SiteHeader />
 
-      <article className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12">
+      <article id="main-content" tabIndex={-1} className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12">
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Comparison</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
           CFA Level 1 Anki deck vs the official curriculum
@@ -62,7 +63,7 @@ export default async function ComparisonPage() {
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <TrackedCheckoutLink
-            className="inline-flex items-center justify-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+            className={btnPrimary}
             deckSlug={deck.slug}
             href={deck.checkoutUrl}
             source="comparison_page_cta"
@@ -70,7 +71,7 @@ export default async function ComparisonPage() {
             Buy the deck — {priceLabel}
           </TrackedCheckoutLink>
           <Link
-            className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+            className={btnSecondary}
             href={`/decks/${deck.slug}`}
           >
             View deck details

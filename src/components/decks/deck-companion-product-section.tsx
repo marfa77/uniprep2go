@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { CatalogAvailableDeck } from "@/lib/decks";
 import type { PricedDeck } from "@/lib/checkout-pricing";
 import { formatDeckPriceLabel } from "@/lib/checkout-pricing";
+import { btnSecondary } from "@/lib/ui-button-classes";
 
 type DeckCompanionProductSectionProps = {
   deck: CatalogAvailableDeck;
@@ -23,7 +24,7 @@ export function DeckCompanionProductSection({
       <p className="mt-2 text-sm leading-7 text-[#4f493e]">{companion.subtitle}</p>
       <div className="mt-4 flex flex-wrap items-center gap-3">
         <Link
-          className="inline-flex rounded-full border border-[#18140f]/20 bg-[#fffaf0] px-5 py-2.5 text-sm font-semibold text-[#18140f] transition hover:border-[#1f3a5f]"
+          className={btnSecondary}
           href={`/decks/${companion.slug}`}
         >
           {companion.format === "PDF" && companion.slug.includes("formula")

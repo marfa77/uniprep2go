@@ -17,6 +17,7 @@ import { getMockExamConfig } from "@/lib/mock-exams/configs";
 import { finalize, leafPageTitle } from "@/lib/seo";
 import { buildSocialMetadata } from "@/lib/social-metadata";
 import { absoluteUrl, siteConfig } from "@/lib/site";
+import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
 const directAnswer =
   "UniPrep2Go publishes 15 building, safety, sustainability, admissions, and project-management certification pathways — each with a free timed readiness check and a linked Anki flashcard deck. Clusters include EPA 608 + BMS (HVAC), LEED GA → LEED AP BD+C → WELL AP, MRICS APC + Quantity Surveying, NEBOSH + CFPS, CDCP data centre, CEM energy, ASHRAE, GMAT Focus, Digital SAT, and PMP.";
@@ -112,7 +113,11 @@ export default async function BuildingCertificationHubPage() {
       />
       <SiteHeader />
 
-      <article className="mx-auto w-full max-w-6xl px-6 py-12 sm:px-10 lg:px-12">
+      <article
+        className="mx-auto w-full max-w-6xl px-6 py-12 sm:px-10 lg:px-12"
+        id="main-content"
+        tabIndex={-1}
+      >
         <LlmFactsStrip
           hubName="building certification hub"
           hubPath={`/${BUILDING_CERTIFICATION_HUB_SLUG}`}
@@ -127,16 +132,10 @@ export default async function BuildingCertificationHubPage() {
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#4f493e]">{directAnswer}</p>
         <div className="mt-6 flex flex-wrap gap-3">
-          <Link
-            className="inline-flex rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
-            href="/mock-exams"
-          >
+          <Link className={btnPrimary} href="/mock-exams">
             All practice tests
           </Link>
-          <Link
-            className="inline-flex rounded-full border border-[#18140f]/20 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f]"
-            href="/#catalog-professional"
-          >
+          <Link className={btnSecondary} href="/#catalog-professional">
             Professional deck catalog
           </Link>
         </div>

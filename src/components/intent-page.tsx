@@ -6,6 +6,7 @@ import { formatDeckContentLabel } from "@/lib/decks";
 import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import { getIntentPageDecks, getIntentPagePrimaryDeck, type IntentPage } from "@/lib/intent-pages";
 import { absoluteUrl, siteConfig } from "@/lib/site";
+import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
 export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
   const catalogDecks = getIntentPageDecks(page);
@@ -73,7 +74,11 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
       />
       <SiteHeader />
 
-      <article className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12">
+      <article
+        className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12"
+        id="main-content"
+        tabIndex={-1}
+      >
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
           {page.eyebrow}
         </p>
@@ -86,17 +91,14 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <TrackedCheckoutLink
-            className="inline-flex items-center justify-center rounded-full bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
+            className={btnPrimary}
             deckSlug={primaryDeck.slug}
             href={primaryDeck.checkoutUrl}
             source={`${page.slug}_cta`}
           >
             Buy {primaryDeck.shortName} — {formatDeckPriceLabel(primaryDeck)}
           </TrackedCheckoutLink>
-          <Link
-            className="inline-flex items-center justify-center rounded-full border border-[#18140f]/25 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f] focus:outline-none focus:ring-2 focus:ring-[#1f3a5f]"
-            href={`/decks/${primaryDeck.slug}`}
-          >
+          <Link className={btnSecondary} href={`/decks/${primaryDeck.slug}`}>
             View deck details
           </Link>
         </div>

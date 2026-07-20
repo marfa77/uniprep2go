@@ -12,6 +12,7 @@ import { withAiMetadata } from "@/lib/llm-meta";
 import { finalize, leafPageTitle } from "@/lib/seo";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { buildCatalogItemListJsonLd } from "@/lib/product-jsonld";
+import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
 export async function generateMetadata(): Promise<Metadata> {
   const title = leafPageTitle("Language Certification Anki Decks | CIPLE, DELF, Dutch A2");
@@ -62,7 +63,11 @@ export default async function LanguageCertificationDecksPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <SiteHeader />
-      <article className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12">
+      <article
+        className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12"
+        id="main-content"
+        tabIndex={-1}
+      >
         <LlmFactsStrip
           hubName="language certification hub"
           hubPath="/language-certification-decks"
@@ -76,6 +81,17 @@ export default async function LanguageCertificationDecksPage() {
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
           European Portuguese, French, Dutch, German, Italian, and more — daily spaced-repetition flashcards for A2–B2 exams and inburgering pathways. Language decks are Anki-only; we do not publish separate timed practice mocks for language certifications.
         </p>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <Link
+            className={btnPrimary}
+            href="/ciple-a2-anki-deck-for-portuguese-citizenship"
+          >
+            CIPLE A2 pathway
+          </Link>
+          <Link className={btnSecondary} href="/decks">
+            Full deck catalog
+          </Link>
+        </div>
 
         <section className="mt-12">
           <h2 className="text-2xl font-semibold">All language decks ({languageDecks.length})</h2>

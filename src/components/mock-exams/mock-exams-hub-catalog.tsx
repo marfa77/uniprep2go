@@ -197,7 +197,7 @@ export function MockExamsHubCatalog({
                 ) : null}
                 <Link
                   aria-label={`${mock.ctaLabel} for ${mock.shortTitle}`}
-                  className="mt-4 inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-4 py-2.5 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#152238]"
+                  className="mt-4 inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-4 py-2.5 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#152238] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
                   href={`/mock-exams/${mock.slug}`}
                 >
                   {mock.ctaLabel}

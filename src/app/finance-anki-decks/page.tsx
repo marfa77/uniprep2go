@@ -13,6 +13,7 @@ import { withAiMetadata } from "@/lib/llm-meta";
 import { finalize, leafPageTitle, shouldIndexMockExam } from "@/lib/seo";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { buildCatalogItemListJsonLd } from "@/lib/product-jsonld";
+import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
 const financeMockSlugs = [
   "sie-full-mock",
@@ -79,7 +80,11 @@ export default async function FinanceAnkiDecksPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <SiteHeader />
-      <article className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12">
+      <article
+        className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12"
+        id="main-content"
+        tabIndex={-1}
+      >
         <LlmFactsStrip
           hubName="finance exam prep hub"
           hubPath="/finance-anki-decks"
@@ -93,6 +98,14 @@ export default async function FinanceAnkiDecksPage() {
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
           CFA, FRM, FINRA, and MBA admissions decks — take the free mock first, then drill weak topics with spaced-repetition flashcards.
         </p>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <Link className={btnPrimary} href="/mock-exams/sie-full-mock">
+            Start free SIE practice test
+          </Link>
+          <Link className={btnSecondary} href="/mock-exams">
+            Browse all mocks
+          </Link>
+        </div>
 
         <section className="mt-10">
           <h2 className="text-2xl font-semibold">Free finance mocks</h2>

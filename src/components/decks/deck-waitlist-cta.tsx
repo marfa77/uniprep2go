@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { btnPrimary, cx } from "@/lib/ui-button-classes";
 
 type DeckWaitlistCtaProps = {
   deckSlug: string;
@@ -10,6 +11,19 @@ type DeckWaitlistCtaProps = {
   compact?: boolean;
 };
 
+function statusMessage(status: "idle" | "loading" | "done" | "error"): string {
+  if (status === "done") {
+    return "Request sent — we will notify you when the deck launches.";
+  }
+  if (status === "error") {
+    return "Something went wrong. Please try again.";
+  }
+  if (status === "loading") {
+    return "Sending your request…";
+  }
+  return "";
+}
+
 export function DeckWaitlistCta({
   deckSlug,
   deckTitle,
@@ -17,6 +31,7 @@ export function DeckWaitlistCta({
   compact = false,
 }: DeckWaitlistCtaProps) {
   const [status, setStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
+  const liveMessage = statusMessage(status);
 
   async function registerInterest() {
     setStatus("loading");
@@ -42,22 +57,32 @@ export function DeckWaitlistCta({
     }
   }
 
+  const buttonLabel =
+    status === "done"
+      ? compact
+        ? "Request sent"
+        : "Thanks — we got your request"
+      : status === "error"
+        ? "Try again"
+        : status === "loading"
+          ? "Sending…"
+          : "Notify me when Anki launches";
+
   if (compact) {
     return (
-      <button
-        className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-6 py-3 text-base font-semibold text-[#fffaf0] transition hover:bg-[#152238] disabled:opacity-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
-        disabled={status === "loading" || status === "done"}
-        onClick={registerInterest}
-        type="button"
-      >
-        {status === "done"
-          ? "Request sent"
-          : status === "error"
-            ? "Try again"
-            : status === "loading"
-              ? "Sending…"
-              : "Notify me when Anki launches"}
-      </button>
+      <span className="inline-flex flex-col gap-1">
+        <button
+          className={btnPrimary}
+          disabled={status === "loading" || status === "done"}
+          onClick={registerInterest}
+          type="button"
+        >
+          {buttonLabel}
+        </button>
+        <span aria-live="polite" className="sr-only" role="status">
+          {liveMessage}
+        </span>
+      </span>
     );
   }
 
@@ -75,19 +100,24 @@ export function DeckWaitlistCta({
         below and we&apos;ll ping the founder when enough people want the deck.
       </p>
       <button
-        className="mt-6 rounded-full bg-[#1f3a5f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#18140f] disabled:opacity-50"
+        className={cx("mt-6", btnPrimary)}
         disabled={status === "loading" || status === "done"}
         onClick={registerInterest}
         type="button"
       >
-        {status === "done"
-          ? "Thanks — we got your request"
-          : status === "error"
-            ? "Try again"
-            : status === "loading"
-              ? "Sending…"
-              : "Notify me when Anki launches"}
+        {buttonLabel}
       </button>
+      <p
+        aria-live="polite"
+        className={cx(
+          "mt-3 text-sm",
+          status === "error" ? "text-[#7a2e2e]" : "text-[#2f5d3a]",
+          status === "idle" ? "sr-only" : "",
+        )}
+        role="status"
+      >
+        {liveMessage || "\u00a0"}
+      </p>
     </section>
   );
 }

@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Deck } from "@/lib/decks";
 import { buildMockSeoTitle } from "@/lib/mock-exams/seo";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
+import { btnPrimary, cx } from "@/lib/ui-button-classes";
 
 type DeckPracticeMockSectionProps = {
   deck: Deck;
@@ -27,7 +28,7 @@ export function DeckPracticeMockSection({
           : `Run the linked ${mock.questionCount}-question timed practice test for topic scoring, answer review, and a pass/no-pass remediation plan before deciding what to drill next.`}
       </p>
       <Link
-        className="mt-4 inline-flex rounded-full bg-[#1f3a5f] px-5 py-2.5 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#152238]"
+        className={cx("mt-4", btnPrimary)}
         href={`/mock-exams/${mock.slug}`}
       >
         Take free {mock.questionCount}-question {deck.shortName} practice test

@@ -1,4 +1,5 @@
 import type { MockExamConfig, MockReport } from "@/lib/mock-exams/types";
+import type { MockSessionMode } from "@/lib/mock-exams/session-mode";
 import { getCatalogDeckBySlug } from "@/lib/decks";
 import { FormulaBlock } from "./formula-block";
 import { MathContent } from "./math-content";
@@ -30,21 +31,40 @@ function topicStatusLabel(status: MockReport["topicResults"][number]["status"]) 
   }
 }
 
+function topicBarTone(status: MockReport["topicResults"][number]["status"]) {
+  switch (status) {
+    case "strong":
+    case "on_track":
+      return "bg-[#1f3a5f]";
+    case "weak":
+      return "bg-[#8a6a1f]";
+    case "critical":
+      return "bg-[#7a2e2e]";
+  }
+}
+
 type MockReportPanelProps = {
   config: MockExamConfig;
   linkedCheckout: LinkedDeckCheckout | null;
   report: MockReport;
+  sessionMode?: MockSessionMode;
 };
 
-export function MockReportPanel({ config, linkedCheckout, report }: MockReportPanelProps) {
+export function MockReportPanel({
+  config,
+  linkedCheckout,
+  report,
+  sessionMode = "exam",
+}: MockReportPanelProps) {
   const linkedDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
   const deckShortName = linkedDeck?.shortName ?? config.linkedDeckSlug.replace(/-/g, " ");
   const shouldRecommendDeck =
     report.verdict === "NO PASS" || report.verdict === "BORDERLINE RISK";
+  const showExamPacing = sessionMode === "exam";
   const repairPlanSection = (
     <section className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 sm:p-8">
       <h3 className="text-2xl font-semibold tracking-tight">Repair plan</h3>
-      <ol className="mt-4 space-y-4">
+      <ol className="mt-5 space-y-4">
         {report.repairPlan.map((item, index) => (
           <li key={item.topicId} className="rounded-2xl border border-[#18140f]/10 bg-[#f7f3ea] p-4">
             <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#1f3a5f]">
@@ -66,7 +86,7 @@ export function MockReportPanel({ config, linkedCheckout, report }: MockReportPa
       </p>
     </section>
   );
-  const pacingSection = (
+  const pacingSection = showExamPacing ? (
     <section className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 sm:p-8">
       <h3 className="text-2xl font-semibold tracking-tight">Pacing</h3>
       <p className="mt-4 text-sm leading-7 text-[#4f493e]">
@@ -75,12 +95,22 @@ export function MockReportPanel({ config, linkedCheckout, report }: MockReportPa
       </p>
       <p className="mt-3 text-sm leading-7 text-[#4f493e]">{report.pacing.pacingNote}</p>
     </section>
+  ) : (
+    <section className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 sm:p-8">
+      <h3 className="text-2xl font-semibold tracking-tight">Session mode</h3>
+      <p className="mt-4 text-sm leading-7 text-[#4f493e]">
+        Learn mode was untimed with instant feedback after each answer. Exam pacing is not scored for this
+        attempt — use Exam mode when you want a timed diagnostic.
+      </p>
+    </section>
   );
 
   return (
     <div className="space-y-8">
       <section className={`rounded-3xl border p-6 sm:p-8 ${verdictStyles(report.verdict)}`}>
-        <p className="font-mono text-xs uppercase tracking-[0.28em]">Readiness verdict</p>
+        <p className="font-mono text-xs uppercase tracking-[0.28em]">
+          {sessionMode === "learn" ? "Learn report" : "Exam report"} · readiness verdict
+        </p>
         <h2 className="mt-3 text-4xl font-semibold tracking-tight">{report.verdict}</h2>
         <p className="mt-4 text-lg font-semibold">
           {report.correctCount}/{report.totalCount} correct · {report.scorePercent}% · threshold{" "}
@@ -109,32 +139,38 @@ export function MockReportPanel({ config, linkedCheckout, report }: MockReportPa
 
       <section className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 sm:p-8">
         <h3 className="text-2xl font-semibold tracking-tight">Topic diagnosis</h3>
-        <div className="mt-6 overflow-x-auto">
-          <table className="min-w-full text-left text-sm">
-            <thead>
-              <tr className="border-b border-[#18140f]/10 text-[#5f5749]">
-                <th className="py-3 pr-4 font-medium">Topic</th>
-                <th className="py-3 pr-4 font-medium">Score</th>
-                <th className="py-3 pr-4 font-medium">Target</th>
-                <th className="py-3 pr-4 font-medium">Weight</th>
-                <th className="py-3 font-medium">Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              {report.topicResults.map((topic) => (
-                <tr key={topic.topicId} className="border-b border-[#18140f]/10">
-                  <td className="py-4 pr-4 align-top text-[#18140f]">{topic.label}</td>
-                  <td className="py-4 pr-4 align-top">
-                    {topic.correct}/{topic.total} ({topic.scorePercent}%)
-                  </td>
-                  <td className="py-4 pr-4 align-top">{topic.targetPercent}%</td>
-                  <td className="py-4 pr-4 align-top">{topic.weightPercent}%</td>
-                  <td className="py-4 align-top font-medium">{topicStatusLabel(topic.status)}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <ul className="mt-6 space-y-5">
+          {report.topicResults.map((topic) => {
+            const scoreWidth = Math.min(100, Math.max(0, topic.scorePercent));
+            const targetWidth = Math.min(100, Math.max(0, topic.targetPercent));
+
+            return (
+              <li key={topic.topicId} className="rounded-2xl border border-[#18140f]/10 bg-[#f7f3ea] p-4">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <p className="font-semibold text-[#18140f]">{topic.label}</p>
+                  <p className="text-sm font-medium text-[#4f493e]">
+                    {topic.correct}/{topic.total} ({topic.scorePercent}%) · {topicStatusLabel(topic.status)}
+                  </p>
+                </div>
+                <div className="relative mt-3 h-2.5 overflow-hidden rounded-full bg-[#18140f]/10">
+                  <div
+                    aria-hidden
+                    className="absolute inset-y-0 w-px bg-[#18140f]/35"
+                    style={{ left: `${targetWidth}%` }}
+                    title={`${topic.targetPercent}% target`}
+                  />
+                  <div
+                    className={`h-full motion-safe:transition-[width] motion-safe:duration-200 ${topicBarTone(topic.status)}`}
+                    style={{ width: `${scoreWidth}%` }}
+                  />
+                </div>
+                <p className="mt-2 text-xs text-[#5f5749]">
+                  Target {topic.targetPercent}% · weight {topic.weightPercent}%
+                </p>
+              </li>
+            );
+          })}
+        </ul>
       </section>
 
       {shouldRecommendDeck ? repairPlanSection : pacingSection}
@@ -148,7 +184,7 @@ export function MockReportPanel({ config, linkedCheckout, report }: MockReportPa
               key={item.questionId}
               className="rounded-2xl border border-[#18140f]/10 bg-[#f7f3ea] p-4"
             >
-              <summary className="cursor-pointer text-sm font-semibold text-[#18140f]">
+              <summary className="cursor-pointer text-sm font-semibold text-[#18140f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f]">
                 Q{index + 1} · {item.topicLabel} · {item.isCorrect ? "Correct" : "Incorrect"}
               </summary>
               <p className="mt-3 text-sm leading-7 text-[#4f493e]">
