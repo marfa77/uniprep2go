@@ -112,7 +112,7 @@ export function MockExamClient({
     setAttemptSeed(seed);
     setReport(null);
     setScreen("exam");
-    scrollToTop();
+    // Runner scrolls itself to the question card — do not jump to page hero.
     trackMockEvent({
       name: "mock_started",
       deckSlug: config.linkedDeckSlug,

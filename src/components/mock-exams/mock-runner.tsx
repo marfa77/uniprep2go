@@ -65,6 +65,7 @@ export function MockRunner({
   const [startedAt] = useState(() => new Date().toISOString());
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
   const submittedRef = useRef(false);
+  const sessionAnchorRef = useRef<HTMLDivElement>(null);
 
   const durationSeconds = config.durationMinutes * 60;
   const currentQuestion = questions[currentIndex];
@@ -74,6 +75,23 @@ export function MockRunner({
     ? Boolean(revealedByQuestion[currentQuestion.id])
     : false;
   const selectedOptionId = currentQuestion ? (answers[currentQuestion.id] ?? null) : null;
+
+  function scrollSessionIntoView() {
+    const node = sessionAnchorRef.current;
+    if (!node) {
+      return;
+    }
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    node.scrollIntoView({
+      behavior: reduceMotion ? "auto" : "smooth",
+      block: "start",
+    });
+  }
+
+  // Keep the question card in view — never jump to the page hero above the runner.
+  useEffect(() => {
+    scrollSessionIntoView();
+  }, [currentIndex, reviewMode]);
 
   useEffect(() => {
     if (isLearn) {
@@ -145,12 +163,11 @@ export function MockRunner({
       return;
     }
     setCurrentIndex((value) => Math.min(questions.length - 1, value + 1));
-    window.requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "smooth" }));
   }
 
   if (reviewMode && !isLearn) {
     return (
-      <div className="mx-auto max-w-4xl px-6 py-8 sm:px-10">
+      <div ref={sessionAnchorRef} className="mx-auto max-w-4xl px-6 py-8 sm:px-10">
         <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 sm:p-8">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#1f3a5f]">Exam · review</p>
           <h2 className="mt-2 text-2xl font-semibold tracking-tight">Review before submit</h2>
@@ -176,7 +193,6 @@ export function MockRunner({
                   onClick={() => {
                     setCurrentIndex(index);
                     setReviewMode(false);
-                    window.requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "smooth" }));
                   }}
                   type="button"
                 >
@@ -266,7 +282,7 @@ export function MockRunner({
     isLearn && currentRevealed && selectedOptionId === currentQuestion.correctOptionId;
 
   return (
-    <div className="mx-auto max-w-4xl px-6 pb-4 pt-2 sm:px-10">
+    <div ref={sessionAnchorRef} className="mx-auto max-w-4xl scroll-mt-4 px-6 pb-4 pt-2 sm:px-10">
       <MockSessionChrome
         answeredCount={answeredCount}
         durationSeconds={durationSeconds}
@@ -371,14 +387,7 @@ export function MockRunner({
               : "Next"
             : "Review & submit"
         }
-        onPrimary={
-          isLearn
-            ? goNextOrFinish
-            : () => {
-                setReviewMode(true);
-                window.requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "smooth" }));
-              }
-        }
+        onPrimary={isLearn ? goNextOrFinish : () => setReviewMode(true)}
       />
     </div>
   );
