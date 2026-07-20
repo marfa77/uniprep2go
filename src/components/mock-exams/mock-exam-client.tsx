@@ -18,7 +18,7 @@ import { MockRunner } from "./mock-runner";
 import { trackMockEvent } from "./mock-analytics";
 import { useEffect, useMemo, useState } from "react";
 
-type Screen = "landing" | "instructions" | "exam" | "results";
+type Screen = "landing" | "exam" | "results";
 
 type MockExamClientProps = {
   config: MockExamConfig;
@@ -87,7 +87,7 @@ export function MockExamClient({
     setSessionMode("learn");
     setAttemptSeed(seed);
     setReport(null);
-    setScreen("instructions");
+    setScreen("exam");
     trackMockEvent({
       name: "mock_started",
       deckSlug: config.linkedDeckSlug,
@@ -111,7 +111,7 @@ export function MockExamClient({
     setSelectedMode(mode);
     setAttemptSeed(seed);
     setReport(null);
-    setScreen("instructions");
+    setScreen("exam");
     scrollToTop();
     trackMockEvent({
       name: "mock_started",
@@ -119,11 +119,6 @@ export function MockExamClient({
       mockSlug: config.slug,
       source: `mock:${config.slug}:start:${mode}`,
     });
-  }
-
-  function beginExam() {
-    setScreen("exam");
-    scrollToTop();
   }
 
   function exitExam() {
@@ -253,10 +248,9 @@ export function MockExamClient({
     );
   }
 
-  const landingMode = screen === "instructions" ? sessionMode : selectedMode;
-  const brief = landingMode === "learn" ? learnBrief : examBrief;
+  const brief = selectedMode === "learn" ? learnBrief : examBrief;
   const timingLabel =
-    landingMode === "learn" ? "Untimed · instant feedback" : formatDuration(config.durationMinutes);
+    selectedMode === "learn" ? "Untimed · instant feedback" : formatDuration(config.durationMinutes);
 
   return (
     <div className="mt-8 space-y-6">
@@ -274,7 +268,7 @@ export function MockExamClient({
           </div>
           <div>
             <dt className="font-mono text-xs uppercase tracking-[0.2em] text-[#1f3a5f]">
-              {landingMode === "learn" ? "Learn mode" : "Timing"}
+              {selectedMode === "learn" ? "Learn mode" : "Timing"}
             </dt>
             <dd className="mt-1 text-lg font-semibold">{timingLabel}</dd>
           </div>
@@ -284,29 +278,7 @@ export function MockExamClient({
           </div>
         </dl>
 
-        {screen === "instructions" ? (
-          <div className="mt-5 border-t border-[#18140f]/10 pt-5">
-            <p className="text-sm font-semibold text-[#18140f]">
-              {sessionMode === "learn" ? "Before you start Learn mode" : "Before you start Exam mode"}
-            </p>
-            <ul className="mt-3 space-y-2 text-sm leading-7 text-[#4f493e]">
-              {brief.map((item) => (
-                <li key={item} className="flex gap-2">
-                  <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#1f3a5f]" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-            <button
-              className="mt-5 inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#18140f] px-6 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] sm:w-auto"
-              onClick={beginExam}
-              type="button"
-            >
-              {sessionMode === "learn" ? "Begin learn mode" : "Begin timed exam"}
-            </button>
-          </div>
-        ) : (
-          <div className="mt-5 border-t border-[#18140f]/10 pt-5">
+        <div className="mt-5 border-t border-[#18140f]/10 pt-5">
             {runnable ? (
               <div className="space-y-4">
                 <div
@@ -377,8 +349,7 @@ export function MockExamClient({
                 Question bank loading — check back soon
               </p>
             )}
-          </div>
-        )}
+        </div>
 
         <details className="group mt-4">
           <summary className="cursor-pointer list-none text-sm font-medium text-[#1f3a5f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] [&::-webkit-details-marker]:hidden">
