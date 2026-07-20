@@ -1,0 +1,1131 @@
+#!/usr/bin/env python3
+"""Per-state license-law topics for Wave 4 RE mocks (15 unique stems per state)."""
+
+from __future__ import annotations
+
+import hashlib
+from _common import pack
+
+STATES: list[tuple[str, str, str, str]] = [
+    ("al-real-estate", "Alabama", "Alabama Real Estate Commission", "al-license-law"),
+    ("ak-real-estate", "Alaska", "Alaska Real Estate Commission", "ak-license-law"),
+    ("ar-real-estate", "Arkansas", "Arkansas Real Estate Commission", "ar-license-law"),
+    ("ct-real-estate", "Connecticut", "Connecticut Real Estate Commission", "ct-license-law"),
+    ("de-real-estate", "Delaware", "Delaware Real Estate Commission", "de-license-law"),
+    ("hi-real-estate", "Hawaii", "Hawaii Real Estate Commission", "hi-license-law"),
+    ("id-real-estate", "Idaho", "Idaho Real Estate Commission", "id-license-law"),
+    ("in-real-estate", "Indiana", "Indiana Real Estate Commission", "in-license-law"),
+    ("ia-real-estate", "Iowa", "Iowa Real Estate Commission", "ia-license-law"),
+    ("ks-real-estate", "Kansas", "Kansas Real Estate Commission", "ks-license-law"),
+    ("ky-real-estate", "Kentucky", "Kentucky Real Estate Commission", "ky-license-law"),
+    ("la-real-estate", "Louisiana", "Louisiana Real Estate Commission", "la-license-law"),
+    ("me-real-estate", "Maine", "Maine Real Estate Commission", "me-license-law"),
+    ("md-real-estate", "Maryland", "Maryland Real Estate Commission", "md-license-law"),
+    ("mn-real-estate", "Minnesota", "Minnesota Commerce Department", "mn-license-law"),
+    ("ms-real-estate", "Mississippi", "Mississippi Real Estate Commission", "ms-license-law"),
+    ("mo-real-estate", "Missouri", "Missouri Real Estate Commission", "mo-license-law"),
+    ("mt-real-estate", "Montana", "Montana Board of Realty Regulation", "mt-license-law"),
+    ("ne-real-estate", "Nebraska", "Nebraska Real Estate Commission", "ne-license-law"),
+    ("nv-real-estate", "Nevada", "Nevada Real Estate Division", "nv-license-law"),
+    ("nh-real-estate", "New Hampshire", "New Hampshire Real Estate Commission", "nh-license-law"),
+    ("nm-real-estate", "New Mexico", "New Mexico Real Estate Commission", "nm-license-law"),
+    ("nd-real-estate", "North Dakota", "North Dakota Real Estate Commission", "nd-license-law"),
+    ("ok-real-estate", "Oklahoma", "Oklahoma Real Estate Commission", "ok-license-law"),
+    ("or-real-estate", "Oregon", "Oregon Real Estate Agency", "or-license-law"),
+    ("ri-real-estate", "Rhode Island", "Rhode Island Real Estate Commission", "ri-license-law"),
+    ("sc-real-estate", "South Carolina", "South Carolina Real Estate Commission", "sc-license-law"),
+    ("sd-real-estate", "South Dakota", "South Dakota Real Estate Commission", "sd-license-law"),
+    ("tn-real-estate", "Tennessee", "Tennessee Real Estate Commission", "tn-license-law"),
+    ("ut-real-estate", "Utah", "Utah Division of Real Estate", "ut-license-law"),
+    ("vt-real-estate", "Vermont", "Vermont Real Estate Commission", "vt-license-law"),
+    ("wv-real-estate", "West Virginia", "West Virginia Real Estate Commission", "wv-license-law"),
+    ("wi-real-estate", "Wisconsin", "Wisconsin Real Estate Examining Board", "wi-license-law"),
+    ("wy-real-estate", "Wyoming", "Wyoming Real Estate Commission", "wy-license-law"),
+]
+
+
+def _pool(state: str, commission: str) -> list[tuple]:
+    """60+ concrete state-law stems parameterized by state/commission."""
+    s, c = state, commission
+    return [
+        (
+            f"In {s}, which entity most directly regulates real estate licensees and brokerage practice?",
+            {
+                "a": c,
+                "b": "The Federal Reserve Board exclusively",
+                "c": "The U.S. Postal Service",
+                "d": "Local school boards only",
+            },
+            "a",
+            f"{c} (or its statutory successor/agency structure) oversees licensing and discipline for {s} real estate practice.",
+            {
+                "b": "The Fed sets monetary policy, not RE licenses.",
+                "c": "Postal Service is unrelated.",
+                "d": "School boards do not license brokers.",
+            },
+            "easy",
+        ),
+        (
+            f"A {s} sales associate generally may practice real estate only when:",
+            {
+                "a": "Properly licensed and affiliated with a supervising broker as required",
+                "b": "Working alone without any broker affiliation in every case",
+                "c": "Licensed only as a mortgage lender",
+                "d": "Unlicensed but recommended by a friend",
+            },
+            "a",
+            f"{s} rules typically require affiliation/supervision under a broker for associate-level licensees.",
+            {
+                "b": "Independent brokerage usually requires a broker license.",
+                "c": "Lender licenses are separate.",
+                "d": "Unlicensed practice is prohibited.",
+            },
+            "easy",
+        ),
+        (
+            f"Commingling of trust funds by a {s} broker typically means:",
+            {
+                "a": "Depositing earnest money into a compliant trust/escrow account",
+                "b": "Mixing client trust money with personal or operating funds improperly",
+                "c": "Keeping accurate escrow ledgers",
+                "d": "Disbursing funds under a written release",
+            },
+            "b",
+            "Commingling is improper mixing of trust and personal/operating money and is a serious violation.",
+            {
+                "a": "Proper trust deposits are required.",
+                "c": "Good records are compliance.",
+                "d": "Proper disbursement is allowed.",
+            },
+            "easy",
+        ),
+        (
+            f"False or misleading advertising by a {s} licensee can result in:",
+            {
+                "a": f"Disciplinary action by {c}",
+                "b": "Automatic immunity forever",
+                "c": "A required bonus commission from the state",
+                "d": "Exemption from all license laws",
+            },
+            "a",
+            f"{c} can discipline licensees for deceptive ads.",
+            {
+                "b": "No immunity.",
+                "c": "States do not pay bonus commissions for violations.",
+                "d": "License laws still apply.",
+            },
+            "easy",
+        ),
+        (
+            f"Before a person may engage in activities requiring a {s} real estate license, they generally must:",
+            {
+                "a": "Complete required education and obtain the license (and any sponsorship) under {c} rules",
+                "b": "Only post on social media",
+                "c": "Pay a federal securities registration fee only",
+                "d": "Own five rentals personally",
+            },
+            "a",
+            f"Education, examination, and licensing under {c} are the usual gatekeepers.",
+            {
+                "b": "Advertising alone does not license you.",
+                "c": "Securities registration is different.",
+                "d": "Ownership is not a license substitute.",
+            },
+            "easy",
+        ),
+        (
+            f"Trust/escrow funds received by a {s} brokerage should typically be:",
+            {
+                "a": "Deposited into a properly designated trust/escrow account within required timelines",
+                "b": "Kept indefinitely in the agent's personal wallet",
+                "c": "Used to pay the broker's office rent immediately",
+                "d": "Invested in the broker's personal stock account",
+            },
+            "a",
+            "Timely deposit to a trust account is a core compliance duty.",
+            {
+                "b": "Personal custody is improper.",
+                "c": "Using trust money for operations is conversion risk.",
+                "d": "Personal investment of trust funds is prohibited.",
+            },
+            "medium",
+        ),
+        (
+            f"If a {s} listing broker and a selling broker dispute a commission, the dispute is primarily:",
+            {
+                "a": "A civil/contract matter between the brokers (or via MLS/association processes), not a reason to withhold a buyer's earnest money unlawfully",
+                "b": "Resolved by keeping the buyer's deposit as a fine automatically",
+                "c": "Decided by the postal inspector",
+                "d": "Ignored because commissions are illegal in {s}",
+            },
+            "a",
+            "Commission disputes are between licensees/firms; earnest money still follows contract/escrow rules.",
+            {
+                "b": "Buyer deposits are not automatic fines.",
+                "c": "Wrong forum.",
+                "d": "Commissions are lawful when disclosed/agreed.",
+            },
+            "medium",
+        ),
+        (
+            f"Unlicensed assistants in {s} generally may NOT:",
+            {
+                "a": "Independently show properties and negotiate offers as if licensed",
+                "b": "Schedule appointments under broker supervision where allowed",
+                "c": "Place approved yard signs per brokerage policy",
+                "d": "Deliver documents as instructed",
+            },
+            "a",
+            "Activities requiring a license—showing/negotiating—cannot be delegated to unlicensed persons.",
+            {
+                "b": "Administrative scheduling is often allowed.",
+                "c": "Clerical placement may be allowed.",
+                "d": "Courier tasks are typically fine.",
+            },
+            "medium",
+        ),
+        (
+            f"A {s} broker's place of business typically must:",
+            {
+                "a": "Meet statutory office/registration requirements under {c} rules",
+                "b": "Be only an anonymous P.O. box with no required presence when an office is mandated",
+                "c": "Be located outside the United States always",
+                "d": "Have no identifying sign when a sign is required",
+            },
+            "a",
+            f"Brokerages must maintain a compliant registered office under {c}.",
+            {
+                "b": "P.O. box alone is often insufficient.",
+                "c": "Practice contemplates proper in-state registration.",
+                "d": "Entrance/identification signs are often required.",
+            },
+            "medium",
+        ),
+        (
+            f"When a {s} licensee changes brokers, they typically must:",
+            {
+                "a": "Notify {c} / follow transfer procedures so the license is properly affiliated",
+                "b": "Keep practicing under both brokers secretly without notice",
+                "c": "Destroy their license wall certificate and continue unlicensed",
+                "d": "Wait 20 years before transferring",
+            },
+            "a",
+            "Affiliation changes require regulatory notice/transfer steps.",
+            {
+                "b": "Secret dual affiliation is improper.",
+                "c": "Unlicensed practice is illegal.",
+                "d": "No such waiting period.",
+            },
+            "easy",
+        ),
+        (
+            f"Reciprocity or license recognition for an out-of-state licensee seeking to practice in {s}:",
+            {
+                "a": "Depends on {c} rules, education/exam waivers, and any required state-portion steps",
+                "b": "Is automatic worldwide with no paperwork",
+                "c": "Is forbidden by federal criminal law in all cases",
+                "d": "Requires only a social media post",
+            },
+            "a",
+            f"{c} sets recognition/reciprocity pathways; they are never purely informal.",
+            {
+                "b": "Paperwork and criteria apply.",
+                "c": "Overstated—pathways often exist.",
+                "d": "Insufficient.",
+            },
+            "medium",
+        ),
+        (
+            f"Continuing education for {s} real estate license renewal is generally:",
+            {
+                "a": "Required on the statutory cycle set by {c}",
+                "b": "Never required once initially licensed",
+                "c": "Replaced by watching any YouTube video without approval",
+                "d": "Optional only for brokers, never associates",
+            },
+            "a",
+            "CE keeps licenses active; verify hours/topics with the commission.",
+            {
+                "b": "Renewal/CE is typically mandatory.",
+                "c": "Courses must meet approval rules.",
+                "d": "Associates usually have CE too.",
+            },
+            "easy",
+        ),
+        (
+            f"A {s} licensee who buys a property listed with their firm must typically:",
+            {
+                "a": "Disclose their licensee status and follow any required consent/disclosure rules",
+                "b": "Hide their license to get a better price",
+                "c": "Avoid all written contracts",
+                "d": "Pay the commission into a personal crypto wallet unlabeled",
+            },
+            "a",
+            "Self-dealing/interest disclosures protect the public and clients.",
+            {
+                "b": "Concealment is a violation.",
+                "c": "Written contracts remain essential.",
+                "d": "Improper handling of funds.",
+            },
+            "medium",
+        ),
+        (
+            f"Document retention for {s} brokerages typically requires:",
+            {
+                "a": "Keeping transaction records for the period required by {c}",
+                "b": "Shredding all files the day after closing always",
+                "c": "Storing records only in a personal phone with no backup forever",
+                "d": "Never retaining trust account records",
+            },
+            "a",
+            "Statutory retention periods protect consumers and enable audits.",
+            {
+                "b": "Premature destruction risks violations.",
+                "c": "Inadequate recordkeeping.",
+                "d": "Trust records are critical.",
+            },
+            "easy",
+        ),
+        (
+            f"If earnest money is in dispute after a failed {s} transaction, the broker should:",
+            {
+                "a": "Follow authorized escrow dispute procedures rather than unilaterally awarding the funds",
+                "b": "Always keep the money as a personal bonus",
+                "c": "Give it to whichever party calls first",
+                "d": "Spend it on advertising the next listing",
+            },
+            "a",
+            "Escrow disputes require contractual and regulatory procedures (interpleader, releases, etc.).",
+            {
+                "b": "Conversion risk.",
+                "c": "Not a lawful rule.",
+                "d": "Trust money misuse.",
+            },
+            "hard",
+        ),
+        (
+            f"Team advertising in {s} generally must:",
+            {
+                "a": "Clearly identify the responsible brokerage as required by {c}",
+                "b": "Omit the broker's name if the team is popular",
+                "c": "Imply the team is a separate licensed brokerage when it is not",
+                "d": "Use only first names with no firm identity",
+            },
+            "a",
+            "Consumers must know the licensed brokerage responsible for the team.",
+            {
+                "b": "Broker identification is typically required.",
+                "c": "Misleading firm status is a violation.",
+                "d": "Insufficient identification.",
+            },
+            "medium",
+        ),
+        (
+            f"A {s} property manager who negotiates leases for others for compensation typically needs:",
+            {
+                "a": "An appropriate real estate license unless a specific exemption applies",
+                "b": "Only a food handler card",
+                "c": "No credentials of any kind in all cases",
+                "d": "A federal pilot license",
+            },
+            "a",
+            "Leasing/management for others often triggers licensing requirements.",
+            {
+                "b": "Unrelated.",
+                "c": "Exemptions are narrow.",
+                "d": "Unrelated.",
+            },
+            "medium",
+        ),
+        (
+            f"Guaranteeing a future profit to a {s} buyer as a direct promise by a licensee is:",
+            {
+                "a": "Generally improper/misleading and can be a license law violation",
+                "b": "Required by every listing agreement",
+                "c": "The definition of an appraisal",
+                "d": "Mandated by RESPA Form A",
+            },
+            "a",
+            "Profit guarantees are deceptive; licensees must avoid false assurances.",
+            {
+                "b": "Not required.",
+                "c": "Appraisals estimate value, they don't guarantee investor profits.",
+                "d": "No such mandate.",
+            },
+            "medium",
+        ),
+        (
+            f"Inactive or expired {s} licenses typically mean the person:",
+            {
+                "a": "May not engage in activities requiring an active license until properly renewed/reactivated",
+                "b": "May practice freely without limits",
+                "c": "Automatically becomes a judge",
+                "d": "May supervise other licensees without a broker license",
+            },
+            "a",
+            "Active status is required for licensed activity.",
+            {
+                "b": "False.",
+                "c": "Absurd.",
+                "d": "Supervision requires proper credentials.",
+            },
+            "easy",
+        ),
+        (
+            f"Kickbacks for referring settlement service business in covered residential loans are:",
+            {
+                "a": "Restricted under federal RESPA rules and also may violate {s} standards of practice",
+                "b": "Required monthly by {c}",
+                "c": "Always legal if paid in cash under the table",
+                "d": "Only regulated for commercial warehouses",
+            },
+            "a",
+            "RESPA bans certain referral fees; state ethics/license rules also police improper inducements.",
+            {
+                "b": "Commissions don't require kickbacks.",
+                "c": "Illegality isn't cured by secrecy.",
+                "d": "RESPA focuses on residential settlement services.",
+            },
+            "hard",
+        ),
+        (
+            f"A {s} broker who fails to supervise affiliated licensees adequately may face:",
+            {
+                "a": "Discipline by {c}",
+                "b": "A commendation for neglect",
+                "c": "Automatic federal judicial immunity",
+                "d": "Exemption from all civil suits forever",
+            },
+            "a",
+            "Brokers have supervision duties; failure can bring commission action.",
+            {
+                "b": "Opposite.",
+                "c": "No such immunity.",
+                "d": "Civil exposure may remain.",
+            },
+            "medium",
+        ),
+        (
+            f"Presenting a written offer to a {s} seller client should generally occur:",
+            {
+                "a": "Promptly as required by agency and license rules",
+                "b": "Only after the listing expires",
+                "c": "Never if the offer is below list price",
+                "d": "Only verbally with no written record",
+            },
+            "a",
+            "Licensees must timely present offers unless the client gave lawful instructions otherwise.",
+            {
+                "b": "Too late.",
+                "c": "Low offers still must be presented.",
+                "d": "Written offers need proper handling.",
+            },
+            "easy",
+        ),
+        (
+            f"Using a client's confidential information to buy the property for the licensee's own account without required disclosure in {s} is:",
+            {
+                "a": "A serious breach of fiduciary/license duties",
+                "b": "Standard best practice",
+                "c": "Required by the listing agreement",
+                "d": "Encouraged for team leaders",
+            },
+            "a",
+            "Self-dealing with confidential client info without disclosure/consent is prohibited.",
+            {
+                "b": "Opposite of best practice.",
+                "c": "Not required.",
+                "d": "Not encouraged.",
+            },
+            "hard",
+        ),
+        (
+            f"A {s} for-sale-by-owner who is unlicensed may generally:",
+            {
+                "a": "Sell their own property without a license (owner exemptions typically apply)",
+                "b": "Charge neighbors a fee to negotiate their sales without a license in all cases",
+                "c": "Open a brokerage for the public without licensing",
+                "d": "Supervise sales associates for a fee without a broker license",
+            },
+            "a",
+            "Owners selling their own property are typically exempt; acting for others for compensation triggers licensing.",
+            {
+                "b": "Compensated brokerage for others needs a license.",
+                "c": "Brokerage requires licensure.",
+                "d": "Supervision requires broker credentials.",
+            },
+            "medium",
+        ),
+        (
+            f"Licensee name and brokerage identification in {s} online ads typically must:",
+            {
+                "a": "Be clear and not misleading under {c} advertising rules",
+                "b": "Use only nicknames with no firm name when rules require firm ID",
+                "c": "Claim \"guaranteed approval\" for every mortgage",
+                "d": "Hide that the poster is licensed",
+            },
+            "a",
+            "Digital ads must meet the same transparency standards as print.",
+            {
+                "b": "Firm identification is often mandatory.",
+                "c": "Mortgage guarantees are improper.",
+                "d": "Licensee status concealment is improper.",
+            },
+            "easy",
+        ),
+        (
+            f"Handling of transaction files after a {s} associate leaves a firm typically:",
+            {
+                "a": "Remains with the brokerage; the firm retains responsibility for records",
+                "b": "Allows the associate to take all trust funds personally",
+                "c": "Deletes the broker's duty to supervise past deals",
+                "d": "Transfers escrow money to the associate's rent account",
+            },
+            "a",
+            "Brokerages own/control transaction records and remaining trust obligations.",
+            {
+                "b": "Trust funds stay in proper accounts.",
+                "c": "Duties don't vanish.",
+                "d": "Improper.",
+            },
+            "medium",
+        ),
+        (
+            f"A {s} dual agency disclosure, where dual agency is allowed, must be:",
+            {
+                "a": "Obtained according to statutory timing and consent rules",
+                "b": "Skipped if the deal is \"almost done\"",
+                "c": "Oral only forever with no writing when writing is required",
+                "d": "Signed only by the title company",
+            },
+            "a",
+            "Dual agency requires informed consent under state procedures.",
+            {
+                "b": "Timing still matters.",
+                "c": "Writing is often required.",
+                "d": "Parties/clients consent, not the title company alone.",
+            },
+            "hard",
+        ),
+        (
+            f"Paying a referral fee to an unlicensed person for a {s} prospect in a way that violates license law is:",
+            {
+                "a": "Prohibited",
+                "b": "Required weekly",
+                "c": "The same as paying a cooperating broker under an MLS offer of compensation",
+                "d": "Mandatory for every FSBO",
+            },
+            "a",
+            "Compensation for licensed activity generally may only go to properly licensed parties (with narrow exceptions).",
+            {
+                "b": "Not required.",
+                "c": "Co-broker compensation is different and licensed-to-licensed.",
+                "d": "Not mandatory.",
+            },
+            "medium",
+        ),
+        (
+            f"A {s} licensee convicted of a crime of moral turpitude related to practice may face:",
+            {
+                "a": "License suspension/revocation proceedings before {c}",
+                "b": "Automatic promotion to broker",
+                "c": "A state-funded bonus",
+                "d": "No possible regulatory consequences",
+            },
+            "a",
+            "Criminal convictions can trigger disciplinary cases.",
+            {
+                "b": "Opposite.",
+                "c": "Absurd.",
+                "d": "Consequences are real.",
+            },
+            "easy",
+        ),
+        (
+            f"Trust account reconciliations for a {s} brokerage are important because:",
+            {
+                "a": "They help detect shortages/overages and demonstrate compliance to {c}",
+                "b": "They replace the need for licenses",
+                "c": "They set the local MLS dues",
+                "d": "They determine property tax assessments",
+            },
+            "a",
+            "Regular reconciliation is a core trust-account control.",
+            {
+                "b": "Licenses still required.",
+                "c": "MLS dues are separate.",
+                "d": "Assessors handle taxes.",
+            },
+            "medium",
+        ),
+        (
+            f"Blind ads that hide the licensed status/brokerage identity in {s} are generally:",
+            {
+                "a": "Prohibited or restricted by advertising rules",
+                "b": "The preferred form of all brokerage marketing",
+                "c": "Required for exclusive listings",
+                "d": "Mandated by the IRS",
+            },
+            "a",
+            "Consumers must be able to identify that an ad is from a licensee/firm.",
+            {
+                "b": "Not preferred.",
+                "c": "Not required.",
+                "d": "IRS does not set RE blind-ad rules.",
+            },
+            "easy",
+        ),
+        (
+            f"A {s} associate receives an offer on their listing while the seller is unreachable for a short period. Best practice is to:",
+            {
+                "a": "Follow lawful client instructions and brokerage policy for timely presentation/notification—never ignore an offer",
+                "b": "Discard the offer because it is inconvenient",
+                "c": "Accept the offer on the seller's behalf without authority",
+                "d": "Tell the buyer the property is sold without basis",
+            },
+            "a",
+            "Offers must be handled per agency duties and any written seller instructions.",
+            {
+                "b": "Discarding offers breaches duties.",
+                "c": "No authority to bind the seller.",
+                "d": "False statements are improper.",
+            },
+            "medium",
+        ),
+        (
+            f"Errors and omissions (E&O) insurance for a {s} brokerage:",
+            {
+                "a": "May be required or strongly expected by firm/{c} risk practices, but does not excuse license law violations",
+                "b": "Legalizes intentional fraud",
+                "c": "Removes the need to disclose material defects",
+                "d": "Is identical to title insurance",
+            },
+            "a",
+            "E&O manages negligence risk; it is not a license to violate the law.",
+            {
+                "b": "Fraud is not excused.",
+                "c": "Disclosure duties remain.",
+                "d": "Different coverage.",
+            },
+            "hard",
+        ),
+        (
+            f"If {c} investigates a complaint against a {s} licensee, the licensee should:",
+            {
+                "a": "Cooperate as required and respond truthfully within deadlines",
+                "b": "Ignore all notices",
+                "c": "Alter transaction files to hide issues",
+                "d": "Threaten the complainant with unlicensed practice",
+            },
+            "a",
+            "Regulatory cooperation and honesty are mandatory; obstruction worsens outcomes.",
+            {
+                "b": "Ignoring notices risks default discipline.",
+                "c": "Spoliation is a separate violation.",
+                "d": "Retaliation is improper.",
+            },
+            "medium",
+        ),
+        (
+            f"Inducements such as promising a free car for listing with a {s} broker are:",
+            {
+                "a": "Subject to advertising and inducement rules—and may be restricted or require clear disclosure",
+                "b": "Always mandatory under federal law",
+                "c": "Illegal only if the car is blue",
+                "d": "Unrelated to license law in every case",
+            },
+            "a",
+            "Inducements are regulated; deceptive or prohibited prizes can trigger discipline.",
+            {
+                "b": "Not mandatory.",
+                "c": "Color is irrelevant.",
+                "d": "License law often addresses them.",
+            },
+            "hard",
+        ),
+        (
+            f"A {s} transaction coordinator employed by a brokerage typically:",
+            {
+                "a": "Performs administrative tasks under supervision and must not negotiate as a licensee unless licensed",
+                "b": "May independently bind sellers to contracts without authority",
+                "c": "Replaces the need for a supervising broker",
+                "d": "Holds escrow in a personal Venmo account by default",
+            },
+            "a",
+            "Coordinators support compliance administratively; licensed activities stay with licensees.",
+            {
+                "b": "No unilateral authority.",
+                "c": "Broker supervision remains.",
+                "d": "Improper escrow handling.",
+            },
+            "medium",
+        ),
+        (
+            f"Material changes to a listing price by a {s} listing agent require:",
+            {
+                "a": "Seller authorization (typically written) per the listing agreement and brokerage policy",
+                "b": "Only the buyer's verbal okay",
+                "c": "A title company board vote",
+                "d": "No consent from anyone",
+            },
+            "a",
+            "Price is the seller's decision; agents need authority to change list price.",
+            {
+                "b": "Buyers don't set list price.",
+                "c": "Title companies don't approve list prices.",
+                "d": "Consent is required.",
+            },
+            "easy",
+        ),
+        (
+            f"Discriminatory refusal to show a {s} home based on a protected class under fair housing law is:",
+            {
+                "a": "Illegal under federal fair housing law and typically also violates {s} license standards",
+                "b": "Required for exclusive listings",
+                "c": "Allowed if the seller asks orally",
+                "d": "Encouraged in team meetings",
+            },
+            "a",
+            "Fair housing prohibitions override discriminatory seller instructions.",
+            {
+                "b": "Not required.",
+                "c": "Seller instructions cannot legalize discrimination.",
+                "d": "Not encouraged.",
+            },
+            "easy",
+        ),
+        (
+            f"A {s} licensee's duty when handling multiple offers typically includes:",
+            {
+                "a": "Presenting all offers as required and following lawful seller instructions on disclosure of offer terms",
+                "b": "Destroying lower offers",
+                "c": "Accepting the highest offer without seller consent",
+                "d": "Sharing confidential buyer underwriting files with other buyers freely",
+            },
+            "a",
+            "Transparency to the seller client and compliance with offer-handling rules are required.",
+            {
+                "b": "Improper.",
+                "c": "Seller decides.",
+                "d": "Confidentiality limits apply.",
+            },
+            "medium",
+        ),
+        (
+            f"Post-closing, a {s} broker discovers a trust account shortage. The broker should:",
+            {
+                "a": "Immediately investigate, correct, and report/notify as required by {c} rules",
+                "b": "Ignore it if under $10,000",
+                "c": "Blame an intern and close the file quietly",
+                "d": "Transfer unrelated operating funds without documenting the cure",
+            },
+            "a",
+            "Shortages are serious; prompt remediation and required notices protect the public.",
+            {
+                "b": "Materiality thresholds don't erase duties.",
+                "c": "Cover-ups worsen discipline.",
+                "d": "Cures must be proper and documented.",
+            },
+            "hard",
+        ),
+        (
+            f"In {s}, representing yourself as a REALTOR® when you are not a member of the association is:",
+            {
+                "a": "Improper trademark/membership misuse and can also be deceptive advertising",
+                "b": "Required by {c} for all licensees",
+                "c": "The same as holding a broker license",
+                "d": "Mandatory on every yard sign by federal law",
+            },
+            "a",
+            "REALTOR® is a membership mark; misuse misleads consumers.",
+            {
+                "b": "Licensure ≠ REALTOR membership.",
+                "c": "Different credentials.",
+                "d": "No federal mandate.",
+            },
+            "medium",
+        ),
+        (
+            f"A {s} associated licensee wants to run personal real estate ads that omit the supervising broker. This is generally:",
+            {
+                "a": "Noncompliant with brokerage identification rules",
+                "b": "Best practice for branding",
+                "c": "Required for teams",
+                "d": "Only allowed on billboards",
+            },
+            "a",
+            "Ads usually must name the responsible broker/firm.",
+            {
+                "b": "Not best practice.",
+                "c": "Teams still need firm ID.",
+                "d": "Medium doesn't create an exception.",
+            },
+            "easy",
+        ),
+        (
+            f"License renewals in {s} that are filed late typically may result in:",
+            {
+                "a": "Late fees, inactive status, or other {c} penalties until cured",
+                "b": "A free upgrade to attorney status",
+                "c": "Permanent immunity from CE",
+                "d": "Automatic reciprocity with every country",
+            },
+            "a",
+            "Late renewal has regulatory consequences.",
+            {
+                "b": "Absurd.",
+                "c": "CE still matters.",
+                "d": "False.",
+            },
+            "easy",
+        ),
+        (
+            f"A {s} broker opens a trust account. Interest on trust funds, if permitted, typically must be handled:",
+            {
+                "a": "According to {c}/statutory rules (e.g., client benefit or approved housing-trust programs)",
+                "b": "As the broker's personal bonus always",
+                "c": "By mailing cash to the listing agent weekly",
+                "d": "By investing in options without records",
+            },
+            "a",
+            "Interest disposition is regulated; personal skimming is forbidden.",
+            {
+                "b": "Personal retention is usually improper.",
+                "c": "Improper.",
+                "d": "Improper.",
+            },
+            "hard",
+        ),
+        (
+            f"When a {s} seller instructs a licensee to conceal a known latent defect that must be disclosed, the licensee should:",
+            {
+                "a": "Refuse to conceal legally required disclosures and consider withdrawal if the seller persists",
+                "b": "Follow the illegal instruction to keep the listing",
+                "c": "Edit the seller's disclosure form to remove the defect quietly",
+                "d": "Tell only the appraiser and no one else",
+            },
+            "a",
+            "Licensees cannot participate in fraud; illegal instructions must be refused.",
+            {
+                "b": "Illegal instructions are not binding.",
+                "c": "Falsifying disclosures is a violation.",
+                "d": "Selective disclosure is improper.",
+            },
+            "hard",
+        ),
+        (
+            f"A temporary/practice permit or provisional status in {s}, where offered, generally means:",
+            {
+                "a": "Limited authority under {c} rules until full licensing conditions are met",
+                "b": "Unlimited practice rights worldwide",
+                "c": "No supervision is ever allowed",
+                "d": "The person is exempt from all advertising rules forever",
+            },
+            "a",
+            "Provisional statuses are narrower and conditioned.",
+            {
+                "b": "Overbroad.",
+                "c": "Supervision often increases.",
+                "d": "Advertising rules still apply.",
+            },
+            "medium",
+        ),
+        (
+            f"Sharing a lockbox code with an unlicensed friend so they can \"preview\" a {s} listing without authorization is:",
+            {
+                "a": "Improper and a security/agency violation risk",
+                "b": "Required MLS etiquette",
+                "c": "A substitute for written buyer agency",
+                "d": "Allowed if the friend promises to buy",
+            },
+            "a",
+            "Unauthorized access compromises safety and client interests.",
+            {
+                "b": "Not etiquette.",
+                "c": "Not an agency substitute.",
+                "d": "Promises don't authorize access.",
+            },
+            "medium",
+        ),
+        (
+            f"A {s} brokerage policy manual is useful because it:",
+            {
+                "a": "Documents supervision standards and compliant procedures for affiliated licensees",
+                "b": "Replaces state statutes",
+                "c": "Eliminates the need for listing agreements",
+                "d": "Is illegal to maintain",
+            },
+            "a",
+            "Written policies support broker supervision duties.",
+            {
+                "b": "Statutes still control.",
+                "c": "Listings remain necessary.",
+                "d": "Policies are encouraged.",
+            },
+            "easy",
+        ),
+        (
+            f"Misrepresenting square footage in a {s} listing when the licensee knew better is:",
+            {
+                "a": "A material misrepresentation that can trigger {c} discipline and civil liability",
+                "b": "Harmless puffing in all cases",
+                "c": "Required to win featured placement",
+                "d": "Only the appraiser's problem, never the listing agent's",
+            },
+            "a",
+            "Measurable factual misstatements are not puffing.",
+            {
+                "b": "Not harmless when knowingly false.",
+                "c": "Not required.",
+                "d": "Listing agents remain responsible for their representations.",
+            },
+            "medium",
+        ),
+        (
+            f"A {s} licensee acting as a dual agent must typically:",
+            {
+                "a": "Remain neutral on price advocacy and keep confidential client information as required",
+                "b": "Push the buyer to overpay to favor the seller secretly",
+                "c": "Share each party's bottom line freely without consent",
+                "d": "Ignore disclosure forms",
+            },
+            "a",
+            "Dual agents cannot favor one client and must protect confidential info within the rules.",
+            {
+                "b": "Secret favoritism breaches dual agency.",
+                "c": "Bottom lines are confidential without consent.",
+                "d": "Disclosures are mandatory.",
+            },
+            "hard",
+        ),
+        (
+            f"Branch offices of a {s} brokerage typically must:",
+            {
+                "a": "Be registered/comply with {c} branch office rules when required",
+                "b": "Operate with no broker oversight by design",
+                "c": "Use a different unlicensed trade name that implies a separate firm improperly",
+                "d": "Avoid all trust account rules",
+            },
+            "a",
+            "Branch locations often need registration and supervision.",
+            {
+                "b": "Oversight is required.",
+                "c": "Misleading names are improper.",
+                "d": "Trust rules still apply.",
+            },
+            "medium",
+        ),
+        (
+            f"A {s} buyer asks for a rebate of commission. The licensee should:",
+            {
+                "a": "Follow {c}/brokerage rules on rebates and ensure any payment is lawful and disclosed",
+                "b": "Pay cash secretly from escrow without records",
+                "c": "Promise any rebate regardless of legality",
+                "d": "Ignore brokerage policy always",
+            },
+            "a",
+            "Rebate legality varies; compliance and disclosure are essential.",
+            {
+                "b": "Escrow misuse.",
+                "c": "Illegal promises are improper.",
+                "d": "Policy matters.",
+            },
+            "hard",
+        ),
+        (
+            f"Failure to disclose a known material adverse property condition in a {s} sale can lead to:",
+            {
+                "a": "License discipline and civil claims",
+                "b": "A medal from {c}",
+                "c": "Automatic loan approval for the buyer",
+                "d": "Cancellation of property taxes",
+            },
+            "a",
+            "Nondisclosure of known material defects is a core liability/discipline risk.",
+            {
+                "b": "Opposite.",
+                "c": "Unrelated.",
+                "d": "Unrelated.",
+            },
+            "easy",
+        ),
+        (
+            f"A {s} licensee wants to advertise \"We sell homes 20% above market every time.\" This claim is:",
+            {
+                "a": "Likely deceptive unless substantiated and carefully qualified",
+                "b": "Always safe puffing",
+                "c": "Required by MLS",
+                "d": "A substitute for a CMA",
+            },
+            "a",
+            "Guaranteed market-beating claims are high-risk advertising.",
+            {
+                "b": "Not always safe.",
+                "c": "Not required.",
+                "d": "CMAs analyze value; ads aren't CMAs.",
+            },
+            "medium",
+        ),
+        (
+            f"Escrow instructions in a {s} transaction should be:",
+            {
+                "a": "Followed as written by the parties; brokers must not unilaterally rewrite disbursement terms",
+                "b": "Ignored if inconvenient",
+                "c": "Changed by the showing agent alone",
+                "d": "Dictated by the photographer",
+            },
+            "a",
+            "Escrow agents/brokers follow written instructions and legal requirements.",
+            {
+                "b": "Improper.",
+                "c": "No unilateral authority.",
+                "d": "Unrelated.",
+            },
+            "easy",
+        ),
+        (
+            f"A {s} associate's personal assistant who is licensed may:",
+            {
+                "a": "Perform licensed activities only within their own license authority and brokerage affiliation rules",
+                "b": "Use the associate's license number as their own",
+                "c": "Bind the brokerage to listings without any authority",
+                "d": "Hold client trust funds in a personal account",
+            },
+            "a",
+            "Licensed assistants still must stay within license and supervision rules.",
+            {
+                "b": "License numbers aren't transferable.",
+                "c": "Authority is limited.",
+                "d": "Trust funds need proper accounts.",
+            },
+            "medium",
+        ),
+        (
+            f"Minimal services / brokerage service statutes in some states (including themes tested for {s}) address:",
+            {
+                "a": "What services a listing broker must still provide even in limited-service listings",
+                "b": "Federal tax brackets",
+                "c": "FAA drone altitude only",
+                "d": "HOA pet weight limits exclusively",
+            },
+            "a",
+            "Limited-service listings still may require core broker duties under state law.",
+            {
+                "b": "Tax.",
+                "c": "Aviation.",
+                "d": "HOA rules.",
+            },
+            "hard",
+        ),
+        (
+            f"A {s} licensee receives a referral from another state. Best practice is to:",
+            {
+                "a": "Confirm licensure status and follow {c} rules on referral fees and advertising",
+                "b": "Pay any unlicensed finder any amount in cash without records",
+                "c": "Ignore whether the referrer is licensed",
+                "d": "Split trust deposits with the referrer personally",
+            },
+            "a",
+            "Interstate referrals still require compliant compensation and licensing checks.",
+            {
+                "b": "Risky/illegal patterns.",
+                "c": "Licensure matters.",
+                "d": "Trust money misuse.",
+            },
+            "medium",
+        ),
+        (
+            f"Stating that a {s} property is \"zoned commercial\" when the licensee knows it is residential is:",
+            {
+                "a": "A material misrepresentation",
+                "b": "Acceptable negotiation strategy",
+                "c": "Required to attract investors",
+                "d": "Only the surveyor's concern, never the licensee's",
+            },
+            "a",
+            "Knowingly false zoning claims are serious misrepresentation.",
+            {
+                "b": "Not acceptable.",
+                "c": "Not required.",
+                "d": "Licensees are responsible for their statements.",
+            },
+            "easy",
+        ),
+        (
+            f"After a {s} closing, the buyer asks the listing agent for the seller's forwarding address to \"settle a personal dispute.\" The listing agent should:",
+            {
+                "a": "Protect confidential client information and not disclose without authority or legal requirement",
+                "b": "Post the address in the MLS public remarks",
+                "c": "Sell the address to a data broker",
+                "d": "Give it out because the deal closed",
+            },
+            "a",
+            "Confidentiality can survive closing for non-public personal information.",
+            {
+                "b": "Improper.",
+                "c": "Improper.",
+                "d": "Closing doesn't waive all confidentiality.",
+            },
+            "hard",
+        ),
+        (
+            f"A {s} broker must provide copies of signed listing agreements to the seller:",
+            {
+                "a": "As required by license law—typically promptly after signing",
+                "b": "Never",
+                "c": "Only after the home sells",
+                "d": "Only if the seller sues",
+            },
+            "a",
+            "Parties are entitled to copies of agreements they sign.",
+            {
+                "b": "False.",
+                "c": "Too late.",
+                "d": "Not lawsuit-gated.",
+            },
+            "easy",
+        ),
+        (
+            f"Operating without the required {s} real estate license while performing brokerage for others for compensation is:",
+            {
+                "a": "Unlicensed practice that {c} can stop with penalties",
+                "b": "Encouraged for new agents before class",
+                "c": "Allowed on weekends only",
+                "d": "Legal if the person uses the word \"consultant\"",
+            },
+            "a",
+            "Labels don't legalize unlicensed brokerage.",
+            {
+                "b": "Not encouraged.",
+                "c": "No weekend exception.",
+                "d": "Titles don't create exemptions.",
+            },
+            "easy",
+        ),
+    ]
+
+
+def build_state_law(
+    exam_slug: str,
+    state_name: str,
+    commission: str,
+    topic_id: str,
+) -> list[dict]:
+    pool = _pool(state_name, commission)
+    assert len(pool) >= 60, len(pool)
+    digest = hashlib.sha256(exam_slug.encode()).digest()
+    start = int.from_bytes(digest[:2], "big") % (len(pool) - 14)
+    # Unique window of 15; secondary shuffle by step for more diversity across states
+    step = 1 + (digest[2] % 5)
+    idxs = [(start + i * step) % len(pool) for i in range(15)]
+    # Ensure uniqueness within the 15
+    seen: set[int] = set()
+    unique_idxs: list[int] = []
+    for i in idxs:
+        j = i
+        while j in seen:
+            j = (j + 1) % len(pool)
+        seen.add(j)
+        unique_idxs.append(j)
+    rows = [pool[i] for i in unique_idxs]
+    return pack(exam_slug, topic_id, rows)

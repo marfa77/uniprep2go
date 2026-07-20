@@ -1,0 +1,1982 @@
+[
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-001",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "A clean claim under Medicare generally means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Complete, accurate, timely submission with required identifiers and no missing info"
+      },
+      {
+        "id": "b",
+        "text": "Claim handwritten only"
+      },
+      {
+        "id": "c",
+        "text": "Claim missing provider NPI"
+      },
+      {
+        "id": "d",
+        "text": "Claim submitted years after service"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Clean claims contain all data needed for adjudication without additional information.",
+    "distractorExplanations": {
+      "b": "Electronic/paper both allowed if complete.",
+      "c": "NPI required.",
+      "d": "Timeliness limits apply."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-002",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "CMS-1500 form is primarily used to bill:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inpatient hospital stays only"
+      },
+      {
+        "id": "b",
+        "text": "Professional physician/outpatient services"
+      },
+      {
+        "id": "c",
+        "text": "Dental only"
+      },
+      {
+        "id": "d",
+        "text": "Property tax"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "CMS-1500 is the professional claim form; UB-04 is institutional.",
+    "distractorExplanations": {
+      "a": "Institutional uses UB-04.",
+      "c": "Dental may use ADA form.",
+      "d": "Unrelated."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-003",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "Place of service (POS) code 11 indicates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inpatient hospital"
+      },
+      {
+        "id": "b",
+        "text": "Ambulance"
+      },
+      {
+        "id": "c",
+        "text": "Office"
+      },
+      {
+        "id": "d",
+        "text": "Homeless shelter only"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "POS 11 is office setting on professional claims.",
+    "distractorExplanations": {
+      "a": "Hospital inpatient different codes.",
+      "b": "Ambulance has specific POS.",
+      "d": "Not POS 11 definition."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-004",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "Claim rejection at clearinghouse for invalid subscriber ID should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignored because payment automatic"
+      },
+      {
+        "id": "b",
+        "text": "Billed to patient without verification always first"
+      },
+      {
+        "id": "c",
+        "text": "Submitted repeatedly unchanged"
+      },
+      {
+        "id": "d",
+        "text": "Corrected with verified insurance information and resubmitted"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Rejections are pre-adjudication edits fixed by correcting data and resubmitting.",
+    "distractorExplanations": {
+      "a": "Rejections stop processing.",
+      "b": "Verify coverage first.",
+      "c": "Duplicate rejections waste time."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-005",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "Coordination of benefits (COB) applies when patient has:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Primary and secondary coverage; primary pays first per rules"
+      },
+      {
+        "id": "b",
+        "text": "No insurance ever"
+      },
+      {
+        "id": "c",
+        "text": "Only workers' comp for unrelated cold visit always"
+      },
+      {
+        "id": "d",
+        "text": "Cash pay only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "COB determines order of payment when multiple payers cover the patient.",
+    "distractorExplanations": {
+      "b": "COB needs multiple plans.",
+      "c": "Unrelated injury may not be WC.",
+      "d": "No COB with cash."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-006",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "Timely filing limit denial means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Claim paid twice"
+      },
+      {
+        "id": "b",
+        "text": "Claim submitted after payer deadline without valid exception"
+      },
+      {
+        "id": "c",
+        "text": "Patient overpaid copay"
+      },
+      {
+        "id": "d",
+        "text": "Provider NPI valid"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Each payer sets filing limits; late claims deny unless appeal exception applies.",
+    "distractorExplanations": {
+      "a": "Different issue.",
+      "c": "Copay separate.",
+      "d": "Valid NPI would not cause this denial."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-007",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "Advance Beneficiary Notice (ABN) is used when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Commercial HMO always pays"
+      },
+      {
+        "id": "b",
+        "text": "Patient refuses all treatment ever"
+      },
+      {
+        "id": "c",
+        "text": "Medicare may not pay for service and patient chooses to proceed"
+      },
+      {
+        "id": "d",
+        "text": "Coding is always correct without discussion"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "ABN documents patient liability when Medicare coverage unlikely.",
+    "distractorExplanations": {
+      "a": "ABN is Medicare-specific tool.",
+      "b": "Not refusal of all care.",
+      "d": "Coverage uncertainty drives ABN."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-008",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "Electronic remittance advice (ERA/835) provides:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Patient medical record"
+      },
+      {
+        "id": "b",
+        "text": "Prescription refill requests"
+      },
+      {
+        "id": "c",
+        "text": "Operating room schedule"
+      },
+      {
+        "id": "d",
+        "text": "Explanation of payment, adjustments, and reason codes"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "835 ERA details paid amounts, adjustments (CARC/RARC), and claim status.",
+    "distractorExplanations": {
+      "a": "Clinical chart separate.",
+      "b": "Pharmacy workflow.",
+      "c": "Scheduling separate."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-009",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "Duplicate claim denial often results from:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Same service billed twice with same date/provider without modifier/resubmission indicator"
+      },
+      {
+        "id": "b",
+        "text": "Corrected claim with appropriate frequency code"
+      },
+      {
+        "id": "c",
+        "text": "First submission ever"
+      },
+      {
+        "id": "d",
+        "text": "Valid appeal only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Payers detect duplicate service lines; use frequency/modifier for corrections/voids.",
+    "distractorExplanations": {
+      "b": "Frequency 7/8 indicates replacement/void appropriately.",
+      "c": "First sub not duplicate.",
+      "d": "Appeal follows denial."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-010",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "Global surgical package includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unrelated ER visit months later"
+      },
+      {
+        "id": "b",
+        "text": "Pre-op visit day before major surgery, surgery, and follow-up within global period per CPT"
+      },
+      {
+        "id": "c",
+        "text": "New problem visit same day always separately paid without modifier"
+      },
+      {
+        "id": "d",
+        "text": "Anesthesia always in global for all payers without rules"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Global periods bundle certain pre/post op services; separate billing rules apply.",
+    "distractorExplanations": {
+      "a": "Unrelated services bill separately.",
+      "c": "Same-day E/M may need modifier 25 if significant separate problem.",
+      "d": "Anesthesia often billed separately."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-011",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "Claim scrubber edit 'missing referring provider NPI' for specialist visit should be fixed by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deleting patient name"
+      },
+      {
+        "id": "b",
+        "text": "Changing CPT to unrelated code"
+      },
+      {
+        "id": "c",
+        "text": "Adding valid referring/ordering provider when required by payer"
+      },
+      {
+        "id": "d",
+        "text": "Submitting without diagnosis"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Many plans require referring provider for specialist claims.",
+    "distractorExplanations": {
+      "a": "Patient demographics required.",
+      "b": "Code must match service.",
+      "d": "Diagnosis required."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-012",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "Void/correct claim process typically uses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Same claim number forever"
+      },
+      {
+        "id": "b",
+        "text": "Phone call only without resubmission ever"
+      },
+      {
+        "id": "c",
+        "text": "Cash refund without claim adjustment"
+      },
+      {
+        "id": "d",
+        "text": "Frequency code 8 void then new claim or frequency 7 replacement per payer rules"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Electronic claims use frequency/type codes to void or replace prior submission.",
+    "distractorExplanations": {
+      "a": "Corrections need proper indicators.",
+      "b": "Electronic correction usually required.",
+      "c": "Claim and payment systems must align."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-013",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "Patient statement after insurance payment should show:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Service detail, insurance payments/adjustments, patient responsibility per EOB alignment"
+      },
+      {
+        "id": "b",
+        "text": "Only greeting message"
+      },
+      {
+        "id": "c",
+        "text": "Other patients' balances"
+      },
+      {
+        "id": "d",
+        "text": "Provider salary"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Statements reflect allowed amounts, payments, adjustments, and remaining patient liability.",
+    "distractorExplanations": {
+      "b": "Detail required.",
+      "c": "HIPAA prohibits other patients' info.",
+      "d": "Irrelevant."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-014",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "Workers' compensation claim billing generally requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Medicare primary always for work injury"
+      },
+      {
+        "id": "b",
+        "text": "WC payer info, injury date, employer, and diagnosis linked to work injury"
+      },
+      {
+        "id": "c",
+        "text": "No documentation of injury"
+      },
+      {
+        "id": "d",
+        "text": "Standard copay collection always"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "WC claims need injury-related data and often treat authorization per state.",
+    "distractorExplanations": {
+      "a": "WC usually primary for work injury.",
+      "c": "Documentation mandatory.",
+      "d": "Copay rules differ."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-015",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "Underbilling same service repeatedly below contracted rate by error should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignored as patient favor"
+      },
+      {
+        "id": "b",
+        "text": "Hidden to avoid payer attention forever"
+      },
+      {
+        "id": "c",
+        "text": "Corrected through rebilling/contract review and internal audit"
+      },
+      {
+        "id": "d",
+        "text": "Considered fraud if intentional overbilling only—underbilling never matters"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Accurate billing reflects contract; patterns affect revenue and compliance audits.",
+    "distractorExplanations": {
+      "a": "Accuracy required.",
+      "b": "Concealment prevents correction.",
+      "d": "Underbilling also reviewed in audits."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-001",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "ICD-10-CM codes primarily describe:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Procedure fees only"
+      },
+      {
+        "id": "b",
+        "text": "Provider tax ID"
+      },
+      {
+        "id": "c",
+        "text": "Patient address only"
+      },
+      {
+        "id": "d",
+        "text": "Diagnoses, symptoms, and reasons for encounter"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "ICD-10-CM captures diagnosis and clinical status supporting medical necessity.",
+    "distractorExplanations": {
+      "a": "Procedures use CPT/HCPCS.",
+      "b": "Billing identifier separate.",
+      "c": "Demographics not ICD purpose."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-002",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "CPT code 99213 typically represents:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Established patient office visit level 3"
+      },
+      {
+        "id": "b",
+        "text": "Appendectomy"
+      },
+      {
+        "id": "c",
+        "text": "MRI brain"
+      },
+      {
+        "id": "d",
+        "text": "Dental cleaning"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "99213 is common established patient E/M level based on MDM/time per rules.",
+    "distractorExplanations": {
+      "b": "Surgery different codes.",
+      "c": "Radiology different section.",
+      "d": "Dental ADA codes."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-003",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "Modifier 25 indicates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bilateral procedure"
+      },
+      {
+        "id": "b",
+        "text": "Significant, separately identifiable E/M on same day as procedure"
+      },
+      {
+        "id": "c",
+        "text": "Cancelled procedure"
+      },
+      {
+        "id": "d",
+        "text": "Telehealth audio-only always"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Modifier 25 supports separate E/M with procedure same day when criteria met.",
+    "distractorExplanations": {
+      "a": "Bilateral often modifier 50.",
+      "c": "Cancelled different modifiers.",
+      "d": "Telehealth uses 95/other per payer."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-004",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "Upcoding means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Billing correct level with full documentation"
+      },
+      {
+        "id": "b",
+        "text": "Using valid ICD link"
+      },
+      {
+        "id": "c",
+        "text": "Billing higher level service than documented/supported"
+      },
+      {
+        "id": "d",
+        "text": "Timely filing"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Upcoding is fraudulent misrepresentation of service intensity.",
+    "distractorExplanations": {
+      "a": "Appropriate coding.",
+      "b": "Proper practice.",
+      "d": "Operational requirement."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-005",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "Medical necessity requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Patient preference alone without clinical indication"
+      },
+      {
+        "id": "b",
+        "text": "Marketing brochure statement"
+      },
+      {
+        "id": "c",
+        "text": "Higher reimbursement only"
+      },
+      {
+        "id": "d",
+        "text": "Service reasonable and necessary for diagnosis/treatment supported in record"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Payers deny services not justified by diagnosis and clinical documentation.",
+    "distractorExplanations": {
+      "a": "Preference insufficient.",
+      "b": "Marketing not medical record.",
+      "c": "Revenue motive not necessity."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-006",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "HCPCS Level II codes often represent:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Supplies, drugs, ambulance, and DME not in CPT"
+      },
+      {
+        "id": "b",
+        "text": "Only psychiatric diagnoses"
+      },
+      {
+        "id": "c",
+        "text": "Employee payroll"
+      },
+      {
+        "id": "d",
+        "text": "Facility mortgage"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "HCPCS includes J-codes for drugs, A-codes ambulance, etc.",
+    "distractorExplanations": {
+      "b": "Diagnoses are ICD.",
+      "c": "Not HCPCS.",
+      "d": "Not HCPCS."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-007",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "Laterality in ICD-10 (left/right) should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Be guessed for speed"
+      },
+      {
+        "id": "b",
+        "text": "Match clinical documentation specifying side when applicable"
+      },
+      {
+        "id": "c",
+        "text": "Always unspecified if unsure without query"
+      },
+      {
+        "id": "d",
+        "text": "Omit because payers ignore"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Specificity including laterality improves accuracy; query provider if documentation unclear.",
+    "distractorExplanations": {
+      "a": "Guessing causes denials/audit risk.",
+      "c": "Unspecified only if truly unknown after query.",
+      "d": "Payers require specificity."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-008",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "NCCI edits prevent:",
+    "options": [
+      {
+        "id": "a",
+        "text": "All billing ever"
+      },
+      {
+        "id": "b",
+        "text": "Valid modifier use always"
+      },
+      {
+        "id": "c",
+        "text": "Improper unbundling of component codes billed separately when bundled"
+      },
+      {
+        "id": "d",
+        "text": "Correct coding with modifiers when allowed"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "National Correct Coding Initiative pairs codes that should not bill together unless modifier appropriate.",
+    "distractorExplanations": {
+      "a": "Billing continues with correct combos.",
+      "b": "Modifiers may override when clinically appropriate.",
+      "d": "Allowed combinations bill fine."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-009",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "Principal diagnosis on inpatient claim is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Any comorbidity"
+      },
+      {
+        "id": "b",
+        "text": "Billing clerk choice without coder review"
+      },
+      {
+        "id": "c",
+        "text": "Always Z code only"
+      },
+      {
+        "id": "d",
+        "text": "Condition established after study to be chiefly responsible for admission"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Inpatient principal diagnosis drives DRG assignment after physician/coder validation.",
+    "distractorExplanations": {
+      "a": "Secondary diagnoses additional.",
+      "b": "Coder uses documentation.",
+      "c": "Z codes are factors/status when applicable."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-010",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "Evaluation and management leveling uses (2021+ office/outpatient rules emphasize):",
+    "options": [
+      {
+        "id": "a",
+        "text": "Medical decision making and/or total time on date of encounter per documentation"
+      },
+      {
+        "id": "b",
+        "text": "Room color"
+      },
+      {
+        "id": "c",
+        "text": "Patient shoe size only"
+      },
+      {
+        "id": "d",
+        "text": "Number of staff in hallway"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "E/M levels based on MDM elements or time per current CMS/AMA guidelines.",
+    "distractorExplanations": {
+      "b": "Irrelevant.",
+      "c": "Irrelevant.",
+      "d": "Irrelevant."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-011",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "External cause codes (V/W/X/Y) capture:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Primary diabetes always"
+      },
+      {
+        "id": "b",
+        "text": "Mechanism/circumstance of injury or poisoning when documented"
+      },
+      {
+        "id": "c",
+        "text": "Fee schedule"
+      },
+      {
+        "id": "d",
+        "text": "Provider specialty only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "External cause codes supplement injury/poisoning coding when documented.",
+    "distractorExplanations": {
+      "a": "Diabetes E codes different chapter.",
+      "c": "Not ICD purpose.",
+      "d": "Specialty on claim field not external cause."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-012",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "Unlisted CPT code requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No documentation"
+      },
+      {
+        "id": "b",
+        "text": "Automatic highest payment"
+      },
+      {
+        "id": "c",
+        "text": "Description and often comparable code with documentation supporting unique service"
+      },
+      {
+        "id": "d",
+        "text": "Use for all routine visits"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Unlisted codes need report/comparison to establish value and medical necessity.",
+    "distractorExplanations": {
+      "a": "Documentation essential.",
+      "b": "Payment not automatic highest.",
+      "d": "Routine visits have specific E/M codes."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-013",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "Modifier 59 indicates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Repeat procedure same session always"
+      },
+      {
+        "id": "b",
+        "text": "Global period only"
+      },
+      {
+        "id": "c",
+        "text": "Telephone call only"
+      },
+      {
+        "id": "d",
+        "text": "Distinct procedural service when no more specific modifier applies"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "59 breaks NCCI bundles when separate session/site/organ/encounter per criteria.",
+    "distractorExplanations": {
+      "a": "Repeat may use 76/77.",
+      "b": "Global separate concept.",
+      "c": "Telephone E/M separate codes."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-014",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "Query physician when documentation:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conflicts or lacks specificity needed for accurate code assignment"
+      },
+      {
+        "id": "b",
+        "text": "Is complete and clear"
+      },
+      {
+        "id": "c",
+        "text": "Matches nursing note only without conflict"
+      },
+      {
+        "id": "d",
+        "text": "Never; guess instead"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Clinical documentation improvement queries resolve ambiguity before coding.",
+    "distractorExplanations": {
+      "b": "No query needed.",
+      "c": "Agreement allows coding.",
+      "d": "Guessing violates compliance."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-015",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "SNOMED in EHR differs from ICD-10 on claim because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "SNOMED replaces CPT on CMS-1500"
+      },
+      {
+        "id": "b",
+        "text": "Claims require ICD-10-CM diagnosis codes; SNOMED supports clinical documentation mapping"
+      },
+      {
+        "id": "c",
+        "text": "ICD-10 only for dental"
+      },
+      {
+        "id": "d",
+        "text": "They are identical always"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "SNOMED CT is clinical terminology; billing uses ICD-10-CM mapped from documentation.",
+    "distractorExplanations": {
+      "a": "CPT still procedures.",
+      "c": "ICD-10 broad use.",
+      "d": "Different purposes."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-001",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Medicare Part A primarily covers:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Retail prescriptions always"
+      },
+      {
+        "id": "b",
+        "text": "Routine dental only"
+      },
+      {
+        "id": "c",
+        "text": "Inpatient hospital, skilled nursing (limited), hospice, some home health"
+      },
+      {
+        "id": "d",
+        "text": "Auto insurance"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Part A is hospital insurance for inpatient/SNF/hospice benefits when eligible.",
+    "distractorExplanations": {
+      "a": "Part D drugs.",
+      "b": "Dental limited exceptions.",
+      "d": "Unrelated payer."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-002",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Medicare Part B generally covers:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inpatient room board only"
+      },
+      {
+        "id": "b",
+        "text": "Long-term custodial nursing only"
+      },
+      {
+        "id": "c",
+        "text": "Hearing aids always fully"
+      },
+      {
+        "id": "d",
+        "text": "Physician services, outpatient care, DME, preventive services"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Part B is medical insurance for outpatient professional/services and DME.",
+    "distractorExplanations": {
+      "a": "Part A inpatient.",
+      "b": "Custodial care not covered.",
+      "c": "Hearing aids generally not covered."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-003",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Medicare Advantage (Part C) claims are submitted to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The Medicare Advantage plan, not Original Medicare directly"
+      },
+      {
+        "id": "b",
+        "text": "Patient employer only"
+      },
+      {
+        "id": "c",
+        "text": "Social Security office paper only"
+      },
+      {
+        "id": "d",
+        "text": "Medicaid always first for all services"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "MA plans are paid capitation; providers bill the plan per contract.",
+    "distractorExplanations": {
+      "b": "Employer may not be involved.",
+      "c": "Electronic to plan.",
+      "d": "Primary depends on coverage."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-004",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Medicaid eligibility and billing vary by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Single national identical policy everywhere"
+      },
+      {
+        "id": "b",
+        "text": "State rules, managed care plans, and fee schedules"
+      },
+      {
+        "id": "c",
+        "text": "Patient hobby"
+      },
+      {
+        "id": "d",
+        "text": "Moon phase"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Medicaid is state-administered with federal guidelines; billing rules differ.",
+    "distractorExplanations": {
+      "a": "State variation significant.",
+      "c": "Irrelevant.",
+      "d": "Irrelevant."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-005",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "TRICARE is health coverage for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "All US tourists"
+      },
+      {
+        "id": "b",
+        "text": "Only veterans at VA exclusively always billed same"
+      },
+      {
+        "id": "c",
+        "text": "Uniformed service members, retirees, and families"
+      },
+      {
+        "id": "d",
+        "text": "Medicare only population"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "TRICARE serves military community; billing follows TRICARE rules distinct from VA direct care.",
+    "distractorExplanations": {
+      "a": "Not general tourist.",
+      "b": "VA and TRICARE differ.",
+      "d": "Separate program."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-006",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Commercial payer prior authorization denial for MRI should prompt:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perform MRI without auth always"
+      },
+      {
+        "id": "b",
+        "text": "Bill Medicare if patient has none"
+      },
+      {
+        "id": "c",
+        "text": "Ignore patient communication"
+      },
+      {
+        "id": "d",
+        "text": "Review denial reason, peer-to-peer if available, patient notification, alternative plan"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Appeals and peer review may overturn; patient informed of options and liability.",
+    "distractorExplanations": {
+      "a": "Unauthorized service may deny payment.",
+      "b": "Wrong payer.",
+      "c": "Patient communication required."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-007",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Medicare secondary payer (MSP) rules may make Medicare secondary when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Group health plan due to active employment over certain size/age rules or other insurance primary situations"
+      },
+      {
+        "id": "b",
+        "text": "Patient has no other coverage ever"
+      },
+      {
+        "id": "c",
+        "text": "Patient pays cash only"
+      },
+      {
+        "id": "d",
+        "text": "Service is screening always"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "MSP provisions determine when Medicare pays secondary to other insurance.",
+    "distractorExplanations": {
+      "b": "No other coverage means Medicare primary if eligible.",
+      "c": "Cash not other insurance.",
+      "d": "Screening has specific rules but MSP broader."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-008",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Capitated contract means provider:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Billed fee-for-service only per visit always"
+      },
+      {
+        "id": "b",
+        "text": "Receives fixed per-member payment and manages care within budget"
+      },
+      {
+        "id": "c",
+        "text": "Paid only by patient tips"
+      },
+      {
+        "id": "d",
+        "text": "Never sees patients"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Capitation pays per enrolled member period regardless of visit volume.",
+    "distractorExplanations": {
+      "a": "FFS different model.",
+      "c": "Not payment model.",
+      "d": "Still provides care."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-009",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Explanation of Benefits (EOB) to patient shows:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Legal subpoena"
+      },
+      {
+        "id": "b",
+        "text": "Prescription with refills"
+      },
+      {
+        "id": "c",
+        "text": "What provider billed, allowed amount, plan paid, patient owes—not a bill itself usually"
+      },
+      {
+        "id": "d",
+        "text": "Provider license renewal"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "EOB explains adjudication; provider statement may follow for patient balance.",
+    "distractorExplanations": {
+      "a": "Not legal order.",
+      "b": "Pharmacy document.",
+      "d": "Unrelated."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-010",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Blue Cross plan out-of-state emergency care often:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Never covered"
+      },
+      {
+        "id": "b",
+        "text": "Requires pre-auth before car crash"
+      },
+      {
+        "id": "c",
+        "text": "Paid only if provider in Antarctica"
+      },
+      {
+        "id": "d",
+        "text": "Processed under emergency/urgent rules per member contract and federal protections"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Emergency services have special network/payment rules under ACA and plan terms.",
+    "distractorExplanations": {
+      "a": "Emergencies generally covered with cost share.",
+      "b": "Retro auth impossible pre-crash.",
+      "c": "Geography joke; real rules apply domestically."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-011",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Medicare Part D is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prescription drug coverage through private plans"
+      },
+      {
+        "id": "b",
+        "text": "Hospital inpatient only"
+      },
+      {
+        "id": "c",
+        "text": "Dental unlimited"
+      },
+      {
+        "id": "d",
+        "text": "Provider malpractice insurance"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Part D plans cover outpatient drugs via PDP/MA-PD.",
+    "distractorExplanations": {
+      "b": "Part A.",
+      "c": "Not Part D scope.",
+      "d": "Unrelated."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-012",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Railroad Medicare claims are processed by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amtrak ticket office"
+      },
+      {
+        "id": "b",
+        "text": "Palmetto GBA or designated MAC under special Medicare rules for railroad beneficiaries"
+      },
+      {
+        "id": "c",
+        "text": "State Medicaid only always"
+      },
+      {
+        "id": "d",
+        "text": "Patient employer HR exclusively"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Railroad Retirement Board beneficiaries have Medicare processed through designated contractors.",
+    "distractorExplanations": {
+      "a": "Not Amtrak.",
+      "c": "Medicare primary if eligible.",
+      "d": "MAC processes."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-013",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Self-funded employer plan claims are paid by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Medicare always"
+      },
+      {
+        "id": "b",
+        "text": "Patient only with no administrator"
+      },
+      {
+        "id": "c",
+        "text": "Employer/plan administrator often using TPA; not fully insured carrier risk"
+      },
+      {
+        "id": "d",
+        "text": "State lottery"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Self-funded ERISA plans use administrator; billing follows plan documents.",
+    "distractorExplanations": {
+      "a": "May coordinate but employer plan primary per rules.",
+      "b": "Administrator exists.",
+      "d": "Unrelated."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-014",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "HMO referral requirement means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Any provider nationwide always without ID"
+      },
+      {
+        "id": "b",
+        "text": "No primary care role"
+      },
+      {
+        "id": "c",
+        "text": "Medicare replaces HMO rules always"
+      },
+      {
+        "id": "d",
+        "text": "PCP referral/authorization needed for specialist except emergencies per plan"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "HMOs gatekeep specialty care through PCP/referrals and network.",
+    "distractorExplanations": {
+      "a": "Network limits apply.",
+      "b": "PCP central to HMO.",
+      "c": "MA HMO follows plan."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-015",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Patient eligibility verification should occur:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Before service when possible and at intervals for ongoing treatment"
+      },
+      {
+        "id": "b",
+        "text": "Never; assume active coverage"
+      },
+      {
+        "id": "c",
+        "text": "Only after collections lawsuit"
+      },
+      {
+        "id": "d",
+        "text": "Once at birth only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Real-time eligibility reduces denials for termed coverage or changed benefits.",
+    "distractorExplanations": {
+      "b": "Coverage changes frequently.",
+      "c": "Too late.",
+      "d": "Ongoing verification needed."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-001",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "HIPAA Privacy Rule requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Posting all diagnoses publicly"
+      },
+      {
+        "id": "b",
+        "text": "Safeguarding PHI, minimum necessary use/disclosure, patient rights"
+      },
+      {
+        "id": "c",
+        "text": "Sharing SSN in waiting room aloud"
+      },
+      {
+        "id": "d",
+        "text": "No workforce training ever"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "HIPAA mandates administrative, physical, technical safeguards and patient rights.",
+    "distractorExplanations": {
+      "a": "Public posting prohibited.",
+      "c": "Verbal PHI disclosure improper.",
+      "d": "Training required."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-002",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "False Claims Act exposure occurs when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Billing correct documented services"
+      },
+      {
+        "id": "b",
+        "text": "Providing free charity care policy compliant"
+      },
+      {
+        "id": "c",
+        "text": "Knowingly submitting false claims for government payment"
+      },
+      {
+        "id": "d",
+        "text": "Credentialing staff"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "FCA imposes liability for fraudulent government healthcare claims.",
+    "distractorExplanations": {
+      "a": "Proper billing protected.",
+      "b": "Charity care lawful.",
+      "d": "Unrelated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-003",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "OIG compliance program elements include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignore regulations to maximize speed"
+      },
+      {
+        "id": "b",
+        "text": "Single verbal rule only"
+      },
+      {
+        "id": "c",
+        "text": "Marketing exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Written policies, training, auditing, enforcement, and response procedures"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Federal guidance expects seven elements for effective compliance programs.",
+    "distractorExplanations": {
+      "a": "Opposite of compliance.",
+      "b": "Insufficient.",
+      "c": "Marketing not core element."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-004",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "Stark Law generally prohibits:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Physician self-referral for designated health services to entities with financial relationship absent exception"
+      },
+      {
+        "id": "b",
+        "text": "All employment of physicians ever"
+      },
+      {
+        "id": "c",
+        "text": "Billing Medicaid"
+      },
+      {
+        "id": "d",
+        "text": "Using computers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Stark restricts DHS referrals where physician has financial relationship unless exception met.",
+    "distractorExplanations": {
+      "b": "Employment allowed with exceptions.",
+      "c": "Medicaid billing lawful.",
+      "d": "Technology unrelated."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-005",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "Anti-Kickback Statute concerns:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paying fair market value rent with safe harbor"
+      },
+      {
+        "id": "b",
+        "text": "Remuneration to induce referrals for services paid by federal programs"
+      },
+      {
+        "id": "c",
+        "text": "Normal salary to employed physician"
+      },
+      {
+        "id": "d",
+        "text": "Discounts fully compliant with safe harbor when structured properly"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "AKS criminalizes inducements for federal healthcare referrals; safe harbors protect lawful arrangements.",
+    "distractorExplanations": {
+      "a": "FMV rent safe harbor may protect.",
+      "c": "Bona fide employment excepted.",
+      "d": "Compliant discounts allowed."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-006",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "Documentation retention for claims generally requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Destroy all records day after payment"
+      },
+      {
+        "id": "b",
+        "text": "Keep only verbal memory"
+      },
+      {
+        "id": "c",
+        "text": "Maintaining records supporting services billed per payer/regulatory periods (often 5–7+ years)"
+      },
+      {
+        "id": "d",
+        "text": "Patient keeps only copy provider destroys immediately"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Retention policies follow CMS/state/false claims standards typically multi-year.",
+    "distractorExplanations": {
+      "a": "Destruction too soon violates audit ability.",
+      "b": "Insufficient.",
+      "d": "Provider must retain."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-007",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "RAC audit targets:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Patient parking tickets"
+      },
+      {
+        "id": "b",
+        "text": "Employee lunch choices"
+      },
+      {
+        "id": "c",
+        "text": "Vending machine inventory only"
+      },
+      {
+        "id": "d",
+        "text": "Medicare improper payments through review of claims and medical necessity"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Recovery Audit Contractors identify overpayments/underpayments on Medicare claims.",
+    "distractorExplanations": {
+      "a": "Unrelated.",
+      "b": "Unrelated.",
+      "c": "Unrelated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-008",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "Credit card on file for copay collection must follow:",
+    "options": [
+      {
+        "id": "a",
+        "text": "PCI-DSS security and patient authorization/disclosure policies"
+      },
+      {
+        "id": "b",
+        "text": "Storing CVV in plain text spreadsheet shared"
+      },
+      {
+        "id": "c",
+        "text": "Charging random amounts without notice"
+      },
+      {
+        "id": "d",
+        "text": "Sharing card number with marketers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Payment card data requires secure processing and transparent patient consent.",
+    "distractorExplanations": {
+      "b": "CVV storage prohibited generally.",
+      "c": "Unauthorized charges illegal.",
+      "d": "PCI/HIPAA violation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-009",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "Incident response for ransomware on billing system includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pay ransom silently without reporting always legal"
+      },
+      {
+        "id": "b",
+        "text": "Isolate systems, notify leadership/IT, assess breach notification obligations, restore from backups"
+      },
+      {
+        "id": "c",
+        "text": "Ignore and continue billing on infected machines only"
+      },
+      {
+        "id": "d",
+        "text": "Post PHI online to prove hack"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Cyber incidents require containment, forensic analysis, and potential HIPAA breach notification.",
+    "distractorExplanations": {
+      "a": "Reporting and legal review still needed.",
+      "c": "Continued use spreads encryption.",
+      "d": "Aggravates breach."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-010",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "Billing unbundled lab panels intentionally for higher pay is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Always required"
+      },
+      {
+        "id": "b",
+        "text": "Random choice"
+      },
+      {
+        "id": "c",
+        "text": "Fraud/abuse if panels should be billed as panel per policy"
+      },
+      {
+        "id": "d",
+        "text": "Patient preference only"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Deliberate unbundling violating NCCI/payer rules is compliance violation.",
+    "distractorExplanations": {
+      "a": "Panels bill as panel when appropriate.",
+      "b": "Must follow rules.",
+      "d": "Not patient choice."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-011",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "Compliance hotline purpose:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ordering lunch"
+      },
+      {
+        "id": "b",
+        "text": "Marketing surveys only"
+      },
+      {
+        "id": "c",
+        "text": "Sharing passwords quickly"
+      },
+      {
+        "id": "d",
+        "text": "Anonymous/good-faith reporting of suspected violations"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Hotlines support reporting without retaliation per policy.",
+    "distractorExplanations": {
+      "a": "Unrelated.",
+      "b": "Not primary purpose.",
+      "c": "Security violation."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-012",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "Excluded individual on OIG LEIE list:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cannot participate in federal healthcare programs; hiring/billing prohibited"
+      },
+      {
+        "id": "b",
+        "text": "Gets bonus payments"
+      },
+      {
+        "id": "c",
+        "text": "Only excluded from dental"
+      },
+      {
+        "id": "d",
+        "text": "List is optional ignore"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "LEIE lists individuals/entities excluded from Medicare/Medicaid participation.",
+    "distractorExplanations": {
+      "b": "Opposite.",
+      "c": "Federal programs broadly.",
+      "d": "Must screen employees/vendors."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-013",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "Balanced Billing (surprise billing) protections under No Surprises Act generally limit:",
+    "options": [
+      {
+        "id": "a",
+        "text": "All medical care worldwide forever free"
+      },
+      {
+        "id": "b",
+        "text": "Out-of-network cost sharing in certain emergency and facility settings"
+      },
+      {
+        "id": "c",
+        "text": "In-network copays only increase"
+      },
+      {
+        "id": "d",
+        "text": "Medicare replacement entirely"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "NSA restricts surprise OON bills in specified settings with IDR process.",
+    "distractorExplanations": {
+      "a": "Overstates law.",
+      "c": "Not NSA focus.",
+      "d": "Medicare separate."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-014",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "Release of information for billing to attorney requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verbal request from stranger"
+      },
+      {
+        "id": "b",
+        "text": "Posting records on website"
+      },
+      {
+        "id": "c",
+        "text": "Patient authorization compliant with HIPAA/state law specifying scope"
+      },
+      {
+        "id": "d",
+        "text": "Billing clerk personal decision only without form"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Attorney access needs valid HIPAA authorization or legal process.",
+    "distractorExplanations": {
+      "a": "Insufficient.",
+      "b": "Prohibited disclosure.",
+      "d": "Policy/form required."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-015",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "Regular compliance training for billing staff should document:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only birthday parties"
+      },
+      {
+        "id": "b",
+        "text": "Nothing; training optional forever"
+      },
+      {
+        "id": "c",
+        "text": "Personal social media handles"
+      },
+      {
+        "id": "d",
+        "text": "Attendance, topics covered, and periodic updates on fraud/waste/abuse and HIPAA"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Documented training demonstrates compliance program effectiveness to auditors.",
+    "distractorExplanations": {
+      "a": "Irrelevant.",
+      "b": "Training expected.",
+      "c": "Irrelevant."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  }
+]

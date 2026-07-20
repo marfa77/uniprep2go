@@ -13,10 +13,10 @@ function plannedFromMock(config: (typeof wave4MockExamConfigs)[number]): Planned
     coverImage: `/covers/${deckSlug}.webp`,
     title: `${shortName} Anki Deck`,
     shortName,
-    subtitle: `A planned spaced-repetition deck for ${shortName} candidates — join the waitlist and study the free exam guide meanwhile.`,
+    subtitle: `A planned spaced-repetition deck for ${shortName} candidates — take the free timed mock now and notify when Anki launches.`,
     directAnswer:
       explainer?.whatIsExam ??
-      `The ${shortName} Anki Deck is a planned UniPrep2Go product. It is not yet available for purchase. Use Notify me when Anki launches on this page, and study the linked readiness-check guide at /mock-exams/${config.slug}.`,
+      `The ${shortName} Anki Deck is a planned UniPrep2Go product. It is not yet available for purchase. Take the free timed readiness check at /mock-exams/${config.slug}, then use Notify me when Anki launches.`,
     lastUpdated: "2026-07-16",
     audience:
       explainer?.whoFor ??
@@ -38,7 +38,7 @@ function plannedFromMock(config: (typeof wave4MockExamConfigs)[number]): Planned
     faqs: [
       {
         question: `Is there a free ${shortName} practice test?`,
-        answer: `A free timed readiness check is coming soon at /mock-exams/${config.slug}. Use Notify me when this launches on the mock page.`,
+        answer: `Yes — take the free timed readiness check at /mock-exams/${config.slug} for topic scoring and answer review.`,
       },
       {
         question: "Is this official exam material?",
@@ -47,7 +47,7 @@ function plannedFromMock(config: (typeof wave4MockExamConfigs)[number]): Planned
       {
         question: "When will the Anki deck launch?",
         answer:
-          "After the free mock waitlist shows traction we build the .apkg. Use Notify me when Anki launches on this page to ping the founder on Telegram.",
+          "The free timed mock is live now. Use Notify me when Anki launches on this page to ping the founder on Telegram when the .apkg ships.",
       },
       {
         question: `Who is the ${shortName} Anki deck for?`,
@@ -59,7 +59,7 @@ function plannedFromMock(config: (typeof wave4MockExamConfigs)[number]): Planned
         question: "How should I prepare while waiting?",
         answer:
           explainer?.howToPrepare ??
-          `Review the official ${config.examBody} outline and the topic guide on the mock page, then notify for launch updates.`,
+          `Take the free timed mock at /mock-exams/${config.slug}, review the official ${config.examBody} outline, and notify for Anki launch updates.`,
       },
     ],
   };

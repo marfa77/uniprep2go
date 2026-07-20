@@ -1,13 +1,13 @@
 import type { MockExamConfig } from "./types";
 import {
   fourNicheTopics,
-  nicheWaitlistConfig,
+  nicheReadinessConfig,
   NICHE_SESSION_QUESTIONS,
 } from "./niche-readiness";
 
-/** Wave 4 — 50 bankless waitlist niches (indexed SEO + notify CTA). */
+/** Wave 4 — 50 live free practice tests with local 60-question banks. */
 export const wave4MockExamConfigs: MockExamConfig[] = [
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "al-real-estate-readiness-check",
     title: "Alabama Real Estate Readiness Check",
     shortTitle: "Alabama Real Estate",
@@ -21,12 +21,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "al-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Alabama Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Alabama Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Alabama Real Estate readiness check with topic scoring.",
     examBody: "Alabama Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Alabama real estate", "AL RE", "Alabama real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "ak-real-estate-readiness-check",
     title: "Alaska Real Estate Readiness Check",
     shortTitle: "Alaska Real Estate",
@@ -40,12 +40,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ak-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Alaska Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Alaska Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Alaska Real Estate readiness check with topic scoring.",
     examBody: "Alaska Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Alaska real estate", "AK RE", "Alaska real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "ar-real-estate-readiness-check",
     title: "Arkansas Real Estate Readiness Check",
     shortTitle: "Arkansas Real Estate",
@@ -59,12 +59,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ar-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Arkansas Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Arkansas Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Arkansas Real Estate readiness check with topic scoring.",
     examBody: "Arkansas Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Arkansas real estate", "AR RE", "Arkansas real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "ct-real-estate-readiness-check",
     title: "Connecticut Real Estate Readiness Check",
     shortTitle: "Connecticut Real Estate",
@@ -78,12 +78,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ct-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Connecticut Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Connecticut Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Connecticut Real Estate readiness check with topic scoring.",
     examBody: "Connecticut Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Connecticut real estate", "CT RE", "Connecticut real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "de-real-estate-readiness-check",
     title: "Delaware Real Estate Readiness Check",
     shortTitle: "Delaware Real Estate",
@@ -97,12 +97,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "de-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Delaware Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Delaware Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Delaware Real Estate readiness check with topic scoring.",
     examBody: "Delaware Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Delaware real estate", "DE RE", "Delaware real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "hi-real-estate-readiness-check",
     title: "Hawaii Real Estate Readiness Check",
     shortTitle: "Hawaii Real Estate",
@@ -116,12 +116,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "hi-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Hawaii Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Hawaii Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Hawaii Real Estate readiness check with topic scoring.",
     examBody: "Hawaii Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Hawaii real estate", "HI RE", "Hawaii real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "id-real-estate-readiness-check",
     title: "Idaho Real Estate Readiness Check",
     shortTitle: "Idaho Real Estate",
@@ -135,12 +135,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "id-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Idaho Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Idaho Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Idaho Real Estate readiness check with topic scoring.",
     examBody: "Idaho Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Idaho real estate", "ID RE", "Idaho real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "in-real-estate-readiness-check",
     title: "Indiana Real Estate Readiness Check",
     shortTitle: "Indiana Real Estate",
@@ -154,12 +154,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "in-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Indiana Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Indiana Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Indiana Real Estate readiness check with topic scoring.",
     examBody: "Indiana Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Indiana real estate", "IN RE", "Indiana real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "ia-real-estate-readiness-check",
     title: "Iowa Real Estate Readiness Check",
     shortTitle: "Iowa Real Estate",
@@ -173,12 +173,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ia-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Iowa Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Iowa Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Iowa Real Estate readiness check with topic scoring.",
     examBody: "Iowa Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Iowa real estate", "IA RE", "Iowa real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "ks-real-estate-readiness-check",
     title: "Kansas Real Estate Readiness Check",
     shortTitle: "Kansas Real Estate",
@@ -192,12 +192,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ks-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Kansas Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Kansas Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Kansas Real Estate readiness check with topic scoring.",
     examBody: "Kansas Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Kansas real estate", "KS RE", "Kansas real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "ky-real-estate-readiness-check",
     title: "Kentucky Real Estate Readiness Check",
     shortTitle: "Kentucky Real Estate",
@@ -211,12 +211,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ky-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Kentucky Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Kentucky Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Kentucky Real Estate readiness check with topic scoring.",
     examBody: "Kentucky Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Kentucky real estate", "KY RE", "Kentucky real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "la-real-estate-readiness-check",
     title: "Louisiana Real Estate Readiness Check",
     shortTitle: "Louisiana Real Estate",
@@ -230,12 +230,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "la-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Louisiana Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Louisiana Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Louisiana Real Estate readiness check with topic scoring.",
     examBody: "Louisiana Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Louisiana real estate", "LA RE", "Louisiana real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "me-real-estate-readiness-check",
     title: "Maine Real Estate Readiness Check",
     shortTitle: "Maine Real Estate",
@@ -249,12 +249,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "me-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Maine Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Maine Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Maine Real Estate readiness check with topic scoring.",
     examBody: "Maine Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Maine real estate", "ME RE", "Maine real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "md-real-estate-readiness-check",
     title: "Maryland Real Estate Readiness Check",
     shortTitle: "Maryland Real Estate",
@@ -268,12 +268,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "md-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Maryland Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Maryland Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Maryland Real Estate readiness check with topic scoring.",
     examBody: "Maryland Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Maryland real estate", "MD RE", "Maryland real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "mn-real-estate-readiness-check",
     title: "Minnesota Real Estate Readiness Check",
     shortTitle: "Minnesota Real Estate",
@@ -287,12 +287,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "mn-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Minnesota Commerce Department themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Minnesota Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Minnesota Real Estate readiness check with topic scoring.",
     examBody: "Minnesota Commerce Department",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Minnesota real estate", "MN RE", "Minnesota real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "ms-real-estate-readiness-check",
     title: "Mississippi Real Estate Readiness Check",
     shortTitle: "Mississippi Real Estate",
@@ -306,12 +306,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ms-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Mississippi Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Mississippi Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Mississippi Real Estate readiness check with topic scoring.",
     examBody: "Mississippi Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Mississippi real estate", "MS RE", "Mississippi real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "mo-real-estate-readiness-check",
     title: "Missouri Real Estate Readiness Check",
     shortTitle: "Missouri Real Estate",
@@ -325,12 +325,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "mo-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Missouri Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Missouri Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Missouri Real Estate readiness check with topic scoring.",
     examBody: "Missouri Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Missouri real estate", "MO RE", "Missouri real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "mt-real-estate-readiness-check",
     title: "Montana Real Estate Readiness Check",
     shortTitle: "Montana Real Estate",
@@ -344,12 +344,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "mt-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Montana Board of Realty Regulation themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Montana Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Montana Real Estate readiness check with topic scoring.",
     examBody: "Montana Board of Realty Regulation",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Montana real estate", "MT RE", "Montana real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "ne-real-estate-readiness-check",
     title: "Nebraska Real Estate Readiness Check",
     shortTitle: "Nebraska Real Estate",
@@ -363,12 +363,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ne-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Nebraska Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Nebraska Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Nebraska Real Estate readiness check with topic scoring.",
     examBody: "Nebraska Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Nebraska real estate", "NE RE", "Nebraska real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "nv-real-estate-readiness-check",
     title: "Nevada Real Estate Readiness Check",
     shortTitle: "Nevada Real Estate",
@@ -382,12 +382,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "nv-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Nevada Real Estate Division themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Nevada Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Nevada Real Estate readiness check with topic scoring.",
     examBody: "Nevada Real Estate Division",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Nevada real estate", "NV RE", "Nevada real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "nh-real-estate-readiness-check",
     title: "New Hampshire Real Estate Readiness Check",
     shortTitle: "New Hampshire Real Estate",
@@ -401,12 +401,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "nh-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to New Hampshire Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free New Hampshire Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question New Hampshire Real Estate readiness check with topic scoring.",
     examBody: "New Hampshire Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["New Hampshire real estate", "NH RE", "New Hampshire real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "nm-real-estate-readiness-check",
     title: "New Mexico Real Estate Readiness Check",
     shortTitle: "New Mexico Real Estate",
@@ -420,12 +420,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "nm-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to New Mexico Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free New Mexico Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question New Mexico Real Estate readiness check with topic scoring.",
     examBody: "New Mexico Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["New Mexico real estate", "NM RE", "New Mexico real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "nd-real-estate-readiness-check",
     title: "North Dakota Real Estate Readiness Check",
     shortTitle: "North Dakota Real Estate",
@@ -439,12 +439,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "nd-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to North Dakota Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free North Dakota Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question North Dakota Real Estate readiness check with topic scoring.",
     examBody: "North Dakota Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["North Dakota real estate", "ND RE", "North Dakota real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "ok-real-estate-readiness-check",
     title: "Oklahoma Real Estate Readiness Check",
     shortTitle: "Oklahoma Real Estate",
@@ -458,12 +458,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ok-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Oklahoma Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Oklahoma Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Oklahoma Real Estate readiness check with topic scoring.",
     examBody: "Oklahoma Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Oklahoma real estate", "OK RE", "Oklahoma real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "or-real-estate-readiness-check",
     title: "Oregon Real Estate Readiness Check",
     shortTitle: "Oregon Real Estate",
@@ -477,12 +477,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "or-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Oregon Real Estate Agency themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Oregon Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Oregon Real Estate readiness check with topic scoring.",
     examBody: "Oregon Real Estate Agency",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Oregon real estate", "OR RE", "Oregon real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "ri-real-estate-readiness-check",
     title: "Rhode Island Real Estate Readiness Check",
     shortTitle: "Rhode Island Real Estate",
@@ -496,12 +496,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ri-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Rhode Island Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Rhode Island Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Rhode Island Real Estate readiness check with topic scoring.",
     examBody: "Rhode Island Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Rhode Island real estate", "RI RE", "Rhode Island real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "sc-real-estate-readiness-check",
     title: "South Carolina Real Estate Readiness Check",
     shortTitle: "South Carolina Real Estate",
@@ -515,12 +515,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "sc-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to South Carolina Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free South Carolina Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question South Carolina Real Estate readiness check with topic scoring.",
     examBody: "South Carolina Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["South Carolina real estate", "SC RE", "South Carolina real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "sd-real-estate-readiness-check",
     title: "South Dakota Real Estate Readiness Check",
     shortTitle: "South Dakota Real Estate",
@@ -534,12 +534,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "sd-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to South Dakota Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free South Dakota Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question South Dakota Real Estate readiness check with topic scoring.",
     examBody: "South Dakota Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["South Dakota real estate", "SD RE", "South Dakota real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "tn-real-estate-readiness-check",
     title: "Tennessee Real Estate Readiness Check",
     shortTitle: "Tennessee Real Estate",
@@ -553,12 +553,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "tn-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Tennessee Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Tennessee Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Tennessee Real Estate readiness check with topic scoring.",
     examBody: "Tennessee Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Tennessee real estate", "TN RE", "Tennessee real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "ut-real-estate-readiness-check",
     title: "Utah Real Estate Readiness Check",
     shortTitle: "Utah Real Estate",
@@ -572,12 +572,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ut-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Utah Division of Real Estate themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Utah Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Utah Real Estate readiness check with topic scoring.",
     examBody: "Utah Division of Real Estate",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Utah real estate", "UT RE", "Utah real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "vt-real-estate-readiness-check",
     title: "Vermont Real Estate Readiness Check",
     shortTitle: "Vermont Real Estate",
@@ -591,12 +591,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "vt-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Vermont Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Vermont Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Vermont Real Estate readiness check with topic scoring.",
     examBody: "Vermont Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Vermont real estate", "VT RE", "Vermont real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "wv-real-estate-readiness-check",
     title: "West Virginia Real Estate Readiness Check",
     shortTitle: "West Virginia Real Estate",
@@ -610,12 +610,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "wv-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to West Virginia Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free West Virginia Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question West Virginia Real Estate readiness check with topic scoring.",
     examBody: "West Virginia Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["West Virginia real estate", "WV RE", "West Virginia real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "wi-real-estate-readiness-check",
     title: "Wisconsin Real Estate Readiness Check",
     shortTitle: "Wisconsin Real Estate",
@@ -629,12 +629,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "wi-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Wisconsin Real Estate Examining Board themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Wisconsin Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Wisconsin Real Estate readiness check with topic scoring.",
     examBody: "Wisconsin Real Estate Examining Board",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Wisconsin real estate", "WI RE", "Wisconsin real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "wy-real-estate-readiness-check",
     title: "Wyoming Real Estate Readiness Check",
     shortTitle: "Wyoming Real Estate",
@@ -648,12 +648,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "wy-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Wyoming Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Wyoming Real Estate practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Wyoming Real Estate readiness check with topic scoring.",
     examBody: "Wyoming Real Estate Commission",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Wyoming real estate", "WY RE", "Wyoming real estate exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "series-79-readiness-check",
     title: "Series 79 Readiness Check",
     shortTitle: "Series 79",
@@ -667,12 +667,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "regulations", label: "Regulations & ethics" }
     ]),
     officialSourceNote: "Mapped to FINRA themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Series 79 practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Series 79 readiness check with topic scoring.",
     examBody: "FINRA",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Series 79", "Investment Banking Representative"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "cfp-certification-readiness-check",
     title: "CFP Certification Readiness Check",
     shortTitle: "CFP Certification",
@@ -686,12 +686,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "retirement-risk", label: "Retirement & risk" }
     ]),
     officialSourceNote: "Mapped to CFP Board themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free CFP Certification practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question CFP Certification readiness check with topic scoring.",
     examBody: "CFP Board",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["CFP exam", "Certified Financial Planner"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "life-health-insurance-readiness-check",
     title: "Life & Health Insurance Readiness Check",
     shortTitle: "Life & Health Insurance",
@@ -705,12 +705,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "underwriting", label: "Underwriting & claims" }
     ]),
     officialSourceNote: "Mapped to State insurance departments themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Life & Health Insurance practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Life & Health Insurance readiness check with topic scoring.",
     examBody: "State insurance departments",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["life and health insurance exam", "life health producer"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "praxis-elementary-education-readiness-check",
     title: "Praxis Elementary Education Readiness Check",
     shortTitle: "Praxis Elementary Education",
@@ -724,12 +724,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "science", label: "Science" }
     ]),
     officialSourceNote: "Mapped to ETS themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Praxis Elementary Education practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Praxis Elementary Education readiness check with topic scoring.",
     examBody: "ETS",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Praxis 5001", "elementary education praxis"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "praxis-special-education-readiness-check",
     title: "Praxis Special Education Readiness Check",
     shortTitle: "Praxis Special Education",
@@ -743,12 +743,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "foundations", label: "Foundations & professional practice" }
     ]),
     officialSourceNote: "Mapped to ETS themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Praxis Special Education practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Praxis Special Education readiness check with topic scoring.",
     examBody: "ETS",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Praxis Special Education", "sped praxis"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "water-treatment-operator-1-readiness-check",
     title: "Water Treatment Operator 1 Readiness Check",
     shortTitle: "Water Treatment Operator 1",
@@ -762,12 +762,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "regs", label: "Regs & reporting" }
     ]),
     officialSourceNote: "Mapped to State drinking water operator boards themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Water Treatment Operator 1 practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Water Treatment Operator 1 readiness check with topic scoring.",
     examBody: "State drinking water operator boards",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["water treatment operator exam", "drinking water operator"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "electrical-journeyman-readiness-check",
     title: "Electrical Journeyman Readiness Check",
     shortTitle: "Electrical Journeyman",
@@ -781,12 +781,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "safety", label: "Safety & motors" }
     ]),
     officialSourceNote: "Mapped to State electrical boards themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Electrical Journeyman practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Electrical Journeyman readiness check with topic scoring.",
     examBody: "State electrical boards",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["journeyman electrician exam", "electrician license test"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "plumbing-journeyman-readiness-check",
     title: "Plumbing Journeyman Readiness Check",
     shortTitle: "Plumbing Journeyman",
@@ -800,12 +800,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "code", label: "Code & safety" }
     ]),
     officialSourceNote: "Mapped to State plumbing boards themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Plumbing Journeyman practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Plumbing Journeyman readiness check with topic scoring.",
     examBody: "State plumbing boards",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["journeyman plumber exam", "plumbing license test"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "nremt-emr-readiness-check",
     title: "NREMT EMR Readiness Check",
     shortTitle: "NREMT EMR",
@@ -819,12 +819,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ops", label: "EMS operations" }
     ]),
     officialSourceNote: "Mapped to NREMT themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free NREMT EMR practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question NREMT EMR readiness check with topic scoring.",
     examBody: "NREMT",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["EMR exam", "NREMT EMR", "emergency medical responder"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "pharmacy-technician-excpt-readiness-check",
     title: "ExCPT Pharmacy Technician Readiness Check",
     shortTitle: "ExCPT Pharmacy Technician",
@@ -838,12 +838,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "law", label: "Law & ethics" }
     ]),
     officialSourceNote: "Mapped to NHA themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free ExCPT Pharmacy Technician practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question ExCPT Pharmacy Technician readiness check with topic scoring.",
     examBody: "NHA",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["ExCPT", "NHA pharmacy technician"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "armed-security-officer-readiness-check",
     title: "Armed Security Officer Readiness Check",
     shortTitle: "Armed Security Officer",
@@ -857,12 +857,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ethics", label: "Ethics & professionalism" }
     ]),
     officialSourceNote: "Mapped to State security licensing boards themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Armed Security Officer practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Armed Security Officer readiness check with topic scoring.",
     examBody: "State security licensing boards",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["armed security guard exam", "armed guard card"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "medical-billing-specialist-readiness-check",
     title: "Medical Billing Specialist Readiness Check",
     shortTitle: "Medical Billing Specialist",
@@ -876,12 +876,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "compliance", label: "Compliance" }
     ]),
     officialSourceNote: "Mapped to NHA / billing cert themes themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Medical Billing Specialist practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Medical Billing Specialist readiness check with topic scoring.",
     examBody: "NHA / billing cert themes",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["medical billing specialist exam", "CBCS"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "veterinary-technician-vtne-readiness-check",
     title: "VTNE Readiness Check",
     shortTitle: "VTNE",
@@ -895,12 +895,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "surgery-dentistry", label: "Surgery & dentistry" }
     ]),
     officialSourceNote: "Mapped to AAVSB themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free VTNE practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question VTNE readiness check with topic scoring.",
     examBody: "AAVSB",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["VTNE", "veterinary technician exam"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "shrm-scp-readiness-check",
     title: "SHRM-SCP Readiness Check",
     shortTitle: "SHRM-SCP",
@@ -914,12 +914,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "leadership", label: "Leadership & navigation" }
     ]),
     officialSourceNote: "Mapped to SHRM themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free SHRM-SCP practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question SHRM-SCP readiness check with topic scoring.",
     examBody: "SHRM",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["SHRM-SCP", "SHRM senior certified professional"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "series-99-readiness-check",
     title: "Series 99 Readiness Check",
     shortTitle: "Series 99",
@@ -933,12 +933,12 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "risk", label: "Risk & control" }
     ]),
     officialSourceNote: "Mapped to FINRA themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free Series 99 practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question Series 99 readiness check with topic scoring.",
     examBody: "FINRA",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Series 99", "Operations Professional"],
   }),
-  nicheWaitlistConfig({
+  nicheReadinessConfig({
     slug: "medicare-counseling-readiness-check",
     title: "SHIP Medicare Counseling Readiness Check",
     shortTitle: "SHIP Medicare Counseling",
@@ -952,9 +952,9 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "counseling", label: "Counseling skills" }
     ]),
     officialSourceNote: "Mapped to State Health Insurance Assistance Programs themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free SHIP Medicare Counseling practice test coming soon \u2014 exam guide, topic outline, and notify when the timed readiness check launches.",
+    description: "Free 60-question SHIP Medicare Counseling readiness check with topic scoring.",
     examBody: "State Health Insurance Assistance Programs",
-    questionSourceNote: "Wave 4 waitlist — timed bank coming soon.",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["SHIP counselor", "Medicare counseling exam", "SHIP certification"],
   }),
 ];

@@ -1,0 +1,1982 @@
+[
+  {
+    "id": "series-79-readiness-check-valuation-001",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "A DCF valuation discounts projected free cash flows using:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A discount rate reflecting the risk of the cash flows (often WACC for enterprise value)"
+      },
+      {
+        "id": "b",
+        "text": "The risk-free rate only"
+      },
+      {
+        "id": "c",
+        "text": "The prime rate without adjustment"
+      },
+      {
+        "id": "d",
+        "text": "Historical book value growth"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "DCF uses a risk-adjusted discount rate; WACC is common for unlevered FCF to firm value.",
+    "distractorExplanations": {
+      "b": "Ignores business and financial risk.",
+      "c": "Prime is not a standard DCF discount rate.",
+      "d": "Book value is accounting, not cash-flow valuation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-002",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Enterprise Value is typically calculated as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Market cap minus net debt"
+      },
+      {
+        "id": "b",
+        "text": "Market cap plus net debt (and sometimes minority interest/preferred)"
+      },
+      {
+        "id": "c",
+        "text": "Revenue times P/E"
+      },
+      {
+        "id": "d",
+        "text": "EBITDA only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "EV = equity value + net debt (and other claims as applicable).",
+    "distractorExplanations": {
+      "a": "Subtracting debt gives equity, not EV.",
+      "c": "Mixes unrelated multiples.",
+      "d": "EBITDA is a metric, not EV definition."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-003",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "In comparable company analysis, the peer group should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Include only the target company"
+      },
+      {
+        "id": "b",
+        "text": "Exclude all public companies"
+      },
+      {
+        "id": "c",
+        "text": "Reflect similar business models, size, growth, and risk profiles"
+      },
+      {
+        "id": "d",
+        "text": "Use only companies in bankruptcy"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Comps require genuinely comparable operating and financial characteristics.",
+    "distractorExplanations": {
+      "a": "Single-company group is not comparative.",
+      "b": "Public comps are standard.",
+      "d": "Distressed peers skew multiples unless that is the thesis."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-004",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "EV/EBITDA is often preferred over P/E when comparing firms because EBITDA:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eliminates all capital structure effects on the multiple"
+      },
+      {
+        "id": "b",
+        "text": "Equals free cash flow exactly"
+      },
+      {
+        "id": "c",
+        "text": "Is always audited net income"
+      },
+      {
+        "id": "d",
+        "text": "Is before interest and often used to compare firms with different leverage"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "EV/EBITDA neutralizes some leverage/tax differences vs equity multiples.",
+    "distractorExplanations": {
+      "a": "EV still embeds capital structure in the numerator.",
+      "b": "FCF requires capex and working capital.",
+      "c": "EBITDA is non-GAAP earnings proxy."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-005",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Terminal value in a DCF often uses the Gordon Growth model: TV = FCF × (1+g) / (WACC − g). If g exceeds WACC:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The model is mathematically invalid (denominator negative)"
+      },
+      {
+        "id": "b",
+        "text": "The company is worth zero"
+      },
+      {
+        "id": "c",
+        "text": "Terminal value equals zero automatically"
+      },
+      {
+        "id": "d",
+        "text": "WACC must be ignored"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Perpetual growth must be less than the discount rate or TV explodes/negative.",
+    "distractorExplanations": {
+      "b": "Not the defined outcome.",
+      "c": "Formula breaks, not zero.",
+      "d": "WACC is essential."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-006",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Precedent transaction multiples typically include a control premium because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Public trading prices always exceed deal prices"
+      },
+      {
+        "id": "b",
+        "text": "Buyers pay for 100% control and expected synergies"
+      },
+      {
+        "id": "c",
+        "text": "Sellers never negotiate"
+      },
+      {
+        "id": "d",
+        "text": "Debt is excluded from all deal math"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Control transactions often price above minority trading levels.",
+    "distractorExplanations": {
+      "a": "Usually opposite: deals often at premium to unaffected price.",
+      "c": "False.",
+      "d": "Deal EV includes assumed debt."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-007",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Net Working Capital in M&A models usually excludes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Accounts receivable"
+      },
+      {
+        "id": "b",
+        "text": "Inventory"
+      },
+      {
+        "id": "c",
+        "text": "Cash and short-term debt (often treated separately in definitions)"
+      },
+      {
+        "id": "d",
+        "text": "Accounts payable"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Cash/debt often carved out; NWC definitions vary but cash is frequently excluded from operating NWC.",
+    "distractorExplanations": {
+      "a": "AR is typically operating NWC.",
+      "b": "Inventory is operating.",
+      "d": "AP is operating."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-008",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "A 10% increase in projected terminal growth rate, all else equal, generally:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Decreases DCF value"
+      },
+      {
+        "id": "b",
+        "text": "Has no effect on value"
+      },
+      {
+        "id": "c",
+        "text": "Only affects the income statement"
+      },
+      {
+        "id": "d",
+        "text": "Increases DCF value (sometimes materially)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Higher perpetual growth raises terminal value and total DCF.",
+    "distractorExplanations": {
+      "a": "Opposite effect.",
+      "b": "Terminal value is sensitive to g.",
+      "c": "Valuation impact is direct."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-009",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Liquidation valuation is most appropriate when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assets are sold piecemeal and the firm ceases operations"
+      },
+      {
+        "id": "b",
+        "text": "The company is a going concern with strong growth"
+      },
+      {
+        "id": "c",
+        "text": "Public comps trade at premium multiples"
+      },
+      {
+        "id": "d",
+        "text": "Management plans a dividend recap only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Liquidation values assets at disposal, not ongoing operations.",
+    "distractorExplanations": {
+      "b": "Going concern uses DCF/comps.",
+      "c": "Unrelated.",
+      "d": "Recap is different scenario."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-010",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Beta in CAPM measures:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Total firm risk including diversifiable risk only"
+      },
+      {
+        "id": "b",
+        "text": "Systematic risk relative to the market"
+      },
+      {
+        "id": "c",
+        "text": "Credit spread on bonds"
+      },
+      {
+        "id": "d",
+        "text": "Inventory turnover"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Beta captures market-related (systematic) equity risk.",
+    "distractorExplanations": {
+      "a": "Diversifiable risk is not priced in CAPM.",
+      "c": "Different concept.",
+      "d": "Operating metric."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-011",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Sum-of-the-parts valuation is used when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only one product line exists"
+      },
+      {
+        "id": "b",
+        "text": "Debt cannot be measured"
+      },
+      {
+        "id": "c",
+        "text": "A conglomerate's segments have different risk/peer sets"
+      },
+      {
+        "id": "d",
+        "text": "Taxes are always zero"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "SOTP values divisions separately then aggregates.",
+    "distractorExplanations": {
+      "a": "Single segment usually uses one comp set.",
+      "b": "Debt is still considered at corporate level.",
+      "d": "Taxes matter."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-012",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Unlevered free cash flow is also called:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dividends paid only"
+      },
+      {
+        "id": "b",
+        "text": "Net income after interest only"
+      },
+      {
+        "id": "c",
+        "text": "Cash from financing activities"
+      },
+      {
+        "id": "d",
+        "text": "Free cash flow to the firm (FCFF) before financing costs"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "FCFF/UFCF is available to all capital providers before financing flows.",
+    "distractorExplanations": {
+      "a": "Equity cash flow subset.",
+      "b": "Levered measure.",
+      "c": "CFF is financing section."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-013",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "A football field chart in an pitch book displays:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ranges from multiple valuation methodologies side by side"
+      },
+      {
+        "id": "b",
+        "text": "Only one valuation method"
+      },
+      {
+        "id": "c",
+        "text": "Historical stock prices only"
+      },
+      {
+        "id": "d",
+        "text": "Employee org chart"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Football fields summarize DCF, comps, precedents, and other ranges visually.",
+    "distractorExplanations": {
+      "b": "Purpose is comparison across methods.",
+      "c": "May include but not sole purpose.",
+      "d": "Unrelated."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-014",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "If net debt is $200M and market cap is $800M, Enterprise Value is approximately:",
+    "options": [
+      {
+        "id": "a",
+        "text": "$600M"
+      },
+      {
+        "id": "b",
+        "text": "$1,000M"
+      },
+      {
+        "id": "c",
+        "text": "$200M"
+      },
+      {
+        "id": "d",
+        "text": "$800M"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "EV ≈ $800M + $200M = $1,000M.",
+    "distractorExplanations": {
+      "a": "Subtracting debt gives equity-like math.",
+      "c": "Debt alone is not EV.",
+      "d": "That is equity value only."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-015",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Sensitivity analysis in a DCF model primarily helps bankers:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guarantee the exact transaction price"
+      },
+      {
+        "id": "b",
+        "text": "Eliminate the need for comps"
+      },
+      {
+        "id": "c",
+        "text": "Show how value changes with key assumptions (WACC, growth, margins)"
+      },
+      {
+        "id": "d",
+        "text": "Replace legal due diligence"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Sensitivities illustrate assumption risk and valuation range.",
+    "distractorExplanations": {
+      "a": "Valuation is a range, not guarantee.",
+      "b": "Comps still inform market.",
+      "d": "Legal DD is separate."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-001",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "In a stock-for-stock merger, dilution to the acquirer's EPS occurs when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The deal is 100% cash"
+      },
+      {
+        "id": "b",
+        "text": "Synergies are always zero"
+      },
+      {
+        "id": "c",
+        "text": "The target has no shares outstanding"
+      },
+      {
+        "id": "d",
+        "text": "The target's earnings contribution per new share issued is less than the acquirer's pre-deal EPS"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Accretion/dilution compares incremental EPS from the target vs cost of new shares.",
+    "distractorExplanations": {
+      "a": "Cash deals don't issue stock.",
+      "b": "Synergies affect outcome but aren't the definition.",
+      "c": "Stock deals require target shares."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-002",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "A material adverse change (MAC) clause in an M&A agreement typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Allows either party to walk away if a defined catastrophic change occurs"
+      },
+      {
+        "id": "b",
+        "text": "Guarantees closing regardless of conditions"
+      },
+      {
+        "id": "c",
+        "text": "Sets the exchange ratio permanently"
+      },
+      {
+        "id": "d",
+        "text": "Replaces all antitrust review"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "MAC/MAE clauses define extraordinary events permitting termination.",
+    "distractorExplanations": {
+      "b": "Conditions still apply.",
+      "c": "Different provision.",
+      "d": "Regulatory review remains."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-003",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "Synergies in merger models are often discounted because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Regulators require zero synergies"
+      },
+      {
+        "id": "b",
+        "text": "They may not be fully realized and timing is uncertain"
+      },
+      {
+        "id": "c",
+        "text": "Synergies always exceed purchase price"
+      },
+      {
+        "id": "d",
+        "text": "They are tax penalties"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Execution risk leads banks to haircut synergy values in presentations.",
+    "distractorExplanations": {
+      "a": "False.",
+      "c": "Not always.",
+      "d": "Synergies can be cost or revenue."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-004",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "A tender offer differs from a negotiated merger because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "It can only buy bonds"
+      },
+      {
+        "id": "b",
+        "text": "It never requires SEC filings"
+      },
+      {
+        "id": "c",
+        "text": "It directly offers to buy shares from public holders, often bypassing target board negotiation initially"
+      },
+      {
+        "id": "d",
+        "text": "It is always friendly"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Tender offers are direct purchases, sometimes hostile.",
+    "distractorExplanations": {
+      "a": "Equity focused.",
+      "b": "Schedule TO and other filings apply.",
+      "d": "Can be hostile."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-005",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "Purchase price allocation after an acquisition assigns excess purchase price primarily to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Daily operating expenses only"
+      },
+      {
+        "id": "b",
+        "text": "Treasury stock automatically"
+      },
+      {
+        "id": "c",
+        "text": "Accounts payable exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Goodwill and identifiable intangible assets per acquisition accounting"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "ASC 805/IFRS 3 require fair value of assets and goodwill for excess.",
+    "distractorExplanations": {
+      "a": "Not expensed immediately as operating.",
+      "b": "Different concept.",
+      "c": "Too narrow."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-006",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "A break-up fee (termination fee) in a merger agreement:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compensates a party if the deal fails under specified circumstances"
+      },
+      {
+        "id": "b",
+        "text": "Is paid to all shareholders daily"
+      },
+      {
+        "id": "c",
+        "text": "Replaces the exchange ratio"
+      },
+      {
+        "id": "d",
+        "text": "Eliminates shareholder votes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Break fees allocate cost of failed transactions contractually.",
+    "distractorExplanations": {
+      "b": "Not a dividend.",
+      "c": "Separate term.",
+      "d": "Votes may still be required."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-007",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "Due diligence in sell-side M&A typically covers:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only marketing slogans"
+      },
+      {
+        "id": "b",
+        "text": "Financial, legal, tax, operational, and commercial review of the target"
+      },
+      {
+        "id": "c",
+        "text": "Employee vacation schedules only"
+      },
+      {
+        "id": "d",
+        "text": "Nothing if the buyer is strategic"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Comprehensive DD reduces surprise liabilities and supports valuation.",
+    "distractorExplanations": {
+      "a": "Insufficient.",
+      "c": "HR may be included but not sole focus.",
+      "d": "DD always matters."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-008",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "A reverse merger occurs when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Two identical companies combine"
+      },
+      {
+        "id": "b",
+        "text": "Only debt is exchanged"
+      },
+      {
+        "id": "c",
+        "text": "A private company merges into a public shell to become public"
+      },
+      {
+        "id": "d",
+        "text": "The acquirer delists voluntarily always"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Reverse mergers use public shells for listing without traditional IPO.",
+    "distractorExplanations": {
+      "a": "Not the definition.",
+      "b": "Equity structure change.",
+      "d": "Outcome varies."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-009",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "Regulatory HSR filing in the U.S. is primarily concerned with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Securities registration of all bonds"
+      },
+      {
+        "id": "b",
+        "text": "Environmental permits only"
+      },
+      {
+        "id": "c",
+        "text": "Insider trading of target officers only"
+      },
+      {
+        "id": "d",
+        "text": "Antitrust/competition review for qualifying transactions"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Hart-Scott-Rodino governs premerger notification for large deals.",
+    "distractorExplanations": {
+      "a": "SEC registration is separate.",
+      "b": "May be part of broader DD.",
+      "c": "Not HSR's core."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-010",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "An earnout structure pays additional consideration if:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Post-closing performance milestones are met"
+      },
+      {
+        "id": "b",
+        "text": "The buyer defaults on debt"
+      },
+      {
+        "id": "c",
+        "text": "Stock market falls 10%"
+      },
+      {
+        "id": "d",
+        "text": "Employees resign on day one"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Earnouts bridge valuation gaps using future performance metrics.",
+    "distractorExplanations": {
+      "b": "Default is credit event.",
+      "c": "Not typical trigger.",
+      "d": "Unrelated."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-011",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "In a leveraged buyout, returns to sponsors are driven primarily by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only dividend policy of unrelated firms"
+      },
+      {
+        "id": "b",
+        "text": "Debt paydown, EBITDA growth, and exit multiple"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of all operating risk"
+      },
+      {
+        "id": "d",
+        "text": "Government grants only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "LBO returns come from deleveraging, growth, and multiple expansion/contraction.",
+    "distractorExplanations": {
+      "a": "Too narrow.",
+      "c": "Risk remains.",
+      "d": "Not primary driver."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-012",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "A fairness opinion is typically provided by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Any employee without qualifications"
+      },
+      {
+        "id": "b",
+        "text": "The IRS exclusively"
+      },
+      {
+        "id": "c",
+        "text": "The target's board financial adviser regarding consideration fairness from a financial point of view"
+      },
+      {
+        "id": "d",
+        "text": "Retail shareholders individually"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fairness opinions support board fiduciary decisions.",
+    "distractorExplanations": {
+      "a": "Requires qualified financial adviser.",
+      "b": "Tax authority doesn't issue fairness opinions.",
+      "d": "Board-level document."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-013",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "Covenants in acquisition financing may restrict:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only office paint colors"
+      },
+      {
+        "id": "b",
+        "text": "All revenue growth"
+      },
+      {
+        "id": "c",
+        "text": "Buyer integration planning always"
+      },
+      {
+        "id": "d",
+        "text": "Additional debt, asset sales, and dividends to protect lenders"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Credit agreements include maintenance/incurrence covenants.",
+    "distractorExplanations": {
+      "a": "Nonsense.",
+      "b": "Growth isn't banned.",
+      "c": "Integration continues."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-014",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "A spin-off creates value for shareholders partly by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Allowing separate valuation of distinct businesses"
+      },
+      {
+        "id": "b",
+        "text": "Eliminating all public reporting"
+      },
+      {
+        "id": "c",
+        "text": "Combining unrelated conglomerates"
+      },
+      {
+        "id": "d",
+        "text": "Mandatory delisting"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Sum-of-parts unlock often motivates spin-offs.",
+    "distractorExplanations": {
+      "b": "Spin-offs remain public often.",
+      "c": "Opposite of separation.",
+      "d": "Many spin-offs are listed."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-015",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "Pro forma combined financial statements in a merger model show:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Historical results only of the acquirer"
+      },
+      {
+        "id": "b",
+        "text": "Adjusted combined results as if the transaction occurred at a specified date"
+      },
+      {
+        "id": "c",
+        "text": "Only the target's balance sheet alone"
+      },
+      {
+        "id": "d",
+        "text": "Cash flow with no adjustments"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Pro forma reflects combined entity with purchase accounting adjustments.",
+    "distractorExplanations": {
+      "a": "Too narrow.",
+      "c": "Combined view needed.",
+      "d": "Adjustments are central."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-001",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "In an IPO, the greenshoe (overallotment) option allows underwriters to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cancel the registration statement permanently"
+      },
+      {
+        "id": "b",
+        "text": "Avoid SEC review"
+      },
+      {
+        "id": "c",
+        "text": "Sell up to 15% additional shares if demand exceeds the offering"
+      },
+      {
+        "id": "d",
+        "text": "Pay no commissions"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Greenshoe stabilizes pricing by covering short position or issuing extra shares.",
+    "distractorExplanations": {
+      "a": "Registration continues.",
+      "b": "SEC review still required.",
+      "d": "Compensation still applies."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-002",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "A follow-on offering by an already public company is called:",
+    "options": [
+      {
+        "id": "a",
+        "text": "An initial public offering"
+      },
+      {
+        "id": "b",
+        "text": "A private placement to one investor only always"
+      },
+      {
+        "id": "c",
+        "text": "A tender offer for control always"
+      },
+      {
+        "id": "d",
+        "text": "A secondary/follow-on offering (primary or secondary shares depending on structure)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Follow-ons raise additional equity after listing.",
+    "distractorExplanations": {
+      "a": "IPO is first public sale.",
+      "b": "Can be broadly marketed registered offering.",
+      "c": "Different transaction type."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-003",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "High-yield bond offerings are primarily sold to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Institutional investors accepting higher credit risk for yield"
+      },
+      {
+        "id": "b",
+        "text": "Retail bank depositors with FDIC insurance"
+      },
+      {
+        "id": "c",
+        "text": "Only municipal issuers"
+      },
+      {
+        "id": "d",
+        "text": "Federal Reserve discount window"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "HY bonds target institutional buyers seeking yield over IG credit.",
+    "distractorExplanations": {
+      "b": "Not bank deposits.",
+      "c": "Corporate issuers.",
+      "d": "Not applicable."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-004",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "A convertible bond gives holders:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Voting rights without conversion"
+      },
+      {
+        "id": "b",
+        "text": "The option to convert into common stock at a set ratio/price"
+      },
+      {
+        "id": "c",
+        "text": "FDIC insurance"
+      },
+      {
+        "id": "d",
+        "text": "Mandatory immediate conversion at issuance always"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Convertibles combine debt with equity conversion option.",
+    "distractorExplanations": {
+      "a": "Conversion is optional typically.",
+      "c": "Not insured.",
+      "d": "Usually optional conversion."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-005",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "Rule 144A offerings allow U.S. issuers to sell securities to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Any retail investor without disclosure"
+      },
+      {
+        "id": "b",
+        "text": "Only foreign governments"
+      },
+      {
+        "id": "c",
+        "text": "Qualified institutional buyers without full SEC registration in many cases"
+      },
+      {
+        "id": "d",
+        "text": "Unaccredited investors freely"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "144A is a common private placement exemption for QIBs.",
+    "distractorExplanations": {
+      "a": "Retail requires registration or other exemption.",
+      "b": "Broader QIB market.",
+      "d": "Accredited/QIB limits apply."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-006",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "In a bought deal, underwriters:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only act as agents with no capital risk"
+      },
+      {
+        "id": "b",
+        "text": "Never price the offering"
+      },
+      {
+        "id": "c",
+        "text": "Avoid all disclosure"
+      },
+      {
+        "id": "d",
+        "text": "Commit to purchase securities from the issuer and resell them"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Bought deals shift risk to underwriters vs best efforts.",
+    "distractorExplanations": {
+      "a": "That is best efforts.",
+      "b": "Underwriters set price.",
+      "c": "Disclosure still required."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-007",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "A PIPE transaction typically involves:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Private investment in public equity, often at a discount with registration rights"
+      },
+      {
+        "id": "b",
+        "text": "Only municipal general obligation bonds"
+      },
+      {
+        "id": "c",
+        "text": "IPO roadshow marketing only"
+      },
+      {
+        "id": "d",
+        "text": "Retail branch banking deposits"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "PIPEs sell registered/unregistered equity privately to institutions.",
+    "distractorExplanations": {
+      "b": "Equity not munis.",
+      "c": "Different from IPO marketing.",
+      "d": "Unrelated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-008",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "Investment-grade debt is commonly rated:",
+    "options": [
+      {
+        "id": "a",
+        "text": "CCC and below only"
+      },
+      {
+        "id": "b",
+        "text": "BBB-/Baa3 and above by major agencies ( nomenclature varies slightly )"
+      },
+      {
+        "id": "c",
+        "text": "Unrated always"
+      },
+      {
+        "id": "d",
+        "text": "Only by equity analysts"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "IG threshold is roughly BBB-/Baa3 and higher.",
+    "distractorExplanations": {
+      "a": "That is high yield.",
+      "c": "Many IG bonds are rated.",
+      "d": "Credit ratings agencies."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-009",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "A shelf registration (S-3) allows issuers to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Avoid all future SEC filings forever"
+      },
+      {
+        "id": "b",
+        "text": "Sell only to employees"
+      },
+      {
+        "id": "c",
+        "text": "Register securities in advance and offer them over time as market conditions allow"
+      },
+      {
+        "id": "d",
+        "text": "Issue unlimited unregistered stock without limits"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Shelf offerings provide flexibility for timely capital raises.",
+    "distractorExplanations": {
+      "a": "Ongoing reporting continues.",
+      "b": "Can be broader.",
+      "d": "Still regulated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-010",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "Bookbuilding in an equity offering refers to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Physical printing of stock certificates only"
+      },
+      {
+        "id": "b",
+        "text": "Auditing historical financials only"
+      },
+      {
+        "id": "c",
+        "text": "Filing Form 10-K annually"
+      },
+      {
+        "id": "d",
+        "text": "Collecting institutional indications of interest to set final price/allocation"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Bookbuilding gathers demand to price and allocate shares.",
+    "distractorExplanations": {
+      "a": "Legacy process, not definition.",
+      "b": "Part of prep but not bookbuilding.",
+      "c": "Annual report filing."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-011",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "A rights offering gives existing shareholders:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The pro rata right to purchase additional shares, often at a discount"
+      },
+      {
+        "id": "b",
+        "text": "Mandatory sale of all holdings"
+      },
+      {
+        "id": "c",
+        "text": "No choice in participation ever"
+      },
+      {
+        "id": "d",
+        "text": "Only bond conversion rights"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Rights offerings protect dilution by offering shares to existing holders.",
+    "distractorExplanations": {
+      "b": "Voluntary participation typical.",
+      "c": "Can renounce or exercise.",
+      "d": "Equity issuance."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-012",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "Mezzanine financing in LBOs often sits:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Above senior secured bank debt in priority always"
+      },
+      {
+        "id": "b",
+        "text": "Between senior debt and equity in the capital structure"
+      },
+      {
+        "id": "c",
+        "text": "Only as common stock"
+      },
+      {
+        "id": "d",
+        "text": "As government grants"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Mezz is subordinated debt or preferred with equity-like features.",
+    "distractorExplanations": {
+      "a": "Usually junior to senior.",
+      "c": "Debt/preferred hybrid.",
+      "d": "Private capital."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-013",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "A block trade is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A small retail order"
+      },
+      {
+        "id": "b",
+        "text": "Only an IPO allocation"
+      },
+      {
+        "id": "c",
+        "text": "A large sale of stock arranged quickly, often at a discount to market"
+      },
+      {
+        "id": "d",
+        "text": "A municipal refunding exclusively"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Blocks facilitate large holder liquidity off-market or accelerated.",
+    "distractorExplanations": {
+      "a": "Size distinguishes blocks.",
+      "b": "Secondary market tool too.",
+      "d": "Different product."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-014",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "Regulation S offerings are directed at:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only U.S. retail investors"
+      },
+      {
+        "id": "b",
+        "text": "Federal employee retirement accounts only"
+      },
+      {
+        "id": "c",
+        "text": "Unregistered insider trades"
+      },
+      {
+        "id": "d",
+        "text": "Offshore non-U.S. persons with distribution compliance periods"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Reg S provides safe harbor for offshore offerings.",
+    "distractorExplanations": {
+      "a": "U.S. persons restricted during compliance period.",
+      "b": "Too narrow.",
+      "c": "Illegal if insider MNPI."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-015",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "Underwriting spread is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The difference between what underwriters pay the issuer and the public offering price"
+      },
+      {
+        "id": "b",
+        "text": "The stock's beta"
+      },
+      {
+        "id": "c",
+        "text": "The company's tax rate"
+      },
+      {
+        "id": "d",
+        "text": "Interest on bank lines only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Spread compensates underwriters for risk and distribution.",
+    "distractorExplanations": {
+      "b": "Risk metric.",
+      "c": "Tax concept.",
+      "d": "Different from equity spread."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-001",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "FINRA Series 79 qualifies individuals to participate in:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Real estate brokerage only"
+      },
+      {
+        "id": "b",
+        "text": "Investment banking representative activities including M&A and underwriting"
+      },
+      {
+        "id": "c",
+        "text": "Insurance variable annuity sales only"
+      },
+      {
+        "id": "d",
+        "text": "Medical licensing"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Series 79 is the Investment Banking Representative exam.",
+    "distractorExplanations": {
+      "a": "Different license.",
+      "c": "Series 6/7 territory.",
+      "d": "Unrelated."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-002",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Section 5 of the Securities Act of 1933 generally requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No disclosure ever"
+      },
+      {
+        "id": "b",
+        "text": "Only oral offers without documentation"
+      },
+      {
+        "id": "c",
+        "text": "Registration or valid exemption before interstate sale of securities"
+      },
+      {
+        "id": "d",
+        "text": "State insurance approval for all stocks"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Securities must be registered or exempt to be sold legally.",
+    "distractorExplanations": {
+      "a": "Disclosure is core.",
+      "b": "Prospectus rules apply.",
+      "d": "Securities regulators, not insurance."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-003",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Regulation D Rule 506(b) offerings:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Allow broad advertising to all retail investors"
+      },
+      {
+        "id": "b",
+        "text": "Require SEC registration always"
+      },
+      {
+        "id": "c",
+        "text": "Prohibit any sales to institutions"
+      },
+      {
+        "id": "d",
+        "text": "Permit unlimited accredited investors and up to 35 sophisticated non-accredited with no general solicitation"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "506(b) is private placement without general solicitation.",
+    "distractorExplanations": {
+      "a": "506(c) allows general solicitation with verified accredited.",
+      "b": "Exempt offering.",
+      "c": "Institutions often participate."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-004",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "The Securities Exchange Act of 1934 primarily regulates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Secondary market trading and ongoing reporting of public companies"
+      },
+      {
+        "id": "b",
+        "text": "Only initial public offerings exclusively"
+      },
+      {
+        "id": "c",
+        "text": "Agricultural commodities exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Bank deposit insurance"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "1934 Act covers exchanges, broker-dealers, and periodic reporting.",
+    "distractorExplanations": {
+      "b": "1933 Act focuses more on primary offerings.",
+      "c": "Broader securities.",
+      "d": "FDIC domain."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-005",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Insider trading liability under classical theory requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Trading only after press release with public information"
+      },
+      {
+        "id": "b",
+        "text": "Trading on material nonpublic information in breach of a duty"
+      },
+      {
+        "id": "c",
+        "text": "Buying only index funds"
+      },
+      {
+        "id": "d",
+        "text": "Disclosing all trades to FINRA examiners daily"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Classical insider trading: MNPI plus duty breach.",
+    "distractorExplanations": {
+      "a": "Public info is permitted.",
+      "c": "Not the test.",
+      "d": "Reporting rules differ."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-006",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "A Form S-1 registration statement includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the CEO's biography without financials"
+      },
+      {
+        "id": "b",
+        "text": "Trade secrets without any risk factors"
+      },
+      {
+        "id": "c",
+        "text": "Prospectus disclosures about business, risks, and financials for an IPO"
+      },
+      {
+        "id": "d",
+        "text": "Insurance policy applications"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "S-1 is the standard IPO registration with comprehensive disclosure.",
+    "distractorExplanations": {
+      "a": "Financial statements required.",
+      "b": "Risk factors mandatory.",
+      "d": "Unrelated."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-007",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "FINRA Rule 2241 governs:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Plumbing code inspections"
+      },
+      {
+        "id": "b",
+        "text": "Aircraft maintenance logs"
+      },
+      {
+        "id": "c",
+        "text": "Hospital HIPAA privacy exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Conflicts of interest related to equity research and public offerings"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "2241 restricts tying research to investment banking compensation.",
+    "distractorExplanations": {
+      "a": "Unrelated.",
+      "b": "Unrelated.",
+      "c": "HIPAA is healthcare."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-008",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Quiet period after an IPO registration generally restricts:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Issuer and syndicate comments that could hype the offering beyond the prospectus"
+      },
+      {
+        "id": "b",
+        "text": "All trading on exchanges forever"
+      },
+      {
+        "id": "c",
+        "text": "Audited financial statement preparation"
+      },
+      {
+        "id": "d",
+        "text": "Employee hiring"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Gun-jumping rules limit pre-offering publicity beyond filed materials.",
+    "distractorExplanations": {
+      "b": "Trading begins after offering.",
+      "c": "Audits continue.",
+      "d": "Operations continue."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-009",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Beneficial ownership reporting for >5% holders often uses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Form 1040 only"
+      },
+      {
+        "id": "b",
+        "text": "Schedule 13D or 13G under Exchange Act Section 13(d)"
+      },
+      {
+        "id": "c",
+        "text": "Blue sky insurance forms only"
+      },
+      {
+        "id": "d",
+        "text": "NOI to EPA exclusively"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "13D/G disclose active/passive >5% positions.",
+    "distractorExplanations": {
+      "a": "Personal tax form.",
+      "c": "State securities may add but SEC uses 13D/G.",
+      "d": "Environmental."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-010",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Underwriter due diligence defense under Section 11 relates to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guaranteed stock price performance"
+      },
+      {
+        "id": "b",
+        "text": "Avoiding all liability regardless of fraud"
+      },
+      {
+        "id": "c",
+        "text": "Reasonable investigation of registration statement disclosures"
+      },
+      {
+        "id": "d",
+        "text": "Only municipal bond defaults"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Due diligence can mitigate Section 11 liability for underwriters.",
+    "distractorExplanations": {
+      "a": "No performance guarantee.",
+      "b": "Fraud still actionable.",
+      "d": "Section 11 applies to registered offerings broadly."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-011",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Regulation FD requires issuers to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Never communicate with investors"
+      },
+      {
+        "id": "b",
+        "text": "File only paper documents"
+      },
+      {
+        "id": "c",
+        "text": "Pay dividends monthly by law"
+      },
+      {
+        "id": "d",
+        "text": "Disclose material information broadly when selectively disclosed to certain parties"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "FD prevents selective disclosure; public dissemination required.",
+    "distractorExplanations": {
+      "a": "Communication allowed with fairness.",
+      "b": "Electronic filing standard.",
+      "c": "No such mandate."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-012",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "A broker-dealer acting as underwriter in a firm commitment offering:",
+    "options": [
+      {
+        "id": "a",
+        "text": "May hold unsold securities on its balance sheet temporarily"
+      },
+      {
+        "id": "b",
+        "text": "Never takes capital risk"
+      },
+      {
+        "id": "c",
+        "text": "Is exempt from FINRA membership"
+      },
+      {
+        "id": "d",
+        "text": "Cannot distribute to institutions"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Firm commitment underwriters buy and resell, bearing risk.",
+    "distractorExplanations": {
+      "b": "That is best efforts.",
+      "c": "FINRA membership typically required.",
+      "d": "Institutions are key buyers."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-013",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Blue sky laws are:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Federal aviation rules"
+      },
+      {
+        "id": "b",
+        "text": "State securities registration and anti-fraud regulations"
+      },
+      {
+        "id": "c",
+        "text": "International maritime treaties only"
+      },
+      {
+        "id": "d",
+        "text": "OSHA workplace standards exclusively"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "States regulate securities offerings and sales within their borders.",
+    "distractorExplanations": {
+      "a": "FAA.",
+      "c": "Not primary definition.",
+      "d": "OSHA."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-014",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Section 16(b) short-swing profit rule applies to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "All retail investors daily"
+      },
+      {
+        "id": "b",
+        "text": "Only foreign sovereign funds exempt always"
+      },
+      {
+        "id": "c",
+        "text": "Officers, directors, and 10%+ shareholders trading within six months"
+      },
+      {
+        "id": "d",
+        "text": "Municipal bond issuers exclusively"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Insiders must disgorge profits on opposite trades within six months.",
+    "distractorExplanations": {
+      "a": "Not all investors.",
+      "b": "Insiders subject if covered.",
+      "d": "Equity insiders."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-015",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "FINRA membership is generally required for firms that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only manufacture consumer goods with no securities activity"
+      },
+      {
+        "id": "b",
+        "text": "Operate hospitals exclusively"
+      },
+      {
+        "id": "c",
+        "text": "Sell groceries only"
+      },
+      {
+        "id": "d",
+        "text": "Engage in securities business with the U.S. public as broker-dealers"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Broker-dealers in the U.S. typically must join FINRA.",
+    "distractorExplanations": {
+      "a": "No securities activity, no BD registration.",
+      "b": "Unrelated.",
+      "c": "Unrelated."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  }
+]

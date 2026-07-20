@@ -3,7 +3,13 @@ import { getMockAccessState, isFullReportUnlocked } from "./access";
 import { getAllMockExams, getMockExamConfig, primaryMock, validateMockExamConfig } from "./configs";
 import { buildMockExamFacts, buildMockExamMarkdown, buildMockExamPageJsonLd } from "./llm";
 import { buildMockSeoDescription } from "./seo";
-import { getQuestionBankForExam, isMockExamRunnable, validateQuestionBank } from "./question-bank";
+import {
+  getQuestionBank,
+  getQuestionBankForExam,
+  isMockExamRunnable,
+  validateQuestionBank,
+} from "./question-bank";
+import { wave4MockExamConfigs } from "./wave4-configs";
 import { buildMockReport, shuffleQuestions, selectSessionQuestions } from "./scoring";
 import { formulaBelongsOnFront } from "./formula-placement";
 import type { MockQuestion } from "./types";
@@ -500,16 +506,17 @@ describe("llm visibility", () => {
     }
   });
 
-  it("keeps Wave 4 waitlist mocks bankless, notify-enabled, and indexable", () => {
-    const waitlist = getAllMockExams().filter((mock) => mock.status === "coming_soon");
-    expect(waitlist.length).toBeGreaterThanOrEqual(50);
+  it("keeps Wave 4 mocks live, runnable, and free-access", () => {
+    expect(wave4MockExamConfigs.length).toBe(50);
 
-    for (const config of waitlist) {
-      expect(config.accessMode).toBe("coming_soon");
-      expect(isMockExamRunnable(config.slug)).toBe(false);
-      expect(getMockAccessState(config.slug)?.interestCaptureEnabled).toBe(true);
-      expect(getMockAccessState(config.slug)?.ctaLabel).toMatch(/notify/i);
+    for (const config of wave4MockExamConfigs) {
+      expect(config.status).toBe("live");
+      expect(config.accessMode).toBe("free_demand_test");
+      expect(isMockExamRunnable(config.slug)).toBe(true);
+      expect(getQuestionBank(config.slug)).toHaveLength(60);
     }
+
+    expect(getAllMockExams().filter((mock) => mock.status === "coming_soon")).toHaveLength(0);
   });
 
   it("publishes Google-friendly structured data for mock pages", () => {

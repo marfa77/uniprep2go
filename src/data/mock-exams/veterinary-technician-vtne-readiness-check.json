@@ -1,0 +1,1982 @@
+[
+  {
+    "id": "veterinary-technician-vtne-readiness-check-pharm-001",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "pharm",
+    "prompt": "A prescription reads 'Canine: Carprofen 75 mg PO q12h.' Before dispensing, the technician should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verify species, weight-based dosing, and label with client/patient instructions per DVM order"
+      },
+      {
+        "id": "b",
+        "text": "Substitute insulin without calling DVM"
+      },
+      {
+        "id": "c",
+        "text": "Skip weight check because all dogs same size"
+      },
+      {
+        "id": "d",
+        "text": "Add extra tablets for stock"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "NSAIDs require species/weight verification and accurate labeling under veterinarian supervision.",
+    "distractorExplanations": {
+      "b": "Different drug class.",
+      "c": "Dosing is weight-dependent.",
+      "d": "Inventory theft/diversion."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-pharm-002",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "pharm",
+    "prompt": "Controlled substance log in veterinary hospital must record:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only weather that day"
+      },
+      {
+        "id": "b",
+        "text": "Date, client/patient, drug, amount dispensed/administered, balance, and responsible personnel"
+      },
+      {
+        "id": "c",
+        "text": "Technician guesses without signature"
+      },
+      {
+        "id": "d",
+        "text": "Nothing if DVM present"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "DEA/state rules require perpetual inventory and documentation for controlled drugs.",
+    "distractorExplanations": {
+      "a": "Irrelevant.",
+      "c": "Signatures/accountability required.",
+      "d": "Records always required."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-pharm-003",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "pharm",
+    "prompt": "Extra-label drug use (ELDU) in animals means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Using only human OTC without DVM"
+      },
+      {
+        "id": "b",
+        "text": "Always illegal without exception"
+      },
+      {
+        "id": "c",
+        "text": "Using drug in manner not on label (species, dose, route) under valid VCPR with oversight"
+      },
+      {
+        "id": "d",
+        "text": "Same as discarding expired drugs"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "ELDU is permitted under AMDUCA with veterinarian direction and food withdrawal rules when applicable.",
+    "distractorExplanations": {
+      "a": "Requires veterinarian.",
+      "b": "ELDU legal with conditions.",
+      "d": "Unrelated."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-pharm-004",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "pharm",
+    "prompt": "Calculate volume: Dose 0.02 mg/kg, concentration 0.5 mg/mL, patient 10 kg. Volume needed:",
+    "options": [
+      {
+        "id": "a",
+        "text": "2.5 mL"
+      },
+      {
+        "id": "b",
+        "text": "0.04 mL"
+      },
+      {
+        "id": "c",
+        "text": "10 mL"
+      },
+      {
+        "id": "d",
+        "text": "0.4 mL"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Dose = 0.02×10 = 0.2 mg; volume = 0.2/0.5 = 0.4 mL.",
+    "distractorExplanations": {
+      "a": "Math error.",
+      "b": "Decimal error.",
+      "c": "Excessive volume."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-pharm-005",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "pharm",
+    "prompt": "Insulin U-100 10 units for dog requires syringe:",
+    "options": [
+      {
+        "id": "a",
+        "text": "U-100 insulin syringe with correct unit marking"
+      },
+      {
+        "id": "b",
+        "text": "3 mL luer slip syringe without unit calibration for insulin"
+      },
+      {
+        "id": "c",
+        "text": "TB syringe in mL only without conversion knowledge"
+      },
+      {
+        "id": "d",
+        "text": "Oral syringe in teaspoons"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Insulin must be measured with appropriate U-100 syringe to avoid dosing errors.",
+    "distractorExplanations": {
+      "b": "Wrong calibration risks overdose.",
+      "c": "Requires insulin syringe or careful conversion.",
+      "d": "Insulin not oral."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-pharm-006",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "pharm",
+    "prompt": "Compounding omeprazole suspension for cat should include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Xylitol sweetener always safe in cats"
+      },
+      {
+        "id": "b",
+        "text": "Flavor/formulation suitable for species and beyond-use dating per pharmacist/DVM protocol"
+      },
+      {
+        "id": "c",
+        "text": "Human alcohol-based elixir without adjustment"
+      },
+      {
+        "id": "d",
+        "text": "No label because cat cannot read"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Veterinary compounding considers species toxicity (e.g., avoid xylitol in dogs) and stability.",
+    "distractorExplanations": {
+      "a": "Xylitol toxic to dogs; species matters.",
+      "c": "Alcohol may be inappropriate.",
+      "d": "Label required for client."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-pharm-007",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "pharm",
+    "prompt": "Drug storage: reconstituted injectable antibiotic typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Left at room temp indefinitely after mixing"
+      },
+      {
+        "id": "b",
+        "text": "Frozen after mixing always"
+      },
+      {
+        "id": "c",
+        "text": "Refrigerated with labeled beyond-use date per manufacturer"
+      },
+      {
+        "id": "d",
+        "text": "Mixed weeks in advance without dating"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Follow manufacturer stability after reconstitution; label BUD.",
+    "distractorExplanations": {
+      "a": "Stability limited.",
+      "b": "Freezing may inactivate.",
+      "d": "BUD required."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-pharm-008",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "pharm",
+    "prompt": "Dispensing phenobarbital refill requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Client verbal request only without record"
+      },
+      {
+        "id": "b",
+        "text": "Unlimited refills without DVM"
+      },
+      {
+        "id": "c",
+        "text": "Transfer to human pharmacy without Rx"
+      },
+      {
+        "id": "d",
+        "text": "Valid prescription within refill limits and controlled drug accountability"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Schedule IV controlled anticonvulsant requires prescription compliance and logs.",
+    "distractorExplanations": {
+      "a": "Documentation required.",
+      "b": "Refills per Rx only.",
+      "c": "Requires veterinary Rx workflow."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-pharm-009",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "pharm",
+    "prompt": "Topical flea product labeled dogs only applied to cat may cause:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Permethrin/pyrethrin toxicity in cats if dog-only product"
+      },
+      {
+        "id": "b",
+        "text": "Improved feline hair shine only"
+      },
+      {
+        "id": "c",
+        "text": "No risk ever across species"
+      },
+      {
+        "id": "d",
+        "text": "Automatic immunity"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Many canine spot-ons contain permethrin toxic to cats; species labeling critical.",
+    "distractorExplanations": {
+      "b": "Can cause seizures/death in cats.",
+      "c": "Species differences significant.",
+      "d": "False."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-pharm-010",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "pharm",
+    "prompt": "Medication error: wrong drug given to patient. Immediate step:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hide error from client"
+      },
+      {
+        "id": "b",
+        "text": "Notify DVM immediately, monitor patient, document, initiate adverse event protocol"
+      },
+      {
+        "id": "c",
+        "text": "Wait until next week"
+      },
+      {
+        "id": "d",
+        "text": "Give another random drug to cancel"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Rapid notification and supportive care reduce harm; full documentation required.",
+    "distractorExplanations": {
+      "a": "Concealment unethical/illegal.",
+      "c": "Delay harmful.",
+      "d": "Compounds risk."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-pharm-011",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "pharm",
+    "prompt": "Route IM injection in small animal often preferred site:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Intravenous only always for all IM orders"
+      },
+      {
+        "id": "b",
+        "text": "Subcutaneous same as IV bolus always"
+      },
+      {
+        "id": "c",
+        "text": "Quadriceps or lumbar epaxial muscles per clinic protocol"
+      },
+      {
+        "id": "d",
+        "text": "Oral route for injectable only"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "IM sites include quadriceps/epaxial with aspiration per policy.",
+    "distractorExplanations": {
+      "a": "IM not IV.",
+      "b": "Different routes.",
+      "d": "Injectable not oral."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-pharm-012",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "pharm",
+    "prompt": "Antibiotic compliance counseling for client includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stop when half pills remain for savings"
+      },
+      {
+        "id": "b",
+        "text": "Share leftovers with neighbor's pet"
+      },
+      {
+        "id": "c",
+        "text": "Double dose if one dose missed always"
+      },
+      {
+        "id": "d",
+        "text": "Complete full course even if pet looks better unless DVM directs stop"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Incomplete courses promote resistance; consult DVM if dose missed.",
+    "distractorExplanations": {
+      "a": "Premature stop risks relapse/resistance.",
+      "b": "Sharing illegal/unsafe.",
+      "c": "Doubling without DVM unsafe."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-pharm-013",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "pharm",
+    "prompt": "Handling chemotherapeutic waste in clinic requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Segregation, PPE, and disposal per hazardous drug protocol"
+      },
+      {
+        "id": "b",
+        "text": "Regular trash bin"
+      },
+      {
+        "id": "c",
+        "text": "Drain disposal always"
+      },
+      {
+        "id": "d",
+        "text": "Client home compost"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Chemo agents require HD waste containers and staff protection.",
+    "distractorExplanations": {
+      "b": "Regulated waste.",
+      "c": "Environmental prohibition typically.",
+      "d": "Improper disposal."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-pharm-014",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "pharm",
+    "prompt": "Microchip pre-medication is not a substitute for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Patient identification"
+      },
+      {
+        "id": "b",
+        "text": "Proper anesthetic protocol when surgery/dental performed"
+      },
+      {
+        "id": "c",
+        "text": "Medical record"
+      },
+      {
+        "id": "d",
+        "text": "Client communication"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Microchips identify pets; anesthesia requires full assessment and protocols.",
+    "distractorExplanations": {
+      "a": "Microchip aids ID.",
+      "c": "Records still needed.",
+      "d": "Communication still needed."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-pharm-015",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "pharm",
+    "prompt": "Drug interaction: NSAID plus corticosteroid increases risk of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Improved joint healing always"
+      },
+      {
+        "id": "b",
+        "text": "Lower bleeding risk"
+      },
+      {
+        "id": "c",
+        "text": "GI ulceration and renal injury"
+      },
+      {
+        "id": "d",
+        "text": "No interaction"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Concurrent NSAID/steroid raises GI/renal adverse event risk; DVM weighs benefit.",
+    "distractorExplanations": {
+      "a": "Healing not improved.",
+      "b": "Bleeding risk increases.",
+      "d": "Known interaction."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-nursing-001",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "nursing",
+    "prompt": "Normal heart rate for resting adult dog is approximately:",
+    "options": [
+      {
+        "id": "a",
+        "text": "10–20 bpm"
+      },
+      {
+        "id": "b",
+        "text": "300–400 bpm always"
+      },
+      {
+        "id": "c",
+        "text": "Identical to human 60 always"
+      },
+      {
+        "id": "d",
+        "text": "60–140 bpm depending on size"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Canine HR varies with size; smaller dogs tend higher end.",
+    "distractorExplanations": {
+      "a": "Too low for resting dog.",
+      "b": "Too high resting.",
+      "c": "Varies by size."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-nursing-002",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "nursing",
+    "prompt": "Mucous membranes pink and moist with CRT <2 sec suggest:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Adequate perfusion/hydration baseline"
+      },
+      {
+        "id": "b",
+        "text": "Shock always"
+      },
+      {
+        "id": "c",
+        "text": "Hyperthermia always"
+      },
+      {
+        "id": "d",
+        "text": "Anemia impossible"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Pink moist MM and quick CRT indicate good perfusion in stable patient.",
+    "distractorExplanations": {
+      "b": "Shock shows pale/tacky prolonged CRT.",
+      "c": "Not specific to fever alone.",
+      "d": "Anemia may still show pink early."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-nursing-003",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "nursing",
+    "prompt": "Restraint for jugular blood draw in cat often uses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Full choke collar tension"
+      },
+      {
+        "id": "b",
+        "text": "Towel wrap (burrito) with minimal stress handling"
+      },
+      {
+        "id": "c",
+        "text": "No restraint speeding poke"
+      },
+      {
+        "id": "d",
+        "text": "Hanging by scruff alone always sufficient for all cats"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Low-stress feline handling with towel restraint improves safety and sample quality.",
+    "distractorExplanations": {
+      "a": "Airway compromise risk.",
+      "c": "Unsafe for staff/patient.",
+      "d": "Scruff alone often insufficient; combine techniques."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-nursing-004",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "nursing",
+    "prompt": "Maintenance fluid rate for dog often calculated as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "500 mL total for any size"
+      },
+      {
+        "id": "b",
+        "text": "10 mL/kg/hr always regardless of size without assessment"
+      },
+      {
+        "id": "c",
+        "text": "40–60 mL/kg/day (rough estimate) adjusted for losses"
+      },
+      {
+        "id": "d",
+        "text": "Oral water only for surgical patient NPO"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Maintenance estimates vary; surgical/NPO patients need IV fluids per DVM.",
+    "distractorExplanations": {
+      "a": "Size dependent.",
+      "b": "Requires individual calculation.",
+      "d": "NPO surgical patients need IV typically."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-nursing-005",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "nursing",
+    "prompt": "Bandage check after limb surgery includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignore until removal date"
+      },
+      {
+        "id": "b",
+        "text": "Tighten if swelling increases"
+      },
+      {
+        "id": "c",
+        "text": "Allow patient to chew if bored"
+      },
+      {
+        "id": "d",
+        "text": "Swelling, odor, moisture, bandage position, and distal perfusion"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Bandage complications cause ischemia/infection; monitor CMS and cleanliness.",
+    "distractorExplanations": {
+      "a": "Daily checks required.",
+      "b": "Swelling may require loosen/remove.",
+      "c": "Chewing removes protection."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-nursing-006",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "nursing",
+    "prompt": "Nutritional support for anorexic cat at risk of hepatic lipidosis may require:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Timely enteral feeding plan per DVM"
+      },
+      {
+        "id": "b",
+        "text": "Starvation until appetite returns weeks"
+      },
+      {
+        "id": "c",
+        "text": "Dog food only for convenience"
+      },
+      {
+        "id": "d",
+        "text": "Only water for 7 days"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Cats hepatic lipidosis risk with prolonged anorexia; feeding tubes/plans needed.",
+    "distractorExplanations": {
+      "b": "Prolonged starvation dangerous.",
+      "c": "Species-appropriate nutrition required.",
+      "d": "Extended fast harmful."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-nursing-007",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "nursing",
+    "prompt": "Isolation for parvovirus puppy includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Free roam waiting room"
+      },
+      {
+        "id": "b",
+        "text": "Separate housing, PPE, disinfection with appropriate virucidal agents"
+      },
+      {
+        "id": "c",
+        "text": "Shared bedding with healthy puppies"
+      },
+      {
+        "id": "d",
+        "text": "No hand hygiene"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Parvo highly contagious; strict isolation and bleach-compatible disinfection required.",
+    "distractorExplanations": {
+      "a": "Contagion risk.",
+      "c": "Fomite transmission.",
+      "d": "Hand hygiene essential."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-nursing-008",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "nursing",
+    "prompt": "Pain assessment in non-verbal animal uses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Human pain score verbally only"
+      },
+      {
+        "id": "b",
+        "text": "Assume no pain if sleeping"
+      },
+      {
+        "id": "c",
+        "text": "Behavior, posture, appetite, vocalization, palpation response (pain scales)"
+      },
+      {
+        "id": "d",
+        "text": "Ignore because animals feel no pain myth"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Validated pain scales and behavior observation guide analgesia.",
+    "distractorExplanations": {
+      "a": "Animals cannot verbalize.",
+      "b": "Sleep can be pain response.",
+      "d": "Animals experience pain."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-nursing-009",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "nursing",
+    "prompt": "Temperature 103.8°F in dog at rest suggests:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Normal always"
+      },
+      {
+        "id": "b",
+        "text": "Hypothermia"
+      },
+      {
+        "id": "c",
+        "text": "Error never recheck"
+      },
+      {
+        "id": "d",
+        "text": "Fever/hyperthermia warranting evaluation"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Canine normal ~99.5–102.5°F; elevation suggests infection/inflammation/heat.",
+    "distractorExplanations": {
+      "a": "Above normal.",
+      "b": "Hypothermia is low temp.",
+      "c": "Recheck and assess."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-nursing-010",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "nursing",
+    "prompt": "Elizabethan collar purpose:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prevent self-trauma to wounds/incisions"
+      },
+      {
+        "id": "b",
+        "text": "Fashion accessory only"
+      },
+      {
+        "id": "c",
+        "text": "Replace anesthesia"
+      },
+      {
+        "id": "d",
+        "text": "Improve hearing"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "E-collars protect surgical sites from licking/chewing.",
+    "distractorExplanations": {
+      "b": "Medical purpose.",
+      "c": "Not anesthetic.",
+      "d": "Unrelated."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-nursing-011",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "nursing",
+    "prompt": "Urinary catheter care includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Open drainage on floor"
+      },
+      {
+        "id": "b",
+        "text": "Closed system, clean prep, monitor output and kinking"
+      },
+      {
+        "id": "c",
+        "text": "No output recording"
+      },
+      {
+        "id": "d",
+        "text": "Reuse without sterilization between patients"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Catheter-associated UTI prevention uses closed sterile technique and monitoring.",
+    "distractorExplanations": {
+      "a": "Contamination risk.",
+      "c": "Output guides fluid plan.",
+      "d": "Single patient sterile use."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-nursing-012",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "nursing",
+    "prompt": "Zoonotic concern with diarrheic puppy includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No human risk ever"
+      },
+      {
+        "id": "b",
+        "text": "Share bed with immunocompromised owner recommended"
+      },
+      {
+        "id": "c",
+        "text": "Salmonella/Campylobacter transmission with PPE and hygiene"
+      },
+      {
+        "id": "d",
+        "text": "Skip handwashing for speed"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "GI pathogens zoonotic; PPE and hand hygiene protect staff/clients.",
+    "distractorExplanations": {
+      "a": "Zoonoses exist.",
+      "b": "Unsafe for immunocompromised.",
+      "d": "Handwashing mandatory."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-nursing-013",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "nursing",
+    "prompt": "Post-op incision redness with purulent discharge should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Be ignored until suture removal"
+      },
+      {
+        "id": "b",
+        "text": "Be treated by client with essential oils only without call"
+      },
+      {
+        "id": "c",
+        "text": "Hidden from DVM"
+      },
+      {
+        "id": "d",
+        "text": "Be documented and reported to DVM promptly"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Purulent discharge suggests infection/dehiscence needing veterinary assessment.",
+    "distractorExplanations": {
+      "a": "Needs timely intervention.",
+      "b": "Essential oils not substitute.",
+      "c": "Withholding info harms patient."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-nursing-014",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "nursing",
+    "prompt": "Large breed deep chested dog post-op bloat risk monitoring includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Abdominal distention, unproductive retching, restlessness"
+      },
+      {
+        "id": "b",
+        "text": "Only tail wagging"
+      },
+      {
+        "id": "c",
+        "text": "Ignore GI signs"
+      },
+      {
+        "id": "d",
+        "text": "Feed large meal immediately"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "GDV signs are emergency; prophylactic protocols may apply peri-op.",
+    "distractorExplanations": {
+      "b": "Insufficient monitor.",
+      "c": "GI signs critical.",
+      "d": "Feeding protocol per DVM."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-nursing-015",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "nursing",
+    "prompt": "Client education on subcutaneous fluids at home should emphasize:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reuse needles indefinitely"
+      },
+      {
+        "id": "b",
+        "text": "Sterile needle/site rotation, rate/volume per DVM, and when to call"
+      },
+      {
+        "id": "c",
+        "text": "IV into vein at home without training"
+      },
+      {
+        "id": "d",
+        "text": "Any fluid bag expired OK"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Home SQ fluids require aseptic technique and clear stop signs.",
+    "distractorExplanations": {
+      "a": "Single use needles.",
+      "c": "IV at home requires advanced training.",
+      "d": "Expired fluids unsafe."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-diagnostics-001",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "diagnostics",
+    "prompt": "Blood sample for CBC with EDTA tube requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hemolysis from vigorous shaking encouraged"
+      },
+      {
+        "id": "b",
+        "text": "Serum separator tube instead always"
+      },
+      {
+        "id": "c",
+        "text": "Gentle mix after draw; run within stability window"
+      },
+      {
+        "id": "d",
+        "text": "Leave at hot car dashboard days"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "EDTA purple top for CBC; gentle inversion prevents hemolysis/clotting errors.",
+    "distractorExplanations": {
+      "a": "Hemolysis invalidates results.",
+      "b": "Serum tube for chemistries typically.",
+      "d": "Stability limited."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-diagnostics-002",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "diagnostics",
+    "prompt": "Fecal flotation test detects:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fractured femur"
+      },
+      {
+        "id": "b",
+        "text": "Blood glucose"
+      },
+      {
+        "id": "c",
+        "text": "Heart murmur grade"
+      },
+      {
+        "id": "d",
+        "text": "Many intestinal parasite ova"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Flotation concentrates parasite eggs in feces.",
+    "distractorExplanations": {
+      "a": "Radiology.",
+      "b": "Blood test.",
+      "c": "Auscultation."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-diagnostics-003",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "diagnostics",
+    "prompt": "Radiograph personnel safety relies on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "ALARA principles, collimation, PPE, and distance/time limits"
+      },
+      {
+        "id": "b",
+        "text": "Holding beam on without PPE daily"
+      },
+      {
+        "id": "c",
+        "text": "Pregnancy no extra precautions ever"
+      },
+      {
+        "id": "d",
+        "text": "Digital means zero radiation"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "As low as reasonably achievable with lead aprons, thyroid shields, and distance.",
+    "distractorExplanations": {
+      "b": "Unsafe practice.",
+      "c": "Pregnant staff limit exposure.",
+      "d": "Digital still emits radiation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-diagnostics-004",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "diagnostics",
+    "prompt": "Fine needle aspirate sample handling:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave syringe in sun hours"
+      },
+      {
+        "id": "b",
+        "text": "Prepare slides immediately or place in appropriate transport medium per lab"
+      },
+      {
+        "id": "c",
+        "text": "Freeze all cytology always"
+      },
+      {
+        "id": "d",
+        "text": "Discard if blood present always without DVM review"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Rapid slide prep or fluid transfer preserves cytology quality.",
+    "distractorExplanations": {
+      "a": "Degradation occurs.",
+      "c": "Cytology usually not frozen fresh smears.",
+      "d": "Blood may be present; DVM interprets."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-diagnostics-005",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "diagnostics",
+    "prompt": "Heartworm antigen test false negatives may occur with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guaranteed detection of one larva always"
+      },
+      {
+        "id": "b",
+        "text": "All cats identical to dogs sensitivity"
+      },
+      {
+        "id": "c",
+        "text": "Low worm burden or timing before antigenemia"
+      },
+      {
+        "id": "d",
+        "text": "Testing while on preventive always invalid"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Antigen tests detect adult female antigen; early/low infections may miss.",
+    "distractorExplanations": {
+      "a": "Sensitivity not 100%.",
+      "b": "Feline heartworm testing differs.",
+      "d": "Preventives don't always invalidate screening."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-diagnostics-006",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "diagnostics",
+    "prompt": "Urine specific gravity 1.010 in dog suggests:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perfect health always"
+      },
+      {
+        "id": "b",
+        "text": "Dehydration always"
+      },
+      {
+        "id": "c",
+        "text": "Not measurable in dogs"
+      },
+      {
+        "id": "d",
+        "text": "Poor concentrating ability/isosthenuria range warranting evaluation"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Persistently low USG may indicate renal disease or other pathology.",
+    "distractorExplanations": {
+      "a": "Context needed.",
+      "b": "Dehydration usually raises USG.",
+      "c": "Measurable."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-diagnostics-007",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "diagnostics",
+    "prompt": "Snap test invalid result line missing control should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Repeated with new device; invalid not interpreted"
+      },
+      {
+        "id": "b",
+        "text": "Called positive anyway"
+      },
+      {
+        "id": "c",
+        "text": "Called negative to save cost"
+      },
+      {
+        "id": "d",
+        "text": "Photoshopped in record"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "In-house tests require valid control line before result interpretation.",
+    "distractorExplanations": {
+      "b": "Invalid unusable.",
+      "c": "Cannot assume negative.",
+      "d": "Fraudulent."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-diagnostics-008",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "diagnostics",
+    "prompt": "Microscope oil immersion objective requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Water on dry 4x only"
+      },
+      {
+        "id": "b",
+        "text": "Drop of immersion oil between slide and 100x objective"
+      },
+      {
+        "id": "c",
+        "text": "No cover slip ever"
+      },
+      {
+        "id": "d",
+        "text": "Cleaning never after use"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Oil couples 100x lens to slide; clean after use to prevent damage.",
+    "distractorExplanations": {
+      "a": "Wrong lens/fluid.",
+      "c": "Thin smears use cover slip.",
+      "d": "Oil must be wiped."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-diagnostics-009",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "diagnostics",
+    "prompt": "Reference lab sample submission needs:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unlabeled tube in envelope"
+      },
+      {
+        "id": "b",
+        "text": "Hemolyzed sample without note"
+      },
+      {
+        "id": "c",
+        "text": "Correct tube, fasting status noted, patient ID, and shipping temperature requirements"
+      },
+      {
+        "id": "d",
+        "text": "Weekend delay at room temp for unstable test always OK"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Lab rejection occurs with wrong tube, hemolysis, or improper transport.",
+    "distractorExplanations": {
+      "a": "ID required.",
+      "b": "Note hemolysis; may recollect.",
+      "d": "Some tests require refrigeration."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-diagnostics-010",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "diagnostics",
+    "prompt": "Blood glucose meter in clinic should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Human meter on bird without validation"
+      },
+      {
+        "id": "b",
+        "text": "Never cleaned"
+      },
+      {
+        "id": "c",
+        "text": "Shared lancet between all patients"
+      },
+      {
+        "id": "d",
+        "text": "Calibrated/quality controlled per manufacturer for species if applicable"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "QC checks and species-appropriate meters improve accuracy.",
+    "distractorExplanations": {
+      "a": "Species differences affect readings.",
+      "b": "Cleaning prevents contamination.",
+      "c": "Single-use lancets prevent disease spread."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-diagnostics-011",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "diagnostics",
+    "prompt": "Ultrasound gel purpose:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Coupling transducer to skin eliminating air artifacts"
+      },
+      {
+        "id": "b",
+        "text": "Sterilizing surgical field"
+      },
+      {
+        "id": "c",
+        "text": "Oral rehydration"
+      },
+      {
+        "id": "d",
+        "text": "Radiation shielding"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Gel transmits sound waves; warm if needed for patient comfort.",
+    "distractorExplanations": {
+      "b": "Not antiseptic primary.",
+      "c": "Not ingestible.",
+      "d": "Not radiation related."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-diagnostics-012",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "diagnostics",
+    "prompt": "Cytology of sebaceous adenoma typically shows:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Malaria parasites"
+      },
+      {
+        "id": "b",
+        "text": "Clusters of sebaceous cells often with basaloid proliferation per pathologist read"
+      },
+      {
+        "id": "c",
+        "text": "Red blood cells only always malignant"
+      },
+      {
+        "id": "d",
+        "text": "Plant pollen only means cancer"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Sebaceous tumors have characteristic cytology; pathologist confirms.",
+    "distractorExplanations": {
+      "a": "Unrelated.",
+      "c": "Not automatic malignancy.",
+      "d": "Pollen contamination possible benign."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-diagnostics-013",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "diagnostics",
+    "prompt": "ELISA heartworm test positive should prompt:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Immediate melarsomine without evaluation always at home"
+      },
+      {
+        "id": "b",
+        "text": "Ignore if asymptomatic"
+      },
+      {
+        "id": "c",
+        "text": "DVM interpretation, confirmatory testing if indicated, and staging before treatment"
+      },
+      {
+        "id": "d",
+        "text": "Client internet treatment only"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Adulticide therapy requires staging, microfilaria status, and complication assessment.",
+    "distractorExplanations": {
+      "a": "Treatment protocol complex.",
+      "b": "Asymptomatic still needs plan.",
+      "d": "Unsafe without DVM."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-diagnostics-014",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "diagnostics",
+    "prompt": "Skin scraping deep enough for demodex should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Be superficial hair only always"
+      },
+      {
+        "id": "b",
+        "text": "Use oil or liquid on slide per technique"
+      },
+      {
+        "id": "c",
+        "text": "Never examine under microscope"
+      },
+      {
+        "id": "d",
+        "text": "Cause capillary ooze sampled from several sites"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Deep scrapings to blood with mineral oil help recover Demodex mites.",
+    "distractorExplanations": {
+      "a": "Superficial misses mites.",
+      "b": "Oil aids mite recovery.",
+      "c": "Microscopy essential."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-diagnostics-015",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "diagnostics",
+    "prompt": "Quality assurance in lab includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Control runs, maintenance logs, and proficiency testing when applicable"
+      },
+      {
+        "id": "b",
+        "text": "Skipping controls to save money"
+      },
+      {
+        "id": "c",
+        "text": "One calibration at install forever"
+      },
+      {
+        "id": "d",
+        "text": "Hide QC failures"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "QA documents accuracy/reliability of diagnostic equipment and processes.",
+    "distractorExplanations": {
+      "b": "Controls required.",
+      "c": "Periodic calibration needed.",
+      "d": "Failures must be addressed."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-surgery-dentistry-001",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "surgery-dentistry",
+    "prompt": "Preoperative fasting in dog typically aims to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Improve coat shine only"
+      },
+      {
+        "id": "b",
+        "text": "Reduce aspiration risk under anesthesia"
+      },
+      {
+        "id": "c",
+        "text": "Allow full meal 1 hour before always"
+      },
+      {
+        "id": "d",
+        "text": "Eliminate need for IV fluids"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "NPO guidelines reduce regurgitation/aspiration during induction/recovery.",
+    "distractorExplanations": {
+      "a": "Unrelated.",
+      "c": "Recent food increases risk.",
+      "d": "Fluids still often given."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-surgery-dentistry-002",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "surgery-dentistry",
+    "prompt": "Sterile surgical field break occurs when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Scrubbed person maintains hands above waist in field"
+      },
+      {
+        "id": "b",
+        "text": "Closed pack opened aseptically"
+      },
+      {
+        "id": "c",
+        "text": "Non-sterile item touches gown, glove, or field"
+      },
+      {
+        "id": "d",
+        "text": "Sterile drape applied after prep"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Any contamination requires discarding affected supplies or re-scrub as policy dictates.",
+    "distractorExplanations": {
+      "a": "Correct sterile behavior.",
+      "b": "Proper opening technique.",
+      "d": "Appropriate sequence."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-surgery-dentistry-003",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "surgery-dentistry",
+    "prompt": "Anesthetic monitoring includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only nail polish color"
+      },
+      {
+        "id": "b",
+        "text": "Client opinion only"
+      },
+      {
+        "id": "c",
+        "text": "No monitoring until recovery"
+      },
+      {
+        "id": "d",
+        "text": "Heart rate, respiratory rate, BP/perfusion, temperature, depth of anesthesia"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Multimodal monitoring detects hypotension, hypothermia, and hypoventilation early.",
+    "distractorExplanations": {
+      "a": "Insufficient.",
+      "b": "Objective monitoring required.",
+      "c": "Intra-op monitoring mandatory."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-surgery-dentistry-004",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "surgery-dentistry",
+    "prompt": "Dental prophy ultrasonic scaler use requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Water flow, proper tip, and post-op radiographs policy per DVM"
+      },
+      {
+        "id": "b",
+        "text": "Dry scaling without suction always"
+      },
+      {
+        "id": "c",
+        "text": "No PPE for aerosols"
+      },
+      {
+        "id": "d",
+        "text": "Extract all teeth routinely"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Dental aerosols require PPE; scaling followed by polishing and assessment.",
+    "distractorExplanations": {
+      "b": "Coolant/suction needed.",
+      "c": "Eye/mouth protection important.",
+      "d": "Extractions case-specific."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-surgery-dentistry-005",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "surgery-dentistry",
+    "prompt": "Surgical hand scrub prior to gloving includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quick rinse only"
+      },
+      {
+        "id": "b",
+        "text": "Mechanical cleaning of nails, hands, forearms per protocol time"
+      },
+      {
+        "id": "c",
+        "text": "Perfume application"
+      },
+      {
+        "id": "d",
+        "text": "Reuse previous day's gloves unwashed"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Surgical antisepsis follows timed scrub or approved alcohol-based protocol.",
+    "distractorExplanations": {
+      "a": "Inadequate.",
+      "c": "Not antiseptic.",
+      "d": "Gloves require hand antisepsis each case."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-surgery-dentistry-006",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "surgery-dentistry",
+    "prompt": "Post-op pain management multimodal approach may combine:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No analgesia because animals hide pain myth only"
+      },
+      {
+        "id": "b",
+        "text": "Human acetaminophen routinely in cats"
+      },
+      {
+        "id": "c",
+        "text": "Local blocks, NSAIDs (if safe), opioids as DVM orders"
+      },
+      {
+        "id": "d",
+        "text": "Alcohol rub on incision"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Balanced analgesia improves recovery; species-safe drugs only.",
+    "distractorExplanations": {
+      "a": "Pain control standard of care.",
+      "b": "Acetaminophen toxic to cats.",
+      "d": "Harmful to tissue."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-surgery-dentistry-007",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "surgery-dentistry",
+    "prompt": "Autoclave sterility indicator strip failure means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use anyway if busy"
+      },
+      {
+        "id": "b",
+        "text": "Indicator cosmetic only"
+      },
+      {
+        "id": "c",
+        "text": "Freeze pack instead"
+      },
+      {
+        "id": "d",
+        "text": "Pack not sterile—do not use; reprocess"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Biological/chemical indicators confirm cycle efficacy.",
+    "distractorExplanations": {
+      "a": "Unsafe.",
+      "b": "Indicators validate sterilization.",
+      "c": "Freezing not sterilization."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-surgery-dentistry-008",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "surgery-dentistry",
+    "prompt": "Endotracheal tube cuff pressure should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Enough to seal without excessive pressure causing tracheal necrosis"
+      },
+      {
+        "id": "b",
+        "text": "Maximal inflation always"
+      },
+      {
+        "id": "c",
+        "text": "Zero inflation always leaking"
+      },
+      {
+        "id": "d",
+        "text": "Not monitored ever"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Cuff manometry or minimal occlusive volume prevents airway leak and pressure injury.",
+    "distractorExplanations": {
+      "b": "Overinflation damages trachea.",
+      "c": "Some seal needed.",
+      "d": "Monitoring recommended."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-surgery-dentistry-009",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "surgery-dentistry",
+    "prompt": "Surgical count policy for sponges/instruments:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Counts optional for speed"
+      },
+      {
+        "id": "b",
+        "text": "Initial and final counts documented; discrepancy resolved before closure"
+      },
+      {
+        "id": "c",
+        "text": "Add extra sponge if short"
+      },
+      {
+        "id": "d",
+        "text": "Ignore if patient small"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Retained foreign bodies prevented by systematic counts.",
+    "distractorExplanations": {
+      "a": "Standard of care requires counts.",
+      "c": "Search if discrepancy.",
+      "d": "Size irrelevant."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-surgery-dentistry-010",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "surgery-dentistry",
+    "prompt": "Dental radiograph in cat reveals tooth resorption. Treatment decided by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Technician alone without DVM"
+      },
+      {
+        "id": "b",
+        "text": "Ignore unless loose"
+      },
+      {
+        "id": "c",
+        "text": "DVM based on staging and pain"
+      },
+      {
+        "id": "d",
+        "text": "Always wait until jaw fracture"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Tooth resorption painful; extraction or treatment per veterinary dental guidelines.",
+    "distractorExplanations": {
+      "a": "DVM treatment plan.",
+      "b": "Hidden pain may exist.",
+      "d": "Proactive care before fracture."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-surgery-dentistry-011",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "surgery-dentistry",
+    "prompt": "Patient warming after anesthesia prevents:",
+    "options": [
+      {
+        "id": "a",
+        "text": "All pain forever"
+      },
+      {
+        "id": "b",
+        "text": "Need for monitoring"
+      },
+      {
+        "id": "c",
+        "text": "Shivering only in humans"
+      },
+      {
+        "id": "d",
+        "text": "Hypothermia prolonging recovery and coagulopathy"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Perioperative hypothermia common; warm air blankets/fluids help.",
+    "distractorExplanations": {
+      "a": "Pain separate issue.",
+      "b": "Monitoring still required.",
+      "c": "Animals shiver too."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-surgery-dentistry-012",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "surgery-dentistry",
+    "prompt": "Scrub cap and mask in surgery reduce:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contamination from hair and droplet spread"
+      },
+      {
+        "id": "b",
+        "text": "Hearing permanently"
+      },
+      {
+        "id": "c",
+        "text": "Need for sterile gloves"
+      },
+      {
+        "id": "d",
+        "text": "Anesthetic gas use entirely"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "PPE minimizes surgical site infection risk.",
+    "distractorExplanations": {
+      "b": "Temporary adjustment.",
+      "c": "Gloves still required.",
+      "d": "Gas still used."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-surgery-dentistry-013",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "surgery-dentistry",
+    "prompt": "Extracting deciduous tooth retained alongside adult tooth requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Client tug at home"
+      },
+      {
+        "id": "b",
+        "text": "DVM extraction to prevent malocclusion/disease"
+      },
+      {
+        "id": "c",
+        "text": "Ignore until abscess only"
+      },
+      {
+        "id": "d",
+        "text": "Human pediatric dentist"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Retained deciduous teeth cause periodontal issues; professional extraction indicated.",
+    "distractorExplanations": {
+      "a": "Unsafe.",
+      "c": "Early intervention better.",
+      "d": "Veterinary dental care."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-surgery-dentistry-014",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "surgery-dentistry",
+    "prompt": "Laser surgery smoke evacuation important because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Smoke improves visibility only"
+      },
+      {
+        "id": "b",
+        "text": "Blow toward open door at staff"
+      },
+      {
+        "id": "c",
+        "text": "Plume contains harmful particulates/bacteria/viable HPV in human literature; use evacuation"
+      },
+      {
+        "id": "d",
+        "text": "No PPE needed ever"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Surgical plume hazardous; evacuation and masks protect staff.",
+    "distractorExplanations": {
+      "a": "Health hazard primary concern.",
+      "b": "Unsafe exposure.",
+      "d": "PPE recommended."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "veterinary-technician-vtne-readiness-check-surgery-dentistry-015",
+    "examSlug": "veterinary-technician-vtne-readiness-check",
+    "topicId": "surgery-dentistry",
+    "prompt": "Recovery from anesthesia monitoring includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Immediate unattended kennel exit"
+      },
+      {
+        "id": "b",
+        "text": "Pull ET tube mid-anesthetic depth without swallow"
+      },
+      {
+        "id": "c",
+        "text": "No observation until next day"
+      },
+      {
+        "id": "d",
+        "text": "Airway patency, temperature, pain, and extubation timing when swallow reflex returns"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Recovery is critical phase for airway obstruction and hypothermia.",
+    "distractorExplanations": {
+      "a": "Supervision required.",
+      "b": "Extubate when swallowing present.",
+      "c": "Continuous early recovery monitoring."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  }
+]

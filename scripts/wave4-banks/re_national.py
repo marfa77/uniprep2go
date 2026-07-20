@@ -1,0 +1,790 @@
+#!/usr/bin/env python3
+"""Shared national real-estate stems for Wave 4 state RE mocks (3 × 15)."""
+
+from __future__ import annotations
+
+from _common import pack
+
+
+def national_rows() -> dict[str, list]:
+    return {
+        "agency-law": [
+            (
+                "A listing broker's primary fiduciary duty to the seller client is to:",
+                {
+                    "a": "Obtain the highest possible price regardless of the seller's instructions",
+                    "b": "Promote the seller's interests with loyalty, care, and obedience within the law",
+                    "c": "Represent both parties equally without disclosure",
+                    "d": "Guarantee a sale within 30 days",
+                },
+                "b",
+                "Agency duties center on loyalty and obedience to lawful client instructions, not guaranteeing outcomes.",
+                {
+                    "a": "Price goals must still follow the client's lawful instructions and market reality.",
+                    "c": "Undisclosed dual representation breaches disclosure duties.",
+                    "d": "Brokers do not guarantee sales.",
+                },
+                "easy",
+            ),
+            (
+                "When must a licensee typically disclose a dual agency or designated agency relationship?",
+                {
+                    "a": "Only after closing",
+                    "b": "Before or as soon as practicable when the dual/designated relationship arises, per applicable rules",
+                    "c": "Never, if both parties are customers",
+                    "d": "Only if the buyer asks in writing after offer acceptance",
+                },
+                "b",
+                "Agency disclosure timing is early—when the dual or designated relationship is created or contemplated.",
+                {
+                    "a": "Post-closing is too late.",
+                    "c": "Customer status does not erase disclosure duties when agency shifts.",
+                    "d": "Disclosure is not optional after acceptance.",
+                },
+                "medium",
+            ),
+            (
+                "An exclusive right-to-sell listing generally means:",
+                {
+                    "a": "The seller may avoid paying a commission if they find the buyer themselves, in every case",
+                    "b": "The listing broker is owed a commission if the property sells during the term, regardless of who finds the buyer (per the agreement)",
+                    "c": "Only the buyer broker can be paid",
+                    "d": "The listing is open to all brokers without a commission agreement",
+                },
+                "b",
+                "Exclusive right-to-sell typically protects the listing broker's commission if a sale occurs during the listing term.",
+                {
+                    "a": "That is more like exclusive agency or open listing variations.",
+                    "c": "Listing agreements address listing-side compensation.",
+                    "d": "Open listings are different.",
+                },
+                "easy",
+            ),
+            (
+                "Earnest money is best described as:",
+                {
+                    "a": "A nonrefundable gift to the listing agent personally",
+                    "b": "A good-faith deposit typically held in escrow/trust pending contract performance",
+                    "c": "The broker's guaranteed commission",
+                    "d": "A municipal transfer tax paid at listing",
+                },
+                "b",
+                "Earnest money shows good faith and is usually escrowed subject to the contract.",
+                {
+                    "a": "It is not a personal gift to the agent.",
+                    "c": "Commission is separate.",
+                    "d": "Transfer taxes are closing items, not earnest money.",
+                },
+                "easy",
+            ),
+            (
+                "A material fact that must typically be disclosed to a buyer includes:",
+                {
+                    "a": "Only the seller's preferred paint color",
+                    "b": "Known latent defects or conditions that could significantly affect value or desirability, as required by law",
+                    "c": "Confidential seller motivations that the seller forbids disclosing and that are not legally required",
+                    "d": "Rumors with no known factual basis that the licensee invents",
+                },
+                "b",
+                "Material property defects and legally required disclosures must be shared; confidential motivations may be protected.",
+                {
+                    "a": "Cosmetic preferences are not material defects.",
+                    "c": "Confidential client info is protected unless disclosure is required.",
+                    "d": "Inventing rumors is improper.",
+                },
+                "medium",
+            ),
+            (
+                "If a buyer customer asks a listing agent for advice on how much to offer, the listing agent should:",
+                {
+                    "a": "Coach the buyer against the seller's interests without disclosure",
+                    "b": "Avoid acting as the buyer's advocate and stay within the listing agency role (or properly create buyer agency if allowed)",
+                    "c": "Always refuse to speak to any buyer",
+                    "d": "Rewrite the listing price secretly",
+                },
+                "b",
+                "Listing agents represent the seller; advocacy for a buyer requires a proper agency shift/disclosure.",
+                {
+                    "a": "That conflicts with seller loyalty.",
+                    "c": "Communication with buyers is normal; advocacy is the issue.",
+                    "d": "Secret price changes are improper.",
+                },
+                "medium",
+            ),
+            (
+                "A contract is generally voidable by a party who:",
+                {
+                    "a": "Signed while legally competent and fully informed",
+                    "b": "Was induced by fraud or was a minor (depending on circumstances)",
+                    "c": "Paid earnest money",
+                    "d": "Received a copy of the listing agreement",
+                },
+                "b",
+                "Fraud or lack of capacity can make a contract voidable by the protected party.",
+                {
+                    "a": "That supports enforceability.",
+                    "c": "Earnest money alone does not create voidability.",
+                    "d": "Receiving a listing copy is unrelated.",
+                },
+                "medium",
+            ),
+            (
+                "\"Time is of the essence\" in a purchase contract typically means:",
+                {
+                    "a": "Deadlines are merely suggestions",
+                    "b": "Contract dates and times are critical and late performance may be a breach",
+                    "c": "Only the closing date can be ignored",
+                    "d": "Inspection periods never expire",
+                },
+                "b",
+                "The clause elevates punctual performance; missing deadlines can be material.",
+                {
+                    "a": "Opposite meaning.",
+                    "c": "Other dates can also be critical.",
+                    "d": "Inspection periods have deadlines.",
+                },
+                "easy",
+            ),
+            (
+                "A net listing arrangement is often risky or restricted because:",
+                {
+                    "a": "It always increases the buyer's loan amount",
+                    "b": "The broker's compensation is the amount above a seller's net price, creating conflict-of-interest concerns",
+                    "c": "It eliminates all disclosure duties",
+                    "d": "It is required by RESPA for every sale",
+                },
+                "b",
+                "Net listings can incentivize underpricing relative to the seller's interests and are banned or tightly regulated in many places.",
+                {
+                    "a": "Loan size is separate.",
+                    "c": "Duties remain.",
+                    "d": "RESPA does not require net listings.",
+                },
+                "hard",
+            ),
+            (
+                "An option contract in real estate gives the optionee:",
+                {
+                    "a": "An obligation to buy",
+                    "b": "A right to purchase on stated terms within a period, usually for consideration",
+                    "c": "Ownership immediately without closing",
+                    "d": "A free listing cancellation right forever",
+                },
+                "b",
+                "An option is a purchased right, not an obligation, to buy on fixed terms for a time.",
+                {
+                    "a": "That describes a purchase contract obligation.",
+                    "c": "Title transfers at closing/deed delivery.",
+                    "d": "Unrelated.",
+                },
+                "medium",
+            ),
+            (
+                "Puffing in advertising is generally:",
+                {
+                    "a": "Fraudulent misstatement of a measurable fact",
+                    "b": "Exaggerated opinion that a reasonable person would not treat as a factual warranty",
+                    "c": "Always illegal in every jurisdiction without exception",
+                    "d": "A required RESPA disclosure form",
+                },
+                "b",
+                "Puffing is opinion/hype; misrepresenting material facts is not puffing.",
+                {
+                    "a": "That is misrepresentation/fraud territory.",
+                    "c": "Overstated—puffing is often distinguished from fraud.",
+                    "d": "Not a RESPA form.",
+                },
+                "easy",
+            ),
+            (
+                "A licensee who fills in blanks on a standard purchase form for a client is typically:",
+                {
+                    "a": "Practicing law if they draft novel legal clauses beyond authorized forms",
+                    "b": "Always acting as a judge",
+                    "c": "Exempt from all contract rules",
+                    "d": "Required to notarize every page personally",
+                },
+                "a",
+                "Using approved forms is common; drafting custom legal language can be unauthorized practice of law.",
+                {
+                    "b": "Licensees are not judges.",
+                    "c": "Contract/agency rules still apply.",
+                    "d": "Notarization rules vary and are not universal page-by-page duties.",
+                },
+                "hard",
+            ),
+            (
+                "If a seller refuses to consent to a disclosed dual agency where required, the broker should:",
+                {
+                    "a": "Proceed secretly anyway",
+                    "b": "Not create the dual agency relationship; consider designated agency, referral, or withdrawal as appropriate",
+                    "c": "Force the seller to sign under threat of lawsuit by the broker",
+                    "d": "Destroy the listing agreement",
+                },
+                "b",
+                "Consent is required for dual agency where the model is used; without it, other compliant paths are needed.",
+                {
+                    "a": "Secret dual agency is a serious violation.",
+                    "c": "Coercion is improper.",
+                    "d": "Improper and unnecessary.",
+                },
+                "medium",
+            ),
+            (
+                "A buyer brokerage agreement typically establishes that the buyer broker's client is:",
+                {
+                    "a": "The listing broker",
+                    "b": "The buyer",
+                    "c": "The title company",
+                    "d": "The lender exclusively",
+                },
+                "b",
+                "Buyer agency agreements create fiduciary duties to the buyer client.",
+                {
+                    "a": "Listing broker is a cooperating party, not the buyer client.",
+                    "c": "Title company is a service provider.",
+                    "d": "Lender is separate.",
+                },
+                "easy",
+            ),
+            (
+                "Commingling trust funds means:",
+                {
+                    "a": "Depositing earnest money into a proper escrow/trust account",
+                    "b": "Mixing client trust money with personal or operating funds improperly",
+                    "c": "Disbursing funds per a written release agreement",
+                    "d": "Keeping detailed escrow ledgers",
+                },
+                "b",
+                "Commingling is improper mixing of trust and personal/operating money.",
+                {
+                    "a": "Proper escrow deposit is required practice.",
+                    "c": "Proper disbursement is compliance.",
+                    "d": "Good records are required.",
+                },
+                "easy",
+            ),
+        ],
+        "property-ownership": [
+            (
+                "A fee simple absolute estate is best characterized as:",
+                {
+                    "a": "The most complete ownership interest recognized in real property",
+                    "b": "A leasehold for one month",
+                    "c": "An easement only",
+                    "d": "A personal property license",
+                },
+                "a",
+                "Fee simple absolute is the fullest freehold estate.",
+                {
+                    "b": "Leaseholds are non-freehold.",
+                    "c": "Easements are nonpossessory rights.",
+                    "d": "Licenses are typically personal privileges.",
+                },
+                "easy",
+            ),
+            (
+                "Which deed offers the greatest protection to a grantee from the grantor's covenants?",
+                {
+                    "a": "Quitclaim deed",
+                    "b": "General warranty deed",
+                    "c": "Bargain and sale deed without covenants",
+                    "d": "Deed in lieu with no warranties",
+                },
+                "b",
+                "General warranty deeds typically include the broadest covenants of title.",
+                {
+                    "a": "Quitclaim transfers whatever interest the grantor has, often without warranties.",
+                    "c": "Limited or no covenants.",
+                    "d": "No warranties implied by that description.",
+                },
+                "easy",
+            ),
+            (
+                "An easement appurtenant typically:",
+                {
+                    "a": "Benefits a dominant tenement and burdens a servient tenement",
+                    "b": "Is always personal to one individual and never runs with land",
+                    "c": "Transfers only livestock grazing rights federally",
+                    "d": "Is identical to a fee simple defeasible",
+                },
+                "a",
+                "Appurtenant easements run with the dominant estate and burden the servient land.",
+                {
+                    "b": "That describes many easements in gross more closely.",
+                    "c": "Too narrow.",
+                    "d": "Different concept.",
+                },
+                "medium",
+            ),
+            (
+                "A lien that is specific to one property (not all of a debtor's assets) is called a:",
+                {
+                    "a": "General lien",
+                    "b": "Specific lien",
+                    "c": "Homestead exemption",
+                    "d": "Fee tail",
+                },
+                "b",
+                "Specific liens attach to a particular property (e.g., mortgage, property tax lien).",
+                {
+                    "a": "General liens can reach multiple assets.",
+                    "c": "Homestead is a protection concept.",
+                    "d": "Archaic estate form.",
+                },
+                "easy",
+            ),
+            (
+                "Joint tenancy traditionally includes the right of:",
+                {
+                    "a": "Survivorship",
+                    "b": "Dower only",
+                    "c": "Eminent domain by co-tenants",
+                    "d": "Automatic conversion to a life estate",
+                },
+                "a",
+                "Classic joint tenancy features right of survivorship among joint tenants.",
+                {
+                    "b": "Dower is a marital interest concept.",
+                    "c": "Eminent domain is government power.",
+                    "d": "Not automatic.",
+                },
+                "easy",
+            ),
+            (
+                "A metes-and-bounds description starts at a:",
+                {
+                    "a": "Point of beginning",
+                    "b": "Township number only",
+                    "c": "Lot number in a condo declaration only",
+                    "d": "Assessor parcel map without courses",
+                },
+                "a",
+                "Metes and bounds walks courses and distances from a point of beginning.",
+                {
+                    "b": "Granular rectangular survey uses townships/sections.",
+                    "c": "Lot/block is a different description system.",
+                    "d": "APNs identify parcels but aren't metes-and-bounds courses.",
+                },
+                "medium",
+            ),
+            (
+                "Police power in land-use control includes:",
+                {
+                    "a": "Zoning and building codes",
+                    "b": "Only private deed restrictions",
+                    "c": "Only mortgage foreclosure",
+                    "d": "Only federal income tax liens",
+                },
+                "a",
+                "Zoning and building codes are classic police-power land-use tools.",
+                {
+                    "b": "CC&Rs are private.",
+                    "c": "Foreclosure is a creditor remedy.",
+                    "d": "Tax liens are different.",
+                },
+                "easy",
+            ),
+            (
+                "Eminent domain requires:",
+                {
+                    "a": "A private neighbor's consent only",
+                    "b": "Public use/purpose and just compensation (constitutional framework)",
+                    "c": "No compensation if the owner objects",
+                    "d": "A quitclaim from the assessor",
+                },
+                "b",
+                "Takings require public purpose and just compensation under the Constitution.",
+                {
+                    "a": "Government power, not neighbor consent.",
+                    "c": "Compensation is required.",
+                    "d": "Not the mechanism.",
+                },
+                "medium",
+            ),
+            (
+                "A life estate ends:",
+                {
+                    "a": "Never",
+                    "b": "Upon the death of the measuring life (or as otherwise defined)",
+                    "c": "Only when property taxes are paid",
+                    "d": "Automatically after 99 years in every state",
+                },
+                "b",
+                "Life estates are measured by a life; remainder/reversion follows.",
+                {
+                    "a": "They terminate.",
+                    "c": "Taxes don't define the estate end.",
+                    "d": "Not a universal rule.",
+                },
+                "easy",
+            ),
+            (
+                "Encroachments are typically discovered by:",
+                {
+                    "a": "A survey",
+                    "b": "A credit report",
+                    "c": "An appraisal form alone without fieldwork",
+                    "d": "A listing photo filter",
+                },
+                "a",
+                "Surveys reveal boundary improvements that encroach.",
+                {
+                    "b": "Credit reports don't show physical encroachments.",
+                    "c": "Appraisals may note issues but surveys define boundaries.",
+                    "d": "Photos don't establish boundaries.",
+                },
+                "easy",
+            ),
+            (
+                "A cloud on title is:",
+                {
+                    "a": "Clear marketable title with no issues",
+                    "b": "A claim, encumbrance, or defect that may impair marketability",
+                    "c": "A weather disclosure",
+                    "d": "A type of zoning variance",
+                },
+                "b",
+                "Clouds cast doubt on title and may need quiet-title or curative action.",
+                {
+                    "a": "Opposite.",
+                    "c": "Unrelated.",
+                    "d": "Zoning is land use, not title cloud.",
+                },
+                "medium",
+            ),
+            (
+                "Tenancy in common differs from joint tenancy mainly because tenants in common:",
+                {
+                    "a": "Always have right of survivorship",
+                    "b": "May hold unequal shares and typically lack survivorship unless specified",
+                    "c": "Cannot convey their interest",
+                    "d": "Must be married",
+                },
+                "b",
+                "TIC allows unequal interests and no automatic survivorship.",
+                {
+                    "a": "Survivorship is joint tenancy hallmark.",
+                    "c": "TIC interests are generally conveyable.",
+                    "d": "Marriage not required for TIC.",
+                },
+                "medium",
+            ),
+            (
+                "A variance in zoning is typically a:",
+                {
+                    "a": "Permission to deviate from a zoning requirement due to hardship, granted by the zoning authority",
+                    "b": "Permanent change of the zoning map for an entire district",
+                    "c": "Federal tax credit",
+                    "d": "Type of easement by necessity",
+                },
+                "a",
+                "Variances grant relief from strict zoning application in hardship cases.",
+                {
+                    "b": "That is rezoning/amendment.",
+                    "c": "Unrelated.",
+                    "d": "Different doctrine.",
+                },
+                "medium",
+            ),
+            (
+                "Constructive notice of a recorded deed is best achieved by:",
+                {
+                    "a": "Recording the deed in the public land records",
+                    "b": "Telling only one neighbor verbally",
+                    "c": "Keeping the deed in a desk drawer forever",
+                    "d": "Emailing a friend without recording",
+                },
+                "a",
+                "Recording provides constructive notice to the world.",
+                {
+                    "b": "Actual notice to one person is limited.",
+                    "c": "Unrecorded interests risk priority issues.",
+                    "d": "Not constructive public notice.",
+                },
+                "easy",
+            ),
+            (
+                "Riparian rights generally relate to:",
+                {
+                    "a": "Land bordering flowing water such as a river or stream",
+                    "b": "Only mineral rights under federal leases",
+                    "c": "Air rights above 60,000 feet exclusively",
+                    "d": "Stock in a REIT",
+                },
+                "a",
+                "Riparian doctrines address rights of owners along flowing waters (vs littoral for lakes/oceans).",
+                {
+                    "b": "Minerals are separate.",
+                    "c": "Air rights exist but aren't riparian.",
+                    "d": "Securities.",
+                },
+                "hard",
+            ),
+        ],
+        "finance-closing": [
+            (
+                "LTV (loan-to-value) is calculated as:",
+                {
+                    "a": "Loan amount ÷ appraised value (or purchase price, per lender rules) × 100%",
+                    "b": "Monthly payment ÷ annual income",
+                    "c": "Down payment ÷ interest rate",
+                    "d": "Closing costs ÷ HOA dues",
+                },
+                "a",
+                "LTV ratios loan size to property value.",
+                {
+                    "b": "That relates to debt-to-income concepts.",
+                    "c": "Nonsense formula.",
+                    "d": "Unrelated.",
+                },
+                "easy",
+            ),
+            (
+                "One discount point typically costs:",
+                {
+                    "a": "1% of the loan amount",
+                    "b": "1% of the purchase price always, even if loan is smaller",
+                    "c": "$1 flat",
+                    "d": "10% of the down payment",
+                },
+                "a",
+                "A point is generally 1% of the loan amount, paid to buy down rate or as lender fees.",
+                {
+                    "b": "Based on loan, not always price.",
+                    "c": "Not flat $1.",
+                    "d": "Wrong base.",
+                },
+                "easy",
+            ),
+            (
+                "PITI commonly refers to:",
+                {
+                    "a": "Principal, interest, taxes, and insurance",
+                    "b": "Points, incentives, title, and inventory",
+                    "c": "Prepayment, inflation, trusts, and income",
+                    "d": "Property, improvements, tenants, and improvements again",
+                },
+                "a",
+                "PITI is the classic housing payment package lenders underwrite.",
+                {
+                    "b": "Incorrect expansion.",
+                    "c": "Incorrect.",
+                    "d": "Incorrect.",
+                },
+                "easy",
+            ),
+            (
+                "An amortizing fixed-rate mortgage payment primarily covers:",
+                {
+                    "a": "Interest only forever with no principal reduction",
+                    "b": "Both interest and principal so the balance declines over the term",
+                    "c": "Only property taxes",
+                    "d": "Only HOA capital reserves",
+                },
+                "b",
+                "Amortizing payments reduce principal over time while paying interest.",
+                {
+                    "a": "That is interest-only.",
+                    "c": "Taxes may be escrowed separately.",
+                    "d": "HOA is separate.",
+                },
+                "easy",
+            ),
+            (
+                "RESPA's core consumer-protection theme includes:",
+                {
+                    "a": "Banning certain kickbacks and requiring settlement cost disclosures in covered transactions",
+                    "b": "Setting property tax rates statewide",
+                    "c": "Licensing all appraisers internationally",
+                    "d": "Guaranteeing appraisal values",
+                },
+                "a",
+                "RESPA addresses settlement services, kickbacks, and related disclosures (with TRID integration for many loans).",
+                {
+                    "b": "Tax rates are state/local.",
+                    "c": "Appraiser licensing is separate.",
+                    "d": "No value guarantee.",
+                },
+                "medium",
+            ),
+            (
+                "A conventional loan that is not insured/guaranteed by FHA/VA/USDA is typically called:",
+                {
+                    "a": "A government loan",
+                    "b": "A conventional loan",
+                    "c": "A reverse bridge grant",
+                    "d": "A hard-money gift letter",
+                },
+                "b",
+                "Conventional loans lack FHA/VA/USDA insurance/guarantee.",
+                {
+                    "a": "Opposite category.",
+                    "c": "Not a standard term here.",
+                    "d": "Gift letters document gifts; hard money is private lending.",
+                },
+                "easy",
+            ),
+            (
+                "If annual property taxes are $3,600 and the seller owned the property for 3 months of the tax year at closing (buyer pays full year later), a typical proration if seller owes buyer for prepaid/advance assumptions depends on custom—but the monthly tax amount is:",
+                {
+                    "a": "$300",
+                    "b": "$3,600",
+                    "c": "$100",
+                    "d": "$1,200",
+                },
+                "a",
+                "$3,600 ÷ 12 = $300 per month—the unit used in many proration setups.",
+                {
+                    "b": "That is the annual amount.",
+                    "c": "Too low.",
+                    "d": "That would be 4 months.",
+                },
+                "medium",
+            ),
+            (
+                "A prepayment penalty clause:",
+                {
+                    "a": "Requires extra payment if the borrower pays off early, when the note allows it",
+                    "b": "Forbids the lender from charging interest",
+                    "c": "Is identical to PMI",
+                    "d": "Always applies to every VA loan by federal mandate",
+                },
+                "a",
+                "Prepayment penalties charge for early payoff when permitted by the loan terms and law.",
+                {
+                    "b": "Interest is still charged.",
+                    "c": "PMI is mortgage insurance.",
+                    "d": "VA loans generally restrict such penalties.",
+                },
+                "medium",
+            ),
+            (
+                "Private mortgage insurance (PMI) is most often required when:",
+                {
+                    "a": "Conventional LTV is high (commonly above 80%)",
+                    "b": "The buyer pays all cash",
+                    "c": "The loan is a HELOC interest-only forever by definition",
+                    "d": "The property is vacant land with no lender",
+                },
+                "a",
+                "PMI protects conventional lenders when down payment/equity is thin.",
+                {
+                    "b": "Cash deals have no PMI.",
+                    "c": "HELOCs differ.",
+                    "d": "No loan, no PMI.",
+                },
+                "easy",
+            ),
+            (
+                "An adjustable-rate mortgage (ARM) interest rate:",
+                {
+                    "a": "Never changes",
+                    "b": "Can adjust based on an index plus margin, subject to caps",
+                    "c": "Is set only by the listing broker",
+                    "d": "Must equal the prime rate minus 10% by law",
+                },
+                "b",
+                "ARMs adjust with index + margin within contractual caps.",
+                {
+                    "a": "That is fixed-rate.",
+                    "c": "Brokers don't set note rates.",
+                    "d": "No such statute.",
+                },
+                "easy",
+            ),
+            (
+                "Title insurance primarily protects against:",
+                {
+                    "a": "Fire and flood damage to the structure",
+                    "b": "Covered title defects and claims against ownership per the policy",
+                    "c": "Borrower default on the note",
+                    "d": "HOA special assessments always without exception",
+                },
+                "b",
+                "Owner's/lender's title policies insure against covered title risks, not casualty.",
+                {
+                    "a": "Hazard insurance covers that.",
+                    "c": "Mortgage insurance/credit risk differs.",
+                    "d": "Not the core title function.",
+                },
+                "medium",
+            ),
+            (
+                "A debit to the buyer on a closing statement means:",
+                {
+                    "a": "The buyer receives a credit reducing cash to close",
+                    "b": "The buyer is charged; it increases cash needed (or reduces proceeds if seller)",
+                    "c": "The item is always illegal",
+                    "d": "The lender pays the item automatically",
+                },
+                "b",
+                "Debits charge a party; buyer debits typically increase funds due at closing.",
+                {
+                    "a": "That describes a credit.",
+                    "c": "Many debits are normal.",
+                    "d": "Not automatic.",
+                },
+                "medium",
+            ),
+            (
+                "The secondary mortgage market's main function is to:",
+                {
+                    "a": "Originate every purchase loan face-to-face only",
+                    "b": "Buy and sell existing mortgages, improving liquidity for originators",
+                    "c": "Set local property tax millage",
+                    "d": "Issue building permits",
+                },
+                "b",
+                "Entities like Fannie/Freddie (and others) provide liquidity by purchasing loans.",
+                {
+                    "a": "Primary market originates.",
+                    "c": "Taxing authorities.",
+                    "d": "Local government.",
+                },
+                "medium",
+            ),
+            (
+                "Usury laws generally regulate:",
+                {
+                    "a": "Maximum interest rates that may be charged on certain loans",
+                    "b": "Maximum lot sizes in zoning",
+                    "c": "Minimum square footage of garages",
+                    "d": "Only HOA pet policies",
+                },
+                "a",
+                "Usury caps address excessive interest.",
+                {
+                    "b": "Zoning.",
+                    "c": "Building codes.",
+                    "d": "Private covenants.",
+                },
+                "easy",
+            ),
+            (
+                "A bridge loan is typically used to:",
+                {
+                    "a": "Finance a short-term gap, often between purchase of a new home and sale of an existing one",
+                    "b": "Fund a 30-year fully amortizing primary residence as the only permanent loan forever",
+                    "c": "Pay property taxes for a municipality",
+                    "d": "Replace title insurance",
+                },
+                "a",
+                "Bridge (swing) financing covers short gaps in housing transitions.",
+                {
+                    "b": "That is a permanent mortgage.",
+                    "c": "Government finance.",
+                    "d": "Different product.",
+                },
+                "hard",
+            ),
+        ],
+    }
+
+
+def build_national_for_slug(exam_slug: str) -> list[dict]:
+    rows = national_rows()
+    out: list[dict] = []
+    for topic_id in ("agency-law", "property-ownership", "finance-closing"):
+        out.extend(pack(exam_slug, topic_id, rows[topic_id]))
+    return out
