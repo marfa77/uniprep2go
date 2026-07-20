@@ -271,15 +271,15 @@ Suggested page map:
 
 ---
 
-## Season 1 — event map (locked first three)
+## Season 1 — event map (locked first five)
 
 | Ep | Event (topic) | Place / era | Price |
 |----|----------------|-------------|--------|
 | **01** | **Great Lisbon Earthquake (1755)** | 1 Nov 1755 · Lisboa | **FREE** |
 | **02** | **Carnation Revolution (25 de Abril)** | 25 Apr 1974 · Lisboa | $5 |
 | **03** | **Battle of Aljubarrota** | 14 Aug 1385 · Aljubarrota | $5 |
-| 04 | Ceuta / start of Discoveries | 1415 | $5 |
-| 05 | Vasco da Gama reaches India | 1498 | $5 |
+| **04** | **Ceuta / start of Discoveries** | 21 Aug 1415 · Ceuta | $5 |
+| **05** | **Vasco da Gama reaches India** | May 1498 · Calicut | $5 |
 | 06 | Liberal Revolution | 1820 · Porto | $5 |
 | 07 | Republic proclaimed | 1910 | $5 |
 | 08 | Estado Novo atmosphere (careful, human-scale) | mid-20th c. | $5 |

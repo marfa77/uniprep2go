@@ -63,6 +63,12 @@ export default function GaivotaHubPage() {
           <Link className={btnSecondary} href="/comics/gaivota-em-portugal/03-aljubarrota">
             Ep.03 — Aljubarrota
           </Link>
+          <Link className={btnSecondary} href="/comics/gaivota-em-portugal/04-ceuta">
+            Ep.04 — Ceuta
+          </Link>
+          <Link className={btnSecondary} href="/comics/gaivota-em-portugal/05-vasco-da-gama">
+            Ep.05 — Vasco da Gama
+          </Link>
         </div>
 
         <section className="mt-14">

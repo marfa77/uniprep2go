@@ -66,6 +66,31 @@ export const gaivotaEpisodes: GaivotaEpisode[] = [
     gumroadCheckoutUrl:
       "https://pixidstudio.gumroad.com/l/gaivota-ep03-aljubarrota?wanted=true",
   },
+  {
+    id: "04-ceuta",
+    number: 4,
+    titlePt: "Ceuta",
+    titleEn: "Conquest of Ceuta",
+    event: "Conquest of Ceuta (start of the Discoveries)",
+    year: "1415",
+    price: 5,
+    status: "live",
+    pagePath: "/comics/gaivota-em-portugal/04-ceuta",
+    gumroadCheckoutUrl: "https://pixidstudio.gumroad.com/l/gaivota-ep04-ceuta?wanted=true",
+  },
+  {
+    id: "05-vasco-da-gama",
+    number: 5,
+    titlePt: "Vasco da Gama",
+    titleEn: "Vasco da Gama reaches India",
+    event: "Vasco da Gama reaches Calicut",
+    year: "1498",
+    price: 5,
+    status: "live",
+    pagePath: "/comics/gaivota-em-portugal/05-vasco-da-gama",
+    gumroadCheckoutUrl:
+      "https://pixidstudio.gumroad.com/l/gaivota-ep05-vasco-da-gama?wanted=true",
+  },
 ];
 
 export function gaivotaAbsolute(path: string) {

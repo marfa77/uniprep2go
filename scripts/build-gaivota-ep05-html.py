@@ -1,0 +1,332 @@
+#!/usr/bin/env python3
+"""Build Ep.05 Vasco da Gama index.html from vocab-100.csv."""
+from __future__ import annotations
+
+import csv
+from pathlib import Path
+
+base = Path(__file__).resolve().parents[1] / (
+    "prototypes/language-comics/gaivota-em-portugal/episodes/05-vasco-da-gama"
+)
+rows = list(csv.DictReader(open(base / "vocab-100.csv", encoding="utf-8")))
+assert len(rows) == 100, len(rows)
+gloss = "\n".join(
+    f'        <div class="g-row"><span>{r["pt"]}</span><span>{r["en"]}</span></div>'
+    for r in rows
+)
+
+html = f"""<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaivota em Portugal · Ep.05 — Vasco da Gama (1498)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {{
+      --ink: #0e0e0e;
+      --paper: #f4f1ea;
+      --muted: #5c574e;
+      --line: #c9c2b4;
+      --paid: #8b1f3d;
+      --accent: #b5451b;
+      --afonso: #1f6f8b;
+      --gaspar: #8b1f3d;
+    }}
+    * {{ box-sizing: border-box; }}
+    body {{
+      margin: 0;
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      color: var(--ink);
+      background: #ddd7cb;
+      line-height: 1.45;
+    }}
+    .bar {{
+      position: sticky; top: 0; z-index: 10;
+      display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; justify-content: space-between;
+      padding: .7rem 1.1rem;
+      background: #111; color: #f4f1ea;
+    }}
+    .bar .brand {{ display: flex; align-items: center; gap: .65rem; font-family: Fraunces, Georgia, serif; font-weight: 700; }}
+    .bar img {{ width: 36px; height: 36px; border-radius: 50%; object-fit: cover; background: #fff; }}
+    .bar .paid {{ background: var(--paid); color: #fff; font-size: .75rem; font-weight: 700; padding: .25rem .55rem; border-radius: 999px; letter-spacing: .04em; }}
+    .bar a {{ color: #fff; text-decoration: none; font-weight: 600; font-size: .9rem; border: 1px solid rgba(255,255,255,.35); padding: .4rem .8rem; border-radius: 999px; }}
+    .wrap {{ max-width: 860px; margin: 0 auto; padding: 1.25rem 1rem 4rem; }}
+    .page {{
+      width: min(100%, 794px);
+      margin: 0 auto 1.75rem;
+      background: var(--paper);
+      border: 1px solid #bdb5a6;
+      box-shadow: 0 16px 36px rgba(0,0,0,.12);
+      padding: 1.25rem 1.35rem 1.4rem;
+      position: relative;
+    }}
+    .page-head {{ display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: .85rem; }}
+    .page-head .left {{ display: flex; align-items: center; gap: .5rem; font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: .95rem; }}
+    .page-head .left img {{ width: 28px; height: 28px; border-radius: 50%; object-fit: cover; }}
+    .page-head .meta {{ font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }}
+    .hero {{
+      position: relative; border: 3px solid var(--ink); overflow: hidden; background: #111;
+      line-height: 0;
+    }}
+    .hero > img:not(.stamp) {{ width: 100%; height: auto; display: block; object-fit: contain; }}
+    .brief-img img {{ width: 100%; height: auto; display: block; object-fit: contain; }}
+    .panel img {{ width: 100%; height: auto; display: block; object-fit: contain; }}
+    .hero .overlay {{
+      position: absolute; left: 0; right: 0; bottom: 0;
+      padding: 1.5rem 1.2rem 1.2rem;
+      background: linear-gradient(transparent, rgba(0,0,0,.92) 40%);
+      color: #fff;
+    }}
+    .hero h1 {{ margin: 0; font-family: Fraunces, Georgia, serif; font-size: clamp(1.7rem, 4.5vw, 2.6rem); line-height: 1.05; }}
+    .hero p {{ margin: .4rem 0 0; max-width: 44ch; opacity: .95; }}
+    .stamp {{
+      position: absolute; top: 1rem; right: 1rem; width: 72px; height: 72px;
+      border-radius: 50%; border: 2px solid #fff; object-fit: cover; background: #fff;
+    }}
+    .brief-grid {{ display: grid; gap: 1rem; }}
+    .brief-img {{ border: 2px solid var(--ink); overflow: hidden; background: #ccc; line-height: 0; }}
+    .caption {{ font-size: .82rem; color: var(--muted); margin: .35rem 0 0; font-style: italic; }}
+    .brief h2 {{ margin: 0 0 .5rem; font-family: Fraunces, Georgia, serif; font-size: 1.55rem; }}
+    .brief .hook {{ font-size: 1.08rem; margin: 0 0 .75rem; }}
+    .brief ul {{ margin: 0 0 1rem; padding-left: 1.15rem; }}
+    .brief li {{ margin: .3rem 0; }}
+    .disclaimer {{
+      margin-top: 1rem; padding: .75rem .9rem;
+      border-left: 4px solid var(--ink); background: #ebe6dc; font-size: .92rem;
+    }}
+    .panel {{
+      position: relative; border: 3px solid var(--ink); overflow: hidden; background: #111;
+      line-height: 0;
+    }}
+    .bubble {{
+      position: absolute; max-width: min(78%, 290px);
+      background: #fffdf8; border: 2.5px solid var(--ink); border-radius: 1.05rem;
+      padding: .55rem .7rem; font-size: .95rem; font-weight: 500; line-height: 1.3;
+      box-shadow: 3px 3px 0 rgba(0,0,0,.12); z-index: 2;
+    }}
+    .bubble .who {{
+      display: block; font-size: .66rem; font-weight: 700; letter-spacing: .05em;
+      text-transform: uppercase; margin-bottom: .12rem; color: #333;
+    }}
+    .bubble.gaivota {{ background: #111; color: #f4f1ea; border-color: #111; }}
+    .bubble.gaivota .who {{ color: #cfcfcf; }}
+    .bubble.afonso .who {{ color: var(--afonso); }}
+    .bubble.gaspar .who {{ color: var(--gaspar); }}
+    .tl {{ left: 4%; top: 5%; }}
+    .tr {{ right: 4%; top: 5%; }}
+    .bl {{ left: 4%; bottom: 7%; }}
+    .br {{ right: 4%; bottom: 7%; }}
+    .p1-gaivota {{ left: 3%; top: 2%; max-width: min(42%, 250px); }}
+    .p1-afonso {{ left: 2%; bottom: 5%; max-width: min(34%, 200px); font-size: .88rem; }}
+    .p1-gaspar {{ right: 3%; top: 16%; max-width: min(34%, 210px); font-size: .88rem; }}
+    .foot {{
+      margin-top: .7rem; display: flex; justify-content: space-between; gap: 1rem;
+      font-size: .8rem; color: var(--muted); line-height: 1.35;
+    }}
+    .study h2 {{ margin: 0 0 .6rem; font-family: Fraunces, Georgia, serif; font-size: 1.6rem; }}
+    .study h3 {{ margin: 1.2rem 0 .45rem; color: var(--accent); font-size: 1.05rem; }}
+    .tips {{ background: #e7eef1; border: 1px solid #b9c9d1; padding: .75rem .9rem; font-size: .92rem; margin-bottom: .5rem; }}
+    .glossary {{
+      display: grid; grid-template-columns: 1fr 1fr; gap: .25rem .9rem; font-size: .84rem;
+    }}
+    .g-row {{ display: grid; grid-template-columns: 1.1fr 1fr; gap: .4rem; border-bottom: 1px solid var(--line); padding: .28rem 0; }}
+    .g-row span:first-child {{ font-weight: 600; }}
+    .quiz ol {{ margin: 0; padding-left: 1.2rem; }}
+    .quiz li {{ margin: .4rem 0; }}
+    .cta {{
+      margin-top: 1.4rem; padding: 1rem 1.1rem; background: #111; color: #f4f1ea;
+    }}
+    .cta strong {{ font-family: Fraunces, Georgia, serif; font-size: 1.15rem; display: block; margin-bottom: .35rem; }}
+    .cta a {{ color: #9fd0e0; }}
+    @media (max-width: 720px) {{
+      .glossary {{ grid-template-columns: 1fr; }}
+      .bubble {{ font-size: .88rem; max-width: 88%; }}
+    }}
+    @media print {{
+      @page {{ size: A4; margin: 8mm; }}
+      body {{ background: white; margin: 0; }}
+      .bar {{ display: none !important; }}
+      .wrap {{ max-width: none; margin: 0; padding: 0; }}
+      .page {{
+        box-shadow: none; border: none; margin: 0; padding: 0 0 4mm;
+        width: auto; max-width: none; min-height: 0 !important; height: auto;
+        break-after: page; page-break-after: always;
+      }}
+      .page:last-child {{ break-after: auto; page-break-after: auto; }}
+      .page-head {{ margin-bottom: .45rem; }}
+      .hero, .panel, .brief-img {{ min-height: 0 !important; height: auto; }}
+      .hero > img:not(.stamp), .panel img, .brief-img img {{
+        max-height: 195mm; width: 100%; height: auto !important; object-fit: contain;
+      }}
+      .stamp {{ width: 52px; height: 52px; top: .6rem; right: .6rem; }}
+      .bubble {{ box-shadow: none; }}
+      .foot {{ margin-top: .4rem; }}
+    }}
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <div class="brand">
+      <img src="art/gaivota-canon-mark.webp" alt="Gaivota" />
+      <span>Gaivota em Portugal</span>
+      <span class="paid">Ep.05</span>
+    </div>
+    <a href="#study">Study pack</a>
+  </div>
+
+  <div class="wrap">
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Gaivota em Portugal</div>
+        <div class="meta">Episode 05 · Paid</div>
+      </div>
+      <div class="hero">
+        <img src="art/ep05-cover.webp" alt="Cover: Vasco da Gama" />
+        <img class="stamp" src="art/gaivota-canon-stamp.webp" alt="Gaivota mascot" />
+        <div class="overlay">
+          <h1>Vasco da Gama</h1>
+          <p>1498 — a chegada a Calecute, numa história completa em cinco páginas.</p>
+        </div>
+      </div>
+      <div class="foot"><span>Noir history comic · PT-PT + EN glossary</span><span>Ep.05</span></div>
+    </article>
+
+    <article class="page brief">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> History brief</div>
+        <div class="meta">Sheet 1 · Facts first</div>
+      </div>
+      <div class="brief-grid">
+        <div>
+          <div class="brief-img"><img src="art/ep05-brief-textbook.webp" alt="Textbook-style plate of Vasco da Gama 1498" /></div>
+          <p class="caption">Calicut, May 1498 — history-textbook plate (engraving style).</p>
+        </div>
+        <div>
+          <h2>Vasco da Gama reaches India</h2>
+          <p class="hook">After a brutal ocean voyage, Portuguese ships reached Calicut in 1498 — Europe and India met by sea.</p>
+          <ul>
+            <li><strong>When:</strong> May 1498 (arrival at Calicut / Kozhikode)</li>
+            <li><strong>Where:</strong> Malabar Coast, India — after rounding Africa</li>
+            <li><strong>Who:</strong> Vasco da Gama and crew; local rulers and merchants</li>
+            <li><strong>How:</strong> Atlantic and Indian Ocean navigation; monsoon winds; East African guides</li>
+            <li><strong>After:</strong> a sea route to Asian spices — trade and a new global age</li>
+          </ul>
+          <p>The voyage was long and hard. Arrival was not the end of history — it was a hinge: contact, commerce, and a world suddenly smaller by ocean.</p>
+          <div class="disclaimer"><strong>The comic that follows is an artistic interpretation.</strong> It follows two fictional sailors; Gaivota watches. Wonder and exhaustion — no graphic violence.</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Índia · 1/5</div>
+        <div class="meta">Setup</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep05-comic-p1.webp" alt="Dawn on the Indian Ocean" />
+        <div class="bubble gaivota p1-gaivota"><span class="who">Gaivota</span>Muitos meses. Muita água. Mas o ar… cheira a terra.</div>
+        <div class="bubble afonso p1-afonso"><span class="who">Afonso</span>Gaspar… ainda acreditamos?</div>
+        <div class="bubble gaspar p1-gaspar"><span class="who">Gaspar</span>Acreditamos no rumo. O resto… vem.</div>
+      </div>
+      <div class="foot"><span>Characters: Afonso · Gaspar · Gaivota</span><span>1/5</span></div>
+    </article>
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Índia · 2/5</div>
+        <div class="meta">Rising action</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep05-comic-p2.webp" alt="Land ahead" />
+        <div class="bubble afonso tl"><span class="who">Afonso</span>Terra!</div>
+        <div class="bubble gaspar tr"><span class="who">Gaspar</span>Calecute… se o piloto não mentiu.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>A costa abre os braços. O mundo encolhe.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>terra!</em></span><span>2/5</span></div>
+    </article>
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Índia · 3/5</div>
+        <div class="meta">Turning point</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep05-comic-p3.webp" alt="Approaching Calicut harbor" />
+        <div class="bubble gaspar tl"><span class="who">Gaspar</span>Não gritem. Olhem. Ouçam.</div>
+        <div class="bubble afonso tr"><span class="who">Afonso</span>Nunca vi tantas cores…</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>Dois oceanos… encontraram-se aqui.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>olhem · ouçam</em></span><span>3/5</span></div>
+    </article>
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Índia · 4/5</div>
+        <div class="meta">Consequence</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep05-comic-p4.webp" alt="First trade contact" />
+        <div class="bubble afonso tl"><span class="who">Afonso</span>Isto… é pimenta?</div>
+        <div class="bubble gaspar tr"><span class="who">Gaspar</span>Isto é o sonho do rei. E o nosso regresso… talvez.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>O comércio começa com um olhar.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>isto é pimenta?</em></span><span>4/5</span></div>
+    </article>
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Índia · 5/5</div>
+        <div class="meta">Resolution</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep05-comic-p5.webp" alt="Evening at anchor" />
+        <div class="bubble afonso tl"><span class="who">Afonso</span>Chegámos ao fim do mundo?</div>
+        <div class="bubble gaspar tr"><span class="who">Gaspar</span>Chegámos a outro começo. Portugal… tocou a Índia.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>Guardo este porto. O mar ligou dois mundos.</div>
+      </div>
+      <div class="foot"><span>End of story · no “to be continued”</span><span>5/5</span></div>
+    </article>
+
+    <article class="page study" id="study">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Study pack</div>
+        <div class="meta">100 words · PT → EN</div>
+      </div>
+      <h2>Study pack — Vasco da Gama</h2>
+      <div class="tips">
+        Read the comic once for story, once for words. Say each line aloud. Prefer Portuguese answers in the quiz.
+      </div>
+      <h3>Glossary (100)</h3>
+      <div class="glossary">
+{gloss}
+      </div>
+      <h3>Comprehension (answer in PT)</h3>
+      <div class="quiz">
+        <ol>
+          <li>Para onde chega a frota nesta história?</li>
+          <li>Quem são Afonso e Gaspar?</li>
+          <li>O que Gaspar pede quando se aproximam do porto?</li>
+          <li>O que representa a pimenta para eles?</li>
+          <li>Como acaba a história?</li>
+        </ol>
+      </div>
+      <h3>Cultural note</h3>
+      <p>In May 1498 Vasco da Gama’s ships reached Calicut (Kozhikode) on India’s Malabar Coast — completing a sea route from Europe around Africa. The comic follows ordinary sailors at the hinge of arrival: land in sight, harbor contact, pepper, and the quiet sense that two oceans had just made the world smaller.</p>
+      <div class="cta">
+        <strong>Next</strong>
+        Free Ep.01: O Terramoto (1755) · Hub: series page · More paid episodes on Gumroad
+      </div>
+    </article>
+
+  </div>
+</body>
+</html>
+"""
+
+out = base / "index.html"
+out.write_text(html, encoding="utf-8")
+print(f"wrote {out} ({len(html)} bytes)")
