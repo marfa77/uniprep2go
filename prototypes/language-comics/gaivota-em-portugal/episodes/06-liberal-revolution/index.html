@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaivota em Portugal · Ep.06 — Revolução Liberal (1820)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #0e0e0e;
+      --paper: #f4f1ea;
+      --muted: #5c574e;
+      --line: #c9c2b4;
+      --paid: #8b1f3d;
+      --accent: #b5451b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      color: var(--ink);
+      background: #ddd7cb;
+      line-height: 1.45;
+    }
+    .bar {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; justify-content: space-between;
+      padding: .7rem 1.1rem;
+      background: #111; color: #f4f1ea;
+    }
+    .bar .brand { display: flex; align-items: center; gap: .65rem; font-family: Fraunces, Georgia, serif; font-weight: 700; }
+    .bar img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; background: #fff; }
+    .bar .paid { background: var(--paid); color: #fff; font-size: .75rem; font-weight: 700; padding: .25rem .55rem; border-radius: 999px; letter-spacing: .04em; }
+    .bar a { color: #fff; text-decoration: none; font-weight: 600; font-size: .9rem; border: 1px solid rgba(255,255,255,.35); padding: .4rem .8rem; border-radius: 999px; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 1.25rem 1rem 4rem; }
+    .page {
+      width: min(100%, 794px);
+      margin: 0 auto 1.75rem;
+      background: var(--paper);
+      border: 1px solid #bdb5a6;
+      box-shadow: 0 16px 36px rgba(0,0,0,.12);
+      padding: 1.25rem 1.35rem 1.4rem;
+      position: relative;
+    }
+    .page-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: .85rem; }
+    .page-head .left { display: flex; align-items: center; gap: .5rem; font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: .95rem; }
+    .page-head .left img { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; }
+    .page-head .meta { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+    .hero {
+      position: relative; border: 3px solid var(--ink); overflow: hidden; background: #111;
+      line-height: 0;
+    }
+    .hero > img:not(.stamp) { width: 100%; height: auto; display: block; object-fit: contain; }
+    .brief-img img { width: 100%; height: auto; display: block; object-fit: contain; }
+    .panel img { width: 100%; height: auto; display: block; object-fit: contain; }
+    .hero .overlay {
+      position: absolute; left: 0; right: 0; bottom: 0;
+      padding: 1.5rem 1.2rem 1.2rem;
+      background: linear-gradient(transparent, rgba(0,0,0,.92) 40%);
+      color: #fff;
+    }
+    .hero h1 { margin: 0; font-family: Fraunces, Georgia, serif; font-size: clamp(1.7rem, 4.5vw, 2.8rem); line-height: 1.05; }
+    .hero p { margin: .4rem 0 0; max-width: 44ch; opacity: .95; }
+    .stamp {
+      position: absolute; top: 1rem; right: 1rem; width: 72px; height: 72px;
+      border-radius: 50%; border: 2px solid #fff; object-fit: cover; background: #fff;
+    }
+    .brief-grid { display: grid; gap: 1rem; }
+    .brief-img { border: 2px solid var(--ink); overflow: hidden; background: #ccc; line-height: 0; }
+    .caption { font-size: .82rem; color: var(--muted); margin: .35rem 0 0; font-style: italic; }
+    .brief h2 { margin: 0 0 .5rem; font-family: Fraunces, Georgia, serif; font-size: 1.55rem; }
+    .brief .hook { font-size: 1.08rem; margin: 0 0 .75rem; }
+    .brief ul { margin: 0 0 1rem; padding-left: 1.15rem; }
+    .brief li { margin: .3rem 0; }
+    .disclaimer {
+      margin-top: 1rem; padding: .75rem .9rem;
+      border-left: 4px solid var(--ink); background: #ebe6dc; font-size: .92rem;
+    }
+    .panel {
+      position: relative; border: 3px solid var(--ink); overflow: hidden; background: #111;
+      line-height: 0;
+    }
+    .bubble {
+      position: absolute; max-width: min(78%, 290px);
+      background: #fffdf8; border: 2.5px solid var(--ink); border-radius: 1.05rem;
+      padding: .55rem .7rem; font-size: .95rem; font-weight: 500; line-height: 1.3;
+      box-shadow: 3px 3px 0 rgba(0,0,0,.12); z-index: 2;
+    }
+    .bubble .who {
+      display: block; font-size: .66rem; font-weight: 700; letter-spacing: .05em;
+      text-transform: uppercase; margin-bottom: .12rem; color: #333;
+    }
+    .bubble.gaivota { background: #111; color: #f4f1ea; border-color: #111; }
+    .bubble.gaivota .who { color: #cfcfcf; }
+    .bubble.rosa .who { color: #8b1f3d; }
+    .bubble.miguel .who { color: #1f6f8b; }
+    .tl { left: 4%; top: 5%; }
+    .tr { right: 4%; top: 5%; }
+    .bl { left: 4%; bottom: 7%; }
+    .br { right: 4%; bottom: 7%; }
+    .p1-gaivota { left: 3%; top: 2%; max-width: min(42%, 250px); }
+    .p1-a { left: 2%; bottom: 5%; max-width: min(34%, 200px); font-size: .88rem; }
+    .p1-b { right: 3%; top: 16%; max-width: min(34%, 210px); font-size: .88rem; }
+    .foot {
+      margin-top: .7rem; display: flex; justify-content: space-between; gap: 1rem;
+      font-size: .8rem; color: var(--muted); line-height: 1.35;
+    }
+    .study h2 { margin: 0 0 .6rem; font-family: Fraunces, Georgia, serif; font-size: 1.6rem; }
+    .study h3 { margin: 1.2rem 0 .45rem; color: var(--accent); font-size: 1.05rem; }
+    .tips { background: #e7eef1; border: 1px solid #b9c9d1; padding: .75rem .9rem; font-size: .92rem; margin-bottom: .5rem; }
+    .glossary {
+      display: grid; grid-template-columns: 1fr 1fr; gap: .25rem .9rem; font-size: .84rem;
+    }
+    .g-row { display: grid; grid-template-columns: 1.1fr 1fr; gap: .4rem; border-bottom: 1px solid var(--line); padding: .28rem 0; }
+    .g-row span:first-child { font-weight: 600; }
+    .quiz ol { margin: 0; padding-left: 1.2rem; }
+    .quiz li { margin: .4rem 0; }
+    .cta {
+      margin-top: 1.4rem; padding: 1rem 1.1rem; background: #111; color: #f4f1ea;
+    }
+    .cta strong { font-family: Fraunces, Georgia, serif; font-size: 1.15rem; display: block; margin-bottom: .35rem; }
+    .cta a { color: #9fd0e0; }
+    @media (max-width: 720px) {
+      .glossary { grid-template-columns: 1fr; }
+      .bubble { font-size: .88rem; max-width: 88%; }
+    }
+    @media print {
+      @page { size: A4; margin: 8mm; }
+      body { background: white; margin: 0; }
+      .bar { display: none !important; }
+      .wrap { max-width: none; margin: 0; padding: 0; }
+      .page {
+        box-shadow: none; border: none; margin: 0; padding: 0 0 4mm;
+        width: auto; max-width: none; min-height: 0 !important; height: auto;
+        break-after: page; page-break-after: always;
+      }
+      .page:last-child { break-after: auto; page-break-after: auto; }
+      .page-head { margin-bottom: .45rem; }
+      .hero, .panel, .brief-img { min-height: 0 !important; height: auto; }
+      .hero > img:not(.stamp), .panel img, .brief-img img {
+        max-height: 195mm; width: 100%; height: auto !important; object-fit: contain;
+      }
+      .stamp { width: 52px; height: 52px; top: .6rem; right: .6rem; }
+      .bubble { box-shadow: none; }
+      .foot { margin-top: .4rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <div class="brand">
+      <img src="art/gaivota-canon-mark.webp" alt="Gaivota" />
+      <span>Gaivota em Portugal</span>
+      <span class="paid">Ep.06</span>
+    </div>
+    <a href="#study">Study pack</a>
+  </div>
+
+  <div class="wrap">
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Gaivota em Portugal</div>
+        <div class="meta">Episode 06 · Paid</div>
+      </div>
+      <div class="hero">
+        <img src="art/ep06-cover.webp" alt="Cover: Liberal Revolution Porto 1820" />
+        <img class="stamp" src="art/gaivota-canon-stamp.webp" alt="Gaivota mascot" />
+        <div class="overlay">
+          <h1>Revolução Liberal</h1>
+          <p>1820 — o Porto pede constituição, numa história completa em cinco páginas.</p>
+        </div>
+      </div>
+      <div class="foot"><span>Noir history comic · PT-PT + EN glossary</span><span>Ep.06</span></div>
+    </article>
+
+    <article class="page brief">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> History brief</div>
+        <div class="meta">Sheet 1 · Facts first</div>
+      </div>
+      <div class="brief-grid">
+        <div>
+          <div class="brief-img"><img src="art/ep06-brief-textbook.webp" alt="The Liberal Revolution" /></div>
+          <p class="caption">Porto, 1820 — history-textbook plate (engraving style).</p>
+        </div>
+        <div>
+          <h2>The Liberal Revolution</h2>
+          <p class="hook">In 1820, Porto rose first — demanding a constitution while the king was still in Brazil.</p>
+          <ul>
+            <li><strong>When:</strong> August–September 1820 (Porto uprising; movement spreads)</li>
+            <li><strong>Where:</strong> Porto, then across Portugal</li>
+            <li><strong>Who:</strong> officers, merchants, liberals vs absolutist order; João VI still in Brazil</li>
+            <li><strong>How:</strong> pronouncements, assemblies, press, pressure for Cortes and a constitution</li>
+            <li><strong>After:</strong> a constitutional path opens; the king returns; politics change</li>
+          </ul>
+          <p>Porto’s voice mattered: print shops, militia, and public oaths pushed Portugal toward written law. The comic follows two siblings at the hinge of that first liberal morning.</p>
+          <div class="disclaimer"><strong>The comic that follows is an artistic interpretation.</strong> It follows two fictional siblings in Porto; Gaivota watches. No graphic violence.</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Revolução Liberal · 1/5</div>
+        <div class="meta">Setup</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep06-comic-p1.webp" alt="Dawn in Porto print shop" />
+        <div class="bubble gaivota p1-gaivota"><span class="who">Gaivota</span>O Porto acorda cedo. Hoje… mais cedo ainda.</div>
+        <div class="bubble rosa p1-a"><span class="who">Rosa</span>Miguel, isto é só papel?</div>
+        <div class="bubble miguel p1-b"><span class="who">Miguel</span>Não. Isto é a palavra… a caminho da praça.</div>
+      </div>
+      <div class="foot"><span>Characters: Rosa · Miguel · Gaivota</span><span>1/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Revolução Liberal · 2/5</div>
+        <div class="meta">Rising action</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep06-comic-p2.webp" alt="Crowd gathers in Porto" />
+        <div class="bubble miguel tl"><span class="who">Miguel</span>Dizem que o rei está longe. Nós… aqui.</div>
+        <div class="bubble rosa tr"><span class="who">Rosa</span>Então a constituição começa aqui.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>O rio ouve. A cidade responde.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>a constituição começa aqui</em></span><span>2/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Revolução Liberal · 3/5</div>
+        <div class="meta">Turning point</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep06-comic-p3.webp" alt="Public oath" />
+        <div class="bubble  tl"><span class="who">Oficial</span>Pela nação. Pela lei.</div>
+        <div class="bubble miguel tr"><span class="who">Miguel</span>Juramos!</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>Um juramento… mais alto que o sino.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>juramos</em></span><span>3/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Revolução Liberal · 4/5</div>
+        <div class="meta">Consequence</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep06-comic-p4.webp" alt="Evening on the quay" />
+        <div class="bubble rosa tl"><span class="who">Rosa</span>Mudámos alguma coisa?</div>
+        <div class="bubble miguel tr"><span class="who">Miguel</span>Abrimos a porta. O resto… caminha.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>O absolutismo… sentiu o Porto.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>abrimos a porta</em></span><span>4/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Revolução Liberal · 5/5</div>
+        <div class="meta">Resolution</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep06-comic-p5.webp" alt="Night at the print shop" />
+        <div class="bubble rosa tl"><span class="who">Rosa</span>Acabou a revolução?</div>
+        <div class="bubble miguel tr"><span class="who">Miguel</span>Acabou este dia. A liberdade… ainda se escreve.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>Guardo este cais. Portugal pediu lei.</div>
+      </div>
+      <div class="foot"><span>End of story · no “to be continued”</span><span>5/5</span></div>
+    </article>
+
+    <article class="page study" id="study">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Study pack</div>
+        <div class="meta">100 words · PT → EN</div>
+      </div>
+      <h2>Study pack — Revolução Liberal</h2>
+      <div class="tips">
+        Read the comic once for story, once for words. Say each line aloud. Prefer Portuguese answers in the quiz.
+      </div>
+      <h3>Glossary (100)</h3>
+      <div class="glossary">
+        <div class="g-row"><span>liberal</span><span>liberal</span></div>
+        <div class="g-row"><span>constituição</span><span>constitution</span></div>
+        <div class="g-row"><span>cortes</span><span>Cortes (parliament)</span></div>
+        <div class="g-row"><span>jura</span><span>oath</span></div>
+        <div class="g-row"><span>absolutismo</span><span>absolutism</span></div>
+        <div class="g-row"><span>brasil</span><span>Brazil</span></div>
+        <div class="g-row"><span>manifesto</span><span>manifesto</span></div>
+        <div class="g-row"><span>proclamação</span><span>proclamation</span></div>
+        <div class="g-row"><span>milícia</span><span>militia</span></div>
+        <div class="g-row"><span>cadete</span><span>cadet</span></div>
+        <div class="g-row"><span>comerciante</span><span>merchant</span></div>
+        <div class="g-row"><span>tipógrafo</span><span>printer</span></div>
+        <div class="g-row"><span>jornal</span><span>newspaper</span></div>
+        <div class="g-row"><span>panfleto</span><span>pamphlet</span></div>
+        <div class="g-row"><span>ribeira</span><span>Ribeira (Porto)</span></div>
+        <div class="g-row"><span>douro</span><span>Douro</span></div>
+        <div class="g-row"><span>clérigos</span><span>Clérigos</span></div>
+        <div class="g-row"><span>discurso</span><span>speech</span></div>
+        <div class="g-row"><span>direitos</span><span>rights</span></div>
+        <div class="g-row"><span>pátria</span><span>homeland</span></div>
+        <div class="g-row"><span>cidadão</span><span>citizen</span></div>
+        <div class="g-row"><span>voto</span><span>vote</span></div>
+        <div class="g-row"><span>lei</span><span>law</span></div>
+        <div class="g-row"><span>assembleia</span><span>assembly</span></div>
+        <div class="g-row"><span>deputado</span><span>deputy</span></div>
+        <div class="g-row"><span>reforma</span><span>reform</span></div>
+        <div class="g-row"><span>união</span><span>union</span></div>
+        <div class="g-row"><span>hino</span><span>anthem</span></div>
+        <div class="g-row"><span>prensa</span><span>press</span></div>
+        <div class="g-row"><span>tinta</span><span>ink</span></div>
+        <div class="g-row"><span>papel</span><span>paper</span></div>
+        <div class="g-row"><span>assinar</span><span>to sign</span></div>
+        <div class="g-row"><span>jurar</span><span>to swear</span></div>
+        <div class="g-row"><span>proclamar</span><span>to proclaim</span></div>
+        <div class="g-row"><span>exigir</span><span>to demand</span></div>
+        <div class="g-row"><span>calar</span><span>to be silent</span></div>
+        <div class="g-row"><span>mulher</span><span>woman</span></div>
+        <div class="g-row"><span>homem</span><span>man</span></div>
+        <div class="g-row"><span>jovem</span><span>young person</span></div>
+        <div class="g-row"><span>vinho-do-porto</span><span>port wine</span></div>
+        <div class="g-row"><span>barca</span><span>river boat</span></div>
+        <div class="g-row"><span>cais</span><span>quay</span></div>
+        <div class="g-row"><span>névoa</span><span>mist</span></div>
+        <div class="g-row"><span>convento</span><span>convent</span></div>
+        <div class="g-row"><span>caos</span><span>chaos</span></div>
+        <div class="g-row"><span>palavra</span><span>word</span></div>
+        <div class="g-row"><span>conflito</span><span>conflict</span></div>
+        <div class="g-row"><span>exílio</span><span>exile</span></div>
+        <div class="g-row"><span>corte</span><span>royal court</span></div>
+        <div class="g-row"><span>ministério</span><span>ministry</span></div>
+        <div class="g-row"><span>ministro</span><span>minister</span></div>
+        <div class="g-row"><span>general</span><span>general</span></div>
+        <div class="g-row"><span>arma</span><span>weapon</span></div>
+        <div class="g-row"><span>pólvora</span><span>gunpowder</span></div>
+        <div class="g-row"><span>1820</span><span>1820</span></div>
+        <div class="g-row"><span>setembro</span><span>September</span></div>
+        <div class="g-row"><span>outubro</span><span>October</span></div>
+        <div class="g-row"><span>regência</span><span>regency</span></div>
+        <div class="g-row"><span>beresford</span><span>Beresford</span></div>
+        <div class="g-row"><span>ingleses</span><span>the English</span></div>
+        <div class="g-row"><span>ocupação</span><span>occupation</span></div>
+        <div class="g-row"><span>dívida</span><span>debt</span></div>
+        <div class="g-row"><span>imposto</span><span>tax</span></div>
+        <div class="g-row"><span>comércio-livre</span><span>free trade</span></div>
+        <div class="g-row"><span>monopólio</span><span>monopoly</span></div>
+        <div class="g-row"><span>colónia</span><span>colony</span></div>
+        <div class="g-row"><span>metrópole</span><span>metropole</span></div>
+        <div class="g-row"><span>independência-brasil</span><span>Brazilian independence (context)</span></div>
+        <div class="g-row"><span>volta-do-rei</span><span>king's return</span></div>
+        <div class="g-row"><span>praça-da-constituição</span><span>Constitution Square</span></div>
+        <div class="g-row"><span>campo-de-santo-ovidio</span><span>Santo Ovídio field</span></div>
+        <div class="g-row"><span>regimento</span><span>regiment</span></div>
+        <div class="g-row"><span>guarnição</span><span>garrison</span></div>
+        <div class="g-row"><span>sentinela</span><span>sentinel</span></div>
+        <div class="g-row"><span>alvorada-militar</span><span>military reveille</span></div>
+        <div class="g-row"><span>toque-de-reunir</span><span>assembly call</span></div>
+        <div class="g-row"><span>orador</span><span>speaker</span></div>
+        <div class="g-row"><span>multidão-portuense</span><span>Porto crowd</span></div>
+        <div class="g-row"><span>portuense</span><span>Porto native</span></div>
+        <div class="g-row"><span>província</span><span>province</span></div>
+        <div class="g-row"><span>reino-unido</span><span>United Kingdom (Portugal-Brazil)</span></div>
+        <div class="g-row"><span>decreto</span><span>decrect</span></div>
+        <div class="g-row"><span>petição</span><span>petition</span></div>
+        <div class="g-row"><span>liberdade-de-imprensa</span><span>press freedom</span></div>
+        <div class="g-row"><span>prisão</span><span>prison</span></div>
+        <div class="g-row"><span>amnistia</span><span>amnesty</span></div>
+        <div class="g-row"><span>traição</span><span>treason</span></div>
+        <div class="g-row"><span>dever</span><span>duty</span></div>
+        <div class="g-row"><span>igualdade</span><span>equality</span></div>
+        <div class="g-row"><span>fraternidade</span><span>fraternity</span></div>
+        <div class="g-row"><span>progresso</span><span>progress</span></div>
+        <div class="g-row"><span>tradição</span><span>tradition</span></div>
+        <div class="g-row"><span>modernidade</span><span>modernity</span></div>
+        <div class="g-row"><span>fábrica</span><span>factory</span></div>
+        <div class="g-row"><span>oficina</span><span>workshop</span></div>
+        <div class="g-row"><span>mercado-negro</span><span>black market</span></div>
+        <div class="g-row"><span>pão-duro</span><span>hard bread</span></div>
+        <div class="g-row"><span>fome-urbana</span><span>urban hunger</span></div>
+        <div class="g-row"><span>salário</span><span>wage</span></div>
+        <div class="g-row"><span>greve</span><span>strike</span></div>
+      </div>
+      <h3>Comprehension (answer in PT)</h3>
+      <div class="quiz">
+        <ol>
+          <li>Onde começa a revolução nesta história?</li>
+          <li>Quem são Rosa e Miguel?</li>
+          <li>O que juram na praça?</li>
+          <li>O que significa “abrimos a porta”?</li>
+          <li>Como acaba a história?</li>
+        </ol>
+      </div>
+      <h3>Cultural note</h3>
+      <p>In 1820 Porto sparked Portugal’s Liberal Revolution: officers, merchants, and citizens pressed for a constitution and Cortes while King João VI was still in Brazil. Print and public oaths mattered as much as muskets. The comic stays human-scale — a sister who prints, a brother who swears, and a city that asked for written law.</p>
+      <div class="cta">
+        <strong>Next</strong>
+        Free Ep.01: O Terramoto (1755) · Hub: series page · More paid episodes on Gumroad
+      </div>
+    </article>
+
+  </div>
+</body>
+</html>

@@ -91,6 +91,19 @@ export const gaivotaEpisodes: GaivotaEpisode[] = [
     gumroadCheckoutUrl:
       "https://pixidstudio.gumroad.com/l/gaivota-ep05-vasco-da-gama?wanted=true",
   },
+  {
+    id: "06-liberal-revolution",
+    number: 6,
+    titlePt: "Revolução Liberal",
+    titleEn: "Liberal Revolution",
+    event: "Liberal Revolution (Porto)",
+    year: "1820",
+    price: 5,
+    status: "live",
+    pagePath: "/comics/gaivota-em-portugal/06-liberal-revolution",
+    gumroadCheckoutUrl:
+      "https://pixidstudio.gumroad.com/l/gaivota-ep06-liberal-revolution?wanted=true",
+  },
 ];
 
 export function gaivotaAbsolute(path: string) {

@@ -69,6 +69,9 @@ export default function GaivotaHubPage() {
           <Link className={btnSecondary} href="/comics/gaivota-em-portugal/05-vasco-da-gama">
             Ep.05 — Vasco da Gama
           </Link>
+          <Link className={btnSecondary} href="/comics/gaivota-em-portugal/06-liberal-revolution">
+            Ep.06 — Revolução Liberal
+          </Link>
         </div>
 
         <section className="mt-14">
@@ -109,7 +112,6 @@ export default function GaivotaHubPage() {
             <li>Ep.01 free on this site (HTML) · paid episodes as printable PDF</li>
             <li>History brief + artistic noir comic with a complete ending</li>
             <li>100 new Portuguese words · English glossary</li>
-            <li>One Gumroad product per paid episode (separate downloads)</li>
           </ul>
           <p className="mt-4 text-sm text-[#5c574e]">
             Pairs well with CIPLE A2 and other Prep2Go Portuguese Anki decks — culture and reading, not only flashcards.
