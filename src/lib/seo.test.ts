@@ -1,9 +1,19 @@
 import { describe, expect, it } from "vitest";
+import { catalogPlannedDecks, getDeckBySlug } from "./decks";
 import { getAllMockExams } from "./mock-exams/configs";
+import {
+  googleHeadExamSlugs,
+  isNicheGooglePrioritySlug,
+  nicheGooglePrioritySlugs,
+} from "./mock-exams/hub-clusters";
 import { isMockExamRunnable } from "./mock-exams/question-bank";
 import {
+  deckRobots,
   finalize,
+  INDEXABLE_STATE_RE_SLUGS,
   mockExamRobots,
+  mockExamSitemapPriority,
+  shouldIndexDeck,
   shouldIndexMockExam,
   truncateSeoTitle,
 } from "./seo";
@@ -40,16 +50,53 @@ describe("seo utilities (Barakhlo patterns)", () => {
     expect(mockExamRobots("sie-full-mock")).toBeUndefined();
   });
 
-  it("indexes live runnable mocks and thick coming_soon waitlist mocks", () => {
+  it("noindexes state-RE swarm outside CA/FL/TX/NY allowlist", () => {
+    expect(shouldIndexMockExam("fl-real-estate-readiness-check")).toBe(true);
+    expect(shouldIndexMockExam("california-real-estate-readiness-check")).toBe(true);
+    expect(shouldIndexMockExam("tx-real-estate-readiness-check")).toBe(true);
+    expect(shouldIndexMockExam("ny-real-estate-readiness-check")).toBe(true);
+    expect(shouldIndexMockExam("az-real-estate-readiness-check")).toBe(false);
+    expect(shouldIndexMockExam("al-real-estate-readiness-check")).toBe(false);
+    expect(mockExamRobots("az-real-estate-readiness-check")).toEqual({
+      index: false,
+      follow: true,
+    });
+    expect(INDEXABLE_STATE_RE_SLUGS.size).toBe(4);
+  });
+
+  it("noindexes planned decks while keeping available decks indexable", () => {
+    const planned = catalogPlannedDecks[0];
+    expect(planned).toBeDefined();
+    expect(shouldIndexDeck(planned)).toBe(false);
+    expect(deckRobots(planned)).toEqual({ index: false, follow: true });
+
+    const available = getDeckBySlug("sie-exam-anki-deck");
+    expect(available?.status).toBe("available");
+    if (available) {
+      expect(shouldIndexDeck(available)).toBe(true);
+      expect(deckRobots(available)).toBeUndefined();
+    }
+  });
+
+  it("boosts niche Google priority slugs and deprioritizes head exams in sitemap", () => {
+    expect(nicheGooglePrioritySlugs.length).toBeGreaterThanOrEqual(10);
+    expect(isNicheGooglePrioritySlug("epa-608-readiness-check")).toBe(true);
+    expect(mockExamSitemapPriority("epa-608-readiness-check")).toBe(0.98);
+    expect(mockExamSitemapPriority("sie-full-mock")).toBe(0.72);
+    expect(mockExamSitemapPriority("nremt-emt-readiness-check")).toBe(0.88);
+    for (const slug of googleHeadExamSlugs) {
+      expect(mockExamSitemapPriority(slug)).toBe(0.72);
+    }
+  });
+
+  it("indexes live runnable mocks and thick coming_soon waitlist mocks (except thin state-RE)", () => {
     for (const mock of getAllMockExams()) {
-      const expected =
-        mock.status === "live"
-          ? isMockExamRunnable(mock.slug)
-          : mock.status === "coming_soon"
-            ? shouldIndexMockExam(mock.slug)
-            : false;
+      if (mock.familyId === "state-re" && !INDEXABLE_STATE_RE_SLUGS.has(mock.slug)) {
+        expect(shouldIndexMockExam(mock.slug)).toBe(false);
+        continue;
+      }
       if (mock.status === "live") {
-        expect(shouldIndexMockExam(mock.slug)).toBe(expected);
+        expect(shouldIndexMockExam(mock.slug)).toBe(isMockExamRunnable(mock.slug));
       } else if (mock.status === "coming_soon") {
         expect(shouldIndexMockExam(mock.slug)).toBe(true);
         expect(mockExamRobots(mock.slug)).toBeUndefined();

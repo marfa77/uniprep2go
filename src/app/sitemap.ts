@@ -1,8 +1,8 @@
 import type { MetadataRoute } from "next";
-import { availableDecks, catalogPlannedDecks } from "../lib/decks";
+import { availableDecks } from "../lib/decks";
 import { getAllMockExams } from "../lib/mock-exams/configs";
 import { getVerticalSummaries } from "../lib/mock-exams/hub-clusters";
-import { shouldIndexMockExam } from "../lib/seo";
+import { mockExamSitemapPriority, shouldIndexMockExam } from "../lib/seo";
 import { siteConfig } from "../lib/site";
 
 const siteUrl = siteConfig.url;
@@ -17,20 +17,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.92,
   }));
 
-  const plannedDeckPages = catalogPlannedDecks.map((deck) => ({
-    url: `${siteUrl}/decks/${deck.slug}`,
-    lastModified,
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }));
-
+  // Planned waitlist decks stay on /api/facts + llms; exclude from Google sitemap.
   const mockPages = getAllMockExams()
     .filter((mock) => shouldIndexMockExam(mock.slug))
     .map((mock) => ({
       url: `${siteUrl}/mock-exams/${mock.slug}`,
       lastModified,
       changeFrequency: "weekly" as const,
-      priority: 0.95,
+      priority: mockExamSitemapPriority(mock.slug),
     }));
 
   const mockVerticalPages = getVerticalSummaries().map((vertical) => ({
@@ -116,7 +110,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...mockVerticalPages,
     ...mockPages,
     ...deckPages,
-    ...plannedDeckPages,
     {
       url: `${siteUrl}/contact`,
       lastModified,

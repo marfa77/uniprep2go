@@ -61,7 +61,7 @@ import {
   shouldShowDeckPracticeMockSection,
   splitFaqs,
 } from "@/lib/page-layout";
-import { finalize, leafPageTitle } from "@/lib/seo";
+import { deckRobots, finalize, leafPageTitle } from "@/lib/seo";
 import { buildSocialMetadata } from "@/lib/social-metadata";
 
 export const revalidate = 3600;
@@ -99,12 +99,14 @@ export async function generateMetadata({
   const keywords = buildDeckSeoKeywords(deck);
   const examProfile = getExamFactsProfileForDeck(deck.slug);
   const linkedMockForMeta = getDeckLinkedMock(deck.slug);
+  const robots = deckRobots(deck);
 
   return withAiMetadata(
     finalize({
       title,
       description,
       keywords,
+      ...(robots ? { robots } : {}),
       alternates: {
         canonical: `/decks/${deck.slug}`,
       },

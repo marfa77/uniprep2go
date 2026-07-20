@@ -22,6 +22,7 @@ import {
   MockExamWhatIsSection,
   MockExamWhoForSection,
 } from "@/components/mock-exams/mock-seo-sections";
+import { MockSampleQuestionsSection } from "@/components/mock-exams/mock-sample-questions";
 import { CollapsibleDetails } from "@/components/ui/collapsible-details";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -39,6 +40,10 @@ import { getExamFactsProfileForDeck } from "@/lib/exam-facts";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { getMockAccessState } from "@/lib/mock-exams/access";
 import { getAllMockExams, getMockExamConfig } from "@/lib/mock-exams/configs";
+import {
+  getNicheGooglePageLead,
+  isNicheGooglePrioritySlug,
+} from "@/lib/mock-exams/hub-clusters";
 import { buildMockExamPageJsonLd } from "@/lib/mock-exams/llm";
 import { getMockOfficialResources } from "@/lib/mock-exams/official-resources";
 import { getQuestionBank, isMockExamRunnable } from "@/lib/mock-exams/question-bank";
@@ -141,6 +146,8 @@ export default async function MockExamPage({
   const runnable = isMockExamRunnable(slug);
   const jsonLd = buildMockExamPageJsonLd(config);
   const seoCopy = buildMockSeoPageCopy(config);
+  const nicheLead = getNicheGooglePageLead(config.slug);
+  const showNicheSamples = isNicheGooglePrioritySlug(config.slug) && runnable && questions.length > 0;
   const linkedDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
   const examFactsProfile = getExamFactsProfileForDeck(config.linkedDeckSlug);
   const official = getMockOfficialResources(config);
@@ -156,6 +163,11 @@ export default async function MockExamPage({
           ),
         }
       : null;
+  const heroLead =
+    nicheLead ??
+    (seoCopy.whatIsExam.length > 280
+      ? `${seoCopy.whatIsExam.slice(0, 280).replace(/\s+\S*$/, "")}…`
+      : seoCopy.whatIsExam);
 
   return (
     <main className="min-h-screen bg-[#f7f3ea] text-[#18140f]">
@@ -187,11 +199,7 @@ export default async function MockExamPage({
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
           {seoCopy.headline}
         </h1>
-        <p className="mt-4 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          {seoCopy.whatIsExam.length > 280
-            ? `${seoCopy.whatIsExam.slice(0, 280).replace(/\s+\S*$/, "")}…`
-            : seoCopy.whatIsExam}
-        </p>
+        <p className="mt-4 max-w-3xl text-lg leading-8 text-[#4f493e]">{heroLead}</p>
 
         <MockExamVisualHero config={config} />
         <MockExamSnapshot config={config} />
@@ -221,6 +229,14 @@ export default async function MockExamPage({
             linkedCheckout={linkedCheckout}
             questions={questions}
             runnable={runnable}
+          />
+        ) : null}
+
+        {showNicheSamples ? (
+          <MockSampleQuestionsSection
+            config={config}
+            lead={`These sample items mirror the domains in the full timed ${config.shortTitle} mock. Correct answers and explanations unlock inside the practice session.`}
+            questions={questions}
           />
         ) : null}
 

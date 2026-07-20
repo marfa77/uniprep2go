@@ -45,13 +45,23 @@ import {
 
 const examPathLinks = [
   {
-    title: "Allied health certifications",
-    description: "NHA CCMA, phlebotomy, pharmacy tech, and medical admin readiness checks — free timed mocks.",
+    title: "Building, safety & sustainability",
+    description:
+      "EPA 608, LEED, NEBOSH, CFPS, and MRICS pathways — free timed mocks with linked Anki decks.",
     links: [
-      { href: "/mock-exams/v/allied-health", label: "Browse allied health mocks" },
-      { href: "/mock-exams/nha-ccma-readiness-check", label: "NHA CCMA mock" },
-      { href: "/mock-exams/nha-cpt-phlebotomy-readiness-check", label: "NHA CPT phlebotomy" },
-      { href: "/mock-exams/ptcb-pharmacy-technician-mock", label: "PTCB practice test" },
+      { href: `/${BUILDING_CERTIFICATION_HUB_SLUG}`, label: "All building certification pathways" },
+      { href: "/mock-exams/epa-608-readiness-check", label: "EPA 608 practice test" },
+      { href: "/mock-exams/leed-green-associate-readiness-check", label: "LEED GA practice test" },
+      { href: "/mock-exams/nebosh-readiness-check", label: "NEBOSH readiness check" },
+    ],
+  },
+  {
+    title: "Trades & water treatment",
+    description: "Electrical journeyman, plumbing, and Water Treatment Operator Class I readiness checks.",
+    links: [
+      { href: "/mock-exams/v/trades", label: "Browse trades mocks" },
+      { href: "/mock-exams/electrical-journeyman-readiness-check", label: "Electrical journeyman" },
+      { href: "/mock-exams/water-treatment-operator-1-readiness-check", label: "Water treatment Op-1" },
     ],
   },
   {
@@ -64,12 +74,21 @@ const examPathLinks = [
     ],
   },
   {
+    title: "Allied health (specialty)",
+    description: "NHA phlebotomy and CCMA readiness checks — niche allied-health mocks first.",
+    links: [
+      { href: "/mock-exams/v/allied-health", label: "Browse allied health mocks" },
+      { href: "/mock-exams/nha-cpt-phlebotomy-readiness-check", label: "NHA CPT phlebotomy" },
+      { href: "/mock-exams/nha-ccma-readiness-check", label: "NHA CCMA mock" },
+    ],
+  },
+  {
     title: "State real estate licensing",
     description: "Florida, Texas, New York, and California salesperson readiness checks.",
     links: [
       { href: "/mock-exams/v/real-estate", label: "All real estate mocks" },
       { href: "/mock-exams/fl-real-estate-readiness-check", label: "Florida RE mock" },
-      { href: "/mock-exams/tx-real-estate-readiness-check", label: "Texas RE mock" },
+      { href: "/mock-exams/california-real-estate-readiness-check", label: "California RE mock" },
     ],
   },
   {
@@ -101,7 +120,7 @@ const examPathLinks = [
   },
   {
     title: "FINRA securities exam prep",
-    description: "Start with the free SIE mock, then drill SIE, Series 7, and Series 63 flashcards.",
+    description: "SIE, Series 7, and Series 63 flashcards after the free SIE mock.",
     links: [
       { href: "/mock-exams/sie-full-mock", label: "Free SIE practice test" },
       { href: "/decks/sie-exam-anki-deck", label: "SIE flashcards" },
@@ -115,17 +134,6 @@ const examPathLinks = [
       { href: "/mock-exams/servsafe-manager-mock", label: "Free ServSafe practice test" },
       { href: "/decks/servsafe-manager-anki-deck", label: "ServSafe flashcards" },
       { href: "/decks/servsafe-manager-complete-study-guide", label: "Printable study guide" },
-    ],
-  },
-  {
-    title: "Building, safety & sustainability",
-    description:
-      "EPA 608, LEED, WELL AP, MRICS, and PMP pathways — each with a free mock and linked Anki deck.",
-    links: [
-      { href: `/${BUILDING_CERTIFICATION_HUB_SLUG}`, label: "All building certification pathways" },
-      { href: "/mock-exams/epa-608-readiness-check", label: "EPA 608 readiness check" },
-      { href: "/mock-exams/leed-green-associate-readiness-check", label: "LEED GA readiness check" },
-      { href: "/mock-exams/pmp-readiness-check", label: "PMP readiness check" },
     ],
   },
   {
@@ -169,15 +177,16 @@ const howItWorksSteps = [
   },
 ];
 
+/** Home featured strip — niche Google priority set (not head SIE/ServSafe/PTCB). */
 const featuredMockSlugs = [
-  "sie-full-mock",
+  "epa-608-readiness-check",
+  "leed-green-associate-readiness-check",
+  "nebosh-readiness-check",
+  "cfps-readiness-check",
   "cdl-general-knowledge-readiness-check",
-  "nha-ccma-readiness-check",
-  "nremt-emt-readiness-check",
-  "servsafe-manager-mock",
+  "electrical-journeyman-readiness-check",
+  "nha-cpt-phlebotomy-readiness-check",
   "fl-real-estate-readiness-check",
-  "ptcb-pharmacy-technician-mock",
-  "cfa-level-1-readiness-check",
 ] as const;
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -313,11 +322,11 @@ export default async function HomePage() {
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
-                  href="/mock-exams/sie-full-mock"
+                  href="/mock-exams/epa-608-readiness-check"
                   className={btnPrimary}
-                  aria-label="Start timed FINRA SIE practice test"
+                  aria-label="Start free EPA 608 practice test"
                 >
-                  Start Free SIE Practice Test
+                  Start Free EPA 608 Practice Test
                 </Link>
                 <Link href="/mock-exams" className={btnSecondary}>
                   Browse all practice tests

@@ -1,8 +1,21 @@
 import type { Metadata } from "next";
+import type { Deck } from "./decks";
 import { getMockExamConfig } from "./mock-exams/configs";
+import {
+  isGoogleHeadExamSlug,
+  isNicheGooglePrioritySlug,
+} from "./mock-exams/hub-clusters";
 import { getNicheExamExplainer } from "./mock-exams/niche-exam-explainers";
 import { isMockExamRunnable } from "./mock-exams/question-bank";
 import { absoluteUrl, siteConfig } from "./site";
+
+/** State real-estate mocks Google may index — hub spear + majors only. */
+export const INDEXABLE_STATE_RE_SLUGS = new Set([
+  "california-real-estate-readiness-check",
+  "fl-real-estate-readiness-check",
+  "tx-real-estate-readiness-check",
+  "ny-real-estate-readiness-check",
+]);
 
 export const SITE_NAME = siteConfig.name;
 /** Ahrefs: keep primary title under ~57 chars before the layout template suffix. */
@@ -102,12 +115,15 @@ export function leafPageTitle(title: string, max = 60): Metadata["title"] {
 
 /**
  * Indexable mocks:
- * - live + runnable bank
+ * - live + runnable bank (state-RE limited to INDEXABLE_STATE_RE_SLUGS)
  * - coming_soon waitlist pages with a niche explainer (thick SEO guide + notify CTA)
  */
 export function shouldIndexMockExam(slug: string): boolean {
   const config = getMockExamConfig(slug);
   if (!config) {
+    return false;
+  }
+  if (config.familyId === "state-re" && !INDEXABLE_STATE_RE_SLUGS.has(slug)) {
     return false;
   }
   if (config.status === "live") {
@@ -122,6 +138,26 @@ export function shouldIndexMockExam(slug: string): boolean {
 
 export function mockExamRobots(slug: string): Metadata["robots"] | undefined {
   return shouldIndexMockExam(slug) ? undefined : thinContentRobots;
+}
+
+/** Planned waitlist decks stay crawlable for GEO/notify but are not Google-indexed. */
+export function shouldIndexDeck(deck: Pick<Deck, "status">): boolean {
+  return deck.status !== "planned";
+}
+
+export function deckRobots(deck: Pick<Deck, "status">): Metadata["robots"] | undefined {
+  return shouldIndexDeck(deck) ? undefined : thinContentRobots;
+}
+
+/** Sitemap priority: niche Google money URLs high; head exams low; other indexed mocks mid. */
+export function mockExamSitemapPriority(slug: string): number {
+  if (isNicheGooglePrioritySlug(slug)) {
+    return 0.98;
+  }
+  if (isGoogleHeadExamSlug(slug)) {
+    return 0.72;
+  }
+  return 0.88;
 }
 
 function hasOgImages(images: NonNullable<Metadata["openGraph"]>["images"]): boolean {
@@ -155,9 +191,9 @@ export function finalize(meta: Metadata): Metadata {
 
 export function homeMetadata(): Metadata {
   // Keep absolute title ≤57 chars (Ahrefs / audit TITLE_MAX).
-  const title = "Free US Exam Practice Tests | SIE, CFA, LEED";
+  const title = "Free US Exam Practice Tests | EPA, LEED, CDL";
   const description =
-    "Free timed practice tests for FINRA, CFA, ServSafe, PTCB, EPA 608, LEED, and more — paired with Anki decks for weak-topic repair. No signup.";
+    "Free timed practice tests for EPA 608, LEED, NEBOSH, CDL, trades, and specialty licenses — paired with Anki decks for weak-topic repair. No signup.";
 
   return finalize({
     title: {

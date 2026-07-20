@@ -194,5 +194,20 @@ export function buildSiteOrganizationJsonLd() {
       name: siteConfig.primaryMarket,
     },
     knowsAbout: siteConfig.primaryUseCases,
+    /** Checkout / studio parent — not the primary site Organization. */
+    parentOrganization: {
+      "@type": "Organization" as const,
+      "@id": "https://www.pixid.studio/#org",
+      name: "PixID Studio",
+      url: "https://www.pixid.studio/",
+    },
+  };
+}
+
+/** Sitewide JSON-LD document for root layout (UniPrep2Go primary). */
+export function buildSiteOrganizationJsonLdDocument() {
+  return {
+    "@context": "https://schema.org",
+    ...buildSiteOrganizationJsonLd(),
   };
 }

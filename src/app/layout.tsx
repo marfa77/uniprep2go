@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { CookieConsentBanner } from "@/components/cookie-consent-banner";
 import { GoogleAnalytics } from "@/components/google-analytics";
-import { PixidOrganizationSchema } from "@/components/pixid-organization-schema";
+import { SiteOrganizationSchema } from "@/components/site-organization-schema";
 import { SkipToContent } from "@/components/skip-to-content";
 import { defaultMetadata } from "@/lib/seo";
 import "./globals.css";
@@ -31,7 +31,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <SkipToContent />
-        <PixidOrganizationSchema />
+        <SiteOrganizationSchema />
         {children}
         <GoogleAnalytics />
         <CookieConsentBanner />

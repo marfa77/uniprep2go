@@ -106,6 +106,7 @@ describe("product json-ld", () => {
   it("publishes US-first organization context for search and LLMs", () => {
     expect(buildSiteOrganizationJsonLd()).toMatchObject({
       "@type": "Organization",
+      name: "UniPrep2Go",
       contactPoint: {
         "@type": "ContactPoint",
         email: "support@uniprep2go.study",
@@ -117,6 +118,11 @@ describe("product json-ld", () => {
       knowsAbout: expect.arrayContaining([
         "FINRA SIE, Series 7, and Series 63 exam prep",
       ]),
+      parentOrganization: {
+        "@type": "Organization",
+        name: "PixID Studio",
+        "@id": "https://www.pixid.studio/#org",
+      },
     });
   });
 });

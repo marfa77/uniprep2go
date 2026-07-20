@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import sitemap from "../app/sitemap";
 import robots from "../app/robots";
-import { availableDecks } from "./decks";
+import { availableDecks, catalogPlannedDecks } from "./decks";
 import { intentPages } from "./intent-pages";
 import { getAllMockExams } from "./mock-exams/configs";
 import { isMockExamRunnable } from "./mock-exams/question-bank";
@@ -72,17 +72,22 @@ describe("intent pages visibility", () => {
     expect(JSON.stringify(rules)).toContain("\"allow\":\"/\"");
   });
 
-  it("lists every HTML deck page in the sitemap", () => {
+  it("lists every available HTML deck page in the sitemap and omits planned decks", () => {
     const urls = sitemap().map((entry) => entry.url);
 
     for (const deck of availableDecks) {
       expect(urls).toContain(absoluteUrl(`/decks/${deck.slug}`));
       expect(urls).not.toContain(absoluteUrl(`/${deck.slug}.md`));
     }
+    for (const deck of catalogPlannedDecks) {
+      expect(urls).not.toContain(absoluteUrl(`/decks/${deck.slug}`));
+    }
   });
 
-  it("lists runnable mock HTML pages in the Google sitemap", () => {
-    const urls = sitemap().map((entry) => entry.url);
+  it("lists indexable mock HTML pages in the Google sitemap with niche priority boost", () => {
+    const entries = sitemap();
+    const urls = entries.map((entry) => entry.url);
+    const byUrl = new Map(entries.map((entry) => [entry.url, entry]));
 
     expect(urls).toContain(absoluteUrl("/mock-exams"));
 
@@ -97,6 +102,9 @@ describe("intent pages visibility", () => {
       expect(urls).not.toContain(absoluteUrl(`/mock-exams/${mock.slug}/markdown`));
     }
 
+    expect(byUrl.get(absoluteUrl("/mock-exams/epa-608-readiness-check"))?.priority).toBe(0.98);
+    expect(byUrl.get(absoluteUrl("/mock-exams/sie-full-mock"))?.priority).toBe(0.72);
+    expect(urls).not.toContain(absoluteUrl("/mock-exams/az-real-estate-readiness-check"));
     expect(urls).toContain(absoluteUrl("/building-certification-anki-decks"));
     expect(
       getAllMockExams()
