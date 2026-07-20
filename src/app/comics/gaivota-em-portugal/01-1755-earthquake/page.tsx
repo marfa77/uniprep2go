@@ -42,10 +42,10 @@ export default function Ep01TerramotoPage() {
           {directAnswer}
         </p>
 
-        <div className="mt-6 overflow-hidden border-2 border-[#0e0e0e] bg-[#111]">
+        <div className="mt-6 overflow-hidden border-2 border-[#0e0e0e]">
           <Image
             alt="Cover: O Terramoto"
-            className="mx-auto h-auto max-h-[min(52vh,420px)] w-full object-contain"
+            className="mx-auto h-auto max-h-[min(52vh,420px)] w-auto max-w-full object-contain"
             height={900}
             priority
             src="/comics/gaivota-em-portugal/01-1755-earthquake/art/ep01-cover.jpg"
