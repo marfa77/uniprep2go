@@ -24,7 +24,7 @@ const PDF_PATH = join(
 );
 const COVER_PATH = join(
   root,
-  "prototypes/language-comics/gaivota-em-portugal/episodes/03-aljubarrota/art/ep03-cover.jpg",
+  "prototypes/language-comics/gaivota-em-portugal/episodes/03-aljubarrota/art/ep03-cover.webp",
 );
 
 const PRODUCT = {
@@ -150,10 +150,11 @@ async function main() {
     // Gumroad profile/grid thumbnail must be square ≥600×600 (not the portrait cover).
     const thumbDir = join(root, "prototypes/language-comics/gaivota-em-portugal/dist/thumbs");
     mkdirSync(thumbDir, { recursive: true });
+    // Gumroad thumbs: prefer JPEG (widest compatibility). Source cover is WebP.
     const thumbPath = join(thumbDir, "ep03-thumb-600.jpg");
     const tmpSq = join(thumbDir, "_sq.png");
     execSync(
-      `bash -lc 'w=$(sips -g pixelWidth "${COVER_PATH}" | awk "/pixelWidth/{print \\$2}"); h=$(sips -g pixelHeight "${COVER_PATH}" | awk "/pixelHeight/{print \\$2}"); side=$([ "$w" -lt "$h" ] && echo $w || echo $h); ox=$(( (w - side) / 2 )); oy=$(( (h - side) / 2 )); sips -c $side $side --cropOffset $ox $oy "${COVER_PATH}" --out "${tmpSq}" >/dev/null; sips -z 600 600 "${tmpSq}" --out "${thumbPath}" >/dev/null; rm -f "${tmpSq}"'`,
+      `bash -lc 'w=$(sips -g pixelWidth "${COVER_PATH}" | awk "/pixelWidth/{print \\$2}"); h=$(sips -g pixelHeight "${COVER_PATH}" | awk "/pixelHeight/{print \\$2}"); side=$([ "$w" -lt "$h" ] && echo $w || echo $h); ox=$(( (w - side) / 2 )); oy=$(( (h - side) / 2 )); sips -c $side $side --cropOffset $ox $oy "${COVER_PATH}" --out "${tmpSq}" >/dev/null; sips -z 600 600 -s format jpeg "${tmpSq}" --out "${thumbPath}" >/dev/null; rm -f "${tmpSq}"'`,
       { encoding: "utf8", stdio: "inherit" },
     );
     execSync(

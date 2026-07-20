@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}${pagePath}`,
     images: [
       {
-        url: `${siteConfig.url}/comics/gaivota-em-portugal/03-aljubarrota/ep03-cover.jpg`,
+        url: `${siteConfig.url}/comics/gaivota-em-portugal/03-aljubarrota/ep03-cover.webp`,
       },
     ],
   },
@@ -48,7 +48,7 @@ export default function Ep03AljubarrotaPage() {
             className="mx-auto h-auto max-h-[min(52vh,420px)] w-auto max-w-full object-contain"
             height={900}
             priority
-            src="/comics/gaivota-em-portugal/03-aljubarrota/ep03-cover.jpg"
+            src="/comics/gaivota-em-portugal/03-aljubarrota/ep03-cover.webp"
             width={675}
           />
         </div>

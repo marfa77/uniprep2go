@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}${gaivotaSeries.hubPath}`,
     images: [
       {
-        url: `${siteConfig.url}/comics/gaivota-em-portugal/01-1755-earthquake/art/ep01-cover.jpg`,
+        url: `${siteConfig.url}/comics/gaivota-em-portugal/01-1755-earthquake/art/ep01-cover.webp`,
       },
     ],
   },
@@ -38,7 +38,7 @@ export default function GaivotaHubPage() {
             alt="Gaivota mascot"
             className="h-16 w-16 rounded-full border-2 border-[#0e0e0e] object-cover"
             height={64}
-            src="/comics/gaivota-em-portugal/01-1755-earthquake/art/gaivota-canon-stamp.jpg"
+            src="/comics/gaivota-em-portugal/01-1755-earthquake/art/gaivota-canon-stamp.webp"
             width={64}
           />
           <div>
