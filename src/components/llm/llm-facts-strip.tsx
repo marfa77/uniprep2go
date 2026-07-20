@@ -24,7 +24,9 @@ type MockLlmFactsStripProps = {
   variant: "mock";
   config: MockExamConfig;
   profile?: ExamFactsProfile | null;
-  linkedDeck?: Pick<CatalogAvailableDeck, "slug" | "title" | "shortName"> | null;
+  linkedDeck?: (Pick<CatalogAvailableDeck, "slug" | "title" | "shortName"> & {
+    checkoutUrl?: string;
+  }) | null;
 };
 
 type DeckLlmFactsStripProps = {

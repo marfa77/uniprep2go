@@ -358,10 +358,9 @@ export function buildMockDataLlmFacts(
 /** Product/commercial layer for data-llm="commercial". */
 export function buildMockDataLlmCommercial(
   config: MockExamConfig,
-  linkedDeck?: Pick<
-    CatalogAvailableDeck,
-    "slug" | "title" | "shortName" | "checkoutUrl"
-  > | null,
+  linkedDeck?: (Pick<CatalogAvailableDeck, "slug" | "title" | "shortName"> & {
+    checkoutUrl?: string;
+  }) | null,
 ): string {
   const catalogDeck = getDeckBySlug(config.linkedDeckSlug);
   const deckLabel =
