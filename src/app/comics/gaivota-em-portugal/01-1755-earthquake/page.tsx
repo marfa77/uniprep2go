@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -30,48 +31,58 @@ export const metadata: Metadata = {
 
 export default function Ep01TerramotoPage() {
   return (
-    <div className="min-h-screen bg-[#111] text-[#f4f1ea]">
-      <div className="bg-[#ebe4d8] text-[#0e0e0e]">
-        <SiteHeader />
-        <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-3 px-6 py-4 sm:px-10">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#1f6f8b]">
-              FREE · Ep.01 · Gaivota em Portugal
-            </p>
-            <h1 className="text-2xl font-semibold sm:text-3xl">O Terramoto (1755)</h1>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            <Link className={btnSecondary} href={gaivotaSeries.hubPath}>
-              Series hub
-            </Link>
-            <a className={btnPrimary} href={readerSrc}>
-              Open full-screen reader
-            </a>
-          </div>
+    <div className="min-h-screen bg-[#ebe4d8] text-[#0e0e0e]">
+      <SiteHeader />
+      <main className="mx-auto w-full max-w-4xl px-4 pb-16 pt-8 sm:px-10">
+        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#1f6f8b]">
+          FREE · Ep.01 · Gaivota em Portugal
+        </p>
+        <h1 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">O Terramoto (1755)</h1>
+        <p className="mt-3 max-w-2xl text-base leading-relaxed text-[#3a342c] sm:text-lg">
+          {directAnswer}
+        </p>
+
+        <div className="mt-6 overflow-hidden border-2 border-[#0e0e0e]">
+          <Image
+            alt="Cover: O Terramoto"
+            className="h-auto w-full object-contain"
+            height={900}
+            priority
+            src="/comics/gaivota-em-portugal/01-1755-earthquake/art/ep01-cover.jpg"
+            width={675}
+          />
         </div>
-      </div>
 
-      <iframe
-        className="block w-full border-0 bg-[#ddd7cb]"
-        src={readerSrc}
-        title="O Terramoto — free comic reader"
-        style={{ height: "min(920px, 85vh)", minHeight: 640 }}
-      />
-
-      <div className="mx-auto flex w-full max-w-3xl flex-col gap-3 px-6 py-10 sm:px-10">
-        <p className="text-sm leading-relaxed text-[#cfc7b8]">{directAnswer}</p>
-        <div className="flex flex-wrap gap-3">
-          <a className={btnPrimary} href={gaivotaSeries.gumroadCheckoutUrl} rel="noreferrer">
-            Next episodes on Gumroad — $5
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <a className={btnPrimary} href={readerSrc}>
+            Read free comic (best on phone)
           </a>
-          <Link className={btnSecondary} href="/decks/ciple-a2-european-portuguese-anki-deck">
-            CIPLE A2 Anki deck
+          <Link className={btnSecondary} href={gaivotaSeries.hubPath}>
+            Series hub
           </Link>
+          <a className={btnSecondary} href={gaivotaSeries.gumroadCheckoutUrl} rel="noreferrer">
+            Ep.02 on Gumroad — $5
+          </a>
         </div>
-      </div>
-      <div className="bg-[#ebe4d8] text-[#0e0e0e]">
-        <SiteFooter />
-      </div>
+
+        <p className="mt-4 text-sm text-[#5c574e]">
+          Tip: open the reader full-screen — on phones, dialogue sits under each page so nothing covers faces.
+        </p>
+
+        {/* Desktop preview only — avoid clipped iframe on mobile */}
+        <div className="mt-10 hidden lg:block">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-[#5c574e]">
+            Desktop preview
+          </p>
+          <iframe
+            className="block w-full border-2 border-[#0e0e0e] bg-[#ddd7cb]"
+            src={readerSrc}
+            title="O Terramoto — free comic reader"
+            style={{ height: 900 }}
+          />
+        </div>
+      </main>
+      <SiteFooter />
     </div>
   );
 }
