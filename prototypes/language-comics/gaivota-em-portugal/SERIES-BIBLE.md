@@ -10,12 +10,13 @@ Status: **v1 locked** · Product: Gumroad printable comics · No Anki
 |--------|----------|
 | Series | **Gaivota em Portugal** |
 | Narrator | **Gaivota** (neutral; no personal name) |
-| Format (now) | **HTML** on site (free Ep.01) · Gumroad for paid episodes |
-| Format (later) | Printable PDF pack for Gumroad delivery |
-| Site hub | `/comics/gaivota-em-portugal` |
+| Format (site) | **HTML** — free Ep.01 reader on UniPrep2Go |
+| Format (Gumroad) | **PDF** per paid episode (not zip) |
+| Gumroad model | **One product per episode** (variants cannot attach different files) |
+| Site hub | `/comics/gaivota-em-portugal` (catalog + CTAs) |
 | Free Ep.01 | `/comics/gaivota-em-portugal/01-1755-earthquake` |
-| Gumroad | `https://pixidstudio.gumroad.com/l/gaivota-em-portugal-comics` ($5) |
-| Price | **Ep.01 = free** (on site) · **Ep.02+ = $5** on Gumroad |
+| Ep.02 product | `gaivota-em-portugal-comics` → PDF · $5 |
+| Price | **Ep.01 = free** · **Ep.02+ = $5** each (separate Gumroad products) |
 | Glossary | **EN only** (PT lemma → EN gloss) |
 | Bundle | later (not v1) |
 

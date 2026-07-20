@@ -58,7 +58,7 @@ export default function GaivotaHubPage() {
             Read Ep.01 free — O Terramoto (1755)
           </Link>
           <a className={btnSecondary} href={gaivotaSeries.gumroadCheckoutUrl} rel="noreferrer">
-            Gumroad — paid episodes ($5)
+            Ep.02 PDF on Gumroad — $5
           </a>
         </div>
 
@@ -97,10 +97,10 @@ export default function GaivotaHubPage() {
         <section className="mt-12 rounded-sm border border-[#0e0e0e]/15 bg-[#f4f1ea] p-6">
           <h2 className="text-xl font-semibold">What you get each episode</h2>
           <ul className="mt-3 list-disc space-y-1 pl-5 text-[#3a342c]">
-            <li>History brief (textbook-style facts) + artistic noir comic</li>
-            <li>Complete 5-page story with ending</li>
+            <li>Ep.01 free on this site (HTML) · paid episodes as printable PDF</li>
+            <li>History brief + artistic noir comic with a complete ending</li>
             <li>100 new Portuguese words · English glossary</li>
-            <li>Narrated by Gaivota — a seagull witnessing Portugal&apos;s past</li>
+            <li>One Gumroad product per paid episode (separate downloads)</li>
           </ul>
           <p className="mt-4 text-sm text-[#5c574e]">
             Pairs well with CIPLE A2 and other Prep2Go Portuguese Anki decks — culture and reading, not only flashcards.

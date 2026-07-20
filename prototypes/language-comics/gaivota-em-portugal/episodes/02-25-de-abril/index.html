@@ -128,6 +128,30 @@
       .panel, .hero { min-height: 380px; }
       .bubble { font-size: .88rem; max-width: 88%; }
     }
+
+    @media print {
+      body { background: white; }
+      .bar { display: none !important; }
+      .wrap { max-width: none; padding: 0; }
+      .page {
+        width: 210mm;
+        min-height: 277mm;
+        margin: 0;
+        box-shadow: none;
+        border: 0;
+        page-break-after: always;
+        break-after: page;
+      }
+      .page:last-child { page-break-after: auto; }
+      .panel { min-height: 0; }
+      .panel img, .hero img, .brief-img img {
+        max-height: 220mm;
+        object-fit: contain;
+        height: auto;
+      }
+      .bubble { box-shadow: none; }
+    }
+
   </style>
 </head>
 <body>

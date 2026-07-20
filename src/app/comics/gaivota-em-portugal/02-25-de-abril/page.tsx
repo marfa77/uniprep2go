@@ -10,7 +10,7 @@ import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 const pagePath = "/comics/gaivota-em-portugal/02-25-de-abril";
 
 const directAnswer =
-  "Gaivota em Portugal Episode 2 — 25 de Abril (Carnation Revolution, 1974): a paid noir Portuguese history comic ($5 on Gumroad). Includes a factual history brief, a complete 5-page story, and a 100-word PT→EN glossary. Episode 1 (1755) is free on this site.";
+  "Gaivota em Portugal Episode 2 — 25 de Abril (Carnation Revolution, 1974): a paid noir Portuguese history comic PDF ($5 on Gumroad). Includes a factual history brief, a complete 5-page story, and a 100-word PT→EN glossary. Episode 1 (1755) is free on this site.";
 
 export const metadata: Metadata = {
   title: "25 de Abril (1974) — Portuguese History Comic | Gaivota em Portugal",
@@ -53,15 +53,15 @@ export default function Ep0225DeAbrilPage() {
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#3a342c]">{directAnswer}</p>
 
         <ul className="mt-5 list-disc space-y-1 pl-5 text-[#3a342c]">
-          <li>History brief (textbook facts) + noir artistic comic</li>
-          <li>Complete 5-page story with ending</li>
+          <li>Printable <strong>PDF</strong> download</li>
+          <li>History brief + noir 5-page comic with ending</li>
           <li>100 new Portuguese words · English glossary</li>
           <li>Human-scale story — flowers, not gore</li>
         </ul>
 
         <div className="mt-8 flex flex-wrap gap-3">
           <a className={btnPrimary} href={gaivotaSeries.gumroadCheckoutUrl} rel="noreferrer">
-            Buy Ep.02 on Gumroad — $5
+            Buy Ep.02 PDF — $5
           </a>
           <Link className={btnSecondary} href="/comics/gaivota-em-portugal/01-1755-earthquake">
             Read free Ep.01 first

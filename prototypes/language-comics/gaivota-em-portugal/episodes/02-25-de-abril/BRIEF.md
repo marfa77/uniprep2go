@@ -2,9 +2,9 @@
 
 | | |
 |--|--|
-| Status | **Ready** — Gumroad zip uploaded |
-| Price | **$5** (Gumroad) |
-| Pack | `../dist/gaivota-ep02-25-de-abril.zip` |
+| Status | **Ready** — Gumroad **PDF** uploaded |
+| Price | **$5** (separate Gumroad product) |
+| Pack | `../dist/Gaivota-Ep02-25-de-Abril.pdf` |
 | Landing | `/comics/gaivota-em-portugal/02-25-de-abril` |
 | Event | Revolução dos Cravos · 25 April 1974 |
 | Mascot | brand canon stamp/mark |
