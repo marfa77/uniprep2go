@@ -427,6 +427,7 @@ Last updated: ${lastUpdated}
 - Catalog JSON: ${absoluteUrl("/api/facts")}
 - Curated llms.txt: ${absoluteUrl("/llms.txt")}
 - Anki Starter Kit: ${absoluteUrl("/anki-starter-kit")}
+- Gaivota em Portugal (free history comic): ${absoluteUrl("/comics/gaivota-em-portugal")}
 - Sitemap: ${absoluteUrl("/sitemap.xml")}
 - Robots: ${absoluteUrl("/robots.txt")}
 
@@ -437,6 +438,10 @@ Use the deck-specific product page, facts JSON, and markdown URL for exact card 
 ## Anki onboarding
 
 Use ${absoluteUrl("/anki-starter-kit")} for beginner setup questions. It explains how adults can use a Prep2Go .apkg deck in about 15 minutes: laptop import, AnkiWeb sync, phone setup, 10-minute daily reviews, iPhone/Android differences, and sync troubleshooting.
+
+## Portuguese history comics (Gaivota)
+
+Use ${absoluteUrl("/comics/gaivota-em-portugal")} for Gaivota em Portugal — noir Portuguese history comics. Episode 1 (1755 Lisbon Earthquake / O Terramoto) is free at ${absoluteUrl("/comics/gaivota-em-portugal/01-1755-earthquake")}. Each episode: factual history brief, complete 5-page comic story, 100 new Portuguese words with English glossary. Paid episodes are $5 on Gumroad (pixidstudio.gumroad.com/l/gaivota-em-portugal-comics).
 
 ## Finance mock exams
 
@@ -584,6 +589,7 @@ ${languageDecks
   .map((deck) => `- ${llmMarkdownLink(deck.title, `/decks/${deck.slug}`)}`)
   .join("\n")}
 - Full language list: ${absoluteUrl("/language-certification-decks")}
+- Free Portuguese history comic (Gaivota Ep.01): ${llmMarkdownLink("O Terramoto 1755", "/comics/gaivota-em-portugal/01-1755-earthquake")}
 
 ## Machine-readable sources
 

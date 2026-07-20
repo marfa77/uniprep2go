@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaivota em Portugal · Ep.01 — O Terramoto (1755) · FREE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #0e0e0e;
+      --paper: #f4f1ea;
+      --muted: #5c574e;
+      --line: #c9c2b4;
+      --free: #1f6f8b;
+      --accent: #b5451b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      color: var(--ink);
+      background: #ddd7cb;
+      line-height: 1.45;
+    }
+    .bar {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; justify-content: space-between;
+      padding: .7rem 1.1rem;
+      background: #111; color: #f4f1ea;
+    }
+    .bar .brand { display: flex; align-items: center; gap: .65rem; font-family: Fraunces, Georgia, serif; font-weight: 700; }
+    .bar img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; background: #fff; }
+    .bar .free { background: var(--free); color: #fff; font-size: .75rem; font-weight: 700; padding: .25rem .55rem; border-radius: 999px; letter-spacing: .04em; }
+    .bar a { color: #fff; text-decoration: none; font-weight: 600; font-size: .9rem; border: 1px solid rgba(255,255,255,.35); padding: .4rem .8rem; border-radius: 999px; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 1.25rem 1rem 4rem; }
+    .page {
+      width: min(100%, 794px);
+      margin: 0 auto 1.75rem;
+      background: var(--paper);
+      border: 1px solid #bdb5a6;
+      box-shadow: 0 16px 36px rgba(0,0,0,.12);
+      padding: 1.25rem 1.35rem 1.4rem;
+      position: relative;
+    }
+    .page-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: .85rem; }
+    .page-head .left { display: flex; align-items: center; gap: .5rem; font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: .95rem; }
+    .page-head .left img { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; }
+    .page-head .meta { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+    .hero {
+      position: relative; border: 3px solid var(--ink); min-height: 520px; overflow: hidden; background: #222;
+    }
+    .hero img, .panel img, .brief-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .hero { min-height: 640px; }
+    .hero .overlay {
+      position: absolute; left: 0; right: 0; bottom: 0;
+      padding: 1.5rem 1.2rem 1.2rem;
+      background: linear-gradient(transparent, rgba(0,0,0,.92) 40%);
+      color: #fff;
+    }
+    .hero h1 { margin: 0; font-family: Fraunces, Georgia, serif; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.05; }
+    .hero p { margin: .4rem 0 0; max-width: 36ch; opacity: .95; }
+    .badge-free {
+      position: absolute; top: 1rem; left: 1rem;
+      background: var(--free); color: #fff; font-weight: 700; font-size: .8rem;
+      padding: .4rem .7rem; letter-spacing: .04em;
+    }
+    .stamp {
+      position: absolute; top: 1rem; right: 1rem; width: 72px; height: 72px;
+      border-radius: 50%; border: 2px solid #fff; object-fit: cover; background: #fff;
+    }
+    .brief-grid { display: grid; gap: 1rem; }
+    .brief-img { border: 2px solid var(--ink); min-height: 320px; overflow: hidden; background: #ccc; }
+    .caption { font-size: .82rem; color: var(--muted); margin: .35rem 0 0; font-style: italic; }
+    .brief h2 { margin: 0 0 .5rem; font-family: Fraunces, Georgia, serif; font-size: 1.55rem; }
+    .brief .hook { font-size: 1.08rem; margin: 0 0 .75rem; }
+    .brief ul { margin: 0 0 1rem; padding-left: 1.15rem; }
+    .brief li { margin: .3rem 0; }
+    .disclaimer {
+      margin-top: 1rem; padding: .75rem .9rem;
+      border-left: 4px solid var(--ink); background: #ebe6dc; font-size: .92rem;
+    }
+    .panel {
+      position: relative; border: 3px solid var(--ink); min-height: 560px; overflow: hidden; background: #111;
+    }
+    .bubble {
+      position: absolute; max-width: min(78%, 290px);
+      background: #fffdf8; border: 2.5px solid var(--ink); border-radius: 1.05rem;
+      padding: .55rem .7rem; font-size: .95rem; font-weight: 500; line-height: 1.3;
+      box-shadow: 3px 3px 0 rgba(0,0,0,.12); z-index: 2;
+    }
+    .bubble .who {
+      display: block; font-size: .66rem; font-weight: 700; letter-spacing: .05em;
+      text-transform: uppercase; margin-bottom: .12rem; color: #333;
+    }
+    .bubble.gaivota { background: #111; color: #f4f1ea; border-color: #111; }
+    .bubble.gaivota .who { color: #cfcfcf; }
+    .bubble.leonor .who { color: var(--accent); }
+    .tl { left: 4%; top: 5%; }
+    .tr { right: 4%; top: 5%; }
+    .bl { left: 4%; bottom: 7%; }
+    .br { right: 4%; bottom: 7%; }
+    .tm { left: 50%; top: 4%; transform: translateX(-50%); }
+    /* Page 1 safe zones — avoid faces in multi-panel art */
+    .p1-gaivota { left: 3%; top: 4%; max-width: min(42%, 260px); }
+    .p1-manuel { right: 3%; top: 38%; max-width: min(40%, 250px); } /* under key hands, not on head */
+    .p1-leonor { left: 3%; bottom: 6%; max-width: min(46%, 270px); } /* under Leonor panel, clear of face */
+    .foot {
+      margin-top: .7rem; display: flex; justify-content: space-between; gap: 1rem;
+      font-size: .8rem; color: var(--muted);
+    }
+    .study h2 { margin: 0 0 .6rem; font-family: Fraunces, Georgia, serif; font-size: 1.6rem; }
+    .study h3 { margin: 1.2rem 0 .45rem; color: var(--accent); font-size: 1.05rem; }
+    .tips { background: #e7eef1; border: 1px solid #b9c9d1; padding: .75rem .9rem; font-size: .92rem; margin-bottom: .5rem; }
+    .glossary {
+      display: grid; grid-template-columns: 1fr 1fr; gap: .25rem .9rem; font-size: .84rem;
+      max-height: none;
+    }
+    .g-row { display: grid; grid-template-columns: 1.1fr 1fr; gap: .4rem; border-bottom: 1px solid var(--line); padding: .28rem 0; }
+    .g-row span:first-child { font-weight: 600; }
+    .quiz ol { margin: 0; padding-left: 1.2rem; }
+    .quiz li { margin: .4rem 0; }
+    .cta {
+      margin-top: 1.4rem; padding: 1rem 1.1rem; background: #111; color: #f4f1ea;
+    }
+    .cta strong { font-family: Fraunces, Georgia, serif; font-size: 1.15rem; display: block; margin-bottom: .35rem; }
+    .cta span { opacity: .85; font-size: .92rem; }
+    @media (max-width: 720px) {
+      .glossary { grid-template-columns: 1fr; }
+      .panel, .hero { min-height: 380px; }
+      .bubble { font-size: .88rem; max-width: 88%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <div class="brand">
+      <img src="art/gaivota-canon-mark.jpg" alt="Gaivota" />
+      <span>Gaivota em Portugal</span>
+      <span class="free">FREE · Ep.01</span>
+    </div>
+    <a href="#study">Study pack</a>
+  </div>
+
+  <div class="wrap">
+
+    <!-- COVER -->
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.jpg" alt="" /> Gaivota em Portugal</div>
+        <div class="meta">Episode 01 · Free sample</div>
+      </div>
+      <div class="hero">
+        <img src="art/ep01-cover.jpg" alt="Cover: Lisbon 1755" />
+        <div class="badge-free">FREE</div>
+        <img class="stamp" src="art/gaivota-canon-stamp.jpg" alt="Gaivota mascot" />
+        <div class="overlay">
+          <h1>O Terramoto</h1>
+          <p>Lisboa, 1 de novembro de 1755 — uma história completa em cinco páginas.</p>
+        </div>
+      </div>
+      <div class="foot"><span>Noir history comic · PT-PT + EN glossary</span><span>Sample episode</span></div>
+    </article>
+
+    <!-- HISTORY BRIEF -->
+    <article class="page brief">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.jpg" alt="" /> History brief</div>
+        <div class="meta">Sheet 1 · Facts first</div>
+      </div>
+      <div class="brief-grid">
+        <div>
+          <div class="brief-img"><img src="art/ep01-brief-textbook.jpg" alt="Textbook-style plate of the 1755 Lisbon earthquake" /></div>
+          <p class="caption">Lisbon, 1 November 1755 — history-textbook plate (engraving style).</p>
+        </div>
+        <div>
+          <h2>The Great Lisbon Earthquake</h2>
+          <p class="hook">On All Saints’ Day morning, Lisbon’s churches were full — and then the ground failed.</p>
+          <ul>
+            <li><strong>When:</strong> 1 November 1755 (Dia de Todos os Santos)</li>
+            <li><strong>Where:</strong> Lisboa — felt across Portugal and far beyond</li>
+            <li><strong>What:</strong> a huge earthquake, then fires, then a deadly wave from the Tejo / Atlantic</li>
+            <li><strong>Scale:</strong> one of Europe’s worst natural disasters; the Baixa was devastated</li>
+            <li><strong>After:</strong> Pombaline rebuilding reshaped the city; the shock reached European philosophy</li>
+          </ul>
+          <p>In minutes, stone, fire, and water remade a capital. Thousands died. Portugal would rebuild Lisbon on a new plan — and never forget that morning.</p>
+          <div class="disclaimer"><strong>The comic that follows is an artistic interpretation.</strong> It follows two fictional survivors; Gaivota watches.</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- COMIC 1 -->
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.jpg" alt="" /> O Terramoto · 1/5</div>
+        <div class="meta">Setup</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep01-comic-p1.jpg" alt="Dawn in Lisbon before the quake" />
+        <div class="bubble gaivota p1-gaivota"><span class="who">Gaivota</span>Hoje a cidade está cheia de sinos. Eu escuto tudo.</div>
+        <div class="bubble p1-manuel"><span class="who">Manuel</span>Leonor, vamos à missa. É Dia de Todos os Santos.</div>
+        <div class="bubble leonor p1-leonor"><span class="who">Leonor</span>Sim, avô. Levo o pão e as velas.</div>
+      </div>
+      <div class="foot"><span>Characters: Leonor · Avô Manuel · Gaivota</span><span>1/5</span></div>
+    </article>
+
+    <!-- COMIC 2 -->
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.jpg" alt="" /> O Terramoto · 2/5</div>
+        <div class="meta">Rising action</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep01-comic-p2.jpg" alt="The first tremor" />
+        <div class="bubble leonor tl"><span class="who">Leonor</span>Avô… o chão…</div>
+        <div class="bubble tr"><span class="who">Manuel</span>Segura-te a mim!</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>O chão tremeu. A cidade gritou.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>o chão</em> · <em>segura-te a mim</em></span><span>2/5</span></div>
+    </article>
+
+    <!-- COMIC 3 -->
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.jpg" alt="" /> O Terramoto · 3/5</div>
+        <div class="meta">Turning point</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep01-comic-p3.jpg" alt="Fleeing the collapsing street" />
+        <div class="bubble tl"><span class="who">Homem</span>Fogo! Fogo nas casas!</div>
+        <div class="bubble leonor tr"><span class="who">Leonor</span>Corre, avô! Para o alto!</div>
+        <div class="bubble bl"><span class="who">Manuel</span>Não olhes para trás!</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>para o alto</em> · <em>não olhes para trás</em></span><span>3/5</span></div>
+    </article>
+
+    <!-- COMIC 4 -->
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.jpg" alt="" /> O Terramoto · 4/5</div>
+        <div class="meta">Consequence</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep01-comic-p4.jpg" alt="The water rises" />
+        <div class="bubble leonor tl"><span class="who">Leonor</span>A água… a água sobe!</div>
+        <div class="bubble tr"><span class="who">Manuel</span>Fica aqui. Estamos longe do rio.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>O mar veio à cidade. Eu voei mais alto.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>a água sobe</em> · <em>longe do rio</em></span><span>4/5</span></div>
+    </article>
+
+    <!-- COMIC 5 -->
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.jpg" alt="" /> O Terramoto · 5/5</div>
+        <div class="meta">Resolution</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep01-comic-p5.jpg" alt="Survivors at dusk" />
+        <div class="bubble leonor tl"><span class="who">Leonor</span>Ainda estamos aqui.</div>
+        <div class="bubble tr"><span class="who">Manuel</span>Sim. Amanhã… recomeçamos.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>A cidade caiu. As pessoas ficaram.</div>
+      </div>
+      <div class="foot"><span>Story ends here.</span><span>5/5</span></div>
+    </article>
+
+    <!-- STUDY -->
+    <article class="page study" id="study">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.jpg" alt="" /> Study pack</div>
+        <div class="meta">100 new words · EN</div>
+      </div>
+      <h2>Study pack — O Terramoto</h2>
+      <div class="tips"><strong>How to use:</strong> Read the comic once without translating. Then check the glossary only for stuck words. Answer the questions aloud in Portuguese if you can.</div>
+
+      <h3>1. Glossary (100) — PT → EN</h3>
+      <div class="glossary">
+        <div class="g-row"><span>terramoto</span><span>earthquake</span></div>
+        <div class="g-row"><span>cidade</span><span>city</span></div>
+        <div class="g-row"><span>sino</span><span>bell</span></div>
+        <div class="g-row"><span>missa</span><span>mass (church service)</span></div>
+        <div class="g-row"><span>Dia de Todos os Santos</span><span>All Saints' Day</span></div>
+        <div class="g-row"><span>avô</span><span>grandfather</span></div>
+        <div class="g-row"><span>pão</span><span>bread</span></div>
+        <div class="g-row"><span>vela</span><span>candle</span></div>
+        <div class="g-row"><span>chão</span><span>ground / floor</span></div>
+        <div class="g-row"><span>tremer</span><span>to shake / tremble</span></div>
+        <div class="g-row"><span>segurar</span><span>to hold on</span></div>
+        <div class="g-row"><span>gritar</span><span>to shout / scream</span></div>
+        <div class="g-row"><span>fogo</span><span>fire</span></div>
+        <div class="g-row"><span>casa</span><span>house</span></div>
+        <div class="g-row"><span>correr</span><span>to run</span></div>
+        <div class="g-row"><span>alto</span><span>high / uphill</span></div>
+        <div class="g-row"><span>olhar</span><span>to look</span></div>
+        <div class="g-row"><span>trás</span><span>behind / back</span></div>
+        <div class="g-row"><span>água</span><span>water</span></div>
+        <div class="g-row"><span>subir</span><span>to rise / go up</span></div>
+        <div class="g-row"><span>rio</span><span>river</span></div>
+        <div class="g-row"><span>longe</span><span>far</span></div>
+        <div class="g-row"><span>mar</span><span>sea</span></div>
+        <div class="g-row"><span>voar</span><span>to fly</span></div>
+        <div class="g-row"><span>amanhã</span><span>tomorrow</span></div>
+        <div class="g-row"><span>recomeçar</span><span>to begin again</span></div>
+        <div class="g-row"><span>cair</span><span>to fall</span></div>
+        <div class="g-row"><span>pessoa</span><span>person</span></div>
+        <div class="g-row"><span>ficar</span><span>to stay / remain</span></div>
+        <div class="g-row"><span>escutar</span><span>to listen</span></div>
+        <div class="g-row"><span>cheio</span><span>full</span></div>
+        <div class="g-row"><span>hoje</span><span>today</span></div>
+        <div class="g-row"><span>tudo</span><span>everything</span></div>
+        <div class="g-row"><span>levar</span><span>to take / bring</span></div>
+        <div class="g-row"><span>poeira</span><span>dust</span></div>
+        <div class="g-row"><span>parede</span><span>wall</span></div>
+        <div class="g-row"><span>rachadura</span><span>crack</span></div>
+        <div class="g-row"><span>pedra</span><span>stone</span></div>
+        <div class="g-row"><span>rua</span><span>street</span></div>
+        <div class="g-row"><span>fumaça</span><span>smoke</span></div>
+        <div class="g-row"><span>perigo</span><span>danger</span></div>
+        <div class="g-row"><span>medo</span><span>fear</span></div>
+        <div class="g-row"><span>família</span><span>family</span></div>
+        <div class="g-row"><span>sobrevivir</span><span>to survive</span></div>
+        <div class="g-row"><span>silêncio</span><span>silence</span></div>
+        <div class="g-row"><span>noite</span><span>night</span></div>
+        <div class="g-row"><span>entardecer</span><span>dusk</span></div>
+        <div class="g-row"><span>ruína</span><span>ruin</span></div>
+        <div class="g-row"><span>destruir</span><span>to destroy</span></div>
+        <div class="g-row"><span>salvar</span><span>to save</span></div>
+        <div class="g-row"><span>ajuda</span><span>help</span></div>
+        <div class="g-row"><span>vizinho</span><span>neighbour</span></div>
+        <div class="g-row"><span>igreja</span><span>church</span></div>
+        <div class="g-row"><span>telhado</span><span>roof</span></div>
+        <div class="g-row"><span>chaminé</span><span>chimney</span></div>
+        <div class="g-row"><span>cesta</span><span>basket</span></div>
+        <div class="g-row"><span>chave</span><span>key</span></div>
+        <div class="g-row"><span>abrir</span><span>to open</span></div>
+        <div class="g-row"><span>fechar</span><span>to close</span></div>
+        <div class="g-row"><span>apressar</span><span>to hurry</span></div>
+        <div class="g-row"><span>ouvir</span><span>to hear</span></div>
+        <div class="g-row"><span>ver</span><span>to see</span></div>
+        <div class="g-row"><span>sentir</span><span>to feel</span></div>
+        <div class="g-row"><span>partir</span><span>to leave</span></div>
+        <div class="g-row"><span>quebrar</span><span>to break</span></div>
+        <div class="g-row"><span>queimar</span><span>to burn</span></div>
+        <div class="g-row"><span>afogar</span><span>to drown</span></div>
+        <div class="g-row"><span>escapar</span><span>to escape</span></div>
+        <div class="g-row"><span>descer</span><span>to go down</span></div>
+        <div class="g-row"><span>esperar</span><span>to wait / to hope</span></div>
+        <div class="g-row"><span>acreditar</span><span>to believe</span></div>
+        <div class="g-row"><span>chorar</span><span>to cry</span></div>
+        <div class="g-row"><span>abraçar</span><span>to hug</span></div>
+        <div class="g-row"><span>mão</span><span>hand</span></div>
+        <div class="g-row"><span>olho</span><span>eye</span></div>
+        <div class="g-row"><span>coração</span><span>heart</span></div>
+        <div class="g-row"><span>céu</span><span>sky</span></div>
+        <div class="g-row"><span>sol</span><span>sun</span></div>
+        <div class="g-row"><span>sombra</span><span>shadow</span></div>
+        <div class="g-row"><span>vento</span><span>wind</span></div>
+        <div class="g-row"><span>onda</span><span>wave</span></div>
+        <div class="g-row"><span>porto</span><span>harbour</span></div>
+        <div class="g-row"><span>Baixa</span><span>Lisbon downtown</span></div>
+        <div class="g-row"><span>Tejo</span><span>Tagus (river)</span></div>
+        <div class="g-row"><span>Lisboa</span><span>Lisbon</span></div>
+        <div class="g-row"><span>Portugal</span><span>Portugal</span></div>
+        <div class="g-row"><span>desastre</span><span>disaster</span></div>
+        <div class="g-row"><span>tragédia</span><span>tragedy</span></div>
+        <div class="g-row"><span>esperança</span><span>hope</span></div>
+        <div class="g-row"><span>memória</span><span>memory</span></div>
+        <div class="g-row"><span>história</span><span>history</span></div>
+        <div class="g-row"><span>reconstruir</span><span>to rebuild</span></div>
+        <div class="g-row"><span>futuro</span><span>future</span></div>
+        <div class="g-row"><span>passado</span><span>past</span></div>
+        <div class="g-row"><span>testemunha</span><span>witness</span></div>
+        <div class="g-row"><span>gaivota</span><span>seagull</span></div>
+        <div class="g-row"><span>segura-te a mim</span><span>hold on to me</span></div>
+        <div class="g-row"><span>para o alto</span><span>to higher ground</span></div>
+        <div class="g-row"><span>não olhes para trás</span><span>don't look back</span></div>
+        <div class="g-row"><span>a água sobe</span><span>the water is rising</span></div>
+      </div>
+
+      <h3>2. Comprehension</h3>
+      <div class="quiz">
+        <ol>
+          <li>Que dia é? (Que festa?)</li>
+          <li>Quem é o avô de Leonor?</li>
+          <li>O que acontece ao chão?</li>
+          <li>Para onde correm Leonor e Manuel?</li>
+          <li>Como acaba a história?</li>
+        </ol>
+      </div>
+
+      <h3>3. Cultural note</h3>
+      <p style="margin:0;font-size:.95rem">The 1755 disaster is still part of Lisbon’s identity: the rebuilt Baixa grid, open squares, and earthquake-aware architecture. Philosophers across Europe argued about nature, God, and reason after the quake — so the event is both Portuguese history and a European idea.</p>
+
+      <div class="cta">
+        <strong>Next: Ep.02 — 25 de Abril</strong>
+        <span>Paid episodes $5 · Ep.01 is free so you can feel the format: history brief → noir comic story → study pack.</span>
+      </div>
+    </article>
+
+  </div>
+</body>
+</html>

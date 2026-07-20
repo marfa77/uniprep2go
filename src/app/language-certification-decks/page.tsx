@@ -88,6 +88,9 @@ export default async function LanguageCertificationDecksPage() {
           >
             CIPLE A2 pathway
           </Link>
+          <Link className={btnSecondary} href="/comics/gaivota-em-portugal">
+            Free history comic (Gaivota)
+          </Link>
           <Link className={btnSecondary} href="/decks">
             Full deck catalog
           </Link>
