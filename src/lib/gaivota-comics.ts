@@ -46,7 +46,8 @@ export const gaivotaEpisodes: GaivotaEpisode[] = [
     event: "Carnation Revolution (25 de Abril)",
     year: "1974",
     price: 5,
-    status: "coming",
+    status: "live",
+    pagePath: "/comics/gaivota-em-portugal/02-25-de-abril",
   },
   {
     id: "03-aljubarrota",

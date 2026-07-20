@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaivota em Portugal · Ep.02 — 25 de Abril (1974)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #0e0e0e;
+      --paper: #f4f1ea;
+      --muted: #5c574e;
+      --line: #c9c2b4;
+      --paid: #8b1f3d;
+      --accent: #b5451b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      color: var(--ink);
+      background: #ddd7cb;
+      line-height: 1.45;
+    }
+    .bar {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; justify-content: space-between;
+      padding: .7rem 1.1rem;
+      background: #111; color: #f4f1ea;
+    }
+    .bar .brand { display: flex; align-items: center; gap: .65rem; font-family: Fraunces, Georgia, serif; font-weight: 700; }
+    .bar img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; background: #fff; }
+    .bar .paid { background: var(--paid); color: #fff; font-size: .75rem; font-weight: 700; padding: .25rem .55rem; border-radius: 999px; letter-spacing: .04em; }
+    .bar a { color: #fff; text-decoration: none; font-weight: 600; font-size: .9rem; border: 1px solid rgba(255,255,255,.35); padding: .4rem .8rem; border-radius: 999px; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 1.25rem 1rem 4rem; }
+    .page {
+      width: min(100%, 794px);
+      margin: 0 auto 1.75rem;
+      background: var(--paper);
+      border: 1px solid #bdb5a6;
+      box-shadow: 0 16px 36px rgba(0,0,0,.12);
+      padding: 1.25rem 1.35rem 1.4rem;
+      position: relative;
+    }
+    .page-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: .85rem; }
+    .page-head .left { display: flex; align-items: center; gap: .5rem; font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: .95rem; }
+    .page-head .left img { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; }
+    .page-head .meta { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+    .hero {
+      position: relative; border: 3px solid var(--ink); min-height: 640px; overflow: hidden; background: #222;
+    }
+    .hero img, .panel img, .brief-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .hero .overlay {
+      position: absolute; left: 0; right: 0; bottom: 0;
+      padding: 1.5rem 1.2rem 1.2rem;
+      background: linear-gradient(transparent, rgba(0,0,0,.92) 40%);
+      color: #fff;
+    }
+    .hero h1 { margin: 0; font-family: Fraunces, Georgia, serif; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.05; }
+    .hero p { margin: .4rem 0 0; max-width: 38ch; opacity: .95; }
+    .badge-paid {
+      position: absolute; top: 1rem; left: 1rem;
+      background: var(--paid); color: #fff; font-weight: 700; font-size: .8rem;
+      padding: .4rem .7rem; letter-spacing: .04em;
+    }
+    .stamp {
+      position: absolute; top: 1rem; right: 1rem; width: 72px; height: 72px;
+      border-radius: 50%; border: 2px solid #fff; object-fit: cover; background: #fff;
+    }
+    .brief-grid { display: grid; gap: 1rem; }
+    .brief-img { border: 2px solid var(--ink); min-height: 320px; overflow: hidden; background: #ccc; }
+    .caption { font-size: .82rem; color: var(--muted); margin: .35rem 0 0; font-style: italic; }
+    .brief h2 { margin: 0 0 .5rem; font-family: Fraunces, Georgia, serif; font-size: 1.55rem; }
+    .brief .hook { font-size: 1.08rem; margin: 0 0 .75rem; }
+    .brief ul { margin: 0 0 1rem; padding-left: 1.15rem; }
+    .brief li { margin: .3rem 0; }
+    .disclaimer {
+      margin-top: 1rem; padding: .75rem .9rem;
+      border-left: 4px solid var(--ink); background: #ebe6dc; font-size: .92rem;
+    }
+    .panel {
+      position: relative; border: 3px solid var(--ink); min-height: 560px; overflow: hidden; background: #111;
+    }
+    .bubble {
+      position: absolute; max-width: min(78%, 290px);
+      background: #fffdf8; border: 2.5px solid var(--ink); border-radius: 1.05rem;
+      padding: .55rem .7rem; font-size: .95rem; font-weight: 500; line-height: 1.3;
+      box-shadow: 3px 3px 0 rgba(0,0,0,.12); z-index: 2;
+    }
+    .bubble .who {
+      display: block; font-size: .66rem; font-weight: 700; letter-spacing: .05em;
+      text-transform: uppercase; margin-bottom: .12rem; color: #333;
+    }
+    .bubble.gaivota { background: #111; color: #f4f1ea; border-color: #111; }
+    .bubble.gaivota .who { color: #cfcfcf; }
+    .bubble.marta .who { color: var(--paid); }
+    .bubble.rui .who { color: #1f6f8b; }
+    .tl { left: 4%; top: 5%; }
+    .tr { right: 4%; top: 5%; }
+    .bl { left: 4%; bottom: 7%; }
+    .br { right: 4%; bottom: 7%; }
+    .p1-gaivota { left: 3%; top: 4%; max-width: min(42%, 260px); }
+    .p1-marta { left: 3%; bottom: 6%; max-width: min(46%, 270px); }
+    .p1-rui { right: 3%; top: 42%; max-width: min(40%, 250px); }
+    .foot {
+      margin-top: .7rem; display: flex; justify-content: space-between; gap: 1rem;
+      font-size: .8rem; color: var(--muted);
+    }
+    .study h2 { margin: 0 0 .6rem; font-family: Fraunces, Georgia, serif; font-size: 1.6rem; }
+    .study h3 { margin: 1.2rem 0 .45rem; color: var(--accent); font-size: 1.05rem; }
+    .tips { background: #e7eef1; border: 1px solid #b9c9d1; padding: .75rem .9rem; font-size: .92rem; margin-bottom: .5rem; }
+    .glossary {
+      display: grid; grid-template-columns: 1fr 1fr; gap: .25rem .9rem; font-size: .84rem;
+    }
+    .g-row { display: grid; grid-template-columns: 1.1fr 1fr; gap: .4rem; border-bottom: 1px solid var(--line); padding: .28rem 0; }
+    .g-row span:first-child { font-weight: 600; }
+    .quiz ol { margin: 0; padding-left: 1.2rem; }
+    .quiz li { margin: .4rem 0; }
+    .cta {
+      margin-top: 1.4rem; padding: 1rem 1.1rem; background: #111; color: #f4f1ea;
+    }
+    .cta strong { font-family: Fraunces, Georgia, serif; font-size: 1.15rem; display: block; margin-bottom: .35rem; }
+    .cta a { color: #9fd0e0; }
+    @media (max-width: 720px) {
+      .glossary { grid-template-columns: 1fr; }
+      .panel, .hero { min-height: 380px; }
+      .bubble { font-size: .88rem; max-width: 88%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <div class="brand">
+      <img src="art/gaivota-canon-mark.jpg" alt="Gaivota" />
+      <span>Gaivota em Portugal</span>
+      <span class="paid">Ep.02 · $5</span>
+    </div>
+    <a href="#study">Study pack</a>
+  </div>
+
+  <div class="wrap">
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.jpg" alt="" /> Gaivota em Portugal</div>
+        <div class="meta">Episode 02 · Paid</div>
+      </div>
+      <div class="hero">
+        <img src="art/ep02-cover.jpg" alt="Cover: 25 de Abril" />
+        <div class="badge-paid">$5</div>
+        <img class="stamp" src="art/gaivota-canon-stamp.jpg" alt="Gaivota mascot" />
+        <div class="overlay">
+          <h1>25 de Abril</h1>
+          <p>Lisboa, 1974 — a revolução dos cravos numa história completa em cinco páginas.</p>
+        </div>
+      </div>
+      <div class="foot"><span>Noir history comic · PT-PT + EN glossary</span><span>Ep.02</span></div>
+    </article>
+
+    <article class="page brief">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.jpg" alt="" /> History brief</div>
+        <div class="meta">Sheet 1 · Facts first</div>
+      </div>
+      <div class="brief-grid">
+        <div>
+          <div class="brief-img"><img src="art/ep02-brief-textbook.jpg" alt="Textbook-style plate of 25 April 1974" /></div>
+          <p class="caption">Lisbon, 25 April 1974 — history-textbook plate (engraving style).</p>
+        </div>
+        <div>
+          <h2>The Carnation Revolution</h2>
+          <p class="hook">Before dawn on 25 April 1974, a song on the radio told Portugal the long night of dictatorship was ending.</p>
+          <ul>
+            <li><strong>When:</strong> 25 April 1974</li>
+            <li><strong>Where:</strong> Lisboa — then across Portugal</li>
+            <li><strong>Who:</strong> MFA officers and civilians; a nearly bloodless transition</li>
+            <li><strong>Symbol:</strong> red carnations placed in rifle barrels</li>
+            <li><strong>After:</strong> the Estado Novo dictatorship fell; democracy began</li>
+          </ul>
+          <p>In one day, fear met flowers. Portugal woke to freedom — and never forgot the scent of April.</p>
+          <div class="disclaimer"><strong>The comic that follows is an artistic interpretation.</strong> It follows two fictional siblings; Gaivota watches. No graphic violence.</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.jpg" alt="" /> 25 de Abril · 1/5</div>
+        <div class="meta">Setup</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep02-comic-p1.jpg" alt="Dawn — florist and radio" />
+        <div class="bubble gaivota p1-gaivota"><span class="who">Gaivota</span>A cidade ainda dorme. Mas o rádio… não.</div>
+        <div class="bubble marta p1-marta"><span class="who">Marta</span>Rui, porque estás acordado tão cedo?</div>
+        <div class="bubble rui p1-rui"><span class="who">Rui</span>Ouve. Há uma canção estranha no rádio.</div>
+      </div>
+      <div class="foot"><span>Characters: Marta · Rui · Gaivota</span><span>1/5</span></div>
+    </article>
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.jpg" alt="" /> 25 de Abril · 2/5</div>
+        <div class="meta">Rising action</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep02-comic-p2.jpg" alt="Army in the streets" />
+        <div class="bubble rui tl"><span class="who">Rui</span>Dizem que o exército está na rua.</div>
+        <div class="bubble marta tr"><span class="who">Marta</span>Com medo… ou com esperança?</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>Os fuzis chegaram. O povo ainda espera.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>o exército está na rua</em></span><span>2/5</span></div>
+    </article>
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.jpg" alt="" /> 25 de Abril · 3/5</div>
+        <div class="meta">Turning point</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep02-comic-p3.jpg" alt="Carnation in the rifle" />
+        <div class="bubble marta tl"><span class="who">Marta</span>Leva um cravo. Por favor.</div>
+        <div class="bubble tr"><span class="who">Soldado</span>…Obrigado.</div>
+        <div class="bubble rui bl"><span class="who">Rui</span>Olha — as flores nos fuzis!</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>os cravos nos fuzis</em></span><span>3/5</span></div>
+    </article>
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.jpg" alt="" /> 25 de Abril · 4/5</div>
+        <div class="meta">Consequence</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep02-comic-p4.jpg" alt="People in the streets" />
+        <div class="bubble tl"><span class="who">Mulher</span>Liberdade!</div>
+        <div class="bubble rui tr"><span class="who">Rui</span>O povo está na rua. Sem guerra.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>Hoje as flores falaram mais alto que o medo.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>o povo está na rua</em></span><span>4/5</span></div>
+    </article>
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.jpg" alt="" /> 25 de Abril · 5/5</div>
+        <div class="meta">Resolution</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep02-comic-p5.jpg" alt="Evening on the balcony" />
+        <div class="bubble marta tl"><span class="who">Marta</span>Acabou?</div>
+        <div class="bubble rui tr"><span class="who">Rui</span>Começou. A liberdade chegou.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>Guardo este dia. Portugal acordou.</div>
+      </div>
+      <div class="foot"><span>Story ends here.</span><span>5/5</span></div>
+    </article>
+
+    <article class="page study" id="study">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.jpg" alt="" /> Study pack</div>
+        <div class="meta">100 new words · EN</div>
+      </div>
+      <h2>Study pack — 25 de Abril</h2>
+      <div class="tips"><strong>How to use:</strong> Read once without translating. Then check the glossary. Answer aloud in Portuguese if you can.</div>
+
+      <h3>1. Glossary (100) — PT → EN</h3>
+      <div class="glossary">
+        <div class="g-row"><span>cravo</span><span>carnation (flower)</span></div>
+        <div class="g-row"><span>revolução</span><span>revolution</span></div>
+        <div class="g-row"><span>liberdade</span><span>freedom / liberty</span></div>
+        <div class="g-row"><span>ditadura</span><span>dictatorship</span></div>
+        <div class="g-row"><span>povo</span><span>people / the people</span></div>
+        <div class="g-row"><span>soldado</span><span>soldier</span></div>
+        <div class="g-row"><span>rádio</span><span>radio</span></div>
+        <div class="g-row"><span>notícia</span><span>news</span></div>
+        <div class="g-row"><span>manhã</span><span>morning</span></div>
+        <div class="g-row"><span>madrugada</span><span>early dawn</span></div>
+        <div class="g-row"><span>multidão</span><span>crowd</span></div>
+        <div class="g-row"><span>flor</span><span>flower</span></div>
+        <div class="g-row"><span>fuzil</span><span>rifle</span></div>
+        <div class="g-row"><span>paz</span><span>peace</span></div>
+        <div class="g-row"><span>coragem</span><span>courage</span></div>
+        <div class="g-row"><span>mudança</span><span>change</span></div>
+        <div class="g-row"><span>governo</span><span>government</span></div>
+        <div class="g-row"><span>capitão</span><span>captain</span></div>
+        <div class="g-row"><span>exército</span><span>army</span></div>
+        <div class="g-row"><span>quartel</span><span>barracks</span></div>
+        <div class="g-row"><span>sinal</span><span>signal</span></div>
+        <div class="g-row"><span>canção</span><span>song</span></div>
+        <div class="g-row"><span>voz</span><span>voice</span></div>
+        <div class="g-row"><span>grito</span><span>shout / cry</span></div>
+        <div class="g-row"><span>janela</span><span>window</span></div>
+        <div class="g-row"><span>varanda</span><span>balcony</span></div>
+        <div class="g-row"><span>bandeira</span><span>flag</span></div>
+        <div class="g-row"><span>vermelho</span><span>red</span></div>
+        <div class="g-row"><span>irmão</span><span>brother</span></div>
+        <div class="g-row"><span>irmã</span><span>sister</span></div>
+        <div class="g-row"><span>trabalhador</span><span>worker</span></div>
+        <div class="g-row"><span>estudante</span><span>student</span></div>
+        <div class="g-row"><span>florista</span><span>florist</span></div>
+        <div class="g-row"><span>loja</span><span>shop</span></div>
+        <div class="g-row"><span>praça</span><span>square</span></div>
+        <div class="g-row"><span>Abril</span><span>April</span></div>
+        <div class="g-row"><span>vinte e cinco</span><span>twenty-five</span></div>
+        <div class="g-row"><span>ontem</span><span>yesterday</span></div>
+        <div class="g-row"><span>agora</span><span>now</span></div>
+        <div class="g-row"><span>nunca</span><span>never</span></div>
+        <div class="g-row"><span>sempre</span><span>always</span></div>
+        <div class="g-row"><span>livre</span><span>free (adj.)</span></div>
+        <div class="g-row"><span>preso</span><span>imprisoned</span></div>
+        <div class="g-row"><span>falar</span><span>to speak</span></div>
+        <div class="g-row"><span>cantar</span><span>to sing</span></div>
+        <div class="g-row"><span>parar</span><span>to stop</span></div>
+        <div class="g-row"><span>entrar</span><span>to enter</span></div>
+        <div class="g-row"><span>sair</span><span>to leave</span></div>
+        <div class="g-row"><span>dar</span><span>to give</span></div>
+        <div class="g-row"><span>pôr</span><span>to put / place</span></div>
+        <div class="g-row"><span>trazer</span><span>to bring</span></div>
+        <div class="g-row"><span>mudar</span><span>to change</span></div>
+        <div class="g-row"><span>acabar</span><span>to end / finish</span></div>
+        <div class="g-row"><span>começar</span><span>to begin</span></div>
+        <div class="g-row"><span>nascer</span><span>to be born</span></div>
+        <div class="g-row"><span>morrer</span><span>to die</span></div>
+        <div class="g-row"><span>viver</span><span>to live</span></div>
+        <div class="g-row"><span>sorrir</span><span>to smile</span></div>
+        <div class="g-row"><span>dia</span><span>day</span></div>
+        <div class="g-row"><span>hora</span><span>hour / time</span></div>
+        <div class="g-row"><span>minuto</span><span>minute</span></div>
+        <div class="g-row"><span>verdade</span><span>truth</span></div>
+        <div class="g-row"><span>mentira</span><span>lie</span></div>
+        <div class="g-row"><span>direito</span><span>right (legal/moral)</span></div>
+        <div class="g-row"><span>justiça</span><span>justice</span></div>
+        <div class="g-row"><span>democracia</span><span>democracy</span></div>
+        <div class="g-row"><span>censura</span><span>censorship</span></div>
+        <div class="g-row"><span>acordado</span><span>awake</span></div>
+        <div class="g-row"><span>cedo</span><span>early</span></div>
+        <div class="g-row"><span>estranho</span><span>strange</span></div>
+        <div class="g-row"><span>obrigado</span><span>thank you</span></div>
+        <div class="g-row"><span>guerra</span><span>war</span></div>
+        <div class="g-row"><span>sem guerra</span><span>without war</span></div>
+        <div class="g-row"><span>por favor</span><span>please</span></div>
+        <div class="g-row"><span>os cravos nos fuzis</span><span>carnations in the rifles</span></div>
+        <div class="g-row"><span>o povo está na rua</span><span>the people are in the street</span></div>
+        <div class="g-row"><span>a liberdade chegou</span><span>freedom has arrived</span></div>
+        <div class="g-row"><span>Estado Novo</span><span>Estado Novo (dictatorship)</span></div>
+        <div class="g-row"><span>MFA</span><span>Armed Forces Movement</span></div>
+        <div class="g-row"><span>cravos</span><span>carnations (pl.)</span></div>
+        <div class="g-row"><span>fuzis</span><span>rifles (pl.)</span></div>
+        <div class="g-row"><span>oficial</span><span>officer</span></div>
+        <div class="g-row"><span>civil</span><span>civilian</span></div>
+        <div class="g-row"><span>transição</span><span>transition</span></div>
+        <div class="g-row"><span>quase</span><span>almost</span></div>
+        <div class="g-row"><span>sangue</span><span>blood</span></div>
+        <div class="g-row"><span>sem sangue</span><span>bloodless / without blood</span></div>
+        <div class="g-row"><span>esperar</span><span>to wait / hope</span></div>
+        <div class="g-row"><span>oferecer</span><span>to offer</span></div>
+        <div class="g-row"><span>aceitar</span><span>to accept</span></div>
+        <div class="g-row"><span>cantar alto</span><span>to sing loudly</span></div>
+        <div class="g-row"><span>na rua</span><span>in the street</span></div>
+        <div class="g-row"><span>no rádio</span><span>on the radio</span></div>
+        <div class="g-row"><span>na janela</span><span>at the window</span></div>
+        <div class="g-row"><span>esta manhã</span><span>this morning</span></div>
+        <div class="g-row"><span>este dia</span><span>this day</span></div>
+        <div class="g-row"><span>Portugal acordou</span><span>Portugal woke up</span></div>
+        <div class="g-row"><span>as flores falaram</span><span>the flowers spoke</span></div>
+        <div class="g-row"><span>guarda este dia</span><span>keep / remember this day</span></div>
+        <div class="g-row"><span>hoje as flores</span><span>today the flowers</span></div>
+      </div>
+
+      <h3>2. Comprehension</h3>
+      <div class="quiz">
+        <ol>
+          <li>Que dia é?</li>
+          <li>O que ouve o Rui no rádio?</li>
+          <li>O que oferece a Marta ao soldado?</li>
+          <li>O povo está na rua com guerra?</li>
+          <li>Como acaba a história?</li>
+        </ol>
+      </div>
+
+      <h3>3. Cultural note</h3>
+      <p style="margin:0;font-size:.95rem">25 de Abril is Portugal’s democracy day. The red carnation became the symbol of a nearly bloodless revolution that ended the Estado Novo. Every year, Portuguese people still remember the morning the flowers met the rifles.</p>
+
+      <div class="cta">
+        <strong>Gaivota em Portugal</strong>
+        <span>Free Ep.01: <a href="https://uniprep2go.study/comics/gaivota-em-portugal/01-1755-earthquake">O Terramoto (1755)</a> · Hub: <a href="https://uniprep2go.study/comics/gaivota-em-portugal">series page</a></span>
+      </div>
+    </article>
+
+  </div>
+</body>
+</html>

@@ -83,7 +83,7 @@ export default function GaivotaHubPage() {
                   )}
                   {ep.status === "live" && ep.pagePath ? (
                     <Link className="font-semibold underline underline-offset-2" href={ep.pagePath}>
-                      Read
+                      {ep.price === "free" ? "Read free" : "View / buy"}
                     </Link>
                   ) : (
                     <span className="text-[#5c574e]">Coming next</span>

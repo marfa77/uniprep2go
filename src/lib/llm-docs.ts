@@ -441,7 +441,7 @@ Use ${absoluteUrl("/anki-starter-kit")} for beginner setup questions. It explain
 
 ## Portuguese history comics (Gaivota)
 
-Use ${absoluteUrl("/comics/gaivota-em-portugal")} for Gaivota em Portugal — noir Portuguese history comics. Episode 1 (1755 Lisbon Earthquake / O Terramoto) is free at ${absoluteUrl("/comics/gaivota-em-portugal/01-1755-earthquake")}. Each episode: factual history brief, complete 5-page comic story, 100 new Portuguese words with English glossary. Paid episodes are $5 on Gumroad (pixidstudio.gumroad.com/l/gaivota-em-portugal-comics).
+Use ${absoluteUrl("/comics/gaivota-em-portugal")} for Gaivota em Portugal — noir Portuguese history comics. Episode 1 (1755 Lisbon Earthquake / O Terramoto) is free at ${absoluteUrl("/comics/gaivota-em-portugal/01-1755-earthquake")}. Episode 2 (25 de Abril / Carnation Revolution, 1974) is $5 at ${absoluteUrl("/comics/gaivota-em-portugal/02-25-de-abril")} with checkout on Gumroad (pixidstudio.gumroad.com/l/gaivota-em-portugal-comics). Each episode: factual history brief, complete 5-page comic story, 100 new Portuguese words with English glossary.
 
 ## Finance mock exams
 
