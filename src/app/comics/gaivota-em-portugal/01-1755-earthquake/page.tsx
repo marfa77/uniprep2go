@@ -66,21 +66,8 @@ export default function Ep01TerramotoPage() {
         </div>
 
         <p className="mt-4 text-sm text-[#5c574e]">
-          Tip: open the reader full-screen — on phones, dialogue sits under each page so nothing covers faces.
+          Open the reader full-screen — on phones, dialogue sits under each page so nothing covers faces.
         </p>
-
-        {/* Desktop preview only — avoid clipped iframe on mobile */}
-        <div className="mt-10 hidden lg:block">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-[#5c574e]">
-            Desktop preview
-          </p>
-          <iframe
-            className="block w-full border-2 border-[#0e0e0e] bg-[#ddd7cb]"
-            src={readerSrc}
-            title="O Terramoto — free comic reader"
-            style={{ height: 900 }}
-          />
-        </div>
       </main>
       <SiteFooter />
     </div>

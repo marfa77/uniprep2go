@@ -72,6 +72,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.84,
     },
     {
+      url: `${siteUrl}/comics/gaivota-em-portugal/03-aljubarrota`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.84,
+    },
+    {
       url: `${siteUrl}/cfa-level-1-anki-deck-vs-curriculum`,
       lastModified,
       changeFrequency: "monthly",

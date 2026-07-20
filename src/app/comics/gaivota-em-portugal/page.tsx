@@ -57,9 +57,12 @@ export default function GaivotaHubPage() {
           <Link className={btnPrimary} href={ep01.pagePath!}>
             Read Ep.01 free — O Terramoto (1755)
           </Link>
-          <a className={btnSecondary} href={gaivotaSeries.gumroadCheckoutUrl} rel="noreferrer">
-            Ep.02 PDF on Gumroad — $5
-          </a>
+          <Link className={btnSecondary} href="/comics/gaivota-em-portugal/02-25-de-abril">
+            Ep.02 — 25 de Abril
+          </Link>
+          <Link className={btnSecondary} href="/comics/gaivota-em-portugal/03-aljubarrota">
+            Ep.03 — Aljubarrota
+          </Link>
         </div>
 
         <section className="mt-14">

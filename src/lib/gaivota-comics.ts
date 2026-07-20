@@ -23,6 +23,8 @@ export type GaivotaEpisode = {
   status: "live" | "coming";
   readerPath?: string;
   pagePath?: string;
+  /** Per-episode Gumroad checkout (paid episodes; one product per episode). */
+  gumroadCheckoutUrl?: string;
 };
 
 export const gaivotaEpisodes: GaivotaEpisode[] = [
@@ -48,6 +50,8 @@ export const gaivotaEpisodes: GaivotaEpisode[] = [
     price: 5,
     status: "live",
     pagePath: "/comics/gaivota-em-portugal/02-25-de-abril",
+    gumroadCheckoutUrl:
+      "https://pixidstudio.gumroad.com/l/gaivota-em-portugal-comics?wanted=true",
   },
   {
     id: "03-aljubarrota",
@@ -57,7 +61,10 @@ export const gaivotaEpisodes: GaivotaEpisode[] = [
     event: "Battle of Aljubarrota",
     year: "1385",
     price: 5,
-    status: "coming",
+    status: "live",
+    pagePath: "/comics/gaivota-em-portugal/03-aljubarrota",
+    gumroadCheckoutUrl:
+      "https://pixidstudio.gumroad.com/l/gaivota-ep03-aljubarrota?wanted=true",
   },
 ];
 

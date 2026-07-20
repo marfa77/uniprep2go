@@ -49,9 +49,14 @@
     .page-head .left img { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; }
     .page-head .meta { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
     .hero {
-      position: relative; border: 3px solid var(--ink); min-height: 640px; overflow: hidden; background: #222;
+      position: relative; border: 3px solid var(--ink); overflow: hidden; background: #111;
+      line-height: 0;
     }
-    .hero img, .panel img, .brief-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .hero > img:not(.stamp) {
+      width: 100%; height: auto; display: block; object-fit: contain;
+    }
+    .brief-img img { width: 100%; height: auto; display: block; object-fit: contain; }
+    .panel img { width: 100%; height: auto; display: block; object-fit: contain; }
     .hero .overlay {
       position: absolute; left: 0; right: 0; bottom: 0;
       padding: 1.5rem 1.2rem 1.2rem;
@@ -60,17 +65,12 @@
     }
     .hero h1 { margin: 0; font-family: Fraunces, Georgia, serif; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.05; }
     .hero p { margin: .4rem 0 0; max-width: 38ch; opacity: .95; }
-    .badge-paid {
-      position: absolute; top: 1rem; left: 1rem;
-      background: var(--paid); color: #fff; font-weight: 700; font-size: .8rem;
-      padding: .4rem .7rem; letter-spacing: .04em;
-    }
     .stamp {
       position: absolute; top: 1rem; right: 1rem; width: 72px; height: 72px;
       border-radius: 50%; border: 2px solid #fff; object-fit: cover; background: #fff;
     }
     .brief-grid { display: grid; gap: 1rem; }
-    .brief-img { border: 2px solid var(--ink); min-height: 320px; overflow: hidden; background: #ccc; }
+    .brief-img { border: 2px solid var(--ink); overflow: hidden; background: #ccc; line-height: 0; }
     .caption { font-size: .82rem; color: var(--muted); margin: .35rem 0 0; font-style: italic; }
     .brief h2 { margin: 0 0 .5rem; font-family: Fraunces, Georgia, serif; font-size: 1.55rem; }
     .brief .hook { font-size: 1.08rem; margin: 0 0 .75rem; }
@@ -81,7 +81,8 @@
       border-left: 4px solid var(--ink); background: #ebe6dc; font-size: .92rem;
     }
     .panel {
-      position: relative; border: 3px solid var(--ink); min-height: 560px; overflow: hidden; background: #111;
+      position: relative; border: 3px solid var(--ink); overflow: hidden; background: #111;
+      line-height: 0;
     }
     .bubble {
       position: absolute; max-width: min(78%, 290px);
@@ -101,9 +102,15 @@
     .tr { right: 4%; top: 5%; }
     .bl { left: 4%; bottom: 7%; }
     .br { right: 4%; bottom: 7%; }
-    .p1-gaivota { left: 3%; top: 4%; max-width: min(42%, 260px); }
-    .p1-marta { left: 3%; bottom: 6%; max-width: min(46%, 270px); }
-    .p1-rui { right: 3%; top: 42%; max-width: min(40%, 250px); }
+    /* Page 1 multi-panel safe zones — keep off faces */
+    .p1-gaivota { left: 3%; top: 2%; max-width: min(38%, 230px); }
+    /* Flower close-up only (bottom-left row) — not on Marta's face/arms above */
+    .p1-marta { left: 2%; top: auto; bottom: 5%; max-width: min(27%, 168px); font-size: .86rem; padding: .45rem .55rem; }
+    /* Lower sky of the dawn strip, above Rui's portrait — not on hair / not on Marta right */
+    .p1-rui { left: 37%; top: 18%; max-width: min(25%, 158px); font-size: .86rem; padding: .45rem .55rem; }
+    /* Page 2 — clear skyband, not on Rui/Marta hair */
+    .p2-rui { left: 2%; top: 2%; max-width: min(30%, 190px); font-size: .88rem; }
+    .p2-marta { right: 2%; top: 2%; max-width: min(30%, 190px); font-size: .88rem; }
     .foot {
       margin-top: .7rem; display: flex; justify-content: space-between; gap: 1rem;
       font-size: .8rem; color: var(--muted);
@@ -125,31 +132,31 @@
     .cta a { color: #9fd0e0; }
     @media (max-width: 720px) {
       .glossary { grid-template-columns: 1fr; }
-      .panel, .hero { min-height: 380px; }
       .bubble { font-size: .88rem; max-width: 88%; }
     }
 
     @media print {
-      body { background: white; }
+      @page { size: A4; margin: 8mm; }
+      body { background: white; margin: 0; }
       .bar { display: none !important; }
-      .wrap { max-width: none; padding: 0; }
+      .wrap { max-width: none; margin: 0; padding: 0; }
       .page {
-        width: 210mm;
-        min-height: 277mm;
-        margin: 0;
-        box-shadow: none;
-        border: 0;
-        page-break-after: always;
-        break-after: page;
+        box-shadow: none; border: none; margin: 0; padding: 0 0 4mm;
+        width: auto; max-width: none; min-height: 0 !important; height: auto;
+        break-after: page; page-break-after: always;
       }
-      .page:last-child { page-break-after: auto; }
-      .panel { min-height: 0; }
-      .panel img, .hero img, .brief-img img {
-        max-height: 220mm;
+      .page:last-child { break-after: auto; page-break-after: auto; }
+      .page-head { margin-bottom: .45rem; }
+      .hero, .panel, .brief-img { min-height: 0 !important; height: auto; }
+      .hero > img:not(.stamp), .panel img, .brief-img img {
+        max-height: 195mm;
+        width: 100%;
+        height: auto !important;
         object-fit: contain;
-        height: auto;
       }
+      .stamp { width: 52px; height: 52px; top: .6rem; right: .6rem; }
       .bubble { box-shadow: none; }
+      .foot { margin-top: .4rem; }
     }
 
   </style>
@@ -159,7 +166,7 @@
     <div class="brand">
       <img src="art/gaivota-canon-mark.jpg" alt="Gaivota" />
       <span>Gaivota em Portugal</span>
-      <span class="paid">Ep.02 · $5</span>
+      <span class="paid">Ep.02</span>
     </div>
     <a href="#study">Study pack</a>
   </div>
@@ -173,7 +180,6 @@
       </div>
       <div class="hero">
         <img src="art/ep02-cover.jpg" alt="Cover: 25 de Abril" />
-        <div class="badge-paid">$5</div>
         <img class="stamp" src="art/gaivota-canon-stamp.jpg" alt="Gaivota mascot" />
         <div class="overlay">
           <h1>25 de Abril</h1>
@@ -230,8 +236,8 @@
       </div>
       <div class="panel">
         <img src="art/ep02-comic-p2.jpg" alt="Army in the streets" />
-        <div class="bubble rui tl"><span class="who">Rui</span>Dizem que o exército está na rua.</div>
-        <div class="bubble marta tr"><span class="who">Marta</span>Com medo… ou com esperança?</div>
+        <div class="bubble rui p2-rui"><span class="who">Rui</span>Dizem que o exército está na rua.</div>
+        <div class="bubble marta p2-marta"><span class="who">Marta</span>Com medo… ou com esperança?</div>
         <div class="bubble gaivota br"><span class="who">Gaivota</span>Os fuzis chegaram. O povo ainda espera.</div>
       </div>
       <div class="foot"><span>Chunks: <em>o exército está na rua</em></span><span>2/5</span></div>

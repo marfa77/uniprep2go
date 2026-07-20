@@ -13,6 +13,7 @@ Status: **v1 locked** · Product: Gumroad printable comics · No Anki
 | Format (site) | **HTML** — free Ep.01 reader on UniPrep2Go |
 | Format (Gumroad) | **PDF** per paid episode (not zip) |
 | Gumroad model | **One product per episode** (variants cannot attach different files) |
+| Price in PDF | **Never** — no `$5` / price badges on cover or comic pages (price lives only on Gumroad/site) |
 | Site hub | `/comics/gaivota-em-portugal` (catalog + CTAs) |
 | Free Ep.01 | `/comics/gaivota-em-portugal/01-1755-earthquake` |
 | Ep.02 product | `gaivota-em-portugal-comics` → PDF · $5 |
