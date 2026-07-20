@@ -54,6 +54,8 @@ describe("exam-llm-layer", () => {
     expect(commercial).toContain("/mock-exams/epa-608-readiness-check");
     expect(commercial).toContain("/api/mock-exams/epa-608-readiness-check");
     expect(commercial).toContain("/hvac-epa-608-anki-deck");
+    expect(commercial.toLowerCase()).toContain("gumroad");
+    expect(commercial.toLowerCase()).toContain("buy");
     expect(differentiators).toContain("pass/no-pass readiness verdict");
     expect(differentiators).toContain("Not affiliated with or endorsed by");
   });

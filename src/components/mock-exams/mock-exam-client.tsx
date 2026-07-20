@@ -161,8 +161,25 @@ export function MockExamClient({ config, questions, accessState, linkedCheckout,
           <MockInterestCta config={config} cta={cta} report={report} />
         ) : null}
         <div className="flex flex-wrap gap-3">
+          {linkedCheckout?.checkoutUrl ? (
+            <a
+              className="rounded-lg bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
+              href={linkedCheckout.checkoutUrl}
+              onClick={() =>
+                trackMockEvent({
+                  name: "mock_deck_cta_click",
+                  deckSlug: config.linkedDeckSlug,
+                  mockSlug: config.slug,
+                })
+              }
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Buy Anki deck on Gumroad
+            </a>
+          ) : null}
           <button
-            className="rounded-lg bg-[#18140f] px-6 py-3 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
+            className="rounded-lg border border-[#18140f]/20 px-6 py-3 text-sm font-semibold transition hover:border-[#18140f]"
             onClick={startMock}
             type="button"
           >
@@ -179,7 +196,7 @@ export function MockExamClient({ config, questions, accessState, linkedCheckout,
               })
             }
           >
-            {linkedDeck?.checkoutUrl ? "View deck page" : "Open linked Anki deck"}
+            {linkedDeck?.checkoutUrl ? "Deck details" : "Join Anki deck waitlist"}
           </Link>
         </div>
       </div>

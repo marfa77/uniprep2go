@@ -1,4 +1,4 @@
-import { getCatalogDeckBySlug } from "../decks";
+import { getCatalogDeckBySlug, getDeckBySlug } from "../decks";
 import { getAllMockExams, getMockExamConfig } from "./configs";
 import {
   buildMockExamFaqs,
@@ -6,12 +6,12 @@ import {
   buildMockSeoPageCopy,
   getMockSeoProfile,
 } from "./seo";
-import type { MockExamConfig } from "./types";
+import type { MockAccessMode, MockExamConfig } from "./types";
 import { getMockOfficialResources } from "./official-resources";
 import { isMockExamRunnable } from "./question-bank";
 import { getVerticalDefinition } from "./taxonomy";
 import { shouldIndexMockExam } from "../seo";
-import { mockFreeAccessNotice, mockFreeAccessPriceLabel } from "./pricing";
+import { mockFreeAccessPriceLabel, mockFunnelNoticeForLinkedDeck } from "./pricing";
 import { absoluteUrl, siteConfig } from "../site";
 import {
   buildExamFactsMarkdownSection,
@@ -24,12 +24,31 @@ export function mockExamHubBreadcrumbLabel() {
   return "US exam practice tests";
 }
 
+/** Public access_mode for GEO/LLM — never expose internal demand-test naming. */
+export function publicMockAccessMode(accessMode: MockAccessMode): string {
+  switch (accessMode) {
+    case "free_demand_test":
+      return "free_timed_mock";
+    case "gumroad_license":
+      return "gumroad_license";
+    case "coming_soon":
+      return "coming_soon";
+  }
+}
+
 export function buildMockExamFacts(config: MockExamConfig) {
   const linkedDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
+  const catalogDeck = getDeckBySlug(config.linkedDeckSlug);
   const seoIndexed = shouldIndexMockExam(config.slug);
   const seo = getMockSeoProfile(config);
   const pageCopy = buildMockSeoPageCopy(config);
   const official = getMockOfficialResources(config);
+  const pricingNote = mockFunnelNoticeForLinkedDeck(
+    linkedDeck ??
+      (catalogDeck
+        ? { status: catalogDeck.status, checkoutUrl: catalogDeck.checkoutUrl }
+        : null),
+  );
 
   return {
     product: seo.headline,
@@ -40,15 +59,16 @@ export function buildMockExamFacts(config: MockExamConfig) {
     linked_deck_slug: config.linkedDeckSlug,
     linked_deck_url: absoluteUrl(`/decks/${config.linkedDeckSlug}`),
     linked_deck_checkout_url: linkedDeck?.checkoutUrl ?? null,
+    linked_deck_status: catalogDeck?.status ?? (linkedDeck ? "available" : "planned"),
     status: config.status,
     index_status: seoIndexed ? "indexed" : "noindex",
     seo_indexed: seoIndexed,
-    access_mode: config.accessMode,
+    access_mode: publicMockAccessMode(config.accessMode),
     question_count: config.questionCount,
     duration_minutes: config.durationMinutes,
     pass_threshold_percent: config.passRule.passPercent,
     price: mockFreeAccessPriceLabel,
-    pricing_note: mockFreeAccessNotice,
+    pricing_note: pricingNote,
     exam_body: config.examBody,
     certifier: official.certifier,
     verify_at_url: official.verifyAtUrl,
@@ -66,6 +86,8 @@ export function buildMockExamFacts(config: MockExamConfig) {
       step_3: "linked_deck_remediation",
       linked_deck_slug: config.linkedDeckSlug,
       linked_deck_product_url: absoluteUrl(`/decks/${config.linkedDeckSlug}`),
+      linked_deck_checkout_url: linkedDeck?.checkoutUrl ?? null,
+      linked_deck_status: catalogDeck?.status ?? (linkedDeck ? "available" : "planned"),
     },
     report_features: [
       "pass/no-pass readiness verdict",
@@ -95,7 +117,7 @@ export function buildMockExamCatalogFacts() {
 
   return {
     publisher: siteConfig.name,
-    catalog_type: "finance_mock_exams",
+    catalog_type: "us_exam_practice_tests",
     count: mocks.length,
     mocks: mocks.map((mock) => buildMockExamFacts(mock)),
     catalog_json: absoluteUrl("/api/mock-exams"),
@@ -104,6 +126,7 @@ export function buildMockExamCatalogFacts() {
 
 export function buildMockExamMarkdown(config: MockExamConfig) {
   const faqs = buildMockExamFaqs(config);
+  const facts = buildMockExamFacts(config);
   const seo = getMockSeoProfile(config);
   const pageCopy = buildMockSeoPageCopy(config);
   const official = getMockOfficialResources(config);
@@ -141,13 +164,15 @@ ${officialLinks}
 - Vertical: ${config.verticalId} (${absoluteUrl(`/mock-exams/v/${config.verticalId}`)})
 - Family: ${config.familyId}
 - Linked deck: ${config.linkedDeckSlug}
+- Linked deck status: ${facts.linked_deck_status}
+- Linked deck checkout: ${facts.linked_deck_checkout_url ?? "waitlist / not on sale yet"}
 - Status: ${config.status}
-- Access mode: ${config.accessMode}
+- Access mode: ${facts.access_mode}
 - Questions: ${config.questionCount}
 - Duration: ${config.durationMinutes} minutes
 - Pass threshold: ${config.passRule.passPercent}%
 - Price: ${mockFreeAccessPriceLabel}
-- Pricing note: ${mockFreeAccessNotice}
+- Pricing note: ${facts.pricing_note}
 - Exam body: ${config.examBody}
 - Search aliases: ${(config.searchAliases ?? []).join(", ") || "n/a"}
 - Landing page: ${absoluteUrl(`/mock-exams/${config.slug}`)}

@@ -2,14 +2,27 @@
 export const mockFreeAccessPriceLabel = "Free timed practice test";
 
 /**
- * Funnel copy: mocks stay free; monetization is the linked Anki deck / PDF.
- * Do not promise a future paid-mock Gumroad gate.
+ * Hub / generic funnel copy: mocks stay free; monetization is the Anki deck.
  */
 export const mockFreeAccessNotice =
-  "Free timed mocks with full topic reports — no signup. After your score, drill weak topics with the linked Anki deck (paid .apkg via Gumroad where available).";
+  "Free timed mocks with full topic reports — no signup. After your score, buy or join the waitlist for the linked Anki deck to drill weak topics with spaced repetition.";
 
-/** @deprecated Kept for any residual imports; live free mocks no longer use paid-mock interest capture. */
+/** Deck-aware notice for mock pages, facts, and FAQs. */
+export function mockFunnelNoticeForLinkedDeck(
+  linkedDeck?: {
+    status?: "available" | "planned";
+    checkoutUrl?: string;
+  } | null,
+): string {
+  if (linkedDeck?.status === "available" && linkedDeck.checkoutUrl) {
+    return "Free timed mock with full topic report — no signup. After your score, buy the linked Anki deck on Gumroad to drill weak topics with spaced repetition.";
+  }
+
+  return "Free timed mock with full topic report — no signup. After your score, join the linked Anki deck waitlist for the .apkg when it ships.";
+}
+
+/** @deprecated Prefer mockFunnelNoticeForLinkedDeck. */
 export const mockPaidTransitionCtaLabel = "Open linked Anki deck";
 
-/** @deprecated Kept for any residual imports; prefer mockFreeAccessNotice. */
+/** @deprecated Prefer mockFunnelNoticeForLinkedDeck. */
 export const mockPaidTransitionCtaDescription = mockFreeAccessNotice;

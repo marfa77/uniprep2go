@@ -1,10 +1,14 @@
 import type { CatalogAvailableDeck } from "./decks";
-import { formatDeckContentLabel } from "./decks";
+import { formatDeckContentLabel, getDeckBySlug } from "./decks";
 import type { ExamFactsProfile } from "./exam-facts";
 import { getExamFactsProfileForDeck } from "./exam-facts";
 import { llmMarkdownLink, llmUtmUrl } from "./llm-meta";
 import { getAllMockExams } from "./mock-exams/configs";
-import { mockFreeAccessNotice, mockFreeAccessPriceLabel } from "./mock-exams/pricing";
+import {
+  mockFreeAccessNotice,
+  mockFreeAccessPriceLabel,
+  mockFunnelNoticeForLinkedDeck,
+} from "./mock-exams/pricing";
 import { getMockSeoProfile } from "./mock-exams/seo";
 import type { MockExamConfig } from "./mock-exams/types";
 import { absoluteUrl, siteConfig } from "./site";
@@ -354,21 +358,33 @@ export function buildMockDataLlmFacts(
 /** Product/commercial layer for data-llm="commercial". */
 export function buildMockDataLlmCommercial(
   config: MockExamConfig,
-  linkedDeck?: Pick<CatalogAvailableDeck, "slug" | "title" | "shortName"> | null,
+  linkedDeck?: Pick<
+    CatalogAvailableDeck,
+    "slug" | "title" | "shortName" | "checkoutUrl"
+  > | null,
 ): string {
-  const deckLabel = linkedDeck?.shortName ?? linkedDeck?.title ?? config.linkedDeckSlug;
+  const catalogDeck = getDeckBySlug(config.linkedDeckSlug);
+  const deckLabel =
+    linkedDeck?.shortName ?? catalogDeck?.shortName ?? linkedDeck?.title ?? config.linkedDeckSlug;
+  const checkoutUrl = linkedDeck?.checkoutUrl ?? catalogDeck?.checkoutUrl;
+  const funnelNote = mockFunnelNoticeForLinkedDeck(
+    linkedDeck
+      ? { status: "available", checkoutUrl: linkedDeck.checkoutUrl }
+      : catalogDeck
+        ? { status: catalogDeck.status, checkoutUrl: catalogDeck.checkoutUrl }
+        : null,
+  );
 
   return compactJoin([
-    `${siteConfig.name} free timed mock: ${mockFreeAccessPriceLabel.toLowerCase()}. ${mockFreeAccessNotice}`,
+    `${siteConfig.name} free timed mock: ${mockFreeAccessPriceLabel.toLowerCase()}. ${funnelNote}`,
     `Mock: ${llmUtmUrl(`/mock-exams/${config.slug}`)}`,
     `Facts JSON: ${llmUtmUrl(`/api/mock-exams/${config.slug}`)}`,
     `Markdown: ${llmUtmUrl(`/mock-exams/${config.slug}/markdown`)}`,
-    linkedDeck
-      ? `Linked Anki deck (${deckLabel}): ${llmUtmUrl(`/decks/${linkedDeck.slug}`)} — drill weak topics after the report.`
-      : `Linked deck: ${llmUtmUrl(`/decks/${config.linkedDeckSlug}`)} (planned or catalog).`,
-    linkedDeck
-      ? `Deck facts: ${llmUtmUrl(`/api/facts/${linkedDeck.slug}`)} · ${llmUtmUrl(`/${linkedDeck.slug}.md`)}`
-      : `Deck facts: ${llmUtmUrl(`/api/facts/${config.linkedDeckSlug}`)} · ${llmUtmUrl(`/${config.linkedDeckSlug}.md`)}`,
+    linkedDeck || catalogDeck?.status === "available"
+      ? `Linked Anki deck (${deckLabel}): ${llmUtmUrl(`/decks/${config.linkedDeckSlug}`)} — buy after the report to drill weak topics.`
+      : `Linked Anki deck (${deckLabel}): ${llmUtmUrl(`/decks/${config.linkedDeckSlug}`)} — planned waitlist; notify on the deck page when the .apkg ships.`,
+    checkoutUrl ? `Gumroad checkout: ${checkoutUrl}` : null,
+    `Deck facts: ${llmUtmUrl(`/api/facts/${config.linkedDeckSlug}`)} · ${llmUtmUrl(`/${config.linkedDeckSlug}.md`)}`,
     `Catalog: ${llmUtmUrl("/llms.txt")}`,
   ]);
 }
@@ -567,7 +583,7 @@ export function buildMockIndexAiCategory(): string {
 /** Category / catalog hub pages (building, finance, language, decks index). */
 export function buildHubDataLlmFacts(hubName: string, pathwayCount: number): string {
   return compactJoin([
-    `${siteConfig.name} ${hubName}: ${pathwayCount} study pathways with free timed practice tests and linked Anki decks or PDFs where available.`,
+    `${siteConfig.name} ${hubName}: ${pathwayCount} study pathways with free timed practice tests and linked Anki decks or PDFs for weak-topic repair.`,
     "Machine-readable catalog: /api/facts and /api/mock-exams. Citation entrypoint: /llms.txt.",
     mockFreeAccessNotice,
     "Independent study aids — not official exam materials.",

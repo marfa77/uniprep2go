@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { getCatalogDeckBySlug } from "@/lib/decks";
+import { getCatalogDeckBySlug, getDeckBySlug } from "@/lib/decks";
 import { getMockOfficialResources } from "@/lib/mock-exams/official-resources";
 import { buildMockExamFaqs, buildMockSeoPageCopy } from "@/lib/mock-exams/seo";
-import { mockFreeAccessNotice } from "@/lib/mock-exams/pricing";
+import { mockFunnelNoticeForLinkedDeck } from "@/lib/mock-exams/pricing";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
 
 type MockSeoSectionsProps = {
@@ -131,8 +131,10 @@ export function MockExamTopicOutlineSection({ config }: { config: MockExamConfig
 
 export function MockExamAboutSection({ config }: { config: MockExamConfig }) {
   const copy = buildMockSeoPageCopy(config);
-  const linkedDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
+  const availableDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
+  const linkedDeck = availableDeck ?? getDeckBySlug(config.linkedDeckSlug);
   const waitlist = copy.isWaitlist;
+  const deckBuyable = linkedDeck?.status === "available" && Boolean(linkedDeck.checkoutUrl);
 
   return (
     <div className="space-y-4 text-sm leading-7 text-[#4f493e]">
@@ -161,14 +163,16 @@ export function MockExamAboutSection({ config }: { config: MockExamConfig }) {
           {waitlist ? "Notify when the bank launches" : "Full answer review after you submit"}
         </li>
       </ul>
-      {!waitlist ? <p className="text-[#5f5749]">{mockFreeAccessNotice}</p> : null}
+      {!waitlist ? (
+        <p className="text-[#5f5749]">{mockFunnelNoticeForLinkedDeck(linkedDeck)}</p>
+      ) : null}
       <Link
         className="inline-flex font-semibold text-[#1f3a5f] underline-offset-4 hover:underline"
         href={`/decks/${config.linkedDeckSlug}`}
       >
-        {waitlist
+        {waitlist || !deckBuyable
           ? `Join the ${linkedDeck?.shortName ?? "linked"} Anki waitlist`
-          : `Drill weak topics with ${linkedDeck?.shortName ?? "the linked"} flashcards`}
+          : `Buy ${linkedDeck?.shortName ?? "the linked"} Anki deck to drill weak topics`}
       </Link>
     </div>
   );

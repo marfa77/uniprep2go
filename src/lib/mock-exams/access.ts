@@ -1,5 +1,6 @@
+import { getDeckBySlug } from "../decks";
 import { getMockExamConfig } from "./configs";
-import { mockFreeAccessNotice } from "./pricing";
+import { mockFunnelNoticeForLinkedDeck } from "./pricing";
 import type { MockAccessState } from "./types";
 
 export function getMockAccessState(mockSlug: string): MockAccessState | null {
@@ -9,6 +10,8 @@ export function getMockAccessState(mockSlug: string): MockAccessState | null {
     return null;
   }
 
+  const linkedDeck = getDeckBySlug(config.linkedDeckSlug);
+
   switch (config.accessMode) {
     case "free_demand_test":
       return {
@@ -17,8 +20,8 @@ export function getMockAccessState(mockSlug: string): MockAccessState | null {
         fullReportUnlocked: true,
         // No “notify me when paid mocks launch” — funnel is free mock → Anki deck.
         interestCaptureEnabled: false,
-        ctaLabel: "Open linked Anki deck",
-        ctaDescription: mockFreeAccessNotice,
+        ctaLabel: linkedDeck?.status === "available" ? "Buy linked Anki deck" : "Open linked Anki deck",
+        ctaDescription: mockFunnelNoticeForLinkedDeck(linkedDeck),
       };
     case "gumroad_license":
       return {

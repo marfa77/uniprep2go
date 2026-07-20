@@ -1,7 +1,12 @@
 import { describe, expect, it } from "vitest";
 import { getMockAccessState, isFullReportUnlocked } from "./access";
 import { getAllMockExams, getMockExamConfig, primaryMock, validateMockExamConfig } from "./configs";
-import { buildMockExamFacts, buildMockExamMarkdown, buildMockExamPageJsonLd } from "./llm";
+import {
+  buildMockExamFacts,
+  buildMockExamFaqs,
+  buildMockExamMarkdown,
+  buildMockExamPageJsonLd,
+} from "./llm";
 import { buildMockSeoDescription } from "./seo";
 import {
   getQuestionBank,
@@ -481,8 +486,12 @@ describe("llm visibility", () => {
     expect(facts.linked_deck_slug).toBe("sie-exam-anki-deck");
     expect(String(facts.price).toLowerCase()).toContain("free");
     expect(String(facts.price).toLowerCase()).not.toContain("first 20");
-    expect(String(facts.pricing_note).toLowerCase()).toContain("anki");
+    expect(facts.access_mode).toBe("free_timed_mock");
+    expect(String(facts.access_mode)).not.toContain("demand");
+    expect(String(facts.pricing_note).toLowerCase()).toContain("buy");
     expect(String(facts.pricing_note).toLowerCase()).not.toContain("validate demand");
+    expect(facts.linked_deck_checkout_url).toContain("gumroad.com");
+    expect(facts.funnel.linked_deck_checkout_url).toContain("gumroad.com");
     expect(facts.report_features).toContain("weighted topic diagnosis");
     expect(String(facts.question_source).length).toBeGreaterThan(20);
 
@@ -493,8 +502,15 @@ describe("llm visibility", () => {
     expect(markdown).toContain("## Report features");
     expect(markdown).toContain("## Question source");
     expect(markdown).toContain("does not guarantee an exam result");
+    expect(markdown).toContain("Access mode: free_timed_mock");
+    expect(markdown).not.toContain("free_demand_test");
     expect(facts.verify_at_url).toContain("finra.org");
     expect(facts.official_resources?.length).toBeGreaterThan(0);
+
+    const faqs = buildMockExamFaqs(config!);
+    const reportFaq = faqs.find((faq) => faq.question.includes("What does the report show"));
+    expect(reportFaq?.answer.toLowerCase()).toContain("gumroad");
+    expect(reportFaq?.answer.toLowerCase()).not.toContain("waitlist or deck when available");
   });
 
   it("exposes every configured mock through LLM facts and markdown", () => {

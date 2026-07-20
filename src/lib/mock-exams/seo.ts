@@ -1,7 +1,8 @@
 import type { MockExamConfig } from "./types";
 import { getNicheExamExplainer } from "./niche-exam-explainers";
 import { getMockOfficialResources } from "./official-resources";
-import { mockFreeAccessNotice, mockFreeAccessPriceLabel } from "./pricing";
+import { mockFreeAccessNotice, mockFreeAccessPriceLabel, mockFunnelNoticeForLinkedDeck } from "./pricing";
+import { getDeckBySlug } from "../decks";
 import { fitSeoTitle, SEO_TITLE_MAX } from "../seo";
 import { absoluteUrl, siteConfig } from "../site";
 
@@ -692,6 +693,9 @@ export function buildMockSearchFaqs(config: MockExamConfig) {
 export function buildMockExamFaqs(config: MockExamConfig) {
   const profile = getMockSeoProfile(config);
   const pageUrl = absoluteUrl(`/mock-exams/${config.slug}`);
+  const linkedDeck = getDeckBySlug(config.linkedDeckSlug);
+  const deckIsBuyable =
+    linkedDeck?.status === "available" && Boolean(linkedDeck.checkoutUrl);
   const bankNote = config.questionSourceNote
     ? config.questionSourceNote
     : "Questions are original UniPrep2Go practice items aligned to published topic outlines — not leaked official exam questions.";
@@ -708,8 +712,9 @@ export function buildMockExamFaqs(config: MockExamConfig) {
     },
     {
       question: "What does the report show after the mock?",
-      answer:
-        "Your report shows a pass/no-pass verdict with explanation, topic diagnosis, pacing notes, full question review with explanations, and a repair plan linked to the Anki deck waitlist or deck when available.",
+      answer: deckIsBuyable
+        ? "Your report shows a pass/no-pass verdict with explanation, topic diagnosis, pacing notes, full question review with explanations, and a repair plan that links to the paid Anki deck on Gumroad for weak-topic drilling."
+        : "Your report shows a pass/no-pass verdict with explanation, topic diagnosis, pacing notes, full question review with explanations, and a repair plan that links to the Anki deck waitlist for spaced-repetition practice when the .apkg ships.",
     },
     {
       question: "Where do the questions come from?",
