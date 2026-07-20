@@ -196,25 +196,41 @@ export function MockReportPanel({
                 </div>
               ) : null}
               <p className="mt-3 text-sm leading-7">
-                <span className="font-medium">Correct:</span>{" "}
+                <span className="font-medium">Correct answer:</span>{" "}
+                <span className="font-semibold uppercase">{item.correctOptionId}.</span>{" "}
                 <MathContent text={item.options.find((option) => option.id === item.correctOptionId)?.text ?? ""} />
               </p>
               {!item.isCorrect ? (
                 <p className="mt-2 text-sm leading-7">
                   <span className="font-medium">Your answer:</span>{" "}
-                  {item.userOptionId
-                    ? <MathContent text={item.options.find((option) => option.id === item.userOptionId)?.text ?? ""} />
-                    : "No answer selected"}
+                  {item.userOptionId ? (
+                    <>
+                      <span className="font-semibold uppercase">{item.userOptionId}.</span>{" "}
+                      <MathContent
+                        text={item.options.find((option) => option.id === item.userOptionId)?.text ?? ""}
+                      />
+                    </>
+                  ) : (
+                    "No answer selected"
+                  )}
                 </p>
               ) : null}
-              <p className="mt-3 text-sm leading-7 text-[#4f493e]">
-                <MathContent text={item.explanation} />
-              </p>
-              {item.distractorExplanation ? (
-                <p className="mt-2 text-sm leading-7 text-[#5f5749]">
-                  Why your choice was wrong: {item.distractorExplanation}
-                </p>
-              ) : null}
+              <div className="mt-4 space-y-3 border-t border-[#18140f]/10 pt-4">
+                <div>
+                  <p className="text-sm font-medium text-[#18140f]">Why this is correct</p>
+                  <p className="mt-1.5 text-sm leading-7 text-[#4f493e]">
+                    <MathContent text={item.explanation} />
+                  </p>
+                </div>
+                {item.distractorExplanation ? (
+                  <div>
+                    <p className="text-sm font-medium text-[#18140f]">Why your answer was wrong</p>
+                    <p className="mt-1.5 text-sm leading-7 text-[#5f5749]">
+                      <MathContent text={item.distractorExplanation} />
+                    </p>
+                  </div>
+                ) : null}
+              </div>
             </details>
           ))}
         </div>

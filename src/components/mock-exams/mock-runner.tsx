@@ -280,6 +280,10 @@ export function MockRunner({
       : null;
   const isCorrect =
     isLearn && currentRevealed && selectedOptionId === currentQuestion.correctOptionId;
+  const correctOption =
+    isLearn && currentRevealed
+      ? currentQuestion.options.find((option) => option.id === currentQuestion.correctOptionId)
+      : null;
 
   return (
     <div ref={sessionAnchorRef} className="mx-auto max-w-4xl scroll-mt-4 px-6 pb-4 pt-2 sm:px-10">
@@ -351,19 +355,34 @@ export function MockRunner({
         {isLearn && currentRevealed ? (
           <div
             aria-live="polite"
-            className={`mt-6 rounded-2xl border p-4 text-sm leading-7 ${
+            className={`mt-6 space-y-4 rounded-2xl border p-5 text-sm leading-7 ${
               isCorrect
                 ? "border-[#2f5d3a]/30 bg-[#e7f3ea] text-[#1f3d28]"
                 : "border-[#7a2e2e]/25 bg-[#fff0f0] text-[#5c2222]"
             }`}
             role="status"
           >
-            <p className="font-semibold">{isCorrect ? "Correct" : "Incorrect"}</p>
-            <p className="mt-2 text-[#4f493e]">
-              <MathContent text={currentQuestion.explanation} />
-            </p>
+            <p className="text-base font-semibold">{isCorrect ? "Correct" : "Incorrect"}</p>
+            {!isCorrect && correctOption ? (
+              <p className="text-[#4f493e]">
+                <span className="font-medium text-[#18140f]">Correct answer:</span>{" "}
+                <span className="font-semibold uppercase">{correctOption.id}.</span>{" "}
+                <MathContent text={correctOption.text} />
+              </p>
+            ) : null}
+            <div>
+              <p className="font-medium text-[#18140f]">Why this is correct</p>
+              <p className="mt-1.5 text-[#4f493e]">
+                <MathContent text={currentQuestion.explanation} />
+              </p>
+            </div>
             {distractorExplanation ? (
-              <p className="mt-2 text-[#5f5749]">Why your choice was wrong: {distractorExplanation}</p>
+              <div>
+                <p className="font-medium text-[#18140f]">Why your answer was wrong</p>
+                <p className="mt-1.5 text-[#5f5749]">
+                  <MathContent text={distractorExplanation} />
+                </p>
+              </div>
             ) : null}
           </div>
         ) : null}
