@@ -626,7 +626,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   }),
 };
 
-export function getNicheExamExplainer(slug: string) {
+export function getNicheExamExplainer(slug: string): NicheExamExplainer | null {
   return (
     nicheExamExplainers[slug] ??
     wave3ExamExplainers[slug] ??

@@ -1,8 +1,11 @@
-type Wave3Explainer = {
+export type Wave3Explainer = {
   practiceTestName: string;
   whatIsExam: string;
   administeredBy: string;
   officialFormat?: string;
+  whoFor?: string;
+  howToPrepare?: string;
+  topicBlurbs?: Array<{ id: string; label: string; blurb: string }>;
   examFaqs: Array<{ question: string; answer: string }>;
   keywords: string[];
 };
