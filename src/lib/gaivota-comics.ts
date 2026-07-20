@@ -104,6 +104,18 @@ export const gaivotaEpisodes: GaivotaEpisode[] = [
     gumroadCheckoutUrl:
       "https://pixidstudio.gumroad.com/l/gaivota-ep06-liberal-revolution?wanted=true",
   },
+  {
+    id: "07-republic",
+    number: 7,
+    titlePt: "República",
+    titleEn: "Republic proclaimed",
+    event: "Portuguese Republic proclaimed",
+    year: "1910",
+    price: 5,
+    status: "live",
+    pagePath: "/comics/gaivota-em-portugal/07-republic",
+    gumroadCheckoutUrl: "https://pixidstudio.gumroad.com/l/gaivota-ep07-republic?wanted=true",
+  },
 ];
 
 export function gaivotaAbsolute(path: string) {

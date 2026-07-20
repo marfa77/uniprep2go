@@ -72,6 +72,9 @@ export default function GaivotaHubPage() {
           <Link className={btnSecondary} href="/comics/gaivota-em-portugal/06-liberal-revolution">
             Ep.06 — Revolução Liberal
           </Link>
+          <Link className={btnSecondary} href="/comics/gaivota-em-portugal/07-republic">
+            Ep.07 — República
+          </Link>
         </div>
 
         <section className="mt-14">

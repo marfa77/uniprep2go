@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaivota em Portugal · Ep.07 — República (1910)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #0e0e0e;
+      --paper: #f4f1ea;
+      --muted: #5c574e;
+      --line: #c9c2b4;
+      --paid: #8b1f3d;
+      --accent: #b5451b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      color: var(--ink);
+      background: #ddd7cb;
+      line-height: 1.45;
+    }
+    .bar {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; justify-content: space-between;
+      padding: .7rem 1.1rem;
+      background: #111; color: #f4f1ea;
+    }
+    .bar .brand { display: flex; align-items: center; gap: .65rem; font-family: Fraunces, Georgia, serif; font-weight: 700; }
+    .bar img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; background: #fff; }
+    .bar .paid { background: var(--paid); color: #fff; font-size: .75rem; font-weight: 700; padding: .25rem .55rem; border-radius: 999px; letter-spacing: .04em; }
+    .bar a { color: #fff; text-decoration: none; font-weight: 600; font-size: .9rem; border: 1px solid rgba(255,255,255,.35); padding: .4rem .8rem; border-radius: 999px; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 1.25rem 1rem 4rem; }
+    .page {
+      width: min(100%, 794px);
+      margin: 0 auto 1.75rem;
+      background: var(--paper);
+      border: 1px solid #bdb5a6;
+      box-shadow: 0 16px 36px rgba(0,0,0,.12);
+      padding: 1.25rem 1.35rem 1.4rem;
+      position: relative;
+    }
+    .page-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: .85rem; }
+    .page-head .left { display: flex; align-items: center; gap: .5rem; font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: .95rem; }
+    .page-head .left img { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; }
+    .page-head .meta { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+    .hero {
+      position: relative; border: 3px solid var(--ink); overflow: hidden; background: #111;
+      line-height: 0;
+    }
+    .hero > img:not(.stamp) { width: 100%; height: auto; display: block; object-fit: contain; }
+    .brief-img img { width: 100%; height: auto; display: block; object-fit: contain; }
+    .panel img { width: 100%; height: auto; display: block; object-fit: contain; }
+    .hero .overlay {
+      position: absolute; left: 0; right: 0; bottom: 0;
+      padding: 1.5rem 1.2rem 1.2rem;
+      background: linear-gradient(transparent, rgba(0,0,0,.92) 40%);
+      color: #fff;
+    }
+    .hero h1 { margin: 0; font-family: Fraunces, Georgia, serif; font-size: clamp(1.7rem, 4.5vw, 2.8rem); line-height: 1.05; }
+    .hero p { margin: .4rem 0 0; max-width: 44ch; opacity: .95; }
+    .stamp {
+      position: absolute; top: 1rem; right: 1rem; width: 72px; height: 72px;
+      border-radius: 50%; border: 2px solid #fff; object-fit: cover; background: #fff;
+    }
+    .brief-grid { display: grid; gap: 1rem; }
+    .brief-img { border: 2px solid var(--ink); overflow: hidden; background: #ccc; line-height: 0; }
+    .caption { font-size: .82rem; color: var(--muted); margin: .35rem 0 0; font-style: italic; }
+    .brief h2 { margin: 0 0 .5rem; font-family: Fraunces, Georgia, serif; font-size: 1.55rem; }
+    .brief .hook { font-size: 1.08rem; margin: 0 0 .75rem; }
+    .brief ul { margin: 0 0 1rem; padding-left: 1.15rem; }
+    .brief li { margin: .3rem 0; }
+    .disclaimer {
+      margin-top: 1rem; padding: .75rem .9rem;
+      border-left: 4px solid var(--ink); background: #ebe6dc; font-size: .92rem;
+    }
+    .panel {
+      position: relative; border: 3px solid var(--ink); overflow: hidden; background: #111;
+      line-height: 0;
+    }
+    .bubble {
+      position: absolute; max-width: min(78%, 290px);
+      background: #fffdf8; border: 2.5px solid var(--ink); border-radius: 1.05rem;
+      padding: .55rem .7rem; font-size: .95rem; font-weight: 500; line-height: 1.3;
+      box-shadow: 3px 3px 0 rgba(0,0,0,.12); z-index: 2;
+    }
+    .bubble .who {
+      display: block; font-size: .66rem; font-weight: 700; letter-spacing: .05em;
+      text-transform: uppercase; margin-bottom: .12rem; color: #333;
+    }
+    .bubble.gaivota { background: #111; color: #f4f1ea; border-color: #111; }
+    .bubble.gaivota .who { color: #cfcfcf; }
+    .bubble.clara .who { color: #8b1f3d; }
+    .bubble.rui .who { color: #1f6f8b; }
+    .tl { left: 4%; top: 5%; }
+    .tr { right: 4%; top: 5%; }
+    .bl { left: 4%; bottom: 7%; }
+    .br { right: 4%; bottom: 7%; }
+    .p1-gaivota { left: 3%; top: 2%; max-width: min(42%, 250px); }
+    .p1-a { left: 2%; bottom: 5%; max-width: min(34%, 200px); font-size: .88rem; }
+    .p1-b { right: 3%; top: 16%; max-width: min(34%, 210px); font-size: .88rem; }
+    .foot {
+      margin-top: .7rem; display: flex; justify-content: space-between; gap: 1rem;
+      font-size: .8rem; color: var(--muted); line-height: 1.35;
+    }
+    .study h2 { margin: 0 0 .6rem; font-family: Fraunces, Georgia, serif; font-size: 1.6rem; }
+    .study h3 { margin: 1.2rem 0 .45rem; color: var(--accent); font-size: 1.05rem; }
+    .tips { background: #e7eef1; border: 1px solid #b9c9d1; padding: .75rem .9rem; font-size: .92rem; margin-bottom: .5rem; }
+    .glossary {
+      display: grid; grid-template-columns: 1fr 1fr; gap: .25rem .9rem; font-size: .84rem;
+    }
+    .g-row { display: grid; grid-template-columns: 1.1fr 1fr; gap: .4rem; border-bottom: 1px solid var(--line); padding: .28rem 0; }
+    .g-row span:first-child { font-weight: 600; }
+    .quiz ol { margin: 0; padding-left: 1.2rem; }
+    .quiz li { margin: .4rem 0; }
+    .cta {
+      margin-top: 1.4rem; padding: 1rem 1.1rem; background: #111; color: #f4f1ea;
+    }
+    .cta strong { font-family: Fraunces, Georgia, serif; font-size: 1.15rem; display: block; margin-bottom: .35rem; }
+    .cta a { color: #9fd0e0; }
+    @media (max-width: 720px) {
+      .glossary { grid-template-columns: 1fr; }
+      .bubble { font-size: .88rem; max-width: 88%; }
+    }
+    @media print {
+      @page { size: A4; margin: 8mm; }
+      body { background: white; margin: 0; }
+      .bar { display: none !important; }
+      .wrap { max-width: none; margin: 0; padding: 0; }
+      .page {
+        box-shadow: none; border: none; margin: 0; padding: 0 0 4mm;
+        width: auto; max-width: none; min-height: 0 !important; height: auto;
+        break-after: page; page-break-after: always;
+      }
+      .page:last-child { break-after: auto; page-break-after: auto; }
+      .page-head { margin-bottom: .45rem; }
+      .hero, .panel, .brief-img { min-height: 0 !important; height: auto; }
+      .hero > img:not(.stamp), .panel img, .brief-img img {
+        max-height: 195mm; width: 100%; height: auto !important; object-fit: contain;
+      }
+      .stamp { width: 52px; height: 52px; top: .6rem; right: .6rem; }
+      .bubble { box-shadow: none; }
+      .foot { margin-top: .4rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <div class="brand">
+      <img src="art/gaivota-canon-mark.webp" alt="Gaivota" />
+      <span>Gaivota em Portugal</span>
+      <span class="paid">Ep.07</span>
+    </div>
+    <a href="#study">Study pack</a>
+  </div>
+
+  <div class="wrap">
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Gaivota em Portugal</div>
+        <div class="meta">Episode 07 · Paid</div>
+      </div>
+      <div class="hero">
+        <img src="art/ep07-cover.webp" alt="Cover: Portuguese Republic 1910" />
+        <img class="stamp" src="art/gaivota-canon-stamp.webp" alt="Gaivota mascot" />
+        <div class="overlay">
+          <h1>República</h1>
+          <p>1910 — Lisboa acorda com uma bandeira nova, numa história completa em cinco páginas.</p>
+        </div>
+      </div>
+      <div class="foot"><span>Noir history comic · PT-PT + EN glossary</span><span>Ep.07</span></div>
+    </article>
+
+    <article class="page brief">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> History brief</div>
+        <div class="meta">Sheet 1 · Facts first</div>
+      </div>
+      <div class="brief-grid">
+        <div>
+          <div class="brief-img"><img src="art/ep07-brief-textbook.webp" alt="The Portuguese Republic" /></div>
+          <p class="caption">Lisbon, 5 October 1910 — history-textbook plate (engraving style).</p>
+        </div>
+        <div>
+          <h2>The Portuguese Republic</h2>
+          <p class="hook">On 5 October 1910, Lisbon woke to a new flag — the Portuguese Republic was proclaimed.</p>
+          <ul>
+            <li><strong>When:</strong> 5 October 1910</li>
+            <li><strong>Where:</strong> Lisbon (and the country follows)</li>
+            <li><strong>Who:</strong> republicans, navy units, civilians vs the monarchy of Manuel II</li>
+            <li><strong>How:</strong> uprising, civic proclamation; the king leaves into exile</li>
+            <li><strong>After:</strong> First Republic begins — new symbols, fragile hopes</li>
+          </ul>
+          <p>A day of barricades and balconies remade the regime. The comic follows two civilians at street level — care, fear, and the moment a green-red flag rises over the same wind.</p>
+          <div class="disclaimer"><strong>The comic that follows is an artistic interpretation.</strong> It follows two fictional civilians in Lisbon; Gaivota watches. No graphic violence.</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> República · 1/5</div>
+        <div class="meta">Setup</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep07-comic-p1.webp" alt="Pre-dawn Lisbon" />
+        <div class="bubble gaivota p1-gaivota"><span class="who">Gaivota</span>A cidade segura a respiração.</div>
+        <div class="bubble clara p1-a"><span class="who">Clara</span>Se houver feridos… vamos.</div>
+        <div class="bubble rui p1-b"><span class="who">Rui</span>Se houver República… também.</div>
+      </div>
+      <div class="foot"><span>Characters: Clara · Rui · Gaivota</span><span>1/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> República · 2/5</div>
+        <div class="meta">Rising action</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep07-comic-p2.webp" alt="Tension in the streets" />
+        <div class="bubble rui tl"><span class="who">Rui</span>Não fiques no meio.</div>
+        <div class="bubble clara tr"><span class="who">Clara</span>Há gente que precisa de água.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>O Tejo ouve tiros. A Baixa espera.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>não fiques no meio</em></span><span>2/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> República · 3/5</div>
+        <div class="meta">Turning point</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep07-comic-p3.webp" alt="Proclamation" />
+        <div class="bubble  tl"><span class="who">Voz</span>A República Portuguesa!</div>
+        <div class="bubble rui tr"><span class="who">Rui</span>É verdade…</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>Uma bandeira nova… no mesmo vento.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>a República Portuguesa</em></span><span>3/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> República · 4/5</div>
+        <div class="meta">Consequence</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep07-comic-p4.webp" alt="Afternoon relief" />
+        <div class="bubble clara tl"><span class="who">Clara</span>Acabou o medo?</div>
+        <div class="bubble rui tr"><span class="who">Rui</span>Acabou a monarquia. O medo… aprende novo nome.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>O rei partiu. O povo ficou.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>o povo ficou</em></span><span>4/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> República · 5/5</div>
+        <div class="meta">Resolution</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep07-comic-p5.webp" alt="Evening after" />
+        <div class="bubble clara tl"><span class="who">Clara</span>Que país é este agora?</div>
+        <div class="bubble rui tr"><span class="who">Rui</span>O nosso. Ainda por escrever.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>Guardo este Outubro. Portugal mudou de nome.</div>
+      </div>
+      <div class="foot"><span>End of story · no “to be continued”</span><span>5/5</span></div>
+    </article>
+
+    <article class="page study" id="study">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Study pack</div>
+        <div class="meta">100 words · PT → EN</div>
+      </div>
+      <h2>Study pack — República</h2>
+      <div class="tips">
+        Read the comic once for story, once for words. Say each line aloud. Prefer Portuguese answers in the quiz.
+      </div>
+      <h3>Glossary (100)</h3>
+      <div class="glossary">
+        <div class="g-row"><span>república</span><span>republic</span></div>
+        <div class="g-row"><span>proclamação-republicana</span><span>republican proclamation</span></div>
+        <div class="g-row"><span>quinto-de-outubro</span><span>5 October</span></div>
+        <div class="g-row"><span>1910</span><span>1910</span></div>
+        <div class="g-row"><span>monarquia</span><span>monarchy</span></div>
+        <div class="g-row"><span>rei-manuel</span><span>King Manuel</span></div>
+        <div class="g-row"><span>carbonária</span><span>Carbonária</span></div>
+        <div class="g-row"><span>republicano</span><span>republican</span></div>
+        <div class="g-row"><span>marinha</span><span>navy</span></div>
+        <div class="g-row"><span>canhão</span><span>cannon</span></div>
+        <div class="g-row"><span>couraçado</span><span>battleship</span></div>
+        <div class="g-row"><span>rossio</span><span>Rossio</span></div>
+        <div class="g-row"><span>chiado</span><span>Chiado</span></div>
+        <div class="g-row"><span>carmo</span><span>Carmo</span></div>
+        <div class="g-row"><span>rotunda</span><span>Rotunda</span></div>
+        <div class="g-row"><span>avenida</span><span>avenue</span></div>
+        <div class="g-row"><span>ambulância</span><span>ambulance</span></div>
+        <div class="g-row"><span>enfermeira</span><span>nurse</span></div>
+        <div class="g-row"><span>feridos</span><span>wounded</span></div>
+        <div class="g-row"><span>barricada-lisboa</span><span>Lisbon barricade</span></div>
+        <div class="g-row"><span>proclamador</span><span>proclaimer</span></div>
+        <div class="g-row"><span>varanda-municipal</span><span>city balcony</span></div>
+        <div class="g-row"><span>bandeira-verde-vermelha</span><span>green-red flag</span></div>
+        <div class="g-row"><span>escudo-armilar</span><span>armillary sphere</span></div>
+        <div class="g-row"><span>hino-da-carta</span><span>Hymn of the Charter</span></div>
+        <div class="g-row"><span>a-portuguesa</span><span>A Portuguesa</span></div>
+        <div class="g-row"><span>governo-provisório</span><span>provisional government</span></div>
+        <div class="g-row"><span>presidente</span><span>president</span></div>
+        <div class="g-row"><span>assembleia-constituinte</span><span>constituent assembly</span></div>
+        <div class="g-row"><span>decreto-lei</span><span>decree-law</span></div>
+        <div class="g-row"><span>separação-igreja-estado</span><span>church-state separation</span></div>
+        <div class="g-row"><span>laicismo</span><span>secularism</span></div>
+        <div class="g-row"><span>ensino</span><span>education</span></div>
+        <div class="g-row"><span>alfabetização</span><span>literacy</span></div>
+        <div class="g-row"><span>censura-acabou</span><span>censorship ended (hope)</span></div>
+        <div class="g-row"><span>exílio-real</span><span>royal exile</span></div>
+        <div class="g-row"><span>comboio</span><span>train</span></div>
+        <div class="g-row"><span>fronteira-espanhola</span><span>Spanish border</span></div>
+        <div class="g-row"><span>madrugada-de-outubro</span><span>October dawn</span></div>
+        <div class="g-row"><span>tiroteio</span><span>gunfire</span></div>
+        <div class="g-row"><span>fumo-branco</span><span>white smoke</span></div>
+        <div class="g-row"><span>parlamento</span><span>parliament</span></div>
+        <div class="g-row"><span>senado</span><span>senate</span></div>
+        <div class="g-row"><span>camara</span><span>chamber</span></div>
+        <div class="g-row"><span>ministro-da-guerra</span><span>war minister</span></div>
+        <div class="g-row"><span>comandante</span><span>commander</span></div>
+        <div class="g-row"><span>marinheiro-republicano</span><span>republican sailor</span></div>
+        <div class="g-row"><span>jornalista</span><span>journalist</span></div>
+        <div class="g-row"><span>fotógrafo</span><span>photographer</span></div>
+        <div class="g-row"><span>cartaz</span><span>poster</span></div>
+        <div class="g-row"><span>comunicado</span><span>communique</span></div>
+        <div class="g-row"><span>vitória-republicana</span><span>republican victory</span></div>
+        <div class="g-row"><span>fim-da-monarquia</span><span>end of monarchy</span></div>
+        <div class="g-row"><span>novo-regime</span><span>new regime</span></div>
+        <div class="g-row"><span>esperança-civica</span><span>civic hope</span></div>
+        <div class="g-row"><span>incerteza</span><span>uncertainty</span></div>
+        <div class="g-row"><span>rua-do-ouro</span><span>Rua do Ouro</span></div>
+        <div class="g-row"><span>rua-augusta</span><span>Rua Augusta</span></div>
+        <div class="g-row"><span>largo-do-carmo</span><span>Largo do Carmo</span></div>
+        <div class="g-row"><span>quartel-do-carmo</span><span>Carmo barracks</span></div>
+        <div class="g-row"><span>rendição</span><span>surrender</span></div>
+        <div class="g-row"><span>parlamento-aberto</span><span>open parliament</span></div>
+        <div class="g-row"><span>missão</span><span>mission</span></div>
+        <div class="g-row"><span>dever-cívico</span><span>civic duty</span></div>
+        <div class="g-row"><span>pátria-nova</span><span>new homeland</span></div>
+        <div class="g-row"><span>cidadão-livre</span><span>free citizen</span></div>
+        <div class="g-row"><span>voto-universal</span><span>universal suffrage (ideal)</span></div>
+        <div class="g-row"><span>mulher-na-rua</span><span>woman in the street</span></div>
+        <div class="g-row"><span>criança-assusta</span><span>frightened child</span></div>
+        <div class="g-row"><span>janela-aberta</span><span>open window</span></div>
+        <div class="g-row"><span>bandeira-hasteada</span><span>flag raised</span></div>
+        <div class="g-row"><span>toque-de-clarim</span><span>bugle call</span></div>
+        <div class="g-row"><span>silêncio-depois</span><span>silence after</span></div>
+        <div class="g-row"><span>amanhecer-republicano</span><span>republican dawn</span></div>
+        <div class="g-row"><span>lisboa-em-armas</span><span>Lisbon under arms</span></div>
+        <div class="g-row"><span>porto-apoiou</span><span>Porto supported</span></div>
+        <div class="g-row"><span>coimbra-soube</span><span>Coimbra heard</span></div>
+        <div class="g-row"><span>telegrama</span><span>telegram</span></div>
+        <div class="g-row"><span>telefone</span><span>telephone</span></div>
+        <div class="g-row"><span>notícia-rápida</span><span>fast news</span></div>
+        <div class="g-row"><span>praça-cheia</span><span>full square</span></div>
+        <div class="g-row"><span>multidão-calada</span><span>silent crowd</span></div>
+        <div class="g-row"><span>discurso-curto</span><span>short speech</span></div>
+        <div class="g-row"><span>aplauso</span><span>applause</span></div>
+        <div class="g-row"><span>lágrimas-de-alegria</span><span>tears of joy</span></div>
+        <div class="g-row"><span>medo-da-guerra</span><span>fear of war</span></div>
+        <div class="g-row"><span>paz-frágil</span><span>fragile peace</span></div>
+        <div class="g-row"><span>promessa-de-lei</span><span>promise of law</span></div>
+        <div class="g-row"><span>constituição-nova</span><span>new constitution</span></div>
+        <div class="g-row"><span>direitos-civis</span><span>civil rights</span></div>
+        <div class="g-row"><span>liberdade-de-reuniao</span><span>freedom of assembly</span></div>
+        <div class="g-row"><span>liberdade-de-imprensa-nova</span><span>new press freedom</span></div>
+        <div class="g-row"><span>escola-pública</span><span>public school</span></div>
+        <div class="g-row"><span>hospital</span><span>hospital</span></div>
+        <div class="g-row"><span>cruz-vermelha</span><span>Red Cross</span></div>
+        <div class="g-row"><span>enfermeiro</span><span>male nurse</span></div>
+        <div class="g-row"><span>médico</span><span>doctor</span></div>
+        <div class="g-row"><span>ferimentos-leves</span><span>light wounds</span></div>
+        <div class="g-row"><span>abrigo</span><span>shelter</span></div>
+        <div class="g-row"><span>água-para-feridos</span><span>water for wounded</span></div>
+      </div>
+      <h3>Comprehension (answer in PT)</h3>
+      <div class="quiz">
+        <ol>
+          <li>Em que dia se proclama a República nesta história?</li>
+          <li>Quem são Clara e Rui?</li>
+          <li>O que se ouve na varanda?</li>
+          <li>O que acontece ao rei?</li>
+          <li>Como acaba a história?</li>
+        </ol>
+      </div>
+      <h3>Cultural note</h3>
+      <p>On 5 October 1910 the Portuguese Republic was proclaimed in Lisbon after an uprising that ended the monarchy of Manuel II. New national symbols followed; politics remained fragile. The comic stays at street level — a nurse, a friend, a flag, and a city learning a new name.</p>
+      <div class="cta">
+        <strong>Next</strong>
+        Free Ep.01: O Terramoto (1755) · Hub: series page · More paid episodes on Gumroad
+      </div>
+    </article>
+
+  </div>
+</body>
+</html>
