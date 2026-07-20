@@ -32,34 +32,28 @@ export default function Ep0225DeAbrilPage() {
   return (
     <div className="min-h-screen bg-[#ebe4d8] text-[#0e0e0e]">
       <SiteHeader />
-      <main className="mx-auto w-full max-w-4xl px-6 pb-20 pt-12 sm:px-10">
+      <main className="mx-auto w-full max-w-3xl px-4 pb-16 pt-8 sm:px-8">
         <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#8b1f3d]">
           Ep.02 · $5 · Gumroad
         </p>
-        <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">25 de Abril</h1>
-        <p className="mt-2 text-lg text-[#5c574e]">Carnation Revolution · Lisboa, 1974</p>
+        <h1 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">25 de Abril</h1>
+        <p className="mt-2 text-base text-[#5c574e] sm:text-lg">
+          Carnation Revolution · Lisboa, 1974
+        </p>
 
-        <div className="mt-8 overflow-hidden border-2 border-[#0e0e0e]">
+        <figure className="mt-8">
           <Image
-            alt="Cover: 25 de Abril comic"
-            className="mx-auto h-auto max-h-[min(52vh,420px)] w-auto max-w-full object-contain"
+            alt="Cover: 25 de Abril — Gaivota comic"
+            className="mx-auto h-auto w-full max-w-[20rem] sm:max-w-[24rem]"
             height={900}
             priority
+            sizes="(max-width: 640px) 80vw, 24rem"
             src="/comics/gaivota-em-portugal/02-25-de-abril/ep02-cover.webp"
             width={675}
           />
-        </div>
+        </figure>
 
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#3a342c]">{directAnswer}</p>
-
-        <ul className="mt-5 list-disc space-y-1 pl-5 text-[#3a342c]">
-          <li>Printable <strong>PDF</strong> download</li>
-          <li>History brief + noir 5-page comic with ending</li>
-          <li>100 new Portuguese words · English glossary</li>
-          <li>Human-scale story — flowers, not gore</li>
-        </ul>
-
-        <div className="mt-8 flex flex-wrap gap-3">
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <a className={btnPrimary} href={gaivotaSeries.gumroadCheckoutUrl} rel="noreferrer">
             Buy Ep.02 PDF — $5
           </a>
@@ -70,6 +64,16 @@ export default function Ep0225DeAbrilPage() {
             Series hub
           </Link>
         </div>
+
+        <p className="mt-8 max-w-2xl text-base leading-relaxed text-[#3a342c] sm:text-lg">
+          {directAnswer}
+        </p>
+        <ul className="mt-5 list-disc space-y-1 pl-5 text-[#3a342c]">
+          <li>Printable <strong>PDF</strong> download</li>
+          <li>History brief + noir 5-page comic with ending</li>
+          <li>100 new Portuguese words · English glossary</li>
+          <li>Human-scale story — flowers, not gore</li>
+        </ul>
       </main>
       <SiteFooter />
     </div>

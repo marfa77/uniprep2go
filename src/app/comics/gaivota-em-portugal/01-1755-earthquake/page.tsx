@@ -33,29 +33,30 @@ export default function Ep01TerramotoPage() {
   return (
     <div className="min-h-screen bg-[#ebe4d8] text-[#0e0e0e]">
       <SiteHeader />
-      <main className="mx-auto w-full max-w-4xl px-4 pb-16 pt-8 sm:px-10">
+      <main className="mx-auto w-full max-w-3xl px-4 pb-16 pt-8 sm:px-8">
         <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#1f6f8b]">
           FREE · Ep.01 · Gaivota em Portugal
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">O Terramoto (1755)</h1>
-        <p className="mt-3 max-w-2xl text-base leading-relaxed text-[#3a342c] sm:text-lg">
-          {directAnswer}
+        <p className="mt-2 text-base text-[#5c574e] sm:text-lg">
+          Lisbon Earthquake · free noir comic + glossary
         </p>
 
-        <div className="mt-6 overflow-hidden border-2 border-[#0e0e0e]">
+        <figure className="mt-8">
           <Image
-            alt="Cover: O Terramoto"
-            className="mx-auto h-auto max-h-[min(52vh,420px)] w-auto max-w-full object-contain"
+            alt="Cover: O Terramoto — Gaivota over ruined Lisbon, 1755"
+            className="mx-auto h-auto w-full max-w-[20rem] sm:max-w-[24rem]"
             height={900}
             priority
+            sizes="(max-width: 640px) 80vw, 24rem"
             src="/comics/gaivota-em-portugal/01-1755-earthquake/art/ep01-cover.webp"
             width={675}
           />
-        </div>
+        </figure>
 
-        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <a className={btnPrimary} href={readerSrc}>
-            Read free comic (best on phone)
+            Read free comic
           </a>
           <Link className={btnSecondary} href={gaivotaSeries.hubPath}>
             Series hub
@@ -65,8 +66,11 @@ export default function Ep01TerramotoPage() {
           </a>
         </div>
 
-        <p className="mt-4 text-sm text-[#5c574e]">
-          Open the reader full-screen — on phones, dialogue sits under each page so nothing covers faces.
+        <p className="mt-8 max-w-2xl text-base leading-relaxed text-[#3a342c] sm:text-lg">
+          {directAnswer}
+        </p>
+        <p className="mt-3 text-sm text-[#5c574e]">
+          Full-screen reader — on phones, dialogue sits under each page so nothing covers faces.
         </p>
       </main>
       <SiteFooter />
