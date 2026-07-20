@@ -107,7 +107,7 @@ export function MockReportPanel({
 
   return (
     <div className="space-y-8">
-      <section className={`rounded-3xl border p-6 sm:p-8 ${verdictStyles(report.verdict)}`}>
+      <section className={`rounded-2xl border p-4 sm:rounded-3xl sm:p-8 ${verdictStyles(report.verdict)}`}>
         <p className="font-mono text-xs uppercase tracking-[0.28em]">
           {sessionMode === "learn" ? "Learn report" : "Exam report"} · readiness verdict
         </p>

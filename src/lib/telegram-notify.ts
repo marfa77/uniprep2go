@@ -204,3 +204,27 @@ export async function notifyMockInterest(event: FunnelEvent, mock?: MockExamConf
 
   return sendTelegramMessage(chatId, toMockInterestMessage(event, mock));
 }
+
+export function toLearnCheckoutClickMessage(event: FunnelEvent, mock?: MockExamConfig) {
+  return [
+    "UniPrep2Go Learn Pass checkout click",
+    "",
+    `Mock: ${mock?.title ?? "n/a"}`,
+    `Mock slug: ${mock?.slug ?? event.source?.match(/^mock:([^:]+)/)?.[1] ?? "n/a"}`,
+    `Linked deck: ${mock?.linkedDeckSlug ?? event.deckSlug}`,
+    `Source: ${event.source ?? "unknown"}`,
+    `Destination: ${event.destinationUrl ?? "n/a"}`,
+    `Country: ${event.country ?? "n/a"}`,
+    `Referrer: ${event.referrer ?? "direct"}`,
+    `Time: ${event.occurredAt}`,
+  ].join("\n");
+}
+
+export async function notifyLearnCheckoutClick(event: FunnelEvent, mock?: MockExamConfig) {
+  const chatId = await getTelegramNotifyChatId();
+  if (!chatId) {
+    console.warn("[telegram_notify] no chat id configured; send /stats once or set TELEGRAM_CHAT_ID");
+    return false;
+  }
+  return sendTelegramMessage(chatId, toLearnCheckoutClickMessage(event, mock));
+}

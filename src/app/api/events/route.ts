@@ -4,7 +4,11 @@ import { getCatalogDeckBySlug } from "@/lib/decks";
 import { shouldRecordFunnelEvent } from "@/lib/funnel-filter";
 import { recordFunnelEvent } from "@/lib/funnel-store";
 import { getMockExamConfig } from "@/lib/mock-exams/configs";
-import { notifyCheckoutClick, notifyMockStarted } from "@/lib/telegram-notify";
+import {
+  notifyCheckoutClick,
+  notifyLearnCheckoutClick,
+  notifyMockStarted,
+} from "@/lib/telegram-notify";
 
 function firstForwardedIp(value: string | null) {
   return value?.split(",")[0]?.trim() || undefined;
@@ -75,6 +79,23 @@ export async function POST(request: Request) {
         }
       } catch (error) {
         console.error("[telegram_notify] mock started alert failed", error);
+      }
+    }
+
+    if (event.name === "learn_checkout_click") {
+      const mockSlug = event.source?.match(/^mock:([^:]+)/)?.[1];
+      const mock = mockSlug ? getMockExamConfig(mockSlug) : undefined;
+
+      try {
+        const sent = await notifyLearnCheckoutClick(event, mock);
+        if (!sent) {
+          console.warn("[telegram_notify] learn checkout alert not sent", {
+            deckSlug: event.deckSlug,
+            source: event.source,
+          });
+        }
+      } catch (error) {
+        console.error("[telegram_notify] learn checkout alert failed", error);
       }
     }
 

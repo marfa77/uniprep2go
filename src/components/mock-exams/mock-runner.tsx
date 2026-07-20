@@ -167,8 +167,8 @@ export function MockRunner({
 
   if (reviewMode && !isLearn) {
     return (
-      <div ref={sessionAnchorRef} className="mx-auto max-w-4xl px-6 py-8 sm:px-10">
-        <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 sm:p-8">
+      <div ref={sessionAnchorRef} className="px-4 py-6 sm:px-6 sm:py-8">
+        <div className="rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-4 sm:rounded-3xl sm:p-8">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#1f3a5f]">Exam · review</p>
           <h2 className="mt-2 text-2xl font-semibold tracking-tight">Review before submit</h2>
           <p className="mt-3 text-sm leading-7 text-[#4f493e]">
@@ -286,7 +286,7 @@ export function MockRunner({
       : null;
 
   return (
-    <div ref={sessionAnchorRef} className="mx-auto max-w-4xl scroll-mt-4 px-6 pb-4 pt-2 sm:px-10">
+    <div ref={sessionAnchorRef} className="flex min-h-full flex-col scroll-mt-0">
       <MockSessionChrome
         answeredCount={answeredCount}
         durationSeconds={durationSeconds}
@@ -298,8 +298,9 @@ export function MockRunner({
         topicLabel={topicLabel}
       />
 
-      <div className="mt-6 rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 sm:p-8">
-        <div className="text-xl font-semibold leading-8 text-[#18140f]">
+      <div className="flex-1 px-4 py-4 sm:px-6 sm:py-6">
+      <div className="rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-4 sm:rounded-3xl sm:p-8">
+        <div className="text-lg font-semibold leading-7 text-[#18140f] sm:text-xl sm:leading-8">
           <QuestionContent text={currentQuestion.prompt} />
         </div>
         {formulaBelongsOnFront(currentQuestion) ? (
@@ -328,7 +329,7 @@ export function MockRunner({
               <button
                 key={option.id}
                 aria-checked={selected}
-                className={`flex min-h-12 w-full items-start rounded-2xl border px-4 py-4 text-left text-sm leading-7 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] ${
+                className={`flex min-h-12 w-full items-start rounded-2xl border px-3 py-3.5 text-left text-sm leading-6 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] sm:px-4 sm:py-4 sm:leading-7 ${
                   isLearn
                     ? learnOptionClass(tone, selected)
                     : selected
@@ -355,7 +356,7 @@ export function MockRunner({
         {isLearn && currentRevealed ? (
           <div
             aria-live="polite"
-            className={`mt-6 space-y-4 rounded-2xl border p-5 text-sm leading-7 ${
+            className={`mt-5 space-y-3 rounded-2xl border p-4 text-sm leading-6 sm:mt-6 sm:space-y-4 sm:p-5 sm:leading-7 ${
               isCorrect
                 ? "border-[#2f5d3a]/30 bg-[#e7f3ea] text-[#1f3d28]"
                 : "border-[#7a2e2e]/25 bg-[#fff0f0] text-[#5c2222]"
@@ -386,6 +387,7 @@ export function MockRunner({
             ) : null}
           </div>
         ) : null}
+      </div>
       </div>
 
       <MockStickyToolbar

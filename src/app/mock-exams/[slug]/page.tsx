@@ -42,6 +42,7 @@ import { getAllMockExams, getMockExamConfig } from "@/lib/mock-exams/configs";
 import { buildMockExamPageJsonLd } from "@/lib/mock-exams/llm";
 import { getMockOfficialResources } from "@/lib/mock-exams/official-resources";
 import { getQuestionBank, isMockExamRunnable } from "@/lib/mock-exams/question-bank";
+import { isLearnPassEnabled } from "@/lib/mock-exams/learn-pass";
 import { parseMockSessionMode } from "@/lib/mock-exams/session-mode";
 import {
   buildMockSeoDescription,
@@ -216,6 +217,7 @@ export default async function MockExamPage({
             accessState={accessState}
             config={config}
             initialMode={initialMode}
+            learnPassEnabled={isLearnPassEnabled()}
             linkedCheckout={linkedCheckout}
             questions={questions}
             runnable={runnable}

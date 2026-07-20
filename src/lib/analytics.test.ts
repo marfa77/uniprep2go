@@ -25,6 +25,9 @@ describe("funnel analytics contract", () => {
       "deck_waitlist_interest",
       "mock_deck_cta_click",
       "mock_checkout_placeholder_click",
+      "learn_checkout_click",
+      "learn_redeem_success",
+      "learn_credit_consumed",
     ]);
   });
 
