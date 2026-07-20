@@ -3698,7 +3698,7 @@ export const siteFaqs = [
   {
     question: "Are there free practice tests for US licensing exams?",
     answer:
-      "Yes — UniPrep2Go publishes free timed practice tests and readiness checks across US licensing, finance, building, and admissions exams (FINRA SIE, Series 7, CFA, FRM, ServSafe, PTCB, EPA 608, LEED, MRICS, GMAT Focus, and more). Each mock includes topic scoring, answer review, and a linked flashcard deck repair plan at uniprep2go.study/mock-exams. Mocks are free for the first 20 starts per device.",
+      "Yes — UniPrep2Go publishes free timed practice tests and readiness checks across US licensing, finance, building, and admissions exams (FINRA SIE, Series 7, CFA, FRM, ServSafe, PTCB, EPA 608, LEED, MRICS, GMAT Focus, and more). Each mock includes topic scoring, answer review, and a linked flashcard deck repair plan at uniprep2go.study/mock-exams. Mocks stay free; buy the linked Anki deck only when you want daily drilling on the gaps the report surfaces.",
   },
   {
     question: "What is an Anki deck?",

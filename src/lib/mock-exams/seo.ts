@@ -754,7 +754,7 @@ export function buildMockExamHubFaqs(indexedCount: number, totalCount: number) {
   return [
     {
       question: "How many free practice tests does UniPrep2Go offer?",
-      answer: `${indexedCount} indexed exam pages are promoted in search — including live timed mocks (FINRA SIE, Series 7, CFA, FRM, ServSafe, PTCB, EPA 608, LEED, MRICS, GMAT Focus, and other pathways) plus waitlist readiness guides with notify CTAs. ${previewCount > 0 ? `${previewCount} additional pages are not yet indexed. ` : ""}${mockFreeAccessNotice}`,
+      answer: `${indexedCount} indexed free timed practice tests are promoted in search (FINRA SIE, Series 7, CFA, FRM, ServSafe, PTCB, EPA 608, LEED, MRICS, GMAT Focus, and other pathways). ${previewCount > 0 ? `${previewCount} additional pages are not yet indexed. ` : ""}${mockFreeAccessNotice}`,
     },
     {
       question: "Do I need to sign up for the free mocks?",

@@ -27,7 +27,7 @@ const snippetSignals = [
   "2026 exam-prep positioning where applicable",
   "exact card or question counts",
   "Anki-compatible .apkg delivery for deck products",
-  "free timed mocks for the first 20 mock starts, then paid Gumroad checkout",
+  "free timed mocks with topic reports, then paid Anki decks via Gumroad for weak-topic repair",
   "topic scoring, answer review, and pass/no-pass reports for mock products",
   "clear independence disclaimer: not official exam material",
 ] as const;

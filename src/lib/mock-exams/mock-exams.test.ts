@@ -461,11 +461,13 @@ describe("scoring", () => {
 });
 
 describe("access adapter", () => {
-  it("unlocks full report during free demand test", () => {
+  it("unlocks full report on free timed mocks without paid-mock interest capture", () => {
     const access = getMockAccessState("sie-full-mock");
     expect(access?.accessMode).toBe("free_demand_test");
     expect(isFullReportUnlocked(access)).toBe(true);
-    expect(access?.interestCaptureEnabled).toBe(true);
+    expect(access?.interestCaptureEnabled).toBe(false);
+    expect(access?.ctaDescription.toLowerCase()).not.toContain("validate demand");
+    expect(access?.ctaDescription.toLowerCase()).not.toContain("first 20");
   });
 });
 
@@ -478,6 +480,9 @@ describe("llm visibility", () => {
     expect(["finance_mock_exam", "practice_test"]).toContain(facts.type);
     expect(facts.linked_deck_slug).toBe("sie-exam-anki-deck");
     expect(String(facts.price).toLowerCase()).toContain("free");
+    expect(String(facts.price).toLowerCase()).not.toContain("first 20");
+    expect(String(facts.pricing_note).toLowerCase()).toContain("anki");
+    expect(String(facts.pricing_note).toLowerCase()).not.toContain("validate demand");
     expect(facts.report_features).toContain("weighted topic diagnosis");
     expect(String(facts.question_source).length).toBeGreaterThan(20);
 

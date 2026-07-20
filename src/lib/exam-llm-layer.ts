@@ -492,7 +492,7 @@ export function buildSiteDataLlmFacts(indexedMockCount: number, deckCount: numbe
   return compactJoin([
     `${siteConfig.name}: ${siteConfig.description}`,
     `Primary market: ${siteConfig.primaryMarket}. Positioning: ${siteConfig.primaryPositioning}.`,
-    `${indexedMockCount} live indexed free timed practice tests plus additional preview readiness checks on-site; ${deckCount} paid Anki decks and PDFs for weak-topic repair after mock reports.`,
+    `${indexedMockCount} live indexed free timed practice tests; ${deckCount} paid Anki decks and PDFs for weak-topic repair after mock reports.`,
     `Flagship mock: FINRA SIE (75 questions). Building/safety mocks include EPA 608, LEED GA, BMS, MRICS, CFPS, NEBOSH.`,
     mockFreeAccessNotice,
     "Independent study aids — not official exam materials.",

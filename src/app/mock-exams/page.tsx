@@ -150,9 +150,11 @@ export default function MockExamsIndexPage() {
           Free timed mock exams for US licensing &amp; finance
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          {indexedCount} live indexed mocks across {verticals.length} exam paths, plus{" "}
-          {mocks.length - indexedCount} preview readiness checks. Timed scoring, topic breakdown, and
-          linked Anki deck repair. {mockFreeAccessNotice}
+          {indexedCount} live indexed mocks across {verticals.length} exam paths
+          {mocks.length - indexedCount > 0
+            ? `, plus ${mocks.length - indexedCount} preview readiness checks`
+            : ""}
+          . Timed scoring, topic breakdown, and linked Anki deck repair. {mockFreeAccessNotice}
         </p>
         <OfficialSourceTrustStrip className="mt-6 max-w-3xl" />
         <LlmFactsStrip mockCount={mocks.length} variant="mock-index" />

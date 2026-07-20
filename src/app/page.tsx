@@ -302,8 +302,12 @@ export default async function HomePage() {
                 Diagnose exam gaps with free timed mocks — then drill with Anki
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-8 text-[#4f493e]">
-                {indexedMockCount} live indexed practice tests plus {mockExams.length - indexedMockCount} preview readiness checks and{" "}
-                {availableDecks.length} Anki decks/PDFs. Start with topic scoring and a pass/no-pass report — no signup.
+                {indexedMockCount} live indexed practice tests
+                {mockExams.length - indexedMockCount > 0
+                  ? ` plus ${mockExams.length - indexedMockCount} preview readiness checks`
+                  : ""}{" "}
+                and {availableDecks.length} Anki decks/PDFs. Start with topic scoring and a
+                pass/no-pass report — no signup — then buy the linked deck to drill weak topics.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link

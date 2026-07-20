@@ -1,8 +1,5 @@
 import { getMockExamConfig } from "./configs";
-import {
-  mockPaidTransitionCtaDescription,
-  mockPaidTransitionCtaLabel,
-} from "./pricing";
+import { mockFreeAccessNotice } from "./pricing";
 import type { MockAccessState } from "./types";
 
 export function getMockAccessState(mockSlug: string): MockAccessState | null {
@@ -18,9 +15,10 @@ export function getMockAccessState(mockSlug: string): MockAccessState | null {
         mockSlug,
         accessMode: config.accessMode,
         fullReportUnlocked: true,
-        interestCaptureEnabled: true,
-        ctaLabel: mockPaidTransitionCtaLabel,
-        ctaDescription: mockPaidTransitionCtaDescription,
+        // No “notify me when paid mocks launch” — funnel is free mock → Anki deck.
+        interestCaptureEnabled: false,
+        ctaLabel: "Open linked Anki deck",
+        ctaDescription: mockFreeAccessNotice,
       };
     case "gumroad_license":
       return {
@@ -60,7 +58,7 @@ export function getMockCta(accessState: MockAccessState | null) {
   };
 }
 
-/** Future Gumroad adapter seam — not implemented in demand-test launch */
+/** Future Gumroad adapter seam — not used for free lead-gen mocks */
 export type GumroadVerifyInput = {
   productId: string;
   licenseKey: string;
@@ -74,5 +72,5 @@ export type GumroadVerifyResult = {
 
 export async function verifyGumroadLicense(input: GumroadVerifyInput): Promise<GumroadVerifyResult> {
   void input;
-  throw new Error("Gumroad license verification is not enabled during the demand-test launch");
+  throw new Error("Gumroad license verification is not enabled for free timed mocks");
 }

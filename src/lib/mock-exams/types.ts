@@ -82,7 +82,7 @@ export type MockExamConfig = {
   verticalId: MockVerticalId;
   familyId: string;
   searchAliases?: string[];
-  /** Future Gumroad product id — not used in demand-test mode */
+  /** Optional future Gumroad product id if a mock itself is sold separately */
   gumroadProductId?: string;
   /** Override for markdown/LLM when questions are not deck-sourced */
   questionSourceNote?: string;
