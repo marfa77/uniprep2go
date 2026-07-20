@@ -49,7 +49,8 @@ const sampleStats: FunnelStats = {
     hero_cta: 1,
     deck_page: 2,
     "mock:cfa-level-1-readiness-check:landing": 1,
-    "mock:cfa-level-1-readiness-check:start": 1,
+    "mock:cfa-level-1-readiness-check:start:exam": 2,
+    "mock:cfa-level-1-readiness-check:start:learn": 1,
     "mock:cfa-level-1-readiness-check:unlock_interest": 1,
   },
   byCountry: { US: 5, PT: 2 },
@@ -149,6 +150,8 @@ describe("telegram stats", () => {
     expect(message).toContain("UniPrep2Go · growth pulse");
     expect(message).toContain("Unique users: 23 period · 128 lifetime");
     expect(message).toContain("new 18 · returning 5 (21.7% return rate)");
+    expect(message).toContain("Mock starts (Exam vs Learn):");
+    expect(message).toContain("period exam 2 · learn 1 · total 3");
     expect(message).toContain("Google 12 · ChatGPT 4 · Direct 5 · Other 2");
     expect(message).toContain("Countries (unique, period):");
     expect(message).toContain("US 12 · PT 4 · DE 2");

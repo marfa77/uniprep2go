@@ -69,7 +69,7 @@ describe("telegram mock alerts", () => {
       createFunnelEvent({
         name: "mock_started",
         deckSlug: "series-7-anki-deck",
-        source: "mock:series-7-readiness-check:start",
+        source: "mock:series-7-readiness-check:start:exam",
         path: "/mock-exams/series-7-readiness-check",
         referrer: "https://google.com/search?q=series+7+mock",
         browserLanguage: "en-US",
@@ -83,11 +83,27 @@ describe("telegram mock alerts", () => {
       mock,
     );
 
-    expect(message).toContain("UniPrep2Go mock started");
+    expect(message).toContain("UniPrep2Go mock started · Exam");
+    expect(message).toContain("Mode: Exam");
     expect(message).toContain("Mock: Series 7 Readiness Check");
     expect(message).toContain("Linked deck: series-7-anki-deck");
     expect(message).toContain("Referrer: https://google.com/search?q=series+7+mock");
     expect(message).toContain("IP: 203.0.113.42");
+  });
+
+  it("labels Learn mode starts distinctly", () => {
+    const mock = getMockExamConfig("epa-608-readiness-check");
+    const message = toMockStartedMessage(
+      createFunnelEvent({
+        name: "mock_started",
+        deckSlug: "hvac-epa-608-anki-deck",
+        source: "mock:epa-608-readiness-check:start:learn",
+      }),
+      mock,
+    );
+
+    expect(message).toContain("UniPrep2Go mock started · Learn");
+    expect(message).toContain("Mode: Learn");
   });
 });
 

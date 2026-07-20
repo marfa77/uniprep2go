@@ -1,5 +1,6 @@
 import type { CheckoutPriceSyncResult } from "./checkout-pricing";
 import type { FunnelStats } from "./funnel-store";
+import { countMockStartsByMode } from "./mock-exams/session-mode";
 import { trafficChannelLabels, type TrafficChannel } from "./traffic-channel";
 import type { ProductUniqueMetrics } from "./visitor-metrics";
 
@@ -223,12 +224,19 @@ export function toTelegramStatsMessages(stats: FunnelStats) {
     ([, left], [, right]) => right.visitors - left.visitors,
   );
 
+  const mockStarts = countMockStartsByMode(stats.bySource);
+  const mockStartsLifetime = countMockStartsByMode(stats.lifetime.bySource);
+
   const lines = [
     "UniPrep2Go · growth pulse",
     "",
     `Trend: ${growth.label}`,
     `Unique users: ${visitors.periodUnique} period · ${visitors.lifetimeUnique} lifetime`,
     formatReturningUsers(visitors.periodNew, visitors.periodReturning, visitors.periodUnique),
+    "",
+    "Mock starts (Exam vs Learn):",
+    `period exam ${mockStarts.exam} · learn ${mockStarts.learn} · total ${mockStarts.total}`,
+    `lifetime exam ${mockStartsLifetime.exam} · learn ${mockStartsLifetime.learn} · total ${mockStartsLifetime.total}`,
     "",
     "Sources (unique, period):",
     formatChannelLine(visitors.periodByChannel),

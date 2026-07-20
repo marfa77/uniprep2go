@@ -1,6 +1,10 @@
 import type { FunnelEvent } from "./analytics";
 import type { AvailableDeck, CatalogAvailableDeck } from "./decks";
 import { formatDeckPriceLabel } from "./checkout-pricing";
+import {
+  mockSessionModeLabel,
+  parseMockSessionModeFromSource,
+} from "./mock-exams/session-mode";
 import type { MockExamConfig } from "./mock-exams/types";
 import { getRedisClient } from "./redis";
 import { sendTelegramMessage } from "./telegram-client";
@@ -93,12 +97,15 @@ export function toMockStartedMessage(event: FunnelEvent, mock?: MockExamConfig) 
   const mockTitle = mock?.title ?? event.source?.replace(/^mock:/, "") ?? "unknown mock";
   const mockSlug = mock?.slug ?? event.source?.match(/^mock:([^:]+)/)?.[1] ?? "unknown";
   const linkedDeck = mock?.linkedDeckSlug ?? event.deckSlug;
+  const mode = parseMockSessionModeFromSource(event.source);
+  const modeLabel = mode ? mockSessionModeLabel(mode) : "unknown";
 
   return [
-    "UniPrep2Go mock started",
+    `UniPrep2Go mock started · ${modeLabel}`,
     "",
     `Mock: ${mockTitle}`,
     `Mock slug: ${mockSlug}`,
+    `Mode: ${modeLabel}`,
     `Linked deck: ${linkedDeck}`,
     `Source: ${event.source ?? "unknown"}`,
     `Path: ${event.path ?? "n/a"}`,

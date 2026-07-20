@@ -1,8 +1,10 @@
 import { describe, expect, it } from "vitest";
 import {
   canChangeLearnAnswer,
+  countMockStartsByMode,
   learnOptionFeedback,
   parseMockSessionMode,
+  parseMockSessionModeFromSource,
 } from "./session-mode";
 
 describe("mock session mode", () => {
@@ -12,6 +14,28 @@ describe("mock session mode", () => {
     expect(parseMockSessionMode("exam")).toBe("exam");
     expect(parseMockSessionMode("LEARN")).toBe("exam");
     expect(parseMockSessionMode("learn")).toBe("learn");
+  });
+
+  it("parses Exam vs Learn from funnel source strings", () => {
+    expect(parseMockSessionModeFromSource("mock:epa-608-readiness-check:start:exam")).toBe(
+      "exam",
+    );
+    expect(parseMockSessionModeFromSource("mock:epa-608-readiness-check:start:learn")).toBe(
+      "learn",
+    );
+    expect(
+      parseMockSessionModeFromSource("mock:epa-608-readiness-check:start:learn:deeplink"),
+    ).toBe("learn");
+    expect(parseMockSessionModeFromSource("mock:epa-608-readiness-check:start")).toBe("exam");
+    expect(parseMockSessionModeFromSource("mock:epa-608-readiness-check:landing")).toBeUndefined();
+    expect(
+      countMockStartsByMode({
+        "mock:a:start:exam": 3,
+        "mock:b:start:learn": 2,
+        "mock:c:start": 1,
+        "mock:d:landing": 9,
+      }),
+    ).toEqual({ exam: 4, learn: 2, total: 6 });
   });
 
   it("locks learn answers after reveal", () => {
