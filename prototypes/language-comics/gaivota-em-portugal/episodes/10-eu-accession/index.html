@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaivota em Portugal · Ep.10 — Adesão à Europa (1986)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #0e0e0e;
+      --paper: #f4f1ea;
+      --muted: #5c574e;
+      --line: #c9c2b4;
+      --paid: #8b1f3d;
+      --accent: #b5451b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      color: var(--ink);
+      background: #ddd7cb;
+      line-height: 1.45;
+    }
+    .bar {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; justify-content: space-between;
+      padding: .7rem 1.1rem;
+      background: #111; color: #f4f1ea;
+    }
+    .bar .brand { display: flex; align-items: center; gap: .65rem; font-family: Fraunces, Georgia, serif; font-weight: 700; }
+    .bar img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; background: #fff; }
+    .bar .paid { background: var(--paid); color: #fff; font-size: .75rem; font-weight: 700; padding: .25rem .55rem; border-radius: 999px; letter-spacing: .04em; }
+    .bar a { color: #fff; text-decoration: none; font-weight: 600; font-size: .9rem; border: 1px solid rgba(255,255,255,.35); padding: .4rem .8rem; border-radius: 999px; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 1.25rem 1rem 4rem; }
+    .page {
+      width: min(100%, 794px);
+      margin: 0 auto 1.75rem;
+      background: var(--paper);
+      border: 1px solid #bdb5a6;
+      box-shadow: 0 16px 36px rgba(0,0,0,.12);
+      padding: 1.25rem 1.35rem 1.4rem;
+      position: relative;
+    }
+    .page-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: .85rem; }
+    .page-head .left { display: flex; align-items: center; gap: .5rem; font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: .95rem; }
+    .page-head .left img { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; }
+    .page-head .meta { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+    .hero {
+      position: relative; border: 3px solid var(--ink); overflow: hidden; background: #111;
+      line-height: 0;
+    }
+    .hero > img:not(.stamp) { width: 100%; height: auto; display: block; object-fit: contain; }
+    .brief-img img { width: 100%; height: auto; display: block; object-fit: contain; }
+    .panel img { width: 100%; height: auto; display: block; object-fit: contain; }
+    .hero .overlay {
+      position: absolute; left: 0; right: 0; bottom: 0;
+      padding: 1.5rem 1.2rem 1.2rem;
+      background: linear-gradient(transparent, rgba(0,0,0,.92) 40%);
+      color: #fff;
+    }
+    .hero h1 { margin: 0; font-family: Fraunces, Georgia, serif; font-size: clamp(1.7rem, 4.5vw, 2.8rem); line-height: 1.05; }
+    .hero p { margin: .4rem 0 0; max-width: 44ch; opacity: .95; }
+    .stamp {
+      position: absolute; top: 1rem; right: 1rem; width: 72px; height: 72px;
+      border-radius: 50%; border: 2px solid #fff; object-fit: cover; background: #fff;
+    }
+    .brief-grid { display: grid; gap: 1rem; }
+    .brief-img { border: 2px solid var(--ink); overflow: hidden; background: #ccc; line-height: 0; }
+    .caption { font-size: .82rem; color: var(--muted); margin: .35rem 0 0; font-style: italic; }
+    .brief h2 { margin: 0 0 .5rem; font-family: Fraunces, Georgia, serif; font-size: 1.55rem; }
+    .brief .hook { font-size: 1.08rem; margin: 0 0 .75rem; }
+    .brief ul { margin: 0 0 1rem; padding-left: 1.15rem; }
+    .brief li { margin: .3rem 0; }
+    .disclaimer {
+      margin-top: 1rem; padding: .75rem .9rem;
+      border-left: 4px solid var(--ink); background: #ebe6dc; font-size: .92rem;
+    }
+    .panel {
+      position: relative; border: 3px solid var(--ink); overflow: hidden; background: #111;
+      line-height: 0;
+    }
+    .bubble {
+      position: absolute; max-width: min(78%, 290px);
+      background: #fffdf8; border: 2.5px solid var(--ink); border-radius: 1.05rem;
+      padding: .55rem .7rem; font-size: .95rem; font-weight: 500; line-height: 1.3;
+      box-shadow: 3px 3px 0 rgba(0,0,0,.12); z-index: 2;
+    }
+    .bubble .who {
+      display: block; font-size: .66rem; font-weight: 700; letter-spacing: .05em;
+      text-transform: uppercase; margin-bottom: .12rem; color: #333;
+    }
+    .bubble.gaivota { background: #111; color: #f4f1ea; border-color: #111; }
+    .bubble.gaivota .who { color: #cfcfcf; }
+    .bubble.ana .who { color: #8b1f3d; }
+    .bubble.pedro .who { color: #1f6f8b; }
+    .tl { left: 4%; top: 5%; }
+    .tr { right: 4%; top: 5%; }
+    .bl { left: 4%; bottom: 7%; }
+    .br { right: 4%; bottom: 7%; }
+    .p1-gaivota { left: 3%; top: 2%; max-width: min(42%, 250px); }
+    .p1-a { left: 2%; bottom: 5%; max-width: min(34%, 200px); font-size: .88rem; }
+    .p1-b { right: 3%; top: 16%; max-width: min(34%, 210px); font-size: .88rem; }
+    .foot {
+      margin-top: .7rem; display: flex; justify-content: space-between; gap: 1rem;
+      font-size: .8rem; color: var(--muted); line-height: 1.35;
+    }
+    .study h2 { margin: 0 0 .6rem; font-family: Fraunces, Georgia, serif; font-size: 1.6rem; }
+    .study h3 { margin: 1.2rem 0 .45rem; color: var(--accent); font-size: 1.05rem; }
+    .tips { background: #e7eef1; border: 1px solid #b9c9d1; padding: .75rem .9rem; font-size: .92rem; margin-bottom: .5rem; }
+    .glossary {
+      display: grid; grid-template-columns: 1fr 1fr; gap: .25rem .9rem; font-size: .84rem;
+    }
+    .g-row { display: grid; grid-template-columns: 1.1fr 1fr; gap: .4rem; border-bottom: 1px solid var(--line); padding: .28rem 0; }
+    .g-row span:first-child { font-weight: 600; }
+    .quiz ol { margin: 0; padding-left: 1.2rem; }
+    .quiz li { margin: .4rem 0; }
+    .cta {
+      margin-top: 1.4rem; padding: 1rem 1.1rem; background: #111; color: #f4f1ea;
+    }
+    .cta strong { font-family: Fraunces, Georgia, serif; font-size: 1.15rem; display: block; margin-bottom: .35rem; }
+    .cta a { color: #9fd0e0; }
+    @media (max-width: 720px) {
+      .glossary { grid-template-columns: 1fr; }
+      .bubble { font-size: .88rem; max-width: 88%; }
+    }
+    @media print {
+      @page { size: A4; margin: 8mm; }
+      body { background: white; margin: 0; }
+      .bar { display: none !important; }
+      .wrap { max-width: none; margin: 0; padding: 0; }
+      .page {
+        box-shadow: none; border: none; margin: 0; padding: 0 0 4mm;
+        width: auto; max-width: none; min-height: 0 !important; height: auto;
+        break-after: page; page-break-after: always;
+      }
+      .page:last-child { break-after: auto; page-break-after: auto; }
+      .page-head { margin-bottom: .45rem; }
+      .hero, .panel, .brief-img { min-height: 0 !important; height: auto; }
+      .hero > img:not(.stamp), .panel img, .brief-img img {
+        max-height: 195mm; width: 100%; height: auto !important; object-fit: contain;
+      }
+      .stamp { width: 52px; height: 52px; top: .6rem; right: .6rem; }
+      .bubble { box-shadow: none; }
+      .foot { margin-top: .4rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <div class="brand">
+      <img src="art/gaivota-canon-mark.webp" alt="Gaivota" />
+      <span>Gaivota em Portugal</span>
+      <span class="paid">Ep.10</span>
+    </div>
+    <a href="#study">Study pack</a>
+  </div>
+
+  <div class="wrap">
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Gaivota em Portugal</div>
+        <div class="meta">Episode 10 · Paid</div>
+      </div>
+      <div class="hero">
+        <img src="art/ep10-cover.webp" alt="Cover: EU Accession 1986" />
+        <img class="stamp" src="art/gaivota-canon-stamp.webp" alt="Gaivota mascot" />
+        <div class="overlay">
+          <h1>Adesão à Europa</h1>
+          <p>1986 — Portugal abre a janela para a Europa, numa história completa em cinco páginas.</p>
+        </div>
+      </div>
+      <div class="foot"><span>Noir history comic · PT-PT + EN glossary</span><span>Ep.10</span></div>
+    </article>
+
+    <article class="page brief">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> History brief</div>
+        <div class="meta">Sheet 1 · Facts first</div>
+      </div>
+      <div class="brief-grid">
+        <div>
+          <div class="brief-img"><img src="art/ep10-brief-textbook.webp" alt="Portugal joins the EEC" /></div>
+          <p class="caption">1 January 1986 — history-textbook plate (engraving / archival style).</p>
+        </div>
+        <div>
+          <h2>Portugal joins the EEC</h2>
+          <p class="hook">On 1 January 1986 Portugal became a member of the European Communities — a modern hinge after dictatorship and democracy’s return.</p>
+          <ul>
+            <li><strong>When:</strong> 1 January 1986</li>
+            <li><strong>Where:</strong> Portugal (and Europe)</li>
+            <li><strong>Who:</strong> Portuguese citizens after the Carnation Revolution path</li>
+            <li><strong>How:</strong> accession to the EEC / European Communities</li>
+            <li><strong>After:</strong> funds, mobility, and a new European chapter</li>
+          </ul>
+          <p>A father and daughter watch the country join a wider neighbourhood — flags, news, and the quiet pride of an open window.</p>
+          <div class="disclaimer"><strong>The comic that follows is an artistic interpretation.</strong> Human-scale family story; hopeful modern tone.</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Adesão à Europa · 1/5</div>
+        <div class="meta">Setup</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep10-comic-p1.webp" alt="New Year morning 1986" />
+        <div class="bubble gaivota p1-gaivota"><span class="who">Gaivota</span>Um ano novo… um continente novo.</div>
+        <div class="bubble ana p1-a"><span class="who">Ana</span>Pai, hoje entramos na Europa.</div>
+        <div class="bubble pedro p1-b"><span class="who">Pedro</span>Entramos. Depois de muito debate.</div>
+      </div>
+      <div class="foot"><span>Characters: Ana · Pedro · Gaivota</span><span>1/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Adesão à Europa · 2/5</div>
+        <div class="meta">Rising action</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep10-comic-p2.webp" alt="Streets with blue flags" />
+        <div class="bubble ana tl"><span class="who">Ana</span>Lembras-te do referendo?</div>
+        <div class="bubble pedro tr"><span class="who">Pedro</span>Lembro. Votei sim… com o coração apertado e aberto.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>Lisboa respira futuro.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>votei sim</em></span><span>2/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Adesão à Europa · 3/5</div>
+        <div class="meta">Turning point</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep10-comic-p3.webp" alt="Accession moment" />
+        <div class="bubble  tl"><span class="who">TV</span>Portugal é membro da Comunidade Europeia!</div>
+        <div class="bubble ana tr"><span class="who">Ana</span>É real…</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>Doze estrelas… uma nova bússola.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>é real</em></span><span>3/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Adesão à Europa · 4/5</div>
+        <div class="meta">Consequence</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep10-comic-p4.webp" alt="Café talk" />
+        <div class="bubble pedro tl"><span class="who">Pedro</span>Estudar lá fora?</div>
+        <div class="bubble ana tr"><span class="who">Ana</span>Talvez. Mas levo Portugal comigo.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>As fronteiras mudaram de nome.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>levo Portugal comigo</em></span><span>4/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Adesão à Europa · 5/5</div>
+        <div class="meta">Resolution</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep10-comic-p5.webp" alt="Tagus evening" />
+        <div class="bubble ana tl"><span class="who">Ana</span>Que país somos agora?</div>
+        <div class="bubble pedro tr"><span class="who">Pedro</span>Os mesmos… com mais vizinhos.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>Guardo este Janeiro. Portugal abriu a janela.</div>
+      </div>
+      <div class="foot"><span>End of story · no “to be continued”</span><span>5/5</span></div>
+    </article>
+
+    <article class="page study" id="study">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Study pack</div>
+        <div class="meta">100 words · PT → EN</div>
+      </div>
+      <h2>Study pack — Adesão à Europa</h2>
+      <div class="tips">
+        Read the comic once for story, once for words. Say each line aloud. Prefer Portuguese answers in the quiz.
+      </div>
+      <h3>Glossary (100)</h3>
+      <div class="glossary">
+        <div class="g-row"><span>1986</span><span>1986</span></div>
+        <div class="g-row"><span>cee</span><span>EEC</span></div>
+        <div class="g-row"><span>comunidade-europeia</span><span>European Community</span></div>
+        <div class="g-row"><span>adesão</span><span>accession</span></div>
+        <div class="g-row"><span>primeiro-de-janeiro</span><span>1 January</span></div>
+        <div class="g-row"><span>referendo</span><span>referendum</span></div>
+        <div class="g-row"><span>voto-sim</span><span>yes vote</span></div>
+        <div class="g-row"><span>bandeira-europeia</span><span>European flag</span></div>
+        <div class="g-row"><span>doze-estrelas</span><span>twelve stars</span></div>
+        <div class="g-row"><span>azul-europeu</span><span>European blue</span></div>
+        <div class="g-row"><span>hino-europeu</span><span>European anthem</span></div>
+        <div class="g-row"><span>europa</span><span>Europe</span></div>
+        <div class="g-row"><span>integração</span><span>integration</span></div>
+        <div class="g-row"><span>fronteira-aberta</span><span>open border (concept)</span></div>
+        <div class="g-row"><span>passaporte-europeu</span><span>European passport (future)</span></div>
+        <div class="g-row"><span>erasmus</span><span>Erasmus</span></div>
+        <div class="g-row"><span>universidade</span><span>university</span></div>
+        <div class="g-row"><span>brochura</span><span>brochure</span></div>
+        <div class="g-row"><span>estudar-fora</span><span>study abroad</span></div>
+        <div class="g-row"><span>ana</span><span>Ana</span></div>
+        <div class="g-row"><span>pedro</span><span>Pedro</span></div>
+        <div class="g-row"><span>pai-de-fábrica</span><span>factory-worker father</span></div>
+        <div class="g-row"><span>operário</span><span>worker</span></div>
+        <div class="g-row"><span>fábrica-moderna</span><span>modern factory</span></div>
+        <div class="g-row"><span>ano-novo</span><span>New Year</span></div>
+        <div class="g-row"><span>celebração-cívica</span><span>civic celebration</span></div>
+        <div class="g-row"><span>manifestação-pacífica</span><span>peaceful gathering</span></div>
+        <div class="g-row"><span>bandeira-no-peito</span><span>flag on chest</span></div>
+        <div class="g-row"><span>jornal-de-adesão</span><span>accession newspaper</span></div>
+        <div class="g-row"><span>manchete</span><span>headline</span></div>
+        <div class="g-row"><span>televisão</span><span>television</span></div>
+        <div class="g-row"><span>ecrã-público</span><span>public screen</span></div>
+        <div class="g-row"><span>noticiário</span><span>news broadcast</span></div>
+        <div class="g-row"><span>apresentador</span><span>presenter</span></div>
+        <div class="g-row"><span>multidão-esperançosa</span><span>hopeful crowd</span></div>
+        <div class="g-row"><span>futuro-europeu</span><span>European future</span></div>
+        <div class="g-row"><span>identidade-portuguesa</span><span>Portuguese identity</span></div>
+        <div class="g-row"><span>identidade-europeia</span><span>European identity</span></div>
+        <div class="g-row"><span>vizinho-europeu</span><span>European neighbour</span></div>
+        <div class="g-row"><span>mercado-comum</span><span>common market</span></div>
+        <div class="g-row"><span>subsídio</span><span>subsidy</span></div>
+        <div class="g-row"><span>fundo-estrutural</span><span>structural fund</span></div>
+        <div class="g-row"><span>modernização</span><span>modernisation</span></div>
+        <div class="g-row"><span>democracia-jovem</span><span>young democracy</span></div>
+        <div class="g-row"><span>pós-25-abril</span><span>post-25 April</span></div>
+        <div class="g-row"><span>crescimento-económico</span><span>economic growth</span></div>
+        <div class="g-row"><span>investimento</span><span>investment</span></div>
+        <div class="g-row"><span>estrada-nova</span><span>new road</span></div>
+        <div class="g-row"><span>ponte-nova</span><span>new bridge</span></div>
+        <div class="g-row"><span>aeroporto</span><span>airport</span></div>
+        <div class="g-row"><span>viagem-facilitada</span><span>easier travel</span></div>
+        <div class="g-row"><span>moeda-futura</span><span>future currency</span></div>
+        <div class="g-row"><span>escudo-para-euro</span><span>escudo to euro (path)</span></div>
+        <div class="g-row"><span>café-da-tarde</span><span>afternoon café</span></div>
+        <div class="g-row"><span>orgulho-familiar</span><span>family pride</span></div>
+        <div class="g-row"><span>coracao-apertado</span><span>tight heart</span></div>
+        <div class="g-row"><span>coracao-aberto</span><span>open heart</span></div>
+        <div class="g-row"><span>debate-público</span><span>public debate</span></div>
+        <div class="g-row"><span>opinião-dividida</span><span>divided opinion</span></div>
+        <div class="g-row"><span>maioria-sim</span><span>yes majority</span></div>
+        <div class="g-row"><span>voto-consciente</span><span>informed vote</span></div>
+        <div class="g-row"><span>cidadão-europeu</span><span>European citizen</span></div>
+        <div class="g-row"><span>passo-para-frente</span><span>step forward</span></div>
+        <div class="g-row"><span>janela-aberta-europa</span><span>window open to Europe</span></div>
+        <div class="g-row"><span>tagus-à-noite</span><span>Tagus at night</span></div>
+        <div class="g-row"><span>orla-marítima</span><span>waterfront</span></div>
+        <div class="g-row"><span>bandeira-dupla</span><span>double flag</span></div>
+        <div class="g-row"><span>portugal-e-europa</span><span>Portugal and Europe</span></div>
+        <div class="g-row"><span>membro-fundador</span><span>founding member (wave)</span></div>
+        <div class="g-row"><span>entrada-oficial</span><span>official entry</span></div>
+        <div class="g-row"><span>discurso-de-adesão</span><span>accession speech</span></div>
+        <div class="g-row"><span>primeiro-dia</span><span>first day</span></div>
+        <div class="g-row"><span>manhã-de-janeiro</span><span>January morning</span></div>
+        <div class="g-row"><span>lisboa-festiva</span><span>festive Lisbon</span></div>
+        <div class="g-row"><span>rua-decorada</span><span>decorated street</span></div>
+        <div class="g-row"><span>balão</span><span>balloon</span></div>
+        <div class="g-row"><span>confete</span><span>confetti</span></div>
+        <div class="g-row"><span>sorriso-colectivo</span><span>collective smile</span></div>
+        <div class="g-row"><span>esperança-moderna</span><span>modern hope</span></div>
+        <div class="g-row"><span>geração-europeia</span><span>European generation</span></div>
+        <div class="g-row"><span>estudante-universitária</span><span>university student</span></div>
+        <div class="g-row"><span>pai-orgulhoso</span><span>proud father</span></div>
+        <div class="g-row"><span>levar-portugal</span><span>carry Portugal (abroad)</span></div>
+        <div class="g-row"><span>mais-vizinhos</span><span>more neighbours</span></div>
+        <div class="g-row"><span>continente-novo</span><span>new continent (for us)</span></div>
+        <div class="g-row"><span>bússola-europeia</span><span>European compass</span></div>
+        <div class="g-row"><span>1986-lisboa</span><span>1986 Lisbon</span></div>
+        <div class="g-row"><span>adesão-completa</span><span>full accession</span></div>
+        <div class="g-row"><span>referendo-1986</span><span>1986 referendum</span></div>
+        <div class="g-row"><span>sim-para-europa</span><span>yes to Europe</span></div>
+        <div class="g-row"><span>ana-e-pedro</span><span>Ana and Pedro</span></div>
+        <div class="g-row"><span>gaivota-no-varandim</span><span>Gaivota on balcony</span></div>
+        <div class="g-row"><span>fim-de-fronteiras</span><span>end of old borders (concept)</span></div>
+        <div class="g-row"><span>capítulo-novo</span><span>new chapter</span></div>
+        <div class="g-row"><span>portugal-moderno</span><span>modern Portugal</span></div>
+        <div class="g-row"><span>europa-aberta</span><span>open Europe</span></div>
+        <div class="g-row"><span>janela-para-o-mundo</span><span>window to the world</span></div>
+        <div class="g-row"><span>tratado-de-adesão</span><span>accession treaty</span></div>
+        <div class="g-row"><span>membro-da-cee</span><span>EEC member</span></div>
+        <div class="g-row"><span>festa-de-rua</span><span>street party</span></div>
+      </div>
+      <h3>Comprehension (answer in PT)</h3>
+      <div class="quiz">
+        <ol>
+          <li>Em que ano acontece a adesão?</li>
+          <li>Quem são Ana e Pedro?</li>
+          <li>O que anuncia a televisão?</li>
+          <li>O que Ana quer talvez fazer?</li>
+          <li>Como acaba a história?</li>
+        </ol>
+      </div>
+      <h3>Cultural note</h3>
+      <p>On 1 January 1986 Portugal joined the European Communities (EEC), a landmark after the return to democracy. The comic follows a family morning — flags, news, and the sense that Portugal had opened a window without leaving itself behind.</p>
+      <div class="cta">
+        <strong>Next</strong>
+        Free Ep.01: O Terramoto (1755) · Hub: series page · More paid episodes on Gumroad
+      </div>
+    </article>
+
+  </div>
+</body>
+</html>

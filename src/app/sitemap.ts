@@ -102,6 +102,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.84,
     },
     {
+      url: `${siteUrl}/comics/gaivota-em-portugal/08-estado-novo`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.84,
+    },
+    {
+      url: `${siteUrl}/comics/gaivota-em-portugal/09-treaty-of-windsor`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.84,
+    },
+    {
+      url: `${siteUrl}/comics/gaivota-em-portugal/10-eu-accession`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.84,
+    },
+    {
       url: `${siteUrl}/cfa-level-1-anki-deck-vs-curriculum`,
       lastModified,
       changeFrequency: "monthly",

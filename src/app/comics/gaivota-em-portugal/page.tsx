@@ -75,6 +75,15 @@ export default function GaivotaHubPage() {
           <Link className={btnSecondary} href="/comics/gaivota-em-portugal/07-republic">
             Ep.07 — República
           </Link>
+          <Link className={btnSecondary} href="/comics/gaivota-em-portugal/08-estado-novo">
+            Ep.08 — Estado Novo
+          </Link>
+          <Link className={btnSecondary} href="/comics/gaivota-em-portugal/09-treaty-of-windsor">
+            Ep.09 — Windsor
+          </Link>
+          <Link className={btnSecondary} href="/comics/gaivota-em-portugal/10-eu-accession">
+            Ep.10 — Europa 1986
+          </Link>
         </div>
 
         <section className="mt-14">

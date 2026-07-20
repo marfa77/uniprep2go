@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaivota em Portugal · Ep.09 — Tratado de Windsor (1386)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #0e0e0e;
+      --paper: #f4f1ea;
+      --muted: #5c574e;
+      --line: #c9c2b4;
+      --paid: #8b1f3d;
+      --accent: #b5451b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      color: var(--ink);
+      background: #ddd7cb;
+      line-height: 1.45;
+    }
+    .bar {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; justify-content: space-between;
+      padding: .7rem 1.1rem;
+      background: #111; color: #f4f1ea;
+    }
+    .bar .brand { display: flex; align-items: center; gap: .65rem; font-family: Fraunces, Georgia, serif; font-weight: 700; }
+    .bar img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; background: #fff; }
+    .bar .paid { background: var(--paid); color: #fff; font-size: .75rem; font-weight: 700; padding: .25rem .55rem; border-radius: 999px; letter-spacing: .04em; }
+    .bar a { color: #fff; text-decoration: none; font-weight: 600; font-size: .9rem; border: 1px solid rgba(255,255,255,.35); padding: .4rem .8rem; border-radius: 999px; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 1.25rem 1rem 4rem; }
+    .page {
+      width: min(100%, 794px);
+      margin: 0 auto 1.75rem;
+      background: var(--paper);
+      border: 1px solid #bdb5a6;
+      box-shadow: 0 16px 36px rgba(0,0,0,.12);
+      padding: 1.25rem 1.35rem 1.4rem;
+      position: relative;
+    }
+    .page-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: .85rem; }
+    .page-head .left { display: flex; align-items: center; gap: .5rem; font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: .95rem; }
+    .page-head .left img { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; }
+    .page-head .meta { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+    .hero {
+      position: relative; border: 3px solid var(--ink); overflow: hidden; background: #111;
+      line-height: 0;
+    }
+    .hero > img:not(.stamp) { width: 100%; height: auto; display: block; object-fit: contain; }
+    .brief-img img { width: 100%; height: auto; display: block; object-fit: contain; }
+    .panel img { width: 100%; height: auto; display: block; object-fit: contain; }
+    .hero .overlay {
+      position: absolute; left: 0; right: 0; bottom: 0;
+      padding: 1.5rem 1.2rem 1.2rem;
+      background: linear-gradient(transparent, rgba(0,0,0,.92) 40%);
+      color: #fff;
+    }
+    .hero h1 { margin: 0; font-family: Fraunces, Georgia, serif; font-size: clamp(1.7rem, 4.5vw, 2.8rem); line-height: 1.05; }
+    .hero p { margin: .4rem 0 0; max-width: 44ch; opacity: .95; }
+    .stamp {
+      position: absolute; top: 1rem; right: 1rem; width: 72px; height: 72px;
+      border-radius: 50%; border: 2px solid #fff; object-fit: cover; background: #fff;
+    }
+    .brief-grid { display: grid; gap: 1rem; }
+    .brief-img { border: 2px solid var(--ink); overflow: hidden; background: #ccc; line-height: 0; }
+    .caption { font-size: .82rem; color: var(--muted); margin: .35rem 0 0; font-style: italic; }
+    .brief h2 { margin: 0 0 .5rem; font-family: Fraunces, Georgia, serif; font-size: 1.55rem; }
+    .brief .hook { font-size: 1.08rem; margin: 0 0 .75rem; }
+    .brief ul { margin: 0 0 1rem; padding-left: 1.15rem; }
+    .brief li { margin: .3rem 0; }
+    .disclaimer {
+      margin-top: 1rem; padding: .75rem .9rem;
+      border-left: 4px solid var(--ink); background: #ebe6dc; font-size: .92rem;
+    }
+    .panel {
+      position: relative; border: 3px solid var(--ink); overflow: hidden; background: #111;
+      line-height: 0;
+    }
+    .bubble {
+      position: absolute; max-width: min(78%, 290px);
+      background: #fffdf8; border: 2.5px solid var(--ink); border-radius: 1.05rem;
+      padding: .55rem .7rem; font-size: .95rem; font-weight: 500; line-height: 1.3;
+      box-shadow: 3px 3px 0 rgba(0,0,0,.12); z-index: 2;
+    }
+    .bubble .who {
+      display: block; font-size: .66rem; font-weight: 700; letter-spacing: .05em;
+      text-transform: uppercase; margin-bottom: .12rem; color: #333;
+    }
+    .bubble.gaivota { background: #111; color: #f4f1ea; border-color: #111; }
+    .bubble.gaivota .who { color: #cfcfcf; }
+    .bubble.beatriz .who { color: #8b1f3d; }
+    .bubble.tom .who { color: #1f6f8b; }
+    .tl { left: 4%; top: 5%; }
+    .tr { right: 4%; top: 5%; }
+    .bl { left: 4%; bottom: 7%; }
+    .br { right: 4%; bottom: 7%; }
+    .p1-gaivota { left: 3%; top: 2%; max-width: min(42%, 250px); }
+    .p1-a { left: 2%; bottom: 5%; max-width: min(34%, 200px); font-size: .88rem; }
+    .p1-b { right: 3%; top: 16%; max-width: min(34%, 210px); font-size: .88rem; }
+    .foot {
+      margin-top: .7rem; display: flex; justify-content: space-between; gap: 1rem;
+      font-size: .8rem; color: var(--muted); line-height: 1.35;
+    }
+    .study h2 { margin: 0 0 .6rem; font-family: Fraunces, Georgia, serif; font-size: 1.6rem; }
+    .study h3 { margin: 1.2rem 0 .45rem; color: var(--accent); font-size: 1.05rem; }
+    .tips { background: #e7eef1; border: 1px solid #b9c9d1; padding: .75rem .9rem; font-size: .92rem; margin-bottom: .5rem; }
+    .glossary {
+      display: grid; grid-template-columns: 1fr 1fr; gap: .25rem .9rem; font-size: .84rem;
+    }
+    .g-row { display: grid; grid-template-columns: 1.1fr 1fr; gap: .4rem; border-bottom: 1px solid var(--line); padding: .28rem 0; }
+    .g-row span:first-child { font-weight: 600; }
+    .quiz ol { margin: 0; padding-left: 1.2rem; }
+    .quiz li { margin: .4rem 0; }
+    .cta {
+      margin-top: 1.4rem; padding: 1rem 1.1rem; background: #111; color: #f4f1ea;
+    }
+    .cta strong { font-family: Fraunces, Georgia, serif; font-size: 1.15rem; display: block; margin-bottom: .35rem; }
+    .cta a { color: #9fd0e0; }
+    @media (max-width: 720px) {
+      .glossary { grid-template-columns: 1fr; }
+      .bubble { font-size: .88rem; max-width: 88%; }
+    }
+    @media print {
+      @page { size: A4; margin: 8mm; }
+      body { background: white; margin: 0; }
+      .bar { display: none !important; }
+      .wrap { max-width: none; margin: 0; padding: 0; }
+      .page {
+        box-shadow: none; border: none; margin: 0; padding: 0 0 4mm;
+        width: auto; max-width: none; min-height: 0 !important; height: auto;
+        break-after: page; page-break-after: always;
+      }
+      .page:last-child { break-after: auto; page-break-after: auto; }
+      .page-head { margin-bottom: .45rem; }
+      .hero, .panel, .brief-img { min-height: 0 !important; height: auto; }
+      .hero > img:not(.stamp), .panel img, .brief-img img {
+        max-height: 195mm; width: 100%; height: auto !important; object-fit: contain;
+      }
+      .stamp { width: 52px; height: 52px; top: .6rem; right: .6rem; }
+      .bubble { box-shadow: none; }
+      .foot { margin-top: .4rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <div class="brand">
+      <img src="art/gaivota-canon-mark.webp" alt="Gaivota" />
+      <span>Gaivota em Portugal</span>
+      <span class="paid">Ep.09</span>
+    </div>
+    <a href="#study">Study pack</a>
+  </div>
+
+  <div class="wrap">
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Gaivota em Portugal</div>
+        <div class="meta">Episode 09 · Paid</div>
+      </div>
+      <div class="hero">
+        <img src="art/ep09-cover.webp" alt="Cover: Treaty of Windsor" />
+        <img class="stamp" src="art/gaivota-canon-stamp.webp" alt="Gaivota mascot" />
+        <div class="overlay">
+          <h1>Tratado de Windsor</h1>
+          <p>1386 — a aliança anglo-portuguesa nasce no papel, numa história completa em cinco páginas.</p>
+        </div>
+      </div>
+      <div class="foot"><span>Noir history comic · PT-PT + EN glossary</span><span>Ep.09</span></div>
+    </article>
+
+    <article class="page brief">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> History brief</div>
+        <div class="meta">Sheet 1 · Facts first</div>
+      </div>
+      <div class="brief-grid">
+        <div>
+          <div class="brief-img"><img src="art/ep09-brief-textbook.webp" alt="The Treaty of Windsor" /></div>
+          <p class="caption">Windsor, 1386 — history-textbook plate (engraving style).</p>
+        </div>
+        <div>
+          <h2>The Treaty of Windsor</h2>
+          <p class="hook">In 1386 Portugal and England sealed an alliance at Windsor — still remembered as one of the world’s oldest continuous treaties.</p>
+          <ul>
+            <li><strong>When:</strong> 1386</li>
+            <li><strong>Where:</strong> Windsor (England)</li>
+            <li><strong>Who:</strong> Portuguese and English courts after Aljubarrota’s shadow</li>
+            <li><strong>How:</strong> diplomacy, seals, mutual defence promises</li>
+            <li><strong>After:</strong> a long Anglo-Portuguese friendship begins on parchment</li>
+          </ul>
+          <p>Not a battle — a corridor, a hall, and a signature. Two young attendants watch an alliance that outlives them.</p>
+          <div class="disclaimer"><strong>The comic that follows is an artistic interpretation.</strong> Human-scale court diplomacy; no battle gore.</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Tratado de Windsor · 1/5</div>
+        <div class="meta">Setup</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep09-comic-p1.webp" alt="Dawn at Windsor" />
+        <div class="bubble gaivota p1-gaivota"><span class="who">Gaivota</span>Dois reinos… uma manhã fria.</div>
+        <div class="bubble beatriz p1-a"><span class="who">Beatriz</span>A carta chegou da corte de Lisboa.</div>
+        <div class="bubble tom p1-b"><span class="who">Tom</span>My lord waits. The ink is still wet.</div>
+      </div>
+      <div class="foot"><span>Characters: Beatriz · Tom · Gaivota</span><span>1/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Tratado de Windsor · 2/5</div>
+        <div class="meta">Rising action</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep09-comic-p2.webp" alt="Hall preparations" />
+        <div class="bubble beatriz tl"><span class="who">Beatriz</span>Tradução cuidada. Cada palavra… pesa.</div>
+        <div class="bubble tom tr"><span class="who">Tom</span>Peace is heavier than a sword today.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>O vento traz promessas através do canal.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>cada palavra pesa</em></span><span>2/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Tratado de Windsor · 3/5</div>
+        <div class="meta">Turning point</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep09-comic-p3.webp" alt="Signing" />
+        <div class="bubble  tl"><span class="who">Embaixador</span>Pelo rei de Portugal. Pelo rei de Inglaterra.</div>
+        <div class="bubble beatriz tr"><span class="who">Beatriz</span>Assinado. A aliança nasce.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>Um tratado… mais forte que muralhas.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>a aliança nasce</em></span><span>3/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Tratado de Windsor · 4/5</div>
+        <div class="meta">Consequence</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep09-comic-p4.webp" alt="Courtyard" />
+        <div class="bubble tom tl"><span class="who">Tom</span>Will it last?</div>
+        <div class="bubble beatriz tr"><span class="who">Beatriz</span>Durará. Porque ambos precisam.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>Amizade antiga… ainda sem rugas.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>ambos precisam</em></span><span>4/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Tratado de Windsor · 5/5</div>
+        <div class="meta">Resolution</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep09-comic-p5.webp" alt="Departure" />
+        <div class="bubble beatriz tl"><span class="who">Beatriz</span>Levo isto a Lisboa.</div>
+        <div class="bubble tom tr"><span class="who">Tom</span>And I will remember this day.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>Guardo este Windsor. Portugal e Inglaterra… de mãos dadas.</div>
+      </div>
+      <div class="foot"><span>End of story · no “to be continued”</span><span>5/5</span></div>
+    </article>
+
+    <article class="page study" id="study">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Study pack</div>
+        <div class="meta">100 words · PT → EN</div>
+      </div>
+      <h2>Study pack — Tratado de Windsor</h2>
+      <div class="tips">
+        Read the comic once for story, once for words. Say each line aloud. Prefer Portuguese answers in the quiz.
+      </div>
+      <h3>Glossary (100)</h3>
+      <div class="glossary">
+        <div class="g-row"><span>windsor</span><span>Windsor</span></div>
+        <div class="g-row"><span>1386</span><span>1386</span></div>
+        <div class="g-row"><span>tratado-de-windsor</span><span>Treaty of Windsor</span></div>
+        <div class="g-row"><span>aliança-perpétua</span><span>perpetual alliance</span></div>
+        <div class="g-row"><span>inglaterra</span><span>England</span></div>
+        <div class="g-row"><span>embaixador-português</span><span>Portuguese ambassador</span></div>
+        <div class="g-row"><span>embaixador-inglês</span><span>English ambassador</span></div>
+        <div class="g-row"><span>corte-de-lisboa</span><span>Lisbon court</span></div>
+        <div class="g-row"><span>corte-de-windsor</span><span>Windsor court</span></div>
+        <div class="g-row"><span>carta-selada</span><span>sealed letter</span></div>
+        <div class="g-row"><span>braões</span><span>coats of arms</span></div>
+        <div class="g-row"><span>pergaminho</span><span>parchment</span></div>
+        <div class="g-row"><span>tinta-de-ferro</span><span>iron gall ink</span></div>
+        <div class="g-row"><span>selo-de-cera</span><span>wax seal</span></div>
+        <div class="g-row"><span>diplomacia</span><span>diplomacy</span></div>
+        <div class="g-row"><span>cerimónia</span><span>ceremony</span></div>
+        <div class="g-row"><span>grande-salão</span><span>great hall</span></div>
+        <div class="g-row"><span>corredor-de-pedra</span><span>stone corridor</span></div>
+        <div class="g-row"><span>tocha</span><span>torch</span></div>
+        <div class="g-row"><span>pennant</span><span>pennant</span></div>
+        <div class="g-row"><span>estandarte-real</span><span>royal standard</span></div>
+        <div class="g-row"><span>intérprete-de-corte</span><span>court interpreter</span></div>
+        <div class="g-row"><span>tradutor</span><span>translator</span></div>
+        <div class="g-row"><span>língua-inglês</span><span>English language</span></div>
+        <div class="g-row"><span>língua-português</span><span>Portuguese language</span></div>
+        <div class="g-row"><span>page</span><span>page (servant)</span></div>
+        <div class="g-row"><span>aia</span><span>attendant (female)</span></div>
+        <div class="g-row"><span>beatriz</span><span>Beatriz</span></div>
+        <div class="g-row"><span>tom</span><span>Tom</span></div>
+        <div class="g-row"><span>canal-da-mancha</span><span>English Channel</span></div>
+        <div class="g-row"><span>dois-reinos</span><span>two kingdoms</span></div>
+        <div class="g-row"><span>mutua-defesa</span><span>mutual defence</span></div>
+        <div class="g-row"><span>amizade-antiga</span><span>ancient friendship</span></div>
+        <div class="g-row"><span>paz-por-tratado</span><span>peace by treaty</span></div>
+        <div class="g-row"><span>assinatura</span><span>signature</span></div>
+        <div class="g-row"><span>mão-no-pergaminho</span><span>hand on parchment</span></div>
+        <div class="g-row"><span>rei-de-portugal</span><span>King of Portugal</span></div>
+        <div class="g-row"><span>rei-de-inglaterra</span><span>King of England</span></div>
+        <div class="g-row"><span>joão-primeiro</span><span>João I</span></div>
+        <div class="g-row"><span>richard-segundo</span><span>Richard II</span></div>
+        <div class="g-row"><span>cavalo-de-volta</span><span>return horse</span></div>
+        <div class="g-row"><span>jornada-a-lisboa</span><span>journey to Lisbon</span></div>
+        <div class="g-row"><span>carta-de-retorno</span><span>return letter</span></div>
+        <div class="g-row"><span>cópia-autenticada</span><span>authenticated copy</span></div>
+        <div class="g-row"><span>testemunha-de-corte</span><span>court witness</span></div>
+        <div class="g-row"><span>criado</span><span>servant</span></div>
+        <div class="g-row"><span>moço-de-corte</span><span>court page</span></div>
+        <div class="g-row"><span>copo-de-vinho</span><span>cup of wine</span></div>
+        <div class="g-row"><span>pão-de-corte</span><span>court bread</span></div>
+        <div class="g-row"><span>manhã-fria</span><span>cold morning</span></div>
+        <div class="g-row"><span>névoa-no-tames</span><span>Thames mist</span></div>
+        <div class="g-row"><span>castelo-de-windsor</span><span>Windsor Castle</span></div>
+        <div class="g-row"><span>muralha-alta</span><span>high wall</span></div>
+        <div class="g-row"><span>crenelado</span><span>crenellated</span></div>
+        <div class="g-row"><span>bandeira-bilateral</span><span>bilateral flag</span></div>
+        <div class="g-row"><span>promessa-de-paz</span><span>promise of peace</span></div>
+        <div class="g-row"><span>promessa-de-ajuda</span><span>promise of aid</span></div>
+        <div class="g-row"><span>guerra-evitada</span><span>war avoided</span></div>
+        <div class="g-row"><span>aliança-militar</span><span>military alliance</span></div>
+        <div class="g-row"><span>aliança-comercial</span><span>commercial alliance</span></div>
+        <div class="g-row"><span>comércio-marítimo</span><span>maritime trade</span></div>
+        <div class="g-row"><span>porto-de-londres</span><span>Port of London</span></div>
+        <div class="g-row"><span>navio-de-embaixada</span><span>embassy ship</span></div>
+        <div class="g-row"><span>viagem-marítima</span><span>sea voyage</span></div>
+        <div class="g-row"><span>vento-do-oeste</span><span>west wind</span></div>
+        <div class="g-row"><span>sol-posto</span><span>setting sun</span></div>
+        <div class="g-row"><span>acordo-internacional</span><span>international agreement</span></div>
+        <div class="g-row"><span>documento-histórico</span><span>historic document</span></div>
+        <div class="g-row"><span>palavra-pesada</span><span>weighty word</span></div>
+        <div class="g-row"><span>tradução-cuidadosa</span><span>careful translation</span></div>
+        <div class="g-row"><span>sala-de-audiência</span><span>audience chamber</span></div>
+        <div class="g-row"><span>tapete-vermelho</span><span>red carpet</span></div>
+        <div class="g-row"><span>mesa-longa</span><span>long table</span></div>
+        <div class="g-row"><span>cadeira-de-honra</span><span>chair of honour</span></div>
+        <div class="g-row"><span>saudação-formal</span><span>formal greeting</span></div>
+        <div class="g-row"><span>aperto-de-mão</span><span>handshake</span></div>
+        <div class="g-row"><span>respeito-mútuo</span><span>mutual respect</span></div>
+        <div class="g-row"><span>honra-real</span><span>royal honour</span></div>
+        <div class="g-row"><span>legado-diplomático</span><span>diplomatic legacy</span></div>
+        <div class="g-row"><span>aliança-mais-antiga</span><span>oldest alliance</span></div>
+        <div class="g-row"><span>séculos-de-paz</span><span>centuries of peace</span></div>
+        <div class="g-row"><span>amizade-duradoura</span><span>lasting friendship</span></div>
+        <div class="g-row"><span>mãos-dadas</span><span>hand in hand</span></div>
+        <div class="g-row"><span>ponte-entre-reinos</span><span>bridge between kingdoms</span></div>
+        <div class="g-row"><span>cartas-trocadas</span><span>exchanged letters</span></div>
+        <div class="g-row"><span>mensageiro</span><span>messenger</span></div>
+        <div class="g-row"><span>cavaleiro-embaixador</span><span>knight ambassador</span></div>
+        <div class="g-row"><span>escolta</span><span>escort</span></div>
+        <div class="g-row"><span>portão-do-castelo</span><span>castle gate</span></div>
+        <div class="g-row"><span>adeus-formal</span><span>formal farewell</span></div>
+        <div class="g-row"><span>memória-de-windsor</span><span>memory of Windsor</span></div>
+        <div class="g-row"><span>dia-de-maio</span><span>May day</span></div>
+        <div class="g-row"><span>nono-de-maio</span><span>9 May</span></div>
+        <div class="g-row"><span>aliança-viva</span><span>living alliance</span></div>
+        <div class="g-row"><span>tratado-assinado</span><span>signed treaty</span></div>
+        <div class="g-row"><span>paz-pesada</span><span>heavy peace (weighty)</span></div>
+        <div class="g-row"><span>inglaterra-e-portugal</span><span>England and Portugal</span></div>
+        <div class="g-row"><span>windsor-1386</span><span>Windsor 1386</span></div>
+        <div class="g-row"><span>beatriz-e-tom</span><span>Beatriz and Tom</span></div>
+        <div class="g-row"><span>gaivota-no-crenelado</span><span>Gaivota on crenellation</span></div>
+      </div>
+      <h3>Comprehension (answer in PT)</h3>
+      <div class="quiz">
+        <ol>
+          <li>Onde se assina o tratado?</li>
+          <li>Quem são Beatriz e Tom?</li>
+          <li>O que nasce com a assinatura?</li>
+          <li>Porque é que Beatriz diz que durará?</li>
+          <li>Como acaba a história?</li>
+        </ol>
+      </div>
+      <h3>Cultural note</h3>
+      <p>The Treaty of Windsor (1386) bound Portugal and England in mutual alliance soon after Aljubarrota. It is often cited among the oldest continuous treaties still invoked in diplomacy. The comic watches the parchment hour through two attendants — not kings in combat.</p>
+      <div class="cta">
+        <strong>Next</strong>
+        Free Ep.01: O Terramoto (1755) · Hub: series page · More paid episodes on Gumroad
+      </div>
+    </article>
+
+  </div>
+</body>
+</html>

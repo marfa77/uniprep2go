@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaivota em Portugal · Ep.08 — Estado Novo (c. 1950)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #0e0e0e;
+      --paper: #f4f1ea;
+      --muted: #5c574e;
+      --line: #c9c2b4;
+      --paid: #8b1f3d;
+      --accent: #b5451b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      color: var(--ink);
+      background: #ddd7cb;
+      line-height: 1.45;
+    }
+    .bar {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; justify-content: space-between;
+      padding: .7rem 1.1rem;
+      background: #111; color: #f4f1ea;
+    }
+    .bar .brand { display: flex; align-items: center; gap: .65rem; font-family: Fraunces, Georgia, serif; font-weight: 700; }
+    .bar img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; background: #fff; }
+    .bar .paid { background: var(--paid); color: #fff; font-size: .75rem; font-weight: 700; padding: .25rem .55rem; border-radius: 999px; letter-spacing: .04em; }
+    .bar a { color: #fff; text-decoration: none; font-weight: 600; font-size: .9rem; border: 1px solid rgba(255,255,255,.35); padding: .4rem .8rem; border-radius: 999px; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 1.25rem 1rem 4rem; }
+    .page {
+      width: min(100%, 794px);
+      margin: 0 auto 1.75rem;
+      background: var(--paper);
+      border: 1px solid #bdb5a6;
+      box-shadow: 0 16px 36px rgba(0,0,0,.12);
+      padding: 1.25rem 1.35rem 1.4rem;
+      position: relative;
+    }
+    .page-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: .85rem; }
+    .page-head .left { display: flex; align-items: center; gap: .5rem; font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: .95rem; }
+    .page-head .left img { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; }
+    .page-head .meta { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+    .hero {
+      position: relative; border: 3px solid var(--ink); overflow: hidden; background: #111;
+      line-height: 0;
+    }
+    .hero > img:not(.stamp) { width: 100%; height: auto; display: block; object-fit: contain; }
+    .brief-img img { width: 100%; height: auto; display: block; object-fit: contain; }
+    .panel img { width: 100%; height: auto; display: block; object-fit: contain; }
+    .hero .overlay {
+      position: absolute; left: 0; right: 0; bottom: 0;
+      padding: 1.5rem 1.2rem 1.2rem;
+      background: linear-gradient(transparent, rgba(0,0,0,.92) 40%);
+      color: #fff;
+    }
+    .hero h1 { margin: 0; font-family: Fraunces, Georgia, serif; font-size: clamp(1.7rem, 4.5vw, 2.8rem); line-height: 1.05; }
+    .hero p { margin: .4rem 0 0; max-width: 44ch; opacity: .95; }
+    .stamp {
+      position: absolute; top: 1rem; right: 1rem; width: 72px; height: 72px;
+      border-radius: 50%; border: 2px solid #fff; object-fit: cover; background: #fff;
+    }
+    .brief-grid { display: grid; gap: 1rem; }
+    .brief-img { border: 2px solid var(--ink); overflow: hidden; background: #ccc; line-height: 0; }
+    .caption { font-size: .82rem; color: var(--muted); margin: .35rem 0 0; font-style: italic; }
+    .brief h2 { margin: 0 0 .5rem; font-family: Fraunces, Georgia, serif; font-size: 1.55rem; }
+    .brief .hook { font-size: 1.08rem; margin: 0 0 .75rem; }
+    .brief ul { margin: 0 0 1rem; padding-left: 1.15rem; }
+    .brief li { margin: .3rem 0; }
+    .disclaimer {
+      margin-top: 1rem; padding: .75rem .9rem;
+      border-left: 4px solid var(--ink); background: #ebe6dc; font-size: .92rem;
+    }
+    .panel {
+      position: relative; border: 3px solid var(--ink); overflow: hidden; background: #111;
+      line-height: 0;
+    }
+    .bubble {
+      position: absolute; max-width: min(78%, 290px);
+      background: #fffdf8; border: 2.5px solid var(--ink); border-radius: 1.05rem;
+      padding: .55rem .7rem; font-size: .95rem; font-weight: 500; line-height: 1.3;
+      box-shadow: 3px 3px 0 rgba(0,0,0,.12); z-index: 2;
+    }
+    .bubble .who {
+      display: block; font-size: .66rem; font-weight: 700; letter-spacing: .05em;
+      text-transform: uppercase; margin-bottom: .12rem; color: #333;
+    }
+    .bubble.gaivota { background: #111; color: #f4f1ea; border-color: #111; }
+    .bubble.gaivota .who { color: #cfcfcf; }
+    .bubble.marta .who { color: #8b1f3d; }
+    .bubble.joao .who { color: #1f6f8b; }
+    .tl { left: 4%; top: 5%; }
+    .tr { right: 4%; top: 5%; }
+    .bl { left: 4%; bottom: 7%; }
+    .br { right: 4%; bottom: 7%; }
+    .p1-gaivota { left: 3%; top: 2%; max-width: min(42%, 250px); }
+    .p1-a { left: 2%; bottom: 5%; max-width: min(34%, 200px); font-size: .88rem; }
+    .p1-b { right: 3%; top: 16%; max-width: min(34%, 210px); font-size: .88rem; }
+    .foot {
+      margin-top: .7rem; display: flex; justify-content: space-between; gap: 1rem;
+      font-size: .8rem; color: var(--muted); line-height: 1.35;
+    }
+    .study h2 { margin: 0 0 .6rem; font-family: Fraunces, Georgia, serif; font-size: 1.6rem; }
+    .study h3 { margin: 1.2rem 0 .45rem; color: var(--accent); font-size: 1.05rem; }
+    .tips { background: #e7eef1; border: 1px solid #b9c9d1; padding: .75rem .9rem; font-size: .92rem; margin-bottom: .5rem; }
+    .glossary {
+      display: grid; grid-template-columns: 1fr 1fr; gap: .25rem .9rem; font-size: .84rem;
+    }
+    .g-row { display: grid; grid-template-columns: 1.1fr 1fr; gap: .4rem; border-bottom: 1px solid var(--line); padding: .28rem 0; }
+    .g-row span:first-child { font-weight: 600; }
+    .quiz ol { margin: 0; padding-left: 1.2rem; }
+    .quiz li { margin: .4rem 0; }
+    .cta {
+      margin-top: 1.4rem; padding: 1rem 1.1rem; background: #111; color: #f4f1ea;
+    }
+    .cta strong { font-family: Fraunces, Georgia, serif; font-size: 1.15rem; display: block; margin-bottom: .35rem; }
+    .cta a { color: #9fd0e0; }
+    @media (max-width: 720px) {
+      .glossary { grid-template-columns: 1fr; }
+      .bubble { font-size: .88rem; max-width: 88%; }
+    }
+    @media print {
+      @page { size: A4; margin: 8mm; }
+      body { background: white; margin: 0; }
+      .bar { display: none !important; }
+      .wrap { max-width: none; margin: 0; padding: 0; }
+      .page {
+        box-shadow: none; border: none; margin: 0; padding: 0 0 4mm;
+        width: auto; max-width: none; min-height: 0 !important; height: auto;
+        break-after: page; page-break-after: always;
+      }
+      .page:last-child { break-after: auto; page-break-after: auto; }
+      .page-head { margin-bottom: .45rem; }
+      .hero, .panel, .brief-img { min-height: 0 !important; height: auto; }
+      .hero > img:not(.stamp), .panel img, .brief-img img {
+        max-height: 195mm; width: 100%; height: auto !important; object-fit: contain;
+      }
+      .stamp { width: 52px; height: 52px; top: .6rem; right: .6rem; }
+      .bubble { box-shadow: none; }
+      .foot { margin-top: .4rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <div class="brand">
+      <img src="art/gaivota-canon-mark.webp" alt="Gaivota" />
+      <span>Gaivota em Portugal</span>
+      <span class="paid">Ep.08</span>
+    </div>
+    <a href="#study">Study pack</a>
+  </div>
+
+  <div class="wrap">
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Gaivota em Portugal</div>
+        <div class="meta">Episode 08 · Paid</div>
+      </div>
+      <div class="hero">
+        <img src="art/ep08-cover.webp" alt="Cover: Estado Novo" />
+        <img class="stamp" src="art/gaivota-canon-stamp.webp" alt="Gaivota mascot" />
+        <div class="overlay">
+          <h1>Estado Novo</h1>
+          <p>Meados do século XX — uma sala de aula sob silêncio, numa história completa em cinco páginas.</p>
+        </div>
+      </div>
+      <div class="foot"><span>Noir history comic · PT-PT + EN glossary</span><span>Ep.08</span></div>
+    </article>
+
+    <article class="page brief">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> History brief</div>
+        <div class="meta">Sheet 1 · Facts first</div>
+      </div>
+      <div class="brief-grid">
+        <div>
+          <div class="brief-img"><img src="art/ep08-brief-textbook.webp" alt="Estado Novo (atmosphere)" /></div>
+          <p class="caption">Estado Novo era — history-textbook plate (engraving style).</p>
+        </div>
+        <div>
+          <h2>Estado Novo (atmosphere)</h2>
+          <p class="hook">Under the Estado Novo, daily Portugal learned to speak carefully — school, home, and the weight of approved words.</p>
+          <ul>
+            <li><strong>When:</strong> mid-20th century (atmosphere episode)</li>
+            <li><strong>Where:</strong> Lisbon school and home</li>
+            <li><strong>Who:</strong> ordinary teachers, pupils, neighbours under authoritarian rule</li>
+            <li><strong>How:</strong> censorship, inspection, quiet compliance — and private questions</li>
+            <li><strong>After:</strong> memory of a long silence before the Carnation Revolution</li>
+          </ul>
+          <p>This issue is not a battlefield. It is a classroom and a kitchen — where a teacher and a child measure which words can be said aloud.</p>
+          <div class="disclaimer"><strong>The comic that follows is an artistic interpretation.</strong> Human-scale school life; no torture, no graphic police violence.</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Estado Novo · 1/5</div>
+        <div class="meta">Setup</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep08-comic-p1.webp" alt="Morning with Marta and João" />
+        <div class="bubble gaivota p1-gaivota"><span class="who">Gaivota</span>A cidade acorda… com voz baixa.</div>
+        <div class="bubble marta p1-a"><span class="who">Marta</span>João, leva o caderno. Sem rabiscos na margem.</div>
+        <div class="bubble joao p1-b"><span class="who">João</span>Tia, e se o inspector perguntar?</div>
+      </div>
+      <div class="foot"><span>Characters: Marta · João · Gaivota</span><span>1/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Estado Novo · 2/5</div>
+        <div class="meta">Rising action</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep08-comic-p2.webp" alt="Classroom caution" />
+        <div class="bubble joao tl"><span class="who">João</span>Professora… isto está no livro?</div>
+        <div class="bubble marta tr"><span class="who">Marta</span>Está o que podemos dizer em voz alta.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>As palavras medem o ar antes de sair.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>em voz alta</em></span><span>2/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Estado Novo · 3/5</div>
+        <div class="meta">Turning point</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep08-comic-p3.webp" alt="Inspector visit" />
+        <div class="bubble  tl"><span class="who">Inspector</span>Tudo conforme?</div>
+        <div class="bubble marta tr"><span class="who">Marta</span>Conforme. Para hoje.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>Um carimbo… pesa mais que o giz.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>tudo conforme</em></span><span>3/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Estado Novo · 4/5</div>
+        <div class="meta">Consequence</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep08-comic-p4.webp" alt="Walk home" />
+        <div class="bubble joao tl"><span class="who">João</span>Um dia lemos tudo?</div>
+        <div class="bubble marta tr"><span class="who">Marta</span>Um dia. Guarda as perguntas… no bolso.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>O silêncio também ensina.</div>
+      </div>
+      <div class="foot"><span>Chunks: <em>guarda as perguntas</em></span><span>4/5</span></div>
+    </article>
+    <article class="page">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Estado Novo · 5/5</div>
+        <div class="meta">Resolution</div>
+      </div>
+      <div class="panel">
+        <img src="art/ep08-comic-p5.webp" alt="Kitchen lamp" />
+        <div class="bubble joao tl"><span class="who">João</span>Portugal é pequeno?</div>
+        <div class="bubble marta tr"><span class="who">Marta</span>Portugal é nosso. Ainda cresce por dentro.</div>
+        <div class="bubble gaivota br"><span class="who">Gaivota</span>Guardo esta sala. Portugal aprende em segredo.</div>
+      </div>
+      <div class="foot"><span>End of story · no “to be continued”</span><span>5/5</span></div>
+    </article>
+
+    <article class="page study" id="study">
+      <div class="page-head">
+        <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Study pack</div>
+        <div class="meta">100 words · PT → EN</div>
+      </div>
+      <h2>Study pack — Estado Novo</h2>
+      <div class="tips">
+        Read the comic once for story, once for words. Say each line aloud. Prefer Portuguese answers in the quiz.
+      </div>
+      <h3>Glossary (100)</h3>
+      <div class="glossary">
+        <div class="g-row"><span>professa</span><span>teacher (female)</span></div>
+        <div class="g-row"><span>sobrinho</span><span>nephew</span></div>
+        <div class="g-row"><span>salazar-era</span><span>Salazar era</span></div>
+        <div class="g-row"><span>regime-novo</span><span>Estado Novo regime</span></div>
+        <div class="g-row"><span>autoridade</span><span>authority</span></div>
+        <div class="g-row"><span>silenciar</span><span>to silence</span></div>
+        <div class="g-row"><span>aprovado</span><span>approved (stamp)</span></div>
+        <div class="g-row"><span>reprovado</span><span>rejected</span></div>
+        <div class="g-row"><span>manuscrito</span><span>manuscript</span></div>
+        <div class="g-row"><span>caderno</span><span>notebook</span></div>
+        <div class="g-row"><span>giz</span><span>chalk</span></div>
+        <div class="g-row"><span>quadro-negro</span><span>blackboard</span></div>
+        <div class="g-row"><span>sala-de-aula</span><span>classroom</span></div>
+        <div class="g-row"><span>inspector</span><span>inspector</span></div>
+        <div class="g-row"><span>carimbo</span><span>stamp</span></div>
+        <div class="g-row"><span>censurado</span><span>censored</span></div>
+        <div class="g-row"><span>margem</span><span>margin (of page)</span></div>
+        <div class="g-row"><span>rabisco</span><span>scribble</span></div>
+        <div class="g-row"><span>mochila</span><span>satchel / backpack</span></div>
+        <div class="g-row"><span>primária</span><span>primary school</span></div>
+        <div class="g-row"><span>retrato-oficial</span><span>official portrait</span></div>
+        <div class="g-row"><span>gaveta</span><span>drawer</span></div>
+        <div class="g-row"><span>formal</span><span>formal</span></div>
+        <div class="g-row"><span>conforme</span><span>as required</span></div>
+        <div class="g-row"><span>pergunta-guardada</span><span>kept question</span></div>
+        <div class="g-row"><span>bolso</span><span>pocket</span></div>
+        <div class="g-row"><span>segredo</span><span>secret</span></div>
+        <div class="g-row"><span>voz-baixa</span><span>low voice</span></div>
+        <div class="g-row"><span>1950</span><span>1950s</span></div>
+        <div class="g-row"><span>bairro</span><span>neighbourhood</span></div>
+        <div class="g-row"><span>rotina</span><span>routine</span></div>
+        <div class="g-row"><span>peso-do-silêncio</span><span>weight of silence</span></div>
+        <div class="g-row"><span>livro-de-texto</span><span>textbook</span></div>
+        <div class="g-row"><span>página-rasgada</span><span>torn page</span></div>
+        <div class="g-row"><span>leitura-cuidadosa</span><span>careful reading</span></div>
+        <div class="g-row"><span>palavra-permitida</span><span>permitted word</span></div>
+        <div class="g-row"><span>frase-aprovada</span><span>approved sentence</span></div>
+        <div class="g-row"><span>escola-primária</span><span>primary school</span></div>
+        <div class="g-row"><span>criança-atenta</span><span>attentive child</span></div>
+        <div class="g-row"><span>fileira</span><span>row (of desks)</span></div>
+        <div class="g-row"><span>pátio-escolar</span><span>schoolyard</span></div>
+        <div class="g-row"><span>muro-baixo</span><span>low wall</span></div>
+        <div class="g-row"><span>tia</span><span>aunt</span></div>
+        <div class="g-row"><span>costurar</span><span>to mend / sew</span></div>
+        <div class="g-row"><span>casa-boa</span><span>decent home</span></div>
+        <div class="g-row"><span>luz-de-cozinha</span><span>kitchen light</span></div>
+        <div class="g-row"><span>dever-de-casa</span><span>homework</span></div>
+        <div class="g-row"><span>perguntar-baixo</span><span>to ask quietly</span></div>
+        <div class="g-row"><span>resposta-curta</span><span>short answer</span></div>
+        <div class="g-row"><span>olhar-de-lado</span><span>sideways glance</span></div>
+        <div class="g-row"><span>vizinho-discreto</span><span>discreet neighbour</span></div>
+        <div class="g-row"><span>porta-fechada</span><span>closed door</span></div>
+        <div class="g-row"><span>janela-entreaberta</span><span>half-open window</span></div>
+        <div class="g-row"><span>murmúrio-de-rádio</span><span>radio murmur</span></div>
+        <div class="g-row"><span>notícia-oficial</span><span>official news</span></div>
+        <div class="g-row"><span>propaganda</span><span>propaganda</span></div>
+        <div class="g-row"><span>discurso-gravado</span><span>recorded speech</span></div>
+        <div class="g-row"><span>reunião-secreta</span><span>secret meeting</span></div>
+        <div class="g-row"><span>medo-de-falar</span><span>fear of speaking</span></div>
+        <div class="g-row"><span>coragem-doméstica</span><span>domestic courage</span></div>
+        <div class="g-row"><span>esperar-melhor</span><span>to hope for better</span></div>
+        <div class="g-row"><span>geração-calada</span><span>silent generation</span></div>
+        <div class="g-row"><span>portugal-pequeno</span><span>small Portugal</span></div>
+        <div class="g-row"><span>crescer-por-dentro</span><span>to grow inwardly</span></div>
+        <div class="g-row"><span>aprender-em-segredo</span><span>to learn in secret</span></div>
+        <div class="g-row"><span>estado-novo-dia</span><span>Estado Novo daily life</span></div>
+        <div class="g-row"><span>censura-leve</span><span>light censorship (atmosphere)</span></div>
+        <div class="g-row"><span>inspector-escolar</span><span>school inspector</span></div>
+        <div class="g-row"><span>visita-informe</span><span>inspection visit</span></div>
+        <div class="g-row"><span>conformidade</span><span>conformity</span></div>
+        <div class="g-row"><span>obediência</span><span>obedience</span></div>
+        <div class="g-row"><span>respeito-forçado</span><span>forced respect</span></div>
+        <div class="g-row"><span>orgulho-discreto</span><span>quiet pride</span></div>
+        <div class="g-row"><span>família-unida</span><span>united family</span></div>
+        <div class="g-row"><span>sobrevivência-civil</span><span>civilian survival</span></div>
+        <div class="g-row"><span>cotidiano</span><span>everyday life</span></div>
+        <div class="g-row"><span>manhã-cinzenta</span><span>grey morning</span></div>
+        <div class="g-row"><span>cidade-silenciosa</span><span>silent city</span></div>
+        <div class="g-row"><span>caminho-para-casa</span><span>walk home</span></div>
+        <div class="g-row"><span>fim-de-aula</span><span>end of class</span></div>
+        <div class="g-row"><span>sino-da-escola</span><span>school bell</span></div>
+        <div class="g-row"><span>recreativa</span><span>recess</span></div>
+        <div class="g-row"><span>intervalo</span><span>break</span></div>
+        <div class="g-row"><span>almoço-simples</span><span>simple lunch</span></div>
+        <div class="g-row"><span>pão-com-manteiga</span><span>bread with butter</span></div>
+        <div class="g-row"><span>chá-de-tia</span><span>aunt's tea</span></div>
+        <div class="g-row"><span>promessa-de-futuro</span><span>promise of future</span></div>
+        <div class="g-row"><span>pergunta-no-bolso</span><span>question in pocket</span></div>
+        <div class="g-row"><span>palavras-medidas</span><span>measured words</span></div>
+        <div class="g-row"><span>ar-pesado</span><span>heavy air</span></div>
+        <div class="g-row"><span>carimbo-aprovado</span><span>approved stamp</span></div>
+        <div class="g-row"><span>giz-branco</span><span>white chalk</span></div>
+        <div class="g-row"><span>pó-de-giz</span><span>chalk dust</span></div>
+        <div class="g-row"><span>retrato-na-parede</span><span>portrait on wall</span></div>
+        <div class="g-row"><span>bandeira-na-escola</span><span>flag at school</span></div>
+        <div class="g-row"><span>hino-gravado</span><span>recorded anthem</span></div>
+        <div class="g-row"><span>portugal-nosso</span><span>our Portugal</span></div>
+        <div class="g-row"><span>esperança-guardada</span><span>kept hope</span></div>
+        <div class="g-row"><span>futuro-adormecido</span><span>sleeping future</span></div>
+        <div class="g-row"><span>professora-marta</span><span>teacher Marta</span></div>
+      </div>
+      <h3>Comprehension (answer in PT)</h3>
+      <div class="quiz">
+        <ol>
+          <li>Onde trabalha Marta?</li>
+          <li>Quem é João?</li>
+          <li>O que faz o inspector?</li>
+          <li>O que Marta pede a João para guardar?</li>
+          <li>Como acaba a história?</li>
+        </ol>
+      </div>
+      <h3>Cultural note</h3>
+      <p>The Estado Novo (1933–1974) was Portugal’s long authoritarian regime. This comic stays human-scale: school stamps, careful speech, and a child’s questions — not torture or battlefield violence. It remembers the silence that later made 25 de Abril feel like air.</p>
+      <div class="cta">
+        <strong>Next</strong>
+        Free Ep.01: O Terramoto (1755) · Hub: series page · More paid episodes on Gumroad
+      </div>
+    </article>
+
+  </div>
+</body>
+</html>

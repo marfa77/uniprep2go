@@ -116,6 +116,43 @@ export const gaivotaEpisodes: GaivotaEpisode[] = [
     pagePath: "/comics/gaivota-em-portugal/07-republic",
     gumroadCheckoutUrl: "https://pixidstudio.gumroad.com/l/gaivota-ep07-republic?wanted=true",
   },
+  {
+    id: "08-estado-novo",
+    number: 8,
+    titlePt: "Estado Novo",
+    titleEn: "Estado Novo atmosphere",
+    event: "Estado Novo (mid-20th century)",
+    year: "c. 1950",
+    price: 5,
+    status: "live",
+    pagePath: "/comics/gaivota-em-portugal/08-estado-novo",
+    gumroadCheckoutUrl: "https://pixidstudio.gumroad.com/l/gaivota-ep08-estado-novo?wanted=true",
+  },
+  {
+    id: "09-treaty-of-windsor",
+    number: 9,
+    titlePt: "Tratado de Windsor",
+    titleEn: "Treaty of Windsor",
+    event: "Treaty of Windsor",
+    year: "1386",
+    price: 5,
+    status: "live",
+    pagePath: "/comics/gaivota-em-portugal/09-treaty-of-windsor",
+    gumroadCheckoutUrl:
+      "https://pixidstudio.gumroad.com/l/gaivota-ep09-treaty-of-windsor?wanted=true",
+  },
+  {
+    id: "10-eu-accession",
+    number: 10,
+    titlePt: "Adesão à Europa",
+    titleEn: "EU Accession",
+    event: "Portugal joins the EEC",
+    year: "1986",
+    price: 5,
+    status: "live",
+    pagePath: "/comics/gaivota-em-portugal/10-eu-accession",
+    gumroadCheckoutUrl: "https://pixidstudio.gumroad.com/l/gaivota-ep10-eu-accession?wanted=true",
+  },
 ];
 
 export function gaivotaAbsolute(path: string) {

@@ -271,7 +271,7 @@ Suggested page map:
 
 ---
 
-## Season 1 — event map (locked first five)
+## Season 1 — event map (locked Ep.01–10)
 
 | Ep | Event (topic) | Place / era | Price |
 |----|----------------|-------------|--------|
@@ -280,11 +280,11 @@ Suggested page map:
 | **03** | **Battle of Aljubarrota** | 14 Aug 1385 · Aljubarrota | $5 |
 | **04** | **Ceuta / start of Discoveries** | 21 Aug 1415 · Ceuta | $5 |
 | **05** | **Vasco da Gama reaches India** | May 1498 · Calicut | $5 |
-| 06 | Liberal Revolution | 1820 · Porto | $5 |
-| 07 | Republic proclaimed | 1910 | $5 |
-| 08 | Estado Novo atmosphere (careful, human-scale) | mid-20th c. | $5 |
-| 09 | Treaty of Windsor | 1386 | $5 |
-| 10 | EU accession / modern Portugal | 1986 | $5 |
+| **06** | **Liberal Revolution** | 1820 · Porto | $5 |
+| **07** | **Republic proclaimed** | 5 Oct 1910 · Lisboa | $5 |
+| **08** | **Estado Novo atmosphere** (careful, human-scale) | mid-20th c. | $5 |
+| **09** | **Treaty of Windsor** | 1386 · Windsor | $5 |
+| **10** | **EU accession / modern Portugal** | 1 Jan 1986 | $5 |
 
 **Pilot to build next:** Ep.01 — 1755 Earthquake (HTML: cover + history brief + 5 comic + study).
 
