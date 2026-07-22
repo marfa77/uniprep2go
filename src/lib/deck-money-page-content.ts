@@ -466,7 +466,7 @@ Applicants preparing **citizenship or naturalization civics** tests in **Germany
 
 ### What's inside
 
-Six separate \`.apkg\` files in one download: Leben in Deutschland, Naturalisation française, Life in the UK, Canadian Citizenship, Australian Citizenship, and U.S. Citizenship — **1000+** cards total. Study only the country file that matches your application; keep the others archived or share within a family with multiple pathways.
+Six separate \`.apkg\` files in one download: Leben in Deutschland (296), Naturalisation française (200), Life in the UK (201), Canadian Citizenship (200), Australian Citizenship (200), and U.S. Citizenship (128) — **1,225** cards total. Study only the country file that matches your application; keep the others archived or share within a family with multiple pathways.
 
 ### Study plan
 

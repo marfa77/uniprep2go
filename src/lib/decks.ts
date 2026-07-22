@@ -2038,12 +2038,12 @@ const rawDecks: Deck[] = [
     slug: "citizenship-naturalization-anki-bundle",
     category: "language",
     status: "available",
-    title: "Citizenship & Naturalization Anki Bundle — 6 Countries · 1000+ Cards",
+    title: "Citizenship & Naturalization Anki Bundle — 6 Countries · 1225 Cards",
     shortName: "Citizenship Naturalization Bundle",
     subtitle:
-      "Six Anki civics decks for Germany, France, UK, Canada, Australia, and the U.S. — 1000+ naturalization flashcards.",
+      "Six Anki civics decks for Germany, France, UK, Canada, Australia, and the U.S. — 1,225 naturalization flashcards.",
     directAnswer:
-      "UniPrep2Go sells a Citizenship & Naturalization Anki bundle with six separate .apkg decks covering Leben in Deutschland, Naturalisation française, Life in the UK, Canadian Citizenship, Australian Citizenship, and U.S. Citizenship — 1000+ civics flashcards total. It is delivered as six Anki .apkg files for {PRICE} through Gumroad by PixID Studio. Independent study aid — not official government exam material.",
+      "UniPrep2Go sells a Citizenship & Naturalization Anki bundle with six separate .apkg decks covering Leben in Deutschland, Naturalisation française, Life in the UK, Canadian Citizenship, Australian Citizenship, and U.S. Citizenship — 1,225 civics flashcards total. It is delivered as six Anki .apkg files for {PRICE} through Gumroad by PixID Studio. Independent study aid — not official government exam material.",
     lastUpdated: "2026-07-22",
     audience:
       "Applicants preparing citizenship or naturalization civics tests in Germany, France, the UK, Canada, Australia, or the United States.",
@@ -2054,7 +2054,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "1000+",
+      cards: "1225",
       topics:
         "Leben in Deutschland, Naturalisation française, Life in the UK, Canadian / Australian / U.S. Citizenship",
       formulas: "Six separate Anki .apkg files — one deck per country",
@@ -2065,7 +2065,7 @@ const rawDecks: Deck[] = [
     sampleCards: [
       {
         question: "What is the supreme law of the land?",
-        answer: "The Constitution — U.S. Citizenship civics sample.",
+        answer: "(U.S.) Constitution — U.S. Citizenship civics sample.",
         imageUrl: "/covers/citizenship-naturalization-anki-bundle.webp",
       },
       {
@@ -2075,9 +2075,9 @@ const rawDecks: Deck[] = [
         imageUrl: "/covers/citizenship-naturalization-anki-bundle.webp",
       },
       {
-        question: "Which countries are included?",
+        question: "What are the fundamental principles of British life?",
         answer:
-          "Germany (Leben in Deutschland), France (Naturalisation française), UK, Canada, Australia, and the U.S. — six .apkg downloads.",
+          "Democracy / the rule of law / individual liberty / tolerance of those with different faiths and beliefs — Life in the UK sample.",
         imageUrl: "/covers/citizenship-naturalization-anki-bundle.webp",
       },
     ],
@@ -2085,7 +2085,7 @@ const rawDecks: Deck[] = [
       {
         question: "What is included in the $20 bundle?",
         answer:
-          "Six Anki .apkg decks: Leben in Deutschland (~296 cards), Naturalisation française (~200), Life in the UK (~136), Canadian Citizenship (~134), Australian Citizenship (~131), and U.S. Citizenship (~125).",
+          "Six Anki .apkg decks: Leben in Deutschland (296 cards), Naturalisation française (200), Life in the UK (201), Canadian Citizenship (200), Australian Citizenship (200), and U.S. Citizenship (128) — 1,225 cards total.",
       },
       {
         question: "Are these official government materials?",

@@ -26,10 +26,10 @@ const ANKI_DECK_VAULT = join(ANKI_GENERATOR_ROOT, "out", "anki-decks");
 
 const PRODUCT = {
   permalink: "citizenship-naturalization-anki-bundle",
-  name: "Citizenship & Naturalization Anki Bundle — 6 Countries · 1000+ Cards",
+  name: "Citizenship & Naturalization Anki Bundle — 6 Countries · 1225 Cards",
   priceCents: 2000,
   summary:
-    "Six Anki decks for citizenship / naturalization civics: Germany, France, UK, Canada, Australia, and the U.S. — 1000+ cards total.",
+    "Six Anki decks for citizenship / naturalization civics: Germany, France, UK, Canada, Australia, and the U.S. — 1,225 cards total.",
 };
 
 /** @type {{ folder: string; baseName: string; fileName: string; label: string }[]} */
@@ -119,7 +119,7 @@ function buildDescription() {
   const list = DECKS.map((d) => `<li>${d.label}</li>`).join("");
   return [
     "<p><strong>UniPrep2Go × PixID Studio</strong> — <strong>Citizenship &amp; Naturalization Anki Bundle</strong> for six countries.</p>",
-    "<p><strong>1000+ civics flashcards</strong> across <strong>6× .apkg</strong> files. Study each country separately in Anki.</p>",
+    "<p><strong>1,225 civics flashcards</strong> across <strong>6× .apkg</strong> files (DE 296 · FR 200 · UK 201 · CA 200 · AU 200 · US 128). Study each country separately in Anki.</p>",
     `<ul>${list}</ul>`,
     "<p><strong>$20</strong> · instant download · import each .apkg into Anki desktop, then sync via AnkiWeb.</p>",
     '<p>Product page: <a href="https://uniprep2go.study/decks/citizenship-naturalization-anki-bundle">uniprep2go.study/decks/citizenship-naturalization-anki-bundle</a></p>',
@@ -228,13 +228,32 @@ async function main() {
 
   if (args.dryRun) return;
 
-  const fileFlags = resolved
-    .map(
-      (d) =>
-        `--file "${d.path}" --file-name "${d.fileName}" --file-description "${d.label} Anki deck."`,
-    )
-    .join(" ");
-  runGumroad(`products update ${productId} --replace-files ${fileFlags}`);
+  // Gumroad rich_content embeds require one-by-one replace when swapping all files.
+  const current = JSON.parse(
+    execSync(`gumroad products view ${productId} --json --non-interactive --yes`, {
+      encoding: "utf8",
+    }),
+  );
+  const existingFiles = (current.product || current).files || [];
+  const byName = new Map(existingFiles.map((f) => [f.name, f.id]));
+  for (const d of resolved) {
+    const oldId = byName.get(d.fileName);
+    if (oldId) {
+      console.log(`  replace ${d.fileName}`);
+      runGumroad(
+        `products update ${productId} --remove-file "${oldId}" --file "${d.path}" --file-name "${d.fileName}" --file-description "${d.label} Anki deck."`,
+      );
+    } else {
+      console.log(`  add ${d.fileName}`);
+      runGumroad(
+        `products update ${productId} --file "${d.path}" --file-name "${d.fileName}" --file-description "${d.label} Anki deck."`,
+      );
+    }
+  }
+
+  runGumroad(
+    `products update ${productId} --name "${PRODUCT.name.replace(/"/g, '\\"')}"`,
+  );
 
   const { thumbJpg, workDir } = prepareSquareThumbnail(coverPath);
   try {

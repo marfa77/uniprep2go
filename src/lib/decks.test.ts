@@ -653,7 +653,7 @@ describe("deck catalog", () => {
       "delf-prim-printable-french-flashcards":
         "DELF Prim Printable French Flashcards — Ages 7–12 · 360 PDF Cards",
       "citizenship-naturalization-anki-bundle":
-        "Citizenship & Naturalization Anki Bundle — 6 Countries · 1000+ Cards",
+        "Citizenship & Naturalization Anki Bundle — 6 Countries · 1225 Cards",
       "dele-a2-spanish-anki-deck": "DELE SIELE Spanish Anki Deck — 1000 Flashcards",
       "dutch-a2-inburgering-anki-deck":
         "Dutch Inburgering NT2 A2 Anki Deck — 1000+ Flashcards",
