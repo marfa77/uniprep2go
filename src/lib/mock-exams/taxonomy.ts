@@ -135,7 +135,8 @@ export const MOCK_VERTICALS: MockVerticalDefinition[] = [
   {
     id: "trades",
     label: "Trades & applicator licenses",
-    description: "Pest control applicator and related trade licenses.",
+    description:
+      "Electrical journeyman, water treatment operator, plumbing, pest control, and related trade license practice tests.",
     imageType: "trades",
     seoTitle: "Free Trade License Practice Tests",
   },
@@ -163,7 +164,8 @@ export const MOCK_VERTICALS: MockVerticalDefinition[] = [
   {
     id: "building",
     label: "Building & sustainability",
-    description: "EPA 608, LEED, WELL, PMP, MRICS, and related building certs.",
+    description:
+      "EPA 608, LEED GA and AP BD+C, WELL AP, NEBOSH, CFPS, MRICS, CDCP, CEM, and related building certification practice tests.",
     imageType: "building",
     seoTitle: "Free Building Certification Practice Tests",
   },

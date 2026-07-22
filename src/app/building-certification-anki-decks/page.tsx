@@ -80,6 +80,29 @@ export default async function BuildingCertificationHubPage() {
     }),
   );
 
+  const hubFaqs = [
+    {
+      question: "Which building certifications have free practice tests?",
+      answer:
+        "UniPrep2Go lists free timed readiness checks for EPA 608, LEED Green Associate, LEED AP BD+C, WELL AP, NEBOSH, CFPS, MRICS, CDCP, CEM, BMS/BAS, and related pathways — each linked from this hub to its mock page and Anki deck.",
+    },
+    {
+      question: "Are these official EPA, USGBC, or RICS exams?",
+      answer:
+        "No. Practice questions are original UniPrep2Go items aligned to published public outlines. They are not affiliated with or endorsed by the U.S. EPA, USGBC/GBCI, RICS, NEBOSH, NFPA, or other certifiers.",
+    },
+    {
+      question: "Should I buy the Anki deck before the mock?",
+      answer:
+        "Take the free mock first. The score report shows which domains failed; the linked Anki deck is for daily spaced-repetition repair of those gaps.",
+    },
+    {
+      question: "Where do I start if I work in HVAC vs green building?",
+      answer:
+        "HVAC refrigerant technicians usually start with EPA 608 (and BMS/BAS if you work controls). Design and sustainability roles usually start with LEED Green Associate, then LEED AP BD+C or WELL AP. Safety careers use NEBOSH or CFPS; surveyors use MRICS pathways.",
+    },
+  ] as const;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -101,6 +124,14 @@ export default async function BuildingCertificationHubPage() {
             name: `${entry.mock!.shortTitle} → ${entry.deck!.shortName}`,
             url: absoluteUrl(`/decks/${entry.deck!.slug}`),
           })),
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: hubFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: { "@type": "Answer", text: faq.answer },
+        })),
       },
     ],
   };
@@ -135,10 +166,30 @@ export default async function BuildingCertificationHubPage() {
           <Link className={btnPrimary} href="/mock-exams">
             All practice tests
           </Link>
+          <Link className={btnSecondary} href="/mock-exams/v/building">
+            Building mock hub
+          </Link>
           <Link className={btnSecondary} href="/#catalog-professional">
             Professional deck catalog
           </Link>
         </div>
+
+        <section className="mt-12 max-w-3xl" id="how-it-works">
+          <h2 className="text-2xl font-semibold tracking-tight">How building cert prep works here</h2>
+          <p className="mt-4 text-base leading-8 text-[#4f493e]">
+            Each pathway below pairs a free timed readiness check with a linked Anki deck. Take the
+            mock first under quiet conditions, read the topic report, then drill only the domains
+            you missed. Confirm current outlines, fees, and eligibility on the official certifier
+            site linked from each mock — UniPrep2Go does not sell exam vouchers or redistribute
+            live official items from EPA, USGBC/GBCI, RICS, NEBOSH, NFPA, or other bodies.
+          </p>
+          <p className="mt-4 text-base leading-8 text-[#4f493e]">
+            Suggested order for many candidates: EPA 608 for refrigerant work, LEED Green Associate
+            before LEED AP BD+C, then specialty safety or surveying pathways (NEBOSH, CFPS, MRICS)
+            based on your job role. Use the cluster sections to follow a coherent sequence instead
+            of jumping between unrelated credentials.
+          </p>
+        </section>
 
         <div className="mt-12 space-y-12">
           {clusterOrder.map((clusterId) => {
@@ -206,6 +257,18 @@ export default async function BuildingCertificationHubPage() {
             );
           })}
         </div>
+
+        <section className="mt-14 max-w-3xl" id="faq">
+          <h2 className="text-2xl font-semibold tracking-tight">Building certification FAQ</h2>
+          <dl className="mt-6 space-y-5">
+            {hubFaqs.map((faq) => (
+              <div key={faq.question}>
+                <dt className="font-semibold tracking-tight">{faq.question}</dt>
+                <dd className="mt-2 text-base leading-8 text-[#4f493e]">{faq.answer}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
       </article>
 
       <SiteFooter />

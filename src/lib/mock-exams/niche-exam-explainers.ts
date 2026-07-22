@@ -128,16 +128,80 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "nha-cpt-phlebotomy-readiness-check": explainer({
     practiceTestName: "NHA CPT Phlebotomy Practice Test",
     whatIsExam:
-      "The NHA Certified Phlebotomy Technician (CPT) exam certifies blood-draw technicians who collect specimens, handle tubes, and follow safety and patient-ID protocols. It is a common entry credential for hospital and outpatient lab phlebotomy jobs.",
+      "The NHA Certified Phlebotomy Technician (CPT) exam is a national certification for blood-draw technicians who perform venipuncture and capillary collections, identify patients, select tubes and order of draw, handle specimens, and follow infection-control and safety protocols. Hospitals, outpatient labs, and donor centers commonly list NHA CPT (or an equivalent national phlebotomy credential) in job requirements. The exam is knowledge-based; employers still train site-specific procedures after hire. Always confirm current domains, eligibility, and fees on the official NHA candidate materials before you register.",
     administeredBy: "National Healthcareer Association (NHA)",
+    officialFormat:
+      "Computer-based multiple-choice certification exam; confirm current length, pass score, and content outline with NHA before scheduling.",
+    whoFor:
+      "Phlebotomy students finishing approved training programs, medical assistants adding a dedicated blood-draw credential, and career changers targeting entry-level hospital or outpatient lab phlebotomy roles who need a timed diagnostic before the official NHA sitting.",
+    howToPrepare:
+      "Study circulatory anatomy, order of draw, additive tubes, specimen rejection criteria, and OSHA/bloodborne-pathogen safety from your program materials and the published NHA CPT outline. Drill patient-ID and labeling scenarios daily. Take this free UniPrep2Go timed readiness check once under quiet conditions, then repair weak domains with the linked Anki deck before exam day. Confirm eligibility and testing rules on NHA’s official site — this page is independent practice, not an NHA exam.",
+    topicBlurbs: [
+      {
+        id: "circulatory-anatomy",
+        label: "Circulatory system & anatomy",
+        blurb:
+          "Vein selection, arm anatomy cues, and circulatory basics that support safe venipuncture decisions.",
+      },
+      {
+        id: "collection-equipment",
+        label: "Collection equipment & order of draw",
+        blurb:
+          "Needle/gauge choices, tube additives, and order-of-draw sequences that prevent cross-contamination.",
+      },
+      {
+        id: "specimen-handling",
+        label: "Specimen handling & processing",
+        blurb:
+          "Labeling, transport, centrifugation cues, rejection criteria, and chain-of-custody habits labs expect.",
+      },
+      {
+        id: "safety-patient",
+        label: "Safety, infection & patient care",
+        blurb:
+          "Hand hygiene, PPE, sharps disposal, patient identification, fainting response, and communication under stress.",
+      },
+    ],
     examFaqs: [
       {
         question: "What is the NHA CPT phlebotomy exam?",
         answer:
-          "It is NHA’s certification exam for phlebotomy technicians covering venipuncture, specimen handling, safety, and patient care.",
+          "It is NHA’s Certified Phlebotomy Technician certification exam for candidates who collect blood specimens. It covers circulatory basics, collection equipment, specimen handling, safety, and patient care — not a hospital skills check-off by itself.",
+      },
+      {
+        question: "Is this free practice test the official NHA CPT exam?",
+        answer:
+          "No. UniPrep2Go hosts an independent timed readiness check with original practice questions. It is not affiliated with or endorsed by NHA and does not redistribute live NHA exam items.",
+      },
+      {
+        question: "Who should take the NHA CPT certification?",
+        answer:
+          "Students completing phlebotomy training and job seekers who need a nationally recognized phlebotomy credential for hospital, clinic, or outpatient lab roles. Confirm whether your employer or state prefers NHA CPT or another national board.",
+      },
+      {
+        question: "What topics are on the NHA CPT exam?",
+        answer:
+          "Expect circulatory anatomy, collection equipment and order of draw, specimen handling/processing, and safety/infection/patient-care scenarios. Verify current domain weights on NHA’s published outline.",
+      },
+      {
+        question: "How should I prepare for NHA CPT?",
+        answer:
+          "Finish your program competencies, memorize order of draw and tube additives, practice patient-ID scripts, then take a timed diagnostic. Use the UniPrep2Go report to decide which Anki domains to drill daily before you schedule NHA.",
+      },
+      {
+        question: "Is there a free NHA CPT / phlebotomy practice test?",
+        answer:
+          "Yes — this page offers a free timed UniPrep2Go NHA CPT phlebotomy readiness check with topic scoring and answer review. No signup wall for the practice session.",
       },
     ],
-    keywords: ["nha cpt practice test", "phlebotomy practice test", "certified phlebotomy technician exam"],
+    keywords: [
+      "nha cpt practice test",
+      "phlebotomy practice test",
+      "certified phlebotomy technician exam",
+      "free nha cpt practice test",
+      "nha phlebotomy practice exam",
+      "cpt phlebotomy practice questions",
+    ],
   }),
   "nha-cpct-readiness-check": explainer({
     practiceTestName: "NHA CPCT Practice Test",
@@ -315,48 +379,220 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "fl-real-estate-readiness-check": explainer({
     practiceTestName: "Florida Real Estate Practice Test",
     whatIsExam:
-      "The Florida real estate salesperson exam is the state licensing test required (after pre-license education) to become a licensed sales associate in Florida. It covers real estate principles, Florida license law, and math. The Florida DBPR / testing vendor administers the official exam.",
-    administeredBy: "Florida DBPR via the state’s exam vendor",
+      "The Florida real estate sales associate exam is the state licensing knowledge test required after approved pre-license education to become a licensed sales associate in Florida. It covers real estate principles and practices, Florida license law under FREC/DBPR rules, contracts and conveyances, finance and appraisal math, and brokerage practice. Candidates typically complete the 63-hour pre-license course (confirm current hours), pass the state exam through the designated vendor, then activate a license with a broker. Always verify outlines, fees, and scheduling on official Florida DBPR / FREC materials.",
+    administeredBy: "Florida DBPR / Florida Real Estate Commission (FREC) via the state’s exam vendor",
+    officialFormat:
+      "Timed multiple-choice state licensing exam; confirm current length, cut score, and national/state structure with DBPR and the exam vendor.",
+    whoFor:
+      "Florida sales associate candidates who finished (or are finishing) FREC-approved pre-license coursework, plus out-of-state licensees preparing for Florida mutual recognition or state-portion requirements when applicable.",
+    howToPrepare:
+      "Master Florida license law, agency, contracts, and daily math (commission, proration, LTV) from your pre-license materials and the official candidate bulletin. Take this free UniPrep2Go timed Florida readiness check once, then drill weak FREC domains with the linked Anki deck. Do not treat this page as a substitute for required classroom hours or the official PSI/vendor exam.",
+    topicBlurbs: [
+      {
+        id: "license-law",
+        label: "License law & FREC rules",
+        blurb: "Licensing, advertising, brokerage relationships, and FREC disciplinary themes Florida candidates must recall under time pressure.",
+      },
+      {
+        id: "contracts-titles",
+        label: "Contracts, titles & conveyances",
+        blurb: "Offer/acceptance, contingencies, deeds, title concepts, and conveyance steps common on the salesperson exam.",
+      },
+      {
+        id: "finance-appraisal",
+        label: "Finance, appraisal & math",
+        blurb: "Mortgage basics, appraisal concepts, and calculation sets (commission, proration, LTV) that sink unprepared candidates.",
+      },
+      {
+        id: "property-practice",
+        label: "Property, brokerage & practice",
+        blurb: "Property types, land use, fair housing, and day-to-day brokerage practice judgments.",
+      },
+    ],
     examFaqs: [
       {
         question: "What is the Florida real estate exam?",
         answer:
-          "It is Florida’s salesperson licensing exam. Candidates usually complete approved pre-license coursework, then pass the state exam before activating a license with a broker.",
+          "It is Florida’s sales associate licensing exam after approved pre-license education. Passing is required before you can activate a license with a broker under DBPR/FREC rules.",
+      },
+      {
+        question: "Is this free practice test the official FREC exam?",
+        answer:
+          "No. UniPrep2Go provides an independent timed diagnostic with original questions. It is not DBPR, FREC, or vendor exam material.",
+      },
+      {
+        question: "Do I need the 63-hour course before the Florida exam?",
+        answer:
+          "Florida requires approved pre-license education before you sit for the exam — confirm the current hour requirement and course approval list with DBPR/FREC.",
+      },
+      {
+        question: "What topics are on the Florida real estate salesperson exam?",
+        answer:
+          "Expect license law, contracts/titles, finance and appraisal math, and property/brokerage practice. Verify the current outline in the official candidate bulletin.",
+      },
+      {
+        question: "How should I prepare for the Florida real estate exam?",
+        answer:
+          "Finish pre-license hours, drill Florida license-law flashcards and math sets daily, then take a timed mock. Use the UniPrep2Go topic report to prioritize Anki repair before you schedule the vendor exam.",
+      },
+      {
+        question: "Is there a free Florida real estate practice test?",
+        answer:
+          "Yes — this page hosts a free timed UniPrep2Go Florida real estate readiness check with topic scoring and answer review.",
       },
     ],
     keywords: [
       "florida real estate practice test",
       "florida real estate exam questions",
       "fl sales associate practice exam",
+      "free florida real estate practice test",
+      "frec practice test",
     ],
   }),
   "tx-real-estate-readiness-check": explainer({
     practiceTestName: "Texas Real Estate Practice Test",
     whatIsExam:
-      "The Texas real estate salesperson exam is the licensing test for becoming a Texas sales agent after completing TREC-required education. It includes national real estate principles and Texas-specific law portions.",
+      "The Texas real estate salesperson (sales agent) exam is the licensing knowledge test administered under the Texas Real Estate Commission (TREC) after you complete required qualifying education. The sitting typically includes a national real estate principles portion and a Texas-specific law portion covering TRELA, TREC rules, agency, contracts, finance/closing math, and property practice. Passing both portions (confirm current cut scores with TREC/Pearson VUE) is required before TREC can issue a sales agent license. Always verify education hours, exam fees, and outlines on official TREC materials.",
     administeredBy: "Texas Real Estate Commission (TREC) via Pearson VUE",
+    officialFormat:
+      "Computer-based multiple-choice exam with national and Texas law sections; confirm current question counts and passing scores with TREC / Pearson VUE.",
+    whoFor:
+      "Texas sales agent candidates who completed TREC-approved qualifying education, plus experienced agents refreshing before a retake. Also useful for out-of-state licensees facing Texas education or exam requirements when reciprocity does not fully waive testing.",
+    howToPrepare:
+      "Study the TREC candidate information bulletin, Texas contract forms themes, agency disclosure timing, and daily math sets. Take this free UniPrep2Go timed Texas readiness check under quiet conditions, then repair weak TRELA/TREC domains with the linked Anki deck. Confirm scheduling and identification rules on Pearson VUE — this page is independent practice only.",
+    topicBlurbs: [
+      {
+        id: "license-law",
+        label: "TRELA / TREC license law",
+        blurb: "Licensing, TREC authority, advertising, trust money themes, and prohibited practices under Texas law.",
+      },
+      {
+        id: "contracts-agency",
+        label: "Contracts & agency",
+        blurb: "Agency relationships, disclosure timing, and contract essentials Texas agents use in daily practice.",
+      },
+      {
+        id: "finance-closing",
+        label: "Finance, closing & math",
+        blurb: "Financing instruments, closing costs, prorations, and calculation drills that appear on both national and state portions.",
+      },
+      {
+        id: "property-practice",
+        label: "Property, land & practice",
+        blurb: "Ownership estates, land use, fair housing, and brokerage practice judgments for Texas sales agents.",
+      },
+    ],
     examFaqs: [
       {
         question: "What is the Texas real estate exam?",
         answer:
-          "It is TREC’s salesperson licensing exam (national + state law sections) required to become a Texas real estate sales agent.",
+          "It is TREC’s salesperson/sales agent licensing exam (national principles plus Texas law) required after qualifying education before you can be licensed to practice in Texas.",
+      },
+      {
+        question: "Is this free practice test the official TREC exam?",
+        answer:
+          "No. UniPrep2Go’s timed readiness check is independent practice with original questions — not TREC or Pearson VUE exam material.",
+      },
+      {
+        question: "Who administers the Texas real estate license exam?",
+        answer:
+          "The Texas Real Estate Commission sets requirements; Pearson VUE typically delivers the computer-based exam. Verify current vendor details on TREC’s site.",
+      },
+      {
+        question: "Do I need qualifying education before the Texas exam?",
+        answer:
+          "Yes — Texas requires TREC-approved qualifying education hours before exam eligibility. Confirm the current hour total and course list with TREC.",
+      },
+      {
+        question: "What topics are on the Texas real estate salesperson exam?",
+        answer:
+          "Expect national principles (agency, contracts, ownership, finance/closing) plus Texas-specific TRELA/TREC license law, disclosures, and ethics rules.",
+      },
+      {
+        question: "Is there a free Texas real estate practice test?",
+        answer:
+          "Yes — take the free UniPrep2Go timed Texas real estate readiness check on this page for topic scoring and answer review.",
       },
     ],
-    keywords: ["texas real estate practice test", "trec practice exam", "texas sales agent practice test"],
+    keywords: [
+      "texas real estate practice test",
+      "trec practice exam",
+      "texas sales agent practice test",
+      "free texas real estate practice test",
+      "trec salesperson practice questions",
+    ],
   }),
   "ny-real-estate-readiness-check": explainer({
     practiceTestName: "New York Real Estate Practice Test",
     whatIsExam:
-      "The New York real estate salesperson exam is the state licensing test after completing required qualifying education. It covers agency, contracts, finance, property ownership, and New York license law.",
-    administeredBy: "New York Department of State via the exam vendor",
+      "The New York real estate salesperson exam is the state licensing knowledge test taken after completing New York’s required qualifying education hours. It covers agency, contracts, finance, property ownership, fair housing, and New York Department of State license law. Passing is required before you can be licensed as a New York real estate salesperson and affiliate with a broker. Confirm current hour requirements, exam vendor, and outlines with NYDOS.",
+    administeredBy: "New York Department of State via the designated exam vendor",
+    officialFormat:
+      "Timed multiple-choice licensing exam; confirm current length and cut score with NYDOS / the exam vendor.",
+    whoFor:
+      "New York salesperson candidates finishing approved qualifying education and licensees preparing for a retake who need a timed diagnostic before the official sitting.",
+    howToPrepare:
+      "Study NYDOS candidate materials, agency and fair-housing rules, and finance/closing math. Take this free UniPrep2Go timed New York readiness check, then drill weak domains with the linked Anki deck before exam day.",
+    topicBlurbs: [
+      {
+        id: "license-law",
+        label: "License law & DOS rules",
+        blurb: "Licensing, advertising, and New York DOS regulatory themes tested on the salesperson exam.",
+      },
+      {
+        id: "contracts-agency",
+        label: "Contracts, agency & fair housing",
+        blurb: "Agency duties, contract essentials, and fair-housing judgments New York candidates must apply quickly.",
+      },
+      {
+        id: "finance-valuation",
+        label: "Finance, valuation & closing",
+        blurb: "Mortgage basics, valuation cues, closing math, and prorations.",
+      },
+      {
+        id: "property-practice",
+        label: "Property, land use & practice",
+        blurb: "Ownership, land use, and day-to-day brokerage practice for New York salespersons.",
+      },
+    ],
     examFaqs: [
       {
         question: "What is the New York real estate salesperson exam?",
         answer:
-          "It is New York’s licensing exam for real estate salespersons, taken after completing state-required pre-license education hours.",
+          "It is New York’s licensing exam for real estate salespersons after state-required qualifying education, administered under NYDOS rules.",
+      },
+      {
+        question: "Is this the official NYDOS exam?",
+        answer:
+          "No. UniPrep2Go offers independent timed practice only — not official New York Department of State exam material.",
+      },
+      {
+        question: "Do I need qualifying education before the NY exam?",
+        answer:
+          "Yes — New York requires approved qualifying education hours before you can sit. Confirm current hours with NYDOS.",
+      },
+      {
+        question: "What topics appear on the New York salesperson exam?",
+        answer:
+          "Agency, contracts, finance/valuation, property and land use, fair housing, and New York license law are common domains — verify the live outline with NYDOS.",
+      },
+      {
+        question: "How should I prepare for the New York real estate exam?",
+        answer:
+          "Finish qualifying education, drill license-law and math flashcards, take a timed mock, then repair weak topics before scheduling the vendor exam.",
+      },
+      {
+        question: "Is there a free New York real estate practice test?",
+        answer:
+          "Yes — this page hosts a free timed UniPrep2Go New York real estate readiness check with topic scoring.",
       },
     ],
-    keywords: ["new york real estate practice test", "ny salesperson exam practice"],
+    keywords: [
+      "new york real estate practice test",
+      "ny salesperson exam practice",
+      "free new york real estate practice test",
+      "nydos real estate practice exam",
+    ],
   }),
   "aapc-cpc-readiness-check": explainer({
     practiceTestName: "AAPC CPC Practice Test",
@@ -623,6 +859,510 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       },
     ],
     keywords: ["rd exam practice test", "rdn practice exam", "dietitian registration exam practice"],
+  }),
+  "epa-608-readiness-check": explainer({
+    practiceTestName: "EPA 608 Practice Test",
+    whatIsExam:
+      "EPA Section 608 certification is the U.S. Clean Air Act credential required for technicians who maintain, service, repair, or dispose of equipment that could release ozone-depleting refrigerants or many substitute refrigerants. The pathway includes a Core exam plus Type I (small appliances), Type II (high-pressure), and/or Type III (low-pressure) sections; Universal status requires Core plus all three types. Approved proctors deliver the official exam — UniPrep2Go is independent practice only. Always confirm current pass rules and refrigerant updates with EPA and your testing organization.",
+    administeredBy: "U.S. Environmental Protection Agency (Section 608) via EPA-approved certifying organizations",
+    officialFormat:
+      "Closed-book multiple-choice sections (Core and Types I–III); the common prep target is at least 18 of 25 correct (72%) per section on the official exam — confirm live rules with your proctor.",
+    whoFor:
+      "HVAC/R apprentices, technicians, and trade students who must hold Section 608 before working on regulated refrigerant equipment, including candidates aiming for Universal certification.",
+    howToPrepare:
+      "Study recovery/recycle/reclaim definitions, evacuation levels, leak repair triggers, and cylinder safety from EPA-aligned study materials. Take this free timed UniPrep2Go EPA 608 readiness check covering Core and Types I–III domains, then drill missed sections with the linked Anki deck before you book an approved proctored exam.",
+    topicBlurbs: [
+      { id: "core", label: "Core", blurb: "Clean Air Act basics, ozone science, recovery/recycle/reclaim, and shared safety rules." },
+      { id: "type-1", label: "Type I", blurb: "Small-appliance service, recovery equipment, and Type I procedural judgment." },
+      { id: "type-2", label: "Type II", blurb: "High-pressure appliance service, leak repair, and Type II recovery practices." },
+      { id: "type-3", label: "Type III", blurb: "Low-pressure chillers, rupture discs, purge units, and Type III evacuation themes." },
+    ],
+    examFaqs: [
+      {
+        question: "What is the EPA Section 608 exam?",
+        answer:
+          "It is the Clean Air Act certification for technicians who handle refrigerants in air-conditioning and refrigeration equipment. Core plus Type I–III sections lead to Universal certification when all are passed.",
+      },
+      {
+        question: "Is this free practice test the official EPA 608 exam?",
+        answer:
+          "No. UniPrep2Go provides independent timed practice. Official Section 608 exams are delivered only by EPA-approved certifying organizations.",
+      },
+      {
+        question: "What is Universal EPA 608 certification?",
+        answer:
+          "Universal typically means you passed Core plus Type I, Type II, and Type III. Confirm the exact combination your employer and proctor require.",
+      },
+      {
+        question: "What topics are on EPA 608?",
+        answer:
+          "Core environmental rules plus type-specific service, recovery, leak repair, and evacuation practices for small, high-pressure, and low-pressure equipment.",
+      },
+      {
+        question: "How should I prepare for EPA 608?",
+        answer:
+          "Study section by section, memorize critical pressures and recovery rules, take a timed diagnostic, then repair weak types with flashcards before the proctored sitting.",
+      },
+      {
+        question: "Is there a free EPA 608 practice test?",
+        answer:
+          "Yes — this page hosts a free timed UniPrep2Go EPA 608 readiness check with topic scoring and answer review.",
+      },
+    ],
+    keywords: [
+      "epa 608 practice test",
+      "free epa 608 practice test",
+      "hvac 608 practice exam",
+      "epa section 608 practice questions",
+      "universal 608 practice test",
+    ],
+  }),
+  "leed-green-associate-readiness-check": explainer({
+    practiceTestName: "LEED Green Associate Practice Test",
+    whatIsExam:
+      "The LEED Green Associate (GA) exam from GBCI is the foundational LEED credential demonstrating green-building literacy across integrative process, location and transportation, sustainable sites, water efficiency, energy and atmosphere, materials and resources, indoor environmental quality, and project synergies. It is often the first step before specialty LEED AP exams such as BD+C. Confirm current candidate handbook details with GBCI/USGBC before registering.",
+    administeredBy: "Green Business Certification Inc. (GBCI) / USGBC",
+    officialFormat:
+      "Computer-based multiple-choice exam (commonly 100 questions); confirm current length, timing, and scaled pass score with GBCI.",
+    whoFor:
+      "Architects, engineers, sustainability staff, students, and project team members who need a baseline LEED credential before project roles or LEED AP specialty exams.",
+    howToPrepare:
+      "Study the LEED GA candidate handbook credit categories, drill vocabulary and process questions, take this free UniPrep2Go timed LEED GA readiness check, then repair weak categories with the linked Anki deck before GBCI exam day.",
+    topicBlurbs: [
+      {
+        id: "integrative-process",
+        label: "Integrative process",
+        blurb: "Early analysis and team coordination themes that appear throughout LEED GA.",
+      },
+      {
+        id: "location-transportation",
+        label: "Location & transportation",
+        blurb: "LT credit intent, site selection, and transportation strategies at Associate level.",
+      },
+      {
+        id: "sites-water",
+        label: "Sites & water",
+        blurb: "Sustainable sites and water-efficiency strategies commonly tested on LEED GA.",
+      },
+      {
+        id: "energy-atmosphere",
+        label: "Energy & atmosphere",
+        blurb: "Energy performance, commissioning awareness, and atmosphere themes.",
+      },
+      {
+        id: "materials-ieq",
+        label: "Materials & IEQ",
+        blurb: "Materials/resources choices and indoor environmental quality fundamentals.",
+      },
+    ],
+    examFaqs: [
+      {
+        question: "What is the LEED Green Associate exam?",
+        answer:
+          "LEED GA is GBCI’s foundational LEED credential exam covering green-building principles and LEED rating-system literacy across major credit categories.",
+      },
+      {
+        question: "Is this the official USGBC / GBCI exam?",
+        answer:
+          "No. UniPrep2Go offers independent practice only — not official USGBC or GBCI exam items.",
+      },
+      {
+        question: "Do I need LEED GA before LEED AP BD+C?",
+        answer:
+          "LEED AP specialty credentials generally require LEED Green Associate as a prerequisite. Confirm the live pathway on GBCI’s site.",
+      },
+      {
+        question: "What topics are on LEED GA?",
+        answer:
+          "Integrative process, location/transportation, sites, water, energy, materials, indoor environmental quality, and related LEED project concepts — verify weights in the candidate handbook.",
+      },
+      {
+        question: "How should I prepare for LEED Green Associate?",
+        answer:
+          "Read the handbook, memorize credit intents and key metrics, take a timed mock, then drill missed categories with spaced repetition.",
+      },
+      {
+        question: "Is there a free LEED Green Associate practice test?",
+        answer:
+          "Yes — take the free UniPrep2Go timed LEED GA readiness check on this page.",
+      },
+    ],
+    keywords: [
+      "leed green associate practice test",
+      "free leed ga practice test",
+      "leed ga exam questions",
+      "leed green associate practice exam",
+    ],
+  }),
+  "leed-ap-bd-c-readiness-check": explainer({
+    practiceTestName: "LEED AP BD+C Practice Test",
+    whatIsExam:
+      "LEED AP Building Design and Construction (BD+C) is the specialty LEED credential for professionals applying LEED to design and construction projects. It goes beyond Green Associate literacy into credit application, documentation, and rating-system judgment for BD+C project types. Candidates generally must hold LEED GA first. Confirm prerequisites and handbook details with GBCI.",
+    administeredBy: "Green Business Certification Inc. (GBCI) / USGBC",
+    officialFormat:
+      "Computer-based specialty exam; confirm current structure, timing, and scoring with GBCI.",
+    whoFor:
+      "LEED GA holders on design and construction teams — architects, engineers, consultants, and sustainability managers preparing for AP-level BD+C project responsibilities.",
+    howToPrepare:
+      "Study the LEED AP BD+C candidate handbook, practice credit scenarios (not just definitions), take this free UniPrep2Go timed readiness check, then repair weak credit categories with the linked Anki deck before GBCI registration.",
+    topicBlurbs: [
+      {
+        id: "process-location",
+        label: "Process & location",
+        blurb: "Integrative process plus location/transportation judgment for BD+C projects.",
+      },
+      {
+        id: "sites-water",
+        label: "Sites & water",
+        blurb: "Sustainable sites and water-efficiency credit application on design-construction jobs.",
+      },
+      {
+        id: "energy-atmosphere",
+        label: "Energy & atmosphere",
+        blurb: "Energy performance and atmosphere credits at AP scenario depth.",
+      },
+      {
+        id: "materials-resources",
+        label: "Materials & resources",
+        blurb: "MR credit application, documentation cues, and product selection tradeoffs.",
+      },
+      {
+        id: "indoor-environmental-quality",
+        label: "Indoor environmental quality",
+        blurb: "IEQ strategies and documentation themes for occupied buildings.",
+      },
+    ],
+    examFaqs: [
+      {
+        question: "What is the LEED AP BD+C exam?",
+        answer:
+          "It is GBCI’s LEED AP specialty exam for Building Design and Construction project application, documentation, and credit judgment beyond the Green Associate level.",
+      },
+      {
+        question: "Is this free mock the official LEED AP exam?",
+        answer:
+          "No. UniPrep2Go provides independent timed practice — not official GBCI/USGBC exam material.",
+      },
+      {
+        question: "Do I need LEED GA before BD+C?",
+        answer:
+          "Typically yes — LEED AP specialties require LEED Green Associate. Confirm current prerequisites with GBCI.",
+      },
+      {
+        question: "How is LEED AP BD+C different from LEED GA?",
+        answer:
+          "GA tests green-building literacy; BD+C tests specialty application of LEED credits on design and construction projects, including documentation-oriented scenarios.",
+      },
+      {
+        question: "How should I prepare for LEED AP BD+C?",
+        answer:
+          "Use the specialty handbook, practice scenario questions, take a timed diagnostic, and drill weak credit categories daily before exam day.",
+      },
+      {
+        question: "Is there a free LEED AP BD+C practice test?",
+        answer:
+          "Yes — this page hosts a free timed UniPrep2Go LEED AP BD+C readiness check.",
+      },
+    ],
+    keywords: [
+      "leed ap bd+c practice test",
+      "leed ap practice exam",
+      "free leed ap bd+c practice test",
+      "leed ap building design and construction",
+    ],
+  }),
+  "nebosh-readiness-check": explainer({
+    practiceTestName: "NEBOSH Practice Test",
+    whatIsExam:
+      "NEBOSH International General Certificate-style assessments evaluate health and safety management systems, workplace hazards, and risk-control thinking used by safety practitioners worldwide. Exact unit codes and assessment formats evolve — confirm your registration pathway (for example IG or successor structures) with NEBOSH before you book. UniPrep2Go’s readiness check is independent practice aligned to common IGC-style domains, not an official NEBOSH paper.",
+    administeredBy: "NEBOSH (National Examination Board in Occupational Safety and Health)",
+    officialFormat:
+      "Official NEBOSH assessments use published unit formats (open-book / practical elements vary by qualification). Confirm your current syllabus with NEBOSH.",
+    whoFor:
+      "Safety officers, supervisors, and career changers preparing for NEBOSH International General Certificate-style qualifications who need a timed MCQ-style diagnostic on management systems and hazard control themes.",
+    howToPrepare:
+      "Study your enrolled NEBOSH syllabus, practice risk-assessment narratives, take this free UniPrep2Go timed readiness check for topic scoring, then repair weak hazard domains with the linked Anki deck. Always pair mocks with official learning materials from your accredited provider.",
+    topicBlurbs: [
+      {
+        id: "hsm-systems-culture",
+        label: "H&S management systems",
+        blurb: "Policy, organization, culture, planning, and monitoring themes.",
+      },
+      {
+        id: "health-ergonomics",
+        label: "Health & ergonomics",
+        blurb: "Physical, psychological, and musculoskeletal health risk themes.",
+      },
+      {
+        id: "agents-workplace-hazards",
+        label: "Agents & workplace hazards",
+        blurb: "Chemical, biological, and general workplace hazard recognition.",
+      },
+      {
+        id: "equipment-fire-electricity",
+        label: "Equipment, fire & electricity",
+        blurb: "Work equipment, fire, and electrical hazard control judgment.",
+      },
+      {
+        id: "gic2-risk-assessment",
+        label: "Risk assessment",
+        blurb: "Structured risk assessment and control thinking used in GIC2-style practice.",
+      },
+    ],
+    examFaqs: [
+      {
+        question: "What is the NEBOSH IGC-style exam?",
+        answer:
+          "NEBOSH International General Certificate pathways assess health and safety management and workplace risk control. Confirm your exact units and assessment method with NEBOSH.",
+      },
+      {
+        question: "Is this an official NEBOSH exam?",
+        answer:
+          "No. UniPrep2Go provides independent practice only — not official NEBOSH assessment papers.",
+      },
+      {
+        question: "Who should take a NEBOSH certificate?",
+        answer:
+          "Managers, supervisors, and safety practitioners who need a recognized international health and safety qualification for workplace roles.",
+      },
+      {
+        question: "What topics appear on NEBOSH-style readiness checks?",
+        answer:
+          "Management systems, workplace hazards, risk control, and risk-assessment thinking — verify weights against your enrolled syllabus.",
+      },
+      {
+        question: "How should I prepare for NEBOSH?",
+        answer:
+          "Follow your accredited course, practice structured risk assessments, take timed diagnostics, and repair weak topics with spaced repetition.",
+      },
+      {
+        question: "Is there a free NEBOSH practice test?",
+        answer:
+          "Yes — take the free UniPrep2Go timed NEBOSH readiness check on this page.",
+      },
+    ],
+    keywords: [
+      "nebosh practice test",
+      "nebosh igc practice exam",
+      "free nebosh practice questions",
+      "nebosh readiness check",
+    ],
+  }),
+  "cfps-readiness-check": explainer({
+    practiceTestName: "CFPS Practice Test",
+    whatIsExam:
+      "The Certified Fire Protection Specialist (CFPS) credential from NFPA recognizes professionals who apply fire protection principles across detection, alarm, suppression, and facility hazard management. The official exam is a multiple-choice assessment delivered through NFPA’s testing pathway (commonly Prometric). Confirm current handbook domains and eligibility with NFPA before registering. UniPrep2Go practice is independent and not NFPA exam material.",
+    administeredBy: "National Fire Protection Association (NFPA)",
+    officialFormat:
+      "Computer-based multiple-choice professional certification exam; confirm current length and scoring with NFPA / the exam vendor.",
+    whoFor:
+      "Fire protection engineers, AHJ staff, facility risk managers, and safety professionals preparing for the CFPS credential who need a timed domain diagnostic before the official sitting.",
+    howToPrepare:
+      "Study the CFPS exam guide domains, practice scenario judgment across detection and suppression systems, take this free UniPrep2Go timed readiness check, then repair weak NFPA-aligned topics with the linked Anki deck.",
+    topicBlurbs: [
+      { id: "fire-suppression", label: "Fire suppression", blurb: "Water-based and special-hazard suppression concepts." },
+      {
+        id: "safety-built-environment",
+        label: "Safety in the built environment",
+        blurb: "Occupancy and built-environment fire safety judgment.",
+      },
+      { id: "detection-alarm", label: "Detection & alarm", blurb: "Detection devices, notification, and system reliability themes." },
+      {
+        id: "fire-prevention-programs",
+        label: "Fire prevention programs",
+        blurb: "Programs, materials, processes, and environments that reduce ignition risk.",
+      },
+      {
+        id: "information-analysis",
+        label: "Information & analysis",
+        blurb: "Fire protection data, analysis, and fire-science information use.",
+      },
+      {
+        id: "facility-hazard-management",
+        label: "Facility hazard management",
+        blurb: "Facility fire hazard management and inspection-oriented themes.",
+      },
+      {
+        id: "organizing-fire-rescue",
+        label: "Organizing fire & rescue",
+        blurb: "Organizing for fire and rescue services and coordination themes.",
+      },
+      { id: "confining-fires", label: "Confining fires", blurb: "Compartmentation and confining-fire strategies." },
+    ],
+    examFaqs: [
+      {
+        question: "What is the CFPS exam?",
+        answer:
+          "CFPS is NFPA’s Certified Fire Protection Specialist exam covering fire protection principles used in detection, alarm, suppression, and facility hazard management.",
+      },
+      {
+        question: "Is this free practice test the official CFPS exam?",
+        answer:
+          "No. UniPrep2Go provides independent timed practice — not official NFPA or Prometric exam items.",
+      },
+      {
+        question: "Who should pursue CFPS?",
+        answer:
+          "Fire protection and safety professionals who want a recognized specialty credential spanning systems and facility hazard management.",
+      },
+      {
+        question: "What topics are on CFPS?",
+        answer:
+          "Fire science, detection and alarm, suppression, and facility hazard management are common domains — confirm the live outline with NFPA.",
+      },
+      {
+        question: "How should I prepare for CFPS?",
+        answer:
+          "Use the NFPA exam guide, drill scenario questions by domain, take a timed mock, then repair weak areas with spaced repetition.",
+      },
+      {
+        question: "Is there a free CFPS practice test?",
+        answer:
+          "Yes — this page hosts a free timed UniPrep2Go CFPS readiness check.",
+      },
+    ],
+    keywords: [
+      "cfps practice test",
+      "free cfps practice questions",
+      "nfpa cfps practice exam",
+      "certified fire protection specialist practice test",
+    ],
+  }),
+  "mrics-readiness-check": explainer({
+    practiceTestName: "MRICS APC Practice Test",
+    whatIsExam:
+      "MRICS membership via the Assessment of Professional Competence (APC) is RICS’s pathway for surveyors to demonstrate ethics, mandatory competencies, and pathway-specific technical judgment — culminating in a final assessment interview rather than a single multiple-choice license test. UniPrep2Go’s MRICS readiness check helps candidates rehearse competency-style application and ethics scenarios before interview evidence writing. Confirm current APC guides with RICS for your pathway.",
+    administeredBy: "Royal Institution of Chartered Surveyors (RICS)",
+    officialFormat:
+      "APC structured training, written submissions, and final assessment interview (pathway-dependent). This UniPrep2Go check is an MCQ-style diagnostic aid, not the APC interview.",
+    whoFor:
+      "Surveyors and quantity-surveying candidates on RICS APC pathways who need timed practice on ethics, mandatory competencies, and technical application before final assessment.",
+    howToPrepare:
+      "Map your pathway competencies, draft Level 2/3 examples, take this free UniPrep2Go timed MRICS readiness check for judgment gaps, then repair weak competency themes with the linked Anki deck while you refine written APC evidence.",
+    topicBlurbs: [
+      {
+        id: "mandatory-competencies",
+        label: "Mandatory competencies",
+        blurb: "Personal and business skills RICS expects across pathways.",
+      },
+      {
+        id: "ethics-rules-conduct",
+        label: "Ethics & rules of conduct",
+        blurb: "RICS ethics, rules of conduct, and professionalism scenarios.",
+      },
+      {
+        id: "core-technical-pathway",
+        label: "Core technical competencies",
+        blurb: "Pathway technical knowledge at Level 1 depth.",
+      },
+      {
+        id: "level2-level3-application",
+        label: "Level 2/3 application",
+        blurb: "Application and reasoned advice judgment for APC evidence.",
+      },
+      {
+        id: "case-study-interview",
+        label: "Case study & interview",
+        blurb: "Case study, submission, and final interview preparation themes.",
+      },
+    ],
+    examFaqs: [
+      {
+        question: "What is the MRICS APC?",
+        answer:
+          "APC is RICS’s Assessment of Professional Competence pathway to MRICS membership, combining experience, written evidence, and a final assessment interview.",
+      },
+      {
+        question: "Is this an official RICS assessment?",
+        answer:
+          "No. UniPrep2Go provides independent practice diagnostics — not official RICS APC materials or interview scripts.",
+      },
+      {
+        question: "Who should use this MRICS readiness check?",
+        answer:
+          "APC candidates who want timed competency-style practice while preparing written submissions and interview examples.",
+      },
+      {
+        question: "Does MRICS use a multiple-choice exam?",
+        answer:
+          "APC centers on structured assessment and interview. This MCQ readiness check is a UniPrep2Go study aid for judgment practice, not a substitute for APC.",
+      },
+      {
+        question: "How should I prepare for MRICS APC?",
+        answer:
+          "Follow your RICS pathway guide, write competency examples, practice ethics scenarios, take a timed diagnostic, and refine interview evidence from weak topics.",
+      },
+      {
+        question: "Is there a free MRICS practice test?",
+        answer:
+          "Yes — take the free UniPrep2Go timed MRICS readiness check on this page.",
+      },
+    ],
+    keywords: [
+      "mrics practice questions",
+      "mrics apc practice test",
+      "free mrics practice test",
+      "rics apc practice exam",
+    ],
+  }),
+  "california-real-estate-readiness-check": explainer({
+    practiceTestName: "California Real Estate Practice Test",
+    whatIsExam:
+      "The California real estate salesperson exam is the state licensing knowledge test administered under the California Department of Real Estate (DRE) after required education. It covers practice and disclosures, agency, ownership and land use, valuation, contracts, financing, and transfer of property. Passing is required before DRE can issue a salesperson license. Confirm current outlines, education, and scheduling on official DRE materials.",
+    administeredBy: "California Department of Real Estate (DRE)",
+    officialFormat:
+      "Timed multiple-choice licensing exam; confirm current question count and cut score with California DRE.",
+    whoFor:
+      "California salesperson candidates who completed required pre-license education and need a timed diagnostic before the official DRE exam.",
+    howToPrepare:
+      "Study the DRE salesperson outline domains, drill disclosure and agency scenarios, take this free UniPrep2Go timed California readiness check, then repair weak domains with the linked Anki deck.",
+    topicBlurbs: [
+      { id: "ca-practice", label: "Practice & disclosures", blurb: "California practice standards and disclosure timing." },
+      { id: "ca-agency", label: "Agency", blurb: "Fiduciary duties and agency relationships under California rules." },
+      { id: "ca-ownership", label: "Ownership & land use", blurb: "Property rights, estates, and land-use controls." },
+      { id: "ca-valuation", label: "Valuation", blurb: "Market analysis and appraisal-related concepts." },
+      { id: "ca-contracts", label: "Contracts", blurb: "Contract formation and contingency themes." },
+      { id: "ca-financing", label: "Financing", blurb: "Loan instruments and California financing basics." },
+      { id: "ca-transfer", label: "Transfer", blurb: "Deeds, title, and transfer of property steps." },
+    ],
+    examFaqs: [
+      {
+        question: "What is the California real estate exam?",
+        answer:
+          "It is California DRE’s salesperson licensing exam after required education, covering practice, agency, ownership, valuation, contracts, financing, and transfer.",
+      },
+      {
+        question: "Is this the official California DRE exam?",
+        answer:
+          "No. UniPrep2Go provides independent timed practice only.",
+      },
+      {
+        question: "Do I need education before the California exam?",
+        answer:
+          "Yes — California requires approved education before exam eligibility. Confirm current courses with DRE.",
+      },
+      {
+        question: "What topics are on the California salesperson exam?",
+        answer:
+          "Practice/disclosures, agency, ownership/land use, valuation, contracts, financing, and transfer of property — verify weights with DRE.",
+      },
+      {
+        question: "How should I prepare for the California real estate exam?",
+        answer:
+          "Finish required courses, drill disclosure and math-heavy domains, take a timed mock, then repair weak topics before scheduling DRE.",
+      },
+      {
+        question: "Is there a free California real estate practice test?",
+        answer:
+          "Yes — take the free UniPrep2Go timed California real estate readiness check on this page.",
+      },
+    ],
+    keywords: [
+      "california real estate practice test",
+      "california dre practice exam",
+      "free california real estate practice test",
+      "ca salesperson practice test",
+    ],
   }),
 };
 

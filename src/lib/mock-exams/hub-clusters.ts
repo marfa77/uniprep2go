@@ -35,6 +35,7 @@ export const nicheGooglePrioritySlugs = [
   "electrical-journeyman-readiness-check",
   "nha-cpt-phlebotomy-readiness-check",
   "fl-real-estate-readiness-check",
+  "tx-real-estate-readiness-check",
 ] as const;
 
 /** Head exams kept live/GEO but deprioritized in Google sitemap + home CTAs. */
@@ -82,6 +83,8 @@ export const nicheGooglePageLeads: Partial<Record<(typeof nicheGooglePrioritySlu
     "This free NHA CPT phlebotomy practice test covers specimen collection, order of draw, safety, and patient care scenarios used on allied-health certification pathways. The topic report shows which lab skills to drill daily before your official NHA sitting.",
   "fl-real-estate-readiness-check":
     "This free Florida real estate salesperson readiness check focuses on FREC license law, contracts, property ownership, and math you will see on the state exam. It is the Florida spear for UniPrep2Go’s real-estate mocks — not a generic 50-state template page.",
+  "tx-real-estate-readiness-check":
+    "This free Texas real estate sales agent readiness check targets TRELA/TREC license law, agency and contracts, finance/closing math, and property practice. Use it as a timed diagnostic before Pearson VUE — not a recycled national-only quiz.",
 };
 
 export function getNicheGooglePageLead(slug: string): string | undefined {

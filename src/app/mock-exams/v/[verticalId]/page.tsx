@@ -14,6 +14,7 @@ import {
 import { filterMockSearchIndex, toMockSearchIndexItem } from "@/lib/mock-exams/search-index";
 import { MOCK_VERTICALS } from "@/lib/mock-exams/taxonomy";
 import type { MockVerticalId } from "@/lib/mock-exams/types";
+import { getVerticalSeoCopy } from "@/lib/mock-exams/vertical-seo";
 import { finalize, leafPageTitle, shouldIndexMockExam } from "@/lib/seo";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { getCatalogDeckBySlug, getDeckBySlug } from "@/lib/decks";
@@ -39,14 +40,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const vertical = getVerticalOrThrow(verticalId);
   const mocks = getMocksByVertical(verticalId);
   const path = `/mock-exams/v/${verticalId}`;
+  const seo = getVerticalSeoCopy(verticalId);
+  const description = seo
+    ? `${seo.lead.slice(0, 155).replace(/\s+\S*$/, "")}.`
+    : `${vertical.description} ${mocks.length} free timed practice tests with topic scoring — no signup.`;
 
   return finalize({
     title: leafPageTitle(`${vertical.seoTitle} | UniPrep2Go`),
-    description: `${vertical.description} ${mocks.length} free timed practice tests with topic scoring — no signup.`,
+    description,
     alternates: { canonical: path },
     openGraph: {
       title: vertical.seoTitle,
-      description: vertical.description,
+      description: seo?.lead ?? vertical.description,
       url: path,
       type: "website",
       images: [
@@ -90,6 +95,7 @@ export default async function MockVerticalPage({ params, searchParams }: PagePro
   const imageSrc = getMockClusterImage(vertical.imageType);
   const pageUrl = absoluteUrl(`/mock-exams/v/${verticalId}`);
   const indexableCount = mocks.filter((mock) => shouldIndexMockExam(mock.slug)).length;
+  const seo = getVerticalSeoCopy(verticalId);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -98,7 +104,7 @@ export default async function MockVerticalPage({ params, searchParams }: PagePro
         "@type": "CollectionPage",
         "@id": `${pageUrl}#webpage`,
         name: vertical.seoTitle,
-        description: vertical.description,
+        description: seo?.lead ?? vertical.description,
         url: pageUrl,
         isPartOf: { "@id": `${siteConfig.url}/#website` },
         numberOfItems: mocks.length,
@@ -112,6 +118,18 @@ export default async function MockVerticalPage({ params, searchParams }: PagePro
           url: absoluteUrl(`/mock-exams/${mock.slug}`),
         })),
       },
+      ...(seo?.faqs?.length
+        ? [
+            {
+              "@type": "FAQPage",
+              mainEntity: seo.faqs.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: { "@type": "Answer", text: faq.answer },
+              })),
+            },
+          ]
+        : []),
     ],
   };
 
@@ -178,7 +196,9 @@ export default async function MockVerticalPage({ params, searchParams }: PagePro
           </div>
         </div>
 
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">{vertical.description}</p>
+        <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
+          {seo?.lead ?? vertical.description}
+        </p>
         <p className="mt-2 text-sm text-[#5f5749]">
           {query
             ? `${mocks.length} match${mocks.length === 1 ? "" : "es"} for “${query}”`
@@ -228,6 +248,27 @@ export default async function MockVerticalPage({ params, searchParams }: PagePro
             </ul>
           </section>
         )}
+
+        {seo?.sections.map((section) => (
+          <section className="mt-10" key={section.heading}>
+            <h2 className="text-2xl font-semibold tracking-tight">{section.heading}</h2>
+            <p className="mt-4 text-base leading-8 text-[#4f493e]">{section.body}</p>
+          </section>
+        ))}
+
+        {seo?.faqs?.length ? (
+          <section className="mt-10" id="faq">
+            <h2 className="text-2xl font-semibold tracking-tight">FAQ</h2>
+            <dl className="mt-6 space-y-5">
+              {seo.faqs.map((faq) => (
+                <div key={faq.question}>
+                  <dt className="font-semibold tracking-tight">{faq.question}</dt>
+                  <dd className="mt-2 text-base leading-8 text-[#4f493e]">{faq.answer}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        ) : null}
 
         <p className="mt-12 text-sm text-[#5f5749]">
           <Link className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline" href="/mock-exams">

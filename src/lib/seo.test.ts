@@ -81,11 +81,28 @@ describe("seo utilities (Barakhlo patterns)", () => {
   it("boosts niche Google priority slugs and deprioritizes head exams in sitemap", () => {
     expect(nicheGooglePrioritySlugs.length).toBeGreaterThanOrEqual(10);
     expect(isNicheGooglePrioritySlug("epa-608-readiness-check")).toBe(true);
+    expect(isNicheGooglePrioritySlug("tx-real-estate-readiness-check")).toBe(true);
     expect(mockExamSitemapPriority("epa-608-readiness-check")).toBe(0.98);
     expect(mockExamSitemapPriority("sie-full-mock")).toBe(0.72);
     expect(mockExamSitemapPriority("nremt-emt-readiness-check")).toBe(0.88);
     for (const slug of googleHeadExamSlugs) {
       expect(mockExamSitemapPriority(slug)).toBe(0.72);
+    }
+  });
+
+  it("keeps priority money mocks on thick niche explainers (whoFor + 6 FAQs)", async () => {
+    const { getNicheExamExplainer } = await import("./mock-exams/niche-exam-explainers");
+    for (const slug of [
+      "nha-cpt-phlebotomy-readiness-check",
+      "tx-real-estate-readiness-check",
+      "epa-608-readiness-check",
+      "leed-green-associate-readiness-check",
+    ] as const) {
+      const explainer = getNicheExamExplainer(slug);
+      expect(explainer?.whoFor?.length).toBeGreaterThan(80);
+      expect(explainer?.howToPrepare?.length).toBeGreaterThan(80);
+      expect(explainer?.examFaqs?.length).toBeGreaterThanOrEqual(6);
+      expect((explainer?.whatIsExam.split(/\s+/).length ?? 0)).toBeGreaterThan(60);
     }
   });
 
