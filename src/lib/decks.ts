@@ -2203,7 +2203,7 @@ const rawDecks: Deck[] = [
     audience:
       "Latin American Spanish-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
     format: ".apkg",
-    coverImage: "/covers/ielts-toefl-english-for-spanish-speakers-anki-deck.webp",
+    coverImage: "/covers/ielts-toefl-english-for-spanish-speakers-anki-deck-v2.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/ielts-toefl-english-for-spanish-speakers-anki-deck?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
@@ -2253,7 +2253,7 @@ const rawDecks: Deck[] = [
     audience:
       "Brazilian Portuguese-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
     format: ".apkg",
-    coverImage: "/covers/ielts-toefl-english-for-portuguese-speakers-anki-deck.webp",
+    coverImage: "/covers/ielts-toefl-english-for-portuguese-speakers-anki-deck-v2.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/ielts-toefl-english-for-portuguese-speakers-anki-deck?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",

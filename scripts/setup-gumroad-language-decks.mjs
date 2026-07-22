@@ -251,7 +251,7 @@ const SPECS = {
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
     ].join(""),
-    coverPath: "public/covers/ielts-toefl-english-for-spanish-speakers-anki-deck.webp",
+    coverPath: "public/covers/ielts-toefl-english-for-spanish-speakers-anki-deck-v2.webp",
     apkgRelPaths: [
       "prep2go_English_A2_Spanish_Speakers/prep2go_English_A2_Spanish_Speakers_FULL.apkg",
     ],
@@ -267,7 +267,7 @@ const SPECS = {
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material. Not a CIPLE European Portuguese deck.</em></p>",
     ].join(""),
-    coverPath: "public/covers/ielts-toefl-english-for-portuguese-speakers-anki-deck.webp",
+    coverPath: "public/covers/ielts-toefl-english-for-portuguese-speakers-anki-deck-v2.webp",
     apkgRelPaths: [
       "prep2go_English_A2_Portuguese_Speakers/prep2go_English_A2_Portuguese_Speakers_FULL.apkg",
     ],
