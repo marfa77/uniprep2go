@@ -360,6 +360,132 @@ SPECS: dict[str, dict[str, Any]] = {
             ("Delivery", "Instant .apkg"),
         ],
     },
+    "swedish-a2-sfi-anki-deck": {
+        "label": "Swedish SFI Residence Citizenship",
+        "headline": "Swedish SFI Residence Citizenship Anki Deck — 1000 Flashcards",
+        "exam": "SFI A2 · Swedish residence · citizenship language",
+        "hook": (
+            "Swedish vocabulary for SFI (Swedish for Immigrants) A2 and the language side "
+            "of residence and citizenship pathways in Sweden."
+        ),
+        "audience": (
+            "For SFI learners and applicants preparing Swedish for residence or citizenship "
+            "language requirements."
+        ),
+        "disclaimer": "Swedish SFI / immigration authorities",
+        "about_heading": "What is SFI?",
+        "about": (
+            "SFI (Swedish for Immigrants) is Sweden's main Swedish-language pathway for newcomers. "
+            "A2-level vocabulary supports everyday life and the language evidence often needed "
+            "for residence and citizenship applications."
+        ),
+        "pathways": "SFI A2 · residence · citizenship language",
+        "deck_covers": (
+            "1,000 exam-specific Swedish vocabulary cards with audio and practical "
+            "example sentences for work, housing, services, and everyday interaction."
+        ),
+        "not_included": (
+            "Official SFI course materials or full citizenship civics — "
+            "pair this deck with official practice."
+        ),
+        "why_anki": (
+            "Residence and citizenship timelines reward consistent Swedish recall. "
+            "Spaced Anki keeps everyday Swedish available under exam pressure."
+        ),
+        "cards": "1000",
+        "format_note": "Anki .apkg with audio and examples",
+        "sample_captions": ["vara", "jag", "du"],
+        "facts": [
+            ("Pathways", "SFI · residence · citizenship"),
+            ("Cards", "1000 vocabulary"),
+            ("Media", "Audio + examples"),
+            ("Delivery", "Instant .apkg"),
+        ],
+    },
+    "greek-a2-ellinomatheia-anki-deck": {
+        "label": "Greek Ellinomatheia Residence Citizenship",
+        "headline": "Greek Ellinomatheia Residence Citizenship Anki Deck — 1000 Flashcards",
+        "exam": "Ellinomatheia A2 · Greek residence · citizenship language",
+        "hook": (
+            "Greek vocabulary for Ellinomatheia A2 and the language side of residence "
+            "and citizenship pathways in Greece."
+        ),
+        "audience": (
+            "For Ellinomatheia learners and applicants preparing Greek for residence or "
+            "citizenship language requirements."
+        ),
+        "disclaimer": "Ellinomatheia / Greek language authorities",
+        "about_heading": "What is Ellinomatheia?",
+        "about": (
+            "Ellinomatheia is Greece's main Greek-language certificate pathway. "
+            "A2-level vocabulary supports everyday life and the language evidence often needed "
+            "for residence and citizenship applications."
+        ),
+        "pathways": "Ellinomatheia A2 · residence · citizenship language",
+        "deck_covers": (
+            "1,000 exam-specific Greek vocabulary cards with audio and practical "
+            "example sentences for work, housing, services, and everyday interaction."
+        ),
+        "not_included": (
+            "Official Ellinomatheia past papers or full citizenship civics — "
+            "pair this deck with official practice."
+        ),
+        "why_anki": (
+            "Residence and citizenship timelines reward consistent Greek recall. "
+            "Spaced Anki keeps everyday Greek available under exam pressure."
+        ),
+        "cards": "1000",
+        "format_note": "Anki .apkg with audio and examples",
+        "sample_captions": ["είμαι", "εγώ", "εσύ"],
+        "facts": [
+            ("Pathways", "Ellinomatheia · residence · citizenship"),
+            ("Cards", "1000 vocabulary"),
+            ("Media", "Audio + examples"),
+            ("Delivery", "Instant .apkg"),
+        ],
+    },
+    "czech-a2-cce-anki-deck": {
+        "label": "Czech CCE Residence Citizenship",
+        "headline": "Czech CCE Residence Citizenship Anki Deck — 1000 Flashcards",
+        "exam": "CCE A2 · Czech residence · citizenship language",
+        "hook": (
+            "Czech vocabulary for CCE (Czech Language Certificate Exam) A2 and the language "
+            "side of residence and citizenship pathways in Czechia."
+        ),
+        "audience": (
+            "For CCE learners and applicants preparing Czech for residence or citizenship "
+            "language requirements."
+        ),
+        "disclaimer": "CCE / Czech language authorities",
+        "about_heading": "What is CCE?",
+        "about": (
+            "CCE (Czech Language Certificate Exam) is Czechia's main Czech-language certificate pathway. "
+            "A2-level vocabulary supports everyday life and the language evidence often needed "
+            "for residence and citizenship applications."
+        ),
+        "pathways": "CCE A2 · residence · citizenship language",
+        "deck_covers": (
+            "1,000 exam-specific Czech vocabulary cards with audio and practical "
+            "example sentences for work, housing, services, and everyday interaction."
+        ),
+        "not_included": (
+            "Official CCE past papers or full citizenship civics — "
+            "pair this deck with official practice."
+        ),
+        "why_anki": (
+            "Residence and citizenship timelines reward consistent Czech recall. "
+            "Spaced Anki keeps everyday Czech available under exam pressure."
+        ),
+        "cards": "1000",
+        "format_note": "Anki .apkg with audio and examples",
+        "sample_captions": ["být", "já", "ty"],
+        "facts": [
+            ("Pathways", "CCE · residence · citizenship"),
+            ("Cards", "1000 vocabulary"),
+            ("Media", "Audio + examples"),
+            ("Delivery", "Instant .apkg"),
+        ],
+    },
 }
 
 
