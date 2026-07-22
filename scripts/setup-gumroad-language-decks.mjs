@@ -9,9 +9,9 @@
  *   node scripts/setup-gumroad-language-decks.mjs --slug ciple-a2-european-portuguese-anki-deck --assets-only
  */
 
-import { existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { execSync } from "node:child_process";
-import { dirname, join } from "node:path";
+import { basename, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { tmpdir } from "node:os";
 import {
@@ -25,6 +25,7 @@ const PRODUCT_CREATE_DELAY_MS = Number(process.env.GUMROAD_CREATE_DELAY_MS ?? 50
 const ANKI_GENERATOR_ROOT =
   process.env.ANKI_GENERATOR_ROOT?.trim() ||
   join(dirname(root), "Anki Generator");
+const ANKI_DECK_VAULT = join(ANKI_GENERATOR_ROOT, "out", "anki-decks");
 const PRICE_USD = 26;
 
 /** @type {Record<string, {
@@ -212,8 +213,31 @@ function resolveCoverAbsolute(relPath) {
   return existsSync(absolute) ? absolute : null;
 }
 
+/** Prefer newest stamped file `NAME_YYMMDD-HHMM.apkg`; fall back to unstamped NAME.apkg. */
 function resolveApkgAbsolute(relPath) {
   const absolute = join(ANKI_GENERATOR_ROOT, "out", relPath);
+  const dir = dirname(absolute);
+  const base = basename(absolute, ".apkg");
+  const stampRe = new RegExp(
+    `^${base.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}_\\d{6}-\\d{4}(?:-\\d+)?\\.apkg$`,
+  );
+
+  const candidates = [];
+  for (const folder of [dir, ANKI_DECK_VAULT]) {
+    if (!existsSync(folder)) continue;
+    for (const name of readdirSync(folder)) {
+      if (stampRe.test(name)) candidates.push(join(folder, name));
+    }
+  }
+  if (candidates.length) {
+    candidates.sort((a, b) => {
+      const ma = a.match(/_(\d{6}-\d{4})(?:-\d+)?\.apkg$/)?.[1] ?? "";
+      const mb = b.match(/_(\d{6}-\d{4})(?:-\d+)?\.apkg$/)?.[1] ?? "";
+      if (ma !== mb) return mb.localeCompare(ma);
+      return b.localeCompare(a);
+    });
+    return candidates[0];
+  }
   return existsSync(absolute) ? absolute : null;
 }
 

@@ -1861,6 +1861,71 @@ const rawDecks: Deck[] = [
     ],
   },
   {
+    slug: "citizenship-naturalization-anki-bundle",
+    category: "language",
+    status: "available",
+    title: "Citizenship & Naturalization Anki Bundle — 6 Countries · 1000+ Cards",
+    shortName: "Citizenship Naturalization Bundle",
+    subtitle:
+      "Six Anki civics decks for Germany, France, UK, Canada, Australia, and the U.S. — 1000+ naturalization flashcards.",
+    directAnswer:
+      "UniPrep2Go sells a Citizenship & Naturalization Anki bundle with six separate .apkg decks covering Leben in Deutschland, Naturalisation française, Life in the UK, Canadian Citizenship, Australian Citizenship, and U.S. Citizenship — 1000+ civics flashcards total. It is delivered as six Anki .apkg files for {PRICE} through Gumroad by PixID Studio. Independent study aid — not official government exam material.",
+    lastUpdated: "2026-07-22",
+    audience:
+      "Applicants preparing citizenship or naturalization civics tests in Germany, France, the UK, Canada, Australia, or the United States.",
+    format: ".apkg",
+    coverImage: "/covers/citizenship-naturalization-anki-bundle.webp",
+    checkoutUrl:
+      "https://pixidstudio.gumroad.com/l/citizenship-naturalization-anki-bundle?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "1000+",
+      topics:
+        "Leben in Deutschland, Naturalisation française, Life in the UK, Canadian / Australian / U.S. Citizenship",
+      formulas: "Six separate Anki .apkg files — one deck per country",
+      examYear: "Current citizenship / naturalization cycles",
+      delivery: "Six .apkg files through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [
+      {
+        question: "What is the supreme law of the land?",
+        answer: "The Constitution — U.S. Citizenship civics sample.",
+        imageUrl: "/covers/citizenship-naturalization-anki-bundle.webp",
+      },
+      {
+        question:
+          "In Deutschland dürfen Menschen offen etwas gegen die Regierung sagen weil …",
+        answer: "hier Meinungsfreiheit gilt. — Leben in Deutschland sample (Art. 5 GG).",
+        imageUrl: "/covers/citizenship-naturalization-anki-bundle.webp",
+      },
+      {
+        question: "Which countries are included?",
+        answer:
+          "Germany (Leben in Deutschland), France (Naturalisation française), UK, Canada, Australia, and the U.S. — six .apkg downloads.",
+        imageUrl: "/covers/citizenship-naturalization-anki-bundle.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is included in the $20 bundle?",
+        answer:
+          "Six Anki .apkg decks: Leben in Deutschland (~296 cards), Naturalisation française (~200), Life in the UK (~136), Canadian Citizenship (~134), Australian Citizenship (~131), and U.S. Citizenship (~125).",
+      },
+      {
+        question: "Are these official government materials?",
+        answer:
+          "No. This is an independent UniPrep2Go study aid sold by PixID Studio and is not affiliated with any government citizenship or naturalization authority.",
+      },
+      {
+        question: "Do the cards include audio and images?",
+        answer:
+          "These are text-first civics decks (question → answer). They do not include vocabulary media like the language Anki line.",
+      },
+    ],
+  },
+  {
     slug: "dele-a2-spanish-anki-deck",
     category: "language",
     status: "available",

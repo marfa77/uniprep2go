@@ -267,6 +267,18 @@ Print both PDFs at 100% on A4, cut along the dashed lines (six cards per page), 
 
 Kids-first DELF Prim framing at **$12** with two instant PDF downloads — separate from the adult DELF DALF TCF TEF Anki deck.`,
 
+  "citizenship-naturalization-anki-bundle": `### Who this bundle is for
+
+Applicants preparing **citizenship or naturalization civics** tests in **Germany, France, the UK, Canada, Australia, or the United States** — text-first Anki recall, not language vocabulary media.
+
+### What's inside
+
+Six separate \`.apkg\` files: Leben in Deutschland, Naturalisation française, Life in the UK, Canadian Citizenship, Australian Citizenship, and U.S. Citizenship — **1000+** cards total.
+
+### What makes this Gumroad edition different
+
+One **$20** multi-country civics bundle instead of six separate listings — instant download of all six decks.`,
+
   "dele-a2-spanish-anki-deck": `### Which Spanish pathways this deck targets
 
 **DELE A2** (Instituto Cervantes) vocabulary plus overlapping **SIELE A2**-style word knowledge. Language only — no CCSE civics file.

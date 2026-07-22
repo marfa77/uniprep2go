@@ -111,7 +111,7 @@ describe("deck catalog", () => {
     }
   });
 
-  it("keeps eight curated language Anki decks plus DELF Prim printable on Gumroad", () => {
+  it("keeps eight curated language Anki decks plus DELF Prim and citizenship bundle on Gumroad", () => {
     const expectedAnkiLanguageDecks = [
       "ciple-a2-european-portuguese-anki-deck",
       "delf-b2-french-anki-deck",
@@ -125,6 +125,7 @@ describe("deck catalog", () => {
     const expectedLanguageDecks = [
       ...expectedAnkiLanguageDecks,
       "delf-prim-printable-french-flashcards",
+      "citizenship-naturalization-anki-bundle",
     ];
 
     const languageDecks = availableDecks.filter((deck) => deck.category === "language");
@@ -164,6 +165,19 @@ describe("deck catalog", () => {
     expect(primDeck?.title).toContain("Ages 7–12");
     expect(primDeck?.directAnswer).toContain("ages 7–12");
     expect(primDeck?.sampleCards).toHaveLength(4);
+
+    const citizenshipBundle = getDeckBySlug("citizenship-naturalization-anki-bundle");
+    expect(citizenshipBundle).toMatchObject({
+      status: "available",
+      format: ".apkg",
+      checkoutProvider: "Gumroad",
+      checkoutSeller: "PixID Studio",
+      checkoutUrl:
+        "https://pixidstudio.gumroad.com/l/citizenship-naturalization-anki-bundle?wanted=true",
+    });
+    expect(citizenshipBundle?.title).toContain("Citizenship & Naturalization");
+    expect(citizenshipBundle?.directAnswer).toContain("six separate .apkg");
+    expect(citizenshipBundle?.sampleCards).toHaveLength(3);
 
     expect(getDeckBySlug("ciple-a2-european-portuguese-anki-deck")?.directAnswer).toContain(
       "nacionalidade portuguesa",
@@ -585,6 +599,8 @@ describe("deck catalog", () => {
       "delf-b2-french-anki-deck": "DELF DALF TCF TEF French Anki Deck — 2000+ Flashcards",
       "delf-prim-printable-french-flashcards":
         "DELF Prim Printable French Flashcards — Ages 7–12 · 360 PDF Cards",
+      "citizenship-naturalization-anki-bundle":
+        "Citizenship & Naturalization Anki Bundle — 6 Countries · 1000+ Cards",
       "dele-a2-spanish-anki-deck": "DELE SIELE Spanish Anki Deck — 1000 Flashcards",
       "dutch-a2-inburgering-anki-deck":
         "Dutch Inburgering NT2 A2 Anki Deck — 1000+ Flashcards",

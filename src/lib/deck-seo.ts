@@ -241,6 +241,23 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     intro:
       "Parents and teachers print DELF Prim vocabulary cards for ages 7–12, cut them out, and use QR audio for pronunciation practice.",
   },
+  "citizenship-naturalization-anki-bundle": {
+    title: "Citizenship & Naturalization Anki Bundle | 6 Countries · 1000+ Cards",
+    headline: "Citizenship & Naturalization Anki Bundle — 6 Countries",
+    studyLabel: "citizenship naturalization civics Anki bundle",
+    description:
+      "Six Anki civics decks in one $20 bundle: Leben in Deutschland, Naturalisation française, Life in the UK, Canadian Citizenship, Australian Citizenship, and U.S. Citizenship — 1000+ flashcards. Independent study aid — not official government material.",
+    keywords: [
+      "citizenship anki deck",
+      "naturalization flashcards",
+      "leben in deutschland anki",
+      "life in the uk anki",
+      "us citizenship civics anki",
+      "canadian citizenship test anki",
+    ],
+    intro:
+      "Citizenship and naturalization applicants drill civics questions for six countries with separate Anki decks in one download.",
+  },
   "dele-a2-spanish-anki-deck": {
     title: "DELE SIELE Spanish Anki Deck | 1000 Flashcards",
     headline: "DELE SIELE Spanish Exam Prep — 1000 Flashcards",

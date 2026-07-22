@@ -31,7 +31,7 @@ describe("intent pages visibility", () => {
 
     expect(page).toBeDefined();
     expect(page?.deckSlugs).toEqual(languageDeckSlugs);
-    expect(page?.deckSlugs).toHaveLength(9);
+    expect(page?.deckSlugs).toHaveLength(10);
     expect(page?.directAnswer).toContain("CIPLE CAPLE Portuguese");
     expect(page?.directAnswer).toContain("German Goethe telc ÖSD DTZ");
     expect(page?.directAnswer).toContain("Norwegian Norskprøve");
@@ -42,6 +42,7 @@ describe("intent pages visibility", () => {
     expect(page?.directAnswer).toContain("eight curated multi-pathway language Anki decks");
     expect(page?.directAnswer).toContain("DELF Prim printable");
     expect(page?.directAnswer).toContain("ages 7–12");
+    expect(page?.directAnswer).toContain("Citizenship & Naturalization Anki Bundle");
     expect(page?.directAnswer).toContain("Gumroad");
   });
 
