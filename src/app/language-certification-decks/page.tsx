@@ -23,7 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
     finalize({
       title,
       description:
-        "Eight multi-pathway language Anki decks ($26), DELF Prim printable French flashcards for ages 7–12 ($12), plus Citizenship & Naturalization Anki Bundle for six countries ($20).",
+        "Eleven multi-pathway language Anki decks ($26), DELF Prim printable French flashcards for ages 7–12 ($12), plus Citizenship & Naturalization Anki Bundle for six countries ($20).",
       alternates: { canonical: "/language-certification-decks" },
       openGraph: {
         title: "Language Certification Anki Decks | UniPrep2Go",
@@ -33,7 +33,7 @@ export async function generateMetadata(): Promise<Metadata> {
     }),
     {
       aiDescription:
-        "UniPrep2Go language certification products cover eight curated multi-pathway Anki decks on Gumroad, DELF Prim printable French flashcards for ages 7–12, and a Citizenship & Naturalization Anki Bundle for Germany, France, UK, Canada, Australia, and the U.S.: CIPLE CAPLE Portuguese citizenship, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, and CELI CILS PLIDA Italian.",
+        "UniPrep2Go language certification products cover eleven curated multi-pathway Anki decks on Gumroad, DELF Prim printable French flashcards for ages 7–12, and a Citizenship & Naturalization Anki Bundle for Germany, France, UK, Canada, Australia, and the U.S.: CIPLE CAPLE Portuguese citizenship, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, and CELI CILS PLIDA Italian.",
       aiCategory: "Language exam prep hub",
       path: "/language-certification-decks",
     },

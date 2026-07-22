@@ -1792,6 +1792,138 @@ const rawDecks: Deck[] = [
     ],
   },
   {
+    slug: "swedish-a2-sfi-anki-deck",
+    category: "language",
+    status: "available",
+    title: "Swedish SFI Residence Citizenship Anki Deck — 1000 Flashcards",
+    shortName: "Swedish SFI",
+    subtitle:
+      "1,000 Swedish flashcards for SFI A2 and Swedish residence or citizenship language prep.",
+    directAnswer:
+      "UniPrep2Go sells a Swedish SFI Anki deck with 1,000 exam-specific vocabulary cards, audio, and practical example sentences for work, housing, services, and everyday interaction in Sweden. Built for SFI (Swedish for Immigrants) A2 and the language side of residence and citizenship pathways. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-07-22",
+    audience:
+      "SFI learners and applicants preparing Swedish for residence or citizenship language requirements.",
+    format: ".apkg",
+    coverImage: "/covers/swedish-a2-sfi-anki-deck.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/swedish-a2-sfi-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "1000",
+      topics: "SFI A2, Swedish residence and citizenship vocabulary",
+      formulas: "Audio + example sentences for SFI and daily-life themes",
+      examYear: "Current SFI / residence-citizenship cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Which Swedish pathways does this deck cover?",
+        answer:
+          "SFI (Swedish for Immigrants) A2 vocabulary plus everyday Swedish used for residence and citizenship language requirements. Confirm your required course level with official sources.",
+      },
+      {
+        question: "What does the deck include?",
+        answer:
+          "1,000 exam-specific Swedish vocabulary words for SFI with audio and Anki-ready review.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
+      },
+    ],
+  },
+  {
+    slug: "greek-a2-ellinomatheia-anki-deck",
+    category: "language",
+    status: "available",
+    title: "Greek Ellinomatheia Residence Citizenship Anki Deck — 1000 Flashcards",
+    shortName: "Greek Ellinomatheia",
+    subtitle:
+      "1,000 Greek flashcards for Ellinomatheia A2 and Greek residence or citizenship language prep.",
+    directAnswer:
+      "UniPrep2Go sells a Greek Ellinomatheia Anki deck with 1,000 exam-specific vocabulary cards, audio, and practical example sentences for work, housing, services, and everyday interaction in Greece. Built for Ellinomatheia A2 and the language side of residence and citizenship pathways. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-07-22",
+    audience:
+      "Ellinomatheia learners and applicants preparing Greek for residence or citizenship language requirements.",
+    format: ".apkg",
+    coverImage: "/covers/greek-a2-ellinomatheia-anki-deck.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/greek-a2-ellinomatheia-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "1000",
+      topics: "Ellinomatheia A2, Greek residence and citizenship vocabulary",
+      formulas: "Audio + example sentences for Ellinomatheia and daily-life themes",
+      examYear: "Current Ellinomatheia / residence-citizenship cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Which Greek pathways does this deck cover?",
+        answer:
+          "Ellinomatheia A2 vocabulary plus everyday Greek used for residence and citizenship language requirements. Confirm your required level with official sources.",
+      },
+      {
+        question: "What does the deck include?",
+        answer:
+          "1,000 exam-specific Greek vocabulary words for Ellinomatheia with audio and Anki-ready review.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
+      },
+    ],
+  },
+  {
+    slug: "czech-a2-cce-anki-deck",
+    category: "language",
+    status: "available",
+    title: "Czech CCE Residence Citizenship Anki Deck — 1000 Flashcards",
+    shortName: "Czech CCE",
+    subtitle:
+      "1,000 Czech flashcards for CCE A2 and Czech residence or citizenship language prep.",
+    directAnswer:
+      "UniPrep2Go sells a Czech CCE Anki deck with 1,000 exam-specific vocabulary cards, audio, and practical example sentences for work, housing, services, and everyday interaction in Czechia. Built for CCE (Czech Language Certificate Exam) A2 and the language side of residence and citizenship pathways. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-07-22",
+    audience:
+      "CCE learners and applicants preparing Czech for residence or citizenship language requirements.",
+    format: ".apkg",
+    coverImage: "/covers/czech-a2-cce-anki-deck.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/czech-a2-cce-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "1000",
+      topics: "CCE A2, Czech residence and citizenship vocabulary",
+      formulas: "Audio + example sentences for CCE and daily-life themes",
+      examYear: "Current CCE / residence-citizenship cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Which Czech pathways does this deck cover?",
+        answer:
+          "CCE (Czech Language Certificate Exam) A2 vocabulary plus everyday Czech used for residence and citizenship language requirements. Confirm your required level with official sources.",
+      },
+      {
+        question: "What does the deck include?",
+        answer:
+          "1,000 exam-specific Czech vocabulary words for CCE with audio and Anki-ready review.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
+      },
+    ],
+  },
+  {
     slug: "delf-prim-printable-french-flashcards",
     category: "language",
     status: "available",

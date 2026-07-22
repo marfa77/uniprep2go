@@ -255,6 +255,42 @@ PD2 / PD3 + residence/citizenship pathway copy — not a generic Danish tourist 
 
 Norskprøve + residence/citizenship framing on Gumroad — not a tourist phrase pack.`,
 
+  "swedish-a2-sfi-anki-deck": `### Which Swedish pathways this deck targets
+
+**SFI** (Swedish for Immigrants) A2 vocabulary, plus everyday Swedish used for **residence** and **citizenship** language requirements. Confirm your required course level officially.
+
+### Study plan
+
+20 cards/day with audio examples. Pair with speaking and listening practice for SFI.
+
+### What makes this Gumroad edition different
+
+SFI + residence/citizenship framing on Gumroad — not a tourist phrase pack.`,
+
+  "greek-a2-ellinomatheia-anki-deck": `### Which Greek pathways this deck targets
+
+**Ellinomatheia A2** vocabulary, plus everyday Greek used for **residence** and **citizenship** language requirements. Confirm your required level officially.
+
+### Study plan
+
+20 cards/day with audio examples. Pair with speaking and listening practice for Ellinomatheia.
+
+### What makes this Gumroad edition different
+
+Ellinomatheia + residence/citizenship framing on Gumroad — not a tourist phrase pack.`,
+
+  "czech-a2-cce-anki-deck": `### Which Czech pathways this deck targets
+
+**CCE** (Czech Language Certificate Exam) A2 vocabulary, plus everyday Czech used for **residence** and **citizenship** language requirements. Confirm your required level officially.
+
+### Study plan
+
+20 cards/day with audio examples. Pair with speaking and listening practice for CCE.
+
+### What makes this Gumroad edition different
+
+CCE + residence/citizenship framing on Gumroad — not a tourist phrase pack.`,
+
   "delf-prim-printable-french-flashcards": `### Who this printable is for
 
 **DELF Prim** learners ages **7–12** and parents/teachers who want paper cards with pictures and QR pronunciation — not an adult Anki vocabulary bank.

@@ -225,6 +225,54 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     intro:
       "Norskprøve A2 learners preparing residence or citizenship language requirements use daily Bokmål vocabulary recall alongside speaking practice.",
   },
+  "swedish-a2-sfi-anki-deck": {
+    title: "Swedish SFI Residence Citizenship Anki | 1000 Cards",
+    headline: "Swedish SFI Residence Citizenship Prep — 1000 Flashcards",
+    studyLabel: "Swedish SFI exam prep",
+    description:
+      "Swedish Anki deck with 1000 flashcards for SFI (Swedish for Immigrants) A2 and residence or citizenship language prep. Independent study aid — not official SFI or Migration Agency material.",
+    keywords: [
+      "sfi anki",
+      "swedish sfi flashcards",
+      "sfi a2 vocabulary",
+      "swedish citizenship vocabulary",
+      "swedish for immigrants anki",
+    ],
+    intro:
+      "SFI learners preparing residence or citizenship language requirements use daily Swedish vocabulary recall alongside speaking practice.",
+  },
+  "greek-a2-ellinomatheia-anki-deck": {
+    title: "Greek Ellinomatheia Residence Citizenship Anki | 1000 Cards",
+    headline: "Greek Ellinomatheia Residence Citizenship Prep — 1000 Flashcards",
+    studyLabel: "Greek Ellinomatheia exam prep",
+    description:
+      "Greek Anki deck with 1000 flashcards for Ellinomatheia A2 and residence or citizenship language prep. Independent study aid — not official Ellinomatheia material.",
+    keywords: [
+      "ellinomatheia anki",
+      "greek a2 flashcards",
+      "ellinomatheia a2 vocabulary",
+      "greek citizenship vocabulary",
+      "greek for immigrants anki",
+    ],
+    intro:
+      "Ellinomatheia learners preparing residence or citizenship language requirements use daily Greek vocabulary recall alongside speaking practice.",
+  },
+  "czech-a2-cce-anki-deck": {
+    title: "Czech CCE Residence Citizenship Anki | 1000 Cards",
+    headline: "Czech CCE Residence Citizenship Prep — 1000 Flashcards",
+    studyLabel: "Czech CCE exam prep",
+    description:
+      "Czech Anki deck with 1000 flashcards for CCE A2 and residence or citizenship language prep. Independent study aid — not official CCE / ÚJOP material.",
+    keywords: [
+      "cce anki",
+      "czech a2 flashcards",
+      "cce a2 vocabulary",
+      "czech citizenship vocabulary",
+      "czech language certificate anki",
+    ],
+    intro:
+      "CCE learners preparing residence or citizenship language requirements use daily Czech vocabulary recall alongside speaking practice.",
+  },
   "delf-prim-printable-french-flashcards": {
     title: "DELF Prim Printable French Flashcards | Ages 7–12 · 360 Cards",
     headline: "DELF Prim Printable French — Ages 7–12 · 360 PDF Cards",

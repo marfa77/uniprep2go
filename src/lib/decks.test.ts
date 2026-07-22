@@ -111,7 +111,7 @@ describe("deck catalog", () => {
     }
   });
 
-  it("keeps eight curated language Anki decks plus DELF Prim and citizenship bundle on Gumroad", () => {
+  it("keeps eleven curated language Anki decks plus DELF Prim and citizenship bundle on Gumroad", () => {
     const expectedAnkiLanguageDecks = [
       "ciple-a2-european-portuguese-anki-deck",
       "delf-b2-french-anki-deck",
@@ -121,6 +121,9 @@ describe("deck catalog", () => {
       "celi-b1-italian-anki-deck",
       "danish-a2-prove-i-dansk-anki-deck",
       "norwegian-a2-norskprove-anki-deck",
+      "swedish-a2-sfi-anki-deck",
+      "greek-a2-ellinomatheia-anki-deck",
+      "czech-a2-cce-anki-deck",
     ];
     const expectedLanguageDecks = [
       ...expectedAnkiLanguageDecks,
@@ -187,6 +190,9 @@ describe("deck catalog", () => {
     expect(getDeckBySlug("celi-b1-italian-anki-deck")?.title).toContain("CELI CILS PLIDA");
     expect(getDeckBySlug("danish-a2-prove-i-dansk-anki-deck")?.title).toContain("PD2 PD3");
     expect(getDeckBySlug("norwegian-a2-norskprove-anki-deck")?.title).toContain("Norskprøve");
+    expect(getDeckBySlug("swedish-a2-sfi-anki-deck")?.title).toContain("Swedish SFI");
+    expect(getDeckBySlug("greek-a2-ellinomatheia-anki-deck")?.title).toContain("Ellinomatheia");
+    expect(getDeckBySlug("czech-a2-cce-anki-deck")?.title).toContain("Czech CCE");
     const deleDeck = getDeckBySlug("dele-a2-spanish-anki-deck");
     expect(deleDeck?.title).toContain("DELE SIELE");
     expect(deleDeck?.directAnswer).toContain("DELE A2");
@@ -564,6 +570,9 @@ describe("deck catalog", () => {
       "celi-b1-italian-anki-deck": ["essere", "io", "tu"],
       "danish-a2-prove-i-dansk-anki-deck": ["være", "jeg", "du"],
       "norwegian-a2-norskprove-anki-deck": ["være", "jeg", "du"],
+      "swedish-a2-sfi-anki-deck": ["vara", "jag", "du"],
+      "greek-a2-ellinomatheia-anki-deck": ["είμαι", "εγώ", "εσύ"],
+      "czech-a2-cce-anki-deck": ["být", "já", "ty"],
     };
 
     for (const [slug, questions] of Object.entries(expectations)) {
@@ -615,6 +624,12 @@ describe("deck catalog", () => {
         "Danish Prøve i Dansk PD2 PD3 Anki Deck — 1000 Flashcards",
       "norwegian-a2-norskprove-anki-deck":
         "Norwegian Norskprøve Residence Citizenship Anki Deck — 1000 Flashcards",
+      "swedish-a2-sfi-anki-deck":
+        "Swedish SFI Residence Citizenship Anki Deck — 1000 Flashcards",
+      "greek-a2-ellinomatheia-anki-deck":
+        "Greek Ellinomatheia Residence Citizenship Anki Deck — 1000 Flashcards",
+      "czech-a2-cce-anki-deck":
+        "Czech CCE Residence Citizenship Anki Deck — 1000 Flashcards",
       "hvac-epa-608-anki-deck": "EPA 608 HVAC Anki Deck — 200+ Flashcards",
       "ib-biology-sl-anki-deck": "IB Biology SL Anki Deck — 149 Smart Flashcards",
       "cat4-level-d-anki-deck-printable-pdf":

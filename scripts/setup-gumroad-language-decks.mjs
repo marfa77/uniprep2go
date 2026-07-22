@@ -135,6 +135,48 @@ const SPECS = {
     apkgRelPaths: ["prep2go_Norwegian_A2_Norskprove/prep2go_Norwegian_A2_Norskprove_FULL.apkg"],
     fileNames: ["Norwegian_Norskprove_Residence_Citizenship_Anki_Deck.apkg"],
   },
+  "swedish-a2-sfi-anki-deck": {
+    name: "Swedish SFI Residence Citizenship Anki Deck — 1000 Flashcards",
+    summary:
+      "1,000 Swedish cards for SFI A2 and Swedish residence or citizenship language prep.",
+    descriptionHtml: [
+      "<p><strong>UniPrep2Go × PixID Studio</strong> — Swedish Anki deck for <strong>SFI</strong> (Swedish for Immigrants) A2 vocabulary and residence or citizenship language prep.</p>",
+      "<p><strong>1,000</strong> high-frequency Swedish cards with audio and practical example sentences for work, housing, services, and everyday life in Sweden.</p>",
+      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
+      "<p><em>Independent study aid — not official SFI / Swedish Migration Agency material.</em></p>",
+    ].join(""),
+    coverPath: "public/covers/swedish-a2-sfi-anki-deck.webp",
+    apkgRelPaths: ["prep2go_Swedish_A2_SFI/prep2go_Swedish_A2_SFI_FULL.apkg"],
+    fileNames: ["Swedish_SFI_Residence_Citizenship_Anki_Deck.apkg"],
+  },
+  "greek-a2-ellinomatheia-anki-deck": {
+    name: "Greek Ellinomatheia Residence Citizenship Anki Deck — 1000 Flashcards",
+    summary:
+      "1,000 Greek cards for Ellinomatheia A2 and Greek residence or citizenship language prep.",
+    descriptionHtml: [
+      "<p><strong>UniPrep2Go × PixID Studio</strong> — Greek Anki deck for <strong>Ellinomatheia A2</strong> and residence or citizenship language prep.</p>",
+      "<p><strong>1,000</strong> high-frequency Greek cards with audio and practical example sentences for everyday life in Greece.</p>",
+      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
+      "<p><em>Independent study aid — not official Ellinomatheia / Greek state exam material.</em></p>",
+    ].join(""),
+    coverPath: "public/covers/greek-a2-ellinomatheia-anki-deck.webp",
+    apkgRelPaths: ["prep2go_Greek_A2_Ellinomatheia/prep2go_Greek_A2_Ellinomatheia_FULL.apkg"],
+    fileNames: ["Greek_Ellinomatheia_Residence_Citizenship_Anki_Deck.apkg"],
+  },
+  "czech-a2-cce-anki-deck": {
+    name: "Czech CCE Residence Citizenship Anki Deck — 1000 Flashcards",
+    summary:
+      "1,000 Czech cards for CCE A2 and Czech residence or citizenship language prep.",
+    descriptionHtml: [
+      "<p><strong>UniPrep2Go × PixID Studio</strong> — Czech Anki deck for <strong>CCE</strong> (Czech Language Certificate Exam) A2 and residence or citizenship language prep.</p>",
+      "<p><strong>1,000</strong> high-frequency Czech cards with audio and practical example sentences for everyday life in Czechia.</p>",
+      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
+      "<p><em>Independent study aid — not official CCE / ÚJOP material.</em></p>",
+    ].join(""),
+    coverPath: "public/covers/czech-a2-cce-anki-deck.webp",
+    apkgRelPaths: ["prep2go_Czech_A2_CCE/prep2go_Czech_A2_CCE_FULL.apkg"],
+    fileNames: ["Czech_CCE_Residence_Citizenship_Anki_Deck.apkg"],
+  },
   "dele-a2-spanish-anki-deck": {
     name: "DELE SIELE Spanish Anki Deck — 1000 Flashcards",
     summary:
