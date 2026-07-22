@@ -34,6 +34,7 @@ export const UNIPREP_TO_SHOP_PREVIEW_KEY: Record<string, string> = {
   "ielts-toefl-english-for-portuguese-speakers-anki-deck": "Portuguese_to_English",
   "ielts-toefl-english-for-spanish-speakers-anki-deck": "Spanish_to_English",
   "ielts-toefl-english-for-turkish-speakers-anki-deck": "Turkish_to_English",
+  "ielts-toefl-english-for-ukrainian-speakers-anki-deck": "Ukrainian_to_English",
   "arabic-survival-phrases-anki-deck": "Arabic_for_UAE",
   "dele-a2-spanish-anki-deck": "DELE",
   "dele-a2-ccse-spanish-citizenship-bundle": "DELE",

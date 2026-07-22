@@ -9,8 +9,9 @@ describe("Prep2Go shop preview samples", () => {
   it("keeps shop preview mappings for curated and planned language decks", () => {
     const mappedSlugs = Object.keys(UNIPREP_TO_SHOP_PREVIEW_KEY);
 
-    expect(mappedSlugs).toHaveLength(25);
+    expect(mappedSlugs).toHaveLength(26);
     expect(mappedSlugs).toContain("ielts-toefl-english-for-arabic-speakers-anki-deck");
+    expect(mappedSlugs).toContain("ielts-toefl-english-for-ukrainian-speakers-anki-deck");
     expect(mappedSlugs).not.toContain("delf-a2-printable-french-flashcards");
   });
 
@@ -59,6 +60,7 @@ describe("Prep2Go shop preview samples", () => {
         "czech-a2-cce-anki-deck",
         "ielts-toefl-english-for-french-speakers-anki-deck",
         "ielts-toefl-english-for-arabic-speakers-anki-deck",
+        "ielts-toefl-english-for-ukrainian-speakers-anki-deck",
       ].sort(),
     );
 

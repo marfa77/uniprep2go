@@ -306,6 +306,23 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Arabic-speaking IELTS and TOEFL candidates use bilingual English vocabulary recall with Arabic support before timed exam practice.",
   },
 
+  "ielts-toefl-english-for-ukrainian-speakers-anki-deck": {
+    title: "IELTS / TOEFL English for Ukrainian Speakers Anki | 2504 Cards",
+    headline: "IELTS / TOEFL English for Ukrainian Speakers — 2504 Flashcards",
+    studyLabel: "IELTS TOEFL English for Ukrainian speakers",
+    description:
+      "English Anki deck with 2504 flashcards for Ukrainian speakers preparing IELTS, TOEFL, Cambridge, and PTE — Ukrainian glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
+    keywords: [
+      "english for ukrainian speakers anki",
+      "ielts vocabulary ukrainian speakers",
+      "toefl vocabulary ukrainian speakers",
+      "английский для украинцев anki",
+      "ielts toefl flashcards ukrainian",
+    ],
+    intro:
+      "Ukrainian-speaking IELTS and TOEFL candidates use bilingual English vocabulary recall with Ukrainian support before timed exam practice.",
+  },
+
   "delf-prim-printable-french-flashcards": {
     title: "DELF Prim Printable French Flashcards | Ages 7–12 · 360 Cards",
     headline: "DELF Prim Printable French — Ages 7–12 · 360 PDF Cards",

@@ -2124,6 +2124,51 @@ const rawDecks: Deck[] = [
     ],
   },
   {
+    slug: "ielts-toefl-english-for-ukrainian-speakers-anki-deck",
+    category: "language",
+    status: "available",
+    title: "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2504 Flashcards",
+    shortName: "IELTS / TOEFL English for Ukrainian Speakers",
+    subtitle:
+      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Ukrainian support on every card.",
+    directAnswer:
+      "UniPrep2Go sells an IELTS / TOEFL English for Ukrainian Speakers Anki deck with 2,504 high-frequency English vocabulary cards, Ukrainian glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Ukrainian-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-07-22",
+    audience:
+      "Ukrainian-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
+    format: ".apkg",
+    coverImage: "/covers/ielts-toefl-english-for-ukrainian-speakers-anki-deck.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/ielts-toefl-english-for-ukrainian-speakers-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "2504",
+      topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with Ukrainian bilingual support",
+      formulas: "Audio + Ukrainian glosses + bilingual example sentences",
+      examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Which English exams does this deck support?",
+        answer:
+          "IELTS, TOEFL, Cambridge English exams, and PTE — as a shared high-frequency English vocabulary bank with Ukrainian support. Pair Anki with official practice tests for each exam's format.",
+      },
+      {
+        question: "What does the deck include?",
+        answer:
+          "2,504 English vocabulary cards from the Prep2Go app: Ukrainian glosses, bilingual examples, native English audio, and illustrations.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
+      },
+    ],
+  },
+
+  {
     slug: "dele-a2-spanish-anki-deck",
     category: "language",
     status: "available",

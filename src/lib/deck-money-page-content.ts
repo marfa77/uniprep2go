@@ -376,6 +376,23 @@ Arabic-speaking learners translate every sentence into Arabic under time pressur
 Prep2Go app bank (2,504 cards) with UniPrep2Go IELTS/TOEFL framing on Gumroad at $26 — not a Lemon-only listing and not a generic “learn English” pack without exam positioning.`,
 
 
+  "ielts-toefl-english-for-ukrainian-speakers-anki-deck": `### Which English exams this deck targets
+
+**IELTS**, **TOEFL**, Cambridge English exams, and **PTE** share a large high-frequency academic and general English lexicon. This deck packages that bank for **Ukrainian speakers**: English headword, Ukrainian gloss, bilingual example, native English audio, and an image on each card. It is vocabulary recall — not a full mock exam or writing scorer.
+
+### Study plan
+
+Drill 25–40 cards/day for eight to twelve weeks while you schedule official IELTS or TOEFL practice tests. Read the English example aloud first; use the Ukrainian gloss only as a check. After each week, filter review to cards you failed twice — exam sittings punish slow retrieval more than missing rare words.
+
+### Pitfalls this deck targets
+
+Ukrainian-speaking learners translate every sentence into Ukrainian under time pressure, skip listening to English audio, and study tourist phrase lists instead of exam-frequency academic vocabulary. Bilingual examples + English audio reduce translation dependence.
+
+### What makes this Gumroad edition different
+
+Prep2Go app bank (2,504 cards) with UniPrep2Go IELTS/TOEFL framing on Gumroad at $26 — not a Lemon-only listing and not a generic “learn English” pack without exam positioning.`,
+
+
   "delf-prim-printable-french-flashcards": `### Who this printable is for
 
 **DELF Prim** learners ages **7–12** and parents/teachers who want paper flashcards with pictures and QR pronunciation — not an adult Anki vocabulary bank or a full DELF Prim exam course.

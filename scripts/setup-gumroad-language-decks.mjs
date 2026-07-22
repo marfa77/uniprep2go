@@ -209,6 +209,22 @@ const SPECS = {
     ],
     fileNames: ["IELTS_TOEFL_English_for_Arabic_Speakers_Anki_Deck.apkg"],
   },
+  "ielts-toefl-english-for-ukrainian-speakers-anki-deck": {
+    name: "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2504 Flashcards",
+    summary:
+      "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Ukrainian support on every card.",
+    descriptionHtml: [
+      "<p><strong>UniPrep2Go × PixID Studio</strong> — English Anki deck for <strong>Ukrainian speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
+      "<p><strong>2,504</strong> high-frequency English cards with Ukrainian glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
+      "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
+    ].join(""),
+    coverPath: "public/covers/ielts-toefl-english-for-ukrainian-speakers-anki-deck.webp",
+    apkgRelPaths: [
+      "prep2go_English_A2_Ukrainian_Speakers/prep2go_English_A2_Ukrainian_Speakers_FULL.apkg",
+    ],
+    fileNames: ["IELTS_TOEFL_English_for_Ukrainian_Speakers_Anki_Deck.apkg"],
+  },
   "dele-a2-spanish-anki-deck": {
     name: "DELE SIELE Spanish Anki Deck — 1000 Flashcards",
     summary:

@@ -51,6 +51,7 @@ describe("deck money pages", () => {
       "swedish-a2-sfi-anki-deck",
       "ielts-toefl-english-for-french-speakers-anki-deck",
       "ielts-toefl-english-for-arabic-speakers-anki-deck",
+      "ielts-toefl-english-for-ukrainian-speakers-anki-deck",
       "greek-a2-ellinomatheia-anki-deck",
       "czech-a2-cce-anki-deck",
       "ciple-a2-european-portuguese-anki-deck",
