@@ -187,7 +187,7 @@ const SPECS = {
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
     ].join(""),
-    coverPath: "public/covers/ielts-toefl-english-for-french-speakers-anki-deck.webp",
+    coverPath: "public/covers/ielts-toefl-english-for-french-speakers-anki-deck-v2.webp",
     apkgRelPaths: [
       "prep2go_English_A2_French_Speakers/prep2go_English_A2_French_Speakers_FULL.apkg",
     ],

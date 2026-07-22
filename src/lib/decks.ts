@@ -1913,7 +1913,7 @@ const rawDecks: Deck[] = [
     audience:
       "French-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
     format: ".apkg",
-    coverImage: "/covers/ielts-toefl-english-for-french-speakers-anki-deck.webp",
+    coverImage: "/covers/ielts-toefl-english-for-french-speakers-anki-deck-v2.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/ielts-toefl-english-for-french-speakers-anki-deck?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
