@@ -81,7 +81,13 @@ export default async function LanguageCertificationDecksPage() {
           Language certification Anki decks
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          Eight multi-pathway Anki decks ($26) for CIPLE / CAPLE Portuguese, DELF / DALF / TCF / TEF French, DELE / SIELE Spanish (language only — not a CCSE civics bundle), Dutch Inburgering / NT2, German Goethe / telc / ÖSD / DTZ, Danish Prøve i Dansk PD2 / PD3, Norwegian Norskprøve, and CELI / CILS / PLIDA Italian — plus DELF Prim printable French flashcards for ages 7–12 ($12). We do not publish separate timed practice mocks for language certifications.
+          Eleven multi-pathway Anki decks ($26) for CIPLE / CAPLE Portuguese, DELF / DALF / TCF / TEF
+          French, DELE / SIELE Spanish (language only — not a CCSE civics bundle), Dutch Inburgering /
+          NT2, German Goethe / telc / ÖSD / DTZ, Danish Prøve i Dansk, Norwegian Norskprøve, Swedish
+          SFI, Greek Ellinomatheia, Czech CCE, and CELI / CILS / PLIDA Italian — plus DELF Prim
+          printable French flashcards for ages 7–12 ($12) and a Citizenship &amp; Naturalization Anki
+          Bundle for six countries ($20). We do not publish separate timed practice mocks for language
+          certifications; each product page is the study guide + checkout.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link
@@ -97,6 +103,24 @@ export default async function LanguageCertificationDecksPage() {
             Full deck catalog
           </Link>
         </div>
+
+        <section className="mt-12 max-w-3xl" id="how-to-choose">
+          <h2 className="text-2xl font-semibold tracking-tight">How to choose a language deck</h2>
+          <p className="mt-4 text-base leading-8 text-[#4f493e]">
+            Pick the exam body or immigration pathway you must satisfy, then buy the matching Anki
+            bank — do not mix Brazilian Portuguese into CIPLE prep, or CCSE civics into a DELE-only
+            purchase. Residence and citizenship language rules change; always confirm your required
+            level with the official authority before you schedule. Use 15–20 new cards per day with
+            audio, and keep speaking/listening practice separate from Anki.
+          </p>
+          <p className="mt-4 text-base leading-8 text-[#4f493e]">
+            For Portuguese citizenship language evidence start with CIPLE / CAPLE. For French
+            immigration vs diplomas, one French vocabulary bank covers DELF/DALF plus TCF/TEF
+            pathways. For Scandinavian and Central European residence language, use the SFI,
+            Norskprøve, Ellinomatheia, or CCE decks listed below. Kids learning DELF Prim should buy
+            the printable PDF set, not the adult French Anki.
+          </p>
+        </section>
 
         <section className="mt-12">
           <h2 className="text-2xl font-semibold">All language decks ({languageDecks.length})</h2>
@@ -115,6 +139,38 @@ export default async function LanguageCertificationDecksPage() {
               </li>
             ))}
           </ul>
+        </section>
+
+        <section className="mt-12 max-w-3xl" id="faq">
+          <h2 className="text-2xl font-semibold tracking-tight">Language deck FAQ</h2>
+          <dl className="mt-6 space-y-5">
+            <div>
+              <dt className="font-semibold tracking-tight">Are these official exam materials?</dt>
+              <dd className="mt-2 text-base leading-8 text-[#4f493e]">
+                No. UniPrep2Go / PixID Studio decks are independent study aids. They are not
+                affiliated with CAPLE, Instituto Cervantes, France Éducation international, Goethe,
+                or other exam bodies.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold tracking-tight">Do you sell timed language mocks?</dt>
+              <dd className="mt-2 text-base leading-8 text-[#4f493e]">
+                Not for these language pathways. Free timed readiness checks on UniPrep2Go focus on
+                US licensing and building certifications. Language products are Anki (or printable)
+                vocabulary banks with pathway-specific study guides on each deck page.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold tracking-tight">
+                What is the Citizenship &amp; Naturalization bundle?
+              </dt>
+              <dd className="mt-2 text-base leading-8 text-[#4f493e]">
+                A $20 Gumroad download with six separate civics \`.apkg\` files for Germany, France,
+                the UK, Canada, Australia, and the U.S. — text-first recall, not language media
+                decks.
+              </dd>
+            </div>
+          </dl>
         </section>
       </article>
       <SiteFooter />

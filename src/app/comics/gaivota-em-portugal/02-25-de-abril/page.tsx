@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { GaivotaEpisodeSeoSections } from "@/components/comics/gaivota-episode-seo-sections";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { gaivotaSeries } from "@/lib/gaivota-comics";
@@ -74,6 +75,7 @@ export default function Ep0225DeAbrilPage() {
           <li>100 new Portuguese words · English glossary</li>
           <li>Human-scale story — flowers, not gore</li>
         </ul>
+        <GaivotaEpisodeSeoSections episodeId="02-25-de-abril" />
       </main>
       <SiteFooter />
     </div>

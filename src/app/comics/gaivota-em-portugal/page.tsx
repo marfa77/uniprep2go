@@ -57,6 +57,9 @@ export default function GaivotaHubPage() {
           <Link className={btnPrimary} href={ep01.pagePath!}>
             Read Ep.01 free — O Terramoto (1755)
           </Link>
+          <Link className={btnSecondary} href="/language-certification-decks">
+            Language Anki decks
+          </Link>
           <Link className={btnSecondary} href="/comics/gaivota-em-portugal/02-25-de-abril">
             Ep.02 — 25 de Abril
           </Link>
@@ -85,6 +88,22 @@ export default function GaivotaHubPage() {
             Ep.10 — Europa 1986
           </Link>
         </div>
+
+        <section className="mt-12 max-w-2xl">
+          <h2 className="text-2xl font-semibold tracking-tight">What each episode includes</h2>
+          <p className="mt-4 text-base leading-8 text-[#3a342c]">
+            Every Gaivota issue is built for European Portuguese learners: a short English history
+            brief, a five-page noir comic, and a 100-word PT→EN glossary. Episode 1 is free on this
+            site so you can test the format before buying later PDFs on Gumroad ($5 each). Use the
+            comics for cultural context beside CIPLE / CAPLE Anki vocabulary — not as a substitute
+            for official CAPLE exams.
+          </p>
+          <p className="mt-4 text-base leading-8 text-[#3a342c]">
+            Suggested path: read Ep.01 free → buy the historical eras you care about (medieval,
+            Discoveries, republic, dictatorship, EU) → speak glossary sentences aloud weekly. Teachers
+            can use one episode as a 20-minute cultural warm-up.
+          </p>
+        </section>
 
         <section className="mt-14">
           <h2 className="text-2xl font-semibold">Episodes</h2>

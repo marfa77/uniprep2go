@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { GaivotaEpisodeSeoSections } from "@/components/comics/gaivota-episode-seo-sections";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { gaivotaEpisodes, gaivotaSeries } from "@/lib/gaivota-comics";
@@ -78,6 +79,7 @@ export default function Ep05VascoDaGamaPage() {
           <li>100 new Portuguese words · English glossary</li>
           <li>Human-scale story — ocean and arrival, not gore</li>
         </ul>
+        <GaivotaEpisodeSeoSections episodeId="05-vasco-da-gama" />
       </main>
       <SiteFooter />
     </div>

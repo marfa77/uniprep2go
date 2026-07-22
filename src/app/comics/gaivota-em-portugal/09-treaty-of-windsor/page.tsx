@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { GaivotaEpisodeSeoSections } from "@/components/comics/gaivota-episode-seo-sections";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { gaivotaEpisodes, gaivotaSeries } from "@/lib/gaivota-comics";
@@ -42,6 +43,7 @@ export default function Ep09Page() {
           <Link className={btnSecondary} href={gaivotaSeries.hubPath}>Series hub</Link>
         </div>
         <p className="mt-8 max-w-2xl text-base leading-relaxed text-[#3a342c] sm:text-lg">{directAnswer}</p>
+        <GaivotaEpisodeSeoSections episodeId="09-treaty-of-windsor" />
       </main>
       <SiteFooter />
     </div>

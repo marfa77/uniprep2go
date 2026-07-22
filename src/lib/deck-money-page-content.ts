@@ -173,35 +173,53 @@ Level 2 failures often come from mis-applying inventory and lease adjustments in
 
   "ciple-a2-european-portuguese-anki-deck": `### Which Portuguese pathways this deck targets
 
-**CIPLE A2 (CAPLE)** is the University of Lisbon A2 diploma used for Portuguese residency and citizenship language proof. The same European Portuguese lexicon supports **autorização de residência** and **nacionalidade portuguesa** applications. Formats and paperwork differ — the high-frequency PT-PT vocabulary does not.
+**CIPLE A2 (CAPLE)** is the University of Lisbon A2 diploma many candidates use as language evidence for Portuguese residency and citizenship. The same European Portuguese (PT-PT) high-frequency lexicon supports **autorização de residência** and **nacionalidade portuguesa** paperwork even when the exact certificate name on your case differs. Formats and bureaucracy change — everyday PT-PT vocabulary does not.
 
-### Study plan with sample cards
+This deck is built for European Portuguese pronunciation and usage (not Brazilian Portuguese phrase lists). Cards pair headwords with meanings, contextual examples, and audio so you can rehearse the words CIPLE-style tasks and daily life both demand.
 
-Use 15–20 new cards per day. Pair Anki with weekly speaking practice — CIPLE rewards active recall, not passive list reading. Preview the sample cards above for audio and example-sentence format.
+### 6–8 week study plan
+
+**Weeks 1–2:** 15–20 new cards/day across housing, services, work, and health themes while you finish any official CAPLE registration checklist. **Weeks 3–4:** Keep new cards at 15/day and add 10 minutes of spoken recall (read example sentences aloud). **Weeks 5–6:** Review-heavy Anki; book a speaking partner or tutor once a week. **Final 7–10 days:** Mixed review only — no giant new-card dumps the week of the exam. Preview the sample cards on this page for the audio + example format before you buy.
+
+### Pitfalls this deck targets
+
+Candidates memorize Brazilian cognates that fail CAPLE listening, skip articles/prepositions that carry meaning in PT-PT, and confuse formal vs informal address. Cards keep European forms front-and-center and force example-sentence recall instead of isolated word lists.
 
 ### What makes this Gumroad edition different
 
-PixID Studio Gumroad fulfillment with UniPrep2Go multi-pathway framing: CIPLE / CAPLE A2 plus residency and citizenship language prep — not a generic Brazilian Portuguese list.`,
+PixID Studio Gumroad fulfillment with UniPrep2Go multi-pathway framing: CIPLE / CAPLE A2 plus residency and citizenship language prep — not a generic Brazilian Portuguese tourist pack.`,
 
   "delf-b2-french-anki-deck": `### Which French exams this deck targets
 
-**DELF / DALF** is the gold-standard lifetime diploma track (universities, visas, employers worldwide). **TCF Canada** and **TEF Canada** are the mass immigration pathways for Express Entry and Quebec. **TCF ANF** serves French naturalization. **TCF général** serves admission to French universities. Formats and score validity differ — the high-frequency vocabulary does not.
+**DELF / DALF** is the lifetime diploma track used by universities, employers, and many visa offices. **TCF Canada** and **TEF Canada** dominate Express Entry / Quebec immigration scoring. **TCF ANF** supports French naturalization. **TCF général** supports admission to French universities. Score validity and task formats differ — the high-frequency French lexicon shared across those pathways does not.
+
+This 2000+ card bank is a vocabulary depth layer, not a full listening/writing course. Use it to make lexical access automatic while you practice official formats elsewhere.
 
 ### Study plan across pathways
 
-Drill 20 cards/day from this 2000+ word deck while you prepare your specific exam format (DELF/DALF tasks, TCF/TEF listening-reading blocks, or ANF naturalization requirements). Keep speaking and timed practice separate from Anki — the deck builds lexical depth shared by all five pathways.
+Drill 20 cards/day for eight to twelve weeks while you prepare your specific exam format (DELF/DALF productive tasks, TCF/TEF timed blocks, or ANF naturalization requirements). Keep speaking and timed practice separate from Anki. After each week, filter review to cards you failed twice — immigration and diploma sittings both punish slow retrieval more than missing obscure rare words.
+
+### Pitfalls this deck targets
+
+Candidates over-index on A1 survival phrases, ignore register (tu/vous, formal writing), and treat Canada vs France pathways as totally different vocabularies. This deck focuses the overlapping high-frequency core those pathways actually share.
 
 ### What makes this Gumroad edition different
 
-PixID Studio Gumroad fulfillment with UniPrep2Go multi-exam French framing: one vocabulary bank for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, and TCF général — not a DELF-only Lemon listing or A1 survival pack.`,
+PixID Studio Gumroad fulfillment with UniPrep2Go multi-exam French framing: one vocabulary bank for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, and TCF général — not a DELF-only listing or A1 survival pack.`,
 
   "dutch-a2-inburgering-anki-deck": `### Which Dutch pathways this deck targets
 
-**Inburgering** is the civic integration language track for many residency cases. **Staatsexamen NT2 A2** overlaps heavily on high-frequency Dutch. The same lexicon supports everyday language toward **naturalisatie**. Exam formats differ — A2 vocabulary does not.
+**Inburgering** is the civic integration language track for many Dutch residency cases. **Staatsexamen NT2** (A2-range overlap) shares a large high-frequency Dutch core. The same lexicon supports everyday communication toward **naturalisatie** language expectations. Exam names and cut scores differ by municipality and year — confirm your required module officially.
+
+Cards emphasize practical Dutch for work, housing, government services, and daily interaction — the vocabulary integration exams and real life both reward.
 
 ### Study plan
 
-Drill 20 cards/day while you book official practice for your Inburgering or NT2 pathway. Keep speaking and listening exams separate from Anki.
+**Weeks 1–3:** 20 new cards/day with audio. **Weeks 4–6:** 15 new + heavy review; add weekly speaking practice. **Final two weeks:** Review only while you book official Inburgering/NT2 practice. Keep listening and speaking exams separate from Anki — flashcards build recall speed, not exam timing skill.
+
+### Pitfalls this deck targets
+
+Learners mix Belgian/Dutch variants inconsistently, skip separable verbs that carry meaning in A2 tasks, and cram tourist phrases instead of bureaucracy and workplace words. Cards prioritize integration-relevant themes.
 
 ### What makes this Gumroad edition different
 
@@ -209,11 +227,17 @@ Multi-pathway Dutch framing (Inburgering + NT2 A2 + naturalisatie vocabulary) on
 
   "german-a2-anki-deck": `### Which German exams this deck targets
 
-**Goethe-Institut A2**, **telc Deutsch A2**, **ÖSD A2**, and **DTZ** immigrant integration pathways share a large A2 vocabulary core. Certificates differ by exam body — one Anki bank covers the overlapping lexicon.
+**Goethe-Institut A2**, **telc Deutsch A2**, **ÖSD A2**, and **DTZ** immigrant integration pathways share a large A2 vocabulary core. Certificates and scoring differ by exam body — one Anki bank covers the overlapping lexicon for housing, work, health, and everyday interaction in German-speaking contexts.
+
+Use this deck as the spaced-repetition layer beside your chosen institute’s practice papers.
 
 ### Study plan
 
-20 cards/day for six to eight weeks before your Goethe, telc, ÖSD, or DTZ date. Practice each exam's listening/speaking format separately.
+20 cards/day for six to eight weeks before your Goethe, telc, ÖSD, or DTZ date. Practice each exam’s listening/speaking format separately. After week three, run a self-dictation: hear the audio, write the headword, check — DTZ and Goethe both punish weak sound–spelling links.
+
+### Pitfalls this deck targets
+
+Candidates confuse modal verb constructions, gender/article pairs, and formal letter vocabulary needed for A2 writing tasks. Cards keep articles with nouns and force example-sentence recall.
 
 ### What makes this Gumroad edition different
 
@@ -221,11 +245,17 @@ Goethe + telc + ÖSD + DTZ framing in one Gumroad product — not a single-brand
 
   "celi-b1-italian-anki-deck": `### Which Italian exams this deck targets
 
-**CELI** (Perugia), **CILS** (Siena), and **PLIDA** (Dante Alighieri) are the main Italian B1 certificates. Bodies differ; intermediate vocabulary overlaps.
+**CELI** (Università per Stranieri di Perugia), **CILS** (Siena), and **PLIDA** (Società Dante Alighieri) are the main Italian B1 certificates used for study, work, and some immigration pathways. Bodies and task formats differ; intermediate vocabulary for daily life, work, and services overlaps heavily.
+
+This deck is a B1 lexicon engine — pair it with official mocks for your chosen certificate.
 
 ### Study plan
 
-15–25 cards/day between classes and mock exams. Pair with speaking practice for your chosen certificate.
+15–25 cards/day between classes for six to ten weeks. Add one speaking session weekly using card example sentences as prompts. In the final fortnight, stop new cards and review only leeches (cards you keep failing).
+
+### Pitfalls this deck targets
+
+Learners stay stuck at tourist A2 phrases, ignore passato prossimo vs imperfetto cues, and under-practice formal register for B1 writing. Cards push intermediate verbs and service vocabulary those exams reward.
 
 ### What makes this Gumroad edition different
 
@@ -233,11 +263,17 @@ CELI + CILS + PLIDA multi-certificate framing — one B1 vocabulary bank on Gumr
 
   "danish-a2-prove-i-dansk-anki-deck": `### Which Danish pathways this deck targets
 
-**Prøve i Dansk PD2** and **PD3** modules, plus everyday Danish used for **permanent residence** and **citizenship** language requirements. Confirm your required module officially.
+**Prøve i Dansk** modules (**PD2** / **PD3** and related tracks) plus everyday Danish used for **permanent residence** and **citizenship** language requirements. Exact module names and score rules change — always confirm your required level with official Danish authorities before you book.
+
+Cards focus high-frequency Danish with audio for work, housing, services, and daily interaction.
 
 ### Study plan
 
-20 cards/day with audio. Keep oral exam practice separate from Anki.
+20 cards/day with audio for six to eight weeks. Keep oral exam practice separate from Anki. Record yourself reading example sentences twice a week — Danish oral modules punish silent vocabulary study.
+
+### Pitfalls this deck targets
+
+Candidates under-train listening discrimination, skip particle/verb combinations, and study tourist phrases instead of bureaucracy and workplace words. Audio-first review is built into the card format on this page’s samples.
 
 ### What makes this Gumroad edition different
 
@@ -245,11 +281,15 @@ PD2 / PD3 + residence/citizenship pathway copy — not a generic Danish tourist 
 
   "norwegian-a2-norskprove-anki-deck": `### Which Norwegian pathways this deck targets
 
-**Norskprøve A2** (Bokmål) plus language prep for **permanent oppholdstillatelse** and **statsborgerskap**. Requirements change — always verify official rules for your case.
+**Norskprøve A2** (Bokmål) plus language prep for **permanent oppholdstillatelse** and **statsborgerskap**. Immigration language rules change — verify current requirements for your case with official sources. This deck trains everyday Bokmål for work, housing, services, and interaction — the vocabulary those pathways and Norskprøve both lean on.
 
 ### Study plan
 
-20 cards/day with audio examples. Pair with speaking and listening practice for Norskprøve.
+20 cards/day with audio examples for six to eight weeks. Pair with weekly speaking/listening practice aimed at Norskprøve task types. Final ten days: review-only Anki while you take official sample tasks.
+
+### Pitfalls this deck targets
+
+Learners mix Bokmål/Nynorsk inconsistently, skip gender/article pairs, and cram English calques. Cards keep Bokmål forms and practical example sentences front-and-center.
 
 ### What makes this Gumroad edition different
 
@@ -257,11 +297,15 @@ Norskprøve + residence/citizenship framing on Gumroad — not a tourist phrase 
 
   "swedish-a2-sfi-anki-deck": `### Which Swedish pathways this deck targets
 
-**SFI** (Swedish for Immigrants) A2 vocabulary, plus everyday Swedish used for **residence** and **citizenship** language requirements. Confirm your required course level officially.
+**SFI** (Swedish for Immigrants) A2 vocabulary, plus everyday Swedish used for **residence** and **citizenship** language requirements. Course levels and municipal pathways vary — confirm your required level officially. Cards cover work, housing, services, and daily interaction with audio and example sentences.
 
 ### Study plan
 
-20 cards/day with audio examples. Pair with speaking and listening practice for SFI.
+**Weeks 1–3:** 20 new cards/day with audio. **Weeks 4–6:** 15 new + review; add spoken recall of example sentences. **Final week:** Mixed review only while you prepare any official SFI or language-evidence appointment. Preview the three sample cards on this page before purchase to see the image + audio card style.
+
+### Pitfalls this deck targets
+
+Learners confuse en/ett gender, skip verb-second word order cues, and study tourist phrases instead of bureaucracy and workplace Swedish. Cards pair headwords with full example sentences so order and gender stick together.
 
 ### What makes this Gumroad edition different
 
@@ -269,11 +313,15 @@ SFI + residence/citizenship framing on Gumroad — not a tourist phrase pack.`,
 
   "greek-a2-ellinomatheia-anki-deck": `### Which Greek pathways this deck targets
 
-**Ellinomatheia A2** vocabulary, plus everyday Greek used for **residence** and **citizenship** language requirements. Confirm your required level officially.
+**Ellinomatheia A2** vocabulary, plus everyday Greek used for **residence** and **citizenship** language requirements. Confirm your required level and exam session with official Ellinomatheia sources. Cards train high-frequency Modern Greek for work, housing, services, and daily interaction with audio and examples.
 
 ### Study plan
 
-20 cards/day with audio examples. Pair with speaking and listening practice for Ellinomatheia.
+20 cards/day with audio for six to eight weeks. Add weekly reading aloud of example sentences — script familiarity matters for Greek orthography under exam pressure. Final ten days: review-only Anki plus any official practice materials you have booked.
+
+### Pitfalls this deck targets
+
+Candidates under-practice accent marks and script fluency, memorize isolated words without articles, and ignore service/bureaucracy vocabulary. Cards keep examples and audio tied to each headword.
 
 ### What makes this Gumroad edition different
 
@@ -281,11 +329,15 @@ Ellinomatheia + residence/citizenship framing on Gumroad — not a tourist phras
 
   "czech-a2-cce-anki-deck": `### Which Czech pathways this deck targets
 
-**CCE** (Czech Language Certificate Exam) A2 vocabulary, plus everyday Czech used for **residence** and **citizenship** language requirements. Confirm your required level officially.
+**CCE** (Czech Language Certificate Exam) A2 vocabulary, plus everyday Czech used for **residence** and **citizenship** language requirements. Confirm your required level with official CCE sources before you register. Cards focus practical Czech for work, housing, services, and daily interaction with audio and example sentences.
 
 ### Study plan
 
-20 cards/day with audio examples. Pair with speaking and listening practice for CCE.
+20 cards/day with audio for six to eight weeks. Practice case endings in context by reading each example sentence aloud. Final fortnight: review-only Anki while you complete official CCE-oriented practice.
+
+### Pitfalls this deck targets
+
+Learners ignore case endings, study tourist menus instead of bureaucracy vocabulary, and skip listening. Audio + full-sentence examples on each card reduce “dictionary-only” study.
 
 ### What makes this Gumroad edition different
 
@@ -293,11 +345,15 @@ CCE + residence/citizenship framing on Gumroad — not a tourist phrase pack.`,
 
   "delf-prim-printable-french-flashcards": `### Who this printable is for
 
-**DELF Prim** learners ages **7–12** and parents/teachers who want paper cards with pictures and QR pronunciation — not an adult Anki vocabulary bank.
+**DELF Prim** learners ages **7–12** and parents/teachers who want paper flashcards with pictures and QR pronunciation — not an adult Anki vocabulary bank or a full DELF Prim exam course.
 
-### How to use
+### How to use at home or in class
 
-Print both PDFs at 100% on A4, cut along the dashed lines (six cards per page), and scan the QR on each card for audio while reviewing.
+Print both PDFs at 100% on A4, cut along the dashed lines (six cards per page), and scan the QR on each card for audio while reviewing. Short sessions (10–15 minutes) beat long cram nights for this age group. Keep speaking games and picture description separate from card cutting day.
+
+### Pitfalls this printable targets
+
+Kids memorize English glosses without listening, adults buy adult DELF Anki by mistake, and classrooms lack cut-ready picture cards. This product is kids-first paper + QR audio at a single $12 price.
 
 ### What makes this Gumroad edition different
 
@@ -305,11 +361,19 @@ Kids-first DELF Prim framing at **$12** with two instant PDF downloads — separ
 
   "citizenship-naturalization-anki-bundle": `### Who this bundle is for
 
-Applicants preparing **citizenship or naturalization civics** tests in **Germany, France, the UK, Canada, Australia, or the United States** — text-first Anki recall, not language vocabulary media.
+Applicants preparing **citizenship or naturalization civics** tests in **Germany, France, the UK, Canada, Australia, or the United States** who want text-first Anki recall — not language-vocabulary media decks and not a substitute for official handbooks.
 
 ### What's inside
 
-Six separate \`.apkg\` files: Leben in Deutschland, Naturalisation française, Life in the UK, Canadian Citizenship, Australian Citizenship, and U.S. Citizenship — **1000+** cards total.
+Six separate \`.apkg\` files in one download: Leben in Deutschland, Naturalisation française, Life in the UK, Canadian Citizenship, Australian Citizenship, and U.S. Citizenship — **1000+** cards total. Study only the country file that matches your application; keep the others archived or share within a family with multiple pathways.
+
+### Study plan
+
+Import the relevant country deck, then 20–30 cards/day for four to six weeks while you read the official civics handbook for that country. Take any free official practice tests your government publishes; use Anki for fact recall (dates, rights, institutions), not for essay practice.
+
+### Pitfalls this bundle targets
+
+Applicants mix country facts across borders, buy six separate listings, or rely on outdated blog quizzes. Separate country \`.apkg\` files keep pathways clean at one **$20** checkout.
 
 ### What makes this Gumroad edition different
 
@@ -317,11 +381,15 @@ One **$20** multi-country civics bundle instead of six separate listings — ins
 
   "dele-a2-spanish-anki-deck": `### Which Spanish pathways this deck targets
 
-**DELE A2** (Instituto Cervantes) vocabulary plus overlapping **SIELE A2**-style word knowledge. Language only — no CCSE civics file.
+**DELE A2** (Instituto Cervantes) vocabulary plus overlapping **SIELE A2**-style word knowledge for candidates who need Spanish lexical depth. This is language only — **no CCSE** Spanish nationality civics file. If you need CCSE, use official Cervantes citizenship materials separately.
 
 ### Study plan
 
-20 cards/day with examples and audio where included. Pair with speaking and listening practice for DELE; keep official Cervantes mocks separate from Anki.
+20 cards/day with examples and audio where included for six to eight weeks. Pair with speaking and listening practice aimed at DELE task types; keep official Cervantes mocks separate from Anki. Final week: review-only Anki.
+
+### Pitfalls this deck targets
+
+Learners buy a DELE+CCSE bundle when they only need vocabulary, confuse Latin American vs Peninsular high-frequency items inconsistently, and skip example-sentence recall. This listing is a single DELE/SIELE vocabulary \`.apkg\`.
 
 ### What makes this Gumroad edition different
 

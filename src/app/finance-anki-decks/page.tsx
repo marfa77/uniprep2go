@@ -96,7 +96,10 @@ export default async function FinanceAnkiDecksPage() {
           Finance Anki decks with free practice tests
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          CFA, FRM, FINRA, and MBA admissions decks — take the free mock first, then drill weak topics with spaced-repetition flashcards.
+          CFA Level 1 &amp; 2, FRM Part 1, FINRA SIE, Series 7 / 63, and MBA admissions decks (GMAT
+          Focus, GRE, SAT) — each paired with a free timed practice test on UniPrep2Go. Take the mock
+          first for topic scoring, then drill only weak domains with spaced-repetition flashcards.
+          Independent prep — not CFA Institute, GARP, FINRA, or ETS material.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link className={btnPrimary} href="/mock-exams/sie-full-mock">
@@ -106,6 +109,16 @@ export default async function FinanceAnkiDecksPage() {
             Browse all mocks
           </Link>
         </div>
+
+        <section className="mt-10 max-w-3xl" id="how-it-works">
+          <h2 className="text-2xl font-semibold tracking-tight">How finance prep works here</h2>
+          <p className="mt-4 text-base leading-8 text-[#4f493e]">
+            Start with the free timed mock linked to your exam. The report shows which outline
+            domains failed. Buy the matching Anki deck only when you want daily repair on those gaps —
+            not as a substitute for official curriculum readings or vendor question banks. Formula
+            reference PDFs (where listed) are printable recall layers beside Anki, not full courses.
+          </p>
+        </section>
 
         <section className="mt-10">
           <h2 className="text-2xl font-semibold">Free finance mocks</h2>
@@ -142,6 +155,34 @@ export default async function FinanceAnkiDecksPage() {
               </li>
             ))}
           </ul>
+        </section>
+
+        <section className="mt-12 max-w-3xl" id="faq">
+          <h2 className="text-2xl font-semibold tracking-tight">Finance deck FAQ</h2>
+          <dl className="mt-6 space-y-5">
+            <div>
+              <dt className="font-semibold tracking-tight">Should I buy the deck or take the mock first?</dt>
+              <dd className="mt-2 text-base leading-8 text-[#4f493e]">
+                Take the free mock first. Use the topic report to decide whether Anki (or a formula
+                PDF) is worth buying for your weak domains.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold tracking-tight">Are these official CFA / FINRA / GARP materials?</dt>
+              <dd className="mt-2 text-base leading-8 text-[#4f493e]">
+                No. UniPrep2Go products are independent study aids aligned to published outlines —
+                not endorsed by CFA Institute, FINRA, GARP, or ETS.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold tracking-tight">Which exam should I start with?</dt>
+              <dd className="mt-2 text-base leading-8 text-[#4f493e]">
+                Brokerage entrants usually start with the free SIE mock. CFA / FRM candidates start
+                with the matching readiness check, then the Level/Part Anki deck. MBA admissions
+                candidates use GMAT Focus or GRE readiness checks before flashcards.
+              </dd>
+            </div>
+          </dl>
         </section>
       </article>
       <SiteFooter />

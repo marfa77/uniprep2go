@@ -48,10 +48,15 @@ describe("deck money pages", () => {
       "ptcb-pharmacy-technician-anki-deck",
       "ptcb-study-guide-2026",
       "servsafe-manager-anki-deck",
+      "swedish-a2-sfi-anki-deck",
+      "greek-a2-ellinomatheia-anki-deck",
+      "czech-a2-cce-anki-deck",
+      "ciple-a2-european-portuguese-anki-deck",
     ]) {
       const content = getDeckUniqueContent(getDeckBySlug(slug)!);
-      expect(content?.length).toBeGreaterThan(200);
+      expect(content?.length).toBeGreaterThan(600);
       expect(content).not.toMatch(/spaced repetition helps you remember better/i);
+      expect(content).toMatch(/### /);
     }
   });
 

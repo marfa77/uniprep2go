@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { GaivotaEpisodeSeoSections } from "@/components/comics/gaivota-episode-seo-sections";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { gaivotaSeries } from "@/lib/gaivota-comics";
@@ -72,6 +73,7 @@ export default function Ep01TerramotoPage() {
         <p className="mt-3 text-sm text-[#5c574e]">
           Full-screen reader — on phones, dialogue sits under each page so nothing covers faces.
         </p>
+        <GaivotaEpisodeSeoSections episodeId="01-1755-earthquake" />
       </main>
       <SiteFooter />
     </div>
