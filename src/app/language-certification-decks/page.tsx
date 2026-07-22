@@ -23,7 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
     finalize({
       title,
       description:
-        "Eleven multi-pathway language Anki decks ($26), DELF Prim printable French flashcards for ages 7–12 ($12), plus Citizenship & Naturalization Anki Bundle for six countries ($20).",
+        "Twelve multi-pathway language Anki decks ($26), DELF Prim printable French flashcards for ages 7–12 ($12), plus Citizenship & Naturalization Anki Bundle for six countries ($20).",
       alternates: { canonical: "/language-certification-decks" },
       openGraph: {
         title: "Language Certification Anki Decks | UniPrep2Go",
@@ -33,7 +33,7 @@ export async function generateMetadata(): Promise<Metadata> {
     }),
     {
       aiDescription:
-        "UniPrep2Go language certification products cover eleven curated multi-pathway Anki decks on Gumroad, DELF Prim printable French flashcards for ages 7–12, and a Citizenship & Naturalization Anki Bundle for Germany, France, UK, Canada, Australia, and the U.S.: CIPLE CAPLE Portuguese citizenship, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, and CELI CILS PLIDA Italian.",
+        "UniPrep2Go language certification products cover twelve curated multi-pathway Anki decks on Gumroad, DELF Prim printable French flashcards for ages 7–12, and a Citizenship & Naturalization Anki Bundle for Germany, France, UK, Canada, Australia, and the U.S.: CIPLE CAPLE Portuguese citizenship, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, CELI CILS PLIDA Italian, and IELTS / TOEFL English for French Speakers.",
       aiCategory: "Language exam prep hub",
       path: "/language-certification-decks",
     },
@@ -81,13 +81,14 @@ export default async function LanguageCertificationDecksPage() {
           Language certification Anki decks
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          Eleven multi-pathway Anki decks ($26) for CIPLE / CAPLE Portuguese, DELF / DALF / TCF / TEF
+          Twelve multi-pathway Anki decks ($26) for CIPLE / CAPLE Portuguese, DELF / DALF / TCF / TEF
           French, DELE / SIELE Spanish (language only — not a CCSE civics bundle), Dutch Inburgering /
           NT2, German Goethe / telc / ÖSD / DTZ, Danish Prøve i Dansk, Norwegian Norskprøve, Swedish
-          SFI, Greek Ellinomatheia, Czech CCE, and CELI / CILS / PLIDA Italian — plus DELF Prim
-          printable French flashcards for ages 7–12 ($12) and a Citizenship &amp; Naturalization Anki
-          Bundle for six countries ($20). We do not publish separate timed practice mocks for language
-          certifications; each product page is the study guide + checkout.
+          SFI, Greek Ellinomatheia, Czech CCE, CELI / CILS / PLIDA Italian, and IELTS / TOEFL English
+          for French Speakers — plus DELF Prim printable French flashcards for ages 7–12 ($12) and a
+          Citizenship &amp; Naturalization Anki Bundle for six countries ($20). We do not publish
+          separate timed practice mocks for language certifications; each product page is the study
+          guide + checkout.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link
@@ -116,7 +117,8 @@ export default async function LanguageCertificationDecksPage() {
           <p className="mt-4 text-base leading-8 text-[#4f493e]">
             For Portuguese citizenship language evidence start with CIPLE / CAPLE. For French
             immigration vs diplomas, one French vocabulary bank covers DELF/DALF plus TCF/TEF
-            pathways. For Scandinavian and Central European residence language, use the SFI,
+            pathways. French speakers preparing IELTS / TOEFL should use the English-for-French-speakers
+            deck. For Scandinavian and Central European residence language, use the SFI,
             Norskprøve, Ellinomatheia, or CCE decks listed below. Kids learning DELF Prim should buy
             the printable PDF set, not the adult French Anki.
           </p>

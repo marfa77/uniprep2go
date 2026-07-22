@@ -177,6 +177,22 @@ const SPECS = {
     apkgRelPaths: ["prep2go_Czech_A2_CCE/prep2go_Czech_A2_CCE_FULL.apkg"],
     fileNames: ["Czech_CCE_Residence_Citizenship_Anki_Deck.apkg"],
   },
+  "ielts-toefl-english-for-french-speakers-anki-deck": {
+    name: "IELTS / TOEFL English for French Speakers Anki Deck — 2522 Flashcards",
+    summary:
+      "2,522 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with French support on every card.",
+    descriptionHtml: [
+      "<p><strong>UniPrep2Go × PixID Studio</strong> — English Anki deck for <strong>French speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
+      "<p><strong>2,522</strong> high-frequency English cards with French glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
+      "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
+    ].join(""),
+    coverPath: "public/covers/ielts-toefl-english-for-french-speakers-anki-deck.webp",
+    apkgRelPaths: [
+      "prep2go_English_A2_French_Speakers/prep2go_English_A2_French_Speakers_FULL.apkg",
+    ],
+    fileNames: ["IELTS_TOEFL_English_for_French_Speakers_Anki_Deck.apkg"],
+  },
   "dele-a2-spanish-anki-deck": {
     name: "DELE SIELE Spanish Anki Deck — 1000 Flashcards",
     summary:

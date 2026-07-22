@@ -486,6 +486,48 @@ SPECS: dict[str, dict[str, Any]] = {
             ("Delivery", "Instant .apkg"),
         ],
     },
+    "ielts-toefl-english-for-french-speakers-anki-deck": {
+        "label": "IELTS / TOEFL English for French Speakers",
+        "headline": "IELTS / TOEFL English for French Speakers Anki Deck — 2522 Flashcards",
+        "exam": "IELTS · TOEFL · Cambridge · PTE — for French speakers",
+        "hook": (
+            "2,522 high-frequency English vocabulary cards with French glosses, bilingual "
+            "examples, and native English audio — built for French speakers preparing IELTS and TOEFL."
+        ),
+        "audience": (
+            "For French-speaking IELTS, TOEFL, Cambridge, and PTE candidates who need daily "
+            "English recall with native-language support — not tourist phrase lists."
+        ),
+        "disclaimer": "IELTS / TOEFL / Cambridge / PTE bodies",
+        "about_heading": "Which English exams does this cover?",
+        "about": (
+            "IELTS, TOEFL, Cambridge English exams, and PTE share a large high-frequency "
+            "academic and general English lexicon. This deck packages that bank for French "
+            "speakers: English headword, French gloss, bilingual example, and English audio."
+        ),
+        "pathways": "IELTS · TOEFL · Cambridge · PTE · English for French speakers",
+        "deck_covers": (
+            "2,522 English cards from the Prep2Go app with French glosses, bilingual examples, "
+            "native English audio, and illustrations."
+        ),
+        "not_included": (
+            "Official IELTS/TOEFL practice tests, writing scorers, or speaking partners — "
+            "pair Anki with timed official practice for each exam format."
+        ),
+        "why_anki": (
+            "Exam sittings punish slow retrieval. Spaced Anki with English-first recall "
+            "(French as a check) beats translating every sentence under time pressure."
+        ),
+        "cards": "2522",
+        "format_note": "Anki .apkg with audio, images, and French support",
+        "sample_captions": ["be", "i", "you"],
+        "facts": [
+            ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
+            ("Cards", "2522 vocabulary"),
+            ("Media", "Audio + French glosses"),
+            ("Delivery", "Instant .apkg"),
+        ],
+    },
 }
 
 

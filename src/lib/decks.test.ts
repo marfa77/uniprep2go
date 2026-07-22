@@ -111,7 +111,7 @@ describe("deck catalog", () => {
     }
   });
 
-  it("keeps eleven curated language Anki decks plus DELF Prim and citizenship bundle on Gumroad", () => {
+  it("keeps twelve curated language Anki decks plus DELF Prim and citizenship bundle on Gumroad", () => {
     const expectedAnkiLanguageDecks = [
       "ciple-a2-european-portuguese-anki-deck",
       "delf-b2-french-anki-deck",
@@ -124,6 +124,7 @@ describe("deck catalog", () => {
       "swedish-a2-sfi-anki-deck",
       "greek-a2-ellinomatheia-anki-deck",
       "czech-a2-cce-anki-deck",
+      "ielts-toefl-english-for-french-speakers-anki-deck",
     ];
     const expectedLanguageDecks = [
       ...expectedAnkiLanguageDecks,
@@ -193,6 +194,11 @@ describe("deck catalog", () => {
     expect(getDeckBySlug("swedish-a2-sfi-anki-deck")?.title).toContain("Swedish SFI");
     expect(getDeckBySlug("greek-a2-ellinomatheia-anki-deck")?.title).toContain("Ellinomatheia");
     expect(getDeckBySlug("czech-a2-cce-anki-deck")?.title).toContain("Czech CCE");
+    const enFr = getDeckBySlug("ielts-toefl-english-for-french-speakers-anki-deck");
+    expect(enFr?.title).toContain("IELTS / TOEFL English for French Speakers");
+    expect(enFr?.facts.cards).toBe("2522");
+    expect(enFr?.directAnswer).toContain("French");
+    expect(enFr?.directAnswer).toContain("IELTS");
     const deleDeck = getDeckBySlug("dele-a2-spanish-anki-deck");
     expect(deleDeck?.title).toContain("DELE SIELE");
     expect(deleDeck?.directAnswer).toContain("DELE A2");
@@ -211,13 +217,18 @@ describe("deck catalog", () => {
     );
   });
 
-  it("keeps English-for-speakers decks planned outside the curated language lineup", () => {
+  it("ships IELTS English for French Speakers and keeps other English-for-speakers decks planned", () => {
     const englishDecks = availableDecks.filter((deck) =>
       deck.slug.startsWith("ielts-toefl-english-for-"),
     );
 
-    expect(englishDecks).toHaveLength(0);
+    expect(englishDecks.map((d) => d.slug)).toEqual([
+      "ielts-toefl-english-for-french-speakers-anki-deck",
+    ]);
     expect(getDeckBySlug("ielts-toefl-english-for-arabic-speakers-anki-deck")?.status).toBe(
+      "planned",
+    );
+    expect(getDeckBySlug("ielts-toefl-english-for-portuguese-speakers-anki-deck")?.status).toBe(
       "planned",
     );
   });
@@ -573,6 +584,7 @@ describe("deck catalog", () => {
       "swedish-a2-sfi-anki-deck": ["vara", "jag", "du"],
       "greek-a2-ellinomatheia-anki-deck": ["είμαι", "εγώ", "εσύ"],
       "czech-a2-cce-anki-deck": ["být", "já", "ty"],
+      "ielts-toefl-english-for-french-speakers-anki-deck": ["be", "i", "you"],
     };
 
     for (const [slug, questions] of Object.entries(expectations)) {
@@ -630,6 +642,8 @@ describe("deck catalog", () => {
         "Greek Ellinomatheia Residence Citizenship Anki Deck — 1000 Flashcards",
       "czech-a2-cce-anki-deck":
         "Czech CCE Residence Citizenship Anki Deck — 1000 Flashcards",
+      "ielts-toefl-english-for-french-speakers-anki-deck":
+        "IELTS / TOEFL English for French Speakers Anki Deck — 2522 Flashcards",
       "hvac-epa-608-anki-deck": "EPA 608 HVAC Anki Deck — 200+ Flashcards",
       "ib-biology-sl-anki-deck": "IB Biology SL Anki Deck — 149 Smart Flashcards",
       "cat4-level-d-anki-deck-printable-pdf":

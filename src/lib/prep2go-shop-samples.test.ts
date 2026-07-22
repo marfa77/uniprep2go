@@ -57,6 +57,7 @@ describe("Prep2Go shop preview samples", () => {
         "swedish-a2-sfi-anki-deck",
         "greek-a2-ellinomatheia-anki-deck",
         "czech-a2-cce-anki-deck",
+        "ielts-toefl-english-for-french-speakers-anki-deck",
       ].sort(),
     );
 

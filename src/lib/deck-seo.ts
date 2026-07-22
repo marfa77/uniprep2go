@@ -273,6 +273,22 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     intro:
       "CCE learners preparing residence or citizenship language requirements use daily Czech vocabulary recall alongside speaking practice.",
   },
+  "ielts-toefl-english-for-french-speakers-anki-deck": {
+    title: "IELTS / TOEFL English for French Speakers Anki | 2522 Cards",
+    headline: "IELTS / TOEFL English for French Speakers — 2522 Flashcards",
+    studyLabel: "IELTS TOEFL English for French speakers",
+    description:
+      "English Anki deck with 2522 flashcards for French speakers preparing IELTS, TOEFL, Cambridge, and PTE — French glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
+    keywords: [
+      "english for french speakers anki",
+      "ielts vocabulary french speakers",
+      "toefl vocabulary french speakers",
+      "anglais pour francophones anki",
+      "ielts toefl flashcards french",
+    ],
+    intro:
+      "French-speaking IELTS and TOEFL candidates use bilingual English vocabulary recall with French support before timed exam practice.",
+  },
   "delf-prim-printable-french-flashcards": {
     title: "DELF Prim Printable French Flashcards | Ages 7–12 · 360 Cards",
     headline: "DELF Prim Printable French — Ages 7–12 · 360 PDF Cards",
