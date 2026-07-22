@@ -1810,48 +1810,36 @@ const rawDecks: Deck[] = [
   {
     slug: "dele-a2-ccse-spanish-citizenship-bundle",
     category: "language",
-    status: "available",
+    status: "planned",
     title: "DELE CCSE Spanish Nationality Anki Bundle — Exam Flashcards",
     shortName: "DELE CCSE Spanish Nationality",
     subtitle:
-      "Spanish nationality bundle: DELE A2 vocabulary + CCSE civics for nacionalidad española (Instituto Cervantes).",
+      "Planned Spanish nationality bundle: DELE A2 vocabulary + CCSE civics (not currently for sale).",
     directAnswer:
-      "UniPrep2Go sells a Spanish nationality Anki bundle pairing DELE A2 vocabulary (Instituto Cervantes) with CCSE civic knowledge — constitution, institutions, geography, history, and daily life in Spain — for nacionalidad española applicants. The DELE A2 lexicon also overlaps SIELE A2-style vocabulary practice. Checkout delivers two .apkg files for {PRICE} through Gumroad by PixID Studio — language and civics on one study schedule.",
+      "The DELE A2 + CCSE Spanish nationality Anki bundle is a planned UniPrep2Go listing and is not currently available for purchase. It is not part of the curated Gumroad language lineup.",
     lastUpdated: "2026-07-22",
-    audience: "Spanish nationality (nacionalidad española) applicants preparing DELE A2 and CCSE, plus learners needing DELE/SIELE A2 vocabulary.",
+    audience: "Spanish nationality applicants preparing DELE A2 and CCSE (planned listing only).",
     format: ".apkg",
     coverImage: "/samples/prep2go-dele-a2-ccse-spanish-citizenship-cover.webp",
-    checkoutUrl: "https://pixidstudio.gumroad.com/l/dele-a2-ccse-spanish-citizenship-bundle?wanted=true",
-    checkoutProvider: "Gumroad",
-    checkoutSeller: "PixID Studio",
     facts: {
       cards: "1000+ vocabulary plus CCSE civic cards",
-      topics: "DELE A2, CCSE, Spanish nationality, SIELE-overlapping A2 vocabulary",
-      formulas: "DELE A2 + CCSE dual .apkg download for nationality pathway",
-      examYear: "Current DELE A2 / CCSE nationality cycle",
-      delivery: "Two .apkg files through Gumroad",
+      topics: "DELE A2, CCSE, Spanish nationality",
+      formulas: "Planned dual .apkg nationality bundle",
+      examYear: "Planned",
+      delivery: "Not currently for sale",
     },
     topicCoverage: [],
     sampleCards: [],
     faqs: [
       {
-        question: "Which Spanish pathways does this bundle cover?",
+        question: "Is this deck available for purchase?",
         answer:
-          "DELE A2 (Instituto Cervantes) language plus CCSE civics for nacionalidad española. DELE A2 vocabulary also overlaps SIELE A2-style word knowledge; civics is CCSE-specific.",
-      },
-      {
-        question: "What does the DELE + CCSE bundle include?",
-        answer:
-          "Two Anki .apkg files: DELE A2 Spanish vocabulary and CCSE civic knowledge for Spanish nationality preparation.",
-      },
-      {
-        question: "What file format is delivered?",
-        answer: "Two Anki-compatible .apkg files delivered through Gumroad after checkout.",
+          "No. This DELE + CCSE nationality bundle is a planned listing and is not sold on UniPrep2Go or Gumroad right now.",
       },
       {
         question: "Is this official exam material?",
         answer:
-          "No. This is an independent UniPrep2Go study aid sold by PixID Studio and is not affiliated with Instituto Cervantes or the Spanish Ministry of Justice.",
+          "No. UniPrep2Go listings are independent study aids and are not affiliated with Instituto Cervantes or the Spanish Ministry of Justice.",
       },
     ],
   },

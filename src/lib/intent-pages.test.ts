@@ -31,13 +31,14 @@ describe("intent pages visibility", () => {
 
     expect(page).toBeDefined();
     expect(page?.deckSlugs).toEqual(languageDeckSlugs);
-    expect(page?.deckSlugs).toHaveLength(8);
+    expect(page?.deckSlugs).toHaveLength(7);
     expect(page?.directAnswer).toContain("CIPLE CAPLE Portuguese");
     expect(page?.directAnswer).toContain("German Goethe telc ÖSD DTZ");
     expect(page?.directAnswer).toContain("Norwegian Norskprøve");
     expect(page?.directAnswer).toContain("DELF DALF TCF TEF French");
     expect(page?.directAnswer).toContain("CELI CILS PLIDA Italian");
-    expect(page?.directAnswer).toContain("eight curated multi-pathway language Anki decks");
+    expect(page?.directAnswer).not.toContain("DELE CCSE");
+    expect(page?.directAnswer).toContain("seven curated multi-pathway language Anki decks");
     expect(page?.directAnswer).toContain("Gumroad");
   });
 

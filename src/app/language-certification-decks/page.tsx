@@ -23,7 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
     finalize({
       title,
       description:
-        "Eight multi-pathway language Anki decks: CIPLE CAPLE, DELE CCSE, DELF DALF TCF TEF, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish PD2 PD3, Norwegian Norskprøve, CELI CILS PLIDA — $26 on Gumroad.",
+        "Seven multi-pathway language Anki decks: CIPLE CAPLE, DELF DALF TCF TEF, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish PD2 PD3, Norwegian Norskprøve, CELI CILS PLIDA — $26 on Gumroad.",
       alternates: { canonical: "/language-certification-decks" },
       openGraph: {
         title: "Language Certification Anki Decks | UniPrep2Go",
@@ -33,7 +33,7 @@ export async function generateMetadata(): Promise<Metadata> {
     }),
     {
       aiDescription:
-        "UniPrep2Go language certification decks cover eight curated multi-pathway Gumroad products: CIPLE CAPLE Portuguese citizenship, DELE CCSE Spanish nationality, DELF DALF TCF TEF French, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, and CELI CILS PLIDA Italian.",
+        "UniPrep2Go language certification decks cover seven curated multi-pathway Gumroad products: CIPLE CAPLE Portuguese citizenship, DELF DALF TCF TEF French, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, and CELI CILS PLIDA Italian.",
       aiCategory: "Language exam prep hub",
       path: "/language-certification-decks",
     },
@@ -81,7 +81,7 @@ export default async function LanguageCertificationDecksPage() {
           Language certification Anki decks
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          Eight multi-pathway decks for CIPLE / CAPLE Portuguese, DELE / CCSE Spanish nationality, DELF / DALF / TCF / TEF French, Dutch Inburgering / NT2, German Goethe / telc / ÖSD / DTZ, Danish Prøve i Dansk PD2 / PD3, Norwegian Norskprøve, and CELI / CILS / PLIDA Italian — sold on Gumroad at $26. Language decks are Anki-only; we do not publish separate timed practice mocks for language certifications.
+          Seven multi-pathway decks for CIPLE / CAPLE Portuguese, DELF / DALF / TCF / TEF French, Dutch Inburgering / NT2, German Goethe / telc / ÖSD / DTZ, Danish Prøve i Dansk PD2 / PD3, Norwegian Norskprøve, and CELI / CILS / PLIDA Italian — sold on Gumroad at $26. Language decks are Anki-only; we do not publish separate timed practice mocks for language certifications.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link

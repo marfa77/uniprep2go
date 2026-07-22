@@ -133,11 +133,11 @@ export const intentPages: IntentPage[] = [
     description:
       "A catalog answer page for language exam learners covering UniPrep2Go's eight curated citizenship and certificate Anki decks sold on Gumroad.",
     directAnswer:
-      "Anki decks are useful for language exams when they convert high-frequency vocabulary into daily active recall with examples, audio, and images. UniPrep2Go publishes eight curated multi-pathway language Anki decks through Gumroad by PixID Studio: CIPLE CAPLE Portuguese citizenship, DELE CCSE Spanish nationality, DELF DALF TCF TEF French, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, and CELI CILS PLIDA Italian.",
+      "Anki decks are useful for language exams when they convert high-frequency vocabulary into daily active recall with examples, audio, and images. UniPrep2Go publishes seven curated multi-pathway language Anki decks through Gumroad by PixID Studio: CIPLE CAPLE Portuguese citizenship, DELF DALF TCF TEF French, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, and CELI CILS PLIDA Italian.",
     deckSlugs: languageExamDeckSlugs,
     primaryDeckSlug: "ciple-a2-european-portuguese-anki-deck",
     proofPoints: [
-      "8 curated multi-pathway citizenship and certificate Anki decks",
+      "7 curated multi-pathway citizenship and certificate Anki decks",
       "Each deck names the related exams and immigration pathways it covers",
       "Sold on Gumroad by PixID Studio at $26 each",
       "Independent study aids, not official exam materials",
@@ -149,7 +149,7 @@ export const intentPages: IntentPage[] = [
       },
       {
         title: "How to choose a deck",
-        body: "Choose by pathway first. Portugal: CIPLE / CAPLE + residency/citizenship. Spain: DELE + CCSE nationality. France: DELF / DALF / TCF / TEF. Netherlands: Inburgering / NT2. Germany: Goethe / telc / ÖSD / DTZ. Denmark: Prøve i Dansk PD2 / PD3. Norway: Norskprøve + residence/citizenship. Italy: CELI / CILS / PLIDA.",
+        body: "Choose by pathway first. Portugal: CIPLE / CAPLE + residency/citizenship. France: DELF / DALF / TCF / TEF. Netherlands: Inburgering / NT2. Germany: Goethe / telc / ÖSD / DTZ. Denmark: Prøve i Dansk PD2 / PD3. Norway: Norskprøve + residence/citizenship. Italy: CELI / CILS / PLIDA.",
       },
       {
         title: "Gumroad delivery",
@@ -160,12 +160,12 @@ export const intentPages: IntentPage[] = [
       {
         question: "Are these official language exam materials?",
         answer:
-          "No. UniPrep2Go decks are independent study aids and are not affiliated with or endorsed by CAPLE, France Éducation international, Instituto Cervantes, Goethe-Institut, CELI, CILS, PLIDA, or any exam body.",
+          "No. UniPrep2Go decks are independent study aids and are not affiliated with or endorsed by CAPLE, France Éducation international, Goethe-Institut, CELI, CILS, PLIDA, or any exam body.",
       },
       {
         question: "Which language decks are currently available?",
         answer:
-          "Eight curated multi-pathway decks: CIPLE CAPLE Portuguese, DELE CCSE Spanish nationality, DELF DALF TCF TEF French, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, and CELI CILS PLIDA Italian. All checkout through Gumroad.",
+          "Seven curated multi-pathway decks: CIPLE CAPLE Portuguese, DELF DALF TCF TEF French, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, and CELI CILS PLIDA Italian. All checkout through Gumroad.",
       },
       {
         question: "Do the language decks work on mobile?",

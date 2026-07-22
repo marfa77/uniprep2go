@@ -111,7 +111,7 @@ describe("deck catalog", () => {
     }
   });
 
-  it("keeps eight curated language decks on Gumroad and hides the rest", () => {
+  it("keeps seven curated language decks on Gumroad and hides the rest", () => {
     const expectedLanguageDecks = [
       "ciple-a2-european-portuguese-anki-deck",
       "delf-b2-french-anki-deck",
@@ -120,7 +120,6 @@ describe("deck catalog", () => {
       "celi-b1-italian-anki-deck",
       "danish-a2-prove-i-dansk-anki-deck",
       "norwegian-a2-norskprove-anki-deck",
-      "dele-a2-ccse-spanish-citizenship-bundle",
     ];
 
     const languageDecks = availableDecks.filter((deck) => deck.category === "language");
@@ -154,9 +153,7 @@ describe("deck catalog", () => {
     expect(getDeckBySlug("celi-b1-italian-anki-deck")?.title).toContain("CELI CILS PLIDA");
     expect(getDeckBySlug("danish-a2-prove-i-dansk-anki-deck")?.title).toContain("PD2 PD3");
     expect(getDeckBySlug("norwegian-a2-norskprove-anki-deck")?.title).toContain("Norskprøve");
-    expect(getDeckBySlug("dele-a2-ccse-spanish-citizenship-bundle")?.directAnswer).toContain(
-      "nacionalidad española",
-    );
+    expect(getDeckBySlug("dele-a2-ccse-spanish-citizenship-bundle")?.status).toBe("planned");
     const frenchDeck = getDeckBySlug("delf-b2-french-anki-deck");
     expect(frenchDeck?.title).toContain("DELF DALF TCF TEF");
     expect(frenchDeck?.directAnswer).toContain("TCF Canada");
@@ -571,8 +568,6 @@ describe("deck catalog", () => {
         "Danish Prøve i Dansk PD2 PD3 Anki Deck — 1000 Flashcards",
       "norwegian-a2-norskprove-anki-deck":
         "Norwegian Norskprøve Residence Citizenship Anki Deck — 1000 Flashcards",
-      "dele-a2-ccse-spanish-citizenship-bundle":
-        "DELE CCSE Spanish Nationality Anki Bundle — Exam Flashcards",
       "hvac-epa-608-anki-deck": "EPA 608 HVAC Anki Deck — 200+ Flashcards",
       "ib-biology-sl-anki-deck": "IB Biology SL Anki Deck — 149 Smart Flashcards",
       "cat4-level-d-anki-deck-printable-pdf":
