@@ -133,11 +133,11 @@ export const intentPages: IntentPage[] = [
     description:
       "A catalog answer page for language exam learners covering UniPrep2Go's curated language Anki decks, DELF Prim kids printable flashcards, and the six-country citizenship civics Anki bundle sold on Gumroad.",
     directAnswer:
-      "Anki decks are useful for language exams when they convert high-frequency vocabulary into daily active recall with examples, audio, and images. UniPrep2Go publishes sixteen curated multi-pathway language Anki decks through Gumroad by PixID Studio: CIPLE CAPLE Portuguese citizenship, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, CELI CILS PLIDA Italian, IELTS / TOEFL English for French Speakers, IELTS / TOEFL English for Arabic Speakers, IELTS / TOEFL English for Ukrainian Speakers, IELTS / TOEFL English for Russian Speakers, and IELTS / TOEFL English for Spanish Speakers (LatAm) — plus DELF Prim printable French flashcards for ages 7–12, and a Citizenship & Naturalization Anki Bundle covering Germany, France, UK, Canada, Australia, and the U.S.",
+      "Anki decks are useful for language exams when they convert high-frequency vocabulary into daily active recall with examples, audio, and images. UniPrep2Go publishes seventeen curated multi-pathway language Anki decks through Gumroad by PixID Studio: CIPLE CAPLE Portuguese citizenship, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, CELI CILS PLIDA Italian, IELTS / TOEFL English for French Speakers, IELTS / TOEFL English for Arabic Speakers, IELTS / TOEFL English for Ukrainian Speakers, IELTS / TOEFL English for Russian Speakers, IELTS / TOEFL English for Spanish Speakers (LatAm), and IELTS / TOEFL English for Portuguese Speakers (BR) — plus DELF Prim printable French flashcards for ages 7–12, and a Citizenship & Naturalization Anki Bundle covering Germany, France, UK, Canada, Australia, and the U.S.",
     deckSlugs: languageExamDeckSlugs,
     primaryDeckSlug: "ciple-a2-european-portuguese-anki-deck",
     proofPoints: [
-      "16 curated multi-pathway language Anki decks ($26)",
+      "17 curated multi-pathway language Anki decks ($26)",
       "DELF Prim printable French flashcards for ages 7–12 ($12)",
       "Citizenship & Naturalization Anki Bundle — 6 countries ($20)",
       "Sold on Gumroad by PixID Studio — independent study aids",
@@ -149,7 +149,7 @@ export const intentPages: IntentPage[] = [
       },
       {
         title: "How to choose a deck",
-        body: "Choose by pathway first. Portugal: CIPLE / CAPLE + residency/citizenship. France: DELF / DALF / TCF / TEF for adults, or DELF Prim printable for ages 7–12. Spain: DELE / SIELE (language only — not a CCSE civics bundle). Netherlands: Inburgering / NT2. Germany: Goethe / telc / ÖSD / DTZ. Denmark: Prøve i Dansk PD2 / PD3. Norway: Norskprøve + residence/citizenship. Sweden: SFI + residence/citizenship. Greece: Ellinomatheia + residence/citizenship. Czechia: CCE + residence/citizenship. Italy: CELI / CILS / PLIDA. English exams for French, Arabic, Ukrainian, Russian, or Spanish (LatAm) speakers: IELTS / TOEFL / Cambridge / PTE. Civics tests (Germany / France / UK / Canada / Australia / U.S.): Citizenship & Naturalization Anki Bundle.",
+        body: "Choose by pathway first. Portugal: CIPLE / CAPLE + residency/citizenship. France: DELF / DALF / TCF / TEF for adults, or DELF Prim printable for ages 7–12. Spain: DELE / SIELE (language only — not a CCSE civics bundle). Netherlands: Inburgering / NT2. Germany: Goethe / telc / ÖSD / DTZ. Denmark: Prøve i Dansk PD2 / PD3. Norway: Norskprøve + residence/citizenship. Sweden: SFI + residence/citizenship. Greece: Ellinomatheia + residence/citizenship. Czechia: CCE + residence/citizenship. Italy: CELI / CILS / PLIDA. English exams for French, Arabic, Ukrainian, Russian, Spanish (LatAm), or Portuguese (BR) speakers: IELTS / TOEFL / Cambridge / PTE. Civics tests (Germany / France / UK / Canada / Australia / U.S.): Citizenship & Naturalization Anki Bundle.",
       },
       {
         title: "Gumroad delivery",
@@ -165,7 +165,7 @@ export const intentPages: IntentPage[] = [
       {
         question: "Which language decks are currently available?",
         answer:
-          "Sixteen curated multi-pathway Anki decks ($26): CIPLE CAPLE Portuguese, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, CELI CILS PLIDA Italian, IELTS / TOEFL English for French Speakers, IELTS / TOEFL English for Arabic Speakers, IELTS / TOEFL English for Ukrainian Speakers, IELTS / TOEFL English for Russian Speakers, and IELTS / TOEFL English for Spanish Speakers (LatAm) — plus DELF Prim printable French flashcards for ages 7–12 ($12), and the Citizenship & Naturalization Anki Bundle for six countries ($20). All checkout through Gumroad.",
+          "Seventeen curated multi-pathway Anki decks ($26): CIPLE CAPLE Portuguese, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, CELI CILS PLIDA Italian, IELTS / TOEFL English for French Speakers, IELTS / TOEFL English for Arabic Speakers, IELTS / TOEFL English for Ukrainian Speakers, IELTS / TOEFL English for Russian Speakers, IELTS / TOEFL English for Spanish Speakers (LatAm), and IELTS / TOEFL English for Portuguese Speakers (BR) — plus DELF Prim printable French flashcards for ages 7–12 ($12), and the Citizenship & Naturalization Anki Bundle for six countries ($20). All checkout through Gumroad.",
       },
 
       {

@@ -357,6 +357,23 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Latin American Spanish-speaking IELTS and TOEFL candidates use bilingual English vocabulary recall with LatAm Spanish support before timed exam practice.",
   },
 
+  "ielts-toefl-english-for-portuguese-speakers-anki-deck": {
+    title: "IELTS / TOEFL English for Portuguese Speakers Anki | 2504 Cards",
+    headline: "IELTS / TOEFL English for Portuguese Speakers (BR) — 2504 Flashcards",
+    studyLabel: "IELTS TOEFL English for Brazilian Portuguese speakers",
+    description:
+      "English Anki deck with 2504 flashcards for Brazilian Portuguese speakers preparing IELTS, TOEFL, Cambridge, and PTE — PT-BR glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
+    keywords: [
+      "english for portuguese speakers anki",
+      "english for brazilian portuguese speakers",
+      "ielts vocabulary portuguese speakers",
+      "toefl vocabulary brazilian portuguese",
+      "ielts toefl flashcards portuguese",
+    ],
+    intro:
+      "Brazilian Portuguese-speaking IELTS and TOEFL candidates use bilingual English vocabulary recall with PT-BR support before timed exam practice.",
+  },
+
   "delf-prim-printable-french-flashcards": {
     title: "DELF Prim Printable French Flashcards | Ages 7–12 · 360 Cards",
     headline: "DELF Prim Printable French — Ages 7–12 · 360 PDF Cards",

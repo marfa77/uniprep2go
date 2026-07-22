@@ -14,6 +14,7 @@ describe("Prep2Go shop preview samples", () => {
     expect(mappedSlugs).toContain("ielts-toefl-english-for-ukrainian-speakers-anki-deck");
     expect(mappedSlugs).toContain("ielts-toefl-english-for-russian-speakers-anki-deck");
     expect(mappedSlugs).toContain("ielts-toefl-english-for-spanish-speakers-anki-deck");
+    expect(mappedSlugs).toContain("ielts-toefl-english-for-portuguese-speakers-anki-deck");
     expect(mappedSlugs).not.toContain("delf-a2-printable-french-flashcards");
   });
 
@@ -65,6 +66,7 @@ describe("Prep2Go shop preview samples", () => {
         "ielts-toefl-english-for-ukrainian-speakers-anki-deck",
         "ielts-toefl-english-for-russian-speakers-anki-deck",
         "ielts-toefl-english-for-spanish-speakers-anki-deck",
+        "ielts-toefl-english-for-portuguese-speakers-anki-deck",
       ].sort(),
     );
 

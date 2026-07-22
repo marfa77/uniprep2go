@@ -111,7 +111,7 @@ describe("deck catalog", () => {
     }
   });
 
-  it("keeps sixteen curated language Anki decks plus DELF Prim and citizenship bundle on Gumroad", () => {
+  it("keeps seventeen curated language Anki decks plus DELF Prim and citizenship bundle on Gumroad", () => {
     const expectedAnkiLanguageDecks = [
       "ciple-a2-european-portuguese-anki-deck",
       "delf-b2-french-anki-deck",
@@ -129,6 +129,7 @@ describe("deck catalog", () => {
       "ielts-toefl-english-for-ukrainian-speakers-anki-deck",
       "ielts-toefl-english-for-russian-speakers-anki-deck",
       "ielts-toefl-english-for-spanish-speakers-anki-deck",
+      "ielts-toefl-english-for-portuguese-speakers-anki-deck",
     ];
     const expectedLanguageDecks = [
       ...expectedAnkiLanguageDecks,
@@ -220,6 +221,11 @@ describe("deck catalog", () => {
     expect(enEs?.facts.cards).toBe("2504");
     expect(enEs?.directAnswer).toContain("Latin American Spanish");
     expect(enEs?.shortName).toContain("LatAm");
+    const enPt = getDeckBySlug("ielts-toefl-english-for-portuguese-speakers-anki-deck");
+    expect(enPt?.title).toContain("IELTS / TOEFL English for Portuguese Speakers");
+    expect(enPt?.facts.cards).toBe("2504");
+    expect(enPt?.directAnswer).toContain("Brazilian Portuguese");
+    expect(enPt?.shortName).toContain("BR");
     const deleDeck = getDeckBySlug("dele-a2-spanish-anki-deck");
     expect(deleDeck?.title).toContain("DELE SIELE");
     expect(deleDeck?.directAnswer).toContain("DELE A2");
@@ -235,7 +241,7 @@ describe("deck catalog", () => {
     expect(frenchDeck?.directAnswer).toContain("TCF général");
   });
 
-  it("ships IELTS English for French, Arabic, Ukrainian, Russian, and Spanish Speakers; keeps others planned", () => {
+  it("ships IELTS English for French, Arabic, Ukrainian, Russian, Spanish, and Portuguese Speakers; keeps others planned", () => {
     const englishDecks = availableDecks.filter((deck) =>
       deck.slug.startsWith("ielts-toefl-english-for-"),
     );
@@ -243,12 +249,13 @@ describe("deck catalog", () => {
     expect(englishDecks.map((d) => d.slug).sort()).toEqual([
       "ielts-toefl-english-for-arabic-speakers-anki-deck",
       "ielts-toefl-english-for-french-speakers-anki-deck",
+      "ielts-toefl-english-for-portuguese-speakers-anki-deck",
       "ielts-toefl-english-for-russian-speakers-anki-deck",
       "ielts-toefl-english-for-spanish-speakers-anki-deck",
       "ielts-toefl-english-for-ukrainian-speakers-anki-deck",
     ].sort());
 
-    expect(getDeckBySlug("ielts-toefl-english-for-portuguese-speakers-anki-deck")?.status).toBe(
+    expect(getDeckBySlug("ielts-toefl-english-for-turkish-speakers-anki-deck")?.status).toBe(
       "planned",
     );
   });
@@ -609,6 +616,7 @@ describe("deck catalog", () => {
       "ielts-toefl-english-for-ukrainian-speakers-anki-deck": ["be", "i", "you"],
       "ielts-toefl-english-for-russian-speakers-anki-deck": ["be", "i", "you"],
       "ielts-toefl-english-for-spanish-speakers-anki-deck": ["be", "i", "you"],
+      "ielts-toefl-english-for-portuguese-speakers-anki-deck": ["be", "i", "you"],
     };
 
     for (const [slug, questions] of Object.entries(expectations)) {
@@ -676,6 +684,8 @@ describe("deck catalog", () => {
         "IELTS / TOEFL English for Russian Speakers Anki Deck — 2504 Flashcards",
       "ielts-toefl-english-for-spanish-speakers-anki-deck":
         "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2504 Flashcards",
+      "ielts-toefl-english-for-portuguese-speakers-anki-deck":
+        "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 2504 Flashcards",
       "hvac-epa-608-anki-deck": "EPA 608 HVAC Anki Deck — 200+ Flashcards",
       "ib-biology-sl-anki-deck": "IB Biology SL Anki Deck — 149 Smart Flashcards",
       "cat4-level-d-anki-deck-printable-pdf":

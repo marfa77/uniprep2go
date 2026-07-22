@@ -292,18 +292,6 @@ const prep2GoAdditionalLanguageDecks: Deck[] = [
     status: "planned",
   }),
   buildPrep2GoLanguageDeck({
-    slug: "ielts-toefl-english-for-portuguese-speakers-anki-deck",
-    title: "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 1000 Flashcards",
-    shortName: "IELTS / TOEFL English for Portuguese Speakers",
-    description: "English exam vocabulary for IELTS, TOEFL, Cambridge, and PTE with Portuguese support, bilingual cards, and native English audio examples.",
-    cards: "1000",
-    focus: "IELTS, TOEFL, Cambridge, and PTE English vocabulary",
-    topics: "IELTS and TOEFL English vocabulary with Portuguese bilingual support",
-    audience: "Portuguese-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
-    coverImage: "/samples/prep2go-ielts-toefl-english-for-portuguese-speakers-cover.webp",
-    status: "planned",
-  }),
-  buildPrep2GoLanguageDeck({
     slug: "ielts-toefl-english-for-turkish-speakers-anki-deck",
     title: "IELTS / TOEFL English for Turkish Speakers Anki Deck — 1000 Flashcards",
     shortName: "IELTS / TOEFL English for Turkish Speakers",
@@ -2243,6 +2231,56 @@ const rawDecks: Deck[] = [
         question: "What does the deck include?",
         answer:
           "2,504 English vocabulary cards from the Prep2Go app: LatAm Spanish glosses, bilingual examples, native English audio, and illustrations.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
+      },
+    ],
+  },
+
+  {
+    slug: "ielts-toefl-english-for-portuguese-speakers-anki-deck",
+    category: "language",
+    status: "available",
+    title: "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 2504 Flashcards",
+    shortName: "IELTS / TOEFL English for Portuguese Speakers (BR)",
+    subtitle:
+      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Brazilian Portuguese support on every card.",
+    directAnswer:
+      "UniPrep2Go sells an IELTS / TOEFL English for Portuguese Speakers Anki deck with 2,504 high-frequency English vocabulary cards, Brazilian Portuguese (PT-BR) glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Brazilian Portuguese-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-07-22",
+    audience:
+      "Brazilian Portuguese-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
+    format: ".apkg",
+    coverImage: "/covers/ielts-toefl-english-for-portuguese-speakers-anki-deck.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/ielts-toefl-english-for-portuguese-speakers-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "2504",
+      topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with Brazilian Portuguese bilingual support",
+      formulas: "Audio + Brazilian Portuguese (PT-BR) glosses + bilingual example sentences",
+      examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Which English exams does this deck support?",
+        answer:
+          "IELTS, TOEFL, Cambridge English exams, and PTE — as a shared high-frequency English vocabulary bank with Brazilian Portuguese support. Pair Anki with official practice tests for each exam's format.",
+      },
+      {
+        question: "Is this Brazilian or European Portuguese?",
+        answer:
+          "Brazilian Portuguese (PT-BR) glosses and examples. It is English vocabulary prep for Brazilian Portuguese speakers — not a CIPLE / CAPLE European Portuguese exam deck.",
+      },
+      {
+        question: "What does the deck include?",
+        answer:
+          "2,504 English vocabulary cards from the Prep2Go app: Brazilian Portuguese glosses, bilingual examples, native English audio, and illustrations.",
       },
       {
         question: "What file format is delivered?",

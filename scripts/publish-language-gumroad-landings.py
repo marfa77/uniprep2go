@@ -696,6 +696,48 @@ SPECS: dict[str, dict[str, Any]] = {
             ("Delivery", "Instant .apkg"),
         ],
     },
+    "ielts-toefl-english-for-portuguese-speakers-anki-deck": {
+        "label": "IELTS / TOEFL English for Portuguese Speakers (BR)",
+        "headline": "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 2504 Flashcards",
+        "exam": "IELTS · TOEFL · Cambridge · PTE — for Brazilian Portuguese speakers",
+        "hook": (
+            "2,504 high-frequency English vocabulary cards with Brazilian Portuguese glosses, "
+            "bilingual examples, and native English audio — built for PT-BR speakers preparing IELTS and TOEFL."
+        ),
+        "audience": (
+            "For Brazilian Portuguese-speaking IELTS, TOEFL, Cambridge, and PTE candidates who need "
+            "daily English recall with native-language support — not tourist phrase lists or CIPLE European Portuguese prep."
+        ),
+        "disclaimer": "IELTS / TOEFL / Cambridge / PTE bodies",
+        "about_heading": "Which English exams does this cover?",
+        "about": (
+            "IELTS, TOEFL, Cambridge English exams, and PTE share a large high-frequency "
+            "academic and general English lexicon. This deck packages that bank for Brazilian Portuguese "
+            "speakers: English headword, PT-BR gloss, bilingual example, and English audio."
+        ),
+        "pathways": "IELTS · TOEFL · Cambridge · PTE · English for Portuguese speakers (BR)",
+        "deck_covers": (
+            "2,504 English cards from the Prep2Go app with Brazilian Portuguese glosses, bilingual examples, "
+            "native English audio, and illustrations."
+        ),
+        "not_included": (
+            "Official IELTS/TOEFL practice tests, writing scorers, CIPLE European Portuguese vocab, or speaking partners — "
+            "pair Anki with timed official practice for each exam format."
+        ),
+        "why_anki": (
+            "Exam sittings punish slow retrieval. Spaced Anki with English-first recall "
+            "(Brazilian Portuguese as a check) beats translating every sentence under time pressure."
+        ),
+        "cards": "2504",
+        "format_note": "Anki .apkg with audio, images, and Brazilian Portuguese support",
+        "sample_captions": ["be", "i", "you"],
+        "facts": [
+            ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
+            ("Cards", "2504 vocabulary"),
+            ("Media", "Audio + PT-BR glosses"),
+            ("Delivery", "Instant .apkg"),
+        ],
+    },
 
 }
 
