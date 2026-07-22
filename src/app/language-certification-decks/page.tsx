@@ -23,7 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
     finalize({
       title,
       description:
-        "Fourteen multi-pathway language Anki decks ($26), DELF Prim printable French flashcards for ages 7–12 ($12), plus Citizenship & Naturalization Anki Bundle for six countries ($20).",
+        "Seventeen multi-pathway language Anki decks ($26), DELF Prim printable French flashcards for ages 7–12 ($12), plus Citizenship & Naturalization Anki Bundle for six countries ($20).",
       alternates: { canonical: "/language-certification-decks" },
       openGraph: {
         title: "Language Certification Anki Decks | UniPrep2Go",
@@ -81,7 +81,7 @@ export default async function LanguageCertificationDecksPage() {
           Language certification Anki decks
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          Fourteen multi-pathway Anki decks ($26) for CIPLE / CAPLE Portuguese, DELF / DALF / TCF / TEF
+          Seventeen multi-pathway Anki decks ($26) for CIPLE / CAPLE Portuguese, DELF / DALF / TCF / TEF
           French, DELE / SIELE Spanish (language only — not a CCSE civics bundle), Dutch Inburgering /
           NT2, German Goethe / telc / ÖSD / DTZ, Danish Prøve i Dansk, Norwegian Norskprøve, Swedish
           SFI, Greek Ellinomatheia, Czech CCE, CELI / CILS / PLIDA Italian, IELTS / TOEFL English
