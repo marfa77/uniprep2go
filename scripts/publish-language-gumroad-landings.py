@@ -612,6 +612,48 @@ SPECS: dict[str, dict[str, Any]] = {
             ("Delivery", "Instant .apkg"),
         ],
     },
+    "ielts-toefl-english-for-russian-speakers-anki-deck": {
+        "label": "IELTS / TOEFL English for Russian Speakers",
+        "headline": "IELTS / TOEFL English for Russian Speakers Anki Deck — 2504 Flashcards",
+        "exam": "IELTS · TOEFL · Cambridge · PTE — for Russian speakers",
+        "hook": (
+            "2,504 high-frequency English vocabulary cards with Russian glosses, bilingual "
+            "examples, and native English audio — built for Russian speakers preparing IELTS and TOEFL."
+        ),
+        "audience": (
+            "For Russian-speaking IELTS, TOEFL, Cambridge, and PTE candidates who need daily "
+            "English recall with native-language support — not tourist phrase lists."
+        ),
+        "disclaimer": "IELTS / TOEFL / Cambridge / PTE bodies",
+        "about_heading": "Which English exams does this cover?",
+        "about": (
+            "IELTS, TOEFL, Cambridge English exams, and PTE share a large high-frequency "
+            "academic and general English lexicon. This deck packages that bank for Russian "
+            "speakers: English headword, Russian gloss, bilingual example, and English audio."
+        ),
+        "pathways": "IELTS · TOEFL · Cambridge · PTE · English for Russian speakers",
+        "deck_covers": (
+            "2,504 English cards from the Prep2Go app with Russian glosses, bilingual examples, "
+            "native English audio, and illustrations."
+        ),
+        "not_included": (
+            "Official IELTS/TOEFL practice tests, writing scorers, or speaking partners — "
+            "pair Anki with timed official practice for each exam format."
+        ),
+        "why_anki": (
+            "Exam sittings punish slow retrieval. Spaced Anki with English-first recall "
+            "(Russian as a check) beats translating every sentence under time pressure."
+        ),
+        "cards": "2504",
+        "format_note": "Anki .apkg with audio, images, and Russian support",
+        "sample_captions": ["be", "i", "you"],
+        "facts": [
+            ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
+            ("Cards", "2504 vocabulary"),
+            ("Media", "Audio + Russian glosses"),
+            ("Delivery", "Instant .apkg"),
+        ],
+    },
 
 }
 
