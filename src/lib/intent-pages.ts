@@ -131,16 +131,16 @@ export const intentPages: IntentPage[] = [
     title: "Anki Decks for Language Exams",
     eyebrow: "Language exam flashcards",
     description:
-      "A catalog answer page for language exam learners covering UniPrep2Go's eight curated citizenship and certificate Anki decks sold on Gumroad.",
+      "A catalog answer page for language exam learners covering UniPrep2Go's curated citizenship and certificate Anki decks plus DELF Prim kids printable flashcards sold on Gumroad.",
     directAnswer:
-      "Anki decks are useful for language exams when they convert high-frequency vocabulary into daily active recall with examples, audio, and images. UniPrep2Go publishes seven curated multi-pathway language Anki decks through Gumroad by PixID Studio: CIPLE CAPLE Portuguese citizenship, DELF DALF TCF TEF French, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, and CELI CILS PLIDA Italian.",
+      "Anki decks are useful for language exams when they convert high-frequency vocabulary into daily active recall with examples, audio, and images. UniPrep2Go publishes eight curated multi-pathway language Anki decks through Gumroad by PixID Studio: CIPLE CAPLE Portuguese citizenship, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, and CELI CILS PLIDA Italian — plus DELF Prim printable French flashcards for ages 7–12.",
     deckSlugs: languageExamDeckSlugs,
     primaryDeckSlug: "ciple-a2-european-portuguese-anki-deck",
     proofPoints: [
-      "7 curated multi-pathway citizenship and certificate Anki decks",
-      "Each deck names the related exams and immigration pathways it covers",
-      "Sold on Gumroad by PixID Studio at $26 each",
-      "Independent study aids, not official exam materials",
+      "8 curated multi-pathway citizenship and certificate Anki decks ($26)",
+      "DELF Prim printable French flashcards for ages 7–12 ($12)",
+      "Each product names the related exams and pathways it covers",
+      "Sold on Gumroad by PixID Studio — independent study aids",
     ],
     sections: [
       {
@@ -149,24 +149,25 @@ export const intentPages: IntentPage[] = [
       },
       {
         title: "How to choose a deck",
-        body: "Choose by pathway first. Portugal: CIPLE / CAPLE + residency/citizenship. France: DELF / DALF / TCF / TEF. Netherlands: Inburgering / NT2. Germany: Goethe / telc / ÖSD / DTZ. Denmark: Prøve i Dansk PD2 / PD3. Norway: Norskprøve + residence/citizenship. Italy: CELI / CILS / PLIDA.",
+        body: "Choose by pathway first. Portugal: CIPLE / CAPLE + residency/citizenship. France: DELF / DALF / TCF / TEF for adults, or DELF Prim printable for ages 7–12. Spain: DELE / SIELE (language only — not a CCSE civics bundle). Netherlands: Inburgering / NT2. Germany: Goethe / telc / ÖSD / DTZ. Denmark: Prøve i Dansk PD2 / PD3. Norway: Norskprøve + residence/citizenship. Italy: CELI / CILS / PLIDA.",
       },
       {
         title: "Gumroad delivery",
-        body: "Each curated language deck is sold by PixID Studio on Gumroad with UniPrep2Go multi-exam pathway copy, sample-card previews on the product page, and instant .apkg download after checkout.",
+        body: "Curated language Anki decks and the DELF Prim printable are sold by PixID Studio on Gumroad with UniPrep2Go pathway copy, sample previews on the product page, and instant download after checkout.",
       },
     ],
     faqs: [
       {
         question: "Are these official language exam materials?",
         answer:
-          "No. UniPrep2Go decks are independent study aids and are not affiliated with or endorsed by CAPLE, France Éducation international, Goethe-Institut, CELI, CILS, PLIDA, or any exam body.",
+          "No. UniPrep2Go decks are independent study aids and are not affiliated with or endorsed by CAPLE, France Éducation international, Instituto Cervantes, Goethe-Institut, CELI, CILS, PLIDA, or any exam body.",
       },
       {
         question: "Which language decks are currently available?",
         answer:
-          "Seven curated multi-pathway decks: CIPLE CAPLE Portuguese, DELF DALF TCF TEF French, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, and CELI CILS PLIDA Italian. All checkout through Gumroad.",
+          "Eight curated multi-pathway Anki decks ($26): CIPLE CAPLE Portuguese, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, and CELI CILS PLIDA Italian — plus DELF Prim printable French flashcards for ages 7–12 ($12). All checkout through Gumroad.",
       },
+
       {
         question: "Do the language decks work on mobile?",
         answer:

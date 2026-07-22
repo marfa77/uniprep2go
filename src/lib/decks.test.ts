@@ -111,15 +111,20 @@ describe("deck catalog", () => {
     }
   });
 
-  it("keeps seven curated language decks on Gumroad and hides the rest", () => {
-    const expectedLanguageDecks = [
+  it("keeps eight curated language Anki decks plus DELF Prim printable on Gumroad", () => {
+    const expectedAnkiLanguageDecks = [
       "ciple-a2-european-portuguese-anki-deck",
       "delf-b2-french-anki-deck",
+      "dele-a2-spanish-anki-deck",
       "dutch-a2-inburgering-anki-deck",
       "german-a2-anki-deck",
       "celi-b1-italian-anki-deck",
       "danish-a2-prove-i-dansk-anki-deck",
       "norwegian-a2-norskprove-anki-deck",
+    ];
+    const expectedLanguageDecks = [
+      ...expectedAnkiLanguageDecks,
+      "delf-prim-printable-french-flashcards",
     ];
 
     const languageDecks = availableDecks.filter((deck) => deck.category === "language");
@@ -127,12 +132,13 @@ describe("deck catalog", () => {
     expect(languageDecks.map((deck) => deck.slug).sort()).toEqual(expectedLanguageDecks.sort());
     expect(availableDecks.filter((deck) => deck.checkoutProvider === "Lemon Squeezy")).toEqual([]);
 
-    for (const slug of expectedLanguageDecks) {
+    for (const slug of expectedAnkiLanguageDecks) {
       const deck = getDeckBySlug(slug);
 
       expect(deck?.status).toBe("available");
       expect(deck).toMatchObject({
         category: "language",
+        format: ".apkg",
         checkoutProvider: "Gumroad",
         checkoutSeller: "PixID Studio",
       });
@@ -145,6 +151,20 @@ describe("deck catalog", () => {
       expect(firstCard?.question).not.toMatch(/^What is included in /);
     }
 
+    const primDeck = getDeckBySlug("delf-prim-printable-french-flashcards");
+    expect(primDeck).toMatchObject({
+      status: "available",
+      format: "PDF",
+      checkoutProvider: "Gumroad",
+      checkoutSeller: "PixID Studio",
+      checkoutUrl:
+        "https://pixidstudio.gumroad.com/l/delf-prim-printable-french-flashcards?wanted=true",
+    });
+    expect(primDeck?.title).toContain("DELF Prim");
+    expect(primDeck?.title).toContain("Ages 7–12");
+    expect(primDeck?.directAnswer).toContain("ages 7–12");
+    expect(primDeck?.sampleCards).toHaveLength(4);
+
     expect(getDeckBySlug("ciple-a2-european-portuguese-anki-deck")?.directAnswer).toContain(
       "nacionalidade portuguesa",
     );
@@ -153,6 +173,12 @@ describe("deck catalog", () => {
     expect(getDeckBySlug("celi-b1-italian-anki-deck")?.title).toContain("CELI CILS PLIDA");
     expect(getDeckBySlug("danish-a2-prove-i-dansk-anki-deck")?.title).toContain("PD2 PD3");
     expect(getDeckBySlug("norwegian-a2-norskprove-anki-deck")?.title).toContain("Norskprøve");
+    const deleDeck = getDeckBySlug("dele-a2-spanish-anki-deck");
+    expect(deleDeck?.title).toContain("DELE SIELE");
+    expect(deleDeck?.directAnswer).toContain("DELE A2");
+    expect(deleDeck?.directAnswer).toContain("SIELE");
+    expect(deleDeck?.directAnswer).toContain("not a DELE + CCSE nationality bundle");
+    expect(deleDeck?.directAnswer).toContain("single Anki .apkg");
     expect(getDeckBySlug("dele-a2-ccse-spanish-citizenship-bundle")?.status).toBe("planned");
     const frenchDeck = getDeckBySlug("delf-b2-french-anki-deck");
     expect(frenchDeck?.title).toContain("DELF DALF TCF TEF");
@@ -278,17 +304,19 @@ describe("deck catalog", () => {
     ]);
   });
 
-  it("keeps the DELF A2 printable deck planned with four sample screenshots", () => {
-    const printableDeck = getDeckBySlug("delf-a2-printable-french-flashcards");
+  it("keeps the legacy DELF A2 printable planned and sells DELF Prim for kids", () => {
+    const legacyPrintable = getDeckBySlug("delf-a2-printable-french-flashcards");
+    const primPrintable = getDeckBySlug("delf-prim-printable-french-flashcards");
 
-    expect(printableDeck?.status).toBe("planned");
-    expect(printableDeck?.format).toBe("PDF");
-    expect(printableDeck?.sampleCards).toHaveLength(4);
-    expect(printableDeck?.sampleCards.map((card) => card.imageUrl)).toEqual([
-      "/samples/delf-a2-printable-french-flashcards-sample-1.webp",
-      "/samples/delf-a2-printable-french-flashcards-sample-2.webp",
-      "/samples/delf-a2-printable-french-flashcards-sample-3.webp",
-      "/samples/delf-a2-printable-french-flashcards-sample-4.webp",
+    expect(legacyPrintable?.status).toBe("planned");
+    expect(legacyPrintable?.format).toBe("PDF");
+    expect(primPrintable?.status).toBe("available");
+    expect(primPrintable?.format).toBe("PDF");
+    expect(primPrintable?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/delf-prim-printable-french-flashcards-sample-1.webp",
+      "/samples/delf-prim-printable-french-flashcards-sample-2.webp",
+      "/samples/delf-prim-printable-french-flashcards-sample-3.webp",
+      "/samples/delf-prim-printable-french-flashcards-sample-4.webp",
     ]);
   });
 
@@ -555,6 +583,9 @@ describe("deck catalog", () => {
       "ciple-a2-european-portuguese-anki-deck":
         "CIPLE CAPLE Portuguese Citizenship Anki Deck — 1600+ Flashcards",
       "delf-b2-french-anki-deck": "DELF DALF TCF TEF French Anki Deck — 2000+ Flashcards",
+      "delf-prim-printable-french-flashcards":
+        "DELF Prim Printable French Flashcards — Ages 7–12 · 360 PDF Cards",
+      "dele-a2-spanish-anki-deck": "DELE SIELE Spanish Anki Deck — 1000 Flashcards",
       "dutch-a2-inburgering-anki-deck":
         "Dutch Inburgering NT2 A2 Anki Deck — 1000+ Flashcards",
       "german-a2-anki-deck": "German Goethe telc ÖSD DTZ Anki Deck — 1000 Flashcards",

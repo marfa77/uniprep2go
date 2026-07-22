@@ -225,23 +225,55 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     intro:
       "Norskprøve A2 learners preparing residence or citizenship language requirements use daily Bokmål vocabulary recall alongside speaking practice.",
   },
+  "delf-prim-printable-french-flashcards": {
+    title: "DELF Prim Printable French Flashcards | Ages 7–12 · 360 Cards",
+    headline: "DELF Prim Printable French — Ages 7–12 · 360 PDF Cards",
+    studyLabel: "DELF Prim kids printable French flashcards",
+    description:
+      "Printable DELF Prim French flashcards for ages 7–12: 360 cards with images, examples, cut lines, and QR audio across two A4 PDFs. Independent study aid — not official France Éducation international material.",
+    keywords: [
+      "delf prim flashcards",
+      "delf prim ages 7-12",
+      "printable french flashcards kids",
+      "delf prim pdf",
+      "french vocabulary cards qr audio",
+    ],
+    intro:
+      "Parents and teachers print DELF Prim vocabulary cards for ages 7–12, cut them out, and use QR audio for pronunciation practice.",
+  },
+  "dele-a2-spanish-anki-deck": {
+    title: "DELE SIELE Spanish Anki Deck | 1000 Flashcards",
+    headline: "DELE SIELE Spanish Exam Prep — 1000 Flashcards",
+    studyLabel: "DELE SIELE Spanish exam prep",
+    description:
+      "Spanish Anki deck with 1000 A2 vocabulary flashcards for DELE A2 and SIELE A2-style word knowledge. Single .apkg — language only, not a CCSE civics bundle. Independent study aid — not Instituto Cervantes or SIELE material.",
+    keywords: [
+      "dele a2 anki",
+      "siele a2 vocabulary",
+      "dele spanish flashcards",
+      "spanish a2 anki deck",
+      "dele vocabulary anki",
+    ],
+    intro:
+      "DELE A2 learners drill high-frequency Spanish vocabulary on a daily Anki schedule — language recall only, without CCSE civics.",
+  },
   "dele-a2-ccse-spanish-citizenship-bundle": {
     title: "DELE CCSE Spanish Nationality Anki Bundle | Exam Cards",
     headline: "DELE CCSE Spanish Nationality Prep — Dual Anki Bundle",
     studyLabel: "DELE CCSE Spanish nationality exam prep",
     description:
-      "Spanish nationality Anki bundle: DELE A2 vocabulary plus CCSE civics for nacionalidad española. Two .apkg downloads. Independent study aid — not Instituto Cervantes or Ministry of Justice material.",
+      "Planned Spanish nationality Anki bundle: DELE A2 vocabulary plus CCSE civics. Not currently for sale — use the standalone DELE SIELE deck for language prep.",
     keywords: [
       "dele a2 anki",
       "ccse anki deck",
       "nacionalidad espanola flashcards",
       "spanish citizenship anki",
       "dele ccse bundle",
-      "siele a2 vocabulary",
     ],
     intro:
-      "Spanish nationality applicants study DELE A2 language and CCSE civics together — language and citizenship knowledge on one Anki schedule.",
+      "Planned listing for applicants who want DELE language and CCSE civics together. Not sold in the current Gumroad language lineup.",
   },
+
   "delf-b2-french-anki-deck": {
     title: "DELF DALF TCF TEF French Anki Deck | 2000+ Flashcards",
     headline: "DELF DALF TCF TEF French Exam Prep — 2000+ Flashcards",

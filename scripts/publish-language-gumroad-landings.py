@@ -318,46 +318,46 @@ SPECS: dict[str, dict[str, Any]] = {
             ("Delivery", "Instant .apkg"),
         ],
     },
-    "dele-a2-ccse-spanish-citizenship-bundle": {
-        "label": "DELE CCSE Spanish Nationality",
-        "headline": "DELE CCSE Spanish Nationality Anki Bundle — Exam Flashcards",
-        "exam": "DELE A2 · CCSE · nacionalidad española",
+    "dele-a2-spanish-anki-deck": {
+        "label": "DELE SIELE Spanish",
+        "headline": "DELE SIELE Spanish Anki Deck — 1000 Flashcards",
+        "exam": "DELE A2 · SIELE A2 vocabulary",
         "hook": (
-            "Spanish nationality bundle: DELE A2 vocabulary plus CCSE civic knowledge "
-            "for constitución, institutions, geography, history, and daily life in Spain."
+            "Spanish A2 vocabulary for DELE A2 and overlapping SIELE A2-style word knowledge — "
+            "language only, not a CCSE civics bundle."
         ),
         "audience": (
-            "For nacionalidad española applicants preparing DELE A2 and CCSE — "
-            "language and civics on one study schedule."
+            "For DELE A2 candidates and learners building SIELE-overlapping Spanish vocabulary "
+            "with spaced repetition."
         ),
-        "disclaimer": "Instituto Cervantes / Spanish Ministry of Justice",
-        "about_heading": "What are DELE A2 and CCSE?",
+        "disclaimer": "Instituto Cervantes / SIELE",
+        "about_heading": "What are DELE A2 and SIELE?",
         "about": (
-            "DELE A2 (Instituto Cervantes) proves A2 Spanish. CCSE tests constitutional "
-            "and sociocultural knowledge required for Spanish nationality. Many applicants "
-            "need both. The DELE A2 lexicon also overlaps SIELE A2-style vocabulary practice."
+            "DELE A2 (Instituto Cervantes) is a level diploma proving A2 Spanish. SIELE is a "
+            "scored proficiency exam; its A2-range vocabulary overlaps heavily with DELE A2 "
+            "high-frequency words. This deck trains that shared lexicon — not CCSE civics."
         ),
-        "pathways": "DELE A2 · CCSE · nacionalidad española · SIELE A2 vocabulary overlap",
+        "pathways": "DELE A2 · SIELE A2 vocabulary overlap",
         "deck_covers": (
-            "Two .apkg files: DELE A2 vocabulary with media, plus CCSE civic cards covering "
-            "constitution, institutions, geography, history, and daily life in Spain."
+            "One .apkg with 1,000 high-frequency Spanish A2 vocabulary cards, examples, "
+            "and media for DELE / SIELE-style recall."
         ),
         "not_included": (
-            "Official DELE speaking exams or full Cervantes practice papers — "
-            "use this bundle for daily recall alongside official mocks."
+            "CCSE civics for nacionalidad española, or official Cervantes speaking exams — "
+            "pair this language deck with official practice papers."
         ),
         "why_anki": (
-            "Nationality applications combine language and civics. Spaced Anki keeps "
-            "both DELE vocabulary and CCSE facts reviewable on one schedule."
+            "DELE and SIELE reward fast lexical access. Spaced Anki keeps high-frequency "
+            "Spanish available under exam pressure."
         ),
-        "cards": "DELE A2 + CCSE",
-        "format_note": "Two Anki .apkg files (language + civics)",
+        "cards": "1000",
+        "format_note": "Single Anki .apkg (language only)",
         "sample_captions": ["estar", "yo", "tú"],
         "facts": [
-            ("Pathways", "DELE A2 · CCSE · nationality"),
-            ("Files", "2× .apkg"),
-            ("Media", "Audio + images (DELE)"),
-            ("Delivery", "Instant Gumroad download"),
+            ("Pathways", "DELE A2 · SIELE vocabulary"),
+            ("Cards", "1000 vocabulary"),
+            ("Media", "Audio + images"),
+            ("Delivery", "Instant .apkg"),
         ],
     },
 }

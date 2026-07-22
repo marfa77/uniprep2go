@@ -32,8 +32,10 @@
     "audit:aeo": "npx tsx scripts/aeo-audit-local.mjs --scope all",
     "audit:aeo:live": "npx tsx scripts/aeo-audit-local.mjs --scope all --live",
     "setup:gumroad-language-decks": "node scripts/setup-gumroad-language-decks.mjs",
+    "setup:gumroad-delf-prim-printable": "node scripts/setup-gumroad-delf-prim-printable.mjs",
     "publish:gumroad-language-landings": "python3 scripts/publish-language-gumroad-landings.py"
   },
+
   "dependencies": {
     "@upstash/redis": "^1.38.0",
     "next": "16.2.6",

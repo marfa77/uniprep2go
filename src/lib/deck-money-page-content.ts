@@ -255,17 +255,33 @@ PD2 / PD3 + residence/citizenship pathway copy — not a generic Danish tourist 
 
 Norskprøve + residence/citizenship framing on Gumroad — not a tourist phrase pack.`,
 
-  "dele-a2-ccse-spanish-citizenship-bundle": `### Which Spanish pathways this bundle targets
+  "delf-prim-printable-french-flashcards": `### Who this printable is for
 
-**DELE A2** (Instituto Cervantes) language plus **CCSE** civics for **nacionalidad española**. DELE A2 vocabulary also overlaps **SIELE A2**-style word knowledge; civics remains CCSE-specific.
+**DELF Prim** learners ages **7–12** and parents/teachers who want paper cards with pictures and QR pronunciation — not an adult Anki vocabulary bank.
 
-### Study plan
+### How to use
 
-Alternate language and CCSE cards daily. Keep official DELE/CCSE mock formats separate from Anki.
+Print both PDFs at 100% on A4, cut along the dashed lines (six cards per page), and scan the QR on each card for audio while reviewing.
 
 ### What makes this Gumroad edition different
 
-Dual .apkg nationality bundle (DELE + CCSE) with SIELE-aware vocabulary framing — not language-only checkout.`,
+Kids-first DELF Prim framing at **$12** with two instant PDF downloads — separate from the adult DELF DALF TCF TEF Anki deck.`,
+
+  "dele-a2-spanish-anki-deck": `### Which Spanish pathways this deck targets
+
+**DELE A2** (Instituto Cervantes) vocabulary plus overlapping **SIELE A2**-style word knowledge. Language only — no CCSE civics file.
+
+### Study plan
+
+20 cards/day with examples and audio where included. Pair with speaking and listening practice for DELE; keep official Cervantes mocks separate from Anki.
+
+### What makes this Gumroad edition different
+
+Single DELE / SIELE vocabulary .apkg on Gumroad — not a DELE + CCSE nationality bundle.`,
+
+  "dele-a2-ccse-spanish-citizenship-bundle": `### Planned listing
+
+Dual DELE + CCSE nationality bundle is not currently for sale. Use the standalone [DELE SIELE Spanish Anki deck](/decks/dele-a2-spanish-anki-deck) for language vocabulary now.`,
 
   "cfa-level-1-formula-reference-2026": `### What is inside
 

@@ -248,38 +248,22 @@ const prep2GoAdditionalLanguageDecks: Deck[] = [
     slug: "delf-a2-printable-french-flashcards",
     title: "DELF A2 Printable French Flashcards — 360 PDF Cards",
     shortName: "DELF A2 Printable French",
-    description: "360 printable DELF A2 French flashcards with images, example sentences, and QR audio across two PDF files.",
+    description:
+      "Legacy adult-framed printable listing (planned). For kids ages 7–12, buy the DELF Prim printable French flashcards instead.",
     cards: "360",
-    focus: "DELF A2 printable vocabulary cards",
-    topics: "DELF A2 vocabulary, example sentences, images, and QR audio",
-    audience: "DELF A2 learners who want printable French flashcards with audio QR support.",
+    focus: "Planned legacy printable listing",
+    topics: "DELF printable vocabulary (superseded by DELF Prim listing)",
+    audience: "Planned listing only — use DELF Prim printable for ages 7–12.",
     fallbackCoverImage: "/samples/prep2go-delf-a2-printable-french-cover.webp",
     format: "PDF",
     coverImage: "/samples/prep2go-delf-a2-printable-french-cover.webp",
     status: "planned",
     sampleCards: [
       {
-        question: "What does a sample A4 page look like?",
+        question: "Where is the kids printable sold?",
         answer:
-          "Each page has six cards with a French headword, English gloss, example sentences, illustration, topic label, and QR audio.",
-        imageUrl: "/samples/delf-a2-printable-french-flashcards-sample-1.webp",
-      },
-      {
-        question: "How do you print the cards at home?",
-        answer: "Print at 100% scale on A4 paper and cut along the dashed lines — six cards per page.",
-        imageUrl: "/samples/delf-a2-printable-french-flashcards-sample-2.webp",
-      },
-      {
-        question: "How does QR audio work on each card?",
-        answer:
-          "Every card includes a QR code that opens Prep2Go French pronunciation audio while you review the printed card.",
-        imageUrl: "/samples/delf-a2-printable-french-flashcards-sample-3.webp",
-      },
-      {
-        question: "What is included in the PDF download?",
-        answer:
-          "360 printable DELF A2 cards on 60 A4 pages across two PDF files, with images, examples, cut lines, and QR audio.",
-        imageUrl: "/samples/delf-a2-printable-french-flashcards-sample-4.webp",
+          "Buy DELF Prim Printable French Flashcards (ages 7–12) — the current Gumroad listing with QR audio PDFs.",
+        imageUrl: "/covers/delf-prim-printable-french-flashcards.webp",
       },
     ],
   }),
@@ -1808,6 +1792,125 @@ const rawDecks: Deck[] = [
     ],
   },
   {
+    slug: "delf-prim-printable-french-flashcards",
+    category: "language",
+    status: "available",
+    title: "DELF Prim Printable French Flashcards — Ages 7–12 · 360 PDF Cards",
+    shortName: "DELF Prim Printable (Ages 7–12)",
+    subtitle:
+      "360 printable French flashcards for DELF Prim kids ages 7–12 — images, examples, cut lines, and QR audio across two A4 PDFs.",
+    directAnswer:
+      "UniPrep2Go sells DELF Prim printable French flashcards for ages 7–12: 360 cards with illustrations, example sentences, cut lines, and QR pronunciation audio across two A4 PDF files. It is delivered as a digital PDF download for {PRICE} through Gumroad by PixID Studio — a kids printable pack, not an Anki .apkg and not a DELF B2 adult deck.",
+    lastUpdated: "2026-07-22",
+    audience:
+      "Parents and teachers preparing children ages 7–12 for DELF Prim-style French vocabulary with printable cards and QR audio.",
+    format: "PDF",
+    coverImage: "/covers/delf-prim-printable-french-flashcards.webp",
+    checkoutUrl:
+      "https://pixidstudio.gumroad.com/l/delf-prim-printable-french-flashcards?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "360",
+      topics: "DELF Prim ages 7–12, printable French vocabulary, QR audio",
+      formulas: "A4 PDF pages with six cards each — print, cut, scan QR for audio",
+      examYear: "Current DELF Prim cycle",
+      delivery: "Two PDF files through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [
+      {
+        question: "What does a sample A4 page look like?",
+        answer:
+          "Each page has six cards with a French headword, English gloss, example sentences, illustration, topic label, and QR audio — sized for kids review at home.",
+        imageUrl: "/samples/delf-prim-printable-french-flashcards-sample-1.webp",
+      },
+      {
+        question: "How do you print the cards at home?",
+        answer: "Print at 100% scale on A4 paper and cut along the dashed lines — six cards per page.",
+        imageUrl: "/samples/delf-prim-printable-french-flashcards-sample-2.webp",
+      },
+      {
+        question: "How does QR audio work on each card?",
+        answer:
+          "Every card includes a QR code that opens French pronunciation audio while your child reviews the printed card.",
+        imageUrl: "/samples/delf-prim-printable-french-flashcards-sample-3.webp",
+      },
+      {
+        question: "What is included in the PDF download?",
+        answer:
+          "360 printable DELF Prim cards on 60 A4 pages across two PDF files, with images, examples, cut lines, and QR audio for ages 7–12.",
+        imageUrl: "/samples/delf-prim-printable-french-flashcards-sample-4.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is this for DELF Prim (kids) or adult DELF?",
+        answer:
+          "This listing is positioned for DELF Prim ages 7–12 — printable cards with pictures and QR audio. For adult multi-exam French Anki vocabulary, see the DELF DALF TCF TEF Anki deck.",
+      },
+      {
+        question: "What format is delivered?",
+        answer: "Two printable A4 PDF files (360 cards total) through Gumroad after checkout — not an Anki .apkg.",
+      },
+      {
+        question: "Is this official DELF Prim material?",
+        answer:
+          "No. This is an independent UniPrep2Go study aid sold by PixID Studio and is not affiliated with France Éducation international.",
+      },
+    ],
+  },
+  {
+    slug: "dele-a2-spanish-anki-deck",
+    category: "language",
+    status: "available",
+    title: "DELE SIELE Spanish Anki Deck — 1000 Flashcards",
+
+    shortName: "DELE SIELE Spanish",
+    subtitle:
+      "1,000 Spanish A2 vocabulary flashcards for DELE A2 and SIELE A2-style word knowledge — language only, not a CCSE civics bundle.",
+    directAnswer:
+      "UniPrep2Go sells a Spanish Anki deck with 1,000 high-frequency A2 vocabulary cards for DELE A2 (Instituto Cervantes) and overlapping SIELE A2-style word knowledge. Each card targets exam-ready Spanish recall with examples and media where included. It is delivered as a single Anki .apkg file for {PRICE} through Gumroad by PixID Studio — DELE / SIELE vocabulary only, not a DELE + CCSE nationality bundle.",
+    lastUpdated: "2026-07-22",
+    audience:
+      "DELE A2 candidates and learners building SIELE A2-overlapping Spanish vocabulary with spaced repetition.",
+    format: ".apkg",
+    coverImage: "/covers/dele-a2-spanish-anki-deck.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/dele-a2-spanish-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "1000",
+      topics: "DELE A2, SIELE A2-overlapping Spanish vocabulary",
+      formulas: "High-frequency A2 vocabulary with examples and media",
+      examYear: "Current DELE A2 / SIELE cycle",
+      delivery: "Digital download through Gumroad (single .apkg)",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Which Spanish exams does this deck cover?",
+        answer:
+          "DELE A2 (Instituto Cervantes) vocabulary plus overlapping SIELE A2-style word knowledge. It is a language deck only — it does not include CCSE civics for nacionalidad española.",
+      },
+      {
+        question: "Is this a DELE + CCSE nationality bundle?",
+        answer:
+          "No. This listing is a single DELE / SIELE vocabulary .apkg. The separate DELE + CCSE nationality bundle remains a planned listing and is not sold here.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "One Anki-compatible .apkg file delivered through Gumroad after checkout.",
+      },
+      {
+        question: "Is this official exam material?",
+        answer:
+          "No. This is an independent UniPrep2Go study aid sold by PixID Studio and is not affiliated with Instituto Cervantes or SIELE.",
+      },
+    ],
+  },
+  {
     slug: "dele-a2-ccse-spanish-citizenship-bundle",
     category: "language",
     status: "planned",
@@ -1816,7 +1919,7 @@ const rawDecks: Deck[] = [
     subtitle:
       "Planned Spanish nationality bundle: DELE A2 vocabulary + CCSE civics (not currently for sale).",
     directAnswer:
-      "The DELE A2 + CCSE Spanish nationality Anki bundle is a planned UniPrep2Go listing and is not currently available for purchase. It is not part of the curated Gumroad language lineup.",
+      "The DELE A2 + CCSE Spanish nationality Anki bundle is a planned UniPrep2Go listing and is not currently available for purchase. For Spanish language prep now, use the standalone DELE SIELE Anki deck instead.",
     lastUpdated: "2026-07-22",
     audience: "Spanish nationality applicants preparing DELE A2 and CCSE (planned listing only).",
     format: ".apkg",
@@ -1834,7 +1937,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this deck available for purchase?",
         answer:
-          "No. This DELE + CCSE nationality bundle is a planned listing and is not sold on UniPrep2Go or Gumroad right now.",
+          "No. This DELE + CCSE nationality bundle is a planned listing. Buy the standalone DELE SIELE Spanish Anki deck for language vocabulary now.",
       },
       {
         question: "Is this official exam material?",

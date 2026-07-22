@@ -134,6 +134,20 @@ const SPECS = {
     apkgRelPaths: ["prep2go_Norwegian_A2_Norskprove/prep2go_Norwegian_A2_Norskprove_FULL.apkg"],
     fileNames: ["Norwegian_Norskprove_Residence_Citizenship_Anki_Deck.apkg"],
   },
+  "dele-a2-spanish-anki-deck": {
+    name: "DELE SIELE Spanish Anki Deck — 1000 Flashcards",
+    summary:
+      "1,000 Spanish A2 vocabulary cards for DELE A2 and SIELE A2-style word knowledge — language only, not a CCSE bundle.",
+    descriptionHtml: [
+      "<p><strong>UniPrep2Go × PixID Studio</strong> — Spanish Anki deck for <strong>DELE A2</strong> (Instituto Cervantes) and overlapping <strong>SIELE A2</strong>-style vocabulary.</p>",
+      "<p><strong>1,000</strong> high-frequency A2 cards with examples and media — a single language .apkg, not a DELE + CCSE nationality bundle.</p>",
+      "<p><strong>Delivery:</strong> Import the .apkg into Anki desktop, then sync to mobile via AnkiWeb.</p>",
+      "<p><em>Independent study aid — not affiliated with Instituto Cervantes or SIELE.</em></p>",
+    ].join(""),
+    coverPath: "public/covers/dele-a2-spanish-anki-deck.webp",
+    apkgRelPaths: ["prep2go_Spanish_A2_DELE/prep2go_Spanish_A2_DELE_FULL.apkg"],
+    fileNames: ["DELE_SIELE_Spanish_Anki_Deck.apkg"],
+  },
   "dele-a2-ccse-spanish-citizenship-bundle": {
     name: "DELE CCSE Spanish Nationality Anki Bundle — Exam Flashcards",
     summary:
