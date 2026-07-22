@@ -241,6 +241,22 @@ const SPECS = {
     ],
     fileNames: ["IELTS_TOEFL_English_for_Russian_Speakers_Anki_Deck.apkg"],
   },
+  "ielts-toefl-english-for-spanish-speakers-anki-deck": {
+    name: "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2504 Flashcards",
+    summary:
+      "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Latin American Spanish support on every card.",
+    descriptionHtml: [
+      "<p><strong>UniPrep2Go × PixID Studio</strong> — English Anki deck for <strong>Spanish speakers (LatAm)</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
+      "<p><strong>2,504</strong> high-frequency English cards with Latin American Spanish glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
+      "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
+    ].join(""),
+    coverPath: "public/covers/ielts-toefl-english-for-spanish-speakers-anki-deck.webp",
+    apkgRelPaths: [
+      "prep2go_English_A2_Spanish_Speakers/prep2go_English_A2_Spanish_Speakers_FULL.apkg",
+    ],
+    fileNames: ["IELTS_TOEFL_English_for_Spanish_Speakers_LatAm_Anki_Deck.apkg"],
+  },
   "dele-a2-spanish-anki-deck": {
     name: "DELE SIELE Spanish Anki Deck — 1000 Flashcards",
     summary:

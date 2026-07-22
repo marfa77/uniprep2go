@@ -654,6 +654,48 @@ SPECS: dict[str, dict[str, Any]] = {
             ("Delivery", "Instant .apkg"),
         ],
     },
+    "ielts-toefl-english-for-spanish-speakers-anki-deck": {
+        "label": "IELTS / TOEFL English for Spanish Speakers (LatAm)",
+        "headline": "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2504 Flashcards",
+        "exam": "IELTS · TOEFL · Cambridge · PTE — for Spanish speakers (LatAm)",
+        "hook": (
+            "2,504 high-frequency English vocabulary cards with Latin American Spanish glosses, "
+            "bilingual examples, and native English audio — built for LatAm Spanish speakers preparing IELTS and TOEFL."
+        ),
+        "audience": (
+            "For Latin American Spanish-speaking IELTS, TOEFL, Cambridge, and PTE candidates who need "
+            "daily English recall with native-language support — not tourist phrase lists or DELE Spanish prep."
+        ),
+        "disclaimer": "IELTS / TOEFL / Cambridge / PTE bodies",
+        "about_heading": "Which English exams does this cover?",
+        "about": (
+            "IELTS, TOEFL, Cambridge English exams, and PTE share a large high-frequency "
+            "academic and general English lexicon. This deck packages that bank for LatAm Spanish "
+            "speakers: English headword, Spanish gloss, bilingual example, and English audio."
+        ),
+        "pathways": "IELTS · TOEFL · Cambridge · PTE · English for Spanish speakers (LatAm)",
+        "deck_covers": (
+            "2,504 English cards from the Prep2Go app with LatAm Spanish glosses, bilingual examples, "
+            "native English audio, and illustrations."
+        ),
+        "not_included": (
+            "Official IELTS/TOEFL practice tests, writing scorers, DELE Spanish vocab, or speaking partners — "
+            "pair Anki with timed official practice for each exam format."
+        ),
+        "why_anki": (
+            "Exam sittings punish slow retrieval. Spaced Anki with English-first recall "
+            "(Spanish as a check) beats translating every sentence under time pressure."
+        ),
+        "cards": "2504",
+        "format_note": "Anki .apkg with audio, images, and LatAm Spanish support",
+        "sample_captions": ["be", "i", "you"],
+        "facts": [
+            ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
+            ("Cards", "2504 vocabulary"),
+            ("Media", "Audio + LatAm Spanish glosses"),
+            ("Delivery", "Instant .apkg"),
+        ],
+    },
 
 }
 

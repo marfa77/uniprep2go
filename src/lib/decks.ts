@@ -304,18 +304,6 @@ const prep2GoAdditionalLanguageDecks: Deck[] = [
     status: "planned",
   }),
   buildPrep2GoLanguageDeck({
-    slug: "ielts-toefl-english-for-spanish-speakers-anki-deck",
-    title: "IELTS / TOEFL English for Spanish Speakers Anki Deck — 1000 Flashcards",
-    shortName: "IELTS / TOEFL English for Spanish Speakers",
-    description: "English exam vocabulary for IELTS, TOEFL, Cambridge, and PTE with Spanish support, bilingual cards, and native English audio examples.",
-    cards: "1000",
-    focus: "IELTS, TOEFL, Cambridge, and PTE English vocabulary",
-    topics: "IELTS and TOEFL English vocabulary with Spanish bilingual support",
-    audience: "Spanish-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
-    coverImage: "/samples/prep2go-ielts-toefl-english-for-spanish-speakers-cover.webp",
-    status: "planned",
-  }),
-  buildPrep2GoLanguageDeck({
     slug: "ielts-toefl-english-for-turkish-speakers-anki-deck",
     title: "IELTS / TOEFL English for Turkish Speakers Anki Deck — 1000 Flashcards",
     shortName: "IELTS / TOEFL English for Turkish Speakers",
@@ -2205,6 +2193,56 @@ const rawDecks: Deck[] = [
         question: "What does the deck include?",
         answer:
           "2,504 English vocabulary cards from the Prep2Go app: Russian glosses, bilingual examples, native English audio, and illustrations.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
+      },
+    ],
+  },
+
+  {
+    slug: "ielts-toefl-english-for-spanish-speakers-anki-deck",
+    category: "language",
+    status: "available",
+    title: "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2504 Flashcards",
+    shortName: "IELTS / TOEFL English for Spanish Speakers (LatAm)",
+    subtitle:
+      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Latin American Spanish support on every card.",
+    directAnswer:
+      "UniPrep2Go sells an IELTS / TOEFL English for Spanish Speakers Anki deck with 2,504 high-frequency English vocabulary cards, Latin American Spanish glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Spanish-speaking (LatAm) candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-07-22",
+    audience:
+      "Latin American Spanish-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
+    format: ".apkg",
+    coverImage: "/covers/ielts-toefl-english-for-spanish-speakers-anki-deck.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/ielts-toefl-english-for-spanish-speakers-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "2504",
+      topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with Latin American Spanish bilingual support",
+      formulas: "Audio + LatAm Spanish glosses + bilingual example sentences",
+      examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Which English exams does this deck support?",
+        answer:
+          "IELTS, TOEFL, Cambridge English exams, and PTE — as a shared high-frequency English vocabulary bank with Latin American Spanish support. Pair Anki with official practice tests for each exam's format.",
+      },
+      {
+        question: "Is this Latin American or Peninsular Spanish?",
+        answer:
+          "Latin American Spanish glosses and examples (LatAm). It is English vocabulary prep for Spanish speakers, not a DELE Spanish exam deck.",
+      },
+      {
+        question: "What does the deck include?",
+        answer:
+          "2,504 English vocabulary cards from the Prep2Go app: LatAm Spanish glosses, bilingual examples, native English audio, and illustrations.",
       },
       {
         question: "What file format is delivered?",

@@ -33,7 +33,7 @@ export async function generateMetadata(): Promise<Metadata> {
     }),
     {
       aiDescription:
-        "UniPrep2Go language certification products cover fifteen curated multi-pathway Anki decks on Gumroad, DELF Prim printable French flashcards for ages 7–12, and a Citizenship & Naturalization Anki Bundle for Germany, France, UK, Canada, Australia, and the U.S.: CIPLE CAPLE Portuguese citizenship, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, CELI CILS PLIDA Italian, IELTS / TOEFL English for French Speakers, IELTS / TOEFL English for Arabic Speakers, IELTS / TOEFL English for Ukrainian Speakers, and IELTS / TOEFL English for Russian Speakers.",
+        "UniPrep2Go language certification products cover sixteen curated multi-pathway Anki decks on Gumroad, DELF Prim printable French flashcards for ages 7–12, and a Citizenship & Naturalization Anki Bundle for Germany, France, UK, Canada, Australia, and the U.S.: CIPLE CAPLE Portuguese citizenship, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, CELI CILS PLIDA Italian, IELTS / TOEFL English for French Speakers, IELTS / TOEFL English for Arabic Speakers, IELTS / TOEFL English for Ukrainian Speakers, IELTS / TOEFL English for Russian Speakers, and IELTS / TOEFL English for Spanish Speakers (LatAm).",
       aiCategory: "Language exam prep hub",
       path: "/language-certification-decks",
     },
@@ -86,7 +86,7 @@ export default async function LanguageCertificationDecksPage() {
           NT2, German Goethe / telc / ÖSD / DTZ, Danish Prøve i Dansk, Norwegian Norskprøve, Swedish
           SFI, Greek Ellinomatheia, Czech CCE, CELI / CILS / PLIDA Italian, IELTS / TOEFL English
           for French Speakers, IELTS / TOEFL English for Arabic Speakers, and IELTS / TOEFL
-          English for Ukrainian Speakers, and IELTS / TOEFL English for Russian Speakers — plus DELF Prim printable French flashcards for ages 7–12 ($12) and a
+          English for Ukrainian Speakers, IELTS / TOEFL English for Russian Speakers, and IELTS / TOEFL English for Spanish Speakers (LatAm) — plus DELF Prim printable French flashcards for ages 7–12 ($12) and a
           Citizenship &amp; Naturalization Anki Bundle for six countries ($20). We do not publish
           separate timed practice mocks for language certifications; each product page is the study
           guide + checkout.
@@ -118,7 +118,7 @@ export default async function LanguageCertificationDecksPage() {
           <p className="mt-4 text-base leading-8 text-[#4f493e]">
             For Portuguese citizenship language evidence start with CIPLE / CAPLE. For French
             immigration vs diplomas, one French vocabulary bank covers DELF/DALF plus TCF/TEF
-            pathways. French, Arabic, Ukrainian, or Russian speakers preparing IELTS / TOEFL should use the matching
+            pathways. French, Arabic, Ukrainian, Russian, or Spanish (LatAm) speakers preparing IELTS / TOEFL should use the matching
             English-for-speakers decks. For Scandinavian and Central European residence language, use the SFI,
             Norskprøve, Ellinomatheia, or CCE decks listed below. Kids learning DELF Prim should buy
             the printable PDF set, not the adult French Anki.

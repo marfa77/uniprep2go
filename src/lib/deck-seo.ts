@@ -340,6 +340,23 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Russian-speaking IELTS and TOEFL candidates use bilingual English vocabulary recall with Russian support before timed exam practice.",
   },
 
+  "ielts-toefl-english-for-spanish-speakers-anki-deck": {
+    title: "IELTS / TOEFL English for Spanish Speakers Anki | 2504 Cards",
+    headline: "IELTS / TOEFL English for Spanish Speakers (LatAm) — 2504 Flashcards",
+    studyLabel: "IELTS TOEFL English for Spanish speakers LatAm",
+    description:
+      "English Anki deck with 2504 flashcards for Latin American Spanish speakers preparing IELTS, TOEFL, Cambridge, and PTE — LatAm Spanish glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
+    keywords: [
+      "english for spanish speakers anki",
+      "ielts vocabulary spanish speakers",
+      "toefl vocabulary latam spanish",
+      "english for latin american spanish speakers",
+      "ielts toefl flashcards spanish",
+    ],
+    intro:
+      "Latin American Spanish-speaking IELTS and TOEFL candidates use bilingual English vocabulary recall with LatAm Spanish support before timed exam practice.",
+  },
+
   "delf-prim-printable-french-flashcards": {
     title: "DELF Prim Printable French Flashcards | Ages 7–12 · 360 Cards",
     headline: "DELF Prim Printable French — Ages 7–12 · 360 PDF Cards",
