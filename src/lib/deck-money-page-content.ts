@@ -349,7 +349,7 @@ CCE + residence/citizenship framing on Gumroad — not a tourist phrase pack.`,
 
 ### Study plan
 
-Drill 25–40 cards/day for eight to twelve weeks while you schedule official IELTS or TOEFL practice tests. Read the English example aloud first; use the French gloss only as a check. After each week, filter review to cards you failed twice — exam sittings punish slow retrieval more than missing rare words.
+**Weeks 1–4:** 30 new English cards/day with audio; glance at the French gloss only after you attempt the meaning. **Weeks 5–8:** Cut new cards to 20/day and run one official IELTS or TOEFL practice section each weekend. **Final fortnight:** Suspend new cards; review leeches (cards failed twice) while you sit timed Reading/Listening sets.
 
 ### Pitfalls this deck targets
 
@@ -365,7 +365,7 @@ Prep2Go app bank (2,522 cards) with UniPrep2Go IELTS/TOEFL framing on Gumroad at
 
 ### Study plan
 
-Drill 25–40 cards/day for eight to twelve weeks while you schedule official IELTS or TOEFL practice tests. Read the English example aloud first; use the Arabic gloss only as a check. After each week, filter review to cards you failed twice — exam sittings punish slow retrieval more than missing rare words.
+Start with 25 cards/day for two weeks while you get used to English-first recall (Arabic on the back as confirmation). Raise to 35–40/day for the next month if review load stays under an hour. Book one full IELTS or TOEFL practice test every three weeks and spend the following day clearing only the Anki cards that match words you missed on that test.
 
 ### Pitfalls this deck targets
 
@@ -382,7 +382,7 @@ Prep2Go app bank (2,504 cards) with UniPrep2Go IELTS/TOEFL framing on Gumroad at
 
 ### Study plan
 
-Drill 25–40 cards/day for eight to twelve weeks while you schedule official IELTS or TOEFL practice tests. Read the English example aloud first; use the Ukrainian gloss only as a check. After each week, filter review to cards you failed twice — exam sittings punish slow retrieval more than missing rare words.
+Aim for nine to ten weeks of daily Anki before your IELTS or TOEFL date: 20–30 new cards on weekdays, lighter review on weekends. Say each English example out loud before flipping; treat the Ukrainian gloss as a last-resort check. In the last ten days, stop adding cards and clear overdue reviews while you take two timed practice papers.
 
 ### Pitfalls this deck targets
 
@@ -399,7 +399,7 @@ Prep2Go app bank (2,504 cards) with UniPrep2Go IELTS/TOEFL framing on Gumroad at
 
 ### Study plan
 
-Drill 25–40 cards/day for eight to twelve weeks while you schedule official IELTS or TOEFL practice tests. Read the English example aloud first; use the Russian gloss only as a check. After each week, filter review to cards you failed twice — exam sittings punish slow retrieval more than missing rare words.
+Front-load vocabulary for six weeks at 30–40 cards/day, then taper to review-heavy sessions while you sit Cambridge, IELTS, or TOEFL mocks. Keep English audio on; hide the Russian gloss until you have guessed the meaning. Once a week, export a filtered “again” queue and relearn only those leeches for 15 minutes.
 
 ### Pitfalls this deck targets
 
@@ -416,7 +416,7 @@ Prep2Go app bank (2,504 cards) with UniPrep2Go IELTS/TOEFL framing on Gumroad at
 
 ### Study plan
 
-Drill 25–40 cards/day for eight to twelve weeks while you schedule official IELTS or TOEFL practice tests. Read the English example aloud first; use the Spanish gloss only as a check. After each week, filter review to cards you failed twice — exam sittings punish slow retrieval more than missing rare words.
+Use a 12-week calendar if your IELTS/TOEFL date is far out: months one and two at ~35 new cards/day, month three at 15 new + heavy review. Always hear the English audio before reading the LatAm Spanish gloss. Every Sunday, mark cards you still fail and bury easy ones so weekday sessions stay under 45 minutes.
 
 ### Pitfalls this deck targets
 
@@ -433,7 +433,7 @@ Prep2Go app bank (2,504 cards, LatAm Spanish) with UniPrep2Go IELTS/TOEFL framin
 
 ### Study plan
 
-Drill 25–40 cards/day for eight to twelve weeks while you schedule official IELTS or TOEFL practice tests. Read the English example aloud first; use the Brazilian Portuguese gloss only as a check. After each week, filter review to cards you failed twice — exam sittings punish slow retrieval more than missing rare words.
+Block eight weeks before your IELTS or TOEFL sitting: 25 new cards/day in weeks 1–5, then mostly reviews plus one official practice test each weekend. Force English-first recall; open the Brazilian Portuguese (PT-BR) gloss only after you attempt the meaning. In week 8, clear the backlog and re-study any card you failed on the last mock’s vocabulary list.
 
 ### Pitfalls this deck targets
 
