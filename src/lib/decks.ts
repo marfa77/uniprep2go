@@ -2041,9 +2041,9 @@ const rawDecks: Deck[] = [
     title: "Citizenship & Naturalization Anki Bundle — 6 Countries · 1225 Cards",
     shortName: "Citizenship Naturalization Bundle",
     subtitle:
-      "Six Anki civics decks for Germany, France, UK, Canada, Australia, and the U.S. — 1,225 naturalization flashcards.",
+      "Stop cramming random civics quizzes — 1,225 Anki flashcards for Germany, France, UK, Canada, Australia & the U.S. in six separate decks, one $20 download.",
     directAnswer:
-      "UniPrep2Go sells a Citizenship & Naturalization Anki bundle with six separate .apkg decks covering Leben in Deutschland, Naturalisation française, Life in the UK, Canadian Citizenship, Australian Citizenship, and U.S. Citizenship — 1,225 civics flashcards total. It is delivered as six Anki .apkg files for {PRICE} through Gumroad by PixID Studio. Independent study aid — not official government exam material.",
+      "UniPrep2Go sells a Citizenship & Naturalization Anki bundle with six separate .apkg decks covering Leben in Deutschland (296 cards), Naturalisation française (200), Life in the UK (201), Canadian Citizenship (200), Australian Citizenship (200), and U.S. Citizenship (128) — 1,225 civics flashcards total for daily spaced-repetition drill. It is delivered as six Anki .apkg files for {PRICE} through Gumroad by PixID Studio. Independent study aid — not official government exam material; pair with your country’s official handbook.",
     lastUpdated: "2026-07-22",
     audience:
       "Applicants preparing citizenship or naturalization civics tests in Germany, France, the UK, Canada, Australia, or the United States.",
@@ -2085,17 +2085,17 @@ const rawDecks: Deck[] = [
       {
         question: "What is included in the $20 bundle?",
         answer:
-          "Six Anki .apkg decks: Leben in Deutschland (296 cards), Naturalisation française (200), Life in the UK (201), Canadian Citizenship (200), Australian Citizenship (200), and U.S. Citizenship (128) — 1,225 cards total.",
+          "Six Anki .apkg decks in one download: Leben in Deutschland (296 cards), Naturalisation française (200), Life in the UK (201), Canadian Citizenship (200), Australian Citizenship (200), and U.S. Citizenship (128) — 1,225 cards total. Import only the country you need.",
       },
       {
-        question: "Are these official government materials?",
+        question: "Will this replace the official civics handbook?",
         answer:
-          "No. This is an independent UniPrep2Go study aid sold by PixID Studio and is not affiliated with any government citizenship or naturalization authority.",
+          "No. Use Anki for daily recall of facts and wording; keep your country’s official handbook and any free government practice tests for full coverage. This is an independent UniPrep2Go study aid sold by PixID Studio — not affiliated with any citizenship authority.",
       },
       {
         question: "Do the cards include audio and images?",
         answer:
-          "These are text-first civics decks (question → answer). They do not include vocabulary media like the language Anki line.",
+          "These are text-first civics decks (question → answer) designed for fast daily drill. They do not include vocabulary media like the language Anki line.",
       },
     ],
   },

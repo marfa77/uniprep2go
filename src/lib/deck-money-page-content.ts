@@ -462,23 +462,27 @@ Kids-first DELF Prim framing at **$12** with two instant PDF downloads — separ
 
   "citizenship-naturalization-anki-bundle": `### Who this bundle is for
 
-Applicants preparing **citizenship or naturalization civics** tests in **Germany, France, the UK, Canada, Australia, or the United States** who want text-first Anki recall — not language-vocabulary media decks and not a substitute for official handbooks.
+Applicants preparing a **citizenship or naturalization civics** test in **Germany, France, the UK, Canada, Australia, or the United States** who are done with random blog quizzes and want daily Anki recall — text-first cards, not language-vocabulary media, and not a substitute for the official handbook.
+
+### The problem it solves
+
+Civics facts scatter across six countries. Free quizzes mix pathways. Interview day is not the moment to blank on rights, institutions, or “what is the supreme law of the land?” This bundle keeps each country in its own \`.apkg\` so you only drill what your application needs.
 
 ### What's inside
 
-Six separate \`.apkg\` files in one download: Leben in Deutschland (296), Naturalisation française (200), Life in the UK (201), Canadian Citizenship (200), Australian Citizenship (200), and U.S. Citizenship (128) — **1,225** cards total. Study only the country file that matches your application; keep the others archived or share within a family with multiple pathways.
+Six separate \`.apkg\` files in one **$20** download: Leben in Deutschland (**296**), Naturalisation française (**200**), Life in the UK (**201**), Canadian Citizenship (**200**), Australian Citizenship (**200**), and U.S. Citizenship (**128**) — **1,225** cards total. Study one country; keep the others for family members on other pathways.
 
 ### Study plan
 
-Import the relevant country deck, then 20–30 cards/day for four to six weeks while you read the official civics handbook for that country. Take any free official practice tests your government publishes; use Anki for fact recall (dates, rights, institutions), not for essay practice.
+Import the country file, then **20–30 cards/day for four to six weeks** while you read the official civics handbook. Use any free official practice tests your government publishes. Anki owns fact recall (dates, rights, institutions); handbooks and mocks own the rest. Final week: reviews only.
 
 ### Pitfalls this bundle targets
 
-Applicants mix country facts across borders, buy six separate listings, or rely on outdated blog quizzes. Separate country \`.apkg\` files keep pathways clean at one **$20** checkout.
+Mixing Germany with UK facts in one notes app, buying six separate listings, or relying on outdated quizzes. Separate country files + one checkout keep pathways clean.
 
 ### What makes this Gumroad edition different
 
-One **$20** multi-country civics bundle instead of six separate listings — instant download of all six decks.`,
+One **$20** multi-country civics bundle with instant download of all six decks — spaced repetition instead of another bookmark pile.`,
 
   "dele-a2-spanish-anki-deck": `### Which Spanish pathways this deck targets
 

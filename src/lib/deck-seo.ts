@@ -395,7 +395,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Citizenship & Naturalization Anki Bundle — 6 Countries · 1225 Cards",
     studyLabel: "citizenship naturalization civics Anki bundle",
     description:
-      "Six Anki civics decks in one $20 bundle: Leben in Deutschland, Naturalisation française, Life in the UK, Canadian Citizenship, Australian Citizenship, and U.S. Citizenship — 1,225 flashcards. Independent study aid — not official government material.",
+      "Stop cramming random civics quizzes. 1,225 Anki flashcards for Germany (Leben in Deutschland), France, UK, Canada, Australia, and the U.S. — six separate .apkg decks in one $20 Gumroad download. Independent study aid — not official government material.",
     keywords: [
       "citizenship anki deck",
       "naturalization flashcards",
@@ -405,7 +405,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "canadian citizenship test anki",
     ],
     intro:
-      "Citizenship and naturalization applicants drill civics questions for six countries with separate Anki decks in one download.",
+      "Citizenship and naturalization applicants use this $20 bundle to drill civics facts for six countries with separate Anki decks — spaced repetition instead of scattered blog quizzes.",
   },
   "dele-a2-spanish-anki-deck": {
     title: "DELE SIELE Spanish Anki Deck | 1000 Flashcards",

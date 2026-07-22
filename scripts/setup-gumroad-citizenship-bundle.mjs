@@ -29,7 +29,7 @@ const PRODUCT = {
   name: "Citizenship & Naturalization Anki Bundle — 6 Countries · 1225 Cards",
   priceCents: 2000,
   summary:
-    "Six Anki decks for citizenship / naturalization civics: Germany, France, UK, Canada, Australia, and the U.S. — 1,225 cards total.",
+    "Stop cramming random civics quizzes. Get 1,225 Anki flashcards for Germany, France, UK, Canada, Australia & the U.S. — six separate decks, one $20 download.",
 };
 
 /** @type {{ folder: string; baseName: string; fileName: string; label: string }[]} */
@@ -38,37 +38,37 @@ const DECKS = [
     folder: "prep2go_Leben_in_Deutschland",
     baseName: "prep2go_Leben_in_Deutschland_FULL",
     fileName: "01_Leben_in_Deutschland_Anki_Deck.apkg",
-    label: "Leben in Deutschland (Germany)",
+    label: "Leben in Deutschland (Germany) — 296 cards",
   },
   {
     folder: "prep2go_Naturalisation_francaise",
     baseName: "prep2go_Naturalisation_francaise_FULL",
     fileName: "02_Naturalisation_francaise_Anki_Deck.apkg",
-    label: "Naturalisation française (France)",
+    label: "Naturalisation française (France) — 200 cards",
   },
   {
     folder: "prep2go_Life_in_the_UK",
     baseName: "prep2go_Life_in_the_UK_FULL",
     fileName: "03_Life_in_the_UK_Anki_Deck.apkg",
-    label: "Life in the UK",
+    label: "Life in the UK — 201 cards",
   },
   {
     folder: "prep2go_Canadian_Citizenship",
     baseName: "prep2go_Canadian_Citizenship_FULL",
     fileName: "04_Canadian_Citizenship_Anki_Deck.apkg",
-    label: "Canadian Citizenship",
+    label: "Canadian Citizenship — 200 cards",
   },
   {
     folder: "prep2go_Australian_Citizenship",
     baseName: "prep2go_Australian_Citizenship_FULL",
     fileName: "05_Australian_Citizenship_Anki_Deck.apkg",
-    label: "Australian Citizenship",
+    label: "Australian Citizenship — 200 cards",
   },
   {
     folder: "prep2go_US_Citizenship",
     baseName: "prep2go_US_Citizenship_FULL",
     fileName: "06_US_Citizenship_Anki_Deck.apkg",
-    label: "U.S. Citizenship",
+    label: "U.S. Citizenship — 128 cards",
   },
 ];
 
@@ -116,14 +116,35 @@ function resolveApkg(folder, baseName) {
 }
 
 function buildDescription() {
-  const list = DECKS.map((d) => `<li>${d.label}</li>`).join("");
+  const list = DECKS.map((d) => `<li><strong>${d.label}</strong></li>`).join("");
   return [
-    "<p><strong>UniPrep2Go × PixID Studio</strong> — <strong>Citizenship &amp; Naturalization Anki Bundle</strong> for six countries.</p>",
-    "<p><strong>1,225 civics flashcards</strong> across <strong>6× .apkg</strong> files (DE 296 · FR 200 · UK 201 · CA 200 · AU 200 · US 128). Study each country separately in Anki.</p>",
+    "<p><strong>Your citizenship interview is not the day to blank on “what is the supreme law of the land?”</strong></p>",
+    "<p>Free blog quizzes scatter facts across six countries. This bundle puts <strong>1,225 civics flashcards</strong> into Anki — so you drill rights, institutions, values, and test-style questions with spaced repetition until they stick.</p>",
+    "<p><strong>UniPrep2Go × PixID Studio</strong> — one <strong>$20</strong> download, <strong>six separate .apkg files</strong>. Study only the country you need. Keep the rest for family members on other pathways.</p>",
+    "<h3>What’s inside</h3>",
     `<ul>${list}</ul>`,
-    "<p><strong>$20</strong> · instant download · import each .apkg into Anki desktop, then sync via AnkiWeb.</p>",
-    '<p>Product page: <a href="https://uniprep2go.study/decks/citizenship-naturalization-anki-bundle">uniprep2go.study/decks/citizenship-naturalization-anki-bundle</a></p>',
-    "<p><em>Independent study aid — not official government or exam-board material.</em></p>",
+    "<p><strong>1,225 cards total</strong> · text-first question → answer format · built for daily 20–30 card sessions alongside the official handbook for your country.</p>",
+    "<h3>Who this is for</h3>",
+    "<ul>",
+    "<li>Applicants preparing <strong>Leben in Deutschland</strong>, French <strong>naturalisation</strong> civics, <strong>Life in the UK</strong>, <strong>Canadian</strong> / <strong>Australian</strong> citizenship tests, or the <strong>U.S. naturalization</strong> civics interview</li>",
+    "<li>Anyone tired of mixing Germany facts with UK facts in the same notes app</li>",
+    "<li>Households with more than one nationality pathway — six decks, one checkout</li>",
+    "</ul>",
+    "<h3>How you use it</h3>",
+    "<ol>",
+    "<li>Buy once — all six .apkg files appear in your Gumroad library instantly</li>",
+    "<li>Import the country file into <strong>Anki</strong> (desktop), then sync to phone via AnkiWeb</li>",
+    "<li>Do 20–30 new cards/day for 4–6 weeks while you read the official civics handbook</li>",
+    "<li>Final week: reviews only + any free official practice test your government publishes</li>",
+    "</ol>",
+    "<h3>What you get that random quizzes don’t</h3>",
+    "<ul>",
+    "<li><strong>Spaced repetition</strong> — weak facts come back; strong facts fade</li>",
+    "<li><strong>Clean country separation</strong> — no cross-contamination between pathways</li>",
+    "<li><strong>One price</strong> — $20 for six decks instead of hunting six separate listings</li>",
+    "</ul>",
+    '<p>Full product page &amp; samples: <a href="https://uniprep2go.study/decks/citizenship-naturalization-anki-bundle">uniprep2go.study/decks/citizenship-naturalization-anki-bundle</a></p>',
+    "<p><em>Independent study aid — not official government or exam-board material. Pair with your country’s official handbook and practice tests.</em></p>",
   ].join("\n");
 }
 
