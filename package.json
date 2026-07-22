@@ -30,7 +30,9 @@
     "audit:visibility": "npx tsx scripts/visibility-audit-openrouter.mjs --scope all --live",
     "audit:visibility:rules": "npx tsx scripts/visibility-audit-openrouter.mjs --scope all --rules-only",
     "audit:aeo": "npx tsx scripts/aeo-audit-local.mjs --scope all",
-    "audit:aeo:live": "npx tsx scripts/aeo-audit-local.mjs --scope all --live"
+    "audit:aeo:live": "npx tsx scripts/aeo-audit-local.mjs --scope all --live",
+    "setup:gumroad-language-decks": "node scripts/setup-gumroad-language-decks.mjs",
+    "publish:gumroad-language-landings": "python3 scripts/publish-language-gumroad-landings.py"
   },
   "dependencies": {
     "@upstash/redis": "^1.38.0",

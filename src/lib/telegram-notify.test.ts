@@ -11,12 +11,12 @@ import {
 } from "./telegram-notify";
 
 describe("telegram checkout alerts", () => {
-  it("formats Gumroad and Lemon checkout click messages with deck facts", () => {
+  it("formats Gumroad checkout click messages with deck facts", () => {
     const gumroadCatalog = getCatalogDeckBySlug("cfa-level-1-anki-deck");
-    const lemonCatalog = getCatalogDeckBySlug("ciple-a2-european-portuguese-anki-deck");
+    const languageCatalog = getCatalogDeckBySlug("ciple-a2-european-portuguese-anki-deck");
 
     expect(gumroadCatalog).toBeDefined();
-    expect(lemonCatalog).toBeDefined();
+    expect(languageCatalog).toBeDefined();
 
     const gumroadDeck = applyPriceRecordToDeck(gumroadCatalog!, {
       amount: 11,
@@ -24,11 +24,11 @@ describe("telegram checkout alerts", () => {
       syncedAt: "2026-06-01T00:00:00.000Z",
       source: "gumroad",
     });
-    const lemonDeck = applyPriceRecordToDeck(lemonCatalog!, {
-      amount: 24.99,
+    const languageDeck = applyPriceRecordToDeck(languageCatalog!, {
+      amount: 26,
       currency: "USD",
-      syncedAt: "2026-06-01T00:00:00.000Z",
-      source: "lemon",
+      syncedAt: "2026-07-22T00:00:00.000Z",
+      source: "gumroad",
     });
 
     const gumroadMessage = toCheckoutClickMessage(
@@ -45,18 +45,20 @@ describe("telegram checkout alerts", () => {
     expect(gumroadMessage).toContain("Provider: Gumroad");
     expect(gumroadMessage).toContain("https://pixidstudio.gumroad.com/l/ivjmuu?wanted=true");
 
-    const lemonMessage = toCheckoutClickMessage(
+    const languageMessage = toCheckoutClickMessage(
       createFunnelEvent({
         name: "checkout_click",
-        deckSlug: lemonDeck.slug,
+        deckSlug: languageDeck.slug,
         source: "catalog_buy",
         path: "/",
       }),
-      lemonDeck,
+      languageDeck,
     );
 
-    expect(lemonMessage).toContain("Provider: Lemon Squeezy");
-    expect(lemonMessage).toContain("https://ciple-a2.lemonsqueezy.com/checkout/buy/");
+    expect(languageMessage).toContain("Provider: Gumroad");
+    expect(languageMessage).toContain(
+      "https://pixidstudio.gumroad.com/l/ciple-a2-european-portuguese-anki-deck?wanted=true",
+    );
   });
 });
 

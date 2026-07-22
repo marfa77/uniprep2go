@@ -36,8 +36,16 @@ describe("checkout pricing", () => {
     resetLemonVariantIndexCache();
     process.env.LEMON_SQUEEZY_API_KEY = "test-lemon-key";
 
-    const deck = getCatalogDeckBySlug("ciple-a2-european-portuguese-anki-deck");
-    expect(deck).toBeDefined();
+    const base = getCatalogDeckBySlug("ciple-a2-european-portuguese-anki-deck");
+    expect(base).toBeDefined();
+
+    const lemonDeck = {
+      ...base!,
+      checkoutProvider: "Lemon Squeezy" as const,
+      checkoutSeller: "Prep2Go" as const,
+      checkoutUrl:
+        "https://ciple-a2.lemonsqueezy.com/checkout/buy/6f688637-f5ce-440f-8d2a-7614379ee3ca",
+    };
 
     vi.stubGlobal(
       "fetch",
@@ -66,7 +74,7 @@ describe("checkout pricing", () => {
       }) as typeof fetch,
     );
 
-    const record = await syncDeckPrice(deck!);
+    const record = await syncDeckPrice(lemonDeck);
     expect(record.amount).toBe(24.99);
     expect(record.source).toBe("lemon");
 

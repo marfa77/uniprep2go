@@ -128,6 +128,141 @@ function defaultKeywords(deck: SeoDeck, mock?: MockExamConfig): string[] {
 }
 
 const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
+  "ciple-a2-european-portuguese-anki-deck": {
+    title: "CIPLE CAPLE Portuguese Citizenship Anki | 1600+ Cards",
+    headline: "CIPLE CAPLE Portuguese Citizenship Prep — 1600+ Flashcards",
+    studyLabel: "CIPLE CAPLE Portuguese citizenship exam prep",
+    description:
+      "CIPLE / CAPLE A2 European Portuguese Anki deck with 1600+ flashcards for Portuguese residency and citizenship (nacionalidade). PT-PT audio and examples. Independent study aid — not official CAPLE material.",
+    keywords: [
+      "ciple anki deck",
+      "caple a2 flashcards",
+      "portuguese citizenship anki",
+      "nacionalidade portuguesa vocabulary",
+      "european portuguese anki",
+      "autorizacao de residencia portuguese",
+    ],
+    intro:
+      "Applicants using CIPLE A2 for Portuguese residency or citizenship drill European Portuguese vocabulary daily, then practice speaking and official-style exam tasks separately.",
+  },
+  "dutch-a2-inburgering-anki-deck": {
+    title: "Dutch Inburgering NT2 A2 Anki Deck | 1000+ Cards",
+    headline: "Dutch Inburgering NT2 A2 Prep — 1000+ Flashcards",
+    studyLabel: "Dutch Inburgering NT2 exam prep",
+    description:
+      "Dutch A2 Anki deck with 1000+ flashcards for Inburgering, Staatsexamen NT2 A2 vocabulary, residency, and naturalisatie. Audio and bilingual examples. Independent study aid — not official DUO material.",
+    keywords: [
+      "inburgering anki",
+      "nt2 a2 flashcards",
+      "dutch inburgering vocabulary",
+      "staatsexamen nt2 anki",
+      "naturalisatie nederlands vocabulary",
+    ],
+    intro:
+      "Migrants preparing Inburgering or NT2 A2 use one high-frequency Dutch vocabulary bank for civic integration and naturalisatie language requirements.",
+  },
+  "german-a2-anki-deck": {
+    title: "German Goethe telc ÖSD DTZ Anki Deck | 1000 Cards",
+    headline: "German Goethe telc ÖSD DTZ Prep — 1000 Flashcards",
+    studyLabel: "German Goethe telc ÖSD DTZ exam prep",
+    description:
+      "German A2 Anki deck with 1000 flashcards for Goethe-Institut A2, telc Deutsch A2, ÖSD A2, and DTZ immigrant integration pathways. Independent study aid — not official Goethe, telc, ÖSD, or BAMF material.",
+    keywords: [
+      "goethe a2 anki",
+      "telc a2 flashcards",
+      "osd a2 anki",
+      "dtz anki deck",
+      "german a2 vocabulary anki",
+    ],
+    intro:
+      "Learners preparing Goethe A2, telc A2, ÖSD A2, or DTZ share one A2 vocabulary bank — then practice each exam's format separately.",
+  },
+  "celi-b1-italian-anki-deck": {
+    title: "CELI CILS PLIDA Italian Anki Deck | 1373 Cards",
+    headline: "CELI CILS PLIDA Italian Prep — 1,373 Flashcards",
+    studyLabel: "CELI CILS PLIDA Italian exam prep",
+    description:
+      "Italian B1 Anki deck with 1,373 flashcards for CELI, CILS, and PLIDA. Shared intermediate vocabulary across the main Italian certificates. Independent study aid — not official exam material.",
+    keywords: [
+      "celi b1 anki",
+      "cils b1 flashcards",
+      "plida b1 anki",
+      "italian b1 vocabulary anki",
+      "celi cils plida deck",
+    ],
+    intro:
+      "CELI, CILS, and PLIDA B1 candidates use one shared Italian vocabulary bank between classes and mock exams.",
+  },
+  "danish-a2-prove-i-dansk-anki-deck": {
+    title: "Danish Prøve i Dansk PD2 PD3 Anki | 1000 Cards",
+    headline: "Danish Prøve i Dansk PD2 PD3 Prep — 1000 Flashcards",
+    studyLabel: "Danish Prøve i Dansk PD2 PD3 exam prep",
+    description:
+      "Danish Anki deck with 1000 flashcards for Prøve i Dansk PD2 / PD3 and residence or citizenship language prep. Audio and examples. Independent study aid — not official Danish exam material.",
+    keywords: [
+      "prove i dansk anki",
+      "pd2 danish flashcards",
+      "pd3 prove i dansk",
+      "danish citizenship vocabulary",
+      "danish a2 anki deck",
+    ],
+    intro:
+      "Prøve i Dansk PD2 / PD3 learners and residence or citizenship applicants drill everyday Danish vocabulary on a daily Anki schedule.",
+  },
+  "norwegian-a2-norskprove-anki-deck": {
+    title: "Norwegian Norskprøve Residence Citizenship Anki | 1000 Cards",
+    headline: "Norwegian Norskprøve Residence Citizenship Prep — 1000 Flashcards",
+    studyLabel: "Norwegian Norskprøve exam prep",
+    description:
+      "Norwegian Bokmål Anki deck with 1000 flashcards for Norskprøve A2 and residence or citizenship language prep. Independent study aid — not official Norskprøve material.",
+    keywords: [
+      "norskprove anki",
+      "norskprøve flashcards",
+      "norwegian citizenship vocabulary",
+      "permanent oppholdstillatelse norwegian",
+      "bokmal a2 anki",
+    ],
+    intro:
+      "Norskprøve A2 learners preparing residence or citizenship language requirements use daily Bokmål vocabulary recall alongside speaking practice.",
+  },
+  "dele-a2-ccse-spanish-citizenship-bundle": {
+    title: "DELE CCSE Spanish Nationality Anki Bundle | Exam Cards",
+    headline: "DELE CCSE Spanish Nationality Prep — Dual Anki Bundle",
+    studyLabel: "DELE CCSE Spanish nationality exam prep",
+    description:
+      "Spanish nationality Anki bundle: DELE A2 vocabulary plus CCSE civics for nacionalidad española. Two .apkg downloads. Independent study aid — not Instituto Cervantes or Ministry of Justice material.",
+    keywords: [
+      "dele a2 anki",
+      "ccse anki deck",
+      "nacionalidad espanola flashcards",
+      "spanish citizenship anki",
+      "dele ccse bundle",
+      "siele a2 vocabulary",
+    ],
+    intro:
+      "Spanish nationality applicants study DELE A2 language and CCSE civics together — language and citizenship knowledge on one Anki schedule.",
+  },
+  "delf-b2-french-anki-deck": {
+    title: "DELF DALF TCF TEF French Anki Deck | 2000+ Flashcards",
+    headline: "DELF DALF TCF TEF French Exam Prep — 2000+ Flashcards",
+    studyLabel: "DELF DALF TCF TEF French exam prep",
+    description:
+      "French Anki deck with 2000+ flashcards for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, and TCF général. Shared high-frequency vocabulary with native audio and examples. Independent study aid — not official France Éducation international or IRCC material.",
+    keywords: [
+      "delf anki deck",
+      "dalf anki deck",
+      "tcf canada anki",
+      "tef canada anki",
+      "tcf anf flashcards",
+      "tcf general french anki",
+      "delf dalf vocabulary",
+      "french immigration vocabulary anki",
+    ],
+    intro:
+      "Candidates preparing DELF / DALF diplomas, TCF Canada or TEF Canada for Canadian immigration, TCF ANF for French naturalization, or TCF général for French universities use one shared French vocabulary bank — then practice each exam's format separately.",
+    audience:
+      "DELF / DALF diploma candidates, Canada immigration applicants (TCF Canada / TEF Canada), French naturalization (TCF ANF), and French university applicants (TCF général).",
+  },
   "cfa-level-1-anki-deck": {
     title: "Best CFA Level 1 Anki Deck 2026 | 342 Cards + Free Mock",
     headline: "CFA Level 1 Exam Prep — 342+ Flashcards + Free Mock",

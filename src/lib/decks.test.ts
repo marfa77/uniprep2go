@@ -75,15 +75,15 @@ describe("deck catalog", () => {
     expect(formulaRef?.title).not.toMatch(/study guide/i);
   });
 
-  it("uses Lemon Squeezy as the primary checkout for language decks", () => {
+  it("uses Gumroad as the primary checkout for curated language decks", () => {
     const cipleDeck = getDeckBySlug("ciple-a2-european-portuguese-anki-deck");
 
     expect(cipleDeck?.status).toBe("available");
     expect(cipleDeck).toMatchObject({
-      checkoutProvider: "Lemon Squeezy",
-      checkoutSeller: "Prep2Go",
+      checkoutProvider: "Gumroad",
+      checkoutSeller: "PixID Studio",
       checkoutUrl:
-        "https://ciple-a2.lemonsqueezy.com/checkout/buy/6f688637-f5ce-440f-8d2a-7614379ee3ca",
+        "https://pixidstudio.gumroad.com/l/ciple-a2-european-portuguese-anki-deck?wanted=true",
     });
   });
 
@@ -111,86 +111,72 @@ describe("deck catalog", () => {
     }
   });
 
-  it("includes every Lemon Squeezy deck product from Prep2Go shop", () => {
-    const expectedLemonDecks = [
+  it("keeps eight curated language decks on Gumroad and hides the rest", () => {
+    const expectedLanguageDecks = [
       "ciple-a2-european-portuguese-anki-deck",
       "delf-b2-french-anki-deck",
       "dutch-a2-inburgering-anki-deck",
       "german-a2-anki-deck",
       "celi-b1-italian-anki-deck",
       "danish-a2-prove-i-dansk-anki-deck",
-      "delf-a2-printable-french-flashcards",
-      "spanish-italian-paired-anki-deck",
-      "ielts-toefl-english-for-arabic-speakers-anki-deck",
-      "arabic-survival-phrases-anki-deck",
-      "dele-a2-ccse-spanish-citizenship-bundle",
-      "ielts-toefl-english-for-french-speakers-anki-deck",
-      "ielts-toefl-english-for-portuguese-speakers-anki-deck",
-      "ielts-toefl-english-for-spanish-speakers-anki-deck",
-      "ielts-toefl-english-for-turkish-speakers-anki-deck",
-      "japanese-survival-phrases-anki-deck",
-      "korean-survival-phrases-anki-deck",
-      "russian-survival-phrases-anki-deck",
       "norwegian-a2-norskprove-anki-deck",
-      "ciple-a2-grammar-anki-deck",
-      "dele-a2-grammar-anki-deck",
-      "delf-b2-grammar-anki-deck",
+      "dele-a2-ccse-spanish-citizenship-bundle",
     ];
 
-    const lemonDecks = availableDecks.filter((deck) => deck.checkoutProvider === "Lemon Squeezy");
+    const languageDecks = availableDecks.filter((deck) => deck.category === "language");
 
-    expect(lemonDecks.map((deck) => deck.slug).sort()).toEqual(expectedLemonDecks.sort());
+    expect(languageDecks.map((deck) => deck.slug).sort()).toEqual(expectedLanguageDecks.sort());
+    expect(availableDecks.filter((deck) => deck.checkoutProvider === "Lemon Squeezy")).toEqual([]);
 
-    for (const slug of expectedLemonDecks) {
+    for (const slug of expectedLanguageDecks) {
       const deck = getDeckBySlug(slug);
 
       expect(deck?.status).toBe("available");
       expect(deck).toMatchObject({
         category: "language",
-        checkoutProvider: "Lemon Squeezy",
-        checkoutSeller: "Prep2Go",
+        checkoutProvider: "Gumroad",
+        checkoutSeller: "PixID Studio",
       });
-      expect(deck?.checkoutUrl).toContain("https://ciple-a2.lemonsqueezy.com/checkout/buy/");
+      expect(deck?.checkoutUrl).toBe(
+        `https://pixidstudio.gumroad.com/l/${slug}?wanted=true`,
+      );
       expect(deck?.sampleCards.length).toBeGreaterThanOrEqual(1);
-      if (deck?.slug === "delf-a2-printable-french-flashcards") {
-        expect(deck.sampleCards).toHaveLength(4);
-        expect(deck.sampleCards.map((card) => card.imageUrl)).toEqual([
-          "/samples/delf-a2-printable-french-flashcards-sample-1.webp",
-          "/samples/delf-a2-printable-french-flashcards-sample-2.webp",
-          "/samples/delf-a2-printable-french-flashcards-sample-3.webp",
-          "/samples/delf-a2-printable-french-flashcards-sample-4.webp",
-        ]);
-        return;
-      }
       expect(deck?.sampleCards).toHaveLength(3);
       const firstCard = deck?.sampleCards[0];
       expect(firstCard?.question).not.toMatch(/^What is included in /);
-      if (firstCard?.imageUrl) {
-        expect(firstCard.imageUrl).toMatch(
-          /^(\/shop-preview-media\/|\/samples\/prep2go-grammar\/)/,
-        );
-      } else {
-        expect(firstCard?.audioUrl).toContain(".mp3");
-      }
     }
+
+    expect(getDeckBySlug("ciple-a2-european-portuguese-anki-deck")?.directAnswer).toContain(
+      "nacionalidade portuguesa",
+    );
+    expect(getDeckBySlug("dutch-a2-inburgering-anki-deck")?.title).toContain("NT2");
+    expect(getDeckBySlug("german-a2-anki-deck")?.title).toContain("Goethe telc ÖSD DTZ");
+    expect(getDeckBySlug("celi-b1-italian-anki-deck")?.title).toContain("CELI CILS PLIDA");
+    expect(getDeckBySlug("danish-a2-prove-i-dansk-anki-deck")?.title).toContain("PD2 PD3");
+    expect(getDeckBySlug("norwegian-a2-norskprove-anki-deck")?.title).toContain("Norskprøve");
+    expect(getDeckBySlug("dele-a2-ccse-spanish-citizenship-bundle")?.directAnswer).toContain(
+      "nacionalidad española",
+    );
+    const frenchDeck = getDeckBySlug("delf-b2-french-anki-deck");
+    expect(frenchDeck?.title).toContain("DELF DALF TCF TEF");
+    expect(frenchDeck?.directAnswer).toContain("TCF Canada");
+    expect(frenchDeck?.directAnswer).toContain("TEF Canada");
+    expect(frenchDeck?.directAnswer).toContain("TCF ANF");
+    expect(frenchDeck?.directAnswer).toContain("TCF général");
+    expect(getDeckBySlug("ielts-toefl-english-for-arabic-speakers-anki-deck")?.status).toBe(
+      "planned",
+    );
   });
 
-  it("positions English-for-speakers decks as IELTS and TOEFL prep", () => {
+  it("keeps English-for-speakers decks planned outside the curated language lineup", () => {
     const englishDecks = availableDecks.filter((deck) =>
       deck.slug.startsWith("ielts-toefl-english-for-"),
     );
 
-    expect(englishDecks).toHaveLength(5);
-    for (const deck of englishDecks) {
-      expect(deck.title).toContain("IELTS / TOEFL English");
-      expect(deck.title).toContain("1000 Flashcards");
-      expect(deck.facts.cards).toBe("1000");
-      expect(deck.directAnswer).toContain("1000 cards");
-      expect(deck.directAnswer).toContain("IELTS");
-      expect(deck.directAnswer).toContain("TOEFL");
-      expect(deck.audience).toContain("IELTS");
-      expect(deck.facts.topics).toContain("IELTS");
-    }
+    expect(englishDecks).toHaveLength(0);
+    expect(getDeckBySlug("ielts-toefl-english-for-arabic-speakers-anki-deck")?.status).toBe(
+      "planned",
+    );
   });
 
   it("includes the CFA Level 2 Anki deck with three Gumroad preview cards", () => {
@@ -295,10 +281,10 @@ describe("deck catalog", () => {
     ]);
   });
 
-  it("includes the DELF A2 printable deck with four Prep2Go shop preview screenshots", () => {
+  it("keeps the DELF A2 printable deck planned with four sample screenshots", () => {
     const printableDeck = getDeckBySlug("delf-a2-printable-french-flashcards");
 
-    expect(printableDeck?.status).toBe("available");
+    expect(printableDeck?.status).toBe("planned");
     expect(printableDeck?.format).toBe("PDF");
     expect(printableDeck?.sampleCards).toHaveLength(4);
     expect(printableDeck?.sampleCards.map((card) => card.imageUrl)).toEqual([
@@ -530,13 +516,15 @@ describe("deck catalog", () => {
     ]);
   });
 
-  it("uses Prep2Go shop preview cards for core language decks", () => {
+  it("uses Prep2Go shop preview cards for curated language decks", () => {
     const expectations: Record<string, string[]> = {
       "ciple-a2-european-portuguese-anki-deck": ["estar", "eu", "tu"],
       "delf-b2-french-anki-deck": ["être", "je", "tu"],
       "dutch-a2-inburgering-anki-deck": ["zijn", "ik", "jij"],
       "german-a2-anki-deck": ["sein", "ich", "du"],
       "celi-b1-italian-anki-deck": ["essere", "io", "tu"],
+      "danish-a2-prove-i-dansk-anki-deck": ["være", "jeg", "du"],
+      "norwegian-a2-norskprove-anki-deck": ["være", "jeg", "du"],
     };
 
     for (const [slug, questions] of Object.entries(expectations)) {
@@ -568,51 +556,23 @@ describe("deck catalog", () => {
       "property-casualty-insurance-exam-anki-deck":
         "Property & Casualty Insurance Exam Anki Deck — 400 High-Yield Flashcards",
       "ciple-a2-european-portuguese-anki-deck":
-        "CIPLE A2 Portuguese Anki Deck — 1600+ Flashcards",
-      "delf-b2-french-anki-deck": "DELF B2 French Anki Deck — 2000+ Flashcards",
+        "CIPLE CAPLE Portuguese Citizenship Anki Deck — 1600+ Flashcards",
+      "delf-b2-french-anki-deck": "DELF DALF TCF TEF French Anki Deck — 2000+ Flashcards",
       "dutch-a2-inburgering-anki-deck":
-        "Dutch A2 Inburgering Anki Deck — 1000+ Flashcards",
+        "Dutch Inburgering NT2 A2 Anki Deck — 1000+ Flashcards",
+      "german-a2-anki-deck": "German Goethe telc ÖSD DTZ Anki Deck — 1000 Flashcards",
       "gmat-focus-anki-deck": "GMAT Focus Anki Deck — 400+ Flashcards",
       "sat-anki-deck": "Digital SAT Anki Deck — 342+ Flashcards",
       "pmp-anki-deck": "PMP Anki Deck — 346+ Flashcards",
       "gre-anki-deck": "GRE Anki Deck — 350+ Flashcards",
       "leed-ap-om-anki-deck": "LEED AP O+M Anki Deck — 250+ Flashcards",
-      "german-a2-anki-deck": "German A2 Anki Deck — 1000 Flashcards",
-      "celi-b1-italian-anki-deck": "CELI B1 Italian Anki Deck — 1,373 Flashcards",
+      "celi-b1-italian-anki-deck": "CELI CILS PLIDA Italian Anki Deck — 1,373 Flashcards",
       "danish-a2-prove-i-dansk-anki-deck":
-        "Danish A2 Prøve i Dansk Anki Deck — 1000 Flashcards",
-      "delf-a2-printable-french-flashcards":
-        "DELF A2 Printable French Flashcards — 360 PDF Cards",
-      "spanish-italian-paired-anki-deck":
-        "Spanish + Italian Paired Vocabulary Anki Deck — 940+ Flashcards",
-      "ielts-toefl-english-for-arabic-speakers-anki-deck":
-        "IELTS / TOEFL English for Arabic Speakers Anki Deck — 1000 Flashcards",
-      "arabic-survival-phrases-anki-deck":
-        "Arabic Survival Phrases Anki Deck — 300 Flashcards",
-      "dele-a2-ccse-spanish-citizenship-bundle":
-        "DELE A2 + CCSE Spanish Citizenship Anki Bundle — Exam Flashcards",
-      "ielts-toefl-english-for-french-speakers-anki-deck":
-        "IELTS / TOEFL English for French Speakers Anki Deck — 1000 Flashcards",
-      "ielts-toefl-english-for-portuguese-speakers-anki-deck":
-        "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 1000 Flashcards",
-      "ielts-toefl-english-for-spanish-speakers-anki-deck":
-        "IELTS / TOEFL English for Spanish Speakers Anki Deck — 1000 Flashcards",
-      "ielts-toefl-english-for-turkish-speakers-anki-deck":
-        "IELTS / TOEFL English for Turkish Speakers Anki Deck — 1000 Flashcards",
-      "japanese-survival-phrases-anki-deck":
-        "Japanese Survival Phrases Anki Deck — 300 Flashcards",
-      "korean-survival-phrases-anki-deck":
-        "Korean Survival Phrases Anki Deck — 300 Flashcards",
-      "russian-survival-phrases-anki-deck":
-        "Russian Survival Phrases Anki Deck — 300 Flashcards",
+        "Danish Prøve i Dansk PD2 PD3 Anki Deck — 1000 Flashcards",
       "norwegian-a2-norskprove-anki-deck":
-        "Norwegian A2 Norskprøve Anki Deck — 1000 Flashcards",
-      "ciple-a2-grammar-anki-deck":
-        "CIPLE A2 Portuguese Grammar Anki Deck — 200 Cards",
-      "dele-a2-grammar-anki-deck":
-        "DELE A2 Spanish Grammar Anki Deck — 200 Cards",
-      "delf-b2-grammar-anki-deck":
-        "DELF B2 French Grammar Anki Deck — 200 Cards",
+        "Norwegian Norskprøve Residence Citizenship Anki Deck — 1000 Flashcards",
+      "dele-a2-ccse-spanish-citizenship-bundle":
+        "DELE CCSE Spanish Nationality Anki Bundle — Exam Flashcards",
       "hvac-epa-608-anki-deck": "EPA 608 HVAC Anki Deck — 200+ Flashcards",
       "ib-biology-sl-anki-deck": "IB Biology SL Anki Deck — 149 Smart Flashcards",
       "cat4-level-d-anki-deck-printable-pdf":

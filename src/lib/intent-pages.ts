@@ -89,14 +89,14 @@ export const intentPages: IntentPage[] = [
     description:
       "A direct answer page for Portuguese citizenship applicants preparing for CIPLE A2 with Anki and spaced repetition.",
     directAnswer:
-      "For Portuguese citizenship or residency applicants, a CIPLE A2 Anki deck should focus on European Portuguese vocabulary, everyday phrases, audio pronunciation, and repeated recall. UniPrep2Go's CIPLE A2 Portuguese Anki Deck includes 1600+ flashcards for CIPLE / CAPLE A2 preparation and is delivered through Lemon Squeezy.",
+      "For Portuguese citizenship or residency applicants, a CIPLE / CAPLE A2 Anki deck should focus on European Portuguese vocabulary, everyday phrases, audio pronunciation, and repeated recall. UniPrep2Go's CIPLE CAPLE Portuguese Citizenship Anki Deck includes 1600+ flashcards for CIPLE / CAPLE A2, autorização de residência, and nacionalidade portuguesa preparation and is delivered through Gumroad by PixID Studio.",
     deckSlugs: ["ciple-a2-european-portuguese-anki-deck"],
     primaryDeckSlug: "ciple-a2-european-portuguese-anki-deck",
     proofPoints: [
       "1600+ European Portuguese flashcards",
-      "Built for CIPLE / CAPLE A2 candidates",
+      "CIPLE / CAPLE A2 + residency and citizenship pathways",
       "Audio pronunciation and contextual examples",
-      "Digital .apkg download through Lemon Squeezy",
+      "Digital .apkg download through Gumroad",
     ],
     sections: [
       {
@@ -131,15 +131,15 @@ export const intentPages: IntentPage[] = [
     title: "Anki Decks for Language Exams",
     eyebrow: "Language exam flashcards",
     description:
-      "A catalog answer page for language exam learners covering 22 Prep2Go Anki decks for citizenship exams, certificate prep, IELTS / TOEFL English vocabulary, grammar decks, and survival phrases.",
+      "A catalog answer page for language exam learners covering UniPrep2Go's eight curated citizenship and certificate Anki decks sold on Gumroad.",
     directAnswer:
-      "Anki decks are useful for language exams when they convert high-frequency vocabulary into daily active recall with examples, audio, and images. UniPrep2Go publishes 22 language exam Anki decks through Lemon Squeezy, including CIPLE A2 Portuguese, DELE A2 + CCSE Spanish citizenship, DELF A2/B2 French, Dutch A2 Inburgering, German A2, Danish A2 Prøve i Dansk, Norwegian A2, CELI B1 Italian, IELTS / TOEFL English for Arabic, French, Portuguese, Spanish, and Turkish speakers, grammar decks, survival phrase decks, and a Spanish + Italian paired deck.",
+      "Anki decks are useful for language exams when they convert high-frequency vocabulary into daily active recall with examples, audio, and images. UniPrep2Go publishes eight curated multi-pathway language Anki decks through Gumroad by PixID Studio: CIPLE CAPLE Portuguese citizenship, DELE CCSE Spanish nationality, DELF DALF TCF TEF French, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, and CELI CILS PLIDA Italian.",
     deckSlugs: languageExamDeckSlugs,
     primaryDeckSlug: "ciple-a2-european-portuguese-anki-deck",
     proofPoints: [
-      "22 language exam and IELTS / TOEFL Anki decks",
-      "Citizenship, certificate, grammar, phrase, and English exam vocabulary tracks",
-      "Sample cards and machine-readable facts for every deck",
+      "8 curated multi-pathway citizenship and certificate Anki decks",
+      "Each deck names the related exams and immigration pathways it covers",
+      "Sold on Gumroad by PixID Studio at $26 each",
       "Independent study aids, not official exam materials",
     ],
     sections: [
@@ -149,23 +149,23 @@ export const intentPages: IntentPage[] = [
       },
       {
         title: "How to choose a deck",
-        body: "Choose by exam first, then by language variant. Citizenship-focused learners should pick CIPLE A2 Portuguese, DELE A2 + CCSE Spanish, or Dutch A2 Inburgering. Certificate learners can use DELF B2, CELI B1, German A2, Danish A2, or Norwegian A2. Non-native English learners preparing for IELTS, TOEFL, Cambridge, or PTE should use the English-for-speakers decks. Grammar and survival phrase decks support focused recall between full courses.",
+        body: "Choose by pathway first. Portugal: CIPLE / CAPLE + residency/citizenship. Spain: DELE + CCSE nationality. France: DELF / DALF / TCF / TEF. Netherlands: Inburgering / NT2. Germany: Goethe / telc / ÖSD / DTZ. Denmark: Prøve i Dansk PD2 / PD3. Norway: Norskprøve + residence/citizenship. Italy: CELI / CILS / PLIDA.",
       },
       {
-        title: "IELTS and TOEFL English decks",
-        body: "The English for Arabic, French, Portuguese, Spanish, and Turkish speakers decks are positioned as IELTS and TOEFL vocabulary entry points with bilingual support, native English audio examples, and exam-focused recall rather than generic English word lists.",
+        title: "Gumroad delivery",
+        body: "Each curated language deck is sold by PixID Studio on Gumroad with UniPrep2Go multi-exam pathway copy, sample-card previews on the product page, and instant .apkg download after checkout.",
       },
     ],
     faqs: [
       {
         question: "Are these official language exam materials?",
         answer:
-          "No. UniPrep2Go decks are independent study aids and are not affiliated with or endorsed by CAPLE, France Éducation international, Goethe-Institut, CELI, IELTS, TOEFL, or any exam body.",
+          "No. UniPrep2Go decks are independent study aids and are not affiliated with or endorsed by CAPLE, France Éducation international, Instituto Cervantes, Goethe-Institut, CELI, CILS, PLIDA, or any exam body.",
       },
       {
-        question: "Do you have IELTS or TOEFL Anki decks?",
+        question: "Which language decks are currently available?",
         answer:
-          "Yes. UniPrep2Go lists IELTS / TOEFL English vocabulary decks for Arabic, French, Portuguese, Spanish, and Turkish speakers. They target IELTS, TOEFL, Cambridge, and PTE English exam vocabulary with bilingual support.",
+          "Eight curated multi-pathway decks: CIPLE CAPLE Portuguese, DELE CCSE Spanish nationality, DELF DALF TCF TEF French, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, and CELI CILS PLIDA Italian. All checkout through Gumroad.",
       },
       {
         question: "Do the language decks work on mobile?",

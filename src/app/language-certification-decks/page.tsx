@@ -15,13 +15,15 @@ import { buildCatalogItemListJsonLd } from "@/lib/product-jsonld";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const title = leafPageTitle("Language Certification Anki Decks | CIPLE, DELF, Dutch A2");
+  const title = leafPageTitle(
+    "Language Certification Anki Decks | CIPLE, DELE, DELF, TCF, NT2",
+  );
 
   return withAiMetadata(
     finalize({
       title,
       description:
-        "22 language certification Anki decks for CIPLE A2, DELF B2, Dutch Inburgering, German, Italian, and more — European Portuguese, French, and immigration exam prep.",
+        "Eight multi-pathway language Anki decks: CIPLE CAPLE, DELE CCSE, DELF DALF TCF TEF, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish PD2 PD3, Norwegian Norskprøve, CELI CILS PLIDA — $26 on Gumroad.",
       alternates: { canonical: "/language-certification-decks" },
       openGraph: {
         title: "Language Certification Anki Decks | UniPrep2Go",
@@ -31,7 +33,7 @@ export async function generateMetadata(): Promise<Metadata> {
     }),
     {
       aiDescription:
-        "UniPrep2Go language certification decks cover CIPLE A2 European Portuguese, DELF B2 French, Dutch A2 Inburgering, German, Italian, Spanish, and 22 total language exam flashcard products.",
+        "UniPrep2Go language certification decks cover eight curated multi-pathway Gumroad products: CIPLE CAPLE Portuguese citizenship, DELE CCSE Spanish nationality, DELF DALF TCF TEF French, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, and CELI CILS PLIDA Italian.",
       aiCategory: "Language exam prep hub",
       path: "/language-certification-decks",
     },
@@ -79,7 +81,7 @@ export default async function LanguageCertificationDecksPage() {
           Language certification Anki decks
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          European Portuguese, French, Dutch, German, Italian, and more — daily spaced-repetition flashcards for A2–B2 exams and inburgering pathways. Language decks are Anki-only; we do not publish separate timed practice mocks for language certifications.
+          Eight multi-pathway decks for CIPLE / CAPLE Portuguese, DELE / CCSE Spanish nationality, DELF / DALF / TCF / TEF French, Dutch Inburgering / NT2, German Goethe / telc / ÖSD / DTZ, Danish Prøve i Dansk PD2 / PD3, Norwegian Norskprøve, and CELI / CILS / PLIDA Italian — sold on Gumroad at $26. Language decks are Anki-only; we do not publish separate timed practice mocks for language certifications.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link

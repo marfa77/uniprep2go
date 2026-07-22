@@ -154,7 +154,7 @@ type Prep2GoLanguageDeckInput = {
   title: string;
   shortName: string;
   description: string;
-  checkoutUrl: string;
+  checkoutUrl?: string;
   cards: string;
   focus: string;
   topics: string;
@@ -163,79 +163,92 @@ type Prep2GoLanguageDeckInput = {
   fallbackCoverImage?: string;
   format?: ".apkg" | ".csv" | "PDF";
   sampleCards?: SampleCard[];
+  /** Hidden language decks stay in catalog as planned (not sold on UniPrep2Go). */
+  status?: "available" | "planned";
 };
 
-function buildPrep2GoLanguageDeck(input: Prep2GoLanguageDeckInput): CatalogAvailableDeck {
-  return {
+function buildPrep2GoLanguageDeck(input: Prep2GoLanguageDeckInput): Deck {
+  const sampleCards = input.sampleCards?.length
+    ? input.sampleCards
+    : input.fallbackCoverImage
+      ? [
+          {
+            question: `What is included in ${input.shortName}?`,
+            answer: input.description,
+            imageUrl: input.fallbackCoverImage,
+          },
+        ]
+      : [];
+
+  const base = {
     slug: input.slug,
-    category: "language",
-    status: "available",
+    category: "language" as const,
     title: input.title,
     shortName: input.shortName,
     subtitle: input.description,
-    directAnswer: `UniPrep2Go lists the Prep2Go ${input.title} with ${input.cards} cards for ${input.focus}. ${input.description} It is delivered as ${input.format ?? ".apkg"} for {PRICE} through Lemon Squeezy.`,
     lastUpdated: "2026-05-31",
     audience: input.audience,
-    format: input.format ?? ".apkg",
+    format: (input.format ?? ".apkg") as BaseDeck["format"],
     coverImage: input.coverImage ?? input.fallbackCoverImage,
-    checkoutUrl: input.checkoutUrl,
-    checkoutProvider: "Lemon Squeezy",
-    checkoutSeller: "Prep2Go",
     facts: {
       cards: input.cards,
       topics: input.topics,
       formulas: "Prep2Go sample-card previews, examples, audio where included, and exam-focused recall prompts",
       examYear: input.focus,
-      delivery: "Digital download through Lemon Squeezy",
+      delivery: "Digital download (catalog listing planned)",
     },
-    topicCoverage: [],
-    sampleCards: input.sampleCards?.length
-      ? input.sampleCards
-      : input.fallbackCoverImage
-        ? [
-            {
-              question: `What is included in ${input.shortName}?`,
-              answer: input.description,
-              imageUrl: input.fallbackCoverImage,
-            },
-          ]
-        : [],
+    topicCoverage: [] as TopicCoverage[],
+    sampleCards,
     faqs: [
       {
         question: `What does ${input.shortName} include?`,
         answer: input.description,
       },
       {
+        question: "Is this official exam material?",
+        answer:
+          "No. This is an independent study aid and is not affiliated with or endorsed by any exam body.",
+      },
+    ],
+  };
+
+  if (input.status === "planned" || !input.checkoutUrl) {
+    return {
+      ...base,
+      status: "planned",
+      directAnswer: `UniPrep2Go keeps ${input.title} as a planned language listing (${input.cards} cards for ${input.focus}). ${input.description}`,
+    };
+  }
+
+  return {
+    ...base,
+    status: "available",
+    directAnswer: `UniPrep2Go lists the Prep2Go ${input.title} with ${input.cards} cards for ${input.focus}. ${input.description} It is delivered as ${input.format ?? ".apkg"} for {PRICE} through Lemon Squeezy.`,
+    checkoutUrl: input.checkoutUrl,
+    checkoutProvider: "Lemon Squeezy",
+    checkoutSeller: "Prep2Go",
+    facts: {
+      ...base.facts,
+      delivery: "Digital download through Lemon Squeezy",
+    },
+    faqs: [
+      ...base.faqs.slice(0, 1),
+      {
         question: "What file format is delivered?",
         answer: `The product is delivered as ${input.format ?? "an Anki-compatible .apkg file"} through Lemon Squeezy.`,
       },
-      {
-        question: "Is this official exam material?",
-        answer: "No. This is an independent Prep2Go study aid and is not affiliated with or endorsed by any exam body.",
-      },
+      ...base.faqs.slice(1),
     ],
   };
 }
 
-const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
-  buildPrep2GoLanguageDeck({
-    slug: "danish-a2-prove-i-dansk-anki-deck",
-    title: "Danish A2 Prøve i Dansk Anki Deck — 1000 Flashcards",
-    shortName: "Danish A2 Prøve i Dansk",
-    description: "1,000 exam-specific Danish vocabulary words for Prøve i Dansk with audio and Anki-ready review.",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/753c8eb8-f49b-46d6-bc0e-a725f451de31",
-    cards: "1000",
-    focus: "Prøve i Dansk A2 exam vocabulary",
-    topics: "Danish A2 exam vocabulary and practical example sentences",
-    audience: "Danish A2 learners preparing for Prøve i Dansk with spaced repetition.",
-    coverImage: "/covers/danish-a2-prove-i-dansk-anki-deck.webp",
-  }),
+/** Hidden Lemon language listings — kept as planned so they stay out of availableDecks / GEO. */
+const prep2GoAdditionalLanguageDecks: Deck[] = [
   buildPrep2GoLanguageDeck({
     slug: "delf-a2-printable-french-flashcards",
     title: "DELF A2 Printable French Flashcards — 360 PDF Cards",
     shortName: "DELF A2 Printable French",
     description: "360 printable DELF A2 French flashcards with images, example sentences, and QR audio across two PDF files.",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/7e6a118c-cc84-411a-ac06-efe1495d477a",
     cards: "360",
     focus: "DELF A2 printable vocabulary cards",
     topics: "DELF A2 vocabulary, example sentences, images, and QR audio",
@@ -243,6 +256,7 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     fallbackCoverImage: "/samples/prep2go-delf-a2-printable-french-cover.webp",
     format: "PDF",
     coverImage: "/samples/prep2go-delf-a2-printable-french-cover.webp",
+    status: "planned",
     sampleCards: [
       {
         question: "What does a sample A4 page look like?",
@@ -274,180 +288,156 @@ const prep2GoAdditionalLanguageDecks: CatalogAvailableDeck[] = [
     title: "Spanish + Italian Paired Vocabulary Anki Deck — 940+ Flashcards",
     shortName: "Spanish + Italian Paired Vocabulary",
     description: "940+ paired vocabulary cards for learning Spanish and Italian in parallel through English, with examples and audio.",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/8e8a362a-dda0-4a1e-a83b-5363fef28c7a",
     cards: "940+",
     focus: "Spanish and Italian paired vocabulary",
     topics: "Spanish and Italian paired headwords, English glosses, examples, and audio",
     audience: "Learners who want to study Spanish and Italian together through English using Anki.",
     coverImage: "/covers/spanish-italian-paired-anki-deck.webp",
+    status: "planned",
   }),
   buildPrep2GoLanguageDeck({
     slug: "ielts-toefl-english-for-arabic-speakers-anki-deck",
     title: "IELTS / TOEFL English for Arabic Speakers Anki Deck — 1000 Flashcards",
     shortName: "IELTS / TOEFL English for Arabic Speakers",
     description: "English exam vocabulary for IELTS, TOEFL, Cambridge, and PTE with Arabic support, bilingual cards, and native English audio examples.",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/b5f67b51-e682-4913-94e8-cc9796b22e09",
     cards: "1000",
     focus: "IELTS, TOEFL, Cambridge, and PTE English vocabulary",
     topics: "IELTS and TOEFL English vocabulary with Arabic bilingual support",
     audience: "Arabic-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
     coverImage: "/samples/prep2go-ielts-toefl-english-for-arabic-speakers-cover.webp",
+    status: "planned",
   }),
   buildPrep2GoLanguageDeck({
     slug: "arabic-survival-phrases-anki-deck",
     title: "Arabic Survival Phrases Anki Deck — 300 Flashcards",
     shortName: "Arabic Survival Phrases",
     description: "300 Arabic survival phrase cards with audio and transliteration for travel and practical communication.",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/fb550737-604c-48ca-8f66-3967fa61af5c",
     cards: "300",
     focus: "Arabic survival phrases",
     topics: "Arabic travel phrases, practical communication, audio, and transliteration",
     audience: "Travelers and beginners who want Arabic survival phrases in Anki.",
     coverImage: "/samples/prep2go-arabic-survival-phrases-cover.webp",
-  }),
-  buildPrep2GoLanguageDeck({
-    slug: "dele-a2-ccse-spanish-citizenship-bundle",
-    title: "DELE A2 + CCSE Spanish Citizenship Anki Bundle — Exam Flashcards",
-    shortName: "DELE A2 + CCSE Spanish Citizenship",
-    description: "Spanish citizenship bundle pairing DELE A2 vocabulary with CCSE civic knowledge flashcards for nationality preparation.",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/652a3be0-c0df-40a7-a39c-c2627478dd83",
-    cards: "1000+ vocabulary plus CCSE civic cards",
-    focus: "DELE A2 and CCSE Spanish citizenship exams",
-    topics: "Spanish A2 vocabulary, CCSE constitution, institutions, geography, history, and daily life in Spain",
-    audience: "Spanish citizenship applicants preparing for DELE A2 and CCSE with Anki.",
-    coverImage: "/samples/prep2go-dele-a2-ccse-spanish-citizenship-cover.webp",
+    status: "planned",
   }),
   buildPrep2GoLanguageDeck({
     slug: "ielts-toefl-english-for-french-speakers-anki-deck",
     title: "IELTS / TOEFL English for French Speakers Anki Deck — 1000 Flashcards",
     shortName: "IELTS / TOEFL English for French Speakers",
     description: "English exam vocabulary for IELTS, TOEFL, Cambridge, and PTE with French support, bilingual cards, and native English audio examples.",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/25d3a57b-3c6b-4ada-825b-6a951e8e2c6b",
     cards: "1000",
     focus: "IELTS, TOEFL, Cambridge, and PTE English vocabulary",
     topics: "IELTS and TOEFL English vocabulary with French bilingual support",
     audience: "French-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
     coverImage: "/samples/prep2go-ielts-toefl-english-for-french-speakers-cover.webp",
+    status: "planned",
   }),
   buildPrep2GoLanguageDeck({
     slug: "ielts-toefl-english-for-portuguese-speakers-anki-deck",
     title: "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 1000 Flashcards",
     shortName: "IELTS / TOEFL English for Portuguese Speakers",
     description: "English exam vocabulary for IELTS, TOEFL, Cambridge, and PTE with Portuguese support, bilingual cards, and native English audio examples.",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/fab876a3-9182-4f00-8e99-a18cb100fac0",
     cards: "1000",
     focus: "IELTS, TOEFL, Cambridge, and PTE English vocabulary",
     topics: "IELTS and TOEFL English vocabulary with Portuguese bilingual support",
     audience: "Portuguese-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
     coverImage: "/samples/prep2go-ielts-toefl-english-for-portuguese-speakers-cover.webp",
+    status: "planned",
   }),
   buildPrep2GoLanguageDeck({
     slug: "ielts-toefl-english-for-spanish-speakers-anki-deck",
     title: "IELTS / TOEFL English for Spanish Speakers Anki Deck — 1000 Flashcards",
     shortName: "IELTS / TOEFL English for Spanish Speakers",
     description: "English exam vocabulary for IELTS, TOEFL, Cambridge, and PTE with Spanish support, bilingual cards, and native English audio examples.",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/4eb62368-5b3e-4b9b-bd0e-806559fff1a1",
     cards: "1000",
     focus: "IELTS, TOEFL, Cambridge, and PTE English vocabulary",
     topics: "IELTS and TOEFL English vocabulary with Spanish bilingual support",
     audience: "Spanish-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
     coverImage: "/samples/prep2go-ielts-toefl-english-for-spanish-speakers-cover.webp",
+    status: "planned",
   }),
   buildPrep2GoLanguageDeck({
     slug: "ielts-toefl-english-for-turkish-speakers-anki-deck",
     title: "IELTS / TOEFL English for Turkish Speakers Anki Deck — 1000 Flashcards",
     shortName: "IELTS / TOEFL English for Turkish Speakers",
     description: "English exam vocabulary for IELTS, TOEFL, Cambridge, and PTE with Turkish support, bilingual cards, and native English audio examples.",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/ec008b8c-5d52-452a-a6bb-802ba6226f68",
     cards: "1000",
     focus: "IELTS, TOEFL, Cambridge, and PTE English vocabulary",
     topics: "IELTS and TOEFL English vocabulary with Turkish bilingual support",
     audience: "Turkish-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
     coverImage: "/samples/prep2go-ielts-toefl-english-for-turkish-speakers-cover.webp",
+    status: "planned",
   }),
   buildPrep2GoLanguageDeck({
     slug: "japanese-survival-phrases-anki-deck",
     title: "Japanese Survival Phrases Anki Deck — 300 Flashcards",
     shortName: "Japanese Survival Phrases",
     description: "300 Japanese survival phrase cards with audio and transliteration for travel and practical communication.",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/f720afe1-e658-4153-bbff-184ddf63e608",
     cards: "300",
     focus: "Japanese survival phrases",
     topics: "Japanese travel phrases, practical communication, audio, and transliteration",
     audience: "Travelers and beginners who want Japanese survival phrases in Anki.",
     coverImage: "/samples/prep2go-japanese-survival-phrases-cover.webp",
+    status: "planned",
   }),
   buildPrep2GoLanguageDeck({
     slug: "korean-survival-phrases-anki-deck",
     title: "Korean Survival Phrases Anki Deck — 300 Flashcards",
     shortName: "Korean Survival Phrases",
     description: "300 Korean survival phrase cards with audio and transliteration for travel and practical communication.",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/7ac389e5-5838-4603-a387-122e08eaa864",
     cards: "300",
     focus: "Korean survival phrases",
     topics: "Korean travel phrases, practical communication, audio, and transliteration",
     audience: "Travelers and beginners who want Korean survival phrases in Anki.",
     coverImage: "/samples/prep2go-korean-survival-phrases-cover.webp",
+    status: "planned",
   }),
   buildPrep2GoLanguageDeck({
     slug: "russian-survival-phrases-anki-deck",
     title: "Russian Survival Phrases Anki Deck — 300 Flashcards",
     shortName: "Russian Survival Phrases",
     description: "300 Russian survival phrase cards with audio and transliteration for travel and practical communication.",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/45682f23-9e35-4fd8-99c5-746505f1ff6b",
     cards: "300",
     focus: "Russian survival phrases",
     topics: "Russian travel phrases, practical communication, audio, and transliteration",
     audience: "Travelers and beginners who want Russian survival phrases in Anki.",
     coverImage: "/samples/prep2go-russian-survival-phrases-cover.webp",
-  }),
-  buildPrep2GoLanguageDeck({
-    slug: "norwegian-a2-norskprove-anki-deck",
-    title: "Norwegian A2 Norskprøve Anki Deck — 1000 Flashcards",
-    shortName: "Norwegian A2 Norskprøve",
-    description: "1,000 exam-specific Norwegian vocabulary words for Norskprøve with audio and Anki-ready review.",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/0bcef1e0-092d-4e9b-999e-63e55bb77543",
-    cards: "1000",
-    focus: "Norskprøve A2 exam vocabulary",
-    topics: "Norwegian A2 exam vocabulary and practical example sentences",
-    audience: "Norwegian A2 learners preparing for Norskprøve with spaced repetition.",
-    coverImage: "/samples/prep2go-norwegian-a2-norskprove-cover.webp",
+    status: "planned",
   }),
   buildPrep2GoLanguageDeck({
     slug: "ciple-a2-grammar-anki-deck",
     title: "CIPLE A2 Portuguese Grammar Anki Deck — 200 Cards",
     shortName: "CIPLE A2 Portuguese Grammar",
     description: "200 Portuguese A2 grammar cards for CIPLE, built from Prep2Go grammar explanations with article visuals and sample-card previews.",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/8d33911c-3f43-4df9-807e-44de5e5e0e6c",
     cards: "200",
     focus: "CIPLE A2 Portuguese grammar",
     topics: "Portuguese A2 grammar explanations, article examples, and CIPLE-focused recall prompts",
     audience: "CIPLE A2 learners who want grammar recall practice in Anki.",
     coverImage: "/samples/prep2go-ciple-a2-grammar-cover.webp",
+    status: "planned",
   }),
   buildPrep2GoLanguageDeck({
     slug: "dele-a2-grammar-anki-deck",
     title: "DELE A2 Spanish Grammar Anki Deck — 200 Cards",
     shortName: "DELE A2 Spanish Grammar",
     description: "200 Spanish A2 grammar cards for DELE, built from Prep2Go grammar explanations with article visuals and sample-card previews.",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/3a300e4c-96d7-4f5c-b3be-fbeae79461c4",
     cards: "200",
     focus: "DELE A2 Spanish grammar",
     topics: "Spanish A2 grammar explanations, article examples, and DELE-focused recall prompts",
     audience: "DELE A2 learners who want grammar recall practice in Anki.",
     coverImage: "/samples/prep2go-dele-a2-grammar-cover.webp",
+    status: "planned",
   }),
   buildPrep2GoLanguageDeck({
     slug: "delf-b2-grammar-anki-deck",
     title: "DELF B2 French Grammar Anki Deck — 200 Cards",
     shortName: "DELF B2 French Grammar",
     description: "200 French B2 grammar cards for DELF, built from Prep2Go grammar explanations with article visuals and sample-card previews.",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/6d545d65-6a42-44c3-b1dd-04be65244701",
     cards: "200",
     focus: "DELF B2 French grammar",
     topics: "French B2 grammar explanations, article examples, and DELF-focused recall prompts",
     audience: "DELF B2 learners who want grammar recall practice in Anki.",
     coverImage: "/samples/prep2go-delf-b2-grammar-cover.webp",
+    status: "planned",
   }),
 ];
 
@@ -1417,29 +1407,30 @@ const rawDecks: Deck[] = [
       },
     ],
   },
-  // ── Language certifications ──────────────────────────────────────────
+  // ── Language certifications (curated Gumroad lineup @ $26) ────────────
   {
     slug: "ciple-a2-european-portuguese-anki-deck",
     category: "language",
     status: "available",
-    title: "CIPLE A2 Portuguese Anki Deck — 1600+ Flashcards",
-    shortName: "CIPLE A2 Portuguese",
-    subtitle: "Full Anki deck for CIPLE / CAPLE A2 European Portuguese exam preparation.",
+    title: "CIPLE CAPLE Portuguese Citizenship Anki Deck — 1600+ Flashcards",
+    shortName: "CIPLE CAPLE Portuguese",
+    subtitle:
+      "1600+ European Portuguese flashcards for CIPLE / CAPLE A2, Portuguese residency, and citizenship (nacionalidade).",
     directAnswer:
-      "UniPrep2Go sells a CIPLE A2 European Portuguese Anki deck with 1600+ flashcards covering exam vocabulary, phrases, and examples with audio pronunciation and images. It is delivered as an Anki .apkg file for {PRICE} through Lemon Squeezy. The deck targets CIPLE / CAPLE A2 candidates, Portuguese residency and citizenship applicants, and self-learners using spaced repetition.",
-    lastUpdated: "2026-05-31",
-    audience: "CIPLE / CAPLE A2 exam candidates, Portuguese residency or citizenship applicants, self-learners.",
+      "UniPrep2Go sells a CIPLE / CAPLE Portuguese Anki deck with 1600+ European Portuguese flashcards for the CAPLE CIPLE A2 certificate used in Portuguese residency (autorização de residência) and citizenship (nacionalidade portuguesa) applications. Cards focus on PT-PT vocabulary, short phrases, contextual examples, and pronunciation audio. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank for CAPLE A2 diploma and Portugal immigration pathways.",
+    lastUpdated: "2026-07-22",
+    audience: "CIPLE / CAPLE A2 candidates, Portuguese residency and citizenship applicants, and European Portuguese self-learners.",
     format: ".apkg",
     coverImage: "/covers/ciple-a2-european-portuguese-anki-deck.webp",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/6f688637-f5ce-440f-8d2a-7614379ee3ca",
-    checkoutProvider: "Lemon Squeezy",
-    checkoutSeller: "Prep2Go",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/ciple-a2-european-portuguese-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
     facts: {
       cards: "1600+",
-      topics: "Vocabulary, phrases, everyday situations",
-      formulas: "Audio pronunciation + contextual examples",
-      examYear: "Current CAPLE cycle",
-      delivery: "Digital download through Lemon Squeezy",
+      topics: "CIPLE, CAPLE A2, Portuguese residency and citizenship vocabulary",
+      formulas: "Audio pronunciation + contextual examples (PT-PT)",
+      examYear: "Current CAPLE / Portuguese nationality cycle",
+      delivery: "Digital download through Gumroad",
     },
     topicCoverage: [],
     sampleCards: [
@@ -1463,24 +1454,23 @@ const rawDecks: Deck[] = [
     ],
     faqs: [
       {
-        question: "What is the CIPLE A2 exam?",
-        answer: "CIPLE (Certificado Inicial de Português Língua Estrangeira) is the A2-level certificate issued by CAPLE at the University of Lisbon. It is required for Portuguese residency and citizenship applications.",
+        question: "Which Portuguese pathways does this deck cover?",
+        answer:
+          "CIPLE A2 (CAPLE / University of Lisbon) — the main A2 diploma for Portuguese residency and citizenship language requirements — plus everyday European Portuguese used in autorização de residência and nacionalidade portuguesa applications.",
+      },
+      {
+        question: "Is this European Portuguese or Brazilian?",
+        answer:
+          "European Portuguese (PT-PT) for CAPLE CIPLE. Brazilian Portuguese word lists are a poor fit for CIPLE and Portuguese nationality language checks.",
       },
       {
         question: "What does the deck include?",
-        answer: "1600+ carefully curated Anki cards with European Portuguese vocabulary, phrases, contextual examples, audio pronunciation, and images where helpful.",
-      },
-      {
-        question: "Who is this deck for?",
-        answer: "CIPLE / CAPLE A2 candidates, people applying for Portuguese residency or citizenship who need the A2 language certificate, and self-learners using spaced repetition.",
+        answer:
+          "1600+ Anki cards with European Portuguese vocabulary, phrases, contextual examples, audio pronunciation, and images where helpful.",
       },
       {
         question: "What file format is delivered?",
-        answer: "The deck is delivered as an Anki-compatible .apkg file through Lemon Squeezy.",
-      },
-      {
-        question: "Does it include audio?",
-        answer: "Yes. Cards include audio pronunciation to help train your ear for European Portuguese.",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
       },
     ],
   },
@@ -1488,24 +1478,26 @@ const rawDecks: Deck[] = [
     slug: "delf-b2-french-anki-deck",
     category: "language",
     status: "available",
-    title: "DELF B2 French Anki Deck — 2000+ Flashcards",
-    shortName: "DELF B2 French",
-    subtitle: "Vocabulary-first Anki deck for DELF B2 French exam preparation.",
+    title: "DELF DALF TCF TEF French Anki Deck — 2000+ Flashcards",
+    shortName: "DELF DALF TCF TEF French",
+    subtitle:
+      "2000+ French vocabulary flashcards for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, and TCF général.",
     directAnswer:
-      "UniPrep2Go sells a DELF B2 French Anki deck with 2000+ flashcards covering every word needed for the B2 exam, each with a visual image, native French audio, and contextual example. It is delivered as an Anki .apkg file for {PRICE} through Lemon Squeezy. The deck targets DELF B2 candidates who want vocabulary retained through spaced repetition rather than passive list study.",
-    lastUpdated: "2026-05-31",
-    audience: "DELF B2 exam candidates and advanced French learners using spaced repetition.",
+      "UniPrep2Go sells a French Anki deck with 2000+ flashcards for DELF / DALF (lifetime diploma track), TCF Canada and TEF Canada (Express Entry / Quebec immigration), TCF ANF (French naturalization), and TCF général (French university admission). Each card pairs a headword with a visual cue, native French audio, and a contextual example so the shared high-frequency lexicon sticks under exam pressure. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank covering the main French certificate and immigration pathways.",
+    lastUpdated: "2026-07-22",
+    audience:
+      "DELF / DALF candidates, TCF Canada and TEF Canada immigration applicants, TCF ANF naturalization candidates, and TCF général university applicants using spaced repetition.",
     format: ".apkg",
     coverImage: "/covers/delf-b2-french-anki-deck.webp",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/b764a5b4-6fb5-4f19-a90f-8f310a51a1eb",
-    checkoutProvider: "Lemon Squeezy",
-    checkoutSeller: "Prep2Go",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/delf-b2-french-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
     facts: {
       cards: "2000+",
-      topics: "DELF B2 vocabulary — full word list coverage",
+      topics: "DELF, DALF, TCF Canada, TEF Canada, TCF ANF, TCF général vocabulary",
       formulas: "Native audio + visual image + contextual example per card",
-      examYear: "Current DELF cycle",
-      delivery: "Digital download through Lemon Squeezy (159 MB)",
+      examYear: "Current DELF / DALF / TCF / TEF cycles",
+      delivery: "Digital download through Gumroad (159 MB)",
     },
     topicCoverage: [],
     sampleCards: [
@@ -1528,20 +1520,28 @@ const rawDecks: Deck[] = [
     ],
     faqs: [
       {
-        question: "What is the DELF B2 exam?",
-        answer: "DELF (Diplôme d'Études en Langue Française) is an official French language certificate issued by France Éducation International. The B2 level demonstrates upper-intermediate French proficiency.",
+        question: "Which French exams does this deck cover?",
+        answer:
+          "One shared French vocabulary bank for DELF and DALF (prestigious lifetime diplomas), TCF Canada and TEF Canada (Canada immigration), TCF ANF (French naturalization), and TCF général (French university admission). The exams differ in format and scoring, but they draw on overlapping high-frequency French.",
+      },
+      {
+        question: "Is DELF / DALF the same as TCF or TEF?",
+        answer:
+          "No. DELF / DALF are level diplomas issued by France Éducation international and remain valid for life. TCF and TEF are timed proficiency tests with scores that expire — TCF Canada and TEF Canada serve Canadian immigration, TCF ANF serves French naturalization, and TCF général serves university admission. This deck trains the vocabulary shared across those pathways.",
       },
       {
         question: "What does each card include?",
-        answer: "Every card includes a visual image so your brain stores the word, native French audio so your ear recognises it, and a contextual example so you know exactly when to use it.",
+        answer:
+          "Every card includes a visual image, native French audio, and a contextual example sentence so the word sticks for diploma exams and immigration/university tests alike.",
       },
       {
         question: "How many cards does the deck have?",
-        answer: "2000+ cards covering every word you need for DELF B2. No fluff, no grammar lectures — just the vocabulary wired into memory.",
+        answer:
+          "2000+ cards covering the high-frequency French vocabulary you need for DELF, DALF, TCF, and TEF prep — not grammar lectures.",
       },
       {
         question: "What file format is delivered?",
-        answer: "An Anki-compatible .apkg file delivered through Lemon Squeezy.",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
       },
     ],
   },
@@ -1549,24 +1549,24 @@ const rawDecks: Deck[] = [
     slug: "dutch-a2-inburgering-anki-deck",
     category: "language",
     status: "available",
-    title: "Dutch A2 Inburgering Anki Deck — 1000+ Flashcards",
-    shortName: "Dutch A2 Inburgering",
-    subtitle: "1000 high-frequency Dutch words for the Inburgering A2 civic integration exam.",
+    title: "Dutch Inburgering NT2 A2 Anki Deck — 1000+ Flashcards",
+    shortName: "Dutch Inburgering NT2",
+    subtitle: "1000+ Dutch A2 flashcards for Inburgering, Staatsexamen NT2 A2, residency, and naturalisatie.",
     directAnswer:
-      "UniPrep2Go sells a Dutch A2 Inburgering Anki deck with 1000+ high-frequency words for the Dutch civic integration (Inburgering) exam. Each card includes the Dutch word, English gloss, bilingual example sentences, native audio, and illustrations. It is delivered as an Anki .apkg file for {PRICE} through Lemon Squeezy. The deck targets migrants preparing for the Dutch Inburgering exam and A2 Dutch certification.",
-    lastUpdated: "2026-05-31",
-    audience: "Migrants preparing for the Dutch Inburgering exam and A2 Dutch language certification.",
+      "UniPrep2Go sells a Dutch Inburgering / NT2 A2 Anki deck with 1000+ high-frequency words for the Dutch civic integration (Inburgering) exam, Staatsexamen NT2 A2-level vocabulary, and everyday Dutch used toward residency and naturalisatie. Each card includes the Dutch word, English gloss, bilingual examples, native audio, and illustrations. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank for Inburgering and NT2 A2 pathways, not tourist Dutch.",
+    lastUpdated: "2026-07-22",
+    audience: "Migrants preparing Inburgering, Staatsexamen NT2 A2, Dutch residency, or naturalisatie with spaced repetition.",
     format: ".apkg",
     coverImage: "/covers/dutch-a2-inburgering-anki-deck.webp",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/d43d6fc1-02d2-462a-8cf8-d421c6a98c88",
-    checkoutProvider: "Lemon Squeezy",
-    checkoutSeller: "Prep2Go",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/dutch-a2-inburgering-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
     facts: {
       cards: "1000+",
-      topics: "Inburgering exam vocabulary — citizenship-style themes",
+      topics: "Inburgering, Staatsexamen NT2 A2, residency and naturalisatie vocabulary",
       formulas: "Native audio + bilingual examples + illustrations per card",
-      examYear: "Current Inburgering cycle",
-      delivery: "Digital download through Lemon Squeezy (82.9 MB)",
+      examYear: "Current Inburgering / NT2 cycle",
+      delivery: "Digital download through Gumroad (82.9 MB)",
     },
     topicCoverage: [],
     sampleCards: [
@@ -1589,20 +1589,18 @@ const rawDecks: Deck[] = [
     ],
     faqs: [
       {
-        question: "What is the Dutch Inburgering exam?",
-        answer: "Inburgering is the Dutch civic integration exam required for many migrants seeking residency or citizenship in the Netherlands. The A2 language component tests everyday Dutch vocabulary and comprehension.",
+        question: "Which Dutch exams does this deck cover?",
+        answer:
+          "Inburgering (civic integration) language vocabulary, Staatsexamen NT2 A2-overlapping high-frequency Dutch, and everyday words used toward residency and naturalisatie. Formats differ; the A2 lexicon overlaps heavily.",
       },
       {
         question: "What does each card include?",
-        answer: "Each card includes the Dutch word, an English gloss, bilingual example sentences, native audio pronunciation, and illustrations where helpful.",
-      },
-      {
-        question: "Does it work with the free Anki app?",
-        answer: "Yes. Import the .apkg file into the free Anki desktop app, then sync to AnkiDroid or AnkiMobile via AnkiWeb.",
+        answer:
+          "Each card includes the Dutch word, an English gloss, bilingual example sentences, native audio pronunciation, and illustrations where helpful.",
       },
       {
         question: "What file format is delivered?",
-        answer: "An Anki-compatible .apkg file delivered through Lemon Squeezy.",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
       },
     ],
   },
@@ -1610,24 +1608,26 @@ const rawDecks: Deck[] = [
     slug: "german-a2-anki-deck",
     category: "language",
     status: "available",
-    title: "German A2 Anki Deck — 1000 Flashcards",
-    shortName: "German A2",
-    subtitle: "1000 essential German words for A2 certificate exams — Goethe, telc, ÖSD.",
+    title: "German Goethe telc ÖSD DTZ Anki Deck — 1000 Flashcards",
+    shortName: "German Goethe telc ÖSD DTZ",
+    subtitle:
+      "1,000 German A2 flashcards for Goethe-Institut, telc, ÖSD, and DTZ immigrant integration pathways.",
     directAnswer:
-      "UniPrep2Go sells a German A2 Anki deck with 1000 essential words for Goethe-Institut, telc, and ÖSD A2 certificate exams. It is delivered as an Anki .apkg file for {PRICE} through Lemon Squeezy. The deck targets German A2 exam candidates using spaced repetition for vocabulary retention.",
-    lastUpdated: "2026-05-31",
-    audience: "German A2 certificate exam candidates for Goethe-Institut, telc, or ÖSD.",
+      "UniPrep2Go sells a German A2 Anki deck with 1,000 essential words for Goethe-Institut A2, telc Deutsch A2, ÖSD Zertifikat A2, and DTZ (Deutsch-Test für Zuwanderer) immigrant integration vocabulary. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one shared A2 vocabulary bank across the main German certificate and immigration pathways, not a tourist phrase pack.",
+    lastUpdated: "2026-07-22",
+    audience:
+      "Goethe A2, telc A2, ÖSD A2, and DTZ learners preparing certificates or immigrant integration language requirements.",
     format: ".apkg",
     coverImage: "/covers/german-a2-anki-deck.webp",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/6006b518-3a04-4e7a-a77d-1e3f4c0a6e58",
-    checkoutProvider: "Lemon Squeezy",
-    checkoutSeller: "Prep2Go",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/german-a2-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
     facts: {
       cards: "1000",
-      topics: "A2-level German vocabulary",
-      formulas: "Essential words with examples",
-      examYear: "Current Goethe / telc / ÖSD cycle",
-      delivery: "Digital download through Lemon Squeezy",
+      topics: "Goethe-Institut A2, telc Deutsch A2, ÖSD A2, DTZ vocabulary",
+      formulas: "Essential words with examples for integration and certificate prep",
+      examYear: "Current Goethe / telc / ÖSD / DTZ cycle",
+      delivery: "Digital download through Gumroad",
     },
     topicCoverage: [],
     sampleCards: [
@@ -1650,12 +1650,18 @@ const rawDecks: Deck[] = [
     ],
     faqs: [
       {
-        question: "Which German A2 exams does this deck cover?",
-        answer: "The deck is designed for the three main A2 German certificates: Goethe-Institut A2, telc Deutsch A2, and ÖSD Zertifikat A2. The vocabulary list overlaps substantially across all three.",
+        question: "Which German exams does this deck cover?",
+        answer:
+          "Goethe-Institut A2, telc Deutsch A2, ÖSD Zertifikat A2, and DTZ (Deutsch-Test für Zuwanderer) immigrant integration themes. One shared A2 vocabulary bank across those pathways.",
       },
       {
         question: "What file format is delivered?",
-        answer: "An Anki-compatible .apkg file delivered through Lemon Squeezy.",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
+      },
+      {
+        question: "Is this official exam material?",
+        answer:
+          "No. This is an independent UniPrep2Go study aid sold by PixID Studio and is not affiliated with Goethe-Institut, telc, ÖSD, or BAMF / DTZ.",
       },
     ],
   },
@@ -1663,24 +1669,24 @@ const rawDecks: Deck[] = [
     slug: "celi-b1-italian-anki-deck",
     category: "language",
     status: "available",
-    title: "CELI B1 Italian Anki Deck — 1,373 Flashcards",
-    shortName: "CELI B1 Italian",
-    subtitle: "Vocabulary-first Anki deck for CELI B1 Italian certificate exam preparation.",
+    title: "CELI CILS PLIDA Italian Anki Deck — 1,373 Flashcards",
+    shortName: "CELI CILS PLIDA Italian",
+    subtitle: "1,373 Italian B1 flashcards for CELI, CILS, and PLIDA certificate prep.",
     directAnswer:
-      "UniPrep2Go sells a CELI B1 Italian Anki deck with 1,373 flashcards for the CELI B1 certificate from the Università per Stranieri di Perugia. It is delivered as an Anki .apkg file for {PRICE} through Lemon Squeezy. The deck targets Italian B1 certification candidates who want vocabulary retained through spaced repetition rather than passive list study.",
-    lastUpdated: "2026-05-31",
-    audience: "CELI B1 certificate candidates and intermediate Italian learners.",
+      "UniPrep2Go sells an Italian B1 Anki deck with 1,373 flashcards for CELI (Università per Stranieri di Perugia), CILS (Università per Stranieri di Siena), and PLIDA (Società Dante Alighieri). Cards target the shared B1 vocabulary and phrase bank across those certificates. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary deck for the main Italian B1 pathways.",
+    lastUpdated: "2026-07-22",
+    audience: "CELI, CILS, and PLIDA B1 candidates and intermediate Italian learners using spaced repetition.",
     format: ".apkg",
     coverImage: "/covers/celi-b1-italian-anki-deck.webp",
-    checkoutUrl: "https://ciple-a2.lemonsqueezy.com/checkout/buy/8e19de0e-c430-49dd-b3b8-72ce5b6f7944",
-    checkoutProvider: "Lemon Squeezy",
-    checkoutSeller: "Prep2Go",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/celi-b1-italian-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
     facts: {
       cards: "1373",
-      topics: "B1-level Italian vocabulary and phrases",
-      formulas: "Exam-focused vocabulary",
-      examYear: "Current CELI cycle",
-      delivery: "Digital download through Lemon Squeezy",
+      topics: "CELI, CILS, PLIDA B1 Italian vocabulary and phrases",
+      formulas: "Exam-focused B1 vocabulary shared across Italian certificates",
+      examYear: "Current CELI / CILS / PLIDA cycle",
+      delivery: "Digital download through Gumroad",
     },
     topicCoverage: [],
     sampleCards: [
@@ -1703,16 +1709,149 @@ const rawDecks: Deck[] = [
     ],
     faqs: [
       {
-        question: "What is the CELI B1 exam?",
-        answer: "CELI (Certificato di Conoscenza della Lingua Italiana) is an Italian language certificate from the Università per Stranieri di Perugia. The B1 level demonstrates intermediate Italian proficiency.",
+        question: "Which Italian exams does this deck cover?",
+        answer:
+          "CELI (Perugia), CILS (Siena), and PLIDA (Dante Alighieri) at B1. Certificates differ by exam body; this deck trains the shared intermediate Italian vocabulary.",
       },
       {
         question: "How many cards does the deck have?",
-        answer: "1,373 cards covering B1-level Italian vocabulary for CELI preparation.",
+        answer: "1,373 cards covering B1-level Italian vocabulary for CELI, CILS, and PLIDA preparation.",
       },
       {
         question: "What file format is delivered?",
-        answer: "An Anki-compatible .apkg file delivered through Lemon Squeezy.",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
+      },
+    ],
+  },
+  {
+    slug: "danish-a2-prove-i-dansk-anki-deck",
+    category: "language",
+    status: "available",
+    title: "Danish Prøve i Dansk PD2 PD3 Anki Deck — 1000 Flashcards",
+    shortName: "Danish Prøve i Dansk PD2 PD3",
+    subtitle: "1,000 Danish flashcards for Prøve i Dansk PD2 / PD3 and Danish residence or citizenship language prep.",
+    directAnswer:
+      "UniPrep2Go sells a Danish Prøve i Dansk Anki deck with 1,000 exam-specific vocabulary cards for PD2 and PD3 pathways, audio, and practical example sentences for work, housing, services, and everyday life in Denmark — including language prep tied to permanent residence and citizenship requirements. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-07-22",
+    audience: "Prøve i Dansk PD2 / PD3 learners and applicants using Danish for residence or citizenship language requirements.",
+    format: ".apkg",
+    coverImage: "/covers/danish-a2-prove-i-dansk-anki-deck.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/danish-a2-prove-i-dansk-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "1000",
+      topics: "Prøve i Dansk PD2, PD3, Danish residence and citizenship vocabulary",
+      formulas: "Audio + example sentences for PD2 / PD3 themes",
+      examYear: "Current Prøve i Dansk PD2 / PD3 cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Which Danish pathways does this deck cover?",
+        answer:
+          "Prøve i Dansk PD2 and PD3 vocabulary themes, plus everyday Danish used for permanent residence and citizenship language requirements. Confirm your required module with official sources.",
+      },
+      {
+        question: "What does the deck include?",
+        answer:
+          "1,000 exam-specific Danish vocabulary words with audio and Anki-ready review for PD2 / PD3-style themes.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
+      },
+    ],
+  },
+  {
+    slug: "norwegian-a2-norskprove-anki-deck",
+    category: "language",
+    status: "available",
+    title: "Norwegian Norskprøve Residence Citizenship Anki Deck — 1000 Flashcards",
+    shortName: "Norwegian Norskprøve",
+    subtitle: "1,000 Bokmål flashcards for Norskprøve A2 and Norwegian residence or citizenship language prep.",
+    directAnswer:
+      "UniPrep2Go sells a Norwegian Norskprøve Anki deck with 1,000 exam-specific Bokmål vocabulary cards, audio, and practical example sentences for work, housing, services, and everyday interaction in Norway. Built for Norskprøve A2 and the language side of permanent residence (permanent oppholdstillatelse) and citizenship (statsborgerskap) pathways. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-07-22",
+    audience: "Norskprøve A2 learners and applicants preparing Norwegian for residence or citizenship language requirements.",
+    format: ".apkg",
+    coverImage: "/samples/prep2go-norwegian-a2-norskprove-cover.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/norwegian-a2-norskprove-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "1000",
+      topics: "Norskprøve A2, Norwegian residence and citizenship vocabulary (Bokmål)",
+      formulas: "Audio + example sentences for Norskprøve and daily-life themes",
+      examYear: "Current Norskprøve / residence-citizenship cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Which Norwegian pathways does this deck cover?",
+        answer:
+          "Norskprøve A2 (Bokmål) plus everyday vocabulary used for permanent residence (permanent oppholdstillatelse) and citizenship (statsborgerskap) language requirements.",
+      },
+      {
+        question: "What does the deck include?",
+        answer:
+          "1,000 exam-specific Norwegian vocabulary words for Norskprøve with audio and Anki-ready review.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
+      },
+    ],
+  },
+  {
+    slug: "dele-a2-ccse-spanish-citizenship-bundle",
+    category: "language",
+    status: "available",
+    title: "DELE CCSE Spanish Nationality Anki Bundle — Exam Flashcards",
+    shortName: "DELE CCSE Spanish Nationality",
+    subtitle:
+      "Spanish nationality bundle: DELE A2 vocabulary + CCSE civics for nacionalidad española (Instituto Cervantes).",
+    directAnswer:
+      "UniPrep2Go sells a Spanish nationality Anki bundle pairing DELE A2 vocabulary (Instituto Cervantes) with CCSE civic knowledge — constitution, institutions, geography, history, and daily life in Spain — for nacionalidad española applicants. The DELE A2 lexicon also overlaps SIELE A2-style vocabulary practice. Checkout delivers two .apkg files for {PRICE} through Gumroad by PixID Studio — language and civics on one study schedule.",
+    lastUpdated: "2026-07-22",
+    audience: "Spanish nationality (nacionalidad española) applicants preparing DELE A2 and CCSE, plus learners needing DELE/SIELE A2 vocabulary.",
+    format: ".apkg",
+    coverImage: "/samples/prep2go-dele-a2-ccse-spanish-citizenship-cover.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/dele-a2-ccse-spanish-citizenship-bundle?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "1000+ vocabulary plus CCSE civic cards",
+      topics: "DELE A2, CCSE, Spanish nationality, SIELE-overlapping A2 vocabulary",
+      formulas: "DELE A2 + CCSE dual .apkg download for nationality pathway",
+      examYear: "Current DELE A2 / CCSE nationality cycle",
+      delivery: "Two .apkg files through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Which Spanish pathways does this bundle cover?",
+        answer:
+          "DELE A2 (Instituto Cervantes) language plus CCSE civics for nacionalidad española. DELE A2 vocabulary also overlaps SIELE A2-style word knowledge; civics is CCSE-specific.",
+      },
+      {
+        question: "What does the DELE + CCSE bundle include?",
+        answer:
+          "Two Anki .apkg files: DELE A2 Spanish vocabulary and CCSE civic knowledge for Spanish nationality preparation.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "Two Anki-compatible .apkg files delivered through Gumroad after checkout.",
+      },
+      {
+        question: "Is this official exam material?",
+        answer:
+          "No. This is an independent UniPrep2Go study aid sold by PixID Studio and is not affiliated with Instituto Cervantes or the Spanish Ministry of Justice.",
       },
     ],
   },

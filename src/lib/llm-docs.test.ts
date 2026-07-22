@@ -249,14 +249,14 @@ describe("LLM documents", () => {
   });
 
   it("builds deck-specific facts for non-CFA decks", () => {
-    const deck = pricedDeck("ciple-a2-european-portuguese-anki-deck", 24.99);
+    const deck = pricedDeck("ciple-a2-european-portuguese-anki-deck", 26);
     const facts = buildDeckFacts(deck);
 
     expect(facts.category).toBe("language");
     expect(facts.category_label).toBe("Language Certifications");
-    expect(facts.checkout_provider).toBe("Lemon Squeezy");
-    expect(facts.seller).toBe("Prep2Go");
-    expect(facts.price_usd).toBe(24.99);
+    expect(facts.checkout_provider).toBe("Gumroad");
+    expect(facts.seller).toBe("PixID Studio");
+    expect(facts.price_usd).toBe(26);
     expect(JSON.stringify(facts)).not.toContain('"exam":"CFA Level 1"');
   });
 

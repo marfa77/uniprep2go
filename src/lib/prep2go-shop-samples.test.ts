@@ -6,7 +6,7 @@ import {
 } from "./prep2go-shop-samples";
 
 describe("Prep2Go shop preview samples", () => {
-  it("maps every Lemon language deck with shop previews", () => {
+  it("keeps shop preview mappings for curated and planned language decks", () => {
     const mappedSlugs = Object.keys(UNIPREP_TO_SHOP_PREVIEW_KEY);
 
     expect(mappedSlugs).toHaveLength(21);
@@ -39,8 +39,25 @@ describe("Prep2Go shop preview samples", () => {
     });
   });
 
-  it("applies shop previews to all mapped available decks", () => {
-    for (const slug of Object.keys(UNIPREP_TO_SHOP_PREVIEW_KEY)) {
+  it("applies shop previews to all mapped available language decks", () => {
+    const availableMapped = Object.keys(UNIPREP_TO_SHOP_PREVIEW_KEY).filter((slug) =>
+      availableDecks.some((deck) => deck.slug === slug),
+    );
+
+    expect(availableMapped.sort()).toEqual(
+      [
+        "ciple-a2-european-portuguese-anki-deck",
+        "delf-b2-french-anki-deck",
+        "dutch-a2-inburgering-anki-deck",
+        "german-a2-anki-deck",
+        "celi-b1-italian-anki-deck",
+        "danish-a2-prove-i-dansk-anki-deck",
+        "norwegian-a2-norskprove-anki-deck",
+        "dele-a2-ccse-spanish-citizenship-bundle",
+      ].sort(),
+    );
+
+    for (const slug of availableMapped) {
       const deck = availableDecks.find((item) => item.slug === slug);
 
       expect(deck).toBeDefined();
