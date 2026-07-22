@@ -280,18 +280,6 @@ const prep2GoAdditionalLanguageDecks: Deck[] = [
     status: "planned",
   }),
   buildPrep2GoLanguageDeck({
-    slug: "ielts-toefl-english-for-arabic-speakers-anki-deck",
-    title: "IELTS / TOEFL English for Arabic Speakers Anki Deck — 1000 Flashcards",
-    shortName: "IELTS / TOEFL English for Arabic Speakers",
-    description: "English exam vocabulary for IELTS, TOEFL, Cambridge, and PTE with Arabic support, bilingual cards, and native English audio examples.",
-    cards: "1000",
-    focus: "IELTS, TOEFL, Cambridge, and PTE English vocabulary",
-    topics: "IELTS and TOEFL English vocabulary with Arabic bilingual support",
-    audience: "Arabic-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
-    coverImage: "/samples/prep2go-ielts-toefl-english-for-arabic-speakers-cover.webp",
-    status: "planned",
-  }),
-  buildPrep2GoLanguageDeck({
     slug: "arabic-survival-phrases-anki-deck",
     title: "Arabic Survival Phrases Anki Deck — 300 Flashcards",
     shortName: "Arabic Survival Phrases",
@@ -2025,6 +2013,51 @@ const rawDecks: Deck[] = [
       },
     ],
   },
+  {
+    slug: "ielts-toefl-english-for-arabic-speakers-anki-deck",
+    category: "language",
+    status: "available",
+    title: "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2504 Flashcards",
+    shortName: "IELTS / TOEFL English for Arabic Speakers",
+    subtitle:
+      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Arabic support on every card.",
+    directAnswer:
+      "UniPrep2Go sells an IELTS / TOEFL English for Arabic Speakers Anki deck with 2,504 high-frequency English vocabulary cards, Arabic glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Arabic-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-07-22",
+    audience:
+      "Arabic-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
+    format: ".apkg",
+    coverImage: "/covers/ielts-toefl-english-for-arabic-speakers-anki-deck.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/ielts-toefl-english-for-arabic-speakers-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "2504",
+      topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with Arabic bilingual support",
+      formulas: "Audio + Arabic glosses + bilingual example sentences",
+      examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Which English exams does this deck support?",
+        answer:
+          "IELTS, TOEFL, Cambridge English exams, and PTE — as a shared high-frequency English vocabulary bank with Arabic support. Pair Anki with official practice tests for each exam's format.",
+      },
+      {
+        question: "What does the deck include?",
+        answer:
+          "2,504 English vocabulary cards from the Prep2Go app: Arabic glosses, bilingual examples, native English audio, and illustrations.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
+      },
+    ],
+  },
+
   {
     slug: "citizenship-naturalization-anki-bundle",
     category: "language",

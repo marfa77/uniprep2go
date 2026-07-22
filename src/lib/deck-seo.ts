@@ -289,6 +289,23 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     intro:
       "French-speaking IELTS and TOEFL candidates use bilingual English vocabulary recall with French support before timed exam practice.",
   },
+  "ielts-toefl-english-for-arabic-speakers-anki-deck": {
+    title: "IELTS / TOEFL English for Arabic Speakers Anki | 2504 Cards",
+    headline: "IELTS / TOEFL English for Arabic Speakers — 2504 Flashcards",
+    studyLabel: "IELTS TOEFL English for Arabic speakers",
+    description:
+      "English Anki deck with 2504 flashcards for Arabic speakers preparing IELTS, TOEFL, Cambridge, and PTE — Arabic glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
+    keywords: [
+      "english for arabic speakers anki",
+      "ielts vocabulary arabic speakers",
+      "toefl vocabulary arabic speakers",
+      "english for arab speakers flashcards",
+      "ielts toefl flashcards arabic",
+    ],
+    intro:
+      "Arabic-speaking IELTS and TOEFL candidates use bilingual English vocabulary recall with Arabic support before timed exam practice.",
+  },
+
   "delf-prim-printable-french-flashcards": {
     title: "DELF Prim Printable French Flashcards | Ages 7–12 · 360 Cards",
     headline: "DELF Prim Printable French — Ages 7–12 · 360 PDF Cards",
