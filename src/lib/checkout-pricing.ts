@@ -422,13 +422,23 @@ export async function writeCachedPrice(slug: string, record: SyncedPriceRecord) 
   getMemoryCache().set(slug, record);
 }
 
+function cachedPriceMatchesCheckoutProvider(
+  deck: CatalogAvailableDeck,
+  cached: SyncedPriceRecord,
+): boolean {
+  if (deck.checkoutProvider === "Gumroad") return cached.source === "gumroad";
+  if (deck.checkoutProvider === "Lemon Squeezy") return cached.source === "lemon";
+  return true;
+}
+
 export async function resolveDeckPrice(deck: CatalogAvailableDeck): Promise<PricedDeck> {
   if (deck.checkoutProvider === "App Store") {
     return applyAppStorePriceToDeck(deck);
   }
 
   const cached = await readCachedPrice(deck.slug);
-  if (cached) {
+  // Ignore stale cache after checkout provider migrations (e.g. Lemon → Gumroad).
+  if (cached && cachedPriceMatchesCheckoutProvider(deck, cached)) {
     return applyPriceRecordToDeck(deck, cached);
   }
 

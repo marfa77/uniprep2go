@@ -174,4 +174,31 @@ describe("checkout pricing", () => {
     expect(resolved.directAnswer).toContain("$13.50 USD");
     expect(applySyncedPriceToDeck).toBeDefined();
   });
+
+  it("ignores stale Lemon cache after a deck moves to Gumroad", async () => {
+    const deck = getCatalogDeckBySlug("delf-b2-french-anki-deck");
+    expect(deck).toBeDefined();
+    expect(deck!.checkoutProvider).toBe("Gumroad");
+
+    await writeCachedPrice(deck!.slug, {
+      amount: 22,
+      currency: "USD",
+      syncedAt: "2026-06-01T00:00:00.000Z",
+      source: "lemon",
+    });
+
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async () => ({
+        ok: true,
+        text: async () => 'price_cents&quot;:2600',
+      })) as typeof fetch,
+    );
+
+    const resolved = await resolveDeckPrice(deck!);
+    expect(resolved.price.amount).toBe(26);
+    expect(resolved.directAnswer).toContain("$26 USD");
+
+    vi.unstubAllGlobals();
+  });
 });
