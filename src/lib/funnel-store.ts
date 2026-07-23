@@ -6,6 +6,7 @@ import {
   type FunnelAggregate,
 } from "./funnel-aggregates";
 import { getRedisClient } from "./redis";
+import { TRAFFIC_CHANNELS } from "./traffic-channel";
 import {
   deleteIndexedRedisKeys,
   deleteAllProductRedisKeys,
@@ -390,9 +391,7 @@ export async function resetAllFunnelStats() {
     LIFETIME_KEYS.updatedAt,
     VISITOR_REDIS_KEYS.lifetime,
     ...periodVisitorRedisKeysForReset(),
-    ...(["google", "chatgpt", "direct", "other"] as const).map((channel) =>
-      VISITOR_REDIS_KEYS.lifetimeChannel(channel),
-    ),
+    ...TRAFFIC_CHANNELS.map((channel) => VISITOR_REDIS_KEYS.lifetimeChannel(channel)),
   );
 
   await deleteIndexedRedisKeys(client, VISITOR_REDIS_KEYS.pathIndex, (path) => [

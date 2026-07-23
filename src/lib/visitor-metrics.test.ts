@@ -49,6 +49,7 @@ describe("visitor metrics", () => {
     expect(metrics.periodUnique).toBe(2);
     expect(metrics.periodByChannel.google).toBe(1);
     expect(metrics.periodByChannel.chatgpt).toBe(1);
+    expect(metrics.periodByChannel.llm).toBe(0);
     expect(metrics.periodByCountry).toEqual({ US: 1, PT: 1 });
     expect(metrics.products["cfa-level-1-anki-deck"]).toMatchObject({
       visitors: 1,
@@ -63,6 +64,26 @@ describe("visitor metrics", () => {
     expect(metrics.paths["/decks/cfa-level-1-anki-deck"]).toBe(1);
     expect(metrics.periodNew).toBe(2);
     expect(metrics.periodReturning).toBe(0);
+  });
+
+  it("attributes llm channel from first-touch utm without referrer", () => {
+    resetAllVisitorSets();
+
+    recordVisitorMetricInMemory(
+      createFunnelEvent({
+        name: "page_view",
+        deckSlug: "delf-b2-french-anki-deck",
+        visitorId: "vis_llm",
+        path: "/decks/delf-b2-french-anki-deck",
+        utmSource: "llm",
+        utmMedium: "llms.txt",
+      }),
+    );
+
+    const metrics = readVisitorMetricsFromMemory();
+
+    expect(metrics.periodByChannel.llm).toBe(1);
+    expect(metrics.periodByChannel.direct).toBe(0);
   });
 
   it("tracks returning users on repeat visits", () => {

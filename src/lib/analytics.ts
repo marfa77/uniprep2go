@@ -37,6 +37,8 @@ export type FunnelEvent = {
   path?: string;
   destinationUrl?: string;
   referrer?: string;
+  utmSource?: string;
+  utmMedium?: string;
   browserLanguage?: string;
   browserLanguages?: string[];
   acceptLanguage?: string;
@@ -59,6 +61,8 @@ type FunnelEventInput = {
   path?: string;
   destinationUrl?: string;
   referrer?: string;
+  utmSource?: string;
+  utmMedium?: string;
   browserLanguage?: string;
   browserLanguages?: string[];
   acceptLanguage?: string;
@@ -105,6 +109,8 @@ export function parseFunnelEvent(payload: unknown): FunnelEvent {
     path: optionalString(candidate.path),
     destinationUrl: optionalString(candidate.destinationUrl),
     referrer: optionalString(candidate.referrer),
+    utmSource: optionalString(candidate.utmSource),
+    utmMedium: optionalString(candidate.utmMedium),
     browserLanguage: optionalString(candidate.browserLanguage),
     browserLanguages: optionalStringArray(candidate.browserLanguages),
     acceptLanguage: optionalString(candidate.acceptLanguage),

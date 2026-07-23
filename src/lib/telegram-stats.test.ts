@@ -12,8 +12,10 @@ import {
   toTelegramSyncMessage,
   computeGrowthSignal,
   formatSevenDayDynamics,
+  formatTodayTopPages,
 } from "./telegram-stats";
 import type { FunnelStats } from "./funnel-store";
+import type { FunnelEvent } from "./analytics";
 
 const sampleStats: FunnelStats = {
   ...emptyAggregate(),
@@ -69,6 +71,7 @@ const sampleStats: FunnelStats = {
     periodByChannel: {
       google: 12,
       chatgpt: 4,
+      llm: 3,
       direct: 5,
       other: 2,
     },
@@ -152,12 +155,13 @@ describe("telegram stats", () => {
     expect(message).toContain("new 18 · returning 5 (21.7% return rate)");
     expect(message).toContain("Mock starts (Exam vs Learn):");
     expect(message).toContain("period exam 2 · learn 1 · total 3");
-    expect(message).toContain("Google 12 · ChatGPT 4 · Direct 5 · Other 2");
+    expect(message).toContain("Google 12 · ChatGPT 4 · LLM 3 · Direct 5 · Other 2");
     expect(message).toContain("Countries (unique, period):");
     expect(message).toContain("US 12 · PT 4 · DE 2");
     expect(message).toContain("cfa-level-1-anki-deck: 14 view → 2 intent → 1 convert (7.1%)");
     expect(message).toContain("mock · cfa-level-1-readiness-check: 8 view → 3 intent → 0 convert (0.0%)");
     expect(message).toContain("/decks/cfa-level-1-anki-deck — 14");
+    expect(message).toContain("Top pages (today ·");
     expect(message).toContain("Динамика 7 дней (посетители / просмотры)");
     expect(message).toContain(
       formatSevenDayDynamics(
@@ -168,6 +172,63 @@ describe("telegram stats", () => {
     expect(message).not.toContain("All-time");
     expect(message).not.toContain("Recent events");
     expect(message).not.toContain("Last 7 days");
+  });
+
+  it("formats today's top pages from recent events", () => {
+    const now = new Date("2026-06-10T18:00:00.000Z");
+    const recentEvents: FunnelEvent[] = [
+      {
+        eventId: "1",
+        name: "page_view",
+        deckSlug: "cfa-level-1-anki-deck",
+        occurredAt: "2026-06-10T10:00:00.000Z",
+        visitorId: "v1",
+        path: "/decks/cfa-level-1-anki-deck",
+      },
+      {
+        eventId: "2",
+        name: "page_view",
+        deckSlug: "cfa-level-1-anki-deck",
+        occurredAt: "2026-06-10T11:00:00.000Z",
+        visitorId: "v1",
+        path: "/decks/cfa-level-1-anki-deck",
+      },
+      {
+        eventId: "3",
+        name: "mock_landing_view",
+        deckSlug: "cfa-level-1-anki-deck",
+        occurredAt: "2026-06-10T12:00:00.000Z",
+        visitorId: "v2",
+        path: "/mock-exams/cfa-level-1-readiness-check",
+      },
+      {
+        eventId: "4",
+        name: "page_view",
+        deckSlug: "sie-exam-anki-deck",
+        occurredAt: "2026-06-09T23:00:00.000Z",
+        visitorId: "v3",
+        path: "/",
+      },
+    ];
+
+    const block = formatTodayTopPages(
+      {
+        ...sampleStats,
+        recentEvents,
+        visitors: {
+          ...sampleStats.visitors,
+          dailyUnique: { ...sampleStats.visitors.dailyUnique, "2026-06-10": 2 },
+          dailyPageViews: { ...sampleStats.visitors.dailyPageViews, "2026-06-10": 3 },
+        },
+      },
+      6,
+      now,
+    );
+
+    expect(block).toContain("Top pages (today · 10.06 · 2 unique / 3 views):");
+    expect(block).toContain("/decks/cfa-level-1-anki-deck — 2 (1u)");
+    expect(block).toContain("/mock-exams/cfa-level-1-readiness-check — 1 (1u)");
+    expect(block).not.toContain("\n- / —");
   });
 
   it("falls back to visit counts when unique country data is missing", () => {

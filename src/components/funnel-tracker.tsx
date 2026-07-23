@@ -7,6 +7,7 @@ import {
   FUNNEL_EXCLUDE_STORAGE_KEY,
   FUNNEL_INCLUDE_QUERY,
 } from "@/lib/funnel-exclude";
+import { captureFirstTouchAttribution } from "@/lib/traffic-attribution";
 import { getOrCreateVisitorId } from "@/lib/visitor-id";
 
 type FunnelTrackerProps = {
@@ -66,11 +67,19 @@ function sendImmediateEvent(payload: Record<string, unknown>) {
 
 export function trackFunnelEvent(input: TrackEventInput) {
   const excluded = isFunnelExcluded();
+  const firstTouch = captureFirstTouchAttribution({
+    search: window.location.search,
+    referrer: document.referrer,
+    path: window.location.pathname,
+    storage: window.localStorage,
+  });
   const payload = {
     ...input,
     visitorId: getOrCreateVisitorId(),
     path: window.location.pathname,
-    referrer: document.referrer,
+    referrer: document.referrer || firstTouch.referrer,
+    utmSource: firstTouch.utmSource,
+    utmMedium: firstTouch.utmMedium,
     browserLanguage: navigator.language,
     browserLanguages: Array.from(navigator.languages ?? []),
     timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,

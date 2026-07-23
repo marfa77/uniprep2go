@@ -1,7 +1,8 @@
+import type { FunnelEvent } from "./analytics";
 import type { CheckoutPriceSyncResult } from "./checkout-pricing";
 import type { FunnelStats } from "./funnel-store";
 import { countMockStartsByMode } from "./mock-exams/session-mode";
-import { trafficChannelLabels, type TrafficChannel } from "./traffic-channel";
+import { TRAFFIC_CHANNELS, trafficChannelLabels } from "./traffic-channel";
 import type { ProductUniqueMetrics } from "./visitor-metrics";
 
 export function shouldReturnStats(text: string) {
@@ -117,12 +118,10 @@ export function computeGrowthSignal(dailyUnique: Record<string, number>, now = n
   return { label: `→ plateau (${deltaPercent >= 0 ? "+" : ""}${deltaPercent}% vs prior 7d)`, deltaPercent };
 }
 
-function formatChannelLine(byChannel: Record<TrafficChannel, number>) {
-  const channels: TrafficChannel[] = ["google", "chatgpt", "direct", "other"];
-
-  return channels
-    .map((channel) => `${trafficChannelLabels[channel]} ${byChannel[channel] ?? 0}`)
-    .join(" · ");
+function formatChannelLine(byChannel: Record<string, number>) {
+  return TRAFFIC_CHANNELS.map(
+    (channel) => `${trafficChannelLabels[channel]} ${byChannel[channel] ?? 0}`,
+  ).join(" · ");
 }
 
 function formatProductLabel(productKey: string) {
@@ -206,6 +205,87 @@ function formatTopPaths(paths: Record<string, number>, limit = 6) {
   return lines.join("\n") || "- no page data yet";
 }
 
+function isTodayPageEvent(event: FunnelEvent, day: string) {
+  if (!event.path || !(event.occurredAt || "").startsWith(day)) {
+    return false;
+  }
+
+  return event.name === "page_view" || event.name === "mock_landing_view";
+}
+
+/** Best-effort today path breakdown from the recent-events window (last 100). */
+export function aggregateTodayPaths(recentEvents: FunnelEvent[], now = new Date()) {
+  const day = now.toISOString().slice(0, 10);
+  const pathVisitors = new Map<string, Set<string>>();
+  const pathViews = new Map<string, number>();
+  let pageEvents = 0;
+
+  for (const event of recentEvents) {
+    if (!isTodayPageEvent(event, day)) {
+      continue;
+    }
+
+    pageEvents += 1;
+    pathViews.set(event.path!, (pathViews.get(event.path!) ?? 0) + 1);
+
+    const visitors = pathVisitors.get(event.path!) ?? new Set<string>();
+    const visitorKey = event.visitorId?.trim() || `anon:${pageEvents}`;
+    visitors.add(visitorKey);
+    pathVisitors.set(event.path!, visitors);
+  }
+
+  const ranked = [...pathVisitors.entries()]
+    .map(([path, visitors]) => ({
+      path,
+      unique: visitors.size,
+      views: pathViews.get(path) ?? 0,
+    }))
+    .sort(
+      (left, right) =>
+        right.unique - left.unique || right.views - left.views || left.path.localeCompare(right.path),
+    );
+
+  return {
+    day,
+    pageEvents,
+    paths: Object.fromEntries(ranked.map(({ path, unique }) => [path, unique])),
+    ranked,
+  };
+}
+
+export function formatTodayTopPages(
+  stats: FunnelStats,
+  limit = 6,
+  now = new Date(),
+) {
+  const today = aggregateTodayPaths(stats.recentEvents, now);
+  const unique = stats.visitors.dailyUnique[today.day] ?? 0;
+  const views = stats.visitors.dailyPageViews[today.day] ?? 0;
+  const header = `Top pages (today · ${formatShortDate(today.day)} · ${unique} unique / ${views} views):`;
+
+  if (today.ranked.length === 0) {
+    if (unique === 0 && views === 0) {
+      return [header, "- no page data yet"].join("\n");
+    }
+
+    return [header, "- path breakdown unavailable (outside recent window)"].join("\n");
+  }
+
+  const lines = today.ranked
+    .slice(0, limit)
+    .map(({ path, unique: pathUnique, views: pathViews }) => `- ${path} — ${pathViews} (${pathUnique}u)`);
+
+  if (today.ranked.length > limit) {
+    lines.push(`- ...and ${today.ranked.length - limit} more`);
+  }
+
+  if (views > 0 && today.pageEvents < views) {
+    lines.push(`- (recent window: ${today.pageEvents}/${views} views)`);
+  }
+
+  return [header, ...lines].join("\n");
+}
+
 function formatPeriodRange(stats: FunnelStats) {
   const start = stats.startedAt?.slice(0, 10) ?? "n/a";
   const end = stats.updatedAt?.slice(0, 10) ?? "n/a";
@@ -249,6 +329,8 @@ export function toTelegramStatsMessages(stats: FunnelStats) {
     "",
     "Top pages (period):",
     formatTopPaths(visitors.paths),
+    "",
+    formatTodayTopPages(stats),
     "",
     formatSevenDayDynamics(visitors.dailyUnique, visitors.dailyPageViews),
     "",
