@@ -17,6 +17,7 @@ import {
   ensureGumroadAccessToken,
   loadLocalEnvFiles,
 } from "./lib/gumroad-auth.mjs";
+import { dualBrandFooterHtml } from "./lib/gumroad-dual-brand.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CATALOG_PATH = join(root, "src/data/gumroad/citizenship-bundle.json");
@@ -73,10 +74,11 @@ const DECKS = [
 ];
 
 function parseArgs(argv) {
-  const args = { dryRun: false, assetsOnly: false };
+  const args = { dryRun: false, assetsOnly: false, copyOnly: false };
   for (const arg of argv.slice(2)) {
     if (arg === "--dry-run") args.dryRun = true;
     if (arg === "--assets-only") args.assetsOnly = true;
+    if (arg === "--copy-only") args.copyOnly = true;
   }
   return args;
 }
@@ -120,7 +122,7 @@ function buildDescription() {
   return [
     "<p><strong>Your citizenship interview is not the day to blank on “what is the supreme law of the land?”</strong></p>",
     "<p>Free blog quizzes scatter facts across six countries. This bundle puts <strong>1,225 civics flashcards</strong> into Anki — so you drill rights, institutions, values, and test-style questions with spaced repetition until they stick.</p>",
-    "<p><strong>UniPrep2Go × PixID Studio</strong> — one <strong>$20</strong> download, <strong>six separate .apkg files</strong>. Study only the country you need. Keep the rest for family members on other pathways.</p>",
+    "<p><strong>PixID Studio</strong> — one <strong>$20</strong> download, <strong>six separate .apkg files</strong>. Study only the country you need. Keep the rest for family members on other pathways.</p>",
     "<h3>What’s inside</h3>",
     `<ul>${list}</ul>`,
     "<p><strong>1,225 cards total</strong> · text-first question → answer format · built for daily 20–30 card sessions alongside the official handbook for your country.</p>",
@@ -143,7 +145,7 @@ function buildDescription() {
     "<li><strong>Clean country separation</strong> — no cross-contamination between pathways</li>",
     "<li><strong>One price</strong> — $20 for six decks instead of hunting six separate listings</li>",
     "</ul>",
-    '<p>Full product page &amp; samples: <a href="https://uniprep2go.study/decks/citizenship-naturalization-anki-bundle">uniprep2go.study/decks/citizenship-naturalization-anki-bundle</a></p>',
+    dualBrandFooterHtml(PRODUCT.permalink),
     "<p><em>Independent study aid — not official government or exam-board material. Pair with your country’s official handbook and practice tests.</em></p>",
   ].join("\n");
 }
@@ -210,6 +212,32 @@ async function main() {
   if (!token) throw new Error("No Gumroad token");
   console.log(`gumroad auth: ${source}`);
 
+  const catalog = loadCatalog();
+  let productId = catalog.products?.[PRODUCT.permalink]?.gumroadProductId;
+
+  if (args.copyOnly) {
+    if (!productId) throw new Error("No product id for --copy-only");
+    console.log("copy-only: description + name", productId);
+    if (args.dryRun) return;
+    runGumroad(
+      `products update ${productId} --name "${PRODUCT.name.replace(/"/g, '\\"')}"`,
+    );
+    const descRes = await fetch(`https://api.gumroad.com/v2/products/${productId}`, {
+      method: "PUT",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ description: buildDescription(), price: PRODUCT.priceCents }),
+    });
+    const descPayload = await descRes.json();
+    if (!descRes.ok || !descPayload.success) {
+      throw new Error(`Description update failed: ${JSON.stringify(descPayload).slice(0, 300)}`);
+    }
+    console.log("done:", `https://pixidstudio.gumroad.com/l/${PRODUCT.permalink}`);
+    return;
+  }
+
   const resolved = DECKS.map((d) => {
     const path = resolveApkg(d.folder, d.baseName);
     if (!path) throw new Error(`Missing apkg for ${d.label} (${d.folder}/${d.baseName})`);
@@ -222,9 +250,6 @@ async function main() {
   if (!existsSync(coverPath)) {
     throw new Error(`Cover missing: ${coverPath}`);
   }
-
-  const catalog = loadCatalog();
-  let productId = catalog.products?.[PRODUCT.permalink]?.gumroadProductId;
 
   if (!productId && !args.assetsOnly) {
     const product = await createProduct(token, args);

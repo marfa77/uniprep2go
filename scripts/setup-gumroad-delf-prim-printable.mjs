@@ -15,6 +15,7 @@ import {
   ensureGumroadAccessToken,
   loadLocalEnvFiles,
 } from "./lib/gumroad-auth.mjs";
+import { dualBrandFooterHtml } from "./lib/gumroad-dual-brand.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CATALOG_PATH = join(root, "src/data/gumroad/language-printable.json");
@@ -33,9 +34,10 @@ const PRODUCT = {
 };
 
 function parseArgs(argv) {
-  const args = { dryRun: false };
+  const args = { dryRun: false, copyOnly: false };
   for (const arg of argv.slice(2)) {
     if (arg === "--dry-run") args.dryRun = true;
+    if (arg === "--copy-only") args.copyOnly = true;
   }
   return args;
 }
@@ -58,11 +60,11 @@ function saveCatalog(catalog) {
 
 function buildDescription() {
   return [
-    "<p><strong>UniPrep2Go × PixID Studio</strong> — <strong>DELF Prim</strong> printable French flashcards for <strong>ages 7–12</strong>.</p>",
+    "<p><strong>PixID Studio</strong> — <strong>DELF Prim</strong> printable French flashcards for <strong>ages 7–12</strong>.</p>",
     "<p><strong>360 cards</strong> across two A4 PDF files: French headword, English gloss, example sentences, illustration, cut lines, and <strong>QR audio</strong> on every card.</p>",
     "<p>Built for kids preparing DELF Prim-style A2 vocabulary — print at home, cut, and review with pronunciation via QR.</p>",
     "<p><strong>$12</strong> · instant digital download · 2× PDF.</p>",
-    '<p>Product page: <a href="https://uniprep2go.study/decks/delf-prim-printable-french-flashcards">uniprep2go.study/decks/delf-prim-printable-french-flashcards</a></p>',
+    dualBrandFooterHtml(PRODUCT.permalink),
     "<p><em>Independent study aid — not official France Éducation international / DELF Prim material.</em></p>",
   ].join("\n");
 }
@@ -105,15 +107,35 @@ async function main() {
   }
   console.log(`gumroad auth: ${source}`);
 
+  const catalog = loadCatalog();
+  const existing = catalog.products?.[PRODUCT.permalink];
+  let productId = existing?.gumroadProductId;
+
+  if (args.copyOnly) {
+    if (!productId) throw new Error("No product id for --copy-only");
+    console.log("copy-only: description", productId);
+    if (args.dryRun) return;
+    const descRes = await fetch(`https://api.gumroad.com/v2/products/${productId}`, {
+      method: "PUT",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ description: buildDescription() }),
+    });
+    const descPayload = await descRes.json();
+    if (!descRes.ok || !descPayload.success) {
+      throw new Error(`Description update failed: ${JSON.stringify(descPayload).slice(0, 300)}`);
+    }
+    console.log("done:", `https://pixidstudio.gumroad.com/l/${PRODUCT.permalink}`);
+    return;
+  }
+
   for (const pdf of [PDF1, PDF2]) {
     if (!existsSync(pdf)) throw new Error(`PDF missing: ${pdf}`);
   }
   if (!existsSync(COVER_PATH)) throw new Error(`Cover missing: ${COVER_PATH}`);
   if (!existsSync(THUMB_PATH)) throw new Error(`Thumb missing: ${THUMB_PATH}`);
-
-  const catalog = loadCatalog();
-  const existing = catalog.products?.[PRODUCT.permalink];
-  let productId = existing?.gumroadProductId;
 
   if (!productId) {
     const product = await createProduct(token, args);

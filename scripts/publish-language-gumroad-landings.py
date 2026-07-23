@@ -898,7 +898,40 @@ def render_landing(slug: str, spec: dict, product: dict, cover_url: str, sample_
     exam = spec["exam"]
     disclaimer = spec["disclaimer"]
     deck_url = f"https://uniprep2go.study/decks/{slug}"
-    seo_title = f"{headline} | PixiD Studio"
+    prep2go_paths = {
+        "ciple-a2-european-portuguese-anki-deck": "/shop/ciple-a2-anki-deck",
+        "delf-b2-french-anki-deck": "/shop/delf-a2-anki-deck",
+        "dutch-a2-inburgering-anki-deck": "/shop/deck/inburgering-a2-anki-deck",
+        "german-a2-anki-deck": "/shop/deck/goethe-telc-osd-anki-deck",
+        "celi-b1-italian-anki-deck": "/shop/celi-a2-anki-deck",
+        "danish-a2-prove-i-dansk-anki-deck": "/shop/deck/danish-prove-i-dansk-anki-deck",
+        "norwegian-a2-norskprove-anki-deck": "/shop/deck/norwegian-norskprove-anki-deck",
+        "swedish-a2-sfi-anki-deck": "/shop/deck/swedish-sfi-anki-deck",
+        "greek-a2-ellinomatheia-anki-deck": "/shop/deck/greek-ellinomatheia-anki-deck",
+        "czech-a2-cce-anki-deck": "/shop/deck/czech-cce-anki-deck",
+        "dele-a2-spanish-anki-deck": "/shop/dele-a2-anki-deck",
+        "dele-a2-ccse-spanish-citizenship-bundle": "/shop/dele-a2-anki-deck",
+        "ielts-toefl-english-for-french-speakers-anki-deck": "/shop/deck/english-for-french-speakers-anki-deck",
+        "ielts-toefl-english-for-arabic-speakers-anki-deck": "/shop/deck/english-for-arabic-speakers-anki-deck",
+        "ielts-toefl-english-for-ukrainian-speakers-anki-deck": "/shop/deck/english-for-ukrainian-speakers-anki-deck",
+        "ielts-toefl-english-for-russian-speakers-anki-deck": "/shop/deck/english-for-russian-speakers-anki-deck",
+        "ielts-toefl-english-for-spanish-speakers-anki-deck": "/shop/deck/english-for-spanish-speakers-anki-deck",
+        "ielts-toefl-english-for-portuguese-speakers-anki-deck": "/shop/deck/english-for-portuguese-speakers-anki-deck",
+    }
+    prep2go_url = (
+        f"https://www.prep2go.study{prep2go_paths[slug]}" if slug in prep2go_paths else None
+    )
+    prep2go_cta = (
+        f'<a href="{e(prep2go_url)}" class="btn-secondary inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold" rel="noopener">View on Prep2Go</a>'
+        if prep2go_url
+        else ""
+    )
+    prep2go_footer = (
+        f'<a href="{e(prep2go_url)}" class="underline" rel="noopener">Prep2Go</a>'
+        if prep2go_url
+        else ""
+    )
+    seo_title = f"{headline} | PixID Studio"
     meta = (
         f"{spec['cards']} Anki flashcards for {exam}. "
         f"Vocabulary with audio — independent prep, not official {disclaimer} material."
@@ -1049,7 +1082,7 @@ def render_landing(slug: str, spec: dict, product: dict, cover_url: str, sample_
   </header>
 
   <main class="max-w-4xl mx-auto px-6 py-10">
-    <p class="label-mono">Prep for {e(exam)} · UniPrep2Go</p>
+    <p class="label-mono">Prep for {e(exam)} · PixID Studio</p>
     <h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight leading-tight" data-gumroad-field="name">{e(headline)}</h1>
 
     <div class="mt-8 grid lg:grid-cols-2 gap-8 items-start">
@@ -1059,11 +1092,12 @@ def render_landing(slug: str, spec: dict, product: dict, cover_url: str, sample_
         <ul class="space-y-3 text-sm sm:text-base">
           {benefits_html}
         </ul>
-        <div class="flex flex-col gap-3 sm:flex-row pt-2">
+        <div class="flex flex-col gap-3 sm:flex-row sm:flex-wrap pt-2">
           <a href="{e(checkout)}" data-gumroad-action="buy" class="btn-buy inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold" rel="noopener noreferrer">Get instant access — <span data-gumroad-field="price">{e(price)}</span></a>
+          {prep2go_cta}
           <a href="{e(deck_url)}" class="btn-secondary inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold" rel="noopener">View on UniPrep2Go</a>
         </div>
-        <p class="text-sm leading-7 text-muted">Independent {e(exam)} study aid. Delivered as {e(spec["format_note"])} for <span data-gumroad-field="price">{e(price)}</span>. Not official {e(disclaimer)} material.</p>
+        <p class="text-sm leading-7 text-muted">Sold by PixID Studio on Gumroad — the same Anki bank used on Prep2Go and UniPrep2Go. Independent {e(exam)} study aid. Delivered as {e(spec["format_note"])} for <span data-gumroad-field="price">{e(price)}</span>. Not official {e(disclaimer)} material.</p>
       </div>
       {cover_block}
     </div>
@@ -1099,8 +1133,11 @@ def render_landing(slug: str, spec: dict, product: dict, cover_url: str, sample_
 
   <footer class="border-t py-6" style="border-color:var(--border)">
     <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-sm text-muted">
-      <p>PixiD Studio · UniPrep2Go</p>
-      <a href="{e(deck_url)}" class="underline" rel="noopener">Deck page on UniPrep2Go</a>
+      <p>PixID Studio · Prep2Go · UniPrep2Go</p>
+      <span class="flex flex-wrap gap-3 justify-center">
+        {prep2go_footer}
+        <a href="{e(deck_url)}" class="underline" rel="noopener">UniPrep2Go</a>
+      </span>
     </div>
   </footer>
 </body>

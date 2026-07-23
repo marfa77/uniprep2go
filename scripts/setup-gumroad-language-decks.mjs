@@ -18,6 +18,9 @@ import {
   ensureGumroadAccessToken,
   loadLocalEnvFiles,
 } from "./lib/gumroad-auth.mjs";
+import {
+  dualBrandFooterHtml,
+} from "./lib/gumroad-dual-brand.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CATALOG_PATH = join(root, "src/data/gumroad/language-anki-decks.json");
@@ -42,7 +45,7 @@ const SPECS = {
     summary:
       "1600+ European Portuguese cards for CIPLE / CAPLE A2, residency, and citizenship (nacionalidade).",
     descriptionHtml: [
-      "<p><strong>UniPrep2Go × PixID Studio</strong> — Portuguese Anki deck for <strong>CIPLE / CAPLE A2</strong>, <strong>autorização de residência</strong>, and <strong>nacionalidade portuguesa</strong>.</p>",
+      "<p><strong>PixID Studio</strong> — Portuguese Anki deck for <strong>CIPLE / CAPLE A2</strong>, <strong>autorização de residência</strong>, and <strong>nacionalidade portuguesa</strong>.</p>",
       "<p><strong>1600+</strong> PT-PT cards with audio, phrases, and examples — one vocabulary bank for the CAPLE diploma and Portugal immigration pathways.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki desktop, then sync to mobile via AnkiWeb.</p>",
       "<p><em>Independent study aid — not official CAPLE / University of Lisbon material.</em></p>",
@@ -56,9 +59,9 @@ const SPECS = {
     summary:
       "2000+ French vocabulary cards for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, and TCF général.",
     descriptionHtml: [
-      "<p><strong>UniPrep2Go × PixID Studio</strong> — French Anki deck for the main certificate and immigration pathways: <strong>DELF / DALF</strong> (lifetime diploma gold standard), <strong>TCF Canada</strong> and <strong>TEF Canada</strong> (Express Entry / Quebec), <strong>TCF ANF</strong> (French naturalization), and <strong>TCF général</strong> (French universities).</p>",
+      "<p><strong>PixID Studio</strong> — French Anki deck for the main certificate and immigration pathways: <strong>DELF / DALF</strong> (lifetime diploma gold standard), <strong>TCF Canada</strong> and <strong>TEF Canada</strong> (Express Entry / Quebec), <strong>TCF ANF</strong> (French naturalization), and <strong>TCF général</strong> (French universities).</p>",
       "<p><strong>2000+</strong> cards pair each headword with a visual cue, native French audio, and a contextual example — one shared high-frequency vocabulary bank across those exams, not A1 survival fluff.</p>",
-      "<p><strong>How this Gumroad edition differs:</strong> multi-exam French framing (DELF, DALF, TCF, TEF) at $26 with instant PixID Studio Gumroad delivery (~159 MB with media), not a DELF-only Lemon listing.</p>",
+      "<p><strong>Why this deck:</strong> multi-exam French framing (DELF, DALF, TCF, TEF) in one Anki bank — instant download with full media (~159 MB).</p>",
       "<p><strong>Delivery:</strong> Import into Anki desktop, then sync to mobile via AnkiWeb.</p>",
       "<p><em>Independent study aid — not affiliated with France Éducation international, IRCC, or official TCF/TEF bodies.</em></p>",
     ].join(""),
@@ -71,7 +74,7 @@ const SPECS = {
     summary:
       "1000+ Dutch A2 cards for Inburgering, Staatsexamen NT2 A2, residency, and naturalisatie.",
     descriptionHtml: [
-      "<p><strong>UniPrep2Go × PixID Studio</strong> — Dutch Anki deck for <strong>Inburgering</strong>, <strong>Staatsexamen NT2 A2</strong>, and <strong>naturalisatie</strong> vocabulary.</p>",
+      "<p><strong>PixID Studio</strong> — Dutch Anki deck for <strong>Inburgering</strong>, <strong>Staatsexamen NT2 A2</strong>, and <strong>naturalisatie</strong> vocabulary.</p>",
       "<p><strong>1000+</strong> high-frequency words with bilingual examples, native audio, and illustrations.</p>",
       "<p><strong>Delivery:</strong> Anki .apkg — import on desktop, sync to mobile.</p>",
       "<p><em>Independent study aid — not official Dutch government / DUO material.</em></p>",
@@ -85,7 +88,7 @@ const SPECS = {
     summary:
       "1000 German A2 cards for Goethe-Institut, telc, ÖSD, and DTZ immigrant integration pathways.",
     descriptionHtml: [
-      "<p><strong>UniPrep2Go × PixID Studio</strong> — German A2 Anki deck for <strong>Goethe-Institut A2</strong>, <strong>telc Deutsch A2</strong>, <strong>ÖSD A2</strong>, and <strong>DTZ</strong>.</p>",
+      "<p><strong>PixID Studio</strong> — German A2 Anki deck for <strong>Goethe-Institut A2</strong>, <strong>telc Deutsch A2</strong>, <strong>ÖSD A2</strong>, and <strong>DTZ</strong>.</p>",
       "<p><strong>1,000</strong> essential words — one shared A2 vocabulary bank across certificate and immigration pathways.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki desktop, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official Goethe, telc, ÖSD, or BAMF / DTZ material.</em></p>",
@@ -98,7 +101,7 @@ const SPECS = {
     name: "CELI CILS PLIDA Italian Anki Deck — 1,373 Flashcards",
     summary: "1,373 Italian B1 cards for CELI, CILS, and PLIDA certificate prep.",
     descriptionHtml: [
-      "<p><strong>UniPrep2Go × PixID Studio</strong> — Italian B1 Anki deck for <strong>CELI</strong>, <strong>CILS</strong>, and <strong>PLIDA</strong>.</p>",
+      "<p><strong>PixID Studio</strong> — Italian B1 Anki deck for <strong>CELI</strong>, <strong>CILS</strong>, and <strong>PLIDA</strong>.</p>",
       "<p><strong>1,373</strong> cards covering the shared intermediate vocabulary across the main Italian certificates.</p>",
       "<p><strong>Delivery:</strong> Anki-compatible .apkg via your Gumroad library after checkout.</p>",
       "<p><em>Independent study aid — not official CELI / CILS / PLIDA material.</em></p>",
@@ -112,7 +115,7 @@ const SPECS = {
     summary:
       "1,000 Danish cards for Prøve i Dansk PD2 / PD3 and residence or citizenship language prep.",
     descriptionHtml: [
-      "<p><strong>UniPrep2Go × PixID Studio</strong> — Danish Anki deck for <strong>Prøve i Dansk PD2 / PD3</strong> and residence or citizenship language prep.</p>",
+      "<p><strong>PixID Studio</strong> — Danish Anki deck for <strong>Prøve i Dansk PD2 / PD3</strong> and residence or citizenship language prep.</p>",
       "<p><strong>1,000</strong> cards with audio and practical example sentences for work, housing, services, and daily life in Denmark.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official Danish language exam material.</em></p>",
@@ -126,7 +129,7 @@ const SPECS = {
     summary:
       "1,000 Bokmål cards for Norskprøve A2 and Norwegian residence or citizenship language prep.",
     descriptionHtml: [
-      "<p><strong>UniPrep2Go × PixID Studio</strong> — Norwegian Anki deck for <strong>Norskprøve A2</strong>, <strong>permanent oppholdstillatelse</strong>, and <strong>statsborgerskap</strong> language prep.</p>",
+      "<p><strong>PixID Studio</strong> — Norwegian Anki deck for <strong>Norskprøve A2</strong>, <strong>permanent oppholdstillatelse</strong>, and <strong>statsborgerskap</strong> language prep.</p>",
       "<p><strong>1,000</strong> Bokmål cards with audio and everyday example sentences.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official Norskprøve material.</em></p>",
@@ -140,7 +143,7 @@ const SPECS = {
     summary:
       "1,000 Swedish cards for SFI A2 and Swedish residence or citizenship language prep.",
     descriptionHtml: [
-      "<p><strong>UniPrep2Go × PixID Studio</strong> — Swedish Anki deck for <strong>SFI</strong> (Swedish for Immigrants) A2 vocabulary and residence or citizenship language prep.</p>",
+      "<p><strong>PixID Studio</strong> — Swedish Anki deck for <strong>SFI</strong> (Swedish for Immigrants) A2 vocabulary and residence or citizenship language prep.</p>",
       "<p><strong>1,000</strong> high-frequency Swedish cards with audio and practical example sentences for work, housing, services, and everyday life in Sweden.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official SFI / Swedish Migration Agency material.</em></p>",
@@ -154,7 +157,7 @@ const SPECS = {
     summary:
       "1,000 Greek cards for Ellinomatheia A2 and Greek residence or citizenship language prep.",
     descriptionHtml: [
-      "<p><strong>UniPrep2Go × PixID Studio</strong> — Greek Anki deck for <strong>Ellinomatheia A2</strong> and residence or citizenship language prep.</p>",
+      "<p><strong>PixID Studio</strong> — Greek Anki deck for <strong>Ellinomatheia A2</strong> and residence or citizenship language prep.</p>",
       "<p><strong>1,000</strong> high-frequency Greek cards with audio and practical example sentences for everyday life in Greece.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official Ellinomatheia / Greek state exam material.</em></p>",
@@ -168,7 +171,7 @@ const SPECS = {
     summary:
       "1,000 Czech cards for CCE A2 and Czech residence or citizenship language prep.",
     descriptionHtml: [
-      "<p><strong>UniPrep2Go × PixID Studio</strong> — Czech Anki deck for <strong>CCE</strong> (Czech Language Certificate Exam) A2 and residence or citizenship language prep.</p>",
+      "<p><strong>PixID Studio</strong> — Czech Anki deck for <strong>CCE</strong> (Czech Language Certificate Exam) A2 and residence or citizenship language prep.</p>",
       "<p><strong>1,000</strong> high-frequency Czech cards with audio and practical example sentences for everyday life in Czechia.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official CCE / ÚJOP material.</em></p>",
@@ -182,7 +185,7 @@ const SPECS = {
     summary:
       "2,522 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with French support on every card.",
     descriptionHtml: [
-      "<p><strong>UniPrep2Go × PixID Studio</strong> — English Anki deck for <strong>French speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
+      "<p><strong>PixID Studio</strong> — English Anki deck for <strong>French speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
       "<p><strong>2,522</strong> high-frequency English cards with French glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
@@ -198,7 +201,7 @@ const SPECS = {
     summary:
       "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Arabic support on every card.",
     descriptionHtml: [
-      "<p><strong>UniPrep2Go × PixID Studio</strong> — English Anki deck for <strong>Arabic speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
+      "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Arabic speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
       "<p><strong>2,504</strong> high-frequency English cards with Arabic glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
@@ -214,7 +217,7 @@ const SPECS = {
     summary:
       "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Ukrainian support on every card.",
     descriptionHtml: [
-      "<p><strong>UniPrep2Go × PixID Studio</strong> — English Anki deck for <strong>Ukrainian speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
+      "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Ukrainian speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
       "<p><strong>2,504</strong> high-frequency English cards with Ukrainian glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
@@ -230,7 +233,7 @@ const SPECS = {
     summary:
       "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Russian support on every card.",
     descriptionHtml: [
-      "<p><strong>UniPrep2Go × PixID Studio</strong> — English Anki deck for <strong>Russian speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
+      "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Russian speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
       "<p><strong>2,504</strong> high-frequency English cards with Russian glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
@@ -246,7 +249,7 @@ const SPECS = {
     summary:
       "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Latin American Spanish support on every card.",
     descriptionHtml: [
-      "<p><strong>UniPrep2Go × PixID Studio</strong> — English Anki deck for <strong>Spanish speakers (LatAm)</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
+      "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Spanish speakers (LatAm)</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
       "<p><strong>2,504</strong> high-frequency English cards with Latin American Spanish glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
@@ -262,7 +265,7 @@ const SPECS = {
     summary:
       "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Brazilian Portuguese support on every card.",
     descriptionHtml: [
-      "<p><strong>UniPrep2Go × PixID Studio</strong> — English Anki deck for <strong>Brazilian Portuguese speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
+      "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Brazilian Portuguese speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
       "<p><strong>2,504</strong> high-frequency English cards with Brazilian Portuguese (PT-BR) glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material. Not a CIPLE European Portuguese deck.</em></p>",
@@ -278,7 +281,7 @@ const SPECS = {
     summary:
       "1,000 Spanish A2 vocabulary cards for DELE A2 and SIELE A2-style word knowledge — language only, not a CCSE bundle.",
     descriptionHtml: [
-      "<p><strong>UniPrep2Go × PixID Studio</strong> — Spanish Anki deck for <strong>DELE A2</strong> (Instituto Cervantes) and overlapping <strong>SIELE A2</strong>-style vocabulary.</p>",
+      "<p><strong>PixID Studio</strong> — Spanish Anki deck for <strong>DELE A2</strong> (Instituto Cervantes) and overlapping <strong>SIELE A2</strong>-style vocabulary.</p>",
       "<p><strong>1,000</strong> high-frequency A2 cards with examples and media — a single language .apkg, not a DELE + CCSE nationality bundle.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki desktop, then sync to mobile via AnkiWeb.</p>",
       "<p><em>Independent study aid — not affiliated with Instituto Cervantes or SIELE.</em></p>",
@@ -292,7 +295,7 @@ const SPECS = {
     summary:
       "DELE A2 vocabulary + CCSE civics for nacionalidad española (SIELE-overlapping lexicon).",
     descriptionHtml: [
-      "<p><strong>UniPrep2Go × PixID Studio</strong> — Spanish nationality bundle: <strong>DELE A2</strong> + <strong>CCSE</strong> for <strong>nacionalidad española</strong>. DELE A2 vocabulary also overlaps <strong>SIELE A2</strong>-style word knowledge.</p>",
+      "<p><strong>PixID Studio</strong> — Spanish nationality bundle: <strong>DELE A2</strong> + <strong>CCSE</strong> for <strong>nacionalidad española</strong>. DELE A2 vocabulary also overlaps <strong>SIELE A2</strong>-style word knowledge.</p>",
       "<p>Download includes two .apkg files so language and civics stay on one study schedule.</p>",
       "<p><strong>Delivery:</strong> Both .apkg files appear in your Gumroad library immediately after purchase.</p>",
       "<p><em>Independent study aid — not affiliated with Instituto Cervantes or the Spanish Ministry of Justice.</em></p>",
@@ -314,12 +317,13 @@ function sleep(ms) {
 }
 
 function parseArgs(argv) {
-  const args = { slug: null, dryRun: false, force: false, assetsOnly: false };
+  const args = { slug: null, dryRun: false, force: false, assetsOnly: false, copyOnly: false };
   for (let i = 2; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg === "--dry-run") args.dryRun = true;
     else if (arg === "--force") args.force = true;
     else if (arg === "--assets-only") args.assetsOnly = true;
+    else if (arg === "--copy-only") args.copyOnly = true;
     else if (arg === "--slug") args.slug = argv[++i];
   }
   return args;
@@ -412,17 +416,35 @@ function prepareCoverPng(coverPath) {
   return { coverPng, workDir };
 }
 
-async function putGumroadDescriptionAsync(productId, description, dryRun) {
+function finalizeLanguageDescription(slug, html) {
+  let out = String(html || "")
+    .replace(/<p><strong>UniPrep2Go × PixID Studio<\/strong> — /g, "<p><strong>PixID Studio</strong> — ")
+    .replace(/<p>Product page:\s*<a href="https:\/\/uniprep2go\.study\/decks\/[^"]+">[^<]*<\/a><\/p>/gi, "")
+    .replace(/<p>Full product page[^<]*<a href="https:\/\/uniprep2go\.study\/decks\/[^"]+">[^<]*<\/a><\/p>/gi, "");
+  if (!out.includes("Sold by PixID Studio")) {
+    const disclaimerMatch = out.match(/(<p><em>Independent study aid[\s\S]*?<\/p>)\s*$/);
+    const footer = dualBrandFooterHtml(slug);
+    if (disclaimerMatch) {
+      out = out.slice(0, disclaimerMatch.index) + footer + disclaimerMatch[1];
+    } else {
+      out += footer;
+    }
+  }
+  return out;
+}
+
+async function putGumroadDescriptionAsync(productId, description, dryRun, slug = null) {
   if (dryRun) return;
   const token = resolveGumroadToken();
   if (!token) throw new Error("GUMROAD_ACCESS_TOKEN required to update description");
+  const finalDescription = slug ? finalizeLanguageDescription(slug, description) : description;
   const response = await fetch(`https://api.gumroad.com/v2/products/${productId}`, {
     method: "PUT",
     headers: {
       Authorization: `Bearer ${token}`,
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ description }),
+    body: JSON.stringify({ description: finalDescription }),
   });
   const payload = await response.json();
   if (!response.ok || !payload.success) {
@@ -519,7 +541,7 @@ async function syncAssets({ slug, record, catalog, dryRun }) {
     fileNames: spec.fileNames,
     dryRun: false,
   });
-  await putGumroadDescriptionAsync(productId, spec.descriptionHtml, dryRun);
+  await putGumroadDescriptionAsync(productId, spec.descriptionHtml, dryRun, slug);
   runGumroad(`products publish ${productId}`);
 
   catalog.products[slug] = {
@@ -547,7 +569,7 @@ async function createProduct({ slug, record, catalog, dryRun }) {
     token,
     name: spec.name,
     priceCents: PRICE_USD * 100,
-    description: spec.descriptionHtml,
+    description: finalizeLanguageDescription(slug, spec.descriptionHtml),
     permalink: record.permalink,
     summary: spec.summary,
   });
@@ -582,6 +604,7 @@ async function main() {
   const allSlugs = args.slug
     ? [args.slug]
     : Object.keys(catalog.products).filter((slug) => {
+        if (args.copyOnly) return Boolean(catalog.products[slug].gumroadProductId) && Boolean(SPECS[slug]);
         if (args.force) return true;
         if (args.assetsOnly) {
           return catalog.products[slug].gumroadProductId && !catalog.products[slug].apkgUploadedAt;
@@ -591,9 +614,11 @@ async function main() {
 
   if (allSlugs.length === 0) {
     console.log(
-      args.assetsOnly
-        ? "No language products need asset upload."
-        : "All language Gumroad products already linked. Use --force to recreate.",
+      args.copyOnly
+        ? "No language products with Gumroad IDs to update copy for."
+        : args.assetsOnly
+          ? "No language products need asset upload."
+          : "All language Gumroad products already linked. Use --force to recreate.",
     );
     return;
   }
@@ -605,6 +630,35 @@ async function main() {
     const record = catalog.products[slug];
     if (!record) throw new Error(`Missing catalog entry for ${slug}`);
     if (!SPECS[slug]) throw new Error(`Missing SPECS entry for ${slug}`);
+
+    if (args.copyOnly) {
+      if (!record.gumroadProductId) throw new Error(`${slug}: gumroadProductId missing`);
+      const spec = SPECS[slug];
+      console.log("  copy-only: description + summary");
+      await putGumroadDescriptionAsync(
+        record.gumroadProductId,
+        spec.descriptionHtml,
+        args.dryRun,
+        slug,
+      );
+      if (!args.dryRun) {
+        const token = resolveGumroadToken();
+        const summaryRes = await fetch(`https://api.gumroad.com/v2/products/${record.gumroadProductId}`, {
+          method: "PUT",
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ custom_summary: spec.summary }),
+        });
+        const summaryPayload = await summaryRes.json();
+        if (!summaryRes.ok || !summaryPayload.success) {
+          console.warn(`  summary warning: ${JSON.stringify(summaryPayload).slice(0, 160)}`);
+        }
+        runGumroad(`products publish ${record.gumroadProductId}`, { dryRun: false });
+      }
+      continue;
+    }
 
     if (args.assetsOnly || (record.gumroadProductId && !args.force)) {
       await syncAssets({ slug, record, catalog, dryRun: args.dryRun });
