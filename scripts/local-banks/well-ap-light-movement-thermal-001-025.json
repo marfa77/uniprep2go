@@ -1,0 +1,452 @@
+[
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "A WELL v2 project team is designing open-plan office lighting to support circadian health. Which metric is most directly used to evaluate melanopic (circadian-effective) light exposure?",
+    "options": [
+      { "id": "a", "text": "Equivalent Melanopic Lux (EML) at the eye" },
+      { "id": "b", "text": "Total lumens per square foot on the workplane only" },
+      { "id": "c", "text": "Color Rendering Index (CRI) of the lamp" },
+      { "id": "d", "text": "Wattage per fixture regardless of spectrum" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "WELL Light concepts emphasize circadian-effective illumination evaluated at the occupant's eye using melanopic weighting, commonly expressed as EML rather than generic illuminance alone.",
+    "distractorExplanations": {
+      "b": "Horizontal workplane lux does not account for vertical eye-level exposure or melanopic spectrum weighting.",
+      "c": "CRI describes color rendering quality, not circadian stimulus.",
+      "d": "Wattage does not describe spectral content or retinal circadian response."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which design strategy best supports WELL Movement concepts in a mid-rise office building?",
+    "options": [
+      { "id": "a", "text": "Place attractive, visible stairs near main circulation and reduce reliance on elevators for short trips" },
+      { "id": "b", "text": "Remove all interior stairs to simplify wayfinding" },
+      { "id": "c", "text": "Require badge access to all stairwells during business hours" },
+      { "id": "d", "text": "Locate all meeting rooms only on the ground floor" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "WELL Movement promotes active design by making stairs convenient, visible, and appealing so occupants choose them for everyday vertical travel.",
+    "distractorExplanations": {
+      "b": "Removing stairs eliminates a primary opportunity for daily physical activity.",
+      "c": "Restricting stair access discourages routine use for movement.",
+      "d": "Ground-floor-only meetings do not address vertical movement between floors."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Under ASHRAE Standard 55 thermal comfort principles referenced in WELL Thermal Comfort, what does PMV primarily indicate?",
+    "options": [
+      { "id": "a", "text": "Predicted mean vote of thermal sensation on a comfort scale" },
+      { "id": "b", "text": "Peak mechanical ventilation rate in cubic feet per minute" },
+      { "id": "c", "text": "Particulate matter concentration in supply air" },
+      { "id": "d", "text": "Primary motor voltage for fan equipment" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "PMV (Predicted Mean Vote) models average thermal sensation based on environmental and personal factors such as air temperature, radiant temperature, humidity, air speed, clothing, and metabolic rate.",
+    "distractorExplanations": {
+      "b": "PMV is a human comfort index, not an airflow quantity.",
+      "c": "Particulate matter relates to Air concepts, not PMV.",
+      "d": "Motor voltage is unrelated to thermal sensation modeling."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "A project provides sit-stand workstations and interior walking loops. Which WELL concept area do these strategies primarily address?",
+    "options": [
+      { "id": "a", "text": "Movement" },
+      { "id": "b", "text": "Water" },
+      { "id": "c", "text": "Sound" },
+      { "id": "d", "text": "Materials" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Active furnishings and interior walking paths reduce sedentary behavior and support WELL Movement goals for physical activity in daily building use.",
+    "distractorExplanations": {
+      "b": "Water features address hydration and water quality, not physical activity.",
+      "c": "Sound addresses acoustic comfort and noise control.",
+      "d": "Materials focuses on product ingredient transparency and VOC limits."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which lighting control approach best reduces circadian disruption from bright artificial light at night in a 24/7 operations center?",
+    "options": [
+      { "id": "a", "text": "Lower melanopic content and illuminance during night shifts while maintaining task visibility" },
+      { "id": "b", "text": "Increase all fixtures to 6500 K and maximum output overnight" },
+      { "id": "c", "text": "Disable all lighting controls and run at full brightness continuously" },
+      { "id": "d", "text": "Use only decorative accent lighting with no task lighting" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "WELL Light strategies for shift workers include managing spectrum and intensity at night to limit circadian disruption while preserving safe task illumination.",
+    "distractorExplanations": {
+      "b": "High cool-temperature light at night can increase circadian disruption for night workers.",
+      "c": "Constant maximum brightness ignores time-of-day circadian needs.",
+      "d": "Insufficient task lighting compromises safety and performance."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "A naturally ventilated office in a mild climate allows occupants to open windows. Which thermal comfort framework is often appropriate when occupants have adaptive control?",
+    "options": [
+      { "id": "a", "text": "Adaptive comfort model allowing wider acceptable temperature ranges when users can adjust openings" },
+      { "id": "b", "text": "Fixed 68°F setpoint with no occupant control year-round" },
+      { "id": "c", "text": "Radiant heating only with no ventilation" },
+      { "id": "d", "text": "Ignore humidity entirely in all seasons" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Adaptive comfort models recognize that acceptable temperature ranges can broaden when occupants can open windows, adjust clothing, or otherwise adapt, as referenced in ASHRAE 55 and WELL Thermal Comfort.",
+    "distractorExplanations": {
+      "b": "Rigid setpoints without adaptive opportunity do not reflect operable-window environments.",
+      "c": "Radiant-only systems do not describe adaptive comfort methodology.",
+      "d": "Humidity remains a comfort factor even in adaptive models."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which window treatment strategy best supports both daylight access and glare control for desk workers near perimeter glazing?",
+    "options": [
+      { "id": "a", "text": "Automated or manual shades that block direct sun while preserving diffuse daylight" },
+      { "id": "b", "text": "Permanent blackout panels on all windows at all times" },
+      { "id": "c", "text": "No shades and maximum direct beam sunlight on monitors all day" },
+      { "id": "d", "text": "Tinted glazing with zero operable shading regardless of sun angle" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Effective daylight design balances access to natural light with glare control through shading that responds to sun angle, supporting WELL Light visual comfort.",
+    "distractorExplanations": {
+      "b": "Permanent blackout eliminates beneficial daylight.",
+      "c": "Uncontrolled direct sun causes disability glare on screens.",
+      "d": "Fixed tint alone may not address changing solar angles throughout the day."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "A fitness amenity includes on-site exercise space accessible to building occupants. Which WELL domain does this primarily support?",
+    "options": [
+      { "id": "a", "text": "Movement" },
+      { "id": "b", "text": "Nourishment" },
+      { "id": "c", "text": "Community" },
+      { "id": "d", "text": "Air" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Dedicated exercise facilities encourage regular physical activity, a core WELL Movement strategy beyond incidental stair use or walking.",
+    "distractorExplanations": {
+      "b": "Nourishment addresses healthy food environments, not structured exercise space.",
+      "c": "Community may overlap socially but the primary intent is physical activity.",
+      "d": "Air addresses ventilation and pollutant control, not exercise programming."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "What is the primary purpose of measuring vertical illuminance at the eye for daylighting assessments in WELL projects?",
+    "options": [
+      { "id": "a", "text": "To evaluate light available for visual and circadian effects at the occupant's line of sight" },
+      { "id": "b", "text": "To size emergency generator fuel tanks" },
+      { "id": "c", "text": "To calculate plumbing fixture counts" },
+      { "id": "d", "text": "To determine structural wind loads on the facade" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Eye-level vertical illuminance reflects what enters the eye for vision and circadian stimulation, which is more relevant than floor-level metrics alone for WELL Light evaluation.",
+    "distractorExplanations": {
+      "b": "Generator sizing is unrelated to daylight measurement.",
+      "c": "Plumbing counts are a Water concept.",
+      "d": "Wind loads are structural, not lighting metrics."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "A building operator receives frequent hot-cold complaints in one open office zone despite a central thermostat reading 72°F. What is the best first diagnostic step aligned with thermal comfort management?",
+    "options": [
+      { "id": "a", "text": "Survey occupants and check local radiant asymmetry, air speed, and solar gains at complaint locations" },
+      { "id": "b", "text": "Lower the global setpoint to 65°F for the entire building" },
+      { "id": "c", "text": "Disable the BAS and lock out all HVAC indefinitely" },
+      { "id": "d", "text": "Ignore complaints because the thermostat reading is within range" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Thermal comfort depends on multiple factors beyond air temperature at one sensor; localized radiant conditions, drafts, and solar load often explain zone complaints under WELL Thermal Comfort principles.",
+    "distractorExplanations": {
+      "b": "Global setpoint changes may worsen comfort elsewhere without diagnosing root cause.",
+      "c": "Shutting down HVAC creates larger comfort and health problems.",
+      "d": "A single sensor reading does not represent all occupants' thermal experience."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which color temperature strategy during daytime hours generally supports alertness in office environments while maintaining visual comfort?",
+    "options": [
+      { "id": "a", "text": "Neutral to cool-white spectrum with adequate melanopic content during working hours" },
+      { "id": "b", "text": "Very warm 2200 K dim light at maximum desk illuminance all day" },
+      { "id": "c", "text": "Monochromatic red lighting only" },
+      { "id": "d", "text": "Random flickering between color temperatures every minute" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Daytime lighting with appropriate spectrum and intensity supports visual performance and circadian entrainment; WELL Light encourages designed day-night contrast rather than flat warm dim light all day.",
+    "distractorExplanations": {
+      "b": "Very warm low-quality spectrum all day weakens daytime circadian signal.",
+      "c": "Monochromatic red light is not suitable for general office tasks.",
+      "d": "Rapid random changes create discomfort and poor lighting quality."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "A project installs bike storage and showers near the building entrance. Which combination of WELL concepts do these amenities most directly support?",
+    "options": [
+      { "id": "a", "text": "Movement and related active transportation support" },
+      { "id": "b", "text": "Sound and Materials only" },
+      { "id": "c", "text": "Water quality testing only" },
+      { "id": "d", "text": "WELL Portfolio score aggregation only" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Bicycle infrastructure and changing facilities reduce barriers to active commuting, aligning with WELL Movement strategies for physical activity in daily life.",
+    "distractorExplanations": {
+      "b": "Acoustic and material strategies are unrelated to bike commuting infrastructure.",
+      "c": "Water testing does not describe active transportation amenities.",
+      "d": "Portfolio scoring is a certification process topic, not the primary concept for bike facilities."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Relative humidity in an office is consistently 18% during winter heating. Which occupant impact is most likely?",
+    "options": [
+      { "id": "a", "text": "Dry air discomfort affecting eyes and respiratory mucous membranes" },
+      { "id": "b", "text": "Increased structural wind uplift on the roof" },
+      { "id": "c", "text": "Automatic WELL precertification approval" },
+      { "id": "d", "text": "Elimination of all thermal comfort complaints" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Very low winter humidity contributes to thermal comfort and health-related dryness complaints; WELL Thermal Comfort considers humidity among environmental comfort factors.",
+    "distractorExplanations": {
+      "b": "Humidity does not directly change structural wind uplift.",
+      "c": "Humidity alone does not determine certification outcomes.",
+      "d": "Low humidity typically increases comfort complaints, not eliminates them."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which metric pair is commonly used together to describe thermal environment acceptability under ASHRAE 55?",
+    "options": [
+      { "id": "a", "text": "PMV and PPD (Predicted Percentage Dissatisfied)" },
+      { "id": "b", "text": "STC and IIC" },
+      { "id": "c", "text": "MERV and HEPA" },
+      { "id": "d", "text": "LEED and WELL" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "PMV estimates mean thermal sensation while PPD estimates the percentage of occupants likely dissatisfied, forming the standard thermal comfort evaluation pair in ASHRAE 55.",
+    "distractorExplanations": {
+      "b": "STC and IIC are acoustic transmission ratings for Sound concepts.",
+      "c": "MERV and HEPA describe filtration, not thermal sensation.",
+      "d": "LEED and WELL are rating systems, not thermal comfort metrics."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "A designer locates photocell sensors inside a deep floor plate far from windows. What lighting control issue is most likely?",
+    "options": [
+      { "id": "a", "text": "Daylight harvesting will dim lights incorrectly because sensors do not see perimeter daylight conditions" },
+      { "id": "b", "text": "Stair pressurization will fail" },
+      { "id": "c", "text": "Water legionella risk increases automatically" },
+      { "id": "d", "text": "WELL exam pass score changes" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Daylight sensors must be placed where they represent the daylight available to the controlled zone; poor sensor location causes inappropriate dimming and energy or comfort problems.",
+    "distractorExplanations": {
+      "b": "Stair pressurization is life-safety mechanical design, unrelated to photocell placement.",
+      "c": "Legionella is a Water concept unrelated to lighting sensors.",
+      "d": "Exam scoring is independent of project sensor placement."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which WELL Light strategy helps occupants who receive limited daylight due to interior office locations?",
+    "options": [
+      { "id": "a", "text": "Provide high-quality electric lighting with appropriate spectrum, intensity, and glare control at workstations" },
+      { "id": "b", "text": "Remove all electric lighting in interior zones" },
+      { "id": "c", "text": "Require all interior staff to relocate to the roof daily" },
+      { "id": "d", "text": "Use only candlelight for all task work" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "When daylight is unavailable, designed electric lighting can still support visual performance and circadian health through appropriate intensity, spectrum, and control.",
+    "distractorExplanations": {
+      "b": "Removing electric light leaves interior zones under-lit and non-functional.",
+      "c": "Roof relocation is not a practical design strategy.",
+      "d": "Candlelight cannot meet office task or circadian lighting requirements."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "An office policy encourages walking meetings in interior circulation paths. Which WELL concept does this operational strategy support?",
+    "options": [
+      { "id": "a", "text": "Movement" },
+      { "id": "b", "text": "Materials" },
+      { "id": "c", "text": "Mind" },
+      { "id": "d", "text": "Sound" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Walking meetings increase daily physical activity during work hours, supporting WELL Movement beyond built infrastructure alone.",
+    "distractorExplanations": {
+      "b": "Materials addresses product chemistry and transparency.",
+      "c": "Mind focuses on mental health and cognitive support; walking meetings primarily increase activity.",
+      "d": "Sound addresses acoustic environment quality."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which condition most likely causes asymmetric thermal discomfort near a large exterior glass wall on a sunny winter day?",
+    "options": [
+      { "id": "a", "text": "Radiant temperature difference from solar-heated glazing while air temperature remains moderate" },
+      { "id": "b", "text": "Excessive plumbing vent stack height" },
+      { "id": "c", "text": "Low MERV filter rating in a remote mechanical room only" },
+      { "id": "d", "text": "Missing bike room signage" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Radiant asymmetry from warm or cold surfaces is a common thermal comfort issue; occupants may feel hot near sunlit glass even when air temperature seems acceptable.",
+    "distractorExplanations": {
+      "b": "Plumbing vent height does not create radiant asymmetry at desks.",
+      "c": "Remote filter rating does not explain localized radiant discomfort at glazing.",
+      "d": "Signage is unrelated to thermal radiation from windows."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "A project team specifies tunable-white luminaires. What is the primary WELL-related benefit?",
+    "options": [
+      { "id": "a", "text": "Ability to adjust spectrum and intensity across the day to support circadian and visual needs" },
+      { "id": "b", "text": "Elimination of all electrical energy use" },
+      { "id": "c", "text": "Automatic compliance with all Water features" },
+      { "id": "d", "text": "Replacement of all WELL documentation requirements" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Tunable-white systems allow programmed or manual shifts in color temperature and output to create day-evening contrast aligned with WELL Light circadian design.",
+    "distractorExplanations": {
+      "b": "Tunable luminaires still consume electricity.",
+      "c": "Lighting technology does not satisfy Water prerequisites.",
+      "d": "Documentation and verification remain required for WELL certification."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which personal factor in thermal comfort models accounts for activity level such as seated office work versus walking?",
+    "options": [
+      { "id": "a", "text": "Metabolic rate (met)" },
+      { "id": "b", "text": "Sound transmission class" },
+      { "id": "c", "text": "Community engagement score" },
+      { "id": "d", "text": "Filter pressure drop" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Metabolic rate describes heat generated by human activity and is a key input in PMV/PPD and adaptive comfort assessments under ASHRAE 55.",
+    "distractorExplanations": {
+      "b": "STC is an acoustic property of assemblies.",
+      "c": "Community engagement is a WELL Community concept, not a thermal model input.",
+      "d": "Filter pressure drop relates to HVAC filtration, not occupant metabolism."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "A ground-floor retail tenant with high internal loads feels warm while upper office floors feel cold in a single-air-system building. What thermal comfort issue is most likely?",
+    "options": [
+      { "id": "a", "text": "Zone load diversity and inadequate local control for dissimilar occupancies" },
+      { "id": "b", "text": "Incorrect WELL AP exam registration fee" },
+      { "id": "c", "text": "Missing universal design signage only" },
+      { "id": "d", "text": "Excessive sound masking in retail only" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Mixed-use buildings often need zoning or supplemental control because internal gains and occupancy patterns differ; one global condition rarely satisfies all spaces.",
+    "distractorExplanations": {
+      "b": "Exam fees are unrelated to HVAC zoning.",
+      "c": "Universal design signage does not explain temperature imbalance.",
+      "d": "Sound masking does not cause inter-zonal temperature differences."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which daylight performance metric focuses on the percentage of floor area meeting minimum daylight illuminance thresholds?",
+    "options": [
+      { "id": "a", "text": "Spatial Daylight Autonomy (sDA) or similar area-based daylight metrics" },
+      { "id": "b", "text": "Occupant load factor for egress only" },
+      { "id": "c", "text": "Water flow rate in gallons per flush" },
+      { "id": "d", "text": "Portfolio recertification interval" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Area-based daylight metrics such as sDA evaluate how much regularly occupied floor area achieves useful daylight levels, supporting WELL Light design verification.",
+    "distractorExplanations": {
+      "b": "Egress occupant load is a life-safety calculation.",
+      "c": "Flush volume is a Water fixture metric.",
+      "d": "Recertification timing belongs to WELL Certification concepts."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "A project provides clear signage and attractive finishes in stairwells. Which dual benefit supports WELL goals?",
+    "options": [
+      { "id": "a", "text": "Encourages stair use (Movement) and improves perceived safety and comfort in circulation" },
+      { "id": "b", "text": "Eliminates need for any ventilation testing" },
+      { "id": "c", "text": "Replaces all nourishment labeling requirements" },
+      { "id": "d", "text": "Guarantees WELL Platinum without documentation" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Well-designed, visible stairs increase daily physical activity while making circulation spaces feel secure and welcoming, supporting Movement and overall occupant experience.",
+    "distractorExplanations": {
+      "b": "Ventilation testing remains independent of stair aesthetics.",
+      "c": "Nourishment labeling is a separate WELL concept.",
+      "d": "Certification level requires documented compliance, not finishes alone."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which clothing insulation factor is commonly represented as 'clo' in thermal comfort calculations?",
+    "options": [
+      { "id": "a", "text": "A unit describing insulating value of occupant clothing ensembles" },
+      { "id": "b", "text": "A measure of water turbidity in drinking fountains" },
+      { "id": "c", "text": "A sound absorption coefficient for ceiling tiles" },
+      { "id": "d", "text": "A WELL feature point weighting" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Clo quantifies clothing insulation in thermal comfort models; seasonal dress expectations affect acceptable temperature ranges in PMV analysis.",
+    "distractorExplanations": {
+      "b": "Turbidity is a water quality parameter.",
+      "c": "Absorption coefficients describe acoustics, not clothing.",
+      "d": "Feature weighting is part of WELL scoring structure, not a thermal unit."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "An employer implements a policy allowing flexible dress by season to match indoor temperature conditions. Which thermal comfort principle does this support?",
+    "options": [
+      { "id": "a", "text": "Personal adaptation through clothing adjustment within acceptable environmental limits" },
+      { "id": "b", "text": "Elimination of all HVAC maintenance" },
+      { "id": "c", "text": "Mandatory uniform heavy coats in summer" },
+      { "id": "d", "text": "Removal of all WELL Movement features" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Allowing seasonal clothing flexibility helps occupants adapt to indoor conditions, complementing environmental controls under thermal comfort best practices.",
+    "distractorExplanations": {
+      "b": "HVAC maintenance remains essential regardless of dress code.",
+      "c": "Heavy coats in summer hinder adaptation and comfort.",
+      "d": "Dress policy does not remove Movement design features."
+    },
+    "difficulty": "easy"
+  }
+]

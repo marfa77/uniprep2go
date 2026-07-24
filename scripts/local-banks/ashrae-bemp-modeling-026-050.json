@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "EnergyPlus and OpenStudio workflows commonly exchange data through:",
+    "options": [
+      {
+        "id": "a",
+        "text": "IDF/OSM building descriptions, schedules, and simulation output CSV/SQL reports"
+      },
+      {
+        "id": "b",
+        "text": "Handwritten field notes only with no digital files"
+      },
+      {
+        "id": "c",
+        "text": "Structural Revit families without thermal properties"
+      },
+      {
+        "id": "d",
+        "text": "Only PDF utility bills embedded as images"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "BEMP candidates should understand file types and data flow in common simulation stacks.",
+    "distractorExplanations": {
+      "b": "Modern workflows rely on structured input and output files.",
+      "c": "Thermal models need material and construction definitions.",
+      "d": "Bills inform calibration; they are not simulation input geometry."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "When a model shows lower winter gas use than measured, a modeler should first check:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Heating setpoints, boiler efficiency curves, and whether non-HVAC gas end uses are included in meter data"
+      },
+      {
+        "id": "b",
+        "text": "Whether the weather file contains summer months only"
+      },
+      {
+        "id": "c",
+        "text": "Only the number of simulation timesteps per hour"
+      },
+      {
+        "id": "d",
+        "text": "Deleting all infiltration to force a match"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Meter normalization must separate HVAC from process loads before blaming the heating model.",
+    "distractorExplanations": {
+      "b": "TMY/EPW files include full annual weather.",
+      "c": "Timestep affects accuracy but non-HVAC gas is a common mismatch cause.",
+      "d": "Arbitrary input deletion undermines model integrity."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Daylighting controls in models reduce lighting energy by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dimming or switching electric lighting based on simulated daylight availability and control type"
+      },
+      {
+        "id": "b",
+        "text": "Increasing LPD when sun is present"
+      },
+      {
+        "id": "c",
+        "text": "Disabling all lighting schedules year-round"
+      },
+      {
+        "id": "d",
+        "text": "Removing all windows from the model"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Photosensor or timed daylighting algorithms modulate lighting power during occupied hours.",
+    "distractorExplanations": {
+      "b": "Daylighting controls reduce electric lighting when daylight is ample.",
+      "c": "Schedules still define occupied hours; daylighting adjusts power within them.",
+      "d": "Windows enable daylighting control savings."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Source energy factors in reporting convert site energy to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Primary fuel use accounting for generation, transmission, and distribution losses"
+      },
+      {
+        "id": "b",
+        "text": "Only the building's water consumption in gallons"
+      },
+      {
+        "id": "c",
+        "text": "Occupant satisfaction survey scores"
+      },
+      {
+        "id": "d",
+        "text": "Structural beam weights in pounds"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "LEED and ASHRAE publications use source factors to compare environmental impact across fuels.",
+    "distractorExplanations": {
+      "b": "Source energy addresses fuel upstream of the site meter.",
+      "c": "Source energy is a physical energy metric.",
+      "d": "Structural quantities are unrelated to source energy."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "A revolving door vs swing door selection affects models primarily through:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Infiltration and air exchange assumptions at the building entrance"
+      },
+      {
+        "id": "b",
+        "text": "Chiller refrigerant type selection"
+      },
+      {
+        "id": "c",
+        "text": "Transformer impedance on the electrical service"
+      },
+      {
+        "id": "d",
+        "text": "Fire pump flow requirements exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Entrance air leakage can be material in high-traffic buildings during heating/cooling seasons.",
+    "distractorExplanations": {
+      "b": "Door type influences air leakage, not refrigerant chemistry.",
+      "c": "Electrical distribution is independent of door configuration.",
+      "d": "Fire protection flows are governed by code hydraulics, not door type."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Automated quality checks should flag if:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Simulated peak demand occurs with all lights and equipment off while cooling is zero"
+      },
+      {
+        "id": "b",
+        "text": "The model includes at least one thermal zone"
+      },
+      {
+        "id": "c",
+        "text": "Weather data includes wind speed"
+      },
+      {
+        "id": "d",
+        "text": "An annual simulation has 8,760 hours"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Nonsensical load combinations indicate schedule or equipment input errors.",
+    "distractorExplanations": {
+      "b": "Having zones is expected, not an error by itself.",
+      "c": "Wind is a normal weather variable.",
+      "d": "8,760 hours is standard for annual runs."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "For a proposed LEED v4 BD+C Optimize Energy Performance credit, the simulation must:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Follow ASHRAE 90.1 Appendix G and LEED modeling rules including baseline cost methodology"
+      },
+      {
+        "id": "b",
+        "text": "Use only prescriptive envelope tables with no simulation"
+      },
+      {
+        "id": "c",
+        "text": "Ignore all renewable generation on site"
+      },
+      {
+        "id": "d",
+        "text": "Compare only water use intensity between buildings"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "LEED EA credits reference Appendix G modeling protocols and supplemental LEED guidance.",
+    "distractorExplanations": {
+      "b": "The credit path requires whole-building performance modeling.",
+      "c": "LEED rules define how renewables are treated; they are not ignored by default.",
+      "d": "The credit is about energy performance improvement."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Thermal mass effects in lightweight vs heavyweight construction influence:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Peak load timing and diurnal load shifting due to heat storage in opaque assemblies"
+      },
+      {
+        "id": "b",
+        "text": "Only plumbing fixture flow rates"
+      },
+      {
+        "id": "c",
+        "text": "Elevator motor horsepower exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Refrigerant global warming potential only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "High-mass walls delay and attenuate conduction peaks compared with lightweight framing.",
+    "distractorExplanations": {
+      "b": "Thermal mass affects HVAC load profiles.",
+      "c": "Elevator loads are separate from envelope mass effects.",
+      "d": "GWP is a refrigerant property, not a mass effect."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "When merging as-built changes late in design, the modeler should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Update geometry, schedules, and efficiencies with version notes and re-run calibration checks"
+      },
+      {
+        "id": "b",
+        "text": "Leave outdated inputs to preserve prior savings claims without documentation"
+      },
+      {
+        "id": "c",
+        "text": "Delete the baseline case to avoid rework"
+      },
+      {
+        "id": "d",
+        "text": "Switch to a different climate zone arbitrarily"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Change control prevents silent drift between reported and actual design conditions.",
+    "distractorExplanations": {
+      "b": "As-built changes require model updates and transparent revision logs.",
+      "c": "Baseline and proposed cases both need consistency after changes.",
+      "d": "Climate zone is fixed by project location."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Cogeneration or CHP modeled on site should account for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fuel input, electric output, recovered heat utilization, and parallel vs series configuration"
+      },
+      {
+        "id": "b",
+        "text": "Only nameplate electric kW with no heat recovery path"
+      },
+      {
+        "id": "c",
+        "text": "Infinite free natural gas regardless of runtime"
+      },
+      {
+        "id": "d",
+        "text": "Treating CHP as grid purchases only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "CHP dispatch logic determines whether savings accrue to heating, electricity, or both.",
+    "distractorExplanations": {
+      "b": "CHP efficiency depends on useful heat recovery.",
+      "c": "Fuel consumption must be simulated based on load dispatch.",
+      "d": "On-site generation offsets purchased electricity and fuel."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "An ideal air system assumption in early schematic models:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Simplifies HVAC distribution but may misrepresent fan energy and zone humidity control"
+      },
+      {
+        "id": "b",
+        "text": "Perfectly matches all VRF refrigerant circuits"
+      },
+      {
+        "id": "c",
+        "text": "Eliminates the need for any ventilation airflow"
+      },
+      {
+        "id": "d",
+        "text": "Guarantees zero simultaneous heating and cooling"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Modelers trade early simplicity for later detailed system representation as design advances.",
+    "distractorExplanations": {
+      "b": "Ideal air systems do not model refrigerant distribution detail.",
+      "c": "Ventilation must still be specified under ideal air assumptions.",
+      "d": "Ideal air can still show reheat penalties if minimums are modeled."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Reporting peak coincident demand for utility cost requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aligning simulated demand intervals with tariff demand ratchet and billing window rules"
+      },
+      {
+        "id": "b",
+        "text": "Using annual average kW as the peak for all months"
+      },
+      {
+        "id": "c",
+        "text": "Ignoring demand charges entirely in cost reports"
+      },
+      {
+        "id": "d",
+        "text": "Multiplying total kWh by occupancy count"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Cost models must mirror utility rate structures including demand ratchets and TOU energy charges.",
+    "distractorExplanations": {
+      "b": "Tariffs bill based on interval peak demand, not annual averages.",
+      "c": "Demand charges often drive ECM payback for large buildings.",
+      "d": "Demand is a power peak metric, not kWh per person."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Natural ventilation modeling requires defining:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Opening schedules, wind pressure coefficients, and cross-ventilation or stack effect pathways"
+      },
+      {
+        "id": "b",
+        "text": "Only mechanical cooling capacity with sealed windows"
+      },
+      {
+        "id": "c",
+        "text": "Refrigerant charge in pounds per ton only"
+      },
+      {
+        "id": "d",
+        "text": "Structural weld inspection intervals"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Hybrid ventilation models couple airflow networks or simplified opening rules with HVAC operation.",
+    "distractorExplanations": {
+      "b": "Natural ventilation needs operable opening logic.",
+      "c": "Refrigerant charge applies to mechanical cooling systems.",
+      "d": "Structural inspection is unrelated to ventilation modeling."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "A BEMP professional interpreting ECM savings should disclose:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Interactive effects, measurement uncertainty, and operational assumptions affecting persistence"
+      },
+      {
+        "id": "b",
+        "text": "Only the largest single ECM number without context"
+      },
+      {
+        "id": "c",
+        "text": "Guaranteed savings with no O&M requirements"
+      },
+      {
+        "id": "d",
+        "text": "That calibration eliminates all future weather risk"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Professional practice includes transparent limits of modeled savings projections.",
+    "distractorExplanations": {
+      "b": "Stacked ECMs may interact; uncertainty affects investment decisions.",
+      "c": "Persistence depends on continued proper operation.",
+      "d": "Future weather and occupancy differ from the simulation year."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Heat pump modeling in cold climates must address:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Auxiliary heat staging, defrost cycles, and capacity degradation at low outdoor temperatures"
+      },
+      {
+        "id": "b",
+        "text": "Only constant COP of 10 at all temperatures"
+      },
+      {
+        "id": "c",
+        "text": "Excluding backup heat because heat pumps never need it"
+      },
+      {
+        "id": "d",
+        "text": "Modeling heat pumps as electric resistance only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Accurate cold-climate heat pump inputs prevent overstated heating savings.",
+    "distractorExplanations": {
+      "b": "COP varies with outdoor temperature and defrost.",
+      "c": "Many commercial heat pumps use supplemental heat in cold weather.",
+      "d": "That would ignore heat pump performance curves."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "The purpose of ASHRAE Standard 140 (best practices for software evaluation) is to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Provide comparative test cases so simulation engines can be validated against analytical solutions"
+      },
+      {
+        "id": "b",
+        "text": "Set minimum passing scores for BEMP candidates"
+      },
+      {
+        "id": "c",
+        "text": "Define kitchen exhaust hood capture velocity only"
+      },
+      {
+        "id": "d",
+        "text": "Replace all building energy codes nationally"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Standard 140 test suites help ensure simulation tools produce consistent results.",
+    "distractorExplanations": {
+      "b": "Pass scores are set in certification FAQs, not Standard 140.",
+      "c": "Standard 140 is about software test suites.",
+      "d": "Standard 140 supports software quality, not code adoption."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "When utility data includes steam in MMBtu and electricity in kWh, normalization requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Converting all fuels to common units and separating base load from weather-dependent loads"
+      },
+      {
+        "id": "b",
+        "text": "Adding steam and kWh numerically without conversion"
+      },
+      {
+        "id": "c",
+        "text": "Discarding steam data if the model has no steam system"
+      },
+      {
+        "id": "d",
+        "text": "Using only the highest single hour of the year"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Common units and regression help align model outputs with billed consumption patterns.",
+    "distractorExplanations": {
+      "b": "Different units cannot be summed without conversion.",
+      "c": "Non-HVAC steam loads may still appear in meters and need allocation.",
+      "d": "Normalization uses regression or degree-day methods on longer periods."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Assigning economizer high-limit shutoff in the model should follow:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Climate-appropriate outdoor air dry-bulb or enthalpy limits per code and design intent"
+      },
+      {
+        "id": "b",
+        "text": "Always disabling economizers in all climates"
+      },
+      {
+        "id": "c",
+        "text": "Setting economizer operation to zero outdoor air"
+      },
+      {
+        "id": "d",
+        "text": "Using heating setpoint as the economizer maximum"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Correct economizer control limits affect cooling energy and ventilation hours.",
+    "distractorExplanations": {
+      "b": "Economizers are required or beneficial in many climates.",
+      "c": "Economizers increase outdoor air for free cooling when conditions allow.",
+      "d": "Economizer limits are based on outdoor conditions, not zone heating setpoints."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "A modeling peer reviewer finds orientations rotated 90°. The impact is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Solar gains and possibly economizer effectiveness are wrong, invalidating load and energy results"
+      },
+      {
+        "id": "b",
+        "text": "No impact because orientation does not affect loads"
+      },
+      {
+        "id": "c",
+        "text": "Only a cosmetic reporting issue"
+      },
+      {
+        "id": "d",
+        "text": "Corrected automatically by the weather file alone"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Geometry QA must confirm building north rotation against architectural drawings.",
+    "distractorExplanations": {
+      "b": "Orientation strongly affects solar gains and shading.",
+      "c": "Orientation errors are technical failures, not cosmetic.",
+      "d": "Weather file does not fix building geometry orientation errors."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "For multistory buildings with identical stacked floors, modelers often:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use multipliers on representative floors to reduce geometry duplication while preserving total loads"
+      },
+      {
+        "id": "b",
+        "text": "Model only the ground floor and assume zero loads above"
+      },
+      {
+        "id": "c",
+        "text": "Delete all interior walls to speed solving"
+      },
+      {
+        "id": "d",
+        "text": "Apply a single occupant for the entire tower"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Multipliers are acceptable when representative floors truly match stacked conditions.",
+    "distractorExplanations": {
+      "b": "Upper floors contribute significant loads.",
+      "c": "Interior walls may affect zoning and solar distribution.",
+      "d": "Occupancy scales with floor area and use type."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "BEMP exam content at the analysis level may require candidates to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Memorize only refrigerant GWP values without application"
+      },
+      {
+        "id": "b",
+        "text": "Recite ASHRAE staff names"
+      },
+      {
+        "id": "c",
+        "text": "Perform structural finite element analysis by hand"
+      },
+      {
+        "id": "d",
+        "text": "Interpret simulation output to recommend design or operational changes based on load disaggregation"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "ASHRAE certifications test recall, application, and analysis per ISO/IEC 17024 programs.",
+    "distractorExplanations": {
+      "a": "ASHRAE exams test application and analysis, not isolated memorization.",
+      "b": "Exams focus on technical competency.",
+      "c": "Structural FEA is outside BEMP scope."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Warehouse modeling differs from office modeling primarily in:",
+    "options": [
+      {
+        "id": "a",
+        "text": "High bay volume, infiltration, minimal conditioning, and lighting/ventilation for storage vs occupancy patterns"
+      },
+      {
+        "id": "b",
+        "text": "Identical schedules and LPD as dense office space"
+      },
+      {
+        "id": "c",
+        "text": "No need to define any envelope properties"
+      },
+      {
+        "id": "d",
+        "text": "Mandatory district steam for all warehouses"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Use-type drives ventilation codes, conditioning setpoints, and internal gains.",
+    "distractorExplanations": {
+      "b": "Warehouses have distinct use profiles and conditioning strategies.",
+      "c": "All building types need envelope inputs.",
+      "d": "HVAC systems vary; steam is not universal."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "When exporting results for a code official, the modeler should provide:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compliance forms, input summary, and evidence that Appendix G rules were followed"
+      },
+      {
+        "id": "b",
+        "text": "Only a verbal summary without files"
+      },
+      {
+        "id": "c",
+        "text": "Unrelated structural calculations"
+      },
+      {
+        "id": "d",
+        "text": "A blank simulation template"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Jurisdictions require traceable compliance reports tied to recognized modeling standards.",
+    "distractorExplanations": {
+      "b": "Code compliance requires documented submittals.",
+      "c": "Energy compliance submittals are separate from structural calcs.",
+      "d": "Officials need completed compliance documentation."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Long-term persistence of modeled savings after retrofit depends most on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ongoing commissioning, operator training, and alarm response maintaining control sequences"
+      },
+      {
+        "id": "b",
+        "text": "Deleting trend logs to reduce server storage"
+      },
+      {
+        "id": "c",
+        "text": "Disabling all economizers after one year"
+      },
+      {
+        "id": "d",
+        "text": "Removing O&M manuals from the building"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Operational drift is a leading cause of savings degradation after ECM implementation.",
+    "distractorExplanations": {
+      "b": "Trend data supports ongoing verification.",
+      "c": "Disabling efficiency features erodes savings.",
+      "d": "O&M documentation supports sustained performance."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "In uncertainty reporting, CV(RMSE) and NMBE from Guideline 14 apply to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hourly or monthly comparisons between modeled and measured energy use"
+      },
+      {
+        "id": "b",
+        "text": "Only architectural door hardware schedules"
+      },
+      {
+        "id": "c",
+        "text": "Refrigerant cylinder color coding"
+      },
+      {
+        "id": "d",
+        "text": "Occupant parking assignments"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "NMBE measures bias; CV(RMSE) measures scatter between model and utility data.",
+    "distractorExplanations": {
+      "b": "CV(RMSE) and NMBE are statistical calibration metrics.",
+      "c": "Refrigerant identification is unrelated to calibration statistics.",
+      "d": "Parking assignments do not define calibration error metrics."
+    },
+    "difficulty": "hard"
+  }
+]

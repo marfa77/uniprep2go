@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "During construction, standpipes and water supplies should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Removed until the project is 100% complete"
+      },
+      {
+        "id": "b",
+        "text": "Available and maintained as construction progresses in accordance with NFPA 241 staged requirements"
+      },
+      {
+        "id": "c",
+        "text": "Used only for contractor lunch cleanup"
+      },
+      {
+        "id": "d",
+        "text": "Blocked to prevent accidental sprinkler discharge"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "NFPA 241 requires progressive installation and use of fire protection water supplies as building height and area increase.",
+    "distractorExplanations": {
+      "a": "Removing standpipes delays firefighting capability.",
+      "c": "Removing standpipes delays firefighting capability.",
+      "d": "Blocking required supplies violates construction fire safety plans."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Combustible formwork and scaffolding during construction should be managed by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Adding extra plywood reserves on scaffolds for future unknown projects"
+      },
+      {
+        "id": "b",
+        "text": "Storing propane cylinders on scaffold platforms for convenience"
+      },
+      {
+        "id": "c",
+        "text": "Limiting accumulation, prohibiting unnecessary storage on scaffolds, and expediting removal when no longer needed"
+      },
+      {
+        "id": "d",
+        "text": "Leaving oily rags bundled on formwork overnight near hot work"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Construction debris and combustible materials increase fire load; NFPA 241 emphasizes housekeeping and controlled storage.",
+    "distractorExplanations": {
+      "a": "Propane on scaffolds creates ignition and fall hazards.",
+      "b": "Propane on scaffolds creates ignition and fall hazards.",
+      "d": "Excess scaffold storage adds fuel and obstructs egress."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Hot work during building alteration under NFPA 241 requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No controls if performed after 5 p.m."
+      },
+      {
+        "id": "b",
+        "text": "Only a verbal okay from any subcontractor laborer"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of all portable fire extinguishers to reduce cost"
+      },
+      {
+        "id": "d",
+        "text": "Permits, area preparation, fire watch, and coordination with the FPPM and applicable AHJ provisions"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Construction hot work follows permit programs paralleling NFPA 51B concepts under the site-specific NFPA 241 plan.",
+    "distractorExplanations": {
+      "a": "Verbal approval without formal permit and preparation is inadequate.",
+      "b": "Verbal approval without formal permit and preparation is inadequate.",
+      "c": "Extinguishers are required resources, not cost-cutting targets."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "LPG (liquefied petroleum gas) storage vessels should be located:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Outdoors or in approved locations with separation from exposures per NFPA 58 and site AHJ requirements"
+      },
+      {
+        "id": "b",
+        "text": "Directly against building exits to shorten piping runs"
+      },
+      {
+        "id": "c",
+        "text": "Inside unventilated occupied office suites"
+      },
+      {
+        "id": "d",
+        "text": "Underground beneath emergency assembly points without marking"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "NFPA 58 specifies separation distances from buildings, property lines, and ignition sources for LPG containers and systems.",
+    "distractorExplanations": {
+      "b": "Occupied unventilated spaces are prohibited for LPG storage.",
+      "c": "Blocking exits with vessels impairs egress and increases risk.",
+      "d": "Underground placement still requires code compliance and surface marking."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Relief valves on LPG containers are designed to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increase tank pressure for higher delivery rates"
+      },
+      {
+        "id": "b",
+        "text": "Discharge vapor if internal pressure exceeds safe limits due to heat exposure or overfilling"
+      },
+      {
+        "id": "c",
+        "text": "Seal permanently after the first minor pressure rise"
+      },
+      {
+        "id": "d",
+        "text": "Replace the need for any separation distance"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Pressure relief protects containers from rupture during fire exposure; separated storage still remains necessary.",
+    "distractorExplanations": {
+      "a": "Relief devices must remain operable, not sealed.",
+      "c": "Relief devices must remain operable, not sealed.",
+      "d": "Separation distances are independent requirements."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "During a fire exposing an LPG tank, responders and site personnel should primarily:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Approach closely to read the nameplate serial number"
+      },
+      {
+        "id": "b",
+        "text": "Turn off relief valves to stop venting"
+      },
+      {
+        "id": "c",
+        "text": "Cool exposed containers with water streams from a safe distance while preventing BLEVE conditions if possible"
+      },
+      {
+        "id": "d",
+        "text": "Puncture the tank to vent all product immediately"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Water cooling reduces heat input and pressure rise; interfering with relief devices or puncturing tanks increases catastrophic failure risk.",
+    "distractorExplanations": {
+      "a": "Closing relief valves can cause catastrophic rupture.",
+      "b": "Closing relief valves can cause catastrophic rupture.",
+      "d": "Uncontrolled puncturing releases large flammable volumes instantly."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "LPG vapor is heavier than air, so leak monitoring and emergency planning should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assume rapid dispersion to the upper atmosphere only"
+      },
+      {
+        "id": "b",
+        "text": "Ignore drains and pits as collection points"
+      },
+      {
+        "id": "c",
+        "text": "Ventilate only roof peaks without considering floor-level traps"
+      },
+      {
+        "id": "d",
+        "text": "Account for accumulation in low areas, trenches, and basements near the storage and piping"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "LPG vapors can flow to low points and create flammable atmospheres distant from the leak source.",
+    "distractorExplanations": {
+      "a": "Low-area accumulation is a primary LPG vapor concern.",
+      "b": "Low-area accumulation is a primary LPG vapor concern.",
+      "c": "Drains and pits are common vapor collection points."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Cylinder storage of LPG should include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Upright securing, protection from vehicle impact, separation from oxidizers, and ventilation"
+      },
+      {
+        "id": "b",
+        "text": "Horizontal stacking unsecured in exit corridors"
+      },
+      {
+        "id": "c",
+        "text": "Storage in direct sunlight inside sealed vehicles with no ventilation"
+      },
+      {
+        "id": "d",
+        "text": "Placement blocking fire department access routes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Cylinder storage practices under NFPA 58 limit quantities indoors, require securing, and protect against physical damage.",
+    "distractorExplanations": {
+      "b": "Exit corridor storage blocks egress and increases risk.",
+      "c": "Sealed hot vehicles can overpressure and trap vapors.",
+      "d": "Blocking FD access delays emergency response."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Warehouse rack storage fire risk is most increased when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Steel racking is grounded and bolted per manufacturer instructions"
+      },
+      {
+        "id": "b",
+        "text": "Commodity classification is underestimated and aisle widths or sprinkler design do not match actual storage height and arrangement"
+      },
+      {
+        "id": "c",
+        "text": "Adequate aisle maintenance and sprinkler clearance are maintained"
+      },
+      {
+        "id": "d",
+        "text": "Commodity classification matches tested sprinkler design criteria"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Misclassified commodities or changed storage arrays can exceed sprinkler design limits, leading to uncontrolled fire spread.",
+    "distractorExplanations": {
+      "a": "Maintained aisles and clearance support sprinkler performance.",
+      "c": "Maintained aisles and clearance support sprinkler performance.",
+      "d": "Matching classification to design controls risk appropriately."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "In-rack sprinklers in warehouse storage are provided to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Decorate aisles with red pipe for visibility only"
+      },
+      {
+        "id": "b",
+        "text": "Replace the need for any ceiling sprinkler system"
+      },
+      {
+        "id": "c",
+        "text": "Control or suppress fire within the rack structure where ceiling sprinklers alone may not penetrate storage arrays"
+      },
+      {
+        "id": "d",
+        "text": "Support holiday lighting strings on pallet loads"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "In-rack sprinklers deliver water into rack voids and flue spaces per NFPA 13 design for high-piled and rack storage.",
+    "distractorExplanations": {
+      "a": "Ceiling systems are typically still required in combination designs.",
+      "b": "Ceiling systems are typically still required in combination designs.",
+      "d": "Lighting attachments on loads create ignition and obstruction hazards."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Longitudinal flue spaces in rack storage refer to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Horizontal tunnels under the warehouse floor slab"
+      },
+      {
+        "id": "b",
+        "text": "Office cubicle partitions in the shipping department"
+      },
+      {
+        "id": "c",
+        "text": "Roof skylight arrangements only"
+      },
+      {
+        "id": "d",
+        "text": "Vertical openings along the row length between loads that allow heat venting and sprinkler water penetration"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Flue spaces are critical for rack storage fire control; blocking them with solid loads impairs sprinkler discharge and fire growth venting.",
+    "distractorExplanations": {
+      "a": "Floor slab tunnels are unrelated to rack flue definitions.",
+      "b": "Floor slab tunnels are unrelated to rack flue definitions.",
+      "c": "Office cubicles are not rack flue spaces."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "When warehouse rack storage height increases above the originally designed sprinkler system:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fire protection engineer should reevaluate commodity classification, clearance, and sprinkler design per NFPA 13"
+      },
+      {
+        "id": "b",
+        "text": "No action is needed if aisles remain painted yellow"
+      },
+      {
+        "id": "c",
+        "text": "Solid decking should be added to block all flue spaces"
+      },
+      {
+        "id": "d",
+        "text": "Ceiling sprinklers automatically adapt without review"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Storage array changes can outpace original design; reanalysis ensures adequate density and penetration.",
+    "distractorExplanations": {
+      "b": "Aisles paint color does not validate hydraulic adequacy.",
+      "c": "Blocking flue spaces typically worsens fire spread.",
+      "d": "Sprinklers do not self-adjust; engineering review is required."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Chemical process safeguards such as interlocks and safety instrumented systems (SIS) are intended to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maximize production rate beyond all equipment limits"
+      },
+      {
+        "id": "b",
+        "text": "Automatically move the process to a safe state when critical parameters exceed defined limits"
+      },
+      {
+        "id": "c",
+        "text": "Disable all alarms to reduce nuisance notifications"
+      },
+      {
+        "id": "d",
+        "text": "Replace mechanical integrity and operator training entirely"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Safeguards provide independent protection layers—shutdown, isolation, venting—when sensors detect unsafe conditions.",
+    "distractorExplanations": {
+      "a": "Mechanical integrity and training remain foundational PSM elements.",
+      "c": "Mechanical integrity and training remain foundational PSM elements.",
+      "d": "Exceeding equipment limits contradicts safe state design."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "A pressure relief system on a reactor protects against:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Routine operator shift changes"
+      },
+      {
+        "id": "b",
+        "text": "Minor fluctuations in office HVAC temperature"
+      },
+      {
+        "id": "c",
+        "text": "Overpressure from runaway reactions, blocked outlets, or external fire exposure"
+      },
+      {
+        "id": "d",
+        "text": "Warehouse inventory cycle counting"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Relief devices vent or rupture disks relieve excess pressure to prevent vessel failure during credible upset scenarios.",
+    "distractorExplanations": {
+      "a": "Office HVAC changes do not drive reactor overpressure.",
+      "b": "Office HVAC changes do not drive reactor overpressure.",
+      "d": "Shift changes are operational, not overpressure causes."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Emergency isolation valves in chemical processes should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hidden behind permanent storage to prevent tampering"
+      },
+      {
+        "id": "b",
+        "text": "Welded in the fully open position to save maintenance"
+      },
+      {
+        "id": "c",
+        "text": "Operated only during annual company picnics"
+      },
+      {
+        "id": "d",
+        "text": "Accessible, clearly identified, tested per procedure, and positioned to stop hazardous flow during credible release scenarios"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Isolation valves enable rapid source control during leaks; concealment or welding defeats emergency use.",
+    "distractorExplanations": {
+      "a": "Welding open prevents isolation during emergencies.",
+      "b": "Welding open prevents isolation during emergencies.",
+      "c": "Recreational events are not valve exercise programs."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Layer of Protection Analysis (LOPA) in chemical facilities is used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quantify whether independent protection layers reduce risk to tolerable levels for specific scenarios"
+      },
+      {
+        "id": "b",
+        "text": "Select cafeteria menu items for night shift"
+      },
+      {
+        "id": "c",
+        "text": "Determine marketing slogans for finished products"
+      },
+      {
+        "id": "d",
+        "text": "Replace all mechanical maintenance indefinitely"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "LOPA evaluates initiating events, consequences, and IPL effectiveness with order-of-magnitude risk estimates.",
+    "distractorExplanations": {
+      "b": "Marketing slogans are unrelated to risk quantification.",
+      "c": "Maintenance remains essential for safeguard reliability.",
+      "d": "Food service is outside process safety analysis."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Management of Change (MOC) in PSM-covered processes is required when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "An identical replacement part from the same manufacturer specification is installed"
+      },
+      {
+        "id": "b",
+        "text": "A change affects process chemicals, technology, equipment, or procedures beyond replacement-in-kind"
+      },
+      {
+        "id": "c",
+        "text": "Employees wear a different color uniform without process impact"
+      },
+      {
+        "id": "d",
+        "text": "The parking lot is repaved with the same materials"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "MOC ensures changes are reviewed for safety impacts, documentation updates, and training before implementation.",
+    "distractorExplanations": {
+      "a": "Parking lot paving unrelated to process does not trigger MOC.",
+      "c": "Parking lot paving unrelated to process does not trigger MOC.",
+      "d": "Replacement-in-kind exclusions apply when specifications match."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "An effective MOC review should answer:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only whether the change saves money in the current quarter"
+      },
+      {
+        "id": "b",
+        "text": "Whether social media was notified of the paint color"
+      },
+      {
+        "id": "c",
+        "text": "What could go wrong, what safeguards are needed, who must be trained, and what documents require updating"
+      },
+      {
+        "id": "d",
+        "text": "If the change can bypass all operator review secretly"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "MOC examines safety, health, environmental impacts, and ensures procedures, P&IDs, and training reflect the change.",
+    "distractorExplanations": {
+      "a": "Cost alone does not satisfy safety review requirements.",
+      "b": "Cost alone does not satisfy safety review requirements.",
+      "d": "Secret bypass undermines PSM intent and is prohibited."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "A temporary hose connection bypassing a critical interlock for a weekend trial requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No review if production management verbally agrees"
+      },
+      {
+        "id": "b",
+        "text": "Permanent adoption without documentation if results look good"
+      },
+      {
+        "id": "c",
+        "text": "Immediate removal of the interlock from all future designs without study"
+      },
+      {
+        "id": "d",
+        "text": "Formal MOC authorization with hazard analysis, approval, duration limits, and restoration verification"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Even temporary changes affecting safeguards need documented review and controlled restoration.",
+    "distractorExplanations": {
+      "a": "Verbal agreement alone does not meet MOC requirements.",
+      "b": "Verbal agreement alone does not meet MOC requirements.",
+      "c": "Undocumented permanency skips required safety review."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "If a PHA recommendation is closed by installing a new safeguard, MOC should ensure:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The change is documented, operators trained, and P&IDs and procedures updated before relying on the safeguard"
+      },
+      {
+        "id": "b",
+        "text": "Operators discover the new safeguard only after an incident"
+      },
+      {
+        "id": "c",
+        "text": "Documentation is intentionally omitted to speed startup"
+      },
+      {
+        "id": "d",
+        "text": "Training is deferred indefinitely because the safeguard is automatic"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Closing PHA items through changes ties into MOC—implementation, training, and document control must align.",
+    "distractorExplanations": {
+      "b": "Omitting documentation violates PSM and undermines future reviews.",
+      "c": "Operators must understand automatic safeguards and their limits.",
+      "d": "Post-incident discovery is unacceptable for new protections."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Pre-startup safety review (PSSR) complements MOC by verifying before operation that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the company logo on uniforms is correct"
+      },
+      {
+        "id": "b",
+        "text": "Construction and changes meet design, safeguards are functional, procedures are ready, and training is complete"
+      },
+      {
+        "id": "c",
+        "text": "Production may begin without checking relief devices"
+      },
+      {
+        "id": "d",
+        "text": "Emergency plans may remain outdated until the first drill next year"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "PSSR confirms readiness—equipment installed correctly, safety systems tested, and personnel prepared.",
+    "distractorExplanations": {
+      "a": "Outdated emergency plans leave known gaps at startup.",
+      "c": "Outdated emergency plans leave known gaps at startup.",
+      "d": "Uniform logos are unrelated to safety readiness."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "An emergency shutdown (ESD) system in a chemical plant differs from routine operational shutdown because ESD:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gradually optimizes product quality over several hours"
+      },
+      {
+        "id": "b",
+        "text": "Schedules maintenance for next fiscal quarter only"
+      },
+      {
+        "id": "c",
+        "text": "Rapidly places the process in a safe state in response to abnormal conditions without normal sequencing delays"
+      },
+      {
+        "id": "d",
+        "text": "Adjusts office lighting based on occupancy sensors"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "ESD prioritizes hazard mitigation—stopping feeds, isolating equipment, venting pressure—over production continuity.",
+    "distractorExplanations": {
+      "a": "Quality optimization is operational, not emergency safety.",
+      "b": "Quality optimization is operational, not emergency safety.",
+      "d": "Office lighting controls are building automation, not process ESD."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "For warehouse rack storage of Group A plastics in cartons, fire protection design should reference:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the forklift paint color in the loading dock"
+      },
+      {
+        "id": "b",
+        "text": "Residential bedroom furniture placement guides"
+      },
+      {
+        "id": "c",
+        "text": "Swimming pool chemical test kit instructions"
+      },
+      {
+        "id": "d",
+        "text": "NFPA 13 commodity classification and storage arrangement criteria for uncartoned/cartoned plastics"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Group A plastics present high heat release; NFPA 13 classification drives sprinkler density, K-factor, and in-rack needs.",
+    "distractorExplanations": {
+      "a": "Residential furniture guides do not govern warehouse rack plastics.",
+      "b": "Residential furniture guides do not govern warehouse rack plastics.",
+      "c": "Pool test kits are unrelated to storage classification."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Construction site fire watch responsibilities under NFPA 241 include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Monitoring hot work areas, maintaining extinguishers accessible, and notifying the FPPM of unsafe conditions"
+      },
+      {
+        "id": "b",
+        "text": "Approving structural engineering calculations"
+      },
+      {
+        "id": "c",
+        "text": "Authorizing payroll for all trades"
+      },
+      {
+        "id": "d",
+        "text": "Disabling fire alarms to prevent noise complaints"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fire watch supports the FPPM by observing ignition hazards during and after hot work and maintaining initial attack capability.",
+    "distractorExplanations": {
+      "b": "Payroll authorization is outside fire watch duties.",
+      "c": "Disabling alarms removes critical life-safety notification.",
+      "d": "Structural calculations are engineering design tasks."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Integrating PHA, MOC, and emergency planning best ensures that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Each program operates in isolation without document sharing"
+      },
+      {
+        "id": "b",
+        "text": "Identified hazards have safeguards, changes are reviewed before implementation, and responders know current process risks"
+      },
+      {
+        "id": "c",
+        "text": "Emergency plans never reference chemical inventories"
+      },
+      {
+        "id": "d",
+        "text": "PHA findings can be ignored if production deadlines are tight"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Linked programs maintain current risk understanding—from analysis through changes to response planning.",
+    "distractorExplanations": {
+      "a": "Isolation prevents responders from knowing current hazards.",
+      "c": "Isolation prevents responders from knowing current hazards.",
+      "d": "Plans must reflect actual chemicals and scenarios on site."
+    },
+    "difficulty": "hard"
+  }
+]

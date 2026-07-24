@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "ASHRAE BEMP certification primarily validates competency in:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Building energy modeling software, model quality, calibration, and results interpretation"
+      },
+      {
+        "id": "b",
+        "text": "Refrigerant recovery and EPA Section 608 certification only"
+      },
+      {
+        "id": "c",
+        "text": "Structural steel connection design exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Elevator traffic simulation without energy analysis"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "BEMP tests modeling proficiency across inputs, simulation, calibration, and reporting per the BEMP exam blueprint.",
+    "distractorExplanations": {
+      "b": "Refrigerant handling is a separate credential domain.",
+      "c": "Structural design is outside BEMP scope.",
+      "d": "BEMP focuses on whole-building energy simulation."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "In a whole-building energy model, the weather file (EPW/TMY) primarily supplies:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hourly dry-bulb temperature, humidity, solar radiation, and wind data for the simulation year"
+      },
+      {
+        "id": "b",
+        "text": "Only average monthly utility rates without climate data"
+      },
+      {
+        "id": "c",
+        "text": "Occupant names and workstation assignments"
+      },
+      {
+        "id": "d",
+        "text": "Structural load combinations for seismic design"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Weather files drive HVAC loads, solar gains, and free-cooling availability in simulation engines.",
+    "distractorExplanations": {
+      "b": "Tariffs are separate economic inputs.",
+      "c": "Occupancy is modeled via schedules, not weather files.",
+      "d": "Structural loads are unrelated to energy weather files."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "When calibrating an existing-building energy model to utility data, a common acceptance criterion is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Monthly or annual simulated energy within an agreed tolerance (often ±5–15%) of billed consumption after normalization"
+      },
+      {
+        "id": "b",
+        "text": "Exact match to the penny for every fuel type every month"
+      },
+      {
+        "id": "c",
+        "text": "No comparison to utility bills is ever needed"
+      },
+      {
+        "id": "d",
+        "text": "Only peak demand matching with no energy total review"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ASHRAE and industry practice use tolerance bands on normalized utility data to judge model calibration quality.",
+    "distractorExplanations": {
+      "b": "Perfect monthly agreement is rarely achievable or required.",
+      "c": "Calibration requires measured consumption comparison.",
+      "d": "Calibration typically addresses energy totals and often demand."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "ASHRAE Standard 90.1 Appendix G baseline models for rating compliance are typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A minimally compliant reference building modeled with prescribed system types and efficiencies"
+      },
+      {
+        "id": "b",
+        "text": "Identical copies of the proposed design with no changes"
+      },
+      {
+        "id": "c",
+        "text": "Hand calculations without simulation software"
+      },
+      {
+        "id": "d",
+        "text": "Based only on architect renderings without geometry"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Appendix G defines baseline assumptions so proposed design performance can be compared for code or LEED paths.",
+    "distractorExplanations": {
+      "b": "Baseline and proposed models differ by Appendix G rules.",
+      "c": "Appendix G uses performance rating via simulation.",
+      "d": "Models require defined geometry and systems."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Zoning a building energy model into thermal blocks should reflect:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Spaces with similar orientation, schedule, internal loads, and HVAC service for accurate load aggregation"
+      },
+      {
+        "id": "b",
+        "text": "Only floor level regardless of exposure or use"
+      },
+      {
+        "id": "c",
+        "text": "Random assignment to minimize file size only"
+      },
+      {
+        "id": "d",
+        "text": "One zone for the entire campus with no differentiation"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Proper zoning balances accuracy and runtime while capturing load diversity and system boundaries.",
+    "distractorExplanations": {
+      "b": "Orientation and use strongly affect loads.",
+      "c": "Zoning must represent physical and operational similarity.",
+      "d": "Oversimplified zoning obscures load diversity and controls."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Internal gains from occupants in energy models are commonly represented using:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sensible and latent heat rates per person combined with occupancy schedules"
+      },
+      {
+        "id": "b",
+        "text": "Fixed 10 kW per person regardless of activity"
+      },
+      {
+        "id": "c",
+        "text": "No internal gains because people do not affect loads"
+      },
+      {
+        "id": "d",
+        "text": "Only lighting power with no metabolic contribution"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ASHRAE and software defaults assign watts/person by activity with time-varying schedules.",
+    "distractorExplanations": {
+      "b": "Metabolic rates vary by activity level; typical values are much lower.",
+      "c": "Occupants add significant sensible and latent gains.",
+      "d": "People add metabolic gains separate from plug and lighting loads."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Infiltration in detailed energy models is often specified as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Effective leakage area, ACH, or crack flow tied to envelope airtightness and pressure difference assumptions"
+      },
+      {
+        "id": "b",
+        "text": "Always zero because modern buildings are perfectly sealed"
+      },
+      {
+        "id": "c",
+        "text": "Only through open windows with no envelope leakage"
+      },
+      {
+        "id": "d",
+        "text": "A fixed 50 ACH for all commercial buildings"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Modelers use blower-door results, codes, or standards to set realistic infiltration inputs.",
+    "distractorExplanations": {
+      "b": "All buildings have some infiltration/exfiltration.",
+      "c": "Envelope infiltration is modeled separately from intentional ventilation.",
+      "d": "50 ACH is unrealistic for typical commercial envelopes."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "When comparing proposed vs baseline energy cost in a LEED energy model, the metric is typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Percentage improvement in cost (or energy) relative to the ASHRAE 90.1 Appendix G baseline"
+      },
+      {
+        "id": "b",
+        "text": "Absolute site EUI only with no baseline reference"
+      },
+      {
+        "id": "c",
+        "text": "Peak cooling tonnage divided by floor area only"
+      },
+      {
+        "id": "d",
+        "text": "Number of HVAC zones in the proposed model"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "LEED and many codes use cost or energy improvement vs a standardized baseline simulation.",
+    "distractorExplanations": {
+      "b": "LEED EA credits compare proposed performance to Appendix G baseline.",
+      "c": "Peak load metrics do not replace cost/energy improvement calculations.",
+      "d": "Zone count is not a compliance metric."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Sensitivity analysis in building energy modeling is used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Identify which input parameters most influence results and quantify uncertainty"
+      },
+      {
+        "id": "b",
+        "text": "Eliminate the need for any calibrated baseline"
+      },
+      {
+        "id": "c",
+        "text": "Replace all HVAC system definitions with defaults"
+      },
+      {
+        "id": "d",
+        "text": "Guarantee utility bills will match exactly next year"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "One-at-a-time or Monte Carlo sensitivity helps prioritize data collection and risk disclosure.",
+    "distractorExplanations": {
+      "b": "Sensitivity complements but does not replace calibration.",
+      "c": "Sensitivity tests parameter variation; it does not remove system detail.",
+      "d": "Sensitivity explores uncertainty; it cannot guarantee future bills."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Lighting power density in a model should align with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Space-type LPD from code tables or design documents, controlled by schedules and daylighting controls where modeled"
+      },
+      {
+        "id": "b",
+        "text": "Maximum connected load of all building equipment combined"
+      },
+      {
+        "id": "c",
+        "text": "Only exterior signage loads"
+      },
+      {
+        "id": "d",
+        "text": "Structural footing sizes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Accurate LPD and control schedules affect both energy and peak demand results.",
+    "distractorExplanations": {
+      "b": "LPD is watts per area for lighting, not total connected load.",
+      "c": "Interior and exterior lighting schedules use space-based LPD.",
+      "d": "Footing design is unrelated to lighting power density."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "A common reason simulated cooling energy exceeds measured data after calibration is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Overstated internal gains, schedules, or supply air temperature assumptions not matching actual operation"
+      },
+      {
+        "id": "b",
+        "text": "Weather file always underpredicts solar gain"
+      },
+      {
+        "id": "c",
+        "text": "Models cannot simulate cooling systems"
+      },
+      {
+        "id": "d",
+        "text": "Utility meters never record cooling energy"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Operational drift, control overrides, and input assumptions are frequent calibration discrepancy sources.",
+    "distractorExplanations": {
+      "b": "Weather files are standardized; operational assumptions often cause divergence.",
+      "c": "Simulation engines model HVAC explicitly.",
+      "d": "Meters capture electricity and fuels used for cooling."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "On-site photovoltaic generation in an annual energy model is typically accounted by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reducing purchased electricity by simulated PV output using site weather and array characteristics"
+      },
+      {
+        "id": "b",
+        "text": "Adding PV kWh to heating energy use"
+      },
+      {
+        "id": "c",
+        "text": "Ignoring PV because renewables are not modellable"
+      },
+      {
+        "id": "d",
+        "text": "Counting PV only in baseline, never in proposed"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Net site energy and cost metrics reflect on-site generation offsetting grid purchases.",
+    "distractorExplanations": {
+      "b": "PV offsets electrical consumption, not heating directly.",
+      "c": "Major tools include PV production models.",
+      "d": "Proposed models include on-site renewables per project scope."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "The BEMP exam passing score published by ASHRAE is approximately:",
+    "options": [
+      {
+        "id": "a",
+        "text": "50 correct out of 100 scored items"
+      },
+      {
+        "id": "b",
+        "text": "69 correct out of 100 scored items (verify current FAQs before scheduling)"
+      },
+      {
+        "id": "c",
+        "text": "100 correct with no pretest items"
+      },
+      {
+        "id": "d",
+        "text": "83 correct out of 120 scored items"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Each ASHRAE credential has its own Angoff-derived pass point; verify at ashrae.org.",
+    "distractorExplanations": {
+      "a": "ASHRAE BEMP pass point is higher than 50%.",
+      "c": "Exams include unscored pretest items; pass is on scored items only.",
+      "d": "83/120 is the BCxP threshold, not BEMP."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Hourly schedules for plug loads in office models should reflect:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Typical weekday/weekend occupancy and equipment use patterns for each space type"
+      },
+      {
+        "id": "b",
+        "text": "Constant maximum load 24/7 all year"
+      },
+      {
+        "id": "c",
+        "text": "Zero plug load because computers use no power"
+      },
+      {
+        "id": "d",
+        "text": "Only holiday schedules with no weekday variation"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Schedule shape strongly affects both annual energy and peak demand predictions.",
+    "distractorExplanations": {
+      "b": "Flat schedules overpredict off-hours consumption.",
+      "c": "Plug loads are a major commercial building end use.",
+      "d": "Weekday operation patterns dominate annual energy."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Envelope U-factor and solar heat gain coefficient inputs should come from:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fenestration and opaque assembly product data, NFRC ratings, or code default tables when as-designed data is unavailable"
+      },
+      {
+        "id": "b",
+        "text": "Random values chosen to match utility bills after simulation"
+      },
+      {
+        "id": "c",
+        "text": "Only carpet color specifications"
+      },
+      {
+        "id": "d",
+        "text": "Structural steel yield strength"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Defensible envelope inputs come from specifications, testing, or recognized default libraries.",
+    "distractorExplanations": {
+      "b": "Inputs should be evidence-based; post-hoc tuning without basis is poor practice.",
+      "c": "Carpet color does not define thermal transmittance.",
+      "d": "Structural properties differ from thermal envelope properties."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "When modeling a VAV system with reheat, a critical input is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Minimum airflow setpoints and reheat coil operation at part load to capture simultaneous heating/cooling penalties"
+      },
+      {
+        "id": "b",
+        "text": "Only supply fan horsepower with no zone controls"
+      },
+      {
+        "id": "c",
+        "text": "Chiller plant cooling tower color"
+      },
+      {
+        "id": "d",
+        "text": "Excluding all zone-level controls from the model"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "VAV reheat models must represent minimum ventilation and terminal reheat to avoid unrealistic savings.",
+    "distractorExplanations": {
+      "b": "Zone minimums and reheat drive significant reheat energy.",
+      "c": "Cosmetic attributes do not affect energy simulation.",
+      "d": "VAV behavior requires zone airflow and reheat logic."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Unmet load hours reported by simulation indicate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hours when zone temperatures could not be maintained within the thermostat deadband under modeled capacity"
+      },
+      {
+        "id": "b",
+        "text": "Hours when the utility company shut off power"
+      },
+      {
+        "id": "c",
+        "text": "Total annual electricity consumption"
+      },
+      {
+        "id": "d",
+        "text": "Number of occupants in the building"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Excessive unmet hours signal undersized equipment or control issues in the model.",
+    "distractorExplanations": {
+      "b": "Unmet hours are a simulation comfort/capacity metric.",
+      "c": "Unmet hours count comfort violations, not kWh.",
+      "d": "Occupancy is a separate schedule input."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "ASHRAE Guideline 14 is often referenced in BEMP practice for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Measurement of energy and demand savings and model calibration uncertainty reporting"
+      },
+      {
+        "id": "b",
+        "text": "Kitchen exhaust hood grease filtration only"
+      },
+      {
+        "id": "c",
+        "text": "Elevator inspection checklists"
+      },
+      {
+        "id": "d",
+        "text": "Refrigerant purity testing procedures"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Guideline 14 provides statistical criteria for calibrated models and savings measurements.",
+    "distractorExplanations": {
+      "b": "Guideline 14 addresses M&V and calibration statistics.",
+      "c": "Elevator codes are unrelated to Guideline 14.",
+      "d": "Refrigerant testing follows EPA and industry standards, not Guideline 14."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Selecting an appropriate baseline HVAC system type under Appendix G requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Following prescriptive system type rules based on building type, climate zone, and fuel availability"
+      },
+      {
+        "id": "b",
+        "text": "Copying the proposed system's brand name into baseline"
+      },
+      {
+        "id": "c",
+        "text": "Always using the highest efficiency chiller available commercially"
+      },
+      {
+        "id": "d",
+        "text": "Omitting HVAC systems from the baseline entirely"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Appendix G system mapping tables standardize baseline assumptions by building and climate.",
+    "distractorExplanations": {
+      "b": "Baseline equipment types are prescribed, not copied from design.",
+      "c": "Baseline efficiencies are defined by standard tables, not best available.",
+      "d": "Baseline models include fully defined HVAC systems."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "A quality control review of an energy model should verify:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Geometry sanity, schedule plausibility, input units, version control, and alignment with design documents"
+      },
+      {
+        "id": "b",
+        "text": "Only the color theme of simulation reports"
+      },
+      {
+        "id": "c",
+        "text": "That no weather file was used"
+      },
+      {
+        "id": "d",
+        "text": "Deletion of all internal gains to simplify results"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Peer review catches unit errors, orientation mistakes, and schedule outliers before results are published.",
+    "distractorExplanations": {
+      "b": "QC focuses on technical accuracy and traceability.",
+      "c": "Weather files are required for dynamic simulation.",
+      "d": "Removing internal gains would distort load predictions."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Bin analysis of hourly simulation output helps modelers:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Relate energy use to temperature bins to explain weather sensitivity and validate trends"
+      },
+      {
+        "id": "b",
+        "text": "Design structural foundations for high-rise buildings"
+      },
+      {
+        "id": "c",
+        "text": "Calculate refrigerant charge without measurements"
+      },
+      {
+        "id": "d",
+        "text": "Replace all HVAC sizing calculations"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Plotting kWh vs outdoor temperature reveals heating/cooling balance and calibration alignment.",
+    "distractorExplanations": {
+      "b": "Bin analysis is an energy post-processing technique.",
+      "c": "Refrigerant charge requires field protocols, not bin analysis.",
+      "d": "Bin analysis supports interpretation; it does not replace sizing."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "When documenting model assumptions for a client report, BEMP best practice includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A clear table of key inputs, data sources, software version, and known limitations"
+      },
+      {
+        "id": "b",
+        "text": "Hiding all assumptions so results cannot be questioned"
+      },
+      {
+        "id": "c",
+        "text": "Reporting only a single annual kWh number with no context"
+      },
+      {
+        "id": "d",
+        "text": "Deleting prior model versions from the project record"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Documented assumptions enable third-party review and future updates.",
+    "distractorExplanations": {
+      "b": "Transparency is required for defensible consulting deliverables.",
+      "c": "Clients need traceability to inputs and methods.",
+      "d": "Version history supports audit trails."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Modeling district energy or campus steam supply typically requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Defining purchased utility rates, plant efficiency or allocation method, and boundary conditions for site vs source energy"
+      },
+      {
+        "id": "b",
+        "text": "Assuming free infinite steam with no metering"
+      },
+      {
+        "id": "c",
+        "text": "Ignoring all thermal losses in distribution"
+      },
+      {
+        "id": "d",
+        "text": "Modeling only electrical loads with no thermal plants"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Site/source energy reporting depends on how purchased district energy is characterized.",
+    "distractorExplanations": {
+      "b": "District systems have measured or allocated energy costs.",
+      "c": "Distribution losses affect site and source energy accounting.",
+      "d": "District steam/chilled water must be represented at boundaries."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Pretest items on the ASHRAE BEMP exam are:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Always the first 15 questions marked in the candidate guide"
+      },
+      {
+        "id": "b",
+        "text": "Optional bonus questions that raise the score above 100%"
+      },
+      {
+        "id": "c",
+        "text": "Unidentified questions that do not count toward the passing score"
+      },
+      {
+        "id": "d",
+        "text": "Only field-experience essays"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Most ASHRAE exams embed unscored pretest items throughout the form.",
+    "distractorExplanations": {
+      "a": "Pretest items are not identified to candidates during the exam.",
+      "b": "Pretest items are unscored and not bonus points.",
+      "d": "BEMP uses multiple-choice items, including unscored pretest questions."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "bemp-modeling",
+    "prompt": "Comparing multiple ECM scenarios in a single model file is best done by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Using parametric runs or separate cases with consistent weather, schedules, and calibration baseline"
+      },
+      {
+        "id": "b",
+        "text": "Changing weather files between ECMs to maximize savings appearance"
+      },
+      {
+        "id": "c",
+        "text": "Adjusting occupancy to zero for all ECMs except the preferred one"
+      },
+      {
+        "id": "d",
+        "text": "Running each ECM in a different software without documenting differences"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Isolated ECM runs against a calibrated base case produce defensible savings estimates.",
+    "distractorExplanations": {
+      "b": "ECM comparisons require consistent weather and base assumptions.",
+      "c": "Inconsistent schedules invalidate comparisons.",
+      "d": "Comparisons should be methodologically consistent and documented."
+    },
+    "difficulty": "medium"
+  }
+]

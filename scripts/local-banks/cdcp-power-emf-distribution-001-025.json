@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Power Usage Effectiveness (PUE) is calculated as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Total facility energy divided by IT equipment energy"
+      },
+      {
+        "id": "b",
+        "text": "IT equipment energy divided by total facility energy"
+      },
+      {
+        "id": "c",
+        "text": "Cooling energy only divided by UPS losses"
+      },
+      {
+        "id": "d",
+        "text": "Generator fuel gallons divided by rack count"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "PUE compares all facility energy to energy delivered to IT load; values closer to 1.0 indicate higher efficiency.",
+    "distractorExplanations": {
+      "b": "This inverts the formula (that ratio is sometimes called DCiE).",
+      "c": "PUE includes all facility loads, not cooling alone.",
+      "d": "Fuel volume is not the PUE definition."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "A 2N UPS configuration at the module level means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Two independent UPS systems each capable of carrying the full load"
+      },
+      {
+        "id": "b",
+        "text": "One UPS with extra batteries only"
+      },
+      {
+        "id": "c",
+        "text": "Two UPS modules each sized to 50% with no independence"
+      },
+      {
+        "id": "d",
+        "text": "A single rectifier with two display panels"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "2N provides full redundancy—either path can support the entire load independently.",
+    "distractorExplanations": {
+      "b": "Extra batteries on one system is N+1 battery strings, not 2N UPS.",
+      "c": "50% modules without independence is N+1, not 2N.",
+      "d": "Displays do not create redundancy."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "An automatic transfer switch (ATS) between utility and generator:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Detects utility failure and starts generator transfer within designed time limits"
+      },
+      {
+        "id": "b",
+        "text": "Replaces the need for any UPS"
+      },
+      {
+        "id": "c",
+        "text": "Synchronizes IT software patches"
+      },
+      {
+        "id": "d",
+        "text": "Eliminates grounding requirements"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ATS logic initiates engine start and transfers load to emergency power on outage.",
+    "distractorExplanations": {
+      "b": "UPS still bridges transfer and provides ride-through for sensitive loads.",
+      "c": "ATS is electrical switching, not IT patching.",
+      "d": "Grounding remains mandatory."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Static transfer switch (STS) at rack or row level is used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Transfer between two AC sources in milliseconds to maintain dual-fed equipment uptime"
+      },
+      {
+        "id": "b",
+        "text": "Convert DC to fiber optic signals"
+      },
+      {
+        "id": "c",
+        "text": "Measure humidity only"
+      },
+      {
+        "id": "d",
+        "text": "Replace diesel generators"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "STS enables fast A/B source switching for dual-corded IT equipment.",
+    "distractorExplanations": {
+      "b": "STS is AC power switching, not media conversion.",
+      "c": "Humidity is environmental monitoring.",
+      "d": "Generators provide long-duration backup, not rack STS."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Harmonic distortion from non-linear IT loads can cause:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Transformer heating, neutral conductor overload, and nuisance breaker trips"
+      },
+      {
+        "id": "b",
+        "text": "Improved power factor without side effects"
+      },
+      {
+        "id": "c",
+        "text": "Automatic elimination of UPS losses"
+      },
+      {
+        "id": "d",
+        "text": "Increased power quality with no mitigation needed"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Harmonics increase heating and may require filters or K-rated transformers.",
+    "distractorExplanations": {
+      "b": "Non-linear loads typically worsen power factor and harmonics.",
+      "c": "UPS losses remain.",
+      "d": "Mitigation is often needed in dense IT loads."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "N+1 redundancy in a UPS plant means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "One additional module beyond what is required to support the load"
+      },
+      {
+        "id": "b",
+        "text": "No spare capacity under any failure"
+      },
+      {
+        "id": "c",
+        "text": "Twice the load capacity with both paths always loaded 100%"
+      },
+      {
+        "id": "d",
+        "text": "Only one PDU in the entire facility"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "N+1 adds one redundant unit so a single failure still leaves N modules to carry load.",
+    "distractorExplanations": {
+      "b": "N+1 explicitly provides spare capacity.",
+      "c": "2N is full duplication; N+1 is modular spare.",
+      "d": "PDU count is downstream of UPS redundancy."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Lead-acid VRLA batteries in UPS strings require:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Periodic impedance testing, temperature monitoring, and replacement at end of design life"
+      },
+      {
+        "id": "b",
+        "text": "No maintenance because they are sealed forever"
+      },
+      {
+        "id": "c",
+        "text": "Daily watering like flooded cells in all cases"
+      },
+      {
+        "id": "d",
+        "text": "Operation above 50°C for best life"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "VRLA life is sensitive to temperature and requires proactive replacement planning.",
+    "distractorExplanations": {
+      "b": "Batteries degrade and must be maintained/replaced.",
+      "c": "VRLA are valve-regulated; watering differs from flooded types.",
+      "d": "High temperatures shorten battery life."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "A PDU (Power Distribution Unit) at the rack typically provides:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Branch circuit breakers and outlets feeding IT equipment from upstream feeders"
+      },
+      {
+        "id": "b",
+        "text": "Chilled water to servers"
+      },
+      {
+        "id": "c",
+        "text": "Fiber patch panels only"
+      },
+      {
+        "id": "d",
+        "text": "Fire suppression agent storage"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "PDUs distribute power at the rack with monitoring and breaker granularity.",
+    "distractorExplanations": {
+      "b": "Cooling is separate infrastructure.",
+      "c": "Fiber patching is network, not PDU function.",
+      "d": "Suppression agents are stored in fire systems."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Intelligent rack PDUs with metering enable:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Per-outlet or per-phase kW tracking for capacity and billing"
+      },
+      {
+        "id": "b",
+        "text": "Elimination of all load balancing"
+      },
+      {
+        "id": "c",
+        "text": "Automatic software coding"
+      },
+      {
+        "id": "d",
+        "text": "Removal of overcurrent protection"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Metered PDUs support capacity management, chargeback, and alarm thresholds.",
+    "distractorExplanations": {
+      "b": "Load balancing across phases still matters.",
+      "c": "PDUs do not write software.",
+      "d": "Overcurrent protection remains required."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Three-phase Wye (Y) distribution at 400/230 V is common in EU facilities because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "It provides 230 V line-to-neutral for single-phase loads and 400 V line-to-line for three-phase loads"
+      },
+      {
+        "id": "b",
+        "text": "It eliminates the need for grounding"
+      },
+      {
+        "id": "c",
+        "text": "It removes all harmonic content"
+      },
+      {
+        "id": "d",
+        "text": "It is DC-only distribution"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Wye systems deliver both line-to-line and line-to-neutral voltages for mixed loads.",
+    "distractorExplanations": {
+      "b": "Wye includes a neutral and still requires grounding.",
+      "c": "Harmonics still exist with non-linear loads.",
+      "d": "This is AC distribution."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Generator paralleling with utility (islanded operation) requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Synchronization of voltage, frequency, and phase angle before closing the paralleling breaker"
+      },
+      {
+        "id": "b",
+        "text": "Closing breakers randomly without sync checks"
+      },
+      {
+        "id": "c",
+        "text": "Disconnecting all grounding permanently"
+      },
+      {
+        "id": "d",
+        "text": "Operating IT without UPS"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Out-of-phase paralleling can damage equipment; sync checks are mandatory.",
+    "distractorExplanations": {
+      "b": "Unsynchronized closing causes severe fault currents.",
+      "c": "Grounding schemes must follow code during parallel operation.",
+      "d": "UPS may still protect IT during transitions."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Earth grounding and bonding in a data centre aim to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maintain equipotential bonding and safe fault current paths"
+      },
+      {
+        "id": "b",
+        "text": "Float all neutrals without reference"
+      },
+      {
+        "id": "c",
+        "text": "Isolate all racks from any ground reference"
+      },
+      {
+        "id": "d",
+        "text": "Replace surge protective devices"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Effective grounding limits touch potential and supports protective device operation.",
+    "distractorExplanations": {
+      "b": "Systems require defined ground references.",
+      "c": "Racks bond to the grounding system.",
+      "d": "SPD complement grounding; they do not replace it."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "EMF (electromagnetic fields) management near sensitive areas may involve:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Separation distances, shielding, and routing of high-current cables"
+      },
+      {
+        "id": "b",
+        "text": "Ignoring cable routing because EMF does not exist"
+      },
+      {
+        "id": "c",
+        "text": "Placing all power cables on top of unshielded fiber without separation"
+      },
+      {
+        "id": "d",
+        "text": "Increasing harmonic distortion intentionally"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Physical separation and shielding reduce induced noise on signal cabling.",
+    "distractorExplanations": {
+      "b": "EMF is real around current-carrying conductors.",
+      "c": "Poor separation can induce noise on data circuits.",
+      "d": "Harmonics worsen EMI environments."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "A busway (busbar) distribution system advantages include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Flexible tap-off points and high ampacity for row power"
+      },
+      {
+        "id": "b",
+        "text": "Elimination of all electrical codes"
+      },
+      {
+        "id": "c",
+        "text": "No need for overcurrent coordination"
+      },
+      {
+        "id": "d",
+        "text": "Use only in residential kitchens"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Busway supports scalable tap-offs along the data hall length.",
+    "distractorExplanations": {
+      "b": "Busway must comply with electrical codes.",
+      "c": "Coordination studies still apply.",
+      "d": "Busway is industrial/data centre equipment."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Transformer step-down from medium voltage to low voltage is used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deliver utilizable voltage levels to UPS and distribution gear closer to load"
+      },
+      {
+        "id": "b",
+        "text": "Increase voltage for rack outlets to 11 kV"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate all losses"
+      },
+      {
+        "id": "d",
+        "text": "Replace diesel storage tanks"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Site transformers adapt utility MV to facility LV distribution.",
+    "distractorExplanations": {
+      "b": "Rack-level voltages are low voltage standards.",
+      "c": "Transformers have inherent losses.",
+      "d": "Fuel storage is generator-related."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Power factor correction capacitors must be applied cautiously in data centres because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Harmonic resonance with non-linear loads can cause overheating and failures"
+      },
+      {
+        "id": "b",
+        "text": "Capacitors always destroy UPS systems instantly"
+      },
+      {
+        "id": "c",
+        "text": "Data centres have no reactive power"
+      },
+      {
+        "id": "d",
+        "text": "Capacitors replace batteries in UPS strings"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Engineering studies are needed to avoid resonance with harmonics from IT rectifiers.",
+    "distractorExplanations": {
+      "b": "Properly engineered PFC can be beneficial; issues arise with poor design.",
+      "c": "Facilities still have reactive components.",
+      "d": "UPS batteries serve a different function."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Dual-corded servers connected to A and B PDUs:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Allow maintenance on one power path while the other feeds the load"
+      },
+      {
+        "id": "b",
+        "text": "Require both cords on the same breaker"
+      },
+      {
+        "id": "c",
+        "text": "Disable redundant power supplies internally"
+      },
+      {
+        "id": "d",
+        "text": "Must share one STS output"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Dual cords align with A/B feeds for concurrent maintenance and failover.",
+    "distractorExplanations": {
+      "b": "Same breaker defeats redundancy.",
+      "c": "Dual PSU servers use both inputs for redundancy.",
+      "d": "Separate feeds should remain independent unless STS design intends switching."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Battery monitoring systems (BMS) for UPS banks typically track:",
+    "options": [
+      {
+        "id": "a",
+        "text": "String voltage, impedance, temperature, and runtime estimates"
+      },
+      {
+        "id": "b",
+        "text": "Only paint color on cabinets"
+      },
+      {
+        "id": "c",
+        "text": "Cafeteria inventory"
+      },
+      {
+        "id": "d",
+        "text": "Software Git commits"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Trending battery parameters predicts failures and validates runtime capacity.",
+    "distractorExplanations": {
+      "b": "Cosmetic attributes are irrelevant.",
+      "c": "Cafeteria inventory is unrelated.",
+      "d": "Version control is IT operations."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "A static UPS (double-conversion) continuously:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rectifies AC to DC and inverts back to regulated AC for the load"
+      },
+      {
+        "id": "b",
+        "text": "Passes raw utility directly with no conditioning in normal mode"
+      },
+      {
+        "id": "c",
+        "text": "Operates only when generators are online"
+      },
+      {
+        "id": "d",
+        "text": "Provides cooling water to CRAHs"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Double-conversion UPS isolates load from utility disturbances.",
+    "distractorExplanations": {
+      "b": "That describes line-interactive or passive standby topologies.",
+      "c": "UPS runs on utility normally.",
+      "d": "Cooling is separate."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Line-interactive UPS topology differs from double-conversion by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Regulating voltage with a transformer/tap changer while normally passing utility through"
+      },
+      {
+        "id": "b",
+        "text": "Always inverting 100% of load power continuously"
+      },
+      {
+        "id": "c",
+        "text": "Having no batteries"
+      },
+      {
+        "id": "d",
+        "text": "Operating only on 48 V DC racks"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Line-interactive designs boost/buck utility with limited conversion losses in normal mode.",
+    "distractorExplanations": {
+      "b": "Continuous inversion is double-conversion behavior.",
+      "c": "Line-interactive units include batteries.",
+      "d": "Topology is not defined by 48 V racks only."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Emergency power off (EPO) buttons are controversial because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "They can drop all IT load instantly for life safety but risk broad unplanned outages if misused"
+      },
+      {
+        "id": "b",
+        "text": "They improve PUE automatically"
+      },
+      {
+        "id": "c",
+        "text": "They are required at every rack outlet"
+      },
+      {
+        "id": "d",
+        "text": "They synchronize generators without controls"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "EPO supports firefighter safety but must be designed to avoid accidental activation.",
+    "distractorExplanations": {
+      "b": "EPO does not improve efficiency.",
+      "c": "EPO is facility-level, not per outlet.",
+      "d": "Generator sync uses dedicated controls."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Fuel storage for diesel generators must address:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tank capacity for required runtime, spill containment, and periodic fuel polishing"
+      },
+      {
+        "id": "b",
+        "text": "Storing fuel inside hot aisles"
+      },
+      {
+        "id": "c",
+        "text": "Ignoring microbial contamination indefinitely"
+      },
+      {
+        "id": "d",
+        "text": "Using gasoline in diesel engines for efficiency"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Reliable generation depends on fuel quality, containment, and sized storage.",
+    "distractorExplanations": {
+      "b": "Fuel in IT spaces is prohibited.",
+      "c": "Diesel degrades and needs testing/treatment.",
+      "d": "Wrong fuel damages engines."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "K-rated transformers are specified in data centres to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Handle harmonic currents from non-linear loads without excessive heating"
+      },
+      {
+        "id": "b",
+        "text": "Eliminate all electrical safety codes"
+      },
+      {
+        "id": "c",
+        "text": "Operate without neutral conductors"
+      },
+      {
+        "id": "d",
+        "text": "Provide chilled water pumping"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "K-factor ratings indicate tolerance to harmonic loading.",
+    "distractorExplanations": {
+      "b": "Codes still apply.",
+      "c": "Neutrals are often required for wye systems.",
+      "d": "Pumping is mechanical scope."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Rotary UPS (DRUPS) combines:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A motor-generator set with kinetic energy storage for ride-through"
+      },
+      {
+        "id": "b",
+        "text": "Only solar panels"
+      },
+      {
+        "id": "c",
+        "text": "Fire sprinklers"
+      },
+      {
+        "id": "d",
+        "text": "Network switches"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "DRUPS use flywheel/motor-generator inertia to bridge outages.",
+    "distractorExplanations": {
+      "b": "Solar is separate generation.",
+      "c": "Fire systems are unrelated.",
+      "d": "Network gear is not UPS."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Power chain single-line diagrams document:",
+    "options": [
+      {
+        "id": "a",
+        "text": "From utility through transformers, UPS, distribution, to rack PDUs"
+      },
+      {
+        "id": "b",
+        "text": "Only cafeteria seating"
+      },
+      {
+        "id": "c",
+        "text": "Employee vacation schedules"
+      },
+      {
+        "id": "d",
+        "text": "Desktop wallpaper choices"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Single-line diagrams are essential for operations, troubleshooting, and design review.",
+    "distractorExplanations": {
+      "b": "Non-technical information is out of scope.",
+      "c": "HR schedules are unrelated.",
+      "d": "Wallpaper is irrelevant."
+    },
+    "difficulty": "easy"
+  }
+]

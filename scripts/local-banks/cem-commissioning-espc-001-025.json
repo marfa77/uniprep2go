@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "IPMVP Option B is characterized by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Retrofit isolation with utility-grade measurement of energy use at the ECM level"
+      },
+      {
+        "id": "b",
+        "text": "Whole-facility utility bill comparison only with no submeters"
+      },
+      {
+        "id": "c",
+        "text": "Computer simulation alone without any field measurement"
+      },
+      {
+        "id": "d",
+        "text": "No baseline period required before implementation"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Option B uses periodic or continuous measurements at specific retrofits to quantify savings.",
+    "distractorExplanations": {
+      "b": "Whole-building only is closer to Option C.",
+      "c": "Option D emphasizes simulation; Option B requires measurement.",
+      "d": "All IPMVP options require a baseline concept."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "In an Energy Savings Performance Contract (ESPC), the ESCO typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Designs, installs, and often guarantees savings financed through future energy cost reductions"
+      },
+      {
+        "id": "b",
+        "text": "Provides only landscaping services with no performance risk"
+      },
+      {
+        "id": "c",
+        "text": "Eliminates all owner review of measures"
+      },
+      {
+        "id": "d",
+        "text": "Requires no measurement and verification plan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ESCOs assume implementation and performance risk per contract, repaid via savings stream.",
+    "distractorExplanations": {
+      "b": "Landscaping is outside ESPC scope.",
+      "c": "Owners retain approval and oversight roles.",
+      "d": "M&V is essential to verify savings."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "The commissioning authority (CxA) on a new construction project should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Review design, witness testing, and verify systems operate per owner's project requirements"
+      },
+      {
+        "id": "b",
+        "text": "Approve change orders without owner knowledge only"
+      },
+      {
+        "id": "c",
+        "text": "Skip functional performance testing to save time"
+      },
+      {
+        "id": "d",
+        "text": "Replace the mechanical contractor entirely"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Independent or qualified CxA verifies design intent through plans review, submittals, and testing.",
+    "distractorExplanations": {
+      "b": "Change orders follow owner/contract process.",
+      "c": "Functional testing is core commissioning.",
+      "d": "CxA oversees verification; contractor executes work."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "The design intent document in commissioning:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Translates owner requirements into measurable performance criteria for systems"
+      },
+      {
+        "id": "b",
+        "text": "Lists only contractor phone numbers"
+      },
+      {
+        "id": "c",
+        "text": "Replaces all O&M manuals permanently"
+      },
+      {
+        "id": "d",
+        "text": "Eliminates the need for any test scripts"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Design intent bridges OPR/BOD to verifiable parameters used during functional testing.",
+    "distractorExplanations": {
+      "b": "Contact lists are not design intent.",
+      "c": "O&M manuals are separate deliverables.",
+      "d": "Test scripts implement verification against intent."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "Functional performance testing (FPT) demonstrates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Systems and assemblies operate according to sequences and setpoints under simulated conditions"
+      },
+      {
+        "id": "b",
+        "text": "Only that equipment nameplates are readable"
+      },
+      {
+        "id": "c",
+        "text": "Structural wind tunnel results exclusively"
+      },
+      {
+        "id": "d",
+        "text": "That no training is needed for operators"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "FPT validates controls interlocks, safeties, and modes beyond simple startup.",
+    "distractorExplanations": {
+      "b": "Nameplate review is insufficient alone.",
+      "c": "Structural testing is separate scope.",
+      "d": "Training is a commissioning deliverable."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "Retrocommissioning (RCx) is best defined as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Systematic process to improve performance of existing buildings whose systems were not commissioned or have drifted"
+      },
+      {
+        "id": "b",
+        "text": "Commissioning applied only before original construction begins"
+      },
+      {
+        "id": "c",
+        "text": "Replacement of all equipment on day one without testing"
+      },
+      {
+        "id": "d",
+        "text": "Elimination of all BAS trending"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "RCx uses documentation review, testing, and control corrections in operating buildings.",
+    "distractorExplanations": {
+      "b": "Pre-construction is new construction Cx.",
+      "c": "RCx focuses on existing systems, not full replacement by default.",
+      "d": "Trending supports RCx analysis."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "A commissioning plan typically includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Scope, schedule, roles, test procedures, and acceptance criteria"
+      },
+      {
+        "id": "b",
+        "text": "Only the cafeteria menu for construction workers"
+      },
+      {
+        "id": "c",
+        "text": "Exclusive focus on carpet colors"
+      },
+      {
+        "id": "d",
+        "text": "No documentation of issues or resolutions"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The plan organizes activities from design through occupancy and warranty.",
+    "distractorExplanations": {
+      "b": "Food service is unrelated.",
+      "c": "Finishes are not the Cx plan focus.",
+      "d": "Issues logs document deficiencies and closure."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "Baseline adjustments in M&V account for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Changes in static factors (e.g., area, shift schedule) that affect energy use independent of ECM performance"
+      },
+      {
+        "id": "b",
+        "text": "Random selection of any year without documentation"
+      },
+      {
+        "id": "c",
+        "text": "Ignoring all occupancy changes forever"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating weather normalization always"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "IPMVP requires documenting adjustments when conditions change so savings remain attributable to ECMs.",
+    "distractorExplanations": {
+      "b": "Adjustments must be justified and documented.",
+      "c": "Occupancy changes may require routine adjustments.",
+      "d": "Weather normalization is often required."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "Guaranteed savings in an ESPC means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The ESCO commits contractually to meet agreed savings targets, often with remedies if shortfalls occur"
+      },
+      {
+        "id": "b",
+        "text": "Savings are estimated with no verification ever"
+      },
+      {
+        "id": "c",
+        "text": "The owner assumes all performance risk exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Utility rates are fixed for 50 years by law automatically"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Guarantees tie payments and remedies to measured or stipulated savings per M&V plan.",
+    "distractorExplanations": {
+      "b": "Verification is required for guarantees.",
+      "c": "ESCO typically shares performance risk.",
+      "d": "Rates change; contracts address risk allocation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "Ongoing commissioning (OCx) differs from one-time RCx because OCx:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uses continuous monitoring and periodic re-testing to maintain performance over time"
+      },
+      {
+        "id": "b",
+        "text": "Never uses BAS data or meters"
+      },
+      {
+        "id": "c",
+        "text": "Eliminates all operator training"
+      },
+      {
+        "id": "d",
+        "text": "Applies only to buildings less than one year old"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "OCx persists beyond a single RCx event using analytics and scheduled checks.",
+    "distractorExplanations": {
+      "b": "Monitoring is central to OCx.",
+      "c": "Training supports sustained performance.",
+      "d": "OCx applies to buildings of any age."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "Testing, adjusting, and balancing (TAB) primarily ensures:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hydronic and air systems deliver design flows and pressures"
+      },
+      {
+        "id": "b",
+        "text": "All architectural finishes meet VOC limits"
+      },
+      {
+        "id": "c",
+        "text": "Elevator traffic studies are complete"
+      },
+      {
+        "id": "d",
+        "text": "Roof warranty is registered"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "TAB verifies distribution performance; commissioning verifies overall system function and sequences.",
+    "distractorExplanations": {
+      "b": "VOC is materials/IEQ scope.",
+      "c": "Elevators are separate trade.",
+      "d": "Roof warranty is construction admin."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "Owner's Project Requirements (OPR) define:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Owner goals for performance, comfort, energy, and operability used to guide design and commissioning"
+      },
+      {
+        "id": "b",
+        "text": "Contractor profit margins exclusively"
+      },
+      {
+        "id": "c",
+        "text": "Only paint colors for lobby walls"
+      },
+      {
+        "id": "d",
+        "text": "Manufacturer stock ticker symbols"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "OPR captures what the owner needs; basis of design shows how the team meets OPR.",
+    "distractorExplanations": {
+      "b": "Financial margins are bid/proposal topics.",
+      "c": "Aesthetics alone do not define OPR.",
+      "d": "Stock symbols are irrelevant."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "A final commissioning report should include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Test results, issues resolved, training provided, and recommendations for O&M"
+      },
+      {
+        "id": "b",
+        "text": "Only unsigned blank pages"
+      },
+      {
+        "id": "c",
+        "text": "Deletion of all test data for privacy without replacement"
+      },
+      {
+        "id": "d",
+        "text": "No reference to design intent or OPR"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The report documents verification outcomes and handoff to operations.",
+    "distractorExplanations": {
+      "b": "Reports must contain verified results.",
+      "c": "Test data supports acceptance.",
+      "d": "OPR/design intent provide context."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "Defining the measurement boundary in M&V means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Specifying which meters and systems are included in savings calculations"
+      },
+      {
+        "id": "b",
+        "text": "Drawing the property line on a site plan only for landscaping"
+      },
+      {
+        "id": "c",
+        "text": "Ignoring any interactive effects between ECMs"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating all baseline data collection"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Clear boundaries prevent double counting and gaps in savings attribution.",
+    "distractorExplanations": {
+      "b": "Property line alone does not define energy boundaries.",
+      "c": "Interactive effects must be considered.",
+      "d": "Baseline data is required."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "Regression models for whole-building M&V typically use:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Utility consumption regressed against weather and other independent variables"
+      },
+      {
+        "id": "b",
+        "text": "Only random number generation without variables"
+      },
+      {
+        "id": "c",
+        "text": "Module color as the sole predictor"
+      },
+      {
+        "id": "d",
+        "text": "Filter MERV as dependent variable for kWh"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Regression baselines normalize consumption to weather for fair pre/post comparison.",
+    "distractorExplanations": {
+      "b": "Models require meaningful variables.",
+      "c": "Module color does not predict building kWh.",
+      "d": "Filter rating is not a standard regression term for utility use."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "Stipulated savings in M&V are:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Savings assigned by agreement without direct measurement of that specific ECM"
+      },
+      {
+        "id": "b",
+        "text": "Always preferred over any measurement per IPMVP in all cases"
+      },
+      {
+        "id": "c",
+        "text": "Illegal in all ESPC contracts nationwide"
+      },
+      {
+        "id": "d",
+        "text": "Identical to Option B isolation metering always"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Stipulated values may be used when measurement is impractical, with justification in the M&V plan.",
+    "distractorExplanations": {
+      "b": "Stipulated savings are allowed with documentation.",
+      "c": "They are used in many contracts.",
+      "d": "Option B uses measured isolation, not stipulated by definition."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "Recommissioning is typically performed:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Periodically after initial commissioning to restore performance as systems change"
+      },
+      {
+        "id": "b",
+        "text": "Only once before design begins and never again"
+      },
+      {
+        "id": "c",
+        "text": "Without any comparison to original design intent"
+      },
+      {
+        "id": "d",
+        "text": "Only on equipment with zero operating hours"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Recommissioning addresses drift, renovations, and operational changes over building life.",
+    "distractorExplanations": {
+      "b": "Buildings need periodic recommissioning.",
+      "c": "Design intent remains a reference.",
+      "d": "Operating hours accumulate over time."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "Commissioning agent independence is important to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Provide objective verification separate from design and construction teams when required by owner or LEED"
+      },
+      {
+        "id": "b",
+        "text": "Ensure the CxA always profits from change orders"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate all owner involvement in testing"
+      },
+      {
+        "id": "d",
+        "text": "Prevent any documentation of deficiencies"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Independence reduces conflicts of interest in identifying issues affecting energy and operability.",
+    "distractorExplanations": {
+      "b": "CxA should not profit from unnecessary changes.",
+      "c": "Owner participates in acceptance.",
+      "d": "Deficiency documentation is essential."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "ESPC financing is often considered off-balance-sheet for public owners when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Structured so the obligation resembles a service payment tied to savings, per applicable accounting rules"
+      },
+      {
+        "id": "b",
+        "text": "The owner pays 100% upfront cash day one always"
+      },
+      {
+        "id": "c",
+        "text": "No third party is involved in any case"
+      },
+      {
+        "id": "d",
+        "text": "M&V is explicitly prohibited"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Accounting treatment depends on contract terms and applicable standards; ESPCs aim to avoid capital budget barriers.",
+    "distractorExplanations": {
+      "b": "ESPCs often minimize upfront capital.",
+      "c": "ESCO is typically involved.",
+      "d": "M&V supports ESPC payment structures."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "Utility incentives tied to retrofits commonly require:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pre- and post-verification, often aligned with IPMVP or program-specific M&V rules"
+      },
+      {
+        "id": "b",
+        "text": "No documentation of baseline conditions"
+      },
+      {
+        "id": "c",
+        "text": "Permanent elimination of all meters"
+      },
+      {
+        "id": "d",
+        "text": "Ignore measure installation dates"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Programs verify savings claims before paying incentives.",
+    "distractorExplanations": {
+      "b": "Documentation is required.",
+      "c": "Meters often support verification.",
+      "d": "Installation timing affects baseline."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "Weather normalization in M&V adjusts consumption so that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Comparisons reflect ECM impacts rather than year-to-year weather differences"
+      },
+      {
+        "id": "b",
+        "text": "Hotter summers automatically prove savings without analysis"
+      },
+      {
+        "id": "c",
+        "text": "Heating degree days are ignored in all climates"
+      },
+      {
+        "id": "d",
+        "text": "Baseline year can be changed monthly without notice"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Normalization uses degree-days or regression so performance is evaluated fairly.",
+    "distractorExplanations": {
+      "b": "Weather alone does not prove savings.",
+      "c": "HDD/CDD are common normalization variables.",
+      "d": "Baseline changes require documented adjustments."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "IPMVP Option C is most appropriate when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Whole-facility or whole-system utility data are used with routine adjustments"
+      },
+      {
+        "id": "b",
+        "text": "Only a single lamp is retrofit with no utility data"
+      },
+      {
+        "id": "c",
+        "text": "No baseline period exists"
+      },
+      {
+        "id": "d",
+        "text": "Simulation replaces all utility bills without calibration"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Option C uses whole-facility metering with adjustments for static factors.",
+    "distractorExplanations": {
+      "b": "Small isolated measures may use Option A or B.",
+      "c": "Baseline is required.",
+      "d": "Option D uses calibrated simulation; Option C uses utility data."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "Calibration intervals for revenue-grade or M&V meters should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Defined in the M&V plan per manufacturer and program requirements"
+      },
+      {
+        "id": "b",
+        "text": "Never performed once installed"
+      },
+      {
+        "id": "c",
+        "text": "Only when meters read zero forever"
+      },
+      {
+        "id": "d",
+        "text": "Ignored if utility bills exist"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Accurate metering underpins defensible savings claims.",
+    "distractorExplanations": {
+      "b": "Calibration maintains accuracy.",
+      "c": "Zero readings indicate failure needing service.",
+      "d": "Bills alone may lack granularity for ECM isolation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "Commissioning handoff to O&M should include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Training, as-built sequences, trend access, and documented setpoints"
+      },
+      {
+        "id": "b",
+        "text": "Deletion of all BAS passwords without replacement"
+      },
+      {
+        "id": "c",
+        "text": "No emergency contact list"
+      },
+      {
+        "id": "d",
+        "text": "Removal of all O&M manuals from site"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Operators need documentation and training to sustain commissioned performance.",
+    "distractorExplanations": {
+      "b": "Credentials must transfer securely to owners.",
+      "c": "Contacts support ongoing support.",
+      "d": "O&M manuals remain on site."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "commissioning-espc",
+    "prompt": "The ESPC performance period typically spans:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Years after construction/implementation when savings are measured and guaranteed"
+      },
+      {
+        "id": "b",
+        "text": "Only the bid submission week"
+      },
+      {
+        "id": "c",
+        "text": "The design charrette day exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Zero years because M&V is optional always"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Performance periods often run 5–15 years depending on contract and measure life.",
+    "distractorExplanations": {
+      "b": "Bid week precedes implementation.",
+      "c": "Charrette is early design.",
+      "d": "M&V continues through performance period."
+    },
+    "difficulty": "medium"
+  }
+]

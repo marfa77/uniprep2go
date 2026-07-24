@@ -1,0 +1,22 @@
+[
+  {
+    "id": "leed-ap-bd-c-readiness-check-sites-water-044",
+    "topicId": "sites-water",
+    "prompt": "A warehouse and distribution center is implementing stormwater management on a 25-acre site with compacted soils, 400,000 sf of roof area, and 300,000 sf of truck and employee parking. The region receives intense summer storms with high peak flows. Which approach most effectively manages peak discharge while providing water quality treatment?",
+    "formula": "$$\\text{Runoff Volume} = \\text{Rainfall} \\times \\text{Area} \\times \\text{Runoff Coefficient}$$",
+    "options": [
+      { "id": "a", "text": "Install underground detention tanks beneath parking areas with controlled release to municipal systems" },
+      { "id": "b", "text": "Create constructed wetlands in perimeter areas with overflow connections to existing drainage infrastructure" },
+      { "id": "c", "text": "Implement a distributed system of bioswales, permeable pavement, and cisterns for roof water collection" },
+      { "id": "d", "text": "Design retention ponds with extended detention and vegetated filter strips along site boundaries" }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Retention ponds with extended detention are sized to attenuate large peak flows from extensive impervious roof and pavement areas, while vegetated filter strips provide pretreatment and water quality benefits before discharge. This combination directly targets both quantity and quality on a high-runoff industrial site.",
+    "distractorExplanations": {
+      "a": "Underground detention helps peak timing but provides limited water quality treatment compared with surface BMPs.",
+      "b": "Perimeter wetlands can treat runoff, but overflow connections suggest limited capacity for intense summer peaks across the full impervious footprint.",
+      "c": "Distributed LID is valuable, but bioswales and cisterns alone may not fully attenuate extreme peak flows from 700,000 sf of impervious area on compacted soils."
+    },
+    "difficulty": "hard"
+  }
+]

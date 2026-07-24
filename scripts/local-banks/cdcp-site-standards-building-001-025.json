@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "site-standards-building",
+    "prompt": "According to TIA-942, a data centre rated Tier III requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Concurrently maintainable infrastructure with planned maintenance paths that avoid service disruption"
+      },
+      {
+        "id": "b",
+        "text": "Only a single path for power and cooling with no redundancy"
+      },
+      {
+        "id": "c",
+        "text": "99.999% uptime without any scheduled maintenance windows"
+      },
+      {
+        "id": "d",
+        "text": "Exclusive use of direct-expansion cooling only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Tier III allows planned maintenance on one path while the other path carries the load (concurrent maintainability).",
+    "distractorExplanations": {
+      "b": "Single-path design aligns with lower tiers, not Tier III.",
+      "c": "Tier IV targets fault tolerance; Tier III does not require 99.999% without maintenance.",
+      "d": "Cooling topology is not defined by tier level alone."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Uptime Institute Tier I is BEST described as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Basic capacity with a single non-redundant path for power and cooling"
+      },
+      {
+        "id": "b",
+        "text": "Fully fault-tolerant with 2N power and cooling at all levels"
+      },
+      {
+        "id": "c",
+        "text": "Concurrently maintainable with redundant components"
+      },
+      {
+        "id": "d",
+        "text": "Geographically distributed active-active sites only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Tier I provides basic capacity without redundant infrastructure paths.",
+    "distractorExplanations": {
+      "b": "Fault tolerance is characteristic of Tier IV.",
+      "c": "Concurrent maintainability defines Tier III.",
+      "d": "Geographic distribution is outside the tier definition."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "EN 50600 classifies availability using Availability Classes. Class 3 MOST closely aligns with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Concurrently maintainable infrastructure with redundant paths"
+      },
+      {
+        "id": "b",
+        "text": "Single path with no redundancy"
+      },
+      {
+        "id": "c",
+        "text": "No formal availability requirements"
+      },
+      {
+        "id": "d",
+        "text": "Exclusive reliance on portable cooling only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "EN 50600 Class 3 supports concurrent maintenance with redundant distribution paths.",
+    "distractorExplanations": {
+      "b": "Single-path designs map to lower availability classes.",
+      "c": "EN 50600 explicitly defines availability classes.",
+      "d": "Cooling equipment type is not the class differentiator."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "When selecting a greenfield data centre site, flood risk assessment should prioritize:",
+    "options": [
+      {
+        "id": "a",
+        "text": "100-year floodplain mapping, drainage, and finished floor elevation above design flood level"
+      },
+      {
+        "id": "b",
+        "text": "Proximity to the lowest point in the watershed for cooling water access"
+      },
+      {
+        "id": "c",
+        "text": "Placement in coastal surge zones if utility power is cheaper"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring hydrology because raised floors eliminate flood risk"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Site selection must account for flood frequency, drainage capacity, and elevating critical floors above design flood levels.",
+    "distractorExplanations": {
+      "b": "Lowest watershed points increase flood exposure.",
+      "c": "Storm surge zones add unacceptable resilience risk.",
+      "d": "Raised floors do not replace site-level flood mitigation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Seismic design for a mission-critical facility typically requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Anchoring racks, cabinets, and heavy equipment per structural and vendor guidelines"
+      },
+      {
+        "id": "b",
+        "text": "Omitting bracing because raised-floor tiles absorb all seismic loads"
+      },
+      {
+        "id": "c",
+        "text": "Mounting UPS modules on casters for rapid relocation during tremors"
+      },
+      {
+        "id": "d",
+        "text": "Increasing floor loading without reviewing slab capacity"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Seismic restraint of IT and infrastructure equipment prevents tip-over and service disruption.",
+    "distractorExplanations": {
+      "b": "Raised floors are not a substitute for equipment anchoring.",
+      "c": "Casters do not provide seismic restraint.",
+      "d": "Load increases require structural verification."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "A raised access floor in a data hall primarily enables:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Underfloor air distribution and/or cable routing with adjustable tile heights"
+      },
+      {
+        "id": "b",
+        "text": "Elimination of all overhead cable tray requirements in every design"
+      },
+      {
+        "id": "c",
+        "text": "Structural support for the building roof without steel beams"
+      },
+      {
+        "id": "d",
+        "text": "Automatic fire suppression without additional detection"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Raised floors support underfloor airflow paths and organized cabling while allowing plenum height tuning.",
+    "distractorExplanations": {
+      "b": "Overhead pathways are still common for fiber and power.",
+      "c": "Raised floors do not replace primary structural framing.",
+      "d": "Suppression systems require separate engineering."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Perforated raised-floor tiles are typically placed:",
+    "options": [
+      {
+        "id": "a",
+        "text": "In cold aisles to deliver conditioned air to IT equipment intakes"
+      },
+      {
+        "id": "b",
+        "text": "In hot aisles to maximize exhaust recirculation"
+      },
+      {
+        "id": "c",
+        "text": "Only in office areas adjacent to the data hall"
+      },
+      {
+        "id": "d",
+        "text": "Randomly to equalize structural loading"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Perforated tiles supply conditioned air into cold aisles where equipment draws intake airflow.",
+    "distractorExplanations": {
+      "b": "Hot aisles collect exhaust; perforated tiles there would short-circuit airflow.",
+      "c": "Perforated tiles are a data-hall cooling delivery element.",
+      "d": "Tile placement follows airflow design, not structural randomization."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Minimum recommended clear height above a standard 42U rack (including service clearance) is MOST often:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sufficient to allow top-of-rack cable management and safe ladder access—often 2.4 m+ clear in design guides"
+      },
+      {
+        "id": "b",
+        "text": "Exactly equal to rack height with zero overhead clearance"
+      },
+      {
+        "id": "c",
+        "text": "Less than 1.5 m to minimize volume for cooling"
+      },
+      {
+        "id": "d",
+        "text": "Unlimited only when using non-raised-floor designs"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Design guides require overhead clearance for cable trays, busway taps, and maintenance access above tall racks.",
+    "distractorExplanations": {
+      "b": "Zero clearance prevents safe installation and service.",
+      "c": "Very low ceilings impede airflow and maintenance.",
+      "d": "Clear height requirements apply regardless of floor type."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Static dissipative floor coverings in a data hall help:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reduce electrostatic charge buildup when personnel walk on the surface"
+      },
+      {
+        "id": "b",
+        "text": "Increase humidity to saturation levels"
+      },
+      {
+        "id": "c",
+        "text": "Replace equipment grounding conductors"
+      },
+      {
+        "id": "d",
+        "text": "Eliminate the need for ESD wrist straps during all work"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Dissipative flooring limits static generation and helps protect sensitive electronics.",
+    "distractorExplanations": {
+      "b": "Flooring does not control humidity setpoints.",
+      "c": "Equipment still requires proper grounding.",
+      "d": "ESD controls may still be required for component handling."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "ISO/IEC 22237 (data centre facilities) emphasizes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Holistic facility design including availability, security, and environmental sustainability"
+      },
+      {
+        "id": "b",
+        "text": "Software-defined networking only"
+      },
+      {
+        "id": "c",
+        "text": "Exclusive use of containerized edge sites"
+      },
+      {
+        "id": "d",
+        "text": "Elimination of physical security controls"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ISO/IEC 22237 provides a structured approach to data centre facility design and operations.",
+    "distractorExplanations": {
+      "b": "SDN is not the scope of the facilities standard.",
+      "c": "The standard applies to varied facility types, not containers only.",
+      "d": "Security is an integral part of the standard."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Live load capacity for a data hall raised floor must account for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Concentrated loads from fully populated racks plus rolling equipment and maintenance traffic"
+      },
+      {
+        "id": "b",
+        "text": "Only the weight of empty cabinets"
+      },
+      {
+        "id": "c",
+        "text": "Wind loads on the exterior facade"
+      },
+      {
+        "id": "d",
+        "text": "Solar gain on the roof exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Raised-floor design loads include rack point loads, rolling loads, and safety factors for operations.",
+    "distractorExplanations": {
+      "b": "Populated racks and rolling loads exceed empty-cabinet weight.",
+      "c": "Wind loads are a building-envelope concern, not raised-floor live load.",
+      "d": "Solar gain affects cooling loads, not floor structural rating."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Cable tray fill ratio is limited primarily to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prevent overheating, maintain bend radii, and allow future cable additions"
+      },
+      {
+        "id": "b",
+        "text": "Maximize tray weight regardless of heat buildup"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate separation between power and data cables in all cases"
+      },
+      {
+        "id": "d",
+        "text": "Avoid labeling because trays are self-documenting"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fill limits protect cable derating, installation quality, and maintainability.",
+    "distractorExplanations": {
+      "b": "Overfilled trays risk thermal and mechanical damage.",
+      "c": "Separation/segregation rules may still apply for power and signal.",
+      "d": "Labeling remains a documentation requirement."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Hot aisle / cold aisle layout aims to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Separate equipment intake (cold) and exhaust (hot) airflow paths to reduce recirculation"
+      },
+      {
+        "id": "b",
+        "text": "Mix supply and return air for uniform room temperature only"
+      },
+      {
+        "id": "c",
+        "text": "Place all perforated tiles in hot aisles"
+      },
+      {
+        "id": "d",
+        "text": "Eliminate the need for blanking panels"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Orienting racks so intakes face cold aisles and exhausts face hot aisles improves cooling efficiency.",
+    "distractorExplanations": {
+      "b": "Mixing intake and exhaust increases recirculation and hot spots.",
+      "c": "Perforated tiles belong in cold aisles for supply air.",
+      "d": "Blanking panels still seal unused rack openings."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Blanking panels in unused rack U-spaces primarily:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Block bypass airflow so conditioned air flows through installed equipment"
+      },
+      {
+        "id": "b",
+        "text": "Increase structural rack weight ratings"
+      },
+      {
+        "id": "c",
+        "text": "Provide fire-rated compartmentation by themselves"
+      },
+      {
+        "id": "d",
+        "text": "Replace cable management arms"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Blanking panels prevent short-circuiting of air through empty spaces, improving cooling effectiveness.",
+    "distractorExplanations": {
+      "b": "They do not change rack structural ratings.",
+      "c": "Fire compartmentation requires engineered systems.",
+      "d": "Cable management is a separate accessory."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Data centre lighting design should provide:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Adequate illuminance for safe work, often with occupancy-based controls for energy savings"
+      },
+      {
+        "id": "b",
+        "text": "Continuous 100% output at all times without controls"
+      },
+      {
+        "id": "c",
+        "text": "UV-rich lighting to sterilize equipment"
+      },
+      {
+        "id": "d",
+        "text": "Lighting levels low enough to eliminate glare by making the hall nearly dark"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Lighting must support maintenance tasks while efficient controls reduce non-IT energy use.",
+    "distractorExplanations": {
+      "b": "Uncontrolled full output wastes energy.",
+      "c": "UV lighting is not a standard data-hall requirement.",
+      "d": "Excessively low light creates safety hazards."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "TIA-942 recommends separate entrance facilities for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Diverse carrier paths to reduce single-point-of-failure on external connectivity"
+      },
+      {
+        "id": "b",
+        "text": "Eliminating all meet-me-room requirements"
+      },
+      {
+        "id": "c",
+        "text": "Combining all carriers into one conduit with no diversity"
+      },
+      {
+        "id": "d",
+        "text": "Restricting fiber to copper-only campus links"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Diverse entrance rooms/paths support resilient external network connectivity.",
+    "distractorExplanations": {
+      "b": "Meet-me areas are part of carrier interconnection design.",
+      "c": "Single conduit creates a shared failure point.",
+      "d": "Fiber is standard for carrier and campus backbone capacity."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "A meet-me room (MMR) in a carrier-neutral facility allows:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Multiple telecommunications carriers to interconnect with tenant or operator networks"
+      },
+      {
+        "id": "b",
+        "text": "Only one carrier with exclusive building access"
+      },
+      {
+        "id": "c",
+        "text": "Storage of flammable cleaning solvents"
+      },
+      {
+        "id": "d",
+        "text": "Unrestricted public access without escort"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "MMRs are controlled spaces where carriers cross-connect into the facility network.",
+    "distractorExplanations": {
+      "b": "Carrier-neutral designs welcome multiple providers.",
+      "c": "Hazardous material storage is prohibited in telecom spaces.",
+      "d": "MMRs require controlled access."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "When planning rack density, weight distribution across raised floor stringers should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use manufacturer load maps and spread heavy loads to avoid localized panel failure"
+      },
+      {
+        "id": "b",
+        "text": "Ignore point loads if total room weight is low"
+      },
+      {
+        "id": "c",
+        "text": "Concentrate all heavy storage racks on a single tile"
+      },
+      {
+        "id": "d",
+        "text": "Rely on carpet tiles instead of rated floor panels"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Point-load limits per panel and stringer must be respected using layout maps and spreading techniques.",
+    "distractorExplanations": {
+      "b": "Localized overload can fail panels even if average load seems acceptable.",
+      "c": "Concentrating load violates raised-floor design limits.",
+      "d": "Carpet tiles are not structural raised-floor panels."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Building orientation and exterior shading can influence data centre performance by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reducing solar heat gain on perimeter walls and supporting free-cooling potential"
+      },
+      {
+        "id": "b",
+        "text": "Eliminating all cooling plant requirements"
+      },
+      {
+        "id": "c",
+        "text": "Increasing infiltration of unfiltered outdoor air into the white space"
+      },
+      {
+        "id": "d",
+        "text": "Replacing humidity control systems"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Solar exposure affects envelope loads and can impact economizer hours and cooling demand.",
+    "distractorExplanations": {
+      "b": "IT and internal loads still require mechanical cooling capacity.",
+      "c": "Uncontrolled infiltration is undesirable for contamination and humidity control.",
+      "d": "Humidity control remains necessary."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Acoustic considerations for a data hall near office space may require:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sound-attenuating construction and equipment isolation to meet noise criteria"
+      },
+      {
+        "id": "b",
+        "text": "Removing all cooling fans to achieve silence"
+      },
+      {
+        "id": "c",
+        "text": "Open floor penetrations to vent noise outdoors unchecked"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring CRAC/CRAH sound power because IT equipment is louder"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fan and airflow noise should be managed with architectural and mechanical mitigation.",
+    "distractorExplanations": {
+      "b": "Fans are required for cooling; mitigation, not removal, is the approach.",
+      "c": "Uncontrolled penetrations compromise environmental separation.",
+      "d": "Mechanical noise must still be evaluated against occupancy adjacency."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "A Tier IV facility differs from Tier III primarily by adding:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fault tolerance so a single fault does not interrupt IT operations"
+      },
+      {
+        "id": "b",
+        "text": "Removal of all redundant components to simplify maintenance"
+      },
+      {
+        "id": "c",
+        "text": "Mandatory use of only 120 V rack PDUs"
+      },
+      {
+        "id": "d",
+        "text": "Elimination of documented maintenance procedures"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Tier IV adds fault tolerance on top of concurrent maintainability.",
+    "distractorExplanations": {
+      "b": "Tier IV increases redundancy, not removes it.",
+      "c": "Voltage choices are design-specific, not tier-defining.",
+      "d": "Maintenance documentation remains essential."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Containment systems (hot or cold aisle) improve cooling efficiency by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reducing mixing of supply and return air streams"
+      },
+      {
+        "id": "b",
+        "text": "Increasing recirculation of hot exhaust into intakes"
+      },
+      {
+        "id": "c",
+        "text": "Blocking all underfloor airflow permanently"
+      },
+      {
+        "id": "d",
+        "text": "Raising supply air temperature above ASHRAE allowable ranges without review"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Containment separates hot and cold airstreams, allowing higher return temperatures and better CRAC/CRAH efficiency.",
+    "distractorExplanations": {
+      "b": "Containment reduces, not increases, harmful recirculation.",
+      "c": "Underfloor supply may still feed contained cold aisles.",
+      "d": "Supply temperatures must remain within equipment environmental classes."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Designing for future expansion in a data hall often includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reserved power, cooling, and floor space with scalable cable pathways"
+      },
+      {
+        "id": "b",
+        "text": "Installing only 30% of designed capacity with no spare pathways"
+      },
+      {
+        "id": "c",
+        "text": "Sealing all spare floor penetrations permanently before operations"
+      },
+      {
+        "id": "d",
+        "text": "Omitting structural review for additional rack rows"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Scalable designs provision spare capacity and pathways for phased growth.",
+    "distractorExplanations": {
+      "b": "Under-provisioning blocks growth.",
+      "c": "Managed spare penetrations support future racks and feeds.",
+      "d": "Structural and load reviews are required for expansions."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Telecommunications grounding (e.g., TIA-607) in a data centre ensures:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A common bonding infrastructure for racks, trays, and protective grounding"
+      },
+      {
+        "id": "b",
+        "text": "Complete electrical isolation from the building ground"
+      },
+      {
+        "id": "c",
+        "text": "Use of paint as the primary bonding medium"
+      },
+      {
+        "id": "d",
+        "text": "Elimination of equipotential bonding in the MMR"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Telecom grounding bonds racks and pathways to limit potential differences and support surge protection.",
+    "distractorExplanations": {
+      "b": "Isolated grounds still tie to the grounding system per standards.",
+      "c": "Paint is not a reliable electrical bond.",
+      "d": "MMR bonding is required for carrier equipment."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "When evaluating a retrofit of an office building into a data centre, the FIRST structural review should assess:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Slab/floor load capacity, vibration, and ceiling height for racks and cooling"
+      },
+      {
+        "id": "b",
+        "text": "Cafeteria seating capacity only"
+      },
+      {
+        "id": "c",
+        "text": "Window tint percentage exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Whether the lobby marble can be polished"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Retrofits must confirm structural capacity and spatial suitability for dense IT loads.",
+    "distractorExplanations": {
+      "b": "Cafeteria capacity is unrelated to data-hall suitability.",
+      "c": "Window tint does not determine structural fitness.",
+      "d": "Lobby finishes are not the primary technical gate."
+    },
+    "difficulty": "easy"
+  }
+]

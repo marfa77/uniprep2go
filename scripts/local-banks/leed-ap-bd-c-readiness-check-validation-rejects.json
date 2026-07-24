@@ -1,0 +1,50 @@
+[
+  {
+    "id": "leed-ap-bd-c-readiness-check-energy-atmosphere-030",
+    "topicId": "energy-atmosphere",
+    "validation": {
+      "chosenOptionId": "a",
+      "matchesMarkedCorrect": false,
+      "issues": [
+        "The marked correct answer (c) is not the most important factor for ensuring energy savings. While compliance with ASHRAE 62.1 is crucial for indoor air quality and is a prerequisite for LEED, it does not directly address the *energy savings* aspect of DCV. DCV's primary purpose is to reduce outdoor air intake (and thus energy for conditioning it) when occupancy is low, while still meeting minimum ventilation requirements. If the system is not calibrated correctly or doesn't respond appropriately to occupancy changes, it won't achieve the intended energy savings, even if it meets minimum outdoor air requirements at all times (which might mean it's over-ventilating when not needed).",
+        "Option (a) directly addresses the core function of DCV for energy savings: accurate measurement of CO2 (calibration) and timely adjustment of ventilation rates (response time) based on actual occupancy. If the sensors are inaccurate or slow, the system will either over-ventilate (wasting energy) or under-ventilate (compromising IAQ), failing to achieve the intended energy savings.",
+        "Option (b) is a safety and life-safety concern, important for the overall building, but not directly related to the *energy savings* aspect of DCV.",
+        "Option (d) is about coordination with natural ventilation, which can contribute to energy savings, but the question specifically asks about the DCV system's intended energy savings, which relies on the accurate functioning of its sensors and controls."
+      ],
+      "approved": false
+    },
+    "question": {
+      "id": "leed-ap-bd-c-readiness-check-energy-atmosphere-030",
+      "examSlug": "leed-ap-bd-c-readiness-check",
+      "topicId": "energy-atmosphere",
+      "prompt": "A LEED BD+C office building project team is implementing demand-controlled ventilation (DCV) using CO2 sensors to modulate outdoor air intake based on actual occupancy. The system is designed to maintain CO2 levels below 1,000 ppm while reducing energy consumption during periods of low occupancy. What is the most important factor for the commissioning agent to verify to ensure the DCV system achieves its intended energy savings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CO2 sensor calibration and response time under varying occupancy conditions"
+        },
+        {
+          "id": "b",
+          "text": "Integration with the fire alarm system for emergency ventilation override"
+        },
+        {
+          "id": "c",
+          "text": "Compliance with minimum outdoor air requirements per ASHRAE 62.1 at all operating conditions"
+        },
+        {
+          "id": "d",
+          "text": "Coordination with operable windows to prevent conflicts with natural ventilation"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The most critical verification is ensuring that the DCV system maintains minimum outdoor air requirements per ASHRAE 62.1 under all operating conditions. While the system should reduce outdoor air during low occupancy periods, it must never fall below the minimum ventilation rates required for health and safety, regardless of CO2 levels.",
+      "distractorExplanations": {
+        "a": "While sensor calibration is important for system performance, ensuring minimum ventilation rates are maintained is the primary safety and code compliance concern.",
+        "b": "Fire alarm integration is important but is typically a separate life safety system requirement rather than the primary energy performance verification.",
+        "d": "Coordination with operable windows is a design consideration but not the most critical factor for verifying energy savings and code compliance."
+      },
+      "difficulty": "medium",
+      "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
+    }
+  }
+]

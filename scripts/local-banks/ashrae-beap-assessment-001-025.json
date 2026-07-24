@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "beap-assessment",
+    "prompt": "BEAP (Building Energy Assessment Professional) certification emphasizes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "On-site assessment of existing building energy performance and improvement recommendations"
+      },
+      {
+        "id": "b",
+        "text": "Only new-construction energy modeling without field visits"
+      },
+      {
+        "id": "c",
+        "text": "Structural peer review of high-rise foundations"
+      },
+      {
+        "id": "d",
+        "text": "BACnet controller programming certification exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "BEAP validates skills in evaluating how buildings use energy and identifying practical improvements.",
+    "distractorExplanations": {
+      "b": "BEAP focuses on assessing existing buildings in the field.",
+      "c": "Structural engineering is outside BEAP scope.",
+      "d": "Controls knowledge supports assessment but is not the sole focus."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "ASHRAE Level I energy audit (walk-through) typically includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Preliminary energy-use analysis, walk-through survey, and low-cost/no-cost recommendations"
+      },
+      {
+        "id": "b",
+        "text": "Submetering every end use with year-long M&V contracts only"
+      },
+      {
+        "id": "c",
+        "text": "No review of utility bills or operating practices"
+      },
+      {
+        "id": "d",
+        "text": "Complete HVAC redesign construction documents"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Level I identifies obvious opportunities without the capital cost detail of higher audit levels.",
+    "distractorExplanations": {
+      "b": "Detailed submetering is characteristic of Level III.",
+      "c": "Utility analysis is fundamental even at Level I.",
+      "d": "Level I is screening-level, not design-ready."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "A Level II energy audit adds to Level I by providing:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Energy survey and analysis with sufficient detail to justify implementation of identified ECMs"
+      },
+      {
+        "id": "b",
+        "text": "Only a one-page letter with no equipment inventory"
+      },
+      {
+        "id": "c",
+        "text": "Guaranteed contractor pricing for all trades nationally"
+      },
+      {
+        "id": "d",
+        "text": "Elimination of any financial analysis"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Level II bridges screening and investment-grade analysis with measure-level savings estimates.",
+    "distractorExplanations": {
+      "b": "Level II requires more detailed survey and analysis.",
+      "c": "Level II supports budgeting; it does not replace bid procurement.",
+      "d": "Level II includes economic screening of measures."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Level III investment-grade audits are justified when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Large capital decisions require high-confidence savings, risk allocation, and detailed M&V planning"
+      },
+      {
+        "id": "b",
+        "text": "A tenant requests a single LED lamp replacement"
+      },
+      {
+        "id": "c",
+        "text": "No utility data exists and none can be obtained"
+      },
+      {
+        "id": "d",
+        "text": "The owner wants only a roof warranty review"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Financing, ESPCs, and major retrofits often require Level III rigor.",
+    "distractorExplanations": {
+      "b": "Small measures rarely need investment-grade analysis.",
+      "c": "Audits require energy consumption data.",
+      "d": "Roof warranties alone do not define Level III scope."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Energy Use Intensity (EUI) is calculated as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Annual site energy consumption divided by gross floor area"
+      },
+      {
+        "id": "b",
+        "text": "Peak demand divided by occupant count only"
+      },
+      {
+        "id": "c",
+        "text": "Water use in gallons divided by cooling tons"
+      },
+      {
+        "id": "d",
+        "text": "Source energy multiplied by floor area"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "EUI enables benchmarking across buildings of different sizes.",
+    "distractorExplanations": {
+      "b": "EUI normalizes total energy by area, not peak per person.",
+      "c": "EUI addresses site energy, not water metrics.",
+      "d": "EUI divides energy by area; it does not multiply."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Portfolio benchmarking with ENERGY STAR scores compares a building to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "National survey data (e.g., CBECS) for similar building type and climate"
+      },
+      {
+        "id": "b",
+        "text": "Only the architect's design intent document"
+      },
+      {
+        "id": "c",
+        "text": "Structural steel tonnage in comparable towers"
+      },
+      {
+        "id": "d",
+        "text": "Refrigerant GWP values exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Normalized scores reflect percentile performance vs peers, not absolute kWh alone.",
+    "distractorExplanations": {
+      "b": "Scores use operational data vs national peer groups.",
+      "c": "Structural weight is unrelated to ENERGY STAR scoring.",
+      "d": "ENERGY STAR scoring is based on energy performance metrics."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "During a walk-through assessment, a BEAP should document:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Equipment nameplates, control settings, maintenance condition, and obvious operational anomalies"
+      },
+      {
+        "id": "b",
+        "text": "Only lobby paint colors for branding review"
+      },
+      {
+        "id": "c",
+        "text": "Personal opinions without photos or notes"
+      },
+      {
+        "id": "d",
+        "text": "Nothing, relying solely on owner memory"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Thorough notes and photos create an audit trail for measure development.",
+    "distractorExplanations": {
+      "b": "Decor finishes do not substitute for equipment documentation.",
+      "c": "Defensible assessments require recorded observations.",
+      "d": "Field documentation supports recommendations and M&V."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Utility bill analysis often begins by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Normalizing consumption for weather, occupancy, and rate changes before trend comparison"
+      },
+      {
+        "id": "b",
+        "text": "Ignoring all demand charges in every tariff"
+      },
+      {
+        "id": "c",
+        "text": "Comparing raw kWh only with no time period alignment"
+      },
+      {
+        "id": "d",
+        "text": "Using only the most recent week of data always"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Degree-day normalization and regression separate weather effects from operational changes.",
+    "distractorExplanations": {
+      "b": "Demand charges can be a major cost driver.",
+      "c": "Normalization reveals true performance changes.",
+      "d": "Annual or multi-year trends require longer periods."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "A common BEAP finding in constant-volume HVAC systems is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Simultaneous heating and cooling or reheat at part load causing excess energy use"
+      },
+      {
+        "id": "b",
+        "text": "Zero ventilation because outdoor air is disabled by code"
+      },
+      {
+        "id": "c",
+        "text": "Perfect efficiency with no improvement potential"
+      },
+      {
+        "id": "d",
+        "text": "No relationship between airflow and thermostat calls"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Older CV/reheat and poor scheduling are frequent existing-building issues.",
+    "distractorExplanations": {
+      "b": "Codes require minimum ventilation; misuse causes energy waste differently.",
+      "c": "Constant-volume systems often have significant retrofit opportunities.",
+      "d": "Poor zone control is a common assessment finding."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "The BEAP exam passing score published by ASHRAE is approximately:",
+    "options": [
+      {
+        "id": "a",
+        "text": "69 correct out of 100 scored items"
+      },
+      {
+        "id": "b",
+        "text": "68 correct out of 100 scored items (verify current FAQs before scheduling)"
+      },
+      {
+        "id": "c",
+        "text": "83 correct out of 120 scored items"
+      },
+      {
+        "id": "d",
+        "text": "45 correct out of 60 scored items"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Each ASHRAE credential has a distinct Angoff-derived pass point.",
+    "distractorExplanations": {
+      "a": "69/100 is the BEMP pass point, not BEAP.",
+      "c": "83/120 applies to BCxP.",
+      "d": "BEAP uses a 100-scored-item form, not 60."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "When prioritizing ECMs, a BEAP typically considers:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Savings potential, implementation cost, disruption, and owner constraints"
+      },
+      {
+        "id": "b",
+        "text": "Only measures with the longest payback regardless of owner goals"
+      },
+      {
+        "id": "c",
+        "text": "Alphabetical order of equipment names"
+      },
+      {
+        "id": "d",
+        "text": "Measures that require no O&M follow-up ever"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Screening matrices rank measures by cost, savings, and feasibility.",
+    "distractorExplanations": {
+      "b": "Prioritization balances economics with owner objectives.",
+      "c": "Technical and economic merit drive prioritization.",
+      "d": "All measures need some operational consideration."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Lighting assessment in an existing building should capture:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fixture types, lamp/ballast technology, controls, hours of operation, and maintained illuminance needs"
+      },
+      {
+        "id": "b",
+        "text": "Only exterior landscaping irrigation schedules"
+      },
+      {
+        "id": "c",
+        "text": "Wattage guesses without fixture counts"
+      },
+      {
+        "id": "d",
+        "text": "Ceiling tile brand exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Accurate lighting inventories underpin LED retrofit and control ECMs.",
+    "distractorExplanations": {
+      "b": "Irrigation is unrelated to lighting assessment.",
+      "c": "Inventory and connected load data support savings calculations.",
+      "d": "Ceiling products do not define lighting power or control strategy."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Envelope assessment for energy performance includes checking for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Air leakage paths, insulation continuity, window condition, and shading effectiveness"
+      },
+      {
+        "id": "b",
+        "text": "Only interior furniture layout"
+      },
+      {
+        "id": "c",
+        "text": "Elevator counterweight alloy grade"
+      },
+      {
+        "id": "d",
+        "text": "Kitchen menu planning"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Infiltration, conduction, and solar gain drive heating and cooling loads.",
+    "distractorExplanations": {
+      "b": "Furniture may affect loads but envelope assessment focuses on the shell.",
+      "c": "Elevator materials are unrelated to envelope thermal performance.",
+      "d": "Food service menus are not envelope assessment items."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Boiler plant assessment should verify:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Combustion efficiency, staging, setpoints, distribution losses, and maintenance history"
+      },
+      {
+        "id": "b",
+        "text": "Only the paint color of the boiler room door"
+      },
+      {
+        "id": "c",
+        "text": "That boilers never require combustion air"
+      },
+      {
+        "id": "d",
+        "text": "Absence of any safety controls"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Plant efficiency testing and turndown capability reveal major gas savings opportunities.",
+    "distractorExplanations": {
+      "b": "Cosmetic items do not indicate combustion performance.",
+      "c": "Boilers require proper combustion air per code and manufacturer data.",
+      "d": "Safety controls are mandatory and affect reliable operation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Compressed air leaks identified during assessment:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increase motor-driven load and should be quantified as a potential quick-payback ECM"
+      },
+      {
+        "id": "b",
+        "text": "Have no effect on electricity because air is free"
+      },
+      {
+        "id": "c",
+        "text": "Only matter in residential kitchens"
+      },
+      {
+        "id": "d",
+        "text": "Cannot be detected without demolition"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Leak repair and pressure optimization are classic low-cost industrial ECMs.",
+    "distractorExplanations": {
+      "b": "Compressors consume significant electricity to maintain pressure.",
+      "c": "Compressed air systems are common in commercial/industrial facilities.",
+      "d": "Leaks are often found audibly and with simple detection tools."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "A BEAP reviewing BAS trend data should look for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Equipment short-cycling, valves stuck open, economizers disabled, and setpoint overrides"
+      },
+      {
+        "id": "b",
+        "text": "Only the wallpaper pattern in the control room"
+      },
+      {
+        "id": "c",
+        "text": "Guaranteed absence of any alarms"
+      },
+      {
+        "id": "d",
+        "text": "Structural column sizes in drawings"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Operational anomalies visible in trends frequently explain poor EUI vs peers.",
+    "distractorExplanations": {
+      "b": "Trend review is a technical operations diagnostic.",
+      "c": "Alarms and overrides often reveal waste.",
+      "d": "Structural design is separate from BAS trend analysis."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Domestic hot water assessment includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Storage temperatures, recirculation control, insulation, and peak demand characteristics"
+      },
+      {
+        "id": "b",
+        "text": "Only cold water fountain aesthetics"
+      },
+      {
+        "id": "c",
+        "text": "Refrigerant charge in rooftop units only"
+      },
+      {
+        "id": "d",
+        "text": "Parking lot striping layout"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Oversized storage, high setpoints, and uncontrolled recirculation waste energy.",
+    "distractorExplanations": {
+      "b": "DHW systems require temperature and distribution review.",
+      "c": "RTU refrigerant is unrelated to DHW assessment.",
+      "d": "Site striping does not define DHW energy use."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "When gas and electric meters serve mixed loads, a BEAP should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Allocate consumption to HVAC, DHW, and process uses using submeters, engineering estimates, or short-term monitoring"
+      },
+      {
+        "id": "b",
+        "text": "Assume 100% of all fuels are HVAC without analysis"
+      },
+      {
+        "id": "c",
+        "text": "Discard gas data if any electric load exists"
+      },
+      {
+        "id": "d",
+        "text": "Ignore process loads in industrial facilities"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Allocation prevents overstating HVAC retrofit savings.",
+    "distractorExplanations": {
+      "b": "Mixed-use meters require allocation for accurate ECM savings.",
+      "c": "Both fuels may be relevant to the assessment.",
+      "d": "Process loads often dominate and must be separated for HVAC ECMs."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "A screening-level simple payback calculation divides:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Implementation cost by annual energy cost savings"
+      },
+      {
+        "id": "b",
+        "text": "Annual savings by implementation cost incorrectly for payback years"
+      },
+      {
+        "id": "c",
+        "text": "Peak kW by floor area"
+      },
+      {
+        "id": "d",
+        "text": "Occupant count by ventilation rate"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Simple payback is a common Level II economic screening tool.",
+    "distractorExplanations": {
+      "b": "Payback years equal cost divided by annual savings.",
+      "c": "That ratio is not simple payback.",
+      "d": "Ventilation metrics do not define financial payback."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "ASHRAE audit procedures reference collecting:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Architectural, mechanical, electrical, and control drawings plus O&M manuals when available"
+      },
+      {
+        "id": "b",
+        "text": "Only social media posts about the building"
+      },
+      {
+        "id": "c",
+        "text": "No historical data to speed the site visit"
+      },
+      {
+        "id": "d",
+        "text": "Only future tenant lease marketing brochures"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Document review precedes and supports field verification.",
+    "distractorExplanations": {
+      "b": "Technical documents, not social media, support audits.",
+      "c": "Background data improves assessment quality.",
+      "d": "Marketing materials rarely contain operating data."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Night setback or setup strategies assessed on site should be checked against:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Actual BAS schedules and after-hours occupancy needs"
+      },
+      {
+        "id": "b",
+        "text": "Only peak summer cooling tons from the original design"
+      },
+      {
+        "id": "c",
+        "text": "The building's street address numerology"
+      },
+      {
+        "id": "d",
+        "text": "Mandatory 24/7 full conditioning in all buildings"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Schedule optimization is a low-cost ECM when operations allow.",
+    "distractorExplanations": {
+      "b": "Schedules are operational parameters distinct from design capacity.",
+      "c": "Address has no bearing on HVAC scheduling.",
+      "d": "Many buildings can safely setback during unoccupied hours."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Steam trap failure identified during assessment typically causes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Live steam loss, excess boiler load, and higher water treatment costs"
+      },
+      {
+        "id": "b",
+        "text": "Improved heating efficiency with no fuel impact"
+      },
+      {
+        "id": "c",
+        "text": "Reduced need for any boiler maintenance"
+      },
+      {
+        "id": "d",
+        "text": "Lower water consumption always"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Trap surveys are a standard industrial and campus steam ECM.",
+    "distractorExplanations": {
+      "b": "Failed traps waste steam and fuel.",
+      "c": "Trap failures increase system stress and maintenance needs.",
+      "d": "Lost steam increases makeup water demand."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Cooling tower assessment should note:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Approach temperature, fan control, drift eliminators, and basin heating/bleed operation"
+      },
+      {
+        "id": "b",
+        "text": "Only the color of the tower fill without performance data"
+      },
+      {
+        "id": "c",
+        "text": "That towers never affect chiller kW"
+      },
+      {
+        "id": "d",
+        "text": "Structural footing depth exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Poor tower maintenance raises condenser temperatures and chiller energy.",
+    "distractorExplanations": {
+      "b": "Operating conditions determine chiller plant efficiency.",
+      "c": "Tower performance directly affects condenser water temperature and chiller efficiency.",
+      "d": "Footings do not define tower thermal performance."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "A BEAP recommendation report should clearly separate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Operational changes, capital ECMs, and further study needs with estimated savings ranges"
+      },
+      {
+        "id": "b",
+        "text": "All items into one paragraph with no costs"
+      },
+      {
+        "id": "c",
+        "text": "Only measures the assessor personally prefers aesthetically"
+      },
+      {
+        "id": "d",
+        "text": "Confidential findings with no supporting data"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Structured reports help owners fund and implement improvements.",
+    "distractorExplanations": {
+      "b": "Clients need categorized measures with economic context.",
+      "c": "Recommendations must be evidence-based and economic.",
+      "d": "Reports should be transparent and actionable."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Infrared thermography during assessment can help identify:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Missing insulation, air leakage, and overloaded electrical connections indicative of waste or safety issues"
+      },
+      {
+        "id": "b",
+        "text": "Only interior paint sheen preferences"
+      },
+      {
+        "id": "c",
+        "text": "Guaranteed annual utility rates"
+      },
+      {
+        "id": "d",
+        "text": "Occupant job titles"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "IR surveys support envelope and electrical distribution assessments.",
+    "distractorExplanations": {
+      "b": "Thermography reveals thermal anomalies, not finish schedules.",
+      "c": "Tariffs come from utilities, not IR cameras.",
+      "d": "Thermography is a physical diagnostic tool."
+    },
+    "difficulty": "medium"
+  }
+]

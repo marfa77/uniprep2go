@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Motor slip increases as load decreases on an induction motor. At very light load, efficiency drops mainly because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fixed core and friction/windage losses become a larger fraction of input power"
+      },
+      {
+        "id": "b",
+        "text": "The motor converts all input to mechanical output with no losses"
+      },
+      {
+        "id": "c",
+        "text": "Power factor automatically rises to 1.0 at light load"
+      },
+      {
+        "id": "d",
+        "text": "Nameplate horsepower increases at light load"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "At low load, fixed losses remain while useful output falls, reducing efficiency; this is why severely oversized motors perform poorly at part load.",
+    "distractorExplanations": {
+      "b": "All real motors have losses; zero-loss operation is impossible.",
+      "c": "Power factor typically decreases at light motor load.",
+      "d": "Nameplate rating is fixed; it does not increase with load changes."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "A VFD operating a pump at 80% speed compared with full speed reduces shaft power approximately by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "20% following the linear affinity law"
+      },
+      {
+        "id": "b",
+        "text": "About 49% using the cube law (0.8³ ≈ 0.51 of full power)"
+      },
+      {
+        "id": "c",
+        "text": "0% because pumps always use full power"
+      },
+      {
+        "id": "d",
+        "text": "80% leaving only 20% of full power regardless of system curve"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "For centrifugal pumps on similar system curves, power varies roughly with speed cubed: (0.8)³ = 0.512, about 49% power reduction.",
+    "distractorExplanations": {
+      "a": "Linear 20% reduction applies to speed change, not power for centrifugal loads.",
+      "c": "Pump power drops significantly with speed on typical system curves.",
+      "d": "80% power reduction would correspond to a much lower speed than 80%."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Which tariff component is most directly targeted by automatic load shedding of non-critical loads during peak intervals?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Water sewer fees"
+      },
+      {
+        "id": "b",
+        "text": "Property tax assessments"
+      },
+      {
+        "id": "c",
+        "text": "Monthly billing demand (kW) charges"
+      },
+      {
+        "id": "d",
+        "text": "Customer service fixed charge only"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Load shedding during peak intervals lowers the facility's peak kW, directly reducing demand charges on many commercial tariffs.",
+    "distractorExplanations": {
+      "d": "Fixed customer charges typically do not vary with peak kW.",
+      "a": "Water/sewer fees are unrelated to electric demand.",
+      "b": "Property taxes are municipal levies, not utility tariff components."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "An LED troffer retrofit specifies 4000K correlated color temperature (CCT). This parameter describes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The fixture's power factor"
+      },
+      {
+        "id": "b",
+        "text": "The motor full-load amperage"
+      },
+      {
+        "id": "c",
+        "text": "The boiler stack temperature"
+      },
+      {
+        "id": "d",
+        "text": "The visual warmth or coolness appearance of the light source"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "CCT indicates whether light appears warm (lower K) or cool (higher K); 4000K is a neutral-cool office common choice.",
+    "distractorExplanations": {
+      "a": "Power factor is an electrical phase relationship metric.",
+      "b": "FLA is a motor electrical specification.",
+      "c": "Stack temperature relates to combustion efficiency."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Conducting a lighting-level audit before LED retrofit primarily ensures:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maintained illuminance meets task requirements after wattage reduction"
+      },
+      {
+        "id": "b",
+        "text": "Motors are replaced with premium efficiency models"
+      },
+      {
+        "id": "c",
+        "text": "Boiler turndown ratios are optimized"
+      },
+      {
+        "id": "d",
+        "text": "Chiller refrigerant is reclaimed"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Photometric audits verify foot-candle levels and uniformity so retrofits save energy without under-lighting tasks or violating code minima.",
+    "distractorExplanations": {
+      "b": "Motor replacement is an electrical/mechanical ECM, not a lighting audit outcome.",
+      "c": "Boiler turndown is a thermal plant topic.",
+      "d": "Refrigerant handling is chiller O&M."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "A plant installs power factor correction raising PF from 0.78 to 0.95 without changing production. Apparent demand in kVA at the meter will:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Double automatically"
+      },
+      {
+        "id": "b",
+        "text": "Decrease for the same real kW load"
+      },
+      {
+        "id": "c",
+        "text": "Increase because capacitors add real power"
+      },
+      {
+        "id": "d",
+        "text": "Stay exactly unchanged always"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "kVA = kW / PF; for constant real load, higher PF lowers apparent demand, which can reduce demand charges billed on kVA.",
+    "distractorExplanations": {
+      "c": "Capacitors supply reactive power locally; real kW stays similar while kVA drops.",
+      "d": "PF correction changes the kW/kVA relationship.",
+      "a": "Apparent demand decreases, not doubles, when PF improves."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Bi-level or task tuning in office LED systems saves energy by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Converting AC motors to DC without controls"
+      },
+      {
+        "id": "b",
+        "text": "Increasing LPD above code maximums"
+      },
+      {
+        "id": "c",
+        "text": "Adjusting output to required illuminance rather than maintaining uniform over-lighting"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating all lighting in occupied spaces"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Task tuning sets light levels to needed foot-candles by zone, avoiding energy waste from uniform over-design.",
+    "distractorExplanations": {
+      "d": "Occupied spaces still require adequate illuminance.",
+      "a": "Motor conversion is unrelated to lighting control strategies.",
+      "b": "Code LPD limits cap installed power; tuning reduces operating power within compliance."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Which motor rewinding practice can reduce efficiency if not performed to modern standards?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Using manufacturer-specified varnish and wire for identical slot design"
+      },
+      {
+        "id": "b",
+        "text": "Balancing the rotor after rewind"
+      },
+      {
+        "id": "c",
+        "text": "Testing insulation resistance after rewind"
+      },
+      {
+        "id": "d",
+        "text": "Rewinding with smaller wire gauge or increased slot fill losses versus factory design"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Improper rewinds can increase copper and stray losses, lowering efficiency below original nameplate performance.",
+    "distractorExplanations": {
+      "a": "Proper rewinds to OEM specs maintain efficiency.",
+      "b": "Rotor balancing is good practice after rewind.",
+      "c": "Insulation testing verifies rewind quality."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "A facility replaces magnetic ballast T12 systems with electronic ballast T8 then LED. The largest single-step savings typically come from:",
+    "options": [
+      {
+        "id": "a",
+        "text": "LED conversion with lower wattage and reduced ballast losses"
+      },
+      {
+        "id": "b",
+        "text": "Switching from T12 magnetic to T8 magnetic with no lamp change"
+      },
+      {
+        "id": "c",
+        "text": "Cleaning diffusers only without lamp changes"
+      },
+      {
+        "id": "d",
+        "text": "Painting walls darker to absorb light"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "LED retrofits cut system watts dramatically versus T12/T8 fluorescent by combining higher efficacy with integrated drivers and better optical control.",
+    "distractorExplanations": {
+      "b": "T8 with electronic ballasts saves versus T12 magnetic but less than LED.",
+      "c": "Cleaning improves output slightly but not like a technology change.",
+      "d": "Darker surfaces increase required light levels, increasing energy use."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Input kW to a motor is 90 kW and output shaft power is 81 kW. Motor efficiency is approximately:",
+    "options": [
+      {
+        "id": "a",
+        "text": "9%"
+      },
+      {
+        "id": "b",
+        "text": "90%"
+      },
+      {
+        "id": "c",
+        "text": "81%"
+      },
+      {
+        "id": "d",
+        "text": "111%"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Efficiency = output / input = 81 / 90 = 0.90 or 90%.",
+    "distractorExplanations": {
+      "c": "81% would imply 73 kW output at 90 kW input.",
+      "d": "Efficiency cannot exceed 100%.",
+      "a": "9% would reflect only losses, not efficiency."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Installing a VFD on an elevator motor without manufacturer approval is problematic because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "VFDs only work on lighting circuits"
+      },
+      {
+        "id": "b",
+        "text": "Elevators always operate at variable torque like fans"
+      },
+      {
+        "id": "c",
+        "text": "Elevators require specialized controls and safety codes not met by generic VFD retrofits"
+      },
+      {
+        "id": "d",
+        "text": "Elevators have no motors"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Elevator systems integrate safety, regeneration, and proprietary controls; generic VFD application can violate code and safety requirements.",
+    "distractorExplanations": {
+      "d": "Elevators use motor-driven hoisting systems.",
+      "a": "VFDs are for motor speed control, not general lighting.",
+      "b": "Elevator duty cycles differ from variable-torque fan loads."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "A demand response program pays customers for curtailing load during grid events. Which load is typically best suited for curtailment?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Life safety fire pump operating during an emergency"
+      },
+      {
+        "id": "b",
+        "text": "Critical hospital operating room HVAC without backup"
+      },
+      {
+        "id": "c",
+        "text": "Data center IT load with zero redundancy"
+      },
+      {
+        "id": "d",
+        "text": "Non-critical process loads or HVAC with thermal storage buffer"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Flexible, non-critical loads or those with storage can be shed temporarily with minimal impact, making them ideal DR candidates.",
+    "distractorExplanations": {
+      "a": "Fire pumps must run during emergencies and cannot be curtailed.",
+      "b": "Critical care HVAC requires continuous conditioning.",
+      "c": "Unprotected critical IT loads cannot be shed without outage risk."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Lumen maintenance (L70) for an LED product indicates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Estimated hours until light output falls to 70% of initial lumens"
+      },
+      {
+        "id": "b",
+        "text": "The fixture power factor at end of life"
+      },
+      {
+        "id": "c",
+        "text": "Motor insulation class temperature rise"
+      },
+      {
+        "id": "d",
+        "text": "Demand charge ratchet percentage"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "L70 life rating projects when LED output depreciates to 70% of initial, informing maintenance and relamping schedules.",
+    "distractorExplanations": {
+      "b": "Power factor is an electrical characteristic, not L70.",
+      "c": "Insulation class applies to motors.",
+      "d": "Ratchets are utility tariff terms."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "A capacitor bank on a heavily VFD-loaded bus without detuning reactors may cause:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increased motor synchronous speed above nameplate indefinitely"
+      },
+      {
+        "id": "b",
+        "text": "Harmonic resonance and equipment damage risk"
+      },
+      {
+        "id": "c",
+        "text": "Guaranteed unity power factor with no side effects"
+      },
+      {
+        "id": "d",
+        "text": "Automatic removal of all harmonics"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Capacitors can resonate with system inductance and VFD harmonics; detuned or filtered banks are required on harmonic-rich networks.",
+    "distractorExplanations": {
+      "c": "Uncoordinated capacitors can worsen distortion despite PF improvement.",
+      "d": "Standard capacitors do not eliminate VFD harmonics.",
+      "a": "Capacitors do not raise motor speed above synchronous speed."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Replacing incandescent exit signs with LED versions typically saves energy because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "LED exit signs eliminate all emergency illumination requirements"
+      },
+      {
+        "id": "b",
+        "text": "Incandescent signs have higher efficacy than LED"
+      },
+      {
+        "id": "c",
+        "text": "LED exit signs use far fewer watts for equivalent visibility 24/7"
+      },
+      {
+        "id": "d",
+        "text": "Incandescent exit signs operate only 1 hour per year"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Exit signs run continuously; LED technology reduces watts per sign from roughly 20–40 W to 1–5 W with long life.",
+    "distractorExplanations": {
+      "d": "Exit signs operate 24/7 by code.",
+      "a": "LED signs still must meet emergency visibility requirements.",
+      "b": "Incandescent efficacy is far lower than LED for this application."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "A motor management plan policy requiring NEMA Premium for all new motors above 5 hp primarily reduces:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Building roof insulation levels"
+      },
+      {
+        "id": "b",
+        "text": "Natural gas commodity prices"
+      },
+      {
+        "id": "c",
+        "text": "City water pressure"
+      },
+      {
+        "id": "d",
+        "text": "Long-term motor energy consumption across the installed base turnover"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Premium efficiency standards on procurement lower losses as motors are replaced, compounding savings over motor life.",
+    "distractorExplanations": {
+      "a": "Roof insulation is envelope policy, not motor procurement.",
+      "b": "Gas prices are market/regulatory, not set by motor specs.",
+      "c": "Water pressure is unrelated to motor efficiency policy."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "An energy manager compares connected load versus demand meter readings. Connected load often exceeds billed peak demand because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Not all equipment runs simultaneously at nameplate load"
+      },
+      {
+        "id": "b",
+        "text": "Meters always read double actual demand"
+      },
+      {
+        "id": "c",
+        "text": "Nameplate ratings equal actual operating load always"
+      },
+      {
+        "id": "d",
+        "text": "Demand charges use kWh not kW"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Diversity factor reflects that equipment operates at partial load and not all at once, so peak demand is below sum of nameplate connected kW.",
+    "distractorExplanations": {
+      "b": "Meters are calibrated; they do not systematically double demand.",
+      "c": "Actual load rarely equals nameplate on all devices simultaneously.",
+      "d": "Demand charges are based on kW (or kVA), distinct from kWh energy."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "High-bay LED retrofits in warehouses often include aisle lighting controls that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disable emergency egress lighting"
+      },
+      {
+        "id": "b",
+        "text": "Dim or switch fixtures in unoccupied aisles while maintaining safety minimums"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate all lighting in occupied aisles during picking"
+      },
+      {
+        "id": "d",
+        "text": "Increase wattage when forklifts are absent"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Aisle-level occupancy or motion controls reduce burn hours and power in low-traffic zones while keeping code-compliant minimum illumination.",
+    "distractorExplanations": {
+      "c": "Active picking aisles require adequate task lighting.",
+      "d": "Controls reduce, not increase, power when areas are vacant.",
+      "a": "Egress lighting must remain code-compliant and cannot be disabled."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Which measurement best verifies VFD savings on a fan compared with baseline damper control?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Number of lighting fixtures in the fan room"
+      },
+      {
+        "id": "b",
+        "text": "Boiler stack O₂ reading"
+      },
+      {
+        "id": "c",
+        "text": "kW draw at comparable airflow or static pressure setpoints"
+      },
+      {
+        "id": "d",
+        "text": "Motor nameplate voltage only"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Savings verification compares input power at matched duty points (flow/pressure), isolating control strategy effects.",
+    "distractorExplanations": {
+      "d": "Nameplate voltage does not quantify power savings.",
+      "a": "Lighting counts are unrelated to fan power measurement.",
+      "b": "Boiler combustion metrics do not verify fan VFD performance."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "A lighting retrofit maintains the same luminaire count but reduces watts from 32W to 15W per lamp across 500 fixtures operating 3,000 h/yr. Approximate annual kWh savings:",
+    "options": [
+      {
+        "id": "a",
+        "text": "255,000 kWh"
+      },
+      {
+        "id": "b",
+        "text": "2,550 kWh"
+      },
+      {
+        "id": "c",
+        "text": "0 kWh because lamp count is unchanged"
+      },
+      {
+        "id": "d",
+        "text": "25,500 kWh"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Savings per fixture = 17 W; total = 17 × 500 × 3,000 h / 1000 = 25,500 kWh/year.",
+    "distractorExplanations": {
+      "a": "This overstates savings by a factor of ten.",
+      "b": "This understates savings by a factor of ten.",
+      "c": "Wattage reduction saves energy even when fixture count is constant."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Across-the-line motor starting draws high inrush current primarily causing:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Short-duration demand spikes and voltage dip on weak feeders"
+      },
+      {
+        "id": "b",
+        "text": "Permanent increase in motor nameplate efficiency"
+      },
+      {
+        "id": "c",
+        "text": "Automatic elimination of power factor penalties forever"
+      },
+      {
+        "id": "d",
+        "text": "Reduced need for any maintenance"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Inrush can be several times full-load current, contributing to peak demand charges and voltage sag that affects other equipment.",
+    "distractorExplanations": {
+      "b": "Starting method does not change nameplate efficiency class.",
+      "c": "PF penalties depend on overall plant power factor, not starting alone.",
+      "d": "Starting stress may increase maintenance needs on mechanical systems."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Specifying luminaire efficacy (lm/W) in a retrofit RFP ensures bidders provide:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fixtures without any photometric data"
+      },
+      {
+        "id": "b",
+        "text": "Efficient products delivering required lumens with lower connected wattage"
+      },
+      {
+        "id": "c",
+        "text": "Motors with highest slip at full load"
+      },
+      {
+        "id": "d",
+        "text": "Highest wattage fixtures regardless of output"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Efficacy requirements tie light output to power input, preventing low-performance high-watt products from winning on price alone.",
+    "distractorExplanations": {
+      "c": "Motor slip is unrelated to lighting specifications.",
+      "d": "High wattage without lumens wastes energy.",
+      "a": "Photometric data is essential for compliant bids."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "A facility uses kVA demand billing. Power factor correction is especially valuable because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "It replaces all motor maintenance"
+      },
+      {
+        "id": "b",
+        "text": "It eliminates energy kWh charges entirely"
+      },
+      {
+        "id": "c",
+        "text": "Reducing reactive power lowers billed apparent demand directly"
+      },
+      {
+        "id": "d",
+        "text": "It increases real kW consumption for the same output"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "On kVA-based tariffs, improving PF reduces apparent demand for the same real work, cutting demand charges more than on kW-only billing.",
+    "distractorExplanations": {
+      "d": "Real kW for the same mechanical output should remain similar.",
+      "a": "PF correction does not affect motor maintenance schedules.",
+      "b": "Energy kWh charges still apply based on consumption."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Group relamping versus spot relamping in fluorescent systems historically affected maintenance cost; with LED long-life systems, the best practice shifts toward:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Scheduled full relamping every 500 hours regardless of technology"
+      },
+      {
+        "id": "b",
+        "text": "Never inspecting fixtures because LED never fails"
+      },
+      {
+        "id": "c",
+        "text": "Replacing drivers daily"
+      },
+      {
+        "id": "d",
+        "text": "Preventive inspection and spot replacement based on failure or lumen depreciation monitoring"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "LED systems have longer useful life; condition-based maintenance reduces unnecessary group relamping while monitoring for driver or lumen failures.",
+    "distractorExplanations": {
+      "a": "500-hour group relamping reflects old lamp life, not LED economics.",
+      "b": "LED drivers and arrays can fail and require maintenance.",
+      "c": "Daily driver replacement is unnecessary and costly."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "An engineer sizes a VFD for a 50 hp fan motor. Minimum VFD ampacity should generally be based on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Motor full-load current and manufacturer/heating requirements, including overload capability"
+      },
+      {
+        "id": "b",
+        "text": "Lighting circuit breaker size in the office panel"
+      },
+      {
+        "id": "c",
+        "text": "Boiler fuel input BTU/h only"
+      },
+      {
+        "id": "d",
+        "text": "Random undersizing to lowest price without data"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "VFD sizing follows motor FLA, service factor, and application duty; undersizing causes nuisance trips and overheating.",
+    "distractorExplanations": {
+      "b": "Office lighting breakers are unrelated to motor VFD sizing.",
+      "c": "Boiler BTU input does not size fan VFDs.",
+      "d": "Undersizing without engineering analysis risks failure and voids warranties."
+    },
+    "difficulty": "medium"
+  }
+]

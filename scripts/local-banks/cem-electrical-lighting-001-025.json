@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "A 100 hp induction motor operates at 75% load. Compared with full-load nameplate efficiency, the motor typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Operates near its best efficiency point when properly sized for the load"
+      },
+      {
+        "id": "b",
+        "text": "Always wastes 50% of input energy regardless of load"
+      },
+      {
+        "id": "c",
+        "text": "Cannot operate below 100% load without immediate failure"
+      },
+      {
+        "id": "d",
+        "text": "Has efficiency independent of load fraction"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Motors are most efficient in the 75–100% load range; moderate loading near rated capacity generally yields good efficiency if the motor is not severely oversized.",
+    "distractorExplanations": {
+      "b": "Motor losses increase at very low load but do not fixedly waste half of input energy at 75% load.",
+      "c": "Motors routinely operate at partial load.",
+      "d": "Efficiency varies with load; it is not constant across all load points."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Installing a variable frequency drive (VFD) on a centrifugal fan controlled by a discharge damper primarily saves energy because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dampers increase motor speed above synchronous speed"
+      },
+      {
+        "id": "b",
+        "text": "Fan power drops roughly with the cube of speed when flow is reduced via speed control"
+      },
+      {
+        "id": "c",
+        "text": "VFDs eliminate all motor copper losses"
+      },
+      {
+        "id": "d",
+        "text": "Damper throttling improves power factor to above unity"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Affinity laws show centrifugal fan power varies with the cube of speed; reducing speed to meet airflow demand saves more energy than throttling with dampers.",
+    "distractorExplanations": {
+      "a": "Dampers restrict flow; they do not raise motor speed above synchronous speed.",
+      "c": "VFDs reduce energy at part load but do not eliminate copper losses entirely.",
+      "d": "Power factor cannot exceed 1.0; dampers do not improve it above unity."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "A plant meter reads 800 kW real power and 1,000 kVA apparent power. Power factor is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "0.50"
+      },
+      {
+        "id": "b",
+        "text": "800"
+      },
+      {
+        "id": "c",
+        "text": "0.80"
+      },
+      {
+        "id": "d",
+        "text": "1.25"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Power factor = kW / kVA = 800 / 1,000 = 0.80.",
+    "distractorExplanations": {
+      "d": "1.25 is kVA/kW, the inverse of power factor and not a valid PF value above 1.",
+      "a": "0.50 would require kW half of kVA at equal kVA.",
+      "b": "800 is kW, not a dimensionless power factor."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Which load most commonly contributes significant inductive reactive power in industrial facilities?",
+    "options": [
+      {
+        "id": "a",
+        "text": "LED drivers with unity power factor designs"
+      },
+      {
+        "id": "b",
+        "text": "Incandescent lamps"
+      },
+      {
+        "id": "c",
+        "text": "Resistive electric heaters"
+      },
+      {
+        "id": "d",
+        "text": "Large induction motors and transformers"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Induction motors and transformers draw lagging reactive power, lowering power factor and potentially triggering utility penalties.",
+    "distractorExplanations": {
+      "b": "Incandescent loads are resistive with near-unity power factor.",
+      "c": "Resistive heaters do not draw significant reactive power.",
+      "a": "Modern LED drivers are designed for high power factor."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "A utility bills demand based on the highest 15-minute average kW each month. Staggering motor starts primarily reduces:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Coincident peak demand charges"
+      },
+      {
+        "id": "b",
+        "text": "Motor nameplate horsepower"
+      },
+      {
+        "id": "c",
+        "text": "Power factor penalty thresholds automatically to 1.0"
+      },
+      {
+        "id": "d",
+        "text": "Annual lamp replacement frequency"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Starting multiple large motors simultaneously creates short demand spikes; sequencing starts spreads load and lowers billed peak kW.",
+    "distractorExplanations": {
+      "b": "Starting sequence does not change nameplate ratings.",
+      "c": "Demand management does not automatically set power factor to unity.",
+      "d": "Lamp maintenance is unrelated to motor starting strategy."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Replacing T8 fluorescent troffers with LED kits rated at 110 lm/W versus 90 lm/W for the same light output will:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Require higher wattage to maintain illuminance"
+      },
+      {
+        "id": "b",
+        "text": "Reduce input wattage for the same delivered lumens"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate the need for any lighting controls"
+      },
+      {
+        "id": "d",
+        "text": "Increase efficacy, meaning more watts per lumen"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Higher efficacy (more lumens per watt) delivers the same light output with lower electrical power input.",
+    "distractorExplanations": {
+      "a": "Higher efficacy means less wattage, not more, for equal lumens.",
+      "c": "Controls may still be valuable for additional savings.",
+      "d": "Higher lm/W means fewer watts per lumen, not more."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "A VFD should NOT typically be installed on which application without engineering review?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cooling tower fan with variable flow requirements"
+      },
+      {
+        "id": "b",
+        "text": "A pump with throttling valve control replaced by speed control"
+      },
+      {
+        "id": "c",
+        "text": "A constant-torque conveyor requiring full torque at low speed continuously"
+      },
+      {
+        "id": "d",
+        "text": "A variable-torque HVAC fan with reduced speed at part load"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Constant-torque loads need full torque at low speeds, requiring VFD and motor sizing for thermal limits; improper application can overheat motors.",
+    "distractorExplanations": {
+      "d": "Variable-torque fans are classic VFD applications with strong savings.",
+      "a": "Cooling tower fans benefit from speed control under variable conditions.",
+      "b": "Pump VFD retrofits replacing throttling valves are common ECMs."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Power factor correction capacitors are most cost-effective when installed:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only at the utility substation outside the facility"
+      },
+      {
+        "id": "b",
+        "text": "In series with resistive heating elements only"
+      },
+      {
+        "id": "c",
+        "text": "On lighting circuits that already have unity power factor"
+      },
+      {
+        "id": "d",
+        "text": "At the point of reactive load causing low power factor, such as near large motors"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Correcting reactive power near inductive loads reduces line losses and avoids penalties; centralized correction at the service entrance is also common for plant-wide PF.",
+    "distractorExplanations": {
+      "a": "Customer-side correction at the plant is standard; substation-only placement is not customer-controlled.",
+      "b": "Resistive heaters do not need capacitors for PF correction.",
+      "c": "Unity PF circuits gain no benefit from added capacitors."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "An LED retrofit maintains 30 fc on the workplane with half the input watts of the legacy system. The legacy system's efficacy was 60 lm/W. The new system efficacy is approximately:",
+    "options": [
+      {
+        "id": "a",
+        "text": "120 lm/W"
+      },
+      {
+        "id": "b",
+        "text": "30 lm/W"
+      },
+      {
+        "id": "c",
+        "text": "60 lm/W"
+      },
+      {
+        "id": "d",
+        "text": "240 lm/W"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Same light output at half the power doubles efficacy: 60 lm/W × 2 = 120 lm/W.",
+    "distractorExplanations": {
+      "b": "Lower efficacy would require more power for the same illuminance.",
+      "c": "Equal efficacy would not halve power for the same output.",
+      "d": "240 lm/W would imply quarter power, not half."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "NEMA Premium Efficiency motors primarily reduce losses in:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Boiler stack oxygen content"
+      },
+      {
+        "id": "b",
+        "text": "Stator and rotor copper losses, core losses, and stray load losses versus standard efficiency motors"
+      },
+      {
+        "id": "c",
+        "text": "Building envelope infiltration"
+      },
+      {
+        "id": "d",
+        "text": "Chiller refrigerant charge"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Premium efficiency motors use improved materials and design to lower electrical losses compared with EPAct or standard efficiency models.",
+    "distractorExplanations": {
+      "c": "Envelope infiltration is a building shell issue.",
+      "d": "Refrigerant charge affects chiller performance, not motor losses.",
+      "a": "Boiler combustion is unrelated to motor efficiency classes."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "A demand charge of $15/kW applies monthly. Reducing peak demand by 100 kW saves approximately:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing if total kWh is unchanged"
+      },
+      {
+        "id": "b",
+        "text": "$150/month"
+      },
+      {
+        "id": "c",
+        "text": "$1,500/month in demand charges"
+      },
+      {
+        "id": "d",
+        "text": "$15/month"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Demand savings = kW reduced × demand rate = 100 kW × $15/kW = $1,500 per month in demand charges.",
+    "distractorExplanations": {
+      "b": "This reflects only 10 kW of reduction at $15/kW.",
+      "d": "This reflects 1 kW of reduction at $15/kW.",
+      "a": "Demand charges apply to peak kW regardless of whether total kWh changes."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Adding occupancy sensors to LED office lighting primarily captures savings by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increasing lamp efficacy above 300 lm/W"
+      },
+      {
+        "id": "b",
+        "text": "Raising power factor above unity"
+      },
+      {
+        "id": "c",
+        "text": "Eliminating the need for illuminance standards"
+      },
+      {
+        "id": "d",
+        "text": "Reducing burn hours when spaces are unoccupied"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Occupancy controls turn off or dim lights when spaces are vacant, reducing operating hours and kWh without changing fixture efficacy.",
+    "distractorExplanations": {
+      "a": "Sensors do not change luminaire efficacy ratings.",
+      "b": "Power factor cannot exceed 1.0.",
+      "c": "Illuminance standards still apply when spaces are occupied."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "A motor load factor of 0.55 on a 200 hp motor suggests:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The motor may be oversized for the actual load"
+      },
+      {
+        "id": "b",
+        "text": "The motor is operating above its nameplate rating"
+      },
+      {
+        "id": "c",
+        "text": "Power factor must equal 0.55"
+      },
+      {
+        "id": "d",
+        "text": "VFDs cannot be applied to this motor"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Load factor well below 0.75 often indicates oversizing, leading to lower efficiency and higher losses at partial load.",
+    "distractorExplanations": {
+      "b": "Load factor below 1.0 means operating below nameplate load, not above.",
+      "c": "Load factor and power factor are different metrics.",
+      "d": "Oversized motors may still benefit from VFDs depending on application."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Which lighting quality metric describes how faithfully a light source renders object colors?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Load factor"
+      },
+      {
+        "id": "b",
+        "text": "Color Rendering Index (CRI)"
+      },
+      {
+        "id": "c",
+        "text": "Power factor"
+      },
+      {
+        "id": "d",
+        "text": "Demand ratchet"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "CRI (or newer TM-30 metrics) evaluates color rendering compared with a reference source, important for visual tasks and occupant satisfaction.",
+    "distractorExplanations": {
+      "c": "Power factor relates real versus apparent power.",
+      "d": "Demand ratchet is a utility billing term.",
+      "a": "Load factor compares average to peak load."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Soft-start reduced-voltage starters save energy primarily by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Doubling motor efficiency at full load automatically"
+      },
+      {
+        "id": "b",
+        "text": "Replacing the need for power factor capacitors in all cases"
+      },
+      {
+        "id": "c",
+        "text": "Limiting inrush current and mechanical stress; energy savings at run conditions are usually modest"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating all motor run-time energy use"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Soft starters reduce starting torque and inrush, lowering demand spikes and mechanical stress; continuous-run efficiency gains are typically small compared with VFDs.",
+    "distractorExplanations": {
+      "d": "Motors still consume run energy after soft start.",
+      "a": "Soft starters do not change full-load motor efficiency class.",
+      "b": "PF correction remains a separate consideration."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "A warehouse retrofit replaces 400W metal halide high-bays with 150W LED fixtures while maintaining average illuminance. Approximate wattage reduction per fixture:",
+    "options": [
+      {
+        "id": "a",
+        "text": "550 W per fixture"
+      },
+      {
+        "id": "b",
+        "text": "50 W per fixture"
+      },
+      {
+        "id": "c",
+        "text": "No reduction because lumens are identical"
+      },
+      {
+        "id": "d",
+        "text": "250 W per fixture"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Per-fixture savings = 400 W − 150 W = 250 W, assuming comparable delivered illuminance and controls.",
+    "distractorExplanations": {
+      "a": "This adds wattages instead of subtracting.",
+      "b": "50 W would imply a 350 W LED fixture, not 150 W.",
+      "c": "Equal illuminance with lower wattage is the basis of efficacy improvement."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Harmonic distortion from VFDs can affect power factor measurement and may require:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Line reactors, harmonic filters, or true-RMS metering depending on severity"
+      },
+      {
+        "id": "b",
+        "text": "Removal of all capacitors from the plant forever"
+      },
+      {
+        "id": "c",
+        "text": "Operating motors without any grounding"
+      },
+      {
+        "id": "d",
+        "text": "Increasing damper throttling on all fans"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "VFDs generate harmonics that distort current waveforms; mitigation includes reactors/filters and using appropriate metering for accurate PF and billing.",
+    "distractorExplanations": {
+      "b": "Capacitors may need detuning but are not universally banned.",
+      "c": "Grounding is a safety requirement and unrelated to harmonic mitigation strategy.",
+      "d": "Damper throttling increases energy use versus speed control."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Daylight harvesting controls dim electric lighting when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Motors reach synchronous speed"
+      },
+      {
+        "id": "b",
+        "text": "Photosensors detect sufficient daylight to meet target illuminance"
+      },
+      {
+        "id": "c",
+        "text": "Occupants manually override HVAC setpoints"
+      },
+      {
+        "id": "d",
+        "text": "Power factor falls below 0.5 only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Daylight harvesting uses photosensors to maintain setpoint illuminance by reducing artificial light when daylight contributes to the workplane.",
+    "distractorExplanations": {
+      "c": "HVAC overrides do not trigger lighting daylight response.",
+      "d": "Power factor is unrelated to daylight dimming logic.",
+      "a": "Motor speed does not control daylight harvesting."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "A synchronous reluctance or PM motor upgrade may be justified when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No electricity is available at the site"
+      },
+      {
+        "id": "b",
+        "text": "The goal is to increase power factor above 1.0"
+      },
+      {
+        "id": "c",
+        "text": "The application runs at high hours and benefits from higher efficiency across the load curve"
+      },
+      {
+        "id": "d",
+        "text": "The motor operates 10 minutes per year at 10% load only"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Advanced motor technologies improve efficiency especially at partial load; high run hours improve payback on premium motor investments.",
+    "distractorExplanations": {
+      "d": "Very low run hours yield poor economic return on motor upgrades.",
+      "a": "Motors require electricity to operate.",
+      "b": "Power factor cannot exceed unity."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Which strategy best reduces both kWh and kW for an oversized constant-speed pump with a throttling valve?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fully open the valve and run at maximum speed always"
+      },
+      {
+        "id": "b",
+        "text": "Add capacitors without changing pump operation"
+      },
+      {
+        "id": "c",
+        "text": "Increase pipe friction with a smaller impeller only without controls"
+      },
+      {
+        "id": "d",
+        "text": "Replace throttling with VFD speed control matched to system requirements"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "VFDs reduce pump speed to meet flow/head requirements, cutting energy per affinity laws and often lowering peak power versus throttling at full speed.",
+    "distractorExplanations": {
+      "a": "Maximum speed with open valve maximizes energy waste.",
+      "b": "Capacitors improve PF but do not fix throttling losses.",
+      "c": "Smaller impellers require engineering but speed control is the primary ECM for throttled pumps."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "Lighting power density (LPD) limits in energy codes typically apply to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Installed connected lighting wattage per unit area by space type"
+      },
+      {
+        "id": "b",
+        "text": "Motor horsepower per ton of cooling only"
+      },
+      {
+        "id": "c",
+        "text": "Boiler combustion efficiency only"
+      },
+      {
+        "id": "d",
+        "text": "Parking lot asphalt reflectance only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Codes set maximum allowed lighting watts per square foot (or W/m²) for space types to cap installed lighting power.",
+    "distractorExplanations": {
+      "b": "Motor power per ton is an HVAC metric, not LPD.",
+      "c": "Boiler efficiency is a thermal plant code topic.",
+      "d": "Pavement reflectance may affect outdoor lighting design but LPD limits address installed wattage."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "An industrial facility pays a power factor penalty below 0.90 lagging. Adding capacitors raises PF from 0.82 to 0.95. Expected result:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Elimination of all demand charges regardless of peak kW"
+      },
+      {
+        "id": "b",
+        "text": "Reduced or eliminated PF penalty and lower I²R losses on distribution"
+      },
+      {
+        "id": "c",
+        "text": "Higher real power kW consumption for the same work output"
+      },
+      {
+        "id": "d",
+        "text": "Automatic 50% reduction in motor nameplate hp"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Power factor correction reduces reactive current, avoiding penalties and lowering line losses while real power for the same mechanical output stays substantially unchanged.",
+    "distractorExplanations": {
+      "c": "Real kW for the same load should not increase; apparent kVA drops.",
+      "d": "Capacitors do not change motor nameplate ratings.",
+      "a": "Demand charges depend on peak kW, not corrected solely by PF improvement."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "DLC (DesignLights Consortium) qualified product lists help energy managers by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Calculating chiller tonnage from roof area"
+      },
+      {
+        "id": "b",
+        "text": "Replacing ASHRAE audit levels"
+      },
+      {
+        "id": "c",
+        "text": "Identifying tested LED products meeting efficacy and performance criteria for rebates and specs"
+      },
+      {
+        "id": "d",
+        "text": "Setting utility natural gas rates"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "DLC qualification provides third-party verified performance data used in utility rebate programs and procurement specifications for commercial lighting.",
+    "distractorExplanations": {
+      "d": "Gas rates are set by regulators and utilities, not DLC.",
+      "a": "Chiller sizing uses load calculations, not DLC lists.",
+      "b": "Audit levels remain defined by ASHRAE and industry practice."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "A belt-driven fan system shows slipping belts and poor alignment. Corrective maintenance primarily improves:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Building window U-factor"
+      },
+      {
+        "id": "b",
+        "text": "Gas boiler excess air levels"
+      },
+      {
+        "id": "c",
+        "text": "Indoor CO₂ setpoints"
+      },
+      {
+        "id": "d",
+        "text": "Mechanical efficiency and reliability of power transfer to the fan"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Proper belt tension and alignment reduce slippage losses and wear, delivering more fan work per kWh input.",
+    "distractorExplanations": {
+      "a": "Window U-factor is an envelope property.",
+      "b": "Boiler combustion is unrelated to belt drives.",
+      "c": "CO₂ setpoints are ventilation control parameters."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "electrical-lighting",
+    "prompt": "A 460V motor circuit draws 100 A at 0.75 power factor. Approximate real power is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "59 kW"
+      },
+      {
+        "id": "b",
+        "text": "79 kW"
+      },
+      {
+        "id": "c",
+        "text": "46 kW"
+      },
+      {
+        "id": "d",
+        "text": "100 kW"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Three-phase kW ≈ √3 × V × I × PF / 1000 = 1.732 × 460 × 100 × 0.75 / 1000 ≈ 59.7 kW.",
+    "distractorExplanations": {
+      "b": "This would require PF near 1.0 without adjusting the calculation.",
+      "c": "This understates real power for the given voltage, current, and PF.",
+      "d": "100 kW ignores voltage, √3 factor, and power factor."
+    },
+    "difficulty": "hard"
+  }
+]

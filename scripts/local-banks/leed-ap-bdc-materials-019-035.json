@@ -1,0 +1,308 @@
+[
+  {
+    "topicId": "materials-resources",
+    "prompt": "A LEED BD+C project team is documenting salvaged brick for reuse in interior feature walls. Which practice best supports Materials and Resources credit intent?",
+    "options": [
+      { "id": "a", "text": "Count salvaged material toward recycled content by default" },
+      { "id": "b", "text": "Track salvaged material separately with source and installed quantity documentation" },
+      { "id": "c", "text": "Exclude all salvaged material from LEED calculations" },
+      { "id": "d", "text": "Report salvaged material only under Indoor Environmental Quality" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Salvaged and reused materials are documented with source, quantity, and application so the project can demonstrate waste reduction and reuse strategies under Materials and Resources rather than treating them as generic recycled content.",
+    "distractorExplanations": {
+      "a": "Salvaged reuse is not automatically equivalent to post-consumer recycled content reporting rules.",
+      "c": "Properly documented salvage can contribute to MR strategies; exclusion ignores valid reuse.",
+      "d": "Salvage documentation belongs to Materials and Resources, not IEQ."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "materials-resources",
+    "prompt": "Which document type helps a project team compare embodied impacts of competing concrete mix designs for MR disclosure credits?",
+    "options": [
+      { "id": "a", "text": "Health Product Declaration (HPD)" },
+      { "id": "b", "text": "Environmental Product Declaration (EPD)" },
+      { "id": "c", "text": "Commissioning report" },
+      { "id": "d", "text": "Blower door test summary" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "EPDs provide third-party life-cycle impact data for products, supporting building product disclosure and optimization credits when teams compare functionally equivalent options such as concrete mixes.",
+    "distractorExplanations": {
+      "a": "HPDs focus on material health and ingredient disclosure, not full life-cycle embodied carbon comparison.",
+      "c": "Commissioning verifies system performance after installation, not product LCA disclosure.",
+      "d": "Envelope air leakage testing relates to energy performance, not product EPD documentation."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "materials-resources",
+    "prompt": "A contractor reports 900 tons total construction waste with 720 tons diverted. What diversion rate should be recorded for MR tracking?",
+    "options": [
+      { "id": "a", "text": "72%" },
+      { "id": "b", "text": "80%" },
+      { "id": "c", "text": "85%" },
+      { "id": "d", "text": "90%" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Diversion rate equals diverted tons divided by total tons generated: 720 ÷ 900 = 0.80, or 80%.",
+    "distractorExplanations": {
+      "a": "72% would result from dividing by the wrong denominator or using 648 diverted tons.",
+      "c": "85% overstates diversion unless diverted tonnage is higher than reported.",
+      "d": "90% would require 810 tons diverted from 900 total, not 720."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "materials-resources",
+    "prompt": "For regional materials credit documentation, which extraction/harvest location rule is typically applied?",
+    "options": [
+      { "id": "a", "text": "Final assembly location only" },
+      { "id": "b", "text": "Point of manufacture only, regardless of raw material origin" },
+      { "id": "c", "text": "Raw material extraction or harvest within a defined radius of the project site" },
+      { "id": "d", "text": "Corporate headquarters of the manufacturer" }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Regional materials credits generally require that raw materials be extracted, harvested, or recovered within a specified distance of the project, with additional rules for manufacture and assembly.",
+    "distractorExplanations": {
+      "a": "Assembly location alone does not satisfy regional sourcing without qualifying extraction/harvest criteria.",
+      "b": "Manufacturing location without qualifying raw material origin is insufficient.",
+      "d": "Manufacturer headquarters is not used as the regional sourcing reference point."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "materials-resources",
+    "prompt": "A project specifies gypsum board with 95% pre-consumer recycled content. Which statement is most accurate for MR documentation?",
+    "options": [
+      { "id": "a", "text": "Pre-consumer recycled content can count toward recycled content calculations when properly documented" },
+      { "id": "b", "text": "Only post-consumer content may ever be counted for LEED" },
+      { "id": "c", "text": "Recycled content in gypsum board counts under Energy and Atmosphere" },
+      { "id": "d", "text": "Recycled content is excluded if the product also has an EPD" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "LEED MR recycled content calculations can include qualifying pre-consumer and post-consumer recycled material when manufacturer documentation supports the percentages by cost or weight as required by the rating system.",
+    "distractorExplanations": {
+      "b": "Post-consumer is not the only eligible recycled content category in MR calculations.",
+      "c": "Material recycled content is tracked under Materials and Resources, not EA.",
+      "d": "EPDs and recycled content documentation can both support MR credit paths."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "materials-resources",
+    "prompt": "Which strategy most directly reduces construction waste generation before diversion planning?",
+    "options": [
+      { "id": "a", "text": "Ordering materials with cut-to-length and prefabrication where feasible" },
+      { "id": "b", "text": "Increasing landfill tipping fees on site" },
+      { "id": "c", "text": "Eliminating all material submittals" },
+      { "id": "d", "text": "Using only imported materials regardless of distance" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Source reduction through prefabrication, optimized ordering, and design for efficient material use lowers waste generation upstream, complementing diversion and recycling during construction.",
+    "distractorExplanations": {
+      "b": "Higher disposal costs may encourage diversion but do not reduce waste at the source.",
+      "c": "Submittals support compliance and material verification; eliminating them does not reduce waste.",
+      "d": "Import distance does not inherently reduce waste generation."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "materials-resources",
+    "prompt": "An HPD primarily helps project teams evaluate which aspect of a building product?",
+    "options": [
+      { "id": "a", "text": "Ingredient hazards and material health transparency" },
+      { "id": "b", "text": "Fan energy consumption" },
+      { "id": "c", "text": "Daylight autonomy hours" },
+      { "id": "d", "text": "Stormwater peak flow rate" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Health Product Declarations disclose material ingredients and associated health hazards, supporting material ingredient reporting and optimization credits alongside low-emitting material strategies.",
+    "distractorExplanations": {
+      "b": "Fan energy is an operational energy topic under Energy and Atmosphere.",
+      "c": "Daylight metrics belong to Indoor Environmental Quality.",
+      "d": "Stormwater management is addressed under Sustainable Sites and Water Efficiency."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "materials-resources",
+    "prompt": "A project team wants credit for extended producer responsibility for flooring take-back. What must they typically demonstrate?",
+    "options": [
+      { "id": "a", "text": "Manufacturer program that reclaims the specified product at end of use" },
+      { "id": "b", "text": "Any local recycling bin near the jobsite" },
+      { "id": "c", "text": "Use of virgin material only" },
+      { "id": "d", "text": "Elimination of all product warranties" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Extended producer responsibility credits require documented manufacturer take-back or reuse programs covering the installed product category, not generic jobsite recycling alone.",
+    "distractorExplanations": {
+      "b": "General recycling availability does not prove a manufacturer take-back program for the specified product.",
+      "c": "Virgin material use does not demonstrate producer responsibility for end-of-life recovery.",
+      "d": "Warranty terms are unrelated to take-back program documentation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "materials-resources",
+    "prompt": "Demolition on a BD+C core-and-shell project generates mixed concrete and metal. Best practice for MR waste management planning is to:",
+    "options": [
+      { "id": "a", "text": "Separate streams on site where markets exist and track weights by material type" },
+      { "id": "b", "text": "Combine all waste into one dumpster to simplify hauling" },
+      { "id": "c", "text": "Landfill concrete because it is inert" },
+      { "id": "d", "text": "Exclude demolition waste from LEED reporting entirely" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Construction and demolition waste management credits reward measured diversion through source separation, recycling, salvage, and donation with documented tonnage by stream.",
+    "distractorExplanations": {
+      "b": "Commingled disposal typically lowers diversion rates and documentation quality.",
+      "c": "Concrete is commonly recyclable; landfilling ignores diversion opportunities.",
+      "d": "Qualifying C&D waste must be included in project waste reporting."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "materials-resources",
+    "prompt": "Which wood product claim best supports responsible sourcing for MR credits?",
+    "options": [
+      { "id": "a", "text": "Marketing brochure stating sustainable forestry" },
+      { "id": "b", "text": "FSC or approved equivalent chain-of-custody certification" },
+      { "id": "c", "text": "Paint finish with zero VOC only" },
+      { "id": "d", "text": "Domestic shipping within one week" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Third-party chain-of-custody certification such as FSC demonstrates verified responsible forest management and traceability required for sourcing credits.",
+    "distractorExplanations": {
+      "a": "Unverified marketing claims do not substitute for third-party certification.",
+      "c": "Low VOC finishes support IEQ; they do not prove responsible forest sourcing.",
+      "d": "Fast shipping does not verify sustainable harvest practices."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "materials-resources",
+    "prompt": "A specifier compares two functionally equivalent insulation products with Type III EPDs. The most appropriate comparison metric for global warming potential is usually reported as:",
+    "options": [
+      { "id": "a", "text": "Per declared unit over the EPD scope (e.g., per functional unit)" },
+      { "id": "b", "text": "Per manufacturer annual revenue" },
+      { "id": "c", "text": "Per installer labor hour only" },
+      { "id": "d", "text": "Per building occupant survey score" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "EPDs normalize impacts such as global warming potential to a declared functional unit so teams compare equivalent products on a consistent basis for optimization credits.",
+    "distractorExplanations": {
+      "b": "Corporate revenue is not an EPD impact normalization basis.",
+      "c": "Labor hours are not the standard EPD functional unit for product comparison.",
+      "d": "Occupant surveys measure experience, not product LCA impacts."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "materials-resources",
+    "prompt": "On a LEED BD+C project, packaging waste from product deliveries should be:",
+    "options": [
+      { "id": "a", "text": "Included in construction waste totals when generated on site" },
+      { "id": "b", "text": "Always excluded because it is not construction activity" },
+      { "id": "c", "text": "Counted only under Water Efficiency credits" },
+      { "id": "d", "text": "Reported only if burned on site" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Packaging and other waste generated during construction activities on the project site is typically included in total waste calculations and diversion tracking for MR compliance.",
+    "distractorExplanations": {
+      "b": "On-site packaging waste from construction is generally part of C&D waste accounting.",
+      "c": "Packaging waste is unrelated to water efficiency credits.",
+      "d": "Open burning is prohibited and not a reporting method."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "materials-resources",
+    "prompt": "A team donates unused tile to a qualified nonprofit before installation. How should this be treated in waste management reporting?",
+    "options": [
+      { "id": "a", "text": "As diversion through donation if quantities and receipts are documented" },
+      { "id": "b", "text": "As landfill waste because it left the contractor warehouse" },
+      { "id": "c", "text": "As recycled content in the installed product" },
+      { "id": "d", "text": "As energy modeling input" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Material donation to approved recipients can count toward diversion when documentation shows weight or volume diverted from landfill through reuse pathways.",
+    "distractorExplanations": {
+      "b": "Documented donation is a diversion strategy, not landfill disposal.",
+      "c": "Donated surplus material is not the same as recycled content in a manufactured product.",
+      "d": "Donation tracking is unrelated to energy simulation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "materials-resources",
+    "prompt": "Which material cost basis is commonly used when calculating percentages for LEED MR credit thresholds?",
+    "options": [
+      { "id": "a", "text": "Total material cost of permanently installed building products" },
+      { "id": "b", "text": "Land acquisition cost only" },
+      { "id": "c", "text": "Temporary construction office furniture only" },
+      { "id": "d", "text": "Owner marketing budget" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Many MR calculations use the cost of permanently installed building products as the denominator when determining compliance percentages for recycled, regional, or certified materials.",
+    "distractorExplanations": {
+      "b": "Land cost is outside installed building product calculations.",
+      "c": "Temporary furnishings are generally excluded from permanent product cost bases.",
+      "d": "Marketing budgets are not part of MR material cost accounting."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "materials-resources",
+    "prompt": "A steel fabricator provides documentation of 85% recycled content for structural steel. The architect should verify:",
+    "options": [
+      { "id": "a", "text": "Manufacturer-specific data applicable to the supplied heat or batch where required" },
+      { "id": "b", "text": "That all steel globally averages 85% so any supplier qualifies" },
+      { "id": "c", "text": "Only the paint color matches the specification" },
+      { "id": "d", "text": "That steel is excluded from MR because it is structural" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Recycled content claims must be supported by product-specific or mill-specific documentation tied to the material supplied, not unsupported industry averages alone.",
+    "distractorExplanations": {
+      "b": "Generic industry averages do not automatically qualify a specific order without supporting data.",
+      "c": "Appearance does not verify recycled content documentation.",
+      "d": "Structural steel is commonly included in MR product calculations."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "materials-resources",
+    "prompt": "Which action best supports a multi-attribute optimization approach in MR product selection?",
+    "options": [
+      { "id": "a", "text": "Selecting the lowest first cost option regardless of documentation" },
+      { "id": "b", "text": "Comparing functionally equivalent products using EPD, HPD, and emissions data where available" },
+      { "id": "c", "text": "Specifying only imported materials to increase transport impacts" },
+      { "id": "d", "text": "Eliminating all material substitutions during construction" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Optimization credits encourage teams to compare disclosed environmental and health information across equivalent products rather than relying on single attributes or cost alone.",
+    "distractorExplanations": {
+      "a": "First cost alone ignores disclosed impact and health data sought by MR optimization.",
+      "c": "Higher transport impacts work against environmental optimization goals.",
+      "d": "Controlled substitutions with verified products can still meet MR intent."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "materials-resources",
+    "prompt": "A project uses on-site grinding of clean concrete for use as engineered fill on the same project. For MR waste tracking, this is best classified as:",
+    "options": [
+      { "id": "a", "text": "Diversion through on-site reuse when quantified and documented" },
+      { "id": "b", "text": "Landfill disposal by default" },
+      { "id": "c", "text": "Indoor air quality flush-out" },
+      { "id": "d", "text": "Renewable energy generation" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Processing clean concrete for beneficial reuse on the project can count as diverted waste if tonnage and end use are documented under the waste management plan.",
+    "distractorExplanations": {
+      "b": "Beneficial on-site reuse is diversion, not landfill disposal.",
+      "c": "Flush-out is an IEQ commissioning activity, not waste diversion.",
+      "d": "Concrete grinding is not energy production."
+    },
+    "difficulty": "medium"
+  }
+]

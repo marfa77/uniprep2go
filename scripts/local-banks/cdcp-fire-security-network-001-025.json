@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "fire-security-network",
+    "prompt": "NFPA 75 primarily addresses fire protection for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Information technology equipment and data processing areas"
+      },
+      {
+        "id": "b",
+        "text": "Only residential kitchens"
+      },
+      {
+        "id": "c",
+        "text": "Swimming pool chemistry"
+      },
+      {
+        "id": "d",
+        "text": "Aircraft navigation lights"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "NFPA 75 covers IT equipment areas including detection and suppression strategies.",
+    "distractorExplanations": {
+      "b": "Residential kitchens use other codes.",
+      "c": "Pool chemistry unrelated.",
+      "d": "Aviation unrelated."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "NFPA 76 focuses on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fire protection of telecommunications facilities"
+      },
+      {
+        "id": "b",
+        "text": "Only parking lot striping"
+      },
+      {
+        "id": "c",
+        "text": "Chiller refrigerant selection only"
+      },
+      {
+        "id": "d",
+        "text": "Employee vacation policy"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "NFPA 76 addresses telecom infrastructure fire risks.",
+    "distractorExplanations": {
+      "b": "Striping unrelated.",
+      "c": "Refrigerant is mechanical code.",
+      "d": "HR policy unrelated."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Clean agent fire suppression (e.g., FM-200, Novec 1230) is chosen because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "It extinguishes fire with minimal residue and low conductivity suitable for energized equipment"
+      },
+      {
+        "id": "b",
+        "text": "It always replaces oxygen permanently for hours"
+      },
+      {
+        "id": "c",
+        "text": "It floods the room with water"
+      },
+      {
+        "id": "d",
+        "text": "It is only for outdoor brush fires"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Clean agents protect electronics better than water in many IT spaces.",
+    "distractorExplanations": {
+      "b": "Agents work via heat absorption/inhibition, not long oxygen displacement alone.",
+      "c": "Water is separate sprinkler approach.",
+      "d": "Agents are for enclosed volumes."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Pre-action sprinkler systems in data halls typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Require detection confirmation before water fills pipes to reduce accidental discharge"
+      },
+      {
+        "id": "b",
+        "text": "Release water instantly without detection"
+      },
+      {
+        "id": "c",
+        "text": "Use only diesel fuel as agent"
+      },
+      {
+        "id": "d",
+        "text": "Eliminate all detection"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Pre-action reduces false discharge risk in sensitive areas.",
+    "distractorExplanations": {
+      "b": "Detection precedes water release.",
+      "c": "Diesel is not suppression agent.",
+      "d": "Detection is integral."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "VESDA (very early smoke detection apparatus) samples air to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Detect combustion products at low concentrations before visible smoke"
+      },
+      {
+        "id": "b",
+        "text": "Measure rack kW only"
+      },
+      {
+        "id": "c",
+        "text": "Humidify the room"
+      },
+      {
+        "id": "d",
+        "text": "Patch fiber cables"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Aspirating detection provides early warning in critical facilities.",
+    "distractorExplanations": {
+      "b": "Power metering separate.",
+      "c": "Humidification separate.",
+      "d": "Patching unrelated."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Fire compartmentation in a data centre aims to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Limit fire/smoke spread between zones to protect life and continuity"
+      },
+      {
+        "id": "b",
+        "text": "Increase airflow mixing"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate all egress"
+      },
+      {
+        "id": "d",
+        "text": "Store cardboard freely"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Rated barriers and firestops contain events to manageable zones.",
+    "distractorExplanations": {
+      "b": "Compartmentation restricts spread.",
+      "c": "Egress must remain.",
+      "d": "Combustibles discouraged."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Gaseous suppression discharge may require:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Abort holds, warning horns/strobes, and door dampers to maintain agent concentration"
+      },
+      {
+        "id": "b",
+        "text": "All doors wedged open during discharge"
+      },
+      {
+        "id": "c",
+        "text": "Operators inside the room during release"
+      },
+      {
+        "id": "d",
+        "text": "Disabling all alarms"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Life safety sequences warn occupants and hold doors to retain agent.",
+    "distractorExplanations": {
+      "b": "Open doors vent agent.",
+      "c": "Evacuation required.",
+      "d": "Alarms must activate."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Physical security mantrap (airlock) controls:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sequential door access so only one door is open at a time"
+      },
+      {
+        "id": "b",
+        "text": "Chilled water temperature"
+      },
+      {
+        "id": "c",
+        "text": "Fiber optic loss"
+      },
+      {
+        "id": "d",
+        "text": "Battery watering"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Mantraps prevent tailgating into secure areas.",
+    "distractorExplanations": {
+      "b": "HVAC control.",
+      "c": "Optical testing.",
+      "d": "Battery maintenance."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Biometric access control adds:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stronger identity binding than shared PINs or cards alone"
+      },
+      {
+        "id": "b",
+        "text": "Elimination of audit logs"
+      },
+      {
+        "id": "c",
+        "text": "Public anonymous entry"
+      },
+      {
+        "id": "d",
+        "text": "Removal of cameras"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Biometrics reduce credential sharing risk when properly implemented.",
+    "distractorExplanations": {
+      "b": "Logs still required.",
+      "c": "Access remains authenticated.",
+      "d": "Cameras complement access."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "CCTV retention policies should align with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Security investigations, privacy regulations, and storage capacity"
+      },
+      {
+        "id": "b",
+        "text": "Random deletion hourly always"
+      },
+      {
+        "id": "c",
+        "text": "Only cafeteria reviews"
+      },
+      {
+        "id": "d",
+        "text": "Zero recording ever"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Retention balances investigative need and legal privacy requirements.",
+    "distractorExplanations": {
+      "b": "Policy-driven retention, not random.",
+      "c": "Irrelevant scope.",
+      "d": "Recording often required."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Intrusion detection on perimeter fencing may use:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vibration, fiber optic sensing, or microwave beams"
+      },
+      {
+        "id": "b",
+        "text": "Only decorative paint"
+      },
+      {
+        "id": "c",
+        "text": "Open gates overnight"
+      },
+      {
+        "id": "d",
+        "text": "Removal of lighting"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Layered sensors detect climb/cut attempts.",
+    "distractorExplanations": {
+      "b": "Paint not detection.",
+      "c": "Open gates weaken security.",
+      "d": "Lighting aids detection."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Visitor management in a colocation facility requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Escort policies, badge logging, and defined access zones"
+      },
+      {
+        "id": "b",
+        "text": "Unescorted roaming in all halls"
+      },
+      {
+        "id": "c",
+        "text": "Shared PINs for all visitors"
+      },
+      {
+        "id": "d",
+        "text": "No records kept"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Visitor procedures maintain chain of custody and accountability.",
+    "distractorExplanations": {
+      "b": "Escorts typical in white space.",
+      "c": "Shared PINs violate accountability.",
+      "d": "Logs required."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Structured cabling TIA-568 recommends:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maximum channel lengths and performance categories for copper and fiber"
+      },
+      {
+        "id": "b",
+        "text": "Unlimited cable length without loss"
+      },
+      {
+        "id": "c",
+        "text": "Mixing all voltages in patch cords"
+      },
+      {
+        "id": "d",
+        "text": "No testing of installed links"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Standards ensure predictable network performance.",
+    "distractorExplanations": {
+      "b": "Length limits apply.",
+      "c": "Power/data separation rules exist.",
+      "d": "Certification testing validates installs."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Single-mode fiber is preferred for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Long-distance campus and carrier links due to lower attenuation"
+      },
+      {
+        "id": "b",
+        "text": "Only 2 m patch cords inside one rack always"
+      },
+      {
+        "id": "c",
+        "text": "Carrying 480 V power"
+      },
+      {
+        "id": "d",
+        "text": "Fire suppression piping"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "SMF supports long spans at high speeds.",
+    "distractorExplanations": {
+      "b": "MMF may be fine short distance; SMF not limited to rack only.",
+      "c": "Fiber carries light signals.",
+      "d": "Suppression uses listed piping."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Multimode fiber OM4 supports:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Higher bandwidth at moderate distances within buildings"
+      },
+      {
+        "id": "b",
+        "text": "Unlimited distance globally without repeaters"
+      },
+      {
+        "id": "c",
+        "text": "Only analog phone POTS forever"
+      },
+      {
+        "id": "d",
+        "text": "Diesel storage"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "OM4 is common for intra-building high-speed links.",
+    "distractorExplanations": {
+      "b": "Distance still limited by loss/modal dispersion.",
+      "c": "Modern data centres use digital fiber channels.",
+      "d": "Fuel unrelated."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Meet-me room security typically includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Carrier-only access, CCTV, and logging of cross-connect work"
+      },
+      {
+        "id": "b",
+        "text": "Public open house without badges"
+      },
+      {
+        "id": "c",
+        "text": "Storage of propane cylinders"
+      },
+      {
+        "id": "d",
+        "text": "No locks"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "MMRs are high-value connectivity points requiring strict control.",
+    "distractorExplanations": {
+      "b": "Public access unacceptable.",
+      "c": "Hazmat prohibited.",
+      "d": "Locks required."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Cable fire stopping at rated walls must use:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Listed systems tested for that penetration type"
+      },
+      {
+        "id": "b",
+        "text": "Foam without listing"
+      },
+      {
+        "id": "c",
+        "text": "Leaving holes open"
+      },
+      {
+        "id": "d",
+        "text": "Duct tape only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Firestop maintains wall rating integrity.",
+    "distractorExplanations": {
+      "b": "Non-listed foam may fail.",
+      "c": "Open holes defeat rating.",
+      "d": "Duct tape not approved."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Emergency lighting in egress paths:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Illuminates exit routes during power loss per life safety codes"
+      },
+      {
+        "id": "b",
+        "text": "Is optional in all data centres"
+      },
+      {
+        "id": "c",
+        "text": "Replaces fire detection"
+      },
+      {
+        "id": "d",
+        "text": "Operates only during festivals"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Battery/generator-backed egress lighting supports evacuation.",
+    "distractorExplanations": {
+      "b": "Typically mandatory.",
+      "c": "Detection separate.",
+      "d": "Continuous readiness required."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Safety shower/eyewash near battery rooms addresses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chemical splash exposure from electrolyte or maintenance fluids"
+      },
+      {
+        "id": "b",
+        "text": "Coffee spills only"
+      },
+      {
+        "id": "c",
+        "text": "Fiber polishing"
+      },
+      {
+        "id": "d",
+        "text": "Humidity control"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Battery areas require emergency wash equipment per safety codes.",
+    "distractorExplanations": {
+      "b": "Electrolyte exposure is primary driver.",
+      "c": "Fiber work uses other tools.",
+      "d": "HVAC separate."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Hot work permits in a live data centre:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Control welding/cutting with fire watch and area preparation"
+      },
+      {
+        "id": "b",
+        "text": "Allow welding on live racks without precautions"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate need for extinguishers"
+      },
+      {
+        "id": "d",
+        "text": "Replace change management"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Hot work is a major ignition source requiring permits and watches.",
+    "distractorExplanations": {
+      "b": "Precautions mandatory.",
+      "c": "Extinguishers required.",
+      "d": "Change management still applies."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Smoke control during fire events may use:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pressurization, exhaust, and damper sequences per engineered plans"
+      },
+      {
+        "id": "b",
+        "text": "Random fan reversal without design"
+      },
+      {
+        "id": "c",
+        "text": "Sealing egress doors permanently"
+      },
+      {
+        "id": "d",
+        "text": "Disabling all HVAC forever"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Engineered smoke control protects egress and equipment zones.",
+    "distractorExplanations": {
+      "b": "Unplanned reversal can worsen spread.",
+      "c": "Egress must remain functional.",
+      "d": "Controlled sequences, not permanent disable."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Access control anti-passback prevents:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Using a badge to enter without a matching exit record (tailgating/credential pass-back)"
+      },
+      {
+        "id": "b",
+        "text": "All legitimate access"
+      },
+      {
+        "id": "c",
+        "text": "Logging events"
+      },
+      {
+        "id": "d",
+        "text": "Installing cameras"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Anti-passback enforces sequential entry/exit rules.",
+    "distractorExplanations": {
+      "b": "Legitimate users follow sequence.",
+      "c": "Events still logged.",
+      "d": "Cameras independent."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Network redundancy via diverse paths means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Separate conduits/routes so one backhoe cut does not kill all links"
+      },
+      {
+        "id": "b",
+        "text": "One conduit shared by all carriers"
+      },
+      {
+        "id": "c",
+        "text": "Wireless only without encryption"
+      },
+      {
+        "id": "d",
+        "text": "No documentation"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Physical diversity underpins resilient connectivity.",
+    "distractorExplanations": {
+      "b": "Shared conduit is single point of failure.",
+      "c": "Wireless still needs security.",
+      "d": "Documentation essential."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Patch panel labeling standards (e.g., TIA-606) improve:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Troubleshooting and MAC work accuracy"
+      },
+      {
+        "id": "b",
+        "text": "Fire suppression agent selection"
+      },
+      {
+        "id": "c",
+        "text": "Chiller efficiency only"
+      },
+      {
+        "id": "d",
+        "text": "Generator fuel polishing"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Consistent IDs map physical ports to logical records.",
+    "distractorExplanations": {
+      "b": "Agent selection is fire engineering.",
+      "c": "Chiller separate.",
+      "d": "Fuel separate."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Water mist systems in some IT-adjacent areas:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use fine droplets to absorb heat with less water damage than standard sprinklers"
+      },
+      {
+        "id": "b",
+        "text": "Always flood entire facility instantly"
+      },
+      {
+        "id": "c",
+        "text": "Replace all detection"
+      },
+      {
+        "id": "d",
+        "text": "Operate only manually with no alarms"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Water mist can be engineered for certain enclosures with reduced water volume.",
+    "distractorExplanations": {
+      "b": "Design targets specific hazards.",
+      "c": "Detection still required.",
+      "d": "Alarms integrate with systems."
+    },
+    "difficulty": "hard"
+  }
+]

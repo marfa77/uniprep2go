@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "PPE as last resort is illustrated by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Selecting gloves before identifying the chemical"
+      },
+      {
+        "id": "b",
+        "text": "Choosing gloves and goggles only after considering substitution and enclosure for a corrosive splash task"
+      },
+      {
+        "id": "c",
+        "text": "Using PPE instead of guarding on a press"
+      },
+      {
+        "id": "d",
+        "text": "Skipping all other controls because PPE is cheap"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Hierarchy requires higher controls first; PPE supplements when residual risk remains.",
+    "distractorExplanations": {
+      "a": "Chemical identity informs PPE selection after broader controls.",
+      "c": "PPE cannot replace machine guarding.",
+      "d": "Cheap PPE does not justify skipping hierarchy."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "A new employee with a disclosed disability requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Automatic dismissal from all site work"
+      },
+      {
+        "id": "b",
+        "text": "No conversation about task limitations"
+      },
+      {
+        "id": "c",
+        "text": "Individual assessment of reasonable adjustments without blanket exclusion from role"
+      },
+      {
+        "id": "d",
+        "text": "Identical assumptions without medical/workplace dialogue"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Equality and safety align: assess adjustments, do not stereotype or exclude without justification.",
+    "distractorExplanations": {
+      "a": "Blanket dismissal is discriminatory.",
+      "b": "Dialogue informs adjustments.",
+      "d": "Individual factors matter."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "GIC2 report writing should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use vague language to avoid any management action"
+      },
+      {
+        "id": "b",
+        "text": "Omit recommendations to stay neutral"
+      },
+      {
+        "id": "c",
+        "text": "Copy unrelated assessment from internet"
+      },
+      {
+        "id": "d",
+        "text": "Present findings clearly, prioritise recommendations, and use evidence from inspection and interviews"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Reports demonstrate communication skill — clear hazards, risk evaluation, and actionable recommendations.",
+    "distractorExplanations": {
+      "a": "Vagueness fails GIC2 communication criteria.",
+      "b": "Recommendations are essential output.",
+      "c": "Recommendations are essential output."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "Combining multiple low-severity risks at one workstation:",
+    "options": [
+      {
+        "id": "a",
+        "text": "May still require control if cumulative exposure or interaction creates significant combined risk"
+      },
+      {
+        "id": "b",
+        "text": "Is always insignificant without evaluation"
+      },
+      {
+        "id": "c",
+        "text": "Eliminates need for any PPE ever"
+      },
+      {
+        "id": "d",
+        "text": "Means only one line in assessment is enough without detail"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Assessments consider combined and simultaneous exposures, not only isolated micro-risks.",
+    "distractorExplanations": {
+      "b": "This option does not best address the scenario described.",
+      "c": "Combined exposure may need controls.",
+      "d": "Detail proportionate to significance is required."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "Step 2 — decide who might be harmed — includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only full-time directors"
+      },
+      {
+        "id": "b",
+        "text": "Employees, contractors, visitors, public, and vulnerable groups such as young or disabled workers"
+      },
+      {
+        "id": "c",
+        "text": "Only people management dislikes"
+      },
+      {
+        "id": "d",
+        "text": "Excluding cleaners because they are contractors"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "All affected groups must be considered, including indirect and vulnerable populations.",
+    "distractorExplanations": {
+      "a": "Directors are included but not exclusively.",
+      "c": "Personal dislike is irrelevant.",
+      "d": "Contractors must be considered."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "Risk assessment for maintenance during production should cover:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only office lighting"
+      },
+      {
+        "id": "b",
+        "text": "Assumption maintenance never overlaps production"
+      },
+      {
+        "id": "c",
+        "text": "Simultaneous operations (SIMOPS), isolation, communication, and fire/explosion interfaces"
+      },
+      {
+        "id": "d",
+        "text": "Exclusion of contractor maintainers"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "SIMOPS assessments prevent collision of maintenance and operations hazards.",
+    "distractorExplanations": {
+      "a": "Office lighting is insufficient scope.",
+      "b": "Overlap is common and must be assessed.",
+      "d": "Contractor maintainers are affected persons."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "ALARP principle means risks should be reduced to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Zero regardless of any cost or feasibility"
+      },
+      {
+        "id": "b",
+        "text": "Whatever is cheapest without risk consideration"
+      },
+      {
+        "id": "c",
+        "text": "Level where insurance policy ends"
+      },
+      {
+        "id": "d",
+        "text": "As low as reasonably practicable — balancing risk, cost, and benefit of further controls"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "ALARP guides proportionate control investment — not zero at infinite cost, not negligence either.",
+    "distractorExplanations": {
+      "a": "Zero risk is often not reasonably practicable.",
+      "b": "Cheapest option ignoring risk is not ALARP.",
+      "c": "Cheapest option ignoring risk is not ALARP."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "Prioritising recommendations in GIC2 should reflect:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Risk level, feasibility, and legal compliance gaps observed during inspection"
+      },
+      {
+        "id": "b",
+        "text": "Random order to appear comprehensive"
+      },
+      {
+        "id": "c",
+        "text": "Only cosmetic issues first"
+      },
+      {
+        "id": "d",
+        "text": "Alphabetical hazard names only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Prioritisation demonstrates judgement — high risk and legal breaches first.",
+    "distractorExplanations": {
+      "b": "This option does not best address the scenario described.",
+      "c": "Cosmetics should not trump serious harm.",
+      "d": "Alphabetical order ignores severity."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "Temporary workers agency and host employer should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assume the other party holds all duties alone"
+      },
+      {
+        "id": "b",
+        "text": "Cooperate to ensure induction, risk assessment coverage, and clear safety responsibilities"
+      },
+      {
+        "id": "c",
+        "text": "Skip induction because tenure is short"
+      },
+      {
+        "id": "d",
+        "text": "Provide no information on site hazards"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Both parties have duties; cooperation ensures temp workers are not left in gap.",
+    "distractorExplanations": {
+      "a": "Duties are shared/coordinated, not dumped.",
+      "c": "Short tenure still needs induction.",
+      "d": "Hazard information must be shared."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "A control measure that is 'reasonably practicable' considers:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only shareholder dividend targets"
+      },
+      {
+        "id": "b",
+        "text": "Celebrity endorsements of PPE"
+      },
+      {
+        "id": "c",
+        "text": "Gravity and likelihood of harm versus sacrifice (cost, time, difficulty) in money terms"
+      },
+      {
+        "id": "d",
+        "text": "Luck of the calendar month"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Classic ALARP balancing from case law — risk versus sacrifice.",
+    "distractorExplanations": {
+      "a": "Dividends alone do not define practicability.",
+      "b": "Endorsements are irrelevant.",
+      "d": "Calendar luck is not analysis."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "Near-miss investigation input to risk assessment review should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Be ignored because no injury occurred"
+      },
+      {
+        "id": "b",
+        "text": "Trigger blame only without system update"
+      },
+      {
+        "id": "c",
+        "text": "Delete near-miss records to reduce paperwork"
+      },
+      {
+        "id": "d",
+        "text": "Update controls when investigation shows failed or missing controls"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Near misses are free learning; assessments should reflect findings.",
+    "distractorExplanations": {
+      "a": "Near misses predict serious harm potential.",
+      "b": "Blame alone misses system fixes.",
+      "c": "Blame alone misses system fixes."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "GIC2 candidate notices unguarded drill in busy walkway area. Best immediate recommendation:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Segregate or guard the equipment, restrict access, and review PUWER assessment for location"
+      },
+      {
+        "id": "b",
+        "text": "Move walkway through the drill path"
+      },
+      {
+        "id": "c",
+        "text": "Paint drill bright colour only"
+      },
+      {
+        "id": "d",
+        "text": "Ignore if drill is not running at that second"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Accessible dangerous parts in walkways need guarding/segregation — strong practical marks.",
+    "distractorExplanations": {
+      "b": "This option does not best address the scenario described.",
+      "c": "Paint does not prevent contact.",
+      "d": "Idle today does not remove tomorrow's risk."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "Risk assessor competence includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guessing hazards without site visit"
+      },
+      {
+        "id": "b",
+        "text": "Understanding hazards, legal duties, control options, and ability to involve workers"
+      },
+      {
+        "id": "c",
+        "text": "Copying another site without adaptation"
+      },
+      {
+        "id": "d",
+        "text": "Refusing to document findings"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Competent assessors tailor assessments with participation and knowledge of hierarchy and law.",
+    "distractorExplanations": {
+      "a": "Site-specific inspection is essential.",
+      "c": "Adaptation to context is required.",
+      "d": "Documentation is part of competence."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "Monitoring effectiveness of controls belongs to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only day one of assessment then never"
+      },
+      {
+        "id": "b",
+        "text": "External social media followers"
+      },
+      {
+        "id": "c",
+        "text": "Ongoing health and safety management — inspections, audits, exposure monitoring, and incident review"
+      },
+      {
+        "id": "d",
+        "text": "Annual Christmas party feedback only"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Check stage of management systems verifies controls still work.",
+    "distractorExplanations": {
+      "a": "One-day-only view is insufficient.",
+      "b": "Social media is not monitoring system.",
+      "d": "Party feedback is not systematic monitoring."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "Severity of ergonomic risk from repetitive packing might increase with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Adjustable bench and job rotation"
+      },
+      {
+        "id": "b",
+        "text": "Team lifting aids for heavy items"
+      },
+      {
+        "id": "c",
+        "text": "Micro-break policy enforced"
+      },
+      {
+        "id": "d",
+        "text": "Higher pace, force, awkward postures, and lack of rotation or breaks"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "RSI severity likelihood rises with biomechanical stressors and insufficient recovery.",
+    "distractorExplanations": {
+      "a": "Adjustable bench reduces awkward posture.",
+      "b": "Adjustable bench reduces awkward posture.",
+      "c": "Lifting aids reduce force."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "When likelihood is low but severity is catastrophic, the assessment should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Still consider robust controls because credible worst case is intolerable"
+      },
+      {
+        "id": "b",
+        "text": "Ignore because likelihood is low always"
+      },
+      {
+        "id": "c",
+        "text": "Use PPE only without engineering"
+      },
+      {
+        "id": "d",
+        "text": "Remove all records to avoid worry"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Low frequency high impact events (e.g., confined space asphyxiation) need strong controls.",
+    "distractorExplanations": {
+      "b": "This option does not best address the scenario described.",
+      "c": "PPE alone may be inadequate for catastrophic hazards.",
+      "d": "Records support management."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "GIC2 presentation to management should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use unexplained jargon to impress"
+      },
+      {
+        "id": "b",
+        "text": "Summarise key risks, legal implications, and prioritized actions with timescales"
+      },
+      {
+        "id": "c",
+        "text": "Hide serious findings to maintain friendship"
+      },
+      {
+        "id": "d",
+        "text": "Avoid any questions from audience"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Communication to management requires clarity, prioritisation, and engagement — assessed in GIC2.",
+    "distractorExplanations": {
+      "a": "Jargon obscures message.",
+      "c": "Hiding findings fails duty and assessment.",
+      "d": "Q&A may occur; clarity helps."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "Blanket 'sign risk off' sheets for visitors without site-specific briefing are weak because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are too colourful"
+      },
+      {
+        "id": "b",
+        "text": "They replace all contractor coordination"
+      },
+      {
+        "id": "c",
+        "text": "They do not communicate site-specific hazards and controls at time of visit"
+      },
+      {
+        "id": "d",
+        "text": "They guarantee zero visitor incidents legally"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Visitor controls need induction on current site risks — generic disclaimers are insufficient alone.",
+    "distractorExplanations": {
+      "a": "Colour is not the issue.",
+      "b": "Contractor coordination remains necessary.",
+      "d": "Disclaimers do not transfer legal duties."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "Step 4 — record significant findings — aligns with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Destroying notes immediately"
+      },
+      {
+        "id": "b",
+        "text": "Keeping only verbal agreement"
+      },
+      {
+        "id": "c",
+        "text": "Recording trivial matters only while ignoring major risks"
+      },
+      {
+        "id": "d",
+        "text": "Writing down the assessment results for significant risks and sharing with workforce"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Recording significant findings satisfies legal expectation and supports communication.",
+    "distractorExplanations": {
+      "a": "Destruction removes evidence of compliance.",
+      "b": "Verbal-only fails record duty.",
+      "c": "Verbal-only fails record duty."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "A risk assessment for homeworkers should include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "DSE setup, stress/isolation, electrical safety, trips, and emergency arrangements"
+      },
+      {
+        "id": "b",
+        "text": "Only corporate logo on laptop"
+      },
+      {
+        "id": "c",
+        "text": "Assumption home is not a workplace legally"
+      },
+      {
+        "id": "d",
+        "text": "Exclusion of mental health factors"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Employers' duties extend to homeworkers where work equipment and stress factors apply.",
+    "distractorExplanations": {
+      "b": "This option does not best address the scenario described.",
+      "c": "Home working can still be workplace under law.",
+      "d": "Isolation stress is relevant psychosocial factor."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "Using photographs in GIC2 inspection notes helps by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Replacing all written description illegally"
+      },
+      {
+        "id": "b",
+        "text": "Providing objective evidence of hazards observed for the report"
+      },
+      {
+        "id": "c",
+        "text": "Distracting from recommendations"
+      },
+      {
+        "id": "d",
+        "text": "Violating privacy always without exception"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Photos support evidence-based reporting when used appropriately and proportionately.",
+    "distractorExplanations": {
+      "a": "Photos supplement, not necessarily replace, description.",
+      "c": "Photos aid clarity.",
+      "d": "Appropriate workplace hazard photos are standard practice."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "Control measure SMART follow-up means recommendations should ideally be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vague wishes with no owner"
+      },
+      {
+        "id": "b",
+        "text": "Impossible demands with no resource"
+      },
+      {
+        "id": "c",
+        "text": "Specific, measurable, achievable, relevant, and time-bound where possible"
+      },
+      {
+        "id": "d",
+        "text": "Only long-term vision statements"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Actionable recommendations with owners and dates demonstrate GIC2 practical value.",
+    "distractorExplanations": {
+      "a": "Vague outputs fail follow-through.",
+      "b": "Impossible demands won't be implemented.",
+      "d": "Vision alone lacks actionable detail."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "Reassessment after a control upgrade from administrative to engineering should show:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Same score because paperwork unchanged"
+      },
+      {
+        "id": "b",
+        "text": "Higher risk because engineering is new"
+      },
+      {
+        "id": "c",
+        "text": "Deletion of assessment entirely"
+      },
+      {
+        "id": "d",
+        "text": "Lower residual risk score reflecting improved hierarchy position"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Better controls should reduce evaluated risk if effective.",
+    "distractorExplanations": {
+      "a": "Risk score should reflect control improvement.",
+      "b": "Engineering typically lowers risk, not increases.",
+      "c": "Engineering typically lowers risk, not increases."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "GIC2 ethical conduct during inspection requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Honesty, confidentiality where appropriate, and professional behaviour without falsifying findings"
+      },
+      {
+        "id": "b",
+        "text": "Hiding serious issues for a gift"
+      },
+      {
+        "id": "c",
+        "text": "Inventing hazards not observed"
+      },
+      {
+        "id": "d",
+        "text": "Sharing personal data unnecessarily in report"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Professional ethics underpin trust in assessment outcomes.",
+    "distractorExplanations": {
+      "b": "This option does not best address the scenario described.",
+      "c": "Fabrication is misconduct.",
+      "d": "Personal data minimisation applies."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "gic2-risk-assessment",
+    "prompt": "Integrating risk assessment with emergency planning means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignoring fire risk because assessment is 'health' only"
+      },
+      {
+        "id": "b",
+        "text": "Identifying scenarios requiring evacuation, rescue, or medical response and linking to procedures"
+      },
+      {
+        "id": "c",
+        "text": "Separate plans that contradict each other"
+      },
+      {
+        "id": "d",
+        "text": "No worker training on emergencies"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Assessments feed emergency scenarios — fires, chemical release, confined space rescue.",
+    "distractorExplanations": {
+      "a": "Fire and emergency are part of holistic assessment.",
+      "c": "Contradictory plans confuse response.",
+      "d": "Training implements emergency findings."
+    },
+    "difficulty": "hard"
+  }
+]

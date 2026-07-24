@@ -1,0 +1,306 @@
+[
+  {
+    "id": "bms-bas-readiness-check-bacnet-networking-005",
+    "topicId": "bacnet-networking",
+    "prompt": "In BACnet, which network layer message is used to discover the address of a remote device when only its device instance number is known?",
+    "options": [
+      { "id": "a", "text": "Who-Is" },
+      { "id": "b", "text": "ReadProperty" },
+      { "id": "c", "text": "SubscribeCOV" },
+      { "id": "d", "text": "WriteProperty" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Who-Is is the BACnet broadcast/unbroadcast discovery service; devices respond with I-Am containing their network address and device instance.",
+    "distractorExplanations": {
+      "b": "ReadProperty reads object data after the device address is already known.",
+      "c": "SubscribeCOV registers for change-of-value notifications, not address discovery.",
+      "d": "WriteProperty modifies object values and requires a known device address."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "id": "bms-bas-readiness-check-bacnet-networking-015",
+    "topicId": "bacnet-networking",
+    "prompt": "A BACnet MS/TP trunk shows frequent token-pass failures. Which physical-layer issue is the most common root cause?",
+    "options": [
+      { "id": "a", "text": "Incorrect EIA-485 biasing or termination at segment ends" },
+      { "id": "b", "text": "Duplicate IP addresses on the BBMD" },
+      { "id": "c", "text": "Missing TLS certificates on the supervisory server" },
+      { "id": "d", "text": "ASHRAE Guideline 36 economizer lockout setpoint" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "MS/TP uses EIA-485; missing termination or bias resistors causes reflections and framing errors that break token passing.",
+    "distractorExplanations": {
+      "b": "BBMD and IP conflicts affect BACnet/IP segments, not MS/TP token passing.",
+      "c": "TLS applies to IT-layer security, not MS/TP physical token integrity.",
+      "d": "Control sequences do not cause MS/TP physical-layer token failures."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "id": "bms-bas-readiness-check-bacnet-networking-022",
+    "topicId": "bacnet-networking",
+    "prompt": "Which BACnet object property carries the human-readable label shown on most operator graphics for an Analog Input?",
+    "options": [
+      { "id": "a", "text": "Object_Name" },
+      { "id": "b", "text": "Object_Identifier" },
+      { "id": "c", "text": "Protocol_Version" },
+      { "id": "d", "text": "Segmentation_Supported" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Object_Name is the standard BACnet property for descriptive labels; Object_Identifier is the numeric type-instance key.",
+    "distractorExplanations": {
+      "b": "Object_Identifier is the unique numeric key (type, instance), not the display label.",
+      "c": "Protocol_Version describes the BACnet revision supported by the device.",
+      "d": "Segmentation_Supported indicates message segmentation capability, not naming."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "id": "bms-bas-readiness-check-hvac-control-002",
+    "topicId": "hvac-control",
+    "prompt": "A VAV box is hunting between minimum and maximum damper position at part load. Which tuning change is the best first step?",
+    "options": [
+      { "id": "a", "text": "Reduce proportional gain or lengthen the integral time on the airflow loop" },
+      { "id": "b", "text": "Disable the room temperature sensor" },
+      { "id": "c", "text": "Increase supply fan static pressure setpoint by 2 in. w.c." },
+      { "id": "d", "text": "Lock the damper at 50% open permanently" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Hunting at part load usually indicates overly aggressive airflow PI tuning; reducing gain or slowing integral action stabilizes damper modulation.",
+    "distractorExplanations": {
+      "b": "Removing zone temperature feedback eliminates comfort control and does not fix airflow loop tuning.",
+      "c": "Raising static pressure can worsen hunting and increase fan energy without addressing loop gains.",
+      "d": "Fixing the damper defeats variable-air-volume control and comfort response."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "id": "bms-bas-readiness-check-hvac-control-007",
+    "topicId": "hvac-control",
+    "prompt": "Under ASHRAE Guideline 36, when should economizer dampers typically remain at minimum position?",
+    "options": [
+      { "id": "a", "text": "When outdoor air is unsuitable for free cooling or the system is not in economizer-capable mode" },
+      { "id": "b", "text": "Whenever indoor CO₂ is below 800 ppm" },
+      { "id": "c", "text": "Only during occupied heating mode regardless of outdoor conditions" },
+      { "id": "d", "text": "Whenever the supply fan is off, even if the return fan runs" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Guideline 36 sequences lock out or minimize economizer operation when outdoor conditions do not support free cooling or when interlocks require minimum ventilation only.",
+    "distractorExplanations": {
+      "b": "Low CO₂ alone does not force minimum position if free cooling is available and permitted.",
+      "c": "Heating mode may still allow ventilation minimums, but outdoor suitability drives economizer position.",
+      "d": "Fan interlocks vary by design; minimum position is driven by economizer suitability, not fan status alone."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "id": "bms-bas-readiness-check-hvac-control-031",
+    "topicId": "hvac-control",
+    "prompt": "A hot-water valve is wired for fail-open and the controller loses power during winter. What is the intended safe default?",
+    "options": [
+      { "id": "a", "text": "The valve opens to provide heat and reduce freeze risk" },
+      { "id": "b", "text": "The valve closes to save energy" },
+      { "id": "c", "text": "The valve modulates to 50% based on last BACnet command" },
+      { "id": "d", "text": "The valve position becomes undefined until power returns" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fail-open heating valves are selected so loss of actuator power allows flow to coils or radiation, reducing freeze damage risk in cold climates.",
+    "distractorExplanations": {
+      "b": "Fail-closed on heating coils increases freeze risk during power loss.",
+      "c": "Spring-return or pneumatic actuators drive to a fixed fail position, not last command, on power loss.",
+      "d": "Engineered fail positions are defined precisely for life-safety and freeze protection."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "id": "bms-bas-readiness-check-hvac-control-040",
+    "topicId": "hvac-control",
+    "prompt": "Which sensor placement best supports accurate discharge-air temperature control on a rooftop unit?",
+    "options": [
+      { "id": "a", "text": "Downstream of the heating and cooling coils in a well-mixed airstream" },
+      { "id": "b", "text": "Inside the outdoor air hood before the filters" },
+      { "id": "c", "text": "On the compressor discharge line" },
+      { "id": "d", "text": "In the return plenum only" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Discharge-air sensors must read fully mixed supply air after conditioning coils to give the control loop representative temperature feedback.",
+    "distractorExplanations": {
+      "b": "Outdoor air hood location measures ambient intake, not discharge temperature.",
+      "c": "Compressor discharge line temperature reflects refrigerant conditions, not supply-air delivery.",
+      "d": "Return plenum temperature does not represent conditioned discharge air."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "id": "bms-bas-readiness-check-platform-ops-020",
+    "topicId": "platform-ops",
+    "prompt": "An operator needs to verify that night setback restored occupied setpoints at 6:00 a.m. Which BAS feature provides the fastest audit trail?",
+    "options": [
+      { "id": "a", "text": "Trend log of zone temperature setpoint and mode with timestamp" },
+      { "id": "b", "text": "Annual energy benchmark report only" },
+      { "id": "c", "text": "Network switch port mirroring" },
+      { "id": "d", "text": "Static PDF as-built drawing set" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Time-stamped trend logs of setpoints and modes show exactly when schedules and overrides changed after setback.",
+    "distractorExplanations": {
+      "b": "Annual benchmarks summarize energy use but do not show daily schedule transitions.",
+      "c": "Switch mirroring captures network packets, not interpreted HVAC setpoint history.",
+      "d": "As-built drawings document design intent, not live schedule execution."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "id": "bms-bas-readiness-check-platform-ops-026",
+    "topicId": "platform-ops",
+    "prompt": "Which practice best reduces nuisance alarms on a BAS without hiding real faults?",
+    "options": [
+      { "id": "a", "text": "Add reasonable off-delay and deadband to analog alarms after validating thresholds with operations staff" },
+      { "id": "b", "text": "Disable all priority-3 alarms permanently" },
+      { "id": "c", "text": "Route every alarm to email with no grouping" },
+      { "id": "d", "text": "Increase alarm limits until zero alarms occur" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Off-delay and deadband prevent chattering alarms while preserving meaningful limits agreed with operators.",
+    "distractorExplanations": {
+      "b": "Blanket disabling hides faults and violates good operations practice.",
+      "c": "Ungrouped email floods increase alarm fatigue without fixing root causes.",
+      "d": "Setting limits so wide that no alarm ever occurs defeats monitoring purpose."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "id": "bms-bas-readiness-check-platform-ops-027",
+    "topicId": "platform-ops",
+    "prompt": "A BAS server clock is 7 minutes ahead of domain time. What is the most likely operational impact?",
+    "options": [
+      { "id": "a", "text": "Scheduled events and trend timestamps appear early relative to real time" },
+      { "id": "b", "text": "BACnet device instance numbers will duplicate" },
+      { "id": "c", "text": "MS/TP token passing stops immediately" },
+      { "id": "d", "text": "VFD motor direction reverses" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "BAS schedules, logs, and correlation with utility meters depend on accurate time; clock drift makes events appear early or late.",
+    "distractorExplanations": {
+      "b": "Device instance assignment is independent of server clock sync.",
+      "c": "MS/TP token passing is a field-bus function unaffected by server NTP drift alone.",
+      "d": "Motor rotation is determined by VFD wiring and parameters, not BAS clock skew."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "id": "bms-bas-readiness-check-platform-ops-031",
+    "topicId": "platform-ops",
+    "prompt": "Before granting a temporary contractor login to the BAS, what is the minimum security step?",
+    "options": [
+      { "id": "a", "text": "Issue a time-limited account with role-based permissions scoped to required equipment" },
+      { "id": "b", "text": "Share the administrator password to avoid setup delays" },
+      { "id": "c", "text": "Disable all alarms for the building for the week" },
+      { "id": "d", "text": "Publish BACnet/IP port 47808 to the public internet" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Least-privilege, time-bound contractor accounts limit exposure while allowing required commissioning or service work.",
+    "distractorExplanations": {
+      "b": "Shared admin credentials violate least privilege and audit requirements.",
+      "c": "Disabling alarms removes operational visibility and is unrelated to access control.",
+      "d": "Exposing BACnet directly to the internet creates unnecessary cyber risk."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "id": "bms-bas-readiness-check-platform-ops-035",
+    "topicId": "platform-ops",
+    "prompt": "An operator exports monthly meter data from the BAS. Which file format is most suitable for import into a spreadsheet for pivot analysis?",
+    "options": [
+      { "id": "a", "text": "CSV with column headers and ISO timestamps" },
+      { "id": "b", "text": "Proprietary binary backup of the controller firmware" },
+      { "id": "c", "text": "JPEG screenshot of the trend chart" },
+      { "id": "d", "text": "MS/TP token statistics dump" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "CSV with headers and consistent timestamps imports cleanly into Excel or Google Sheets for analysis and pivot tables.",
+    "distractorExplanations": {
+      "b": "Firmware backups are for restoration, not tabular energy analysis.",
+      "c": "Images are not machine-readable for spreadsheet calculations.",
+      "d": "Token statistics relate to field-bus diagnostics, not meter trending."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "id": "bms-bas-readiness-check-platform-ops-038",
+    "topicId": "platform-ops",
+    "prompt": "Which KPI best indicates persistent simultaneous heating and cooling at an air-handling unit?",
+    "options": [
+      { "id": "a", "text": "Heating and cooling valves both commanded above minimum for a sustained period while discharge air sits near setpoint" },
+      { "id": "b", "text": "Supply fan status equals ON once per day" },
+      { "id": "c", "text": "Outdoor air temperature below 0°F for one hour" },
+      { "id": "d", "text": "Filter differential pressure alarm latched for 5 seconds" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Sustained overlap of heating and cooling valve commands near discharge setpoint is a classic fighting signal wasting energy.",
+    "distractorExplanations": {
+      "b": "Daily fan operation is normal and does not indicate fighting.",
+      "c": "Cold outdoor air alone does not prove simultaneous heating and cooling.",
+      "d": "Short filter alarms indicate maintenance needs, not valve fighting."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "id": "bms-bas-readiness-check-platform-ops-040",
+    "topicId": "platform-ops",
+    "prompt": "A campus BAS uses hierarchical navigation: site → building → system → equipment. What is the primary operator benefit?",
+    "options": [
+      { "id": "a", "text": "Faster location of points and alarms without searching the entire network flat list" },
+      { "id": "b", "text": "Elimination of all BACnet routing requirements" },
+      { "id": "c", "text": "Automatic VAV box rebalancing" },
+      { "id": "d", "text": "Guaranteed zero cyber intrusion risk" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Hierarchical organization mirrors physical assets so operators drill down to relevant alarms, trends, and setpoints quickly.",
+    "distractorExplanations": {
+      "b": "Navigation hierarchy is a UI construct; BACnet routers are still required where networks segment.",
+      "c": "Airflow balancing requires test-and-adjust procedures, not graphics hierarchy alone.",
+      "d": "Navigation structure does not by itself provide cybersecurity guarantees."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "id": "bms-bas-readiness-check-integration-commissioning-030",
+    "topicId": "integration-commissioning",
+    "prompt": "During functional performance testing, a chiller enable interlock fails because the BAS points to the wrong binary input. What is the correct commissioning response?",
+    "options": [
+      { "id": "a", "text": "Document the deficiency, correct the I/O mapping, and retest the interlock before acceptance" },
+      { "id": "b", "text": "Force the chiller ON in software and skip the interlock test" },
+      { "id": "c", "text": "Accept the system because the chiller starts manually" },
+      { "id": "d", "text": "Disable the interlock permanently in code" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Commissioning requires verified I/O mapping and successful retest of safety and enable interlocks before turnover.",
+    "distractorExplanations": {
+      "b": "Software forcing bypasses the failed test without fixing the root mapping error.",
+      "c": "Manual operation does not prove automatic interlock function.",
+      "d": "Removing interlocks creates safety and warranty issues."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "id": "bms-bas-readiness-check-integration-commissioning-043",
+    "topicId": "integration-commissioning",
+    "prompt": "Which document best records expected versus actual sequence behavior for a rooftop unit economizer during commissioning?",
+    "options": [
+      { "id": "a", "text": "Sequence of operations test script with step, expected result, and pass/fail columns" },
+      { "id": "b", "text": "Vendor marketing brochure" },
+      { "id": "c", "text": "Employee phone directory" },
+      { "id": "d", "text": "Unlabeled conduit routing sketch" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Commissioning test scripts tie each sequence step to expected outcomes and document pass/fail evidence for turnover.",
+    "distractorExplanations": {
+      "b": "Marketing materials lack project-specific expected results.",
+      "c": "Contact lists do not document control sequence verification.",
+      "d": "Conduit sketches show routing, not economizer functional test results."
+    },
+    "difficulty": "easy"
+  }
+]

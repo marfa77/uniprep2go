@@ -1,0 +1,128 @@
+[
+  {
+    "topicId": "core",
+    "prompt": "Under EPA Section 608, who must certify that technicians are properly trained before they may purchase refrigerant in containers larger than small cans?",
+    "options": [
+      { "id": "a", "text": "The equipment owner" },
+      { "id": "b", "text": "An EPA-approved certifying organization" },
+      { "id": "c", "text": "The local building department" },
+      { "id": "d", "text": "The refrigerant distributor only" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "EPA Section 608 requires technicians to pass a proctored exam administered by an EPA-approved certifying organization before handling regulated refrigerants or purchasing refrigerant except in small cans for motor vehicle A/C service.",
+    "distractorExplanations": {
+      "a": "Owners may require training, but EPA certification comes from approved certifying organizations, not the owner alone.",
+      "c": "Building departments enforce codes but do not issue EPA Section 608 technician certification.",
+      "d": "Distributors verify certification at sale but do not certify technicians."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "type-1",
+    "prompt": "A technician is servicing a domestic refrigerator with a fully hermetic system. Which EPA certification type is required?",
+    "options": [
+      { "id": "a", "text": "Type I only" },
+      { "id": "b", "text": "Type II only" },
+      { "id": "c", "text": "Type III only" },
+      { "id": "d", "text": "Universal only" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Type I covers small appliances such as domestic refrigerators, freezers, and room air conditioners with 5 pounds or less of refrigerant and fully hermetic systems.",
+    "distractorExplanations": {
+      "b": "Type II covers high-pressure appliances like residential split systems, not typical domestic hermetic refrigerators.",
+      "c": "Type III covers low-pressure centrifugal chillers, not small appliances.",
+      "d": "Universal certification includes Type I, but Type I alone is the minimum required category for this equipment class."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "type-1",
+    "prompt": "When recovering refrigerant from a small appliance, what is the primary reason to use recovery equipment listed for that appliance class?",
+    "options": [
+      { "id": "a", "text": "To increase compressor oil viscosity" },
+      { "id": "b", "text": "To meet EPA recovery efficiency requirements for that appliance type" },
+      { "id": "c", "text": "To eliminate the need for leak detection" },
+      { "id": "d", "text": "To avoid replacing filter-driers after service" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "EPA requires recovery devices tested for the applicable appliance category to achieve specified recovery efficiencies before refrigerant is opened to the atmosphere or disposed.",
+    "distractorExplanations": {
+      "a": "Recovery equipment does not change oil viscosity; it removes refrigerant vapor and liquid.",
+      "c": "Recovery does not replace leak inspection requirements after repair.",
+      "d": "Filter-drier replacement depends on system contamination, not recovery device listing alone."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "type-2",
+    "prompt": "A residential split-system condensing unit uses R-410A. Which EPA certification type covers this equipment?",
+    "options": [
+      { "id": "a", "text": "Type I" },
+      { "id": "b", "text": "Type II" },
+      { "id": "c", "text": "Type III" },
+      { "id": "d", "text": "Type I and III only" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "R-410A operates above atmospheric pressure at typical service conditions, classifying the system as high-pressure equipment covered by Type II certification.",
+    "distractorExplanations": {
+      "a": "Type I is limited to small appliances, not split-system condensing units.",
+      "c": "Type III is for low-pressure equipment such as large centrifugal chillers using R-123 or similar.",
+      "d": "Type III is not required for high-pressure split systems."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "type-2",
+    "prompt": "Before opening a high-pressure system for a major repair, a technician must:",
+    "options": [
+      { "id": "a", "text": "Vent refrigerant to speed up the job if the charge is under 5 pounds" },
+      { "id": "b", "text": "Recover refrigerant to required vacuum levels using approved equipment" },
+      { "id": "c", "text": "Add nitrogen only and skip recovery on R-410A systems" },
+      { "id": "d", "text": "Replace the compressor without isolating the circuit" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "EPA regulations prohibit intentional venting. Technicians must recover refrigerant to prescribed evacuation levels with certified recovery equipment before major service that opens the circuit.",
+    "distractorExplanations": {
+      "a": "Venting regulated refrigerant is illegal regardless of small charge size on non-exempt equipment.",
+      "c": "Nitrogen may be used for pressure testing after recovery, not as a substitute for recovery.",
+      "d": "Opening the circuit without recovery violates Section 608 venting prohibitions."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "type-3",
+    "prompt": "Which equipment type is primarily associated with EPA Type III certification?",
+    "options": [
+      { "id": "a", "text": "Low-pressure centrifugal chillers" },
+      { "id": "b", "text": "Domestic chest freezers" },
+      { "id": "c", "text": "Motor vehicle air conditioners only" },
+      { "id": "d", "text": "Window room air conditioners only" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Type III covers low-pressure appliances, most commonly large centrifugal chillers that operate below atmospheric pressure on the low side.",
+    "distractorExplanations": {
+      "b": "Chest freezers are small appliances under Type I.",
+      "c": "Motor vehicle A/C has separate EPA requirements; Type III targets low-pressure stationary equipment.",
+      "d": "Window units are Type I small appliances."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "type-3",
+    "prompt": "When leak checking a low-pressure chiller, why is purging non-condensables to the atmosphere generally prohibited?",
+    "options": [
+      { "id": "a", "text": "It always improves chiller efficiency" },
+      { "id": "b", "text": "It can release regulated refrigerant mixed with the non-condensables" },
+      { "id": "c", "text": "It eliminates the need for oil analysis" },
+      { "id": "d", "text": "It replaces the requirement for annual tune-ups" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Purging can vent refrigerant along with air and non-condensables. EPA requires recovery and proper handling so regulated refrigerant is not released during purge or service operations.",
+    "distractorExplanations": {
+      "a": "Controlled removal of non-condensables may help performance, but venting is not an unrestricted efficiency shortcut.",
+      "c": "Oil analysis is unrelated to purge venting rules.",
+      "d": "Maintenance schedules are separate from refrigerant venting prohibitions."
+    },
+    "difficulty": "hard"
+  }
+]

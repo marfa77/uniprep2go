@@ -1,0 +1,97 @@
+[
+  {
+    "id": "bms-bas-readiness-check-bacnet-networking-044",
+    "topicId": "bacnet-networking",
+    "prompt": "A backup HVAC controller must assume critical control if the primary BACnet controller stops responding. Which BACnet mechanism is intended for backup device takeover of primary functions?",
+    "options": [
+      { "id": "a", "text": "Change of Value (COV) subscriptions" },
+      { "id": "b", "text": "Device Communication Control" },
+      { "id": "c", "text": "Backup and Restore services" },
+      { "id": "d", "text": "Life Safety operation mode" }
+    ],
+    "correctOptionId": "c",
+    "explanation": "BACnet Backup and Restore services support backup device configuration and takeover logic so a designated backup controller can assume primary functions when the primary device fails.",
+    "distractorExplanations": {
+      "a": "COV subscriptions report value changes efficiently but do not implement controller failover.",
+      "b": "Device Communication Control enables or disables communication with a device but is not the primary failover service for backup takeover.",
+      "d": "Life Safety mode addresses fire and life-safety sequences, not general HVAC controller redundancy."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "id": "bms-bas-readiness-check-hvac-control-043",
+    "topicId": "hvac-control",
+    "prompt": "An AHU economizer shows outside air at 62°F, return air at 76°F, outside air dampers 100% open, return dampers closed, but mixed air reads 68°F. Zone conditions are stable. What should be checked first?",
+    "options": [
+      { "id": "a", "text": "Switch to minimum ventilation because outdoor enthalpy is too high" },
+      { "id": "b", "text": "Add mechanical cooling only; ignore the mixed air reading" },
+      { "id": "c", "text": "Close outside air dampers to 50% immediately" },
+      { "id": "d", "text": "Mixed air temperature sensor calibration and damper position feedback" }
+    ],
+    "correctOptionId": "d",
+    "explanation": "With 100% outdoor air, mixed air should track outdoor air closely. A 6°F gap suggests sensor error or damper/leakage issues and should be verified before control changes.",
+    "distractorExplanations": {
+      "a": "62°F outdoor air is favorable for economizing; enthalpy lockout is not the first concern given the sensor discrepancy.",
+      "b": "Ignoring inconsistent mixed air data risks incorrect economizer and cooling decisions.",
+      "c": "Closing outdoor dampers without verifying readings would reduce free cooling potential unnecessarily."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "id": "bms-bas-readiness-check-platform-ops-016",
+    "topicId": "platform-ops",
+    "prompt": "A VAV damper oscillates rapidly between 15% and 85% every few seconds while zone temperature stays steady. Discharge air temperature reads normally. What is the most likely cause?",
+    "options": [
+      { "id": "a", "text": "Faulty damper actuator or loose linkage" },
+      { "id": "b", "text": "Overly aggressive airflow loop PID tuning" },
+      { "id": "c", "text": "Network communication timeout" },
+      { "id": "d", "text": "Defective zone temperature sensor" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Rapid damper hunting with stable zone temperature usually indicates airflow PI loop tuning that is too aggressive, causing oscillation without meaningful temperature error.",
+    "distractorExplanations": {
+      "a": "Mechanical linkage problems often cause sticking or drift, not regular wide-range oscillation with stable zone temperature.",
+      "c": "Communication loss typically freezes or drops control rather than producing rhythmic hunting.",
+      "d": "A bad zone sensor would normally produce temperature instability matching damper swings."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "id": "bms-bas-readiness-check-platform-ops-047",
+    "topicId": "platform-ops",
+    "prompt": "A campus building runs weekdays 6:00–22:00 year-round and needs HVAC on variable Saturday conference weekends 7:00–18:00 without changing the base weekday schedule. What is the best approach?",
+    "options": [
+      { "id": "a", "text": "Edit the base schedule every Friday to add Saturday hours" },
+      { "id": "b", "text": "Program exception schedules in advance for each booked conference weekend" },
+      { "id": "c", "text": "Leave equipment off and rely on manual start buttons only" },
+      { "id": "d", "text": "Permanently enable Saturday in the base schedule and disable manually after events" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Exception schedules override the base weekly pattern on specific dates, automating variable weekend events without altering the standard weekday program.",
+    "distractorExplanations": {
+      "a": "Repeated base schedule edits risk errors and are poor operational practice.",
+      "c": "Manual-only starts increase human error and provide no automated schedule audit trail.",
+      "d": "Permanent Saturday enablement wastes energy on non-event weekends unless manually disabled each time."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "id": "bms-bas-readiness-check-integration-commissioning-044",
+    "topicId": "integration-commissioning",
+    "prompt": "On a dual-duct AHU, the cold deck rises above setpoint when outdoor air is hot, although valves respond to manual commands and sensors are calibrated. Mixed air dampers operate correctly. Which parameter should be checked first?",
+    "options": [
+      { "id": "a", "text": "Hot deck discharge air temperature reset schedule" },
+      { "id": "b", "text": "Cold deck cooling coil valve minimum position during high load" },
+      { "id": "c", "text": "Supply fan static pressure control gain" },
+      { "id": "d", "text": "Hot deck morning warm-up duration" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "If valves stroke manually but cold deck temperature rises under peak load, an overly low cooling valve minimum position can limit capacity when the loop needs more cooling at high outdoor conditions.",
+    "distractorExplanations": {
+      "a": "Hot deck reset affects heating deck delivery, not cold deck cooling capacity under high outdoor load.",
+      "c": "Static pressure tuning affects airflow distribution, not direct cold deck temperature control limits.",
+      "d": "Morning warm-up timing does not explain cold deck temperature rise during high outdoor air conditions."
+    },
+    "difficulty": "hard"
+  }
+]

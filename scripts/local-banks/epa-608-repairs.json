@@ -1,0 +1,154 @@
+[
+  {
+    "id": "epa-608-readiness-check-type-1-014",
+    "topicId": "type-1",
+    "prompt": "A technician replaces a failed compressor on a household window air conditioner. What is the maximum refrigerant charge that typically classifies this unit as a Type I small appliance?",
+    "options": [
+      { "id": "a", "text": "5 pounds or less of refrigerant" },
+      { "id": "b", "text": "15 pounds or less of refrigerant" },
+      { "id": "c", "text": "50 pounds or less of refrigerant" },
+      { "id": "d", "text": "Any charge if the system is hermetic" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "EPA Type I covers small appliances that are manufactured, charged, and hermetically sealed in a factory with 5 pounds or less of refrigerant.",
+    "distractorExplanations": {
+      "b": "Fifteen pounds exceeds the Type I small-appliance charge limit.",
+      "c": "Fifty pounds describes larger equipment outside Type I scope.",
+      "d": "Hermetic construction alone does not remove the 5-pound charge cap for Type I classification."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "id": "epa-608-readiness-check-type-1-048",
+    "topicId": "type-1",
+    "prompt": "After recovering refrigerant from a small appliance, where must the recovered refrigerant be sent?",
+    "options": [
+      { "id": "a", "text": "To an EPA-certified reclaimer, distributor, or recycler approved to accept it" },
+      { "id": "b", "text": "Directly to a municipal landfill if the charge is under 1 pound" },
+      { "id": "c", "text": "Back into the atmosphere through a purge valve" },
+      { "id": "d", "text": "Only to the original equipment manufacturer" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Recovered refrigerant must be handled by certified reclaimers or approved recipients; intentional venting is prohibited.",
+    "distractorExplanations": {
+      "b": "Landfill disposal of refrigerant cylinders or vented refrigerant is not permitted.",
+      "c": "Venting regulated refrigerant violates Section 608.",
+      "d": "Manufacturers are not the only approved destination for recovered refrigerant."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "id": "epa-608-readiness-check-type-2-007",
+    "topicId": "type-2",
+    "prompt": "When adding R-410A to a residential split system, why must technicians use a tank with a reverse-threaded (left-hand) service valve?",
+    "options": [
+      { "id": "a", "text": "To prevent accidental use of the wrong refrigerant on an R-410A system" },
+      { "id": "b", "text": "Because R-410A cannot be stored in standard cylinders" },
+      { "id": "c", "text": "To increase recovery speed on high-pressure systems" },
+      { "id": "d", "text": "Because R-410A requires oxygen service fittings" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "R-410A systems use unique left-hand threads on service ports and cylinders to reduce cross-contamination with other refrigerants such as R-22.",
+    "distractorExplanations": {
+      "b": "R-410A is stored in standard refrigerant cylinders with left-hand fittings, not exotic containers.",
+      "c": "Thread orientation is a safety and compatibility measure, not a recovery-speed feature.",
+      "d": "R-410A does not use oxygen-service fittings; left-hand threads are the distinguishing feature."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "id": "epa-608-readiness-check-type-2-017",
+    "topicId": "type-2",
+    "prompt": "A technician pressure-tests a repaired R-22 split system with dry nitrogen. When is it acceptable to release the nitrogen?",
+    "options": [
+      { "id": "a", "text": "After confirming the test pressure is released to atmosphere in a ventilated area with no mixed refrigerant present" },
+      { "id": "b", "text": "Only if refrigerant is vented first to speed up the test" },
+      { "id": "c", "text": "Never — nitrogen must be recovered into a refrigerant cylinder" },
+      { "id": "d", "text": "Only when the system charge is below 3 pounds" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Dry nitrogen used for leak testing may be vented after the test if no regulated refrigerant is mixed with it and safe venting practices are followed.",
+    "distractorExplanations": {
+      "b": "Refrigerant must be recovered before testing; venting refrigerant is prohibited.",
+      "c": "Nitrogen used alone for leak testing does not require recovery into refrigerant cylinders.",
+      "d": "The small-charge exception does not govern nitrogen venting after a leak test."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "id": "epa-608-readiness-check-type-2-034",
+    "topicId": "type-2",
+    "prompt": "Which leak rate threshold applies to commercial refrigeration equipment with more than 50 pounds of refrigerant under EPA regulations?",
+    "options": [
+      { "id": "a", "text": "20% annual leak rate before repair requirements apply" },
+      { "id": "b", "text": "5% annual leak rate before repair requirements apply" },
+      { "id": "c", "text": "0% — any detectable leak requires immediate system replacement" },
+      { "id": "d", "text": "35% annual leak rate before repair requirements apply" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "EPA leak repair rules set category-specific thresholds; commercial refrigeration with more than 50 pounds is commonly cited at a 20% annual leak rate trigger for repair and recordkeeping.",
+    "distractorExplanations": {
+      "b": "Five percent applies to other appliance categories such as comfort cooling, not this commercial refrigeration threshold.",
+      "c": "EPA rules require repair within specified timeframes at defined leak rates, not automatic replacement at any leak.",
+      "d": "Thirty-five percent is not the commercial refrigeration threshold under EPA leak repair requirements."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "id": "epa-608-readiness-check-type-3-002",
+    "topicId": "type-3",
+    "prompt": "Why must low-pressure chillers be kept under a slight positive pressure during extended shutdowns?",
+    "options": [
+      { "id": "a", "text": "To prevent air and moisture from entering the system through leaks on the low side" },
+      { "id": "b", "text": "To eliminate the need for oil changes" },
+      { "id": "c", "text": "To allow direct venting of non-condensables without recovery" },
+      { "id": "d", "text": "To convert the chiller to a high-pressure appliance" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Low-pressure systems operate below atmospheric pressure on the evaporator side; positive pressure during shutdown reduces air and moisture ingress that causes acids and non-condensables.",
+    "distractorExplanations": {
+      "b": "Oil maintenance is still required; pressure control addresses contamination ingress, not lubrication intervals.",
+      "c": "Non-condensables must still be handled without venting regulated refrigerant.",
+      "d": "Operating pressure classification is fixed by equipment design, not shutdown pressurization."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "id": "epa-608-readiness-check-type-3-016",
+    "topicId": "type-3",
+    "prompt": "When recovering refrigerant from a low-pressure centrifugal chiller, what is the typical first step before opening the machine?",
+    "options": [
+      { "id": "a", "text": "Warm the refrigerant to drive vapor into the condenser and start recovery from the proper low-side access" },
+      { "id": "b", "text": "Vent the purge unit directly to atmosphere" },
+      { "id": "c", "text": "Add R-410A to raise system pressure above 100 psig" },
+      { "id": "d", "text": "Remove all oil before any recovery begins" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Low-pressure chiller recovery often requires controlled heating to boil refrigerant off the evaporator bundle and route vapor for recovery because the machine operates below atmospheric pressure on the low side.",
+    "distractorExplanations": {
+      "b": "Venting through the purge unit can release regulated refrigerant and violates recovery requirements.",
+      "c": "Mixing incompatible refrigerants such as R-410A into a low-pressure chiller is improper and dangerous.",
+      "d": "Oil removal is not the first recovery step; refrigerant must be recovered before major opening of the circuit."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "id": "epa-608-readiness-check-type-3-025",
+    "topicId": "type-3",
+    "prompt": "A technician is leak testing a low-pressure chiller after replacing a tube bundle gasket. Which practice complies with EPA requirements?",
+    "options": [
+      { "id": "a", "text": "Pressurize with dry nitrogen and soap-bubble test before pulling a deep vacuum and charging" },
+      { "id": "b", "text": "Use controlled R-123 release to locate leaks by smell" },
+      { "id": "c", "text": "Skip leak testing if the chiller passed operation last season" },
+      { "id": "d", "text": "Vent the entire charge to atmosphere to speed gasket seating" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "After major repairs, technicians leak test with an inert trace gas such as nitrogen, then evacuate and charge; intentional refrigerant venting for leak detection is prohibited.",
+    "distractorExplanations": {
+      "b": "Using refrigerant release as a leak tracer violates venting prohibitions.",
+      "c": "Prior season performance does not replace post-repair leak verification.",
+      "d": "Venting the charge is illegal and unnecessary for gasket replacement."
+    },
+    "difficulty": "medium"
+  }
+]

@@ -936,11 +936,11 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Readiness check sampled across LEED Green Associate knowledge domains. Official GBCI exam: 100 questions, 2 hours, scaled pass score 170 (125–200 scale). Not USGBC exam material.",
     disclaimer: usgbcDisclaimer,
     description:
-      "A 50-question LEED Green Associate readiness diagnostic across integrative process, location, sites, water, energy, materials, and IEQ. Question bank loading — independent prep, not USGBC material.",
+      "A 50-question LEED Green Associate readiness diagnostic across integrative process, location, sites, water, energy, materials, and IEQ. Independent prep, not USGBC material.",
     examBody: "USGBC / GBCI",
-    lastUpdated: "2026-06-02",
+    lastUpdated: "2026-07-24",
     questionSourceNote:
-      "Original UniPrep2Go questions (250-item bank, 50 per domain) authored via OpenRouter with Gemini cross-validation; each session samples 10 per domain.",
+      "Original UniPrep2Go questions authored for the LEED Green Associate readiness check (250 cards across five knowledge domains; 50-question timed session).",
   },
   {
     slug: "leed-ap-bd-c-readiness-check",
@@ -1002,11 +1002,11 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Readiness check sampled for LEED AP Building Design + Construction (BD+C). Official specialty exam: 100 questions, 2 hours, scaled pass 170; requires active LEED Green Associate. Other AP specialties (O+M, ID+C, etc.) use separate exams.",
     disclaimer: usgbcDisclaimer,
     description:
-      "A 50-question LEED AP BD+C readiness diagnostic for design and construction specialty credits and prerequisites. Question bank loading — independent prep, not USGBC material.",
+      "A 50-question LEED AP BD+C readiness diagnostic for design and construction specialty credits and prerequisites. Independent prep, not USGBC material.",
     examBody: "USGBC / GBCI",
-    lastUpdated: "2026-06-02",
+    lastUpdated: "2026-07-24",
     questionSourceNote:
-      "Original UniPrep2Go questions (250-item bank, 50 per domain) authored via OpenRouter with Gemini cross-validation; each session samples 10 per domain.",
+      "Original UniPrep2Go questions authored for the LEED AP BD+C readiness check (250 cards across five domain groups; 50-question timed session).",
   },
   {
     slug: "leed-ap-om-readiness-check",
@@ -1070,7 +1070,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A 50-question LEED AP O+M readiness diagnostic across process/integrative planning, site and transportation, water, energy/atmosphere, and materials/IEQ — with pacing feedback and full answer review. Independent prep for existing-building operations credentials.",
     examBody: "GBCI / USGBC",
-    lastUpdated: "2026-07-16",
+    lastUpdated: "2026-07-24",
     questionSourceNote:
       "Original UniPrep2Go questions authored for the LEED AP O+M readiness check (250 cards across five domain groups; 50-question timed session).",
     ankiDeckCardCount: 250,
@@ -1135,11 +1135,11 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Readiness check sampled across WELL v2 knowledge domains per IWBI exam specifications. Official GBCI exam: 115 questions (100 scored + 15 unscored pilot), 2.5 hours, scaled pass score 170 (125–200 scale). Closed book with embedded scenario and reference PDFs. Not IWBI exam material.",
     disclaimer: wellDisclaimer,
     description:
-      "A 50-question WELL AP readiness diagnostic across WELL v2 concepts — air, water, nourishment, light, movement, materials, mind, community, and certification process. Question bank loading — independent prep, not IWBI material.",
+      "A 50-question WELL AP readiness diagnostic across WELL v2 concepts — air, water, nourishment, light, movement, materials, mind, community, and certification process. Independent prep, not IWBI material.",
     examBody: "IWBI / GBCI (International WELL Building Institute)",
-    lastUpdated: "2026-06-02",
+    lastUpdated: "2026-07-24",
     questionSourceNote:
-      "Original UniPrep2Go questions (250-item bank, 50 per domain) authored via OpenRouter with Gemini cross-validation; each session samples 10 per domain.",
+      "Original UniPrep2Go questions authored for the WELL AP readiness check (250 cards across five WELL v2 concept groups; 50-question timed session).",
   },
   {
     slug: "cem-readiness-check",
@@ -1201,11 +1201,11 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Readiness check sized to AEE's 65-question self-evaluation format. Official CEM exam: 130 questions (120 scored + 10 pretest), 4 hours, open book, scaled pass score 700 (0–1040 scale). Not AEE exam material.",
     disclaimer: aeeDisclaimer,
     description:
-      "A 65-question CEM readiness diagnostic across AEE Body of Knowledge domains including audits, HVAC, electrical systems, renewables, and performance contracting. Question bank loading — independent prep, not AEE material.",
+      "A 65-question CEM readiness diagnostic across AEE Body of Knowledge domains including audits, HVAC, electrical systems, renewables, and performance contracting. Independent prep, not AEE material.",
     examBody: "AEE (Association of Energy Engineers)",
-    lastUpdated: "2026-06-02",
+    lastUpdated: "2026-07-24",
     questionSourceNote:
-      "Original UniPrep2Go questions (250-item bank, 50 per domain) authored via OpenRouter with Gemini cross-validation; each session samples 10 per domain.",
+      "Original UniPrep2Go questions authored for the CEM readiness check (250 cards across five Body of Knowledge groups; 65-question timed session).",
   },
   {
     slug: "ashrae-certifications-readiness-check",
@@ -1267,11 +1267,11 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Readiness check sampled across ASHRAE ANSI-accredited certification domains. Most ASHRAE exams: 115 items (100 scored + 15 pretest), 2.5 hours; BCxP: 130 items (120 scored); HFDP: 2 hours. Pass scores vary by credential (verify at ashrae.org).",
     disclaimer: ashraeDisclaimer,
     description:
-      "A 50-question ASHRAE certifications readiness diagnostic across BEMP, BEAP, BCxP, CHD/HBDP/HFDP, and OPMP knowledge areas. Question bank loading — independent prep, not ASHRAE exam material.",
+      "A 50-question ASHRAE certifications readiness diagnostic across BEMP, BEAP, BCxP, CHD/HBDP/HFDP, and OPMP knowledge areas. Independent prep, not ASHRAE exam material.",
     examBody: "ASHRAE",
-    lastUpdated: "2026-06-02",
+    lastUpdated: "2026-07-24",
     questionSourceNote:
-      "Original UniPrep2Go questions (250-item bank, 50 per domain) authored via OpenRouter with Gemini cross-validation; each session samples 10 per domain.",
+      "Original UniPrep2Go questions authored for the ASHRAE certifications readiness check (250 cards across BEMP, BEAP, BCxP, CHD/HBDP, and OPMP; 50-question timed session).",
   },
   {
     slug: "cdcp-readiness-check",
@@ -1333,11 +1333,11 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Readiness check sized to the official EXIN EPI CDCP exam: 40 multiple-choice questions, 60 minutes, closed book, 68% pass mark (27/40). Facilities ~85%, Operations ~15%. Not EXIN or EPI exam material.",
     disclaimer: cdcpDisclaimer,
     description:
-      "A 40-question CDCP readiness diagnostic across data centre facilities (power, cooling, fire, security) and operations. Question bank loading — independent prep, not EXIN or EPI material.",
+      "A 40-question CDCP readiness diagnostic across data centre facilities (power, cooling, fire, security) and operations. Independent prep, not EXIN or EPI material.",
     examBody: "EXIN / EPI (Enterprise Products Integration)",
-    lastUpdated: "2026-06-02",
+    lastUpdated: "2026-07-24",
     questionSourceNote:
-      "Original UniPrep2Go questions (250-item bank, 50 per domain) authored via OpenRouter with Gemini cross-validation; each session samples 10 per domain.",
+      "Original UniPrep2Go questions authored for the CDCP readiness check (250 cards across five data-centre domain groups; 40-question timed session).",
   },
   {
     slug: "nebosh-readiness-check",
@@ -1399,11 +1399,11 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Readiness check sampled across NEBOSH IGC syllabus elements (GIC1 OBE + GIC2 practical). Official GIC1: 5-hour open-book scenario exam, 100 marks, 45% pass (grade Distinction/Credit/Pass from GIC1 only). Official GIC2: 4-hour practical risk assessment — pass standard in GIC2 guidance. Not NEBOSH assessment material.",
     disclaimer: neboshDisclaimer,
     description:
-      "A 50-question NEBOSH IGC readiness diagnostic across management systems, workplace hazards, and risk assessment skills. Question bank loading — independent prep, not NEBOSH material.",
+      "A 50-question NEBOSH IGC readiness diagnostic across management systems, workplace hazards, and risk assessment skills. Independent prep, not NEBOSH material.",
     examBody: "NEBOSH (National Examination Board in Occupational Safety and Health)",
-    lastUpdated: "2026-06-02",
+    lastUpdated: "2026-07-24",
     questionSourceNote:
-      "Original UniPrep2Go questions (250-item bank, 50 per domain) authored via OpenRouter with Gemini cross-validation; each session samples 10 per domain.",
+      "Original UniPrep2Go questions authored for the NEBOSH IGC readiness check (250 cards across five syllabus groups; 50-question timed session).",
   },
   {
     slug: "cfps-readiness-check",
@@ -1486,11 +1486,11 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Readiness check half-length (50 questions / 90 minutes) weighted to NFPA CFPS exam blueprint. Official exam: 100 multiple-choice questions, 3 hours, open book (original print NFPA Fire Protection Handbook, 21st Edition only). NFPA reports pass/fail only — no published passing score. Not NFPA exam material.",
     disclaimer: cfpsDisclaimer,
     description:
-      "A 50-question CFPS readiness diagnostic across NFPA's eight fire protection domains including suppression, detection, built environment safety, and hazard management. Question bank loading — independent prep, not NFPA material.",
+      "A 50-question CFPS readiness diagnostic across NFPA's eight fire protection domains including suppression, detection, built environment safety, and hazard management. Independent prep, not NFPA material.",
     examBody: "NFPA (National Fire Protection Association)",
-    lastUpdated: "2026-06-02",
+    lastUpdated: "2026-07-24",
     questionSourceNote:
-      "Original UniPrep2Go questions (400-item bank, 50 per NFPA domain) authored via OpenRouter with Gemini cross-validation; each session samples 10 per domain.",
+      "Original UniPrep2Go questions authored for the CFPS readiness check (400 cards across eight NFPA domains; 50-question timed session).",
   },
   {
     slug: "mrics-readiness-check",
@@ -1552,11 +1552,11 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Readiness check for APC final assessment knowledge — not a substitute for written submission or interview. Official MRICS route: written summary of experience, 3,000-word case study, CPD record, Professionalism Module, then 60-minute final assessment interview (10-min presentation + questioning). No multiple-choice licensure exam. Not RICS assessment material.",
     disclaimer: ricsDisclaimer,
     description:
-      "A 50-question MRICS/APC readiness diagnostic across mandatory competencies, ethics, technical pathway knowledge, and interview preparation. Question bank loading — independent prep, not RICS material.",
+      "A 50-question MRICS/APC readiness diagnostic across mandatory competencies, ethics, technical pathway knowledge, and interview preparation. Independent prep, not RICS material.",
     examBody: "RICS (Royal Institution of Chartered Surveyors)",
-    lastUpdated: "2026-06-02",
+    lastUpdated: "2026-07-24",
     questionSourceNote:
-      "Original UniPrep2Go questions (250-item bank, 50 per competency area) authored via OpenRouter with Gemini cross-validation; each session samples 10 per area.",
+      "Original UniPrep2Go questions authored for the MRICS/APC readiness check (250 cards across five competency groups; 50-question timed session).",
   },
   {
     slug: "mrics-quantity-surveying-readiness-check",
@@ -1618,11 +1618,11 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Readiness check for Quantity Surveying and Construction pathway APC knowledge. Official MRICS: six core competencies to Level 3 (including Commercial management OR Design economics and cost planning), two optional to Level 2, mandatory competencies, written submission, and 60-minute final interview — not a multiple-choice exam. Not RICS assessment material.",
     disclaimer: ricsDisclaimer,
     description:
-      "A 50-question MRICS Quantity Surveying readiness diagnostic across QS core competencies — cost planning, measurement, contracts, procurement, project finance, and ethics. Question bank loading — independent prep, not RICS material.",
+      "A 50-question MRICS Quantity Surveying readiness diagnostic across QS core competencies — cost planning, measurement, contracts, procurement, project finance, and ethics. Independent prep, not RICS material.",
     examBody: "RICS — Quantity Surveying and Construction pathway",
-    lastUpdated: "2026-06-02",
+    lastUpdated: "2026-07-24",
     questionSourceNote:
-      "Original UniPrep2Go questions (250-item bank, 50 per competency area) authored via OpenRouter with Gemini cross-validation; each session samples 10 per area.",
+      "Original UniPrep2Go questions authored for the MRICS Quantity Surveying readiness check (250 cards across five QS competency groups; 50-question timed session).",
   },
   ...wave1MockExamConfigs,
   ...wave2MockExamConfigs,

@@ -1,0 +1,21 @@
+[
+  {
+    "id": "leed-ap-bd-c-readiness-check-energy-atmosphere-003",
+    "topicId": "energy-atmosphere",
+    "prompt": "A newly certified LEED BD+C office building records first-year metered energy use 15% above the design energy model. With respect to the awarded BD+C certification itself, what is required?",
+    "options": [
+      { "id": "a", "text": "Submit a LEED interpretation request to justify the higher consumption" },
+      { "id": "b", "text": "Implement energy conservation measures to reduce consumption to modeled levels" },
+      { "id": "c", "text": "No action is required because BD+C certification is based on design and construction compliance, not ongoing metered performance" },
+      { "id": "d", "text": "Recalibrate the energy model to match actual consumption for future reference" }
+    ],
+    "correctOptionId": "c",
+    "explanation": "LEED BD+C certification is conferred based on design and construction documentation and modeled compliance at certification. Post-occupancy energy variance does not by itself revoke BD+C certification, although the owner may still pursue operational improvements voluntarily.",
+    "distractorExplanations": {
+      "a": "Interpretations clarify credit requirements during certification; they are not the mechanism for addressing post-occupancy performance variance.",
+      "b": "Energy conservation may be good practice, but it is not required to maintain an already awarded BD+C certification.",
+      "d": "Recalibrating the model may inform future operations but is not required to preserve BD+C certification status."
+    },
+    "difficulty": "hard"
+  }
+]

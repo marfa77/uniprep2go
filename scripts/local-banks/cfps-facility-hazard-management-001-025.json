@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "A Process Hazard Analysis (PHA) under OSHA PSM is required to be completed:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Before startup of a covered process and revalidated at least every five years"
+      },
+      {
+        "id": "b",
+        "text": "Only after the first reportable incident"
+      },
+      {
+        "id": "c",
+        "text": "Once during initial design with no further review"
+      },
+      {
+        "id": "d",
+        "text": "Annually by the local fire marshal exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "OSHA 1910.119 requires PHA prior to startup and at least every five years, and when changes warrant.",
+    "distractorExplanations": {
+      "b": "Initial-only analysis misses operational learning and modifications.",
+      "c": "Fire marshal review does not replace employer PHA obligations.",
+      "d": "Waiting for an incident defeats the preventive purpose of PHA."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Which PHA methodology systematically examines guide words applied to process parameters and deviations?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Checklist inspection of fire extinguishers"
+      },
+      {
+        "id": "b",
+        "text": "HAZOP (Hazard and Operability Study)"
+      },
+      {
+        "id": "c",
+        "text": "What-if brainstorming without structured nodes"
+      },
+      {
+        "id": "d",
+        "text": "Failure Mode and Effects Analysis of individual components only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "HAZOP uses guide words (e.g., MORE, LESS, NO) at study nodes to identify deviations, causes, consequences, and safeguards.",
+    "distractorExplanations": {
+      "a": "FMEA focuses on component failures, not systematic process deviation review.",
+      "c": "FMEA focuses on component failures, not systematic process deviation review.",
+      "d": "Extinguisher checklists are maintenance tasks, not PHA methods."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "In a HAZOP study, the team typically includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the plant manager and insurance adjuster"
+      },
+      {
+        "id": "b",
+        "text": "External media observers without process knowledge"
+      },
+      {
+        "id": "c",
+        "text": "A multidisciplinary group with process, operations, engineering, and safety representation plus a trained facilitator"
+      },
+      {
+        "id": "d",
+        "text": "A single design engineer working alone"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Effective HAZOP relies on diverse expertise and an independent facilitator to manage the structured review.",
+    "distractorExplanations": {
+      "a": "Insurance input may supplement but does not replace operations and engineering knowledge.",
+      "b": "Insurance input may supplement but does not replace operations and engineering knowledge.",
+      "d": "Solo review misses critical operational and maintenance perspectives."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "A HAZOP guide word of 'NO' applied to the parameter 'FLOW' in a reactor feed line would prompt review of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Excessive flow above design maximum only"
+      },
+      {
+        "id": "b",
+        "text": "Color change of the product stream"
+      },
+      {
+        "id": "c",
+        "text": "Ambient humidity variation outside the building"
+      },
+      {
+        "id": "d",
+        "text": "Complete loss of feed flow and its potential causes and consequences"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Guide words explore deviations from design intent; NO/FLOW examines zero-flow scenarios such as valve closure or pump failure.",
+    "distractorExplanations": {
+      "a": "Excessive flow is typically examined with MORE or HIGH guide words.",
+      "b": "Excessive flow is typically examined with MORE or HIGH guide words.",
+      "c": "Product color is not the parameter tied to the FLOW node."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "HAZOP study documentation should include for each credible deviation:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Causes, consequences, existing safeguards, and recommendations for additional protection where needed"
+      },
+      {
+        "id": "b",
+        "text": "Only a list of employee names who attended"
+      },
+      {
+        "id": "c",
+        "text": "Estimated construction cost of the original plant"
+      },
+      {
+        "id": "d",
+        "text": "Marketing plans for finished product"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Actionable HAZOP records tie deviations to risk reduction measures and track recommendations to closure.",
+    "distractorExplanations": {
+      "b": "Attendance alone does not capture hazard findings.",
+      "c": "Capital cost history does not document risk controls.",
+      "d": "Marketing content is outside process safety scope."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "What-if analysis is most appropriately used when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Replacing all PHA requirements for major covered processes without documentation"
+      },
+      {
+        "id": "b",
+        "text": "A less formal, brainstorming-style hazard review is needed for smaller or well-understood processes"
+      },
+      {
+        "id": "c",
+        "text": "Eliminating the need for any operating procedures"
+      },
+      {
+        "id": "d",
+        "text": "Satisfying sprinkler hydraulic calculations"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "What-if is a recognized PHA method using structured questioning but is less rigorous than HAZOP for complex processes.",
+    "distractorExplanations": {
+      "a": "Operating procedures remain required regardless of PHA method.",
+      "c": "Operating procedures remain required regardless of PHA method.",
+      "d": "Hydraulic calculations are water supply engineering, not hazard analysis."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "A effective what-if session begins by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Voting on production quotas before any hazard discussion"
+      },
+      {
+        "id": "b",
+        "text": "Deleting prior incident reports to avoid bias"
+      },
+      {
+        "id": "c",
+        "text": "Describing the process, boundaries, and key hazards, then posing 'what if' scenarios for each step"
+      },
+      {
+        "id": "d",
+        "text": "Testing fire pumps before identifying scenarios"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "What-if analysis builds scenarios from process understanding—equipment failure, human error, external events—and evaluates consequences.",
+    "distractorExplanations": {
+      "a": "Production quotas do not structure hazard brainstorming.",
+      "b": "Production quotas do not structure hazard brainstorming.",
+      "d": "Pump testing is unrelated to the analytical session format."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Compared to HAZOP, what-if analysis generally:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Requires more guide words and formal nodes than HAZOP"
+      },
+      {
+        "id": "b",
+        "text": "Is mandated by NFPA 400 for all chemical storage"
+      },
+      {
+        "id": "c",
+        "text": "Eliminates the need for a multidisciplinary team"
+      },
+      {
+        "id": "d",
+        "text": "Is less structured and may be faster but can miss subtle deviations without experienced facilitation"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "What-if trades HAZOP's systematic guide-word rigor for flexibility; quality depends heavily on team experience.",
+    "distractorExplanations": {
+      "a": "NFPA 400 addresses hazardous materials storage, not PHA method selection.",
+      "b": "NFPA 400 addresses hazardous materials storage, not PHA method selection.",
+      "c": "Multidisciplinary input remains valuable for what-if reviews."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "When selecting a PHA methodology for a new highly interconnected unit with numerous control loops, the best choice is usually:",
+    "options": [
+      {
+        "id": "a",
+        "text": "HAZOP because its node-by-node systematic approach suits complex process interactions"
+      },
+      {
+        "id": "b",
+        "text": "A single-question what-if review lasting 30 minutes"
+      },
+      {
+        "id": "c",
+        "text": "Visual inspection of paint condition on vessels"
+      },
+      {
+        "id": "d",
+        "text": "Review of cafeteria menu options for shift workers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Complex processes benefit from HAZOP's structured examination of parameters, deviations, and safeguards at defined nodes.",
+    "distractorExplanations": {
+      "b": "Brief what-if may inadequately cover interconnected controls.",
+      "c": "Paint inspection does not analyze process deviations.",
+      "d": "Cafeteria menus are unrelated to process hazard identification."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "An emergency action plan for a chemical facility must address:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only quarterly profit targets and stock valuation"
+      },
+      {
+        "id": "b",
+        "text": "Procedures for reporting emergencies, evacuation, accounting for personnel, rescue, and coordination with responders"
+      },
+      {
+        "id": "c",
+        "text": "Preferred parking assignments for executives"
+      },
+      {
+        "id": "d",
+        "text": "Routine calibration of office thermostats"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "OSHA 1910.38 and good practice require documented emergency procedures, communication, and roles for credible scenarios.",
+    "distractorExplanations": {
+      "a": "Parking assignments do not substitute for emergency procedures.",
+      "c": "Parking assignments do not substitute for emergency procedures.",
+      "d": "Office HVAC calibration is unrelated to emergency planning."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Facility emergency planning should identify:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the color scheme for safety posters"
+      },
+      {
+        "id": "b",
+        "text": "Annual holiday schedule"
+      },
+      {
+        "id": "c",
+        "text": "Assembly areas, communication methods, shutdown procedures, and interfaces with local emergency services"
+      },
+      {
+        "id": "d",
+        "text": "Preferred vendor for office supplies"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Effective plans specify how to notify, evacuate or shelter, shut down hazardous processes, and hand off to responders.",
+    "distractorExplanations": {
+      "a": "Poster colors do not define response procedures.",
+      "b": "Poster colors do not define response procedures.",
+      "d": "Office supply vendors are outside emergency scope."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "During emergency planning for a toxic gas release, the primary protection strategy for on-site personnel when evacuation is impractical is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Opening all windows and doors to dilute the plume indoors"
+      },
+      {
+        "id": "b",
+        "text": "Continuing normal production until the shift ends"
+      },
+      {
+        "id": "c",
+        "text": "Gathering at the fence line closest to the release point"
+      },
+      {
+        "id": "d",
+        "text": "Shelter-in-place in a pre-identified refuge area with controlled ventilation shutoff"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Shelter-in-place uses sealed or low-leakage areas to reduce exposure when timely evacuation is not feasible.",
+    "distractorExplanations": {
+      "a": "Increasing ventilation can draw contaminated air inside.",
+      "b": "Increasing ventilation can draw contaminated air inside.",
+      "c": "Continuing production exposes workers unnecessarily."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "An on-site emergency response drill should evaluate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Activation of alarms, decision-making, communication, evacuation or shelter, and coordination with outside agencies"
+      },
+      {
+        "id": "b",
+        "text": "Only whether coffee was available in the break room"
+      },
+      {
+        "id": "c",
+        "text": "Speed of completing unrelated maintenance tickets"
+      },
+      {
+        "id": "d",
+        "text": "Whether visitors signed the guest log"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Drills test whether plans work in practice—notification, leadership decisions, mustering, and responder interface.",
+    "distractorExplanations": {
+      "b": "Maintenance ticket metrics do not validate emergency response.",
+      "c": "Guest logs are administrative and not drill performance criteria.",
+      "d": "Break room amenities are irrelevant to response effectiveness."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Mutual aid agreements in industrial emergency planning are intended to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eliminate the need for any on-site emergency equipment"
+      },
+      {
+        "id": "b",
+        "text": "Formalize shared resources, capabilities, and communication with neighboring facilities and responders"
+      },
+      {
+        "id": "c",
+        "text": "Transfer all legal liability to the fire department"
+      },
+      {
+        "id": "d",
+        "text": "Replace employee training with signed paperwork alone"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Mutual aid clarifies who provides specialized equipment, foam, or personnel during large incidents.",
+    "distractorExplanations": {
+      "a": "Liability is not automatically transferred by agreements.",
+      "c": "Liability is not automatically transferred by agreements.",
+      "d": "Paperwork without training and equipment does not ensure response."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "NFPA 400 primarily addresses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only residential smoke alarm placement"
+      },
+      {
+        "id": "b",
+        "text": "Structural wind loads on communication towers"
+      },
+      {
+        "id": "c",
+        "text": "Fire safety for storage, use, and handling of hazardous materials in all occupancies"
+      },
+      {
+        "id": "d",
+        "text": "Swimming pool filtration chemistry exclusively"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "NFPA 400 consolidates requirements for classified hazardous materials storage and handling across occupancy types.",
+    "distractorExplanations": {
+      "a": "Residential smoke alarms are covered by other NFPA documents.",
+      "b": "Residential smoke alarms are covered by other NFPA documents.",
+      "d": "Pool chemistry is outside NFPA 400 hazardous materials scope."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Under NFPA 400, hazardous materials are classified primarily by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Brand name and manufacturer marketing tier"
+      },
+      {
+        "id": "b",
+        "text": "Color of the shipping carton only"
+      },
+      {
+        "id": "c",
+        "text": "Distance from the nearest cafeteria"
+      },
+      {
+        "id": "d",
+        "text": "Hazard categories such as flammable, oxidizing, corrosive, and water-reactive characteristics"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Classification drives maximum quantities, separation, sprinkler design, and storage methods.",
+    "distractorExplanations": {
+      "a": "Brand tiers are not code classification bases.",
+      "b": "Brand tiers are not code classification bases.",
+      "c": "Carton color does not define chemical hazard class."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Indoor storage of Class I flammable liquids in NFPA 400 is controlled by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quantity limits per control area, fire-resistance ratings, ventilation, and automatic sprinkler requirements"
+      },
+      {
+        "id": "b",
+        "text": "Unlimited storage if containers are labeled"
+      },
+      {
+        "id": "c",
+        "text": "Exemption from sprinklers when stored below eye level"
+      },
+      {
+        "id": "d",
+        "text": "Permission to store in any exit enclosure for convenience"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "NFPA 400 limits quantities and mandates construction and protection features based on hazard class and storage arrangement.",
+    "distractorExplanations": {
+      "b": "Labeling alone does not remove quantity and protection rules.",
+      "c": "Exit enclosures cannot be used for hazardous material storage.",
+      "d": "Sprinkler requirements depend on hazard and quantity, not shelf height alone."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "When incompatible hazardous materials share a storage area, NFPA 400 requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Commingling if both are in original manufacturer containers"
+      },
+      {
+        "id": "b",
+        "text": "Separation by distance, barriers, or separate rooms per compatibility requirements"
+      },
+      {
+        "id": "c",
+        "text": "Storage on the same pallet wrapped in plastic"
+      },
+      {
+        "id": "d",
+        "text": "Mixing small quantities to reduce container count"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Incompatible materials such as oxidizers and flammables must be segregated to prevent reaction during storage incidents.",
+    "distractorExplanations": {
+      "a": "Plastic wrap does not provide required separation.",
+      "c": "Plastic wrap does not provide required separation.",
+      "d": "Mixing incompatible materials creates immediate reaction hazard."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Outdoor storage of oxidizers under NFPA 400 should consider:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Placement against combustible wood fences to save space"
+      },
+      {
+        "id": "b",
+        "text": "Covering drainage paths to pool rainwater with oxidizers"
+      },
+      {
+        "id": "c",
+        "text": "Separation from combustible construction, drainage to avoid contaminating other materials, and exposure to weather controls"
+      },
+      {
+        "id": "d",
+        "text": "Stacking directly on unprotected asphalt without spacing"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Outdoor oxidizer storage requires separation from fuels, compatible containers, and management of spills and weather exposure.",
+    "distractorExplanations": {
+      "a": "Combustible fences increase fire spread risk to oxidizer storage.",
+      "b": "Combustible fences increase fire spread risk to oxidizer storage.",
+      "d": "Spacing and surface protection are required for safe outdoor storage."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Industrial occupancies under NFPA 101 are generally characterized by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Exclusive use as overnight sleeping quarters for the public"
+      },
+      {
+        "id": "b",
+        "text": "Low hazard office work only with no equipment"
+      },
+      {
+        "id": "c",
+        "text": "Agricultural barns with no powered machinery"
+      },
+      {
+        "id": "d",
+        "text": "Operations involving fabrication, assembly, or processing of materials with occupant loads and hazards distinct from mercantile or storage uses"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Industrial occupancies include factories and workshops where production equipment and materials create specific egress and protection requirements.",
+    "distractorExplanations": {
+      "a": "Office-only work typically falls under business occupancies.",
+      "b": "Office-only work typically falls under business occupancies.",
+      "c": "Public sleeping quarters are assembly or residential uses."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "In a general industrial occupancy, automatic sprinklers are commonly required when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Building area or fire load exceeds thresholds in NFPA 101 for that occupancy subclass"
+      },
+      {
+        "id": "b",
+        "text": "The building has fewer than four windows"
+      },
+      {
+        "id": "c",
+        "text": "All employees wear safety glasses"
+      },
+      {
+        "id": "d",
+        "text": "The owner prefers paint color white"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Sprinkler mandates depend on occupancy type, area, height, and hazard classification—not superficial building traits.",
+    "distractorExplanations": {
+      "b": "Safety glasses are PPE, not a sprinkler trigger.",
+      "c": "Window count alone does not determine sprinkler requirements.",
+      "d": "Paint color has no bearing on sprinkler mandates."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "High-hazard industrial occupancies differ from ordinary industrial occupancies primarily in:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lower occupant load factors and reduced egress attention"
+      },
+      {
+        "id": "b",
+        "text": "Greater fuel loading, rapid fire growth potential, and stricter construction and protection requirements"
+      },
+      {
+        "id": "c",
+        "text": "Exemption from all fire alarm requirements"
+      },
+      {
+        "id": "d",
+        "text": "Permission to eliminate all means of egress"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "High-hazard industrial uses involve materials or processes with elevated fire or explosion potential requiring enhanced safeguards.",
+    "distractorExplanations": {
+      "a": "Fire alarms are typically required, not waived.",
+      "c": "Fire alarms are typically required, not waived.",
+      "d": "Means of egress cannot be eliminated."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "Combustible dust-producing industrial operations should integrate occupancy provisions with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only aesthetic interior design guidelines"
+      },
+      {
+        "id": "b",
+        "text": "Unrestricted open burning on the production floor"
+      },
+      {
+        "id": "c",
+        "text": "NFPA 652 dust hazard analysis and applicable NFPA commodity/process standards"
+      },
+      {
+        "id": "d",
+        "text": "Removal of all ventilation to keep dust inside"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Industrial occupancy controls must align with dust hazard management—containment, housekeeping, ignition control, and explosion protection.",
+    "distractorExplanations": {
+      "a": "Open burning is prohibited in industrial production areas.",
+      "b": "Open burning is prohibited in industrial production areas.",
+      "d": "Interior design does not address dust explosion risk."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "NFPA 241 applies to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only finished occupied hospitals after certificate of occupancy"
+      },
+      {
+        "id": "b",
+        "text": "Residential kitchen recipe standards"
+      },
+      {
+        "id": "c",
+        "text": "Calibration of laboratory pH meters"
+      },
+      {
+        "id": "d",
+        "text": "Fire safety during construction, alteration, and demolition of buildings and structures"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "NFPA 241 establishes construction fire prevention programs, hot work controls, and protection of life and property during building projects.",
+    "distractorExplanations": {
+      "a": "Occupied hospitals follow other NFPA occupancy standards post-CO.",
+      "b": "Occupied hospitals follow other NFPA occupancy standards post-CO.",
+      "c": "Kitchen recipes are unrelated to construction fire safety."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "facility-hazard-management",
+    "prompt": "The Fire Prevention Program Manager (FPPM) role under NFPA 241 is responsible for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Implementing and enforcing the site fire safety plan, permits, and coordination during construction"
+      },
+      {
+        "id": "b",
+        "text": "Approving structural steel metallurgy for all beams"
+      },
+      {
+        "id": "c",
+        "text": "Selecting paint colors for the owner lobby"
+      },
+      {
+        "id": "d",
+        "text": "Writing payroll checks for subcontractors"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The FPPM administers hot work, housekeeping, standpipe readiness, and liaison with AHJ on the construction site.",
+    "distractorExplanations": {
+      "b": "Structural metallurgy is engineering design scope.",
+      "c": "Lobby finishes are design choices, not FPPM duties.",
+      "d": "Payroll is administrative HR, not fire prevention management."
+    },
+    "difficulty": "medium"
+  }
+]

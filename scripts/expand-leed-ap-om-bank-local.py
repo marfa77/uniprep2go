@@ -23,10 +23,18 @@ TOPIC_TARGETS = {
 }
 
 
-def option_set(correct_text: str, distractors: list[str], correct_slot: int):
+def option_set(
+    correct_text: str,
+    distractors: list[str],
+    distractor_reasons: list[str],
+    correct_slot: int,
+):
+    if len(distractors) != 3 or len(distractor_reasons) != 3:
+        raise ValueError("Each question needs exactly three distractors and explanations.")
     seen = {correct_text}
     unique = []
-    for text in distractors:
+    unique_reasons = []
+    for text, reason in zip(distractors, distractor_reasons):
         candidate = text
         bump = 1
         while candidate in seen:
@@ -34,16 +42,17 @@ def option_set(correct_text: str, distractors: list[str], correct_slot: int):
             bump += 1
         seen.add(candidate)
         unique.append(candidate)
+        unique_reasons.append(reason)
     slot = correct_slot % 4
     ordered = unique[:slot] + [correct_text] + unique[slot:]
     ids = ["a", "b", "c", "d"]
     options = [{"id": ids[i], "text": ordered[i]} for i in range(4)]
     correct_id = ids[slot]
-    distractor_explanations = {
-        oid: "This choice misses the LEED O+M requirement or best practice for this credit path."
-        for oid in ids
-        if oid != correct_id
-    }
+    distractor_explanations = {}
+    for index, oid in enumerate(ids):
+        if oid != correct_id:
+            distractor_index = index if index < slot else index - 1
+            distractor_explanations[oid] = unique_reasons[distractor_index]
     return options, correct_id, distractor_explanations
 
 
@@ -55,10 +64,13 @@ def make_question(
     explanation: str,
     correct_text: str,
     distractors: list[str],
+    distractor_reasons: list[str],
     correct_slot: int,
     difficulty: str = "medium",
 ) -> dict:
-    options, correct_id, dist = option_set(correct_text, distractors, correct_slot)
+    options, correct_id, dist = option_set(
+        correct_text, distractors, distractor_reasons, correct_slot
+    )
     return {
         "id": f"{EXAM_SLUG}-{topic_id}-{n:03d}",
         "examSlug": EXAM_SLUG,
@@ -73,489 +85,157 @@ def make_question(
     }
 
 
-# --- Process / Integrative ---------------------------------------------------
+# Each case produces five deliberately different operational decisions.  The
+# cases are concrete O+M situations, rather than a small group of factories
+# repeated until the topic target is reached.
+Case = dict[str, object]
 
-def gen_process(rng: random.Random, count: int) -> list[dict]:
-    out = []
-    for i in range(1, count + 1):
-        factory = [
-            _p_recert,
-            _p_performance,
-            _p_commissioning,
-            _p_team,
-            _p_documentation,
-        ][(i - 1) % 5]
-        out.append(factory(rng, i))
-    return out
-
-
-def _p_recert(rng, n):
-    years = rng.choice([3, 5])
-    return make_question(
-        topic_id="process-integrative",
-        n=n,
-        prompt=(
-            f"An occupied office campus is pursuing LEED O+M recertification. "
-            f"What best describes the typical performance period mindset?"
-        ),
-        explanation=(
-            "O+M emphasizes ongoing operations data over a defined performance period, "
-            "not one-time design compliance alone."
-        ),
-        correct_text="Collect and verify operational performance data over a defined performance period.",
-        distractors=[
-            "Submit only as-built drawings from original construction.",
-            "Skip metering if the building is already occupied.",
-            f"Wait {years} years after construction before any operations tracking.",
-        ],
-        correct_slot=rng.randint(0, 3),
-    )
-
-
-def _p_performance(rng, n):
-    return make_question(
-        topic_id="process-integrative",
-        n=n,
-        prompt=(
-            "Facility managers want early alignment across energy, water, waste, and indoor air "
-            "for an O+M submission. Which approach is most integrative?"
-        ),
-        explanation="Integrative process convenes cross-discipline owners of operations data before credit strategies freeze.",
-        correct_text="Hold a cross-functional kickoff to map shared meters, baselines, and credit dependencies.",
-        distractors=[
-            "Assign each credit to a different vendor with no shared data plan.",
-            "Document only energy, then address water after certification.",
-            "Use marketing claims instead of measured performance.",
-        ],
-        correct_slot=rng.randint(0, 3),
-    )
-
-
-def _p_commissioning(rng, n):
-    return make_question(
-        topic_id="process-integrative",
-        n=n,
-        prompt="For existing-building operations, which commissioning focus is most appropriate?",
-        explanation="Existing buildings emphasize ongoing commissioning / retro-commissioning of systems in use.",
-        correct_text="Verify that operating systems meet current facility requirements and correct findings.",
-        distractors=[
-            "Commission only unfinished design drawings.",
-            "Ignore BAS trends if operators say systems 'feel fine.'",
-            "Defer all functional testing until after recertification.",
-        ],
-        correct_slot=rng.randint(0, 3),
-    )
+TOPIC_CASES: dict[str, list[Case]] = {
+    "process-integrative": [
+        {"site": "a downtown office", "focus": "the cross-functional kickoff", "action": "assign credit owners and map the energy, water, waste, and IAQ data each owner controls", "evidence": "a responsibility matrix with milestones and review dates", "risk": "letting independent consultants compile disconnected credit narratives"},
+        {"site": "a university library", "focus": "the performance period", "action": "collect dated utility, purchasing, and operations records for the selected reporting period", "evidence": "source records whose dates and building address match the application", "risk": "substituting original construction documents for current operating data"},
+        {"site": "a medical office building", "focus": "current facility requirements", "action": "document the owner’s comfort, ventilation, scheduling, and reliability requirements before testing systems", "evidence": "approved current facility requirements linked to operations goals", "risk": "testing equipment against obsolete design assumptions"},
+        {"site": "a mixed-use tower", "focus": "retro-commissioning", "action": "test HVAC sequences, correct deficiencies, and verify the fixes with trend data", "evidence": "functional test results, issue logs, and closure verification", "risk": "accepting verbal assurances instead of functional verification"},
+        {"site": "a warehouse", "focus": "ongoing commissioning", "action": "review BAS trends periodically and investigate persistent scheduling or simultaneous-heating-and-cooling faults", "evidence": "recurring trend-review records and corrective-action logs", "risk": "treating commissioning as a one-time project"},
+        {"site": "a hotel", "focus": "occupant feedback", "action": "log comfort complaints, investigate patterns, and communicate resolved actions to occupants", "evidence": "dated complaint records tied to findings and responses", "risk": "discarding complaints once a work order is closed"},
+        {"site": "a civic center", "focus": "staff training", "action": "train operators on the written operating plan and document attendance and competency", "evidence": "training materials, attendance records, and refresher schedule", "risk": "assuming a policy is implemented because it was emailed"},
+        {"site": "a data center", "focus": "change management", "action": "evaluate energy, water, and IAQ effects before changing setpoints or equipment sequences", "evidence": "change-control records with expected impacts and post-change verification", "risk": "making undocumented overrides that obscure the operating baseline"},
+        {"site": "a retail center", "focus": "tenant coordination", "action": "obtain tenant utility and waste information through documented data-sharing procedures", "evidence": "tenant data requests, submissions, and aggregation method", "risk": "estimating tenant consumption from leased area alone"},
+        {"site": "a courthouse", "focus": "recertification readiness", "action": "use prior review comments and current performance data to identify gaps before submission", "evidence": "a gap register showing owner, action, and completion status", "risk": "copying the prior certification narrative without checking current operations"},
+    ],
+    "location-sites": [
+        {"site": "an office campus", "focus": "bicycle access", "action": "maintain secure bicycle storage and a safe, connected pedestrian route to the building entrance", "evidence": "site photos, capacity records, and an access map", "risk": "counting bike racks located behind a locked service gate"},
+        {"site": "a suburban call center", "focus": "transit access", "action": "document usable pedestrian access to nearby transit and communicate routes to occupants", "evidence": "a route map, transit schedule, and pedestrian-path photos", "risk": "claiming a transit stop that requires walking along an unsafe roadway"},
+        {"site": "a hospital", "focus": "electric vehicles", "action": "keep charging stations powered, signed, and available to their intended users", "evidence": "installation photos, access policy, and operating records", "risk": "claiming chargers that were purchased but never energized"},
+        {"site": "a school", "focus": "stormwater maintenance", "action": "inspect bioretention areas, remove sediment, and keep overflow paths functioning", "evidence": "inspection logs and maintenance work orders", "risk": "treating a planted basin as maintenance-free landscaping"},
+        {"site": "a municipal building", "focus": "runoff pollution prevention", "action": "cover outdoor chemical storage and keep spill-response materials away from storm drains", "evidence": "site-management procedures and inspection records", "risk": "storing deicing chemicals uncovered beside a catch basin"},
+        {"site": "a distribution center", "focus": "heat island reduction", "action": "preserve shaded parking and maintain reflective or vegetated roof surfaces", "evidence": "roof maintenance records and shaded-area site photos", "risk": "replacing shade trees with additional dark asphalt"},
+        {"site": "a museum", "focus": "light pollution", "action": "aim exterior fixtures downward and use controls that limit unnecessary nighttime uplight", "evidence": "fixture inventory, photometric information, and control settings", "risk": "leaving façade floodlights on all night without a control strategy"},
+        {"site": "a corporate park", "focus": "habitat management", "action": "use native or adapted plants and integrated pest management based on observed need", "evidence": "plant list, IPM plan, and pesticide application logs", "risk": "applying broad-spectrum pesticide on a fixed weekly schedule"},
+        {"site": "a community college", "focus": "site restoration", "action": "protect vegetated buffers and repair erosion before sediment reaches waterways", "evidence": "erosion inspection reports and corrective-action photos", "risk": "mowing vegetated buffers to bare soil for easier maintenance"},
+        {"site": "a downtown hotel", "focus": "parking management", "action": "prioritize shared parking and preferred spaces for low-emitting or carpool vehicles where provided", "evidence": "parking plan, signs, and enforcement records", "risk": "reserving the closest spaces solely for single-occupancy executive vehicles"},
+    ],
+    "water-efficiency": [
+        {"site": "an office building", "focus": "whole-building metering", "action": "record whole-building water use regularly and investigate material deviations from the baseline", "evidence": "dated meter readings or utility bills with a trend analysis", "risk": "estimating annual water use from floor area without meter data"},
+        {"site": "a hotel", "focus": "submetering", "action": "submeter cooling-tower makeup water to isolate a major process load", "evidence": "submeter data reconciled to the whole-building meter", "risk": "assuming all water beyond restroom use is irrigation"},
+        {"site": "a university dormitory", "focus": "leak response", "action": "trace an overnight meter spike, repair the leak, and retain the repair record", "evidence": "alert, work order, repair invoice, and post-repair meter trend", "risk": "silently averaging the spike into the annual baseline"},
+        {"site": "a convention center", "focus": "toilets and urinals", "action": "maintain high-efficiency fixtures and correct running valves promptly", "evidence": "fixture inventory, flush-volume documentation, and maintenance logs", "risk": "increasing flush volumes to reduce occasional double-flushing"},
+        {"site": "a clinic", "focus": "lavatories", "action": "use compliant low-flow faucets with aerators or sensors adjusted for practical use", "evidence": "fixture flow-rate records and maintenance settings", "risk": "disabling sensor shutoffs so faucets run continuously"},
+        {"site": "a manufacturing office", "focus": "irrigation controls", "action": "use weather-based controls, rain shutoff, and seasonal programming for landscape irrigation", "evidence": "controller settings, irrigation schedule, and rain-sensor inspection", "risk": "watering on a fixed daily schedule during rainy periods"},
+        {"site": "a library", "focus": "plant selection", "action": "replace high-water turf areas with adapted planting and mulch to reduce irrigation demand", "evidence": "landscape plan, plant list, and irrigation-zone records", "risk": "watering paved plazas to reduce surface temperature"},
+        {"site": "a laboratory building", "focus": "cooling towers", "action": "optimize cycles of concentration using conductivity control within water-treatment limits", "evidence": "makeup, blowdown, conductivity, and treatment-service records", "risk": "maximizing continuous blowdown regardless of water chemistry"},
+        {"site": "a food-service building", "focus": "kitchen equipment", "action": "select and maintain efficient commercial dishwashing equipment and avoid unnecessary rinse flow", "evidence": "equipment specifications, operating settings, and maintenance records", "risk": "bypassing rinse controls to shorten staff waiting time"},
+        {"site": "a recreation center", "focus": "alternative water", "action": "document the permitted source, treatment, and meter data for nonpotable water use", "evidence": "system diagram, approvals, treatment records, and separate meter logs", "risk": "counting untreated graywater use without documenting health safeguards"},
+    ],
+    "energy-atmosphere": [
+        {"site": "an office tower", "focus": "energy benchmarking", "action": "enter complete utility data in a recognized benchmarking tool and review the normalized result", "evidence": "benchmarking report, utility bills, and building characteristics", "risk": "using one winter utility bill as the annual energy profile"},
+        {"site": "a supermarket", "focus": "whole-building metering", "action": "maintain continuous whole-building energy data for performance tracking", "evidence": "utility account records or interval-meter exports for the reporting period", "risk": "substituting a design energy model for actual consumption"},
+        {"site": "a university laboratory", "focus": "energy-use intensity", "action": "investigate increased EUI by checking operating hours, loads, and system trends", "evidence": "EUI trend, occupancy data, and diagnostic trend logs", "risk": "assuming higher EUI is acceptable because the floor area did not change"},
+        {"site": "a hotel", "focus": "BAS schedules", "action": "align HVAC and lighting schedules with verified occupancy while maintaining required service", "evidence": "schedule screenshots, occupancy records, and post-change trend data", "risk": "running all air-handling units 24 hours a day as a default"},
+        {"site": "a courthouse", "focus": "optimal start", "action": "use outdoor conditions and occupancy time to start HVAC only as early as needed", "evidence": "optimal-start settings and trend data showing occupied-time comfort", "risk": "starting HVAC at the same early time every day regardless of weather"},
+        {"site": "a data center", "focus": "air management", "action": "maintain hot-aisle/cold-aisle separation and monitor inlet conditions", "evidence": "airflow-management plan and temperature trend records", "risk": "removing blanking panels because racks appear adequately cooled"},
+        {"site": "a retail store", "focus": "lighting controls", "action": "verify daylight, occupancy, and time-clock controls operate after layout changes", "evidence": "control test records and updated lighting schedule", "risk": "leaving display lighting permanently overridden after an event"},
+        {"site": "a hospital", "focus": "renewable energy", "action": "document attributable on-site generation or qualifying renewable-energy procurement for the period", "evidence": "production records or contract/REC documentation linked to the project", "risk": "claiming a neighboring building's solar output without an agreement"},
+        {"site": "a cold-storage warehouse", "focus": "refrigerant management", "action": "maintain an equipment refrigerant inventory and repair leaks under documented procedures", "evidence": "charge inventory, leak logs, and service records", "risk": "venting refrigerant during service to speed up repairs"},
+        {"site": "a civic theater", "focus": "demand response", "action": "maintain documented procedures to shed noncritical load during a demand-response event", "evidence": "enrollment records, test results, and event-performance data", "risk": "claiming demand response based only on a future participation intention"},
+    ],
+    "materials-ieq": [
+        {"site": "an office campus", "focus": "ongoing waste", "action": "measure recurring landfill, recycling, and organics streams during the performance period", "evidence": "hauler tickets, stream weights, and diversion calculations", "risk": "reporting a one-day cleanout as the annual diversion rate"},
+        {"site": "a hotel", "focus": "food waste", "action": "separate kitchen organics and track the destination with the waste hauler", "evidence": "collection records and organics weight tickets", "risk": "mixing organics into landfill trash after a busy service"},
+        {"site": "a hospital", "focus": "durable goods purchasing", "action": "apply written sustainability criteria when purchasing furniture and equipment", "evidence": "purchasing policy, invoices, and product attribute documentation", "risk": "selecting products solely on first cost without recording attributes"},
+        {"site": "a school", "focus": "consumable purchasing", "action": "track sustainable paper, janitorial, and facility consumables against the policy", "evidence": "purchase reports, product data, and policy calculations", "risk": "counting an unlabeled substitute product as environmentally preferable"},
+        {"site": "a library", "focus": "green cleaning", "action": "use documented safer cleaning products, dilution control, training, and custodial procedures", "evidence": "product list, SDS access, training records, and dilution logs", "risk": "mixing concentrated chemicals by eye to make a stronger solution"},
+        {"site": "a recreation center", "focus": "entryway systems", "action": "maintain walk-off mats and cleaning procedures that reduce tracked-in contaminants", "evidence": "mat locations, cleaning schedule, and maintenance records", "risk": "removing entry mats because they require periodic cleaning"},
+        {"site": "a medical office", "focus": "ventilation", "action": "maintain outdoor-air delivery and investigate ventilation-related occupant complaints", "evidence": "ventilation verification, filter records, and complaint follow-up", "risk": "closing outdoor-air dampers permanently to save fan energy"},
+        {"site": "a call center", "focus": "filtration", "action": "use and replace filters appropriate to the installed system and document pressure-drop checks", "evidence": "filter specifications, replacement records, and inspection logs", "risk": "using a lower-efficiency filter because it has less pressure drop"},
+        {"site": "a courthouse", "focus": "tobacco smoke control", "action": "enforce the smoking policy inside and near entries, operable windows, and air intakes", "evidence": "policy, signage, and enforcement or inspection records", "risk": "allowing smoking directly beside an outdoor-air intake"},
+        {"site": "a museum", "focus": "IAQ source control", "action": "store chemicals in ventilated, contained locations and respond to spills promptly", "evidence": "chemical inventory, storage inspections, and spill-response logs", "risk": "keeping open chemical containers in an occupied corridor"},
+    ],
+}
 
 
-def _p_team(rng, n):
-    role = rng.choice(["energy manager", "waste contractor", "IAQ consultant", "water utilities lead"])
-    return make_question(
-        topic_id="process-integrative",
-        n=n,
-        prompt=(
-            f"Who should own day-to-day evidence for an O+M credit that depends on measured utility data "
-            f"when the {role} sits outside the core project team?"
-        ),
-        explanation="Credit owners must include the people who control meters and logs; integrate them into the team.",
-        correct_text="Bring the data owner into the project team with clear deliverables and review dates.",
-        distractors=[
-            "Guess values from similar buildings nearby.",
-            "Leave the credit blank until GBCI asks questions.",
-            "Substitute a brochure for measured data.",
-        ],
-        correct_slot=rng.randint(0, 3),
-        difficulty="easy",
-    )
+def gen_topic(topic_id: str, rng: random.Random, count: int) -> list[dict]:
+    cases = TOPIC_CASES[topic_id]
+    if count != len(cases) * 5:
+        raise ValueError(f"{topic_id} requires five questions per authored case.")
 
-
-def _p_documentation(rng, n):
-    return make_question(
-        topic_id="process-integrative",
-        n=n,
-        prompt="Which documentation habit best supports O+M credit review?",
-        explanation="Reviewers need traceable performance-period evidence tied to the building and dates.",
-        correct_text="Keep dated logs, meter reads, and policies aligned to the performance period.",
-        distractors=[
-            "Rely on undated photos without context.",
-            "Submit vendor marketing PDFs only.",
-            "Use data from a different campus building without disclosure.",
-        ],
-        correct_slot=rng.randint(0, 3),
-        difficulty="easy",
-    )
-
-
-# --- Location & Sites --------------------------------------------------------
-
-def gen_location(rng: random.Random, count: int) -> list[dict]:
-    out = []
-    for i in range(1, count + 1):
-        factory = [_l_transit, _l_stormwater, _l_heat, _l_habitat, _l_alt_transport][(i - 1) % 5]
-        out.append(factory(rng, i))
-    return out
-
-
-def _l_transit(rng, n):
-    return make_question(
-        topic_id="location-sites",
-        n=n,
-        prompt="Which site strategy most directly supports sustainable transportation for an occupied workplace?",
-        explanation="Quality transit access and end-of-trip facilities encourage alternatives to single-occupancy vehicles.",
-        correct_text="Improve pedestrian access to frequent transit and provide secure bike parking.",
-        distractors=[
-            "Add only reserved executive parking nearest the entrance.",
-            "Remove sidewalks to expand drive lanes.",
-            "Ban all visitor parking without offering alternatives.",
-        ],
-        correct_slot=rng.randint(0, 3),
-    )
-
-
-def _l_stormwater(rng, n):
-    return make_question(
-        topic_id="location-sites",
-        n=n,
-        prompt="An O+M team wants to reduce site runoff pollution. Which action is most aligned?",
-        explanation="O+M site credits favor maintaining vegetated practices and reducing untreated runoff.",
-        correct_text="Maintain bioretention areas and keep storm inlets clear of sediment and debris.",
-        distractors=[
-            "Pipe all roof water directly to the street without treatment.",
-            "Seal every pervious surface with impermeable coating.",
-            "Store chemicals outdoors uncovered near drains.",
-        ],
-        correct_slot=rng.randint(0, 3),
-    )
-
-
-def _l_heat(rng, n):
-    return make_question(
-        topic_id="location-sites",
-        n=n,
-        prompt="Which roof/site choice best helps reduce heat-island effects in operations?",
-        explanation="High-SRI roofs and shade/vegetation reduce heat absorption on existing sites.",
-        correct_text="Maintain a high-SRI roof coating and preserve mature shade trees in parking areas.",
-        distractors=[
-            "Repaint the roof dark charcoal for aesthetics only.",
-            "Remove trees to maximize asphalt parking.",
-            "Add only decorative gravel with no reflectance strategy.",
-        ],
-        correct_slot=rng.randint(0, 3),
-    )
-
-
-def _l_habitat(rng, n):
-    return make_question(
-        topic_id="location-sites",
-        n=n,
-        prompt="For site management supporting habitat, which practice is preferable?",
-        explanation="Native/adaptive plantings and reduced chemical reliance support site ecology in O+M.",
-        correct_text="Use native or adaptive plantings and minimize unnecessary pesticide use.",
-        distractors=[
-            "Convert all landscaping to invasive ornamentals.",
-            "Apply broad-spectrum pesticides on a fixed weekly schedule regardless of need.",
-            "Mow every vegetated buffer to bare soil.",
-        ],
-        correct_slot=rng.randint(0, 3),
-        difficulty="easy",
-    )
-
-
-def _l_alt_transport(rng, n):
-    stalls = rng.choice([2, 4, 6])
-    return make_question(
-        topic_id="location-sites",
-        n=n,
-        prompt=(
-            f"A campus is adding {stalls} EV charging stations for O+M transportation credits. "
-            f"What else should the team verify?"
-        ),
-        explanation="Chargers must be available for occupants/visitors as intended and documented during the performance period.",
-        correct_text="Confirm stations are installed, powered, and accessible for intended users during the performance period.",
-        distractors=[
-            "Count planned chargers that are not yet installed.",
-            "Locate chargers in a locked yard with no occupant access.",
-            "Document only a purchase order without operation.",
-        ],
-        correct_slot=rng.randint(0, 3),
-    )
-
-
-# --- Water -------------------------------------------------------------------
-
-def gen_water(rng: random.Random, count: int) -> list[dict]:
-    out = []
-    for i in range(1, count + 1):
-        factory = [_w_meter, _w_fixtures, _w_irrigation, _w_cooling, _w_leak][(i - 1) % 5]
-        out.append(factory(rng, i))
-    return out
-
-
-def _w_meter(rng, n):
-    return make_question(
-        topic_id="water-efficiency",
-        n=n,
-        prompt="Why is whole-building water metering critical for LEED O+M water strategies?",
-        explanation="Meters establish usage baselines and track reductions over the performance period.",
-        correct_text="They enable measured baselines and ongoing tracking of water use.",
-        distractors=[
-            "They eliminate the need for fixture standards.",
-            "They replace all irrigation controls.",
-            "They are only required for vacant buildings.",
-        ],
-        correct_slot=rng.randint(0, 3),
-        difficulty="easy",
-    )
-
-
-def _w_fixtures(rng, n):
-    return make_question(
-        topic_id="water-efficiency",
-        n=n,
-        prompt="Which indoor plumbing upgrade most clearly supports potable water reduction?",
-        explanation="Low-flow/high-efficiency fixtures reduce indoor potable demand when maintained correctly.",
-        correct_text="Install and maintain WaterSense (or equivalent) high-efficiency fixtures where applicable.",
-        distractors=[
-            "Increase flush volumes to improve 'feel.'",
-            "Disable sensor faucets so they run continuously.",
-            "Ignore leaks if monthly bills look acceptable.",
-        ],
-        correct_slot=rng.randint(0, 3),
-    )
-
-
-def _w_irrigation(rng, n):
-    return make_question(
-        topic_id="water-efficiency",
-        n=n,
-        prompt="Which landscape irrigation practice best reduces outdoor water use?",
-        explanation="Weather-based/smart controllers and efficient plantings cut outdoor potable irrigation.",
-        correct_text="Use weather-based irrigation control and drought-tolerant plantings.",
-        distractors=[
-            "Irrigate at midday every day year-round.",
-            "Water impermeable paving to keep it cool.",
-            "Disable rain sensors on existing controllers.",
-        ],
-        correct_slot=rng.randint(0, 3),
-    )
-
-
-def _w_cooling(rng, n):
-    return make_question(
-        topic_id="water-efficiency",
-        n=n,
-        prompt="For cooling-tower water use, which O+M action is most appropriate?",
-        explanation="Conductivity/blowdown controls and metering help optimize cycles of concentration safely.",
-        correct_text="Meter tower makeup/blowdown and optimize cycles of concentration within water-treatment limits.",
-        distractors=[
-            "Maximize continuous blowdown with no controls.",
-            "Ignore tower chemistry because energy meters exist.",
-            "Use only potable water estimates with no logs.",
-        ],
-        correct_slot=rng.randint(0, 3),
-        difficulty="hard",
-    )
-
-
-def _w_leak(rng, n):
-    return make_question(
-        topic_id="water-efficiency",
-        n=n,
-        prompt="A sudden spike appears on the domestic water meter overnight. Best first response?",
-        explanation="Investigate leaks promptly; unexplained spikes undermine performance-period water claims.",
-        correct_text="Investigate for leaks or unintended flows and correct them; document the finding.",
-        distractors=[
-            "Average the spike into last year's baseline silently.",
-            "Wait until annual reporting to mention it.",
-            "Turn off all meters to hide the anomaly.",
-        ],
-        correct_slot=rng.randint(0, 3),
-        difficulty="easy",
-    )
-
-
-# --- Energy & Atmosphere -----------------------------------------------------
-
-def gen_energy(rng: random.Random, count: int) -> list[dict]:
-    out = []
-    for i in range(1, count + 1):
-        factory = [_e_meter, _e_benchmark, _e_re, _e_refrigerant, _e_ops][(i - 1) % 5]
-        out.append(factory(rng, i))
-    return out
-
-
-def _e_meter(rng, n):
-    return make_question(
-        topic_id="energy-atmosphere",
-        n=n,
-        prompt="What is the primary O+M purpose of whole-building energy metering?",
-        explanation="Energy meters support benchmarking, performance tracking, and credit documentation.",
-        correct_text="Track actual energy use for benchmarking and performance-period reporting.",
-        distractors=[
-            "Replace the need for any operational schedules.",
-            "Prove design intent without measured data.",
-            "Only support marketing claims, not credits.",
-        ],
-        correct_slot=rng.randint(0, 3),
-        difficulty="easy",
-    )
-
-
-def _e_benchmark(rng, n):
-    return make_question(
-        topic_id="energy-atmosphere",
-        n=n,
-        prompt="Which benchmarking practice aligns with LEED O+M energy performance?",
-        explanation="Normalized, comparable energy metrics (e.g., ENERGY STAR Portfolio Manager style) support performance credits.",
-        correct_text="Enter 12 months of utility data into a recognized benchmarking tool and track the score.",
-        distractors=[
-            "Estimate energy from square footage alone with no bills.",
-            "Use a single winter month as the annual figure.",
-            "Benchmark a different building and reuse the score.",
-        ],
-        correct_slot=rng.randint(0, 3),
-    )
-
-
-def _e_re(rng, n):
-    return make_question(
-        topic_id="energy-atmosphere",
-        n=n,
-        prompt="Which renewable energy approach is most defensible for O+M documentation?",
-        explanation="Contracts and metered on-site generation must be attributable to the project for the period.",
-        correct_text="Document on-site generation or qualifying RECs/contracts tied to the building for the performance period.",
-        distractors=[
-            "Claim neighbor rooftop PV without an agreement.",
-            "Promise future panels with no purchase.",
-            "Count fossil backup generators as renewable.",
-        ],
-        correct_slot=rng.randint(0, 3),
-    )
-
-
-def _e_refrigerant(rng, n):
-    return make_question(
-        topic_id="energy-atmosphere",
-        n=n,
-        prompt="For refrigerant management in existing buildings, which practice is preferred?",
-        explanation="O+M emphasizes leak prevention, proper recovery, and preferential lower-impact refrigerants over time.",
-        correct_text="Maintain leak detection/repair procedures and keep refrigerant inventories and service logs.",
-        distractors=[
-            "Vent refrigerants during service to speed repairs.",
-            "Ignore manufacturer charge limits.",
-            "Store empty cylinders unlabeled outdoors.",
-        ],
-        correct_slot=rng.randint(0, 3),
-    )
-
-
-def _e_ops(rng, n):
-    schedule = rng.choice(["setback temperatures", "lighting schedules", "AHU optimal start"])
-    return make_question(
-        topic_id="energy-atmosphere",
-        n=n,
-        prompt=f"Operators want energy savings without capital retrofit. Which {schedule} action helps?",
-        explanation="Tuning schedules and setpoints is a core O+M energy strategy when comfort requirements are still met.",
-        correct_text="Implement and verify BAS schedules/setpoints that match actual occupancy.",
-        distractors=[
-            "Run all systems 24/7 'just in case.'",
-            "Disable night setbacks permanently.",
-            "Override schedules daily without logging why.",
-        ],
-        correct_slot=rng.randint(0, 3),
-    )
-
-
-# --- Materials / IEQ ---------------------------------------------------------
-
-def gen_materials(rng: random.Random, count: int) -> list[dict]:
-    out = []
-    for i in range(1, count + 1):
-        factory = [_m_waste, _m_purchasing, _m_iaq, _m_cleaning, _m_smoking][(i - 1) % 5]
-        out.append(factory(rng, i))
-    return out
-
-
-def _m_waste(rng, n):
-    return make_question(
-        topic_id="materials-ieq",
-        n=n,
-        prompt="Which waste practice best supports O+M materials credits?",
-        explanation="Ongoing diversion with measured streams (recycling, organics, etc.) is the O+M approach.",
-        correct_text="Track ongoing waste streams and diversion rates over the performance period.",
-        distractors=[
-            "Haul everything to landfill without sorting for convenience.",
-            "Report a one-day cleanout as the annual diversion rate.",
-            "Exclude construction debris by mixing it into daily trash silently.",
-        ],
-        correct_slot=rng.randint(0, 3),
-    )
-
-
-def _m_purchasing(rng, n):
-    return make_question(
-        topic_id="materials-ieq",
-        n=n,
-        prompt="For ongoing purchasing, which policy aligns with LEED O+M?",
-        explanation="Prefer products with recycled content, responsible sourcing, and low-emitting attributes as applicable.",
-        correct_text="Adopt a purchasing policy prioritizing sustainable and low-emitting products where feasible.",
-        distractors=[
-            "Buy the cheapest option with no environmental criteria.",
-            "Ban all documentation of product attributes.",
-            "Purchase only for aesthetics regardless of VOC content in occupied spaces.",
-        ],
-        correct_slot=rng.randint(0, 3),
-        difficulty="easy",
-    )
-
-
-def _m_iaq(rng, n):
-    return make_question(
-        topic_id="materials-ieq",
-        n=n,
-        prompt="Which IAQ action is most relevant for occupied-building operations?",
-        explanation="O+M IAQ relies on ventilation performance, filtration, and pollutant source control during occupancy.",
-        correct_text="Maintain outdoor air ventilation and filtration; investigate occupant IAQ complaints promptly.",
-        distractors=[
-            "Seal outdoor air intakes permanently to save energy.",
-            "Ignore filter change schedules if pressure drop looks fine once.",
-            "Store chemicals in corridors without secondary containment.",
-        ],
-        correct_slot=rng.randint(0, 3),
-    )
-
-
-def _m_cleaning(rng, n):
-    return make_question(
-        topic_id="materials-ieq",
-        n=n,
-        prompt="What should a green cleaning program emphasize for O+M?",
-        explanation="Certified/safer products, training, and documented procedures reduce IAQ and chemical risks.",
-        correct_text="Use safer cleaning products with staff training and written procedures.",
-        distractors=[
-            "Use the strongest solvents available for all surfaces.",
-            "Skip SDS access for custodial staff.",
-            "Mix incompatible chemicals to 'boost' performance.",
-        ],
-        correct_slot=rng.randint(0, 3),
-        difficulty="easy",
-    )
-
-
-def _m_smoking(rng, n):
-    return make_question(
-        topic_id="materials-ieq",
-        n=n,
-        prompt="Which smoking policy best protects indoor environmental quality?",
-        explanation="Prohibit smoking in the building and near entries/air intakes as required by LEED approaches.",
-        correct_text="Prohibit smoking inside and within required distances of entries and outdoor air intakes.",
-        distractors=[
-            "Allow smoking in stairwells only.",
-            "Permit smoking next to outdoor air intakes.",
-            "Post no policy and rely on courtesy alone.",
-        ],
-        correct_slot=rng.randint(0, 3),
-        difficulty="easy",
-    )
+    questions: list[dict] = []
+    for case_index, case in enumerate(cases):
+        site = str(case["site"])
+        focus = str(case["focus"])
+        action = str(case["action"])
+        evidence = str(case["evidence"])
+        risk = str(case["risk"])
+        variants = [
+            (
+                f"At {site}, the O+M team is addressing {focus}. Which action is the strongest operational response?",
+                action,
+                [risk, "Wait until the end of the reporting period before deciding what to document.", "Use an undated supplier claim instead of site-specific operating evidence."],
+                [
+                    f"{risk.capitalize()} does not implement the {focus} strategy at the building.",
+                    "Delaying action loses the contemporaneous records needed to demonstrate ongoing operations.",
+                    "A supplier claim cannot verify how this building actually operated.",
+                ],
+            ),
+            (
+                f"What evidence would best substantiate {focus} for {site} during LEED O+M review?",
+                evidence,
+                ["A verbal statement from the facilities director.", "An undated photograph with no building identifier.", "A record from another building in the portfolio."],
+                [
+                    "A verbal statement is not traceable performance-period documentation.",
+                    "Without a date and project connection, the photograph cannot substantiate the practice.",
+                    "Portfolio data cannot be substituted for evidence from the applying building.",
+                ],
+            ),
+            (
+                f"Which proposed practice would most undermine {focus} at {site}?",
+                risk,
+                [action, f"Review {focus} records on a regular operating schedule.", f"Assign a facility staff member to retain {focus} documentation."],
+                [
+                    f"This is the documented operational practice that addresses {focus}.",
+                    "Regular review supports continuous O+M implementation rather than undermining it.",
+                    "Clear evidence ownership improves the completeness and traceability of the submission.",
+                ],
+            ),
+            (
+                f"During a site walk at {site}, an assessor asks how the team manages {focus}. What should the team be able to show?",
+                f"That it carries out: {action}; and retains {evidence}.",
+                [f"That it plans to address {focus} after certification.", "Only the building's original design drawings.", "A generic corporate sustainability brochure with no local records."],
+                [
+                    "A future plan does not demonstrate the required current operational practice.",
+                    "Original drawings do not demonstrate how an existing building is currently operated.",
+                    "Generic corporate materials do not prove implementation at this site.",
+                ],
+            ),
+            (
+                f"For {site}, which management decision best keeps {focus} defensible throughout the O+M performance period?",
+                f"Make {action} part of normal operations and maintain {evidence}.",
+                [risk, "Archive records only after the performance period closes.", "Rely on memory when compiling the application."],
+                [
+                    f"{risk.capitalize()} creates a direct gap in the {focus} strategy.",
+                    "Evidence should be retained as work occurs so its dates and context remain verifiable.",
+                    "Memory is not a reproducible record of building operations.",
+                ],
+            ),
+        ]
+        for variant_index, (prompt, correct, distractors, reasons) in enumerate(variants):
+            questions.append(
+                make_question(
+                    topic_id=topic_id,
+                    n=case_index * 5 + variant_index + 1,
+                    prompt=prompt,
+                    explanation=(
+                        f"LEED O+M evaluates documented, ongoing performance. For {focus} at {site}, "
+                        f"the team must implement the operational practice and retain traceable evidence."
+                    ),
+                    correct_text=correct,
+                    distractors=distractors,
+                    distractor_reasons=reasons,
+                    correct_slot=rng.randint(0, 3),
+                    difficulty="medium" if variant_index else "hard",
+                )
+            )
+    return questions
 
 
 def validate(q: dict) -> list[str]:
@@ -569,6 +249,10 @@ def validate(q: dict) -> list[str]:
         errs.append("correct")
     if len((q.get("explanation") or "")) < 20:
         errs.append("explanation")
+    distractors = q.get("distractorExplanations") or {}
+    wrong_ids = {o["id"] for o in q["options"]} - {q["correctOptionId"]}
+    if set(distractors) != wrong_ids or any(len(text.strip()) < 25 for text in distractors.values()):
+        errs.append("distractorExplanations")
     return errs
 
 
@@ -583,16 +267,9 @@ def sync_cache(topic: str, questions: list[dict]) -> None:
 
 def main() -> None:
     rng = random.Random(20260716)
-    generators = {
-        "process-integrative": gen_process,
-        "location-sites": gen_location,
-        "water-efficiency": gen_water,
-        "energy-atmosphere": gen_energy,
-        "materials-ieq": gen_materials,
-    }
     final: list[dict] = []
     for topic, target in TOPIC_TARGETS.items():
-        qs = generators[topic](rng, target)
+        qs = gen_topic(topic, rng, target)
         for q in qs:
             errs = validate(q)
             if errs:
@@ -600,6 +277,12 @@ def main() -> None:
         final.extend(qs)
         sync_cache(topic, qs)
 
+    prompts = [q["prompt"] for q in final]
+    if len(final) != 250 or len(set(prompts)) != 250:
+        raise SystemExit(
+            f"Bank must contain 250 unique prompts; got {len(final)} questions and "
+            f"{len(set(prompts))} unique prompts."
+        )
     BANK_PATH.write_text(json.dumps(final, indent=2) + "\n")
     counts = {t: sum(1 for q in final if q["topicId"] == t) for t in TOPIC_TARGETS}
     print(f"STATUS LEED O+M local bank: {len(final)} → {BANK_PATH}")

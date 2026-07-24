@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Fan static pressure measurements above design in existing VAV systems may indicate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dirty filters, closed dampers, undersized ducts, or stuck VAV boxes"
+      },
+      {
+        "id": "b",
+        "text": "Perfect duct balance with no remediation needed"
+      },
+      {
+        "id": "c",
+        "text": "Excess free cooling from economizers"
+      },
+      {
+        "id": "d",
+        "text": "Reduced fan energy consumption"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Excess static drives fan kW and may reduce airflow to zones.",
+    "distractorExplanations": {
+      "b": "High static usually signals restriction or control problems.",
+      "c": "Economizer operation does not directly raise duct static.",
+      "d": "Higher static typically increases fan power."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Kitchen exhaust and makeup air systems assessed for energy should evaluate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hood operating schedules, makeup air conditioning, and interlocks with cooking loads"
+      },
+      {
+        "id": "b",
+        "text": "Only table setting arrangements"
+      },
+      {
+        "id": "c",
+        "text": "Structural steel camber in the dining room"
+      },
+      {
+        "id": "d",
+        "text": "That makeup air is never conditioned"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Commercial kitchens often have high ventilation-related energy intensity.",
+    "distractorExplanations": {
+      "b": "Hood/makeup air interlocks affect HVAC loads materially.",
+      "c": "Structural camber is unrelated to exhaust energy.",
+      "d": "Untreated makeup air can impose large heating/cooling penalties."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "A building with rising EUI year-over-year after occupancy growth should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Normalize metrics per occupant or hour of operation before concluding efficiency degradation"
+      },
+      {
+        "id": "b",
+        "text": "Automatically blame envelope insulation without data"
+      },
+      {
+        "id": "c",
+        "text": "Ignore occupancy because only area matters always"
+      },
+      {
+        "id": "d",
+        "text": "Delete prior years of utility data"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Normalization prevents misattributing higher use to worse efficiency.",
+    "distractorExplanations": {
+      "b": "Occupancy and hours affect total consumption.",
+      "c": "Some building types scale energy with occupants and runtime.",
+      "d": "Historical trends are essential for diagnosis."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Demand-controlled ventilation assessment verifies:",
+    "options": [
+      {
+        "id": "a",
+        "text": "CO₂ or occupancy sensors modulate outdoor air to meet code minimums without over-ventilating"
+      },
+      {
+        "id": "b",
+        "text": "Outdoor air is fixed at maximum design forever"
+      },
+      {
+        "id": "c",
+        "text": "Sensors are disabled to save sensor cost only"
+      },
+      {
+        "id": "d",
+        "text": "Ventilation is unrelated to HVAC energy"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Proper DCV saves fan and conditioning energy while maintaining IAQ.",
+    "distractorExplanations": {
+      "b": "DCV reduces ventilation when loads are low.",
+      "c": "Disabled DCV wastes heating/cooling on excess OA.",
+      "d": "Conditioning outdoor air is a major load component."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Chiller sequencing assessment should confirm:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Most efficient chiller leads near design load and lag chillers stage off at part load"
+      },
+      {
+        "id": "b",
+        "text": "All chillers run at minimum load simultaneously always"
+      },
+      {
+        "id": "c",
+        "text": "Chiller efficiency is independent of load percentage"
+      },
+      {
+        "id": "d",
+        "text": "Tower fans never interact with chiller performance"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Optimal staging minimizes kW/ton across operating range.",
+    "distractorExplanations": {
+      "b": "Poor sequencing wastes energy at part load.",
+      "c": "kW/ton varies with loading and condenser conditions.",
+      "d": "Condenser water temperature affects chiller efficiency."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Tenant plug load growth in multitenant buildings affects BEAP analysis by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increasing base electric load independent of central HVAC retrofits"
+      },
+      {
+        "id": "b",
+        "text": "Having no measurable effect on utility bills"
+      },
+      {
+        "id": "c",
+        "text": "Eliminating the need for any metering"
+      },
+      {
+        "id": "d",
+        "text": "Replacing all envelope losses"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Assessments must account for tenant vs landlord meter boundaries.",
+    "distractorExplanations": {
+      "b": "Plug loads are a major and growing end use.",
+      "c": "Tenant loads complicate allocation and benchmarking.",
+      "d": "Plug loads add to, not replace, HVAC and envelope loads."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "A BEAP evaluating roof insulation upgrade ECMs needs:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Existing R-value, roof area, heating/cooling degree impacts, and moisture/code constraints"
+      },
+      {
+        "id": "b",
+        "text": "Only the roofing membrane color name"
+      },
+      {
+        "id": "c",
+        "text": "No climate data because roofs are universal"
+      },
+      {
+        "id": "d",
+        "text": "Guaranteed exclusion of any condensation analysis"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Roof insulation ECMs depend on pre-retrofit shell performance and climate.",
+    "distractorExplanations": {
+      "b": "Thermal resistance and area drive savings.",
+      "c": "Climate and fuel mix determine insulation value.",
+      "d": "Moisture risk must be considered in envelope upgrades."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Short-term data logging during assessment can:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Capture actual runtime, cycling, and load profiles to validate owner-stated schedules"
+      },
+      {
+        "id": "b",
+        "text": "Replace all safety codes for electrical work"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate the need for any utility bill review"
+      },
+      {
+        "id": "d",
+        "text": "Only measure decorative lighting in lobbies"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Portable loggers bridge gaps when permanent metering is unavailable.",
+    "distractorExplanations": {
+      "b": "Logging supplements but does not replace code compliance.",
+      "c": "Bill analysis and logging are complementary.",
+      "d": "Loggers are applied to major energy-consuming systems."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Water-side economizer (strainer cycle) assessment should verify:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Controls enable free cooling when outdoor wet-bulb allows and prevent uncontrolled tower water migration"
+      },
+      {
+        "id": "b",
+        "text": "Tower water always mixes into chilled water without controls"
+      },
+      {
+        "id": "c",
+        "text": "Water-side economizers work identically in all climates"
+      },
+      {
+        "id": "d",
+        "text": "Chillers must run at full load whenever towers operate"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Proper strainer-cycle control saves chiller energy in suitable climates.",
+    "distractorExplanations": {
+      "b": "Uncontrolled mixing can cause health and efficiency problems.",
+      "c": "Wet-bulb conditions determine hours of effectiveness.",
+      "d": "Economizers reduce chiller loading when conditions permit."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "When interviewing facility staff, a BEAP should ask about:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Comfort complaints, override practices, maintenance budgets, and known equipment problems"
+      },
+      {
+        "id": "b",
+        "text": "Only personal hobbies unrelated to building operation"
+      },
+      {
+        "id": "c",
+        "text": "Guaranteed absence of any comfort issues"
+      },
+      {
+        "id": "d",
+        "text": "Historical stock market performance"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Operator knowledge explains discrepancies between design intent and actual performance.",
+    "distractorExplanations": {
+      "b": "Interviews target operational knowledge.",
+      "c": "Complaints reveal control and balancing problems.",
+      "d": "Financial markets are unrelated to facility interviews."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Motor inventory assessment identifies candidates for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Premium efficiency replacements and variable-speed drives on variable-load applications"
+      },
+      {
+        "id": "b",
+        "text": "Immediate replacement of all motors regardless of load or hours"
+      },
+      {
+        "id": "c",
+        "text": "Removal of all motors to eliminate electricity use"
+      },
+      {
+        "id": "d",
+        "text": "Painting motors only without efficiency review"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Motors with high annual run hours and variable torque loads are prime VFD candidates.",
+    "distractorExplanations": {
+      "b": "Economics depend on runtime and load factor.",
+      "c": "Motors perform necessary work; upgrades target efficiency.",
+      "d": "Nameplate efficiency and application drive ECM value."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "A BEAP analyzing a hospital should recognize:",
+    "options": [
+      {
+        "id": "a",
+        "text": "24/7 operation, high ventilation rates, and critical environmental requirements limit some setback ECMs"
+      },
+      {
+        "id": "b",
+        "text": "Identical operating constraints as unoccupied warehouses"
+      },
+      {
+        "id": "c",
+        "text": "No ventilation-related loads"
+      },
+      {
+        "id": "d",
+        "text": "Mandatory absence of any redundancy"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Sector-specific operations shape feasible ECM portfolios.",
+    "distractorExplanations": {
+      "b": "Healthcare has stringent IAQ and reliability requirements.",
+      "c": "Healthcare ventilation energy is substantial.",
+      "d": "Critical facilities require redundancy; assessments respect constraints."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Renewable or cogeneration systems on site during assessment require:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Review of production, maintenance, and how generated energy offsets purchased utilities"
+      },
+      {
+        "id": "b",
+        "text": "Ignoring on-site generation in all utility analysis"
+      },
+      {
+        "id": "c",
+        "text": "Assuming infinite output without meter verification"
+      },
+      {
+        "id": "d",
+        "text": "Treating PV as a water conservation measure"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Net site energy metrics must account for self-generation accurately.",
+    "distractorExplanations": {
+      "b": "On-site systems affect net consumption and benchmarking.",
+      "c": "Production data should be metered or utility-reconciled.",
+      "d": "PV offsets electricity, not water use."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Life-cycle cost analysis differs from simple payback by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Including time value of money, equipment life, maintenance, and salvage over the analysis period"
+      },
+      {
+        "id": "b",
+        "text": "Using only first cost with no savings"
+      },
+      {
+        "id": "c",
+        "text": "Excluding maintenance forever"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring analysis period length"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "LCC supports owner decisions on longer-lived capital ECMs.",
+    "distractorExplanations": {
+      "b": "LCC incorporates costs and savings over time.",
+      "c": "Maintenance and replacement are LCC components.",
+      "d": "LCC requires a defined study period."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "An assessment finding open outdoor air dampers in winter suggests:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Economizer or damper actuator failure causing massive heating load"
+      },
+      {
+        "id": "b",
+        "text": "Optimal free cooling operation in all climates"
+      },
+      {
+        "id": "c",
+        "text": "Improved IAQ with no energy penalty always"
+      },
+      {
+        "id": "d",
+        "text": "Normal VAV minimum flow only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Stuck dampers are common retrocommissioning fixes with fast payback.",
+    "distractorExplanations": {
+      "b": "Open OA dampers in winter waste heating energy.",
+      "c": "Excess OA in extreme weather imposes large conditioning costs.",
+      "d": "Stuck open dampers are faults, not minimum ventilation."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "BEAP professionals should verify compliance with minimum ventilation by referencing:",
+    "options": [
+      {
+        "id": "a",
+        "text": "ASHRAE Standard 62.1 or applicable local code for outdoor air requirements"
+      },
+      {
+        "id": "b",
+        "text": "Only the building's year of construction with no standard"
+      },
+      {
+        "id": "c",
+        "text": "Structural ACI 318 concrete provisions exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating outdoor air in all retrofits"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Assessments balance energy savings with maintaining compliant ventilation.",
+    "distractorExplanations": {
+      "b": "Ventilation requirements come from recognized standards/codes.",
+      "c": "Structural concrete codes do not set ventilation rates.",
+      "d": "IAQ codes set minimum outdoor air requirements."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Data center loads assessed within a larger building need:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Separate IT and cooling energy accounting because PUE and redundancy differ from office loads"
+      },
+      {
+        "id": "b",
+        "text": "Treating IT racks as equivalent to one occupant"
+      },
+      {
+        "id": "c",
+        "text": "Ignoring CRAC/CRAH systems entirely"
+      },
+      {
+        "id": "d",
+        "text": "Assuming no continuous operation"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Mixed-use assessments isolate data center energy for accurate ECM targeting.",
+    "distractorExplanations": {
+      "b": "IT loads are orders of magnitude higher per area than people.",
+      "c": "Data center HVAC is specialized and energy-intensive.",
+      "d": "Many data centers operate 24/7."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "A calibrated simulation used in Level II analysis should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disclosed with assumptions and used to test ECMs, not hidden from the report"
+      },
+      {
+        "id": "b",
+        "text": "Secret so savings cannot be questioned"
+      },
+      {
+        "id": "c",
+        "text": "Run without any comparison to utility data"
+      },
+      {
+        "id": "d",
+        "text": "Discarded after the walk-through only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Model-based ECM analysis is common in detailed audits when budgets allow.",
+    "distractorExplanations": {
+      "b": "Transparency supports owner and financier confidence.",
+      "c": "Calibration to measured data strengthens savings claims.",
+      "d": "Simulation supports measure-level savings estimates in Level II."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Fuel switching ECMs (e.g., electrification) require BEAP analysis of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Marginal energy costs, peak demand impacts, equipment capacity, and carbon policy drivers"
+      },
+      {
+        "id": "b",
+        "text": "Only logo design on utility bills"
+      },
+      {
+        "id": "c",
+        "text": "Ignoring capacity of existing electrical service"
+      },
+      {
+        "id": "d",
+        "text": "Assuming identical COP in all climates without data"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Site vs source and demand charges affect electrification economics.",
+    "distractorExplanations": {
+      "b": "Fuel switching needs detailed economic and load analysis.",
+      "c": "Electrification may require service upgrades.",
+      "d": "Heat pump performance varies with climate and load."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "A BEAP should document measurement boundaries when recommending M&V by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stating which meters, systems, and adjustment variables define the savings claim"
+      },
+      {
+        "id": "b",
+        "text": "Promising savings with no baseline period"
+      },
+      {
+        "id": "c",
+        "text": "Avoiding any discussion of interactive effects"
+      },
+      {
+        "id": "d",
+        "text": "Using only anecdotal evidence"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Clear boundaries align with IPMVP and owner financing expectations.",
+    "distractorExplanations": {
+      "b": "M&V requires defined baseline and reporting periods.",
+      "c": "Interactive ECM effects should be acknowledged.",
+      "d": "Defensible M&V needs measurable boundaries."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Warehouse loading dock infiltration during assessment is significant because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Open doors introduce large heating/cooling loads and may warrant dock seals or air curtains"
+      },
+      {
+        "id": "b",
+        "text": "Docks are thermally isolated with no airflow exchange"
+      },
+      {
+        "id": "c",
+        "text": "Infiltration only matters in tropical climates"
+      },
+      {
+        "id": "d",
+        "text": "Air curtains always increase energy use with no benefit"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Logistics facilities often show seasonal energy spikes from door operation.",
+    "distractorExplanations": {
+      "b": "Open docks exchange large air volumes.",
+      "c": "Cold and hot climates both suffer dock infiltration penalties.",
+      "d": "Proper air curtains reduce infiltration losses."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "ASHRAE BEAP knowledge areas include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only welding certification for duct fabrication"
+      },
+      {
+        "id": "b",
+        "text": "Exclusive focus on refrigerant sales licensing"
+      },
+      {
+        "id": "c",
+        "text": "Structural seismic retrofit design exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Data collection, analysis, reporting, and communication of energy assessment findings"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "BEAP spans technical assessment and professional communication per the exam blueprint.",
+    "distractorExplanations": {
+      "a": "Fabrication trades are not the BEAP certification focus.",
+      "b": "Refrigerant licensing is separate from BEAP.",
+      "c": "Structural seismic design is outside BEAP scope."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "When existing insulation is damaged by roof leaks, a BEAP should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Flag moisture-damaged insulation as both an energy and building-envelope integrity issue"
+      },
+      {
+        "id": "b",
+        "text": "Ignore wet insulation because it still insulates perfectly"
+      },
+      {
+        "id": "c",
+        "text": "Recommend only cosmetic ceiling tile replacement"
+      },
+      {
+        "id": "d",
+        "text": "Increase HVAC cooling setpoints to dry insulation in place only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Envelope ECMs must address moisture before assuming rated thermal performance.",
+    "distractorExplanations": {
+      "b": "Wet insulation loses R-value and risks mold/decay.",
+      "c": "Underlying wet insulation must be remediated.",
+      "d": "Material replacement/drying protocols are needed, not just setpoint changes."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "Peak demand management ECMs assessed may include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Battery storage, load shifting, chiller precooling, and demand-limiting controls"
+      },
+      {
+        "id": "b",
+        "text": "Only changing carpet color in corridors"
+      },
+      {
+        "id": "c",
+        "text": "Eliminating all demand charges by definition"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring time-of-use rate structures"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Demand charges can exceed energy charges in some commercial tariffs.",
+    "distractorExplanations": {
+      "b": "Demand management targets electrical peak kW.",
+      "c": "ECMs reduce demand; tariffs still apply.",
+      "d": "TOU and demand rates drive demand ECM economics."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "beap-assessment",
+    "prompt": "A final BEAP report executive summary should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Highlight total savings potential, top measures, and recommended next steps for the owner"
+      },
+      {
+        "id": "b",
+        "text": "Hide all numbers to avoid decision-making"
+      },
+      {
+        "id": "c",
+        "text": "List every light bulb inspected without synthesis"
+      },
+      {
+        "id": "d",
+        "text": "Omit implementation sequencing entirely"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Executive summaries translate technical findings into actionable business cases.",
+    "distractorExplanations": {
+      "b": "Executives need concise savings and cost context.",
+      "c": "Summaries synthesize findings for decision makers.",
+      "d": "Phasing helps owners fund and execute ECMs."
+    },
+    "difficulty": "easy"
+  }
+]

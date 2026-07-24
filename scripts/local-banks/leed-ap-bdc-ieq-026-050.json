@@ -1,0 +1,452 @@
+[
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "A tenant improvement on a BD+C core-and-shell building pursues IEQ credits. Who is typically responsible for verifying interior product emissions documentation?",
+    "options": [
+      { "id": "a", "text": "The party executing the interior fit-out with LEED submittal support from the project team" },
+      { "id": "b", "text": "Only the original structural engineer of record" },
+      { "id": "c", "text": "The utility company billing department" },
+      { "id": "d", "text": "The landscape maintenance contractor only" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Interior low-emitting product compliance is documented for installed finishes and furnishings in the fit-out scope, coordinated by the responsible contractor with LEED documentation support.",
+    "distractorExplanations": {
+      "b": "Structural engineers do not typically manage interior emissions submittals.",
+      "c": "Utility billing is unrelated to product VOC documentation.",
+      "d": "Landscape contractors are outside interior IEQ product scope."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "Operable windows used for natural ventilation in IEQ analysis must be evaluated for:",
+    "options": [
+      { "id": "a", "text": "Effective opening area, cross ventilation potential, and outdoor air quality assumptions" },
+      { "id": "b", "text": "Only the window frame color" },
+      { "id": "c", "text": "Only the number of parking spaces" },
+      { "id": "d", "text": "Only structural steel recycled content" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Natural ventilation compliance requires documented operable area, airflow pathways, and sometimes pollution exposure analysis to show adequate fresh air to occupied zones.",
+    "distractorExplanations": {
+      "b": "Frame color does not determine ventilation effectiveness.",
+      "c": "Parking counts are unrelated to window ventilation analysis.",
+      "d": "Steel recycled content is an MR metric."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "Ceiling tile with high NRC value primarily improves:",
+    "options": [
+      { "id": "a", "text": "Sound absorption and reduced reverberation in occupied spaces" },
+      { "id": "b", "text": "Structural load capacity of the roof deck" },
+      { "id": "c", "text": "Stormwater detention volume" },
+      { "id": "d", "text": "Refrigerant leak detection sensitivity" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Noise Reduction Coefficient indicates absorption performance, supporting acoustic comfort by lowering reverberation and improving speech clarity in open and enclosed spaces.",
+    "distractorExplanations": {
+      "b": "Acoustic ceiling tiles are not primary structural elements.",
+      "c": "Stormwater is a site hydrology topic.",
+      "d": "Refrigerant leak detection is an EA maintenance topic."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "A project uses CO2 sensors as part of demand-controlled ventilation. This strategy supports IEQ by:",
+    "options": [
+      { "id": "a", "text": "Adjusting outdoor air to maintain acceptable CO2 levels in densely occupied zones" },
+      { "id": "b", "text": "Eliminating all outdoor air during occupied hours" },
+      { "id": "c", "text": "Measuring embodied carbon in concrete" },
+      { "id": "d", "text": "Replacing all low-emitting material requirements" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "DCV modulates ventilation based on occupancy proxy signals such as CO2, maintaining adequate air quality while avoiding unnecessary over-ventilation when spaces are lightly used.",
+    "distractorExplanations": {
+      "b": "DCV increases ventilation when needed; it does not eliminate outdoor air.",
+      "c": "Embodied carbon is unrelated to CO2-based ventilation control.",
+      "d": "Ventilation control does not replace low-emitting material compliance."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "Which IEQ strategy helps reduce occupant exposure to tobacco smoke on a BD+C site?",
+    "options": [
+      { "id": "a", "text": "Prohibiting smoking inside the building and locating exterior smoking areas away from entries and intakes" },
+      { "id": "b", "text": "Placing smoking areas directly at supply air intakes" },
+      { "id": "c", "text": "Eliminating all outdoor air intakes" },
+      { "id": "d", "text": "Removing MERV filters to increase airflow" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Minimum IAQ performance includes indoor no-smoking policies and control of outdoor smoke migration by separating smoking zones from doors, windows, and air intakes.",
+    "distractorExplanations": {
+      "b": "Intake-adjacent smoking areas increase contaminant entrainment.",
+      "c": "Outdoor air intakes are required for ventilation design.",
+      "d": "Removing filters allows particulate intrusion including smoke."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "A laboratory wing with higher exhaust requirements still must document:",
+    "options": [
+      { "id": "a", "text": "Ventilation and negative pressure relationships protecting adjacent occupied areas" },
+      { "id": "b", "text": "Only the color of lab casework" },
+      { "id": "c", "text": "Only bike rack inventory" },
+      { "id": "d", "text": "Only regional steel sourcing" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Special exhaust spaces require pressure control and ventilation documentation so contaminants do not migrate into general occupancy areas, supporting IAQ and safety goals.",
+    "distractorExplanations": {
+      "b": "Casework color is unrelated to pressure and exhaust design.",
+      "c": "Bike racks are LT/SS amenities.",
+      "d": "Steel sourcing is MR documentation."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "Low-emitting flooring adhesives are typically verified at:",
+    "options": [
+      { "id": "a", "text": "Product submittal stage with VOC and emissions certification data" },
+      { "id": "b", "text": "Only after occupancy complaints occur" },
+      { "id": "c", "text": "Only during landscaping punch list" },
+      { "id": "d", "text": "Only through structural peer review" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "IEQ compliance depends on pre-installation verification that specified adhesives meet applicable VOC limits and recognized emissions testing for the product category.",
+    "distractorExplanations": {
+      "b": "Reactive complaints are not a substitute for submittal verification.",
+      "c": "Landscaping punch lists are unrelated to interior adhesives.",
+      "d": "Structural peer review does not cover VOC emissions."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "Visual connection to nature in IEQ can be supported by:",
+    "options": [
+      { "id": "a", "text": "Direct views of vegetation or landscaped areas from regularly occupied spaces" },
+      { "id": "b", "text": "Blocking all windows with opaque insulation" },
+      { "id": "c", "text": "Eliminating all interior plants because they emit VOCs without control" },
+      { "id": "d", "text": "Locating all workspaces in windowless basement zones only" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Biophilic and quality view strategies encourage designed sightlines to natural elements, supporting occupant well-being within IEQ credit frameworks.",
+    "distractorExplanations": {
+      "b": "Opaque window blocking eliminates views and daylight benefits.",
+      "c": "Designed views to exterior nature do not require excluding all interior planting strategies categorically.",
+      "d": "Windowless-only seating fails view and daylight intents."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "A post-occupancy IEQ complaint about persistent odors most likely triggers investigation of:",
+    "options": [
+      { "id": "a", "text": "Ventilation rates, filter maintenance, and recently installed high-emitting materials" },
+      { "id": "b", "text": "Only the exterior cladding color" },
+      { "id": "c", "text": "Only the property tax assessment" },
+      { "id": "d", "text": "Only the structural foundation thickness" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Odor issues commonly relate to insufficient ventilation, contaminated filters, or new materials with elevated emissions, all central to IEQ operations and design verification.",
+    "distractorExplanations": {
+      "b": "Cladding color does not explain interior odor persistence.",
+      "c": "Tax assessment is unrelated to IAQ diagnostics.",
+      "d": "Foundation thickness does not directly cause interior odors."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "Which combination best supports both daylight and energy performance in perimeter offices?",
+    "options": [
+      { "id": "a", "text": "Glazing with high visual transmittance, exterior shading, and daylight-responsive dimming" },
+      { "id": "b", "text": "Single-pane clear glass with no shading and constant full electric lighting" },
+      { "id": "c", "text": "Eliminating all glazing to avoid glare entirely" },
+      { "id": "d", "text": "Using only incandescent task lamps without controls" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Integrated shading and daylight harvesting reduce electric lighting energy while maintaining useful daylight and glare control at the perimeter.",
+    "distractorExplanations": {
+      "b": "Unshaded single-pane designs increase glare and often increase loads.",
+      "c": "Removing glazing eliminates daylight benefits sought by IEQ credits.",
+      "d": "Uncontrolled incandescent lighting increases energy use without daylight integration."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "Interior air barriers and sealed ductwork during construction primarily prevent:",
+    "options": [
+      { "id": "a", "text": "Dust and contaminants from entering the distribution system before occupancy" },
+      { "id": "b", "text": "All structural drift under wind loads" },
+      { "id": "c", "text": "All MR recycled content documentation needs" },
+      { "id": "d", "text": "All stormwater runoff calculations" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Protecting ductwork and maintaining temporary seals during construction are key construction IAQ management practices to avoid spreading particulates at startup.",
+    "distractorExplanations": {
+      "b": "Structural drift is addressed by structural design, not temporary duct sealing.",
+      "c": "MR documentation is independent of duct protection.",
+      "d": "Stormwater calculations are site civil design tasks."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "A LEED AP candidate reviews an IEQ submittal for low-emitting ceilings. The critical check is:",
+    "options": [
+      { "id": "a", "text": "Product category rules and certification validity for the installed SKU" },
+      { "id": "b", "text": "Whether the tile color matches the owner logo" },
+      { "id": "c", "text": "Whether the tile is the heaviest option available" },
+      { "id": "d", "text": "Whether the tile was delivered on a holiday" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Reviewers confirm the product matches the applicable emissions standard for its category and that certification covers the exact installed model.",
+    "distractorExplanations": {
+      "b": "Brand color alignment is not an emissions compliance criterion.",
+      "c": "Weight alone does not prove low emissions.",
+      "d": "Delivery timing is irrelevant to emissions certification."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "Uncontrolled reverberation in a large open office most directly harms:",
+    "options": [
+      { "id": "a", "text": "Speech intelligibility and acoustic comfort for occupants" },
+      { "id": "b", "text": "Structural shear capacity of the floor plate" },
+      { "id": "c", "text": "Recycled content in carpet backing" },
+      { "id": "d", "text": "Site bicycle network connectivity" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Excessive reverberation increases background noise and reduces speech privacy, driving acoustic treatment and layout strategies under IEQ comfort goals.",
+    "distractorExplanations": {
+      "b": "Acoustic reverberation does not govern structural shear design.",
+      "c": "Carpet backing recycled content is an MR attribute separate from reverberation effects.",
+      "d": "Bicycle networks are transportation planning topics."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "When using the alternative air testing path, labs should follow:",
+    "options": [
+      { "id": "a", "text": "LEED-referenced sampling methods, limits, and chain-of-custody procedures" },
+      { "id": "b", "text": "Any informal smell test without records" },
+      { "id": "c", "text": "Only outdoor pollen counts from weather websites" },
+      { "id": "d", "text": "Only contractor self-certification without data" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "IAQ testing credits require standardized contaminants, sampling durations, laboratory accreditation, and documentation aligned with LEED reference protocols.",
+    "distractorExplanations": {
+      "b": "Informal odor checks are not acceptable substitutes for referenced testing.",
+      "c": "Outdoor pollen is not the same as indoor contaminant testing protocol.",
+      "d": "Self-certification without lab data fails credit documentation requirements."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "A BD+C project with combined open office and private phone rooms should prioritize acoustic design that:",
+    "options": [
+      { "id": "a", "text": "Provides higher isolation for enclosed rooms used for confidential speech" },
+      { "id": "b", "text": "Uses only glass partitions with no gaskets anywhere" },
+      { "id": "c", "text": "Eliminates all ceiling absorption in phone rooms" },
+      { "id": "d", "text": "Places phone rooms directly on the main open floor without enclosures" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Confidential speech privacy requires adequate partition STC, door seals, and ceiling/grid continuity in enclosed rooms while managing open plan background sound elsewhere.",
+    "distractorExplanations": {
+      "b": "Ungasketed glass partitions often leak sound and fail isolation targets.",
+      "c": "Phone rooms benefit from absorption to control internal reverberation.",
+      "d": "Open phone areas cannot provide confidential speech privacy."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "Green cleaning policies implemented at occupancy primarily support IEQ by:",
+    "options": [
+      { "id": "a", "text": "Reducing ongoing exposure to harsh chemicals and particulates during maintenance" },
+      { "id": "b", "text": "Eliminating all ventilation maintenance forever" },
+      { "id": "c", "text": "Increasing refrigerant venting during service" },
+      { "id": "d", "text": "Replacing all MR EPD documentation" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Operational green cleaning limits toxic maintenance products and high-dust methods, supporting healthier indoor environments after construction ends.",
+    "distractorExplanations": {
+      "b": "Ventilation maintenance remains essential for IAQ.",
+      "c": "Refrigerant venting is regulated and unrelated to cleaning policies.",
+      "d": "EPD documentation is unrelated to operational cleaning choices."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "Which factor most reduces the effectiveness of a daylight simulation used for IEQ credit documentation?",
+    "options": [
+      { "id": "a", "text": "Using outdated or uncalibrated glazing transmittance values that do not match submittals" },
+      { "id": "b", "text": "Including interior wall geometry in the model" },
+      { "id": "c", "text": "Modeling typical meteorological year sun positions" },
+      { "id": "d", "text": "Aligning window head height with as-built drawings" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Simulation credibility depends on accurate glazing properties, shading devices, and geometry matching installed products; incorrect optical inputs invalidate results.",
+    "distractorExplanations": {
+      "b": "Interior geometry is required for accurate daylight distribution.",
+      "c": "Standard sun data sets are appropriate inputs for annual daylight analysis.",
+      "d": "Matching as-built dimensions improves model accuracy."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "A hotel guestroom tower pursuing IEQ should verify low-emitting compliance for:",
+    "options": [
+      { "id": "a", "text": "Guestroom finishes, adhesives, and composite wood casework within the LEED project scope" },
+      { "id": "b", "text": "Only the exterior limestone quarry name" },
+      { "id": "c", "text": "Only the kitchen equipment in a remote warehouse not part of the project" },
+      { "id": "d", "text": "Only off-site highway traffic counts" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Guestrooms contain paints, flooring, adhesives, and casework that must meet low-emitting criteria when included in the BD+C or CS scope being certified.",
+    "distractorExplanations": {
+      "b": "Quarry names alone do not address interior emissions.",
+      "c": "Equipment outside project scope is not part of IEQ submittals.",
+      "d": "Traffic counts may inform site analysis but not guestroom material emissions."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "Radiant asymmetry complaints near large glazed facades are best addressed by:",
+    "options": [
+      { "id": "a", "text": "Improving glazing performance, shading, and HVAC delivery to manage surface temperatures" },
+      { "id": "b", "text": "Removing all insulation from the roof" },
+      { "id": "c", "text": "Eliminating outdoor air entirely" },
+      { "id": "d", "text": "Increasing carpet pile height only without HVAC changes" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Cold or hot radiant surfaces from glazing drive discomfort; integrated envelope, shading, and conditioning strategies align with thermal comfort under IEQ.",
+    "distractorExplanations": {
+      "b": "Removing roof insulation worsens thermal conditions.",
+      "c": "Outdoor air is required for ventilation and cannot be eliminated.",
+      "d": "Carpet alone does not fix radiant temperature asymmetry from glazing."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "An IEQ credit for interior lighting may require lighting power in regularly occupied spaces to:",
+    "options": [
+      { "id": "a", "text": "Meet defined illuminance levels without excessive overlighting for tasks" },
+      { "id": "b", "text": "Exceed task needs by 300% at all times" },
+      { "id": "c", "text": "Remain off during all occupied hours" },
+      { "id": "d", "text": "Ignore glare entirely" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Lighting quality emphasizes appropriate task illuminance, uniformity, and control rather than maximum brightness or uncontrolled glare.",
+    "distractorExplanations": {
+      "b": "Excessive overlighting increases glare and energy waste.",
+      "c": "Occupied spaces require adequate lighting for tasks.",
+      "d": "Glare control is part of visual comfort strategies."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "During final IEQ documentation review, mismatched paint submittals most often fail because:",
+    "options": [
+      { "id": "a", "text": "Installed product VOC data does not match the approved low-emitting specification" },
+      { "id": "b", "text": "The paint is too washable for corridors" },
+      { "id": "c", "text": "The paint color is lighter than the mood board" },
+      { "id": "d", "text": "The paint was applied with rollers instead of sprayers" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Low-emitting interiors credits require that installed coatings meet documented VOC limits and certification for the exact product used in each space category.",
+    "distractorExplanations": {
+      "b": "Washability is a durability preference, not the typical compliance failure.",
+      "c": "Color selection alone does not determine VOC compliance.",
+      "d": "Application method is generally acceptable if product data complies."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "A school classroom IEQ strategy with operable windows AND mechanical ventilation should document:",
+    "options": [
+      { "id": "a", "text": "How combined natural and mechanical ventilation meets minimum outdoor air requirements" },
+      { "id": "b", "text": "Only the cafeteria menu" },
+      { "id": "c", "text": "Only the football schedule" },
+      { "id": "d", "text": "Only the roof warranty length without ventilation calcs" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Hybrid ventilation designs must show compliance with referenced ventilation standards, including interlocks and minimum airflow when windows are closed.",
+    "distractorExplanations": {
+      "b": "Food service menus are unrelated to ventilation documentation.",
+      "c": "Athletic schedules do not prove ventilation compliance.",
+      "d": "Roof warranties do not substitute for ventilation calculations."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "Which IEQ measure directly supports cognitive performance by reducing excess CO2 in densely occupied conference rooms?",
+    "options": [
+      { "id": "a", "text": "Adequate outdoor air ventilation or enhanced ventilation strategies" },
+      { "id": "b", "text": "Increasing interior partition height without ventilation changes" },
+      { "id": "c", "text": "Using only dark paint colors" },
+      { "id": "d", "text": "Removing all return air grilles permanently" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Ventilation dilutes occupant-generated CO2 and pollutants; dense spaces need sufficient outdoor air delivery to maintain acceptable indoor air quality.",
+    "distractorExplanations": {
+      "b": "Partition height alone does not increase fresh air supply.",
+      "c": "Paint color does not dilute CO2.",
+      "d": "Removing returns disrupts balanced airflow and control."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "A LEED BD+C project completes IEQ flush-out using measured outdoor air volumes. Required records typically include:",
+    "options": [
+      { "id": "a", "text": "Airflow rates, duration logs, and confirmation filters were replaced before occupancy" },
+      { "id": "b", "text": "Only a photo of the building exterior" },
+      { "id": "c", "text": "Only the contractor lunch receipts" },
+      { "id": "d", "text": "Only the landscaping plant species list" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Flush-out documentation demonstrates the required air change volumes over time and verifies clean filtration at turnover to support preoccupancy IAQ claims.",
+    "distractorExplanations": {
+      "b": "Exterior photos do not prove ventilation volumes or duration.",
+      "c": "Meal receipts are unrelated to flush-out records.",
+      "d": "Plant lists belong to site landscape documentation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "indoor-environmental-quality",
+    "prompt": "At substantial completion, the IEQ punch list item most likely to block certification closeout is:",
+    "options": [
+      { "id": "a", "text": "Missing low-emitting documentation for installed interior products" },
+      { "id": "b", "text": "Too many windows providing daylight" },
+      { "id": "c", "text": "Use of bilingual safety signage on site" },
+      { "id": "d", "text": "Including a LEED plaque in the lobby design" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Incomplete or noncompliant product emissions submittals for paints, adhesives, flooring, and composite wood are frequent closeout gaps for IEQ credits.",
+    "distractorExplanations": {
+      "b": "Abundant daylight generally supports IEQ rather than blocking it.",
+      "c": "Bilingual signage supports safety communication and is not an IEQ blocker.",
+      "d": "Displaying a plaque is optional branding, not a credit prerequisite."
+    },
+    "difficulty": "easy"
+  }
+]

@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "fire-suppression",
+    "prompt": "Under NFPA 13, Ordinary Hazard Group 1 occupancies are typically characterized by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moderate quantities of combustibles with low heat release, such as light manufacturing and mechanical rooms"
+      },
+      {
+        "id": "b",
+        "text": "High-piled storage exceeding 12 ft without in-rack sprinklers"
+      },
+      {
+        "id": "c",
+        "text": "Unsprinklered residential sleeping rooms only"
+      },
+      {
+        "id": "d",
+        "text": "Exterior-only exposure protection with no interior piping"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "OH1 includes spaces with moderate fuel loads and low heat release rates; hazard classification drives sprinkler design density and area.",
+    "distractorExplanations": {
+      "b": "High-piled storage triggers storage classifications, not OH1.",
+      "c": "Residential sleeping is covered under dwelling standards, not OH1.",
+      "d": "Exposure protection is a separate application from interior OH1 design."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "The design density for a light hazard occupancy per NFPA 13 is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "0.30 gpm/ft² over 3,000 ft² for all light hazard rooms"
+      },
+      {
+        "id": "b",
+        "text": "0.10 gpm/ft² over the hydraulically most remote 1,500 ft² design area"
+      },
+      {
+        "id": "c",
+        "text": "0.15 gpm/ft² over 2,000 ft² regardless of ceiling height"
+      },
+      {
+        "id": "d",
+        "text": "0.60 gpm/ft² because light hazard includes office paper storage"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Light hazard design uses 0.10 gpm/ft² and 1,500 ft² area; higher densities apply to ordinary and extra hazard classifications.",
+    "distractorExplanations": {
+      "a": "0.30 gpm/ft² is ordinary hazard territory, not light hazard.",
+      "c": "0.15 gpm/ft² is not the NFPA 13 light hazard baseline.",
+      "d": "Paper storage may elevate hazard class; light hazard remains 0.10/1,500."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "An ESFR sprinkler is primarily selected to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Replace standpipe hose streams in all high-rise buildings"
+      },
+      {
+        "id": "b",
+        "text": "Eliminate the need for a fire pump on every wet system"
+      },
+      {
+        "id": "c",
+        "text": "Control or suppress high-challenge storage fires without in-rack sprinklers in many rack configurations"
+      },
+      {
+        "id": "d",
+        "text": "Serve as a substitute for clean agent systems in data halls"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "ESFR (Early Suppression Fast Response) sprinklers deliver high discharge to attack storage ceiling jets; they are a storage protection strategy under NFPA 13.",
+    "distractorExplanations": {
+      "a": "Standpipes address manual firefighting water; ESFR is automatic sprinkler protection.",
+      "b": "Clean agents protect sensitive electronics; ESFR is water-based storage protection.",
+      "d": "Clean agents protect sensitive electronics; ESFR is water-based storage protection."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "A wet pipe sprinkler system is defined as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Piping charged with supervisory air until a detector opens a valve"
+      },
+      {
+        "id": "b",
+        "text": "A system requiring manual opening of a deluge valve at the fire panel"
+      },
+      {
+        "id": "c",
+        "text": "Dry piping that fills only after all sprinklers in a zone fuse simultaneously"
+      },
+      {
+        "id": "d",
+        "text": "Piping filled with water under pressure, with water discharged immediately when a sprinkler operates"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Wet systems hold water at sprinklers continuously — the most common and simplest automatic sprinkler type.",
+    "distractorExplanations": {
+      "a": "Supervisory air describes dry or preaction systems, not wet pipe.",
+      "b": "Manual deluge valve operation is characteristic of deluge systems.",
+      "c": "Manual deluge valve operation is characteristic of deluge systems."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "In a dry pipe sprinkler system, the primary purpose of the air/nitrogen supervisory pressure is to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hold the dry pipe valve closed and monitor for leaks while keeping piping free of water until activation"
+      },
+      {
+        "id": "b",
+        "text": "Increase sprinkler K-factor at the remote end of the branch line"
+      },
+      {
+        "id": "c",
+        "text": "Replace the need for a fire department connection"
+      },
+      {
+        "id": "d",
+        "text": "Maintain 175 psi at every sprinkler orifice continuously"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Dry systems use pressurized air above the dry valve clapper; loss of air upon sprinkler opening allows water in — critical for freeze-prone spaces.",
+    "distractorExplanations": {
+      "b": "FDC provides supplemental water; it does not replace dry system air supervision.",
+      "c": "Orifice pressure varies hydraulically; air pressure serves the dry valve, not each head.",
+      "d": "K-factor is a sprinkler property, unaffected by supervisory air."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "A single-interlock preaction system typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Discharges water from all open sprinklers immediately when any detector alarms"
+      },
+      {
+        "id": "b",
+        "text": "Admits water to piping upon operation of a detection device, with sprinkler operation required to discharge water"
+      },
+      {
+        "id": "c",
+        "text": "Requires both detection and sprinkler operation before the preaction valve opens"
+      },
+      {
+        "id": "d",
+        "text": "Uses antifreeze solution in lieu of detection to prevent freezing"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Single interlock preaction opens the valve on detection; piping is not necessarily flooded until heads operate — protecting water-sensitive spaces.",
+    "distractorExplanations": {
+      "a": "Immediate discharge from open heads describes deluge upon detection.",
+      "c": "Antifreeze is a freeze protection method, not a preaction interlock strategy.",
+      "d": "Antifreeze is a freeze protection method, not a preaction interlock strategy."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "A double-interlock preaction sprinkler system is most appropriate when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The occupancy is an unheated loading dock subject only to freezing"
+      },
+      {
+        "id": "b",
+        "text": "All sprinklers must be open before any detection is installed"
+      },
+      {
+        "id": "c",
+        "text": "Accidental water discharge must be minimized and both detection and sprinkler heat are required to release water"
+      },
+      {
+        "id": "d",
+        "text": "The building has no fire alarm system and relies on fusible links only"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Double interlock reduces inadvertent flooding — common in museums, archives, and telecommunications spaces.",
+    "distractorExplanations": {
+      "a": "Freeze risk alone often leads to dry pipe, not necessarily double interlock.",
+      "b": "Detection is integral to preaction interlocks.",
+      "d": "Detection is integral to preaction interlocks."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "A deluge sprinkler system differs from a wet system because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Each sprinkler contains an individual glass bulb that holds water back"
+      },
+      {
+        "id": "b",
+        "text": "Water is held back by antifreeze until room temperature exceeds 200°F"
+      },
+      {
+        "id": "c",
+        "text": "Only one sprinkler in the remote area discharges during design"
+      },
+      {
+        "id": "d",
+        "text": "All sprinklers are open and water is released through the entire protected area when the deluge valve opens"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Deluge systems use open nozzles and a detection-initiated valve — typical for high-hazard special applications and some aircraft hangars.",
+    "distractorExplanations": {
+      "a": "Individual bulbs describe standard closed sprinklers.",
+      "b": "Antifreeze systems are a different wet-system variant.",
+      "c": "Antifreeze systems are a different wet-system variant."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "Per NFPA 14, a Class I standpipe system is intended to provide:",
+    "options": [
+      {
+        "id": "a",
+        "text": "2½-inch hose connections for fire department use with water available for heavy stream appliances"
+      },
+      {
+        "id": "b",
+        "text": "1½-inch connections for trained occupant use only with no 2½-inch outlets"
+      },
+      {
+        "id": "c",
+        "text": "Dry standpipes with no water supply until FDC charging only"
+      },
+      {
+        "id": "d",
+        "text": "Foam solution exclusively at each landing valve"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Class I standpipes supply FD 2½-inch connections; Class II adds occupant hose, Class III combines both.",
+    "distractorExplanations": {
+      "b": "1½-inch occupant hose is Class II emphasis.",
+      "c": "Wet or dry classification addresses water presence, not Class I definition.",
+      "d": "Foam standpipes are specialized; Class I is water for firefighting."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "The minimum flow rate required at the hydraulically most remote 2½-inch hose connection for a Class I standpipe in many buildings is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "100 gpm total for the entire building regardless of height"
+      },
+      {
+        "id": "b",
+        "text": "500 gpm for the most remote standpipe plus additional demand for simultaneous sprinkler systems where applicable"
+      },
+      {
+        "id": "c",
+        "text": "250 gpm only when the building is fully sprinklered"
+      },
+      {
+        "id": "d",
+        "text": "1,000 gpm at every hose outlet simultaneously without hydraulic calculation"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "NFPA 14 hydraulic calculations ensure remote outlet capability; combined sprinkler/standpipe demand must be evaluated.",
+    "distractorExplanations": {
+      "a": "100 gpm is far below remote standpipe design requirements.",
+      "c": "Sprinklered buildings still require standpipe flows per calculated demand.",
+      "d": "Not every outlet flows simultaneously at full rate; hydraulics define remote worst case."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "A combined sprinkler/standpipe riser in a high-rise must consider:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Standpipe demand only, because sprinklers are decorative"
+      },
+      {
+        "id": "b",
+        "text": "Sprinkler demand only when standpipes are Class II"
+      },
+      {
+        "id": "c",
+        "text": "Total water demand including sprinkler design area flow plus standpipe hose stream allowance per NFPA 14 and 13"
+      },
+      {
+        "id": "d",
+        "text": "Whichever system has lower pressure governs without summation"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Combined risers are sized for cumulative demand; fire pumps and tanks must satisfy both automatic and manual suppression needs.",
+    "distractorExplanations": {
+      "a": "Class II occupant hose still requires hydraulic evaluation with sprinklers.",
+      "b": "Class II occupant hose still requires hydraulic evaluation with sprinklers.",
+      "d": "Sprinklers are primary automatic suppression, not decorative."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "NFPA 20 requires that a fire pump:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Operate only when manually started by the fire department at the FDC"
+      },
+      {
+        "id": "b",
+        "text": "Replace all elevation head calculations in sprinkler hydraulics"
+      },
+      {
+        "id": "c",
+        "text": "Be sized solely to domestic water peak demand with no fire flow"
+      },
+      {
+        "id": "d",
+        "text": "Be listed and installed to deliver rated capacity and pressure to the fire protection system under automatic or manual start"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Fire pumps boost available water supply when municipal or tank supplies cannot meet sprinkler/standpipe hydraulic demand.",
+    "distractorExplanations": {
+      "a": "Automatic start on pressure drop is typical; manual-only is not the NFPA 20 intent.",
+      "b": "Elevation head remains in hydraulic calculations; pumps add pressure/flow.",
+      "c": "Elevation head remains in hydraulic calculations; pumps add pressure/flow."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "The rated churn (shutoff) pressure of a centrifugal fire pump is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The pressure developed at zero flow on the pump curve, typically 120–140% of rated pressure per listing"
+      },
+      {
+        "id": "b",
+        "text": "The pressure at maximum rated flow only"
+      },
+      {
+        "id": "c",
+        "text": "Always equal to static municipal pressure without boost"
+      },
+      {
+        "id": "d",
+        "text": "The suction pressure at the water source"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Churn pressure is used in hydraulic calculations to ensure components are not over-pressurized at no-flow conditions.",
+    "distractorExplanations": {
+      "b": "Rated pressure is at rated flow; churn is zero-flow condition.",
+      "c": "Municipal static is supply; churn is pump-developed shutoff pressure.",
+      "d": "Suction pressure is on the inlet side, not shutoff discharge."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "A diesel-driven fire pump engine must have:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shared fuel tank with building emergency generators only, without separation"
+      },
+      {
+        "id": "b",
+        "text": "An independent fuel supply sized for endurance testing and expected run time per NFPA 20"
+      },
+      {
+        "id": "c",
+        "text": "No cooling provision because fire events are brief"
+      },
+      {
+        "id": "d",
+        "text": "Manual crank start as the only permitted method"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Diesel fire pumps require reliable fuel, cooling, and automatic starting — often in dedicated pump rooms.",
+    "distractorExplanations": {
+      "a": "Fuel supply must meet NFPA 20 endurance; sharing requires careful compliance.",
+      "c": "Cooling is required for engine reliability during test and fire runs.",
+      "d": "Automatic electric start is standard; manual-only is not typical."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "The purpose of a jockey (make-up) pump on a fire pump installation is to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Replace the fire pump during annual testing permanently"
+      },
+      {
+        "id": "b",
+        "text": "Provide foam concentrate injection to standpipes"
+      },
+      {
+        "id": "c",
+        "text": "Maintain system pressure within a narrow band and reduce unnecessary cycling of the main fire pump"
+      },
+      {
+        "id": "d",
+        "text": "Serve as the primary pump on all NFPA 13R systems"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Jockey pumps offset small leaks and pressure fluctuations without starting the main fire pump.",
+    "distractorExplanations": {
+      "a": "Fire pump remains primary; jockey is auxiliary.",
+      "b": "NFPA 13R systems may not require fire pumps depending on supply.",
+      "d": "NFPA 13R systems may not require fire pumps depending on supply."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "Under NFPA 22, a private fire protection water storage tank must account for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only 30 minutes of domestic water for the largest restroom"
+      },
+      {
+        "id": "b",
+        "text": "Tank volume based solely on building footprint area"
+      },
+      {
+        "id": "c",
+        "text": "No seismic or wind load requirements on elevated tanks"
+      },
+      {
+        "id": "d",
+        "text": "Volume to supply required fire flow duration plus refill considerations and dead storage as applicable"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Tank sizing ties to hydraulic duration from NFPA 13/14/20 calculations; NFPA 22 covers construction and protection.",
+    "distractorExplanations": {
+      "a": "Domestic use does not size fire tanks.",
+      "b": "Domestic use does not size fire tanks.",
+      "c": "Footprint alone does not define fire water volume."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "An anti-vortex plate in a fire pump suction tank is installed to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prevent swirling and air entrainment at the suction intake that could cause pump cavitation"
+      },
+      {
+        "id": "b",
+        "text": "Increase water temperature to prevent ice formation"
+      },
+      {
+        "id": "c",
+        "text": "Filter debris larger than 1 inch from municipal mains"
+      },
+      {
+        "id": "d",
+        "text": "Measure flow rate to the fire department connection"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Vortexing can introduce air and destroy pump performance; anti-vortex plates are common NFPA 22 details.",
+    "distractorExplanations": {
+      "b": "Temperature control is separate from vortex prevention.",
+      "c": "Screening may occur elsewhere; anti-vortex addresses suction hydraulics.",
+      "d": "FDC flow measurement is not the plate's function."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "Hazen-Williams C-factor selection in sprinkler hydraulics should reflect:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the exterior paint color of exposed pipe"
+      },
+      {
+        "id": "b",
+        "text": "The internal roughness condition of the piping material and expected age/corrosion of the system"
+      },
+      {
+        "id": "c",
+        "text": "The K-factor of the most remote sprinkler"
+      },
+      {
+        "id": "d",
+        "text": "The building occupancy nameplate on the front door"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "C-factor affects friction loss calculations; older rough pipe reduces effective C and increases pressure demand.",
+    "distractorExplanations": {
+      "a": "Paint color has no hydraulic effect.",
+      "c": "K-factor is sprinkler discharge coefficient, not pipe roughness.",
+      "d": "Occupancy signage does not define C-factor."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "The 'hydraulically most remote' design area in NFPA 13 is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The area closest to the fire pump discharge flange"
+      },
+      {
+        "id": "b",
+        "text": "The room with the highest ceiling regardless of sprinkler spacing"
+      },
+      {
+        "id": "c",
+        "text": "The design area that requires the greatest water pressure at the source when flowing design density"
+      },
+      {
+        "id": "d",
+        "text": "Any 1,500 ft² rectangle chosen arbitrarily by the installer"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Remote area analysis ensures the supply can deliver density at the worst-case location on the sprinkler grid.",
+    "distractorExplanations": {
+      "a": "Nearest area to pump is often easiest to supply, not most remote.",
+      "b": "Design area location is calculated, not arbitrary.",
+      "d": "Design area location is calculated, not arbitrary."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "A sprinkler with a K-factor of 5.6 at 50 psi flowing pressure discharges approximately:",
+    "options": [
+      {
+        "id": "a",
+        "text": "5.6 gpm because K equals flow directly"
+      },
+      {
+        "id": "b",
+        "text": "280 gpm from multiplying K times pressure"
+      },
+      {
+        "id": "c",
+        "text": "11.2 gpm from dividing pressure by K"
+      },
+      {
+        "id": "d",
+        "text": "39.6 gpm, calculated as K√P"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Sprinkler discharge follows Q = K√P; at 50 psi, K5.6 yields about 39.6 gpm.",
+    "distractorExplanations": {
+      "a": "K is not equal to gpm; √(pressure) is required.",
+      "b": "K×P is not the sprinkler discharge formula.",
+      "c": "K×P is not the sprinkler discharge formula."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "Fast-response sprinklers are distinguished from standard-response primarily by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Thermal sensitivity (RTI) and activation time suitable for life safety and certain storage applications"
+      },
+      {
+        "id": "b",
+        "text": "Higher K-factor only, with identical thermal element size"
+      },
+      {
+        "id": "c",
+        "text": "Use exclusively in deluge systems with open nozzles"
+      },
+      {
+        "id": "d",
+        "text": "Requirement for 500 psi minimum operating pressure"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fast-response sprinklers activate quicker; ESFR and residential sprinklers are fast-response categories.",
+    "distractorExplanations": {
+      "b": "K-factor and response type are independent parameters.",
+      "c": "Deluge uses open heads, not thermally sensitive fast-response closed heads.",
+      "d": "Operating pressure follows hydraulic demand, not a universal 500 psi."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "Sprinkler spacing under unobstructed construction in ordinary hazard occupancies is generally limited to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "7 ft 6 in maximum regardless of hazard or construction type"
+      },
+      {
+        "id": "b",
+        "text": "15 ft maximum between sprinklers on branch lines and 15 ft between branch lines per NFPA 13 tables"
+      },
+      {
+        "id": "c",
+        "text": "30 ft spacing when heat detectors are present"
+      },
+      {
+        "id": "d",
+        "text": "20 ft spacing only if K14.0 heads are used"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Spacing tables balance ceiling coverage and activation timing; obstructed construction reduces permitted spacing.",
+    "distractorExplanations": {
+      "a": "7 ft 6 in is tighter than ordinary hazard unobstructed limits.",
+      "c": "Detectors do not replace sprinkler spacing rules.",
+      "d": "K-factor selection does not automatically allow 20 ft spacing."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "A sprinkler concealed above a ceiling with a cover plate is designed so that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The cover plate never releases and the sprinkler operates through it"
+      },
+      {
+        "id": "b",
+        "text": "The sprinkler operates only when the cover plate is manually removed"
+      },
+      {
+        "id": "c",
+        "text": "The cover plate releases at a lower temperature than the sprinkler element to expose the deflector before activation"
+      },
+      {
+        "id": "d",
+        "text": "Cover plates replace the need for a listed sprinkler heat responsive element"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Concealed sprinklers coordinate cover plate dropout with fusible link or glass bulb activation for proper spray pattern.",
+    "distractorExplanations": {
+      "a": "Covers must drop away; operating through plate would block distribution.",
+      "b": "Listed heat-responsive element remains required.",
+      "d": "Listed heat-responsive element remains required."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "In-rack sprinklers in storage occupancies are used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eliminate ceiling sprinklers in all warehouse buildings"
+      },
+      {
+        "id": "b",
+        "text": "Protect exterior loading docks without roofs"
+      },
+      {
+        "id": "c",
+        "text": "Replace fire pumps when ceiling height exceeds 40 ft"
+      },
+      {
+        "id": "d",
+        "text": "Control fire within rack storage arrays where ceiling-only sprinklers cannot penetrate rack barriers"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "In-rack sprinklers address rack flue spaces and commodity shielding — common in NFPA 13 storage chapters.",
+    "distractorExplanations": {
+      "a": "Ceiling sprinklers usually remain required with in-rack supplementation.",
+      "b": "Exterior docks use different protection strategies.",
+      "c": "Exterior docks use different protection strategies."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "CMSA (Control Mode Specific Application) sprinklers in storage are intended to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Limit fire size to a specific design scenario rather than achieve early suppression of high-challenge fires"
+      },
+      {
+        "id": "b",
+        "text": "Always replace ESFR in every high-piled storage arrangement"
+      },
+      {
+        "id": "c",
+        "text": "Operate only as sidewall sprinklers along conveyor belts"
+      },
+      {
+        "id": "d",
+        "text": "Discharge foam solution premixed at each head"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "CMSA is a control strategy with defined design criteria; ESFR targets early suppression in qualifying scenarios.",
+    "distractorExplanations": {
+      "b": "CMSA are typically pendent/upright ceiling sprinklers.",
+      "c": "CMSA are typically pendent/upright ceiling sprinklers.",
+      "d": "CMSA sprinklers are water-based unless specifically listed otherwise."
+    },
+    "difficulty": "hard"
+  }
+]

@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "ASHRAE TC 9.9 recommended inlet air temperature ranges for most IT equipment are:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Defined environmental classes allowing wider bands than legacy 20–25°C-only designs"
+      },
+      {
+        "id": "b",
+        "text": "Fixed at 10°C maximum always"
+      },
+      {
+        "id": "c",
+        "text": "Ignored in all modern facilities"
+      },
+      {
+        "id": "d",
+        "text": "Only about water temperature, not air"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "TC 9.9 classes support higher supply temps where equipment allows, improving economizer hours.",
+    "distractorExplanations": {
+      "b": "Classes allow higher inlet temps within vendor limits.",
+      "c": "TC 9.9 is foundational guidance.",
+      "d": "TC 9.9 addresses air and humidity for IT."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "A CRAH (Computer Room Air Handler) differs from a CRAC primarily because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "CRAH uses chilled water coils while CRAC typically has integral refrigeration"
+      },
+      {
+        "id": "b",
+        "text": "CRAH is always portable only"
+      },
+      {
+        "id": "c",
+        "text": "CRAC never uses compressors"
+      },
+      {
+        "id": "d",
+        "text": "CRAH cannot work with raised floors"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "CRAHs are air handlers connected to central chiller plants; CRACs are self-contained DX units.",
+    "distractorExplanations": {
+      "b": "CRAHs are commonly fixed perimeter units.",
+      "c": "CRAC includes compressors.",
+      "d": "CRAHs work with raised-floor plenums."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Chilled water supply temperature elevation (within ASHRAE limits) can:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Improve chiller efficiency and increase free cooling hours"
+      },
+      {
+        "id": "b",
+        "text": "Eliminate all airflow requirements"
+      },
+      {
+        "id": "c",
+        "text": "Guarantee server failure instantly"
+      },
+      {
+        "id": "d",
+        "text": "Remove humidity control needs"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Higher CHW temps raise evaporator temperature and reduce chiller lift.",
+    "distractorExplanations": {
+      "b": "Airflow is still required at the rack.",
+      "c": "Within allowable classes, equipment operates normally.",
+      "d": "Humidity control remains necessary."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Hot aisle containment primarily improves:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Return air temperature to cooling units, raising delta-T and efficiency"
+      },
+      {
+        "id": "b",
+        "text": "Mixing of cold and hot air"
+      },
+      {
+        "id": "c",
+        "text": "Recirculation of hot air into cold aisles"
+      },
+      {
+        "id": "d",
+        "text": "Need for more perforated tiles in hot aisles"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Capturing hot exhaust increases return temperature without heating supply air.",
+    "distractorExplanations": {
+      "b": "Containment reduces mixing.",
+      "c": "Containment prevents hot air entering cold aisles.",
+      "d": "Hot aisles typically use solid tiles or blanking."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Free cooling (economizer) in a chilled water plant uses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cool outdoor conditions to produce or assist chilled water without full mechanical refrigeration"
+      },
+      {
+        "id": "b",
+        "text": "Only electric resistance heat"
+      },
+      {
+        "id": "c",
+        "text": "Closing all cooling towers in summer"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating water treatment"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Waterside or airside economizers leverage ambient conditions to reduce chiller runtime.",
+    "distractorExplanations": {
+      "b": "Resistance heat adds load.",
+      "c": "Towers often enable waterside economizer modes.",
+      "d": "Water treatment remains essential."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Cooling tower approach temperature is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leaving water temperature minus ambient wet-bulb"
+      },
+      {
+        "id": "b",
+        "text": "Supply minus return air temperature"
+      },
+      {
+        "id": "c",
+        "text": "Chiller kW divided by tons"
+      },
+      {
+        "id": "d",
+        "text": "UPS efficiency only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Approach indicates how close tower water approaches theoretical wet-bulb limit.",
+    "distractorExplanations": {
+      "b": "That is air delta-T.",
+      "c": "kW/ton is chiller efficiency.",
+      "d": "UPS is power domain."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Relative humidity too low in a data hall increases risk of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Electrostatic discharge damaging components"
+      },
+      {
+        "id": "b",
+        "text": "Condensation on cold pipes only at high RH"
+      },
+      {
+        "id": "c",
+        "text": "Unlimited corrosion at 5% RH"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating need for humidification systems"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Low RH raises ESD risk; humidification may be needed in dry climates.",
+    "distractorExplanations": {
+      "b": "Condensation is more associated with high RH and cold surfaces.",
+      "c": "Very low RH reduces condensation risk but raises ESD.",
+      "d": "Low RH often requires humidification."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Relative humidity too high in a data hall increases risk of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Condensation and corrosion on surfaces and media"
+      },
+      {
+        "id": "b",
+        "text": "Static discharge from dry air"
+      },
+      {
+        "id": "c",
+        "text": "Improved tape adhesion on all metals"
+      },
+      {
+        "id": "d",
+        "text": "Zero cooling load"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "High RH with cold spots can cause moisture deposition and corrosion.",
+    "distractorExplanations": {
+      "b": "Static is worse at low RH.",
+      "c": "Corrosion risk increases, not tape benefits.",
+      "d": "Cooling load remains."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "In-row cooling places units:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Adjacent to rack rows to capture heat near the source"
+      },
+      {
+        "id": "b",
+        "text": "Only in the parking lot"
+      },
+      {
+        "id": "c",
+        "text": "Inside diesel fuel tanks"
+      },
+      {
+        "id": "d",
+        "text": "Exclusively in office cubicles"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "In-row units shorten airflow paths for high-density zones.",
+    "distractorExplanations": {
+      "b": "Cooling serves the data hall.",
+      "c": "Fuel areas prohibit IT cooling gear.",
+      "d": "Office cubicles are not primary IT zones."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Rear-door heat exchangers remove heat by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Active water-cooled coils mounted on rack rear doors"
+      },
+      {
+        "id": "b",
+        "text": "Painting doors white"
+      },
+      {
+        "id": "c",
+        "text": "Blocking all exhaust airflow"
+      },
+      {
+        "id": "d",
+        "text": "Increasing server CPU speed"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Liquid-cooled rear doors capture exhaust air heat into CHW.",
+    "distractorExplanations": {
+      "b": "Paint color does not remove heat.",
+      "c": "Blocking exhaust causes overheating.",
+      "d": "CPU speed adds heat."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Thermal mass in a data hall (slab, walls) can:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buffer short-term temperature swings during cooling failures or load changes"
+      },
+      {
+        "id": "b",
+        "text": "Eliminate all chillers permanently"
+      },
+      {
+        "id": "c",
+        "text": "Replace airflow management"
+      },
+      {
+        "id": "d",
+        "text": "Guarantee PUE of 1.0"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Mass slows rate of temperature rise buying time for response.",
+    "distractorExplanations": {
+      "b": "Chillers still needed for sustained load.",
+      "c": "Airflow management remains critical.",
+      "d": "PUE depends on many factors."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Delta-T across chilled water loops should be optimized because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Too low delta-T indicates over-pumping and poor chiller efficiency"
+      },
+      {
+        "id": "b",
+        "text": "Higher flow always improves efficiency without limit"
+      },
+      {
+        "id": "c",
+        "text": "Delta-T is irrelevant to plant energy"
+      },
+      {
+        "id": "d",
+        "text": "It only affects office lighting"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Low delta-T syndrome wastes pump energy and reduces chiller loading efficiency.",
+    "distractorExplanations": {
+      "b": "Excess flow increases pumping power.",
+      "c": "Delta-T strongly affects plant kW.",
+      "d": "Lighting is unrelated."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Adiabatic cooling on air handlers/pre-coolers:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Evaporatively lowers air temperature before mechanical cooling"
+      },
+      {
+        "id": "b",
+        "text": "Eliminates all water use always"
+      },
+      {
+        "id": "c",
+        "text": "Heats intake air for fun"
+      },
+      {
+        "id": "d",
+        "text": "Replaces fire detection"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Adiabatic pads or sprays precool air in dry climates to extend economizer benefit.",
+    "distractorExplanations": {
+      "b": "Adiabatic systems consume water.",
+      "c": "Purpose is cooling, not heating.",
+      "d": "Fire systems are separate."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Water treatment for cooling towers addresses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Scale, corrosion, biological growth, and blowdown control"
+      },
+      {
+        "id": "b",
+        "text": "Only paint color of tower fans"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of makeup water"
+      },
+      {
+        "id": "d",
+        "text": "Fiber optic loss"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Chemistry and blowdown maintain heat transfer and prevent Legionella risk.",
+    "distractorExplanations": {
+      "b": "Cosmetic issues are irrelevant.",
+      "c": "Evaporation requires makeup water.",
+      "d": "Fiber is network."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Legionella risk management in water systems includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Temperature control, biocide programs, and monitoring per local regulations"
+      },
+      {
+        "id": "b",
+        "text": "Ignoring stagnant water"
+      },
+      {
+        "id": "c",
+        "text": "Storing cardboard in basins"
+      },
+      {
+        "id": "d",
+        "text": "Disabling all treatment to save cost"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Operational water safety programs mitigate biological hazards.",
+    "distractorExplanations": {
+      "b": "Stagnation increases risk.",
+      "c": "Debris fosters biological growth.",
+      "d": "No treatment increases risk and fouling."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "CRAC units in a legacy room without containment often suffer:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Short cycling and uneven rack inlet temperatures due to recirculation"
+      },
+      {
+        "id": "b",
+        "text": "Perfect uniformity without blanking panels"
+      },
+      {
+        "id": "c",
+        "text": "No need for maintenance"
+      },
+      {
+        "id": "d",
+        "text": "Automatic humidity perfection"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Poor airflow management creates hot spots and inefficient CRAC operation.",
+    "distractorExplanations": {
+      "b": "Blanking and containment improve uniformity.",
+      "c": "Filters and coils need maintenance.",
+      "d": "Humidity still requires control."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Supply air temperature setpoint should align with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "IT inlet class, humidity limits, and cooling plant capabilities"
+      },
+      {
+        "id": "b",
+        "text": "Random daily lottery"
+      },
+      {
+        "id": "c",
+        "text": "Lowest possible regardless of equipment specs"
+      },
+      {
+        "id": "d",
+        "text": "Only exterior dry-bulb without considering load"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Setpoints balance equipment environmental specs with efficiency goals.",
+    "distractorExplanations": {
+      "b": "Setpoints are engineered.",
+      "c": "Too low wastes energy and may cause condensation issues.",
+      "d": "Interior load drives cooling need."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Leak detection under raised floors for chilled water pipes helps:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Catch water ingress before damage to IT and floor structure"
+      },
+      {
+        "id": "b",
+        "text": "Increase leaks"
+      },
+      {
+        "id": "c",
+        "text": "Replace humidity sensors"
+      },
+      {
+        "id": "d",
+        "text": "Eliminate need for pipe insulation"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Early leak sensing triggers isolation and repair before widespread damage.",
+    "distractorExplanations": {
+      "b": "Detection aims to reduce impact.",
+      "c": "Humidity sensors serve different purpose.",
+      "d": "Insulation still required."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Immersion cooling tanks require:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dielectric fluid compatibility, fire codes review, and service procedures"
+      },
+      {
+        "id": "b",
+        "text": "Tap water without treatment"
+      },
+      {
+        "id": "c",
+        "text": "No electrical safety considerations"
+      },
+      {
+        "id": "d",
+        "text": "Standard office carpet flooring"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Liquid cooling designs need fluid chemistry, containment, and safety planning.",
+    "distractorExplanations": {
+      "b": "Conductive tap water would short equipment.",
+      "c": "Electrical safety is critical.",
+      "d": "Special containment flooring is required."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Waterside economizer mode is most effective when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Outdoor wet-bulb is sufficiently below required chilled water temperature"
+      },
+      {
+        "id": "b",
+        "text": "Outdoor air is 45°C dry-bulb"
+      },
+      {
+        "id": "c",
+        "text": "Cooling tower is offline"
+      },
+      {
+        "id": "d",
+        "text": "Humidity is 95% with warm wet-bulb near design CHW temp"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Low wet-bulb enables tower to produce cooler water without chillers.",
+    "distractorExplanations": {
+      "b": "High dry-bulb limits tower capability.",
+      "c": "Towers typically enable economizer.",
+      "d": "Warm wet-bulb reduces economizer hours."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Hot spot mitigation at a single rack often starts with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Checking blanking panels, floor tile placement, and rack kW vs allocated airflow"
+      },
+      {
+        "id": "b",
+        "text": "Immediately shutting down entire facility"
+      },
+      {
+        "id": "c",
+        "text": "Removing all CRAC units"
+      },
+      {
+        "id": "d",
+        "text": "Painting the rack black"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Local airflow and load mismatch are common hot spot root causes.",
+    "distractorExplanations": {
+      "b": "Targeted fixes are preferred.",
+      "c": "Removing all cooling worsens situation.",
+      "d": "Color does not fix airflow."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Chiller plant N+1 redundancy means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "One spare chiller capacity beyond required N"
+      },
+      {
+        "id": "b",
+        "text": "No chillers installed"
+      },
+      {
+        "id": "c",
+        "text": "Chillers shared with office only without capacity review"
+      },
+      {
+        "id": "d",
+        "text": "Unlimited oversubscription without monitoring"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "N+1 allows one chiller maintenance/failure while others carry load.",
+    "distractorExplanations": {
+      "b": "Chillers are required for water-cooled plants.",
+      "c": "Shared plants need capacity allocation.",
+      "d": "Oversubscription must be managed."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Airflow CFM requirements per kW of IT load depend on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Allowable temperature rise from rack inlet to exhaust"
+      },
+      {
+        "id": "b",
+        "text": "Only rack paint"
+      },
+      {
+        "id": "c",
+        "text": "Number of lobby chairs"
+      },
+      {
+        "id": "d",
+        "text": "Fiber strand count alone"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Q = kW × constants / ΔT; higher allowed ΔT reduces required airflow.",
+    "distractorExplanations": {
+      "b": "Cosmetic factors irrelevant.",
+      "c": "Irrelevant.",
+      "d": "Fiber count unrelated."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Perimeter CRAC/CRAH placement can cause:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Long airflow paths and hot spots at center rows if not engineered"
+      },
+      {
+        "id": "b",
+        "text": "Automatic perfect balance without design"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of recirculation always"
+      },
+      {
+        "id": "d",
+        "text": "No need for tile management"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Center-of-room loads may need supplemental in-row or overhead cooling.",
+    "distractorExplanations": {
+      "b": "Design analysis is required.",
+      "c": "Recirculation risk remains without containment.",
+      "d": "Tile placement still matters."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Thermal imaging of rack fronts reveals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inlet temperature uniformity and misdirected airflow"
+      },
+      {
+        "id": "b",
+        "text": "Software license keys"
+      },
+      {
+        "id": "c",
+        "text": "Employee salaries"
+      },
+      {
+        "id": "d",
+        "text": "Generator fuel quality"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "IR cameras show hot/cold patterns at rack intakes.",
+    "distractorExplanations": {
+      "b": "Licenses are IT admin.",
+      "c": "HR data unrelated.",
+      "d": "Fuel tested separately."
+    },
+    "difficulty": "easy"
+  }
+]

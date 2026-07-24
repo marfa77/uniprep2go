@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "A cleaner mixes bleach and acid-based descaler in a toilet bowl, producing chlorine gas. The immediate priority is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Evacuate and ventilate the area, ensure affected people get fresh air and medical help, and review COSHH controls"
+      },
+      {
+        "id": "b",
+        "text": "Continue cleaning to finish the shift quickly"
+      },
+      {
+        "id": "c",
+        "text": "Add hot water to neutralise the reaction without ventilation"
+      },
+      {
+        "id": "d",
+        "text": "Store the mixture for reuse tomorrow"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Incompatible chemicals can release toxic gases; emergency response is evacuation, ventilation, medical care, and investigation of COSHH failures.",
+    "distractorExplanations": {
+      "b": "Continuing exposure worsens harm.",
+      "c": "Adding water may accelerate reaction; untrained neutralisation is unsafe.",
+      "d": "Reusing toxic mixtures is hazardous and illegal."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "Before using a new solvent, an employer must ensure workers have access to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the supplier marketing brochure"
+      },
+      {
+        "id": "b",
+        "text": "A current Safety Data Sheet (SDS) with hazards, controls, PPE, and emergency measures"
+      },
+      {
+        "id": "c",
+        "text": "Verbal rumours from previous sites"
+      },
+      {
+        "id": "d",
+        "text": "A blank notebook for guesswork"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "COSHH requires hazard information via SDS and risk assessment before use of hazardous substances.",
+    "distractorExplanations": {
+      "a": "Marketing material omits detailed hazard data.",
+      "c": "Rumours are not reliable hazard communication.",
+      "d": "SDS are mandatory reference documents."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "Local Exhaust Ventilation (LEV) on a welding bench fails airflow tests. The best action is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignore the test because welding continues regardless"
+      },
+      {
+        "id": "b",
+        "text": "Redirect fumes toward other workers to dilute them"
+      },
+      {
+        "id": "c",
+        "text": "Take the LEV out of service until repaired, use alternative controls, and notify workers"
+      },
+      {
+        "id": "d",
+        "text": "Remove filters to increase noise instead of airflow"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "LEV must be maintained and examined; failed extraction requires repair or substitute controls to prevent inhalation exposure.",
+    "distractorExplanations": {
+      "a": "Continuing without effective LEV increases fume exposure.",
+      "b": "Redirecting fumes endangers others.",
+      "d": "Filter removal worsens capture, not noise management."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "A warehouse aisle has pallet wrap trailing on the floor near a blind corner. The primary hazard category is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Work at height from the wrap height alone"
+      },
+      {
+        "id": "b",
+        "text": "Confined space because the aisle is narrow"
+      },
+      {
+        "id": "c",
+        "text": "Biological agent from cardboard dust only"
+      },
+      {
+        "id": "d",
+        "text": "Slip and trip from poor housekeeping in a pedestrian route"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Trailing materials on floors at corners are classic slip/trip hazards requiring housekeeping and design controls.",
+    "distractorExplanations": {
+      "a": "Wrap on floor is not a height issue.",
+      "b": "Wrap on floor is not a height issue.",
+      "c": "Aisle width alone does not define confined space."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "A maintenance worker climbs a fragile roof without edge protection or crawl boards. The most suitable control hierarchy step missed is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Avoid work on the fragile surface or use collective fall prevention such as guarded walkways"
+      },
+      {
+        "id": "b",
+        "text": "Issue sunglasses to reduce glare only"
+      },
+      {
+        "id": "c",
+        "text": "Rely on luck because the task is quick"
+      },
+      {
+        "id": "d",
+        "text": "Use a longer ladder without tie-off"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Work at height hierarchy prioritises avoiding fragile roofs, then edge protection, then personal fall protection with planning.",
+    "distractorExplanations": {
+      "b": "This option does not best address the scenario described.",
+      "c": "Luck is not a control measure.",
+      "d": "Ladders require proper use and may be unsuitable for fragile roofs."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "Entry into a tank that previously held solvent residue requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Opening the hatch and starting work if it smells faintly sweet"
+      },
+      {
+        "id": "b",
+        "text": "Confined space risk assessment, gas testing, ventilation, permit-to-work, standby person, and rescue plan"
+      },
+      {
+        "id": "c",
+        "text": "Solo entry with only a mobile phone torch"
+      },
+      {
+        "id": "d",
+        "text": "Painting the outside while ignoring atmosphere inside"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Confined spaces need atmospheric testing, isolation, permits, communication, and rescue arrangements before entry.",
+    "distractorExplanations": {
+      "a": "Odour is unreliable; toxic atmospheres may be odourless.",
+      "c": "Solo entry without gas test is high risk.",
+      "d": "External painting does not make internal atmosphere safe."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "A security guard patrols alone at night on a remote site with no communication check-in. The employer should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assume low crime means zero OH&S risk"
+      },
+      {
+        "id": "b",
+        "text": "Prohibit the guard from reporting incidents"
+      },
+      {
+        "id": "c",
+        "text": "Assess lone working risks, provide reliable communication, emergency procedures, and periodic welfare checks"
+      },
+      {
+        "id": "d",
+        "text": "Remove lighting to save energy without assessment"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Lone workers face delayed assistance if injured; risk assessment covers violence, health emergencies, and communication.",
+    "distractorExplanations": {
+      "a": "Lone working risk exists independent of crime rates.",
+      "b": "Incident reporting must remain available.",
+      "d": "Lighting removal can increase violence and trip risks."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "Welfare facilities for construction workers must include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only a single cold tap shared by 200 workers indefinitely"
+      },
+      {
+        "id": "b",
+        "text": "No facilities until project completion"
+      },
+      {
+        "id": "c",
+        "text": "Food service exclusively for managers"
+      },
+      {
+        "id": "d",
+        "text": "Toilets, washing with hot/cold water, drinking water, and changing/drying areas where needed"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Construction welfare regulations expect adequate sanitation, hydration, and rest support proportionate to workforce size.",
+    "distractorExplanations": {
+      "a": "Inadequate facilities breach welfare standards.",
+      "b": "Facilities are required during work, not only at end.",
+      "c": "Facilities are required during work, not only at end."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "A laboratory stores cultures of unknown respiratory pathogens. The primary control framework is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Biological agents risk assessment with containment level, training, vaccination where applicable, and emergency procedures"
+      },
+      {
+        "id": "b",
+        "text": "COSHH ignored because cultures are invisible"
+      },
+      {
+        "id": "c",
+        "text": "Eating at the bench to save time"
+      },
+      {
+        "id": "d",
+        "text": "Open windows only without containment review"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Biological hazards require assessment of exposure routes, containment, hygiene, and health surveillance per biosafety principles.",
+    "distractorExplanations": {
+      "b": "This option does not best address the scenario described.",
+      "c": "Eating in labs increases ingestion risk.",
+      "d": "Ventilation alone may be insufficient without containment level."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "An SDS shows a substance with H317 (may cause allergic skin reaction). Suitable controls include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bare-hand application to test sensitivity"
+      },
+      {
+        "id": "b",
+        "text": "Gloves compatible with the substance, hygiene facilities, substitution review, and health surveillance if needed"
+      },
+      {
+        "id": "c",
+        "text": "Stronger concentration to finish faster"
+      },
+      {
+        "id": "d",
+        "text": "Disposing of SDS to reduce paperwork"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Sensitisers need skin protection, hygiene, possible substitution, and surveillance for occupational dermatitis.",
+    "distractorExplanations": {
+      "a": "Deliberate skin contact is unsafe.",
+      "c": "Higher concentration increases exposure.",
+      "d": "SDS must be retained and accessible."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "A worker slips on a wet floor in a entrance lobby during rain. The best combination of controls is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Remove mats to expose smooth tile"
+      },
+      {
+        "id": "b",
+        "text": "Ban rain near the building"
+      },
+      {
+        "id": "c",
+        "text": "Entrance matting, regular mopping, warning signs when wet, and slip-resistant flooring where feasible"
+      },
+      {
+        "id": "d",
+        "text": "Only discipline the worker who slipped"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Weather-related wet floors need prevention (mats, drainage), maintenance, and temporary signage — not blame alone.",
+    "distractorExplanations": {
+      "a": "Removing mats increases tracked-in water hazard.",
+      "b": "Weather cannot be banned.",
+      "d": "Investigation should examine controls, not only individual fault."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "When planning work on a flat roof with a 2 m unprotected edge, the preferred control is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Single restraint lanyard without anchor assessment as first choice"
+      },
+      {
+        "id": "b",
+        "text": "Work parallel to the edge for speed"
+      },
+      {
+        "id": "c",
+        "text": "Rely on verbal caution only"
+      },
+      {
+        "id": "d",
+        "text": "Collective edge protection or parapet meeting standards before work proceeds"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Collective protection (guardrails, nets where appropriate) is higher in the work at height hierarchy than personal systems alone.",
+    "distractorExplanations": {
+      "a": "Personal fall protection may be secondary when collective is feasible.",
+      "b": "Personal fall protection may be secondary when collective is feasible.",
+      "c": "Proximity to edge increases fall likelihood."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "A confined space standby person's duties include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maintaining communication, preventing unauthorised entry, and initiating emergency procedures without entering if unsafe"
+      },
+      {
+        "id": "b",
+        "text": "Entering immediately without breathing apparatus to rescue alone"
+      },
+      {
+        "id": "c",
+        "text": "Leaving site for a break during active entry"
+      },
+      {
+        "id": "d",
+        "text": "Operating machinery inside the space to speed work"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Standby monitors the entry, keeps log, and coordinates rescue — often must not enter without proper rescue team and equipment.",
+    "distractorExplanations": {
+      "b": "This option does not best address the scenario described.",
+      "c": "Standby must remain available during entry.",
+      "d": "Machinery operation is not a standby function."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "COSHH assessment for a paint spraying booth should verify:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the paint colour matching brand guidelines"
+      },
+      {
+        "id": "b",
+        "text": "Ventilation capture velocity, respiratory protection, skin protection, fire risk, and SDS compliance"
+      },
+      {
+        "id": "c",
+        "text": "Parking spaces for visitors"
+      },
+      {
+        "id": "d",
+        "text": "Canteen menu allergens exclusively"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Spraying creates inhalation and dermatitis risks plus flammable atmospheres — LEV and RPE are typical controls.",
+    "distractorExplanations": {
+      "a": "Colour is not the primary hazard focus.",
+      "c": "Parking is unrelated.",
+      "d": "Food allergens are separate from spray COSHH."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "A lone retail worker closing the store at midnight faces cash-handling robbery risk. Controls include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maximum cash kept on person to speed banking"
+      },
+      {
+        "id": "b",
+        "text": "Blind corners with no CCTV review"
+      },
+      {
+        "id": "c",
+        "text": "Two-person closing where possible, panic alarm, safe visibility, training, and police liaison"
+      },
+      {
+        "id": "d",
+        "text": "Prohibition on reporting near-misses"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Lone working risk assessment covers violence, cash procedures, communication, and environmental design.",
+    "distractorExplanations": {
+      "a": "Excess cash increases robbery incentive.",
+      "b": "CCTV and layout review support deterrence.",
+      "d": "Reporting enables trend analysis and control."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "Biological laundry workers handling soiled linen should receive:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No training because linen looks clean when folded"
+      },
+      {
+        "id": "b",
+        "text": "Reuse of damaged gloves indefinitely"
+      },
+      {
+        "id": "c",
+        "text": "Eating in the sorting area to save time"
+      },
+      {
+        "id": "d",
+        "text": "Training on infection routes, PPE, hygiene, vaccination where recommended, and spill procedures"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Healthcare and laundry biological risks need hygiene discipline and PPE against contact and aerosol routes.",
+    "distractorExplanations": {
+      "a": "Soiled linen can harbour pathogens when contaminated.",
+      "b": "Damaged PPE must be replaced.",
+      "c": "Damaged PPE must be replaced."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "An LEV hood is positioned too far from a grinding wheel. The consequence is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reduced capture efficiency allowing airborne dust to escape into the worker's breathing zone"
+      },
+      {
+        "id": "b",
+        "text": "Improved extraction because distance increases suction magically"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of all fire risk"
+      },
+      {
+        "id": "d",
+        "text": "Automatic hearing protection"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "LEV must be positioned to capture contaminants at source; poor placement defeats extraction.",
+    "distractorExplanations": {
+      "b": "Distance reduces capture, not improves it.",
+      "c": "Dust and fire risks remain.",
+      "d": "LEV does not provide hearing protection."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "Trip hazards on a construction site stairway are best controlled by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leaving tools on steps for convenience"
+      },
+      {
+        "id": "b",
+        "text": "Clear treads, handrails, adequate lighting, cable management, and housekeeping inspections"
+      },
+      {
+        "id": "c",
+        "text": "Removing handrails to widen perceived space"
+      },
+      {
+        "id": "d",
+        "text": "Using stairs as material storage"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Stairways need clear routes, support, light, and ban on storage — frequent STF focus in IGC scenarios.",
+    "distractorExplanations": {
+      "a": "Tools on steps are classic trip hazards.",
+      "c": "Handrails prevent falls on stairs.",
+      "d": "Storage on stairs blocks escape and causes trips."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "For work at height using a mobile elevating work platform (MEWP), key requirements include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Extra passengers standing on guardrails for reach"
+      },
+      {
+        "id": "b",
+        "text": "Use on slopes beyond manufacturer limits without assessment"
+      },
+      {
+        "id": "c",
+        "text": "Operator training, harness/lanyard where required, ground conditions survey, and exclusion zone below"
+      },
+      {
+        "id": "d",
+        "text": "Ignore overhead obstructions because MEWPs are compact"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "MEWP use needs competent operators, suitable ground, fall prevention where specified, and overhead/underside hazard checks.",
+    "distractorExplanations": {
+      "a": "Standing on guardrails defeats fall protection.",
+      "b": "Slope limits are critical for stability.",
+      "d": "Overhead crushing and power lines are major MEWP risks."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "A sewage maintenance team may be exposed to hydrogen sulphide in chambers. Controls include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Smell-based entry because H2S is always obvious at lethal levels"
+      },
+      {
+        "id": "b",
+        "text": "Solo descent without communication"
+      },
+      {
+        "id": "c",
+        "text": "Ignition sources encouraged to test atmosphere"
+      },
+      {
+        "id": "d",
+        "text": "Gas detection, ventilation, trained entry procedures, PPE/RPE, and emergency rescue"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "H2S can cause rapid unconsciousness; gas testing and confined space procedures are mandatory — odour is unreliable at high concentrations.",
+    "distractorExplanations": {
+      "a": "H2S odour fatigue occurs; lethal levels may not be smelled.",
+      "b": "Solo entry delays rescue.",
+      "c": "Solo entry delays rescue."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "Under COSHH, a workplace exposure limit (WEL) breach means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Exposure must be reduced below the WEL using the hierarchy of control and monitoring may be required"
+      },
+      {
+        "id": "b",
+        "text": "Workers must tolerate exceedance if production is urgent"
+      },
+      {
+        "id": "c",
+        "text": "WELs are optional guidance with no action"
+      },
+      {
+        "id": "d",
+        "text": "Only PPE is allowed — engineering forbidden"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "WELs are legal maximums; exceedance triggers review and stronger controls to reduce exposure.",
+    "distractorExplanations": {
+      "b": "This option does not best address the scenario described.",
+      "c": "WELs are enforceable where applicable.",
+      "d": "Engineering and substitution are preferred before PPE."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "A night cleaner works alone in a multi-storey office. Which welfare/control pairing is most appropriate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Locked fire exits to prevent intruders during cleaning"
+      },
+      {
+        "id": "b",
+        "text": "Lone worker check-in system, lighting, safe chemical use training, and access to toilets on site"
+      },
+      {
+        "id": "c",
+        "text": "Unlabelled decanted chemicals for easier carrying"
+      },
+      {
+        "id": "d",
+        "text": "No breaks to finish faster on every floor"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Lone cleaning combines chemical COSHH, STF in dim areas, and welfare — fire exits must remain usable.",
+    "distractorExplanations": {
+      "a": "Locking fire exits compromises escape.",
+      "c": "Decanting without labeling breaches COSHH.",
+      "d": "Breaks manage fatigue and chemical exposure duration."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "Spill of concentrated acid in a bunded store requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hosing into drain without assessment"
+      },
+      {
+        "id": "b",
+        "text": "Ignoring bund because liquid is contained forever"
+      },
+      {
+        "id": "c",
+        "text": "PPE, contain spill kit use, ventilate, neutralise or absorb per procedure, dispose as hazardous waste, investigate cause"
+      },
+      {
+        "id": "d",
+        "text": "Mixing with unknown chemicals to see reaction"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Chemical spills need trained response, containment, safe neutralisation/absorption, and waste disposal per SDS.",
+    "distractorExplanations": {
+      "a": "Drain disposal may be illegal and hazardous.",
+      "b": "Bunds can fail or overflow; spills need active management.",
+      "d": "Uncontrolled mixing is dangerous."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "A worker trips on uneven paving between site cabins. Who should act first on control?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the injured worker's family doctor"
+      },
+      {
+        "id": "b",
+        "text": "The weather service exclusively"
+      },
+      {
+        "id": "c",
+        "text": "Insurance company before any physical fix"
+      },
+      {
+        "id": "d",
+        "text": "The employer/main contractor coordinating site housekeeping and ground maintenance"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Employers must maintain workplaces and traffic routes in good order — uneven surfaces are foreseeable STF hazards.",
+    "distractorExplanations": {
+      "a": "Medical care treats injury but employer fixes hazard.",
+      "b": "Medical care treats injury but employer fixes hazard.",
+      "c": "Weather may contribute but maintenance remains duty."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "agents-workplace-hazards",
+    "prompt": "Scaffold inspection tags show the scaffold is incomplete. Work at height on it should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Not proceed until a competent person completes erection and issues positive inspection"
+      },
+      {
+        "id": "b",
+        "text": "Proceed on the completed lower lifts only without tag review"
+      },
+      {
+        "id": "c",
+        "text": "Remove tags to avoid confusion"
+      },
+      {
+        "id": "d",
+        "text": "Climb incomplete standards to save ladder carry"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Scaffolds require competent erection, inspection, and tagging before use — incomplete structures are unsafe.",
+    "distractorExplanations": {
+      "b": "This option does not best address the scenario described.",
+      "c": "Removing tags hides status.",
+      "d": "Climbing incomplete scaffold risks collapse."
+    },
+    "difficulty": "medium"
+  }
+]

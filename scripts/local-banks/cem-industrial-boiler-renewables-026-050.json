@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "CHP project economics often depend on the spark spread, which is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The difference between electricity purchase price and fuel cost on an equivalent energy basis"
+      },
+      {
+        "id": "b",
+        "text": "The gap between two motor nameplates only"
+      },
+      {
+        "id": "c",
+        "text": "Stack height divided by generator kW"
+      },
+      {
+        "id": "d",
+        "text": "Lighting footcandle levels in the plant"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Favorable spark spread means onsite generation fuel cost is below avoided electricity cost.",
+    "distractorExplanations": {
+      "b": "Spark spread is an energy price relationship.",
+      "c": "Physical dimensions are unrelated.",
+      "d": "Lighting levels do not define spark spread."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Absorption chillers using waste heat from CHP are advantageous when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "There is sufficient thermal input and concurrent cooling load to utilize recovered heat"
+      },
+      {
+        "id": "b",
+        "text": "There is no cooling load and excess heat must be vented always"
+      },
+      {
+        "id": "c",
+        "text": "Electricity is cheaper than heat on all hours"
+      },
+      {
+        "id": "d",
+        "text": "Waste heat temperature is below ambient always"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Heat-driven cooling leverages CHP thermal output, improving overall system efficiency.",
+    "distractorExplanations": {
+      "b": "Cooling load must exist to use absorption cooling.",
+      "c": "Economics depend on relative energy prices.",
+      "d": "Absorption requires adequate heat source temperature."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Industrial pumping systems often waste energy through:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Throttled valves, oversized pumps, and poor maintenance of impellers and seals"
+      },
+      {
+        "id": "b",
+        "text": "Perfect impeller trim matching all loads always without review"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of all VFD options by code"
+      },
+      {
+        "id": "d",
+        "text": "Zero friction in pipes by default"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "System curve mismatches and control by throttling increase head loss and kWh.",
+    "distractorExplanations": {
+      "b": "Many plants have throttling or oversizing issues.",
+      "c": "VFDs are commonly applied to save energy.",
+      "d": "Friction always exists in real piping."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Applying VFDs to rotary screw compressors can save energy when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Demand varies and inlet modulation or unload modes would otherwise waste power"
+      },
+      {
+        "id": "b",
+        "text": "Demand is constant at full load 100% of hours"
+      },
+      {
+        "id": "c",
+        "text": "Compressors never operate at part load"
+      },
+      {
+        "id": "d",
+        "text": "Leak rates are zero regardless of pressure"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "VFDs or efficient control modes reduce power at part load compared to constant speed with blow-off.",
+    "distractorExplanations": {
+      "b": "Constant full load offers less VFD benefit.",
+      "c": "Part load is common in many plants.",
+      "d": "Leaks affect system load."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Pinch analysis in industrial heat integration identifies:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The minimum temperature approach limiting heat recovery between hot and cold streams"
+      },
+      {
+        "id": "b",
+        "text": "Only electrical power factor correction needs"
+      },
+      {
+        "id": "c",
+        "text": "Roof reflectance values exclusively"
+      },
+      {
+        "id": "d",
+        "text": "BACnet object naming conventions"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Pinch temperature helps maximize recovery with heat exchanger networks.",
+    "distractorExplanations": {
+      "b": "Pinch is thermal integration, not power factor.",
+      "c": "Roof metrics are envelope topics.",
+      "d": "BACnet naming is controls-related."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Solar PV module degradation over time typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reduces output gradually due to cell aging, soiling, and potential-induced degradation"
+      },
+      {
+        "id": "b",
+        "text": "Increases wattage above STC rating every year"
+      },
+      {
+        "id": "c",
+        "text": "Eliminates all inverter losses immediately"
+      },
+      {
+        "id": "d",
+        "text": "Has no effect on capacity factor"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Financial models use degradation rates (often ~0.5%/year) for long-term production estimates.",
+    "distractorExplanations": {
+      "b": "Output declines, not increases.",
+      "c": "Inverter losses remain.",
+      "d": "Degradation lowers capacity factor over time."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Inverter clipping occurs when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "DC array maximum power exceeds inverter AC rating and output is limited at peak sun"
+      },
+      {
+        "id": "b",
+        "text": "The inverter exceeds nameplate AC output indefinitely"
+      },
+      {
+        "id": "c",
+        "text": "Modules produce no power at standard test conditions"
+      },
+      {
+        "id": "d",
+        "text": "Battery state of charge is irrelevant to PV output"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Oversizing DC to AC ratio trades occasional clipping for higher annual yield per inverter cost.",
+    "distractorExplanations": {
+      "b": "Inverters limit output at rated AC capacity.",
+      "c": "Modules produce power at STC by definition.",
+      "d": "Batteries are separate from PV clipping though hybrid systems interact."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Ground-source heat pump COP improves when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Entering source temperature is favorable relative to required lift (heating or cooling mode)"
+      },
+      {
+        "id": "b",
+        "text": "Ground loop is completely dry with no fluid"
+      },
+      {
+        "id": "c",
+        "text": "Condenser approach is ignored in design"
+      },
+      {
+        "id": "d",
+        "text": "Compressors run with failed refrigerant charge"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Stable ground temperatures reduce lift compared to air-source extremes, improving COP.",
+    "distractorExplanations": {
+      "b": "Closed loops require heat transfer fluid.",
+      "c": "Approach affects heat exchanger performance.",
+      "d": "Proper charge is required for COP."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Biogas from anaerobic digesters can fuel boilers or CHP if:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gas is cleaned to meet equipment fuel specifications and heating value is sufficient"
+      },
+      {
+        "id": "b",
+        "text": "Raw digester gas requires no treatment ever"
+      },
+      {
+        "id": "c",
+        "text": "Methane content is irrelevant to combustion"
+      },
+      {
+        "id": "d",
+        "text": "All sulfur compounds are beneficial for burners"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "H2S, moisture, and siloxanes must be managed to protect combustion equipment.",
+    "distractorExplanations": {
+      "b": "Treatment is often required.",
+      "c": "Methane content drives heating value.",
+      "d": "Sulfur compounds are corrosive and harmful."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Steam header pressure management in a plant should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Match the lowest pressure adequate for all connected loads to minimize losses"
+      },
+      {
+        "id": "b",
+        "text": "Always operate at maximum boiler pressure regardless of end use"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate all pressure reducing valves"
+      },
+      {
+        "id": "d",
+        "text": "Ignore diversity of load when setting pressure"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Excess pressure increases losses and trap wear; cascading pressures can optimize distribution.",
+    "distractorExplanations": {
+      "b": "Maximum pressure increases losses if not needed.",
+      "c": "PRVs are used to step down to use points.",
+      "d": "Load diversity affects optimal header pressure."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Boiler cycling losses increase when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The boiler frequently short-cycles at low load without turndown or buffer capacity"
+      },
+      {
+        "id": "b",
+        "text": "The boiler runs steadily at matched load"
+      },
+      {
+        "id": "c",
+        "text": "Oxygen trim maintains stable combustion"
+      },
+      {
+        "id": "d",
+        "text": "Thermal mass or staging accommodates load swings"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Short cycling purges heat and increases standby losses, reducing seasonal efficiency.",
+    "distractorExplanations": {
+      "b": "Steady operation reduces cycling losses.",
+      "c": "Trim supports stable combustion.",
+      "d": "Buffer/storage reduces cycling frequency."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Industrial boiler load profiling helps energy managers:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Identify opportunities for scheduling, staging, and right-sizing equipment"
+      },
+      {
+        "id": "b",
+        "text": "Ignore all time-of-use rate structures"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate need for steam meters"
+      },
+      {
+        "id": "d",
+        "text": "Assume constant load 8760 hours"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Load profiles reveal peak demand, part-load hours, and shutdown opportunities.",
+    "distractorExplanations": {
+      "b": "Time-of-use affects cost optimization.",
+      "c": "Meters support profiling.",
+      "d": "Loads vary in real facilities."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "A Power Purchase Agreement (PPA) for onsite solar typically means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A third party owns and operates the system while the site buys energy at agreed rates"
+      },
+      {
+        "id": "b",
+        "text": "The site must always own modules and inverters outright with no contracts"
+      },
+      {
+        "id": "c",
+        "text": "Utility rates become irrelevant to project economics"
+      },
+      {
+        "id": "d",
+        "text": "No production monitoring is required"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "PPAs transfer capital and O&M to developers in exchange for energy payments.",
+    "distractorExplanations": {
+      "b": "Third-party ownership is common in PPAs.",
+      "c": "Utility rates often set PPA competitiveness.",
+      "d": "Monitoring verifies production and billing."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "When calculating emissions from distributed generation, energy managers should account for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fuel carbon content, generation efficiency, and displaced grid emissions factors"
+      },
+      {
+        "id": "b",
+        "text": "Only decorative landscaping area"
+      },
+      {
+        "id": "c",
+        "text": "Number of ceiling fans in the office wing"
+      },
+      {
+        "id": "d",
+        "text": "Filter MERV ratings exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Emissions comparisons require consistent units and marginal or average grid factors as appropriate.",
+    "distractorExplanations": {
+      "b": "Landscaping is unrelated.",
+      "c": "Ceiling fans do not define DG emissions.",
+      "d": "Filters are IAQ, not DG emissions."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Ultrasonic testing of steam traps helps identify:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Traps that are blowing live steam or blocked by distinguishing acoustic signatures"
+      },
+      {
+        "id": "b",
+        "text": "Chiller refrigerant charge levels"
+      },
+      {
+        "id": "c",
+        "text": "PV inverter firmware versions only"
+      },
+      {
+        "id": "d",
+        "text": "Roof membrane thickness exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Non-invasive acoustic methods support steam system maintenance programs.",
+    "distractorExplanations": {
+      "b": "Refrigerant is unrelated to steam traps.",
+      "c": "Inverter firmware is PV maintenance.",
+      "d": "Roof membrane is envelope scope."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Boiler blowdown rate should be controlled to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maintain acceptable water chemistry while minimizing energy loss"
+      },
+      {
+        "id": "b",
+        "text": "Maximize blowdown continuously without measurement"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate all dissolved solids monitoring"
+      },
+      {
+        "id": "d",
+        "text": "Ignore conductivity or TDS limits"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Automatic blowdown on conductivity balances water quality and heat loss.",
+    "distractorExplanations": {
+      "b": "Excessive blowdown wastes energy.",
+      "c": "Chemistry monitoring is required.",
+      "d": "TDS/conductivity guides blowdown."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "A heat recovery steam generator (HRSG) in cogeneration:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Produces steam from exhaust heat of a gas turbine or reciprocating engine"
+      },
+      {
+        "id": "b",
+        "text": "Cools refrigerant in a DX air conditioner"
+      },
+      {
+        "id": "c",
+        "text": "Stores electrical energy in batteries only"
+      },
+      {
+        "id": "d",
+        "text": "Replaces all combustion air requirements without a burner"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "HRSG captures exhaust energy for process or building steam loads in CHP systems.",
+    "distractorExplanations": {
+      "b": "HRSG is thermal recovery, not DX cooling.",
+      "c": "Batteries store electricity, not exhaust heat.",
+      "d": "Burners may still be needed for supplemental firing."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "In industrial facilities, absorption chillers versus electric chillers trade off:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Heat input versus electrical kW/ton depending on relative fuel and power costs"
+      },
+      {
+        "id": "b",
+        "text": "Only initial paint color of the vessel"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of all cooling towers always"
+      },
+      {
+        "id": "d",
+        "text": "Identical energy use regardless of heat source"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Absorption uses thermal energy; economics depend on available waste heat or gas prices vs electricity.",
+    "distractorExplanations": {
+      "b": "Appearance is irrelevant to energy trade-offs.",
+      "c": "Absorption systems may still use cooling towers.",
+      "d": "Energy sources differ materially."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Combustion air preheat on industrial boilers uses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Flue gas or process heat to raise incoming air temperature before the burner"
+      },
+      {
+        "id": "b",
+        "text": "Chilled water from the cooling tower exclusively"
+      },
+      {
+        "id": "c",
+        "text": "Return air from office VAV boxes only"
+      },
+      {
+        "id": "d",
+        "text": "No heat exchange with any stream"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Preheated combustion air reduces fuel required to reach flame temperature.",
+    "distractorExplanations": {
+      "b": "Tower water is not typical combustion preheat source.",
+      "c": "Office return air is not standard boiler preheat.",
+      "d": "Preheat requires a heat source."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Optimal solar PV tilt and orientation for a fixed array in the northern hemisphere generally:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Faces south (or north in southern hemisphere) at tilt near latitude for annual energy"
+      },
+      {
+        "id": "b",
+        "text": "Faces straight down toward the ground always"
+      },
+      {
+        "id": "c",
+        "text": "Ignores shading from nearby structures entirely"
+      },
+      {
+        "id": "d",
+        "text": "Uses vertical east-only orientation for peak summer only without analysis"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Site-specific modeling accounts for latitude, tariff, and shading for optimal yield.",
+    "distractorExplanations": {
+      "b": "Downward orientation captures minimal sun.",
+      "c": "Shading dramatically reduces output.",
+      "d": "Orientation should match load and resource goals."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Battery storage paired with DG or renewables can provide:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Peak shaving, backup power, and arbitrage where economics and controls support it"
+      },
+      {
+        "id": "b",
+        "text": "Infinite duration backup without sizing"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of all interconnection protection"
+      },
+      {
+        "id": "d",
+        "text": "Guaranteed elimination of all demand charges without analysis"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Storage value depends on tariff, duty cycle, and technology costs.",
+    "distractorExplanations": {
+      "b": "Duration is limited by capacity.",
+      "c": "Protection remains required.",
+      "d": "Demand charge savings vary by rate and usage."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Industrial energy intensity metrics (e.g., BTU per unit production) help:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Benchmark process efficiency and track improvements over time"
+      },
+      {
+        "id": "b",
+        "text": "Replace all safety regulations for boilers"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate need for utility bills"
+      },
+      {
+        "id": "d",
+        "text": "Ignore production volume changes when comparing years"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Normalizing energy by output reveals true efficiency trends.",
+    "distractorExplanations": {
+      "b": "Safety rules remain mandatory.",
+      "c": "Utility bills still provide cost data.",
+      "d": "Production volume must be included in normalization."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Package boilers versus field-erected units are typically chosen based on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Capacity, pressure requirements, site access, and lifecycle cost"
+      },
+      {
+        "id": "b",
+        "text": "Interior carpet selection only"
+      },
+      {
+        "id": "c",
+        "text": "Number of BACnet points in the BAS"
+      },
+      {
+        "id": "d",
+        "text": "Color of stack paint exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Smaller capacities often suit package units; large high-pressure plants may need field-erected designs.",
+    "distractorExplanations": {
+      "b": "Carpet is unrelated.",
+      "c": "BAS points do not drive boiler type selection.",
+      "d": "Stack paint is not a selection criterion."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "A renewable portfolio standard (RPS) typically requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Utilities or suppliers to procure a percentage of energy from renewable sources"
+      },
+      {
+        "id": "b",
+        "text": "All buildings to install solar PV regardless of site conditions"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of all natural gas use immediately nationwide"
+      },
+      {
+        "id": "d",
+        "text": "Boiler operators to ignore emissions permits"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "RPS policies drive renewable market demand through compliance obligations.",
+    "distractorExplanations": {
+      "b": "RPS applies to supply portfolios, not every building mandatorily.",
+      "c": "Gas phase-out is policy-specific and gradual.",
+      "d": "Emissions permits still apply."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Steam trap maintenance programs in industrial plants prioritize:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Regular inspection and replacement because failed traps waste fuel and can damage piping"
+      },
+      {
+        "id": "b",
+        "text": "Ignoring traps until catastrophic pipe failure only"
+      },
+      {
+        "id": "c",
+        "text": "Removing all traps to eliminate condensate"
+      },
+      {
+        "id": "d",
+        "text": "Operating with traps bypassed open continuously"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Effective trap management reduces live steam loss, improves safety, and supports boiler efficiency.",
+    "distractorExplanations": {
+      "b": "Waiting for failures increases cost and risk.",
+      "c": "Traps are required to remove condensate while blocking steam.",
+      "d": "Bypassed traps pass steam continuously."
+    },
+    "difficulty": "medium"
+  }
+]

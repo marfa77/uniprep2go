@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "ASHRAE CHD certification validates competency in:",
+    "options": [
+      {
+        "id": "a",
+        "text": "HVAC system design including load calculations, equipment selection, and distribution design"
+      },
+      {
+        "id": "b",
+        "text": "Only plumbing fixture counts without load analysis"
+      },
+      {
+        "id": "c",
+        "text": "Electrical one-line drafting without demand study"
+      },
+      {
+        "id": "d",
+        "text": "Land surveying legal descriptions exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "CHD tests practical HVAC design knowledge per the CHD exam blueprint.",
+    "distractorExplanations": {
+      "b": "CHD requires engineering analysis of HVAC loads and systems.",
+      "c": "Electrical design is a separate discipline.",
+      "d": "Surveying is unrelated to CHD HVAC design."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "HBDP (High-Performance Building Design Professional) emphasizes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Integrated design delivering energy efficiency, IAQ, and sustainability across disciplines"
+      },
+      {
+        "id": "b",
+        "text": "Single-discipline silo design without coordination"
+      },
+      {
+        "id": "c",
+        "text": "Only lowest first cost without performance metrics"
+      },
+      {
+        "id": "d",
+        "text": "Exclusive focus on decorative finishes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "HBDP spans architecture, mechanical, electrical, and controls integration.",
+    "distractorExplanations": {
+      "b": "HBDP focuses on integrated high-performance outcomes.",
+      "c": "High-performance design balances lifecycle performance.",
+      "d": "HBDP addresses building systems and performance integration."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "Sensible cooling load calculations account for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conduction, solar gains, internal heat sources, and ventilation affecting dry-bulb temperature"
+      },
+      {
+        "id": "b",
+        "text": "Only latent moisture without temperature change"
+      },
+      {
+        "id": "c",
+        "text": "Structural footing weights exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Only occupant latent perspiration"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Sensible loads size cooling capacity and airflow for temperature control.",
+    "distractorExplanations": {
+      "b": "Sensible loads change dry-bulb temperature.",
+      "c": "Structural weight is not a cooling load component.",
+      "d": "Latent load is separate from sensible cooling load."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "Latent cooling load is primarily driven by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moisture addition from occupants, ventilation, and infiltration requiring dehumidification"
+      },
+      {
+        "id": "b",
+        "text": "Only solar gain on opaque walls"
+      },
+      {
+        "id": "c",
+        "text": "Steel beam modulus of elasticity"
+      },
+      {
+        "id": "d",
+        "text": "Fan motor sensible heat only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Latent loads determine reheat, dehumidification, and coil selection.",
+    "distractorExplanations": {
+      "b": "Opaque solar gain is mostly sensible.",
+      "c": "Structural material properties are not latent loads.",
+      "d": "Fan heat is sensible; latent load involves moisture."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "The CHD/HBDP published passing score is approximately:",
+    "options": [
+      {
+        "id": "a",
+        "text": "68 correct out of 100 scored items"
+      },
+      {
+        "id": "b",
+        "text": "70 correct out of 100 scored items (verify current FAQs)"
+      },
+      {
+        "id": "c",
+        "text": "83 correct out of 120 scored items"
+      },
+      {
+        "id": "d",
+        "text": "45 correct out of 60 scored items"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "CHD and HBDP share a similar pass threshold per ASHRAE FAQs.",
+    "distractorExplanations": {
+      "a": "68/100 is the BEAP pass point.",
+      "c": "83/120 is the BCxP pass point.",
+      "d": "CHD/HBDP use 100 scored items."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "Psychrometric analysis in HVAC design is used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Relate dry-bulb, wet-bulb, humidity ratio, and enthalpy for process and coil selection"
+      },
+      {
+        "id": "b",
+        "text": "Size structural columns only"
+      },
+      {
+        "id": "c",
+        "text": "Calculate parking stall counts"
+      },
+      {
+        "id": "d",
+        "text": "Determine soil bearing capacity"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Designers use psychrometric charts for cooling, heating, and humidification processes.",
+    "distractorExplanations": {
+      "b": "Psychrometrics addresses air property relationships.",
+      "c": "Parking counts are unrelated to psychrometrics.",
+      "d": "Geotechnical analysis is separate from HVAC psychrometrics."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "ASHRAE Standard 62.1 sets:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Minimum ventilation rates and IAQ procedures for commercial and institutional buildings"
+      },
+      {
+        "id": "b",
+        "text": "Only chiller refrigerant charge limits"
+      },
+      {
+        "id": "c",
+        "text": "Structural wind load combinations exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Kitchen exhaust hood fabrication welding only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Ventilation rate procedure and IAQ procedure paths are core 62.1 content.",
+    "distractorExplanations": {
+      "b": "Refrigerant rules are in safety and equipment standards.",
+      "c": "Structural wind loads are in ASCE 7, not 62.1.",
+      "d": "62.1 addresses ventilation rates and IAQ."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "VAV system design must address:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Minimum ventilation at part load, static pressure control, and reheat/dehumidification implications"
+      },
+      {
+        "id": "b",
+        "text": "Only constant maximum airflow at all times"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of all outdoor air requirements"
+      },
+      {
+        "id": "d",
+        "text": "No duct sizing because velocity is irrelevant"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "VAV designs balance comfort, ventilation, and fan energy at part load.",
+    "distractorExplanations": {
+      "b": "VAV modulates airflow to match load.",
+      "c": "Minimum ventilation must be maintained per 62.1.",
+      "d": "Duct design and static pressure are critical VAV design tasks."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "Air-side economizer design per ASHRAE 90.1 requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Evaluating climate zone thresholds, high-limit shutoffs, and integration with mechanical cooling"
+      },
+      {
+        "id": "b",
+        "text": "Economizers in all buildings regardless of size and climate without exception"
+      },
+      {
+        "id": "c",
+        "text": "Disabling relief air paths"
+      },
+      {
+        "id": "d",
+        "text": "No controls integration with dampers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Economizer requirements depend on climate zone and cooling system capacity.",
+    "distractorExplanations": {
+      "b": "90.1 has capacity and climate exceptions.",
+      "c": "Relief or return fans manage building pressurization with economizers.",
+      "d": "Economizer dampers must be controlled and interlocked."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "Chiller plant design selection considers:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Load profile, redundancy, kW/ton efficiency, condenser water temperatures, and part-load performance"
+      },
+      {
+        "id": "b",
+        "text": "Only chiller footprint color"
+      },
+      {
+        "id": "c",
+        "text": "A single chiller size with no part-load analysis"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring cooling tower approach temperature"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Plant designers match staging and sizes to load duration curves.",
+    "distractorExplanations": {
+      "b": "Equipment aesthetics do not drive plant selection.",
+      "c": "Part-load efficiency strongly affects annual energy.",
+      "d": "Tower performance affects chiller efficiency."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "Duct friction loss calculations use:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Darcy-Weisbach or equivalent methods with roughness, fitting losses, and velocity limits"
+      },
+      {
+        "id": "b",
+        "text": "Only occupant count times floor area"
+      },
+      {
+        "id": "c",
+        "text": "Random duct sizes without velocity checks"
+      },
+      {
+        "id": "d",
+        "text": "Structural live load factors from ASCE 7"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Total static pressure determines fan selection in distribution design.",
+    "distractorExplanations": {
+      "b": "Duct loss calculations use hydraulic principles.",
+      "c": "Velocity and noise limits constrain duct sizing.",
+      "d": "Structural live loads do not size duct friction."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "Hydronic pipe sizing balances:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Flow requirements, velocity limits, pressure drop, and pumping energy"
+      },
+      {
+        "id": "b",
+        "text": "Only pipe color coding standards"
+      },
+      {
+        "id": "c",
+        "text": "Maximum velocity with no regard for erosion or noise"
+      },
+      {
+        "id": "d",
+        "text": "Elimination of all balancing valves"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Oversized pipes waste capital; undersized pipes waste pump energy and cause noise.",
+    "distractorExplanations": {
+      "b": "Hydronic sizing is a hydraulic engineering task.",
+      "c": "Velocity limits protect pipes and valves.",
+      "d": "Balancing devices are required for proper distribution."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "Dedicated outdoor air systems (DOAS) separate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ventilation and dehumidification from sensible cooling at terminal units"
+      },
+      {
+        "id": "b",
+        "text": "All heating from any ventilation airflow"
+      },
+      {
+        "id": "c",
+        "text": "Only plumbing fixtures from electrical panels"
+      },
+      {
+        "id": "d",
+        "text": "Structural steel from concrete exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "DOAS improves humidity control in high-performance buildings.",
+    "distractorExplanations": {
+      "b": "DOAS handles ventilation/latent loads; terminals handle sensible loads.",
+      "c": "DOAS is an HVAC ventilation strategy.",
+      "d": "Structural materials are unrelated to DOAS."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "Energy recovery ventilators in design should be evaluated for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Effectiveness, cross-leakage, frost control, and fan power impact on total ventilation energy"
+      },
+      {
+        "id": "b",
+        "text": "Only decorative grille finishes"
+      },
+      {
+        "id": "c",
+        "text": "Infinite effectiveness without manufacturer data"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating all outdoor air requirements"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ERV/HRV selection balances IAQ and energy in cold and hot climates.",
+    "distractorExplanations": {
+      "b": "Recovery performance metrics drive energy savings.",
+      "c": "Designers use tested effectiveness ratings.",
+      "d": "ERVs precondition OA but do not remove ventilation need."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "Integrated design charrettes in HBDP projects:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Align disciplines early on load reduction, system selection, and performance targets"
+      },
+      {
+        "id": "b",
+        "text": "Occur only after construction is complete"
+      },
+      {
+        "id": "c",
+        "text": "Exclude owners and operators from participation"
+      },
+      {
+        "id": "d",
+        "text": "Focus solely on furniture procurement"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Early integration prevents costly late redesign of systems.",
+    "distractorExplanations": {
+      "b": "Charrettes are early design collaboration tools.",
+      "c": "Owners and operators inform requirements.",
+      "d": "Charrettes target building performance strategies."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "Load calculations for perimeter zones must consider:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Orientation-specific solar gains, conduction, and infiltration distinct from interior zones"
+      },
+      {
+        "id": "b",
+        "text": "Identical loads on all facades regardless of glazing"
+      },
+      {
+        "id": "c",
+        "text": "Only interior carpet R-value"
+      },
+      {
+        "id": "d",
+        "text": "No difference between winter and summer loads"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Perimeter vs interior zoning affects system selection and controls.",
+    "distractorExplanations": {
+      "b": "Orientation and fenestration vary perimeter loads.",
+      "c": "Carpet has minor effect vs glazing and wall assembly.",
+      "d": "Heating and cooling loads vary seasonally."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "Fan coil unit selection requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Matching coil capacity, airflow, condensate management, and noise criteria for the zone"
+      },
+      {
+        "id": "b",
+        "text": "Only selecting the smallest cabinet for aesthetics"
+      },
+      {
+        "id": "c",
+        "text": "Ignoring condensate drain slope and traps"
+      },
+      {
+        "id": "d",
+        "text": "No acoustic analysis in any occupancy"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "FCU design ties hydronic or refrigerant supplies to zone loads.",
+    "distractorExplanations": {
+      "b": "Capacity and airflow must meet peak and ventilation needs.",
+      "c": "Condensate design prevents water damage and IAQ issues.",
+      "d": "Noise criteria matter in hotels, offices, and healthcare."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "Heat pump system design in commercial buildings should address:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Defrost, backup heat, simultaneous heating/cooling needs, and refrigerant piping limits"
+      },
+      {
+        "id": "b",
+        "text": "Only constant COP at all outdoor temperatures"
+      },
+      {
+        "id": "c",
+        "text": "Unlimited refrigerant line length without manufacturer guidance"
+      },
+      {
+        "id": "d",
+        "text": "Elimination of all ventilation loads"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "VRF/VRV and packaged heat pumps need careful application engineering.",
+    "distractorExplanations": {
+      "b": "Performance varies with outdoor conditions.",
+      "c": "Piping limits affect oil return and capacity.",
+      "d": "Ventilation loads remain in heat pump designs."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "Healthcare HVAC design (HFDP overlap) prioritizes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Infection control airflow, pressure relationships, filtration, and redundancy"
+      },
+      {
+        "id": "b",
+        "text": "Only lowest first cost with no pressure mapping"
+      },
+      {
+        "id": "c",
+        "text": "Eliminating all outdoor air to save energy"
+      },
+      {
+        "id": "d",
+        "text": "Negative pressure in all spaces universally"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "HBDP/CHD candidates should understand healthcare differs from standard office design.",
+    "distractorExplanations": {
+      "b": "Healthcare requires pressure and filtration control.",
+      "c": "Healthcare ventilation rates are stringent.",
+      "d": "Pressure relationships vary by room type."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "UFAD (underfloor air distribution) design considerations include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Swirl diffusers, slab height, cable pathways, and stratification effects on comfort"
+      },
+      {
+        "id": "b",
+        "text": "Only traditional ceiling supply with no floor plenum"
+      },
+      {
+        "id": "c",
+        "text": "Ignoring air temperature stratification"
+      },
+      {
+        "id": "d",
+        "text": "No coordination with raised access floor structure"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "UFAD can improve comfort and flexibility in suitable building types.",
+    "distractorExplanations": {
+      "b": "UFAD uses underfloor plenums and floor diffusers.",
+      "c": "Stratification affects comfort and load calculations.",
+      "d": "Plenum height and structure are coordinated design tasks."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "Cooling tower selection depends on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Heat rejection load, approach, wet-bulb design conditions, drift, and water treatment requirements"
+      },
+      {
+        "id": "b",
+        "text": "Only tower fan blade color"
+      },
+      {
+        "id": "c",
+        "text": "Ignoring wet-bulb temperature for the site"
+      },
+      {
+        "id": "d",
+        "text": "Assuming towers need no makeup water"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Tower performance sets minimum condenser water temperature for chillers.",
+    "distractorExplanations": {
+      "b": "Thermal performance and water management drive selection.",
+      "c": "Wet-bulb defines tower capacity and approach.",
+      "d": "Evaporation requires makeup water and bleed."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "Boiler plant design for heating should evaluate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Efficiency turndown, redundancy, venting, combustion air, and distribution temperature strategy"
+      },
+      {
+        "id": "b",
+        "text": "Only boiler paint finish"
+      },
+      {
+        "id": "c",
+        "text": "Oversizing without part-load efficiency review"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating all combustion air requirements"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Condensing boilers need low return temperatures to achieve rated efficiency.",
+    "distractorExplanations": {
+      "b": "Efficiency and safety drive boiler selection.",
+      "c": "Cycling at low load reduces efficiency.",
+      "d": "Combustion air is code-mandated."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "ASHRAE Guideline 36 sequences of operation aim to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Standardize high-performance control sequences for common HVAC equipment"
+      },
+      {
+        "id": "b",
+        "text": "Replace all mechanical equipment sizing rules"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate need for any BAS programming"
+      },
+      {
+        "id": "d",
+        "text": "Define only decorative lighting scenes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Designers reference Guideline 36 for efficient stable control strategies.",
+    "distractorExplanations": {
+      "b": "Guideline 36 addresses controls sequences, not equipment sizing.",
+      "c": "Sequences must still be implemented in the BAS.",
+      "d": "Guideline 36 covers HVAC system control logic."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "Selecting supply air temperature in cooling design trades off:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Duct size, airflow rate, dehumidification capability, and terminal device performance"
+      },
+      {
+        "id": "b",
+        "text": "Only structural column spacing"
+      },
+      {
+        "id": "c",
+        "text": "Higher SAT always reduces duct size without dehumidification impact"
+      },
+      {
+        "id": "d",
+        "text": "No relationship to space humidity control"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Lower SAT improves dehumidification but increases duct and fan sizing.",
+    "distractorExplanations": {
+      "b": "Supply air temperature affects HVAC distribution design.",
+      "c": "Warmer SAT may require more airflow for dehumidification.",
+      "d": "SAT is central to latent capacity delivery."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "chd-hbdp-design",
+    "prompt": "Natural ventilation hybrid design requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Defining operable window controls, wind/rain limits, and backup mechanical ventilation"
+      },
+      {
+        "id": "b",
+        "text": "Sealing all windows permanently"
+      },
+      {
+        "id": "c",
+        "text": "No analysis of outdoor air quality or noise"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating all mechanical cooling globally"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "High-performance designs may use mixed-mode ventilation where climate allows.",
+    "distractorExplanations": {
+      "b": "Natural ventilation requires controlled operable openings.",
+      "c": "Ambient conditions affect natural ventilation feasibility.",
+      "d": "Hybrids combine natural and mechanical systems."
+    },
+    "difficulty": "hard"
+  }
+]

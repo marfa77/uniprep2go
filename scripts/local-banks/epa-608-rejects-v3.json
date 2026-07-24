@@ -1,0 +1,40 @@
+[
+  {
+    "id": "epa-608-readiness-check-type-2-001",
+    "topicId": "type-2",
+    "prompt": "What is the maximum allowable leak rate for comfort cooling appliances containing 50 or more pounds of refrigerant?",
+    "options": [
+      { "id": "a", "text": "10% annually" },
+      { "id": "b", "text": "15% annually" },
+      { "id": "c", "text": "20% annually" },
+      { "id": "d", "text": "30% annually" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "EPA leak repair rules set a 10% annual leak rate threshold for comfort cooling appliances with 50 or more pounds of refrigerant.",
+    "distractorExplanations": {
+      "b": "15% applies to other equipment categories, not comfort cooling at this threshold.",
+      "c": "20% is the commercial refrigeration threshold for large systems, not comfort cooling.",
+      "d": "30% exceeds any EPA annual leak rate allowance for regulated appliances."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "id": "epa-608-readiness-check-type-2-016",
+    "topicId": "type-2",
+    "prompt": "A technician will cut and braze a leaking liquid line on a packaged rooftop unit containing 12 pounds of R-410A. What recovery level is required before opening the system?",
+    "options": [
+      { "id": "a", "text": "0 psig only" },
+      { "id": "b", "text": "4 inches of mercury vacuum" },
+      { "id": "c", "text": "15 inches of mercury vacuum" },
+      { "id": "d", "text": "Recover 80% of charge by weight only" }
+    ],
+    "correctOptionId": "c",
+    "explanation": "For high-pressure appliances with more than 5 pounds of refrigerant opened for major repair, EPA requires recovery to 15 inches of mercury vacuum (or equivalent evacuation level for the appliance type).",
+    "distractorExplanations": {
+      "a": "0 psig leaves refrigerant in the system and does not meet evacuation requirements before opening.",
+      "b": "Four inches of mercury is below the required evacuation level for this high-pressure major repair scenario.",
+      "d": "EPA specifies evacuation levels, not a percentage-only recovery shortcut before opening the circuit."
+    },
+    "difficulty": "medium"
+  }
+]

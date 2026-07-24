@@ -1,0 +1,59 @@
+[
+  {
+    "id": "leed-green-associate-readiness-check-location-transportation-044",
+    "topicId": "location-transportation",
+    "prompt": "A suburban retail center cannot meet LEED transit-access thresholds because no high-frequency transit serves the site. The owner still wants a Location and Transportation strategy that is realistic for a car-dependent market. Which approach best fits that constraint?",
+    "options": [
+      { "id": "a", "text": "Provide electric vehicle charging stations for customers and employees" },
+      { "id": "b", "text": "Reduce parking capacity below local zoning requirements without providing alternatives" },
+      { "id": "c", "text": "Install covered bicycle storage and repair facilities only" },
+      { "id": "d", "text": "Relocate the project to an urban site with existing rail service" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "When transit access is unavailable, EV charging is a practical LT-related strategy that supports lower-emission vehicle use without assuming riders can reach the site by bus or rail. Simply cutting parking below zoning without alternatives can harm retail access, and bicycle facilities alone are unlikely to shift mode share in a car-dependent suburban retail context.",
+    "distractorExplanations": {
+      "b": "Parking reductions without viable travel alternatives can create access problems and may not be permitted by zoning.",
+      "c": "Bicycle facilities help, but they alone are unlikely to be the most effective strategy for suburban retail customers carrying purchases.",
+      "d": "Relocating the project is outside the scope of a strategy for the selected suburban site."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "id": "leed-green-associate-readiness-check-sites-water-016",
+    "topicId": "sites-water",
+    "prompt": "A LEED project team is designing a green roof for a commercial office building in an urban area. The owner wants heat island and stormwater benefits with low irrigation demand and manageable maintenance cost. Which green roof approach best matches those priorities?",
+    "options": [
+      { "id": "a", "text": "Extensive green roof with native drought-tolerant plants and minimal irrigation" },
+      { "id": "b", "text": "Intensive green roof with diverse plant species and comprehensive irrigation infrastructure" },
+      { "id": "c", "text": "Modular green roof system with pre-grown vegetation mats and automated maintenance" },
+      { "id": "d", "text": "Hybrid green roof combining extensive and intensive areas with rainwater collection" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "An extensive green roof with native drought-tolerant planting provides heat island reduction and stormwater management while keeping irrigation and maintenance low. That balance is typically the most cost-effective vegetated roof strategy for commercial owners pursuing multiple LEED site credits.",
+    "distractorExplanations": {
+      "b": "Intensive roofs increase irrigation, weight, and maintenance cost, which works against the owner's low-maintenance requirement.",
+      "c": "Modular systems can work, but the option emphasizes automation and pre-grown mats without the same clear low-water profile as extensive native planting.",
+      "d": "A hybrid intensive area adds cost and maintenance beyond what is needed to meet the stated owner priorities."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "id": "leed-green-associate-readiness-check-sites-water-040",
+    "topicId": "sites-water",
+    "prompt": "A manufacturing facility must reduce heat island effects on both its large flat roof and extensive parking areas while keeping maintenance practical. Which combination best addresses roof and non-roof requirements together?",
+    "options": [
+      { "id": "a", "text": "Install white membrane roofing and light-colored concrete paving throughout the site" },
+      { "id": "b", "text": "Use extensive green roof systems and permeable paving with shade structures over parking" },
+      { "id": "c", "text": "Apply reflective roof coating and plant deciduous trees to shade 50% of hardscape areas" },
+      { "id": "d", "text": "Install solar panels covering the entire roof and use standard asphalt paving" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Extensive green roofs address roof heat island reduction, while permeable paving and parking shade structures directly treat hardscape surfaces. Together they provide a balanced roof and non-roof strategy rather than relying on seasonal tree shade alone or leaving parking on standard asphalt.",
+    "distractorExplanations": {
+      "a": "Light-colored paving may help, but this option does not combine vegetated roof treatment with structured hardscape shading or permeability.",
+      "c": "Reflective coating helps the roof, but deciduous trees provide only seasonal partial shade and may not fully treat large parking areas.",
+      "d": "Solar panels can count for roof heat island strategies, but standard asphalt paving worsens non-roof heat island performance."
+    },
+    "difficulty": "medium"
+  }
+]

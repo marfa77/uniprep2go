@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "Recommissioning is performed when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A previously commissioned building needs re-verification after major renovations or prolonged performance drift"
+      },
+      {
+        "id": "b",
+        "text": "A building has never had any systems installed"
+      },
+      {
+        "id": "c",
+        "text": "Only before original construction begins"
+      },
+      {
+        "id": "d",
+        "text": "Structural foundations are poured only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ReCx restores performance after changes or degradation.",
+    "distractorExplanations": {
+      "b": "Recommissioning assumes existing commissioned or operable systems.",
+      "c": "That describes new construction commissioning.",
+      "d": "Recommissioning addresses building systems operation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "CxA review of control sequences should reference:",
+    "options": [
+      {
+        "id": "a",
+        "text": "ASHRAE Guideline 36 or project-specific sequences aligned with OPR"
+      },
+      {
+        "id": "b",
+        "text": "Random sequences with no basis of design"
+      },
+      {
+        "id": "c",
+        "text": "Only manual operator overrides permanently"
+      },
+      {
+        "id": "d",
+        "text": "Elimination of all economizer logic"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Guideline 36 provides high-performance HVAC control sequence templates.",
+    "distractorExplanations": {
+      "b": "Sequences must implement design intent and standards.",
+      "c": "Automatic sequences should be verified during FPT.",
+      "d": "Economizers are often required for energy performance."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "Domestic hot water commissioning tests should verify:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Temperature control, recirculation, and legionella prevention strategies per design"
+      },
+      {
+        "id": "b",
+        "text": "Only paint finish on water heaters"
+      },
+      {
+        "id": "c",
+        "text": "That hot water storage is eliminated on all projects"
+      },
+      {
+        "id": "d",
+        "text": "No temperature measurement is needed"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "DHW systems affect energy, safety, and code compliance.",
+    "distractorExplanations": {
+      "b": "Temperature and distribution performance are critical.",
+      "c": "Many designs use storage; testing verifies control.",
+      "d": "Temperature limits are key acceptance criteria."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "Electrical commissioning scope may include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "ATS transfer tests, UPS ride-through, and panel schedules matching submittals"
+      },
+      {
+        "id": "b",
+        "text": "Only interior plant watering schedules"
+      },
+      {
+        "id": "c",
+        "text": "Skipping all emergency generator tests"
+      },
+      {
+        "id": "d",
+        "text": "No coordination with mechanical interlocks"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Critical facilities require witnessed power system functional tests.",
+    "distractorExplanations": {
+      "b": "Electrical Cx addresses power distribution and emergency power.",
+      "c": "Emergency power verification is critical.",
+      "d": "Electrical Cx often integrates with HVAC/fire modes."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "Hydronic system FPT should demonstrate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pump staging, valve modulation, differential pressure control, and boiler/chiller enable logic"
+      },
+      {
+        "id": "b",
+        "text": "Only static pressure at one idle pump"
+      },
+      {
+        "id": "c",
+        "text": "That balancing valves are fully closed permanently"
+      },
+      {
+        "id": "d",
+        "text": "No interaction between primary and secondary loops"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Hydronic FPT confirms pumping and production equipment coordinate properly.",
+    "distractorExplanations": {
+      "b": "FPT exercises control under multiple load conditions.",
+      "c": "Closed valves prevent design flow to loads.",
+      "d": "Decoupled loops require staged integration testing."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "Owner occupancy phase commissioning includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Seasonal testing completion, warranty reviews, and post-occupancy trend evaluation"
+      },
+      {
+        "id": "b",
+        "text": "Abandoning all issues at certificate of occupancy"
+      },
+      {
+        "id": "c",
+        "text": "Only architectural punch list with no systems"
+      },
+      {
+        "id": "d",
+        "text": "Deleting all trend data on day one"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Warranty phase Cx catches problems under real operating conditions.",
+    "distractorExplanations": {
+      "b": "Occupancy phase closes deferred and warranty items.",
+      "c": "Systems performance continues into occupancy phase.",
+      "d": "Post-occupancy trends verify sustained performance."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "A BCxP evaluating metering for MBCx should ensure:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Meters have adequate accuracy, interval data access, and coverage of major end uses"
+      },
+      {
+        "id": "b",
+        "text": "No metering because trends are optional always"
+      },
+      {
+        "id": "c",
+        "text": "Only one annual utility bill with no intervals"
+      },
+      {
+        "id": "d",
+        "text": "Meters shared with unrelated tenants without allocation"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Good metering underpins fault detection and ongoing commissioning.",
+    "distractorExplanations": {
+      "b": "MBCx requires reliable measured data.",
+      "c": "Analytics need interval trend resolution.",
+      "d": "Clear metering boundaries are required for diagnostics."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "Smoke control commissioning requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Witnessed tests of pressurization fans, dampers, and firefighter controls per code and design"
+      },
+      {
+        "id": "b",
+        "text": "Only cosmetic ceiling tile replacement"
+      },
+      {
+        "id": "c",
+        "text": "Skipping all damper position verification"
+      },
+      {
+        "id": "d",
+        "text": "No coordination with fire alarm inputs"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Code officials often witness smoke control acceptance tests.",
+    "distractorExplanations": {
+      "b": "Life safety smoke control demands rigorous testing.",
+      "c": "Damper failure defeats smoke control strategies.",
+      "d": "Fire alarm triggers smoke control modes."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "Commissioning closeout documentation typically includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Final Cx report, completed issues log, test scripts, as-built sequences, and training records"
+      },
+      {
+        "id": "b",
+        "text": "Only verbal handshakes without records"
+      },
+      {
+        "id": "c",
+        "text": "Deletion of all test scripts after one failure"
+      },
+      {
+        "id": "d",
+        "text": "No training attendance records"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Owners need complete records for operations and future RCx.",
+    "distractorExplanations": {
+      "b": "Closeout requires documented deliverables.",
+      "c": "Scripts are retained as part of the record.",
+      "d": "Training documentation proves operator readiness."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "When CxA finds BOD contradicting OPR, the BCxP should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Facilitate owner and design team resolution before construction proceeds on conflicting requirements"
+      },
+      {
+        "id": "b",
+        "text": "Ignore OPR because contractors prefer BOD only"
+      },
+      {
+        "id": "c",
+        "text": "Delete OPR to match contractor preferences"
+      },
+      {
+        "id": "d",
+        "text": "Proceed with construction and test later without alignment"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Early alignment prevents systems that cannot meet owner goals.",
+    "distractorExplanations": {
+      "b": "OPR is the owner's authoritative requirements document.",
+      "c": "OPR should not be discarded silently.",
+      "d": "Unresolved conflicts cause expensive rework."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "Factory witness testing may be required for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Critical custom equipment where site testing cannot reproduce design conditions"
+      },
+      {
+        "id": "b",
+        "text": "All standard residential light switches only"
+      },
+      {
+        "id": "c",
+        "text": "Every paint sample in the lobby"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating all site functional tests"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Large chillers, generators, or custom AHUs may need factory verification.",
+    "distractorExplanations": {
+      "b": "Factory witness is for critical custom assemblies.",
+      "c": "Factory tests target major custom mechanical/electrical skids.",
+      "d": "Site FPT still occurs after successful factory tests."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "Cx specifications often require contractors to provide:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Temporary controls, test ports, and safe access for CxA during functional testing"
+      },
+      {
+        "id": "b",
+        "text": "No access to mechanical rooms during tests"
+      },
+      {
+        "id": "c",
+        "text": "Permanent removal of all gauges after TAB"
+      },
+      {
+        "id": "d",
+        "text": "Blocking all documentation submittals"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Contract support reduces delays during FPT scheduling.",
+    "distractorExplanations": {
+      "b": "CxA must witness tests safely on site.",
+      "c": "Test ports and gauges support verification and O&M.",
+      "d": "Documentation is a contractual deliverable."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "A BCxP assessing economizer operation during FPT should test:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Damper modulation, high-limit shutoff, and interlocks with mechanical cooling"
+      },
+      {
+        "id": "b",
+        "text": "Only winter heating with dampers welded shut"
+      },
+      {
+        "id": "c",
+        "text": "That economizers increase compressor energy always"
+      },
+      {
+        "id": "d",
+        "text": "No linkage between OA dampers and relief fans"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Economizer failures are among the most common RCx findings.",
+    "distractorExplanations": {
+      "b": "Economizer tests require favorable outdoor air conditions.",
+      "c": "Proper economizers reduce mechanical cooling energy.",
+      "d": "Relief/exhaust coordination is part of economizer verification."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "Water treatment and chemistry in cooling towers affect commissioning by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Influencing heat transfer, fouling, and safe operation verified during performance testing"
+      },
+      {
+        "id": "b",
+        "text": "Having no impact on chiller plant efficiency"
+      },
+      {
+        "id": "c",
+        "text": "Eliminating all bleed and makeup controls"
+      },
+      {
+        "id": "d",
+        "text": "Replacing all HVAC controls testing"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Tower approach temperature is a commissioning acceptance metric.",
+    "distractorExplanations": {
+      "b": "Fouling raises approach and chiller kW.",
+      "c": "Tower water management is essential for performance and health.",
+      "d": "Water treatment supports but does not replace controls FPT."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "BCxP leadership in meetings requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Clear facilitation of action items, decisions, and accountability among stakeholders"
+      },
+      {
+        "id": "b",
+        "text": "Avoiding all written minutes to save time"
+      },
+      {
+        "id": "c",
+        "text": "Unilateral design changes without owner approval"
+      },
+      {
+        "id": "d",
+        "text": "Limiting communication to one trade only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Process management is a core BCxP competency.",
+    "distractorExplanations": {
+      "b": "Documented action items track commissioning progress.",
+      "c": "Owners approve requirement changes.",
+      "d": "Commissioning coordinates multiple disciplines."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "Renewable energy systems commissioning includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verifying inverters, protective relays, metering, and grid interconnection per design and utility requirements"
+      },
+      {
+        "id": "b",
+        "text": "Only checking panel aesthetics on rooftops"
+      },
+      {
+        "id": "c",
+        "text": "Ignoring utility interconnection agreements"
+      },
+      {
+        "id": "d",
+        "text": "Assuming generation with no meter verification"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Renewables integrate with building electrical systems and codes.",
+    "distractorExplanations": {
+      "b": "PV/renewable Cx includes electrical and performance verification.",
+      "c": "Interconnection rules affect testing and energization.",
+      "d": "Metering confirms production and safety functions."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "Pneumatic controls legacy buildings in RCx often need:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Calibration, receiver controller checks, and conversion planning to digital controls"
+      },
+      {
+        "id": "b",
+        "text": "No maintenance because pneumatics never drift"
+      },
+      {
+        "id": "c",
+        "text": "Immediate demolition of all HVAC without assessment"
+      },
+      {
+        "id": "d",
+        "text": "Only software patches on BMS with no field devices"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Legacy controls are common RCx scope in older buildings.",
+    "distractorExplanations": {
+      "b": "Pneumatic systems drift and leak over time.",
+      "c": "RCx corrects controls where economically feasible.",
+      "d": "Field devices must be verified regardless of front-end software."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "BCxP exam cognitive levels include analysis tasks such as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reciting staff directories only"
+      },
+      {
+        "id": "b",
+        "text": "Hand-drafting structural beam connections only"
+      },
+      {
+        "id": "c",
+        "text": "Memorizing refrigerant colors without application"
+      },
+      {
+        "id": "d",
+        "text": "Evaluating test results and recommending corrective actions for failed sequences"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "BCxP tests recall, application, and analysis per the exam blueprint.",
+    "distractorExplanations": {
+      "a": "Exams test technical analysis, not directories.",
+      "b": "Structural drafting is outside BCxP scope.",
+      "c": "ASHRAE exams emphasize applied knowledge."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "Building envelope commissioning may verify:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Air barrier continuity, fenestration performance, and infiltration control details"
+      },
+      {
+        "id": "b",
+        "text": "Only carpet pile direction in offices"
+      },
+      {
+        "id": "c",
+        "text": "That all windows must remain operable year-round for economizer"
+      },
+      {
+        "id": "d",
+        "text": "Structural rebar spacing exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Envelope Cx prevents hidden infiltration and moisture failures.",
+    "distractorExplanations": {
+      "b": "Envelope Cx targets air and thermal boundary performance.",
+      "c": "Envelope Cx is distinct from air-side economizer testing.",
+      "d": "Structural reinforcement is separate from envelope air barrier Cx."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "Trend log review before FPT helps the CxA:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Identify overrides, sensor drift, and short-cycling that would fail functional tests"
+      },
+      {
+        "id": "b",
+        "text": "Skip all testing because trends replace FPT"
+      },
+      {
+        "id": "c",
+        "text": "Ignore alarm history entirely"
+      },
+      {
+        "id": "d",
+        "text": "Only review landscaping water use"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Pre-FPT analytics reduce retest cycles.",
+    "distractorExplanations": {
+      "b": "Trends inform but do not replace witnessed FPT.",
+      "c": "Alarms highlight faults to resolve pre-test.",
+      "d": "HVAC and controls trends are primary Cx diagnostics."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "Warranty phase commissioning follow-up typically occurs:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Within 10–12 months after occupancy to catch seasonal and operational issues"
+      },
+      {
+        "id": "b",
+        "text": "Only before design development begins"
+      },
+      {
+        "id": "c",
+        "text": "Never, because warranties eliminate all defects"
+      },
+      {
+        "id": "d",
+        "text": "50 years after demolition"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Seasonal modes often require warranty-phase retesting.",
+    "distractorExplanations": {
+      "b": "Warranty follow-up is post-occupancy.",
+      "c": "Warranties do not replace performance verification.",
+      "d": "Follow-up occurs during the warranty period."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "BCxP professionals renewing certification must earn:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Professional Development Hours (PDHs) per the credential renewal requirements"
+      },
+      {
+        "id": "b",
+        "text": "No continuing education of any kind"
+      },
+      {
+        "id": "c",
+        "text": "Only social media posts about projects"
+      },
+      {
+        "id": "d",
+        "text": "A separate EPA 608 universal license automatically"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "BCxP renewal requires 50 PDHs per 3-year cycle (verify current guidebook).",
+    "distractorExplanations": {
+      "b": "ASHRAE certifications require PDHs for renewal.",
+      "c": "PDHs require qualified professional development activities.",
+      "d": "EPA refrigerant licensing is unrelated to BCxP renewal."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "Fire alarm integration testing with HVAC must confirm:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fans, dampers, and elevators respond correctly without conflicting normal control"
+      },
+      {
+        "id": "b",
+        "text": "HVAC ignores all fire alarm signals by design"
+      },
+      {
+        "id": "c",
+        "text": "Only strobe light colors in corridors"
+      },
+      {
+        "id": "d",
+        "text": "Elevators never interact with fire systems"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Failed integration can violate life safety code requirements.",
+    "distractorExplanations": {
+      "b": "Fire modes command specific HVAC responses.",
+      "c": "Integration testing addresses system responses, not aesthetics.",
+      "d": "Fire recall is a standard integration test item."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "A commissioning risk to owners if Cx is deferred to construction only is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Design errors become field changes with higher cost and schedule impact"
+      },
+      {
+        "id": "b",
+        "text": "Earlier identification of OPR gaps at bid time"
+      },
+      {
+        "id": "c",
+        "text": "Lower change order rates automatically"
+      },
+      {
+        "id": "d",
+        "text": "Guaranteed elimination of all TAB needs"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Early Cx is most cost-effective per Guideline 0 and Standard 202.",
+    "distractorExplanations": {
+      "b": "Late Cx misses design-phase correction opportunities.",
+      "c": "Late discovery typically increases change orders.",
+      "d": "TAB remains necessary regardless of Cx timing."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "bcxp-commissioning",
+    "prompt": "OPR workshops facilitated by the CxA should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Engage owner stakeholders to define measurable performance criteria before design advances"
+      },
+      {
+        "id": "b",
+        "text": "Exclude owners so contractors can set requirements alone"
+      },
+      {
+        "id": "c",
+        "text": "Finalize OPR after construction is complete only"
+      },
+      {
+        "id": "d",
+        "text": "Avoid documenting any performance metrics"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Early OPR workshops align the project team on success criteria.",
+    "distractorExplanations": {
+      "b": "OPR expresses owner requirements, not contractor preferences.",
+      "c": "OPR must guide design and commissioning from early phases.",
+      "d": "OPR criteria must be measurable for verification."
+    },
+    "difficulty": "easy"
+  }
+]

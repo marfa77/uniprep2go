@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Boiler combustion efficiency is primarily improved by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tuning excess air, maintaining clean heat transfer surfaces, and recovering waste heat where feasible"
+      },
+      {
+        "id": "b",
+        "text": "Operating with indefinitely high excess air without measurement"
+      },
+      {
+        "id": "c",
+        "text": "Eliminating all stack temperature monitoring"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring oxygen trim controls permanently"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Efficient combustion minimizes excess air while maintaining complete burn and maximizing heat transfer to the load.",
+    "distractorExplanations": {
+      "b": "Excess air without control wastes stack heat.",
+      "c": "Stack temperature indicates efficiency losses.",
+      "d": "Oxygen trim helps maintain optimal excess air."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Oxygen trim on a boiler adjusts combustion air to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maintain target excess oxygen in the flue gas across varying loads"
+      },
+      {
+        "id": "b",
+        "text": "Eliminate all need for combustion air"
+      },
+      {
+        "id": "c",
+        "text": "Increase excess air without any feedback measurement"
+      },
+      {
+        "id": "d",
+        "text": "Disable all safety interlocks on the burner"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Oxygen trim uses flue gas feedback to optimize air-fuel ratio, improving efficiency and reducing emissions.",
+    "distractorExplanations": {
+      "b": "Combustion requires controlled air supply.",
+      "c": "Trim requires measurement feedback.",
+      "d": "Safety interlocks must remain active."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Blowdown heat recovery on a steam boiler saves energy by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Capturing sensible heat from blowdown water before it is discharged to drain"
+      },
+      {
+        "id": "b",
+        "text": "Increasing blowdown rate without recovery"
+      },
+      {
+        "id": "c",
+        "text": "Eliminating all water treatment requirements"
+      },
+      {
+        "id": "d",
+        "text": "Venting blowdown directly to atmosphere without exchange"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Blowdown discards concentrated boiler water; heat exchangers preheat makeup water using that waste heat.",
+    "distractorExplanations": {
+      "b": "Higher blowdown without recovery wastes more energy.",
+      "c": "Water treatment is still required.",
+      "d": "Direct venting wastes recoverable heat."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Failed steam traps on a distribution system typically cause:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Live steam loss to condensate return or atmosphere, wasting fuel and possibly causing water hammer"
+      },
+      {
+        "id": "b",
+        "text": "Automatic improvement in boiler efficiency with no fuel impact"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of all condensate return"
+      },
+      {
+        "id": "d",
+        "text": "Reduced need for insulation on steam mains"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Blown traps pass steam continuously, increasing boiler load and risking system damage.",
+    "distractorExplanations": {
+      "b": "Failed traps increase fuel use.",
+      "c": "Condensate systems remain important.",
+      "d": "Insulation needs are unchanged or increased with losses."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "High condensate return to a steam plant reduces energy use because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Returned condensate retains heat and reduces makeup water heating demand"
+      },
+      {
+        "id": "b",
+        "text": "Condensate has no thermal energy content"
+      },
+      {
+        "id": "c",
+        "text": "Makeup water requires no treatment when return is zero"
+      },
+      {
+        "id": "d",
+        "text": "Boilers ignore return temperature in efficiency calculations"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Hot condensate reduces fuel needed to raise feedwater to saturation conditions.",
+    "distractorExplanations": {
+      "b": "Condensate carries sensible heat.",
+      "c": "Makeup still needs treatment; zero return increases treatment load.",
+      "d": "Feedwater temperature significantly affects boiler efficiency."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Boiler turndown ratio describes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The range between minimum and maximum stable firing rate"
+      },
+      {
+        "id": "b",
+        "text": "The time between annual inspections only"
+      },
+      {
+        "id": "c",
+        "text": "The stack height divided by boiler width"
+      },
+      {
+        "id": "d",
+        "text": "The ratio of steam pressure to condensate temperature only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Higher turndown allows efficient operation at varying loads without excessive cycling.",
+    "distractorExplanations": {
+      "b": "Inspection intervals are maintenance schedules, not turndown.",
+      "c": "Physical dimensions do not define turndown.",
+      "d": "Turndown relates to firing rate range."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Compressed air leaks in an industrial plant are costly because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compressors consume significant electricity to produce air that performs no useful work"
+      },
+      {
+        "id": "b",
+        "text": "Leaks improve system pressure stability at no cost"
+      },
+      {
+        "id": "c",
+        "text": "Compressed air is free once piping is installed"
+      },
+      {
+        "id": "d",
+        "text": "Leaks automatically reduce motor loading on compressors"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Even small leaks increase compressor runtime and peak demand charges.",
+    "distractorExplanations": {
+      "b": "Leaks waste air; they do not improve stability economically.",
+      "c": "Compression requires energy continuously.",
+      "d": "Compressors work harder to maintain pressure with leaks."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Reducing compressed air system pressure setpoint where processes allow saves energy because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compressor power decreases when less pressure rise is required for the same flow"
+      },
+      {
+        "id": "b",
+        "text": "Higher pressure always reduces compressor kW"
+      },
+      {
+        "id": "c",
+        "text": "Pressure has no effect on leak flow rates"
+      },
+      {
+        "id": "d",
+        "text": "Dryers consume no energy at any pressure"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Lower discharge pressure reduces compression ratio and often leak flow, saving kWh.",
+    "distractorExplanations": {
+      "b": "Higher pressure increases compression work.",
+      "c": "Leak flow increases with pressure.",
+      "d": "Dryers still consume energy though pressure affects system."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Process heat recovery opportunities are often identified by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mapping energy flows and finding exhaust streams with usable temperature above downstream needs"
+      },
+      {
+        "id": "b",
+        "text": "Ignoring all exhaust temperatures in audits"
+      },
+      {
+        "id": "c",
+        "text": "Assuming all waste heat is unusable below 1000°F only"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating all heat exchanger maintenance records"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Pinch analysis and heat balances reveal where recovered heat can preheat combustion air, water, or process loads.",
+    "distractorExplanations": {
+      "b": "Exhaust temperatures are key audit data.",
+      "c": "Usable waste heat exists at many temperature levels.",
+      "d": "Maintenance records support heat exchanger performance."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Combined heat and power (CHP) improves overall fuel utilization by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Using waste heat from power generation for thermal loads instead of rejecting it"
+      },
+      {
+        "id": "b",
+        "text": "Rejecting all heat to a cooling tower while making power only"
+      },
+      {
+        "id": "c",
+        "text": "Operating solely during grid peak without thermal load"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating all maintenance on prime movers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Sequential use of fuel for electricity and useful heat raises effective efficiency versus separate generation.",
+    "distractorExplanations": {
+      "b": "CHP captures heat that would otherwise be wasted.",
+      "c": "Thermal load matching is critical to CHP economics.",
+      "d": "Prime movers require maintenance."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Fouling on heat exchangers in industrial systems increases energy use by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Adding thermal resistance and requiring higher approach temperatures or flow"
+      },
+      {
+        "id": "b",
+        "text": "Improving heat transfer coefficient automatically"
+      },
+      {
+        "id": "c",
+        "text": "Eliminating all pumping requirements"
+      },
+      {
+        "id": "d",
+        "text": "Reducing approach temperature without cleaning"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fouling reduces effective U-value, forcing higher utility consumption to meet process needs.",
+    "distractorExplanations": {
+      "b": "Fouling degrades heat transfer.",
+      "c": "Fouling often increases required flow or temperature difference.",
+      "d": "Approach typically worsens with fouling."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Industrial motor load factor (average load / rated load) is important because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Motors operate most efficiently near full load; low load factor may indicate oversizing"
+      },
+      {
+        "id": "b",
+        "text": "Motors are most efficient at zero load"
+      },
+      {
+        "id": "c",
+        "text": "Load factor has no bearing on energy audits"
+      },
+      {
+        "id": "d",
+        "text": "Nameplate horsepower equals actual load always"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Oversized motors running lightly loaded have poor efficiency and power factor.",
+    "distractorExplanations": {
+      "b": "Zero load is not efficient operation.",
+      "c": "Load factor is a standard audit metric.",
+      "d": "Actual load often differs from nameplate."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Reducing steam pressure at the point of use when process allows saves energy because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lower pressure reduces heat loss through piping and may improve boiler efficiency at lower firing"
+      },
+      {
+        "id": "b",
+        "text": "Higher pressure always reduces latent heat content"
+      },
+      {
+        "id": "c",
+        "text": "Steam traps are unnecessary at lower pressure"
+      },
+      {
+        "id": "d",
+        "text": "Boiler blowdown stops entirely at lower pressure"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Lower system pressure reduces saturation temperature and line losses if process requirements permit.",
+    "distractorExplanations": {
+      "b": "Latent heat varies with pressure; lower pressure can reduce losses.",
+      "c": "Steam traps remain essential.",
+      "d": "Blowdown is still required for water quality."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Boiler water treatment primarily prevents:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Scale, corrosion, and carryover that reduce efficiency and damage equipment"
+      },
+      {
+        "id": "b",
+        "text": "All combustion air requirements"
+      },
+      {
+        "id": "c",
+        "text": "Need for any stack emissions testing"
+      },
+      {
+        "id": "d",
+        "text": "Condensate return entirely"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Proper chemistry maintains heat transfer and reliability, supporting efficient operation.",
+    "distractorExplanations": {
+      "b": "Combustion air is a separate system.",
+      "c": "Emissions testing may still be required.",
+      "d": "Condensate return is independent of treatment goals."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Solar PV capacity factor is defined as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Actual energy output divided by theoretical maximum output at rated capacity over a period"
+      },
+      {
+        "id": "b",
+        "text": "Peak sun hours only with no energy denominator"
+      },
+      {
+        "id": "c",
+        "text": "Inverter efficiency at STC only"
+      },
+      {
+        "id": "d",
+        "text": "Module area divided by roof area"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Capacity factor reflects resource, shading, and system availability versus nameplate DC rating converted to AC output.",
+    "distractorExplanations": {
+      "b": "It requires actual vs maximum energy over time.",
+      "c": "Inverter efficiency is one component, not the definition.",
+      "d": "Area ratio is not capacity factor."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Net metering for on-site solar typically allows:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Billing credit or offset for exported generation up to policy limits"
+      },
+      {
+        "id": "b",
+        "text": "Unlimited export payment at premium rates in all jurisdictions without rules"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of all interconnection review"
+      },
+      {
+        "id": "d",
+        "text": "Operation without any utility connection ever"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Net metering policies vary by utility and state; they affect project economics.",
+    "distractorExplanations": {
+      "b": "Policies have caps and rate structures.",
+      "c": "Interconnection standards still apply.",
+      "d": "Grid-tied systems require interconnection."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Wind turbine capacity factor in a given location depends on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wind resource, turbine availability, and wake losses"
+      },
+      {
+        "id": "b",
+        "text": "Only blade color and tower paint"
+      },
+      {
+        "id": "c",
+        "text": "Domestic hot water setpoint"
+      },
+      {
+        "id": "d",
+        "text": "Chiller kW/ton exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Site wind distribution and maintenance drive how much energy is produced versus nameplate rating.",
+    "distractorExplanations": {
+      "b": "Aesthetics do not define capacity factor.",
+      "c": "DHW is unrelated to wind generation.",
+      "d": "Chiller efficiency is a separate system metric."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Solar thermal systems for industrial preheat are most viable when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Process needs low- to medium-temperature heat and good solar resource with storage or backup"
+      },
+      {
+        "id": "b",
+        "text": "Process requires only cryogenic temperatures"
+      },
+      {
+        "id": "c",
+        "text": "There is no demand during daylight hours ever"
+      },
+      {
+        "id": "d",
+        "text": "Backup fuel is prohibited by all codes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Solar thermal displaces fossil preheat for water or air streams within collector temperature limits.",
+    "distractorExplanations": {
+      "b": "Cryogenic needs exceed typical solar thermal capability.",
+      "c": "Daytime load enables direct use of collection.",
+      "d": "Backup is usually required for reliability."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Biomass boilers require attention to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fuel supply consistency, emissions controls, ash handling, and combustion tuning"
+      },
+      {
+        "id": "b",
+        "text": "Zero combustion air supply"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of all particulate regulations"
+      },
+      {
+        "id": "d",
+        "text": "Identical operation to electric resistance boilers without differences"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Biomass fuel variability and emissions rules affect design, O&M, and efficiency.",
+    "distractorExplanations": {
+      "b": "Combustion requires controlled air.",
+      "c": "Emissions regulations apply to biomass.",
+      "d": "Biomass systems differ from electric boilers."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Fuel cell distributed generation produces electricity with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Electrochemical reaction, often with usable heat depending on type (e.g., MCFC, SOFC)"
+      },
+      {
+        "id": "b",
+        "text": "Steam expansion in a turbine only with no heat output"
+      },
+      {
+        "id": "c",
+        "text": "No need for any fuel supply"
+      },
+      {
+        "id": "d",
+        "text": "Guaranteed zero interconnection requirements"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fuel cells offer high electrical efficiency and recoverable heat for CHP applications.",
+    "distractorExplanations": {
+      "b": "Fuel cells are not steam turbines alone.",
+      "c": "Fuel supply is required.",
+      "d": "Grid interconnection rules still apply."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Microgrid islanding capability means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The local system can disconnect from the utility grid and continue serving critical loads"
+      },
+      {
+        "id": "b",
+        "text": "The site can never connect to the grid"
+      },
+      {
+        "id": "c",
+        "text": "All renewable generation stops when grid is available"
+      },
+      {
+        "id": "d",
+        "text": "Battery storage is prohibited"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Islanding supports resilience when designed with controls, protection, and sufficient onsite resources.",
+    "distractorExplanations": {
+      "b": "Microgrids typically can connect and disconnect.",
+      "c": "Renewables can operate in both modes with proper design.",
+      "d": "Storage often supports islanding."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Renewable Energy Certificates (RECs) represent:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The environmental attributes of renewable generation, separable from energy in some markets"
+      },
+      {
+        "id": "b",
+        "text": "Physical delivery of electrons only with no tracking instrument"
+      },
+      {
+        "id": "c",
+        "text": "Boiler blowdown volume measurements"
+      },
+      {
+        "id": "d",
+        "text": "Steam trap test results exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "RECs document renewable attribute claims for compliance or voluntary goals.",
+    "distractorExplanations": {
+      "b": "RECs track attributes, not physical electron paths alone.",
+      "c": "Blowdown is a boiler O&M topic.",
+      "d": "Steam traps are unrelated to REC markets."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Distributed generation interconnection studies evaluate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Grid impacts, protection settings, and power quality for safe parallel operation"
+      },
+      {
+        "id": "b",
+        "text": "Only interior lighting power density"
+      },
+      {
+        "id": "c",
+        "text": "Carpet VOC emissions exclusively"
+      },
+      {
+        "id": "d",
+        "text": "No review of fault current contribution"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Utilities require studies to ensure DG does not compromise safety or reliability.",
+    "distractorExplanations": {
+      "b": "Lighting is unrelated to interconnection.",
+      "c": "Materials VOC is unrelated.",
+      "d": "Fault current from DG must be evaluated."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "A boiler economizer preheats:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Feedwater or combustion air using flue gas heat before it exits the stack"
+      },
+      {
+        "id": "b",
+        "text": "Chilled water returning from the cooling coil"
+      },
+      {
+        "id": "c",
+        "text": "Refrigerant suction gas in DX systems"
+      },
+      {
+        "id": "d",
+        "text": "Domestic cold water after the softener only with no flue connection"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Economizers recover sensible heat from flue gas, improving boiler efficiency.",
+    "distractorExplanations": {
+      "b": "Chilled water is a cooling loop.",
+      "c": "Refrigerant lines are separate systems.",
+      "d": "Economizers tie to flue gas heat recovery."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "industrial-boiler-renewables",
+    "prompt": "Insulating steam distribution piping reduces losses by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lowering heat transfer from hot pipes to ambient surroundings"
+      },
+      {
+        "id": "b",
+        "text": "Increasing steam velocity without limit"
+      },
+      {
+        "id": "c",
+        "text": "Eliminating all steam trap requirements"
+      },
+      {
+        "id": "d",
+        "text": "Raising saturation pressure automatically"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Insulation reduces radiant and convective losses along distribution runs.",
+    "distractorExplanations": {
+      "b": "Excessive velocity can cause erosion and noise.",
+      "c": "Traps are still required for condensate removal.",
+      "d": "Insulation does not change system pressure setpoint."
+    },
+    "difficulty": "easy"
+  }
+]

@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A facility manager wants a quick screening of energy cost drivers before committing to detailed analysis. Which audit level is most appropriate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "ASHRAE Level I walk-through with utility review and low-cost/no-cost opportunities"
+      },
+      {
+        "id": "b",
+        "text": "ASHRAE Level III investment-grade audit with submetering and risk allocation"
+      },
+      {
+        "id": "c",
+        "text": "Retro-commissioning functional test of every air-handling unit"
+      },
+      {
+        "id": "d",
+        "text": "Full life-cycle cost analysis of a new chiller plant only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Level I audits provide a walk-through assessment, utility data review, and identification of obvious ECMs suitable for initial screening without the cost and rigor of investment-grade analysis.",
+    "distractorExplanations": {
+      "b": "Level III is reserved for high-stakes financing where savings must be verified with greater precision.",
+      "c": "Retro-commissioning focuses on system performance verification, not initial screening of cost drivers.",
+      "d": "A single-equipment LCC study does not substitute for a whole-facility screening audit."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "An energy manager compares two ECMs using simple payback. Project A saves $12,000/year with a $36,000 cost. Project B saves $8,000/year with a $20,000 cost. Which statement is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Project A has the shorter simple payback period"
+      },
+      {
+        "id": "b",
+        "text": "Project B has the shorter simple payback period"
+      },
+      {
+        "id": "c",
+        "text": "Both projects have identical payback periods"
+      },
+      {
+        "id": "d",
+        "text": "Simple payback cannot be used for energy projects"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Simple payback equals initial cost divided by annual savings. Project A: 3.0 years; Project B: 2.5 years, so Project B returns capital faster on a simple payback basis.",
+    "distractorExplanations": {
+      "a": "Project A's payback is 3.0 years, which is longer than Project B's 2.5 years.",
+      "c": "The cost-to-savings ratios differ, producing different payback periods.",
+      "d": "Simple payback is commonly used for preliminary screening, though it ignores time value of money."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "Under a time-of-use (TOU) electric rate, which operating strategy most directly reduces energy charges?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Raising thermostat setpoints during off-peak hours only"
+      },
+      {
+        "id": "b",
+        "text": "Running base-load equipment only during on-peak periods"
+      },
+      {
+        "id": "c",
+        "text": "Shifting discretionary loads to off-peak periods when energy prices are lower"
+      },
+      {
+        "id": "d",
+        "text": "Increasing power factor without changing load schedule"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "TOU rates charge different energy prices by time period. Moving flexible loads to off-peak hours lowers the energy ($/kWh) portion of the bill.",
+    "distractorExplanations": {
+      "b": "Operating during on-peak periods increases exposure to the highest energy rates.",
+      "d": "Power factor correction affects demand/reactive charges, not TOU energy pricing by itself.",
+      "a": "Thermostat changes affect consumption but do not inherently align loads with lower-priced periods."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A corporate energy policy sets a target to reduce energy use intensity (EUI) by 20% from a baseline year. Which metric best tracks progress?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Peak demand in kW only"
+      },
+      {
+        "id": "b",
+        "text": "Total annual energy consumption in kWh regardless of floor area"
+      },
+      {
+        "id": "c",
+        "text": "Energy cost per employee headcount"
+      },
+      {
+        "id": "d",
+        "text": "Annual site energy divided by conditioned floor area"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "EUI normalizes total site energy use by floor area (commonly kBtu/ft²·yr or kWh/m²·yr), enabling fair comparison across years and portfolio buildings.",
+    "distractorExplanations": {
+      "a": "Peak demand reflects load magnitude, not normalized energy intensity.",
+      "b": "Absolute consumption ignores changes in building size or occupancy normalization.",
+      "c": "Cost per employee mixes rate effects with usage and is not standard EUI."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "Which element is typically required in an ASHRAE Level II energy audit but not in a Level I audit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Detailed energy-use breakdown and savings calculations with economic analysis for recommended ECMs"
+      },
+      {
+        "id": "b",
+        "text": "A brief walk-through of the facility"
+      },
+      {
+        "id": "c",
+        "text": "Review of utility bills"
+      },
+      {
+        "id": "d",
+        "text": "Identification of obvious low-cost measures"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Level II expands on Level I with more detailed survey data, end-use breakdowns, quantified savings, and economic evaluation of recommended measures.",
+    "distractorExplanations": {
+      "b": "Walk-throughs are part of Level I screening.",
+      "c": "Utility bill review is common to both Level I and Level II.",
+      "d": "Low-cost measure identification is a Level I deliverable."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A utility tariff includes a demand ratchet clause set at 80% of the highest monthly peak in the prior 12 months. What is the practical effect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Demand charges are eliminated in summer months"
+      },
+      {
+        "id": "b",
+        "text": "The customer may pay demand charges based on a floor even if actual peak is lower"
+      },
+      {
+        "id": "c",
+        "text": "Energy charges are replaced by demand charges"
+      },
+      {
+        "id": "d",
+        "text": "Power factor penalties are waived automatically"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Ratchet clauses set a minimum billing demand based on historical peaks, so a single high peak can elevate demand charges for months even when current peaks are lower.",
+    "distractorExplanations": {
+      "a": "Ratchets typically apply year-round or in defined seasons, not as a summer elimination.",
+      "c": "Energy and demand charges remain separate bill components.",
+      "d": "Power factor rules are independent of demand ratchet provisions."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "When evaluating an ECM with a 15-year life, which economic method accounts for the time value of money and all cash flows over the project life?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Simple payback period only"
+      },
+      {
+        "id": "b",
+        "text": "First-year savings divided by installed cost"
+      },
+      {
+        "id": "c",
+        "text": "Net present value (NPV) using a discount rate"
+      },
+      {
+        "id": "d",
+        "text": "Gross floor area per dollar of capital cost"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "NPV discounts future savings and costs to present value, capturing the time value of money across the full project lifecycle.",
+    "distractorExplanations": {
+      "a": "Simple payback ignores cash flows after payback and discounting.",
+      "b": "That ratio is a simplified metric, not a full lifecycle evaluation.",
+      "d": "Floor area normalization is unrelated to discounted cash flow analysis."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "IPMVP Option A is most appropriate when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Whole-facility savings must be determined using utility bill regression only"
+      },
+      {
+        "id": "b",
+        "text": "No baseline period is available"
+      },
+      {
+        "id": "c",
+        "text": "Savings are verified solely by engineering estimates without field data"
+      },
+      {
+        "id": "d",
+        "text": "Individual equipment retrofit savings are isolated with periodic short-term measurements"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "IPMVP Option A (retrofit isolation) uses short-term measurements of key parameters combined with stipulated values for other factors to quantify savings for specific retrofits.",
+    "distractorExplanations": {
+      "a": "Whole-facility utility analysis aligns more with Option C or D approaches.",
+      "b": "All IPMVP options require a defined baseline period.",
+      "c": "Option A requires measured data for critical parameters, not estimates alone."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A state adopts the latest commercial building energy code based on ASHRAE Standard 90.1. For new construction, the code primarily establishes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mandatory minimum efficiency requirements for building systems and envelope"
+      },
+      {
+        "id": "b",
+        "text": "Voluntary targets that owners may ignore without penalty"
+      },
+      {
+        "id": "c",
+        "text": "Retrofit requirements for all existing buildings immediately"
+      },
+      {
+        "id": "d",
+        "text": "Utility rate structures for commercial customers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Model energy codes like IECC and ASHRAE 90.1 set enforceable minimum efficiency requirements for new construction and major renovations.",
+    "distractorExplanations": {
+      "b": "Energy codes are legally enforceable minimum standards, not optional guidance.",
+      "c": "Existing building retrofits are typically addressed by separate policies, not new-construction code alone.",
+      "d": "Rate design is a utility regulatory function, not a building energy code."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "Life-cycle cost (LCC) analysis for a boiler replacement should include which cost category that simple payback typically omits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Initial capital cost only"
+      },
+      {
+        "id": "b",
+        "text": "Ongoing maintenance, fuel, and replacement costs over the analysis period"
+      },
+      {
+        "id": "c",
+        "text": "The color of the boiler casing"
+      },
+      {
+        "id": "d",
+        "text": "First-year energy savings only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "LCC sums all relevant costs—capital, energy, maintenance, and periodic replacements—over the analysis horizon, often in present-value terms.",
+    "distractorExplanations": {
+      "d": "LCC considers multiple years of operating costs, not first-year savings alone.",
+      "a": "Capital cost alone ignores operating and maintenance impacts.",
+      "c": "Cosmetic attributes are not part of economic LCC analysis."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "An energy manager normalizes monthly electricity use against heating degree days (HDD) and cooling degree days (CDD). The primary purpose is to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Determine the utility demand ratchet automatically"
+      },
+      {
+        "id": "b",
+        "text": "Eliminate the need for submetering"
+      },
+      {
+        "id": "c",
+        "text": "Adjust consumption for weather variation when tracking performance"
+      },
+      {
+        "id": "d",
+        "text": "Calculate power factor penalties"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Weather normalization adjusts energy use for HDD/CDD so performance comparisons reflect operational changes rather than weather-driven swings.",
+    "distractorExplanations": {
+      "b": "Normalization complements but does not replace end-use submetering.",
+      "d": "Power factor is calculated from kW and kVAR, not degree-day data.",
+      "a": "Ratchets are tariff provisions, not derived from degree-day normalization."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "Which scenario best justifies an ASHRAE Level III investment-grade audit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Replacing a single LED lamp in a storage closet"
+      },
+      {
+        "id": "b",
+        "text": "Reviewing last month's utility bill for anomalies only"
+      },
+      {
+        "id": "c",
+        "text": "A quick staff training walk-through of a small office"
+      },
+      {
+        "id": "d",
+        "text": "An ESPC or performance contract where savings guarantee repayment of third-party financing"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Level III audits provide the rigor, measurement, and risk analysis needed when savings estimates underpin financing guarantees in ESPCs or similar arrangements.",
+    "distractorExplanations": {
+      "c": "Small offices rarely need investment-grade audit depth for screening.",
+      "a": "Minor measures do not warrant Level III cost and analysis.",
+      "b": "Bill review alone is far below Level III scope."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A facility's electric bill shows 500 kW peak demand billed at $12/kW and 200,000 kWh at $0.08/kWh. What is the approximate total demand plus energy charge?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$22,000"
+      },
+      {
+        "id": "b",
+        "text": "$16,000"
+      },
+      {
+        "id": "c",
+        "text": "$28,000"
+      },
+      {
+        "id": "d",
+        "text": "$6,000"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Demand charge: 500 kW × $12/kW = $6,000. Energy charge: 200,000 kWh × $0.08/kWh = $16,000. Combined total = $22,000.",
+    "distractorExplanations": {
+      "d": "This reflects demand charges only, omitting energy charges.",
+      "b": "This reflects energy charges only, omitting demand charges.",
+      "c": "This overstates the bill by adding incorrect components."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A municipal energy policy requires benchmarking public buildings using ENERGY STAR Portfolio Manager. The normalized score primarily compares:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Annual water use to parking stall count"
+      },
+      {
+        "id": "b",
+        "text": "Actual source EUI to the national median for similar building types"
+      },
+      {
+        "id": "c",
+        "text": "Indoor CO₂ levels to ASHRAE 62.1 limits"
+      },
+      {
+        "id": "d",
+        "text": "Chiller tonnage to roof area only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Portfolio Manager scores compare a building's weather-normalized source EUI against peer buildings of the same type to produce a 1–100 performance score.",
+    "distractorExplanations": {
+      "c": "Indoor air quality metrics are not the basis of ENERGY STAR building scores.",
+      "d": "Equipment sizing ratios are not the normalization basis for benchmarking scores.",
+      "a": "Water use and parking counts are unrelated to the energy score algorithm."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "An ECM has a positive NPV at a 6% discount rate but a simple payback of 9 years. Which conclusion is most accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Positive NPV means payback must be under 2 years"
+      },
+      {
+        "id": "b",
+        "text": "Simple payback is always superior to NPV for long-life projects"
+      },
+      {
+        "id": "c",
+        "text": "The project creates value on a discounted basis despite a long simple payback"
+      },
+      {
+        "id": "d",
+        "text": "NPV and payback always agree, so the analysis must be wrong"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "NPV can be positive when long-term savings outweigh upfront cost even if simple payback is lengthy, because NPV accounts for the full savings stream and discount rate.",
+    "distractorExplanations": {
+      "d": "Payback and NPV measure different aspects and can diverge, especially with long-lived savings.",
+      "a": "There is no fixed payback threshold tied to NPV positivity.",
+      "b": "For long-life projects, NPV and LCC typically provide more complete economic insight than payback alone."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "Which federal policy mechanism most directly encourages energy efficiency in federal buildings through required energy reduction targets?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Coast Guard navigation lighting standards"
+      },
+      {
+        "id": "b",
+        "text": "National park visitor fee schedules"
+      },
+      {
+        "id": "c",
+        "text": "Corporate average fuel economy standards for passenger vehicles"
+      },
+      {
+        "id": "d",
+        "text": "Federal energy management requirements such as EISA/ECPA energy intensity reduction goals"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Federal statutes and executive orders establish energy intensity reduction targets and reporting for federal agencies, driving efficiency in government facilities.",
+    "distractorExplanations": {
+      "c": "CAFE standards regulate vehicle fuel economy, not federal building operations.",
+      "a": "Navigation lighting standards are unrelated to federal building energy policy.",
+      "b": "Park fee schedules do not establish federal facility energy reduction mandates."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "During M&V planning, the baseline period should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Represent pre-retrofit conditions with sufficient data to characterize normal operation"
+      },
+      {
+        "id": "b",
+        "text": "Begin only after all ECMs are installed"
+      },
+      {
+        "id": "c",
+        "text": "Exclude all weather data"
+      },
+      {
+        "id": "d",
+        "text": "Use estimated savings instead of measured consumption"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A defensible baseline captures pre-retrofit performance over an adequate period so post-retrofit consumption can be compared against adjusted baseline conditions.",
+    "distractorExplanations": {
+      "b": "The baseline must precede retrofit implementation to establish pre-project performance.",
+      "c": "Weather adjustment is often required for fair baseline comparisons.",
+      "d": "M&V relies on measured or modeled consumption, not savings estimates alone for verification."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A commercial customer on a real-time pricing tariff faces high prices during a grid emergency. The best demand-response strategy is to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increase production loads to maximize throughput"
+      },
+      {
+        "id": "b",
+        "text": "Reduce or shift non-critical loads during the high-price event"
+      },
+      {
+        "id": "c",
+        "text": "Disable all metering to avoid billing"
+      },
+      {
+        "id": "d",
+        "text": "Run all HVAC at minimum outdoor air regardless of price"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Real-time pricing exposes customers to hourly market signals; curtailing discretionary loads during emergencies lowers cost and supports grid reliability.",
+    "distractorExplanations": {
+      "a": "Increasing load during price spikes raises cost and grid stress.",
+      "c": "Metering cannot be disabled; consumption is still billed.",
+      "d": "Minimum ventilation settings do not inherently respond to price signals."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "Internal rate of return (IRR) for an energy project is best described as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Annual kWh savings divided by peak kW"
+      },
+      {
+        "id": "b",
+        "text": "The utility's published demand charge"
+      },
+      {
+        "id": "c",
+        "text": "The discount rate at which NPV equals zero"
+      },
+      {
+        "id": "d",
+        "text": "The simple payback multiplied by the discount rate"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "IRR is the discount rate that makes the present value of inflows equal outflows (NPV = 0), often compared to a hurdle rate for project approval.",
+    "distractorExplanations": {
+      "d": "IRR is not derived from simple payback multiplied by a discount rate.",
+      "a": "kWh/kW is a load factor-related ratio, not IRR.",
+      "b": "Demand charges are tariff rates, not project return metrics."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "An energy audit report lists a measure with 35% savings uncertainty at 90% confidence. This indicates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The measure will definitely save exactly 35%"
+      },
+      {
+        "id": "b",
+        "text": "No economic evaluation was performed"
+      },
+      {
+        "id": "c",
+        "text": "The measure is exempt from M&V"
+      },
+      {
+        "id": "d",
+        "text": "The savings estimate includes quantified uncertainty bounds from the analysis"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Investment-grade and detailed audits report uncertainty ranges so decision-makers understand savings risk; ±35% at 90% confidence bounds the expected outcome.",
+    "distractorExplanations": {
+      "a": "Uncertainty bands mean the exact savings are not guaranteed at a single value.",
+      "b": "Uncertainty reporting can accompany full economic evaluation.",
+      "c": "M&V requirements depend on contract structure, not the presence of uncertainty bands."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "Which data source is most essential for developing an energy balance during a Level II audit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "12 months of utility bills plus end-use estimates from survey and spot measurements"
+      },
+      {
+        "id": "b",
+        "text": "Employee satisfaction survey results only"
+      },
+      {
+        "id": "c",
+        "text": "Architectural renderings without as-built data"
+      },
+      {
+        "id": "d",
+        "text": "Social media reviews of the building"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Energy balances reconcile total utility consumption with end uses using billing data, equipment inventories, and targeted measurements from the Level II survey.",
+    "distractorExplanations": {
+      "b": "Occupant satisfaction does not quantify end-use energy distribution.",
+      "c": "Renderings lack operational and as-built performance data needed for balances.",
+      "d": "Public reviews provide no technical energy data."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A plant receives a utility rebate for installing high-efficiency equipment. In LCC analysis, the rebate should be treated as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A penalty increasing simple payback"
+      },
+      {
+        "id": "b",
+        "text": "A reduction in initial capital cost (or equivalent incentive cash flow)"
+      },
+      {
+        "id": "c",
+        "text": "An increase in annual maintenance cost"
+      },
+      {
+        "id": "d",
+        "text": "Excluded entirely from all economic analysis"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Incentives and rebates reduce net capital investment, improving payback, NPV, and IRR and should be included in the project's cash flow analysis.",
+    "distractorExplanations": {
+      "c": "Rebates do not increase maintenance costs.",
+      "d": "Ignoring incentives overstates net cost and understates project viability.",
+      "a": "Rebates shorten rather than lengthen payback."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "IPMVP Option C (whole facility) is commonly selected when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No utility meter serves the facility"
+      },
+      {
+        "id": "b",
+        "text": "Baseline and reporting periods must be identical calendar months only with no adjustments"
+      },
+      {
+        "id": "c",
+        "text": "Multiple interactive ECMs affect the entire meter and individual isolation is impractical"
+      },
+      {
+        "id": "d",
+        "text": "Only a single lamp is replaced"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Option C uses whole-facility utility data with a calibrated model to verify savings when multiple measures interact and retrofit isolation is not feasible.",
+    "distractorExplanations": {
+      "d": "Single small measures are better suited to Option A or B isolation approaches.",
+      "a": "Option C requires facility-level meter data.",
+      "b": "Option C allows routine adjustments for weather, occupancy, and other independent variables."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A facility energy policy mandates purchase of ENERGY STAR certified office equipment. This policy lever primarily reduces:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Structural wind loads on the envelope"
+      },
+      {
+        "id": "b",
+        "text": "City property tax assessments automatically"
+      },
+      {
+        "id": "c",
+        "text": "Natural gas combustion in the boiler room only"
+      },
+      {
+        "id": "d",
+        "text": "Plug load and office equipment energy consumption"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "ENERGY STAR equipment standards target efficient plug loads for computers, monitors, copiers, and similar devices covered by the program.",
+    "distractorExplanations": {
+      "a": "Equipment procurement policies do not address structural wind loading.",
+      "b": "Tax assessments are unrelated to equipment efficiency procurement rules.",
+      "c": "Office equipment policies do not directly affect boiler fuel use."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "An auditor finds that production increased 20% after a lighting retrofit while energy use fell 10%. For fair savings reporting, the energy manager should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Adjust the baseline for production or other relevant independent variables in the M&V plan"
+      },
+      {
+        "id": "b",
+        "text": "Ignore the retrofit because production changed"
+      },
+      {
+        "id": "c",
+        "text": "Use only the post-retrofit month as the new baseline"
+      },
+      {
+        "id": "d",
+        "text": "Report 10% savings with no adjustments"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "M&V protocols require routine adjustments for variables like production, occupancy, or weather so reported savings reflect the ECM, not unrelated activity changes.",
+    "distractorExplanations": {
+      "d": "Unadjusted comparisons confound production-driven energy changes with retrofit effects.",
+      "b": "Production changes are handled through adjustment, not by discarding the project.",
+      "c": "The pre-retrofit baseline remains the reference; post data alone cannot redefine baseline."
+    },
+    "difficulty": "hard"
+  }
+]

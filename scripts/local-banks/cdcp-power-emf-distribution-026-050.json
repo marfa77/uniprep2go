@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Load bank testing of a generator verifies:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Engine and alternator performance under rated load and transfer stability"
+      },
+      {
+        "id": "b",
+        "text": "Only paint thickness"
+      },
+      {
+        "id": "c",
+        "text": "Software API latency"
+      },
+      {
+        "id": "d",
+        "text": "Office carpet wear"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Loaded tests confirm fuel, cooling, and electrical output under realistic conditions.",
+    "distractorExplanations": {
+      "b": "Cosmetic checks are insufficient.",
+      "c": "API latency is IT testing.",
+      "d": "Carpet wear is unrelated."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Concurrent maintenance on 2N power requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Procedures ensuring the remaining path carries load while one path is isolated"
+      },
+      {
+        "id": "b",
+        "text": "Shutting down all IT every time"
+      },
+      {
+        "id": "c",
+        "text": "Removing all breakers permanently"
+      },
+      {
+        "id": "d",
+        "text": "Disabling labeling"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Ops procedures and interlocks maintain service on the live path during work.",
+    "distractorExplanations": {
+      "b": "2N/2N designs aim to avoid full IT shutdown.",
+      "c": "Breakers are reinstalled after maintenance.",
+      "d": "Labeling aids safe isolation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Neutral-to-ground voltage rise at high harmonic loads indicates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Potential neutral conductor sizing or bonding issues needing investigation"
+      },
+      {
+        "id": "b",
+        "text": "Perfect power quality"
+      },
+      {
+        "id": "c",
+        "text": "Ideal PUE of 1.0"
+      },
+      {
+        "id": "d",
+        "text": "Successful humidity control"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Harmonic currents on the neutral can elevate voltage and heat conductors.",
+    "distractorExplanations": {
+      "b": "Elevated neutral voltage is a concern.",
+      "c": "PUE is unrelated.",
+      "d": "Humidity is environmental."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Overhead vs underfloor power distribution trade-offs include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maintenance access, clearance, and impact on airflow under raised floor"
+      },
+      {
+        "id": "b",
+        "text": "Only color preferences"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of ampacity limits"
+      },
+      {
+        "id": "d",
+        "text": "Mandatory use of DC only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Routing choice affects plenum obstruction, tap flexibility, and installation cost.",
+    "distractorExplanations": {
+      "b": "Engineering drives the decision.",
+      "c": "Ampacity limits always apply.",
+      "d": "AC remains common."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Surge protective devices (SPDs) at service entrances help:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Clamp transient overvoltages from lightning or switching events"
+      },
+      {
+        "id": "b",
+        "text": "Eliminate the need for UPS"
+      },
+      {
+        "id": "c",
+        "text": "Increase harmonics for fun"
+      },
+      {
+        "id": "d",
+        "text": "Replace generators"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "SPDs mitigate damaging voltage spikes on incoming feeders.",
+    "distractorExplanations": {
+      "b": "UPS addresses different outage types.",
+      "c": "Harmonics are undesirable.",
+      "d": "Generators provide sustained backup."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "DC power distribution at 48 V in modern racks is growing because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "It can reduce conversion stages for DC-native IT and improve efficiency in some architectures"
+      },
+      {
+        "id": "b",
+        "text": "It eliminates all safety requirements"
+      },
+      {
+        "id": "c",
+        "text": "It removes need for any monitoring"
+      },
+      {
+        "id": "d",
+        "text": "It replaces all fire systems"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "HVDC/48 V architectures target fewer conversions for compatible loads.",
+    "distractorExplanations": {
+      "b": "DC has significant safety and code requirements.",
+      "c": "Monitoring remains critical.",
+      "d": "Fire protection is independent."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Power quality monitoring captures metrics such as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Voltage sag/swell, THD, frequency deviation, and power factor"
+      },
+      {
+        "id": "b",
+        "text": "Only cafeteria noise"
+      },
+      {
+        "id": "c",
+        "text": "Lobby plant height"
+      },
+      {
+        "id": "d",
+        "text": "Rack paint gloss"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "PQ meters support correlation with IT errors and equipment stress.",
+    "distractorExplanations": {
+      "b": "Irrelevant metrics.",
+      "c": "Irrelevant.",
+      "d": "Irrelevant."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Maintenance bypass on a UPS allows:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Routing utility directly around the UPS module for service while risking reduced conditioning"
+      },
+      {
+        "id": "b",
+        "text": "Permanent removal of all protection"
+      },
+      {
+        "id": "c",
+        "text": "Automatic PUE reduction to 0.5"
+      },
+      {
+        "id": "d",
+        "text": "Cooling tower cleaning"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Bypass paths enable safe UPS maintenance with operational risk controls.",
+    "distractorExplanations": {
+      "b": "Bypass is temporary for service.",
+      "c": "PUE is not changed by bypass magically.",
+      "d": "Cooling maintenance is separate."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Cable sizing for feeders considers:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ampacity, voltage drop, and future load growth"
+      },
+      {
+        "id": "b",
+        "text": "Only shortest physical path regardless of drop"
+      },
+      {
+        "id": "c",
+        "text": "Random wire gauge selection"
+      },
+      {
+        "id": "d",
+        "text": "Fiber strand count"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Conductors must carry current within temperature limits and acceptable voltage drop.",
+    "distractorExplanations": {
+      "b": "Excessive drop harms equipment performance.",
+      "c": "Gauge must be engineered.",
+      "d": "Fiber count is network design."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "EMI from variable frequency drives (VFDs) on cooling plant can affect:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nearby sensitive analog/network circuits if filtering and routing are inadequate"
+      },
+      {
+        "id": "b",
+        "text": "Only structural steel yield strength"
+      },
+      {
+        "id": "c",
+        "text": "Cafeteria menus"
+      },
+      {
+        "id": "d",
+        "text": "Generator fuel polishing only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "VFD switching produces harmonics and EMI requiring proper filters and separation.",
+    "distractorExplanations": {
+      "b": "Structural steel is unaffected.",
+      "c": "Irrelevant.",
+      "d": "Fuel polishing is unrelated."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Arc flash hazard analysis in electrical rooms determines:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Incident energy, required PPE, and safe work boundaries"
+      },
+      {
+        "id": "b",
+        "text": "Rack U heights"
+      },
+      {
+        "id": "c",
+        "text": "Patch cable colors only"
+      },
+      {
+        "id": "d",
+        "text": "Humidity setpoints"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Arc flash studies protect personnel during energized work.",
+    "distractorExplanations": {
+      "b": "Rack sizing is IT layout.",
+      "c": "Patch colors are minor documentation.",
+      "d": "Humidity is HVAC."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Redundant utility feeds from separate substations provide:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Diversity against single utility failure points upstream of the site"
+      },
+      {
+        "id": "b",
+        "text": "Elimination of all outages"
+      },
+      {
+        "id": "c",
+        "text": "No need for on-site generation ever"
+      },
+      {
+        "id": "d",
+        "text": "Automatic Tier IV certification"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Dual feeds improve utility-side resilience but still need on-site backup for full continuity.",
+    "distractorExplanations": {
+      "b": "Outages can still occur downstream or on both feeds in extreme events.",
+      "c": "Generation may still be required by tier objectives.",
+      "d": "Tier rating requires holistic design."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Ground fault detection on UPS output helps:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Identify insulation faults before they escalate to outages or safety hazards"
+      },
+      {
+        "id": "b",
+        "text": "Measure PUE directly"
+      },
+      {
+        "id": "c",
+        "text": "Control CRAH fans"
+      },
+      {
+        "id": "d",
+        "text": "Patch fiber cables"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Monitoring ground leakage supports early maintenance on feeders and PDUs.",
+    "distractorExplanations": {
+      "b": "PUE uses energy metering.",
+      "c": "CRAH control is BMS/HVAC.",
+      "d": "Fiber patching is network."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Capacity planning for rack kW should include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nameplate vs actual draw, inrush, and phase balance across PDUs"
+      },
+      {
+        "id": "b",
+        "text": "Only label printer capacity"
+      },
+      {
+        "id": "c",
+        "text": "Ignoring redundant feeds"
+      },
+      {
+        "id": "d",
+        "text": "Assuming zero growth forever"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Planning prevents overloads and ensures balanced three-phase loading.",
+    "distractorExplanations": {
+      "b": "Label printers are trivial load.",
+      "c": "Redundant feeds affect available capacity per path.",
+      "d": "Growth must be forecast."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Shielded power cable may be used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Limit radiated EMI in sensitive environments"
+      },
+      {
+        "id": "b",
+        "text": "Eliminate all ampacity derating"
+      },
+      {
+        "id": "c",
+        "text": "Replace grounding"
+      },
+      {
+        "id": "d",
+        "text": "Store diesel"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Shielding contains electric fields around conductors.",
+    "distractorExplanations": {
+      "b": "Derating may still apply especially when bundled.",
+      "c": "Shield bonds to ground; does not replace system ground.",
+      "d": "Fuel storage is tanks."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Black start capability refers to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Starting generation without reliance on external grid power"
+      },
+      {
+        "id": "b",
+        "text": "Turning off all lighting"
+      },
+      {
+        "id": "c",
+        "text": "Deleting logs"
+      },
+      {
+        "id": "d",
+        "text": "Painting switchgear black"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Black start is needed when the grid is down and plants must self-energize.",
+    "distractorExplanations": {
+      "b": "Lighting control is unrelated.",
+      "c": "Log deletion is unrelated.",
+      "d": "Cosmetic painting is unrelated."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Coordination of overcurrent protective devices ensures:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The device nearest the fault opens first without unnecessary upstream trips"
+      },
+      {
+        "id": "b",
+        "text": "All breakers trip simultaneously always"
+      },
+      {
+        "id": "c",
+        "text": "No breakers ever trip"
+      },
+      {
+        "id": "d",
+        "text": "Generators never start"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Selective coordination limits outage scope to the faulted section.",
+    "distractorExplanations": {
+      "b": "Simultaneous trips broaden outages.",
+      "c": "Protection must trip on faults.",
+      "d": "Generator start is separate logic."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Monitoring DC bus voltage in a UPS indicates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Health of rectifier/charger and battery float conditions"
+      },
+      {
+        "id": "b",
+        "text": "Fiber optic loss"
+      },
+      {
+        "id": "c",
+        "text": "Chilled water temperature only"
+      },
+      {
+        "id": "d",
+        "text": "Visitor count"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "DC bus stability reflects charging and inverter input health.",
+    "distractorExplanations": {
+      "b": "Fiber loss is optical testing.",
+      "c": "Water temp is HVAC.",
+      "d": "Visitor count is access control."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Power capping in virtualized clusters can:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Limit server power draw to protect facility headroom during stress"
+      },
+      {
+        "id": "b",
+        "text": "Eliminate UPS requirements"
+      },
+      {
+        "id": "c",
+        "text": "Increase facility kW without limits"
+      },
+      {
+        "id": "d",
+        "text": "Disable all cooling"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Software power caps help align IT demand with available infrastructure.",
+    "distractorExplanations": {
+      "b": "UPS still needed for continuity.",
+      "c": "Caps limit draw, not increase without limit.",
+      "d": "Cooling must continue."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Transient voltage from utility capacitor switching may be mitigated by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "UPS conditioning, surge devices, and utility coordination"
+      },
+      {
+        "id": "b",
+        "text": "Removing all SPDs"
+      },
+      {
+        "id": "c",
+        "text": "Opening all rack doors"
+      },
+      {
+        "id": "d",
+        "text": "Increasing harmonic generation"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Combined mitigation limits nuisance IT reboots from switching transients.",
+    "distractorExplanations": {
+      "b": "Removing SPDs worsens exposure.",
+      "c": "Doors do not affect utility switching.",
+      "d": "Harmonics worsen power quality."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "A power distribution hierarchy typically flows:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Utility → MV switchgear → transformer → LV switchboard → UPS → PDU → rack"
+      },
+      {
+        "id": "b",
+        "text": "Rack → utility directly without protection"
+      },
+      {
+        "id": "c",
+        "text": "PDU → utility → generator only"
+      },
+      {
+        "id": "d",
+        "text": "Fiber patch panel → UPS → chiller"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Standard hierarchy steps voltage down and conditions power before rack delivery.",
+    "distractorExplanations": {
+      "b": "Protection and transformation are required.",
+      "c": "Order is incorrect.",
+      "d": "Fiber is not in electrical hierarchy."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "EMF exposure assessments in staff work areas compare measured fields to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Occupational exposure guidelines and equipment vendor limits"
+      },
+      {
+        "id": "b",
+        "text": "Cafeteria calorie charts"
+      },
+      {
+        "id": "c",
+        "text": "Social media trends"
+      },
+      {
+        "id": "d",
+        "text": "Movie ratings"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Assessments ensure worker safety relative to recognized limits.",
+    "distractorExplanations": {
+      "b": "Irrelevant reference.",
+      "c": "Irrelevant.",
+      "d": "Irrelevant."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Island mode operation during a grid outage means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "On-site generation feeds facility loads isolated from the utility"
+      },
+      {
+        "id": "b",
+        "text": "All IT is shut down permanently"
+      },
+      {
+        "id": "c",
+        "text": "Utility and generator are tied without controls"
+      },
+      {
+        "id": "d",
+        "text": "Only battery-less PDUs run"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Islanded plants sustain critical loads while disconnected from grid.",
+    "distractorExplanations": {
+      "b": "Island mode sustains load, not permanent shutdown.",
+      "c": "Paralleling requires synchronization.",
+      "d": "PDUs distribute whatever source is online."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Retrofit adding high-density GPU racks to a legacy row most often requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Revalidation of PDU, whip, and upstream breaker capacity plus cooling"
+      },
+      {
+        "id": "b",
+        "text": "Only new keyboard trays"
+      },
+      {
+        "id": "c",
+        "text": "Removing fire detection"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring phase balance"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "High kW racks can exceed original design; electrical and thermal must be revalidated.",
+    "distractorExplanations": {
+      "b": "Keyboard trays do not address kW.",
+      "c": "Fire detection remains mandatory.",
+      "d": "Phase imbalance can trip breakers and overheat neutrals."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "power-emf-distribution",
+    "prompt": "Voltage sag ride-through for IT equipment is primarily provided by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "UPS systems sized for required duration and transfer scenarios"
+      },
+      {
+        "id": "b",
+        "text": "Longer patch cables"
+      },
+      {
+        "id": "c",
+        "text": "Painting PDUs"
+      },
+      {
+        "id": "d",
+        "text": "Removing surge protective devices"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "UPS bridges sags and outages while generators start or faults clear.",
+    "distractorExplanations": {
+      "b": "Cable length does not buffer voltage sags.",
+      "c": "Cosmetic changes do not affect ride-through.",
+      "d": "SPDs complement but do not replace UPS ride-through."
+    },
+    "difficulty": "easy"
+  }
+]

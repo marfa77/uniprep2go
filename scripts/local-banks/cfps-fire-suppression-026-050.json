@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "fire-suppression",
+    "prompt": "NFPA 11 covers:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Residential dwelling unit sprinkler retrofit only"
+      },
+      {
+        "id": "b",
+        "text": "Low-, medium-, and high-expansion foam systems for Class B and certain special hazards"
+      },
+      {
+        "id": "c",
+        "text": "Carbon dioxide total flooding concentration tables exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Kitchen hood grease duct welding procedures only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "NFPA 11 addresses foam water solution proportioning, discharge devices, and system design for flammable liquid hazards.",
+    "distractorExplanations": {
+      "a": "Dwelling sprinklers are NFPA 13D.",
+      "c": "Dwelling sprinklers are NFPA 13D.",
+      "d": "Kitchen systems are NFPA 96 with listed UL 300 appliances."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "A balanced pressure foam proportioning system maintains:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Higher water pressure than concentrate by exactly 50 psi at all flows"
+      },
+      {
+        "id": "b",
+        "text": "Zero foam concentrate use during system flushing"
+      },
+      {
+        "id": "c",
+        "text": "Equal pressure on foam concentrate and water inlets to the proportioner for accurate metering"
+      },
+      {
+        "id": "d",
+        "text": "Separate fire pump curves for each foam chamber without reference to water supply"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Balanced pressure systems stabilize proportioning across flow ranges — common in aircraft hangar and tank farm protection.",
+    "distractorExplanations": {
+      "a": "Equal, not fixed 50 psi differential, is the design goal.",
+      "b": "Pump sizing still relates to combined foam solution demand.",
+      "d": "Pump sizing still relates to combined foam solution demand."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "High-expansion foam is particularly suited to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Precision discharge on energized computer circuit boards"
+      },
+      {
+        "id": "b",
+        "text": "Ordinary combustible paper storage without flammable liquids"
+      },
+      {
+        "id": "c",
+        "text": "Subsurface injection into underground gasoline tanks exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Filling large volumes such as warehouses or LNG impoundments to separate fuel from air"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "High-expansion foam generates voluminous bubbles for total flooding of enclosures and vapor suppression.",
+    "distractorExplanations": {
+      "a": "Energized electronics need non-conductive agents, not high-expansion foam flooding.",
+      "b": "Class A paper may use sprinklers; high-expansion targets vapor/air separation.",
+      "c": "Class A paper may use sprinklers; high-expansion targets vapor/air separation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "NFPA 12 addresses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Carbon dioxide fire extinguishing systems including total flooding and local application"
+      },
+      {
+        "id": "b",
+        "text": "Wet chemical kitchen suppression only"
+      },
+      {
+        "id": "c",
+        "text": "Standpipe hose thread standards exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Smoke control fan wiring in atriums only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "NFPA 12 covers CO2 system design, concentrations, safety lockouts, and ventilation warnings for occupied areas.",
+    "distractorExplanations": {
+      "b": "Standpipes are NFPA 14.",
+      "c": "Standpipes are NFPA 14.",
+      "d": "Smoke control is NFPA 92 series."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "Before discharging CO2 into an normally occupied enclosure, NFPA 12 requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No warning because CO2 is odorless and harmless to humans"
+      },
+      {
+        "id": "b",
+        "text": "Predischarge alarms and time delay or personnel accounting to allow evacuation"
+      },
+      {
+        "id": "c",
+        "text": "Immediate discharge upon any heat detector activation without delay"
+      },
+      {
+        "id": "d",
+        "text": "Manual discharge only from outside without any automatic detection"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "CO2 is asphyxiant; lockout and warning devices protect occupants from lethal oxygen displacement.",
+    "distractorExplanations": {
+      "a": "CO2 is hazardous to life at extinguishing concentrations.",
+      "c": "Automatic discharge is permitted with life safety safeguards.",
+      "d": "Automatic systems are common with required safety interlocks."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "A total flooding CO2 system design concentration depends primarily on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ceiling sprinkler density from NFPA 13 only"
+      },
+      {
+        "id": "b",
+        "text": "Number of standpipe outlets per floor"
+      },
+      {
+        "id": "c",
+        "text": "Fuel type, enclosure volume, and minimum design concentration from NFPA 12 tables"
+      },
+      {
+        "id": "d",
+        "text": "Domestic water fixture unit count"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "CO2 quantity = concentration × adjusted volume; deep-seated fires may need extended holding periods.",
+    "distractorExplanations": {
+      "a": "Sprinkler density does not size CO2 concentration.",
+      "b": "Sprinkler density does not size CO2 concentration.",
+      "d": "Plumbing fixture units are irrelevant."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "Clean agent systems covered under NFPA 2001 are characterized by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Water mist only with no gaseous phase"
+      },
+      {
+        "id": "b",
+        "text": "Dry chemical powder permanently coating all surfaces"
+      },
+      {
+        "id": "c",
+        "text": "Fuel shutoff valves exclusively without extinguishing medium"
+      },
+      {
+        "id": "d",
+        "text": "Electrically nonconductive gaseous agents that extinguish by heat absorption and/or oxygen reduction without residue"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Clean agents (HFCs, FK-5-1-12, inert gases) protect sensitive equipment in enclosures with concentration-based design.",
+    "distractorExplanations": {
+      "a": "Water mist is NFPA 750.",
+      "b": "Dry chemical leaves residue; clean agents minimize residue.",
+      "c": "Dry chemical leaves residue; clean agents minimize residue."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "Room integrity (door fan) testing for clean agent enclosures verifies:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sufficient agent retention time at design concentration by limiting excessive leakage"
+      },
+      {
+        "id": "b",
+        "text": "Sprinkler coverage in adjacent corridors"
+      },
+      {
+        "id": "c",
+        "text": "Structural fire resistance rating of exterior walls only"
+      },
+      {
+        "id": "d",
+        "text": "Adequate lighting levels for maintenance staff"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Hold time ensures fire does not reignite; excessive leakage requires sealing or higher agent quantity.",
+    "distractorExplanations": {
+      "b": "Fire resistance is building code; integrity is leakage for agent hold.",
+      "c": "Lighting is unrelated to agent retention.",
+      "d": "Sprinkler coverage in corridors is separate protection."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "Inergen (inert gas blend) extinguishing systems reduce oxygen concentration to approximately:",
+    "options": [
+      {
+        "id": "a",
+        "text": "5% oxygen matching deep-sea diving mixtures"
+      },
+      {
+        "id": "b",
+        "text": "12–15% by volume, below combustion support for many fuels while permitting human exposure briefly during egress"
+      },
+      {
+        "id": "c",
+        "text": "21% oxygen with no change from ambient air"
+      },
+      {
+        "id": "d",
+        "text": "0% oxygen achieved by vacuuming the room"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Inert agents lower O₂ to extinguishing level while staying above immediate lethality for brief exposure — still requiring evacuation.",
+    "distractorExplanations": {
+      "a": "5% is immediately dangerous to life.",
+      "c": "21% is normal air; no extinguishment.",
+      "d": "Vacuum is not a clean agent deployment method."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "NFPA 17 covers:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Foam proportioning for municipal hydrants only"
+      },
+      {
+        "id": "b",
+        "text": "Residential 13D sprinkler pipe sizing only"
+      },
+      {
+        "id": "c",
+        "text": "Dry chemical extinguishing systems for local application and total flooding of specific hazards"
+      },
+      {
+        "id": "d",
+        "text": "Emergency voice evacuation intelligibility testing"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "NFPA 17 addresses dry chemical hardware, hazards, and recharge for flammable liquid and gas applications.",
+    "distractorExplanations": {
+      "a": "Foam proportioning is NFPA 11.",
+      "b": "Voice intelligibility is NFPA 72/Annex contexts.",
+      "d": "Voice intelligibility is NFPA 72/Annex contexts."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "NFPA 17A applies to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "High-pressure CO2 localized rotor cooling"
+      },
+      {
+        "id": "b",
+        "text": "Underground diesel fuel tank cathodic protection"
+      },
+      {
+        "id": "c",
+        "text": "Smoke detector spacing in sleeping rooms"
+      },
+      {
+        "id": "d",
+        "text": "Wet chemical extinguishing systems, including many commercial kitchen hood applications"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "NFPA 17A covers wet chemical systems that saponify cooking oils — paired with UL 300 listed appliances.",
+    "distractorExplanations": {
+      "a": "CO2 is NFPA 12.",
+      "b": "Cathodic protection is corrosion engineering.",
+      "c": "Cathodic protection is corrosion engineering."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "A UL 300-listed kitchen fire suppression system requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nozzles protecting hood, plenum, and duct; fusible links or detection; manual pull; fuel/power shutoff interlocks"
+      },
+      {
+        "id": "b",
+        "text": "Only a single water sprinkler above the fryer with no chemical agent"
+      },
+      {
+        "id": "c",
+        "text": "Discharge of halon 1301 as the only permitted agent"
+      },
+      {
+        "id": "d",
+        "text": "Annual testing by disabling fuel shutoff interlocks permanently"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Modern cooking oils need wet chemical saponification; UL 300 reflects current appliance and fuel loads.",
+    "distractorExplanations": {
+      "b": "Halon is not used in new kitchen systems.",
+      "c": "Halon is not used in new kitchen systems.",
+      "d": "Fuel/power shutoff interlocks must remain functional."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "The primary extinguishing mechanism of wet chemical kitchen systems on grease fires is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dilution of grease to non-flammable concentrations with water only"
+      },
+      {
+        "id": "b",
+        "text": "Saponification forming a foam blanket that separates grease from oxygen and cools surfaces"
+      },
+      {
+        "id": "c",
+        "text": "Displacement of all oxygen in the entire building by CO2"
+      },
+      {
+        "id": "d",
+        "text": "Increasing combustion temperature to burn grease completely"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Wet chemicals convert burning fat to soap-like foam; water-only on hot grease can spread fire.",
+    "distractorExplanations": {
+      "a": "Water alone can cause grease fire spread and is insufficient.",
+      "c": "Building-wide CO2 flooding is not kitchen system design.",
+      "d": "Raising temperature fuels combustion."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "Antifreeze loops in sprinkler systems per NFPA 13 must use:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Automotive ethylene glycol without listing regardless of concentration"
+      },
+      {
+        "id": "b",
+        "text": "Salt water brine as a permanent substitute in all climates"
+      },
+      {
+        "id": "c",
+        "text": "Listed antifreeze solutions meeting concentration and corrosion limits for the minimum use temperature"
+      },
+      {
+        "id": "d",
+        "text": "Any glycol mixture above 70% without engineering review"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Listed antifreeze protects small unheated portions; recent editions restrict unlisted glycols due to flammability and corrosion.",
+    "distractorExplanations": {
+      "a": "Automotive antifreeze is not automatically acceptable.",
+      "b": "Automotive antifreeze is not automatically acceptable.",
+      "d": "High concentrations require compliance with listing and hazard review."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "A pressure relief valve on a wet sprinkler system riser protects against:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Loss of all system pressure during normal fire flow"
+      },
+      {
+        "id": "b",
+        "text": "Corrosion inside dry pipe valves only"
+      },
+      {
+        "id": "c",
+        "text": "Excessive airflow in preaction supervisory piping"
+      },
+      {
+        "id": "d",
+        "text": "Trap pressure from thermal expansion of water when the system is isolated and heated"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Heated water expands; without relief, trapped pressure can damage fittings — common above check valves.",
+    "distractorExplanations": {
+      "a": "Fire flow reduces pressure; relief addresses over-pressurization.",
+      "b": "Dry valve corrosion is maintenance, not thermal expansion.",
+      "c": "Dry valve corrosion is maintenance, not thermal expansion."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "The fire department connection (FDC) on a sprinkler/standpipe system:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Allows the fire service to supplement water into the system at pumped pressure"
+      },
+      {
+        "id": "b",
+        "text": "Replaces the water supply tank volume calculation entirely"
+      },
+      {
+        "id": "c",
+        "text": "Serves as the primary drain point for all annual trip tests"
+      },
+      {
+        "id": "d",
+        "text": "Must be located inside the fire pump room exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "FDC inlets provide supplemental attack water; signage and threading must match local FD practice.",
+    "distractorExplanations": {
+      "b": "Drains are separate; FDC is an inlet.",
+      "c": "Drains are separate; FDC is an inlet.",
+      "d": "FDC is typically exterior accessible to apparatus."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "A forward-flow test of a backflow preventer on a fire protection supply verifies:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paint adhesion on exterior standpipe cabinets"
+      },
+      {
+        "id": "b",
+        "text": "That the assembly allows required fire flow without excessive pressure loss while preventing backflow"
+      },
+      {
+        "id": "c",
+        "text": "Voice evacuation audibility on the opposite wing"
+      },
+      {
+        "id": "d",
+        "text": "Sprinkler bulb color coding in storage"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Annual forward-flow ensures the backflow device does not choke fire demand — critical for combined domestic/fire services.",
+    "distractorExplanations": {
+      "a": "Bulb color is manufacturer temperature rating, not backflow test.",
+      "c": "Bulb color is manufacturer temperature rating, not backflow test.",
+      "d": "Cabinet paint is unrelated."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "Extra Hazard Group 2 occupancies per NFPA 13 include examples such as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Light office paper storage in open cubicles only"
+      },
+      {
+        "id": "b",
+        "text": "Sleeping rooms in one- and two-family dwellings"
+      },
+      {
+        "id": "c",
+        "text": "Flammable liquid spraying, plastics processing, and other high heat release operations"
+      },
+      {
+        "id": "d",
+        "text": "Parking garages with only passenger vehicles and no fuel dispensing"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "EH2 has high heat release and rapid fire growth; design density 0.40 gpm/ft² over 2,500 ft² is typical baseline.",
+    "distractorExplanations": {
+      "a": "Office cubicles are usually light or ordinary hazard.",
+      "b": "Ordinary parking may be OH1/OH2 depending on fuel load.",
+      "d": "Ordinary parking may be OH1/OH2 depending on fuel load."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "Sidewall sprinklers are typically used where:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only underground vault protection is required"
+      },
+      {
+        "id": "b",
+        "text": "Deluge open nozzles are prohibited by code"
+      },
+      {
+        "id": "c",
+        "text": "Standpipe Class II hose stations replace all ceiling sprinklers"
+      },
+      {
+        "id": "d",
+        "text": "Pendent sprinklers cannot be installed due to obstructions or architectural limits along walls"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Sidewall sprinklers have specific coverage limits and must be listed for sidewall application.",
+    "distractorExplanations": {
+      "a": "Underground vaults use different suppression strategies.",
+      "b": "Deluge is separate; sidewalls are closed heat-responsive heads.",
+      "c": "Deluge is separate; sidewalls are closed heat-responsive heads."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "The main drain test on a sprinkler system riser is performed to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verify water supply adequacy and identify obstructions by measuring flow at the drain connection"
+      },
+      {
+        "id": "b",
+        "text": "Calibrate heat detector spacing in adjacent rooms"
+      },
+      {
+        "id": "c",
+        "text": "Prove foam concentrate viscosity annually"
+      },
+      {
+        "id": "d",
+        "text": "Set clean agent design concentration automatically"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Main drain flow compared to acceptance baseline indicates supply deterioration or valve obstruction.",
+    "distractorExplanations": {
+      "b": "Foam viscosity has separate procedures.",
+      "c": "Foam viscosity has separate procedures.",
+      "d": "Clean agent concentration uses agent quantity and volume."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "NFPA 13R systems in residential occupancies up to four stories differ from NFPA 13 in that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "13R requires ESFR in every closet and bathroom without exception"
+      },
+      {
+        "id": "b",
+        "text": "13R permits omissions of sprinklers in certain areas and has distinct design objectives focused on life safety"
+      },
+      {
+        "id": "c",
+        "text": "13R mandates double-interlock preaction throughout"
+      },
+      {
+        "id": "d",
+        "text": "13R eliminates all fire department connection requirements nationally"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "NFPA 13R balances cost and life safety in residential mid-rise; not equivalent to full 13 commodity protection.",
+    "distractorExplanations": {
+      "a": "ESFR is storage protection, not 13R residential.",
+      "c": "Preaction is special hazard protection, not 13R default.",
+      "d": "FDC requirements depend on codes and AHJ; 13R does not universally eliminate FDC."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "A looped automatic sprinkler feed main is hydraulically advantageous because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "It eliminates the need for any elevation head calculation"
+      },
+      {
+        "id": "b",
+        "text": "It guarantees all sprinklers operate simultaneously"
+      },
+      {
+        "id": "c",
+        "text": "It can supply water from two directions, reducing friction loss to remote branches"
+      },
+      {
+        "id": "d",
+        "text": "It replaces listed sprinklers with open pipes"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Looping provides redundancy of path; calculations still determine realistic simultaneous flows.",
+    "distractorExplanations": {
+      "a": "Elevation head remains in calculations.",
+      "b": "Elevation head remains in calculations.",
+      "d": "Open pipes would be deluge, not looped wet mains."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "Water mist systems per NFPA 750 differ from standard sprinklers primarily by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Using only dry chemical powder in a water carrier"
+      },
+      {
+        "id": "b",
+        "text": "Requiring no water supply because mist is generated chemically"
+      },
+      {
+        "id": "c",
+        "text": "Operating exclusively at 1,000 psi without listing"
+      },
+      {
+        "id": "d",
+        "text": "Discharging fine water droplets with high surface area for cooling and oxygen displacement at lower total water flow"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Water mist is a distinct technology with listed hardware and applications in machinery and heritage spaces.",
+    "distractorExplanations": {
+      "a": "Dry chemical is separate technology.",
+      "b": "Water mist still requires water supply.",
+      "c": "Water mist still requires water supply."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "Hazard classification under NFPA 13 for storage occupancies considers:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Commodity class, storage height, pallet type, and aisle width — not office occupancy labels alone"
+      },
+      {
+        "id": "b",
+        "text": "Only the building's historical landmark designation"
+      },
+      {
+        "id": "c",
+        "text": "Interior designer color palette of rack uprights"
+      },
+      {
+        "id": "d",
+        "text": "Number of parking spaces in the site plan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Storage chapters classify commodities (Class I–IV, plastics, idle pallets) to select design criteria.",
+    "distractorExplanations": {
+      "b": "Rack paint color is irrelevant.",
+      "c": "Rack paint color is irrelevant.",
+      "d": "Parking counts do not set storage commodity class."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-suppression",
+    "prompt": "When designing sprinklers for high-ceiling storage with solid shelving, the designer must:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use light hazard spacing because the ceiling is far from commodities"
+      },
+      {
+        "id": "b",
+        "text": "Apply obstructed storage rules, potentially increasing sprinkler density or adding in-rack protection"
+      },
+      {
+        "id": "c",
+        "text": "Remove all ceiling sprinklers and rely on hose streams only"
+      },
+      {
+        "id": "d",
+        "text": "Ignore shelving because ESFR always suppresses without analysis"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Solid shelving blocks ceiling water penetration; NFPA 13 storage sections require enhanced protection.",
+    "distractorExplanations": {
+      "a": "Greater ceiling height does not automatically reduce hazard.",
+      "c": "Hose streams supplement but do not replace required automatic sprinklers.",
+      "d": "ESFR applicability depends on commodity, height, and configuration analysis."
+    },
+    "difficulty": "hard"
+  }
+]

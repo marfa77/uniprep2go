@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "operations-management",
+    "prompt": "Change management in a data centre requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Documented approval, risk assessment, rollback, and communication before implementation"
+      },
+      {
+        "id": "b",
+        "text": "Ad-hoc changes without records"
+      },
+      {
+        "id": "c",
+        "text": "Changes only announced after outage"
+      },
+      {
+        "id": "d",
+        "text": "Elimination of maintenance windows"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Formal change control reduces unplanned incidents.",
+    "distractorExplanations": {
+      "b": "Undocumented changes cause outages.",
+      "c": "Prior communication required.",
+      "d": "Windows still planned."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Incident management priority should consider:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Safety, customer impact, scope, and SLA exposure"
+      },
+      {
+        "id": "b",
+        "text": "Only ticket age color"
+      },
+      {
+        "id": "c",
+        "text": "Random selection"
+      },
+      {
+        "id": "d",
+        "text": "Employee favorite rack"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Prioritization aligns response with business and safety risk.",
+    "distractorExplanations": {
+      "b": "Age alone insufficient.",
+      "c": "Not random.",
+      "d": "Favorites irrelevant."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Capacity management tracks:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Power, cooling, space, and network headroom against forecasted demand"
+      },
+      {
+        "id": "b",
+        "text": "Only cafeteria seats"
+      },
+      {
+        "id": "c",
+        "text": "Desktop wallpaper trends"
+      },
+      {
+        "id": "d",
+        "text": "Lobby plant count only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Capacity planning prevents stranded resources and overload.",
+    "distractorExplanations": {
+      "b": "Irrelevant metrics.",
+      "c": "Irrelevant.",
+      "d": "Irrelevant."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "A runbook for generator failover should include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pre-checks, start sequence, load transfer steps, and notification tree"
+      },
+      {
+        "id": "b",
+        "text": "Only jokes"
+      },
+      {
+        "id": "c",
+        "text": "Unwritten tribal knowledge only"
+      },
+      {
+        "id": "d",
+        "text": "Deletion of logs"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Documented procedures ensure consistent execution under stress.",
+    "distractorExplanations": {
+      "b": "Humor not operational content.",
+      "c": "Documentation must be explicit.",
+      "d": "Logs aid post-incident review."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Maintenance windows for Tier III facilities aim to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perform work on redundant path without customer impact"
+      },
+      {
+        "id": "b",
+        "text": "Shut down all systems always"
+      },
+      {
+        "id": "c",
+        "text": "Avoid all documentation"
+      },
+      {
+        "id": "d",
+        "text": "Disable monitoring"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Concurrent maintainability supports planned work on isolated paths.",
+    "distractorExplanations": {
+      "b": "Goal is continuity.",
+      "c": "Documentation mandatory.",
+      "d": "Monitoring stays on."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "SLA reporting for colocation often includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Availability, response times, and planned maintenance exclusions"
+      },
+      {
+        "id": "b",
+        "text": "Only marketing slogans"
+      },
+      {
+        "id": "c",
+        "text": "Employee gym hours"
+      },
+      {
+        "id": "d",
+        "text": "Unlimited liability-free outages"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "SLAs define measurable service commitments and exclusions.",
+    "distractorExplanations": {
+      "b": "Must be measurable.",
+      "c": "Irrelevant.",
+      "d": "Contracts define limits."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Root cause analysis (RCA) after a major incident should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Identify contributing factors and corrective actions to prevent recurrence"
+      },
+      {
+        "id": "b",
+        "text": "Blame individuals without process review"
+      },
+      {
+        "id": "c",
+        "text": "Be skipped to save time"
+      },
+      {
+        "id": "d",
+        "text": "Delete all evidence"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "RCA focuses on systemic fixes and lessons learned.",
+    "distractorExplanations": {
+      "b": "Blame culture hides issues.",
+      "c": "RCA is best practice.",
+      "d": "Evidence preserved."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Shift handover logs should capture:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Open work orders, alarms, abnormal conditions, and scheduled changes"
+      },
+      {
+        "id": "b",
+        "text": "Only weather jokes"
+      },
+      {
+        "id": "c",
+        "text": "Personal gossip"
+      },
+      {
+        "id": "d",
+        "text": "Nothing—verbal only always"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Structured handover maintains situational awareness.",
+    "distractorExplanations": {
+      "b": "Irrelevant content.",
+      "c": "Unprofessional.",
+      "d": "Written record preferred."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Environmental alarm thresholds should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tiered warning/critical setpoints aligned with equipment classes"
+      },
+      {
+        "id": "b",
+        "text": "Disabled to reduce noise"
+      },
+      {
+        "id": "c",
+        "text": "Set to impossible values"
+      },
+      {
+        "id": "d",
+        "text": "Only checked annually"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Graduated alarms enable response before damage.",
+    "distractorExplanations": {
+      "b": "Disabling risks missed events.",
+      "c": "Impossible thresholds useless.",
+      "d": "Continuous monitoring required."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "ITIL-style service management in data centres emphasizes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Repeatable processes for incidents, changes, and capacity"
+      },
+      {
+        "id": "b",
+        "text": "No processes"
+      },
+      {
+        "id": "c",
+        "text": "Only hardware sales"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating customers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Process maturity improves reliability and auditability.",
+    "distractorExplanations": {
+      "b": "Processes are core.",
+      "c": "Operations focus.",
+      "d": "Customers central."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Concurrently maintainable UPS maintenance requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Load on alternate path, lockout/tagout, and verified isolation"
+      },
+      {
+        "id": "b",
+        "text": "Full facility blackout"
+      },
+      {
+        "id": "c",
+        "text": "Removing all breakers permanently"
+      },
+      {
+        "id": "d",
+        "text": "Skipping notifications"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Safe isolation procedures protect staff and load.",
+    "distractorExplanations": {
+      "b": "Avoided in Tier III+ ops.",
+      "c": "Temporary removal only.",
+      "d": "Stakeholders must be informed."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Spare parts strategy for critical infrastructure includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stocking per criticality, lead time, and mean time to repair"
+      },
+      {
+        "id": "b",
+        "text": "Zero spares always"
+      },
+      {
+        "id": "c",
+        "text": "Only office supplies"
+      },
+      {
+        "id": "d",
+        "text": "Waiting months without plan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Spares reduce downtime for long-lead components.",
+    "distractorExplanations": {
+      "b": "Risky for critical gear.",
+      "c": "Wrong inventory type.",
+      "d": "Planning required."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Vendor escort policy in white space ensures:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Third-party work is supervised and logged"
+      },
+      {
+        "id": "b",
+        "text": "Vendors roam alone always"
+      },
+      {
+        "id": "c",
+        "text": "No badge required"
+      },
+      {
+        "id": "d",
+        "text": "Tools left unattended"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Escorts reduce security and safety incidents.",
+    "distractorExplanations": {
+      "b": "Supervision typical.",
+      "c": "Badges required.",
+      "d": "Tool control required."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Energy efficiency initiatives beyond PUE include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Right-sizing airflow, raising supply temps within class, and idle server consolidation"
+      },
+      {
+        "id": "b",
+        "text": "Running all CRACs at 100% always"
+      },
+      {
+        "id": "c",
+        "text": "Removing blanking panels"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring partial loads"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Operational tuning reduces overhead energy.",
+    "distractorExplanations": {
+      "b": "Wastes fan energy.",
+      "c": "Worsens cooling efficiency.",
+      "d": "Partial load optimization matters."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Decommissioning equipment requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Power/cooling isolation, data sanitization, and asset disposal records"
+      },
+      {
+        "id": "b",
+        "text": "Leaving gear powered in place forever"
+      },
+      {
+        "id": "c",
+        "text": "Dumping storage media in trash unwiped"
+      },
+      {
+        "id": "d",
+        "text": "No CMDB update"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Secure decom prevents energy waste and data leaks.",
+    "distractorExplanations": {
+      "b": "Stranded load wastes capacity.",
+      "c": "Media must be sanitized.",
+      "d": "CMDB must reflect removals."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "MOP (Method of Procedure) documents differ from SOP by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "MOPs are task-specific step plans for a defined maintenance activity"
+      },
+      {
+        "id": "b",
+        "text": "MOPs are never written"
+      },
+      {
+        "id": "c",
+        "text": "SOPs are only for cafeterias"
+      },
+      {
+        "id": "d",
+        "text": "They are identical always"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "MOPs detail one-time or periodic technical tasks with safety checks.",
+    "distractorExplanations": {
+      "b": "Written MOPs required for risky work.",
+      "c": "SOPs cover general ops.",
+      "d": "Different purposes."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Emergency response team roles should include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Incident commander, safety officer, technical leads, and communications"
+      },
+      {
+        "id": "b",
+        "text": "Only social media intern"
+      },
+      {
+        "id": "c",
+        "text": "No defined roles"
+      },
+      {
+        "id": "d",
+        "text": "Everyone acts independently without coordination"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Clear roles reduce chaos during crises.",
+    "distractorExplanations": {
+      "b": "Insufficient staffing model.",
+      "c": "Roles mandatory.",
+      "d": "Coordination essential."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Trending PDU per-phase load helps:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Detect imbalance and plan additions before breaker trips"
+      },
+      {
+        "id": "b",
+        "text": "Eliminate need for capacity planning"
+      },
+      {
+        "id": "c",
+        "text": "Increase harmonics intentionally"
+      },
+      {
+        "id": "d",
+        "text": "Disable UPS"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Phase balance and headroom monitoring prevent unplanned outages.",
+    "distractorExplanations": {
+      "b": "Planning still needed.",
+      "c": "Harmonics harmful.",
+      "d": "UPS still required."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Customer notification for planned maintenance should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Occur within contracted lead times with impact description"
+      },
+      {
+        "id": "b",
+        "text": "Never happen"
+      },
+      {
+        "id": "c",
+        "text": "Occur only after work completes"
+      },
+      {
+        "id": "d",
+        "text": "Include shared passwords"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Advance notice meets SLA and change policies.",
+    "distractorExplanations": {
+      "b": "Notice required.",
+      "c": "Prior notice expected.",
+      "d": "Credentials never shared."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Configuration management database (CMDB) for facilities tracks:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assets, relationships, locations, and change history"
+      },
+      {
+        "id": "b",
+        "text": "Only lunch orders"
+      },
+      {
+        "id": "c",
+        "text": "Random notes"
+      },
+      {
+        "id": "d",
+        "text": "Nothing physical"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "CMDB supports impact analysis and maintenance planning.",
+    "distractorExplanations": {
+      "b": "Irrelevant.",
+      "c": "Unstructured notes insufficient.",
+      "d": "Physical assets included."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Post-incident review within 48 hours should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Document timeline, actions, gaps, and improvement items"
+      },
+      {
+        "id": "b",
+        "text": "Delete tickets"
+      },
+      {
+        "id": "c",
+        "text": "Punish without analysis"
+      },
+      {
+        "id": "d",
+        "text": "Skip if outage was small"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Timely reviews capture fresh lessons.",
+    "distractorExplanations": {
+      "b": "Records retained.",
+      "c": "Blameless learning preferred.",
+      "d": "Small incidents still teach."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Training drills for EPO and suppression aborts ensure:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Staff understand when not to activate and how to respond to alarms"
+      },
+      {
+        "id": "b",
+        "text": "Random EPO presses monthly"
+      },
+      {
+        "id": "c",
+        "text": "No training budget"
+      },
+      {
+        "id": "d",
+        "text": "Only contractors know procedures"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Misuse of EPO/suppression can cause massive outages.",
+    "distractorExplanations": {
+      "b": "EPO tests are controlled.",
+      "c": "Training funded.",
+      "d": "Internal staff must know."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Oversubscription of power in colocation means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Allocated kW sum may exceed physical capacity based on average vs peak draw policies"
+      },
+      {
+        "id": "b",
+        "text": "Unlimited kW per rack always"
+      },
+      {
+        "id": "c",
+        "text": "No monitoring needed"
+      },
+      {
+        "id": "d",
+        "text": "Generators eliminated"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Operators manage diversity factor with monitoring and burst policies.",
+    "distractorExplanations": {
+      "b": "Contracts set limits.",
+      "c": "Monitoring essential.",
+      "d": "Generation still needed."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Quality assurance for new installs includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acceptance testing against spec, as-builts, and training for ops staff"
+      },
+      {
+        "id": "b",
+        "text": "Turning on equipment without tests"
+      },
+      {
+        "id": "c",
+        "text": "Skipping as-built documentation"
+      },
+      {
+        "id": "d",
+        "text": "Hiding O&M manuals from operations"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "QA confirms design intent before handover to operations.",
+    "distractorExplanations": {
+      "b": "Acceptance testing validates performance and safety.",
+      "c": "As-builts are required for future changes.",
+      "d": "O&M manuals support safe operation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "operations-management",
+    "prompt": "Remote hands services scope typically covers:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Physical tasks like reboots, cable swaps, and media handling per ticket"
+      },
+      {
+        "id": "b",
+        "text": "Writing customer application code"
+      },
+      {
+        "id": "c",
+        "text": "Unlimited free consulting"
+      },
+      {
+        "id": "d",
+        "text": "Bypassing security policies"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Remote hands execute defined physical work under customer direction.",
+    "distractorExplanations": {
+      "b": "App dev out of scope.",
+      "c": "Scoped billable service.",
+      "d": "Security must hold."
+    },
+    "difficulty": "easy"
+  }
+]

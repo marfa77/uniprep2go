@@ -1,0 +1,60 @@
+[
+  {
+    "id": "leed-ap-bd-c-readiness-check-sites-water-044",
+    "topicId": "sites-water",
+    "prompt": "A warehouse and distribution center must manage stormwater on a 25-acre site with compacted soils, 400,000 sf of roof area, and 300,000 sf of impervious truck and employee parking. The region receives intense summer storms with high peak flows. The team wants a distributed low-impact design that treats runoff close to the source while harvesting roof water. Which approach best fits?",
+    "formula": "$$\\text{Runoff Volume} = \\text{Rainfall} \\times \\text{Area} \\times \\text{Runoff Coefficient}$$",
+    "options": [
+      { "id": "a", "text": "Install underground detention tanks beneath parking areas with controlled release to municipal systems" },
+      { "id": "b", "text": "Create constructed wetlands in perimeter areas with overflow connections to existing drainage infrastructure" },
+      { "id": "c", "text": "Implement a distributed system of bioswales, permeable pavement, and cisterns for roof water collection" },
+      { "id": "d", "text": "Design retention ponds with extended detention and vegetated filter strips along site boundaries" }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A distributed combination of bioswales, permeable pavement, and roof cisterns reduces runoff at multiple source areas, provides treatment through filtration and infiltration where soils allow, and captures roof water for reuse. That layered LID approach is well suited to large impervious industrial sites seeking both quantity and quality control.",
+    "distractorExplanations": {
+      "a": "Detention tanks attenuate peaks but do not provide the same distributed treatment and reuse benefits close to source areas.",
+      "b": "Perimeter wetlands can treat runoff but rely on conveying large peak volumes to the site edge rather than managing them where they are generated.",
+      "d": "A centralized pond can attenuate peaks, but it is not the distributed source-control strategy described in the stem."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "id": "leed-ap-bd-c-readiness-check-sites-water-046",
+    "topicId": "sites-water",
+    "prompt": "A mixed-use development in a hot climate must reduce heat island effects on 2 acres of parking and 1.5 acres of roof while keeping glare and cost reasonable. Which combination most directly treats both hardscape and roof surfaces using reflectance, permeability, and vegetation?",
+    "options": [
+      { "id": "a", "text": "Install white concrete paving for all parking areas and specify white TPO roofing membrane for all roof surfaces" },
+      { "id": "b", "text": "Use permeable pavement with light-colored aggregate for parking and combine vegetated roof areas with high-reflectance roofing materials" },
+      { "id": "c", "text": "Provide tree canopy coverage over parking areas and install solar panels covering the majority of roof surfaces" },
+      { "id": "d", "text": "Implement underground parking with green roof above and use standard asphalt paving with reflective sealcoat for surface areas" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Permeable light-colored parking surfaces reduce hardscape heat gain while allowing infiltration and evaporation. Pairing vegetated roof areas with high-reflectance roofing targets roof heat island reduction through both evapotranspiration and solar reflectance, giving balanced treatment of both surface types.",
+    "distractorExplanations": {
+      "a": "All-white paving and roofing may create glare and does not combine vegetated cooling with permeable hardscape treatment.",
+      "c": "Tree shade helps parking, but roof-mounted solar panels are primarily an energy strategy and do not replace vegetated or high-reflectance roof treatments for heat island control.",
+      "d": "Underground parking with green roof is often cost-prohibitive, and reflective sealcoats on asphalt provide limited durable hardscape benefit."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "id": "leed-ap-bd-c-readiness-check-materials-resources-011",
+    "topicId": "materials-resources",
+    "prompt": "A construction manager is preparing a LEED BD+C Construction and Demolition Waste Management plan for a retail project. The team must document diverted tonnage by material type for credit compliance. Which on-site strategy is most critical for achieving the required diversion rates?",
+    "options": [
+      { "id": "a", "text": "Implementing source reduction through modular construction techniques" },
+      { "id": "b", "text": "Establishing on-site composting for organic waste materials" },
+      { "id": "c", "text": "Creating separate collection areas for different material types" },
+      { "id": "d", "text": "Partnering with local waste haulers for standard disposal services" }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Separate collection areas enable sorting of metals, concrete, wood, gypsum, and other streams so diversion rates can be measured and verified for the LEED credit. Without segregated staging, commingled waste is far harder to divert regardless of hauler contracts.",
+    "distractorExplanations": {
+      "a": "Source reduction lowers total waste, but the credit documentation still depends on sorting and diverting the waste that is generated.",
+      "b": "Composting handles only a small organic fraction and does not address the major construction material streams tracked for diversion.",
+      "d": "Standard commingled disposal routes typically send most material to landfill and do not support documented diversion."
+    },
+    "difficulty": "easy"
+  }
+]

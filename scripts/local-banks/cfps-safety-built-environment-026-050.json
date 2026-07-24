@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Dead-end corridors in exit access are limited because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "They improve travel distance unlimitedly"
+      },
+      {
+        "id": "b",
+        "text": "They force occupants toward a single direction without an alternative path, increasing risk if that path is blocked"
+      },
+      {
+        "id": "c",
+        "text": "They are encouraged for retail impulse displays"
+      },
+      {
+        "id": "d",
+        "text": "They eliminate the need for exit signs"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "NFPA 101 limits dead-end length so occupants quickly reach a point with egress choice.",
+    "distractorExplanations": {
+      "a": "Retail displays cannot compromise egress geometry.",
+      "c": "Retail displays cannot compromise egress geometry.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "A horizontal exit provides egress by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lowering occupants with a window rope only"
+      },
+      {
+        "id": "b",
+        "text": "Traveling vertically through an unprotected atrium"
+      },
+      {
+        "id": "c",
+        "text": "Moving occupants through a fire-resistance-rated separation into a refuge area on the same floor"
+      },
+      {
+        "id": "d",
+        "text": "Exiting directly to a roof helipad without capacity analysis"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Horizontal exits use rated walls/doors/floors to create a protected refuge on the same level, counting as an exit under specific rules.",
+    "distractorExplanations": {
+      "a": "Unprotected vertical movement through an atrium is not a horizontal exit.",
+      "b": "Unprotected vertical movement through an atrium is not a horizontal exit.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Remoteness of exits requires that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Exits may be adjacent doorways in the same room corner"
+      },
+      {
+        "id": "b",
+        "text": "One exit may be a window and the other a mirror"
+      },
+      {
+        "id": "c",
+        "text": "Remoteness is waived in all sprinklered buildings without analysis"
+      },
+      {
+        "id": "d",
+        "text": "Two exits be separated by distance or intervening construction so a single fire event is unlikely to block both"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Exit separation reduces common-mode failure; diagonal or intervening wall separation achieves remoteness.",
+    "distractorExplanations": {
+      "a": "Adjacent doors may not satisfy separation intent.",
+      "b": "Adjacent doors may not satisfy separation intent.",
+      "c": "Mirrors are not exits."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Mercantile occupant load factors for sales floor areas typically use:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Factors based on use concentration (e.g., concentrated vs. less concentrated merchandise display)"
+      },
+      {
+        "id": "b",
+        "text": "Zero occupants because merchandise is not people"
+      },
+      {
+        "id": "c",
+        "text": "Only checkout counter area divided by 5 sq ft per person"
+      },
+      {
+        "id": "d",
+        "text": "Roof area divided by parking stall count"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "NFPA 101 Table 7.3.1.2 provides factors for mercantile uses; concentration of display affects the factor applied.",
+    "distractorExplanations": {
+      "b": "The entire sales floor area must be considered, not checkout alone.",
+      "c": "Parking stall counts do not determine mercantile occupant load.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Business occupancy occupant load is generally calculated using:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Number of computers installed"
+      },
+      {
+        "id": "b",
+        "text": "Gross floor area divided by the business use occupant load factor unless actual occupant count is higher"
+      },
+      {
+        "id": "c",
+        "text": "CEO office square footage only"
+      },
+      {
+        "id": "d",
+        "text": "Annual revenue divided by 1000"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Business areas use gross area with the assigned load factor; actual use cannot fall below calculated load for egress design.",
+    "distractorExplanations": {
+      "a": "Revenue is unrelated to physical occupant load.",
+      "c": "Revenue is unrelated to physical occupant load.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "When actual occupant count exceeds calculated occupant load:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The lower calculated number always controls"
+      },
+      {
+        "id": "b",
+        "text": "Only the fire marshal's guess from last year applies"
+      },
+      {
+        "id": "c",
+        "text": "The higher number governs for egress capacity and life safety planning for that space"
+      },
+      {
+        "id": "d",
+        "text": "Occupant load is capped at the certificate of occupancy forever"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Life safety design must accommodate the greater of calculated or actual anticipated occupant load.",
+    "distractorExplanations": {
+      "a": "Historical guesses do not override measured or anticipated higher loads.",
+      "b": "Historical guesses do not override measured or anticipated higher loads.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Exit discharge must lead:",
+    "options": [
+      {
+        "id": "a",
+        "text": "To a locked interior storage room"
+      },
+      {
+        "id": "b",
+        "text": "To a dead-end loading dock with no outlet"
+      },
+      {
+        "id": "c",
+        "text": "To a mechanical penthouse without signage"
+      },
+      {
+        "id": "d",
+        "text": "Directly to a public way or to an area with free and unobstructed access to a public way"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Exit discharge completes the egress path to the public way without locking occupants into enclosed dead ends.",
+    "distractorExplanations": {
+      "a": "Dead-end discharge violates egress continuity.",
+      "b": "Dead-end discharge violates egress continuity.",
+      "c": "Discharge to inaccessible penthouses is not compliant."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Width of exit discharge components is sized based on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The occupant load served from the exit(s) discharging into that area, using applicable capacity factors"
+      },
+      {
+        "id": "b",
+        "text": "The width of the adjacent sidewalk only"
+      },
+      {
+        "id": "c",
+        "text": "Half the occupant load because people run faster outside"
+      },
+      {
+        "id": "d",
+        "text": "Architectural column spacing without load data"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Discharge width must accommodate all occupants arriving from connected exits per NFPA 101 capacity calculations.",
+    "distractorExplanations": {
+      "b": "Running speed does not reduce required discharge width.",
+      "c": "Column spacing must yield required egress width for the load served.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "NFPA 101 permits reduced travel distance in some sprinklered occupancies because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sprinklers eliminate smoke entirely"
+      },
+      {
+        "id": "b",
+        "text": "Sprinklers improve fire control, potentially slowing fire growth and supporting safer egress conditions"
+      },
+      {
+        "id": "c",
+        "text": "Sprinklers remove the need for any exits"
+      },
+      {
+        "id": "d",
+        "text": "Sprinklers convert the occupancy to storage automatically"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Sprinkler trade-ups are occupancy-specific; they reflect improved fire control, not elimination of smoke or exits.",
+    "distractorExplanations": {
+      "a": "Occupancy classification does not change automatically.",
+      "c": "Occupancy classification does not change automatically.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "An exit passageway differs from an interior exit stair because it:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Is always unenclosed and open to the atrium"
+      },
+      {
+        "id": "b",
+        "text": "Serves only HVAC equipment"
+      },
+      {
+        "id": "c",
+        "text": "Is a horizontal or sloped enclosed component connecting an exit to a public way, with high fire-resistance rating"
+      },
+      {
+        "id": "d",
+        "text": "Requires no fire-rated construction"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Exit passageways are enclosed, rated corridors that protect horizontal egress between an exit and the public way.",
+    "distractorExplanations": {
+      "a": "Exit passageways protect occupants, not equipment only.",
+      "b": "Exit passageways protect occupants, not equipment only.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Which element is NOT typically part of exit access?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Corridor leading to a stair"
+      },
+      {
+        "id": "b",
+        "text": "Door from a room to the corridor"
+      },
+      {
+        "id": "c",
+        "text": "Aisle in an assembly seating area"
+      },
+      {
+        "id": "d",
+        "text": "Public way beyond the building property line"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Exit access is the portion from an occupied space to an exit; the public way is part of exit discharge.",
+    "distractorExplanations": {
+      "a": "Corridors are classic exit access.",
+      "b": "Corridors are classic exit access.",
+      "c": "Room doors to corridors are exit access."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Emergency lighting testing under NFPA 101 operational provisions should include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Functional testing at intervals defined by the code and AHJ, with documentation of results"
+      },
+      {
+        "id": "b",
+        "text": "Never testing if LEDs are installed"
+      },
+      {
+        "id": "c",
+        "text": "Testing only when tenants complain"
+      },
+      {
+        "id": "d",
+        "text": "Disabling batteries to save utility costs"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Periodic functional and duration testing ensures emergency lighting will perform upon power failure.",
+    "distractorExplanations": {
+      "b": "LED technology still requires periodic testing.",
+      "c": "Complaint-driven testing misses proactive compliance.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Generator-powered emergency lighting in high-rise buildings must typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Start within 10 minutes to reduce fuel use"
+      },
+      {
+        "id": "b",
+        "text": "Energize within 10 seconds of normal power failure and sustain required duration"
+      },
+      {
+        "id": "c",
+        "text": "Operate only on weekends"
+      },
+      {
+        "id": "d",
+        "text": "Power only executive floor corridors"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "NFPA 111 and NFPA 101 coordination requires rapid transfer and sustained illumination for egress.",
+    "distractorExplanations": {
+      "a": "All required egress paths must be illuminated.",
+      "c": "All required egress paths must be illuminated.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "NFPA 5000 and NFPA 101 relationship in a jurisdiction that adopts both is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "NFPA 5000 repeals all accessibility law"
+      },
+      {
+        "id": "b",
+        "text": "NFPA 101 applies only to residential garages globally"
+      },
+      {
+        "id": "c",
+        "text": "They must be coordinated; conflicts are resolved per local adoption ordinances and reference chapters"
+      },
+      {
+        "id": "d",
+        "text": "Only one may be enforced, never both"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Adopting jurisdictions harmonize provisions; designers apply the enforced combination per local amendments.",
+    "distractorExplanations": {
+      "a": "NFPA 101 applies broadly to life safety, not garages only.",
+      "b": "NFPA 101 applies broadly to life safety, not garages only.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "NFPA 1 inspection of fire doors in existing buildings typically verifies:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paint colour matches corridor carpet"
+      },
+      {
+        "id": "b",
+        "text": "Doors are removed for airflow"
+      },
+      {
+        "id": "c",
+        "text": "Hold-open devices are taped without release"
+      },
+      {
+        "id": "d",
+        "text": "Proper closure, latching, labeling, clearances, and absence of unapproved field modifications"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Fire door inspections focus on operational integrity and maintaining tested assembly performance.",
+    "distractorExplanations": {
+      "a": "Removing doors voids fire separation.",
+      "b": "Removing doors voids fire separation.",
+      "c": "Hold-opens require approved release upon alarm."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Vision panels in fire doors along egress paths must:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use fire-rated glazing sized and installed per listing and code limits for the door assembly"
+      },
+      {
+        "id": "b",
+        "text": "Use any annealed glass if under 1 square foot without testing"
+      },
+      {
+        "id": "c",
+        "text": "Be omitted in all 90-minute doors"
+      },
+      {
+        "id": "d",
+        "text": "Exceed 80% of door area for visibility"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Glazing must be part of a listed fire door assembly with size limits per manufacturer listings and NFPA 80.",
+    "distractorExplanations": {
+      "b": "Vision panels are permitted with rated glazing.",
+      "c": "Excessive glazing area may not be listed.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Smoke dampers coordinated with fire alarm in HVAC systems serving egress shafts should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Open fully during fire to increase airflow into stairs"
+      },
+      {
+        "id": "b",
+        "text": "Close upon detection of smoke to prevent smoke migration into protected vertical paths"
+      },
+      {
+        "id": "c",
+        "text": "Remain fixed open for energy savings"
+      },
+      {
+        "id": "d",
+        "text": "Operate only during filter changes"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Damper closure limits smoke spread into stairs and smokeproof enclosures when smoke is detected.",
+    "distractorExplanations": {
+      "a": "Fire events, not maintenance, trigger closure.",
+      "c": "Fire events, not maintenance, trigger closure.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Plumbing chase openings on a fire-rated stair enclosure wall require:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No protection if pipe is noncombustible"
+      },
+      {
+        "id": "b",
+        "text": "Larger openings to ease future retrofits without rating"
+      },
+      {
+        "id": "c",
+        "text": "Listed firestop systems and code-compliant penetration protection maintaining the enclosure rating"
+      },
+      {
+        "id": "d",
+        "text": "Combustible insulation packed loosely around pipes"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "All penetrations must be protected with tested firestop systems to maintain stair enclosure integrity.",
+    "distractorExplanations": {
+      "a": "Oversized unprotected openings compromise ratings.",
+      "b": "Oversized unprotected openings compromise ratings.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Elevator recall and firefighter service interfaces with egress planning by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Encouraging all occupants to use elevators during alarm"
+      },
+      {
+        "id": "b",
+        "text": "Disabling all alarms to keep elevators running"
+      },
+      {
+        "id": "c",
+        "text": "Removing all elevator lobby fire-rated separation"
+      },
+      {
+        "id": "d",
+        "text": "Preventing uncontrolled elevator use during fire while supporting phased evacuation or fire department operations"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Phase I/II recall removes elevators from public use during fire, protecting shafts and supporting firefighting.",
+    "distractorExplanations": {
+      "a": "Alarms must not be disabled.",
+      "b": "Alarms must not be disabled.",
+      "c": "Elevator lobby separation contains smoke and fire."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Accessible routes must generally coincide with egress paths to the maximum extent feasible so that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "People with disabilities have equivalent access to exits without being diverted to remote segregated routes"
+      },
+      {
+        "id": "b",
+        "text": "Only freight elevators are used for evacuation of everyone"
+      },
+      {
+        "id": "c",
+        "text": "Accessible routes may dead-end at restrooms"
+      },
+      {
+        "id": "d",
+        "text": "Ramps may stop at mezzanines without continuation"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Integrated accessible egress reduces travel distance disparities and avoids unsafe segregated paths.",
+    "distractorExplanations": {
+      "b": "Dead-ends violate egress principles.",
+      "c": "Ramps must continue along the accessible egress path.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Power-operated doors on accessible egress routes must:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lock permanently during outages"
+      },
+      {
+        "id": "b",
+        "text": "Have backup operation or manual capability during power failure where required for egress"
+      },
+      {
+        "id": "c",
+        "text": "Open only with biometric authentication"
+      },
+      {
+        "id": "d",
+        "text": "Reverse direction randomly during alarm"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Accessible egress hardware must remain operable in emergencies, often via manual push or battery backup.",
+    "distractorExplanations": {
+      "a": "Random reversal is unsafe and noncompliant.",
+      "c": "Random reversal is unsafe and noncompliant.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Atrium enclosing walls and separation from adjacent floors are required to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Be entirely non-rated glass without limits"
+      },
+      {
+        "id": "b",
+        "text": "Block all sprinklers from the atrium volume"
+      },
+      {
+        "id": "c",
+        "text": "Limit fire and smoke spread while permitting the architectural opening arrangement under engineered controls"
+      },
+      {
+        "id": "d",
+        "text": "Eliminate all detection because of height"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Atrium design balances rated separation and protected openings with sprinkler and smoke control engineering.",
+    "distractorExplanations": {
+      "a": "Sprinklers are typically required in atriums.",
+      "b": "Sprinklers are typically required in atriums.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Make-up air for atrium exhaust smoke control should be provided:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only at the highest ceiling point exclusively"
+      },
+      {
+        "id": "b",
+        "text": "Through uncontrolled open windows on all floors without analysis"
+      },
+      {
+        "id": "c",
+        "text": "By shutting all outdoor air intakes during exhaust"
+      },
+      {
+        "id": "d",
+        "text": "Low and distributed to avoid disturbing the smoke layer while supplying replacement air for exhaust volume"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Proper make-up air location and volume maintain stratification and prevent smoke layer descent onto occupants.",
+    "distractorExplanations": {
+      "a": "Uncontrolled openings undermine engineered smoke management.",
+      "b": "Uncontrolled openings undermine engineered smoke management.",
+      "c": "Exhaust requires balanced make-up air, not sealed intakes."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "During commissioning of stair pressurization, verification typically includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Door opening force tests, differential pressure measurements, and alarm interface checks under simulated conditions"
+      },
+      {
+        "id": "b",
+        "text": "Painting stair walls only"
+      },
+      {
+        "id": "c",
+        "text": "Measuring carpet pile height"
+      },
+      {
+        "id": "d",
+        "text": "Disabling door closers to reduce noise"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Commissioning confirms pressure differentials and operable door forces under design scenarios.",
+    "distractorExplanations": {
+      "b": "Carpet pile is unrelated to pressurization performance.",
+      "c": "Door closers are essential to maintain separation.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "The primary reason fire and life safety consultants coordinate with MEP designers early is to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Delay permits until after construction is 50% complete"
+      },
+      {
+        "id": "b",
+        "text": "Integrate rated enclosures, detection, pressurization, and egress geometry before construction documents are fixed"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate all rated walls for cable routing convenience"
+      },
+      {
+        "id": "d",
+        "text": "Replace AHJ plan review with internal memos only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Early coordination prevents costly rework when shafts, stairs, and controls conflict with architectural layouts.",
+    "distractorExplanations": {
+      "a": "AHJ review remains mandatory; memos do not substitute.",
+      "c": "AHJ review remains mandatory; memos do not substitute.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "easy"
+  }
+]

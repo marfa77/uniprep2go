@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A portfolio owner sets a policy requiring all new leases to include a green lease clause with cost recovery for efficiency upgrades. This primarily addresses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Split incentive barriers between landlord and tenant"
+      },
+      {
+        "id": "b",
+        "text": "Chiller refrigerant charge limits"
+      },
+      {
+        "id": "c",
+        "text": "Motor slip losses in VFD applications"
+      },
+      {
+        "id": "d",
+        "text": "Boiler blowdown conductivity setpoints"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Green lease clauses align cost and benefit for efficiency investments, allowing recovery of capital costs and sharing savings when tenants benefit from upgrades paid by landlords.",
+    "distractorExplanations": {
+      "b": "Refrigerant management is an equipment O&M topic, not a lease structure issue.",
+      "c": "Motor slip is an electrical engineering detail unrelated to lease economics.",
+      "d": "Boiler blowdown is an operational steam plant topic."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A block-and-index natural gas contract indexes a portion of volume to daily spot prices. The buyer's risk is that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The contract eliminates the need for combustion tuning"
+      },
+      {
+        "id": "b",
+        "text": "Spot-indexed volumes expose the buyer to price volatility on those blocks"
+      },
+      {
+        "id": "c",
+        "text": "All gas is always free on weekends"
+      },
+      {
+        "id": "d",
+        "text": "Demand charges disappear from the electric bill"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Block-and-index structures fix some volume at a contract price while exposing remaining volume to market index volatility, transferring price risk on indexed blocks to the buyer.",
+    "distractorExplanations": {
+      "c": "Gas contracts do not eliminate commodity charges on weekends.",
+      "d": "Gas procurement contracts do not change electric demand charges.",
+      "a": "Fuel contracts do not affect boiler combustion maintenance."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "Which metric is calculated as total annual energy cost divided by total annual energy consumption?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Power factor"
+      },
+      {
+        "id": "b",
+        "text": "Demand ratchet percentage"
+      },
+      {
+        "id": "c",
+        "text": "Average blended energy rate ($/kWh or $/therm equivalent)"
+      },
+      {
+        "id": "d",
+        "text": "Load factor"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Dividing total cost by total consumption yields an average unit cost, useful for screening ECM economics when marginal rates are not available.",
+    "distractorExplanations": {
+      "d": "Load factor relates average load to peak demand.",
+      "a": "Power factor is the ratio of real power to apparent power.",
+      "b": "Ratchet percentage is a tariff billing provision, not a unit cost metric."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "An organization adopts ISO 50001. The standard primarily requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Immediate replacement of all motors with premium efficiency models"
+      },
+      {
+        "id": "b",
+        "text": "Elimination of all fossil fuel use within one year"
+      },
+      {
+        "id": "c",
+        "text": "Mandatory third-party ownership of on-site solar"
+      },
+      {
+        "id": "d",
+        "text": "A structured energy management system with policy, planning, monitoring, and continual improvement"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "ISO 50001 establishes a management system framework—policy, energy review, objectives, monitoring, and corrective action—for continual energy performance improvement.",
+    "distractorExplanations": {
+      "a": "The standard does not mandate specific equipment replacements.",
+      "b": "Fuel elimination timelines are not ISO 50001 requirements.",
+      "c": "On-site generation ownership structures are outside the standard's scope."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A simple payback of 4 years on a measure with a 20-year life ignores which important factor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Savings occurring after year 4 and the time value of money"
+      },
+      {
+        "id": "b",
+        "text": "The existence of any initial capital cost"
+      },
+      {
+        "id": "c",
+        "text": "Whether the measure saves energy"
+      },
+      {
+        "id": "d",
+        "text": "The name of the installing contractor"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Simple payback stops at cost recovery and does not discount future savings, potentially undervaluing long-life measures with savings beyond the payback horizon.",
+    "distractorExplanations": {
+      "b": "Payback explicitly uses initial capital cost in its calculation.",
+      "c": "Payback requires annual savings to compute the period.",
+      "d": "Contractor identity is irrelevant to payback math."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "During a Level I audit, the team should prioritize documenting:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Long-term on-bill financing contracts"
+      },
+      {
+        "id": "b",
+        "text": "Obvious operational waste, comfort complaints, and low-cost/no-cost opportunities"
+      },
+      {
+        "id": "c",
+        "text": "Investment-grade uncertainty analysis for every measure"
+      },
+      {
+        "id": "d",
+        "text": "Sub-hourly interval data regression for all end uses"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Level I focuses on rapid identification of evident waste and no-cost/low-cost measures with preliminary savings direction, not detailed investment-grade analysis.",
+    "distractorExplanations": {
+      "c": "Detailed uncertainty analysis is characteristic of Level III work.",
+      "d": "Sub-hourly regression exceeds Level I scope and budget.",
+      "a": "Financing contract development is beyond a screening audit deliverable."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A tariff charges higher demand rates during summer on-peak hours. Installing thermal storage to shift chiller operation primarily targets:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eliminating all energy consumption"
+      },
+      {
+        "id": "b",
+        "text": "Removing the need for cooling tower maintenance"
+      },
+      {
+        "id": "c",
+        "text": "Reducing on-peak demand and associated demand charges"
+      },
+      {
+        "id": "d",
+        "text": "Increasing power factor above unity"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Thermal storage shifts cooling energy and compressor demand to off-peak periods, reducing coincident peak kW when demand charges are highest.",
+    "distractorExplanations": {
+      "d": "Storage does not raise power factor above 1.0.",
+      "a": "Total cooling energy is similar; timing changes, not elimination.",
+      "b": "Cooling towers still require maintenance with thermal storage systems."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "In discounted cash flow analysis, a higher discount rate generally:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increases the present value of future savings"
+      },
+      {
+        "id": "b",
+        "text": "Has no effect on NPV"
+      },
+      {
+        "id": "c",
+        "text": "Eliminates maintenance costs from LCC"
+      },
+      {
+        "id": "d",
+        "text": "Reduces the present value of future savings"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Higher discount rates place less weight on distant cash flows, lowering present value of future savings and making projects harder to justify on NPV grounds.",
+    "distractorExplanations": {
+      "a": "Higher rates discount future flows more heavily, decreasing—not increasing—PV.",
+      "b": "Discount rate is a primary NPV input.",
+      "c": "Maintenance costs remain in LCC regardless of discount rate."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A state property assessed clean energy (PACE) program enables:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Financing efficiency upgrades repaid via a special property tax assessment"
+      },
+      {
+        "id": "b",
+        "text": "Free electricity from the utility indefinitely"
+      },
+      {
+        "id": "c",
+        "text": "Exemption from all building code compliance"
+      },
+      {
+        "id": "d",
+        "text": "Automatic ENERGY STAR certification without data"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "PACE attaches repayment for qualifying energy improvements to the property tax bill, often enabling long terms and transferability with the property.",
+    "distractorExplanations": {
+      "b": "PACE is a financing mechanism, not a utility subsidy for free energy.",
+      "c": "Projects must still comply with applicable codes.",
+      "d": "Certification requires documented performance data."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "Which adjustment is most appropriate when comparing post-retrofit gas use after a warmer-than-normal winter?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Multiply savings by peak demand kW"
+      },
+      {
+        "id": "b",
+        "text": "Heating degree-day normalization of baseline and reporting period consumption"
+      },
+      {
+        "id": "c",
+        "text": "Ignore weather because only electricity matters"
+      },
+      {
+        "id": "d",
+        "text": "Use post-retrofit consumption as the new baseline without documentation"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "HDD normalization adjusts gas use for weather so savings reflect efficiency improvements rather than mild winter conditions.",
+    "distractorExplanations": {
+      "c": "Weather strongly affects space heating gas consumption.",
+      "d": "Redefining baseline without protocol violates M&V rigor.",
+      "a": "Peak kW is an electric demand metric unrelated to gas HDD adjustment."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "An energy manager calculates benefit-cost ratio (BCR) of 1.4 for an ECM. This means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The project increases energy use by 40%"
+      },
+      {
+        "id": "b",
+        "text": "Power factor will be exactly 1.4"
+      },
+      {
+        "id": "c",
+        "text": "Present value of benefits is 1.4 times present value of costs"
+      },
+      {
+        "id": "d",
+        "text": "Simple payback is 1.4 years"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "BCR divides present value of benefits by present value of costs; values above 1.0 indicate benefits exceed costs on a discounted basis.",
+    "distractorExplanations": {
+      "d": "BCR is not equivalent to simple payback period.",
+      "a": "BCR above 1 indicates net benefits, not increased consumption.",
+      "b": "Power factor cannot exceed 1.0."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A mandatory energy audit ordinance for large buildings primarily aims to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Require immediate shutdown of all natural gas service"
+      },
+      {
+        "id": "b",
+        "text": "Replace local building codes with federal tax law"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate utility data privacy for all residents"
+      },
+      {
+        "id": "d",
+        "text": "Identify efficiency opportunities and inform owners about performance"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Audit ordinances require periodic assessments or benchmarking to disclose performance and encourage retrofit planning in large commercial buildings.",
+    "distractorExplanations": {
+      "a": "Ordinances do not mandate fuel service termination.",
+      "b": "Audit rules complement but do not replace building codes.",
+      "c": "Residential privacy rules are separate from commercial audit policies."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "Marginal cost of energy should be used for ECM savings calculations when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The project changes consumption at the margin (e.g., kWh avoided at current rate tier or TOU period)"
+      },
+      {
+        "id": "b",
+        "text": "Only building age is known"
+      },
+      {
+        "id": "c",
+        "text": "No utility bills are available"
+      },
+      {
+        "id": "d",
+        "text": "The ECM affects only roof color"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Savings should reflect the cost of the next unit of energy avoided—accounting for rate tiers, TOU periods, and demand impacts—not always a simple average rate.",
+    "distractorExplanations": {
+      "b": "Building age alone does not define marginal energy cost.",
+      "c": "Without bills, marginal cost must be estimated from tariff structure.",
+      "d": "Roof color may affect loads but does not eliminate need for proper rate analysis."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A facility's energy policy requires life-cycle cost analysis for projects above $50,000. The policy most directly improves:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Indoor CO₂ levels through filtration"
+      },
+      {
+        "id": "b",
+        "text": "Decision quality by comparing long-term costs rather than first cost alone"
+      },
+      {
+        "id": "c",
+        "text": "Short-term cash flow by ignoring maintenance"
+      },
+      {
+        "id": "d",
+        "text": "Peak demand by eliminating all motors"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "LCC thresholds ensure larger investments are evaluated on total ownership cost including energy, maintenance, and replacements, not just upfront capital.",
+    "distractorExplanations": {
+      "c": "LCC explicitly includes maintenance and operating costs.",
+      "d": "Motor elimination is not a policy outcome of LCC requirements.",
+      "a": "Filtration affects IAQ, not LCC policy intent."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "Which IPMVP element defines what savings claim is being verified and the measurement boundaries?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The chiller nameplate voltage only"
+      },
+      {
+        "id": "b",
+        "text": "The number of parking spaces"
+      },
+      {
+        "id": "c",
+        "text": "The M&V plan including measurement boundary and reporting period"
+      },
+      {
+        "id": "d",
+        "text": "The paint color of the meter room"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The M&V plan documents the ECM scope, baseline, measurement boundary, adjustments, and reporting approach that govern savings verification.",
+    "distractorExplanations": {
+      "d": "Physical room aesthetics are irrelevant to M&V scope.",
+      "a": "Nameplate data alone does not define verification boundaries.",
+      "b": "Parking counts may be an adjustment variable but do not alone define the M&V plan."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A campus uses shadow metering on a substation feeder for M&V. Shadow metering means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Turning off all lights permanently"
+      },
+      {
+        "id": "b",
+        "text": "Estimating bills without any measurements"
+      },
+      {
+        "id": "c",
+        "text": "Using only occupant surveys for kWh totals"
+      },
+      {
+        "id": "d",
+        "text": "Independent verification metering installed alongside the utility meter"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Shadow meters provide an independent check of consumption for M&V, calibration, or dispute resolution parallel to billing meters.",
+    "distractorExplanations": {
+      "a": "Shadow metering is a measurement technique, not a permanent shutdown.",
+      "b": "M&V requires measured data, not bill estimates alone.",
+      "c": "Surveys cannot replace metered kWh totals."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "An ECM reduces electricity by 100,000 kWh/year at a marginal rate of $0.10/kWh and avoids 50 kW of peak demand at $8/kW-month for 4 summer months. Approximate annual savings?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$11,600 including energy and summer demand reduction"
+      },
+      {
+        "id": "b",
+        "text": "$1,600 total"
+      },
+      {
+        "id": "c",
+        "text": "$100,000"
+      },
+      {
+        "id": "d",
+        "text": "$10,000 energy only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Energy savings: 100,000 × $0.10 = $10,000. Demand savings: 50 kW × $8/kW × 4 months = $1,600. Total ≈ $11,600.",
+    "distractorExplanations": {
+      "d": "This omits demand charge savings from peak reduction.",
+      "b": "This reflects demand savings only, omitting energy savings.",
+      "c": "This incorrectly values each kWh at $1.00."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A corporate policy sets a minimum hurdle rate of 10% for approved capital projects. Projects should proceed when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No baseline data exists"
+      },
+      {
+        "id": "b",
+        "text": "IRR exceeds 10% or NPV is positive at a 10% discount rate"
+      },
+      {
+        "id": "c",
+        "text": "Simple payback exceeds 15 years"
+      },
+      {
+        "id": "d",
+        "text": "Energy use increases"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Hurdle rates define minimum acceptable return; projects meeting or exceeding the rate on IRR or positive NPV at that discount rate meet the financial threshold.",
+    "distractorExplanations": {
+      "c": "Very long payback typically fails hurdle rate tests.",
+      "d": "Increased energy use contradicts efficiency project goals.",
+      "a": "Missing baseline data prevents rigorous approval but is not an approval criterion."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "Which code compliance path allows trade-offs between building envelope and HVAC efficiency in some jurisdictions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Using prescriptive window U-factor only with no HVAC checks"
+      },
+      {
+        "id": "b",
+        "text": "Skipping commissioning entirely"
+      },
+      {
+        "id": "c",
+        "text": "Performance-based or total building energy compliance modeling"
+      },
+      {
+        "id": "d",
+        "text": "Exempting all insulation requirements without analysis"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Performance paths model whole-building energy use, allowing compensated trade-offs when the design meets an overall energy target versus prescriptive component minimums.",
+    "distractorExplanations": {
+      "d": "Codes do not allow blanket insulation exemptions.",
+      "a": "Prescriptive paths require meeting each component minimum without trade-offs.",
+      "b": "Commissioning may be required regardless of compliance path."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "An auditor reports a cost of wasted energy (COWE) figure for compressed air leaks. COWE helps management by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Replacing the need for leak detection"
+      },
+      {
+        "id": "b",
+        "text": "Calculating chiller tonnage"
+      },
+      {
+        "id": "c",
+        "text": "Setting thermostat deadbands automatically"
+      },
+      {
+        "id": "d",
+        "text": "Translating technical waste into dollar terms to prioritize repairs"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Monetizing wasted energy helps prioritize maintenance and ECMs by showing the financial impact of inefficiencies like compressed air leaks.",
+    "distractorExplanations": {
+      "a": "COWE analysis follows leak detection; it does not replace it.",
+      "b": "Chiller tonnage is unrelated to compressed air leak costing.",
+      "c": "Deadbands are control settings, not outputs of COWE analysis."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A utility offers decoupling for revenue recovery. For energy efficiency program advocates, decoupling primarily:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reduces utility disincentive to sell less energy when efficiency reduces sales"
+      },
+      {
+        "id": "b",
+        "text": "Eliminates all customer bills"
+      },
+      {
+        "id": "c",
+        "text": "Bans all demand response programs"
+      },
+      {
+        "id": "d",
+        "text": "Requires customers to use more energy"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Revenue decoupling separates utility revenue from volumetric sales, aligning utility financial health with achieving efficiency targets.",
+    "distractorExplanations": {
+      "b": "Customers still pay for service; revenue mechanisms adjust recovery, not eliminate bills.",
+      "c": "Decoupling does not prohibit demand response.",
+      "d": "Efficiency goals aim to reduce waste, not mandate higher use."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "When escalating energy prices at 3%/year in LCC, the effect on savings present value is to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Remove maintenance from the analysis"
+      },
+      {
+        "id": "b",
+        "text": "Increase the nominal value of future savings compared with flat prices"
+      },
+      {
+        "id": "c",
+        "text": "Reduce savings to zero in year one"
+      },
+      {
+        "id": "d",
+        "text": "Eliminate discount rate effects"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Escalating energy rates increase future dollar savings from avoided consumption, often improving NPV and payback versus flat-rate assumptions.",
+    "distractorExplanations": {
+      "c": "Escalation affects future years, not elimination of first-year savings.",
+      "d": "Discount rates still apply to cash flows.",
+      "a": "Maintenance remains part of LCC regardless of escalation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A measurement and verification report shows routine adjustments for occupancy and production. Non-routine adjustments would apply when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Weekday versus weekend schedules stay the same"
+      },
+      {
+        "id": "b",
+        "text": "The ECM operates as designed every day"
+      },
+      {
+        "id": "c",
+        "text": "A major unrelated change occurs, such as adding a new production line mid-period"
+      },
+      {
+        "id": "d",
+        "text": "Weather varies within normal seasonal expectations"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Non-routine adjustments address unforeseen changes outside the M&V plan's routine variables, such as significant capacity additions or shutdowns.",
+    "distractorExplanations": {
+      "d": "Normal weather variation is handled with routine weather adjustments.",
+      "a": "Regular schedule patterns are routine adjustment variables.",
+      "b": "Normal ECM operation requires no non-routine adjustment."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "An energy manager presents a MACC (marginal abatement cost curve). Each bar typically shows:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the building's street address"
+      },
+      {
+        "id": "b",
+        "text": "Motor nameplate RPM exclusively"
+      },
+      {
+        "id": "c",
+        "text": "The utility CEO's contact information"
+      },
+      {
+        "id": "d",
+        "text": "A measure's cost per unit of energy saved and potential savings volume"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "MACC charts rank ECMs by cost-effectiveness ($/kWh or $/tonne saved) against cumulative savings potential to prioritize implementation.",
+    "distractorExplanations": {
+      "a": "Location data is not the MACC visualization content.",
+      "b": "Motor RPM is equipment detail, not MACC structure.",
+      "c": "Contact information is unrelated to abatement cost curves."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "policy-audits-economics",
+    "prompt": "A facility subscribes to interval data from the utility (15-minute kW and kWh). The primary audit benefit is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Identifying load shapes, peak drivers, and operational anomalies"
+      },
+      {
+        "id": "b",
+        "text": "Eliminating the need for any site visit"
+      },
+      {
+        "id": "c",
+        "text": "Automatic code compliance certification"
+      },
+      {
+        "id": "d",
+        "text": "Guaranteed 50% energy reduction"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Interval data reveals when peaks occur and how loads operate, supporting targeted demand management and cross-checking equipment schedules.",
+    "distractorExplanations": {
+      "b": "Site surveys remain necessary to connect load shapes to equipment.",
+      "c": "Interval data does not confer code certification.",
+      "d": "Data analysis identifies opportunities; savings are not guaranteed."
+    },
+    "difficulty": "easy"
+  }
+]

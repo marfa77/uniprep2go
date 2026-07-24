@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "site-standards-building",
+    "prompt": "White space contamination control often includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Matting at entrances, controlled delivery paths, and prohibiting food in the data hall"
+      },
+      {
+        "id": "b",
+        "text": "Unrestricted loading dock access into the hall without cleaning"
+      },
+      {
+        "id": "c",
+        "text": "Blowing compressed air inside racks without filtration"
+      },
+      {
+        "id": "d",
+        "text": "Storing cardboard long-term at the end of each aisle"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Particulate control reduces dust ingress that can clog filters and equipment intakes.",
+    "distractorExplanations": {
+      "b": "Uncontrolled loading paths introduce debris.",
+      "c": "Unfiltered blow-off disperses contaminants.",
+      "d": "Cardboard sheds fibers and is discouraged near IT."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Overhead cable pathway color coding or labeling is used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Identify circuit ownership, media type, or destination for faster troubleshooting"
+      },
+      {
+        "id": "b",
+        "text": "Decorate the hall without operational meaning"
+      },
+      {
+        "id": "c",
+        "text": "Replace as-built documentation entirely"
+      },
+      {
+        "id": "d",
+        "text": "Indicate fire suppression agent type only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Consistent labeling speeds moves, adds, and changes while reducing human error.",
+    "distractorExplanations": {
+      "b": "Color coding has operational purpose.",
+      "c": "Labeling complements but does not replace full documentation.",
+      "d": "Suppression agent labeling is a separate fire-system requirement."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "A data centre with 2N power at the utility entrance still requires careful design because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Downstream distribution, synchronization, and maintenance practices can still create failure modes"
+      },
+      {
+        "id": "b",
+        "text": "2N eliminates all need for maintenance windows"
+      },
+      {
+        "id": "c",
+        "text": "Racks no longer need PDUs"
+      },
+      {
+        "id": "d",
+        "text": "Cooling is automatically redundant without engineering"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "End-to-end resilience depends on how redundancy extends through UPS, distribution, and operations.",
+    "distractorExplanations": {
+      "b": "Maintenance remains necessary even with redundant paths.",
+      "c": "PDUs remain the final distribution layer to equipment.",
+      "d": "Cooling redundancy must be explicitly designed."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Ladder rack versus basket tray selection often considers:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cable bend radius, support span, and ease of adding/removing large cable bundles"
+      },
+      {
+        "id": "b",
+        "text": "Only aesthetic preference with no engineering impact"
+      },
+      {
+        "id": "c",
+        "text": "Mandatory use of ladder rack for all fiber only"
+      },
+      {
+        "id": "d",
+        "text": "Elimination of grounding requirements for metallic trays"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Tray type affects cable management, loading, and maintenance access for copper and fiber.",
+    "distractorExplanations": {
+      "b": "Tray selection has mechanical and maintenance implications.",
+      "c": "Both tray types can carry fiber with proper design.",
+      "d": "Metallic trays still require bonding/grounding per codes."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Fire-rated penetrations through data hall walls must:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Be sealed with listed firestop systems matching the assembly rating"
+      },
+      {
+        "id": "b",
+        "text": "Be left open to improve airflow"
+      },
+      {
+        "id": "c",
+        "text": "Use duct tape as a permanent seal"
+      },
+      {
+        "id": "d",
+        "text": "Be omitted because racks block flame spread"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Listed firestopping maintains compartmentation where cables and pipes penetrate rated barriers.",
+    "distractorExplanations": {
+      "b": "Open penetrations defeat fire separation.",
+      "c": "Duct tape is not an approved firestop.",
+      "d": "Racks do not replace fire-rated construction."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "When specifying aisle width between rack rows, designers balance:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Equipment service access, airflow volume, and safe egress"
+      },
+      {
+        "id": "b",
+        "text": "Minimizing width to zero clearance for maximum rack count only"
+      },
+      {
+        "id": "c",
+        "text": "Only paint color contrast"
+      },
+      {
+        "id": "d",
+        "text": "Elimination of emergency egress paths"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Aisle width affects cooling airflow, door swing clearance, and code-compliant egress.",
+    "distractorExplanations": {
+      "b": "Zero clearance prevents maintenance and may violate codes.",
+      "c": "Color contrast aids identification but does not replace width requirements.",
+      "d": "Egress paths are mandatory."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "TIA-942 Annex guidance for network cabling recommends:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Structured cabling with defined backbone and horizontal zones supporting growth"
+      },
+      {
+        "id": "b",
+        "text": "Point-to-point only cabling with no central patching"
+      },
+      {
+        "id": "c",
+        "text": "Maximum cable lengths beyond standard limits without compensation"
+      },
+      {
+        "id": "d",
+        "text": "Mixing all voltages in the same outlet strip"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Structured cabling with hierarchical topology simplifies changes and supports standards compliance.",
+    "distractorExplanations": {
+      "b": "Point-to-point creates management chaos at scale.",
+      "c": "Length limits must be observed for performance.",
+      "d": "Power distribution must follow electrical segregation rules."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "A facility labeled Tier II provides:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Redundant capacity components (N+1) with a single distribution path"
+      },
+      {
+        "id": "b",
+        "text": "2N fully fault-tolerant topology"
+      },
+      {
+        "id": "c",
+        "text": "No redundant components"
+      },
+      {
+        "id": "d",
+        "text": "Only cloud-only virtual capacity"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Tier II adds redundant components but still has a single path—maintenance may require shutdown.",
+    "distractorExplanations": {
+      "b": "2N fault tolerance is Tier IV territory.",
+      "c": "No redundancy describes Tier I.",
+      "d": "Tier classification applies to physical infrastructure."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Humidity control in the data hall supports:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reducing static electricity risk and limiting corrosion at acceptable RH bands"
+      },
+      {
+        "id": "b",
+        "text": "Operating at 5% RH continuously for energy savings"
+      },
+      {
+        "id": "c",
+        "text": "Saturating air to 95% RH for dust settling"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating all vapor barriers in the envelope"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ASHRAE allowable humidity bands balance ESD risk, corrosion, and equipment vendor limits.",
+    "distractorExplanations": {
+      "b": "Very low RH increases ESD risk.",
+      "c": "Very high RH risks condensation and corrosion.",
+      "d": "Envelope moisture control remains important."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Edge data centres differ from hyperscale builds primarily in:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Smaller footprint, latency-driven location, and often reduced onsite staff"
+      },
+      {
+        "id": "b",
+        "text": "Unlimited physical security requirements"
+      },
+      {
+        "id": "c",
+        "text": "Mandatory absence of any power redundancy"
+      },
+      {
+        "id": "d",
+        "text": "Exclusive use of raised floors in every deployment"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Edge sites prioritize proximity to users/services with compact designs and remote management.",
+    "distractorExplanations": {
+      "b": "Security remains important, not unlimited or absent by definition.",
+      "c": "Edge sites may still use redundant power depending on tier targets.",
+      "d": "Edge deployments may use varied form factors including racks in closets."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Commissioning of the architectural shell before IT load should verify:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leak-free envelope, floor flatness, grounding, and installed capacity matches design"
+      },
+      {
+        "id": "b",
+        "text": "Only lobby furniture placement"
+      },
+      {
+        "id": "c",
+        "text": "That all software patches are applied"
+      },
+      {
+        "id": "d",
+        "text": "Social media readiness"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Shell commissioning confirms the facility is ready to safely receive infrastructure and IT equipment.",
+    "distractorExplanations": {
+      "b": "Lobby furniture is not commissioning scope.",
+      "c": "Software patching is IT operations, not shell commissioning.",
+      "d": "Marketing readiness is unrelated."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "A loading dock serving a data hall should include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sized for largest expected equipment, level access, and a clean path to the install area"
+      },
+      {
+        "id": "b",
+        "text": "No weather protection to improve ventilation"
+      },
+      {
+        "id": "c",
+        "text": "Direct uncontrolled access into the white space"
+      },
+      {
+        "id": "d",
+        "text": "Storage of diesel fuel inside the hall entrance"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Dock design affects safe delivery of UPS, chillers, and racks with contamination control.",
+    "distractorExplanations": {
+      "b": "Weather protection prevents water and debris ingress.",
+      "c": "Access should be staged and controlled.",
+      "d": "Fuel storage in IT areas is prohibited."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Raised-floor plenum leakage is problematic because it:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reduces delivered airflow to racks and wastes fan energy"
+      },
+      {
+        "id": "b",
+        "text": "Improves cooling by increasing uncontrolled bypass"
+      },
+      {
+        "id": "c",
+        "text": "Eliminates the need for CRAH units"
+      },
+      {
+        "id": "d",
+        "text": "Guarantees uniform temperature at every rack"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Unsealed plenum leaks short-circuit conditioned air away from targeted cold aisles.",
+    "distractorExplanations": {
+      "b": "Bypass leakage harms, not helps, targeted cooling.",
+      "c": "Cooling plant is still required.",
+      "d": "Leakage increases hot spots rather than uniformity."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "When dual-feed racks are deployed, A and B power paths should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Originate from independent PDUs/UPS branches with distinct breakers and routes"
+      },
+      {
+        "id": "b",
+        "text": "Share a single breaker for simplicity"
+      },
+      {
+        "id": "c",
+        "text": "Be wired to the same bus without separation"
+      },
+      {
+        "id": "d",
+        "text": "Alternate daily to balance paint wear"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "True A/B redundancy requires electrically independent sources through to the rack outlets.",
+    "distractorExplanations": {
+      "b": "A single breaker creates a common failure point.",
+      "c": "Shared buses defeat redundancy purpose.",
+      "d": "Redundancy is not about cosmetic rotation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "ISO/IEC 22237 availability key performance indicators include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Planned and unplanned downtime metrics tied to business requirements"
+      },
+      {
+        "id": "b",
+        "text": "Only social media follower counts"
+      },
+      {
+        "id": "c",
+        "text": "Number of lobby plants"
+      },
+      {
+        "id": "d",
+        "text": "Average cafeteria meal cost"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Availability KPIs align facility design with required uptime and maintenance tolerance.",
+    "distractorExplanations": {
+      "b": "Social metrics are not facility availability KPIs.",
+      "c": "Lobby plants are unrelated.",
+      "d": "Cafeteria costs are unrelated."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Perimeter security zoning before entering the data hall typically progresses through:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Outer site controls, building access, operations area, and high-security white space"
+      },
+      {
+        "id": "b",
+        "text": "Immediate unrestricted white space access from the street"
+      },
+      {
+        "id": "c",
+        "text": "Only a single door with no logging"
+      },
+      {
+        "id": "d",
+        "text": "Security only during business hours"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Defense-in-depth uses multiple zones with increasing authentication and monitoring.",
+    "distractorExplanations": {
+      "b": "Unrestricted access violates basic security design.",
+      "c": "Logging and authentication are expected at controlled doors.",
+      "d": "Security is continuous for mission-critical sites."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Ceiling height for overhead busway installation must accommodate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Busway housing, tap-off boxes, cable drops, and maintenance headroom"
+      },
+      {
+        "id": "b",
+        "text": "Only fluorescent troffers from the 1980s"
+      },
+      {
+        "id": "c",
+        "text": "Zero vertical clearance above busway covers"
+      },
+      {
+        "id": "d",
+        "text": "Suspension solely from rack doors"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Overhead power distribution needs clearance for safe installation and future tap changes.",
+    "distractorExplanations": {
+      "b": "Legacy lighting alone does not define clearance needs.",
+      "c": "Maintenance requires working headroom.",
+      "d": "Busway must attach to rated building structure."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "A facility map showing rack grid coordinates supports:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Capacity tracking, cable labeling, and incident response location finding"
+      },
+      {
+        "id": "b",
+        "text": "Eliminating change management"
+      },
+      {
+        "id": "c",
+        "text": "Hiding asset locations from operations"
+      },
+      {
+        "id": "d",
+        "text": "Avoiding spare capacity planning"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Grid coordinates tie physical layout to documentation and workflow systems.",
+    "distractorExplanations": {
+      "b": "Change management still applies.",
+      "c": "Operations needs accurate location data.",
+      "d": "Capacity planning benefits from grid maps."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Windborne debris risk for rooftop equipment (cooling towers, generators) requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Anchorage and screening per local codes and equipment ratings"
+      },
+      {
+        "id": "b",
+        "text": "Leaving panels loose to vent during storms"
+      },
+      {
+        "id": "c",
+        "text": "Removing all louvers before hurricane season permanently"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring local building authority requirements"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Rooftop gear must withstand design wind loads with proper restraints and protection.",
+    "distractorExplanations": {
+      "b": "Loose panels become projectiles.",
+      "c": "Louvers are functional; mitigation uses engineering controls.",
+      "d": "Code compliance is mandatory."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Network patch panels centralized in a distribution area enable:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Structured moves/adds/changes without disturbing equipment in every rack"
+      },
+      {
+        "id": "b",
+        "text": "Mandatory direct-only cabling from every server to the carrier without patching"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of cable testing"
+      },
+      {
+        "id": "d",
+        "text": "Unlimited cable length beyond category limits"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Central patching consolidates cross-connects for manageable MAC work.",
+    "distractorExplanations": {
+      "b": "Structured patching is preferred over chaotic point-to-point.",
+      "c": "Certification testing still validates links.",
+      "d": "Standards limit channel lengths."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Design life documentation for major facility systems should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Record expected service life and replacement planning for UPS batteries, chillers, and generators"
+      },
+      {
+        "id": "b",
+        "text": "Be avoided to reduce paperwork"
+      },
+      {
+        "id": "c",
+        "text": "Assume infinite life without maintenance"
+      },
+      {
+        "id": "d",
+        "text": "Cover only desktop monitors"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Lifecycle planning prevents surprise failures and budgets capital replacements.",
+    "distractorExplanations": {
+      "b": "Documentation is essential for operations.",
+      "c": "All equipment has finite service life.",
+      "d": "Facility infrastructure life cycles drive capital planning."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "A data centre built to TIA-942 Rated-3 (facility rating) implies:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Concurrent maintainability of power and cooling paths"
+      },
+      {
+        "id": "b",
+        "text": "Single non-redundant path only"
+      },
+      {
+        "id": "c",
+        "text": "No need for operations staff"
+      },
+      {
+        "id": "d",
+        "text": "Absence of fire detection"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "TIA-942 Rated-3 aligns with concurrently maintainable redundant paths.",
+    "distractorExplanations": {
+      "b": "Single path is a lower rating.",
+      "c": "Operations remain critical at all ratings.",
+      "d": "Fire detection is required regardless of tier."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Thermal imaging during facility acceptance can help identify:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hot spots in electrical terminations and uneven airflow patterns"
+      },
+      {
+        "id": "b",
+        "text": "Software licensing violations"
+      },
+      {
+        "id": "c",
+        "text": "Employee satisfaction scores"
+      },
+      {
+        "id": "d",
+        "text": "Cafeteria menu preferences"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Infrared surveys reveal abnormal heat in terminations and cooling distribution issues.",
+    "distractorExplanations": {
+      "b": "Licensing is an IT compliance topic.",
+      "c": "HR metrics are unrelated.",
+      "d": "Cafeteria menus are unrelated."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Sustainable site selection may prioritize:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Low-carbon grid power, water availability, and renewable integration potential"
+      },
+      {
+        "id": "b",
+        "text": "Maximum distance from all network carriers"
+      },
+      {
+        "id": "c",
+        "text": "Highest seismic and flood risk for cost savings"
+      },
+      {
+        "id": "d",
+        "text": "Unrestricted wetland filling"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Sustainability considers carbon intensity, water stewardship, and renewable access.",
+    "distractorExplanations": {
+      "b": "Carrier access remains important for connectivity.",
+      "c": "High hazard risk is avoided, not sought.",
+      "d": "Wetland destruction faces regulatory barriers."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "site-standards-building",
+    "prompt": "Final fit-out of a colocation data hall tenant suite should confirm:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Agreed power kW, cooling capacity, cross-connects, and security boundaries"
+      },
+      {
+        "id": "b",
+        "text": "Only paint color without technical limits"
+      },
+      {
+        "id": "c",
+        "text": "Unlimited oversubscription beyond contracted capacity"
+      },
+      {
+        "id": "d",
+        "text": "Shared root passwords for all tenants"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Tenant fit-out validates contracted infrastructure limits and isolation.",
+    "distractorExplanations": {
+      "b": "Technical limits are contractual and engineering-based.",
+      "c": "Oversubscription must be managed per operator policy.",
+      "d": "Credential sharing violates security practice."
+    },
+    "difficulty": "easy"
+  }
+]

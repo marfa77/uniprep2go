@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "An air-handling unit with a waterside economizer can provide free cooling when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Outdoor wet-bulb temperature is low enough to produce chilled water without mechanical refrigeration"
+      },
+      {
+        "id": "b",
+        "text": "Outdoor dry-bulb is above 95°F regardless of humidity"
+      },
+      {
+        "id": "c",
+        "text": "The cooling tower is offline and condenser water is bypassed"
+      },
+      {
+        "id": "d",
+        "text": "Return air dampers are fully closed at all times"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Waterside economizers use cooling towers or fluid coolers to produce chilled water when ambient wet-bulb conditions allow, reducing chiller runtime.",
+    "distractorExplanations": {
+      "b": "Dry-bulb alone does not determine cooling tower capability; wet-bulb drives evaporative cooling potential.",
+      "c": "Cooling tower operation is typically required for waterside economizer function.",
+      "d": "Closing return dampers would not create free cooling from a waterside economizer."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "In a variable air volume (VAV) system, the primary energy savings compared to constant volume reheat come from:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reducing supply fan energy and minimizing simultaneous cooling and reheat at partial loads"
+      },
+      {
+        "id": "b",
+        "text": "Eliminating all outdoor air requirements"
+      },
+      {
+        "id": "c",
+        "text": "Operating all boxes at constant maximum airflow continuously"
+      },
+      {
+        "id": "d",
+        "text": "Disabling zone temperature sensors"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "VAV modulates airflow to match load, lowering fan power (often via VFDs) and reducing reheat penalties when minimum airflow and controls are properly configured.",
+    "distractorExplanations": {
+      "b": "Outdoor air minimums still apply for ventilation compliance.",
+      "c": "Constant maximum airflow defeats VAV modulation benefits.",
+      "d": "Zone sensors are essential for VAV control."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "A centrifugal chiller rated at 0.55 kW/ton at AHRI conditions is operating at 0.72 kW/ton. Which issue is MOST likely?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Elevated condenser water temperature or fouled condenser tubes raising lift"
+      },
+      {
+        "id": "b",
+        "text": "Excess chilled water flow causing artificially high delta-T"
+      },
+      {
+        "id": "c",
+        "text": "Lower-than-design entering condenser water temperature"
+      },
+      {
+        "id": "d",
+        "text": "Reduced building load always improves kW/ton"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Higher condenser entering water temperature increases compressor lift and kW/ton; condenser fouling has a similar effect.",
+    "distractorExplanations": {
+      "b": "High flow typically lowers delta-T but does not alone explain poor kW/ton at the chiller.",
+      "c": "Lower condenser water temperature would generally improve efficiency.",
+      "d": "Part-load can improve kW/ton, but 0.72 kW/ton suggests a performance problem."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "Cooling tower approach is defined as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The difference between leaving condenser water temperature and ambient wet-bulb temperature"
+      },
+      {
+        "id": "b",
+        "text": "The difference between supply and return chilled water temperature"
+      },
+      {
+        "id": "c",
+        "text": "The ratio of fan speed to pump speed"
+      },
+      {
+        "id": "d",
+        "text": "The static pressure drop across the cooling coil only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Approach quantifies how close the tower can approach the theoretical wet-bulb limit; higher approach often indicates capacity, fouling, or airflow issues.",
+    "distractorExplanations": {
+      "b": "Supply/return delta-T describes chilled water loop performance, not tower approach.",
+      "c": "Fan and pump speeds are not the definition of approach.",
+      "d": "Coil static pressure is unrelated to cooling tower approach."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "Static pressure reset on a VAV supply fan saves energy by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lowering duct static setpoint when zone dampers are sufficiently open"
+      },
+      {
+        "id": "b",
+        "text": "Raising static pressure whenever occupancy is low"
+      },
+      {
+        "id": "c",
+        "text": "Disabling VFD speed control during peak cooling"
+      },
+      {
+        "id": "d",
+        "text": "Fixing the fan at 100% speed at all times"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "When VAV boxes are open, required duct pressure drops; resetting static setpoint downward reduces fan power while maintaining airflow to critical zones.",
+    "distractorExplanations": {
+      "b": "Low occupancy often allows lower airflow and pressure, not higher static.",
+      "c": "VFD control is central to static pressure reset strategies.",
+      "d": "Constant full speed eliminates savings from reset."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "Hot water reset in a hydronic heating system adjusts supply temperature based on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Outdoor air temperature or building load to reduce piping and boiler losses"
+      },
+      {
+        "id": "b",
+        "text": "Only the color of ceiling tiles in the lobby"
+      },
+      {
+        "id": "c",
+        "text": "Maximum fan static pressure in the VAV system"
+      },
+      {
+        "id": "d",
+        "text": "Cooling tower fan blade pitch exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Outdoor reset lowers hot water temperature during mild weather, improving boiler efficiency and distribution losses while meeting reduced load.",
+    "distractorExplanations": {
+      "b": "Interior finishes do not drive hydronic reset logic.",
+      "c": "VAV static pressure is unrelated to hot water reset.",
+      "d": "Cooling tower parameters do not govern heating water reset."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "Low delta-T syndrome on a chilled water loop typically indicates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Excessive flow relative to load, often from oversized pumps or poor valve control"
+      },
+      {
+        "id": "b",
+        "text": "Perfect balance with no bypass flow anywhere"
+      },
+      {
+        "id": "c",
+        "text": "Guaranteed chiller surge protection at all loads"
+      },
+      {
+        "id": "d",
+        "text": "Elimination of all pumping energy"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Low delta-T increases flow demand, raises pump energy, and can limit chiller loading efficiency in primary-secondary plants.",
+    "distractorExplanations": {
+      "b": "Bypass and overflow conditions contribute to low delta-T; perfect balance is not implied.",
+      "c": "Surge is a chiller operational issue, not the definition of low delta-T syndrome.",
+      "d": "Low delta-T increases pumping energy rather than eliminating it."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "Installing VFDs on chilled water pumps primarily saves energy when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "System head varies with flow and pumps operate at part load for extended periods"
+      },
+      {
+        "id": "b",
+        "text": "Pumps run at full speed 24/7 with no throttling"
+      },
+      {
+        "id": "c",
+        "text": "Flow is fixed and valves are always 100% open"
+      },
+      {
+        "id": "d",
+        "text": "Motors are already oversized with no control modulation"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "VFDs match pump speed to required flow/head, reducing power per affinity laws when demand varies.",
+    "distractorExplanations": {
+      "b": "Constant full speed prevents VFD savings.",
+      "c": "Fixed flow with fully open valves limits speed reduction opportunities.",
+      "d": "Oversizing alone does not save energy without modulation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "Demand controlled ventilation (DCV) reduces energy by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Modulating outdoor air intake based on measured or estimated occupancy rather than fixed design occupancy"
+      },
+      {
+        "id": "b",
+        "text": "Eliminating all outdoor air to zero at all times"
+      },
+      {
+        "id": "c",
+        "text": "Increasing ventilation to maximum whenever CO2 is below setpoint"
+      },
+      {
+        "id": "d",
+        "text": "Disabling economizer operation permanently"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "DCV trims ventilation when actual occupancy is below design, lowering conditioning load while maintaining code-minimum air quality.",
+    "distractorExplanations": {
+      "b": "Codes require minimum ventilation; zero OA is not acceptable.",
+      "c": "DCV reduces OA when not needed; it does not maximize ventilation continuously.",
+      "d": "Economizers address free cooling separately from DCV."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "An energy recovery ventilator (ERV) is most cost-effective when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "There is a significant temperature or enthalpy difference between exhaust and outdoor air streams with adequate run hours"
+      },
+      {
+        "id": "b",
+        "text": "There is no difference between indoor and outdoor conditions year-round"
+      },
+      {
+        "id": "c",
+        "text": "The building has no exhaust airflow path"
+      },
+      {
+        "id": "d",
+        "text": "Only latent recovery is needed with no airflow"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ERVs transfer sensible and/or latent energy between exhaust and supply streams, reducing heating and cooling loads when conditions differ.",
+    "distractorExplanations": {
+      "b": "No differential means minimal recoverable energy.",
+      "c": "Exhaust airflow is required for ERV operation.",
+      "d": "ERVs require airflow; latent-only with zero flow is not applicable."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "Compared to a central chilled water plant, packaged rooftop units on a small office building often:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Have lower first cost and simpler maintenance but may have higher unit energy use at scale"
+      },
+      {
+        "id": "b",
+        "text": "Always achieve lower kW/ton than any central plant regardless of size"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate all duct distribution systems by definition"
+      },
+      {
+        "id": "d",
+        "text": "Require no filter maintenance ever"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "RTUs suit smaller buildings with simpler distribution; central plants can be more efficient at scale but have higher complexity and capital cost.",
+    "distractorExplanations": {
+      "b": "Efficiency depends on size, part load, and maintenance; RTUs are not universally superior.",
+      "c": "RTUs still typically use ductwork for distribution.",
+      "d": "All air systems require filter maintenance."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "On a psychrometric chart, sensible cooling of air without dehumidification moves the state point:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Horizontally to the left (decreasing dry-bulb) at constant humidity ratio"
+      },
+      {
+        "id": "b",
+        "text": "Vertically upward increasing humidity ratio only"
+      },
+      {
+        "id": "c",
+        "text": "Diagonally along the saturation curve only"
+      },
+      {
+        "id": "d",
+        "text": "With no change in dry-bulb or humidity ratio"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Sensible cooling reduces dry-bulb temperature while holding moisture content constant until the dew point is reached.",
+    "distractorExplanations": {
+      "b": "Vertical upward movement adds moisture, not sensible cooling alone.",
+      "c": "Saturation curve movement implies dehumidification/condensation conditions.",
+      "d": "Sensible cooling changes dry-bulb."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "Proper DX refrigerant charge is often verified in the field by checking:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Superheat at the evaporator and subcooling at the condenser within manufacturer ranges"
+      },
+      {
+        "id": "b",
+        "text": "Only the color of the compressor paint"
+      },
+      {
+        "id": "c",
+        "text": "Building static pressure in the elevator shaft"
+      },
+      {
+        "id": "d",
+        "text": "Domestic hot water temperature alone"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Superheat and subcooling indicate whether refrigerant charge and metering device operation are within acceptable limits for DX systems.",
+    "distractorExplanations": {
+      "b": "Visual appearance does not confirm refrigerant charge.",
+      "c": "Elevator shaft pressure is unrelated to DX charge.",
+      "d": "DHW temperature does not verify refrigerant charge."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "Night purge ventilation pre-cools a building by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Flushing warm indoor air and replacing it with cooler outdoor air during unoccupied hours when conditions allow"
+      },
+      {
+        "id": "b",
+        "text": "Running reheat coils at maximum output overnight"
+      },
+      {
+        "id": "c",
+        "text": "Sealing the building completely with no airflow"
+      },
+      {
+        "id": "d",
+        "text": "Operating chillers at full load when outdoor wet-bulb is high"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "When nighttime outdoor air is cooler than indoor mass/air, purge ventilation can reduce morning peak cooling load.",
+    "distractorExplanations": {
+      "b": "Reheat adds heat; it does not pre-cool.",
+      "c": "Sealing prevents purge ventilation.",
+      "d": "High wet-bulb conditions reduce free cooling benefit of purge."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "HVAC temperature setback during unoccupied periods saves energy primarily by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reducing temperature difference driving heat gain or loss through the envelope and lowering equipment runtime"
+      },
+      {
+        "id": "b",
+        "text": "Increasing simultaneous heating and cooling intentionally"
+      },
+      {
+        "id": "c",
+        "text": "Eliminating all thermal mass effects in the building"
+      },
+      {
+        "id": "d",
+        "text": "Disabling all safety interlocks permanently"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Wider deadbands and reduced conditioning during unoccupied schedules lower conduction loads and runtime.",
+    "distractorExplanations": {
+      "b": "Simultaneous heating and cooling wastes energy.",
+      "c": "Thermal mass still affects recovery time after setback.",
+      "d": "Safety interlocks must remain active."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "AHRI Standard 550/590 rating conditions for chillers use:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Standardized entering/leaving water temperatures and ambient conditions for comparable kW/ton ratings"
+      },
+      {
+        "id": "b",
+        "text": "Each manufacturer's unique site-specific conditions only"
+      },
+      {
+        "id": "c",
+        "text": "Only air-cooled condenser ratings with no water-cooled option"
+      },
+      {
+        "id": "d",
+        "text": "Ratings based solely on fan static pressure"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "AHRI conditions normalize chiller performance data so engineers can compare equipment at consistent test points.",
+    "distractorExplanations": {
+      "b": "Site conditions vary; AHRI provides standard comparison conditions.",
+      "c": "Both air- and water-cooled chillers have AHRI rating frameworks.",
+      "d": "Fan static pressure is not the chiller efficiency rating basis."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "Increased filter pressure drop in an AHU typically causes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Higher fan energy consumption and potential airflow reduction if not compensated"
+      },
+      {
+        "id": "b",
+        "text": "Automatic improvement in chiller kW/ton with no fan impact"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of all coil fouling concerns permanently"
+      },
+      {
+        "id": "d",
+        "text": "Reduced need for any filter replacement"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Dirty filters increase system resistance; fans work harder or deliver less air, affecting comfort and energy.",
+    "distractorExplanations": {
+      "b": "Chiller efficiency is separate from filter drop though total system energy rises.",
+      "c": "Filters address particulates; coil fouling is a separate maintenance issue.",
+      "d": "Higher drop indicates filters need service or replacement."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "Duct leakage on the supply side of an air handler in an unconditioned plenum wastes energy by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Losing conditioned air to unconditioned spaces before it reaches occupied zones"
+      },
+      {
+        "id": "b",
+        "text": "Increasing ventilation effectiveness in all zones equally"
+      },
+      {
+        "id": "c",
+        "text": "Improving economizer performance automatically"
+      },
+      {
+        "id": "d",
+        "text": "Reducing fan static pressure requirements"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Supply duct leaks discharge treated air outside the intended distribution path, increasing runtime and fan/p plant load.",
+    "distractorExplanations": {
+      "b": "Leakage does not improve ventilation effectiveness.",
+      "c": "Leakage does not improve economizer control.",
+      "d": "Leaks often increase apparent flow demand and fan energy."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "Hydronic system balancing ensures:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Design flow rates to coils and terminals so loads are met without excess pump energy"
+      },
+      {
+        "id": "b",
+        "text": "Maximum velocity in every branch regardless of load"
+      },
+      {
+        "id": "c",
+        "text": "All valves remain fully closed during operation"
+      },
+      {
+        "id": "d",
+        "text": "No measurement of differential pressure anywhere"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Balancing valves and testing adjust flows to design, supporting efficient delta-T and comfort.",
+    "distractorExplanations": {
+      "b": "Excess velocity increases noise and pump energy without benefit.",
+      "c": "Closed valves would prevent heat transfer.",
+      "d": "DP measurement aids commissioning and balancing."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "Under ASHRAE 90.1, air economizers are generally required for cooling systems above threshold capacity in many climate zones because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "They use outdoor air for free cooling when conditions are favorable, reducing mechanical cooling energy"
+      },
+      {
+        "id": "b",
+        "text": "They eliminate the need for any refrigeration equipment in all climates"
+      },
+      {
+        "id": "c",
+        "text": "They increase reheat energy in all operating modes"
+      },
+      {
+        "id": "d",
+        "text": "They remove all humidity control capability"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Economizers can provide significant cooling energy savings where ambient conditions permit.",
+    "distractorExplanations": {
+      "b": "Mechanical cooling is still needed when economizer cannot meet load or dehumidification needs.",
+      "c": "Economizers reduce cooling energy; reheat impacts depend on control strategy.",
+      "d": "Humidity control must still be managed with economizer operation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "The relationship between R-value and U-value is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "U = 1/R (for consistent units in a single-layer approximation)"
+      },
+      {
+        "id": "b",
+        "text": "U equals R multiplied by area only with no inverse relationship"
+      },
+      {
+        "id": "c",
+        "text": "R-value increases as U-value increases for the same assembly"
+      },
+      {
+        "id": "d",
+        "text": "U-value has no use in envelope heat transfer calculations"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "U-value is thermal transmittance; higher R means lower U and less heat flow per unit temperature difference.",
+    "distractorExplanations": {
+      "b": "U and R are inversely related, not a simple area product without context.",
+      "c": "Higher R means lower U, not higher.",
+      "d": "U-value is fundamental to envelope load calculations."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "An air barrier in the building envelope is intended to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Control unintended airflow through the enclosure assembly"
+      },
+      {
+        "id": "b",
+        "text": "Block all water vapor movement in every climate without exception"
+      },
+      {
+        "id": "c",
+        "text": "Provide structural load bearing for the roof deck only"
+      },
+      {
+        "id": "d",
+        "text": "Replace all insulation requirements in the wall"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Air barriers limit infiltration/exfiltration that drives latent loads and moisture transport through assemblies.",
+    "distractorExplanations": {
+      "b": "Vapor control may be separate; air barriers primarily address bulk air movement.",
+      "c": "Structural support is not the primary function of an air barrier.",
+      "d": "Insulation and air barriers serve different roles."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "Infiltration increases building HVAC energy use because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unconditioned outdoor air enters the space, adding sensible and latent loads"
+      },
+      {
+        "id": "b",
+        "text": "It reduces ventilation fan energy to zero"
+      },
+      {
+        "id": "c",
+        "text": "It always lowers indoor humidity in humid climates"
+      },
+      {
+        "id": "d",
+        "text": "It eliminates the need for outdoor air dampers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Infiltration is uncontrolled outdoor air leakage that must be conditioned, unlike designed ventilation.",
+    "distractorExplanations": {
+      "b": "Infiltration adds load; it does not eliminate fan energy needs.",
+      "c": "In humid climates infiltration often raises indoor humidity.",
+      "d": "Controlled ventilation dampers are still required for designed OA."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "Solar Heat Gain Coefficient (SHGC) of glazing describes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The fraction of solar radiation incident on the window that is transmitted plus absorbed and reradiated inward"
+      },
+      {
+        "id": "b",
+        "text": "Only visible light transmission with no infrared component"
+      },
+      {
+        "id": "c",
+        "text": "The structural wind load rating of the frame"
+      },
+      {
+        "id": "d",
+        "text": "The U-value of the spacer only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "SHGC affects cooling loads and daylight/glare balance; lower SHGC reduces solar heat gain.",
+    "distractorExplanations": {
+      "b": "SHGC includes total solar energy effects, not visible light alone.",
+      "c": "Wind load is a structural property, not SHGC.",
+      "d": "Spacer U-value is a separate thermal bridge concern."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "hvac-envelope-bas",
+    "prompt": "Thermal bridging at a continuous parapet detail can cause:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Localized heat loss, condensation risk, and higher peak heating loads"
+      },
+      {
+        "id": "b",
+        "text": "Uniform improvement of wall R-value everywhere"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of all roof insulation needs"
+      },
+      {
+        "id": "d",
+        "text": "No impact on envelope performance calculations"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Metal or structural penetrations bypass insulation, creating paths for heat flow and potential moisture issues.",
+    "distractorExplanations": {
+      "b": "Bridging reduces effective performance; it does not improve R-value.",
+      "c": "Roof insulation is still required.",
+      "d": "Bridges affect loads and should be addressed in models."
+    },
+    "difficulty": "hard"
+  }
+]

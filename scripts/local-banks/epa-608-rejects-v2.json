@@ -1,0 +1,40 @@
+[
+  {
+    "id": "epa-608-readiness-check-core-003",
+    "topicId": "core",
+    "prompt": "A technician suspects acid and moisture contamination in a recovered refrigerant stream. Which precaution best protects recovery equipment during evacuation?",
+    "options": [
+      { "id": "a", "text": "Use only brass fittings on all service hoses" },
+      { "id": "b", "text": "Skip recovery and vent the charge to atmosphere" },
+      { "id": "c", "text": "Install an in-line filter drier ahead of the recovery machine inlet" },
+      { "id": "d", "text": "Raise recovery cylinder temperature above 120°F" }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Acid and moisture can damage recovery equipment and contaminate cylinders. An in-line filter drier before the recovery machine helps trap contaminants and protect the unit during recovery.",
+    "distractorExplanations": {
+      "a": "Fitting material selection does not replace contaminant filtration before the recovery machine.",
+      "b": "Venting regulated refrigerant is prohibited under Section 608.",
+      "d": "Heating cylinders does not address acid contamination and can create unsafe pressure conditions."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "id": "epa-608-readiness-check-type-1-003",
+    "topicId": "type-1",
+    "prompt": "Which statement best describes EPA requirements before opening a small appliance refrigeration circuit for service?",
+    "options": [
+      { "id": "a", "text": "Refrigerant must be recovered to required levels before opening the sealed system" },
+      { "id": "b", "text": "Up to 2 pounds may be vented if the appliance is older than 10 years" },
+      { "id": "c", "text": "Recovery is optional when the factory charge is under 5 pounds" },
+      { "id": "d", "text": "Only Universal certification allows small-appliance service" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Before opening a sealed refrigeration circuit, technicians must recover refrigerant to EPA-required levels using certified equipment; intentional venting is prohibited.",
+    "distractorExplanations": {
+      "b": "Age of equipment does not permit venting regulated refrigerant.",
+      "c": "The 5-pound limit defines Type I equipment class, not an exemption from recovery before opening the circuit.",
+      "d": "Type I certification covers small appliances; Universal is broader but not the only allowed credential."
+    },
+    "difficulty": "medium"
+  }
+]

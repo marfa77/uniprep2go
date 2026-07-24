@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "opmp-operations",
+    "prompt": "Seasonal changeover procedures for hydronic systems should include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Valve positions, boiler/chiller enable, glycol checks, and control mode updates"
+      },
+      {
+        "id": "b",
+        "text": "Only changing thermostat labels"
+      },
+      {
+        "id": "c",
+        "text": "Running chillers and boilers simultaneously without reason"
+      },
+      {
+        "id": "d",
+        "text": "No verification of outdoor air damper minimum positions"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Documented changeover reduces failures at first heating or cooling day.",
+    "distractorExplanations": {
+      "b": "Seasonal changeover involves equipment and control modes.",
+      "c": "Simultaneous operation wastes energy unless required.",
+      "d": "Damper positions affect ventilation and freeze protection."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "An OPMP analyzing EUI trends should normalize for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Weather, occupancy, production level, and major equipment changes"
+      },
+      {
+        "id": "b",
+        "text": "Only building street number"
+      },
+      {
+        "id": "c",
+        "text": "Raw kWh with no adjustments ever"
+      },
+      {
+        "id": "d",
+        "text": "Deleting historical data each year"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Normalized metrics reveal true operational performance changes.",
+    "distractorExplanations": {
+      "b": "Normalization uses weather and operational drivers.",
+      "c": "Unnormalized trends mislead decision makers.",
+      "d": "Historical baselines are essential for trend analysis."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "Emergency operations training should cover:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Power failure, fire modes, equipment failures, and safe shutdown/startup sequences"
+      },
+      {
+        "id": "b",
+        "text": "Only routine weekday startup"
+      },
+      {
+        "id": "c",
+        "text": "No practice drills to save time"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring generator and ATS procedures"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Prepared operators protect occupants and equipment during emergencies.",
+    "distractorExplanations": {
+      "b": "Emergencies require distinct trained responses.",
+      "c": "Drills improve response during real events.",
+      "d": "Emergency power is critical in many facilities."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "Vendor service contracts reviewed by OPMP should align with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Performance KPIs, response times, parts availability, and energy impact of maintenance quality"
+      },
+      {
+        "id": "b",
+        "text": "Lowest price only with no scope review"
+      },
+      {
+        "id": "c",
+        "text": "No access to maintenance records"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating all OEM training requirements"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Contract scope affects long-term operational performance.",
+    "distractorExplanations": {
+      "b": "Poor maintenance increases energy and failure rates.",
+      "c": "Owners need records for accountability.",
+      "d": "Vendor training supports proper equipment care."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "Occupant engagement programs support OPMP goals by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Encouraging plug load management, feedback on comfort, and participation in setback initiatives"
+      },
+      {
+        "id": "b",
+        "text": "Hiding all energy data from occupants"
+      },
+      {
+        "id": "c",
+        "text": "Penalizing all comfort feedback"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating all plug load policies"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Behavior change complements technical O&M improvements.",
+    "distractorExplanations": {
+      "b": "Engagement improves behavior and support for initiatives.",
+      "c": "Feedback reveals operational issues.",
+      "d": "Plug loads are a growing operational end use."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "Steam system operations should monitor:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pressure, trap performance, boiler efficiency, and condensate return rates"
+      },
+      {
+        "id": "b",
+        "text": "Only boiler room paint condition"
+      },
+      {
+        "id": "c",
+        "text": "Venting live steam to atmosphere routinely"
+      },
+      {
+        "id": "d",
+        "text": "No water treatment on makeup"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Steam O&M significantly affects fuel use in campuses and hospitals.",
+    "distractorExplanations": {
+      "b": "Trap failures and condensate loss waste fuel.",
+      "c": "Steam venting wastes energy and water treatment chemicals.",
+      "d": "Treatment protects boilers and distribution."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "OPMP professionals implementing alarm rationalization should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prioritize actionable alarms, reduce nuisance alerts, and define response procedures"
+      },
+      {
+        "id": "b",
+        "text": "Enable every possible alarm at maximum sensitivity"
+      },
+      {
+        "id": "c",
+        "text": "Disable all safeties to reduce noise"
+      },
+      {
+        "id": "d",
+        "text": "Provide no guidance on alarm response"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Effective alarm management improves response to real faults.",
+    "distractorExplanations": {
+      "b": "Alarm floods cause operator desensitization.",
+      "c": "Safety alarms must remain functional.",
+      "d": "Runbooks define required operator actions."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "Data quality in BAS trends must be validated because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stuck sensors and miscalibrated inputs cause false diagnostics and poor control"
+      },
+      {
+        "id": "b",
+        "text": "All sensor readings are always perfect"
+      },
+      {
+        "id": "c",
+        "text": "Only software vendor matters, not field hardware"
+      },
+      {
+        "id": "d",
+        "text": "Trends are decorative with no operational use"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "OPMP programs include periodic sensor verification.",
+    "distractorExplanations": {
+      "b": "Sensors drift, fail, and require calibration.",
+      "c": "Field device health determines data trustworthiness.",
+      "d": "Trends underpin FDD and KPI reporting."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "Portfolio-level OPMP management aggregates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Normalized EUIs, open work orders, RCx opportunities, and capital planning across sites"
+      },
+      {
+        "id": "b",
+        "text": "Only single-building carpet inventories"
+      },
+      {
+        "id": "c",
+        "text": "Unrelated residential home data"
+      },
+      {
+        "id": "d",
+        "text": "No prioritization of capital projects"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Enterprise facility managers benchmark and prioritize across buildings.",
+    "distractorExplanations": {
+      "b": "Portfolio management compares performance across properties.",
+      "c": "Portfolio metrics must be consistent across owned assets.",
+      "d": "Portfolio views guide funding to highest-impact sites."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "Night audit (overnight walk-through) identifies:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Equipment running when unoccupied, lights left on, and overrides wasting energy"
+      },
+      {
+        "id": "b",
+        "text": "Only daytime peak solar gain"
+      },
+      {
+        "id": "c",
+        "text": "Structural foundation cracks exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Guaranteed absence of any running HVAC"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Overnight surveys are a low-cost operational assessment tool.",
+    "distractorExplanations": {
+      "b": "Night audits target after-hours waste.",
+      "c": "Night audits focus on operating equipment and lights.",
+      "d": "Some HVAC must run; audits find unnecessary operation."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "OPMP alignment with organizational ESG reporting requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Documented energy, emissions, water, and IAQ metrics with auditable data trails"
+      },
+      {
+        "id": "b",
+        "text": "Only marketing statements without data"
+      },
+      {
+        "id": "c",
+        "text": "Eliminating all meter calibration records"
+      },
+      {
+        "id": "d",
+        "text": "Hiding performance regression from leadership"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Operations data feeds corporate sustainability disclosures.",
+    "distractorExplanations": {
+      "b": "ESG reporting demands measurable verified metrics.",
+      "c": "Auditors require traceable data quality.",
+      "d": "Transparent reporting supports corrective action."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "Cooling tower fan and pump VFD operations should be tuned to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maintain approach setpoints with minimum fan and pump energy"
+      },
+      {
+        "id": "b",
+        "text": "Run fans at 100% speed always"
+      },
+      {
+        "id": "c",
+        "text": "Disable all freeze protection controls"
+      },
+      {
+        "id": "d",
+        "text": "Ignore basin water level controls"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Tower control optimization lowers condenser water temperature modestly with less kW.",
+    "distractorExplanations": {
+      "b": "Variable speed reduces energy when conditions allow.",
+      "c": "Freeze protection prevents equipment damage.",
+      "d": "Low water levels damage pumps and reduce capacity."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "An OPMP evaluating compressed air systems should check for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leaks, inappropriate uses, pressure setpoints, and sequencer operation"
+      },
+      {
+        "id": "b",
+        "text": "Only air compressor paint color"
+      },
+      {
+        "id": "c",
+        "text": "Using compressed air for personnel cooling routinely"
+      },
+      {
+        "id": "d",
+        "text": "Maximum pressure without demand analysis"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Compressed air is often the least efficient utility in industrial buildings.",
+    "distractorExplanations": {
+      "b": "Leaks and control setpoints drive electricity use.",
+      "c": "Misuse wastes compressed air energy.",
+      "d": "Higher pressure increases compressor energy."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "Maintaining economizer operation includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Actuator calibration, damper linkage checks, sensor validation, and high-limit verification"
+      },
+      {
+        "id": "b",
+        "text": "Welding economizer dampers closed for winter permanently"
+      },
+      {
+        "id": "c",
+        "text": "No inspection of relief fan interlocks"
+      },
+      {
+        "id": "d",
+        "text": "Disabling outdoor air enthalpy sensors without replacement strategy"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Economizer maintenance is a high-value operational task.",
+    "distractorExplanations": {
+      "b": "Stuck closed dampers waste free cooling seasons.",
+      "c": "Relief paths are required for economizer operation.",
+      "d": "Sensors enable efficient economizer control."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "OPMP exam scenarios may test ability to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Recite unrelated plumbing fixture units only"
+      },
+      {
+        "id": "b",
+        "text": "Memorize ASHRAE office addresses only"
+      },
+      {
+        "id": "c",
+        "text": "Design structural footings exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Diagnose operational causes of performance gaps and recommend sustainable corrective actions"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "ASHRAE exams include application and analysis of operations problems.",
+    "distractorExplanations": {
+      "a": "OPMP exams test applied operations knowledge.",
+      "b": "Technical scenarios drive exam content.",
+      "c": "Structural design is outside OPMP scope."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "Building pressurization operations should maintain:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Slight positive pressure where required to control infiltration and elevator shaft effects"
+      },
+      {
+        "id": "b",
+        "text": "Strong negative pressure everywhere always"
+      },
+      {
+        "id": "c",
+        "text": "No consideration of door openings or vestibules"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating all outdoor air intakes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Pressure control affects IAQ, infiltration loads, and door operation.",
+    "distractorExplanations": {
+      "b": "Pressure requirements vary by building type and climate.",
+      "c": "Door operation affects pressure control.",
+      "d": "Outdoor air is required for ventilation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "OPMP capital planning integrates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Equipment age, condition assessments, energy impact, and lifecycle cost of replacements"
+      },
+      {
+        "id": "b",
+        "text": "Only aesthetic renovations without engineering review"
+      },
+      {
+        "id": "c",
+        "text": "Random replacement without failure risk analysis"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring utility incentive programs"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Lifecycle planning avoids emergency replacements at premium cost.",
+    "distractorExplanations": {
+      "b": "Capital plans should address failing inefficient equipment.",
+      "c": "Risk and efficiency inform replacement timing.",
+      "d": "Incentives affect project economics."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "Tenant submetering in multitenant buildings supports OPMP by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Allocating energy use, incentivizing conservation, and identifying anomalous consumption"
+      },
+      {
+        "id": "b",
+        "text": "Eliminating all owner visibility into energy use"
+      },
+      {
+        "id": "c",
+        "text": "Only billing once annually with no interval data"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring common area load allocation"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Transparent metering drives tenant and operator efficiency behavior.",
+    "distractorExplanations": {
+      "b": "Submetering improves accountability.",
+      "c": "Interval submeter data reveals waste patterns.",
+      "d": "Common areas must be fairly allocated or managed."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "Winter freeze protection operations for hydronic coils require:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Minimum flows, glycol concentration checks, and functioning low-temperature safeties"
+      },
+      {
+        "id": "b",
+        "text": "Shutting off all pumps overnight without analysis"
+      },
+      {
+        "id": "c",
+        "text": "Disabling all low-temperature lockouts"
+      },
+      {
+        "id": "d",
+        "text": "Opening outdoor air dampers fully during extreme cold"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Freeze events cause costly emergency repairs and downtime.",
+    "distractorExplanations": {
+      "b": "No-flow conditions risk coil freeze in cold climates.",
+      "c": "Safeties prevent coil rupture from freezing.",
+      "d": "Excess OA increases freeze risk at coils."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "An OPMP benchmarking a building against ENERGY STAR should ensure:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Correct property type, complete meter data, and stable occupancy before comparing scores"
+      },
+      {
+        "id": "b",
+        "text": "Using wrong property type to inflate score"
+      },
+      {
+        "id": "c",
+        "text": "Partial year data without noting gaps"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring weather or occupancy shifts entirely"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Accurate benchmarking guides prioritization of operational improvements.",
+    "distractorExplanations": {
+      "b": "Incorrect classification invalidates benchmarking.",
+      "c": "Complete data periods are required for accurate scores.",
+      "d": "Context helps interpret score changes."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "Documentation of setpoint changes should include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Who changed it, why, expected impact, and review date"
+      },
+      {
+        "id": "b",
+        "text": "No records to encourage flexibility"
+      },
+      {
+        "id": "c",
+        "text": "Only verbal agreements in hallways"
+      },
+      {
+        "id": "d",
+        "text": "Deleting history after each change"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Change logs are essential for multi-shift operations teams.",
+    "distractorExplanations": {
+      "b": "Undocumented changes cause confusion and drift.",
+      "c": "Written change logs support accountability.",
+      "d": "History helps diagnose performance shifts."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "OPMP professionals supporting net-zero goals focus operations on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Minimizing loads, maximizing efficient operation, and managing on-site renewables and offsets"
+      },
+      {
+        "id": "b",
+        "text": "Increasing energy use to grow renewables size only"
+      },
+      {
+        "id": "c",
+        "text": "Ignoring on-site PV production in operations"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating all performance tracking"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Operations sustain design-level performance needed for net-zero commitments.",
+    "distractorExplanations": {
+      "b": "Net-zero strategies prioritize efficiency first.",
+      "c": "Operators must understand generation and grid interaction.",
+      "d": "Net-zero requires ongoing verification."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "Humidifier and dehumidifier maintenance in operations includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Water treatment, drain function, sensor calibration, and seasonal enable/disable"
+      },
+      {
+        "id": "b",
+        "text": "Only changing air filters in unrelated RTUs"
+      },
+      {
+        "id": "c",
+        "text": "Running humidifiers with clogged strainers indefinitely"
+      },
+      {
+        "id": "d",
+        "text": "No seasonal shutdown of unused equipment"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Humidity control affects comfort, materials, and energy simultaneously.",
+    "distractorExplanations": {
+      "b": "Humidity equipment needs specific maintenance.",
+      "c": "Poor water quality damages equipment and IAQ.",
+      "d": "Seasonal disable saves energy and reduces failures."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "An effective OPMP reporting cadence to leadership includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Monthly KPI summaries, exception reporting, and annual improvement plan updates"
+      },
+      {
+        "id": "b",
+        "text": "No reports until equipment fails catastrophically"
+      },
+      {
+        "id": "c",
+        "text": "Only anecdotal stories without metrics"
+      },
+      {
+        "id": "d",
+        "text": "Hiding all unfavorable variances"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Consistent reporting sustains organizational commitment to performance.",
+    "distractorExplanations": {
+      "b": "Regular reporting enables proactive investment.",
+      "c": "Leadership decisions require quantified performance data.",
+      "d": "Transparent variance reporting builds trust and support."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "opmp-operations",
+    "prompt": "Air filter maintenance in operations should follow:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pressure drop monitoring or scheduled changes based on loading, not appearance alone"
+      },
+      {
+        "id": "b",
+        "text": "Replacing filters only when visible dirt appears regardless of pressure"
+      },
+      {
+        "id": "c",
+        "text": "Never changing filters to save material cost"
+      },
+      {
+        "id": "d",
+        "text": "Removing filters entirely to maximize airflow"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Filter PM balances IAQ, coil protection, and fan energy.",
+    "distractorExplanations": {
+      "b": "High pressure drop wastes fan energy and reduces airflow.",
+      "c": "Clogged filters increase energy use and risk coil freezing.",
+      "d": "Filters protect coils and IAQ; removal causes fouling."
+    },
+    "difficulty": "easy"
+  }
+]

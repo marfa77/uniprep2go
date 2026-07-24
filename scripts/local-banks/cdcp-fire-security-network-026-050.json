@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Security operations center (SOC) integration pulls:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Access, video, intrusion, and environmental alarms into monitored workflows"
+      },
+      {
+        "id": "b",
+        "text": "Only cafeteria menus"
+      },
+      {
+        "id": "c",
+        "text": "Personal social media"
+      },
+      {
+        "id": "d",
+        "text": "Unrelated retail POS only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Central monitoring enables correlated incident response.",
+    "distractorExplanations": {
+      "b": "Irrelevant data.",
+      "c": "Privacy/security risk.",
+      "d": "Out of scope."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Fiber optic connectors SC vs LC differ mainly in:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Form factor and density—LC is smaller for higher port counts"
+      },
+      {
+        "id": "b",
+        "text": "LC carries high voltage"
+      },
+      {
+        "id": "c",
+        "text": "SC is only for fire alarms"
+      },
+      {
+        "id": "d",
+        "text": "Neither can carry data"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Connector choice affects panel density and handling.",
+    "distractorExplanations": {
+      "b": "Fiber is low voltage optical.",
+      "c": "Both used for data.",
+      "d": "Both carry optical data."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Cabinet-level network segmentation can:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Limit blast radius of misconfiguration or attack within a row"
+      },
+      {
+        "id": "b",
+        "text": "Eliminate all fire risk"
+      },
+      {
+        "id": "c",
+        "text": "Remove need for patching"
+      },
+      {
+        "id": "d",
+        "text": "Disable UPS"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ToR switches and VLANs contain faults and security events.",
+    "distractorExplanations": {
+      "b": "Fire risk separate.",
+      "c": "Patching still needed.",
+      "d": "UPS unrelated."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Portable fire extinguishers in data halls should match:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Expected fire classes (often clean agent or CO2 near energized gear per policy)"
+      },
+      {
+        "id": "b",
+        "text": "Only Class A wood-only regardless of equipment"
+      },
+      {
+        "id": "c",
+        "text": "Decor color only"
+      },
+      {
+        "id": "d",
+        "text": "No training for staff"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Extinguisher type must suit energized electrical and combustible loads present.",
+    "distractorExplanations": {
+      "b": "Wrong class may be ineffective on electrical fires.",
+      "c": "Type matters more than color.",
+      "d": "Training required."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Door prop alarms deter:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Held-open doors that defeat access control or fire door ratings"
+      },
+      {
+        "id": "b",
+        "text": "Properly closed fire doors"
+      },
+      {
+        "id": "c",
+        "text": "Legitimate badge reads"
+      },
+      {
+        "id": "d",
+        "text": "Humidification"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Forced doors trigger alerts for security and life safety.",
+    "distractorExplanations": {
+      "b": "Closed doors should not alarm.",
+      "c": "Badge reads separate.",
+      "d": "HVAC unrelated."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Cross-connect documentation in carrier-neutral facilities tracks:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Circuit IDs, carrier demarcation, and patch assignments"
+      },
+      {
+        "id": "b",
+        "text": "Only employee birthdays"
+      },
+      {
+        "id": "c",
+        "text": "Chiller tonnage only"
+      },
+      {
+        "id": "d",
+        "text": "Diesel viscosity only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Accurate records speed repairs and provisioning.",
+    "distractorExplanations": {
+      "b": "Irrelevant.",
+      "c": "Mechanical data separate.",
+      "d": "Fuel lab separate."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Halon replacement agents were driven by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ozone depletion and environmental regulations"
+      },
+      {
+        "id": "b",
+        "text": "Desire for more water damage"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of all fire codes"
+      },
+      {
+        "id": "d",
+        "text": "Cheaper kitchen use"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Montreal Protocol and regulations phased out Halon.",
+    "distractorExplanations": {
+      "b": "Agents aim to reduce damage.",
+      "c": "Codes strengthened.",
+      "d": "Kitchen unrelated."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Security lighting on perimeters should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Support camera identification and deter intrusion without blinding sensors"
+      },
+      {
+        "id": "b",
+        "text": "Remain off always"
+      },
+      {
+        "id": "c",
+        "text": "Point only at the sky"
+      },
+      {
+        "id": "d",
+        "text": "Replace access badges"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Lighting design integrates with CCTV performance.",
+    "distractorExplanations": {
+      "b": "Dark sites hinder detection.",
+      "c": "Must illuminate grounds.",
+      "d": "Badges still needed."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Cable pathway separation between power and data reduces:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Electromagnetic interference and safety risk"
+      },
+      {
+        "id": "b",
+        "text": "Need for any labeling"
+      },
+      {
+        "id": "c",
+        "text": "Fire code compliance"
+      },
+      {
+        "id": "d",
+        "text": "All bandwidth limits"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Separation distances and crossings per standards limit EMI and faults.",
+    "distractorExplanations": {
+      "b": "Labeling still required.",
+      "c": "Improves compliance.",
+      "d": "Bandwidth limits still exist."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Incident response for forced entry alarms should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verify via CCTV, dispatch guards, and coordinate with law enforcement if needed"
+      },
+      {
+        "id": "b",
+        "text": "Ignore all alarms as false"
+      },
+      {
+        "id": "c",
+        "text": "Shut down all cooling permanently"
+      },
+      {
+        "id": "d",
+        "text": "Publish passwords online"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Playbooks define verification and escalation.",
+    "distractorExplanations": {
+      "b": "Alarms must be investigated.",
+      "c": "Cooling unrelated unless fire.",
+      "d": "Credential disclosure forbidden."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Fire drill frequency in occupied facilities follows:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Local life safety codes and operator policy"
+      },
+      {
+        "id": "b",
+        "text": "Never required"
+      },
+      {
+        "id": "c",
+        "text": "Only when IT patches deploy"
+      },
+      {
+        "id": "d",
+        "text": "Random social media votes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Regulations mandate periodic drills and documentation.",
+    "distractorExplanations": {
+      "b": "Drills typically required.",
+      "c": "Patching unrelated.",
+      "d": "Not governance method."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Rack-level PDU network ports security requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Changing default credentials and network segmentation"
+      },
+      {
+        "id": "b",
+        "text": "Publishing admin passwords on wiki"
+      },
+      {
+        "id": "c",
+        "text": "Leaving telnet open to internet"
+      },
+      {
+        "id": "d",
+        "text": "Disabling logs"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Out-of-band management must be hardened like production gear.",
+    "distractorExplanations": {
+      "b": "Credential exposure is critical risk.",
+      "c": "Telnet insecure.",
+      "d": "Logs needed for audit."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Optical time-domain reflectometer (OTDR) testing is used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Locate fiber breaks, bends, and splice loss"
+      },
+      {
+        "id": "b",
+        "text": "Measure UPS battery impedance"
+      },
+      {
+        "id": "c",
+        "text": "Test diesel cetane"
+      },
+      {
+        "id": "d",
+        "text": "Calibrate humidifiers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "OTDR traces show distance to faults on fiber spans.",
+    "distractorExplanations": {
+      "b": "Battery test separate.",
+      "c": "Fuel lab separate.",
+      "d": "HVAC separate."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Clean agent room integrity fan test verifies:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Envelope tightness to hold design agent concentration"
+      },
+      {
+        "id": "b",
+        "text": "Only paint gloss"
+      },
+      {
+        "id": "c",
+        "text": "Cafeteria taste tests"
+      },
+      {
+        "id": "d",
+        "text": "Patch cable color"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Door damper and construction leakage affect suppression effectiveness.",
+    "distractorExplanations": {
+      "b": "Cosmetic.",
+      "c": "Irrelevant.",
+      "d": "Color minor."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Defense in depth for cybersecurity in facilities includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Physical controls, network segmentation, and monitoring layered together"
+      },
+      {
+        "id": "b",
+        "text": "Single password for all systems"
+      },
+      {
+        "id": "c",
+        "text": "Unpatched firmware always"
+      },
+      {
+        "id": "d",
+        "text": "Open management VLAN to public internet"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Multiple layers limit compromise spread.",
+    "distractorExplanations": {
+      "b": "Shared passwords fail depth.",
+      "c": "Patching required.",
+      "d": "Exposure unacceptable."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Smoke detector spacing in data halls follows:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Engineered layout per ceiling height, airflow, and code"
+      },
+      {
+        "id": "b",
+        "text": "One detector for entire campus"
+      },
+      {
+        "id": "c",
+        "text": "Only visual inspection by interns"
+      },
+      {
+        "id": "d",
+        "text": "Placement inside sealed racks only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Air movement and ceiling geometry affect detector performance.",
+    "distractorExplanations": {
+      "b": "Multiple detectors required.",
+      "c": "Listed equipment required.",
+      "d": "Room-level detection still needed."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Guard force contract SLAs should define:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Response times, patrol frequency, and escalation procedures"
+      },
+      {
+        "id": "b",
+        "text": "Only uniform color"
+      },
+      {
+        "id": "c",
+        "text": "Menu options"
+      },
+      {
+        "id": "d",
+        "text": "Software coding standards"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Measurable SLAs align security service with risk.",
+    "distractorExplanations": {
+      "b": "Cosmetic only insufficient.",
+      "c": "Irrelevant.",
+      "d": "Dev standards separate."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Fiber diversity between buildings on a campus uses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Geographically separated routes and entrance facilities"
+      },
+      {
+        "id": "b",
+        "text": "One shared trench always"
+      },
+      {
+        "id": "c",
+        "text": "Copper POTS only"
+      },
+      {
+        "id": "d",
+        "text": "No redundancy"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Separate paths protect against construction damage.",
+    "distractorExplanations": {
+      "b": "Shared trench is single failure point.",
+      "c": "Modern backbone is fiber.",
+      "d": "Redundancy often required."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Suppression system impairment procedures require:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fire watch, notifications, and expedited repair when systems are down"
+      },
+      {
+        "id": "b",
+        "text": "Ignoring impairments"
+      },
+      {
+        "id": "c",
+        "text": "Disabling egress"
+      },
+      {
+        "id": "d",
+        "text": "Removing extinguishers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Impaired protection needs compensatory measures.",
+    "distractorExplanations": {
+      "b": "Impairments are high risk.",
+      "c": "Egress must work.",
+      "d": "Extinguishers supplement."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Network cable bend radius violation causes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increased attenuation and potential fiber breakage"
+      },
+      {
+        "id": "b",
+        "text": "Improved latency always"
+      },
+      {
+        "id": "c",
+        "text": "Higher PUE automatically"
+      },
+      {
+        "id": "d",
+        "text": "Better cooling airflow"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Tight bends damage cladding and increase loss.",
+    "distractorExplanations": {
+      "b": "Latency not improved.",
+      "c": "PUE unrelated.",
+      "d": "Cooling unrelated."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Security badges should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Revoked promptly on termination and reported if lost"
+      },
+      {
+        "id": "b",
+        "text": "Shared among team for convenience"
+      },
+      {
+        "id": "c",
+        "text": "Left unencrypted on open shelves"
+      },
+      {
+        "id": "d",
+        "text": "Never audited"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Credential lifecycle prevents unauthorized access.",
+    "distractorExplanations": {
+      "b": "Sharing breaks accountability.",
+      "c": "Physical control required.",
+      "d": "Audits detect orphans."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Fire stopping inspection during construction verifies:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Penetrations match approved firestop submittals"
+      },
+      {
+        "id": "b",
+        "text": "Only paint color"
+      },
+      {
+        "id": "c",
+        "text": "Fiber speed tests only"
+      },
+      {
+        "id": "d",
+        "text": "Cafeteria hours"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Inspections ensure rated assemblies perform as designed.",
+    "distractorExplanations": {
+      "b": "Cosmetic insufficient.",
+      "c": "Fiber tests separate phase.",
+      "d": "Irrelevant."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Carrier demarcation point is where:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Provider network ends and customer responsibility begins"
+      },
+      {
+        "id": "b",
+        "text": "UPS batteries start"
+      },
+      {
+        "id": "c",
+        "text": "Chillers connect to towers"
+      },
+      {
+        "id": "d",
+        "text": "Humidifiers start"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Demarc defines handoff for testing and fault isolation.",
+    "distractorExplanations": {
+      "b": "Electrical domain.",
+      "c": "Mechanical domain.",
+      "d": "HVAC domain."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Integrated security dashboards help operators:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Correlate alarms and reduce mean time to investigate"
+      },
+      {
+        "id": "b",
+        "text": "Delete all logs automatically"
+      },
+      {
+        "id": "c",
+        "text": "Disable cameras"
+      },
+      {
+        "id": "d",
+        "text": "Avoid training"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Unified views speed triage across systems.",
+    "distractorExplanations": {
+      "b": "Logs needed for forensics.",
+      "c": "Cameras essential.",
+      "d": "Training still required."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "fire-security-network",
+    "prompt": "Annual fire system inspection by qualified vendors ensures:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Detection/suppression components function per code and design"
+      },
+      {
+        "id": "b",
+        "text": "Only lobby plants watered"
+      },
+      {
+        "id": "c",
+        "text": "Software compile success"
+      },
+      {
+        "id": "d",
+        "text": "Rack paint touch-up"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Licensed inspection maintains life safety readiness.",
+    "distractorExplanations": {
+      "b": "Irrelevant task.",
+      "c": "IT build unrelated.",
+      "d": "Cosmetic unrelated."
+    },
+    "difficulty": "easy"
+  }
+]

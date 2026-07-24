@@ -1,0 +1,452 @@
+[
+  {
+    "topicId": "sound-materials",
+    "prompt": "A WELL v2 project team is evaluating partition assemblies between private offices and an open workspace. Which acoustic rating most directly measures airborne sound transmission through a wall or floor-ceiling assembly?",
+    "options": [
+      { "id": "a", "text": "Sound Transmission Class (STC)" },
+      { "id": "b", "text": "Impact Insulation Class (IIC)" },
+      { "id": "c", "text": "Noise Criteria (NC)" },
+      { "id": "d", "text": "Noise Reduction Coefficient (NRC)" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "STC quantifies how well a building partition attenuates airborne sound such as speech and music. WELL Sound strategies often reference STC when separating noisy and quiet zones.",
+    "distractorExplanations": {
+      "b": "IIC measures impact sound transmission through floors, not airborne sound through partitions.",
+      "c": "NC describes acceptable background noise spectra in a space, not partition transmission loss.",
+      "d": "NRC describes sound absorption within a room, not transmission through assemblies."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "In a mixed-use building, occupants on the floor below complain about footfall noise from hard-soled shoes in a fitness studio. Which metric should the design team prioritize for the floor-ceiling assembly?",
+    "options": [
+      { "id": "a", "text": "STC of the demising wall" },
+      { "id": "b", "text": "Impact Insulation Class (IIC)" },
+      { "id": "c", "text": "Daylight autonomy" },
+      { "id": "d", "text": "PMV thermal comfort index" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "IIC rates a floor-ceiling system's ability to reduce impact sounds such as footsteps, dropped objects, and rolling carts. High-activity spaces above sensitive occupancies typically require elevated IIC performance.",
+    "distractorExplanations": {
+      "a": "STC addresses airborne sound through walls, not footfall transmitted through floors.",
+      "c": "Daylight autonomy is a lighting metric unrelated to floor impact noise.",
+      "d": "PMV evaluates thermal sensation, not acoustic isolation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "An acoustical consultant specifies NC-40 for open-plan office background noise from HVAC systems. What does an NC rating primarily describe?",
+    "options": [
+      { "id": "a", "text": "Acceptable octave-band sound pressure levels for a given indoor environment" },
+      { "id": "b", "text": "The percentage of recycled content in ceiling tiles" },
+      { "id": "c", "text": "The flame-spread index of interior finish materials" },
+      { "id": "d", "text": "The total volatile organic compound content of wet-applied products" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Noise Criteria curves define target sound pressure levels across frequency bands for acceptable background noise in spaces such as offices, classrooms, and conference rooms. Lower NC numbers generally indicate quieter environments.",
+    "distractorExplanations": {
+      "b": "Recycled content relates to sustainability reporting, not background noise spectra.",
+      "c": "Flame-spread addresses fire performance, not acoustic comfort.",
+      "d": "VOC content relates to Materials concepts, not NC curves."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "Before finalizing workstation layouts, a project team measures existing sound levels across frequency bands and maps speech intelligibility between zones. What is the primary purpose of this noise mapping exercise?",
+    "options": [
+      { "id": "a", "text": "To calculate the building's annual energy use intensity" },
+      { "id": "b", "text": "To verify potable water pH at each fixture" },
+      { "id": "c", "text": "To document exterior view quality from each desk" },
+      { "id": "d", "text": "To identify areas where acoustic privacy and comfort are insufficient and target interventions" }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Noise mapping translates measured or modeled sound conditions into spatial plans that reveal where speech privacy, distraction, or excessive background noise may fail WELL Sound goals. Results guide layout changes, absorption, masking, or barrier upgrades.",
+    "distractorExplanations": {
+      "a": "Energy use intensity is an energy metric, not an acoustic planning tool.",
+      "b": "Water quality testing belongs to Water concepts, not Sound.",
+      "c": "View documentation relates to Mind or biophilia strategies, not acoustic analysis."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "Which WELL concept area most directly addresses limiting occupant exposure to hazardous substances in building products and maintaining ingredient transparency?",
+    "options": [
+      { "id": "a", "text": "Materials" },
+      { "id": "b", "text": "Sound" },
+      { "id": "c", "text": "Movement" },
+      { "id": "d", "text": "Thermal Comfort" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "WELL Materials focuses on product ingredient disclosure, restrictions on harmful chemicals, and emissions performance so occupants are not exposed to concerning substances from furnishings, finishes, and cleaning products.",
+    "distractorExplanations": {
+      "b": "Sound addresses acoustic comfort and noise control, not chemical transparency.",
+      "c": "Movement promotes physical activity, not product health screening.",
+      "d": "Thermal Comfort addresses temperature, humidity, and radiant conditions."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "A specifier requests a Health Product Declaration (HPD) for a task chair. What is the primary function of an HPD in WELL Materials documentation?",
+    "options": [
+      { "id": "a", "text": "To certify the chair's structural load rating for seismic design" },
+      { "id": "b", "text": "To disclose product contents and associated health hazards at or above reporting thresholds" },
+      { "id": "c", "text": "To measure airborne sound transmission through the chair frame" },
+      { "id": "d", "text": "To verify the chair's U-factor for thermal bridging" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "HPDs provide standardized ingredient disclosure, including chemical names, hazard associations, and reporting thresholds. WELL Materials uses HPDs and similar tools to evaluate transparency and screen out chemicals of concern.",
+    "distractorExplanations": {
+      "a": "Structural load ratings are engineering specifications, not health disclosures.",
+      "c": "Acoustic transmission is unrelated to product ingredient reporting.",
+      "d": "U-factor describes thermal transmittance, not material health."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "A project is selecting interior paints and adhesives for WELL Materials compliance. Which distinction is most important when evaluating VOC requirements?",
+    "options": [
+      { "id": "a", "text": "VOC content in the product container is the same as post-application VOC emissions in indoor air" },
+      { "id": "b", "text": "Only exterior coatings require emissions review" },
+      { "id": "c", "text": "WELL Materials emphasizes both VOC content limits for wet-applied products and chamber-tested VOC emissions for installed materials" },
+      { "id": "d", "text": "VOC limits apply only to carpet cushion, not to paints or sealants" }
+    ],
+    "correctOptionId": "c",
+    "explanation": "WELL Materials addresses chemical exposure through multiple pathways: limiting VOC content in wet-applied products and requiring low-emissions performance for installed furnishings and finishes tested in environmental chambers.",
+    "distractorExplanations": {
+      "a": "Content and emissions are related but not equivalent; a low-content product may still off-gas after installation.",
+      "b": "Interior wet-applied and installed products are central to Materials requirements, not only exterior coatings.",
+      "d": "VOC requirements extend well beyond carpet cushion to many interior product categories."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "A flooring manufacturer provides CDPH Standard Method v1.2 chamber testing results for total VOC and individual compounds. Why is this testing approach commonly referenced in WELL Materials?",
+    "options": [
+      { "id": "a", "text": "It simulates realistic indoor emissions after product installation to evaluate occupant exposure potential" },
+      { "id": "b", "text": "It measures STC across demising partitions" },
+      { "id": "c", "text": "It certifies ergonomic adjustability of workstations" },
+      { "id": "d", "text": "It determines the melanopic lux at the occupant's eye" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "CDPH Standard Method chamber testing quantifies VOC emissions from products under controlled conditions, helping teams compare materials for low-emissions performance aligned with WELL Materials goals.",
+    "distractorExplanations": {
+      "b": "STC testing uses sound transmission laboratories, not emissions chambers.",
+      "c": "Ergonomic certification is unrelated to VOC emissions testing.",
+      "d": "Melanopic lux is a Light concept metric, not a materials emissions protocol."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "During design, the owner asks how WELL Materials defines 'transparency' for purchased building products. Which response is most accurate?",
+    "options": [
+      { "id": "a", "text": "Using only aesthetic clear finishes such as glass and polycarbonate" },
+      { "id": "b", "text": "Providing verified disclosure of product ingredients and hazards through recognized reporting tools" },
+      { "id": "c", "text": "Publishing annual utility bills for the property" },
+      { "id": "d", "text": "Installing floor-to-ceiling glazing on all exterior walls" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "In WELL Materials, transparency means occupants and project teams can access credible ingredient and hazard information for products, typically through HPDs, Declare labels, or equivalent disclosure programs.",
+    "distractorExplanations": {
+      "a": "Visual clarity of finishes is not the Materials transparency requirement.",
+      "c": "Utility billing relates to performance operations, not product ingredient disclosure.",
+      "d": "Exterior glazing strategies address daylight and views, not chemical transparency."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "A contractor submits a Safety Data Sheet (SDS) for a resilient flooring adhesive and claims it satisfies WELL ingredient transparency. What is the best evaluation?",
+    "options": [
+      { "id": "a", "text": "An SDS alone always satisfies WELL disclosure because it lists every proprietary ingredient" },
+      { "id": "b", "text": "SDS and HPD serve identical purposes and are interchangeable for all WELL features" },
+      { "id": "c", "text": "SDS is primarily for worker safety during handling and may not provide complete product-level ingredient disclosure required by WELL" },
+      { "id": "d", "text": "SDS is unnecessary if the product has an STC rating above 50" }
+    ],
+    "correctOptionId": "c",
+    "explanation": "SDSs focus on hazardous chemical handling for workers and may omit full formulation details or use generic chemical names. WELL Materials transparency typically requires product-specific disclosure tools such as HPDs that report contents against defined thresholds.",
+    "distractorExplanations": {
+      "a": "SDSs do not always disclose complete formulations, especially for proprietary mixtures.",
+      "b": "SDS and HPD have different scopes; they are not universally interchangeable for WELL documentation.",
+      "d": "STC ratings are acoustic performance values unrelated to chemical disclosure."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "An architect is detailing a conference room partition separating it from a call center. Which pairing correctly matches the acoustic problem to the appropriate rating?",
+    "options": [
+      { "id": "a", "text": "Speech leakage through the partition — prioritize higher STC" },
+      { "id": "b", "text": "Footfall from the floor above — prioritize higher STC on the partition" },
+      { "id": "c", "text": "HVAC rumble in the room — prioritize higher IIC on the partition" },
+      { "id": "d", "text": "Echo within the conference room — prioritize higher STC on interior paint" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Speech traveling through a wall is airborne sound, which partition STC addresses. Impact noise from floors uses IIC, while reverberation inside a room is managed with absorption and room acoustics, not partition STC alone.",
+    "distractorExplanations": {
+      "b": "Footfall is impact noise addressed by floor IIC, not wall STC.",
+      "c": "HVAC background noise is evaluated with NC or room sound levels; IIC on a partition does not control equipment rumble.",
+      "d": "Interior paint does not provide meaningful STC; echo control relies on absorption and room geometry."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "A WELL project targets improved speech privacy in an open office without building full-height private offices. Which combined approach is most aligned with WELL Sound best practices?",
+    "options": [
+      { "id": "a", "text": "Absorptive ceilings and partitions, appropriate sound masking, and layout zoning by activity type" },
+      { "id": "b", "text": "Hard reflective surfaces on all walls to amplify speech for better communication" },
+      { "id": "c", "text": "Eliminating HVAC to remove all background sound entirely" },
+      { "id": "d", "text": "Installing only higher-STC exterior windows while leaving interior partitions unchanged" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Open offices benefit from a layered acoustic strategy: absorption to reduce reverberation, barriers or screens to block direct sound paths, masking to raise background uniformly, and zoning to separate loud and quiet activities.",
+    "distractorExplanations": {
+      "b": "Highly reflective surfaces increase reverberation and speech intelligibility at distance, reducing privacy.",
+      "c": "Eliminating HVAC is impractical and some controlled background sound can support masking and comfort.",
+      "d": "Exterior window STC does not address interior speech transmission between workstations."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "When reviewing an HPD for a composite panel, the project team notices several ingredients listed at 0.01%–0.09% without hazard notations. What is the most accurate interpretation?",
+    "options": [
+      { "id": "a", "text": "All ingredients below 1% are always excluded from every HPD regardless of program version" },
+      { "id": "b", "text": "HPDs use defined reporting thresholds; contents may be disclosed differently depending on concentration, hazard, and HPD version rules" },
+      { "id": "c", "text": "Any ingredient under 1% automatically qualifies the product as emission-free" },
+      { "id": "d", "text": "Percentages on HPDs refer to STC performance of the panel core" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "HPD reporting follows standardized thresholds for disclosure of contents and hazards. Teams must verify the HPD version, role in material, and whether residuals or specialty provisions apply rather than assuming a single universal cutoff.",
+    "distractorExplanations": {
+      "a": "Thresholds vary by substance role, hazard listings, and HPD version; there is not one universal 1% exclusion.",
+      "c": "Low-concentration disclosure does not prove zero VOC emissions after installation.",
+      "d": "HPD percentages describe material composition, not acoustic transmission class."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "A facilities team is developing cleaning protocols for a WELL-certified office. Which practice best supports both Materials and occupant health goals?",
+    "options": [
+      { "id": "a", "text": "Use the strongest available conventional disinfectants daily regardless of ingredient disclosure" },
+      { "id": "b", "text": "Clean only visible soil and skip high-touch surfaces to reduce chemical use" },
+      { "id": "c", "text": "Apply fragranced aerosol sprays hourly to mask odors" },
+      { "id": "d", "text": "Select third-party-reviewed green cleaning products with disclosed ingredients and defined procedures for high-touch and routine cleaning" }
+    ],
+    "correctOptionId": "d",
+    "explanation": "WELL cleaning protocols emphasize effective hygiene with lower-hazard, transparent products and consistent procedures for high-touch surfaces. This reduces unnecessary chemical exposure while maintaining sanitary conditions.",
+    "distractorExplanations": {
+      "a": "Maximum-strength conventional products may introduce unnecessary respiratory irritants without disclosure.",
+      "b": "Skipping high-touch cleaning undermines hygiene and WELL maintenance expectations.",
+      "c": "Frequent fragranced aerosols can add VOCs and sensitizers rather than solve source contamination."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "During renovation of a 1970s office, the contractor discovers suspect thermal insulation behind a demising wall. What is the appropriate first step under WELL-aligned hazardous materials awareness?",
+    "options": [
+      { "id": "a", "text": "Immediately demolish the wall and dispose of debris in standard landfill containers" },
+      { "id": "b", "text": "Cover the area with paint and continue work to avoid schedule delay" },
+      { "id": "c", "text": "Stop disturbing the material, notify qualified personnel, and follow an asbestos survey and abatement plan if confirmed" },
+      { "id": "d", "text": "Increase sound masking levels to protect workers from dust exposure" }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Suspect asbestos-containing materials require professional assessment before disturbance. WELL projects must protect worker and occupant health through proper identification, containment, and regulated abatement rather than uncontrolled demolition.",
+    "distractorExplanations": {
+      "a": "Uncontrolled demolition can release regulated fibers and violate safety law.",
+      "b": "Encapsulation without assessment does not address potential disturbance during continued construction.",
+      "d": "Sound masking does not control hazardous fiber release or inhalation risk."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "A tenant improvement includes sanding original painted wood trim in a building constructed before 1978. Which awareness practice is most critical?",
+    "options": [
+      { "id": "a", "text": "Assume lead-based paint may be present and implement lead-safe work practices per applicable regulations" },
+      { "id": "b", "text": "Proceed without containment because interior trim is exempt from all lead rules" },
+      { "id": "c", "text": "Rely solely on an STC test of the trim profile before sanding" },
+      { "id": "d", "text": "Use only high-VOC solvents to dissolve paint without dust control" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Pre-1978 buildings frequently contain lead-based paint that can create hazardous dust when disturbed. WELL-aligned renovations require lead awareness, testing when indicated, and containment with HEPA filtration and proper cleanup.",
+    "distractorExplanations": {
+      "b": "Interior disturbance of old painted surfaces is not automatically exempt from lead-safe requirements.",
+      "c": "STC testing does not identify lead paint hazards.",
+      "d": "High-VOC solvents increase chemical exposure and do not replace lead dust controls."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "An open lounge feels uncomfortably 'live' because conversations carry across the space. Which interior finish change most directly reduces reverberation?",
+    "options": [
+      { "id": "a", "text": "Polished concrete floor with no wall treatments" },
+      { "id": "b", "text": "Acoustic ceiling panels and wall absorbers with appropriate NRC ratings" },
+      { "id": "c", "text": "Thicker exterior glazing only" },
+      { "id": "d", "text": "Higher STC-rated doors between the lounge and exterior" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Reverberation is controlled by sound-absorbing surfaces measured by NRC or similar absorption metrics. Acoustic ceilings, panels, and soft furnishings shorten decay time and reduce speech buildup in open areas.",
+    "distractorExplanations": {
+      "a": "Hard reflective floors and bare walls increase reverberation rather than reduce it.",
+      "c": "Exterior glazing changes exterior noise ingress, not interior decay time significantly.",
+      "d": "Door STC improves isolation between rooms but does little to absorb sound within the lounge volume."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "A corporate workplace installs a sound masking system tuned to pink or shaped noise. What is the primary acoustic benefit in open offices?",
+    "options": [
+      { "id": "a", "text": "It eliminates the need for any partition STC ratings" },
+      { "id": "b", "text": "It increases formaldehyde emissions from ceiling tiles" },
+      { "id": "c", "text": "It replaces all VOC emissions testing for furniture" },
+      { "id": "d", "text": "It raises uniform background sound to reduce speech intelligibility at distance and improve acoustic privacy" }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Properly tuned sound masking increases background level in a controlled way, making distant speech less intelligible without being perceived as overly loud. It complements absorption and layout strategies in WELL Sound planning.",
+    "distractorExplanations": {
+      "a": "Masking does not replace physical sound isolation where high privacy is required.",
+      "b": "Masking systems do not inherently change material emissions from ceiling products.",
+      "c": "Acoustic masking has no role in VOC emissions documentation for furnishings."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "A manufacturer states its workstation system meets WELL Materials because it is 'low-VOC.' What documentation should the project team request to verify emissions performance?",
+    "options": [
+      { "id": "a", "text": "A marketing brochure with unspecified eco-icons only" },
+      { "id": "b", "text": "An STC test report for the desktop edge" },
+      { "id": "c", "text": "Independent chamber test results such as CDPH Standard Method v1.2 for the declared product configuration" },
+      { "id": "d", "text": "A noise map of the factory production floor" }
+    ],
+    "correctOptionId": "c",
+    "explanation": "WELL Materials verification relies on recognized emissions testing for the specific product as installed, not generic marketing claims. CDPH Standard Method or equivalent protocols provide comparable VOC emission data.",
+    "distractorExplanations": {
+      "a": "Unsubstantiated marketing claims do not demonstrate compliance with emissions thresholds.",
+      "b": "STC reports address sound transmission, not chemical off-gassing.",
+      "d": "Manufacturing floor noise maps do not certify product VOC emissions."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "During WELL Materials product optimization, a team screens furniture for perfluorinated compounds and flame retardants of concern. What is the intent of this screening step?",
+    "options": [
+      { "id": "a", "text": "To reduce likelihood that prioritized chemicals of concern are present in regularly contacted interior products" },
+      { "id": "b", "text": "To determine the NC rating of private offices" },
+      { "id": "c", "text": "To calculate reverberation time in conference rooms" },
+      { "id": "d", "text": "To set minimum walking distance between stairs" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Product optimization encourages selection of materials with fewer hazardous substances through ingredient screening and disclosure. This reduces chronic exposure pathways for occupants who contact furnishings and finishes daily.",
+    "distractorExplanations": {
+      "b": "NC ratings belong to Sound and HVAC background noise evaluation.",
+      "c": "Reverberation time is a room acoustic parameter, not a chemical screening metric.",
+      "d": "Stair spacing relates to Movement and egress design, not Materials optimization."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "A designer needs to improve STC between adjacent hotel guest rooms. Which wall assembly modification is most likely to increase STC?",
+    "options": [
+      { "id": "a", "text": "Single layer of thin gypsum on each side with no insulation" },
+      { "id": "b", "text": "Staggered or double studs, insulated cavity, and multiple gypsum layers with resilient connections" },
+      { "id": "c", "text": "Perforated metal panels with no backer on both sides" },
+      { "id": "d", "text": "Glass louvers with 1-inch air gap only" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Higher STC assemblies combine mass, decoupling, and absorption in the cavity. Staggered studs, resilient channels or clips, insulation, and multiple gypsum layers reduce sound transmission across a broad frequency range.",
+    "distractorExplanations": {
+      "a": "Thin single-layer partitions without insulation typically achieve low STC values.",
+      "c": "Perforated panels without sealed mass layers provide poor airborne isolation.",
+      "d": "Small air gaps without substantial mass and sealing do not yield high STC performance."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "In a multifamily WELL project, carpet and underlayment are added over a concrete slab to address impact noise to units below. Which outcome is most expected?",
+    "options": [
+      { "id": "a", "text": "Significant increase in STC of the exterior window" },
+      { "id": "b", "text": "Improved IIC by cushioning footfall and reducing impact energy transferred through the slab" },
+      { "id": "c", "text": "Elimination of all HVAC-related NC requirements" },
+      { "id": "d", "text": "Automatic compliance with all VOC content limits without product documentation" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Soft floor coverings and underlayments increase impact sound attenuation, raising IIC values over hard concrete. Teams still verify composite assembly performance and address any remaining shortfalls with ceilings or floating floors below.",
+    "distractorExplanations": {
+      "a": "Floor finishes do not materially change exterior window STC.",
+      "c": "Floor treatments do not remove the need to evaluate HVAC background noise against NC targets.",
+      "d": "Carpet must still meet applicable Materials documentation and emissions requirements."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "Post-occupancy surveys show distraction from mechanical equipment in private offices. Measurements indicate prominent low-frequency hum. Which target metric is most appropriate for specifying acceptable HVAC background noise?",
+    "options": [
+      { "id": "a", "text": "NRC of the office carpet" },
+      { "id": "b", "text": "IIC of the floor slab" },
+      { "id": "c", "text": "NC or RC level aligned with the space type and measured octave-band spectra" },
+      { "id": "d", "text": "VOC content of duct sealant only" }
+    ],
+    "correctOptionId": "c",
+    "explanation": "HVAC background noise is commonly evaluated against NC or Room Criteria curves that account for frequency content. Low-frequency hum may fail subjective comfort even when a simple A-weighted level appears acceptable.",
+    "distractorExplanations": {
+      "a": "Carpet NRC affects room absorption, not equipment sound generation.",
+      "b": "IIC addresses impact noise through floors, not mechanical rumble in offices.",
+      "d": "Duct sealant VOC content does not quantify equipment noise spectra."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "Which cleaning product selection best aligns with WELL Materials emphasis on reduced hazardous chemical exposure for maintenance staff and occupants?",
+    "options": [
+      { "id": "a", "text": "Certified green cleaning products with disclosed ingredients and defined dilution and application methods" },
+      { "id": "b", "text": "Any product with a strong fragrance to signal cleanliness" },
+      { "id": "c", "text": "Bleach-based products used undiluted on all surfaces daily" },
+      { "id": "d", "text": "Solvent cleaners without SDS or ingredient information" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "WELL encourages cleaning programs that maintain health while minimizing exposure to asthmagens, sensitizers, and unnecessary toxins. Certified green products with transparent formulations and training support this balance.",
+    "distractorExplanations": {
+      "b": "Fragrance intensity is not a proxy for safety or cleaning effectiveness.",
+      "c": "Undiluted daily bleach use increases irritant exposure and surface damage risk.",
+      "d": "Products lacking safety and ingredient information cannot be verified against WELL goals."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "sound-materials",
+    "prompt": "A project team excludes upholstery treated with certain stain repellents containing per- and polyfluoroalkyl substances (PFAS). Which rationale best supports this decision under WELL Materials?",
+    "options": [
+      { "id": "a", "text": "PFAS improve STC ratings of demising walls" },
+      { "id": "b", "text": "PFAS are persistent chemicals of concern that can migrate from products and are targeted for reduction in healthier material selection" },
+      { "id": "c", "text": "PFAS are required to achieve NC-25 in open offices" },
+      { "id": "d", "text": "PFAS eliminate the need for HPD documentation" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "PFAS are often used in stain and water repellents but are persistent and associated with health concerns. WELL Materials optimization encourages avoiding prioritized substances when viable alternatives exist.",
+    "distractorExplanations": {
+      "a": "PFAS treatments on fabrics do not function as partition sound insulation.",
+      "c": "NC targets are met through acoustic design and HVAC control, not fabric chemistry.",
+      "d": "Excluding PFAS increases the need for transparent documentation, not less."
+    },
+    "difficulty": "hard"
+  }
+]

@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "detection-alarm",
+    "prompt": "NFPA 72 is primarily known as the:",
+    "options": [
+      {
+        "id": "a",
+        "text": "National Fire Alarm and Signaling Code"
+      },
+      {
+        "id": "b",
+        "text": "National Fire Protection Act for sprinklers only"
+      },
+      {
+        "id": "c",
+        "text": "International Building Code fire chapter"
+      },
+      {
+        "id": "d",
+        "text": "OSHA workplace evacuation standard"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "NFPA 72 governs fire alarm system design, installation, acceptance testing, and maintenance — not sprinkler hydraulic design.",
+    "distractorExplanations": {
+      "b": "Sprinkler hydraulics fall under NFPA 13, not NFPA 72.",
+      "c": "Building construction requirements are in IBC/NFPA 101, not NFPA 72.",
+      "d": "OSHA addresses workplace safety broadly; NFPA 72 is the fire alarm code."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "A spot-type smoke detector is best described as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A continuous sensor along the entire length of a cable run"
+      },
+      {
+        "id": "b",
+        "text": "A single sensing unit that monitors conditions at a discrete location"
+      },
+      {
+        "id": "c",
+        "text": "A detector that only samples air from HVAC return plenums"
+      },
+      {
+        "id": "d",
+        "text": "A device that measures beam interruption across an entire atrium"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Spot detectors cover a localized area from one installed device; line-type devices provide continuous coverage along a path.",
+    "distractorExplanations": {
+      "a": "Continuous cable sensing describes line-type heat detection.",
+      "c": "Duct sampling is a separate application, not the definition of spot-type.",
+      "d": "Projected beam detectors span spaces but are not spot-type devices."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "Line-type heat detectors are most commonly implemented as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ionization chambers spaced at 30 ft intervals"
+      },
+      {
+        "id": "b",
+        "text": "Photoelectric sensors in a zigzag ceiling pattern"
+      },
+      {
+        "id": "c",
+        "text": "Fixed-temperature sensing cable installed along the protected area"
+      },
+      {
+        "id": "d",
+        "text": "Aspirating pipes with capillary sampling ports"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Line-type detection uses heat-sensitive cable (or similar) to sense fire along conveyors, tunnels, or long narrow spaces.",
+    "distractorExplanations": {
+      "a": "Ionization detectors are spot-type, not continuous line coverage.",
+      "b": "Photoelectric spot spacing does not create a continuous line sensor.",
+      "d": "Aspirating systems sample air through pipes but are not line-type heat cable."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "Ionization smoke detectors respond fastest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deep smoldering fires with large visible particles"
+      },
+      {
+        "id": "b",
+        "text": "Slow pyrolysis before any particulate is produced"
+      },
+      {
+        "id": "c",
+        "text": "Heat-only conditions with no airborne particulate"
+      },
+      {
+        "id": "d",
+        "text": "Fast-flaming fires with small combustion particles"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Ionization technology is sensitive to small particles typical of rapid flaming combustion; smoldering fires produce larger particles favoring photoelectric response.",
+    "distractorExplanations": {
+      "a": "Large particles from smoldering fires are detected more readily by photoelectric sensors.",
+      "b": "Pyrolysis without particulate may not trigger smoke detectors promptly.",
+      "c": "Incorrect — review NFPA 72 requirements for this application."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "Photoelectric smoke detectors are generally most effective for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Smoldering fires that produce visible smoke with larger particles"
+      },
+      {
+        "id": "b",
+        "text": "Clean flaming combustion with very little visible smoke"
+      },
+      {
+        "id": "c",
+        "text": "Sudden temperature rise without smoke production"
+      },
+      {
+        "id": "d",
+        "text": "Open flame impingement on structural steel only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Photoelectric sensors use light obscuration/scattering and excel at detecting smoldering, smoky conditions.",
+    "distractorExplanations": {
+      "b": "Fast clean burns produce smaller particles better suited to ionization.",
+      "c": "Temperature rise alone is the domain of heat detectors.",
+      "d": "Steel impingement is a heat/flame exposure issue, not photoelectric smoke detection."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "A rate-of-rise heat detector activates based on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A single fixed temperature threshold only, with no rate component"
+      },
+      {
+        "id": "b",
+        "text": "Temperature increasing at a predetermined rate per minute"
+      },
+      {
+        "id": "c",
+        "text": "Visible smoke obscuration across a light beam"
+      },
+      {
+        "id": "d",
+        "text": "Air sample particle concentration in a pipe network"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Rate-of-rise detectors respond to rapid temperature increases, providing faster response than fixed-temperature-only devices in many fires.",
+    "distractorExplanations": {
+      "a": "Fixed-temperature-only devices lack rate-of-rise sensing capability.",
+      "c": "Beam obscuration is a smoke detection principle.",
+      "d": "Pipe air sampling describes aspirating smoke detection."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "Fixed-temperature heat detectors are typically selected when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The fastest possible detection of smoldering upholstered furniture is required"
+      },
+      {
+        "id": "b",
+        "text": "Beam obstructions from building movement must be avoided"
+      },
+      {
+        "id": "c",
+        "text": "Ambient conditions may cause false rate-of-rise activations"
+      },
+      {
+        "id": "d",
+        "text": "Very early warning at sub-0.01% obscuration per foot is needed"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fixed-temperature detectors avoid nuisance trips from normal HVAC temperature swings that could trigger rate-of-rise devices.",
+    "distractorExplanations": {
+      "a": "Smoldering upholstered fires are better served by smoke detection.",
+      "b": "Beam detectors address large open areas, not ambient temperature swing issues.",
+      "d": "Ultra-early warning is an aspirating/VESDA-type application."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "Projected beam smoke detectors are most appropriate in:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Small residential sleeping rooms with 8 ft ceilings"
+      },
+      {
+        "id": "b",
+        "text": "Dusty milling rooms requiring sampling at multiple points along ductwork"
+      },
+      {
+        "id": "c",
+        "text": "Elevator hoistways requiring heat-only detection by code"
+      },
+      {
+        "id": "d",
+        "text": "Large open areas with high ceilings where spot detector spacing is impractical"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Beam detectors cover large volumes with fewer devices but need stable mounting and clear line-of-sight.",
+    "distractorExplanations": {
+      "a": "Small rooms use spot smoke detectors economically.",
+      "b": "Dusty industrial ducts often use duct housing detectors or aspirating systems.",
+      "c": "Hoistway detection requirements vary but beam detectors are not the typical solution."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "A projected beam smoke detector signals an alarm when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Smoke obscures the light beam between the transmitter and receiver/reflector"
+      },
+      {
+        "id": "b",
+        "text": "The ceiling temperature exceeds a fixed 135°F setting"
+      },
+      {
+        "id": "c",
+        "text": "Ionization current drops due to humidity alone without smoke"
+      },
+      {
+        "id": "d",
+        "text": "Duct airflow velocity falls below a preset cubic-feet-per-minute threshold"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Beam detectors measure obscuration across the beam path; environmental misalignment can cause trouble, not typically humidity-based ionization effects.",
+    "distractorExplanations": {
+      "b": "Fixed temperature thresholds describe heat detectors.",
+      "c": "Ionization current changes are unrelated to beam-type detection.",
+      "d": "Airflow velocity is a supervisory/HVAC parameter, not beam obscuration."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "Aspirating smoke detection systems (ASDs) detect fire by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Measuring infrared radiation from flames across a 300 ft aisle"
+      },
+      {
+        "id": "b",
+        "text": "Continuously drawing air samples through piping to a centralized high-sensitivity detector"
+      },
+      {
+        "id": "c",
+        "text": "Detecting pressure changes in sprinkler piping only"
+      },
+      {
+        "id": "d",
+        "text": "Monitoring elevator car position for Phase I recall"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "ASDs use fans and capillary sampling holes to provide very early warning, often in critical facilities or dusty environments with proper filtration.",
+    "distractorExplanations": {
+      "a": "Flame radiation detection is flame detector technology, not ASD.",
+      "c": "Sprinkler pressure monitoring is waterflow/supervisory signaling.",
+      "d": "Elevator recall is life safety integration, not ASD operation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "A primary advantage of aspirating smoke detection in a data center is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Elimination of all ceiling-mounted notification appliances"
+      },
+      {
+        "id": "b",
+        "text": "Automatic suppression discharge without any alarm verification delay"
+      },
+      {
+        "id": "c",
+        "text": "Very early warning at sensitivity levels adjustable above standard spot smoke detectors"
+      },
+      {
+        "id": "d",
+        "text": "Replacement of all manual pull stations with sampling ports"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "ASDs can be set to pre-alarm levels for investigation before general evacuation, valuable in high-value continuous operations.",
+    "distractorExplanations": {
+      "a": "Notification appliances are still required per occupancy and code.",
+      "b": "Suppression release follows separate code requirements; ASD does not eliminate verification rules.",
+      "d": "Manual initiation capability must still be provided where required."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "Audible notification appliances in a fire alarm system are commonly:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Waterflow switches on sprinkler risers only"
+      },
+      {
+        "id": "b",
+        "text": "Tamper switches on control valves only"
+      },
+      {
+        "id": "c",
+        "text": "Heat-sensitive cable along conveyor belts only"
+      },
+      {
+        "id": "d",
+        "text": "Horns, speakers, or combination horn/strobes producing alert or evacuation tones"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Notification appliances alert occupants; initiating devices detect conditions or manual activation.",
+    "distractorExplanations": {
+      "a": "Tamper switches produce supervisory signals, not occupant notification.",
+      "b": "Waterflow switches are initiating devices for sprinkler operation.",
+      "c": "Heat cable is detection, not occupant notification."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "Visible notification appliances are rated by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Candela output measured at a rated mounting height and room configuration"
+      },
+      {
+        "id": "b",
+        "text": "Decibels at 10 ft from the horn only"
+      },
+      {
+        "id": "c",
+        "text": "Sprinkler density in gallons per minute per square foot"
+      },
+      {
+        "id": "d",
+        "text": "Duct velocity in feet per minute through the sampling tube"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Strobe intensity (candela) and spacing depend on sleeping vs non-sleeping, ceiling height, and wall vs ceiling mounting.",
+    "distractorExplanations": {
+      "b": "Decibels rate audible appliances, not visible strobes.",
+      "c": "Sprinkler density is suppression design, unrelated to strobe ratings.",
+      "d": "Duct velocity relates to HVAC or duct detector placement, not candela."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "In NFPA 72, candela spacing for wall-mounted strobes in general sleeping areas typically requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lower candela ratings because occupants are already lying down"
+      },
+      {
+        "id": "b",
+        "text": "Higher candela ratings and closer spacing than ordinary non-sleeping areas"
+      },
+      {
+        "id": "c",
+        "text": "No strobes if horns are installed anywhere in the building"
+      },
+      {
+        "id": "d",
+        "text": "Strobes only in sprinklered rooms, never in corridors"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Sleeping occupants may not hear alarms; visible notification intensity and placement are more stringent in sleeping spaces.",
+    "distractorExplanations": {
+      "a": "Sleeping occupants are less likely to hear — visual requirements increase, not decrease.",
+      "c": "Both audible and visible notification are typically required where applicable.",
+      "d": "Corridor notification requirements are not limited to sprinklered rooms only."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "A supervisory signal on a fire alarm control unit indicates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A confirmed fire requiring immediate evacuation"
+      },
+      {
+        "id": "b",
+        "text": "Loss of primary AC power to the panel only"
+      },
+      {
+        "id": "c",
+        "text": "An off-normal condition of equipment or process that is not an alarm or trouble"
+      },
+      {
+        "id": "d",
+        "text": "Successful completion of the annual inspection test"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Supervisory signals include valve tamper, low air on dry pipe, fire pump off/auto, and other monitored conditions.",
+    "distractorExplanations": {
+      "a": "Confirmed fire conditions produce alarm signals.",
+      "b": "Power loss typically generates trouble signals.",
+      "d": "Inspection completion is a maintenance activity, not a panel signal type."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "Which condition would typically generate an alarm signal rather than a supervisory signal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Control valve tamper switch off-normal"
+      },
+      {
+        "id": "b",
+        "text": "Fire pump switch not in automatic position"
+      },
+      {
+        "id": "c",
+        "text": "Low air pressure on a dry pipe sprinkler system"
+      },
+      {
+        "id": "d",
+        "text": "Smoke detector activation in a protected corridor"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Detector and manual pull station activations initiate alarm signals; valve tamper and equipment off-normal are supervisory.",
+    "distractorExplanations": {
+      "a": "Valve tamper is a classic supervisory condition.",
+      "b": "Fire pump off-auto is supervisory monitoring.",
+      "c": "Low air on dry pipe is supervisory, not occupant evacuation alarm."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "A trouble signal on a fire alarm system most often means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fault in the system wiring, power, or components compromising normal operation"
+      },
+      {
+        "id": "b",
+        "text": "Fire has been confirmed in two separate zones"
+      },
+      {
+        "id": "c",
+        "text": "All occupants have acknowledged the mass notification message"
+      },
+      {
+        "id": "d",
+        "text": "The elevator has successfully reached the recall landing"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Trouble indicates service needed — open circuits, ground faults, battery failure — distinct from alarm and supervisory.",
+    "distractorExplanations": {
+      "b": "Confirmed fire produces alarm, not trouble.",
+      "c": "Mass notification acknowledgment is not a standard trouble definition.",
+      "d": "Elevator recall status is separate integration signaling."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "Mass notification systems (MNS) differ from traditional fire alarm voice systems because MNS:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Are exempt from all intelligibility requirements in every occupancy"
+      },
+      {
+        "id": "b",
+        "text": "May deliver multiple threat messages beyond fire, such as weather or security events"
+      },
+      {
+        "id": "c",
+        "text": "Cannot share speakers with fire alarm systems under any circumstances"
+      },
+      {
+        "id": "d",
+        "text": "Replace manual fire alarm boxes in all educational occupancies"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "MNS provides emergency communication for varied hazards; integration with fire alarm must follow NFPA 72 and UFC/DoD criteria where applicable.",
+    "distractorExplanations": {
+      "a": "Intelligibility requirements still apply to emergency voice systems.",
+      "c": "Combined systems are permitted with proper priority and supervision.",
+      "d": "Manual fire alarm initiation is still required where codes mandate it."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "When fire alarm and mass notification share speakers, NFPA 72 requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Security messages to override fire alarm evacuation tones"
+      },
+      {
+        "id": "b",
+        "text": "All messages to play simultaneously at equal volume"
+      },
+      {
+        "id": "c",
+        "text": "Fire alarm messages to take priority over non-fire MNS messages"
+      },
+      {
+        "id": "d",
+        "text": "MNS to disable strobes during any fire alarm activation"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Life safety fire alarm signals must supersede other messaging to prevent confusion during fire emergencies.",
+    "distractorExplanations": {
+      "a": "Fire alarm must have highest priority for evacuation tones.",
+      "b": "Simultaneous competing messages reduce intelligibility and safety.",
+      "d": "Visible notification must continue per code during fire alarm."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "Integration of fire alarm with smoke management systems typically requires the FACP to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disable all fire alarm horns to avoid fan vibration"
+      },
+      {
+        "id": "b",
+        "text": "Delay all elevator recall until smoke is visible at the roof vent"
+      },
+      {
+        "id": "c",
+        "text": "Permit occupants to re-enter floors at their discretion during Phase I"
+      },
+      {
+        "id": "d",
+        "text": "Activate or disable fans and dampers per the engineered smoke control sequence"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Smoke management sequences are occupancy-specific and programmed per approved rational analysis or engineered design.",
+    "distractorExplanations": {
+      "a": "Horns are not disabled for fan vibration; systems are coordinated.",
+      "b": "Elevator recall follows defined code triggers, not visual roof smoke.",
+      "c": "Re-entry is controlled by fire department and system status, not occupant discretion."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "On a smooth ceiling up to 10 ft high, spot smoke detector spacing is generally:",
+    "options": [
+      {
+        "id": "a",
+        "text": "30 ft between detectors and 15 ft from walls (per typical NFPA 72 prescriptive spacing)"
+      },
+      {
+        "id": "b",
+        "text": "50 ft between detectors with no wall consideration"
+      },
+      {
+        "id": "c",
+        "text": "15 ft between detectors in all occupancies without exception"
+      },
+      {
+        "id": "d",
+        "text": "Detector spacing is unlimited if sprinklers are provided"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Standard smooth-ceiling spacing is 30 ft center-to-center with half-spacing to walls; modifications apply for beams, slopes, and high ceilings.",
+    "distractorExplanations": {
+      "b": "50 ft exceeds prescriptive smoke detector spacing on smooth ceilings.",
+      "c": "15 ft is the wall distance, not the full center-to-center spacing.",
+      "d": "Sprinklers do not automatically eliminate detector spacing rules."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "When ceiling height exceeds 10 ft, smoke detector spacing generally:",
+    "options": [
+      {
+        "id": "a",
+        "text": "May be doubled because smoke has more volume to collect"
+      },
+      {
+        "id": "b",
+        "text": "Must be reduced according to NFPA 72 tables for increased ceiling height"
+      },
+      {
+        "id": "c",
+        "text": "Is unchanged up to 30 ft ceilings without engineering analysis"
+      },
+      {
+        "id": "d",
+        "text": "Is eliminated if beam detectors are used anywhere in the building"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Higher ceilings delay smoke reaching detectors; reduced spacing or performance-based design compensates for the increased ceiling height.",
+    "distractorExplanations": {
+      "a": "Greater ceiling height delays detection — spacing tightens, not expands.",
+      "c": "Spacing does not remain unchanged for high ceilings without analysis.",
+      "d": "Beam detectors in one area do not remove spacing rules elsewhere."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "Beam pockets or solid joists on a ceiling may require:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Removal of all heat detectors from the occupancy"
+      },
+      {
+        "id": "b",
+        "text": "Candela ratings reduced by 50% in sleeping rooms"
+      },
+      {
+        "id": "c",
+        "text": "Smoke detectors in each pocket or modified spacing per NFPA 72 beam criteria"
+      },
+      {
+        "id": "d",
+        "text": "Elimination of manual pull stations on that floor"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Beam construction creates pockets that trap smoke; detectors may be needed in each pocket or spacing adjusted.",
+    "distractorExplanations": {
+      "a": "Heat detector requirements are separate and not eliminated by beams.",
+      "b": "Candela ratings are unrelated to beam pocket detector placement.",
+      "d": "Manual stations are required by occupancy provisions independent of beam construction."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "Duct smoke detectors are commonly required in:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Every residential kitchen range hood exhaust duct regardless of size"
+      },
+      {
+        "id": "b",
+        "text": "All sanitary sewer vents penetrating the roof"
+      },
+      {
+        "id": "c",
+        "text": "Sprinkler branch lines in each fire sprinkler zone"
+      },
+      {
+        "id": "d",
+        "text": "Air handling systems above a threshold capacity serving multiple areas"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "NFPA 90A and NFPA 72 address duct detectors in HVAC systems to prevent smoke recirculation; thresholds depend on airflow and application.",
+    "distractorExplanations": {
+      "a": "Small kitchen hoods are not automatic duct detector locations.",
+      "b": "Sewer vents are not HVAC smoke recirculation paths.",
+      "c": "Sprinkler branch lines use waterflow detection, not duct smoke detectors."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "detection-alarm",
+    "prompt": "A duct smoke detector should typically be installed:",
+    "options": [
+      {
+        "id": "a",
+        "text": "In the supply or return air duct downstream of filters and ahead of fan branches where required by code"
+      },
+      {
+        "id": "b",
+        "text": "Only inside the fire pump room on the floor slab"
+      },
+      {
+        "id": "c",
+        "text": "At the top of elevator hoistways adjacent to traveling cables"
+      },
+      {
+        "id": "d",
+        "text": "Inside standpipe hose cabinets on each landing"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Proper duct placement ensures representative sampling and accessibility for testing; location varies by supply/return strategy and code.",
+    "distractorExplanations": {
+      "b": "Fire pump rooms use area detection, not duct housing placement.",
+      "c": "Hoistways have specific detection rules but not duct-type in hoistway itself typically.",
+      "d": "Hose cabinets are not duct detector mounting locations."
+    },
+    "difficulty": "hard"
+  }
+]

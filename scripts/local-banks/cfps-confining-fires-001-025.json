@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "confining-fires",
+    "prompt": "Per NFPA 221, a fire wall is primarily intended to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Subdivide a building to limit fire spread and allow independent structural collapse on either side"
+      },
+      {
+        "id": "b",
+        "text": "Provide a 1-hour smoke-tight membrane between tenant suites only"
+      },
+      {
+        "id": "c",
+        "text": "Replace sprinkler protection in adjacent compartments"
+      },
+      {
+        "id": "d",
+        "text": "Serve as a nonstructural chase wall for MEP routing without rating"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fire walls are structural fire-resistance-rated assemblies that create separate buildings for fire spread purposes and must remain stable if one side collapses.",
+    "distractorExplanations": {
+      "b": "Sprinklers complement but do not replace required fire wall ratings.",
+      "c": "Unrated chase walls are not fire walls.",
+      "d": "Smoke-tight membranes alone describe smoke barriers, not fire walls."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "A fire barrier per NFPA 221 is best defined as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "An exterior curtain wall with no rating requirement"
+      },
+      {
+        "id": "b",
+        "text": "A fire-resistance-rated wall assembly that restricts fire spread within a building and may support a floor or roof assembly"
+      },
+      {
+        "id": "c",
+        "text": "A corridor wall rated only for smoke leakage"
+      },
+      {
+        "id": "d",
+        "text": "A demising wall with no opening protectives allowed"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fire barriers create compartments within a building; they are rated assemblies that can be load-bearing and must address openings and penetrations.",
+    "distractorExplanations": {
+      "a": "Exterior curtain walls are envelope components, not interior fire barriers.",
+      "c": "Smoke-only walls lack the fire-resistance rating of fire barriers.",
+      "d": "Fire barriers may have protected openings when permitted by code."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "Fire partitions differ from fire barriers chiefly because fire partitions:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Must always extend from foundation to roof without exception"
+      },
+      {
+        "id": "b",
+        "text": "Are required to remain standing if the opposite side collapses"
+      },
+      {
+        "id": "c",
+        "text": "Typically have lower fire-resistance ratings and are used to subdivide tenant spaces or dwelling units"
+      },
+      {
+        "id": "d",
+        "text": "Cannot occur in corridors or exit access passageways"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fire partitions (often 1-hour) separate units or rooms; fire barriers (often 1–2 hour) create larger fire compartments and may have stricter continuity rules.",
+    "distractorExplanations": {
+      "a": "Foundation-to-roof continuity is a fire wall characteristic, not typical of partitions.",
+      "b": "Partitions are commonly used along dwelling unit and tenant separations, including corridors.",
+      "d": "Partitions are commonly used along dwelling unit and tenant separations, including corridors."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "Under NFPA 221, the term 'opening protective' refers to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Any self-closing door regardless of fire rating"
+      },
+      {
+        "id": "b",
+        "text": "A sprinkler head within 4 ft of a doorway"
+      },
+      {
+        "id": "c",
+        "text": "A smoke detector mounted above a transom"
+      },
+      {
+        "id": "d",
+        "text": "A listed assembly installed in an opening in a fire-rated barrier to maintain the rating of the wall or floor"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Opening protectives — fire doors, shutters, windows, and dampers — are tested assemblies that restore the fire-resistance rating at penetrations.",
+    "distractorExplanations": {
+      "a": "Self-closing alone does not establish a fire-rated opening protective.",
+      "b": "Sprinklers near doors do not substitute for rated opening protectives.",
+      "c": "Sprinklers near doors do not substitute for rated opening protectives."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "A fire damper is required in duct penetrations through fire-rated assemblies when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The duct is not part of an engineered smoke control system exception and the penetration is through a rated wall or floor"
+      },
+      {
+        "id": "b",
+        "text": "The duct serves only a single room under 1,000 ft²"
+      },
+      {
+        "id": "c",
+        "text": "The HVAC system is shut down during a fire alarm"
+      },
+      {
+        "id": "d",
+        "text": "The duct is constructed of galvanized steel regardless of size"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fire dampers close upon heat detection to maintain the integrity of fire barriers and fire partitions at duct openings.",
+    "distractorExplanations": {
+      "b": "System shutdown does not replace the need for dampers unless specifically permitted.",
+      "c": "System shutdown does not replace the need for dampers unless specifically permitted.",
+      "d": "Duct material does not waive fire damper requirements."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "A combination fire/smoke damper is typically specified when a duct penetrates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "An unrated interior partition in a single-family dwelling"
+      },
+      {
+        "id": "b",
+        "text": "A smoke barrier or other assembly requiring both fire resistance and smoke leakage control"
+      },
+      {
+        "id": "c",
+        "text": "An exterior brick veneer with no rated cavity"
+      },
+      {
+        "id": "d",
+        "text": "A roof parapet with no occupied space below"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Combination dampers meet fire-resistance and smoke leakage criteria — common at smoke barrier penetrations and some corridor walls.",
+    "distractorExplanations": {
+      "a": "Unrated partitions do not require combination dampers.",
+      "c": "Exterior veneer without rated assemblies does not trigger damper requirements.",
+      "d": "Parapets without rated penetrations do not require dampers."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "Fire dampers are commonly actuated by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A manual pull station at the building entrance"
+      },
+      {
+        "id": "b",
+        "text": "Occupant voice commands through the PA system"
+      },
+      {
+        "id": "c",
+        "text": "A fusible link or heat-responsive device that releases the damper blade to close"
+      },
+      {
+        "id": "d",
+        "text": "Annual pressure testing of the duct system"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fusible links (typically 165°F or 212°F) are the traditional release method; some systems use electric heat detectors tied to the fire alarm.",
+    "distractorExplanations": {
+      "a": "Pull stations activate alarms, not individual fire dampers.",
+      "b": "Pull stations activate alarms, not individual fire dampers.",
+      "d": "Duct pressure testing is maintenance, not damper actuation."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "A 90-minute fire door assembly is most commonly associated with:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Openings in 20-minute corridor partitions only"
+      },
+      {
+        "id": "b",
+        "text": "Unrated exterior entrances to retail stores"
+      },
+      {
+        "id": "c",
+        "text": "Smoke barriers rated for leakage only without fire rating"
+      },
+      {
+        "id": "d",
+        "text": "Openings in 2-hour fire walls or barriers where door rating is typically 3/4 of the wall rating"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Door ratings are often 3/4 of the wall rating (e.g., 90-minute doors in 2-hour walls); 20-minute doors serve lower-rated partitions.",
+    "distractorExplanations": {
+      "a": "20-minute doors pair with 1-hour or corridor partitions, not 2-hour walls.",
+      "b": "Unrated entrances do not require 90-minute assemblies.",
+      "c": "Unrated entrances do not require 90-minute assemblies."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "A 20-minute fire-rated door is frequently used at:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Corridor walls and some fire partition openings where a 1-hour wall is reduced at the door"
+      },
+      {
+        "id": "b",
+        "text": "2-hour boiler room enclosures requiring 90-minute doors"
+      },
+      {
+        "id": "c",
+        "text": "Fire walls requiring 120-minute door assemblies"
+      },
+      {
+        "id": "d",
+        "text": "Unrated storage closets in fully sprinklered offices only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Corridor door pairs often use 20-minute rated doors in 1-hour corridor walls per common building code tables.",
+    "distractorExplanations": {
+      "b": "Boiler rooms typically need higher door ratings matching barrier ratings.",
+      "c": "Fire walls require door ratings per wall rating tables, not 20 minutes.",
+      "d": "Closet doors may be unrated when not in rated walls."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "Fire door assemblies must be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Field modified to add vision kits without label approval"
+      },
+      {
+        "id": "b",
+        "text": "Installed as a complete listed assembly including frame, door, hardware, and required gasketing per the listing"
+      },
+      {
+        "id": "c",
+        "text": "Propped open with magnetic holders during all business hours"
+      },
+      {
+        "id": "d",
+        "text": "Painted any color regardless of intumescent seal requirements"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "NFPA 80 requires fire doors to be maintained as labeled assemblies; field modifications void listings unless permitted by the door manufacturer.",
+    "distractorExplanations": {
+      "a": "Unauthorized vision kit modifications can void the fire door label.",
+      "c": "Hold-open devices must be tied to release on alarm unless otherwise permitted.",
+      "d": "Paint can cover intumescent seals and void performance."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "Penetration firestopping is required to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Seal exterior windows against wind-driven rain only"
+      },
+      {
+        "id": "b",
+        "text": "Reduce HVAC noise between adjacent offices"
+      },
+      {
+        "id": "c",
+        "text": "Restore the fire-resistance rating of a wall or floor where piping, cables, or ducts pass through"
+      },
+      {
+        "id": "d",
+        "text": "Support conduit loads without any sealant"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Firestopping systems are tested to limit fire and sometimes smoke passage at penetrations; they are part of the rated assembly.",
+    "distractorExplanations": {
+      "a": "Weather sealing is not firestopping.",
+      "b": "Structural support alone does not restore fire rating.",
+      "d": "Structural support alone does not restore fire rating."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "A through-penetration firestop system is tested per:",
+    "options": [
+      {
+        "id": "a",
+        "text": "NFPA 25 only for sprinkler pipe clearance"
+      },
+      {
+        "id": "b",
+        "text": "ASHRAE 90.1 for energy code compliance"
+      },
+      {
+        "id": "c",
+        "text": "OSHA fall protection standards"
+      },
+      {
+        "id": "d",
+        "text": "ASTM E814 (UL 1479) as a system of penetrating item, opening, and fill material"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Penetration firestopping is evaluated as a system — not individual products in isolation — under ASTM E814/UL 1479.",
+    "distractorExplanations": {
+      "a": "NFPA 25 covers sprinkler inspection, not firestop system testing.",
+      "b": "NFPA 25 covers sprinkler inspection, not firestop system testing.",
+      "c": "Energy codes do not define firestop test standards."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "Membrane penetrations in fire-rated gypsum walls differ from through-penetrations because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The penetrating item does not pass completely through the wall assembly to the opposite side"
+      },
+      {
+        "id": "b",
+        "text": "They never require any firestopping material"
+      },
+      {
+        "id": "c",
+        "text": "They apply only to exterior curtain wall mullions"
+      },
+      {
+        "id": "d",
+        "text": "They are exempt in all 2-hour rated barriers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Outlet boxes and similar items that pierce one side of a membrane require listed firestop or listed box arrangements per code.",
+    "distractorExplanations": {
+      "b": "Curtain wall mullions are a different application.",
+      "c": "Curtain wall mullions are a different application.",
+      "d": "Higher ratings do not automatically exempt membrane penetrations."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "Compartmentation strategy in fire confinement aims to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eliminate all openings between rooms for architectural privacy"
+      },
+      {
+        "id": "b",
+        "text": "Divide a building into fire-rated zones so fire and smoke spread are limited while occupants evacuate"
+      },
+      {
+        "id": "c",
+        "text": "Replace the need for any active detection systems"
+      },
+      {
+        "id": "d",
+        "text": "Concentrate all fuel loads into a single protected room"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Compartmentation uses rated barriers, partitions, and floors to buy time for egress and fire department operations.",
+    "distractorExplanations": {
+      "a": "Rated openings with protectives are permitted; total elimination of openings is not the strategy.",
+      "c": "Detection and alarms complement passive compartmentation.",
+      "d": "Concentrating fuel loads increases hazard; compartmentation limits spread."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "A horizontal assembly in fire confinement is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A lateral bracing member in an unrated mezzanine only"
+      },
+      {
+        "id": "b",
+        "text": "A smoke curtain hung from an unrated ceiling tile"
+      },
+      {
+        "id": "c",
+        "text": "A fire-resistance-rated floor or roof assembly that separates building levels or spaces vertically"
+      },
+      {
+        "id": "d",
+        "text": "An exterior sidewalk at grade"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Horizontal assemblies (floors/ceilings) are part of the compartment envelope along with walls and shaft enclosures.",
+    "distractorExplanations": {
+      "a": "Unrated mezzanine bracing is not a rated horizontal assembly.",
+      "b": "Exterior sidewalks are outside the building compartmentation model.",
+      "d": "Exterior sidewalks are outside the building compartmentation model."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "A shaft enclosure is required around:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Single-story mechanical rooms with no vertical openings"
+      },
+      {
+        "id": "b",
+        "text": "Exterior loading docks at grade only"
+      },
+      {
+        "id": "c",
+        "text": "Temporary construction fencing"
+      },
+      {
+        "id": "d",
+        "text": "Stairways, elevators, dumbwaiters, and other vertical openings that connect multiple stories"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Shaft enclosures prevent fire and smoke migration via vertical chases; they are continuous rated barriers around vertical openings.",
+    "distractorExplanations": {
+      "a": "Single-story rooms without vertical continuity are not shafts.",
+      "b": "Loading docks at grade lack multi-story vertical openings.",
+      "c": "Loading docks at grade lack multi-story vertical openings."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "Shaft enclosure walls typically must have a fire-resistance rating of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "At least equal to the rating required for the intervening floor assembly, often 1 to 2 hours depending on occupancy"
+      },
+      {
+        "id": "b",
+        "text": "0 minutes when the building is fully sprinklered"
+      },
+      {
+        "id": "c",
+        "text": "20 minutes regardless of building height"
+      },
+      {
+        "id": "d",
+        "text": "4 hours in every occupancy without exception"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Shaft ratings follow building and occupancy requirements; sprinklers may reduce some ratings but do not universally eliminate shaft enclosures.",
+    "distractorExplanations": {
+      "b": "20 minutes is insufficient for most multi-story shaft enclosures.",
+      "c": "20 minutes is insufficient for most multi-story shaft enclosures.",
+      "d": "Four hours applies only in specific high-hazard or high-rise contexts."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "Smoke barriers differ from fire barriers because smoke barriers:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Must always be rated 4 hours for structural stability"
+      },
+      {
+        "id": "b",
+        "text": "Are constructed to resist the movement of smoke but may not require the same fire-resistance rating as fire barriers"
+      },
+      {
+        "id": "c",
+        "text": "Are only used on the building exterior"
+      },
+      {
+        "id": "d",
+        "text": "Cannot have any doors or transfer openings"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Smoke barriers limit smoke migration (often in health care and I-2 occupancies); fire barriers provide fire-resistance-rated separation.",
+    "distractorExplanations": {
+      "a": "Four-hour structural stability is a fire wall concept, not typical smoke barriers.",
+      "c": "Smoke barriers are interior partitions controlling smoke movement.",
+      "d": "Smoke barriers may have rated doors and controlled openings."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "In health care occupancies, smoke barrier continuity is critical because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "All patients evacuate vertically within 2 minutes"
+      },
+      {
+        "id": "b",
+        "text": "Smoke barriers eliminate the need for nurse staffing"
+      },
+      {
+        "id": "c",
+        "text": "Patients may not be moved immediately and smoke migration must be limited to defend-in-place zones"
+      },
+      {
+        "id": "d",
+        "text": "Fire walls are prohibited in hospitals"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Defend-in-place strategies rely on smoke compartments bounded by smoke barriers with controlled openings.",
+    "distractorExplanations": {
+      "a": "Immediate full evacuation is often impractical for immobile patients.",
+      "b": "Hospitals use fire barriers, fire walls, and smoke barriers as applicable.",
+      "d": "Hospitals use fire barriers, fire walls, and smoke barriers as applicable."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "A smoke compartment in NFPA 101 health care chapters is bounded by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unrated cubicle curtains only"
+      },
+      {
+        "id": "b",
+        "text": "Exterior windows with operable sashes"
+      },
+      {
+        "id": "c",
+        "text": "Parking garage vehicular ramps"
+      },
+      {
+        "id": "d",
+        "text": "Smoke barriers with access to an exit or refuge area within prescribed travel limits"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Smoke compartments limit smoke spread size so staff can relocate patients horizontally within the floor.",
+    "distractorExplanations": {
+      "a": "Cubicle curtains are not smoke barrier assemblies.",
+      "b": "Windows do not define smoke compartments.",
+      "c": "Windows do not define smoke compartments."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "Fire walls must generally extend:",
+    "options": [
+      {
+        "id": "a",
+        "text": "From the foundation through the roof, with specific exceptions for stepped buildings and certain parapet conditions"
+      },
+      {
+        "id": "b",
+        "text": "Only between the ceiling and suspended tile grid"
+      },
+      {
+        "id": "c",
+        "text": "From the third floor to the roof exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Through exterior windows at each floor"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Continuous vertical extension prevents fire from bypassing the wall via floor-ceiling spaces or roof voids.",
+    "distractorExplanations": {
+      "b": "Starting at the third floor leaves lower stories unprotected.",
+      "c": "Starting at the third floor leaves lower stories unprotected.",
+      "d": "Windows are openings requiring protectives, not wall extensions."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "When a fire wall separates two portions of a building, structural design often requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shared continuous floor joists spanning the wall without break"
+      },
+      {
+        "id": "b",
+        "text": "Independent structural framing on each side so collapse on one side does not pull down the other"
+      },
+      {
+        "id": "c",
+        "text": "A single unbraced column through the wall centerline"
+      },
+      {
+        "id": "d",
+        "text": "Common roof trusses with no fire cut clearance"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Structural independence is a defining fire wall feature — butt joints, double walls, or protected structural members achieve this.",
+    "distractorExplanations": {
+      "a": "Continuous joists through fire walls violate structural independence.",
+      "c": "Single through-columns can transmit collapse forces.",
+      "d": "Shared trusses without fire cuts can bridge collapse."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "Fire wall coped with double walls (two separate walls on a common slab) achieves:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Elimination of all fire-resistance rating requirements"
+      },
+      {
+        "id": "b",
+        "text": "A smoke barrier only without fire rating"
+      },
+      {
+        "id": "c",
+        "text": "Structural independence while maintaining the required fire-resistance rating between building sections"
+      },
+      {
+        "id": "d",
+        "text": "Permission to remove all opening protectives"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Double-wall fire wall construction is a recognized method to allow differential movement and prevent collapse transfer.",
+    "distractorExplanations": {
+      "a": "Rating requirements still apply to the fire wall assembly.",
+      "b": "Opening protectives remain required at rated openings.",
+      "d": "Opening protectives remain required at rated openings."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "A fire barrier continuity requirement typically means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The barrier stops at the ceiling grid and resumes above the tiles"
+      },
+      {
+        "id": "b",
+        "text": "Only the door leaf needs rating, not the surrounding wall"
+      },
+      {
+        "id": "c",
+        "text": "Penetrations need no protection if under 2 inches diameter"
+      },
+      {
+        "id": "d",
+        "text": "The barrier extends from the top of the foundation or floor assembly below to the underside of the floor or roof above"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Continuity seals the compartment envelope; gaps at ceilings and floors allow fire and smoke bypass.",
+    "distractorExplanations": {
+      "a": "Ceiling grid gaps are a common failure point without proper continuity.",
+      "b": "The full assembly, not just the door, must maintain rating.",
+      "c": "The full assembly, not just the door, must maintain rating."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "confining-fires",
+    "prompt": "An exit enclosure (exit stair shaft) is a type of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shaft enclosure forming part of the means of egress with fire-resistance-rated walls and protected openings"
+      },
+      {
+        "id": "b",
+        "text": "Unrated decorative stair wrap"
+      },
+      {
+        "id": "c",
+        "text": "Exterior fire escape bolted to window frames only"
+      },
+      {
+        "id": "d",
+        "text": "Mechanical room with no vertical continuity"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Exit enclosures protect egress paths from fire and smoke in the building they serve.",
+    "distractorExplanations": {
+      "b": "Exterior escapes are separate structures, not interior exit enclosures.",
+      "c": "Exterior escapes are separate structures, not interior exit enclosures.",
+      "d": "Mechanical rooms are not exit stairs."
+    },
+    "difficulty": "easy"
+  }
+]

@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "A PQS is preparing a BOQ for a JCT Standard Building Contract using NRM2. Which document governs measurement rules?",
+    "options": [
+      {
+        "id": "a",
+        "text": "NRM2: Detailed measurement for building works, with SMM7 legacy references only where contract specifies"
+      },
+      {
+        "id": "b",
+        "text": "CESMM4 without modification for building works"
+      },
+      {
+        "id": "c",
+        "text": "Contractor's internal pricing spreadsheet only"
+      },
+      {
+        "id": "d",
+        "text": "RICS Red Book valuation rules for all BOQ items"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "UK building BOQs for tender typically follow NRM2 measurement rules.",
+    "distractorExplanations": {
+      "b": "CESMM applies to civil engineering, not building BOQ under NRM2.",
+      "c": "BOQ measurement must follow agreed standard rules for tender comparability.",
+      "d": "Red Book governs valuation disputes, not tender BOQ preparation."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "An item description reads 'Excavate foundation trenches, max depth 1.2m'. The site requires 2.1m deep trenches in rock. How should quantification treat this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Measure all excavation to 1.2m rate regardless of actual depth"
+      },
+      {
+        "id": "b",
+        "text": "Amend description and measure additional depth/rock as separate items or provisional sum per tender strategy"
+      },
+      {
+        "id": "c",
+        "text": "Omit excavation because it is too complex"
+      },
+      {
+        "id": "d",
+        "text": "Hide rock excavation in preliminaries without measurement"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "BOQ preparation must align descriptions and quantities with site and design information.",
+    "distractorExplanations": {
+      "a": "BOQ must reflect anticipated scope or risk allowances.",
+      "c": "Complex conditions need measured or provisional items, not omission.",
+      "d": "Major scope items should be identifiable in BOQ or defined provisional sums."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "Under NRM2, hollowcore precast concrete floor slabs should be measured in:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Linear metres along building perimeter only"
+      },
+      {
+        "id": "b",
+        "text": "Number of trucks delivered"
+      },
+      {
+        "id": "c",
+        "text": "Square metres stating thickness, noting structural screed and topping separately where applicable"
+      },
+      {
+        "id": "d",
+        "text": "Tonnes of concrete only without area"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "NRM2 sets unit conventions for precast flooring and associated notes.",
+    "distractorExplanations": {
+      "a": "Floor slabs are area-measured, not perimeter-linear.",
+      "b": "BOQ measurement uses construction units per NRM2, not logistics units.",
+      "d": "Precast slabs are typically measured in m² with thickness stated."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "A contractor's estimator finds the BOQ concrete quantity is 15% below their take-off. What is the professional quantification response?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Price the BOQ quantity without review to save time"
+      },
+      {
+        "id": "b",
+        "text": "Automatically add 15% to every BOQ line"
+      },
+      {
+        "id": "c",
+        "text": "Ignore take-off because BOQ is always wrong"
+      },
+      {
+        "id": "d",
+        "text": "Reconcile differences against drawings, NRM2 rules, and query ambiguities before pricing"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Estimators reconcile BOQ to take-off and raise queries on material variances.",
+    "distractorExplanations": {
+      "a": "Pricing should follow reconciled quantities or qualified assumptions.",
+      "b": "Global uplifts without analysis distort tender comparability.",
+      "c": "Reconciliation is standard professional practice."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "NRM1 is requested for an employer's pre-tender elemental cost plan. NRM2 BOQ will follow for tender. What is the relationship?",
+    "options": [
+      {
+        "id": "a",
+        "text": "NRM1 structures cost planning elements; NRM2 provides detailed measurement for pricing and tender BOQ"
+      },
+      {
+        "id": "b",
+        "text": "NRM1 replaces NRM2 entirely on all projects"
+      },
+      {
+        "id": "c",
+        "text": "NRM2 is only for post-contract final accounts"
+      },
+      {
+        "id": "d",
+        "text": "They are identical documents with different names"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "NRM1 supports cost plans; NRM2 supports detailed measurement and BOQ.",
+    "distractorExplanations": {
+      "b": "NRM1 and NRM2 serve different purposes in the cost cycle.",
+      "c": "NRM2 is used for tender BOQ and measurement during procurement.",
+      "d": "NRM1 is elemental cost planning; NRM2 is detailed measurement."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "A provisional sum for 'specialist façade access' is included in the BOQ. How should tenderers price it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Distribute the PS value across unrelated items"
+      },
+      {
+        "id": "b",
+        "text": "Include only attendance/mark-up unless tender documents invite lump-sum pricing of the PS"
+      },
+      {
+        "id": "c",
+        "text": "Always include full £1m default in every tender"
+      },
+      {
+        "id": "d",
+        "text": "Exclude provisional sums from tender totals"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Provisional sum pricing depends on tender instructions and contract re-measurement rules.",
+    "distractorExplanations": {
+      "a": "Provisional sums are re-measured or ascertained per contract terms.",
+      "c": "PS pricing follows contract and tender instructions.",
+      "d": "Tender totals typically include provisional sums as priced."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "Prime cost sums for light fittings are in the employer's BOQ. What risk does the employer retain?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No risk — contractor guarantees PC sum final cost"
+      },
+      {
+        "id": "b",
+        "text": "All installation risk only with no supply risk"
+      },
+      {
+        "id": "c",
+        "text": "Difference between PC allowance and actual supply cost plus contractor attendance"
+      },
+      {
+        "id": "d",
+        "text": "Contractor carries supply and inflation risk always"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "PC sums allocate supply cost risk to the employer with contractor attendance.",
+    "distractorExplanations": {
+      "a": "PC sums transfer supply cost risk to employer subject to contract.",
+      "b": "Employer typically carries supply price risk on PC items.",
+      "d": "Unless fixed-price supply is stated, PC risk sits with employer."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "When measuring stud partitions to NRM2, which factor is included in the measured area?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only studs without boards because boards are finishing"
+      },
+      {
+        "id": "b",
+        "text": "Measure perimeter linear metres of rooms instead"
+      },
+      {
+        "id": "c",
+        "text": "Exclude all door openings regardless of size"
+      },
+      {
+        "id": "d",
+        "text": "Partition area measured face to face including openings unless rules state deduction thresholds"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "NRM2 partition measurement follows defined area rules and opening deductions.",
+    "distractorExplanations": {
+      "a": "Partition items include complete partition construction per NRM2.",
+      "b": "Partitions are area-measured, not taken as room perimeter default.",
+      "c": "NRM2 sets opening deduction rules; not all openings are excluded."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "A BOQ for NEC Option B requires activity schedule instead of traditional BOQ. What quantification focus changes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Price against defined activities/milestones with scope references rather than only trade bills"
+      },
+      {
+        "id": "b",
+        "text": "No measurement needed because NEC has no quantities"
+      },
+      {
+        "id": "c",
+        "text": "Use FIDIC Red Book BOQ format without change"
+      },
+      {
+        "id": "d",
+        "text": "Prepare Red Book valuation only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "NEC Option B uses BOQ; quantification must align with chosen NEC option.",
+    "distractorExplanations": {
+      "b": "Option B uses bill of quantities; other options use different schedules.",
+      "c": "Contract form dictates pricing document structure.",
+      "d": "Tender pricing document must match NEC Option B requirements."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "An apprentice QS measures external paving. The drawing shows 1,250 m² but site boundaries reduce workable area. What action is required?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Measure full drawing area ignoring boundaries"
+      },
+      {
+        "id": "b",
+        "text": "Adjust quantity to workable area per drawings and site constraints, note assumption in query if unclear"
+      },
+      {
+        "id": "c",
+        "text": "Use 1,000 m² as round number without basis"
+      },
+      {
+        "id": "d",
+        "text": "Leave paving unmeasured as provisional sum always"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Measurement must reflect constructible scope with queries for ambiguities.",
+    "distractorExplanations": {
+      "a": "Quantities should reflect constructible scope.",
+      "c": "Rounded quantities need documented measurement basis.",
+      "d": "Defined paving scope should be measured where information allows."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "NRM3 is requested for maintenance quantification on a shopping centre. Its primary use is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tender BOQ for new stadium construction"
+      },
+      {
+        "id": "b",
+        "text": "Legal adjudication procedure guide"
+      },
+      {
+        "id": "c",
+        "text": "Order of cost estimates and elemental cost planning for building maintenance works"
+      },
+      {
+        "id": "d",
+        "text": "Structural engineering design calculations"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "NRM3 supports measurement and cost planning of maintenance works.",
+    "distractorExplanations": {
+      "a": "NRM3 addresses maintenance works, not new-build tender BOQ.",
+      "b": "NRM3 is a measurement/cost standard, not dispute procedure.",
+      "d": "NRM3 does not replace structural design standards."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "A tender BOQ line for 'Formwork to foundations' is lumped with concrete supply and pour. What is the quantification concern?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lumping is always preferred for speed"
+      },
+      {
+        "id": "b",
+        "text": "Formwork should never be measured"
+      },
+      {
+        "id": "c",
+        "text": "Only the total lump sum matters for employer"
+      },
+      {
+        "id": "d",
+        "text": "Combined items reduce tender transparency and comparability — split per NRM2 where possible"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "BOQ structure should separate major cost components per measurement rules.",
+    "distractorExplanations": {
+      "a": "Transparent BOQ structure supports competitive tender analysis.",
+      "b": "Formwork is a measurable NRM2 item.",
+      "c": "Employers need rate and quantity visibility for variations and valuations."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "During post-contract measurement, a variation adds 14 nr extra doors. Contract uses NRM2 BOQ rates. How are they valued?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Value using contract rates for similar items or fair rates with quantity per variation rules"
+      },
+      {
+        "id": "b",
+        "text": "No measurement because variations are lump sum always"
+      },
+      {
+        "id": "c",
+        "text": "Use current market dayworks without contract check"
+      },
+      {
+        "id": "d",
+        "text": "Ignore door ironmongery as always included"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Variation quantification follows contract BOQ rates and valuation clauses.",
+    "distractorExplanations": {
+      "b": "Variation valuation uses contract valuation rules and measured quantities.",
+      "c": "Contract valuation procedures take precedence.",
+      "d": "Door variations must address ironmongery scope per contract."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "A QS checks a subcontract BOQ for MEP services. Services drawings are schematic only. Best quantification approach?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Firm detailed quantities from schematic drawings without caveat"
+      },
+      {
+        "id": "b",
+        "text": "Use provisional quantities or provisional sums with defined design development and remeasurement mechanism"
+      },
+      {
+        "id": "c",
+        "text": "Omit MEP entirely from subcontract scope"
+      },
+      {
+        "id": "d",
+        "text": "Copy BOQ from a hospital project unchanged"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Immature MEP design requires provisional quantities/sums and remeasurement provisions.",
+    "distractorExplanations": {
+      "a": "Immature design produces unreliable firm quantities.",
+      "c": "MEP must be scoped with appropriate uncertainty treatment.",
+      "d": "BOQs must reflect project-specific design and scope."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "Bill No. 4 in a BOQ covers preliminaries. Which item belongs there under typical UK practice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Structural steel permanent works"
+      },
+      {
+        "id": "b",
+        "text": "Client's land acquisition costs"
+      },
+      {
+        "id": "c",
+        "text": "Site management, temporary services, hoarding, and insurances specific to preliminaries"
+      },
+      {
+        "id": "d",
+        "text": "Architect's design fee"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Preliminaries cover contractor site-specific setup and management costs.",
+    "distractorExplanations": {
+      "a": "Permanent works belong in measured works bills.",
+      "b": "Land costs are outside contractor preliminaries.",
+      "d": "Consultant fees are not contractor BOQ preliminaries."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "An employer BOQ requires 'fixed quantity' items despite incomplete design. What tender risk arises?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No risk because contractors always absorb quantity errors"
+      },
+      {
+        "id": "b",
+        "text": "Tenderers ignore quantity and price lump sum only"
+      },
+      {
+        "id": "c",
+        "text": "Fixed quantities eliminate all variation entitlement"
+      },
+      {
+        "id": "d",
+        "text": "Tenderers may price risk into rates; employer may carry quantity error risk if design changes"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Fixed quantities on incomplete design shift quantity risk and affect tender pricing.",
+    "distractorExplanations": {
+      "a": "Fixed quantities allocate quantity risk per contract and design completeness.",
+      "b": "BOQ tenderers price stated quantities and rates.",
+      "c": "Variations can still arise from scope or instruction changes."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "Quantification of reinforcement should under NRM2 typically be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tonnes linked to structural schedules, noting bar type, diameter, and waste policy per BOQ"
+      },
+      {
+        "id": "b",
+        "text": "Counted as number of bars without weight"
+      },
+      {
+        "id": "c",
+        "text": "Included only inside concrete m³ rate always"
+      },
+      {
+        "id": "d",
+        "text": "Excluded because it is invisible after pour"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "NRM2 measures reinforcement in tonnes with specification linkage.",
+    "distractorExplanations": {
+      "b": "Reinforcement is weight-measured in tonnes per NRM2 practice.",
+      "c": "Reinforcement is usually a separate measurable item.",
+      "d": "Reinforcement is a major cost item requiring measurement."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "A civil sub-package uses CESMM4 on a rail project. A building QS joins the team. What competency is required?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Force NRM2 on all rail track items regardless"
+      },
+      {
+        "id": "b",
+        "text": "Apply CESMM4 measurement rules and coordinate interfaces with building NRM2 packages"
+      },
+      {
+        "id": "c",
+        "text": "Avoid all measurement on civil packages"
+      },
+      {
+        "id": "d",
+        "text": "Use SMM7 for earthworks on rail"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "QS quantification may require CESMM4 on civil interfaces alongside NRM2 building works.",
+    "distractorExplanations": {
+      "a": "Civil works follow CESMM, not NRM2.",
+      "c": "Interface coordination requires understanding both rule sets.",
+      "d": "CESMM is the standard for civil engineering measurement."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "Tender documents require electronic BOQ in CESMM/NRM compliant CSV for BIM take-off checking. Purpose is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Replace the need for professional measurement entirely"
+      },
+      {
+        "id": "b",
+        "text": "Hide rates from the employer always"
+      },
+      {
+        "id": "c",
+        "text": "Enable consistent automated quantity extraction and audit trail against model and rules"
+      },
+      {
+        "id": "d",
+        "text": "Eliminate provisional sums by software default"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Structured electronic BOQ supports BIM reconciliation and tender analysis.",
+    "distractorExplanations": {
+      "a": "BIM quantities still require rule-based validation by QS.",
+      "b": "Electronic format supports transparency and analysis, not concealment.",
+      "d": "Provisional items remain a professional judgment."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "A measured item 'Brickwork in outer leaf' excludes insulation cavity. The insulation is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Automatically included in brickwork rate"
+      },
+      {
+        "id": "b",
+        "text": "Ignored as architect's detail only"
+      },
+      {
+        "id": "c",
+        "text": "Added only in preliminaries"
+      },
+      {
+        "id": "d",
+        "text": "Measured separately as its own NRM2 item linked to wall build-up"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Composite walls are split into measurable components per NRM2.",
+    "distractorExplanations": {
+      "a": "Cavity insulation is a separate measurable component.",
+      "b": "Full wall build-up must be quantified for pricing.",
+      "c": "Insulation is permanent works, not preliminaries."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "Final account quantification dispute: contractor claims extra excavation; employer says BOQ covered it. First QS step?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compare contract BOQ descriptions, drawings, site records, and variation/clause entitlement"
+      },
+      {
+        "id": "b",
+        "text": "Split difference 50/50 without analysis"
+      },
+      {
+        "id": "c",
+        "text": "Pay contractor claim in full to close account"
+      },
+      {
+        "id": "d",
+        "text": "Reject all claims automatically"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Final account measurement disputes are resolved against contract documents and records.",
+    "distractorExplanations": {
+      "b": "Final account resolution requires contractual and measured evidence.",
+      "c": "Claims must be substantiated against contract records.",
+      "d": "Valid substantiated claims must be evaluated fairly."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "For APC Level 3 quantification, which example best demonstrates competency?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Watching a senior QS measure without participating"
+      },
+      {
+        "id": "b",
+        "text": "Leading BOQ production, resolving measurement ambiguities, and pricing logic on a live project"
+      },
+      {
+        "id": "c",
+        "text": "Using only software output without review"
+      },
+      {
+        "id": "d",
+        "text": "Delegating all queries to the architect"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Level 3 quantification is demonstrated through leadership of measurement and costing.",
+    "distractorExplanations": {
+      "a": "Level 3 requires personal technical leadership and advice.",
+      "c": "Level 3 includes professional judgment on measurement.",
+      "d": "QS leads quantification and contractual scope clarification."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "A BOQ note states 'all quantities are provisional'. Under JCT SBC, tender comparison is affected because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Provisional quantities make tender prices non-comparable always"
+      },
+      {
+        "id": "b",
+        "text": "Contractor must ignore quantities entirely"
+      },
+      {
+        "id": "c",
+        "text": "Tenderers may price differently for remeasurement risk; employer should analyse rate build-ups"
+      },
+      {
+        "id": "d",
+        "text": "Employer cannot award contract with provisional quantities"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Provisional quantities require rate-focused tender analysis and remeasurement planning.",
+    "distractorExplanations": {
+      "a": "Comparable rate analysis remains possible with provisional quantities.",
+      "b": "Tenderers still price BOQ items for comparison.",
+      "d": "JCT contracts commonly use provisional quantities with remeasurement."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "Pricing a BOQ item for 'Suspended ceiling — tile and grid' requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guess a single figure from memory"
+      },
+      {
+        "id": "b",
+        "text": "Use architect's ceiling height as price only"
+      },
+      {
+        "id": "c",
+        "text": "Exclude grid system as supplied by others always"
+      },
+      {
+        "id": "d",
+        "text": "Rate build-up from material, labour, waste, access, and smallworks with measured m² quantity"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "BOQ pricing links measured quantities to substantiated rate build-ups.",
+    "distractorExplanations": {
+      "a": "Pricing requires structured build-up and quantity linkage.",
+      "b": "Height affects components but pricing needs full build-up.",
+      "c": "Scope must be confirmed; grid is typically included."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "quantification-measurement",
+    "prompt": "An international BOQ uses FIDIC conditions with method of measurement based on UK practice. Quantification should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Follow contract-stated measurement method and coordinate with FIDIC re-measurement clauses"
+      },
+      {
+        "id": "b",
+        "text": "Apply only local QS habit with no contract check"
+      },
+      {
+        "id": "c",
+        "text": "Ignore BOQ because FIDIC is lump sum only always"
+      },
+      {
+        "id": "d",
+        "text": "Use JCT valuation rules in Dubai automatically"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "International contracts require adherence to stated measurement and FIDIC valuation rules.",
+    "distractorExplanations": {
+      "b": "Contract documents define applicable measurement rules.",
+      "c": "FIDIC forms vary; many use BOQ or re-measurement.",
+      "d": "Applicable law and contract determine measurement and valuation."
+    },
+    "difficulty": "hard"
+  }
+]

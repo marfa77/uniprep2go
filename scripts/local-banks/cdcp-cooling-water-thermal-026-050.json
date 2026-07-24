@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Makeup water for cooling towers compensates for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Evaporation, drift, and blowdown losses"
+      },
+      {
+        "id": "b",
+        "text": "Only fiber optic breakage"
+      },
+      {
+        "id": "c",
+        "text": "UPS battery watering always"
+      },
+      {
+        "id": "d",
+        "text": "Fire suppression discharge only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Tower water balance requires fresh makeup for evaporative losses.",
+    "distractorExplanations": {
+      "b": "Fiber unrelated.",
+      "c": "UPS batteries are separate.",
+      "d": "Fire discharge is occasional event."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Glycol in outdoor chilled water loops prevents:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Freezing in cold climates during idle or low-load conditions"
+      },
+      {
+        "id": "b",
+        "text": "All corrosion forever without inhibitors"
+      },
+      {
+        "id": "c",
+        "text": "Need for any pumps"
+      },
+      {
+        "id": "d",
+        "text": "Humidity control"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Antifreeze protects exposed piping; inhibitors still needed.",
+    "distractorExplanations": {
+      "b": "Inhibitors and monitoring still required.",
+      "c": "Pumps still circulate fluid.",
+      "d": "Humidity is air-side control."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Cold aisle containment risks if poorly designed include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Negative plenum pressure and insufficient airflow to bottom of racks"
+      },
+      {
+        "id": "b",
+        "text": "Automatic fire suppression deletion"
+      },
+      {
+        "id": "c",
+        "text": "Improved PUE always without trade-offs"
+      },
+      {
+        "id": "d",
+        "text": "Zero need for sensors"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Containment must be balanced with fan/static pressure to feed all rack intakes.",
+    "distractorExplanations": {
+      "b": "Fire systems remain mandatory.",
+      "c": "Design trade-offs exist.",
+      "d": "Sensors still needed."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Indirect evaporative cooling separates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Data hall air loop from outdoor air via heat exchanger"
+      },
+      {
+        "id": "b",
+        "text": "UPS from PDUs"
+      },
+      {
+        "id": "c",
+        "text": "Generators from fuel"
+      },
+      {
+        "id": "d",
+        "text": "Patch panels from switches"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Indirect systems precool without introducing outdoor contaminants/humidity directly.",
+    "distractorExplanations": {
+      "b": "Power distribution unrelated.",
+      "c": "Fuel system unrelated.",
+      "d": "Network unrelated."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Sensible heat ratio in data halls is typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "High—most IT load is sensible with limited latent cooling need"
+      },
+      {
+        "id": "b",
+        "text": "Zero"
+      },
+      {
+        "id": "c",
+        "text": "Dominated by latent from people only"
+      },
+      {
+        "id": "d",
+        "text": "Irrelevant to CRAC sizing"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "IT gear produces sensible heat; latent load is smaller except humidification/dehumidification.",
+    "distractorExplanations": {
+      "b": "Heat ratio is non-zero.",
+      "c": "People latent load is minor vs IT.",
+      "d": "Sizing must account for sensible-dominant load."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Chilled water pipe insulation primary purpose is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prevent condensation and reduce thermal losses"
+      },
+      {
+        "id": "b",
+        "text": "Decorate pipes"
+      },
+      {
+        "id": "c",
+        "text": "Increase pipe corrosion by trapping water always"
+      },
+      {
+        "id": "d",
+        "text": "Replace leak detection"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Insulation keeps surface above dew point and improves efficiency.",
+    "distractorExplanations": {
+      "b": "Aesthetics are secondary.",
+      "c": "Proper insulation prevents condensation corrosion.",
+      "d": "Leak detection complements insulation."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Fan wall (fan array) designs offer:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Modular airflow capacity and redundancy with many small fans"
+      },
+      {
+        "id": "b",
+        "text": "No maintenance ever"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of all filters"
+      },
+      {
+        "id": "d",
+        "text": "Only heating mode"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Arrays provide scalable airflow and graceful degradation if one fan fails.",
+    "distractorExplanations": {
+      "b": "Filters and fans need service.",
+      "c": "Filtration remains important.",
+      "d": "Data halls need cooling mode."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Return air grilles at high level in hot aisle designs support:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Collecting warm exhaust without mixing into cold aisles"
+      },
+      {
+        "id": "b",
+        "text": "Dumping cold air into hot aisle"
+      },
+      {
+        "id": "c",
+        "text": "Blocking egress"
+      },
+      {
+        "id": "d",
+        "text": "Fiber termination"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "High returns capture rising hot air efficiently.",
+    "distractorExplanations": {
+      "b": "Cold air should enter cold aisles.",
+      "c": "Egress must remain clear.",
+      "d": "Fiber terminates in trays/panels."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Water usage effectiveness (WUE) measures:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Data centre water consumption relative to IT energy"
+      },
+      {
+        "id": "b",
+        "text": "Only cafeteria water"
+      },
+      {
+        "id": "c",
+        "text": "Fiber attenuation"
+      },
+      {
+        "id": "d",
+        "text": "Battery impedance"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "WUE highlights water stewardship for evaporative and tower-based plants.",
+    "distractorExplanations": {
+      "b": "Facility metric includes cooling water.",
+      "c": "Fiber metric is optical.",
+      "d": "Battery is electrical."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "CRAH fan speed modulation via VFD saves energy by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Matching airflow to load rather than constant maximum speed"
+      },
+      {
+        "id": "b",
+        "text": "Always running fans at 100%"
+      },
+      {
+        "id": "c",
+        "text": "Eliminating all sensors"
+      },
+      {
+        "id": "d",
+        "text": "Stopping humidification forever"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fan power scales roughly with cube of speed—trimming speed saves kW.",
+    "distractorExplanations": {
+      "b": "100% constant wastes energy at partial load.",
+      "c": "Sensors enable modulation.",
+      "d": "Humidity may still be controlled."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Thermal ride-through during chiller restart relies on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buffer mass, stored chilled water volume, and operational procedures"
+      },
+      {
+        "id": "b",
+        "text": "Instant unlimited cooling without plant"
+      },
+      {
+        "id": "c",
+        "text": "Opening exterior windows only"
+      },
+      {
+        "id": "d",
+        "text": "Shutting down all servers immediately always"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Stored capacity and mass buy minutes to restart chillers gracefully.",
+    "distractorExplanations": {
+      "b": "Physics limits ride-through duration.",
+      "c": "Uncontrolled ventilation harms contamination/humidity.",
+      "d": "Controlled response preferred over mass shutdown."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Precision air conditioning vs comfort cooling differs because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Precision units provide close temperature/humidity control year-round at high sensible loads"
+      },
+      {
+        "id": "b",
+        "text": "Comfort cooling is always sufficient for 30 kW/rack"
+      },
+      {
+        "id": "c",
+        "text": "Precision units never use humidity control"
+      },
+      {
+        "id": "d",
+        "text": "Comfort units run 24/7 by default in data halls"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Data halls need tight control and continuous operation unlike typical office HVAC.",
+    "distractorExplanations": {
+      "b": "High density exceeds comfort cooling capacity/control.",
+      "c": "Precision units manage humidity.",
+      "d": "Comfort systems may cycle inappropriately for IT."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Underfloor blockages from cables reduce:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Effective plenum airflow to perforated tiles"
+      },
+      {
+        "id": "b",
+        "text": "Structural slab thickness"
+      },
+      {
+        "id": "c",
+        "text": "Generator fuel consumption"
+      },
+      {
+        "id": "d",
+        "text": "Patch panel port count"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Cable fill obstructs plenum and starves distant cold aisles.",
+    "distractorExplanations": {
+      "b": "Slab unchanged.",
+      "c": "Fuel unrelated.",
+      "d": "Ports unchanged."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Supply plenum pressure too high with containment can:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Force air through floor gaps and cause whistle/leakage losses"
+      },
+      {
+        "id": "b",
+        "text": "Improve sealing automatically"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate need for CRAHs"
+      },
+      {
+        "id": "d",
+        "text": "Lower PUE to zero"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Excess static pressure escapes through unsealed paths wasting energy.",
+    "distractorExplanations": {
+      "b": "May worsen leakage.",
+      "c": "Cooling units still required.",
+      "d": "PUE cannot be zero."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Cooling redundancy for Tier III typically requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Concurrently maintainable redundant cooling paths"
+      },
+      {
+        "id": "b",
+        "text": "Single portable fan only"
+      },
+      {
+        "id": "c",
+        "text": "No spare capacity"
+      },
+      {
+        "id": "d",
+        "text": "Office window AC units exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Tier III cooling allows maintenance on one path while other carries load.",
+    "distractorExplanations": {
+      "b": "Portable fans insufficient.",
+      "c": "Spare capacity required.",
+      "d": "Window units not data-centre grade."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Liquid cooling direct-to-chip systems still need:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Facility water loops, leak mitigation, and air cooling for ancillary heat"
+      },
+      {
+        "id": "b",
+        "text": "No monitoring"
+      },
+      {
+        "id": "c",
+        "text": "Removal of all dry coolers"
+      },
+      {
+        "id": "d",
+        "text": "Tap water only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Hybrid designs handle chip heat in liquid and remaining heat in air.",
+    "distractorExplanations": {
+      "b": "Flow/temp/leak monitoring critical.",
+      "c": "Heat rejection equipment still required.",
+      "d": "Treated facility water or dielectric fluids used."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Night or winter free cooling strategies schedule:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Higher economizer use when ambient supports lower mechanical cooling"
+      },
+      {
+        "id": "b",
+        "text": "Chillers at maximum always"
+      },
+      {
+        "id": "c",
+        "text": "Humidifiers off always regardless of RH"
+      },
+      {
+        "id": "d",
+        "text": "Fire drills only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Seasonal strategies maximize hours of partial or full economizer.",
+    "distractorExplanations": {
+      "b": "Mechanical cooling reduced when economizer viable.",
+      "c": "RH control may still need humidification.",
+      "d": "Fire drills unrelated."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Air filter MERV ratings in CRAH units affect:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Particulate removal efficiency and fan energy"
+      },
+      {
+        "id": "b",
+        "text": "Fiber optic bandwidth"
+      },
+      {
+        "id": "c",
+        "text": "UPS battery life directly"
+      },
+      {
+        "id": "d",
+        "text": "Diesel cetane number"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Higher MERV captures more dust but may increase pressure drop.",
+    "distractorExplanations": {
+      "b": "Network metric unrelated.",
+      "c": "Battery life separate.",
+      "d": "Fuel property unrelated."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Hot aisle / cold aisle with missing blanking panels typically shows:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Higher return temperatures at CRAC and uneven rack inlets"
+      },
+      {
+        "id": "b",
+        "text": "Lower PUE always"
+      },
+      {
+        "id": "c",
+        "text": "Perfect airflow"
+      },
+      {
+        "id": "d",
+        "text": "No change measurable"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Bypass airflow reduces effective cooling delivery.",
+    "distractorExplanations": {
+      "b": "Efficiency usually worsens.",
+      "c": "Uniformity degrades.",
+      "d": "Measurable hot spots appear."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Chilled water storage tanks can provide:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ride-through and load shifting during maintenance or peak pricing"
+      },
+      {
+        "id": "b",
+        "text": "Unlimited cooling without chillers forever"
+      },
+      {
+        "id": "c",
+        "text": "Fiber patching"
+      },
+      {
+        "id": "d",
+        "text": "Employee training only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Thermal storage buffers short outages and can arbitrage energy cost.",
+    "distractorExplanations": {
+      "b": "Storage volume is finite.",
+      "c": "Patching unrelated.",
+      "d": "Training separate."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Environmental monitoring system (EMS) alarms on dew point help:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Avoid condensation when surfaces approach dew point"
+      },
+      {
+        "id": "b",
+        "text": "Track cafeteria spending"
+      },
+      {
+        "id": "c",
+        "text": "Measure fuel tank levels"
+      },
+      {
+        "id": "d",
+        "text": "Count patch cables"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Dew point control prevents moisture on cold surfaces/equipment.",
+    "distractorExplanations": {
+      "b": "Financial unrelated.",
+      "c": "Fuel separate sensors.",
+      "d": "Cable counts manual/inventory."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Retrofit of containment on running site requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Phased airflow rebalancing to avoid sudden pressure/flow shocks"
+      },
+      {
+        "id": "b",
+        "text": "Instant seal with no testing"
+      },
+      {
+        "id": "c",
+        "text": "Shutdown of fire detection"
+      },
+      {
+        "id": "d",
+        "text": "Removal of all sensors"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Gradual commissioning prevents overheating during transition.",
+    "distractorExplanations": {
+      "b": "Testing required.",
+      "c": "Fire detection stays active.",
+      "d": "More sensors often added."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Cooling capacity is commonly specified in:",
+    "options": [
+      {
+        "id": "a",
+        "text": "kW or tons of refrigeration removed from IT/environment"
+      },
+      {
+        "id": "b",
+        "text": "Bits per second"
+      },
+      {
+        "id": "c",
+        "text": "Volts AC only"
+      },
+      {
+        "id": "d",
+        "text": "Employee headcount"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Thermal capacity quantifies heat removal capability.",
+    "distractorExplanations": {
+      "b": "Network throughput unrelated.",
+      "c": "Voltage is electrical.",
+      "d": "Staff count unrelated."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Excess dehumidification in CRACs during low load can:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Overcool air and waste energy rehumidifying or reheating"
+      },
+      {
+        "id": "b",
+        "text": "Always improve PUE"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate need for humidifiers forever"
+      },
+      {
+        "id": "d",
+        "text": "Increase static discharge safety without limits"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Latent cooling can drive unnecessary reheat/humidification cycles.",
+    "distractorExplanations": {
+      "b": "Often worsens efficiency.",
+      "c": "Humidification may still be needed seasonally.",
+      "d": "Very low RH increases ESD risk."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "cooling-water-thermal",
+    "prompt": "Facility water storage for fire suppression or cooling must:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Meet separate code requirements for each use with dedicated systems where required"
+      },
+      {
+        "id": "b",
+        "text": "Always share one tank without code review"
+      },
+      {
+        "id": "c",
+        "text": "Use only hot aisle air"
+      },
+      {
+        "id": "d",
+        "text": "Replace UPS batteries"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fire and cooling water systems have distinct codes and reliability needs.",
+    "distractorExplanations": {
+      "b": "Combined use requires engineering approval.",
+      "c": "Air not water storage.",
+      "d": "Batteries separate."
+    },
+    "difficulty": "medium"
+  }
+]

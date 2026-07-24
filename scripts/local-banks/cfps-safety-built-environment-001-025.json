@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Under NFPA 101, the three primary components of a means of egress are:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Exit access, exit, and exit discharge"
+      },
+      {
+        "id": "b",
+        "text": "Fire alarm, sprinkler, and standpipe only"
+      },
+      {
+        "id": "c",
+        "text": "Atrium, shaft, and plenum exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Lobby, vestibule, and roof deck only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "NFPA 101 defines means of egress as the continuous and unobstructed path from any point to a public way via exit access, exit, and exit discharge.",
+    "distractorExplanations": {
+      "b": "Active fire protection systems support life safety but are not the three egress components.",
+      "c": "Architectural features may be part of paths but are not the defined trio.",
+      "d": "Lobby and roof elements may appear in paths but do not define the three-part model."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Occupant load for a building or portion thereof is determined by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Counting only employees on the payroll"
+      },
+      {
+        "id": "b",
+        "text": "Dividing the floor area by the occupant load factor for the use, then applying code rounding rules"
+      },
+      {
+        "id": "c",
+        "text": "Using the architect's seating sketch without area factors"
+      },
+      {
+        "id": "d",
+        "text": "Multiplying travel distance by exit width"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "NFPA 101 assigns occupant load factors by use/occupancy; area divided by factor yields required design occupant load.",
+    "distractorExplanations": {
+      "a": "Sketches without area factors miss required calculations.",
+      "c": "Sketches without area factors miss required calculations.",
+      "d": "Travel distance and exit width relate to egress capacity, not occupant load calculation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "When calculating occupant load for fixed seating in an assembly occupancy, the count typically includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only seats sold for the current event"
+      },
+      {
+        "id": "b",
+        "text": "Half of fixed seats to allow social distancing by default"
+      },
+      {
+        "id": "c",
+        "text": "All fixed seats plus any standing-room areas calculated separately by area factor"
+      },
+      {
+        "id": "d",
+        "text": "Exit stair width divided by 0.3 inches per person"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fixed seating occupant load is based on installed seats; adjacent standing areas use applicable load factors.",
+    "distractorExplanations": {
+      "a": "Event sales do not define code design occupant load.",
+      "b": "Event sales do not define code design occupant load.",
+      "d": "Exit width formulas apply to egress capacity, not seating counts."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Travel distance in NFPA 101 is measured:",
+    "options": [
+      {
+        "id": "a",
+        "text": "As straight-line distance through walls and partitions"
+      },
+      {
+        "id": "b",
+        "text": "From the main entrance door only"
+      },
+      {
+        "id": "c",
+        "text": "Vertically from floor to ceiling in the room"
+      },
+      {
+        "id": "d",
+        "text": "Along the natural unobstructed egress path from the most remote point to the nearest exit"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Travel distance follows the actual walking path occupants would use, not diagonal shortcuts through obstructions.",
+    "distractorExplanations": {
+      "a": "Diagonal paths ignoring partitions are not permitted.",
+      "b": "Diagonal paths ignoring partitions are not permitted.",
+      "c": "Measurement is not limited to entrance doors."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Common path of travel differs from travel distance because it measures:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The portion of exit access that must be traversed before two separate egress paths become available"
+      },
+      {
+        "id": "b",
+        "text": "Total distance to the public way including exit discharge"
+      },
+      {
+        "id": "c",
+        "text": "Only the width of the exit door"
+      },
+      {
+        "id": "d",
+        "text": "Distance from the fire alarm panel to the street"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Common path limits how far occupants may travel before the path splits to provide alternative egress options.",
+    "distractorExplanations": {
+      "b": "Exit discharge is outside common path measurement.",
+      "c": "Door width is a capacity issue, not common path length.",
+      "d": "Alarm panel location is unrelated to occupant egress paths."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Exit capacity (egress width) for stairs is commonly calculated using a factor of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "0.2 inches per occupant for all stairs regardless of occupancy"
+      },
+      {
+        "id": "b",
+        "text": "0.3 inches of clear width per occupant (NFPA 101 Chapter 7 methodology)"
+      },
+      {
+        "id": "c",
+        "text": "1.0 inch per occupant for every exit component"
+      },
+      {
+        "id": "d",
+        "text": "Total building square footage divided by 100"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Stair capacity uses the 0.3 in/person factor; doors and other components use 0.2 in/person in the standard capacity calculation.",
+    "distractorExplanations": {
+      "a": "1.0 in/person is not the NFPA 101 stair factor.",
+      "c": "1.0 in/person is not the NFPA 101 stair factor.",
+      "d": "Area division by 100 is not the egress width formula."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "When two egress components serve the same occupant load, the required combined capacity must:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Be split so one exit carries 90% and the other 10% arbitrarily"
+      },
+      {
+        "id": "b",
+        "text": "Use only the larger component and ignore the smaller"
+      },
+      {
+        "id": "c",
+        "text": "Equal or exceed the total occupant load served, with each component sized per code minimums"
+      },
+      {
+        "id": "d",
+        "text": "Depend solely on sprinkler status without width checks"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "All required exits must be sized so aggregate capacity meets or exceeds the occupant load assigned to them.",
+    "distractorExplanations": {
+      "a": "Arbitrary splits can leave one exit undersized.",
+      "b": "Arbitrary splits can leave one exit undersized.",
+      "d": "Sprinklers may allow exceptions in some occupancies but do not eliminate width calculations."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Emergency lighting along the means of egress is required to provide illumination for at least:",
+    "options": [
+      {
+        "id": "a",
+        "text": "15 minutes only in all occupancies without exception"
+      },
+      {
+        "id": "b",
+        "text": "Until the fire department arrives with no minimum duration"
+      },
+      {
+        "id": "c",
+        "text": "5 minutes if the building has a fire alarm"
+      },
+      {
+        "id": "d",
+        "text": "90 minutes upon loss of normal power (NFPA 101 typical requirement)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "NFPA 101 generally requires 90 minutes of emergency illumination for egress paths and exit signs.",
+    "distractorExplanations": {
+      "a": "15 minutes is insufficient for the standard NFPA 101 duration.",
+      "b": "15 minutes is insufficient for the standard NFPA 101 duration.",
+      "c": "Duration is code-defined, not based on fire department arrival."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Illumination levels for emergency lighting on the walking surface of egress paths are typically required to be at least:",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 foot-candle (10.8 lux) measured at the floor"
+      },
+      {
+        "id": "b",
+        "text": "0.1 foot-candle at the ceiling only"
+      },
+      {
+        "id": "c",
+        "text": "5 foot-candles at all times including normal power"
+      },
+      {
+        "id": "d",
+        "text": "20 foot-candles at exit signs only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "NFPA 101 requires minimum 1 fc at the walking surface along egress routes during emergency mode.",
+    "distractorExplanations": {
+      "b": "Measurement is at the walking surface, not ceiling-only thresholds.",
+      "c": "5 fc continuous is not the emergency minimum requirement.",
+      "d": "Exit sign illumination has separate requirements from path lighting levels."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "NFPA 5000 is best described as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A sprinkler installation standard only"
+      },
+      {
+        "id": "b",
+        "text": "A comprehensive building construction and safety code covering structural, fire, and life safety provisions"
+      },
+      {
+        "id": "c",
+        "text": "An electrical wiring manual for residential kitchens"
+      },
+      {
+        "id": "d",
+        "text": "A hazardous materials shipping guide for DOT compliance"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "NFPA 5000 is NFPA's building construction and safety code, parallel in scope to model codes like the IBC.",
+    "distractorExplanations": {
+      "a": "Electrical wiring is NFPA 70/NEC territory.",
+      "c": "Electrical wiring is NFPA 70/NEC territory.",
+      "d": "DOT shipping is outside NFPA 5000 scope."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "NFPA 1, the Fire Code, primarily functions to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Replace NFPA 101 for all new construction design"
+      },
+      {
+        "id": "b",
+        "text": "Set structural wind load criteria for bridges"
+      },
+      {
+        "id": "c",
+        "text": "Provide ongoing fire prevention and operational requirements for existing buildings and processes"
+      },
+      {
+        "id": "d",
+        "text": "Define medical gas piping for hospitals exclusively"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "NFPA 1 addresses fire code administration, operational maintenance, and hazards in the built environment after construction.",
+    "distractorExplanations": {
+      "a": "NFPA 101 remains the life safety code for egress design.",
+      "b": "NFPA 101 remains the life safety code for egress design.",
+      "d": "Medical gas is specialized codes; NFPA 1 is broader fire code."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "A building is generally considered a high-rise by NFPA 101 when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "It has more than two stories regardless of height"
+      },
+      {
+        "id": "b",
+        "text": "Any portion exceeds 25 feet above grade"
+      },
+      {
+        "id": "c",
+        "text": "It contains an elevator"
+      },
+      {
+        "id": "d",
+        "text": "The lowest level of fire department vehicle access is more than 75 feet (23 m) above the lowest level of fire department access"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The 75-foot threshold to the lowest fire department access level defines high-rise buildings in NFPA 101.",
+    "distractorExplanations": {
+      "a": "Story count alone does not define high-rise.",
+      "b": "Story count alone does not define high-rise.",
+      "c": "25 feet is not the high-rise threshold."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "High-rise buildings typically require which additional egress feature for stairs serving floors above the lowest level of fire department access?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Smokeproof enclosures or pressurized stairs per NFPA 101 high-rise provisions"
+      },
+      {
+        "id": "b",
+        "text": "Only a single unenclosed monumental stair"
+      },
+      {
+        "id": "c",
+        "text": "Elimination of all fire-rated door assemblies"
+      },
+      {
+        "id": "d",
+        "text": "Removal of standpipe systems to reduce cost"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "High-rise provisions require smokeproof enclosures or equivalent protection for certain stairs to protect vertical egress.",
+    "distractorExplanations": {
+      "b": "Unenclosed monumental stairs do not meet high-rise smoke protection.",
+      "c": "Fire-rated doors remain essential in egress paths.",
+      "d": "Standpipes are required, not removed, in high-rise design."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "A smokeproof enclosure in a high-rise often incorporates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Combustible furnishings in the stair landing"
+      },
+      {
+        "id": "b",
+        "text": "An open exterior balcony/vestibule or pressurization with fire-rated separation from the building interior"
+      },
+      {
+        "id": "c",
+        "text": "Permanently propped-open fire doors for convenience"
+      },
+      {
+        "id": "d",
+        "text": "Return-air grilles connecting the stair to the HVAC plenum unfiltered"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Smokeproof enclosures use vestibules, pressurization, or other approved methods to limit smoke entry into stairs.",
+    "distractorExplanations": {
+      "a": "Propped fire doors defeat smoke and fire separation.",
+      "c": "Propped fire doors defeat smoke and fire separation.",
+      "d": "Uncontrolled HVAC connections can spread smoke into stairs."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Stair pressurization for smokeproof enclosures is intended to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Create negative pressure to pull smoke into the stair"
+      },
+      {
+        "id": "b",
+        "text": "Replace the need for any fire-rated construction"
+      },
+      {
+        "id": "c",
+        "text": "Maintain a positive pressure differential relative to adjacent spaces to resist smoke infiltration during a fire"
+      },
+      {
+        "id": "d",
+        "text": "Operate only during routine HVAC maintenance"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Pressurization keeps stairs tenable by preventing smoke entry; differential pressure is monitored and maintained during fire events.",
+    "distractorExplanations": {
+      "a": "Negative pressure would draw smoke into the stair.",
+      "b": "Negative pressure would draw smoke into the stair.",
+      "d": "Systems activate on fire alarm/smoke detection, not maintenance schedules."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Atrium smoke control systems are designed primarily to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eliminate all sprinklers in the atrium"
+      },
+      {
+        "id": "b",
+        "text": "Increase decorative lighting levels only"
+      },
+      {
+        "id": "c",
+        "text": "Permit unlimited unprotected openings on all floors without analysis"
+      },
+      {
+        "id": "d",
+        "text": "Manage smoke accumulation in large volume spaces to maintain tenable conditions for egress and firefighting"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Atrium smoke management uses mechanical exhaust, make-up air, or other engineered methods to control smoke layer development.",
+    "distractorExplanations": {
+      "a": "Lighting is unrelated to smoke control objectives.",
+      "b": "Lighting is unrelated to smoke control objectives.",
+      "c": "Unprotected openings require engineered smoke control and fire-rated separation analysis."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "An engineered atrium smoke control design typically requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Calculation of smoke production, layer interface height, exhaust capacity, and make-up air distribution"
+      },
+      {
+        "id": "b",
+        "text": "Only the architect's ceiling height preference"
+      },
+      {
+        "id": "c",
+        "text": "Assumption that sprinklers alone preclude any smoke control"
+      },
+      {
+        "id": "d",
+        "text": "Elimination of all fire alarm detection in the atrium"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Engineering analysis determines exhaust rates and system response to keep smoke above occupant egress paths for a defined period.",
+    "distractorExplanations": {
+      "b": "Aesthetic preferences do not replace engineering calculations.",
+      "c": "Sprinklers aid control but do not automatically eliminate smoke management needs in atriums.",
+      "d": "Detection remains critical for system activation."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Accessible means of egress under ICC/NFPA accessibility coordination requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only audible alarms without route considerations"
+      },
+      {
+        "id": "b",
+        "text": "An accessible route to exits including ramps, elevators (where permitted), areas of refuge, or horizontal exits as allowed"
+      },
+      {
+        "id": "c",
+        "text": "Stairs as the sole accessible egress for all occupants with disabilities"
+      },
+      {
+        "id": "d",
+        "text": "Removal of handrails to widen perceived path width"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Accessible egress routes must be provided where required, often including elevators with standby power or areas of refuge in certain buildings.",
+    "distractorExplanations": {
+      "a": "Handrails are required accessibility and safety features.",
+      "c": "Handrails are required accessibility and safety features.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Areas of refuge are intended to provide:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Permanent living quarters for building staff"
+      },
+      {
+        "id": "b",
+        "text": "Storage for combustible maintenance supplies"
+      },
+      {
+        "id": "c",
+        "text": "A temporarily tenable space on a floor where occupants who cannot use stairs can await assisted evacuation"
+      },
+      {
+        "id": "d",
+        "text": "Unventilated mechanical rooms without communication"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Areas of refuge have fire-resistance, communication, and signage so mobility-impaired occupants can safely await rescue.",
+    "distractorExplanations": {
+      "a": "Combustible storage violates refuge fire-resistance intent.",
+      "b": "Combustible storage violates refuge fire-resistance intent.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Fire doors installed in egress paths must generally:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Remain wedged open during business hours for convenience"
+      },
+      {
+        "id": "b",
+        "text": "Have vision panels exceeding 100% of door area without rating"
+      },
+      {
+        "id": "c",
+        "text": "Omit gasketing in all smoke barrier locations"
+      },
+      {
+        "id": "d",
+        "text": "Be self-closing or automatic-closing, latch reliably, and maintain the fire-protection rating of the wall assembly"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Egress fire doors must close to maintain compartmentation; hold-open devices require release upon alarm.",
+    "distractorExplanations": {
+      "a": "Vision panel size and glazing must be fire-rated appropriately.",
+      "b": "Vision panel size and glazing must be fire-rated appropriately.",
+      "c": "Smoke barriers often require gasketing and smoke-rated doors."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "A fire door assembly labeled for 90 minutes indicates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The door assembly was tested to maintain integrity and insulation for that duration in a standard fire test"
+      },
+      {
+        "id": "b",
+        "text": "The door will automatically upgrade any adjacent wall to 3 hours"
+      },
+      {
+        "id": "c",
+        "text": "Occupants have 90 minutes to finish work before leaving"
+      },
+      {
+        "id": "d",
+        "text": "Sprinklers within 90 feet are unnecessary"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fire door labels reflect tested performance of the assembly; they do not alter wall ratings or delay evacuation requirements.",
+    "distractorExplanations": {
+      "b": "Evacuation is immediate upon alarm; label is fire resistance, not a work timer.",
+      "c": "Sprinkler requirements are independent of door labels.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Coordination of building services with life safety during design should ensure:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maximum penetrations to reduce installation cost in stair shafts"
+      },
+      {
+        "id": "b",
+        "text": "Ducts, piping, and cabling do not penetrate fire-rated egress enclosures without proper firestopping and approved details"
+      },
+      {
+        "id": "c",
+        "text": "Shared open plenums between stairs and occupied floors without dampers"
+      },
+      {
+        "id": "d",
+        "text": "Routing of fuel gas piping through exit access corridors"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Penetrations of fire-rated egress elements require listed firestop systems and code-compliant details to maintain separation.",
+    "distractorExplanations": {
+      "a": "Fuel gas in exit access corridors is prohibited.",
+      "c": "Fuel gas in exit access corridors is prohibited.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "HVAC smoke control interfaces with egress design when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "HVAC operates independently with no fire alarm connection"
+      },
+      {
+        "id": "b",
+        "text": "Return fans increase speed during fire to circulate smoke"
+      },
+      {
+        "id": "c",
+        "text": "Fan shutdown, damper closure, or pressurization sequences are coordinated with fire alarm and stair protection"
+      },
+      {
+        "id": "d",
+        "text": "Cooling towers control stair pressurization without sensors"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Integrated sequences prevent smoke migration and support stair pressurization and zone smoke control strategies.",
+    "distractorExplanations": {
+      "a": "Increasing recirculation during fire spreads contaminants.",
+      "b": "Increasing recirculation during fire spreads contaminants.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Exit signs in NFPA 101 must be illuminated and located so that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Signs are required only at the building main entrance"
+      },
+      {
+        "id": "b",
+        "text": "Signs may be hidden behind open doors"
+      },
+      {
+        "id": "c",
+        "text": "Only battery-less signs are permitted in all cases"
+      },
+      {
+        "id": "d",
+        "text": "No point in the exit access corridor is more than 100 feet (30 m) from the nearest visible sign (typical threshold)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Exit sign placement and visibility ensure occupants can quickly identify egress direction along the path.",
+    "distractorExplanations": {
+      "a": "Concealed signs fail visibility requirements.",
+      "b": "Concealed signs fail visibility requirements.",
+      "c": "Illumination may be external or internal per approved methods."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "safety-built-environment",
+    "prompt": "Photo luminescent egress markings are often used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Supplement low-level path marking where permitted, especially in high-rise stairs and occupancies requiring path markings"
+      },
+      {
+        "id": "b",
+        "text": "Replace all emergency lighting and exit signs universally"
+      },
+      {
+        "id": "c",
+        "text": "Decorate lobbies without photometric performance"
+      },
+      {
+        "id": "d",
+        "text": "Eliminate the need for handrails on stairs"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Photoluminescent markings aid visibility during power loss where required; they supplement, not universally replace, emergency lighting.",
+    "distractorExplanations": {
+      "b": "Decorative use without performance data does not satisfy code.",
+      "c": "Handrails remain mandatory regardless of markings.",
+      "d": "Incorrect. This option does not reflect accepted fire protection practice."
+    },
+    "difficulty": "medium"
+  }
+]

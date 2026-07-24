@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "A developer asks for an order-of-cost estimate at RIBA Stage 1 for a 12,000 m² office in Manchester. Which approach best meets NRM1 and Level 3 design economics practice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prepare an order-of-cost estimate using appropriate functional units, benchmark rates, and stated assumptions with documented exclusions"
+      },
+      {
+        "id": "b",
+        "text": "Issue a fixed lump sum guaranteed to tender without any elemental breakdown"
+      },
+      {
+        "id": "c",
+        "text": "Measure every item to SMM7 rules from outline drawings only"
+      },
+      {
+        "id": "d",
+        "text": "Use only the contractor's last project rate with no location or inflation adjustment"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "NRM1 order-of-cost estimates at early stages use functional units and benchmarks with transparent assumptions — a core Level 3 cost planning skill.",
+    "distractorExplanations": {
+      "b": "Stage 1 estimates are indicative and cannot guarantee tender outcomes without design detail.",
+      "c": "Detailed measurement is premature at Stage 1; order-of-cost methods apply.",
+      "d": "Benchmarks must reflect project-specific factors and current market conditions."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "At RIBA Stage 2, your elemental cost plan shows superstructure at £18.5m against a £17m budget. The architect proposes value engineering. What is your first professional action?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Delete the superstructure element to balance the total automatically"
+      },
+      {
+        "id": "b",
+        "text": "Quantify cost drivers, present options with cost/carbon/function trade-offs, and update the cost plan with agreed adjustments"
+      },
+      {
+        "id": "c",
+        "text": "Wait until tender to address the overspend"
+      },
+      {
+        "id": "d",
+        "text": "Instruct the architect to reduce quality without cost analysis"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Level 3 design economics involves diagnosing overspends, facilitating VE, and revising elemental cost plans with documented rationale.",
+    "distractorExplanations": {
+      "a": "Cost plans must reflect design reality, not arbitrary element removal.",
+      "c": "Cost planning requires proactive advice before procurement.",
+      "d": "Value engineering needs structured option appraisal, not unilateral quality cuts."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "A PQS is appointed on a design-and-build hospital. The employer's agent requests a cost plan at RIBA Stage 3 aligned to NRM1. Which deliverable is most appropriate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A contractor's priced BOQ only with no cost plan structure"
+      },
+      {
+        "id": "b",
+        "text": "A single-line total with no elemental split"
+      },
+      {
+        "id": "c",
+        "text": "An elemental cost plan with sub-element breakdown, quantified where possible, tied to the current design and updated assumptions"
+      },
+      {
+        "id": "d",
+        "text": "A post-contract final account format"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "RICS QS cost planning at Stage 3 delivers NRM-aligned elemental cost plans supporting employer budget control.",
+    "distractorExplanations": {
+      "a": "Employer-side cost planning follows NRM elemental structure, not trade pricing alone.",
+      "b": "Stage 3 cost plans require elemental transparency for design decisions.",
+      "d": "Final accounts apply after construction; Stage 3 needs forward-looking cost plans."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "Your client's gateway review requires demonstration that the £45m GIA budget is still viable at RIBA Stage 4. Which evidence best supports Level 3 advice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verbal assurance that the market is favourable"
+      },
+      {
+        "id": "b",
+        "text": "A list of provisional sums with no reconciliation to design"
+      },
+      {
+        "id": "c",
+        "text": "Only the architect's specification without cost translation"
+      },
+      {
+        "id": "d",
+        "text": "Updated elemental cost plan with measured quantities where available, reconciled to previous stages and tender strategy"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Stage 4 cost plans integrate measurement progress, design changes, and procurement strategy to confirm budget viability.",
+    "distractorExplanations": {
+      "a": "Gateway decisions require documented cost evidence, not unsupported opinion.",
+      "b": "Provisional sums alone do not demonstrate overall budget viability.",
+      "c": "Cost planners must translate design information into cost advice."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "A contractor commercial manager must price a two-stage D&B frame agreement. Stage 1 target cost is £28m. Which commercial management action is most sound?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Build up target cost from supply chain input, risk register, and preliminaries with agreed pain/gain mechanisms"
+      },
+      {
+        "id": "b",
+        "text": "Add 30% margin to the employer's budget without analysis"
+      },
+      {
+        "id": "c",
+        "text": "Exclude preliminaries because they are fixed on every job"
+      },
+      {
+        "id": "d",
+        "text": "Ignore second-stage subcontract competition"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Commercial management at Level 3 involves transparent target-cost build-ups and risk-aligned commercial structures.",
+    "distractorExplanations": {
+      "b": "Commercial pricing requires substantiated build-ups, not arbitrary margins.",
+      "c": "Preliminaries vary by programme, site, and methodology and must be priced.",
+      "d": "Two-stage procurement relies on competitive second-stage pricing."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "An employer asks whether to procure a £6m fit-out as traditional or design-and-build. You are providing design economics advice. What should you compare?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the lowest single tender received last year on a different building"
+      },
+      {
+        "id": "b",
+        "text": "Whole-life implications, cost certainty, programme, design risk allocation, and tender price dispersion for each route"
+      },
+      {
+        "id": "c",
+        "text": "Architect preference without cost or risk comparison"
+      },
+      {
+        "id": "d",
+        "text": "Assume D&B is always cheapest regardless of scope definition"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Design economics includes procurement route appraisal balancing cost, risk, programme, and quality.",
+    "distractorExplanations": {
+      "a": "Route selection needs project-specific analysis, not unrelated benchmarks.",
+      "c": "Procurement advice must be evidence-based across relevant criteria.",
+      "d": "Cost outcomes depend on scope, market, and risk transfer."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "BCIS location and tender price indices have moved +4.2% since your last cost plan. The project is 14 months from anticipated tender. What adjustment is professionally appropriate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignore inflation because the budget was approved"
+      },
+      {
+        "id": "b",
+        "text": "Increase every element by 15% without documentation"
+      },
+      {
+        "id": "c",
+        "text": "Apply an evidence-based inflation allowance to relevant elements with stated basis and review at next stage"
+      },
+      {
+        "id": "d",
+        "text": "Defer all inflation to the contractor at tender"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Cost planners use BCIS or equivalent indices to project tender-time costs with documented assumptions.",
+    "distractorExplanations": {
+      "a": "Approved budgets still require inflation transparency in forward estimates.",
+      "b": "Inflation adjustments should be justified and element-specific where possible.",
+      "d": "Employer cost plans should reflect anticipated market movement."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "A university client wants lifecycle cost advice for cladding options: aluminium rainscreen vs brick slip. Which analysis best reflects Level 3 design economics?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Select the lowest capital cost option only"
+      },
+      {
+        "id": "b",
+        "text": "Exclude maintenance because it is an FM issue"
+      },
+      {
+        "id": "c",
+        "text": "Use manufacturer marketing data without independent verification"
+      },
+      {
+        "id": "d",
+        "text": "Compare capital cost, maintenance, replacement cycles, energy performance, and whole-life cost over an agreed period"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Level 3 design economics integrates capital and operational costs for informed option selection.",
+    "distractorExplanations": {
+      "a": "Design economics considers whole-life performance, not capital cost alone.",
+      "b": "Whole-life costing is integral to cladding option appraisal.",
+      "c": "Advice should be based on verifiable technical and cost data."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "Your elemental cost plan includes a 10% design contingency at RIBA Stage 3. The project manager asks why it remains when design is '80% complete'. How do you respond?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Explain contingency covers unresolved design, scope, and market risk until tender — reducing it only with evidenced design maturity"
+      },
+      {
+        "id": "b",
+        "text": "Remove all contingency to show you are under budget"
+      },
+      {
+        "id": "c",
+        "text": "Transfer contingency to contractor profit"
+      },
+      {
+        "id": "d",
+        "text": "Hide contingency inside every unit rate without disclosure"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Design contingencies reflect residual uncertainty and should be managed transparently through stages.",
+    "distractorExplanations": {
+      "b": "Premature contingency removal misstates risk and misleads the client.",
+      "c": "Contingency is a risk allowance, not a profit transfer mechanism.",
+      "d": "Cost plans should transparently show risk allowances."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "A commercial director on a main contractor framework asks you to review three tender returns for a £12m school extension. Returns range £11.4m–£13.1m. What is your best next step?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Recommend the lowest price immediately to win work"
+      },
+      {
+        "id": "b",
+        "text": "Analyse scope compliance, qualifications, preliminaries, risk, programme, and resource assumptions before recommendation"
+      },
+      {
+        "id": "c",
+        "text": "Average the three prices and award to the middle bidder"
+      },
+      {
+        "id": "d",
+        "text": "Reject all tenders and re-tender without analysis"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Commercial management includes rigorous tender return analysis beyond headline price.",
+    "distractorExplanations": {
+      "a": "Lowest price may reflect exclusions, risk mispricing, or insolvency risk.",
+      "c": "Tender analysis requires qualitative and quantitative review, not averaging.",
+      "d": "Structured analysis should precede any re-tender decision."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "At feasibility, a client provides 2,500 m² net office area and asks for budget advice in central London. Which functional unit approach is most appropriate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cost per employee headcount only with no area basis"
+      },
+      {
+        "id": "b",
+        "text": "Use industrial warehouse benchmarks without adjustment"
+      },
+      {
+        "id": "c",
+        "text": "Cost per m² GIA or NIA using relevant BCIS benchmarks with adjustments for specification, basement, and site constraints"
+      },
+      {
+        "id": "d",
+        "text": "Apply residential £/m² rates to office accommodation"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Feasibility budgeting uses appropriate functional units with transparent benchmark adjustments.",
+    "distractorExplanations": {
+      "a": "Early office estimates typically use area-based functional units with stated basis.",
+      "b": "Building type and location strongly affect benchmark selection.",
+      "d": "Functional units must match building use and specification level."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "A design change adds a rooftop plant enclosure. The architect asks if it is 'free' because the plant was already budgeted. What is the correct cost planning view?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Treat all design changes as zero cost if within contingency"
+      },
+      {
+        "id": "b",
+        "text": "Ignore structural implications of added load"
+      },
+      {
+        "id": "c",
+        "text": "Defer costing until the final account"
+      },
+      {
+        "id": "d",
+        "text": "Assess incremental cost of enclosure, structural support, access, and services diversions beyond the base plant allowance"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Design economics requires incremental cost assessment of changes against baseline allowances.",
+    "distractorExplanations": {
+      "a": "Changes should be valued incrementally; contingency is not automatic cover.",
+      "b": "Cost impact includes associated structural and MEP modifications.",
+      "c": "Cost planning provides timely change cost advice during design."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "You are preparing a pre-tender estimate at RIBA Stage 4 using approximate quantities. Which document set is essential?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Coordinated drawings, specifications, provisional quantities, and defined measurement rules with exclusions listed"
+      },
+      {
+        "id": "b",
+        "text": "Outline planning sketches from Stage 1 only"
+      },
+      {
+        "id": "c",
+        "text": "Contractor's priced BOQ from another project"
+      },
+      {
+        "id": "d",
+        "text": "Verbal scope from the client without written record"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Pre-tender estimates at Stage 4 rely on coordinated design and stated measurement basis.",
+    "distractorExplanations": {
+      "b": "Pre-tender estimates need current coordinated design information.",
+      "c": "Estimates must reflect this project's design and scope.",
+      "d": "Professional cost advice requires documented scope and assumptions."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "A client's cost limit for a refurbishment is £8m. Your order-of-cost estimate is £9.3m at Stage 2. What is the most professional recommendation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Proceed silently and hope tender is lower"
+      },
+      {
+        "id": "b",
+        "text": "Present options to align scope, specification, or phasing to the budget with quantified savings and residual risk"
+      },
+      {
+        "id": "c",
+        "text": "Tell the client the budget is unrealistic without offering solutions"
+      },
+      {
+        "id": "d",
+        "text": "Reduce the estimate by removing VAT from the total"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "When estimates exceed budget, QS advice includes scoped options to close the gap.",
+    "distractorExplanations": {
+      "a": "Cost planners must flag budget gaps with actionable options.",
+      "c": "Level 3 advice includes optioneering, not only problem identification.",
+      "d": "Estimates must correctly treat tax and statutory costs per brief."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "On a contractor's scheme, you must set a selling price for a negotiated D&B office. Direct costs are £22m, risk £1.2m, overheads 6%, profit target 3%. What commercial principle applies?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hide risk inside overheads to simplify the bid"
+      },
+      {
+        "id": "b",
+        "text": "Quote £22m only because that is the direct cost"
+      },
+      {
+        "id": "c",
+        "text": "Present a transparent build-up separating cost, risk, overheads, and profit with documented assumptions for negotiation"
+      },
+      {
+        "id": "d",
+        "text": "Match a competitor's price without internal cost review"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Contractor commercial management uses structured price build-ups for governance and negotiation.",
+    "distractorExplanations": {
+      "a": "Commercial transparency supports negotiation and internal governance.",
+      "b": "Selling price must reflect risk, overheads, and profit policy.",
+      "d": "Commercial management requires cost-led pricing decisions."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "An employer's cost report shows a 6% forecast overrun against approved budget at Stage 4. Under design economics practice, what should the report include?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only a green RAG status to avoid alarming the client"
+      },
+      {
+        "id": "b",
+        "text": "Delete variances from previous reports"
+      },
+      {
+        "id": "c",
+        "text": "Blame the contractor before appointment"
+      },
+      {
+        "id": "d",
+        "text": "Cause analysis, forecast final cost, mitigations, contingency status, and decisions required from the client"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Employer cost reports at Level 3 enable informed decisions with clear variance analysis.",
+    "distractorExplanations": {
+      "a": "Cost reporting must be honest and decision-focused.",
+      "b": "Reports should maintain continuity and trend analysis.",
+      "c": "Pre-contract reports focus on design, scope, and procurement factors."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "A mixed-use scheme needs separate cost plans for residential and commercial elements for funding purposes. How should you structure this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Split elemental cost plans by use with shared infrastructure apportioned on an agreed basis"
+      },
+      {
+        "id": "b",
+        "text": "Produce one blended cost plan with no use split"
+      },
+      {
+        "id": "c",
+        "text": "Allocate all basement costs to residential only"
+      },
+      {
+        "id": "d",
+        "text": "Exclude common parts entirely from the cost plan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Multi-use schemes require transparent cost allocation between uses and shared elements.",
+    "distractorExplanations": {
+      "b": "Funding and appraisal often require use-specific cost allocation.",
+      "c": "Shared elements need agreed apportionment methodology.",
+      "d": "Common parts are real costs and must be included."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "A project uses target cost with 60:40 pain/gain share. Final cost is £500k below target. How should commercial management treat the gain?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Retain all savings as additional contractor profit by default"
+      },
+      {
+        "id": "b",
+        "text": "Apply the agreed share mechanism, document calculation, and adjust final payment per contract terms"
+      },
+      {
+        "id": "c",
+        "text": "Ignore the mechanism because the client is public sector"
+      },
+      {
+        "id": "d",
+        "text": "Transfer gain to the next project without client agreement"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Target-cost commercial management includes correct pain/gain administration.",
+    "distractorExplanations": {
+      "a": "Pain/gain shares are contractual and must be applied as agreed.",
+      "c": "Public sector projects still follow agreed commercial mechanisms.",
+      "d": "Gain share calculations are project-specific contractual matters."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "Your client asks for carbon and cost integrated advice at Stage 3 for structural frame options. What aligns with contemporary QS design economics?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignore carbon because it is not a cost element"
+      },
+      {
+        "id": "b",
+        "text": "Use only operational energy data for structural choice"
+      },
+      {
+        "id": "c",
+        "text": "Compare embodied carbon and capital cost for steel, concrete, and timber options with whole-life implications stated"
+      },
+      {
+        "id": "d",
+        "text": "Select the lightest frame without engineering or cost input"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Design economics now commonly integrates cost and embodied carbon in option appraisals.",
+    "distractorExplanations": {
+      "a": "Modern cost planning increasingly integrates carbon with cost optioneering.",
+      "b": "Structural optioneering focuses on embodied carbon and capital cost.",
+      "d": "Options need coordinated structural, cost, and sustainability advice."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "A cost plan at Stage 3 shows MEP services at 38% of construction cost versus a 32% benchmark. What is your professional response?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Force MEP to 32% by arbitrary rate reduction"
+      },
+      {
+        "id": "b",
+        "text": "Ignore variance because benchmarks are never useful"
+      },
+      {
+        "id": "c",
+        "text": "Delete MEP sub-elements to hide the variance"
+      },
+      {
+        "id": "d",
+        "text": "Investigate drivers — plant complexity, sustainability targets, riser strategy — and report findings with normalisation basis"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Benchmark variance analysis is a key Level 3 cost planning diagnostic skill.",
+    "distractorExplanations": {
+      "a": "Benchmark variances need investigation, not arbitrary adjustment.",
+      "b": "Benchmarks are diagnostic tools requiring professional interpretation.",
+      "c": "Cost plans must remain complete and transparent."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "An employer wants 'cost certainty' before committing to D&B tender. At Stage 4, what realistically can you advise?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tender-stage cost plan with defined scope, quantified provisional items, and stated residual risks affecting certainty"
+      },
+      {
+        "id": "b",
+        "text": "Guarantee zero variation after contract award"
+      },
+      {
+        "id": "c",
+        "text": "Promise the lowest tender will equal the cost plan exactly"
+      },
+      {
+        "id": "d",
+        "text": "Certify the contractor's design is complete at Stage 4 employer design"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Cost certainty advice is qualified by scope definition, procurement route, and residual risks.",
+    "distractorExplanations": {
+      "b": "Residual design and site risks may still produce variations.",
+      "c": "Tender outcomes depend on market pricing and scope compliance.",
+      "d": "Certainty advice must reflect actual scope definition and procurement route."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "A commercial manager reviews supply chain quotations for a £2m cladding package. One subbie is 20% below others. What should you check first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Award immediately to improve margin"
+      },
+      {
+        "id": "b",
+        "text": "Scope compliance, exclusions, programme, insurances, technical compliance, and financial standing"
+      },
+      {
+        "id": "c",
+        "text": "Assume all quotes are interchangeable"
+      },
+      {
+        "id": "d",
+        "text": "Select the highest quote to avoid failure"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Commercial supply-chain review examines price alongside scope, risk, and capability.",
+    "distractorExplanations": {
+      "a": "Abnormally low prices may indicate risk, error, or exclusion.",
+      "c": "Quotations require scope and qualification comparison.",
+      "d": "Price alone does not determine suitability; balanced analysis is required."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "RICS Level 3 design economics requires you to explain cost plan evolution to APC assessors. Which narrative is strongest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "That you only produced one spreadsheet at the end"
+      },
+      {
+        "id": "b",
+        "text": "That the architect set all costs without QS input"
+      },
+      {
+        "id": "c",
+        "text": "How estimates progressed from order-of-cost to pre-tender with key design decisions, VE, and market feedback"
+      },
+      {
+        "id": "d",
+        "text": "That cost plans are confidential and cannot be explained"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "APC Level 3 design economics is demonstrated through staged cost plan evolution and advice.",
+    "distractorExplanations": {
+      "a": "Level 3 requires demonstrated evolution and advice through stages.",
+      "b": "Candidates must show personal cost planning leadership.",
+      "d": "APC requires articulate explanation of your cost planning decisions."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "A phased office development has Phase 1 funded now and Phase 2 in three years. How should cost planning treat Phase 2?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Combine both phases into one current-year total without escalation"
+      },
+      {
+        "id": "b",
+        "text": "Exclude Phase 2 entirely from client advice"
+      },
+      {
+        "id": "c",
+        "text": "Assume Phase 2 costs equal Phase 1 with no review"
+      },
+      {
+        "id": "d",
+        "text": "Separate cost plan with escalation assumptions, enabling works allowances, and interface costs between phases"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Phased developments need stage-specific cost plans and interface cost allowances.",
+    "distractorExplanations": {
+      "a": "Phasing requires time-adjusted and interface-aware costing.",
+      "b": "Masterplan cost advice should address all committed phases.",
+      "c": "Future phases need updated assumptions and market outlook."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "commercial-cost-planning",
+    "prompt": "Your employer client requests inclusion of FF&E and loose equipment in the construction cost plan for a hotel. What is correct practice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Include as separate cost groups with clear exclusion from building contract scope where appropriate"
+      },
+      {
+        "id": "b",
+        "text": "Merge FF&E into concrete rates"
+      },
+      {
+        "id": "c",
+        "text": "Exclude all FF&E as never part of QS remit"
+      },
+      {
+        "id": "d",
+        "text": "Double-count FF&E in both preliminaries and finishes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Hotel and fit-out cost planning separates building works from FF&E with clear scope boundaries.",
+    "distractorExplanations": {
+      "b": "FF&E should be identifiable and scope-separated from building works.",
+      "c": "Total project cost advice often includes client-defined FF&E allowances.",
+      "d": "Cost plans must avoid duplication and show clear scope."
+    },
+    "difficulty": "medium"
+  }
+]

@@ -1,0 +1,752 @@
+[
+  {
+    "topicId": "information-analysis",
+    "prompt": "Fire Dynamics Simulator (FDS) solves fire and smoke transport using:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A single uniform temperature for the entire building without vents"
+      },
+      {
+        "id": "b",
+        "text": "Large-eddy simulation computational fluid dynamics on a rectilinear grid"
+      },
+      {
+        "id": "c",
+        "text": "Empirical t-squared curves only with no mass transport"
+      },
+      {
+        "id": "d",
+        "text": "Hand calculation of Hazen-Williams friction loss in pipes"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "FDS is a CFD model resolving flow, combustion, and radiation fields in three dimensions for detailed fire scenario analysis.",
+    "distractorExplanations": {
+      "a": "T-squared alone is a growth correlation, not the FDS numerical framework.",
+      "c": "T-squared alone is a growth correlation, not the FDS numerical framework.",
+      "d": "Hazen-Williams pertains to water flow in piping."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "A primary advantage of FDS over zone models for some applications is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guaranteed faster run times for every scenario regardless of grid size"
+      },
+      {
+        "id": "b",
+        "text": "Elimination of any need for experimental validation or expertise"
+      },
+      {
+        "id": "c",
+        "text": "Ability to capture three-dimensional flow patterns, obstructions, and localized conditions"
+      },
+      {
+        "id": "d",
+        "text": "Automatic conversion of results into NFPA 13 sprinkler pipe schedules"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "FDS resolves complex geometries and flows but requires greater computational resources and user skill than zone models.",
+    "distractorExplanations": {
+      "a": "CFD runs are typically slower and grid-dependent, not universally faster.",
+      "b": "CFD runs are typically slower and grid-dependent, not universally faster.",
+      "d": "FDS does not auto-generate sprinkler pipe schedules."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "In fire modeling, grid cell size in FDS should generally:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Be as large as the entire building to minimize any computation"
+      },
+      {
+        "id": "b",
+        "text": "Match the sprinkler orifice diameter exactly in all cases"
+      },
+      {
+        "id": "c",
+        "text": "Be chosen randomly without sensitivity testing"
+      },
+      {
+        "id": "d",
+        "text": "Resolve important flow features, often related to fire diameter and characteristic lengths"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Mesh resolution affects accuracy; practitioners perform sensitivity studies refining cells near flames, vents, and targets.",
+    "distractorExplanations": {
+      "a": "A single cell for the whole building cannot resolve fire dynamics.",
+      "b": "A single cell for the whole building cannot resolve fire dynamics.",
+      "c": "Sprinkler orifice size is not the universal mesh criterion."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "A vent in CFAST or zone modeling represents:",
+    "options": [
+      {
+        "id": "a",
+        "text": "An opening through which mass and energy exchange occurs between compartments or with the exterior"
+      },
+      {
+        "id": "b",
+        "text": "Only a decorative architectural feature with no flow"
+      },
+      {
+        "id": "c",
+        "text": "A fire department radio communication channel"
+      },
+      {
+        "id": "d",
+        "text": "A sprinkler alarm check valve in the riser"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Vents model doors, windows, and mechanical openings, controlling pressure-driven flow and smoke movement between zones.",
+    "distractorExplanations": {
+      "b": "Radio channels are unrelated to compartment vent modeling.",
+      "c": "Check valves are piping components, not zone model vents.",
+      "d": "Decorative features without openings do not function as model vents."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "Uncertainty in computer fire models is best managed by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Using default inputs without review because models are exact"
+      },
+      {
+        "id": "b",
+        "text": "Sensitivity studies, validation against experiments, and documenting input assumptions"
+      },
+      {
+        "id": "c",
+        "text": "Ignoring ventilation because it rarely affects outcomes"
+      },
+      {
+        "id": "d",
+        "text": "Reporting only peak HRR without context or ranges"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Engineering credibility requires stating assumptions, bounding outputs, and comparing to test data or established correlations.",
+    "distractorExplanations": {
+      "a": "Ventilation often strongly influences compartment fire development.",
+      "c": "Ventilation often strongly influences compartment fire development.",
+      "d": "Single metrics without context omit uncertainty and scenario dependence."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "Probabilistic risk analysis in fire safety differs from deterministic scenario analysis by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eliminating all uncertainty by using a single worst-case heat flux"
+      },
+      {
+        "id": "b",
+        "text": "Replacing the need for any code compliance review"
+      },
+      {
+        "id": "c",
+        "text": "Combining event likelihoods with consequence estimates to quantify risk metrics"
+      },
+      {
+        "id": "d",
+        "text": "Focusing only on historical art restoration costs"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Probabilistic methods integrate frequency and severity (e.g., expected annual loss, FN curves) rather than one fixed design fire alone.",
+    "distractorExplanations": {
+      "a": "Single worst-case deterministic scenarios do not incorporate probability.",
+      "b": "Single worst-case deterministic scenarios do not incorporate probability.",
+      "d": "Art restoration is a narrow consequence not defining probabilistic fire risk."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "An event tree in fire risk analysis is used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Calculate friction loss in a standpipe lateral"
+      },
+      {
+        "id": "b",
+        "text": "Determine the color rendering index of emergency lighting"
+      },
+      {
+        "id": "c",
+        "text": "Size grease duct enclosure clearances only"
+      },
+      {
+        "id": "d",
+        "text": "Map branching sequences of events and outcomes following an initiating fire event"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Event trees decompose scenarios (detection, suppression success, egress) to assign probabilities to outcome branches.",
+    "distractorExplanations": {
+      "a": "Friction loss is hydraulic engineering.",
+      "b": "Friction loss is hydraulic engineering.",
+      "c": "Color rendering index is a lighting quality parameter."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "A fault tree in fire protection risk assessment represents:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Logical combinations of component failures leading to a defined top event such as flashover or unacceptable loss"
+      },
+      {
+        "id": "b",
+        "text": "The physical ladder placement at a building exterior"
+      },
+      {
+        "id": "c",
+        "text": "A chronological diary of fire inspector lunch breaks"
+      },
+      {
+        "id": "d",
+        "text": "Only the wind rose diagram for a construction site"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fault trees use AND/OR gates to relate basic failures (detector fault, door held open) to system-level undesired outcomes.",
+    "distractorExplanations": {
+      "b": "Ladder placement is tactical fireground activity.",
+      "c": "Inspector schedules are administrative, not risk logic diagrams.",
+      "d": "Wind roses inform environmental design but are not fault trees."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "Expected loss in fire risk analysis is conceptually:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The maximum single fuel package mass in a warehouse aisle"
+      },
+      {
+        "id": "b",
+        "text": "The sum of consequence magnitudes weighted by their probabilities of occurrence"
+      },
+      {
+        "id": "c",
+        "text": "The decibel level of a fire alarm horn strobe combo"
+      },
+      {
+        "id": "d",
+        "text": "The number of pages in a building evacuation plan"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Risk integrates frequency and impact; expected loss combines monetary or life safety consequences with likelihood estimates.",
+    "distractorExplanations": {
+      "a": "Alarm decibels measure notification, not expected loss.",
+      "c": "Alarm decibels measure notification, not expected loss.",
+      "d": "Plan page count is not a risk metric."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "According to NFPA and national data trends, residential fires most often:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Are confined exclusively to high-rise commercial office towers"
+      },
+      {
+        "id": "b",
+        "text": "Have no relationship to occupant behavior or fuel packages in the home"
+      },
+      {
+        "id": "c",
+        "text": "Occur in one- and two-family dwellings and are frequently associated with cooking and heating equipment"
+      },
+      {
+        "id": "d",
+        "text": "Always originate in fully sprinklered industrial occupancies"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Residential occupancies dominate U.S. fire deaths and injuries; cooking is a leading cause in home fire statistics.",
+    "distractorExplanations": {
+      "a": "High-rise offices are not the dominant residential fire category.",
+      "b": "High-rise offices are not the dominant residential fire category.",
+      "d": "Industrial sprinklered fires are not the primary residential fire pattern."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "NFPA research on home fire losses commonly reports that working smoke alarms:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increase fire growth rate by supplying additional oxygen"
+      },
+      {
+        "id": "b",
+        "text": "Are unnecessary if the home has exterior hardboard siding"
+      },
+      {
+        "id": "c",
+        "text": "Guarantee that no fire deaths will ever occur in any scenario"
+      },
+      {
+        "id": "d",
+        "text": "Reduce the risk of dying in reported home fires compared to homes without working alarms"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Statistical analyses show substantially lower fatality rates where working alarms are present, though they do not eliminate all risk.",
+    "distractorExplanations": {
+      "a": "Smoke alarms do not increase fire growth by providing oxygen.",
+      "b": "Smoke alarms do not increase fire growth by providing oxygen.",
+      "c": "Siding material does not replace the need for detection."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "Leading causes of civilian fire deaths in U.S. statistics often include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Smoking materials, cooking, heating equipment, and electrical distribution faults"
+      },
+      {
+        "id": "b",
+        "text": "Routine scheduled fire department training burns only"
+      },
+      {
+        "id": "c",
+        "text": "Post-fire overhaul water damage without any ignition"
+      },
+      {
+        "id": "d",
+        "text": "Fire code adoption hearings and public comment periods"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "NFPA and USFA data consistently rank smoking, cooking, heating, and electrical issues among top residential fire death causes.",
+    "distractorExplanations": {
+      "b": "Training burns are controlled and not leading civilian death causes.",
+      "c": "Overhaul water damage follows fire; it is not an ignition cause category.",
+      "d": "Code hearings are administrative processes, not fire causes."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "Fire loss statistics are most useful to fire protection professionals when they:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Replace all engineering judgment about a specific building’s unique layout"
+      },
+      {
+        "id": "b",
+        "text": "Inform hazard prioritization, prevention programs, and resource allocation based on frequency and severity patterns"
+      },
+      {
+        "id": "c",
+        "text": "Prove that every fire grows at the ultra-fast t-squared rate"
+      },
+      {
+        "id": "d",
+        "text": "Eliminate the need for site-specific fire modeling in all cases"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Aggregate data guides macro-level decisions; site-specific analysis still addresses unique geometry, occupancy, and systems.",
+    "distractorExplanations": {
+      "a": "Real fires span all growth categories, not only ultra-fast α.",
+      "c": "Real fires span all growth categories, not only ultra-fast α.",
+      "d": "Modeling may still be warranted for complex or high-consequence designs."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "The SFPE Engineering Guide to Performance-Based Fire Protection emphasizes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Skipping documentation because authorities always accept verbal assurances"
+      },
+      {
+        "id": "b",
+        "text": "Using only prescriptive tabulated occupant loads without analysis"
+      },
+      {
+        "id": "c",
+        "text": "Defining project objectives, design fire scenarios, and acceptance criteria before selecting analysis methods"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring uncertainty if the architect prefers a particular ceiling finish"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Performance-based design requires explicit goals, scenarios, calculation methods, and peer review/documentation per SFPE guidance.",
+    "distractorExplanations": {
+      "a": "Documentation and stakeholder agreement are central, not verbal assurances alone.",
+      "b": "Documentation and stakeholder agreement are central, not verbal assurances alone.",
+      "d": "Finish preferences do not override safety objectives and analysis requirements."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "A design fire scenario for analysis should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Always assume zero ventilation and infinite fuel indefinitely"
+      },
+      {
+        "id": "b",
+        "text": "Be chosen only from unrelated wildland fire case studies"
+      },
+      {
+        "id": "c",
+        "text": "Ignore suppression and detection unless required to increase HRR"
+      },
+      {
+        "id": "d",
+        "text": "Be credible for the occupancy, fuel load, and ignition sources with defined growth and ventilation assumptions"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Credible scenarios reflect plausible fuels, ignition locations, vent conditions, and system interactions for the specific facility.",
+    "distractorExplanations": {
+      "a": "Wildland cases may not represent an office or warehouse compartment scenario.",
+      "b": "Wildland cases may not represent an office or warehouse compartment scenario.",
+      "c": "Suppression and detection materially affect outcomes and should be considered."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "Material flammability parameters used in engineering analysis may include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Heat of combustion, thermal conductivity, specific heat, and ignition temperature or critical flux"
+      },
+      {
+        "id": "b",
+        "text": "Only the carpet color and pattern visible under normal lighting"
+      },
+      {
+        "id": "c",
+        "text": "The brand of fire extinguisher tags on the wall"
+      },
+      {
+        "id": "d",
+        "text": "The number of parking spaces per zoning code"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Heat release and ignition modeling require thermophysical and combustion properties, often from bench-scale tests and literature.",
+    "distractorExplanations": {
+      "b": "Extinguisher tag brands do not define material flammability.",
+      "c": "Parking counts are zoning data, not combustion properties.",
+      "d": "Aesthetic carpet color is not a flammability parameter."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "The effective heat of combustion for a fuel is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The total installed sprinkler head count in a room"
+      },
+      {
+        "id": "b",
+        "text": "The energy released per unit mass of fuel actually burned, accounting for incomplete combustion"
+      },
+      {
+        "id": "c",
+        "text": "The ceiling height divided by door width only"
+      },
+      {
+        "id": "d",
+        "text": "The voltage drop across a notification appliance circuit"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Effective heat of combustion adjusts theoretical values for measured combustion efficiency and unburned products.",
+    "distractorExplanations": {
+      "a": "Ceiling-to-door ratio is geometric, not energy per mass burned.",
+      "c": "Ceiling-to-door ratio is geometric, not energy per mass burned.",
+      "d": "Voltage drop is electrical design, unrelated to fuel energy release."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "Flame spread index from standardized small-scale tests is used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Determine the seismic base shear for a hospital"
+      },
+      {
+        "id": "b",
+        "text": "Calculate required fire flow for municipal water mains only"
+      },
+      {
+        "id": "c",
+        "text": "Compare relative rate of flame travel on a material surface under controlled conditions"
+      },
+      {
+        "id": "d",
+        "text": "Set the temperature rating of a heat detector in a kitchen"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Flame spread indices (e.g., from ASTM E84) rank materials for code applications; they are not direct full-scale fire predictions alone.",
+    "distractorExplanations": {
+      "a": "Seismic base shear uses structural codes, not flame spread index.",
+      "b": "Seismic base shear uses structural codes, not flame spread index.",
+      "d": "Detector temperature ratings are selected per occupancy nuisance and hazard."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "The Steckler ventilation model is applied to estimate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The number of fire drills required per semester in schools"
+      },
+      {
+        "id": "b",
+        "text": "Luminaire efficacy in lumens per watt for exit signs"
+      },
+      {
+        "id": "c",
+        "text": "Bolt pretension in a moment-resisting steel frame connection"
+      },
+      {
+        "id": "d",
+        "text": "Mass flow through a vent driven by pressure differences from hot gas buoyancy in a compartment"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Ventilation models like Steckler relate temperature differences and vent geometry to bidirectional or unidirectional flow rates.",
+    "distractorExplanations": {
+      "a": "Drill frequency is a life safety management requirement.",
+      "b": "Drill frequency is a life safety management requirement.",
+      "c": "Luminaire efficacy is lighting performance."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "Backdraft is most likely when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A ventilation-limited fire in an under-ventilated compartment receives a sudden inflow of fresh air"
+      },
+      {
+        "id": "b",
+        "text": "A fully sprinklered room experiences routine monthly testing"
+      },
+      {
+        "id": "c",
+        "text": "A fire burns in the open outdoors with unlimited wind from ignition"
+      },
+      {
+        "id": "d",
+        "text": "All fuel has been completely oxidized and the room is cold"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Backdraft involves rapid ignition of accumulated unburned gases when oxygen is introduced after a ventilation-limited period.",
+    "distractorExplanations": {
+      "b": "Routine sprinkler testing does not define backdraft conditions.",
+      "c": "Well-ventilated outdoor fires do not typically develop backdraft pockets.",
+      "d": "Fully burned out cold rooms lack unburned gas accumulations for backdraft."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "Rollover in compartment fire development refers to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A sprinkler pipe elbow rotating during hydrostatic testing"
+      },
+      {
+        "id": "b",
+        "text": "Flames traveling in the hot gas layer beneath the ceiling before full surface involvement at lower levels"
+      },
+      {
+        "id": "c",
+        "text": "The building settling uniformly under dead load only"
+      },
+      {
+        "id": "d",
+        "text": "Firefighters descending stairs during evacuation"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Rollover indicates growing upper-layer ignition and is a precursor phenomenon that may precede flashover.",
+    "distractorExplanations": {
+      "a": "Uniform structural settlement is unrelated to fire layer flames.",
+      "c": "Uniform structural settlement is unrelated to fire layer flames.",
+      "d": "Firefighter stair descent is operational activity, not gas layer flame spread."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "The concept of available safe egress time (ASET) compares:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sprinkler pipe diameter to standpipe hose coupling thread type"
+      },
+      {
+        "id": "b",
+        "text": "Annual inflation rate to property tax assessments"
+      },
+      {
+        "id": "c",
+        "text": "The time until untenable conditions at a location versus time needed for occupants to reach safety (RSET)"
+      },
+      {
+        "id": "d",
+        "text": "Roofing shingle color to landscaping species selection"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "ASET must exceed RSET (required safe egress time) for a design to provide adequate life safety margin in performance analysis.",
+    "distractorExplanations": {
+      "a": "Pipe and hose threads are compatibility details, not ASET/RSET.",
+      "b": "Pipe and hose threads are compatibility details, not ASET/RSET.",
+      "d": "Shingle and landscaping choices are aesthetic, not egress timing."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "Inverse square law application to radiant heat flux means that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Heat flux doubles when distance from the source doubles"
+      },
+      {
+        "id": "b",
+        "text": "Radiation is unaffected by distance in any fire scenario"
+      },
+      {
+        "id": "c",
+        "text": "Only convective heat transfer follows inverse square behavior"
+      },
+      {
+        "id": "d",
+        "text": "Radiant heat flux decreases approximately with the square of distance from the radiating source"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Radiative flux from a point or small source diminishes rapidly with distance, important for ignition and tenability calculations.",
+    "distractorExplanations": {
+      "a": "Doubling distance reduces flux, it does not double it.",
+      "b": "Doubling distance reduces flux, it does not double it.",
+      "c": "Distance strongly affects radiant exposure to targets."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "A medium t-squared fire growth coefficient α is approximately:",
+    "options": [
+      {
+        "id": "a",
+        "text": "0.0117 kW/s²"
+      },
+      {
+        "id": "b",
+        "text": "0.0029 kW/s²"
+      },
+      {
+        "id": "c",
+        "text": "0.0469 kW/s²"
+      },
+      {
+        "id": "d",
+        "text": "0.1876 kW/s²"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Standard classifications: slow 0.0029, medium 0.0117, fast 0.0469, ultra-fast 0.1876 kW/s² — commonly used in design fires.",
+    "distractorExplanations": {
+      "b": "0.0469 kW/s² is fast growth.",
+      "c": "0.0469 kW/s² is fast growth.",
+      "d": "0.1876 kW/s² is ultra-fast growth."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "information-analysis",
+    "prompt": "When interpreting fire test data for a furnished compartment, a key limitation of bench-scale results is that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "They always overpredict every full-scale fire without exception"
+      },
+      {
+        "id": "b",
+        "text": "They may not capture full-scale interactions of fuel arrangement, ventilation, and structural feedback"
+      },
+      {
+        "id": "c",
+        "text": "They are invalid for any material classification purpose"
+      },
+      {
+        "id": "d",
+        "text": "They automatically include firefighter suppression tactics"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Bench tests isolate material response; furnishing layout, room size, and system effects require engineering extrapolation or larger tests.",
+    "distractorExplanations": {
+      "a": "Bench tests are foundational for material classification when used properly.",
+      "c": "Bench tests are foundational for material classification when used properly.",
+      "d": "Suppression tactics are not part of standard material bench tests."
+    },
+    "difficulty": "medium"
+  }
+]

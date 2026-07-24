@@ -1,0 +1,452 @@
+[
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "A WELL project registers with GBCI, uploads documentation through the WELL platform, and responds to reviewer comments. Which sequence best represents the typical certification workflow?",
+    "options": [
+      { "id": "a", "text": "Register → document features → preliminary review → on-site verification → certification decision" },
+      { "id": "b", "text": "On-site verification → register → skip documentation → automatic Platinum" },
+      { "id": "c", "text": "Certification decision → register → optional documentation" },
+      { "id": "d", "text": "Recertification → precertification → registration in that order for all new projects" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "WELL certification generally progresses from registration and documentation through GBCI review and field verification before a final certification award.",
+    "distractorExplanations": {
+      "b": "Verification follows documentation review; registration is an early step, not after field visits.",
+      "c": "Certification decisions come after review and verification, not before registration.",
+      "d": "New projects begin with registration and design-phase pathways as appropriate, not recertification."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "Which statement accurately describes how optimization points are organized in WELL v2?",
+    "options": [
+      { "id": "a", "text": "Points are distributed across concept scorecards; projects earn points only for Optimizations they pursue and document" },
+      { "id": "b", "text": "All projects automatically receive 100 optimization points upon registration" },
+      { "id": "c", "text": "Points are awarded only for Preconditions, not Optimizations" },
+      { "id": "d", "text": "Points from one unrelated building may transfer to another by default" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "WELL v2 Optimizations are optional, point-bearing features organized within concept areas; teams select strategies aligned with project goals and scorecard applicability.",
+    "distractorExplanations": {
+      "b": "Points must be earned through documented compliance with selected Optimizations.",
+      "c": "Preconditions are mandatory requirements without point values.",
+      "d": "Optimization points are project-specific and do not transfer between unrelated buildings."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "A landlord certifies the base building under WELL Core and Shell, and a tenant later certifies its fit-out under WELL Interiors in the same tower. How should a WELL AP describe this relationship?",
+    "options": [
+      { "id": "a", "text": "Complementary scorecards addressing different scopes within the same property" },
+      { "id": "b", "text": "Mutually exclusive; only one WELL mark may ever exist on a property" },
+      { "id": "c", "text": "Identical scorecards with duplicate documentation for every feature" },
+      { "id": "d", "text": "Core and Shell automatically certifies all future tenant spaces without Interiors review" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Core and Shell and Interiors address different project boundaries; both can coexist when respective scopes are independently documented and verified.",
+    "distractorExplanations": {
+      "b": "Multiple WELL certifications can apply to different scopes within one property.",
+      "c": "Scorecards differ; documentation aligns to each scope's applicable features.",
+      "d": "Tenant interiors still require their own compliance demonstration within the Interiors boundary."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "WELL Performance Rating evaluates an occupied building primarily through:",
+    "options": [
+      { "id": "a", "text": "Operational performance data in select environmental domains rather than full scorecard feature documentation" },
+      { "id": "b", "text": "Design intent drawings with no occupancy required" },
+      { "id": "c", "text": "Achievement of every WELL v2 Optimization at maximum points" },
+      { "id": "d", "text": "Compliance with structural seismic codes only" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "WELL Performance Rating focuses on measurable operational outcomes in areas like air, water, light, thermal comfort, and sound using performance data from occupied buildings.",
+    "distractorExplanations": {
+      "b": "Performance Rating requires operational data, not design intent alone.",
+      "c": "Full Optimization achievement describes WELL v2 Certification, not Performance Rating.",
+      "d": "Seismic code compliance is outside WELL Performance Rating scope."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "An organization's WELL Portfolio includes both newly constructed and existing buildings. A key strategic reason to use the Portfolio program is to:",
+    "options": [
+      { "id": "a", "text": "Standardize health policies and coordinate certification efforts efficiently across multiple assets" },
+      { "id": "b", "text": "Avoid all performance testing in every building permanently" },
+      { "id": "c", "text": "Replace IWBI as the standard developer" },
+      { "id": "d", "text": "Certify only the headquarters while ignoring satellite offices automatically" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Portfolio enrollment helps large organizations align wellness strategies, share documentation for common policies, and manage multi-building certification programs coherently.",
+    "distractorExplanations": {
+      "b": "Portfolio may streamline review but does not permanently eliminate all verification.",
+      "c": "IWBI continues to develop WELL; Portfolio is an IWBI program structure.",
+      "d": "Enrolled assets participate according to program rules; satellite offices are not automatically excluded or certified."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "A feature requires both a written policy and on-site spot-checking of implementation. If documentation passes but the site visit reveals the policy is not enforced, what is the most likely GBCI outcome for that feature?",
+    "options": [
+      { "id": "a", "text": "The feature is marked non-compliant because verification confirms field implementation" },
+      { "id": "b", "text": "Automatic credit because paperwork alone is always sufficient" },
+      { "id": "c", "text": "The project receives double points for partial implementation" },
+      { "id": "d", "text": "Only Preconditions are affected; Optimizations ignore site visits" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "WELL certification requires both appropriate documentation and verified implementation; failed field verification can overturn paper compliance for affected features.",
+    "distractorExplanations": {
+      "b": "Many features require demonstrated implementation, not documentation alone.",
+      "c": "Partial implementation does not earn bonus points for failed features.",
+      "d": "Both Preconditions and Optimizations may require on-site verification where applicable."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "How did WELL v2 change the certification level structure compared with WELL v1's approach?",
+    "options": [
+      { "id": "a", "text": "v2 uses explicit point thresholds (40/50/60/80) with Preconditions plus Optimizations across unified concepts" },
+      { "id": "b", "text": "v2 removed all certification levels and issues only pass/fail with no tiers" },
+      { "id": "c", "text": "v2 requires exactly 100 Preconditions and zero Optimizations" },
+      { "id": "d", "text": "v2 eliminated GBCI review entirely" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "WELL v2 introduced clearer point-based tiers built on mandatory Preconditions and optional Optimizations organized into ten health concepts.",
+    "distractorExplanations": {
+      "b": "WELL v2 retains Bronze through Platinum certification levels.",
+      "c": "Preconditions are mandatory but finite; Optimizations provide scored flexibility.",
+      "d": "GBCI continues to provide third-party certification for WELL v2."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "A candidate reads an exam scenario PDF for a WELL Core and Shell office tower with a future multitenant layout. Questions ask which party must document tenant guidance for ventilation commissioning. This reflects the exam's emphasis on:",
+    "options": [
+      { "id": "a", "text": "Understanding scope-specific responsibilities between base building and tenant teams" },
+      { "id": "b", "text": "Memorizing unrelated ASHRAE appendix numbering" },
+      { "id": "c", "text": "Computing property tax assessments" },
+      { "id": "d", "text": "Selecting exterior cladding colors for architectural awards" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "WELL AP scenarios often test whether candidates understand which features fall within Core and Shell versus Interiors scopes and what documentation each party provides.",
+    "distractorExplanations": {
+      "b": "While standards are referenced, the exam emphasizes application to project roles, not appendix memorization.",
+      "c": "Property tax is unrelated to WELL certification scope.",
+      "d": "Aesthetic cladding choices are not central to WELL AP scenario testing unless tied to a specific feature."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "Which documentation type is MOST likely required to demonstrate an organizational commitment to smoke-free environments for a WELL precondition?",
+    "options": [
+      { "id": "a", "text": "A formal no-smoking policy with defined boundaries and enforcement procedures" },
+      { "id": "b", "text": "A structural engineer's seismic retrofit calculation" },
+      { "id": "c", "text": "A landscape architect's planting palette" },
+      { "id": "d", "text": "An elevator manufacturer's warranty card only" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Policy-based Preconditions typically require written organizational policies, implementation details, and evidence that the policy governs building operations.",
+    "distractorExplanations": {
+      "b": "Seismic calculations do not demonstrate smoke-free policy commitment.",
+      "c": "Landscape planting is unrelated to indoor smoking policy Preconditions.",
+      "d": "Equipment warranties do not substitute for operational health policies."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "A building earned WELL Silver at certification but the owner aims for WELL Gold at recertification. What must the project team primarily do?",
+    "options": [
+      { "id": "a", "text": "Maintain all Preconditions and increase earned optimization points to at least 60 through additional or improved strategies" },
+      { "id": "b", "text": "Maintain Silver point level only; recertification never allows level changes" },
+      { "id": "c", "text": "Remove half of the Preconditions to unlock Gold" },
+      { "id": "d", "text": "Pay an upgrade fee without changing building operations" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Recertification re-evaluates compliance; teams may pursue higher levels by meeting all Preconditions and achieving the higher optimization point threshold.",
+    "distractorExplanations": {
+      "b": "Recertification is an opportunity to maintain or improve certification level based on current compliance.",
+      "c": "Preconditions cannot be removed; they remain mandatory at every level.",
+      "d": "Higher levels require demonstrated compliance, not fees alone."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "GBCI's primary function in the WELL certification process is best described as:",
+    "options": [
+      { "id": "a", "text": "Independent third-party review and certification decision-making" },
+      { "id": "b", "text": "Manufacturing WELL-compliant furniture products" },
+      { "id": "c", "text": "Writing local zoning ordinances for every municipality" },
+      { "id": "d", "text": "Operating the building's day-to-day janitorial services" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "GBCI provides impartial certification review, ensuring submitted documentation and verification results demonstrate conformance with WELL requirements.",
+    "distractorExplanations": {
+      "b": "GBCI certifies projects; it does not manufacture products.",
+      "c": "Zoning is a local government function, not GBCI's role.",
+      "d": "Facility operations remain the owner's responsibility."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "A project fails one Precondition during final review but has 90 optimization points documented. What is the certification result?",
+    "options": [
+      { "id": "a", "text": "No certification level until the failed Precondition is remediated and accepted" },
+      { "id": "b", "text": "Platinum, because optimization points exceed 80" },
+      { "id": "c", "text": "Silver only, with the failed Precondition permanently waived" },
+      { "id": "d", "text": "Bronze automatically, with optimization points reduced to 40" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "All Preconditions must be achieved for any certification level; high optimization scores cannot offset a failed mandatory requirement.",
+    "distractorExplanations": {
+      "b": "Platinum requires 100% Precondition compliance in addition to 80+ points.",
+      "c": "Failed Preconditions are not waived based on optimization performance.",
+      "d": "Bronze still requires all Preconditions; point totals alone do not grant partial certification."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "Which pair correctly matches the organization to its primary WELL role?",
+    "options": [
+      { "id": "a", "text": "IWBI — standard development; GBCI — third-party certification" },
+      { "id": "b", "text": "IWBI — issues municipal building permits; GBCI — writes the WELL standard" },
+      { "id": "c", "text": "IWBI — on-site testing only; GBCI — standard development only" },
+      { "id": "d", "text": "IWBI and GBCI are interchangeable with identical statutory authority" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "IWBI develops and administers WELL programs and education; GBCI independently reviews projects and awards certification credentials.",
+    "distractorExplanations": {
+      "b": "These roles are reversed and incorrectly assign municipal permit authority.",
+      "c": "On-site testing is performed by qualified agents; standard development is IWBI's role.",
+      "d": "The organizations have distinct, complementary roles in the WELL ecosystem."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "During precertification review of a new laboratory building, which evidence type is generally most appropriate for design-phase submittals?",
+    "options": [
+      { "id": "a", "text": "Design commitments, specifications, and drawings showing intended compliance strategies" },
+      { "id": "b", "text": "One year of post-occupancy air quality trend data" },
+      { "id": "c", "text": "Recertification records from a different city" },
+      { "id": "d", "text": "Signed occupant satisfaction surveys from current tenants" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Precertification evaluates design intent and committed strategies before construction completion; as-built and operational data come later for full certification.",
+    "distractorExplanations": {
+      "b": "A year of operational data is not available during design-phase precertification.",
+      "c": "Another project's recertification records do not demonstrate this building's design intent.",
+      "d": "Occupant surveys require occupancy, which may not exist during precertification of new construction."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "A WELL AP exam item references a scenario PDF noting that a project is 'WELL v2 New and Existing Building' with shared amenities and a single owner-operator. The candidate should recognize this scorecard applies when:",
+    "options": [
+      { "id": "a", "text": "The project boundary includes the whole building with owner control over shared systems and policies" },
+      { "id": "b", "text": "Only a single workstation within a coworking suite is within scope" },
+      { "id": "c", "text": "Only the district-wide public park outside the building is within scope" },
+      { "id": "d", "text": "The project is a design concept with no owner and no boundary" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The New and Existing Buildings scorecard covers whole-building projects where the certifying entity controls shared building systems and occupant-facing amenities.",
+    "distractorExplanations": {
+      "b": "A single workstation would typically fall under Interiors or a limited scope, not whole-building certification.",
+      "c": "District outdoor amenities alone would align with Community or specific features, not a whole-building scorecard.",
+      "d": "WELL certification requires a defined project boundary and responsible project owner."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "What distinguishes recertification from initial certification in terms of project team expectations?",
+    "options": [
+      { "id": "a", "text": "Recertification confirms continued compliance and may reflect operational changes since the original award" },
+      { "id": "b", "text": "Recertification is optional and never reviewed by GBCI" },
+      { "id": "c", "text": "Recertification applies only to precertified design projects still under construction" },
+      { "id": "d", "text": "Recertification eliminates documentation requirements entirely" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Recertification is a renewal process verifying that WELL strategies remain in place and effective, accounting for changes in policies, operations, or building modifications.",
+    "distractorExplanations": {
+      "b": "Recertification is a formal GBCI-reviewed renewal, not an unreviewed optional step.",
+      "c": "Precertification is design-phase; recertification renews prior full certification.",
+      "d": "Updated documentation and verification are still required for recertification."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "A company wants quarterly visibility into operational metrics without committing to full WELL v2 feature documentation. Which IWBI offering should a WELL AP recommend first?",
+    "options": [
+      { "id": "a", "text": "WELL Performance Rating" },
+      { "id": "b", "text": "WELL Precertification for an already occupied building seeking operational metrics only" },
+      { "id": "c", "text": "Immediate WELL Community certification for one floor" },
+      { "id": "d", "text": "LEED BD+C Platinum precertification as a WELL substitute" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "WELL Performance Rating is tailored to operational performance measurement in key environmental domains for occupied buildings.",
+    "distractorExplanations": {
+      "b": "Precertification is for design-phase commitment, not ongoing operational metrics for occupied buildings.",
+      "c": "Community certification addresses district-scale development, not quarterly floor-level metrics.",
+      "d": "LEED is a separate program and does not fulfill WELL operational visibility goals."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "Under WELL v2, a project may pursue Optimizations selectively. This flexibility exists primarily because:",
+    "options": [
+      { "id": "a", "text": "Optimizations are optional enhancements while Preconditions establish a universal baseline" },
+      { "id": "b", "text": "Every Optimization is mandatory for all project types" },
+      { "id": "c", "text": "Preconditions are optional if enough Optimizations are selected" },
+      { "id": "d", "text": "IWBI assigns random Optimizations that cannot be changed" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The v2 framework intentionally separates mandatory baselines from optional scored strategies so teams can tailor wellness goals to project constraints and certification level targets.",
+    "distractorExplanations": {
+      "b": "Mandatory requirements are Preconditions, not Optimizations.",
+      "c": "Preconditions cannot be traded for Optimization selections.",
+      "d": "Project teams choose applicable Optimizations within scorecard rules; they are not randomly assigned."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "An exam question describes a portfolio of five warehouses enrolling under WELL Portfolio with a shared ergonomics training program administered centrally. The correct reasoning is that:",
+    "options": [
+      { "id": "a", "text": "Centralized programs may satisfy feature requirements across multiple sites when properly documented and verified locally" },
+      { "id": "b", "text": "Training completed at headquarters automatically exempts all warehouses from any review" },
+      { "id": "c", "text": "Portfolio enrollment means only one warehouse needs certification" },
+      { "id": "d", "text": "Ergonomics training is outside all WELL programs" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Portfolio structures allow organization-level programs to support feature compliance across assets, provided each enrolled project demonstrates applicable implementation.",
+    "distractorExplanations": {
+      "b": "Central training still requires appropriate project-level documentation and local implementation verification.",
+      "c": "Portfolio coordinates multiple assets; it does not certify only one by default.",
+      "d": "Movement and related concepts may include physical activity and ergonomics strategies within WELL."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "Which milestone indicates a project has moved beyond precertification but has not yet received final WELL certification?",
+    "options": [
+      { "id": "a", "text": "Construction completion with full documentation submitted and review underway, pending on-site verification" },
+      { "id": "b", "text": "Initial idea charrette with no registration or scorecard selection" },
+      { "id": "c", "text": "Automatic final certification upon precertification award" },
+      { "id": "d", "text": "Expiration of recertification from an unrelated building" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "After precertification, projects proceed through construction, complete documentation, undergo GBCI review, and typically field verification before final certification.",
+    "distractorExplanations": {
+      "b": "Early charrettes precede formal registration and precertification.",
+      "c": "Precertification does not automatically convert to final certification.",
+      "d": "Another building's recertification timeline is irrelevant to this project's status."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "A WELL v2 project targets Gold (60 points). The team has documented 58 optimization points and all Preconditions. Before submittal close, the most appropriate strategy is to:",
+    "options": [
+      { "id": "a", "text": "Identify additional achievable Optimizations or strengthen evidence to reach at least 60 points" },
+      { "id": "b", "text": "Submit as Gold because 58 is within rounding tolerance by default" },
+      { "id": "c", "text": "Remove two Optimizations to simplify review" },
+      { "id": "d", "text": "Request waiver of all Preconditions instead" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Certification levels require meeting exact minimum point thresholds; teams short of a target should pursue additional compliant Optimizations or improve documentation.",
+    "distractorExplanations": {
+      "b": "WELL level thresholds are explicit minimums without default rounding concessions.",
+      "c": "Removing Optimizations would lower the point total further.",
+      "d": "Preconditions cannot be waived to compensate for point shortfalls."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "How does on-site verification differ from desk review of uploaded documentation?",
+    "options": [
+      { "id": "a", "text": "On-site verification physically confirms that strategies visible in operations match submitted compliance claims" },
+      { "id": "b", "text": "Desk review requires travel; on-site verification is completed only by email" },
+      { "id": "c", "text": "On-site verification replaces all documentation requirements with verbal assurances" },
+      { "id": "d", "text": "Desk review is performed by occupants; on-site verification is performed by tenants only" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Desk review evaluates submitted evidence for completeness and conformance; on-site verification validates real-world implementation through field observations and performance testing.",
+    "distractorExplanations": {
+      "b": "Desk review is remote; on-site verification involves physical presence at the project.",
+      "c": "Field verification supplements rather than replaces documentation requirements.",
+      "d": "Qualified WELL Performance Testing Agents conduct verification, not arbitrary tenant volunteers."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "A legacy WELL v1 Gold building is approaching renewal. IWBI encourages transition to WELL v2 at recertification primarily because:",
+    "options": [
+      { "id": "a", "text": "v2 reflects the current standard with improved flexibility, updated science, and the Preconditions/Optimizations framework" },
+      { "id": "b", "text": "v1 is the only standard accepted globally forever" },
+      { "id": "c", "text": "v2 eliminates all health-related requirements" },
+      { "id": "d", "text": "v2 removes the need for any project registration" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "WELL v2 is the contemporary program structure; transitioning at recertification aligns projects with current requirements and scoring methodology.",
+    "distractorExplanations": {
+      "b": "v1 is legacy; v2 is the current certification framework.",
+      "c": "v2 maintains rigorous health requirements through Preconditions and Optimizations.",
+      "d": "Registration remains required for WELL v2 projects."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "In a scenario-based exam item, a mixed-use project lists separate operators for retail and residential portions with different policies. The candidate must determine feature applicability. This tests knowledge of:",
+    "options": [
+      { "id": "a", "text": "Project boundary definition and how operational control affects feature responsibility" },
+      { "id": "b", "text": "International currency exchange rates" },
+      { "id": "c", "text": "Concrete mix design for highway bridges" },
+      { "id": "d", "text": "Software version control branching strategies" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "WELL AP scenarios frequently assess whether candidates can map features to the correct scope based on project boundaries, occupancy types, and operational control.",
+    "distractorExplanations": {
+      "b": "Financial exchange rates are unrelated to WELL feature applicability.",
+      "c": "Highway bridge concrete is outside WELL building certification scope.",
+      "d": "Software branching is unrelated to WELL project boundary analysis."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "well-certification-portfolio",
+    "prompt": "A firm markets its services claiming 'GBCI-developed WELL standard compliance.' Which correction should a WELL AP make?",
+    "options": [
+      { "id": "a", "text": "IWBI develops the WELL standard; GBCI provides independent certification review" },
+      { "id": "b", "text": "ASHRAE develops WELL; GBCI develops LEED only" },
+      { "id": "c", "text": "Local fire marshals develop WELL and GBCI builds the projects" },
+      { "id": "d", "text": "Tenants develop WELL; landlords certify through IWBI directly without GBCI" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Accurate representation of roles matters for client education: IWBI owns standard development while GBCI certifies conformance as an independent third party.",
+    "distractorExplanations": {
+      "b": "ASHRAE standards may be referenced by WELL but IWBI develops the WELL standard.",
+      "c": "Fire marshals enforce code; they do not author the WELL standard.",
+      "d": "GBCI remains the certification body; tenants do not author the standard."
+    },
+    "difficulty": "easy"
+  }
+]

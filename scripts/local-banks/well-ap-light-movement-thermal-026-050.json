@@ -1,0 +1,452 @@
+[
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which control sequence best supports evening circadian-friendly lighting in a corporate office?",
+    "options": [
+      { "id": "a", "text": "Gradually reduce melanopic content and illuminance after sunset while maintaining safe egress lighting" },
+      { "id": "b", "text": "Switch all zones to maximum 6500 K at 10 p.m." },
+      { "id": "c", "text": "Turn off all lighting including egress paths" },
+      { "id": "d", "text": "Disable occupancy sensors permanently" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Evening lighting transitions toward lower circadian stimulus while maintaining safety lighting, aligning with WELL Light day-night contrast strategies.",
+    "distractorExplanations": {
+      "b": "High cool light late at night increases circadian disruption.",
+      "c": "Egress lighting must remain for life safety.",
+      "d": "Occupancy-based control helps save energy and tailor lighting to use."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "A deep-plan office uses light shelves on the perimeter. What is their primary daylighting function?",
+    "options": [
+      { "id": "a", "text": "Reflect daylight deeper into the space while shading direct sun near the window" },
+      { "id": "b", "text": "Increase structural wind load on the curtain wall" },
+      { "id": "c", "text": "Filter drinking water at the facade" },
+      { "id": "d", "text": "Measure CO₂ in the return air stream" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Light shelves redirect daylight toward the ceiling to illuminate interior zones and reduce direct glare at the window wall.",
+    "distractorExplanations": {
+      "b": "Wind load may change slightly but is not the primary design intent.",
+      "c": "Water treatment is unrelated to architectural daylight devices.",
+      "d": "CO₂ sensing is an Air/I AQ strategy, not a light shelf function."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which WELL Thermal Comfort strategy helps address individual differences in preferred temperature?",
+    "options": [
+      { "id": "a", "text": "Provide adjustable diffusers, fans, or zoning where feasible within acceptable environmental bounds" },
+      { "id": "b", "text": "Fix one temperature for all occupants with no local adjustment ever" },
+      { "id": "c", "text": "Remove all thermostats from the building" },
+      { "id": "d", "text": "Disable all windows permanently" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Personal or local control within safe limits improves satisfaction when central systems cannot perfectly match every occupant's preference.",
+    "distractorExplanations": {
+      "b": "No single setpoint satisfies all metabolic and clothing differences.",
+      "c": "Removing controls prevents corrective feedback to HVAC systems.",
+      "d": "Operable windows or local control may be part of adaptive comfort solutions."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "A project measures Equivalent Melanopic Lux (EML) at 9 a.m. near a window workstation. Why is time of day important for interpretation?",
+    "options": [
+      { "id": "a", "text": "Circadian-effective light targets vary by time of day to support appropriate day-night entrainment" },
+      { "id": "b", "text": "EML is only valid at midnight" },
+      { "id": "c", "text": "Morning EML readings are always invalid for WELL" },
+      { "id": "d", "text": "Time of day does not affect lighting metrics" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "WELL Light evaluates whether daytime periods provide adequate circadian stimulus relative to time-of-day expectations, not a single static threshold at all hours.",
+    "distractorExplanations": {
+      "b": "Melanopic metrics apply throughout the day with context-specific targets.",
+      "c": "Morning can be a critical period for circadian light exposure.",
+      "d": "Circadian biology depends strongly on timing of light exposure."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which interior layout choice most increases daily walking distance for typical office workers?",
+    "options": [
+      { "id": "a", "text": "Centralizing shared amenities such as printers, mail, and break areas away from every desk cluster" },
+      { "id": "b", "text": "Placing every amenity within arm's reach of each workstation" },
+      { "id": "c", "text": "Eliminating all corridors" },
+      { "id": "d", "text": "Requiring all meetings by video from fixed desks only" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Distributed amenities encourage short walks throughout the day, supporting WELL Movement without requiring formal exercise sessions.",
+    "distractorExplanations": {
+      "b": "Immediate proximity minimizes walking and sedentary behavior persists.",
+      "c": "Corridors often facilitate circulation paths for movement.",
+      "d": "Video-only meetings reduce incidental walking between spaces."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Drafts from an overhead supply diffuser cause local complaints despite acceptable zone air temperature. Which parameter should be evaluated first?",
+    "options": [
+      { "id": "a", "text": "Air speed and diffuser throw at occupant locations" },
+      { "id": "b", "text": "Water hardness in cooling towers only" },
+      { "id": "c", "text": "Community event calendar" },
+      { "id": "d", "text": "WELL exam pilot question count" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Elevated local air speed can cause thermal discomfort even at acceptable dry-bulb temperatures; ASHRAE 55 includes air speed limits for comfort.",
+    "distractorExplanations": {
+      "b": "Cooling tower water chemistry does not explain localized drafts at desks.",
+      "c": "Community programming is unrelated to diffuser throw.",
+      "d": "Exam structure does not diagnose HVAC air distribution."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which glazing property helps reduce solar heat gain while preserving daylight transmission?",
+    "options": [
+      { "id": "a", "text": "Low solar heat gain coefficient (SHGC) with adequate visible light transmittance" },
+      { "id": "b", "text": "Opaque spandrel panels on all vision areas" },
+      { "id": "c", "text": "Single-pane clear glass with no shading on all orientations" },
+      { "id": "d", "text": "Maximum SHGC regardless of orientation" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Selecting glazing with appropriate SHGC and visible transmittance balances daylight admission with reduced radiant heat load, supporting Light and Thermal Comfort.",
+    "distractorExplanations": {
+      "b": "Opaque spandrel eliminates daylight in those areas.",
+      "c": "Single clear glass increases heat gain and glare risk.",
+      "d": "High SHGC increases cooling loads and radiant discomfort."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "A WELL project includes standing meeting tables and prompts near elevators encouraging stair use. These are examples of:",
+    "options": [
+      { "id": "a", "text": "Active design and behavioral prompts supporting Movement" },
+      { "id": "b", "text": "Materials ingredient screening requirements" },
+      { "id": "c", "text": "Sound isolation testing protocols" },
+      { "id": "d", "text": "Portfolio aggregation rules only" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Environmental cues and furnishings that reduce sedentary behavior exemplify WELL Movement through both design and operational nudges.",
+    "distractorExplanations": {
+      "b": "Materials focuses on product chemistry documentation.",
+      "c": "Sound testing addresses acoustics, not physical activity.",
+      "d": "Portfolio rules govern multi-asset certification, not stair prompts."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which condition is most associated with 'cold floor' complaints on a slab-on-grade retail space?",
+    "options": [
+      { "id": "a", "text": "Low mean radiant temperature at the floor surface despite moderate air temperature" },
+      { "id": "b", "text": "Excessive daylight autonomy on the roof" },
+      { "id": "c", "text": "High community engagement scores" },
+      { "id": "d", "text": "Missing WELL AP credential on the project team" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Uninsulated or thermally connected slabs can create low radiant floor temperatures, causing discomfort even when air thermostats read acceptable values.",
+    "distractorExplanations": {
+      "b": "Roof daylight metrics do not directly cause cold floor sensation.",
+      "c": "Community metrics are unrelated to floor radiant temperature.",
+      "d": "Team credentials do not change floor surface temperatures."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Emergency lighting levels differ from regular office lighting design targets. Which statement is correct?",
+    "options": [
+      { "id": "a", "text": "Emergency egress illumination meets life-safety code minima and is separate from WELL circadian design goals for regular occupancy" },
+      { "id": "b", "text": "Emergency lights must always exceed circadian EML targets at all hours" },
+      { "id": "c", "text": "WELL prohibits any emergency lighting" },
+      { "id": "d", "text": "Egress lighting replaces all task lighting permanently" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Life-safety emergency lighting satisfies code egress requirements; WELL Light addresses regularly occupied spaces and circadian strategies under normal operations.",
+    "distractorExplanations": {
+      "b": "Emergency levels are not designed for circadian optimization.",
+      "c": "Emergency lighting is required by code and compatible with WELL.",
+      "d": "Egress lighting operates during power failure, not as daily task lighting."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which exercise programming element aligns with WELL Movement beyond built amenities alone?",
+    "options": [
+      { "id": "a", "text": "Employer-supported physical activity programs or subsidies for fitness participation" },
+      { "id": "b", "text": "Banning all breaks during the workday" },
+      { "id": "c", "text": "Removing all interior paths longer than 10 feet" },
+      { "id": "d", "text": "Eliminating all windows to reduce glare" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "WELL Movement includes organizational policies and programs that encourage regular physical activity, not only architectural features.",
+    "distractorExplanations": {
+      "b": "Restricting breaks reduces opportunities for movement.",
+      "c": "Shortening paths reduces incidental walking.",
+      "d": "Window removal harms daylight and is unrelated to exercise programming."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "A designer specifies desk task lights with adjustable intensity. Which WELL benefit is most direct?",
+    "options": [
+      { "id": "a", "text": "Improved individual visual comfort and appropriate task illuminance at the workstation" },
+      { "id": "b", "text": "Automatic Water feature compliance" },
+      { "id": "c", "text": "Guaranteed sound isolation between offices" },
+      { "id": "d", "text": "Elimination of thermal comfort monitoring" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "User-adjustable task lighting helps meet individual visual task needs and can supplement ambient circadian-designed lighting.",
+    "distractorExplanations": {
+      "b": "Task lights do not address water quality features.",
+      "c": "Acoustic isolation requires assembly and layout strategies.",
+      "d": "Thermal monitoring remains independent of desk lighting."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which seasonal issue most commonly increases cooling demand and radiant discomfort at west-facing glazing late afternoon?",
+    "options": [
+      { "id": "a", "text": "Low-angle solar heat gain through west windows" },
+      { "id": "b", "text": "Increased waterborne pathogen testing frequency" },
+      { "id": "c", "text": "Reduced WELL feature documentation" },
+      { "id": "d", "text": "Lower community volunteer requirements" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "West-facing facades receive intense late-day sun, increasing cooling loads and radiant asymmetry; shading and glazing selection address both Light and Thermal Comfort.",
+    "distractorExplanations": {
+      "b": "Pathogen testing schedules do not drive solar heat gain.",
+      "c": "Documentation levels do not change solar geometry.",
+      "d": "Community volunteer policies are unrelated to solar orientation."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which accessibility consideration also supports WELL Movement goals in stair design?",
+    "options": [
+      { "id": "a", "text": "Compliant handrails, contrast cues, and consistent tread dimensions for safe everyday use" },
+      { "id": "b", "text": "Steep irregular treads to discourage all users" },
+      { "id": "c", "text": "Hidden stair locations with no signage" },
+      { "id": "d", "text": "Locked stairs during all business hours" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Safe, perceptible, code-compliant stairs encourage use by a broad population, aligning accessibility with Movement objectives.",
+    "distractorExplanations": {
+      "b": "Irregular treads create safety hazards and deter use.",
+      "c": "Hidden stairs reduce discovery and everyday use.",
+      "d": "Locked stairs block movement and egress access."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "A thermal comfort survey shows dissatisfaction in a conference room after occupancy increases from 4 to 20 people. What changed most significantly?",
+    "options": [
+      { "id": "a", "text": "Internal sensible heat gain and metabolic load from additional occupants" },
+      { "id": "b", "text": "STC rating of the partition" },
+      { "id": "c", "text": "WELL Portfolio subscription tier" },
+      { "id": "d", "text": "Filter MERV rating in a distant AHU only" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Higher occupancy increases heat generation and may exceed HVAC capacity or ventilation design, affecting thermal comfort despite unchanged thermostat setpoints.",
+    "distractorExplanations": {
+      "b": "Partition STC affects sound, not heat from occupants.",
+      "c": "Portfolio tier does not change room occupancy heat load.",
+      "d": "Distant filter rating does not explain sudden load change from people."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which lighting quality issue is most likely when LED fixtures flicker at frequencies visible to some occupants?",
+    "options": [
+      { "id": "a", "text": "Visual discomfort, headaches, or performance issues for sensitive occupants" },
+      { "id": "b", "text": "Improved circadian entrainment for all users automatically" },
+      { "id": "c", "text": "Higher water quality at fixtures" },
+      { "id": "d", "text": "Reduced need for thermal comfort surveys" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Flicker can cause visual stress; WELL Light emphasizes quality of illumination including controls and driver performance that minimize problematic flicker.",
+    "distractorExplanations": {
+      "b": "Visible flicker is generally harmful, not beneficial, to visual comfort.",
+      "c": "Lighting flicker does not affect drinking water.",
+      "d": "Thermal surveys address a different environmental domain."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "A hybrid workforce spends only three days per week in the office. Which Movement strategy remains valuable?",
+    "options": [
+      { "id": "a", "text": "Design the office to maximize active circulation and stairs for days when occupants are present" },
+      { "id": "b", "text": "Remove all stairs because occupancy is lower" },
+      { "id": "c", "text": "Eliminate all shared amenities to reduce walking" },
+      { "id": "d", "text": "Disable all lighting controls on remote days" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Active design still increases physical activity on in-office days; WELL Movement addresses building-mediated activity whenever occupants use the space.",
+    "distractorExplanations": {
+      "b": "Lower occupancy does not eliminate benefits of active design when people are present.",
+      "c": "Removing amenities reduces walking opportunities.",
+      "d": "Remote-day control settings are a separate operational choice from Movement design."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which combination best describes 'visual comfort' in WELL Light?",
+    "options": [
+      { "id": "a", "text": "Appropriate illuminance, glare control, and color quality for tasks and spaces" },
+      { "id": "b", "text": "Maximum brightness everywhere with no shading" },
+      { "id": "c", "text": "Elimination of all windows" },
+      { "id": "d", "text": "Use of a single light level for 24 hours without variation" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Visual comfort balances sufficient light for tasks with control of glare and quality of light spectrum, supporting occupant performance and satisfaction.",
+    "distractorExplanations": {
+      "b": "Excessive uncontrolled brightness increases glare.",
+      "c": "Windows often support daylight and visual connection.",
+      "d": "Static lighting ignores task and circadian needs."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Underfloor air distribution (UFAD) systems can create thermal stratification. What should designers monitor for seated occupant comfort?",
+    "options": [
+      { "id": "a", "text": "Temperature and air speed at breathing zone and ankle level" },
+      { "id": "b", "text": "Only rooftop PAR for landscaping" },
+      { "id": "c", "text": "Community survey participation rates only" },
+      { "id": "d", "text": "WELL exam scaled score distribution" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "UFAD can produce vertical temperature gradients; comfort assessment checks conditions at occupant head and foot levels per thermal comfort guidance.",
+    "distractorExplanations": {
+      "b": "Landscape photosynthetically active radiation is unrelated to indoor UFAD.",
+      "c": "Community surveys do not replace environmental measurements.",
+      "d": "Exam statistics are unrelated to HVAC stratification."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which metric is used to describe how much of the year a space exceeds useful daylight illuminance thresholds?",
+    "options": [
+      { "id": "a", "text": "Annual sunlight exposure or related cumulative daylight metrics used with sDA/ASE frameworks" },
+      { "id": "b", "text": "Gallons per minute at lavatories" },
+      { "id": "c", "text": "Occupant load for assembly spaces only" },
+      { "id": "d", "text": "WELL feature point submittal count" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Daylight analysis often pairs spatial daylight autonomy with annual sunlight exposure to avoid both insufficient daylight and excessive glare/overheating.",
+    "distractorExplanations": {
+      "b": "Flow rate is a Water fixture metric.",
+      "c": "Assembly occupant load is an egress calculation.",
+      "d": "Submittal counts are administrative, not simulation metrics."
+    },
+    "difficulty": "hard"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "A building provides height-adjustable desks by default rather than by request only. Which WELL principle does this default-support approach reflect?",
+    "options": [
+      { "id": "a", "text": "Making active workstations accessible to all rather than treating movement as an exception" },
+      { "id": "b", "text": "Eliminating all seated work permanently" },
+      { "id": "c", "text": "Reducing nourishment transparency" },
+      { "id": "d", "text": "Avoiding all thermal comfort standards" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Universal provision of sit-stand desks normalizes movement during the workday and aligns with WELL Movement inclusion principles.",
+    "distractorExplanations": {
+      "b": "Sit-stand desks still allow seated work; they add standing option.",
+      "c": "Nourishment transparency is unrelated to desk type.",
+      "d": "Thermal standards still apply regardless of desk adjustability."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which operational practice helps maintain thermal comfort after a major HVAC retrofit?",
+    "options": [
+      { "id": "a", "text": "Commission controls, verify setpoints and schedules, and gather occupant feedback during seasonal changeover" },
+      { "id": "b", "text": "Never adjust BAS schedules after installation" },
+      { "id": "c", "text": "Disable all sensors to reduce maintenance" },
+      { "id": "d", "text": "Ignore seasonal clothing changes" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Post-retrofit commissioning and seasonal tune-up with occupant feedback helps ensure environmental systems deliver intended thermal comfort performance.",
+    "distractorExplanations": {
+      "b": "Schedules and setpoints often need refinement after occupancy changes.",
+      "c": "Disabled sensors prevent corrective control.",
+      "d": "Clothing seasonality affects perceived comfort and should inform setpoint strategy."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which light exposure pattern most risks circadian misalignment for office workers?",
+    "options": [
+      { "id": "a", "text": "Dim indoor days with very bright screens at night and little morning daylight" },
+      { "id": "b", "text": "Consistent day-night contrast with morning daylight and dimmer evenings" },
+      { "id": "c", "text": "Regular outdoor breaks during lunch in daylight" },
+      { "id": "d", "text": "Perimeter desks with controlled daylight and shades" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Low daytime circadian stimulus combined with high evening light from screens disrupts natural day-night signals, a key WELL Light concern.",
+    "distractorExplanations": {
+      "b": "Healthy contrast supports entrainment.",
+      "c": "Outdoor lunch breaks increase beneficial daylight exposure.",
+      "d": "Managed perimeter daylight is generally positive for visual and circadian health."
+    },
+    "difficulty": "medium"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "A project targets WELL Thermal Comfort verification. Which documentation type is most relevant?",
+    "options": [
+      { "id": "a", "text": "HVAC design narratives, control sequences, and measurement or survey records demonstrating comfort criteria" },
+      { "id": "b", "text": "Only marketing brochures without technical data" },
+      { "id": "c", "text": "Unrelated food menu photos only" },
+      { "id": "d", "text": "Exam registration receipt for WELL AP candidates" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Thermal Comfort features require evidence that environmental conditions and controls meet WELL criteria through design documentation and/or performance verification.",
+    "distractorExplanations": {
+      "b": "Marketing materials alone lack verifiable performance data.",
+      "c": "Food menus relate to Nourishment, not thermal verification.",
+      "d": "Individual exam registration is not project compliance documentation."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "topicId": "light-movement-thermal",
+    "prompt": "Which integrated design decision simultaneously supports WELL Light and Thermal Comfort at the building envelope?",
+    "options": [
+      { "id": "a", "text": "High-performance glazing with spectrally selective properties and exterior shading tuned by orientation" },
+      { "id": "b", "text": "Eliminating all windows on every facade" },
+      { "id": "c", "text": "Using only incandescent lamps with no controls" },
+      { "id": "d", "text": "Removing all insulation to increase daylight" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Spectrally selective glazing and orientation-specific shading admit useful daylight while limiting heat gain and glare, benefiting both concept areas.",
+    "distractorExplanations": {
+      "b": "No windows eliminates daylight benefits.",
+      "c": "Incandescent-only schemes lack efficient circadian-tunable design.",
+      "d": "Removing insulation worsens thermal comfort and energy performance."
+    },
+    "difficulty": "hard"
+  }
+]
