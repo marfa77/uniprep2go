@@ -2098,18 +2098,21 @@ const rawDecks: Deck[] = [
     topicCoverage: [],
     sampleCards: [
       {
-        question: "sein",
-        answer: "бути — Ich bin hier im sonnigen Zimmer. (Я хочу бути тут сьогодні з вами.)",
+        question: "Schule",
+        answer:
+          "школа — Kinder gehen mit ihren Rucksäcken zur Schule. (Діти йдуть до школи зі своїми рюкзаками.)",
         imageUrl: "/samples/german-a2-for-ukrainian-speakers-anki-deck-sample-1.webp",
       },
       {
-        question: "ich",
-        answer: "я — Ich stehe hier allein. (Я зараз тут разом з вами.)",
+        question: "Haus",
+        answer:
+          "дім — Dies ist ein kleines rotes Backsteinhaus mit einem weißen Zaun. (Це маленький червоний цегляний будинок із білим парканом.)",
         imageUrl: "/samples/german-a2-for-ukrainian-speakers-anki-deck-sample-2.webp",
       },
       {
-        question: "du",
-        answer: "ти — Du siehst heute glücklich aus! (Ти сьогодні виглядаєш щасливим.)",
+        question: "Freund",
+        answer:
+          "друг — Mein Freund und ich umarmen uns auf der Parkbank. (Ми з другом обіймаємося на лавці в парку.)",
         imageUrl: "/samples/german-a2-for-ukrainian-speakers-anki-deck-sample-3.webp",
       },
     ],
@@ -2170,18 +2173,21 @@ const rawDecks: Deck[] = [
     topicCoverage: [],
     sampleCards: [
       {
-        question: "sein",
-        answer: "быть — Ich bin hier im sonnigen Zimmer. (Я хочу быть здесь сегодня с вами.)",
+        question: "Schule",
+        answer:
+          "школа — Kinder gehen mit ihren Rucksäcken zur Schule. (Дети идут в школу со своими рюкзаками.)",
         imageUrl: "/samples/german-a2-for-russian-speakers-anki-deck-sample-1.webp",
       },
       {
-        question: "ich",
-        answer: "я — Ich stehe hier allein. (Я сейчас здесь вместе с вами.)",
+        question: "Haus",
+        answer:
+          "дом — Dies ist ein kleines rotes Backsteinhaus mit einem weißen Zaun. (Это маленький красный кирпичный дом с белым забором.)",
         imageUrl: "/samples/german-a2-for-russian-speakers-anki-deck-sample-2.webp",
       },
       {
-        question: "du",
-        answer: "ты — Du siehst heute glücklich aus! (Ты сегодня выглядишь счастливым.)",
+        question: "Freund",
+        answer:
+          "друг — Mein Freund und ich umarmen uns auf der Parkbank. (Мы с другом обнимаемся на скамейке в парке.)",
         imageUrl: "/samples/german-a2-for-russian-speakers-anki-deck-sample-3.webp",
       },
     ],
