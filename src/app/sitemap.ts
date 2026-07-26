@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { availableDecks } from "../lib/decks";
+import { intentPages } from "../lib/intent-pages";
 import { getAllMockExams } from "../lib/mock-exams/configs";
 import { getVerticalSummaries } from "../lib/mock-exams/hub-clusters";
 import { mockExamSitemapPriority, shouldIndexMockExam } from "../lib/seo";
@@ -33,6 +34,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly" as const,
     priority: 0.9,
   }));
+
+  const indexedIntentPages = intentPages
+    .filter((page) => page.indexInSitemap)
+    .map((page) => ({
+      url: `${siteUrl}/${page.slug}`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    }));
 
   return [
     {
@@ -125,12 +135,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
-    {
-      url: `${siteUrl}/cursor-rules-for-indie-hackers`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.78,
-    },
+    ...indexedIntentPages,
     {
       url: `${siteUrl}/mock-exams`,
       lastModified,

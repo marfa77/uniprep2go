@@ -379,6 +379,8 @@ describe("LLM documents", () => {
       "best-frm-part-1-anki-deck",
       "ciple-a2-anki-deck-for-portuguese-citizenship",
       "anki-decks-for-language-exams",
+      "language-exam-vs-citizenship-civics-anki",
+      "which-citizenship-anki-deck",
       "cursor-rules-for-indie-hackers",
     ]);
 

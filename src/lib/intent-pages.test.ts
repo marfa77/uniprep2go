@@ -14,6 +14,8 @@ describe("intent pages visibility", () => {
       "best-frm-part-1-anki-deck",
       "ciple-a2-anki-deck-for-portuguese-citizenship",
       "anki-decks-for-language-exams",
+      "language-exam-vs-citizenship-civics-anki",
+      "which-citizenship-anki-deck",
       "cursor-rules-for-indie-hackers",
     ]);
 
@@ -31,7 +33,7 @@ describe("intent pages visibility", () => {
 
     expect(page).toBeDefined();
     expect(page?.deckSlugs).toEqual(languageDeckSlugs);
-    expect(page?.deckSlugs).toHaveLength(20);
+    expect(page?.deckSlugs).toHaveLength(24);
     expect(page?.directAnswer).toContain("CIPLE CAPLE Portuguese");
     expect(page?.directAnswer).toContain("German Goethe telc ÖSD DTZ");
     expect(page?.directAnswer).toContain("Norwegian Norskprøve");
@@ -44,12 +46,16 @@ describe("intent pages visibility", () => {
     expect(page?.directAnswer).toContain("IELTS / TOEFL English for Russian Speakers");
     expect(page?.directAnswer).toContain("IELTS / TOEFL English for Spanish Speakers (LatAm)");
     expect(page?.directAnswer).toContain("IELTS / TOEFL English for Portuguese Speakers (BR)");
-    expect(page?.directAnswer).toContain("seventeen curated");
+    expect(page?.directAnswer).toContain("twenty-one curated");
     expect(page?.directAnswer).toContain("DELF DALF TCF TEF French");
     expect(page?.directAnswer).toContain("CELI CILS PLIDA Italian");
     expect(page?.directAnswer).not.toContain("DELE CCSE");
     expect(page?.directAnswer).toContain("DELE SIELE Spanish");
-    expect(page?.directAnswer).toContain("seventeen curated multi-pathway language Anki decks");
+    expect(page?.directAnswer).toContain("twenty-one curated multi-pathway language Anki decks");
+    expect(page?.directAnswer).toContain("German A2 for Ukrainian Speakers");
+    expect(page?.directAnswer).toContain("German A2 for Russian Speakers");
+    expect(page?.directAnswer).toContain("Polish A2 Certyfikat");
+    expect(page?.directAnswer).toContain("Polish A2 for Ukrainian Speakers");
     expect(page?.directAnswer).toContain("DELF Prim printable");
     expect(page?.directAnswer).toContain("ages 7–12");
     expect(page?.directAnswer).toContain("Citizenship & Naturalization Anki Bundle");

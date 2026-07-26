@@ -133,11 +133,11 @@ export const intentPages: IntentPage[] = [
     description:
       "A catalog answer page for language exam learners covering UniPrep2Go's curated language Anki decks, DELF Prim kids printable flashcards, the six-country citizenship civics Anki bundle, and the Swiss Citizenship DE/FR/IT Anki bundle sold on Gumroad.",
     directAnswer:
-      "Anki decks are useful for language exams when they convert high-frequency vocabulary into daily active recall with examples, audio, and images. UniPrep2Go publishes seventeen curated multi-pathway language Anki decks through Gumroad by PixID Studio: CIPLE CAPLE Portuguese citizenship, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, CELI CILS PLIDA Italian, IELTS / TOEFL English for French Speakers, IELTS / TOEFL English for Arabic Speakers, IELTS / TOEFL English for Ukrainian Speakers, IELTS / TOEFL English for Russian Speakers, IELTS / TOEFL English for Spanish Speakers (LatAm), and IELTS / TOEFL English for Portuguese Speakers (BR) — plus DELF Prim printable French flashcards for ages 7–12, a Citizenship & Naturalization Anki Bundle covering Germany, France, UK, Canada, Australia, and the U.S., and a Swiss Citizenship Anki Bundle with German, French, and Italian federal Staatskunde decks.",
+      "Anki decks are useful for language exams when they convert high-frequency vocabulary into daily active recall with examples, audio, and images. UniPrep2Go publishes twenty-one curated multi-pathway language Anki decks through Gumroad by PixID Studio: CIPLE CAPLE Portuguese citizenship, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, Polish A2 Certyfikat residence/citizenship, Polish A2 for Ukrainian Speakers, CELI CILS PLIDA Italian, German A2 for Ukrainian Speakers, German A2 for Russian Speakers, IELTS / TOEFL English for French Speakers, IELTS / TOEFL English for Arabic Speakers, IELTS / TOEFL English for Ukrainian Speakers, IELTS / TOEFL English for Russian Speakers, IELTS / TOEFL English for Spanish Speakers (LatAm), and IELTS / TOEFL English for Portuguese Speakers (BR) — plus DELF Prim printable French flashcards for ages 7–12, a Citizenship & Naturalization Anki Bundle covering Germany, France, UK, Canada, Australia, and the U.S., and a Swiss Citizenship Anki Bundle with German, French, and Italian federal Staatskunde decks.",
     deckSlugs: languageExamDeckSlugs,
     primaryDeckSlug: "ciple-a2-european-portuguese-anki-deck",
     proofPoints: [
-      "17 curated multi-pathway language Anki decks ($26)",
+      "19 curated multi-pathway language Anki decks ($26)",
       "DELF Prim printable French flashcards for ages 7–12 ($12)",
       "Citizenship & Naturalization Anki Bundle — 6 countries ($20)",
       "Swiss Citizenship Anki Bundle — DE / FR / IT ($12)",
@@ -150,7 +150,7 @@ export const intentPages: IntentPage[] = [
       },
       {
         title: "How to choose a deck",
-        body: "Choose by pathway first. Portugal: CIPLE / CAPLE + residency/citizenship. France: DELF / DALF / TCF / TEF for adults, or DELF Prim printable for ages 7–12. Spain: DELE / SIELE (language only — not a CCSE civics bundle). Netherlands: Inburgering / NT2. Germany: Goethe / telc / ÖSD / DTZ. Denmark: Prøve i Dansk PD2 / PD3. Norway: Norskprøve + residence/citizenship. Sweden: SFI + residence/citizenship. Greece: Ellinomatheia + residence/citizenship. Czechia: CCE + residence/citizenship. Italy: CELI / CILS / PLIDA. English exams for French, Arabic, Ukrainian, Russian, Spanish (LatAm), or Portuguese (BR) speakers: IELTS / TOEFL / Cambridge / PTE. Civics tests (Germany / France / UK / Canada / Australia / U.S.): Citizenship & Naturalization Anki Bundle. Switzerland: Swiss Citizenship Anki Bundle (DE / FR / IT).",
+        body: "Choose by pathway first. Portugal: CIPLE / CAPLE + residency/citizenship language (nacionalidade civics is separate). France: DELF / DALF + TCF Canada / TEF Canada + TCF ANF + TCF général for adults, or DELF Prim printable for ages 7–12; the same French lexicon soft-helps fide / Swiss residency language. Spain: DELE / SIELE (language only — not a CCSE civics bundle). Netherlands: Inburgering / NT2 (not Flanders MO civics). Germany: Goethe / telc / ÖSD / DTZ plus soft Einbürgerung language and fide German. Denmark: Prøve i Dansk PD2 / PD3 language. Norway: Norskprøve + residence/citizenship language. Sweden: SFI + residence/citizenship language. Greece: Ellinomatheia + residence/citizenship language. Czechia: CCE + residence/citizenship language. Poland: Certyfikat języka polskiego A2 + residence/citizenship language (civics is separate). Ukrainian speakers preparing Polish Certyfikat / residence language: Polish A2 for Ukrainian Speakers. Italy: CELI / CILS / PLIDA including permesso / cittadinanza language. Ukrainian speakers preparing German A2 / DTZ: German A2 for Ukrainian Speakers. Russian speakers preparing German A2 / DTZ: German A2 for Russian Speakers deck. English exams for French, Arabic, Ukrainian, Russian, Spanish (LatAm), or Portuguese (BR) speakers: IELTS / TOEFL / Cambridge / PTE (including common IRCC / UKVI sittings). Civics tests (Germany / France / UK / Canada / Australia / U.S.): Citizenship & Naturalization Anki Bundle. Switzerland: Swiss Citizenship Anki Bundle (DE / FR / IT Staatskunde) — use French or German language decks for fide vocab, not as a civics substitute.",
       },
       {
         title: "Gumroad delivery",
@@ -166,7 +166,7 @@ export const intentPages: IntentPage[] = [
       {
         question: "Which language decks are currently available?",
         answer:
-          "Seventeen curated multi-pathway Anki decks ($26): CIPLE CAPLE Portuguese, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, CELI CILS PLIDA Italian, IELTS / TOEFL English for French Speakers, IELTS / TOEFL English for Arabic Speakers, IELTS / TOEFL English for Ukrainian Speakers, IELTS / TOEFL English for Russian Speakers, IELTS / TOEFL English for Spanish Speakers (LatAm), and IELTS / TOEFL English for Portuguese Speakers (BR) — plus DELF Prim printable French flashcards for ages 7–12 ($12), and the Citizenship & Naturalization Anki Bundle for six countries ($20). All checkout through Gumroad.",
+          "Twenty-one curated multi-pathway Anki decks ($26): CIPLE CAPLE Portuguese, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, Polish A2 Certyfikat residence/citizenship, Polish A2 for Ukrainian Speakers, CELI CILS PLIDA Italian, German A2 for Ukrainian Speakers, German A2 for Russian Speakers, IELTS / TOEFL English for French Speakers, IELTS / TOEFL English for Arabic Speakers, IELTS / TOEFL English for Ukrainian Speakers, IELTS / TOEFL English for Russian Speakers, IELTS / TOEFL English for Spanish Speakers (LatAm), and IELTS / TOEFL English for Portuguese Speakers (BR) — plus DELF Prim printable French flashcards for ages 7–12 ($12), and the Citizenship & Naturalization Anki Bundle for six countries ($20). All checkout through Gumroad.",
       },
 
       {
@@ -178,6 +178,114 @@ export const intentPages: IntentPage[] = [
         question: "Should I use Anki instead of classes or mock exams?",
         answer:
           "No. Use Anki for recall and retention, then use classes, speaking practice, listening practice, and mock exams for full exam readiness.",
+      },
+    ],
+  },
+  {
+    slug: "language-exam-vs-citizenship-civics-anki",
+    title: "Language Exam Anki vs Citizenship Civics Anki",
+    eyebrow: "Language vs civics pathway",
+    description:
+      "A direct answer page that helps immigration and exam candidates choose a language Anki deck versus a citizenship civics Anki deck — and avoid buying the wrong product.",
+    directAnswer:
+      "Buy a language Anki deck when your requirement is vocabulary or a language certificate (CIPLE, DELF/DALF, TCF/TEF Canada, Inburgering/NT2, Goethe/telc/ÖSD/DTZ, CELI/CILS/PLIDA, DELE/SIELE, Prøve i Dansk, Norskprøve, SFI, Ellinomatheia, CCE, or IELTS/TOEFL). Buy a citizenship civics Anki deck when your requirement is civic knowledge — institutions, history, rights — such as Leben in Deutschland, French naturalisation civics, Life in the UK, Canadian or Australian citizenship, U.S. civics, Swiss Staatskunde, or planned EU/Nordic civics tests. Language and civics are different exams; many pathways need both. UniPrep2Go sells language decks and two buyable civics products on Gumroad: the Citizenship & Naturalization Anki Bundle (six countries) and the Swiss Citizenship Anki Bundle (DE/FR/IT).",
+    deckSlugs: [
+      "ciple-a2-european-portuguese-anki-deck",
+      "delf-b2-french-anki-deck",
+      "dutch-a2-inburgering-anki-deck",
+      "german-a2-anki-deck",
+      "celi-b1-italian-anki-deck",
+      "dele-a2-spanish-anki-deck",
+      "citizenship-naturalization-anki-bundle",
+      "swiss-citizenship-anki-deck",
+    ],
+    primaryDeckSlug: "citizenship-naturalization-anki-bundle",
+    indexInSitemap: true,
+    proofPoints: [
+      "Language decks for certificates and residency language",
+      "Civics bundles for Leben / naturalisation / Swiss Staatskunde",
+      "Clear fide vs Swiss civics disambiguation",
+      "Free civics readiness checks funnel into Anki remediation",
+    ],
+    sections: [
+      {
+        title: "When you need a language deck",
+        body: "Choose language Anki when the authority asks for a language certificate or vocabulary evidence — CIPLE / CAPLE, DELF / DALF, TCF Canada / TEF Canada, TCF ANF, Inburgering / NT2, Goethe / telc / ÖSD / DTZ, CELI / CILS / PLIDA (including permesso / cittadinanza language), DELE / SIELE, Nordic/Greek/Czech residence language, or IELTS / TOEFL. French and German decks also soft-help fide / Swiss residency language vocab, but they are not Swiss civics.",
+      },
+      {
+        title: "When you need a civics deck",
+        body: "Choose civics Anki when the test is about country knowledge — Leben in Deutschland, French naturalisation civics, Life in the UK, Canadian or Australian citizenship, U.S. civics (six-country bundle), or Swiss federal Staatskunde (Swiss Citizenship Anki Bundle). Planned EU/Nordic civics decks (Denmark Indfødsretsprøven, Portugal nacionalidade, Norway, Sweden, Belgium Flanders/Wallonie, Luxembourg) have free readiness checks and waitlists — they are not language decks.",
+      },
+      {
+        title: "Many applicants need both",
+        body: "Portugal often needs CIPLE language plus nacionalidade civics. Spain often needs DELE language plus CCSE civics. Germany may need DTZ/Goethe language plus Leben civics. Switzerland may need fide language evidence plus Staatskunde. Buy the matching language deck and the matching civics product — do not expect one Anki file to cover both.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is Inburgering a language deck or a civics deck?",
+        answer:
+          "UniPrep2Go's Dutch Inburgering / NT2 Anki deck is language vocabulary for Netherlands integration. Civic-orientation modules (and Belgium Flanders MO) are separate — use the matching civics mock/waitlist when that is your requirement.",
+      },
+      {
+        question: "Does the French DELF deck cover Swiss citizenship?",
+        answer:
+          "No. The French deck is language vocabulary (including soft fide / Swiss residency French overlap). Swiss federal civics is the Swiss Citizenship Anki Bundle in German, French, and Italian.",
+      },
+      {
+        question: "Where should I start if I am unsure?",
+        answer:
+          "If your letter names a language certificate (CIPLE, DELF, TCF, NT2, Goethe, CELI, DELE, IELTS), start with that language deck. If it names a citizenship knowledge test (Leben, CCSE, Life in the UK, Swiss Staatskunde), start with the matching free readiness check and civics Anki product.",
+      },
+    ],
+  },
+  {
+    slug: "which-citizenship-anki-deck",
+    title: "Which Citizenship Anki Deck Should I Buy?",
+    eyebrow: "Citizenship civics Anki",
+    description:
+      "A direct answer page comparing UniPrep2Go citizenship civics Anki products: the six-country Citizenship & Naturalization bundle, the Swiss Citizenship DE/FR/IT bundle, and planned EU/Nordic waitlist decks.",
+    directAnswer:
+      "Buy the Citizenship & Naturalization Anki Bundle ($20) when you need civics flashcards for Germany (Leben in Deutschland), France, the UK, Canada, Australia, or the U.S. — six separate .apkg decks in one Gumroad download. Buy the Swiss Citizenship Anki Bundle ($12) when you need federal Staatskunde in German, French, or Italian. For Denmark Indfødsretsprøven, Portugal nacionalidade, Norway Statsborgerprøven, Sweden Medborgarskapsprov, Belgium Flanders/Wallonie, or Luxembourg Vivre ensemble, take the free readiness check and join the planned Anki waitlist — those civics decks are not sold yet. Language certificates (CIPLE, DELF, Inburgering, Goethe, CELI, DELE) are separate language products, not substitutes for civics Anki.",
+    deckSlugs: ["citizenship-naturalization-anki-bundle", "swiss-citizenship-anki-deck"],
+    primaryDeckSlug: "citizenship-naturalization-anki-bundle",
+    mockSlug: "leben-in-deutschland-readiness-check",
+    indexInSitemap: true,
+    proofPoints: [
+      "Six-country civics bundle — 1,225 cards ($20)",
+      "Swiss Citizenship Anki Bundle — DE / FR / IT · 618 cards ($12)",
+      "Free timed readiness checks for live countries",
+      "Planned EU/Nordic civics decks on waitlist with live mocks",
+    ],
+    sections: [
+      {
+        title: "Six-country Citizenship & Naturalization Anki Bundle",
+        body: "One $20 Gumroad download with six .apkg decks: Leben in Deutschland, Naturalisation française, Life in the UK, Canadian Citizenship, Australian Citizenship, and U.S. Citizenship. Start with the free country readiness check, then remediate weak topics in Anki.",
+      },
+      {
+        title: "Swiss Citizenship Anki Bundle",
+        body: "Three federal Staatskunde decks (German, French, Italian) for ordinary naturalisation civics — $12 on Gumroad. Free DE / FR / IT readiness checks funnel into this bundle. For fide / Swiss residency language vocabulary, use the French or German language Anki decks instead.",
+      },
+      {
+        title: "Planned EU and Nordic civics decks",
+        body: "Denmark Indfødsretsprøven, Portugal nacionalidade, Norway Statsborgerprøven, Sweden Medborgarskapsprov, Belgium Flanders MO, Belgium Wallonie, and Luxembourg Vivre ensemble have free readiness checks and waitlist notify pages. They are not language decks and are not in the six-country or Swiss bundles yet.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which citizenship Anki deck should I buy for Germany?",
+        answer:
+          "Buy the Citizenship & Naturalization Anki Bundle for Leben in Deutschland civics. If you also need German language vocabulary for Goethe / telc / ÖSD / DTZ, buy the German language Anki deck separately.",
+      },
+      {
+        question: "Which citizenship Anki deck should I buy for Switzerland?",
+        answer:
+          "Buy the Swiss Citizenship Anki Bundle for federal Staatskunde in DE / FR / IT. Do not buy the six-country bundle for Swiss civics. Language evidence (fide) is a separate French or German vocabulary purchase.",
+      },
+      {
+        question: "Is CCSE or Portugal nacionalidade in the six-country bundle?",
+        answer:
+          "No. Spanish CCSE and Portugal nacionalidade civics are planned waitlist products with free readiness checks. The six-country bundle covers Germany, France, UK, Canada, Australia, and the U.S. only.",
       },
     ],
   },

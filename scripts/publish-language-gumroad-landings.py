@@ -69,30 +69,33 @@ SPECS: dict[str, dict[str, Any]] = {
     "delf-b2-french-anki-deck": {
         "label": "DELF DALF TCF TEF French",
         "headline": "DELF DALF TCF TEF French Anki Deck — 2000+ Flashcards",
-        "exam": "DELF / DALF · TCF Canada · TEF Canada · TCF ANF · TCF général",
+        "exam": "DELF / DALF · TCF Canada · TEF Canada · TCF ANF · TCF général · fide soft overlap",
         "hook": (
             "One French vocabulary bank for DELF / DALF diplomas, TCF/TEF Canada immigration, "
-            "TCF ANF naturalization, and TCF général university admission."
+            "TCF ANF naturalization, TCF général university admission, and shared lexicon for "
+            "fide / Swiss residency French."
         ),
         "audience": (
             "For French diploma, Canada Express Entry / Quebec, French naturalization, "
-            "and university applicants who need high-frequency vocabulary with native audio."
+            "university, and fide / Swiss residency French language applicants who need "
+            "high-frequency vocabulary with native audio."
         ),
-        "disclaimer": "France Éducation international / IRCC / TCF-TEF bodies",
+        "disclaimer": "France Éducation international / IRCC / TCF-TEF / fide-SEM",
         "about_heading": "Which French exams does this cover?",
         "about": (
             "DELF and DALF are lifetime diplomas. TCF Canada and TEF Canada support Canadian "
             "immigration. TCF ANF supports French naturalization. TCF général is widely used "
-            "for French university admission. These pathways share a large high-frequency lexicon."
+            "for French university admission. The same high-frequency lexicon helps fide / Swiss "
+            "residency French language prep — not Swiss civics (use the Swiss Citizenship Anki Bundle)."
         ),
-        "pathways": "DELF · DALF · TCF Canada · TEF Canada · TCF ANF · TCF général",
+        "pathways": "DELF · DALF · TCF Canada · TEF Canada · TCF ANF · TCF général · fide soft",
         "deck_covers": (
             "2000+ cards pairing each headword with a visual cue, native French audio, "
             "and a contextual example — shared core vocabulary across those exams."
         ),
         "not_included": (
-            "Official TCF/TEF listening formats, writing templates, or full mock exams — "
-            "keep using official practice for timed skills."
+            "Official TCF/TEF listening formats, writing templates, fide speaking formats, "
+            "or Swiss Staatskunde civics — keep using official practice for timed skills."
         ),
         "why_anki": (
             "French certificate and immigration scores reward fast lexical access. "
@@ -102,7 +105,7 @@ SPECS: dict[str, dict[str, Any]] = {
         "format_note": "Anki .apkg with audio and images (~159 MB)",
         "sample_captions": ["être", "je", "tu"],
         "facts": [
-            ("Pathways", "DELF DALF · TCF · TEF"),
+            ("Pathways", "DELF DALF · TCF · TEF · fide soft"),
             ("Cards", "2000+ vocabulary"),
             ("Media", "Audio + images"),
             ("Delivery", "Instant .apkg"),
@@ -110,7 +113,7 @@ SPECS: dict[str, dict[str, Any]] = {
     },
     "dutch-a2-inburgering-anki-deck": {
         "label": "Dutch Inburgering NT2 A2",
-        "headline": "Dutch Inburgering NT2 A2 Anki Deck — 1000+ Flashcards",
+        "headline": "Dutch Inburgering NT2 A2 Anki Deck — 1500 Flashcards",
         "exam": "Inburgering · Staatsexamen NT2 A2 · residency & naturalisatie",
         "hook": (
             "Dutch A2 vocabulary for civic integration (Inburgering), Staatsexamen NT2 A2, "
@@ -129,7 +132,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "Inburgering · Staatsexamen NT2 A2 · residency · naturalisatie",
         "deck_covers": (
-            "1000+ high-frequency Dutch words with English glosses, bilingual examples, "
+            "1,500 high-frequency Dutch words with English glosses, bilingual examples, "
             "native audio, and illustrations."
         ),
         "not_included": (
@@ -140,12 +143,12 @@ SPECS: dict[str, dict[str, Any]] = {
             "Integration exams reward automatic everyday vocabulary. Spaced Anki keeps "
             "housing, work, services, and daily-life words retrievable."
         ),
-        "cards": "1000+",
+        "cards": "1500",
         "format_note": "Anki .apkg with audio and images",
         "sample_captions": ["zijn", "ik", "jij"],
         "facts": [
             ("Pathways", "Inburgering · NT2 A2"),
-            ("Cards", "1000+ vocabulary"),
+            ("Cards", "1500 vocabulary"),
             ("Media", "Audio + images"),
             ("Delivery", "Instant .apkg"),
         ],
@@ -153,30 +156,33 @@ SPECS: dict[str, dict[str, Any]] = {
     "german-a2-anki-deck": {
         "label": "German Goethe telc ÖSD DTZ",
         "headline": "German Goethe telc ÖSD DTZ Anki Deck — 2000 Flashcards",
-        "exam": "Goethe-Institut A2 · telc Deutsch A2 · ÖSD A2 · DTZ",
+        "exam": "Goethe A2 · telc A2 · ÖSD A2 · DTZ · Einbürgerung language · fide soft",
         "hook": (
             "Shared German vocabulary for Goethe-Institut, telc, ÖSD certificates, "
-            "and DTZ (Deutsch-Test für Zuwanderer) immigrant integration."
+            "DTZ immigrant integration, and soft overlap for residence / Einbürgerung "
+            "language and fide / Swiss residency German."
         ),
         "audience": (
-            "For A2 certificate candidates and DTZ learners who need one essential word bank "
-            "across the main German pathways — not a tourist phrase pack."
+            "For A2 certificate candidates, DTZ learners, and applicants building German "
+            "for residence / Einbürgerung or fide pathways — not a tourist phrase pack."
         ),
-        "disclaimer": "Goethe-Institut / telc / ÖSD / BAMF",
+        "disclaimer": "Goethe-Institut / telc / ÖSD / BAMF / fide-SEM",
         "about_heading": "Which German A2 pathways does this cover?",
         "about": (
             "Goethe-Institut A2, telc Deutsch A2, and ÖSD Zertifikat A2 are widely recognized "
-            "certificates. DTZ is the immigrant integration exam used in Germany. They share "
-            "a large A2 vocabulary core this deck targets."
+            "certificates. DTZ is the immigrant integration exam used in Germany. The same A2 "
+            "lexicon supports residence / Einbürgerung language and fide / Swiss residency German. "
+            "For Leben in Deutschland civics use the Citizenship & Naturalization Anki Bundle; "
+            "for Swiss Staatskunde use the Swiss Citizenship Anki Bundle."
         ),
-        "pathways": "Goethe A2 · telc A2 · ÖSD A2 · DTZ",
+        "pathways": "Goethe A2 · telc A2 · ÖSD A2 · DTZ · Einbürgerung language · fide soft",
         "deck_covers": (
             "2,000 essential German words with meanings, examples, and media cues "
-            "for certificate and immigration pathways."
+            "for certificate and immigration language pathways."
         ),
         "not_included": (
-            "Official Goethe/telc/ÖSD exam papers or full DTZ civic modules — "
-            "use this deck for lexical recall alongside official practice."
+            "Official Goethe/telc/ÖSD exam papers, Leben in Deutschland civics, or Swiss "
+            "Staatskunde — use this deck for lexical recall alongside official practice."
         ),
         "why_anki": (
             "A2 certificate and DTZ success depends on automatic everyday vocabulary. "
@@ -186,7 +192,7 @@ SPECS: dict[str, dict[str, Any]] = {
         "format_note": "Anki .apkg with audio and images",
         "sample_captions": ["sein", "ich", "du"],
         "facts": [
-            ("Pathways", "Goethe · telc · ÖSD · DTZ"),
+            ("Pathways", "Goethe · telc · ÖSD · DTZ · fide soft"),
             ("Cards", "2000 vocabulary"),
             ("Media", "Audio + images"),
             ("Delivery", "Instant .apkg"),
@@ -195,40 +201,41 @@ SPECS: dict[str, dict[str, Any]] = {
     "celi-b1-italian-anki-deck": {
         "label": "CELI CILS PLIDA Italian",
         "headline": "CELI CILS PLIDA Italian Anki Deck — 1,373 Flashcards",
-        "exam": "CELI · CILS · PLIDA (Italian B1)",
+        "exam": "CELI · CILS · PLIDA · permesso / cittadinanza language",
         "hook": (
-            "Italian B1 vocabulary for the three main certificates: CELI (Perugia), "
-            "CILS (Siena), and PLIDA (Dante Alighieri)."
+            "Italian B1 vocabulary for CELI (Perugia), CILS (Siena), and PLIDA "
+            "(Dante Alighieri) — including permesso di soggiorno and cittadinanza language overlap."
         ),
         "audience": (
-            "For CELI, CILS, and PLIDA B1 candidates who want one shared intermediate "
-            "vocabulary deck instead of three overlapping word lists."
+            "For CELI, CILS, and PLIDA B1 candidates and applicants using B1 Italian for "
+            "permesso or cittadinanza language evidence — not an Italian civics quiz."
         ),
         "disclaimer": "CELI / CILS / PLIDA exam bodies",
         "about_heading": "What are CELI, CILS, and PLIDA?",
         "about": (
             "CELI (Università per Stranieri di Perugia), CILS (Università per Stranieri di Siena), "
             "and PLIDA (Società Dante Alighieri) are the main Italian language certificates. "
-            "At B1 they share a large intermediate vocabulary bank."
+            "At B1 they share a large intermediate vocabulary bank also used for permesso di "
+            "soggiorno and cittadinanza language pathways (CILS B1 cittadinanza-adjacent)."
         ),
-        "pathways": "CELI B1 · CILS B1 · PLIDA B1",
+        "pathways": "CELI B1 · CILS B1 · PLIDA B1 · permesso · cittadinanza language",
         "deck_covers": (
             "1,373 Italian B1 flashcards covering the shared intermediate vocabulary "
             "and phrases across CELI, CILS, and PLIDA."
         ),
         "not_included": (
-            "Official speaking exams, writing tasks, or full mock certificates — "
-            "pair lexical drill with official practice papers."
+            "Official speaking exams, writing tasks, full mock certificates, or Italian "
+            "civics quizzes — pair lexical drill with official practice papers."
         ),
         "why_anki": (
-            "B1 certificates reward automatic intermediate vocabulary. Spaced Anki keeps "
-            "the shared CELI/CILS/PLIDA lexicon exam-ready."
+            "B1 certificates and immigration language checks reward automatic intermediate "
+            "vocabulary. Spaced Anki keeps the shared CELI/CILS/PLIDA lexicon exam-ready."
         ),
         "cards": "1,373",
         "format_note": "Anki .apkg with audio and images",
         "sample_captions": ["essere", "io", "tu"],
         "facts": [
-            ("Pathways", "CELI · CILS · PLIDA"),
+            ("Pathways", "CELI · CILS · PLIDA · cittadinanza language"),
             ("Cards", "1,373 vocabulary"),
             ("Media", "Audio + images"),
             ("Delivery", "Instant .apkg"),
@@ -483,6 +490,177 @@ SPECS: dict[str, dict[str, Any]] = {
             ("Pathways", "CCE · residence · citizenship"),
             ("Cards", "1000 vocabulary"),
             ("Media", "Audio + examples"),
+            ("Delivery", "Instant .apkg"),
+        ],
+    },
+    "polish-a2-certyfikat-anki-deck": {
+        "label": "Polish A2 Certyfikat",
+        "headline": "Polish A2 Certyfikat Residence Citizenship Anki Deck — 1500 Flashcards",
+        "exam": "Certyfikat języka polskiego A2 · residence · citizenship language",
+        "hook": (
+            "Polish vocabulary for Certyfikat języka polskiego A2 and the language side of "
+            "residence and citizenship pathways in Poland."
+        ),
+        "audience": (
+            "For Certyfikat A2 learners and applicants preparing Polish for residence or "
+            "citizenship language requirements — not a Polish civics quiz."
+        ),
+        "disclaimer": "Certyfikat / Polish language authorities",
+        "about_heading": "What is Certyfikat języka polskiego?",
+        "about": (
+            "Certyfikat języka polskiego as a Foreign Language is Poland's main state Polish "
+            "certificate pathway. A2-level vocabulary supports everyday life and the language "
+            "evidence often needed for residence and citizenship applications."
+        ),
+        "pathways": "Certyfikat A2 · residence · citizenship language",
+        "deck_covers": (
+            "1,500 high-frequency Polish vocabulary cards with audio and practical "
+            "example sentences for work, housing, services, and everyday interaction."
+        ),
+        "not_included": (
+            "Official Certyfikat past papers or Polish citizenship civics (wiedza o Polsce) — "
+            "pair this deck with official practice; use the free civics readiness check for knowledge of Poland."
+        ),
+        "why_anki": (
+            "Residence and citizenship timelines reward consistent Polish recall. "
+            "Spaced Anki keeps everyday Polish available under exam pressure."
+        ),
+        "cards": "1500",
+        "format_note": "Anki .apkg with audio and examples",
+        "sample_captions": ["być", "ja", "ciebie"],
+        "facts": [
+            ("Pathways", "Certyfikat · residence · citizenship language"),
+            ("Cards", "1500 vocabulary"),
+            ("Media", "Audio + examples"),
+            ("Delivery", "Instant .apkg"),
+        ],
+    },
+    "polish-a2-for-ukrainian-speakers-anki-deck": {
+        "label": "Polish A2 for Ukrainian Speakers",
+        "headline": "Polish A2 for Ukrainian Speakers Anki Deck — 1500 Flashcards",
+        "exam": "Certyfikat A2 · residence language — for Ukrainian speakers",
+        "hook": (
+            "Polish A2 vocabulary for Ukrainian speakers preparing Certyfikat języka polskiego "
+            "and residence language — Ukrainian glosses and bilingual examples on every card."
+        ),
+        "audience": (
+            "For Ukrainian-speaking Certyfikat A2 and residence-language candidates who want "
+            "Polish with Ukrainian support — not Polish citizenship civics."
+        ),
+        "disclaimer": "Certyfikat języka polskiego / state exam bodies",
+        "about_heading": "Who is this Polish deck for?",
+        "about": (
+            "Ukrainian speakers preparing Certyfikat A2 and everyday Polish for residence "
+            "share a large high-frequency lexicon. This deck packages that bank with Ukrainian "
+            "glosses and bilingual examples. It is distinct from the English-gloss Polish "
+            "Certyfikat deck and not a wiedza o Polsce civics pack."
+        ),
+        "pathways": "Certyfikat A2 · residence language · Ukrainian support",
+        "deck_covers": (
+            "1,500 Polish vocabulary cards with Ukrainian glosses, bilingual examples, "
+            "native Polish audio, and illustrations."
+        ),
+        "not_included": (
+            "Official Certyfikat papers or Polish citizenship civics — "
+            "pair lexical drill with official practice."
+        ),
+        "why_anki": (
+            "Certyfikat and residence language success depends on automatic everyday Polish. "
+            "Ukrainian support speeds early comprehension while audio forces Polish recall."
+        ),
+        "cards": "1500",
+        "format_note": "Anki .apkg with audio, images, and Ukrainian glosses",
+        "sample_captions": ["być", "ja", "ciebie"],
+        "facts": [
+            ("Pathways", "Certyfikat · residence language"),
+            ("Cards", "1500 vocabulary"),
+            ("Support", "Ukrainian glosses"),
+            ("Delivery", "Instant .apkg"),
+        ],
+    },
+    "german-a2-for-ukrainian-speakers-anki-deck": {
+        "label": "German A2 for Ukrainian Speakers",
+        "headline": "German A2 for Ukrainian Speakers Anki Deck — 1926 Flashcards",
+        "exam": "Goethe A2 · telc A2 · ÖSD A2 · DTZ — for Ukrainian speakers",
+        "hook": (
+            "German A2 vocabulary for Ukrainian speakers preparing Goethe-Institut, telc, "
+            "ÖSD, and DTZ — Ukrainian glosses and bilingual examples on every card."
+        ),
+        "audience": (
+            "For Ukrainian-speaking Goethe / telc / ÖSD / DTZ candidates who want German "
+            "with Ukrainian support — not a Leben in Deutschland civics quiz."
+        ),
+        "disclaimer": "Goethe-Institut / telc / ÖSD / BAMF",
+        "about_heading": "Who is this German deck for?",
+        "about": (
+            "Ukrainian speakers preparing German A2 certificates and DTZ immigrant integration "
+            "share a large high-frequency lexicon. This deck packages that bank with Ukrainian "
+            "glosses and bilingual examples. It is distinct from the English-gloss German "
+            "multi-pathway deck."
+        ),
+        "pathways": "Goethe A2 · telc A2 · ÖSD A2 · DTZ · Ukrainian support",
+        "deck_covers": (
+            "1,926 German vocabulary cards with Ukrainian glosses, bilingual examples, "
+            "native German audio, and illustrations."
+        ),
+        "not_included": (
+            "Official Goethe/telc/ÖSD exam papers or Leben in Deutschland civics — "
+            "pair lexical drill with official practice."
+        ),
+        "why_anki": (
+            "A2 certificate and DTZ success depends on automatic everyday German. "
+            "Ukrainian support speeds early comprehension while audio forces German recall."
+        ),
+        "cards": "1926",
+        "format_note": "Anki .apkg with audio, images, and Ukrainian glosses",
+        "sample_captions": ["sein", "ich", "du"],
+        "facts": [
+            ("Pathways", "Goethe · telc · ÖSD · DTZ"),
+            ("Cards", "1926 vocabulary"),
+            ("Support", "Ukrainian glosses"),
+            ("Delivery", "Instant .apkg"),
+        ],
+    },
+    "german-a2-for-russian-speakers-anki-deck": {
+        "label": "German A2 for Russian Speakers",
+        "headline": "German A2 for Russian Speakers Anki Deck — 1926 Flashcards",
+        "exam": "Goethe A2 · telc A2 · ÖSD A2 · DTZ — for Russian speakers",
+        "hook": (
+            "German A2 vocabulary for Russian speakers preparing Goethe-Institut, telc, "
+            "ÖSD, and DTZ — Russian glosses and bilingual examples on every card."
+        ),
+        "audience": (
+            "For Russian-speaking Goethe / telc / ÖSD / DTZ candidates who want German "
+            "with Russian support — not a Leben in Deutschland civics quiz."
+        ),
+        "disclaimer": "Goethe-Institut / telc / ÖSD / BAMF",
+        "about_heading": "Who is this German deck for?",
+        "about": (
+            "Russian speakers preparing German A2 certificates and DTZ immigrant integration "
+            "share a large high-frequency lexicon. This deck packages that bank with Russian "
+            "glosses and bilingual examples. It is distinct from the English-gloss German "
+            "multi-pathway deck and the Ukrainian-support edition."
+        ),
+        "pathways": "Goethe A2 · telc A2 · ÖSD A2 · DTZ · Russian support",
+        "deck_covers": (
+            "1,926 German vocabulary cards with Russian glosses, bilingual examples, "
+            "native German audio, and illustrations."
+        ),
+        "not_included": (
+            "Official Goethe/telc/ÖSD exam papers or Leben in Deutschland civics — "
+            "pair lexical drill with official practice."
+        ),
+        "why_anki": (
+            "A2 certificate and DTZ success depends on automatic everyday German. "
+            "Russian support speeds early comprehension while audio forces German recall."
+        ),
+        "cards": "1926",
+        "format_note": "Anki .apkg with audio, images, and Russian glosses",
+        "sample_captions": ["sein", "ich", "du"],
+        "facts": [
+            ("Pathways", "Goethe · telc · ÖSD · DTZ"),
+            ("Cards", "1926 vocabulary"),
+            ("Support", "Russian glosses"),
             ("Delivery", "Instant .apkg"),
         ],
     },

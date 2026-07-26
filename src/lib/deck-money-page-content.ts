@@ -191,25 +191,29 @@ PixID Studio Gumroad fulfillment with UniPrep2Go multi-pathway framing: CIPLE / 
 
   "delf-b2-french-anki-deck": `### Which French exams this deck targets
 
-**DELF / DALF** is the lifetime diploma track used by universities, employers, and many visa offices. **TCF Canada** and **TEF Canada** dominate Express Entry / Quebec immigration scoring. **TCF ANF** supports French naturalization. **TCF général** supports admission to French universities. Score validity and task formats differ — the high-frequency French lexicon shared across those pathways does not.
+**DELF / DALF** is the lifetime diploma track used by universities, employers, and many visa offices. **TCF Canada** and **TEF Canada** dominate Express Entry / Quebec immigration scoring. **TCF ANF** supports French naturalization. **TCF général** supports admission to French universities. The same high-frequency lexicon also helps **fide / Swiss residency French** language prep and everyday **Belgian French** work-and-life vocabulary — soft overlap only, not official fide, SEM, or Belgian SEL formats. For Swiss federal civics (Staatskunde), buy the **Swiss Citizenship Anki Bundle** instead.
+
+Score validity and task formats differ — the high-frequency French lexicon shared across those pathways does not.
 
 This 2000+ card bank is a vocabulary depth layer, not a full listening/writing course. Use it to make lexical access automatic while you practice official formats elsewhere.
 
 ### Study plan across pathways
 
-Drill 20 cards/day for eight to twelve weeks while you prepare your specific exam format (DELF/DALF productive tasks, TCF/TEF timed blocks, or ANF naturalization requirements). Keep speaking and timed practice separate from Anki. After each week, filter review to cards you failed twice — immigration and diploma sittings both punish slow retrieval more than missing obscure rare words.
+Drill 20 cards/day for eight to twelve weeks while you prepare your specific exam format (DELF/DALF productive tasks, TCF/TEF timed blocks, ANF naturalization requirements, or fide speaking practice). Keep speaking and timed practice separate from Anki. After each week, filter review to cards you failed twice — immigration and diploma sittings both punish slow retrieval more than missing obscure rare words.
 
 ### Pitfalls this deck targets
 
-Candidates over-index on A1 survival phrases, ignore register (tu/vous, formal writing), and treat Canada vs France pathways as totally different vocabularies. This deck focuses the overlapping high-frequency core those pathways actually share.
+Candidates over-index on A1 survival phrases, ignore register (tu/vous, formal writing), and treat Canada vs France vs Swiss pathways as totally different vocabularies. This deck focuses the overlapping high-frequency core those pathways actually share — then cross-sells the Swiss civics bundle when the question is Staatskunde, not French words.
 
 ### What makes this Gumroad edition different
 
-PixID Studio Gumroad fulfillment with UniPrep2Go multi-exam French framing: one vocabulary bank for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, and TCF général — not a DELF-only listing or A1 survival pack.`,
+PixID Studio Gumroad fulfillment with UniPrep2Go multi-exam French framing: one vocabulary bank for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, and TCF général — with soft fide / Swiss residency and Belgian everyday French capture — not a DELF-only listing or A1 survival pack.`,
 
   "dutch-a2-inburgering-anki-deck": `### Which Dutch pathways this deck targets
 
 **Inburgering** is the civic integration language track for many Dutch residency cases. **Staatsexamen NT2** (A2-range overlap) shares a large high-frequency Dutch core. The same lexicon supports everyday communication toward **naturalisatie** language expectations. Exam names and cut scores differ by municipality and year — confirm your required module officially.
+
+This is **Netherlands language** prep — not Belgium Flanders **maatschappelijke oriëntatie** civics. For Flanders MO, use the free readiness check and planned waitlist deck.
 
 Cards emphasize practical Dutch for work, housing, government services, and daily interaction — the vocabulary integration exams and real life both reward.
 
@@ -219,35 +223,35 @@ Cards emphasize practical Dutch for work, housing, government services, and dail
 
 ### Pitfalls this deck targets
 
-Learners mix Belgian/Dutch variants inconsistently, skip separable verbs that carry meaning in A2 tasks, and cram tourist phrases instead of bureaucracy and workplace words. Cards prioritize integration-relevant themes.
+Learners mix Belgian/Dutch variants inconsistently, skip separable verbs that carry meaning in A2 tasks, and cram tourist phrases instead of bureaucracy and workplace words. Cards prioritize Netherlands integration-relevant themes.
 
 ### What makes this Gumroad edition different
 
-Multi-pathway Dutch framing (Inburgering + NT2 A2 + naturalisatie vocabulary) on PixID Studio Gumroad — not tourist phrase lists.`,
+Multi-pathway Dutch framing (Inburgering + NT2 A2 + naturalisatie vocabulary) on PixID Studio Gumroad — not tourist phrase lists or Flanders MO civics.`,
 
   "german-a2-anki-deck": `### Which German exams this deck targets
 
-**Goethe-Institut A2**, **telc Deutsch A2**, **ÖSD A2**, and **DTZ** immigrant integration pathways share a large A2 vocabulary core. Certificates and scoring differ by exam body — one Anki bank covers the overlapping lexicon for housing, work, health, and everyday interaction in German-speaking contexts.
+**Goethe-Institut A2**, **telc Deutsch A2**, **ÖSD A2**, and **DTZ** immigrant integration pathways share a large A2 vocabulary core. The same lexicon supports everyday German toward **residence / Einbürgerung language** expectations and **fide / Swiss residency German** prep — soft overlap only. This is **not** a Leben in Deutschland civics deck (use the Citizenship & Naturalization Anki Bundle) and **not** Swiss Staatskunde (use the Swiss Citizenship Anki Bundle).
 
 Use this deck as the spaced-repetition layer beside your chosen institute’s practice papers.
 
 ### Study plan
 
-20 cards/day for six to eight weeks before your Goethe, telc, ÖSD, or DTZ date. Practice each exam’s listening/speaking format separately. After week three, run a self-dictation: hear the audio, write the headword, check — DTZ and Goethe both punish weak sound–spelling links.
+20 cards/day for six to eight weeks before your Goethe, telc, ÖSD, DTZ, or fide speaking date. Practice each exam’s listening/speaking format separately. After week three, run a self-dictation: hear the audio, write the headword, check — DTZ and Goethe both punish weak sound–spelling links.
 
 ### Pitfalls this deck targets
 
-Candidates confuse modal verb constructions, gender/article pairs, and formal letter vocabulary needed for A2 writing tasks. Cards keep articles with nouns and force example-sentence recall.
+Candidates confuse modal verb constructions, gender/article pairs, and formal letter vocabulary needed for A2 writing tasks — and mix language prep with civics quizzes. Cards keep articles with nouns and force example-sentence recall; civics stays on the dedicated citizenship products.
 
 ### What makes this Gumroad edition different
 
-Goethe + telc + ÖSD + DTZ framing in one Gumroad product — not a single-brand certificate listing.`,
+Goethe + telc + ÖSD + DTZ framing with soft Einbürgerung / fide language capture in one Gumroad product — not a single-brand certificate listing or a civics pack.`,
 
   "celi-b1-italian-anki-deck": `### Which Italian exams this deck targets
 
-**CELI** (Università per Stranieri di Perugia), **CILS** (Siena), and **PLIDA** (Società Dante Alighieri) are the main Italian B1 certificates used for study, work, and some immigration pathways. Bodies and task formats differ; intermediate vocabulary for daily life, work, and services overlaps heavily.
+**CELI** (Università per Stranieri di Perugia), **CILS** (Siena), and **PLIDA** (Società Dante Alighieri) are the main Italian B1 certificates used for study, work, **permesso di soggiorno**, and **cittadinanza** language pathways (including CILS B1 cittadinanza-adjacent requirements). Bodies and task formats differ; intermediate vocabulary for daily life, work, and services overlaps heavily.
 
-This deck is a B1 lexicon engine — pair it with official mocks for your chosen certificate.
+This deck is a B1 lexicon engine — pair it with official mocks for your chosen certificate. It is **not** an Italian civics / institutions quiz.
 
 ### Study plan
 
@@ -255,11 +259,11 @@ This deck is a B1 lexicon engine — pair it with official mocks for your chosen
 
 ### Pitfalls this deck targets
 
-Learners stay stuck at tourist A2 phrases, ignore passato prossimo vs imperfetto cues, and under-practice formal register for B1 writing. Cards push intermediate verbs and service vocabulary those exams reward.
+Learners stay stuck at tourist A2 phrases, ignore passato prossimo vs imperfetto cues, and under-practice formal register for B1 writing or immigration interviews. Cards push intermediate verbs and service vocabulary those exams reward.
 
 ### What makes this Gumroad edition different
 
-CELI + CILS + PLIDA multi-certificate framing — one B1 vocabulary bank on Gumroad.`,
+CELI + CILS + PLIDA multi-certificate framing with explicit permesso / cittadinanza language capture — one B1 vocabulary bank on Gumroad.`,
 
   "danish-a2-prove-i-dansk-anki-deck": `### Which Danish pathways this deck targets
 
@@ -326,6 +330,74 @@ Candidates under-practice accent marks and script fluency, memorize isolated wor
 ### What makes this Gumroad edition different
 
 Ellinomatheia + residence/citizenship framing on Gumroad — not a tourist phrase pack.`,
+
+  "german-a2-for-ukrainian-speakers-anki-deck": `### Which German exams this deck targets
+
+**Goethe-Institut A2**, **telc Deutsch A2**, **ÖSD A2**, and **DTZ** share a large A2 German lexicon. This deck packages that bank for **Ukrainian speakers**: German headword, Ukrainian gloss, bilingual example, native German audio, and an image on each card. It is vocabulary recall — not a full mock exam and not Leben in Deutschland civics.
+
+### Study plan
+
+Aim for six to eight weeks of daily Anki before your Goethe, telc, ÖSD, or DTZ date: 20–25 new cards on weekdays. Say each German example out loud before flipping; treat the Ukrainian gloss as a last-resort check. In the last ten days, stop adding cards and clear overdue reviews while you take official practice papers.
+
+### Pitfalls this deck targets
+
+Ukrainian-speaking learners translate every sentence into Ukrainian under time pressure, skip listening to German audio, and study tourist phrase lists instead of integration-frequency vocabulary. Bilingual examples + German audio reduce translation dependence.
+
+### What makes this Gumroad edition different
+
+Ukrainian-support German A2 framing (Goethe / telc / ÖSD / DTZ) on Gumroad — distinct from the English-gloss German multi-pathway deck.`,
+
+
+  "german-a2-for-russian-speakers-anki-deck": `### Which German exams this deck targets
+
+**Goethe-Institut A2**, **telc Deutsch A2**, **ÖSD A2**, and **DTZ** share a large A2 German lexicon. This deck packages that bank for **Russian speakers**: German headword, Russian gloss, bilingual example, native German audio, and an image on each card. It is vocabulary recall — not a full mock exam and not Leben in Deutschland civics.
+
+### Study plan
+
+Aim for six to eight weeks of daily Anki before your Goethe, telc, ÖSD, or DTZ date: 20–25 new cards on weekdays. Say each German example out loud before flipping; treat the Russian gloss as a last-resort check. In the last ten days, stop adding cards and clear overdue reviews while you take official practice papers.
+
+### Pitfalls this deck targets
+
+Russian-speaking learners translate every sentence into Russian under time pressure, skip listening to German audio, and study tourist phrase lists instead of integration-frequency vocabulary. Bilingual examples + German audio reduce translation dependence.
+
+### What makes this Gumroad edition different
+
+Russian-support German A2 framing (Goethe / telc / ÖSD / DTZ) on Gumroad — distinct from the English-gloss German multi-pathway deck and the Ukrainian-support edition.`,
+
+  "polish-a2-certyfikat-anki-deck": `### Which Polish pathways this deck targets
+
+**Certyfikat języka polskiego** (state certificate as a Foreign Language) at **A2**, plus everyday Polish used for **residence** and **citizenship language** requirements. Exact module names and score rules change — confirm with official sources before you book.
+
+This is **language** vocabulary — not Polish citizenship civics (wiedza o Polsce). For civics, take the free Polish Citizenship readiness check and join the planned waitlist.
+
+### Study plan
+
+20 cards/day with audio for six to eight weeks. Keep oral exam practice separate from Anki. Record yourself reading example sentences twice a week.
+
+### Pitfalls this deck targets
+
+Candidates under-train listening discrimination, skip case endings that carry meaning, and study tourist phrases instead of bureaucracy and workplace words.
+
+### What makes this Gumroad edition different
+
+Certyfikat A2 + residence/citizenship language pathway copy — not a generic Polish tourist deck or a civics pack.`,
+
+
+  "polish-a2-for-ukrainian-speakers-anki-deck": `### Which Polish pathways this deck targets
+
+**Certyfikat języka polskiego** A2 and everyday Polish for **residence** language — packaged for **Ukrainian speakers**: Polish headword, Ukrainian gloss, bilingual example, native Polish audio, and an image on each card. Vocabulary recall only — not Polish citizenship civics (wiedza o Polsce).
+
+### Study plan
+
+Aim for six to eight weeks of daily Anki before your Certyfikat or residence-language date: 20–25 new cards on weekdays. Say each Polish example out loud before flipping; treat the Ukrainian gloss as a last-resort check. In the last ten days, stop adding cards and clear overdue reviews while you take official practice papers.
+
+### Pitfalls this deck targets
+
+Ukrainian-speaking learners translate every sentence into Ukrainian under time pressure, skip listening to Polish audio, and study tourist phrase lists instead of Certyfikat-frequency vocabulary. Bilingual examples + Polish audio reduce translation dependence.
+
+### What makes this Gumroad edition different
+
+Ukrainian-support Polish A2 framing (Certyfikat / residence language) on Gumroad — distinct from the English-gloss Polish Certyfikat deck and not a civics pack.`,
 
   "czech-a2-cce-anki-deck": `### Which Czech pathways this deck targets
 

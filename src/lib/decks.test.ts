@@ -111,7 +111,7 @@ describe("deck catalog", () => {
     }
   });
 
-  it("keeps seventeen curated language Anki decks plus DELF Prim and citizenship bundle on Gumroad", () => {
+  it("keeps twenty-one curated language Anki decks plus DELF Prim and citizenship bundle on Gumroad", () => {
     const expectedAnkiLanguageDecks = [
       "ciple-a2-european-portuguese-anki-deck",
       "delf-b2-french-anki-deck",
@@ -124,6 +124,10 @@ describe("deck catalog", () => {
       "swedish-a2-sfi-anki-deck",
       "greek-a2-ellinomatheia-anki-deck",
       "czech-a2-cce-anki-deck",
+      "polish-a2-certyfikat-anki-deck",
+      "polish-a2-for-ukrainian-speakers-anki-deck",
+      "german-a2-for-ukrainian-speakers-anki-deck",
+      "german-a2-for-russian-speakers-anki-deck",
       "ielts-toefl-english-for-french-speakers-anki-deck",
       "ielts-toefl-english-for-arabic-speakers-anki-deck",
       "ielts-toefl-english-for-ukrainian-speakers-anki-deck",
@@ -212,6 +216,14 @@ describe("deck catalog", () => {
     expect(getDeckBySlug("swedish-a2-sfi-anki-deck")?.title).toContain("Swedish SFI");
     expect(getDeckBySlug("greek-a2-ellinomatheia-anki-deck")?.title).toContain("Ellinomatheia");
     expect(getDeckBySlug("czech-a2-cce-anki-deck")?.title).toContain("Czech CCE");
+    expect(getDeckBySlug("polish-a2-certyfikat-anki-deck")?.title).toContain("Certyfikat");
+    expect(getDeckBySlug("polish-a2-certyfikat-anki-deck")?.facts.cards).toBe("1500");
+    expect(getDeckBySlug("polish-a2-for-ukrainian-speakers-anki-deck")?.title).toContain("Ukrainian Speakers");
+    expect(getDeckBySlug("polish-a2-for-ukrainian-speakers-anki-deck")?.facts.cards).toBe("1500");
+    expect(getDeckBySlug("german-a2-for-ukrainian-speakers-anki-deck")?.title).toContain("Ukrainian Speakers");
+    expect(getDeckBySlug("german-a2-for-ukrainian-speakers-anki-deck")?.facts.cards).toBe("1926");
+    expect(getDeckBySlug("german-a2-for-russian-speakers-anki-deck")?.title).toContain("Russian Speakers");
+    expect(getDeckBySlug("german-a2-for-russian-speakers-anki-deck")?.facts.cards).toBe("1926");
     const enFr = getDeckBySlug("ielts-toefl-english-for-french-speakers-anki-deck");
     expect(enFr?.title).toContain("IELTS / TOEFL English for French Speakers");
     expect(enFr?.facts.cards).toBe("2522");
@@ -254,6 +266,20 @@ describe("deck catalog", () => {
     expect(frenchDeck?.directAnswer).toContain("TEF Canada");
     expect(frenchDeck?.directAnswer).toContain("TCF ANF");
     expect(frenchDeck?.directAnswer).toContain("TCF général");
+    expect(frenchDeck?.directAnswer).toContain("fide");
+    expect(frenchDeck?.directAnswer).toContain("Swiss residency French");
+    expect(frenchDeck?.faqs.some((faq) => faq.question.includes("Swiss fide"))).toBe(true);
+
+    const germanDeck = getDeckBySlug("german-a2-anki-deck");
+    expect(germanDeck?.directAnswer).toContain("Einbürgerung");
+    expect(germanDeck?.directAnswer).toContain("fide");
+    expect(germanDeck?.faqs.some((faq) => faq.answer.includes("Swiss Citizenship Anki Bundle"))).toBe(
+      true,
+    );
+
+    const italianDeck = getDeckBySlug("celi-b1-italian-anki-deck");
+    expect(italianDeck?.directAnswer).toContain("permesso di soggiorno");
+    expect(italianDeck?.directAnswer).toContain("cittadinanza");
   });
 
   it("ships IELTS English for French, Arabic, Ukrainian, Russian, Spanish, and Portuguese Speakers; keeps others planned", () => {
@@ -673,7 +699,7 @@ describe("deck catalog", () => {
         "Swiss Citizenship Anki Bundle — DE / FR / IT · 618 Cards",
       "dele-a2-spanish-anki-deck": "DELE SIELE Spanish Anki Deck — 1000 Flashcards",
       "dutch-a2-inburgering-anki-deck":
-        "Dutch Inburgering NT2 A2 Anki Deck — 1000+ Flashcards",
+        "Dutch Inburgering NT2 A2 Anki Deck — 1500 Flashcards",
       "german-a2-anki-deck": "German Goethe telc ÖSD DTZ Anki Deck — 2000 Flashcards",
       "gmat-focus-anki-deck": "GMAT Focus Anki Deck — 400+ Flashcards",
       "sat-anki-deck": "Digital SAT Anki Deck — 342+ Flashcards",
@@ -691,6 +717,14 @@ describe("deck catalog", () => {
         "Greek Ellinomatheia Residence Citizenship Anki Deck — 1000 Flashcards",
       "czech-a2-cce-anki-deck":
         "Czech CCE Residence Citizenship Anki Deck — 1000 Flashcards",
+      "polish-a2-certyfikat-anki-deck":
+        "Polish A2 Certyfikat Residence Citizenship Anki Deck — 1500 Flashcards",
+      "polish-a2-for-ukrainian-speakers-anki-deck":
+        "Polish A2 for Ukrainian Speakers Anki Deck — 1500 Flashcards",
+      "german-a2-for-ukrainian-speakers-anki-deck":
+        "German A2 for Ukrainian Speakers Anki Deck — 1926 Flashcards",
+      "german-a2-for-russian-speakers-anki-deck":
+        "German A2 for Russian Speakers Anki Deck — 1926 Flashcards",
       "ielts-toefl-english-for-french-speakers-anki-deck":
         "IELTS / TOEFL English for French Speakers Anki Deck — 2522 Flashcards",
       "ielts-toefl-english-for-arabic-speakers-anki-deck":

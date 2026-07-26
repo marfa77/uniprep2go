@@ -312,7 +312,7 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     query: "Swiss citizenship practice test free",
     mockSlug: "swiss-citizenship-readiness-check",
     disambiguation:
-      "Swiss ordinary naturalisation includes federal Staatskunde plus canton/commune requirements — this readiness check is the German-language federal block and is independent prep, not SEM material. French and Italian variants are also available.",
+      "Swiss ordinary naturalisation includes federal Staatskunde plus canton/commune requirements — this readiness check is the German-language federal block and is independent prep, not SEM material. French and Italian variants are also available. For fide / Swiss residency language vocabulary use the French or German language Anki decks; for Staatskunde remediation use the Swiss Citizenship Anki Bundle.",
   },
   {
     query: "naturalisation suisse test gratuit",

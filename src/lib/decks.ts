@@ -1401,6 +1401,11 @@ const rawDecks: Deck[] = [
           "European Portuguese (PT-PT) for CAPLE CIPLE. Brazilian Portuguese word lists are a poor fit for CIPLE and Portuguese nationality language checks.",
       },
       {
+        question: "Is this the same as Portugal nacionalidade civics?",
+        answer:
+          "No. This deck is CIPLE / CAPLE A2 language vocabulary for residency and citizenship language evidence. Portugal nacionalidade civic knowledge is a separate track — take the free Portugal Nacionalidade readiness check and join the planned civics Anki waitlist for that.",
+      },
+      {
         question: "What does the deck include?",
         answer:
           "2000 Anki cards with European Portuguese vocabulary, phrases, contextual examples, audio pronunciation, and images where helpful.",
@@ -1418,12 +1423,12 @@ const rawDecks: Deck[] = [
     title: "DELF DALF TCF TEF French Anki Deck — 2000+ Flashcards",
     shortName: "DELF DALF TCF TEF French",
     subtitle:
-      "2000+ French vocabulary flashcards for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, and TCF général.",
+      "2000+ French vocabulary flashcards for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, TCF général — plus shared lexicon useful for fide / Swiss residency French and everyday Belgian French.",
     directAnswer:
-      "UniPrep2Go sells a French Anki deck with 2000+ flashcards for DELF / DALF (lifetime diploma track), TCF Canada and TEF Canada (Express Entry / Quebec immigration), TCF ANF (French naturalization), and TCF général (French university admission). Each card pairs a headword with a visual cue, native French audio, and a contextual example so the shared high-frequency lexicon sticks under exam pressure. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank covering the main French certificate and immigration pathways.",
-    lastUpdated: "2026-07-22",
+      "UniPrep2Go sells a French Anki deck with 2000+ flashcards for DELF / DALF (lifetime diploma track), TCF Canada and TEF Canada (Express Entry / Quebec immigration), TCF ANF (French naturalization), and TCF général (French university admission). The same high-frequency lexicon also supports fide / Swiss residency French language prep and everyday Belgian French work-and-life vocabulary — not a Swiss civics or official fide format pack. Each card pairs a headword with a visual cue, native French audio, and a contextual example. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank covering the main French certificate and immigration pathways.",
+    lastUpdated: "2026-07-26",
     audience:
-      "DELF / DALF candidates, TCF Canada and TEF Canada immigration applicants, TCF ANF naturalization candidates, and TCF général university applicants using spaced repetition.",
+      "DELF / DALF candidates, TCF Canada and TEF Canada immigration applicants, TCF ANF naturalization candidates, TCF général university applicants, and learners needing high-frequency French for fide / Swiss residency or Belgian everyday pathways.",
     format: ".apkg",
     coverImage: "/covers/delf-b2-french-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/delf-b2-french-anki-deck?wanted=true",
@@ -1431,7 +1436,8 @@ const rawDecks: Deck[] = [
     checkoutSeller: "PixID Studio",
     facts: {
       cards: "2000+",
-      topics: "DELF, DALF, TCF Canada, TEF Canada, TCF ANF, TCF général vocabulary",
+      topics:
+        "DELF, DALF, TCF Canada, TEF Canada, TCF ANF, TCF général; soft overlap for fide / Swiss residency French and Belgian everyday French",
       formulas: "Native audio + visual image + contextual example per card",
       examYear: "Current DELF / DALF / TCF / TEF cycles",
       delivery: "Digital download through Gumroad (159 MB)",
@@ -1459,12 +1465,17 @@ const rawDecks: Deck[] = [
       {
         question: "Which French exams does this deck cover?",
         answer:
-          "One shared French vocabulary bank for DELF and DALF (prestigious lifetime diplomas), TCF Canada and TEF Canada (Canada immigration), TCF ANF (French naturalization), and TCF général (French university admission). The exams differ in format and scoring, but they draw on overlapping high-frequency French.",
+          "One shared French vocabulary bank for DELF and DALF (prestigious lifetime diplomas), TCF Canada and TEF Canada (Canada immigration), TCF ANF (French naturalization), and TCF général (French university admission). The same high-frequency lexicon also helps fide / Swiss residency French language prep and everyday Belgian French — without claiming official fide, SEM, or Belgian SEL formats.",
       },
       {
         question: "Is DELF / DALF the same as TCF or TEF?",
         answer:
           "No. DELF / DALF are level diplomas issued by France Éducation international and remain valid for life. TCF and TEF are timed proficiency tests with scores that expire — TCF Canada and TEF Canada serve Canadian immigration, TCF ANF serves French naturalization, and TCF général serves university admission. This deck trains the vocabulary shared across those pathways.",
+      },
+      {
+        question: "Does this deck cover Swiss fide or Swiss citizenship?",
+        answer:
+          "It is a French language vocabulary bank that overlaps the high-frequency French useful for fide / Swiss residency language prep. It is not official fide material and not Swiss civics (Staatskunde). For federal Swiss citizenship civics in French, German, or Italian, use the Swiss Citizenship Anki Bundle.",
       },
       {
         question: "What does each card include?",
@@ -1486,12 +1497,12 @@ const rawDecks: Deck[] = [
     slug: "dutch-a2-inburgering-anki-deck",
     category: "language",
     status: "available",
-    title: "Dutch Inburgering NT2 A2 Anki Deck — 1000+ Flashcards",
+    title: "Dutch Inburgering NT2 A2 Anki Deck — 1500 Flashcards",
     shortName: "Dutch Inburgering NT2",
-    subtitle: "1000+ Dutch A2 flashcards for Inburgering, Staatsexamen NT2 A2, residency, and naturalisatie.",
+    subtitle: "1,500 Dutch A2 flashcards for Inburgering, Staatsexamen NT2 A2, residency, and naturalisatie.",
     directAnswer:
-      "UniPrep2Go sells a Dutch Inburgering / NT2 A2 Anki deck with 1000+ high-frequency words for the Dutch civic integration (Inburgering) exam, Staatsexamen NT2 A2-level vocabulary, and everyday Dutch used toward residency and naturalisatie. Each card includes the Dutch word, English gloss, bilingual examples, native audio, and illustrations. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank for Inburgering and NT2 A2 pathways, not tourist Dutch.",
-    lastUpdated: "2026-07-22",
+      "UniPrep2Go sells a Dutch Inburgering / NT2 A2 Anki deck with 1,500 high-frequency words for the Dutch civic integration (Inburgering) exam, Staatsexamen NT2 A2-level vocabulary, and everyday Dutch used toward residency and naturalisatie. Each card includes the Dutch word, English gloss, bilingual examples, native audio, and illustrations. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank for Inburgering and NT2 A2 pathways, not tourist Dutch.",
+    lastUpdated: "2026-07-26",
     audience: "Migrants preparing Inburgering, Staatsexamen NT2 A2, Dutch residency, or naturalisatie with spaced repetition.",
     format: ".apkg",
     coverImage: "/covers/dutch-a2-inburgering-anki-deck.webp",
@@ -1499,11 +1510,11 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "1000+",
+      cards: "1500",
       topics: "Inburgering, Staatsexamen NT2 A2, residency and naturalisatie vocabulary",
       formulas: "Native audio + bilingual examples + illustrations per card",
       examYear: "Current Inburgering / NT2 cycle",
-      delivery: "Digital download through Gumroad (82.9 MB)",
+      delivery: "Digital download through Gumroad",
     },
     topicCoverage: [],
     sampleCards: [
@@ -1531,6 +1542,11 @@ const rawDecks: Deck[] = [
           "Inburgering (civic integration) language vocabulary, Staatsexamen NT2 A2-overlapping high-frequency Dutch, and everyday words used toward residency and naturalisatie. Formats differ; the A2 lexicon overlaps heavily.",
       },
       {
+        question: "Is this the same as Belgium Flanders MO (inburgering Vlaanderen) civics?",
+        answer:
+          "No. This deck is Dutch language vocabulary for Netherlands Inburgering / NT2 A2. Belgium Flanders maatschappelijke oriëntatie is a separate civic-orientation track — use the free Flanders MO readiness check and planned waitlist deck for that, not this Netherlands language bank.",
+      },
+      {
         question: "What does each card include?",
         answer:
           "Each card includes the Dutch word, an English gloss, bilingual example sentences, native audio pronunciation, and illustrations where helpful.",
@@ -1548,12 +1564,12 @@ const rawDecks: Deck[] = [
     title: "German Goethe telc ÖSD DTZ Anki Deck — 2000 Flashcards",
     shortName: "German Goethe telc ÖSD DTZ",
     subtitle:
-      "2000 German A2–B1 flashcards for Goethe-Institut, telc, ÖSD, and DTZ immigrant integration pathways.",
+      "2000 German A2–B1 flashcards for Goethe-Institut, telc, ÖSD, and DTZ — plus shared lexicon useful for residence / Einbürgerung language and fide / Swiss residency German.",
     directAnswer:
-      "UniPrep2Go sells a German Anki deck with 2000 essential words for Goethe-Institut A2, telc Deutsch A2, ÖSD Zertifikat A2, and DTZ (Deutsch-Test für Zuwanderer) immigrant integration vocabulary. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one shared vocabulary bank across the main German certificate and immigration pathways, not a tourist phrase pack.",
+      "UniPrep2Go sells a German Anki deck with 2000 essential words for Goethe-Institut A2, telc Deutsch A2, ÖSD Zertifikat A2, and DTZ (Deutsch-Test für Zuwanderer) immigrant integration vocabulary. The same A2–B1 lexicon overlaps everyday German used toward residence and Einbürgerung language expectations and fide / Swiss residency German prep — not a Leben in Deutschland civics deck or official fide format pack. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one shared vocabulary bank across the main German certificate and immigration pathways, not a tourist phrase pack.",
     lastUpdated: "2026-07-26",
     audience:
-      "Goethe A2, telc A2, ÖSD A2, and DTZ learners preparing certificates or immigrant integration language requirements.",
+      "Goethe A2, telc A2, ÖSD A2, and DTZ learners, plus applicants building German for residence / Einbürgerung language or fide / Swiss residency pathways.",
     format: ".apkg",
     coverImage: "/covers/german-a2-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/german-a2-anki-deck?wanted=true",
@@ -1561,7 +1577,8 @@ const rawDecks: Deck[] = [
     checkoutSeller: "PixID Studio",
     facts: {
       cards: "2000",
-      topics: "Goethe-Institut A2, telc Deutsch A2, ÖSD A2, DTZ vocabulary",
+      topics:
+        "Goethe-Institut A2, telc Deutsch A2, ÖSD A2, DTZ; soft overlap for residence / Einbürgerung language and fide / Swiss residency German",
       formulas: "Essential words with examples for integration and certificate prep",
       examYear: "Current Goethe / telc / ÖSD / DTZ cycle",
       delivery: "Digital download through Gumroad",
@@ -1589,7 +1606,12 @@ const rawDecks: Deck[] = [
       {
         question: "Which German exams does this deck cover?",
         answer:
-          "Goethe-Institut A2, telc Deutsch A2, ÖSD Zertifikat A2, and DTZ (Deutsch-Test für Zuwanderer) immigrant integration themes. One shared A2 vocabulary bank across those pathways.",
+          "Goethe-Institut A2, telc Deutsch A2, ÖSD Zertifikat A2, and DTZ (Deutsch-Test für Zuwanderer) immigrant integration themes. The same high-frequency lexicon also supports residence / Einbürgerung language expectations and fide / Swiss residency German prep — without claiming official fide or SEM formats.",
+      },
+      {
+        question: "Is this a Leben in Deutschland or Swiss citizenship civics deck?",
+        answer:
+          "No. This is a German language vocabulary bank. For German citizenship civics (Leben in Deutschland), use the Citizenship & Naturalization Anki Bundle. For Swiss federal Staatskunde civics in German, French, or Italian, use the Swiss Citizenship Anki Bundle.",
       },
       {
         question: "What file format is delivered?",
@@ -1598,7 +1620,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this official exam material?",
         answer:
-          "No. This is an independent UniPrep2Go study aid sold by PixID Studio and is not affiliated with Goethe-Institut, telc, ÖSD, or BAMF / DTZ.",
+          "No. This is an independent UniPrep2Go study aid sold by PixID Studio and is not affiliated with Goethe-Institut, telc, ÖSD, BAMF / DTZ, or Swiss fide / SEM.",
       },
     ],
   },
@@ -1608,11 +1630,13 @@ const rawDecks: Deck[] = [
     status: "available",
     title: "CELI CILS PLIDA Italian Anki Deck — 1,373 Flashcards",
     shortName: "CELI CILS PLIDA Italian",
-    subtitle: "1,373 Italian B1 flashcards for CELI, CILS, and PLIDA certificate prep.",
+    subtitle:
+      "1,373 Italian B1 flashcards for CELI, CILS, and PLIDA — including vocabulary overlap used for permesso di soggiorno and cittadinanza language pathways.",
     directAnswer:
-      "UniPrep2Go sells an Italian B1 Anki deck with 1,373 flashcards for CELI (Università per Stranieri di Perugia), CILS (Università per Stranieri di Siena), and PLIDA (Società Dante Alighieri). Cards target the shared B1 vocabulary and phrase bank across those certificates. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary deck for the main Italian B1 pathways.",
-    lastUpdated: "2026-07-22",
-    audience: "CELI, CILS, and PLIDA B1 candidates and intermediate Italian learners using spaced repetition.",
+      "UniPrep2Go sells an Italian B1 Anki deck with 1,373 flashcards for CELI (Università per Stranieri di Perugia), CILS (Università per Stranieri di Siena), and PLIDA (Società Dante Alighieri). Cards target the shared B1 vocabulary and phrase bank across those certificates, including the lexicon overlap used for permesso di soggiorno and cittadinanza language requirements (including CILS B1 cittadinanza-adjacent pathways). It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary deck for the main Italian B1 and immigration-language pathways, not an Italian civics quiz.",
+    lastUpdated: "2026-07-26",
+    audience:
+      "CELI, CILS, and PLIDA B1 candidates plus applicants building Italian for permesso di soggiorno or cittadinanza language requirements.",
     format: ".apkg",
     coverImage: "/covers/celi-b1-italian-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/celi-b1-italian-anki-deck?wanted=true",
@@ -1620,7 +1644,8 @@ const rawDecks: Deck[] = [
     checkoutSeller: "PixID Studio",
     facts: {
       cards: "1373",
-      topics: "CELI, CILS, PLIDA B1 Italian vocabulary and phrases",
+      topics:
+        "CELI, CILS, PLIDA B1 Italian vocabulary; permesso di soggiorno and cittadinanza language overlap",
       formulas: "Exam-focused B1 vocabulary shared across Italian certificates",
       examYear: "Current CELI / CILS / PLIDA cycle",
       delivery: "Digital download through Gumroad",
@@ -1648,7 +1673,12 @@ const rawDecks: Deck[] = [
       {
         question: "Which Italian exams does this deck cover?",
         answer:
-          "CELI (Perugia), CILS (Siena), and PLIDA (Dante Alighieri) at B1. Certificates differ by exam body; this deck trains the shared intermediate Italian vocabulary.",
+          "CELI (Perugia), CILS (Siena), and PLIDA (Dante Alighieri) at B1 — including vocabulary overlap used for permesso di soggiorno and cittadinanza language pathways (CILS B1 cittadinanza-adjacent). Certificates differ by exam body; this deck trains the shared intermediate Italian vocabulary.",
+      },
+      {
+        question: "Is this an Italian citizenship civics deck?",
+        answer:
+          "No. This is an Italian language vocabulary bank for certificates and immigration-language requirements. It is not a civic-knowledge quiz about Italian institutions or history.",
       },
       {
         question: "How many cards does the deck have?",
@@ -1692,6 +1722,11 @@ const rawDecks: Deck[] = [
           "Prøve i Dansk PD2 and PD3 vocabulary themes, plus everyday Danish used for permanent residence and citizenship language requirements. Confirm your required module with official sources.",
       },
       {
+        question: "Is this the Indfødsretsprøven civics test?",
+        answer:
+          "No. This is Danish language vocabulary for Prøve i Dansk / residence language. The Indfødsretsprøven is a separate citizenship civics exam — take the free Indfødsretsprøven readiness check and join the planned civics Anki waitlist for that.",
+      },
+      {
         question: "What does the deck include?",
         answer:
           "1,000 exam-specific Danish vocabulary words with audio and Anki-ready review for PD2 / PD3-style themes.",
@@ -1732,6 +1767,11 @@ const rawDecks: Deck[] = [
         question: "Which Norwegian pathways does this deck cover?",
         answer:
           "Norskprøve A2 (Bokmål) plus everyday vocabulary used for permanent residence (permanent oppholdstillatelse) and citizenship (statsborgerskap) language requirements.",
+      },
+      {
+        question: "Is this the Statsborgerprøven civics test?",
+        answer:
+          "No. This is Norwegian language vocabulary for Norskprøve / residence language. The Statsborgerprøven is a separate citizenship civics exam — take the free Statsborgerprøven readiness check and join the planned civics Anki waitlist for that.",
       },
       {
         question: "What does the deck include?",
@@ -1778,6 +1818,11 @@ const rawDecks: Deck[] = [
           "SFI (Swedish for Immigrants) A2 vocabulary plus everyday Swedish used for residence and citizenship language requirements. Confirm your required course level with official sources.",
       },
       {
+        question: "Is this the Swedish Medborgarskapsprov civics test?",
+        answer:
+          "No. This is Swedish language vocabulary for SFI / residence language. The Medborgarskapsprov is a separate citizenship civics exam — take the free Medborgarskapsprov readiness check and join the planned civics Anki waitlist for that.",
+      },
+      {
         question: "What does the deck include?",
         answer:
           "1,000 exam-specific Swedish vocabulary words for SFI with audio and Anki-ready review.",
@@ -1820,6 +1865,11 @@ const rawDecks: Deck[] = [
         question: "Which Greek pathways does this deck cover?",
         answer:
           "Ellinomatheia A2 vocabulary plus everyday Greek used for residence and citizenship language requirements. Confirm your required level with official sources.",
+      },
+      {
+        question: "Is this a Greek citizenship civics deck?",
+        answer:
+          "No. This is Greek language vocabulary for Ellinomatheia / residence language requirements — not a civic-knowledge quiz about Greek institutions or history.",
       },
       {
         question: "What does the deck include?",
@@ -1866,9 +1916,295 @@ const rawDecks: Deck[] = [
           "CCE (Czech Language Certificate Exam) A2 vocabulary plus everyday Czech used for residence and citizenship language requirements. Confirm your required level with official sources.",
       },
       {
+        question: "Is this the Czech citizenship civics Anki deck?",
+        answer:
+          "No. This is Czech language vocabulary for CCE / residence language. Czech citizenship civics is a separate planned listing — take the free Czech citizenship readiness check and join that waitlist for civics cards.",
+      },
+      {
         question: "What does the deck include?",
         answer:
           "1,000 exam-specific Czech vocabulary words for CCE with audio and Anki-ready review.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
+      },
+    ],
+  },
+  {
+    slug: "polish-a2-certyfikat-anki-deck",
+    category: "language",
+    status: "available",
+    title: "Polish A2 Certyfikat Residence Citizenship Anki Deck — 1500 Flashcards",
+    shortName: "Polish A2 Certyfikat",
+    subtitle:
+      "1,500 Polish flashcards for Certyfikat języka polskiego A2 and Polish residence or citizenship language prep.",
+    directAnswer:
+      "UniPrep2Go sells a Polish A2 Certyfikat Anki deck with 1,500 high-frequency vocabulary cards, audio, and practical example sentences for work, housing, services, and everyday life in Poland. Built for the state Certyfikat języka polskiego (as a Foreign Language) A2 pathway and the language side of residence and citizenship requirements. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — language vocabulary only, not Polish citizenship civics.",
+    lastUpdated: "2026-07-26",
+    audience:
+      "Certyfikat języka polskiego A2 learners and applicants preparing Polish for residence or citizenship language requirements.",
+    format: ".apkg",
+    coverImage: "/covers/polish-a2-certyfikat-anki-deck.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/polish-a2-certyfikat-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "1500",
+      topics: "Certyfikat języka polskiego A2, Polish residence and citizenship language vocabulary",
+      formulas: "Audio + example sentences for Certyfikat A2 and daily-life themes",
+      examYear: "Current Certyfikat / residence-citizenship cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [
+      {
+        question: "być",
+        answer: "be — Chcę być tutaj dzisiaj z tobą.",
+        imageUrl: "/samples/polish-a2-certyfikat-anki-deck-sample-1.webp",
+      },
+      {
+        question: "ja",
+        answer: "i — Ja jestem tutaj teraz z wami.",
+        imageUrl: "/samples/polish-a2-certyfikat-anki-deck-sample-2.webp",
+      },
+      {
+        question: "ciebie",
+        answer: "you — Ten prezent jest dziś dla ciebie.",
+        imageUrl: "/samples/polish-a2-certyfikat-anki-deck-sample-3.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which Polish pathways does this deck cover?",
+        answer:
+          "Certyfikat języka polskiego A2 vocabulary plus everyday Polish used for residence and citizenship language requirements. Confirm your required level with official sources.",
+      },
+      {
+        question: "Is this the Polish Citizenship civics Anki deck?",
+        answer:
+          "No. This is Polish language vocabulary for Certyfikat / residence language. Polish citizenship civics (wiedza o Polsce) is a separate planned listing — take the free Polish Citizenship readiness check and join that waitlist for civics cards.",
+      },
+      {
+        question: "What does the deck include?",
+        answer:
+          "1,500 high-frequency Polish vocabulary words with audio and Anki-ready review for Certyfikat A2-style themes.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
+      },
+    ],
+  },
+  {
+    slug: "polish-a2-for-ukrainian-speakers-anki-deck",
+    category: "language",
+    status: "available",
+    title: "Polish A2 for Ukrainian Speakers Anki Deck — 1500 Flashcards",
+    shortName: "Polish A2 for Ukrainian Speakers",
+    subtitle:
+      "1,500 Polish A2 flashcards for Certyfikat and residence language — with Ukrainian support on every card.",
+    directAnswer:
+      "UniPrep2Go sells a Polish A2 for Ukrainian Speakers Anki deck with 1,500 high-frequency Polish vocabulary cards, Ukrainian glosses, bilingual examples, native Polish audio, and illustrations. Built from the Prep2Go app bank for Ukrainian-speaking candidates preparing Certyfikat języka polskiego A2 and the language side of residence requirements in Poland. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio. Independent study aid — not a Polish citizenship civics deck.",
+    lastUpdated: "2026-07-26",
+    audience:
+      "Ukrainian-speaking Certyfikat A2 and Polish residence-language candidates using Anki for exam and everyday vocabulary.",
+    format: ".apkg",
+    coverImage: "/covers/polish-a2-for-ukrainian-speakers-anki-deck.webp",
+    checkoutUrl:
+      "https://pixidstudio.gumroad.com/l/polish-a2-for-ukrainian-speakers-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "1500",
+      topics:
+        "Certyfikat A2 and Polish residence language vocabulary with Ukrainian bilingual support",
+      formulas: "Audio + Ukrainian glosses + bilingual example sentences",
+      examYear: "Current Certyfikat / residence-language cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [
+      {
+        question: "być",
+        answer: "бути — Chcę być tutaj dzisiaj z tobą. (Я хочу бути тут сьогодні з вами.)",
+        imageUrl: "/samples/polish-a2-for-ukrainian-speakers-anki-deck-sample-1.webp",
+      },
+      {
+        question: "ja",
+        answer: "я — Ja jestem tutaj teraz z wami. (Я зараз тут разом з вами.)",
+        imageUrl: "/samples/polish-a2-for-ukrainian-speakers-anki-deck-sample-2.webp",
+      },
+      {
+        question: "ciebie",
+        answer: "ти — Ten prezent jest dziś dla ciebie. (Ти сьогодні виглядаєш щасливим.)",
+        imageUrl: "/samples/polish-a2-for-ukrainian-speakers-anki-deck-sample-3.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which Polish pathways does this deck support?",
+        answer:
+          "Certyfikat języka polskiego A2 vocabulary plus everyday Polish used for residence language requirements — with Ukrainian support. Pair Anki with official practice for each pathway's format.",
+      },
+      {
+        question: "How is this different from the Polish A2 Certyfikat deck?",
+        answer:
+          "This listing is the Ukrainian-support edition: Polish on the front, Ukrainian glosses and bilingual examples on the back. The general Polish A2 Certyfikat deck uses English glosses. Pick the language support that matches how you study.",
+      },
+      {
+        question: "Is this the Polish Citizenship civics Anki deck?",
+        answer:
+          "No. This is Polish language vocabulary for Certyfikat / residence language. For Polish citizenship civics (wiedza o Polsce), take the free Polish Citizenship readiness check and join that waitlist.",
+      },
+      {
+        question: "What does the deck include?",
+        answer:
+          "1,500 Polish vocabulary cards from the Prep2Go app: Ukrainian glosses, bilingual examples, native Polish audio, and illustrations.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
+      },
+    ],
+  },
+  {
+    slug: "german-a2-for-ukrainian-speakers-anki-deck",
+    category: "language",
+    status: "available",
+    title: "German A2 for Ukrainian Speakers Anki Deck — 1926 Flashcards",
+    shortName: "German A2 for Ukrainian Speakers",
+    subtitle:
+      "1,926 German A2 flashcards for Goethe, telc, ÖSD, and DTZ — with Ukrainian support on every card.",
+    directAnswer:
+      "UniPrep2Go sells a German A2 for Ukrainian Speakers Anki deck with 1,926 high-frequency German vocabulary cards, Ukrainian glosses, bilingual examples, native German audio, and illustrations. Built from the Prep2Go app bank for Ukrainian-speaking candidates preparing Goethe-Institut A2, telc Deutsch A2, ÖSD A2, and DTZ (Deutsch-Test für Zuwanderer) word knowledge — plus everyday German used toward residence and Einbürgerung language expectations. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio. Independent study aid — not a Leben in Deutschland civics deck.",
+    lastUpdated: "2026-07-26",
+    audience:
+      "Ukrainian-speaking Goethe A2, telc A2, ÖSD A2, and DTZ candidates using Anki for German exam and integration vocabulary.",
+    format: ".apkg",
+    coverImage: "/covers/german-a2-for-ukrainian-speakers-anki-deck.webp",
+    checkoutUrl:
+      "https://pixidstudio.gumroad.com/l/german-a2-for-ukrainian-speakers-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "1926",
+      topics:
+        "Goethe A2, telc A2, ÖSD A2, DTZ German vocabulary with Ukrainian bilingual support",
+      formulas: "Audio + Ukrainian glosses + bilingual example sentences",
+      examYear: "Current Goethe / telc / ÖSD / DTZ cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [
+      {
+        question: "sein",
+        answer: "бути — Ich bin hier im sonnigen Zimmer. (Я хочу бути тут сьогодні з вами.)",
+        imageUrl: "/samples/german-a2-for-ukrainian-speakers-anki-deck-sample-1.webp",
+      },
+      {
+        question: "ich",
+        answer: "я — Ich stehe hier allein. (Я зараз тут разом з вами.)",
+        imageUrl: "/samples/german-a2-for-ukrainian-speakers-anki-deck-sample-2.webp",
+      },
+      {
+        question: "du",
+        answer: "ти — Du siehst heute glücklich aus! (Ти сьогодні виглядаєш щасливим.)",
+        imageUrl: "/samples/german-a2-for-ukrainian-speakers-anki-deck-sample-3.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which German exams does this deck support?",
+        answer:
+          "Goethe-Institut A2, telc Deutsch A2, ÖSD A2, and DTZ immigrant integration vocabulary — as a shared high-frequency German bank with Ukrainian support. Pair Anki with official practice for each exam's format.",
+      },
+      {
+        question: "How is this different from the German Goethe telc ÖSD DTZ deck?",
+        answer:
+          "This listing is the Ukrainian-support edition: German on the front, Ukrainian glosses and bilingual examples on the back. The general German Goethe telc ÖSD DTZ deck uses English glosses. Pick the language support that matches how you study.",
+      },
+      {
+        question: "Is this a Leben in Deutschland civics deck?",
+        answer:
+          "No. This is German language vocabulary for certificates and integration language. For Leben in Deutschland civics, use the Citizenship & Naturalization Anki Bundle.",
+      },
+      {
+        question: "What does the deck include?",
+        answer:
+          "1,926 German vocabulary cards from the Prep2Go app: Ukrainian glosses, bilingual examples, native German audio, and illustrations.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
+      },
+    ],
+  },
+  {
+    slug: "german-a2-for-russian-speakers-anki-deck",
+    category: "language",
+    status: "available",
+    title: "German A2 for Russian Speakers Anki Deck — 1926 Flashcards",
+    shortName: "German A2 for Russian Speakers",
+    subtitle:
+      "1,926 German A2 flashcards for Goethe, telc, ÖSD, and DTZ — with Russian support on every card.",
+    directAnswer:
+      "UniPrep2Go sells a German A2 for Russian Speakers Anki deck with 1,926 high-frequency German vocabulary cards, Russian glosses, bilingual examples, native German audio, and illustrations. Built from the Prep2Go app bank for Russian-speaking candidates preparing Goethe-Institut A2, telc Deutsch A2, ÖSD A2, and DTZ (Deutsch-Test für Zuwanderer) word knowledge — plus everyday German used toward residence and Einbürgerung language expectations. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio. Independent study aid — not a Leben in Deutschland civics deck.",
+    lastUpdated: "2026-07-26",
+    audience:
+      "Russian-speaking Goethe A2, telc A2, ÖSD A2, and DTZ candidates using Anki for German exam and integration vocabulary.",
+    format: ".apkg",
+    coverImage: "/covers/german-a2-for-russian-speakers-anki-deck.webp",
+    checkoutUrl:
+      "https://pixidstudio.gumroad.com/l/german-a2-for-russian-speakers-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "1926",
+      topics:
+        "Goethe A2, telc A2, ÖSD A2, DTZ German vocabulary with Russian bilingual support",
+      formulas: "Audio + Russian glosses + bilingual example sentences",
+      examYear: "Current Goethe / telc / ÖSD / DTZ cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [
+      {
+        question: "sein",
+        answer: "быть — Ich bin hier im sonnigen Zimmer. (Я хочу быть здесь сегодня с вами.)",
+        imageUrl: "/samples/german-a2-for-russian-speakers-anki-deck-sample-1.webp",
+      },
+      {
+        question: "ich",
+        answer: "я — Ich stehe hier allein. (Я сейчас здесь вместе с вами.)",
+        imageUrl: "/samples/german-a2-for-russian-speakers-anki-deck-sample-2.webp",
+      },
+      {
+        question: "du",
+        answer: "ты — Du siehst heute glücklich aus! (Ты сегодня выглядишь счастливым.)",
+        imageUrl: "/samples/german-a2-for-russian-speakers-anki-deck-sample-3.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which German exams does this deck support?",
+        answer:
+          "Goethe-Institut A2, telc Deutsch A2, ÖSD A2, and DTZ immigrant integration vocabulary — as a shared high-frequency German bank with Russian support. Pair Anki with official practice for each exam's format.",
+      },
+      {
+        question: "How is this different from the German Goethe telc ÖSD DTZ deck?",
+        answer:
+          "This listing is the Russian-support edition: German on the front, Russian glosses and bilingual examples on the back. The general German Goethe telc ÖSD DTZ deck uses English glosses. Pick the language support that matches how you study.",
+      },
+      {
+        question: "Is this a Leben in Deutschland civics deck?",
+        answer:
+          "No. This is German language vocabulary for certificates and integration language. For Leben in Deutschland civics, use the Citizenship & Naturalization Anki Bundle.",
+      },
+      {
+        question: "What does the deck include?",
+        answer:
+          "1,926 German vocabulary cards from the Prep2Go app: Russian glosses, bilingual examples, native German audio, and illustrations.",
       },
       {
         question: "What file format is delivered?",
@@ -1908,6 +2244,11 @@ const rawDecks: Deck[] = [
         question: "Which English exams does this deck support?",
         answer:
           "IELTS, TOEFL, Cambridge English exams, and PTE — as a shared high-frequency English vocabulary bank with French support. Pair Anki with official practice tests for each exam's format.",
+      },
+      {
+        question: "Does this help IRCC, UKVI, or academic English pathways?",
+        answer:
+          "Yes as shared high-frequency English vocabulary used across IELTS (including common IRCC and UKVI sittings), TOEFL, Cambridge, and PTE academic pathways. Confirm the exact test version your case requires — this deck trains word knowledge, not each board's listening/speaking format.",
       },
       {
         question: "What does the deck include?",
@@ -2022,6 +2363,11 @@ const rawDecks: Deck[] = [
         question: "Which English exams does this deck support?",
         answer:
           "IELTS, TOEFL, Cambridge English exams, and PTE — as a shared high-frequency English vocabulary bank with Arabic support. Pair Anki with official practice tests for each exam's format.",
+      },
+      {
+        question: "Does this help IRCC, UKVI, or academic English pathways?",
+        answer:
+          "Yes as shared high-frequency English vocabulary used across IELTS (including common IRCC and UKVI sittings), TOEFL, Cambridge, and PTE academic pathways. Confirm the exact test version your case requires — this deck trains word knowledge, not each board's listening/speaking format.",
       },
       {
         question: "What does the deck include?",
@@ -2139,6 +2485,11 @@ const rawDecks: Deck[] = [
           "IELTS, TOEFL, Cambridge English exams, and PTE — as a shared high-frequency English vocabulary bank with Ukrainian support. Pair Anki with official practice tests for each exam's format.",
       },
       {
+        question: "Does this help IRCC, UKVI, or academic English pathways?",
+        answer:
+          "Yes as shared high-frequency English vocabulary used across IELTS (including common IRCC and UKVI sittings), TOEFL, Cambridge, and PTE academic pathways. Confirm the exact test version your case requires — this deck trains word knowledge, not each board's listening/speaking format.",
+      },
+      {
         question: "What does the deck include?",
         answer:
           "2,504 English vocabulary cards from the Prep2Go app: Ukrainian glosses, bilingual examples, native English audio, and illustrations.",
@@ -2184,6 +2535,11 @@ const rawDecks: Deck[] = [
           "IELTS, TOEFL, Cambridge English exams, and PTE — as a shared high-frequency English vocabulary bank with Russian support. Pair Anki with official practice tests for each exam's format.",
       },
       {
+        question: "Does this help IRCC, UKVI, or academic English pathways?",
+        answer:
+          "Yes as shared high-frequency English vocabulary used across IELTS (including common IRCC and UKVI sittings), TOEFL, Cambridge, and PTE academic pathways. Confirm the exact test version your case requires — this deck trains word knowledge, not each board's listening/speaking format.",
+      },
+      {
         question: "What does the deck include?",
         answer:
           "2,504 English vocabulary cards from the Prep2Go app: Russian glosses, bilingual examples, native English audio, and illustrations.",
@@ -2227,6 +2583,11 @@ const rawDecks: Deck[] = [
         question: "Which English exams does this deck support?",
         answer:
           "IELTS, TOEFL, Cambridge English exams, and PTE — as a shared high-frequency English vocabulary bank with Latin American Spanish support. Pair Anki with official practice tests for each exam's format.",
+      },
+      {
+        question: "Does this help IRCC, UKVI, or academic English pathways?",
+        answer:
+          "Yes as shared high-frequency English vocabulary used across IELTS (including common IRCC and UKVI sittings), TOEFL, Cambridge, and PTE academic pathways. Confirm the exact test version your case requires — this deck trains word knowledge, not each board's listening/speaking format.",
       },
       {
         question: "Is this Latin American or Peninsular Spanish?",
@@ -2277,6 +2638,11 @@ const rawDecks: Deck[] = [
         question: "Which English exams does this deck support?",
         answer:
           "IELTS, TOEFL, Cambridge English exams, and PTE — as a shared high-frequency English vocabulary bank with Brazilian Portuguese support. Pair Anki with official practice tests for each exam's format.",
+      },
+      {
+        question: "Does this help IRCC, UKVI, or academic English pathways?",
+        answer:
+          "Yes as shared high-frequency English vocabulary used across IELTS (including common IRCC and UKVI sittings), TOEFL, Cambridge, and PTE academic pathways. Confirm the exact test version your case requires — this deck trains word knowledge, not each board's listening/speaking format.",
       },
       {
         question: "Is this Brazilian or European Portuguese?",
@@ -2332,7 +2698,12 @@ const rawDecks: Deck[] = [
       {
         question: "Is this a DELE + CCSE nationality bundle?",
         answer:
-          "No. This listing is a single DELE / SIELE vocabulary .apkg. The separate DELE + CCSE nationality bundle remains a planned listing and is not sold here.",
+          "No. This listing is a single DELE / SIELE vocabulary .apkg. The separate DELE + CCSE nationality bundle remains a planned listing and is not sold here. For Spanish nationality civics now, take the free CCSE (España) readiness check and join the planned CCSE bundle waitlist.",
+      },
+      {
+        question: "Do I need CCSE civics as well as DELE?",
+        answer:
+          "Many nacionalidad española pathways require language evidence (often DELE A2) plus the CCSE civics test. This deck covers language vocabulary only. Pair it with the free CCSE readiness check; the DELE + CCSE Anki bundle is planned, not currently for sale.",
       },
       {
         question: "What file format is delivered?",

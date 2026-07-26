@@ -57,25 +57,25 @@ const SPECS = {
   "delf-b2-french-anki-deck": {
     name: "DELF DALF TCF TEF French Anki Deck — 2000+ Flashcards",
     summary:
-      "2000+ French vocabulary cards for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, and TCF général.",
+      "2000+ French cards for DELF, DALF, TCF/TEF Canada, TCF ANF, TCF général — plus shared lexicon for fide / Swiss residency French.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — French Anki deck for the main certificate and immigration pathways: <strong>DELF / DALF</strong> (lifetime diploma gold standard), <strong>TCF Canada</strong> and <strong>TEF Canada</strong> (Express Entry / Quebec), <strong>TCF ANF</strong> (French naturalization), and <strong>TCF général</strong> (French universities).</p>",
+      "<p>The same high-frequency lexicon also supports <strong>fide / Swiss residency French</strong> language prep and everyday Belgian French — not official fide / SEM formats. For Swiss civics (Staatskunde), see the Swiss Citizenship Anki Bundle.</p>",
       "<p><strong>2000+</strong> cards pair each headword with a visual cue, native French audio, and a contextual example — one shared high-frequency vocabulary bank across those exams, not A1 survival fluff.</p>",
-      "<p><strong>Why this deck:</strong> multi-exam French framing (DELF, DALF, TCF, TEF) in one Anki bank — instant download with full media (~159 MB).</p>",
       "<p><strong>Delivery:</strong> Import into Anki desktop, then sync to mobile via AnkiWeb.</p>",
-      "<p><em>Independent study aid — not affiliated with France Éducation international, IRCC, or official TCF/TEF bodies.</em></p>",
+      "<p><em>Independent study aid — not affiliated with France Éducation international, IRCC, official TCF/TEF bodies, or Swiss fide / SEM.</em></p>",
     ].join(""),
     coverPath: "public/covers/delf-b2-french-anki-deck.webp",
     apkgRelPaths: ["prep2go_French_B2_DELF/prep2go_French_B2_DELF_FULL.apkg"],
     fileNames: ["DELF_DALF_TCF_TEF_French_Anki_Deck.apkg"],
   },
   "dutch-a2-inburgering-anki-deck": {
-    name: "Dutch Inburgering NT2 A2 Anki Deck — 1000+ Flashcards",
+    name: "Dutch Inburgering NT2 A2 Anki Deck — 1500 Flashcards",
     summary:
-      "1000+ Dutch A2 cards for Inburgering, Staatsexamen NT2 A2, residency, and naturalisatie.",
+      "1,500 Dutch A2 cards for Inburgering, Staatsexamen NT2 A2, residency, and naturalisatie.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — Dutch Anki deck for <strong>Inburgering</strong>, <strong>Staatsexamen NT2 A2</strong>, and <strong>naturalisatie</strong> vocabulary.</p>",
-      "<p><strong>1000+</strong> high-frequency words with bilingual examples, native audio, and illustrations.</p>",
+      "<p><strong>1,500</strong> high-frequency words with bilingual examples, native audio, and illustrations.</p>",
       "<p><strong>Delivery:</strong> Anki .apkg — import on desktop, sync to mobile.</p>",
       "<p><em>Independent study aid — not official Dutch government / DUO material.</em></p>",
     ].join(""),
@@ -86,12 +86,13 @@ const SPECS = {
   "german-a2-anki-deck": {
     name: "German Goethe telc ÖSD DTZ Anki Deck — 2000 Flashcards",
     summary:
-      "2000 German cards for Goethe-Institut, telc, ÖSD, and DTZ immigrant integration pathways.",
+      "2000 German cards for Goethe, telc, ÖSD, DTZ — plus shared lexicon for residence / Einbürgerung language and fide / Swiss residency German.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — German Anki deck for <strong>Goethe-Institut A2</strong>, <strong>telc Deutsch A2</strong>, <strong>ÖSD A2</strong>, and <strong>DTZ</strong>.</p>",
-      "<p><strong>2,000</strong> essential words — one shared vocabulary bank across certificate and immigration pathways.</p>",
+      "<p><strong>2,000</strong> essential words — one shared vocabulary bank across certificate and immigration pathways, including soft overlap for residence / Einbürgerung language and <strong>fide / Swiss residency German</strong>.</p>",
+      "<p>Not a Leben in Deutschland civics deck (see Citizenship &amp; Naturalization Anki Bundle) and not Swiss Staatskunde (see Swiss Citizenship Anki Bundle).</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki desktop, then sync to mobile.</p>",
-      "<p><em>Independent study aid — not official Goethe, telc, ÖSD, or BAMF / DTZ material.</em></p>",
+      "<p><em>Independent study aid — not official Goethe, telc, ÖSD, BAMF / DTZ, or Swiss fide / SEM material.</em></p>",
     ].join(""),
     coverPath: "public/covers/german-a2-anki-deck.webp",
     apkgRelPaths: ["prep2go_German_B1_DTZ/prep2go_German_B1_DTZ_FULL.apkg"],
@@ -99,10 +100,11 @@ const SPECS = {
   },
   "celi-b1-italian-anki-deck": {
     name: "CELI CILS PLIDA Italian Anki Deck — 1,373 Flashcards",
-    summary: "1,373 Italian B1 cards for CELI, CILS, and PLIDA certificate prep.",
+    summary:
+      "1,373 Italian B1 cards for CELI, CILS, and PLIDA — including permesso di soggiorno and cittadinanza language overlap.",
     descriptionHtml: [
-      "<p><strong>PixID Studio</strong> — Italian B1 Anki deck for <strong>CELI</strong>, <strong>CILS</strong>, and <strong>PLIDA</strong>.</p>",
-      "<p><strong>1,373</strong> cards covering the shared intermediate vocabulary across the main Italian certificates.</p>",
+      "<p><strong>PixID Studio</strong> — Italian B1 Anki deck for <strong>CELI</strong>, <strong>CILS</strong>, and <strong>PLIDA</strong>, including vocabulary used for <strong>permesso di soggiorno</strong> and <strong>cittadinanza</strong> language pathways (CILS B1 cittadinanza-adjacent).</p>",
+      "<p><strong>1,373</strong> cards covering the shared intermediate vocabulary across the main Italian certificates — language prep, not an Italian civics quiz.</p>",
       "<p><strong>Delivery:</strong> Anki-compatible .apkg via your Gumroad library after checkout.</p>",
       "<p><em>Independent study aid — not official CELI / CILS / PLIDA material.</em></p>",
     ].join(""),
@@ -179,6 +181,71 @@ const SPECS = {
     coverPath: "public/covers/czech-a2-cce-anki-deck.webp",
     apkgRelPaths: ["prep2go_Czech_A2_CCE/prep2go_Czech_A2_CCE_FULL.apkg"],
     fileNames: ["Czech_CCE_Residence_Citizenship_Anki_Deck.apkg"],
+  },
+  "polish-a2-certyfikat-anki-deck": {
+    name: "Polish A2 Certyfikat Residence Citizenship Anki Deck — 1500 Flashcards",
+    summary:
+      "1,500 Polish cards for Certyfikat języka polskiego A2 and residence or citizenship language prep.",
+    descriptionHtml: [
+      "<p><strong>PixID Studio</strong> — Polish Anki deck for <strong>Certyfikat języka polskiego</strong> A2 and residence or citizenship language prep.</p>",
+      "<p><strong>1,500</strong> high-frequency Polish cards with audio and practical example sentences for everyday life in Poland — language vocabulary only, not Polish citizenship civics.</p>",
+      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
+      "<p><em>Independent study aid — not official Certyfikat / state exam material.</em></p>",
+    ].join(""),
+    coverPath: "public/covers/polish-a2-certyfikat-anki-deck.webp",
+    apkgRelPaths: ["prep2go_Polish_A2_Certyfikat/prep2go_Polish_A2_Certyfikat_FULL.apkg"],
+    fileNames: ["Polish_A2_Certyfikat_Residence_Citizenship_Anki_Deck.apkg"],
+  },
+  "polish-a2-for-ukrainian-speakers-anki-deck": {
+    name: "Polish A2 for Ukrainian Speakers Anki Deck — 1500 Flashcards",
+    summary:
+      "1,500 Polish A2 cards for Certyfikat and residence language — with Ukrainian support on every card.",
+    descriptionHtml: [
+      "<p><strong>PixID Studio</strong> — Polish Anki deck for <strong>Ukrainian speakers</strong> preparing <strong>Certyfikat języka polskiego A2</strong> and residence or citizenship language.</p>",
+      "<p><strong>1,500</strong> high-frequency Polish cards with Ukrainian glosses, bilingual examples, native Polish audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p>Not Polish citizenship civics (wiedza o Polsce). Distinct from the English-gloss Polish Certyfikat deck.</p>",
+      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
+      "<p><em>Independent study aid — not official Certyfikat / state exam material.</em></p>",
+    ].join(""),
+    coverPath: "public/covers/polish-a2-for-ukrainian-speakers-anki-deck.webp",
+    apkgRelPaths: [
+      "prep2go_Polish_A2_Ukrainian_Speakers/prep2go_Polish_A2_Ukrainian_Speakers_FULL.apkg",
+    ],
+    fileNames: ["Polish_A2_for_Ukrainian_Speakers_Anki_Deck.apkg"],
+  },
+  "german-a2-for-ukrainian-speakers-anki-deck": {
+    name: "German A2 for Ukrainian Speakers Anki Deck — 1926 Flashcards",
+    summary:
+      "1,926 German A2 cards for Goethe, telc, ÖSD, and DTZ — with Ukrainian support on every card.",
+    descriptionHtml: [
+      "<p><strong>PixID Studio</strong> — German Anki deck for <strong>Ukrainian speakers</strong> preparing <strong>Goethe-Institut A2</strong>, <strong>telc Deutsch A2</strong>, <strong>ÖSD A2</strong>, and <strong>DTZ</strong>.</p>",
+      "<p><strong>1,926</strong> high-frequency German cards with Ukrainian glosses, bilingual examples, native German audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p>Not a Leben in Deutschland civics deck (see Citizenship &amp; Naturalization Anki Bundle). Distinct from the English-gloss German multi-pathway deck.</p>",
+      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
+      "<p><em>Independent study aid — not official Goethe, telc, ÖSD, or BAMF / DTZ material.</em></p>",
+    ].join(""),
+    coverPath: "public/covers/german-a2-for-ukrainian-speakers-anki-deck.webp",
+    apkgRelPaths: [
+      "prep2go_German_A2_Ukrainian_Speakers/prep2go_German_A2_Ukrainian_Speakers_FULL.apkg",
+    ],
+    fileNames: ["German_A2_for_Ukrainian_Speakers_Anki_Deck.apkg"],
+  },
+  "german-a2-for-russian-speakers-anki-deck": {
+    name: "German A2 for Russian Speakers Anki Deck — 1926 Flashcards",
+    summary:
+      "1,926 German A2 cards for Goethe, telc, ÖSD, and DTZ — with Russian support on every card.",
+    descriptionHtml: [
+      "<p><strong>PixID Studio</strong> — German Anki deck for <strong>Russian speakers</strong> preparing <strong>Goethe-Institut A2</strong>, <strong>telc Deutsch A2</strong>, <strong>ÖSD A2</strong>, and <strong>DTZ</strong>.</p>",
+      "<p><strong>1,926</strong> high-frequency German cards with Russian glosses, bilingual examples, native German audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p>Not a Leben in Deutschland civics deck (see Citizenship &amp; Naturalization Anki Bundle). Distinct from the English-gloss German multi-pathway deck and the Ukrainian-support edition.</p>",
+      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
+      "<p><em>Independent study aid — not official Goethe, telc, ÖSD, or BAMF / DTZ material.</em></p>",
+    ].join(""),
+    coverPath: "public/covers/german-a2-for-russian-speakers-anki-deck.webp",
+    apkgRelPaths: [
+      "prep2go_German_A2_Russian_Speakers/prep2go_German_A2_Russian_Speakers_FULL.apkg",
+    ],
+    fileNames: ["German_A2_for_Russian_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-french-speakers-anki-deck": {
     name: "IELTS / TOEFL English for French Speakers Anki Deck — 2522 Flashcards",

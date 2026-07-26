@@ -150,11 +150,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Applicants using CIPLE A2 for Portuguese residency or citizenship drill European Portuguese vocabulary daily, then practice speaking and official-style exam tasks separately.",
   },
   "dutch-a2-inburgering-anki-deck": {
-    title: "Dutch Inburgering NT2 A2 Anki Deck | 1000+ Cards",
-    headline: "Dutch Inburgering NT2 A2 Prep — 1000+ Flashcards",
+    title: "Dutch Inburgering NT2 A2 Anki Deck | 1500 Cards",
+    headline: "Dutch Inburgering NT2 A2 Prep — 1500 Flashcards",
     studyLabel: "Dutch Inburgering NT2 exam prep",
     description:
-      "Dutch A2 Anki deck with 1000+ flashcards for Inburgering, Staatsexamen NT2 A2 vocabulary, residency, and naturalisatie. Audio and bilingual examples. Independent study aid — not official DUO material.",
+      "Dutch A2 Anki deck with 1500 flashcards for Inburgering, Staatsexamen NT2 A2 vocabulary, residency, and naturalisatie. Audio and bilingual examples. Independent study aid — not official DUO material.",
     keywords: [
       "inburgering anki",
       "nt2 a2 flashcards",
@@ -170,32 +170,38 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "German Goethe telc ÖSD DTZ Exam Prep — 2000 Flashcards",
     studyLabel: "German Goethe telc ÖSD DTZ exam prep",
     description:
-      "German Anki deck with 2000 flashcards for Goethe-Institut A2, telc Deutsch A2, ÖSD A2, and DTZ immigrant integration pathways. Independent study aid — not official Goethe, telc, ÖSD, or BAMF material.",
+      "German Anki deck with 2000 flashcards for Goethe-Institut A2, telc Deutsch A2, ÖSD A2, and DTZ — plus shared lexicon for residence / Einbürgerung language and fide / Swiss residency German. Independent study aid — not official Goethe, telc, ÖSD, BAMF, or fide / SEM material.",
     keywords: [
       "goethe a2 anki",
       "telc a2 flashcards",
       "osd a2 anki",
       "dtz anki deck",
       "german a2 vocabulary anki",
+      "einburgerung german vocabulary",
+      "fide german anki",
+      "swiss residency german vocabulary",
     ],
     intro:
-      "Learners preparing Goethe A2, telc A2, ÖSD A2, or DTZ share one A2 vocabulary bank — then practice each exam's format separately.",
+      "Learners preparing Goethe A2, telc A2, ÖSD A2, DTZ, or high-frequency German for residence / Einbürgerung language and fide / Swiss residency share one A2–B1 vocabulary bank — then practice each exam's format separately. For Leben in Deutschland civics, use the Citizenship & Naturalization Anki Bundle; for Swiss civics, use the Swiss Citizenship Anki Bundle.",
   },
   "celi-b1-italian-anki-deck": {
     title: "CELI CILS PLIDA Italian Anki Deck | 1373 Cards",
     headline: "CELI CILS PLIDA Italian Prep — 1,373 Flashcards",
     studyLabel: "CELI CILS PLIDA Italian exam prep",
     description:
-      "Italian B1 Anki deck with 1,373 flashcards for CELI, CILS, and PLIDA. Shared intermediate vocabulary across the main Italian certificates. Independent study aid — not official exam material.",
+      "Italian B1 Anki deck with 1,373 flashcards for CELI, CILS, and PLIDA — including vocabulary overlap for permesso di soggiorno and cittadinanza language pathways. Independent study aid — not official exam material.",
     keywords: [
       "celi b1 anki",
       "cils b1 flashcards",
       "plida b1 anki",
       "italian b1 vocabulary anki",
       "celi cils plida deck",
+      "cils b1 cittadinanza anki",
+      "permesso di soggiorno italian vocabulary",
+      "italian citizenship language anki",
     ],
     intro:
-      "CELI, CILS, and PLIDA B1 candidates use one shared Italian vocabulary bank between classes and mock exams.",
+      "CELI, CILS, and PLIDA B1 candidates — including applicants using B1 Italian for permesso di soggiorno or cittadinanza language evidence — use one shared Italian vocabulary bank between classes and mock exams. This is language prep, not an Italian civics quiz.",
   },
   "danish-a2-prove-i-dansk-anki-deck": {
     title: "Danish Prøve i Dansk PD2 PD3 Anki | 1000 Cards",
@@ -276,6 +282,70 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     ],
     intro:
       "CCE learners preparing residence or citizenship language requirements use daily Czech vocabulary recall alongside speaking practice.",
+  },
+  "polish-a2-certyfikat-anki-deck": {
+    title: "Polish A2 Certyfikat Anki Deck | 1500 Cards",
+    headline: "Polish A2 Certyfikat Prep — 1500 Flashcards",
+    studyLabel: "Polish Certyfikat A2 exam prep",
+    description:
+      "Polish Anki deck with 1500 flashcards for Certyfikat języka polskiego A2 and residence or citizenship language prep. Independent study aid — not official Certyfikat material.",
+    keywords: [
+      "polish certyfikat anki",
+      "certyfikat jezyka polskiego anki",
+      "polish a2 flashcards",
+      "polish residence vocabulary",
+      "polish citizenship language anki",
+    ],
+    intro:
+      "Certyfikat języka polskiego A2 learners preparing residence or citizenship language requirements use daily Polish vocabulary recall — not a Polish civics deck.",
+  },
+  "polish-a2-for-ukrainian-speakers-anki-deck": {
+    title: "Polish A2 for Ukrainian Speakers Anki | 1500 Cards",
+    headline: "Polish A2 for Ukrainian Speakers — 1500 Flashcards",
+    studyLabel: "Polish A2 for Ukrainian speakers exam prep",
+    description:
+      "Polish Anki deck with 1500 flashcards for Ukrainian speakers preparing Certyfikat języka polskiego A2 and residence language — Ukrainian glosses, bilingual examples, and native Polish audio. Independent study aid — not official Certyfikat material.",
+    keywords: [
+      "polish for ukrainian speakers anki",
+      "польська для українців anki",
+      "certyfikat a2 ukrainian anki",
+      "polish a2 bilingual ukrainian",
+      "польский для украинцев anki",
+    ],
+    intro:
+      "Ukrainian-speaking Certyfikat A2 and residence-language candidates use bilingual Polish vocabulary recall with Ukrainian support before timed exam practice. Not a Polish citizenship civics deck.",
+  },
+  "german-a2-for-ukrainian-speakers-anki-deck": {
+    title: "German A2 for Ukrainian Speakers Anki | 1926 Cards",
+    headline: "German A2 for Ukrainian Speakers — 1926 Flashcards",
+    studyLabel: "German A2 for Ukrainian speakers exam prep",
+    description:
+      "German Anki deck with 1926 flashcards for Ukrainian speakers preparing Goethe A2, telc A2, ÖSD A2, and DTZ — Ukrainian glosses, bilingual examples, and native German audio. Independent study aid — not official Goethe, telc, ÖSD, or BAMF material.",
+    keywords: [
+      "german for ukrainian speakers anki",
+      "німецька для українців anki",
+      "dtz ukrainian anki",
+      "goethe a2 ukrainian flashcards",
+      "german a2 bilingual ukrainian",
+    ],
+    intro:
+      "Ukrainian-speaking Goethe, telc, ÖSD, and DTZ candidates use bilingual German vocabulary recall with Ukrainian support before timed exam practice. Not a Leben in Deutschland civics deck.",
+  },
+  "german-a2-for-russian-speakers-anki-deck": {
+    title: "German A2 for Russian Speakers Anki | 1926 Cards",
+    headline: "German A2 for Russian Speakers — 1926 Flashcards",
+    studyLabel: "German A2 for Russian speakers exam prep",
+    description:
+      "German Anki deck with 1926 flashcards for Russian speakers preparing Goethe A2, telc A2, ÖSD A2, and DTZ — Russian glosses, bilingual examples, and native German audio. Independent study aid — not official Goethe, telc, ÖSD, or BAMF material.",
+    keywords: [
+      "german for russian speakers anki",
+      "немецкий для русских anki",
+      "dtz russian anki",
+      "goethe a2 russian flashcards",
+      "german a2 bilingual russian",
+    ],
+    intro:
+      "Russian-speaking Goethe, telc, ÖSD, and DTZ candidates use bilingual German vocabulary recall with Russian support before timed exam practice. Not a Leben in Deutschland civics deck.",
   },
   "ielts-toefl-english-for-french-speakers-anki-deck": {
     title: "IELTS / TOEFL English for French Speakers Anki | 2522 Cards",
@@ -495,7 +565,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "DELF DALF TCF TEF French Exam Prep — 2000+ Flashcards",
     studyLabel: "DELF DALF TCF TEF French exam prep",
     description:
-      "French Anki deck with 2000+ flashcards for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, and TCF général. Shared high-frequency vocabulary with native audio and examples. Independent study aid — not official France Éducation international or IRCC material.",
+      "French Anki deck with 2000+ flashcards for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, and TCF général — plus shared lexicon for fide / Swiss residency French. Native audio and examples. Independent study aid — not official France Éducation international, IRCC, or fide / SEM material.",
     keywords: [
       "delf anki deck",
       "dalf anki deck",
@@ -505,11 +575,14 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "tcf general french anki",
       "delf dalf vocabulary",
       "french immigration vocabulary anki",
+      "fide french anki",
+      "swiss residency french vocabulary",
+      "tef canada quebec anki",
     ],
     intro:
-      "Candidates preparing DELF / DALF diplomas, TCF Canada or TEF Canada for Canadian immigration, TCF ANF for French naturalization, or TCF général for French universities use one shared French vocabulary bank — then practice each exam's format separately.",
+      "Candidates preparing DELF / DALF diplomas, TCF Canada or TEF Canada for Canadian immigration, TCF ANF for French naturalization, TCF général for French universities, or high-frequency French for fide / Swiss residency language prep use one shared vocabulary bank — then practice each exam's format separately. For Swiss civics, use the Swiss Citizenship Anki Bundle.",
     audience:
-      "DELF / DALF diploma candidates, Canada immigration applicants (TCF Canada / TEF Canada), French naturalization (TCF ANF), and French university applicants (TCF général).",
+      "DELF / DALF diploma candidates, Canada immigration applicants (TCF Canada / TEF Canada), French naturalization (TCF ANF), French university applicants (TCF général), and fide / Swiss residency French language learners.",
   },
   "cfa-level-1-anki-deck": {
     title: "Best CFA Level 1 Anki Deck 2026 | 342 Cards + Free Mock",
