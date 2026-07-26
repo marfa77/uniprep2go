@@ -200,7 +200,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     slug: "us-citizenship-readiness-check",
     title: "U.S. Citizenship Civics Readiness Check",
     shortTitle: "U.S. Citizenship Readiness",
-    linkedDeckSlug: "us-citizenship-test-prep2go-app",
+    linkedDeckSlug: "citizenship-naturalization-anki-bundle",
     status: "live",
     accessMode: "free_demand_test",
     durationMinutes: 30,
@@ -221,14 +221,14 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "geography", label: "Geography, Symbols & Holidays", questionCount: 10, weightPercent: 33, targetPercent: 80 },
     ],
     officialSourceNote:
-      "Readiness check based on USCIS 2025 civics test themes. Questions sourced from the Prep2Go Immigration app U.S. Citizenship deck. Not an official USCIS naturalization interview.",
+      "Readiness check based on USCIS 2025 civics test themes. Questions sourced from the Prep2Go U.S. Citizenship bank (same bank as the Citizenship & Naturalization Anki Bundle). Not an official USCIS naturalization interview.",
     disclaimer: citizenshipDisclaimer,
     description:
-      "A 30-question U.S. citizenship civics readiness check covering government, history, and geography — pairs with the Prep2Go Immigration app. Independent prep — not USCIS material.",
+      "A 30-question U.S. citizenship civics readiness check covering government, history, and geography — pairs with the Citizenship & Naturalization Anki Bundle. Independent prep — not USCIS material.",
     examBody: "USCIS",
     lastUpdated: "2026-07-26",
     questionSourceNote:
-      "Questions sourced from the Prep2Go Immigration app U.S. Citizenship deck (2025 USCIS civics Q&A converted to MCQ with in-deck distractors).",
+      "Questions sourced from the Prep2Go U.S. Citizenship bank (2025 USCIS civics Q&A converted to MCQ with in-deck distractors) — same bank as the Citizenship & Naturalization Anki Bundle.",
   },
   {
     slug: "frm-part-1-readiness-check",

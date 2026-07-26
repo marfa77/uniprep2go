@@ -614,7 +614,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "us-citizenship-readiness-check": {
     title: "Free U.S. Citizenship Practice Test | 30 Civics Questions",
     description:
-      "Free U.S. citizenship civics practice test: 30 timed questions on American government, history, and geography, 30 minutes, 80% readiness target, and full answer review. Pairs with the Prep2Go Immigration app. Independent prep — not USCIS material.",
+      "Free U.S. citizenship civics practice test: 30 timed questions on American government, history, and geography, 30 minutes, 80% readiness target, and full answer review. Pairs with the Citizenship & Naturalization Anki Bundle. Independent prep — not USCIS material.",
     keywords: [
       "us citizenship practice test",
       "uscis civics test free",
@@ -630,7 +630,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "leben-in-deutschland-readiness-check": {
     title: "Free Leben in Deutschland Practice Test | 60 Questions",
     description:
-      "Free Einbürgerungstest / Leben in Deutschland practice: 60 timed questions on German politics, history, society, and federal life. Pairs with the Prep2Go Immigration app. Independent prep — not BAMF material.",
+      "Free Einbürgerungstest / Leben in Deutschland practice: 60 timed questions on German politics, history, society, and federal life. Pairs with the Citizenship & Naturalization Anki Bundle. Independent prep — not BAMF material.",
     keywords: ["Leben in Deutschland test", "Einbürgerungstest üben", "German citizenship practice test"],
     headline: "Free Leben in Deutschland Readiness Check",
     intro:
@@ -641,7 +641,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "naturalisation-francaise-readiness-check": {
     title: "Free Naturalisation française Practice Test | 60 Questions",
     description:
-      "Free French naturalization civics practice: 60 timed questions on institutions, history, values, and rights. Pairs with the Prep2Go Immigration app. Independent prep — not official French government material.",
+      "Free French naturalization civics practice: 60 timed questions on institutions, history, values, and rights. Pairs with the Citizenship & Naturalization Anki Bundle. Independent prep — not official French government material.",
     keywords: ["naturalisation française test", "entretien naturalisation", "French citizenship practice"],
     headline: "Free Naturalisation française Readiness Check",
     intro:
@@ -652,7 +652,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "life-in-the-uk-readiness-check": {
     title: "Free Life in the UK Practice Test | 60 Questions",
     description:
-      "Free Life in the UK practice test: 60 timed questions on British values, history, government, and everyday life with a 75% readiness target. Pairs with the Prep2Go Immigration app. Independent prep — not Home Office material.",
+      "Free Life in the UK practice test: 60 timed questions on British values, history, government, and everyday life with a 75% readiness target. Pairs with the Citizenship & Naturalization Anki Bundle. Independent prep — not Home Office material.",
     keywords: ["Life in the UK practice test", "LITUK free test", "British citizenship test practice"],
     headline: "Free Life in the UK Readiness Check",
     intro:
@@ -663,7 +663,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "canadian-citizenship-readiness-check": {
     title: "Free Canadian Citizenship Practice Test | 60 Questions",
     description:
-      "Free Canadian citizenship practice test: 60 timed questions on Discover Canada themes — history, government, rights, and symbols. Pairs with the Prep2Go Immigration app. Independent prep — not IRCC material.",
+      "Free Canadian citizenship practice test: 60 timed questions on Discover Canada themes — history, government, rights, and symbols. Pairs with the Citizenship & Naturalization Anki Bundle. Independent prep — not IRCC material.",
     keywords: ["Canadian citizenship practice test", "Discover Canada quiz", "IRCC citizenship test"],
     headline: "Free Canadian Citizenship Readiness Check",
     intro:
@@ -674,7 +674,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "australian-citizenship-readiness-check": {
     title: "Free Australian Citizenship Practice Test | 60 Questions",
     description:
-      "Free Australian citizenship practice test: 60 timed questions on values, history, government, and Australian life. Pairs with the Prep2Go Immigration app. Independent prep — not Home Affairs material.",
+      "Free Australian citizenship practice test: 60 timed questions on values, history, government, and Australian life. Pairs with the Citizenship & Naturalization Anki Bundle. Independent prep — not Home Affairs material.",
     keywords: ["Australian citizenship practice test", "Aussie citizenship quiz", "citizenship test Australia"],
     headline: "Free Australian Citizenship Readiness Check",
     intro:

@@ -2043,8 +2043,8 @@ const rawDecks: Deck[] = [
     subtitle:
       "Stop cramming random civics quizzes — 1,225 Anki flashcards for Germany, France, UK, Canada, Australia & the U.S. in six separate decks, one $20 download.",
     directAnswer:
-      "UniPrep2Go sells a Citizenship & Naturalization Anki bundle with six separate .apkg decks covering Leben in Deutschland (296 cards), Naturalisation française (200), Life in the UK (201), Canadian Citizenship (200), Australian Citizenship (200), and U.S. Citizenship (128) — 1,225 civics flashcards total for daily spaced-repetition drill. It is delivered as six Anki .apkg files for {PRICE} through Gumroad by PixID Studio. Independent study aid — not official government exam material; pair with your country’s official handbook.",
-    lastUpdated: "2026-07-22",
+      "UniPrep2Go sells a Citizenship & Naturalization Anki bundle with six separate .apkg decks covering Leben in Deutschland (296 cards), Naturalisation française (200), Life in the UK (201), Canadian Citizenship (200), Australian Citizenship (200), and U.S. Citizenship (128) — 1,225 civics flashcards total for daily spaced-repetition drill. Free readiness checks for each country funnel into this bundle. It is delivered as six Anki .apkg files for {PRICE} through Gumroad by PixID Studio. Independent study aid — not official government exam material; pair with your country’s official handbook.",
+    lastUpdated: "2026-07-26",
     audience:
       "Applicants preparing citizenship or naturalization civics tests in Germany, France, the UK, Canada, Australia, or the United States.",
     format: ".apkg",
@@ -2086,6 +2086,11 @@ const rawDecks: Deck[] = [
         question: "What is included in the $20 bundle?",
         answer:
           "Six Anki .apkg decks in one download: Leben in Deutschland (296 cards), Naturalisation française (200), Life in the UK (201), Canadian Citizenship (200), Australian Citizenship (200), and U.S. Citizenship (128) — 1,225 cards total. Import only the country you need.",
+      },
+      {
+        question: "Is there a free practice test before I buy?",
+        answer:
+          "Yes. UniPrep2Go has free readiness checks for Leben in Deutschland, Naturalisation française, Life in the UK, Canadian Citizenship, Australian Citizenship, and U.S. Citizenship — each linked to this bundle so you can diagnose weak topics first, then drill with Anki.",
       },
       {
         question: "Will this replace the official civics handbook?",

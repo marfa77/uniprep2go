@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Deck } from "@/lib/decks";
 import { getDeckLongDescription, formatExamFocusedContent } from "@/lib/deck-page-copy";
-import { getDeckLinkedMock } from "@/lib/deck-seo";
+import { getDeckLinkedMock, getDeckLinkedMocks } from "@/lib/deck-seo";
 import { getDeckSeoProfile } from "@/lib/deck-seo";
 
 type DeckSeoSectionsProps = {
@@ -11,7 +11,8 @@ type DeckSeoSectionsProps = {
 export function DeckSeoSections({ deck }: DeckSeoSectionsProps) {
   const profile = getDeckSeoProfile(deck);
   const longDescription = getDeckLongDescription(deck);
-  const linkedMock = getDeckLinkedMock(deck.slug);
+  const linkedMocks = getDeckLinkedMocks(deck.slug);
+  const linkedMock = linkedMocks[0] ?? getDeckLinkedMock(deck.slug);
   const contentLabel = formatExamFocusedContent(deck);
 
   return (
@@ -33,12 +34,27 @@ export function DeckSeoSections({ deck }: DeckSeoSectionsProps) {
           Topic coverage table and samples on this page
         </li>
         <li className="rounded-2xl bg-[#18140f]/5 px-4 py-3">
-          {linkedMock
-            ? `Linked free ${linkedMock.questionCount}-question practice test`
-            : "Independent supplement to courses and question banks"}
+          {linkedMocks.length > 1
+            ? `${linkedMocks.length} linked free country readiness checks`
+            : linkedMock
+              ? `Linked free ${linkedMock.questionCount}-question practice test`
+              : "Independent supplement to courses and question banks"}
         </li>
       </ul>
-      {linkedMock ? (
+      {linkedMocks.length > 1 ? (
+        <ul className="mt-5 flex flex-col gap-2 text-sm font-semibold text-[#1f3a5f]">
+          {linkedMocks.map((mock) => (
+            <li key={mock.slug}>
+              <Link
+                className="underline-offset-4 hover:underline"
+                href={`/mock-exams/${mock.slug}`}
+              >
+                Free {mock.shortTitle} practice test ({mock.questionCount} Q)
+              </Link>
+            </li>
+          ))}
+        </ul>
+      ) : linkedMock ? (
         <Link
           className="mt-5 inline-flex text-sm font-semibold text-[#1f3a5f] underline-offset-4 hover:underline"
           href={`/mock-exams/${linkedMock.slug}`}

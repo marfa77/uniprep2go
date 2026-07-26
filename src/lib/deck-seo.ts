@@ -23,8 +23,12 @@ type DeckSeoProfile = {
   studyLabel: string;
 };
 
+function getLinkedMocks(slug: string): MockExamConfig[] {
+  return getAllMockExams().filter((mock) => mock.linkedDeckSlug === slug);
+}
+
 function getLinkedMock(slug: string): MockExamConfig | undefined {
-  return getAllMockExams().find((mock) => mock.linkedDeckSlug === slug);
+  return getLinkedMocks(slug)[0];
 }
 
 function yearPrefix(examYear: string): string {
@@ -395,7 +399,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Citizenship & Naturalization Anki Bundle — 6 Countries · 1225 Cards",
     studyLabel: "citizenship naturalization civics Anki bundle",
     description:
-      "Stop cramming random civics quizzes. 1,225 Anki flashcards for Germany (Leben in Deutschland), France, UK, Canada, Australia, and the U.S. — six separate .apkg decks in one $20 Gumroad download. Independent study aid — not official government material.",
+      "Stop cramming random civics quizzes. 1,225 Anki flashcards for Germany (Leben in Deutschland), France, UK, Canada, Australia, and the U.S. — six separate .apkg decks in one $20 Gumroad download. Free country readiness checks funnel into this bundle. Independent study aid — not official government material.",
     keywords: [
       "citizenship anki deck",
       "naturalization flashcards",
@@ -405,7 +409,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "canadian citizenship test anki",
     ],
     intro:
-      "Citizenship and naturalization applicants use this $20 bundle to drill civics facts for six countries with separate Anki decks — spaced repetition instead of scattered blog quizzes.",
+      "Take a free country readiness check first, then drill weak civics topics with this $20 six-country Anki bundle — spaced repetition instead of scattered blog quizzes.",
   },
   "dele-a2-spanish-anki-deck": {
     title: "DELE SIELE Spanish Anki Deck | 1000 Flashcards",
@@ -907,4 +911,9 @@ export function buildDeckSeoPageCopy(deck: SeoDeck) {
 
 export function getDeckLinkedMock(slug: string) {
   return getLinkedMock(slug);
+}
+
+/** All readiness checks that funnel to this deck (e.g. six citizenship mocks → one bundle). */
+export function getDeckLinkedMocks(slug: string) {
+  return getLinkedMocks(slug);
 }

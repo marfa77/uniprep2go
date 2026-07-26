@@ -35,9 +35,32 @@ describe("mock exam configs", () => {
   it("does not attach mocks to language certification decks", async () => {
     const { getCatalogDeckBySlug } = await import("../decks");
     for (const config of getAllMockExams()) {
+      // Citizenship civics mocks funnel to the Gumroad Anki bundle (category language).
+      if (config.linkedDeckSlug === "citizenship-naturalization-anki-bundle") continue;
       const deck = getCatalogDeckBySlug(config.linkedDeckSlug);
       expect(deck?.category, config.slug).not.toBe("language");
     }
+  });
+
+  it("funnels all citizenship readiness mocks to the Anki naturalization bundle", async () => {
+    const { getDeckLinkedMocks } = await import("../deck-seo");
+    const slugs = [
+      "us-citizenship-readiness-check",
+      "leben-in-deutschland-readiness-check",
+      "naturalisation-francaise-readiness-check",
+      "life-in-the-uk-readiness-check",
+      "canadian-citizenship-readiness-check",
+      "australian-citizenship-readiness-check",
+    ];
+    for (const slug of slugs) {
+      expect(getMockExamConfig(slug)?.linkedDeckSlug).toBe(
+        "citizenship-naturalization-anki-bundle",
+      );
+    }
+    expect(getDeckLinkedMocks("citizenship-naturalization-anki-bundle").map((m) => m.slug)).toEqual(
+      expect.arrayContaining(slugs),
+    );
+    expect(getDeckLinkedMocks("citizenship-naturalization-anki-bundle")).toHaveLength(6);
   });
 
   it("defines SIE topic counts that sum to 75", () => {
