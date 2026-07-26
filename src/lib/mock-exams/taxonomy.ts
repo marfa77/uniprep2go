@@ -1,5 +1,6 @@
 import type { MockClusterImageType } from "./cluster-images";
 import type { MockExamConfig, MockExamConfigDraft, MockExamTaxonomy, MockVerticalId } from "./types";
+import { citizenshipTaxonomyEntries } from "./citizenship-taxonomy";
 import { wave3TaxonomyEntries } from "./wave3-taxonomy";
 import { wave4TaxonomyEntries } from "./wave4-taxonomy";
 
@@ -150,7 +151,8 @@ export const MOCK_VERTICALS: MockVerticalDefinition[] = [
   {
     id: "licensing",
     label: "US licensing & insurance",
-    description: "FINRA securities, insurance, ServSafe, and US citizenship practice tests.",
+    description:
+      "FINRA securities, insurance, ServSafe, and citizenship / naturalization practice tests (US, UK, Canada, Australia, Germany, France).",
     imageType: "licensing",
     seoTitle: "Free US Licensing Practice Tests",
   },
@@ -203,7 +205,7 @@ export const MOCK_FAMILY_LABELS: Record<string, string> = {
   finra: "FINRA securities",
   insurance: "Insurance licensing",
   "food-safety": "Food safety",
-  citizenship: "US citizenship",
+  citizenship: "Citizenship / naturalization",
   cfa: "CFA",
   frm: "FRM",
   admissions: "Admissions tests",
@@ -604,6 +606,7 @@ export function getFamilyLabel(familyId: string) {
 
 const TAXONOMY_LOOKUP: Record<string, TaxonomyEntry> = {
   ...TAXONOMY_BY_SLUG,
+  ...citizenshipTaxonomyEntries,
   ...wave3TaxonomyEntries,
   ...wave4TaxonomyEntries,
 };

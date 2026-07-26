@@ -627,6 +627,61 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     audience: "Green card holders preparing for the U.S. naturalization civics interview.",
     practiceTestLabel: "U.S. citizenship practice test",
   },
+  "leben-in-deutschland-readiness-check": {
+    title: "Free Leben in Deutschland Practice Test | 60 Questions",
+    description:
+      "Free Einbürgerungstest / Leben in Deutschland practice: 60 timed questions on German politics, history, society, and federal life. Pairs with the Prep2Go Immigration app. Independent prep — not BAMF material.",
+    keywords: ["Leben in Deutschland test", "Einbürgerungstest üben", "German citizenship practice test"],
+    headline: "Free Leben in Deutschland Readiness Check",
+    intro:
+      "A timed readiness check for the German naturalization civics test — constitution, history, society, and everyday federal life.",
+    audience: "Residents preparing for the German Einbürgerungstest / Leben in Deutschland exam.",
+    practiceTestLabel: "Leben in Deutschland practice test",
+  },
+  "naturalisation-francaise-readiness-check": {
+    title: "Free Naturalisation française Practice Test | 60 Questions",
+    description:
+      "Free French naturalization civics practice: 60 timed questions on institutions, history, values, and rights. Pairs with the Prep2Go Immigration app. Independent prep — not official French government material.",
+    keywords: ["naturalisation française test", "entretien naturalisation", "French citizenship practice"],
+    headline: "Free Naturalisation française Readiness Check",
+    intro:
+      "A timed civics readiness check for French naturalization themes — Republic institutions, history, symbols, and civic duties.",
+    audience: "Applicants preparing for the French naturalization civics interview.",
+    practiceTestLabel: "Naturalisation française practice test",
+  },
+  "life-in-the-uk-readiness-check": {
+    title: "Free Life in the UK Practice Test | 60 Questions",
+    description:
+      "Free Life in the UK practice test: 60 timed questions on British values, history, government, and everyday life with a 75% readiness target. Pairs with the Prep2Go Immigration app. Independent prep — not Home Office material.",
+    keywords: ["Life in the UK practice test", "LITUK free test", "British citizenship test practice"],
+    headline: "Free Life in the UK Readiness Check",
+    intro:
+      "A timed readiness check aligned to Life in the UK themes — values, history, government, and society.",
+    audience: "Applicants preparing for settlement or British citizenship via the Life in the UK test.",
+    practiceTestLabel: "Life in the UK practice test",
+  },
+  "canadian-citizenship-readiness-check": {
+    title: "Free Canadian Citizenship Practice Test | 60 Questions",
+    description:
+      "Free Canadian citizenship practice test: 60 timed questions on Discover Canada themes — history, government, rights, and symbols. Pairs with the Prep2Go Immigration app. Independent prep — not IRCC material.",
+    keywords: ["Canadian citizenship practice test", "Discover Canada quiz", "IRCC citizenship test"],
+    headline: "Free Canadian Citizenship Readiness Check",
+    intro:
+      "A timed readiness check for the Canadian citizenship test — history, government, rights, and Canadian symbols.",
+    audience: "Permanent residents preparing for the Canadian citizenship test.",
+    practiceTestLabel: "Canadian citizenship practice test",
+  },
+  "australian-citizenship-readiness-check": {
+    title: "Free Australian Citizenship Practice Test | 60 Questions",
+    description:
+      "Free Australian citizenship practice test: 60 timed questions on values, history, government, and Australian life. Pairs with the Prep2Go Immigration app. Independent prep — not Home Affairs material.",
+    keywords: ["Australian citizenship practice test", "Aussie citizenship quiz", "citizenship test Australia"],
+    headline: "Free Australian Citizenship Readiness Check",
+    intro:
+      "A timed readiness check for the Australian citizenship test — values, history, democracy, and Australian life.",
+    audience: "Permanent residents preparing for the Australian citizenship test.",
+    practiceTestLabel: "Australian citizenship practice test",
+  },
 };
 
 export function getMockSeoProfile(config: MockExamConfig): MockSeoProfile {

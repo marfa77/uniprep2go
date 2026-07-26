@@ -2,6 +2,7 @@ import { finalizeMockExamConfigs } from "./taxonomy";
 import type { MockExamConfig, MockExamConfigDraft } from "./types";
 import { wave1MockExamConfigs } from "./wave1-configs";
 import { wave2MockExamConfigs } from "./wave2-configs";
+import { citizenshipMockExamConfigs } from "./citizenship-configs";
 import { wave3MockExamConfigs } from "./wave3-configs";
 import { wave4MockExamConfigs } from "./wave4-configs";
 
@@ -220,12 +221,14 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "geography", label: "Geography, Symbols & Holidays", questionCount: 10, weightPercent: 33, targetPercent: 80 },
     ],
     officialSourceNote:
-      "Readiness check based on USCIS civics test themes (2025 pool). Not an official USCIS naturalization interview.",
+      "Readiness check based on USCIS 2025 civics test themes. Questions sourced from the Prep2Go Immigration app U.S. Citizenship deck. Not an official USCIS naturalization interview.",
     disclaimer: citizenshipDisclaimer,
     description:
       "A 30-question U.S. citizenship civics readiness check covering government, history, and geography — pairs with the Prep2Go Immigration app. Independent prep — not USCIS material.",
     examBody: "USCIS",
-    lastUpdated: "2026-07-15",
+    lastUpdated: "2026-07-26",
+    questionSourceNote:
+      "Questions sourced from the Prep2Go Immigration app U.S. Citizenship deck (2025 USCIS civics Q&A converted to MCQ with in-deck distractors).",
   },
   {
     slug: "frm-part-1-readiness-check",
@@ -1624,6 +1627,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     questionSourceNote:
       "Original UniPrep2Go questions authored for the MRICS Quantity Surveying readiness check (250 cards across five QS competency groups; 50-question timed session).",
   },
+  ...citizenshipMockExamConfigs,
   ...wave1MockExamConfigs,
   ...wave2MockExamConfigs,
   ...wave3MockExamConfigs,
