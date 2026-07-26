@@ -4135,7 +4135,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free BMS practice test?",
         answer:
-          "Yes. Take the free 40-question BMS readiness check at uniprep2go.study/mock-exams/bms-bas-readiness-check — timed topic scoring and full answer review.",
+          "Yes. Take the free 60-question BMS readiness check at uniprep2go.study/mock-exams/bms-bas-readiness-check — timed topic scoring and full answer review.",
       },
       {
         question: "Does this replace Tridium Niagara 4 TCP?",

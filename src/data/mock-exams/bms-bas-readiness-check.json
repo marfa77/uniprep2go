@@ -30,7 +30,7 @@
       "d": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking."
     },
     "difficulty": "easy",
-    "sourceNote": "Minimal preview bank — BACnet Protocol and Networking (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-bacnet-networking-002",
@@ -63,7 +63,7 @@
       "d": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking."
     },
     "difficulty": "medium",
-    "sourceNote": "Minimal preview bank — BACnet Protocol and Networking (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-bacnet-networking-003",
@@ -96,7 +96,7 @@
       "d": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking."
     },
     "difficulty": "hard",
-    "sourceNote": "Minimal preview bank — BACnet Protocol and Networking (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-bacnet-networking-004",
@@ -129,7 +129,7 @@
       "c": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking."
     },
     "difficulty": "easy",
-    "sourceNote": "Minimal preview bank — BACnet Protocol and Networking (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-bacnet-networking-005",
@@ -162,7 +162,7 @@
       "d": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking."
     },
     "difficulty": "medium",
-    "sourceNote": "Minimal preview bank — BACnet Protocol and Networking (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-bacnet-networking-006",
@@ -195,7 +195,7 @@
       "d": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking."
     },
     "difficulty": "hard",
-    "sourceNote": "Minimal preview bank — BACnet Protocol and Networking (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-bacnet-networking-007",
@@ -228,7 +228,7 @@
       "d": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking."
     },
     "difficulty": "easy",
-    "sourceNote": "Minimal preview bank — BACnet Protocol and Networking (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-bacnet-networking-008",
@@ -261,7 +261,7 @@
       "c": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking."
     },
     "difficulty": "medium",
-    "sourceNote": "Minimal preview bank — BACnet Protocol and Networking (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-bacnet-networking-009",
@@ -294,7 +294,7 @@
       "d": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking."
     },
     "difficulty": "hard",
-    "sourceNote": "Minimal preview bank — BACnet Protocol and Networking (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-bacnet-networking-010",
@@ -327,7 +327,172 @@
       "d": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking."
     },
     "difficulty": "easy",
-    "sourceNote": "Minimal preview bank — BACnet Protocol and Networking (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-bacnet-networking-011",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "bacnet-networking",
+    "prompt": "BACnet/IP commonly rides on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "UDP/IP networks"
+      },
+      {
+        "id": "b",
+        "text": "Only RS-232 to printers"
+      },
+      {
+        "id": "c",
+        "text": "Only Bluetooth audio"
+      },
+      {
+        "id": "d",
+        "text": "Only cellular SMS"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "UDP/IP networks",
+    "distractorExplanations": {
+      "b": "Not the best answer: Only RS-232 to printers",
+      "c": "Not the best answer: Only Bluetooth audio",
+      "d": "Not the best answer: Only cellular SMS"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-bacnet-networking-012",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "bacnet-networking",
+    "prompt": "A BACnet device instance should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unique on the internetwork"
+      },
+      {
+        "id": "b",
+        "text": "Duplicated for redundancy always"
+      },
+      {
+        "id": "c",
+        "text": "Always 0"
+      },
+      {
+        "id": "d",
+        "text": "Random each reboot without plan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Unique on the internetwork",
+    "distractorExplanations": {
+      "b": "Not the best answer: Duplicated for redundancy always",
+      "c": "Not the best answer: Always 0",
+      "d": "Not the best answer: Random each reboot without plan"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-bacnet-networking-013",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "bacnet-networking",
+    "prompt": "BBMD functionality relates to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chiller refrigerant charge"
+      },
+      {
+        "id": "b",
+        "text": "Lighting color temperature only"
+      },
+      {
+        "id": "c",
+        "text": "Badge access encryption only"
+      },
+      {
+        "id": "d",
+        "text": "Broadcast management across IP subnets"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Broadcast management across IP subnets",
+    "distractorExplanations": {
+      "a": "Not the best answer: Chiller refrigerant charge",
+      "b": "Not the best answer: Lighting color temperature only",
+      "c": "Not the best answer: Badge access encryption only"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-bacnet-networking-014",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "bacnet-networking",
+    "prompt": "MS/TP is typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A twisted-pair RS-485 style LAN for BACnet"
+      },
+      {
+        "id": "b",
+        "text": "A cloud SaaS only"
+      },
+      {
+        "id": "c",
+        "text": "A refrigerant pipe"
+      },
+      {
+        "id": "d",
+        "text": "A fire panel fiber only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A twisted-pair RS-485 style LAN for BACnet",
+    "distractorExplanations": {
+      "b": "Not the best answer: A cloud SaaS only",
+      "c": "Not the best answer: A refrigerant pipe",
+      "d": "Not the best answer: A fire panel fiber only"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-bacnet-networking-015",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "bacnet-networking",
+    "prompt": "COV subscriptions reduce:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The need for trends forever"
+      },
+      {
+        "id": "b",
+        "text": "Electrical codes"
+      },
+      {
+        "id": "c",
+        "text": "Damper sizing"
+      },
+      {
+        "id": "d",
+        "text": "Polling traffic by eventing changes"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Polling traffic by eventing changes",
+    "distractorExplanations": {
+      "a": "Not the best answer: The need for trends forever",
+      "b": "Not the best answer: Electrical codes",
+      "c": "Not the best answer: Damper sizing"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-hvac-control-001",
@@ -360,7 +525,7 @@
       "d": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
     },
     "difficulty": "easy",
-    "sourceNote": "Minimal preview bank — HVAC Control Sequences and Plant Logic (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-hvac-control-002",
@@ -393,7 +558,7 @@
       "d": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
     },
     "difficulty": "medium",
-    "sourceNote": "Minimal preview bank — HVAC Control Sequences and Plant Logic (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-hvac-control-003",
@@ -426,7 +591,7 @@
       "d": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
     },
     "difficulty": "hard",
-    "sourceNote": "Minimal preview bank — HVAC Control Sequences and Plant Logic (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-hvac-control-004",
@@ -459,7 +624,7 @@
       "c": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
     },
     "difficulty": "easy",
-    "sourceNote": "Minimal preview bank — HVAC Control Sequences and Plant Logic (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-hvac-control-005",
@@ -492,7 +657,7 @@
       "d": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
     },
     "difficulty": "medium",
-    "sourceNote": "Minimal preview bank — HVAC Control Sequences and Plant Logic (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-hvac-control-006",
@@ -525,7 +690,7 @@
       "d": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
     },
     "difficulty": "hard",
-    "sourceNote": "Minimal preview bank — HVAC Control Sequences and Plant Logic (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-hvac-control-007",
@@ -558,7 +723,7 @@
       "d": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
     },
     "difficulty": "easy",
-    "sourceNote": "Minimal preview bank — HVAC Control Sequences and Plant Logic (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-hvac-control-008",
@@ -591,7 +756,7 @@
       "c": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
     },
     "difficulty": "medium",
-    "sourceNote": "Minimal preview bank — HVAC Control Sequences and Plant Logic (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-hvac-control-009",
@@ -624,7 +789,7 @@
       "d": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
     },
     "difficulty": "hard",
-    "sourceNote": "Minimal preview bank — HVAC Control Sequences and Plant Logic (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-hvac-control-010",
@@ -657,7 +822,172 @@
       "d": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
     },
     "difficulty": "easy",
-    "sourceNote": "Minimal preview bank — HVAC Control Sequences and Plant Logic (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-hvac-control-011",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "hvac-control",
+    "prompt": "A PID loop’s integral term addresses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only proportional kick"
+      },
+      {
+        "id": "b",
+        "text": "Only derivative noise"
+      },
+      {
+        "id": "c",
+        "text": "Only schedule holidays"
+      },
+      {
+        "id": "d",
+        "text": "Steady-state error over time"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Steady-state error over time",
+    "distractorExplanations": {
+      "a": "Not the best answer: Only proportional kick",
+      "b": "Not the best answer: Only derivative noise",
+      "c": "Not the best answer: Only schedule holidays"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-hvac-control-012",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "hvac-control",
+    "prompt": "Supply air temperature reset often aims to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maximize reheat always"
+      },
+      {
+        "id": "b",
+        "text": "Disable economizers forever"
+      },
+      {
+        "id": "c",
+        "text": "Ignore zone temps"
+      },
+      {
+        "id": "d",
+        "text": "Reduce energy while meeting loads"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Reduce energy while meeting loads",
+    "distractorExplanations": {
+      "a": "Not the best answer: Maximize reheat always",
+      "b": "Not the best answer: Disable economizers forever",
+      "c": "Not the best answer: Ignore zone temps"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-hvac-control-013",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "hvac-control",
+    "prompt": "Static pressure reset can:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increase duct leaks helpfully"
+      },
+      {
+        "id": "b",
+        "text": "Replace filters"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate VFDs"
+      },
+      {
+        "id": "d",
+        "text": "Lower fan energy when demand allows"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Lower fan energy when demand allows",
+    "distractorExplanations": {
+      "a": "Not the best answer: Increase duct leaks helpfully",
+      "b": "Not the best answer: Replace filters",
+      "c": "Not the best answer: Eliminate VFDs"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-hvac-control-014",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "hvac-control",
+    "prompt": "Economizer lockout based on OA conditions prevents:",
+    "options": [
+      {
+        "id": "a",
+        "text": "All ventilation forever"
+      },
+      {
+        "id": "b",
+        "text": "Bringing in air that cannot cool economically"
+      },
+      {
+        "id": "c",
+        "text": "Humidity sensors"
+      },
+      {
+        "id": "d",
+        "text": "CO2 control"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Bringing in air that cannot cool economically",
+    "distractorExplanations": {
+      "a": "Not the best answer: All ventilation forever",
+      "c": "Not the best answer: Humidity sensors",
+      "d": "Not the best answer: CO2 control"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-hvac-control-015",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "hvac-control",
+    "prompt": "Valve hunting often indicates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perfect control"
+      },
+      {
+        "id": "b",
+        "text": "Need for more setpoints randomly"
+      },
+      {
+        "id": "c",
+        "text": "Disabled trends"
+      },
+      {
+        "id": "d",
+        "text": "Poor tuning, oversized valves, or sensor issues"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Poor tuning, oversized valves, or sensor issues",
+    "distractorExplanations": {
+      "a": "Not the best answer: Perfect control",
+      "b": "Not the best answer: Need for more setpoints randomly",
+      "c": "Not the best answer: Disabled trends"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-platform-ops-001",
@@ -690,7 +1020,7 @@
       "d": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
     },
     "difficulty": "easy",
-    "sourceNote": "Minimal preview bank — Alarms, Trends, Schedules, and Operator Workflows (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-platform-ops-002",
@@ -723,7 +1053,7 @@
       "d": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
     },
     "difficulty": "medium",
-    "sourceNote": "Minimal preview bank — Alarms, Trends, Schedules, and Operator Workflows (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-platform-ops-003",
@@ -756,7 +1086,7 @@
       "d": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
     },
     "difficulty": "hard",
-    "sourceNote": "Minimal preview bank — Alarms, Trends, Schedules, and Operator Workflows (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-platform-ops-004",
@@ -789,7 +1119,7 @@
       "c": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
     },
     "difficulty": "easy",
-    "sourceNote": "Minimal preview bank — Alarms, Trends, Schedules, and Operator Workflows (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-platform-ops-005",
@@ -822,7 +1152,7 @@
       "d": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
     },
     "difficulty": "medium",
-    "sourceNote": "Minimal preview bank — Alarms, Trends, Schedules, and Operator Workflows (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-platform-ops-006",
@@ -855,7 +1185,7 @@
       "d": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
     },
     "difficulty": "hard",
-    "sourceNote": "Minimal preview bank — Alarms, Trends, Schedules, and Operator Workflows (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-platform-ops-007",
@@ -888,7 +1218,7 @@
       "d": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
     },
     "difficulty": "easy",
-    "sourceNote": "Minimal preview bank — Alarms, Trends, Schedules, and Operator Workflows (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-platform-ops-008",
@@ -921,7 +1251,7 @@
       "c": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
     },
     "difficulty": "medium",
-    "sourceNote": "Minimal preview bank — Alarms, Trends, Schedules, and Operator Workflows (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-platform-ops-009",
@@ -954,7 +1284,7 @@
       "d": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
     },
     "difficulty": "hard",
-    "sourceNote": "Minimal preview bank — Alarms, Trends, Schedules, and Operator Workflows (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-platform-ops-010",
@@ -987,7 +1317,172 @@
       "d": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
     },
     "difficulty": "easy",
-    "sourceNote": "Minimal preview bank — Alarms, Trends, Schedules, and Operator Workflows (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-platform-ops-011",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "platform-ops",
+    "prompt": "Alarm priority/suppressions should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "All equal and constant paging"
+      },
+      {
+        "id": "b",
+        "text": "Disabled at night always"
+      },
+      {
+        "id": "c",
+        "text": "Engineered so operators see actionable faults"
+      },
+      {
+        "id": "d",
+        "text": "Hidden from trends"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Engineered so operators see actionable faults",
+    "distractorExplanations": {
+      "a": "Not the best answer: All equal and constant paging",
+      "b": "Not the best answer: Disabled at night always",
+      "d": "Not the best answer: Hidden from trends"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-platform-ops-012",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "platform-ops",
+    "prompt": "Trend sample rates must balance:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Resolution versus storage/network load"
+      },
+      {
+        "id": "b",
+        "text": "Maximum forever on every point"
+      },
+      {
+        "id": "c",
+        "text": "No history"
+      },
+      {
+        "id": "d",
+        "text": "Only manual clipboard"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Resolution versus storage/network load",
+    "distractorExplanations": {
+      "b": "Not the best answer: Maximum forever on every point",
+      "c": "Not the best answer: No history",
+      "d": "Not the best answer: Only manual clipboard"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-platform-ops-013",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "platform-ops",
+    "prompt": "Schedules should include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only one forever-on command"
+      },
+      {
+        "id": "b",
+        "text": "Occupied/unoccupied and holiday exceptions"
+      },
+      {
+        "id": "c",
+        "text": "No optimal start"
+      },
+      {
+        "id": "d",
+        "text": "Random overrides without audit"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Occupied/unoccupied and holiday exceptions",
+    "distractorExplanations": {
+      "a": "Not the best answer: Only one forever-on command",
+      "c": "Not the best answer: No optimal start",
+      "d": "Not the best answer: Random overrides without audit"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-platform-ops-014",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "platform-ops",
+    "prompt": "Operator overrides need:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Permanent anonymous force"
+      },
+      {
+        "id": "b",
+        "text": "Time limits and audit trails"
+      },
+      {
+        "id": "c",
+        "text": "No documentation"
+      },
+      {
+        "id": "d",
+        "text": "Shared generic logins only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Time limits and audit trails",
+    "distractorExplanations": {
+      "a": "Not the best answer: Permanent anonymous force",
+      "c": "Not the best answer: No documentation",
+      "d": "Not the best answer: Shared generic logins only"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-platform-ops-015",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "platform-ops",
+    "prompt": "Graphics should show:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only logos"
+      },
+      {
+        "id": "b",
+        "text": "Only static PDFs"
+      },
+      {
+        "id": "c",
+        "text": "Only alarms without values"
+      },
+      {
+        "id": "d",
+        "text": "Current values, setpoints, and modes clearly"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Current values, setpoints, and modes clearly",
+    "distractorExplanations": {
+      "a": "Not the best answer: Only logos",
+      "b": "Not the best answer: Only static PDFs",
+      "c": "Not the best answer: Only alarms without values"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-integration-commissioning-001",
@@ -1020,7 +1515,7 @@
       "d": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
     },
     "difficulty": "easy",
-    "sourceNote": "Minimal preview bank — Integration, Commissioning, and Troubleshooting (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-integration-commissioning-002",
@@ -1053,7 +1548,7 @@
       "d": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
     },
     "difficulty": "medium",
-    "sourceNote": "Minimal preview bank — Integration, Commissioning, and Troubleshooting (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-integration-commissioning-003",
@@ -1086,7 +1581,7 @@
       "d": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
     },
     "difficulty": "hard",
-    "sourceNote": "Minimal preview bank — Integration, Commissioning, and Troubleshooting (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-integration-commissioning-004",
@@ -1119,7 +1614,7 @@
       "c": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
     },
     "difficulty": "easy",
-    "sourceNote": "Minimal preview bank — Integration, Commissioning, and Troubleshooting (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-integration-commissioning-005",
@@ -1152,7 +1647,7 @@
       "d": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
     },
     "difficulty": "medium",
-    "sourceNote": "Minimal preview bank — Integration, Commissioning, and Troubleshooting (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-integration-commissioning-006",
@@ -1185,7 +1680,7 @@
       "d": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
     },
     "difficulty": "hard",
-    "sourceNote": "Minimal preview bank — Integration, Commissioning, and Troubleshooting (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-integration-commissioning-007",
@@ -1218,7 +1713,7 @@
       "d": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
     },
     "difficulty": "easy",
-    "sourceNote": "Minimal preview bank — Integration, Commissioning, and Troubleshooting (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-integration-commissioning-008",
@@ -1251,7 +1746,7 @@
       "c": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
     },
     "difficulty": "medium",
-    "sourceNote": "Minimal preview bank — Integration, Commissioning, and Troubleshooting (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-integration-commissioning-009",
@@ -1284,7 +1779,7 @@
       "d": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
     },
     "difficulty": "hard",
-    "sourceNote": "Minimal preview bank — Integration, Commissioning, and Troubleshooting (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
     "id": "bms-bas-readiness-check-integration-commissioning-010",
@@ -1317,6 +1812,171 @@
       "d": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
     },
     "difficulty": "easy",
-    "sourceNote": "Minimal preview bank — Integration, Commissioning, and Troubleshooting (10 questions per topic seed)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-integration-commissioning-011",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "integration-commissioning",
+    "prompt": "Point-to-point checkout verifies:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only graphics colors"
+      },
+      {
+        "id": "b",
+        "text": "Sensor/actuator wiring and direction before sequences"
+      },
+      {
+        "id": "c",
+        "text": "Only IP addresses"
+      },
+      {
+        "id": "d",
+        "text": "Only passwords"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Sensor/actuator wiring and direction before sequences",
+    "distractorExplanations": {
+      "a": "Not the best answer: Only graphics colors",
+      "c": "Not the best answer: Only IP addresses",
+      "d": "Not the best answer: Only passwords"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-integration-commissioning-012",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "integration-commissioning",
+    "prompt": "Sequence of operations testing confirms:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only that the unit powers on"
+      },
+      {
+        "id": "b",
+        "text": "Only BACnet vendor name"
+      },
+      {
+        "id": "c",
+        "text": "Only trend file size"
+      },
+      {
+        "id": "d",
+        "text": "Control logic matches the written SOO"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Control logic matches the written SOO",
+    "distractorExplanations": {
+      "a": "Not the best answer: Only that the unit powers on",
+      "b": "Not the best answer: Only BACnet vendor name",
+      "c": "Not the best answer: Only trend file size"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-integration-commissioning-013",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "integration-commissioning",
+    "prompt": "Integration of meters often uses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guessed kWh"
+      },
+      {
+        "id": "b",
+        "text": "Protocol gateways/mapping with scaled units"
+      },
+      {
+        "id": "c",
+        "text": "Hardcoded fake pulses"
+      },
+      {
+        "id": "d",
+        "text": "No verification"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Protocol gateways/mapping with scaled units",
+    "distractorExplanations": {
+      "a": "Not the best answer: Guessed kWh",
+      "c": "Not the best answer: Hardcoded fake pulses",
+      "d": "Not the best answer: No verification"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-integration-commissioning-014",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "integration-commissioning",
+    "prompt": "When a VAV box ignores commands, check:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Addressing, binding, power, and actuator status"
+      },
+      {
+        "id": "b",
+        "text": "Only the chiller refrigerant"
+      },
+      {
+        "id": "c",
+        "text": "Only the boiler stack"
+      },
+      {
+        "id": "d",
+        "text": "Only lighting scenes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Addressing, binding, power, and actuator status",
+    "distractorExplanations": {
+      "b": "Not the best answer: Only the chiller refrigerant",
+      "c": "Not the best answer: Only the boiler stack",
+      "d": "Not the best answer: Only lighting scenes"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
+  },
+  {
+    "id": "bms-bas-readiness-check-integration-commissioning-015",
+    "examSlug": "bms-bas-readiness-check",
+    "topicId": "integration-commissioning",
+    "prompt": "Commissioning issues should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Logged, assigned, and closed with evidence"
+      },
+      {
+        "id": "b",
+        "text": "Forgotten after demo day"
+      },
+      {
+        "id": "c",
+        "text": "Hidden from owners"
+      },
+      {
+        "id": "d",
+        "text": "Reset by reboot only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Logged, assigned, and closed with evidence",
+    "distractorExplanations": {
+      "b": "Not the best answer: Forgotten after demo day",
+      "c": "Not the best answer: Hidden from owners",
+      "d": "Not the best answer: Reset by reboot only"
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   }
 ]

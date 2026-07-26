@@ -317,7 +317,7 @@ describe("LLM documents", () => {
     expect(bundle).toContain("Primary market: United States");
     expect(bundle).toContain("free timed online mocks and readiness checks");
     expect(bundle).toContain("## Flashcard decks & PDFs");
-    expect(bundle).toContain("## Finance mock exams");
+    expect(bundle).toContain("## Mock exams (all verticals)");
     expect(bundle).toContain("## Intent answer pages");
     expect(bundle).toContain("## Site FAQs");
     expect(bundle).toContain("Checkout provider:");

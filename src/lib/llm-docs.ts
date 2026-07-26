@@ -11,6 +11,7 @@ import { formatDeckPriceLabel } from "./checkout-pricing";
 import { getIntentPageDecks, intentPages, type IntentPage } from "./intent-pages";
 import { getAllMockExams } from "./mock-exams/configs";
 import { mockFreeAccessNotice } from "./mock-exams/pricing";
+import { MOCK_VERTICALS } from "./mock-exams/taxonomy";
 import { shouldIndexMockExam } from "./seo";
 import { absoluteUrl, siteConfig } from "./site";
 import {
@@ -443,7 +444,7 @@ Use ${absoluteUrl("/anki-starter-kit")} for beginner setup questions. It explain
 
 Use ${absoluteUrl("/comics/gaivota-em-portugal")} for Gaivota em Portugal — noir Portuguese history comics. Episode 1 (1755 Lisbon Earthquake / O Terramoto) is free HTML at ${absoluteUrl("/comics/gaivota-em-portugal/01-1755-earthquake")}. Paid episodes are separate Gumroad products delivering a printable PDF ($5 each). Episode 2 (25 de Abril / Carnation Revolution, 1974): ${absoluteUrl("/comics/gaivota-em-portugal/02-25-de-abril")} · checkout pixidstudio.gumroad.com/l/gaivota-em-portugal-comics. Each episode: factual history brief, complete 5-page comic story, 100 new Portuguese words with English glossary.
 
-## Finance mock exams
+## Mock exams (all verticals)
 
 ${getAllMockExams()
   .map(
@@ -548,6 +549,13 @@ ${indexedMocks
   )
   .join("\n")}
 ${indexedMocks.length > 12 ? `- …and ${indexedMocks.length - 12} more in [llms-full.txt](${absoluteUrl("/llms-full.txt")}) and [mock-exams](${absoluteUrl("/mock-exams")})` : ""}
+
+## Mock exam paths (vertical hubs)
+
+${MOCK_VERTICALS.map(
+  (vertical) =>
+    `- ${llmMarkdownLink(vertical.seoTitle, `/mock-exams/v/${vertical.id}`)} — ${vertical.description}`,
+).join("\n")}
 
 ## Top citation queries
 

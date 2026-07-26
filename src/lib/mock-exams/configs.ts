@@ -828,7 +828,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     status: "live",
     accessMode: "free_demand_test",
     durationMinutes: 75,
-    questionCount: 40,
+    questionCount: 60,
     passRule: {
       type: "readiness_check",
       passPercent: 70,
@@ -843,28 +843,28 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       {
         id: "bacnet-networking",
         label: "BACnet Protocol and Networking",
-        questionCount: 10,
+        questionCount: 15,
         weightPercent: 25,
         targetPercent: 70,
       },
       {
         id: "hvac-control",
         label: "HVAC Control Sequences and Plant Logic",
-        questionCount: 10,
+        questionCount: 15,
         weightPercent: 25,
         targetPercent: 70,
       },
       {
         id: "platform-ops",
         label: "Alarms, Trends, Schedules, and Operator Workflows",
-        questionCount: 10,
+        questionCount: 15,
         weightPercent: 25,
         targetPercent: 70,
       },
       {
         id: "integration-commissioning",
         label: "Integration, Commissioning, and Troubleshooting",
-        questionCount: 10,
+        questionCount: 15,
         weightPercent: 25,
         targetPercent: 70,
       },
@@ -873,11 +873,11 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Readiness check sampled across common BMS/BAS domains (BACnet, HVAC sequences, platform operations, commissioning). Not a Tridium Niagara TCP or manufacturer certification exam.",
     disclaimer: bmsDisclaimer,
     description:
-      "A 40-question building automation readiness diagnostic for BMS technicians across BACnet, HVAC control logic, operator workflows, and commissioning. Question bank loading — independent prep, not vendor certification material.",
+      "A 60-question building automation readiness diagnostic for BMS technicians across BACnet, HVAC control logic, operator workflows, and commissioning. Independent prep — not vendor certification material.",
     examBody: "Building automation industry (BACnet / BAS)",
-    lastUpdated: "2026-06-02",
+    lastUpdated: "2026-07-26",
     questionSourceNote:
-      "Original UniPrep2Go questions (200-item bank, 50 per domain) authored via OpenRouter with Gemini cross-validation; each session samples 10 per domain.",
+      "Original UniPrep2Go local bank (Wave 3 quality): 60 questions, 15 per BMS/BAS domain — BACnet networking, HVAC sequences, platform operations, and commissioning.",
   },
   {
     slug: "leed-green-associate-readiness-check",

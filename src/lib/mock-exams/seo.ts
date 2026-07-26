@@ -364,9 +364,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "EPA 608 practice test",
   },
   "bms-bas-readiness-check": {
-    title: "Free BMS Practice Test | 40-Question BAS Mock",
+    title: "Free BMS Practice Test | 60-Question BAS Mock",
     description:
-      "Free BMS / BAS practice questions online: 40 timed questions across BACnet, HVAC sequences, alarms and trends, and commissioning, 75 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent building automation prep — not Tridium or BACnet International exam material.",
+      "Free BMS / BAS practice questions online: 60 timed questions across BACnet, HVAC sequences, alarms and trends, and commissioning, 75 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent building automation prep — not Tridium or BACnet International exam material.",
     keywords: [
       "bms practice test",
       "building automation practice exam",

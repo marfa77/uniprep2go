@@ -23,7 +23,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to Arizona Department of Real Estate themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Arizona Real Estate readiness check with topic scoring.",
     examBody: "Arizona Department of Real Estate",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["Arizona real estate", "AZ RE"],
   }),
   nicheReadinessConfig({
@@ -42,7 +42,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to Georgia Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Georgia Real Estate readiness check with topic scoring.",
     examBody: "Georgia Real Estate Commission",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["Georgia real estate", "GA RE"],
   }),
   nicheReadinessConfig({
@@ -61,7 +61,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to IDFPR themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Illinois Real Estate readiness check with topic scoring.",
     examBody: "IDFPR",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["Illinois real estate", "IL RE"],
   }),
   nicheReadinessConfig({
@@ -80,7 +80,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to Ohio Division of Real Estate themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Ohio Real Estate readiness check with topic scoring.",
     examBody: "Ohio Division of Real Estate",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["Ohio real estate", "OH RE"],
   }),
   nicheReadinessConfig({
@@ -99,7 +99,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to Pennsylvania Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Pennsylvania Real Estate readiness check with topic scoring.",
     examBody: "Pennsylvania Real Estate Commission",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["Pennsylvania real estate", "PA RE"],
   }),
   nicheReadinessConfig({
@@ -118,7 +118,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to NCREC themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question North Carolina Real Estate readiness check with topic scoring.",
     examBody: "NCREC",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["North Carolina real estate", "NC RE"],
   }),
   nicheReadinessConfig({
@@ -137,7 +137,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to Virginia DPOR themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Virginia Real Estate readiness check with topic scoring.",
     examBody: "Virginia DPOR",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["Virginia real estate", "VA RE"],
   }),
   nicheReadinessConfig({
@@ -156,7 +156,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to Washington DOL themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Washington Real Estate readiness check with topic scoring.",
     examBody: "Washington DOL",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["Washington real estate", "WA RE"],
   }),
   nicheReadinessConfig({
@@ -175,7 +175,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to Colorado Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Colorado Real Estate readiness check with topic scoring.",
     examBody: "Colorado Real Estate Commission",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["Colorado real estate", "CO RE"],
   }),
   nicheReadinessConfig({
@@ -194,7 +194,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to New Jersey Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question New Jersey Real Estate readiness check with topic scoring.",
     examBody: "New Jersey Real Estate Commission",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["New Jersey real estate", "NJ RE"],
   }),
   nicheReadinessConfig({
@@ -213,7 +213,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to Massachusetts Board of Registration themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Massachusetts Real Estate readiness check with topic scoring.",
     examBody: "Massachusetts Board of Registration",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["Massachusetts real estate", "MA RE"],
   }),
   nicheReadinessConfig({
@@ -232,7 +232,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to Michigan LARA themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Michigan Real Estate readiness check with topic scoring.",
     examBody: "Michigan LARA",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["Michigan real estate", "MI RE"],
   }),
   nicheReadinessConfig({
@@ -251,7 +251,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to State DMV / FMCSA themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question CDL Air Brakes readiness check with topic scoring.",
     examBody: "State DMV / FMCSA",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["CDL air brakes", "air brake endorsement"],
   }),
   nicheReadinessConfig({
@@ -270,7 +270,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to State DMV / FMCSA themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question CDL Combination Vehicles readiness check with topic scoring.",
     examBody: "State DMV / FMCSA",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["CDL combination", "Class A combination"],
   }),
   nicheReadinessConfig({
@@ -289,7 +289,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to State DMV / FMCSA themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question CDL Doubles/Triples readiness check with topic scoring.",
     examBody: "State DMV / FMCSA",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["CDL doubles", "triples endorsement", "T endorsement"],
   }),
   nicheReadinessConfig({
@@ -308,7 +308,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to State DMV / FMCSA themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question CDL Tank Vehicles readiness check with topic scoring.",
     examBody: "State DMV / FMCSA",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["CDL tanker", "N endorsement", "tank vehicles"],
   }),
   nicheReadinessConfig({
@@ -346,7 +346,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to State nurse aide / medication aide boards themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Medication Aide readiness check with topic scoring.",
     examBody: "State nurse aide / medication aide boards",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["medication aide", "CMA med aide"],
   }),
   nicheReadinessConfig({
@@ -365,7 +365,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to State / federal HHA training standards themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Home Health Aide readiness check with topic scoring.",
     examBody: "State / federal HHA training standards",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["home health aide", "HHA exam"],
   }),
   nicheReadinessConfig({
@@ -384,7 +384,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to BACB themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question RBT readiness check with topic scoring.",
     examBody: "BACB",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["RBT", "registered behavior technician"],
   }),
   nicheReadinessConfig({
@@ -403,7 +403,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to American Medical Technologists themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question AMT RMA readiness check with topic scoring.",
     examBody: "American Medical Technologists",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["RMA", "AMT RMA", "registered medical assistant"],
   }),
   nicheReadinessConfig({
@@ -422,7 +422,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to ASCP Board of Certification themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question ASCP MLT readiness check with topic scoring.",
     examBody: "ASCP Board of Certification",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["MLT", "ASCP MLT", "medical lab technician"],
   }),
   nicheReadinessConfig({
@@ -441,7 +441,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to AHIMA / inpatient coding themes themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question AAPC / AHIMA CCS-style Coding readiness check with topic scoring.",
     examBody: "AHIMA / inpatient coding themes",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["CCS", "inpatient coding", "AHIMA CCS"],
   }),
   nicheReadinessConfig({
@@ -460,7 +460,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to Employer / ACMSS-style scribe competencies themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Medical Scribe readiness check with topic scoring.",
     examBody: "Employer / ACMSS-style scribe competencies",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["medical scribe", "scribe certification"],
   }),
   nicheReadinessConfig({
@@ -479,7 +479,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to NREMT themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question NREMT AEMT readiness check with topic scoring.",
     examBody: "NREMT",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["AEMT", "NREMT AEMT", "advanced EMT"],
   }),
   nicheReadinessConfig({
@@ -498,7 +498,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to Employer / state PT aide rules themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Physical Therapy Aide readiness check with topic scoring.",
     examBody: "Employer / state PT aide rules",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["PT aide", "physical therapy aide"],
   }),
   nicheReadinessConfig({
@@ -517,7 +517,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to ASPT themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question ASPT Phlebotomy readiness check with topic scoring.",
     examBody: "ASPT",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["ASPT", "phlebotomy technician"],
   }),
   nicheReadinessConfig({
@@ -536,7 +536,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to American Board of Opticianry themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question ABO Optician readiness check with topic scoring.",
     examBody: "American Board of Opticianry",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["ABO", "optician exam", "ABO-NCLE"],
   }),
   nicheReadinessConfig({
@@ -555,7 +555,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to ACSM themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question ACSM CPT readiness check with topic scoring.",
     examBody: "ACSM",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["ACSM CPT", "ACSM personal trainer"],
   }),
   nicheReadinessConfig({
@@ -574,7 +574,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to NSCA themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question NSCA-CPT readiness check with topic scoring.",
     examBody: "NSCA",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["NSCA-CPT", "NSCA personal trainer"],
   }),
   nicheReadinessConfig({
@@ -593,7 +593,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to Precision Nutrition themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Precision Nutrition L1 readiness check with topic scoring.",
     examBody: "Precision Nutrition",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["Precision Nutrition", "PN Level 1"],
   }),
   nicheReadinessConfig({
@@ -612,7 +612,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to NSCA themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question NSCA CSCS readiness check with topic scoring.",
     examBody: "NSCA",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["CSCS", "NSCA CSCS", "strength coach"],
   }),
   nicheReadinessConfig({
@@ -631,7 +631,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to State cosmetology boards themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Nail Technician readiness check with topic scoring.",
     examBody: "State cosmetology boards",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["nail tech exam", "manicurist license"],
   }),
   nicheReadinessConfig({
@@ -650,7 +650,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to State barber boards themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Barber readiness check with topic scoring.",
     examBody: "State barber boards",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["barber exam", "barber license"],
   }),
   nicheReadinessConfig({
@@ -669,7 +669,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to ASWB themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question ASWB Bachelors readiness check with topic scoring.",
     examBody: "ASWB",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["ASWB Bachelors", "LSW exam"],
   }),
   nicheReadinessConfig({
@@ -688,7 +688,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to ASWB themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question ASWB Clinical readiness check with topic scoring.",
     examBody: "ASWB",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["ASWB Clinical", "LCSW exam"],
   }),
   nicheReadinessConfig({
@@ -707,7 +707,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to SHRM themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question SHRM-CP readiness check with topic scoring.",
     examBody: "SHRM",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["SHRM-CP", "SHRM certified professional"],
   }),
   nicheReadinessConfig({
@@ -726,7 +726,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to HRCI themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question PHR readiness check with topic scoring.",
     examBody: "HRCI",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["PHR", "HRCI PHR"],
   }),
   nicheReadinessConfig({
@@ -745,7 +745,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to PMI themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question CAPM readiness check with topic scoring.",
     examBody: "PMI",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["CAPM", "PMI CAPM"],
   }),
   nicheReadinessConfig({
@@ -764,7 +764,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to ASQ / IASSC-style bodies themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Six Sigma Green Belt readiness check with topic scoring.",
     examBody: "ASQ / IASSC-style bodies",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["Six Sigma Green Belt", "CSSGB"],
   }),
   nicheReadinessConfig({
@@ -821,7 +821,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to NASAA / FINRA delivery themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Series 66 readiness check with topic scoring.",
     examBody: "NASAA / FINRA delivery",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["Series 66", "65+63 combo"],
   }),
   nicheReadinessConfig({
@@ -840,7 +840,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to FINRA themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Series 6 readiness check with topic scoring.",
     examBody: "FINRA",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["Series 6", "investment company products"],
   }),
   nicheReadinessConfig({
@@ -859,7 +859,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to ETS themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Praxis Core readiness check with topic scoring.",
     examBody: "ETS",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["Praxis Core", "Praxis I"],
   }),
   nicheReadinessConfig({
@@ -878,7 +878,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to ETS themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question ParaPro readiness check with topic scoring.",
     examBody: "ETS",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["ParaPro", "paraprofessional exam"],
   }),
   nicheReadinessConfig({
@@ -897,7 +897,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to State security licensing boards themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Unarmed Security Officer readiness check with topic scoring.",
     examBody: "State security licensing boards",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["security officer exam", "unarmed guard card"],
   }),
   nicheReadinessConfig({
@@ -916,7 +916,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to State alcohol server / TIPS-style programs themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Alcohol Server readiness check with topic scoring.",
     examBody: "State alcohol server / TIPS-style programs",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["alcohol server", "TIPS", "Responsible Beverage"],
   }),
   nicheReadinessConfig({
@@ -935,7 +935,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to State notary commissioning offices themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Notary Public readiness check with topic scoring.",
     examBody: "State notary commissioning offices",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["notary exam", "notary public"],
   }),
   nicheReadinessConfig({
@@ -954,7 +954,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to OSHA powered industrial trucks themes themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Forklift Operator readiness check with topic scoring.",
     examBody: "OSHA powered industrial trucks themes",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["forklift certification", "PIT operator"],
   }),
   nicheReadinessConfig({
@@ -973,7 +973,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to OSHA Outreach / general industry themes themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question OSHA 10 General Industry readiness check with topic scoring.",
     examBody: "OSHA Outreach / general industry themes",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["OSHA 10", "OSHA 10 general industry"],
   }),
   nicheReadinessConfig({
@@ -992,7 +992,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to NATE themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question NATE Core readiness check with topic scoring.",
     examBody: "NATE",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["NATE Core", "HVAC NATE"],
   }),
   nicheReadinessConfig({
@@ -1011,7 +1011,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to National Restaurant Association themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question ServSafe Food Handler readiness check with topic scoring.",
     examBody: "National Restaurant Association",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["ServSafe Food Handler", "food handler card"],
   }),
   nicheReadinessConfig({
@@ -1030,7 +1030,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to AHA / Red Cross-style first aid themes themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question First Aid / CPR Cognitive readiness check with topic scoring.",
     examBody: "AHA / Red Cross-style first aid themes",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["first aid practice test", "CPR first aid"],
   }),
   nicheReadinessConfig({
@@ -1068,7 +1068,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to State wastewater operator boards themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Wastewater Operator Level 1 readiness check with topic scoring.",
     examBody: "State wastewater operator boards",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["wastewater operator", "WW operator exam"],
   }),
   nicheReadinessConfig({
@@ -1087,7 +1087,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to AQB / state appraiser boards themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Real Estate Appraiser readiness check with topic scoring.",
     examBody: "AQB / state appraiser boards",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["appraiser exam", "AQB national"],
   }),
   nicheReadinessConfig({
@@ -1106,7 +1106,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to The Conference (NBE) themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Funeral Service Arts readiness check with topic scoring.",
     examBody: "The Conference (NBE)",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["NBE Arts", "funeral director exam"],
   }),
   nicheReadinessConfig({
@@ -1125,7 +1125,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to NABCEP themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question NABCEP Associate readiness check with topic scoring.",
     examBody: "NABCEP",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["NABCEP Associate", "PV Associate"],
   }),
   nicheReadinessConfig({
@@ -1144,7 +1144,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to NAVTA / employer VA competencies themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Veterinary Assistant readiness check with topic scoring.",
     examBody: "NAVTA / employer VA competencies",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["veterinary assistant", "AVA"],
   }),
 ];
