@@ -113,7 +113,7 @@ SPECS: dict[str, dict[str, Any]] = {
     },
     "dutch-a2-inburgering-anki-deck": {
         "label": "Dutch Inburgering NT2 A2",
-        "headline": "Dutch Inburgering NT2 A2 Anki Deck — 1500 Flashcards",
+        "headline": "Dutch Inburgering NT2 A2 Anki Deck — 2000 Flashcards",
         "exam": "Inburgering · Staatsexamen NT2 A2 · residency & naturalisatie",
         "hook": (
             "Dutch A2 vocabulary for civic integration (Inburgering), Staatsexamen NT2 A2, "
@@ -132,7 +132,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "Inburgering · Staatsexamen NT2 A2 · residency · naturalisatie",
         "deck_covers": (
-            "1,500 high-frequency Dutch words with English glosses, bilingual examples, "
+            "2,000 high-frequency Dutch words with English glosses, bilingual examples, "
             "native audio, and illustrations."
         ),
         "not_included": (
@@ -143,12 +143,12 @@ SPECS: dict[str, dict[str, Any]] = {
             "Integration exams reward automatic everyday vocabulary. Spaced Anki keeps "
             "housing, work, services, and daily-life words retrievable."
         ),
-        "cards": "1500",
+        "cards": "2000",
         "format_note": "Anki .apkg with audio and images",
         "sample_captions": ["zijn", "ik", "jij"],
         "facts": [
             ("Pathways", "Inburgering · NT2 A2"),
-            ("Cards", "1500 vocabulary"),
+            ("Cards", "2000 vocabulary"),
             ("Media", "Audio + images"),
             ("Delivery", "Instant .apkg"),
         ],
@@ -200,7 +200,7 @@ SPECS: dict[str, dict[str, Any]] = {
     },
     "celi-b1-italian-anki-deck": {
         "label": "CELI CILS PLIDA Italian",
-        "headline": "CELI CILS PLIDA Italian Anki Deck — 1,373 Flashcards",
+        "headline": "CELI CILS PLIDA Italian Anki Deck — 1500 Flashcards",
         "exam": "CELI · CILS · PLIDA · permesso / cittadinanza language",
         "hook": (
             "Italian B1 vocabulary for CELI (Perugia), CILS (Siena), and PLIDA "
@@ -220,7 +220,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "CELI B1 · CILS B1 · PLIDA B1 · permesso · cittadinanza language",
         "deck_covers": (
-            "1,373 Italian B1 flashcards covering the shared intermediate vocabulary "
+            "1,500 Italian B1 flashcards covering the shared intermediate vocabulary "
             "and phrases across CELI, CILS, and PLIDA."
         ),
         "not_included": (
@@ -231,12 +231,12 @@ SPECS: dict[str, dict[str, Any]] = {
             "B1 certificates and immigration language checks reward automatic intermediate "
             "vocabulary. Spaced Anki keeps the shared CELI/CILS/PLIDA lexicon exam-ready."
         ),
-        "cards": "1,373",
+        "cards": "1500",
         "format_note": "Anki .apkg with audio and images",
         "sample_captions": ["essere", "io", "tu"],
         "facts": [
             ("Pathways", "CELI · CILS · PLIDA · cittadinanza language"),
-            ("Cards", "1,373 vocabulary"),
+            ("Cards", "1500 vocabulary"),
             ("Media", "Audio + images"),
             ("Delivery", "Instant .apkg"),
         ],

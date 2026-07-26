@@ -70,12 +70,12 @@ const SPECS = {
     fileNames: ["DELF_DALF_TCF_TEF_French_Anki_Deck.apkg"],
   },
   "dutch-a2-inburgering-anki-deck": {
-    name: "Dutch Inburgering NT2 A2 Anki Deck — 1500 Flashcards",
+    name: "Dutch Inburgering NT2 A2 Anki Deck — 2000 Flashcards",
     summary:
-      "1,500 Dutch A2 cards for Inburgering, Staatsexamen NT2 A2, residency, and naturalisatie.",
+      "2,000 Dutch A2 cards for Inburgering, Staatsexamen NT2 A2, residency, and naturalisatie.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — Dutch Anki deck for <strong>Inburgering</strong>, <strong>Staatsexamen NT2 A2</strong>, and <strong>naturalisatie</strong> vocabulary.</p>",
-      "<p><strong>1,500</strong> high-frequency words with bilingual examples, native audio, and illustrations.</p>",
+      "<p><strong>2,000</strong> high-frequency words with bilingual examples, native audio, and illustrations.</p>",
       "<p><strong>Delivery:</strong> Anki .apkg — import on desktop, sync to mobile.</p>",
       "<p><em>Independent study aid — not official Dutch government / DUO material.</em></p>",
     ].join(""),
@@ -99,12 +99,12 @@ const SPECS = {
     fileNames: ["German_Goethe_telc_OSD_DTZ_Anki_Deck.apkg"],
   },
   "celi-b1-italian-anki-deck": {
-    name: "CELI CILS PLIDA Italian Anki Deck — 1,373 Flashcards",
+    name: "CELI CILS PLIDA Italian Anki Deck — 1500 Flashcards",
     summary:
-      "1,373 Italian B1 cards for CELI, CILS, and PLIDA — including permesso di soggiorno and cittadinanza language overlap.",
+      "1,500 Italian B1 cards for CELI, CILS, and PLIDA — including permesso di soggiorno and cittadinanza language overlap.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — Italian B1 Anki deck for <strong>CELI</strong>, <strong>CILS</strong>, and <strong>PLIDA</strong>, including vocabulary used for <strong>permesso di soggiorno</strong> and <strong>cittadinanza</strong> language pathways (CILS B1 cittadinanza-adjacent).</p>",
-      "<p><strong>1,373</strong> cards covering the shared intermediate vocabulary across the main Italian certificates — language prep, not an Italian civics quiz.</p>",
+      "<p><strong>1,500</strong> cards covering the shared intermediate vocabulary across the main Italian certificates — language prep, not an Italian civics quiz.</p>",
       "<p><strong>Delivery:</strong> Anki-compatible .apkg via your Gumroad library after checkout.</p>",
       "<p><em>Independent study aid — not official CELI / CILS / PLIDA material.</em></p>",
     ].join(""),

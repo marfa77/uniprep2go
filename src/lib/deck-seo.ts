@@ -150,11 +150,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Applicants using CIPLE A2 for Portuguese residency or citizenship drill European Portuguese vocabulary daily, then practice speaking and official-style exam tasks separately.",
   },
   "dutch-a2-inburgering-anki-deck": {
-    title: "Dutch Inburgering NT2 A2 Anki Deck | 1500 Cards",
-    headline: "Dutch Inburgering NT2 A2 Prep — 1500 Flashcards",
+    title: "Dutch Inburgering NT2 A2 Anki Deck | 2000 Cards",
+    headline: "Dutch Inburgering NT2 A2 Prep — 2000 Flashcards",
     studyLabel: "Dutch Inburgering NT2 exam prep",
     description:
-      "Dutch A2 Anki deck with 1500 flashcards for Inburgering, Staatsexamen NT2 A2 vocabulary, residency, and naturalisatie. Audio and bilingual examples. Independent study aid — not official DUO material.",
+      "Dutch A2 Anki deck with 2000 flashcards for Inburgering, Staatsexamen NT2 A2 vocabulary, residency, and naturalisatie. Audio and bilingual examples. Independent study aid — not official DUO material.",
     keywords: [
       "inburgering anki",
       "nt2 a2 flashcards",
@@ -185,11 +185,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Learners preparing Goethe A2, telc A2, ÖSD A2, DTZ, or high-frequency German for residence / Einbürgerung language and fide / Swiss residency share one A2–B1 vocabulary bank — then practice each exam's format separately. For Leben in Deutschland civics, use the Citizenship & Naturalization Anki Bundle; for Swiss civics, use the Swiss Citizenship Anki Bundle.",
   },
   "celi-b1-italian-anki-deck": {
-    title: "CELI CILS PLIDA Italian Anki Deck | 1373 Cards",
-    headline: "CELI CILS PLIDA Italian Prep — 1,373 Flashcards",
+    title: "CELI CILS PLIDA Italian Anki Deck | 1500 Cards",
+    headline: "CELI CILS PLIDA Italian Prep — 1500 Flashcards",
     studyLabel: "CELI CILS PLIDA Italian exam prep",
     description:
-      "Italian B1 Anki deck with 1,373 flashcards for CELI, CILS, and PLIDA — including vocabulary overlap for permesso di soggiorno and cittadinanza language pathways. Independent study aid — not official exam material.",
+      "Italian B1 Anki deck with 1,500 flashcards for CELI, CILS, and PLIDA — including vocabulary overlap for permesso di soggiorno and cittadinanza language pathways. Independent study aid — not official exam material.",
     keywords: [
       "celi b1 anki",
       "cils b1 flashcards",

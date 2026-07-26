@@ -209,8 +209,10 @@ describe("deck catalog", () => {
       "nacionalidade portuguesa",
     );
     expect(getDeckBySlug("dutch-a2-inburgering-anki-deck")?.title).toContain("NT2");
+    expect(getDeckBySlug("dutch-a2-inburgering-anki-deck")?.facts.cards).toBe("2000");
     expect(getDeckBySlug("german-a2-anki-deck")?.title).toContain("Goethe telc ÖSD DTZ");
     expect(getDeckBySlug("celi-b1-italian-anki-deck")?.title).toContain("CELI CILS PLIDA");
+    expect(getDeckBySlug("celi-b1-italian-anki-deck")?.facts.cards).toBe("1500");
     expect(getDeckBySlug("danish-a2-prove-i-dansk-anki-deck")?.title).toContain("PD2 PD3");
     expect(getDeckBySlug("norwegian-a2-norskprove-anki-deck")?.title).toContain("Norskprøve");
     expect(getDeckBySlug("swedish-a2-sfi-anki-deck")?.title).toContain("Swedish SFI");
@@ -700,14 +702,14 @@ describe("deck catalog", () => {
         "Swiss Citizenship Anki Bundle — DE / FR / IT · 618 Cards",
       "dele-a2-spanish-anki-deck": "DELE SIELE Spanish Anki Deck — 1500 Flashcards",
       "dutch-a2-inburgering-anki-deck":
-        "Dutch Inburgering NT2 A2 Anki Deck — 1500 Flashcards",
+        "Dutch Inburgering NT2 A2 Anki Deck — 2000 Flashcards",
       "german-a2-anki-deck": "German Goethe telc ÖSD DTZ Anki Deck — 2000 Flashcards",
       "gmat-focus-anki-deck": "GMAT Focus Anki Deck — 400+ Flashcards",
       "sat-anki-deck": "Digital SAT Anki Deck — 342+ Flashcards",
       "pmp-anki-deck": "PMP Anki Deck — 346+ Flashcards",
       "gre-anki-deck": "GRE Anki Deck — 350+ Flashcards",
       "leed-ap-om-anki-deck": "LEED AP O+M Anki Deck — 250+ Flashcards",
-      "celi-b1-italian-anki-deck": "CELI CILS PLIDA Italian Anki Deck — 1,373 Flashcards",
+      "celi-b1-italian-anki-deck": "CELI CILS PLIDA Italian Anki Deck — 1500 Flashcards",
       "danish-a2-prove-i-dansk-anki-deck":
         "Danish Prøve i Dansk PD2 PD3 Anki Deck — 1000 Flashcards",
       "norwegian-a2-norskprove-anki-deck":

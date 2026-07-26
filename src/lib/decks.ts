@@ -1497,11 +1497,11 @@ const rawDecks: Deck[] = [
     slug: "dutch-a2-inburgering-anki-deck",
     category: "language",
     status: "available",
-    title: "Dutch Inburgering NT2 A2 Anki Deck — 1500 Flashcards",
+    title: "Dutch Inburgering NT2 A2 Anki Deck — 2000 Flashcards",
     shortName: "Dutch Inburgering NT2",
-    subtitle: "1,500 Dutch A2 flashcards for Inburgering, Staatsexamen NT2 A2, residency, and naturalisatie.",
+    subtitle: "2,000 Dutch A2 flashcards for Inburgering, Staatsexamen NT2 A2, residency, and naturalisatie.",
     directAnswer:
-      "UniPrep2Go sells a Dutch Inburgering / NT2 A2 Anki deck with 1,500 high-frequency words for the Dutch civic integration (Inburgering) exam, Staatsexamen NT2 A2-level vocabulary, and everyday Dutch used toward residency and naturalisatie. Each card includes the Dutch word, English gloss, bilingual examples, native audio, and illustrations. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank for Inburgering and NT2 A2 pathways, not tourist Dutch.",
+      "UniPrep2Go sells a Dutch Inburgering / NT2 A2 Anki deck with 2,000 high-frequency words for the Dutch civic integration (Inburgering) exam, Staatsexamen NT2 A2-level vocabulary, and everyday Dutch used toward residency and naturalisatie. Each card includes the Dutch word, English gloss, bilingual examples, native audio, and illustrations. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank for Inburgering and NT2 A2 pathways, not tourist Dutch.",
     lastUpdated: "2026-07-26",
     audience: "Migrants preparing Inburgering, Staatsexamen NT2 A2, Dutch residency, or naturalisatie with spaced repetition.",
     format: ".apkg",
@@ -1510,7 +1510,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "1500",
+      cards: "2000",
       topics: "Inburgering, Staatsexamen NT2 A2, residency and naturalisatie vocabulary",
       formulas: "Native audio + bilingual examples + illustrations per card",
       examYear: "Current Inburgering / NT2 cycle",
@@ -1628,12 +1628,12 @@ const rawDecks: Deck[] = [
     slug: "celi-b1-italian-anki-deck",
     category: "language",
     status: "available",
-    title: "CELI CILS PLIDA Italian Anki Deck — 1,373 Flashcards",
+    title: "CELI CILS PLIDA Italian Anki Deck — 1500 Flashcards",
     shortName: "CELI CILS PLIDA Italian",
     subtitle:
-      "1,373 Italian B1 flashcards for CELI, CILS, and PLIDA — including vocabulary overlap used for permesso di soggiorno and cittadinanza language pathways.",
+      "1,500 Italian B1 flashcards for CELI, CILS, and PLIDA — including vocabulary overlap used for permesso di soggiorno and cittadinanza language pathways.",
     directAnswer:
-      "UniPrep2Go sells an Italian B1 Anki deck with 1,373 flashcards for CELI (Università per Stranieri di Perugia), CILS (Università per Stranieri di Siena), and PLIDA (Società Dante Alighieri). Cards target the shared B1 vocabulary and phrase bank across those certificates, including the lexicon overlap used for permesso di soggiorno and cittadinanza language requirements (including CILS B1 cittadinanza-adjacent pathways). It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary deck for the main Italian B1 and immigration-language pathways, not an Italian civics quiz.",
+      "UniPrep2Go sells an Italian B1 Anki deck with 1,500 flashcards for CELI (Università per Stranieri di Perugia), CILS (Università per Stranieri di Siena), and PLIDA (Società Dante Alighieri). Cards target the shared B1 vocabulary and phrase bank across those certificates, including the lexicon overlap used for permesso di soggiorno and cittadinanza language requirements (including CILS B1 cittadinanza-adjacent pathways). It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary deck for the main Italian B1 and immigration-language pathways, not an Italian civics quiz.",
     lastUpdated: "2026-07-26",
     audience:
       "CELI, CILS, and PLIDA B1 candidates plus applicants building Italian for permesso di soggiorno or cittadinanza language requirements.",
@@ -1643,7 +1643,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "1373",
+      cards: "1500",
       topics:
         "CELI, CILS, PLIDA B1 Italian vocabulary; permesso di soggiorno and cittadinanza language overlap",
       formulas: "Exam-focused B1 vocabulary shared across Italian certificates",
@@ -1653,19 +1653,19 @@ const rawDecks: Deck[] = [
     topicCoverage: [],
     sampleCards: [
       {
-        question: "casa",
-        answer: "house — La mia casa è piccola. (My house is small.)",
+        question: "essere",
+        answer:
+          "be — Io sono qui nella stanza illuminata dal sole. (I am here in the sunlit room.)",
         imageUrl: "/samples/celi-b1-italian-anki-deck-sample-1.webp",
       },
       {
-        question: "lavoro",
-        answer:
-          "work — Il mio lavoro è nel centro. (My work is in the city centre.)",
+        question: "io",
+        answer: "i — Io sto qui da solo. (I stand here alone.)",
         imageUrl: "/samples/celi-b1-italian-anki-deck-sample-2.webp",
       },
       {
-        question: "tempo",
-        answer: "time — Non ho tempo oggi. (I don't have time today.)",
+        question: "tu",
+        answer: "you — Tu sembri felice oggi! (You look happy today!)",
         imageUrl: "/samples/celi-b1-italian-anki-deck-sample-3.webp",
       },
     ],
@@ -1682,7 +1682,7 @@ const rawDecks: Deck[] = [
       },
       {
         question: "How many cards does the deck have?",
-        answer: "1,373 cards covering B1-level Italian vocabulary for CELI, CILS, and PLIDA preparation.",
+        answer: "1,500 cards covering B1-level Italian vocabulary for CELI, CILS, and PLIDA preparation.",
       },
       {
         question: "What file format is delivered?",
