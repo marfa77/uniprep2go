@@ -52,6 +52,7 @@ export type MockVerticalId =
   | "trades"
   | "veterinary"
   | "licensing"
+  | "citizenship"
   | "finance"
   | "building";
 

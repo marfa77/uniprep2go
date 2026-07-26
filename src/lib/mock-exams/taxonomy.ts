@@ -151,10 +151,17 @@ export const MOCK_VERTICALS: MockVerticalDefinition[] = [
   {
     id: "licensing",
     label: "US licensing & insurance",
-    description:
-      "FINRA securities, insurance, ServSafe, and citizenship / naturalization practice tests (US, UK, Canada, Australia, Germany, France).",
+    description: "FINRA securities, insurance licensing, and ServSafe food-safety practice tests.",
     imageType: "licensing",
     seoTitle: "Free US Licensing Practice Tests",
+  },
+  {
+    id: "citizenship",
+    label: "Citizenship & naturalization",
+    description:
+      "Civics and naturalization readiness checks for the US, UK, Canada, Australia, Germany, France, Spain, Belgium, and other countries.",
+    imageType: "citizenship",
+    seoTitle: "Free Citizenship & Naturalization Practice Tests",
   },
   {
     id: "finance",
@@ -490,7 +497,7 @@ const TAXONOMY_BY_SLUG: Record<string, TaxonomyEntry> = {
     searchAliases: ["ServSafe", "food manager"],
   },
   "us-citizenship-readiness-check": {
-    verticalId: "licensing",
+    verticalId: "citizenship",
     familyId: "citizenship",
     searchAliases: ["USCIS", "civics", "naturalization"],
   },

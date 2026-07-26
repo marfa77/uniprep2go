@@ -13,6 +13,7 @@ export type MockClusterImageType =
   | "imaging"
   | "veterinary"
   | "licensing"
+  | "citizenship"
   | "finance"
   | "building"
   | "cpr"
@@ -42,6 +43,7 @@ export const MOCK_CLUSTER_IMAGE_TYPES: MockClusterImageType[] = [
   "imaging",
   "veterinary",
   "licensing",
+  "citizenship",
   "finance",
   "building",
   "cpr",
@@ -142,6 +144,14 @@ export const MOCK_CLUSTER_IMAGE_CONFIG: Record<MockClusterImageType, MockCluster
       "professional license exam study desk",
       "insurance office professional documents",
       "business license paperwork desk",
+    ],
+  },
+  citizenship: {
+    label: "Citizenship & naturalization",
+    queries: [
+      "citizenship ceremony flags people",
+      "civics exam study books passport",
+      "naturalization test study desk",
     ],
   },
   finance: {

@@ -14,6 +14,39 @@ export type VerticalSeoCopy = {
 };
 
 export const verticalSeoCopy: Partial<Record<MockVerticalId, VerticalSeoCopy>> = {
+  citizenship: {
+    lead:
+      "UniPrep2Go’s citizenship & naturalization path groups free timed civics readiness checks for the US (USCIS), UK (Life in the UK), Canada, Australia, Germany (Leben in Deutschland), France, Spain (CCSE), Belgium, and other naturalization pathways. Each mock scores by topic, then links to a matching Anki deck where available — independent practice, not official government exam material.",
+    sections: [
+      {
+        heading: "Which citizenship tests belong here?",
+        body:
+          "Use this hub for civics and naturalization diagnostics — not FINRA, insurance, or ServSafe licensing. Start with your destination country’s mock (US, UK, Canada, Australia, Germany, France, Spain, Belgium, and more), review missed government/history domains, then repair with the linked deck. Confirm current question banks, language, and pass scores on the official immigration authority site before exam day.",
+      },
+      {
+        heading: "How to use these free citizenship practice tests",
+        body:
+          "Sit one timed readiness check under quiet conditions, read the topic report, and drill weak civics domains daily. Pair every study block with the official handbook (USCIS civics, Discover Canada, Life in the UK, etc.). UniPrep2Go does not administer naturalization interviews or redistribute live government exam items.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What citizenship practice tests are free on UniPrep2Go?",
+        answer:
+          "Free timed mocks include U.S. citizenship civics, Life in the UK, Canadian and Australian citizenship, Leben in Deutschland, French naturalization themes, CCSE España, Belgium Flanders/Wallonie, and other pathways listed on this hub — each with topic scoring and answer review.",
+      },
+      {
+        question: "Are these official government citizenship exams?",
+        answer:
+          "No. UniPrep2Go readiness checks are independent study aids modeled on published public themes. They are not affiliated with or endorsed by USCIS, Home Office, IRCC, Home Affairs, BAMF, or other immigration authorities.",
+      },
+      {
+        question: "Should I take the mock or buy the Anki deck first?",
+        answer:
+          "Take the free mock first. The report shows which civics topics failed; the linked Anki deck is for daily repair of those gaps, not a substitute for the official candidate handbook.",
+      },
+    ],
+  },
   building: {
     lead:
       "UniPrep2Go’s building certification path groups free timed readiness checks for HVAC refrigerant work (EPA Section 608), green-building credentials (LEED Green Associate, LEED AP BD+C, WELL AP), energy and safety pathways (CEM, NEBOSH, CFPS), surveying (MRICS), data-centre facilities (CDCP), and related project credentials. Each mock scores by topic, then links to an Anki deck for weak-domain repair — independent practice, not official USGBC, EPA, RICS, or NFPA material.",
