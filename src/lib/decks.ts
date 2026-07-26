@@ -2665,14 +2665,14 @@ const rawDecks: Deck[] = [
     slug: "dele-a2-spanish-anki-deck",
     category: "language",
     status: "available",
-    title: "DELE SIELE Spanish Anki Deck — 1000 Flashcards",
+    title: "DELE SIELE Spanish Anki Deck — 1500 Flashcards",
 
     shortName: "DELE SIELE Spanish",
     subtitle:
-      "1,000 Spanish A2 vocabulary flashcards for DELE A2 and SIELE A2-style word knowledge — language only, not a CCSE civics bundle.",
+      "1,500 Spanish A2 vocabulary flashcards for DELE A2 and SIELE A2-style word knowledge — language only, not a CCSE civics bundle.",
     directAnswer:
-      "UniPrep2Go sells a Spanish Anki deck with 1,000 high-frequency A2 vocabulary cards for DELE A2 (Instituto Cervantes) and overlapping SIELE A2-style word knowledge. Each card targets exam-ready Spanish recall with examples and media where included. It is delivered as a single Anki .apkg file for {PRICE} through Gumroad by PixID Studio — DELE / SIELE vocabulary only, not a DELE + CCSE nationality bundle.",
-    lastUpdated: "2026-07-22",
+      "UniPrep2Go sells a Spanish Anki deck with 1,500 high-frequency A2 vocabulary cards for DELE A2 (Instituto Cervantes) and overlapping SIELE A2-style word knowledge. Each card targets exam-ready Spanish recall with examples and media where included. It is delivered as a single Anki .apkg file for {PRICE} through Gumroad by PixID Studio — DELE / SIELE vocabulary only, not a DELE + CCSE nationality bundle.",
+    lastUpdated: "2026-07-26",
     audience:
       "DELE A2 candidates and learners building SIELE A2-overlapping Spanish vocabulary with spaced repetition.",
     format: ".apkg",
@@ -2681,7 +2681,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "1000",
+      cards: "1500",
       topics: "DELE A2, SIELE A2-overlapping Spanish vocabulary",
       formulas: "High-frequency A2 vocabulary with examples and media",
       examYear: "Current DELE A2 / SIELE cycle",

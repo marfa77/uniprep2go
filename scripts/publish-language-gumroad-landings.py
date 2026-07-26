@@ -327,7 +327,7 @@ SPECS: dict[str, dict[str, Any]] = {
     },
     "dele-a2-spanish-anki-deck": {
         "label": "DELE SIELE Spanish",
-        "headline": "DELE SIELE Spanish Anki Deck — 1000 Flashcards",
+        "headline": "DELE SIELE Spanish Anki Deck — 1500 Flashcards",
         "exam": "DELE A2 · SIELE A2 vocabulary",
         "hook": (
             "Spanish A2 vocabulary for DELE A2 and overlapping SIELE A2-style word knowledge — "
@@ -346,7 +346,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "DELE A2 · SIELE A2 vocabulary overlap",
         "deck_covers": (
-            "One .apkg with 1,000 high-frequency Spanish A2 vocabulary cards, examples, "
+            "One .apkg with 1,500 high-frequency Spanish A2 vocabulary cards, examples, "
             "and media for DELE / SIELE-style recall."
         ),
         "not_included": (
@@ -357,12 +357,12 @@ SPECS: dict[str, dict[str, Any]] = {
             "DELE and SIELE reward fast lexical access. Spaced Anki keeps high-frequency "
             "Spanish available under exam pressure."
         ),
-        "cards": "1000",
+        "cards": "1500",
         "format_note": "Single Anki .apkg (language only)",
         "sample_captions": ["estar", "yo", "tú"],
         "facts": [
             ("Pathways", "DELE A2 · SIELE vocabulary"),
-            ("Cards", "1000 vocabulary"),
+            ("Cards", "1500 vocabulary"),
             ("Media", "Audio + images"),
             ("Delivery", "Instant .apkg"),
         ],

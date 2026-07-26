@@ -256,6 +256,7 @@ describe("deck catalog", () => {
     expect(deleDeck?.directAnswer).toContain("DELE A2");
     expect(deleDeck?.directAnswer).toContain("SIELE");
     expect(deleDeck?.directAnswer).toContain("not a DELE + CCSE nationality bundle");
+    expect(deleDeck?.facts.cards).toBe("1500");
     expect(deleDeck?.directAnswer).toContain("single Anki .apkg");
     expect(getDeckBySlug("dele-a2-ccse-spanish-citizenship-bundle")?.status).toBe("planned");
     expect(getDeckBySlug("czech-citizenship-anki-deck")?.status).toBe("planned");
@@ -697,7 +698,7 @@ describe("deck catalog", () => {
         "Citizenship & Naturalization Anki Bundle — 6 Countries · 1225 Cards",
       "swiss-citizenship-anki-deck":
         "Swiss Citizenship Anki Bundle — DE / FR / IT · 618 Cards",
-      "dele-a2-spanish-anki-deck": "DELE SIELE Spanish Anki Deck — 1000 Flashcards",
+      "dele-a2-spanish-anki-deck": "DELE SIELE Spanish Anki Deck — 1500 Flashcards",
       "dutch-a2-inburgering-anki-deck":
         "Dutch Inburgering NT2 A2 Anki Deck — 1500 Flashcards",
       "german-a2-anki-deck": "German Goethe telc ÖSD DTZ Anki Deck — 2000 Flashcards",

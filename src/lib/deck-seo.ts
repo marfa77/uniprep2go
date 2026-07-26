@@ -482,11 +482,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Take a free country readiness check first, then drill weak civics topics with this $20 six-country Anki bundle — spaced repetition instead of scattered blog quizzes.",
   },
   "dele-a2-spanish-anki-deck": {
-    title: "DELE SIELE Spanish Anki Deck | 1000 Flashcards",
-    headline: "DELE SIELE Spanish Exam Prep — 1000 Flashcards",
+    title: "DELE SIELE Spanish Anki Deck | 1500 Flashcards",
+    headline: "DELE SIELE Spanish Exam Prep — 1500 Flashcards",
     studyLabel: "DELE SIELE Spanish exam prep",
     description:
-      "Spanish Anki deck with 1000 A2 vocabulary flashcards for DELE A2 and SIELE A2-style word knowledge. Single .apkg — language only, not a CCSE civics bundle. Independent study aid — not Instituto Cervantes or SIELE material.",
+      "Spanish Anki deck with 1500 A2 vocabulary flashcards for DELE A2 and SIELE A2-style word knowledge. Single .apkg — language only, not a CCSE civics bundle. Independent study aid — not Instituto Cervantes or SIELE material.",
     keywords: [
       "dele a2 anki",
       "siele a2 vocabulary",
