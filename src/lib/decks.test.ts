@@ -648,7 +648,7 @@ describe("deck catalog", () => {
       "property-casualty-insurance-exam-anki-deck":
         "Property & Casualty Insurance Exam Anki Deck — 400 High-Yield Flashcards",
       "ciple-a2-european-portuguese-anki-deck":
-        "CIPLE CAPLE Portuguese Citizenship Anki Deck — 1600+ Flashcards",
+        "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2000 Flashcards",
       "delf-b2-french-anki-deck": "DELF DALF TCF TEF French Anki Deck — 2000+ Flashcards",
       "delf-prim-printable-french-flashcards":
         "DELF Prim Printable French Flashcards — Ages 7–12 · 360 PDF Cards",
@@ -657,7 +657,7 @@ describe("deck catalog", () => {
       "dele-a2-spanish-anki-deck": "DELE SIELE Spanish Anki Deck — 1000 Flashcards",
       "dutch-a2-inburgering-anki-deck":
         "Dutch Inburgering NT2 A2 Anki Deck — 1000+ Flashcards",
-      "german-a2-anki-deck": "German Goethe telc ÖSD DTZ Anki Deck — 1000 Flashcards",
+      "german-a2-anki-deck": "German Goethe telc ÖSD DTZ Anki Deck — 2000 Flashcards",
       "gmat-focus-anki-deck": "GMAT Focus Anki Deck — 400+ Flashcards",
       "sat-anki-deck": "Digital SAT Anki Deck — 342+ Flashcards",
       "pmp-anki-deck": "PMP Anki Deck — 346+ Flashcards",

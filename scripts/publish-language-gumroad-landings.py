@@ -26,7 +26,7 @@ OUT_DIR = ROOT / "landing-pages/language"
 SPECS: dict[str, dict[str, Any]] = {
     "ciple-a2-european-portuguese-anki-deck": {
         "label": "CIPLE CAPLE Portuguese Citizenship",
-        "headline": "CIPLE CAPLE Portuguese Citizenship Anki Deck — 1600+ Flashcards",
+        "headline": "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2000 Flashcards",
         "exam": "CIPLE / CAPLE A2 · Portuguese residency & citizenship",
         "hook": (
             "European Portuguese vocabulary for CIPLE / CAPLE A2 — the CAPLE diploma "
@@ -45,7 +45,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "CIPLE A2 · CAPLE A2 · autorização de residência · nacionalidade portuguesa",
         "deck_covers": (
-            "1600+ PT-PT cards with headword, meaning, contextual examples, pronunciation audio, "
+            "2000 PT-PT cards with headword, meaning, contextual examples, pronunciation audio, "
             "and image cues for everyday A2 situations."
         ),
         "not_included": (
@@ -56,12 +56,12 @@ SPECS: dict[str, dict[str, Any]] = {
             "Citizenship and residency deadlines reward consistent recall. Spaced Anki keeps "
             "high-frequency European Portuguese available under exam pressure."
         ),
-        "cards": "1600+",
+        "cards": "2000",
         "format_note": "Anki .apkg with audio and images",
         "sample_captions": ["estar", "eu", "tu"],
         "facts": [
             ("Pathways", "CIPLE / CAPLE · residency · citizenship"),
-            ("Cards", "1600+ vocabulary"),
+            ("Cards", "2000 vocabulary"),
             ("Media", "Audio + images"),
             ("Delivery", "Instant .apkg"),
         ],
@@ -152,10 +152,10 @@ SPECS: dict[str, dict[str, Any]] = {
     },
     "german-a2-anki-deck": {
         "label": "German Goethe telc ÖSD DTZ",
-        "headline": "German Goethe telc ÖSD DTZ Anki Deck — 1000 Flashcards",
+        "headline": "German Goethe telc ÖSD DTZ Anki Deck — 2000 Flashcards",
         "exam": "Goethe-Institut A2 · telc Deutsch A2 · ÖSD A2 · DTZ",
         "hook": (
-            "Shared German A2 vocabulary for Goethe-Institut, telc, ÖSD certificates, "
+            "Shared German vocabulary for Goethe-Institut, telc, ÖSD certificates, "
             "and DTZ (Deutsch-Test für Zuwanderer) immigrant integration."
         ),
         "audience": (
@@ -171,7 +171,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "Goethe A2 · telc A2 · ÖSD A2 · DTZ",
         "deck_covers": (
-            "1,000 essential German A2 words with meanings, examples, and media cues "
+            "2,000 essential German words with meanings, examples, and media cues "
             "for certificate and immigration pathways."
         ),
         "not_included": (
@@ -182,12 +182,12 @@ SPECS: dict[str, dict[str, Any]] = {
             "A2 certificate and DTZ success depends on automatic everyday vocabulary. "
             "Spaced repetition keeps that core available under timed conditions."
         ),
-        "cards": "1000",
+        "cards": "2000",
         "format_note": "Anki .apkg with audio and images",
         "sample_captions": ["sein", "ich", "du"],
         "facts": [
             ("Pathways", "Goethe · telc · ÖSD · DTZ"),
-            ("Cards", "1000 vocabulary"),
+            ("Cards", "2000 vocabulary"),
             ("Media", "Audio + images"),
             ("Delivery", "Instant .apkg"),
         ],

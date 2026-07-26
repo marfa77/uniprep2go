@@ -41,12 +41,12 @@ const PRICE_USD = 26;
  * }>} */
 const SPECS = {
   "ciple-a2-european-portuguese-anki-deck": {
-    name: "CIPLE CAPLE Portuguese Citizenship Anki Deck — 1600+ Flashcards",
+    name: "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2000 Flashcards",
     summary:
-      "1600+ European Portuguese cards for CIPLE / CAPLE A2, residency, and citizenship (nacionalidade).",
+      "2000 European Portuguese cards for CIPLE / CAPLE A2, residency, and citizenship (nacionalidade).",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — Portuguese Anki deck for <strong>CIPLE / CAPLE A2</strong>, <strong>autorização de residência</strong>, and <strong>nacionalidade portuguesa</strong>.</p>",
-      "<p><strong>1600+</strong> PT-PT cards with audio, phrases, and examples — one vocabulary bank for the CAPLE diploma and Portugal immigration pathways.</p>",
+      "<p><strong>2000</strong> PT-PT cards with audio, phrases, and examples — one vocabulary bank for the CAPLE diploma and Portugal immigration pathways.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki desktop, then sync to mobile via AnkiWeb.</p>",
       "<p><em>Independent study aid — not official CAPLE / University of Lisbon material.</em></p>",
     ].join(""),
@@ -84,12 +84,12 @@ const SPECS = {
     fileNames: ["Dutch_Inburgering_NT2_A2_Anki_Deck.apkg"],
   },
   "german-a2-anki-deck": {
-    name: "German Goethe telc ÖSD DTZ Anki Deck — 1000 Flashcards",
+    name: "German Goethe telc ÖSD DTZ Anki Deck — 2000 Flashcards",
     summary:
-      "1000 German A2 cards for Goethe-Institut, telc, ÖSD, and DTZ immigrant integration pathways.",
+      "2000 German cards for Goethe-Institut, telc, ÖSD, and DTZ immigrant integration pathways.",
     descriptionHtml: [
-      "<p><strong>PixID Studio</strong> — German A2 Anki deck for <strong>Goethe-Institut A2</strong>, <strong>telc Deutsch A2</strong>, <strong>ÖSD A2</strong>, and <strong>DTZ</strong>.</p>",
-      "<p><strong>1,000</strong> essential words — one shared A2 vocabulary bank across certificate and immigration pathways.</p>",
+      "<p><strong>PixID Studio</strong> — German Anki deck for <strong>Goethe-Institut A2</strong>, <strong>telc Deutsch A2</strong>, <strong>ÖSD A2</strong>, and <strong>DTZ</strong>.</p>",
+      "<p><strong>2,000</strong> essential words — one shared vocabulary bank across certificate and immigration pathways.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki desktop, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official Goethe, telc, ÖSD, or BAMF / DTZ material.</em></p>",
     ].join(""),
@@ -634,7 +634,13 @@ async function main() {
     if (args.copyOnly) {
       if (!record.gumroadProductId) throw new Error(`${slug}: gumroadProductId missing`);
       const spec = SPECS[slug];
-      console.log("  copy-only: description + summary");
+      console.log("  copy-only: name + description + summary");
+      if (!args.dryRun) {
+        runGumroad(
+          `products update ${record.gumroadProductId} --name "${spec.name.replace(/"/g, '\\"')}"`,
+          { dryRun: false },
+        );
+      }
       await putGumroadDescriptionAsync(
         record.gumroadProductId,
         spec.descriptionHtml,

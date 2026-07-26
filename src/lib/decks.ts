@@ -1348,13 +1348,13 @@ const rawDecks: Deck[] = [
     slug: "ciple-a2-european-portuguese-anki-deck",
     category: "language",
     status: "available",
-    title: "CIPLE CAPLE Portuguese Citizenship Anki Deck — 1600+ Flashcards",
+    title: "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2000 Flashcards",
     shortName: "CIPLE CAPLE Portuguese",
     subtitle:
-      "1600+ European Portuguese flashcards for CIPLE / CAPLE A2, Portuguese residency, and citizenship (nacionalidade).",
+      "2000 European Portuguese flashcards for CIPLE / CAPLE A2, Portuguese residency, and citizenship (nacionalidade).",
     directAnswer:
-      "UniPrep2Go sells a CIPLE / CAPLE Portuguese Anki deck with 1600+ European Portuguese flashcards for the CAPLE CIPLE A2 certificate used in Portuguese residency (autorização de residência) and citizenship (nacionalidade portuguesa) applications. Cards focus on PT-PT vocabulary, short phrases, contextual examples, and pronunciation audio. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank for CAPLE A2 diploma and Portugal immigration pathways.",
-    lastUpdated: "2026-07-22",
+      "UniPrep2Go sells a CIPLE / CAPLE Portuguese Anki deck with 2000 European Portuguese flashcards for the CAPLE CIPLE A2 certificate used in Portuguese residency (autorização de residência) and citizenship (nacionalidade portuguesa) applications. Cards focus on PT-PT vocabulary, short phrases, contextual examples, and pronunciation audio. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank for CAPLE A2 diploma and Portugal immigration pathways.",
+    lastUpdated: "2026-07-26",
     audience: "CIPLE / CAPLE A2 candidates, Portuguese residency and citizenship applicants, and European Portuguese self-learners.",
     format: ".apkg",
     coverImage: "/covers/ciple-a2-european-portuguese-anki-deck.webp",
@@ -1362,7 +1362,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "1600+",
+      cards: "2000",
       topics: "CIPLE, CAPLE A2, Portuguese residency and citizenship vocabulary",
       formulas: "Audio pronunciation + contextual examples (PT-PT)",
       examYear: "Current CAPLE / Portuguese nationality cycle",
@@ -1402,7 +1402,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "1600+ Anki cards with European Portuguese vocabulary, phrases, contextual examples, audio pronunciation, and images where helpful.",
+          "2000 Anki cards with European Portuguese vocabulary, phrases, contextual examples, audio pronunciation, and images where helpful.",
       },
       {
         question: "What file format is delivered?",
@@ -1544,13 +1544,13 @@ const rawDecks: Deck[] = [
     slug: "german-a2-anki-deck",
     category: "language",
     status: "available",
-    title: "German Goethe telc ÖSD DTZ Anki Deck — 1000 Flashcards",
+    title: "German Goethe telc ÖSD DTZ Anki Deck — 2000 Flashcards",
     shortName: "German Goethe telc ÖSD DTZ",
     subtitle:
-      "1,000 German A2 flashcards for Goethe-Institut, telc, ÖSD, and DTZ immigrant integration pathways.",
+      "2000 German A2–B1 flashcards for Goethe-Institut, telc, ÖSD, and DTZ immigrant integration pathways.",
     directAnswer:
-      "UniPrep2Go sells a German A2 Anki deck with 1,000 essential words for Goethe-Institut A2, telc Deutsch A2, ÖSD Zertifikat A2, and DTZ (Deutsch-Test für Zuwanderer) immigrant integration vocabulary. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one shared A2 vocabulary bank across the main German certificate and immigration pathways, not a tourist phrase pack.",
-    lastUpdated: "2026-07-22",
+      "UniPrep2Go sells a German Anki deck with 2000 essential words for Goethe-Institut A2, telc Deutsch A2, ÖSD Zertifikat A2, and DTZ (Deutsch-Test für Zuwanderer) immigrant integration vocabulary. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one shared vocabulary bank across the main German certificate and immigration pathways, not a tourist phrase pack.",
+    lastUpdated: "2026-07-26",
     audience:
       "Goethe A2, telc A2, ÖSD A2, and DTZ learners preparing certificates or immigrant integration language requirements.",
     format: ".apkg",
@@ -1559,7 +1559,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "1000",
+      cards: "2000",
       topics: "Goethe-Institut A2, telc Deutsch A2, ÖSD A2, DTZ vocabulary",
       formulas: "Essential words with examples for integration and certificate prep",
       examYear: "Current Goethe / telc / ÖSD / DTZ cycle",

@@ -129,11 +129,11 @@ function defaultKeywords(deck: SeoDeck, mock?: MockExamConfig): string[] {
 
 const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   "ciple-a2-european-portuguese-anki-deck": {
-    title: "CIPLE CAPLE Portuguese Citizenship Anki | 1600+ Cards",
-    headline: "CIPLE CAPLE Portuguese Citizenship Prep — 1600+ Flashcards",
+    title: "CIPLE CAPLE Portuguese Citizenship Exam Prep | 2000 Cards",
+    headline: "CIPLE CAPLE Portuguese Citizenship Exam Prep — 2000 Flashcards",
     studyLabel: "CIPLE CAPLE Portuguese citizenship exam prep",
     description:
-      "CIPLE / CAPLE A2 European Portuguese Anki deck with 1600+ flashcards for Portuguese residency and citizenship (nacionalidade). PT-PT audio and examples. Independent study aid — not official CAPLE material.",
+      "CIPLE / CAPLE A2 European Portuguese Anki deck with 2000 flashcards for Portuguese residency and citizenship (nacionalidade). PT-PT audio and examples. Independent study aid — not official CAPLE material.",
     keywords: [
       "ciple anki deck",
       "caple a2 flashcards",
@@ -162,11 +162,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Migrants preparing Inburgering or NT2 A2 use one high-frequency Dutch vocabulary bank for civic integration and naturalisatie language requirements.",
   },
   "german-a2-anki-deck": {
-    title: "German Goethe telc ÖSD DTZ Anki Deck | 1000 Cards",
-    headline: "German Goethe telc ÖSD DTZ Prep — 1000 Flashcards",
+    title: "German Goethe telc ÖSD DTZ Exam Prep | 2000 Cards",
+    headline: "German Goethe telc ÖSD DTZ Exam Prep — 2000 Flashcards",
     studyLabel: "German Goethe telc ÖSD DTZ exam prep",
     description:
-      "German A2 Anki deck with 1000 flashcards for Goethe-Institut A2, telc Deutsch A2, ÖSD A2, and DTZ immigrant integration pathways. Independent study aid — not official Goethe, telc, ÖSD, or BAMF material.",
+      "German Anki deck with 2000 flashcards for Goethe-Institut A2, telc Deutsch A2, ÖSD A2, and DTZ immigrant integration pathways. Independent study aid — not official Goethe, telc, ÖSD, or BAMF material.",
     keywords: [
       "goethe a2 anki",
       "telc a2 flashcards",

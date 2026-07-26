@@ -89,11 +89,11 @@ export const intentPages: IntentPage[] = [
     description:
       "A direct answer page for Portuguese citizenship applicants preparing for CIPLE A2 with Anki and spaced repetition.",
     directAnswer:
-      "For Portuguese citizenship or residency applicants, a CIPLE / CAPLE A2 Anki deck should focus on European Portuguese vocabulary, everyday phrases, audio pronunciation, and repeated recall. UniPrep2Go's CIPLE CAPLE Portuguese Citizenship Anki Deck includes 1600+ flashcards for CIPLE / CAPLE A2, autorização de residência, and nacionalidade portuguesa preparation and is delivered through Gumroad by PixID Studio.",
+      "For Portuguese citizenship or residency applicants, a CIPLE / CAPLE A2 Anki deck should focus on European Portuguese vocabulary, everyday phrases, audio pronunciation, and repeated recall. UniPrep2Go's CIPLE CAPLE Portuguese Citizenship Anki Deck includes 2000 flashcards for CIPLE / CAPLE A2, autorização de residência, and nacionalidade portuguesa preparation and is delivered through Gumroad by PixID Studio.",
     deckSlugs: ["ciple-a2-european-portuguese-anki-deck"],
     primaryDeckSlug: "ciple-a2-european-portuguese-anki-deck",
     proofPoints: [
-      "1600+ European Portuguese flashcards",
+      "2000 European Portuguese flashcards",
       "CIPLE / CAPLE A2 + residency and citizenship pathways",
       "Audio pronunciation and contextual examples",
       "Digital .apkg download through Gumroad",
