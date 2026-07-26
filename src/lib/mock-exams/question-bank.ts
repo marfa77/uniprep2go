@@ -1,11 +1,11 @@
 import sieFullMockBank from "@/data/mock-exams/sie-full-mock.json";
-import cfaPreviewBank from "@/data/mock-exams/cfa-level-1-preview.json";
-import frmPreviewBank from "@/data/mock-exams/frm-part-1-preview.json";
-import series7PreviewBank from "@/data/mock-exams/series-7-preview.json";
-import series63PreviewBank from "@/data/mock-exams/series-63-preview.json";
-import californiaRealEstatePreviewBank from "@/data/mock-exams/california-real-estate-preview.json";
-import lifeHealthPreviewBank from "@/data/mock-exams/life-and-health-insurance-preview.json";
-import propertyCasualtyPreviewBank from "@/data/mock-exams/property-casualty-insurance-preview.json";
+import cfaLevel1ReadinessBank from "@/data/mock-exams/cfa-level-1-readiness-check.json";
+import frmPart1ReadinessBank from "@/data/mock-exams/frm-part-1-readiness-check.json";
+import series7ReadinessBank from "@/data/mock-exams/series-7-readiness-check.json";
+import series63ReadinessBank from "@/data/mock-exams/series-63-readiness-check.json";
+import californiaRealEstateReadinessBank from "@/data/mock-exams/california-real-estate-readiness-check.json";
+import lifeHealthReadinessBank from "@/data/mock-exams/life-and-health-insurance-readiness-check.json";
+import propertyCasualtyReadinessBank from "@/data/mock-exams/property-casualty-insurance-readiness-check.json";
 import servSafeManagerMockBank from "@/data/mock-exams/servsafe-manager-mock.json";
 import ptcbPharmacyTechnicianMockBank from "@/data/mock-exams/ptcb-pharmacy-technician-mock.json";
 import gmatFocusReadinessBank from "@/data/mock-exams/gmat-focus-readiness-check.json";
@@ -75,13 +75,13 @@ import { wave4BanksBySlug } from "./wave4-banks";
 
 const banksBySlug: Record<string, MockQuestion[]> = {
   "sie-full-mock": sieFullMockBank as unknown as MockQuestion[],
-  "cfa-level-1-readiness-check": cfaPreviewBank as unknown as MockQuestion[],
-  "frm-part-1-readiness-check": frmPreviewBank as unknown as MockQuestion[],
-  "series-7-readiness-check": series7PreviewBank as unknown as MockQuestion[],
-  "series-63-readiness-check": series63PreviewBank as unknown as MockQuestion[],
-  "california-real-estate-readiness-check": californiaRealEstatePreviewBank as unknown as MockQuestion[],
-  "life-and-health-insurance-readiness-check": lifeHealthPreviewBank as unknown as MockQuestion[],
-  "property-casualty-insurance-readiness-check": propertyCasualtyPreviewBank as unknown as MockQuestion[],
+  "cfa-level-1-readiness-check": cfaLevel1ReadinessBank as unknown as MockQuestion[],
+  "frm-part-1-readiness-check": frmPart1ReadinessBank as unknown as MockQuestion[],
+  "series-7-readiness-check": series7ReadinessBank as unknown as MockQuestion[],
+  "series-63-readiness-check": series63ReadinessBank as unknown as MockQuestion[],
+  "california-real-estate-readiness-check": californiaRealEstateReadinessBank as unknown as MockQuestion[],
+  "life-and-health-insurance-readiness-check": lifeHealthReadinessBank as unknown as MockQuestion[],
+  "property-casualty-insurance-readiness-check": propertyCasualtyReadinessBank as unknown as MockQuestion[],
   "servsafe-manager-mock": servSafeManagerMockBank as unknown as MockQuestion[],
   "ptcb-pharmacy-technician-mock": ptcbPharmacyTechnicianMockBank as unknown as MockQuestion[],
   "gmat-focus-readiness-check": gmatFocusReadinessBank as unknown as MockQuestion[],

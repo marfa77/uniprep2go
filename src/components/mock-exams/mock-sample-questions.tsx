@@ -9,6 +9,53 @@ type MockSampleQuestionsSectionProps = {
   lead?: string;
 };
 
+function sampleScore(question: MockQuestion): number {
+  const prompt = question.prompt.trim();
+  let score = Math.min(prompt.length, 180);
+  // Prefer applied / scenario stems over thin definition drills.
+  if (/^(what is|what are|who is|define)\b/i.test(prompt)) score -= 40;
+  if (/\(drill\b/i.test(prompt)) score -= 50;
+  if (prompt.length >= 70) score += 25;
+  if (/\b(which|when|if|candidate|client|customer|broker|agent)\b/i.test(prompt)) {
+    score += 15;
+  }
+  // Slight topic diversity bonus handled by picker.
+  score += question.options.filter((o) => o.text.trim().length >= 24).length * 2;
+  return score;
+}
+
+/** Pick the strongest SSR sample stems for Google/LLM extraction. */
+export function pickMockSampleQuestions(
+  questions: MockQuestion[],
+  count = SAMPLE_COUNT,
+): MockQuestion[] {
+  if (questions.length <= count) {
+    return questions;
+  }
+
+  const ranked = [...questions].sort((a, b) => sampleScore(b) - sampleScore(a));
+  const picked: MockQuestion[] = [];
+  const usedTopics = new Set<string>();
+
+  for (const question of ranked) {
+    if (picked.length >= count) break;
+    if (usedTopics.has(question.topicId) && picked.length < count - 1) {
+      continue;
+    }
+    picked.push(question);
+    usedTopics.add(question.topicId);
+  }
+
+  // Fill remaining if topic diversity skipped too many.
+  for (const question of ranked) {
+    if (picked.length >= count) break;
+    if (picked.some((q) => q.id === question.id)) continue;
+    picked.push(question);
+  }
+
+  return picked;
+}
+
 /**
  * Server-rendered sample MCQs for Google/LLM extraction — not the interactive runner.
  * Shows prompt + options; correct answers stay in the timed session.
@@ -18,7 +65,7 @@ export function MockSampleQuestionsSection({
   questions,
   lead,
 }: MockSampleQuestionsSectionProps) {
-  const samples = questions.slice(0, SAMPLE_COUNT);
+  const samples = pickMockSampleQuestions(questions, SAMPLE_COUNT);
   if (samples.length === 0) {
     return null;
   }

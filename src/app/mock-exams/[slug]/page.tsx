@@ -42,7 +42,6 @@ import { getMockAccessState } from "@/lib/mock-exams/access";
 import { getAllMockExams, getMockExamConfig } from "@/lib/mock-exams/configs";
 import {
   getNicheGooglePageLead,
-  isNicheGooglePrioritySlug,
 } from "@/lib/mock-exams/hub-clusters";
 import { buildMockExamPageJsonLd } from "@/lib/mock-exams/llm";
 import { getMockOfficialResources } from "@/lib/mock-exams/official-resources";
@@ -57,7 +56,7 @@ import {
 } from "@/lib/mock-exams/seo";
 import { getVerticalDefinition } from "@/lib/mock-exams/taxonomy";
 import { buildSocialMetadata } from "@/lib/social-metadata";
-import { finalize, leafPageTitle, mockExamRobots } from "@/lib/seo";
+import { finalize, leafPageTitle, mockExamRobots, shouldIndexMockExam } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site";
 
 export const revalidate = 3600;
@@ -147,7 +146,8 @@ export default async function MockExamPage({
   const jsonLd = buildMockExamPageJsonLd(config);
   const seoCopy = buildMockSeoPageCopy(config);
   const nicheLead = getNicheGooglePageLead(config.slug);
-  const showNicheSamples = isNicheGooglePrioritySlug(config.slug) && runnable && questions.length > 0;
+  const showSampleQuestions =
+    runnable && questions.length > 0 && shouldIndexMockExam(config.slug);
   const linkedDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
   const examFactsProfile = getExamFactsProfileForDeck(config.linkedDeckSlug);
   const official = getMockOfficialResources(config);
@@ -232,7 +232,7 @@ export default async function MockExamPage({
           />
         ) : null}
 
-        {showNicheSamples ? (
+        {showSampleQuestions ? (
           <MockSampleQuestionsSection
             config={config}
             lead={`These sample items mirror the domains in the full timed ${config.shortTitle} mock. Correct answers and explanations unlock inside the practice session.`}

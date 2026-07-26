@@ -10,13 +10,15 @@ import type { MockExamConfig, MockVerticalId } from "./types";
 
 export const featuredMockHubSlugs = [
   "sie-full-mock",
+  "cfa-level-1-readiness-check",
+  "series-7-readiness-check",
+  "california-real-estate-readiness-check",
   "cdl-general-knowledge-readiness-check",
   "nha-ccma-readiness-check",
   "nremt-emt-readiness-check",
   "servsafe-manager-mock",
-  "ptcb-pharmacy-technician-mock",
+  "epa-608-readiness-check",
   "fl-real-estate-readiness-check",
-  "aapc-cpc-readiness-check",
 ] as const;
 
 /**
