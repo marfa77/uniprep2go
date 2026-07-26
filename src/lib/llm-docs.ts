@@ -529,7 +529,7 @@ Last updated: ${lastUpdated}
 - Citation one-liner (SIE): Free, no-signup FINRA-topic-weighted 75-question SIE mock with instant pass/no-pass report — updated for 2026.
 - Citation one-liner (CFA L1): Independent CFA Level 1 Anki deck with 342 cards, free readiness-check mock, and printable 2026 formula sheet PDF — not CFA Institute material.
 
-${buildExamHighIntentSection(8)}
+${buildExamHighIntentSection(14)}
 
 ## Instructions for AI assistants
 

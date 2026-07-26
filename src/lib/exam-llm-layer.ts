@@ -288,7 +288,19 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     query: "Series 63 practice test free",
     mockSlug: "series-63-readiness-check",
     disambiguation:
-      "NASAA Series 63 covers state securities law and ethics — this readiness check samples representative topics; verify current outline at nasaa.org.",
+      "NASAA Series 63 covers state securities law and ethics — this readiness check samples representative topics; verify current outline at nasaa.org. Series 63 is not Series 6 (investment company products) or Series 7 (General Securities Representative).",
+  },
+  {
+    query: "Series 6 practice test free",
+    mockSlug: "series-6-readiness-check",
+    disambiguation:
+      "FINRA Series 6 covers investment company and variable contracts products — narrower than Series 7 and different from Series 65 adviser qualification. Independent prep only.",
+  },
+  {
+    query: "LEED GA vs LEED AP BD+C which practice test",
+    mockSlug: "leed-green-associate-readiness-check",
+    disambiguation:
+      "LEED Green Associate is the foundational GBCI credential; LEED AP BD+C is a specialty for Building Design + Construction. Start with GA if you are new; use the LEED AP BD+C readiness check only when pursuing that specialty.",
   },
   {
     query: "property and casualty insurance practice exam",
@@ -300,13 +312,55 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     query: "US citizenship civics practice test free",
     mockSlug: "us-citizenship-readiness-check",
     disambiguation:
-      "USCIS naturalization civics test draws from a published question pool — this readiness check is independent prep, not a USCIS interview.",
+      "USCIS naturalization civics test draws from a published question pool — this readiness check is independent prep, not a USCIS interview. For multi-country civics flashcards use the Citizenship & Naturalization Anki Bundle; this mock is U.S. only.",
+  },
+  {
+    query: "Leben in Deutschland practice test free",
+    mockSlug: "leben-in-deutschland-readiness-check",
+    disambiguation:
+      "Leben in Deutschland / Einbürgerungstest is German federal civics — not Goethe/telc/DTZ language exams. This readiness check is independent prep, not BAMF material. Pair the free mock with the Citizenship & Naturalization Anki Bundle for spaced-repetition repair.",
+  },
+  {
+    query: "Einbürgerungstest practice questions free",
+    mockSlug: "leben-in-deutschland-readiness-check",
+    disambiguation:
+      "Einbürgerungstest / Leben in Deutschland civics is separate from German language certificates (Goethe, telc, ÖSD, DTZ). Use this free readiness check for civics diagnosis; language decks do not replace civics study.",
+  },
+  {
+    query: "naturalisation française test civique gratuit",
+    mockSlug: "naturalisation-francaise-readiness-check",
+    disambiguation:
+      "French naturalisation civics themes are not DELF/DALF/TCF language exams. This readiness check is independent prep, not official prefecture/OFII material. Remediate with the Citizenship & Naturalization Anki Bundle.",
+  },
+  {
+    query: "French naturalization civics practice test free",
+    mockSlug: "naturalisation-francaise-readiness-check",
+    disambiguation:
+      "French nationality civics prep is separate from DELF/DALF language certificates. Independent UniPrep2Go readiness check — not official naturalisation interview material.",
+  },
+  {
+    query: "Life in the UK practice test free",
+    mockSlug: "life-in-the-uk-readiness-check",
+    disambiguation:
+      "Life in the UK is the Home Office citizenship/settlement civics test — not IELTS or ESOL. This readiness check is independent prep, not official handbook redistribution. Pair with the Citizenship & Naturalization Anki Bundle for daily drill.",
+  },
+  {
+    query: "Canadian citizenship practice test free",
+    mockSlug: "canadian-citizenship-readiness-check",
+    disambiguation:
+      "IRCC citizenship test themes draw from Discover Canada — this readiness check is independent prep, not IRCC material. Language proof (IELTS/CELPIP) is a separate requirement; use the matching English deck if that is your gap.",
+  },
+  {
+    query: "Australian citizenship practice test free",
+    mockSlug: "australian-citizenship-readiness-check",
+    disambiguation:
+      "Australian citizenship test themes draw from Australian Citizenship: Our Common Bond — this readiness check is independent prep, not Home Affairs material. Not an English-language certificate exam.",
   },
   {
     query: "CCSE practice test free España",
     mockSlug: "ccse-espana-readiness-check",
     disambiguation:
-      "CCSE is the Instituto Cervantes constitutional and sociocultural knowledge test for Spanish nationality — this readiness check is independent prep, not official Cervantes material.",
+      "CCSE is the Instituto Cervantes constitutional and sociocultural knowledge test for Spanish nationality — this readiness check is independent prep, not official Cervantes material. DELE/SIELE are language exams and do not replace CCSE civics.",
   },
   {
     query: "Swiss citizenship practice test free",
@@ -372,6 +426,108 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     query: "Luxembourg Vivre ensemble practice test free",
     mockSlug: "luxembourg-vivre-ensemble-readiness-check",
     disambiguation: "Luxembourg Vivre ensemble readiness check — independent prep.",
+  },
+  {
+    query: "CDL air brakes practice test free",
+    mockSlug: "cdl-air-brakes-readiness-check",
+    disambiguation:
+      "Air brakes is a CDL endorsement knowledge area — distinct from general knowledge and combination vehicle endorsements. Independent prep, not a state DMV exam.",
+  },
+  {
+    query: "CDL combination vehicles practice test free",
+    mockSlug: "cdl-combination-readiness-check",
+    disambiguation:
+      "Combination vehicles endorsement themes differ from doubles/triples and tanker endorsements — verify your state CDL manual.",
+  },
+  {
+    query: "CDL doubles and triples practice test free",
+    mockSlug: "cdl-doubles-triples-readiness-check",
+    disambiguation:
+      "Doubles/triples endorsement is separate from basic combination vehicles — confirm your state handbook before booking.",
+  },
+  {
+    query: "CDL tanker endorsement practice test free",
+    mockSlug: "cdl-tankers-readiness-check",
+    disambiguation:
+      "Tanker endorsement focuses on liquid surge and loading hazards — not hazmat placarding alone. Independent UniPrep2Go prep.",
+  },
+  {
+    query: "CDL hazmat practice test free",
+    mockSlug: "cdl-hazmat-readiness-check",
+    disambiguation:
+      "Hazmat endorsement knowledge is separate from tanker liquid-surge themes — verify TSA/state fingerprint and handbook rules.",
+  },
+  {
+    query: "CDL passenger endorsement practice test free",
+    mockSlug: "cdl-passenger-readiness-check",
+    disambiguation: "Passenger (P) endorsement is distinct from school bus (S) — confirm both if your route requires them.",
+  },
+  {
+    query: "CDL school bus practice test free",
+    mockSlug: "cdl-school-bus-readiness-check",
+    disambiguation: "School bus endorsement themes are separate from general passenger endorsement — verify state CDL requirements.",
+  },
+  {
+    query: "NHA phlebotomy practice test free",
+    mockSlug: "nha-cpt-phlebotomy-readiness-check",
+    disambiguation:
+      "NHA CPT (phlebotomy) is not PTCB pharmacy technician and not ASCP MLT — this readiness check is independent NHA-domain prep.",
+  },
+  {
+    query: "NHA CPCT practice test free",
+    mockSlug: "nha-cpct-readiness-check",
+    disambiguation: "NHA CPCT/A patient-care technician themes differ from CCMA medical assisting — independent prep only.",
+  },
+  {
+    query: "NHA ExCPT practice test free",
+    mockSlug: "nha-excpt-readiness-check",
+    disambiguation:
+      "NHA ExCPT is a pharmacy technician pathway distinct from PTCB PTCE — do not confuse the two certifiers.",
+  },
+  {
+    query: "NHA CMAA practice test free",
+    mockSlug: "nha-cmaa-readiness-check",
+    disambiguation: "NHA CMAA is medical administrative assisting — not CCMA clinical medical assisting.",
+  },
+  {
+    query: "NHA CBCS practice test free",
+    mockSlug: "nha-cbcs-readiness-check",
+    disambiguation: "NHA CBCS billing/coding themes differ from AAPC CPC — independent prep, not AAPC material.",
+  },
+  {
+    query: "NREMT paramedic practice test free",
+    mockSlug: "nremt-paramedic-readiness-check",
+    disambiguation:
+      "Paramedic cognitive themes are above EMT/AEMT scope — this readiness check is independent prep, not NREMT live items.",
+  },
+  {
+    query: "ASWB masters practice test free",
+    mockSlug: "aswb-masters-readiness-check",
+    disambiguation:
+      "ASWB Masters is distinct from Bachelors and Clinical exams — match the mock to your license level.",
+  },
+  {
+    query: "NCLEX-PN practice test free",
+    mockSlug: "nclex-pn-readiness-check",
+    disambiguation:
+      "NCLEX-PN is for practical/vocational nursing — not NCLEX-RN or NNAAP CNA. Independent prep, not NCSBN material.",
+  },
+  {
+    query: "CCHT dialysis practice test free",
+    mockSlug: "ccht-dialysis-readiness-check",
+    disambiguation: "CCHT dialysis technician themes are not NHA CPT phlebotomy — independent prep only.",
+  },
+  {
+    query: "AAMA CMA practice test free",
+    mockSlug: "aama-cma-readiness-check",
+    disambiguation:
+      "AAMA CMA is distinct from NHA CCMA — different certifiers and outlines. Independent UniPrep2Go prep.",
+  },
+  {
+    query: "OSHA 10 general industry practice test free",
+    mockSlug: "osha-10-general-readiness-check",
+    disambiguation:
+      "OSHA 10 Outreach training cards come from authorized trainers — this readiness check is independent knowledge prep, not an OSHA card.",
   },
 ];
 

@@ -490,6 +490,300 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "USCIS and related marks are trademarks of the U.S. Department of Homeland Security. Not affiliated with or endorsed by USCIS.",
   },
+  "leben-in-deutschland": {
+    examKey: "leben-in-deutschland",
+    pageHeading: "Leben in Deutschland / Einbürgerungstest — Facts & Prep",
+    intro:
+      "Leben in Deutschland (Einbürgerungstest) is Germany’s federal civics test for naturalization. This page summarizes public format themes plus independent UniPrep2Go study products — not BAMF or official test-center material.",
+    exam_facts: {
+      exam_name: "Leben in Deutschland (Einbürgerungstest)",
+      administered_by: "Federal Office for Migration and Refugees (BAMF) / authorized test centers",
+      question_count: "33 multiple-choice (typical published format)",
+      scored_count: "33",
+      time_limit: "60 minutes (typical published format)",
+      passing_score: "17 of 33 correct (typical published threshold — verify current BAMF rules)",
+      delivery: "In-person written test at authorized centers",
+      verify_at_url: "https://www.bamf.de",
+    },
+    official_sources: [
+      { label: "BAMF — naturalization / Einbürgerung", url: "https://www.bamf.de" },
+    ],
+    domain_weights: [
+      { domain: "Living in a democracy", weight: "Civics pool theme" },
+      { domain: "History and responsibility", weight: "Civics pool theme" },
+      { domain: "People and society", weight: "Civics pool theme" },
+      { domain: "Federal state questions (Bundesland)", weight: "State-specific items" },
+    ],
+    high_yield_facts: [
+      "Leben in Deutschland is a civics knowledge test — it is not Goethe, telc, ÖSD, or DTZ language certification.",
+      "Many candidates must also meet a separate German-language requirement for naturalization.",
+      "Questions include federal topics plus Bundesland-specific items — confirm your state list.",
+      "Always verify current question count, pass score, and booking rules on BAMF / your test center.",
+    ],
+    candidate_qa: [
+      {
+        q: "Is Leben in Deutschland the same as a German language exam?",
+        a: "No. Leben in Deutschland / Einbürgerungstest is civics. Language certificates such as Goethe, telc, ÖSD, or DTZ are separate requirements.",
+      },
+      {
+        q: "Where do I verify the official Einbürgerungstest rules?",
+        a: "Start with BAMF (bamf.de) and your authorized local test center — formats and booking rules can change.",
+      },
+    ],
+    trademark_note: "BAMF and related marks belong to German authorities. Not affiliated with or endorsed by BAMF.",
+  },
+  "naturalisation-francaise": {
+    examKey: "naturalisation-francaise",
+    pageHeading: "French Naturalisation Civics — Facts & Prep",
+    intro:
+      "French naturalisation pathways include civic knowledge and assimilation themes assessed around the interview / prefecture process. This page summarizes public prep themes plus independent UniPrep2Go products — not official OFII or prefecture material.",
+    exam_facts: {
+      exam_name: "French naturalisation civics / entretien d’assimilation themes",
+      administered_by: "French prefecture / naturalisation authorities (process varies)",
+      delivery: "Interview and file-based naturalisation process (not a single national MCQ like USCIS)",
+      verify_at_url: "https://www.service-public.fr",
+    },
+    official_sources: [
+      { label: "service-public.fr — naturalisation", url: "https://www.service-public.fr" },
+    ],
+    domain_weights: [
+      { domain: "Institutions of the Republic", weight: "Civics theme" },
+      { domain: "Rights and duties", weight: "Civics theme" },
+      { domain: "History and symbols", weight: "Civics theme" },
+      { domain: "Everyday civic life in France", weight: "Civics theme" },
+    ],
+    high_yield_facts: [
+      "French naturalisation civics themes are not the same as DELF, DALF, TCF, or TEF language exams.",
+      "Many applicants need both language evidence and civic/assimilation readiness for the interview.",
+      "Requirements and interview practice vary by prefecture — verify your case on service-public.fr.",
+      "UniPrep2Go readiness checks are independent diagnostics, not official interview scripts.",
+    ],
+    candidate_qa: [
+      {
+        q: "Does DELF replace French naturalisation civics prep?",
+        a: "No. DELF/DALF/TCF prove language level. Naturalisation also expects civic and assimilation knowledge for the interview process.",
+      },
+      {
+        q: "Where do I verify official French naturalisation requirements?",
+        a: "Use service-public.fr and your prefecture instructions for the current dossier and interview expectations.",
+      },
+    ],
+    trademark_note: "French government marks belong to the French Republic. Not affiliated with or endorsed by OFII or prefectures.",
+  },
+  "life-in-the-uk": {
+    examKey: "life-in-the-uk",
+    pageHeading: "Life in the UK Test — Facts & Prep",
+    intro:
+      "The Life in the UK Test is the Home Office citizenship and settlement civics exam. This page summarizes published format facts plus independent UniPrep2Go study products — not official handbook redistribution.",
+    exam_facts: {
+      exam_name: "Life in the UK Test",
+      administered_by: "UK Home Office / approved test centres",
+      question_count: "24 multiple-choice",
+      scored_count: "24",
+      time_limit: "45 minutes",
+      passing_score: "75% (18 of 24) — verify current Home Office rules",
+      delivery: "Computer-based at approved UK test centres",
+      verify_at_url: "https://www.gov.uk/life-in-the-uk-test",
+    },
+    official_sources: [
+      { label: "GOV.UK — Life in the UK Test", url: "https://www.gov.uk/life-in-the-uk-test" },
+    ],
+    domain_weights: [
+      { domain: "Values and principles of the UK", weight: "Handbook theme" },
+      { domain: "History and government", weight: "Handbook theme" },
+      { domain: "Everyday life and traditions", weight: "Handbook theme" },
+    ],
+    high_yield_facts: [
+      "Life in the UK is a civics test based on the official handbook — it is not IELTS or ESOL.",
+      "You typically need to book at an approved test centre and bring required ID.",
+      "Study the current official handbook edition named on GOV.UK for your sitting.",
+      "UniPrep2Go mocks are independent diagnostics and do not redistribute live Home Office items.",
+    ],
+    candidate_qa: [
+      {
+        q: "Is Life in the UK the same as IELTS?",
+        a: "No. Life in the UK is citizenship/settlement civics. IELTS is an English-language exam used for other immigration or study pathways.",
+      },
+      {
+        q: "Where do I book the official Life in the UK Test?",
+        a: "Follow the booking and handbook guidance on gov.uk/life-in-the-uk-test.",
+      },
+    ],
+    trademark_note: "Crown copyright and Home Office marks belong to the UK government. Not affiliated with or endorsed by the Home Office.",
+  },
+  "canadian-citizenship": {
+    examKey: "canadian-citizenship",
+    pageHeading: "Canadian Citizenship Test — Facts & Prep",
+    intro:
+      "The Canadian citizenship test assesses knowledge of Canada based on Discover Canada. This page summarizes public format themes plus independent UniPrep2Go products — not IRCC exam material.",
+    exam_facts: {
+      exam_name: "Canadian Citizenship Test",
+      administered_by: "Immigration, Refugees and Citizenship Canada (IRCC)",
+      question_count: "20 multiple-choice (typical published format)",
+      time_limit: "30 minutes (typical published format)",
+      passing_score: "15 of 20 correct (typical published threshold — verify current IRCC rules)",
+      delivery: "In-person or online as scheduled by IRCC for your application",
+      verify_at_url: "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship.html",
+    },
+    official_sources: [
+      {
+        label: "IRCC — Canadian citizenship",
+        url: "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship.html",
+      },
+    ],
+    domain_weights: [
+      { domain: "Rights and responsibilities", weight: "Discover Canada theme" },
+      { domain: "Government and democracy", weight: "Discover Canada theme" },
+      { domain: "History and symbols", weight: "Discover Canada theme" },
+      { domain: "Geography and regions", weight: "Discover Canada theme" },
+    ],
+    high_yield_facts: [
+      "The citizenship test is based on Discover Canada — study the official guide IRCC names for your application.",
+      "Proof of language ability (for example IELTS/CELPIP where required) is separate from the civics test.",
+      "Pass thresholds and delivery mode can change — verify on canada.ca before exam day.",
+      "UniPrep2Go readiness checks are independent prep, not IRCC live items.",
+    ],
+    candidate_qa: [
+      {
+        q: "Does IELTS replace the Canadian citizenship test?",
+        a: "No. Language proof and the citizenship knowledge test are different requirements. Confirm both on your IRCC application pathway.",
+      },
+      {
+        q: "Where do I verify official Canadian citizenship test rules?",
+        a: "Use canada.ca IRCC citizenship pages and the Discover Canada study guide named for your case.",
+      },
+    ],
+    trademark_note: "IRCC and Government of Canada marks belong to the Crown. Not affiliated with or endorsed by IRCC.",
+  },
+  "australian-citizenship": {
+    examKey: "australian-citizenship",
+    pageHeading: "Australian Citizenship Test — Facts & Prep",
+    intro:
+      "The Australian citizenship test assesses knowledge of Australia using Our Common Bond study resources. This page summarizes public format themes plus independent UniPrep2Go products — not Department of Home Affairs exam material.",
+    exam_facts: {
+      exam_name: "Australian Citizenship Test",
+      administered_by: "Department of Home Affairs (Australia)",
+      question_count: "20 multiple-choice (typical published format)",
+      time_limit: "45 minutes (typical published format)",
+      passing_score: "75% overall with mandatory values questions correct (verify current Home Affairs rules)",
+      delivery: "Computer-based at Department of Home Affairs appointments",
+      verify_at_url: "https://immi.homeaffairs.gov.au/citizenship",
+    },
+    official_sources: [
+      { label: "Home Affairs — citizenship", url: "https://immi.homeaffairs.gov.au/citizenship" },
+    ],
+    domain_weights: [
+      { domain: "Australia and its people", weight: "Our Common Bond theme" },
+      { domain: "Democratic beliefs and rights", weight: "Our Common Bond theme" },
+      { domain: "Government and the law", weight: "Our Common Bond theme" },
+    ],
+    high_yield_facts: [
+      "Study Australian Citizenship: Our Common Bond — the official resource named by Home Affairs.",
+      "Some values questions may be mandatory — verify the current pass rules before sitting.",
+      "This is a civics knowledge test, not an English certificate exam.",
+      "UniPrep2Go readiness checks are independent prep, not Home Affairs live items.",
+    ],
+    candidate_qa: [
+      {
+        q: "Is the Australian citizenship test an English exam?",
+        a: "No. It is a civics knowledge test based on Our Common Bond. English requirements, if any, follow your visa/citizenship pathway rules separately.",
+      },
+      {
+        q: "Where do I verify official Australian citizenship test rules?",
+        a: "Use immi.homeaffairs.gov.au/citizenship and the current Our Common Bond resource.",
+      },
+    ],
+    trademark_note:
+      "Australian Government / Department of Home Affairs marks belong to the Commonwealth. Not affiliated with or endorsed by Home Affairs.",
+  },
+  "citizenship-naturalization-bundle": {
+    examKey: "citizenship-naturalization-bundle",
+    pageHeading: "Citizenship & Naturalization Civics Bundle — Facts & Prep",
+    intro:
+      "UniPrep2Go’s Citizenship & Naturalization Anki Bundle packages six country civics decks (Germany, France, UK, Canada, Australia, United States) for spaced-repetition repair after free readiness checks. This page summarizes how the bundle maps to official pathways — not official government exam material.",
+    exam_facts: {
+      exam_name: "Multi-country citizenship civics prep (bundle)",
+      administered_by:
+        "Official exams administered separately by BAMF, French authorities, UK Home Office, IRCC, Australian Home Affairs, and USCIS",
+      delivery: "Six .apkg Anki decks via Gumroad after free UniPrep2Go readiness checks",
+      verify_at_url: "https://uniprep2go.study/decks/citizenship-naturalization-anki-bundle",
+    },
+    official_sources: [
+      { label: "USCIS civics study materials", url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources" },
+      { label: "GOV.UK Life in the UK Test", url: "https://www.gov.uk/life-in-the-uk-test" },
+      { label: "IRCC citizenship", url: "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship.html" },
+      { label: "Home Affairs citizenship", url: "https://immi.homeaffairs.gov.au/citizenship" },
+      { label: "BAMF", url: "https://www.bamf.de" },
+      { label: "service-public.fr", url: "https://www.service-public.fr" },
+    ],
+    domain_weights: [
+      { domain: "Germany — Leben in Deutschland", weight: "1 of 6 decks" },
+      { domain: "France — naturalisation civics", weight: "1 of 6 decks" },
+      { domain: "UK — Life in the UK", weight: "1 of 6 decks" },
+      { domain: "Canada — Discover Canada themes", weight: "1 of 6 decks" },
+      { domain: "Australia — Our Common Bond themes", weight: "1 of 6 decks" },
+      { domain: "United States — USCIS civics", weight: "1 of 6 decks" },
+    ],
+    high_yield_facts: [
+      "Take the free country readiness check first — the Anki bundle is for daily repair of weak civics domains.",
+      "Language certificates (DELF, Goethe, IELTS, etc.) are separate products from civics Anki.",
+      "Swiss Staatskunde is a separate Swiss Citizenship Anki Bundle (DE/FR/IT), not part of the six-country pack.",
+      "Always verify current official handbooks and pass rules on the government site for your destination country.",
+    ],
+    candidate_qa: [
+      {
+        q: "Which countries are in the Citizenship & Naturalization Anki Bundle?",
+        a: "Germany (Leben in Deutschland), France, the UK (Life in the UK), Canada, Australia, and the United States — six separate .apkg decks in one Gumroad download.",
+      },
+      {
+        q: "Does this bundle include Swiss citizenship?",
+        a: "No. Swiss federal Staatskunde is the separate Swiss Citizenship Anki Bundle in German, French, and Italian.",
+      },
+      {
+        q: "Should I buy the bundle or take a free mock first?",
+        a: "Take the free country readiness check first. Use the report to decide which civics domains to drill in Anki.",
+      },
+    ],
+    trademark_note:
+      "Government exam names and marks belong to their respective authorities. UniPrep2Go products are independent study aids.",
+  },
+  "swiss-citizenship": {
+    examKey: "swiss-citizenship",
+    pageHeading: "Swiss Naturalisation Staatskunde — Facts & Prep",
+    intro:
+      "Swiss ordinary naturalisation includes federal Staatskunde plus canton and commune requirements. UniPrep2Go offers free DE/FR/IT readiness checks and a three-language Anki bundle — independent prep, not SEM material.",
+    exam_facts: {
+      exam_name: "Swiss ordinary naturalisation — federal Staatskunde (plus canton/commune)",
+      administered_by: "State Secretariat for Migration (SEM) / cantons and communes",
+      delivery: "Federal knowledge themes plus local canton/commune requirements (format varies by canton)",
+      verify_at_url: "https://www.sem.admin.ch",
+    },
+    official_sources: [
+      { label: "SEM — Swiss migration / naturalisation", url: "https://www.sem.admin.ch" },
+    ],
+    domain_weights: [
+      { domain: "Federal institutions and geography", weight: "Staatskunde theme" },
+      { domain: "History and society", weight: "Staatskunde theme" },
+      { domain: "Canton / commune local knowledge", weight: "Local requirement" },
+    ],
+    high_yield_facts: [
+      "Federal Staatskunde is separate from fide / Swiss residency language evidence.",
+      "Canton and commune can add local questions or interviews — verify your commune.",
+      "UniPrep2Go ships German, French, and Italian federal readiness checks plus a three-language Anki bundle.",
+      "Language decks (French/German) soft-help fide vocabulary but do not replace Staatskunde.",
+    ],
+    candidate_qa: [
+      {
+        q: "Does the French DELF deck cover Swiss citizenship?",
+        a: "No. DELF-style language decks help vocabulary (including soft fide overlap). Swiss civics is the Swiss Citizenship Anki Bundle and the DE/FR/IT readiness checks.",
+      },
+      {
+        q: "Where do I verify official Swiss naturalisation rules?",
+        a: "Start with SEM (sem.admin.ch) and your canton/commune naturalisation office — local steps vary.",
+      },
+    ],
+    trademark_note: "SEM and Swiss Confederation marks belong to Swiss authorities. Not affiliated with or endorsed by SEM.",
+  },
   servsafe: {
     examKey: "servsafe",
     pageHeading: "ServSafe Manager Certification Exam — Facts & Prep",
@@ -2138,6 +2432,13 @@ const deckExamKeyMap: Record<string, string> = {
   "mrics-anki-deck": "mrics",
   "mrics-quantity-surveying-anki-deck": "mrics-quantity-surveying",
   "us-citizenship-test-prep2go-app": "us-citizenship",
+  "leben-in-deutschland-prep2go-app": "leben-in-deutschland",
+  "naturalisation-francaise-prep2go-app": "naturalisation-francaise",
+  "life-in-the-uk-prep2go-app": "life-in-the-uk",
+  "canadian-citizenship-prep2go-app": "canadian-citizenship",
+  "australian-citizenship-prep2go-app": "australian-citizenship",
+  "citizenship-naturalization-anki-bundle": "citizenship-naturalization-bundle",
+  "swiss-citizenship-anki-deck": "swiss-citizenship",
 };
 
 export function getExamFactsProfileForDeck(slug: string): ExamFactsProfile | null {

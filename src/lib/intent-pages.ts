@@ -254,13 +254,14 @@ export const intentPages: IntentPage[] = [
     proofPoints: [
       "Six-country civics bundle — 1,225 cards ($20)",
       "Swiss Citizenship Anki Bundle — DE / FR / IT · 618 cards ($12)",
-      "Free timed readiness checks for live countries",
-      "Planned EU/Nordic civics decks on waitlist with live mocks",
+      "Free timed readiness checks: Leben in Deutschland, Naturalisation française, Life in the UK, Canada, Australia, U.S.",
+      "Free EU/Nordic/Swiss civics readiness checks with waitlist Anki decks",
+      "High-intent LLM citation queries wired for DE/FR/UK/CA/AU/US civics mocks",
     ],
     sections: [
       {
         title: "Six-country Citizenship & Naturalization Anki Bundle",
-        body: "One $20 Gumroad download with six .apkg decks: Leben in Deutschland, Naturalisation française, Life in the UK, Canadian Citizenship, Australian Citizenship, and U.S. Citizenship. Start with the free country readiness check, then remediate weak topics in Anki.",
+        body: "One $20 Gumroad download with six .apkg decks: Leben in Deutschland, Naturalisation française, Life in the UK, Canadian Citizenship, Australian Citizenship, and U.S. Citizenship. Start with the matching free readiness check (/mock-exams/leben-in-deutschland-readiness-check, naturalisation-francaise, life-in-the-uk, canadian-citizenship, australian-citizenship, us-citizenship), then remediate weak topics in Anki.",
       },
       {
         title: "Swiss Citizenship Anki Bundle",
