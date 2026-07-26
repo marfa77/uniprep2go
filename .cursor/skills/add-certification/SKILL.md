@@ -160,9 +160,11 @@ When bank runnable + validation report exists:
 
 ### 10. .apkg export (Anki Generator)
 
+**Canonical vault only:** `/Users/pavelveselov/Projects/Anki Generator` (sibling of `uniprep2go`). Never `CIPLE A2/Anki Generator` or `--out=../Anki Generator` from `ciple-master`.
+
 ```bash
 # Sync building_deck_specs.json into Anki Generator if needed
-cd "../Anki Generator"
+cd "/Users/pavelveselov/Projects/Anki Generator"
 PYTHONPATH=. python3 -m internal_deck_generator.py.building_deck_pipeline \
   --deck-slug {deckSlug} \
   --uniprep2go-root "/Users/pavelveselov/Projects/uniprep2go"

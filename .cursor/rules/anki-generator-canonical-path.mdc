@@ -1,0 +1,22 @@
+---
+description: Canonical Anki Generator vault for language deck rebuilds and Gumroad uploads
+alwaysApply: true
+---
+
+# Anki Generator path (locked)
+
+**Canonical vault:** `/Users/pavelveselov/Projects/Anki Generator`
+
+Sibling of `uniprep2go` and `CIPLE A2`. Gumroad language setup (`scripts/setup-gumroad-language-decks.mjs`) and citizenship bundle resolve `.apkg` from this vault.
+
+## Never
+
+- Export or build into `CIPLE A2/Anki Generator` (phantom created by `--out=../Anki Generator` from `ciple-master`)
+- Use `--out="../Anki Generator/..."` when cwd is `CIPLE A2/ciple-master`
+
+## Rebuild language decks from Prep2Go vocabulary
+
+1. From `CIPLE A2/ciple-master`: `npx tsx scripts/export-vocabulary-to-anki.ts --exam=CipleA2|DtzB1|... --fresh` (no `--out` — uses `anki-output-paths.ts`)
+2. Build stamped `.apkg` via `scripts/build-anki-deck/build_apkg.py` with absolute `--deck-dir` under the canonical vault
+3. Upload: `npm run setup:gumroad-language-decks -- --slug <slug> --assets-only` then `--copy-only`
+4. Sync site card counts in `src/lib/decks.ts` + landings
