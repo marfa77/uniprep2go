@@ -195,7 +195,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       "A free 60-question German-language Swiss citizenship readiness diagnostic across politics and direct democracy, history and culture, geography and the social system, and the naturalisation process — pairs with the Swiss Citizenship Anki Bundle (DE / FR / IT). Independent prep — not SEM / cantonal exam material.",
     examBody: "Switzerland SEM — ordinary naturalisation (federal Staatskunde DE; canton/commune varies)",
     questionSourceNote:
-      "Questions sourced from the Prep2Go Immigration app Einbürgerung Schweiz deck (Q&A converted to MCQ with distractors sampled from the same deck). Independent readiness check — not official Swiss government material.",
+      "Questions sourced from the Prep2Go Immigration app Einbürgerung Schweiz deck (Q&A converted to MCQ with related/near-miss distractors). Independent readiness check — not official Swiss government material.",
     lastUpdated: "2026-07-26",
     searchAliases: [
       "Swiss citizenship test",
@@ -227,7 +227,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       "A free 60-question French-language Swiss naturalisation readiness diagnostic — politics, history, geography, and the naturalisation process. Pairs with the Swiss Citizenship Anki Bundle (DE / FR / IT). Independent prep — not SEM material.",
     examBody: "Switzerland SEM — ordinary naturalisation (federal Staatskunde FR; canton/commune varies)",
     questionSourceNote:
-      "Questions sourced from the Prep2Go Immigration app Naturalisation Suisse deck (Q&A converted to MCQ with distractors sampled from the same deck). Independent readiness check — not official Swiss government material.",
+      "Questions sourced from the Prep2Go Immigration app Naturalisation Suisse deck (Q&A converted to MCQ with related/near-miss distractors). Independent readiness check — not official Swiss government material.",
     lastUpdated: "2026-07-26",
     searchAliases: [
       "naturalisation suisse test",
@@ -258,7 +258,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       "A free 60-question Italian-language Swiss naturalisation readiness diagnostic — politics, history, geography, and the naturalisation process. Pairs with the Swiss Citizenship Anki Bundle (DE / FR / IT). Independent prep — not SEM material.",
     examBody: "Switzerland SEM — ordinary naturalisation (federal Staatskunde IT; canton/commune varies)",
     questionSourceNote:
-      "Questions sourced from the Prep2Go Immigration app Naturalizzazione Svizzera deck (Q&A converted to MCQ with distractors sampled from the same deck). Independent readiness check — not official Swiss government material.",
+      "Questions sourced from the Prep2Go Immigration app Naturalizzazione Svizzera deck (Q&A converted to MCQ with related/near-miss distractors). Independent readiness check — not official Swiss government material.",
     lastUpdated: "2026-07-26",
     searchAliases: [
       "naturalizzazione svizzera test",
