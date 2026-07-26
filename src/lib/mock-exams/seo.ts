@@ -699,6 +699,156 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     audience: "Applicants preparing for Spanish nationality via the CCSE exam.",
     practiceTestLabel: "CCSE practice test",
   },
+  "swiss-citizenship-readiness-check": {
+    title: "Free Einbürgerung Schweiz Practice Test | 60 Questions",
+    description:
+      "Free German-language Swiss citizenship practice: 60 timed Staatskunde questions on politics, direct democracy, history, geography, and naturalisation. Pairs with the Swiss Citizenship Anki Bundle (DE / FR / IT). Independent prep — not SEM material.",
+    keywords: [
+      "Einbürgerung Schweiz üben",
+      "Staatskunde Schweiz Test",
+      "Swiss citizenship practice German",
+      "Einbürgerungstest Schweiz",
+    ],
+    headline: "Free Einbürgerung Schweiz Readiness Check",
+    intro:
+      "A timed German-language federal Staatskunde readiness check for Swiss ordinary naturalisation (canton/commune tests vary).",
+    audience: "German-speaking applicants preparing Swiss ordinary naturalisation civics checks.",
+    practiceTestLabel: "Einbürgerung Schweiz practice test",
+  },
+  "naturalisation-suisse-readiness-check": {
+    title: "Free Naturalisation Suisse Practice Test | 60 Questions",
+    description:
+      "Free French-language Swiss naturalisation practice: 60 timed questions on federal politics, history, geography, and the naturalisation process. Pairs with the Swiss Citizenship Anki Bundle (DE / FR / IT). Independent prep — not SEM material.",
+    keywords: [
+      "naturalisation suisse test",
+      "examen naturalisation suisse",
+      "connaissances fédérales Suisse",
+      "citoyenneté suisse pratique",
+    ],
+    headline: "Free Naturalisation Suisse Readiness Check",
+    intro:
+      "A timed French-language federal civics readiness check for Swiss ordinary naturalisation (canton/commune tests vary).",
+    audience: "French-speaking applicants preparing Swiss ordinary naturalisation civics checks.",
+    practiceTestLabel: "Naturalisation Suisse practice test",
+  },
+  "naturalizzazione-svizzera-readiness-check": {
+    title: "Free Naturalizzazione Svizzera Practice Test | 60 Questions",
+    description:
+      "Free Italian-language Swiss naturalisation practice: 60 timed questions on federal politics, history, geography, and the naturalisation process. Pairs with the Swiss Citizenship Anki Bundle (DE / FR / IT). Independent prep — not SEM material.",
+    keywords: [
+      "naturalizzazione svizzera test",
+      "esame cittadinanza svizzera",
+      "conoscenze federali Svizzera",
+      "cittadinanza svizzera pratica",
+    ],
+    headline: "Free Naturalizzazione Svizzera Readiness Check",
+    intro:
+      "A timed Italian-language federal civics readiness check for Swiss ordinary naturalisation (canton/commune tests vary).",
+    audience: "Italian-speaking applicants preparing Swiss ordinary naturalisation civics checks.",
+    practiceTestLabel: "Naturalizzazione Svizzera practice test",
+  },
+  "czech-citizenship-readiness-check": {
+    title: "Free Czech Citizenship Practice Test | 60 Questions",
+    description:
+      "Free Czech citizenship / reálie practice: 60 timed questions on state and rights, history and EU, society, and public services. Pairs with the planned Czech Citizenship Anki deck (waitlist). Independent prep — not official Interior Ministry material.",
+    keywords: [
+      "Czech citizenship practice test",
+      "občanství ČR test",
+      "zkouška z českých reálií",
+      "Czech naturalisation quiz",
+    ],
+    headline: "Free Czech Citizenship Readiness Check",
+    intro:
+      "A timed Czech-language civics readiness check for citizenship / permanent residence knowledge themes.",
+    audience: "Applicants preparing Czech citizenship or permanent residence civics knowledge.",
+    practiceTestLabel: "Czech citizenship practice test",
+  },
+  "polish-citizenship-readiness-check": {
+    title: "Free Polish Citizenship Practice Test | 60 Questions",
+    description:
+      "Free Polish citizenship practice: 60 timed questions on state and rights, history and EU, society, and public services. Pairs with the planned Polish Citizenship Anki deck (waitlist). Independent prep — not official Polish government material.",
+    keywords: [
+      "Polish citizenship practice test",
+      "obywatelstwo polskie test",
+      "egzamin z wiedzy o Polsce",
+      "Polish naturalisation quiz",
+    ],
+    headline: "Free Polish Citizenship Readiness Check",
+    intro:
+      "A timed Polish-language civics readiness check for naturalisation knowledge themes.",
+    audience: "Applicants preparing Polish citizenship / naturalisation civics knowledge.",
+    practiceTestLabel: "Polish citizenship practice test",
+  },
+  "denmark-indfoedsretsproeven-readiness-check": {
+    title: "Free Denmark Indfødsretsprøven Practice Test | 60 Questions",
+    description:
+      "Free Danish citizenship (Indfødsretsprøven) practice: 60 timed questions on constitution, society, welfare, and geography/EU. Pairs with the planned Denmark Indfødsretsprøven Anki deck (waitlist). Independent prep.",
+    keywords: ["Indfødsretsprøven", "Danish citizenship test", "Denmark citizenship practice"],
+    headline: "Free Denmark Indfødsretsprøven Readiness Check",
+    intro: "A timed Danish-language readiness check for the Indfødsretsprøven citizenship civics test.",
+    audience: "Applicants preparing the Danish Indfødsretsprøven.",
+    practiceTestLabel: "Indfødsretsprøven practice test",
+  },
+  "portugal-nacionalidade-readiness-check": {
+    title: "Free Portugal Nacionalidade Practice Test | 60 Questions",
+    description:
+      "Free Portuguese nationality civic knowledge practice: 60 timed questions. Pairs with the planned Portugal Nacionalidade Anki deck (waitlist). Independent prep — not IRN material.",
+    keywords: ["nacionalidade portuguesa", "conhecimento cívico", "Portugal citizenship test"],
+    headline: "Free Portugal Nacionalidade Readiness Check",
+    intro: "A timed Portuguese-language civic knowledge readiness check for nationality applicants.",
+    audience: "Applicants preparing Portuguese nationality civic knowledge.",
+    practiceTestLabel: "Portugal nacionalidade practice test",
+  },
+  "norway-statsborgerproven-readiness-check": {
+    title: "Free Norway Statsborgerprøven Practice Test | 60 Questions",
+    description:
+      "Free Norwegian citizenship (Statsborgerprøven) practice: 60 timed questions. Pairs with the planned Norway Statsborgerprøven Anki deck (waitlist). Independent prep — not UDI material.",
+    keywords: ["Statsborgerprøven", "Norwegian citizenship test", "statsborgerskap"],
+    headline: "Free Norway Statsborgerprøven Readiness Check",
+    intro: "A timed Norwegian-language readiness check for the Statsborgerprøven.",
+    audience: "Applicants preparing the Norwegian Statsborgerprøven.",
+    practiceTestLabel: "Statsborgerprøven practice test",
+  },
+  "sweden-medborgarskapsprov-readiness-check": {
+    title: "Free Sweden Medborgarskapsprov Practice Test | 60 Questions",
+    description:
+      "Free Swedish citizenship (Medborgarskapsprov) practice: 60 timed questions. Pairs with the planned Sweden Medborgarskapsprov Anki deck (waitlist). Independent prep.",
+    keywords: ["Medborgarskapsprov", "Swedish citizenship test", "medborgarskap"],
+    headline: "Free Sweden Medborgarskapsprov Readiness Check",
+    intro: "A timed Swedish-language readiness check for the Medborgarskapsprov.",
+    audience: "Applicants preparing the Swedish Medborgarskapsprov.",
+    practiceTestLabel: "Medborgarskapsprov practice test",
+  },
+  "belgium-flanders-mo-readiness-check": {
+    title: "Free Belgium Flanders MO Practice Test | 60 Questions",
+    description:
+      "Free Flanders maatschappelijke oriëntatie practice: 60 timed questions. Pairs with the planned Belgium Flanders MO Anki deck (waitlist). Independent prep.",
+    keywords: ["maatschappelijke oriëntatie", "Flanders MO", "inburgering Vlaanderen"],
+    headline: "Free Belgium Flanders MO Readiness Check",
+    intro: "A timed Dutch-language readiness check for Flanders maatschappelijke oriëntatie.",
+    audience: "Applicants preparing Flanders social orientation / integration civics.",
+    practiceTestLabel: "Flanders MO practice test",
+  },
+  "belgium-wallonie-citoyennete-readiness-check": {
+    title: "Free Belgium Wallonie Citoyenneté Practice Test | 60 Questions",
+    description:
+      "Free Wallonia citoyenneté practice: 60 timed questions. Pairs with the planned Belgium Wallonie Citoyenneté Anki deck (waitlist). Independent prep.",
+    keywords: ["citoyenneté Wallonie", "parcours d'intégration", "Belgium Wallonia citizenship"],
+    headline: "Free Belgium Wallonie Citoyenneté Readiness Check",
+    intro: "A timed French-language readiness check for Wallonia citoyenneté / parcours d'intégration.",
+    audience: "Applicants preparing Wallonia citizenship / integration civics.",
+    practiceTestLabel: "Wallonie citoyenneté practice test",
+  },
+  "luxembourg-vivre-ensemble-readiness-check": {
+    title: "Free Luxembourg Vivre ensemble Practice Test | 60 Questions",
+    description:
+      "Free Luxembourg Vivre ensemble practice: 60 timed questions. Pairs with the planned Luxembourg Vivre ensemble Anki deck (waitlist). Independent prep.",
+    keywords: ["Vivre ensemble Luxembourg", "Luxembourg citizenship test", "nationalité luxembourgeoise"],
+    headline: "Free Luxembourg Vivre ensemble Readiness Check",
+    intro: "A timed French-language readiness check for Luxembourg Vivre ensemble / nationality civics.",
+    audience: "Applicants preparing Luxembourg Vivre ensemble citizenship themes.",
+    practiceTestLabel: "Vivre ensemble practice test",
+  },
 };
 
 export function getMockSeoProfile(config: MockExamConfig): MockSeoProfile {

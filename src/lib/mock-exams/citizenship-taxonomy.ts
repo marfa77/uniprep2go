@@ -37,4 +37,64 @@ export const citizenshipTaxonomyEntries: Record<string, CitizenshipTaxonomyEntry
     familyId: "citizenship",
     searchAliases: ["CCSE", "CCSE España", "prueba CCSE", "nacionalidad española"],
   },
+  "swiss-citizenship-readiness-check": {
+    verticalId: "licensing",
+    familyId: "citizenship",
+    searchAliases: ["Swiss citizenship", "Einbürgerung Schweiz", "Staatskunde"],
+  },
+  "naturalisation-suisse-readiness-check": {
+    verticalId: "licensing",
+    familyId: "citizenship",
+    searchAliases: ["naturalisation suisse", "examen naturalisation suisse", "Staatskunde français"],
+  },
+  "naturalizzazione-svizzera-readiness-check": {
+    verticalId: "licensing",
+    familyId: "citizenship",
+    searchAliases: ["naturalizzazione svizzera", "cittadinanza svizzera", "Staatskunde italiano"],
+  },
+  "czech-citizenship-readiness-check": {
+    verticalId: "licensing",
+    familyId: "citizenship",
+    searchAliases: ["Czech citizenship", "občanství ČR", "zkouška z reálií"],
+  },
+  "polish-citizenship-readiness-check": {
+    verticalId: "licensing",
+    familyId: "citizenship",
+    searchAliases: ["Polish citizenship", "obywatelstwo polskie", "wiedza o Polsce"],
+  },
+  "denmark-indfoedsretsproeven-readiness-check": {
+    verticalId: "licensing",
+    familyId: "citizenship",
+    searchAliases: ["Indfødsretsprøven", "Danish citizenship test"],
+  },
+  "portugal-nacionalidade-readiness-check": {
+    verticalId: "licensing",
+    familyId: "citizenship",
+    searchAliases: ["nacionalidade portuguesa", "conhecimento cívico"],
+  },
+  "norway-statsborgerproven-readiness-check": {
+    verticalId: "licensing",
+    familyId: "citizenship",
+    searchAliases: ["Statsborgerprøven", "Norwegian citizenship test"],
+  },
+  "sweden-medborgarskapsprov-readiness-check": {
+    verticalId: "licensing",
+    familyId: "citizenship",
+    searchAliases: ["Medborgarskapsprov", "Swedish citizenship test"],
+  },
+  "belgium-flanders-mo-readiness-check": {
+    verticalId: "licensing",
+    familyId: "citizenship",
+    searchAliases: ["maatschappelijke oriëntatie", "Flanders MO", "inburgering Vlaanderen"],
+  },
+  "belgium-wallonie-citoyennete-readiness-check": {
+    verticalId: "licensing",
+    familyId: "citizenship",
+    searchAliases: ["citoyenneté Wallonie", "parcours d'intégration"],
+  },
+  "luxembourg-vivre-ensemble-readiness-check": {
+    verticalId: "licensing",
+    familyId: "citizenship",
+    searchAliases: ["Vivre ensemble Luxembourg", "Luxembourg citizenship"],
+  },
 };

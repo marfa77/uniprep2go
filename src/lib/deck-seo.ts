@@ -432,7 +432,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "DELE CCSE Spanish Nationality Prep — Dual Anki Bundle",
     studyLabel: "DELE CCSE Spanish nationality exam prep",
     description:
-      "Planned Spanish nationality Anki bundle: DELE A2 vocabulary plus CCSE civics. Not currently for sale — use the standalone DELE SIELE deck for language prep.",
+      "Planned Spanish nationality Anki bundle: DELE A2 vocabulary plus CCSE civics. Not currently for sale — take the free CCSE readiness check, then join the waitlist. Use the standalone DELE SIELE deck for language prep now.",
     keywords: [
       "dele a2 anki",
       "ccse anki deck",
@@ -441,7 +441,53 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "dele ccse bundle",
     ],
     intro:
-      "Planned listing for applicants who want DELE language and CCSE civics together. Not sold in the current Gumroad language lineup.",
+      "Planned listing for applicants who want DELE language and CCSE civics together. Free CCSE readiness check is live; Anki bundle is waitlist-only until launch.",
+  },
+  "swiss-citizenship-anki-deck": {
+    title: "Swiss Citizenship Anki Bundle | DE FR IT · 618 Cards",
+    headline: "Swiss Citizenship Anki Bundle — DE / FR / IT · 618 Cards",
+    studyLabel: "Swiss citizenship Staatskunde exam prep",
+    description:
+      "Swiss citizenship Anki bundle: 618 federal Staatskunde flashcards in three .apkg decks (German, French, Italian). Free DE / FR / IT readiness checks funnel into this $12 Gumroad download. Independent study aid — not SEM material.",
+    keywords: [
+      "swiss citizenship anki",
+      "einbürgerung anki",
+      "staatskunde flashcards",
+      "naturalisation suisse anki",
+      "naturalizzazione svizzera anki",
+    ],
+    intro:
+      "Take a free DE / FR / IT readiness check first, then drill weak federal civics topics with this three-language Swiss Anki bundle.",
+  },
+  "czech-citizenship-anki-deck": {
+    title: "Czech Citizenship Anki Deck | Reálie Flashcards",
+    headline: "Czech Citizenship Prep — Planned Anki Deck",
+    studyLabel: "Czech citizenship reálie exam prep",
+    description:
+      "Planned Czech citizenship Anki deck for civics / reálie knowledge. Not currently for sale — take the free Czech Citizenship readiness check, then join the waitlist. Independent study aid — not Interior Ministry material.",
+    keywords: [
+      "czech citizenship anki",
+      "občanství anki",
+      "české reálie flashcards",
+      "czech naturalisation deck",
+    ],
+    intro:
+      "Planned Czech civics Anki deck. Free readiness check is live; use Notify me when Anki launches until the .apkg ships.",
+  },
+  "polish-citizenship-anki-deck": {
+    title: "Polish Citizenship Anki Deck | Knowledge of Poland",
+    headline: "Polish Citizenship Prep — Planned Anki Deck",
+    studyLabel: "Polish citizenship exam prep",
+    description:
+      "Planned Polish citizenship Anki deck for naturalisation civics. Not currently for sale — take the free Polish Citizenship readiness check, then join the waitlist. Independent study aid — not official government material.",
+    keywords: [
+      "polish citizenship anki",
+      "obywatelstwo anki",
+      "wiedza o polsce flashcards",
+      "polish naturalisation deck",
+    ],
+    intro:
+      "Planned Polish civics Anki deck. Free readiness check is live; use Notify me when Anki launches until the .apkg ships.",
   },
 
   "delf-b2-french-anki-deck": {

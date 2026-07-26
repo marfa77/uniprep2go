@@ -37,6 +37,16 @@ describe("mock exam configs", () => {
     const languageFunnelExceptions = new Set([
       "citizenship-naturalization-anki-bundle",
       "dele-a2-ccse-spanish-citizenship-bundle",
+      "swiss-citizenship-anki-deck",
+      "czech-citizenship-anki-deck",
+      "polish-citizenship-anki-deck",
+      "denmark-indfoedsretsproeven-anki-deck",
+      "portugal-nacionalidade-anki-deck",
+      "norway-statsborgerproven-anki-deck",
+      "sweden-medborgarskapsprov-anki-deck",
+      "belgium-flanders-mo-anki-deck",
+      "belgium-wallonie-citoyennete-anki-deck",
+      "luxembourg-vivre-ensemble-anki-deck",
     ]);
     for (const config of getAllMockExams()) {
       // Civics mocks may funnel to Gumroad Anki bundles filed under language.
@@ -46,7 +56,7 @@ describe("mock exam configs", () => {
     }
   });
 
-  it("funnels all citizenship readiness mocks to the Anki naturalization bundle", async () => {
+  it("funnels six-country citizenship readiness mocks to the Anki naturalization bundle", async () => {
     const { getDeckLinkedMocks } = await import("../deck-seo");
     const slugs = [
       "us-citizenship-readiness-check",
@@ -67,16 +77,78 @@ describe("mock exam configs", () => {
     expect(getDeckLinkedMocks("citizenship-naturalization-anki-bundle")).toHaveLength(6);
   });
 
-  it("imports CCSE España readiness mock from Prep2Go and links the DELE+CCSE bundle", () => {
+  it("imports CCSE España readiness mock from Prep2Go and links the planned DELE+CCSE waitlist", async () => {
+    const { getDeckBySlug } = await import("../decks");
     const config = getMockExamConfig("ccse-espana-readiness-check");
     expect(config?.status).toBe("live");
     expect(config?.linkedDeckSlug).toBe("dele-a2-ccse-spanish-citizenship-bundle");
+    expect(getDeckBySlug("dele-a2-ccse-spanish-citizenship-bundle")?.status).toBe("planned");
     expect(config?.questionCount).toBe(60);
     expect(isMockExamRunnable("ccse-espana-readiness-check")).toBe(true);
     const { questions, errors } = getQuestionBankForExam("ccse-espana-readiness-check");
     expect(errors).toEqual([]);
     expect(questions).toHaveLength(60);
     expect(questions[0]?.sourceNote).toContain("CCSE");
+  });
+
+  it("imports Swiss DE/FR/IT readiness mocks and funnels to the Swiss Anki bundle", async () => {
+    const { getDeckBySlug } = await import("../decks");
+    const { getDeckLinkedMocks } = await import("../deck-seo");
+    const deck = getDeckBySlug("swiss-citizenship-anki-deck");
+    expect(deck?.status).toBe("available");
+    expect(deck?.checkoutUrl).toContain("swiss-citizenship-anki-deck");
+    for (const [slug, note] of [
+      ["swiss-citizenship-readiness-check", "Einbürgerung Schweiz"],
+      ["naturalisation-suisse-readiness-check", "Naturalisation Suisse"],
+      ["naturalizzazione-svizzera-readiness-check", "Naturalizzazione Svizzera"],
+    ] as const) {
+      expect(getMockExamConfig(slug)?.linkedDeckSlug).toBe("swiss-citizenship-anki-deck");
+      expect(isMockExamRunnable(slug)).toBe(true);
+      const { questions, errors } = getQuestionBankForExam(slug);
+      expect(errors).toEqual([]);
+      expect(questions).toHaveLength(60);
+      expect(questions[0]?.sourceNote).toContain(note);
+    }
+    expect(getDeckLinkedMocks("swiss-citizenship-anki-deck")).toHaveLength(3);
+  });
+
+  it("imports Czech and Polish citizenship readiness mocks with planned Anki waitlists", async () => {
+    const { getDeckBySlug } = await import("../decks");
+    for (const [slug, deckSlug, note] of [
+      ["czech-citizenship-readiness-check", "czech-citizenship-anki-deck", "Czech Citizenship"],
+      ["polish-citizenship-readiness-check", "polish-citizenship-anki-deck", "Polish Citizenship"],
+    ] as const) {
+      expect(getMockExamConfig(slug)?.status).toBe("live");
+      expect(getMockExamConfig(slug)?.linkedDeckSlug).toBe(deckSlug);
+      expect(getDeckBySlug(deckSlug)?.status).toBe("planned");
+      expect(isMockExamRunnable(slug)).toBe(true);
+      const { questions, errors } = getQuestionBankForExam(slug);
+      expect(errors).toEqual([]);
+      expect(questions).toHaveLength(60);
+      expect(questions[0]?.sourceNote).toContain(note);
+    }
+  });
+
+  it("imports Nordic/Benelux/Portugal civics readiness mocks with planned Anki waitlists", async () => {
+    const { getDeckBySlug } = await import("../decks");
+    for (const [slug, deckSlug, note] of [
+      ["denmark-indfoedsretsproeven-readiness-check", "denmark-indfoedsretsproeven-anki-deck", "Denmark Indfødsretsprøven"],
+      ["portugal-nacionalidade-readiness-check", "portugal-nacionalidade-anki-deck", "Portugal Nacionalidade"],
+      ["norway-statsborgerproven-readiness-check", "norway-statsborgerproven-anki-deck", "Norway Statsborgerprøven"],
+      ["sweden-medborgarskapsprov-readiness-check", "sweden-medborgarskapsprov-anki-deck", "Sweden Medborgarskapsprov"],
+      ["belgium-flanders-mo-readiness-check", "belgium-flanders-mo-anki-deck", "Belgium Flanders MO"],
+      ["belgium-wallonie-citoyennete-readiness-check", "belgium-wallonie-citoyennete-anki-deck", "Belgium Wallonie Citoyenneté"],
+      ["luxembourg-vivre-ensemble-readiness-check", "luxembourg-vivre-ensemble-anki-deck", "Luxembourg Vivre ensemble"],
+    ] as const) {
+      expect(getMockExamConfig(slug)?.status, slug).toBe("live");
+      expect(getMockExamConfig(slug)?.linkedDeckSlug, slug).toBe(deckSlug);
+      expect(getDeckBySlug(deckSlug)?.status, deckSlug).toBe("planned");
+      expect(isMockExamRunnable(slug), slug).toBe(true);
+      const { questions, errors } = getQuestionBankForExam(slug);
+      expect(errors, slug).toEqual([]);
+      expect(questions, slug).toHaveLength(60);
+      expect(questions[0]?.sourceNote, slug).toContain(note);
+    }
   });
 
   it("defines SIE topic counts that sum to 75", () => {

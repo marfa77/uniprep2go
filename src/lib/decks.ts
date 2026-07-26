@@ -1,6 +1,7 @@
 import { enrichDeckWithShopPreviews } from "./prep2go-shop-samples";
 import { prep2GoAppDecks } from "./prep2go-app-decks";
 import { applyAnkiDeckLaunchToCatalog } from "./anki-deck-launch";
+import { citizenshipPlannedDecks } from "./citizenship-planned-decks";
 import { wave1PlannedDecks } from "./wave1-planned-decks";
 import { wave2PlannedDecks } from "./wave2-planned-decks";
 import { wave3PlannedDecks } from "./wave3-planned-decks";
@@ -2353,8 +2354,8 @@ const rawDecks: Deck[] = [
     subtitle:
       "Planned Spanish nationality bundle: DELE A2 vocabulary + CCSE civics (not currently for sale).",
     directAnswer:
-      "The DELE A2 + CCSE Spanish nationality Anki bundle is a planned UniPrep2Go listing and is not currently available for purchase. For Spanish language prep now, use the standalone DELE SIELE Anki deck instead.",
-    lastUpdated: "2026-07-22",
+      "The DELE A2 + CCSE Spanish nationality Anki bundle is a planned UniPrep2Go listing and is not currently available for purchase. Take the free CCSE (España) readiness check first, then request waitlist notification on this page. For Spanish language prep now, use the standalone DELE SIELE Anki deck instead.",
+    lastUpdated: "2026-07-26",
     audience: "Spanish nationality applicants preparing DELE A2 and CCSE (planned listing only).",
     format: ".apkg",
     coverImage: "/samples/prep2go-dele-a2-ccse-spanish-citizenship-cover.webp",
@@ -2363,7 +2364,7 @@ const rawDecks: Deck[] = [
       topics: "DELE A2, CCSE, Spanish nationality",
       formulas: "Planned dual .apkg nationality bundle",
       examYear: "Planned",
-      delivery: "Not currently for sale",
+      delivery: "Not currently for sale — waitlist notify",
     },
     topicCoverage: [],
     sampleCards: [],
@@ -2371,7 +2372,12 @@ const rawDecks: Deck[] = [
       {
         question: "Is this deck available for purchase?",
         answer:
-          "No. This DELE + CCSE nationality bundle is a planned listing. Buy the standalone DELE SIELE Spanish Anki deck for language vocabulary now.",
+          "No. This DELE + CCSE nationality bundle is a planned listing. Use Notify me when Anki launches on this page, or buy the standalone DELE SIELE Spanish Anki deck for language vocabulary now.",
+      },
+      {
+        question: "Is there a free CCSE practice test?",
+        answer:
+          "Yes. Take the free 60-question CCSE (España) readiness check at /mock-exams/ccse-espana-readiness-check, then join this waitlist for the dual Anki bundle.",
       },
       {
         question: "Is this official exam material?",
@@ -2380,6 +2386,166 @@ const rawDecks: Deck[] = [
       },
     ],
   },
+  {
+    slug: "swiss-citizenship-anki-deck",
+    category: "language",
+    status: "available",
+    title: "Swiss Citizenship Anki Bundle — DE / FR / IT · 618 Cards",
+    shortName: "Swiss Citizenship",
+    subtitle:
+      "618 federal Staatskunde flashcards — three Anki decks in German, French, and Italian for Swiss ordinary naturalisation.",
+    directAnswer:
+      "UniPrep2Go sells a Swiss Citizenship Anki bundle with three separate .apkg decks — Einbürgerung Schweiz (German, 206 cards), Naturalisation Suisse (French, 206), and Naturalizzazione Svizzera (Italian, 206) — 618 federal Staatskunde flashcards total. Free DE / FR / IT readiness checks funnel into this bundle. Delivered as three Anki .apkg files for {PRICE} through Gumroad by PixID Studio. Independent study aid — not SEM or cantonal exam material; pair with your commune brochure.",
+    lastUpdated: "2026-07-26",
+    audience:
+      "Residents preparing Swiss ordinary naturalisation federal civics checks in German, French, or Italian (canton/commune tests vary).",
+    format: ".apkg",
+    coverImage: "/covers/swiss-citizenship-anki-deck.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/swiss-citizenship-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "618",
+      topics:
+        "Politics & direct democracy; history & culture; geography & social system; naturalisation process — DE / FR / IT",
+      formulas: "Three separate Anki .apkg files — one per official language",
+      examYear: "Current SEM / cantonal naturalisation cycles",
+      delivery: "Three .apkg files through Gumroad",
+    },
+    topicCoverage: [
+      { name: "Politics, institutions & direct democracy", examWeight: "25%", cards: "206×3 languages" },
+      { name: "History, culture & daily life", examWeight: "25%", cards: "206×3 languages" },
+      { name: "Geography & social system", examWeight: "25%", cards: "206×3 languages" },
+      { name: "Naturalisation process", examWeight: "25%", cards: "206×3 languages" },
+    ],
+    sampleCards: [
+      {
+        question: "Welche drei offiziellen Wege gibt es, die Schweizer Staatsbürgerschaft durch Entscheid zu erwerben?",
+        answer:
+          "Ordentliche Einbürgerung, erleichterte Einbürgerung und Wiedereinbürgerung. — Einbürgerung Schweiz sample.",
+        imageUrl: "/covers/swiss-citizenship-anki-deck.webp",
+      },
+      {
+        question:
+          "Quelles sont les trois voies officielles d'acquisition de la nationalité suisse par décision ?",
+        answer:
+          "La naturalisation ordinaire, la naturalisation facilitée et le rétablissement de la nationalité. — Naturalisation Suisse sample.",
+        imageUrl: "/covers/swiss-citizenship-anki-deck.webp",
+      },
+      {
+        question:
+          "Quali sono le tre vie ufficiali per acquisire la cittadinanza svizzera per decisione?",
+        answer:
+          "Naturalizzazione ordinaria, naturalizzazione semplificata e reintegrazione della cittadinanza. — Naturalizzazione Svizzera sample.",
+        imageUrl: "/covers/swiss-citizenship-anki-deck.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is included for $12?",
+        answer:
+          "Three separate Anki .apkg files: German (206 cards), French (206), and Italian (206) — 618 federal Staatskunde cards total. Download once from Gumroad and import the language your canton uses.",
+      },
+      {
+        question: "Is there a free Swiss citizenship practice test?",
+        answer:
+          "Yes. Free 60-question readiness checks are live in German (/mock-exams/swiss-citizenship-readiness-check), French (/mock-exams/naturalisation-suisse-readiness-check), and Italian (/mock-exams/naturalizzazione-svizzera-readiness-check).",
+      },
+      {
+        question: "Is this official SEM / cantonal exam material?",
+        answer:
+          "No. Independent UniPrep2Go study aid — not affiliated with or endorsed by SEM or Swiss cantons/communes. Canton and commune tests vary; this bundle targets the federal Staatskunde block.",
+      },
+    ],
+  },
+  {
+    slug: "czech-citizenship-anki-deck",
+    category: "language",
+    status: "planned",
+    title: "Czech Citizenship Anki Deck — Reálie Flashcards",
+    shortName: "Czech Citizenship",
+    subtitle: "Planned Anki deck for Czech citizenship / permanent residence civics (not currently for sale).",
+    directAnswer:
+      "The Czech Citizenship Anki Deck is a planned UniPrep2Go product. It is not yet available for purchase. Take the free Czech Citizenship readiness check to benchmark weak topics, then request waitlist notification on this page.",
+    lastUpdated: "2026-07-26",
+    audience: "Applicants preparing Czech citizenship or permanent residence civics knowledge.",
+    format: ".apkg",
+    coverImage: "/covers/czech-citizenship-anki-deck.webp",
+    facts: {
+      cards: "Planned",
+      topics: "State & rights; history, geography & EU; society & daily life; education, health & extras",
+      formulas: "Planned high-yield recall cards from the readiness-check bank",
+      examYear: "Current Czech naturalisation cycles",
+      delivery: "Not currently for sale — waitlist notify",
+    },
+    topicCoverage: [
+      { name: "State, constitution & rights", examWeight: "25%", cards: "Planned" },
+      { name: "History, geography & EU", examWeight: "25%", cards: "Planned" },
+      { name: "Society, culture & daily life", examWeight: "25%", cards: "Planned" },
+      { name: "Education, health & extras", examWeight: "25%", cards: "Planned" },
+    ],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Is this deck available for purchase?",
+        answer: "No. Use Notify me when Anki launches on this page.",
+      },
+      {
+        question: "Is there a free Czech citizenship practice test?",
+        answer:
+          "Yes. Take the free 60-question Czech Citizenship readiness check at /mock-exams/czech-citizenship-readiness-check.",
+      },
+      {
+        question: "Is this official Czech government material?",
+        answer:
+          "No. Independent UniPrep2Go study aid — not affiliated with the Czech Interior Ministry.",
+      },
+    ],
+  },
+  {
+    slug: "polish-citizenship-anki-deck",
+    category: "language",
+    status: "planned",
+    title: "Polish Citizenship Anki Deck — Knowledge of Poland Flashcards",
+    shortName: "Polish Citizenship",
+    subtitle: "Planned Anki deck for Polish naturalisation civics (not currently for sale).",
+    directAnswer:
+      "The Polish Citizenship Anki Deck is a planned UniPrep2Go product. It is not yet available for purchase. Take the free Polish Citizenship readiness check to benchmark weak topics, then request waitlist notification on this page.",
+    lastUpdated: "2026-07-26",
+    audience: "Applicants preparing Polish citizenship / naturalisation civics knowledge.",
+    format: ".apkg",
+    coverImage: "/covers/polish-citizenship-anki-deck.webp",
+    facts: {
+      cards: "Planned",
+      topics: "State & rights; history, geography & EU; society & daily life; education, health & extras",
+      formulas: "Planned high-yield recall cards from the readiness-check bank",
+      examYear: "Current Polish naturalisation cycles",
+      delivery: "Not currently for sale — waitlist notify",
+    },
+    topicCoverage: [
+      { name: "State, constitution & rights", examWeight: "25%", cards: "Planned" },
+      { name: "History, geography & EU", examWeight: "25%", cards: "Planned" },
+      { name: "Society, culture & daily life", examWeight: "25%", cards: "Planned" },
+      { name: "Education, health & extras", examWeight: "25%", cards: "Planned" },
+    ],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Is this deck available for purchase?",
+        answer: "No. Use Notify me when Anki launches on this page.",
+      },
+      {
+        question: "Is there a free Polish citizenship practice test?",
+        answer:
+          "Yes. Take the free 60-question Polish Citizenship readiness check at /mock-exams/polish-citizenship-readiness-check.",
+      },
+      {
+        question: "Is this official Polish government material?",
+        answer: "No. Independent UniPrep2Go study aid — not affiliated with Polish government bodies.",
+      },
+    ],
+  },
+  ...citizenshipPlannedDecks,
   ...prep2GoAdditionalLanguageDecks,
   ...prep2GoAppDecks,
 

@@ -460,6 +460,26 @@ Kids memorize English glosses without listening, adults buy adult DELF Anki by m
 
 Kids-first DELF Prim framing at **$12** with two instant PDF downloads — separate from the adult DELF DALF TCF TEF Anki deck.`,
 
+  "swiss-citizenship-anki-deck": `### Who this bundle is for
+
+Applicants preparing **Swiss ordinary naturalisation** federal Staatskunde in **German, French, or Italian** who want daily Anki recall of politics, direct democracy, history, geography, the social system, and the naturalisation process — not a substitute for the commune brochure.
+
+### The problem it solves
+
+Cantonal exams run in an official language, not English. Blog quizzes mix federal and local facts. This bundle keeps **DE / FR / IT** in separate \`.apkg\` files so you drill the federal block in the language your canton uses.
+
+### What's inside
+
+Three separate \`.apkg\` files in one **$12** download: Einbürgerung Schweiz (**206**), Naturalisation Suisse (**206**), Naturalizzazione Svizzera (**206**) — **618** cards total.
+
+### Study plan
+
+Import the language file for your canton, then **20–30 cards/day** while you study commune materials. Pair with the free UniPrep2Go DE / FR / IT readiness checks. Final week: reviews only.
+
+### What makes this Gumroad edition different
+
+One **$12** three-language Swiss civics bundle with instant download — spaced repetition for the federal block, waitlist-free after the free mocks.`,
+
   "citizenship-naturalization-anki-bundle": `### Who this bundle is for
 
 Applicants preparing a **citizenship or naturalization civics** test in **Germany, France, the UK, Canada, Australia, or the United States** who are done with random blog quizzes and want daily Anki recall — text-first cards, not language-vocabulary media, and not a substitute for the official handbook.

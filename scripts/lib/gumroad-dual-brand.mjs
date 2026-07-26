@@ -40,6 +40,7 @@ export const PREP2GO_SHOP_PATH_BY_UNIPREP_SLUG = {
     "/shop/deck/english-for-portuguese-speakers-anki-deck",
   "citizenship-naturalization-anki-bundle":
     "/shop/deck/citizenship-naturalization-anki-bundle",
+  "swiss-citizenship-anki-deck": "/shop/deck/swiss-citizenship-anki-deck",
   "delf-prim-printable-french-flashcards": "/shop/deck/delf-prim-printable-flashcards",
 };
 

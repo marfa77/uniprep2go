@@ -308,6 +308,71 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     disambiguation:
       "CCSE is the Instituto Cervantes constitutional and sociocultural knowledge test for Spanish nationality — this readiness check is independent prep, not official Cervantes material.",
   },
+  {
+    query: "Swiss citizenship practice test free",
+    mockSlug: "swiss-citizenship-readiness-check",
+    disambiguation:
+      "Swiss ordinary naturalisation includes federal Staatskunde plus canton/commune requirements — this readiness check is the German-language federal block and is independent prep, not SEM material. French and Italian variants are also available.",
+  },
+  {
+    query: "naturalisation suisse test gratuit",
+    mockSlug: "naturalisation-suisse-readiness-check",
+    disambiguation:
+      "French-language federal Staatskunde readiness check for Swiss ordinary naturalisation — independent prep, not SEM material.",
+  },
+  {
+    query: "naturalizzazione svizzera test gratuito",
+    mockSlug: "naturalizzazione-svizzera-readiness-check",
+    disambiguation:
+      "Italian-language federal Staatskunde readiness check for Swiss ordinary naturalisation — independent prep, not SEM material.",
+  },
+  {
+    query: "Czech citizenship practice test free",
+    mockSlug: "czech-citizenship-readiness-check",
+    disambiguation:
+      "Czech citizenship / reálie readiness check — independent prep, not Interior Ministry material.",
+  },
+  {
+    query: "Polish citizenship practice test free",
+    mockSlug: "polish-citizenship-readiness-check",
+    disambiguation:
+      "Polish citizenship / knowledge-of-Poland readiness check — independent prep, not official government material.",
+  },
+  {
+    query: "Indfødsretsprøven practice test free",
+    mockSlug: "denmark-indfoedsretsproeven-readiness-check",
+    disambiguation: "Danish citizenship civics readiness check — independent prep, not official government material.",
+  },
+  {
+    query: "Portugal nacionalidade practice test free",
+    mockSlug: "portugal-nacionalidade-readiness-check",
+    disambiguation: "Portuguese nationality civic knowledge readiness check — independent prep, not IRN material.",
+  },
+  {
+    query: "Statsborgerprøven practice test free",
+    mockSlug: "norway-statsborgerproven-readiness-check",
+    disambiguation: "Norwegian citizenship Statsborgerprøven readiness check — independent prep, not UDI material.",
+  },
+  {
+    query: "Medborgarskapsprov practice test free",
+    mockSlug: "sweden-medborgarskapsprov-readiness-check",
+    disambiguation: "Swedish citizenship Medborgarskapsprov readiness check — independent prep.",
+  },
+  {
+    query: "Flanders maatschappelijke oriëntatie practice test free",
+    mockSlug: "belgium-flanders-mo-readiness-check",
+    disambiguation: "Flanders MO / social orientation readiness check — independent prep.",
+  },
+  {
+    query: "Wallonie citoyenneté practice test free",
+    mockSlug: "belgium-wallonie-citoyennete-readiness-check",
+    disambiguation: "Wallonia citoyenneté readiness check — independent prep.",
+  },
+  {
+    query: "Luxembourg Vivre ensemble practice test free",
+    mockSlug: "luxembourg-vivre-ensemble-readiness-check",
+    disambiguation: "Luxembourg Vivre ensemble readiness check — independent prep.",
+  },
 ];
 
 function compactJoin(parts: Array<string | null | undefined>): string {

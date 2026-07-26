@@ -135,6 +135,7 @@ describe("deck catalog", () => {
       ...expectedAnkiLanguageDecks,
       "delf-prim-printable-french-flashcards",
       "citizenship-naturalization-anki-bundle",
+      "swiss-citizenship-anki-deck",
     ];
 
     const languageDecks = availableDecks.filter((deck) => deck.category === "language");
@@ -188,6 +189,18 @@ describe("deck catalog", () => {
     expect(citizenshipBundle?.directAnswer).toContain("six separate .apkg");
     expect(citizenshipBundle?.sampleCards).toHaveLength(3);
 
+    const swissBundle = getDeckBySlug("swiss-citizenship-anki-deck");
+    expect(swissBundle).toMatchObject({
+      status: "available",
+      format: ".apkg",
+      checkoutProvider: "Gumroad",
+      checkoutSeller: "PixID Studio",
+      checkoutUrl: "https://pixidstudio.gumroad.com/l/swiss-citizenship-anki-deck?wanted=true",
+    });
+    expect(swissBundle?.facts.cards).toBe("618");
+    expect(swissBundle?.directAnswer).toContain("three separate .apkg");
+    expect(swissBundle?.sampleCards).toHaveLength(3);
+
     expect(getDeckBySlug("ciple-a2-european-portuguese-anki-deck")?.directAnswer).toContain(
       "nacionalidade portuguesa",
     );
@@ -233,6 +246,8 @@ describe("deck catalog", () => {
     expect(deleDeck?.directAnswer).toContain("not a DELE + CCSE nationality bundle");
     expect(deleDeck?.directAnswer).toContain("single Anki .apkg");
     expect(getDeckBySlug("dele-a2-ccse-spanish-citizenship-bundle")?.status).toBe("planned");
+    expect(getDeckBySlug("czech-citizenship-anki-deck")?.status).toBe("planned");
+    expect(getDeckBySlug("polish-citizenship-anki-deck")?.status).toBe("planned");
     const frenchDeck = getDeckBySlug("delf-b2-french-anki-deck");
     expect(frenchDeck?.title).toContain("DELF DALF TCF TEF");
     expect(frenchDeck?.directAnswer).toContain("TCF Canada");
@@ -654,6 +669,8 @@ describe("deck catalog", () => {
         "DELF Prim Printable French Flashcards — Ages 7–12 · 360 PDF Cards",
       "citizenship-naturalization-anki-bundle":
         "Citizenship & Naturalization Anki Bundle — 6 Countries · 1225 Cards",
+      "swiss-citizenship-anki-deck":
+        "Swiss Citizenship Anki Bundle — DE / FR / IT · 618 Cards",
       "dele-a2-spanish-anki-deck": "DELE SIELE Spanish Anki Deck — 1000 Flashcards",
       "dutch-a2-inburgering-anki-deck":
         "Dutch Inburgering NT2 A2 Anki Deck — 1000+ Flashcards",
