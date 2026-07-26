@@ -215,6 +215,7 @@ describe("deck catalog", () => {
     expect(getDeckBySlug("celi-b1-italian-anki-deck")?.facts.cards).toBe("1500");
     expect(getDeckBySlug("danish-a2-prove-i-dansk-anki-deck")?.title).toContain("PD2 PD3");
     expect(getDeckBySlug("norwegian-a2-norskprove-anki-deck")?.title).toContain("Norskprøve");
+    expect(getDeckBySlug("norwegian-a2-norskprove-anki-deck")?.facts.cards).toBe("1500");
     expect(getDeckBySlug("swedish-a2-sfi-anki-deck")?.title).toContain("Swedish SFI");
     expect(getDeckBySlug("greek-a2-ellinomatheia-anki-deck")?.title).toContain("Ellinomatheia");
     expect(getDeckBySlug("czech-a2-cce-anki-deck")?.title).toContain("Czech CCE");
@@ -713,7 +714,7 @@ describe("deck catalog", () => {
       "danish-a2-prove-i-dansk-anki-deck":
         "Danish Prøve i Dansk PD2 PD3 Anki Deck — 1000 Flashcards",
       "norwegian-a2-norskprove-anki-deck":
-        "Norwegian Norskprøve Residence Citizenship Anki Deck — 1000 Flashcards",
+        "Norwegian Norskprøve Residence Citizenship Anki Deck — 1500 Flashcards",
       "swedish-a2-sfi-anki-deck":
         "Swedish SFI Residence Citizenship Anki Deck — 1000 Flashcards",
       "greek-a2-ellinomatheia-anki-deck":

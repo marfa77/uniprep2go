@@ -220,11 +220,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Prøve i Dansk PD2 / PD3 learners and residence or citizenship applicants drill everyday Danish vocabulary on a daily Anki schedule.",
   },
   "norwegian-a2-norskprove-anki-deck": {
-    title: "Norwegian Norskprøve Residence Citizenship Anki | 1000 Cards",
-    headline: "Norwegian Norskprøve Residence Citizenship Prep — 1000 Flashcards",
+    title: "Norwegian Norskprøve Residence Citizenship Anki | 1500 Cards",
+    headline: "Norwegian Norskprøve Residence Citizenship Prep — 1500 Flashcards",
     studyLabel: "Norwegian Norskprøve exam prep",
     description:
-      "Norwegian Bokmål Anki deck with 1000 flashcards for Norskprøve A2 and residence or citizenship language prep. Independent study aid — not official Norskprøve material.",
+      "Norwegian Bokmål Anki deck with 1500 flashcards for Norskprøve A2 and residence or citizenship language prep. Independent study aid — not official Norskprøve material.",
     keywords: [
       "norskprove anki",
       "norskprøve flashcards",

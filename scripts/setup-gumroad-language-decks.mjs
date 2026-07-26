@@ -127,12 +127,12 @@ const SPECS = {
     fileNames: ["Danish_Prove_i_Dansk_PD2_PD3_Anki_Deck.apkg"],
   },
   "norwegian-a2-norskprove-anki-deck": {
-    name: "Norwegian Norskprøve Residence Citizenship Anki Deck — 1000 Flashcards",
+    name: "Norwegian Norskprøve Residence Citizenship Anki Deck — 1500 Flashcards",
     summary:
-      "1,000 Bokmål cards for Norskprøve A2 and Norwegian residence or citizenship language prep.",
+      "1,500 Bokmål cards for Norskprøve A2 and Norwegian residence or citizenship language prep.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — Norwegian Anki deck for <strong>Norskprøve A2</strong>, <strong>permanent oppholdstillatelse</strong>, and <strong>statsborgerskap</strong> language prep.</p>",
-      "<p><strong>1,000</strong> Bokmål cards with audio and everyday example sentences.</p>",
+      "<p><strong>1,500</strong> Bokmål cards with audio and everyday example sentences.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official Norskprøve material.</em></p>",
     ].join(""),

@@ -1741,12 +1741,12 @@ const rawDecks: Deck[] = [
     slug: "norwegian-a2-norskprove-anki-deck",
     category: "language",
     status: "available",
-    title: "Norwegian Norskprøve Residence Citizenship Anki Deck — 1000 Flashcards",
+    title: "Norwegian Norskprøve Residence Citizenship Anki Deck — 1500 Flashcards",
     shortName: "Norwegian Norskprøve",
-    subtitle: "1,000 Bokmål flashcards for Norskprøve A2 and Norwegian residence or citizenship language prep.",
+    subtitle: "1,500 Bokmål flashcards for Norskprøve A2 and Norwegian residence or citizenship language prep.",
     directAnswer:
-      "UniPrep2Go sells a Norwegian Norskprøve Anki deck with 1,000 exam-specific Bokmål vocabulary cards, audio, and practical example sentences for work, housing, services, and everyday interaction in Norway. Built for Norskprøve A2 and the language side of permanent residence (permanent oppholdstillatelse) and citizenship (statsborgerskap) pathways. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
-    lastUpdated: "2026-07-22",
+      "UniPrep2Go sells a Norwegian Norskprøve Anki deck with 1,500 exam-specific Bokmål vocabulary cards, audio, and practical example sentences for work, housing, services, and everyday interaction in Norway. Built for Norskprøve A2 and the language side of permanent residence (permanent oppholdstillatelse) and citizenship (statsborgerskap) pathways. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-07-26",
     audience: "Norskprøve A2 learners and applicants preparing Norwegian for residence or citizenship language requirements.",
     format: ".apkg",
     coverImage: "/samples/prep2go-norwegian-a2-norskprove-cover.webp",
@@ -1754,7 +1754,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "1000",
+      cards: "1500",
       topics: "Norskprøve A2, Norwegian residence and citizenship vocabulary (Bokmål)",
       formulas: "Audio + example sentences for Norskprøve and daily-life themes",
       examYear: "Current Norskprøve / residence-citizenship cycle",
@@ -1776,7 +1776,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "1,000 exam-specific Norwegian vocabulary words for Norskprøve with audio and Anki-ready review.",
+          "1,500 exam-specific Norwegian vocabulary words for Norskprøve with audio and Anki-ready review.",
       },
       {
         question: "What file format is delivered?",

@@ -285,7 +285,7 @@ SPECS: dict[str, dict[str, Any]] = {
     },
     "norwegian-a2-norskprove-anki-deck": {
         "label": "Norwegian Norskprøve Residence Citizenship",
-        "headline": "Norwegian Norskprøve Residence Citizenship Anki Deck — 1000 Flashcards",
+        "headline": "Norwegian Norskprøve Residence Citizenship Anki Deck — 1500 Flashcards",
         "exam": "Norskprøve A2 · permanent residence · statsborgerskap",
         "hook": (
             "Bokmål vocabulary for Norskprøve A2 and the language side of permanent "
@@ -304,7 +304,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "Norskprøve A2 · permanent oppholdstillatelse · statsborgerskap",
         "deck_covers": (
-            "1,000 exam-specific Bokmål vocabulary cards with audio and practical "
+            "1,500 exam-specific Bokmål vocabulary cards with audio and practical "
             "example sentences for work, housing, services, and everyday interaction."
         ),
         "not_included": (
@@ -315,12 +315,12 @@ SPECS: dict[str, dict[str, Any]] = {
             "Residence and citizenship timelines reward consistent Norwegian recall. "
             "Spaced Anki keeps everyday Bokmål available under exam pressure."
         ),
-        "cards": "1000",
+        "cards": "1500",
         "format_note": "Anki .apkg with audio and examples",
         "sample_captions": ["være", "jeg", "du"],
         "facts": [
             ("Pathways", "Norskprøve · residence · citizenship"),
-            ("Cards", "1000 vocabulary"),
+            ("Cards", "1500 vocabulary"),
             ("Media", "Audio + examples"),
             ("Delivery", "Instant .apkg"),
         ],
