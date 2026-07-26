@@ -32,4 +32,9 @@ export const citizenshipTaxonomyEntries: Record<string, CitizenshipTaxonomyEntry
     familyId: "citizenship",
     searchAliases: ["Australian citizenship test", "Home Affairs citizenship"],
   },
+  "ccse-espana-readiness-check": {
+    verticalId: "licensing",
+    familyId: "citizenship",
+    searchAliases: ["CCSE", "CCSE España", "prueba CCSE", "nacionalidad española"],
+  },
 };

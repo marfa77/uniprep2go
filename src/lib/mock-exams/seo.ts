@@ -682,6 +682,23 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     audience: "Permanent residents preparing for the Australian citizenship test.",
     practiceTestLabel: "Australian citizenship practice test",
   },
+  "ccse-espana-readiness-check": {
+    title: "Free CCSE Practice Test (España) | 60 Questions",
+    description:
+      "Free CCSE (España) practice test: 60 timed questions on Spanish constitution, institutions, culture/geography, and everyday life for nacionalidad española. Pairs with the DELE + CCSE Anki bundle. Independent prep — not Instituto Cervantes material.",
+    keywords: [
+      "CCSE practice test",
+      "prueba CCSE gratis",
+      "CCSE España test",
+      "nacionalidad española práctica",
+      "Instituto Cervantes CCSE",
+    ],
+    headline: "Free CCSE (España) Readiness Check",
+    intro:
+      "A timed readiness check for the Instituto Cervantes CCSE — constitutional knowledge, institutions, culture, and everyday Spanish life.",
+    audience: "Applicants preparing for Spanish nationality via the CCSE exam.",
+    practiceTestLabel: "CCSE practice test",
+  },
 };
 
 export function getMockSeoProfile(config: MockExamConfig): MockSeoProfile {

@@ -302,6 +302,12 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     disambiguation:
       "USCIS naturalization civics test draws from a published question pool — this readiness check is independent prep, not a USCIS interview.",
   },
+  {
+    query: "CCSE practice test free España",
+    mockSlug: "ccse-espana-readiness-check",
+    disambiguation:
+      "CCSE is the Instituto Cervantes constitutional and sociocultural knowledge test for Spanish nationality — this readiness check is independent prep, not official Cervantes material.",
+  },
 ];
 
 function compactJoin(parts: Array<string | null | undefined>): string {

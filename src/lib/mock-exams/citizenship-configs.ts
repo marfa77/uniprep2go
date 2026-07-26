@@ -139,6 +139,39 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     lastUpdated: "2026-07-26",
     searchAliases: ["Australian citizenship test", "Aussie citizenship practice"],
   }),
+  nicheReadinessConfig({
+    slug: "ccse-espana-readiness-check",
+    title: "CCSE (España) Readiness Check",
+    shortTitle: "CCSE España",
+    linkedDeckSlug: "dele-a2-ccse-spanish-citizenship-bundle",
+    durationMinutes: 45,
+    questionCount: NICHE_SESSION_QUESTIONS,
+    passPercent: 60,
+    topics: fourNicheTopics(
+      [
+        { id: "constitution", label: "Government & constitution" },
+        { id: "institutions-rights", label: "Institutions, elections & rights" },
+        { id: "geography-culture", label: "Geography, history & culture" },
+        { id: "everyday-life", label: "Everyday life & procedures" },
+      ],
+      60,
+    ),
+    officialSourceNote:
+      "Readiness check sampled from Prep2Go CCSE (España) civics themes (Instituto Cervantes constitutional and sociocultural knowledge test). Official CCSE is 25 questions; pass mark is typically 15/25. Not official Instituto Cervantes material.",
+    description:
+      "A free 60-question CCSE (España) readiness diagnostic across constitution, institutions, culture/geography, and everyday life — pairs with the DELE + CCSE Spanish nationality Anki bundle. Independent prep — not Instituto Cervantes material.",
+    examBody: "Instituto Cervantes — CCSE (conocimientos constitucionales y socioculturales de España)",
+    questionSourceNote:
+      "Questions sourced from the Prep2Go Immigration app CCSE (España) deck (Q&A converted to MCQ with distractors sampled from the same deck). Independent readiness check — not official Instituto Cervantes material.",
+    lastUpdated: "2026-07-26",
+    searchAliases: [
+      "CCSE",
+      "CCSE España",
+      "prueba CCSE",
+      "nacionalidad española test",
+      "Instituto Cervantes citizenship test",
+    ],
+  }),
 ];
 
 export const citizenshipMockSlugs = citizenshipMockExamConfigs.map((c) => c.slug);

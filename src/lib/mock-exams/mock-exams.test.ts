@@ -34,9 +34,13 @@ describe("mock exam configs", () => {
 
   it("does not attach mocks to language certification decks", async () => {
     const { getCatalogDeckBySlug } = await import("../decks");
+    const languageFunnelExceptions = new Set([
+      "citizenship-naturalization-anki-bundle",
+      "dele-a2-ccse-spanish-citizenship-bundle",
+    ]);
     for (const config of getAllMockExams()) {
-      // Citizenship civics mocks funnel to the Gumroad Anki bundle (category language).
-      if (config.linkedDeckSlug === "citizenship-naturalization-anki-bundle") continue;
+      // Civics mocks may funnel to Gumroad Anki bundles filed under language.
+      if (languageFunnelExceptions.has(config.linkedDeckSlug)) continue;
       const deck = getCatalogDeckBySlug(config.linkedDeckSlug);
       expect(deck?.category, config.slug).not.toBe("language");
     }
@@ -61,6 +65,18 @@ describe("mock exam configs", () => {
       expect.arrayContaining(slugs),
     );
     expect(getDeckLinkedMocks("citizenship-naturalization-anki-bundle")).toHaveLength(6);
+  });
+
+  it("imports CCSE España readiness mock from Prep2Go and links the DELE+CCSE bundle", () => {
+    const config = getMockExamConfig("ccse-espana-readiness-check");
+    expect(config?.status).toBe("live");
+    expect(config?.linkedDeckSlug).toBe("dele-a2-ccse-spanish-citizenship-bundle");
+    expect(config?.questionCount).toBe(60);
+    expect(isMockExamRunnable("ccse-espana-readiness-check")).toBe(true);
+    const { questions, errors } = getQuestionBankForExam("ccse-espana-readiness-check");
+    expect(errors).toEqual([]);
+    expect(questions).toHaveLength(60);
+    expect(questions[0]?.sourceNote).toContain("CCSE");
   });
 
   it("defines SIE topic counts that sum to 75", () => {

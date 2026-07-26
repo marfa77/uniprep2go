@@ -159,6 +159,7 @@ const mockDeckRepairPairSlugs: Array<{ mockSlug: string; deckSlug: string }> = [
   { mockSlug: "life-in-the-uk-readiness-check", deckSlug: "citizenship-naturalization-anki-bundle" },
   { mockSlug: "canadian-citizenship-readiness-check", deckSlug: "citizenship-naturalization-anki-bundle" },
   { mockSlug: "australian-citizenship-readiness-check", deckSlug: "citizenship-naturalization-anki-bundle" },
+  { mockSlug: "ccse-espana-readiness-check", deckSlug: "dele-a2-ccse-spanish-citizenship-bundle" },
   { mockSlug: "life-and-health-insurance-readiness-check", deckSlug: "life-and-health-insurance-exam-anki-deck" },
   { mockSlug: "california-real-estate-readiness-check", deckSlug: "california-real-estate-exam-anki-deck" },
   { mockSlug: "ptcb-pharmacy-technician-mock", deckSlug: "ptcb-pharmacy-technician-anki-deck" },
