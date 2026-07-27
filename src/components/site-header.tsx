@@ -34,6 +34,9 @@ export function SiteHeader() {
         <Link className={btnLinkNav} href="/building-certification-anki-decks">
           Building certs
         </Link>
+        <Link className={btnLinkNav} href="/blog">
+          Blog
+        </Link>
         <Link className={btnLinkNav} href="/comics/gaivota-em-portugal">
           Comics
         </Link>

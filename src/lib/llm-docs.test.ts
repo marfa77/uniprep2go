@@ -304,6 +304,8 @@ describe("LLM documents", () => {
     expect(llms).toContain("Top citation queries");
     expect(llms).toContain("/mock-exams/sie-full-mock");
     expect(llms).toContain("Language decks (secondary");
+    expect(llms).toContain("## Exam prep guides");
+    expect(llms).toContain("/blog/epa-608-practice-test-what-to-expect");
     expect(llms.length).toBeLessThan(32000);
   });
 
@@ -319,6 +321,7 @@ describe("LLM documents", () => {
     expect(bundle).toContain("## Flashcard decks & PDFs");
     expect(bundle).toContain("## Mock exams (all verticals)");
     expect(bundle).toContain("## Intent answer pages");
+    expect(bundle).toContain("## Exam prep blog guides");
     expect(bundle).toContain("## Site FAQs");
     expect(bundle).toContain("Checkout provider:");
     expect(bundle).toContain("Snippet signals:");

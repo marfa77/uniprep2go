@@ -8,6 +8,7 @@ import {
 } from "./decks";
 import type { PricedDeck } from "./checkout-pricing";
 import { formatDeckPriceLabel } from "./checkout-pricing";
+import { getAllBlogPosts } from "./blog";
 import { getIntentPageDecks, intentPages, type IntentPage } from "./intent-pages";
 import { getAllMockExams } from "./mock-exams/configs";
 import { mockFreeAccessNotice } from "./mock-exams/pricing";
@@ -499,6 +500,24 @@ ${page.faqs.map((faq) => `- ${faq.question}\n  ${faq.answer}`).join("\n")}`;
   )
   .join("\n\n")}
 
+## Exam prep blog guides
+
+${getAllBlogPosts()
+  .map(
+    (post) => `### ${post.title}
+
+- Slug: ${post.slug}
+- URL: ${absoluteUrl(`/blog/${post.slug}`)}
+- Description: ${post.metaDescription}
+- Linked mock: ${absoluteUrl(`/mock-exams/${post.mockSlug}`)}
+- Linked deck: ${absoluteUrl(`/decks/${post.deckSlug}`)}
+- Published: ${post.publishedAt}
+
+FAQs:
+${post.faqs.map((faq) => `- ${faq.question}\n  ${faq.answer}`).join("\n")}`,
+  )
+  .join("\n\n")}
+
 ## Site FAQs
 
 ${siteFaqs.map((faq) => `### ${faq.question}\n\n${faq.answer}`).join("\n\n")}
@@ -598,6 +617,16 @@ ${languageDecks
   .join("\n")}
 - Full language list: ${absoluteUrl("/language-certification-decks")}
 - Free Portuguese history comic (Gaivota Ep.01): ${llmMarkdownLink("O Terramoto 1755", "/comics/gaivota-em-portugal/01-1755-earthquake")}
+
+## Exam prep guides
+
+${getAllBlogPosts()
+  .map(
+    (post) =>
+      `- ${llmMarkdownLink(post.titleTag, `/blog/${post.slug}`)} — mock: ${post.mockSlug}`,
+  )
+  .join("\n")}
+- Blog index: ${absoluteUrl("/blog")}
 
 ## Machine-readable sources
 

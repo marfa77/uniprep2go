@@ -22,6 +22,7 @@ import { DeckSeoSections } from "@/components/decks/deck-seo-sections";
 import { DeckUniqueContentSection } from "@/components/decks/deck-unique-content-section";
 import { DeckStickyCheckoutBar } from "@/components/decks/deck-sticky-checkout-bar";
 import { DeckWaitlistCta } from "@/components/decks/deck-waitlist-cta";
+import { RelatedExamGuidesSection } from "@/components/blog/related-exam-guides";
 import { CollapsibleDetails } from "@/components/ui/collapsible-details";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 import {
@@ -635,6 +636,11 @@ export default async function DeckPage({
             </div>
           </section>
         ) : null}
+
+        <RelatedExamGuidesSection
+          deckSlug={deck.slug}
+          heading={`Guides for ${deck.shortName}`}
+        />
 
         <DeckRelatedDecks deck={deck} />
 

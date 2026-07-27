@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getAllBlogPosts } from "../lib/blog";
 import { availableDecks } from "../lib/decks";
 import { intentPages } from "../lib/intent-pages";
 import { getAllMockExams } from "../lib/mock-exams/configs";
@@ -43,6 +44,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.85,
     }));
+
+  const blogIndex = {
+    url: `${siteUrl}/blog`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.86,
+  };
+
+  const blogPosts = getAllBlogPosts().map((post) => ({
+    url: `${siteUrl}/blog/${post.slug}`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority: 0.84,
+  }));
 
   return [
     {
@@ -136,6 +151,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     ...indexedIntentPages,
+    blogIndex,
+    ...blogPosts,
     {
       url: `${siteUrl}/mock-exams`,
       lastModified,

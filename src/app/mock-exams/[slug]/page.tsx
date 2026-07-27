@@ -13,6 +13,7 @@ import {
   MockOfficialResourcesPanel,
   MockRelatedExamsSection,
 } from "@/components/mock-exams/mock-page-enrichment";
+import { RelatedExamGuidesSection } from "@/components/blog/related-exam-guides";
 import {
   MockExamAboutVisibleSection,
   MockExamFeaturedFaqSection,
@@ -272,6 +273,10 @@ export default async function MockExamPage({
         </CollapsibleDetails>
 
         <MockRelatedExamsSection config={config} />
+        <RelatedExamGuidesSection
+          heading="Guides for this exam"
+          mockSlug={config.slug}
+        />
 
         <details className="sr-only" data-llm="machine-sources">
           <summary>For AI assistants — machine-readable sources</summary>
