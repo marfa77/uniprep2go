@@ -1,3 +1,4 @@
+import { ankiVsQuizletExamPrepPost } from "./posts/anki-vs-quizlet-exam-prep";
 import { californiaRealEstateDreCentersPost } from "./posts/california-real-estate-dre-centers";
 import { californiaRealEstatePsiVsPearsonPost } from "./posts/california-real-estate-psi-vs-pearson";
 import { cdlHazmatStateFingerprintingPost } from "./posts/cdl-hazmat-state-fingerprinting";
@@ -6,9 +7,12 @@ import { epa608Type1VsType2Post } from "./posts/epa-608-type-1-vs-type-2";
 import { finraSieExamPrepPost } from "./posts/finra-sie-exam-prep";
 import { floridaFoodManagerDbprRulesPost } from "./posts/florida-food-manager-dbpr-rules";
 import { lebenInDeutschlandEnglishPrepPost } from "./posts/leben-in-deutschland-english-prep";
+import { mricsApcVsAssocricsPost } from "./posts/mrics-apc-vs-assocrics";
+import { neboshIgcVsDiplomaPost } from "./posts/nebosh-igc-vs-diploma";
 import { servsafeFloridaRequirementsPost } from "./posts/servsafe-florida-requirements";
 import { servsafeManagerStudyGuidePost } from "./posts/servsafe-manager-study-guide";
 import { swissCitizenshipCantonalFormatPost } from "./posts/swiss-citizenship-cantonal-format";
+import { wellApVsFitwelPost } from "./posts/well-ap-vs-fitwel";
 import {
   BLOG_STOCK_IMAGE_CONFIG,
   blogStockImagePublicPath,
@@ -48,6 +52,10 @@ export function withBlogStockImages(draft: BlogPostDraft): BlogPost {
 }
 
 const blogPostDrafts: BlogPostDraft[] = [
+  ankiVsQuizletExamPrepPost,
+  neboshIgcVsDiplomaPost,
+  mricsApcVsAssocricsPost,
+  wellApVsFitwelPost,
   lebenInDeutschlandEnglishPrepPost,
   cdlHazmatStateFingerprintingPost,
   swissCitizenshipCantonalFormatPost,

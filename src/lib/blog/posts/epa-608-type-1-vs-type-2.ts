@@ -2,146 +2,200 @@ import type { BlogPostDraft } from "../types";
 
 export const epa608Type1VsType2Post: BlogPostDraft = {
   slug: "epa-608-type-1-vs-type-2-which-first",
-  title: "EPA 608 Type I vs Type II: Which Should You Take First?",
-  titleTag: "EPA 608 Type I vs Type II: Which to Take First",
+  title: "EPA 608 Type I vs Type II: Which One Should You Take First",
+  titleTag: "EPA 608 Type I vs Type II: Order, Difficulty & Universal First?",
   metaDescription:
-    "Type I covers small appliances; Type II covers high-pressure systems. Here is which to take first, when Universal is cheaper long-term, and the open-book Core trap.",
+    "Type I is open-book. Type II is not. But if you take Type I open-book first, you cannot use it toward Universal. Here is the exact order that saves you time and money.",
   publishedAt: "2026-07-27",
   eyebrow: "EPA 608 · HVAC certification",
   clusterId: "epa-608",
   relatedSlugs: ["epa-608-practice-test-what-to-expect"],
   intro:
-    "**If you work residential or light commercial HVAC, take Type II (with a proctored Core) — or go Universal in one sitting.** Type I alone only covers small appliances (roughly 5 lbs or less of refrigerant as manufactured). The expensive mistake is passing an **open-book Core for Type I**, then discovering that Core **does not count** toward Type II, Type III, or Universal later.",
+    "**The EPA 608 exam is not one test. It is four: Core (mandatory), Type I (small appliances), Type II (high-pressure), and Type III (low-pressure).** Most HVAC technicians know they need “EPA certification.” Fewer know that the order in which you take the sections determines whether you end up with a limited credential or a career-ready one. This guide covers Type I vs Type II, the open-book trap that locks you out of Universal, and why most technicians should go straight for Universal.",
   mockSlug: "epa-608-readiness-check",
   deckSlug: "hvac-epa-608-anki-deck",
   cta: {
-    mockLabel: "Take the free EPA 608 mock",
-    deckLabel: "Drill recovery numbers with Anki",
+    mockLabel: "Take the free EPA 608 readiness check",
+    deckLabel: "Drill Universal numbers with Anki",
     summary:
-      "Take the free EPA 608 mock → see Core vs type weak spots → drill recovery targets and dates before you pick Type I, Type II, or Universal.",
+      "Not sure if you are ready for Universal? Take the free EPA 608 readiness check covering Core, Type I, and Type II material, then drill weak areas with the EPA 608 Anki deck before you sit.",
   },
   sections: [
     {
-      heading: "Type I vs Type II in One Minute",
+      heading: "What Each Type Actually Covers",
       blocks: [
         {
           type: "table",
-          caption: "What each type authorizes",
-          headers: ["Certification", "Equipment", "Typical jobs"],
+          caption: "EPA 608 section coverage",
+          headers: ["Type", "Equipment", "Examples", "Exam questions"],
           rows: [
             [
               "Type I",
-              "Small appliances (≤5 lbs manufactured charge, hermetic)",
-              "Window AC, domestic fridge/freezer, PTAC, vending, water coolers",
+              "Small appliances with ≤5 lbs of refrigerant",
+              "Household refrigerators, window ACs, dehumidifiers, vending machines",
+              "25 (Core) + 25 (Type I)",
             ],
             [
               "Type II",
-              "High / very-high pressure (not small appliances or MVAC)",
-              "Split systems, heat pumps, rooftop units, supermarket racks",
+              "High- and very-high-pressure appliances",
+              "Residential split systems, rooftop units, supermarket refrigeration",
+              "25 (Core) + 25 (Type II)",
             ],
             [
               "Type III",
               "Low-pressure appliances",
-              "Centrifugal chillers, large building cooling",
+              "Large commercial chillers, industrial cooling",
+              "25 (Core) + 25 (Type III)",
             ],
-            ["Universal", "Core + I + II + III", "Any Section 608 appliance type"],
+            [
+              "Universal",
+              "All of the above",
+              "Everything regulated under Section 608",
+              "25 Core + 25 I + 25 II + 25 III",
+            ],
           ],
         },
         {
           type: "p",
-          text: "You must pass **Core** plus the type sections you need. Universal is Core + Type I + Type II + Type III.",
+          text: "Core is mandatory for every type. You cannot get Type I, II, or III without passing Core first.",
         },
       ],
     },
     {
-      heading: "Decision Tree: What Should You Book?",
+      heading: "The Open-Book Trap That Wastes Your Time",
+      blocks: [
+        {
+          type: "p",
+          text: "Type I has a unique rule: if you take **only** the Type I exam, it can be administered as an open-book test. This sounds like an easy win. The problem is that if you later decide you want Universal — which most employers require — the EPA does **not** accept an open-book Core test toward Universal.",
+        },
+        {
+          type: "steps",
+          items: [
+            {
+              title: "1. Open-book Type I",
+              body: "You take Type I open-book and pass.",
+            },
+            {
+              title: "2. Job needs more",
+              body: "You get hired and realize the job requires Type II or Universal.",
+            },
+            {
+              title: "3. Retake Core proctored",
+              body: "You go back to retake Core — this time closed-book and proctored.",
+            },
+            {
+              title: "4. Retake Type I too",
+              body: "You also retake Type I closed-book, because the open-book Type I does not count toward Universal. You pay twice and waste a sitting.",
+            },
+          ],
+        },
+        {
+          type: "p",
+          text: "If there is any chance you will work on residential AC, heat pumps, or commercial refrigeration, skip the open-book Type I. Take the full proctored exam and get Universal on the first try.",
+        },
+      ],
+    },
+    {
+      heading: "Type I vs Type II: The Real Difficulty Gap",
+      blocks: [
+        {
+          type: "p",
+          text: "**Type I** is the easiest section because the equipment is simple. You are dealing with factory-sealed systems that hold 5 pounds or less of refrigerant. The recovery requirement is straightforward: recover to 0 psi before disposal. Leak repair rules are minimal because small appliances are exempt from the leak rate thresholds that apply to larger systems.",
+        },
+        {
+          type: "p",
+          text: "**Type II** is where most technicians struggle. The material adds leak detection and repair requirements (30-day repair timeline for comfort cooling, 120 days for industrial process refrigeration), evacuation levels (15 inches of vacuum for high-pressure systems, or 0 psi if leaking), recovery techniques that minimize loss and cross-contamination, and charging/servicing protocols for systems opened during repair.",
+        },
+        {
+          type: "p",
+          text: "The Type II exam also assumes refrigerant blends, temperature glide, and retrofit rules — concepts that do not appear on Type I.",
+        },
+      ],
+    },
+    {
+      heading: "Who Should Take Type I Only?",
+      blocks: [
+        {
+          type: "ul",
+          items: [
+            "You work exclusively on appliances (refrigerators, freezers, window units) and will never touch residential or commercial HVAC",
+            "Your employer specifically requires only Type I and will not pay for additional certification",
+            "You are an appliance repair apprentice testing the waters before committing to HVAC",
+          ],
+        },
+        {
+          type: "p",
+          text: "Even then, the cost difference between Type I and Universal is usually $20–$40 at most testing centers. For that price, you buy the option to work on any system later without retesting.",
+        },
+      ],
+    },
+    {
+      heading: "Who Should Skip Straight to Universal?",
+      blocks: [
+        {
+          type: "ul",
+          items: [
+            "You are entering HVAC as a career, not a side job",
+            "You plan to work on residential AC or heat pumps (Type II territory)",
+            "Your state or employer requires Universal for apprenticeship programs",
+            "You want to avoid the retake trap described above",
+          ],
+        },
+        {
+          type: "p",
+          text: "The Universal exam is Core + Type I + Type II + Type III in one sitting — about 100 questions instead of 50. The pass rate is roughly 70% for prepared candidates.",
+        },
+        {
+          type: "p",
+          text: "**The only reason to delay Universal:** if you are brand new and have never touched refrigerant, Type III chiller material may be foreign. Some training programs sit Type I + II first, then add Type III later. That is a training choice, not an EPA requirement — the EPA does not care about section order as long as you pass them.",
+        },
+      ],
+    },
+    {
+      heading: "Exam Strategy by Goal",
+      blocks: [
+        {
+          type: "table",
+          caption: "Best path by career goal",
+          headers: ["Your goal", "Best path", "Why"],
+          rows: [
+            [
+              "Appliance repair only",
+              "Type I (proctored, not open-book)",
+              "Keeps the door open for Universal later",
+            ],
+            [
+              "Residential HVAC service",
+              "Core + Type II, or Universal",
+              "Type II covers split systems and heat pumps",
+            ],
+            [
+              "Commercial HVAC + chillers",
+              "Universal",
+              "Type III is required for chillers",
+            ],
+            [
+              "“I do not know yet”",
+              "Universal",
+              "Costs marginally more, eliminates retakes",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Numbers That Matter on Each Exam",
       blocks: [
         {
           type: "topics",
           items: [
             {
-              title: "Only service small appliances (appliances / vending / PTACs)",
-              body: "Type I can be enough. Some providers offer Type I with an open-book path. That is fine **only if you will never need Type II/III/Universal** — because an open-book Core generally cannot be reused for those credentials.",
+              title: "Type I-specific",
+              body: "Recovery: 0 psi before disposal. Equipment: factory-sealed, ≤5 lbs refrigerant. No leak repair thresholds (small appliances are exempt).",
             },
             {
-              title: "Install or service residential / light commercial AC and heat pumps",
-              body: "You need **Type II**. Book a **proctored Core + Type II**. Skip open-book Type I shortcuts unless you also need small-appliance work soon.",
-            },
-            {
-              title: "Chillers / low-pressure equipment",
-              body: "You need **Type III** (plus Core). Most field techs who touch chillers eventually want Universal anyway.",
-            },
-            {
-              title: "Apprentice or early-career HVAC tech unsure of the next five years",
-              body: "Book **Universal in one proctored session** (Core + I + II + III). One fee cycle, one day of testing, lifetime credential under current EPA rules.",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      heading: "The Open-Book Core Trap",
-      blocks: [
-        {
-          type: "p",
-          text: "EPA’s own technician certification page states that **Core tests taken as an open-book exam cannot be used to get Universal certification**. The Core must be proctored for Universal. Providers warn the same for stacking into Type II or Type III after an open-book Type I path.",
-        },
-        {
-          type: "ul",
-          items: [
-            "Open-book Type I can look cheaper and easier today",
-            "Later you pay again for a proctored Core when you need Type II or Universal",
-            "Passing scores and rules vary by certifying organization — read your provider’s exam rules before you click “open book”",
-          ],
-        },
-        {
-          type: "p",
-          text: "If Universal is even a maybe, start with a proctored Core.",
-        },
-      ],
-    },
-    {
-      heading: "Which Numbers Differ Between Type I and Type II?",
-      blocks: [
-        {
-          type: "p",
-          text: "Core shared topics (ozone, venting bans, reclaim vs recycle) appear on every path. Type sections hammer equipment-specific recovery and evacuation targets:",
-        },
-        {
-          type: "ul",
-          items: [
-            "**Type I:** recover to **0 psi** before disposal of small appliances (know the small-appliance definition cold)",
-            "**Type II:** high-pressure recovery to the vacuum level your exam form requires (commonly drilled as **15 inches of vacuum**, or **0 psi** if the system is leaking — memorize your provider’s wording)",
-            "**Leak repair thresholds and timelines** show up heavily once you leave pure Type I work",
-          ],
-        },
-        {
-          type: "p",
-          text: "Use a practice test to see whether your misses are Core regulations or type-specific recovery — that tells you whether to add Type II study or just clean up Core flashcards.",
-        },
-      ],
-    },
-    {
-      heading: "Recommended Booking Order",
-      blocks: [
-        {
-          type: "steps",
-          items: [
-            {
-              title: "1. Decide the credential end-state",
-              body: "Type I only, Type II only, or Universal. Do not “see how Type I goes” if you already know you need split-system work.",
-            },
-            {
-              title: "2. Prefer one proctored sitting",
-              body: "Core + needed types on the same appointment reduces re-fees and duplicate Core attempts.",
-            },
-            {
-              title: "3. Study Core first, then the type you will sit",
-              body: "Fail Core and nothing else counts. Treat Core as mandatory, not a warm-up.",
-            },
-            {
-              title: "4. Run a timed mock before you pay",
-              body: "If Core is below ~70% on a cold mock, delay the booking. Numbers and dates do not improve under fluorescent lights.",
+              title: "Type II-specific",
+              body: "Recovery: 15 inches of vacuum (or 0 psi if leaking). Leak repair: 30 days for comfort cooling (10% leak rate threshold), 120 days for industrial process refrigeration. High-pressure = above 170 psig (R-410A, R-22); very-high-pressure = above 355 psig. Cannot work on motor vehicle AC (that is EPA 609).",
             },
           ],
         },
@@ -150,36 +204,46 @@ export const epa608Type1VsType2Post: BlogPostDraft = {
   ],
   faqs: [
     {
-      question: "Should I take EPA 608 Type I or Type II first?",
+      question: "Can I take EPA 608 Type I open book and still get Universal later?",
       answer:
-        "Take Type II first (with a proctored Core) if you service residential or light commercial high-pressure systems. Take Type I first only if your work is limited to small appliances and you do not plan to stack toward Universal soon.",
+        "No. The EPA explicitly states that Core tests taken as open-book exams cannot be used toward Universal certification. If you take Type I open-book and later want Universal, you must retake Core and Type I closed-book under proctored conditions.",
     },
     {
-      question: "Can I get Universal without Type I?",
+      question: "Is Type I easier than Type II?",
       answer:
-        "No. Universal requires Core plus Type I, Type II, and Type III. Most techs schedule all sections together.",
+        "Yes. Type I covers small, sealed appliances with simpler recovery requirements. Type II adds leak detection protocols, evacuation levels, pressure classifications, and charging procedures for larger systems.",
     },
     {
-      question: "Does an open-book Type I Core count toward Universal?",
+      question: "Should I take Type I before Type II?",
       answer:
-        "No. EPA states that Core tests taken as an open-book exam cannot be used for Universal. Plan a proctored Core if Universal is your goal.",
+        "Only if you are certain you will never work on residential or commercial HVAC. Otherwise, go straight for Universal. The incremental cost is minimal and you avoid retaking sections later.",
     },
     {
-      question: "Is Type II enough for residential AC work?",
+      question: "How many questions are on the EPA 608 Universal exam?",
       answer:
-        "Type II covers high-pressure appliances such as residential split systems and many commercial refrigeration systems, excluding small appliances and MVAC. Confirm the equipment you service against EPA’s type definitions.",
+        "Approximately 100 multiple-choice questions: 25 Core + 25 Type I + 25 Type II + 25 Type III. Each section is scored separately. You must pass Core plus each Type section to earn Universal.",
     },
     {
-      question: "Do EPA 608 certifications expire?",
+      question: "What is the passing score for EPA 608?",
       answer:
-        "Section 608 technician certifications do not expire under current EPA rules. You may still need to learn new regulations as the agency updates them.",
+        "Most testing organizations require approximately 70% per section. For Type I, that is roughly 18 out of 25 correct. For Universal, you need ~18 correct in each of the four sections.",
     },
     {
-      question: "What is the difference between Type II and Type III?",
+      question: "Can I take the EPA 608 exam online?",
       answer:
-        "Type II is high-pressure and very-high-pressure appliances. Type III is low-pressure appliances such as many chillers. Evacuation and recovery requirements differ by type.",
+        "Type I can be taken online in an open-book format through some providers. Type II, Type III, and Universal must be taken in a proctored environment — either in-person or via remote proctoring.",
+    },
+    {
+      question: "Does EPA 608 certification expire?",
+      answer:
+        "No. EPA 608 certification does not expire. However, technicians should stay current with regulatory updates, especially HFC phase-down rules and the A2L refrigerant transition.",
+    },
+    {
+      question: "What is the difference between EPA 608 and EPA 609?",
+      answer:
+        "EPA 608 covers stationary refrigeration and air conditioning systems (Types I, II, III, Universal). EPA 609 covers motor vehicle air conditioning (MVAC). They are separate certifications. A Type II holder cannot legally service car AC.",
     },
   ],
   bottomLine:
-    "Book the certification that matches the equipment on your truck — but default to a proctored Core and, for most HVAC careers, Universal once. Type I open-book is a dead-end stack for anyone who will later touch split systems or chillers.",
+    "Type I is a beginner credential for appliance techs. Type II is the standard for HVAC service. Universal is the standard for employability. The only reason to take Type I first is if you are 100% certain you will never touch an air conditioner. Otherwise, pay the extra $20, sit for the full proctored Universal exam, and never think about retaking it again.",
 };

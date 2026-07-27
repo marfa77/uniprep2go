@@ -6,83 +6,220 @@ export type BlogStockImageSlot = {
   id: string;
   alt: string;
   caption?: string;
+  /** Pexels search queries — tried in order */
   queries: string[];
-};
+  /**
+   * Prefer photos whose Pexels `alt` contains at least one of these tokens.
+   * Used to reject lifestyle / wrong-topic first hits.
+   */
+  mustInclude?: string[];
+  /** Reject photos whose `alt` matches any of these (e.g. covid, kitchen interior). */
+  mustExclude?: string[];
+  /** Pin an exact Pexels photo when search ranking is unreliable. */
+  pexelsPhotoId?: number;
+}
 
 /** One hero + optional inline shots per post slug. */
 export const BLOG_STOCK_IMAGE_CONFIG: Record<
   string,
   { hero: BlogStockImageSlot; inline: BlogStockImageSlot[] }
 > = {
+  "anki-vs-quizlet-professional-exam-prep": {
+    hero: {
+      id: "anki-vs-quizlet-hero",
+      alt: "Person studying flashcards on a phone and laptop for exam prep",
+      caption: "Licensing exams need spaced repetition over weeks — not session-reset cramming",
+      queries: [
+        "studying flashcards phone laptop desk exam",
+        "spaced repetition flashcards smartphone studying",
+        "student reviewing digital flashcards laptop",
+      ],
+      mustInclude: ["flashcard", "study", "phone", "laptop", "exam", "student"],
+      mustExclude: ["quizlet logo", "party", "gaming"],
+    },
+    inline: [
+      {
+        id: "anki-vs-quizlet-recall",
+        alt: "Close-up of handwritten study notes and index cards for active recall",
+        caption: "Retrieval beats recognition — hide the answer, produce it from memory",
+        queries: [
+          "index cards handwritten study notes desk",
+          "flashcards paper studying active recall",
+          "handwritten vocabulary cards notebook desk",
+        ],
+        mustInclude: ["card", "note", "study", "flashcard", "notebook"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
+  "nebosh-igc-vs-international-diploma-employers": {
+    hero: {
+      id: "nebosh-igc-diploma-hero",
+      alt: "Construction workers in hard hats and high-visibility vests on an active building site",
+      caption: "IGC opens HSE officer doors; the Diploma targets management and CMIOSH",
+      queries: [
+        "construction workers hard hats high visibility vest site",
+        "building site safety helmets scaffolding workers",
+        "construction site inspector hard hat clipboard",
+      ],
+      mustInclude: ["construction", "hard hat", "helmet", "worker", "scaffold", "building site"],
+      mustExclude: ["agreement", "contract", "purchase", "sale", "real estate", "kitchen", "office desk"],
+    },
+    inline: [
+      {
+        id: "nebosh-igc-diploma-study",
+        alt: "Safety professional reviewing a workplace risk assessment checklist on a clipboard",
+        caption: "Command words — outline, explain, describe — decide IGC and Diploma scores",
+        queries: [
+          "safety inspection clipboard hard hat site",
+          "workplace risk assessment checklist clipboard",
+          "construction safety officer writing clipboard",
+        ],
+        mustInclude: ["clipboard", "safety", "hard hat", "helmet", "inspection", "checklist"],
+        mustExclude: ["laptop studying", "coffee", "hijab student", "home office"],
+      },
+    ],
+  },
+  "mrics-apc-vs-assocrics-pathway-cost": {
+    hero: {
+      id: "mrics-apc-assocrics-hero",
+      alt: "Surveyor measuring a commercial building facade with a laser distance meter",
+      caption: "MRICS is the Chartered license; AssocRICS is the associate badge",
+      queries: [
+        "building surveyor measuring laser distance meter",
+        "quantity surveyor construction site hard hat",
+        "surveyor inspecting commercial building exterior",
+      ],
+      mustInclude: ["survey", "measure", "building", "construction", "hard hat", "architect"],
+      mustExclude: ["singapore", "skyline night", "marina bay", "bank", "ubS", "stock market"],
+    },
+    inline: [
+      {
+        id: "mrics-apc-assocrics-docs",
+        alt: "Quantity surveyor reviewing cost plans and floor drawings at a desk",
+        caption: "APC is 24 months of structured evidence — not a course you buy and pass",
+        queries: [
+          "quantity surveyor documents cost plan desk",
+          "building survey floor plan measuring tape desk",
+          "construction cost estimating documents blueprints",
+        ],
+        mustInclude: ["plan", "blueprint", "document", "measure", "drawing", "survey"],
+        mustExclude: ["colored pencil", "crayon", "art studio", "russian", "маст"],
+      },
+    ],
+  },
+  "well-ap-vs-fitwel-certification-2026": {
+    hero: {
+      id: "well-ap-fitwel-hero",
+      alt: "Bright commercial office atrium with plants, daylight, and open seating for occupant wellness",
+      caption: "WELL measures performance; Fitwel scores policy and design strategies",
+      queries: [
+        "corporate office atrium plants natural light",
+        "modern office lobby biophilic design greenery",
+        "office building interior daylight indoor plants seating",
+      ],
+      mustInclude: ["office", "plant", "lobby", "atrium", "workspace", "interior"],
+      mustExclude: ["home office", "bedroom", "lofi", "pegboard", "ikea desk", "monitor playlist"],
+    },
+    inline: [
+      {
+        id: "well-ap-fitwel-air",
+        alt: "Commercial HVAC air handling unit and ductwork in a building mechanical room",
+        caption: "WELL AP drills thresholds and verification — Fitwel drills the scorecard portal",
+        queries: [
+          "commercial air handling unit mechanical room",
+          "HVAC ductwork supply air building ceiling",
+          "building ventilation system air filter technician",
+        ],
+        mustInclude: ["hvac", "duct", "vent", "air", "mechanical", "filter"],
+        mustExclude: ["window ac", "residential kitchen"],
+      },
+    ],
+  },
   "epa-608-practice-test-what-to-expect": {
     hero: {
       id: "epa-608-practice-test-hero",
-      alt: "HVAC technician servicing an outdoor air conditioning unit",
+      alt: "HVAC technician servicing an outdoor air conditioning condenser with tools",
       caption: "EPA 608 covers recovery rules — not just wrench skills",
       queries: [
-        "hvac technician outdoor air conditioner",
-        "air conditioning repair technician tools",
-        "refrigeration technician service call",
+        "hvac technician outdoor condenser service tools",
+        "air conditioning repair technician gauges outdoor unit",
+        "refrigeration technician servicing split system",
       ],
+      mustInclude: ["technician", "air condition", "hvac", "condenser", "refriger", "repair"],
+      mustExclude: ["kitchen", "interior design", "office atrium"],
     },
     inline: [
       {
         id: "epa-608-practice-test-gauges",
-        alt: "HVAC manifold gauges connected to a refrigerant system",
+        alt: "HVAC manifold gauges connected to a refrigerant line",
         caption: "Recovery targets and PSI numbers dominate missed questions",
         queries: [
-          "hvac manifold gauges close up",
-          "refrigerant gauges air conditioning",
-          "hvac pressure gauges technician",
+          "hvac manifold gauges close up refrigerant",
+          "refrigerant pressure gauges air conditioning",
+          "ac manifold gauge set technician hands",
         ],
+        mustInclude: ["gauge", "manifold", "refrigerant", "pressure", "hvac"],
+        mustExclude: ["blood pressure", "tire pressure"],
       },
     ],
   },
   "epa-608-type-1-vs-type-2-which-first": {
     hero: {
       id: "epa-608-type-compare-hero",
-      alt: "Residential HVAC outdoor condenser next to a house",
+      alt: "Residential outdoor split-system AC condenser next to a house (Type II equipment)",
       caption: "Type II is the everyday residential path; Type I is small appliances",
       queries: [
-        "residential air conditioner condenser unit",
-        "home hvac outdoor unit technician",
-        "split system air conditioner outside house",
+        "residential outdoor air conditioner condenser house",
+        "split system outdoor unit backyard home",
+        "home hvac condenser technician service",
       ],
+      mustInclude: ["conditioner", "condenser", "hvac", "outdoor", "split"],
+      mustExclude: ["kitchen", "refrigerator interior", "singapore"],
     },
     inline: [
       {
         id: "epa-608-type-compare-appliance",
-        alt: "Kitchen refrigerator as an example of a small appliance",
+        alt: "Glass-door commercial beverage refrigerator — Type I sealed appliance example",
         caption: "Type I: factory-sealed small appliances, not split systems",
         queries: [
-          "kitchen refrigerator modern appliance",
-          "window air conditioner unit",
-          "domestic refrigerator appliance kitchen",
+          "commercial beverage refrigerator glass door",
+          "coca cola refrigerator outdoor",
+          "appliance repair refrigerator technician",
         ],
+        mustInclude: ["refrigerat", "fridge", "beverage", "vending", "cooler"],
+        mustExclude: ["french door kitchen", "luxury kitchen", "cabinetry", "building facade", "apartment facade"],
+        pexelsPhotoId: 9370121,
       },
     ],
   },
   "servsafe-manager-exam-study-guide-2026": {
     hero: {
       id: "servsafe-study-guide-hero",
-      alt: "Restaurant kitchen chef plating food with thermometer nearby",
+      alt: "Chef using a digital thermometer while preparing food in a kitchen",
       caption: "Temperatures and pathogens carry the most ServSafe Manager weight",
       queries: [
-        "restaurant kitchen chef food thermometer",
-        "commercial kitchen food preparation",
-        "chef checking food temperature kitchen",
+        "chef digital thermometer kitchen chocolate tempering",
+        "cook checking temperature probe kitchen",
+        "restaurant kitchen food temperature thermometer",
       ],
+      mustInclude: ["thermometer", "kitchen", "chef", "cook", "food", "temperature"],
+      mustExclude: ["home kitchen luxury", "fridge french door", "medical thermometer pills"],
+      pexelsPhotoId: 6035326,
     },
     inline: [
       {
         id: "servsafe-study-guide-sink",
-        alt: "Three-compartment sink in a commercial kitchen",
+        alt: "Chef washing utensils at a stainless-steel commercial kitchen sink",
         caption: "Wash, rinse, sanitize, air dry — classic exam bait",
         queries: [
-          "commercial kitchen three compartment sink",
-          "restaurant kitchen dishwashing station",
-          "food service sanitizing sink",
+          "chef washing dishes stainless steel commercial kitchen sink",
+          "restaurant kitchen dishwashing stainless sink",
+          "industrial kitchen dishwasher washing dishes",
         ],
+        mustInclude: ["sink", "wash", "dish", "kitchen", "chef", "utensil"],
+        mustExclude: ["soap water soap", "laboratory", "handwashing trough", "hospital", "water soap water"],
+        pexelsPhotoId: 8629124,
       },
     ],
   },
@@ -92,165 +229,197 @@ export const BLOG_STOCK_IMAGE_CONFIG: Record<
       alt: "Florida restaurant patio dining with palm trees",
       caption: "Florida DBPR wants an accredited manager certificate within 30 days",
       queries: [
-        "florida restaurant outdoor dining palm trees",
-        "miami restaurant patio palm",
-        "florida beach restaurant food service",
+        "florida restaurant outdoor patio palm trees",
+        "miami outdoor dining palm trees restaurant",
+        "florida beachside restaurant patio",
       ],
+      mustInclude: ["restaurant", "palm", "dining", "florida", "miami", "patio"],
+      mustExclude: ["hotel lobby empty", "office"],
     },
     inline: [
       {
         id: "servsafe-florida-kitchen",
-        alt: "Food service manager reviewing a checklist in a kitchen",
+        alt: "Chef preparing food in a modern commercial restaurant kitchen",
         caption: "Inspectors ask for the certificate — not which course brand you watched",
         queries: [
-          "restaurant manager kitchen checklist",
-          "food service manager clipboard kitchen",
-          "chef manager commercial kitchen inspection",
+          "chef preparing dish modern commercial kitchen",
+          "restaurant kitchen chef cooking line",
+          "professional kitchen chef plating food",
         ],
+        mustInclude: ["chef", "kitchen", "cook", "restaurant", "culinary"],
+        mustExclude: ["warehouse", "construction", "hard hat", "covid", "vaccine"],
+        pexelsPhotoId: 8629106,
       },
     ],
   },
   "florida-food-manager-certification-dbpr-rules": {
     hero: {
       id: "florida-cfpm-dbpr-hero",
-      alt: "Busy Florida restaurant kitchen during service",
+      alt: "Busy commercial restaurant kitchen line during service",
       caption: "CFPM is required — ServSafe is optional branding",
       queries: [
-        "busy restaurant kitchen florida service",
-        "commercial kitchen line cooks restaurant",
-        "restaurant kitchen rush hour cooking",
+        "busy commercial restaurant kitchen line cooks",
+        "restaurant kitchen rush hour cooking line",
+        "chefs plating food commercial kitchen",
       ],
+      mustInclude: ["kitchen", "chef", "cook", "restaurant", "food"],
+      mustExclude: ["home kitchen", "covid"],
     },
     inline: [
       {
         id: "florida-cfpm-dbpr-certificate",
-        alt: "Food safety certificate document on a clipboard",
+        alt: "Official document with a verification stamp — stand-in for CFPM credential paper",
         caption: "Inspectors check the certificate, not the training bundle logo",
         queries: [
-          "food safety certificate clipboard document",
-          "restaurant inspection checklist clipboard",
-          "certificate of completion document desk",
+          "certificate of achievement diploma paper desk",
+          "training certificate award paper ribbon",
+          "rolled diploma certificate wooden desk",
         ],
+        mustInclude: ["certificate", "diploma", "achievement", "document"],
+        mustExclude: ["covid", "vaccine", "eu digital", "harvard", "syringe", "lady justice"],
+        pexelsPhotoId: 9858904,
       },
     ],
   },
   "california-real-estate-exam-psi-vs-pearson-vue": {
     hero: {
       id: "ca-real-estate-hero",
-      alt: "California hillside homes overlooking the coast",
+      alt: "California residential neighborhood hillside homes",
       caption: "California DRE runs its own exam centers — not PSI or Pearson VUE",
       queries: [
-        "california coastline houses hillside",
-        "los angeles residential neighborhood houses",
-        "california real estate homes street",
+        "california residential hillside houses neighborhood",
+        "los angeles suburban homes street",
+        "california real estate houses coastal hills",
       ],
+      mustInclude: ["house", "home", "residential", "california", "neighborhood", "suburb"],
+      mustExclude: ["singapore", "skyscraper night"],
     },
     inline: [
       {
         id: "ca-real-estate-keys",
-        alt: "House keys and documents on a table for a real estate closing",
+        alt: "House keys and real estate closing documents on a table",
         caption: "Study California practice and law — not a third-party vendor login",
         queries: [
-          "house keys real estate documents closing",
-          "real estate contract signing keys",
-          "home buyer keys paperwork table",
+          "house keys real estate contract closing table",
+          "home buyer keys paperwork signing",
+          "real estate keys documents desk",
         ],
+        mustInclude: ["key", "house", "contract", "document", "real estate", "closing"],
+        mustExclude: ["car key only", "covid"],
       },
     ],
   },
   "california-real-estate-exam-dre-test-centers": {
     hero: {
       id: "ca-dre-centers-hero",
-      alt: "Modern office building lobby representing a California state exam center visit",
+      alt: "Students at computer stations in a testing lab — electronic exam center vibe",
       caption: "Five DRE electronic centers — no PSI, no Pearson, no at-home option",
       queries: [
-        "government office building lobby california",
-        "modern office building entrance downtown",
-        "exam testing center computer room",
+        "students computers classroom university lab",
+        "computer lab students monitors classroom",
+        "digital exam computer lab students",
       ],
+      mustInclude: ["computer", "student", "lab", "monitor", "classroom"],
+      mustExclude: ["hotel lobby", "singapore skyline", "omr", "bubble sheet", "pencil exam paper"],
+      pexelsPhotoId: 5530484,
     },
     inline: [
       {
         id: "ca-dre-centers-study",
-        alt: "Person studying real estate flashcards and notes at a desk",
+        alt: "Person studying real estate exam notes and flashcards at a desk",
         caption: "Disclosures are 25% of the salesperson exam — study California law, not national fluff",
         queries: [
-          "student studying flashcards desk laptop",
-          "professional studying notes exam preparation",
-          "person reviewing documents paperwork desk",
+          "studying flashcards exam notes desk laptop",
+          "real estate exam study books desk",
+          "person reviewing legal documents studying desk",
         ],
+        mustInclude: ["study", "book", "note", "flashcard", "exam", "laptop"],
+        mustExclude: ["covid", "vaccine"],
       },
     ],
   },
   "finra-sie-exam-prep-why-people-fail": {
     hero: {
       id: "finra-sie-hero",
-      alt: "Financial district skyline representing securities industry careers",
+      alt: "Wall Street financial district buildings representing securities careers",
       caption: "SIE is the gatekeeper exam before broker-dealer registration",
       queries: [
-        "wall street financial district skyline",
-        "new york stock exchange area buildings",
-        "finance professional laptop charts office",
+        "wall street new york financial district",
+        "new york stock exchange exterior building",
+        "manhattan financial district skyscrapers day",
       ],
+      mustInclude: ["wall street", "new york", "financial", "stock exchange", "manhattan", "nyse"],
+      mustExclude: ["singapore", "marina bay"],
     },
     inline: [
       {
         id: "finra-sie-charts",
-        alt: "Stock market charts on a laptop screen",
+        alt: "Stock market candlestick charts on a trading monitor",
         caption: "Products and risks are 44% of the exam — options and bonds eat time",
         queries: [
-          "stock market charts laptop screen",
-          "trading desk financial charts monitor",
-          "investment portfolio charts computer",
+          "stock market candlestick charts monitor",
+          "trading desk financial charts computer screen",
+          "investment portfolio charts laptop",
         ],
+        mustInclude: ["chart", "stock", "trading", "market", "candlestick", "finance"],
+        mustExclude: ["weather chart", "medical"],
       },
     ],
   },
   "swiss-citizenship-test-cantonal-format-questions": {
     hero: {
       id: "swiss-citizenship-hero",
-      alt: "Swiss Alps village and mountains representing Switzerland",
+      alt: "Swiss Alps village with mountains representing Switzerland",
       caption: "No federal knowledge exam — your canton and commune write the rules",
       queries: [
         "swiss alps village mountains switzerland",
         "bern switzerland federal palace exterior",
-        "zurich switzerland old town river",
+        "lucerne switzerland lake mountains",
       ],
+      mustInclude: ["swiss", "switzerland", "alps", "bern", "zurich", "lucerne", "geneva"],
+      mustExclude: ["german reichstag", "berlin"],
     },
     inline: [
       {
         id: "swiss-citizenship-civics",
-        alt: "Swiss flag and passport documents on a table",
+        alt: "Swiss flag with white cross on a red field",
         caption: "Study Der Bund kurz erklärt in your canton’s language — not English trivia apps",
         queries: [
-          "swiss flag passport documents table",
-          "switzerland passport application papers",
-          "swiss cross flag alpine background",
+          "swiss flag white cross red waving",
+          "switzerland flag grindelwald",
+          "bern switzerland federal palace swiss flags",
         ],
+        mustInclude: ["swiss", "switzerland", "flag"],
+        mustExclude: ["covid", "eu digital", "vaccine", "austrian", "portuguese", "bulgarian"],
+        pexelsPhotoId: 27289394,
       },
     ],
   },
   "cdl-hazmat-endorsement-state-fingerprinting-background-check": {
     hero: {
       id: "cdl-hazmat-fingerprinting-hero",
-      alt: "Semi truck on an American highway at dawn",
+      alt: "Semi truck on an American interstate highway",
       caption: "HazMat is federal — fingerprinting location is state-specific",
       queries: [
-        "semi truck highway USA dawn",
-        "commercial truck driver cab highway",
-        "freight truck american interstate",
+        "semi truck american highway interstate",
+        "commercial freight truck USA highway",
+        "truck driver cab semi truck road",
       ],
+      mustInclude: ["truck", "semi", "highway", "freight", "trailer"],
+      mustExclude: ["toy truck", "pickup only"],
     },
     inline: [
       {
         id: "cdl-hazmat-fingerprinting-docs",
-        alt: "Driver license and identification documents for a background check",
+        alt: "Commercial driver license and identity documents for a TSA background check",
         caption: "Wrong fingerprinting site is the #1 wasted trip — TSA center vs DMV",
         queries: [
-          "driver license passport identity documents desk",
-          "fingerprint background check government office",
-          "commercial driver license documents paperwork",
+          "driver license identity documents desk",
+          "fingerprint background check biometric scanner",
+          "commercial driver license cdl document",
         ],
+        mustInclude: ["license", "fingerprint", "document", "id", "passport", "driver"],
+        mustExclude: ["covid", "vaccine"],
       },
     ],
   },
@@ -260,21 +429,26 @@ export const BLOG_STOCK_IMAGE_CONFIG: Record<
       alt: "Berlin Reichstag building representing German federal government",
       caption: "Civics test in German — English helps concepts, not the exam wording",
       queries: [
-        "berlin reichstag building germany",
-        "brandenburg gate berlin daytime",
-        "german parliament building berlin",
+        "berlin reichstag building germany daytime",
+        "brandenburg gate berlin germany",
+        "german bundestag reichstag dome",
       ],
+      mustInclude: ["berlin", "reichstag", "brandenburg", "germany", "german"],
+      mustExclude: ["swiss", "alps"],
     },
     inline: [
       {
         id: "leben-in-deutschland-study",
-        alt: "Person studying German flashcards and notes",
+        alt: "Adult studying language materials with books and notes at a desk",
         caption: "Bilingual flashcards: German stem on front, German answer + English why on back",
         queries: [
-          "student studying german flashcards notebook",
-          "language learning flashcards desk coffee",
-          "person reading textbook studying languages",
+          "adult studying english book office desk",
+          "language learning workbook planner desk",
+          "adult studying papers library education",
         ],
+        mustInclude: ["study", "book", "learn", "english", "language", "workbook"],
+        mustExclude: ["calculator", "math", "covid", "children", "teacher students kids", "young students"],
+        pexelsPhotoId: 6929165,
       },
     ],
   },

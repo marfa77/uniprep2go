@@ -17,6 +17,10 @@ describe("blog guides", () => {
   it("publishes niche cluster guides with FAQ and product links", () => {
     const posts = getAllBlogPosts();
     expect(posts.map((post) => post.slug)).toEqual([
+      "anki-vs-quizlet-professional-exam-prep",
+      "nebosh-igc-vs-international-diploma-employers",
+      "mrics-apc-vs-assocrics-pathway-cost",
+      "well-ap-vs-fitwel-certification-2026",
       "leben-in-deutschland-test-english-preparation-guide",
       "cdl-hazmat-endorsement-state-fingerprinting-background-check",
       "swiss-citizenship-test-cantonal-format-questions",
@@ -72,6 +76,18 @@ describe("blog guides", () => {
     expect(getBlogPostsByCluster("leben-in-deutschland").map((post) => post.slug)).toEqual([
       "leben-in-deutschland-test-english-preparation-guide",
     ]);
+    expect(getBlogPostsByCluster("nebosh").map((post) => post.slug)).toEqual([
+      "nebosh-igc-vs-international-diploma-employers",
+    ]);
+    expect(getBlogPostsByCluster("mrics").map((post) => post.slug)).toEqual([
+      "mrics-apc-vs-assocrics-pathway-cost",
+    ]);
+    expect(getBlogPostsByCluster("well-ap").map((post) => post.slug)).toEqual([
+      "well-ap-vs-fitwel-certification-2026",
+    ]);
+    expect(getBlogPostsByCluster("anki-study").map((post) => post.slug)).toEqual([
+      "anki-vs-quizlet-professional-exam-prep",
+    ]);
 
     const florida = getBlogPostBySlug("servsafe-manager-florida-requirements-2026");
     expect(getRelatedBlogPosts(florida!).map((post) => post.slug)).toContain(
@@ -103,6 +119,18 @@ describe("blog guides", () => {
     expect(getBlogPostBySlug("epa-608-practice-test-what-to-expect")?.mockSlug).toBe(
       "epa-608-readiness-check",
     );
+    expect(getBlogPostBySlug("nebosh-igc-vs-international-diploma-employers")?.mockSlug).toBe(
+      "nebosh-readiness-check",
+    );
+    expect(getBlogPostBySlug("nebosh-igc-vs-international-diploma-employers")?.deckSlug).toBe(
+      "nebosh-anki-deck",
+    );
+    expect(getBlogPostBySlug("mrics-apc-vs-assocrics-pathway-cost")?.mockSlug).toBe(
+      "mrics-readiness-check",
+    );
+    expect(getBlogPostBySlug("well-ap-vs-fitwel-certification-2026")?.mockSlug).toBe(
+      "well-ap-readiness-check",
+    );
   });
 
   it("exposes reverse lookups from mock and deck slugs to guides", () => {
@@ -125,6 +153,9 @@ describe("blog guides", () => {
     expect(getBlogPostsForMockSlug("sie-full-mock")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("swiss-citizenship-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("cdl-hazmat-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("nebosh-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("mrics-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("well-ap-readiness-check")).toHaveLength(1);
   });
 
   it("lists the blog index and every post in the Google sitemap", () => {
