@@ -5,6 +5,7 @@ import { recordFunnelEvent } from "@/lib/funnel-store";
 import { getMockAccessState } from "@/lib/mock-exams/access";
 import { getMockExamConfig } from "@/lib/mock-exams/configs";
 import { notifyMockInterest } from "@/lib/telegram-notify";
+import { normalizeWaitlistEmail } from "@/lib/waitlist-email";
 
 function normalizeVerdict(value: unknown) {
   return typeof value === "string" && value.length <= 40 ? value : undefined;
@@ -16,6 +17,11 @@ export async function POST(request: Request) {
 
     if (typeof payload.mockSlug !== "string" || payload.mockSlug.length > 120) {
       return NextResponse.json({ error: "Valid mockSlug is required" }, { status: 400 });
+    }
+
+    const email = normalizeWaitlistEmail(payload.email);
+    if (!email) {
+      return NextResponse.json({ error: "Valid email is required" }, { status: 400 });
     }
 
     const config = getMockExamConfig(payload.mockSlug);
@@ -40,7 +46,7 @@ export async function POST(request: Request) {
     });
 
     try {
-      const sent = await notifyMockInterest(event, config);
+      const sent = await notifyMockInterest(event, config, email);
       if (!sent) {
         console.warn("[telegram_notify] mock interest alert not sent", { mockSlug: config.slug });
       }

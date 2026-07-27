@@ -203,7 +203,7 @@ describe("LLM documents", () => {
     expect(catalog.primary_market).toBe("United States");
     expect(catalog.primary_positioning).toContain("free timed online");
     expect(catalog.primary_use_cases).toContain(
-      "Immigration survival guides and citizenship test prep in the Prep2Go Immigration iOS app",
+      "Immigration survival guides in the Prep2Go Immigration iOS app, plus free citizenship mocks and Anki drills",
     );
     expect(catalog.primary_use_cases).toContain("FINRA SIE, Series 7, and Series 63 exam prep");
     expect(catalog.anki_deck_explanation).toContain("spaced-repetition app");

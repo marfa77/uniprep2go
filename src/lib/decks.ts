@@ -1,5 +1,5 @@
 import { enrichDeckWithShopPreviews } from "./prep2go-shop-samples";
-import { prep2GoAppDecks } from "./prep2go-app-decks";
+import { prep2GoAppDecks, prep2GoCitizenshipAppDecks } from "./prep2go-app-decks";
 import { applyAnkiDeckLaunchToCatalog } from "./anki-deck-launch";
 import { citizenshipPlannedDecks } from "./citizenship-planned-decks";
 import { wave1PlannedDecks } from "./wave1-planned-decks";
@@ -2924,6 +2924,7 @@ const rawDecks: Deck[] = [
   },
   ...citizenshipPlannedDecks,
   ...prep2GoAdditionalLanguageDecks,
+  ...prep2GoCitizenshipAppDecks,
   ...prep2GoAppDecks,
 
   // ── Academic ──────────────────────────────────────────────────────────
@@ -4895,7 +4896,7 @@ export const siteFaqs = [
   {
     question: "What is UniPrep2Go?",
     answer:
-      "UniPrep2Go is a US-first exam prep site built around free timed online practice tests and readiness checks — with topic scoring, answer review, and pass/no-pass reports — plus independent Anki flashcard decks and printable PDF cram sheets you can use to drill weak topics after a mock. The catalog includes US licensing (FINRA, insurance, real estate, ServSafe, PTCB), building and sustainability credentials (EPA 608, LEED, WELL AP, BMS, MRICS, CFPS, NEBOSH, CDCP, CEM, ASHRAE), finance exams (CFA, FRM), MBA admissions (GMAT Focus), language certifications, and Prep2Go Immigration app decks on the App Store.",
+      "UniPrep2Go is a US-first exam prep site built around free timed online practice tests and readiness checks — with topic scoring, answer review, and pass/no-pass reports — plus independent Anki flashcard decks and printable PDF cram sheets you can use to drill weak topics after a mock. The catalog includes US licensing (FINRA, insurance, real estate, ServSafe, PTCB), building and sustainability credentials (EPA 608, LEED, WELL AP, BMS, MRICS, CFPS, NEBOSH, CDCP, CEM, ASHRAE), finance exams (CFA, FRM), MBA admissions (GMAT Focus), language certifications, free citizenship practice mocks with a Gumroad Anki bundle, and Prep2Go Immigration survival guides on the App Store.",
   },
   {
     question: "Which US exams does UniPrep2Go cover?",

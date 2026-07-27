@@ -131,7 +131,7 @@ describe("checkout pricing", () => {
   });
 
   it("uses static App Store pricing for Prep2Go Immigration decks", async () => {
-    const deck = getCatalogDeckBySlug("us-citizenship-test-prep2go-app");
+    const deck = getCatalogDeckBySlug("uae-survival-guide-prep2go-app");
     expect(deck).toBeDefined();
 
     const priced = await resolveDeckPrice(deck!);

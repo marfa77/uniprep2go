@@ -120,10 +120,12 @@ describe("telegram waitlist and mock interest alerts", () => {
         country: "US",
       }),
       { slug: "cdl-general-knowledge-anki-deck", title: "CDL General Knowledge Anki Deck", status: "planned" },
+      "learner@example.com",
     );
 
     expect(message).toContain("UniPrep2Go deck waitlist request");
     expect(message).toContain("Slug: cdl-general-knowledge-anki-deck");
+    expect(message).toContain("Email: learner@example.com");
     expect(message).toContain("Status: planned");
   });
 
@@ -139,9 +141,11 @@ describe("telegram waitlist and mock interest alerts", () => {
         path: "/mock-exams/cdl-general-knowledge-readiness-check",
       }),
       mock,
+      "learner@example.com",
     );
 
     expect(message).toContain("UniPrep2Go mock interest");
     expect(message).toContain("Mock slug: cdl-general-knowledge-readiness-check");
+    expect(message).toContain("Email: learner@example.com");
   });
 });

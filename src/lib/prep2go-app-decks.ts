@@ -1,5 +1,5 @@
 import immigrationSamples from "../data/prep2go-immigration-samples.json";
-import type { CatalogAvailableDeck, SampleCard } from "./decks";
+import type { CatalogAvailableDeck, Deck, PlannedDeck, SampleCard } from "./decks";
 
 export const PREP2GO_APP_STORE_URL =
   "https://apps.apple.com/ae/app/prep2go-immigration/id6759856853";
@@ -16,28 +16,25 @@ type Prep2GoAppDeckInput = {
   topics: string;
   audience: string;
   coverImage: string;
+  /** Citizenship app listings stay planned so they stay out of availableDecks / GEO. */
+  status?: "available" | "planned";
 };
 
 function immigrationSampleCards(slug: string): SampleCard[] {
   return immigrationSamples[slug as keyof typeof immigrationSamples] ?? [];
 }
 
-function buildPrep2GoAppDeck(input: Prep2GoAppDeckInput): CatalogAvailableDeck {
-  return {
+function buildPrep2GoAppDeck(input: Prep2GoAppDeckInput): Deck {
+  const base = {
     slug: input.slug,
-    category: "immigration",
-    status: "available",
+    category: "immigration" as const,
     title: `${input.title} — Prep2Go Immigration App`,
     shortName: input.shortName,
     subtitle: input.description,
-    directAnswer: `Prep2Go Immigration includes ${input.shortName} with ${input.cards} flashcards for ${input.focus}. ${input.description} Study with spaced repetition in the iOS app — 10 cards free per deck, subscriptions from $${PREP2GO_APP_STORE_MONTHLY_PRICE}/month on the App Store.`,
     lastUpdated: "2026-06-01",
     audience: input.audience,
-    format: "App",
+    format: "App" as const,
     coverImage: input.coverImage,
-    checkoutUrl: PREP2GO_APP_STORE_URL,
-    checkoutProvider: "App Store",
-    checkoutSeller: "Prep2Go",
     facts: {
       cards: input.cards,
       topics: input.topics,
@@ -45,7 +42,7 @@ function buildPrep2GoAppDeck(input: Prep2GoAppDeckInput): CatalogAvailableDeck {
       examYear: input.focus,
       delivery: "Prep2Go Immigration iOS app on the App Store",
     },
-    topicCoverage: [],
+    topicCoverage: [] as CatalogAvailableDeck["topicCoverage"],
     sampleCards: immigrationSampleCards(input.slug),
     faqs: [
       {
@@ -68,12 +65,30 @@ function buildPrep2GoAppDeck(input: Prep2GoAppDeckInput): CatalogAvailableDeck {
       },
     ],
   };
+
+  if (input.status === "planned") {
+    return {
+      ...base,
+      status: "planned",
+      directAnswer: `UniPrep2Go keeps ${input.shortName} as a planned Prep2Go Immigration listing (${input.cards} flashcards for ${input.focus}). ${input.description} For citizenship drills on UniPrep2Go, use the free naturalization mocks and the Citizenship & Naturalization Anki bundle.`,
+    };
+  }
+
+  return {
+    ...base,
+    status: "available",
+    directAnswer: `Prep2Go Immigration includes ${input.shortName} with ${input.cards} flashcards for ${input.focus}. ${input.description} Study with spaced repetition in the iOS app — 10 cards free per deck, subscriptions from $${PREP2GO_APP_STORE_MONTHLY_PRICE}/month on the App Store.`,
+    checkoutUrl: PREP2GO_APP_STORE_URL,
+    checkoutProvider: "App Store",
+    checkoutSeller: "Prep2Go",
+  };
 }
 
 function appCover(slug: string) {
   return `/covers/${slug}.webp`;
 }
 
+/** Public App Store survival / adaptation decks. */
 export const prep2GoAppDecks: CatalogAvailableDeck[] = [
   buildPrep2GoAppDeck({
     slug: "us-adaptation-english-prep2go-app",
@@ -219,6 +234,10 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     audience: "Expats and newcomers adapting to life in Portugal.",
     coverImage: appCover("portugal-survival-guide-prep2go-app"),
   }),
+] as CatalogAvailableDeck[];
+
+/** Hidden citizenship App Store listings — kept planned so they stay out of availableDecks / GEO. */
+export const prep2GoCitizenshipAppDecks: PlannedDeck[] = [
   buildPrep2GoAppDeck({
     slug: "us-citizenship-test-prep2go-app",
     title: "U.S. Citizenship Test",
@@ -230,6 +249,7 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "American government, history, geography, and civic rights for naturalization",
     audience: "Green card holders preparing for the U.S. citizenship civics test.",
     coverImage: appCover("us-citizenship-test-prep2go-app"),
+    status: "planned",
   }),
   buildPrep2GoAppDeck({
     slug: "leben-in-deutschland-prep2go-app",
@@ -242,6 +262,7 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "German politics, history, society, and state-specific naturalization questions",
     audience: "Residents preparing for the German citizenship test.",
     coverImage: appCover("leben-in-deutschland-prep2go-app"),
+    status: "planned",
   }),
   buildPrep2GoAppDeck({
     slug: "naturalisation-francaise-prep2go-app",
@@ -254,6 +275,7 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "French history, institutions, symbols, and civic knowledge for naturalization",
     audience: "Applicants preparing for the French citizenship test.",
     coverImage: appCover("naturalisation-francaise-prep2go-app"),
+    status: "planned",
   }),
   buildPrep2GoAppDeck({
     slug: "life-in-the-uk-prep2go-app",
@@ -266,6 +288,7 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "British values, history, government, and society for settlement and citizenship",
     audience: "Applicants preparing for the Life in the UK test.",
     coverImage: appCover("life-in-the-uk-prep2go-app"),
+    status: "planned",
   }),
   buildPrep2GoAppDeck({
     slug: "canadian-citizenship-prep2go-app",
@@ -278,6 +301,7 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "Canadian history, values, institutions, symbols, and rights",
     audience: "Permanent residents preparing for the Canadian citizenship test.",
     coverImage: appCover("canadian-citizenship-prep2go-app"),
+    status: "planned",
   }),
   buildPrep2GoAppDeck({
     slug: "australian-citizenship-prep2go-app",
@@ -290,5 +314,6 @@ export const prep2GoAppDecks: CatalogAvailableDeck[] = [
     topics: "Australian history, values, government, and society",
     audience: "Permanent residents preparing for the Australian citizenship test.",
     coverImage: appCover("australian-citizenship-prep2go-app"),
+    status: "planned",
   }),
-];
+] as PlannedDeck[];

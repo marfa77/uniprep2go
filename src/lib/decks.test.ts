@@ -193,6 +193,18 @@ describe("deck catalog", () => {
     expect(citizenshipBundle?.directAnswer).toContain("six separate .apkg");
     expect(citizenshipBundle?.sampleCards).toHaveLength(3);
 
+    for (const slug of [
+      "us-citizenship-test-prep2go-app",
+      "leben-in-deutschland-prep2go-app",
+      "naturalisation-francaise-prep2go-app",
+      "life-in-the-uk-prep2go-app",
+      "canadian-citizenship-prep2go-app",
+      "australian-citizenship-prep2go-app",
+    ]) {
+      expect(getDeckBySlug(slug)?.status).toBe("planned");
+      expect(getCatalogDeckBySlug(slug)).toBeUndefined();
+    }
+
     const swissBundle = getDeckBySlug("swiss-citizenship-anki-deck");
     expect(swissBundle).toMatchObject({
       status: "available",
@@ -781,20 +793,12 @@ describe("deck catalog", () => {
       "nebosh-anki-deck": "NEBOSH IGC Anki Deck — 250+ Flashcards",
       "uk-survival-guide-prep2go-app": "UK Survival Guide — Prep2Go Immigration App",
       "portugal-survival-guide-prep2go-app": "Portugal Survival Guide — Prep2Go Immigration App",
-      "us-citizenship-test-prep2go-app": "U.S. Citizenship Test — Prep2Go Immigration App",
-      "leben-in-deutschland-prep2go-app": "Leben in Deutschland — Prep2Go Immigration App",
       "leed-ap-bd-c-anki-deck": "LEED AP BD+C Anki Deck — 250+ Flashcards",
       "leed-green-associate-anki-deck": "LEED GA Anki Deck — 250+ Flashcards",
-      "life-in-the-uk-prep2go-app": "Life in the UK — Prep2Go Immigration App",
       "mrics-anki-deck": "MRICS / APC Anki Deck — 250+ Flashcards",
       "mrics-quantity-surveying-anki-deck":
         "MRICS QS Anki Deck — 250+ Flashcards",
-      "naturalisation-francaise-prep2go-app":
-        "Naturalisation française — Prep2Go Immigration App",
-      "life-in-the-uk-prep2go-app": "Life in the UK — Prep2Go Immigration App",
       "well-ap-anki-deck": "WELL AP Anki Deck — 250+ Flashcards",
-      "canadian-citizenship-prep2go-app": "Canadian Citizenship — Prep2Go Immigration App",
-      "australian-citizenship-prep2go-app": "Australian Citizenship — Prep2Go Immigration App",
     };
 
     expect(Object.fromEntries(availableDecks.map((deck) => [deck.slug, deck.title]))).toEqual(

@@ -149,12 +149,14 @@ export async function notifyMockStarted(event: FunnelEvent, mock?: MockExamConfi
 export function toDeckWaitlistMessage(
   event: FunnelEvent,
   deck?: AvailableDeck | CatalogAvailableDeck | { slug: string; title: string; status?: string },
+  email?: string,
 ) {
   return [
     "UniPrep2Go deck waitlist request",
     "",
     `Deck: ${deck?.title ?? event.deckSlug}`,
     `Slug: ${event.deckSlug}`,
+    `Email: ${email ?? "n/a"}`,
     `Status: ${deck && "status" in deck ? deck.status : "planned"}`,
     `Source: ${event.source ?? "unknown"}`,
     `Path: ${event.path ?? "n/a"}`,
@@ -169,13 +171,14 @@ export function toDeckWaitlistMessage(
   ].join("\n");
 }
 
-export function toMockInterestMessage(event: FunnelEvent, mock?: MockExamConfig) {
+export function toMockInterestMessage(event: FunnelEvent, mock?: MockExamConfig, email?: string) {
   return [
     "UniPrep2Go mock interest",
     "",
     `Mock: ${mock?.title ?? event.source ?? "unknown"}`,
     `Mock slug: ${mock?.slug ?? "unknown"}`,
     `Linked deck: ${mock?.linkedDeckSlug ?? event.deckSlug}`,
+    `Email: ${email ?? "n/a"}`,
     `Source: ${event.source ?? "unknown"}`,
     `Path: ${event.path ?? "n/a"}`,
     `Country: ${event.country ?? "n/a"}`,
@@ -190,6 +193,7 @@ export function toMockInterestMessage(event: FunnelEvent, mock?: MockExamConfig)
 export async function notifyDeckWaitlistInterest(
   event: FunnelEvent,
   deck?: AvailableDeck | CatalogAvailableDeck | { slug: string; title: string; status?: string },
+  email?: string,
 ) {
   const chatId = await getTelegramNotifyChatId();
 
@@ -198,10 +202,10 @@ export async function notifyDeckWaitlistInterest(
     return false;
   }
 
-  return sendTelegramMessage(chatId, toDeckWaitlistMessage(event, deck));
+  return sendTelegramMessage(chatId, toDeckWaitlistMessage(event, deck, email));
 }
 
-export async function notifyMockInterest(event: FunnelEvent, mock?: MockExamConfig) {
+export async function notifyMockInterest(event: FunnelEvent, mock?: MockExamConfig, email?: string) {
   const chatId = await getTelegramNotifyChatId();
 
   if (!chatId) {
@@ -209,7 +213,7 @@ export async function notifyMockInterest(event: FunnelEvent, mock?: MockExamConf
     return false;
   }
 
-  return sendTelegramMessage(chatId, toMockInterestMessage(event, mock));
+  return sendTelegramMessage(chatId, toMockInterestMessage(event, mock, email));
 }
 
 export function toLearnCheckoutClickMessage(event: FunnelEvent, mock?: MockExamConfig) {

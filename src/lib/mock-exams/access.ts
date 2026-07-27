@@ -40,7 +40,7 @@ export function getMockAccessState(mockSlug: string): MockAccessState | null {
         interestCaptureEnabled: true,
         ctaLabel: "Notify me when this launches",
         ctaDescription:
-          "This free timed practice test is on the waitlist. Tap notify and we’ll ping the founder (Telegram) when the question bank goes live — no spam list.",
+          "This free timed practice test is on the waitlist. Leave your email and we’ll notify you when the question bank goes live.",
       };
   }
 }

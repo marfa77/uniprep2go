@@ -130,6 +130,78 @@ const DECK_CONFIGS = {
     monogram: "GRE",
     panelKind: "finance",
   },
+
+  // Planned citizenship / naturalization waitlist decks (language category is skipped by catalog parse).
+  "czech-citizenship-anki-deck": {
+    title: "Czech Citizenship\nAnki Deck",
+    subtitle: "Reálie civics flashcards",
+    monogram: "CZ",
+    badge: "Planned",
+    panelKind: "language",
+  },
+  "polish-citizenship-anki-deck": {
+    title: "Polish Citizenship\nAnki Deck",
+    subtitle: "Knowledge of Poland flashcards",
+    monogram: "PL",
+    badge: "Planned",
+    panelKind: "language",
+  },
+  "denmark-indfoedsretsproeven-anki-deck": {
+    title: "Denmark\nIndfødsretsprøven",
+    subtitle: "Danish citizenship civics flashcards",
+    monogram: "DK",
+    badge: "Planned",
+    panelKind: "language",
+  },
+  "portugal-nacionalidade-anki-deck": {
+    title: "Portugal\nNacionalidade",
+    subtitle: "Portuguese nationality civics flashcards",
+    monogram: "PT",
+    badge: "Planned",
+    panelKind: "language",
+  },
+  "norway-statsborgerproven-anki-deck": {
+    title: "Norway\nStatsborgerprøven",
+    subtitle: "Norwegian citizenship civics flashcards",
+    monogram: "NO",
+    badge: "Planned",
+    panelKind: "language",
+  },
+  "sweden-medborgarskapsprov-anki-deck": {
+    title: "Sweden\nMedborgarskapsprov",
+    subtitle: "Swedish citizenship civics flashcards",
+    monogram: "SE",
+    badge: "Planned",
+    panelKind: "language",
+  },
+  "belgium-flanders-mo-anki-deck": {
+    title: "Belgium Flanders\nMO Anki Deck",
+    subtitle: "Maatschappelijke oriëntatie flashcards",
+    monogram: "BE\nVL",
+    badge: "Planned",
+    panelKind: "language",
+  },
+  "belgium-wallonie-citoyennete-anki-deck": {
+    title: "Belgium Wallonie\nCitoyenneté",
+    subtitle: "Wallonia integration civics flashcards",
+    monogram: "BE\nWA",
+    badge: "Planned",
+    panelKind: "language",
+  },
+  "luxembourg-vivre-ensemble-anki-deck": {
+    title: "Luxembourg\nVivre ensemble",
+    subtitle: "Luxembourg citizenship civics flashcards",
+    monogram: "LU",
+    badge: "Planned",
+    panelKind: "language",
+  },
+  "dele-a2-ccse-spanish-citizenship-bundle": {
+    title: "DELE A2 + CCSE\nCitizenship Bundle",
+    subtitle: "Spanish citizenship language + civics flashcards",
+    monogram: "ES",
+    badge: "Planned",
+    panelKind: "language",
+  },
 };
 
 const HERO_CONFIG = {

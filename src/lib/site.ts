@@ -11,7 +11,7 @@ export const siteConfig = {
     "US insurance and California real estate licensing exam prep",
     "CFA and FRM finance credential review",
     "Language certification vocabulary and grammar practice",
-    "Immigration survival guides and citizenship test prep in the Prep2Go Immigration iOS app",
+    "Immigration survival guides in the Prep2Go Immigration iOS app, plus free citizenship mocks and Anki drills",
   ],
   contactEmail: "support@uniprep2go.study",
   customDeckInquiry: {

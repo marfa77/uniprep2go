@@ -5,6 +5,7 @@ import { shouldRecordFunnelEvent } from "@/lib/funnel-filter";
 import { recordFunnelEvent } from "@/lib/funnel-store";
 import { getMockExamConfig } from "@/lib/mock-exams/configs";
 import { notifyDeckWaitlistInterest } from "@/lib/telegram-notify";
+import { normalizeWaitlistEmail } from "@/lib/waitlist-email";
 
 function firstForwardedIp(value: string | null) {
   return value?.split(",")[0]?.trim() || undefined;
@@ -16,6 +17,11 @@ export async function POST(request: Request) {
 
     if (typeof payload.deckSlug !== "string" || payload.deckSlug.length > 120) {
       return NextResponse.json({ error: "Valid deckSlug is required" }, { status: 400 });
+    }
+
+    const email = normalizeWaitlistEmail(payload.email);
+    if (!email) {
+      return NextResponse.json({ error: "Valid email is required" }, { status: 400 });
     }
 
     const deck = getDeckBySlug(payload.deckSlug);
@@ -56,7 +62,7 @@ export async function POST(request: Request) {
     });
 
     try {
-      const sent = await notifyDeckWaitlistInterest(event, deck);
+      const sent = await notifyDeckWaitlistInterest(event, deck, email);
       if (!sent) {
         console.warn("[telegram_notify] deck waitlist alert not sent", { deckSlug: deck.slug });
       }
