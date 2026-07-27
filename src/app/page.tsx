@@ -568,24 +568,24 @@ export default async function HomePage() {
                       →
                     </div>
 
-                    <div className="flex gap-4 rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-5">
+                    <div className="flex items-stretch gap-4 rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-5">
                       {thumbnail ? (
                         <Link
-                          className="shrink-0 overflow-hidden rounded-xl border border-[#18140f]/10 bg-[#f6efe8]"
+                          className="relative block w-36 min-h-20 shrink-0 self-stretch overflow-hidden rounded-xl border border-[#18140f]/10 bg-[#f6efe8]"
                           href={`/decks/${deck.slug}`}
                         >
                           <Image
                             alt=""
                             aria-hidden
-                            className="h-20 w-36 object-cover object-[78%_center]"
-                            height={80}
+                            className="object-cover object-center"
+                            fill
+                            sizes="144px"
                             src={thumbnail}
                             unoptimized={isPreoptimizedPublicImage(thumbnail)}
-                            width={144}
                           />
                         </Link>
                       ) : null}
-                      <div className="flex min-w-0 flex-col">
+                      <div className="flex min-w-0 flex-1 flex-col">
                         <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-[#1f3a5f]">
                           {deckIsPlanned ? "Planned deck" : "Linked deck"}
                         </p>
