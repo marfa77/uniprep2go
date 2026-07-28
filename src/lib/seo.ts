@@ -103,6 +103,16 @@ export function fitSeoTitle(title: string, max = SEO_TITLE_MAX): string {
   return cut.trim();
 }
 
+/** Google SERP meta description sweet spot (~70–155 chars). */
+export const SEO_META_DESCRIPTION_MAX = 155;
+
+export function fitMetaDescription(
+  description: string,
+  max = SEO_META_DESCRIPTION_MAX,
+): string {
+  return fitSeoTitle(description, max);
+}
+
 /** @deprecated Prefer fitSeoTitle — kept for tests and hub pages with title template suffix. */
 export function truncateSeoTitle(title: string, max = SEO_TITLE_MAX): string {
   return fitSeoTitle(title, max);

@@ -9,7 +9,10 @@ export const wellApVsFitwelPost: BlogPostDraft = {
   publishedAt: "2026-07-27",
   eyebrow: "WELL · Building wellness",
   clusterId: "well-ap",
-  relatedSlugs: [],
+  relatedSlugs: [
+    "can-you-pass-leed-ga-free-resources-only",
+    "mrics-apc-vs-assocrics-pathway-cost",
+  ],
   intro:
     "**The wellness certification market has two players: WELL (International WELL Building Institute) and Fitwel (Center for Active Design).** Both certify buildings for occupant health. Both are credible. They are not competitors the way LEED and BREEAM are — they serve different buyers, budgets, and career paths. This guide breaks down exam difficulty, employer demand, and the philosophy behind each credential.",
   mockSlug: "well-ap-readiness-check",

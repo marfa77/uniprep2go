@@ -1,3 +1,4 @@
+import { getAllBlogPosts } from "@/lib/blog";
 import { availableDecks } from "@/lib/decks";
 import { intentPages } from "@/lib/intent-pages";
 import { getAllMockExams } from "@/lib/mock-exams/configs";
@@ -11,11 +12,15 @@ export function GET() {
     (page) => page.slug !== "anki-decks-for-language-exams",
   );
 
+  const blogPosts = getAllBlogPosts();
+
   const urls = [
     absoluteUrl("/llms.txt"),
     absoluteUrl("/llms-full.txt"),
     absoluteUrl("/api/facts"),
     absoluteUrl("/api/mock-exams"),
+    absoluteUrl("/blog"),
+    ...blogPosts.map((post) => absoluteUrl(`/blog/${post.slug}`)),
     ...renderableIntentPages.map((page) => absoluteUrl(`/${page.slug}`)),
     ...renderableIntentPages.map((page) => absoluteUrl(`/${page.slug}/markdown`)),
     ...availableDecks.map((deck) => absoluteUrl(`/${deck.slug}.md`)),

@@ -10,7 +10,10 @@ export const cdlHazmatStateFingerprintingPost: BlogPostDraft = {
   publishedAt: "2026-07-27",
   eyebrow: "CDL HazMat · TSA & DMV fingerprinting",
   clusterId: "cdl-hazmat",
-  relatedSlugs: [],
+  relatedSlugs: [
+    "epa-608-practice-test-what-to-expect",
+    "epa-608-type-1-vs-type-2-which-first",
+  ],
   intro:
     "Most guides tell you to \"go to a TSA enrollment center and get fingerprinted.\" That is wrong for seventeen states. If you live in Texas, Florida, or New York, you do not go to TSA. You go to your DMV. If you live in Washington, you need a state-approved training course before you can even sit for the knowledge test. If you show up at the wrong place with the wrong documents, you lose a day and the appointment fee. This guide maps the two systems, the extra-step states, and the exact documents you need so you do not get sent home.",
   mockSlug: "cdl-hazmat-readiness-check",

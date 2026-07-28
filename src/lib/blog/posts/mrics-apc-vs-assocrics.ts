@@ -9,7 +9,10 @@ export const mricsApcVsAssocricsPost: BlogPostDraft = {
   publishedAt: "2026-07-27",
   eyebrow: "RICS · Chartered surveying",
   clusterId: "mrics",
-  relatedSlugs: [],
+  relatedSlugs: [
+    "nebosh-igc-vs-international-diploma-employers",
+    "well-ap-vs-fitwel-certification-2026",
+  ],
   intro:
     "**RICS offers two professional membership grades that sound similar but function differently: AssocRICS and MRICS (via the Assessment of Professional Competence, or APC).** One is a stepping stone. The other is the destination. Many candidates treat them as interchangeable, waste money on the wrong path, or get stuck in AssocRICS because they never planned the jump to MRICS. This guide maps cost, time, employer perception, and the hidden rule that blocks some AssocRICS holders from ever becoming Chartered.",
   mockSlug: "mrics-readiness-check",

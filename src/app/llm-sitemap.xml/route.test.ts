@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { GET } from "./route";
+import { getAllBlogPosts } from "@/lib/blog";
 import { availableDecks } from "@/lib/decks";
 import { getAllMockExams } from "@/lib/mock-exams/configs";
 import { shouldIndexMockExam } from "@/lib/seo";
@@ -15,6 +16,11 @@ describe("LLM sitemap", () => {
     expect(body).toContain(`<loc>${absoluteUrl("/llms-full.txt")}</loc>`);
     expect(body).toContain(`<loc>${absoluteUrl("/api/facts")}</loc>`);
     expect(body).toContain(`<loc>${absoluteUrl("/api/mock-exams")}</loc>`);
+    expect(body).toContain(`<loc>${absoluteUrl("/blog")}</loc>`);
+
+    for (const post of getAllBlogPosts()) {
+      expect(body).toContain(`<loc>${absoluteUrl(`/blog/${post.slug}`)}</loc>`);
+    }
 
     for (const deck of availableDecks) {
       expect(body).toContain(`<loc>${absoluteUrl(`/${deck.slug}.md`)}</loc>`);

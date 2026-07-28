@@ -1,4 +1,6 @@
 import { describe, expect, it } from "vitest";
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import sitemap from "../../app/sitemap";
 import {
   BLOG_STOCK_IMAGE_CONFIG,
@@ -11,6 +13,7 @@ import {
 } from "./index";
 import { getMockExamConfig } from "../mock-exams/configs";
 import { getDeckBySlug } from "../decks";
+import { fitMetaDescription, fitSeoTitle } from "../seo";
 import { absoluteUrl } from "../site";
 
 describe("blog guides", () => {
@@ -332,11 +335,42 @@ describe("blog guides", () => {
     );
   });
 
+  it("meets Google indexability checklist for every guide", () => {
+    const titles = new Set<string>();
+    const metas = new Set<string>();
+    const sitemapUrls = new Set(sitemap().map((entry) => entry.url));
+
+    for (const post of getAllBlogPosts()) {
+      expect(post.relatedSlugs.length).toBeGreaterThanOrEqual(1);
+      expect(post.faqs.length).toBeGreaterThanOrEqual(6);
+      expect(post.sections.length).toBeGreaterThanOrEqual(4);
+      expect(post.hero.alt.length).toBeGreaterThan(10);
+      expect(existsSync(join(process.cwd(), "public", post.hero.src))).toBe(true);
+      for (const image of post.inlineImages) {
+        expect(existsSync(join(process.cwd(), "public", image.src))).toBe(true);
+      }
+      expect(sitemapUrls.has(absoluteUrl(`/blog/${post.slug}`))).toBe(true);
+      expect(fitSeoTitle(post.titleTag, 60).length).toBeLessThanOrEqual(60);
+      expect(fitMetaDescription(post.metaDescription).length).toBeLessThanOrEqual(155);
+      expect(titles.has(post.titleTag)).toBe(false);
+      expect(metas.has(post.metaDescription)).toBe(false);
+      titles.add(post.titleTag);
+      metas.add(post.metaDescription);
+      for (const related of post.relatedSlugs) {
+        expect(getBlogPostBySlug(related)).toBeDefined();
+      }
+      const faqQuestions = post.faqs.map((faq) => faq.question);
+      expect(new Set(faqQuestions).size).toBe(faqQuestions.length);
+    }
+  });
+
   it("lists the blog index and every post in the Google sitemap", () => {
     const urls = sitemap().map((entry) => entry.url);
     expect(urls).toContain(absoluteUrl("/blog"));
     for (const post of getAllBlogPosts()) {
       expect(urls).toContain(absoluteUrl(`/blog/${post.slug}`));
+      const entry = sitemap().find((item) => item.url === absoluteUrl(`/blog/${post.slug}`));
+      expect(entry?.lastModified).toBeInstanceOf(Date);
     }
   });
 });

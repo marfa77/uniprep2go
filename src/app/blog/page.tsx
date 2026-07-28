@@ -7,16 +7,21 @@ import { getAllBlogPosts } from "@/lib/blog";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Exam Prep Guides — EPA 608, ServSafe, FINRA SIE",
+  title: "Exam Prep Guides — Citizenship, EPA 608, ServSafe, FINRA",
   description:
-    "Practical UniPrep2Go study guides for EPA 608, ServSafe Manager, FINRA SIE, and more — with free timed mocks and Anki decks for weak-topic repair.",
+    "Practical UniPrep2Go study guides for EU citizenship exams, EPA 608, ServSafe, FINRA SIE, and more — with free timed mocks and Anki decks.",
   alternates: {
     canonical: "/blog",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
   openGraph: {
     title: "Exam Prep Guides — UniPrep2Go Blog",
     description:
-      "Practical study guides for EPA 608, ServSafe Manager, FINRA SIE, and more — paired with free timed practice tests.",
+      "Practical study guides for citizenship and US licensing exams — paired with free timed practice tests.",
     url: "/blog",
     type: "website",
   },

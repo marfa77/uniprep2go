@@ -9,7 +9,10 @@ export const cdcpVsDcdcPost: BlogPostDraft = {
   publishedAt: "2026-07-28",
   eyebrow: "CDCP · Data center infrastructure",
   clusterId: "cdcp",
-  relatedSlugs: [],
+  relatedSlugs: [
+    "well-ap-vs-fitwel-certification-2026",
+    "nebosh-igc-vs-international-diploma-employers",
+  ],
   intro:
     "**The data center industry has two credentials that sound interchangeable: CDCP (Certified Data Centre Professional) and DCDC (Data Center Design Consultant).** Both cover power and cooling. But one is a 2-day foundation course for operations staff. The other is an advanced design credential that requires three years of experience and a $725 exam fee. Pick the wrong one first and you either waste money on a credential you cannot qualify for, or stall with a certificate that design hiring managers do not respect.",
   mockSlug: "cdcp-readiness-check",

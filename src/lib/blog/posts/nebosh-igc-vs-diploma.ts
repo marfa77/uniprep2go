@@ -9,7 +9,10 @@ export const neboshIgcVsDiplomaPost: BlogPostDraft = {
   publishedAt: "2026-07-27",
   eyebrow: "NEBOSH · Health & safety",
   clusterId: "nebosh",
-  relatedSlugs: [],
+  relatedSlugs: [
+    "mrics-apc-vs-assocrics-pathway-cost",
+    "well-ap-vs-fitwel-certification-2026",
+  ],
   intro:
     "**NEBOSH offers two flagship health and safety qualifications: the International General Certificate (IGC) and the International Diploma.** The IGC is a 10-day course with two written exams. The Diploma is a 24-day course with three written exams and a workplace assignment. The price gap is about 4×. The time gap is about 6×. The career gap is not always what you expect — this guide breaks down employer demand, salary data, and when the Diploma pays for itself.",
   mockSlug: "nebosh-readiness-check",
