@@ -180,12 +180,14 @@ function CtaBand({
     <section className="mt-10 rounded-3xl border border-[#1f3a5f]/20 bg-[#1f3a5f]/5 px-5 py-6 sm:px-6">
       <p className="text-base leading-7 text-[#4f493e]">{post.cta.summary}</p>
       <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-        <Link className={btnPrimary} href={`/mock-exams/${post.mockSlug}`}>
-          {post.cta.mockLabel}
-        </Link>
+        {post.mockSlug && post.cta.mockLabel ? (
+          <Link className={btnPrimary} href={`/mock-exams/${post.mockSlug}`}>
+            {post.cta.mockLabel}
+          </Link>
+        ) : null}
         {deck?.checkoutUrl ? (
           <TrackedCheckoutLink
-            className={btnSecondary}
+            className={post.mockSlug ? btnSecondary : btnPrimary}
             deckSlug={deck.slug}
             href={deck.checkoutUrl}
             source={`blog:${post.slug}`}
@@ -193,7 +195,10 @@ function CtaBand({
             {checkoutLabel}
           </TrackedCheckoutLink>
         ) : (
-          <Link className={btnSecondary} href={`/decks/${post.deckSlug}`}>
+          <Link
+            className={post.mockSlug ? btnSecondary : btnPrimary}
+            href={`/decks/${post.deckSlug}`}
+          >
             {post.cta.deckLabel}
           </Link>
         )}
@@ -204,6 +209,23 @@ function CtaBand({
             View deck details →
           </Link>
         </p>
+      ) : null}
+      {post.cta.extraLinks && post.cta.extraLinks.length > 0 ? (
+        <ul className="mt-4 space-y-2 text-sm leading-6 text-[#4f493e]">
+          {post.cta.extraLinks.map((link) => (
+            <li key={link.href}>
+              {link.href.startsWith("http") ? (
+                <a className="underline underline-offset-2" href={link.href} rel="noopener noreferrer">
+                  {link.label}
+                </a>
+              ) : (
+                <Link className="underline underline-offset-2" href={link.href}>
+                  {link.label}
+                </Link>
+              )}
+            </li>
+          ))}
+        </ul>
       ) : null}
     </section>
   );

@@ -47,16 +47,19 @@ export type BlogPost = {
   clusterId: string;
   /** Other blog slugs in the same cluster (cross-links) */
   relatedSlugs: string[];
-  mockSlug: string;
+  /** Free readiness mock — omit when the exam is language-only (no civics mock yet) */
+  mockSlug?: string;
   deckSlug: string;
   /** Hero stock image — required for published guides */
   hero: BlogImage;
   /** Mid-article stock images (auto-placed between sections) */
   inlineImages: BlogImage[];
   cta: {
-    mockLabel: string;
+    mockLabel?: string;
     deckLabel: string;
     summary: string;
+    /** Optional third-party / sibling product links (Prep2Go, comics, etc.) */
+    extraLinks?: Array<{ href: string; label: string }>;
   };
   sections: BlogSection[];
   faqs: BlogFaq[];

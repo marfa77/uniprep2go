@@ -17,6 +17,21 @@ describe("blog guides", () => {
   it("publishes niche cluster guides with FAQ and product links", () => {
     const posts = getAllBlogPosts();
     expect(posts.map((post) => post.slug)).toEqual([
+      "france-naturalization-2026-civic-exam-b2-language-test",
+      "germany-einbuergerungstest-vs-leben-in-deutschland-difference",
+      "spain-citizenship-ccse-dele-a2-two-exams",
+      "italy-citizenship-b1-test-cils-celi-not-civics",
+      "luxembourg-vivre-ensemble-test-format-pass",
+      "belgium-citizenship-test-flanders-vs-wallonia",
+      "sweden-medborgarskapsprov-2026-new-test",
+      "norway-statsborgerproven-format-questions-pass",
+      "denmark-indfoedsretsproeven-47-percent-pass-rate",
+      "portugal-nationality-test-2026-new-civic-exam",
+      "how-many-practice-tests-before-servsafe-manager-exam",
+      "cfa-level-1-vs-frm-part-1-which-to-choose",
+      "can-you-pass-leed-ga-free-resources-only",
+      "how-long-anki-decks-stay-current-exam-shelf-life",
+      "finra-options-questions-read-without-getting-tricked",
       "cdcp-vs-dcdc-data-center-certification-first-step",
       "memorize-epa-608-refrigerant-numbers-method",
       "anki-vs-quizlet-professional-exam-prep",
@@ -44,7 +59,12 @@ describe("blog guides", () => {
       expect(post.faqs.length).toBeGreaterThanOrEqual(6);
       expect(post.metaDescription.length).toBeGreaterThan(40);
       expect(post.sections.length).toBeGreaterThanOrEqual(4);
-      expect(getMockExamConfig(post.mockSlug)).toBeDefined();
+      if (post.mockSlug) {
+        expect(getMockExamConfig(post.mockSlug)).toBeDefined();
+        expect(post.cta.mockLabel?.length).toBeGreaterThan(0);
+      } else {
+        expect(post.cta.mockLabel).toBeUndefined();
+      }
       expect(["available", "planned"]).toContain(getDeckBySlug(post.deckSlug)?.status);
     }
   });
@@ -58,6 +78,7 @@ describe("blog guides", () => {
   it("wires niche exams as content clusters", () => {
     expect(getBlogPostsByCluster("servsafe").map((post) => post.slug).sort()).toEqual([
       "florida-food-manager-certification-dbpr-rules",
+      "how-many-practice-tests-before-servsafe-manager-exam",
       "servsafe-manager-exam-study-guide-2026",
       "servsafe-manager-florida-requirements-2026",
     ]);
@@ -79,8 +100,36 @@ describe("blog guides", () => {
     expect(getBlogPostsByCluster("cdl-hazmat").map((post) => post.slug)).toEqual([
       "cdl-hazmat-endorsement-state-fingerprinting-background-check",
     ]);
-    expect(getBlogPostsByCluster("leben-in-deutschland").map((post) => post.slug)).toEqual([
+    expect(getBlogPostsByCluster("leben-in-deutschland").map((post) => post.slug).sort()).toEqual([
+      "germany-einbuergerungstest-vs-leben-in-deutschland-difference",
       "leben-in-deutschland-test-english-preparation-guide",
+    ]);
+    expect(getBlogPostsByCluster("france-naturalisation").map((post) => post.slug)).toEqual([
+      "france-naturalization-2026-civic-exam-b2-language-test",
+    ]);
+    expect(getBlogPostsByCluster("portugal-nacionalidade").map((post) => post.slug)).toEqual([
+      "portugal-nationality-test-2026-new-civic-exam",
+    ]);
+    expect(getBlogPostsByCluster("denmark-citizenship").map((post) => post.slug)).toEqual([
+      "denmark-indfoedsretsproeven-47-percent-pass-rate",
+    ]);
+    expect(getBlogPostsByCluster("norway-citizenship").map((post) => post.slug)).toEqual([
+      "norway-statsborgerproven-format-questions-pass",
+    ]);
+    expect(getBlogPostsByCluster("sweden-citizenship").map((post) => post.slug)).toEqual([
+      "sweden-medborgarskapsprov-2026-new-test",
+    ]);
+    expect(getBlogPostsByCluster("belgium-citizenship").map((post) => post.slug)).toEqual([
+      "belgium-citizenship-test-flanders-vs-wallonia",
+    ]);
+    expect(getBlogPostsByCluster("luxembourg-citizenship").map((post) => post.slug)).toEqual([
+      "luxembourg-vivre-ensemble-test-format-pass",
+    ]);
+    expect(getBlogPostsByCluster("italy-citizenship").map((post) => post.slug)).toEqual([
+      "italy-citizenship-b1-test-cils-celi-not-civics",
+    ]);
+    expect(getBlogPostsByCluster("spain-citizenship").map((post) => post.slug)).toEqual([
+      "spain-citizenship-ccse-dele-a2-two-exams",
     ]);
     expect(getBlogPostsByCluster("nebosh").map((post) => post.slug)).toEqual([
       "nebosh-igc-vs-international-diploma-employers",
@@ -91,8 +140,19 @@ describe("blog guides", () => {
     expect(getBlogPostsByCluster("well-ap").map((post) => post.slug)).toEqual([
       "well-ap-vs-fitwel-certification-2026",
     ]);
-    expect(getBlogPostsByCluster("anki-study").map((post) => post.slug)).toEqual([
+    expect(getBlogPostsByCluster("anki-study").map((post) => post.slug).sort()).toEqual([
       "anki-vs-quizlet-professional-exam-prep",
+      "how-long-anki-decks-stay-current-exam-shelf-life",
+    ]);
+    expect(getBlogPostsByCluster("leed-ga").map((post) => post.slug)).toEqual([
+      "can-you-pass-leed-ga-free-resources-only",
+    ]);
+    expect(getBlogPostsByCluster("cfa-frm").map((post) => post.slug)).toEqual([
+      "cfa-level-1-vs-frm-part-1-which-to-choose",
+    ]);
+    expect(getBlogPostsByCluster("finra-sie").map((post) => post.slug).sort()).toEqual([
+      "finra-options-questions-read-without-getting-tricked",
+      "finra-sie-exam-prep-why-people-fail",
     ]);
 
     const florida = getBlogPostBySlug("servsafe-manager-florida-requirements-2026");
@@ -119,6 +179,12 @@ describe("blog guides", () => {
       "servsafe-manager-mock",
     );
     expect(getBlogPostBySlug("finra-sie-exam-prep-why-people-fail")?.mockSlug).toBe("sie-full-mock");
+    expect(getBlogPostBySlug("finra-options-questions-read-without-getting-tricked")?.mockSlug).toBe(
+      "sie-full-mock",
+    );
+    expect(getBlogPostBySlug("finra-options-questions-read-without-getting-tricked")?.deckSlug).toBe(
+      "sie-exam-anki-deck",
+    );
     expect(getBlogPostBySlug("california-real-estate-exam-dre-test-centers")?.mockSlug).toBe(
       "california-real-estate-readiness-check",
     );
@@ -143,12 +209,89 @@ describe("blog guides", () => {
     expect(getBlogPostBySlug("memorize-epa-608-refrigerant-numbers-method")?.mockSlug).toBe(
       "epa-608-readiness-check",
     );
+    expect(getBlogPostBySlug("how-long-anki-decks-stay-current-exam-shelf-life")?.deckSlug).toBe(
+      "hvac-epa-608-anki-deck",
+    );
+    expect(getBlogPostBySlug("can-you-pass-leed-ga-free-resources-only")?.mockSlug).toBe(
+      "leed-green-associate-readiness-check",
+    );
+    expect(getBlogPostBySlug("can-you-pass-leed-ga-free-resources-only")?.deckSlug).toBe(
+      "leed-green-associate-anki-deck",
+    );
+    expect(getBlogPostBySlug("cfa-level-1-vs-frm-part-1-which-to-choose")?.mockSlug).toBe(
+      "cfa-level-1-readiness-check",
+    );
+    expect(getBlogPostBySlug("cfa-level-1-vs-frm-part-1-which-to-choose")?.deckSlug).toBe(
+      "cfa-level-1-anki-deck",
+    );
+    expect(getBlogPostBySlug("how-many-practice-tests-before-servsafe-manager-exam")?.mockSlug).toBe(
+      "servsafe-manager-mock",
+    );
+    expect(getBlogPostBySlug("portugal-nationality-test-2026-new-civic-exam")?.mockSlug).toBe(
+      "portugal-nacionalidade-readiness-check",
+    );
+    expect(getBlogPostBySlug("portugal-nationality-test-2026-new-civic-exam")?.deckSlug).toBe(
+      "ciple-a2-european-portuguese-anki-deck",
+    );
+    expect(getBlogPostBySlug("denmark-indfoedsretsproeven-47-percent-pass-rate")?.mockSlug).toBe(
+      "denmark-indfoedsretsproeven-readiness-check",
+    );
+    expect(getBlogPostBySlug("norway-statsborgerproven-format-questions-pass")?.mockSlug).toBe(
+      "norway-statsborgerproven-readiness-check",
+    );
+    expect(getBlogPostBySlug("norway-statsborgerproven-format-questions-pass")?.deckSlug).toBe(
+      "norwegian-a2-norskprove-anki-deck",
+    );
+    expect(getBlogPostBySlug("sweden-medborgarskapsprov-2026-new-test")?.mockSlug).toBe(
+      "sweden-medborgarskapsprov-readiness-check",
+    );
+    expect(getBlogPostBySlug("sweden-medborgarskapsprov-2026-new-test")?.deckSlug).toBe(
+      "swedish-a2-sfi-anki-deck",
+    );
+    expect(getBlogPostBySlug("belgium-citizenship-test-flanders-vs-wallonia")?.mockSlug).toBe(
+      "belgium-flanders-mo-readiness-check",
+    );
+    expect(getBlogPostBySlug("belgium-citizenship-test-flanders-vs-wallonia")?.deckSlug).toBe(
+      "dutch-a2-inburgering-anki-deck",
+    );
+    expect(getBlogPostBySlug("luxembourg-vivre-ensemble-test-format-pass")?.mockSlug).toBe(
+      "luxembourg-vivre-ensemble-readiness-check",
+    );
+    expect(getBlogPostBySlug("italy-citizenship-b1-test-cils-celi-not-civics")?.mockSlug).toBeUndefined();
+    expect(getBlogPostBySlug("italy-citizenship-b1-test-cils-celi-not-civics")?.deckSlug).toBe(
+      "celi-b1-italian-anki-deck",
+    );
+    expect(getBlogPostBySlug("spain-citizenship-ccse-dele-a2-two-exams")?.mockSlug).toBe(
+      "ccse-espana-readiness-check",
+    );
+    expect(getBlogPostBySlug("spain-citizenship-ccse-dele-a2-two-exams")?.deckSlug).toBe(
+      "dele-a2-spanish-anki-deck",
+    );
+    expect(getBlogPostBySlug("germany-einbuergerungstest-vs-leben-in-deutschland-difference")?.mockSlug).toBe(
+      "leben-in-deutschland-readiness-check",
+    );
+    expect(getBlogPostBySlug("germany-einbuergerungstest-vs-leben-in-deutschland-difference")?.deckSlug).toBe(
+      "citizenship-naturalization-anki-bundle",
+    );
+    expect(getBlogPostBySlug("france-naturalization-2026-civic-exam-b2-language-test")?.mockSlug).toBe(
+      "naturalisation-francaise-readiness-check",
+    );
+    expect(getBlogPostBySlug("france-naturalization-2026-civic-exam-b2-language-test")?.deckSlug).toBe(
+      "delf-b2-french-anki-deck",
+    );
   });
 
   it("exposes reverse lookups from mock and deck slugs to guides", () => {
-    expect(getBlogPostsForMockSlug("leben-in-deutschland-readiness-check")).toHaveLength(1);
-    expect(getBlogPostsForDeckSlug("citizenship-naturalization-anki-bundle").map((p) => p.slug)).toContain(
-      "leben-in-deutschland-test-english-preparation-guide",
+    expect(getBlogPostsForMockSlug("leben-in-deutschland-readiness-check")).toHaveLength(2);
+    expect(getBlogPostsForDeckSlug("citizenship-naturalization-anki-bundle").map((p) => p.slug)).toEqual(
+      expect.arrayContaining([
+        "leben-in-deutschland-test-english-preparation-guide",
+        "germany-einbuergerungstest-vs-leben-in-deutschland-difference",
+      ]),
+    );
+    expect(getBlogPostsForMockSlug("naturalisation-francaise-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForDeckSlug("delf-b2-french-anki-deck").map((p) => p.slug)).toContain(
+      "france-naturalization-2026-civic-exam-b2-language-test",
     );
     expect(getBlogPostsForMockSlug("california-real-estate-readiness-check").map((p) => p.slug)).toEqual(
       expect.arrayContaining([
@@ -162,15 +305,31 @@ describe("blog guides", () => {
         "epa-608-type-1-vs-type-2-which-first",
         "memorize-epa-608-refrigerant-numbers-method",
         "anki-vs-quizlet-professional-exam-prep",
+        "how-long-anki-decks-stay-current-exam-shelf-life",
       ]),
     );
     expect(getBlogPostsForMockSlug("cdcp-readiness-check")).toHaveLength(1);
-    expect(getBlogPostsForMockSlug("sie-full-mock")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("sie-full-mock").map((p) => p.slug).sort()).toEqual([
+      "finra-options-questions-read-without-getting-tricked",
+      "finra-sie-exam-prep-why-people-fail",
+    ]);
     expect(getBlogPostsForMockSlug("swiss-citizenship-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("cdl-hazmat-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("nebosh-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("mrics-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("well-ap-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("leed-green-associate-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("cfa-level-1-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("portugal-nacionalidade-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("denmark-indfoedsretsproeven-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("norway-statsborgerproven-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("sweden-medborgarskapsprov-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("belgium-flanders-mo-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("luxembourg-vivre-ensemble-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("ccse-espana-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForDeckSlug("celi-b1-italian-anki-deck").map((p) => p.slug)).toContain(
+      "italy-citizenship-b1-test-cils-celi-not-civics",
+    );
   });
 
   it("lists the blog index and every post in the Google sitemap", () => {

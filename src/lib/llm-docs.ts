@@ -509,7 +509,7 @@ ${getAllBlogPosts()
 - Slug: ${post.slug}
 - URL: ${absoluteUrl(`/blog/${post.slug}`)}
 - Description: ${post.metaDescription}
-- Linked mock: ${absoluteUrl(`/mock-exams/${post.mockSlug}`)}
+- Linked mock: ${post.mockSlug ? absoluteUrl(`/mock-exams/${post.mockSlug}`) : "none (language pathway / no civics mock)"}
 - Linked deck: ${absoluteUrl(`/decks/${post.deckSlug}`)}
 - Published: ${post.publishedAt}
 
@@ -621,12 +621,15 @@ ${languageDecks
 ## Exam prep guides
 
 ${getAllBlogPosts()
+  .slice(0, 14)
   .map(
     (post) =>
-      `- ${llmMarkdownLink(post.titleTag, `/blog/${post.slug}`)} — mock: ${post.mockSlug}`,
+      `- ${llmMarkdownLink(post.titleTag, `/blog/${post.slug}`)} — ${
+        post.mockSlug ? `mock: ${post.mockSlug}` : `deck: ${post.deckSlug}`
+      }`,
   )
   .join("\n")}
-- Blog index: ${absoluteUrl("/blog")}
+- Full guide index (${getAllBlogPosts().length}): ${absoluteUrl("/blog")}
 
 ## Machine-readable sources
 

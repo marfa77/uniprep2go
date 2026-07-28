@@ -81,6 +81,398 @@ export const BLOG_STOCK_IMAGE_CONFIG: Record<
       },
     ],
   },
+  "france-naturalization-2026-civic-exam-b2-language-test": {
+    hero: {
+      id: "france-naturalization-2026-hero",
+      alt: "Paris skyline with Eiffel Tower and Seine River at dusk",
+      caption: "Two exams since 2026 — civic MCQ at 80% plus B2 French",
+      queries: [
+        "Paris Eiffel Tower Seine River France skyline",
+        "Paris Haussmann boulevard architecture France",
+        "Lyon old town Saone river France Europe",
+      ],
+      mustInclude: ["paris", "france", "eiffel", "tower", "europe"],
+      mustExclude: ["germany berlin", "spain madrid"],
+    },
+    inline: [
+      {
+        id: "france-naturalization-2026-study",
+        alt: "Adult studying French civic exam materials and B2 vocabulary at a desk",
+        caption: "Book language first — TCF IRN results can take 4–6 weeks",
+        queries: [
+          "adult studying French textbook laptop desk",
+          "person taking language exam practice laptop notebook",
+          "French vocabulary flashcards coffee desk study",
+        ],
+        mustInclude: ["study", "laptop", "desk", "book", "french"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
+  "germany-einbuergerungstest-vs-leben-in-deutschland-difference": {
+    hero: {
+      id: "germany-einbuergerungstest-vs-lid-hero",
+      alt: "Berlin Reichstag and Spree River under clear sky",
+      caption: "Same 33 BAMF questions — different certificate titles for citizenship vs PR",
+      queries: [
+        "Berlin Reichstag dome Spree River Germany",
+        "Brandenburg Gate Berlin Germany Europe",
+        "Cologne Cathedral Rhine Germany skyline",
+      ],
+      mustInclude: ["berlin", "germany", "reichstag", "europe", "gate"],
+      mustExclude: ["france paris", "austria vienna"],
+    },
+    inline: [
+      {
+        id: "germany-einbuergerungstest-vs-lid-study",
+        alt: "Person drilling German citizenship BAMF flashcards at a desk with laptop",
+        caption: "Register as Einbürgerungstest for naturalisation — avoid paperwork friction",
+        queries: [
+          "adult studying German textbook laptop desk citizenship",
+          "person taking computer based exam practice desk",
+          "flashcards German vocabulary notebook study desk",
+        ],
+        mustInclude: ["study", "laptop", "desk", "book", "german"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
+  "spain-citizenship-ccse-dele-a2-two-exams": {
+    hero: {
+      id: "spain-citizenship-ccse-dele-hero",
+      alt: "Madrid Royal Palace and Plaza de Oriente under clear sky",
+      caption: "Two Cervantes exams — CCSE civics plus DELE A2 language",
+      queries: [
+        "Madrid Royal Palace Plaza Oriente Spain",
+        "Barcelona Gothic Quarter street Spain Europe",
+        "Seville cathedral Giralda tower Spain",
+      ],
+      mustInclude: ["spain", "madrid", "palace", "europe", "city"],
+      mustExclude: ["italy rome", "portugal lisbon"],
+    },
+    inline: [
+      {
+        id: "spain-citizenship-ccse-dele-study",
+        alt: "Adult studying Spanish citizenship exam materials with laptop and notebook",
+        caption: "Book DELE first — higher retake cost and longer score wait than CCSE",
+        queries: [
+          "studying Spanish textbook laptop desk adult",
+          "person taking language exam practice test laptop",
+          "flashcards Spanish vocabulary notebook desk",
+        ],
+        mustInclude: ["study", "laptop", "desk", "book", "exam", "spanish"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
+  "italy-citizenship-b1-test-cils-celi-not-civics": {
+    hero: {
+      id: "italy-citizenship-b1-hero",
+      alt: "Rome Colosseum and historic streets in afternoon light",
+      caption: "No civics quiz — Italy requires B1 Italian (CILS or CELI Cittadinanza)",
+      queries: [
+        "Rome Colosseum Italy historic architecture",
+        "Florence Duomo cathedral Italy skyline",
+        "Venice canal gondola Italy Europe",
+      ],
+      mustInclude: ["italy", "rome", "colosseum", "europe", "historic"],
+      mustExclude: ["spain madrid", "greece athens"],
+    },
+    inline: [
+      {
+        id: "italy-citizenship-b1-study",
+        alt: "Person practicing Italian conversation and B1 exam speaking at a desk",
+        caption: "Speaking is the usual fail point — spontaneous production, not a memorised script",
+        queries: [
+          "adult studying Italian language textbook laptop desk",
+          "person speaking language tutor online video call desk",
+          "Italian vocabulary flashcards notebook study desk",
+        ],
+        mustInclude: ["study", "laptop", "desk", "language", "book", "italian"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
+  "luxembourg-vivre-ensemble-test-format-pass": {
+    hero: {
+      id: "luxembourg-vivre-ensemble-hero",
+      alt: "Luxembourg City skyline with Adolphe Bridge and fortifications",
+      caption: "40 questions or 24 hours — most applicants never hear about the exam path",
+      queries: [
+        "Luxembourg City Adolphe Bridge skyline fortifications",
+        "Luxembourg old town Grund valley Europe",
+        "Luxembourg City European quarter modern buildings",
+      ],
+      mustInclude: ["luxembourg", "city", "bridge", "europe", "skyline"],
+      mustExclude: ["belgium brussels", "france paris"],
+    },
+    inline: [
+      {
+        id: "luxembourg-vivre-ensemble-study",
+        alt: "Person taking a computer-based citizenship practice test at a desk",
+        caption: "Target 32/40 before Esch-Belval — Sproochentest is the harder half",
+        queries: [
+          "person computer based exam laptop desk timed test",
+          "studying European citizenship flashcards laptop desk",
+          "adult taking online quiz notebook desk",
+        ],
+        mustInclude: ["laptop", "exam", "desk", "study", "computer", "test"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
+  "belgium-citizenship-test-flanders-vs-wallonia": {
+    hero: {
+      id: "belgium-citizenship-hero",
+      alt: "Brussels Grand Place ornate guildhalls under daylight",
+      caption: "Three systems in one country — Flanders MO, Wallonia language, Brussels choice",
+      queries: [
+        "Brussels Grand Place guildhalls Belgium",
+        "Antwerp cathedral square Belgium Flanders",
+        "Brussels Atomium park Belgium landmark",
+      ],
+      mustInclude: ["brussels", "belgium", "belgian", "square", "building"],
+      mustExclude: ["netherlands amsterdam", "france paris"],
+    },
+    inline: [
+      {
+        id: "belgium-citizenship-integration",
+        alt: "Multilingual classroom for civic integration and language learning",
+        caption: "Flanders: MO + Dutch. Wallonia: French A2. Fee already €1,030.",
+        queries: [
+          "adult language classroom integration course Europe",
+          "civic education classroom adults learning languages",
+          "teacher adult students language class Belgium",
+        ],
+        mustInclude: ["classroom", "language", "adult", "learning", "teacher", "student"],
+        mustExclude: ["covid", "vaccine", "children only"],
+      },
+    ],
+  },
+  "sweden-medborgarskapsprov-2026-new-test": {
+    hero: {
+      id: "sweden-medborgarskapsprov-hero",
+      alt: "Stockholm waterfront with historic buildings and Swedish skyline",
+      caption: "Society test launches August 2026 — Samhällskunskap is your bridge until then",
+      queries: [
+        "Stockholm Gamla Stan waterfront Sweden skyline",
+        "Stockholm city hall Riddarfjärden Sweden",
+        "Swedish parliament Riksdag Stockholm exterior",
+      ],
+      mustInclude: ["stockholm", "sweden", "swedish", "water", "city", "building"],
+      mustExclude: ["norway oslo", "denmark copenhagen"],
+    },
+    inline: [
+      {
+        id: "sweden-medborgarskapsprov-study",
+        alt: "Person studying Swedish society textbook and notes at a desk",
+        caption: "Study SFI Samhällskunskap now — add UHR samples when they appear",
+        queries: [
+          "studying Swedish textbook notebook desk laptop",
+          "person reading civics book flashcards European desk",
+          "adult education social studies notes desk",
+        ],
+        mustInclude: ["study", "book", "desk", "notebook", "exam", "reading"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
+  "norway-statsborgerproven-format-questions-pass": {
+    hero: {
+      id: "norway-statsborgerproven-hero",
+      alt: "Oslo fjord and city skyline with Norwegian coastal light",
+      caption: "36 questions in Norwegian — HK-dir runs the filter, not UDI",
+      queries: [
+        "Oslo fjord skyline Norway harbor",
+        "Oslo opera house waterfront Norway",
+        "Bergen colorful houses Norwegian harbor",
+      ],
+      mustInclude: ["norway", "oslo", "fjord", "harbor", "norwegian", "city"],
+      mustExclude: ["sweden stockholm", "denmark copenhagen"],
+    },
+    inline: [
+      {
+        id: "norway-statsborgerproven-study",
+        alt: "Person studying Norwegian samfunnskunnskap materials on a laptop",
+        caption: "Read the curriculum in Norwegian — translation alone will not pass",
+        queries: [
+          "studying Norwegian textbook laptop desk flashcards",
+          "person reading language book notes Nordic desk",
+          "citizenship exam prep notebook laptop desk",
+        ],
+        mustInclude: ["study", "book", "laptop", "desk", "notebook", "exam"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
+  "denmark-indfoedsretsproeven-47-percent-pass-rate": {
+    hero: {
+      id: "denmark-indfoedsretsproeven-hero",
+      alt: "Copenhagen cityscape with Danish flag colors and historic buildings",
+      caption: "47% pass — because Denmark grades facts and values",
+      queries: [
+        "Copenhagen skyline Danish flag harbor historic buildings",
+        "Denmark parliament Christiansborg exterior",
+        "Copenhagen Nyhavn colorful houses canal",
+      ],
+      mustInclude: ["copenhagen", "denmark", "danish", "harbor", "building", "city"],
+      mustExclude: ["sweden stockholm", "norway oslo"],
+    },
+    inline: [
+      {
+        id: "denmark-indfoedsretsproeven-study",
+        alt: "Person studying Danish citizenship booklet and flashcards at a desk",
+        caption: "Official booklet + values scenarios — not common-sense guessing",
+        queries: [
+          "studying citizenship test booklet flashcards desk laptop",
+          "person reading Danish textbook notes desk",
+          "exam preparation flashcards notebook European desk",
+        ],
+        mustInclude: ["study", "book", "desk", "flashcard", "notebook", "exam"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
+  "portugal-nationality-test-2026-new-civic-exam": {
+    hero: {
+      id: "portugal-nationality-test-hero",
+      alt: "Lisbon Belém tower and Tagus river under blue sky",
+      caption: "Civic test is law — format still catching up to the syllabus",
+      queries: [
+        "Lisbon Belem tower Tagus river Portugal",
+        "Lisbon Alfama rooftops Portuguese tiles",
+        "Portugal Lisbon historic plaza flag",
+      ],
+      mustInclude: ["lisbon", "portugal", "tower", "portuguese", "city"],
+      mustExclude: ["brazil rio", "spain madrid"],
+    },
+    inline: [
+      {
+        id: "portugal-nationality-test-civics",
+        alt: "Portuguese constitution and civic study notes on a desk with laptop",
+        caption: "Five legal topics — history, symbols, institutions, rights, society",
+        queries: [
+          "studying constitution law books desk laptop Europe",
+          "civic education notes Portuguese flag desk",
+          "person reading history textbook European politics desk",
+        ],
+        mustInclude: ["study", "book", "desk", "law", "notebook", "constitution"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
+  "how-many-practice-tests-before-servsafe-manager-exam": {
+    hero: {
+      id: "servsafe-practice-tests-hero",
+      alt: "Restaurant kitchen manager checking food temperatures with a digital probe thermometer",
+      caption: "Two to three full timed mocks beat one short quiz repeated five times",
+      queries: [
+        "chef checking food temperature digital thermometer kitchen",
+        "restaurant kitchen manager probe thermometer steam table",
+        "food safety temperature check commercial kitchen",
+      ],
+      mustInclude: ["thermometer", "kitchen", "food", "temperature", "chef", "restaurant"],
+      mustExclude: ["home kitchen only", "birthday cake"],
+    },
+    inline: [
+      {
+        id: "servsafe-practice-tests-timer",
+        alt: "Person taking a timed online practice exam on a laptop at a desk",
+        caption: "Simulate 90 questions in 2 hours — no notes, no pause, mixed domains",
+        queries: [
+          "person taking online exam laptop timer desk",
+          "timed practice test laptop studying kitchen manager",
+          "student timed quiz laptop concentration desk",
+        ],
+        mustInclude: ["laptop", "exam", "study", "desk", "test", "computer"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
+  "cfa-level-1-vs-frm-part-1-which-to-choose": {
+    hero: {
+      id: "cfa-vs-frm-hero",
+      alt: "Finance professional reviewing charts and risk analytics on dual monitors",
+      caption: "CFA and FRM look similar on paper — they open different career doors",
+      queries: [
+        "finance professional trading desk dual monitors charts",
+        "investment analyst reviewing financial charts laptop office",
+        "risk analyst desk market data screens office",
+      ],
+      mustInclude: ["finance", "chart", "monitor", "office", "analyst", "desk"],
+      mustExclude: ["crypto casino", "bitcoin only"],
+    },
+    inline: [
+      {
+        id: "cfa-vs-frm-study",
+        alt: "Person studying finance textbooks and calculator for professional exam",
+        caption: "300 hours vs 200 hours — pick the path that matches your next job",
+        queries: [
+          "studying finance textbooks calculator notebook desk",
+          "CFA exam study books laptop desk",
+          "person calculating formulas notebook financial exam prep",
+        ],
+        mustInclude: ["study", "book", "calculator", "desk", "notebook", "finance"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
+  "can-you-pass-leed-ga-free-resources-only": {
+    hero: {
+      id: "leed-ga-free-resources-hero",
+      alt: "Modern green building with plants and glass facade for LEED certification",
+      caption: "Free USGBC PDFs get you started — volume and v5 depth are where free hits a wall",
+      queries: [
+        "modern green building glass facade plants sustainable architecture",
+        "LEED certified office building exterior greenery",
+        "sustainable architecture green roof modern building",
+      ],
+      mustInclude: ["building", "green", "architecture", "glass", "plant", "sustainable"],
+      mustExclude: ["construction hard hat only", "demolition"],
+    },
+    inline: [
+      {
+        id: "leed-ga-free-resources-study",
+        alt: "Student reading a green building handbook and taking notes at a desk",
+        caption: "Start with the Candidate Handbook — then decide if free banks are enough volume",
+        queries: [
+          "student reading architecture handbook notes desk laptop",
+          "studying sustainability textbook notebook desk",
+          "person reading green building guide taking notes",
+        ],
+        mustInclude: ["study", "book", "note", "desk", "student", "reading"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
+  "how-long-anki-decks-stay-current-exam-shelf-life": {
+    hero: {
+      id: "anki-shelf-life-hero",
+      alt: "Calendar and study books on a desk for tracking exam syllabus updates",
+      caption: "Decks expire when the syllabus moves — check the version before you import",
+      queries: [
+        "calendar planner study books desk exam prep",
+        "desk calendar textbooks studying professional exam",
+        "planner notebook books laptop exam schedule desk",
+      ],
+      mustInclude: ["calendar", "book", "study", "desk", "planner", "exam"],
+      mustExclude: ["wedding", "party", "birthday cake"],
+    },
+    inline: [
+      {
+        id: "anki-shelf-life-audit",
+        alt: "Person comparing official exam outline PDF with flashcards on a laptop",
+        caption: "Three-minute audit: outline vs deck TOC, then spot-check ten cards",
+        queries: [
+          "laptop comparing documents checklist studying desk",
+          "person reviewing PDF document laptop notebook desk",
+          "checklist notebook laptop exam preparation desk",
+        ],
+        mustInclude: ["laptop", "document", "study", "desk", "notebook", "checklist"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
   "anki-vs-quizlet-professional-exam-prep": {
     hero: {
       id: "anki-vs-quizlet-hero",
@@ -391,6 +783,34 @@ export const BLOG_STOCK_IMAGE_CONFIG: Record<
           "person reviewing legal documents studying desk",
         ],
         mustInclude: ["study", "book", "note", "flashcard", "exam", "laptop"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
+  "finra-options-questions-read-without-getting-tricked": {
+    hero: {
+      id: "finra-options-questions-hero",
+      alt: "Trader reviewing options charts and market data on multiple monitors",
+      caption: "Options questions are reading traps first — formulas second",
+      queries: [
+        "stock options trading charts multiple monitors",
+        "trader desk options market screens",
+        "financial trading desk candlestick charts",
+      ],
+      mustInclude: ["trading", "chart", "stock", "market", "monitor", "finance"],
+      mustExclude: ["crypto only", "casino"],
+    },
+    inline: [
+      {
+        id: "finra-options-questions-formulas",
+        alt: "Notebook with handwritten finance formulas and calculator for exam prep",
+        caption: "Know long/short and call/put before you calculate breakeven",
+        queries: [
+          "handwritten finance formulas notebook calculator desk",
+          "studying options formulas notebook exam prep",
+          "calculator notebook stock market studying desk",
+        ],
+        mustInclude: ["notebook", "formula", "calculator", "study", "exam"],
         mustExclude: ["covid", "vaccine"],
       },
     ],

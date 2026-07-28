@@ -1,18 +1,33 @@
+import { ankiDeckShelfLifePost } from "./posts/anki-deck-shelf-life";
 import { ankiVsQuizletExamPrepPost } from "./posts/anki-vs-quizlet-exam-prep";
+import { belgiumCitizenshipFlandersWalloniaPost } from "./posts/belgium-citizenship-flanders-wallonia";
 import { californiaRealEstateDreCentersPost } from "./posts/california-real-estate-dre-centers";
 import { californiaRealEstatePsiVsPearsonPost } from "./posts/california-real-estate-psi-vs-pearson";
 import { cdlHazmatStateFingerprintingPost } from "./posts/cdl-hazmat-state-fingerprinting";
 import { cdcpVsDcdcPost } from "./posts/cdcp-vs-dcdc";
+import { cfaVsFrmPost } from "./posts/cfa-vs-frm";
+import { denmarkIndfoedsretsproevenPost } from "./posts/denmark-indfoedsretsproeven";
 import { epa608PracticeTestPost } from "./posts/epa-608-practice-test";
 import { epa608Type1VsType2Post } from "./posts/epa-608-type-1-vs-type-2";
+import { finraOptionsQuestionsPost } from "./posts/finra-options-questions";
 import { finraSieExamPrepPost } from "./posts/finra-sie-exam-prep";
 import { floridaFoodManagerDbprRulesPost } from "./posts/florida-food-manager-dbpr-rules";
 import { lebenInDeutschlandEnglishPrepPost } from "./posts/leben-in-deutschland-english-prep";
+import { leedGaFreeResourcesPost } from "./posts/leed-ga-free-resources";
+import { franceNaturalization2026Post } from "./posts/france-naturalization-2026";
+import { germanyEinbuergerungstestVsLidPost } from "./posts/germany-einbuergerungstest-vs-lid";
+import { italyCitizenshipB1Post } from "./posts/italy-citizenship-b1";
+import { luxembourgVivreEnsemblePost } from "./posts/luxembourg-vivre-ensemble";
 import { memorizeEpa608RefrigerantsPost } from "./posts/memorize-epa-608-refrigerants";
 import { mricsApcVsAssocricsPost } from "./posts/mrics-apc-vs-assocrics";
 import { neboshIgcVsDiplomaPost } from "./posts/nebosh-igc-vs-diploma";
+import { norwayStatsborgerprovenPost } from "./posts/norway-statsborgerproven";
+import { portugalNationalityTestPost } from "./posts/portugal-nationality-test";
 import { servsafeFloridaRequirementsPost } from "./posts/servsafe-florida-requirements";
 import { servsafeManagerStudyGuidePost } from "./posts/servsafe-manager-study-guide";
+import { servsafePracticeTestsCountPost } from "./posts/servsafe-practice-tests-count";
+import { spainCitizenshipCcseDelePost } from "./posts/spain-citizenship-ccse-dele";
+import { swedenMedborgarskapsprovPost } from "./posts/sweden-medborgarskapsprov";
 import { swissCitizenshipCantonalFormatPost } from "./posts/swiss-citizenship-cantonal-format";
 import { wellApVsFitwelPost } from "./posts/well-ap-vs-fitwel";
 import {
@@ -54,6 +69,21 @@ export function withBlogStockImages(draft: BlogPostDraft): BlogPost {
 }
 
 const blogPostDrafts: BlogPostDraft[] = [
+  franceNaturalization2026Post,
+  germanyEinbuergerungstestVsLidPost,
+  spainCitizenshipCcseDelePost,
+  italyCitizenshipB1Post,
+  luxembourgVivreEnsemblePost,
+  belgiumCitizenshipFlandersWalloniaPost,
+  swedenMedborgarskapsprovPost,
+  norwayStatsborgerprovenPost,
+  denmarkIndfoedsretsproevenPost,
+  portugalNationalityTestPost,
+  servsafePracticeTestsCountPost,
+  cfaVsFrmPost,
+  leedGaFreeResourcesPost,
+  ankiDeckShelfLifePost,
+  finraOptionsQuestionsPost,
   cdcpVsDcdcPost,
   memorizeEpa608RefrigerantsPost,
   ankiVsQuizletExamPrepPost,

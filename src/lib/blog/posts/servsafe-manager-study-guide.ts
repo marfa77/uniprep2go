@@ -10,6 +10,7 @@ export const servsafeManagerStudyGuidePost: BlogPostDraft = {
   eyebrow: "ServSafe Manager · Food safety",
   clusterId: "servsafe",
   relatedSlugs: [
+    "how-many-practice-tests-before-servsafe-manager-exam",
     "florida-food-manager-certification-dbpr-rules",
     "servsafe-manager-florida-requirements-2026",
   ],

@@ -9,7 +9,11 @@ export const lebenInDeutschlandEnglishPrepPost: BlogPostDraft = {
   publishedAt: "2026-07-27",
   eyebrow: "Leben in Deutschland · Einbürgerungstest",
   clusterId: "leben-in-deutschland",
-  relatedSlugs: ["swiss-citizenship-test-cantonal-format-questions"],
+  relatedSlugs: [
+    "germany-einbuergerungstest-vs-leben-in-deutschland-difference",
+    "swiss-citizenship-test-cantonal-format-questions",
+    "france-naturalization-2026-civic-exam-b2-language-test",
+  ],
   intro:
     "The Leben in Deutschland test — also called the Einbürgerungstest — is the mandatory knowledge exam for German citizenship and permanent residence. It is administered in **German** at roughly B1 level. If your German is functional but not fluent, studying from German-only resources is inefficient. You spend half your time translating instead of learning the content. This guide explains the test structure, the 300 official questions, how to study with English support, and the exact score you need for citizenship versus permanent residence.",
   mockSlug: "leben-in-deutschland-readiness-check",

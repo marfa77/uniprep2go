@@ -10,6 +10,7 @@ export const servsafeFloridaRequirementsPost: BlogPostDraft = {
   eyebrow: "ServSafe · Florida DBPR",
   clusterId: "servsafe",
   relatedSlugs: [
+    "how-many-practice-tests-before-servsafe-manager-exam",
     "florida-food-manager-certification-dbpr-rules",
     "servsafe-manager-exam-study-guide-2026",
   ],

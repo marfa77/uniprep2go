@@ -9,7 +9,7 @@ export const finraSieExamPrepPost: BlogPostDraft = {
   publishedAt: "2026-07-27",
   eyebrow: "FINRA SIE · Securities licensing",
   clusterId: "finra-sie",
-  relatedSlugs: [],
+  relatedSlugs: ["finra-options-questions-read-without-getting-tricked"],
   intro:
     "The FINRA Securities Industry Essentials (SIE) exam is the gatekeeper. Pass it, and you can register with a broker-dealer. Fail it, and you are stuck explaining to hiring managers why your resume has a gap. The pass rate hovers around **70%**, but that number is inflated by retakes. First-time pass rates are lower, and the people who fail usually fail for the same three reasons: they underestimated the math, they memorized terms without understanding them, and they ran out of time.",
   mockSlug: "sie-full-mock",

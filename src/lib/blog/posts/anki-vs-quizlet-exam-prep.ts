@@ -9,7 +9,7 @@ export const ankiVsQuizletExamPrepPost: BlogPostDraft = {
   publishedAt: "2026-07-27",
   eyebrow: "Study tools · Spaced repetition",
   clusterId: "anki-study",
-  relatedSlugs: [],
+  relatedSlugs: ["how-long-anki-decks-stay-current-exam-shelf-life"],
   intro:
     "**If you are studying for a professional licensing exam — FINRA SIE, LEED GA, EPA 608, ServSafe Manager — you need facts to stick for weeks or months, not hours.** The tool you choose determines whether you pass the exam or recognize the answer in the app and draw a blank at the testing center. Anki and Quizlet are not interchangeable: one is built for long-term retention through spaced repetition; the other is built for quick review and classroom sharing.",
   mockSlug: "epa-608-readiness-check",
