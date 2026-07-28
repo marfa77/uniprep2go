@@ -11,6 +11,7 @@ export const cdlHazmatStateFingerprintingPost: BlogPostDraft = {
   eyebrow: "CDL HazMat · TSA & DMV fingerprinting",
   clusterId: "cdl-hazmat",
   relatedSlugs: [
+    "cdl-general-knowledge-test-50-questions-what-to-expect",
     "epa-608-practice-test-what-to-expect",
     "epa-608-type-1-vs-type-2-which-first",
   ],

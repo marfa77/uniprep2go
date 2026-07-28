@@ -1,8 +1,10 @@
 import { ankiDeckShelfLifePost } from "./posts/anki-deck-shelf-life";
 import { ankiVsQuizletExamPrepPost } from "./posts/anki-vs-quizlet-exam-prep";
 import { belgiumCitizenshipFlandersWalloniaPost } from "./posts/belgium-citizenship-flanders-wallonia";
+import { canadaCitizenshipTestPost } from "./posts/canada-citizenship-test";
 import { californiaRealEstateDreCentersPost } from "./posts/california-real-estate-dre-centers";
 import { californiaRealEstatePsiVsPearsonPost } from "./posts/california-real-estate-psi-vs-pearson";
+import { cdlGeneralKnowledgePost } from "./posts/cdl-general-knowledge";
 import { cdlHazmatStateFingerprintingPost } from "./posts/cdl-hazmat-state-fingerprinting";
 import { cdcpVsDcdcPost } from "./posts/cdcp-vs-dcdc";
 import { cfaVsFrmPost } from "./posts/cfa-vs-frm";
@@ -17,10 +19,12 @@ import { leedGaFreeResourcesPost } from "./posts/leed-ga-free-resources";
 import { franceNaturalization2026Post } from "./posts/france-naturalization-2026";
 import { germanyEinbuergerungstestVsLidPost } from "./posts/germany-einbuergerungstest-vs-lid";
 import { italyCitizenshipB1Post } from "./posts/italy-citizenship-b1";
+import { lifeInTheUkFailPassPost } from "./posts/life-in-the-uk-fail-pass";
 import { luxembourgVivreEnsemblePost } from "./posts/luxembourg-vivre-ensemble";
 import { memorizeEpa608RefrigerantsPost } from "./posts/memorize-epa-608-refrigerants";
 import { mricsApcVsAssocricsPost } from "./posts/mrics-apc-vs-assocrics";
 import { neboshIgcVsDiplomaPost } from "./posts/nebosh-igc-vs-diploma";
+import { netherlandsInburgeringsexamenPost } from "./posts/netherlands-inburgeringsexamen";
 import { norwayStatsborgerprovenPost } from "./posts/norway-statsborgerproven";
 import { portugalNationalityTestPost } from "./posts/portugal-nationality-test";
 import { servsafeFloridaRequirementsPost } from "./posts/servsafe-florida-requirements";
@@ -29,6 +33,7 @@ import { servsafePracticeTestsCountPost } from "./posts/servsafe-practice-tests-
 import { spainCitizenshipCcseDelePost } from "./posts/spain-citizenship-ccse-dele";
 import { swedenMedborgarskapsprovPost } from "./posts/sweden-medborgarskapsprov";
 import { swissCitizenshipCantonalFormatPost } from "./posts/swiss-citizenship-cantonal-format";
+import { usNaturalizationCivicsPost } from "./posts/us-naturalization-civics";
 import { wellApVsFitwelPost } from "./posts/well-ap-vs-fitwel";
 import {
   BLOG_STOCK_IMAGE_CONFIG,
@@ -69,6 +74,11 @@ export function withBlogStockImages(draft: BlogPostDraft): BlogPost {
 }
 
 const blogPostDrafts: BlogPostDraft[] = [
+  cdlGeneralKnowledgePost,
+  canadaCitizenshipTestPost,
+  usNaturalizationCivicsPost,
+  lifeInTheUkFailPassPost,
+  netherlandsInburgeringsexamenPost,
   franceNaturalization2026Post,
   germanyEinbuergerungstestVsLidPost,
   spainCitizenshipCcseDelePost,

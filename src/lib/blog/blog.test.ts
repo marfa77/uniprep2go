@@ -20,6 +20,11 @@ describe("blog guides", () => {
   it("publishes niche cluster guides with FAQ and product links", () => {
     const posts = getAllBlogPosts();
     expect(posts.map((post) => post.slug)).toEqual([
+      "cdl-general-knowledge-test-50-questions-what-to-expect",
+      "canada-citizenship-test-20-questions-630-dollars",
+      "us-naturalization-civics-test-100-questions-only-10",
+      "life-in-the-uk-test-why-one-in-three-fail",
+      "netherlands-inburgeringsexamen-five-exams-pass-guide",
       "france-naturalization-2026-civic-exam-b2-language-test",
       "germany-einbuergerungstest-vs-leben-in-deutschland-difference",
       "spain-citizenship-ccse-dele-a2-two-exams",
@@ -103,12 +108,27 @@ describe("blog guides", () => {
     expect(getBlogPostsByCluster("cdl-hazmat").map((post) => post.slug)).toEqual([
       "cdl-hazmat-endorsement-state-fingerprinting-background-check",
     ]);
+    expect(getBlogPostsByCluster("cdl-general-knowledge").map((post) => post.slug)).toEqual([
+      "cdl-general-knowledge-test-50-questions-what-to-expect",
+    ]);
     expect(getBlogPostsByCluster("leben-in-deutschland").map((post) => post.slug).sort()).toEqual([
       "germany-einbuergerungstest-vs-leben-in-deutschland-difference",
       "leben-in-deutschland-test-english-preparation-guide",
     ]);
     expect(getBlogPostsByCluster("france-naturalisation").map((post) => post.slug)).toEqual([
       "france-naturalization-2026-civic-exam-b2-language-test",
+    ]);
+    expect(getBlogPostsByCluster("netherlands-inburgering").map((post) => post.slug)).toEqual([
+      "netherlands-inburgeringsexamen-five-exams-pass-guide",
+    ]);
+    expect(getBlogPostsByCluster("life-in-the-uk").map((post) => post.slug)).toEqual([
+      "life-in-the-uk-test-why-one-in-three-fail",
+    ]);
+    expect(getBlogPostsByCluster("us-citizenship").map((post) => post.slug)).toEqual([
+      "us-naturalization-civics-test-100-questions-only-10",
+    ]);
+    expect(getBlogPostsByCluster("canada-citizenship").map((post) => post.slug)).toEqual([
+      "canada-citizenship-test-20-questions-630-dollars",
     ]);
     expect(getBlogPostsByCluster("portugal-nacionalidade").map((post) => post.slug)).toEqual([
       "portugal-nationality-test-2026-new-civic-exam",
@@ -173,6 +193,12 @@ describe("blog guides", () => {
     );
     expect(getBlogPostBySlug("cdl-hazmat-endorsement-state-fingerprinting-background-check")?.mockSlug).toBe(
       "cdl-hazmat-readiness-check",
+    );
+    expect(getBlogPostBySlug("cdl-general-knowledge-test-50-questions-what-to-expect")?.mockSlug).toBe(
+      "cdl-general-knowledge-readiness-check",
+    );
+    expect(getBlogPostBySlug("cdl-general-knowledge-test-50-questions-what-to-expect")?.deckSlug).toBe(
+      "cdl-general-knowledge-anki-deck",
     );
     expect(getBlogPostBySlug("swiss-citizenship-test-cantonal-format-questions")?.mockSlug).toBe(
       "swiss-citizenship-readiness-check",
@@ -282,6 +308,28 @@ describe("blog guides", () => {
     expect(getBlogPostBySlug("france-naturalization-2026-civic-exam-b2-language-test")?.deckSlug).toBe(
       "delf-b2-french-anki-deck",
     );
+    expect(getBlogPostBySlug("netherlands-inburgeringsexamen-five-exams-pass-guide")?.mockSlug).toBeUndefined();
+    expect(getBlogPostBySlug("netherlands-inburgeringsexamen-five-exams-pass-guide")?.deckSlug).toBe(
+      "dutch-a2-inburgering-anki-deck",
+    );
+    expect(getBlogPostBySlug("life-in-the-uk-test-why-one-in-three-fail")?.mockSlug).toBe(
+      "life-in-the-uk-readiness-check",
+    );
+    expect(getBlogPostBySlug("life-in-the-uk-test-why-one-in-three-fail")?.deckSlug).toBe(
+      "citizenship-naturalization-anki-bundle",
+    );
+    expect(getBlogPostBySlug("us-naturalization-civics-test-100-questions-only-10")?.mockSlug).toBe(
+      "us-citizenship-readiness-check",
+    );
+    expect(getBlogPostBySlug("us-naturalization-civics-test-100-questions-only-10")?.deckSlug).toBe(
+      "citizenship-naturalization-anki-bundle",
+    );
+    expect(getBlogPostBySlug("canada-citizenship-test-20-questions-630-dollars")?.mockSlug).toBe(
+      "canadian-citizenship-readiness-check",
+    );
+    expect(getBlogPostBySlug("canada-citizenship-test-20-questions-630-dollars")?.deckSlug).toBe(
+      "citizenship-naturalization-anki-bundle",
+    );
   });
 
   it("exposes reverse lookups from mock and deck slugs to guides", () => {
@@ -293,6 +341,15 @@ describe("blog guides", () => {
       ]),
     );
     expect(getBlogPostsForMockSlug("naturalisation-francaise-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("life-in-the-uk-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("us-citizenship-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("canadian-citizenship-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForDeckSlug("dutch-a2-inburgering-anki-deck").map((p) => p.slug)).toEqual(
+      expect.arrayContaining([
+        "netherlands-inburgeringsexamen-five-exams-pass-guide",
+        "belgium-citizenship-test-flanders-vs-wallonia",
+      ]),
+    );
     expect(getBlogPostsForDeckSlug("delf-b2-french-anki-deck").map((p) => p.slug)).toContain(
       "france-naturalization-2026-civic-exam-b2-language-test",
     );
@@ -318,6 +375,7 @@ describe("blog guides", () => {
     ]);
     expect(getBlogPostsForMockSlug("swiss-citizenship-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("cdl-hazmat-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("cdl-general-knowledge-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("nebosh-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("mrics-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("well-ap-readiness-check")).toHaveLength(1);

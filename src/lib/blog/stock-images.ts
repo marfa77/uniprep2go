@@ -81,6 +81,118 @@ export const BLOG_STOCK_IMAGE_CONFIG: Record<
       },
     ],
   },
+  "canada-citizenship-test-20-questions-630-dollars": {
+    hero: {
+      id: "canada-citizenship-test-hero",
+      alt: "Canadian Parliament Buildings on Parliament Hill in Ottawa",
+      caption: "20 questions, 75% to pass — geography capitals are where scores die",
+      queries: [
+        "Ottawa Parliament Hill Canadian Parliament Buildings",
+        "Toronto CN Tower skyline Canada",
+        "Montreal old port Canada skyline",
+      ],
+      mustInclude: ["canada", "ottawa", "parliament", "canadian"],
+      mustExclude: ["usa washington", "uk london"],
+    },
+    inline: [
+      {
+        id: "canada-citizenship-test-study",
+        alt: "Adult studying Discover Canada citizenship guide with flashcards",
+        caption: "Do not sit until timed mocks hit about 18/20",
+        queries: [
+          "adult studying Canadian textbook laptop desk",
+          "person taking citizenship practice test laptop notebook",
+          "flashcards geography capitals study desk",
+        ],
+        mustInclude: ["study", "laptop", "desk", "book"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
+  "us-naturalization-civics-test-100-questions-only-10": {
+    hero: {
+      id: "us-naturalization-civics-hero",
+      alt: "United States Capitol dome in Washington DC",
+      caption: "100 published questions — the interview asks up to 10 and stops at 6 correct",
+      queries: [
+        "United States Capitol Washington DC dome",
+        "Lincoln Memorial Washington DC USA",
+        "US flag Capitol Hill Washington",
+      ],
+      mustInclude: ["capitol", "washington", "usa", "america"],
+      mustExclude: ["canada ottawa", "uk london"],
+    },
+    inline: [
+      {
+        id: "us-naturalization-civics-study",
+        alt: "Person practicing USCIS civics questions aloud with flashcards",
+        caption: "Train oral answers — the real interview is not multiple choice",
+        queries: [
+          "adult studying US government textbook flashcards desk",
+          "person practicing interview questions aloud notebook",
+          "citizenship test flashcards laptop study desk",
+        ],
+        mustInclude: ["study", "desk", "book", "flashcard", "laptop"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
+  "life-in-the-uk-test-why-one-in-three-fail": {
+    hero: {
+      id: "life-in-the-uk-fail-pass-hero",
+      alt: "Big Ben and Houses of Parliament along the Thames in London",
+      caption: "24 questions, 45 minutes, £50 — Chapter 3 history is where most scores die",
+      queries: [
+        "London Big Ben Houses of Parliament Thames",
+        "UK Union Jack flag Westminster London Europe",
+        "Tower Bridge London England skyline",
+      ],
+      mustInclude: ["london", "britain", "england", "parliament", "uk"],
+      mustExclude: ["france paris", "netherlands amsterdam"],
+    },
+    inline: [
+      {
+        id: "life-in-the-uk-fail-pass-study",
+        alt: "Adult studying the Life in the UK handbook with flashcards at a desk",
+        caption: "Do not book until timed mocks hit about 20/24",
+        queries: [
+          "adult studying British history textbook laptop desk",
+          "person taking citizenship practice test laptop notebook",
+          "flashcards dates history study desk coffee",
+        ],
+        mustInclude: ["study", "laptop", "desk", "book"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
+  "netherlands-inburgeringsexamen-five-exams-pass-guide": {
+    hero: {
+      id: "netherlands-inburgeringsexamen-hero",
+      alt: "Amsterdam canals with traditional Dutch canal houses",
+      caption: "Five DUO modules — speaking and KNM catch most candidates",
+      queries: [
+        "Amsterdam canal houses Netherlands Europe",
+        "Amsterdam Dam Square Royal Palace Netherlands",
+        "Rotterdam Erasmus Bridge Netherlands skyline",
+      ],
+      mustInclude: ["amsterdam", "netherlands", "canal", "dutch", "europe"],
+      mustExclude: ["belgium brussels", "germany berlin"],
+    },
+    inline: [
+      {
+        id: "netherlands-inburgeringsexamen-study",
+        alt: "Person practicing Dutch speaking and inburgering modules on a laptop",
+        caption: "Practice timed Spreken recordings before you pay €50 per module",
+        queries: [
+          "adult studying Dutch language textbook laptop desk",
+          "person language exam practice headphones laptop desk",
+          "flashcards Dutch vocabulary notebook study desk",
+        ],
+        mustInclude: ["study", "laptop", "desk", "language", "dutch"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
   "france-naturalization-2026-civic-exam-b2-language-test": {
     hero: {
       id: "france-naturalization-2026-hero",
@@ -869,6 +981,34 @@ export const BLOG_STOCK_IMAGE_CONFIG: Record<
         mustInclude: ["swiss", "switzerland", "flag"],
         mustExclude: ["covid", "eu digital", "vaccine", "austrian", "portuguese", "bulgarian"],
         pexelsPhotoId: 27289394,
+      },
+    ],
+  },
+  "cdl-general-knowledge-test-50-questions-what-to-expect": {
+    hero: {
+      id: "cdl-general-knowledge-hero",
+      alt: "Semi truck on an open American highway at dusk",
+      caption: "General Knowledge is the gatekeeper — endorsements come after",
+      queries: [
+        "semi truck american highway interstate dusk",
+        "commercial freight truck USA highway road",
+        "truck driver cab semi trailer highway",
+      ],
+      mustInclude: ["truck", "semi", "highway", "freight", "trailer"],
+      mustExclude: ["toy truck", "pickup only", "hazmat placard closeup"],
+    },
+    inline: [
+      {
+        id: "cdl-general-knowledge-study",
+        alt: "Adult studying a commercial driver handbook with notes",
+        caption: "Study the official state CDL manual — then full 50-question timed mocks",
+        queries: [
+          "adult studying handbook notebook desk",
+          "driver studying test prep book notes",
+          "adult reading manual checklist clipboard desk",
+        ],
+        mustInclude: ["study", "book", "manual", "desk", "notes", "handbook"],
+        mustExclude: ["children", "covid", "vaccine", "laptop only coding"],
       },
     ],
   },

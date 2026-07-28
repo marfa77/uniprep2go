@@ -305,8 +305,9 @@ describe("LLM documents", () => {
     expect(llms).toContain("/mock-exams/sie-full-mock");
     expect(llms).toContain("Language decks (secondary");
     expect(llms).toContain("## Exam prep guides");
-    expect(llms).toContain("/blog/france-naturalization-2026-civic-exam-b2-language-test");
-    expect(llms).toContain("/blog/germany-einbuergerungstest-vs-leben-in-deutschland-difference");
+    expect(llms).toContain("/blog/cdl-general-knowledge-test-50-questions-what-to-expect");
+    expect(llms).toContain("/blog/canada-citizenship-test-20-questions-630-dollars");
+    expect(llms).toContain("/blog/us-naturalization-civics-test-100-questions-only-10");
     expect(llms).toContain("Full guide index");
     expect(llms.length).toBeLessThan(32000);
   });
