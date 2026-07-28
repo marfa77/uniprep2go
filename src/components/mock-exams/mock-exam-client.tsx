@@ -4,7 +4,7 @@ import Link from "next/link";
 import { getCatalogDeckBySlug } from "@/lib/decks";
 import type { MockAccessState, MockExamConfig, MockQuestion, MockReport } from "@/lib/mock-exams/types";
 import { getMockCta } from "@/lib/mock-exams/access";
-import { LEARN_SESSION_PRICE_USD } from "@/lib/mock-exams/learn-pass";
+import { LEARN_PASS_PRICE_USD } from "@/lib/mock-exams/learn-pass";
 import type { MockSessionMode } from "@/lib/mock-exams/session-mode";
 import {
   buildMockReport,
@@ -63,7 +63,7 @@ const learnBriefFree = [
 ] as const;
 
 const learnBriefPaid = [
-  `$${LEARN_SESSION_PRICE_USD} / session · packs of 5 · untimed with instant explanations`,
+  `Learn Pass · $${LEARN_PASS_PRICE_USD} · untimed with instant explanations`,
   "Correct/incorrect + why after each answer",
   "Same full topic report when you finish",
 ] as const;
