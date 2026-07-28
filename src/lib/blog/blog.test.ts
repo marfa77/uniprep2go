@@ -17,6 +17,8 @@ describe("blog guides", () => {
   it("publishes niche cluster guides with FAQ and product links", () => {
     const posts = getAllBlogPosts();
     expect(posts.map((post) => post.slug)).toEqual([
+      "cdcp-vs-dcdc-data-center-certification-first-step",
+      "memorize-epa-608-refrigerant-numbers-method",
       "anki-vs-quizlet-professional-exam-prep",
       "nebosh-igc-vs-international-diploma-employers",
       "mrics-apc-vs-assocrics-pathway-cost",
@@ -62,6 +64,10 @@ describe("blog guides", () => {
     expect(getBlogPostsByCluster("epa-608").map((post) => post.slug).sort()).toEqual([
       "epa-608-practice-test-what-to-expect",
       "epa-608-type-1-vs-type-2-which-first",
+      "memorize-epa-608-refrigerant-numbers-method",
+    ]);
+    expect(getBlogPostsByCluster("cdcp").map((post) => post.slug)).toEqual([
+      "cdcp-vs-dcdc-data-center-certification-first-step",
     ]);
     expect(getBlogPostsByCluster("california-real-estate").map((post) => post.slug).sort()).toEqual([
       "california-real-estate-exam-dre-test-centers",
@@ -131,6 +137,12 @@ describe("blog guides", () => {
     expect(getBlogPostBySlug("well-ap-vs-fitwel-certification-2026")?.mockSlug).toBe(
       "well-ap-readiness-check",
     );
+    expect(getBlogPostBySlug("cdcp-vs-dcdc-data-center-certification-first-step")?.mockSlug).toBe(
+      "cdcp-readiness-check",
+    );
+    expect(getBlogPostBySlug("memorize-epa-608-refrigerant-numbers-method")?.mockSlug).toBe(
+      "epa-608-readiness-check",
+    );
   });
 
   it("exposes reverse lookups from mock and deck slugs to guides", () => {
@@ -148,8 +160,11 @@ describe("blog guides", () => {
       expect.arrayContaining([
         "epa-608-practice-test-what-to-expect",
         "epa-608-type-1-vs-type-2-which-first",
+        "memorize-epa-608-refrigerant-numbers-method",
+        "anki-vs-quizlet-professional-exam-prep",
       ]),
     );
+    expect(getBlogPostsForMockSlug("cdcp-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("sie-full-mock")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("swiss-citizenship-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("cdl-hazmat-readiness-check")).toHaveLength(1);

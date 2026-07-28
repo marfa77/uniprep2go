@@ -24,6 +24,63 @@ export const BLOG_STOCK_IMAGE_CONFIG: Record<
   string,
   { hero: BlogStockImageSlot; inline: BlogStockImageSlot[] }
 > = {
+  "cdcp-vs-dcdc-data-center-certification-first-step": {
+    hero: {
+      id: "cdcp-vs-dcdc-hero",
+      alt: "Rows of server racks in a modern data center aisle",
+      caption: "CDCP is operations foundation; DCDC is design-only and needs 3 years of experience",
+      queries: [
+        "data center server racks aisle",
+        "modern data centre server room corridor",
+        "colocation data center cabinets LED lights",
+      ],
+      mustInclude: ["data center", "server", "rack", "datacenter", "cabinet"],
+      mustExclude: ["home office", "laptop desk only"],
+    },
+    inline: [
+      {
+        id: "cdcp-vs-dcdc-cooling",
+        alt: "Data center cooling and power infrastructure near server cabinets",
+        caption: "CDCP teaches why CRAC needs maintenance; DCDC writes the CRAC specification",
+        queries: [
+          "data center cooling CRAC unit",
+          "server room HVAC cooling infrastructure",
+          "data center power UPS battery room",
+        ],
+        mustInclude: ["data center", "server", "cooling", "power", "ups", "hvac"],
+        mustExclude: ["residential air conditioner only"],
+      },
+    ],
+  },
+  "memorize-epa-608-refrigerant-numbers-method": {
+    hero: {
+      id: "epa-608-refrigerants-hero",
+      alt: "HVAC technician using manifold gauges on an outdoor air conditioner while studying refrigerants",
+      caption: "Group refrigerants by CFC / HCFC / HFC family — not as isolated phone numbers",
+      queries: [
+        "technician manifold gauge outdoor air conditioner repair",
+        "hvac technician refrigerant gauges service call",
+        "air conditioning repair gauges outdoor unit",
+      ],
+      mustInclude: ["technician", "gauge", "air condition", "hvac", "repair"],
+      mustExclude: ["satellite", "rooftop water tank", "junkyard", "beverage", "soft drink"],
+      pexelsPhotoId: 5463575,
+    },
+    inline: [
+      {
+        id: "epa-608-refrigerants-gauges",
+        alt: "Close-up of HVAC manifold pressure gauges used in refrigerant service",
+        caption: "Pressure class + family classification must be automatic under exam timing",
+        queries: [
+          "hvac manifold gauges close up refrigerant",
+          "ac pressure gauges technician hands",
+          "refrigerant recovery gauges service",
+        ],
+        mustInclude: ["gauge", "manifold", "pressure", "hvac", "refrigerant"],
+        mustExclude: ["blood pressure", "tire"],
+      },
+    ],
+  },
   "anki-vs-quizlet-professional-exam-prep": {
     hero: {
       id: "anki-vs-quizlet-hero",

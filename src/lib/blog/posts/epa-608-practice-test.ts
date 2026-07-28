@@ -9,7 +9,10 @@ export const epa608PracticeTestPost: BlogPostDraft = {
   publishedAt: "2026-07-27",
   eyebrow: "EPA 608 · HVAC certification",
   clusterId: "epa-608",
-  relatedSlugs: ["epa-608-type-1-vs-type-2-which-first"],
+  relatedSlugs: [
+    "epa-608-type-1-vs-type-2-which-first",
+    "memorize-epa-608-refrigerant-numbers-method",
+  ],
   intro:
     "The EPA 608 exam is not hard, but it is specific. You can know HVAC systems inside out and still fail because you missed the fine print on recovery requirements or mixed up the dates for the Montreal Protocol. This guide breaks down what actually appears on the test, how the scoring works, and how to use a practice test without wasting your time.",
   mockSlug: "epa-608-readiness-check",

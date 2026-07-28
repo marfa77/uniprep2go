@@ -2,11 +2,13 @@ import { ankiVsQuizletExamPrepPost } from "./posts/anki-vs-quizlet-exam-prep";
 import { californiaRealEstateDreCentersPost } from "./posts/california-real-estate-dre-centers";
 import { californiaRealEstatePsiVsPearsonPost } from "./posts/california-real-estate-psi-vs-pearson";
 import { cdlHazmatStateFingerprintingPost } from "./posts/cdl-hazmat-state-fingerprinting";
+import { cdcpVsDcdcPost } from "./posts/cdcp-vs-dcdc";
 import { epa608PracticeTestPost } from "./posts/epa-608-practice-test";
 import { epa608Type1VsType2Post } from "./posts/epa-608-type-1-vs-type-2";
 import { finraSieExamPrepPost } from "./posts/finra-sie-exam-prep";
 import { floridaFoodManagerDbprRulesPost } from "./posts/florida-food-manager-dbpr-rules";
 import { lebenInDeutschlandEnglishPrepPost } from "./posts/leben-in-deutschland-english-prep";
+import { memorizeEpa608RefrigerantsPost } from "./posts/memorize-epa-608-refrigerants";
 import { mricsApcVsAssocricsPost } from "./posts/mrics-apc-vs-assocrics";
 import { neboshIgcVsDiplomaPost } from "./posts/nebosh-igc-vs-diploma";
 import { servsafeFloridaRequirementsPost } from "./posts/servsafe-florida-requirements";
@@ -52,6 +54,8 @@ export function withBlogStockImages(draft: BlogPostDraft): BlogPost {
 }
 
 const blogPostDrafts: BlogPostDraft[] = [
+  cdcpVsDcdcPost,
+  memorizeEpa608RefrigerantsPost,
   ankiVsQuizletExamPrepPost,
   neboshIgcVsDiplomaPost,
   mricsApcVsAssocricsPost,

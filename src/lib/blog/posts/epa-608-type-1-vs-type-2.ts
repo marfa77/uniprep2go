@@ -9,7 +9,7 @@ export const epa608Type1VsType2Post: BlogPostDraft = {
   publishedAt: "2026-07-27",
   eyebrow: "EPA 608 · HVAC certification",
   clusterId: "epa-608",
-  relatedSlugs: ["epa-608-practice-test-what-to-expect"],
+  relatedSlugs: ["epa-608-practice-test-what-to-expect", "memorize-epa-608-refrigerant-numbers-method"],
   intro:
     "**The EPA 608 exam is not one test. It is four: Core (mandatory), Type I (small appliances), Type II (high-pressure), and Type III (low-pressure).** Most HVAC technicians know they need “EPA certification.” Fewer know that the order in which you take the sections determines whether you end up with a limited credential or a career-ready one. This guide covers Type I vs Type II, the open-book trap that locks you out of Universal, and why most technicians should go straight for Universal.",
   mockSlug: "epa-608-readiness-check",
