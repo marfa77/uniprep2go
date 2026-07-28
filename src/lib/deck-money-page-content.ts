@@ -11,7 +11,13 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "frm-part-1-anki-deck":
     "444 cards across FRM Part 1 foundations, quant, markets, and valuation — with a free 50-question readiness check.",
   "sie-exam-anki-deck":
-    "300 cards aligned to FINRA SIE topic weights, paired with a free 75-question timed mock.",
+    "300 cards aligned to FINRA SIE topic weights — free 25-question diagnostic or full 75-question timed mock.",
+  "delf-b2-french-anki-deck":
+    "2,000+ French cards for DELF/DALF, TCF/TEF Canada, and ANF — the high-frequency bank visa and diploma sittings actually share.",
+  "dutch-a2-inburgering-anki-deck":
+    "2,000 Dutch A2 cards with audio for Inburgering / NT2 — built for residency and naturalisatie deadlines, not tourist phrases.",
+  "german-a2-anki-deck":
+    "2,000 German A2–B1 cards for Goethe, telc, ÖSD, and DTZ — the shared lexicon residence and Einbürgerung pathways reuse.",
   "series-7-anki-deck":
     "300 Top-Off cards for suitability, products, and order flow — plus a free 60-question Series 7 mock.",
   "ptcb-pharmacy-technician-anki-deck":
@@ -28,7 +34,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "frm-part-1-anki-deck":
     "Cards track GARP Part 1 structure: risk governance, VaR and Expected Shortfall, credit and operational risk, fixed income and derivatives Greeks. The free FRM mock scores topic gaps so you drill valuation models and market mechanics — not random card volume.",
   "sie-exam-anki-deck":
-    "FINRA weights drive the deck: capital markets, products and risks, trading, customer accounts, and prohibited activities. The linked SIE mock mirrors the 75-question / 105-minute format so you know which chapters deserve another week of Anki before scheduling the real exam.",
+    "FINRA weights drive the deck: capital markets, products and risks, trading, customer accounts, and prohibited activities. Start with the free 25-question quick diagnostic (~35 min) to find weak domains, or run the full 75-question / 105-minute mock before you schedule the real exam.",
   "series-7-anki-deck":
     "Job-function outline coverage: suitability, options strategies, margin, municipal rules, and trade processing. Pair 15–20 cards per day with the free Top-Off mock to catch weak suitability and products chapters early.",
   "ptcb-pharmacy-technician-anki-deck":
@@ -80,7 +86,7 @@ export const positioningOverrides: Partial<
     ourEdge: [
       "300 cards aligned to FINRA SIE topic weights (see table)",
       "Capital markets, products, trading, accounts, and regulatory framework",
-      "Free 75-question SIE practice test — same question count as the live exam",
+      "Free 25-question quick diagnostic (~35 min) or full 75-question timed mock",
       "Validation pass on scripted items before publish",
     ],
   },

@@ -136,6 +136,11 @@ const TOP_PRODUCTS_LIMIT = 10;
 
 function formatProductLine(productKey: string, metrics: ProductUniqueMetrics) {
   const conversionRate = formatRate(metrics.conversions, metrics.visitors);
+  const isMock = productKey.startsWith("mock:");
+
+  if (isMock) {
+    return `- ${formatProductLabel(productKey)}: ${metrics.visitors} view → ${metrics.intents} start → ${metrics.completions} done → ${metrics.conversions} convert (${conversionRate})`;
+  }
 
   return `- ${formatProductLabel(productKey)}: ${metrics.visitors} view → ${metrics.intents} intent → ${metrics.conversions} convert (${conversionRate})`;
 }
@@ -318,13 +323,15 @@ export function toTelegramStatsMessages(stats: FunnelStats) {
     `period exam ${mockStarts.exam} · learn ${mockStarts.learn} · total ${mockStarts.total}`,
     `lifetime exam ${mockStartsLifetime.exam} · learn ${mockStartsLifetime.learn} · total ${mockStartsLifetime.total}`,
     "",
+    `Mock completed (period): ${stats.byEvent.mock_completed ?? 0} · deck CTA: ${stats.byEvent.mock_deck_cta_click ?? 0}`,
+    "",
     "Sources (unique, period):",
     formatChannelLine(visitors.periodByChannel),
     "",
     "Countries (unique, period):",
     formatTopCountries(visitors.periodByCountry, stats.byCountry),
     "",
-    "Decks & mocks (unique view → intent → convert):",
+    "Decks & mocks (unique view → intent/start → done → convert):",
     formatTopProducts(products),
     "",
     "Top pages (period):",

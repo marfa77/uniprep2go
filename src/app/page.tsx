@@ -122,7 +122,8 @@ const examPathLinks = [
     title: "FINRA securities exam prep",
     description: "SIE, Series 7, and Series 63 flashcards after the free SIE mock.",
     links: [
-      { href: "/mock-exams/sie-full-mock", label: "Free SIE practice test" },
+      { href: "/mock-exams/sie-quick-diagnostic", label: "SIE quick diagnostic (25Q)" },
+      { href: "/mock-exams/sie-full-mock", label: "Free SIE full mock (75Q)" },
       { href: "/decks/sie-exam-anki-deck", label: "SIE flashcards" },
       { href: "/decks/series-7-anki-deck", label: "Series 7 deck" },
     ],

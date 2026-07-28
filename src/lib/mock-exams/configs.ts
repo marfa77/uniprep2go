@@ -119,6 +119,65 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     lastUpdated: "2026-06-01",
   },
   {
+    slug: "sie-quick-diagnostic",
+    title: "FINRA SIE Quick Diagnostic",
+    shortTitle: "SIE Quick Diagnostic",
+    linkedDeckSlug: "sie-exam-anki-deck",
+    status: "live",
+    accessMode: "free_demand_test",
+    durationMinutes: 35,
+    questionCount: 25,
+    passRule: {
+      type: "readiness_check",
+      passPercent: 70,
+      borderlinePercent: 68,
+      verdictLabels: {
+        pass: "READINESS PASS",
+        noPass: "NO PASS",
+        borderline: "BORDERLINE RISK",
+      },
+    },
+    topics: [
+      {
+        id: "capital-markets",
+        label: "Knowledge of Capital Markets",
+        questionCount: 4,
+        weightPercent: 16,
+        targetPercent: 70,
+      },
+      {
+        id: "products-risks",
+        label: "Understanding Products and Their Risks",
+        questionCount: 11,
+        weightPercent: 44,
+        targetPercent: 70,
+      },
+      {
+        id: "trading-accounts",
+        label: "Understanding Trading, Customer Accounts, and Prohibited Activities",
+        questionCount: 8,
+        weightPercent: 32,
+        targetPercent: 70,
+      },
+      {
+        id: "regulatory-framework",
+        label: "Overview of the Regulatory Framework",
+        questionCount: 2,
+        weightPercent: 8,
+        targetPercent: 70,
+      },
+    ],
+    officialSourceNote:
+      "Topic-weighted 25-question diagnostic sampled from the same FINRA SIE outline bank as the full 75-question mock. Not a full-length exam simulation.",
+    disclaimer: financeDisclaimer,
+    description:
+      "A free 25-question SIE diagnostic (about 35 minutes) with topic-weighted scoring and a pass/no-pass readiness verdict — same outline bank as the full mock, built for candidates who want a fast gap check first.",
+    examBody: "FINRA",
+    lastUpdated: "2026-07-28",
+    questionSourceNote:
+      "Stratified sample from the UniPrep2Go SIE full-mock bank (same FINRA outline domains).",
+  },
+  {
     slug: "cfa-level-1-readiness-check",
     title: "CFA Level 1 Readiness Check",
     shortTitle: "CFA L1 Readiness",

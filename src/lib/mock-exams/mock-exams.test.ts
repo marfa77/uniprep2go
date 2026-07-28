@@ -157,6 +157,22 @@ describe("mock exam configs", () => {
     expect(config?.topics.reduce((sum, topic) => sum + (topic.questionCount ?? 0), 0)).toBe(75);
   });
 
+  it("defines SIE quick diagnostic as a stratified 25-question sample from the full bank", () => {
+    const config = getMockExamConfig("sie-quick-diagnostic");
+    expect(config?.status).toBe("live");
+    expect(config?.questionCount).toBe(25);
+    expect(config?.durationMinutes).toBe(35);
+    expect(config?.linkedDeckSlug).toBe("sie-exam-anki-deck");
+    expect(config?.topics.reduce((sum, topic) => sum + (topic.questionCount ?? 0), 0)).toBe(25);
+    expect(isMockExamRunnable("sie-quick-diagnostic")).toBe(true);
+    const { questions, errors } = getQuestionBankForExam("sie-quick-diagnostic");
+    expect(errors).toEqual([]);
+    expect(questions.length).toBeGreaterThanOrEqual(75);
+    expect(questions.every((q) => q.examSlug === "sie-quick-diagnostic")).toBe(true);
+    const session = selectSessionQuestions(questions, config!, "seed-sie-quick");
+    expect(session).toHaveLength(25);
+  });
+
   it("defines ServSafe Manager topic counts that sum to 90", () => {
     const config = getMockExamConfig("servsafe-manager-mock");
     expect(config?.questionCount).toBe(90);

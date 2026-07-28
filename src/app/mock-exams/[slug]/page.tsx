@@ -202,9 +202,6 @@ export default async function MockExamPage({
         </h1>
         <p className="mt-4 max-w-3xl text-lg leading-8 text-[#4f493e]">{heroLead}</p>
 
-        <MockExamVisualHero config={config} />
-        <MockExamSnapshot config={config} />
-
         <OfficialSourceTrustStrip
           className="mt-4 max-w-3xl"
           compact
@@ -212,15 +209,7 @@ export default async function MockExamPage({
           verifyAtUrl={official.verifyAtUrl}
         />
 
-        <MockOfficialResourcesPanel config={config} resources={official} />
-
-        <LlmFactsStrip
-          config={config}
-          linkedDeck={linkedDeck}
-          profile={examFactsProfile}
-          variant="mock"
-        />
-
+        {/* Start CTA above enrichment — conversion bottleneck is view→start, not SEO depth. */}
         {accessState ? (
           <MockExamClient
             accessState={accessState}
@@ -233,10 +222,26 @@ export default async function MockExamPage({
           />
         ) : null}
 
+        <MockExamSnapshot config={config} />
+        <MockExamVisualHero config={config} />
+
+        <MockOfficialResourcesPanel config={config} resources={official} />
+
+        <LlmFactsStrip
+          config={config}
+          linkedDeck={linkedDeck}
+          profile={examFactsProfile}
+          variant="mock"
+        />
+
         {showSampleQuestions ? (
           <MockSampleQuestionsSection
             config={config}
-            lead={`These sample items mirror the domains in the full timed ${config.shortTitle} mock. Correct answers and explanations unlock inside the practice session.`}
+            lead={
+              config.slug === "sie-quick-diagnostic"
+                ? "These sample items mirror FINRA SIE domains. Correct answers and explanations unlock inside the 25-question diagnostic session."
+                : `These sample items mirror the domains in the timed ${config.shortTitle} mock. Correct answers and explanations unlock inside the practice session.`
+            }
             questions={questions}
           />
         ) : null}

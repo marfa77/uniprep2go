@@ -11,6 +11,8 @@ export type DailyUniqueCounts = Record<string, number>;
 export type ProductUniqueMetrics = {
   visitors: number;
   intents: number;
+  /** mock_completed unique visitors — mid-funnel for mocks; 0 for decks */
+  completions: number;
   conversions: number;
 };
 
@@ -54,9 +56,11 @@ type VisitorSetStore = {
   daily: Map<string, Set<string>>;
   lifetimeProductVisitors: Map<string, Set<string>>;
   lifetimeProductIntents: Map<string, Set<string>>;
+  lifetimeProductCompletions: Map<string, Set<string>>;
   lifetimeProductConversions: Map<string, Set<string>>;
   periodProductVisitors: Map<string, Set<string>>;
   periodProductIntents: Map<string, Set<string>>;
+  periodProductCompletions: Map<string, Set<string>>;
   periodProductConversions: Map<string, Set<string>>;
   periodCountry: Map<string, Set<string>>;
   pathVisitors: Map<string, Set<string>>;
@@ -98,9 +102,11 @@ function getMemoryVisitorSets(): VisitorSetStore {
       daily: new Map(),
       lifetimeProductVisitors: new Map(),
       lifetimeProductIntents: new Map(),
+      lifetimeProductCompletions: new Map(),
       lifetimeProductConversions: new Map(),
       periodProductVisitors: new Map(),
       periodProductIntents: new Map(),
+      periodProductCompletions: new Map(),
       periodProductConversions: new Map(),
       periodCountry: new Map(),
       pathVisitors: new Map(),
@@ -119,6 +125,7 @@ export function resetPeriodVisitorSets() {
   store.periodChannel = emptyChannelSets();
   store.periodProductVisitors.clear();
   store.periodProductIntents.clear();
+  store.periodProductCompletions.clear();
   store.periodProductConversions.clear();
   store.periodCountry.clear();
   store.pathVisitors.clear();
@@ -136,9 +143,11 @@ export function resetAllVisitorSets() {
     daily: new Map(),
     lifetimeProductVisitors: new Map(),
     lifetimeProductIntents: new Map(),
+    lifetimeProductCompletions: new Map(),
     lifetimeProductConversions: new Map(),
     periodProductVisitors: new Map(),
     periodProductIntents: new Map(),
+    periodProductCompletions: new Map(),
     periodProductConversions: new Map(),
     periodCountry: new Map(),
     pathVisitors: new Map(),
@@ -188,7 +197,16 @@ function isVisitorTouchEvent(event: FunnelEvent) {
 }
 
 function isIntentEvent(event: FunnelEvent) {
-  return event.name === "checkout_intent" || event.name === "mock_started";
+  return (
+    event.name === "checkout_intent" ||
+    event.name === "mock_started" ||
+    // Defensive: checkout_click alone still counts as intent if intent beacon dropped
+    event.name === "checkout_click"
+  );
+}
+
+function isCompletionEvent(event: FunnelEvent) {
+  return event.name === "mock_completed";
 }
 
 function isConversionEvent(event: FunnelEvent) {
@@ -263,6 +281,11 @@ export function recordVisitorMetricInMemory(event: FunnelEvent) {
     addToSetMap(store.periodProductIntents, productKey, visitorId);
   }
 
+  if (isCompletionEvent(event)) {
+    addToSetMap(store.lifetimeProductCompletions, productKey, visitorId);
+    addToSetMap(store.periodProductCompletions, productKey, visitorId);
+  }
+
   if (isConversionEvent(event)) {
     addToSetMap(store.lifetimeProductConversions, productKey, visitorId);
     addToSetMap(store.periodProductConversions, productKey, visitorId);
@@ -288,6 +311,7 @@ export function readVisitorMetricsFromMemory(): VisitorMetrics {
   const products = new Set([
     ...store.periodProductVisitors.keys(),
     ...store.periodProductIntents.keys(),
+    ...store.periodProductCompletions.keys(),
     ...store.periodProductConversions.keys(),
   ]);
 
@@ -297,6 +321,7 @@ export function readVisitorMetricsFromMemory(): VisitorMetrics {
     productMetrics[product] = {
       visitors: setSize(store.periodProductVisitors.get(product)),
       intents: setSize(store.periodProductIntents.get(product)),
+      completions: setSize(store.periodProductCompletions.get(product)),
       conversions: setSize(store.periodProductConversions.get(product)),
     };
   }
@@ -347,9 +372,12 @@ export const VISITOR_REDIS_KEYS = {
   dailyPageViews: (date: string) => `funnel:pageviews:day:${date}`,
   lifetimeProductVisitors: (productKey: string) => `funnel:product:lifetime:visitors:${productKey}`,
   lifetimeProductIntents: (productKey: string) => `funnel:product:lifetime:intents:${productKey}`,
+  lifetimeProductCompletions: (productKey: string) =>
+    `funnel:product:lifetime:completions:${productKey}`,
   lifetimeProductConversions: (productKey: string) => `funnel:product:lifetime:conversions:${productKey}`,
   periodProductVisitors: (productKey: string) => `funnel:product:period:visitors:${productKey}`,
   periodProductIntents: (productKey: string) => `funnel:product:period:intents:${productKey}`,
+  periodProductCompletions: (productKey: string) => `funnel:product:period:completions:${productKey}`,
   periodProductConversions: (productKey: string) => `funnel:product:period:conversions:${productKey}`,
   pathVisitors: (path: string) => `funnel:path:visitors:${encodeURIComponent(path)}`,
   productIndex: "funnel:product:index",
@@ -456,6 +484,14 @@ export function visitorMetricRedisOperations(
     });
   }
 
+  if (isCompletionEvent(event)) {
+    ops.push((pipeline) => {
+      pipeline.sadd(VISITOR_REDIS_KEYS.lifetimeProductCompletions(productKey), visitorId);
+      pipeline.sadd(VISITOR_REDIS_KEYS.periodProductCompletions(productKey), visitorId);
+      pipeline.sadd(VISITOR_REDIS_KEYS.productIndex, productKey);
+    });
+  }
+
   if (isConversionEvent(event)) {
     ops.push((pipeline) => {
       pipeline.sadd(VISITOR_REDIS_KEYS.lifetimeProductConversions(productKey), visitorId);
@@ -544,13 +580,14 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
   const products: Record<string, ProductUniqueMetrics> = {};
 
   for (const productKey of productKeys ?? []) {
-    const [visitors, intents, conversions] = await Promise.all([
+    const [visitors, intents, completions, conversions] = await Promise.all([
       client.scard(VISITOR_REDIS_KEYS.periodProductVisitors(productKey)),
       client.scard(VISITOR_REDIS_KEYS.periodProductIntents(productKey)),
+      client.scard(VISITOR_REDIS_KEYS.periodProductCompletions(productKey)),
       client.scard(VISITOR_REDIS_KEYS.periodProductConversions(productKey)),
     ]);
 
-    products[productKey] = { visitors, intents, conversions };
+    products[productKey] = { visitors, intents, completions, conversions };
   }
 
   const paths: Record<string, number> = {};
@@ -601,6 +638,7 @@ export function lifetimeProductRedisKeys(productKey: string) {
   return [
     VISITOR_REDIS_KEYS.lifetimeProductVisitors(productKey),
     VISITOR_REDIS_KEYS.lifetimeProductIntents(productKey),
+    VISITOR_REDIS_KEYS.lifetimeProductCompletions(productKey),
     VISITOR_REDIS_KEYS.lifetimeProductConversions(productKey),
   ];
 }
@@ -609,6 +647,7 @@ export function periodProductRedisKeys(productKey: string) {
   return [
     VISITOR_REDIS_KEYS.periodProductVisitors(productKey),
     VISITOR_REDIS_KEYS.periodProductIntents(productKey),
+    VISITOR_REDIS_KEYS.periodProductCompletions(productKey),
     VISITOR_REDIS_KEYS.periodProductConversions(productKey),
   ];
 }

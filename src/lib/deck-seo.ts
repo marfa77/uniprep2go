@@ -665,11 +665,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Risk and finance professionals preparing for FRM Part 1 use daily Anki review for VaR, Greeks, credit risk, and market mechanics, then validate weak topics with the free FRM readiness check.",
   },
   "sie-exam-anki-deck": {
-    title: "SIE Anki Deck 2026 | 300 Cards + Free 75-Q Mock",
+    title: "SIE Anki Deck 2026 | 300 Cards + Free Mock",
     headline: "FINRA SIE Exam Prep — 300 Flashcards + Free Mock",
     studyLabel: "FINRA SIE exam prep",
     description:
-      "FINRA SIE exam prep: 300 Anki flashcards + free 75-question timed mock exam. Topic-weighted to official FINRA blueprint. Independent study aid — not official FINRA material. Perfect SIE study guide alternative.",
+      "FINRA SIE exam prep: 300 Anki flashcards + free 25-question diagnostic or 75-question timed mock. Topic-weighted to official FINRA blueprint. Independent study aid — not official FINRA material.",
     keywords: [
       "sie exam prep",
       "sie exam study guide free",
@@ -678,7 +678,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "sie anki deck",
     ],
     intro:
-      "Americans entering brokerage and securities roles start with the SIE — this deck covers FINRA topic weights for daily recall, and the linked free mock mirrors the 75-question / 105-minute format.",
+      "Americans entering brokerage and securities roles start with the SIE — this deck covers FINRA topic weights for daily recall. Use the free 25-question diagnostic for a fast gap check, or the full 75-question / 105-minute mock before exam day.",
   },
   "series-7-anki-deck": {
     title: "Series 7 Anki Deck 2026 | 300 Cards + Free Mock",

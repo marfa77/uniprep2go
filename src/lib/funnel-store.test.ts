@@ -70,7 +70,8 @@ describe("funnel stats store", () => {
     expect(stats.visitors.periodByChannel.google).toBe(1);
     expect(stats.visitors.products["cfa-level-1-anki-deck"]).toMatchObject({
       visitors: 1,
-      intents: 0,
+      intents: 1,
+      completions: 0,
       conversions: 1,
     });
     expect(stats.visitors.dailyPageViews["2026-06-10"]).toBe(2);

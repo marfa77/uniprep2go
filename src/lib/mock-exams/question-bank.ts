@@ -73,8 +73,15 @@ import { citizenshipBanksBySlug } from "./citizenship-banks";
 import { wave3BanksBySlug } from "./wave3-banks";
 import { wave4BanksBySlug } from "./wave4-banks";
 
+function remapBankExamSlug(bank: MockQuestion[], examSlug: string): MockQuestion[] {
+  return bank.map((question) => ({ ...question, examSlug }));
+}
+
+const sieFullMockQuestions = sieFullMockBank as unknown as MockQuestion[];
+
 const banksBySlug: Record<string, MockQuestion[]> = {
-  "sie-full-mock": sieFullMockBank as unknown as MockQuestion[],
+  "sie-full-mock": sieFullMockQuestions,
+  "sie-quick-diagnostic": remapBankExamSlug(sieFullMockQuestions, "sie-quick-diagnostic"),
   "cfa-level-1-readiness-check": cfaLevel1ReadinessBank as unknown as MockQuestion[],
   "frm-part-1-readiness-check": frmPart1ReadinessBank as unknown as MockQuestion[],
   "series-7-readiness-check": series7ReadinessBank as unknown as MockQuestion[],

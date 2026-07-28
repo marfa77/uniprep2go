@@ -17,6 +17,7 @@ import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
 const financeMockSlugs = [
   "sie-full-mock",
+  "sie-quick-diagnostic",
   "cfa-level-1-readiness-check",
   "cfa-level-2-readiness-check",
   "frm-part-1-readiness-check",

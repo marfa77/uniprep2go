@@ -17,11 +17,14 @@ import {
   MockSessionChrome,
   MockStickyToolbar,
 } from "./mock-session-chrome";
+import { MockMidSessionCta } from "./mock-mid-session-cta";
+import type { LinkedDeckCheckout } from "./mock-report-handoff";
 
 type MockRunnerProps = {
   config: MockExamConfig;
   questions: MockQuestion[];
   mode?: MockSessionMode;
+  linkedCheckout?: LinkedDeckCheckout | null;
   onComplete: (input: {
     answers: Record<string, string>;
     elapsedSeconds: number;
@@ -53,6 +56,7 @@ export function MockRunner({
   config,
   questions,
   mode = "exam",
+  linkedCheckout = null,
   onComplete,
   onExit,
 }: MockRunnerProps) {
@@ -352,6 +356,14 @@ export function MockRunner({
             );
           })}
         </div>
+
+        <MockMidSessionCta
+          answeredCount={answeredCount}
+          deckSlug={config.linkedDeckSlug}
+          linkedCheckout={linkedCheckout}
+          mockSlug={config.slug}
+          questionCount={questions.length}
+        />
 
         {isLearn && currentRevealed ? (
           <div

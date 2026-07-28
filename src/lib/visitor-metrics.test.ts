@@ -54,11 +54,13 @@ describe("visitor metrics", () => {
     expect(metrics.products["cfa-level-1-anki-deck"]).toMatchObject({
       visitors: 1,
       intents: 1,
+      completions: 0,
       conversions: 0,
     });
     expect(metrics.products["mock:cfa-level-1-readiness-check"]).toMatchObject({
       visitors: 1,
       intents: 0,
+      completions: 0,
       conversions: 0,
     });
     expect(metrics.paths["/decks/cfa-level-1-anki-deck"]).toBe(1);
@@ -123,6 +125,47 @@ describe("visitor metrics", () => {
     expect(metrics.periodNew).toBe(1);
     expect(metrics.periodReturning).toBe(1);
     expect(metrics.lifetimeUnique).toBe(2);
+  });
+
+  it("tracks mock completions separately from starts and deck CTAs", () => {
+    resetAllVisitorSets();
+
+    recordVisitorMetricInMemory(
+      createFunnelEvent({
+        name: "mock_landing_view",
+        deckSlug: "sie-exam-anki-deck",
+        visitorId: "vis_sie",
+        source: "mock:sie-full-mock:landing",
+        path: "/mock-exams/sie-full-mock",
+      }),
+    );
+    recordVisitorMetricInMemory(
+      createFunnelEvent({
+        name: "mock_started",
+        deckSlug: "sie-exam-anki-deck",
+        visitorId: "vis_sie",
+        source: "mock:sie-full-mock:start:exam",
+        path: "/mock-exams/sie-full-mock",
+      }),
+    );
+    recordVisitorMetricInMemory(
+      createFunnelEvent({
+        name: "mock_completed",
+        deckSlug: "sie-exam-anki-deck",
+        visitorId: "vis_sie",
+        source: "mock:sie-full-mock:complete:exam",
+        path: "/mock-exams/sie-full-mock",
+      }),
+    );
+
+    const metrics = readVisitorMetricsFromMemory();
+
+    expect(metrics.products["mock:sie-full-mock"]).toMatchObject({
+      visitors: 1,
+      intents: 1,
+      completions: 1,
+      conversions: 0,
+    });
   });
 
   it("resolves mock product keys from source or path", () => {

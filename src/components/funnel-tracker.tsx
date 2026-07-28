@@ -87,7 +87,12 @@ export function trackFunnelEvent(input: TrackEventInput) {
     internal: false,
   };
 
-  if (input.name === "checkout_click" || input.name === "mock_started") {
+  if (
+    input.name === "checkout_click" ||
+    input.name === "checkout_intent" ||
+    input.name === "mock_started" ||
+    input.name === "mock_deck_cta_click"
+  ) {
     sendImmediateEvent(payload);
     return;
   }

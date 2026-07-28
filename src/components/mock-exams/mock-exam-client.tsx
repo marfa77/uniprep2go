@@ -4,7 +4,7 @@ import Link from "next/link";
 import { getCatalogDeckBySlug } from "@/lib/decks";
 import type { MockAccessState, MockExamConfig, MockQuestion, MockReport } from "@/lib/mock-exams/types";
 import { getMockCta } from "@/lib/mock-exams/access";
-import { LEARN_PASS_PRICE_USD } from "@/lib/mock-exams/learn-pass";
+import { LEARN_SESSION_PRICE_USD } from "@/lib/mock-exams/learn-pass";
 import type { MockSessionMode } from "@/lib/mock-exams/session-mode";
 import {
   buildMockReport,
@@ -63,10 +63,24 @@ const learnBriefFree = [
 ] as const;
 
 const learnBriefPaid = [
-  `$${LEARN_PASS_PRICE_USD} / pass · untimed with instant explanations`,
+  `$${LEARN_SESSION_PRICE_USD} / session · packs of 5 · untimed with instant explanations`,
   "Correct/incorrect + why after each answer",
   "Same full topic report when you finish",
 ] as const;
+
+/** Sibling length options for the SIE pair (full vs quick). */
+const mockLengthAlternates: Partial<
+  Record<string, { href: string; label: string }>
+> = {
+  "sie-full-mock": {
+    href: "/mock-exams/sie-quick-diagnostic",
+    label: "Prefer 25 questions? Start the 35-minute quick diagnostic →",
+  },
+  "sie-quick-diagnostic": {
+    href: "/mock-exams/sie-full-mock",
+    label: "Want the full exam feel? Take the 75-question / 105-minute mock →",
+  },
+};
 
 export function MockExamClient({
   config,
@@ -303,6 +317,7 @@ export function MockExamClient({
       <MockFocusShell>
         <MockRunner
           config={config}
+          linkedCheckout={linkedCheckout}
           mode={sessionMode}
           questions={shuffledQuestions}
           onComplete={completeExam}
@@ -388,9 +403,10 @@ export function MockExamClient({
   const timingLabel =
     selectedMode === "learn" ? "Untimed · instant feedback" : formatDuration(config.durationMinutes);
   const showLearnPaywall = learnPassEnabled && selectedMode === "learn" && learnRemaining <= 0;
+  const lengthAlternate = mockLengthAlternates[config.slug];
 
   return (
-    <div className="mt-8 space-y-6">
+    <div className="mt-6 space-y-6" id="start-mock">
       {config.status === "preview" ? (
         <p className="rounded-2xl border border-[#1f3a5f]/15 bg-[#fffaf0] px-4 py-3 text-sm text-[#4f493e]">
           Preview readiness check — question bank may still be loading.
@@ -476,7 +492,7 @@ export function MockExamClient({
 
               {learnPassEnabled && selectedMode === "learn" && learnRemaining > 0 ? (
                 <p className="text-sm font-medium text-[#1f3d28]" aria-live="polite">
-                  {learnRemaining} Learn pass{learnRemaining === 1 ? "" : "es"} left
+                  {learnRemaining} Learn session{learnRemaining === 1 ? "" : "s"} left
                 </p>
               ) : null}
 
@@ -501,9 +517,45 @@ export function MockExamClient({
                     ? "Starting…"
                     : selectedMode === "learn"
                       ? "Start learn mode"
-                      : "Start timed exam"}
+                      : config.questionCount <= 30
+                        ? `Start free diagnostic · ${config.questionCount} questions`
+                        : `Start timed exam · free · no signup`}
                 </button>
               )}
+
+              {lengthAlternate ? (
+                <p className="text-sm leading-6 text-[#5f5749]">
+                  <Link
+                    className="font-medium text-[#1f3a5f] underline decoration-[#1f3a5f]/30 underline-offset-4 transition hover:decoration-[#1f3a5f]"
+                    href={lengthAlternate.href}
+                  >
+                    {lengthAlternate.label}
+                  </Link>
+                </p>
+              ) : null}
+
+              {linkedCheckout?.checkoutUrl ? (
+                <p className="text-sm leading-6 text-[#5f5749]">
+                  After the report, repair weak topics with the{" "}
+                  <a
+                    className="font-medium text-[#1f3a5f] underline decoration-[#1f3a5f]/30 underline-offset-4 transition hover:decoration-[#1f3a5f]"
+                    href={linkedCheckout.checkoutUrl}
+                    onClick={() =>
+                      trackMockEvent({
+                        name: "mock_deck_cta_click",
+                        deckSlug: config.linkedDeckSlug,
+                        mockSlug: config.slug,
+                        source: `mock:${config.slug}:landing:soft_checkout`,
+                      })
+                    }
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {linkedCheckout.ctaLabel ?? "Anki deck on Gumroad"}
+                  </a>
+                  .
+                </p>
+              ) : null}
 
               {learnError ? (
                 <p className="text-sm text-[#7a2e2e]" role="alert">

@@ -94,8 +94,8 @@ const sampleStats: FunnelStats = {
       "2026-06-10": 0,
     },
     products: {
-      "cfa-level-1-anki-deck": { visitors: 14, intents: 2, conversions: 1 },
-      "mock:cfa-level-1-readiness-check": { visitors: 8, intents: 3, conversions: 0 },
+      "cfa-level-1-anki-deck": { visitors: 14, intents: 2, completions: 0, conversions: 1 },
+      "mock:cfa-level-1-readiness-check": { visitors: 8, intents: 3, completions: 1, conversions: 0 },
     },
     paths: {
       "/decks/cfa-level-1-anki-deck": 14,
@@ -159,7 +159,10 @@ describe("telegram stats", () => {
     expect(message).toContain("Countries (unique, period):");
     expect(message).toContain("US 12 · PT 4 · DE 2");
     expect(message).toContain("cfa-level-1-anki-deck: 14 view → 2 intent → 1 convert (7.1%)");
-    expect(message).toContain("mock · cfa-level-1-readiness-check: 8 view → 3 intent → 0 convert (0.0%)");
+    expect(message).toContain(
+      "mock · cfa-level-1-readiness-check: 8 view → 3 start → 1 done → 0 convert (0.0%)",
+    );
+    expect(message).toContain("Mock completed (period):");
     expect(message).toContain("/decks/cfa-level-1-anki-deck — 14");
     expect(message).toContain("Top pages (today ·");
     expect(message).toContain("Динамика 7 дней (посетители / просмотры)");
@@ -287,7 +290,7 @@ describe("telegram stats", () => {
     const products = Object.fromEntries(
       Array.from({ length: 15 }, (_, index) => [
         `deck-${index + 1}`,
-        { visitors: 15 - index, intents: 0, conversions: 0 },
+        { visitors: 15 - index, intents: 0, completions: 0, conversions: 0 },
       ]),
     );
 

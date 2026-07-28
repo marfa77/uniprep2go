@@ -471,6 +471,11 @@ const TAXONOMY_BY_SLUG: Record<string, TaxonomyEntry> = {
     familyId: "finra",
     searchAliases: ["SIE", "FINRA SIE"],
   },
+  "sie-quick-diagnostic": {
+    verticalId: "licensing",
+    familyId: "finra",
+    searchAliases: ["SIE quick", "SIE diagnostic", "FINRA SIE practice", "short SIE mock"],
+  },
   "series-7-readiness-check": {
     verticalId: "licensing",
     familyId: "finra",
