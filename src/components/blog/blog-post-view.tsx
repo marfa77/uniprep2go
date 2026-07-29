@@ -215,7 +215,23 @@ function CtaBand({
           {post.cta.extraLinks.map((link) => (
             <li key={link.href}>
               {link.href.startsWith("http") ? (
-                <a className="underline underline-offset-2" href={link.href} rel="noopener noreferrer">
+                <a
+                  className="underline underline-offset-2"
+                  href={link.href}
+                  rel={
+                    /(?:^|\.)(prep2go\.study|emigro\.online|barakhlo\.online|uniprep2go\.study|pixid\.studio|webmorp\.art)$/i.test(
+                      (() => {
+                        try {
+                          return new URL(link.href).hostname;
+                        } catch {
+                          return "";
+                        }
+                      })(),
+                    )
+                      ? "noopener"
+                      : "noopener noreferrer"
+                  }
+                >
                   {link.label}
                 </a>
               ) : (

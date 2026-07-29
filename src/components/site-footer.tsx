@@ -75,6 +75,36 @@ export function SiteFooter() {
           </nav>
         </div>
 
+        <nav
+          aria-label="Sister PixID products"
+          className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-xs leading-6 text-[#6d6252]"
+        >
+          <a
+            className="font-medium text-[#4f493e] underline decoration-[#18140f]/20 underline-offset-4 transition hover:text-[#18140f]"
+            href="https://www.prep2go.study/ciple-a2"
+            rel="noopener"
+            target="_blank"
+          >
+            Prep2Go — CIPLE A2
+          </a>
+          <a
+            className="font-medium text-[#4f493e] underline decoration-[#18140f]/20 underline-offset-4 transition hover:text-[#18140f]"
+            href="https://www.emigro.online/ru/portugal"
+            rel="noopener"
+            target="_blank"
+          >
+            Emigro — Portugal move
+          </a>
+          <a
+            className="font-medium text-[#4f493e] underline decoration-[#18140f]/20 underline-offset-4 transition hover:text-[#18140f]"
+            href="https://www.barakhlo.online/"
+            rel="noopener"
+            target="_blank"
+          >
+            Barakhlo — EU classifieds
+          </a>
+        </nav>
+
         <p className="mt-6 text-xs text-[#6d6252]">
           Last updated {siteConfig.legalLastUpdated}. &copy; {new Date().getFullYear()}{" "}
           {siteConfig.name}

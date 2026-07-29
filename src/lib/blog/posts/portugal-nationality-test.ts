@@ -36,6 +36,10 @@ export const portugalNationalityTestPost: BlogPostDraft = {
         href: "https://www.prep2go.study",
         label: "Prep2Go.study — language & immigration decks",
       },
+      {
+        href: "https://www.emigro.online/ru/portugal",
+        label: "Emigro — Portugal residency corridor for Russian-speaking movers",
+      },
     ],
   },
   sections: [

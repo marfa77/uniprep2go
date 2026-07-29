@@ -107,6 +107,10 @@ export const intentPages: IntentPage[] = [
         title: "What to study for the citizenship language requirement",
         body: "The deck targets CIPLE / CAPLE A2 learners with European Portuguese words, short phrases, examples, audio, and images where helpful. It is a practical supplement to classes, textbooks, and exam practice.",
       },
+      {
+        title: "Residency route alongside CIPLE",
+        body: "Language evidence is one piece of the Portugal move. Emigro (sister PixID product) maps residency corridors for Russian-speaking applicants — wizard, guides, and weekly news at emigro.online/ru/portugal. Pair Anki recall here with Prep2Go timed CIPLE mocks when you need exam-format practice.",
+      },
     ],
     faqs: [
       {

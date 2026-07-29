@@ -32,6 +32,10 @@ export const spainCitizenshipCcseDelePost: BlogPostDraft = {
         href: "https://www.prep2go.study",
         label: "Prep2Go.study — language & immigration decks",
       },
+      {
+        href: "https://www.emigro.online/ru/spain",
+        label: "Emigro — Spain residency corridor for Russian-speaking movers",
+      },
     ],
   },
   sections: [
