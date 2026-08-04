@@ -10,9 +10,9 @@ export const belgiumCitizenshipFlandersWalloniaPost: BlogPostDraft = {
   eyebrow: "Belgium · Flanders vs Wallonia",
   clusterId: "belgium-citizenship",
   relatedSlugs: [
+    "wallonie-citoyennete-francais-a2-parcours-integration",
     "luxembourg-vivre-ensemble-test-format-pass",
-    "sweden-medborgarskapsprov-2026-new-test",
-    "portugal-nationality-test-2026-new-civic-exam",
+    "france-naturalization-2026-civic-exam-b2-language-test",
   ],
   intro:
     "**Belgium is not one country when it comes to citizenship — it is three.** The federal government writes nationality law; the regions run integration, and they disagree on what “integration” means. Flanders: social orientation course + Dutch test. Wallonia: French certificate, no standardised civic exam. Brussels: you choose. And as of 2026 the federal government is pushing tighter rules: B1 language, a possible national civic test, and a €1,030 fee. This guide maps the regional maze today, what is coming, and what you need to file in your commune.",

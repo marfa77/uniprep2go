@@ -20,6 +20,7 @@ describe("blog guides", () => {
   it("publishes niche cluster guides with FAQ and product links", () => {
     const posts = getAllBlogPosts();
     expect(posts.map((post) => post.slug)).toEqual([
+      "wallonie-citoyennete-francais-a2-parcours-integration",
       "australian-citizenship-test-our-common-bond-complete-guide",
       "polish-citizenship-wiedza-o-polsce-gap-2026",
       "czech-citizenship-exam-zkouska-z-realii-complete-guide",
@@ -155,6 +156,7 @@ describe("blog guides", () => {
       "sweden-medborgarskapsprov-2026-new-test",
     ]);
     expect(getBlogPostsByCluster("belgium-citizenship").map((post) => post.slug)).toEqual([
+      "wallonie-citoyennete-francais-a2-parcours-integration",
       "belgium-citizenship-test-flanders-vs-wallonia",
     ]);
     expect(getBlogPostsByCluster("luxembourg-citizenship").map((post) => post.slug)).toEqual([
@@ -285,6 +287,12 @@ describe("blog guides", () => {
     );
     expect(getBlogPostBySlug("australian-citizenship-test-our-common-bond-complete-guide")?.deckSlug).toBe(
       "citizenship-naturalization-anki-bundle",
+    );
+    expect(getBlogPostBySlug("wallonie-citoyennete-francais-a2-parcours-integration")?.mockSlug).toBe(
+      "belgium-wallonie-citoyennete-readiness-check",
+    );
+    expect(getBlogPostBySlug("wallonie-citoyennete-francais-a2-parcours-integration")?.deckSlug).toBe(
+      "belgium-wallonie-citoyennete-anki-deck",
     );
     expect(getBlogPostBySlug("portugal-nationality-test-2026-new-civic-exam")?.mockSlug).toBe(
       "portugal-nacionalidade-readiness-check",
@@ -417,6 +425,7 @@ describe("blog guides", () => {
     expect(getBlogPostsForMockSlug("norway-statsborgerproven-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("sweden-medborgarskapsprov-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("belgium-flanders-mo-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("belgium-wallonie-citoyennete-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("luxembourg-vivre-ensemble-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("ccse-espana-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForDeckSlug("celi-b1-italian-anki-deck").map((p) => p.slug)).toContain(

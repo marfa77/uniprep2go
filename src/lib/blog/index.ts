@@ -37,6 +37,7 @@ import { spainCitizenshipCcseDelePost } from "./posts/spain-citizenship-ccse-del
 import { swedenMedborgarskapsprovPost } from "./posts/sweden-medborgarskapsprov";
 import { swissCitizenshipCantonalFormatPost } from "./posts/swiss-citizenship-cantonal-format";
 import { usNaturalizationCivicsPost } from "./posts/us-naturalization-civics";
+import { wallonieCitoyenneteParcoursIntegrationPost } from "./posts/wallonie-citoyennete-parcours-integration";
 import { wellApVsFitwelPost } from "./posts/well-ap-vs-fitwel";
 import {
   BLOG_STOCK_IMAGE_CONFIG,
@@ -77,6 +78,7 @@ export function withBlogStockImages(draft: BlogPostDraft): BlogPost {
 }
 
 const blogPostDrafts: BlogPostDraft[] = [
+  wallonieCitoyenneteParcoursIntegrationPost,
   australianCitizenshipTestPost,
   polishCitizenshipWiedzaOPolscePost,
   czechCitizenshipExamZkouskaZRealiiPost,

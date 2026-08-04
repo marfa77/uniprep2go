@@ -417,6 +417,34 @@ export const BLOG_STOCK_IMAGE_CONFIG: Record<
       },
     ],
   },
+  "wallonie-citoyennete-francais-a2-parcours-integration": {
+    hero: {
+      id: "wallonie-citoyennete-hero",
+      alt: "Liège historic centre and Meuse river in Wallonia, Belgium",
+      caption: "Wallonie : français A2 + preuve d'intégration — pas de QCM civique fédéral",
+      queries: [
+        "Liege Belgium Meuse river historic city",
+        "Namur citadel Belgium Wallonia",
+        "Brussels Grand Place Belgium architecture",
+      ],
+      mustInclude: ["belgium", "liege", "namur", "brussels", "wallonia", "belgian"],
+      mustExclude: ["amsterdam netherlands", "paris france"],
+    },
+    inline: [
+      {
+        id: "wallonie-citoyennete-study",
+        alt: "Adult studying French language and Belgian citizenship notes at a desk",
+        caption: "DELF A2 / parcours CRI d'abord — thèmes civiques en filet de sécurité",
+        queries: [
+          "studying French language textbook flashcards desk",
+          "person reading exam booklet laptop desk notes",
+          "adult studying citizenship practice questions desk",
+        ],
+        mustInclude: ["study", "book", "desk", "notebook", "exam", "laptop"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
   "australian-citizenship-test-our-common-bond-complete-guide": {
     hero: {
       id: "australian-citizenship-test-hero",
