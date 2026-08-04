@@ -105,3 +105,41 @@ export function captureFirstTouchAttribution(input: {
 export function getFirstTouchAttribution(storage: Storage): FirstTouchAttribution | undefined {
   return readStoredFirstTouch(storage);
 }
+
+const DEFAULT_SITE_HOSTS = ["uniprep2go.study"];
+
+function isSameSiteReferrer(referrer: string, siteHosts: readonly string[]) {
+  try {
+    const host = new URL(referrer).hostname.replace(/^www\./, "").toLowerCase();
+    if (host === "localhost" || host === "127.0.0.1") {
+      return true;
+    }
+    return siteHosts.some((site) => host === site || host.endsWith(`.${site}`));
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Prefer first-touch acquisition referrer when the current document referrer is
+ * same-site (internal navigation). Keeps Google/LLM channel attribution sticky
+ * across page views in a session.
+ */
+export function resolveAttributionReferrer(
+  documentReferrer: string,
+  firstTouchReferrer?: string,
+  siteHosts: readonly string[] = DEFAULT_SITE_HOSTS,
+): string | undefined {
+  const current = documentReferrer.trim();
+  const firstTouch = firstTouchReferrer?.trim();
+
+  if (!current) {
+    return firstTouch || undefined;
+  }
+
+  if (isSameSiteReferrer(current, siteHosts) && firstTouch) {
+    return firstTouch;
+  }
+
+  return current;
+}

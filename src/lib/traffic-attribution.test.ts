@@ -4,6 +4,7 @@ import {
   captureFirstTouchAttribution,
   isLlmUtm,
   parseUtmParams,
+  resolveAttributionReferrer,
 } from "./traffic-attribution";
 
 function memoryStorage(initial: Record<string, string> = {}): Storage {
@@ -68,6 +69,23 @@ describe("traffic attribution", () => {
     expect(second.utmSource).toBe("llm");
     expect(second.utmMedium).toBe("llms.txt");
     expect(second.landingPath).toBe("/decks/delf-b2-french-anki-deck");
+  });
+
+  it("keeps first-touch referrer across same-site navigations", () => {
+    expect(
+      resolveAttributionReferrer(
+        "https://uniprep2go.study/blog/foo",
+        "https://www.google.com/search?q=citizenship",
+      ),
+    ).toBe("https://www.google.com/search?q=citizenship");
+
+    expect(
+      resolveAttributionReferrer("", "https://chatgpt.com/"),
+    ).toBe("https://chatgpt.com/");
+
+    expect(
+      resolveAttributionReferrer("https://www.google.com/", "https://chatgpt.com/"),
+    ).toBe("https://www.google.com/");
   });
 
   it("enriches a first touch that had no utm when a later url includes utm", () => {

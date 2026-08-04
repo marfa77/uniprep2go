@@ -282,9 +282,13 @@ export function aggregateTopPathsByChannels(
   };
 }
 
-function formatRankedPathLines(ranked: RankedPath[], limit: number) {
+function formatRankedPathLines(
+  ranked: RankedPath[],
+  limit: number,
+  emptyHint: string,
+) {
   if (ranked.length === 0) {
-    return ["- no page data yet"];
+    return [`- ${emptyHint}`];
   }
 
   const lines = ranked
@@ -298,17 +302,28 @@ function formatRankedPathLines(ranked: RankedPath[], limit: number) {
   return lines;
 }
 
-/** Top landing pages from Google vs ChatGPT/LLM in the recent-events window. */
+/** Top pages from Google vs ChatGPT/LLM in the recent-events window. */
 export function formatSearchAndLlmTopPages(stats: FunnelStats, limit = 5) {
   const google = aggregateTopPathsByChannels(stats.recentEvents, ["google"]);
   const llm = aggregateTopPathsByChannels(stats.recentEvents, ["chatgpt", "llm"]);
+  const googlePeriod = stats.visitors.periodByChannel.google ?? 0;
+  const llmPeriod =
+    (stats.visitors.periodByChannel.chatgpt ?? 0) + (stats.visitors.periodByChannel.llm ?? 0);
 
   return [
     "Top pages (Google · recent):",
-    ...formatRankedPathLines(google.ranked, limit),
+    ...formatRankedPathLines(
+      google.ranked,
+      limit,
+      `none in last 100 events (period Google uniques: ${googlePeriod})`,
+    ),
     "",
     "Top pages (LLM · ChatGPT+LLM · recent):",
-    ...formatRankedPathLines(llm.ranked, limit),
+    ...formatRankedPathLines(
+      llm.ranked,
+      limit,
+      `none in last 100 events (period LLM uniques: ${llmPeriod})`,
+    ),
   ].join("\n");
 }
 

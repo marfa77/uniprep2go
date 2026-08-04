@@ -7,7 +7,10 @@ import {
   FUNNEL_EXCLUDE_STORAGE_KEY,
   FUNNEL_INCLUDE_QUERY,
 } from "@/lib/funnel-exclude";
-import { captureFirstTouchAttribution } from "@/lib/traffic-attribution";
+import {
+  captureFirstTouchAttribution,
+  resolveAttributionReferrer,
+} from "@/lib/traffic-attribution";
 import { getOrCreateVisitorId } from "@/lib/visitor-id";
 
 type FunnelTrackerProps = {
@@ -77,7 +80,9 @@ export function trackFunnelEvent(input: TrackEventInput) {
     ...input,
     visitorId: getOrCreateVisitorId(),
     path: window.location.pathname,
-    referrer: document.referrer || firstTouch.referrer,
+    // Keep Google/LLM acquisition sticky: internal document.referrer must not
+    // wipe first-touch external referrer on later page views.
+    referrer: resolveAttributionReferrer(document.referrer, firstTouch.referrer),
     utmSource: firstTouch.utmSource,
     utmMedium: firstTouch.utmMedium,
     browserLanguage: navigator.language,

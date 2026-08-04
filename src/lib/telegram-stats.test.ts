@@ -166,7 +166,9 @@ describe("telegram stats", () => {
     expect(message).toContain("Mock completed (period):");
     expect(message).toContain("/decks/cfa-level-1-anki-deck — 14");
     expect(message).toContain("Top pages (Google · recent):");
+    expect(message).toContain("none in last 100 events (period Google uniques: 12)");
     expect(message).toContain("Top pages (LLM · ChatGPT+LLM · recent):");
+    expect(message).toContain("none in last 100 events (period LLM uniques: 7)");
     expect(message).toContain("Top pages (today ·");
     expect(message).toContain("Динамика 7 дней (посетители / просмотры)");
     expect(message).toContain(
