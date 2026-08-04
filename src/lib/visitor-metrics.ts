@@ -321,7 +321,7 @@ function mapSetSizes(map: Map<string, Set<string>>) {
 
 /** Count path visitors that also appear in a channel visitor set. */
 export function intersectPathVisitorsWithChannel(
-  pathVisitors: Map<string, Set<string>> | Record<string, Iterable<string>>,
+  pathVisitors: Map<string, Iterable<string>> | Record<string, Iterable<string>>,
   channelVisitors: Set<string>,
 ): Record<string, number> {
   if (channelVisitors.size === 0) {
