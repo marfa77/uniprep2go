@@ -27,6 +27,7 @@ import { mricsApcVsAssocricsPost } from "./posts/mrics-apc-vs-assocrics";
 import { neboshIgcVsDiplomaPost } from "./posts/nebosh-igc-vs-diploma";
 import { netherlandsInburgeringsexamenPost } from "./posts/netherlands-inburgeringsexamen";
 import { norwayStatsborgerprovenPost } from "./posts/norway-statsborgerproven";
+import { polishCitizenshipWiedzaOPolscePost } from "./posts/polish-citizenship-wiedza-o-polsce";
 import { portugalNationalityTestPost } from "./posts/portugal-nationality-test";
 import { servsafeFloridaRequirementsPost } from "./posts/servsafe-florida-requirements";
 import { servsafeManagerStudyGuidePost } from "./posts/servsafe-manager-study-guide";
@@ -75,6 +76,7 @@ export function withBlogStockImages(draft: BlogPostDraft): BlogPost {
 }
 
 const blogPostDrafts: BlogPostDraft[] = [
+  polishCitizenshipWiedzaOPolscePost,
   czechCitizenshipExamZkouskaZRealiiPost,
   cdlGeneralKnowledgePost,
   canadaCitizenshipTestPost,

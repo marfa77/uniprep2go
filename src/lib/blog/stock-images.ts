@@ -445,6 +445,34 @@ export const BLOG_STOCK_IMAGE_CONFIG: Record<
       },
     ],
   },
+  "polish-citizenship-wiedza-o-polsce-gap-2026": {
+    hero: {
+      id: "polish-citizenship-wiedza-hero",
+      alt: "Warsaw Old Town and Royal Castle square in Poland",
+      caption: "Today: PaF B1 only — proposed: test obywatelski + B2 + longer residence",
+      queries: [
+        "Warsaw Old Town Royal Castle Poland square",
+        "Warsaw skyline Palace of Culture Poland",
+        "Krakow Main Square Cloth Hall Poland",
+      ],
+      mustInclude: ["warsaw", "poland", "polish", "krakow", "castle", "square"],
+      mustExclude: ["prague czech", "berlin germany"],
+    },
+    inline: [
+      {
+        id: "polish-citizenship-wiedza-study",
+        alt: "Adult studying Polish language and citizenship notes at a desk",
+        caption: "Language first today — future-proof civics themes with spaced drills",
+        queries: [
+          "studying Polish language textbook flashcards desk",
+          "person reading language book notes laptop Europe",
+          "citizenship exam prep notebook laptop desk",
+        ],
+        mustInclude: ["study", "book", "desk", "laptop", "notebook", "exam"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
   "denmark-indfoedsretsproeven-47-percent-pass-rate": {
     hero: {
       id: "denmark-indfoedsretsproeven-hero",

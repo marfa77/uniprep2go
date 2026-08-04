@@ -10,9 +10,9 @@ export const czechCitizenshipExamZkouskaZRealiiPost: BlogPostDraft = {
   eyebrow: "Czechia · Zkouška z reálií",
   clusterId: "czech-citizenship",
   relatedSlugs: [
+    "polish-citizenship-wiedza-o-polsce-gap-2026",
     "portugal-nationality-test-2026-new-civic-exam",
     "denmark-indfoedsretsproeven-47-percent-pass-rate",
-    "swiss-citizenship-test-cantonal-format-questions",
   ],
   intro:
     "**If you are applying for Czech citizenship, you must pass two separate state exams: Czech language at B1 and the Czech realities exam (zkouška z reálií).** They are not the same test, they are not taken as one sitting, and confusing them is the most expensive mistake applicants make. The realities exam is a written multiple-choice test — 30 questions in 30 minutes, 60% (18 correct) to pass, **CZK 2,000** (~€80) per attempt. The language exam costs **CZK 3,700** separately, or **CZK 5,700** if you book both. This guide covers format, the official 300-question pool, the 30 topics, exemptions, and a prep plan that maps to UniPrep2Go’s free readiness check and Anki waitlist.",

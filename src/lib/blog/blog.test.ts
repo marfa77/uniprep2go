@@ -20,6 +20,7 @@ describe("blog guides", () => {
   it("publishes niche cluster guides with FAQ and product links", () => {
     const posts = getAllBlogPosts();
     expect(posts.map((post) => post.slug)).toEqual([
+      "polish-citizenship-wiedza-o-polsce-gap-2026",
       "czech-citizenship-exam-zkouska-z-realii-complete-guide",
       "cdl-general-knowledge-test-50-questions-what-to-expect",
       "canada-citizenship-test-20-questions-630-dollars",
@@ -133,6 +134,9 @@ describe("blog guides", () => {
     ]);
     expect(getBlogPostsByCluster("czech-citizenship").map((post) => post.slug)).toEqual([
       "czech-citizenship-exam-zkouska-z-realii-complete-guide",
+    ]);
+    expect(getBlogPostsByCluster("polish-citizenship").map((post) => post.slug)).toEqual([
+      "polish-citizenship-wiedza-o-polsce-gap-2026",
     ]);
     expect(getBlogPostsByCluster("portugal-nacionalidade").map((post) => post.slug)).toEqual([
       "portugal-nationality-test-2026-new-civic-exam",
@@ -265,6 +269,12 @@ describe("blog guides", () => {
     );
     expect(getBlogPostBySlug("czech-citizenship-exam-zkouska-z-realii-complete-guide")?.deckSlug).toBe(
       "czech-a2-cce-anki-deck",
+    );
+    expect(getBlogPostBySlug("polish-citizenship-wiedza-o-polsce-gap-2026")?.mockSlug).toBe(
+      "polish-citizenship-readiness-check",
+    );
+    expect(getBlogPostBySlug("polish-citizenship-wiedza-o-polsce-gap-2026")?.deckSlug).toBe(
+      "polish-a2-certyfikat-anki-deck",
     );
     expect(getBlogPostBySlug("portugal-nationality-test-2026-new-civic-exam")?.mockSlug).toBe(
       "portugal-nacionalidade-readiness-check",
