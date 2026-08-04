@@ -289,8 +289,8 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       "A free 60-question Czech citizenship readiness diagnostic across state and rights, history and EU, society, and public services — pairs with the planned Czech Citizenship Anki deck (waitlist). Independent prep — not official government material.",
     examBody: "Czech Republic — citizenship / permanent residence civics knowledge",
     questionSourceNote:
-      "Questions sourced from the Prep2Go Immigration app Czech Citizenship deck (Q&A converted to MCQ with distractors sampled from the same deck). Independent readiness check — not official Czech government material.",
-    lastUpdated: "2026-07-26",
+      "Questions rewritten from Prep2Go Czech Citizenship civics themes as full-stem MCQs with parallel-form near-miss distractors. Independent readiness check — not official Czech government material.",
+    lastUpdated: "2026-08-04",
     searchAliases: [
       "Czech citizenship test",
       "občanství ČR test",
@@ -321,8 +321,8 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       "A free 60-question Polish citizenship readiness diagnostic across state and rights, history and EU, society, and public services — pairs with the planned Polish Citizenship Anki deck (waitlist). Independent prep — not official government material.",
     examBody: "Poland — citizenship / naturalisation civics knowledge",
     questionSourceNote:
-      "Questions sourced from the Prep2Go Immigration app Polish Citizenship deck (Q&A converted to MCQ with distractors sampled from the same deck). Independent readiness check — not official Polish government material.",
-    lastUpdated: "2026-07-26",
+      "Questions rewritten from Prep2Go Polish Citizenship civics themes as full-stem MCQs with parallel-form near-miss distractors. Independent readiness check — not official Polish government material.",
+    lastUpdated: "2026-08-04",
     searchAliases: [
       "Polish citizenship test",
       "obywatelstwo polskie test",
@@ -353,8 +353,8 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       "A free 60-question Danish citizenship (Indfødsretsprøven) readiness diagnostic — constitution, society, welfare, and geography/EU. Pairs with the planned Denmark Indfødsretsprøven Anki deck (waitlist). Independent prep.",
     examBody: "Denmark — Indfødsretsprøven (citizenship civics test)",
     questionSourceNote:
-      "Questions sourced from the Prep2Go Immigration app Denmark Indfødsretsprøven deck (Q&A converted to MCQ with distractors sampled from the same deck).",
-    lastUpdated: "2026-07-26",
+      "Questions rewritten from Prep2Go Denmark Indfødsretsprøven themes as full-stem MCQs with parallel-form near-miss distractors. Independent readiness check — not official Danish government material.",
+    lastUpdated: "2026-08-04",
     searchAliases: ["Indfødsretsprøven", "Danish citizenship test", "Denmark citizenship quiz"],
   }),
   nicheReadinessConfig({
@@ -380,8 +380,8 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       "A free 60-question Portuguese nationality civic knowledge readiness diagnostic. Pairs with the planned Portugal Nacionalidade Anki deck (waitlist). Independent prep.",
     examBody: "Portugal — nationality civic knowledge",
     questionSourceNote:
-      "Questions sourced from the Prep2Go Immigration app Portugal Nacionalidade deck (Q&A converted to MCQ with distractors sampled from the same deck).",
-    lastUpdated: "2026-07-26",
+      "Questions rewritten from Prep2Go Portugal Nacionalidade civics themes as full-stem MCQs with parallel-form near-miss distractors. Independent readiness check — not official IRN / AIMA material.",
+    lastUpdated: "2026-08-04",
     searchAliases: ["nacionalidade portuguesa", "conhecimento cívico nacionalidade", "Portugal citizenship test"],
   }),
   nicheReadinessConfig({
@@ -407,8 +407,8 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       "A free 60-question Norwegian citizenship (Statsborgerprøven) readiness diagnostic. Pairs with the planned Norway Statsborgerprøven Anki deck (waitlist). Independent prep.",
     examBody: "Norway — Statsborgerprøven",
     questionSourceNote:
-      "Questions sourced from the Prep2Go Immigration app Norway Statsborgerprøven deck (Q&A converted to MCQ with distractors sampled from the same deck).",
-    lastUpdated: "2026-07-26",
+      "Questions rewritten from Prep2Go Norway Statsborgerprøven civics themes as full-stem MCQs with parallel-form near-miss distractors. Independent readiness check — not official UDI material.",
+    lastUpdated: "2026-08-04",
     searchAliases: ["Statsborgerprøven", "Norwegian citizenship test", "statsborgerskap quiz"],
   }),
   nicheReadinessConfig({
@@ -434,8 +434,8 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       "A free 60-question Swedish citizenship (Medborgarskapsprov) readiness diagnostic. Pairs with the planned Sweden Medborgarskapsprov Anki deck (waitlist). Independent prep.",
     examBody: "Sweden — Medborgarskapsprov",
     questionSourceNote:
-      "Questions sourced from the Prep2Go Immigration app Sweden Medborgarskapsprov deck (Q&A converted to MCQ with distractors sampled from the same deck).",
-    lastUpdated: "2026-07-26",
+      "Questions rewritten from Prep2Go Sweden Medborgarskapsprov themes as full-stem MCQs with parallel-form near-miss distractors. Independent readiness check — not official Swedish Migration Agency material.",
+    lastUpdated: "2026-08-04",
     searchAliases: ["Medborgarskapsprov", "Swedish citizenship test", "medborgarskap quiz"],
   }),
   nicheReadinessConfig({
@@ -461,8 +461,8 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       "A free 60-question Flanders maatschappelijke oriëntatie readiness diagnostic. Pairs with the planned Belgium Flanders MO Anki deck (waitlist). Independent prep.",
     examBody: "Belgium Flanders — Maatschappelijke oriëntatie",
     questionSourceNote:
-      "Questions sourced from the Prep2Go Immigration app Belgium Flanders MO deck (Q&A converted to MCQ with distractors sampled from the same deck).",
-    lastUpdated: "2026-07-26",
+      "Questions rewritten from Prep2Go Belgium Flanders MO (maatschappelijke oriëntatie) themes as full-stem MCQs with parallel-form near-miss distractors. Independent readiness check — not official Flemish government material.",
+    lastUpdated: "2026-08-04",
     searchAliases: ["maatschappelijke oriëntatie", "Flanders MO test", "inburgering Vlaanderen"],
   }),
   nicheReadinessConfig({
@@ -488,8 +488,8 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       "A free 60-question Wallonia citoyenneté / parcours d'intégration readiness diagnostic. Pairs with the planned Belgium Wallonie Citoyenneté Anki deck (waitlist). Independent prep.",
     examBody: "Belgium Wallonia — Citoyenneté / parcours d'intégration",
     questionSourceNote:
-      "Questions sourced from the Prep2Go Immigration app Belgium Wallonie Citoyenneté deck (Q&A converted to MCQ with distractors sampled from the same deck).",
-    lastUpdated: "2026-07-26",
+      "Questions rewritten from Prep2Go Belgium Wallonie Citoyenneté themes as full-stem MCQs with parallel-form near-miss distractors. Independent readiness check — not official Walloon government material.",
+    lastUpdated: "2026-08-04",
     searchAliases: ["citoyenneté Wallonie", "parcours d'intégration", "Belgium citizenship Wallonia"],
   }),
   nicheReadinessConfig({
@@ -515,8 +515,8 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       "A free 60-question Luxembourg Vivre ensemble readiness diagnostic. Pairs with the planned Luxembourg Vivre ensemble Anki deck (waitlist). Independent prep.",
     examBody: "Luxembourg — Vivre ensemble / nationality civics",
     questionSourceNote:
-      "Questions sourced from the Prep2Go Immigration app Luxembourg Vivre ensemble deck (Q&A converted to MCQ with distractors sampled from the same deck).",
-    lastUpdated: "2026-07-26",
+      "Questions rewritten from Prep2Go Luxembourg Vivre ensemble themes as full-stem MCQs with parallel-form near-miss distractors. Independent readiness check — not official Luxembourg government material.",
+    lastUpdated: "2026-08-04",
     searchAliases: ["Vivre ensemble Luxembourg", "Luxembourg citizenship test", "nationalité luxembourgeoise"],
   }),
 ];
