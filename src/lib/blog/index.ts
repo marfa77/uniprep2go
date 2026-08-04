@@ -1,5 +1,6 @@
 import { ankiDeckShelfLifePost } from "./posts/anki-deck-shelf-life";
 import { ankiVsQuizletExamPrepPost } from "./posts/anki-vs-quizlet-exam-prep";
+import { australianCitizenshipTestPost } from "./posts/australian-citizenship-test";
 import { belgiumCitizenshipFlandersWalloniaPost } from "./posts/belgium-citizenship-flanders-wallonia";
 import { canadaCitizenshipTestPost } from "./posts/canada-citizenship-test";
 import { californiaRealEstateDreCentersPost } from "./posts/california-real-estate-dre-centers";
@@ -76,6 +77,7 @@ export function withBlogStockImages(draft: BlogPostDraft): BlogPost {
 }
 
 const blogPostDrafts: BlogPostDraft[] = [
+  australianCitizenshipTestPost,
   polishCitizenshipWiedzaOPolscePost,
   czechCitizenshipExamZkouskaZRealiiPost,
   cdlGeneralKnowledgePost,

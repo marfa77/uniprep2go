@@ -417,6 +417,34 @@ export const BLOG_STOCK_IMAGE_CONFIG: Record<
       },
     ],
   },
+  "australian-citizenship-test-our-common-bond-complete-guide": {
+    hero: {
+      id: "australian-citizenship-test-hero",
+      alt: "Sydney Harbour Bridge and Opera House on the Australian waterfront",
+      caption: "20 questions · 45 minutes · 75% — and all 5 values items must be correct",
+      queries: [
+        "Sydney Harbour Bridge Opera House Australia",
+        "Canberra Parliament House Australia exterior",
+        "Australian flag landmark city skyline",
+      ],
+      mustInclude: ["sydney", "australia", "harbour", "opera", "canberra", "parliament"],
+      mustExclude: ["new zealand auckland", "fiji"],
+    },
+    inline: [
+      {
+        id: "australian-citizenship-test-study",
+        alt: "Adult studying Australian citizenship booklet and notes at a desk",
+        caption: "Our Common Bond + values drills beat last-minute trivia apps",
+        queries: [
+          "studying citizenship test flashcards desk notebook",
+          "person reading exam booklet laptop desk notes",
+          "adult studying practice test questions at desk",
+        ],
+        mustInclude: ["study", "book", "desk", "notebook", "exam", "laptop"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
   "czech-citizenship-exam-zkouska-z-realii-complete-guide": {
     hero: {
       id: "czech-citizenship-exam-hero",

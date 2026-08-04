@@ -10,9 +10,9 @@ export const canadaCitizenshipTestPost: BlogPostDraft = {
   eyebrow: "Canada · Discover Canada / IRCC",
   clusterId: "canada-citizenship",
   relatedSlugs: [
+    "australian-citizenship-test-our-common-bond-complete-guide",
     "us-naturalization-civics-test-100-questions-only-10",
     "life-in-the-uk-test-why-one-in-three-fail",
-    "netherlands-inburgeringsexamen-five-exams-pass-guide",
   ],
   intro:
     "**Canada’s citizenship test is one of the shortest in the world — 20 questions in 30 minutes — and one of the most expensive per question.** Between application, right of citizenship, and related charges, you are near CAD $630 to sit those 20 items. Fail and you pay again in time, stress, and possibly a citizenship-officer interview. This guide covers format, five topic areas, the geography trap, and how to use the free official *Discover Canada* guide instead of error-prone apps.",
