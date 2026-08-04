@@ -20,6 +20,7 @@ describe("blog guides", () => {
   it("publishes niche cluster guides with FAQ and product links", () => {
     const posts = getAllBlogPosts();
     expect(posts.map((post) => post.slug)).toEqual([
+      "czech-cce-language-vs-realie-civics-two-exams",
       "wallonie-citoyennete-francais-a2-parcours-integration",
       "australian-citizenship-test-our-common-bond-complete-guide",
       "polish-citizenship-wiedza-o-polsce-gap-2026",
@@ -138,6 +139,7 @@ describe("blog guides", () => {
       "australian-citizenship-test-our-common-bond-complete-guide",
     ]);
     expect(getBlogPostsByCluster("czech-citizenship").map((post) => post.slug)).toEqual([
+      "czech-cce-language-vs-realie-civics-two-exams",
       "czech-citizenship-exam-zkouska-z-realii-complete-guide",
     ]);
     expect(getBlogPostsByCluster("polish-citizenship").map((post) => post.slug)).toEqual([
@@ -274,6 +276,12 @@ describe("blog guides", () => {
       "czech-citizenship-readiness-check",
     );
     expect(getBlogPostBySlug("czech-citizenship-exam-zkouska-z-realii-complete-guide")?.deckSlug).toBe(
+      "czech-a2-cce-anki-deck",
+    );
+    expect(getBlogPostBySlug("czech-cce-language-vs-realie-civics-two-exams")?.mockSlug).toBe(
+      "czech-citizenship-readiness-check",
+    );
+    expect(getBlogPostBySlug("czech-cce-language-vs-realie-civics-two-exams")?.deckSlug).toBe(
       "czech-a2-cce-anki-deck",
     );
     expect(getBlogPostBySlug("polish-citizenship-wiedza-o-polsce-gap-2026")?.mockSlug).toBe(
@@ -420,7 +428,7 @@ describe("blog guides", () => {
     expect(getBlogPostsForMockSlug("leed-green-associate-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("cfa-level-1-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("portugal-nacionalidade-readiness-check")).toHaveLength(1);
-    expect(getBlogPostsForMockSlug("czech-citizenship-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("czech-citizenship-readiness-check")).toHaveLength(2);
     expect(getBlogPostsForMockSlug("denmark-indfoedsretsproeven-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("norway-statsborgerproven-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("sweden-medborgarskapsprov-readiness-check")).toHaveLength(1);

@@ -9,6 +9,7 @@ import { cdlGeneralKnowledgePost } from "./posts/cdl-general-knowledge";
 import { cdlHazmatStateFingerprintingPost } from "./posts/cdl-hazmat-state-fingerprinting";
 import { cdcpVsDcdcPost } from "./posts/cdcp-vs-dcdc";
 import { cfaVsFrmPost } from "./posts/cfa-vs-frm";
+import { czechCceLanguageVsRealiePost } from "./posts/czech-cce-language-vs-realie";
 import { czechCitizenshipExamZkouskaZRealiiPost } from "./posts/czech-citizenship-exam-zkouska-z-realii";
 import { denmarkIndfoedsretsproevenPost } from "./posts/denmark-indfoedsretsproeven";
 import { epa608PracticeTestPost } from "./posts/epa-608-practice-test";
@@ -78,6 +79,7 @@ export function withBlogStockImages(draft: BlogPostDraft): BlogPost {
 }
 
 const blogPostDrafts: BlogPostDraft[] = [
+  czechCceLanguageVsRealiePost,
   wallonieCitoyenneteParcoursIntegrationPost,
   australianCitizenshipTestPost,
   polishCitizenshipWiedzaOPolscePost,

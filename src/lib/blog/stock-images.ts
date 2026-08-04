@@ -417,6 +417,34 @@ export const BLOG_STOCK_IMAGE_CONFIG: Record<
       },
     ],
   },
+  "czech-cce-language-vs-realie-civics-two-exams": {
+    hero: {
+      id: "czech-cce-vs-realie-hero",
+      alt: "Prague Old Town rooftops and spires in the Czech Republic",
+      caption: "Two exams: CCE B1 language + zkouška z reálií — booked and paid separately",
+      queries: [
+        "Prague Old Town Square Czech Republic rooftops",
+        "Charles Bridge Prague Czechia dawn",
+        "Prague Castle Vltava Czech Republic",
+      ],
+      mustInclude: ["prague", "czech", "czechia", "bridge", "castle", "old town"],
+      mustExclude: ["slovakia bratislava", "vienna austria"],
+    },
+    inline: [
+      {
+        id: "czech-cce-vs-realie-study",
+        alt: "Adult studying Czech language grammar notes and flashcards at a desk",
+        caption: "Separate workflows: B1 grammar vs 300-question civics bank",
+        queries: [
+          "studying Czech language textbook flashcards desk",
+          "person reading language exam booklet laptop desk",
+          "adult studying grammar notes notebook desk",
+        ],
+        mustInclude: ["study", "book", "desk", "notebook", "exam", "laptop"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
   "wallonie-citoyennete-francais-a2-parcours-integration": {
     hero: {
       id: "wallonie-citoyennete-hero",
