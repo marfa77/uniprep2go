@@ -3,9 +3,9 @@ import type { BlogPostDraft } from "../types";
 export const usNaturalizationCivicsPost: BlogPostDraft = {
   slug: "us-naturalization-civics-test-100-questions-only-10",
   title: "US Naturalization Civics Test: The 100 Questions Are a Lie",
-  titleTag: "US Naturalization Civics Test 2026: 100 Questions, Only 10 on Exam",
+  titleTag: "US Citizenship Civics Test 2026: 100 Questions, Only 10 Asked",
   metaDescription:
-    "USCIS publishes 100 questions. The exam pulls 10 at random. Seniors 65+ with 20 years LPR study 20. Exact format, topic traps, and why oral flashcards beat apps.",
+    "Free USCIS-style practice path for 2026: USCIS publishes 100 civics questions, the interview asks 10 (pass at 6). Format, topic traps, senior 20-question list, then free timed readiness check + Anki.",
   publishedAt: "2026-07-28",
   eyebrow: "USA · USCIS Naturalization Civics",
   clusterId: "us-citizenship",
@@ -22,7 +22,7 @@ export const usNaturalizationCivicsPost: BlogPostDraft = {
     mockLabel: "Take the free US Citizenship readiness check",
     deckLabel: "Get the Citizenship & Naturalization Anki Bundle",
     summary:
-      "Drill USCIS civics themes with the free US Citizenship readiness check (Prep2Go-sourced). Then lock all 100 questions with the Citizenship & Naturalization Anki Bundle before your interview — and browse Prep2Go for related immigration decks.",
+      "Take the free U.S. Citizenship practice test (30 timed civics questions), then lock the 100-question bank with the Citizenship & Naturalization Anki Bundle before your N-400 interview. Related language decks also live on Prep2Go.",
     extraLinks: [
       {
         href: "https://www.prep2go.study",

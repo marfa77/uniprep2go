@@ -2394,12 +2394,12 @@ const rawDecks: Deck[] = [
     title: "Citizenship & Naturalization Anki Bundle — 6 Countries · 1225 Cards",
     shortName: "Citizenship Naturalization Bundle",
     subtitle:
-      "Stop cramming random civics quizzes — 1,225 Anki flashcards for Germany, France, UK, Canada, Australia & the U.S. in six separate decks, one $20 download.",
+      "U.S. citizenship civics Anki first — drill USCIS-style Q&A, plus Germany, France, UK, Canada & Australia in six separate decks, one $20 download (1,225 cards).",
     directAnswer:
-      "UniPrep2Go sells a Citizenship & Naturalization Anki bundle with six separate .apkg decks covering Leben in Deutschland (296 cards), Naturalisation française (200), Life in the UK (201), Canadian Citizenship (200), Australian Citizenship (200), and U.S. Citizenship (128) — 1,225 civics flashcards total for daily spaced-repetition drill. Free readiness checks for each country funnel into this bundle. It is delivered as six Anki .apkg files for {PRICE} through Gumroad by PixID Studio. Independent study aid — not official government exam material; pair with your country’s official handbook.",
-    lastUpdated: "2026-07-26",
+      "UniPrep2Go sells a Citizenship & Naturalization Anki bundle aimed at U.S. naturalization civics (128 USCIS-style cards) plus five more country decks: Leben in Deutschland (296), Naturalisation française (200), Life in the UK (201), Canadian Citizenship (200), and Australian Citizenship (200) — 1,225 flashcards total for daily spaced-repetition drill. Start with the free U.S. citizenship practice test, then buy when you know your weak topics. Delivered as six Anki .apkg files for {PRICE} through Gumroad by PixID Studio. Independent study aid — not USCIS or other government material; pair with the official handbook.",
+    lastUpdated: "2026-08-04",
     audience:
-      "Applicants preparing citizenship or naturalization civics tests in Germany, France, the UK, Canada, Australia, or the United States.",
+      "U.S. green-card holders preparing the naturalization civics interview, plus applicants for Germany, France, UK, Canada, or Australia citizenship tests.",
     format: ".apkg",
     coverImage: "/covers/citizenship-naturalization-anki-bundle.webp",
     checkoutUrl:
@@ -2436,14 +2436,19 @@ const rawDecks: Deck[] = [
     ],
     faqs: [
       {
+        question: "Does this cover the U.S. citizenship civics test?",
+        answer:
+          "Yes. The U.S. Citizenship deck (128 cards) targets USCIS naturalization civics themes from the 100-question bank. Take the free U.S. citizenship practice test first, then import only the U.S. .apkg if that is the only country you need.",
+      },
+      {
         question: "What is included in the $20 bundle?",
         answer:
-          "Six Anki .apkg decks in one download: Leben in Deutschland (296 cards), Naturalisation française (200), Life in the UK (201), Canadian Citizenship (200), Australian Citizenship (200), and U.S. Citizenship (128) — 1,225 cards total. Import only the country you need.",
+          "Six Anki .apkg decks in one download: U.S. Citizenship (128 cards), Leben in Deutschland (296), Naturalisation française (200), Life in the UK (201), Canadian Citizenship (200), and Australian Citizenship (200) — 1,225 cards total. Import only the country you need.",
       },
       {
         question: "Is there a free practice test before I buy?",
         answer:
-          "Yes. UniPrep2Go has free readiness checks for Leben in Deutschland, Naturalisation française, Life in the UK, Canadian Citizenship, Australian Citizenship, and U.S. Citizenship — each linked to this bundle so you can diagnose weak topics first, then drill with Anki.",
+          "Yes. Start with the free U.S. citizenship readiness check if you are preparing naturalization in the United States. The same funnel exists for Leben in Deutschland, Naturalisation française, Life in the UK, Canada, and Australia — diagnose weak topics first, then drill with Anki.",
       },
       {
         question: "Will this replace the official civics handbook?",
