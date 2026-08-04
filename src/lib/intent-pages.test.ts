@@ -91,10 +91,10 @@ describe("intent pages visibility", () => {
     expect(urls).toContain(absoluteUrl("/llms-full.txt"));
     expect(robots().sitemap).toEqual([
       `${siteConfig.url}/sitemap.xml`,
-      `${siteConfig.url}/llm-sitemap.xml`,
       `${siteConfig.url}/llms.txt`,
       `${siteConfig.url}/llms-full.txt`,
     ]);
+    expect(robots().sitemap).not.toContain(`${siteConfig.url}/llm-sitemap.xml`);
     expect(robots().host).toBe(siteConfig.url);
     expect(JSON.stringify(rules)).toContain("\"allow\":\"/\"");
   });

@@ -1,5 +1,6 @@
 import { buildIntentMarkdown } from "@/lib/llm-docs";
 import { getIntentPageBySlug } from "@/lib/intent-pages";
+import { geoMarkdownHeaders } from "@/lib/seo";
 
 export const revalidate = 3600;
 
@@ -11,9 +12,6 @@ export async function GET() {
   }
 
   return new Response(buildIntentMarkdown(page), {
-    headers: {
-      "Cache-Control": "public, max-age=3600, s-maxage=86400",
-      "Content-Type": "text/markdown; charset=utf-8",
-    },
+    headers: geoMarkdownHeaders(`/${page.slug}`),
   });
 }

@@ -159,6 +159,20 @@ export function deckRobots(deck: Pick<Deck, "status">): Metadata["robots"] | und
   return shouldIndexDeck(deck) ? undefined : thinContentRobots;
 }
 
+/**
+ * Headers for LLM/GEO markdown surfaces (/*.md, mock markdown).
+ * Keep crawlable for AI + follow to HTML canonicals; do not compete in Google index.
+ */
+export function geoMarkdownHeaders(canonicalPath: string): HeadersInit {
+  const canonical = absoluteUrl(canonicalPath.startsWith("/") ? canonicalPath : `/${canonicalPath}`);
+  return {
+    "Cache-Control": "public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400",
+    "Content-Type": "text/markdown; charset=utf-8",
+    "X-Robots-Tag": "noindex, follow",
+    Link: `<${canonical}>; rel="canonical"`,
+  };
+}
+
 /** Sitemap priority: niche Google money URLs high; head exams low; other indexed mocks mid. */
 export function mockExamSitemapPriority(slug: string): number {
   if (isNicheGooglePrioritySlug(slug)) {

@@ -1,6 +1,7 @@
 import { catalogAvailableDecks } from "@/lib/decks";
 import { getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import { buildDeckMarkdown } from "@/lib/llm-docs";
+import { geoMarkdownHeaders } from "@/lib/seo";
 
 export const revalidate = 3600;
 
@@ -28,9 +29,6 @@ export async function GET(
   }
 
   return new Response(buildDeckMarkdown(deck), {
-    headers: {
-      "Cache-Control": "public, max-age=3600, s-maxage=86400",
-      "Content-Type": "text/markdown; charset=utf-8",
-    },
+    headers: geoMarkdownHeaders(`/decks/${slug}`),
   });
 }

@@ -430,7 +430,8 @@ Last updated: ${lastUpdated}
 - Curated llms.txt: ${absoluteUrl("/llms.txt")}
 - Anki Starter Kit: ${absoluteUrl("/anki-starter-kit")}
 - Gaivota em Portugal (free history comic): ${absoluteUrl("/comics/gaivota-em-portugal")}
-- Sitemap: ${absoluteUrl("/sitemap.xml")}
+- Sitemap (HTML / Google): ${absoluteUrl("/sitemap.xml")}
+- LLM sitemap (markdown + facts JSON): ${absoluteUrl("/llm-sitemap.xml")}
 - Robots: ${absoluteUrl("/robots.txt")}
 
 ## How to cite this catalog

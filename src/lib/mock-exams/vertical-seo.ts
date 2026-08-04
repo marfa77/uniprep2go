@@ -61,12 +61,17 @@ export const verticalSeoCopy: Record<MockVerticalId, VerticalSeoCopy> = {
         body:
           "Take one timed readiness check under exam-like conditions, read the topic report, and only then open the matching Anki deck for spaced repetition on failed domains. Confirm current outlines, fees, and eligibility on the official certifier site linked from each mock page — UniPrep2Go does not sell official exam vouchers or redistribute live exam items.",
       },
+      {
+        heading: "Where to go after the mock",
+        body:
+          "After your topic report, open /building-certification-anki-decks for Gumroad decks that match this hub, or read /blog/epa-608-practice-test-what-to-expect when refrigerants are your weak cluster. Keep the official candidate handbook open beside Anki — the mock diagnoses gaps; flashcards repair them.",
+      },
     ],
     faqs: [
       {
         question: "What building certification practice tests are free on UniPrep2Go?",
         answer:
-          "Free timed mocks include EPA 608, LEED Green Associate, LEED AP BD+C, WELL AP, NEBOSH, CFPS, MRICS, CDCP, CEM, BMS/BAS, and related building pathways listed on this hub — each with topic scoring and answer review.",
+          "Free timed mocks include EPA 608, LEED Green Associate, LEED AP BD+C, WELL AP, NEBOSH, CFPS, MRICS, CDCP, CEM, BMS/BAS, PMP/CAPM, Six Sigma Green Belt, and related building pathways listed on this hub — each with topic scoring and answer review.",
       },
       {
         question: "Are these official EPA, USGBC, or RICS exams?",
@@ -77,6 +82,21 @@ export const verticalSeoCopy: Record<MockVerticalId, VerticalSeoCopy> = {
         question: "Should I take the mock or buy the Anki deck first?",
         answer:
           "Take the free mock first. The report shows which topics failed; the linked Anki deck is for daily repair of those gaps, not a substitute for official candidate handbooks.",
+      },
+      {
+        question: "Which mock should HVAC technicians start with?",
+        answer:
+          "Start with the EPA 608 readiness check if you handle refrigerants. Use the topic report to see whether Type I, Type II, or core rules are weak, then drill the matching EPA 608 Anki deck and confirm current EPA Section 608 rules on the official site.",
+      },
+      {
+        question: "Is the building hub the same as the Building Certification Anki catalog?",
+        answer:
+          "No. This hub is for free timed practice tests. The Building Certification Anki decks page lists purchasable .apkg / PDF products for daily spaced repetition after you know which domains failed.",
+      },
+      {
+        question: "Do these mocks include PMP and CAPM?",
+        answer:
+          "Yes. Project-management readiness checks (PMP and CAPM) sit in this building & sustainability path alongside LEED, EPA 608, and safety credentials so facilities and construction teams can drill in one place.",
       },
     ],
   },

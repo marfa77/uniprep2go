@@ -30,10 +30,11 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       })),
     ],
-    // Point answer-engine / LLM crawlers at citation surfaces (llms.txt + machine sitemaps).
+    // Google: HTML sitemap + curated llms entrypoints only.
+    // llm-sitemap.xml (*.md, /api/facts) stays linked from /llms.txt — listing it here
+    // flooded GSC with "Crawled - currently not indexed" markdown URLs.
     sitemap: [
       `${siteConfig.url}/sitemap.xml`,
-      `${siteConfig.url}/llm-sitemap.xml`,
       `${siteConfig.url}/llms.txt`,
       `${siteConfig.url}/llms-full.txt`,
     ],

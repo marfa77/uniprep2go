@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { buildMockExamMarkdown, getMockExamBySlug } from "@/lib/mock-exams/llm";
+import { geoMarkdownHeaders } from "@/lib/seo";
 
 export const revalidate = 3600;
 
@@ -15,9 +16,6 @@ export async function GET(
   }
 
   return new Response(buildMockExamMarkdown(config), {
-    headers: {
-      "Content-Type": "text/markdown; charset=utf-8",
-      "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=86400",
-    },
+    headers: geoMarkdownHeaders(`/mock-exams/${slug}`),
   });
 }

@@ -10,6 +10,7 @@ import { isMockExamRunnable } from "./mock-exams/question-bank";
 import {
   deckRobots,
   finalize,
+  geoMarkdownHeaders,
   INDEXABLE_STATE_RE_SLUGS,
   mockExamRobots,
   mockExamSitemapPriority,
@@ -48,6 +49,15 @@ describe("seo utilities (Barakhlo patterns)", () => {
     expect(mockExamRobots("epa-608-readiness-check")).toBeUndefined();
     expect(shouldIndexMockExam("sie-full-mock")).toBe(true);
     expect(mockExamRobots("sie-full-mock")).toBeUndefined();
+  });
+
+  it("marks GEO markdown surfaces noindex with HTML canonical", () => {
+    const headers = new Headers(geoMarkdownHeaders("/decks/cfa-level-1-anki-deck"));
+    expect(headers.get("X-Robots-Tag")).toBe("noindex, follow");
+    expect(headers.get("Content-Type")).toContain("text/markdown");
+    expect(headers.get("Link")).toBe(
+      `<${absoluteUrl("/decks/cfa-level-1-anki-deck")}>; rel="canonical"`,
+    );
   });
 
   it("noindexes state-RE swarm outside CA/FL/TX/NY allowlist", () => {
