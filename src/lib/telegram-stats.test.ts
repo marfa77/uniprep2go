@@ -11,6 +11,7 @@ import {
   toTelegramResetAllMessage,
   toTelegramSyncMessage,
   computeGrowthSignal,
+  formatSearchAndLlmTopPages,
   formatSevenDayDynamics,
   formatTodayTopPages,
 } from "./telegram-stats";
@@ -164,6 +165,8 @@ describe("telegram stats", () => {
     );
     expect(message).toContain("Mock completed (period):");
     expect(message).toContain("/decks/cfa-level-1-anki-deck — 14");
+    expect(message).toContain("Top pages (Google · recent):");
+    expect(message).toContain("Top pages (LLM · ChatGPT+LLM · recent):");
     expect(message).toContain("Top pages (today ·");
     expect(message).toContain("Динамика 7 дней (посетители / просмотры)");
     expect(message).toContain(
@@ -175,6 +178,81 @@ describe("telegram stats", () => {
     expect(message).not.toContain("All-time");
     expect(message).not.toContain("Recent events");
     expect(message).not.toContain("Last 7 days");
+  });
+
+  it("formats Google and LLM top pages from recent events", () => {
+    const recentEvents: FunnelEvent[] = [
+      {
+        eventId: "g1",
+        name: "page_view",
+        deckSlug: "us-citizenship-anki-deck",
+        occurredAt: "2026-06-10T10:00:00.000Z",
+        visitorId: "g-v1",
+        path: "/blog/us-naturalization-civics-test-100-questions-only-10",
+        referrer: "https://www.google.com/",
+      },
+      {
+        eventId: "g2",
+        name: "page_view",
+        deckSlug: "us-citizenship-anki-deck",
+        occurredAt: "2026-06-10T10:05:00.000Z",
+        visitorId: "g-v2",
+        path: "/blog/us-naturalization-civics-test-100-questions-only-10",
+        referrer: "https://www.google.com/search?q=us+citizenship",
+      },
+      {
+        eventId: "g3",
+        name: "mock_landing_view",
+        deckSlug: "citizenship-naturalization-anki-bundle",
+        occurredAt: "2026-06-10T10:10:00.000Z",
+        visitorId: "g-v3",
+        path: "/mock-exams/us-citizenship-readiness-check",
+        referrer: "https://google.com/",
+      },
+      {
+        eventId: "c1",
+        name: "page_view",
+        deckSlug: "czech-a2-cce-anki-deck",
+        occurredAt: "2026-06-10T11:00:00.000Z",
+        visitorId: "c-v1",
+        path: "/blog/czech-cce-language-vs-realie-civics-two-exams",
+        referrer: "https://chatgpt.com/",
+      },
+      {
+        eventId: "l1",
+        name: "page_view",
+        deckSlug: "czech-a2-cce-anki-deck",
+        occurredAt: "2026-06-10T11:05:00.000Z",
+        visitorId: "l-v1",
+        path: "/blog/czech-citizenship-exam-zkouska-z-realii-complete-guide",
+        referrer: "https://www.perplexity.ai/",
+      },
+      {
+        eventId: "d1",
+        name: "page_view",
+        deckSlug: "cfa-level-1-anki-deck",
+        occurredAt: "2026-06-10T12:00:00.000Z",
+        visitorId: "d-v1",
+        path: "/decks/cfa-level-1-anki-deck",
+      },
+    ];
+
+    const block = formatSearchAndLlmTopPages({
+      ...sampleStats,
+      recentEvents,
+    });
+
+    expect(block).toContain("Top pages (Google · recent):");
+    expect(block).toContain(
+      "/blog/us-naturalization-civics-test-100-questions-only-10 — 2 (2u)",
+    );
+    expect(block).toContain("/mock-exams/us-citizenship-readiness-check — 1 (1u)");
+    expect(block).toContain("Top pages (LLM · ChatGPT+LLM · recent):");
+    expect(block).toContain("/blog/czech-cce-language-vs-realie-civics-two-exams — 1 (1u)");
+    expect(block).toContain(
+      "/blog/czech-citizenship-exam-zkouska-z-realii-complete-guide — 1 (1u)",
+    );
+    expect(block).not.toContain("/decks/cfa-level-1-anki-deck");
   });
 
   it("formats today's top pages from recent events", () => {

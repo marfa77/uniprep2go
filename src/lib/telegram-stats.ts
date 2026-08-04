@@ -2,7 +2,12 @@ import type { FunnelEvent } from "./analytics";
 import type { CheckoutPriceSyncResult } from "./checkout-pricing";
 import type { FunnelStats } from "./funnel-store";
 import { countMockStartsByMode } from "./mock-exams/session-mode";
-import { TRAFFIC_CHANNELS, trafficChannelLabels } from "./traffic-channel";
+import {
+  TRAFFIC_CHANNELS,
+  classifyTrafficChannel,
+  trafficChannelLabels,
+  type TrafficChannel,
+} from "./traffic-channel";
 import type { ProductUniqueMetrics } from "./visitor-metrics";
 
 export function shouldReturnStats(text: string) {
@@ -210,12 +215,101 @@ function formatTopPaths(paths: Record<string, number>, limit = 6) {
   return lines.join("\n") || "- no page data yet";
 }
 
+function isPagePathEvent(event: FunnelEvent) {
+  return Boolean(event.path) && (event.name === "page_view" || event.name === "mock_landing_view");
+}
+
 function isTodayPageEvent(event: FunnelEvent, day: string) {
-  if (!event.path || !(event.occurredAt || "").startsWith(day)) {
+  if (!isPagePathEvent(event) || !(event.occurredAt || "").startsWith(day)) {
     return false;
   }
 
-  return event.name === "page_view" || event.name === "mock_landing_view";
+  return true;
+}
+
+function channelFromPageEvent(event: FunnelEvent): TrafficChannel {
+  return classifyTrafficChannel(event.referrer, {
+    utmSource: event.utmSource,
+    utmMedium: event.utmMedium,
+  });
+}
+
+type RankedPath = { path: string; unique: number; views: number };
+
+function rankPaths(
+  pathVisitors: Map<string, Set<string>>,
+  pathViews: Map<string, number>,
+): RankedPath[] {
+  return [...pathVisitors.entries()]
+    .map(([path, visitors]) => ({
+      path,
+      unique: visitors.size,
+      views: pathViews.get(path) ?? 0,
+    }))
+    .sort(
+      (left, right) =>
+        right.unique - left.unique || right.views - left.views || left.path.localeCompare(right.path),
+    );
+}
+
+/** Best-effort path ranking for selected channels from the recent-events window. */
+export function aggregateTopPathsByChannels(
+  recentEvents: FunnelEvent[],
+  channels: readonly TrafficChannel[],
+) {
+  const allowed = new Set(channels);
+  const pathVisitors = new Map<string, Set<string>>();
+  const pathViews = new Map<string, number>();
+  let pageEvents = 0;
+
+  for (const event of recentEvents) {
+    if (!isPagePathEvent(event) || !allowed.has(channelFromPageEvent(event))) {
+      continue;
+    }
+
+    pageEvents += 1;
+    pathViews.set(event.path!, (pathViews.get(event.path!) ?? 0) + 1);
+
+    const visitors = pathVisitors.get(event.path!) ?? new Set<string>();
+    const visitorKey = event.visitorId?.trim() || `anon:${pageEvents}`;
+    visitors.add(visitorKey);
+    pathVisitors.set(event.path!, visitors);
+  }
+
+  return {
+    pageEvents,
+    ranked: rankPaths(pathVisitors, pathViews),
+  };
+}
+
+function formatRankedPathLines(ranked: RankedPath[], limit: number) {
+  if (ranked.length === 0) {
+    return ["- no page data yet"];
+  }
+
+  const lines = ranked
+    .slice(0, limit)
+    .map(({ path, unique, views }) => `- ${path} — ${views} (${unique}u)`);
+
+  if (ranked.length > limit) {
+    lines.push(`- ...and ${ranked.length - limit} more`);
+  }
+
+  return lines;
+}
+
+/** Top landing pages from Google vs ChatGPT/LLM in the recent-events window. */
+export function formatSearchAndLlmTopPages(stats: FunnelStats, limit = 5) {
+  const google = aggregateTopPathsByChannels(stats.recentEvents, ["google"]);
+  const llm = aggregateTopPathsByChannels(stats.recentEvents, ["chatgpt", "llm"]);
+
+  return [
+    "Top pages (Google · recent):",
+    ...formatRankedPathLines(google.ranked, limit),
+    "",
+    "Top pages (LLM · ChatGPT+LLM · recent):",
+    ...formatRankedPathLines(llm.ranked, limit),
+  ].join("\n");
 }
 
 /** Best-effort today path breakdown from the recent-events window (last 100). */
@@ -239,16 +333,7 @@ export function aggregateTodayPaths(recentEvents: FunnelEvent[], now = new Date(
     pathVisitors.set(event.path!, visitors);
   }
 
-  const ranked = [...pathVisitors.entries()]
-    .map(([path, visitors]) => ({
-      path,
-      unique: visitors.size,
-      views: pathViews.get(path) ?? 0,
-    }))
-    .sort(
-      (left, right) =>
-        right.unique - left.unique || right.views - left.views || left.path.localeCompare(right.path),
-    );
+  const ranked = rankPaths(pathVisitors, pathViews);
 
   return {
     day,
@@ -336,6 +421,8 @@ export function toTelegramStatsMessages(stats: FunnelStats) {
     "",
     "Top pages (period):",
     formatTopPaths(visitors.paths),
+    "",
+    formatSearchAndLlmTopPages(stats),
     "",
     formatTodayTopPages(stats),
     "",
