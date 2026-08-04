@@ -612,19 +612,20 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "CFA Level 2 practice test",
   },
   "us-citizenship-readiness-check": {
-    title: "Free U.S. Citizenship Practice Test | 30 Civics Questions",
+    title: "Free U.S. Citizenship Practice Test 2026 | 30 Civics Questions",
     description:
-      "Free U.S. citizenship civics practice test: 30 timed questions on American government, history, and geography, 30 minutes, 80% readiness target, and full answer review. Pairs with the Citizenship & Naturalization Anki Bundle. Independent prep — not USCIS material.",
+      "Free USCIS-style civics practice test for 2026 naturalization: 30 timed questions on American government, history, and geography, 30 minutes, 80% readiness target, full answer review. Then drill all 100 with the Citizenship Anki Bundle. Independent prep — not USCIS material.",
     keywords: [
-      "us citizenship practice test",
+      "us citizenship practice test 2026",
       "uscis civics test free",
       "naturalization test practice",
-      "citizenship test questions 2025",
+      "n-400 civics questions",
+      "citizenship test questions 2026",
     ],
-    headline: "Free U.S. Citizenship Civics Readiness Check",
+    headline: "Free U.S. Citizenship Practice Test (2026 Civics)",
     intro:
-      "A timed civics readiness check modeled on USCIS naturalization themes — government structure, American history, and geography/symbols.",
-    audience: "Green card holders preparing for the U.S. naturalization civics interview.",
+      "A timed USCIS-style civics readiness check for green-card holders preparing the N-400 interview — American government, history, and geography/symbols. Finish the report, then remediate weak topics with the Citizenship & Naturalization Anki Bundle.",
+    audience: "Green card holders preparing for the U.S. naturalization civics interview (N-400).",
     practiceTestLabel: "U.S. citizenship practice test",
   },
   "leben-in-deutschland-readiness-check": {

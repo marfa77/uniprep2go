@@ -250,10 +250,10 @@ export const intentPages: IntentPage[] = [
     description:
       "A direct answer page comparing UniPrep2Go citizenship civics Anki products: the six-country Citizenship & Naturalization bundle, the Swiss Citizenship DE/FR/IT bundle, and planned EU/Nordic waitlist decks.",
     directAnswer:
-      "Buy the Citizenship & Naturalization Anki Bundle ($20) when you need civics flashcards for Germany (Leben in Deutschland), France, the UK, Canada, Australia, or the U.S. — six separate .apkg decks in one Gumroad download. Buy the Swiss Citizenship Anki Bundle ($12) when you need federal Staatskunde in German, French, or Italian. For Denmark Indfødsretsprøven, Portugal nacionalidade, Norway Statsborgerprøven, Sweden Medborgarskapsprov, Belgium Flanders/Wallonie, or Luxembourg Vivre ensemble, take the free readiness check and join the planned Anki waitlist — those civics decks are not sold yet. Language certificates (CIPLE, DELF, Inburgering, Goethe, CELI, DELE) are separate language products, not substitutes for civics Anki.",
+      "For U.S. naturalization civics, buy the Citizenship & Naturalization Anki Bundle ($20) — it includes a dedicated U.S. Citizenship .apkg plus Germany, France, UK, Canada, and Australia in the same download. Start with the free U.S. citizenship practice test, then import only the U.S. deck if that is all you need. Buy the Swiss Citizenship Anki Bundle ($12) for federal Staatskunde in German, French, or Italian. For Denmark, Portugal, Norway, Sweden, Belgium, or Luxembourg civics, take the free readiness check and join the waitlist — those decks are not sold yet. Language certificates (CIPLE, DELF, Inburgering, Goethe, CELI, DELE) are separate products, not substitutes for civics Anki.",
     deckSlugs: ["citizenship-naturalization-anki-bundle", "swiss-citizenship-anki-deck"],
     primaryDeckSlug: "citizenship-naturalization-anki-bundle",
-    mockSlug: "leben-in-deutschland-readiness-check",
+    mockSlug: "us-citizenship-readiness-check",
     indexInSitemap: true,
     proofPoints: [
       "Six-country civics bundle — 1,225 cards ($20)",
@@ -278,6 +278,11 @@ export const intentPages: IntentPage[] = [
     ],
     faqs: [
       {
+        question: "Which citizenship Anki deck should I buy for the United States?",
+        answer:
+          "Buy the Citizenship & Naturalization Anki Bundle and import the U.S. Citizenship .apkg. Take the free U.S. citizenship practice test first so you know which civics themes to drill before the N-400 interview.",
+      },
+      {
         question: "Which citizenship Anki deck should I buy for Germany?",
         answer:
           "Buy the Citizenship & Naturalization Anki Bundle for Leben in Deutschland civics. If you also need German language vocabulary for Goethe / telc / ÖSD / DTZ, buy the German language Anki deck separately.",
@@ -290,7 +295,7 @@ export const intentPages: IntentPage[] = [
       {
         question: "Is CCSE or Portugal nacionalidade in the six-country bundle?",
         answer:
-          "No. Spanish CCSE and Portugal nacionalidade civics are planned waitlist products with free readiness checks. The six-country bundle covers Germany, France, UK, Canada, Australia, and the U.S. only.",
+          "No. Spanish CCSE and Portugal nacionalidade civics are planned waitlist products with free readiness checks. The six-country bundle covers the U.S., Germany, France, UK, Canada, and Australia only.",
       },
     ],
   },

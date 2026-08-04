@@ -465,21 +465,22 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Parents and teachers print DELF Prim vocabulary cards for ages 7–12, cut them out, and use QR audio for pronunciation practice.",
   },
   "citizenship-naturalization-anki-bundle": {
-    title: "Citizenship & Naturalization Anki Bundle | 6 Countries · 1225 Cards",
-    headline: "Citizenship & Naturalization Anki Bundle — 6 Countries · 1225 Cards",
-    studyLabel: "citizenship naturalization civics Anki bundle",
+    title: "US Citizenship Civics Anki Deck Bundle | 100 Questions + 5 Countries",
+    headline: "U.S. Citizenship Civics Anki — Plus 5 More Countries · 1,225 Cards",
+    studyLabel: "US citizenship civics Anki flashcards",
     description:
-      "Stop cramming random civics quizzes. 1,225 Anki flashcards for Germany (Leben in Deutschland), France, UK, Canada, Australia, and the U.S. — six separate .apkg decks in one $20 Gumroad download. Free country readiness checks funnel into this bundle. Independent study aid — not official government material.",
+      "Drill USCIS 100 civics questions with Anki spaced repetition — plus Germany, France, UK, Canada, and Australia in the same $20 download (six .apkg decks, 1,225 cards). Start with the free U.S. citizenship practice test, then buy only when you know your gaps. Independent study aid — not USCIS material.",
     keywords: [
-      "citizenship anki deck",
-      "naturalization flashcards",
+      "us citizenship anki deck",
+      "uscis civics flashcards",
+      "naturalization anki",
+      "citizenship test anki 2026",
       "leben in deutschland anki",
       "life in the uk anki",
-      "us citizenship civics anki",
       "canadian citizenship test anki",
     ],
     intro:
-      "Take a free country readiness check first, then drill weak civics topics with this $20 six-country Anki bundle — spaced repetition instead of scattered blog quizzes.",
+      "U.S. applicants: take the free citizenship readiness check, then lock the 100 civics questions with Anki. Same $20 bundle also includes DE/FR/UK/CA/AU decks if you need another country later.",
   },
   "dele-a2-spanish-anki-deck": {
     title: "DELE SIELE Spanish Anki Deck | 1500 Flashcards",
