@@ -417,6 +417,34 @@ export const BLOG_STOCK_IMAGE_CONFIG: Record<
       },
     ],
   },
+  "czech-citizenship-exam-zkouska-z-realii-complete-guide": {
+    hero: {
+      id: "czech-citizenship-exam-hero",
+      alt: "Prague Castle and Charles Bridge over the Vltava at dusk",
+      caption: "30 MCQs · 30 minutes · 60% — from NPI’s published 300-question pool",
+      queries: [
+        "Prague Castle Charles Bridge Vltava Czech Republic",
+        "Prague Old Town Square Czechia skyline",
+        "Czech Republic Prague historic architecture river",
+      ],
+      mustInclude: ["prague", "czech", "bridge", "castle", "vltava", "czechia"],
+      mustExclude: ["slovakia bratislava", "vienna austria"],
+    },
+    inline: [
+      {
+        id: "czech-citizenship-exam-study",
+        alt: "Adult studying Czech citizenship reálie flashcards and notes at a desk",
+        caption: "Closed pool: spaced repetition beats “common sense” guessing",
+        queries: [
+          "studying citizenship test flashcards desk notebook Europe",
+          "person reading Czech textbook notes laptop desk",
+          "exam preparation flashcards booklet European desk",
+        ],
+        mustInclude: ["study", "book", "desk", "flashcard", "notebook", "exam"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
   "denmark-indfoedsretsproeven-47-percent-pass-rate": {
     hero: {
       id: "denmark-indfoedsretsproeven-hero",
