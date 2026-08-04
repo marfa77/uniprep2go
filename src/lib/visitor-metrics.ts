@@ -28,7 +28,19 @@ export type VisitorMetrics = {
   dailyPageViews: DailyUniqueCounts;
   products: Record<string, ProductUniqueMetrics>;
   paths: Record<string, number>;
+  /** Unique visitors per path ∩ period channel (pages seen by that channel's visitors). */
+  pathsByChannel: Record<TrafficChannel, Record<string, number>>;
 };
+
+function emptyChannelPathCounts(): Record<TrafficChannel, Record<string, number>> {
+  return {
+    google: {},
+    chatgpt: {},
+    llm: {},
+    direct: {},
+    other: {},
+  };
+}
 
 export function emptyVisitorMetrics(): VisitorMetrics {
   return {
@@ -43,6 +55,7 @@ export function emptyVisitorMetrics(): VisitorMetrics {
     dailyPageViews: {},
     products: {},
     paths: {},
+    pathsByChannel: emptyChannelPathCounts(),
   };
 }
 
@@ -306,6 +319,47 @@ function mapSetSizes(map: Map<string, Set<string>>) {
   return result;
 }
 
+/** Count path visitors that also appear in a channel visitor set. */
+export function intersectPathVisitorsWithChannel(
+  pathVisitors: Map<string, Set<string>> | Record<string, Iterable<string>>,
+  channelVisitors: Set<string>,
+): Record<string, number> {
+  if (channelVisitors.size === 0) {
+    return {};
+  }
+
+  const result: Record<string, number> = {};
+  const entries =
+    pathVisitors instanceof Map ? pathVisitors.entries() : Object.entries(pathVisitors);
+
+  for (const [path, visitors] of entries) {
+    let count = 0;
+    for (const visitorId of visitors) {
+      if (channelVisitors.has(visitorId)) {
+        count += 1;
+      }
+    }
+    if (count > 0) {
+      result[path] = count;
+    }
+  }
+
+  return result;
+}
+
+function pathsByChannelFromSets(
+  pathVisitors: Map<string, Set<string>>,
+  periodChannel: Record<TrafficChannel, Set<string>>,
+): Record<TrafficChannel, Record<string, number>> {
+  const result = emptyChannelPathCounts();
+
+  for (const channel of TRAFFIC_CHANNELS) {
+    result[channel] = intersectPathVisitorsWithChannel(pathVisitors, periodChannel[channel]);
+  }
+
+  return result;
+}
+
 export function readVisitorMetricsFromMemory(): VisitorMetrics {
   const store = getMemoryVisitorSets();
   const products = new Set([
@@ -358,6 +412,7 @@ export function readVisitorMetricsFromMemory(): VisitorMetrics {
     dailyPageViews,
     products: productMetrics,
     paths: mapSetSizes(store.pathVisitors),
+    pathsByChannel: pathsByChannelFromSets(store.pathVisitors, store.periodChannel),
   };
 }
 
@@ -536,6 +591,8 @@ type RedisLike = {
   smembers: <T = string>(key: string) => Promise<T[]>;
 };
 
+const PATH_CHANNEL_RANK_CHANNELS: TrafficChannel[] = ["google", "chatgpt", "llm"];
+
 export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<VisitorMetrics> {
   const [
     lifetimeUnique,
@@ -591,9 +648,15 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
   }
 
   const paths: Record<string, number> = {};
+  const pathMemberLists = new Map<string, string[]>();
 
   for (const path of pathKeys ?? []) {
-    paths[path] = await client.scard(VISITOR_REDIS_KEYS.pathVisitors(path));
+    const [count, members] = await Promise.all([
+      client.scard(VISITOR_REDIS_KEYS.pathVisitors(path)),
+      client.smembers<string>(VISITOR_REDIS_KEYS.pathVisitors(path)),
+    ]);
+    paths[path] = count;
+    pathMemberLists.set(path, members ?? []);
   }
 
   const periodByCountry: Record<string, number> = {};
@@ -610,6 +673,22 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
     periodByChannel[channel] = periodChannelCounts[index] ?? 0;
   });
 
+  const pathsByChannel = emptyChannelPathCounts();
+  const channelMemberSets = await Promise.all(
+    PATH_CHANNEL_RANK_CHANNELS.map(async (channel) => {
+      if ((periodByChannel[channel] ?? 0) === 0) {
+        return [channel, new Set<string>()] as const;
+      }
+
+      const members = await client.smembers<string>(VISITOR_REDIS_KEYS.periodChannel(channel));
+      return [channel, new Set(members ?? [])] as const;
+    }),
+  );
+
+  for (const [channel, channelVisitors] of channelMemberSets) {
+    pathsByChannel[channel] = intersectPathVisitorsWithChannel(pathMemberLists, channelVisitors);
+  }
+
   return {
     lifetimeUnique,
     periodUnique,
@@ -622,6 +701,7 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
     dailyPageViews,
     products,
     paths,
+    pathsByChannel,
   };
 }
 

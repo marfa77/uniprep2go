@@ -64,8 +64,41 @@ describe("visitor metrics", () => {
       conversions: 0,
     });
     expect(metrics.paths["/decks/cfa-level-1-anki-deck"]).toBe(1);
+    expect(metrics.pathsByChannel.google["/decks/cfa-level-1-anki-deck"]).toBe(1);
+    expect(metrics.pathsByChannel.chatgpt["/mock-exams/cfa-level-1-readiness-check"]).toBe(1);
     expect(metrics.periodNew).toBe(2);
     expect(metrics.periodReturning).toBe(0);
+  });
+
+  it("attributes later internal pages to the Google visitor via path∩channel", () => {
+    resetAllVisitorSets();
+
+    recordVisitorMetricInMemory(
+      createFunnelEvent({
+        name: "page_view",
+        deckSlug: "us-citizenship-anki-deck",
+        visitorId: "vis_google",
+        path: "/blog/us-naturalization-civics-test-100-questions-only-10",
+        referrer: "https://www.google.com/",
+      }),
+    );
+    recordVisitorMetricInMemory(
+      createFunnelEvent({
+        name: "page_view",
+        deckSlug: "citizenship-naturalization-anki-bundle",
+        visitorId: "vis_google",
+        path: "/mock-exams/us-citizenship-readiness-check",
+        referrer: "https://uniprep2go.study/blog/foo",
+      }),
+    );
+
+    const metrics = readVisitorMetricsFromMemory();
+
+    expect(metrics.periodByChannel.google).toBe(1);
+    expect(metrics.pathsByChannel.google["/blog/us-naturalization-civics-test-100-questions-only-10"]).toBe(
+      1,
+    );
+    expect(metrics.pathsByChannel.google["/mock-exams/us-citizenship-readiness-check"]).toBe(1);
   });
 
   it("attributes llm channel from first-touch utm without referrer", () => {

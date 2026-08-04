@@ -103,6 +103,13 @@ const sampleStats: FunnelStats = {
       "/mock-exams/cfa-level-1-readiness-check": 8,
       "/": 9,
     },
+    pathsByChannel: {
+      google: {},
+      chatgpt: {},
+      llm: {},
+      direct: {},
+      other: {},
+    },
     periodByCountry: { US: 12, PT: 4, DE: 2 },
   },
   storage: "redis",
@@ -166,9 +173,9 @@ describe("telegram stats", () => {
     expect(message).toContain("Mock completed (period):");
     expect(message).toContain("/decks/cfa-level-1-anki-deck — 14");
     expect(message).toContain("Top pages (Google · recent):");
-    expect(message).toContain("none in last 100 events (period Google uniques: 12)");
+    expect(message).toContain("none yet (period Google uniques: 12; checked last 100 events)");
     expect(message).toContain("Top pages (LLM · ChatGPT+LLM · recent):");
-    expect(message).toContain("none in last 100 events (period LLM uniques: 7)");
+    expect(message).toContain("none yet (period LLM uniques: 7; checked last 100 events)");
     expect(message).toContain("Top pages (today ·");
     expect(message).toContain("Динамика 7 дней (посетители / просмотры)");
     expect(message).toContain(
@@ -255,6 +262,67 @@ describe("telegram stats", () => {
       "/blog/czech-citizenship-exam-zkouska-z-realii-complete-guide — 1 (1u)",
     );
     expect(block).not.toContain("/decks/cfa-level-1-anki-deck");
+  });
+
+  it("prefers period path∩channel ranks over recent events", () => {
+    const block = formatSearchAndLlmTopPages({
+      ...sampleStats,
+      recentEvents: [],
+      visitors: {
+        ...sampleStats.visitors,
+        pathsByChannel: {
+          google: {
+            "/blog/us-naturalization-civics-test-100-questions-only-10": 5,
+            "/mock-exams/us-citizenship-readiness-check": 3,
+          },
+          chatgpt: {
+            "/blog/czech-cce-language-vs-realie-civics-two-exams": 2,
+          },
+          llm: {
+            "/blog/czech-citizenship-exam-zkouska-z-realii-complete-guide": 1,
+          },
+          direct: {},
+          other: {},
+        },
+      },
+    });
+
+    expect(block).toContain("Top pages (Google · period):");
+    expect(block).toContain(
+      "/blog/us-naturalization-civics-test-100-questions-only-10 — 5u",
+    );
+    expect(block).toContain("Top pages (LLM · ChatGPT+LLM · period):");
+    expect(block).toContain("/blog/czech-cce-language-vs-realie-civics-two-exams — 2u");
+  });
+
+  it("keeps Google channel sticky across wiped later page views in the recent window", () => {
+    const recentEvents: FunnelEvent[] = [
+      {
+        eventId: "g1",
+        name: "page_view",
+        deckSlug: "us-citizenship-anki-deck",
+        occurredAt: "2026-06-10T10:00:00.000Z",
+        visitorId: "g-v1",
+        path: "/blog/us-naturalization-civics-test-100-questions-only-10",
+        referrer: "https://www.google.com/",
+      },
+      {
+        eventId: "g1b",
+        name: "page_view",
+        deckSlug: "citizenship-naturalization-anki-bundle",
+        occurredAt: "2026-06-10T10:02:00.000Z",
+        visitorId: "g-v1",
+        path: "/mock-exams/us-citizenship-readiness-check",
+        referrer: "https://uniprep2go.study/blog/us-naturalization-civics-test-100-questions-only-10",
+      },
+    ];
+
+    const block = formatSearchAndLlmTopPages({
+      ...sampleStats,
+      recentEvents,
+    });
+
+    expect(block).toContain("/mock-exams/us-citizenship-readiness-check — 1 (1u)");
   });
 
   it("formats today's top pages from recent events", () => {

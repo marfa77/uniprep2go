@@ -252,18 +252,53 @@ function rankPaths(
     );
 }
 
+const CHANNEL_STICKY_PRIORITY: Record<TrafficChannel, number> = {
+  google: 3,
+  chatgpt: 3,
+  llm: 3,
+  other: 1,
+  direct: 0,
+};
+
+/** Prefer acquisition channel when a visitor has mixed referrers in the window. */
+export function stickyVisitorChannels(events: FunnelEvent[]) {
+  const map = new Map<string, TrafficChannel>();
+
+  for (const event of events) {
+    const visitorId = event.visitorId?.trim();
+    if (!visitorId) {
+      continue;
+    }
+
+    const channel = channelFromPageEvent(event);
+    const previous = map.get(visitorId);
+    if (!previous || CHANNEL_STICKY_PRIORITY[channel] > CHANNEL_STICKY_PRIORITY[previous]) {
+      map.set(visitorId, channel);
+    }
+  }
+
+  return map;
+}
+
 /** Best-effort path ranking for selected channels from the recent-events window. */
 export function aggregateTopPathsByChannels(
   recentEvents: FunnelEvent[],
   channels: readonly TrafficChannel[],
 ) {
   const allowed = new Set(channels);
+  const visitorChannels = stickyVisitorChannels(recentEvents);
   const pathVisitors = new Map<string, Set<string>>();
   const pathViews = new Map<string, number>();
   let pageEvents = 0;
 
   for (const event of recentEvents) {
-    if (!isPagePathEvent(event) || !allowed.has(channelFromPageEvent(event))) {
+    if (!isPagePathEvent(event)) {
+      continue;
+    }
+
+    const visitorKey = event.visitorId?.trim() || `anon:${pageEvents + 1}`;
+    const channel = visitorChannels.get(visitorKey) ?? channelFromPageEvent(event);
+    if (!allowed.has(channel)) {
       continue;
     }
 
@@ -271,7 +306,6 @@ export function aggregateTopPathsByChannels(
     pathViews.set(event.path!, (pathViews.get(event.path!) ?? 0) + 1);
 
     const visitors = pathVisitors.get(event.path!) ?? new Set<string>();
-    const visitorKey = event.visitorId?.trim() || `anon:${pageEvents}`;
     visitors.add(visitorKey);
     pathVisitors.set(event.path!, visitors);
   }
@@ -282,10 +316,39 @@ export function aggregateTopPathsByChannels(
   };
 }
 
+export function rankPathsFromUniqueCounts(paths: Record<string, number> | undefined): RankedPath[] {
+  if (!paths) {
+    return [];
+  }
+
+  return Object.entries(paths)
+    .map(([path, unique]) => ({ path, unique, views: unique }))
+    .sort(
+      (left, right) =>
+        right.unique - left.unique || left.path.localeCompare(right.path),
+    );
+}
+
+function mergeChannelPathCounts(
+  pathsByChannel: Record<TrafficChannel, Record<string, number>> | undefined,
+  channels: readonly TrafficChannel[],
+) {
+  const merged: Record<string, number> = {};
+
+  for (const channel of channels) {
+    for (const [path, unique] of Object.entries(pathsByChannel?.[channel] ?? {})) {
+      merged[path] = (merged[path] ?? 0) + unique;
+    }
+  }
+
+  return merged;
+}
+
 function formatRankedPathLines(
   ranked: RankedPath[],
   limit: number,
   emptyHint: string,
+  uniqueOnly = false,
 ) {
   if (ranked.length === 0) {
     return [`- ${emptyHint}`];
@@ -293,7 +356,9 @@ function formatRankedPathLines(
 
   const lines = ranked
     .slice(0, limit)
-    .map(({ path, unique, views }) => `- ${path} — ${views} (${unique}u)`);
+    .map(({ path, unique, views }) =>
+      uniqueOnly ? `- ${path} — ${unique}u` : `- ${path} — ${views} (${unique}u)`,
+    );
 
   if (ranked.length > limit) {
     lines.push(`- ...and ${ranked.length - limit} more`);
@@ -302,27 +367,43 @@ function formatRankedPathLines(
   return lines;
 }
 
-/** Top pages from Google vs ChatGPT/LLM in the recent-events window. */
+/** Top pages from Google vs ChatGPT/LLM — period path∩channel when available, else recent. */
 export function formatSearchAndLlmTopPages(stats: FunnelStats, limit = 5) {
-  const google = aggregateTopPathsByChannels(stats.recentEvents, ["google"]);
-  const llm = aggregateTopPathsByChannels(stats.recentEvents, ["chatgpt", "llm"]);
   const googlePeriod = stats.visitors.periodByChannel.google ?? 0;
   const llmPeriod =
     (stats.visitors.periodByChannel.chatgpt ?? 0) + (stats.visitors.periodByChannel.llm ?? 0);
 
+  const googlePeriodRanked = rankPathsFromUniqueCounts(
+    stats.visitors.pathsByChannel?.google,
+  );
+  const llmPeriodRanked = rankPathsFromUniqueCounts(
+    mergeChannelPathCounts(stats.visitors.pathsByChannel, ["chatgpt", "llm"]),
+  );
+
+  const googleRecent = aggregateTopPathsByChannels(stats.recentEvents, ["google"]);
+  const llmRecent = aggregateTopPathsByChannels(stats.recentEvents, ["chatgpt", "llm"]);
+
+  const googleRanked = googlePeriodRanked.length > 0 ? googlePeriodRanked : googleRecent.ranked;
+  const llmRanked = llmPeriodRanked.length > 0 ? llmPeriodRanked : llmRecent.ranked;
+  const googleSource = googlePeriodRanked.length > 0 ? "period" : "recent";
+  const llmSource = llmPeriodRanked.length > 0 ? "period" : "recent";
+  const recentWindow = stats.recentEvents.length || 100;
+
   return [
-    "Top pages (Google · recent):",
+    `Top pages (Google · ${googleSource}):`,
     ...formatRankedPathLines(
-      google.ranked,
+      googleRanked,
       limit,
-      `none in last 100 events (period Google uniques: ${googlePeriod})`,
+      `none yet (period Google uniques: ${googlePeriod}; checked last ${recentWindow} events)`,
+      googleSource === "period",
     ),
     "",
-    "Top pages (LLM · ChatGPT+LLM · recent):",
+    `Top pages (LLM · ChatGPT+LLM · ${llmSource}):`,
     ...formatRankedPathLines(
-      llm.ranked,
+      llmRanked,
       limit,
-      `none in last 100 events (period LLM uniques: ${llmPeriod})`,
+      `none yet (period LLM uniques: ${llmPeriod}; checked last ${recentWindow} events)`,
+      llmSource === "period",
     ),
   ].join("\n");
 }
