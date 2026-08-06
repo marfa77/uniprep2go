@@ -57,6 +57,54 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
       "California salesperson licensing is administered via DRE/PSI — free timed UniPrep2Go practice test for principles and CA law topics; not a state exam.",
   },
   {
+    query: "Series 65 practice test free",
+    mockSlug: "series-65-readiness-check",
+    disambiguation:
+      "Series 65 qualifies investment adviser representatives — free UniPrep2Go readiness check is independent prep, not NASAA/FINRA exam material.",
+  },
+  {
+    query: "Series 6 practice test free",
+    mockSlug: "series-6-readiness-check",
+    disambiguation:
+      "FINRA Series 6 covers investment company and variable contracts products — narrower than Series 7 and different from Series 65 adviser qualification. Independent prep only.",
+  },
+  {
+    query: "Series 66 practice test free",
+    mockSlug: "series-66-readiness-check",
+    disambiguation:
+      "Series 66 combines Series 63 + 65 content for dual registration pathways — free UniPrep2Go readiness check is independent prep, not NASAA/FINRA exam material.",
+  },
+  {
+    query: "SAFE MLO practice test free",
+    mockSlug: "mortgage-loan-originator-readiness-check",
+    disambiguation:
+      "SAFE MLO national test is required for mortgage loan originators via NMLS — free UniPrep2Go practice test is independent prep.",
+  },
+  {
+    query: "CFP certification practice test free",
+    mockSlug: "cfp-certification-readiness-check",
+    disambiguation:
+      "CFP Board exam covers financial planning domains — free UniPrep2Go readiness check is independent prep, not CFP Board material.",
+  },
+  {
+    query: "IRS enrolled agent practice test free",
+    mockSlug: "enrolled-agent-readiness-check",
+    disambiguation:
+      "The IRS Special Enrollment Examination (SEE) qualifies Enrolled Agents — free UniPrep2Go readiness check is independent practice, not an IRS exam.",
+  },
+  {
+    query: "Series 79 practice test free",
+    mockSlug: "series-79-readiness-check",
+    disambiguation:
+      "FINRA Series 79 (Investment Banking Representative) readiness check — independent UniPrep2Go diagnostic, not FINRA exam material.",
+  },
+  {
+    query: "Series 99 practice test free",
+    mockSlug: "series-99-readiness-check",
+    disambiguation:
+      "FINRA Series 99 (Operations Professional) readiness check — independent UniPrep2Go diagnostic, not FINRA exam material.",
+  },
+  {
     query: "ServSafe Manager practice test free",
     mockSlug: "servsafe-manager-mock",
     disambiguation:
@@ -129,28 +177,10 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
       "NCLEX-RN is the RN licensure exam from NCSBN — free UniPrep2Go 60-question readiness check is independent practice, not an NCSBN exam.",
   },
   {
-    query: "Series 65 practice test free",
-    mockSlug: "series-65-readiness-check",
-    disambiguation:
-      "Series 65 qualifies investment adviser representatives — free UniPrep2Go readiness check is independent prep, not NASAA/FINRA exam material.",
-  },
-  {
-    query: "SAFE MLO practice test free",
-    mockSlug: "mortgage-loan-originator-readiness-check",
-    disambiguation:
-      "SAFE MLO national test is required for mortgage loan originators via NMLS — free UniPrep2Go practice test is independent prep.",
-  },
-  {
     query: "SHRM-CP practice test free",
     mockSlug: "shrm-cp-readiness-check",
     disambiguation:
       "SHRM-CP certifies HR professionals — free UniPrep2Go readiness check covers people/organization/workplace themes; not a SHRM exam.",
-  },
-  {
-    query: "IRS enrolled agent practice test free",
-    mockSlug: "enrolled-agent-readiness-check",
-    disambiguation:
-      "The IRS Special Enrollment Examination (SEE) qualifies Enrolled Agents — free UniPrep2Go readiness check is independent practice, not an IRS exam.",
   },
   {
     query: "FRM Part 1 practice questions",
@@ -295,12 +325,6 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     mockSlug: "cfa-level-2-readiness-check",
     disambiguation:
       "Official CFA Level 2 is vignette-based across 10 topic areas — this 60-question readiness check is a diagnostic, not a CFA Institute mock.",
-  },
-  {
-    query: "Series 6 practice test free",
-    mockSlug: "series-6-readiness-check",
-    disambiguation:
-      "FINRA Series 6 covers investment company and variable contracts products — narrower than Series 7 and different from Series 65 adviser qualification. Independent prep only.",
   },
   {
     query: "LEED GA vs LEED AP BD+C which practice test",

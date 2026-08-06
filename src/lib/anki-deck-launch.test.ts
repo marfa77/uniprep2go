@@ -52,6 +52,8 @@ describe("anki-deck-launch", () => {
     expect(money?.status).toBe("available");
     expect(money?.checkoutUrl).toContain("gumroad.com/l/series-65-anki-deck");
     expect(money?.facts.cards).toBe("60");
+    expect(money?.sampleCards.length).toBeGreaterThanOrEqual(3);
+    expect(money?.sampleCards[0]?.question.length).toBeGreaterThan(20);
 
     const stateRe = getDeckBySlug("fl-real-estate-anki-deck");
     expect(stateRe?.status).toBe("planned");

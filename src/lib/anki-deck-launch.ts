@@ -7,9 +7,11 @@ import type {
   DeckFaq,
   ImportStep,
   PlannedDeck,
+  SampleCard,
   TopicCoverage,
 } from "./decks";
 import { getAllMockExams } from "./mock-exams/configs";
+import { getQuestionBank } from "./mock-exams/question-bank";
 import { absoluteUrl } from "./site";
 
 /** Sale-grade bank size target — matches mock bank generator for thick banks. */
@@ -115,6 +117,31 @@ export function formatAnkiDeckCardLabel(count: number) {
     return String(count);
   }
   return `${count}+`;
+}
+
+function buildSampleCardsFromLinkedMock(deck: PlannedDeck): SampleCard[] {
+  if (deck.sampleCards.length > 0) {
+    return deck.sampleCards;
+  }
+  const mock = getLinkedMockForDeck(deck.slug);
+  if (!mock) {
+    return [];
+  }
+  const bank = getQuestionBank(mock.slug);
+  if (!bank?.length) {
+    return [];
+  }
+  const cover = deck.coverImage ?? `/covers/${deck.slug}.webp`;
+  return bank.slice(0, 3).map((question) => {
+    const correct =
+      question.options.find((option) => option.id === question.correctOptionId)?.text ??
+      question.explanation;
+    return {
+      question: question.prompt,
+      answer: `${correct}${question.explanation ? ` — ${question.explanation}` : ""}`,
+      imageUrl: cover,
+    };
+  });
 }
 
 function upgradeTopicCoverage(
@@ -257,6 +284,7 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
         : "Digital .apkg through Gumroad (download after bank QA)",
     },
     topicCoverage: upgradeTopicCoverage(deck.topicCoverage, cardCount),
+    sampleCards: buildSampleCardsFromLinkedMock(deck),
     faqs: buildLaunchFaqs(deck, mockPath, apkgReady),
     importSteps: buildImportSteps(apkgReady),
   };

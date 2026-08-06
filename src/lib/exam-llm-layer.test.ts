@@ -139,6 +139,9 @@ describe("exam-llm-layer", () => {
     expect(HIGH_INTENT_MOCK_BLOCKS[0]?.mockSlug).toBe("sie-full-mock");
     expect(HIGH_INTENT_MOCK_BLOCKS[1]?.mockSlug).toBe("series-7-readiness-check");
     expect(HIGH_INTENT_MOCK_BLOCKS[2]?.mockSlug).toBe("series-63-readiness-check");
+    expect(HIGH_INTENT_MOCK_BLOCKS[3]?.mockSlug).toBe("california-real-estate-readiness-check");
+    expect(HIGH_INTENT_MOCK_BLOCKS[4]?.mockSlug).toBe("series-65-readiness-check");
+    expect(HIGH_INTENT_MOCK_BLOCKS[5]?.mockSlug).toBe("series-6-readiness-check");
     expect(HIGH_INTENT_MOCK_BLOCKS.length).toBeGreaterThanOrEqual(14);
   });
 

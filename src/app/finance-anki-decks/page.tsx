@@ -5,10 +5,11 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import {
   formatDeckPriceLabel,
+  getPricedDeckBySlug,
   getPricedDecksByCategory,
 } from "@/lib/checkout-pricing";
 import { formatDeckContentLabel } from "@/lib/decks";
-import { getAllMockExams, getMockExamConfig } from "@/lib/mock-exams/configs";
+import { getMockExamConfig } from "@/lib/mock-exams/configs";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { finalize, leafPageTitle, shouldIndexMockExam } from "@/lib/seo";
 import { absoluteUrl, siteConfig } from "@/lib/site";
@@ -20,12 +21,30 @@ const financeMockSlugs = [
   "sie-quick-diagnostic",
   "series-7-readiness-check",
   "series-63-readiness-check",
+  "series-65-readiness-check",
+  "series-6-readiness-check",
+  "series-66-readiness-check",
+  "mortgage-loan-originator-readiness-check",
+  "cfp-certification-readiness-check",
+  "enrolled-agent-readiness-check",
   "cfa-level-1-readiness-check",
   "cfa-level-2-readiness-check",
   "frm-part-1-readiness-check",
   "gmat-focus-readiness-check",
   "gre-readiness-check",
   "sat-readiness-check",
+] as const;
+
+/** Money-wave securities decks live as `professional` in catalog — pin them on this hub. */
+const securitiesMoneyDeckSlugs = [
+  "series-65-anki-deck",
+  "series-6-anki-deck",
+  "series-66-anki-deck",
+  "series-79-anki-deck",
+  "series-99-anki-deck",
+  "mortgage-loan-originator-anki-deck",
+  "cfp-certification-anki-deck",
+  "enrolled-agent-anki-deck",
 ] as const;
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -35,18 +54,18 @@ export async function generateMetadata(): Promise<Metadata> {
     finalize({
       title,
       description:
-        "Finance and securities Anki decks for CFA Level 1 & 2, FRM Part 1, FINRA SIE, Series 7, and GMAT Focus — each paired with a free timed practice test.",
+        "Finance and securities Anki decks for FINRA SIE → 7 → 63, Series 65/6/66, CFA, FRM, CFP, MLO, and EA — each paired with a free timed practice test.",
       alternates: { canonical: "/finance-anki-decks" },
       openGraph: {
-        title: "Finance Anki Decks | CFA, FRM, SIE, Series 7 | UniPrep2Go",
+        title: "Finance Anki Decks | FINRA, Series 65, CFA | UniPrep2Go",
         description:
-          "Independent Anki flashcard decks for CFA, FRM, FINRA, and MBA admissions exams with linked free mocks.",
+          "Independent Anki flashcard decks for FINRA licensing, Series 65, CFA, FRM, and MBA admissions exams with linked free mocks.",
         url: "/finance-anki-decks",
       },
     }),
     {
       aiDescription:
-        "UniPrep2Go finance Anki decks cover CFA Level 1 and 2, FRM Part 1, FINRA SIE, Series 7, Series 63, and GMAT Focus — each with a linked free practice test or readiness check.",
+        "UniPrep2Go finance Anki decks cover FINRA SIE, Series 7, Series 63, Series 65/6/66, CFA Level 1 and 2, FRM Part 1, CFP, SAFE MLO, Enrolled Agent, and GMAT Focus — each with a linked free practice test or readiness check.",
       aiCategory: "Finance exam prep hub",
       path: "/finance-anki-decks",
     },
@@ -55,7 +74,15 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function FinanceAnkiDecksPage() {
   const groups = await getPricedDecksByCategory();
-  const financeDecks = groups.find((group) => group.category === "finance")?.decks ?? [];
+  const financeCategoryDecks = groups.find((group) => group.category === "finance")?.decks ?? [];
+  const moneyDecks = (
+    await Promise.all(securitiesMoneyDeckSlugs.map((slug) => getPricedDeckBySlug(slug)))
+  ).filter((deck): deck is NonNullable<typeof deck> => deck !== undefined);
+  const seen = new Set(moneyDecks.map((deck) => deck.slug));
+  const financeDecks = [
+    ...moneyDecks,
+    ...financeCategoryDecks.filter((deck) => !seen.has(deck.slug)),
+  ];
   const financeMocks = financeMockSlugs
     .map((slug) => getMockExamConfig(slug))
     .filter((mock) => mock !== undefined);
@@ -97,10 +124,10 @@ export default async function FinanceAnkiDecksPage() {
           Finance Anki decks with free practice tests
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          CFA Level 1 &amp; 2, FRM Part 1, FINRA SIE, Series 7 / 63, and MBA admissions decks (GMAT
-          Focus, GRE, SAT) — each paired with a free timed practice test on UniPrep2Go. Take the mock
-          first for topic scoring, then drill only weak domains with spaced-repetition flashcards.
-          Independent prep — not CFA Institute, GARP, FINRA, or ETS material.
+          FINRA SIE → Series 7 → Series 63, plus Series 65 / 6 / 66, CFP, SAFE MLO, Enrolled Agent,
+          CFA Level 1 &amp; 2, FRM Part 1, and MBA admissions decks — each paired with a free timed
+          practice test. Take the mock first for topic scoring, then drill weak domains with Anki.
+          Independent prep — not CFA Institute, GARP, FINRA, CFP Board, NMLS, IRS, or ETS material.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link className={btnPrimary} href="/mock-exams/sie-full-mock">
