@@ -4875,11 +4875,12 @@ export function getAvailableDecksByCategory(): Array<{
 }
 
 export const featuredDeckSlugs = [
-  "servsafe-manager-anki-deck",
-  "hvac-epa-608-anki-deck",
-  "leed-green-associate-anki-deck",
   "sie-exam-anki-deck",
-  "cfa-level-1-anki-deck",
+  "series-7-anki-deck",
+  "series-63-anki-deck",
+  "california-real-estate-exam-anki-deck",
+  "life-and-health-insurance-exam-anki-deck",
+  "property-casualty-insurance-exam-anki-deck",
 ] as const;
 
 export function getFeaturedDecks() {

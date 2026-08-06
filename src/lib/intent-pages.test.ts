@@ -129,8 +129,9 @@ describe("intent pages visibility", () => {
       expect(urls).not.toContain(absoluteUrl(`/mock-exams/${mock.slug}/markdown`));
     }
 
-    expect(byUrl.get(absoluteUrl("/mock-exams/epa-608-readiness-check"))?.priority).toBe(0.98);
-    expect(byUrl.get(absoluteUrl("/mock-exams/sie-full-mock"))?.priority).toBe(0.72);
+    expect(byUrl.get(absoluteUrl("/mock-exams/sie-full-mock"))?.priority).toBe(0.98);
+    expect(byUrl.get(absoluteUrl("/mock-exams/series-7-readiness-check"))?.priority).toBe(0.98);
+    expect(byUrl.get(absoluteUrl("/mock-exams/epa-608-readiness-check"))?.priority).toBe(0.72);
     expect(urls).not.toContain(absoluteUrl("/mock-exams/az-real-estate-readiness-check"));
     expect(urls).toContain(absoluteUrl("/building-certification-anki-decks"));
     expect(

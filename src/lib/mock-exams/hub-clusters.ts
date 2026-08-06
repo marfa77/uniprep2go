@@ -11,22 +11,30 @@ import type { MockExamConfig, MockVerticalId } from "./types";
 export const featuredMockHubSlugs = [
   "sie-full-mock",
   "sie-quick-diagnostic",
-  "cfa-level-1-readiness-check",
   "series-7-readiness-check",
+  "series-63-readiness-check",
   "california-real-estate-readiness-check",
-  "cdl-general-knowledge-readiness-check",
-  "nha-ccma-readiness-check",
-  "nremt-emt-readiness-check",
+  "life-and-health-insurance-readiness-check",
+  "property-casualty-insurance-readiness-check",
+  "cfa-level-1-readiness-check",
   "servsafe-manager-mock",
   "epa-608-readiness-check",
   "fl-real-estate-readiness-check",
 ] as const;
 
 /**
- * Google money URLs for niche-first SEO (lower competition than SIE/ServSafe/PTCB).
- * Featured hub can stay marketing-oriented; sitemap priority + home links use this set.
+ * US money-priority mocks for sitemap boost + home CTAs (FINRA ladder + CA RE).
+ * Featured hub can stay marketing-oriented; sitemap priority uses this set.
  */
 export const nicheGooglePrioritySlugs = [
+  "sie-full-mock",
+  "series-7-readiness-check",
+  "series-63-readiness-check",
+  "california-real-estate-readiness-check",
+] as const;
+
+/** Parked / lower-WTP exams kept live/GEO but deprioritized in Google sitemap. */
+export const googleHeadExamSlugs = [
   "epa-608-readiness-check",
   "leed-green-associate-readiness-check",
   "leed-ap-bd-c-readiness-check",
@@ -39,16 +47,12 @@ export const nicheGooglePrioritySlugs = [
   "nha-cpt-phlebotomy-readiness-check",
   "fl-real-estate-readiness-check",
   "tx-real-estate-readiness-check",
-] as const;
-
-/** Head exams kept live/GEO but deprioritized in Google sitemap + home CTAs. */
-export const googleHeadExamSlugs = [
-  "sie-full-mock",
   "servsafe-manager-mock",
   "ptcb-pharmacy-technician-mock",
   "gmat-focus-readiness-check",
   "gre-readiness-check",
   "cfa-level-1-readiness-check",
+  "us-citizenship-readiness-check",
 ] as const;
 
 const nicheGooglePrioritySlugSet = new Set<string>(nicheGooglePrioritySlugs);
@@ -62,32 +66,16 @@ export function isGoogleHeadExamSlug(slug: string): boolean {
   return googleHeadExamSlugSet.has(slug);
 }
 
-/** Unique SSR lead paragraphs for niche Google money pages (40–100 words). */
+/** Unique SSR lead paragraphs for US money-priority mock pages (40–100 words). */
 export const nicheGooglePageLeads: Partial<Record<(typeof nicheGooglePrioritySlugs)[number], string>> = {
-  "epa-608-readiness-check":
-    "This free EPA Section 608 practice test targets HVAC technicians preparing for Core plus Type I–III refrigerant certification. Timed questions cover recovery, recycle, reclaim, evacuation levels, and Clean Air Act rules — then the report shows which EPA domains to repair before you sit the official exam.",
-  "leed-green-associate-readiness-check":
-    "Use this free LEED Green Associate practice test to benchmark green building basics before USGBC exam day. Questions span integrative process, location and transportation, water, energy, materials, and indoor environmental quality so you can see which credit categories still need Anki drilling.",
-  "leed-ap-bd-c-readiness-check":
-    "This free LEED AP BD+C readiness check focuses on Building Design and Construction credit application, documentation, and rating-system nuance. It is built for project teams moving past Green Associate into AP-level scenario judgment — not a recycled GA quiz.",
-  "nebosh-readiness-check":
-    "This free NEBOSH practice session drills health and safety management systems, workplace hazards, and risk-control thinking used on IGC-style assessments. Take it timed, review weak topics in the report, then use the linked Anki deck for spaced repetition between study blocks.",
-  "cfps-readiness-check":
-    "Prepare for the Certified Fire Protection Specialist exam with this free CFPS readiness check. Questions hit fire science, detection and alarm, suppression, and facility hazard management so you can prioritize NFPA-aligned study before the official multiple-choice sitting.",
-  "mrics-readiness-check":
-    "This free MRICS APC practice check helps surveyors and quantity-surveying candidates rehearse competency-style judgment, ethics, and technical application. Use the score report to decide which RICS pathways and Level 2/3 examples need more written evidence before interview.",
-  "cdl-general-knowledge-readiness-check":
-    "This free CDL General Knowledge practice test covers vehicle inspection, safe driving, cargo, and air-brakes-adjacent fundamentals for Class A/B learners. Timed scoring mirrors how state testing centers pace the knowledge exam — then drill weak endorsements separately.",
-  "water-treatment-operator-1-readiness-check":
-    "Use this free Water Treatment Operator Class I readiness check for entry-level plant math, disinfection, coagulation, filtration, and safety rules. It is built for first-license candidates who need a diagnostic mock before state or association exams — not a generic science quiz.",
-  "electrical-journeyman-readiness-check":
-    "This free electrical journeyman practice test stresses NEC-style calculations, grounding, overcurrent protection, and jobsite safety judgment. Take it timed to find weak code articles, then repair them with the linked Anki deck before your licensing exam.",
-  "nha-cpt-phlebotomy-readiness-check":
-    "This free NHA CPT phlebotomy practice test covers specimen collection, order of draw, safety, and patient care scenarios used on allied-health certification pathways. The topic report shows which lab skills to drill daily before your official NHA sitting.",
-  "fl-real-estate-readiness-check":
-    "This free Florida real estate salesperson readiness check focuses on FREC license law, contracts, property ownership, and math you will see on the state exam. It is the Florida spear for UniPrep2Go’s real-estate mocks — not a generic 50-state template page.",
-  "tx-real-estate-readiness-check":
-    "This free Texas real estate sales agent readiness check targets TRELA/TREC license law, agency and contracts, finance/closing math, and property practice. Use it as a timed diagnostic before Pearson VUE — not a recycled national-only quiz.",
+  "sie-full-mock":
+    "This free FINRA SIE practice test mirrors the Securities Industry Essentials gate exam for brokerage candidates who do not yet need a firm sponsor. Timed questions cover capital markets, products, trading, customer accounts, and prohibited activities — then the report shows which SIE domains to repair with Anki before you schedule Prometric.",
+  "series-7-readiness-check":
+    "Use this free Series 7 readiness check after SIE to stress-test General Securities Representative judgment on equities, debt, options, packaged products, and customer suitability. It is built for sponsored candidates climbing the FINRA license ladder — not a recycled SIE quiz — so you can see which Series 7 topics still need daily drill.",
+  "series-63-readiness-check":
+    "This free Series 63 readiness check targets Uniform Securities Agent State Law rules that sit beside Series 7 for many state registrations. Timed items cover registration, unethical practices, and administrative provisions so you can close the state-law gap on the same buyer ladder as SIE and Series 7.",
+  "california-real-estate-readiness-check":
+    "This free California real estate salesperson readiness check focuses on DRE license law, contracts, property ownership, agency, and exam math for the endless CA cohort. Use it as a timed diagnostic before PSI — then repair weak topics with the linked Anki deck between study blocks.",
 };
 
 export function getNicheGooglePageLead(slug: string): string | undefined {

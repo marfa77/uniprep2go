@@ -202,10 +202,13 @@ describe("LLM documents", () => {
     expect(catalog.catalog_size).toBe(catalogAvailableDecks.length);
     expect(catalog.primary_market).toBe("United States");
     expect(catalog.primary_positioning).toContain("free timed online");
-    expect(catalog.primary_use_cases).toContain(
-      "Immigration survival guides in the Prep2Go Immigration iOS app, plus free citizenship mocks and Anki drills",
-    );
     expect(catalog.primary_use_cases).toContain("FINRA SIE, Series 7, and Series 63 exam prep");
+    expect(catalog.primary_use_cases).toContain(
+      "US insurance and California real estate licensing exam prep",
+    );
+    expect(catalog.primary_use_cases).toContain(
+      "Language decks and EU citizenship prep live on Prep2Go; UniPrep keeps free mocks indexed",
+    );
     expect(catalog.anki_deck_explanation).toContain("spaced-repetition app");
     expect(catalog.snippet_signals).toContain("exact card or question counts");
     expect(catalog.categories.length).toBeGreaterThanOrEqual(1);

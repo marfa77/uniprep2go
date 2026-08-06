@@ -39,6 +39,24 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
       "Official FINRA SIE exam: 75 scored questions, 105 minutes, 70% pass — UniPrep2Go mock matches that format; not FINRA exam material.",
   },
   {
+    query: "Series 7 practice test free",
+    mockSlug: "series-7-readiness-check",
+    disambiguation:
+      "FINRA Series 7 is a long licensing exam — this readiness check samples representative topics; verify current outline at finra.org.",
+  },
+  {
+    query: "Series 63 practice test free",
+    mockSlug: "series-63-readiness-check",
+    disambiguation:
+      "NASAA Series 63 covers state securities law and ethics — this readiness check samples representative topics; verify current outline at nasaa.org. Series 63 is not Series 6 (investment company products) or Series 7 (General Securities Representative).",
+  },
+  {
+    query: "California real estate practice exam free",
+    mockSlug: "california-real-estate-readiness-check",
+    disambiguation:
+      "California salesperson licensing is administered via DRE/PSI — free timed UniPrep2Go practice test for principles and CA law topics; not a state exam.",
+  },
+  {
     query: "ServSafe Manager practice test free",
     mockSlug: "servsafe-manager-mock",
     disambiguation:
@@ -55,12 +73,6 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     mockSlug: "cfa-level-1-readiness-check",
     disambiguation:
       "Official CFA Level 1 is a computer-based exam with topic weights across 10 areas — this 60-question readiness check is a diagnostic, not a CFA Institute mock.",
-  },
-  {
-    query: "Series 7 practice test free",
-    mockSlug: "series-7-readiness-check",
-    disambiguation:
-      "FINRA Series 7 is a long licensing exam — this readiness check samples representative topics; verify current outline at finra.org.",
   },
   {
     query: "CDL general knowledge practice test free",
@@ -283,12 +295,6 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     mockSlug: "cfa-level-2-readiness-check",
     disambiguation:
       "Official CFA Level 2 is vignette-based across 10 topic areas — this 60-question readiness check is a diagnostic, not a CFA Institute mock.",
-  },
-  {
-    query: "Series 63 practice test free",
-    mockSlug: "series-63-readiness-check",
-    disambiguation:
-      "NASAA Series 63 covers state securities law and ethics — this readiness check samples representative topics; verify current outline at nasaa.org. Series 63 is not Series 6 (investment company products) or Series 7 (General Securities Representative).",
   },
   {
     query: "Series 6 practice test free",
@@ -856,7 +862,7 @@ function highIntentBlock(
 For «${block.query}»: ${cite}.${officialPass} ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% readiness target on ${siteConfig.name}. ${block.disambiguation ?? ""} Landing: ${llmUtmUrl(mockPath)}. Not official ${config.examBody} material.`;
 }
 
-/** PixID-style High-Intent section for /llms.txt — EPA, LEED, MRICS focus. */
+/** High-Intent section for /llms.txt — FINRA ladder first, then other US mocks. */
 export function buildExamHighIntentSection(maxBlocks = Number.POSITIVE_INFINITY): string {
   const bySlug = new Map(getAllMockExams().map((config) => [config.slug, config]));
   const seen = new Set<string>();

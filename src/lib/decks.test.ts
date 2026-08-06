@@ -190,7 +190,7 @@ describe("deck catalog", () => {
         "https://pixidstudio.gumroad.com/l/citizenship-naturalization-anki-bundle?wanted=true",
     });
     expect(citizenshipBundle?.title).toContain("Citizenship & Naturalization");
-    expect(citizenshipBundle?.directAnswer).toContain("six separate .apkg");
+    expect(citizenshipBundle?.directAnswer).toContain("six Anki .apkg");
     expect(citizenshipBundle?.sampleCards).toHaveLength(3);
 
     for (const slug of [

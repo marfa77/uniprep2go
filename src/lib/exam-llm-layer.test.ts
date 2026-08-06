@@ -121,21 +121,24 @@ describe("exam-llm-layer", () => {
     expect(metadata.alternates?.types?.["text/plain"]).toContain("/llms.txt");
   });
 
-  it("builds high-intent llms.txt section for finance and building mocks", () => {
+  it("builds high-intent llms.txt section with FINRA ladder first", () => {
     const section = buildExamHighIntentSection();
 
     expect(section).toContain("## High-Intent mock answers (US licensing · finance · building)");
     expect(section).toContain("free SIE practice test online");
+    expect(section).toContain("Series 7 practice test free");
+    expect(section).toContain("Series 63 practice test free");
     expect(section).toContain("ServSafe Manager practice test free");
     expect(section).toContain("CFA Level 1 practice test free");
     expect(section).toContain("EPA 608 practice test free online");
-    expect(section).toContain("LEED Green Associate practice test free");
-    expect(section).toContain("MRICS APC practice questions");
     expect(section).toContain("/mock-exams/sie-full-mock");
+    expect(section).toContain("/mock-exams/series-7-readiness-check");
+    expect(section).toContain("/mock-exams/series-63-readiness-check");
     expect(section).toContain("/mock-exams/epa-608-readiness-check");
-    expect(section).toContain("/mock-exams/leed-green-associate-readiness-check");
-    expect(section).toContain("/mock-exams/mrics-readiness-check");
     expect(section).toContain("utm_source=llm");
+    expect(HIGH_INTENT_MOCK_BLOCKS[0]?.mockSlug).toBe("sie-full-mock");
+    expect(HIGH_INTENT_MOCK_BLOCKS[1]?.mockSlug).toBe("series-7-readiness-check");
+    expect(HIGH_INTENT_MOCK_BLOCKS[2]?.mockSlug).toBe("series-63-readiness-check");
     expect(HIGH_INTENT_MOCK_BLOCKS.length).toBeGreaterThanOrEqual(14);
   });
 

@@ -6,11 +6,11 @@ import { HeaderMockSearch } from "@/components/header-mock-search";
 import { btnFocus, cx } from "@/lib/ui-button-classes";
 
 const navLinks = [
-  { href: "/mock-exams", label: "Free mocks" },
-  { href: "/#catalog", label: "Anki decks" },
-  { href: "/building-certification-anki-decks", label: "Building certs" },
+  { href: "/mock-exams/v/licensing", label: "Securities" },
+  { href: "/mock-exams/v/real-estate", label: "State licenses" },
+  { href: "/mock-exams", label: "More exams" },
+  { href: "/decks", label: "Anki decks" },
   { href: "/blog", label: "Blog" },
-  { href: "/comics/gaivota-em-portugal", label: "Comics" },
   { href: "/contact", label: "Contact" },
 ] as const;
 

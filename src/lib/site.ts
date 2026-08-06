@@ -10,8 +10,8 @@ export const siteConfig = {
     "FINRA SIE, Series 7, and Series 63 exam prep",
     "US insurance and California real estate licensing exam prep",
     "CFA and FRM finance credential review",
-    "Language certification vocabulary and grammar practice",
-    "Immigration survival guides in the Prep2Go Immigration iOS app, plus free citizenship mocks and Anki drills",
+    "Other US licensing and specialty exam practice tests (also on this site)",
+    "Language decks and EU citizenship prep live on Prep2Go; UniPrep keeps free mocks indexed",
   ],
   contactEmail: "support@uniprep2go.study",
   customDeckInquiry: {

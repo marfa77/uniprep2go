@@ -21,13 +21,12 @@ describe("building cert clusters", () => {
     }
   });
 
-  it("links LEED GA to LEED AP BD+C as companions", () => {
+  it("links the LEED ladder GA → AP BD+C → AP O+M as companions", () => {
     expect(getBuildingCompanionDeckSlug("leed-green-associate-anki-deck")).toBe(
       "leed-ap-bd-c-anki-deck",
     );
-    expect(getBuildingCompanionDeckSlug("leed-ap-bd-c-anki-deck")).toBe(
-      "leed-green-associate-anki-deck",
-    );
+    expect(getBuildingCompanionDeckSlug("leed-ap-bd-c-anki-deck")).toBe("leed-ap-om-anki-deck");
+    expect(getBuildingCompanionDeckSlug("leed-ap-om-anki-deck")).toBe("leed-ap-bd-c-anki-deck");
   });
 
   it("returns cluster siblings instead of unrelated professional decks", () => {

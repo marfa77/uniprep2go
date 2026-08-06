@@ -15,6 +15,27 @@ export type MockVerticalDefinition = {
 
 export const MOCK_VERTICALS: MockVerticalDefinition[] = [
   {
+    id: "licensing",
+    label: "US licensing & insurance",
+    description: "FINRA securities, insurance licensing, and ServSafe food-safety practice tests.",
+    imageType: "licensing",
+    seoTitle: "Free US Licensing Practice Tests",
+  },
+  {
+    id: "real-estate",
+    label: "State real estate licensing",
+    description: "Florida, Texas, New York, and California salesperson readiness checks.",
+    imageType: "real-estate",
+    seoTitle: "Free Real Estate Practice Tests",
+  },
+  {
+    id: "finance",
+    label: "Finance credentials",
+    description: "CFA, FRM, GMAT, GRE, and SAT readiness checks.",
+    imageType: "finance",
+    seoTitle: "Free Finance Credential Practice Tests",
+  },
+  {
     id: "transport",
     label: "CDL & commercial driving",
     description: "General knowledge and endorsement readiness checks for commercial drivers.",
@@ -48,13 +69,6 @@ export const MOCK_VERTICALS: MockVerticalDefinition[] = [
     description: "NNAAP CNA and NCLEX-PN readiness checks.",
     imageType: "nursing",
     seoTitle: "Free CNA & PN Practice Tests",
-  },
-  {
-    id: "real-estate",
-    label: "State real estate licensing",
-    description: "Florida, Texas, New York, and California salesperson readiness checks.",
-    imageType: "real-estate",
-    seoTitle: "Free Real Estate Practice Tests",
   },
   {
     id: "health-admin",
@@ -149,26 +163,12 @@ export const MOCK_VERTICALS: MockVerticalDefinition[] = [
     seoTitle: "Free VTNE Practice Tests",
   },
   {
-    id: "licensing",
-    label: "US licensing & insurance",
-    description: "FINRA securities, insurance licensing, and ServSafe food-safety practice tests.",
-    imageType: "licensing",
-    seoTitle: "Free US Licensing Practice Tests",
-  },
-  {
     id: "citizenship",
     label: "Citizenship & naturalization",
     description:
       "Civics and naturalization readiness checks for the US, UK, Canada, Australia, Germany, France, Spain, Belgium, and other countries.",
     imageType: "citizenship",
     seoTitle: "Free Citizenship & Naturalization Practice Tests",
-  },
-  {
-    id: "finance",
-    label: "Finance credentials",
-    description: "CFA, FRM, GMAT, GRE, and SAT readiness checks.",
-    imageType: "finance",
-    seoTitle: "Free Finance Credential Practice Tests",
   },
   {
     id: "building",

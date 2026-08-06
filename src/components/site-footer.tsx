@@ -77,32 +77,46 @@ export function SiteFooter() {
 
         <nav
           aria-label="Sister PixID products"
-          className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-xs leading-6 text-[#6d6252]"
+          className="mt-8 border-t border-[#18140f]/08 pt-4 text-[11px] leading-5 text-[#8a7f6e]"
         >
-          <a
-            className="font-medium text-[#4f493e] underline decoration-[#18140f]/20 underline-offset-4 transition hover:text-[#18140f]"
-            href="https://www.prep2go.study/ciple-a2"
-            rel="noopener"
-            target="_blank"
-          >
-            Prep2Go — CIPLE A2
-          </a>
-          <a
-            className="font-medium text-[#4f493e] underline decoration-[#18140f]/20 underline-offset-4 transition hover:text-[#18140f]"
-            href="https://www.emigro.online/ru/portugal"
-            rel="noopener"
-            target="_blank"
-          >
-            Emigro — Portugal move
-          </a>
-          <a
-            className="font-medium text-[#4f493e] underline decoration-[#18140f]/20 underline-offset-4 transition hover:text-[#18140f]"
-            href="https://www.barakhlo.online/"
-            rel="noopener"
-            target="_blank"
-          >
-            Barakhlo — EU classifieds
-          </a>
+          <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#9a8f7c]">
+            Sister products
+          </p>
+          <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1">
+            <a
+              className="underline decoration-[#18140f]/15 underline-offset-2 transition hover:text-[#4f493e]"
+              href="https://www.prep2go.study/ciple-a2"
+              rel="noopener"
+              target="_blank"
+            >
+              Prep2Go languages
+            </a>
+            <span aria-hidden>·</span>
+            <Link
+              className="underline decoration-[#18140f]/15 underline-offset-2 transition hover:text-[#4f493e]"
+              href="/comics/gaivota-em-portugal"
+            >
+              Gaivota comics
+            </Link>
+            <span aria-hidden>·</span>
+            <a
+              className="underline decoration-[#18140f]/15 underline-offset-2 transition hover:text-[#4f493e]"
+              href="https://www.emigro.online/ru/portugal"
+              rel="noopener"
+              target="_blank"
+            >
+              Emigro
+            </a>
+            <span aria-hidden>·</span>
+            <a
+              className="underline decoration-[#18140f]/15 underline-offset-2 transition hover:text-[#4f493e]"
+              href="https://www.barakhlo.online/"
+              rel="noopener"
+              target="_blank"
+            >
+              Barakhlo
+            </a>
+          </div>
         </nav>
 
         <p className="mt-6 text-xs text-[#6d6252]">

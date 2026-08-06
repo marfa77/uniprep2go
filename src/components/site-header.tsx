@@ -24,21 +24,21 @@ export function SiteHeader() {
         />
       </Link>
       <div className="hidden items-center gap-4 sm:flex">
-        <Link className={btnLinkNav} href="/mock-exams">
-          Free mocks
+        <Link className={btnLinkNav} href="/mock-exams/v/licensing">
+          Securities
+        </Link>
+        <Link className={btnLinkNav} href="/mock-exams/v/real-estate">
+          State licenses
         </Link>
         <HeaderMockSearch />
-        <Link className={btnLinkNav} href="/#catalog">
-          Anki decks
+        <Link className={btnLinkNav} href="/mock-exams">
+          More exams
         </Link>
-        <Link className={btnLinkNav} href="/building-certification-anki-decks">
-          Building certs
+        <Link className={btnLinkNav} href="/decks">
+          Anki decks
         </Link>
         <Link className={btnLinkNav} href="/blog">
           Blog
-        </Link>
-        <Link className={btnLinkNav} href="/comics/gaivota-em-portugal">
-          Comics
         </Link>
         <Link className={btnLinkNav} href="/contact">
           Contact

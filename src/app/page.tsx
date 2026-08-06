@@ -45,6 +45,38 @@ import {
 
 const examPathLinks = [
   {
+    title: "FINRA securities exam prep",
+    description:
+      "SIE gate exam, then Series 7 and Series 63 — free timed mocks with linked Anki decks for the brokerage license ladder.",
+    links: [
+      { href: "/mock-exams/sie-full-mock", label: "Free SIE full mock (75Q)" },
+      { href: "/mock-exams/sie-quick-diagnostic", label: "SIE quick diagnostic (25Q)" },
+      { href: "/mock-exams/series-7-readiness-check", label: "Series 7 readiness" },
+      { href: "/mock-exams/series-63-readiness-check", label: "Series 63 readiness" },
+      { href: "/decks/sie-exam-anki-deck", label: "SIE flashcards" },
+    ],
+  },
+  {
+    title: "State licensing exams",
+    description:
+      "California real estate plus Life/Health and Property & Casualty insurance — state license cohorts with clear search intent.",
+    links: [
+      { href: "/mock-exams/v/real-estate", label: "All real estate mocks" },
+      { href: "/mock-exams/california-real-estate-readiness-check", label: "California RE mock" },
+      { href: "/mock-exams/life-and-health-insurance-readiness-check", label: "Life & Health insurance" },
+      { href: "/mock-exams/property-casualty-insurance-readiness-check", label: "P&C insurance" },
+    ],
+  },
+  {
+    title: "Finance credentials",
+    description: "CFA and FRM readiness checks paired with formula references and focused Anki decks.",
+    links: [
+      { href: "/mock-exams/cfa-level-1-readiness-check", label: "CFA Level 1 mock" },
+      { href: "/mock-exams/cfa-level-2-readiness-check", label: "CFA Level 2 mock" },
+      { href: "/decks/frm-part-1-anki-deck", label: "FRM Part 1 deck" },
+    ],
+  },
+  {
     title: "Building, safety & sustainability",
     description:
       "EPA 608, LEED, NEBOSH, CFPS, and MRICS pathways — free timed mocks with linked Anki decks.",
@@ -75,20 +107,11 @@ const examPathLinks = [
   },
   {
     title: "Allied health (specialty)",
-    description: "NHA phlebotomy and CCMA readiness checks — niche allied-health mocks first.",
+    description: "NHA phlebotomy and CCMA readiness checks — niche allied-health mocks.",
     links: [
       { href: "/mock-exams/v/allied-health", label: "Browse allied health mocks" },
       { href: "/mock-exams/nha-cpt-phlebotomy-readiness-check", label: "NHA CPT phlebotomy" },
       { href: "/mock-exams/nha-ccma-readiness-check", label: "NHA CCMA mock" },
-    ],
-  },
-  {
-    title: "State real estate licensing",
-    description: "Florida, Texas, New York, and California salesperson readiness checks.",
-    links: [
-      { href: "/mock-exams/v/real-estate", label: "All real estate mocks" },
-      { href: "/mock-exams/fl-real-estate-readiness-check", label: "Florida RE mock" },
-      { href: "/mock-exams/california-real-estate-readiness-check", label: "California RE mock" },
     ],
   },
   {
@@ -119,16 +142,6 @@ const examPathLinks = [
     ],
   },
   {
-    title: "FINRA securities exam prep",
-    description: "SIE, Series 7, and Series 63 flashcards after the free SIE mock.",
-    links: [
-      { href: "/mock-exams/sie-quick-diagnostic", label: "SIE quick diagnostic (25Q)" },
-      { href: "/mock-exams/sie-full-mock", label: "Free SIE full mock (75Q)" },
-      { href: "/decks/sie-exam-anki-deck", label: "SIE flashcards" },
-      { href: "/decks/series-7-anki-deck", label: "Series 7 deck" },
-    ],
-  },
-  {
     title: "Food safety and ServSafe Manager",
     description: "Use the 90-question ServSafe mock before the Anki deck or printable study guide.",
     links: [
@@ -137,46 +150,28 @@ const examPathLinks = [
       { href: "/decks/servsafe-manager-complete-study-guide", label: "Printable study guide" },
     ],
   },
-  {
-    title: "Finance credentials",
-    description: "CFA and FRM readiness checks paired with formula references and focused Anki decks.",
-    links: [
-      { href: "/mock-exams/cfa-level-1-readiness-check", label: "CFA Level 1 mock" },
-      { href: "/mock-exams/cfa-level-2-readiness-check", label: "CFA Level 2 mock" },
-      { href: "/decks/frm-part-1-anki-deck", label: "FRM Part 1 deck" },
-    ],
-  },
 ];
 
-/** US licensing & finance mock → deck pairs. Building certs are in #building-repair-pairs. */
+/** US money-path mock → deck pairs on the homepage face. Building certs are in #building-repair-pairs. */
 const mockDeckRepairPairSlugs: Array<{ mockSlug: string; deckSlug: string }> = [
   { mockSlug: "sie-full-mock", deckSlug: "sie-exam-anki-deck" },
-  { mockSlug: "servsafe-manager-mock", deckSlug: "servsafe-manager-anki-deck" },
+  { mockSlug: "series-7-readiness-check", deckSlug: "series-7-anki-deck" },
+  { mockSlug: "series-63-readiness-check", deckSlug: "series-63-anki-deck" },
+  { mockSlug: "california-real-estate-readiness-check", deckSlug: "california-real-estate-exam-anki-deck" },
+  { mockSlug: "life-and-health-insurance-readiness-check", deckSlug: "life-and-health-insurance-exam-anki-deck" },
+  { mockSlug: "property-casualty-insurance-readiness-check", deckSlug: "property-casualty-insurance-exam-anki-deck" },
+  { mockSlug: "us-citizenship-readiness-check", deckSlug: "citizenship-naturalization-anki-bundle" },
   { mockSlug: "cfa-level-1-readiness-check", deckSlug: "cfa-level-1-anki-deck" },
   { mockSlug: "cfa-level-2-readiness-check", deckSlug: "cfa-level-2-anki-deck" },
-  { mockSlug: "us-citizenship-readiness-check", deckSlug: "citizenship-naturalization-anki-bundle" },
-  { mockSlug: "leben-in-deutschland-readiness-check", deckSlug: "citizenship-naturalization-anki-bundle" },
-  { mockSlug: "naturalisation-francaise-readiness-check", deckSlug: "citizenship-naturalization-anki-bundle" },
-  { mockSlug: "life-in-the-uk-readiness-check", deckSlug: "citizenship-naturalization-anki-bundle" },
-  { mockSlug: "canadian-citizenship-readiness-check", deckSlug: "citizenship-naturalization-anki-bundle" },
-  { mockSlug: "australian-citizenship-readiness-check", deckSlug: "citizenship-naturalization-anki-bundle" },
-  { mockSlug: "ccse-espana-readiness-check", deckSlug: "dele-a2-ccse-spanish-citizenship-bundle" },
-  { mockSlug: "swiss-citizenship-readiness-check", deckSlug: "swiss-citizenship-anki-deck" },
-  { mockSlug: "naturalisation-suisse-readiness-check", deckSlug: "swiss-citizenship-anki-deck" },
-  { mockSlug: "naturalizzazione-svizzera-readiness-check", deckSlug: "swiss-citizenship-anki-deck" },
-  { mockSlug: "czech-citizenship-readiness-check", deckSlug: "czech-citizenship-anki-deck" },
-  { mockSlug: "polish-citizenship-readiness-check", deckSlug: "polish-citizenship-anki-deck" },
-  { mockSlug: "denmark-indfoedsretsproeven-readiness-check", deckSlug: "denmark-indfoedsretsproeven-anki-deck" },
-  { mockSlug: "portugal-nacionalidade-readiness-check", deckSlug: "portugal-nacionalidade-anki-deck" },
-  { mockSlug: "norway-statsborgerproven-readiness-check", deckSlug: "norway-statsborgerproven-anki-deck" },
-  { mockSlug: "sweden-medborgarskapsprov-readiness-check", deckSlug: "sweden-medborgarskapsprov-anki-deck" },
-  { mockSlug: "belgium-flanders-mo-readiness-check", deckSlug: "belgium-flanders-mo-anki-deck" },
-  { mockSlug: "belgium-wallonie-citoyennete-readiness-check", deckSlug: "belgium-wallonie-citoyennete-anki-deck" },
-  { mockSlug: "luxembourg-vivre-ensemble-readiness-check", deckSlug: "luxembourg-vivre-ensemble-anki-deck" },
-  { mockSlug: "life-and-health-insurance-readiness-check", deckSlug: "life-and-health-insurance-exam-anki-deck" },
-  { mockSlug: "california-real-estate-readiness-check", deckSlug: "california-real-estate-exam-anki-deck" },
+  { mockSlug: "servsafe-manager-mock", deckSlug: "servsafe-manager-anki-deck" },
   { mockSlug: "ptcb-pharmacy-technician-mock", deckSlug: "ptcb-pharmacy-technician-anki-deck" },
 ];
+
+const heroSecondaryLinks = [
+  { href: "/mock-exams/california-real-estate-readiness-check", label: "California real estate" },
+  { href: "/mock-exams/life-and-health-insurance-readiness-check", label: "Life & Health insurance" },
+  { href: "/mock-exams/property-casualty-insurance-readiness-check", label: "P&C insurance" },
+] as const;
 
 const howItWorksSteps = [
   {
@@ -196,16 +191,14 @@ const howItWorksSteps = [
   },
 ];
 
-/** Home featured strip — niche Google priority set (not head SIE/ServSafe/PTCB). */
+/** Home featured strip — FINRA trilogy first, then state licensing. */
 const featuredMockSlugs = [
-  "epa-608-readiness-check",
-  "leed-green-associate-readiness-check",
-  "nebosh-readiness-check",
-  "cfps-readiness-check",
-  "cdl-general-knowledge-readiness-check",
-  "electrical-journeyman-readiness-check",
-  "nha-cpt-phlebotomy-readiness-check",
-  "fl-real-estate-readiness-check",
+  "sie-full-mock",
+  "series-7-readiness-check",
+  "series-63-readiness-check",
+  "california-real-estate-readiness-check",
+  "life-and-health-insurance-readiness-check",
+  "property-casualty-insurance-readiness-check",
 ] as const;
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -330,31 +323,49 @@ export default async function HomePage() {
           <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:items-center lg:py-20">
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-                Free practice tests first
+                FINRA SIE · Series 7 · Series 63
               </p>
               <h1 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight text-balance text-[#18140f] sm:text-5xl">
-                Diagnose exam gaps with free timed mocks — then drill with Anki
+                Free SIE practice test — then Series 7 and 63
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-8 text-[#4f493e]">
-                Start with a timed mock and pass/no-pass topic report — no signup — then buy the
-                linked Anki deck to drill weak areas.
+                Take the free timed SIE mock with a pass/no-pass topic report — no signup — then climb
+                the Series 7 / 63 ladder and drill weak topics with Anki.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
-                  href="/mock-exams/epa-608-readiness-check"
+                  href="/mock-exams/sie-full-mock"
                   className={btnPrimary}
-                  aria-label="Start free EPA 608 practice test"
+                  aria-label="Start free SIE practice test"
                 >
-                  Start Free EPA 608 Practice Test
+                  Start Free SIE Practice Test
                 </Link>
-                <Link href="/mock-exams" className={btnSecondary}>
-                  Browse all practice tests
+                <Link
+                  href="/mock-exams/series-7-readiness-check"
+                  className={btnSecondary}
+                  aria-label="Start Series 7 readiness check"
+                >
+                  Series 7 readiness
                 </Link>
               </div>
+              <p className="mt-5 text-sm text-[#5f5749]">
+                Also:{" "}
+                {heroSecondaryLinks.map((link, index) => (
+                  <span key={link.href}>
+                    {index > 0 ? " · " : null}
+                    <Link
+                      className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+                      href={link.href}
+                    >
+                      {link.label}
+                    </Link>
+                  </span>
+                ))}
+              </p>
             </div>
             <div className="relative overflow-hidden rounded-[2rem] border border-[#18140f]/10 bg-[#fffaf0] shadow-[0_24px_60px_-32px_rgba(24,20,15,0.35)]">
               <Image
-                alt="UniPrep2Go free online practice tests for US licensing exams"
+                alt="UniPrep2Go free FINRA SIE practice test and US securities exam prep"
                 className="h-auto w-full object-cover"
                 height={630}
                 priority
@@ -412,7 +423,7 @@ export default async function HomePage() {
           <div className="mx-auto max-w-6xl px-6 py-12 sm:px-10">
             <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Start here</p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
-              Top free practice tests for US licensing &amp; finance
+              FINRA securities ladder + state licensing mocks
             </h2>
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {featuredMocks.map((mock) => (
@@ -442,7 +453,7 @@ export default async function HomePage() {
                 Browse all free practice tests
               </Link>
               {" — "}
-              search CDL, NHA, real estate, CPT, and 40+ niche exams.
+              Series 63, CA real estate, insurance, CFA, and 40+ more exams.
             </p>
           </div>
         </section>

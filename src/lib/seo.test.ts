@@ -88,19 +88,26 @@ describe("seo utilities (Barakhlo patterns)", () => {
     }
   });
 
-  it("boosts niche Google priority slugs and deprioritizes head exams in sitemap", () => {
-    expect(nicheGooglePrioritySlugs.length).toBeGreaterThanOrEqual(10);
-    expect(isNicheGooglePrioritySlug("epa-608-readiness-check")).toBe(true);
-    expect(isNicheGooglePrioritySlug("tx-real-estate-readiness-check")).toBe(true);
-    expect(mockExamSitemapPriority("epa-608-readiness-check")).toBe(0.98);
-    expect(mockExamSitemapPriority("sie-full-mock")).toBe(0.72);
+  it("boosts FINRA money-priority slugs and deprioritizes parked exams in sitemap", () => {
+    expect(nicheGooglePrioritySlugs).toEqual([
+      "sie-full-mock",
+      "series-7-readiness-check",
+      "series-63-readiness-check",
+      "california-real-estate-readiness-check",
+    ]);
+    expect(isNicheGooglePrioritySlug("sie-full-mock")).toBe(true);
+    expect(isNicheGooglePrioritySlug("series-7-readiness-check")).toBe(true);
+    expect(isNicheGooglePrioritySlug("epa-608-readiness-check")).toBe(false);
+    expect(mockExamSitemapPriority("sie-full-mock")).toBe(0.98);
+    expect(mockExamSitemapPriority("series-63-readiness-check")).toBe(0.98);
+    expect(mockExamSitemapPriority("epa-608-readiness-check")).toBe(0.72);
     expect(mockExamSitemapPriority("nremt-emt-readiness-check")).toBe(0.88);
     for (const slug of googleHeadExamSlugs) {
       expect(mockExamSitemapPriority(slug)).toBe(0.72);
     }
   });
 
-  it("keeps priority money mocks on thick niche explainers (whoFor + 6 FAQs)", async () => {
+  it("keeps thick explainers on parked building/RE mocks (pages stay live)", async () => {
     const { getNicheExamExplainer } = await import("./mock-exams/niche-exam-explainers");
     for (const slug of [
       "nha-cpt-phlebotomy-readiness-check",

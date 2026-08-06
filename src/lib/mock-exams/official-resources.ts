@@ -669,6 +669,52 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
     certifier: "ETS",
     verifyAtUrl: "https://www.ets.org/praxis.html",
   },
+  "ccse-espana-readiness-check": {
+    certifier: "Instituto Cervantes (CCSE)",
+    verifyAtUrl: "https://examenes.cervantes.es/es/ccse/que-es",
+    sources: [
+      {
+        label: "CCSE exam overview (Instituto Cervantes)",
+        url: "https://examenes.cervantes.es/es/ccse/que-es",
+      },
+    ],
+  },
+  "czech-citizenship-readiness-check": {
+    certifier: "Czech Ministry of the Interior (MVČR)",
+    verifyAtUrl: "https://www.mvcr.cz/mvcren/",
+  },
+  "polish-citizenship-readiness-check": {
+    certifier: "Poland — Office for Foreigners (UDSC)",
+    verifyAtUrl: "https://www.gov.pl/web/udsc",
+  },
+  "denmark-indfoedsretsproeven-readiness-check": {
+    certifier: "Denmark — New to Denmark / Indfødsretsprøven",
+    verifyAtUrl: "https://www.nyidanmark.dk/en-GB",
+  },
+  "portugal-nacionalidade-readiness-check": {
+    certifier: "Portugal — IRN / Justiça (nationality)",
+    verifyAtUrl: "https://justica.gov.pt/Servicos/Pedir-a-nacionalidade-portuguesa",
+  },
+  "norway-statsborgerproven-readiness-check": {
+    certifier: "Norway — UDI (Statsborgerprøven)",
+    verifyAtUrl: "https://www.udi.no/en/",
+  },
+  "sweden-medborgarskapsprov-readiness-check": {
+    certifier: "Sweden — Migrationsverket",
+    verifyAtUrl: "https://www.migrationsverket.se/English.html",
+  },
+  "belgium-flanders-mo-readiness-check": {
+    certifier: "Flanders — Agentschap Integratie & Inburgering",
+    verifyAtUrl: "https://www.vlaanderen.be/en",
+  },
+  "belgium-wallonie-citoyennete-readiness-check": {
+    certifier: "Wallonia — parcours d'intégration / citoyenneté",
+    verifyAtUrl: "https://www.wallonie.be/",
+  },
+  "luxembourg-vivre-ensemble-readiness-check": {
+    certifier: "Luxembourg — Guichet.lu (Vivre ensemble au Grand-Duché)",
+    verifyAtUrl: "https://guichet.public.lu/en.html",
+  },
 };
 
 /** State real-estate commission home pages keyed by slug prefix / known slug. */

@@ -173,7 +173,7 @@ export function geoMarkdownHeaders(canonicalPath: string): HeadersInit {
   };
 }
 
-/** Sitemap priority: niche Google money URLs high; head exams low; other indexed mocks mid. */
+/** Sitemap priority: US money-priority URLs high; parked/head exams low; other indexed mocks mid. */
 export function mockExamSitemapPriority(slug: string): number {
   if (isNicheGooglePrioritySlug(slug)) {
     return 0.98;
@@ -215,9 +215,9 @@ export function finalize(meta: Metadata): Metadata {
 
 export function homeMetadata(): Metadata {
   // Keep absolute title ≤57 chars (Ahrefs / audit TITLE_MAX).
-  const title = "Free US Exam Practice Tests | EPA, LEED, CDL";
+  const title = "Free SIE Practice Test | Series 7 & 63";
   const description =
-    "Free timed practice tests for EPA 608, LEED, NEBOSH, CDL, trades, and specialty licenses — paired with Anki decks for weak-topic repair. No signup.";
+    "Free timed FINRA SIE practice test with Series 7 and Series 63 readiness checks — pass/no-pass topic reports, then Anki decks for weak-topic repair. No signup.";
 
   return finalize({
     title: {
