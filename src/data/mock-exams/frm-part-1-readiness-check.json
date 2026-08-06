@@ -3,34 +3,34 @@
     "id": "frm-part-1-readiness-check-foundations-001",
     "examSlug": "frm-part-1-readiness-check",
     "topicId": "foundations",
-    "prompt": "Which statement correctly describes market risk as tested in FRM foundations of risk?",
+    "prompt": "Which of the following best describes market risk as tested on this exam?",
     "options": [
       {
         "id": "a",
-        "text": "Market risk is the risk of loss from changes in market prices or rates, including interest rates, FX rates, equity prices, commodity prices, credit spreads, and volatility."
+        "text": "Market risk is the risk of loss from changes in market prices or rates, including interest rates, FX rates, equity prices, commodity prices…"
       },
       {
         "id": "b",
-        "text": "Conflicts should be identified, disclosed, and managed so professional judgment remains independent and stakeholders are not misled."
+        "text": "Market risk is never the risk of loss from changes in market prices or rates, including interest rates, FX rates, equity prices, commodity…"
       },
       {
         "id": "c",
-        "text": "Violations can lead to disciplinary review, sanctions, suspension or revocation of membership or certification rights, and reputational damage."
+        "text": "market risk has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Monte Carlo VaR simulates many possible risk-factor paths from an assumed model, revalues the portfolio under each scenario, sorts simulated losses, and selects the target quantile."
+        "text": "market risk is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Market risk is the risk of loss from changes in market prices or rates, including interest rates, FX rates, equity prices, commodity prices, credit spreads, and volatility. Example: A bond portfolio loses value when yields rise; an option book loses value when implied volatility falls.",
     "distractorExplanations": {
-      "b": "Believing disclosure alone always cures a conflict; some conflicts require avoidance.",
-      "c": "Assuming consequences only follow legal violations.",
-      "d": "Thinking Monte Carlo removes assumptions. It replaces historical assumptions with model and distribution assumptions."
+      "b": "This statement is false about market risk and does not match the correct definition.",
+      "c": "This statement is false about market risk and does not match the correct definition.",
+      "d": "This statement is false about market risk and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_p0_authored.csv, FRM-1)."
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_p0_authored.csv, FRM-1). · Local QA repair (stems/distractors)"
   },
   {
     "id": "frm-part-1-readiness-check-foundations-002",
@@ -40,30 +40,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Efficient frontier when risk-free asset exists — all investors hold combination of risk-free asset and market portfolio."
+        "text": "Funding liquidity risk is never the inability to raise cash or meet obligations when due"
       },
       {
         "id": "b",
-        "text": "Funding liquidity risk is the inability to raise cash or meet obligations when due. Market liquidity risk is the inability to exit or hedge a position quickly without materially moving the price."
+        "text": "Funding liquidity risk is the inability to raise cash or meet obligations when due"
       },
       {
         "id": "c",
-        "text": "For a linear derivative, approximate the change in value using its sensitivity to the underlying risk factor, then apply the risk factor volatility and confidence multiplier."
+        "text": "the two main forms of liquidity risk has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "The audit committee oversees financial reporting integrity, internal controls, audit processes, and often coordinates with risk committees on control weaknesses and model or valuation issues."
+        "text": "the two main forms of liquidity risk is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Funding liquidity risk is the inability to raise cash or meet obligations when due. Market liquidity risk is the inability to exit or hedge a position quickly without materially moving the price. Example: A bank can be solvent but fail if short-term funding disappears; a structured credit position can have a model price but no executable bid.",
     "distractorExplanations": {
-      "a": "CML applies to EFFICIENT portfolios only. SML applies to ALL assets (efficient or not). CML uses total risk; SML uses beta.",
-      "c": "Confusing derivative notional with risk exposure; sensitivity matters.",
-      "d": "Treating audit committee work as unrelated to risk management."
+      "a": "This statement is false about the two main forms of liquidity risk and does not match the correct definition.",
+      "c": "This statement is false about the two main forms of liquidity risk and does not match the correct definition.",
+      "d": "This statement is false about the two main forms of liquidity risk and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_p0_authored.csv, FRM-1)."
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_p0_authored.csv, FRM-1). · Local QA repair (stems/distractors)"
   },
   {
     "id": "frm-part-1-readiness-check-foundations-003",
@@ -73,30 +73,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Mean-variance analysis summarizes risk with variance, which treats upside and downside deviations symmetrically and can miss tail asymmetry, skewness, and nonlinear payoff risk."
+        "text": "Basis risk is never the risk that the hedge instrument and the exposure do not move perfectly together, causing the hedge to underperform o…"
       },
       {
         "id": "b",
-        "text": "Efficient frontier when risk-free asset exists — all investors hold combination of risk-free asset and market portfolio."
+        "text": "basis risk in hedging has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Basis risk is the risk that the hedge instrument and the exposure do not move perfectly together, causing the hedge to underperform or overperform."
+        "text": "Basis risk is the risk that the hedge instrument and the exposure do not move perfectly together, causing the hedge to underperform or over…"
       },
       {
         "id": "d",
-        "text": "Violations can lead to disciplinary review, sanctions, suspension or revocation of membership or certification rights, and reputational damage."
+        "text": "basis risk in hedging is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Basis risk is the risk that the hedge instrument and the exposure do not move perfectly together, causing the hedge to underperform or overperform. Formula: $$Basis = Spot\\ Price - Futures\\ Price$$ Example: A company hedges diesel exposure using crude oil futures; diesel and crude prices are correlated but not identical.",
     "distractorExplanations": {
-      "a": "Assuming low historical volatility means low tail risk.",
-      "b": "CML applies to EFFICIENT portfolios only. SML applies to ALL assets (efficient or not). CML uses total risk; SML uses beta.",
-      "d": "Assuming consequences only follow legal violations."
+      "a": "This statement is false about basis risk in hedging and does not match the correct definition.",
+      "b": "This statement is false about basis risk in hedging and does not match the correct definition.",
+      "d": "This statement is false about basis risk in hedging and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_p0_authored.csv, FRM-2).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_p0_authored.csv, FRM-2). · Local QA repair (stems/distractors)",
     "formula": "$$Basis = Spot\\ Price - Futures\\ Price$$"
   },
   {
@@ -107,63 +107,63 @@
     "options": [
       {
         "id": "a",
-        "text": "Delta-normal VaR approximates portfolio P&L as a linear function of normally distributed risk-factor changes, using deltas, volatilities, and correlations."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Expected return of any asset = risk-free rate + beta × equity risk premium. Only systematic (market) risk is priced."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "VaR is incomplete without both. A 95% 1-day VaR and a 99% 10-day VaR measure different tail probabilities and horizons, so the numbers are not directly comparable."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "Key factors included rapid mortgage credit growth, weak underwriting, rising leverage, securitization complexity, reliance on ratings, maturity transformation, and confidence in housing price appreciation."
+        "text": "Key factors included rapid mortgage credit growth, weak underwriting, rising leverage, securitization complexity, reliance on ratings, matu…"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Key factors included rapid mortgage credit growth, weak underwriting, rising leverage, securitization complexity, reliance on ratings, maturity transformation, and confidence in housing price appreciation. Example: Subprime originations increased while loans were packaged into MBS and CDO structures sold to investors.",
     "distractorExplanations": {
-      "a": "Using delta-normal VaR for portfolios with large option gamma or fat-tailed returns.",
-      "b": "CAPM uses EXPECTED returns, not historical. Idiosyncratic (company-specific) risk is NOT priced — can be diversified away.",
-      "c": "Comparing VaR estimates without checking horizon and confidence."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_p0_authored.csv, FRM-10)."
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_p0_authored.csv, FRM-10). · Local QA repair (stems/distractors)"
   },
   {
     "id": "frm-part-1-readiness-check-foundations-005",
     "examSlug": "frm-part-1-readiness-check",
     "topicId": "foundations",
-    "prompt": "Which statement correctly describes CVA as tested in FRM foundations of risk?",
+    "prompt": "Which of the following best describes CVA as tested on this exam?",
     "options": [
       {
         "id": "a",
-        "text": "Adjustment to derivative fair value for counterparty credit risk — reduces value of derivatives with positive MTM."
+        "text": "Adjustment to derivative fair value for counterparty credit risk — reduces value of derivatives with positive MTM"
       },
       {
         "id": "b",
-        "text": "Originators could sell loans into securitizations rather than hold the credit risk, weakening incentives to maintain underwriting quality when due diligence and risk retention were poor."
+        "text": "CVA always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "The SWIFT cyber case illustrates that operational and cyber risk can create large financial losses through compromised credentials, weak controls, and payment system vulnerabilities."
+        "text": "CVA has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Excess return above CAPM expected return — measures manager skill or mispricing."
+        "text": "CVA is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Adjustment to derivative fair value for counterparty credit risk — reduces value of derivatives with positive MTM. Formula: $$CVA = -LGD \\times \\sum_t PD_t \\times EE_t \\times DF_t$$ Example: Swap worth $1M ignoring credit risk. Counterparty has 2% annual default probability, LGD=60% → CVA ≈ -$12,000. Fair value = $988,000",
     "distractorExplanations": {
-      "b": "Assuming risk disappears when transferred; it can become opaque and concentrated elsewhere.",
-      "c": "Treating cyber risk as only an IT issue rather than an operational risk with financial impact.",
-      "d": "Positive alpha: outperformed on risk-adjusted basis. Negative alpha: underperformed. Persistent positive alpha challenges EMH semi-strong form."
+      "b": "This statement is false about CVA and does not match the correct definition.",
+      "c": "This statement is false about CVA and does not match the correct definition.",
+      "d": "This statement is false about CVA and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_foundations_ported.csv, FRM-4).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_foundations_ported.csv, FRM-4). · Local QA repair (stems/distractors)",
     "formula": "$$CVA = -LGD \\times \\sum_t PD_t \\times EE_t \\times DF_t$$"
   },
   {
@@ -174,30 +174,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Members should act ethically, honestly, independently, and with competence, avoiding conduct that could mislead stakeholders or damage confidence in risk management."
+        "text": "the expected return of a two-asset portfolio always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Weighted average of individual asset expected returns."
+        "text": "Weighted average of individual asset expected returns"
       },
       {
         "id": "c",
-        "text": "A coherent risk measure satisfies monotonicity, subadditivity, positive homogeneity, and translation invariance. Subadditivity is especially important because diversification should not increase measured risk."
+        "text": "the expected return of a two-asset portfolio has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Diversification reduces portfolio risk whenever correlation < 1. Benefit increases as correlation decreases. Maximum benefit when ρ = -1."
+        "text": "the expected return of a two-asset portfolio is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Weighted average of individual asset expected returns. Formula: $$E(R_p) = w_1 E(R_1) + w_2 E(R_2)$$ Example: 60% Stock A (E(R)=12%), 40% Bond B (E(R)=5%) → E(R_p) = 0.6×12 + 0.4×5 = 9.2%",
     "distractorExplanations": {
-      "a": "Treating the Code as exam trivia; it governs professional conduct.",
-      "c": "Memorizing the properties without understanding subadditivity.",
-      "d": "Diversification eliminates UNSYSTEMATIC risk only. Systematic (market) risk cannot be diversified away no matter how many assets."
+      "a": "This statement is false about the expected return of a two-asset portfolio and does not match the correct definition.",
+      "c": "This statement is false about the expected return of a two-asset portfolio and does not match the correct definition.",
+      "d": "This statement is false about the expected return of a two-asset portfolio and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_foundations_ported.csv, FRM-5).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_foundations_ported.csv, FRM-5). · Local QA repair (stems/distractors)",
     "formula": "$$E(R_p) = w_1 E(R_1) + w_2 E(R_2)$$"
   },
   {
@@ -208,63 +208,63 @@
     "options": [
       {
         "id": "a",
-        "text": "VaR and ES often rely on estimated correlations. In stress, correlations can rise or change sign, reducing diversification and increasing tail losses beyond model estimates."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Risk factors interact through correlation, concentration, optionality, and nonlinear payoffs. Correlations often rise in stress, so simple diversification estimates can understate portfolio losses."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Risk taking is accepting uncertainty to pursue return. Risk management is identifying, measuring, monitoring, and controlling that uncertainty so the risk taken is intentional and aligned with objectives."
+        "text": "Risk taking is accepting uncertainty to pursue return"
       },
       {
         "id": "d",
-        "text": "Members should act ethically, honestly, independently, and with competence, avoiding conduct that could mislead stakeholders or damage confidence in risk management."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Risk taking is accepting uncertainty to pursue return. Risk management is identifying, measuring, monitoring, and controlling that uncertainty so the risk taken is intentional and aligned with objectives. Example: A trading desk may take interest rate risk to earn spread, but risk management sets limits, measures DV01/VaR, and escalates limit breaches.",
     "distractorExplanations": {
-      "a": "Using average historical correlation as if it were stable under stress.",
-      "b": "Assuming historical correlations remain stable in stressed markets.",
-      "d": "Treating the Code as exam trivia; it governs professional conduct."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_p0_authored.csv, FRM-1)."
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_p0_authored.csv, FRM-1). · Local QA repair (stems/distractors)"
   },
   {
     "id": "frm-part-1-readiness-check-foundations-008",
     "examSlug": "frm-part-1-readiness-check",
     "topicId": "foundations",
-    "prompt": "What risk management lesson does the SWIFT case illustrate?",
+    "prompt": "On the FRM Part 1 Readiness, what risk management lesson does the SWIFT case illustrate? Select the best answer.",
     "options": [
       {
         "id": "a",
-        "text": "Efficient frontier when risk-free asset exists — all investors hold combination of risk-free asset and market portfolio."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "The crisis highlighted weak board oversight, poor liquidity risk management, excessive leverage, flawed incentives, model overreliance, and insufficient firm-wide risk aggregation."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Systematic (market/beta) risk: affects all assets, cannot be diversified away — rewarded with higher expected return. Unsystematic (idiosyncratic) risk: company-specific, diversifiable — NOT rewarded."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "The SWIFT cyber case illustrates that operational and cyber risk can create large financial losses through compromised credentials, weak controls, and payment system vulnerabilities."
+        "text": "The SWIFT cyber case illustrates that operational and cyber risk can create large financial losses through compromised credentials, weak co…"
       }
     ],
     "correctOptionId": "d",
     "explanation": "The SWIFT cyber case illustrates that operational and cyber risk can create large financial losses through compromised credentials, weak controls, and payment system vulnerabilities. Example: Fraudulent payment instructions can move funds quickly if authentication and monitoring controls fail.",
     "distractorExplanations": {
-      "a": "CML applies to EFFICIENT portfolios only. SML applies to ALL assets (efficient or not). CML uses total risk; SML uses beta.",
-      "b": "Saying the crisis was only a mortgage credit event; governance and liquidity failures were central.",
-      "c": "CAPM: only systematic risk is priced. Holding concentrated portfolio = bearing unrewarded idiosyncratic risk."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_p0_authored.csv, FRM-9)."
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_p0_authored.csv, FRM-9). · Local QA repair (stems/distractors)"
   },
   {
     "id": "frm-part-1-readiness-check-foundations-009",
@@ -274,64 +274,64 @@
     "options": [
       {
         "id": "a",
-        "text": "Diversification reduces portfolio risk whenever correlation < 1. Benefit increases as correlation decreases. Maximum benefit when ρ = -1."
+        "text": "Diversification reduces portfolio risk whenever correlation < 1"
       },
       {
         "id": "b",
-        "text": "Risk data aggregation is the ability to collect, reconcile, and combine risk data across entities, products, geographies, and risk types to produce accurate and timely firm-wide risk information."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "Basis risk is the risk that the hedge instrument and the exposure do not move perfectly together, causing the hedge to underperform or overperform."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Investment grade: Baa3/BBB- and above (Moody's/S&P). Speculative (high yield/junk): Ba1/BB+ and below."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Diversification reduces portfolio risk whenever correlation < 1. Benefit increases as correlation decreases. Maximum benefit when ρ = -1. Formula: $$\\sigma_p < w_1\\sigma_1 + w_2\\sigma_2 \\text{ when } \\rho < 1$$ Example: Two assets, each σ=20%, ρ=0: σ_p = √(0.5²×400+0.5²×400) = 14.1% vs simple average 20%. Diversification saved 5.9%",
     "distractorExplanations": {
-      "b": "Aggregating by spreadsheet after a crisis starts. Effective aggregation requires architecture before stress.",
-      "c": "Ignoring basis risk because the hedge direction is correct.",
-      "d": "Fallen angels: IG bonds downgraded to HY → forced selling by IG-only funds → prices drop sharply. Rising stars: HY upgraded to IG → price spike."
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_foundations_ported.csv, FRM-5).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_foundations_ported.csv, FRM-5). · Local QA repair (stems/distractors)",
     "formula": "$$\\sigma_p < w_1\\sigma_1 + w_2\\sigma_2 \\text{ when } \\rho < 1$$"
   },
   {
     "id": "frm-part-1-readiness-check-foundations-010",
     "examSlug": "frm-part-1-readiness-check",
     "topicId": "foundations",
-    "prompt": "What risk management lesson does Barings illustrate?",
+    "prompt": "On the FRM Part 1 Readiness, what risk management lesson does Barings illustrate? Select the best answer.",
     "options": [
       {
         "id": "a",
-        "text": "For a linear derivative, approximate the change in value using its sensitivity to the underlying risk factor, then apply the risk factor volatility and confidence multiplier."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Barings illustrates rogue trading, weak segregation of duties, poor supervision, and misleading reporting. A trader controlled both front-office trading and back-office settlement functions."
+        "text": "Barings illustrates rogue trading, weak segregation of duties, poor supervision, and misleading reporting"
       },
       {
         "id": "c",
-        "text": "Risk culture is the shared norms, incentives, behaviors, and escalation habits that determine how people take, manage, and communicate risk when rules are incomplete."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Sensitivity of asset returns to market returns — measures systematic risk. β=1: moves with market. β>1: amplifies market moves. β<1: dampens."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Barings illustrates rogue trading, weak segregation of duties, poor supervision, and misleading reporting. A trader controlled both front-office trading and back-office settlement functions. Example: Nick Leeson hid losses in an error account while increasing derivatives exposure.",
     "distractorExplanations": {
-      "a": "Confusing derivative notional with risk exposure; sensitivity matters.",
-      "c": "Treating culture as soft and untestable. Incentives, escalation, and breach behavior reveal culture.",
-      "d": "Beta measures market sensitivity, not total volatility. High total volatility can have low beta if idiosyncratic. Beta of portfolio = weighted average of betas."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_p0_authored.csv, FRM-9)."
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_p0_authored.csv, FRM-9). · Local QA repair (stems/distractors)"
   },
   {
     "id": "frm-part-1-readiness-check-quant-analysis-001",
@@ -341,30 +341,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Tests hypotheses about population variance. Always positive, right-skewed. Degrees of freedom = n-1."
+        "text": "a confidence interval for the population mean always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Geometric mean of sub-period returns — eliminates effect of external cash flows. Best measure of manager skill."
+        "text": "a confidence interval for the population mean has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Range within which population mean likely falls, at given confidence level."
+        "text": "Range within which population mean likely falls, at given confidence level"
       },
       {
         "id": "d",
-        "text": "Symmetric, bell-shaped. Fully described by mean (μ) and variance (σ²). Key intervals: 68-95-99 rule."
+        "text": "a confidence interval for the population mean is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Range within which population mean likely falls, at given confidence level. Formula: $$CI = \\bar{X} \\pm z_{\\alpha/2} \\times \\frac{\\sigma}{\\sqrt{n}}$$ Example: n=100, mean=8%, σ=10%, 95% CI → 8% ± 1.96 × (10/√100) = 8% ± 1.96% = [6.04%, 9.96%]",
     "distractorExplanations": {
-      "a": "Chi-square always positive. Used for variance tests and goodness-of-fit. F-distribution used for testing equality of two variances.",
-      "b": "TWR preferred for evaluating manager performance because manager cannot control when clients invest/withdraw. MWR reflects client behavior.",
-      "d": "Normal distribution: mean = median = mode. Skewness = 0, excess kurtosis = 0."
+      "a": "This statement is false about a confidence interval for the population mean and does not match the correct definition.",
+      "b": "This statement is false about a confidence interval for the population mean and does not match the correct definition.",
+      "d": "This statement is false about a confidence interval for the population mean and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-6).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-6). · Local QA repair (stems/distractors)",
     "formula": "$$CI = \\bar{X} \\pm z_{\\alpha/2} \\times \\frac{\\sigma}{\\sqrt{n}}$$"
   },
   {
@@ -375,30 +375,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Updates probability of hypothesis given new evidence. Reverses conditional probability."
+        "text": "the steps in hypothesis testing always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Annualizes HPY using 360-day year — makes money market instruments comparable to each other."
+        "text": "the steps in hypothesis testing has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Annualizes the HPY using 365-day year with compounding."
+        "text": "the steps in hypothesis testing is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "1) State H₀ and Hₐ. 2) Choose significance level (α). 3) Select test statistic. 4) State decision rule. 5) Calculate test statistic. 6) Make decision. 7) Interpret."
+        "text": "1) State H₀ and Hₐ"
       }
     ],
     "correctOptionId": "d",
     "explanation": "1) State H₀ and Hₐ. 2) Choose significance level (α). 3) Select test statistic. 4) State decision rule. 5) Calculate test statistic. 6) Make decision. 7) Interpret. Formula: $$\\text{Reject } H_0 \\text{ if } |t| > t_{\\alpha/2, df}$$ Example: H₀: μ = 10%, Hₐ: μ ≠ 10%. α = 5%. Two-tailed test. t-stat = 2.3. df = 24. Critical t = 2.064. |2.3| > 2.064 → Reject H₀",
     "distractorExplanations": {
-      "a": "Prior probability × likelihood = posterior probability. Key for CFA ethics and investment analysis questions.",
-      "b": "BDY < MMY < EAY for same T-bill. BDY uses face value; MMY uses purchase price. EAY adds compounding.",
-      "c": "EAY > BDY for same instrument because EAY uses actual purchase price and 365-day year with compounding."
+      "a": "This statement is false about the steps in hypothesis testing and does not match the correct definition.",
+      "b": "This statement is false about the steps in hypothesis testing and does not match the correct definition.",
+      "c": "This statement is false about the steps in hypothesis testing and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-6).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-6). · Local QA repair (stems/distractors)",
     "formula": "$$\\text{Reject } H_0 \\text{ if } |t| > t_{\\alpha/2, df}$$"
   },
   {
@@ -409,30 +409,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Actual return over holding period — not annualized."
+        "text": "Actual return over holding period — not annualized"
       },
       {
         "id": "b",
-        "text": "Measure of asymmetry of a distribution around its mean. Positive skew: long right tail. Negative skew: long left tail."
+        "text": "the holding period yield on a money market instrument always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "Total return over a single period including income and capital gain."
+        "text": "the holding period yield on a money market instrument has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "1) State H₀ and Hₐ. 2) Choose significance level (α). 3) Select test statistic. 4) State decision rule. 5) Calculate test statistic. 6) Make decision. 7) Interpret."
+        "text": "the holding period yield on a money market instrument is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Actual return over holding period — not annualized. Formula: $$HPY = \\frac{P_1 - P_0 + D_1}{P_0} = \\frac{F - P_0}{P_0}$$ Example: T-bill purchased at $9,800, matures at $10,000 → HPY = 200/9800 = 2.04%",
     "distractorExplanations": {
-      "b": "Symmetric distribution: skewness = 0. Negative skew = more extreme negative outcomes than positive.",
-      "c": "HPR can be for any length period. To annualize: (1+HPR)^(1/years) - 1.",
-      "d": "Never 'accept H₀' — only 'fail to reject H₀'. Type I error: reject true H₀. Type II error: fail to reject false H₀."
+      "b": "This statement is false about the holding period yield on a money market instrument and does not match the correct definition.",
+      "c": "This statement is false about the holding period yield on a money market instrument and does not match the correct definition.",
+      "d": "This statement is false about the holding period yield on a money market instrument and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-12).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-12). · Local QA repair (stems/distractors)",
     "formula": "$$HPY = \\frac{P_1 - P_0 + D_1}{P_0} = \\frac{F - P_0}{P_0}$$"
   },
   {
@@ -443,30 +443,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Probability-weighted average of squared deviations from expected value."
+        "text": "standard deviation always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Square root of variance — same units as original data. Most common measure of dispersion/risk."
+        "text": "Square root of variance — same units as original data"
       },
       {
         "id": "c",
-        "text": "Average squared deviation using N-1 denominator — corrects for bias when estimating population variance from sample."
+        "text": "standard deviation has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Simple average — sum of observations divided by number of observations. Best for single-period returns."
+        "text": "standard deviation is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Square root of variance — same units as original data. Most common measure of dispersion/risk. Formula: $$\\sigma = \\sqrt{\\frac{\\sum_{i=1}^{N}(X_i - \\mu)^2}{N}}$$ Example: Variance = 100 → Standard deviation = √100 = 10%. Portfolio with 10% std dev has ~68% of returns within ±10% of mean (normal dist)",
     "distractorExplanations": {
-      "a": "σ² in return² units — take square root for standard deviation in return units.",
-      "c": "N-1 = degrees of freedom. Dividing by N would underestimate true population variance.",
-      "d": "Arithmetic mean > geometric mean (unless all values identical). Use arithmetic for expected future returns, geometric for past performance."
+      "a": "This statement is false about standard deviation and does not match the correct definition.",
+      "c": "This statement is false about standard deviation and does not match the correct definition.",
+      "d": "This statement is false about standard deviation and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-5).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-5). · Local QA repair (stems/distractors)",
     "formula": "$$\\sigma = \\sqrt{\\frac{\\sum_{i=1}^{N}(X_i - \\mu)^2}{N}}$$"
   },
   {
@@ -477,30 +477,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Probability-weighted average of all possible outcomes."
+        "text": "the Sharpe Ratio always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Compound growth rate — accounts for compounding. Always use for multi-period investment returns."
+        "text": "the Sharpe Ratio has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Excess return per unit of total risk (standard deviation). Higher = better risk-adjusted performance."
+        "text": "Excess return per unit of total risk (standard deviation)"
       },
       {
         "id": "d",
-        "text": "Measures how two variables move together. Positive = move same direction, negative = opposite."
+        "text": "the Sharpe Ratio is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Excess return per unit of total risk (standard deviation). Higher = better risk-adjusted performance. Formula: $$SR = \\frac{\\bar{R}_p - R_f}{\\sigma_p}$$ Example: Portfolio return 12%, risk-free 3%, std dev 15% → SR = (12-3)/15 = 0.60",
     "distractorExplanations": {
-      "a": "Expected value is NOT the most likely outcome — it's the probability-weighted average. Can be a value that never actually occurs.",
-      "b": "Geometric mean ≤ arithmetic mean. The gap widens with return volatility. Geometric = true compound return.",
-      "d": "Covariance is unbounded — hard to interpret magnitude. Use correlation (standardized) to judge strength."
+      "a": "This statement is false about the Sharpe Ratio and does not match the correct definition.",
+      "b": "This statement is false about the Sharpe Ratio and does not match the correct definition.",
+      "d": "This statement is false about the Sharpe Ratio and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-5).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-5). · Local QA repair (stems/distractors)",
     "formula": "$$SR = \\frac{\\bar{R}_p - R_f}{\\sigma_p}$$"
   },
   {
@@ -511,30 +511,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Average squared deviation from the mean — measures dispersion of entire population."
+        "text": "the arithmetic mean always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Ratio of standard deviation to mean — measures risk per unit of return. Useful for comparing investments with different means."
+        "text": "the arithmetic mean has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Type I (α): Rejecting a TRUE null hypothesis — probability = significance level. Type II (β): Failing to reject a FALSE null hypothesis."
+        "text": "the arithmetic mean is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "Simple average — sum of observations divided by number of observations. Best for single-period returns."
+        "text": "Simple average — sum of observations divided by number of observations"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Simple average — sum of observations divided by number of observations. Best for single-period returns. Formula: $$\\bar{X} = \\frac{\\sum_{i=1}^{n} X_i}{n}$$ Example: Returns: 10%, 20%, -5% → Arithmetic mean = (10 + 20 - 5) / 3 = 8.33%",
     "distractorExplanations": {
-      "a": "Population uses N in denominator. Sample uses N-1. Always specify which on exam.",
-      "b": "Lower CV = better risk-return tradeoff. Only meaningful when mean is positive.",
-      "c": "Power of test = probability of correctly rejecting false H₀. Higher α → more power but more false positives. Larger sample → more power without increasing α."
+      "a": "This statement is false about the arithmetic mean and does not match the correct definition.",
+      "b": "This statement is false about the arithmetic mean and does not match the correct definition.",
+      "c": "This statement is false about the arithmetic mean and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-5).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-5). · Local QA repair (stems/distractors)",
     "formula": "$$\\bar{X} = \\frac{\\sum_{i=1}^{n} X_i}{n}$$"
   },
   {
@@ -545,64 +545,64 @@
     "options": [
       {
         "id": "a",
-        "text": "Measures how two variables move together. Positive = move same direction, negative = opposite."
+        "text": "Measures how two variables move together"
       },
       {
         "id": "b",
-        "text": "Error terms are correlated with each other across time — common in time series. Violates OLS independence assumption."
+        "text": "covariance between two random variables always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "Square root of variance — same units as original data. Most common measure of dispersion/risk."
+        "text": "covariance between two random variables has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Number of standard deviations an observation is from the mean. Converts any normal to standard normal (μ=0, σ=1)."
+        "text": "covariance between two random variables is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Measures how two variables move together. Positive = move same direction, negative = opposite. Formula: $$Cov(R_i, R_j) = \\sum P(s) \\times [R_i(s) - E(R_i)][R_j(s) - E(R_j)]$$ Example: Cov(A,B) = 0.003 → A and B tend to move together. Cov(A,B) = -0.002 → tend to move opposite",
     "distractorExplanations": {
-      "b": "Detected by: Durbin-Watson statistic (DW ≈ 2 = no autocorrelation, DW < 2 = positive). Fix: Hansen method or include lagged variables.",
-      "c": "Never add standard deviations of two assets — must work with variances then take square root.",
-      "d": "Always use z-table for standard normal. z = 1.645 → 90% one-tailed. z = 1.96 → 95% two-tailed. z = 2.576 → 99% two-tailed."
+      "b": "This statement is false about covariance between two random variables and does not match the correct definition.",
+      "c": "This statement is false about covariance between two random variables and does not match the correct definition.",
+      "d": "This statement is false about covariance between two random variables and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-4).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-4). · Local QA repair (stems/distractors)",
     "formula": "$$Cov(R_i, R_j) = \\sum P(s) \\times [R_i(s) - E(R_i)][R_j(s) - E(R_j)]$$"
   },
   {
     "id": "frm-part-1-readiness-check-quant-analysis-008",
     "examSlug": "frm-part-1-readiness-check",
     "topicId": "quant-analysis",
-    "prompt": "Which statement correctly describes a p-value as tested in FRM quantitative analysis?",
+    "prompt": "Which of the following best describes a p-value as tested on this exam?",
     "options": [
       {
         "id": "a",
-        "text": "Models linear relationship between dependent variable Y and one independent variable X."
+        "text": "a p-value always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Smallest significance level at which H₀ can be rejected. Probability of getting test statistic as extreme as observed, assuming H₀ true."
+        "text": "Smallest significance level at which H₀ can be rejected"
       },
       {
         "id": "c",
-        "text": "Probability of both A and B occurring."
+        "text": "a p-value has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Average squared deviation from the mean — measures dispersion of entire population."
+        "text": "a p-value is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Smallest significance level at which H₀ can be rejected. Probability of getting test statistic as extreme as observed, assuming H₀ true. Formula: $$\\text{Reject } H_0 \\text{ if } p\\text{-value} < \\alpha$$ Example: p-value = 0.03. If α = 5% → reject H₀ (0.03 < 0.05). If α = 1% → fail to reject (0.03 > 0.01)",
     "distractorExplanations": {
-      "a": "OLS minimizes sum of squared residuals. Key assumptions: errors are independent, homoskedastic, normally distributed.",
-      "c": "If A and B independent: P(A∩B) = P(A) × P(B). Independence means P(A|B) = P(A).",
-      "d": "Population uses N in denominator. Sample uses N-1. Always specify which on exam."
+      "a": "This statement is false about a p-value and does not match the correct definition.",
+      "c": "This statement is false about a p-value and does not match the correct definition.",
+      "d": "This statement is false about a p-value and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-6).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-6). · Local QA repair (stems/distractors)",
     "formula": "$$\\text{Reject } H_0 \\text{ if } p\\text{-value} < \\alpha$$"
   },
   {
@@ -613,30 +613,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Ratio of standard deviation to mean — measures risk per unit of return. Useful for comparing investments with different means."
+        "text": "Type I and Type II errors in hypothesis testing always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Square root of variance — same units as original data. Most common measure of dispersion/risk."
+        "text": "Type I and Type II errors in hypothesis testing has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Type I (α): Rejecting a TRUE null hypothesis — probability = significance level. Type II (β): Failing to reject a FALSE null hypothesis."
+        "text": "Type I (α): Rejecting a TRUE null hypothesis — probability = significance level"
       },
       {
         "id": "d",
-        "text": "Geometric mean of sub-period returns — eliminates effect of external cash flows. Best measure of manager skill."
+        "text": "Type I and Type II errors in hypothesis testing is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Type I (α): Rejecting a TRUE null hypothesis — probability = significance level. Type II (β): Failing to reject a FALSE null hypothesis. Formula: $$Power = 1 - \\beta$$ Example: Setting α = 1% reduces Type I error but increases Type II error. Tradeoff: can't minimize both simultaneously",
     "distractorExplanations": {
-      "a": "Lower CV = better risk-return tradeoff. Only meaningful when mean is positive.",
-      "b": "Never add standard deviations of two assets — must work with variances then take square root.",
-      "d": "TWR preferred for evaluating manager performance because manager cannot control when clients invest/withdraw. MWR reflects client behavior."
+      "a": "This statement is false about Type I and Type II errors in hypothesis testing and does not match the correct definition.",
+      "b": "This statement is false about Type I and Type II errors in hypothesis testing and does not match the correct definition.",
+      "d": "This statement is false about Type I and Type II errors in hypothesis testing and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-6).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-6). · Local QA repair (stems/distractors)",
     "formula": "$$Power = 1 - \\beta$$"
   },
   {
@@ -647,30 +647,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Range within which population mean likely falls, at given confidence level."
+        "text": "the total probability rule always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Measure of asymmetry of a distribution around its mean. Positive skew: long right tail. Negative skew: long left tail."
+        "text": "the total probability rule has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Measure of peakedness/tail thickness vs normal distribution. Excess kurtosis = kurtosis - 3."
+        "text": "the total probability rule is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "Probability of event A expressed as weighted sum across all mutually exclusive scenarios."
+        "text": "Probability of event A expressed as weighted sum across all mutually exclusive scenarios"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Probability of event A expressed as weighted sum across all mutually exclusive scenarios. Formula: $$P(A) = \\sum_{i=1}^{n} P(A|S_i) \\times P(S_i)$$ Example: P(default|recession)=0.4, P(recession)=0.3, P(default|expansion)=0.05, P(expansion)=0.7 → P(default) = 0.4×0.3 + 0.05×0.7 = 0.155",
     "distractorExplanations": {
-      "a": "95% CI uses z=1.96. 90% CI uses z=1.645. 99% CI uses z=2.576. Wider CI = more confident but less precise.",
-      "b": "Symmetric distribution: skewness = 0. Negative skew = more extreme negative outcomes than positive.",
-      "c": "Leptokurtic = fat tails = more crash risk. Platykurtic = thin tails. CFA exam: excess kurtosis > 0 means MORE extreme outcomes."
+      "a": "This statement is false about the total probability rule and does not match the correct definition.",
+      "b": "This statement is false about the total probability rule and does not match the correct definition.",
+      "c": "This statement is false about the total probability rule and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-1).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-1). · Local QA repair (stems/distractors)",
     "formula": "$$P(A) = \\sum_{i=1}^{n} P(A|S_i) \\times P(S_i)$$"
   },
   {
@@ -681,30 +681,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Direct quote: domestic currency per unit of foreign currency (DC/FC). Indirect quote: foreign currency per unit of domestic (FC/DC). They are reciprocals."
+        "text": "Direct quote: domestic currency per unit of foreign currency (DC/FC)"
       },
       {
         "id": "b",
-        "text": "A high-water mark prevents a manager from earning incentive fees on gains that merely recover prior losses."
+        "text": "the difference between direct and indirect exchange rate quotes always eliminates all investment, legal, and regulatory risk for every cust…"
       },
       {
         "id": "c",
-        "text": "A defined contribution plan specifies contributions, while retirement outcome depends on investment performance; investment risk largely belongs to participants."
+        "text": "the difference between direct and indirect exchange rate quotes has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "A European call must be worth at least stock price minus discounted strike, or zero if that value is negative."
+        "text": "the difference between direct and indirect exchange rate quotes is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Direct quote: domestic currency per unit of foreign currency (DC/FC). Indirect quote: foreign currency per unit of domestic (FC/DC). They are reciprocals. Formula: $$Direct = \\frac{1}{Indirect}$$ Example: US perspective: direct quote = USD/EUR = 1.10 (pay $1.10 per €1). Indirect = EUR/USD = 0.909 (€0.909 per $1)",
     "distractorExplanations": {
-      "b": "Ignoring the previous peak NAV.",
-      "c": "Assuming the sponsor guarantees retirement income.",
-      "d": "Using intrinsic value S0-K as the European lower bound without discounting."
+      "b": "This statement is false about the difference between direct and indirect exchange rate quotes and does not match the correct definition.",
+      "c": "This statement is false about the difference between direct and indirect exchange rate quotes and does not match the correct definition.",
+      "d": "This statement is false about the difference between direct and indirect exchange rate quotes and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_markets_ported.csv, FMP-9).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_markets_ported.csv, FMP-9). · Local QA repair (stems/distractors)",
     "formula": "$$Direct = \\frac{1}{Indirect}$$"
   },
   {
@@ -715,30 +715,30 @@
     "options": [
       {
         "id": "a",
-        "text": "APT is a multifactor asset-pricing model where expected return is driven by exposures to systematic factors. It relies on no-arbitrage rather than the single market portfolio of CAPM."
+        "text": "business continuity planning always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Business continuity planning prepares the firm to maintain or restore critical operations during disruptions."
+        "text": "Business continuity planning prepares the firm to maintain or restore critical operations during disruptions"
       },
       {
         "id": "c",
-        "text": "Leverage magnifies gains and losses; if equity falls below maintenance margin, the investor faces a margin call or forced sale."
+        "text": "business continuity planning has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "CDO pools debt instruments and issues tranches with different risk/return. Senior tranches: first loss protection, lowest yield. Equity tranche: absorbs first losses, highest yield."
+        "text": "business continuity planning is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Business continuity planning prepares the firm to maintain or restore critical operations during disruptions. Example: A trading firm needs backup sites, data recovery, and communication plans.",
     "distractorExplanations": {
-      "a": "Thinking APT identifies the correct factors automatically.",
-      "c": "Focusing on asset return while ignoring leverage.",
-      "d": "CDOs create investment grade securities from subprime assets via tranching — this was central to 2008 crisis. Correlation assumptions were key flaw."
+      "a": "This statement is false about business continuity planning and does not match the correct definition.",
+      "c": "This statement is false about business continuity planning and does not match the correct definition.",
+      "d": "This statement is false about business continuity planning and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, VRM-7)."
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, VRM-7). · Local QA repair (stems/distractors)"
   },
   {
     "id": "frm-part-1-readiness-check-financial-markets-003",
@@ -748,30 +748,30 @@
     "options": [
       {
         "id": "a",
-        "text": "A derivative is a financial contract whose value depends on an underlying asset, rate, index, event, or variable. Derivatives can be used for hedging, speculation, arbitrage, or risk transfer."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Losses became systemic because leverage, short-term funding, derivatives, securitization opacity, common exposures, and counterparty links transmitted shocks across institutions."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Sensitivity analysis changes one or a few risk factors mechanically; scenario analysis links multiple moves through an economic narrative."
+        "text": "Sensitivity analysis changes one or a few risk factors mechanically; scenario analysis links multiple moves through an economic narrative"
       },
       {
         "id": "d",
-        "text": "Yield difference between corporate and government bond of same maturity — compensates for credit risk (default probability and loss given default)."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Sensitivity analysis changes one or a few risk factors mechanically; scenario analysis links multiple moves through an economic narrative. Example: A +100 bp rate shock is sensitivity; stagflation with spread widening and FX moves is scenario.",
     "distractorExplanations": {
-      "a": "Treating derivatives as inherently speculative. The same instrument can hedge or speculate depending on use.",
-      "b": "Treating the crisis as isolated loan defaults rather than networked balance-sheet stress.",
-      "d": "Credit spreads widen in recessions (higher default risk) and tighten in expansions. Credit spread ≠ CDS spread (though correlated)."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, VRM-8)."
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, VRM-8). · Local QA repair (stems/distractors)"
   },
   {
     "id": "frm-part-1-readiness-check-financial-markets-004",
@@ -781,30 +781,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Antithetic variates reduce simulation variance by pairing random draws with opposite draws to offset noise."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "A hedge matched on total duration may still lose if exposures are concentrated at different curve maturities."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "A KRI is a metric used to monitor operational risk exposure or control weakness before losses occur."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "Derivatives can create market, counterparty, liquidity, basis, model, operational, legal, and wrong-way risks, especially with leverage or complex payoff structures."
+        "text": "Derivatives can create market, counterparty, liquidity, basis, model, operational, legal, and wrong-way risks, especially with leverage or…"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Derivatives can create market, counterparty, liquidity, basis, model, operational, legal, and wrong-way risks, especially with leverage or complex payoff structures. Example: A swap hedge can reduce rate risk but introduce counterparty exposure and collateral liquidity needs.",
     "distractorExplanations": {
-      "a": "Thinking antithetic variates remove model error.",
-      "b": "Matching total DV01 and ignoring key rate exposures.",
-      "c": "Using KRIs without thresholds or escalation actions."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, FMP-4)."
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, FMP-4). · Local QA repair (stems/distractors)"
   },
   {
     "id": "frm-part-1-readiness-check-financial-markets-005",
@@ -814,30 +814,30 @@
     "options": [
       {
         "id": "a",
-        "text": "If alpha plus beta is less than one, volatility tends to revert toward a long-run variance after shocks."
+        "text": "If alpha plus beta is less than one, volatility tends to revert toward a long-run variance after shocks"
       },
       {
         "id": "b",
-        "text": "Including an irrelevant regressor generally does not bias other coefficients, but it can increase variance and reduce precision."
+        "text": "mean reversion mean in GARCH volatility always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "A unit root means shocks have permanent effects and the series is non-stationary. In AR(1), it occurs when phi equals 1."
+        "text": "mean reversion mean in GARCH volatility has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "A special purpose vehicle is a legal entity that holds pooled assets and issues securities, aiming to isolate assets from the originator’s bankruptcy risk."
+        "text": "mean reversion mean in GARCH volatility is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "If alpha plus beta is less than one, volatility tends to revert toward a long-run variance after shocks. Formula: $$Long\\ run\\ variance=\\frac{\\omega}{1-\\alpha-\\beta}$$ Example: After a crisis shock, forecast volatility decays gradually if the process is mean reverting.",
     "distractorExplanations": {
-      "b": "Thinking irrelevant variables always create bias.",
-      "c": "Assuming high persistence is always stationarity.",
-      "d": "Assuming SPV isolation removes asset quality risk."
+      "b": "This statement is false about mean reversion mean in GARCH volatility and does not match the correct definition.",
+      "c": "This statement is false about mean reversion mean in GARCH volatility and does not match the correct definition.",
+      "d": "This statement is false about mean reversion mean in GARCH volatility and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, VRM-3).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, VRM-3). · Local QA repair (stems/distractors)",
     "formula": "$$Long\\ run\\ variance=\\frac{\\omega}{1-\\alpha-\\beta}$$"
   },
   {
@@ -848,30 +848,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Event types include internal fraud, external fraud, employment practices, clients/products/business practices, damage to physical assets, business disruption, and execution/process failures."
+        "text": "a plain vanilla interest rate swap always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Agreement to exchange fixed interest payments for floating payments (or vice versa) on notional principal. No exchange of principal."
+        "text": "Agreement to exchange fixed interest payments for floating payments (or vice versa) on notional principal"
       },
       {
         "id": "c",
-        "text": "Default correlation drives portfolio tail risk because borrowers may default together in economic downturns."
+        "text": "a plain vanilla interest rate swap has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Futures gains and losses are settled daily through margin accounts based on price changes."
+        "text": "a plain vanilla interest rate swap is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Agreement to exchange fixed interest payments for floating payments (or vice versa) on notional principal. No exchange of principal. Formula: $$Net\\ Payment = (r_{fixed} - r_{float}) \\times NP \\times \\frac{days}{360}$$ Example: Notional $10M, pay fixed 5%, receive SOFR. SOFR resets at 4% → net payment = (5%-4%) × 10M × 0.5 = $50,000 (pay net)",
     "distractorExplanations": {
-      "a": "Classifying all large losses as market or credit risk.",
-      "c": "Assuming diversification works if loans have different names but same macro exposure.",
-      "d": "Thinking futures P&L is settled only at contract maturity."
+      "a": "This statement is false about a plain vanilla interest rate swap and does not match the correct definition.",
+      "c": "This statement is false about a plain vanilla interest rate swap and does not match the correct definition.",
+      "d": "This statement is false about a plain vanilla interest rate swap and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_markets_ported.csv, FMP-20).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_markets_ported.csv, FMP-20). · Local QA repair (stems/distractors)",
     "formula": "$$Net\\ Payment = (r_{fixed} - r_{float}) \\times NP \\times \\frac{days}{360}$$"
   },
   {
@@ -882,30 +882,30 @@
     "options": [
       {
         "id": "a",
-        "text": "A unit root means shocks have permanent effects and the series is non-stationary. In AR(1), it occurs when phi equals 1."
+        "text": "the FX carry trade always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Economic capital is the bank’s internal capital estimate for risk; regulatory capital is the minimum required by supervisors. Both affect risk appetite and business decisions."
+        "text": "the FX carry trade has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Borrow low-rate currency, invest in high-rate currency — earns interest differential. Profitable if exchange rate doesn't move against you."
+        "text": "Borrow low-rate currency, invest in high-rate currency — earns interest differential"
       },
       {
         "id": "d",
-        "text": "Lease rate is the return from lending a commodity and can reduce the forward price like an income yield."
+        "text": "the FX carry trade is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Borrow low-rate currency, invest in high-rate currency — earns interest differential. Profitable if exchange rate doesn't move against you. Formula: $$Profit = r_{high} - r_{low} - \\Delta e$$ Example: Borrow JPY at 0.1%, invest AUD at 4% → earn 3.9% if AUD/JPY stable. But if JPY appreciates → unwind carry trade → JPY spikes",
     "distractorExplanations": {
-      "a": "Assuming high persistence is always stationarity.",
-      "b": "Treating regulatory capital as a complete measure of risk.",
-      "d": "Ignoring lease rate when applying no-arbitrage."
+      "a": "This statement is false about the FX carry trade and does not match the correct definition.",
+      "b": "This statement is false about the FX carry trade and does not match the correct definition.",
+      "d": "This statement is false about the FX carry trade and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_markets_ported.csv, FMP-9).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_markets_ported.csv, FMP-9). · Local QA repair (stems/distractors)",
     "formula": "$$Profit = r_{high} - r_{low} - \\Delta e$$"
   },
   {
@@ -916,30 +916,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Sample averages converge toward expected values as sample size increases under appropriate assumptions."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Fat tails mean extreme outcomes occur more often than predicted by a normal distribution, making normal VaR underestimate tail risk."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Trees can check early exercise at each node, making them useful for options where exercise before maturity may be optimal."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "Pay-fixed swap = long floating rate bond + short fixed-rate bond. Receive-fixed swap = long fixed-rate bond + short floating-rate bond."
+        "text": "Pay-fixed swap = long floating rate bond + short fixed-rate bond"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Pay-fixed swap = long floating rate bond + short fixed-rate bond. Receive-fixed swap = long fixed-rate bond + short floating-rate bond. Formula: $$V_{swap} = B_{float} - B_{fixed}$$ Example: Pay-fixed swap: equivalent to borrowing at fixed rate and investing at floating rate. Receive-fixed: borrow floating, invest fixed",
     "distractorExplanations": {
-      "a": "Assuming LLN fixes biased or non-representative data.",
-      "b": "Relying on standard deviation alone for tail risk.",
-      "c": "Applying European Black-Scholes directly to American exercise decisions."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_markets_ported.csv, FMP-20).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_markets_ported.csv, FMP-20). · Local QA repair (stems/distractors)",
     "formula": "$$V_{swap} = B_{float} - B_{fixed}$$"
   },
   {
@@ -950,30 +950,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Cyber risk is operational risk from failures or attacks on information systems, data, authentication, and digital infrastructure."
+        "text": "Cyber risk is operational risk from failures or attacks on information systems, data, authentication, and digital infrastructure"
       },
       {
         "id": "b",
-        "text": "An estimator is a rule or formula using sample data; an estimate is the numerical value produced by applying it to a sample."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "Confirmation documents economic and legal terms of a swap, reducing operational and legal risk."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "A call cannot be worth more than the underlying stock because owning the call is never better than owning the stock outright in every state."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Cyber risk is operational risk from failures or attacks on information systems, data, authentication, and digital infrastructure. Example: A ransomware attack can halt trading or payments and create legal and reputational losses.",
     "distractorExplanations": {
-      "b": "Using the two terms interchangeably in inference questions.",
-      "c": "Treating verbal trade terms as sufficient.",
-      "d": "Ignoring arbitrage bounds when checking option prices."
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, VRM-7)."
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, VRM-7). · Local QA repair (stems/distractors)"
   },
   {
     "id": "frm-part-1-readiness-check-financial-markets-010",
@@ -983,30 +983,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Difference between a bond's YTM and the YTM of a benchmark Treasury of similar maturity. Crude measure of credit/liquidity premium."
+        "text": "vega risk always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Vega is sensitivity of option value to implied volatility. Option books can gain or lose from volatility changes even if the underlying price is unchanged."
+        "text": "Vega is sensitivity of option value to implied volatility"
       },
       {
         "id": "c",
-        "text": "Simulations use deterministic algorithms that mimic randomness. Seeds allow reproducibility, but poor generators can create patterns."
+        "text": "vega risk has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Sovereign risk is the risk that a national government defaults, restructures, inflates away debt, imposes controls, or otherwise harms creditors."
+        "text": "vega risk is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Vega is sensitivity of option value to implied volatility. Option books can gain or lose from volatility changes even if the underlying price is unchanged. Example: Long options generally benefit when implied volatility rises.",
     "distractorExplanations": {
-      "a": "Nominal spread ignores shape of yield curve — compares single yield points. Better measures: Z-spread, OAS.",
-      "c": "Believing pseudo-random output is truly random.",
-      "d": "Assuming governments cannot default because they tax."
+      "a": "This statement is false about vega risk and does not match the correct definition.",
+      "c": "This statement is false about vega risk and does not match the correct definition.",
+      "d": "This statement is false about vega risk and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, VRM-16)."
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, VRM-16). · Local QA repair (stems/distractors)"
   },
   {
     "id": "frm-part-1-readiness-check-financial-markets-011",
@@ -1016,30 +1016,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Cyber risk is operational risk from failures or attacks on information systems, data, authentication, and digital infrastructure."
+        "text": "a stress test always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Fundamental relationship between European call and put prices with same strike and expiry. Allows creation of synthetic positions."
+        "text": "a stress test has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "A stress test estimates portfolio or firm impact under severe but plausible conditions, often beyond normal VaR assumptions."
+        "text": "A stress test estimates portfolio or firm impact under severe but plausible conditions, often beyond normal VaR assumptions"
       },
       {
         "id": "d",
-        "text": "R-squared is the fraction of dependent-variable variation explained by the regression model."
+        "text": "a stress test is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "A stress test estimates portfolio or firm impact under severe but plausible conditions, often beyond normal VaR assumptions. Example: Shock rates, credit spreads, FX, and liquidity haircuts simultaneously.",
     "distractorExplanations": {
-      "a": "Treating cyber risk as only technology risk with no financial impact.",
-      "b": "Put-call parity for EUROPEAN options only. American options can violate it due to early exercise. Rearrange to find any missing price.",
-      "d": "Assuming high R² means causality or a good out-of-sample forecast."
+      "a": "This statement is false about a stress test and does not match the correct definition.",
+      "b": "This statement is false about a stress test and does not match the correct definition.",
+      "d": "This statement is false about a stress test and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, VRM-8)."
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, VRM-8). · Local QA repair (stems/distractors)"
   },
   {
     "id": "frm-part-1-readiness-check-financial-markets-012",
@@ -1049,30 +1049,30 @@
     "options": [
       {
         "id": "a",
-        "text": "A high-water mark prevents a manager from earning incentive fees on gains that merely recover prior losses."
+        "text": "the long-run mean of a stationary AR(1) always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "LGD is the percentage of exposure lost if default occurs after recoveries and costs."
+        "text": "the long-run mean of a stationary AR(1) has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Limit of compounding as frequency approaches infinity."
+        "text": "the long-run mean of a stationary AR(1) is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "For X_t = c + phi X_{t-1} + error with |phi| < 1, the long-run mean is c/(1-phi)."
+        "text": "For X_t = c + phi X_{t-1} + error with |phi| < 1, the long-run mean is c/(1-phi)"
       }
     ],
     "correctOptionId": "d",
     "explanation": "For X_t = c + phi X_{t-1} + error with |phi| < 1, the long-run mean is c/(1-phi). Formula: $$\\mu=\\frac{c}{1-\\phi}$$ Example: If c=2 and phi=0.8, mean-reverting level is 10.",
     "distractorExplanations": {
-      "a": "Ignoring the previous peak NAV.",
-      "b": "Confusing LGD with probability of default.",
-      "c": "Used heavily in derivatives pricing (Black-Scholes). e ≈ 2.71828."
+      "a": "This statement is false about the long-run mean of a stationary AR(1) and does not match the correct definition.",
+      "b": "This statement is false about the long-run mean of a stationary AR(1) and does not match the correct definition.",
+      "c": "This statement is false about the long-run mean of a stationary AR(1) and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, QA-10).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, QA-10). · Local QA repair (stems/distractors)",
     "formula": "$$\\mu=\\frac{c}{1-\\phi}$$"
   },
   {
@@ -1083,30 +1083,30 @@
     "options": [
       {
         "id": "a",
-        "text": "A lookback option payoff depends on the maximum or minimum underlying price observed during the option’s life."
+        "text": "A lookback option payoff depends on the maximum or minimum underlying price observed during the option’s life"
       },
       {
         "id": "b",
-        "text": "Underfitting occurs when a model is too simple to capture important structure, leading to poor performance both in-sample and out-of-sample."
+        "text": "a lookback option always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "Combined ratio equals loss ratio plus expense ratio. Below 100% indicates underwriting profit before investment income."
+        "text": "a lookback option has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "A hypothetical scenario is a forward-looking, plausible stress event designed from risk factors and narratives rather than copied from history."
+        "text": "a lookback option is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "A lookback option payoff depends on the maximum or minimum underlying price observed during the option’s life. Example: A lookback call may use the minimum observed price as effective strike.",
     "distractorExplanations": {
-      "b": "Responding to underfitting with more data only, when model form may be too simple.",
-      "c": "Forgetting that investment income can still affect overall profitability.",
-      "d": "Making hypothetical scenarios too mild to challenge the firm."
+      "b": "This statement is false about a lookback option and does not match the correct definition.",
+      "c": "This statement is false about a lookback option and does not match the correct definition.",
+      "d": "This statement is false about a lookback option and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, FMP-15)."
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, FMP-15). · Local QA repair (stems/distractors)"
   },
   {
     "id": "frm-part-1-readiness-check-financial-markets-014",
@@ -1116,30 +1116,30 @@
     "options": [
       {
         "id": "a",
-        "text": "A long hedge uses a long futures position to protect against an increase in the price of an asset to be purchased."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Call ITM: S > X. Call ATM: S = X. Call OTM: S < X. Put ITM: S < X. Put ATM: S = X. Put OTM: S > X."
+        "text": "Call ITM: S > X"
       },
       {
         "id": "c",
-        "text": "Longevity risk is the risk that people live longer than expected, increasing pension and annuity payments."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "The binomial distribution models the number of successes in n independent Bernoulli trials with the same success probability."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Call ITM: S > X. Call ATM: S = X. Call OTM: S < X. Put ITM: S < X. Put ATM: S = X. Put OTM: S > X. Formula: $$\\text{Call ITM} \\Leftrightarrow S > X; \\quad \\text{Put ITM} \\Leftrightarrow S < X$$ Example: Stock $52. Call X=$50: ITM by $2. Call X=$55: OTM by $3. Put X=$50: OTM. Put X=$55: ITM by $3",
     "distractorExplanations": {
-      "a": "Confusing hedge direction with current inventory.",
-      "c": "Thinking longer life always benefits insurers.",
-      "d": "Ignoring default correlation; credit defaults are often not independent."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_markets_ported.csv, FMP-12).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_markets_ported.csv, FMP-12). · Local QA repair (stems/distractors)",
     "formula": "$$\\text{Call ITM} \\Leftrightarrow S > X; \\quad \\text{Put ITM} \\Leftrightarrow S < X$$"
   },
   {
@@ -1150,30 +1150,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Adverse selection occurs when higher-risk policyholders are more likely to buy coverage because they know more about their risk than the insurer."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Sensitivity analysis changes one or a few risk factors mechanically; scenario analysis links multiple moves through an economic narrative."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Ridge uses an L2 penalty and shrinks coefficients toward zero. LASSO uses an L1 penalty and can set some coefficients exactly to zero."
+        "text": "Ridge uses an L2 penalty and shrinks coefficients toward zero"
       },
       {
         "id": "d",
-        "text": "Initial margin is collateral posted at trade initiation to cover potential future exposure over the close-out period."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Ridge uses an L2 penalty and shrinks coefficients toward zero. LASSO uses an L1 penalty and can set some coefficients exactly to zero. Example: LASSO can perform variable selection in a high-dimensional credit model.",
     "distractorExplanations": {
-      "a": "Confusing adverse selection with moral hazard after coverage begins.",
-      "b": "Calling every single-factor shock a scenario.",
-      "d": "Confusing initial margin with daily variation margin."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, QA-15)."
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, QA-15). · Local QA repair (stems/distractors)"
   },
   {
     "id": "frm-part-1-readiness-check-valuation-models-001",
@@ -1183,30 +1183,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Dollar Value of a 01 (1 basis point) — dollar price change for 1 bp move in yield. Used to size hedges."
+        "text": "the general formula for forward rates always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Callable bonds and mortgage-backed securities — when yields fall, issuer calls/prepays, limiting price appreciation. Price-yield curve bends backward above call price."
+        "text": "the general formula for forward rates has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "When YTM rises → bond price falls. When YTM falls → bond price rises. This relationship is convex, not linear."
+        "text": "the general formula for forward rates is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "Rate from period A to period B implied by spot rates of those maturities."
+        "text": "Rate from period A to period B implied by spot rates of those maturities"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Rate from period A to period B implied by spot rates of those maturities. Formula: $$f(A,B-A) = \\left[\\frac{(1+z_B)^B}{(1+z_A)^A}\\right]^{\\frac{1}{B-A}} - 1$$ Example: z₂=4%, z₅=6% → f(2,3) = [(1.06)⁵/(1.04)²]^(1/3) - 1 = 7.35%. The 3-year rate 2 years from now",
     "distractorExplanations": {
-      "a": "To hedge: match DV01 of position with offsetting instrument. Hedge ratio = DV01(position) / DV01(hedge instrument).",
-      "b": "Negative convexity is BAD for investors — price upside is capped. Investor receives higher yield as compensation for granting call option.",
-      "c": "Price-yield relationship is convex — price rises more when yields fall than it falls when yields rise by same amount. This is positive convexity."
+      "a": "This statement is false about the general formula for forward rates and does not match the correct definition.",
+      "b": "This statement is false about the general formula for forward rates and does not match the correct definition.",
+      "c": "This statement is false about the general formula for forward rates and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-9).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-9). · Local QA repair (stems/distractors)",
     "formula": "$$f(A,B-A) = \\left[\\frac{(1+z_B)^B}{(1+z_A)^A}\\right]^{\\frac{1}{B-A}} - 1$$"
   },
   {
@@ -1217,132 +1217,132 @@
     "options": [
       {
         "id": "a",
-        "text": "Macaulay Duration adjusted for yield level — measures % price change for 1% change in yield."
+        "text": "Macaulay Duration adjusted for yield level — measures % price change for 1% change in yield"
       },
       {
         "id": "b",
-        "text": "Add convexity adjustment to duration-based estimate for more accurate price change prediction."
+        "text": "Modified Duration always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "Rate from period A to period B implied by spot rates of those maturities."
+        "text": "Modified Duration has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Sensitivity of option price to change in risk-free interest rate. Positive for calls, negative for puts."
+        "text": "Modified Duration is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Macaulay Duration adjusted for yield level — measures % price change for 1% change in yield. Formula: $$D_{Mod} = \\frac{D_{Mac}}{1 + \\frac{YTM}{m}}$$ Example: Mac duration = 7.8, YTM = 6%, semi-annual (m=2) → D_Mod = 7.8 / (1 + 0.03) = 7.57. A 1% yield rise → price falls ≈ 7.57%",
     "distractorExplanations": {
-      "b": "Convexity adjustment is always POSITIVE (adds to price). Bonds with higher convexity are more valuable — price rises more / falls less.",
-      "c": "Notation: f(A,B) = forward rate starting A years from now for B years. CFA uses f(A*,B*) notation — know both.",
-      "d": "Rho least important Greek for short-dated options. Becomes significant for long-dated options (LEAPS). Put rho negative: higher rates hurt puts."
+      "b": "This statement is false about Modified Duration and does not match the correct definition.",
+      "c": "This statement is false about Modified Duration and does not match the correct definition.",
+      "d": "This statement is false about Modified Duration and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-12).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-12). · Local QA repair (stems/distractors)",
     "formula": "$$D_{Mod} = \\frac{D_{Mac}}{1 + \\frac{YTM}{m}}$$"
   },
   {
     "id": "frm-part-1-readiness-check-valuation-models-003",
     "examSlug": "frm-part-1-readiness-check",
     "topicId": "valuation-models",
-    "prompt": "Which statement correctly describes option gamma as tested in valuation and risk models?",
+    "prompt": "Which of the following best describes option gamma as tested on this exam?",
     "options": [
       {
         "id": "a",
-        "text": "Sensitivity of option price to change in risk-free interest rate. Positive for calls, negative for puts."
+        "text": "option gamma always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Rate of change of delta with respect to change in underlying price — curvature of option value. Always positive for long options."
+        "text": "Rate of change of delta with respect to change in underlying price — curvature of option value"
       },
       {
         "id": "c",
-        "text": "Second-order measure of price sensitivity — captures curvature of price-yield relationship. Always positive for standard bonds."
+        "text": "option gamma has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Pure Expectations: forward rates = expected future spot rates. Liquidity Preference: investors demand premium for longer maturities → upward bias. Market Segmentation: supply/demand in each maturity segment independentl…"
+        "text": "option gamma is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Rate of change of delta with respect to change in underlying price — curvature of option value. Always positive for long options. Formula: $$\\Gamma = \\frac{\\partial \\Delta}{\\partial S} = \\frac{\\partial^2 C}{\\partial S^2}$$ Example: Gamma = 0.05: if stock rises $1 → delta increases by 0.05. High gamma → delta changes fast → frequent rebalancing needed for delta-neutral hedge",
     "distractorExplanations": {
-      "a": "Rho least important Greek for short-dated options. Becomes significant for long-dated options (LEAPS). Put rho negative: higher rates hurt puts.",
-      "c": "Higher convexity = better. For same duration, higher convexity bond outperforms in both rising and falling yield environments.",
-      "d": "Pure expectations → flat curve if rates expected stable. Liquidity preference → upward sloping even if flat rate expectations."
+      "a": "This statement is false about option gamma and does not match the correct definition.",
+      "c": "This statement is false about option gamma and does not match the correct definition.",
+      "d": "This statement is false about option gamma and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-16).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-16). · Local QA repair (stems/distractors)",
     "formula": "$$\\Gamma = \\frac{\\partial \\Delta}{\\partial S} = \\frac{\\partial^2 C}{\\partial S^2}$$"
   },
   {
     "id": "frm-part-1-readiness-check-valuation-models-004",
     "examSlug": "frm-part-1-readiness-check",
     "topicId": "valuation-models",
-    "prompt": "Which statement correctly describes a par rate as tested in valuation and risk models?",
+    "prompt": "Which of the following best describes a par rate as tested on this exam?",
     "options": [
       {
         "id": "a",
-        "text": "IRR assuming bond is called at first call date at call price. Relevant for premium bonds likely to be called."
+        "text": "a par rate always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Rate of change of delta with respect to change in underlying price — curvature of option value. Always positive for long options."
+        "text": "a par rate has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Coupon rate that makes a bond price exactly equal to par value at a given maturity, given current spot rates. The YTM of a par bond."
+        "text": "Coupon rate that makes a bond price exactly equal to par value at a given maturity, given current spot rates"
       },
       {
         "id": "d",
-        "text": "Pure Expectations: forward rates = expected future spot rates. Liquidity Preference: investors demand premium for longer maturities → upward bias. Market Segmentation: supply/demand in each maturity segment independentl…"
+        "text": "a par rate is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Coupon rate that makes a bond price exactly equal to par value at a given maturity, given current spot rates. The YTM of a par bond. Formula: $$1 = \\sum_{t=1}^{n} \\frac{c/2}{(1+z_t/2)^t} + \\frac{1}{(1+z_n/2)^n}$$ Example: If 1-year spot=4%, 2-year spot=5% → find coupon c such that bond prices at par. Solve: c ≈ 4.97%",
     "distractorExplanations": {
-      "a": "For premium bonds: YTC < YTM (call likely). Investor should use lower of YTM/YTC = yield to worst (YTW).",
-      "b": "Gamma highest ATM, near expiry. Long options: long gamma (good — price increase more than linear). Short options: short gamma (bad — exposure to large moves).",
-      "d": "Pure expectations → flat curve if rates expected stable. Liquidity preference → upward sloping even if flat rate expectations."
+      "a": "This statement is false about a par rate and does not match the correct definition.",
+      "b": "This statement is false about a par rate and does not match the correct definition.",
+      "d": "This statement is false about a par rate and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-10).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-10). · Local QA repair (stems/distractors)",
     "formula": "$$1 = \\sum_{t=1}^{n} \\frac{c/2}{(1+z_t/2)^t} + \\frac{1}{(1+z_n/2)^n}$$"
   },
   {
     "id": "frm-part-1-readiness-check-valuation-models-005",
     "examSlug": "frm-part-1-readiness-check",
     "topicId": "valuation-models",
-    "prompt": "Which statement correctly describes option rho as tested in valuation and risk models?",
+    "prompt": "Which of the following best describes option rho as tested on this exam?",
     "options": [
       {
         "id": "a",
-        "text": "Rate from period A to period B implied by spot rates of those maturities."
+        "text": "option rho always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Coupon rate that makes a bond price exactly equal to par value at a given maturity, given current spot rates. The YTM of a par bond."
+        "text": "option rho has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Dollar Value of a 01 (1 basis point) — dollar price change for 1 bp move in yield. Used to size hedges."
+        "text": "option rho is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "Sensitivity of option price to change in risk-free interest rate. Positive for calls, negative for puts."
+        "text": "Sensitivity of option price to change in risk-free interest rate"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Sensitivity of option price to change in risk-free interest rate. Positive for calls, negative for puts. Formula: $$\\rho = \\frac{\\partial C}{\\partial r}$$ Example: Rho = 0.12: if risk-free rate rises 1% → call price rises $0.12. Long-dated options have higher rho (more sensitive to rate changes)",
     "distractorExplanations": {
-      "a": "Notation: f(A,B) = forward rate starting A years from now for B years. CFA uses f(A*,B*) notation — know both.",
-      "b": "Par rates, spot rates, and forward rates contain identical information — one can be derived from any other. CFA tests all three conversions.",
-      "c": "To hedge: match DV01 of position with offsetting instrument. Hedge ratio = DV01(position) / DV01(hedge instrument)."
+      "a": "This statement is false about option rho and does not match the correct definition.",
+      "b": "This statement is false about option rho and does not match the correct definition.",
+      "c": "This statement is false about option rho and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-16).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-16). · Local QA repair (stems/distractors)",
     "formula": "$$\\rho = \\frac{\\partial C}{\\partial r}$$"
   },
   {
@@ -1353,30 +1353,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Investment strategy where asset portfolio is constructed to match (or exceed) value and duration of specific liabilities — pension funds key users."
+        "text": "Investment strategy where asset portfolio is constructed to match (or exceed) value and duration of specific liabilities — pension funds ke…"
       },
       {
         "id": "b",
-        "text": "Pure Expectations: forward rates = expected future spot rates. Liquidity Preference: investors demand premium for longer maturities → upward bias. Market Segmentation: supply/demand in each maturity segment independentl…"
+        "text": "liability-driven investing always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "Interest earned since last coupon payment but not yet paid. Buyer pays seller accrued interest on top of quoted (clean) price."
+        "text": "liability-driven investing has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Approximate percentage price change for a given change in yield."
+        "text": "liability-driven investing is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Investment strategy where asset portfolio is constructed to match (or exceed) value and duration of specific liabilities — pension funds key users. Formula: $$\\frac{\\Delta Assets}{\\Delta r} \\approx \\frac{\\Delta Liabilities}{\\Delta r}$$ Example: Pension fund with PV liabilities = $500M, duration = 12. Must build asset portfolio with PV ≥ $500M and duration ≈ 12 to hedge interest rate risk",
     "distractorExplanations": {
-      "b": "Pure expectations → flat curve if rates expected stable. Liquidity preference → upward sloping even if flat rate expectations.",
-      "c": "Clean price = quoted price (no AI). Dirty/full price = what you actually pay. Exam quotes clean price; you pay full/dirty price.",
-      "d": "Duration underestimates price increase and overestimates price decrease for large moves. Always add convexity adjustment for accuracy."
+      "b": "This statement is false about liability-driven investing and does not match the correct definition.",
+      "c": "This statement is false about liability-driven investing and does not match the correct definition.",
+      "d": "This statement is false about liability-driven investing and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-12).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-12). · Local QA repair (stems/distractors)",
     "formula": "$$\\frac{\\Delta Assets}{\\Delta r} \\approx \\frac{\\Delta Liabilities}{\\Delta r}$$"
   },
   {
@@ -1387,30 +1387,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Rate of change of option price with respect to time — time decay. Always negative for long options (option loses value as time passes)."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Callable bonds and mortgage-backed securities — when yields fall, issuer calls/prepays, limiting price appreciation. Price-yield curve bends backward above call price."
+        "text": "Callable bonds and mortgage-backed securities — when yields fall, issuer calls/prepays, limiting price appreciation"
       },
       {
         "id": "c",
-        "text": "Sensitivity of option price to change in implied volatility. Always positive for long options (both calls and puts)."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Pure Expectations: forward rates = expected future spot rates. Liquidity Preference: investors demand premium for longer maturities → upward bias. Market Segmentation: supply/demand in each maturity segment independentl…"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Callable bonds and mortgage-backed securities — when yields fall, issuer calls/prepays, limiting price appreciation. Price-yield curve bends backward above call price. Formula: $$\\text{Callable bond price} = \\text{Straight bond} - \\text{Call option value}$$ Example: As yields fall below coupon rate, callable bond price stalls near call price while non-callable bond keeps rising → price-yield curve flattens/turns negative",
     "distractorExplanations": {
-      "a": "Long options: negative theta (you pay time decay). Short options: positive theta (you earn time decay). Theta-gamma tradeoff: long gamma, short theta.",
-      "c": "Vega highest ATM, longest tenor. Long options = long vega (want more volatility). Short options = short vega. Vega is NOT a Greek letter — sometimes called kappa.",
-      "d": "Pure expectations → flat curve if rates expected stable. Liquidity preference → upward sloping even if flat rate expectations."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-12).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-12). · Local QA repair (stems/distractors)",
     "formula": "$$\\text{Callable bond price} = \\text{Straight bond} - \\text{Call option value}$$"
   },
   {
@@ -1421,30 +1421,30 @@
     "options": [
       {
         "id": "a",
-        "text": "IRR assuming bond is called at first call date at call price. Relevant for premium bonds likely to be called."
+        "text": "the main components of interest rate risk for bonds always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Weighted average of individual bond durations, weights = market value proportions."
+        "text": "the main components of interest rate risk for bonds has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Price risk: bond price falls when rates rise (affects holders who sell before maturity). Reinvestment risk: coupons reinvested at lower rates when rates fall. These risks offset each other."
+        "text": "Price risk: bond price falls when rates rise (affects holders who sell before maturity)"
       },
       {
         "id": "d",
-        "text": "When YTM rises → bond price falls. When YTM falls → bond price rises. This relationship is convex, not linear."
+        "text": "the main components of interest rate risk for bonds is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Price risk: bond price falls when rates rise (affects holders who sell before maturity). Reinvestment risk: coupons reinvested at lower rates when rates fall. These risks offset each other. Formula: $$\\text{If horizon} < \\text{Duration: price risk dominates}$$ Example: Duration immunization: set portfolio duration = investment horizon → price risk and reinvestment risk exactly offset → target return locked regardless of rate changes",
     "distractorExplanations": {
-      "a": "For premium bonds: YTC < YTM (call likely). Investor should use lower of YTM/YTC = yield to worst (YTW).",
-      "b": "Portfolio duration is value-weighted average. To change portfolio duration: add/remove longer or shorter bonds or use derivatives.",
-      "d": "Price-yield relationship is convex — price rises more when yields fall than it falls when yields rise by same amount. This is positive convexity."
+      "a": "This statement is false about the main components of interest rate risk for bonds and does not match the correct definition.",
+      "b": "This statement is false about the main components of interest rate risk for bonds and does not match the correct definition.",
+      "d": "This statement is false about the main components of interest rate risk for bonds and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-12).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-12). · Local QA repair (stems/distractors)",
     "formula": "$$\\text{If horizon} < \\text{Duration: price risk dominates}$$"
   },
   {
@@ -1455,30 +1455,30 @@
     "options": [
       {
         "id": "a",
-        "text": "IRR assuming bond is called at first call date at call price. Relevant for premium bonds likely to be called."
+        "text": "a forward rate always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Yield on a zero-coupon bond for a specific maturity — the pure time-value rate for that horizon. The building block of bond valuation."
+        "text": "a forward rate has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Sensitivity of option price to change in implied volatility. Always positive for long options (both calls and puts)."
+        "text": "a forward rate is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "Interest rate for a future period implied by current spot rates — the break-even rate between investing now vs rolling over."
+        "text": "Interest rate for a future period implied by current spot rates — the break-even rate between investing now vs rolling over"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Interest rate for a future period implied by current spot rates — the break-even rate between investing now vs rolling over. Formula: $$(1+z_2)^2 = (1+z_1)(1+f_{1,1})$$ Example: z₁=4%, z₂=5% → (1.05)² = (1.04)(1+f) → f = (1.05²/1.04)-1 = 6.01%. The 1-year rate 1 year from now implied by current rates",
     "distractorExplanations": {
-      "a": "For premium bonds: YTC < YTM (call likely). Investor should use lower of YTM/YTC = yield to worst (YTW).",
-      "b": "Spot rates are bootstrapped from coupon bond prices. Each spot rate is unique to its maturity — unlike YTM which blends multiple periods.",
-      "c": "Vega highest ATM, longest tenor. Long options = long vega (want more volatility). Short options = short vega. Vega is NOT a Greek letter — sometimes called kappa."
+      "a": "This statement is false about a forward rate and does not match the correct definition.",
+      "b": "This statement is false about a forward rate and does not match the correct definition.",
+      "c": "This statement is false about a forward rate and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-9).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-9). · Local QA repair (stems/distractors)",
     "formula": "$$(1+z_2)^2 = (1+z_1)(1+f_{1,1})$$"
   },
   {
@@ -1489,166 +1489,166 @@
     "options": [
       {
         "id": "a",
-        "text": "When YTM rises → bond price falls. When YTM falls → bond price rises. This relationship is convex, not linear."
+        "text": "When YTM rises → bond price falls"
       },
       {
         "id": "b",
-        "text": "For discount bond: coupon rate < current yield < YTM. For premium bond: coupon rate > current yield > YTM. For par bond: all three equal."
+        "text": "the inverse relationship between bond price and yield always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "Yield on a zero-coupon bond for a specific maturity — the pure time-value rate for that horizon. The building block of bond valuation."
+        "text": "the inverse relationship between bond price and yield has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Price risk: bond price falls when rates rise (affects holders who sell before maturity). Reinvestment risk: coupons reinvested at lower rates when rates fall. These risks offset each other."
+        "text": "the inverse relationship between bond price and yield is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "When YTM rises → bond price falls. When YTM falls → bond price rises. This relationship is convex, not linear. Formula: $$\\frac{dP}{dr} < 0$$ Example: Bond priced at par ($1,000) when coupon = YTM. YTM rises from 5% to 6% → price falls below par (discount bond)",
     "distractorExplanations": {
-      "b": "This ordering is a common exam question. Memorize: discount bond investor gains toward par → YTM > CY. Premium bond loses to par → YTM < CY.",
-      "c": "Spot rates are bootstrapped from coupon bond prices. Each spot rate is unique to its maturity — unlike YTM which blends multiple periods.",
-      "d": "Price risk and reinvestment risk move in opposite directions. Duration = horizon → immunized. If rates rise: price falls but reinvestment income rises; net effect = zero."
+      "b": "This statement is false about the inverse relationship between bond price and yield and does not match the correct definition.",
+      "c": "This statement is false about the inverse relationship between bond price and yield and does not match the correct definition.",
+      "d": "This statement is false about the inverse relationship between bond price and yield and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-11).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-11). · Local QA repair (stems/distractors)",
     "formula": "$$\\frac{dP}{dr} < 0$$"
   },
   {
     "id": "frm-part-1-readiness-check-valuation-models-011",
     "examSlug": "frm-part-1-readiness-check",
     "topicId": "valuation-models",
-    "prompt": "Which statement correctly describes option theta as tested in valuation and risk models?",
+    "prompt": "Which of the following best describes option theta as tested on this exam?",
     "options": [
       {
         "id": "a",
-        "text": "Continuous trading, no transaction costs, constant volatility, lognormal returns, European option, known constant risk-free rate, no dividends."
+        "text": "option theta always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Rate of change of option price with respect to time — time decay. Always negative for long options (option loses value as time passes)."
+        "text": "Rate of change of option price with respect to time — time decay"
       },
       {
         "id": "c",
-        "text": "Dollar Value of a 01 (1 basis point) — dollar price change for 1 bp move in yield. Used to size hedges."
+        "text": "option theta has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Interest rate for a future period implied by current spot rates — the break-even rate between investing now vs rolling over."
+        "text": "option theta is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Rate of change of option price with respect to time — time decay. Always negative for long options (option loses value as time passes). Formula: $$\\Theta = \\frac{\\partial C}{\\partial t} < 0$$ Example: Theta = -$0.05/day: option loses $0.05 of value per day, all else equal. Accelerates near expiry for ATM options",
     "distractorExplanations": {
-      "a": "BSM assumes constant volatility — reality shows volatility smile/skew. BSM overprices OTM puts (fat tails) and misprices near expiry.",
-      "c": "To hedge: match DV01 of position with offsetting instrument. Hedge ratio = DV01(position) / DV01(hedge instrument).",
-      "d": "Forward rates are NOT forecasts of future rates — they are break-even rates. If actual future rate > forward rate → rolling over beats long bond."
+      "a": "This statement is false about option theta and does not match the correct definition.",
+      "c": "This statement is false about option theta and does not match the correct definition.",
+      "d": "This statement is false about option theta and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-16).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-16). · Local QA repair (stems/distractors)",
     "formula": "$$\\Theta = \\frac{\\partial C}{\\partial t} < 0$$"
   },
   {
     "id": "frm-part-1-readiness-check-valuation-models-012",
     "examSlug": "frm-part-1-readiness-check",
     "topicId": "valuation-models",
-    "prompt": "Which statement correctly describes convexity as tested in valuation and risk models?",
+    "prompt": "Which of the following best describes convexity as tested on this exam?",
     "options": [
       {
         "id": "a",
-        "text": "Continuous trading, no transaction costs, constant volatility, lognormal returns, European option, known constant risk-free rate, no dividends."
+        "text": "convexity always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Matching portfolio duration to investment horizon so that price risk and reinvestment risk offset — locks in target return regardless of parallel yield curve shifts."
+        "text": "convexity has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Second-order measure of price sensitivity — captures curvature of price-yield relationship. Always positive for standard bonds."
+        "text": "Second-order measure of price sensitivity — captures curvature of price-yield relationship"
       },
       {
         "id": "d",
-        "text": "Dollar Value of a 01 (1 basis point) — dollar price change for 1 bp move in yield. Used to size hedges."
+        "text": "convexity is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Second-order measure of price sensitivity — captures curvature of price-yield relationship. Always positive for standard bonds. Formula: $$Convexity \\approx \\frac{P_+ + P_- - 2P_0}{P_0 \\times (\\Delta r)^2}$$ Example: P₀=$1000, P+(Δr=+1bp)=$999.25, P-(Δr=-1bp)=$1000.76 → Convexity = (999.25+1000.76-2000) / (1000×0.0001²) = 10",
     "distractorExplanations": {
-      "a": "BSM assumes constant volatility — reality shows volatility smile/skew. BSM overprices OTM puts (fat tails) and misprices near expiry.",
-      "b": "Immunization works for ONE parallel shift. Must rebalance as duration changes over time. Doesn't protect against non-parallel shifts or large moves.",
-      "d": "To hedge: match DV01 of position with offsetting instrument. Hedge ratio = DV01(position) / DV01(hedge instrument)."
+      "a": "This statement is false about convexity and does not match the correct definition.",
+      "b": "This statement is false about convexity and does not match the correct definition.",
+      "d": "This statement is false about convexity and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-12).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-12). · Local QA repair (stems/distractors)",
     "formula": "$$Convexity \\approx \\frac{P_+ + P_- - 2P_0}{P_0 \\times (\\Delta r)^2}$$"
   },
   {
     "id": "frm-part-1-readiness-check-valuation-models-013",
     "examSlug": "frm-part-1-readiness-check",
     "topicId": "valuation-models",
-    "prompt": "Which statement correctly describes yield to call as tested in valuation and risk models?",
+    "prompt": "Which of the following best describes yield to call as tested on this exam?",
     "options": [
       {
         "id": "a",
-        "text": "When YTM rises → bond price falls. When YTM falls → bond price rises. This relationship is convex, not linear."
+        "text": "yield to call always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Macaulay Duration adjusted for yield level — measures % price change for 1% change in yield."
+        "text": "yield to call has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Sensitivity of bond price to change in yield at a specific maturity point on the yield curve — captures non-parallel yield curve shifts."
+        "text": "yield to call is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "IRR assuming bond is called at first call date at call price. Relevant for premium bonds likely to be called."
+        "text": "IRR assuming bond is called at first call date at call price"
       }
     ],
     "correctOptionId": "d",
     "explanation": "IRR assuming bond is called at first call date at call price. Relevant for premium bonds likely to be called. Formula: $$P = \\sum_{t=1}^{T_c} \\frac{C}{(1+YTC)^t} + \\frac{Call\\ Price}{(1+YTC)^{T_c}}$$ Example: Bond priced at $1,080, 7% coupon, callable in 3 years at $1,050 → solve for YTC ≈ 5.4%",
     "distractorExplanations": {
-      "a": "Price-yield relationship is convex — price rises more when yields fall than it falls when yields rise by same amount. This is positive convexity.",
-      "b": "Modified duration gives LINEAR approximation. Actual price change is curved (convex) — add convexity adjustment for large yield changes.",
-      "c": "Full duration assumes parallel shift. Key rate durations sum to approximately modified duration. Used for curve positioning."
+      "a": "This statement is false about yield to call and does not match the correct definition.",
+      "b": "This statement is false about yield to call and does not match the correct definition.",
+      "c": "This statement is false about yield to call and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-11).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-11). · Local QA repair (stems/distractors)",
     "formula": "$$P = \\sum_{t=1}^{T_c} \\frac{C}{(1+YTC)^t} + \\frac{Call\\ Price}{(1+YTC)^{T_c}}$$"
   },
   {
     "id": "frm-part-1-readiness-check-valuation-models-014",
     "examSlug": "frm-part-1-readiness-check",
     "topicId": "valuation-models",
-    "prompt": "Which statement correctly describes a spot rate as tested in valuation and risk models?",
+    "prompt": "Which of the following best describes a spot rate as tested on this exam?",
     "options": [
       {
         "id": "a",
-        "text": "Yield on a zero-coupon bond for a specific maturity — the pure time-value rate for that horizon. The building block of bond valuation."
+        "text": "Yield on a zero-coupon bond for a specific maturity — the pure time-value rate for that horizon"
       },
       {
         "id": "b",
-        "text": "Rate of change of option price with respect to change in underlying price. Call delta: 0 to +1. Put delta: -1 to 0."
+        "text": "a spot rate always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "Sensitivity of bond price to change in yield at a specific maturity point on the yield curve — captures non-parallel yield curve shifts."
+        "text": "a spot rate has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Continuous trading, no transaction costs, constant volatility, lognormal returns, European option, known constant risk-free rate, no dividends."
+        "text": "a spot rate is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Yield on a zero-coupon bond for a specific maturity — the pure time-value rate for that horizon. The building block of bond valuation. Formula: $$P_{zero} = \\frac{FV}{(1+z_n)^n}$$ Example: 2-year spot rate z₂ = 5% → price of 2-year zero = 1000/(1.05)² = $907.03",
     "distractorExplanations": {
-      "b": "Delta of long call = +0.6, long put = -0.4, long stock = +1, short stock = -1. Delta-neutral hedge: buy stock + sell calls such that total delta = 0.",
-      "c": "Full duration assumes parallel shift. Key rate durations sum to approximately modified duration. Used for curve positioning.",
-      "d": "BSM assumes constant volatility — reality shows volatility smile/skew. BSM overprices OTM puts (fat tails) and misprices near expiry."
+      "b": "This statement is false about a spot rate and does not match the correct definition.",
+      "c": "This statement is false about a spot rate and does not match the correct definition.",
+      "d": "This statement is false about a spot rate and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-9).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-9). · Local QA repair (stems/distractors)",
     "formula": "$$P_{zero} = \\frac{FV}{(1+z_n)^n}$$"
   },
   {
@@ -1659,30 +1659,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Rate of change of option price with respect to time — time decay. Always negative for long options (option loses value as time passes)."
+        "text": "Macaulay Duration always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Weighted average time to receive bond's cash flows — weights are PV of each cash flow as proportion of bond price. Measured in years."
+        "text": "Weighted average time to receive bond's cash flows — weights are PV of each cash flow as proportion of bond price"
       },
       {
         "id": "c",
-        "text": "Weighted average of individual bond durations, weights = market value proportions."
+        "text": "Macaulay Duration has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Add convexity adjustment to duration-based estimate for more accurate price change prediction."
+        "text": "Macaulay Duration is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Weighted average time to receive bond's cash flows — weights are PV of each cash flow as proportion of bond price. Measured in years. Formula: $$D_{Mac} = \\frac{\\sum_{t=1}^{n} t \\times \\frac{CF_t}{(1+r)^t}}{P}$$ Example: Zero-coupon bond: Macaulay duration = maturity. 10-year 5% coupon bond at par: Mac duration ≈ 7.8 years (less than maturity due to coupons)",
     "distractorExplanations": {
-      "a": "Long options: negative theta (you pay time decay). Short options: positive theta (you earn time decay). Theta-gamma tradeoff: long gamma, short theta.",
-      "c": "Portfolio duration is value-weighted average. To change portfolio duration: add/remove longer or shorter bonds or use derivatives.",
-      "d": "Convexity adjustment is always POSITIVE (adds to price). Bonds with higher convexity are more valuable — price rises more / falls less."
+      "a": "This statement is false about Macaulay Duration and does not match the correct definition.",
+      "c": "This statement is false about Macaulay Duration and does not match the correct definition.",
+      "d": "This statement is false about Macaulay Duration and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-12).",
+    "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-12). · Local QA repair (stems/distractors)",
     "formula": "$$D_{Mac} = \\frac{\\sum_{t=1}^{n} t \\times \\frac{CF_t}{(1+r)^t}}{P}$$"
   }
 ]

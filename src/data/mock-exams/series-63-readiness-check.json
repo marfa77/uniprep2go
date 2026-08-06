@@ -3,34 +3,34 @@
     "id": "series-63-readiness-check-s63-agent-001",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-agent",
-    "prompt": "Can an agent represent more than one broker-dealer ?",
+    "prompt": "Under the Uniform Securities Act framework tested on Series 63, may an agent generally represent more than one broker-dealer at the same time?",
     "options": [
       {
         "id": "a",
-        "text": "Generally not unless the broker-dealers are affiliated or an exception/approval applies."
+        "text": "Generally no, unless the broker-dealers are affiliated or another specific exception/approval applies"
       },
       {
         "id": "b",
-        "text": "Both broker-dealer and agent may have notice obligations to the Administrator when association terminates."
+        "text": "Yes, always, with no notice to any firm or Administrator"
       },
       {
         "id": "c",
-        "text": "Agents must satisfy exam/qualification requirements unless waived or exempt under applicable rules."
+        "text": "Only if the agent also registers as an investment adviser representative in every state"
       },
       {
         "id": "d",
-        "text": "Transaction-based compensation can signal agent/broker-dealer activity and create conflicts requiring registration and supervision."
+        "text": "Only if the agent exclusively sells insurance products"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Generally not unless the broker-dealers are affiliated or an exception/approval applies. Example: A rep cannot casually work for two unrelated BDs.",
+    "explanation": "Dual registration with unaffiliated broker-dealers is generally restricted; affiliation or a narrow exception/approval is typically required.",
     "distractorExplanations": {
-      "b": "Assuming no filing needed if departure is friendly.",
-      "c": "Thinking passing SIE alone is enough.",
-      "d": "Calling commissions consulting fees to avoid rules."
+      "b": "Silent dual association is not the general rule.",
+      "c": "IAR registration does not by itself authorize dual BD representation.",
+      "d": "Insurance-only activity is a different licensing path and does not answer the agent dual-BD rule."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-agent-002",
@@ -40,30 +40,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Generally not unless the broker-dealers are affiliated or an exception/approval applies."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "An individual representing an issuer in certain exempt transactions may be excluded from agent definition."
+        "text": "An individual representing an issuer in certain exempt transactions may be excluded from agent definition"
       },
       {
         "id": "c",
-        "text": "Having a place of business in a state generally strengthens registration requirement for agent and firm."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Agents must satisfy exam/qualification requirements unless waived or exempt under applicable rules."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "An individual representing an issuer in certain exempt transactions may be excluded from agent definition. Example: Private placement to institutional investors may affect agent registration.",
     "distractorExplanations": {
-      "a": "Assuming agents are independent contractors free to represent anyone.",
-      "c": "Assuming no customers yet means no registration issue.",
-      "d": "Thinking passing SIE alone is enough."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-agent-003",
@@ -73,63 +73,63 @@
     "options": [
       {
         "id": "a",
-        "text": "An agent generally registers in each state where they represent a broker-dealer or issuer in transactions with residents, unless exempt."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Dishonest or unethical practices can lead to denial, suspension, revocation, or sanctions."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Purely clerical or ministerial employees who do not solicit or effect securities transactions are generally not agents."
+        "text": "Purely clerical or ministerial employees who do not solicit or effect securities transactions are generally not agents"
       },
       {
         "id": "d",
-        "text": "An agent is an individual who represents a broker-dealer or issuer in effecting or attempting to effect securities transactions."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Purely clerical or ministerial employees who do not solicit or effect securities transactions are generally not agents. Example: Receptionist scheduling meetings without securities discussion is not an agent.",
     "distractorExplanations": {
-      "a": "Assuming firm registration automatically registers every agent.",
-      "b": "Assuming only criminal convictions matter.",
-      "d": "Calling a firm an agent; agent is an individual."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-agent-004",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-agent",
-    "prompt": "What filing is required when an agent terminates ?",
+    "prompt": "When an agent’s association with a broker-dealer ends, what notice obligation is most accurate under Series 63 state registration practice?",
     "options": [
       {
         "id": "a",
-        "text": "An individual representing an issuer in certain exempt transactions may be excluded from agent definition."
+        "text": "Both the broker-dealer and the agent may have prompt notice/filing duties to the Administrator"
       },
       {
         "id": "b",
-        "text": "Generally not unless the broker-dealers are affiliated or an exception/approval applies."
+        "text": "Only the customer must file Form U4 within 24 hours"
       },
       {
         "id": "c",
-        "text": "An agent generally registers in each state where they represent a broker-dealer or issuer in transactions with residents, unless exempt."
+        "text": "No filing is ever required if the agent moves to an affiliated bank"
       },
       {
         "id": "d",
-        "text": "Both broker-dealer and agent may have notice obligations to the Administrator when association terminates."
+        "text": "Only FINRA Arbitration must be notified, never the state Administrator"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Both broker-dealer and agent may have notice obligations to the Administrator when association terminates. Example: Firm files termination notice after rep leaves.",
+    "correctOptionId": "a",
+    "explanation": "Termination of association typically triggers notice obligations (commonly discussed as Form U5-type processes) involving the firm and affecting the agent’s registration status with the Administrator.",
     "distractorExplanations": {
-      "a": "Confusing exempt transaction with exempt person in all contexts.",
-      "b": "Assuming agents are independent contractors free to represent anyone.",
-      "c": "Assuming firm registration automatically registers every agent."
+      "b": "Customers do not file Form U4 for agent terminations.",
+      "c": "Affiliation does not universally erase termination notice duties.",
+      "d": "State Administrators are central to agent registration status; arbitration is separate."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-agent-005",
@@ -139,63 +139,63 @@
     "options": [
       {
         "id": "a",
-        "text": "Having a place of business in a state generally strengthens registration requirement for agent and firm."
+        "text": "Having a place of business in a state generally strengthens registration requirement for agent and firm"
       },
       {
         "id": "b",
-        "text": "An agent’s registration obligation can depend on customer residence, solicitation, and whether a valid exclusion applies."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "Only after required registration is effective; filing an application alone is not enough."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Dishonest or unethical practices can lead to denial, suspension, revocation, or sanctions."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Having a place of business in a state generally strengthens registration requirement for agent and firm. Example: Rep opens branch office in State A.",
     "distractorExplanations": {
-      "b": "Ignoring customer residence changes.",
-      "c": "Working while application is pending.",
-      "d": "Assuming only criminal convictions matter."
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-agent-006",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-agent",
-    "prompt": "What filing is required when an agent terminates?",
+    "prompt": "An unregistered administrative employee at a broker-dealer wants to cold-call residents to recommend specific stocks and open accounts. What is the Series 63 concern?",
     "options": [
       {
         "id": "a",
-        "text": "Administrative staff should not solicit, recommend, or effect securities transactions unless properly registered."
+        "text": "Soliciting or recommending securities generally requires agent registration (unless a specific exclusion applies)"
       },
       {
         "id": "b",
-        "text": "Both broker-dealer and agent may have notice obligations to the Administrator when association terminates."
+        "text": "Administrative staff may always solicit if paid only in cash"
       },
       {
         "id": "c",
-        "text": "An agent generally registers in each state where they represent a broker-dealer or issuer in transactions with residents, unless exempt."
+        "text": "Cold-calling stocks is permitted if limited to odd-lot orders"
       },
       {
         "id": "d",
-        "text": "Transaction-based compensation can signal agent/broker-dealer activity and create conflicts requiring registration and supervision."
+        "text": "Registration is required only after the first 50 solicitations in a year"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Both broker-dealer and agent may have notice obligations to the Administrator when association terminates. Example: Firm files termination notice after rep leaves.",
+    "correctOptionId": "a",
+    "explanation": "Effecting or soliciting securities transactions for a BD is agent activity; clerical staff who solicit/recommend typically must be registered.",
     "distractorExplanations": {
-      "a": "Letting unregistered staff answer product questions.",
-      "c": "Assuming firm registration automatically registers every agent.",
-      "d": "Calling commissions consulting fees to avoid rules."
+      "b": "Payment form does not create an exclusion from agent registration.",
+      "c": "Order size does not remove the solicitation/registration issue.",
+      "d": "There is no general 50-call free registration allowance on the Series 63."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-agent-007",
@@ -205,30 +205,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Generally not unless the broker-dealers are affiliated or an exception/approval applies."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "An individual representing an issuer in securities transactions can be an agent unless an exclusion applies, such as certain exempt securities or exempt transactions."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "An agent generally registers in each state where they represent a broker-dealer or issuer in transactions with residents, unless exempt."
+        "text": "An agent generally registers in each state where they represent a broker-dealer or issuer in transactions with residents, unless exempt"
       },
       {
         "id": "d",
-        "text": "Both broker-dealer and agent may have notice obligations to the Administrator when association terminates."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "An agent generally registers in each state where they represent a broker-dealer or issuer in transactions with residents, unless exempt. Example: A rep soliciting residents of State B needs State B registration.",
     "distractorExplanations": {
-      "a": "Assuming agents are independent contractors free to represent anyone.",
-      "b": "Assuming issuer employees are never agents.",
-      "d": "Assuming no filing needed if departure is friendly."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-agent-008",
@@ -238,30 +238,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Agents must satisfy exam/qualification requirements unless waived or exempt under applicable rules."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Having a place of business in a state generally strengthens registration requirement for agent and firm."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Administrative staff should not solicit, recommend, or effect securities transactions unless properly registered."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "An agent is an individual who represents a broker-dealer or issuer in effecting or attempting to effect securities transactions."
+        "text": "An agent is an individual who represents a broker-dealer or issuer in effecting or attempting to effect securities transactions"
       }
     ],
     "correctOptionId": "d",
     "explanation": "An agent is an individual who represents a broker-dealer or issuer in effecting or attempting to effect securities transactions. Example: A rep soliciting stock purchases for a BD is an agent.",
     "distractorExplanations": {
-      "a": "Thinking passing SIE alone is enough.",
-      "b": "Assuming no customers yet means no registration issue.",
-      "c": "Letting unregistered staff answer product questions."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-bd-001",
@@ -271,63 +271,63 @@
     "options": [
       {
         "id": "a",
-        "text": "An existing customer temporarily in another state generally does not by itself make the BD register there, depending on facts and state law."
+        "text": "An existing customer temporarily in another state generally does not by itself make the BD register there, depending on facts and state law"
       },
       {
         "id": "b",
-        "text": "Withdrawal becomes effective after a period unless proceedings or conditions delay effectiveness, and liability for prior acts can remain."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "A broker-dealer with no place of business in a state may be excluded for transactions with specified institutional investors rather than retail residents."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Material changes generally require prompt amendment of registration filings."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "An existing customer temporarily in another state generally does not by itself make the BD register there, depending on facts and state law. Example: Customer travels to Florida and calls existing New York broker.",
     "distractorExplanations": {
-      "b": "Thinking withdrawal erases jurisdiction.",
-      "c": "Applying institutional exclusion to ordinary retail customers.",
-      "d": "Waiting until annual renewal for material changes."
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-bd-002",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-bd",
-    "prompt": "What books and records can a state require from a BD?",
+    "prompt": "Which statement best describes a state’s books-and-records authority over a registered broker-dealer for Series 63 purposes?",
     "options": [
       {
         "id": "a",
-        "text": "An issuer selling its own securities is generally not treated as a broker-dealer merely for issuing those securities."
+        "text": "The state may require records consistent with federal standards and examine registered firms"
       },
       {
         "id": "b",
-        "text": "States can require records consistent with federal law and examine registered firms."
+        "text": "States may never request records from any federally registered firm"
       },
       {
         "id": "c",
-        "text": "A broker-dealer with no place of business in a state may be excluded for transactions with specified institutional investors rather than retail residents."
+        "text": "Only issuers, not broker-dealers, keep books subject to state exam"
       },
       {
         "id": "d",
-        "text": "Some model rules permit limited transactions with existing Canadian clients temporarily in a state, subject to conditions."
+        "text": "States may demand records that conflict with and override all SEC record rules without limit"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "States can require records consistent with federal law and examine registered firms. Example: Administrator inspects required customer and transaction records.",
+    "correctOptionId": "a",
+    "explanation": "Administrators can require and examine BD records, generally aligned with federal recordkeeping frameworks rather than inventing wholly conflicting regimes.",
     "distractorExplanations": {
-      "a": "Treating issuer self-offerings as broker-dealer activity.",
-      "c": "Applying institutional exclusion to ordinary retail customers.",
-      "d": "Assuming all foreign broker-dealers freely solicit U.S. residents."
+      "b": "Federal registration does not bar all state record/exam authority for state-registered activity.",
+      "c": "Broker-dealers are primary recordkeepers for their business.",
+      "d": "State power is real but not an unbounded override of federal record rules."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-bd-003",
@@ -337,30 +337,30 @@
     "options": [
       {
         "id": "a",
-        "text": "States may impose requirements, but cannot exceed certain federal limitations for federally regulated broker-dealers."
+        "text": "A broker-dealer generally must never register in a state when it has an office there or effects transactions with…"
       },
       {
         "id": "b",
-        "text": "Withdrawal becomes effective after a period unless proceedings or conditions delay effectiveness, and liability for prior acts can remain."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "A broker-dealer generally must register in a state when it has an office there or effects transactions with residents of that state, unless an exclusion or exemption applies."
+        "text": "A broker-dealer generally must register in a state when it has an office there or effects transactions with…"
       },
       {
         "id": "d",
-        "text": "States can require records consistent with federal law and examine registered firms."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "A broker-dealer generally must register in a state when it has an office there or effects transactions with residents of that state, unless an exclusion or exemption applies. Example: A firm with retail customers in State A generally needs State A registration.",
     "distractorExplanations": {
-      "a": "Assuming states can set any capital rule regardless of federal law.",
-      "b": "Thinking withdrawal erases jurisdiction.",
-      "d": "Assuming books kept for FINRA are invisible to state regulators."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-bd-004",
@@ -370,63 +370,63 @@
     "options": [
       {
         "id": "a",
-        "text": "Registration generally expires at year-end unless renewed."
+        "text": "successor registration always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "For statutory grounds such as false filings, willful violations, insolvency, injunctions, dishonest practices, or lack of qualification, if in public interest."
+        "text": "successor registration has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "A broker-dealer is a person engaged in the business of effecting securities transactions for the account of others or for its own account."
+        "text": "successor registration is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "A successor firm may continue predecessor registration when succession is due to merger, consolidation, or similar continuity, subject to filing requirements."
+        "text": "A successor firm may continue predecessor registration when succession is due to merger, consolidation, or similar continuity, subject to f…"
       }
     ],
     "correctOptionId": "d",
     "explanation": "A successor firm may continue predecessor registration when succession is due to merger, consolidation, or similar continuity, subject to filing requirements. Example: BD changes legal form and files as successor.",
     "distractorExplanations": {
-      "a": "Assuming registration is permanent.",
-      "b": "Thinking any minor error automatically causes revocation.",
-      "c": "Calling every issuer a broker-dealer."
+      "a": "This statement is false about successor registration and does not match the correct definition.",
+      "b": "This statement is false about successor registration and does not match the correct definition.",
+      "c": "This statement is false about successor registration and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-bd-005",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-bd",
-    "prompt": "Can states impose financial requirements on broker-dealers?",
+    "prompt": "May states impose net capital or other financial responsibility requirements on broker-dealers under the Series 63 framework?",
     "options": [
       {
         "id": "a",
-        "text": "States may impose requirements, but cannot exceed certain federal limitations for federally regulated broker-dealers."
+        "text": "Yes, but for many federally regulated BDs state requirements cannot exceed applicable federal limitations"
       },
       {
         "id": "b",
-        "text": "States can require records consistent with federal law and examine registered firms."
+        "text": "Never, because only the MSRB sets BD capital rules"
       },
       {
         "id": "c",
-        "text": "Some model rules permit limited transactions with existing Canadian clients temporarily in a state, subject to conditions."
+        "text": "Yes, and states may always impose higher capital than federal rules with no limit"
       },
       {
         "id": "d",
-        "text": "A broker-dealer is a person engaged in the business of effecting securities transactions for the account of others or for its own account."
+        "text": "Only if the BD sells insurance in that state"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "States may impose requirements, but cannot exceed certain federal limitations for federally regulated broker-dealers. Example: Net capital rules interact with state limits.",
+    "explanation": "States can address financial responsibility, but federal law constrains how far states may go for broker-dealers already subject to federal capital standards.",
     "distractorExplanations": {
-      "b": "Assuming books kept for FINRA are invisible to state regulators.",
-      "c": "Assuming all foreign broker-dealers freely solicit U.S. residents.",
-      "d": "Calling every issuer a broker-dealer."
+      "b": "MSRB is not the sole capital-rule source for all BDs.",
+      "c": "Federal ceilings/limits matter; states are not unbounded.",
+      "d": "Insurance licensing is separate from BD financial responsibility rules."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-bd-006",
@@ -436,63 +436,63 @@
     "options": [
       {
         "id": "a",
-        "text": "States can require records consistent with federal law and examine registered firms."
+        "text": "the no-place-of-business institutional exclusion for broker-dealers always eliminates all investment, legal, and regulatory risk for every…"
       },
       {
         "id": "b",
-        "text": "A broker-dealer with no place of business in a state may be excluded for transactions with specified institutional investors rather than retail residents."
+        "text": "A broker-dealer with no place of business in a state may be excluded for transactions with specified institutional investors rather than re…"
       },
       {
         "id": "c",
-        "text": "A successor firm may continue predecessor registration when succession is due to merger, consolidation, or similar continuity, subject to filing requirements."
+        "text": "the no-place-of-business institutional exclusion for broker-dealers has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "A broker-dealer is a person engaged in the business of effecting securities transactions for the account of others or for its own account."
+        "text": "the no-place-of-business institutional exclusion for broker-dealers is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "A broker-dealer with no place of business in a state may be excluded for transactions with specified institutional investors rather than retail residents. Example: Transactions with banks or other BDs may not trigger state BD registration.",
     "distractorExplanations": {
-      "a": "Assuming books kept for FINRA are invisible to state regulators.",
-      "c": "Assuming registration transfers automatically without filing.",
-      "d": "Calling every issuer a broker-dealer."
+      "a": "This statement is false about the no-place-of-business institutional exclusion for broker-dealers and does not match the correct definition.",
+      "c": "This statement is false about the no-place-of-business institutional exclusion for broker-dealers and does not match the correct definition.",
+      "d": "This statement is false about the no-place-of-business institutional exclusion for broker-dealers and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-bd-007",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-bd",
-    "prompt": "Can states impose financial requirements on broker-dealers ?",
+    "prompt": "On the Series 63, can states impose financial requirements on broker-dealers ? Choose the best answer.",
     "options": [
       {
         "id": "a",
-        "text": "Material changes generally require prompt amendment of registration filings."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Registration generally expires at year-end unless renewed."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "States may impose requirements, but cannot exceed certain federal limitations for federally regulated broker-dealers."
+        "text": "States may impose requirements, but cannot exceed certain federal limitations for federally regulated broke…"
       },
       {
         "id": "d",
-        "text": "Some model rules permit limited transactions with existing Canadian clients temporarily in a state, subject to conditions."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "States may impose requirements, but cannot exceed certain federal limitations for federally regulated broker-dealers. Example: Net capital rules interact with state limits.",
     "distractorExplanations": {
-      "a": "Waiting until annual renewal for material changes.",
-      "b": "Assuming registration is permanent.",
-      "d": "Assuming all foreign broker-dealers freely solicit U.S. residents."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-ethics-001",
@@ -502,30 +502,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Backdating creates false records and can conceal violations."
+        "text": "a fictitious account issue always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Lending to customers is generally restricted and requires compliance with firm and regulatory exceptions."
+        "text": "a fictitious account issue has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Misstating qualifications, registrations, certifications, or experience misleads customers."
+        "text": "a fictitious account issue is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "Creating or using false account names or nominee accounts to hide ownership or activity is prohibited."
+        "text": "Creating or using false account names or nominee accounts to hide ownership or activity is prohibited"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Creating or using false account names or nominee accounts to hide ownership or activity is prohibited. Example: Opening account under relative’s name to conceal trading.",
     "distractorExplanations": {
-      "a": "Backdating is okay if customer agrees.",
-      "b": "Thinking helpful loans are outside securities rules.",
-      "c": "Exam passage equals endorsement."
+      "a": "This statement is false about a fictitious account issue and does not match the correct definition.",
+      "b": "This statement is false about a fictitious account issue and does not match the correct definition.",
+      "c": "This statement is false about a fictitious account issue and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-ethics-002",
@@ -535,30 +535,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Sharing gains/losses is restricted and usually requires firm approval and proportional contribution, if allowed."
+        "text": "Sharing gains/losses is restricted and usually requires firm approval and proportional contribution, if allowed"
       },
       {
         "id": "b",
-        "text": "Using, borrowing, or converting customer funds/securities violates antifraud and fiduciary principles."
+        "text": "Sharing gains/losses is restricted and usually forbids firm approval and proportional contribution, if allowed"
       },
       {
         "id": "c",
-        "text": "A fraudulent scheme using new investor money to pay earlier investors rather than legitimate profits."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Trading ahead of customer orders or recommendations to benefit from expected price movement."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Sharing gains/losses is restricted and usually requires firm approval and proportional contribution, if allowed. Example: Rep splits profits with customer without approval.",
     "distractorExplanations": {
-      "b": "Intending to repay makes it acceptable.",
-      "c": "Assuming steady payouts prove legitimacy.",
-      "d": "Only firms, not individuals, can front-run."
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-ethics-003",
@@ -568,30 +568,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Exploiting or failing to escalate suspected exploitation of seniors/vulnerable adults can violate rules and model acts."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "It fails to match customer objectives, risk tolerance, financial situation, needs, and other profile facts."
+        "text": "It fails to match customer objectives, risk tolerance, financial situation, needs, and other profile facts"
       },
       {
         "id": "c",
-        "text": "Trading ahead of customer orders or recommendations to benefit from expected price movement."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Lending to customers is generally restricted and requires compliance with firm and regulatory exceptions."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "It fails to match customer objectives, risk tolerance, financial situation, needs, and other profile facts. Example: Speculative penny stock for retired income client is unsuitable.",
     "distractorExplanations": {
-      "a": "Privacy means firm can never pause or escalate.",
-      "c": "Only firms, not individuals, can front-run.",
-      "d": "Thinking helpful loans are outside securities rules."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-ethics-004",
@@ -601,30 +601,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Using, borrowing, or converting customer funds/securities violates antifraud and fiduciary principles."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Spreading false or unverified rumors to influence trading is prohibited."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Disclose, mitigate, avoid, or obtain required approval depending on conflict and rule."
+        "text": "Disclose, mitigate, avoid, or obtain required approval depending on conflict and rule"
       },
       {
         "id": "d",
-        "text": "Lending to customers is generally restricted and requires compliance with firm and regulatory exceptions."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Disclose, mitigate, avoid, or obtain required approval depending on conflict and rule. Example: Higher payout product conflict must be addressed.",
     "distractorExplanations": {
-      "a": "Intending to repay makes it acceptable.",
-      "b": "Labeling a rumor as “heard on street” always protects agent.",
-      "d": "Thinking helpful loans are outside securities rules."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-ethics-005",
@@ -634,30 +634,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Using, borrowing, or converting customer funds/securities violates antifraud and fiduciary principles."
+        "text": "a fictitious account issue always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Failing to state a material fact can make other statements misleading, creating antifraud liability."
+        "text": "a fictitious account issue has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Excessive trading in a customer account controlled by the agent primarily to generate commissions."
+        "text": "a fictitious account issue is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "Creating or using false account names or nominee accounts to hide ownership or activity is prohibited."
+        "text": "Creating or using false account names or nominee accounts to hide ownership or activity is prohibited"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Creating or using false account names or nominee accounts to hide ownership or activity is prohibited. Example: Opening account under relative’s name to conceal trading.",
     "distractorExplanations": {
-      "a": "Intending to repay makes it acceptable.",
-      "b": "Believing true statements cannot mislead.",
-      "c": "High volume alone is not enough without context/control."
+      "a": "This statement is false about a fictitious account issue and does not match the correct definition.",
+      "b": "This statement is false about a fictitious account issue and does not match the correct definition.",
+      "c": "This statement is false about a fictitious account issue and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-ethics-006",
@@ -667,30 +667,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Making false or misleading statements about securities, risks, returns, registration, or qualifications."
+        "text": "Making false or misleading statements about securities, risks, returns, registration, or qualifications"
       },
       {
         "id": "b",
-        "text": "Borrowing from customers is generally prohibited unless narrow conditions and firm procedures allow it."
+        "text": "misrepresentation always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "Participating in securities transactions outside the broker-dealer without required notice and approval."
+        "text": "misrepresentation has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Lending to customers is generally restricted and requires compliance with firm and regulatory exceptions."
+        "text": "misrepresentation is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Making false or misleading statements about securities, risks, returns, registration, or qualifications. Example: Claiming a security is “state approved” because registered is misleading.",
     "distractorExplanations": {
-      "b": "Friendship alone does not make it okay.",
-      "c": "Calling it a personal deal avoids firm rules.",
-      "d": "Thinking helpful loans are outside securities rules."
+      "b": "This statement is false about misrepresentation and does not match the correct definition.",
+      "c": "This statement is false about misrepresentation and does not match the correct definition.",
+      "d": "This statement is false about misrepresentation and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-ethics-007",
@@ -700,30 +700,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Fraud includes intentional or reckless deception, misstatements, omissions, or schemes in connection with securities transactions or advice."
+        "text": "a material fact always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "A fact is material if a reasonable investor would consider it important in making an investment decision."
+        "text": "A fact is material if a reasonable investor would consider it important in making an investment decision"
       },
       {
         "id": "c",
-        "text": "Charging unreasonable compensation in securities transactions is dishonest or unethical."
+        "text": "a material fact has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Lending to customers is generally restricted and requires compliance with firm and regulatory exceptions."
+        "text": "a material fact is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "A fact is material if a reasonable investor would consider it important in making an investment decision. Example: Issuer bankruptcy risk is material to a bond buyer.",
     "distractorExplanations": {
-      "a": "Thinking fraud requires a completed sale.",
-      "c": "Disclosing high markup always cures excessiveness.",
-      "d": "Thinking helpful loans are outside securities rules."
+      "a": "This statement is false about a material fact and does not match the correct definition.",
+      "c": "This statement is false about a material fact and does not match the correct definition.",
+      "d": "This statement is false about a material fact and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-ethics-008",
@@ -733,30 +733,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Trading or tipping while in possession of material nonpublic information."
+        "text": "Lending to customers is generally restricted and forbids compliance with firm and regulatory exceptions"
       },
       {
         "id": "b",
-        "text": "Fraud includes intentional or reckless deception, misstatements, omissions, or schemes in connection with securities transactions or advice."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Lending to customers is generally restricted and requires compliance with firm and regulatory exceptions."
+        "text": "Lending to customers is generally restricted and requires compliance with firm and regulatory exceptions"
       },
       {
         "id": "d",
-        "text": "Participating in securities transactions outside the broker-dealer without required notice and approval."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Lending to customers is generally restricted and requires compliance with firm and regulatory exceptions. Example: Rep cannot lend money so customer can meet margin call without approval.",
     "distractorExplanations": {
-      "a": "Only corporate insiders can violate insider trading rules.",
-      "b": "Thinking fraud requires a completed sale.",
-      "d": "Calling it a personal deal avoids firm rules."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-ethics-009",
@@ -766,30 +766,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Spreading false or unverified rumors to influence trading is prohibited."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "They enable unauthorized activity and inaccurate records."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Using, borrowing, or converting customer funds/securities violates antifraud and fiduciary principles."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "No. Agents generally cannot guarantee customers against market losses."
+        "text": "No"
       }
     ],
     "correctOptionId": "d",
     "explanation": "No. Agents generally cannot guarantee customers against market losses. Example: “I’ll make you whole if it falls” is prohibited.",
     "distractorExplanations": {
-      "a": "Labeling a rumor as “heard on street” always protects agent.",
-      "b": "Convenience makes blank forms acceptable.",
-      "c": "Intending to repay makes it acceptable."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-ethics-010",
@@ -799,30 +799,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Backdating creates false records and can conceal violations."
+        "text": "Backdating creates false records and can conceal violations"
       },
       {
         "id": "b",
-        "text": "Exploiting or failing to escalate suspected exploitation of seniors/vulnerable adults can violate rules and model acts."
+        "text": "backdating documents unethical always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "Outside activities can create conflicts, supervision gaps, and customer confusion."
+        "text": "backdating documents unethical has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "A fraudulent scheme using new investor money to pay earlier investors rather than legitimate profits."
+        "text": "backdating documents unethical is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Backdating creates false records and can conceal violations. Example: Changing date on disclosure after complaint.",
     "distractorExplanations": {
-      "b": "Privacy means firm can never pause or escalate.",
-      "c": "Only securities activities need disclosure.",
-      "d": "Assuming steady payouts prove legitimacy."
+      "b": "This statement is false about backdating documents unethical and does not match the correct definition.",
+      "c": "This statement is false about backdating documents unethical and does not match the correct definition.",
+      "d": "This statement is false about backdating documents unethical and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-ethics-011",
@@ -832,30 +832,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Excessive trading in a customer account controlled by the agent primarily to generate commissions."
+        "text": "a Ponzi scheme always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "A fraudulent scheme using new investor money to pay earlier investors rather than legitimate profits."
+        "text": "A fraudulent scheme using new investor money to pay earlier investors rather than legitimate profits"
       },
       {
         "id": "c",
-        "text": "Sharing gains/losses is restricted and usually requires firm approval and proportional contribution, if allowed."
+        "text": "a Ponzi scheme has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "No. Agents generally cannot guarantee customers against market losses."
+        "text": "a Ponzi scheme is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "A fraudulent scheme using new investor money to pay earlier investors rather than legitimate profits. Example: Consistent high returns funded by new deposits are red flags.",
     "distractorExplanations": {
-      "a": "High volume alone is not enough without context/control.",
-      "c": "Customer permission alone is enough.",
-      "d": "Customer consent does not make guarantee proper."
+      "a": "This statement is false about a Ponzi scheme and does not match the correct definition.",
+      "c": "This statement is false about a Ponzi scheme and does not match the correct definition.",
+      "d": "This statement is false about a Ponzi scheme and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-ethics-012",
@@ -865,30 +865,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Written customer authorization and firm acceptance are required before exercising discretion over security, action, or amount."
+        "text": "misuse of customer funds severe always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "They enable unauthorized activity and inaccurate records."
+        "text": "misuse of customer funds severe has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Using, borrowing, or converting customer funds/securities violates antifraud and fiduciary principles."
+        "text": "Using, borrowing, or converting customer funds/securities violates antifraud and fiduciary principles"
       },
       {
         "id": "d",
-        "text": "A fact is material if a reasonable investor would consider it important in making an investment decision."
+        "text": "misuse of customer funds severe is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Using, borrowing, or converting customer funds/securities violates antifraud and fiduciary principles. Example: Depositing customer check into personal account.",
     "distractorExplanations": {
-      "a": "Confusing time/price discretion with full discretion.",
-      "b": "Convenience makes blank forms acceptable.",
-      "d": "Treating small-sounding facts as immaterial without investor context."
+      "a": "This statement is false about misuse of customer funds severe and does not match the correct definition.",
+      "b": "This statement is false about misuse of customer funds severe and does not match the correct definition.",
+      "d": "This statement is false about misuse of customer funds severe and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-ethics-013",
@@ -898,30 +898,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Making false or misleading statements about securities, risks, returns, registration, or qualifications."
+        "text": "securities fraud under Series 63 concepts always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Excessive trading in a customer account controlled by the agent primarily to generate commissions."
+        "text": "securities fraud under Series 63 concepts has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Charging unreasonable compensation in securities transactions is dishonest or unethical."
+        "text": "securities fraud under Series 63 concepts is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "Fraud includes intentional or reckless deception, misstatements, omissions, or schemes in connection with securities transactions or advice."
+        "text": "Fraud includes intentional or reckless deception, misstatements, omissions, or schemes in connection with securities transactions or advice"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Fraud includes intentional or reckless deception, misstatements, omissions, or schemes in connection with securities transactions or advice. Example: Omitting a material risk in a sale pitch can be fraud.",
     "distractorExplanations": {
-      "a": "Thinking registration equals recommendation by regulator.",
-      "b": "High volume alone is not enough without context/control.",
-      "c": "Disclosing high markup always cures excessiveness."
+      "a": "This statement is false about securities fraud under Series 63 concepts and does not match the correct definition.",
+      "b": "This statement is false about securities fraud under Series 63 concepts and does not match the correct definition.",
+      "c": "This statement is false about securities fraud under Series 63 concepts and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-ethics-014",
@@ -931,30 +931,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Excessive trading in a customer account controlled by the agent primarily to generate commissions."
+        "text": "Excessive trading in a customer account controlled by the agent primarily to generate commissions"
       },
       {
         "id": "b",
-        "text": "A fact is material if a reasonable investor would consider it important in making an investment decision."
+        "text": "churning always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "A securities transaction outside regular firm business requiring notice and often approval/supervision."
+        "text": "churning has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "No. Registration or filing does not mean the Administrator approved merits of the security."
+        "text": "churning is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Excessive trading in a customer account controlled by the agent primarily to generate commissions. Example: High turnover in conservative account can be churning.",
     "distractorExplanations": {
-      "b": "Treating small-sounding facts as immaterial without investor context.",
-      "c": "No commission means no issue.",
-      "d": "Registration equals quality approval."
+      "b": "This statement is false about churning and does not match the correct definition.",
+      "c": "This statement is false about churning and does not match the correct definition.",
+      "d": "This statement is false about churning and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-ethics-015",
@@ -964,30 +964,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Backdating creates false records and can conceal violations."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Spreading false or unverified rumors to influence trading is prohibited."
+        "text": "Spreading false or unverified rumors to influence trading is prohibited"
       },
       {
         "id": "c",
-        "text": "Disclose, mitigate, avoid, or obtain required approval depending on conflict and rule."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Borrowing from customers is generally prohibited unless narrow conditions and firm procedures allow it."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Spreading false or unverified rumors to influence trading is prohibited. Example: Telling clients a takeover rumor as fact to push purchases.",
     "distractorExplanations": {
-      "a": "Backdating is okay if customer agrees.",
-      "c": "Disclosure cures every conflict.",
-      "d": "Friendship alone does not make it okay."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-comm-001",
@@ -997,30 +997,30 @@
     "options": [
       {
         "id": "a",
-        "text": "They rely on assumptions and can mislead if presented like actual performance."
+        "text": "Business communications must never be preserved for supervision and regulatory examination"
       },
       {
         "id": "b",
-        "text": "Participation in seminars, interviews, webinars, or public forums about securities business can be regulated communication."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Business communications must be preserved for supervision and regulatory examination."
+        "text": "Business communications must be preserved for supervision and regulatory examination"
       },
       {
         "id": "d",
-        "text": "If prior information becomes materially inaccurate or stale, continued use can mislead."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Business communications must be preserved for supervision and regulatory examination. Example: Recommendation by text or email is a business record.",
     "distractorExplanations": {
-      "a": "Backtests prove future results.",
-      "b": "Spoken remarks are not communications.",
-      "d": "Old but once-true material is always okay."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-comm-002",
@@ -1030,30 +1030,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Seminar invitations and presentations are communications and must be balanced, supervised, and not misleading."
+        "text": "Prospectus never provides required offering information, but delivery does not cure misstatements or unsuitable r…"
       },
       {
         "id": "b",
-        "text": "Compare similar features with balanced discussion of costs, risks, tax treatment, liquidity, and assumptions."
+        "text": "the role of prospectus disclosure has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "If prior information becomes materially inaccurate or stale, continued use can mislead."
+        "text": "the role of prospectus disclosure is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "Prospectus provides required offering information, but delivery does not cure misstatements or unsuitable recommendations."
+        "text": "Prospectus provides required offering information, but delivery does not cure misstatements or unsuitable r…"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Prospectus provides required offering information, but delivery does not cure misstatements or unsuitable recommendations. Example: Mutual fund prospectus explains fees and risks.",
     "distractorExplanations": {
-      "a": "Educational label removes sales-practice obligations.",
-      "b": "Comparing only headline yield.",
-      "c": "Old but once-true material is always okay."
+      "a": "This statement is false about the role of prospectus disclosure and does not match the correct definition.",
+      "b": "This statement is false about the role of prospectus disclosure and does not match the correct definition.",
+      "c": "This statement is false about the role of prospectus disclosure and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-comm-003",
@@ -1063,30 +1063,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Risks must be presented prominently and meaningfully, not hidden in fine print."
+        "text": "Risks must be presented prominently and meaningfully, not hidden in fine print"
       },
       {
         "id": "b",
-        "text": "Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules."
+        "text": "Risks must never be presented prominently and meaningfully, not hidden in fine print"
       },
       {
         "id": "c",
-        "text": "Agreements define account rights, margin, arbitration, discretion, and other obligations; false or incomplete agreements create regulatory risk."
+        "text": "balanced risk disclosure has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "If prior information becomes materially inaccurate or stale, continued use can mislead."
+        "text": "balanced risk disclosure is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Risks must be presented prominently and meaningfully, not hidden in fine print. Example: Options communication must discuss potential loss.",
     "distractorExplanations": {
-      "b": "Cold calls are exempt because no sale yet.",
-      "c": "Filling agreement after trading begins.",
-      "d": "Old but once-true material is always okay."
+      "b": "This statement is false about balanced risk disclosure and does not match the correct definition.",
+      "c": "This statement is false about balanced risk disclosure and does not match the correct definition.",
+      "d": "This statement is false about balanced risk disclosure and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-comm-004",
@@ -1096,30 +1096,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Risks must be presented prominently and meaningfully, not hidden in fine print."
+        "text": "Communications must never be fair, balanced, not misleading, and disclose material risks and limitations"
       },
       {
         "id": "b",
-        "text": "Communications must be fair, balanced, not misleading, and disclose material risks and limitations."
+        "text": "Communications must be fair, balanced, not misleading, and disclose material risks and limitations"
       },
       {
         "id": "c",
-        "text": "They rely on assumptions and can mislead if presented like actual performance."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "No, unless an actual guarantee exists and terms/guarantor are clearly disclosed; market securities generally cannot be presented as risk-free."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Communications must be fair, balanced, not misleading, and disclose material risks and limitations. Example: A bond ad must discuss credit and interest-rate risk.",
     "distractorExplanations": {
-      "a": "Tiny footnote cures exaggerated headline.",
-      "c": "Backtests prove future results.",
-      "d": "Using words like safe and secure casually."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-comm-005",
@@ -1129,30 +1129,30 @@
     "options": [
       {
         "id": "a",
-        "text": "They rely on assumptions and can mislead if presented like actual performance."
+        "text": "Business communications must never be preserved for supervision and regulatory examination"
       },
       {
         "id": "b",
-        "text": "If prior information becomes materially inaccurate or stale, continued use can mislead."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Business communications must be preserved for supervision and regulatory examination."
+        "text": "Business communications must be preserved for supervision and regulatory examination"
       },
       {
         "id": "d",
-        "text": "Risks must be presented prominently and meaningfully, not hidden in fine print."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Business communications must be preserved for supervision and regulatory examination. Example: Recommendation by text or email is a business record.",
     "distractorExplanations": {
-      "a": "Backtests prove future results.",
-      "b": "Old but once-true material is always okay.",
-      "d": "Tiny footnote cures exaggerated headline."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-comm-006",
@@ -1162,30 +1162,30 @@
     "options": [
       {
         "id": "a",
-        "text": "No, unless an actual guarantee exists and terms/guarantor are clearly disclosed; market securities generally cannot be presented as risk-free."
+        "text": "risky about performance claims always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Fees, commissions, markups, surrender charges, and expenses are material to recommendations."
+        "text": "risky about performance claims has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Rules often focus on written complaints, but oral complaints can still require escalation under firm procedures."
+        "text": "risky about performance claims is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "They can mislead if cherry-picked, hypothetical, gross of fees, or lacking time period and risk context."
+        "text": "They can mislead if cherry-picked, hypothetical, gross of fees, or lacking time period and risk context"
       }
     ],
     "correctOptionId": "d",
     "explanation": "They can mislead if cherry-picked, hypothetical, gross of fees, or lacking time period and risk context. Example: Showing only best month of returns misleads.",
     "distractorExplanations": {
-      "a": "Using words like safe and secure casually.",
-      "b": "If customer can afford it, fee disclosure is less important.",
-      "c": "Ignoring oral complaints because not written."
+      "a": "This statement is false about risky about performance claims and does not match the correct definition.",
+      "b": "This statement is false about risky about performance claims and does not match the correct definition.",
+      "c": "This statement is false about risky about performance claims and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-comm-007",
@@ -1195,30 +1195,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules."
+        "text": "Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules"
       },
       {
         "id": "b",
-        "text": "Participation in seminars, interviews, webinars, or public forums about securities business can be regulated communication."
+        "text": "Calls must never follow time, identification, do-not-call, firm, and anti-fraud communication rules"
       },
       {
         "id": "c",
-        "text": "Agreements define account rights, margin, arbitration, discretion, and other obligations; false or incomplete agreements create regulatory risk."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "They can mislead if cherry-picked, hypothetical, gross of fees, or lacking time period and risk context."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules. Example: Identify caller, firm, purpose, and respect DNC requests.",
     "distractorExplanations": {
-      "b": "Spoken remarks are not communications.",
-      "c": "Filling agreement after trading begins.",
-      "d": "Past performance implies future results."
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-comm-008",
@@ -1228,30 +1228,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Scale, selected period, missing benchmarks, or omitted volatility can distort impression."
+        "text": "Communications must never be fair, balanced, not misleading, and disclose material risks and limitations"
       },
       {
         "id": "b",
-        "text": "Communications must be fair, balanced, not misleading, and disclose material risks and limitations."
+        "text": "Communications must be fair, balanced, not misleading, and disclose material risks and limitations"
       },
       {
         "id": "c",
-        "text": "Participation in seminars, interviews, webinars, or public forums about securities business can be regulated communication."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Compare similar features with balanced discussion of costs, risks, tax treatment, liquidity, and assumptions."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Communications must be fair, balanced, not misleading, and disclose material risks and limitations. Example: A bond ad must discuss credit and interest-rate risk.",
     "distractorExplanations": {
-      "a": "Visual accuracy means no disclosure needed.",
-      "c": "Spoken remarks are not communications.",
-      "d": "Comparing only headline yield."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-comm-009",
@@ -1261,30 +1261,30 @@
     "options": [
       {
         "id": "a",
-        "text": "They can mislead if cherry-picked, hypothetical, gross of fees, or lacking time period and risk context."
+        "text": "testimonials sensitive always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules."
+        "text": "testimonials sensitive has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Testimonials can mislead if compensation, conflicts, experience, or representativeness are not properly disclosed."
+        "text": "Testimonials can mislead if compensation, conflicts, experience, or representativeness are not properly dis…"
       },
       {
         "id": "d",
-        "text": "Fees, commissions, markups, surrender charges, and expenses are material to recommendations."
+        "text": "testimonials sensitive is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Testimonials can mislead if compensation, conflicts, experience, or representativeness are not properly disclosed. Example: Paid customer endorsement requires disclosure.",
     "distractorExplanations": {
-      "a": "Past performance implies future results.",
-      "b": "Cold calls are exempt because no sale yet.",
-      "d": "If customer can afford it, fee disclosure is less important."
+      "a": "This statement is false about testimonials sensitive and does not match the correct definition.",
+      "b": "This statement is false about testimonials sensitive and does not match the correct definition.",
+      "d": "This statement is false about testimonials sensitive and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-comm-010",
@@ -1294,30 +1294,30 @@
     "options": [
       {
         "id": "a",
-        "text": "They are regulated communications subject to supervision, retention, and content standards."
+        "text": "Calls must never follow time, identification, do-not-call, firm, and anti-fraud communication rules"
       },
       {
         "id": "b",
-        "text": "If prior information becomes materially inaccurate or stale, continued use can mislead."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Prospectus provides required offering information, but delivery does not cure misstatements or unsuitable recommendations."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules."
+        "text": "Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules. Example: Identify caller, firm, purpose, and respect DNC requests.",
     "distractorExplanations": {
-      "a": "Personal account avoids rules.",
-      "b": "Old but once-true material is always okay.",
-      "c": "Handing prospectus means anything said orally is safe."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-comm-011",
@@ -1327,30 +1327,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Agreements define account rights, margin, arbitration, discretion, and other obligations; false or incomplete agreements create regulatory risk."
+        "text": "Agreements define account rights, margin, arbitration, discretion, and other obligations; false or incomple…"
       },
       {
         "id": "b",
-        "text": "Participation in seminars, interviews, webinars, or public forums about securities business can be regulated communication."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "Communications must be fair, balanced, not misleading, and disclose material risks and limitations."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Compare similar features with balanced discussion of costs, risks, tax treatment, liquidity, and assumptions."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Agreements define account rights, margin, arbitration, discretion, and other obligations; false or incomplete agreements create regulatory risk. Example: Margin agreement must be signed before margin activity.",
     "distractorExplanations": {
-      "b": "Spoken remarks are not communications.",
-      "c": "Mentioning only benefits.",
-      "d": "Comparing only headline yield."
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-comm-012",
@@ -1360,30 +1360,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Testimonials can mislead if compensation, conflicts, experience, or representativeness are not properly disclosed."
+        "text": "hypothetical returns dangerous always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "They rely on assumptions and can mislead if presented like actual performance."
+        "text": "They rely on assumptions and can mislead if presented like actual performance"
       },
       {
         "id": "c",
-        "text": "Communications must be fair, balanced, not misleading, and disclose material risks and limitations."
+        "text": "hypothetical returns dangerous has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Scale, selected period, missing benchmarks, or omitted volatility can distort impression."
+        "text": "hypothetical returns dangerous is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "They rely on assumptions and can mislead if presented like actual performance. Example: Backtested strategy needs assumptions and limitations.",
     "distractorExplanations": {
-      "a": "Real customer praise can be used without review.",
-      "c": "Mentioning only benefits.",
-      "d": "Visual accuracy means no disclosure needed."
+      "a": "This statement is false about hypothetical returns dangerous and does not match the correct definition.",
+      "c": "This statement is false about hypothetical returns dangerous and does not match the correct definition.",
+      "d": "This statement is false about hypothetical returns dangerous and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-remedies-001",
@@ -1393,30 +1393,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Final orders can create disqualification, disclosure, or registration consequences."
+        "text": "rescission always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "The state securities regulator responsible for administering and enforcing state securities law."
+        "text": "rescission has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "A remedy unwinding the transaction, generally returning purchase price plus interest minus income received."
+        "text": "A remedy unwinding the transaction, generally returning purchase price plus interest minus income received"
       },
       {
         "id": "d",
-        "text": "Selling securities through material misstatement/omission or unlawful sale can create rescission or damages liability."
+        "text": "rescission is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "A remedy unwinding the transaction, generally returning purchase price plus interest minus income received. Example: Investor returns security and receives money back.",
     "distractorExplanations": {
-      "a": "Pending investigation equals final order.",
-      "b": "Assuming only SEC enforces securities laws.",
-      "d": "Only regulators can act; customers cannot sue."
+      "a": "This statement is false about rescission and does not match the correct definition.",
+      "b": "This statement is false about rescission and does not match the correct definition.",
+      "d": "This statement is false about rescission and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-remedies-002",
@@ -1426,30 +1426,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Final orders can create disqualification, disclosure, or registration consequences."
+        "text": "rescission always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Selling securities through material misstatement/omission or unlawful sale can create rescission or damages liability."
+        "text": "rescission has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Affected persons often can request hearing after denial, suspension, revocation, or summary action."
+        "text": "rescission is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "A remedy unwinding the transaction, generally returning purchase price plus interest minus income received."
+        "text": "A remedy unwinding the transaction, generally returning purchase price plus interest minus income received"
       }
     ],
     "correctOptionId": "d",
     "explanation": "A remedy unwinding the transaction, generally returning purchase price plus interest minus income received. Example: Investor returns security and receives money back.",
     "distractorExplanations": {
-      "a": "Pending investigation equals final order.",
-      "b": "Only regulators can act; customers cannot sue.",
-      "c": "No ability to contest administrative action."
+      "a": "This statement is false about rescission and does not match the correct definition.",
+      "b": "This statement is false about rescission and does not match the correct definition.",
+      "c": "This statement is false about rescission and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-remedies-003",
@@ -1459,30 +1459,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Final orders can create disqualification, disclosure, or registration consequences."
+        "text": "Final orders can create disqualification, disclosure, or registration consequences"
       },
       {
         "id": "b",
-        "text": "Civil actions must be brought within specified time limits after discovery or violation."
+        "text": "final order status matter always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "The state securities regulator responsible for administering and enforcing state securities law."
+        "text": "final order status matter has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Willful violations can lead to criminal penalties, but prosecution usually involves appropriate criminal authorities."
+        "text": "final order status matter is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Final orders can create disqualification, disclosure, or registration consequences. Example: Prior final order for fraud can affect registration.",
     "distractorExplanations": {
-      "b": "Fraud claims last forever.",
-      "c": "Assuming only SEC enforces securities laws.",
-      "d": "Every technical filing error is criminal."
+      "b": "This statement is false about final order status matter and does not match the correct definition.",
+      "c": "This statement is false about final order status matter and does not match the correct definition.",
+      "d": "This statement is false about final order status matter and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-remedies-004",
@@ -1492,63 +1492,63 @@
     "options": [
       {
         "id": "a",
-        "text": "The person claiming an exemption generally has the burden of proving it."
+        "text": "a cease-and-desist order always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "An administrative order requiring a person to stop violating securities law or rules."
+        "text": "An administrative order requiring a person to stop violating securities law or rules"
       },
       {
         "id": "c",
-        "text": "A court order restraining conduct, often sought by Administrator to stop violations."
+        "text": "a cease-and-desist order has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Registration does not mean the state approved, recommended, or guaranteed the security."
+        "text": "a cease-and-desist order is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "An administrative order requiring a person to stop violating securities law or rules. Example: Order stops ongoing unregistered sales.",
     "distractorExplanations": {
-      "a": "Administrator must disprove every possible exemption first.",
-      "c": "Administrator personally issues court injunction without court.",
-      "d": "Effective registration equals endorsement."
+      "a": "This statement is false about a cease-and-desist order and does not match the correct definition.",
+      "c": "This statement is false about a cease-and-desist order and does not match the correct definition.",
+      "d": "This statement is false about a cease-and-desist order and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-remedies-005",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-remedies",
-    "prompt": "In Series 63 enforcement remedies, why do limitation periods matter?",
+    "prompt": "For the Series 63, which of the following best answers this item: In Series 63 enforcement remedies, why do limitation periods matter?",
     "options": [
       {
         "id": "a",
-        "text": "A court order restraining conduct, often sought by Administrator to stop violations."
+        "text": "Civil actions must never be brought within specified time limits after discovery or violation"
       },
       {
         "id": "b",
-        "text": "Affected persons often can request hearing after denial, suspension, revocation, or summary action."
+        "text": "limitation periods matter has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Civil actions must be brought within specified time limits after discovery or violation."
+        "text": "Civil actions must be brought within specified time limits after discovery or violation"
       },
       {
         "id": "d",
-        "text": "Selling securities through material misstatement/omission or unlawful sale can create rescission or damages liability."
+        "text": "limitation periods matter is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Civil actions must be brought within specified time limits after discovery or violation. Example: Claim may be barred if filed too late.",
     "distractorExplanations": {
-      "a": "Administrator personally issues court injunction without court.",
-      "b": "No ability to contest administrative action.",
-      "d": "Only regulators can act; customers cannot sue."
+      "a": "This statement is false about limitation periods matter and does not match the correct definition.",
+      "b": "This statement is false about limitation periods matter and does not match the correct definition.",
+      "d": "This statement is false about limitation periods matter and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-remedies-006",
@@ -1558,30 +1558,30 @@
     "options": [
       {
         "id": "a",
-        "text": "The person claiming an exemption generally has the burden of proving it."
+        "text": "final order status matter always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Willful violations can lead to criminal penalties, but prosecution usually involves appropriate criminal authorities."
+        "text": "final order status matter has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Registration, investigation, subpoena, examination, orders, rulemaking, and enforcement powers under state law."
+        "text": "final order status matter is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "Final orders can create disqualification, disclosure, or registration consequences."
+        "text": "Final orders can create disqualification, disclosure, or registration consequences"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Final orders can create disqualification, disclosure, or registration consequences. Example: Prior final order for fraud can affect registration.",
     "distractorExplanations": {
-      "a": "Administrator must disprove every possible exemption first.",
-      "b": "Every technical filing error is criminal.",
-      "c": "Thinking Administrator needs court approval for every inquiry."
+      "a": "This statement is false about final order status matter and does not match the correct definition.",
+      "b": "This statement is false about final order status matter and does not match the correct definition.",
+      "c": "This statement is false about final order status matter and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-remedies-007",
@@ -1591,30 +1591,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Affected persons often can request hearing after denial, suspension, revocation, or summary action."
+        "text": "Affected persons often can request hearing after denial, suspension, revocation, or summary action"
       },
       {
         "id": "b",
-        "text": "An administrative order requiring a person to stop violating securities law or rules."
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "Civil actions must be brought within specified time limits after discovery or violation."
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Registration does not mean the state approved, recommended, or guaranteed the security."
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Affected persons often can request hearing after denial, suspension, revocation, or summary action. Example: Registrant requests hearing after suspension.",
     "distractorExplanations": {
-      "b": "Cease-and-desist is the same as criminal conviction.",
-      "c": "Fraud claims last forever.",
-      "d": "Effective registration equals endorsement."
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-securities-001",
@@ -1624,30 +1624,30 @@
     "options": [
       {
         "id": "a",
-        "text": "A state filing for certain federal covered securities, often with documents, consent to service, and fees, not full merit registration."
+        "text": "registration by qualification always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "State registration method used when coordination or filing is unavailable, requiring detailed disclosure to Administrator."
+        "text": "State registration method used when coordination or filing is unavailable, requiring detailed disclosure to Administrator"
       },
       {
         "id": "c",
-        "text": "A transaction where proceeds go to the issuer, usually primary market."
+        "text": "registration by qualification has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "A security whose state registration is preempted under federal law, though states may require notice filings and fees."
+        "text": "registration by qualification is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "State registration method used when coordination or filing is unavailable, requiring detailed disclosure to Administrator. Example: Intrastate offering may use qualification.",
     "distractorExplanations": {
-      "a": "Calling notice filing state registration approval.",
-      "c": "Secondary market trades are issuer transactions.",
-      "d": "State has no antifraud authority over federal covered securities."
+      "a": "This statement is false about registration by qualification and does not match the correct definition.",
+      "c": "This statement is false about registration by qualification and does not match the correct definition.",
+      "d": "This statement is false about registration by qualification and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-SECURITIES)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-SECURITIES). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-securities-002",
@@ -1657,30 +1657,30 @@
     "options": [
       {
         "id": "a",
-        "text": "A security exempt from state registration requirements because of issuer/type, though antifraud rules still apply."
+        "text": "a security under the Uniform Securities Act always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Separate offerings may be combined for exemption analysis if they are really one financing plan."
+        "text": "a security under the Uniform Securities Act has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "A broad category including stocks, bonds, notes, investment contracts, limited partnership interests, and many other instruments."
+        "text": "A broad category including stocks, bonds, notes, investment contracts, limited partnership interests, and many other instruments"
       },
       {
         "id": "d",
-        "text": "A security whose state registration is preempted under federal law, though states may require notice filings and fees."
+        "text": "a security under the Uniform Securities Act is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "A broad category including stocks, bonds, notes, investment contracts, limited partnership interests, and many other instruments. Example: An investment contract can be a security even if not called stock.",
     "distractorExplanations": {
-      "a": "Exempt means antifraud rules do not apply.",
-      "b": "Splitting offering into pieces always preserves exemption.",
-      "d": "State has no antifraud authority over federal covered securities."
+      "a": "This statement is false about a security under the Uniform Securities Act and does not match the correct definition.",
+      "b": "This statement is false about a security under the Uniform Securities Act and does not match the correct definition.",
+      "d": "This statement is false about a security under the Uniform Securities Act and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-SECURITIES)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-SECURITIES). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-securities-003",
@@ -1690,30 +1690,30 @@
     "options": [
       {
         "id": "a",
-        "text": "A security whose state registration is preempted under federal law, though states may require notice filings and fees."
+        "text": "the investment contract concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "A security exempt from state registration requirements because of issuer/type, though antifraud rules still apply."
+        "text": "the investment contract concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "A transaction exempt from registration, often because of buyer type or transaction nature, while the security itself may not be exempt."
+        "text": "the investment contract concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "Investment of money in a common enterprise with expectation of profits primarily from efforts of others."
+        "text": "Investment of money in a common enterprise with expectation of profits primarily from efforts of others"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Investment of money in a common enterprise with expectation of profits primarily from efforts of others. Example: Passive real estate program can be investment contract.",
     "distractorExplanations": {
-      "a": "State has no antifraud authority over federal covered securities.",
-      "b": "Exempt means antifraud rules do not apply.",
-      "c": "Confusing exempt security and exempt transaction."
+      "a": "This statement is false about the investment contract concept and does not match the correct definition.",
+      "b": "This statement is false about the investment contract concept and does not match the correct definition.",
+      "c": "This statement is false about the investment contract concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-SECURITIES)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-SECURITIES). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-securities-004",
@@ -1723,30 +1723,30 @@
     "options": [
       {
         "id": "a",
-        "text": "A transaction where proceeds do not go to issuer, typically secondary trading between investors."
+        "text": "A transaction where proceeds do not go to issuer, typically secondary trading between investors"
       },
       {
         "id": "b",
-        "text": "Investment of money in a common enterprise with expectation of profits primarily from efforts of others."
+        "text": "a nonissuer transaction always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "A security whose state registration is preempted under federal law, though states may require notice filings and fees."
+        "text": "a nonissuer transaction has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "A transaction where proceeds go to the issuer, usually primary market."
+        "text": "a nonissuer transaction is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "A transaction where proceeds do not go to issuer, typically secondary trading between investors. Example: Investor sells shares to another investor.",
     "distractorExplanations": {
-      "b": "If no stock certificate, not a security.",
-      "c": "State has no antifraud authority over federal covered securities.",
-      "d": "Secondary market trades are issuer transactions."
+      "b": "This statement is false about a nonissuer transaction and does not match the correct definition.",
+      "c": "This statement is false about a nonissuer transaction and does not match the correct definition.",
+      "d": "This statement is false about a nonissuer transaction and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-SECURITIES)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-SECURITIES). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-securities-005",
@@ -1756,30 +1756,30 @@
     "options": [
       {
         "id": "a",
-        "text": "A transaction where proceeds do not go to issuer, typically secondary trading between investors."
+        "text": "a stop order always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Administrator order denying, suspending, or revoking effectiveness of a securities registration."
+        "text": "Administrator order denying, suspending, or revoking effectiveness of a securities registration"
       },
       {
         "id": "c",
-        "text": "State registration coordinated with a federal Securities Act registration statement."
+        "text": "a stop order has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Separate offerings may be combined for exemption analysis if they are really one financing plan."
+        "text": "a stop order is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Administrator order denying, suspending, or revoking effectiveness of a securities registration. Example: False filing can lead to stop order.",
     "distractorExplanations": {
-      "a": "Issuer receives funds from every stock trade.",
-      "c": "Using coordination when no federal registration exists.",
-      "d": "Splitting offering into pieces always preserves exemption."
+      "a": "This statement is false about a stop order and does not match the correct definition.",
+      "c": "This statement is false about a stop order and does not match the correct definition.",
+      "d": "This statement is false about a stop order and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-SECURITIES)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-SECURITIES). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-securities-006",
@@ -1789,30 +1789,30 @@
     "options": [
       {
         "id": "a",
-        "text": "A transaction exempt from registration, often because of buyer type or transaction nature, while the security itself may not be exempt."
+        "text": "an issuer transaction always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "A state filing for certain federal covered securities, often with documents, consent to service, and fees, not full merit registration."
+        "text": "an issuer transaction has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "A transaction where proceeds go to the issuer, usually primary market."
+        "text": "A transaction where proceeds go to the issuer, usually primary market"
       },
       {
         "id": "d",
-        "text": "A transaction where proceeds do not go to issuer, typically secondary trading between investors."
+        "text": "an issuer transaction is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "A transaction where proceeds go to the issuer, usually primary market. Example: Company sells newly issued shares.",
     "distractorExplanations": {
-      "a": "Confusing exempt security and exempt transaction.",
-      "b": "Calling notice filing state registration approval.",
-      "d": "Issuer receives funds from every stock trade."
+      "a": "This statement is false about an issuer transaction and does not match the correct definition.",
+      "b": "This statement is false about an issuer transaction and does not match the correct definition.",
+      "d": "This statement is false about an issuer transaction and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-SECURITIES)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-SECURITIES). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-ia-001",
@@ -1822,30 +1822,30 @@
     "options": [
       {
         "id": "a",
-        "text": "A person in business of advising others about securities for compensation."
+        "text": "Broker-dealer advice must never be solely incidental and without special advisory compensation to remain excluded"
       },
       {
         "id": "b",
-        "text": "Advice about securities, in the business, for compensation."
+        "text": "special compensation matter for broker-dealer IA exclusion has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Banks, lawyers/accountants/teachers/engineers whose advice is incidental, broker-dealers with incidental advice and no special compensation, publishers, and others may be excluded."
+        "text": "special compensation matter for broker-dealer IA exclusion is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "Broker-dealer advice must be solely incidental and without special advisory compensation to remain excluded."
+        "text": "Broker-dealer advice must be solely incidental and without special advisory compensation to remain excluded"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Broker-dealer advice must be solely incidental and without special advisory compensation to remain excluded. Example: Charging separate planning fee can create IA status.",
     "distractorExplanations": {
-      "a": "All financial planners are IAs regardless of securities advice or compensation.",
-      "b": "Missing indirect compensation.",
-      "c": "Every professional giving any investment comment is an IA."
+      "a": "This statement is false about special compensation matter for broker-dealer IA exclusion and does not match the correct definition.",
+      "b": "This statement is false about special compensation matter for broker-dealer IA exclusion and does not match the correct definition.",
+      "c": "This statement is false about special compensation matter for broker-dealer IA exclusion and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-IA)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-IA). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-ia-002",
@@ -1855,128 +1855,128 @@
     "options": [
       {
         "id": "a",
-        "text": "An adviser registered with the SEC or excluded from state registration due to federal preemption, often based on assets under management or adviser type."
+        "text": "An adviser registered with the SEC or excluded from state registration due to federal preemption, often bas…"
       },
       {
         "id": "b",
-        "text": "State advisers generally register in states where they have place of business or clients unless exempt/preempted."
+        "text": "a federal covered adviser always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "A person in business of advising others about securities for compensation."
+        "text": "a federal covered adviser has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Broker-dealer advice must be solely incidental and without special advisory compensation to remain excluded."
+        "text": "a federal covered adviser is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "An adviser registered with the SEC or excluded from state registration due to federal preemption, often based on assets under management or adviser type. Example: Large advisers generally register with SEC.",
     "distractorExplanations": {
-      "b": "Assuming all advisers register with SEC.",
-      "c": "All financial planners are IAs regardless of securities advice or compensation.",
-      "d": "Commission compensation is always advisory compensation."
+      "b": "This statement is false about a federal covered adviser and does not match the correct definition.",
+      "c": "This statement is false about a federal covered adviser and does not match the correct definition.",
+      "d": "This statement is false about a federal covered adviser and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-IA)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-IA). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-ia-003",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ia",
-    "prompt": "In Series 63 investment advisers, why is custody an IA concern?",
+    "prompt": "For the Series 63, which of the following best answers this item: In Series 63 investment advisers, why is custody an IA concern?",
     "options": [
       {
         "id": "a",
-        "text": "An adviser registered with the SEC or excluded from state registration due to federal preemption, often based on assets under management or adviser type."
+        "text": "custody an IA concern always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Custody of client funds/securities triggers safeguards, disclosure, and examination requirements."
+        "text": "Custody of client funds/securities triggers safeguards, disclosure, and examination requirements"
       },
       {
         "id": "c",
-        "text": "Banks, lawyers/accountants/teachers/engineers whose advice is incidental, broker-dealers with incidental advice and no special compensation, publishers, and others may be excluded."
+        "text": "custody an IA concern has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Broker-dealer advice must be solely incidental and without special advisory compensation to remain excluded."
+        "text": "custody an IA concern is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Custody of client funds/securities triggers safeguards, disclosure, and examination requirements. Example: Adviser can withdraw fees from client account; check custody rule.",
     "distractorExplanations": {
-      "a": "Federal covered advisers ignore all state notice/antifraud rules.",
-      "c": "Every professional giving any investment comment is an IA.",
-      "d": "Commission compensation is always advisory compensation."
+      "a": "This statement is false about custody an IA concern and does not match the correct definition.",
+      "c": "This statement is false about custody an IA concern and does not match the correct definition.",
+      "d": "This statement is false about custody an IA concern and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-IA)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-IA). · Local QA repair (stems/distractors)"
   },
   {
     "id": "series-63-readiness-check-s63-iar-001",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-iar",
-    "prompt": "Which statement best applies to Can solicitors be IARs in Series 63 IARs?",
+    "prompt": "An investment adviser representative (IAR) opens a place of business in State A while the advisory firm is registered there. What registration consequence is most accurate under Series 63 principles?",
     "options": [
       {
         "id": "a",
-        "text": "A place of business in a state often triggers IAR registration there."
+        "text": "A place of business in a state often triggers IAR registration there"
       },
       {
         "id": "b",
-        "text": "An individual associated with an IA or federal covered adviser who gives advice, manages accounts, solicits advisory clients, or supervises such persons."
+        "text": "IARs never register in any state if the SEC regulates the firm"
       },
       {
         "id": "c",
-        "text": "Individuals soliciting advisory clients for compensation may be IARs depending on role and state law."
+        "text": "Only the firm registers; individuals performing advisory functions never register"
       },
       {
         "id": "d",
-        "text": "IARs generally register in states where they have a place of business or meet state client thresholds, including IARs of federal covered advisers."
+        "text": "Place of business matters only for broker-dealer agents, never IARs"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Individuals soliciting advisory clients for compensation may be IARs depending on role and state law. Example: Paid referral solicitor for adviser may need registration.",
+    "correctOptionId": "a",
+    "explanation": "Having a place of business in a state is a classic trigger for IAR registration in that state (subject to specific exclusions). Firm registration status does not erase individual IAR duties.",
     "distractorExplanations": {
-      "a": "Only client residence matters.",
-      "b": "Clerical staff automatically count as IARs.",
-      "d": "Federal covered adviser status eliminates IAR state registration."
+      "b": "Federal covered advisers change the firm analysis; IARs still often have state notice/registration issues.",
+      "c": "Individuals who meet the IAR definition generally must register or notice-file as required.",
+      "d": "Place-of-business analysis applies to IARs as well as to BD agents in their own regimes."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-IAR)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-IAR). · Local QA repair (stems/distractors) · Local IAR distractor rewrite"
   },
   {
     "id": "series-63-readiness-check-s63-iar-002",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-iar",
-    "prompt": "In Series 63 IARs, why does place of business matter for IARs?",
+    "prompt": "Which activity most clearly points toward investment adviser representative status under the Series 63 framework?",
     "options": [
       {
         "id": "a",
-        "text": "Series 65 or Series 66 plus Series 7 commonly satisfy IAR exam requirements, subject to state rules."
+        "text": "Soliciting advisory clients for compensation in a role covered by the IAR definition"
       },
       {
         "id": "b",
-        "text": "The investment adviser must supervise IARs and ensure compliance with advisory laws and procedures."
+        "text": "Working solely as a receptionist with no securities or advisory contact"
       },
       {
         "id": "c",
-        "text": "An individual associated with an IA or federal covered adviser who gives advice, manages accounts, solicits advisory clients, or supervises such persons."
+        "text": "Driving a delivery van for the advisory firm’s office supplies"
       },
       {
         "id": "d",
-        "text": "A place of business in a state often triggers IAR registration there."
+        "text": "Owning shares of an unrelated public company in a personal brokerage account"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "A place of business in a state often triggers IAR registration there. Example: IAR office in State A triggers State A registration.",
+    "correctOptionId": "a",
+    "explanation": "Soliciting advisory clients for compensation is core IAR territory under state adviser frameworks tested on Series 63.",
     "distractorExplanations": {
-      "a": "Series 63 alone qualifies IAR status.",
-      "b": "IARs operate independently because they are professionals.",
-      "c": "Clerical staff automatically count as IARs."
+      "b": "Pure clerical roles without solicitation/advice are typically excluded.",
+      "c": "Non-advisory logistics work is not IAR activity.",
+      "d": "Personal investing alone does not make someone an IAR of a firm."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-IAR)."
+    "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-IAR). · Local QA repair (stems/distractors) · Local IAR distractor rewrite"
   }
 ]

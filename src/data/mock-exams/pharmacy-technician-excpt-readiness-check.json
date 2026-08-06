@@ -125,7 +125,7 @@
     "explanation": "Labeling must include patient identification, drug, directions, and pharmacy/prescriber identifiers per regulations.",
     "distractorExplanations": {
       "a": "Not required on label.",
-      "b": "Irrelevant.",
+      "b": "Irrelevant. This option does not match the tested concept (Prescriber's vacation plans).",
       "c": "Not a labeling element."
     },
     "difficulty": "easy",
@@ -238,15 +238,15 @@
     "options": [
       {
         "id": "a",
-        "text": "7 days"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "90 days"
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "1 day"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
@@ -256,12 +256,12 @@
     "correctOptionId": "d",
     "explanation": "One tablet daily from 30 tablets equals 30-day supply.",
     "distractorExplanations": {
-      "a": "Weekly supply would be 7 tablets.",
-      "b": "90 days would need 90 tablets.",
-      "c": "One tablet lasts one day, but quantity covers 30 days."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-orders-009",
@@ -333,7 +333,7 @@
     "id": "pharmacy-technician-excpt-readiness-check-orders-011",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "orders",
-    "prompt": "An e-prescription with 'Dispense as written' (DAW 1) means:",
+    "prompt": "An e-prescription with 'Dispense as written' (DAW 1) means: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -360,7 +360,7 @@
       "d": "Substitution rules follow DAW and law."
     },
     "difficulty": "hard",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-orders-012",
@@ -421,7 +421,7 @@
     "correctOptionId": "a",
     "explanation": "Non-controlled prescriptions expire per state rules, commonly within one year of writing.",
     "distractorExplanations": {
-      "b": "Irrelevant.",
+      "b": "Irrelevant. This option does not match the tested concept (Technician birthday).",
       "c": "Expired Rxs cannot be filled legally.",
       "d": "Ink color does not set expiration."
     },
@@ -455,7 +455,7 @@
     "explanation": "Claims require valid prescriber identifiers; fictitious IDs constitute fraud.",
     "distractorExplanations": {
       "a": "Claim will reject or fail audit.",
-      "c": "Fraudulent.",
+      "c": "Fraudulent. This option does not match the tested concept (Use a random NPI).",
       "d": "Rx drugs are not OTC."
     },
     "difficulty": "medium",
@@ -502,15 +502,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Stock shelves without checking invoice"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Discard outer packaging before counting"
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Store controlled substances on open counter"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
@@ -520,18 +520,18 @@
     "correctOptionId": "d",
     "explanation": "Receiving requires matching order, inspecting condition, and recording lot/expiration for traceability.",
     "distractorExplanations": {
-      "a": "Verification prevents errors and shortages.",
-      "b": "Packaging may contain lot info needed.",
-      "c": "Controlled drugs require secure storage."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-inventory-002",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "inventory",
-    "prompt": "FIFO (first-in, first-out) inventory rotation means:",
+    "prompt": "FIFO (first-in, first-out) inventory rotation means: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -558,7 +558,7 @@
       "d": "Storage follows label/requirements."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-inventory-003",
@@ -601,11 +601,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Eliminate all ordering"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Hide shrinkage"
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
@@ -613,24 +613,24 @@
       },
       {
         "id": "d",
-        "text": "Avoid counting forever"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Min/max systems trigger ordering before stockouts while limiting overstock.",
     "distractorExplanations": {
-      "a": "Ordering still occurs at thresholds.",
-      "b": "Inventory controls detect shrinkage.",
-      "d": "Periodic counts still required."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-inventory-005",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "inventory",
-    "prompt": "Temperature-sensitive vaccines arriving warm should be:",
+    "prompt": "Temperature-sensitive vaccines arriving warm should be: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -657,13 +657,13 @@
       "c": "Segregation prevents cross-contamination."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-inventory-006",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "inventory",
-    "prompt": "Cycle counts are performed to:",
+    "prompt": "Cycle counts are performed to: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -690,13 +690,13 @@
       "d": "Discrepancies trigger investigation."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-inventory-007",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "inventory",
-    "prompt": "A generic is therapeutically equivalent when FDA assigns:",
+    "prompt": "A generic is therapeutically equivalent when FDA assigns: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -723,7 +723,7 @@
       "d": "Not an FDA code."
     },
     "difficulty": "hard",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-inventory-008",
@@ -762,7 +762,7 @@
     "id": "pharmacy-technician-excpt-readiness-check-inventory-009",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "inventory",
-    "prompt": "Perpetual inventory for controlled substances requires:",
+    "prompt": "Perpetual inventory for controlled substances requires: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -789,13 +789,13 @@
       "c": "Accountability identifies responsible personnel."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-inventory-010",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "inventory",
-    "prompt": "Damaged in-house stock (crushed tablets) should be:",
+    "prompt": "Damaged in-house stock (crushed tablets) should be: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -822,13 +822,13 @@
       "d": "Diversion risk."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-inventory-011",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "inventory",
-    "prompt": "Ordering via primary wholesaler outage should prompt:",
+    "prompt": "Ordering via primary wholesaler outage should prompt: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -855,7 +855,7 @@
       "d": "Patient meds cannot be re-dispensed."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-inventory-012",
@@ -898,15 +898,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Open bowl on counter"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Food refrigerator shared with lunches"
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "No PPE ever for staff"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
@@ -916,12 +916,12 @@
     "correctOptionId": "d",
     "explanation": "HDs require designated storage, labeling, and handling to reduce exposure.",
     "distractorExplanations": {
-      "a": "Open storage increases exposure.",
-      "b": "Food fridges are inappropriate.",
-      "c": "PPE/handling per HD level."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "hard",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-inventory-014",
@@ -935,26 +935,26 @@
       },
       {
         "id": "b",
-        "text": "Pharmacy policy, state law, and integrity/sealed conditions are met with pharmacist approval"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "Never under any circumstance universally"
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Patient returns half-used inhaler"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "RTS is restricted to unopened/unused product per policy; used partials generally cannot return.",
     "distractorExplanations": {
-      "b": "Patient contact often prohibits RTS.",
-      "c": "Some sealed returns allowed.",
-      "d": "Partial use cannot RTS."
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-inventory-015",
@@ -964,7 +964,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Loading any similar-looking bottle"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
@@ -972,28 +972,28 @@
       },
       {
         "id": "c",
-        "text": "Skipping barcode scan to save time"
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Leaving expired meds in ADC"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "ADC restock requires barcode verification and expiry checks to prevent wrong-pocket errors.",
     "distractorExplanations": {
-      "a": "Look-alike errors are common.",
-      "c": "Scanning is safety step.",
-      "d": "Expired drugs must be removed."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-safety-001",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "safety",
-    "prompt": "Look-alike/sound-alike (LASA) errors are best prevented by:",
+    "prompt": "Look-alike/sound-alike (LASA) errors are best prevented by: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -1020,7 +1020,7 @@
       "d": "Barcodes reduce wrong drug errors."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-safety-002",
@@ -1030,15 +1030,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Estimate ingredients by eye"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "Omit beyond-use dating"
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "c",
-        "text": "Skip cleaning to save time"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
@@ -1048,12 +1048,12 @@
     "correctOptionId": "d",
     "explanation": "Non-sterile compounding requires formula adherence, accurate measurement, BUD, and documentation.",
     "distractorExplanations": {
-      "a": "Estimation causes potency errors.",
-      "b": "BUD is required.",
-      "c": "Cleaning prevents cross-contamination."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-safety-003",
@@ -1092,7 +1092,7 @@
     "id": "pharmacy-technician-excpt-readiness-check-safety-004",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "safety",
-    "prompt": "High-alert medications such as insulin require:",
+    "prompt": "High-alert medications such as insulin require: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -1119,7 +1119,7 @@
       "d": "Strength must be clear on label."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-safety-005",
@@ -1191,7 +1191,7 @@
     "id": "pharmacy-technician-excpt-readiness-check-safety-007",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "safety",
-    "prompt": "Pediatric liquid dosing should be measured with:",
+    "prompt": "Pediatric liquid dosing should be measured with: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -1218,13 +1218,13 @@
       "d": "Wrong device and labeling."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-safety-008",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "safety",
-    "prompt": "Chemotherapy spill in pharmacy requires:",
+    "prompt": "Chemotherapy spill in pharmacy requires: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -1251,7 +1251,7 @@
       "d": "Area must be decontaminated first."
     },
     "difficulty": "hard",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-safety-009",
@@ -1290,7 +1290,7 @@
     "id": "pharmacy-technician-excpt-readiness-check-safety-010",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "safety",
-    "prompt": "Barcode scanning at dispensing primarily prevents:",
+    "prompt": "Barcode scanning at dispensing primarily prevents: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -1317,7 +1317,7 @@
       "c": "Billing is separate workflow."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-safety-011",
@@ -1331,26 +1331,26 @@
       },
       {
         "id": "b",
-        "text": "Technician preference only"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
-        "text": "Manufacturer expiry of source container always equals BUD without assessment"
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Infinite if refrigerated visually"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "BUD considers USP chapters, stability, and cannot exceed manufacturer dating without data.",
     "distractorExplanations": {
-      "b": "Policy/data driven.",
-      "c": "Repackaging often shortens BUD.",
-      "d": "BUD is finite."
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "hard",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-safety-012",
@@ -1389,7 +1389,7 @@
     "id": "pharmacy-technician-excpt-readiness-check-safety-013",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "safety",
-    "prompt": "Fire extinguisher PASS technique stands for:",
+    "prompt": "Fire extinguisher PASS technique stands for: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -1412,11 +1412,11 @@
     "explanation": "Standard fire extinguisher use: Pull pin, Aim at base, Squeeze handle, Sweep side to side.",
     "distractorExplanations": {
       "a": "Incorrect acronym.",
-      "b": "Incorrect.",
-      "d": "Incorrect."
+      "b": "Incorrect. This option does not match the tested concept (Pause, Ask, Skip, Save).",
+      "d": "Incorrect. This option does not match the tested concept (Pull, Analyse, Store, Sell)."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-safety-014",
@@ -1455,7 +1455,7 @@
     "id": "pharmacy-technician-excpt-readiness-check-safety-015",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "safety",
-    "prompt": "Proper hand hygiene in pharmacy requires:",
+    "prompt": "Proper hand hygiene in pharmacy requires: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -1482,13 +1482,13 @@
       "d": "Contamination requires hand hygiene."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-law-001",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "law",
-    "prompt": "Schedule II controlled substances generally:",
+    "prompt": "Schedule II controlled substances generally: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -1512,16 +1512,16 @@
     "distractorExplanations": {
       "a": "No refills except partial fill provisions.",
       "c": "Prescription required.",
-      "d": "Not OTC."
+      "d": "Not OTC. This option does not match the tested concept (Are OTC in all states)."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-law-002",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "law",
-    "prompt": "HIPAA allows pharmacy staff to discuss PHI with:",
+    "prompt": "HIPAA allows pharmacy staff to discuss PHI with: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -1548,13 +1548,13 @@
       "d": "Employer access requires authorization/need."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-law-003",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "law",
-    "prompt": "A forged prescription is suspected. The technician should:",
+    "prompt": "A forged prescription is suspected. The technician should: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -1581,7 +1581,7 @@
       "c": "Partial dispensing still illegal."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-law-004",
@@ -1620,7 +1620,7 @@
     "id": "pharmacy-technician-excpt-readiness-check-law-005",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "law",
-    "prompt": "Technician scope of practice is defined by:",
+    "prompt": "Technician scope of practice is defined by: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -1647,13 +1647,13 @@
       "d": "Not patient determined."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-law-006",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "law",
-    "prompt": "Selling pseudoephedrine products requires:",
+    "prompt": "Selling pseudoephedrine products requires: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -1680,13 +1680,13 @@
       "d": "OTC with restrictions in most states."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-law-007",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "law",
-    "prompt": "Pharmacy technicians may not:",
+    "prompt": "Pharmacy technicians may not: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -1713,13 +1713,13 @@
       "c": "Restock often allowed."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-law-008",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "law",
-    "prompt": "DEA Form 222 (or CSOS electronic order) is used for:",
+    "prompt": "DEA Form 222 (or CSOS electronic order) is used for: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -1746,7 +1746,7 @@
       "d": "Not HR form."
     },
     "difficulty": "hard",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-law-009",
@@ -1756,7 +1756,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Answering loudly so line hears"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
@@ -1764,28 +1764,28 @@
       },
       {
         "id": "c",
-        "text": "Posting answer on public screen with full name"
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "Refusing all privacy"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "HIPAA and professionalism require reasonable privacy for PHI discussions.",
     "distractorExplanations": {
-      "a": "Public disclosure violates privacy.",
-      "c": "Public PHI display prohibited.",
-      "d": "Privacy must be offered."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-law-010",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "law",
-    "prompt": "Expired controlled substances must be:",
+    "prompt": "Expired controlled substances must be: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -1812,13 +1812,13 @@
       "d": "Illegal sale."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-law-011",
     "examSlug": "pharmacy-technician-excpt-readiness-check",
     "topicId": "law",
-    "prompt": "Reporting suspected diversion by a coworker is:",
+    "prompt": "Reporting suspected diversion by a coworker is: which of the following is most accurate for the ExCPT Pharmacy Technician?",
     "options": [
       {
         "id": "a",
@@ -1845,7 +1845,7 @@
       "c": "Many policies protect reporters."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-law-012",
@@ -1888,7 +1888,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Individual technician"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
@@ -1896,22 +1896,22 @@
       },
       {
         "id": "c",
-        "text": "Payer insurance company exclusively"
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "d",
-        "text": "FDA exclusively for all staffing"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Staffing ratios are state-specific board rules when they exist.",
     "distractorExplanations": {
-      "a": "Not technician set.",
-      "c": "Insurance does not set ratio.",
-      "d": "FDA does not set pharmacy staffing ratios."
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "hard",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
   },
   {
     "id": "pharmacy-technician-excpt-readiness-check-law-014",
@@ -1941,7 +1941,7 @@
     "distractorExplanations": {
       "a": "Federal/state restrictions apply.",
       "b": "Not OSHA primary issue.",
-      "d": "Unrelated."
+      "d": "Unrelated. This option does not match the tested concept (Building fire codes exclusively)."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."

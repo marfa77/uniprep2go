@@ -1,0 +1,368 @@
+{
+  "auditedAt": "2026-08-06T14:42:01.708Z",
+  "mode": "local-no-openrouter",
+  "banks": [
+    {
+      "slug": "sie-full-mock",
+      "bankSize": 75,
+      "validateErrors": [],
+      "dupStems": 0,
+      "keyCounts": {
+        "a": 19,
+        "b": 19,
+        "c": 19,
+        "d": 18
+      },
+      "flagCount": 6,
+      "flags": [
+        {
+          "id": "sie-full-mock-capital-markets-010",
+          "issue": "short_stem",
+          "len": 52
+        },
+        {
+          "id": "sie-full-mock-capital-markets-011",
+          "issue": "short_stem",
+          "len": 54
+        },
+        {
+          "id": "sie-full-mock-capital-markets-012",
+          "issue": "short_stem",
+          "len": 59
+        },
+        {
+          "id": "sie-full-mock-products-risks-001",
+          "issue": "short_stem",
+          "len": 57
+        },
+        {
+          "id": "sie-full-mock-products-risks-011",
+          "issue": "short_stem",
+          "len": 56
+        },
+        {
+          "id": "sie-full-mock-trading-accounts-019",
+          "issue": "short_stem",
+          "len": 52
+        }
+      ],
+      "sampleShort": [
+        {
+          "id": "sie-full-mock-capital-markets-010",
+          "prompt": "In SIE capital markets, what does the MSRB regulate?",
+          "len": 52
+        },
+        {
+          "id": "sie-full-mock-capital-markets-011",
+          "prompt": "In SIE capital markets, what does a transfer agent do?",
+          "len": 54
+        },
+        {
+          "id": "sie-full-mock-capital-markets-012",
+          "prompt": "In SIE capital markets, what does an investment adviser do?",
+          "len": 59
+        },
+        {
+          "id": "sie-full-mock-products-risks-001",
+          "prompt": "In SIE products and risks, why do liquidity needs matter?",
+          "len": 57
+        },
+        {
+          "id": "sie-full-mock-products-risks-011",
+          "prompt": "In SIE products and risks, why are leveraged ETFs risky?",
+          "len": 56
+        }
+      ]
+    },
+    {
+      "slug": "series-7-readiness-check",
+      "bankSize": 60,
+      "validateErrors": [],
+      "dupStems": 0,
+      "keyCounts": {
+        "a": 15,
+        "b": 15,
+        "c": 15,
+        "d": 15
+      },
+      "flagCount": 2,
+      "flags": [
+        {
+          "id": "series-7-readiness-check-s7-f2-005",
+          "issue": "short_stem",
+          "len": 59
+        },
+        {
+          "id": "series-7-readiness-check-s7-f3-016",
+          "issue": "short_stem",
+          "len": 51
+        }
+      ],
+      "sampleShort": [
+        {
+          "id": "series-7-readiness-check-s7-f2-005",
+          "prompt": "In Series 7 customer accounts, why does tax bracket matter?",
+          "len": 59
+        },
+        {
+          "id": "series-7-readiness-check-s7-f3-016",
+          "prompt": "What makes variable annuity suitability sensitive ?",
+          "len": 51
+        }
+      ]
+    },
+    {
+      "slug": "series-63-readiness-check",
+      "bankSize": 60,
+      "validateErrors": [],
+      "dupStems": 0,
+      "keyCounts": {
+        "a": 15,
+        "b": 15,
+        "c": 15,
+        "d": 15
+      },
+      "flagCount": 5,
+      "flags": [
+        {
+          "id": "series-63-readiness-check-s63-agent-001",
+          "issue": "short_stem",
+          "len": 52
+        },
+        {
+          "id": "series-63-readiness-check-s63-agent-004",
+          "issue": "short_stem",
+          "len": 50
+        },
+        {
+          "id": "series-63-readiness-check-s63-agent-006",
+          "issue": "short_stem",
+          "len": 49
+        },
+        {
+          "id": "series-63-readiness-check-s63-bd-002",
+          "issue": "short_stem",
+          "len": 53
+        },
+        {
+          "id": "series-63-readiness-check-s63-bd-005",
+          "issue": "short_stem",
+          "len": 59
+        }
+      ],
+      "sampleShort": [
+        {
+          "id": "series-63-readiness-check-s63-agent-001",
+          "prompt": "Can an agent represent more than one broker-dealer ?",
+          "len": 52
+        },
+        {
+          "id": "series-63-readiness-check-s63-agent-004",
+          "prompt": "What filing is required when an agent terminates ?",
+          "len": 50
+        },
+        {
+          "id": "series-63-readiness-check-s63-agent-006",
+          "prompt": "What filing is required when an agent terminates?",
+          "len": 49
+        },
+        {
+          "id": "series-63-readiness-check-s63-bd-002",
+          "prompt": "What books and records can a state require from a BD?",
+          "len": 53
+        },
+        {
+          "id": "series-63-readiness-check-s63-bd-005",
+          "prompt": "Can states impose financial requirements on broker-dealers?",
+          "len": 59
+        }
+      ]
+    },
+    {
+      "slug": "california-real-estate-readiness-check",
+      "bankSize": 60,
+      "validateErrors": [],
+      "dupStems": 0,
+      "keyCounts": {
+        "a": 15,
+        "b": 15,
+        "c": 15,
+        "d": 15
+      },
+      "flagCount": 4,
+      "flags": [
+        {
+          "id": "california-real-estate-readiness-check-ca-practice-001",
+          "issue": "short_stem",
+          "len": 57
+        },
+        {
+          "id": "california-real-estate-readiness-check-ca-practice-005",
+          "issue": "short_stem",
+          "len": 58
+        },
+        {
+          "id": "california-real-estate-readiness-check-ca-practice-006",
+          "issue": "short_stem",
+          "len": 57
+        },
+        {
+          "id": "california-real-estate-readiness-check-ca-transfer-001",
+          "issue": "short_stem",
+          "len": 59
+        }
+      ],
+      "sampleShort": [
+        {
+          "id": "california-real-estate-readiness-check-ca-practice-001",
+          "prompt": "A dual agency situation in California generally requires:",
+          "len": 57
+        },
+        {
+          "id": "california-real-estate-readiness-check-ca-practice-005",
+          "prompt": "A California broker's supervision duty generally includes:",
+          "len": 58
+        },
+        {
+          "id": "california-real-estate-readiness-check-ca-practice-006",
+          "prompt": "Alquist-Priolo special studies zones relate primarily to:",
+          "len": 57
+        },
+        {
+          "id": "california-real-estate-readiness-check-ca-transfer-001",
+          "prompt": "An amortizing fixed-rate mortgage payment primarily covers:",
+          "len": 59
+        }
+      ]
+    },
+    {
+      "slug": "life-and-health-insurance-readiness-check",
+      "bankSize": 60,
+      "validateErrors": [],
+      "dupStems": 0,
+      "keyCounts": {
+        "a": 15,
+        "b": 15,
+        "c": 15,
+        "d": 15
+      },
+      "flagCount": 6,
+      "flags": [
+        {
+          "id": "life-and-health-insurance-readiness-check-ins-health-012",
+          "issue": "short_stem",
+          "len": 53
+        },
+        {
+          "id": "life-and-health-insurance-readiness-check-ins-provisions-002",
+          "issue": "short_stem",
+          "len": 58
+        },
+        {
+          "id": "life-and-health-insurance-readiness-check-ins-provisions-007",
+          "issue": "short_stem",
+          "len": 56
+        },
+        {
+          "id": "life-and-health-insurance-readiness-check-ins-provisions-008",
+          "issue": "short_stem",
+          "len": 55
+        },
+        {
+          "id": "life-and-health-insurance-readiness-check-ins-general-007",
+          "issue": "short_stem",
+          "len": 57
+        },
+        {
+          "id": "life-and-health-insurance-readiness-check-ins-disability-ltc-001",
+          "issue": "short_stem",
+          "len": 59
+        }
+      ],
+      "sampleShort": [
+        {
+          "id": "life-and-health-insurance-readiness-check-ins-health-012",
+          "prompt": "In health insurance, what does Medicare Part B cover?",
+          "len": 53
+        },
+        {
+          "id": "life-and-health-insurance-readiness-check-ins-provisions-002",
+          "prompt": "Whole life insurance differs from term because whole life:",
+          "len": 58
+        },
+        {
+          "id": "life-and-health-insurance-readiness-check-ins-provisions-007",
+          "prompt": "Mortality tables used in life insurance pricing reflect:",
+          "len": 56
+        },
+        {
+          "id": "life-and-health-insurance-readiness-check-ins-provisions-008",
+          "prompt": "Attending Physician Statement (APS) in underwriting is:",
+          "len": 55
+        },
+        {
+          "id": "life-and-health-insurance-readiness-check-ins-general-007",
+          "prompt": "In general insurance concepts, why is insurance aleatory?",
+          "len": 57
+        }
+      ]
+    },
+    {
+      "slug": "property-casualty-insurance-readiness-check",
+      "bankSize": 60,
+      "validateErrors": [],
+      "dupStems": 0,
+      "keyCounts": {
+        "a": 15,
+        "b": 15,
+        "c": 15,
+        "d": 15
+      },
+      "flagCount": 4,
+      "flags": [
+        {
+          "id": "property-casualty-insurance-readiness-check-pc-casualty-006",
+          "issue": "short_stem",
+          "len": 59
+        },
+        {
+          "id": "property-casualty-insurance-readiness-check-pc-commercial-property-002",
+          "issue": "short_stem",
+          "len": 53
+        },
+        {
+          "id": "property-casualty-insurance-readiness-check-pc-commercial-property-003",
+          "issue": "short_stem",
+          "len": 49
+        },
+        {
+          "id": "property-casualty-insurance-readiness-check-pc-commercial-property-008",
+          "issue": "short_stem",
+          "len": 52
+        }
+      ],
+      "sampleShort": [
+        {
+          "id": "property-casualty-insurance-readiness-check-pc-casualty-006",
+          "prompt": "In casualty and liability, what does commercial auto cover?",
+          "len": 59
+        },
+        {
+          "id": "property-casualty-insurance-readiness-check-pc-commercial-property-002",
+          "prompt": "In commercial property, what affects BOP eligibility?",
+          "len": 53
+        },
+        {
+          "id": "property-casualty-insurance-readiness-check-pc-commercial-property-003",
+          "prompt": "In commercial property, what does BPP form cover?",
+          "len": 49
+        },
+        {
+          "id": "property-casualty-insurance-readiness-check-pc-commercial-property-008",
+          "prompt": "What affects BOP eligibility? (workplace scenario 9)",
+          "len": 52
+        }
+      ]
+    }
+  ]
+}

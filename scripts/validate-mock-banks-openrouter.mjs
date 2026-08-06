@@ -29,13 +29,22 @@ const registry = loadRegistry(root);
 const TARGET_SLUGS = new Set(listMockSlugs(registry));
 
 function parseArgs(argv) {
-  const args = { slug: null, all: false, apply: false, limit: null };
+  const args = {
+    slug: null,
+    all: false,
+    apply: false,
+    limit: null,
+    live: false,
+    excludeVertical: null,
+  };
   for (let i = 2; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg === "--all") args.all = true;
     else if (arg === "--apply") args.apply = true;
+    else if (arg === "--live") args.live = true;
     else if (arg === "--slug") args.slug = argv[++i];
     else if (arg === "--limit") args.limit = Number(argv[++i]);
+    else if (arg === "--exclude-vertical") args.excludeVertical = argv[++i];
   }
   return args;
 }
@@ -185,12 +194,11 @@ async function main() {
   const credentials = loadCredentials();
   const { mockExamConfigs } = await import("../src/lib/mock-exams/configs.ts");
 
-  // Default --all validates preview registry banks. Explicit --slug also allows live
-  // (sale-grade banks that graduated to indexed mocks, e.g. Digital SAT).
+  // Explicit --slug: any live/preview bank with a JSON file.
+  // --all: preview registry banks (legacy).
+  // --all --live: all live banks (optionally --exclude-vertical citizenship).
   let configs = mockExamConfigs.filter(
-    (config) =>
-      TARGET_SLUGS.has(config.slug) &&
-      (config.status === "preview" || config.status === "live"),
+    (config) => config.status === "preview" || config.status === "live",
   );
 
   if (args.slug) {
@@ -199,12 +207,20 @@ async function main() {
       throw new Error(`Unknown or unsupported slug: ${args.slug}`);
     }
   } else if (!args.all) {
-    throw new Error("Pass --slug <slug> or --all");
+    throw new Error("Pass --slug <slug> or --all [--live] [--exclude-vertical citizenship]");
+  } else if (args.live) {
+    configs = configs.filter((config) => config.status === "live");
   } else {
-    configs = configs.filter((config) => config.status === "preview");
+    configs = configs.filter(
+      (config) => TARGET_SLUGS.has(config.slug) && config.status === "preview",
+    );
   }
 
-  console.log(`Validator: ${VALIDATOR_MODEL} via OpenRouter`);
+  if (args.excludeVertical) {
+    configs = configs.filter((config) => config.verticalId !== args.excludeVertical);
+  }
+
+  console.log(`Validator: ${VALIDATOR_MODEL} via OpenRouter (${configs.length} exams)`);
 
   for (const config of configs) {
     await validateExam(credentials, config, { apply: args.apply, limit: args.limit });
