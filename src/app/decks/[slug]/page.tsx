@@ -127,12 +127,36 @@ export async function generateMetadata({
   );
 }
 
+function parseRepairTopicIds(raw: string | string[] | undefined): string[] {
+  if (!raw) return [];
+  const value = Array.isArray(raw) ? raw.join(",") : raw;
+  return value
+    .split(",")
+    .map((part) => part.trim().toLowerCase())
+    .filter(Boolean);
+}
+
+function topicMatchesRepairFocus(topicName: string, focusIds: string[]): boolean {
+  if (focusIds.length === 0) return false;
+  const normalized = topicName.toLowerCase();
+  return focusIds.some(
+    (id) =>
+      normalized.includes(id.replace(/-/g, " ")) ||
+      normalized.includes(id) ||
+      id.split("-").every((token) => token.length > 2 && normalized.includes(token)),
+  );
+}
+
 export default async function DeckPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ slug: string }>;
+  searchParams?: Promise<{ topics?: string | string[] }>;
 }) {
   const { slug } = await params;
+  const query = searchParams ? await searchParams : {};
+  const repairTopicIds = parseRepairTopicIds(query.topics);
   const deck = await resolveDeckPage(slug);
 
   if (!deck) {
@@ -542,35 +566,56 @@ export default async function DeckPage({
         </section>
 
         {deck.topicCoverage.length > 0 ? (
-          <section id="topic-matrix" className="mt-12">
-            <h2 className="text-2xl font-semibold tracking-tight">
-              {deck.format === "PDF" ? "What is inside the PDF" : "Coverage by exam topic"}
-            </h2>
-            <div className="mt-4 overflow-x-auto rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
-              <table className="w-full min-w-[640px] border-collapse text-left">
-                <thead>
-                  <tr className="border-b border-[#18140f]/15 font-mono text-xs uppercase tracking-[0.18em] text-[#7a6e5a]">
-                    <th className="px-5 py-4 font-medium">
-                      {deck.format === "PDF" ? "Section" : "Topic"}
-                    </th>
-                    <th className="px-5 py-4 font-medium">
-                      {deck.format === "PDF" ? "Length" : "Exam weight"}
-                    </th>
-                    <th className="px-5 py-4 font-medium">
-                      {deck.format === "PDF" ? "What you get" : "Cards"}
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[#18140f]/10">
-                  {deck.topicCoverage.map((topic) => (
-                    <tr key={topic.name}>
-                      <td className="px-5 py-4 font-medium">{topic.name}</td>
-                      <td className="px-5 py-4 text-[#4f493e]">{topic.examWeight}</td>
-                      <td className="px-5 py-4 text-[#4f493e]">{topic.cards}</td>
+          <section className="mt-12" id="repair">
+            <div id="topic-matrix">
+              <h2 className="text-2xl font-semibold tracking-tight">
+                {deck.format === "PDF" ? "What is inside the PDF" : "Coverage by exam topic"}
+              </h2>
+              {repairTopicIds.length > 0 ? (
+                <p className="mt-3 text-sm leading-7 text-[#4f493e]">
+                  Highlighted rows match weak topics from your readiness-check repair plan — prioritize
+                  those tags in Anki after import.
+                </p>
+              ) : null}
+              <div className="mt-4 overflow-x-auto rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
+                <table className="w-full min-w-[640px] border-collapse text-left">
+                  <thead>
+                    <tr className="border-b border-[#18140f]/15 font-mono text-xs uppercase tracking-[0.18em] text-[#7a6e5a]">
+                      <th className="px-5 py-4 font-medium">
+                        {deck.format === "PDF" ? "Section" : "Topic"}
+                      </th>
+                      <th className="px-5 py-4 font-medium">
+                        {deck.format === "PDF" ? "Length" : "Exam weight"}
+                      </th>
+                      <th className="px-5 py-4 font-medium">
+                        {deck.format === "PDF" ? "What you get" : "Cards"}
+                      </th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody className="divide-y divide-[#18140f]/10">
+                    {deck.topicCoverage.map((topic) => {
+                      const focused = topicMatchesRepairFocus(topic.name, repairTopicIds);
+                      return (
+                        <tr
+                          className={focused ? "bg-[#1f3a5f]/8" : undefined}
+                          key={topic.name}
+                        >
+                          <td className="px-5 py-4 font-medium">
+                            {topic.name}
+                            {focused ? (
+                              <span className="ml-2 font-mono text-[10px] uppercase tracking-[0.14em] text-[#1f3a5f]">
+                                Focus
+                              </span>
+                            ) : null}
+                          </td>
+                          <td className="px-5 py-4 text-[#4f493e]">{topic.examWeight}</td>
+                          <td className="px-5 py-4 text-[#4f493e]">{topic.cards}</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </section>
         ) : null}

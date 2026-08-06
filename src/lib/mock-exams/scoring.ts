@@ -219,6 +219,19 @@ function buildRepairPlan(topicResults: MockTopicResult[]): MockRepairPlanItem[] 
     }));
 }
 
+/** Deck page URL with weak-topic handoff for Anki remediation. */
+export function buildLinkedDeckRepairUrl(
+  deckSlug: string,
+  repairPlan: MockRepairPlanItem[],
+): string {
+  const base = `/decks/${deckSlug}`;
+  const topicIds = repairPlan.map((item) => item.topicId).filter(Boolean);
+  if (topicIds.length === 0) {
+    return `${base}#topic-matrix`;
+  }
+  return `${base}?topics=${encodeURIComponent(topicIds.join(","))}#repair`;
+}
+
 function determineVerdict(
   config: MockExamConfig,
   scorePercent: number,
@@ -345,7 +358,7 @@ export function scoreMockAttempt(
     repairPlan,
     disclaimer: config.disclaimer,
     linkedDeckSlug: config.linkedDeckSlug,
-    linkedDeckUrl: `/decks/${config.linkedDeckSlug}`,
+    linkedDeckUrl: buildLinkedDeckRepairUrl(config.linkedDeckSlug, repairPlan),
   };
 }
 

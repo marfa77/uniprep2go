@@ -1,4 +1,6 @@
-import gumroadCatalog from "@/data/gumroad/building-anki-decks.json";
+import buildingCatalog from "@/data/gumroad/building-anki-decks.json";
+import waveCatalog from "@/data/gumroad/wave-anki-decks.json";
+import waveSpecs from "@/data/wave-deck-specs.json";
 import type {
   CatalogAvailableDeck,
   Deck,
@@ -10,27 +12,66 @@ import type {
 import { getAllMockExams } from "./mock-exams/configs";
 import { absoluteUrl } from "./site";
 
-/** Sale-grade bank size target — matches mock bank generator. */
+/** Sale-grade bank size target — matches mock bank generator for thick banks. */
 export const ANKI_BANK_CARDS_PER_TOPIC = 50;
 
-export type ApkgStatus = "pending" | "ready";
+type GumroadCatalog = {
+  storeBaseUrl: string;
+  defaultPriceCents: number;
+  products: Record<
+    string,
+    {
+      permalink: string;
+      gumroadProductId?: string;
+      shortUrl?: string;
+      createdAt?: string;
+      apkgUploadedAt?: string;
+      publishedAt?: string;
+    }
+  >;
+};
 
-export type BuildingAnkiDeckSlug = keyof typeof gumroadCatalog.products;
+const building = buildingCatalog as GumroadCatalog;
+const wave = waveCatalog as GumroadCatalog;
 
-export const BUILDING_ANKI_DECK_SLUGS = Object.keys(
-  gumroadCatalog.products,
-) as BuildingAnkiDeckSlug[];
+type WaveSpec = { cohort?: string; cardCount?: number };
 
-const GUMROAD_STORE = gumroadCatalog.storeBaseUrl.replace(/\/$/, "");
+const waveSpecBySlug = waveSpecs as Record<string, WaveSpec>;
+
+/**
+ * Wave Gumroad products may exist for later cohorts (state RE, health/CDL, etc.).
+ * Only the money cohort auto-launches on the site — the rest stay planned for traffic/waitlist.
+ */
+export const WAVE_LAUNCH_COHORTS = new Set(["money"]);
+
+export type BuildingAnkiDeckSlug = keyof typeof buildingCatalog.products;
+export type WaveAnkiDeckSlug = string;
+
+export const BUILDING_ANKI_DECK_SLUGS = Object.keys(building.products) as BuildingAnkiDeckSlug[];
+
+const GUMROAD_STORE = (building.storeBaseUrl || wave.storeBaseUrl).replace(/\/$/, "");
 
 export function buildGumroadCheckoutUrl(permalink: string) {
   return `${GUMROAD_STORE}/l/${permalink}?wanted=true`;
 }
 
-type GumroadProductRecord = (typeof gumroadCatalog.products)[BuildingAnkiDeckSlug];
+export function getGumroadProductRecord(slug: string) {
+  return building.products[slug] ?? wave.products[slug] ?? null;
+}
 
-export function getGumroadProductRecord(slug: string): GumroadProductRecord | null {
-  return gumroadCatalog.products[slug as BuildingAnkiDeckSlug] ?? null;
+export function isWaveMoneyLaunchSlug(slug: string): boolean {
+  return WAVE_LAUNCH_COHORTS.has(waveSpecBySlug[slug]?.cohort ?? "");
+}
+
+/** Building catalog + approved wave money SKUs only (not every wave Gumroad stub). */
+export function isLaunchableAnkiDeckSlug(slug: string): boolean {
+  if (slug in building.products) return true;
+  return slug in wave.products && isWaveMoneyLaunchSlug(slug);
+}
+
+/** @deprecated Prefer isLaunchableAnkiDeckSlug — kept for building-only call sites. */
+export function isBuildingAnkiDeckSlug(slug: string): slug is BuildingAnkiDeckSlug {
+  return slug in building.products;
 }
 
 export function isApkgReadyOnGumroad(slug: string) {
@@ -47,6 +88,10 @@ export function getLinkedMockForDeck(deckSlug: string) {
 }
 
 export function estimateAnkiDeckCardCount(deckSlug: string): number {
+  const waveSpec = waveSpecBySlug[deckSlug];
+  if (typeof waveSpec?.cardCount === "number" && waveSpec.cardCount > 0) {
+    return waveSpec.cardCount;
+  }
   const mock = getLinkedMockForDeck(deckSlug);
   if (!mock) {
     return 200;
@@ -54,17 +99,33 @@ export function estimateAnkiDeckCardCount(deckSlug: string): number {
   if (typeof mock.ankiDeckCardCount === "number") {
     return mock.ankiDeckCardCount;
   }
-  return mock.topics.length * ANKI_BANK_CARDS_PER_TOPIC;
+  // Building / thick decks: topic × 50 target (session questionCount is not bank size).
+  if (mock.topics.length > 0) {
+    return mock.topics.length * ANKI_BANK_CARDS_PER_TOPIC;
+  }
+  if (typeof mock.questionCount === "number" && mock.questionCount > 0) {
+    return mock.questionCount;
+  }
+  return 200;
 }
 
 export function formatAnkiDeckCardLabel(count: number) {
+  // Exact count for wave banks; keep + only for thick / estimated banks.
+  if (count <= 100) {
+    return String(count);
+  }
   return `${count}+`;
 }
 
-function upgradeTopicCoverage(topicCoverage: TopicCoverage[]): TopicCoverage[] {
+function upgradeTopicCoverage(
+  topicCoverage: TopicCoverage[],
+  cardCount: number,
+): TopicCoverage[] {
+  const perTopic =
+    topicCoverage.length > 0 ? Math.max(1, Math.round(cardCount / topicCoverage.length)) : 0;
   return topicCoverage.map((topic) => ({
     ...topic,
-    cards: topic.cards === "Planned" ? "50+" : topic.cards,
+    cards: topic.cards === "Planned" ? String(perTopic) : topic.cards,
   }));
 }
 
@@ -154,21 +215,18 @@ function buildImportSteps(apkgReady: boolean): ImportStep[] {
   ];
 }
 
-export function isBuildingAnkiDeckSlug(slug: string): slug is BuildingAnkiDeckSlug {
-  return slug in gumroadCatalog.products;
-}
-
 export function isApkgPendingDeck(deck: Pick<Deck, "slug" | "apkgStatus">) {
-  return isBuildingAnkiDeckSlug(deck.slug) && deck.apkgStatus === "pending";
+  return isLaunchableAnkiDeckSlug(deck.slug) && deck.apkgStatus === "pending";
 }
 
 export function applyAnkiDeckLaunch(deck: Deck): Deck {
-  if (deck.status !== "planned" || !isBuildingAnkiDeckSlug(deck.slug)) {
+  if (deck.status !== "planned" || !isLaunchableAnkiDeckSlug(deck.slug)) {
     return deck;
   }
 
   const product = getGumroadProductRecord(deck.slug);
-  if (!product?.permalink) {
+  // Require a real Gumroad product id — permalink stubs alone must not flip planned→available.
+  if (!product?.permalink || !product.gumroadProductId) {
     return deck;
   }
 
@@ -190,7 +248,7 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
       .replace(/^A planned (deck|spaced-repetition deck) for /i, "Anki deck for ")
       .replace(/^A planned /i, "A focused "),
     directAnswer: buildDirectAnswer(deck, cardLabel, mockPath, apkgReady),
-    lastUpdated: "2026-07-15",
+    lastUpdated: "2026-08-06",
     facts: {
       ...deck.facts,
       cards: cardLabel,
@@ -198,7 +256,7 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
         ? "Digital .apkg through Gumroad (instant download)"
         : "Digital .apkg through Gumroad (download after bank QA)",
     },
-    topicCoverage: upgradeTopicCoverage(deck.topicCoverage),
+    topicCoverage: upgradeTopicCoverage(deck.topicCoverage, cardCount),
     faqs: buildLaunchFaqs(deck, mockPath, apkgReady),
     importSteps: buildImportSteps(apkgReady),
   };

@@ -2448,7 +2448,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free practice test before I buy?",
         answer:
-          "Yes. Start with the free U.S. citizenship readiness check if you are preparing naturalization in the United States. The same funnel exists for Leben in Deutschland, Naturalisation française, Life in the UK, Canada, and Australia — diagnose weak topics first, then drill with Anki.",
+          "Yes. Each country in the bundle has a free readiness check on UniPrep2Go (U.S. citizenship, Leben in Deutschland, Naturalisation française, Life in the UK, Canada, Australia). Take the check for your country, note weak topics, then import that country’s .apkg from the bundle.",
       },
       {
         question: "Will this replace the official civics handbook?",

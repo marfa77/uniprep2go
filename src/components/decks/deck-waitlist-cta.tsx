@@ -142,7 +142,14 @@ export function DeckWaitlistCta({
       <p className="mt-3 max-w-2xl text-sm leading-7 text-[#4f493e]">
         This Anki deck is planned — not for sale yet. Take the free practice test now, then leave
         your email and we&apos;ll write when the deck launches (and ping the founder when demand is
-        clear).
+        clear). Already have a strong bank for this exam?{" "}
+        <a
+          className="font-medium text-[#1f3a5f] underline decoration-[#1f3a5f]/30 underline-offset-4"
+          href="/contact#partner-decks"
+        >
+          We accept partner Anki decks
+        </a>{" "}
+        after quality review (published with the mock; monthly bank-to-bank payout).
       </p>
       <form className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-end" onSubmit={registerInterest}>
         {emailField}

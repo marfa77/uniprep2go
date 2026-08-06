@@ -61,8 +61,12 @@ export function MockReportPanel({
   const shouldRecommendDeck =
     report.verdict === "NO PASS" || report.verdict === "BORDERLINE RISK";
   const showExamPacing = sessionMode === "exam";
+  const weakTopicLabels = report.repairPlan.map((item) => item.topicLabel);
   const repairPlanSection = (
-    <section className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 sm:p-8">
+    <section
+      className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 sm:p-8"
+      id="repair"
+    >
       <h3 className="text-2xl font-semibold tracking-tight">Repair plan</h3>
       <ol className="mt-5 space-y-4">
         {report.repairPlan.map((item, index) => (
@@ -132,6 +136,7 @@ export function MockReportPanel({
               mockSlug={config.slug}
               recommendDeck={false}
               retakeHref={`/mock-exams/${config.slug}`}
+              weakTopicLabels={weakTopicLabels}
             />
           </div>
         ) : null}
@@ -254,6 +259,7 @@ export function MockReportPanel({
           mockSlug={config.slug}
           recommendDeck={shouldRecommendDeck}
           retakeHref={`/mock-exams/${config.slug}`}
+          weakTopicLabels={weakTopicLabels}
         />
       </section>
 

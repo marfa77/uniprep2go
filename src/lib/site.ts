@@ -22,6 +22,14 @@ export const siteConfig = {
       "Email us with your exam or topic, target audience, preferred card count, and deadline. We will reply with scope, timeline, and pricing.",
     mailtoSubject: "Custom deck inquiry",
   },
+  partnerDeckInquiry: {
+    title: "Partner Anki decks welcome",
+    summary:
+      "We accept high-quality third-party Anki decks for exams already covered (or soon covered) by a free UniPrep2Go readiness check. After quality review we publish the deck with a matching mock on this site; customer checkout stays on UniPrep/Gumroad, and partner payouts are settled monthly bank-to-bank.",
+    instructions:
+      "Email us with the exam name, card count, sample cards or a private .apkg link, your rights to the content, and payout bank country. No public upload form yet — inquiry by email only.",
+    mailtoSubject: "Partner Anki deck submission",
+  },
   checkoutProviders: "Gumroad, Lemon Squeezy, and the Prep2Go Immigration App Store",
   checkoutSellers: "PixID Studio and Prep2Go",
   gumroadStoreUrl: "https://pixidstudio.gumroad.com",
@@ -47,6 +55,12 @@ export const legalLinks = [
 
 export function customDeckMailtoUrl() {
   const subject = encodeURIComponent(siteConfig.customDeckInquiry.mailtoSubject);
+
+  return `mailto:${siteConfig.contactEmail}?subject=${subject}`;
+}
+
+export function partnerDeckMailtoUrl() {
+  const subject = encodeURIComponent(siteConfig.partnerDeckInquiry.mailtoSubject);
 
   return `mailto:${siteConfig.contactEmail}?subject=${subject}`;
 }

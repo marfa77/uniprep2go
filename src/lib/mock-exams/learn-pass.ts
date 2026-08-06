@@ -1,17 +1,18 @@
 /**
- * UniPrep Learn Pass — $5 per Learn session (Gumroad quantity = credits).
+ * UniPrep Learn Pass — $1 per Learn session, sold in packs of 5 ($5 / pack).
+ * Gumroad product unit = 1 pack; buyer picks any quantity (1 pack = 5 credits, 3 = 15, …).
  *
  * Off by default (no UI / API surface). Enable only when ready for traffic:
  *   LEARN_PASS_ENABLED=true
  *
  * Gumroad setup (manual, before enabling):
- * 1. Create product e.g. "UniPrep Learn Pass" at USD 5.
- * 2. Enable “Allow customers to choose a quantity”.
+ * 1. Create product e.g. "UniPrep Learn Pass — 5 sessions" at USD 5 (one pack).
+ * 2. Enable “Allow customers to choose a quantity” (buyer picks pack count).
  * 3. Set env:
  *    - LEARN_PASS_ENABLED=true
  *    - GUMROAD_LEARN_PRODUCT_URL or GUMROAD_LEARN_CHECKOUT_URL (permalink)
  *    - GUMROAD_LEARN_PRODUCT_ID (API product_id, ends with ==)
- *    - LEARN_PASS_PRICE_USD (optional, default 5)
+ *    - LEARN_PASS_PRICE_USD (optional pack price, default 5)
  *    - LEARN_ACCESS_SECRET (HMAC for session cookie)
  */
 
@@ -21,10 +22,24 @@ export function isLearnPassEnabled(): boolean {
   return value === "1" || value === "true" || value === "yes";
 }
 
+/** Price of one Learn session (for copy / briefing). */
+export const LEARN_SESSION_PRICE_USD = 1;
+
+/** Gumroad SKU price = one pack of sessions. */
 export const LEARN_PASS_PRICE_USD = Number(process.env.LEARN_PASS_PRICE_USD ?? 5) || 5;
-export const LEARN_CREDITS_PER_UNIT = 1;
-export const LEARN_QTY_OPTIONS = [1, 2, 3, 5] as const;
+
+/** Credits granted per Gumroad quantity unit (1 pack → 5 Learn sessions). */
+export const LEARN_CREDITS_PER_UNIT = 5;
+
+/** Max packs a buyer can select in checkout (Gumroad quantity). */
 export const MAX_LEARN_QUANTITY = 50;
+
+export function clampLearnPackQuantity(raw: unknown): number {
+  const n = typeof raw === "number" ? raw : Number(raw);
+  if (!Number.isFinite(n) || n < 1) return 1;
+  return Math.min(Math.floor(n), MAX_LEARN_QUANTITY);
+}
+
 
 /** Default permalink until the live Gumroad product is created and env is set. */
 const DEFAULT_LEARN_PRODUCT_URL = "https://pixidstudio.gumroad.com/l/uniprep-learn-pass";
@@ -62,7 +77,7 @@ export function getLearnCheckoutBaseUrl(): string {
   return `${getLearnProductUrl()}?wanted=true`;
 }
 
-/** Gumroad checkout URL with optional quantity. */
+/** Gumroad checkout URL with optional pack quantity. */
 export function learnCheckoutUrl(quantity = 1): string {
   const q = Number.isFinite(quantity) ? Math.max(1, Math.min(MAX_LEARN_QUANTITY, Math.floor(quantity))) : 1;
   const base = getLearnCheckoutBaseUrl();
@@ -82,13 +97,15 @@ export function learnCheckoutUrl(quantity = 1): string {
 }
 
 export function parseLearnPurchaseQuantity(raw: unknown): number {
-  const n = typeof raw === "number" ? raw : Number(raw);
-  if (!Number.isFinite(n) || n < 1) return 1;
-  return Math.min(Math.floor(n), MAX_LEARN_QUANTITY);
+  return clampLearnPackQuantity(raw);
 }
 
 export function initialLearnCreditsForQuantity(quantity: number): number {
   return LEARN_CREDITS_PER_UNIT * parseLearnPurchaseQuantity(quantity);
+}
+
+export function learnSessionsForPacks(packs: number): number {
+  return initialLearnCreditsForQuantity(packs);
 }
 
 export function isLearnPassConfigured(): boolean {

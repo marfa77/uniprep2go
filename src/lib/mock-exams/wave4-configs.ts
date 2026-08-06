@@ -695,7 +695,8 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
     slug: "life-health-insurance-readiness-check",
     title: "Life & Health Insurance Readiness Check",
     shortTitle: "Life & Health Insurance",
-    linkedDeckSlug: "life-health-insurance-anki-deck",
+    // Funnel to the buyable L&H exam deck (avoid orphan planned life-health-insurance-anki-deck).
+    linkedDeckSlug: "life-and-health-insurance-exam-anki-deck",
     durationMinutes: 75,
     questionCount: NICHE_SESSION_QUESTIONS,
     topics: fourNicheTopics([

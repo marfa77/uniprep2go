@@ -33,9 +33,8 @@ describe("learnCheckoutUrl", () => {
     expect(url).not.toContain("quantity=");
   });
 
-  it("appends quantity for multi-pass checkout", () => {
+  it("appends quantity for multi-pack checkout", () => {
     expect(learnCheckoutUrl(3)).toContain("quantity=3");
-    expect(learnCheckoutUrl(5)).toContain("quantity=5");
   });
 
   it("clamps invalid quantities", () => {
@@ -52,8 +51,8 @@ describe("learn pass quantity helpers", () => {
     expect(parseLearnPurchaseQuantity(100)).toBe(50);
   });
 
-  it("grants one credit per unit", () => {
-    expect(initialLearnCreditsForQuantity(1)).toBe(1);
-    expect(initialLearnCreditsForQuantity(5)).toBe(5);
+  it("grants five credits per pack unit", () => {
+    expect(initialLearnCreditsForQuantity(1)).toBe(5);
+    expect(initialLearnCreditsForQuantity(3)).toBe(15);
   });
 });

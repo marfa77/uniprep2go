@@ -65,7 +65,7 @@ async function postLicenseVerify(licenseKey: string, productId: string): Promise
 
 /**
  * Verify a Gumroad license against the Learn Pass product.
- * Credits = purchase quantity (1 credit per $5 unit).
+ * Credits = purchase quantity × pack size (1 Gumroad unit = 5 Learn sessions / $5).
  */
 export async function verifyGumroadLearnLicense(licenseKey: string): Promise<GumroadLearnVerifyResult> {
   const trimmed = licenseKey.trim();

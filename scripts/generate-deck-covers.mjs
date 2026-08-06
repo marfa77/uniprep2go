@@ -294,26 +294,29 @@ async function loadCatalogDeckConfigs() {
     }
   }
 
-  for (const waveModule of ["../src/lib/mock-exams/wave1-configs.ts"]) {
-    try {
-      const mod = await import(waveModule);
-      const list = mod.wave1MockExamConfigs ?? [];
-      for (const mock of list) {
-        const slug = mock.linkedDeckSlug;
+  // Wave / licensing planned decks from generated specs (covers all waves + citizenship planned).
+  try {
+    const waveSpecsPath = join(root, "src/data/wave-deck-specs.json");
+    if (existsSync(waveSpecsPath)) {
+      const waveSpecs = JSON.parse(readFileSync(waveSpecsPath, "utf8"));
+      for (const [slug, spec] of Object.entries(waveSpecs)) {
         configs[slug] = {
-          title: deckTitleForCover(mock.shortTitle),
+          title: deckTitleForCover(spec.shortTitle || spec.deckName || slug),
           subtitle: deckSubtitleForCover({
-            subtitle: mock.description,
-            facts: { cards: "Planned" },
+            subtitle: `${spec.cardCount || 60} flashcards from the free readiness check`,
+            facts: { cards: String(spec.cardCount || 60) },
           }),
-          monogram: mock.shortTitle,
+          monogram: spec.deckLabel || spec.shortTitle,
           badge: "Anki Deck",
           panelKind: inferPanelKind(slug, "professional"),
         };
       }
-    } catch (error) {
-      console.warn(`  ${waveModule} cover configs skipped:`, error instanceof Error ? error.message : error);
     }
+  } catch (error) {
+    console.warn(
+      "  wave-deck-specs cover configs skipped:",
+      error instanceof Error ? error.message : error,
+    );
   }
 
   return configs;

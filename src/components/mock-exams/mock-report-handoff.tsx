@@ -18,6 +18,7 @@ type MockReportHandoffProps = {
   mockSlug: string;
   recommendDeck: boolean;
   retakeHref: string;
+  weakTopicLabels?: string[];
 };
 
 export function MockReportHandoff({
@@ -28,6 +29,7 @@ export function MockReportHandoff({
   mockSlug,
   recommendDeck,
   retakeHref,
+  weakTopicLabels = [],
 }: MockReportHandoffProps) {
   function trackDeckClick(source: string) {
     trackMockEvent({
@@ -38,6 +40,11 @@ export function MockReportHandoff({
       destinationUrl: deckPageUrl,
     });
   }
+
+  const weakLabel =
+    weakTopicLabels.length > 0
+      ? weakTopicLabels.slice(0, 3).join(", ")
+      : null;
 
   return (
     <div className="mt-6 flex flex-wrap gap-3">
@@ -56,7 +63,7 @@ export function MockReportHandoff({
           href={deckPageUrl}
           onClick={() => trackDeckClick(`mock_report:${mockSlug}:deck_primary`)}
         >
-          Open linked Anki deck
+          {weakLabel ? `Drill weak topics in Anki` : "Open linked Anki deck"}
         </Link>
       )}
       {linkedCheckout ? (
@@ -65,7 +72,7 @@ export function MockReportHandoff({
           href={deckPageUrl}
           onClick={() => trackDeckClick(`mock_report:${mockSlug}:deck_details`)}
         >
-          View deck details
+          {weakLabel ? "View weak topics on deck" : "View deck details"}
         </Link>
       ) : null}
       <Link
@@ -76,7 +83,8 @@ export function MockReportHandoff({
       </Link>
       {recommendDeck ? (
         <p className="w-full text-sm leading-7 text-[#4f493e]">
-          Recommended next step: drill {deckShortName} on weak topics, then retake in 3–7 days.
+          Recommended next step: drill {deckShortName}
+          {weakLabel ? ` (${weakLabel})` : " on weak topics"}, then retake in 3–7 days.
         </p>
       ) : null}
     </div>

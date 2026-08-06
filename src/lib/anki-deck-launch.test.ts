@@ -4,13 +4,81 @@ import {
   buildGumroadCheckoutUrl,
   estimateAnkiDeckCardCount,
   isBuildingAnkiDeckSlug,
+  isLaunchableAnkiDeckSlug,
 } from "./anki-deck-launch";
 import { getCatalogDeckBySlug, getDeckBySlug } from "./decks";
+import { getMockExamConfig } from "./mock-exams/configs";
+import { buildLinkedDeckRepairUrl } from "./mock-exams/scoring";
 
 describe("anki-deck-launch", () => {
   it("recognizes building deck slugs from gumroad catalog", () => {
     expect(isBuildingAnkiDeckSlug("hvac-epa-608-anki-deck")).toBe(true);
     expect(isBuildingAnkiDeckSlug("cfa-level-1-anki-deck")).toBe(false);
+  });
+
+  it("does not launch planned decks that only have permalink stubs", () => {
+    expect(isLaunchableAnkiDeckSlug("series-65-anki-deck")).toBe(true);
+    const stubOnly = applyAnkiDeckLaunch({
+      slug: "zz-stub-only-anki-deck",
+      category: "professional",
+      status: "planned",
+      title: "Stub",
+      shortName: "Stub",
+      subtitle: "A planned deck",
+      directAnswer: "Planned",
+      lastUpdated: "2026-08-06",
+      audience: "Test",
+      format: ".apkg",
+      facts: {
+        cards: "Planned",
+        topics: "Test",
+        formulas: "Planned",
+        examYear: "Current",
+        delivery: "Planned",
+      },
+      topicCoverage: [],
+      sampleCards: [],
+      faqs: [],
+    });
+    expect(stubOnly.status).toBe("planned");
+  });
+
+  it("launches wave money SKUs but keeps state-RE / other wave decks planned for traffic", () => {
+    expect(isLaunchableAnkiDeckSlug("series-65-anki-deck")).toBe(true);
+    expect(isLaunchableAnkiDeckSlug("fl-real-estate-anki-deck")).toBe(false);
+    expect(isLaunchableAnkiDeckSlug("cdl-general-knowledge-anki-deck")).toBe(false);
+
+    const money = getCatalogDeckBySlug("series-65-anki-deck");
+    expect(money?.status).toBe("available");
+    expect(money?.checkoutUrl).toContain("gumroad.com/l/series-65-anki-deck");
+    expect(money?.facts.cards).toBe("60");
+
+    const stateRe = getDeckBySlug("fl-real-estate-anki-deck");
+    expect(stateRe?.status).toBe("planned");
+    expect(stateRe && "checkoutUrl" in stateRe ? stateRe.checkoutUrl : undefined).toBeUndefined();
+  });
+
+  it("estimates wave deck card counts from mock bank size", () => {
+    expect(estimateAnkiDeckCardCount("series-65-anki-deck")).toBe(60);
+  });
+
+  it("routes duplicate L&H mock to the buyable exam deck", () => {
+    const config = getMockExamConfig("life-health-insurance-readiness-check");
+    expect(config?.linkedDeckSlug).toBe("life-and-health-insurance-exam-anki-deck");
+  });
+
+  it("builds deck repair URLs with weak topic ids", () => {
+    expect(
+      buildLinkedDeckRepairUrl("series-65-anki-deck", [
+        {
+          topicId: "ethics",
+          topicLabel: "Laws & ethics",
+          scorePercent: 40,
+          targetPercent: 70,
+          action: "Drill",
+        },
+      ]),
+    ).toBe("/decks/series-65-anki-deck?topics=ethics#repair");
   });
 
   it("builds gumroad checkout urls from permalink", () => {
