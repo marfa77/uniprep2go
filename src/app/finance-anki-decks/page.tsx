@@ -220,9 +220,9 @@ export default async function FinanceAnkiDecksPage() {
           <p className="mt-2">
             Looking past the exam?{" "}
             <a
-              href="https://t.me/letsfinddreamjob_bot?start=web_uniprep_finance"
+              href="https://www.emigro.online/ru/role-radar?utm_source=uniprep2go&utm_medium=finance_anki&utm_campaign=role_radar"
               className="font-semibold underline decoration-[#18140f]/20 underline-offset-2 transition hover:text-[#18140f]"
-              rel="noopener noreferrer"
+              rel="noopener"
               target="_blank"
             >
               Role Radar
