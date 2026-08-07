@@ -123,6 +123,15 @@ export function SiteFooter() {
             >
               Barakhlo
             </a>
+            <span aria-hidden>·</span>
+            <a
+              className="underline decoration-[#18140f]/15 underline-offset-2 transition hover:text-[#4f493e]"
+              href="https://t.me/letsfinddreamjob_bot?start=web_uniprep"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Role Radar — senior job digests
+            </a>
           </div>
         </nav>
 

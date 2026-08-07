@@ -212,6 +212,24 @@ export default async function FinanceAnkiDecksPage() {
             </div>
           </dl>
         </section>
+
+        <aside className="mt-12 max-w-3xl border-t border-[#18140f]/10 pt-8 text-sm leading-7 text-[#4f493e]">
+          <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#9a8f7c]">
+            Sister product
+          </p>
+          <p className="mt-2">
+            Looking past the exam?{" "}
+            <a
+              href="https://t.me/letsfinddreamjob_bot?start=web_uniprep_finance"
+              className="font-semibold underline decoration-[#18140f]/20 underline-offset-2 transition hover:text-[#18140f]"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Role Radar
+            </a>{" "}
+            sends senior job digests matched to your CV — in Telegram.
+          </p>
+        </aside>
       </article>
       <SiteFooter />
     </main>
