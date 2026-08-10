@@ -25,9 +25,9 @@ export const siteConfig = {
   partnerDeckInquiry: {
     title: "Partner Anki decks welcome",
     summary:
-      "UniPrep2Go runs a curated partner program for exam Anki creators: after founder quality review we publish your deck with a matching free readiness check; buyers check out on UniPrep/Gumroad (PixID Studio). Authors earn 70% of net after Gumroad fees (UniPrep 30%), receive sales and funnel stats by Telegram, and get paid monthly bank-to-bank when accrued share is at least $50.",
+      "UniPrep2Go runs a curated partner program for exam Anki creators: after founder quality review we build a free readiness-check mock from your deck, publish both on this site, and sell the .apkg via UniPrep/Gumroad (PixID Studio). Authors earn 70% of net after Gumroad fees (UniPrep 30%), receive sales and funnel stats by Telegram, and get paid monthly bank-to-bank when accrued share is at least $50.",
     instructions:
-      "Email us with the exam name, card count, sample cards or a private .apkg link, proof you own the content, payout bank country, and a Telegram username for stats. Only exams we already mock (or will ship a mock with the deck). No public upload form or author web dashboard — inquiry by email only.",
+      "Email us with the exam name, card count, sample cards or a private .apkg link, proof you own the content, payout bank country, and a Telegram username for stats. You supply the Anki bank; UniPrep builds the matching free mock from it after accept. Priority: US licensing/finance exams. No public upload form or author web dashboard — inquiry by email only.",
     mailtoSubject: "Partner Anki deck submission",
     authorSharePercent: 70,
     uniSharePercent: 30,

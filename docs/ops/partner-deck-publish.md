@@ -1,6 +1,6 @@
 # Partner deck publish checklist
 
-Ops-first partner program: email intake → founder QC → publish deck + mock → Gumroad → Telegram stats → monthly 70/30 payout.
+Ops-first partner program: email intake → founder QC → **UniPrep builds mock from the accepted Anki bank** → publish deck + mock → Gumroad → Telegram stats → monthly 70/30 payout.
 
 ## Facts (keep in sync with site)
 
@@ -25,7 +25,7 @@ Author emails `support@uniprep2go.study` with:
 - [ ] Accurate exam content (spot-check vs outline)
 - [ ] No copyrighted stem dumps / scraped proprietary banks
 - [ ] Duplicates / fluff within acceptable bounds
-- [ ] Topic coverage maps to UniPrep mock topics (or new mock plan agreed)
+- [ ] Topic coverage clear enough to derive a timed readiness-check outline
 - [ ] Card quality readable in Anki (cloze/basic OK)
 
 Reject with short Telegram/email reason. No public scoreboard.
@@ -33,10 +33,10 @@ Reject with short Telegram/email reason. No public scoreboard.
 ## 3. On accept
 
 1. Simple license email (PDF ok)
-2. Create Gumroad product under PixID Studio; upload `.apkg` + cover
-3. Set Gumroad **Ping URL** to `/api/gumroad/ping` (or account-level ping)
-4. Wire site catalog / `anki-deck-launch` so deck is `available`
-5. Ensure linked free readiness check is live (existing or ship with deck)
+2. **Build mock from the deck** — derive topics + item bank from the partner `.apkg` / samples; ship free readiness check on UniPrep (author does not supply the mock)
+3. Create Gumroad product under PixID Studio; upload `.apkg` + cover
+4. Set Gumroad **Ping URL** to `/api/gumroad/ping` (or account-level ping)
+5. Wire site catalog / `anki-deck-launch` so deck is `available` and linked to the new mock
 6. Register partner in [`src/data/partners/partners.json`](../../src/data/partners/partners.json):
    - `partnerId`, `displayName`, `email`, `telegramChatId`
    - `deckSlugs: ["their-deck-slug"]`

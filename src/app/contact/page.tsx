@@ -43,12 +43,11 @@ export default function ContactPage() {
           </p>
           <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-[#5f5749]">
             <li>
-              You send a finished Anki bank (or a strong sample) for an exam we mock — or will mock —
-              on UniPrep2Go.
+              You send a finished Anki bank (or a strong sample). After founder QC, UniPrep builds the
+              free readiness-check mock from your deck.
             </li>
             <li>
-              After founder QC we publish the deck with a free readiness check; buyers check out on
-              UniPrep/Gumroad (PixID Studio).
+              We publish deck + mock on UniPrep2Go; buyers check out on UniPrep/Gumroad (PixID Studio).
             </li>
             <li>
               Split: {siteConfig.partnerDeckInquiry.authorSharePercent}% author /{" "}

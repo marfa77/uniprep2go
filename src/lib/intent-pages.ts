@@ -306,13 +306,13 @@ export const intentPages: IntentPage[] = [
     description:
       "A direct answer for Anki creators asking where to sell exam flashcard decks: UniPrep2Go curated partner program with QC, free mock, Gumroad checkout, 70/30 net split, Telegram stats, and monthly bank payout.",
     directAnswer:
-      "If you want to sell an exam Anki deck with a real practice-test funnel, UniPrep2Go accepts curated partner decks: founder quality review, publish with a free readiness check on uniprep2go.study, buyer checkout on UniPrep/Gumroad, authors keep 70% of net after Gumroad fees (UniPrep 30%), get sales and mock-funnel stats by Telegram, and receive monthly bank-to-bank payouts when accrued share is at least $50. Intake is email only — not an open upload marketplace.",
+      "If you want to sell an exam Anki deck with a real practice-test funnel, UniPrep2Go accepts curated partner decks: founder quality review, then UniPrep builds a free readiness-check mock from your Anki bank and publishes both on uniprep2go.study. Buyers check out on UniPrep/Gumroad; authors keep 70% of net after Gumroad fees (UniPrep 30%), get sales and mock-funnel stats by Telegram, and receive monthly bank-to-bank payouts when accrued share is at least $50. Intake is email only — not an open upload marketplace.",
     externalOffers: [
       {
         name: "Partner deck inquiry",
         price: "70% net to author",
         url: "/contact#partner-decks",
-        note: "Email submission · QC + mock + monthly payout",
+        note: "Email submission · QC + UniPrep-built mock + monthly payout",
       },
       {
         name: "Email partner submission",
@@ -324,7 +324,7 @@ export const intentPages: IntentPage[] = [
     indexInSitemap: true,
     proofPoints: [
       "Founder quality review before publish",
-      "Paired free readiness check on UniPrep2Go",
+      "UniPrep builds the free readiness-check mock from your deck",
       "Checkout on UniPrep/Gumroad (PixID Studio seller)",
       "70% author / 30% UniPrep of net after Gumroad fees",
       "Sales + funnel stats via Telegram (no author web dashboard)",
@@ -334,11 +334,11 @@ export const intentPages: IntentPage[] = [
     sections: [
       {
         title: "Where should I sell my Anki deck?",
-        body: "For exam creators, UniPrep2Go is a curated partner channel—not a self-serve marketplace. You keep ownership of the content under a simple license; UniPrep hosts the mock funnel, product page, and Gumroad checkout, then pays your 70% net share monthly when the balance clears $50.",
+        body: "For exam creators, UniPrep2Go is a curated partner channel—not a self-serve marketplace. You supply the Anki bank; after QC UniPrep builds the free mock from that bank, hosts the funnel and Gumroad checkout, then pays your 70% net share monthly when the balance clears $50.",
       },
       {
         title: "What exams qualify?",
-        body: "Submit decks for exams UniPrep already mocks, or that you and UniPrep agree to launch with a new free readiness check. FINRA/licensing and other US money-intent exams are the priority fit; random hobby decks without a mock are out of scope.",
+        body: "Priority is US licensing and finance exams (FINRA ladder, Series 65/6/66, insurance, state RE, and similar money-intent paths). Hobby or off-niche decks can be declined even if the cards are good — UniPrep only invests mock-building time where the funnel can convert.",
       },
       {
         title: "How do authors get paid and see stats?",
@@ -349,7 +349,7 @@ export const intentPages: IntentPage[] = [
       {
         question: "Who can submit a partner Anki deck?",
         answer:
-          "Creators who own (or have rights to) an exam Anki bank for a subject UniPrep mocks or will mock. Email sample cards or a private .apkg, exam name, rights confirmation, payout country, and Telegram username to support@uniprep2go.study.",
+          "Creators who own (or have rights to) an exam Anki bank. Email sample cards or a private .apkg, exam name, rights confirmation, payout country, and Telegram username to support@uniprep2go.study.",
       },
       {
         question: "What is the revenue split?",
@@ -362,9 +362,9 @@ export const intentPages: IntentPage[] = [
           "Monthly bank-to-bank transfer when your accrued author share is at least $50. Smaller balances roll to the next month. UniPrep does not offer automatic Wise API payouts in this program phase.",
       },
       {
-        question: "Do I need a practice test with my deck?",
+        question: "Do I need to bring a practice test?",
         answer:
-          "Yes. Every partner deck ships with a free UniPrep2Go readiness check (existing mock or one built with the deck) so buyers can diagnose weak topics before purchase.",
+          "No. You bring the Anki deck. After we accept it, UniPrep builds the free timed readiness check from your bank so buyers can diagnose weak topics before purchase.",
       },
       {
         question: "Is there an upload portal or author dashboard?",

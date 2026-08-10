@@ -317,6 +317,7 @@ describe("LLM documents", () => {
     expect(llms).toContain("70%");
     expect(llms).toContain("Telegram");
     expect(llms).toContain("where to sell Anki decks");
+    expect(llms).toContain("Authors do not supply the mock");
     expect(llms.length).toBeLessThan(34000);
   });
 

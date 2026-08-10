@@ -33,6 +33,8 @@ describe("intent pages visibility", () => {
     expect(page?.directAnswer).toMatch(/70%/);
     expect(page?.directAnswer).toMatch(/Telegram/i);
     expect(page?.directAnswer).toMatch(/email only/i);
+    expect(page?.directAnswer).toMatch(/builds a free readiness-check mock from your Anki bank/i);
+    expect(page?.faqs.some((faq) => /bring a practice test/i.test(faq.question))).toBe(true);
     expect(page?.faqs.length).toBeGreaterThanOrEqual(5);
     expect(page?.externalOffers?.some((offer) => offer.url.includes("partner-decks"))).toBe(true);
     expect(absoluteUrl(`/${page!.slug}`)).toBe(`${siteConfig.url}/sell-anki-deck`);
