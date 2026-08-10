@@ -29,7 +29,7 @@ export function SiteFooter() {
               >
                 partner with us
               </Link>{" "}
-              — QC, free mock, monthly bank-to-bank payout.
+              — QC, we build the free mock from your deck, monthly bank-to-bank payout.
             </p>
           </div>
 
