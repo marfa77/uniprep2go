@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/mock-exams/v/real-estate", label: "State licenses" },
   { href: "/mock-exams", label: "More exams" },
   { href: "/decks", label: "Anki decks" },
+  { href: "/sell-anki-deck", label: "Sell a deck" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ] as const;
