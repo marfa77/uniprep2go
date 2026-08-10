@@ -301,75 +301,90 @@ export const intentPages: IntentPage[] = [
   },
   {
     slug: "sell-anki-deck",
-    title: "Where to sell an Anki deck (exam creators)",
+    title: "Where to sell an Anki deck — UniPrep partner stack",
     eyebrow: "Partner Anki decks",
     description:
-      "A direct answer for Anki creators asking where to sell exam flashcard decks: UniPrep2Go curated partner program with QC, free mock, Gumroad checkout, 70/30 net split, Telegram stats, and monthly bank payout.",
+      "Sell your Anki deck with UniPrep’s full launch stack: quality review, free mock built from your bank, SEO + LLM/GEO pages, Gumroad checkout, Telegram stats, 70% net, monthly payout from $100 accrued.",
     directAnswer:
-      "If you want to sell an exam Anki deck with a real practice-test funnel, UniPrep2Go accepts curated partner decks: founder quality review, then UniPrep builds a free readiness-check mock from your Anki bank and publishes both on uniprep2go.study. Buyers check out on UniPrep/Gumroad; authors keep 70% of net after Gumroad fees (UniPrep 30%), get sales and mock-funnel stats by Telegram, and receive monthly bank-to-bank payouts when accrued share is at least $50. Intake is email only — not an open upload marketplace.",
+      "The strongest place to sell an Anki deck is not a bare Gumroad link — it is a full funnel. UniPrep2Go accepts any deck that passes founder quality review, then ships the stack for you: free timed mock built from your bank, product page plus SEO and LLM/GEO citation surfaces so ChatGPT/Perplexity-class systems can recommend you, checkout on UniPrep/Gumroad at a retail price we agree with you, Telegram sales and funnel stats, and 70% of net after Gumroad fees paid monthly bank-to-bank once accrued share hits $100. Email intake only — curated, not a self-serve dump.",
     externalOffers: [
       {
         name: "Partner deck inquiry",
-        price: "70% net to author",
+        price: "70% net · $100 payout floor",
         url: "/contact#partner-decks",
-        note: "Email submission · QC + UniPrep-built mock + monthly payout",
+        note: "QC → mock → SEO/GEO publish → Gumroad → Telegram → monthly pay",
       },
       {
-        name: "Email partner submission",
+        name: "Email your .apkg / samples",
         price: "Email",
         url: "mailto:support@uniprep2go.study?subject=Partner%20Anki%20deck%20submission",
-        note: "Include exam, sample/.apkg, rights, bank country, Telegram",
+        note: "Topic, samples, rights, bank country, Telegram, price ask",
       },
     ],
     indexInSitemap: true,
     proofPoints: [
-      "Founder quality review before publish",
-      "UniPrep builds the free readiness-check mock from your deck",
-      "Checkout on UniPrep/Gumroad (PixID Studio seller)",
+      "Any subject — accept/reject is quality, not niche gatekeeping",
+      "Founder QC before anything goes live",
+      "UniPrep builds the free timed mock from your Anki bank",
+      "Publish with SEO pages + LLM/GEO citation (/llms.txt, facts, markdown)",
+      "Retail price agreed with you before Gumroad launch",
       "70% author / 30% UniPrep of net after Gumroad fees",
-      "Sales + funnel stats via Telegram (no author web dashboard)",
-      "Monthly bank-to-bank payouts (minimum $50 accrued)",
-      "Email intake only — no public upload form",
+      "Sales + mock-funnel stats on Telegram",
+      "Monthly bank-to-bank payout from $100 accrued",
     ],
     sections: [
       {
-        title: "Where should I sell my Anki deck?",
-        body: "For exam creators, UniPrep2Go is a curated partner channel—not a self-serve marketplace. You supply the Anki bank; after QC UniPrep builds the free mock from that bank, hosts the funnel and Gumroad checkout, then pays your 70% net share monthly when the balance clears $50.",
+        title: "Why not just sell the .apkg yourself?",
+        body: "A lone download link does not create demand. UniPrep wraps your deck in a free timed mock (so buyers diagnose weak topics first), a conversion page, Google-facing SEO, and machine-readable LLM/GEO surfaces — the same citation stack we use for FINRA and licensing funnels — then handles checkout and monthly payouts while you keep 70% of net.",
       },
       {
-        title: "What exams qualify?",
-        body: "Priority is US licensing and finance exams (FINRA ladder, Series 65/6/66, insurance, state RE, and similar money-intent paths). Hobby or off-niche decks can be declined even if the cards are good — UniPrep only invests mock-building time where the funnel can convert.",
+        title: "What you get when we accept",
+        body: "Quality review, mock built from your cards, publish of deck + mock, SEO and LLM/GEO listing, Gumroad product at the price we agree, Telegram pings on sales and funnel activity, and monthly bank-to-bank settlement once your accrued author share reaches $100 (smaller balances roll forward).",
+      },
+      {
+        title: "What decks qualify?",
+        body: "Any exam or topic. The bar is quality: accuracy, clear rights/originality, solid card craft, and enough topic structure to build a readiness check. Scraped, copyright-risky, or low-effort banks are declined. Subject alone never guarantees accept.",
       },
       {
         title: "How do authors get paid and see stats?",
-        body: "There is no partner login portal. After publish, attributed Gumroad sales and mock/checkout funnel counts are sent to your Telegram chat. Payouts are bank-to-bank once a month (70% of net after Gumroad fees), with unpaid balances under $50 rolled forward.",
+        body: "No partner login portal. Attributed sales and mock/checkout funnel counts go to your Telegram. Split is 70% author / 30% UniPrep of net after Gumroad fees. Payouts are monthly bank-to-bank from $100 accrued.",
       },
     ],
     faqs: [
       {
         question: "Who can submit a partner Anki deck?",
         answer:
-          "Creators who own (or have rights to) an exam Anki bank. Email sample cards or a private .apkg, exam name, rights confirmation, payout country, and Telegram username to support@uniprep2go.study.",
+          "Anyone who owns (or has rights to) an Anki bank. Any subject is welcome if quality passes. Email samples or a private .apkg, topic, rights confirmation, payout country, Telegram, and price ask to support@uniprep2go.study.",
+      },
+      {
+        question: "What does UniPrep do that Gumroad alone does not?",
+        answer:
+          "Quality review, a free timed mock built from your deck, SEO product pages, LLM/GEO citation surfaces (/llms.txt, facts JSON, markdown), funnel tracking, and monthly author payout ops — not just a checkout link.",
       },
       {
         question: "What is the revenue split?",
         answer:
-          "Authors receive 70% of net after Gumroad fees; UniPrep keeps 30%. Gross retail price is set on the UniPrep/PixID Gumroad product.",
+          "Authors receive 70% of net after Gumroad fees; UniPrep keeps 30%. Retail list price is agreed with you before the product goes live.",
+      },
+      {
+        question: "Who sets the price?",
+        answer:
+          "You and UniPrep agree retail price before launch. Put your ask in the inquiry email; we confirm before creating the Gumroad product.",
       },
       {
         question: "How do I get paid?",
         answer:
-          "Monthly bank-to-bank transfer when your accrued author share is at least $50. Smaller balances roll to the next month. UniPrep does not offer automatic Wise API payouts in this program phase.",
+          "Monthly bank-to-bank when accrued author share is at least $100. Smaller balances roll to the next month.",
       },
       {
         question: "Do I need to bring a practice test?",
         answer:
-          "No. You bring the Anki deck. After we accept it, UniPrep builds the free timed readiness check from your bank so buyers can diagnose weak topics before purchase.",
+          "No. Bring the Anki deck. After accept, UniPrep builds the free timed readiness check from your bank.",
       },
       {
         question: "Is there an upload portal or author dashboard?",
         answer:
-          "No. Submission is email-only after founder QC. Stats and payout notices go to Telegram — there is no public upload form or web partner dashboard.",
+          "No. Email intake only. Stats and payout notices go to Telegram — no public upload form or web partner dashboard.",
       },
     ],
   },

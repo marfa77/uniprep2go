@@ -149,7 +149,7 @@ export function DeckWaitlistCta({
         >
           We accept partner Anki decks
         </a>{" "}
-        after quality review (published with the mock; monthly bank-to-bank payout).
+        — QC, free mock from your bank, SEO/GEO publish, 70% net, payout from $100.
       </p>
       <form className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-end" onSubmit={registerInterest}>
         {emailField}

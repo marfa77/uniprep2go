@@ -23,15 +23,15 @@ export const siteConfig = {
     mailtoSubject: "Custom deck inquiry",
   },
   partnerDeckInquiry: {
-    title: "Partner Anki decks welcome",
+    title: "Sell your Anki deck on UniPrep",
     summary:
-      "UniPrep2Go runs a curated partner program for exam Anki creators: after founder quality review we build a free readiness-check mock from your deck, publish both on this site, and sell the .apkg via UniPrep/Gumroad (PixID Studio). Authors earn 70% of net after Gumroad fees (UniPrep 30%), receive sales and funnel stats by Telegram, and get paid monthly bank-to-bank when accrued share is at least $50.",
+      "Bring any Anki deck that clears quality review — UniPrep handles the rest: we build a free timed mock from your bank, publish deck + mock with SEO and LLM/GEO citation pages, sell on UniPrep/Gumroad at a price we agree with you, ping sales and funnel stats to your Telegram, and pay 70% of net (after Gumroad fees) monthly bank-to-bank once your accrued share hits $100.",
     instructions:
-      "Email us with the exam name, card count, sample cards or a private .apkg link, proof you own the content, payout bank country, and a Telegram username for stats. You supply the Anki bank; UniPrep builds the matching free mock from it after accept. Priority: US licensing/finance exams. No public upload form or author web dashboard — inquiry by email only.",
+      "Email support@uniprep2go.study with topic/exam, card count, sample cards or a private .apkg, proof of rights, payout country, Telegram for stats, and your price ask. Any subject is welcome if quality passes; you do not build the mock — we do. No upload portal or author web dashboard — email intake only.",
     mailtoSubject: "Partner Anki deck submission",
     authorSharePercent: 70,
     uniSharePercent: 30,
-    minPayoutUsd: 50,
+    minPayoutUsd: 100,
     statsChannel: "Telegram",
     intentPath: "/sell-anki-deck",
   },

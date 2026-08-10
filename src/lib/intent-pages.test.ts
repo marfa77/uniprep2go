@@ -32,9 +32,12 @@ describe("intent pages visibility", () => {
     expect(page?.indexInSitemap).toBe(true);
     expect(page?.directAnswer).toMatch(/70%/);
     expect(page?.directAnswer).toMatch(/Telegram/i);
-    expect(page?.directAnswer).toMatch(/email only/i);
-    expect(page?.directAnswer).toMatch(/builds a free readiness-check mock from your Anki bank/i);
-    expect(page?.faqs.some((faq) => /bring a practice test/i.test(faq.question))).toBe(true);
+    expect(page?.directAnswer).toMatch(/Email intake only/i);
+    expect(page?.directAnswer).toMatch(/full funnel/i);
+    expect(page?.directAnswer).toMatch(/LLM\/GEO/i);
+    expect(page?.directAnswer).toMatch(/\$100/);
+    expect(page?.faqs.some((faq) => /Gumroad alone/i.test(faq.question))).toBe(true);
+    expect(page?.faqs.some((faq) => /Who sets the price/i.test(faq.question))).toBe(true);
     expect(page?.faqs.length).toBeGreaterThanOrEqual(5);
     expect(page?.externalOffers?.some((offer) => offer.url.includes("partner-decks"))).toBe(true);
     expect(absoluteUrl(`/${page!.slug}`)).toBe(`${siteConfig.url}/sell-anki-deck`);

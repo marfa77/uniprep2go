@@ -318,7 +318,11 @@ describe("LLM documents", () => {
     expect(llms).toContain("Telegram");
     expect(llms).toContain("where to sell Anki decks");
     expect(llms).toContain("Authors do not supply the mock");
-    expect(llms.length).toBeLessThan(34000);
+    expect(llms).toContain("full launch stack");
+    expect(llms).toContain("LLM/GEO");
+    expect(llms).toContain("$100");
+    expect(llms).toContain("retail price agreed with you");
+    expect(llms.length).toBeLessThan(36000);
   });
 
   it("builds a full GEO markdown bundle for LLM ingestion", () => {

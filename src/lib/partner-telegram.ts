@@ -76,7 +76,7 @@ export async function buildPartnerDigestMessage(partner: PartnerRecord) {
     `Lifetime attributed sales: ${partnerSales.length}`,
     funnelLine,
     "",
-    "Payouts monthly bank-to-bank when accrued ≥ $50.",
+    "Payouts monthly bank-to-bank when accrued ≥ $100.",
   ].join("\n");
 }
 

@@ -11,7 +11,7 @@ import {
 describe("partners registry", () => {
   it("loads default 70/30 split and min payout", () => {
     expect(getAuthorShareBps()).toBe(7000);
-    expect(getMinPayoutUsd()).toBe(50);
+    expect(getMinPayoutUsd()).toBe(100);
     expect(computeSaleShares(1000).authorShareCents).toBe(700);
     expect(computeSaleShares(1000).uniShareCents).toBe(300);
   });

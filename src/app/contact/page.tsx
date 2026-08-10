@@ -43,21 +43,19 @@ export default function ContactPage() {
           </p>
           <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-[#5f5749]">
             <li>
-              You send a finished Anki bank (or a strong sample). After founder QC, UniPrep builds the
-              free readiness-check mock from your deck.
+              Full launch stack: founder QC → free timed mock built from your deck → publish with SEO
+              + LLM/GEO citation pages → Gumroad checkout.
             </li>
             <li>
-              We publish deck + mock on UniPrep2Go; buyers check out on UniPrep/Gumroad (PixID Studio).
+              Any subject if quality clears QC. Retail price agreed with you before launch; you keep{" "}
+              {siteConfig.partnerDeckInquiry.authorSharePercent}% of net (UniPrep{" "}
+              {siteConfig.partnerDeckInquiry.uniSharePercent}%) after Gumroad fees.
             </li>
             <li>
-              Split: {siteConfig.partnerDeckInquiry.authorSharePercent}% author /{" "}
-              {siteConfig.partnerDeckInquiry.uniSharePercent}% UniPrep of net after Gumroad fees;
-              monthly bank-to-bank when accrued ≥ ${siteConfig.partnerDeckInquiry.minPayoutUsd}.
+              Telegram sales + funnel stats; monthly bank-to-bank payout from $
+              {siteConfig.partnerDeckInquiry.minPayoutUsd} accrued (smaller balances roll forward).
             </li>
-            <li>
-              Sales and mock-funnel stats go to your Telegram — no upload portal or author web
-              dashboard.
-            </li>
+            <li>Email intake only — no upload portal or author web dashboard.</li>
           </ul>
           <p className="mt-3 text-sm leading-6 text-[#5f5749]">
             {siteConfig.partnerDeckInquiry.instructions}
