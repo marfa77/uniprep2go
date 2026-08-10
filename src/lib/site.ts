@@ -25,10 +25,15 @@ export const siteConfig = {
   partnerDeckInquiry: {
     title: "Partner Anki decks welcome",
     summary:
-      "We accept high-quality third-party Anki decks for exams already covered (or soon covered) by a free UniPrep2Go readiness check. After quality review we publish the deck with a matching mock on this site; customer checkout stays on UniPrep/Gumroad, and partner payouts are settled monthly bank-to-bank.",
+      "UniPrep2Go runs a curated partner program for exam Anki creators: after founder quality review we publish your deck with a matching free readiness check; buyers check out on UniPrep/Gumroad (PixID Studio). Authors earn 70% of net after Gumroad fees (UniPrep 30%), receive sales and funnel stats by Telegram, and get paid monthly bank-to-bank when accrued share is at least $50.",
     instructions:
-      "Email us with the exam name, card count, sample cards or a private .apkg link, your rights to the content, and payout bank country. No public upload form yet — inquiry by email only.",
+      "Email us with the exam name, card count, sample cards or a private .apkg link, proof you own the content, payout bank country, and a Telegram username for stats. Only exams we already mock (or will ship a mock with the deck). No public upload form or author web dashboard — inquiry by email only.",
     mailtoSubject: "Partner Anki deck submission",
+    authorSharePercent: 70,
+    uniSharePercent: 30,
+    minPayoutUsd: 50,
+    statsChannel: "Telegram",
+    intentPath: "/sell-anki-deck",
   },
   checkoutProviders: "Gumroad, Lemon Squeezy, and the Prep2Go Immigration App Store",
   checkoutSellers: "PixID Studio and Prep2Go",

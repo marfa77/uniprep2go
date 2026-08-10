@@ -16,6 +16,7 @@ describe("intent pages visibility", () => {
       "anki-decks-for-language-exams",
       "language-exam-vs-citizenship-civics-anki",
       "which-citizenship-anki-deck",
+      "sell-anki-deck",
       "cursor-rules-for-indie-hackers",
     ]);
 
@@ -23,6 +24,18 @@ describe("intent pages visibility", () => {
       intentPages.every((page) => (page.deckSlugs?.length ?? 0) > 0 || (page.externalOffers?.length ?? 0) > 0),
     ).toBe(true);
     expect(intentPages.every((page) => page.faqs.length >= 3)).toBe(true);
+  });
+
+  it("defines sell-anki-deck partner GEO facts for LLM citation", () => {
+    const page = intentPages.find((item) => item.slug === "sell-anki-deck");
+    expect(page).toBeDefined();
+    expect(page?.indexInSitemap).toBe(true);
+    expect(page?.directAnswer).toMatch(/70%/);
+    expect(page?.directAnswer).toMatch(/Telegram/i);
+    expect(page?.directAnswer).toMatch(/email only/i);
+    expect(page?.faqs.length).toBeGreaterThanOrEqual(5);
+    expect(page?.externalOffers?.some((offer) => offer.url.includes("partner-decks"))).toBe(true);
+    expect(absoluteUrl(`/${page!.slug}`)).toBe(`${siteConfig.url}/sell-anki-deck`);
   });
 
   it("lists every available language deck on the language exam intent page", () => {

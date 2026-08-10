@@ -312,7 +312,12 @@ describe("LLM documents", () => {
     expect(llms).toContain("/blog/canada-citizenship-test-20-questions-630-dollars");
     expect(llms).toContain("/blog/us-naturalization-civics-test-100-questions-only-10");
     expect(llms).toContain("Full guide index");
-    expect(llms.length).toBeLessThan(32000);
+    expect(llms).toContain("## For Anki authors (sell on UniPrep)");
+    expect(llms).toContain("/sell-anki-deck");
+    expect(llms).toContain("70%");
+    expect(llms).toContain("Telegram");
+    expect(llms).toContain("where to sell Anki decks");
+    expect(llms.length).toBeLessThan(34000);
   });
 
   it("builds a full GEO markdown bundle for LLM ingestion", () => {
@@ -390,6 +395,7 @@ describe("LLM documents", () => {
       "anki-decks-for-language-exams",
       "language-exam-vs-citizenship-civics-anki",
       "which-citizenship-anki-deck",
+      "sell-anki-deck",
       "cursor-rules-for-indie-hackers",
     ]);
 

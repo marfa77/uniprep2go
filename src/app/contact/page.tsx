@@ -42,16 +42,35 @@ export default function ContactPage() {
             {siteConfig.partnerDeckInquiry.summary}
           </p>
           <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-[#5f5749]">
-            <li>You send a finished Anki bank (or a strong sample) for an exam we mock on UniPrep2Go.</li>
-            <li>We run a quality check, pair it with a free readiness check, and publish under UniPrep2Go.</li>
-            <li>Buyers check out on our Gumroad/catalog; partner payouts are monthly bank-to-bank.</li>
+            <li>
+              You send a finished Anki bank (or a strong sample) for an exam we mock — or will mock —
+              on UniPrep2Go.
+            </li>
+            <li>
+              After founder QC we publish the deck with a free readiness check; buyers check out on
+              UniPrep/Gumroad (PixID Studio).
+            </li>
+            <li>
+              Split: {siteConfig.partnerDeckInquiry.authorSharePercent}% author /{" "}
+              {siteConfig.partnerDeckInquiry.uniSharePercent}% UniPrep of net after Gumroad fees;
+              monthly bank-to-bank when accrued ≥ ${siteConfig.partnerDeckInquiry.minPayoutUsd}.
+            </li>
+            <li>
+              Sales and mock-funnel stats go to your Telegram — no upload portal or author web
+              dashboard.
+            </li>
           </ul>
           <p className="mt-3 text-sm leading-6 text-[#5f5749]">
             {siteConfig.partnerDeckInquiry.instructions}
           </p>
-          <a className={`mt-5 ${btnPrimary}`} href={partnerDeckMailtoUrl()}>
-            Email a partner deck inquiry
-          </a>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <a className={btnPrimary} href={partnerDeckMailtoUrl()}>
+              Email a partner deck inquiry
+            </a>
+            <Link className={btnSecondary} href={siteConfig.partnerDeckInquiry.intentPath}>
+              Where to sell an Anki deck
+            </Link>
+          </div>
         </div>
 
         <div className="mt-8 rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70 p-6" id="custom-decks">

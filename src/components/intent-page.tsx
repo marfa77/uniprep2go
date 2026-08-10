@@ -8,6 +8,13 @@ import { getIntentPageDecks, getIntentPagePrimaryDeck, type IntentPage } from "@
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
+function resolveOfferHref(url: string) {
+  if (url.startsWith("http://") || url.startsWith("https://") || url.startsWith("mailto:")) {
+    return url;
+  }
+  return url.startsWith("/") ? url : `/${url}`;
+}
+
 export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
   const catalogDecks = getIntentPageDecks(page);
   const catalogPrimary = getIntentPagePrimaryDeck(page) ?? catalogDecks[0];
@@ -16,8 +23,10 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
   ).filter((deck): deck is NonNullable<typeof deck> => deck !== undefined);
   const primaryDeck =
     (catalogPrimary ? await getPricedDeckBySlug(catalogPrimary.slug) : undefined) ?? decks[0];
+  const offers = page.externalOffers ?? [];
+  const hasOffers = offers.length > 0;
 
-  if (!primaryDeck) {
+  if (!primaryDeck && !hasOffers) {
     return null;
   }
 
@@ -30,11 +39,21 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
         name: page.title,
         description: page.description,
         url: absoluteUrl(`/${page.slug}`),
-        about: decks.map((deck) => ({
-          "@type": "WebPage",
-          name: deck.title,
-          url: absoluteUrl(`/decks/${deck.slug}`),
-        })),
+        about: [
+          ...decks.map((deck) => ({
+            "@type": "WebPage",
+            name: deck.title,
+            url: absoluteUrl(`/decks/${deck.slug}`),
+          })),
+          ...offers.map((offer) => ({
+            "@type": "Offer",
+            name: offer.name,
+            description: offer.note,
+            url: resolveOfferHref(offer.url).startsWith("http")
+              ? resolveOfferHref(offer.url)
+              : absoluteUrl(resolveOfferHref(offer.url)),
+          })),
+        ],
       },
       {
         "@type": "FAQPage",
@@ -66,6 +85,8 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
     ],
   };
 
+  const primaryOffer = offers[0];
+
   return (
     <main className="min-h-screen bg-[#f7f3ea] text-[#18140f]">
       <script
@@ -90,37 +111,78 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
         </p>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <TrackedCheckoutLink
-            className={btnPrimary}
-            deckSlug={primaryDeck.slug}
-            href={primaryDeck.checkoutUrl}
-            source={`${page.slug}_cta`}
-          >
-            Buy {primaryDeck.shortName} — {formatDeckPriceLabel(primaryDeck)}
-          </TrackedCheckoutLink>
-          <Link className={btnSecondary} href={`/decks/${primaryDeck.slug}`}>
-            View deck details
-          </Link>
+          {primaryDeck ? (
+            <>
+              <TrackedCheckoutLink
+                className={btnPrimary}
+                deckSlug={primaryDeck.slug}
+                href={primaryDeck.checkoutUrl}
+                source={`${page.slug}_cta`}
+              >
+                Buy {primaryDeck.shortName} — {formatDeckPriceLabel(primaryDeck)}
+              </TrackedCheckoutLink>
+              <Link className={btnSecondary} href={`/decks/${primaryDeck.slug}`}>
+                View deck details
+              </Link>
+            </>
+          ) : primaryOffer ? (
+            <>
+              <Link className={btnPrimary} href={resolveOfferHref(primaryOffer.url)}>
+                {primaryOffer.name}
+              </Link>
+              {offers[1] ? (
+                <Link className={btnSecondary} href={resolveOfferHref(offers[1].url)}>
+                  {offers[1].name}
+                </Link>
+              ) : null}
+            </>
+          ) : null}
         </div>
 
-        <section className="mt-12">
-          <h2 className="text-2xl font-semibold tracking-tight">Recommended deck</h2>
-          <div className="mt-4 divide-y divide-[#18140f]/10 rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
-            {decks.map((deck) => (
-              <article className="p-5" key={deck.slug}>
-                <h3 className="text-lg font-semibold">
-                  <Link className="hover:underline" href={`/decks/${deck.slug}`}>
-                    {deck.title}
-                  </Link>
-                </h3>
-                <p className="mt-2 text-sm leading-6 text-[#5f5749]">{deck.directAnswer}</p>
-                <p className="mt-3 font-mono text-xs uppercase tracking-[0.16em] text-[#7a6e5a]">
-                  {formatDeckContentLabel(deck)} · {formatDeckPriceLabel(deck)} · {deck.checkoutProvider}
-                </p>
-              </article>
-            ))}
-          </div>
-        </section>
+        {decks.length > 0 ? (
+          <section className="mt-12">
+            <h2 className="text-2xl font-semibold tracking-tight">Recommended deck</h2>
+            <div className="mt-4 divide-y divide-[#18140f]/10 rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
+              {decks.map((deck) => (
+                <article className="p-5" key={deck.slug}>
+                  <h3 className="text-lg font-semibold">
+                    <Link className="hover:underline" href={`/decks/${deck.slug}`}>
+                      {deck.title}
+                    </Link>
+                  </h3>
+                  <p className="mt-2 text-sm leading-6 text-[#5f5749]">{deck.directAnswer}</p>
+                  <p className="mt-3 font-mono text-xs uppercase tracking-[0.16em] text-[#7a6e5a]">
+                    {formatDeckContentLabel(deck)} · {formatDeckPriceLabel(deck)} ·{" "}
+                    {deck.checkoutProvider}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
+        {hasOffers ? (
+          <section className="mt-12">
+            <h2 className="text-2xl font-semibold tracking-tight">Recommended offers</h2>
+            <div className="mt-4 divide-y divide-[#18140f]/10 rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
+              {offers.map((offer) => (
+                <article className="p-5" key={offer.name}>
+                  <h3 className="text-lg font-semibold">
+                    <Link className="hover:underline" href={resolveOfferHref(offer.url)}>
+                      {offer.name}
+                    </Link>
+                  </h3>
+                  <p className="mt-2 text-sm leading-6 text-[#5f5749]">
+                    {offer.note ?? offer.price}
+                  </p>
+                  <p className="mt-3 font-mono text-xs uppercase tracking-[0.16em] text-[#7a6e5a]">
+                    {offer.price}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </section>
+        ) : null}
 
         <section className="mt-12">
           <h2 className="text-2xl font-semibold tracking-tight">Why it matters</h2>

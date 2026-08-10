@@ -20,6 +20,7 @@
     "setup:gumroad-building-decks": "node scripts/setup-gumroad-building-decks.mjs",
     "setup:gumroad-wave-decks": "node scripts/setup-gumroad-wave-decks.mjs",
     "generate:wave-deck-specs": "node scripts/generate-wave-deck-specs.mjs --sync-anki-generator",
+    "partner:payout-report": "npx tsx scripts/partner-payout-report.mjs",
     "scaffold:certification": "node scripts/scaffold-certification.mjs",
     "validate:certification": "node scripts/validate-certification-pipeline.mjs",
     "indexnow:deploy": "tsx src/lib/run-indexnow-deploy.ts",

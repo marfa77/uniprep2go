@@ -4752,14 +4752,17 @@ const rawDecks: Deck[] = [
   },
 ];
 
+/** Wave planned factories may re-link to already-available catalog slugs (e.g. L&H). Keep one record. */
+const existingCatalogSlugs = new Set(rawDecks.map((deck) => deck.slug));
+const uniqueWavePlannedDecks = [
+  ...wave1PlannedDecks,
+  ...wave2PlannedDecks,
+  ...wave3PlannedDecks,
+  ...wave4PlannedDecks,
+].filter((deck) => !existingCatalogSlugs.has(deck.slug));
+
 export const decks: Deck[] = applyAnkiDeckLaunchToCatalog(
-  [
-    ...rawDecks,
-    ...wave1PlannedDecks,
-    ...wave2PlannedDecks,
-    ...wave3PlannedDecks,
-    ...wave4PlannedDecks,
-  ].map(enrichDeckWithShopPreviews),
+  [...rawDecks, ...uniqueWavePlannedDecks].map(enrichDeckWithShopPreviews),
 );
 
 export const catalogAvailableDecks = decks.filter(

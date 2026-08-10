@@ -25,7 +25,7 @@ export function SiteFooter() {
               . Authors with a strong exam deck can also{" "}
               <Link
                 className="font-medium text-[#4f493e] underline decoration-[#18140f]/20 underline-offset-4 transition hover:text-[#18140f]"
-                href="/contact#partner-decks"
+                href="/sell-anki-deck"
               >
                 partner with us
               </Link>{" "}
