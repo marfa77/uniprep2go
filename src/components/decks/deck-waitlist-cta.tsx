@@ -145,7 +145,7 @@ export function DeckWaitlistCta({
         clear). Already have a strong bank for this exam?{" "}
         <a
           className="font-medium text-[#1f3a5f] underline decoration-[#1f3a5f]/30 underline-offset-4"
-          href="/contact#partner-decks"
+          href="/sell-anki-deck"
         >
           We accept partner Anki decks
         </a>{" "}
