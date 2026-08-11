@@ -4628,11 +4628,13 @@ const rawDecks: Deck[] = [
         question: "What is contango in metals markets?",
         answer:
           "A forward curve where deferred prices are above nearby/cash. Contango can reward cash-and-carry if the curve premium exceeds storage and financing.",
+        imageUrl: "/samples/bench-energy-metal-trader-anki-deck-sample-1.webp",
       },
       {
         question: "What is backwardation in metals markets?",
         answer:
           "A forward curve where nearby/cash trades above deferred prices. Often signals tight prompt supply; cash-and-carry is not profitable in deep backwardation.",
+        imageUrl: "/samples/bench-energy-metal-trader-anki-deck-sample-1.webp",
       },
     ],
     faqs: [
