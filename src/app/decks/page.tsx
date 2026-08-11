@@ -35,6 +35,7 @@ export async function generateMetadata(): Promise<Metadata> {
         "UniPrep2Go deck catalog: Anki flashcards and PDFs for US licensing, finance credentials, building certifications, language exams, and Prep2Go Immigration apps.",
       aiCategory: "Exam prep catalog",
       path: "/decks",
+      linkLlmsCatalog: true,
     },
   );
 }

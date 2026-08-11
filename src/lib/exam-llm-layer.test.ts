@@ -89,6 +89,7 @@ describe("exam-llm-layer", () => {
         aiDescription: buildSiteAiDescription(),
         aiCategory: buildSiteAiCategory(),
         path: "/",
+        linkLlmsCatalog: true,
       },
     );
 
@@ -96,7 +97,7 @@ describe("exam-llm-layer", () => {
     expect(metadata.alternates?.types?.["text/plain"]).toContain("/llms.txt");
   });
 
-  it("builds ai meta for mock pages", () => {
+  it("builds ai meta for mock pages without rediscovering llms.txt on leaves", () => {
     const profile = getExamFactsProfileForDeck(leedConfig.linkedDeckSlug);
     const description = buildMockAiDescription(leedConfig, profile);
     const category = buildMockAiCategory(leedConfig);
@@ -118,7 +119,7 @@ describe("exam-llm-layer", () => {
 
     expect(metadata.other?.["ai:description"]).toBe(description);
     expect(metadata.other?.["ai:category"]).toBe(category);
-    expect(metadata.alternates?.types?.["text/plain"]).toContain("/llms.txt");
+    expect(metadata.alternates?.types?.["text/plain"]).toBeUndefined();
   });
 
   it("builds high-intent llms.txt section with FINRA ladder first", () => {

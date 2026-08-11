@@ -93,6 +93,7 @@ export async function generateMetadata(): Promise<Metadata> {
       aiDescription: buildMockIndexAiDescription(mockCount),
       aiCategory: buildMockIndexAiCategory(),
       path: "/mock-exams",
+      linkLlmsCatalog: true,
     },
   );
 }

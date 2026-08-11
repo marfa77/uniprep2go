@@ -1,226 +1,102 @@
 import type { MetadataRoute } from "next";
 import { getAllBlogPosts } from "../lib/blog";
 import { availableDecks } from "../lib/decks";
-import { intentPages } from "../lib/intent-pages";
-import { getAllMockExams } from "../lib/mock-exams/configs";
-import { getVerticalSummaries } from "../lib/mock-exams/hub-clusters";
-import { mockExamSitemapPriority, shouldIndexMockExam } from "../lib/seo";
+import {
+  getGoogleSitemapBlogSlugs,
+  getGoogleSitemapComicPaths,
+  getGoogleSitemapMockSlugs,
+  getGoogleSitemapVerticalPaths,
+  GOOGLE_SITEMAP_HUB_PATHS,
+  GOOGLE_SITEMAP_INTENT_SLUGS,
+  GOOGLE_SITEMAP_SUPPORT_PATHS,
+} from "../lib/google-sitemap-allowlist";
+import { mockExamSitemapPriority } from "../lib/seo";
 import { siteConfig } from "../lib/site";
 
 const siteUrl = siteConfig.url;
 
+function dedupeByUrl(entries: MetadataRoute.Sitemap): MetadataRoute.Sitemap {
+  return Array.from(new Map(entries.map((entry) => [entry.url, entry])).values());
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
+  const moneyBlogSlugs = new Set(getGoogleSitemapBlogSlugs());
+
+  const hubs = GOOGLE_SITEMAP_HUB_PATHS.map((path) => ({
+    url: path === "/" ? `${siteUrl}/` : `${siteUrl}${path}`,
+    lastModified,
+    changeFrequency: (path === "/blog" || path === "/mock-exams" || path === "/decks"
+      ? "weekly"
+      : "monthly") as "weekly" | "monthly",
+    priority: path === "/" ? 1 : path === "/mock-exams" ? 0.95 : path === "/decks" ? 0.94 : 0.93,
+  }));
+
+  const supportPages = GOOGLE_SITEMAP_SUPPORT_PATHS.map(({ path, priority }) => ({
+    url: `${siteUrl}${path}`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority,
+  }));
+
+  const intentPages = GOOGLE_SITEMAP_INTENT_SLUGS.map((slug) => ({
+    url: `${siteUrl}/${slug}`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority: 0.85,
+  }));
+
+  const blogPosts = getAllBlogPosts()
+    .filter((post) => moneyBlogSlugs.has(post.slug))
+    .map((post) => ({
+      url: `${siteUrl}/blog/${post.slug}`,
+      lastModified: new Date(`${post.publishedAt}T12:00:00.000Z`),
+      changeFrequency: "monthly" as const,
+      priority: 0.84,
+    }));
+
+  const comicPages = getGoogleSitemapComicPaths().map((path) => ({
+    url: `${siteUrl}${path}`,
+    lastModified,
+    changeFrequency: (path === "/comics/gaivota-em-portugal" ? "weekly" : "monthly") as
+      | "weekly"
+      | "monthly",
+    priority: path.endsWith("/01-1755-earthquake")
+      ? 0.86
+      : path === "/comics/gaivota-em-portugal"
+        ? 0.84
+        : 0.84,
+  }));
 
   const deckPages = availableDecks.map((deck) => ({
     url: `${siteUrl}/decks/${deck.slug}`,
     lastModified,
     changeFrequency: "monthly" as const,
-    priority: 0.92,
+    priority: 0.96,
   }));
 
-  // Planned waitlist decks stay on /api/facts + llms; exclude from Google sitemap.
-  const mockPages = getAllMockExams()
-    .filter((mock) => shouldIndexMockExam(mock.slug))
-    .map((mock) => ({
-      url: `${siteUrl}/mock-exams/${mock.slug}`,
-      lastModified,
-      changeFrequency: "weekly" as const,
-      priority: mockExamSitemapPriority(mock.slug),
-    }));
+  const mockPages = getGoogleSitemapMockSlugs().map((slug) => ({
+    url: `${siteUrl}/mock-exams/${slug}`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: mockExamSitemapPriority(slug),
+  }));
 
-  const mockVerticalPages = getVerticalSummaries().map((vertical) => ({
-    url: `${siteUrl}/mock-exams/v/${vertical.id}`,
+  const verticalPages = getGoogleSitemapVerticalPaths().map((path) => ({
+    url: `${siteUrl}${path}`,
     lastModified,
     changeFrequency: "weekly" as const,
     priority: 0.9,
   }));
 
-  const indexedIntentPages = intentPages
-    .filter((page) => page.indexInSitemap)
-    .map((page) => ({
-      url: `${siteUrl}/${page.slug}`,
-      lastModified,
-      changeFrequency: "monthly" as const,
-      priority: 0.85,
-    }));
-
-  const blogIndex = {
-    url: `${siteUrl}/blog`,
-    lastModified,
-    changeFrequency: "weekly" as const,
-    priority: 0.86,
-  };
-
-  const blogPosts = getAllBlogPosts().map((post) => ({
-    url: `${siteUrl}/blog/${post.slug}`,
-    lastModified: new Date(`${post.publishedAt}T12:00:00.000Z`),
-    changeFrequency: "monthly" as const,
-    priority: 0.84,
-  }));
-
-  return [
-    {
-      url: `${siteUrl}/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 1,
-    },
-    {
-      url: `${siteUrl}/how-to-import-cfa-anki-deck`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${siteUrl}/anki-starter-kit`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.82,
-    },
-    {
-      url: `${siteUrl}/comics/gaivota-em-portugal`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.84,
-    },
-    {
-      url: `${siteUrl}/comics/gaivota-em-portugal/01-1755-earthquake`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.86,
-    },
-    {
-      url: `${siteUrl}/comics/gaivota-em-portugal/02-25-de-abril`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.84,
-    },
-    {
-      url: `${siteUrl}/comics/gaivota-em-portugal/03-aljubarrota`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.84,
-    },
-    {
-      url: `${siteUrl}/comics/gaivota-em-portugal/04-ceuta`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.84,
-    },
-    {
-      url: `${siteUrl}/comics/gaivota-em-portugal/05-vasco-da-gama`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.84,
-    },
-    {
-      url: `${siteUrl}/comics/gaivota-em-portugal/06-liberal-revolution`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.84,
-    },
-    {
-      url: `${siteUrl}/comics/gaivota-em-portugal/07-republic`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.84,
-    },
-    {
-      url: `${siteUrl}/comics/gaivota-em-portugal/08-estado-novo`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.84,
-    },
-    {
-      url: `${siteUrl}/comics/gaivota-em-portugal/09-treaty-of-windsor`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.84,
-    },
-    {
-      url: `${siteUrl}/comics/gaivota-em-portugal/10-eu-accession`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.84,
-    },
-    {
-      url: `${siteUrl}/cfa-level-1-anki-deck-vs-curriculum`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    ...indexedIntentPages,
-    blogIndex,
+  return dedupeByUrl([
+    ...hubs,
+    ...supportPages,
+    ...intentPages,
     ...blogPosts,
-    {
-      url: `${siteUrl}/mock-exams`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.95,
-    },
-    {
-      url: `${siteUrl}/llms.txt`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${siteUrl}/llms-full.txt`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.65,
-    },
-    {
-      url: `${siteUrl}/decks`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.94,
-    },
-    {
-      url: `${siteUrl}/building-certification-anki-decks`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.94,
-    },
-    {
-      url: `${siteUrl}/finance-anki-decks`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.93,
-    },
-    {
-      url: `${siteUrl}/language-certification-decks`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.88,
-    },
-    ...mockVerticalPages,
+    ...comicPages,
+    ...verticalPages,
     ...mockPages,
     ...deckPages,
-    {
-      url: `${siteUrl}/contact`,
-      lastModified,
-      changeFrequency: "yearly",
-      priority: 0.5,
-    },
-    {
-      url: `${siteUrl}/privacy`,
-      lastModified,
-      changeFrequency: "yearly",
-      priority: 0.4,
-    },
-    {
-      url: `${siteUrl}/terms`,
-      lastModified,
-      changeFrequency: "yearly",
-      priority: 0.4,
-    },
-    {
-      url: `${siteUrl}/cookies`,
-      lastModified,
-      changeFrequency: "yearly",
-      priority: 0.4,
-    },
-  ];
+  ]);
 }

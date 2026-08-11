@@ -3,11 +3,13 @@ import { LegalDocument } from "@/components/legal-document";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { privacySections } from "@/lib/legal-content";
+import { thinContentRobots } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: `Privacy Policy for ${siteConfig.name}.`,
+  robots: thinContentRobots,
   alternates: {
     canonical: "/privacy",
   },

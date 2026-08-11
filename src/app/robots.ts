@@ -25,19 +25,21 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "*",
         allow: "/",
       },
+      // Cut UTM catalog duplicates that flooded GSC after llms.txt was listed as Sitemap.
+      // AI bots keep full Allow via their own rules below; /llms.txt stays crawlable.
+      {
+        userAgent: "Googlebot",
+        allow: "/",
+        disallow: ["/*?utm_source=llm"],
+      },
       ...aiCrawlers.map((userAgent) => ({
         userAgent,
         allow: "/",
       })),
     ],
-    // Google: HTML sitemap + curated llms entrypoints only.
-    // llm-sitemap.xml (*.md, /api/facts) stays linked from /llms.txt — listing it here
-    // flooded GSC with "Crawled - currently not indexed" markdown URLs.
-    sitemap: [
-      `${siteConfig.url}/sitemap.xml`,
-      `${siteConfig.url}/llms.txt`,
-      `${siteConfig.url}/llms-full.txt`,
-    ],
+    // Only the HTML sitemap. /llms.txt + /llms-full.txt stay linked from GEO surfaces
+    // and llm-sitemap.xml — never declare them as Sitemap: again.
+    sitemap: [`${siteConfig.url}/sitemap.xml`],
     host: siteConfig.url,
   };
 }

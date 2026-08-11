@@ -19,16 +19,24 @@ export type AiMetaInput = {
   aiDescription: string;
   aiCategory?: string;
   path: string;
+  /**
+   * Attach alternates.types text/plain → /llms.txt.
+   * Only hubs + home — leaf deck/mock pages rediscover the full catalog in Google.
+   */
+  linkLlmsCatalog?: boolean;
 };
 
-/** PixID-style ai:description + ai:category + llms.txt alternate. */
+/** PixID-style ai:description + ai:category (+ optional llms.txt alternate on hubs). */
 export function withAiMetadata(metadata: Metadata, input: AiMetaInput): Metadata {
-  const llmsTxtUrl = absoluteUrl("/llms.txt");
   const alternates = metadata.alternates ?? {};
-  const types = {
-    ...(typeof alternates === "object" && alternates.types ? alternates.types : {}),
-    "text/plain": llmsTxtUrl,
-  };
+  const existingTypes =
+    typeof alternates === "object" && alternates.types ? alternates.types : {};
+  const types = input.linkLlmsCatalog
+    ? {
+        ...existingTypes,
+        "text/plain": absoluteUrl("/llms.txt"),
+      }
+    : existingTypes;
 
   const other: Record<string, string> = {
     "ai:description": input.aiDescription.slice(0, 500),
@@ -41,7 +49,7 @@ export function withAiMetadata(metadata: Metadata, input: AiMetaInput): Metadata
     ...metadata,
     alternates: {
       ...(typeof alternates === "object" ? alternates : {}),
-      types,
+      ...(Object.keys(types).length > 0 ? { types } : {}),
     },
     other,
   };

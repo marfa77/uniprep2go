@@ -65,6 +65,7 @@ export async function generateMetadata(): Promise<Metadata> {
       aiDescription: directAnswer,
       aiCategory: "Building certification exam prep hub",
       path: `/${BUILDING_CERTIFICATION_HUB_SLUG}`,
+      linkLlmsCatalog: true,
     },
   );
 }

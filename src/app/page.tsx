@@ -218,6 +218,7 @@ export async function generateMetadata(): Promise<Metadata> {
     aiDescription: buildSiteAiDescription(),
     aiCategory: buildSiteAiCategory(),
     path: "/",
+    linkLlmsCatalog: true,
   });
 }
 

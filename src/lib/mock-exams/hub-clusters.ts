@@ -23,14 +23,20 @@ export const featuredMockHubSlugs = [
 ] as const;
 
 /**
- * US money-priority mocks for sitemap boost + home CTAs (FINRA ladder + CA RE).
- * Featured hub can stay marketing-oriented; sitemap priority uses this set.
+ * Money-funnel mocks for Google sitemap priority 0.98.
+ * Keep in sync with GOOGLE_SITEMAP_MONEY_MOCK_SLUGS (allowlist).
  */
 export const nicheGooglePrioritySlugs = [
   "sie-full-mock",
+  "sie-quick-diagnostic",
   "series-7-readiness-check",
   "series-63-readiness-check",
   "california-real-estate-readiness-check",
+  "cfa-level-1-readiness-check",
+  "frm-part-1-readiness-check",
+  "ptcb-pharmacy-technician-mock",
+  "nha-excpt-readiness-check",
+  "mrics-quantity-surveying-readiness-check",
 ] as const;
 
 /** Parked / lower-WTP exams kept live/GEO but deprioritized in Google sitemap. */
@@ -48,10 +54,8 @@ export const googleHeadExamSlugs = [
   "fl-real-estate-readiness-check",
   "tx-real-estate-readiness-check",
   "servsafe-manager-mock",
-  "ptcb-pharmacy-technician-mock",
   "gmat-focus-readiness-check",
   "gre-readiness-check",
-  "cfa-level-1-readiness-check",
   "us-citizenship-readiness-check",
 ] as const;
 
@@ -70,12 +74,24 @@ export function isGoogleHeadExamSlug(slug: string): boolean {
 export const nicheGooglePageLeads: Partial<Record<(typeof nicheGooglePrioritySlugs)[number], string>> = {
   "sie-full-mock":
     "This free FINRA SIE practice test mirrors the Securities Industry Essentials gate exam for brokerage candidates who do not yet need a firm sponsor. Timed questions cover capital markets, products, trading, customer accounts, and prohibited activities — then the report shows which SIE domains to repair with Anki before you schedule Prometric.",
+  "sie-quick-diagnostic":
+    "This shorter FINRA SIE diagnostic is for candidates who want a fast capital-markets and products check before committing to a full-length timed mock. Use the topic report to queue Anki repairs, then sit the full SIE mock when you are ready for exam-length pacing.",
   "series-7-readiness-check":
     "Use this free Series 7 readiness check after SIE to stress-test General Securities Representative judgment on equities, debt, options, packaged products, and customer suitability. It is built for sponsored candidates climbing the FINRA license ladder — not a recycled SIE quiz — so you can see which Series 7 topics still need daily drill.",
   "series-63-readiness-check":
     "This free Series 63 readiness check targets Uniform Securities Agent State Law rules that sit beside Series 7 for many state registrations. Timed items cover registration, unethical practices, and administrative provisions so you can close the state-law gap on the same buyer ladder as SIE and Series 7.",
   "california-real-estate-readiness-check":
     "This free California real estate salesperson readiness check focuses on DRE license law, contracts, property ownership, agency, and exam math for the endless CA cohort. Use it as a timed diagnostic before PSI — then repair weak topics with the linked Anki deck between study blocks.",
+  "cfa-level-1-readiness-check":
+    "This free CFA Level 1 readiness check stresses Ethics, quant, economics, FRA, and the product domains Level 1 candidates forget under time. Score by topic, then repair weak formulas and definitions with the linked Anki deck and formula PDF before your next full mock block.",
+  "frm-part-1-readiness-check":
+    "This free FRM Part 1 readiness check targets foundations of risk, quant, markets and products, and valuation models so GARP candidates can see which Part 1 pillars still need daily Anki before booking the exam window.",
+  "ptcb-pharmacy-technician-mock":
+    "This free PTCB pharmacy technician practice mock covers medications, federal requirements, patient safety, and order entry judgment. Use the topic report to decide whether to buy the PTCB Anki deck or the 2026 study guide next — not a recycled generic quiz bank.",
+  "nha-excpt-readiness-check":
+    "This free NHA ExCPT readiness check is built for pharmacy technician candidates on the ExCPT path who need timed practice before the official exam. Review weak domains, then drill the matching Anki rows instead of re-reading unpaid blog dumps.",
+  "mrics-quantity-surveying-readiness-check":
+    "This free MRICS Quantity Surveying readiness check stresses QS pathway competencies — measurement, cost, contract practice, and ethics — so APC candidates can see which Level 2/3 rows still need Anki before the next supervisor review.",
 };
 
 export function getNicheGooglePageLead(slug: string): string | undefined {

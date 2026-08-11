@@ -3,11 +3,13 @@ import { LegalDocument } from "@/components/legal-document";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { cookieSections } from "@/lib/legal-content";
+import { thinContentRobots } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Cookie Policy",
   description: `Cookie and analytics disclosure for ${siteConfig.name}.`,
+  robots: thinContentRobots,
   alternates: {
     canonical: "/cookies",
   },

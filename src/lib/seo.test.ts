@@ -88,17 +88,30 @@ describe("seo utilities (Barakhlo patterns)", () => {
     }
   });
 
-  it("boosts FINRA money-priority slugs and deprioritizes parked exams in sitemap", () => {
+  it("boosts money-funnel mocks and deprioritizes parked exams in sitemap", () => {
     expect(nicheGooglePrioritySlugs).toEqual([
       "sie-full-mock",
+      "sie-quick-diagnostic",
       "series-7-readiness-check",
       "series-63-readiness-check",
       "california-real-estate-readiness-check",
+      "cfa-level-1-readiness-check",
+      "frm-part-1-readiness-check",
+      "ptcb-pharmacy-technician-mock",
+      "nha-excpt-readiness-check",
+      "mrics-quantity-surveying-readiness-check",
     ]);
     expect(isNicheGooglePrioritySlug("sie-full-mock")).toBe(true);
-    expect(isNicheGooglePrioritySlug("series-7-readiness-check")).toBe(true);
+    expect(isNicheGooglePrioritySlug("cfa-level-1-readiness-check")).toBe(true);
+    expect(isNicheGooglePrioritySlug("ptcb-pharmacy-technician-mock")).toBe(true);
+    expect(isNicheGooglePrioritySlug("frm-part-1-readiness-check")).toBe(true);
+    expect(isNicheGooglePrioritySlug("nha-excpt-readiness-check")).toBe(true);
+    expect(isNicheGooglePrioritySlug("mrics-quantity-surveying-readiness-check")).toBe(true);
     expect(isNicheGooglePrioritySlug("epa-608-readiness-check")).toBe(false);
+    expect(googleHeadExamSlugs).not.toContain("cfa-level-1-readiness-check");
+    expect(googleHeadExamSlugs).not.toContain("ptcb-pharmacy-technician-mock");
     expect(mockExamSitemapPriority("sie-full-mock")).toBe(0.98);
+    expect(mockExamSitemapPriority("cfa-level-1-readiness-check")).toBe(0.98);
     expect(mockExamSitemapPriority("series-63-readiness-check")).toBe(0.98);
     expect(mockExamSitemapPriority("epa-608-readiness-check")).toBe(0.72);
     expect(mockExamSitemapPriority("nremt-emt-readiness-check")).toBe(0.88);

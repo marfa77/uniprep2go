@@ -36,6 +36,7 @@ export async function generateMetadata(): Promise<Metadata> {
         "UniPrep2Go language certification products cover twenty-one curated multi-pathway Anki decks on Gumroad, DELF Prim printable French flashcards for ages 7–12, a Citizenship & Naturalization Anki Bundle for Germany, France, UK, Canada, Australia, and the U.S., and a Swiss Citizenship Anki Bundle (German, French, Italian federal Staatskunde): CIPLE CAPLE Portuguese citizenship, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, Polish A2 Certyfikat residence/citizenship, Polish A2 for Ukrainian Speakers, CELI CILS PLIDA Italian, German A2 for Ukrainian Speakers, German A2 for Russian Speakers, IELTS / TOEFL English for French Speakers, IELTS / TOEFL English for Arabic Speakers, IELTS / TOEFL English for Ukrainian Speakers, IELTS / TOEFL English for Russian Speakers, IELTS / TOEFL English for Spanish Speakers (LatAm), and IELTS / TOEFL English for Portuguese Speakers (BR).",
       aiCategory: "Language exam prep hub",
       path: "/language-certification-decks",
+      linkLlmsCatalog: true,
     },
   );
 }

@@ -4,27 +4,36 @@ import Link from "next/link";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { gaivotaEpisodes, gaivotaSeries } from "@/lib/gaivota-comics";
+import { withAiMetadata } from "@/lib/llm-meta";
 import { siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
 const directAnswer =
   "Gaivota em Portugal is a free-to-start noir comic series about Portuguese history. Episode 1 (1755 Lisbon Earthquake) is free to read on this site. Later episodes cost $5 each on Gumroad. Each issue: history brief, 5-page artistic comic, 100 Portuguese words with English glossary.";
 
-export const metadata: Metadata = {
-  title: "Gaivota em Portugal — Free Portuguese History Comics | UniPrep2Go",
-  description: directAnswer,
-  alternates: { canonical: `${siteConfig.url}${gaivotaSeries.hubPath}` },
-  openGraph: {
-    title: "Gaivota em Portugal — Portuguese history comics",
+export const metadata: Metadata = withAiMetadata(
+  {
+    title: "Gaivota em Portugal — Free Portuguese History Comics | UniPrep2Go",
     description: directAnswer,
-    url: `${siteConfig.url}${gaivotaSeries.hubPath}`,
-    images: [
-      {
-        url: `${siteConfig.url}/comics/gaivota-em-portugal/01-1755-earthquake/art/ep01-cover.webp`,
-      },
-    ],
+    alternates: { canonical: `${siteConfig.url}${gaivotaSeries.hubPath}` },
+    openGraph: {
+      title: "Gaivota em Portugal — Portuguese history comics",
+      description: directAnswer,
+      url: `${siteConfig.url}${gaivotaSeries.hubPath}`,
+      images: [
+        {
+          url: `${siteConfig.url}/comics/gaivota-em-portugal/01-1755-earthquake/art/ep01-cover.webp`,
+        },
+      ],
+    },
   },
-};
+  {
+    aiDescription: directAnswer,
+    aiCategory: "Portuguese history comics; language learning",
+    path: gaivotaSeries.hubPath,
+    linkLlmsCatalog: true,
+  },
+);
 
 export default function GaivotaHubPage() {
   const ep01 = gaivotaEpisodes[0]!;

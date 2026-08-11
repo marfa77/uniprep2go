@@ -3,11 +3,13 @@ import { LegalDocument } from "@/components/legal-document";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { termsSections } from "@/lib/legal-content";
+import { thinContentRobots } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
   description: `Terms of Service for ${siteConfig.name} digital study products.`,
+  robots: thinContentRobots,
   alternates: {
     canonical: "/terms",
   },

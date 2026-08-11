@@ -68,6 +68,7 @@ export async function generateMetadata(): Promise<Metadata> {
         "UniPrep2Go finance Anki decks cover FINRA SIE, Series 7, Series 63, Series 65/6/66, CFA Level 1 and 2, FRM Part 1, CFP, SAFE MLO, Enrolled Agent, and GMAT Focus — each with a linked free practice test or readiness check.",
       aiCategory: "Finance exam prep hub",
       path: "/finance-anki-decks",
+      linkLlmsCatalog: true,
     },
   );
 }

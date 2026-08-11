@@ -81,21 +81,17 @@ describe("intent pages visibility", () => {
     expect(page?.directAnswer).toContain("Gumroad");
   });
 
-  it("keeps deck and mock magnets in sitemap instead of legacy intent URLs", () => {
+  it("keeps commercial intent + deck/mock magnets; drops llms catalogs from Google sitemap", () => {
     const urls = sitemap().map((entry) => entry.url);
     const rules = robots().rules;
 
-    for (const page of intentPages) {
-      if (page.indexInSitemap) {
-        expect(urls).toContain(absoluteUrl(`/${page.slug}`));
-      } else {
-        expect(urls).not.toContain(absoluteUrl(`/${page.slug}`));
-      }
-    }
+    expect(urls).toContain(absoluteUrl("/sell-anki-deck"));
+    expect(urls).toContain(absoluteUrl("/which-citizenship-anki-deck"));
+    expect(urls).toContain(absoluteUrl("/language-exam-vs-citizenship-civics-anki"));
+    expect(urls).not.toContain(absoluteUrl("/cursor-rules-for-indie-hackers"));
 
     expect(urls).toContain(absoluteUrl("/decks/frm-part-1-anki-deck"));
     expect(urls).toContain(absoluteUrl("/mock-exams/sie-full-mock"));
-    // FRM readiness check is live/indexed — keep it in the sitemap for AEO citation.
     expect(urls).toContain(absoluteUrl("/mock-exams/frm-part-1-readiness-check"));
 
     expect(urls).toContain(`${siteConfig.url}/`);
@@ -105,13 +101,9 @@ describe("intent pages visibility", () => {
     expect(urls.some((url) => url.includes("://www."))).toBe(false);
     expect(urls.every((url) => !url.endsWith(".md"))).toBe(true);
     expect(urls.every((url) => !url.includes("/api/"))).toBe(true);
-    expect(urls).toContain(absoluteUrl("/llms.txt"));
-    expect(urls).toContain(absoluteUrl("/llms-full.txt"));
-    expect(robots().sitemap).toEqual([
-      `${siteConfig.url}/sitemap.xml`,
-      `${siteConfig.url}/llms.txt`,
-      `${siteConfig.url}/llms-full.txt`,
-    ]);
+    expect(urls).not.toContain(absoluteUrl("/llms.txt"));
+    expect(urls).not.toContain(absoluteUrl("/llms-full.txt"));
+    expect(robots().sitemap).toEqual([`${siteConfig.url}/sitemap.xml`]);
     expect(robots().sitemap).not.toContain(`${siteConfig.url}/llm-sitemap.xml`);
     expect(robots().host).toBe(siteConfig.url);
     expect(JSON.stringify(rules)).toContain("\"allow\":\"/\"");
@@ -149,9 +141,11 @@ describe("intent pages visibility", () => {
 
     expect(byUrl.get(absoluteUrl("/mock-exams/sie-full-mock"))?.priority).toBe(0.98);
     expect(byUrl.get(absoluteUrl("/mock-exams/series-7-readiness-check"))?.priority).toBe(0.98);
+    expect(byUrl.get(absoluteUrl("/mock-exams/cfa-level-1-readiness-check"))?.priority).toBe(0.98);
     expect(byUrl.get(absoluteUrl("/mock-exams/epa-608-readiness-check"))?.priority).toBe(0.72);
     expect(urls).not.toContain(absoluteUrl("/mock-exams/az-real-estate-readiness-check"));
     expect(urls).toContain(absoluteUrl("/building-certification-anki-decks"));
+    expect(urls).toContain(absoluteUrl("/mock-exams/v/finance"));
     expect(
       getAllMockExams()
         .filter((mock) => mock.status === "live")
