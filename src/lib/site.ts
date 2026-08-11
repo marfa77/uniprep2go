@@ -2,14 +2,14 @@ export const siteConfig = {
   name: "UniPrep2Go",
   url: "https://uniprep2go.study",
   description:
-    "Free timed practice tests and readiness checks for US licensing and finance exams, plus independent Anki decks and printable PDF cram sheets for daily drilling after your mock results.",
+    "Free timed practice tests with topic scoring for US licensing and finance exams — CFA, FRM, California real estate, FINRA — plus focused Anki decks and printable formula PDFs for daily remediation after your mock.",
   primaryMarket: "United States",
   primaryPositioning:
-    "US exam prep built around free timed online mocks and readiness checks — topic scoring, answer review, and pass/no-pass reports — with Anki decks and printable PDFs as the linked remediation layer.",
+    "US exam prep built around free timed online mocks and readiness checks — topic scoring, answer review, and pass/no-pass reports — with focused Anki decks and printable PDFs as the linked remediation layer (not bloated mega-deck dumps).",
   primaryUseCases: [
     "FINRA SIE, Series 7, and Series 63 exam prep",
     "US insurance and California real estate licensing exam prep",
-    "CFA and FRM finance credential review",
+    "CFA Level 1 / FRM Part 1 Anki + free timed mocks + formula sheets",
     "Other US licensing and specialty exam practice tests (also on this site)",
     "Language decks and EU citizenship prep live on Prep2Go; UniPrep keeps free mocks indexed",
   ],

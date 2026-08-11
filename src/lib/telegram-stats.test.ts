@@ -173,9 +173,13 @@ describe("telegram stats", () => {
     expect(message).toContain("Mock completed (period):");
     expect(message).toContain("/decks/cfa-level-1-anki-deck — 14");
     expect(message).toContain("Top pages (Google · recent):");
-    expect(message).toContain("none yet (period Google uniques: 12; checked last 100 events)");
+    expect(message).toContain(
+      "none yet (all-time Google uniques: 0; period: 12; checked last 100 events)",
+    );
     expect(message).toContain("Top pages (LLM · ChatGPT+LLM · recent):");
-    expect(message).toContain("none yet (period LLM uniques: 7; checked last 100 events)");
+    expect(message).toContain(
+      "none yet (all-time LLM uniques: 0; period: 7; checked last 100 events)",
+    );
     expect(message).toContain("Top pages (today ·");
     expect(message).toContain("Динамика 7 дней (посетители / просмотры)");
     expect(message).toContain(
@@ -264,7 +268,55 @@ describe("telegram stats", () => {
     expect(block).not.toContain("/decks/cfa-level-1-anki-deck");
   });
 
-  it("prefers period path∩channel ranks over recent events", () => {
+  it("prefers all-time path∩channel ranks over period and recent", () => {
+    const block = formatSearchAndLlmTopPages({
+      ...sampleStats,
+      recentEvents: [],
+      visitors: {
+        ...sampleStats.visitors,
+        lifetimeByChannel: {
+          google: 20,
+          chatgpt: 6,
+          llm: 4,
+          direct: 5,
+          other: 2,
+        },
+        lifetimePathsByChannel: {
+          google: {
+            "/decks/california-real-estate-exam-anki-deck": 8,
+            "/decks/cfa-level-1-anki-deck": 5,
+          },
+          chatgpt: {
+            "/decks/frm-part-1-anki-deck": 3,
+          },
+          llm: {
+            "/decks/bench-energy-metal-trader-anki-deck": 2,
+          },
+          direct: {},
+          other: {},
+        },
+        pathsByChannel: {
+          google: {
+            "/blog/us-naturalization-civics-test-100-questions-only-10": 5,
+          },
+          chatgpt: {
+            "/blog/czech-cce-language-vs-realie-civics-two-exams": 2,
+          },
+          llm: {},
+          direct: {},
+          other: {},
+        },
+      },
+    });
+
+    expect(block).toContain("Top pages (Google · all-time):");
+    expect(block).toContain("/decks/california-real-estate-exam-anki-deck — 8u");
+    expect(block).toContain("Top pages (LLM · ChatGPT+LLM · all-time):");
+    expect(block).toContain("/decks/frm-part-1-anki-deck — 3u");
+    expect(block).not.toContain("/blog/us-naturalization-civics-test-100-questions-only-10");
+  });
+
+  it("falls back to period path∩channel ranks when all-time is empty", () => {
     const block = formatSearchAndLlmTopPages({
       ...sampleStats,
       recentEvents: [],

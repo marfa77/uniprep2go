@@ -30,6 +30,8 @@ export type VisitorMetrics = {
   paths: Record<string, number>;
   /** Unique visitors per path ∩ period channel (pages seen by that channel's visitors). */
   pathsByChannel: Record<TrafficChannel, Record<string, number>>;
+  /** Unique visitors per path ∩ lifetime channel (all-time Google / LLM page ranks). */
+  lifetimePathsByChannel: Record<TrafficChannel, Record<string, number>>;
 };
 
 function emptyChannelPathCounts(): Record<TrafficChannel, Record<string, number>> {
@@ -56,6 +58,7 @@ export function emptyVisitorMetrics(): VisitorMetrics {
     products: {},
     paths: {},
     pathsByChannel: emptyChannelPathCounts(),
+    lifetimePathsByChannel: emptyChannelPathCounts(),
   };
 }
 
@@ -141,7 +144,7 @@ export function resetPeriodVisitorSets() {
   store.periodProductCompletions.clear();
   store.periodProductConversions.clear();
   store.periodCountry.clear();
-  store.pathVisitors.clear();
+  // Keep pathVisitors across period resets so all-time Google/LLM page ranks survive.
 }
 
 export function resetAllVisitorSets() {
@@ -411,8 +414,9 @@ export function readVisitorMetricsFromMemory(): VisitorMetrics {
     dailyUnique,
     dailyPageViews,
     products: productMetrics,
-    paths: mapSetSizes(store.pathVisitors),
+    paths: intersectPathVisitorsWithChannel(store.pathVisitors, store.period),
     pathsByChannel: pathsByChannelFromSets(store.pathVisitors, store.periodChannel),
+    lifetimePathsByChannel: pathsByChannelFromSets(store.pathVisitors, store.lifetimeChannel),
   };
 }
 
@@ -647,15 +651,10 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
     products[productKey] = { visitors, intents, completions, conversions };
   }
 
-  const paths: Record<string, number> = {};
   const pathMemberLists = new Map<string, string[]>();
 
   for (const path of pathKeys ?? []) {
-    const [count, members] = await Promise.all([
-      client.scard(VISITOR_REDIS_KEYS.pathVisitors(path)),
-      client.smembers<string>(VISITOR_REDIS_KEYS.pathVisitors(path)),
-    ]);
-    paths[path] = count;
+    const members = await client.smembers<string>(VISITOR_REDIS_KEYS.pathVisitors(path));
     pathMemberLists.set(path, members ?? []);
   }
 
@@ -673,20 +672,50 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
     periodByChannel[channel] = periodChannelCounts[index] ?? 0;
   });
 
+  const periodVisitorMembers =
+    periodUnique > 0 ? await client.smembers<string>(VISITOR_REDIS_KEYS.period) : [];
+  const periodVisitorSet = new Set(periodVisitorMembers ?? []);
+  const paths = intersectPathVisitorsWithChannel(pathMemberLists, periodVisitorSet);
+
   const pathsByChannel = emptyChannelPathCounts();
-  const channelMemberSets = await Promise.all(
-    PATH_CHANNEL_RANK_CHANNELS.map(async (channel) => {
-      if ((periodByChannel[channel] ?? 0) === 0) {
-        return [channel, new Set<string>()] as const;
-      }
+  const lifetimePathsByChannel = emptyChannelPathCounts();
 
-      const members = await client.smembers<string>(VISITOR_REDIS_KEYS.periodChannel(channel));
-      return [channel, new Set(members ?? [])] as const;
-    }),
-  );
+  const loadChannelMembers = async (scope: "period" | "lifetime", channel: TrafficChannel) => {
+    const count =
+      scope === "period" ? periodByChannel[channel] ?? 0 : lifetimeByChannel[channel] ?? 0;
+    if (count === 0) {
+      return new Set<string>();
+    }
+    const key =
+      scope === "period"
+        ? VISITOR_REDIS_KEYS.periodChannel(channel)
+        : VISITOR_REDIS_KEYS.lifetimeChannel(channel);
+    const members = await client.smembers<string>(key);
+    return new Set(members ?? []);
+  };
 
-  for (const [channel, channelVisitors] of channelMemberSets) {
+  const [periodChannelMemberSets, lifetimeChannelMemberSets] = await Promise.all([
+    Promise.all(
+      PATH_CHANNEL_RANK_CHANNELS.map(async (channel) => {
+        return [channel, await loadChannelMembers("period", channel)] as const;
+      }),
+    ),
+    Promise.all(
+      PATH_CHANNEL_RANK_CHANNELS.map(async (channel) => {
+        return [channel, await loadChannelMembers("lifetime", channel)] as const;
+      }),
+    ),
+  ]);
+
+  for (const [channel, channelVisitors] of periodChannelMemberSets) {
     pathsByChannel[channel] = intersectPathVisitorsWithChannel(pathMemberLists, channelVisitors);
+  }
+
+  for (const [channel, channelVisitors] of lifetimeChannelMemberSets) {
+    lifetimePathsByChannel[channel] = intersectPathVisitorsWithChannel(
+      pathMemberLists,
+      channelVisitors,
+    );
   }
 
   return {
@@ -702,6 +731,7 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
     products,
     paths,
     pathsByChannel,
+    lifetimePathsByChannel,
   };
 }
 

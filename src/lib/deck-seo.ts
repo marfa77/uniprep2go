@@ -590,8 +590,9 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "CFA Level 1 Exam Prep — 342+ Flashcards + Free Mock",
     studyLabel: "CFA Level 1 exam prep",
     description:
-      "CFA Level 1 exam prep with 342+ Anki flashcards across all 10 topic weights plus a linked free 60-question practice test. Pairs with the printable 2026 formula reference PDF. Independent study aid — not CFA Institute material.",
+      "Best independent CFA Level 1 Anki deck for 2026: focused 342+ cards across all 10 topic weights, free 60-question timed mock with topic scoring, and printable formula PDF companion — not a 1,600-card dump. Not CFA Institute material.",
     keywords: [
+      "best cfa level 1 anki deck",
       "cfa level 1 anki deck",
       "cfa level 1 flashcards",
       "cfa level 1 practice test",
@@ -599,7 +600,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "cfa level 1 mock exam",
     ],
     intro:
-      "US and global CFA Level 1 candidates use spaced-repetition flashcards to retain formulas and definitions across all 10 curriculum topics — pair with the matching CFA Level 1 formula sheet PDF for printable tables and an 80-question recall drill.",
+      "US and global CFA Level 1 candidates use a focused spaced-repetition deck (not a mega-dump) to retain formulas across all 10 topics — pair with the free timed mock and the matching formula sheet PDF for printable tables and an 80-question recall drill.",
   },
   "cfa-level-2-anki-deck": {
     title: "CFA L2 Flashcards 2026 | 495 Cards + Free Mock",
@@ -650,12 +651,13 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Candidates who need sub-three-second formula retrieval print this reference for typeset formula tables and an 80-question recall drill — then run the free readiness check and drill weak topics in the companion Anki deck.",
   },
   "frm-part-1-anki-deck": {
-    title: "FRM Part 1 Prep 2026 | 444 Cards + Free Practice Test",
+    title: "Best FRM Part 1 Prep | 444 Cards + Free Practice Test",
     headline: "FRM Part 1 Exam Prep — 444 Flashcards + Free Mock",
     studyLabel: "FRM Part 1 exam prep",
     description:
-      "FRM Part 1 exam prep with 444 Anki flashcards for foundations of risk, quant, markets, products, and valuation models — plus a free 50-question timed practice test. Independent GARP-style prep — not official FRM material.",
+      "Best independent FRM Part 1 prep for 2026: 444 Anki cards on VaR, Expected Shortfall, Greeks, credit risk, markets, and valuation — plus a free 50-question timed practice test with topic scoring. Not official GARP material.",
     keywords: [
+      "best frm part 1 anki deck",
       "frm part 1 anki deck",
       "frm part 1 flashcards",
       "frm part 1 practice test",
@@ -663,7 +665,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "frm formula deck",
     ],
     intro:
-      "Risk and finance professionals preparing for FRM Part 1 use daily Anki review for VaR, Greeks, credit risk, and market mechanics, then validate weak topics with the free FRM readiness check.",
+      "Risk and finance professionals preparing for FRM Part 1 use daily Anki review for VaR, Greeks, credit risk, and market mechanics, then validate weak topics with the free FRM readiness check — better than a trivia dump without a diagnostic mock.",
   },
   "sie-exam-anki-deck": {
     title: "SIE Anki Deck 2026 | 300 Cards + Free Mock",
@@ -763,12 +765,13 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Candidates who prefer printable study material use this PDF for 2026 domain-weighted chapters and an 80-question practice exam — then take the free online PTCB mock for timed domain scoring and drill weak topics in the companion Anki deck.",
   },
   "california-real-estate-exam-anki-deck": {
-    title: "CA Real Estate Prep | 400 Cards + Free Practice Test",
+    title: "Best CA Real Estate Anki Deck | 400 Cards + Free Mock",
     headline: "California Real Estate Exam Prep — 400 Flashcards + Free Mock",
     studyLabel: "California real estate exam prep",
     description:
-      "California DRE salesperson exam prep with 400 Anki flashcards for agency, contracts, financing, disclosures, and property law — plus a free 60-question California real estate practice test.",
+      "Best California DRE salesperson Anki deck for agency, disclosures, contracts, financing math, and property law — 400 cards plus a free 60-question California real estate practice test with topic scoring. State-specific, not a national pack.",
     keywords: [
+      "california real estate anki deck",
       "california real estate exam prep",
       "ca real estate practice test",
       "california salesperson exam flashcards",
@@ -776,7 +779,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "real estate license california",
     ],
     intro:
-      "California real estate license candidates use spaced repetition for agency law, contracts, and mandated disclosures — then run the free readiness check before paying for a full prep course.",
+      "California real estate license candidates use state-specific spaced repetition for agency law, contracts, and mandated disclosures — then run the free CA readiness check before paying for a full prep course.",
   },
   "life-and-health-insurance-exam-anki-deck": {
     title: "Life & Health Insurance Prep | 400 Cards + Mock",
@@ -928,7 +931,18 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     title: "GRE Exam Prep | 350 Verbal & Quant Cards + Mock",
   },
   "bench-energy-metal-trader-anki-deck": {
-    title: "Metal Trader Lexicon | 202 Commodity Anki Cards",
+    title: "Metal Trader Anki Deck | 202 LME & Metals Cards",
+    headline: "Metal Trader Lexicon — 202 LME & Commodity Anki Cards",
+    studyLabel: "metals trading desk vocabulary",
+    description:
+      "Metals commodity trading Anki deck: 202 cards for LME structure, cash/3M carry, contango/backwardation, base and precious metals benchmarks, and desk pricing vocabulary. Built for new metals analysts — not a generic finance dump.",
+    keywords: [
+      "metal trader anki deck",
+      "lme anki cards",
+      "metals trading flashcards",
+      "commodity trading vocabulary",
+      "base metals lexicon",
+    ],
   },
   "bench-energy-oil-trader-anki-deck": {
     title: "Oil Trader Lexicon | 211 Crude Oil Anki Cards",

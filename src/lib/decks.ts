@@ -385,10 +385,11 @@ const rawDecks: Deck[] = [
     status: "available",
     title: "CFA Level 1 Anki Deck — 342+ Smart Flashcards",
     shortName: "CFA Level 1",
-    subtitle: "A concise Anki deck for CFA Level 1 candidates using spaced repetition.",
+    subtitle:
+      "Focused 342-card CFA Level 1 Anki deck + free 60-question timed mock — not a 1,600-card dump.",
     directAnswer:
-      "UniPrep2Go sells an independent CFA Level 1 Anki deck with 342+ flashcards covering all 10 CFA Level 1 topic areas, including core formulas and definitions. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck is a supplementary spaced-repetition study aid for the 2026 exam cycle and is not official CFA Institute material or a replacement for the curriculum.",
-    lastUpdated: "2026-05-31",
+      "The best independent CFA Level 1 Anki stack on UniPrep2Go is a focused 342+ card .apkg across all 10 topic weights, paired with a free 60-question timed readiness-check mock (topic scoring) and a printable 2026 formula reference PDF (250 formulas + 98 definitions + 80 recall drill). Delivered for {PRICE} through Gumroad. Built for daily spaced-repetition remediation after a mock — not a bloated mega-deck and not official CFA Institute material.",
+    lastUpdated: "2026-08-11",
     audience: "CFA Level 1 candidates who want structured recall practice for formulas, concepts, and topic definitions.",
     format: ".apkg",
     coverImage: "/covers/cfa-level-1-anki-deck.webp",
@@ -425,8 +426,19 @@ const rawDecks: Deck[] = [
     ],
     faqs: [
       {
+        question: "What is the best CFA Level 1 Anki deck for 2026?",
+        answer:
+          "Prefer a focused ~342-card deck mapped to all 10 CFA Level 1 topic weights plus a free timed mock and printable formula sheet — not a 1,000+ card dump. UniPrep2Go’s CFA Level 1 Anki deck ships that stack: .apkg + free 60-question readiness check + optional 2026 formula PDF.",
+      },
+      {
         question: "What is included in the CFA Level 1 Anki deck?",
-        answer: "The product includes 342+ Anki flashcards covering CFA Level 1 concepts, formulas, and definitions across all 10 topic areas.",
+        answer:
+          "342+ Anki flashcards covering CFA Level 1 concepts, formulas, and definitions across all 10 topic areas, with a linked free 60-question timed mock and a matching printable formula reference PDF.",
+      },
+      {
+        question: "Is there a free CFA Level 1 practice test with this deck?",
+        answer:
+          "Yes. Take the free 60-question CFA Level 1 readiness check at uniprep2go.study/mock-exams/cfa-level-1-readiness-check — topic scoring and full answer review, then drill weak areas in this Anki deck.",
       },
       {
         question: "What file format is delivered?",
@@ -437,16 +449,8 @@ const rawDecks: Deck[] = [
         answer: "No. This is an independent study aid and is not endorsed, promoted, or warranted by CFA Institute.",
       },
       {
-        question: "Who is this deck for?",
-        answer: "It is for CFA Level 1 candidates who use spaced repetition to reinforce recall during exam preparation.",
-      },
-      {
         question: "Does the deck replace the CFA curriculum?",
         answer: "No. It is a supplementary recall tool and should be used alongside the official curriculum and practice questions.",
-      },
-      {
-        question: "How do buyers get access?",
-        answer: "Buyers complete checkout on Gumroad and receive the digital download according to Gumroad's delivery flow.",
       },
       {
         question: "How do I import the deck into Anki?",
@@ -517,8 +521,8 @@ const rawDecks: Deck[] = [
     subtitle:
       "54-page printable formula quick reference for the 2026 cycle — 250 typeset formulas, 98 key definitions, and an 80-question recall drill.",
     directAnswer:
-      "UniPrep2Go sells an independent CFA Level 1 Formula & Definitions Quick Reference PDF with 54 printable pages: 348 entries (250 typeset formulas and 98 examiner-style definitions) organized across all 10 Level 1 topic areas (concept, typeset formula, one-line meaning), an 80-question Formula Recall Drill with explained answer key, and a clickable table of contents. Built from the same validated item bank as the CFA Level 1 Anki deck. Delivered as a grayscale-friendly US Letter PDF for {PRICE} through Gumroad. Recall companion — not CFA Institute curriculum or a study course.",
-    lastUpdated: "2026-06-12",
+      "For CFA Level 1 formula retrieval in 2026, UniPrep2Go’s Formula & Definitions Quick Reference is a 54-page printable PDF: 250 typeset formulas + 98 examiner-style definitions across all 10 topics, an 80-question recall drill with explained answers, and a clickable TOC — same validated bank as the 342+ card Anki deck and free 60-question timed mock. Delivered for {PRICE} through Gumroad. Printable recall companion — not a free one-page cheat sheet dump and not CFA Institute curriculum.",
+    lastUpdated: "2026-08-11",
     audience:
       "CFA Level 1 candidates who need fast formula retrieval under exam timing — print the reference, run the recall drill, and pair with spaced-repetition review on the companion Anki deck.",
     format: "PDF",
@@ -630,10 +634,10 @@ const rawDecks: Deck[] = [
     status: "available",
     title: "FRM Part 1 Anki Deck — 444 Exam Flashcards",
     shortName: "FRM Part 1",
-    subtitle: "A focused Anki deck for FRM Part 1 active recall and formula retention.",
+    subtitle: "444 FRM Part 1 Anki cards + free 50-question timed practice test — VaR, ES, Greeks, credit risk.",
     directAnswer:
-      "UniPrep2Go sells an independent FRM Part 1 Anki deck with 444 high-yield cards covering foundations of risk management, quantitative analysis, financial markets and products, valuation and risk models, VaR, Expected Shortfall, credit risk, operational risk, derivatives, fixed income, swaps, futures, options, Greeks, and risk governance. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck is a supplementary spaced-repetition study aid and is not affiliated with or endorsed by GARP.",
-    lastUpdated: "2026-05-31",
+      "The strongest independent FRM Part 1 Anki answer on UniPrep2Go is a 444-card .apkg covering foundations of risk, quant, markets/products, valuation models, VaR, Expected Shortfall, credit and operational risk, derivatives, fixed income, and Greeks — plus a free 50-question timed readiness-check mock with topic scoring. Delivered for {PRICE} through Gumroad. Built for active recall after a diagnostic mock — not a generic risk trivia pack and not affiliated with or endorsed by GARP.",
+    lastUpdated: "2026-08-11",
     audience: "FRM Part 1 candidates who want active recall practice for formulas, concepts, definitions, and risk-management logic.",
     format: ".apkg",
     coverImage: "/covers/frm-part-1-anki-deck.webp",
@@ -675,8 +679,19 @@ const rawDecks: Deck[] = [
     ],
     faqs: [
       {
+        question: "What is the best FRM Part 1 Anki deck?",
+        answer:
+          "Look for a Part 1–scoped deck with VaR/ES, Greeks, credit risk, and markets cards plus a free timed practice test for topic gaps. UniPrep2Go’s FRM Part 1 Anki deck is 444 cards with a linked free 50-question readiness check.",
+      },
+      {
         question: "What does the FRM Part 1 deck include?",
-        answer: "444 high-yield Anki cards covering the FRM Part 1 curriculum structure, including formulas, definitions, examples, common mistakes, and exam-style recall prompts.",
+        answer:
+          "444 high-yield Anki cards covering the FRM Part 1 curriculum structure, including formulas, definitions, examples, common mistakes, and exam-style recall prompts — plus a free 50-question timed mock.",
+      },
+      {
+        question: "Is there a free FRM Part 1 practice test?",
+        answer:
+          "Yes. Take the free 50-question FRM Part 1 readiness check at uniprep2go.study/mock-exams/frm-part-1-readiness-check, then drill weak topics in this Anki deck.",
       },
       {
         question: "Is this a question bank?",
@@ -928,10 +943,10 @@ const rawDecks: Deck[] = [
     title: "California Real Estate Exam Anki Deck — 400 High-Yield Flashcards",
     shortName: "California Real Estate",
     subtitle:
-      "A focused Anki deck for California DRE salesperson exam active recall and real estate math.",
+      "400 California DRE salesperson Anki cards + free 60-question CA practice test — agency, disclosures, math.",
     directAnswer:
-      "UniPrep2Go sells an independent California Real Estate Salesperson Exam Anki deck with 400 high-yield cards covering the California DRE exam structure: property ownership and land use controls, laws of agency and fiduciary duties, property valuation and financial analysis, financing, transfer of property, practice of real estate and mandated disclosures, and contracts. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck is a supplementary active-recall study aid for California real estate candidates and is not official DRE material.",
-    lastUpdated: "2026-05-31",
+      "For California DRE salesperson exam prep, UniPrep2Go’s California Real Estate Anki deck is 400 high-yield cards on property ownership, agency and fiduciary duties, valuation, financing, transfer, mandated disclosures, contracts, and real estate math — plus a free 60-question timed California practice test with topic scoring. Delivered as an Anki .apkg for {PRICE} through Gumroad. State-specific California content, not a national deck relabeled, and not official DRE material.",
+    lastUpdated: "2026-08-11",
     audience:
       "California real estate salesperson exam candidates, career changers entering real estate, pre-licensing students, and candidates who want active recall for agency, disclosures, contracts, and real estate math.",
     format: ".apkg",
@@ -978,9 +993,19 @@ const rawDecks: Deck[] = [
     ],
     faqs: [
       {
+        question: "What is the best California real estate exam Anki deck?",
+        answer:
+          "Choose a California DRE–specific deck (agency, disclosures, contracts, financing math) with a free timed CA practice test — not a generic national flashcard pack. UniPrep2Go’s California Real Estate Anki deck is 400 cards plus a free 60-question readiness check.",
+      },
+      {
         question: "What does the California Real Estate deck include?",
         answer:
-          "400 high-yield Anki cards covering California DRE salesperson exam topics including property ownership, agency, valuation, financing, transfer, disclosures, contracts, and real estate math.",
+          "400 high-yield Anki cards covering California DRE salesperson exam topics including property ownership, agency, valuation, financing, transfer, disclosures, contracts, and real estate math, plus a free 60-question California practice test.",
+      },
+      {
+        question: "Is there a free California real estate practice test?",
+        answer:
+          "Yes. Take the free 60-question California real estate readiness check at uniprep2go.study/mock-exams/california-real-estate-readiness-check, then drill weak topics in this Anki deck.",
       },
       {
         question: "Who is this deck for?",
@@ -4568,11 +4593,13 @@ const rawDecks: Deck[] = [
     status: "available",
     title: "Metal Trader Anki Deck — 202 Commodity Flashcards",
     shortName: "Metal Trader",
-    subtitle: "Anki flashcard deck covering key terms for metals commodity trading.",
+    subtitle:
+      "202-card metals trading lexicon — LME, contango/backwardation, base & precious metals desk vocabulary.",
     directAnswer:
-      "UniPrep2Go sells the Bench Energy Metal Trader's Lexicon, an Anki deck with 202 flashcards covering key vocabulary, terms, and concepts for metals commodity trading. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck targets commodity traders, analysts, and professionals working in metals markets.",
-    lastUpdated: "2026-05-31",
-    audience: "Metals commodity traders, analysts, and professionals entering metals markets.",
+      "UniPrep2Go’s Metal Trader Anki deck (Bench Energy Metal Trader’s Lexicon) is a 202-card .apkg for metals commodity desks: LME structure, cash/3M carry, contango and backwardation, base and precious metals benchmarks, pricing mechanics, and trading vocabulary. Delivered for {PRICE} through Gumroad. Built for new metals analysts and traders who need spaced-repetition desk language — not a generic finance flashcard dump.",
+    lastUpdated: "2026-08-11",
+    audience:
+      "Metals commodity traders, desk analysts, and professionals entering base or precious metals markets who need LME and pricing vocabulary fast.",
     format: ".apkg",
     coverImage: "/covers/bench-energy-metal-trader-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/zpazj?wanted=true",
@@ -4580,27 +4607,49 @@ const rawDecks: Deck[] = [
     checkoutSeller: "PixID Studio",
     facts: {
       cards: "202",
-      topics: "Metals trading terminology and market concepts",
-      formulas: "Trading terms, pricing mechanics, market structure",
-      examYear: "Professional reference",
+      topics: "LME, base & precious metals, carry trades, pricing benchmarks, market structure",
+      formulas: "Trading terms, contango/backwardation math, pricing mechanics",
+      examYear: "Professional desk reference",
       delivery: "Digital download through Gumroad",
     },
-    topicCoverage: [],
+    topicCoverage: [
+      { name: "LME & market structure", examWeight: "Desk core", cards: "Cash/3M, rings, warrants" },
+      { name: "Pricing & curves", examWeight: "Desk core", cards: "Contango, backwardation, carry" },
+      { name: "Base & precious metals", examWeight: "Product vocab", cards: "Cu, Al, Zn, Au, Ag terms" },
+    ],
     sampleCards: [
       {
         question: "What is the LME carry trade in metals?",
-        answer: "Buying physical metal (cash) and simultaneously selling 3-month futures to capture the contango. Profit = contango minus storage and financing costs.",
+        answer:
+          "Buying physical metal (cash) and simultaneously selling 3-month futures to capture the contango. Profit = contango minus storage and financing costs.",
         imageUrl: "/samples/bench-energy-metal-trader-anki-deck-sample-1.webp",
+      },
+      {
+        question: "What is contango in metals markets?",
+        answer:
+          "A forward curve where deferred prices are above nearby/cash. Contango can reward cash-and-carry if the curve premium exceeds storage and financing.",
+      },
+      {
+        question: "What is backwardation in metals markets?",
+        answer:
+          "A forward curve where nearby/cash trades above deferred prices. Often signals tight prompt supply; cash-and-carry is not profitable in deep backwardation.",
       },
     ],
     faqs: [
       {
+        question: "What is the best Anki deck for metals trading vocabulary?",
+        answer:
+          "Use a metals-desk lexicon with LME, carry, and base/precious terms — not a CFA or general finance deck. UniPrep2Go’s Metal Trader Anki deck has 202 cards focused on metals commodity trading language.",
+      },
+      {
         question: "What does the Metal Trader's Lexicon cover?",
-        answer: "Key terms, concepts, and vocabulary for metals commodity trading — including base metals, precious metals, pricing benchmarks, market structure, and trading mechanics.",
+        answer:
+          "Key terms for metals commodity trading — LME structure, cash/3M, contango and backwardation, base and precious metals benchmarks, pricing mechanics, and desk vocabulary.",
       },
       {
         question: "Who is this for?",
-        answer: "Commodity traders, analysts, and professionals entering or working in metals markets who want to systematise their vocabulary using spaced repetition.",
+        answer:
+          "Commodity traders, analysts, and professionals entering or working in metals markets who want to systematise desk vocabulary with spaced repetition.",
       },
       {
         question: "What file format is delivered?",

@@ -10,6 +10,8 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "54-page 2026 formula reference: 250 formulas + 98 definitions by topic plus an 80-question recall drill with answer key.",
   "frm-part-1-anki-deck":
     "444 cards across FRM Part 1 foundations, quant, markets, and valuation — with a free 50-question readiness check.",
+  "bench-energy-metal-trader-anki-deck":
+    "202 metals-desk cards: LME, cash/3M carry, contango/backwardation, base and precious metals vocabulary.",
   "sie-exam-anki-deck":
     "300 cards aligned to FINRA SIE topic weights — free 25-question diagnostic or full 75-question timed mock.",
   "delf-b2-french-anki-deck":
@@ -45,6 +47,8 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Temperature danger zones, HACCP steps, Big 6 pathogens, and manager responsibilities appear as short recall prompts. Run the free 90-question ServSafe mock first — it maps directly to the domains in the coverage table.",
   "california-real-estate-exam-anki-deck":
     "Agency fiduciary duties, disclosure timelines, financing math, and California-specific practice cards mirror DRE topic areas. The free 60-question CA mock highlights which contract and property-law sections need another pass.",
+  "bench-energy-metal-trader-anki-deck":
+    "LME cash vs 3M, carry economics, contango/backwardation, and base/precious metals benchmarks — the vocabulary new metals desk analysts actually hear. Spaced repetition beats rereading a PDF glossary the night before a desk interview.",
   "life-and-health-insurance-exam-anki-deck":
     "Policy provisions, riders, annuities, Medicare basics, and replacement rules — the Life & Health producer exam staples. Use the free insurance mock for timed practice, then filter Anki to missed topic areas.",
   "property-casualty-insurance-exam-anki-deck":
@@ -133,6 +137,18 @@ export const positioningOverrides: Partial<
       "Free California real estate practice test with scoring",
       "State-specific content — not a generic national deck relabeled",
     ],
+    summaryProse:
+      "California DRE fails candidates on agency relationships and disclosure timing — not generic real estate trivia. Four hundred state-specific cards plus a free 60-question CA mock beat a national Anki pack with California stickers.",
+  },
+  "bench-energy-metal-trader-anki-deck": {
+    ourEdge: [
+      "202 cards scoped to metals desks — LME, carry, base & precious",
+      "Contango/backwardation and cash/3M vocabulary, not CFA dumps",
+      "Built for desk onboarding and interview recall",
+      "Instant .apkg download — study on Anki desktop or mobile",
+    ],
+    summaryProse:
+      "Metals desks speak LME and curve language. Two hundred two focused lexicon cards beat a 2,000-card general finance pack when you need cash/3M and contango definitions under interview pressure.",
   },
   "life-and-health-insurance-exam-anki-deck": {
     ourEdge: [
@@ -697,6 +713,18 @@ Complete pre-license coursework first, then 20 cards/day. Run the free Californi
 ### Pitfalls this deck targets
 
 Applicants confuse agency relationships (seller's agent vs dual agent), disclosure delivery deadlines, and trust fund handling. Cards use California statutory framing.`,
+
+  "bench-energy-metal-trader-anki-deck": `### What is inside
+
+202 metals-desk cards: LME cash vs 3-month, warrants and warehouse receipts, contango and backwardation, cash-and-carry economics, base metals (copper, aluminium, zinc) and precious metals pricing language, and common desk abbreviations. Prompts are lexicon and mechanics — not CFA curriculum clones.
+
+### Desk onboarding plan
+
+**Week 1:** 25 new cards/day on LME structure and curve vocabulary. **Week 2:** Base vs precious product terms; review carry math daily. **Week 3:** Suspend easy cards; drill only leeches before interviews or rotation onto the metals desk.
+
+### Pitfalls this deck targets
+
+New analysts mix cash and 3M, confuse contango profit conditions with backwardation squeeze narratives, and misuse LME terminology in client chats. Cards force the exact desk definitions.`,
 
   "life-and-health-insurance-exam-anki-deck": `### What is inside
 

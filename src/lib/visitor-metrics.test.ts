@@ -66,8 +66,43 @@ describe("visitor metrics", () => {
     expect(metrics.paths["/decks/cfa-level-1-anki-deck"]).toBe(1);
     expect(metrics.pathsByChannel.google["/decks/cfa-level-1-anki-deck"]).toBe(1);
     expect(metrics.pathsByChannel.chatgpt["/mock-exams/cfa-level-1-readiness-check"]).toBe(1);
+    expect(metrics.lifetimePathsByChannel.google["/decks/cfa-level-1-anki-deck"]).toBe(1);
+    expect(metrics.lifetimePathsByChannel.chatgpt["/mock-exams/cfa-level-1-readiness-check"]).toBe(1);
     expect(metrics.periodNew).toBe(2);
     expect(metrics.periodReturning).toBe(0);
+  });
+
+  it("keeps all-time Google/LLM path ranks after a period reset", () => {
+    resetAllVisitorSets();
+
+    recordVisitorMetricInMemory(
+      createFunnelEvent({
+        name: "page_view",
+        deckSlug: "cfa-level-1-anki-deck",
+        visitorId: "vis_google",
+        path: "/decks/cfa-level-1-anki-deck",
+        referrer: "https://www.google.com/",
+      }),
+    );
+    recordVisitorMetricInMemory(
+      createFunnelEvent({
+        name: "page_view",
+        deckSlug: "frm-part-1-anki-deck",
+        visitorId: "vis_llm",
+        path: "/decks/frm-part-1-anki-deck",
+        referrer: "https://chatgpt.com/",
+      }),
+    );
+
+    resetPeriodVisitorSets();
+
+    const metrics = readVisitorMetricsFromMemory();
+
+    expect(metrics.periodUnique).toBe(0);
+    expect(metrics.paths["/decks/cfa-level-1-anki-deck"]).toBeUndefined();
+    expect(metrics.pathsByChannel.google["/decks/cfa-level-1-anki-deck"]).toBeUndefined();
+    expect(metrics.lifetimePathsByChannel.google["/decks/cfa-level-1-anki-deck"]).toBe(1);
+    expect(metrics.lifetimePathsByChannel.chatgpt["/decks/frm-part-1-anki-deck"]).toBe(1);
   });
 
   it("attributes later internal pages to the Google visitor via path∩channel", () => {

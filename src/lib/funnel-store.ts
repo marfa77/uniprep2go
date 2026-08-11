@@ -350,9 +350,7 @@ export async function resetFunnelStats() {
     ...periodVisitorRedisKeysForReset(),
   );
 
-  await deleteIndexedRedisKeys(client, VISITOR_REDIS_KEYS.pathIndex, (path) => [
-    VISITOR_REDIS_KEYS.pathVisitors(path),
-  ]);
+  // Keep path visitor sets across period resets for all-time Google/LLM top pages.
   await deletePeriodCountryRedisKeys(client);
   await deletePeriodProductRedisKeys(client);
 }
