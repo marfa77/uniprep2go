@@ -162,12 +162,24 @@ function buildDirectAnswer(
   mockPath: string | null,
   apkgReady: boolean,
 ) {
-  const mockLine = mockPath
-    ? ` Built from the same validated item bank as the free readiness check at ${absoluteUrl(mockPath)}.`
-    : "";
+  const mockUrl = mockPath ? absoluteUrl(mockPath) : null;
   const deliveryLine = apkgReady
     ? `It is delivered as an Anki .apkg file for {PRICE} through Gumroad with instant download after checkout.`
     : `Checkout is open on Gumroad for {PRICE}; the Anki .apkg download activates after the question bank passes QA (typically within days of purchase).`;
+
+  if (deck.slug === "mrics-quantity-surveying-anki-deck") {
+    const mockLine = mockUrl
+      ? ` Pair it with the free 50-question QS pathway readiness check at ${mockUrl} for competency scoring before interview drills.`
+      : "";
+    return (
+      `The best independent MRICS Quantity Surveying Anki stack on UniPrep2Go is a focused ${cardLabel}-card .apkg for the RICS Quantity Surveying and Construction APC pathway — cost planning, NRM measurement, contract practice (JCT/NEC), procurement, project finance, construction technology, and mandatory ethics — not a 2,000-card Brainscape subscription dump.${mockLine} ` +
+      `${deliveryLine} Supplementary study aid for APC final-assessment prep — not official RICS material.`
+    );
+  }
+
+  const mockLine = mockUrl
+    ? ` Built from the same validated item bank as the free readiness check at ${mockUrl}.`
+    : "";
   return (
     `UniPrep2Go sells an independent ${deck.shortName} Anki deck with ${cardLabel} high-yield flashcards for active recall and exam terminology.${mockLine} ` +
     `${deliveryLine} The deck is a supplementary study aid and is not official exam material.`

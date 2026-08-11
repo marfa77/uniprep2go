@@ -79,12 +79,24 @@ const examPathLinks = [
   {
     title: "Building, safety & sustainability",
     description:
-      "EPA 608, LEED, NEBOSH, CFPS, and MRICS pathways — free timed mocks with linked Anki decks.",
+      "EPA 608, LEED, NEBOSH, CFPS, and MRICS QS pathways — free timed mocks with linked Anki decks for competency repair.",
     links: [
       { href: `/${BUILDING_CERTIFICATION_HUB_SLUG}`, label: "All building certification pathways" },
+      { href: "/mock-exams/mrics-quantity-surveying-readiness-check", label: "MRICS QS practice test" },
       { href: "/mock-exams/epa-608-readiness-check", label: "EPA 608 practice test" },
       { href: "/mock-exams/leed-green-associate-readiness-check", label: "LEED GA practice test" },
       { href: "/mock-exams/nebosh-readiness-check", label: "NEBOSH readiness check" },
+    ],
+  },
+  {
+    title: "Pharmacy technician (PTCB & NHA)",
+    description:
+      "PTCB PTCE and NHA ExCPT are different certifiers — pick the free timed mock that matches your registration, then drill with the 2026 PDF / Anki stack.",
+    links: [
+      { href: "/mock-exams/ptcb-pharmacy-technician-mock", label: "Free PTCB PTCE mock (90Q)" },
+      { href: "/mock-exams/nha-excpt-readiness-check", label: "Free NHA ExCPT mock" },
+      { href: "/decks/ptcb-study-guide-2026", label: "PTCB study guide 2026 PDF" },
+      { href: "/decks/ptcb-pharmacy-technician-anki-deck", label: "PTCB Anki deck" },
     ],
   },
   {

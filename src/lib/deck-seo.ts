@@ -748,12 +748,13 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "US pharmacy technician candidates take the free 90-question PTCB mock first, then drill weak domains with daily brand/generic and sig-code flashcards. Pair with the 2026 printable study guide for domain chapters and an additional 80-question PDF practice exam.",
   },
   "ptcb-study-guide-2026": {
-    title: "PTCB Exam Study Guide 2026 | PDF + 80-Question PTCE Practice Exam",
-    headline: "PTCB Exam Study Guide 2026 — Printable PTCE Review + Practice Test",
+    title: "Best PTCB Study Guide 2026 | PDF + 80Q Exam + Free Mock",
+    headline: "Best PTCB Study Guide 2026 — Printable PTCE Review + Practice Test",
     studyLabel: "PTCB / PTCE exam prep",
     description:
-      "PTCB Exam Study Guide 2026 PDF: 30 pages aligned to the January 2026 PTCE blueprint, 80-question practice exam with explanations, drug/sig/math cheat sheets, and 4-week plan. Pairs with the free 90-question online mock and 300-card Anki deck. Independent — not official PTCB material.",
+      "Best independent PTCB study guide for the January 2026 PTCE: 30-page PDF with DSCSA-weighted Federal Requirements, 80-question practice exam, drug/sig/math cheat sheets, free 90-question timed online mock, and 300-card Anki deck — not a free blog still teaching removed compounding topics.",
     keywords: [
+      "best ptcb study guide 2026",
       "ptcb study guide 2026",
       "ptce practice exam",
       "pharmacy technician study guide pdf",
@@ -762,7 +763,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "ptce 2026 blueprint",
     ],
     intro:
-      "Candidates who prefer printable study material use this PDF for 2026 domain-weighted chapters and an 80-question practice exam — then take the free online PTCB mock for timed domain scoring and drill weak topics in the companion Anki deck.",
+      "Printable 2026 blueprint chapters beat outdated free guides: Federal Requirements at 18.75% with DSCSA, an 80-question PDF exam, then the free 90-question online mock and Anki drills for weak domains — one stack, not three random websites.",
   },
   "california-real-estate-exam-anki-deck": {
     title: "Best CA Real Estate Anki Deck | 400 Cards + Free Mock",
@@ -925,7 +926,21 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     title: "MRICS APC Prep | 250+ Cards + Free Mock",
   },
   "mrics-quantity-surveying-anki-deck": {
-    title: "MRICS QS Prep | 250+ Cards + Free Mock",
+    title: "Best MRICS QS Anki Deck | APC Cards + Free Mock",
+    headline: "MRICS Quantity Surveying APC Prep — Anki Cards + Free Mock",
+    studyLabel: "MRICS Quantity Surveying APC prep",
+    description:
+      "Best independent MRICS Quantity Surveying Anki deck for RICS APC: focused cards on NRM measurement, JCT/NEC contracts, cost planning, procurement, and ethics — plus a free 50-question QS readiness check. Ownable .apkg, not a Brainscape subscription dump.",
+    keywords: [
+      "best mrics qs anki deck",
+      "mrics quantity surveying anki",
+      "rics qs apc flashcards",
+      "quantity surveyor apc prep",
+      "nrm measurement anki",
+      "free mrics qs practice questions",
+    ],
+    intro:
+      "QS APC candidates need competency recall under interview pressure — use a pathway-specific Anki .apkg with a free timed QS mock for cost planning, measurement, and contracts, not a generic 2,000-card subscription pack.",
   },
   "gre-anki-deck": {
     title: "GRE Exam Prep | 350 Verbal & Quant Cards + Mock",

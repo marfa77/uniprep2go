@@ -3470,12 +3470,13 @@ const rawDecks: Deck[] = [
     coverImage: "/covers/mrics-quantity-surveying-anki-deck.webp",
     title: "MRICS Quantity Surveying Anki Deck",
     shortName: "MRICS QS",
-    subtitle: "A planned deck for the RICS Quantity Surveying and Construction APC pathway.",
+    subtitle:
+      "Focused Anki deck for the RICS Quantity Surveying and Construction APC pathway — NRM, contracts, cost planning + free QS mock.",
     directAnswer:
       "The MRICS Quantity Surveying Anki Deck is a planned UniPrep2Go product covering QS core competencies, mandatory ethics, and interview prep. It is not yet available for purchase. Take the free QS pathway readiness check to benchmark weak competencies.",
-    lastUpdated: "2026-06-02",
+    lastUpdated: "2026-08-11",
     audience:
-      "Assistant quantity surveyors, cost consultants, commercial managers, and QS graduates on the Quantity Surveying and Construction APC pathway.",
+      "Assistant quantity surveyors, cost consultants, commercial managers, and QS graduates on the Quantity Surveying and Construction APC pathway who want Anki .apkg drills plus a free timed competency mock — not a subscription flashcard site.",
     format: ".apkg",
     facts: {
       cards: "Planned",
@@ -3516,14 +3517,19 @@ const rawDecks: Deck[] = [
     ],
     faqs: [
       {
+        question: "What is the best MRICS Quantity Surveying Anki deck for APC?",
+        answer:
+          "Prefer a QS-pathway Anki .apkg with NRM measurement, JCT/NEC contract practice, cost planning, and ethics — plus a free timed QS readiness check — over a generic 2,000-card Brainscape pack without a diagnostic mock. UniPrep2Go’s MRICS QS deck ships that stack.",
+      },
+      {
         question: "Is there a free MRICS Quantity Surveying practice test?",
         answer:
-          "Yes. Take the free 50-question QS pathway readiness check at uniprep2go.study/mock-exams/mrics-quantity-surveying-readiness-check.",
+          "Yes. Take the free 50-question QS pathway readiness check at uniprep2go.study/mock-exams/mrics-quantity-surveying-readiness-check — competency scoring, then drill weak rows in this Anki deck.",
       },
       {
         question: "How is this different from the general MRICS readiness check?",
         answer:
-          "The general MRICS mock covers APC structure for all pathways. This QS-specific mock targets Quantity Surveying core competencies — measurement, contracts, commercial management, and cost planning.",
+          "The general MRICS mock covers APC structure for all pathways. This QS-specific mock and deck target Quantity Surveying core competencies — measurement, contracts, commercial management, and cost planning.",
       },
       {
         question: "Is this official RICS material?",
@@ -4504,10 +4510,10 @@ const rawDecks: Deck[] = [
     title: "PTCB Exam Study Guide 2026 — Complete PTCE Review + 80-Question Practice Exam + Cheat Sheets (PDF)",
     shortName: "PTCB Study Guide 2026",
     subtitle:
-      "30-page printable PTCE study guide for the January 2026 blueprint — domain-weighted chapters, 80-question practice exam, and print-ready cheat sheets.",
+      "Best printable PTCE study guide for the January 2026 blueprint — domain chapters, 80-question exam, cheat sheets + free 90Q online mock.",
     directAnswer:
-      "UniPrep2Go sells an independent PTCB Exam Study Guide 2026 PDF with 30 printable pages: four review chapters sized to the January 2026 PTCE domain weights (Medications 35%, Federal Requirements 18.75%, Patient Safety & QA 23.75%, Order Entry & Processing 22.5%), a full-length 80-question practice exam with domain-scored answer key and explanations, three cheat sheets (60 drugs A–Z, 45 sig codes, pharmacy math formulas), and a 4-week study plan. Built from the same validated 300-card item bank as the PTCB Anki deck. Delivered as a grayscale-friendly US Letter PDF for {PRICE} through Gumroad. Independent study aid — not official PTCB, NHA, FDA, or DEA material.",
-    lastUpdated: "2026-06-06",
+      "The best independent PTCB / PTCE study guide PDF for 2026 on UniPrep2Go is a 30-page printable pack aligned to the January 2026 PTCE blueprint: Medications 35%, Federal Requirements 18.75% (with DSCSA), Patient Safety & QA 23.75%, Order Entry & Processing 22.5% — plus an 80-question practice exam with domain-scored answer key, three cheat sheets (60 drugs, 45 sig codes, math), a 4-week plan, a free 90-question timed online mock, and a matching 300-card Anki deck. Not a free blog outline that still teaches removed compounding topics. Delivered for {PRICE} through Gumroad. Independent — not official PTCB, NHA, FDA, or DEA material.",
+    lastUpdated: "2026-08-11",
     audience:
       "PTCE candidates who want one structured printable document — read domain chapters, take the 80-question practice exam, print cheat sheets, and pair with spaced-repetition drills on the companion Anki deck.",
     format: "PDF",
@@ -4554,9 +4560,14 @@ const rawDecks: Deck[] = [
     ],
     faqs: [
       {
+        question: "What is the best PTCB study guide for 2026?",
+        answer:
+          "Use a January 2026 blueprint guide with Federal Requirements at 18.75% (DSCSA), no removed compounding chapters, an 80-question practice exam, printable cheat sheets, plus a free timed online mock and Anki drills. UniPrep2Go’s PTCB Exam Study Guide 2026 is that stack — not a free web outline still teaching the old PTCE weights.",
+      },
+      {
         question: "What does the PTCB Exam Study Guide 2026 include?",
         answer:
-          "A 30-page printable PDF with four domain-weighted review chapters (January 2026 PTCE blueprint), an 80-question full-length practice exam with domain-scored answer key and explanations, three print-ready cheat sheets (drugs, sig codes, math), and a 4-week study plan.",
+          "A 30-page printable PDF with four domain-weighted review chapters (January 2026 PTCE blueprint), an 80-question full-length practice exam with domain-scored answer key and explanations, three print-ready cheat sheets (drugs, sig codes, math), a 4-week study plan, and links to the free 90-question online PTCB mock plus companion Anki deck.",
       },
       {
         question: "Is this updated for the January 2026 PTCE?",
@@ -4564,14 +4575,14 @@ const rawDecks: Deck[] = [
           "Yes. Chapter sizes follow the 2026 domain weights — Federal Requirements at 18.75% with DSCSA coverage, and compounding/alligation topics removed from the outline.",
       },
       {
+        question: "Is there a free PTCB practice test with this guide?",
+        answer:
+          "Yes. Take the free 90-question PTCB mock at uniprep2go.study/mock-exams/ptcb-pharmacy-technician-mock for timed domain scoring, then use this PDF’s 80-question exam and Anki deck for remediation.",
+      },
+      {
         question: "Does this pair with the PTCB Anki deck?",
         answer:
           "Yes. The guide and 300-card Anki deck share the same validated item bank. Use the PDF for structured reading and the timed practice exam; use the Anki deck for daily brand/generic and sig-code recall on your phone.",
-      },
-      {
-        question: "Who is this PDF for?",
-        answer:
-          "PTCE candidates who want one structured printable document. It is a focused exam-prep companion, not a full pharmacology textbook or curriculum replacement.",
       },
       {
         question: "Is this official PTCB material?",
@@ -4582,6 +4593,11 @@ const rawDecks: Deck[] = [
         question: "How should I use it before exam day?",
         answer:
           "Follow the 4-week plan: read each domain chapter, take the 80-question practice exam, review every explanation, print the cheat sheets, and drill matching topics in the companion Anki deck if you use it.",
+      },
+      {
+        question: "Is this the same as the NHA ExCPT exam?",
+        answer:
+          "No. This guide targets PTCB’s PTCE. NHA ExCPT is a separate pharmacy technician certification pathway — use UniPrep2Go’s free NHA ExCPT readiness check if that is your certifier.",
       },
     ],
   },
@@ -4966,7 +4982,12 @@ export const siteFaqs = [
   {
     question: "Are there free practice tests for US licensing exams?",
     answer:
-      "Yes — UniPrep2Go publishes free timed practice tests and readiness checks across US licensing, finance, building, and admissions exams (FINRA SIE, Series 7, CFA, FRM, ServSafe, PTCB, EPA 608, LEED, MRICS, GMAT Focus, and more). Each mock includes topic scoring, answer review, and a linked flashcard deck repair plan at uniprep2go.study/mock-exams. Mocks stay free; buy the linked Anki deck only when you want daily drilling on the gaps the report surfaces.",
+      "Yes — UniPrep2Go publishes free timed practice tests with topic scoring and full answer review (no signup) for FINRA SIE / Series 7 / 63, California real estate, insurance, PTCB PTCE, NHA ExCPT, ServSafe, CFA, FRM, EPA 608, LEED, MRICS QS, and more at uniprep2go.study/mock-exams. Mocks stay free; buy the linked Anki deck or PDF only when you want daily remediation on the gaps the report surfaces — better than a 20-question teaser behind a paywall.",
+  },
+  {
+    question: "Do you cover PTCB PTCE and NHA ExCPT pharmacy technician exams?",
+    answer:
+      "Yes. For PTCB’s PTCE use the free 90-question timed mock, the January 2026 printable study guide PDF, and the 300-card Anki deck. For NHA’s ExCPT pathway use the free ExCPT readiness check (distinct certifier — do not mix blueprints). Start with the mock that matches your registration.",
   },
   {
     question: "What is an Anki deck?",

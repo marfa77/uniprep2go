@@ -83,6 +83,8 @@ export function buildMergedDeckFaqs(deck: Deck): DeckFaq[] {
   const productFaqs = deck.faqs.filter((faq) => {
     if (examQuestions.has(normalizeQuestion(faq.question))) return false;
     if (/who is this|does the deck replace|how do I prepare/i.test(faq.question)) return false;
+    // Keep competitive GEO FAQs ("best …", free practice test) visible on the page.
+    if (/what is the best|is there a free .+ practice test/i.test(faq.question)) return true;
     return isProductFaq(faq);
   });
 

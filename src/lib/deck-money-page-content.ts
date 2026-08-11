@@ -25,7 +25,9 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "ptcb-pharmacy-technician-anki-deck":
     "300 PTCE cards for top-200 drugs, sig codes, and pharmacy math — pairs with the 2026 printable study guide PDF.",
   "ptcb-study-guide-2026":
-    "30-page January 2026 PTCE PDF: domain-weighted chapters, 80-question practice exam, and print-ready cheat sheets.",
+    "Best 2026 PTCE printable guide: DSCSA-weighted Federal Requirements, 80-question exam, cheat sheets + free 90Q online mock.",
+  "mrics-quantity-surveying-anki-deck":
+    "Focused MRICS QS APC Anki — NRM, JCT/NEC, cost planning — plus a free 50-question QS competency mock.",
 };
 
 export const longDescriptionOverrides: Partial<Record<string, string>> = {
@@ -42,7 +44,9 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "ptcb-pharmacy-technician-anki-deck":
     "Front-load brand/generic pairs, sig abbreviations, DEA schedules, DSCSA, and days-supply math — aligned to the January 2026 PTCE blueprint. Pair with the printable study guide for domain chapters and an 80-question practice exam; drill 10–15 cards per shift on your phone.",
   "ptcb-study-guide-2026":
-    "Four chapters sized to 2026 domain weights (Medications 35%, Federal 18.75%, Patient Safety 23.75%, Order Entry 22.5%). The 80-question exam mirrors PTCE length (28/15/19/18). Every question maps to the validated 300-card item bank shared with the PTCB Anki deck.",
+    "Four chapters sized to 2026 domain weights (Medications 35%, Federal 18.75% with DSCSA, Patient Safety 23.75%, Order Entry 22.5%). The 80-question exam mirrors PTCE scored length (28/15/19/18). Free 90-question online mock + 300-card Anki share the same bank — beats free blogs still teaching removed compounding topics.",
+  "mrics-quantity-surveying-anki-deck":
+    "QS-pathway cards for NRM measurement, cost planning, JCT/NEC contract practice, procurement, and ethics — paired with a free timed QS readiness check. Ownable Anki .apkg for APC interview recall, not a Brainscape subscription dump.",
   "servsafe-manager-anki-deck":
     "Temperature danger zones, HACCP steps, Big 6 pathogens, and manager responsibilities appear as short recall prompts. Run the free 90-question ServSafe mock first — it maps directly to the domains in the coverage table.",
   "california-real-estate-exam-anki-deck":
@@ -117,10 +121,20 @@ export const positioningOverrides: Partial<
       "30 pages aligned to January 2026 PTCE domain weights in the table",
       "80-question practice exam with domain-scored answer key and rationales",
       "3 print-ready cheat sheets: 60 drugs, 45 sig codes, math formulas",
-      "Same validated item bank as the 300-card PTCB Anki deck",
+      "Free 90-question timed online mock + same bank as the 300-card Anki deck",
     ],
     summaryProse:
-      "Most PTCB guides still teach the old outline. This PDF matches the 2026 blueprint — Federal Requirements at 18.75% with DSCSA, no wasted chapters on removed compounding topics.",
+      "Most free PTCB guides still teach the old outline or stop at a blog checklist. This PDF matches the 2026 blueprint — Federal Requirements at 18.75% with DSCSA — then hands you an 80-question exam, a free 90-question online mock, and Anki drills.",
+  },
+  "mrics-quantity-surveying-anki-deck": {
+    ourEdge: [
+      "QS pathway competencies — NRM, cost planning, JCT/NEC, procurement",
+      "Free 50-question timed QS readiness check with competency scoring",
+      "Ownable Anki .apkg — not a subscription flashcard website",
+      "Built for APC final-assessment recall, not trivia volume",
+    ],
+    summaryProse:
+      "Brainscape packs drown QS candidates in 2,000 mixed cards. A focused Anki .apkg plus a free timed QS mock tells you which competencies to drill before the RICS assessment interview.",
   },
   "servsafe-manager-anki-deck": {
     ourEdge: [
@@ -668,7 +682,7 @@ Technicians miss look-alike/sound-alike pairs, misread sig abbreviations, and fo
 
   "ptcb-study-guide-2026": `### What is inside
 
-Four review chapters sized to January 2026 PTCE weights: Medications (35%), Federal Requirements (18.75% — including DSCSA), Patient Safety & QA (23.75%), and Order Entry & Processing (22.5%). The 80-question practice exam matches real PTCE scored length (28/15/19/18) with a domain-scored answer key. Three cheat sheets cover 60 high-yield drugs A–Z, 45 prescription sig codes, and pharmacy math formulas with worked examples.
+Four review chapters sized to January 2026 PTCE weights: Medications (35%), Federal Requirements (18.75% — including DSCSA), Patient Safety & QA (23.75%), and Order Entry & Processing (22.5%). The 80-question practice exam matches real PTCE scored length (28/15/19/18) with a domain-scored answer key. Three cheat sheets cover 60 high-yield drugs A–Z, 45 prescription sig codes, and pharmacy math formulas with worked examples. The free 90-question online mock and 300-card Anki deck share the same validated bank.
 
 ### 4-week study plan with the Anki deck
 
@@ -677,6 +691,18 @@ Four review chapters sized to January 2026 PTCE weights: Medications (35%), Fede
 ### Pitfalls this deck targets
 
 Candidates still study removed compounding/alligation topics or under-weight Federal Requirements. This guide front-loads DSCSA and DEA schedule rules at the new 18.75% weight — every practice question maps to a verified card in the shared item bank.`,
+
+  "mrics-quantity-surveying-anki-deck": `### What is inside
+
+Focused QS-pathway prompts for RICS APC: NRM measurement and costing, design economics / cost planning, contract practice (JCT and NEC options), procurement and tendering, project finance reporting, construction technology, and mandatory ethics. Cards are interview-ready definitions and scenario boundaries — not a mega-pack of mixed surveying trivia.
+
+### Plan with the free QS mock
+
+**Phase 1:** Sit the [free 50-question MRICS QS readiness check](/mock-exams/mrics-quantity-surveying-readiness-check). **Phase 2:** 20–25 Anki cards/day on your lowest competency rows. **Phase 3:** Retake the mock; spend final week on ethics + your weakest Level 3 core only.
+
+### Pitfalls this deck targets
+
+Candidates confuse NRM1/2/3 uses, mix NEC Option B BOQ rules with activity schedules, and under-prepare ethics scenarios for the final assessment interview. Cards force those distinctions.`,
 
   "servsafe-manager-anki-deck": `### What is inside
 

@@ -154,6 +154,25 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "Pharmacy technician candidates, pharmacy tech students, and career changers preparing for the PTCE who want a timed baseline before buying prep courses or drilling flashcards.",
     practiceTestLabel: "PTCB / PTCE practice test",
   },
+  "nha-excpt-readiness-check": {
+    title: "Free NHA ExCPT Practice Test | 60 Questions Online",
+    description:
+      "Free NHA ExCPT pharmacy technician practice test: 60 timed questions, 75 minutes, domain scoring for pharmacology, federal law, order entry, and dispensing — full answer review, no signup, no 20-question paywall. Distinct from PTCB PTCE. Independent prep — not NHA exam material.",
+    keywords: [
+      "free nha excpt practice test",
+      "nha excpt practice test",
+      "excpt practice exam",
+      "excpt vs ptcb",
+      "nha pharmacy tech practice test",
+      "pharmacy technician practice test free",
+    ],
+    headline: "Free NHA ExCPT Pharmacy Technician Practice Test",
+    intro:
+      "A timed ExCPT-pathway diagnostic with domain scoring — pharmacology, federal requirements, order entry, and dispensing practice — built for candidates who chose NHA rather than PTCB. No signup; full answer review after you finish. Independent prep — not retired NHA items.",
+    audience:
+      "Pharmacy technician candidates targeting NHA ExCPT (not PTCB PTCE) who want a free timed baseline with topic scoring before paying for a question bank.",
+    practiceTestLabel: "NHA ExCPT practice test",
+  },
   "cfa-level-1-readiness-check": {
     title: "Free CFA Level 1 Practice Test | 60-Question Readiness Check",
     description:
@@ -575,10 +594,11 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "MRICS APC practice questions",
   },
   "mrics-quantity-surveying-readiness-check": {
-    title: "Free MRICS Quantity Surveying Practice Questions | 50-Question APC Readiness Check",
+    title: "Free MRICS QS Practice Test | 50 APC Questions Online",
     description:
-      "Free MRICS Quantity Surveying APC practice questions: 50 timed questions across QS core competencies (cost planning, measurement, contracts, procurement, project finance), 100 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent prep — not RICS material.",
+      "Free MRICS Quantity Surveying APC practice test: 50 timed questions on cost planning, NRM measurement, JCT/NEC contracts, procurement, and project finance — 100 minutes, 70% target, competency scoring, full answer review, linked Anki deck. Better than untimed Brainscape cards alone. Independent — not RICS material.",
     keywords: [
+      "free mrics qs practice test",
       "mrics quantity surveying practice questions",
       "rics qs apc prep",
       "quantity surveyor apc interview",
@@ -587,12 +607,12 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "rics contract practice jct nec",
       "free quantity surveying apc questions",
     ],
-    headline: "Free MRICS Quantity Surveying APC Readiness Check",
+    headline: "Free MRICS Quantity Surveying APC Practice Test",
     intro:
-      "A timed readiness diagnostic for the RICS Quantity Surveying and Construction pathway — six core competencies to Level 3, mandatory ethics, and final interview preparation. Official route: written submission plus 60-minute assessment interview.",
+      "A timed QS-pathway diagnostic with competency scoring — six core Level 3 topics, ethics, and interview prep — then drill weak rows in the linked MRICS QS Anki deck. Official RICS route remains written submission plus a 60-minute assessment interview.",
     audience:
       "Assistant quantity surveyors, cost consultants, commercial managers, and QS graduates preparing for MRICS on the Quantity Surveying and Construction pathway.",
-    practiceTestLabel: "MRICS Quantity Surveying practice questions",
+    practiceTestLabel: "MRICS Quantity Surveying practice test",
   },
   "cfa-level-2-readiness-check": {
     title: "Free CFA Level 2 Mock Exam 2026 | 60 Questions",
