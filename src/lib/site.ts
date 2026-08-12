@@ -56,6 +56,7 @@ export const legalLinks = [
   { href: "/terms", label: "Terms of Service" },
   { href: "/cookies", label: "Cookie Policy" },
   { href: "/contact", label: "Contact" },
+  { href: "/press", label: "Press & citations" },
 ] as const;
 
 export function customDeckMailtoUrl() {
