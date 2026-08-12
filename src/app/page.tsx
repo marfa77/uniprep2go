@@ -169,15 +169,31 @@ const mockDeckRepairPairSlugs: Array<{ mockSlug: string; deckSlug: string }> = [
   { mockSlug: "sie-full-mock", deckSlug: "sie-exam-anki-deck" },
   { mockSlug: "series-7-readiness-check", deckSlug: "series-7-anki-deck" },
   { mockSlug: "series-63-readiness-check", deckSlug: "series-63-anki-deck" },
+  { mockSlug: "series-65-readiness-check", deckSlug: "series-65-anki-deck" },
   { mockSlug: "california-real-estate-readiness-check", deckSlug: "california-real-estate-exam-anki-deck" },
   { mockSlug: "life-and-health-insurance-readiness-check", deckSlug: "life-and-health-insurance-exam-anki-deck" },
   { mockSlug: "property-casualty-insurance-readiness-check", deckSlug: "property-casualty-insurance-exam-anki-deck" },
   { mockSlug: "us-citizenship-readiness-check", deckSlug: "citizenship-naturalization-anki-bundle" },
+  { mockSlug: "pmp-readiness-check", deckSlug: "pmp-anki-deck" },
   { mockSlug: "cfa-level-1-readiness-check", deckSlug: "cfa-level-1-anki-deck" },
   { mockSlug: "cfa-level-2-readiness-check", deckSlug: "cfa-level-2-anki-deck" },
   { mockSlug: "servsafe-manager-mock", deckSlug: "servsafe-manager-anki-deck" },
   { mockSlug: "ptcb-pharmacy-technician-mock", deckSlug: "ptcb-pharmacy-technician-anki-deck" },
 ];
+
+/** Compact homepage index-boost row — priority decks + commercial hubs. */
+const popularDeckBoostLinks = [
+  { href: "/decks/cfp-certification-anki-deck", label: "CFP" },
+  { href: "/decks/enrolled-agent-anki-deck", label: "Enrolled Agent" },
+  { href: "/decks/series-65-anki-deck", label: "Series 65" },
+  { href: "/decks/pmp-anki-deck", label: "PMP" },
+  { href: "/decks/citizenship-naturalization-anki-bundle", label: "Citizenship bundle" },
+  { href: "/decks/german-a2-for-russian-speakers-anki-deck", label: "German A2 (RU)" },
+  { href: "/decks", label: "All decks" },
+  { href: "/finance-anki-decks", label: "Finance hub" },
+  { href: "/anki-starter-kit", label: "Anki starter" },
+  { href: "/sell-anki-deck", label: "Sell a deck" },
+] as const;
 
 const heroSecondaryLinks = [
   { href: "/mock-exams/california-real-estate-readiness-check", label: "California real estate" },
@@ -203,11 +219,13 @@ const howItWorksSteps = [
   },
 ];
 
-/** Home featured strip — FINRA trilogy first, then state licensing. */
+/** Home featured strip — FINRA ladder + priority readiness checks. */
 const featuredMockSlugs = [
   "sie-full-mock",
   "series-7-readiness-check",
   "series-63-readiness-check",
+  "series-65-readiness-check",
+  "us-citizenship-readiness-check",
   "california-real-estate-readiness-check",
   "life-and-health-insurance-readiness-check",
   "property-casualty-insurance-readiness-check",
@@ -467,6 +485,28 @@ export default async function HomePage() {
               </Link>
               {" — "}
               Series 63, CA real estate, insurance, CFA, and 40+ more exams.
+            </p>
+          </div>
+        </section>
+
+        {/* Popular decks — compact internal-link boost for index priority URLs */}
+        <section className="border-b border-[#18140f]/10 bg-[#fffaf0]" aria-label="Popular Anki decks">
+          <div className="mx-auto max-w-6xl px-6 py-8 sm:px-10">
+            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
+              Popular decks
+            </p>
+            <p className="mt-2 text-sm leading-6 text-[#5f5749]">
+              {popularDeckBoostLinks.map((link, index) => (
+                <span key={link.href}>
+                  {index > 0 ? " · " : null}
+                  <Link
+                    className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+                    href={link.href}
+                  >
+                    {link.label}
+                  </Link>
+                </span>
+              ))}
             </p>
           </div>
         </section>

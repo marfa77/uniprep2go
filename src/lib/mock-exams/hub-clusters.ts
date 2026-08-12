@@ -10,6 +10,9 @@ import type { MockExamConfig, MockVerticalId } from "./types";
 
 export const featuredMockHubSlugs = [
   "sie-full-mock",
+  "series-65-readiness-check",
+  "us-citizenship-readiness-check",
+  "pmp-readiness-check",
   "sie-quick-diagnostic",
   "series-7-readiness-check",
   "series-63-readiness-check",
@@ -17,9 +20,8 @@ export const featuredMockHubSlugs = [
   "life-and-health-insurance-readiness-check",
   "property-casualty-insurance-readiness-check",
   "cfa-level-1-readiness-check",
-  "servsafe-manager-mock",
-  "epa-608-readiness-check",
-  "fl-real-estate-readiness-check",
+  "life-in-the-uk-readiness-check",
+  "leben-in-deutschland-readiness-check",
 ] as const;
 
 /**
@@ -31,12 +33,17 @@ export const nicheGooglePrioritySlugs = [
   "sie-quick-diagnostic",
   "series-7-readiness-check",
   "series-63-readiness-check",
+  "series-65-readiness-check",
   "california-real-estate-readiness-check",
   "cfa-level-1-readiness-check",
   "frm-part-1-readiness-check",
   "ptcb-pharmacy-technician-mock",
   "nha-excpt-readiness-check",
   "mrics-quantity-surveying-readiness-check",
+  "pmp-readiness-check",
+  "us-citizenship-readiness-check",
+  "life-in-the-uk-readiness-check",
+  "leben-in-deutschland-readiness-check",
 ] as const;
 
 /** Parked / lower-WTP exams kept live/GEO but deprioritized in Google sitemap. */
@@ -56,7 +63,6 @@ export const googleHeadExamSlugs = [
   "servsafe-manager-mock",
   "gmat-focus-readiness-check",
   "gre-readiness-check",
-  "us-citizenship-readiness-check",
 ] as const;
 
 const nicheGooglePrioritySlugSet = new Set<string>(nicheGooglePrioritySlugs);
@@ -92,6 +98,16 @@ export const nicheGooglePageLeads: Partial<Record<(typeof nicheGooglePrioritySlu
     "This free NHA ExCPT readiness check is built for pharmacy technician candidates on the ExCPT path who need timed practice before the official exam. Review weak domains, then drill the matching Anki rows instead of re-reading unpaid blog dumps.",
   "mrics-quantity-surveying-readiness-check":
     "This free MRICS Quantity Surveying readiness check stresses QS pathway competencies — measurement, cost, contract practice, and ethics — so APC candidates can see which Level 2/3 rows still need Anki before the next supervisor review.",
+  "series-65-readiness-check":
+    "This free Series 65 readiness check targets NASAA investment-adviser topics — economics, products, client recommendations, and laws/ethics — so RIA candidates can see which domains still need Anki before the state Uniform Investment Adviser exam.",
+  "pmp-readiness-check":
+    "This free PMP readiness check stresses PMI ECO domains under timed pressure so project managers can see which people, process, and business-environment topics still need Anki before booking the Pearson VUE window.",
+  "us-citizenship-readiness-check":
+    "This free U.S. citizenship civics readiness check mirrors USCIS-style Q&A pacing so naturalization candidates can see which history and government topics still need daily Anki before the interview.",
+  "life-in-the-uk-readiness-check":
+    "This free Life in the UK readiness check covers British values, history, government, and everyday life themes so settlement and citizenship candidates can queue Anki repairs before the Home Office handbook test.",
+  "leben-in-deutschland-readiness-check":
+    "This free Leben in Deutschland readiness check covers politics, history, society, and federal-state themes so Einbürgerungstest candidates can see which civics rows still need Anki before the BAMF appointment.",
 };
 
 export function getNicheGooglePageLead(slug: string): string | undefined {

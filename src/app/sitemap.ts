@@ -61,11 +61,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: (path === "/comics/gaivota-em-portugal" ? "weekly" : "monthly") as
       | "weekly"
       | "monthly",
-    priority: path.endsWith("/01-1755-earthquake")
-      ? 0.86
-      : path === "/comics/gaivota-em-portugal"
-        ? 0.84
-        : 0.84,
+    priority: path.endsWith("/03-aljubarrota")
+      ? 0.88
+      : path.endsWith("/01-1755-earthquake")
+        ? 0.86
+        : path === "/comics/gaivota-em-portugal"
+          ? 0.84
+          : 0.84,
   }));
 
   const deckPages = availableDecks.map((deck) => ({

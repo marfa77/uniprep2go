@@ -24,7 +24,7 @@ export const GOOGLE_SITEMAP_HUB_PATHS = [
 ] as const;
 
 export const GOOGLE_SITEMAP_SUPPORT_PATHS = [
-  { path: "/anki-starter-kit", priority: 0.82 },
+  { path: "/anki-starter-kit", priority: 0.9 },
   { path: "/how-to-import-cfa-anki-deck", priority: 0.7 },
   { path: "/cfa-level-1-anki-deck-vs-curriculum", priority: 0.7 },
 ] as const;

@@ -94,12 +94,17 @@ describe("seo utilities (Barakhlo patterns)", () => {
       "sie-quick-diagnostic",
       "series-7-readiness-check",
       "series-63-readiness-check",
+      "series-65-readiness-check",
       "california-real-estate-readiness-check",
       "cfa-level-1-readiness-check",
       "frm-part-1-readiness-check",
       "ptcb-pharmacy-technician-mock",
       "nha-excpt-readiness-check",
       "mrics-quantity-surveying-readiness-check",
+      "pmp-readiness-check",
+      "us-citizenship-readiness-check",
+      "life-in-the-uk-readiness-check",
+      "leben-in-deutschland-readiness-check",
     ]);
     expect(isNicheGooglePrioritySlug("sie-full-mock")).toBe(true);
     expect(isNicheGooglePrioritySlug("cfa-level-1-readiness-check")).toBe(true);
@@ -107,12 +112,20 @@ describe("seo utilities (Barakhlo patterns)", () => {
     expect(isNicheGooglePrioritySlug("frm-part-1-readiness-check")).toBe(true);
     expect(isNicheGooglePrioritySlug("nha-excpt-readiness-check")).toBe(true);
     expect(isNicheGooglePrioritySlug("mrics-quantity-surveying-readiness-check")).toBe(true);
+    expect(isNicheGooglePrioritySlug("series-65-readiness-check")).toBe(true);
+    expect(isNicheGooglePrioritySlug("pmp-readiness-check")).toBe(true);
+    expect(isNicheGooglePrioritySlug("us-citizenship-readiness-check")).toBe(true);
+    expect(isNicheGooglePrioritySlug("life-in-the-uk-readiness-check")).toBe(true);
+    expect(isNicheGooglePrioritySlug("leben-in-deutschland-readiness-check")).toBe(true);
     expect(isNicheGooglePrioritySlug("epa-608-readiness-check")).toBe(false);
     expect(googleHeadExamSlugs).not.toContain("cfa-level-1-readiness-check");
     expect(googleHeadExamSlugs).not.toContain("ptcb-pharmacy-technician-mock");
+    expect(googleHeadExamSlugs).not.toContain("us-citizenship-readiness-check");
     expect(mockExamSitemapPriority("sie-full-mock")).toBe(0.98);
     expect(mockExamSitemapPriority("cfa-level-1-readiness-check")).toBe(0.98);
     expect(mockExamSitemapPriority("series-63-readiness-check")).toBe(0.98);
+    expect(mockExamSitemapPriority("series-65-readiness-check")).toBe(0.98);
+    expect(mockExamSitemapPriority("us-citizenship-readiness-check")).toBe(0.98);
     expect(mockExamSitemapPriority("epa-608-readiness-check")).toBe(0.72);
     expect(mockExamSitemapPriority("nremt-emt-readiness-check")).toBe(0.88);
     for (const slug of googleHeadExamSlugs) {

@@ -106,6 +106,13 @@ export function SiteFooter() {
               Gaivota comics
             </Link>
             <span aria-hidden>·</span>
+            <Link
+              className="underline decoration-[#18140f]/15 underline-offset-2 transition hover:text-[#4f493e]"
+              href="/comics/gaivota-em-portugal/03-aljubarrota"
+            >
+              Aljubarrota (Ep.03)
+            </Link>
+            <span aria-hidden>·</span>
             <a
               className="underline decoration-[#18140f]/15 underline-offset-2 transition hover:text-[#4f493e]"
               href="https://www.emigro.online/ru/portugal"

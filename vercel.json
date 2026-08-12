@@ -1,6 +1,7 @@
 {
   "framework": "nextjs",
   "buildCommand": "npm run build && npm run indexnow:deploy",
+  "ignoreCommand": "bash scripts/vercel-ignore-build.sh",
   "redirects": [
     {
       "source": "/:path*",
