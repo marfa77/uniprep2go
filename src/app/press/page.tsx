@@ -49,15 +49,15 @@ export default function PressPage() {
         </p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight">Press &amp; Citation Kit</h1>
         <p className="mt-4 text-base leading-7 text-[#4f493e]">
-          <strong>Quick answer:</strong> You may republish short UniPrep2Go facts and the blurbs below
-          in reviews and “Top 5” posts if you name <strong>UniPrep2Go</strong> and link{" "}
+          Facts and ready blurbs for journalists and bloggers. Short excerpts may be republished with
+          credit and a dofollow link to{" "}
           <a
             className="underline decoration-[#18140f]/20 underline-offset-4"
             href="https://www.uniprep2go.study"
           >
-            https://www.uniprep2go.study
-          </a>{" "}
-          (dofollow). Full product pages and trademarks need written permission for wholesale reuse.
+            uniprep2go.study
+          </a>
+          . Full product pages and trademarks need written permission for wholesale reuse.
         </p>
         <p className="mt-3 text-sm text-[#5f5749]">
           <a className={btnPrimary} href={pressMailto}>
