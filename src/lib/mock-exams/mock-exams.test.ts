@@ -129,6 +129,86 @@ describe("mock exam configs", () => {
     }
   });
 
+  it("ships thick explainers + honest format notes for every citizenship mock with Anki", async () => {
+    const { getNicheExamExplainer } = await import("./niche-exam-explainers");
+    const { getDeckBySlug } = await import("../decks");
+    const { getAllMockExams } = await import("./configs");
+    const citizenship = getAllMockExams().filter((mock) => {
+      if (!mock.linkedDeckSlug || !getDeckBySlug(mock.linkedDeckSlug)) return false;
+      return (
+        mock.familyId === "citizenship" ||
+        mock.verticalId === "citizenship" ||
+        /citizenship|nacionalidade|indfoeds|statsborger|medborgar|citoyennete|vivre-ensemble|naturalisation|leben-in|life-in|canadian|australian|us-citizenship|flanders|wallonie|ccse|swiss/i.test(
+          mock.slug,
+        )
+      );
+    });
+    expect(citizenship.length).toBeGreaterThanOrEqual(19);
+    for (const mock of citizenship) {
+      const explainer = getNicheExamExplainer(mock.slug);
+      expect(explainer, mock.slug).toBeTruthy();
+      expect(explainer!.whatIsExam.split(/\s+/).length, mock.slug).toBeGreaterThan(60);
+      expect(explainer!.whoFor?.length ?? 0, mock.slug).toBeGreaterThan(80);
+      expect(explainer!.howToPrepare?.length ?? 0, mock.slug).toBeGreaterThan(80);
+      expect(explainer!.examFaqs.length, mock.slug).toBeGreaterThanOrEqual(6);
+      expect(explainer!.officialFormat?.length ?? 0, mock.slug).toBeGreaterThan(40);
+      expect(mock.officialSourceNote, mock.slug).toMatch(
+        /independent|not official|no single federal|pending|proposed|diagnostic|oral interview|dual-gate|longer/i,
+      );
+      const { questions, errors } = getQuestionBankForExam(mock.slug);
+      expect(errors, mock.slug).toEqual([]);
+      expect(questions.length, mock.slug).toBeGreaterThanOrEqual(30);
+      const boilerplate = questions.filter((q) =>
+        /Correct answer:|Richtige Antwort:|Bonne réponse\s*:|Remember why|Husk hvorfor|Zapamiętaj, dlaczego|Zusätzlich: Prüfen Sie/i.test(
+          q.explanation,
+        ),
+      );
+      expect(boilerplate, `${mock.slug} boilerplate explanations`).toHaveLength(0);
+    }
+  });
+
+  it("frames Czech citizenship mock with official reálie format callout", async () => {
+    const { getNicheExamExplainer } = await import("./niche-exam-explainers");
+    const slug = "czech-citizenship-readiness-check";
+    const config = getMockExamConfig(slug);
+    const explainer = getNicheExamExplainer(slug);
+    expect(config?.officialSourceNote).toMatch(/30 questions|30Q/i);
+    expect(config?.officialSourceNote).toMatch(/60 questions|60\b/i);
+    expect(explainer?.officialFormat).toMatch(/30 MCQs|30 questions/i);
+    expect(explainer?.officialFormat).toMatch(/60 timed questions|60 questions/i);
+    expect(explainer?.whatIsExam.split(/\s+/).length).toBeGreaterThan(60);
+    expect(explainer?.whoFor?.length).toBeGreaterThan(80);
+    expect(explainer?.howToPrepare?.length).toBeGreaterThan(80);
+    expect(explainer?.examFaqs.length).toBeGreaterThanOrEqual(6);
+    expect(explainer?.whatIsExam).toMatch(/permanent residence|trvalý pobyt/i);
+    const { questions } = getQuestionBankForExam(slug);
+    const yearOnlyStems = questions.filter((q) =>
+      /^V[e]? kterém roce\b/i.test(q.prompt.trim()),
+    );
+    expect(yearOnlyStems.length).toBe(0);
+    const thinExplanations = questions.filter((q) => q.explanation.split(/\s+/).length < 15);
+    expect(thinExplanations.length).toBe(0);
+  });
+
+  it("frames Polish citizenship mock as proposed civics (no official test yet)", async () => {
+    const { getNicheExamExplainer } = await import("./niche-exam-explainers");
+    const slug = "polish-citizenship-readiness-check";
+    const config = getMockExamConfig(slug);
+    const explainer = getNicheExamExplainer(slug);
+    expect(config?.officialSourceNote).toMatch(/no official citizenship civics exam/i);
+    expect(config?.examBody).toMatch(/no official test yet/i);
+    expect(explainer?.whatIsExam.split(/\s+/).length).toBeGreaterThan(60);
+    expect(explainer?.whoFor?.length).toBeGreaterThan(80);
+    expect(explainer?.howToPrepare?.length).toBeGreaterThan(80);
+    expect(explainer?.examFaqs.length).toBeGreaterThanOrEqual(6);
+    expect(explainer?.whatIsExam).toMatch(/does not currently|no official|proposed/i);
+    const { questions } = getQuestionBankForExam(slug);
+    const yearOnlyStems = questions.filter((q) =>
+      /^W którym roku\b/i.test(q.prompt.trim()),
+    );
+    expect(yearOnlyStems.length).toBe(0);
+  });
+
   it("imports Nordic/Benelux/Portugal civics readiness mocks with planned Anki waitlists", async () => {
     const { getDeckBySlug } = await import("../decks");
     for (const [slug, deckSlug, note] of [

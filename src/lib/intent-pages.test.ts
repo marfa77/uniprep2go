@@ -26,6 +26,16 @@ describe("intent pages visibility", () => {
     expect(intentPages.every((page) => page.faqs.length >= 3)).toBe(true);
   });
 
+  it("attaches ai:description metadata for intent answer pages", async () => {
+    const { buildIntentPageMetadata } = await import("./intent-pages");
+    const page = intentPages.find((item) => item.slug === "sell-anki-deck");
+    expect(page).toBeDefined();
+    const metadata = buildIntentPageMetadata(page!);
+    expect(metadata.other?.["ai:description"]).toContain("70%");
+    expect(metadata.other?.["ai:category"]).toContain("sell-anki-deck");
+    expect(metadata.alternates?.types?.["text/plain"]).toBeUndefined();
+  });
+
   it("defines sell-anki-deck partner GEO facts for LLM citation", () => {
     const page = intentPages.find((item) => item.slug === "sell-anki-deck");
     expect(page).toBeDefined();

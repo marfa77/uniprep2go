@@ -3,6 +3,7 @@
  * Used for visible H2 sections, meta, and informational FAQs.
  */
 
+import { citizenshipExamExplainers } from "./citizenship-explainers";
 import { wave3ExamExplainers } from "./wave3-explainers";
 import { wave4ExamExplainers } from "./wave4-explainers";
 
@@ -1393,6 +1394,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
 export function getNicheExamExplainer(slug: string): NicheExamExplainer | null {
   return (
     nicheExamExplainers[slug] ??
+    citizenshipExamExplainers[slug] ??
     wave3ExamExplainers[slug] ??
     wave4ExamExplainers[slug] ??
     null

@@ -1,23 +1,21 @@
 import type { Metadata } from "next";
 import { IntentPageView } from "@/components/intent-page";
-import { getIntentPageBySlug } from "@/lib/intent-pages";
+import { buildIntentPageMetadata, getIntentPageBySlug } from "@/lib/intent-pages";
 import { notFound } from "next/navigation";
 
+const SLUG = "best-frm-part-1-anki-deck";
+
 export async function generateMetadata(): Promise<Metadata> {
-  const page = getIntentPageBySlug("best-frm-part-1-anki-deck");
+  const page = getIntentPageBySlug(SLUG);
   if (!page) {
     return { title: "Not found" };
   }
 
-  return {
-    title: page.title,
-    description: page.description,
-    alternates: { canonical: "/best-frm-part-1-anki-deck" },
-  };
+  return buildIntentPageMetadata(page);
 }
 
 export default async function BestFrmPartOneAnkiDeckPage() {
-  const page = getIntentPageBySlug("best-frm-part-1-anki-deck");
+  const page = getIntentPageBySlug(SLUG);
   if (!page) {
     notFound();
   }

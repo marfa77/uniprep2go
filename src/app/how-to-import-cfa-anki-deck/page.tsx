@@ -3,18 +3,26 @@ import Link from "next/link";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { primaryDeck } from "@/lib/decks";
+import { withAiMetadata } from "@/lib/llm-meta";
 import { siteConfig } from "@/lib/site";
 
 const directAnswer =
   "To import the CFA Level 1 Anki deck, download the .apkg file from your Gumroad receipt, open the Anki desktop app, choose File then Import, and select the .apkg file. The deck appears in your deck list and you can sync it to AnkiDroid or AnkiMobile through a free AnkiWeb account.";
 
-export const metadata: Metadata = {
-  title: "How to import the CFA Level 1 Anki deck",
-  description: directAnswer,
-  alternates: {
-    canonical: "/how-to-import-cfa-anki-deck",
+export const metadata: Metadata = withAiMetadata(
+  {
+    title: "How to import the CFA Level 1 Anki deck",
+    description: directAnswer,
+    alternates: {
+      canonical: "/how-to-import-cfa-anki-deck",
+    },
   },
-};
+  {
+    aiDescription: directAnswer,
+    aiCategory: "anki;how-to;cfa-level-1",
+    path: "/how-to-import-cfa-anki-deck",
+  },
+);
 
 const steps = primaryDeck.importSteps ?? [];
 

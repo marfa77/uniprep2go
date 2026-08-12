@@ -634,7 +634,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "us-citizenship-readiness-check": {
     title: "Free U.S. Citizenship Practice Test 2026 | 30 Civics Questions",
     description:
-      "Free USCIS-style civics practice test for 2026 naturalization: 30 timed questions on American government, history, and geography, 30 minutes, 80% readiness target, full answer review. Then drill all 100 with the Citizenship Anki Bundle. Independent prep — not USCIS material.",
+      "Free USCIS-style civics practice: 30 timed MCQs. Official naturalization civics is oral (up to 10 from 100, pass at 6) — this page is a timed MCQ diagnostic, not the interview format. Citizenship Anki Bundle. Independent prep.",
     keywords: [
       "us citizenship practice test 2026",
       "uscis civics test free",
@@ -644,69 +644,80 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free U.S. Citizenship Practice Test (2026 Civics)",
     intro:
-      "A timed USCIS-style civics readiness check for green-card holders preparing the N-400 interview — American government, history, and geography/symbols. Finish the report, then remediate weak topics with the Citizenship & Naturalization Anki Bundle.",
-    audience: "Green card holders preparing for the U.S. naturalization civics interview (N-400).",
+      "Timed MCQ civics diagnostic for N-400 prep. Format note: USCIS asks up to 10 oral questions from the 100-item list (pass at 6); this check is 30 multiple-choice questions / 30 minutes / 80% for drilling — then practice aloud.",
+    audience:
+      "Green card holders preparing U.S. naturalization civics (oral interview format differs from this MCQ drill).",
     practiceTestLabel: "U.S. citizenship practice test",
   },
   "leben-in-deutschland-readiness-check": {
     title: "Free Leben in Deutschland Practice Test | 60 Questions",
     description:
-      "Free Einbürgerungstest / Leben in Deutschland practice: 60 timed questions on German politics, history, society, and federal life. Pairs with the Citizenship & Naturalization Anki Bundle. Independent prep — not BAMF material.",
+      "Free Einbürgerungstest / Leben in Deutschland practice: 60 timed questions (60 min, 55%). Official BAMF exam is 33Q/60min/17 correct — this page is a longer diagnostic. Citizenship Anki Bundle. Independent — not BAMF material.",
     keywords: ["Leben in Deutschland test", "Einbürgerungstest üben", "German citizenship practice test"],
     headline: "Free Leben in Deutschland Readiness Check",
     intro:
-      "A timed readiness check for the German naturalization civics test — constitution, history, society, and everyday federal life.",
-    audience: "Residents preparing for the German Einbürgerungstest / Leben in Deutschland exam.",
+      "Timed German civics diagnostic for Einbürgerungstest / Leben in Deutschland. Format note: official BAMF test is 33 questions / 60 minutes / 17 correct; this check is 60 / 60 / 55% to surface weak topics. Language B1 is separate.",
+    audience:
+      "Residents preparing BAMF Einbürgerungstest / Leben in Deutschland — not a substitute for the official 33-question sitting.",
     practiceTestLabel: "Leben in Deutschland practice test",
   },
   "naturalisation-francaise-readiness-check": {
     title: "Free Naturalisation française Practice Test | 60 Questions",
     description:
-      "Free French naturalization civics practice: 60 timed questions on institutions, history, values, and rights. Pairs with the Citizenship & Naturalization Anki Bundle. Independent prep — not official French government material.",
-    keywords: ["naturalisation française test", "entretien naturalisation", "French citizenship practice"],
+      "Free French Examen civique practice (2026): 60 timed questions. Official civic exam is 40Q/45min/80%; B2 language is separate. Citizenship Anki Bundle. Independent — not préfecture material.",
+    keywords: [
+      "naturalisation française test",
+      "examen civique naturalisation",
+      "examen civique 2026",
+      "French citizenship practice",
+    ],
     headline: "Free Naturalisation française Readiness Check",
     intro:
-      "A timed civics readiness check for French naturalization themes — Republic institutions, history, symbols, and civic duties.",
-    audience: "Applicants preparing for the French naturalization civics interview.",
+      "Timed civics diagnostic for the French Examen civique (live from Jan 2026). Official format is 40 questions / 45 minutes / 32/40; this check is 60 / 60 / 70%. B2 French is a separate exam — this is not only an interview quiz.",
+    audience:
+      "Applicants preparing the 2026 French naturalisation civic exam (plus B2 language).",
     practiceTestLabel: "Naturalisation française practice test",
   },
   "life-in-the-uk-readiness-check": {
     title: "Free Life in the UK Practice Test | 60 Questions",
     description:
-      "Free Life in the UK practice test: 60 timed questions on British values, history, government, and everyday life with a 75% readiness target. Pairs with the Citizenship & Naturalization Anki Bundle. Independent prep — not Home Office material.",
+      "Free Life in the UK practice: 60 timed questions (45 min, 75%). Official Home Office test is 24Q/45min/75% (£50) — this page is longer diagnostic practice. Citizenship Anki Bundle. Independent prep.",
     keywords: ["Life in the UK practice test", "LITUK free test", "British citizenship test practice"],
     headline: "Free Life in the UK Readiness Check",
     intro:
-      "A timed readiness check aligned to Life in the UK themes — values, history, government, and society.",
-    audience: "Applicants preparing for settlement or British citizenship via the Life in the UK test.",
+      "Timed Life in the UK diagnostic. Format note: official test is 24 questions / 45 minutes / 18/24; this check is 60 / 45 / 75% to find weak handbook topics.",
+    audience:
+      "Applicants preparing settlement or British citizenship via the Life in the UK test.",
     practiceTestLabel: "Life in the UK practice test",
   },
   "canadian-citizenship-readiness-check": {
     title: "Free Canadian Citizenship Practice Test | 60 Questions",
     description:
-      "Free Canadian citizenship practice test: 60 timed questions on Discover Canada themes — history, government, rights, and symbols. Pairs with the Citizenship & Naturalization Anki Bundle. Independent prep — not IRCC material.",
+      "Free Canadian citizenship practice: 60 timed Discover Canada questions (45 min, 75%). Official IRCC test is 20Q/30min/75% — this page is longer diagnostic practice. Citizenship Anki Bundle.",
     keywords: ["Canadian citizenship practice test", "Discover Canada quiz", "IRCC citizenship test"],
     headline: "Free Canadian Citizenship Readiness Check",
     intro:
-      "A timed readiness check for the Canadian citizenship test — history, government, rights, and Canadian symbols.",
-    audience: "Permanent residents preparing for the Canadian citizenship test.",
+      "Timed Discover Canada diagnostic. Format note: official IRCC test is 20 questions / 30 minutes / 15/20; this check is 60 / 45 / 75%.",
+    audience:
+      "Permanent residents preparing for the Canadian citizenship test.",
     practiceTestLabel: "Canadian citizenship practice test",
   },
   "australian-citizenship-readiness-check": {
     title: "Free Australian Citizenship Practice Test | 60 Questions",
     description:
-      "Free Australian citizenship practice test: 60 timed questions on values, history, government, and Australian life. Pairs with the Citizenship & Naturalization Anki Bundle. Independent prep — not Home Affairs material.",
+      "Free Australian citizenship practice: 60 timed questions (45 min, 75%). Official test is 20Q/45min with a values dual-gate — this diagnostic does not enforce that gate. Citizenship Anki Bundle.",
     keywords: ["Australian citizenship practice test", "Aussie citizenship quiz", "citizenship test Australia"],
     headline: "Free Australian Citizenship Readiness Check",
     intro:
-      "A timed readiness check for the Australian citizenship test — values, history, democracy, and Australian life.",
-    audience: "Permanent residents preparing for the Australian citizenship test.",
+      "Timed Our Common Bond diagnostic. Official exam needs 75% plus all five values questions correct; this 60-question check is longer theme practice without that dual-gate.",
+    audience:
+      "Permanent residents preparing for the Australian citizenship test.",
     practiceTestLabel: "Australian citizenship practice test",
   },
   "ccse-espana-readiness-check": {
     title: "Free CCSE Practice Test (España) | 60 Questions",
     description:
-      "Free CCSE (España) practice test: 60 timed questions on Spanish constitution, institutions, culture/geography, and everyday life for nacionalidad española. Pairs with the DELE + CCSE Anki bundle. Independent prep — not Instituto Cervantes material.",
+      "Free CCSE España practice: 60 timed questions (45 min, 60%). Official Cervantes CCSE is 25 items / 45 min / 15/25 — this page is longer. DELE A2 is separate. DELE+CCSE Anki bundle.",
     keywords: [
       "CCSE practice test",
       "prueba CCSE gratis",
@@ -716,14 +727,15 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free CCSE (España) Readiness Check",
     intro:
-      "A timed readiness check for the Instituto Cervantes CCSE — constitutional knowledge, institutions, culture, and everyday Spanish life.",
-    audience: "Applicants preparing for Spanish nationality via the CCSE exam.",
+      "Timed CCSE diagnostic for Spanish nationality civics. Format note: official exam is 25 questions / 45 minutes / 60%; this check is 60 / 45 / 60%. DELE A2 language is a different exam.",
+    audience:
+      "Applicants preparing CCSE for nacionalidad española (DELE A2 separate).",
     practiceTestLabel: "CCSE practice test",
   },
   "swiss-citizenship-readiness-check": {
     title: "Free Einbürgerung Schweiz Practice Test | 60 Questions",
     description:
-      "Free German-language Swiss citizenship practice: 60 timed Staatskunde questions on politics, direct democracy, history, geography, and naturalisation. Pairs with the Swiss Citizenship Anki Bundle (DE / FR / IT). Independent prep — not SEM material.",
+      "Free German Swiss Staatskunde practice: 60 timed federal-theme questions. No single federal MCQ — canton/commune tests vary. Swiss Citizenship Anki Bundle. Independent — not SEM material.",
     keywords: [
       "Einbürgerung Schweiz üben",
       "Staatskunde Schweiz Test",
@@ -732,14 +744,15 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free Einbürgerung Schweiz Readiness Check",
     intro:
-      "A timed German-language federal Staatskunde readiness check for Swiss ordinary naturalisation (canton/commune tests vary).",
-    audience: "German-speaking applicants preparing Swiss ordinary naturalisation civics checks.",
+      "Timed German federal Staatskunde diagnostic for ordinary naturalisation. Switzerland has no nationwide knowledge MCQ; your canton/commune sets the real paper — this page covers federal themes only.",
+    audience:
+      "German-speaking applicants preparing Swiss ordinary naturalisation federal civics.",
     practiceTestLabel: "Einbürgerung Schweiz practice test",
   },
   "naturalisation-suisse-readiness-check": {
     title: "Free Naturalisation Suisse Practice Test | 60 Questions",
     description:
-      "Free French-language Swiss naturalisation practice: 60 timed questions on federal politics, history, geography, and the naturalisation process. Pairs with the Swiss Citizenship Anki Bundle (DE / FR / IT). Independent prep — not SEM material.",
+      "Free French Swiss naturalisation practice: 60 timed federal-theme questions. No single federal MCQ — canton/commune vary. Swiss Citizenship Anki Bundle. Independent prep.",
     keywords: [
       "naturalisation suisse test",
       "examen naturalisation suisse",
@@ -748,14 +761,15 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free Naturalisation Suisse Readiness Check",
     intro:
-      "A timed French-language federal civics readiness check for Swiss ordinary naturalisation (canton/commune tests vary).",
-    audience: "French-speaking applicants preparing Swiss ordinary naturalisation civics checks.",
+      "Timed French federal civics diagnostic. No nationwide French MCQ — confirm your canton’s format; this page covers federal themes only.",
+    audience:
+      "French-speaking applicants preparing Swiss ordinary naturalisation federal civics.",
     practiceTestLabel: "Naturalisation Suisse practice test",
   },
   "naturalizzazione-svizzera-readiness-check": {
     title: "Free Naturalizzazione Svizzera Practice Test | 60 Questions",
     description:
-      "Free Italian-language Swiss naturalisation practice: 60 timed questions on federal politics, history, geography, and the naturalisation process. Pairs with the Swiss Citizenship Anki Bundle (DE / FR / IT). Independent prep — not SEM material.",
+      "Free Italian Swiss naturalisation practice: 60 timed federal-theme questions. No single federal MCQ — canton/commune vary. Swiss Citizenship Anki Bundle. Independent prep.",
     keywords: [
       "naturalizzazione svizzera test",
       "esame cittadinanza svizzera",
@@ -764,110 +778,129 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free Naturalizzazione Svizzera Readiness Check",
     intro:
-      "A timed Italian-language federal civics readiness check for Swiss ordinary naturalisation (canton/commune tests vary).",
-    audience: "Italian-speaking applicants preparing Swiss ordinary naturalisation civics checks.",
+      "Timed Italian federal civics diagnostic. No nationwide Italian MCQ — confirm your canton’s format; this page covers federal themes only.",
+    audience:
+      "Italian-speaking applicants preparing Swiss ordinary naturalisation federal civics.",
     practiceTestLabel: "Naturalizzazione Svizzera practice test",
   },
   "czech-citizenship-readiness-check": {
-    title: "Free Czech Citizenship Practice Test | 60 Questions",
+    title: "Free Czech Reálie Practice Test | 60-Question Diagnostic",
     description:
-      "Free Czech citizenship / reálie practice: 60 timed questions on state and rights, history and EU, society, and public services. Pairs with the planned Czech Citizenship Anki deck (waitlist). Independent prep — not official Interior Ministry material.",
+      "Free Czech citizenship / zkouška z reálií readiness check: 60 timed questions (45 min, 70% diagnostic). Official exam is 30/30/60% from the NPI pool — this page is longer practice. Waitlist Anki. Independent — not MV ČR material.",
     keywords: [
       "Czech citizenship practice test",
       "občanství ČR test",
       "zkouška z českých reálií",
+      "zkouska z realii practice",
       "Czech naturalisation quiz",
     ],
-    headline: "Free Czech Citizenship Readiness Check",
+    headline: "Free Czech Citizenship / Reálie Readiness Check",
     intro:
-      "A timed Czech-language civics readiness check for citizenship / permanent residence knowledge themes.",
-    audience: "Applicants preparing Czech citizenship or permanent residence civics knowledge.",
-    practiceTestLabel: "Czech citizenship practice test",
+      "Timed Czech-language diagnostic for citizenship reálie themes. Format note: official exam is 30 questions / 30 minutes / 60%; this check is 60 / 45 / 70% to surface weak topics. Permanent residence usually needs language (A2), not reálie.",
+    audience:
+      "Citizenship applicants preparing zkouška z českých reálií (plus B1 language) — not a substitute for the official NPI 30-question sitting.",
+    practiceTestLabel: "Czech reálie / citizenship practice test",
   },
   "polish-citizenship-readiness-check": {
-    title: "Free Polish Citizenship Practice Test | 60 Questions",
+    title: "Free Polish Citizenship Practice Test | Proposed Civics",
     description:
-      "Free Polish citizenship practice: 60 timed questions on state and rights, history and EU, society, and public services. Pairs with the planned Polish Citizenship Anki deck (waitlist). Independent prep — not official Polish government material.",
+      "Poland has no official citizenship civics exam yet. Free 60-question Polish readiness check on proposed wiedza o Polsce / test obywatelski themes — state, history, EU, society. PaF B1 is today’s language hurdle. Independent prep — not government material.",
     keywords: [
       "Polish citizenship practice test",
       "obywatelstwo polskie test",
-      "egzamin z wiedzy o Polsce",
+      "wiedza o Polsce",
+      "test obywatelski",
       "Polish naturalisation quiz",
     ],
     headline: "Free Polish Citizenship Readiness Check",
     intro:
-      "A timed Polish-language civics readiness check for naturalisation knowledge themes.",
-    audience: "Applicants preparing Polish citizenship / naturalisation civics knowledge.",
-    practiceTestLabel: "Polish citizenship practice test",
+      "Poland does not require a citizenship knowledge MCQ today. This timed Polish-language check drills proposed civics themes while PaF B1 remains the live exam bottleneck.",
+    audience:
+      "Applicants under current PaF B1 rules who want civic literacy — or future-proofing if a test obywatelski is enacted.",
+    practiceTestLabel: "Polish citizenship (proposed civics) practice test",
   },
   "denmark-indfoedsretsproeven-readiness-check": {
     title: "Free Denmark Indfødsretsprøven Practice Test | 60 Questions",
     description:
-      "Free Danish citizenship (Indfødsretsprøven) practice: 60 timed questions on constitution, society, welfare, and geography/EU. Pairs with the planned Denmark Indfødsretsprøven Anki deck (waitlist). Independent prep.",
+      "Free Indfødsretsprøven practice: 60 timed questions. Official exam is 45Q/45min with 36/45 plus values dual-gate — this diagnostic is longer theme practice. Waitlist Anki. Independent prep.",
     keywords: ["Indfødsretsprøven", "Danish citizenship test", "Denmark citizenship practice"],
     headline: "Free Denmark Indfødsretsprøven Readiness Check",
-    intro: "A timed Danish-language readiness check for the Indfødsretsprøven citizenship civics test.",
-    audience: "Applicants preparing the Danish Indfødsretsprøven.",
+    intro:
+      "Timed Danish civics diagnostic for Indfødsretsprøven. Format note: official test is 45 questions / 45 minutes / 80% plus ≥4/5 values; this check is 60 / 45 / 70% without that dual-gate. Language (Prøve i Dansk) is separate.",
+    audience:
+      "Applicants preparing the Danish Indfødsretsprøven civics exam.",
     practiceTestLabel: "Indfødsretsprøven practice test",
   },
   "portugal-nacionalidade-readiness-check": {
     title: "Free Portugal Nacionalidade Practice Test | 60 Questions",
     description:
-      "Free Portuguese nationality civic knowledge practice: 60 timed questions. Pairs with the planned Portugal Nacionalidade Anki deck (waitlist). Independent prep — not IRN material.",
+      "Free Portugal nationality civic practice: 60 timed questions on the five legal themes. Official Q/time/pass still pending regulation — independent diagnostic, not IRN. Waitlist Anki.",
     keywords: ["nacionalidade portuguesa", "conhecimento cívico", "Portugal citizenship test"],
     headline: "Free Portugal Nacionalidade Readiness Check",
-    intro: "A timed Portuguese-language civic knowledge readiness check for nationality applicants.",
-    audience: "Applicants preparing Portuguese nationality civic knowledge.",
+    intro:
+      "Timed Portuguese civic diagnostic for the 2026 nationality knowledge requirement. Official exam format was still pending implementing rules — treat this as theme practice, not an official IRN paper. A2 language is separate (CPLP language exemption does not waive civics).",
+    audience:
+      "Applicants preparing Portuguese nationality civic knowledge under the 2026 law.",
     practiceTestLabel: "Portugal nacionalidade practice test",
   },
   "norway-statsborgerproven-readiness-check": {
     title: "Free Norway Statsborgerprøven Practice Test | 60 Questions",
     description:
-      "Free Norwegian citizenship (Statsborgerprøven) practice: 60 timed questions. Pairs with the planned Norway Statsborgerprøven Anki deck (waitlist). Independent prep — not UDI material.",
+      "Free Statsborgerprøven practice: 60 timed questions. Official HK-dir exam is 36Q (32 scored) / 60 min / 75% — this page is a different-length diagnostic. Waitlist Anki. Independent prep.",
     keywords: ["Statsborgerprøven", "Norwegian citizenship test", "statsborgerskap"],
     headline: "Free Norway Statsborgerprøven Readiness Check",
-    intro: "A timed Norwegian-language readiness check for the Statsborgerprøven.",
-    audience: "Applicants preparing the Norwegian Statsborgerprøven.",
+    intro:
+      "Timed Norwegian samfunnskunnskap diagnostic. Format note: official Statsborgerprøven is 36 questions / 60 minutes / 24/32; this check is 60 / 45 / 70%. B1 Norwegian is a separate requirement.",
+    audience:
+      "Applicants preparing the Norwegian Statsborgerprøven.",
     practiceTestLabel: "Statsborgerprøven practice test",
   },
   "sweden-medborgarskapsprov-readiness-check": {
     title: "Free Sweden Medborgarskapsprov Practice Test | 60 Questions",
     description:
-      "Free Swedish citizenship (Medborgarskapsprov) practice: 60 timed questions. Pairs with the planned Sweden Medborgarskapsprov Anki deck (waitlist). Independent prep.",
+      "Free Medborgarskapsprov society-knowledge practice: 60 timed questions. Official format may still be settling (new 2026 test) — independent Samhällskunskap diagnostic + waitlist Anki.",
     keywords: ["Medborgarskapsprov", "Swedish citizenship test", "medborgarskap"],
     headline: "Free Sweden Medborgarskapsprov Readiness Check",
-    intro: "A timed Swedish-language readiness check for the Medborgarskapsprov.",
-    audience: "Applicants preparing the Swedish Medborgarskapsprov.",
+    intro:
+      "Timed Swedish society-knowledge diagnostic for the new Medborgarskapsprov path. Confirm current UHR/Migrationsverket format before exam day — this page is independent theme practice, not an official sample.",
+    audience:
+      "Applicants preparing Sweden’s new citizenship society-knowledge requirement.",
     practiceTestLabel: "Medborgarskapsprov practice test",
   },
   "belgium-flanders-mo-readiness-check": {
     title: "Free Belgium Flanders MO Practice Test | 60 Questions",
     description:
-      "Free Flanders maatschappelijke oriëntatie practice: 60 timed questions. Pairs with the planned Belgium Flanders MO Anki deck (waitlist). Independent prep.",
+      "Free Flanders MO practice: 60 timed questions. Belgium has no single federal civics MCQ today — live path is Dutch + MO/integration; a national civic test is proposed. Waitlist Anki. Independent prep.",
     keywords: ["maatschappelijke oriëntatie", "Flanders MO", "inburgering Vlaanderen"],
     headline: "Free Belgium Flanders MO Readiness Check",
-    intro: "A timed Dutch-language readiness check for Flanders maatschappelijke oriëntatie.",
-    audience: "Applicants preparing Flanders social orientation / integration civics.",
+    intro:
+      "Timed Dutch-language Flanders maatschappelijke oriëntatie diagnostic. Honesty note: there is no nationwide citizenship MCQ in force like BAMF/LITUK — use this for MO themes; confirm AGII/commune requirements for your file.",
+    audience:
+      "Applicants preparing Flanders social orientation / integration civics themes.",
     practiceTestLabel: "Flanders MO practice test",
   },
   "belgium-wallonie-citoyennete-readiness-check": {
     title: "Free Belgium Wallonie Citoyenneté Practice Test | 60 Questions",
     description:
-      "Free Wallonia citoyenneté practice: 60 timed questions. Pairs with the planned Belgium Wallonie Citoyenneté Anki deck (waitlist). Independent prep.",
+      "Free Wallonie citoyenneté theme practice: 60 timed questions. No official Walloon civics QCM today — live hurdles are usually French A2 + integration proof. Waitlist Anki. Independent prep.",
     keywords: ["citoyenneté Wallonie", "parcours d'intégration", "Belgium Wallonia citizenship"],
     headline: "Free Belgium Wallonie Citoyenneté Readiness Check",
-    intro: "A timed French-language readiness check for Wallonia citoyenneté / parcours d'intégration.",
-    audience: "Applicants preparing Wallonia citizenship / integration civics.",
+    intro:
+      "Timed French-language Wallonia citoyenneté diagnostic. Honesty note: Wallonia does not publish a standardised citizenship MCQ bank — language + parcours d’intégration are the live gates; a federal civic test is only proposed.",
+    audience:
+      "Applicants preparing Wallonia integration / citoyenneté themes (not a substitute for DELF/TCF A2).",
     practiceTestLabel: "Wallonie citoyenneté practice test",
   },
   "luxembourg-vivre-ensemble-readiness-check": {
     title: "Free Luxembourg Vivre ensemble Practice Test | 60 Questions",
     description:
-      "Free Luxembourg Vivre ensemble practice: 60 timed questions. Pairs with the planned Luxembourg Vivre ensemble Anki deck (waitlist). Independent prep.",
+      "Free Luxembourg Vivre ensemble practice: 60 timed questions. Official SFA exam is 40Q/60min/70% (or course path); Sproochentest is separate. Waitlist Anki. Independent prep.",
     keywords: ["Vivre ensemble Luxembourg", "Luxembourg citizenship test", "nationalité luxembourgeoise"],
     headline: "Free Luxembourg Vivre ensemble Readiness Check",
-    intro: "A timed French-language readiness check for Luxembourg Vivre ensemble / nationality civics.",
-    audience: "Applicants preparing Luxembourg Vivre ensemble citizenship themes.",
+    intro:
+      "Timed Vivre ensemble diagnostic. Format note: official exam path is 40 questions / 60 minutes / 28/40, or a 24-hour course; this check is 60 / 45 / 70%. Luxembourgish language (Sproochentest) is separate.",
+    audience:
+      "Applicants preparing Luxembourg Vivre ensemble / nationality civics.",
     practiceTestLabel: "Vivre ensemble practice test",
   },
 };

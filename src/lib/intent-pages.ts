@@ -1,8 +1,10 @@
+import type { Metadata } from "next";
 import {
   catalogAvailableDecks,
   getCatalogDeckBySlug,
   type CatalogAvailableDeck,
 } from "./decks";
+import { withAiMetadata } from "./llm-meta";
 
 const languageExamDeckSlugs = catalogAvailableDecks
   .filter((deck) => deck.category === "language")
@@ -455,6 +457,22 @@ export const intentPages: IntentPage[] = [
 
 export function getIntentPageBySlug(slug: string) {
   return intentPages.find((page) => page.slug === slug);
+}
+
+/** SEO + PixID-style ai:description for intent answer pages (leaf — no llms.txt alternate). */
+export function buildIntentPageMetadata(page: IntentPage): Metadata {
+  return withAiMetadata(
+    {
+      title: page.title,
+      description: page.description,
+      alternates: { canonical: `/${page.slug}` },
+    },
+    {
+      aiDescription: page.directAnswer,
+      aiCategory: `exam-prep;intent;${page.slug}`,
+      path: `/${page.slug}`,
+    },
+  );
 }
 
 export function getIntentPageDecks(page: IntentPage): CatalogAvailableDeck[] {

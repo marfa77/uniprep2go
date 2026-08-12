@@ -5,6 +5,7 @@ import { GaivotaEpisodeSeoSections } from "@/components/comics/gaivota-episode-s
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { gaivotaSeries } from "@/lib/gaivota-comics";
+import { withAiMetadata } from "@/lib/llm-meta";
 import { siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
@@ -13,7 +14,8 @@ const pagePath = "/comics/gaivota-em-portugal/02-25-de-abril";
 const directAnswer =
   "Gaivota em Portugal Episode 2 — 25 de Abril (Carnation Revolution, 1974): a paid noir Portuguese history comic PDF ($5 on Gumroad). Includes a factual history brief, a complete 5-page story, and a 100-word PT→EN glossary. Episode 1 (1755) is free on this site.";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withAiMetadata(
+  {
   title: "25 de Abril (1974) — Portuguese History Comic | Gaivota em Portugal",
   description: directAnswer,
   alternates: { canonical: `${siteConfig.url}${pagePath}` },
@@ -27,7 +29,13 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+  },
+  {
+    aiDescription: directAnswer,
+    aiCategory: "comics;portuguese-history;gaivota",
+    path: pagePath,
+  },
+);
 
 export default function Ep0225DeAbrilPage() {
   return (

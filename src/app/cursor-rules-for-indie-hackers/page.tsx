@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { withAiMetadata } from "@/lib/llm-meta";
 import { buildSocialMetadata } from "@/lib/social-metadata";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
@@ -69,22 +70,29 @@ const faqs = [
   },
 ];
 
-export const metadata: Metadata = {
-  title: "Cursor rules for indie hackers — .mdc kit from shipped solo products",
-  description: directAnswer,
-  alternates: {
-    canonical: `/${slug}`,
-  },
-  ...buildSocialMetadata({
-    title: "Cursor rules for indie hackers",
+export const metadata: Metadata = withAiMetadata(
+  {
+    title: "Cursor rules for indie hackers — .mdc kit from shipped solo products",
     description: directAnswer,
+    alternates: {
+      canonical: `/${slug}`,
+    },
+    ...buildSocialMetadata({
+      title: "Cursor rules for indie hackers",
+      description: directAnswer,
+      path: `/${slug}`,
+      image: absoluteUrl(coverPath),
+      imageAlt: coverAlt,
+      imageWidth: 1280,
+      imageHeight: 720,
+    }),
+  },
+  {
+    aiDescription: directAnswer,
+    aiCategory: "cursor;indie-hackers;mdc-rules",
     path: `/${slug}`,
-    image: absoluteUrl(coverPath),
-    imageAlt: coverAlt,
-    imageWidth: 1280,
-    imageHeight: 720,
-  }),
-};
+  },
+);
 
 export default function CursorRulesForIndieHackersPage() {
   const jsonLd = {

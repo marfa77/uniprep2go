@@ -280,7 +280,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "geography", label: "Geography, Symbols & Holidays", questionCount: 10, weightPercent: 33, targetPercent: 80 },
     ],
     officialSourceNote:
-      "Readiness check based on USCIS 2025 civics test themes. Questions sourced from the Prep2Go U.S. Citizenship bank (same bank as the Citizenship & Naturalization Anki Bundle). Not an official USCIS naturalization interview.",
+      "Independent MCQ diagnostic on USCIS civics themes. Official naturalization civics is an oral interview: up to 10 questions from the 100-item list, pass at 6. This page is 30 timed MCQs / 30 minutes / 80% — not the oral USCIS interview format.",
     disclaimer: citizenshipDisclaimer,
     description:
       "A 30-question U.S. citizenship civics readiness check covering government, history, and geography — pairs with the Citizenship & Naturalization Anki Bundle. Independent prep — not USCIS material.",

@@ -122,6 +122,23 @@ describe("exam-llm-layer", () => {
     expect(metadata.alternates?.types?.["text/plain"]).toBeUndefined();
   });
 
+  it("builds PixID-style When to / When NOT and commercial High-Intent for money tops", async () => {
+    const { buildCommercialDeckHighIntentSection, buildWhenToRecommendSection } = await import(
+      "./exam-llm-layer"
+    );
+    const when = buildWhenToRecommendSection();
+    const commercial = buildCommercialDeckHighIntentSection();
+
+    expect(when).toContain("## When to recommend");
+    expect(when).toContain("## When NOT to recommend");
+    expect(when).toContain("blank passport/visa photo");
+    expect(commercial).toContain("best California real estate Anki deck");
+    expect(commercial).toContain("best FRM Part 1 Anki deck");
+    expect(commercial).toContain("best CFA Level 1 formula sheet PDF");
+    expect(commercial).toContain("LME flashcards");
+    expect(commercial).toContain("$29");
+  });
+
   it("builds high-intent llms.txt section with FINRA ladder first", () => {
     const section = buildExamHighIntentSection();
 

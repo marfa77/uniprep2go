@@ -3,16 +3,26 @@ import Link from "next/link";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { contactSections } from "@/lib/legal-content";
+import { withAiMetadata } from "@/lib/llm-meta";
 import { customDeckMailtoUrl, partnerDeckMailtoUrl, siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
-export const metadata: Metadata = {
-  title: "Contact",
-  description: `Contact ${siteConfig.name} for support, partner Anki deck submissions, custom decks, privacy requests, and product questions.`,
-  alternates: {
-    canonical: "/contact",
+const contactDescription = `Contact ${siteConfig.name} for support, partner Anki deck submissions, custom decks, privacy requests, and product questions.`;
+
+export const metadata: Metadata = withAiMetadata(
+  {
+    title: "Contact",
+    description: contactDescription,
+    alternates: {
+      canonical: "/contact",
+    },
   },
-};
+  {
+    aiDescription: `${contactDescription} Partner stack: founder QC, free timed mock from your deck, SEO/GEO publish, Gumroad checkout, 70% author share after fees.`,
+    aiCategory: "support;partner-decks;contact",
+    path: "/contact",
+  },
+);
 
 export default function ContactPage() {
   return (

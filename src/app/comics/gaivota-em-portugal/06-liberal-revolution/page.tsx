@@ -5,6 +5,7 @@ import { GaivotaEpisodeSeoSections } from "@/components/comics/gaivota-episode-s
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { gaivotaEpisodes, gaivotaSeries } from "@/lib/gaivota-comics";
+import { withAiMetadata } from "@/lib/llm-meta";
 import { siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
@@ -15,7 +16,8 @@ const checkout = ep.gumroadCheckoutUrl ?? gaivotaSeries.gumroadCheckoutUrl;
 const directAnswer =
   "Gaivota em Portugal Episode 6 — Liberal Revolution (Porto, 1820): a paid noir Portuguese history comic PDF ($5 on Gumroad). Includes a factual history brief, a complete 5-page story, and a 100-word PT→EN glossary. Episode 1 (1755) is free on this site.";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withAiMetadata(
+  {
   title: "Liberal Revolution (1820) — Portuguese History Comic | Gaivota em Portugal",
   description: directAnswer,
   alternates: { canonical: `${siteConfig.url}${pagePath}` },
@@ -29,7 +31,13 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+  },
+  {
+    aiDescription: directAnswer,
+    aiCategory: "comics;portuguese-history;gaivota",
+    path: pagePath,
+  },
+);
 
 export default function Ep06LiberalRevolutionPage() {
   return (

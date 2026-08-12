@@ -5,6 +5,7 @@ import { GaivotaEpisodeSeoSections } from "@/components/comics/gaivota-episode-s
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { gaivotaEpisodes, gaivotaSeries } from "@/lib/gaivota-comics";
+import { withAiMetadata } from "@/lib/llm-meta";
 import { siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
@@ -14,7 +15,8 @@ const checkout = ep.gumroadCheckoutUrl ?? gaivotaSeries.gumroadCheckoutUrl;
 const directAnswer =
   "Gaivota em Portugal Episode 10 — EU Accession (1986): a paid noir Portuguese history comic PDF ($5 on Gumroad). Portugal joins the European Communities — history brief + 5-page story + 100-word PT→EN glossary. Episode 1 is free on this site.";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withAiMetadata(
+  {
   title: "EU Accession (1986) — Portuguese History Comic | Gaivota em Portugal",
   description: directAnswer,
   alternates: { canonical: `${siteConfig.url}${pagePath}` },
@@ -24,7 +26,13 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}${pagePath}`,
     images: [{ url: `${siteConfig.url}/comics/gaivota-em-portugal/10-eu-accession/ep10-cover.webp` }],
   },
-};
+  },
+  {
+    aiDescription: directAnswer,
+    aiCategory: "comics;portuguese-history;gaivota",
+    path: pagePath,
+  },
+);
 
 export default function Ep10Page() {
   return (

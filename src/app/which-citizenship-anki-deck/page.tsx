@@ -1,23 +1,21 @@
 import type { Metadata } from "next";
 import { IntentPageView } from "@/components/intent-page";
-import { getIntentPageBySlug } from "@/lib/intent-pages";
+import { buildIntentPageMetadata, getIntentPageBySlug } from "@/lib/intent-pages";
 import { notFound } from "next/navigation";
 
+const SLUG = "which-citizenship-anki-deck";
+
 export async function generateMetadata(): Promise<Metadata> {
-  const page = getIntentPageBySlug("which-citizenship-anki-deck");
+  const page = getIntentPageBySlug(SLUG);
   if (!page) {
     return { title: "Not found" };
   }
 
-  return {
-    title: page.title,
-    description: page.description,
-    alternates: { canonical: "/which-citizenship-anki-deck" },
-  };
+  return buildIntentPageMetadata(page);
 }
 
 export default async function WhichCitizenshipAnkiDeckPage() {
-  const page = getIntentPageBySlug("which-citizenship-anki-deck");
+  const page = getIntentPageBySlug(SLUG);
   if (!page) {
     notFound();
   }

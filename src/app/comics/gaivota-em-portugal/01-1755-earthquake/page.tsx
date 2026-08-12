@@ -5,6 +5,7 @@ import { GaivotaEpisodeSeoSections } from "@/components/comics/gaivota-episode-s
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { gaivotaSeries } from "@/lib/gaivota-comics";
+import { withAiMetadata } from "@/lib/llm-meta";
 import { siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
@@ -14,7 +15,8 @@ const pagePath = "/comics/gaivota-em-portugal/01-1755-earthquake";
 const directAnswer =
   "Free Gaivota em Portugal Episode 1: O Terramoto — the 1755 Lisbon Earthquake as a noir Portuguese comic. Includes a factual history brief, a complete 5-page story, and a 100-word PT→EN glossary. Read online at no cost.";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withAiMetadata(
+  {
   title: "O Terramoto (1755) — Free Portuguese History Comic | Gaivota em Portugal",
   description: directAnswer,
   alternates: { canonical: `${siteConfig.url}${pagePath}` },
@@ -28,7 +30,13 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+  },
+  {
+    aiDescription: directAnswer,
+    aiCategory: "comics;portuguese-history;gaivota",
+    path: pagePath,
+  },
+);
 
 export default function Ep01TerramotoPage() {
   return (

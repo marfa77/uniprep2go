@@ -2008,7 +2008,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this the Polish Citizenship civics Anki deck?",
         answer:
-          "No. This is Polish language vocabulary for Certyfikat / residence language. Polish citizenship civics (wiedza o Polsce) is a separate planned listing — take the free Polish Citizenship readiness check and join that waitlist for civics cards.",
+          "No. This is Polish language vocabulary for Certyfikat / residence language. Poland has no official citizenship civics MCQ today; the planned Polish Citizenship listing + free readiness check cover proposed wiedza o Polsce themes for future-proofing.",
       },
       {
         question: "What does the deck include?",
@@ -2080,7 +2080,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this the Polish Citizenship civics Anki deck?",
         answer:
-          "No. This is Polish language vocabulary for Certyfikat / residence language. For Polish citizenship civics (wiedza o Polsce), take the free Polish Citizenship readiness check and join that waitlist.",
+          "No. This is Polish language vocabulary for Certyfikat / residence language. For proposed Polish civics themes (no official citizenship knowledge exam yet), take the free readiness check and join the Polish Citizenship Anki waitlist.",
       },
       {
         question: "What does the deck include?",
@@ -2871,18 +2871,20 @@ const rawDecks: Deck[] = [
     status: "planned",
     title: "Czech Citizenship Anki Deck — Reálie Flashcards",
     shortName: "Czech Citizenship",
-    subtitle: "Planned Anki deck for Czech citizenship / permanent residence civics (not currently for sale).",
+    subtitle:
+      "Planned Anki deck for Czech citizenship reálie / zkouška z českých reálií themes (not currently for sale).",
     directAnswer:
-      "The Czech Citizenship Anki Deck is a planned UniPrep2Go product. It is not yet available for purchase. Take the free Czech Citizenship readiness check to benchmark weak topics, then request waitlist notification on this page.",
-    lastUpdated: "2026-07-26",
-    audience: "Applicants preparing Czech citizenship or permanent residence civics knowledge.",
+      "The Czech Citizenship Anki Deck is a planned UniPrep2Go product for citizenship realities (reálie) flashcards. It is not yet for sale. Take the free 60-question readiness check (diagnostic format — official exam is 30Q/30min/60%), then join the waitlist. Permanent residence usually needs language evidence, not this civics deck.",
+    lastUpdated: "2026-08-12",
+    audience:
+      "Citizenship applicants preparing zkouška z českých reálií (alongside B1 Czech) — not the A2 permanent-residence language path alone.",
     format: ".apkg",
     coverImage: "/covers/czech-citizenship-anki-deck.webp",
     facts: {
       cards: "Planned",
       topics: "State & rights; history, geography & EU; society & daily life; education, health & extras",
       formulas: "Planned high-yield recall cards from the readiness-check bank",
-      examYear: "Current Czech naturalisation cycles",
+      examYear: "Current Czech citizenship reálie cycles (NPI pool)",
       delivery: "Not currently for sale — waitlist notify",
     },
     topicCoverage: [
@@ -2898,14 +2900,19 @@ const rawDecks: Deck[] = [
         answer: "No. Use Notify me when Anki launches on this page.",
       },
       {
+        question: "Is the free readiness check the same format as the official reálie exam?",
+        answer:
+          "No. UniPrep2Go’s check is a 60-question / 45-minute / 70% diagnostic. The official zkouška z reálií is 30 questions / 30 minutes / 60% from the NPI pool — drill both.",
+      },
+      {
         question: "Is there a free Czech citizenship practice test?",
         answer:
-          "Yes. Take the free 60-question Czech Citizenship readiness check at /mock-exams/czech-citizenship-readiness-check.",
+          "Yes — /mock-exams/czech-citizenship-readiness-check. Also use the official NPI model test for exam-day format.",
       },
       {
         question: "Is this official Czech government material?",
         answer:
-          "No. Independent UniPrep2Go study aid — not affiliated with the Czech Interior Ministry.",
+          "No. Independent UniPrep2Go study aid — not affiliated with MV ČR or NPI.",
       },
     ],
   },
@@ -2915,18 +2922,20 @@ const rawDecks: Deck[] = [
     status: "planned",
     title: "Polish Citizenship Anki Deck — Knowledge of Poland Flashcards",
     shortName: "Polish Citizenship",
-    subtitle: "Planned Anki deck for Polish naturalisation civics (not currently for sale).",
+    subtitle:
+      "Planned Anki deck for proposed Polish civics / wiedza o Polsce themes (no official citizenship knowledge exam yet; not currently for sale).",
     directAnswer:
-      "The Polish Citizenship Anki Deck is a planned UniPrep2Go product. It is not yet available for purchase. Take the free Polish Citizenship readiness check to benchmark weak topics, then request waitlist notification on this page.",
-    lastUpdated: "2026-07-26",
-    audience: "Applicants preparing Polish citizenship / naturalisation civics knowledge.",
+      "The Polish Citizenship Anki Deck is a planned UniPrep2Go product for proposed knowledge-of-Poland civics themes. Poland does not require an official citizenship MCQ today — the live exam hurdle is usually PaF B1. The deck is not yet for sale. Take the free Polish Citizenship readiness check, then join the waitlist on this page.",
+    lastUpdated: "2026-08-12",
+    audience:
+      "Applicants who want civic literacy for a possible future test obywatelski, while preparing PaF B1 under current rules.",
     format: ".apkg",
     coverImage: "/covers/polish-citizenship-anki-deck.webp",
     facts: {
       cards: "Planned",
       topics: "State & rights; history, geography & EU; society & daily life; education, health & extras",
       formulas: "Planned high-yield recall cards from the readiness-check bank",
-      examYear: "Current Polish naturalisation cycles",
+      examYear: "Proposed civics path — no official bank in force yet",
       delivery: "Not currently for sale — waitlist notify",
     },
     topicCoverage: [
@@ -2942,13 +2951,18 @@ const rawDecks: Deck[] = [
         answer: "No. Use Notify me when Anki launches on this page.",
       },
       {
+        question: "Does Poland have an official citizenship civics exam?",
+        answer:
+          "Not today. Naturalisation usually needs PaF B1 language, not a wiedza o Polsce MCQ. A test obywatelski has been discussed as a proposal — confirm current MSWiA rules before you plan around it.",
+      },
+      {
         question: "Is there a free Polish citizenship practice test?",
         answer:
-          "Yes. Take the free 60-question Polish Citizenship readiness check at /mock-exams/polish-citizenship-readiness-check.",
+          "Yes — an independent 60-question readiness check on proposed civics themes at /mock-exams/polish-citizenship-readiness-check. It is not an official government exam.",
       },
       {
         question: "Is this official Polish government material?",
-        answer: "No. Independent UniPrep2Go study aid — not affiliated with Polish government bodies.",
+        answer: "No. Independent UniPrep2Go study aid — not affiliated with MSWiA, UDSC, or NAWA.",
       },
     ],
   },

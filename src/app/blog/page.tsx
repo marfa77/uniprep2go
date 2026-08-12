@@ -4,28 +4,39 @@ import Link from "next/link";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { getAllBlogPosts } from "@/lib/blog";
+import { withAiMetadata } from "@/lib/llm-meta";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Exam Prep Guides — Citizenship, EPA 608, ServSafe, FINRA",
-  description:
-    "Practical UniPrep2Go study guides for EU citizenship exams, EPA 608, ServSafe, FINRA SIE, and more — with free timed mocks and Anki decks.",
-  alternates: {
-    canonical: "/blog",
+const blogDescription =
+  "Practical UniPrep2Go study guides for EU citizenship exams, EPA 608, ServSafe, FINRA SIE, and more — with free timed mocks and Anki decks.";
+
+export const metadata: Metadata = withAiMetadata(
+  {
+    title: "Exam Prep Guides — Citizenship, EPA 608, ServSafe, FINRA",
+    description: blogDescription,
+    alternates: {
+      canonical: "/blog",
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true, "max-image-preview": "large" },
+    },
+    openGraph: {
+      title: "Exam Prep Guides — UniPrep2Go Blog",
+      description:
+        "Practical study guides for citizenship and US licensing exams — paired with free timed practice tests.",
+      url: "/blog",
+      type: "website",
+    },
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true, "max-image-preview": "large" },
+  {
+    aiDescription: blogDescription,
+    aiCategory: "exam-prep;blog;study-guides",
+    path: "/blog",
+    linkLlmsCatalog: true,
   },
-  openGraph: {
-    title: "Exam Prep Guides — UniPrep2Go Blog",
-    description:
-      "Practical study guides for citizenship and US licensing exams — paired with free timed practice tests.",
-    url: "/blog",
-    type: "website",
-  },
-};
+);
 
 export default function BlogIndexPage() {
   const posts = getAllBlogPosts();

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { withAiMetadata } from "@/lib/llm-meta";
 import { siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
@@ -89,19 +90,26 @@ const faqs = [
   },
 ] as const;
 
-export const metadata: Metadata = {
-  title: "Anki Starter Kit for Adults | Use Your Prep2Go Deck in 15 Minutes",
-  description: directAnswer,
-  alternates: {
-    canonical: "/anki-starter-kit",
-  },
-  openGraph: {
-    title: "Anki Starter Kit for Adults",
+export const metadata: Metadata = withAiMetadata(
+  {
+    title: "Anki Starter Kit for Adults | Use Your Prep2Go Deck in 15 Minutes",
     description: directAnswer,
-    url: "/anki-starter-kit",
-    type: "article",
+    alternates: {
+      canonical: "/anki-starter-kit",
+    },
+    openGraph: {
+      title: "Anki Starter Kit for Adults",
+      description: directAnswer,
+      url: "/anki-starter-kit",
+      type: "article",
+    },
   },
-};
+  {
+    aiDescription: directAnswer,
+    aiCategory: "anki;how-to;starter-kit",
+    path: "/anki-starter-kit",
+  },
+);
 
 const jsonLd = {
   "@context": "https://schema.org",

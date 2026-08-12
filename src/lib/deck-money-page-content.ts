@@ -74,21 +74,23 @@ export const positioningOverrides: Partial<
   },
   "cfa-level-1-formula-reference-2026": {
     ourEdge: [
-      "250 formulas + 98 definitions across all 10 Level 1 topics in the table below",
+      "250 formulas + 98 definitions — not a free one-page cheat sheet",
       "80-question formula recall drill with explained answer key",
       "Print-ready US Letter PDF — companion, not curriculum replacement",
-      "Same validated item bank as the 342+ card CFA Level 1 Anki deck",
+      "Same validated item bank as the 342+ card CFA Level 1 Anki deck + free 60Q mock",
     ],
     summaryProse:
-      "Level 1 rewards retrieval speed — you cannot apply a formula you cannot name in three seconds. This reference is the printable recall layer; pair it with Anki for daily reps and the free mock for topic gaps.",
+      "Free one-pagers look helpful until the exam clock starts. This $19 reference forces typed formula recall across all 10 topics, then hands you an 80-question drill and the free 60-question mock for gap scoring.",
   },
   "frm-part-1-anki-deck": {
     ourEdge: [
-      "444 cards across FRM Part 1 foundations, quant, markets, and valuation models",
+      "Ownable 444-card .apkg — not a monthly AnalystPrep / Bionic Turtle subscription",
       "VaR, ES, Greeks, credit risk, and governance prompts from the coverage table",
-      "Free 50-question FRM Part 1 timed practice test",
-      "Current-cycle scope only — no legacy Part 1 material mixed in",
+      "Free 50-question FRM Part 1 timed practice test with topic scoring",
+      "Current-cycle Part 1 only — drill weak pillars after the mock, not random volume",
     ],
+    summaryProse:
+      "Q-bank subscriptions win on question volume. UniPrep wins when you want an ownable Anki file plus one free timed diagnostic — $29 once, then daily spaced repetition on VaR/ES/Greeks gaps the mock surfaces.",
   },
   "sie-exam-anki-deck": {
     ourEdge: [
@@ -146,23 +148,23 @@ export const positioningOverrides: Partial<
   },
   "california-real-estate-exam-anki-deck": {
     ourEdge: [
-      "400 cards across California DRE salesperson topic areas",
-      "Agency, disclosures, financing, and property law prompts",
-      "Free California real estate practice test with scoring",
-      "State-specific content — not a generic national deck relabeled",
+      "400 California DRE-only cards — not Quizlet/Aceable national packs",
+      "Agency, disclosure timelines, financing math, and CA property law",
+      "Free 60-question California real estate practice test with scoring",
+      "State-specific traps DRE actually writes — not relabeled US trivia",
     ],
     summaryProse:
-      "California DRE fails candidates on agency relationships and disclosure timing — not generic real estate trivia. Four hundred state-specific cards plus a free 60-question CA mock beat a national Anki pack with California stickers.",
+      "California DRE fails candidates on agency relationships and disclosure timing — not generic real estate trivia. Four hundred CA-only cards plus a free 60-question mock beat a national Quizlet pack with a California sticker before you buy a full Aceable-style course.",
   },
   "bench-energy-metal-trader-anki-deck": {
     ourEdge: [
-      "202 cards scoped to metals desks — LME, carry, base & precious",
-      "Contango/backwardation and cash/3M vocabulary, not CFA dumps",
+      "202 LME/metals desk cards — not a 2,000-card CFA dump",
+      "Cash/3M carry, contango/backwardation, base & precious benchmarks",
       "Built for desk onboarding and interview recall",
-      "Instant .apkg download — study on Anki desktop or mobile",
+      "Bundle path: Commodity Trader Pack (metals + oil + coal = 634 cards)",
     ],
     summaryProse:
-      "Metals desks speak LME and curve language. Two hundred two focused lexicon cards beat a 2,000-card general finance pack when you need cash/3M and contango definitions under interview pressure.",
+      "Metals desks speak LME and curve language. Two hundred two focused lexicon cards beat a mega finance Anki dump when you need cash/3M and contango under interview pressure — expand to oil/coal via the Commodity Trader Pack.",
   },
   "life-and-health-insurance-exam-anki-deck": {
     ourEdge: [

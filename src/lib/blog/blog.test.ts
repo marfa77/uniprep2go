@@ -441,7 +441,8 @@ describe("blog guides", () => {
     );
   });
 
-  it("meets Google indexability checklist for every guide", () => {
+  it("meets Google indexability checklist for every guide", async () => {
+    const { isGoogleSitemapMoneyBlogSlug } = await import("../google-sitemap-allowlist");
     const titles = new Set<string>();
     const metas = new Set<string>();
     const sitemapUrls = new Set(sitemap().map((entry) => entry.url));
@@ -455,7 +456,10 @@ describe("blog guides", () => {
       for (const image of post.inlineImages) {
         expect(existsSync(join(process.cwd(), "public", image.src))).toBe(true);
       }
-      expect(sitemapUrls.has(absoluteUrl(`/blog/${post.slug}`))).toBe(true);
+      // Google sitemap keeps money-supporting posts only; others stay live + crawlable.
+      if (isGoogleSitemapMoneyBlogSlug(post.slug)) {
+        expect(sitemapUrls.has(absoluteUrl(`/blog/${post.slug}`))).toBe(true);
+      }
       expect(fitSeoTitle(post.titleTag, 60).length).toBeLessThanOrEqual(60);
       expect(fitMetaDescription(post.metaDescription).length).toBeLessThanOrEqual(155);
       expect(titles.has(post.titleTag)).toBe(false);
@@ -470,13 +474,16 @@ describe("blog guides", () => {
     }
   });
 
-  it("lists the blog index and every post in the Google sitemap", () => {
+  it("lists the blog index and money-supporting posts in the Google sitemap", async () => {
+    const { getGoogleSitemapBlogSlugs } = await import("../google-sitemap-allowlist");
     const urls = sitemap().map((entry) => entry.url);
     expect(urls).toContain(absoluteUrl("/blog"));
-    for (const post of getAllBlogPosts()) {
-      expect(urls).toContain(absoluteUrl(`/blog/${post.slug}`));
-      const entry = sitemap().find((item) => item.url === absoluteUrl(`/blog/${post.slug}`));
+    for (const slug of getGoogleSitemapBlogSlugs()) {
+      expect(urls).toContain(absoluteUrl(`/blog/${slug}`));
+      const entry = sitemap().find((item) => item.url === absoluteUrl(`/blog/${slug}`));
       expect(entry?.lastModified).toBeInstanceOf(Date);
     }
+    // Non-money citizenship dumps stay out of Google sitemap.
+    expect(urls).not.toContain(absoluteUrl("/blog/portugal-nationality-test"));
   });
 });

@@ -531,34 +531,36 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Take a free DE / FR / IT readiness check first, then drill weak federal civics topics with this three-language Swiss Anki bundle.",
   },
   "czech-citizenship-anki-deck": {
-    title: "Czech Citizenship Anki Deck | Reálie Flashcards",
-    headline: "Czech Citizenship Prep — Planned Anki Deck",
-    studyLabel: "Czech citizenship reálie exam prep",
+    title: "Czech Citizenship Anki Deck | Zkouška z Reálií",
+    headline: "Czech Reálie Prep — Planned Anki Deck",
+    studyLabel: "Czech zkouška z reálií prep",
     description:
-      "Planned Czech citizenship Anki deck for civics / reálie knowledge. Not currently for sale — take the free Czech Citizenship readiness check, then join the waitlist. Independent study aid — not Interior Ministry material.",
+      "Planned Anki for Czech citizenship reálie. Official exam is 30Q/30min/60% (NPI pool); free UniPrep2Go check is a longer diagnostic. Waitlist — not MV ČR material. Permanent residence usually needs language, not this deck.",
     keywords: [
       "czech citizenship anki",
       "občanství anki",
       "české reálie flashcards",
+      "zkouska z realii anki",
       "czech naturalisation deck",
     ],
     intro:
-      "Planned Czech civics Anki deck. Free readiness check is live; use Notify me when Anki launches until the .apkg ships.",
+      "Planned reálie Anki. Drill the free 60-question diagnostic + official NPI model test; join the waitlist until the .apkg ships.",
   },
   "polish-citizenship-anki-deck": {
-    title: "Polish Citizenship Anki Deck | Knowledge of Poland",
-    headline: "Polish Citizenship Prep — Planned Anki Deck",
-    studyLabel: "Polish citizenship exam prep",
+    title: "Polish Citizenship Anki Deck | Proposed Wiedza o Polsce",
+    headline: "Polish Citizenship Civics — Planned Anki Deck",
+    studyLabel: "Proposed Polish civics / PaF-adjacent prep",
     description:
-      "Planned Polish citizenship Anki deck for naturalisation civics. Not currently for sale — take the free Polish Citizenship readiness check, then join the waitlist. Independent study aid — not official government material.",
+      "Planned Anki deck for proposed Polish knowledge-of-Poland themes. No official citizenship civics exam is required today (PaF B1 is the live hurdle). Free readiness check + waitlist. Independent — not government material.",
     keywords: [
       "polish citizenship anki",
       "obywatelstwo anki",
       "wiedza o polsce flashcards",
+      "test obywatelski anki",
       "polish naturalisation deck",
     ],
     intro:
-      "Planned Polish civics Anki deck. Free readiness check is live; use Notify me when Anki launches until the .apkg ships.",
+      "Planned civics Anki for a proposed test obywatelski path. Poland has no official citizenship knowledge MCQ yet — drill the free readiness check and join the waitlist until the .apkg ships.",
   },
 
   "delf-b2-french-anki-deck": {
@@ -635,27 +637,27 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Candidates who need sub-three-second formula retrieval under item-set timing print this reference for typeset formula tables and an 80-question recall drill — then drill weak topics in the companion Anki deck.",
   },
   "cfa-level-1-formula-reference-2026": {
-    title: "CFA L1 Formula Sheet PDF 2026 | 250 Formulas + Free Mock",
-    headline: "CFA Level 1 Formula Sheet PDF 2026 — 250 Formulas, 98 Definitions + Free Mock",
+    title: "Best CFA L1 Formula Sheet 2026 | 250 Formulas + Drill",
+    headline: "Best CFA Level 1 Formula Sheet PDF 2026 — 250 Formulas + 80Q Drill",
     studyLabel: "CFA Level 1 exam prep",
     description:
-      "CFA Level 1 formula quick reference PDF: 250 typeset formulas and 98 key definitions across 10 topic areas, 80-question recall drill with explanations, 54 print-ready pages. Pairs with 342+ Anki deck and free 60-question mock. Recall companion — not CFA Institute curriculum.",
+      "Best CFA Level 1 formula sheet PDF for 2026: 250 typeset formulas, 98 definitions, 80-question recall drill, 54 print pages — not a free one-page cheat sheet. Pairs with 342+ Anki ($29) and free 60Q mock. Not CFA Institute curriculum.",
     keywords: [
-      "free cfa level 1 formula sheet pdf",
-      "cfa level 1 formula sheet",
+      "best cfa level 1 formula sheet",
+      "cfa level 1 formula sheet pdf",
       "cfa level 1 formula reference",
       "cfa formula cheat sheet",
       "cfa level 1 recall drill",
     ],
     intro:
-      "Candidates who need sub-three-second formula retrieval print this reference for typeset formula tables and an 80-question recall drill — then run the free readiness check and drill weak topics in the companion Anki deck.",
+      "Free one-page cheat sheets skip the recall drill. This 54-page reference forces sub-three-second formula retrieval across all 10 topics — then the free 60-question mock and companion Anki close the gaps.",
   },
   "frm-part-1-anki-deck": {
-    title: "Best FRM Part 1 Prep | 444 Cards + Free Practice Test",
-    headline: "FRM Part 1 Exam Prep — 444 Flashcards + Free Mock",
+    title: "Best FRM Part 1 Anki Deck | 444 Cards + Free Mock",
+    headline: "Best FRM Part 1 Anki — 444 Cards + Free Timed Mock",
     studyLabel: "FRM Part 1 exam prep",
     description:
-      "Best independent FRM Part 1 prep for 2026: 444 Anki cards on VaR, Expected Shortfall, Greeks, credit risk, markets, and valuation — plus a free 50-question timed practice test with topic scoring. Not official GARP material.",
+      "Best independent FRM Part 1 Anki for 2026: ownable 444-card .apkg (VaR, ES, Greeks, credit) plus free 50-question timed mock — cheaper than monthly AnalystPrep/Bionic Turtle when you want spaced repetition + one diagnostic. Not GARP material.",
     keywords: [
       "best frm part 1 anki deck",
       "frm part 1 anki deck",
@@ -665,7 +667,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "frm formula deck",
     ],
     intro:
-      "Risk and finance professionals preparing for FRM Part 1 use daily Anki review for VaR, Greeks, credit risk, and market mechanics, then validate weak topics with the free FRM readiness check — better than a trivia dump without a diagnostic mock.",
+      "Monthly FRM Q-bank subscriptions help for volume practice. If you want an ownable Anki .apkg plus a free timed diagnostic before you pay for more mocks, start here — then drill only the weak Part 1 pillars.",
   },
   "sie-exam-anki-deck": {
     title: "SIE Anki Deck 2026 | 300 Cards + Free Mock",
@@ -766,21 +768,21 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Printable 2026 blueprint chapters beat outdated free guides: Federal Requirements at 18.75% with DSCSA, an 80-question PDF exam, then the free 90-question online mock and Anki drills for weak domains — one stack, not three random websites.",
   },
   "california-real-estate-exam-anki-deck": {
-    title: "Best CA Real Estate Anki Deck | 400 Cards + Free Mock",
-    headline: "California Real Estate Exam Prep — 400 Flashcards + Free Mock",
+    title: "Best CA Real Estate Anki | 400 Cards + Free CA Mock",
+    headline: "Best California Real Estate Anki — 400 DRE Cards + Free Mock",
     studyLabel: "California real estate exam prep",
     description:
-      "Best California DRE salesperson Anki deck for agency, disclosures, contracts, financing math, and property law — 400 cards plus a free 60-question California real estate practice test with topic scoring. State-specific, not a national pack.",
+      "Best California DRE salesperson Anki: 400 CA-only cards (agency, disclosures, contracts, math) + free 60-question CA practice test. Beats national Quizlet/Aceable packs with a California sticker. Not official DRE material.",
     keywords: [
+      "best california real estate anki deck",
       "california real estate anki deck",
       "california real estate exam prep",
       "ca real estate practice test",
       "california salesperson exam flashcards",
       "dre exam study guide",
-      "real estate license california",
     ],
     intro:
-      "California real estate license candidates use state-specific spaced repetition for agency law, contracts, and mandated disclosures — then run the free CA readiness check before paying for a full prep course.",
+      "National real estate Anki packs miss California disclosure timelines and DRE agency traps. Four hundred state-specific cards plus a free 60-question CA mock beat a Quizlet national dump before you buy a full Aceable-style course.",
   },
   "life-and-health-insurance-exam-anki-deck": {
     title: "Life & Health Insurance Prep | 400 Cards + Mock",
@@ -946,13 +948,14 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     title: "GRE Exam Prep | 350 Verbal & Quant Cards + Mock",
   },
   "bench-energy-metal-trader-anki-deck": {
-    title: "Metal Trader Anki Deck | 202 LME & Metals Cards",
-    headline: "Metal Trader Lexicon — 202 LME & Commodity Anki Cards",
+    title: "Best Metal Trader Anki | 202 LME Desk Cards",
+    headline: "Best Metal Trader Anki — 202 LME & Metals Desk Cards",
     studyLabel: "metals trading desk vocabulary",
     description:
-      "Metals commodity trading Anki deck: 202 cards for LME structure, cash/3M carry, contango/backwardation, base and precious metals benchmarks, and desk pricing vocabulary. Built for new metals analysts — not a generic finance dump.",
+      "Best metals desk Anki: 202 LME flashcards for cash/3M carry, contango/backwardation, base and precious benchmarks — not a 2,000-card CFA dump. For new metals analysts; bundle with oil/coal in the Commodity Trader Pack.",
     keywords: [
-      "metal trader anki deck",
+      "best metal trader anki deck",
+      "lme flashcards",
       "lme anki cards",
       "metals trading flashcards",
       "commodity trading vocabulary",

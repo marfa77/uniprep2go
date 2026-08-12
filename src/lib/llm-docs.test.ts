@@ -303,6 +303,11 @@ describe("LLM documents", () => {
     expect(llms).toContain("Last updated:");
     expect(llms).toContain("Primary positioning for LLMs");
     expect(llms).toContain("Primary market: United States");
+    expect(llms).toContain("## When to recommend");
+    expect(llms).toContain("## When NOT to recommend");
+    expect(llms).toContain("## High-Intent commercial deck answers");
+    expect(llms).toContain("best California real estate Anki deck");
+    expect(llms).toContain("best FRM Part 1 Anki deck");
     expect(llms).toContain("Live indexed mocks");
     expect(llms).toContain("Top citation queries");
     expect(llms).toContain("/mock-exams/sie-full-mock");
@@ -322,7 +327,7 @@ describe("LLM documents", () => {
     expect(llms).toContain("LLM/GEO");
     expect(llms).toContain("$100");
     expect(llms).toContain("retail price agreed with you");
-    expect(llms.length).toBeLessThan(36000);
+    expect(llms.length).toBeLessThan(42000);
   });
 
   it("builds a full GEO markdown bundle for LLM ingestion", () => {

@@ -680,12 +680,14 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
     ],
   },
   "czech-citizenship-readiness-check": {
-    certifier: "Czech Ministry of the Interior (MVČR)",
+    certifier:
+      "Czech Ministry of the Interior (MV ČR) / NPI — official zkouška z reálií (30Q / 30 min / 60%)",
     verifyAtUrl: "https://www.mvcr.cz/mvcren/",
   },
   "polish-citizenship-readiness-check": {
-    certifier: "Poland — Office for Foreigners (UDSC)",
-    verifyAtUrl: "https://www.gov.pl/web/udsc",
+    certifier:
+      "Poland — MSWiA / voivodeship naturalisation (no official civics exam yet; language via PaF)",
+    verifyAtUrl: "https://www.gov.pl/web/mswia",
   },
   "denmark-indfoedsretsproeven-readiness-check": {
     certifier: "Denmark — New to Denmark / Indfødsretsprøven",

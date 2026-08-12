@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { IntentPageView } from "@/components/intent-page";
-import { getIntentPageBySlug } from "@/lib/intent-pages";
+import { buildIntentPageMetadata, getIntentPageBySlug } from "@/lib/intent-pages";
 import { notFound } from "next/navigation";
 
 const SLUG = "sell-anki-deck";
@@ -11,11 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
     return { title: "Not found" };
   }
 
-  return {
-    title: page.title,
-    description: page.description,
-    alternates: { canonical: `/${SLUG}` },
-  };
+  return buildIntentPageMetadata(page);
 }
 
 export default async function SellAnkiDeckPage() {

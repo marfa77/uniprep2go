@@ -5,18 +5,26 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import { primaryDeck } from "@/lib/decks";
+import { withAiMetadata } from "@/lib/llm-meta";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
 const directAnswer =
   "The CFA Level 1 Anki deck and the official CFA curriculum serve different roles. The deck is a 342+ card spaced-repetition tool for fast recall of formulas, definitions, and concepts. The official curriculum is the authoritative source for full learning and exam-standard practice. Use the deck alongside the curriculum, not as a replacement for it.";
 
-export const metadata: Metadata = {
-  title: "CFA Level 1 Anki deck vs the official curriculum",
-  description: directAnswer,
-  alternates: {
-    canonical: "/cfa-level-1-anki-deck-vs-curriculum",
+export const metadata: Metadata = withAiMetadata(
+  {
+    title: "CFA Level 1 Anki deck vs the official curriculum",
+    description: directAnswer,
+    alternates: {
+      canonical: "/cfa-level-1-anki-deck-vs-curriculum",
+    },
   },
-};
+  {
+    aiDescription: directAnswer,
+    aiCategory: "exam-prep;cfa-level-1;comparison",
+    path: "/cfa-level-1-anki-deck-vs-curriculum",
+  },
+);
 
 export default async function ComparisonPage() {
   const deck = await getPricedDeckBySlug(primaryDeck.slug);
