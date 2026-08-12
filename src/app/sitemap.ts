@@ -29,7 +29,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: (path === "/blog" || path === "/mock-exams" || path === "/decks"
       ? "weekly"
       : "monthly") as "weekly" | "monthly",
-    priority: path === "/" ? 1 : path === "/mock-exams" ? 0.95 : path === "/decks" ? 0.94 : 0.93,
+    priority:
+      path === "/"
+        ? 1
+        : path === "/mock-exams"
+          ? 0.95
+          : path === "/decks"
+            ? 0.94
+            : path === "/language-certification-decks"
+              ? 0.96
+              : 0.93,
   }));
 
   const supportPages = GOOGLE_SITEMAP_SUPPORT_PATHS.map(({ path, priority }) => ({
@@ -43,7 +52,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${siteUrl}/${slug}`,
     lastModified,
     changeFrequency: "monthly" as const,
-    priority: 0.85,
+    priority:
+      slug === "which-citizenship-anki-deck" || slug === "language-exam-vs-citizenship-civics-anki"
+        ? 0.94
+        : 0.85,
   }));
 
   const blogPosts = getAllBlogPosts()
@@ -61,7 +73,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: (path === "/comics/gaivota-em-portugal" ? "weekly" : "monthly") as
       | "weekly"
       | "monthly",
-    priority: path.endsWith("/03-aljubarrota")
+    priority: /\/(03-aljubarrota|04-ceuta|05-vasco-da-gama|06-liberal-revolution|07-republic|08-estado-novo|09-treaty-of-windsor|10-eu-accession)$/.test(
+      path,
+    )
       ? 0.88
       : path.endsWith("/01-1755-earthquake")
         ? 0.86

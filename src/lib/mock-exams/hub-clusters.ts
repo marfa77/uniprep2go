@@ -11,8 +11,18 @@ import type { MockExamConfig, MockVerticalId } from "./types";
 export const featuredMockHubSlugs = [
   "sie-full-mock",
   "series-65-readiness-check",
+  "series-6-readiness-check",
+  "series-66-readiness-check",
+  "series-79-readiness-check",
+  "cfp-certification-readiness-check",
+  "enrolled-agent-readiness-check",
+  "gmat-focus-readiness-check",
+  "gre-readiness-check",
+  "sat-readiness-check",
   "us-citizenship-readiness-check",
   "pmp-readiness-check",
+  "nclex-rn-readiness-check",
+  "shrm-cp-readiness-check",
   "sie-quick-diagnostic",
   "series-7-readiness-check",
   "series-63-readiness-check",
@@ -22,6 +32,10 @@ export const featuredMockHubSlugs = [
   "cfa-level-1-readiness-check",
   "life-in-the-uk-readiness-check",
   "leben-in-deutschland-readiness-check",
+  "naturalisation-francaise-readiness-check",
+  "portugal-nacionalidade-readiness-check",
+  "ccse-espana-readiness-check",
+  "canadian-citizenship-readiness-check",
 ] as const;
 
 /**
@@ -34,6 +48,14 @@ export const nicheGooglePrioritySlugs = [
   "series-7-readiness-check",
   "series-63-readiness-check",
   "series-65-readiness-check",
+  "series-6-readiness-check",
+  "series-66-readiness-check",
+  "series-79-readiness-check",
+  "cfp-certification-readiness-check",
+  "enrolled-agent-readiness-check",
+  "gmat-focus-readiness-check",
+  "gre-readiness-check",
+  "sat-readiness-check",
   "california-real-estate-readiness-check",
   "cfa-level-1-readiness-check",
   "frm-part-1-readiness-check",
@@ -41,9 +63,15 @@ export const nicheGooglePrioritySlugs = [
   "nha-excpt-readiness-check",
   "mrics-quantity-surveying-readiness-check",
   "pmp-readiness-check",
+  "nclex-rn-readiness-check",
+  "shrm-cp-readiness-check",
   "us-citizenship-readiness-check",
   "life-in-the-uk-readiness-check",
   "leben-in-deutschland-readiness-check",
+  "naturalisation-francaise-readiness-check",
+  "portugal-nacionalidade-readiness-check",
+  "ccse-espana-readiness-check",
+  "canadian-citizenship-readiness-check",
 ] as const;
 
 /** Parked / lower-WTP exams kept live/GEO but deprioritized in Google sitemap. */
@@ -61,8 +89,6 @@ export const googleHeadExamSlugs = [
   "fl-real-estate-readiness-check",
   "tx-real-estate-readiness-check",
   "servsafe-manager-mock",
-  "gmat-focus-readiness-check",
-  "gre-readiness-check",
 ] as const;
 
 const nicheGooglePrioritySlugSet = new Set<string>(nicheGooglePrioritySlugs);
