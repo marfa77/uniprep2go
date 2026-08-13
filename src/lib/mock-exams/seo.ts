@@ -100,19 +100,21 @@ function defaultProfile(config: MockExamConfig): MockSeoProfile {
 
 const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "sie-full-mock": {
-    title: "Free FINRA SIE Practice Test 2026 | 75-Question Mock Exam Online",
+    // CTR pattern: Prep2Go (exam + concrete need + year) + PixID (specific offer in blue link)
+    title: "SIE Practice Test Free 2026 | 75Q Timed, No Signup",
     description:
-      "Free, no-signup FINRA-topic-weighted 75-question SIE mock with instant pass/no-pass report — updated for 2026. Timed 105 minutes, 70% pass target, full answer review. Independent SIE mock — not official FINRA material.",
+      "Free SIE practice test online — no signup: 75 timed questions, 105 minutes, 70% pass target, instant pass/no-pass report and full answer review. FINRA-topic-weighted. Independent mock — not official FINRA material.",
     keywords: [
       "free sie practice test",
+      "sie practice test",
       "sie mock exam",
       "finra sie practice exam",
       "sie exam questions",
       "sie readiness check",
     ],
-    headline: "Free FINRA SIE Practice Test",
+    headline: "Free SIE Practice Test — 75 Questions, Timed",
     intro:
-      "A full-length FINRA SIE mock exam modeled on the official outline: 75 scored questions, 105 minutes, and a 70% pass threshold with weighted topic diagnosis across capital markets, products and risks, trading and accounts, and regulatory framework.",
+      "A full-length FINRA SIE mock exam modeled on the official outline: 75 scored questions, 105 minutes, and a 70% pass threshold with weighted topic diagnosis across capital markets, products and risks, trading and accounts, and regulatory framework. No signup — start when you are ready.",
     audience:
       "SIE candidates, finance students, and career changers entering brokerage and securities roles who need a timed baseline before paying for a prep course.",
     practiceTestLabel: "FINRA SIE practice test",
@@ -190,18 +192,19 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "CFA Level 1 practice test",
   },
   "series-7-readiness-check": {
-    title: "Free Series 7 Practice Test | 60-Question FINRA Readiness Check",
+    title: "Series 7 Practice Test 2026 | Free 60Q Timed Online",
     description:
-      "Free Series 7 practice questions online: 60 timed questions across FINRA job-function weights, 90 minutes, 72% target, topic scoring, and answer review. Independent Series 7 prep — not official FINRA material.",
+      "Free Series 7 practice test — no signup: 60 timed questions across FINRA job-function weights, 90 minutes, 72% target, topic scoring, and full answer review. Independent Series 7 prep — not official FINRA material.",
     keywords: [
       "series 7 practice test",
+      "free series 7 practice test",
       "series 7 mock exam",
       "free series 7 questions",
       "finra series 7 readiness check",
     ],
-    headline: "Free Series 7 Readiness Check",
+    headline: "Free Series 7 Practice Test — 60 Questions",
     intro:
-      "A Series 7 readiness check built from UniPrep2Go deck content across seeking business, opening accounts, recommendations and suitability, and obtaining customer instructions.",
+      "A Series 7 practice test built from UniPrep2Go deck content across seeking business, opening accounts, recommendations and suitability, and obtaining customer instructions. Timed diagnostic with topic scoring — no signup.",
     audience: "Series 7 Top-Off candidates who want a timed diagnostic before drilling suitability and product questions.",
     practiceTestLabel: "Series 7 practice test",
   },
@@ -255,19 +258,20 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "FRM Part 1 practice test",
   },
   "series-63-readiness-check": {
-    title: "Free Series 63 Practice Test | 60-Question NASAA Readiness Check",
+    title: "Series 63 Practice Test 2026 | Free 60Q NASAA",
     description:
-      "Free Series 63 practice questions online: 60 timed questions on NASAA state law topics, 90 minutes, 72% target, topic scoring, and answer review. Independent Series 63 prep — not official NASAA material.",
+      "Free Series 63 practice test — no signup: 60 timed questions on NASAA state law topics, 90 minutes, 72% target, topic scoring, and full answer review. Independent Series 63 prep — not official NASAA material.",
     keywords: [
       "series 63 practice test",
+      "free series 63 practice test",
       "series 63 mock exam",
       "nasaa series 63 questions",
       "uniform securities act practice test",
       "free series 63 exam prep",
     ],
-    headline: "Free Series 63 Readiness Check",
+    headline: "Free Series 63 Practice Test — 60 Questions",
     intro:
-      "A Series 63 readiness check built from UniPrep2Go deck content across broker-dealer regulation, agent registration, ethics, communications, and investment adviser basics.",
+      "A Series 63 practice test built from UniPrep2Go deck content across broker-dealer regulation, agent registration, ethics, communications, and investment adviser basics. Timed NASAA-topic diagnostic — no signup.",
     audience: "Series 63 candidates who need a timed diagnostic after SIE and Series 7 prep.",
     practiceTestLabel: "Series 63 practice test",
   },

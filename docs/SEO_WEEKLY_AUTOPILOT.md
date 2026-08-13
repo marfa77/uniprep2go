@@ -46,5 +46,6 @@ GOOGLE_SERVICE_ACCOUNT_JSON=...   # grant this SA access in Google Search Consol
 
 - SIE / Series 7 / Series 63 surfaces only each week; all other geos and verticals frozen.
 - Point edits only (title/meta/intro/FAQ). No new pages unless strategy explicitly opens a FINRA gap.
-- One prod ship / UTC week.
+- One prod ship / UTC week → `main` + Telegram DM every run.
+- Steal snippet patterns from Prep2Go (exam+need+year) and PixID (specific free/NQ offer) — not niche copy.
 - No new Gumroad SKU until free SIE mock has meaningful completes (ops gate: 50).

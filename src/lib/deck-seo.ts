@@ -670,11 +670,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Monthly FRM Q-bank subscriptions help for volume practice. If you want an ownable Anki .apkg plus a free timed diagnostic before you pay for more mocks, start here — then drill only the weak Part 1 pillars.",
   },
   "sie-exam-anki-deck": {
-    title: "SIE Anki Deck 2026 | 300 Cards + Free Mock",
-    headline: "FINRA SIE Exam Prep — 300 Flashcards + Free Mock",
+    title: "SIE Anki Deck 2026 | 300 Cards + Free 75Q Mock",
+    headline: "SIE Exam Prep — 300 Flashcards + Free 75Q Mock",
     studyLabel: "FINRA SIE exam prep",
     description:
-      "FINRA SIE exam prep: 300 Anki flashcards + free 25-question diagnostic or 75-question timed mock. Topic-weighted to official FINRA blueprint. Independent study aid — not official FINRA material.",
+      "SIE exam prep: 300 Anki flashcards + free 75-question timed mock (or 25Q diagnostic). Topic-weighted to FINRA blueprint. Ownable .apkg — independent study aid, not official FINRA material.",
     keywords: [
       "sie exam prep",
       "sie exam study guide free",
@@ -686,11 +686,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Americans entering brokerage and securities roles start with the SIE — this deck covers FINRA topic weights for daily recall. Use the free 25-question diagnostic for a fast gap check, or the full 75-question / 105-minute mock before exam day.",
   },
   "series-7-anki-deck": {
-    title: "Series 7 Anki Deck 2026 | 300 Cards + Free Mock",
-    headline: "Series 7 Top-Off Exam Prep — 300 Flashcards + Free Mock",
+    title: "Series 7 Anki 2026 | 300 Cards + Free Practice Test",
+    headline: "Series 7 Exam Prep — 300 Flashcards + Free 60Q Test",
     studyLabel: "Series 7 exam prep",
     description:
-      "Series 7 Top-Off exam prep with 300 flashcards for suitability, options, products, order handling, and FINRA job functions — plus a free 60-question Series 7 practice test. For registered rep candidates in the United States.",
+      "Series 7 Top-Off prep: 300 flashcards for suitability, options, products, and FINRA job functions — plus a free 60-question Series 7 practice test online (no signup). For US registered rep candidates.",
     keywords: [
       "series 7 exam prep",
       "series 7 flashcards",
@@ -702,11 +702,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "US Series 7 candidates drill suitability, investment products, and order-flow rules on their phone between full-length Q-banks — then use the free readiness check for a timed baseline.",
   },
   "series-63-anki-deck": {
-    title: "Series 63 Prep 2026 | 250 Cards + Free Practice Test",
-    headline: "Series 63 Exam Prep — 250 Flashcards + Free Mock",
+    title: "Series 63 Anki 2026 | 250 Cards + Free Practice Test",
+    headline: "Series 63 Exam Prep — 250 Flashcards + Free 60Q Test",
     studyLabel: "Series 63 exam prep",
     description:
-      "Series 63 state law exam prep with 250 Anki flashcards for NASAA topics — agent registration, ethical practices, communications, and investment adviser basics — plus a free 60-question practice test.",
+      "Series 63 state law prep: 250 Anki flashcards for NASAA topics — agent registration, ethics, communications, adviser basics — plus a free 60-question practice test online (no signup).",
     keywords: [
       "series 63 exam prep",
       "series 63 flashcards",

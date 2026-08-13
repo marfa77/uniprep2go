@@ -3,9 +3,9 @@ import type { BlogPostDraft } from "../types";
 export const finraOptionsQuestionsPost: BlogPostDraft = {
   slug: "finra-options-questions-read-without-getting-tricked",
   title: "How to Read a FINRA Options Question Without Getting Tricked",
-  titleTag: "FINRA Options Questions: How to Read Without Getting Tricked",
+  titleTag: "SIE Options Questions 2026 | Read Without Getting Tricked",
   metaDescription:
-    "FINRA options questions are not math problems. They are reading comprehension traps. Here is the 4-step method to dissect any options question and the formulas that eliminate guesswork.",
+    "SIE/Series 7 options questions are reading traps, not math. 4-step method, formulas for every basic position, six common traps — plus free 75Q SIE mock.",
   publishedAt: "2026-07-28",
   eyebrow: "FINRA SIE · Options",
   clusterId: "finra-sie",

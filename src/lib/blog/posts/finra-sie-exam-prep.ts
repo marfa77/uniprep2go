@@ -3,9 +3,9 @@ import type { BlogPostDraft } from "../types";
 export const finraSieExamPrepPost: BlogPostDraft = {
   slug: "finra-sie-exam-prep-why-people-fail",
   title: "FINRA SIE Exam Prep: Why Most People Fail and How to Avoid It",
-  titleTag: "FINRA SIE Exam Prep: Why Most People Fail + How to Pass",
+  titleTag: "SIE Exam Fail Rate 2026 | Why People Fail + How to Pass",
   metaDescription:
-    "The SIE exam pass rate is around 70%, but that includes retakes. Here is why first-timers fail, what the exam actually tests, and the study plan that gets you out in 4 weeks.",
+    "SIE exam pass rate is ~70% with retakes — first-timers fail for the same three reasons. What the exam tests, a 4-week study plan, plus free 75Q timed mock.",
   publishedAt: "2026-07-27",
   eyebrow: "FINRA SIE · Securities licensing",
   clusterId: "finra-sie",

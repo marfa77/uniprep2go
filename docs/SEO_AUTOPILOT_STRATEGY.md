@@ -19,6 +19,12 @@ Pricing, Gumroad product IDs, auth, DB banks, layout CSS, inventing official pas
 
 ## Run log
 
+### 2026-08-13 — Portfolio winner-pattern CTR on FINRA P0
+
+**Why:** UniPrep had 0 query×page in portfolio top3/top5; SIE mock still “Discovered – not indexed”. Prep2Go wins clicks with exam+need+year; PixID wins SERP attention with specific offers (NQ, free, no signup).  
+**Shipped:** Title/meta/headline on SIE + Series 7 + Series 63 mocks; matching deck SEO; FINRA blog titleTags; weekly prompt = cross-project patterns → prod + Telegram.  
+**Next:** IndexNow + GSC Request Indexing on `/mock-exams/sie-full-mock`; recheck index + impr in 14d. Without indexation, CTR titles cannot rank.
+
 ### 2026-08-06 — FINRA-first money rebuild (surface + allowlist)
 
 **Why:** Highest US WTP is SIE → Series 7 → Series 63, not USCIS or building niches.  
