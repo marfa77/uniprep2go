@@ -129,6 +129,26 @@ describe("mock exam configs", () => {
     }
   });
 
+  it("keeps Home Health Aide bank clean, balanced, and home-care framed", () => {
+    const slug = "home-health-aide-readiness-check";
+    expect(getMockExamConfig(slug)?.status).toBe("live");
+    expect(isMockExamRunnable(slug)).toBe(true);
+    const { questions, errors } = getQuestionBankForExam(slug);
+    expect(errors).toEqual([]);
+    expect(questions).toHaveLength(60);
+    const stems = new Set(questions.map((q) => q.prompt.trim().toLowerCase()));
+    expect(stems.size).toBe(60);
+    const answers = { a: 0, b: 0, c: 0, d: 0 };
+    for (const q of questions) {
+      answers[q.correctOptionId as keyof typeof answers] += 1;
+      expect(q.explanation.split(/\s+/).length).toBeGreaterThanOrEqual(15);
+      const blob = [q.prompt, ...q.options.map((o) => o.text), q.explanation].join(" ");
+      expect(blob).not.toMatch(/FDIC|US securities|this concept always eliminates/i);
+      expect(blob).not.toMatch(/\b(nursing home|OBRA|nurse aide|\bNA\b|CNA)\b/i);
+    }
+    expect(answers).toEqual({ a: 15, b: 15, c: 15, d: 15 });
+  });
+
   it("ships thick explainers + honest format notes for every citizenship mock with Anki", async () => {
     const { getNicheExamExplainer } = await import("./niche-exam-explainers");
     const { getDeckBySlug } = await import("../decks");

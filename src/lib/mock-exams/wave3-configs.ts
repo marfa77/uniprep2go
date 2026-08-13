@@ -362,11 +362,14 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "obs", label: "Observation & reporting" },
       { id: "ethics", label: "Ethics & boundaries" }
     ]),
-    officialSourceNote: "Mapped to State / federal HHA training standards themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Home Health Aide readiness check with topic scoring.",
-    examBody: "State / federal HHA training standards",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
-    searchAliases: ["home health aide", "HHA exam"],
+    officialSourceNote:
+      "Independent readiness check on home health aide competency themes (ADLs, home safety, observation/reporting, ethics). Official HHA evaluations are state-specific (often written + skills). Not a state board or CMS exam.",
+    description:
+      "Free 60-question Home Health Aide practice test (75 min, 70% readiness) covering ADLs, safety, observation, and ethics — pairs with the planned HHA Anki waitlist. Independent prep; state exams vary.",
+    examBody: "State HHA competency / federal home-health aide training themes",
+    questionSourceNote:
+      "UniPrep2Go Wave 3 HHA bank — home-care framed (client/aide/agency), finance contaminants removed, unique stems, balanced A–D, thick explanations (2026-08-13).",
+    searchAliases: ["home health aide", "HHA exam", "home health aide practice test", "HHA competency test"],
   }),
   nicheReadinessConfig({
     slug: "rbt-behavior-technician-readiness-check",

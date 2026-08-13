@@ -319,20 +319,77 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "home-health-aide-readiness-check": {
     practiceTestName: "Home Health Aide Practice Test",
-    whatIsExam: "Home health aide competency evaluations verify personal care, safety, and communication skills for aides working in client homes under a care plan.",
-    administeredBy: "State / federal HHA training standards",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with State / federal HHA training standards.",
+    whatIsExam:
+      "Home health aide (HHA) competency checks confirm that aides can deliver personal care in a client’s home under a nurse-directed care plan. Typical domains include ADLs (bathing, dressing, toileting, feeding), home safety and infection control, observation/reporting of changes, and ethics/boundaries/privacy. Requirements are state-driven: many U.S. states require approved training hours plus a written and/or skills competency evaluation before working for a Medicare-certified home health agency. This UniPrep2Go page is an independent 60-question timed diagnostic (75 minutes, 70% readiness pass) — not a state board exam and not a substitute for your state’s official skills checklist.",
+    administeredBy:
+      "State health departments / approved HHA training programs (often aligned to federal home-health aide training themes for Medicare-certified agencies). Confirm your state board or training program outline.",
+    officialFormat:
+      "Official evaluations vary by state (written MCQ and/or skills demo). UniPrep mock: 60 multiple-choice questions, 75 minutes, 70% readiness pass with topic scoring — knowledge drill only, not the official skills lab.",
+    whoFor:
+      "Trainees and working HHAs preparing state competency or agency orientation quizzes; CNA→HHA transition candidates who need home-care framing (client home, care plan, reporting). Not a substitute for supervised skills practice.",
+    howToPrepare:
+      "Study your state/agency handbook for ADLs, infection control, body mechanics, vital-sign reporting thresholds, abuse reporting, and HIPAA. Practice skills in lab/clinical. Take this free timed diagnostic to find weak domains, then drill the linked Home Health Aide Anki waitlist when the .apkg ships.",
+    topicBlurbs: [
+      {
+        id: "adls",
+        label: "ADLs & personal care",
+        blurb: "Bathing, dressing, toileting, feeding, mobility assistance, and person-centered dignity in the home.",
+      },
+      {
+        id: "safety",
+        label: "Home safety & infection",
+        blurb: "Hand hygiene, PPE, body mechanics, fall prevention, and safe home environment basics.",
+      },
+      {
+        id: "obs",
+        label: "Observation & reporting",
+        blurb: "What to watch for, what to document, and when to escalate to the nurse or supervisor.",
+      },
+      {
+        id: "ethics",
+        label: "Ethics & boundaries",
+        blurb: "Privacy, abuse reporting, abandonment, gifts/loans, and professional limits in someone’s home.",
+      },
+    ],
     examFaqs: [
       {
         question: "What is the Home Health Aide exam?",
-        answer: "Home health aide competency evaluations verify personal care, safety, and communication skills for aides working in client homes under a care plan.",
+        answer:
+          "Most states require HHA training plus a competency evaluation (written and/or skills) covering personal care, safety, observation, and ethics for aides working in client homes under a care plan. Exact format is state-specific.",
       },
       {
         question: "Is this an official Home Health Aide exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from State / federal HHA training standards.",
+        answer:
+          "No. UniPrep2Go’s readiness check is independent timed practice — not a state board, CMS, or training-program official exam.",
+      },
+      {
+        question: "Is the HHA test the same as the CNA exam?",
+        answer:
+          "They overlap on ADLs and safety, but HHA focuses on care in the client’s home under a home-health care plan. Do not assume a CNA written test is identical to your state’s HHA competency.",
+      },
+      {
+        question: "How many questions are on this UniPrep2Go practice test?",
+        answer:
+          "60 multiple-choice questions in 75 minutes with a 70% readiness pass mark and topic scoring across ADLs, safety, observation, and ethics.",
+      },
+      {
+        question: "Does New York (or my state) use this exact exam?",
+        answer:
+          "No. States set their own HHA training and competency rules. Use this diagnostic for themes, then verify hours, skills checklist, and testing vendor with your state program.",
+      },
+      {
+        question: "Is there a Home Health Aide Anki deck?",
+        answer:
+          "A Home Health Aide Anki deck is planned on UniPrep2Go (waitlist). Use this free readiness check now to benchmark weak topics.",
       },
     ],
-    keywords: ["home health aide practice test", "hha exam practice test", "home health aide practice exam"],
+    keywords: [
+      "home health aide practice test",
+      "hha exam practice test",
+      "home health aide practice exam",
+      "free hha practice test",
+      "home health aide competency test",
+    ],
   },
   "rbt-behavior-technician-readiness-check": {
     practiceTestName: "RBT Practice Test",
