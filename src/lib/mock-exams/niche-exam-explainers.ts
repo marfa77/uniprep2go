@@ -804,16 +804,78 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "ace-cpt-readiness-check": explainer({
     practiceTestName: "ACE CPT Practice Test",
     whatIsExam:
-      "The ACE Certified Personal Trainer exam from the American Council on Exercise is an NCCA-accredited CPT credential covering client assessments, program design, and behavior change coaching.",
+      "The ACE Certified Personal Trainer (CPT) exam from the American Council on Exercise is an NCCA-accredited credential for professionals who assess clients, design safe progressive programs, coach behavior change, and stay inside a defined scope of practice. Candidates typically complete ACE’s CPT curriculum (or an equivalent qualifying path), then sit a computer-based multiple-choice exam covering interviews and assessments, program design, instruction, and professional conduct. Passing does not replace medical licensure: ACE-certified trainers coach apparently healthy clients and those cleared to exercise, refer out for diagnosis or medical nutrition therapy, and maintain CPR/AED readiness. This UniPrep2Go timed check is independent practice — not an ACE exam and not a substitute for the official candidate handbook.",
     administeredBy: "American Council on Exercise (ACE)",
+    officialFormat:
+      "Computer-based multiple-choice certification exam. Confirm current length, passing standard, and domain weights in ACE’s official CPT candidate handbook before you schedule. This UniPrep2Go session is a 60-question diagnostic sampled from a larger bank, not the live ACE form.",
+    whoFor:
+      "Aspiring personal trainers finishing ACE CPT coursework, career changers targeting gym or independent-training roles, and NASM/ISSA candidates who want an ACE-flavored diagnostic on screening, FITT-VP programming, cueing, and ethics before they sit the official exam.",
+    howToPrepare:
+      "Study ACE’s current CPT manual domains: client interviews and assessments, program design and progression, instruction and spotting, and professional conduct. Drill PAR-Q+/risk screening, SMART goals, FITT-VP, regressions, and scope-of-practice scenarios. Take this free 60-question UniPrep2Go timed check once under quiet conditions, then repair weak topics with the 300-card ACE CPT Anki deck. Verify eligibility, exam length, and fees on ACE’s official site — this page is independent prep, not an ACE product.",
+    topicBlurbs: [
+      {
+        id: "client-interview",
+        label: "Client interviewing & screening",
+        blurb:
+          "Health-history interviews, informed consent, PAR-Q+ style screening, vitals, and behavior-change coaching before you load a program.",
+      },
+      {
+        id: "program-design",
+        label: "Program design & progression",
+        blurb:
+          "FITT-VP, overload, specificity, rest, special-population modifications, and sustainable progression without reckless spikes.",
+      },
+      {
+        id: "instruction",
+        label: "Instruction & spotting",
+        blurb:
+          "Cues, regressions, spotting, motor-learning feedback, warm-up/cool-down, and stopping for sharp pain.",
+      },
+      {
+        id: "professional",
+        label: "Professional conduct & business",
+        blurb:
+          "Scope of practice, records, CPR/AED, advertising ethics, referrals, and risk management in training businesses.",
+      },
+    ],
     examFaqs: [
       {
         question: "What is the ACE CPT exam?",
         answer:
-          "ACE CPT is ACE’s personal trainer certification exam for fitness professionals seeking an accredited CPT credential.",
+          "ACE CPT is the American Council on Exercise’s NCCA-accredited personal trainer certification exam. It tests client assessment, program design, instruction, and professional practice — not a medical license.",
+      },
+      {
+        question: "Who should take the ACE CPT exam?",
+        answer:
+          "People who want to coach exercise professionally in gyms, studios, or independent practice and need an accredited CPT credential recognized by many employers and insurers.",
+      },
+      {
+        question: "How is the ACE CPT exam structured?",
+        answer:
+          "It is a computer-based multiple-choice exam. Domain weights, item count, and passing standards are set by ACE and published in the current candidate handbook — always verify there before you book.",
+      },
+      {
+        question: "Is ACE CPT the same as NASM or ISSA CPT?",
+        answer:
+          "No. ACE, NASM, and ISSA are separate certifying bodies with overlapping trainer skills but different manuals, exams, and CE renewal rules. This diagnostic follows ACE-style screening, programming, and ethics themes.",
+      },
+      {
+        question: "Does passing ACE CPT let a trainer diagnose or prescribe diets?",
+        answer:
+          "No. ACE-certified trainers stay in scope: they design exercise for apparently healthy or medically cleared clients, give general healthy-eating guidance, and refer diagnosis, treatment, and medical nutrition therapy to licensed clinicians.",
+      },
+      {
+        question: "Is this UniPrep2Go test the official ACE exam?",
+        answer:
+          "No. It is an independent 60-question timed readiness check sampled from a 300-item bank. It does not award ACE certification and is not affiliated with or endorsed by the American Council on Exercise.",
       },
     ],
-    keywords: ["ace cpt practice test", "ace personal trainer practice exam"],
+    keywords: [
+      "ace cpt practice test",
+      "ace personal trainer practice exam",
+      "ace certified personal trainer practice test",
+      "free ace cpt practice questions",
+    ],
   }),
   "aswb-masters-readiness-check": explainer({
     practiceTestName: "ASWB Masters Practice Test",

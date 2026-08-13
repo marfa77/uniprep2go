@@ -572,6 +572,11 @@ describe("deck catalog", () => {
       "/samples/ptcb-pharmacy-technician-anki-deck-sample-2.webp",
       "/samples/ptcb-pharmacy-technician-anki-deck-sample-3.webp",
     ]);
+    expect(ptcbDeck?.sampleCards.map((card) => card.question)).toEqual([
+      "Prinivil — generic name, class, and primary use",
+      "Common brand names for Lisinopril",
+      'What does the sig code "bid" mean?',
+    ]);
     expect(ptcbDeck?.directAnswer).toContain("PTCE");
     expect(ptcbDeck?.directAnswer).not.toContain("UniPrep2Go sells");
   });
@@ -639,6 +644,15 @@ describe("deck catalog", () => {
     );
   });
 
+  it("wires ACE CPT to NASM and ISSA peer decks", () => {
+    const ace = getCatalogDeckBySlug("ace-cpt-anki-deck");
+    expect(ace).toBeDefined();
+    const related = getRelatedDecks(ace!);
+    expect(related.map((deck) => deck.slug)).toEqual(
+      expect.arrayContaining(["nasm-cpt-anki-deck", "issa-cpt-anki-deck"]),
+    );
+  });
+
   it("uses three real sample previews for the IB Biology SL deck", () => {
     const biologyDeck = getDeckBySlug("ib-biology-sl-anki-deck");
 
@@ -663,7 +677,7 @@ describe("deck catalog", () => {
       "dutch-a2-inburgering-anki-deck": ["zijn", "ik", "jij"],
       "german-a2-anki-deck": ["sein", "ich", "du"],
       "celi-b1-italian-anki-deck": ["essere", "io", "tu"],
-      "danish-a2-prove-i-dansk-anki-deck": ["være", "jeg", "du"],
+      "danish-a2-prove-i-dansk-anki-deck": ["ansøgning", "bolig", "aftale"],
       "norwegian-a2-norskprove-anki-deck": ["være", "jeg", "du"],
       "swedish-a2-sfi-anki-deck": ["vara", "jag", "du"],
       "greek-a2-ellinomatheia-anki-deck": ["είμαι", "εγώ", "εσύ"],
@@ -764,6 +778,7 @@ describe("deck catalog", () => {
         "PTCB Pharmacy Technician Anki Deck — 300 High-Yield Flashcards",
       "ptcb-study-guide-2026":
         "PTCB Exam Study Guide 2026 — Complete PTCE Review + 80-Question Practice Exam + Cheat Sheets (PDF)",
+      "ace-cpt-anki-deck": "ACE CPT Anki Deck — 300 Flashcards",
       "bench-energy-metal-trader-anki-deck":
         "Metal Trader Anki Deck — 202 Commodity Flashcards",
       "bench-energy-oil-trader-anki-deck":

@@ -285,10 +285,13 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "instruction", label: "Instruction & spotting" },
       { id: "professional", label: "Professional conduct & business" },
     ]),
-    officialSourceNote: "ACE CPT domain themes. Not an ACE exam.",
-    description: "Free 60-question ACE CPT readiness check.",
-    examBody: "ACE",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
+    officialSourceNote:
+      "ACE CPT competency themes (client screening, program design, instruction, professional conduct). Independent readiness check — not an American Council on Exercise exam. Session samples 60 from a larger sale bank.",
+    description:
+      "Free 60-question ACE CPT practice test (75 min, 70% readiness) with topic scoring — pairs with the 300-card ACE CPT Anki deck.",
+    examBody: "American Council on Exercise (ACE)",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 2 ACE CPT 300).",
+    ankiDeckCardCount: 300,
   }),
   nicheReadinessConfig({
     slug: "cdl-school-bus-readiness-check",

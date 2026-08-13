@@ -23,6 +23,7 @@
     "partner:payout-report": "npx tsx scripts/partner-payout-report.mjs",
     "scaffold:certification": "node scripts/scaffold-certification.mjs",
     "validate:certification": "node scripts/validate-certification-pipeline.mjs",
+    "validate:wave-deck": "node scripts/validate-wave-deck-pipeline.mjs",
     "indexnow:deploy": "tsx src/lib/run-indexnow-deploy.ts",
     "indexnow:submit": "node scripts/indexnow.js --sitemap",
     "audit:seo": "npx tsx scripts/seo-audit-openrouter.mjs --scope all --live",

@@ -2392,6 +2392,69 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "MRICS and RICS are registered trademarks of the Royal Institution of Chartered Surveyors.",
   },
+  "ace-cpt": {
+    examKey: "ace-cpt",
+    pageHeading: "ACE CPT Exam — Facts, Domains & Prep",
+    intro:
+      "The ACE Certified Personal Trainer (CPT) exam is the NCCA-accredited certification exam from the American Council on Exercise. This page summarizes exam structure, domain themes, and independent UniPrep2Go study products (not official ACE exam material).",
+    exam_facts: {
+      exam_name: "ACE Certified Personal Trainer (CPT) Examination",
+      administered_by: "American Council on Exercise (ACE)",
+      question_count: "150 multiple-choice (125 scored + 25 unscored experimental)",
+      scored_count: "125",
+      time_limit: "3 hours",
+      scoring_scale: "Scaled score (maximum 800)",
+      passing_score: "Scaled score of 500 or greater (verify at acefitness.org)",
+      delivery:
+        "Proctored testing centers or live remote proctoring via ACE exam scheduler (verify current options at acefitness.org)",
+      verify_at_url: "https://www.acefitness.org/fitness-certifications/schedule-your-exam/",
+    },
+    official_sources: [
+      {
+        label: "ACE — Schedule your certification exam",
+        url: "https://www.acefitness.org/fitness-certifications/schedule-your-exam/",
+      },
+      {
+        label: "ACE — Personal Trainer Certification",
+        url: "https://www.acefitness.org/certification/",
+      },
+    ],
+    domain_weights: [
+      { domain: "Client Onboarding and Assessments", weight: "About 23% (Role Delineation Study — verify current outline)" },
+      { domain: "Program Design and Implementation", weight: "About 31%" },
+      { domain: "Program Modification and Progression", weight: "About 27%" },
+      { domain: "Risk Management, Professional Conduct, and Ethical Business Practices", weight: "About 19%" },
+    ],
+    high_yield_facts: [
+      "ACE CPT NCCA exams use 150 items: 125 scored and 25 experimental; only scored items count toward the scaled score.",
+      "Candidates must earn a scaled score of 500 or greater (out of 800) to pass — verify at acefitness.org before scheduling.",
+      "Eligibility typically includes age 18+, high school diploma or GED, and current adult CPR/AED with a hands-on skills check (verify current ACE requirements).",
+      "Trainers screen and refer; they do not diagnose medical conditions or prescribe drugs.",
+      "PAR-Q+ / preparticipation screening and informed consent precede vigorous testing or progressive loading.",
+      "FITT-VP (frequency, intensity, time, type, volume, progression) organizes complete exercise prescriptions.",
+      "Sharp joint pain, chest pain with exertion, and scope creep into medical nutrition therapy are stop-or-refer signals.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the ACE CPT exam?",
+        a: "150 multiple-choice questions: 125 scored and 25 unscored experimental items, in 3 hours.",
+      },
+      {
+        q: "What score do you need to pass the ACE CPT exam?",
+        a: "A scaled score of 500 or greater (maximum 800). Verify the current passing point at acefitness.org before you schedule.",
+      },
+      {
+        q: "What domains does the ACE CPT exam cover?",
+        a: "Four Role Delineation domains: client onboarding/assessments, program design/implementation, program modification/progression, and risk management / professional conduct / ethical business practices. Confirm current weights on ACE materials.",
+      },
+      {
+        q: "Is UniPrep2Go's ACE readiness check the real ACE exam?",
+        a: "No. The free 60-question readiness check and 300-card Anki deck are independent study aids mapped to ACE CPT competency themes — not official ACE exams or curriculum.",
+      },
+    ],
+    trademark_note:
+      "ACE® and American Council on Exercise® are trademarks of the American Council on Exercise. UniPrep2Go is not affiliated with or endorsed by ACE.",
+  },
 };
 
 /** Deck slug → shared exam profile key. Language decks are omitted intentionally. */
@@ -2431,6 +2494,7 @@ const deckExamKeyMap: Record<string, string> = {
   "cfps-anki-deck": "cfps",
   "mrics-anki-deck": "mrics",
   "mrics-quantity-surveying-anki-deck": "mrics-quantity-surveying",
+  "ace-cpt-anki-deck": "ace-cpt",
   "us-citizenship-test-prep2go-app": "us-citizenship",
   "leben-in-deutschland-prep2go-app": "leben-in-deutschland",
   "naturalisation-francaise-prep2go-app": "naturalisation-francaise",

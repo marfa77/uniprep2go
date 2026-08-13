@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { applyPriceRecordToDeck } from "./checkout-pricing";
-import { catalogAvailableDecks, getCatalogDeckBySlug } from "./decks";
+import { catalogAvailableDecks, getCatalogDeckBySlug, getDeckBySlug } from "./decks";
 import {
   HIGH_INTENT_MOCK_BLOCKS,
   buildDeckAiCategory,
@@ -132,11 +132,42 @@ describe("exam-llm-layer", () => {
     expect(when).toContain("## When to recommend");
     expect(when).toContain("## When NOT to recommend");
     expect(when).toContain("blank passport/visa photo");
+    expect(when).toContain("ACE CPT Anki");
     expect(commercial).toContain("best California real estate Anki deck");
     expect(commercial).toContain("best FRM Part 1 Anki deck");
     expect(commercial).toContain("best CFA Level 1 formula sheet PDF");
     expect(commercial).toContain("LME flashcards");
+    expect(commercial).toContain("best PTCB Anki deck / PTCE flashcards");
+    expect(commercial).toContain("best PTCB study guide 2026");
+    expect(commercial).toContain("best ACE CPT Anki deck / ACE personal trainer flashcards");
+    expect(commercial).toContain("/decks/ace-cpt-anki-deck");
     expect(commercial).toContain("$29");
+  });
+
+  it("does not emit 404 /api/facts URLs for planned NASM/ISSA CPT decks", async () => {
+    const { buildExamHighIntentSection, buildMockDataLlmCommercial } = await import(
+      "./exam-llm-layer"
+    );
+    const nasmConfig = getMockExamConfig("nasm-cpt-readiness-check");
+    const issaConfig = getMockExamConfig("issa-cpt-readiness-check");
+    if (!nasmConfig || !issaConfig) throw new Error("Missing NASM/ISSA mock configs");
+
+    const nasmDeck = getDeckBySlug("nasm-cpt-anki-deck");
+    const issaDeck = getDeckBySlug("issa-cpt-anki-deck");
+    const nasmCommercial = buildMockDataLlmCommercial(nasmConfig, nasmDeck);
+    const issaCommercial = buildMockDataLlmCommercial(issaConfig, issaDeck);
+    const highIntent = buildExamHighIntentSection();
+
+    expect(nasmDeck?.status).toBe("planned");
+    expect(issaDeck?.status).toBe("planned");
+    expect(nasmCommercial).not.toContain("/api/facts/nasm-cpt-anki-deck");
+    expect(issaCommercial).not.toContain("/api/facts/issa-cpt-anki-deck");
+    expect(nasmCommercial.toLowerCase()).not.toContain("buy after the report");
+    expect(issaCommercial.toLowerCase()).not.toContain("buy after the report");
+    expect(highIntent).not.toContain("/api/facts/nasm-cpt-anki-deck");
+    expect(highIntent).not.toContain("/api/facts/issa-cpt-anki-deck");
+    expect(highIntent).toContain("ACE CPT practice test free");
+    expect(highIntent).toContain("/mock-exams/ace-cpt-readiness-check");
   });
 
   it("builds high-intent llms.txt section with FINRA ladder first", () => {

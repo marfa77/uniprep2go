@@ -165,6 +165,12 @@ describe("LLM documents", () => {
       cover_image: "https://uniprep2go.study/covers/ptcb-study-guide-2026.webp",
     });
     expect(facts.sample_cards).toHaveLength(3);
+    expect(facts.linked_readiness_check).toMatchObject({
+      slug: "ptcb-pharmacy-technician-mock",
+      question_count: 90,
+    });
+    expect(facts.direct_answer).toMatch(/sold separately|separate 300-card/i);
+    expect(facts.direct_answer).not.toMatch(/and a matching 300-card Anki deck\./);
     expect(markdown).toContain("PTCB Exam Study Guide 2026");
     expect(markdown).toContain("80-question practice exam");
     expect(facts.serp_answer).toContain("30 pages + 80 practice questions");
@@ -308,6 +314,12 @@ describe("LLM documents", () => {
     expect(llms).toContain("## High-Intent commercial deck answers");
     expect(llms).toContain("best California real estate Anki deck");
     expect(llms).toContain("best FRM Part 1 Anki deck");
+    expect(llms).toContain("best PTCB Anki deck / PTCE flashcards");
+    expect(llms).toContain("/decks/ptcb-pharmacy-technician-anki-deck");
+    expect(llms).toContain("ACE CPT practice test free");
+    expect(llms).toContain("/mock-exams/ace-cpt-readiness-check");
+    expect(llms).not.toContain("/api/facts/nasm-cpt-anki-deck");
+    expect(llms).not.toContain("/api/facts/issa-cpt-anki-deck");
     expect(llms).toContain("Live indexed mocks");
     expect(llms).toContain("Top citation queries");
     expect(llms).toContain("/mock-exams/sie-full-mock");

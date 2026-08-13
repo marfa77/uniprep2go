@@ -1,0 +1,43 @@
+---
+description: Fast cert/wave ship handoff — write once, review, screenshots, publish
+alwaysApply: true
+---
+
+# Cert / wave ship handoff (keep it fast)
+
+User workflow (do not invent a slower one):
+
+1. **Writer (this chat)** — one pass: bank expand once → apkg once → Gumroad → SEO/GEO wire → focused tests → gate script → **STOP**
+2. **Best-model review** — fix-first subagent (Grok 4.6 / Opus). No second bank rewrite unless P0 content bug
+3. **User screenshots** — real Anki card captures → `public/samples/{deckSlug}-sample-{1,2,3}.webp`
+4. **Publish** — commit/push only after user OK; `llms:export` already done in step 1
+
+## Path picker
+
+| SKU type | Spec / catalog | Apkg | Gumroad | Gate |
+|----------|----------------|------|---------|------|
+| Building cert | `building-deck-specs` + `certifications/registry` | `building_deck_pipeline` | `setup:gumroad-building-decks` | `npm run validate:certification -- --deck {slug}` |
+| Wave / niche | `wave-deck-specs` + `wave-anki-decks.json` | `wave_deck_pipeline` | `setup:gumroad-wave-decks` | `npm run validate:wave-deck -- --slug {slug}` |
+
+ACE CPT and most health/CDL SKUs are **wave**, not building registry.
+
+## Gumroad product (always)
+
+Every published Anki SKU must have on Gumroad:
+1. **Rich HTML description** (exam context, what's inside, FAQ, disclaimer, site/mock links)
+2. **3 sample card screenshots** in the product gallery (`--preview-image`)
+
+Wave: `npm run setup:gumroad-wave-decks -- --slug {slug} --polish-only`  
+(after `public/samples/{slug}-sample-{1,2,3}.webp` exist). Assets upload also polishes.  
+Building: `polish-building-gumroad.py` + `publish-building-gumroad-landings.py`.
+
+Do not leave a live Gumroad product with thin one-paragraph copy and cover-only images.
+
+## Speed rules
+
+- Do **not** mix unrelated audits (Danish, PTCB, planned P0, …) into the active ship
+- Expand bank **once**; regenerate apkg/assets only after a real content fix from review
+- Do **not** invent blank/identical sample webps — cover until user drops screenshots
+- GEO in the same writer pass: exam-facts + commercial cite / one-liner + money-page + `npm run llms:export`
+- After writer gate is READY (0 fails), hand to review immediately — do not keep polishing for hours
+- Skill detail: `.cursor/skills/add-certification/SKILL.md`

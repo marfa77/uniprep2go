@@ -138,7 +138,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "ptcb-pharmacy-technician-mock": {
     title: "Free PTCB Practice Test 2026 | 90-Question PTCE Mock Exam Online",
     description:
-      "Take a free PTCB / PTCE practice test online: 90 timed questions, 110 minutes, 2026 domain-weighted scoring (Medications 35%, Federal Requirements 19%, Patient Safety 24%, Order Entry 23%), answer explanations, and pass/no-pass report. Independent mock — not official PTCB material.",
+      "Take a free PTCB / PTCE practice test online: 90 timed questions, 110 minutes, 2026 domain-weighted scoring (Medications 35%, Federal Requirements 18.75%, Patient Safety 23.75%, Order Entry 22.5%), answer explanations, and pass/no-pass report. Independent mock — not official PTCB material.",
     keywords: [
       "ptcb practice test",
       "ptcb mock exam",

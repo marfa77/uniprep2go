@@ -1,5 +1,6 @@
 import type { Deck, DeckFaq } from "./decks";
-import { getDeckSeoProfile, getDeckLinkedMock } from "./deck-seo";
+import { getDeckSeoProfile } from "./deck-seo";
+import { getDeckPracticeMock } from "./deck-funnel";
 import { buildMockSeoTitle } from "./mock-exams/seo";
 import { absoluteUrl } from "./site";
 import { getDeckShortPitch, getDeckLongDescription, formatExamFocusedContent } from "./deck-page-copy";
@@ -21,15 +22,18 @@ function isProductFaq(faq: DeckFaq): boolean {
 
 function buildExamFaqs(deck: Deck): DeckFaq[] {
   const profile = getDeckSeoProfile(deck);
-  const mock = getDeckLinkedMock(deck.slug);
+  const mock = getDeckPracticeMock(deck.slug);
   const pageUrl = absoluteUrl(`/decks/${deck.slug}`);
 
+  const hasCoverageTable = deck.topicCoverage.length > 0;
   const faqs: DeckFaq[] = [
     {
       question: `What should I study first for ${deck.shortName}?`,
       answer: mock
         ? `Take the free ${mock.questionCount}-question ${deck.shortName} practice test on UniPrep2Go, note weak topic scores, then drill those sections with this deck's ${deck.facts.cards} items. ${profile.intro}`
-        : `Use the topic coverage table on this page to match ${deck.facts.topics.toLowerCase()}, then review ${deck.facts.cards} items daily. ${profile.intro}`,
+        : hasCoverageTable
+          ? `Use the topic coverage table on this page to match ${deck.facts.topics.toLowerCase()}, then review ${deck.facts.cards} items daily. ${profile.intro}`
+          : `Focus daily reviews on ${deck.facts.topics.toLowerCase()}, then rotate ${deck.facts.cards} items with spaced repetition. ${profile.intro}`,
     },
   ];
 
@@ -54,7 +58,9 @@ function buildExamFaqs(deck: Deck): DeckFaq[] {
   } else {
     faqs.push({
       question: `How is this ${deck.shortName} deck organized?`,
-      answer: `See the coverage table at ${pageUrl}: ${deck.facts.topics}. Card counts follow those official weights rather than a flat dump.`,
+      answer: hasCoverageTable
+        ? `See the coverage table at ${pageUrl}: ${deck.facts.topics}. Theme rows show how the bank is grouped for daily drilling.`
+        : `Cards are grouped around ${deck.facts.topics} for daily drilling — confirm your pathway requirements with official sources.`,
     });
   }
 
@@ -85,6 +91,8 @@ export function buildMergedDeckFaqs(deck: Deck): DeckFaq[] {
     if (/who is this|does the deck replace|how do I prepare/i.test(faq.question)) return false;
     // Keep competitive GEO FAQs ("best …", free practice test) visible on the page.
     if (/what is the best|is there a free .+ practice test/i.test(faq.question)) return true;
+    // Keep pathway / exam-identity honesty FAQs (e.g. language deck vs civics exam).
+    if (/which .+ pathways|indfødsrets|civics test|is this the /i.test(faq.question)) return true;
     return isProductFaq(faq);
   });
 

@@ -12,6 +12,10 @@
  *   node scripts/setup-gumroad-wave-decks.mjs --slug series-65-anki-deck
  *   node scripts/setup-gumroad-wave-decks.mjs --cohort money
  *   node scripts/setup-gumroad-wave-decks.mjs --assets-only
+ *   node scripts/setup-gumroad-wave-decks.mjs --slug ace-cpt-anki-deck --polish-only
+ *
+ * Always ships rich HTML description + sample card screenshots (--preview-image)
+ * when public/samples/{slug}-sample-{1,2,3}.webp exist. Missing samples fail polish/assets.
  *
  * Env:
  *   GUMROAD_ACCESS_TOKEN — auto-resolved from .env.local, gumroad CLI config, or `gumroad auth token`
@@ -33,6 +37,7 @@ const CATALOG_PATH = join(root, "src/data/gumroad/wave-anki-decks.json");
 const SPECS_PATH = join(root, "src/data/wave-deck-specs.json");
 const COVERS_DIR = join(root, "public/covers");
 const GUMROAD_THUMBS_DIR = join(root, "public/gumroad-thumbnails");
+const SAMPLES_DIR = join(root, "public/samples");
 
 const PRODUCT_CREATE_DELAY_MS = Number(process.env.GUMROAD_CREATE_DELAY_MS ?? 8000);
 const ANKI_GENERATOR_ROOT =
@@ -76,6 +81,7 @@ function parseArgs(argv) {
     force: false,
     assetsOnly: false,
     thumbnailsOnly: false,
+    polishOnly: false,
   };
   for (let i = 2; i < argv.length; i += 1) {
     const arg = argv[i];
@@ -83,6 +89,7 @@ function parseArgs(argv) {
     else if (arg === "--force") args.force = true;
     else if (arg === "--assets-only") args.assetsOnly = true;
     else if (arg === "--thumbnails-only") args.thumbnailsOnly = true;
+    else if (arg === "--polish-only") args.polishOnly = true;
     else if (arg === "--slug") args.slug = argv[++i];
     else if (arg === "--cohort") args.cohort = argv[++i];
   }
@@ -117,23 +124,95 @@ function loadDeckMeta() {
   return { getAllMockExams, titles };
 }
 
-/** Minimal HTML for create. Wave decks ship MCQ cards from the free readiness-check bank. */
-function buildProductDescription({ title, mockPath, apkgReady }) {
+function resolveSampleWebps(slug) {
+  return [1, 2, 3]
+    .map((n) => join(SAMPLES_DIR, `${slug}-sample-${n}.webp`))
+    .filter((path) => existsSync(path));
+}
+
+/** Rich HTML — exam context, topics, FAQ, sample note. Required for every published wave SKU. */
+function buildProductDescription({ title, mockPath, apkgReady, spec }) {
   const delivery = apkgReady
     ? "Instant download. After checkout, open your Gumroad library or receipt and download the Anki <code>.apkg</code> file immediately."
     : "Complete checkout now. Your Gumroad receipt is issued immediately. The Anki <code>.apkg</code> download link activates in your Gumroad library once the deck file is uploaded.";
 
+  const count = spec?.cardCount ?? null;
+  const topics = spec?.topics ? Object.values(spec.topics) : [];
+  const topicItems = topics.map((t) => `<li>${t}</li>`).join("");
+  const exam = spec?.deckName || spec?.deckLabel || title;
+  const disclaimer = spec?.disclaimerOrg || exam;
+  const mockSlug = spec?.mockSlug;
+  const deckSlug = spec?.deckSlug;
   const mockLink = mockPath
     ? `<p>Built from the same validated item bank as the <a href="${mockPath}">free readiness check</a> on UniPrep2Go.</p>`
     : "<p>Pairs with the free UniPrep2Go readiness check on <a href=\"https://uniprep2go.study/mock-exams\">uniprep2go.study</a>.</p>";
 
+  const samplesNote =
+    resolveSampleWebps(deckSlug || "").length >= 3
+      ? `<hr><h2><strong>Sample cards</strong></h2><p>Real Anki screenshots from this deck (question, options, answer, and explanation) are shown in the product image gallery above.</p>`
+      : "";
+
+  const countLine = count
+    ? `<p><strong>${count} ${exam} Anki flashcards</strong> — MCQ format with explanations and distractor notes on every card.</p>`
+    : `<p><strong>${title}</strong> — independent UniPrep2Go Anki deck for active recall (MCQ cards with explanations).</p>`;
+
+  const inside = count
+    ? `<p><strong>What's inside:</strong></p><ul>
+<li>${count} high-yield MCQ cards</li>
+${topicItems}
+<li>Same validated bank as the free UniPrep2Go readiness check</li>
+</ul>`
+    : "";
+
+  const faq = mockSlug
+    ? `<hr><h2><strong>FAQ</strong></h2>
+<p><strong>What exam is this for?</strong><br>${exam} exam prep via spaced-repetition Anki flashcards.</p>
+<p><strong>Is there a free practice test?</strong><br>Yes — <a href="https://uniprep2go.study/mock-exams/${mockSlug}">uniprep2go.study/mock-exams/${mockSlug}</a>.</p>
+<p><strong>Is this official exam material?</strong><br>No. Independent study aid — not affiliated with or endorsed by ${disclaimer}.</p>
+<p><strong>What file format is delivered?</strong><br>Digital download: Anki-compatible <code>.apkg</code> through Gumroad.</p>
+<p><strong>Refunds?</strong><br>Digital download — all sales final.</p>`
+    : "";
+
+  const siteLinks =
+    deckSlug && mockSlug
+      ? `<p>Also on UniPrep2Go: <a href="https://uniprep2go.study/decks/${deckSlug}">Anki deck page</a> · <a href="https://uniprep2go.study/mock-exams/${mockSlug}">free ${spec?.shortTitle || exam} check</a>.</p>`
+      : "";
+
   return [
-    `<p><strong>${title}</strong> — independent UniPrep2Go Anki deck for active recall (MCQ cards with explanations).</p>`,
+    countLine,
     mockLink,
+    inside,
     `<p><strong>Delivery:</strong> ${delivery}</p>`,
-    "<p>Import into Anki desktop (File → Import), then sync to AnkiMobile or AnkiDroid via AnkiWeb.</p>",
-    "<p><em>Independent study aid — not official exam material.</em></p>",
+    "<p><strong>Built for daily phone review.</strong> Import the .apkg into Anki desktop, sync to AnkiMobile or AnkiDroid, and run 15–25 cards per day between practice tests.</p>",
+    siteLinks,
+    `<p><em>Independent study aid. Not affiliated with or endorsed by ${disclaimer}.</em></p>`,
+    samplesNote,
+    faq,
   ].join("");
+}
+
+/** Convert sample webps → JPEG and attach as Gumroad preview/gallery images. */
+function uploadSamplePreviews({ productId, slug, dryRun }) {
+  const samples = resolveSampleWebps(slug);
+  if (samples.length < 3) {
+    throw new Error(
+      `${slug}: need 3 sample screenshots at public/samples/${slug}-sample-{1,2,3}.webp (got ${samples.length}). Gumroad products must include description + screenshots.`,
+    );
+  }
+
+  const workDir = mkdtempSync(join(tmpdir(), `gumroad-samples-${slug}-`));
+  try {
+    const jpgs = samples.map((webp, index) => {
+      const jpg = join(workDir, `sample-${index + 1}.jpg`);
+      execSync(`sips -s format jpeg "${webp}" --out "${jpg}"`, { stdio: "ignore" });
+      return jpg;
+    });
+    const previewFlags = jpgs.map((jpg) => `--preview-image "${jpg}"`).join(" ");
+    console.log(`  samples: ${jpgs.length} preview screenshots`);
+    runGumroad(`products update ${productId} ${previewFlags}`, { dryRun });
+  } finally {
+    rmSync(workDir, { recursive: true, force: true });
+  }
 }
 
 function resolveCoverPath(slug) {
@@ -382,14 +461,21 @@ async function syncProductAssets({
   }
 
   const name = titles[slug] ?? slug;
+  const specs = loadSpecs();
+  const spec = specs[slug];
   const mock = getAllMockExams().find((entry) => entry.linkedDeckSlug === slug);
   const mockPath = mock ? `https://uniprep2go.study/mock-exams/${mock.slug}` : null;
-  const description = buildProductDescription({ title: name, mockPath, apkgReady: true });
+  const description = buildProductDescription({
+    title: name,
+    mockPath,
+    apkgReady: true,
+    spec,
+  });
   const apkgDisplayName = buildApkgDisplayName(slug, titles);
 
   if (dryRun) {
-    console.log(`  would upload apkg + thumbnail + cover`);
-    console.log(`  would publish ${productId}`);
+    console.log(`  would upload apkg + thumbnail + cover + 3 sample previews`);
+    console.log(`  would set rich description + publish ${productId}`);
     return;
   }
 
@@ -402,7 +488,7 @@ async function syncProductAssets({
     dryRun: false,
   });
 
-  // Prefer polish_building_gumroad.py for rich HTML; only set a minimal HTML fallback here.
+  uploadSamplePreviews({ productId, slug, dryRun: false });
   await putGumroadDescriptionAsync(productId, description, dryRun);
   runGumroad(`products publish ${productId}`);
 
@@ -410,9 +496,43 @@ async function syncProductAssets({
     ...record,
     apkgUploadedAt: new Date().toISOString(),
     publishedAt: record.publishedAt ?? new Date().toISOString(),
+    descriptionPolishedAt: new Date().toISOString(),
+    samplesUploadedAt: new Date().toISOString(),
   };
 
-  console.log(`  assets uploaded + product published`);
+  console.log(`  assets + description + samples uploaded + product published`);
+}
+
+async function syncProductPolish({ slug, record, titles, getAllMockExams, catalog, dryRun }) {
+  const productId = record.gumroadProductId;
+  if (!productId) {
+    throw new Error(`${slug}: gumroadProductId missing — create product first`);
+  }
+  const specs = loadSpecs();
+  const spec = specs[slug];
+  if (!spec) {
+    throw new Error(`${slug}: missing wave-deck-specs entry`);
+  }
+  const name = titles[slug] ?? slug;
+  const mock = getAllMockExams().find((entry) => entry.linkedDeckSlug === slug);
+  const mockPath = mock ? `https://uniprep2go.study/mock-exams/${mock.slug}` : null;
+  const apkgReady = Boolean(resolveApkgPath(slug));
+  const description = buildProductDescription({ title: name, mockPath, apkgReady, spec });
+
+  if (dryRun) {
+    console.log(`  would polish description + upload 3 sample previews`);
+    return;
+  }
+
+  uploadSamplePreviews({ productId, slug, dryRun: false });
+  await putGumroadDescriptionAsync(productId, description, false);
+  runGumroad(`products publish ${productId}`);
+  catalog.products[slug] = {
+    ...record,
+    descriptionPolishedAt: new Date().toISOString(),
+    samplesUploadedAt: new Date().toISOString(),
+  };
+  console.log(`  description + samples polished + product published`);
 }
 
 async function main() {
@@ -431,7 +551,7 @@ async function main() {
     ? [args.slug]
     : (cohortSlugs ?? Object.keys(catalog.products)).filter((slug) => {
         if (args.force) return true;
-        if (args.thumbnailsOnly) {
+        if (args.thumbnailsOnly || args.polishOnly) {
           return Boolean(catalog.products[slug].gumroadProductId);
         }
         if (args.assetsOnly) {
@@ -443,6 +563,8 @@ async function main() {
   if (allSlugs.length === 0) {
     if (args.thumbnailsOnly) {
       console.log("No products with gumroadProductId found for thumbnail upload.");
+    } else if (args.polishOnly) {
+      console.log("No products with gumroadProductId found to polish.");
     } else if (args.assetsOnly) {
       console.log("No products need asset upload (all have apkgUploadedAt).");
     } else {
@@ -460,6 +582,38 @@ async function main() {
         record: catalog.products[slug],
         dryRun: args.dryRun,
       });
+    }
+    return;
+  }
+
+  if (args.polishOnly) {
+    console.log(`${args.dryRun ? "Dry-run" : "Polish description + samples for"} ${allSlugs.length} product(s)`);
+    let ok = 0;
+    let failed = 0;
+    for (const slug of allSlugs) {
+      console.log(`→ ${slug}`);
+      try {
+        await syncProductPolish({
+          slug,
+          record: catalog.products[slug],
+          titles,
+          getAllMockExams,
+          catalog,
+          dryRun: args.dryRun,
+        });
+        if (!args.dryRun) persistCatalog(catalog);
+        ok += 1;
+      } catch (error) {
+        failed += 1;
+        console.warn(
+          `  polish fail ${slug}: ${error instanceof Error ? error.message.slice(0, 220) : error}`,
+        );
+      }
+      await sleep(1500);
+    }
+    if (!args.dryRun) {
+      persistCatalog(catalog);
+      console.log(`\nUpdated ${CATALOG_PATH} (ok=${ok} failed=${failed})`);
     }
     return;
   }
@@ -511,7 +665,12 @@ async function main() {
     const mockPath = mock ? `https://uniprep2go.study/mock-exams/${mock.slug}` : null;
     const apkgPath = resolveApkgPath(slug);
     const apkgReady = Boolean(apkgPath);
-    const description = buildProductDescription({ title: name, mockPath, apkgReady });
+    const description = buildProductDescription({
+      title: name,
+      mockPath,
+      apkgReady,
+      spec: specs[slug],
+    });
     const permalink = record.permalink ?? slug;
 
     console.log(`→ ${slug}`);

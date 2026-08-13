@@ -112,6 +112,14 @@ async function main() {
     };
   }
 
+  // Keep specs for decks that already launched (this generator skips available SKUs).
+  const previous = existsSync(OUT) ? JSON.parse(readFileSync(OUT, "utf8")) : {};
+  for (const [slug, spec] of Object.entries(previous)) {
+    if (!specs[slug]) {
+      specs[slug] = spec;
+    }
+  }
+
   writeFileSync(OUT, `${JSON.stringify(specs, null, 2)}\n`);
   console.log(`Wrote ${Object.keys(specs).length} specs → ${OUT}`);
 

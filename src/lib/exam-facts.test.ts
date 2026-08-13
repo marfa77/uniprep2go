@@ -164,4 +164,13 @@ describe("exam facts layer", () => {
     expect(profile!.domain_weights.length).toBeGreaterThanOrEqual(7);
     expect(profile!.candidate_qa.some((item) => /Commercial management/i.test(item.a))).toBe(true);
   });
+
+  it("returns an ACE CPT profile with 150-item structure and scaled pass score", () => {
+    const profile = getExamFactsProfileForDeck("ace-cpt-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.question_count).toContain("150");
+    expect(profile!.exam_facts.passing_score).toMatch(/500/);
+    expect(profile!.domain_weights).toHaveLength(4);
+    expect(profile!.candidate_qa.some((item) => /not official ACE/i.test(item.a))).toBe(true);
+  });
 });

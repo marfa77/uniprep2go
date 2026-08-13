@@ -12,13 +12,13 @@ topics = {
             [
                 "Replace all physician care forever",
                 "Guarantee injury-free training",
-                "Set the client's tax bracket",
+                "Write the client's social media bio for them",
             ],
-            "Screening tools (e.g., PAR-Q+/ACS M guidance concepts) flag risk factors and clearance needs.",
+            "Screening tools (for example PAR-Q+ and ACSM-aligned risk concepts) flag risk factors and clearance needs before loading begins.",
             [
-                "Trainers do not replace medical care.",
-                "Screening reduces—not eliminates—risk.",
-                "Taxes are unrelated to screening.",
+                "Trainers do not replace medical care with a screening form.",
+                "Screening reduces risk but never guarantees injury-free training.",
+                "Social media tasks are unrelated to health screening decisions.",
             ],
             "easy",
         ),
@@ -272,7 +272,7 @@ topics = {
                 "20 hours of continuous vigorous exercise daily",
                 "Strength training once per decade",
             ],
-            "Public-health style targets (ACS M/HHS concepts) guide minimum effective doses with progression.",
+            "Public-health style targets (ACSM/HHS concepts) guide minimum effective doses with progression.",
             [
                 "Inactivity raises health risk.",
                 "Extreme daily volumes risk overtraining/injury.",

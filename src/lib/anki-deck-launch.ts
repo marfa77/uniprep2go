@@ -42,9 +42,13 @@ const waveSpecBySlug = waveSpecs as Record<string, WaveSpec>;
 
 /**
  * Wave Gumroad products may exist for later cohorts (state RE, health/CDL, etc.).
- * Only the money cohort auto-launches on the site — the rest stay planned for traffic/waitlist.
+ * Only the money cohort auto-launches on the site — plus explicit force-launch SKUs
+ * when traffic justifies shipping outside money (e.g. ACE CPT).
  */
 export const WAVE_LAUNCH_COHORTS = new Set(["money"]);
+
+/** Non-money wave decks approved to flip planned → available when Gumroad product exists. */
+export const WAVE_FORCE_LAUNCH_SLUGS = new Set(["ace-cpt-anki-deck"]);
 
 export type BuildingAnkiDeckSlug = keyof typeof buildingCatalog.products;
 export type WaveAnkiDeckSlug = string;
@@ -65,10 +69,15 @@ export function isWaveMoneyLaunchSlug(slug: string): boolean {
   return WAVE_LAUNCH_COHORTS.has(waveSpecBySlug[slug]?.cohort ?? "");
 }
 
-/** Building catalog + approved wave money SKUs only (not every wave Gumroad stub). */
+export function isWaveForceLaunchSlug(slug: string): boolean {
+  return WAVE_FORCE_LAUNCH_SLUGS.has(slug);
+}
+
+/** Building catalog + approved wave money SKUs + force-launch allowlist. */
 export function isLaunchableAnkiDeckSlug(slug: string): boolean {
   if (slug in building.products) return true;
-  return slug in wave.products && isWaveMoneyLaunchSlug(slug);
+  if (!(slug in wave.products)) return false;
+  return isWaveMoneyLaunchSlug(slug) || isWaveForceLaunchSlug(slug);
 }
 
 /** @deprecated Prefer isLaunchableAnkiDeckSlug — kept for building-only call sites. */
@@ -119,9 +128,55 @@ export function formatAnkiDeckCardLabel(count: number) {
   return `${count}+`;
 }
 
+/** Launched wave decks with hand-authored card-preview webps under public/samples/. */
+const LAUNCH_SAMPLE_IMAGE_SLUGS = new Set(["ace-cpt-anki-deck"]);
+
+/** Copy must match public/samples/ace-cpt-anki-deck-sample-{1,2,3}.webp (not bank Q1–Q3). */
+const ACE_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
+  {
+    question: "The primary purpose of a preparticipation health screening is to:",
+    answer:
+      "(a) Identify health risks and determine whether medical clearance or modifications are needed before exercise.",
+    imageUrl: "/samples/ace-cpt-anki-deck-sample-1.webp",
+  },
+  {
+    question: "Informed consent for training should include:",
+    answer:
+      "(b) Explanation of procedures, risks/benefits, and voluntary participation with opportunity for questions.",
+    imageUrl: "/samples/ace-cpt-anki-deck-sample-2.webp",
+  },
+  {
+    question: "A client reports chest pain during exertion. The safest immediate action is to:",
+    answer:
+      "(c) Stop exercise and advise seeking urgent medical evaluation as appropriate.",
+    imageUrl: "/samples/ace-cpt-anki-deck-sample-3.webp",
+  },
+];
+
+function attachLaunchSampleImages(slug: string, cards: SampleCard[]): SampleCard[] {
+  if (!LAUNCH_SAMPLE_IMAGE_SLUGS.has(slug) || cards.length === 0) {
+    return cards;
+  }
+  return cards.slice(0, 3).map((card, index) => ({
+    ...card,
+    imageUrl: `/samples/${slug}-sample-${index + 1}.webp`,
+  }));
+}
+
 function buildSampleCardsFromLinkedMock(deck: PlannedDeck): SampleCard[] {
-  if (deck.sampleCards.length > 0) {
-    return deck.sampleCards;
+  if (deck.slug === "ace-cpt-anki-deck") {
+    return ACE_LAUNCH_SAMPLE_CARDS;
+  }
+  const cover = deck.coverImage ?? `/covers/${deck.slug}.webp`;
+  const fromDeck = deck.sampleCards.length > 0 ? deck.sampleCards : [];
+  if (fromDeck.length > 0) {
+    return attachLaunchSampleImages(
+      deck.slug,
+      fromDeck.map((card) => ({
+        ...card,
+        imageUrl: card.imageUrl || cover,
+      })),
+    );
   }
   const mock = getLinkedMockForDeck(deck.slug);
   if (!mock) {
@@ -131,17 +186,19 @@ function buildSampleCardsFromLinkedMock(deck: PlannedDeck): SampleCard[] {
   if (!bank?.length) {
     return [];
   }
-  const cover = deck.coverImage ?? `/covers/${deck.slug}.webp`;
-  return bank.slice(0, 3).map((question) => {
-    const correct =
-      question.options.find((option) => option.id === question.correctOptionId)?.text ??
-      question.explanation;
-    return {
-      question: question.prompt,
-      answer: `${correct}${question.explanation ? ` — ${question.explanation}` : ""}`,
-      imageUrl: cover,
-    };
-  });
+  return attachLaunchSampleImages(
+    deck.slug,
+    bank.slice(0, 3).map((question) => {
+      const correct =
+        question.options.find((option) => option.id === question.correctOptionId)?.text ??
+        question.explanation;
+      return {
+        question: question.prompt,
+        answer: `${correct}${question.explanation ? ` — ${question.explanation}` : ""}`,
+        imageUrl: cover,
+      };
+    }),
+  );
 }
 
 function upgradeTopicCoverage(
@@ -272,7 +329,11 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
   const mock = getLinkedMockForDeck(deck.slug);
   const mockPath = mock ? `/mock-exams/${mock.slug}` : null;
   const cardCount = estimateAnkiDeckCardCount(deck.slug);
-  const cardLabel = formatAnkiDeckCardLabel(cardCount);
+  const waveExact = waveSpecBySlug[deck.slug]?.cardCount;
+  const cardLabel =
+    typeof waveExact === "number" && waveExact > 0
+      ? String(waveExact)
+      : formatAnkiDeckCardLabel(cardCount);
   const apkgReady = isApkgReadyOnGumroad(deck.slug);
 
   const launched: CatalogAvailableDeck = {
@@ -287,7 +348,7 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
       .replace(/^A planned (deck|spaced-repetition deck) for /i, "Anki deck for ")
       .replace(/^A planned /i, "A focused "),
     directAnswer: buildDirectAnswer(deck, cardLabel, mockPath, apkgReady),
-    lastUpdated: "2026-08-06",
+    lastUpdated: deck.slug === "ace-cpt-anki-deck" ? "2026-08-13" : "2026-08-06",
     facts: {
       ...deck.facts,
       cards: cardLabel,

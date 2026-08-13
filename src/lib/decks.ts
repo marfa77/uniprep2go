@@ -1723,8 +1723,8 @@ const rawDecks: Deck[] = [
     shortName: "Danish Prøve i Dansk PD2 PD3",
     subtitle: "1,000 Danish flashcards for Prøve i Dansk PD2 / PD3 and Danish residence or citizenship language prep.",
     directAnswer:
-      "UniPrep2Go sells a Danish Prøve i Dansk Anki deck with 1,000 exam-specific vocabulary cards for PD2 and PD3 pathways, audio, and practical example sentences for work, housing, services, and everyday life in Denmark — including language prep tied to permanent residence and citizenship requirements. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
-    lastUpdated: "2026-07-22",
+      "UniPrep2Go sells a Danish Prøve i Dansk Anki deck with 1,000 exam-specific vocabulary cards for PD2 and PD3 pathways (officially around CEFR B1 / B1+, not A2/PD1), audio, and practical example sentences for work, housing, services, and everyday life in Denmark — including language prep tied to permanent residence and citizenship requirements. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-08-13",
     audience: "Prøve i Dansk PD2 / PD3 learners and applicants using Danish for residence or citizenship language requirements.",
     format: ".apkg",
     coverImage: "/covers/danish-a2-prove-i-dansk-anki-deck.webp",
@@ -1738,23 +1738,29 @@ const rawDecks: Deck[] = [
       examYear: "Current Prøve i Dansk PD2 / PD3 cycle",
       delivery: "Digital download through Gumroad",
     },
-    topicCoverage: [],
+    topicCoverage: [
+      { name: "Work & workplace", examWeight: "PD2/PD3 theme", cards: "Jobs, schedules, colleagues, instructions" },
+      { name: "Housing & municipality", examWeight: "PD2/PD3 theme", cards: "Bolig, lease basics, kommune services" },
+      { name: "Health & appointments", examWeight: "PD2/PD3 theme", cards: "Læge, apotek, aftale, symptoms" },
+      { name: "Shopping & services", examWeight: "PD2/PD3 theme", cards: "Bank, post, everyday errands" },
+      { name: "Bureaucracy & residence", examWeight: "Pathway vocab", cards: "Ansøgning, dokumenter, myndigheder" },
+    ],
     sampleCards: [],
     faqs: [
       {
         question: "Which Danish pathways does this deck cover?",
         answer:
-          "Prøve i Dansk PD2 and PD3 vocabulary themes, plus everyday Danish used for permanent residence and citizenship language requirements. Confirm your required module with official sources.",
+          "Prøve i Dansk PD2 and PD3 vocabulary themes (roughly CEFR B1 / B1+ — not A2/PD1), plus everyday Danish used for permanent residence and citizenship language requirements. Confirm your required module with official sources.",
       },
       {
         question: "Is this the Indfødsretsprøven civics test?",
         answer:
-          "No. This is Danish language vocabulary for Prøve i Dansk / residence language. The Indfødsretsprøven is a separate citizenship civics exam — take the free Indfødsretsprøven readiness check and join the planned civics Anki waitlist for that.",
+          "No. This is Danish language vocabulary for Prøve i Dansk / residence language. The Indfødsretsprøven is a separate citizenship civics exam — take the free Indfødsretsprøven readiness check at /mock-exams/denmark-indfoedsretsproeven-readiness-check and join the planned civics Anki waitlist for that.",
       },
       {
         question: "What does the deck include?",
         answer:
-          "1,000 exam-specific Danish vocabulary words with audio and Anki-ready review for PD2 / PD3-style themes.",
+          "1,000 exam-specific Danish vocabulary words with audio and Anki-ready review for PD2 / PD3-style themes (work, housing, services, bureaucracy).",
       },
       {
         question: "What file format is delivered?",
@@ -4483,9 +4489,9 @@ const rawDecks: Deck[] = [
         imageUrl: "/samples/ptcb-pharmacy-technician-anki-deck-sample-2.webp",
       },
       {
-        question: "Norvasc — generic name, class, and primary use",
+        question: 'What does the sig code "bid" mean?',
         answer:
-          "Generic: Amlodipine. Class: CCB (dihydropyridine). Primary use: hypertension and angina. Key note: peripheral edema.",
+          "Twice daily (bis in die). Common on outpatient Rx labels — do not confuse with tid (three times daily).",
         imageUrl: "/samples/ptcb-pharmacy-technician-anki-deck-sample-3.webp",
       },
     ],
@@ -4524,10 +4530,10 @@ const rawDecks: Deck[] = [
     title: "PTCB Exam Study Guide 2026 — Complete PTCE Review + 80-Question Practice Exam + Cheat Sheets (PDF)",
     shortName: "PTCB Study Guide 2026",
     subtitle:
-      "Best printable PTCE study guide for the January 2026 blueprint — domain chapters, 80-question exam, cheat sheets + free 90Q online mock.",
+      "Printable PTCE study guide for the January 2026 blueprint — domain chapters, 80-question exam, cheat sheets; pairs with free 90Q online mock.",
     directAnswer:
-      "The best independent PTCB / PTCE study guide PDF for 2026 on UniPrep2Go is a 30-page printable pack aligned to the January 2026 PTCE blueprint: Medications 35%, Federal Requirements 18.75% (with DSCSA), Patient Safety & QA 23.75%, Order Entry & Processing 22.5% — plus an 80-question practice exam with domain-scored answer key, three cheat sheets (60 drugs, 45 sig codes, math), a 4-week plan, a free 90-question timed online mock, and a matching 300-card Anki deck. Not a free blog outline that still teaches removed compounding topics. Delivered for {PRICE} through Gumroad. Independent — not official PTCB, NHA, FDA, or DEA material.",
-    lastUpdated: "2026-08-11",
+      "The independent PTCB / PTCE study guide PDF for 2026 on UniPrep2Go is a 30-page printable pack aligned to the January 2026 PTCE blueprint: Medications 35%, Federal Requirements 18.75% (with DSCSA), Patient Safety & QA 23.75%, Order Entry & Processing 22.5% — plus an 80-question practice exam with domain-scored answer key, three cheat sheets (60 drugs, 45 sig codes, math), and a 4-week plan. It pairs with UniPrep2Go’s free 90-question timed online mock and a separate 300-card Anki deck (sold separately). Not a free blog outline that still teaches removed compounding topics. Delivered for {PRICE} through Gumroad. Independent — not official PTCB, NHA, FDA, or DEA material.",
+    lastUpdated: "2026-08-13",
     audience:
       "PTCE candidates who want one structured printable document — read domain chapters, take the 80-question practice exam, print cheat sheets, and pair with spaced-repetition drills on the companion Anki deck.",
     format: "PDF",
@@ -4576,12 +4582,12 @@ const rawDecks: Deck[] = [
       {
         question: "What is the best PTCB study guide for 2026?",
         answer:
-          "Use a January 2026 blueprint guide with Federal Requirements at 18.75% (DSCSA), no removed compounding chapters, an 80-question practice exam, printable cheat sheets, plus a free timed online mock and Anki drills. UniPrep2Go’s PTCB Exam Study Guide 2026 is that stack — not a free web outline still teaching the old PTCE weights.",
+          "Use a January 2026 blueprint guide with Federal Requirements at 18.75% (DSCSA), no removed compounding chapters, an 80-question practice exam, and printable cheat sheets — then pair with a free timed online mock and optional Anki drills sold separately. UniPrep2Go’s PTCB Exam Study Guide 2026 is that PDF stack — not a free web outline still teaching the old PTCE weights.",
       },
       {
         question: "What does the PTCB Exam Study Guide 2026 include?",
         answer:
-          "A 30-page printable PDF with four domain-weighted review chapters (January 2026 PTCE blueprint), an 80-question full-length practice exam with domain-scored answer key and explanations, three print-ready cheat sheets (drugs, sig codes, math), a 4-week study plan, and links to the free 90-question online PTCB mock plus companion Anki deck.",
+          "A 30-page printable PDF with four domain-weighted review chapters (January 2026 PTCE blueprint), an 80-question full-length practice exam with domain-scored answer key and explanations, three print-ready cheat sheets (drugs, sig codes, math), and a 4-week study plan. The free 90-question online PTCB mock and companion Anki deck are separate UniPrep2Go products linked from the page — not files inside the PDF download.",
       },
       {
         question: "Is this updated for the January 2026 PTCE?",
@@ -4596,7 +4602,7 @@ const rawDecks: Deck[] = [
       {
         question: "Does this pair with the PTCB Anki deck?",
         answer:
-          "Yes. The guide and 300-card Anki deck share the same validated item bank. Use the PDF for structured reading and the timed practice exam; use the Anki deck for daily brand/generic and sig-code recall on your phone.",
+          "Yes — as a separate purchase. Use the PDF for structured reading and the timed 80-question practice exam; buy the 300-card Anki deck if you want daily brand/generic and sig-code recall on your phone. Neither product is bundled inside the other.",
       },
       {
         question: "Is this official PTCB material?",
@@ -4973,13 +4979,24 @@ export function getFeaturedDecks() {
     .filter((deck): deck is CatalogAvailableDeck => deck !== undefined);
 }
 
-export function getRelatedDecks(
-  deck: Pick<Deck, "slug" | "category">,
-  limit = 4,
-): CatalogAvailableDeck[] {
-  return catalogAvailableDecks
-    .filter((candidate) => candidate.slug !== deck.slug && candidate.category === deck.category)
-    .slice(0, limit);
+/** Peer groups for related-product rails (planned waitlist + available). */
+export const RELATED_DECK_PEER_GROUPS: string[][] = [
+  ["nasm-cpt-anki-deck", "issa-cpt-anki-deck", "ace-cpt-anki-deck"],
+  ["ptcb-pharmacy-technician-anki-deck", "ptcb-study-guide-2026"],
+  ["cfa-level-1-anki-deck", "cfa-level-1-formula-reference-2026", "cfa-level-2-anki-deck"],
+];
+
+export function getRelatedDecks(deck: Pick<Deck, "slug" | "category">, limit = 4): Deck[] {
+  const peerSlugs = RELATED_DECK_PEER_GROUPS.find((group) => group.includes(deck.slug)) ?? [];
+  const peers = peerSlugs
+    .filter((slug) => slug !== deck.slug)
+    .map((slug) => getDeckBySlug(slug))
+    .filter((candidate): candidate is Deck => Boolean(candidate));
+  const used = new Set([deck.slug, ...peers.map((peer) => peer.slug)]);
+  const categoryFill = catalogAvailableDecks.filter(
+    (candidate) => !used.has(candidate.slug) && candidate.category === deck.category,
+  );
+  return [...peers, ...categoryFill].slice(0, limit);
 }
 
 export const siteFaqs = [

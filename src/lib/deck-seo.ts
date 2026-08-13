@@ -208,16 +208,16 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Danish Prøve i Dansk PD2 PD3 Prep — 1000 Flashcards",
     studyLabel: "Danish Prøve i Dansk PD2 PD3 exam prep",
     description:
-      "Danish Anki deck with 1000 flashcards for Prøve i Dansk PD2 / PD3 and residence or citizenship language prep. Audio and examples. Independent study aid — not official Danish exam material.",
+      "Danish Anki deck with 1000 flashcards for Prøve i Dansk PD2 / PD3 (≈ CEFR B1 / B1+, not A2) and residence or citizenship language prep. Audio and examples. Independent study aid — not official Danish exam material.",
     keywords: [
       "prove i dansk anki",
       "pd2 danish flashcards",
       "pd3 prove i dansk",
       "danish citizenship vocabulary",
-      "danish a2 anki deck",
+      "danish b1 vocabulary anki",
     ],
     intro:
-      "Prøve i Dansk PD2 / PD3 learners and residence or citizenship applicants drill everyday Danish vocabulary on a daily Anki schedule.",
+      "Prøve i Dansk PD2 / PD3 learners (≈ B1 / B1+) and residence or citizenship applicants drill everyday Danish vocabulary on a daily Anki schedule — this is not a PD1/A2 tourist pack.",
   },
   "norwegian-a2-norskprove-anki-deck": {
     title: "Norwegian Norskprøve Residence Citizenship Anki | 1500 Cards",
@@ -738,34 +738,33 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "PTCB Pharmacy Technician Exam Prep — 300 PTCE Flashcards + Free Mock",
     studyLabel: "PTCB / PTCE exam prep",
     description:
-      "Free PTCB practice test included. 300 Anki flashcards for the January 2026 PTCE: top 200 brand/generic drugs, sig abbreviations, days-supply math, DEA schedules, DSCSA, and federal law. Includes a linked free 90-question timed mock with 2026 domain-weighted scoring. Independent — not official PTCB material.",
+      "300 Anki flashcards for the January 2026 PTCE: top 200 brand/generic drugs, sig abbreviations, days-supply math, DEA schedules, DSCSA, and federal law. Pairs with UniPrep2Go’s free 90-question timed mock (separate page) and the optional 2026 printable study guide. Independent — not official PTCB material.",
     keywords: [
       "ptcb exam prep",
-      "ptcb practice test 2025",
-      "ptcb practice test 2026",
+      "ptcb anki deck",
       "ptce flashcards",
-      "free ptcb practice test",
+      "pharmacy technician anki",
+      "ptcb brand generic flashcards",
     ],
     intro:
       "US pharmacy technician candidates take the free 90-question PTCB mock first, then drill weak domains with daily brand/generic and sig-code flashcards. Pair with the 2026 printable study guide for domain chapters and an additional 80-question PDF practice exam.",
   },
   "ptcb-study-guide-2026": {
-    title: "Best PTCB Study Guide 2026 | PDF + 80Q Exam + Free Mock",
-    headline: "Best PTCB Study Guide 2026 — Printable PTCE Review + Practice Test",
+    title: "PTCB Study Guide 2026 | PDF + 80Q Exam + Free Mock",
+    headline: "PTCB Study Guide 2026 — Printable PTCE Review + Practice Test",
     studyLabel: "PTCB / PTCE exam prep",
     description:
-      "Best independent PTCB study guide for the January 2026 PTCE: 30-page PDF with DSCSA-weighted Federal Requirements, 80-question practice exam, drug/sig/math cheat sheets, free 90-question timed online mock, and 300-card Anki deck — not a free blog still teaching removed compounding topics.",
+      "Independent PTCB study guide for the January 2026 PTCE: 30-page PDF with DSCSA-weighted Federal Requirements, 80-question practice exam, and drug/sig/math cheat sheets. Pairs with UniPrep2Go’s free 90-question timed online mock and a separate 300-card Anki deck (sold separately) — not a free blog still teaching removed compounding topics.",
     keywords: [
       "best ptcb study guide 2026",
       "ptcb study guide 2026",
-      "ptce practice exam",
+      "ptce practice exam pdf",
       "pharmacy technician study guide pdf",
-      "free ptcb practice test",
       "ptcb cheat sheet",
       "ptce 2026 blueprint",
     ],
     intro:
-      "Printable 2026 blueprint chapters beat outdated free guides: Federal Requirements at 18.75% with DSCSA, an 80-question PDF exam, then the free 90-question online mock and Anki drills for weak domains — one stack, not three random websites.",
+      "Printable 2026 blueprint chapters beat outdated free guides: Federal Requirements at 18.75% with DSCSA and an 80-question PDF exam. Use the free 90-question online mock for timed scoring, then the companion Anki deck (separate purchase) for weak-domain drills.",
   },
   "california-real-estate-exam-anki-deck": {
     title: "Best CA Real Estate Anki | 400 Cards + Free CA Mock",
@@ -1039,9 +1038,9 @@ export function buildDeckSearchFaqs(deck: SeoDeck) {
     });
   } else if (deck.slug === "ptcb-study-guide-2026") {
     faqs.push({
-      question: "Does this pair with the PTCB Anki deck?",
+      question: "Is there a free PTCB practice test with this guide?",
       answer:
-        "Yes. The PDF and 300-card Anki deck share the same validated item bank. Read the domain chapters and take the 80-question practice exam in the guide; use the Anki deck for spaced-repetition drills on your phone between shifts.",
+        "Yes. Take the free 90-question PTCB mock at /mock-exams/ptcb-pharmacy-technician-mock for timed domain scoring. The PDF’s 80-question exam and the separate 300-card Anki deck are for remediation — Anki is sold separately.",
     });
   }
 

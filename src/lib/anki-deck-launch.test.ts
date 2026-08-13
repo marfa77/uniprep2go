@@ -45,6 +45,7 @@ describe("anki-deck-launch", () => {
 
   it("launches wave money SKUs but keeps state-RE / other wave decks planned for traffic", () => {
     expect(isLaunchableAnkiDeckSlug("series-65-anki-deck")).toBe(true);
+    expect(isLaunchableAnkiDeckSlug("ace-cpt-anki-deck")).toBe(true);
     expect(isLaunchableAnkiDeckSlug("fl-real-estate-anki-deck")).toBe(false);
     expect(isLaunchableAnkiDeckSlug("cdl-general-knowledge-anki-deck")).toBe(false);
 
@@ -54,6 +55,25 @@ describe("anki-deck-launch", () => {
     expect(money?.facts.cards).toBe("60");
     expect(money?.sampleCards.length).toBeGreaterThanOrEqual(3);
     expect(money?.sampleCards[0]?.question.length).toBeGreaterThan(20);
+
+    const ace = getCatalogDeckBySlug("ace-cpt-anki-deck");
+    expect(ace?.status).toBe("available");
+    expect(ace?.facts.cards).toBe("300");
+    expect(ace?.checkoutUrl).toContain("gumroad.com/l/ace-cpt-anki-deck");
+    expect(ace?.lastUpdated).toBe("2026-08-13");
+    expect(ace?.sampleCards).toHaveLength(3);
+    expect(ace?.sampleCards[0]?.imageUrl).toBe("/samples/ace-cpt-anki-deck-sample-1.webp");
+    expect(ace?.sampleCards.map((card) => card.question)).toEqual([
+      "The primary purpose of a preparticipation health screening is to:",
+      "Informed consent for training should include:",
+      "A client reports chest pain during exertion. The safest immediate action is to:",
+    ]);
+    expect(ace?.sampleCards.map((card) => card.imageUrl)).toEqual([
+      "/samples/ace-cpt-anki-deck-sample-1.webp",
+      "/samples/ace-cpt-anki-deck-sample-2.webp",
+      "/samples/ace-cpt-anki-deck-sample-3.webp",
+    ]);
+    expect(new Set(ace?.sampleCards.map((card) => card.answer)).size).toBe(3);
 
     const stateRe = getDeckBySlug("fl-real-estate-anki-deck");
     expect(stateRe?.status).toBe("planned");

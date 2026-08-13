@@ -31,7 +31,9 @@ export function DeckSeoSections({ deck }: DeckSeoSectionsProps) {
         </li>
         <li className="rounded-2xl bg-[#18140f]/5 px-4 py-3">{contentLabel}</li>
         <li className="rounded-2xl bg-[#18140f]/5 px-4 py-3">
-          Topic coverage table and samples on this page
+          {deck.status === "planned" || deck.sampleCards.length === 0
+            ? "Topic coverage table on this page"
+            : "Topic coverage table and samples on this page"}
         </li>
         <li className="rounded-2xl bg-[#18140f]/5 px-4 py-3">
           {linkedMocks.length > 1

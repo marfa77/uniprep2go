@@ -12,16 +12,52 @@ description: >-
 
 **Under-key default:** when the user names a certification, run the **full pipeline** below without asking permission for each step. Orchestrate with subagents for bank gen, validation, apkg, and Gumroad when useful; parent agent validates gates and deploys.
 
+## Fast ship handoff (mandatory — do not stretch)
+
+User cadence (keep ACE-style ships under one writer pass + one review):
+
+| Phase | Who | Exit |
+|-------|-----|------|
+| **A. Write** | Parent agent | Bank expand **once** → apkg **once** → Gumroad → SEO/GEO → focused tests → gate READY → **STOP** |
+| **B. Review** | Best model (Grok 4.6 / Opus) fix-first | P0/P1 fixed; **no** second full bank rewrite unless content P0 |
+| **C. Screenshots** | User | Drop 3 Anki captures → agent converts to `public/samples/{deckSlug}-sample-{1,2,3}.webp` |
+| **D. Publish** | Parent after user OK | commit + push `main` (Vercel) |
+
+**Speed killers (forbidden):**
+- Mixing unrelated audits into the active SKU ship
+- Regenerating bank/apkg/assets in a loop before review
+- Inventing blank/identical sample webps
+- Skipping the gate script for the correct path (building vs wave)
+- Polishing for hours after gate READY instead of handing to review
+
+## Path picker (building vs wave)
+
+| Path | When | Spec | Gumroad | Gate |
+|------|------|------|---------|------|
+| **Building** | HVAC/LEED/MRICS-style registry certs | `building-deck-specs.json` + `certifications/registry.json` | `setup:gumroad-building-decks` | `npm run validate:certification -- --deck {deckSlug}` |
+| **Wave** | Health/CDL/niche (ACE CPT, NASM, …) | `wave-deck-specs.json` + `wave-anki-decks.json` | `setup:gumroad-wave-decks` | `npm run validate:wave-deck -- --slug {deckSlug}` |
+
+Wave apkg:
+
+```bash
+cd "/Users/pavelveselov/Projects/Anki Generator"
+PYTHONPATH=. python3 -m internal_deck_generator.py.wave_deck_pipeline \
+  --deck-slug {deckSlug} \
+  --uniprep2go-root "/Users/pavelveselov/Projects/uniprep2go"
+```
+
+Force-launch non-money wave cohorts via `WAVE_FORCE_LAUNCH_SLUGS` in `anki-deck-launch.ts`.
+
 ## What the user provides
 
 **Required**
-- Certification / exam name (e.g. "Digital SAT", "WELL AP", "EPA 608")
+- Certification / exam name (e.g. "Digital SAT", "WELL AP", "EPA 608", "ACE CPT")
 
 **Optional (agent researches if missing)**
 - Exam body, official format, scoring axes, topic domains, price override, audience
 
 **User-only asset (do not invent as final product art)**
-- **Sample card screenshots** (`public/samples/{deckSlug}-sample-{1,2,3}.webp`) — wait for user captures when possible. Until then ship with cover + placeholders or bank-styled previews, then swap when screenshots arrive.
+- **Sample card screenshots** (`public/samples/{deckSlug}-sample-{1,2,3}.webp`) — wait for user captures. Until then use cover; **never** blank/identical synthetic webps as “samples.”
 
 **Do not create mocks for `language` category decks** (DELF, CIPLE, DELE, etc.). Language = Anki-only.
 
@@ -112,13 +148,17 @@ Launch layer (`anki-deck-launch.ts`) flips planned → available when Gumroad pe
 - After bank QA + validation: set `status: "live"` so `shouldIndexMockExam` indexes
 - Deck SEO profile in `src/lib/deck-seo.ts` when framing is non-default
 
-### 5. LLM / GEO
+### 5. LLM / GEO (same writer pass — before review)
 
 | File | Action |
 |------|--------|
-| `src/lib/exam-facts.ts` | Profile + `deckExamKeyMap` (required for academic/high-intent certs) |
-| `src/lib/exam-llm-layer.ts` | `HIGH_INTENT_MOCK_BLOCKS` with real query + disambiguation |
-| `llms.txt` | Auto via `llm-docs.ts` |
+| `src/lib/exam-facts.ts` | Profile + `deckExamKeyMap` (required for academic/high-intent / money SKUs) |
+| `src/lib/exam-llm-layer.ts` | Commercial high-intent cite (curated `/llms.txt`) **and/or** `HIGH_INTENT_MOCK_BLOCKS` |
+| `src/lib/llm-docs.ts` | Citation one-liner + top citation query when commercial |
+| `src/lib/deck-money-page-content.ts` | Pitch + unique content for money pages |
+| `public/llms.txt` | `npm run llms:export` before STOP for review |
+
+Note: `HIGH_INTENT_MOCK_BLOCKS` alone may be truncated by `buildExamHighIntentSection(12)`. Money SKUs need the **commercial** section to appear in curated `/llms.txt`.
 
 ### 6. Covers + Gumroad thumbnail (agent-owned)
 
@@ -158,51 +198,66 @@ When bank runnable + validation report exists:
 2. Confirm `isMockExamRunnable(mockSlug) === true`
 3. Confirm `shouldIndexMockExam(mockSlug) === true`
 
-### 10. .apkg export (Anki Generator)
+### 10. .apkg export (Anki Generator) — once per writer pass
 
 **Canonical vault only:** `/Users/pavelveselov/Projects/Anki Generator` (sibling of `uniprep2go`). Never `CIPLE A2/Anki Generator` or `--out=../Anki Generator` from `ciple-master`.
 
 ```bash
-# Sync building_deck_specs.json into Anki Generator if needed
 cd "/Users/pavelveselov/Projects/Anki Generator"
+# Building:
 PYTHONPATH=. python3 -m internal_deck_generator.py.building_deck_pipeline \
-  --deck-slug {deckSlug} \
-  --uniprep2go-root "/Users/pavelveselov/Projects/uniprep2go"
-# Expect: out/building/{filePrefix}_FULL_{cardCount}.apkg
+  --deck-slug {deckSlug} --uniprep2go-root "/Users/pavelveselov/Projects/uniprep2go"
+# Wave:
+PYTHONPATH=. python3 -m internal_deck_generator.py.wave_deck_pipeline \
+  --deck-slug {deckSlug} --uniprep2go-root "/Users/pavelveselov/Projects/uniprep2go"
 ```
 
 ### 11. Gumroad create + assets + publish
 
+**Hard rule:** every Gumroad product must have rich description + 3 sample screenshots. Never leave cover-only / one-line copy.
+
 ```bash
 cd uniprep2go
-node -e "import {ensureGumroadAccessToken} from './scripts/lib/gumroad-auth.mjs'; console.log(ensureGumroadAccessToken().source)"
+# Building:
 npm run setup:gumroad-building-decks -- --slug {deckSlug}
-# If product exists and apkg arrived later:
-npm run setup:gumroad-building-decks -- --slug {deckSlug} --assets-only
+python3 scripts/polish-building-gumroad.py --slug {deckSlug}
+python3 scripts/publish-building-gumroad-landings.py --slug {deckSlug}
+# Wave:
+npm run setup:gumroad-wave-decks -- --slug {deckSlug}
+# After user sample screenshots land:
+npm run setup:gumroad-wave-decks -- --slug {deckSlug} --polish-only
+# Later apkg refresh (also re-polishes description + samples):
+npm run setup:gumroad-wave-decks -- --slug {deckSlug} --assets-only
 ```
 
-Catalog must end with non-null `gumroadProductId`, `shortUrl`, `apkgUploadedAt`, `publishedAt`.
+Catalog must end with non-null `gumroadProductId`, `shortUrl`, `apkgUploadedAt`, `publishedAt`, and for wave: `descriptionPolishedAt` + `samplesUploadedAt`.
 
-### 12. Sample screenshots (USER)
+### 12. Sample screenshots (USER — phase C)
 
-Paths expected by deck:
-`public/samples/{deckSlug}-sample-1.webp` … `-sample-3.webp`
+Paths: `public/samples/{deckSlug}-sample-1.webp` … `-sample-3.webp`
 
 Agent:
-1. Wire `sampleCards[].imageUrl` in `decks.ts`
-2. On user drop: convert/resize (~701×1024 WebP) and commit
-3. Do **not** block Gumroad/live/deploy waiting for screenshots — swap later
+1. Wire `sampleCards[].imageUrl` paths early
+2. **STOP for user captures** — do not fabricate blank webps
+3. On drop: convert/resize (~701×1024 WebP), replace, re-gate samples
+4. Do **not** block Gumroad publish waiting for screenshots — swap in phase C/D
 
-### 13. Gates + tests + deploy
+### 13. Gates + tests → review → deploy
 
 ```bash
-npm run validate:certification -- --mock {mockSlug}   # 0 blocking failures
-npm test
-npm run build
-git add … && git commit && git push origin main       # Vercel production
+# Building:
+npm run validate:certification -- --deck {deckSlug}
+# Wave:
+npm run validate:wave-deck -- --slug {deckSlug}
+
+npx vitest run src/lib/anki-deck-launch.test.ts src/lib/exam-facts.test.ts src/lib/llm-docs.test.ts
+npm run llms:export
+# STOP → launch best-model fix-first review
+# After review + user screenshots + user OK:
+git add … && git commit && git push origin main
 ```
 
-**Do not claim done** until `validate:certification` has zero blocking failures and Gumroad product is live with apkg (unless user explicitly deferred commerce).
+**Do not claim done** until the correct gate has zero blocking failures, Gumroad has apkg, GEO cites exist for money SKUs, and user has OK’d publish (screenshots swapped or explicitly deferred).
 
 ## Definition of done
 
@@ -227,13 +282,16 @@ Warnings: gumroad-live, mock-validation, llm-high-intent, homepage-links, mock-i
 
 | Script | Purpose |
 |--------|---------|
-| `scaffold:certification` | Registry + checklist |
-| `validate:certification` | Blocking gates |
+| `scaffold:certification` | Registry + checklist (building) |
+| `validate:certification` | Blocking gates (building) |
+| `validate:wave-deck` | Blocking gates (wave / ACE / niche) |
 | `expand-*-bank-local.py` | **Local** bank gen (required) |
 | `generate:mock-banks` | ❌ Do not use for banks |
 | `validate:mock-banks` | Gemini cross-validation (+ `--apply`) |
 | `generate:deck-covers` | Cover + `--gumroad-thumbnails` |
-| `setup:gumroad-building-decks` | Create / assets / publish |
+| `setup:gumroad-building-decks` | Building Gumroad |
+| `setup:gumroad-wave-decks` | Wave Gumroad |
+| `llms:export` | Refresh `public/llms.txt` |
 
 ## Orchestration tips
 

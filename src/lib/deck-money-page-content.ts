@@ -24,6 +24,8 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "300 Top-Off cards for suitability, products, and order flow — plus a free 60-question Series 7 mock.",
   "ptcb-pharmacy-technician-anki-deck":
     "300 PTCE cards for top-200 drugs, sig codes, and pharmacy math — pairs with the 2026 printable study guide PDF.",
+  "ace-cpt-anki-deck":
+    "300 ACE CPT cards for client screening, program design, spotting cues, and professional conduct — plus a free 60-question readiness check.",
   "ptcb-study-guide-2026":
     "Best 2026 PTCE printable guide: DSCSA-weighted Federal Requirements, 80-question exam, cheat sheets + free 90Q online mock.",
   "mrics-quantity-surveying-anki-deck":
@@ -43,8 +45,10 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Job-function outline coverage: suitability, options strategies, margin, municipal rules, and trade processing. Pair 15–20 cards per day with the free Top-Off mock to catch weak suitability and products chapters early.",
   "ptcb-pharmacy-technician-anki-deck":
     "Front-load brand/generic pairs, sig abbreviations, DEA schedules, DSCSA, and days-supply math — aligned to the January 2026 PTCE blueprint. Pair with the printable study guide for domain chapters and an 80-question practice exam; drill 10–15 cards per shift on your phone.",
+  "ace-cpt-anki-deck":
+    "Cards track ACE CPT competency themes: preparticipation screening and consent, FITT-VP program design, cueing and spotting under load, and scope/ethics/business boundaries. Run the free 60-question readiness check first, then filter Anki to weak topics — not a NASM/ISSA mega-dump.",
   "ptcb-study-guide-2026":
-    "Four chapters sized to 2026 domain weights (Medications 35%, Federal 18.75% with DSCSA, Patient Safety 23.75%, Order Entry 22.5%). The 80-question exam mirrors PTCE scored length (28/15/19/18). Free 90-question online mock + 300-card Anki share the same bank — beats free blogs still teaching removed compounding topics.",
+    "Four chapters sized to 2026 domain weights (Medications 35%, Federal 18.75% with DSCSA, Patient Safety 23.75%, Order Entry 22.5%). The 80-question exam mirrors PTCE scored length (28/15/19/18). Pair with the free 90-question online mock and the separate 300-card Anki deck — beats free blogs still teaching removed compounding topics.",
   "mrics-quantity-surveying-anki-deck":
     "QS-pathway cards for NRM measurement, cost planning, JCT/NEC contract practice, procurement, and ethics — paired with a free timed QS readiness check. Ownable Anki .apkg for APC interview recall, not a Brainscape subscription dump.",
   "servsafe-manager-anki-deck":
@@ -118,15 +122,25 @@ export const positioningOverrides: Partial<
     summaryProse:
       "PTCE rewards drug names, sig codes, and math speed — not 2,000 low-yield cards. Three hundred validated prompts beat a mega-pack when you have 15 minutes between fills.",
   },
+  "ace-cpt-anki-deck": {
+    ourEdge: [
+      "300 cards across screening, program design, instruction/spotting, and professional conduct",
+      "Free 60-question ACE CPT readiness check with topic scoring",
+      "Ownable Gumroad .apkg — not a subscription Q-bank",
+      "Scope-of-practice and safety boundaries front-loaded",
+    ],
+    summaryProse:
+      "ACE CPT rewards screening judgment, program progression, and professional boundaries — not memorizing 2,000 random anatomy flashcards. Three hundred focused prompts plus one free timed mock beat a mega-pack when you study between client sessions.",
+  },
   "ptcb-study-guide-2026": {
     ourEdge: [
       "30 pages aligned to January 2026 PTCE domain weights in the table",
       "80-question practice exam with domain-scored answer key and rationales",
       "3 print-ready cheat sheets: 60 drugs, 45 sig codes, math formulas",
-      "Free 90-question timed online mock + same bank as the 300-card Anki deck",
+      "Links to free 90-question timed online mock + companion 300-card Anki (separate SKUs)",
     ],
     summaryProse:
-      "Most free PTCB guides still teach the old outline or stop at a blog checklist. This PDF matches the 2026 blueprint — Federal Requirements at 18.75% with DSCSA — then hands you an 80-question exam, a free 90-question online mock, and Anki drills.",
+      "Most free PTCB guides still teach the old outline or stop at a blog checklist. This PDF matches the 2026 blueprint — Federal Requirements at 18.75% with DSCSA — then hands you an 80-question exam; pair with the free 90-question online mock and optional Anki drills.",
   },
   "mrics-quantity-surveying-anki-deck": {
     ourEdge: [
@@ -682,9 +696,21 @@ Roughly 300 prompts organized for the January 2026 PTCE: top 200 brand/generic p
 
 Technicians miss look-alike/sound-alike pairs, misread sig abbreviations, and forget schedule II storage rules. Cards repeat high-error pairs the 2026 blueprint emphasizes.`,
 
+  "ace-cpt-anki-deck": `### What is inside
+
+300 prompts mapped to ACE CPT competency themes: client interviewing and preparticipation screening, FITT-VP program design and progression, instruction and spotting under load, and professional conduct / risk management / business ethics. Cards force session decisions — when to refer, how to regress, what stays inside trainer scope — not trivia slogans.
+
+### Plan with the free ACE mock
+
+**Start:** Take the [free 60-question ACE CPT readiness check](/mock-exams/ace-cpt-readiness-check) for topic scores. **Weeks 3–2:** 20 Anki cards/day on your lowest domain. **Final week:** Retake the mock; drill only missed stems plus professional-scope cards.
+
+### Pitfalls this deck targets
+
+Candidates skip screening, load dysfunctional patterns, or drift into diagnosis and medical nutrition therapy. Cards isolate those stop-or-refer boundaries.`,
+
   "ptcb-study-guide-2026": `### What is inside
 
-Four review chapters sized to January 2026 PTCE weights: Medications (35%), Federal Requirements (18.75% — including DSCSA), Patient Safety & QA (23.75%), and Order Entry & Processing (22.5%). The 80-question practice exam matches real PTCE scored length (28/15/19/18) with a domain-scored answer key. Three cheat sheets cover 60 high-yield drugs A–Z, 45 prescription sig codes, and pharmacy math formulas with worked examples. The free 90-question online mock and 300-card Anki deck share the same validated bank.
+Four review chapters sized to January 2026 PTCE weights: Medications (35%), Federal Requirements (18.75% — including DSCSA), Patient Safety & QA (23.75%), and Order Entry & Processing (22.5%). The 80-question practice exam matches real PTCE scored length (28/15/19/18) with a domain-scored answer key. Three cheat sheets cover 60 high-yield drugs A–Z, 45 prescription sig codes, and pharmacy math formulas with worked examples. The free 90-question online mock and 300-card Anki deck are companion products (not bundled inside the PDF download).
 
 ### 4-week study plan with the Anki deck
 
@@ -692,7 +718,7 @@ Four review chapters sized to January 2026 PTCE weights: Medications (35%), Fede
 
 ### Pitfalls this deck targets
 
-Candidates still study removed compounding/alligation topics or under-weight Federal Requirements. This guide front-loads DSCSA and DEA schedule rules at the new 18.75% weight — every practice question maps to a verified card in the shared item bank.`,
+Candidates still study removed compounding/alligation topics or under-weight Federal Requirements. This guide front-loads DSCSA and DEA schedule rules at the new 18.75% weight — then routes weak domains to the free mock and optional Anki drills.`,
 
   "mrics-quantity-surveying-anki-deck": `### What is inside
 
