@@ -372,20 +372,65 @@ function pickChannelPathRanks(
   periodCounts: Record<string, number> | undefined,
   recentRanked: RankedPath[],
 ): { ranked: RankedPath[]; source: "all-time" | "period" | "recent" } {
-  const lifetimeRanked = rankPathsFromUniqueCounts(lifetimeCounts);
-  if (lifetimeRanked.length > 0) {
-    return { ranked: lifetimeRanked, source: "all-time" };
-  }
-
+  // Prefer the current period so the pulse moves after resets / new traffic.
+  // All-time unique counts of 1–2u look "stuck" if they always win over period.
   const periodRanked = rankPathsFromUniqueCounts(periodCounts);
   if (periodRanked.length > 0) {
     return { ranked: periodRanked, source: "period" };
   }
 
+  const lifetimeRanked = rankPathsFromUniqueCounts(lifetimeCounts);
+  if (lifetimeRanked.length > 0) {
+    return { ranked: lifetimeRanked, source: "all-time" };
+  }
+
   return { ranked: recentRanked, source: "recent" };
 }
 
-/** Top pages from Google vs ChatGPT/LLM — prefer all-time path∩channel, else period, else recent. */
+function formatChannelTopPagesBlock(options: {
+  label: string;
+  primary: { ranked: RankedPath[]; source: "all-time" | "period" | "recent" };
+  lifetimeRanked: RankedPath[];
+  recentRanked: RankedPath[];
+  limit: number;
+  emptyHint: string;
+}) {
+  const { label, primary, lifetimeRanked, recentRanked, limit, emptyHint } = options;
+  const lines = [
+    `Top pages (${label} · ${primary.source}):`,
+    ...formatRankedPathLines(
+      primary.ranked,
+      limit,
+      emptyHint,
+      primary.source !== "recent",
+    ),
+  ];
+
+  // When primary is all-time (period empty), also surface the recent window so the
+  // digest is not frozen on old 1u lifetime pages while new hits sit only in recentEvents.
+  if (primary.source === "all-time" && recentRanked.length > 0) {
+    lines.push(
+      `Top pages (${label} · recent):`,
+      ...formatRankedPathLines(recentRanked, limit, "none yet", false),
+    );
+  }
+
+  // When primary is period, keep a short all-time snapshot if it differs.
+  if (
+    primary.source === "period" &&
+    lifetimeRanked.length > 0 &&
+    lifetimeRanked[0]?.path !== primary.ranked[0]?.path
+  ) {
+    lines.push(
+      `Top pages (${label} · all-time):`,
+      ...formatRankedPathLines(lifetimeRanked, Math.min(3, limit), "none yet", true),
+    );
+  }
+
+  return lines;
+}
+
+/** Top pages from Google vs ChatGPT/LLM — prefer period path∩channel, else all-time, else recent. */
 export function formatSearchAndLlmTopPages(stats: FunnelStats, limit = 5) {
   const googleLifetime = stats.visitors.lifetimeByChannel.google ?? 0;
   const llmLifetime =
@@ -396,6 +441,13 @@ export function formatSearchAndLlmTopPages(stats: FunnelStats, limit = 5) {
 
   const googleRecent = aggregateTopPathsByChannels(stats.recentEvents, ["google"]);
   const llmRecent = aggregateTopPathsByChannels(stats.recentEvents, ["chatgpt", "llm"]);
+
+  const googleLifetimePaths = rankPathsFromUniqueCounts(
+    stats.visitors.lifetimePathsByChannel?.google,
+  );
+  const llmLifetimePaths = rankPathsFromUniqueCounts(
+    mergeChannelPathCounts(stats.visitors.lifetimePathsByChannel, ["chatgpt", "llm"]),
+  );
 
   const google = pickChannelPathRanks(
     stats.visitors.lifetimePathsByChannel?.google,
@@ -410,21 +462,23 @@ export function formatSearchAndLlmTopPages(stats: FunnelStats, limit = 5) {
   const recentWindow = stats.recentEvents.length || 100;
 
   return [
-    `Top pages (Google · ${google.source}):`,
-    ...formatRankedPathLines(
-      google.ranked,
+    ...formatChannelTopPagesBlock({
+      label: "Google",
+      primary: google,
+      lifetimeRanked: googleLifetimePaths,
+      recentRanked: googleRecent.ranked,
       limit,
-      `none yet (all-time Google uniques: ${googleLifetime}; period: ${googlePeriod}; checked last ${recentWindow} events)`,
-      google.source !== "recent",
-    ),
+      emptyHint: `none yet (all-time Google uniques: ${googleLifetime}; period: ${googlePeriod}; checked last ${recentWindow} events)`,
+    }),
     "",
-    `Top pages (LLM · ChatGPT+LLM · ${llm.source}):`,
-    ...formatRankedPathLines(
-      llm.ranked,
+    ...formatChannelTopPagesBlock({
+      label: "LLM · ChatGPT+LLM",
+      primary: llm,
+      lifetimeRanked: llmLifetimePaths,
+      recentRanked: llmRecent.ranked,
       limit,
-      `none yet (all-time LLM uniques: ${llmLifetime}; period: ${llmPeriod}; checked last ${recentWindow} events)`,
-      llm.source !== "recent",
-    ),
+      emptyHint: `none yet (all-time LLM uniques: ${llmLifetime}; period: ${llmPeriod}; checked last ${recentWindow} events)`,
+    }),
   ].join("\n");
 }
 

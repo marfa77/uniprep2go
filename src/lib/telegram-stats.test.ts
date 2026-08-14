@@ -268,7 +268,7 @@ describe("telegram stats", () => {
     expect(block).not.toContain("/decks/cfa-level-1-anki-deck");
   });
 
-  it("prefers all-time path∩channel ranks over period and recent", () => {
+  it("prefers period path∩channel ranks over all-time when period has data", () => {
     const block = formatSearchAndLlmTopPages({
       ...sampleStats,
       recentEvents: [],
@@ -309,11 +309,58 @@ describe("telegram stats", () => {
       },
     });
 
+    expect(block).toContain("Top pages (Google · period):");
+    expect(block).toContain("/blog/us-naturalization-civics-test-100-questions-only-10 — 5u");
+    expect(block).toContain("Top pages (LLM · ChatGPT+LLM · period):");
+    expect(block).toContain("/blog/czech-cce-language-vs-realie-civics-two-exams — 2u");
+    // All-time still shown as secondary when leader differs
     expect(block).toContain("Top pages (Google · all-time):");
     expect(block).toContain("/decks/california-real-estate-exam-anki-deck — 8u");
-    expect(block).toContain("Top pages (LLM · ChatGPT+LLM · all-time):");
-    expect(block).toContain("/decks/frm-part-1-anki-deck — 3u");
-    expect(block).not.toContain("/blog/us-naturalization-civics-test-100-questions-only-10");
+  });
+
+  it("falls back to all-time when period is empty, and still shows recent when present", () => {
+    const recentEvents: FunnelEvent[] = [
+      {
+        eventId: "g1",
+        name: "page_view",
+        deckSlug: "sie-exam-anki-deck",
+        occurredAt: "2026-08-14T10:00:00.000Z",
+        visitorId: "g-new",
+        path: "/mock-exams/sie-full-mock",
+        referrer: "https://www.google.com/",
+      },
+    ];
+
+    const block = formatSearchAndLlmTopPages({
+      ...sampleStats,
+      recentEvents,
+      visitors: {
+        ...sampleStats.visitors,
+        pathsByChannel: {
+          google: {},
+          chatgpt: {},
+          llm: {},
+          direct: {},
+          other: {},
+        },
+        lifetimePathsByChannel: {
+          google: {
+            "/decks/california-real-estate-exam-anki-deck": 2,
+          },
+          chatgpt: {
+            "/decks/frm-part-1-anki-deck": 1,
+          },
+          llm: {},
+          direct: {},
+          other: {},
+        },
+      },
+    });
+
+    expect(block).toContain("Top pages (Google · all-time):");
+    expect(block).toContain("/decks/california-real-estate-exam-anki-deck — 2u");
+    expect(block).toContain("Top pages (Google · recent):");
+    expect(block).toContain("/mock-exams/sie-full-mock");
   });
 
   it("falls back to period path∩channel ranks when all-time is empty", () => {
