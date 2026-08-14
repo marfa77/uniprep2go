@@ -7,9 +7,9 @@ alwaysApply: true
 
 User workflow (do not invent a slower one):
 
-1. **Writer (this chat)** — one pass: bank expand once → apkg once → Gumroad → SEO/GEO wire → focused tests → gate script → **STOP**
+1. **Writer (this chat)** — one pass: bank expand once → apkg once → Gumroad create/assets → SEO/GEO wire → focused tests → gate script → **STOP**
 2. **Best-model review** — fix-first subagent (Grok 4.6 / Opus). No second bank rewrite unless P0 content bug
-3. **User screenshots** — real Anki card captures → `public/samples/{deckSlug}-sample-{1,2,3}.webp`
+3. **User screenshots** — real Anki card captures → `public/samples/{deckSlug}-sample-{1,2,3}.webp` → **immediately** `npm run setup:gumroad-wave-decks -- --slug {slug} --polish-only` so Gumroad gets rich description + gallery **and** custom landing **Sample cards body** (not cover-only / site-only)
 4. **Publish** — commit/push only after user OK; `llms:export` already done in step 1
 
 ## Path picker
@@ -19,16 +19,23 @@ User workflow (do not invent a slower one):
 | Building cert | `building-deck-specs` + `certifications/registry` | `building_deck_pipeline` | `setup:gumroad-building-decks` | `npm run validate:certification -- --deck {slug}` |
 | Wave / niche | `wave-deck-specs` + `wave-anki-decks.json` | `wave_deck_pipeline` | `setup:gumroad-wave-decks` | `npm run validate:wave-deck -- --slug {slug}` |
 
-ACE CPT and most health/CDL SKUs are **wave**, not building registry.
+ACE CPT, Luxembourg Vivre ensemble, and most health/CDL SKUs are **wave**, not building registry.
 
-## Gumroad product (always)
+## Gumroad product (always — hard gate)
 
 Every published Anki SKU must have on Gumroad:
 1. **Rich HTML description** (exam context, what's inside, FAQ, disclaimer, site/mock links)
-2. **3 sample card screenshots** in the product gallery (`--preview-image`)
+2. **3 sample screenshots in the product body** via custom landing Sample cards (`publish-wave-gumroad-landings.py` / building equivalent) — Gumroad strips `<img>` from default description
+3. Gallery previews via `--preview-image` (wave polish also uploads these)
 
-Wave: `npm run setup:gumroad-wave-decks -- --slug {slug} --polish-only`  
-(after `public/samples/{slug}-sample-{1,2,3}.webp` exist). Assets upload also polishes.  
+**Phase C is incomplete until polish-only succeeds** (description + gallery + landing body). Site webps alone are not enough.
+
+Wave:
+```bash
+# after user drops 3 Anki screenshots into public/samples/{slug}-sample-{1,2,3}.webp
+npm run setup:gumroad-wave-decks -- --slug {slug} --polish-only
+# (calls publish-wave-gumroad-landings.py for Sample cards in product body)
+```
 Building: `polish-building-gumroad.py` + `publish-building-gumroad-landings.py`.
 
 Do not leave a live Gumroad product with thin one-paragraph copy and cover-only images.

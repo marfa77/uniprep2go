@@ -86,6 +86,11 @@ describe("anki-deck-launch", () => {
       "/samples/luxembourg-vivre-ensemble-anki-deck-sample-1.webp",
     );
     expect(lux?.sampleCards[0]?.question).toContain("forme d'État");
+    expect(lux?.sampleCards.map((card) => card.question)).toEqual([
+      "Quelle est la forme d'État du Grand-Duché de Luxembourg?",
+      "Qui est le chef d'État du Grand-Duché de Luxembourg?",
+      "Dans quelle ville siège le gouvernement luxembourgeois?",
+    ]);
 
     const stateRe = getDeckBySlug("fl-real-estate-anki-deck");
     expect(stateRe?.status).toBe("planned");

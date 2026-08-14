@@ -232,15 +232,20 @@ npm run setup:gumroad-wave-decks -- --slug {deckSlug} --assets-only
 
 Catalog must end with non-null `gumroadProductId`, `shortUrl`, `apkgUploadedAt`, `publishedAt`, and for wave: `descriptionPolishedAt` + `samplesUploadedAt`.
 
-### 12. Sample screenshots (USER — phase C)
+### 12. Sample screenshots (USER — phase C) — site + Gumroad body
 
 Paths: `public/samples/{deckSlug}-sample-1.webp` … `-sample-3.webp`
 
 Agent:
 1. Wire `sampleCards[].imageUrl` paths early
 2. **STOP for user captures** — do not fabricate blank webps
-3. On drop: convert/resize (~701×1024 WebP), replace, re-gate samples
-4. Do **not** block Gumroad publish waiting for screenshots — swap in phase C/D
+3. On drop: convert/resize (~701×1024 WebP), replace, sync `sampleCards` copy to match the 3 cards
+4. **Mandatory Gumroad body update** (not site-only):
+   ```bash
+   npm run setup:gumroad-wave-decks -- --slug {deckSlug} --polish-only
+   ```
+   This sets rich description, uploads gallery previews, **and** publishes a custom Gumroad landing with **Sample cards** images in the product body (`publish-wave-gumroad-landings.py`). Building path: `publish-building-gumroad-landings.py`.
+5. Do **not** block initial Gumroad create waiting for screenshots — swap in phase C, but Phase C is incomplete until polish-only + landing succeed
 
 ### 13. Gates + tests → review → deploy
 

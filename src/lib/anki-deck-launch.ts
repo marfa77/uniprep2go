@@ -167,15 +167,13 @@ const LUXEMBOURG_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
     imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-1.webp",
   },
   {
-    question: "Que signifie l'acronyme CNS dans le système de santé luxembourgeois ?",
-    answer: "(c) Caisse nationale de santé",
+    question: "Qui est le chef d'État du Grand-Duché de Luxembourg?",
+    answer: "(b) Le Grand-Duc",
     imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-2.webp",
   },
   {
-    question:
-      "Que signifie le terme 'frontaliers' dans le contexte du marché du travail luxembourgeois?",
-    answer:
-      "(b) Travailleurs résidant dans les pays voisins et travaillant au Luxembourg",
+    question: "Dans quelle ville siège le gouvernement luxembourgeois?",
+    answer: "(c) Luxembourg-Ville",
     imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-3.webp",
   },
 ];

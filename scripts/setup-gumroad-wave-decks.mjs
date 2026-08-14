@@ -14,7 +14,9 @@
  *   node scripts/setup-gumroad-wave-decks.mjs --assets-only
  *   node scripts/setup-gumroad-wave-decks.mjs --slug ace-cpt-anki-deck --polish-only
  *
- * Always ships rich HTML description + sample card screenshots (--preview-image)
+ * Always ships rich HTML description + sample screenshots:
+ *   1) --preview-image gallery
+ *   2) custom landing Sample cards body (publish-wave-gumroad-landings.py)
  * when public/samples/{slug}-sample-{1,2,3}.webp exist. Missing samples fail polish/assets.
  *
  * Env:
@@ -149,7 +151,7 @@ function buildProductDescription({ title, mockPath, apkgReady, spec }) {
 
   const samplesNote =
     resolveSampleWebps(deckSlug || "").length >= 3
-      ? `<hr><h2><strong>Sample cards</strong></h2><p>Real Anki screenshots from this deck (question, options, answer, and explanation) are shown in the product image gallery above.</p>`
+      ? `<hr><h2><strong>Sample cards</strong></h2><p>Real Anki screenshots from this deck (question, options, answer, and explanation) are shown in the <strong>Sample cards</strong> section on this product page and in the image gallery.</p>`
       : "";
 
   const countLine = count
@@ -191,6 +193,28 @@ ${topicItems}
   ].join("");
 }
 
+/** Keep only the first N covers so sample uploads stay under Gumroad's 8-preview limit. */
+function stripExtraCovers(productId, { keep = 1, dryRun = false } = {}) {
+  if (dryRun) return;
+  const raw = execSync(
+    `gumroad products view ${productId} --json --non-interactive --yes`,
+    { encoding: "utf8" },
+  );
+  const view = JSON.parse(raw);
+  const covers = (view.product || view).covers || [];
+  if (covers.length <= keep) {
+    console.log(`  covers: ${covers.length} (keep ${keep})`);
+    return;
+  }
+  const extra = covers.slice(keep);
+  for (const cover of [...extra].reverse()) {
+    const cid = cover?.id;
+    if (!cid) continue;
+    runGumroad(`products covers remove ${productId} ${cid}`, { dryRun: false });
+  }
+  console.log(`  covers: ${covers.length}→${keep} (stripped ${extra.length} extras)`);
+}
+
 /** Convert sample webps → JPEG and attach as Gumroad preview/gallery images. */
 function uploadSamplePreviews({ productId, slug, dryRun }) {
   const samples = resolveSampleWebps(slug);
@@ -200,6 +224,8 @@ function uploadSamplePreviews({ productId, slug, dryRun }) {
     );
   }
 
+  stripExtraCovers(productId, { keep: 1, dryRun });
+
   const workDir = mkdtempSync(join(tmpdir(), `gumroad-samples-${slug}-`));
   try {
     const jpgs = samples.map((webp, index) => {
@@ -207,12 +233,20 @@ function uploadSamplePreviews({ productId, slug, dryRun }) {
       execSync(`sips -s format jpeg "${webp}" --out "${jpg}"`, { stdio: "ignore" });
       return jpg;
     });
-    const previewFlags = jpgs.map((jpg) => `--preview-image "${jpg}"`).join(" ");
     console.log(`  samples: ${jpgs.length} preview screenshots`);
-    runGumroad(`products update ${productId} ${previewFlags}`, { dryRun });
+    for (const jpg of jpgs) {
+      runGumroad(`products update ${productId} --preview-image "${jpg}"`, { dryRun });
+    }
   } finally {
     rmSync(workDir, { recursive: true, force: true });
   }
+}
+
+/** Publish custom landing HTML with Sample cards images in the product body. */
+function publishSampleLanding({ slug, dryRun }) {
+  const cmd = `python3 scripts/publish-wave-gumroad-landings.py --slug ${slug}${dryRun ? " --dry-run" : ""}`;
+  console.log(`  landing: Sample cards body → Gumroad custom page`);
+  execSync(cmd, { cwd: root, stdio: "inherit" });
 }
 
 function resolveCoverPath(slug) {
@@ -490,17 +524,19 @@ async function syncProductAssets({
 
   uploadSamplePreviews({ productId, slug, dryRun: false });
   await putGumroadDescriptionAsync(productId, description, dryRun);
+  publishSampleLanding({ slug, dryRun: false });
   runGumroad(`products publish ${productId}`);
 
+  const refreshed = JSON.parse(readFileSync(CATALOG_PATH, "utf8"));
   catalog.products[slug] = {
-    ...record,
+    ...(refreshed.products[slug] ?? record),
     apkgUploadedAt: new Date().toISOString(),
     publishedAt: record.publishedAt ?? new Date().toISOString(),
     descriptionPolishedAt: new Date().toISOString(),
     samplesUploadedAt: new Date().toISOString(),
   };
 
-  console.log(`  assets + description + samples uploaded + product published`);
+  console.log(`  assets + description + samples + landing uploaded + product published`);
 }
 
 async function syncProductPolish({ slug, record, titles, getAllMockExams, catalog, dryRun }) {
@@ -520,19 +556,21 @@ async function syncProductPolish({ slug, record, titles, getAllMockExams, catalo
   const description = buildProductDescription({ title: name, mockPath, apkgReady, spec });
 
   if (dryRun) {
-    console.log(`  would polish description + upload 3 sample previews`);
+    console.log(`  would polish description + upload 3 sample previews + publish Sample cards landing`);
     return;
   }
 
   uploadSamplePreviews({ productId, slug, dryRun: false });
   await putGumroadDescriptionAsync(productId, description, false);
+  publishSampleLanding({ slug, dryRun: false });
   runGumroad(`products publish ${productId}`);
+  const refreshed = JSON.parse(readFileSync(CATALOG_PATH, "utf8"));
   catalog.products[slug] = {
-    ...record,
+    ...(refreshed.products[slug] ?? record),
     descriptionPolishedAt: new Date().toISOString(),
     samplesUploadedAt: new Date().toISOString(),
   };
-  console.log(`  description + samples polished + product published`);
+  console.log(`  description + samples + landing polished + product published`);
 }
 
 async function main() {

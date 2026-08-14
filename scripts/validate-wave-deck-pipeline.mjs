@@ -205,7 +205,23 @@ function evaluateWaveDeck(deckSlug, spec) {
     warn(
       "gumroad-polish",
       "Gumroad description + samples",
-      "Polish after samples exist (description + --preview-image gallery)",
+      "Polish after samples exist (description + gallery + Sample cards landing body)",
+    );
+  }
+
+  if (product?.landingPublishedAt) {
+    pass("gumroad-landing", "Gumroad Sample cards body", "landingPublishedAt set");
+  } else if (gumroadPolished && (forceLaunch || moneyCohort)) {
+    fail(
+      "gumroad-landing",
+      "Gumroad Sample cards body",
+      "Run polish-only (publishes custom landing with sample screenshots in product body)",
+    );
+  } else {
+    warn(
+      "gumroad-landing",
+      "Gumroad Sample cards body",
+      "Custom landing with Sample cards images (publish-wave-gumroad-landings.py)",
     );
   }
 
