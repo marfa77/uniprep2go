@@ -140,6 +140,7 @@ describe("deck catalog", () => {
       "delf-prim-printable-french-flashcards",
       "citizenship-naturalization-anki-bundle",
       "swiss-citizenship-anki-deck",
+      "luxembourg-vivre-ensemble-anki-deck",
     ];
 
     const languageDecks = availableDecks.filter((deck) => deck.category === "language");
@@ -779,6 +780,8 @@ describe("deck catalog", () => {
       "ptcb-study-guide-2026":
         "PTCB Exam Study Guide 2026 — Complete PTCE Review + 80-Question Practice Exam + Cheat Sheets (PDF)",
       "ace-cpt-anki-deck": "ACE CPT Anki Deck — 300 Flashcards",
+      "luxembourg-vivre-ensemble-anki-deck":
+        "Luxembourg Vivre ensemble Anki Deck — 60 Flashcards",
       "bench-energy-metal-trader-anki-deck":
         "Metal Trader Anki Deck — 202 Commodity Flashcards",
       "bench-energy-oil-trader-anki-deck":

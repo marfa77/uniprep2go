@@ -4982,6 +4982,7 @@ export function getFeaturedDecks() {
 /** Peer groups for related-product rails (planned waitlist + available). */
 export const RELATED_DECK_PEER_GROUPS: string[][] = [
   ["nasm-cpt-anki-deck", "issa-cpt-anki-deck", "ace-cpt-anki-deck"],
+  ["luxembourg-vivre-ensemble-anki-deck", "swiss-citizenship-anki-deck", "citizenship-naturalization-anki-bundle"],
   ["ptcb-pharmacy-technician-anki-deck", "ptcb-study-guide-2026"],
   ["cfa-level-1-anki-deck", "cfa-level-1-formula-reference-2026", "cfa-level-2-anki-deck"],
 ];

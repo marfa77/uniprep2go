@@ -75,6 +75,18 @@ describe("anki-deck-launch", () => {
     ]);
     expect(new Set(ace?.sampleCards.map((card) => card.answer)).size).toBe(3);
 
+    expect(isLaunchableAnkiDeckSlug("luxembourg-vivre-ensemble-anki-deck")).toBe(true);
+    const lux = getCatalogDeckBySlug("luxembourg-vivre-ensemble-anki-deck");
+    expect(lux?.status).toBe("available");
+    expect(lux?.facts.cards).toBe("60");
+    expect(lux?.checkoutUrl).toContain("gumroad.com/l/luxembourg-vivre-ensemble-anki-deck");
+    expect(lux?.lastUpdated).toBe("2026-08-14");
+    expect(lux?.sampleCards).toHaveLength(3);
+    expect(lux?.sampleCards[0]?.imageUrl).toBe(
+      "/samples/luxembourg-vivre-ensemble-anki-deck-sample-1.webp",
+    );
+    expect(lux?.sampleCards[0]?.question).toContain("forme d'État");
+
     const stateRe = getDeckBySlug("fl-real-estate-anki-deck");
     expect(stateRe?.status).toBe("planned");
     expect(stateRe && "checkoutUrl" in stateRe ? stateRe.checkoutUrl : undefined).toBeUndefined();

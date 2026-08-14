@@ -48,7 +48,10 @@ const waveSpecBySlug = waveSpecs as Record<string, WaveSpec>;
 export const WAVE_LAUNCH_COHORTS = new Set(["money"]);
 
 /** Non-money wave decks approved to flip planned → available when Gumroad product exists. */
-export const WAVE_FORCE_LAUNCH_SLUGS = new Set(["ace-cpt-anki-deck"]);
+export const WAVE_FORCE_LAUNCH_SLUGS = new Set([
+  "ace-cpt-anki-deck",
+  "luxembourg-vivre-ensemble-anki-deck",
+]);
 
 export type BuildingAnkiDeckSlug = keyof typeof buildingCatalog.products;
 export type WaveAnkiDeckSlug = string;
@@ -129,7 +132,10 @@ export function formatAnkiDeckCardLabel(count: number) {
 }
 
 /** Launched wave decks with hand-authored card-preview webps under public/samples/. */
-const LAUNCH_SAMPLE_IMAGE_SLUGS = new Set(["ace-cpt-anki-deck"]);
+const LAUNCH_SAMPLE_IMAGE_SLUGS = new Set([
+  "ace-cpt-anki-deck",
+  "luxembourg-vivre-ensemble-anki-deck",
+]);
 
 /** Copy must match public/samples/ace-cpt-anki-deck-sample-{1,2,3}.webp (not bank Q1–Q3). */
 const ACE_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
@@ -153,6 +159,27 @@ const ACE_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
   },
 ];
 
+/** Copy must match public/samples/luxembourg-vivre-ensemble-anki-deck-sample-{1,2,3}.webp. */
+const LUXEMBOURG_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
+  {
+    question: "Quelle est la forme d'État du Grand-Duché de Luxembourg?",
+    answer: "(a) Monarchie constitutionnelle",
+    imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-1.webp",
+  },
+  {
+    question: "Que signifie l'acronyme CNS dans le système de santé luxembourgeois ?",
+    answer: "(c) Caisse nationale de santé",
+    imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-2.webp",
+  },
+  {
+    question:
+      "Que signifie le terme 'frontaliers' dans le contexte du marché du travail luxembourgeois?",
+    answer:
+      "(b) Travailleurs résidant dans les pays voisins et travaillant au Luxembourg",
+    imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-3.webp",
+  },
+];
+
 function attachLaunchSampleImages(slug: string, cards: SampleCard[]): SampleCard[] {
   if (!LAUNCH_SAMPLE_IMAGE_SLUGS.has(slug) || cards.length === 0) {
     return cards;
@@ -166,6 +193,9 @@ function attachLaunchSampleImages(slug: string, cards: SampleCard[]): SampleCard
 function buildSampleCardsFromLinkedMock(deck: PlannedDeck): SampleCard[] {
   if (deck.slug === "ace-cpt-anki-deck") {
     return ACE_LAUNCH_SAMPLE_CARDS;
+  }
+  if (deck.slug === "luxembourg-vivre-ensemble-anki-deck") {
+    return LUXEMBOURG_LAUNCH_SAMPLE_CARDS;
   }
   const cover = deck.coverImage ?? `/covers/${deck.slug}.webp`;
   const fromDeck = deck.sampleCards.length > 0 ? deck.sampleCards : [];
@@ -348,7 +378,12 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
       .replace(/^A planned (deck|spaced-repetition deck) for /i, "Anki deck for ")
       .replace(/^A planned /i, "A focused "),
     directAnswer: buildDirectAnswer(deck, cardLabel, mockPath, apkgReady),
-    lastUpdated: deck.slug === "ace-cpt-anki-deck" ? "2026-08-13" : "2026-08-06",
+    lastUpdated:
+      deck.slug === "luxembourg-vivre-ensemble-anki-deck"
+        ? "2026-08-14"
+        : deck.slug === "ace-cpt-anki-deck"
+          ? "2026-08-13"
+          : "2026-08-06",
     facts: {
       ...deck.facts,
       cards: cardLabel,

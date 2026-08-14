@@ -534,7 +534,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent readiness check on Vivre ensemble themes. Official SFA exam path: 40 MCQs / 60 minutes / 28/40 (70%), or a 24h course alternative. This diagnostic is 60 questions / 45 minutes / 70%. Luxembourgish Sproochentest is separate. Not official SFA material.",
     description:
-      "Free 60-question Luxembourg Vivre ensemble diagnostic. Official exam is 40Q/60min/70% (or course path) — this page is longer theme practice. Waitlist Anki. Independent prep.",
+      "Free 60-question Luxembourg Vivre ensemble diagnostic. Official exam is 40Q/60min/70% (or course path) — this page is longer theme practice. Pairs with the 60-card Anki deck. Independent prep.",
     examBody:
       "Luxembourg — Vivre ensemble (40Q official or course; Sproochentest separate)",
     questionSourceNote:

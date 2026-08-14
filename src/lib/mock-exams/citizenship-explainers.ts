@@ -438,7 +438,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Nationality applicants choosing between the Vivre ensemble exam and the course; residents who confuse language certificates with the living-together requirement; and anyone wanting a timed civics diagnostic. Not legal advice and not the official Luxembourg exam.",
     howToPrepare:
-      "1) On Guichet.lu, decide exam vs course vs exemption for your file. 2) If sitting the exam, drill institutions, rights, history, EU/Benelux context, and everyday civic life. 3) Take this free 60-question readiness check for topic scoring. 4) Practice a 40-question / 60-minute set at 70% before booking. 5) Keep language evidence on the correct parallel track. Join the Luxembourg Vivre ensemble Anki waitlist for spaced-repetition cards when they ship.",
+      "1) On Guichet.lu, decide exam vs course vs exemption for your file. 2) If sitting the exam, drill institutions, rights, history, EU/Benelux context, and everyday civic life. 3) Take this free 60-question readiness check for topic scoring. 4) Drill weak domains with the 60-card Luxembourg Vivre ensemble Anki deck, then practice a 40-question / 60-minute set at 70% before booking. 5) Keep language evidence (Sproochentest) on the correct parallel track.",
     topicBlurbs: [
       {
         id: "institutions-vivre",

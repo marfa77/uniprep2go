@@ -173,4 +173,12 @@ describe("exam facts layer", () => {
     expect(profile!.domain_weights).toHaveLength(4);
     expect(profile!.candidate_qa.some((item) => /not official ACE/i.test(item.a))).toBe(true);
   });
+
+  it("returns a Luxembourg Vivre ensemble profile with 40Q exam pathway", () => {
+    const profile = getExamFactsProfileForDeck("luxembourg-vivre-ensemble-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.question_count).toContain("40");
+    expect(profile!.exam_facts.passing_score).toMatch(/70%/);
+    expect(profile!.candidate_qa.some((item) => /Sproochentest/i.test(item.a))).toBe(true);
+  });
 });

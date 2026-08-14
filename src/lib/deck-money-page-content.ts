@@ -24,6 +24,8 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "300 Top-Off cards for suitability, products, and order flow — plus a free 60-question Series 7 mock.",
   "ptcb-pharmacy-technician-anki-deck":
     "300 PTCE cards for top-200 drugs, sig codes, and pharmacy math — pairs with the 2026 printable study guide PDF.",
+  "luxembourg-vivre-ensemble-anki-deck":
+    "60 French Vivre ensemble cards for institutions, rights, history/EU, and daily life — plus a free 60-question Luxembourg diagnostic.",
   "ace-cpt-anki-deck":
     "300 ACE CPT cards for client screening, program design, spotting cues, and professional conduct — plus a free 60-question readiness check.",
   "ptcb-study-guide-2026":
@@ -47,6 +49,8 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Front-load brand/generic pairs, sig abbreviations, DEA schedules, DSCSA, and days-supply math — aligned to the January 2026 PTCE blueprint. Pair with the printable study guide for domain chapters and an 80-question practice exam; drill 10–15 cards per shift on your phone.",
   "ace-cpt-anki-deck":
     "Cards track ACE CPT competency themes: preparticipation screening and consent, FITT-VP program design, cueing and spotting under load, and scope/ethics/business boundaries. Run the free 60-question readiness check first, then filter Anki to weak topics — not a NASM/ISSA mega-dump.",
+  "luxembourg-vivre-ensemble-anki-deck":
+    "French MCQs mapped to Vivre ensemble themes: Grand-Duchy institutions, fundamental rights and nationality literacy, history/geography/EU, and society/daily life. Run the free 60-question diagnostic first, then drill weak domains — Sproochentest language evidence stays on a separate track.",
   "ptcb-study-guide-2026":
     "Four chapters sized to 2026 domain weights (Medications 35%, Federal 18.75% with DSCSA, Patient Safety 23.75%, Order Entry 22.5%). The 80-question exam mirrors PTCE scored length (28/15/19/18). Pair with the free 90-question online mock and the separate 300-card Anki deck — beats free blogs still teaching removed compounding topics.",
   "mrics-quantity-surveying-anki-deck":
@@ -131,6 +135,16 @@ export const positioningOverrides: Partial<
     ],
     summaryProse:
       "ACE CPT rewards screening judgment, program progression, and professional boundaries — not memorizing 2,000 random anatomy flashcards. Three hundred focused prompts plus one free timed mock beat a mega-pack when you study between client sessions.",
+  },
+  "luxembourg-vivre-ensemble-anki-deck": {
+    ourEdge: [
+      "60 French MCQ cards across institutions, rights, history/EU, and daily life",
+      "Free 60-question Luxembourg Vivre ensemble diagnostic with topic scoring",
+      "Built for the exam-or-course civics path — Sproochentest stays separate",
+      "Ownable Gumroad .apkg for nationality applicants",
+    ],
+    summaryProse:
+      "Vivre ensemble rewards precise civics recall — Grand-Duchy institutions, rights, and EU context — not a random Europe trivia dump. Sixty French prompts plus one free timed diagnostic beat rereading Guichet PDFs the night before.",
   },
   "ptcb-study-guide-2026": {
     ourEdge: [
@@ -707,6 +721,18 @@ Technicians miss look-alike/sound-alike pairs, misread sig abbreviations, and fo
 ### Pitfalls this deck targets
 
 Candidates skip screening, load dysfunctional patterns, or drift into diagnosis and medical nutrition therapy. Cards isolate those stop-or-refer boundaries.`,
+
+  "luxembourg-vivre-ensemble-anki-deck": `### What is inside
+
+60 French MCQ prompts mapped to Vivre ensemble themes: institutions and vivre ensemble, history/geography/EU, rights and nationality, and society/daily life. Cards mirror the civics judgment the official 40-question exam (or 24-hour course) expects — not Sproochentest language drills.
+
+### Plan with the free Luxembourg mock
+
+**Start:** Take the [free 60-question Luxembourg Vivre ensemble readiness check](/mock-exams/luxembourg-vivre-ensemble-readiness-check). **Then:** 15–20 Anki cards/day on your weakest topic row. **Before booking:** practice a 40-question / 60-minute mindset at 70% using weak-domain cards only.
+
+### Pitfalls this deck targets
+
+Applicants confuse Sproochentest with Vivre ensemble, mix Belgian/French institutions into Luxembourg answers, or skip communal vs state roles. Cards isolate those near-miss traps.`,
 
   "ptcb-study-guide-2026": `### What is inside
 

@@ -2455,6 +2455,67 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "ACE® and American Council on Exercise® are trademarks of the American Council on Exercise. UniPrep2Go is not affiliated with or endorsed by ACE.",
   },
+  "luxembourg-vivre-ensemble": {
+    examKey: "luxembourg-vivre-ensemble",
+    pageHeading: "Luxembourg Vivre ensemble Exam — Facts & Prep",
+    intro:
+      "Vivre ensemble au Grand-Duché de Luxembourg is the living-together civics requirement for many nationality applicants. Candidates typically either pass a written multiple-choice exam or complete the recognised 24-hour course. This page summarizes official structure and independent UniPrep2Go study products (not official Guichet.lu / SFA material).",
+    exam_facts: {
+      exam_name: "Vivre ensemble au Grand-Duché de Luxembourg (certificate via exam or course)",
+      administered_by:
+        "Service de la formation des adultes (SFA), Ministère de l’Éducation nationale, de l’Enfance et de la Jeunesse",
+      question_count: "Exam pathway: 40 multiple-choice questions (course pathway: 24 hours instead of the exam)",
+      scored_count: "40 (exam pathway)",
+      time_limit: "60 minutes (exam pathway)",
+      passing_score: "70% (28/40) on the exam pathway — verify current rules on Guichet.lu / MEN",
+      delivery:
+        "Computer-based exam sittings organised by SFA (often Esch-Belval / listed centres) — or recognised 24-hour course completion",
+      verify_at_url:
+        "https://men.public.lu/fr/systeme-educatif/formation-adultes/integration-nationalite/cours-examen.html",
+    },
+    official_sources: [
+      {
+        label: "MEN — Cours et examens pour l’acquisition de la nationalité",
+        url: "https://men.public.lu/fr/systeme-educatif/formation-adultes/integration-nationalite/cours-examen.html",
+      },
+      {
+        label: "lifelong-learning.lu — Acquiring Luxembourgish nationality",
+        url: "https://www.lifelong-learning.lu/formations-continues-reglementees/acquisition-de-la-nationalite-luxembourgeoise/en",
+      },
+    ],
+    domain_weights: [
+      { domain: "Droits fondamentaux des citoyens", weight: "About 10 of 40 exam items / 6h course" },
+      { domain: "Institutions étatiques et communales", weight: "About 20 of 40 exam items / 12h course" },
+      { domain: "Histoire du Grand-Duché et intégration européenne", weight: "About 10 of 40 exam items / 6h course" },
+    ],
+    high_yield_facts: [
+      "You can satisfy Vivre ensemble either by passing the 40-question exam (60 minutes, 70%) or by completing the recognised 24-hour course — both produce the same certificate type.",
+      "Sproochentest (Luxembourgish language) is a separate nationality requirement — do not confuse it with Vivre ensemble.",
+      "Official themes emphasise fundamental rights, state/communal institutions, Luxembourg history, and European integration.",
+      "Registration for the course or exam is typically free via SFA pathways — confirm dates and centres on official pages before booking.",
+      "UniPrep2Go’s free 60-question French diagnostic is longer theme practice (45 min / 70%) — not the official 40/60/70 paper.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the official Vivre ensemble exam?",
+        a: "40 multiple-choice questions in 60 minutes, with a 70% (28/40) pass mark on the exam pathway. Confirm current rules on Guichet.lu / MEN.",
+      },
+      {
+        q: "Can I take a course instead of the exam?",
+        a: "Yes. Completing the recognised 24-hour Vivre ensemble course also produces the certificate — verify seats and language of instruction on official SFA pages.",
+      },
+      {
+        q: "Is Sproochentest the same as Vivre ensemble?",
+        a: "No. Sproochentest is the Luxembourgish language requirement; Vivre ensemble is the living-together civics certificate (exam or course).",
+      },
+      {
+        q: "Is UniPrep2Go’s Luxembourg readiness check the official exam?",
+        a: "No. The free 60-question check and 60-card Anki deck are independent French-language study aids on overlapping themes — not Guichet.lu / SFA exams.",
+      },
+    ],
+    trademark_note:
+      "Guichet.lu, SFA, and Luxembourg government marks belong to Luxembourg authorities. UniPrep2Go is not affiliated with or endorsed by the Luxembourg government.",
+  },
 };
 
 /** Deck slug → shared exam profile key. Language decks are omitted intentionally. */
@@ -2495,6 +2556,7 @@ const deckExamKeyMap: Record<string, string> = {
   "mrics-anki-deck": "mrics",
   "mrics-quantity-surveying-anki-deck": "mrics-quantity-surveying",
   "ace-cpt-anki-deck": "ace-cpt",
+  "luxembourg-vivre-ensemble-anki-deck": "luxembourg-vivre-ensemble",
   "us-citizenship-test-prep2go-app": "us-citizenship",
   "leben-in-deutschland-prep2go-app": "leben-in-deutschland",
   "naturalisation-francaise-prep2go-app": "naturalisation-francaise",

@@ -68,29 +68,38 @@ function evaluateWaveDeck(deckSlug, spec) {
     }
   }
 
-  const questionBankTs = readText("src/lib/mock-exams/question-bank.ts");
-  if (questionBankTs?.includes(`"${mockSlug}"`)) {
-    pass("mock-bank-import", "Bank import", "question-bank.ts");
+  const questionBankTs = readText("src/lib/mock-exams/question-bank.ts") ?? "";
+  const citizenshipBanks = readText("src/lib/mock-exams/citizenship-banks.ts") ?? "";
+  if (
+    questionBankTs.includes(`"${mockSlug}"`) ||
+    questionBankTs.includes(`${mockSlug}.json`) ||
+    citizenshipBanks.includes(`"${mockSlug}"`) ||
+    citizenshipBanks.includes(`${mockSlug}.json`)
+  ) {
+    pass("mock-bank-import", "Bank import", "question-bank / citizenship-banks");
   } else {
-    fail("mock-bank-import", "Bank import", `Wire ${mockSlug} in question-bank.ts`);
+    fail("mock-bank-import", "Bank import", `Wire ${mockSlug} in question-bank.ts or citizenship-banks.ts`);
   }
 
   const wave2 = readText("src/lib/mock-exams/wave2-configs.ts") ?? "";
   const wave1 = readText("src/lib/mock-exams/wave1-configs.ts") ?? "";
+  const citizenship = readText("src/lib/mock-exams/citizenship-configs.ts") ?? "";
   const configs = readText("src/lib/mock-exams/configs.ts") ?? "";
   if (
     wave2.includes(`slug: "${mockSlug}"`) ||
     wave1.includes(`slug: "${mockSlug}"`) ||
+    citizenship.includes(`slug: "${mockSlug}"`) ||
     configs.includes(`slug: "${mockSlug}"`)
   ) {
     pass("mock-config", "Mock exam config", mockSlug);
   } else {
-    fail("mock-config", "Mock exam config", `Add ${mockSlug} to wave configs`);
+    fail("mock-config", "Mock exam config", `Add ${mockSlug} to wave/citizenship configs`);
   }
 
   if (
     wave2.includes(`linkedDeckSlug: "${deckSlug}"`) ||
     wave1.includes(`linkedDeckSlug: "${deckSlug}"`) ||
+    citizenship.includes(`linkedDeckSlug: "${deckSlug}"`) ||
     configs.includes(`linkedDeckSlug: "${deckSlug}"`)
   ) {
     pass("funnel-link", "Mock ↔ deck funnel", deckSlug);
