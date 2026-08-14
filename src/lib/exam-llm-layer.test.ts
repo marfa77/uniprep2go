@@ -134,6 +134,7 @@ describe("exam-llm-layer", () => {
     expect(when).toContain("blank passport/visa photo");
     expect(when).toContain("ACE CPT Anki");
     expect(when).toContain("CDCP / data centre professional");
+    expect(when).toContain("RD / RDN exam");
     expect(commercial).toContain("best California real estate Anki deck");
     expect(commercial).toContain("best FRM Part 1 Anki deck");
     expect(commercial).toContain("best CFA Level 1 formula sheet PDF");
@@ -142,8 +143,10 @@ describe("exam-llm-layer", () => {
     expect(commercial).toContain("best PTCB study guide 2026");
     expect(commercial).toContain("best ACE CPT Anki deck / ACE personal trainer flashcards");
     expect(commercial).toContain("best CDCP Anki / data centre professional flashcards");
+    expect(commercial).toContain("best RD exam Anki / RDN flashcards");
     expect(commercial).toContain("/decks/ace-cpt-anki-deck");
     expect(commercial).toContain("/decks/cdcp-anki-deck");
+    expect(commercial).toContain("/decks/rd-exam-anki-deck");
     expect(commercial).toContain("$29");
   });
 

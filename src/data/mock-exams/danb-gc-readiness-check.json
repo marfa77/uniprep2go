@@ -7,11 +7,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Diagnose caries independently"
+        "text": "Transfer instruments and maintain a clear field so the operator works efficiently"
       },
       {
         "id": "b",
-        "text": "Transfer instruments and maintain a clear field so the operator works efficiently"
+        "text": "Diagnose caries independently"
       },
       {
         "id": "c",
@@ -22,12 +22,12 @@
         "text": "Perform irreversible procedures without supervision"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "Chairside assisting supports the operator with instrument transfer, isolation, and field maintenance within permitted scope.",
     "distractorExplanations": {
-      "a": "Diagnosis is a dentist responsibility.",
-      "c": "Prescribing is not within DA scope.",
-      "d": "Irreversible procedures require dentist performance/authorization per state law."
+      "b": "Diagnosis is a dentist responsibility. Learners who choose “Diagnose caries independently” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Prescribing is not within DA scope. Learners who choose “Prescribe antibiotics” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Irreversible procedures require dentist performance/authorization per state law. Learners who choose “Perform irreversible procedures without supervision” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -36,7 +36,7 @@
     "id": "danb-gc-readiness-check-chairside-002",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "chairside",
-    "prompt": "When transferring a hinged instrument using the single-handed transfer, the assistant typically:",
+    "prompt": "When transferring a hinged instrument using the single-handed transfer, the assistant typically?",
     "options": [
       {
         "id": "a",
@@ -44,23 +44,23 @@
       },
       {
         "id": "b",
-        "text": "Delivers it so the operator can grasp the handle in working position"
+        "text": "Holds it by the working end only"
       },
       {
         "id": "c",
-        "text": "Throws it onto the tray"
+        "text": "Delivers it so the operator can grasp the handle in working position"
       },
       {
         "id": "d",
-        "text": "Holds it by the working end only"
+        "text": "Throws it onto the tray"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Transfers should present the handle for secure grasp in the correct orientation, reducing eye/hand injury risk.",
     "distractorExplanations": {
-      "a": "Tips toward the palm risk injury.",
-      "c": "Throwing is unsafe.",
-      "d": "Grasping the working end contaminates/dulls instruments and risks injury."
+      "a": "Tips toward the palm risk injury. Learners who choose “Passes it tip-first toward the operator's palm” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Grasping the working end contaminates/dulls instruments and risks injury. Learners who choose “Holds it by the working end only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Throwing is unsafe. Learners who choose “Throws it onto the tray” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -69,31 +69,31 @@
     "id": "danb-gc-readiness-check-chairside-003",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "chairside",
-    "prompt": "Rubber dam isolation primarily helps by: which of the following is most accurate for the DANB GC?",
+    "prompt": "Rubber dam isolation primarily helps by:",
     "options": [
       {
         "id": "a",
-        "text": "Increasing saliva contamination of the field"
+        "text": "Replacing radiographs"
       },
       {
         "id": "b",
-        "text": "Improving visibility, moisture control, and airway protection from small objects"
+        "text": "Increasing saliva contamination of the field"
       },
       {
         "id": "c",
-        "text": "Eliminating the need for local anesthesia"
+        "text": "Improving visibility, moisture control, and airway protection from small objects"
       },
       {
         "id": "d",
-        "text": "Replacing radiographs"
+        "text": "Eliminating the need for local anesthesia"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Rubber dam isolates the tooth, controls moisture, and reduces aspiration/swallowing risk.",
+    "correctOptionId": "c",
+    "explanation": "Rubber dam isolates the tooth, controls moisture, and reduces aspiration/swallowing risk The correct choice (“Improving visibility, moisture control, and airway protecti…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "It decreases contamination.",
-      "c": "Anesthesia needs are separate.",
-      "d": "Imaging remains necessary when indicated."
+      "a": "Imaging remains necessary when indicated. Learners who choose “Replacing radiographs” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "It decreases contamination. Learners who choose “Increasing saliva contamination of the field” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Anesthesia needs are separate. Learners who choose “Eliminating the need for local anesthesia” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -102,31 +102,31 @@
     "id": "danb-gc-readiness-check-chairside-004",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "chairside",
-    "prompt": "The HVE (high-volume evacuator) tip should generally be positioned:",
+    "prompt": "The HVE (high-volume evacuator) tip should generally be positioned",
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
-      },
-      {
-        "id": "b",
-        "text": "Close to the tooth being treated, bevel facing the tooth/working area, without blocking vision"
-      },
-      {
-        "id": "c",
         "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "this concept is identical to FDIC deposit insurance for every customer account"
+      },
+      {
+        "id": "c",
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+      },
+      {
+        "id": "d",
+        "text": "Close to the tooth being treated, bevel facing the tooth/working area, without blocking vision"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "Proper HVE placement captures spray/debris at the source while preserving access and soft-tissue protection.",
     "distractorExplanations": {
       "a": "This statement is false about the tested concept and does not match the correct definition.",
-      "c": "This statement is false about the tested concept and does not match the correct definition.",
-      "d": "This statement is false about the tested concept and does not match the correct definition."
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -135,15 +135,15 @@
     "id": "danb-gc-readiness-check-chairside-005",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "chairside",
-    "prompt": "Before seating a patient for restorative care, the assistant should:",
+    "prompt": "Before seating a patient for restorative care, the assistant should",
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "Review medical history/allergies and confirm the planned procedure"
       },
       {
         "id": "b",
-        "text": "Review medical history/allergies and confirm the planned procedure"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "c",
@@ -151,13 +151,13 @@
       },
       {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "Updated medical history and confirmation of the plan support safety (allergies, meds, contraindications).",
     "distractorExplanations": {
-      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
       "c": "This statement is false about the tested concept and does not match the correct definition.",
       "d": "This statement is false about the tested concept and does not match the correct definition."
     },
@@ -188,11 +188,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Amalgam carvers (cleoid-discoid, Hollenback) shape anatomy after condensation.",
+    "explanation": "Amalgam carvers (cleoid-discoid, Hollenback) shape anatomy after condensation The correct choice (“Cleoid-discoid carver or similar amalgam carvers”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Explorers detect caries/margins, not primary carving.",
-      "c": "Spatulas mix materials.",
-      "d": "Probes measure periodontal depths."
+      "a": "Explorers detect caries/margins, not primary carving. Learners who choose “Explorer only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Spatulas mix materials. Learners who choose “Cement spatula for enamel etching” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Probes measure periodontal depths. Learners who choose “Periodontal probe for occlusion only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -201,31 +201,31 @@
     "id": "danb-gc-readiness-check-chairside-007",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "chairside",
-    "prompt": "During local anesthesia, the dental assistant's supportive role may include:",
+    "prompt": "During local anesthesia, the dental assistant's supportive role may include",
     "options": [
       {
         "id": "a",
-        "text": "Selecting the anesthetic type independently for all patients"
+        "text": "Ignoring signs of syncope"
       },
       {
         "id": "b",
-        "text": "Preparing the syringe, aspirating assistance per protocol, and monitoring the patient"
+        "text": "Selecting the anesthetic type independently for all patients"
       },
       {
         "id": "c",
-        "text": "Injecting anesthetic in every state without training"
+        "text": "Preparing the syringe, aspirating assistance per protocol, and monitoring the patient"
       },
       {
         "id": "d",
-        "text": "Ignoring signs of syncope"
+        "text": "Injecting anesthetic in every state without training"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Assistants prepare and support within state-allowed duties and watch for adverse reactions.",
+    "correctOptionId": "c",
+    "explanation": "Assistants prepare and support within state-allowed duties and watch for adverse reactions The correct choice (“Preparing the syringe, aspirating assistance per protocol,…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Drug selection is the dentist's responsibility.",
-      "c": "Injection privileges vary by state and training.",
-      "d": "Syncope requires prompt response."
+      "a": "Syncope requires prompt response. Learners who choose “Ignoring signs of syncope” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Drug selection is the dentist's responsibility. Learners who choose “Selecting the anesthetic type independently for all patients” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Injection privileges vary by state and training. Learners who choose “Injecting anesthetic in every state without training” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -234,11 +234,11 @@
     "id": "danb-gc-readiness-check-chairside-008",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "chairside",
-    "prompt": "The correct order for basic instrument transfer zones places the transfer zone:",
+    "prompt": "The correct order for basic instrument transfer zones places the transfer zone",
     "options": [
       {
         "id": "a",
-        "text": "Behind the patient's head only"
+        "text": "Outside the operatory"
       },
       {
         "id": "b",
@@ -246,19 +246,19 @@
       },
       {
         "id": "c",
-        "text": "On the floor"
+        "text": "Behind the patient's head only"
       },
       {
         "id": "d",
-        "text": "Outside the operatory"
+        "text": "On the floor"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "The transfer zone is typically over the patient's chest near the chin for safe exchanges.",
+    "explanation": "The transfer zone is typically over the patient's chest near the chin for safe exchanges The correct choice (“Across the patient's chest/near the chin area where operato…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Static zone is behind/beside.",
-      "c": "Floor is contaminated/unsafe.",
-      "d": "Transfers occur at chairside."
+      "a": "Transfers occur at chairside. Learners who choose “Outside the operatory” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Static zone is behind/beside. Learners who choose “Behind the patient's head only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Floor is contaminated/unsafe. Learners who choose “On the floor” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -267,31 +267,31 @@
     "id": "danb-gc-readiness-check-chairside-009",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "chairside",
-    "prompt": "Matrix bands are used primarily to: which of the following is most accurate for the DANB GC?",
+    "prompt": "Matrix bands are used primarily to:",
     "options": [
       {
         "id": "a",
-        "text": "Whiten enamel"
+        "text": "Measure probing depths"
       },
       {
         "id": "b",
-        "text": "Provide a temporary wall for proximal restorations during placement"
-      },
-      {
-        "id": "c",
         "text": "Replace missing teeth permanently"
       },
       {
+        "id": "c",
+        "text": "Whiten enamel"
+      },
+      {
         "id": "d",
-        "text": "Measure probing depths"
+        "text": "Provide a temporary wall for proximal restorations during placement"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Matrices restore proximal contour and containment while restorative material sets.",
+    "correctOptionId": "d",
+    "explanation": "Matrices restore proximal contour and containment while restorative material sets The correct choice (“Provide a temporary wall for proximal restorations during p…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Whitening uses bleaching agents.",
-      "c": "Prostheses replace teeth.",
-      "d": "Probing uses periodontal probes."
+      "a": "Probing uses periodontal probes. Learners who choose “Measure probing depths” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Prostheses replace teeth. Learners who choose “Replace missing teeth permanently” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Whitening uses bleaching agents. Learners who choose “Whiten enamel” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -300,15 +300,15 @@
     "id": "danb-gc-readiness-check-chairside-010",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "chairside",
-    "prompt": "If a patient begins coughing forcefully while supine during a procedure, the assistant should first:",
+    "prompt": "If a patient begins coughing forcefully while supine during a procedure, the assistant should first",
     "options": [
       {
         "id": "a",
-        "text": "Ignore it and continue"
+        "text": "Stop, clear the airway/field, upright or turn the patient as needed, and summon help if distress persists"
       },
       {
         "id": "b",
-        "text": "Stop, clear the airway/field, upright or turn the patient as needed, and summon help if distress persists"
+        "text": "Ignore it and continue"
       },
       {
         "id": "c",
@@ -319,12 +319,12 @@
         "text": "Place more cotton rolls deeper into the throat"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Airway protection and patient positioning take priority when coughing/choking risk appears.",
+    "correctOptionId": "a",
+    "explanation": "Airway protection and patient positioning take priority when coughing/choking risk appears The correct choice (“Stop, clear the airway/field, upright or turn the patient a…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Ignoring risks aspiration.",
-      "c": "More water worsens choking risk.",
-      "d": "Deep packing can obstruct the airway."
+      "b": "Ignoring risks aspiration. Learners who choose “Ignore it and continue” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "More water worsens choking risk. Learners who choose “Increase water spray” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Deep packing can obstruct the airway. Learners who choose “Place more cotton rolls deeper into the throat” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -333,11 +333,11 @@
     "id": "danb-gc-readiness-check-chairside-011",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "chairside",
-    "prompt": "A tofflemire retainer is associated with: which of the following is most accurate for the DANB GC?",
+    "prompt": "A tofflemire retainer is associated with:",
     "options": [
       {
         "id": "a",
-        "text": "Orthodontic wire bending only"
+        "text": "Ultrasonic scaling exclusively"
       },
       {
         "id": "b",
@@ -349,15 +349,15 @@
       },
       {
         "id": "d",
-        "text": "Ultrasonic scaling exclusively"
+        "text": "Orthodontic wire bending only"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Universal (Tofflemire) retainers stabilize circumferential matrix bands.",
+    "explanation": "Universal (Tofflemire) retainers stabilize circumferential matrix bands The correct choice (“Holding a matrix band for Class II restorations”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Ortho uses different pliers/wires.",
-      "c": "Pulp testing is separate.",
-      "d": "Scalers remove deposits."
+      "a": "Scalers remove deposits. Learners who choose “Ultrasonic scaling exclusively” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Pulp testing is separate. Learners who choose “Vitalometry” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Ortho uses different pliers/wires. Learners who choose “Orthodontic wire bending only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "b",
-        "text": "Using suction, retraction, and isolation appropriate to the procedure"
-      },
-      {
-        "id": "c",
         "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
+        "id": "c",
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+      },
+      {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "Using suction, retraction, and isolation appropriate to the procedure"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Moisture control and soft-tissue retraction are core chairside functions.",
+    "correctOptionId": "d",
+    "explanation": "Moisture control and soft-tissue retraction are core chairside functions The correct choice (“Using suction, retraction, and isolation appropriate to the…”) is the one that matches this rule.",
     "distractorExplanations": {
       "a": "This statement is false about the tested concept and does not match the correct definition.",
-      "c": "This statement is false about the tested concept and does not match the correct definition.",
-      "d": "This statement is false about the tested concept and does not match the correct definition."
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -403,7 +403,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Straight fissure or pear/round carbide burs designed for cavity preparation"
+        "text": "Prophy angle brush exclusively"
       },
       {
         "id": "b",
@@ -411,19 +411,19 @@
       },
       {
         "id": "c",
-        "text": "Endodontic file"
+        "text": "Straight fissure or pear/round carbide burs designed for cavity preparation"
       },
       {
         "id": "d",
-        "text": "Prophy angle brush exclusively"
+        "text": "Endodontic file"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Operative burs (pear, round, fissure) cut enamel/dentin for outline form.",
+    "correctOptionId": "c",
+    "explanation": "Operative burs (pear, round, fissure) cut enamel/dentin for outline form The correct choice (“Straight fissure or pear/round carbide burs designed for ca…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Cups polish.",
-      "c": "Files clean canals.",
-      "d": "Brushes polish/clean."
+      "a": "Brushes polish/clean. Learners who choose “Prophy angle brush exclusively” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Cups polish. Learners who choose “Polishing cup only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Files clean canals. Learners who choose “Endodontic file” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -432,15 +432,15 @@
     "id": "danb-gc-readiness-check-chairside-014",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "chairside",
-    "prompt": "When assisting during crown preparation, cord packing is used to:",
+    "prompt": "When assisting during crown preparation, cord packing is used to?",
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "Gently retract gingiva for margin access/impression quality when indicated"
       },
       {
         "id": "b",
-        "text": "Gently retract gingiva for margin access/impression quality when indicated"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "c",
@@ -448,13 +448,13 @@
       },
       {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Retraction cord helps expose margins for prep finishing and impressions.",
+    "correctOptionId": "a",
+    "explanation": "Retraction cord helps expose margins for prep finishing and impressions The correct choice (“Gently retract gingiva for margin access/impression quality…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
       "c": "This statement is false about the tested concept and does not match the correct definition.",
       "d": "This statement is false about the tested concept and does not match the correct definition."
     },
@@ -465,31 +465,31 @@
     "id": "danb-gc-readiness-check-chairside-015",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "chairside",
-    "prompt": "A dental dam clamp is selected based primarily on: which of the following is most accurate for the DANB GC?",
+    "prompt": "A dental dam clamp is selected based primarily on",
     "options": [
       {
         "id": "a",
-        "text": "Tooth morphology and stability needs for the tooth being isolated"
-      },
-      {
-        "id": "b",
-        "text": "Patient shoe size"
-      },
-      {
-        "id": "c",
         "text": "Operatory wall color"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Insurance plan only"
+      },
+      {
+        "id": "c",
+        "text": "Tooth morphology and stability needs for the tooth being isolated"
+      },
+      {
+        "id": "d",
+        "text": "Patient shoe size"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Clamp jaws/wings are chosen to fit the tooth's cervical anatomy securely without trauma.",
+    "correctOptionId": "c",
+    "explanation": "Clamp jaws/wings are chosen to fit the tooth's cervical anatomy securely without trauma The correct choice (“Tooth morphology and stability needs for the tooth being is…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Irrelevant. This option does not match the tested concept (Patient shoe size).",
-      "c": "Irrelevant. This option does not match the tested concept (Operatory wall color).",
-      "d": "Clinical fit drives selection."
+      "a": "Irrelevant. This option does not match the tested concept (Operatory wall color). Learners who choose “Operatory wall color” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Clinical fit drives selection. Learners who choose “Insurance plan only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Irrelevant. This option does not match the tested concept (Patient shoe size). Learners who choose “Patient shoe size” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -498,31 +498,31 @@
     "id": "danb-gc-readiness-check-materials-001",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "materials",
-    "prompt": "Amalgam capsules should be triturated: which of the following is most accurate for the DANB GC?",
+    "prompt": "Amalgam capsules should be triturated",
     "options": [
       {
         "id": "a",
-        "text": "By hand mixing powder with saliva"
+        "text": "Until the material boils"
       },
       {
         "id": "b",
-        "text": "According to manufacturer time/speed settings"
+        "text": "By hand mixing powder with saliva"
       },
       {
         "id": "c",
-        "text": "For at least 10 minutes always"
+        "text": "According to manufacturer time/speed settings"
       },
       {
         "id": "d",
-        "text": "Until the material boils"
+        "text": "For at least 10 minutes always"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Proper trituration follows manufacturer parameters for strength and handling.",
+    "correctOptionId": "c",
+    "explanation": "Proper trituration follows manufacturer parameters for strength and handling The correct choice (“According to manufacturer time/speed settings”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Saliva contamination ruins material.",
-      "c": "Overtrituration harms properties.",
-      "d": "Boiling is not a criterion."
+      "a": "Boiling is not a criterion. Learners who choose “Until the material boils” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Saliva contamination ruins material. Learners who choose “By hand mixing powder with saliva” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Overtrituration harms properties. Learners who choose “For at least 10 minutes always” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -531,31 +531,31 @@
     "id": "danb-gc-readiness-check-materials-002",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "materials",
-    "prompt": "Composite resin polymerization is commonly initiated by: which of the following is most accurate for the DANB GC?",
+    "prompt": "Composite resin polymerization is commonly initiated by:",
     "options": [
       {
         "id": "a",
-        "text": "Cold sterile water only"
-      },
-      {
-        "id": "b",
-        "text": "Visible-light curing units of appropriate wavelength/intensity"
-      },
-      {
-        "id": "c",
         "text": "Open flame in the mouth"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Ultrasonic scalers"
+      },
+      {
+        "id": "c",
+        "text": "Cold sterile water only"
+      },
+      {
+        "id": "d",
+        "text": "Visible-light curing units of appropriate wavelength/intensity"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Light-cured composites polymerize under curing lights matched to the photoinitiator.",
+    "correctOptionId": "d",
+    "explanation": "Light-cured composites polymerize under curing lights matched to the photoinitiator The correct choice (“Visible-light curing units of appropriate wavelength/intens…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Water does not cure composite.",
-      "c": "Flame is dangerous and inappropriate.",
-      "d": "Scalers remove calculus."
+      "a": "Flame is dangerous and inappropriate. Learners who choose “Open flame in the mouth” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Scalers remove calculus. Learners who choose “Ultrasonic scalers” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Water does not cure composite. Learners who choose “Cold sterile water only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -564,31 +564,31 @@
     "id": "danb-gc-readiness-check-materials-003",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "materials",
-    "prompt": "Zinc oxide–eugenol (ZOE) cement is often used as: which of the following is most accurate for the DANB GC?",
+    "prompt": "Zinc oxide–eugenol (ZOE) cement is often used as:",
     "options": [
       {
         "id": "a",
-        "text": "A final esthetic veneer material"
-      },
-      {
-        "id": "b",
         "text": "A temporary cement or sedative base/temporary filling in selected cases"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "An acid etchant"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "A fluoride varnish exclusively"
+      },
+      {
+        "id": "d",
+        "text": "A final esthetic veneer material"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "ZOE has sedative properties and is used for temporary cementation/restorations (with eugenol caveats for composites).",
     "distractorExplanations": {
-      "a": "Not an esthetic definitive veneer.",
-      "c": "Etchants are acids like phosphoric acid.",
-      "d": "Fluoride varnish is different."
+      "b": "Etchants are acids like phosphoric acid. Learners who choose “An acid etchant” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Fluoride varnish is different. Learners who choose “A fluoride varnish exclusively” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Not an esthetic definitive veneer. Learners who choose “A final esthetic veneer material” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -597,7 +597,7 @@
     "id": "danb-gc-readiness-check-materials-004",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "materials",
-    "prompt": "Acid etching enamel before composite bonding primarily: which of the following is most accurate for the DANB GC?",
+    "prompt": "Acid etching enamel before composite bonding primarily",
     "options": [
       {
         "id": "a",
@@ -605,23 +605,23 @@
       },
       {
         "id": "b",
-        "text": "Kills the pulp instantly in all cases"
+        "text": "Replaces the need for isolation"
       },
       {
         "id": "c",
-        "text": "Polishes the restoration"
+        "text": "Kills the pulp instantly in all cases"
       },
       {
         "id": "d",
-        "text": "Replaces the need for isolation"
+        "text": "Polishes the restoration"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Phosphoric acid etch creates a microporous enamel surface for resin penetration.",
+    "explanation": "Phosphoric acid etch creates a microporous enamel surface for resin penetration The correct choice (“Creates microscopic irregularities to improve micromechanic…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Proper etch does not 'kill the pulp instantly.'",
-      "c": "Polishing is finishing.",
-      "d": "Isolation remains critical."
+      "b": "Isolation remains critical. Learners who choose “Replaces the need for isolation” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Proper etch does not 'kill the pulp instantly.'. Learners who choose “Kills the pulp instantly in all cases” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Polishing is finishing. Learners who choose “Polishes the restoration” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -630,31 +630,31 @@
     "id": "danb-gc-readiness-check-materials-005",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "materials",
-    "prompt": "Alginate impressions should be poured: which of the following is most accurate for the DANB GC?",
+    "prompt": "Alginate impressions should be poured",
     "options": [
       {
         "id": "a",
-        "text": "Days later after complete dehydration"
-      },
-      {
-        "id": "b",
-        "text": "Promptly, ideally soon after removal, and kept moist if brief delay is unavoidable"
-      },
-      {
-        "id": "c",
         "text": "Only after freezing solid"
       },
       {
-        "id": "d",
+        "id": "b",
+        "text": "Days later after complete dehydration"
+      },
+      {
+        "id": "c",
         "text": "Never; alginate cannot be poured"
+      },
+      {
+        "id": "d",
+        "text": "Promptly, ideally soon after removal, and kept moist if brief delay is unavoidable"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "Alginate is dimensionally unstable with syneresis/imbibition; pour soon and store properly if delayed briefly.",
     "distractorExplanations": {
-      "a": "Drying distorts the impression.",
-      "c": "Freezing is not standard.",
-      "d": "Alginate is routinely poured in stone."
+      "a": "Freezing is not standard. Learners who choose “Only after freezing solid” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Drying distorts the impression. Learners who choose “Days later after complete dehydration” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Alginate is routinely poured in stone. Learners who choose “Never; alginate cannot be poured” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -667,7 +667,7 @@
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "b",
@@ -675,15 +675,15 @@
       },
       {
         "id": "c",
-        "text": "this concept has no application in US securities, insurance, or licensing markets"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Stone particles require less water and produce stronger casts than plaster.",
+    "explanation": "Stone particles require less water and produce stronger casts than plaster The correct choice (“Having lower water/powder ratio needs and greater strength…”) is the one that matches this rule.",
     "distractorExplanations": {
       "a": "This statement is false about the tested concept and does not match the correct definition.",
       "c": "This statement is false about the tested concept and does not match the correct definition.",
@@ -696,15 +696,15 @@
     "id": "danb-gc-readiness-check-materials-007",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "materials",
-    "prompt": "Glass ionomer cement advantages include: which of the following is most accurate for the DANB GC?",
+    "prompt": "Glass ionomer cement advantages include",
     "options": [
       {
         "id": "a",
-        "text": "No fluoride release ever"
+        "text": "Chemical adhesion to tooth structure and fluoride release"
       },
       {
         "id": "b",
-        "text": "Chemical adhesion to tooth structure and fluoride release"
+        "text": "No fluoride release ever"
       },
       {
         "id": "c",
@@ -715,12 +715,12 @@
         "text": "Superior esthetics to all ceramics always"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "GICs bond chemically and release fluoride; useful for selected restorations/bases/cements.",
+    "correctOptionId": "a",
+    "explanation": "GICs bond chemically and release fluoride; useful for selected restorations/bases/cements The correct choice (“Chemical adhesion to tooth structure and fluoride release”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Fluoride release is a known property.",
-      "c": "Working times are limited.",
-      "d": "Ceramics often surpass GIC esthetics."
+      "b": "Fluoride release is a known property. Learners who choose “No fluoride release ever” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Working times are limited. Learners who choose “Unlimited working time in all products” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Ceramics often surpass GIC esthetics. Learners who choose “Superior esthetics to all ceramics always” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -729,11 +729,11 @@
     "id": "danb-gc-readiness-check-materials-008",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "materials",
-    "prompt": "A bite registration material is used to: which of the following is most accurate for the DANB GC?",
+    "prompt": "A bite registration material is used to:",
     "options": [
       {
         "id": "a",
-        "text": "Record occlusal relationship between arches"
+        "text": "Measure pocket depths"
       },
       {
         "id": "b",
@@ -745,15 +745,15 @@
       },
       {
         "id": "d",
-        "text": "Measure pocket depths"
+        "text": "Record occlusal relationship between arches"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Bite registrations capture interocclusal relationships for mounting/lab work.",
+    "correctOptionId": "d",
+    "explanation": "Bite registrations capture interocclusal relationships for mounting/lab work The correct choice (“Record occlusal relationship between arches”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Etching is bonding.",
-      "c": "Sterilization is infection control.",
-      "d": "Probing measures perio status."
+      "a": "Probing measures perio status. Learners who choose “Measure pocket depths” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Etching is bonding. Learners who choose “Etch dentin” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Sterilization is infection control. Learners who choose “Sterilize handpieces” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -762,15 +762,15 @@
     "id": "danb-gc-readiness-check-materials-009",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "materials",
-    "prompt": "Polysulfide impression materials typically require: which of the following is most accurate for the DANB GC?",
+    "prompt": "Polysulfide impression materials typically require",
     "options": [
       {
         "id": "a",
-        "text": "No mixing of base/catalyst"
+        "text": "Base and catalyst mixed to a uniform color per instructions"
       },
       {
         "id": "b",
-        "text": "Base and catalyst mixed to a uniform color per instructions"
+        "text": "No mixing of base/catalyst"
       },
       {
         "id": "c",
@@ -781,12 +781,12 @@
         "text": "Mixing with alginate powder"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Elastomeric polysulfides are two-paste systems mixed to homogeneity.",
+    "correctOptionId": "a",
+    "explanation": "Elastomeric polysulfides are two-paste systems mixed to homogeneity The correct choice (“Base and catalyst mixed to a uniform color per instructions”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "They require mixing.",
-      "c": "They set chemically, not by dental curing light.",
-      "d": "Do not mix with alginate."
+      "b": "They require mixing. Learners who choose “No mixing of base/catalyst” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "They set chemically, not by dental curing light. Learners who choose “Light curing only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Do not mix with alginate. Learners who choose “Mixing with alginate powder” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -795,31 +795,31 @@
     "id": "danb-gc-readiness-check-materials-010",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "materials",
-    "prompt": "Calcium hydroxide liners are placed primarily to: which of the following is most accurate for the DANB GC?",
+    "prompt": "Calcium hydroxide liners are placed primarily to:",
     "options": [
       {
         "id": "a",
-        "text": "Stimulate reparative dentin / protect pulp in deep preparations when indicated"
+        "text": "Serve as final occlusal enamel"
       },
       {
         "id": "b",
-        "text": "Whiten teeth overnight"
+        "text": "Stimulate reparative dentin / protect pulp in deep preparations when indicated"
       },
       {
         "id": "c",
-        "text": "Replace missing cusps permanently alone"
+        "text": "Whiten teeth overnight"
       },
       {
         "id": "d",
-        "text": "Serve as final occlusal enamel"
+        "text": "Replace missing cusps permanently alone"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Ca(OH)2 liners are used for pulp protection/indirect-direct pulp capping strategies as indicated.",
+    "correctOptionId": "b",
+    "explanation": "Ca(OH)2 liners are used for pulp protection/indirect-direct pulp capping strategies as indicated The correct choice (“Stimulate reparative dentin / protect pulp in deep preparat…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Not a whitening agent for that purpose.",
-      "c": "Structural replacement needs restorative materials.",
-      "d": "Not final enamel."
+      "a": "Not final enamel. Learners who choose “Serve as final occlusal enamel” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Not a whitening agent for that purpose. Learners who choose “Whiten teeth overnight” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Structural replacement needs restorative materials. Learners who choose “Replace missing cusps permanently alone” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -828,7 +828,7 @@
     "id": "danb-gc-readiness-check-materials-011",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "materials",
-    "prompt": "Temporary crowns should: which of the following is most accurate for the DANB GC?",
+    "prompt": "Temporary crowns should",
     "options": [
       {
         "id": "a",
@@ -836,23 +836,23 @@
       },
       {
         "id": "b",
-        "text": "Protect the preparation, maintain contacts/occlusion reasonably, and be cemented temporarily"
+        "text": "Never be adjusted"
       },
       {
         "id": "c",
-        "text": "Be left out overnight routinely"
+        "text": "Protect the preparation, maintain contacts/occlusion reasonably, and be cemented temporarily"
       },
       {
         "id": "d",
-        "text": "Never be adjusted"
+        "text": "Be left out overnight routinely"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Provisionals protect pulp/periodontium, maintain space and function until final delivery.",
+    "correctOptionId": "c",
+    "explanation": "Provisionals protect pulp/periodontium, maintain space and function until final delivery The correct choice (“Protect the preparation, maintain contacts/occlusion reason…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Open margins and hyperocclusion harm tissues/TMJ comfort.",
-      "c": "Leaving them out risks sensitivity/movement.",
-      "d": "Adjustments are often needed."
+      "a": "Open margins and hyperocclusion harm tissues/TMJ comfort. Learners who choose “Have open margins and high occlusion to 'settle in'” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Adjustments are often needed. Learners who choose “Never be adjusted” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Leaving them out risks sensitivity/movement. Learners who choose “Be left out overnight routinely” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -881,11 +881,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Amalgam alloys are primarily silver-tin based with copper and other metals, mixed with mercury.",
+    "explanation": "Amalgam alloys are primarily silver-tin based with copper and other metals, mixed with mercury The correct choice (“Silver (with tin, copper, etc.)”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Gold is for cast restorations/foils historically.",
-      "c": "TiO2 is not amalgam alloy.",
-      "d": "Aluminum foil is not dental amalgam."
+      "a": "Gold is for cast restorations/foils historically. Learners who choose “Pure gold only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "TiO2 is not amalgam alloy. Learners who choose “Titanium dioxide exclusively” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Aluminum foil is not dental amalgam. Learners who choose “Aluminum foil” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -894,15 +894,15 @@
     "id": "danb-gc-readiness-check-materials-013",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "materials",
-    "prompt": "Polyvinyl siloxane (PVS) impressions are valued because they:",
+    "prompt": "Polyvinyl siloxane (PVS) impressions are valued because they",
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "Offer excellent dimensional stability and detail reproduction"
       },
       {
         "id": "b",
-        "text": "Offer excellent dimensional stability and detail reproduction"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "c",
@@ -910,13 +910,13 @@
       },
       {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "Addition silicones (PVS) are highly accurate and stable for delayed pours/multiple pours per product guidance.",
     "distractorExplanations": {
-      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
       "c": "This statement is false about the tested concept and does not match the correct definition.",
       "d": "This statement is false about the tested concept and does not match the correct definition."
     },
@@ -927,31 +927,31 @@
     "id": "danb-gc-readiness-check-materials-014",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "materials",
-    "prompt": "Eugenol can interfere with: which of the following is most accurate for the DANB GC?",
+    "prompt": "Eugenol can interfere with:",
     "options": [
       {
         "id": "a",
-        "text": "Composite resin polymerization/bonding if contaminated"
-      },
-      {
-        "id": "b",
-        "text": "Glass mixing bowls only"
-      },
-      {
-        "id": "c",
         "text": "Patient breathing always"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "X-ray film speed permanently"
+      },
+      {
+        "id": "c",
+        "text": "Composite resin polymerization/bonding if contaminated"
+      },
+      {
+        "id": "d",
+        "text": "Glass mixing bowls only"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Eugenol residues can inhibit resin polymerization; avoid under composites when contraindicated.",
+    "correctOptionId": "c",
+    "explanation": "Eugenol residues can inhibit resin polymerization; avoid under composites when contraindicated The correct choice (“Composite resin polymerization/bonding if contaminated”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Bowls are unaffected in that sense.",
-      "c": "Not a universal respiratory toxin at dental use levels in this framing.",
-      "d": "Unrelated to film speed."
+      "a": "Not a universal respiratory toxin at dental use levels in this framing. Learners who choose “Patient breathing always” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Unrelated to film speed. Learners who choose “X-ray film speed permanently” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Bowls are unaffected in that sense. Learners who choose “Glass mixing bowls only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -960,31 +960,31 @@
     "id": "danb-gc-readiness-check-materials-015",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "materials",
-    "prompt": "Finishing and polishing amalgam restorations too early can: which of the following is most accurate for the DANB GC?",
+    "prompt": "Finishing and polishing amalgam restorations too early can",
     "options": [
       {
         "id": "a",
-        "text": "Improve strength immediately always"
+        "text": "Eliminate mercury content entirely"
       },
       {
         "id": "b",
-        "text": "Damage the restoration because final set strength develops over time"
+        "text": "Improve strength immediately always"
       },
       {
         "id": "c",
-        "text": "Convert amalgam to composite"
+        "text": "Damage the restoration because final set strength develops over time"
       },
       {
         "id": "d",
-        "text": "Eliminate mercury content entirely"
+        "text": "Convert amalgam to composite"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Amalgam continues to harden after placement; premature aggressive polishing can weaken margins.",
+    "correctOptionId": "c",
+    "explanation": "Amalgam continues to harden after placement; premature aggressive polishing can weaken margins The correct choice (“Damage the restoration because final set strength develops…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Early finishing can harm, not help strength.",
-      "c": "Materials do not convert.",
-      "d": "Polishing does not remove all mercury."
+      "a": "Polishing does not remove all mercury. Learners who choose “Eliminate mercury content entirely” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Early finishing can harm, not help strength. Learners who choose “Improve strength immediately always” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Materials do not convert. Learners who choose “Convert amalgam to composite” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -993,7 +993,7 @@
     "id": "danb-gc-readiness-check-patient-care-001",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "patient-care",
-    "prompt": "The most effective way to prevent dental caries at home is typically:",
+    "prompt": "The most effective way to prevent dental caries at home is typically",
     "options": [
       {
         "id": "a",
@@ -1005,15 +1005,15 @@
       },
       {
         "id": "c",
-        "text": "this concept has no application in US securities, insurance, or licensing markets"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Fluoride, mechanical plaque removal, and diet control are core caries prevention strategies.",
+    "explanation": "Fluoride, mechanical plaque removal, and diet control are core caries prevention strategies The correct choice (“Daily fluoride toothpaste use, plaque control, and limiting…”) is the one that matches this rule.",
     "distractorExplanations": {
       "a": "This statement is false about the tested concept and does not match the correct definition.",
       "c": "This statement is false about the tested concept and does not match the correct definition.",
@@ -1026,11 +1026,11 @@
     "id": "danb-gc-readiness-check-patient-care-002",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "patient-care",
-    "prompt": "Dental floss is primarily used to: which of the following is most accurate for the DANB GC?",
+    "prompt": "Dental floss is primarily used to:",
     "options": [
       {
         "id": "a",
-        "text": "Clean interproximal surfaces where brushes may not reach"
+        "text": "Etch enamel"
       },
       {
         "id": "b",
@@ -1038,19 +1038,19 @@
       },
       {
         "id": "c",
-        "text": "Etch enamel"
+        "text": "Take radiographs"
       },
       {
         "id": "d",
-        "text": "Take radiographs"
+        "text": "Clean interproximal surfaces where brushes may not reach"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Floss/interdental cleaners disrupt proximal plaque biofilm.",
+    "correctOptionId": "d",
+    "explanation": "Floss/interdental cleaners disrupt proximal plaque biofilm The correct choice (“Clean interproximal surfaces where brushes may not reach”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Brushing is still required.",
-      "c": "Etching is clinical.",
-      "d": "Imaging is separate."
+      "a": "Etching is clinical. Learners who choose “Etch enamel” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Brushing is still required. Learners who choose “Replace all toothbrushing” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Imaging is separate. Learners who choose “Take radiographs” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1059,31 +1059,31 @@
     "id": "danb-gc-readiness-check-patient-care-003",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "patient-care",
-    "prompt": "A patient with uncontrolled angina in the chair who develops chest pain should:",
+    "prompt": "A patient with uncontrolled angina in the chair who develops chest pain should",
     "options": [
       {
         "id": "a",
-        "text": "Continue elective care without pause"
-      },
-      {
-        "id": "b",
-        "text": "Stop treatment, follow emergency protocol (NTG if prescribed/protocol, oxygen/EMS as indicated)"
-      },
-      {
-        "id": "c",
         "text": "Be given a large meal immediately"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Be placed in Trendelenburg and ignored"
+      },
+      {
+        "id": "c",
+        "text": "Stop treatment, follow emergency protocol (NTG if prescribed/protocol, oxygen/EMS as indicated)"
+      },
+      {
+        "id": "d",
+        "text": "Continue elective care without pause"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Chest pain is a medical emergency pathway: stop dentistry and activate emergency response per training.",
     "distractorExplanations": {
-      "a": "Elective care must stop.",
-      "c": "Food is inappropriate.",
-      "d": "Ignoring is unsafe; positioning depends on protocol."
+      "a": "Food is inappropriate. Learners who choose “Be given a large meal immediately” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Ignoring is unsafe; positioning depends on protocol. Learners who choose “Be placed in Trendelenburg and ignored” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Elective care must stop. Learners who choose “Continue elective care without pause” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1092,31 +1092,31 @@
     "id": "danb-gc-readiness-check-patient-care-004",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "patient-care",
-    "prompt": "Oral cancer screening in the dental office includes: which of the following is most accurate for the DANB GC?",
+    "prompt": "Oral cancer screening in the dental office includes:",
     "options": [
       {
         "id": "a",
-        "text": "Ignoring white/red patches"
-      },
-      {
-        "id": "b",
-        "text": "Extraoral and intraoral soft-tissue examination and referral of suspicious lesions"
-      },
-      {
-        "id": "c",
         "text": "Only asking about tooth color"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Refusing to look under the tongue"
+      },
+      {
+        "id": "c",
+        "text": "Extraoral and intraoral soft-tissue examination and referral of suspicious lesions"
+      },
+      {
+        "id": "d",
+        "text": "Ignoring white/red patches"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Systematic soft-tissue exam and timely referral are standard prevention roles.",
+    "correctOptionId": "c",
+    "explanation": "Systematic soft-tissue exam and timely referral are standard prevention roles The correct choice (“Extraoral and intraoral soft-tissue examination and referra…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Lesions need evaluation.",
-      "c": "Soft tissues matter beyond esthetics.",
-      "d": "Tongue/floor of mouth are high-risk sites."
+      "a": "Soft tissues matter beyond esthetics. Learners who choose “Only asking about tooth color” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Tongue/floor of mouth are high-risk sites. Learners who choose “Refusing to look under the tongue” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Lesions need evaluation. Learners who choose “Ignoring white/red patches” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1125,7 +1125,7 @@
     "id": "danb-gc-readiness-check-patient-care-005",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "patient-care",
-    "prompt": "For a patient with a latex allergy, the team should: which of the following is most accurate for the DANB GC?",
+    "prompt": "For a patient with a latex allergy, the team should",
     "options": [
       {
         "id": "a",
@@ -1133,7 +1133,7 @@
       },
       {
         "id": "b",
-        "text": "Use non-latex gloves and avoid latex products in the operatory"
+        "text": "Ignore the allergy if the patient 'seems fine'"
       },
       {
         "id": "c",
@@ -1141,15 +1141,15 @@
       },
       {
         "id": "d",
-        "text": "Ignore the allergy if the patient 'seems fine'"
+        "text": "Use non-latex gloves and avoid latex products in the operatory"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Elimination of latex products prevents allergic reactions.",
+    "correctOptionId": "d",
+    "explanation": "Elimination of latex products prevents allergic reactions The correct choice (“Use non-latex gloves and avoid latex products in the operat…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Latex is contraindicated.",
-      "c": "Desensitization is not a chairside tactic.",
-      "d": "Allergies must be respected."
+      "a": "Latex is contraindicated. Learners who choose “Use latex gloves carefully” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Allergies must be respected. Learners who choose “Ignore the allergy if the patient 'seems fine'” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Desensitization is not a chairside tactic. Learners who choose “Increase latex exposure to desensitize during the visit” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1158,31 +1158,31 @@
     "id": "danb-gc-readiness-check-patient-care-006",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "patient-care",
-    "prompt": "Topical fluoride varnish is commonly applied to: which of the following is most accurate for the DANB GC?",
+    "prompt": "Topical fluoride varnish is commonly applied to:",
     "options": [
       {
         "id": "a",
-        "text": "Reduce caries risk on enamel surfaces per protocol"
-      },
-      {
-        "id": "b",
         "text": "Dissolve amalgam fillings"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Replace sealants always"
+      },
+      {
+        "id": "c",
+        "text": "Reduce caries risk on enamel surfaces per protocol"
       },
       {
         "id": "d",
         "text": "Sterilize instruments"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Fluoride varnish remineralizes and reduces caries incidence, especially in higher-risk patients.",
+    "correctOptionId": "c",
+    "explanation": "Fluoride varnish remineralizes and reduces caries incidence, especially in higher-risk patients The correct choice (“Reduce caries risk on enamel surfaces per protocol”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "It does not dissolve amalgam.",
-      "c": "Sealants are separate preventive services.",
-      "d": "Not a sterilant."
+      "a": "It does not dissolve amalgam. Learners who choose “Dissolve amalgam fillings” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Sealants are separate preventive services. Learners who choose “Replace sealants always” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Not a sterilant. Learners who choose “Sterilize instruments” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1191,31 +1191,31 @@
     "id": "danb-gc-readiness-check-patient-care-007",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "patient-care",
-    "prompt": "Pit and fissure sealants are most beneficial for: which of the following is most accurate for the DANB GC?",
+    "prompt": "Pit and fissure sealants are most beneficial for:",
     "options": [
       {
         "id": "a",
-        "text": "Smooth root surfaces only"
+        "text": "Tongue cleaning"
       },
       {
         "id": "b",
-        "text": "Caries-susceptible pits and fissures of posterior teeth when indicated"
-      },
-      {
-        "id": "c",
         "text": "Edentulous ridges"
       },
       {
+        "id": "c",
+        "text": "Caries-susceptible pits and fissures of posterior teeth when indicated"
+      },
+      {
         "id": "d",
-        "text": "Tongue cleaning"
+        "text": "Smooth root surfaces only"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Sealants physically protect deep occlusal anatomy from biofilm acids.",
+    "correctOptionId": "c",
+    "explanation": "Sealants physically protect deep occlusal anatomy from biofilm acids The correct choice (“Caries-susceptible pits and fissures of posterior teeth whe…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Roots may need other therapies.",
-      "c": "No enamel pits there.",
-      "d": "Unrelated. This option does not match the tested concept (Tongue cleaning)."
+      "a": "Unrelated. This option does not match the tested concept (Tongue cleaning). Learners who choose “Tongue cleaning” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "No enamel pits there. Learners who choose “Edentulous ridges” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Roots may need other therapies. Learners who choose “Smooth root surfaces only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1224,31 +1224,31 @@
     "id": "danb-gc-readiness-check-patient-care-008",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "patient-care",
-    "prompt": "A patient on warfarin needing extraction planning should: which of the following is most accurate for the DANB GC?",
+    "prompt": "A patient on warfarin needing extraction planning should",
     "options": [
       {
         "id": "a",
-        "text": "Always stop warfarin the night before without physician input"
-      },
-      {
-        "id": "b",
-        "text": "Have medical consultation regarding bleeding risk and INR management as indicated"
-      },
-      {
-        "id": "c",
         "text": "Be told anticoagulants never affect dentistry"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Receive aspirin immediately before surgery"
+      },
+      {
+        "id": "c",
+        "text": "Have medical consultation regarding bleeding risk and INR management as indicated"
+      },
+      {
+        "id": "d",
+        "text": "Always stop warfarin the night before without physician input"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Anticoagulation management requires coordination; do not unilaterally stop meds.",
+    "correctOptionId": "c",
+    "explanation": "Anticoagulation management requires coordination; do not unilaterally stop meds The correct choice (“Have medical consultation regarding bleeding risk and INR m…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Abrupt cessation can cause thrombosis.",
-      "c": "Bleeding risk is real.",
-      "d": "Aspirin adds antiplatelet effect inappropriately here."
+      "a": "Bleeding risk is real. Learners who choose “Be told anticoagulants never affect dentistry” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Aspirin adds antiplatelet effect inappropriately here. Learners who choose “Receive aspirin immediately before surgery” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Abrupt cessation can cause thrombosis. Learners who choose “Always stop warfarin the night before without physician input” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1257,7 +1257,7 @@
     "id": "danb-gc-readiness-check-patient-care-009",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "patient-care",
-    "prompt": "Proper toothbrushing technique teaching emphasizes: which of the following is most accurate for the DANB GC?",
+    "prompt": "Proper toothbrushing technique teaching emphasizes",
     "options": [
       {
         "id": "a",
@@ -1265,23 +1265,23 @@
       },
       {
         "id": "b",
-        "text": "Gentle angled bristles at the gingival margin (e.g., Bass-type) covering all surfaces"
-      },
-      {
-        "id": "c",
         "text": "Brushing only the biting surfaces"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Using a hard brush as forcefully as possible"
+      },
+      {
+        "id": "d",
+        "text": "Gentle angled bristles at the gingival margin (e.g., Bass-type) covering all surfaces"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Effective plaque removal with minimal trauma uses proper angulation and gentle pressure.",
+    "correctOptionId": "d",
+    "explanation": "Effective plaque removal with minimal trauma uses proper angulation and gentle pressure The correct choice (“Gentle angled bristles at the gingival margin (e.g., Bass-t…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Aggressive scrubbing causes recession/abrasion.",
-      "c": "Facial/lingual/interproximal matter.",
-      "d": "Hard forceful brushing injures tissues."
+      "a": "Aggressive scrubbing causes recession/abrasion. Learners who choose “Aggressive horizontal scrubbing at the gingival margin only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Facial/lingual/interproximal matter. Learners who choose “Brushing only the biting surfaces” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Hard forceful brushing injures tissues. Learners who choose “Using a hard brush as forcefully as possible” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1290,31 +1290,31 @@
     "id": "danb-gc-readiness-check-patient-care-010",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "patient-care",
-    "prompt": "Xerostomia increases caries risk because: which of the following is most accurate for the DANB GC?",
+    "prompt": "Xerostomia increases caries risk because",
     "options": [
       {
         "id": "a",
-        "text": "Saliva normally buffers acids and aids remineralization"
+        "text": "Enamel becomes thicker"
       },
       {
         "id": "b",
-        "text": "Dry mouth kills all bacteria instantly"
-      },
-      {
-        "id": "c",
         "text": "Fluoride becomes toxic only then"
       },
       {
+        "id": "c",
+        "text": "Dry mouth kills all bacteria instantly"
+      },
+      {
         "id": "d",
-        "text": "Enamel becomes thicker"
+        "text": "Saliva normally buffers acids and aids remineralization"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Reduced saliva impairs buffering, clearance, and remineralization.",
+    "correctOptionId": "d",
+    "explanation": "Reduced saliva impairs buffering, clearance, and remineralization The correct choice (“Saliva normally buffers acids and aids remineralization”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Dry mouth does not sterilize the mouth.",
-      "c": "Fluoride remains beneficial when used properly.",
-      "d": "Enamel does not thicken from xerostomia."
+      "a": "Enamel does not thicken from xerostomia. Learners who choose “Enamel becomes thicker” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Fluoride remains beneficial when used properly. Learners who choose “Fluoride becomes toxic only then” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Dry mouth does not sterilize the mouth. Learners who choose “Dry mouth kills all bacteria instantly” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1323,31 +1323,31 @@
     "id": "danb-gc-readiness-check-patient-care-011",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "patient-care",
-    "prompt": "For pediatric behavior guidance, tell-show-do means: which of the following is most accurate for the DANB GC?",
+    "prompt": "For pediatric behavior guidance, tell-show-do means:",
     "options": [
       {
         "id": "a",
-        "text": "Threatening the child"
-      },
-      {
-        "id": "b",
         "text": "Explaining, demonstrating on a model/finger, then performing the step"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Skipping explanation to save time"
+      },
+      {
+        "id": "c",
+        "text": "Threatening the child"
       },
       {
         "id": "d",
         "text": "Showing radiographs only"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Tell-show-do reduces anxiety through predictable, stepwise communication.",
+    "correctOptionId": "a",
+    "explanation": "Tell-show-do reduces anxiety through predictable, stepwise communication The correct choice (“Explaining, demonstrating on a model/finger, then performin…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Threats are inappropriate.",
-      "c": "Explanation builds cooperation.",
-      "d": "Incomplete description of the method."
+      "b": "Explanation builds cooperation. Learners who choose “Skipping explanation to save time” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Threats are inappropriate. Learners who choose “Threatening the child” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Incomplete description of the method. Learners who choose “Showing radiographs only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1368,19 +1368,19 @@
       },
       {
         "id": "c",
-        "text": "No medications ever"
+        "text": "Expired drugs exclusively"
       },
       {
         "id": "d",
-        "text": "Expired drugs exclusively"
+        "text": "No medications ever"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Offices maintain oxygen and emergency drugs matched to anticipated emergencies and training.",
+    "explanation": "Offices maintain oxygen and emergency drugs matched to anticipated emergencies and training The correct choice (“Oxygen and emergency medications per ADA/office protocol (e…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Insufficient for medical emergencies.",
-      "c": "Medications are part of readiness.",
-      "d": "Expired drugs are unsafe."
+      "a": "Insufficient for medical emergencies. Learners who choose “Only cotton rolls” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Expired drugs are unsafe. Learners who choose “Expired drugs exclusively” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Medications are part of readiness. Learners who choose “No medications ever” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1389,31 +1389,31 @@
     "id": "danb-gc-readiness-check-patient-care-013",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "patient-care",
-    "prompt": "Pregnancy considerations in dentistry include: which of the following is most accurate for the DANB GC?",
+    "prompt": "Pregnancy considerations in dentistry include",
     "options": [
       {
         "id": "a",
-        "text": "Elective care timing discussion and avoiding unnecessary radiographs; urgent care as needed with shielding"
-      },
-      {
-        "id": "b",
-        "text": "Never treating dental infections"
-      },
-      {
-        "id": "c",
         "text": "Doubling radiation without apron"
       },
       {
-        "id": "d",
+        "id": "b",
+        "text": "Elective care timing discussion and avoiding unnecessary radiographs; urgent care as needed with shielding"
+      },
+      {
+        "id": "c",
         "text": "Stopping all oral hygiene"
+      },
+      {
+        "id": "d",
+        "text": "Never treating dental infections"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Coordinate timing, use ALARA with shielding, and treat infection to protect mother/fetus.",
+    "correctOptionId": "b",
+    "explanation": "Coordinate timing, use ALARA with shielding, and treat infection to protect mother/fetus The correct choice (“Elective care timing discussion and avoiding unnecessary ra…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Infections should be managed.",
-      "c": "Violates radiation safety.",
-      "d": "Hygiene remains essential."
+      "a": "Violates radiation safety. Learners who choose “Doubling radiation without apron” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Hygiene remains essential. Learners who choose “Stopping all oral hygiene” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Infections should be managed. Learners who choose “Never treating dental infections” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1422,7 +1422,7 @@
     "id": "danb-gc-readiness-check-patient-care-014",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "patient-care",
-    "prompt": "The primary etiology of periodontal disease is: which of the following is most accurate for the DANB GC?",
+    "prompt": "The primary etiology of periodontal disease is",
     "options": [
       {
         "id": "a",
@@ -1430,23 +1430,23 @@
       },
       {
         "id": "b",
-        "text": "Toothbrush color"
-      },
-      {
-        "id": "c",
         "text": "Wearing lipstick"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Drinking water with any minerals"
+      },
+      {
+        "id": "d",
+        "text": "Toothbrush color"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Bacterial biofilm initiates inflammation modulated by host factors.",
+    "explanation": "Bacterial biofilm initiates inflammation modulated by host factors The correct choice (“Dental biofilm (plaque) and host response”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Irrelevant. This option does not match the tested concept (Toothbrush color).",
-      "c": "Irrelevant. This option does not match the tested concept (Wearing lipstick).",
-      "d": "Minerals in water are not the primary cause."
+      "b": "Irrelevant. This option does not match the tested concept (Wearing lipstick). Learners who choose “Wearing lipstick” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Minerals in water are not the primary cause. Learners who choose “Drinking water with any minerals” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Irrelevant. This option does not match the tested concept (Toothbrush color). Learners who choose “Toothbrush color” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1455,31 +1455,31 @@
     "id": "danb-gc-readiness-check-patient-care-015",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "patient-care",
-    "prompt": "Postoperative extraction instructions commonly include: which of the following is most accurate for the DANB GC?",
+    "prompt": "Postoperative extraction instructions commonly include",
     "options": [
       {
         "id": "a",
-        "text": "Rinsing vigorously immediately every 5 minutes for an hour"
-      },
-      {
-        "id": "b",
-        "text": "Biting on gauze, avoiding straws/smoking, and soft diet as instructed"
-      },
-      {
-        "id": "c",
         "text": "Exercising the socket with a toothpick hourly"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Taking someone else's opioid prescription"
+      },
+      {
+        "id": "c",
+        "text": "Biting on gauze, avoiding straws/smoking, and soft diet as instructed"
+      },
+      {
+        "id": "d",
+        "text": "Rinsing vigorously immediately every 5 minutes for an hour"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Clot protection (no suction/smoking), pressure hemostasis, and diet guidance reduce dry socket/bleeding risks.",
     "distractorExplanations": {
-      "a": "Early vigorous rinsing can dislodge the clot.",
-      "c": "Trauma to the socket is harmful.",
-      "d": "Sharing controlled substances is illegal/unsafe."
+      "a": "Trauma to the socket is harmful. Learners who choose “Exercising the socket with a toothpick hourly” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Sharing controlled substances is illegal/unsafe. Learners who choose “Taking someone else's opioid prescription” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Early vigorous rinsing can dislodge the clot. Learners who choose “Rinsing vigorously immediately every 5 minutes for an hour” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1488,31 +1488,31 @@
     "id": "danb-gc-readiness-check-office-001",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "office",
-    "prompt": "Patient records in a dental office must be: which of the following is most accurate for the DANB GC?",
+    "prompt": "Patient records in a dental office must be",
     "options": [
       {
         "id": "a",
-        "text": "Left in the reception lobby overnight"
-      },
-      {
-        "id": "b",
         "text": "Kept confidential and secured per HIPAA and office policy"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Posted on social media for marketing"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Shared with any caller who asks"
+      },
+      {
+        "id": "d",
+        "text": "Left in the reception lobby overnight"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Dental records contain PHI requiring safeguards and authorized disclosures only.",
+    "correctOptionId": "a",
+    "explanation": "Dental records contain PHI requiring safeguards and authorized disclosures only The correct choice (“Kept confidential and secured per HIPAA and office policy”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Unsecured records breach privacy.",
-      "c": "Public posting is prohibited.",
-      "d": "Identity verification/authorization required."
+      "b": "Public posting is prohibited. Learners who choose “Posted on social media for marketing” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Identity verification/authorization required. Learners who choose “Shared with any caller who asks” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Unsecured records breach privacy. Learners who choose “Left in the reception lobby overnight” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1521,7 +1521,7 @@
     "id": "danb-gc-readiness-check-office-002",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "office",
-    "prompt": "Informed consent for dental treatment should document: which of the following is most accurate for the DANB GC?",
+    "prompt": "Informed consent for dental treatment should document",
     "options": [
       {
         "id": "a",
@@ -1541,11 +1541,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Consent conversations cover material risks/benefits/alternatives and voluntary agreement.",
+    "explanation": "Consent conversations cover material risks/benefits/alternatives and voluntary agreement The correct choice (“Risks, benefits, alternatives, and patient agreement”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Fees alone are insufficient.",
-      "c": "Irrelevant. This option does not match the tested concept (Staff lunch preferences).",
-      "d": "Documentation supports legal/ethical care."
+      "b": "Fees alone are insufficient. Learners who choose “Only the fee” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Irrelevant. This option does not match the tested concept (Staff lunch preferences). Learners who choose “Staff lunch preferences” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Documentation supports legal/ethical care. Learners who choose “Nothing in writing ever” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1558,27 +1558,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Diagnosing oral pathology as a dentist"
-      },
-      {
-        "id": "b",
         "text": "Coronal polishing or sealant placement by qualified auxiliaries where permitted"
       },
       {
+        "id": "b",
+        "text": "Diagnosing oral pathology as a dentist"
+      },
+      {
         "id": "c",
-        "text": "Writing Schedule II prescriptions"
+        "text": "Owning the dental license of the dentist"
       },
       {
         "id": "d",
-        "text": "Owning the dental license of the dentist"
+        "text": "Writing Schedule II prescriptions"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Expanded functions (polish, sealants, etc.) depend on state practice acts and credentials.",
+    "correctOptionId": "a",
+    "explanation": "Expanded functions (polish, sealants, etc.) depend on state practice acts and credentials The correct choice (“Coronal polishing or sealant placement by qualified auxilia…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Diagnosis remains a dentist function.",
-      "c": "Prescribing is dentist/physician scope.",
-      "d": "Licenses are not transferable that way."
+      "b": "Diagnosis remains a dentist function. Learners who choose “Diagnosing oral pathology as a dentist” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Licenses are not transferable that way. Learners who choose “Owning the dental license of the dentist” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Prescribing is dentist/physician scope. Learners who choose “Writing Schedule II prescriptions” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1591,27 +1591,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase rushed incomplete care"
+        "text": "Eliminate the need for consent"
       },
       {
         "id": "b",
-        "text": "Support quality care and reduce stress/errors"
+        "text": "Increase rushed incomplete care"
       },
       {
         "id": "c",
-        "text": "Guarantee no-shows"
+        "text": "Support quality care and reduce stress/errors"
       },
       {
         "id": "d",
-        "text": "Eliminate the need for consent"
+        "text": "Guarantee no-shows"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Realistic scheduling improves outcomes and safety.",
+    "correctOptionId": "c",
+    "explanation": "Realistic scheduling improves outcomes and safety The correct choice (“Support quality care and reduce stress/errors”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Rushing harms quality.",
-      "c": "Unrelated. This option does not match the tested concept (Guarantee no-shows).",
-      "d": "Consent remains required."
+      "a": "Consent remains required. Learners who choose “Eliminate the need for consent” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Rushing harms quality. Learners who choose “Increase rushed incomplete care” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Unrelated. This option does not match the tested concept (Guarantee no-shows). Learners who choose “Guarantee no-shows” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1620,7 +1620,7 @@
     "id": "danb-gc-readiness-check-office-005",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "office",
-    "prompt": "OSHA Hazard Communication in the dental office includes: which of the following is most accurate for the DANB GC?",
+    "prompt": "OSHA Hazard Communication in the dental office includes:",
     "options": [
       {
         "id": "a",
@@ -1628,23 +1628,23 @@
       },
       {
         "id": "b",
-        "text": "Maintaining SDS access and labeling for hazardous chemicals"
-      },
-      {
-        "id": "c",
         "text": "Storing acids unlabeled in soda bottles"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Training only once every 20 years without updates"
+      },
+      {
+        "id": "d",
+        "text": "Maintaining SDS access and labeling for hazardous chemicals"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "HazCom requires SDS, labels, and training for chemical hazards.",
+    "correctOptionId": "d",
+    "explanation": "HazCom requires SDS, labels, and training for chemical hazards The correct choice (“Maintaining SDS access and labeling for hazardous chemicals”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "SDS must be accessible.",
-      "c": "Mislabeling is dangerous/illegal.",
-      "d": "Training is ongoing/as required."
+      "a": "SDS must be accessible. Learners who choose “Ignoring Safety Data Sheets” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Mislabeling is dangerous/illegal. Learners who choose “Storing acids unlabeled in soda bottles” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Training is ongoing/as required. Learners who choose “Training only once every 20 years without updates” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1653,11 +1653,11 @@
     "id": "danb-gc-readiness-check-office-006",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "office",
-    "prompt": "Sterilization monitoring should include: which of the following is most accurate for the DANB GC?",
+    "prompt": "Sterilization monitoring should include",
     "options": [
       {
         "id": "a",
-        "text": "Visual inspection only forever"
+        "text": "Never checking autoclaves"
       },
       {
         "id": "b",
@@ -1665,7 +1665,7 @@
       },
       {
         "id": "c",
-        "text": "Never checking autoclaves"
+        "text": "Visual inspection only forever"
       },
       {
         "id": "d",
@@ -1673,11 +1673,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Multi-level monitoring verifies sterilizer performance; spore tests are essential.",
+    "explanation": "Multi-level monitoring verifies sterilizer performance; spore tests are essential The correct choice (“Mechanical, chemical, and biological (spore) monitoring per…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Visual alone is insufficient.",
-      "c": "Monitoring is mandatory for safety.",
-      "d": "Critical instruments require sterilization, not just disinfection."
+      "a": "Monitoring is mandatory for safety. Learners who choose “Never checking autoclaves” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Visual alone is insufficient. Learners who choose “Visual inspection only forever” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Critical instruments require sterilization, not just disinfection. Learners who choose “Wiping instruments with alcohol as the sole sterilant for critical items” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1686,15 +1686,15 @@
     "id": "danb-gc-readiness-check-office-007",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "office",
-    "prompt": "A patient refuses radiographs. The office should: which of the following is most accurate for the DANB GC?",
+    "prompt": "A patient refuses radiographs. The office should",
     "options": [
       {
         "id": "a",
-        "text": "Force the exposures"
+        "text": "Explain risks/benefits/limitations, document refusal, and determine if care can proceed safely"
       },
       {
         "id": "b",
-        "text": "Explain risks/benefits/limitations, document refusal, and determine if care can proceed safely"
+        "text": "Force the exposures"
       },
       {
         "id": "c",
@@ -1705,12 +1705,12 @@
         "text": "Dismiss the concern as unimportant without discussion"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "Respect autonomy with informed refusal documentation; some care may be deferred if unsafe without imaging.",
     "distractorExplanations": {
-      "a": "Force violates consent.",
-      "c": "Fraudulent imaging is unethical/illegal.",
-      "d": "Education is required."
+      "b": "Force violates consent. Learners who choose “Force the exposures” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Fraudulent imaging is unethical/illegal. Learners who choose “Fabricate fake images” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Education is required. Learners who choose “Dismiss the concern as unimportant without discussion” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1719,11 +1719,11 @@
     "id": "danb-gc-readiness-check-office-008",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "office",
-    "prompt": "Inventory control for nitrous oxide includes: which of the following is most accurate for the DANB GC?",
+    "prompt": "Inventory control for nitrous oxide includes:",
     "options": [
       {
         "id": "a",
-        "text": "Leaving tanks unsecured in public hallways"
+        "text": "Using damaged regulators"
       },
       {
         "id": "b",
@@ -1731,19 +1731,19 @@
       },
       {
         "id": "c",
-        "text": "Using damaged regulators"
+        "text": "Storing oxygen and fuel gases together unsafely"
       },
       {
         "id": "d",
-        "text": "Storing oxygen and fuel gases together unsafely"
+        "text": "Leaving tanks unsecured in public hallways"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Compressed gas safety and scavenging protect patients and staff.",
+    "explanation": "Compressed gas safety and scavenging protect patients and staff The correct choice (“Securing cylinders, checking connections for leaks, and fol…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Unsecured tanks are hazardous.",
-      "c": "Damaged equipment must be removed from service.",
-      "d": "Incompatible storage is unsafe."
+      "a": "Damaged equipment must be removed from service. Learners who choose “Using damaged regulators” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Incompatible storage is unsafe. Learners who choose “Storing oxygen and fuel gases together unsafely” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Unsecured tanks are hazardous. Learners who choose “Leaving tanks unsecured in public hallways” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1756,11 +1756,11 @@
     "options": [
       {
         "id": "a",
-        "text": "CDT codes"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "CDT codes"
       },
       {
         "id": "c",
@@ -1771,10 +1771,10 @@
         "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "ADA CDT codes report dental procedures for billing/documentation.",
+    "correctOptionId": "b",
+    "explanation": "ADA CDT codes report dental procedures for billing/documentation The correct choice (“CDT codes”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
       "c": "This statement is false about the tested concept and does not match the correct definition.",
       "d": "This statement is false about the tested concept and does not match the correct definition."
     },
@@ -1785,29 +1785,29 @@
     "id": "danb-gc-readiness-check-office-010",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "office",
-    "prompt": "Professional ethics require that patient fees and treatment plans be:",
+    "prompt": "Professional ethics require that patient fees and treatment plans be",
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
-      },
-      {
-        "id": "b",
         "text": "Discussed clearly before treatment when feasible"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "this concept is identical to FDIC deposit insurance for every customer account"
+      },
+      {
+        "id": "d",
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Transparency about planned care and costs supports informed decisions.",
+    "correctOptionId": "a",
+    "explanation": "Transparency about planned care and costs supports informed decisions The correct choice (“Discussed clearly before treatment when feasible”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
       "c": "This statement is false about the tested concept and does not match the correct definition.",
       "d": "This statement is false about the tested concept and does not match the correct definition."
     },
@@ -1818,7 +1818,7 @@
     "id": "danb-gc-readiness-check-office-011",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "office",
-    "prompt": "If a sterilization pouch indicator fails to change, the assistant should:",
+    "prompt": "If a sterilization pouch indicator fails to change, the assistant should",
     "options": [
       {
         "id": "a",
@@ -1826,23 +1826,23 @@
       },
       {
         "id": "b",
-        "text": "Not use the load; reprocess and investigate per protocol"
-      },
-      {
-        "id": "c",
         "text": "Wipe instruments and seat the patient"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Ignore chemical indicators forever"
+      },
+      {
+        "id": "d",
+        "text": "Not use the load; reprocess and investigate per protocol"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Failed indicators mean the load is not considered sterile.",
+    "correctOptionId": "d",
+    "explanation": "Failed indicators mean the load is not considered sterile The correct choice (“Not use the load; reprocess and investigate per protocol”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Unsafe. This option does not match the tested concept (Still use the instruments).",
-      "c": "Disinfection ≠ sterilization for critical items.",
-      "d": "Indicators are required checks."
+      "a": "Unsafe. This option does not match the tested concept (Still use the instruments). Learners who choose “Still use the instruments” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Disinfection ≠ sterilization for critical items. Learners who choose “Wipe instruments and seat the patient” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Indicators are required checks. Learners who choose “Ignore chemical indicators forever” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1851,31 +1851,31 @@
     "id": "danb-gc-readiness-check-office-012",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "office",
-    "prompt": "Recall systems in dentistry primarily help: which of the following is most accurate for the DANB GC?",
+    "prompt": "Recall systems in dentistry primarily help",
     "options": [
       {
         "id": "a",
-        "text": "Schedule preventive visits and periodontal maintenance"
-      },
-      {
-        "id": "b",
         "text": "Cancel all future care"
       },
       {
+        "id": "b",
+        "text": "Schedule preventive visits and periodontal maintenance"
+      },
+      {
         "id": "c",
-        "text": "Replace home care entirely"
+        "text": "Bill for services not rendered"
       },
       {
         "id": "d",
-        "text": "Bill for services not rendered"
+        "text": "Replace home care entirely"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Recalls support ongoing prevention and disease control.",
+    "correctOptionId": "b",
+    "explanation": "Recalls support ongoing prevention and disease control The correct choice (“Schedule preventive visits and periodontal maintenance”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Opposite of purpose.",
-      "c": "Home care remains essential.",
-      "d": "Billing for non-rendered care is fraud."
+      "a": "Opposite of purpose. Learners who choose “Cancel all future care” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Billing for non-rendered care is fraud. Learners who choose “Bill for services not rendered” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Home care remains essential. Learners who choose “Replace home care entirely” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1884,7 +1884,7 @@
     "id": "danb-gc-readiness-check-office-013",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "office",
-    "prompt": "Cross-contamination is best prevented by: which of the following is most accurate for the DANB GC?",
+    "prompt": "Cross-contamination is best prevented by:",
     "options": [
       {
         "id": "a",
@@ -1904,11 +1904,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Standard infection-control chains interrupt pathogen transmission.",
+    "explanation": "Standard infection-control chains interrupt pathogen transmission The correct choice (“Hand hygiene, PPE changes, surface barriers, and instrument…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Gloves are single-patient.",
-      "c": "Cleaning is required.",
-      "d": "Needles are single-use."
+      "a": "Gloves are single-patient. Learners who choose “Using the same gloves for multiple patients” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Cleaning is required. Learners who choose “Never cleaning the operatory” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Needles are single-use. Learners who choose “Sharing needles after wiping” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1921,11 +1921,11 @@
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "Workforce members with PHI access need training appropriate to their roles"
       },
       {
         "id": "b",
-        "text": "Workforce members with PHI access need training appropriate to their roles"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "c",
@@ -1936,10 +1936,10 @@
         "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Covered dental entities must train workforce on privacy/security policies.",
+    "correctOptionId": "a",
+    "explanation": "Covered dental entities must train workforce on privacy/security policies The correct choice (“Workforce members with PHI access need training appropriate…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
       "c": "This statement is false about the tested concept and does not match the correct definition.",
       "d": "This statement is false about the tested concept and does not match the correct definition."
     },
@@ -1950,11 +1950,11 @@
     "id": "danb-gc-readiness-check-office-015",
     "examSlug": "danb-gc-readiness-check",
     "topicId": "office",
-    "prompt": "A patient complaint about rude staff should be handled by: which of the following is most accurate for the DANB GC?",
+    "prompt": "A patient complaint about rude staff should be handled by:",
     "options": [
       {
         "id": "a",
-        "text": "Ignoring it"
+        "text": "Arguing publicly in the waiting room"
       },
       {
         "id": "b",
@@ -1962,19 +1962,19 @@
       },
       {
         "id": "c",
-        "text": "Arguing publicly in the waiting room"
+        "text": "Altering the chart to hide the visit"
       },
       {
         "id": "d",
-        "text": "Altering the chart to hide the visit"
+        "text": "Ignoring it"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Professional complaint handling protects relationships and risk management.",
+    "explanation": "Professional complaint handling protects relationships and risk management The correct choice (“Listening, documenting, and following office resolution/esc…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Ignored complaints escalate.",
-      "c": "Public arguments breach professionalism/privacy.",
-      "d": "Chart falsification is illegal."
+      "a": "Public arguments breach professionalism/privacy. Learners who choose “Arguing publicly in the waiting room” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Chart falsification is illegal. Learners who choose “Altering the chart to hide the visit” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Ignored complaints escalate. Learners who choose “Ignoring it” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"

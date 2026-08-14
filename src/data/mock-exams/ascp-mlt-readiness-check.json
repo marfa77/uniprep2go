@@ -3,7 +3,7 @@
     "id": "ascp-mlt-readiness-check-blood-bank-001",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "blood-bank",
-    "prompt": "Clostridioides difficile infection laboratory diagnosis commonly uses:",
+    "prompt": "Clostridioides difficile infection laboratory diagnosis commonly uses",
     "options": [
       {
         "id": "a",
@@ -15,19 +15,19 @@
       },
       {
         "id": "c",
-        "text": "Urine dipstick nitrite"
+        "text": "Blood smear for parasites"
       },
       {
         "id": "d",
-        "text": "Blood smear for parasites"
+        "text": "Urine dipstick nitrite"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Labs use GDH/toxin EIA ± NAAT algorithms on unformed stool.",
+    "explanation": "Labs use GDH/toxin EIA ± NAAT algorithms on unformed stool The correct choice (“Stool testing for toxins and/or toxin gene NAAT per algorit…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Wrong specimen/pathogen approach.",
-      "c": "UTI screen. This option does not match the tested concept (Urine dipstick nitrite).",
-      "d": "Different. This option does not match the tested concept (Blood smear for parasites)."
+      "b": "Wrong specimen/pathogen approach. Learners who choose “Throat culture on blood agar only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Different. This option does not match the tested concept (Blood smear for parasites). Learners who choose “Blood smear for parasites” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "UTI screen. This option does not match the tested concept (Urine dipstick nitrite). Learners who choose “Urine dipstick nitrite” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -40,27 +40,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Testing appropriate ATCC control strains with acceptable ranges"
-      },
-      {
-        "id": "b",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
-      },
-      {
-        "id": "c",
         "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "this concept is identical to FDIC deposit insurance for every customer account"
+      },
+      {
+        "id": "c",
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+      },
+      {
+        "id": "d",
+        "text": "Testing appropriate ATCC control strains with acceptable ranges"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "CLSI QC with reference strains validates method performance.",
+    "correctOptionId": "d",
+    "explanation": "CLSI QC with reference strains validates method performance The correct choice (“Testing appropriate ATCC control strains with acceptable ra…”) is the one that matches this rule.",
     "distractorExplanations": {
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
       "b": "This statement is false about the tested concept and does not match the correct definition.",
-      "c": "This statement is false about the tested concept and does not match the correct definition.",
-      "d": "This statement is false about the tested concept and does not match the correct definition."
+      "c": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -69,31 +69,31 @@
     "id": "ascp-mlt-readiness-check-blood-bank-003",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "blood-bank",
-    "prompt": "India ink or cryptococcal antigen testing is used for: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "India ink or cryptococcal antigen testing is used for:",
     "options": [
       {
         "id": "a",
-        "text": "Cryptococcus neoformans/gattii in CSF/serum contexts"
+        "text": "TB PCR exclusively"
       },
       {
         "id": "b",
-        "text": "Group A strep pharyngitis exclusively"
-      },
-      {
-        "id": "c",
         "text": "Malaria thick smears only"
       },
       {
+        "id": "c",
+        "text": "Group A strep pharyngitis exclusively"
+      },
+      {
         "id": "d",
-        "text": "TB PCR exclusively"
+        "text": "Cryptococcus neoformans/gattii in CSF/serum contexts"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Capsule visualization/antigen assays support cryptococcal meningitis diagnosis.",
+    "correctOptionId": "d",
+    "explanation": "Capsule visualization/antigen assays support cryptococcal meningitis diagnosis The correct choice (“Cryptococcus neoformans/gattii in CSF/serum contexts”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Rapid strep/culture.",
-      "c": "Giemsa smears.",
-      "d": "Different pathogens."
+      "a": "Different pathogens. Learners who choose “TB PCR exclusively” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Giemsa smears. Learners who choose “Malaria thick smears only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Rapid strep/culture. Learners who choose “Group A strep pharyngitis exclusively” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -102,31 +102,31 @@
     "id": "ascp-mlt-readiness-check-blood-bank-004",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "blood-bank",
-    "prompt": "Forward typing determines: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Forward typing determines",
     "options": [
       {
         "id": "a",
-        "text": "Antibodies in serum only"
-      },
-      {
-        "id": "b",
         "text": "ABO antigens on red cells using anti-A and anti-B reagents"
       },
       {
+        "id": "b",
+        "text": "Antibodies in serum only"
+      },
+      {
         "id": "c",
-        "text": "Rh genotype by DNA only"
+        "text": "Platelet count"
       },
       {
         "id": "d",
-        "text": "Platelet count"
+        "text": "Rh genotype by DNA only"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Forward (cell) typing detects A/B antigens on patient RBCs.",
+    "correctOptionId": "a",
+    "explanation": "Forward (cell) typing detects A/B antigens on patient RBCs The correct choice (“ABO antigens on red cells using anti-A and anti-B reagents”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "That is reverse typing.",
-      "c": "Serology types phenotype primarily.",
-      "d": "Hematology test."
+      "b": "That is reverse typing. Learners who choose “Antibodies in serum only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Hematology test. Learners who choose “Platelet count” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Serology types phenotype primarily. Learners who choose “Rh genotype by DNA only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -135,7 +135,7 @@
     "id": "ascp-mlt-readiness-check-blood-bank-005",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "blood-bank",
-    "prompt": "Reverse typing uses: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Reverse typing uses",
     "options": [
       {
         "id": "a",
@@ -143,7 +143,7 @@
       },
       {
         "id": "b",
-        "text": "Patient serum/plasma + A1 and B reagent cells"
+        "text": "Anti-D only"
       },
       {
         "id": "c",
@@ -151,15 +151,15 @@
       },
       {
         "id": "d",
-        "text": "Anti-D only"
+        "text": "Patient serum/plasma + A1 and B reagent cells"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Reverse typing confirms ABO by detecting expected isoagglutinins.",
+    "correctOptionId": "d",
+    "explanation": "Reverse typing confirms ABO by detecting expected isoagglutinins The correct choice (“Patient serum/plasma + A1 and B reagent cells”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Forward typing.",
-      "c": "Needs reagent cells.",
-      "d": "Rh typing uses anti-D."
+      "a": "Forward typing. Learners who choose “Patient red cells + anti-A/B” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Rh typing uses anti-D. Learners who choose “Anti-D only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Needs reagent cells. Learners who choose “Only saline without cells” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -168,31 +168,31 @@
     "id": "ascp-mlt-readiness-check-blood-bank-006",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "blood-bank",
-    "prompt": "The Rh(D) typing discrepancy most concerning for a woman of childbearing potential is:",
+    "prompt": "The Rh(D) typing discrepancy most concerning for a woman of childbearing potential is",
     "options": [
       {
         "id": "a",
-        "text": "Clear-cut D-positive"
-      },
-      {
-        "id": "b",
-        "text": "Weak D / discrepant D that may require further testing per policy"
-      },
-      {
-        "id": "c",
         "text": "ABO identical results"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Negative antibody screen with known history of no transfusion"
+      },
+      {
+        "id": "c",
+        "text": "Weak D / discrepant D that may require further testing per policy"
+      },
+      {
+        "id": "d",
+        "text": "Clear-cut D-positive"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Weak D interpretation affects RhIG and transfusion decisions; follow current AABB/lab policy.",
+    "correctOptionId": "c",
+    "explanation": "Weak D interpretation affects RhIG and transfusion decisions; follow current AABB/lab policy The correct choice (“Weak D / discrepant D that may require further testing per…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Straightforward.",
-      "c": "Expected consistency.",
-      "d": "Less urgent than D discrepancy."
+      "a": "Expected consistency. Learners who choose “ABO identical results” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Less urgent than D discrepancy. Learners who choose “Negative antibody screen with known history of no transfusion” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Straightforward. Learners who choose “Clear-cut D-positive” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -201,11 +201,11 @@
     "id": "ascp-mlt-readiness-check-blood-bank-007",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "blood-bank",
-    "prompt": "An antibody screen detects: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "An antibody screen detects",
     "options": [
       {
         "id": "a",
-        "text": "Unexpected RBC antibodies using screening cells"
+        "text": "HIV antigen exclusively"
       },
       {
         "id": "b",
@@ -213,19 +213,19 @@
       },
       {
         "id": "c",
-        "text": "HIV antigen exclusively"
+        "text": "Unexpected RBC antibodies using screening cells"
       },
       {
         "id": "d",
         "text": "Serum glucose"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Antibody screens use O screening cells to detect alloantibodies clinically significant for transfusion.",
     "distractorExplanations": {
-      "b": "ABO is typed separately.",
-      "c": "Infectious disease testing differs.",
-      "d": "Chemistry. This option does not match the tested concept (Serum glucose)."
+      "a": "Infectious disease testing differs. Learners who choose “HIV antigen exclusively” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "ABO is typed separately. Learners who choose “Only ABO antibodies” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Chemistry. This option does not match the tested concept (Serum glucose). Learners who choose “Serum glucose” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -234,7 +234,7 @@
     "id": "ascp-mlt-readiness-check-blood-bank-008",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "blood-bank",
-    "prompt": "The antiglobulin (AHG) phase is critical because: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "The antiglobulin (AHG) phase is critical because",
     "options": [
       {
         "id": "a",
@@ -242,7 +242,7 @@
       },
       {
         "id": "b",
-        "text": "It measures hemoglobin directly"
+        "text": "It sterilizes blood units"
       },
       {
         "id": "c",
@@ -250,15 +250,15 @@
       },
       {
         "id": "d",
-        "text": "It sterilizes blood units"
+        "text": "It measures hemoglobin directly"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "AHG bridges IgG-sensitized RBCs for visible agglutination (IAT).",
+    "explanation": "AHG bridges IgG-sensitized RBCs for visible agglutination (IAT) The correct choice (“It detects IgG antibodies that may not agglutinate in saline”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Hematology. This option does not match the tested concept (It measures hemoglobin directly).",
-      "c": "ABO typing separate.",
-      "d": "Not sterilization."
+      "b": "Not sterilization. Learners who choose “It sterilizes blood units” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "ABO typing separate. Learners who choose “It replaces forward typing” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Hematology. This option does not match the tested concept (It measures hemoglobin directly)."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -267,7 +267,7 @@
     "id": "ascp-mlt-readiness-check-blood-bank-009",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "blood-bank",
-    "prompt": "A major crossmatch primarily tests: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "A major crossmatch primarily tests",
     "options": [
       {
         "id": "a",
@@ -275,23 +275,23 @@
       },
       {
         "id": "b",
-        "text": "Patient serum/plasma vs donor red cells"
-      },
-      {
-        "id": "c",
         "text": "Patient cells vs patient serum only"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Platelet compatibility only"
+      },
+      {
+        "id": "d",
+        "text": "Patient serum/plasma vs donor red cells"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Major XM: recipient antibodies against donor RBCs.",
+    "correctOptionId": "d",
+    "explanation": "Major XM: recipient antibodies against donor RBCs The correct choice (“Patient serum/plasma vs donor red cells”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Minor XM (less used routinely now).",
-      "c": "Autocontrol.",
-      "d": "Platelets different."
+      "a": "Minor XM (less used routinely now). Learners who choose “Donor serum vs patient cells” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Autocontrol. Learners who choose “Patient cells vs patient serum only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Platelets different. Learners who choose “Platelet compatibility only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -304,27 +304,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Anti-D"
-      },
-      {
-        "id": "b",
         "text": "Anti-Leb"
       },
       {
+        "id": "b",
+        "text": "Anti-M always clinically insignificant without exception"
+      },
+      {
         "id": "c",
-        "text": "Anti-P1 that is cold and clinically insignificant always"
+        "text": "Anti-D"
       },
       {
         "id": "d",
-        "text": "Anti-M always clinically insignificant without exception"
+        "text": "Anti-P1 that is cold and clinically insignificant always"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Anti-D is the classic cause of severe HDFN; RhIG prevents alloimmunization.",
+    "correctOptionId": "c",
+    "explanation": "Anti-D is the classic cause of severe HDFN; RhIG prevents alloimmunization The correct choice (“Anti-D”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Lewis usually not clinically significant for HDN.",
-      "c": "Many cold antibodies insignificant.",
-      "d": "Most anti-M insignificant but not absolute framing for this stem."
+      "a": "Lewis usually not clinically significant for HDN. Learners who choose “Anti-Leb” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Most anti-M insignificant but not absolute framing for this stem. Learners who choose “Anti-M always clinically insignificant without exception” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Many cold antibodies insignificant. Learners who choose “Anti-P1 that is cold and clinically insignificant always” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -333,7 +333,7 @@
     "id": "ascp-mlt-readiness-check-blood-bank-011",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "blood-bank",
-    "prompt": "Fresh frozen plasma (FFP) is indicated primarily to: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Fresh frozen plasma (FFP) is indicated primarily to:",
     "options": [
       {
         "id": "a",
@@ -341,23 +341,23 @@
       },
       {
         "id": "b",
-        "text": "Replace multiple clotting factors in coagulopathy when indicated"
+        "text": "Treat iron deficiency alone"
       },
       {
         "id": "c",
-        "text": "Treat iron deficiency alone"
+        "text": "Replace multiple clotting factors in coagulopathy when indicated"
       },
       {
         "id": "d",
         "text": "Provide platelets exclusively"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "FFP provides plasma coagulation factors; not a first-line O2-carrying product.",
+    "correctOptionId": "c",
+    "explanation": "FFP provides plasma coagulation factors; not a first-line O2-carrying product The correct choice (“Replace multiple clotting factors in coagulopathy when indi…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "RBCs treat anemia.",
-      "c": "Iron therapy/RBCs as indicated.",
-      "d": "Platelet units for thrombocytopenia."
+      "a": "RBCs treat anemia. Learners who choose “Raise hemoglobin in anemia without coagulopathy” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Iron therapy/RBCs as indicated. Learners who choose “Treat iron deficiency alone” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Platelet units for thrombocytopenia. Learners who choose “Provide platelets exclusively” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -366,15 +366,15 @@
     "id": "ascp-mlt-readiness-check-blood-bank-012",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "blood-bank",
-    "prompt": "A unit labeled CMV-safe for at-risk neonates is often: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "A unit labeled CMV-safe for at-risk neonates is often",
     "options": [
       {
         "id": "a",
-        "text": "Leukoreduced and/or CMV-seronegative per policy"
+        "text": "Stored at 37°C"
       },
       {
         "id": "b",
-        "text": "Never irradiated"
+        "text": "Leukoreduced and/or CMV-seronegative per policy"
       },
       {
         "id": "c",
@@ -382,15 +382,15 @@
       },
       {
         "id": "d",
-        "text": "Stored at 37°C"
+        "text": "Never irradiated"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Leukoreduction/CMV-seronegative strategies reduce CMV transmission risk.",
+    "correctOptionId": "b",
+    "explanation": "Leukoreduction/CMV-seronegative strategies reduce CMV transmission risk The correct choice (“Leukoreduced and/or CMV-seronegative per policy”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Irradiation prevents TA-GVHD in selected patients.",
-      "c": "Components vary.",
-      "d": "RBCs stored refrigerated."
+      "a": "RBCs stored refrigerated. Learners who choose “Stored at 37°C” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Components vary. Learners who choose “Always whole blood only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Irradiation prevents TA-GVHD in selected patients. Learners who choose “Never irradiated” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -399,31 +399,31 @@
     "id": "ascp-mlt-readiness-check-blood-bank-013",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "blood-bank",
-    "prompt": "In ABO discrepancy with weaker-than-expected reverse reactions in elderly patients, consider:",
+    "prompt": "In ABO discrepancy with weaker-than-expected reverse reactions in elderly patients, consider",
     "options": [
       {
         "id": "a",
-        "text": "Hypogammaglobulinemia / weak isoagglutinins"
-      },
-      {
-        "id": "b",
-        "text": "That reverse typing is never needed"
-      },
-      {
-        "id": "c",
         "text": "Automatic group AB without testing"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Ignoring all discrepancies"
+      },
+      {
+        "id": "c",
+        "text": "Hypogammaglobulinemia / weak isoagglutinins"
+      },
+      {
+        "id": "d",
+        "text": "That reverse typing is never needed"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Weak reverse reactions can reflect low antibody titers; resolve before transfusion.",
+    "correctOptionId": "c",
+    "explanation": "Weak reverse reactions can reflect low antibody titers; resolve before transfusion The correct choice (“Hypogammaglobulinemia / weak isoagglutinins”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Reverse typing is standard for confirmation.",
-      "c": "Unsafe assumption.",
-      "d": "Must resolve."
+      "a": "Unsafe assumption. Learners who choose “Automatic group AB without testing” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Must resolve. Learners who choose “Ignoring all discrepancies” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Reverse typing is standard for confirmation. Learners who choose “That reverse typing is never needed” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -436,25 +436,25 @@
     "options": [
       {
         "id": "a",
-        "text": "Prevent formation of anti-D after exposure to D-positive RBCs"
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "b",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "Prevent formation of anti-D after exposure to D-positive RBCs"
       },
       {
         "id": "c",
-        "text": "this concept has no application in US securities, insurance, or licensing markets"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "d",
         "text": "this concept is identical to FDIC deposit insurance for every customer account"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "RhIG suppresses anti-D alloimmunization when indicated (antenatal/postpartum/etc.).",
+    "correctOptionId": "b",
+    "explanation": "RhIG suppresses anti-D alloimmunization when indicated (antenatal/postpartum/etc.) The correct choice (“Prevent formation of anti-D after exposure to D-positive RB…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
       "c": "This statement is false about the tested concept and does not match the correct definition.",
       "d": "This statement is false about the tested concept and does not match the correct definition."
     },
@@ -465,31 +465,31 @@
     "id": "ascp-mlt-readiness-check-blood-bank-015",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "blood-bank",
-    "prompt": "A positive DAT (direct antiglobulin test) indicates: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "A positive DAT (direct antiglobulin test) indicates",
     "options": [
       {
         "id": "a",
-        "text": "In vivo coating of RBCs with IgG and/or complement"
+        "text": "Elevated serum sodium"
       },
       {
         "id": "b",
-        "text": "Always a laboratory labeling error only"
-      },
-      {
-        "id": "c",
         "text": "Normal finding in all healthy donors"
       },
       {
+        "id": "c",
+        "text": "Always a laboratory labeling error only"
+      },
+      {
         "id": "d",
-        "text": "Elevated serum sodium"
+        "text": "In vivo coating of RBCs with IgG and/or complement"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "DAT detects immunoglobulin/complement already bound to patient RBCs.",
+    "correctOptionId": "d",
+    "explanation": "DAT detects immunoglobulin/complement already bound to patient RBCs The correct choice (“In vivo coating of RBCs with IgG and/or complement”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "May be true immune hemolysis.",
-      "c": "Usually negative in healthy people.",
-      "d": "Chemistry. This option does not match the tested concept (Elevated serum sodium)."
+      "a": "Chemistry. This option does not match the tested concept (Elevated serum sodium). Learners who choose “Elevated serum sodium” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Usually negative in healthy people. Learners who choose “Normal finding in all healthy donors” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "May be true immune hemolysis. Learners who choose “Always a laboratory labeling error only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -498,31 +498,31 @@
     "id": "ascp-mlt-readiness-check-chemistry-001",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "chemistry",
-    "prompt": "CK-MB and troponin are used primarily to evaluate: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "CK-MB and troponin are used primarily to evaluate",
     "options": [
       {
         "id": "a",
-        "text": "Myocardial injury"
+        "text": "Bone turnover exclusively"
       },
       {
         "id": "b",
-        "text": "Renal tubular acidosis only"
+        "text": "Myocardial injury"
       },
       {
         "id": "c",
-        "text": "Bone turnover exclusively"
+        "text": "Renal tubular acidosis only"
       },
       {
         "id": "d",
         "text": "Thyroid nodules"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Cardiac troponins (and historically CK-MB) mark myocardial injury.",
+    "correctOptionId": "b",
+    "explanation": "Cardiac troponins (and historically CK-MB) mark myocardial injury The correct choice (“Myocardial injury”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Electrolytes/ABG help RTA.",
-      "c": "ALP/CTX etc. for bone.",
-      "d": "Thyroid imaging/labs."
+      "a": "ALP/CTX etc. for bone. Learners who choose “Bone turnover exclusively” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Electrolytes/ABG help RTA. Learners who choose “Renal tubular acidosis only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Thyroid imaging/labs. Learners who choose “Thyroid nodules” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -531,11 +531,11 @@
     "id": "ascp-mlt-readiness-check-chemistry-002",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "chemistry",
-    "prompt": "Anion gap metabolic acidosis is suggested by low bicarbonate with elevated anion gap; a common cause is:",
+    "prompt": "Anion gap metabolic acidosis is suggested by low bicarbonate with elevated anion gap; a common cause is",
     "options": [
       {
         "id": "a",
-        "text": "Lactic acidosis or ketoacidosis"
+        "text": "Respiratory alkalosis alone"
       },
       {
         "id": "b",
@@ -547,15 +547,15 @@
       },
       {
         "id": "d",
-        "text": "Respiratory alkalosis alone"
+        "text": "Lactic acidosis or ketoacidosis"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "HAGMA causes include lactate, ketones, toxins (MUDPILES/GOLDMARK mnemonics).",
+    "correctOptionId": "d",
+    "explanation": "HAGMA causes include lactate, ketones, toxins (MUDPILES/GOLDMARK mnemonics) The correct choice (“Lactic acidosis or ketoacidosis”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Vomiting → alkalosis.",
-      "c": "Different pattern (NAGMA).",
-      "d": "Respiratory process."
+      "a": "Respiratory process. Learners who choose “Respiratory alkalosis alone” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Vomiting → alkalosis. Learners who choose “Vomiting-induced metabolic alkalosis” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Different pattern (NAGMA). Learners who choose “Hyperchloremic normal gap only always” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -564,31 +564,31 @@
     "id": "ascp-mlt-readiness-check-chemistry-003",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "chemistry",
-    "prompt": "Bilirubin fractionation: elevated conjugated (direct) bilirubin suggests:",
+    "prompt": "Bilirubin fractionation: elevated conjugated (direct) bilirubin suggests",
     "options": [
       {
         "id": "a",
-        "text": "Hepatic excretion defect / cholestasis or hepatocellular conjugated hyperbilirubinemia"
+        "text": "Laboratory impossibility"
       },
       {
         "id": "b",
-        "text": "Only hemolysis with purely unconjugated rise always"
-      },
-      {
-        "id": "c",
         "text": "Normal neonatal physiologic jaundice exclusively always conjugated"
       },
       {
+        "id": "c",
+        "text": "Hepatic excretion defect / cholestasis or hepatocellular conjugated hyperbilirubinemia"
+      },
+      {
         "id": "d",
-        "text": "Laboratory impossibility"
+        "text": "Only hemolysis with purely unconjugated rise always"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Conjugated hyperbilirubinemia points to hepatic/cholestatic pathways; hemolysis raises unconjugated.",
     "distractorExplanations": {
-      "b": "Hemolysis → unconjugated.",
-      "c": "Physiologic neonatal often unconjugated.",
-      "d": "Common pattern."
+      "a": "Common pattern. Learners who choose “Laboratory impossibility” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Physiologic neonatal often unconjugated. Learners who choose “Normal neonatal physiologic jaundice exclusively always conjugated” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Hemolysis → unconjugated. Learners who choose “Only hemolysis with purely unconjugated rise always” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -597,31 +597,31 @@
     "id": "ascp-mlt-readiness-check-chemistry-004",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "chemistry",
-    "prompt": "TSH is typically high in: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "TSH is typically high in:",
     "options": [
       {
         "id": "a",
-        "text": "Primary hypothyroidism"
-      },
-      {
-        "id": "b",
-        "text": "Primary hyperthyroidism"
-      },
-      {
-        "id": "c",
         "text": "All euthyroid patients"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Factitious thyrotoxicosis from excess T4 always low-normal only without exception"
+      },
+      {
+        "id": "c",
+        "text": "Primary hypothyroidism"
+      },
+      {
+        "id": "d",
+        "text": "Primary hyperthyroidism"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Primary hypo: low thyroid hormones → high TSH.",
+    "correctOptionId": "c",
+    "explanation": "Primary hypo: low thyroid hormones → high TSH The correct choice (“Primary hypothyroidism”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Primary hyper: TSH suppressed.",
-      "c": "Euthyroid TSH normal.",
-      "d": "Excess exogenous hormone suppresses TSH."
+      "a": "Euthyroid TSH normal. Learners who choose “All euthyroid patients” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Excess exogenous hormone suppresses TSH. Learners who choose “Factitious thyrotoxicosis from excess T4 always low-normal only without excepti…” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Primary hyper: TSH suppressed. Learners who choose “Primary hyperthyroidism” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -630,31 +630,31 @@
     "id": "ascp-mlt-readiness-check-chemistry-005",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "chemistry",
-    "prompt": "Serum osmolality is most contributed by: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Serum osmolality is most contributed by:",
     "options": [
       {
         "id": "a",
-        "text": "Sodium, glucose, and urea (BUN)"
-      },
-      {
-        "id": "b",
         "text": "Albumin only"
       },
       {
+        "id": "b",
+        "text": "Iron only"
+      },
+      {
         "id": "c",
-        "text": "Calcium only"
+        "text": "Sodium, glucose, and urea (BUN)"
       },
       {
         "id": "d",
-        "text": "Iron only"
+        "text": "Calcium only"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Calculated osm ≈ 2Na + glucose/18 + BUN/2.8 (conventional units).",
+    "correctOptionId": "c",
+    "explanation": "Calculated osm ≈ 2Na + glucose/18 + BUN/2.8 (conventional units) The correct choice (“Sodium, glucose, and urea (BUN)”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Colloid oncotic pressure more than osmoles count.",
-      "c": "Minor osmoles.",
-      "d": "Trace. This option does not match the tested concept (Iron only)."
+      "a": "Colloid oncotic pressure more than osmoles count. Learners who choose “Albumin only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Trace. This option does not match the tested concept (Iron only). Learners who choose “Iron only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Minor osmoles. Learners who choose “Calcium only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -663,31 +663,31 @@
     "id": "ascp-mlt-readiness-check-chemistry-006",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "chemistry",
-    "prompt": "A glucose sample left unseparated on cells at room temperature for hours may show:",
+    "prompt": "A glucose sample left unseparated on cells at room temperature for hours may show",
     "options": [
       {
         "id": "a",
-        "text": "Falsely increased glucose due to glycolysis"
+        "text": "Conversion to sodium"
       },
       {
         "id": "b",
-        "text": "Falsely decreased glucose due to glycolysis"
-      },
-      {
-        "id": "c",
         "text": "No change ever"
       },
       {
+        "id": "c",
+        "text": "Falsely decreased glucose due to glycolysis"
+      },
+      {
         "id": "d",
-        "text": "Conversion to sodium"
+        "text": "Falsely increased glucose due to glycolysis"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Cellular glycolysis consumes glucose unless fluoride tubes/prompt separation used.",
+    "correctOptionId": "c",
+    "explanation": "Cellular glycolysis consumes glucose unless fluoride tubes/prompt separation used The correct choice (“Falsely decreased glucose due to glycolysis”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Opposite direction.",
-      "c": "Changes occur.",
-      "d": "Nonsense. This option does not match the tested concept (Conversion to sodium)."
+      "a": "Nonsense. This option does not match the tested concept (Conversion to sodium). Learners who choose “Conversion to sodium” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Changes occur. Learners who choose “No change ever” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Opposite direction. Learners who choose “Falsely increased glucose due to glycolysis” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -696,15 +696,15 @@
     "id": "ascp-mlt-readiness-check-chemistry-007",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "chemistry",
-    "prompt": "Elevated ALP with elevated GGT suggests: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Elevated ALP with elevated GGT suggests",
     "options": [
       {
         "id": "a",
-        "text": "Hepatic/biliary source of ALP more than bone alone"
+        "text": "Cardiac troponin elevation"
       },
       {
         "id": "b",
-        "text": "Pure bone source certainty"
+        "text": "Hepatic/biliary source of ALP more than bone alone"
       },
       {
         "id": "c",
@@ -712,15 +712,15 @@
       },
       {
         "id": "d",
-        "text": "Cardiac troponin elevation"
+        "text": "Pure bone source certainty"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "GGT supports hepatic origin of ALP elevation; bone ALP lacks GGT rise.",
+    "correctOptionId": "b",
+    "explanation": "GGT supports hepatic origin of ALP elevation; bone ALP lacks GGT rise The correct choice (“Hepatic/biliary source of ALP more than bone alone”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Bone ALP usually normal GGT.",
-      "c": "Pregnancy ALP can rise (placental) with context.",
-      "d": "Different markers."
+      "a": "Different markers. Learners who choose “Cardiac troponin elevation” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Pregnancy ALP can rise (placental) with context. Learners who choose “Always normal pregnancy only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Bone ALP usually normal GGT. Learners who choose “Pure bone source certainty” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -729,7 +729,7 @@
     "id": "ascp-mlt-readiness-check-chemistry-008",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "chemistry",
-    "prompt": "Therapeutic drug monitoring trough levels are drawn: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Therapeutic drug monitoring trough levels are drawn",
     "options": [
       {
         "id": "a",
@@ -737,7 +737,7 @@
       },
       {
         "id": "b",
-        "text": "At peak random anytime without protocol"
+        "text": "Only from arterial blood"
       },
       {
         "id": "c",
@@ -745,15 +745,15 @@
       },
       {
         "id": "d",
-        "text": "Only from arterial blood"
+        "text": "At peak random anytime without protocol"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Troughs assess minimum concentration before redosing for many drugs.",
+    "explanation": "Troughs assess minimum concentration before redosing for many drugs The correct choice (“Just before the next dose”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Peaks are timed post-dose.",
-      "c": "Not trough definition.",
-      "d": "Usually venous."
+      "b": "Usually venous. Learners who choose “Only from arterial blood” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Not trough definition. Learners who choose “One week after stopping therapy always” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Peaks are timed post-dose. Learners who choose “At peak random anytime without protocol” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -762,31 +762,31 @@
     "id": "ascp-mlt-readiness-check-chemistry-009",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "chemistry",
-    "prompt": "Hyperkalemia ECG risk makes lab-clinician communication urgent because K+ > ~6–6.5 mEq/L can cause:",
+    "prompt": "Hyperkalemia ECG risk makes lab-clinician communication urgent because K+ > ~6–6.5 mEq/L can cause",
     "options": [
       {
         "id": "a",
-        "text": "Peaked T waves and arrhythmias"
+        "text": "No cardiac effects"
       },
       {
         "id": "b",
-        "text": "Only bradycardia from hypokalemia"
-      },
-      {
-        "id": "c",
         "text": "Pathognomonic ST elevation MI always"
       },
       {
+        "id": "c",
+        "text": "Peaked T waves and arrhythmias"
+      },
+      {
         "id": "d",
-        "text": "No cardiac effects"
+        "text": "Only bradycardia from hypokalemia"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Severe hyperkalemia is cardiotoxic; critical notification is mandatory.",
+    "correctOptionId": "c",
+    "explanation": "Severe hyperkalemia is cardiotoxic; critical notification is mandatory The correct choice (“Peaked T waves and arrhythmias”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Hypokalemia has other ECG changes.",
-      "c": "Not equivalent to STEMI criteria.",
-      "d": "Cardiac effects are key."
+      "a": "Cardiac effects are key. Learners who choose “No cardiac effects” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Not equivalent to STEMI criteria. Learners who choose “Pathognomonic ST elevation MI always” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Hypokalemia has other ECG changes. Learners who choose “Only bradycardia from hypokalemia” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -795,7 +795,7 @@
     "id": "ascp-mlt-readiness-check-chemistry-010",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "chemistry",
-    "prompt": "Mean corpuscular volume (MCV) classifies anemias as: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Mean corpuscular volume (MCV) classifies anemias as:",
     "options": [
       {
         "id": "a",
@@ -803,11 +803,11 @@
       },
       {
         "id": "b",
-        "text": "Only hypochromic always"
+        "text": "Platelet size exclusively"
       },
       {
         "id": "c",
-        "text": "Platelet size exclusively"
+        "text": "Only hypochromic always"
       },
       {
         "id": "d",
@@ -815,11 +815,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "MCV is the RBC size index used in anemia workups.",
+    "explanation": "MCV is the RBC size index used in anemia workups The correct choice (“Microcytic, normocytic, or macrocytic”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "MCHC relates to chromia.",
-      "c": "MPV is platelets.",
-      "d": "Coag assays."
+      "b": "MPV is platelets. Learners who choose “Platelet size exclusively” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "MCHC relates to chromia. Learners who choose “Only hypochromic always” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Coag assays. Learners who choose “Clotting factor levels” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -828,31 +828,31 @@
     "id": "ascp-mlt-readiness-check-chemistry-011",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "chemistry",
-    "prompt": "Iron deficiency anemia typically shows: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Iron deficiency anemia typically shows",
     "options": [
       {
         "id": "a",
-        "text": "High MCV and high ferritin"
+        "text": "Normal iron studies always"
       },
       {
         "id": "b",
-        "text": "Low MCV, low ferritin, high TIBC"
+        "text": "High MCV and high ferritin"
       },
       {
         "id": "c",
-        "text": "High ferritin and low TIBC always like anemia of chronic disease pattern"
+        "text": "Low MCV, low ferritin, high TIBC"
       },
       {
         "id": "d",
-        "text": "Normal iron studies always"
+        "text": "High ferritin and low TIBC always like anemia of chronic disease pattern"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "IDA: microcytic hypochromic with low ferritin/iron and elevated TIBC.",
+    "correctOptionId": "c",
+    "explanation": "IDA: microcytic hypochromic with low ferritin/iron and elevated TIBC The correct choice (“Low MCV, low ferritin, high TIBC”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Opposite pattern.",
-      "c": "ACD often low TIBC/high ferritin.",
-      "d": "Abnormal in IDA."
+      "a": "Abnormal in IDA. Learners who choose “Normal iron studies always” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Opposite pattern. Learners who choose “High MCV and high ferritin” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "ACD often low TIBC/high ferritin. Learners who choose “High ferritin and low TIBC always like anemia of chronic disease pattern” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -861,31 +861,31 @@
     "id": "ascp-mlt-readiness-check-chemistry-012",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "chemistry",
-    "prompt": "Schistocytes on peripheral smear suggest: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Schistocytes on peripheral smear suggest",
     "options": [
       {
         "id": "a",
-        "text": "Microangiopathic hemolytic process"
-      },
-      {
-        "id": "b",
-        "text": "Iron overload exclusively"
-      },
-      {
-        "id": "c",
         "text": "Normal newborn smear always"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Vitamin C toxicity"
+      },
+      {
+        "id": "c",
+        "text": "Microangiopathic hemolytic process"
+      },
+      {
+        "id": "d",
+        "text": "Iron overload exclusively"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Fragmented RBCs occur in MAHA (DIC, TTP, HUS, mechanical valves, etc.).",
+    "correctOptionId": "c",
+    "explanation": "Fragmented RBCs occur in MAHA (DIC, TTP, HUS, mechanical valves, etc.) The correct choice (“Microangiopathic hemolytic process”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Different findings.",
-      "c": "Not normal. This option does not match the tested concept (Normal newborn smear always).",
-      "d": "Unrelated. This option does not match the tested concept (Vitamin C toxicity)."
+      "a": "Not normal. This option does not match the tested concept (Normal newborn smear always). Learners who choose “Normal newborn smear always” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Unrelated. This option does not match the tested concept (Vitamin C toxicity). Learners who choose “Vitamin C toxicity” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Different findings. Learners who choose “Iron overload exclusively” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -894,15 +894,15 @@
     "id": "ascp-mlt-readiness-check-chemistry-013",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "chemistry",
-    "prompt": "A left shift in the WBC differential refers to: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "A left shift in the WBC differential refers to:",
     "options": [
       {
         "id": "a",
-        "text": "Increased immature neutrophils (bands/metas) in circulation"
+        "text": "Increased lymphocytes only always"
       },
       {
         "id": "b",
-        "text": "Increased lymphocytes only always"
+        "text": "Eosinopenia only"
       },
       {
         "id": "c",
@@ -910,15 +910,15 @@
       },
       {
         "id": "d",
-        "text": "Eosinopenia only"
+        "text": "Increased immature neutrophils (bands/metas) in circulation"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Left shift indicates myeloid immaturity often with infection/inflammation.",
+    "correctOptionId": "d",
+    "explanation": "Left shift indicates myeloid immaturity often with infection/inflammation The correct choice (“Increased immature neutrophils (bands/metas) in circulation”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Lymphocytosis different.",
-      "c": "Count may be high or low.",
-      "d": "Different lineage."
+      "a": "Lymphocytosis different. Learners who choose “Increased lymphocytes only always” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Different lineage. Learners who choose “Eosinopenia only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Count may be high or low. Learners who choose “Decreased WBC count definitionally” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -927,11 +927,11 @@
     "id": "ascp-mlt-readiness-check-chemistry-014",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "chemistry",
-    "prompt": "PT/INR primarily monitors: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "PT/INR primarily monitors",
     "options": [
       {
         "id": "a",
-        "text": "Extrinsic pathway / warfarin therapy"
+        "text": "Fibrin degradation exclusively without PT"
       },
       {
         "id": "b",
@@ -943,15 +943,15 @@
       },
       {
         "id": "d",
-        "text": "Fibrin degradation exclusively without PT"
+        "text": "Extrinsic pathway / warfarin therapy"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "PT/INR assesses factors VII pathway and warfarin effect.",
+    "correctOptionId": "d",
+    "explanation": "PT/INR assesses factors VII pathway and warfarin effect The correct choice (“Extrinsic pathway / warfarin therapy”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "aPTT more for heparin/intrinsic.",
-      "c": "Platelet function tests differ.",
-      "d": "FDPs/D-dimer separate."
+      "a": "FDPs/D-dimer separate. Learners who choose “Fibrin degradation exclusively without PT” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "APTT more for heparin/intrinsic. Learners who choose “Intrinsic pathway only / heparin exclusively” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Platelet function tests differ. Learners who choose “Platelet aggregation only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -960,31 +960,31 @@
     "id": "ascp-mlt-readiness-check-chemistry-015",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "chemistry",
-    "prompt": "aPTT prolongation with normal PT may indicate: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "APTT prolongation with normal PT may indicate",
     "options": [
       {
         "id": "a",
-        "text": "Factor VIII/IX deficiency or heparin effect (among other intrinsic pathway issues)"
+        "text": "Always vitamin K deficiency alone exclusively"
       },
       {
         "id": "b",
-        "text": "Isolated factor VII deficiency only"
+        "text": "Factor VIII/IX deficiency or heparin effect (among other intrinsic pathway issues)"
       },
       {
         "id": "c",
-        "text": "Always vitamin K deficiency alone exclusively"
+        "text": "Isolated factor VII deficiency only"
       },
       {
         "id": "d",
         "text": "Normal hemostasis certainty"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Intrinsic pathway defects and unfractionated heparin prolong aPTT more than PT.",
+    "correctOptionId": "b",
+    "explanation": "Intrinsic pathway defects and unfractionated heparin prolong aPTT more than PT The correct choice (“Factor VIII/IX deficiency or heparin effect (among other in…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "VII prolongs PT.",
-      "c": "Vit K affects II, VII, IX, X — both PT/aPTT can rise.",
-      "d": "Abnormal result."
+      "a": "Vit K affects II, VII, IX, X — both PT/aPTT can rise. Learners who choose “Always vitamin K deficiency alone exclusively” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "VII prolongs PT. Learners who choose “Isolated factor VII deficiency only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Abnormal result. Learners who choose “Normal hemostasis certainty” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -993,31 +993,31 @@
     "id": "ascp-mlt-readiness-check-hematology-001",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "hematology",
-    "prompt": "A unit labeled CMV-safe for at-risk neonates is often: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "A unit labeled CMV-safe for at-risk neonates is often",
     "options": [
       {
         "id": "a",
-        "text": "Leukoreduced and/or CMV-seronegative per policy"
+        "text": "Stored at 37°C"
       },
       {
         "id": "b",
-        "text": "Never irradiated"
+        "text": "Leukoreduced and/or CMV-seronegative per policy"
       },
       {
         "id": "c",
-        "text": "Always whole blood only"
+        "text": "Never irradiated"
       },
       {
         "id": "d",
-        "text": "Stored at 37°C"
+        "text": "Always whole blood only"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Leukoreduction/CMV-seronegative strategies reduce CMV transmission risk.",
+    "correctOptionId": "b",
+    "explanation": "Leukoreduction/CMV-seronegative strategies reduce CMV transmission risk The correct choice (“Leukoreduced and/or CMV-seronegative per policy”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Irradiation prevents TA-GVHD in selected patients.",
-      "c": "Components vary.",
-      "d": "RBCs stored refrigerated."
+      "a": "RBCs stored refrigerated. Learners who choose “Stored at 37°C” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Irradiation prevents TA-GVHD in selected patients. Learners who choose “Never irradiated” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Components vary. Learners who choose “Always whole blood only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1026,31 +1026,31 @@
     "id": "ascp-mlt-readiness-check-hematology-002",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "hematology",
-    "prompt": "In ABO discrepancy with weaker-than-expected reverse reactions in elderly patients, consider:",
+    "prompt": "In ABO discrepancy with weaker-than-expected reverse reactions in elderly patients, consider",
     "options": [
       {
         "id": "a",
-        "text": "Hypogammaglobulinemia / weak isoagglutinins"
-      },
-      {
-        "id": "b",
-        "text": "That reverse typing is never needed"
-      },
-      {
-        "id": "c",
         "text": "Automatic group AB without testing"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Ignoring all discrepancies"
+      },
+      {
+        "id": "c",
+        "text": "Hypogammaglobulinemia / weak isoagglutinins"
+      },
+      {
+        "id": "d",
+        "text": "That reverse typing is never needed"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Weak reverse reactions can reflect low antibody titers; resolve before transfusion.",
+    "correctOptionId": "c",
+    "explanation": "Weak reverse reactions can reflect low antibody titers; resolve before transfusion The correct choice (“Hypogammaglobulinemia / weak isoagglutinins”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Reverse typing is standard for confirmation.",
-      "c": "Unsafe assumption.",
-      "d": "Must resolve."
+      "a": "Unsafe assumption. Learners who choose “Automatic group AB without testing” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Must resolve. Learners who choose “Ignoring all discrepancies” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Reverse typing is standard for confirmation. Learners who choose “That reverse typing is never needed” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1063,11 +1063,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Prevent formation of anti-D after exposure to D-positive RBCs"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "b",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "c",
@@ -1075,15 +1075,15 @@
       },
       {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "Prevent formation of anti-D after exposure to D-positive RBCs"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "RhIG suppresses anti-D alloimmunization when indicated (antenatal/postpartum/etc.).",
+    "correctOptionId": "d",
+    "explanation": "RhIG suppresses anti-D alloimmunization when indicated (antenatal/postpartum/etc.) The correct choice (“Prevent formation of anti-D after exposure to D-positive RB…”) is the one that matches this rule.",
     "distractorExplanations": {
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
       "b": "This statement is false about the tested concept and does not match the correct definition.",
-      "c": "This statement is false about the tested concept and does not match the correct definition.",
-      "d": "This statement is false about the tested concept and does not match the correct definition."
+      "c": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1092,7 +1092,7 @@
     "id": "ascp-mlt-readiness-check-hematology-004",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "hematology",
-    "prompt": "A positive DAT (direct antiglobulin test) indicates: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "A positive DAT (direct antiglobulin test) indicates",
     "options": [
       {
         "id": "a",
@@ -1100,11 +1100,11 @@
       },
       {
         "id": "b",
-        "text": "Always a laboratory labeling error only"
+        "text": "Normal finding in all healthy donors"
       },
       {
         "id": "c",
-        "text": "Normal finding in all healthy donors"
+        "text": "Always a laboratory labeling error only"
       },
       {
         "id": "d",
@@ -1112,11 +1112,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "DAT detects immunoglobulin/complement already bound to patient RBCs.",
+    "explanation": "DAT detects immunoglobulin/complement already bound to patient RBCs The correct choice (“In vivo coating of RBCs with IgG and/or complement”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "May be true immune hemolysis.",
-      "c": "Usually negative in healthy people.",
-      "d": "Chemistry. This option does not match the tested concept (Elevated serum sodium)."
+      "b": "Usually negative in healthy people. Learners who choose “Normal finding in all healthy donors” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "May be true immune hemolysis. Learners who choose “Always a laboratory labeling error only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Chemistry. This option does not match the tested concept (Elevated serum sodium). Learners who choose “Elevated serum sodium” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1125,31 +1125,31 @@
     "id": "ascp-mlt-readiness-check-hematology-005",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "hematology",
-    "prompt": "Emergency uncrossmatched blood for a bleeding unknown patient is typically:",
+    "prompt": "Emergency uncrossmatched blood for a bleeding unknown patient is typically",
     "options": [
       {
         "id": "a",
-        "text": "Group AB plasma and AB RBCs always first"
-      },
-      {
-        "id": "b",
         "text": "Group O RBCs (often O-negative for women of childbearing potential per policy)"
       },
       {
+        "id": "b",
+        "text": "Platelets only"
+      },
+      {
         "id": "c",
-        "text": "Any random unit without documentation"
+        "text": "Group AB plasma and AB RBCs always first"
       },
       {
         "id": "d",
-        "text": "Platelets only"
+        "text": "Any random unit without documentation"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "O RBCs are universal donor red cells in emergencies; Rh choice follows policy/risk.",
+    "correctOptionId": "a",
+    "explanation": "O RBCs are universal donor red cells in emergencies; Rh choice follows policy/risk The correct choice (“Group O RBCs (often O-negative for women of childbearing po…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "AB plasma is universal plasma; RBCs differ.",
-      "c": "Traceability required.",
-      "d": "Not for RBC oxygen delivery."
+      "b": "Not for RBC oxygen delivery. Learners who choose “Platelets only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "AB plasma is universal plasma; RBCs differ. Learners who choose “Group AB plasma and AB RBCs always first” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Traceability required. Learners who choose “Any random unit without documentation” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1158,15 +1158,15 @@
     "id": "ascp-mlt-readiness-check-hematology-006",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "hematology",
-    "prompt": "Antibody identification panel interpretation requires: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Antibody identification panel interpretation requires:",
     "options": [
       {
         "id": "a",
-        "text": "Ignoring dosage and phase reactions"
+        "text": "Ruling out antibodies using negative reactions and considering phase, dosage, and patient history"
       },
       {
         "id": "b",
-        "text": "Ruling out antibodies using negative reactions and considering phase, dosage, and patient history"
+        "text": "Never performing an autocontrol"
       },
       {
         "id": "c",
@@ -1174,15 +1174,15 @@
       },
       {
         "id": "d",
-        "text": "Never performing an autocontrol"
+        "text": "Ignoring dosage and phase reactions"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Systematic rule-outs and clinical correlation identify alloantibodies.",
+    "correctOptionId": "a",
+    "explanation": "Systematic rule-outs and clinical correlation identify alloantibodies The correct choice (“Ruling out antibodies using negative reactions and consider…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Dosage/phase matter.",
-      "c": "Not a method.",
-      "d": "Autocontrol helps detect autoantibodies."
+      "b": "Autocontrol helps detect autoantibodies. Learners who choose “Never performing an autocontrol” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Not a method. Learners who choose “Selecting the first antibody listed alphabetically” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Dosage/phase matter. Learners who choose “Ignoring dosage and phase reactions” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1191,7 +1191,7 @@
     "id": "ascp-mlt-readiness-check-hematology-007",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "hematology",
-    "prompt": "Leukoreduction of RBC units primarily reduces risk of: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Leukoreduction of RBC units primarily reduces risk of:",
     "options": [
       {
         "id": "a",
@@ -1199,11 +1199,11 @@
       },
       {
         "id": "b",
-        "text": "Iron overload completely"
+        "text": "All allergic reactions forever"
       },
       {
         "id": "c",
-        "text": "All allergic reactions forever"
+        "text": "Iron overload completely"
       },
       {
         "id": "d",
@@ -1211,11 +1211,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Removing WBCs decreases FNHTR, CMV risk, and alloimmunization risk.",
+    "explanation": "Removing WBCs decreases FNHTR, CMV risk, and alloimmunization risk The correct choice (“Febrile nonhemolytic transfusion reactions and CMV transmis…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Iron overload still possible with chronic transfusion.",
-      "c": "Allergic reactions often plasma protein related.",
-      "d": "ABO compatibility still required."
+      "b": "Allergic reactions often plasma protein related. Learners who choose “All allergic reactions forever” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Iron overload still possible with chronic transfusion. Learners who choose “Iron overload completely” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "ABO compatibility still required. Learners who choose “ABO mismatches” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1224,7 +1224,7 @@
     "id": "ascp-mlt-readiness-check-hematology-008",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "hematology",
-    "prompt": "Elevated serum creatinine most directly suggests: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Elevated serum creatinine most directly suggests",
     "options": [
       {
         "id": "a",
@@ -1232,7 +1232,7 @@
       },
       {
         "id": "b",
-        "text": "Reduced glomerular filtration / impaired kidney function"
+        "text": "Hyperthyroidism only"
       },
       {
         "id": "c",
@@ -1240,15 +1240,15 @@
       },
       {
         "id": "d",
-        "text": "Hyperthyroidism only"
+        "text": "Reduced glomerular filtration / impaired kidney function"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Creatinine rises when GFR falls (with caveats of muscle mass/assay).",
+    "correctOptionId": "d",
+    "explanation": "Creatinine rises when GFR falls (with caveats of muscle mass/assay) The correct choice (“Reduced glomerular filtration / impaired kidney function”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Opposite. This option does not match the tested concept (Improved GFR always).",
-      "c": "Liver enzymes more specific for hepatitis.",
-      "d": "Thyroid tests differ."
+      "a": "Opposite. This option does not match the tested concept (Improved GFR always). Learners who choose “Improved GFR always” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Thyroid tests differ. Learners who choose “Hyperthyroidism only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Liver enzymes more specific for hepatitis. Learners who choose “Acute hepatitis specifically” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1257,31 +1257,31 @@
     "id": "ascp-mlt-readiness-check-hematology-009",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "hematology",
-    "prompt": "Hyponatremia means: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Hyponatremia means:",
     "options": [
       {
         "id": "a",
-        "text": "Low serum sodium"
-      },
-      {
-        "id": "b",
-        "text": "High serum sodium"
-      },
-      {
-        "id": "c",
         "text": "Low serum potassium"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "High serum calcium"
+      },
+      {
+        "id": "c",
+        "text": "High serum sodium"
+      },
+      {
+        "id": "d",
+        "text": "Low serum sodium"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Hypo- = low; Na+ is sodium.",
+    "correctOptionId": "d",
+    "explanation": "Hypo- = low; Na+ is sodium The correct choice (“Low serum sodium”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Hypernatremia.",
-      "c": "Hypokalemia.",
-      "d": "Hypercalcemia."
+      "a": "Hypokalemia. Learners who choose “Low serum potassium” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Hypercalcemia. Learners who choose “High serum calcium” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Hypernatremia. Learners who choose “High serum sodium” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1294,7 +1294,7 @@
     "options": [
       {
         "id": "a",
-        "text": "ALT (and AST)"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "b",
@@ -1302,18 +1302,18 @@
       },
       {
         "id": "c",
-        "text": "this concept has no application in US securities, insurance, or licensing markets"
+        "text": "ALT (and AST)"
       },
       {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "ALT/AST rise with hepatocyte damage; ALT more liver-specific.",
+    "correctOptionId": "c",
+    "explanation": "ALT/AST rise with hepatocyte damage; ALT more liver-specific The correct choice (“ALT (and AST)”) is the one that matches this rule.",
     "distractorExplanations": {
+      "a": "This statement is false about the tested concept and does not match the correct definition.",
       "b": "This statement is false about the tested concept and does not match the correct definition.",
-      "c": "This statement is false about the tested concept and does not match the correct definition.",
       "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "easy",
@@ -1323,31 +1323,31 @@
     "id": "ascp-mlt-readiness-check-hematology-011",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "hematology",
-    "prompt": "HbA1c reflects average glycemia over approximately: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "HbA1c reflects average glycemia over approximately",
     "options": [
       {
         "id": "a",
-        "text": "1 day"
+        "text": "10 years"
       },
       {
         "id": "b",
-        "text": "2–3 months"
+        "text": "1 day"
       },
       {
         "id": "c",
-        "text": "10 years"
+        "text": "2–3 months"
       },
       {
         "id": "d",
         "text": "1 hour postprandial only"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "A1c correlates with RBC lifespan ~120 days; clinically ~2–3 months average glucose.",
+    "correctOptionId": "c",
+    "explanation": "A1c correlates with RBC lifespan ~120 days; clinically ~2–3 months average glucose The correct choice (“2–3 months”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Too short. This option does not match the tested concept (1 day).",
-      "c": "Too long. This option does not match the tested concept (10 years).",
-      "d": "OGTT/postprandial differ."
+      "a": "Too long. This option does not match the tested concept (10 years). Learners who choose “10 years” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Too short. This option does not match the tested concept (1 day). Learners who choose “1 day” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "OGTT/postprandial differ. Learners who choose “1 hour postprandial only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1356,7 +1356,7 @@
     "id": "ascp-mlt-readiness-check-hematology-012",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "hematology",
-    "prompt": "A critically high potassium result should first prompt: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "A critically high potassium result should first prompt",
     "options": [
       {
         "id": "a",
@@ -1364,7 +1364,7 @@
       },
       {
         "id": "b",
-        "text": "Discarding without notification"
+        "text": "Averaging with yesterday's result silently"
       },
       {
         "id": "c",
@@ -1372,15 +1372,15 @@
       },
       {
         "id": "d",
-        "text": "Averaging with yesterday's result silently"
+        "text": "Discarding without notification"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Critical values require rapid verification for preanalytics (hemolysis falsely ↑K+) and clinician notification.",
     "distractorExplanations": {
-      "b": "Must communicate criticals — discarding without notification is unsafe.",
-      "c": "Delay harms patients.",
-      "d": "Silent averaging is improper."
+      "b": "Silent averaging is improper. Learners who choose “Averaging with yesterday's result silently” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Delay harms patients. Learners who choose “Waiting a week” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Must communicate criticals — discarding without notification is unsafe. Learners who choose “Discarding without notification” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1389,31 +1389,31 @@
     "id": "ascp-mlt-readiness-check-hematology-013",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "hematology",
-    "prompt": "Lipemic specimens can interfere with assays mainly by: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Lipemic specimens can interfere with assays mainly by:",
     "options": [
       {
         "id": "a",
-        "text": "Improving all spectrophotometric accuracy"
+        "text": "Eliminating the need for QC"
       },
       {
         "id": "b",
-        "text": "Causing turbidity/volume displacement errors in some methods"
-      },
-      {
-        "id": "c",
         "text": "Increasing sodium by flame photometry always beneficially"
       },
       {
+        "id": "c",
+        "text": "Improving all spectrophotometric accuracy"
+      },
+      {
         "id": "d",
-        "text": "Eliminating the need for QC"
+        "text": "Causing turbidity/volume displacement errors in some methods"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Lipemia causes optical and sometimes electrolyte artifacts; ultracentrifugation/clearing may help.",
+    "correctOptionId": "d",
+    "explanation": "Lipemia causes optical and sometimes electrolyte artifacts; ultracentrifugation/clearing may help The correct choice (“Causing turbidity/volume displacement errors in some methods”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Worsens many optical assays.",
-      "c": "Interference is problematic.",
-      "d": "QC still required."
+      "a": "QC still required. Learners who choose “Eliminating the need for QC” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Interference is problematic. Learners who choose “Increasing sodium by flame photometry always beneficially” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Worsens many optical assays. Learners who choose “Improving all spectrophotometric accuracy” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1422,7 +1422,7 @@
     "id": "ascp-mlt-readiness-check-hematology-014",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "hematology",
-    "prompt": "CK-MB and troponin are used primarily to evaluate: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "CK-MB and troponin are used primarily to evaluate",
     "options": [
       {
         "id": "a",
@@ -1430,11 +1430,11 @@
       },
       {
         "id": "b",
-        "text": "Renal tubular acidosis only"
+        "text": "Bone turnover exclusively"
       },
       {
         "id": "c",
-        "text": "Bone turnover exclusively"
+        "text": "Renal tubular acidosis only"
       },
       {
         "id": "d",
@@ -1442,11 +1442,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Cardiac troponins (and historically CK-MB) mark myocardial injury.",
+    "explanation": "Cardiac troponins (and historically CK-MB) mark myocardial injury The correct choice (“Myocardial injury”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Electrolytes/ABG help RTA.",
-      "c": "ALP/CTX etc. for bone.",
-      "d": "Thyroid imaging/labs."
+      "b": "ALP/CTX etc. for bone. Learners who choose “Bone turnover exclusively” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Electrolytes/ABG help RTA. Learners who choose “Renal tubular acidosis only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Thyroid imaging/labs. Learners who choose “Thyroid nodules” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1455,31 +1455,31 @@
     "id": "ascp-mlt-readiness-check-hematology-015",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "hematology",
-    "prompt": "Anion gap metabolic acidosis is suggested by low bicarbonate with elevated anion gap; a common cause is:",
+    "prompt": "Anion gap metabolic acidosis is suggested by low bicarbonate with elevated anion gap; a common cause is",
     "options": [
       {
         "id": "a",
-        "text": "Lactic acidosis or ketoacidosis"
-      },
-      {
-        "id": "b",
-        "text": "Vomiting-induced metabolic alkalosis"
-      },
-      {
-        "id": "c",
         "text": "Hyperchloremic normal gap only always"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Respiratory alkalosis alone"
+      },
+      {
+        "id": "c",
+        "text": "Vomiting-induced metabolic alkalosis"
+      },
+      {
+        "id": "d",
+        "text": "Lactic acidosis or ketoacidosis"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "HAGMA causes include lactate, ketones, toxins (MUDPILES/GOLDMARK mnemonics).",
+    "correctOptionId": "d",
+    "explanation": "HAGMA causes include lactate, ketones, toxins (MUDPILES/GOLDMARK mnemonics) The correct choice (“Lactic acidosis or ketoacidosis”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Vomiting → alkalosis.",
-      "c": "Different pattern (NAGMA).",
-      "d": "Respiratory process."
+      "a": "Different pattern (NAGMA). Learners who choose “Hyperchloremic normal gap only always” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Respiratory process. Learners who choose “Respiratory alkalosis alone” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Vomiting → alkalosis. Learners who choose “Vomiting-induced metabolic alkalosis” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1488,31 +1488,31 @@
     "id": "ascp-mlt-readiness-check-micro-001",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "micro",
-    "prompt": "India ink or cryptococcal antigen testing is used for: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "India ink or cryptococcal antigen testing is used for:",
     "options": [
       {
         "id": "a",
-        "text": "Cryptococcus neoformans/gattii in CSF/serum contexts"
-      },
-      {
-        "id": "b",
-        "text": "Group A strep pharyngitis exclusively"
-      },
-      {
-        "id": "c",
         "text": "Malaria thick smears only"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "TB PCR exclusively"
+      },
+      {
+        "id": "c",
+        "text": "Group A strep pharyngitis exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Cryptococcus neoformans/gattii in CSF/serum contexts"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Capsule visualization/antigen assays support cryptococcal meningitis diagnosis.",
+    "correctOptionId": "d",
+    "explanation": "Capsule visualization/antigen assays support cryptococcal meningitis diagnosis The correct choice (“Cryptococcus neoformans/gattii in CSF/serum contexts”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Rapid strep/culture.",
-      "c": "Giemsa smears.",
-      "d": "Different pathogens."
+      "a": "Giemsa smears. Learners who choose “Malaria thick smears only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Different pathogens. Learners who choose “TB PCR exclusively” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Rapid strep/culture. Learners who choose “Group A strep pharyngitis exclusively” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1521,7 +1521,7 @@
     "id": "ascp-mlt-readiness-check-micro-002",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "micro",
-    "prompt": "Gram-positive organisms stain: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Gram-positive organisms stain",
     "options": [
       {
         "id": "a",
@@ -1529,23 +1529,23 @@
       },
       {
         "id": "b",
-        "text": "Pink/red because of outer membrane only"
-      },
-      {
-        "id": "c",
         "text": "Green with acid-fast only"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Colorless always"
+      },
+      {
+        "id": "d",
+        "text": "Pink/red because of outer membrane only"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Crystal violet–iodine complex is retained in Gram-positive walls.",
+    "explanation": "Crystal violet–iodine complex is retained in Gram-positive walls The correct choice (“Purple/blue due to thick peptidoglycan retaining crystal vi…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Gram-negatives take safranin counterstain.",
-      "c": "AFB use different stains.",
-      "d": "They take stain."
+      "b": "AFB use different stains. Learners who choose “Green with acid-fast only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "They take stain. Learners who choose “Colorless always” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Gram-negatives take safranin counterstain. Learners who choose “Pink/red because of outer membrane only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1554,31 +1554,31 @@
     "id": "ascp-mlt-readiness-check-micro-003",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "micro",
-    "prompt": "Catalase test differentiates: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Catalase test differentiates",
     "options": [
       {
         "id": "a",
-        "text": "Staphylococcus (positive) from Streptococcus (negative)"
-      },
-      {
-        "id": "b",
         "text": "All Gram-negatives from each other"
       },
       {
+        "id": "b",
+        "text": "Staphylococcus (positive) from Streptococcus (negative)"
+      },
+      {
         "id": "c",
-        "text": "Viruses from fungi"
+        "text": "Mycobacteria species definitively alone"
       },
       {
         "id": "d",
-        "text": "Mycobacteria species definitively alone"
+        "text": "Viruses from fungi"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Staphylococci are catalase-positive; streptococci/enterococci catalase-negative.",
+    "correctOptionId": "b",
+    "explanation": "Staphylococci are catalase-positive; streptococci/enterococci catalase-negative The correct choice (“Staphylococcus (positive) from Streptococcus (negative)”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Need other tests.",
-      "c": "Different methods.",
-      "d": "Needs more ID methods."
+      "a": "Need other tests. Learners who choose “All Gram-negatives from each other” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Needs more ID methods. Learners who choose “Mycobacteria species definitively alone” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Different methods. Learners who choose “Viruses from fungi” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1587,11 +1587,11 @@
     "id": "ascp-mlt-readiness-check-micro-004",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "micro",
-    "prompt": "A positive coagulase test is characteristic of: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "A positive coagulase test is characteristic of:",
     "options": [
       {
         "id": "a",
-        "text": "Staphylococcus aureus"
+        "text": "Streptococcus pyogenes"
       },
       {
         "id": "b",
@@ -1599,19 +1599,19 @@
       },
       {
         "id": "c",
-        "text": "Streptococcus pyogenes"
+        "text": "Escherichia coli"
       },
       {
         "id": "d",
-        "text": "Escherichia coli"
+        "text": "Staphylococcus aureus"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "S. aureus is coagulase-positive (with rare exceptions).",
+    "correctOptionId": "d",
+    "explanation": "S. aureus is coagulase-positive (with rare exceptions) The correct choice (“Staphylococcus aureus”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "CoNS are coagulase-negative.",
-      "c": "Strep. This option does not match the tested concept (Streptococcus pyogenes).",
-      "d": "GNB. This option does not match the tested concept (Escherichia coli)."
+      "a": "Strep. This option does not match the tested concept (Streptococcus pyogenes). Learners who choose “Streptococcus pyogenes” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "CoNS are coagulase-negative. Learners who choose “Staphylococcus epidermidis typically” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "GNB. This option does not match the tested concept (Escherichia coli). Learners who choose “Escherichia coli” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1620,31 +1620,31 @@
     "id": "ascp-mlt-readiness-check-micro-005",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "micro",
-    "prompt": "Acid-fast staining is used for: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Acid-fast staining is used for:",
     "options": [
       {
         "id": "a",
-        "text": "Mycobacterium species"
-      },
-      {
-        "id": "b",
-        "text": "All streptococci"
-      },
-      {
-        "id": "c",
         "text": "Influenza virus particles in light microscopy routinely"
       },
       {
-        "id": "d",
+        "id": "b",
+        "text": "Mycobacterium species"
+      },
+      {
+        "id": "c",
         "text": "Plasmodium only with Gram stain"
+      },
+      {
+        "id": "d",
+        "text": "All streptococci"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Mycolic acids retain carbol fuchsin in AFB stains.",
+    "correctOptionId": "b",
+    "explanation": "Mycolic acids retain carbol fuchsin in AFB stains The correct choice (“Mycobacterium species”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Gram stain. This option does not match the tested concept (All streptococci).",
-      "c": "Viruses need other methods.",
-      "d": "Malaria uses Giemsa; not Gram AFB concept."
+      "a": "Viruses need other methods. Learners who choose “Influenza virus particles in light microscopy routinely” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Malaria uses Giemsa; not Gram AFB concept. Learners who choose “Plasmodium only with Gram stain” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Gram stain. This option does not match the tested concept (All streptococci). Learners who choose “All streptococci” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1653,7 +1653,7 @@
     "id": "ascp-mlt-readiness-check-micro-006",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "micro",
-    "prompt": "ELISA immunoassays detect antigen or antibody using: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "ELISA immunoassays detect antigen or antibody using",
     "options": [
       {
         "id": "a",
@@ -1665,19 +1665,19 @@
       },
       {
         "id": "c",
-        "text": "Flame photometry of sodium"
+        "text": "Westergren pipettes exclusively"
       },
       {
         "id": "d",
-        "text": "Westergren pipettes exclusively"
+        "text": "Flame photometry of sodium"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "ELISA uses enzyme-substrate systems for sensitive Ag/Ab detection.",
+    "explanation": "ELISA uses enzyme-substrate systems for sensitive Ag/Ab detection The correct choice (“Enzyme-labeled conjugates producing a measurable color/sign…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Microscopy. This option does not match the tested concept (Only Gram stain).",
-      "c": "Electrolytes.",
-      "d": "ESR method. This option does not match the tested concept (Westergren pipettes exclusively)."
+      "b": "Microscopy. This option does not match the tested concept (Only Gram stain). Learners who choose “Only Gram stain” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "ESR method. This option does not match the tested concept (Westergren pipettes exclusively).",
+      "d": "Electrolytes. Learners who choose “Flame photometry of sodium” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1686,15 +1686,15 @@
     "id": "ascp-mlt-readiness-check-micro-007",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "micro",
-    "prompt": "Zone of inhibition in Kirby-Bauer testing indicates: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Zone of inhibition in Kirby-Bauer testing indicates",
     "options": [
       {
         "id": "a",
-        "text": "Antimicrobial activity against the organism under standardized conditions"
+        "text": "That the drug is toxic to humans"
       },
       {
         "id": "b",
-        "text": "That the drug is toxic to humans"
+        "text": "Antimicrobial activity against the organism under standardized conditions"
       },
       {
         "id": "c",
@@ -1705,12 +1705,12 @@
         "text": "Viral load"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Disk diffusion zones are interpreted with CLSI breakpoints; MIC needs dilution methods.",
+    "correctOptionId": "b",
+    "explanation": "Disk diffusion zones are interpreted with CLSI breakpoints; MIC needs dilution methods The correct choice (“Antimicrobial activity against the organism under standardi…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "In vitro activity ≠ host toxicity.",
-      "c": "Zones correlate but aren't MIC numbers.",
-      "d": "Molecular/viral assays."
+      "a": "In vitro activity ≠ host toxicity. Learners who choose “That the drug is toxic to humans” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Zones correlate but aren't MIC numbers. Learners who choose “Exact MIC in µg/mL without charts” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Molecular/viral assays. Learners who choose “Viral load” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1731,19 +1731,19 @@
       },
       {
         "id": "c",
-        "text": "Pseudomonas aeruginosa on MacConkey as lactose fermenter always"
+        "text": "Candida albicans"
       },
       {
         "id": "d",
-        "text": "Candida albicans"
+        "text": "Pseudomonas aeruginosa on MacConkey as lactose fermenter always"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "M. pneumoniae lacks cell wall; not seen on Gram stain; diagnosed by PCR/serology.",
+    "explanation": "M. pneumoniae lacks cell wall; not seen on Gram stain; diagnosed by PCR/serology The correct choice (“Mycoplasma pneumoniae”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Grows on routine media.",
-      "c": "Pseudomonas is oxidase+ nonfermenter.",
-      "d": "Yeast. This option does not match the tested concept (Candida albicans)."
+      "b": "Grows on routine media. Learners who choose “Staphylococcus aureus” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Yeast. This option does not match the tested concept (Candida albicans). Learners who choose “Candida albicans” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Pseudomonas is oxidase+ nonfermenter. Learners who choose “Pseudomonas aeruginosa on MacConkey as lactose fermenter always” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1752,31 +1752,31 @@
     "id": "ascp-mlt-readiness-check-micro-009",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "micro",
-    "prompt": "IgM antibodies typically indicate: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "IgM antibodies typically indicate",
     "options": [
       {
         "id": "a",
-        "text": "Recent/primary immune response (often)"
-      },
-      {
-        "id": "b",
         "text": "Only remote immunity years later exclusively"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "No immune response"
+      },
+      {
+        "id": "c",
+        "text": "Recent/primary immune response (often)"
       },
       {
         "id": "d",
         "text": "Complement protein C3 level"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "IgM rises early; IgG indicates later/past exposure (context-dependent).",
+    "correctOptionId": "c",
+    "explanation": "IgM rises early; IgG indicates later/past exposure (context-dependent) The correct choice (“Recent/primary immune response (often)”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "IgG more for remote.",
-      "c": "Opposite. This option does not match the tested concept (No immune response).",
-      "d": "Different analyte."
+      "a": "IgG more for remote. Learners who choose “Only remote immunity years later exclusively” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Opposite. This option does not match the tested concept (No immune response). Learners who choose “No immune response” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Different analyte. Learners who choose “Complement protein C3 level” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1785,7 +1785,7 @@
     "id": "ascp-mlt-readiness-check-micro-010",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "micro",
-    "prompt": "Blood culture contamination is suggested by: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Blood culture contamination is suggested by:",
     "options": [
       {
         "id": "a",
@@ -1807,9 +1807,9 @@
     "correctOptionId": "a",
     "explanation": "Common contaminants appear in single sets; true pathogens often repeatedly isolated with compatible clinic.",
     "distractorExplanations": {
-      "b": "Likely true bacteremia.",
-      "c": "True infection pattern.",
-      "d": "True infection pattern."
+      "b": "Likely true bacteremia. Learners who choose “Multiple sets growing the same Gram-negative rod in a septic patient” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "True infection pattern. Learners who choose “Growth of E. coli in all bottles with pyelonephritis” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "True infection pattern. Learners who choose “S. aureus in multiple sets with endocarditis signs” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1818,31 +1818,31 @@
     "id": "ascp-mlt-readiness-check-micro-011",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "micro",
-    "prompt": "Selective media such as MacConkey agar are designed to: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Selective media such as MacConkey agar are designed to:",
     "options": [
       {
         "id": "a",
-        "text": "Inhibit Gram-positives and differentiate lactose fermentation among Gram-negatives"
+        "text": "Measure antibody titers"
       },
       {
         "id": "b",
-        "text": "Grow only viruses"
+        "text": "Inhibit Gram-positives and differentiate lactose fermentation among Gram-negatives"
       },
       {
         "id": "c",
-        "text": "Kill all Gram-negatives"
+        "text": "Grow only viruses"
       },
       {
         "id": "d",
-        "text": "Measure antibody titers"
+        "text": "Kill all Gram-negatives"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Bile salts/crystal violet select for GNB; lactose fermentation shows pink colonies.",
+    "correctOptionId": "b",
+    "explanation": "Bile salts/crystal violet select for GNB; lactose fermentation shows pink colonies The correct choice (“Inhibit Gram-positives and differentiate lactose fermentati…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Cell culture/molecular for viruses.",
-      "c": "GNB grow. This option does not match the tested concept (Kill all Gram-negatives).",
-      "d": "Serology. This option does not match the tested concept (Measure antibody titers)."
+      "a": "Serology. This option does not match the tested concept (Measure antibody titers). Learners who choose “Measure antibody titers” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Cell culture/molecular for viruses. Learners who choose “Grow only viruses” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "GNB grow. This option does not match the tested concept (Kill all Gram-negatives). Learners who choose “Kill all Gram-negatives” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1851,7 +1851,7 @@
     "id": "ascp-mlt-readiness-check-micro-012",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "micro",
-    "prompt": "Western blot / immunoblot historically confirmed: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Western blot / immunoblot historically confirmed",
     "options": [
       {
         "id": "a",
@@ -1859,23 +1859,23 @@
       },
       {
         "id": "b",
-        "text": "Serum sodium"
-      },
-      {
-        "id": "c",
         "text": "Gram stain morphology"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "ESR"
+      },
+      {
+        "id": "d",
+        "text": "Serum sodium"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Immunoblots detect Ab reactivity to specific proteins after separation.",
+    "explanation": "Immunoblots detect Ab reactivity to specific proteins after separation The correct choice (“Specific antibodies to separated protein antigens (e.g., ol…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Chemistry. This option does not match the tested concept (Serum sodium).",
-      "c": "Microscopy. This option does not match the tested concept (Gram stain morphology).",
-      "d": "Inflammation marker."
+      "b": "Microscopy. This option does not match the tested concept (Gram stain morphology). Learners who choose “Gram stain morphology” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Inflammation marker. Learners who choose “ESR” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Chemistry. This option does not match the tested concept (Serum sodium). Learners who choose “Serum sodium” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1884,31 +1884,31 @@
     "id": "ascp-mlt-readiness-check-micro-013",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "micro",
-    "prompt": "Type I hypersensitivity is mediated primarily by: which of the following is most accurate for the ASCP MLT?",
+    "prompt": "Type I hypersensitivity is mediated primarily by:",
     "options": [
       {
         "id": "a",
-        "text": "IgE"
-      },
-      {
-        "id": "b",
         "text": "IgG only against basement membrane"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "IgA secretory only"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "IgD exclusively"
+      },
+      {
+        "id": "d",
+        "text": "IgE"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Immediate hypersensitivity (anaphylaxis/allergy) is IgE-mast cell mediated.",
+    "correctOptionId": "d",
+    "explanation": "Immediate hypersensitivity (anaphylaxis/allergy) is IgE-mast cell mediated The correct choice (“IgE”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Type II examples differ.",
-      "c": "Mucosal immunity.",
-      "d": "B-cell receptor role, not classic type I effector."
+      "a": "Type II examples differ. Learners who choose “IgG only against basement membrane” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Mucosal immunity. Learners who choose “IgA secretory only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "B-cell receptor role, not classic type I effector. Learners who choose “IgD exclusively” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1917,7 +1917,7 @@
     "id": "ascp-mlt-readiness-check-micro-014",
     "examSlug": "ascp-mlt-readiness-check",
     "topicId": "micro",
-    "prompt": "Clostridioides difficile infection laboratory diagnosis commonly uses:",
+    "prompt": "Clostridioides difficile infection laboratory diagnosis commonly uses",
     "options": [
       {
         "id": "a",
@@ -1937,11 +1937,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Labs use GDH/toxin EIA ± NAAT algorithms on unformed stool.",
+    "explanation": "Labs use GDH/toxin EIA ± NAAT algorithms on unformed stool The correct choice (“Stool testing for toxins and/or toxin gene NAAT per algorit…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Wrong specimen/pathogen approach.",
-      "c": "UTI screen. This option does not match the tested concept (Urine dipstick nitrite).",
-      "d": "Different. This option does not match the tested concept (Blood smear for parasites)."
+      "b": "Wrong specimen/pathogen approach. Learners who choose “Throat culture on blood agar only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "UTI screen. This option does not match the tested concept (Urine dipstick nitrite). Learners who choose “Urine dipstick nitrite” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Different. This option does not match the tested concept (Blood smear for parasites). Learners who choose “Blood smear for parasites” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1962,15 +1962,15 @@
       },
       {
         "id": "c",
-        "text": "this concept has no application in US securities, insurance, or licensing markets"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "CLSI QC with reference strains validates method performance.",
+    "explanation": "CLSI QC with reference strains validates method performance The correct choice (“Testing appropriate ATCC control strains with acceptable ra…”) is the one that matches this rule.",
     "distractorExplanations": {
       "b": "This statement is false about the tested concept and does not match the correct definition.",
       "c": "This statement is false about the tested concept and does not match the correct definition.",

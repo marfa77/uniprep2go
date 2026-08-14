@@ -2455,6 +2455,72 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "ACE® and American Council on Exercise® are trademarks of the American Council on Exercise. UniPrep2Go is not affiliated with or endorsed by ACE.",
   },
+  "rd-exam": {
+    examKey: "rd-exam",
+    pageHeading: "CDR Registered Dietitian (RD / RDN) Exam — Facts & Prep",
+    intro:
+      "The Registration Examination for Dietitians from the Commission on Dietetic Registration (CDR) is the national exam step to become a Registered Dietitian Nutritionist (RDN) after ACEND-accredited education and supervised practice. UniPrep2Go products are independent prep — not CDR exam material.",
+    exam_facts: {
+      exam_name: "Registration Examination for Dietitians (RD / RDN exam)",
+      administered_by: "Commission on Dietetic Registration (CDR)",
+      question_count: "Computer-adaptive, 125–145 total items (100–120 scored + 25 unscored pretest)",
+      scored_count: "100–120 scored (variable length)",
+      time_limit: "3 hours",
+      scoring_scale: "Scaled score 1–50",
+      passing_score: "Scaled score of 25 or greater (verify current handbook at cdrnet.org)",
+      delivery: "Pearson VUE testing centers / CDR-authorized delivery (verify current options in the RD Handbook)",
+      outline_effective_date: "Test specifications January 1, 2022 – December 31, 2026",
+      verify_at_url: "https://www.cdrnet.org/rd-handbook",
+    },
+    official_sources: [
+      {
+        label: "CDR — RD Handbook for Candidates",
+        url: "https://www.cdrnet.org/rd-handbook",
+      },
+      {
+        label: "CDR — RD exam test specifications (2022–2026)",
+        url: "https://admin.cdrnet.org/vault/2459/web/2022%20RD%20Test%20Specifications%20without%20detail%20CDR%20approved%209%202020%5B1%5D.pdf",
+      },
+      {
+        label: "CDR — Study resources",
+        url: "https://www.cdrnet.org/study",
+      },
+    ],
+    domain_weights: [
+      { domain: "Principles of Dietetics", weight: "21%" },
+      { domain: "Nutrition Care for Individuals and Groups", weight: "45%" },
+      { domain: "Management of Food and Nutrition Programs and Services", weight: "21%" },
+      { domain: "Foodservice Systems", weight: "13%" },
+    ],
+    high_yield_facts: [
+      "The RD exam is computer-adaptive and variable length: minimum 125 items (100 scored + 25 pretest), maximum 145 (120 scored + 25 pretest).",
+      "Passing requires a scaled score of 25 or higher on a 1–50 scale — the number of raw correct answers needed varies by form.",
+      "Current outline (2022–2026): Principles 21%, Nutrition Care 45%, Management 21%, Foodservice 13%.",
+      "Eligibility requires ACEND-accredited education pathway and supervised practice before CDR authorizes the exam.",
+      "Nutrition Care Process (ADIME) and PES statements are core clinical judgment themes.",
+      "Foodservice and management domains still appear on every exam — do not skip sanitation, procurement, or HR/finance basics.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the CDR RD exam?",
+        a: "It is computer-adaptive: you will see 125–145 total questions, including 25 unscored pretest items. You must complete at least 125 items for a scored report.",
+      },
+      {
+        q: "What score do you need to pass the RD exam?",
+        a: "A scaled score of 25 or greater on a 1–50 scale. Confirm the current handbook wording at cdrnet.org before you schedule.",
+      },
+      {
+        q: "What domains does the RD exam cover?",
+        a: "Four domains under the 2022–2026 specifications: Principles of Dietetics (21%), Nutrition Care for Individuals and Groups (45%), Management of Food and Nutrition Programs and Services (21%), and Foodservice Systems (13%).",
+      },
+      {
+        q: "Is UniPrep2Go’s RD readiness check the official CDR exam?",
+        a: "No. The free 60-question check and 60-card Anki deck are independent study aids mapped to CDR domain themes — not official CDR exams or Pearson VUE items.",
+      },
+    ],
+    trademark_note:
+      "CDR®, RDN®, and related marks belong to the Commission on Dietetic Registration / Academy of Nutrition and Dietetics. UniPrep2Go is not affiliated with or endorsed by CDR or the Academy.",
+  },
   "luxembourg-vivre-ensemble": {
     examKey: "luxembourg-vivre-ensemble",
     pageHeading: "Luxembourg Vivre ensemble Exam — Facts & Prep",
@@ -2556,6 +2622,7 @@ const deckExamKeyMap: Record<string, string> = {
   "mrics-anki-deck": "mrics",
   "mrics-quantity-surveying-anki-deck": "mrics-quantity-surveying",
   "ace-cpt-anki-deck": "ace-cpt",
+  "rd-exam-anki-deck": "rd-exam",
   "luxembourg-vivre-ensemble-anki-deck": "luxembourg-vivre-ensemble",
   "us-citizenship-test-prep2go-app": "us-citizenship",
   "leben-in-deutschland-prep2go-app": "leben-in-deutschland",

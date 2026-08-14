@@ -51,6 +51,7 @@ export const WAVE_LAUNCH_COHORTS = new Set(["money"]);
 export const WAVE_FORCE_LAUNCH_SLUGS = new Set([
   "ace-cpt-anki-deck",
   "luxembourg-vivre-ensemble-anki-deck",
+  "rd-exam-anki-deck",
 ]);
 
 export type BuildingAnkiDeckSlug = keyof typeof buildingCatalog.products;

@@ -25,6 +25,8 @@
     "scaffold:certification": "node scripts/scaffold-certification.mjs",
     "validate:certification": "node scripts/validate-certification-pipeline.mjs",
     "validate:wave-deck": "node scripts/validate-wave-deck-pipeline.mjs",
+    "triage:mock-banks": "node --import tsx scripts/triage-mock-bank-smells.mjs",
+    "triage:mock-banks:fix-p0": "node --import tsx scripts/triage-mock-bank-smells.mjs --fix-mechanical --tier P0",
     "indexnow:deploy": "tsx src/lib/run-indexnow-deploy.ts",
     "indexnow:submit": "node scripts/indexnow.js --sitemap",
     "audit:seo": "npx tsx scripts/seo-audit-openrouter.mjs --scope all --live",

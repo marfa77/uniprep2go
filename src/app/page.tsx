@@ -146,6 +146,15 @@ const examPathLinks = [
     ],
   },
   {
+    title: "Nutrition & dietetics (RD / RDN)",
+    description:
+      "CDR Registered Dietitian exam readiness check with linked Anki — principles, nutrition care, management, and foodservice.",
+    links: [
+      { href: "/mock-exams/rd-exam-readiness-check", label: "Free RD exam practice test" },
+      { href: "/decks/rd-exam-anki-deck", label: "RD Exam Anki deck" },
+    ],
+  },
+  {
     title: "Dental assisting & hygiene",
     description: "DANB ICE/GC and NBDHE readiness checks for chairside and hygiene pathways.",
     links: [

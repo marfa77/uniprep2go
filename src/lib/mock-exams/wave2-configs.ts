@@ -3,6 +3,7 @@ import {
   fourNicheTopics,
   nicheReadinessConfig,
   NICHE_SESSION_QUESTIONS,
+  NICHE_TOPIC_QUESTIONS,
 } from "./niche-readiness";
 
 /**
@@ -426,16 +427,43 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     linkedDeckSlug: "rd-exam-anki-deck",
     durationMinutes: 90,
     questionCount: NICHE_SESSION_QUESTIONS,
-    topics: fourNicheTopics([
-      { id: "principles", label: "Principles of dietetics" },
-      { id: "nutrition-care", label: "Nutrition care for individuals" },
-      { id: "foodservice", label: "Foodservice systems" },
-      { id: "management", label: "Management & population" },
-    ]),
-    officialSourceNote: "CDR RD exam domain themes. Not a CDR exam.",
-    description: "Free 60-question Registered Dietitian exam readiness check.",
-    examBody: "CDR / Academy of Nutrition",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
+    topics: [
+      {
+        id: "principles",
+        label: "Principles of dietetics",
+        questionCount: NICHE_TOPIC_QUESTIONS,
+        weightPercent: 21,
+        targetPercent: 70,
+      },
+      {
+        id: "nutrition-care",
+        label: "Nutrition care for individuals and groups",
+        questionCount: NICHE_TOPIC_QUESTIONS,
+        weightPercent: 45,
+        targetPercent: 70,
+      },
+      {
+        id: "management",
+        label: "Management of food and nutrition programs",
+        questionCount: NICHE_TOPIC_QUESTIONS,
+        weightPercent: 21,
+        targetPercent: 70,
+      },
+      {
+        id: "foodservice",
+        label: "Foodservice systems",
+        questionCount: NICHE_TOPIC_QUESTIONS,
+        weightPercent: 13,
+        targetPercent: 70,
+      },
+    ],
+    officialSourceNote:
+      "CDR Registration Examination for Dietitians (2022–2026 outline): computer-adaptive, 125–145 items (100–120 scored + 25 pretest), 3 hours, scaled pass 25/50. Domains — Principles 21%, Nutrition Care 45%, Management 21%, Foodservice 13%. This UniPrep2Go check is a 60-question diagnostic, not a CDR exam.",
+    description:
+      "Free 60-question Registered Dietitian (RDN) exam readiness check across CDR’s four domains — principles, nutrition care, management, and foodservice.",
+    examBody: "CDR (Commission on Dietetic Registration)",
+    lastUpdated: "2026-08-14",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 2) — thickened explanations August 2026.",
   }),
 ];
 

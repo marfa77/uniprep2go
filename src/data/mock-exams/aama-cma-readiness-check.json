@@ -7,27 +7,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Deltoid muscle with proper landmarking"
-      },
-      {
-        "id": "b",
         "text": "Dorsogluteal site without landmarks"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Subcutaneous abdomen only"
+      },
+      {
+        "id": "c",
+        "text": "Deltoid muscle with proper landmarking"
       },
       {
         "id": "d",
         "text": "Antecubital vein"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "The deltoid is preferred for many adult IM vaccines when volume fits; landmarking avoids nerves and vessels.",
     "distractorExplanations": {
-      "b": "Dorsogluteal injections without landmarks risk sciatic injury and are often avoided.",
-      "c": "Abdomen is a common SQ site, not the default IM vaccine site.",
-      "d": "IV is a different route requiring specific authorization."
+      "a": "Dorsogluteal injections without landmarks risk sciatic injury and are often avoided. Learners who choose “Dorsogluteal site without landmarks” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Abdomen is a common SQ site, not the default IM vaccine site. Learners who choose “Subcutaneous abdomen only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "IV is a different route requiring specific authorization. Learners who choose “Antecubital vein” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -36,31 +36,31 @@
     "id": "aama-cma-readiness-check-clinical-002",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "clinical",
-    "prompt": "When measuring an adult oral temperature with an electronic probe, the medical assistant should:",
+    "prompt": "When measuring an adult oral temperature with an electronic probe, the medical assistant should?",
     "options": [
       {
         "id": "a",
-        "text": "Place the probe on the forehead without contact"
+        "text": "Leave the probe in ice water first"
       },
       {
         "id": "b",
-        "text": "Place the probe in the posterior sublingual pocket and wait for the signal"
-      },
-      {
-        "id": "c",
         "text": "Insert the probe into the ear canal for oral readings"
       },
       {
+        "id": "c",
+        "text": "Place the probe in the posterior sublingual pocket and wait for the signal"
+      },
+      {
         "id": "d",
-        "text": "Leave the probe in ice water first"
+        "text": "Place the probe on the forehead without contact"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Oral electronic thermometers read from the sublingual pocket; tympanic and temporal devices use different techniques.",
     "distractorExplanations": {
-      "a": "Forehead readings use temporal methods, not oral probes.",
-      "c": "Ear probes are tympanic, not oral.",
-      "d": "Ice water would falsify the reading."
+      "a": "Ice water would falsify the reading. Learners who choose “Leave the probe in ice water first” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Ear probes are tympanic, not oral. Learners who choose “Insert the probe into the ear canal for oral readings” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Forehead readings use temporal methods, not oral probes. Learners who choose “Place the probe on the forehead without contact” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -73,27 +73,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Slight temperature rise after walking"
-      },
-      {
-        "id": "b",
-        "text": "Significant drop in blood pressure with dizziness on standing"
-      },
-      {
-        "id": "c",
         "text": "Unchanged pulse and BP with no symptoms"
       },
       {
-        "id": "d",
+        "id": "b",
+        "text": "Slight temperature rise after walking"
+      },
+      {
+        "id": "c",
         "text": "Mild increase in respiratory rate only"
+      },
+      {
+        "id": "d",
+        "text": "Significant drop in blood pressure with dizziness on standing"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "Orthostatic hypotension is a drop in BP (often with dizziness/syncope risk) on standing; report and assist safety.",
     "distractorExplanations": {
-      "a": "Temperature change is not the hallmark of orthostasis.",
-      "c": "No change with no symptoms does not indicate orthostasis.",
-      "d": "Isolated mild tachypnea is nonspecific."
+      "a": "No change with no symptoms does not indicate orthostasis. Learners who choose “Unchanged pulse and BP with no symptoms” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Temperature change is not the hallmark of orthostasis. Learners who choose “Slight temperature rise after walking” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Isolated mild tachypnea is nonspecific. Learners who choose “Mild increase in respiratory rate only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -102,7 +102,7 @@
     "id": "aama-cma-readiness-check-clinical-004",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "clinical",
-    "prompt": "Before performing venipuncture, the CMA should first: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "Before performing venipuncture, the CMA should first",
     "options": [
       {
         "id": "a",
@@ -110,7 +110,7 @@
       },
       {
         "id": "b",
-        "text": "Identify the patient using two identifiers and verify the order"
+        "text": "Recap used needles for reuse"
       },
       {
         "id": "c",
@@ -118,15 +118,15 @@
       },
       {
         "id": "d",
-        "text": "Recap used needles for reuse"
+        "text": "Identify the patient using two identifiers and verify the order"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "Patient identification with two identifiers and order verification are foundational safety steps before any invasive procedure.",
     "distractorExplanations": {
-      "a": "Prolonged tourniquet time can alter results and cause injury.",
-      "c": "Slapping is unprofessional and can injure tissue.",
-      "d": "Needles are single-use; never reuse or improperly recap."
+      "a": "Prolonged tourniquet time can alter results and cause injury. Learners who choose “Apply the tourniquet for 5 minutes” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Needles are single-use; never reuse or improperly recap. Learners who choose “Recap used needles for reuse” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Slapping is unprofessional and can injure tissue. Learners who choose “Slap the arm vigorously to raise veins” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -135,31 +135,31 @@
     "id": "aama-cma-readiness-check-clinical-005",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "clinical",
-    "prompt": "A patient reports a latex allergy. When preparing for a procedure that requires gloves, the CMA should:",
+    "prompt": "A patient reports a latex allergy. When preparing for a procedure that requires gloves, the CMA should",
     "options": [
       {
         "id": "a",
-        "text": "Use powdered latex gloves carefully"
-      },
-      {
-        "id": "b",
         "text": "Use non-latex gloves per facility protocol"
       },
       {
+        "id": "b",
+        "text": "Use powdered latex gloves carefully"
+      },
+      {
         "id": "c",
-        "text": "Skip gloves if hands are washed"
+        "text": "Use latex and rinse afterward"
       },
       {
         "id": "d",
-        "text": "Use latex and rinse afterward"
+        "text": "Skip gloves if hands are washed"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Known latex allergy requires non-latex products to prevent allergic reactions.",
+    "correctOptionId": "a",
+    "explanation": "Known latex allergy requires non-latex products to prevent allergic reactions The correct choice (“Use non-latex gloves per facility protocol”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Powdered latex increases exposure risk.",
-      "c": "Gloves are still required for BBP protection when indicated.",
-      "d": "Rinsing does not make latex safe for allergic patients."
+      "b": "Powdered latex increases exposure risk. Learners who choose “Use powdered latex gloves carefully” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Rinsing does not make latex safe for allergic patients. Learners who choose “Use latex and rinse afterward” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Gloves are still required for BBP protection when indicated. Learners who choose “Skip gloves if hands are washed” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -172,7 +172,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Milk the finger vigorously from tip to base"
+        "text": "Use the thumb as the preferred adult site"
       },
       {
         "id": "b",
@@ -180,7 +180,7 @@
       },
       {
         "id": "c",
-        "text": "Use the thumb as the preferred adult site"
+        "text": "Milk the finger vigorously from tip to base"
       },
       {
         "id": "d",
@@ -190,9 +190,9 @@
     "correctOptionId": "b",
     "explanation": "Many protocols discard the first drop to reduce tissue fluid contamination; follow meter instructions and never reuse lancets.",
     "distractorExplanations": {
-      "a": "Excessive milking can dilute the sample with tissue fluid.",
-      "c": "Sides of the fingertip are preferred; thumbs are less common.",
-      "d": "Lancets are single-use."
+      "a": "Sides of the fingertip are preferred; thumbs are less common. Learners who choose “Use the thumb as the preferred adult site” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Excessive milking can dilute the sample with tissue fluid. Learners who choose “Milk the finger vigorously from tip to base” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Lancets are single-use. Learners who choose “Reuse the lancet for the same patient later that day” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -201,31 +201,31 @@
     "id": "aama-cma-readiness-check-clinical-007",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "clinical",
-    "prompt": "During a 12-lead ECG, the V4 electrode is placed at the: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "During a 12-lead ECG, the V4 electrode is placed at the",
     "options": [
       {
         "id": "a",
-        "text": "4th intercostal space, right sternal border"
-      },
-      {
-        "id": "b",
-        "text": "5th intercostal space, midclavicular line"
-      },
-      {
-        "id": "c",
         "text": "2nd intercostal space, left sternal border"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Midaxillary line at the umbilicus"
+      },
+      {
+        "id": "c",
+        "text": "5th intercostal space, midclavicular line"
+      },
+      {
+        "id": "d",
+        "text": "4th intercostal space, right sternal border"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "V4 is at the 5th ICS midclavicular line; correct placement is essential for interpretable tracings.",
+    "correctOptionId": "c",
+    "explanation": "V4 is at the 5th ICS midclavicular line; correct placement is essential for interpretable tracings The correct choice (“5th intercostal space, midclavicular line”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "That describes V1.",
-      "c": "That is not a standard V4 landmark.",
-      "d": "V6 is midaxillary at the V4–V5 level, not at the umbilicus."
+      "a": "That is not a standard V4 landmark. Learners who choose “2nd intercostal space, left sternal border” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "V6 is midaxillary at the V4–V5 level, not at the umbilicus. Learners who choose “Midaxillary line at the umbilicus” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "That describes V1. Learners who choose “4th intercostal space, right sternal border” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -238,27 +238,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Continue filling remaining tubes quickly"
-      },
-      {
-        "id": "b",
         "text": "Remove the needle, apply pressure, lower the head, and call for help as needed"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Have the patient stand and walk"
+      },
+      {
+        "id": "c",
+        "text": "Continue filling remaining tubes quickly"
       },
       {
         "id": "d",
         "text": "Leave the patient alone to rest"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "Stop the procedure safely, protect the patient from injury, and support circulation; do not leave a syncope-risk patient alone.",
     "distractorExplanations": {
-      "a": "Continuing risks injury if the patient loses consciousness.",
-      "c": "Standing increases fall risk.",
-      "d": "Unsupervised rest is unsafe during vasovagal episodes."
+      "b": "Standing increases fall risk. Learners who choose “Have the patient stand and walk” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Continuing risks injury if the patient loses consciousness. Learners who choose “Continue filling remaining tubes quickly” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Unsupervised rest is unsafe during vasovagal episodes. Learners who choose “Leave the patient alone to rest” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -271,27 +271,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Turning your back to a sterile field is acceptable if you return quickly"
+        "text": "Wet sterile packages remain sterile indefinitely"
       },
       {
         "id": "b",
-        "text": "Items below waist level are considered contaminated"
-      },
-      {
-        "id": "c",
         "text": "Talking over a sterile field does not increase contamination risk"
       },
       {
+        "id": "c",
+        "text": "Items below waist level are considered contaminated"
+      },
+      {
         "id": "d",
-        "text": "Wet sterile packages remain sterile indefinitely"
+        "text": "Turning your back to a sterile field is acceptable if you return quickly"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Sterile technique treats items below the waist (and out of sight/wet packages) as contaminated.",
+    "correctOptionId": "c",
+    "explanation": "Sterile technique treats items below the waist (and out of sight/wet packages) as contaminated The correct choice (“Items below waist level are considered contaminated”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Turning away breaks observation of the field.",
-      "c": "Talking/coughing can contaminate the field.",
-      "d": "Moisture can wick contamination through packaging."
+      "a": "Moisture can wick contamination through packaging. Learners who choose “Wet sterile packages remain sterile indefinitely” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Talking/coughing can contaminate the field. Learners who choose “Talking over a sterile field does not increase contamination risk” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Turning away breaks observation of the field. Learners who choose “Turning your back to a sterile field is acceptable if you return quickly” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -300,11 +300,11 @@
     "id": "aama-cma-readiness-check-clinical-010",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "clinical",
-    "prompt": "When irrigating an adult ear with cerumen, the CMA should generally:",
+    "prompt": "When irrigating an adult ear with cerumen, the CMA should generally?",
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
         "id": "b",
@@ -312,7 +312,7 @@
       },
       {
         "id": "c",
-        "text": "this concept has no application in US securities, insurance, or licensing markets"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "d",
@@ -333,29 +333,29 @@
     "id": "aama-cma-readiness-check-clinical-011",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "clinical",
-    "prompt": "Pulse oximetry readings may be falsely low when the patient has:",
+    "prompt": "Pulse oximetry readings may be falsely low when the patient has",
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
-      },
-      {
-        "id": "b",
         "text": "Nail polish or poor peripheral perfusion"
       },
       {
+        "id": "b",
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+      },
+      {
         "id": "c",
-        "text": "this concept has no application in US securities, insurance, or licensing markets"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       },
       {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "this concept has no application in US securities, insurance, or licensing markets"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Poor perfusion, cold extremities, motion, and dark nail polish can impair SpO2 accuracy.",
+    "correctOptionId": "a",
+    "explanation": "Poor perfusion, cold extremities, motion, and dark nail polish can impair SpO2 accuracy The correct choice (“Nail polish or poor peripheral perfusion”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
       "c": "This statement is false about the tested concept and does not match the correct definition.",
       "d": "This statement is false about the tested concept and does not match the correct definition."
     },
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Gloves, then gown, then mask"
+        "text": "Gloves first, then remove gown over gloved hands"
       },
       {
         "id": "b",
-        "text": "Gown, mask/respirator as indicated, eye protection if needed, then gloves"
-      },
-      {
-        "id": "c",
         "text": "Mask only, skip gloves for brief contact"
       },
       {
+        "id": "c",
+        "text": "Gown, mask/respirator as indicated, eye protection if needed, then gloves"
+      },
+      {
         "id": "d",
-        "text": "Gloves first, then remove gown over gloved hands"
+        "text": "Gloves, then gown, then mask"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Standard sequences put gown and respiratory/eye protection on before gloves so gloves go on last over gown cuffs.",
     "distractorExplanations": {
-      "a": "Gloves should be last so they cover gown cuffs.",
-      "c": "Gloves are required for contact with body fluids/contaminated surfaces.",
-      "d": "That sequence is incorrect for donning."
+      "a": "That sequence is incorrect for donning. Learners who choose “Gloves first, then remove gown over gloved hands” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Gloves are required for contact with body fluids/contaminated surfaces. Learners who choose “Mask only, skip gloves for brief contact” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Gloves should be last so they cover gown cuffs. Learners who choose “Gloves, then gown, then mask” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -399,31 +399,31 @@
     "id": "aama-cma-readiness-check-clinical-013",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "clinical",
-    "prompt": "A wound culture swab should be collected from: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "A wound culture swab should be collected from:",
     "options": [
       {
         "id": "a",
-        "text": "Intact surrounding skin only"
-      },
-      {
-        "id": "b",
-        "text": "The deepest cleanest portion of the wound after removing surface debris per protocol"
-      },
-      {
-        "id": "c",
         "text": "Dried exudate on the dressing alone"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Any random surface without cleaning"
+      },
+      {
+        "id": "c",
+        "text": "The deepest cleanest portion of the wound after removing surface debris per protocol"
+      },
+      {
+        "id": "d",
+        "text": "Intact surrounding skin only"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Culture accuracy improves when surface contaminants are cleared and the active wound bed is sampled per protocol.",
     "distractorExplanations": {
-      "a": "Intact skin does not represent wound pathogens.",
-      "c": "Dressings may not reflect current wound flora.",
-      "d": "Unprepared sampling increases contamination."
+      "a": "Dressings may not reflect current wound flora. Learners who choose “Dried exudate on the dressing alone” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Unprepared sampling increases contamination. Learners who choose “Any random surface without cleaning” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Intact skin does not represent wound pathogens. Learners who choose “Intact surrounding skin only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -432,7 +432,7 @@
     "id": "aama-cma-readiness-check-clinical-014",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "clinical",
-    "prompt": "When assisting with a Papanicolaou (Pap) specimen, the CMA's role typically includes:",
+    "prompt": "When assisting with a Papanicolaou (Pap) specimen, the CMA's role typically includes?",
     "options": [
       {
         "id": "a",
@@ -440,23 +440,23 @@
       },
       {
         "id": "b",
-        "text": "Labeling specimens correctly and preparing the patient per protocol"
+        "text": "Prescribing follow-up medications"
       },
       {
         "id": "c",
-        "text": "Prescribing follow-up medications"
+        "text": "Labeling specimens correctly and preparing the patient per protocol"
       },
       {
         "id": "d",
         "text": "Discarding the requisition to protect privacy"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Assistants prepare patients, assist the provider, and ensure accurate labeling/requisitions; diagnosis and prescribing are outside MA scope.",
     "distractorExplanations": {
-      "a": "Result interpretation is a provider responsibility.",
-      "c": "Prescribing is not within MA scope.",
-      "d": "Requisitions are required for proper processing."
+      "a": "Result interpretation is a provider responsibility. Learners who choose “Interpreting cytology results for the patient” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Prescribing is not within MA scope. Learners who choose “Prescribing follow-up medications” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Requisitions are required for proper processing. Learners who choose “Discarding the requisition to protect privacy” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -469,27 +469,27 @@
     "options": [
       {
         "id": "a",
-        "text": "10–15 degrees"
-      },
-      {
-        "id": "b",
         "text": "45 degrees only"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "90 degrees"
+      },
+      {
+        "id": "c",
+        "text": "10–15 degrees"
       },
       {
         "id": "d",
         "text": "180 degrees parallel to skin"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "b",
     "explanation": "IM injections are typically given at 90 degrees into muscle; SQ is often ~45–90 depending on technique/needle length.",
     "distractorExplanations": {
-      "a": "10–15 degrees is intradermal.",
-      "b": "45 degrees is more typical of some SQ techniques.",
-      "d": "Parallel injection is not a standard IM angle."
+      "a": "45 degrees is more typical of some SQ techniques. Learners who choose “45 degrees only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "10–15 degrees is intradermal. Learners who choose “10–15 degrees” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Parallel injection is not a standard IM angle. Learners who choose “180 degrees parallel to skin” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -502,26 +502,26 @@
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
-      },
-      {
-        "id": "b",
-        "text": "Respiratory"
-      },
-      {
-        "id": "c",
         "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "this concept is identical to FDIC deposit insurance for every customer account"
+      },
+      {
+        "id": "c",
+        "text": "Respiratory"
+      },
+      {
+        "id": "d",
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "The respiratory system exchanges oxygen and carbon dioxide in the lungs.",
+    "correctOptionId": "c",
+    "explanation": "The respiratory system exchanges oxygen and carbon dioxide in the lungs The correct choice (“Respiratory”) is the one that matches this rule.",
     "distractorExplanations": {
       "a": "This statement is false about the tested concept and does not match the correct definition.",
-      "c": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
       "d": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "easy",
@@ -531,11 +531,11 @@
     "id": "aama-cma-readiness-check-anatomy-pharm-002",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "anatomy-pharm",
-    "prompt": "The sinoatrial (SA) node is located in the: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "The sinoatrial (SA) node is located in the",
     "options": [
       {
         "id": "a",
-        "text": "Left ventricle apex"
+        "text": "Pulmonary artery"
       },
       {
         "id": "b",
@@ -543,19 +543,19 @@
       },
       {
         "id": "c",
-        "text": "Pulmonary artery"
+        "text": "Aortic arch only"
       },
       {
         "id": "d",
-        "text": "Aortic arch only"
+        "text": "Left ventricle apex"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "The SA node in the right atrium is the heart's primary pacemaker.",
+    "explanation": "The SA node in the right atrium is the heart's primary pacemaker The correct choice (“Right atrium”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "The apex is ventricular myocardium, not the SA node.",
-      "c": "The pulmonary artery carries blood to the lungs.",
-      "d": "The aortic arch is not the SA node location."
+      "a": "The pulmonary artery carries blood to the lungs. Learners who choose “Pulmonary artery” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "The aortic arch is not the SA node location. Learners who choose “Aortic arch only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "The apex is ventricular myocardium, not the SA node. Learners who choose “Left ventricle apex” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -568,27 +568,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Antihistamines"
-      },
-      {
-        "id": "b",
         "text": "ACE inhibitors, ARBs, thiazide diuretics, or calcium channel blockers (per guidelines/provider)"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Antifungals"
+      },
+      {
+        "id": "c",
+        "text": "Antihistamines"
       },
       {
         "id": "d",
         "text": "Topical anesthetics"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "Common first-line antihypertensives include ACEI/ARB, thiazides, and CCBs depending on patient factors.",
     "distractorExplanations": {
-      "a": "Antihistamines treat allergy symptoms.",
-      "c": "Antifungals treat fungal infections.",
-      "d": "Topical anesthetics numb skin locally."
+      "b": "Antifungals treat fungal infections. Learners who choose “Antifungals” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Antihistamines treat allergy symptoms. Learners who choose “Antihistamines” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Topical anesthetics numb skin locally. Learners who choose “Topical anesthetics” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -597,7 +597,7 @@
     "id": "aama-cma-readiness-check-anatomy-pharm-004",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "anatomy-pharm",
-    "prompt": "Nitroglycerin for angina is commonly administered: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "Nitroglycerin for angina is commonly administered",
     "options": [
       {
         "id": "a",
@@ -609,19 +609,19 @@
       },
       {
         "id": "c",
-        "text": "Into the ear canal"
+        "text": "As a rectal suppository for all chest pain"
       },
       {
         "id": "d",
-        "text": "As a rectal suppository for all chest pain"
+        "text": "Into the ear canal"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Sublingual nitroglycerin is used for rapid transmucosal absorption in angina protocols under provider direction.",
     "distractorExplanations": {
-      "a": "IM is not the usual acute angina route for NTG.",
-      "c": "Otic route is for ear medications.",
-      "d": "Rectal is not the standard acute angina route."
+      "a": "IM is not the usual acute angina route for NTG. Learners who choose “As an intramuscular injection into the deltoid only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Rectal is not the standard acute angina route. Learners who choose “As a rectal suppository for all chest pain” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Otic route is for ear medications. Learners who choose “Into the ear canal” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -634,27 +634,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Pulmonary artery"
-      },
-      {
-        "id": "b",
-        "text": "Pulmonary veins"
-      },
-      {
-        "id": "c",
         "text": "Superior vena cava"
       },
       {
-        "id": "d",
+        "id": "b",
+        "text": "Pulmonary artery"
+      },
+      {
+        "id": "c",
         "text": "Coronary sinus only"
+      },
+      {
+        "id": "d",
+        "text": "Pulmonary veins"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Pulmonary veins return oxygenated blood to the left atrium.",
+    "correctOptionId": "d",
+    "explanation": "Pulmonary veins return oxygenated blood to the left atrium The correct choice (“Pulmonary veins”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Pulmonary arteries carry deoxygenated blood to the lungs.",
-      "c": "SVC returns systemic venous blood to the right atrium.",
-      "d": "Coronary sinus drains cardiac venous blood."
+      "a": "SVC returns systemic venous blood to the right atrium. Learners who choose “Superior vena cava” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Pulmonary arteries carry deoxygenated blood to the lungs. Learners who choose “Pulmonary artery” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Coronary sinus drains cardiac venous blood. Learners who choose “Coronary sinus only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -667,27 +667,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Consistent leafy greens alone always raise INR immediately"
+        "text": "All vitamins are contraindicated forever"
       },
       {
         "id": "b",
-        "text": "Certain antibiotics and NSAIDs can increase bleeding risk; report changes to the provider"
-      },
-      {
-        "id": "c",
         "text": "Acetaminophen never interacts with any drug"
       },
       {
+        "id": "c",
+        "text": "Certain antibiotics and NSAIDs can increase bleeding risk; report changes to the provider"
+      },
+      {
         "id": "d",
-        "text": "All vitamins are contraindicated forever"
+        "text": "Consistent leafy greens alone always raise INR immediately"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Warfarin has many interactions; antibiotics and NSAIDs can raise bleeding risk. Diet vitamin K consistency also matters.",
     "distractorExplanations": {
-      "a": "Vitamin K intake should be consistent; sudden large changes matter more than 'always raise INR immediately.'",
-      "c": "High-dose acetaminophen can affect INR in some cases; 'never' is unsafe.",
-      "d": "Not all vitamins are forbidden; management is individualized."
+      "a": "Not all vitamins are forbidden; management is individualized. Learners who choose “All vitamins are contraindicated forever” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "High-dose acetaminophen can affect INR in some cases; 'never' is unsafe. Learners who choose “Acetaminophen never interacts with any drug” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Vitamin K intake should be consistent; sudden large changes matter more than 'always raise INR immediately.'"
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -696,31 +696,31 @@
     "id": "aama-cma-readiness-check-anatomy-pharm-007",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "anatomy-pharm",
-    "prompt": "Insulin is primarily produced by the: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "Insulin is primarily produced by the",
     "options": [
       {
         "id": "a",
-        "text": "Adrenal medulla"
-      },
-      {
-        "id": "b",
         "text": "Pancreatic beta cells"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Thyroid follicles"
+      },
+      {
+        "id": "c",
+        "text": "Adrenal medulla"
       },
       {
         "id": "d",
         "text": "Posterior pituitary"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Beta cells of the islets of Langerhans produce insulin.",
+    "correctOptionId": "a",
+    "explanation": "Beta cells of the islets of Langerhans produce insulin The correct choice (“Pancreatic beta cells”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Adrenal medulla produces catecholamines.",
-      "c": "Thyroid produces T3/T4 and calcitonin.",
-      "d": "Posterior pituitary releases ADH and oxytocin."
+      "b": "Thyroid produces T3/T4 and calcitonin. Learners who choose “Thyroid follicles” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Adrenal medulla produces catecholamines. Learners who choose “Adrenal medulla” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Posterior pituitary releases ADH and oxytocin. Learners who choose “Posterior pituitary” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -751,9 +751,9 @@
     "correctOptionId": "c",
     "explanation": "Schedule II drugs have high abuse potential with accepted medical use (e.g., many opioids, stimulants).",
     "distractorExplanations": {
-      "a": "Schedule V has lower relative abuse potential.",
-      "b": "Schedule IV is lower than II.",
-      "d": "Vitamins are not scheduled controlled substances."
+      "a": "Schedule V has lower relative abuse potential. Learners who choose “Schedule V” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Schedule IV is lower than II. Learners who choose “Schedule IV” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Vitamins are not scheduled controlled substances. Learners who choose “OTC vitamins” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -762,31 +762,31 @@
     "id": "aama-cma-readiness-check-anatomy-pharm-009",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "anatomy-pharm",
-    "prompt": "The anatomical term 'proximal' means: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "The anatomical term 'proximal' means:",
     "options": [
       {
         "id": "a",
-        "text": "Farther from the trunk or point of origin"
-      },
-      {
-        "id": "b",
         "text": "Closer to the trunk or point of origin"
       },
       {
+        "id": "b",
+        "text": "Farther from the trunk or point of origin"
+      },
+      {
         "id": "c",
-        "text": "Toward the midline only"
+        "text": "Toward the feet only"
       },
       {
         "id": "d",
-        "text": "Toward the feet only"
+        "text": "Toward the midline only"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Proximal means nearer to the trunk/origin; distal means farther.",
+    "correctOptionId": "a",
+    "explanation": "Proximal means nearer to the trunk/origin; distal means farther The correct choice (“Closer to the trunk or point of origin”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "That defines distal.",
-      "c": "Toward midline is medial.",
-      "d": "Toward the feet is inferior/caudal."
+      "b": "That defines distal. Learners who choose “Farther from the trunk or point of origin” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Toward the feet is inferior/caudal. Learners who choose “Toward the feet only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Toward midline is medial. Learners who choose “Toward the midline only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -795,31 +795,31 @@
     "id": "aama-cma-readiness-check-anatomy-pharm-010",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "anatomy-pharm",
-    "prompt": "Albuterol is classified primarily as a: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "Albuterol is classified primarily as a",
     "options": [
       {
         "id": "a",
-        "text": "Beta-2 agonist bronchodilator"
+        "text": "Proton pump inhibitor"
       },
       {
         "id": "b",
-        "text": "Loop diuretic"
-      },
-      {
-        "id": "c",
         "text": "Anticoagulant"
       },
       {
+        "id": "c",
+        "text": "Loop diuretic"
+      },
+      {
         "id": "d",
-        "text": "Proton pump inhibitor"
+        "text": "Beta-2 agonist bronchodilator"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Albuterol relaxes bronchial smooth muscle via beta-2 agonism for asthma/COPD rescue use.",
+    "correctOptionId": "d",
+    "explanation": "Albuterol relaxes bronchial smooth muscle via beta-2 agonism for asthma/COPD rescue use The correct choice (“Beta-2 agonist bronchodilator”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Loop diuretics increase urine output (e.g., furosemide).",
-      "c": "Anticoagulants reduce clotting.",
-      "d": "PPIs reduce gastric acid."
+      "a": "PPIs reduce gastric acid. Learners who choose “Proton pump inhibitor” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Anticoagulants reduce clotting. Learners who choose “Anticoagulant” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Loop diuretics increase urine output (e.g., furosemide). Learners who choose “Loop diuretic” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -832,27 +832,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Hypokalemia"
-      },
-      {
-        "id": "b",
-        "text": "Hyperkalemia"
-      },
-      {
-        "id": "c",
         "text": "Hyponatremia"
       },
       {
-        "id": "d",
+        "id": "b",
+        "text": "Hypokalemia"
+      },
+      {
+        "id": "c",
         "text": "Hypocalcemia only"
+      },
+      {
+        "id": "d",
+        "text": "Hyperkalemia"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Hyperkalemia can cause peaked T waves and dangerous arrhythmias.",
+    "correctOptionId": "d",
+    "explanation": "Hyperkalemia can cause peaked T waves and dangerous arrhythmias The correct choice (“Hyperkalemia”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Hypokalemia more often causes U waves/flattened T waves.",
-      "c": "Sodium disorders have different presentations.",
-      "d": "Hypocalcemia affects QT interval differently."
+      "a": "Sodium disorders have different presentations. Learners who choose “Hyponatremia” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Hypokalemia more often causes U waves/flattened T waves. Learners who choose “Hypokalemia” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Hypocalcemia affects QT interval differently. Learners who choose “Hypocalcemia only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -861,7 +861,7 @@
     "id": "aama-cma-readiness-check-anatomy-pharm-012",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "anatomy-pharm",
-    "prompt": "The gallbladder's primary function is to: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "The gallbladder's primary function is to:",
     "options": [
       {
         "id": "a",
@@ -873,19 +873,19 @@
       },
       {
         "id": "c",
-        "text": "Filter blood urea"
+        "text": "Pump systemic blood"
       },
       {
         "id": "d",
-        "text": "Pump systemic blood"
+        "text": "Filter blood urea"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "The gallbladder stores and concentrates bile produced by the liver.",
+    "explanation": "The gallbladder stores and concentrates bile produced by the liver The correct choice (“Store and concentrate bile”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Insulin is from the pancreas.",
-      "c": "Kidneys filter urea.",
-      "d": "The heart pumps blood."
+      "a": "Insulin is from the pancreas. Learners who choose “Produce insulin” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "The heart pumps blood. Learners who choose “Pump systemic blood” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Kidneys filter urea. Learners who choose “Filter blood urea” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -898,11 +898,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Intravenous"
+        "text": "Intramuscular"
       },
       {
         "id": "b",
-        "text": "Intramuscular"
+        "text": "Intravenous"
       },
       {
         "id": "c",
@@ -916,9 +916,9 @@
     "correctOptionId": "c",
     "explanation": "Oral absorption is generally slower than parenteral/IV routes due to GI absorption and first-pass effects.",
     "distractorExplanations": {
-      "a": "IV has the fastest onset.",
-      "b": "IM is faster than typical oral.",
-      "d": "Inhaled albuterol acts quickly locally/systemically for airway effect."
+      "a": "IM is faster than typical oral. Learners who choose “Intramuscular” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "IV has the fastest onset. Learners who choose “Intravenous” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Inhaled albuterol acts quickly locally/systemically for airway effect. Learners who choose “Inhalation of a rapid-acting bronchodilator” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -927,31 +927,31 @@
     "id": "aama-cma-readiness-check-anatomy-pharm-014",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "anatomy-pharm",
-    "prompt": "Epinephrine auto-injectors for anaphylaxis are typically given:",
+    "prompt": "Epinephrine auto-injectors for anaphylaxis are typically given",
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
-      },
-      {
-        "id": "b",
-        "text": "Intramuscularly into the mid-outer thigh"
-      },
-      {
-        "id": "c",
         "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
-        "id": "d",
+        "id": "b",
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+      },
+      {
+        "id": "c",
         "text": "this concept is identical to FDIC deposit insurance for every customer account"
+      },
+      {
+        "id": "d",
+        "text": "Intramuscularly into the mid-outer thigh"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Epinephrine auto-injectors are designed for IM injection into the anterolateral thigh.",
+    "correctOptionId": "d",
+    "explanation": "Epinephrine auto-injectors are designed for IM injection into the anterolateral thigh The correct choice (“Intramuscularly into the mid-outer thigh”) is the one that matches this rule.",
     "distractorExplanations": {
       "a": "This statement is false about the tested concept and does not match the correct definition.",
-      "c": "This statement is false about the tested concept and does not match the correct definition.",
-      "d": "This statement is false about the tested concept and does not match the correct definition."
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -964,27 +964,27 @@
     "options": [
       {
         "id": "a",
-        "text": "CN I (olfactory)"
-      },
-      {
-        "id": "b",
         "text": "CN XI (accessory)"
       },
       {
+        "id": "b",
+        "text": "CN I (olfactory)"
+      },
+      {
         "id": "c",
-        "text": "CN II (optic)"
+        "text": "CN VIII (vestibulocochlear)"
       },
       {
         "id": "d",
-        "text": "CN VIII (vestibulocochlear)"
+        "text": "CN II (optic)"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "CN XI innervates trapezius/sternocleidomastoid; shoulder shrug tests accessory nerve function.",
+    "correctOptionId": "a",
+    "explanation": "CN XI innervates trapezius/sternocleidomastoid; shoulder shrug tests accessory nerve function The correct choice (“CN XI (accessory)”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "CN I is smell.",
-      "c": "CN II is vision.",
-      "d": "CN VIII is hearing/balance."
+      "b": "CN I is smell. Learners who choose “CN I (olfactory)” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "CN VIII is hearing/balance. Learners who choose “CN VIII (vestibulocochlear)” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "CN II is vision. Learners who choose “CN II (optic)” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -997,11 +997,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Room number and bed location only"
+        "text": "Full name and date of birth"
       },
       {
         "id": "b",
-        "text": "Full name and date of birth"
+        "text": "Physician's last name"
       },
       {
         "id": "c",
@@ -1009,15 +1009,15 @@
       },
       {
         "id": "d",
-        "text": "Physician's last name"
+        "text": "Room number and bed location only"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Name plus DOB (or MRN) are standard identifiers; room number alone is unreliable.",
+    "correctOptionId": "a",
+    "explanation": "Name plus DOB (or MRN) are standard identifiers; room number alone is unreliable The correct choice (“Full name and date of birth”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Location can change and is not a patient identifier.",
-      "c": "Payer name does not uniquely identify the patient.",
-      "d": "Provider name identifies the clinician, not the patient."
+      "b": "Provider name identifies the clinician, not the patient. Learners who choose “Physician's last name” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Payer name does not uniquely identify the patient. Learners who choose “Insurance company name alone” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Location can change and is not a patient identifier. Learners who choose “Room number and bed location only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1026,31 +1026,31 @@
     "id": "aama-cma-readiness-check-admin-002",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "admin",
-    "prompt": "In ICD-10-CM coding, codes primarily describe: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "In ICD-10-CM coding, codes primarily describe",
     "options": [
       {
         "id": "a",
-        "text": "Physician work RVUs only"
-      },
-      {
-        "id": "b",
-        "text": "Diagnoses and reasons for encounter"
-      },
-      {
-        "id": "c",
         "text": "Supply inventory SKUs"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Employee payroll categories"
+      },
+      {
+        "id": "c",
+        "text": "Physician work RVUs only"
+      },
+      {
+        "id": "d",
+        "text": "Diagnoses and reasons for encounter"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "ICD-10-CM is the diagnosis coding system used to report conditions and encounter reasons.",
+    "correctOptionId": "d",
+    "explanation": "ICD-10-CM is the diagnosis coding system used to report conditions and encounter reasons The correct choice (“Diagnoses and reasons for encounter”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "RVUs relate to payment valuation, not ICD purpose.",
-      "c": "Inventory is not ICD.",
-      "d": "Payroll is unrelated."
+      "a": "Inventory is not ICD. Learners who choose “Supply inventory SKUs” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Payroll is unrelated. Learners who choose “Employee payroll categories” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "RVUs relate to payment valuation, not ICD purpose. Learners who choose “Physician work RVUs only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1059,31 +1059,31 @@
     "id": "aama-cma-readiness-check-admin-003",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "admin",
-    "prompt": "CPT codes are used primarily to report: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "CPT codes are used primarily to report",
     "options": [
       {
         "id": "a",
-        "text": "Patient race and ethnicity"
+        "text": "Lab reference ranges"
       },
       {
         "id": "b",
-        "text": "Procedures and services performed"
-      },
-      {
-        "id": "c",
         "text": "Hospital room colors"
       },
       {
+        "id": "c",
+        "text": "Patient race and ethnicity"
+      },
+      {
         "id": "d",
-        "text": "Lab reference ranges"
+        "text": "Procedures and services performed"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "CPT reports procedures/services for billing and documentation linkage.",
+    "correctOptionId": "d",
+    "explanation": "CPT reports procedures/services for billing and documentation linkage The correct choice (“Procedures and services performed”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Demographics are not CPT.",
-      "c": "Facility aesthetics are unrelated.",
-      "d": "Reference ranges are lab data."
+      "a": "Reference ranges are lab data. Learners who choose “Lab reference ranges” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Facility aesthetics are unrelated. Learners who choose “Hospital room colors” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Demographics are not CPT. Learners who choose “Patient race and ethnicity” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1092,7 +1092,7 @@
     "id": "aama-cma-readiness-check-admin-004",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "admin",
-    "prompt": "When scheduling a patient who needs a fasting lipid panel, the CMA should:",
+    "prompt": "When scheduling a patient who needs a fasting lipid panel, the CMA should?",
     "options": [
       {
         "id": "a",
@@ -1100,23 +1100,23 @@
       },
       {
         "id": "b",
-        "text": "Tell the patient to eat a large breakfast before the draw"
+        "text": "Schedule immediately after a holiday meal"
       },
       {
         "id": "c",
-        "text": "Skip preparation instructions to save time"
+        "text": "Tell the patient to eat a large breakfast before the draw"
       },
       {
         "id": "d",
-        "text": "Schedule immediately after a holiday meal"
+        "text": "Skip preparation instructions to save time"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Fasting labs require clear preparation instructions to avoid invalid results and repeat visits.",
+    "explanation": "Fasting labs require clear preparation instructions to avoid invalid results and repeat visits The correct choice (“Instruct overnight fasting per protocol and confirm instruc…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Food can alter lipid results.",
-      "c": "Omitting prep causes errors.",
-      "d": "Post-meal timing may invalidate fasting requirements."
+      "b": "Post-meal timing may invalidate fasting requirements. Learners who choose “Schedule immediately after a holiday meal” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Food can alter lipid results. Learners who choose “Tell the patient to eat a large breakfast before the draw” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Omitting prep causes errors. Learners who choose “Skip preparation instructions to save time” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1129,27 +1129,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore the denial"
+        "text": "Bill the patient double immediately"
       },
       {
         "id": "b",
-        "text": "Review documentation and payer policy, then follow appeal/correction procedures"
+        "text": "Ignore the denial"
       },
       {
         "id": "c",
-        "text": "Bill the patient double immediately"
+        "text": "Review documentation and payer policy, then follow appeal/correction procedures"
       },
       {
         "id": "d",
         "text": "Change the diagnosis randomly to get paid"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Denials require review of documentation/medical necessity criteria and proper appeal or correction workflows.",
     "distractorExplanations": {
-      "a": "Ignoring loses revenue and care continuity.",
-      "c": "Double billing is inappropriate.",
-      "d": "Falsifying diagnoses is fraud."
+      "a": "Double billing is inappropriate. Learners who choose “Bill the patient double immediately” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Ignoring loses revenue and care continuity. Learners who choose “Ignore the denial” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Falsifying diagnoses is fraud. Learners who choose “Change the diagnosis randomly to get paid” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1162,7 +1162,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Blank sticky note"
+        "text": "Insurance card photocopy alone without authorization when not otherwise permitted"
       },
       {
         "id": "b",
@@ -1174,15 +1174,15 @@
       },
       {
         "id": "d",
-        "text": "Insurance card photocopy alone without authorization when not otherwise permitted"
+        "text": "Blank sticky note"
       }
     ],
     "correctOptionId": "b",
     "explanation": "HIPAA requires a valid authorization (or another permitted use/disclosure) before releasing PHI to many third parties.",
     "distractorExplanations": {
-      "a": "Informal notes are insufficient.",
-      "c": "Rumors are not authorization.",
-      "d": "Having a card does not equal authorization for all disclosures."
+      "a": "Having a card does not equal authorization for all disclosures. Learners who choose “Insurance card photocopy alone without authorization when not otherwise permitt…” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Rumors are not authorization. Learners who choose “Verbal hallway rumor” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Informal notes are insufficient. Learners who choose “Blank sticky note” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1195,27 +1195,27 @@
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "b",
-        "text": "Notify a beneficiary that Medicare may not pay for a service and that they may be financially responsible"
-      },
-      {
-        "id": "c",
         "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
+        "id": "c",
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+      },
+      {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "Notify a beneficiary that Medicare may not pay for a service and that they may be financially responsible"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "ABNs inform Medicare beneficiaries about potential noncoverage and financial responsibility before certain services.",
     "distractorExplanations": {
       "a": "This statement is false about the tested concept and does not match the correct definition.",
-      "c": "This statement is false about the tested concept and does not match the correct definition.",
-      "d": "This statement is false about the tested concept and does not match the correct definition."
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1228,11 +1228,11 @@
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "Alphabetic filing"
       },
       {
         "id": "b",
-        "text": "Alphabetic filing"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "c",
@@ -1240,13 +1240,13 @@
       },
       {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Alphabetic systems file by patient name; numeric systems use numbers.",
+    "correctOptionId": "a",
+    "explanation": "Alphabetic systems file by patient name; numeric systems use numbers The correct choice (“Alphabetic filing”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "This statement is false about the tested concept and does not match the correct definition.",
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
       "c": "This statement is false about the tested concept and does not match the correct definition.",
       "d": "This statement is false about the tested concept and does not match the correct definition."
     },
@@ -1257,31 +1257,31 @@
     "id": "aama-cma-readiness-check-admin-009",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "admin",
-    "prompt": "When verifying insurance eligibility, the CMA should typically confirm:",
+    "prompt": "When verifying insurance eligibility, the CMA should typically confirm?",
     "options": [
       {
         "id": "a",
-        "text": "Coverage active dates, plan type, and referral/authorization needs"
-      },
-      {
-        "id": "b",
-        "text": "Only the patient's favorite pharmacy"
-      },
-      {
-        "id": "c",
         "text": "The provider's personal email password"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Whether the waiting room TV works"
+      },
+      {
+        "id": "c",
+        "text": "Coverage active dates, plan type, and referral/authorization needs"
+      },
+      {
+        "id": "d",
+        "text": "Only the patient's favorite pharmacy"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Eligibility checks focus on active coverage, benefits, and authorization/referral requirements.",
+    "correctOptionId": "c",
+    "explanation": "Eligibility checks focus on active coverage, benefits, and authorization/referral requirements The correct choice (“Coverage active dates, plan type, and referral/authorizatio…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Pharmacy preference is secondary.",
-      "c": "Passwords are unrelated and confidential.",
-      "d": "Facility amenities are unrelated."
+      "a": "Passwords are unrelated and confidential. Learners who choose “The provider's personal email password” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Facility amenities are unrelated. Learners who choose “Whether the waiting room TV works” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Pharmacy preference is secondary. Learners who choose “Only the patient's favorite pharmacy” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1290,11 +1290,11 @@
     "id": "aama-cma-readiness-check-admin-010",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "admin",
-    "prompt": "A superbill (encounter form) is primarily used to: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "A superbill (encounter form) is primarily used to:",
     "options": [
       {
         "id": "a",
-        "text": "Document sterile technique steps"
+        "text": "Serve as a prescription pad for controlled substances"
       },
       {
         "id": "b",
@@ -1306,15 +1306,15 @@
       },
       {
         "id": "d",
-        "text": "Serve as a prescription pad for controlled substances"
+        "text": "Document sterile technique steps"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Superbills list common diagnoses/procedures to support charge capture for the encounter.",
+    "explanation": "Superbills list common diagnoses/procedures to support charge capture for the encounter The correct choice (“Capture diagnoses and services for billing from the visit”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Sterile technique is clinical documentation.",
-      "c": "It supplements billing capture, not replaces the EHR.",
-      "d": "It is not a controlled-substance prescription form."
+      "a": "It is not a controlled-substance prescription form. Learners who choose “Serve as a prescription pad for controlled substances” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "It supplements billing capture, not replaces the EHR. Learners who choose “Replace the entire EHR forever” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Sterile technique is clinical documentation. Learners who choose “Document sterile technique steps” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1327,11 +1327,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Diagnose chest pain as anxiety and advise waiting a week"
+        "text": "Follow written protocols and escalate urgent symptoms to a licensed clinician"
       },
       {
         "id": "b",
-        "text": "Follow written protocols and escalate urgent symptoms to a licensed clinician"
+        "text": "Diagnose chest pain as anxiety and advise waiting a week"
       },
       {
         "id": "c",
@@ -1342,12 +1342,12 @@
         "text": "Tell all callers to go to the ER regardless of symptoms"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "MAs use approved protocols and escalate; they do not independently diagnose or prescribe.",
+    "correctOptionId": "a",
+    "explanation": "MAs use approved protocols and escalate; they do not independently diagnose or prescribe The correct choice (“Follow written protocols and escalate urgent symptoms to a…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Diagnosing and delaying care for possible cardiac symptoms is unsafe.",
-      "c": "Prescribing is outside MA scope.",
-      "d": "Blanket ER advice is not protocol-based triage."
+      "b": "Diagnosing and delaying care for possible cardiac symptoms is unsafe. Learners who choose “Diagnose chest pain as anxiety and advise waiting a week” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Prescribing is outside MA scope. Learners who choose “Prescribe antibiotics over the phone” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Blanket ER advice is not protocol-based triage. Learners who choose “Tell all callers to go to the ER regardless of symptoms” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1356,7 +1356,7 @@
     "id": "aama-cma-readiness-check-admin-012",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "admin",
-    "prompt": "Accounts receivable aging reports help the office: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "Accounts receivable aging reports help the office",
     "options": [
       {
         "id": "a",
@@ -1364,23 +1364,23 @@
       },
       {
         "id": "b",
-        "text": "Measure patient height and weight"
+        "text": "Calibrate ECG machines"
       },
       {
         "id": "c",
-        "text": "Schedule surgeries"
+        "text": "Measure patient height and weight"
       },
       {
         "id": "d",
-        "text": "Calibrate ECG machines"
+        "text": "Schedule surgeries"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "AR aging categorizes outstanding balances by time buckets to prioritize follow-up.",
+    "explanation": "AR aging categorizes outstanding balances by time buckets to prioritize follow-up The correct choice (“Track unpaid claims/balances by how long they have been out…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Vitals are clinical.",
-      "c": "Scheduling is a different function.",
-      "d": "Calibration is clinical equipment maintenance."
+      "b": "Calibration is clinical equipment maintenance. Learners who choose “Calibrate ECG machines” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Vitals are clinical. Learners who choose “Measure patient height and weight” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Scheduling is a different function. Learners who choose “Schedule surgeries” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1393,27 +1393,27 @@
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "this concept is identical to FDIC deposit insurance for every customer account"
       },
       {
         "id": "b",
-        "text": "Draw a single line through the error, initial, date, and write the correction"
-      },
-      {
-        "id": "c",
         "text": "this concept has no application in US securities, insurance, or licensing markets"
       },
       {
+        "id": "c",
+        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+      },
+      {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "Draw a single line through the error, initial, date, and write the correction"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Legal medical records require transparent corrections: single line, initials/date, no obliteration.",
+    "correctOptionId": "d",
+    "explanation": "Legal medical records require transparent corrections: single line, initials/date, no obliteration The correct choice (“Draw a single line through the error, initial, date, and wr…”) is the one that matches this rule.",
     "distractorExplanations": {
       "a": "This statement is false about the tested concept and does not match the correct definition.",
-      "c": "This statement is false about the tested concept and does not match the correct definition.",
-      "d": "This statement is false about the tested concept and does not match the correct definition."
+      "b": "This statement is false about the tested concept and does not match the correct definition.",
+      "c": "This statement is false about the tested concept and does not match the correct definition."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1422,7 +1422,7 @@
     "id": "aama-cma-readiness-check-admin-014",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "admin",
-    "prompt": "Prior authorization is typically required when: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "Prior authorization is typically required when:",
     "options": [
       {
         "id": "a",
@@ -1442,11 +1442,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Prior auth is payer approval before selected services/drugs are covered.",
+    "explanation": "Prior auth is payer approval before selected services/drugs are covered The correct choice (“A payer requires approval before covering certain services…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Cash OTC purchases do not need payer prior auth.",
-      "c": "Office purchasing is internal.",
-      "d": "Breaks are unrelated."
+      "b": "Cash OTC purchases do not need payer prior auth. Learners who choose “A patient pays cash for all OTC items” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Office purchasing is internal. Learners who choose “Staff buy office supplies” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Breaks are unrelated. Learners who choose “A provider takes lunch” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1459,27 +1459,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Referrals are never needed in managed care"
+        "text": "Patients can always self-refer under every plan without review"
       },
       {
         "id": "b",
-        "text": "Many HMO plans require referrals/authorizations before specialty care"
+        "text": "Referrals are never needed in managed care"
       },
       {
         "id": "c",
-        "text": "Referrals replace medical records"
+        "text": "Many HMO plans require referrals/authorizations before specialty care"
       },
       {
         "id": "d",
-        "text": "Patients can always self-refer under every plan without review"
+        "text": "Referrals replace medical records"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Managed care plans often require referrals or authorizations for specialty services.",
+    "correctOptionId": "c",
+    "explanation": "Managed care plans often require referrals or authorizations for specialty services The correct choice (“Many HMO plans require referrals/authorizations before spec…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Many plans do require them.",
-      "c": "Referrals authorize care pathways; they do not replace records.",
-      "d": "Plan rules vary; many restrict self-referral."
+      "a": "Plan rules vary; many restrict self-referral. Learners who choose “Patients can always self-refer under every plan without review” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Many plans do require them. Learners who choose “Referrals are never needed in managed care” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Referrals authorize care pathways; they do not replace records. Learners who choose “Referrals replace medical records” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1488,31 +1488,31 @@
     "id": "aama-cma-readiness-check-law-ethics-001",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "HIPAA's Privacy Rule primarily protects: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "HIPAA's Privacy Rule primarily protects",
     "options": [
       {
         "id": "a",
-        "text": "Clinic parking spaces"
-      },
-      {
-        "id": "b",
-        "text": "Protected health information (PHI)"
-      },
-      {
-        "id": "c",
         "text": "Vendor lunch menus"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Public weather data"
+      },
+      {
+        "id": "c",
+        "text": "Clinic parking spaces"
+      },
+      {
+        "id": "d",
+        "text": "Protected health information (PHI)"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "HIPAA Privacy Rule governs use and disclosure of PHI.",
+    "correctOptionId": "d",
+    "explanation": "HIPAA Privacy Rule governs use and disclosure of PHI The correct choice (“Protected health information (PHI)”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Parking is unrelated.",
-      "c": "Menus are not PHI.",
-      "d": "Weather is public information."
+      "a": "Menus are not PHI. Learners who choose “Vendor lunch menus” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Weather is public information. Learners who choose “Public weather data” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Parking is unrelated. Learners who choose “Clinic parking spaces” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1521,31 +1521,31 @@
     "id": "aama-cma-readiness-check-law-ethics-002",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "Informed consent requires that the patient: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "Informed consent requires that the patient",
     "options": [
       {
         "id": "a",
-        "text": "Be told risks, benefits, and alternatives in understandable terms and agree voluntarily"
+        "text": "Receive no opportunity for questions"
       },
       {
         "id": "b",
-        "text": "Sign any form without explanation"
+        "text": "Be told risks, benefits, and alternatives in understandable terms and agree voluntarily"
       },
       {
         "id": "c",
-        "text": "Be coerced if they hesitate"
+        "text": "Sign any form without explanation"
       },
       {
         "id": "d",
-        "text": "Receive no opportunity for questions"
+        "text": "Be coerced if they hesitate"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Informed consent is voluntary agreement after adequate disclosure and opportunity for questions.",
+    "correctOptionId": "b",
+    "explanation": "Informed consent is voluntary agreement after adequate disclosure and opportunity for questions The correct choice (“Be told risks, benefits, and alternatives in understandable…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "A signature without understanding is inadequate.",
-      "c": "Coercion invalidates consent.",
-      "d": "Questions are part of the process."
+      "a": "Questions are part of the process. Learners who choose “Receive no opportunity for questions” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "A signature without understanding is inadequate. Learners who choose “Sign any form without explanation” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Coercion invalidates consent. Learners who choose “Be coerced if they hesitate” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1558,27 +1558,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A child with unexplained patterned bruises and inconsistent history"
+        "text": "A child who dislikes blood draws"
       },
       {
         "id": "b",
-        "text": "A child who prefers vegetables"
+        "text": "A child with unexplained patterned bruises and inconsistent history"
       },
       {
         "id": "c",
-        "text": "A child late to one appointment without other concerns"
+        "text": "A child who prefers vegetables"
       },
       {
         "id": "d",
-        "text": "A child who dislikes blood draws"
+        "text": "A child late to one appointment without other concerns"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "b",
     "explanation": "Mandated reporters must report reasonable suspicion of abuse/neglect; patterned injuries with inconsistent history are classic red flags.",
     "distractorExplanations": {
-      "b": "Food preference is not abuse.",
-      "c": "A single late visit alone is not abuse.",
-      "d": "Fear of procedures is common."
+      "a": "Fear of procedures is common. Learners who choose “A child who dislikes blood draws” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Food preference is not abuse. Learners who choose “A child who prefers vegetables” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "A single late visit alone is not abuse. Learners who choose “A child late to one appointment without other concerns” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1587,31 +1587,31 @@
     "id": "aama-cma-readiness-check-law-ethics-004",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "OSHA Bloodborne Pathogens Standard requires employers to: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "OSHA Bloodborne Pathogens Standard requires employers to:",
     "options": [
       {
         "id": "a",
-        "text": "Provide training, PPE, and an exposure control plan"
+        "text": "Ignore needle-stick injuries"
       },
       {
         "id": "b",
-        "text": "Ban all hand hygiene"
-      },
-      {
-        "id": "c",
         "text": "Require staff to pay for all PPE personally"
       },
       {
+        "id": "c",
+        "text": "Provide training, PPE, and an exposure control plan"
+      },
+      {
         "id": "d",
-        "text": "Ignore needle-stick injuries"
+        "text": "Ban all hand hygiene"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "OSHA BBP standards mandate exposure control plans, training, PPE, and post-exposure processes.",
+    "correctOptionId": "c",
+    "explanation": "OSHA BBP standards mandate exposure control plans, training, PPE, and post-exposure processes The correct choice (“Provide training, PPE, and an exposure control plan”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Hand hygiene is required.",
-      "c": "Employers must provide necessary PPE.",
-      "d": "Exposures must be evaluated and followed up."
+      "a": "Exposures must be evaluated and followed up. Learners who choose “Ignore needle-stick injuries” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Employers must provide necessary PPE. Learners who choose “Require staff to pay for all PPE personally” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Hand hygiene is required. Learners who choose “Ban all hand hygiene” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1620,31 +1620,31 @@
     "id": "aama-cma-readiness-check-law-ethics-005",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "A medical assistant may not: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "A medical assistant may not",
     "options": [
       {
         "id": "a",
-        "text": "Take vital signs under supervision/protocol"
-      },
-      {
-        "id": "b",
-        "text": "Independently diagnose disease and prescribe medication"
-      },
-      {
-        "id": "c",
         "text": "Schedule appointments"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "Perform CLIA-waived tests if trained and authorized"
+      },
+      {
+        "id": "c",
+        "text": "Take vital signs under supervision/protocol"
+      },
+      {
+        "id": "d",
+        "text": "Independently diagnose disease and prescribe medication"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Diagnosis and prescribing are licensed-provider functions outside MA scope.",
+    "correctOptionId": "d",
+    "explanation": "Diagnosis and prescribing are licensed-provider functions outside MA scope The correct choice (“Independently diagnose disease and prescribe medication”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Vitals are common MA duties.",
-      "c": "Scheduling is administrative within role.",
-      "d": "CLIA-waived testing is often within trained MA scope."
+      "a": "Scheduling is administrative within role. Learners who choose “Schedule appointments” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "CLIA-waived testing is often within trained MA scope. Learners who choose “Perform CLIA-waived tests if trained and authorized” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Vitals are common MA duties. Learners who choose “Take vital signs under supervision/protocol” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1657,27 +1657,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Failure to meet the standard of care causing harm"
+        "text": "Following evidence-based protocols perfectly"
       },
       {
         "id": "b",
-        "text": "Any patient dissatisfaction"
+        "text": "Failure to meet the standard of care causing harm"
       },
       {
         "id": "c",
-        "text": "A successful treatment outcome"
+        "text": "Any patient dissatisfaction"
       },
       {
         "id": "d",
-        "text": "Following evidence-based protocols perfectly"
+        "text": "A successful treatment outcome"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Negligence is breach of duty (standard of care) that proximately causes damages.",
+    "correctOptionId": "b",
+    "explanation": "Negligence is breach of duty (standard of care) that proximately causes damages The correct choice (“Failure to meet the standard of care causing harm”) is the one that matches this rule.",
     "distractorExplanations": {
-      "b": "Dissatisfaction alone is not negligence.",
-      "c": "Good outcomes are not negligence.",
-      "d": "Meeting standards helps prevent negligence claims."
+      "a": "Meeting standards helps prevent negligence claims. Learners who choose “Following evidence-based protocols perfectly” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Dissatisfaction alone is not negligence. Learners who choose “Any patient dissatisfaction” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Good outcomes are not negligence. Learners who choose “A successful treatment outcome” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1686,7 +1686,7 @@
     "id": "aama-cma-readiness-check-law-ethics-007",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "A living will typically: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "A living will typically",
     "options": [
       {
         "id": "a",
@@ -1708,9 +1708,9 @@
     "correctOptionId": "b",
     "explanation": "Living wills document preferences for end-of-life/life-sustaining care when the patient lacks capacity.",
     "distractorExplanations": {
-      "a": "Healthcare proxy/POA is a separate directive (though often paired).",
-      "c": "Property transfer is estate planning, not a living will.",
-      "d": "Facility policies govern DNR orders; tattoos alone are unreliable."
+      "a": "Healthcare proxy/POA is a separate directive (though often paired). Learners who choose “Assigns a healthcare proxy only” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Property transfer is estate planning, not a living will. Learners who choose “Transfers real estate ownership” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Facility policies govern DNR orders; tattoos alone are unreliable. Learners who choose “Authorizes staff to ignore DNR tattoos only” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1723,27 +1723,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Discussing a case with the care team for treatment"
+        "text": "Verifying identity before releasing results"
       },
       {
         "id": "b",
-        "text": "Posting a patient's diagnosis on social media"
-      },
-      {
-        "id": "c",
         "text": "Filing records securely"
       },
       {
+        "id": "c",
+        "text": "Discussing a case with the care team for treatment"
+      },
+      {
         "id": "d",
-        "text": "Verifying identity before releasing results"
+        "text": "Posting a patient's diagnosis on social media"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Public disclosure of PHI on social media is a confidentiality/HIPAA breach.",
+    "correctOptionId": "d",
+    "explanation": "Public disclosure of PHI on social media is a confidentiality/HIPAA breach The correct choice (“Posting a patient's diagnosis on social media”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Treatment-related sharing with the care team is permitted.",
-      "c": "Secure filing protects privacy.",
-      "d": "Identity verification protects against wrongful disclosure."
+      "a": "Identity verification protects against wrongful disclosure. Learners who choose “Verifying identity before releasing results” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Secure filing protects privacy. Learners who choose “Filing records securely” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Treatment-related sharing with the care team is permitted. Learners who choose “Discussing a case with the care team for treatment” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1752,7 +1752,7 @@
     "id": "aama-cma-readiness-check-law-ethics-009",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "CLIA categorizes tests; a CLIA-waived test is generally: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "CLIA categorizes tests; a CLIA-waived test is generally",
     "options": [
       {
         "id": "a",
@@ -1760,23 +1760,23 @@
       },
       {
         "id": "b",
-        "text": "Simple with low risk of erroneous results when directions are followed"
+        "text": "Always requiring a full microbiology lab"
       },
       {
         "id": "c",
-        "text": "Illegal in physician offices"
+        "text": "Simple with low risk of erroneous results when directions are followed"
       },
       {
         "id": "d",
-        "text": "Always requiring a full microbiology lab"
+        "text": "Illegal in physician offices"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Waived tests are simple, low-risk methods cleared for waived status when manufacturer instructions are followed.",
     "distractorExplanations": {
-      "a": "High-complexity tests need more stringent personnel standards.",
-      "c": "Many waived tests are done in offices.",
-      "d": "Micro labs perform complex testing; not all waived tests need that."
+      "a": "High-complexity tests need more stringent personnel standards. Learners who choose “So complex that only pathologists may perform it” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Micro labs perform complex testing; not all waived tests need that. Learners who choose “Always requiring a full microbiology lab” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Many waived tests are done in offices. Learners who choose “Illegal in physician offices” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1789,27 +1789,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Performing a procedure after valid informed consent"
+        "text": "Documenting vital signs accurately"
       },
       {
         "id": "b",
-        "text": "Touching or treating a patient without consent"
+        "text": "Performing a procedure after valid informed consent"
       },
       {
         "id": "c",
-        "text": "Documenting vital signs accurately"
+        "text": "Touching or treating a patient without consent"
       },
       {
         "id": "d",
         "text": "Offering a chaperone"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Battery is intentional unauthorized touching; consent is key.",
+    "correctOptionId": "c",
+    "explanation": "Battery is intentional unauthorized touching; consent is key The correct choice (“Touching or treating a patient without consent”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Consented care is not battery.",
-      "c": "Accurate documentation is appropriate.",
-      "d": "Chaperones support safety/comfort."
+      "a": "Accurate documentation is appropriate. Learners who choose “Documenting vital signs accurately” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Consented care is not battery. Learners who choose “Performing a procedure after valid informed consent” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Chaperones support safety/comfort. Learners who choose “Offering a chaperone” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1818,7 +1818,7 @@
     "id": "aama-cma-readiness-check-law-ethics-011",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "Standard Precautions assume that: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "Standard Precautions assume that",
     "options": [
       {
         "id": "a",
@@ -1826,23 +1826,23 @@
       },
       {
         "id": "b",
-        "text": "Blood and certain body fluids of all patients may be infectious"
+        "text": "Hand hygiene is optional after glove removal"
       },
       {
         "id": "c",
-        "text": "Gloves are never needed"
+        "text": "Blood and certain body fluids of all patients may be infectious"
       },
       {
         "id": "d",
-        "text": "Hand hygiene is optional after glove removal"
+        "text": "Gloves are never needed"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Standard Precautions treat all patients' blood/body fluids as potentially infectious.",
+    "correctOptionId": "c",
+    "explanation": "Standard Precautions treat all patients' blood/body fluids as potentially infectious The correct choice (“Blood and certain body fluids of all patients may be infect…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Asymptomatic patients can transmit infection.",
-      "c": "PPE is used based on anticipated exposure.",
-      "d": "Hand hygiene is required after glove removal."
+      "a": "Asymptomatic patients can transmit infection. Learners who choose “Only visibly ill patients pose risk” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Hand hygiene is required after glove removal. Learners who choose “Hand hygiene is optional after glove removal” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "PPE is used based on anticipated exposure. Learners who choose “Gloves are never needed” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1851,31 +1851,31 @@
     "id": "aama-cma-readiness-check-law-ethics-012",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "A 'Good Samaritan' statute typically protects: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "A 'Good Samaritan' statute typically protects",
     "options": [
       {
         "id": "a",
-        "text": "Reckless intentional harm"
+        "text": "Falsifying medical records"
       },
       {
         "id": "b",
-        "text": "Reasonable emergency aid given in good faith outside a duty-to-treat setting (varies by state)"
-      },
-      {
-        "id": "c",
         "text": "Billing fraud"
       },
       {
+        "id": "c",
+        "text": "Reckless intentional harm"
+      },
+      {
         "id": "d",
-        "text": "Falsifying medical records"
+        "text": "Reasonable emergency aid given in good faith outside a duty-to-treat setting (varies by state)"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "Good Samaritan laws generally shield good-faith emergency helpers acting reasonably; they do not cover intentional misconduct or fraud.",
     "distractorExplanations": {
-      "a": "Recklessness/intentional harm is not protected.",
-      "c": "Fraud is criminal.",
-      "d": "Falsification is illegal."
+      "a": "Falsification is illegal. Learners who choose “Falsifying medical records” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Fraud is criminal. Learners who choose “Billing fraud” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Recklessness/intentional harm is not protected. Learners who choose “Reckless intentional harm” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1888,7 +1888,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Parents/guardians usually consent for minors, with specific exceptions (e.g., certain reproductive/mental health laws varying by state)"
+        "text": "Consent is never needed for minors"
       },
       {
         "id": "b",
@@ -1896,19 +1896,19 @@
       },
       {
         "id": "c",
-        "text": "Consent is never needed for minors"
+        "text": "Teachers always consent for school-age children in clinics"
       },
       {
         "id": "d",
-        "text": "Teachers always consent for school-age children in clinics"
+        "text": "Parents/guardians usually consent for minors, with specific exceptions (e.g., certain reproductive/mental health laws varying by state)"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Parental/guardian consent is usual, but state laws create exceptions for emancipated minors and certain sensitive services.",
     "distractorExplanations": {
-      "b": "Not universally true for all care.",
-      "c": "Consent is still required from an authorized person.",
-      "d": "Teachers are not default healthcare decision-makers."
+      "a": "Consent is still required from an authorized person. Learners who choose “Consent is never needed for minors” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Not universally true for all care. Learners who choose “Minors always consent for all surgeries alone in every state” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Teachers are not default healthcare decision-makers. Learners who choose “Teachers always consent for school-age children in clinics” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1917,15 +1917,15 @@
     "id": "aama-cma-readiness-check-law-ethics-014",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "An incident report should be: which of the following is most accurate for the AAMA CMA?",
+    "prompt": "An incident report should be",
     "options": [
       {
         "id": "a",
-        "text": "Filed objectively, promptly, and per facility policy without blaming language in the medical record narrative"
+        "text": "Posted in the waiting room"
       },
       {
         "id": "b",
-        "text": "Posted in the waiting room"
+        "text": "Used as a public press release"
       },
       {
         "id": "c",
@@ -1933,15 +1933,15 @@
       },
       {
         "id": "d",
-        "text": "Used as a public press release"
+        "text": "Filed objectively, promptly, and per facility policy without blaming language in the medical record narrative"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Incident reports document facts for risk management; they are handled per policy and are not public notices.",
     "distractorExplanations": {
-      "b": "Public posting breaches privacy.",
-      "c": "Destruction may violate policy/law.",
-      "d": "Press release is inappropriate."
+      "a": "Public posting breaches privacy. Learners who choose “Posted in the waiting room” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Press release is inappropriate. Learners who choose “Used as a public press release” are usually making that exact mistake instead of applying the rule in the stem.",
+      "c": "Destruction may violate policy/law. Learners who choose “Destroyed immediately” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1958,23 +1958,23 @@
       },
       {
         "id": "b",
-        "text": "Respecting a capacitated patient's informed decisions about care"
+        "text": "Hiding risks to improve compliance"
       },
       {
         "id": "c",
-        "text": "Hiding risks to improve compliance"
+        "text": "Respecting a capacitated patient's informed decisions about care"
       },
       {
         "id": "d",
         "text": "Making decisions solely to maximize clinic revenue"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Autonomy respects informed patients' rights to accept or refuse care.",
+    "correctOptionId": "c",
+    "explanation": "Autonomy respects informed patients' rights to accept or refuse care The correct choice (“Respecting a capacitated patient's informed decisions about…”) is the one that matches this rule.",
     "distractorExplanations": {
-      "a": "Forcing care against capacitated refusal violates autonomy.",
-      "c": "Withholding risks undermines informed consent.",
-      "d": "Revenue alone is not an ethical care principle."
+      "a": "Forcing care against capacitated refusal violates autonomy. Learners who choose “Forcing treatment despite informed refusal when the patient has capacity” are usually making that exact mistake instead of applying the rule in the stem.",
+      "b": "Withholding risks undermines informed consent. Learners who choose “Hiding risks to improve compliance” are usually making that exact mistake instead of applying the rule in the stem.",
+      "d": "Revenue alone is not an ethical care principle. Learners who choose “Making decisions solely to maximize clinic revenue” are usually making that exact mistake instead of applying the rule in the stem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"

@@ -213,6 +213,21 @@ export const positioningOverrides: Partial<
 };
 
 const uniqueContentBySlug: Partial<Record<string, string>> = {
+  "rd-exam-anki-deck": `### What is inside
+
+60 MCQ cards aligned to the CDR Registration Examination for Dietitians domains: Principles of Dietetics (21%), Nutrition Care for Individuals and Groups (45%), Management of Food and Nutrition Programs and Services (21%), and Foodservice Systems (13%). Every card includes a correct explanation and notes on why the other options fail — the same bank as the free timed readiness check.
+
+### 2–3 week study plan with the free mock
+
+**Week 1:** 15–20 new cards/day across principles and nutrition care (PES / ADIME, macros, MNT themes). **Week 2:** Add foodservice and management cards; sit the [free 60-question RD readiness check](/mock-exams/rd-exam-readiness-check). **Final days:** Review-only Anki on weak topics from the report — keep official CDR handbook timing practice separate (3-hour adaptive exam).
+
+### Pitfalls this deck targets
+
+Candidates over-focus on clinical MNT and under-drill foodservice sanitation, procurement, and management finance. Cards force all four CDR domains under spaced recall, not just favorite clinical topics.
+
+### What this does not replace
+
+ACEND education, supervised practice, and the official CDR / Pearson VUE exam. This deck is independent prep — not CDR material.`,
   "cdcp-anki-deck": `### What is inside
 
 250 MCQ cards across the EXIN EPI CDCP facility and operations blueprint: site/standards/building, power & EMF, cooling/water/thermal, fire/security/network, and data-centre operations. Every card has a correct explanation plus short notes on why the other three options fail — the same bank that feeds the free timed readiness check.

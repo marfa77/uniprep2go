@@ -1,16 +1,1060 @@
 {
-  "auditedAt": "2026-08-06T14:47:03.591Z",
+  "auditedAt": "2026-08-14T16:38:05.841Z",
   "scope": "live runnable mocks excluding citizenship",
   "totalBanks": 179,
-  "banksWithIssues": 0,
-  "structuralIssueCount": 0,
+  "banksWithIssues": 4,
+  "structuralIssueCount": 112,
   "severityCounts": {
     "red": 0,
-    "yellow": 0,
-    "green": 179
+    "yellow": 4,
+    "green": 175
   },
   "fixedFiles": [],
   "banks": [
+    {
+      "slug": "ace-cpt-readiness-check",
+      "verticalId": "fitness",
+      "questionCount": 60,
+      "bankSize": 300,
+      "severity": "yellow",
+      "validateErrors": [],
+      "bankIssues": [],
+      "questionIssueCount": 44,
+      "questionIssues": [
+        {
+          "id": "ace-cpt-readiness-check-client-interview-004",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=16"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-client-interview-007",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=25"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-client-interview-008",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=37"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-client-interview-009",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=35"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-client-interview-054",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=37"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-program-design-001",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=31"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-program-design-003",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=27"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-program-design-005",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=34"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-program-design-006",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=38"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-program-design-009",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=33"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-program-design-010",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=30"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-program-design-012",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=14"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-program-design-013",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=25"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-program-design-019",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=32"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-program-design-033",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=35"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-program-design-040",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=37"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-program-design-063",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=26"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-instruction-005",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=36"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-instruction-007",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=32"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-instruction-010",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=34"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-instruction-014",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=25"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-instruction-038",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=37"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-instruction-039",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=36"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-instruction-040",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=36"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-instruction-041",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=39"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-instruction-042",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=35"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-instruction-044",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=39"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-instruction-046",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=39"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-instruction-048",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=38"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-instruction-050",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=37"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-instruction-051",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=37"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-instruction-053",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=36"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-instruction-055",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=34"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-instruction-056",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=36"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-instruction-058",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=39"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-professional-002",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=34"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-professional-004",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=25"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-professional-012",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=38"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-professional-021",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=34"
+            }
+          ]
+        },
+        {
+          "id": "ace-cpt-readiness-check-professional-027",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=37"
+            }
+          ]
+        }
+      ],
+      "correctKeyDistribution": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "slug": "cdcp-readiness-check",
+      "verticalId": "building",
+      "questionCount": 40,
+      "bankSize": 250,
+      "severity": "yellow",
+      "validateErrors": [],
+      "bankIssues": [],
+      "questionIssueCount": 37,
+      "questionIssues": [
+        {
+          "id": "cdcp-readiness-check-cooling-water-thermal-006",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=38"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-cooling-water-thermal-009",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=28"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-cooling-water-thermal-019",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=32"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-cooling-water-thermal-022",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=35"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-cooling-water-thermal-025",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=39"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-cooling-water-thermal-029",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=39"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-cooling-water-thermal-032",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=35"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-fire-security-network-002",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=19"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-fire-security-network-009",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=30"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-fire-security-network-013",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=38"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-fire-security-network-014",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=35"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-fire-security-network-015",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=29"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-fire-security-network-018",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=35"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-fire-security-network-020",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=39"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-fire-security-network-022",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=38"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-fire-security-network-028",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=39"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-fire-security-network-030",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=23"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-fire-security-network-033",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=39"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-fire-security-network-046",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=26"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-fire-security-network-048",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=35"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-operations-management-003",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=27"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-operations-management-008",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=35"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-operations-management-015",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=35"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-operations-management-018",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=34"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-operations-management-029",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=37"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-operations-management-031",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=39"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-operations-management-034",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=26"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-operations-management-038",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=35"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-operations-management-048",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=35"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-power-emf-distribution-006",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=36"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-power-emf-distribution-024",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=28"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-power-emf-distribution-033",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=35"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-power-emf-distribution-034",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=35"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-power-emf-distribution-040",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=36"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-power-emf-distribution-041",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=33"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-site-standards-building-013",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=38"
+            }
+          ]
+        },
+        {
+          "id": "cdcp-readiness-check-site-standards-building-033",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=36"
+            }
+          ]
+        }
+      ],
+      "correctKeyDistribution": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "slug": "rd-exam-readiness-check",
+      "verticalId": "nutrition",
+      "questionCount": 60,
+      "bankSize": 60,
+      "severity": "yellow",
+      "validateErrors": [],
+      "bankIssues": [],
+      "questionIssueCount": 18,
+      "questionIssues": [
+        {
+          "id": "rd-exam-readiness-check-principles-002",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=22"
+            }
+          ]
+        },
+        {
+          "id": "rd-exam-readiness-check-principles-005",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=29"
+            }
+          ]
+        },
+        {
+          "id": "rd-exam-readiness-check-principles-006",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=32"
+            }
+          ]
+        },
+        {
+          "id": "rd-exam-readiness-check-principles-007",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=34"
+            }
+          ]
+        },
+        {
+          "id": "rd-exam-readiness-check-principles-014",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=28"
+            }
+          ]
+        },
+        {
+          "id": "rd-exam-readiness-check-nutrition-care-002",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=25"
+            }
+          ]
+        },
+        {
+          "id": "rd-exam-readiness-check-nutrition-care-006",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=39"
+            }
+          ]
+        },
+        {
+          "id": "rd-exam-readiness-check-nutrition-care-007",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=33"
+            }
+          ]
+        },
+        {
+          "id": "rd-exam-readiness-check-foodservice-001",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=17"
+            }
+          ]
+        },
+        {
+          "id": "rd-exam-readiness-check-foodservice-003",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=21"
+            }
+          ]
+        },
+        {
+          "id": "rd-exam-readiness-check-foodservice-006",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=36"
+            }
+          ]
+        },
+        {
+          "id": "rd-exam-readiness-check-foodservice-008",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=38"
+            }
+          ]
+        },
+        {
+          "id": "rd-exam-readiness-check-foodservice-009",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=34"
+            }
+          ]
+        },
+        {
+          "id": "rd-exam-readiness-check-foodservice-013",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=34"
+            }
+          ]
+        },
+        {
+          "id": "rd-exam-readiness-check-management-002",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=26"
+            }
+          ]
+        },
+        {
+          "id": "rd-exam-readiness-check-management-004",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=39"
+            }
+          ]
+        },
+        {
+          "id": "rd-exam-readiness-check-management-007",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=34"
+            }
+          ]
+        },
+        {
+          "id": "rd-exam-readiness-check-management-012",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=39"
+            }
+          ]
+        }
+      ],
+      "correctKeyDistribution": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "slug": "home-health-aide-readiness-check",
+      "verticalId": "nursing",
+      "questionCount": 60,
+      "bankSize": 60,
+      "severity": "yellow",
+      "validateErrors": [],
+      "bankIssues": [],
+      "questionIssueCount": 13,
+      "questionIssues": [
+        {
+          "id": "home-health-aide-readiness-check-adls-008",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=35"
+            }
+          ]
+        },
+        {
+          "id": "home-health-aide-readiness-check-adls-009",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=38"
+            }
+          ]
+        },
+        {
+          "id": "home-health-aide-readiness-check-adls-013",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=33"
+            }
+          ]
+        },
+        {
+          "id": "home-health-aide-readiness-check-safety-001",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=28"
+            }
+          ]
+        },
+        {
+          "id": "home-health-aide-readiness-check-safety-002",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=36"
+            }
+          ]
+        },
+        {
+          "id": "home-health-aide-readiness-check-safety-003",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=30"
+            }
+          ]
+        },
+        {
+          "id": "home-health-aide-readiness-check-safety-008",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=31"
+            }
+          ]
+        },
+        {
+          "id": "home-health-aide-readiness-check-safety-011",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=22"
+            }
+          ]
+        },
+        {
+          "id": "home-health-aide-readiness-check-obs-003",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=36"
+            }
+          ]
+        },
+        {
+          "id": "home-health-aide-readiness-check-ethics-006",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=23"
+            }
+          ]
+        },
+        {
+          "id": "home-health-aide-readiness-check-ethics-011",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=34"
+            }
+          ]
+        },
+        {
+          "id": "home-health-aide-readiness-check-ethics-013",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=36"
+            }
+          ]
+        },
+        {
+          "id": "home-health-aide-readiness-check-ethics-014",
+          "issues": [
+            {
+              "code": "short_stem",
+              "detail": "len=27"
+            }
+          ]
+        }
+      ],
+      "correctKeyDistribution": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
     {
       "slug": "sie-full-mock",
       "verticalId": "licensing",
@@ -404,23 +1448,6 @@
     },
     {
       "slug": "ashrae-certifications-readiness-check",
-      "verticalId": "building",
-      "questionCount": 50,
-      "bankSize": 250,
-      "severity": "green",
-      "validateErrors": [],
-      "bankIssues": [],
-      "questionIssueCount": 0,
-      "questionIssues": [],
-      "correctKeyDistribution": [
-        "a",
-        "b",
-        "c",
-        "d"
-      ]
-    },
-    {
-      "slug": "cdcp-readiness-check",
       "verticalId": "building",
       "questionCount": 50,
       "bankSize": 250,
@@ -1032,23 +2059,6 @@
       ]
     },
     {
-      "slug": "ace-cpt-readiness-check",
-      "verticalId": "fitness",
-      "questionCount": 60,
-      "bankSize": 60,
-      "severity": "green",
-      "validateErrors": [],
-      "bankIssues": [],
-      "questionIssueCount": 0,
-      "questionIssues": [],
-      "correctKeyDistribution": [
-        "a",
-        "b",
-        "c",
-        "d"
-      ]
-    },
-    {
       "slug": "cdl-school-bus-readiness-check",
       "verticalId": "transport",
       "questionCount": 60,
@@ -1148,21 +2158,6 @@
     {
       "slug": "ascp-mls-readiness-check",
       "verticalId": "lab",
-      "questionCount": 60,
-      "bankSize": 60,
-      "severity": "green",
-      "validateErrors": [],
-      "bankIssues": [],
-      "questionIssueCount": 0,
-      "questionIssues": [],
-      "correctKeyDistribution": [
-        "a",
-        "b"
-      ]
-    },
-    {
-      "slug": "rd-exam-readiness-check",
-      "verticalId": "nutrition",
       "questionCount": 60,
       "bankSize": 60,
       "severity": "green",
@@ -1441,23 +2436,6 @@
     },
     {
       "slug": "medication-aide-readiness-check",
-      "verticalId": "nursing",
-      "questionCount": 60,
-      "bankSize": 60,
-      "severity": "green",
-      "validateErrors": [],
-      "bankIssues": [],
-      "questionIssueCount": 0,
-      "questionIssues": [],
-      "correctKeyDistribution": [
-        "a",
-        "b",
-        "c",
-        "d"
-      ]
-    },
-    {
-      "slug": "home-health-aide-readiness-check",
       "verticalId": "nursing",
       "questionCount": 60,
       "bankSize": 60,

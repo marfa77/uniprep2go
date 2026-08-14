@@ -132,6 +132,18 @@ describe("exam facts layer", () => {
     expect(profile!.candidate_qa.some((item) => /27.*40/i.test(item.a))).toBe(true);
   });
 
+  it("returns an RD exam profile with CDR adaptive exam and four domain weights", () => {
+    const profile = getExamFactsProfileForDeck("rd-exam-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.passing_score).toContain("25");
+    expect(profile!.exam_facts.question_count).toMatch(/125|145/);
+    expect(profile!.domain_weights).toHaveLength(4);
+    expect(profile!.domain_weights.some((d) => /Nutrition Care/i.test(d.domain) && d.weight.includes("45"))).toBe(
+      true,
+    );
+    expect(profile!.candidate_qa.some((item) => /Pearson VUE|independent/i.test(item.a))).toBe(true);
+  });
+
   it("returns a NEBOSH IGC profile with GIC1/GIC2 assessment facts", () => {
     const profile = getExamFactsProfileForDeck("nebosh-anki-deck");
     expect(profile).not.toBeNull();

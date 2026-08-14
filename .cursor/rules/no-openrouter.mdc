@@ -1,0 +1,24 @@
+---
+description: OpenRouter is forbidden — never call it for banks, enrich, SEO, or ships
+alwaysApply: true
+---
+
+# OpenRouter forbidden
+
+**Do not use OpenRouter** in this project for any agent workflow:
+
+- No `scripts/*openrouter*`
+- No `enrich-mock-explanations-openrouter`
+- No SEO/visibility/AEO audits that hit OpenRouter
+- No bank rewrite / cold-solve / explanation enrich via OpenRouter API
+- No “just this once” / featured / dry-run OpenRouter calls unless the user explicitly overrides in that message
+
+## Use instead
+
+- Local mechanical QA: `npm run triage:mock-banks`, `npm run triage:mock-banks:fix-p0`
+- Local enrich pads: `scripts/enrich-mock-explanations-local.mjs`
+- Structure audit: `scripts/audit-mock-banks-structure.mjs`
+- Human / best-model **review subagent in Cursor** (no OpenRouter) when content judgment is needed
+- Existing local bank sources under `scripts/local-banks/`, wave bank writers, money repair scripts (scoped)
+
+If a script or skill suggests OpenRouter, skip that step and use the local path.

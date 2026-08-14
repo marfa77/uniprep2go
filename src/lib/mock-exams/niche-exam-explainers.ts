@@ -936,16 +936,38 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "rd-exam-readiness-check": explainer({
     practiceTestName: "RD Exam Practice Test",
     whatIsExam:
-      "The Registration Examination for Dietitians (RD exam) from CDR is required to become a Registered Dietitian Nutritionist (RDN) after completing ACEND-accredited education and supervised practice.",
+      "The Registration Examination for Dietitians from the Commission on Dietetic Registration (CDR) is the national exam required to become a Registered Dietitian Nutritionist (RDN) after completing an ACEND-accredited education pathway and supervised practice. The computer-adaptive exam delivers 125–145 items (including 25 unscored pretest questions) in 3 hours and uses a scaled score of 1–50 with a passing point of 25. Current 2022–2026 domain weights are Principles of Dietetics 21%, Nutrition Care for Individuals and Groups 45%, Management of Food and Nutrition Programs and Services 21%, and Foodservice Systems 13%. UniPrep2Go’s free timed check is an independent diagnostic — not a CDR or Pearson VUE exam.",
     administeredBy: "Commission on Dietetic Registration (CDR)",
+    officialFormat:
+      "Computer-adaptive multiple-choice, 125–145 total items (100–120 scored + 25 pretest), 3 hours; scaled pass score 25/50 — verify the current RD Handbook at cdrnet.org.",
+    whoFor:
+      "Dietetic interns and candidates who have finished (or are finishing) ACEND-accredited education and supervised practice and need a timed domain diagnostic before scheduling the official CDR exam.",
+    howToPrepare:
+      "Drill all four CDR domains — do not skip foodservice or management. Take this free 60-question UniPrep2Go readiness check for a topic report, then repair weak areas with the linked RD Anki deck while you keep official handbook timing practice separate.",
+    topicBlurbs: [
+      { id: "principles", label: "Principles of dietetics", blurb: "Food/nutrition sciences, education/communication, and research applications (~21%)." },
+      { id: "nutrition-care", label: "Nutrition care", blurb: "Screening, PES diagnosis, intervention, and monitoring/evaluation for individuals and groups (~45%)." },
+      { id: "management", label: "Management", blurb: "Management functions, HR, finance, marketing, and quality/regulatory themes (~21%)." },
+      { id: "foodservice", label: "Foodservice systems", blurb: "Menus, procurement/production, sanitation/safety, and facility planning (~13%)." },
+    ],
     examFaqs: [
       {
         question: "What is the RD / RDN exam?",
         answer:
-          "It is CDR’s registration exam for dietitians — the final exam step to earn the RDN credential in the United States.",
+          "It is CDR’s Registration Examination for Dietitians — the final exam step to earn the RDN credential in the United States after ACEND education and supervised practice.",
+      },
+      {
+        question: "How many questions are on the official RD exam?",
+        answer:
+          "Computer-adaptive: 125–145 total questions including 25 unscored pretest items. You must answer at least 125 items for a scored report.",
+      },
+      {
+        question: "Is this UniPrep2Go check the official CDR exam?",
+        answer:
+          "No. It is an independent 60-question readiness diagnostic mapped to CDR domain themes — not CDR or Pearson VUE material.",
       },
     ],
-    keywords: ["rd exam practice test", "rdn practice exam", "dietitian registration exam practice"],
+    keywords: ["rd exam practice test", "rdn practice exam", "dietitian registration exam practice", "cdr rd practice test"],
   }),
   "epa-608-readiness-check": explainer({
     practiceTestName: "EPA 608 Practice Test",
