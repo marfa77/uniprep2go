@@ -24,11 +24,29 @@ const DEFAULT_SLUGS = [
   "property-casualty-insurance-readiness-check",
 ];
 
+/** Never run this money-style repair on facility/professional banks (injects FDIC boilerplate). */
+const BLOCKED_SLUGS = new Set([
+  "cdcp-readiness-check",
+  "nebosh-readiness-check",
+  "cfps-readiness-check",
+  "ashrae-certifications-readiness-check",
+  "epa-608-readiness-check",
+  "cem-readiness-check",
+  "well-ap-readiness-check",
+  "leed-green-associate-readiness-check",
+  "leed-ap-bd-c-readiness-check",
+  "leed-ap-om-readiness-check",
+  "bms-building-automation-readiness-check",
+  "mrics-readiness-check",
+  "mrics-quantity-surveying-readiness-check",
+]);
+
 function parseArgs(argv) {
-  const args = { slug: null, allLive: false };
+  const args = { slug: null, allLive: false, force: false };
   for (let i = 2; i < argv.length; i += 1) {
     if (argv[i] === "--slug") args.slug = argv[++i];
     else if (argv[i] === "--all-live") args.allLive = true;
+    else if (argv[i] === "--force") args.force = true;
   }
   return args;
 }
@@ -168,6 +186,10 @@ async function main() {
   const summary = [];
 
   for (const slug of slugs) {
+    if (BLOCKED_SLUGS.has(slug) && !args.force) {
+      console.log(`skip ${slug} (blocked — money-style FDIC distractors destroy facility banks; use --force to override)`);
+      continue;
+    }
     const path = join(DIR, `${slug}.json`);
     if (!existsSync(path)) {
       console.log(`skip ${slug} (no json)`);

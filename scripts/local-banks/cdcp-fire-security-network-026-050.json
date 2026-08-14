@@ -1,6 +1,5 @@
 [
   {
-    "topicId": "fire-security-network",
     "prompt": "Security operations center (SOC) integration pulls:",
     "options": [
       {
@@ -21,16 +20,16 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Central monitoring enables correlated incident response.",
+    "explanation": "A Security Operations Center (SOC) integrates various security systems to provide a centralized view and coordinated response to incidents. This includes pulling data from access control, video surveillance, intrusion detection, and environmental alarms into monitored workflows for comprehensive security management.",
     "distractorExplanations": {
-      "b": "Irrelevant data.",
-      "c": "Privacy/security risk.",
-      "d": "Out of scope."
+      "b": "Integrating cafeteria menus into a SOC is irrelevant to security operations and does not contribute to incident response or threat detection. SOCs focus on security-related data streams.",
+      "c": "Integrating personal social media into a SOC raises significant privacy concerns and is generally not part of a legitimate security monitoring strategy for an organization's infrastructure. It is outside the scope of operational security.",
+      "d": "Integrating unrelated retail Point of Sale (POS) data into a SOC is typically out of scope for an organization's core security monitoring unless there's a direct, defined security relevance. SOCs focus on protecting the organization's assets and data."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Fiber optic connectors SC vs LC differ mainly in:",
     "options": [
       {
@@ -51,16 +50,16 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Connector choice affects panel density and handling.",
+    "explanation": "SC and LC fiber optic connectors primarily differ in their form factor and density. LC connectors are smaller than SC connectors, allowing for higher port density on patch panels and network equipment, which is crucial in space-constrained data center environments.",
     "distractorExplanations": {
-      "b": "Fiber is low voltage optical.",
-      "c": "Both used for data.",
-      "d": "Both carry optical data."
+      "b": "Fiber optic cables transmit data using light signals, not electrical current, so they do not carry high voltage. This misconception indicates a misunderstanding of fiber optic technology.",
+      "c": "Both SC and LC connectors are widely used for data transmission in various networking applications, not exclusively for fire alarms. This option incorrectly limits the application of SC connectors.",
+      "d": "Both SC and LC connectors are designed specifically to carry optical data signals over fiber optic cables. Stating they cannot carry data is fundamentally incorrect and misunderstands their purpose."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Cabinet-level network segmentation can:",
     "options": [
       {
@@ -81,115 +80,115 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "ToR switches and VLANs contain faults and security events.",
+    "explanation": "Cabinet-level network segmentation, often achieved using Top-of-Rack (ToR) switches and VLANs, helps to limit the 'blast radius' of a security breach or misconfiguration. By isolating network traffic within a cabinet or row, a problem in one area is less likely to spread and affect the entire network.",
     "distractorExplanations": {
-      "b": "Fire risk separate.",
-      "c": "Patching still needed.",
-      "d": "UPS unrelated."
+      "b": "Network segmentation is a logical security and operational practice and does not eliminate physical fire risk. Fire prevention and suppression systems address fire hazards independently.",
+      "c": "Network segmentation does not remove the need for regular software and firmware patching. Patching is essential for maintaining security and stability, regardless of network architecture.",
+      "d": "Network segmentation is a logical network design concept and has no direct impact on the functionality of an Uninterruptible Power Supply (UPS). UPS systems provide power backup, which is a separate infrastructure component."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Portable fire extinguishers in data halls should match:",
     "options": [
       {
         "id": "a",
-        "text": "Expected fire classes (often clean agent or CO2 near energized gear per policy)"
-      },
-      {
-        "id": "b",
         "text": "Only Class A wood-only regardless of equipment"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Decor color only"
+      },
+      {
+        "id": "c",
+        "text": "Expected fire classes (often clean agent or CO2 near energized gear per policy)"
       },
       {
         "id": "d",
         "text": "No training for staff"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Extinguisher type must suit energized electrical and combustible loads present.",
+    "correctOptionId": "c",
+    "explanation": "Portable fire extinguishers must be selected based on the types of fires they are designed to suppress, such as Class C for electrical fires or Class A for ordinary combustibles. Using the wrong type can be ineffective or even dangerous, so policies often specify clean agent or CO2 for data halls.",
     "distractorExplanations": {
-      "b": "Wrong class may be ineffective on electrical fires.",
-      "c": "Type matters more than color.",
-      "d": "Training required."
+      "a": "Relying solely on Class A extinguishers, which are for ordinary combustibles like wood or paper, would be inappropriate for a data hall with energized electrical equipment. This misconception ignores the specific fire risks associated with electrical components.",
+      "b": "The color of an extinguisher is a visual identifier, but it does not determine its effectiveness against specific fire classes. This choice reflects a misunderstanding that aesthetics or superficial characteristics dictate functionality over safety standards.",
+      "d": "Proper training for staff on how to use portable fire extinguishers is a critical safety requirement in any facility, especially data halls. The idea that no training is needed is a dangerous misconception that undermines emergency preparedness."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Door prop alarms deter:",
     "options": [
       {
         "id": "a",
-        "text": "Held-open doors that defeat access control or fire door ratings"
-      },
-      {
-        "id": "b",
         "text": "Properly closed fire doors"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Legitimate badge reads"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Humidification"
+      },
+      {
+        "id": "d",
+        "text": "Held-open doors that defeat access control or fire door ratings"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Forced doors trigger alerts for security and life safety.",
+    "correctOptionId": "d",
+    "explanation": "Door prop alarms are designed to detect when a door, especially an access-controlled or fire-rated door, is held open improperly. This prevents unauthorized entry and ensures fire doors can fulfill their function of compartmentalizing smoke and fire.",
     "distractorExplanations": {
-      "b": "Closed doors should not alarm.",
-      "c": "Badge reads separate.",
-      "d": "HVAC unrelated."
+      "a": "Door prop alarms are specifically for doors that are not properly closed, indicating a security or fire safety breach. The misconception here is that the alarm would activate for a door that is functioning as intended.",
+      "b": "Legitimate badge reads are part of a proper access control system, allowing authorized entry. A door prop alarm addresses unauthorized or prolonged open door conditions, not valid access events.",
+      "c": "Humidification is an environmental control aspect related to HVAC systems, maintaining optimal humidity levels within a data center. This choice incorrectly links a physical security and fire safety device to environmental management."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Cross-connect documentation in carrier-neutral facilities tracks:",
     "options": [
       {
         "id": "a",
-        "text": "Circuit IDs, carrier demarcation, and patch assignments"
-      },
-      {
-        "id": "b",
         "text": "Only employee birthdays"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Chiller tonnage only"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Diesel viscosity only"
+      },
+      {
+        "id": "d",
+        "text": "Circuit IDs, carrier demarcation, and patch assignments"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Accurate records speed repairs and provisioning.",
+    "correctOptionId": "d",
+    "explanation": "Accurate cross-connect documentation in carrier-neutral facilities is crucial for identifying and managing network connections. It includes details like circuit IDs, demarcation points, and patch assignments to ensure efficient provisioning, troubleshooting, and billing.",
     "distractorExplanations": {
-      "b": "Irrelevant.",
-      "c": "Mechanical data separate.",
-      "d": "Fuel lab separate."
+      "a": "Employee birthdays are personal information and have no relevance to the technical documentation required for cross-connects in a data center. This choice represents a complete misunderstanding of data center operational records.",
+      "b": "Chiller tonnage relates to the cooling capacity of the HVAC system, which is a separate operational metric for the facility. This information is not part of cross-connect documentation, which focuses on network connectivity.",
+      "c": "Diesel viscosity is a characteristic of fuel used for generators, relevant to power infrastructure maintenance. This is entirely unrelated to the documentation of network cross-connects within a carrier-neutral facility."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Halon replacement agents were driven by:",
     "options": [
       {
         "id": "a",
-        "text": "Ozone depletion and environmental regulations"
+        "text": "Desire for more water damage"
       },
       {
         "id": "b",
-        "text": "Desire for more water damage"
+        "text": "Ozone depletion and environmental regulations"
       },
       {
         "id": "c",
@@ -200,56 +199,56 @@
         "text": "Cheaper kitchen use"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Montreal Protocol and regulations phased out Halon.",
+    "correctOptionId": "b",
+    "explanation": "The Montreal Protocol, an international treaty, phased out ozone-depleting substances like Halon, driving the development of environmentally friendlier fire suppression agents. This regulatory action was based on scientific evidence of Halon's harm to the Earth's ozone layer.",
     "distractorExplanations": {
-      "b": "Agents aim to reduce damage.",
-      "c": "Codes strengthened.",
-      "d": "Kitchen unrelated."
+      "a": "Fire suppression agents are designed to minimize damage, including water damage, not to increase it. This choice reflects a misunderstanding of the fundamental purpose of fire suppression systems.",
+      "c": "Environmental concerns led to the strengthening of regulations and the development of new fire codes for safer alternatives, not the elimination of all fire codes. This misconception suggests a rollback of safety standards.",
+      "d": "Halon replacements were driven by environmental concerns for global atmospheric protection, not by a desire for cheaper use in kitchens. This choice incorrectly associates a broad environmental policy with a specific, unrelated application."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Security lighting on perimeters should:",
     "options": [
       {
         "id": "a",
-        "text": "Support camera identification and deter intrusion without blinding sensors"
-      },
-      {
-        "id": "b",
         "text": "Remain off always"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Point only at the sky"
+      },
+      {
+        "id": "c",
+        "text": "Support camera identification and deter intrusion without blinding sensors"
       },
       {
         "id": "d",
         "text": "Replace access badges"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Lighting design integrates with CCTV performance.",
+    "correctOptionId": "c",
+    "explanation": "Perimeter security lighting must be designed to enhance visibility for surveillance cameras, allowing for clear identification of intruders, while also deterring unauthorized access. It's crucial that the lighting does not create glare or shadows that could blind security sensors or cameras.",
     "distractorExplanations": {
-      "b": "Dark sites hinder detection.",
-      "c": "Must illuminate grounds.",
-      "d": "Badges still needed."
+      "a": "Leaving security lighting off always would defeat its purpose, as darkness provides cover for intruders and makes surveillance ineffective. This misconception ignores the basic principles of perimeter security.",
+      "b": "Security lighting must illuminate the grounds and potential approach paths to be effective in deterring and detecting intruders. Pointing lights only at the sky would waste energy and provide no security benefit.",
+      "d": "Security lighting is a visual deterrent and aid to surveillance, whereas access badges are for identity verification and controlled entry. These are distinct security measures that complement each other, not replacements."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Cable pathway separation between power and data reduces:",
     "options": [
       {
         "id": "a",
-        "text": "Electromagnetic interference and safety risk"
+        "text": "Need for any labeling"
       },
       {
         "id": "b",
-        "text": "Need for any labeling"
+        "text": "Electromagnetic interference and safety risk"
       },
       {
         "id": "c",
@@ -260,56 +259,56 @@
         "text": "All bandwidth limits"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Separation distances and crossings per standards limit EMI and faults.",
+    "correctOptionId": "b",
+    "explanation": "Separating power and data cables reduces electromagnetic interference (EMI), which can degrade data signal quality and lead to network errors. It also minimizes safety risks by preventing power surges from affecting sensitive data equipment and adhering to electrical codes.",
     "distractorExplanations": {
-      "b": "Labeling still required.",
-      "c": "Improves compliance.",
-      "d": "Bandwidth limits still exist."
+      "a": "Proper labeling of cables is essential for identification, troubleshooting, and maintenance, regardless of their physical separation. This misconception suggests that separation negates the need for clear organization and documentation.",
+      "c": "Cable pathway separation is often a requirement or best practice that contributes to fire code compliance by reducing potential ignition sources and ensuring safe electrical installations. This choice incorrectly implies it hinders compliance.",
+      "d": "While proper cable management can optimize network performance, separation primarily addresses EMI and safety, not fundamental bandwidth limits of the cabling or network equipment. Bandwidth is determined by the technology itself."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Incident response for forced entry alarms should:",
     "options": [
       {
         "id": "a",
-        "text": "Verify via CCTV, dispatch guards, and coordinate with law enforcement if needed"
-      },
-      {
-        "id": "b",
         "text": "Ignore all alarms as false"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Shut down all cooling permanently"
+      },
+      {
+        "id": "c",
+        "text": "Verify via CCTV, dispatch guards, and coordinate with law enforcement if needed"
       },
       {
         "id": "d",
         "text": "Publish passwords online"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Playbooks define verification and escalation.",
+    "correctOptionId": "c",
+    "explanation": "Incident response playbooks for forced entry alarms should detail immediate verification steps, such as using CCTV, followed by dispatching security personnel and coordinating with law enforcement as necessary. This structured approach ensures a rapid and appropriate reaction to potential security breaches.",
     "distractorExplanations": {
-      "b": "Alarms must be investigated.",
-      "c": "Cooling unrelated unless fire.",
-      "d": "Credential disclosure forbidden."
+      "a": "Ignoring alarms, especially those indicating forced entry, is a critical security failure that leaves the facility vulnerable to theft, damage, or other malicious activities. All alarms must be investigated promptly and thoroughly.",
+      "b": "Shutting down cooling systems is an inappropriate response to a forced entry alarm, as it could lead to equipment overheating and damage, which is unrelated to the security incident unless a fire is also detected. Cooling systems are primarily for thermal management.",
+      "d": "Publishing passwords online is a severe security breach that would compromise all systems and data, making the facility highly vulnerable to cyberattacks. This action directly contradicts fundamental security practices."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Fire drill frequency in occupied facilities follows:",
     "options": [
       {
         "id": "a",
-        "text": "Local life safety codes and operator policy"
+        "text": "Never required"
       },
       {
         "id": "b",
-        "text": "Never required"
+        "text": "Local life safety codes and operator policy"
       },
       {
         "id": "c",
@@ -320,26 +319,26 @@
         "text": "Random social media votes"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Regulations mandate periodic drills and documentation.",
+    "correctOptionId": "b",
+    "explanation": "The frequency of fire drills in occupied facilities is determined by local life safety codes and the organization's specific operational policies. These regulations ensure that occupants are regularly trained on evacuation procedures and emergency responses, promoting safety and compliance.",
     "distractorExplanations": {
-      "b": "Drills typically required.",
-      "c": "Patching unrelated.",
-      "d": "Not governance method."
+      "a": "Fire drills are almost universally required by safety regulations and codes to ensure occupant preparedness and facility safety during an emergency. Claiming they are never required is a dangerous misconception.",
+      "c": "The timing of IT patches and software deployments is unrelated to the mandatory schedule for fire drills. Fire drills are governed by safety regulations, not IT maintenance cycles.",
+      "d": "Relying on random social media votes for critical safety procedures like fire drill frequency is entirely inappropriate and non-compliant with established governance and safety standards. Safety protocols are based on expert guidelines and regulations."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Rack-level PDU network ports security requires:",
     "options": [
       {
         "id": "a",
-        "text": "Changing default credentials and network segmentation"
+        "text": "Publishing admin passwords on wiki"
       },
       {
         "id": "b",
-        "text": "Publishing admin passwords on wiki"
+        "text": "Changing default credentials and network segmentation"
       },
       {
         "id": "c",
@@ -350,26 +349,26 @@
         "text": "Disabling logs"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Out-of-band management must be hardened like production gear.",
+    "correctOptionId": "b",
+    "explanation": "Securing rack-level PDU network ports requires changing default credentials immediately upon installation and implementing network segmentation to isolate management interfaces from general network traffic. These measures prevent unauthorized access and reduce the attack surface for critical infrastructure components.",
     "distractorExplanations": {
-      "b": "Credential exposure is critical risk.",
-      "c": "Telnet insecure.",
-      "d": "Logs needed for audit."
+      "a": "Publishing administrative passwords, even on an internal wiki, significantly increases the risk of unauthorized access and compromise, especially if the wiki itself is not perfectly secured. Credential exposure is a critical security vulnerability.",
+      "c": "Leaving Telnet open to the internet is a major security flaw because Telnet transmits data, including login credentials, in plaintext, making it vulnerable to eavesdropping and unauthorized access. Secure protocols like SSH should be used instead.",
+      "d": "Disabling logs for network devices like PDUs prevents the ability to monitor for suspicious activity, troubleshoot issues, or conduct forensic analysis after a security incident. Logs are essential for audit trails and security monitoring."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Optical time-domain reflectometer (OTDR) testing is used to:",
     "options": [
       {
         "id": "a",
-        "text": "Locate fiber breaks, bends, and splice loss"
+        "text": "Measure UPS battery impedance"
       },
       {
         "id": "b",
-        "text": "Measure UPS battery impedance"
+        "text": "Locate fiber breaks, bends, and splice loss"
       },
       {
         "id": "c",
@@ -380,86 +379,86 @@
         "text": "Calibrate humidifiers"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "OTDR traces show distance to faults on fiber spans.",
+    "correctOptionId": "b",
+    "explanation": "An Optical Time-Domain Reflectometer (OTDR) is a specialized instrument used to characterize optical fiber by injecting light pulses and measuring the reflected signal. This allows for precise location of faults such as breaks, excessive bends, and splice losses along the fiber optic cable, which is crucial for network maintenance.",
     "distractorExplanations": {
-      "b": "Battery test separate.",
-      "c": "Fuel lab separate.",
-      "d": "HVAC separate."
+      "a": "Measuring UPS battery impedance is a function of battery testing equipment, not an OTDR. Battery impedance tests assess the health and remaining capacity of UPS batteries, which is a separate maintenance task.",
+      "c": "Testing diesel cetane levels is a fuel quality analysis performed in a laboratory setting to determine the ignition quality of diesel fuel, which is unrelated to fiber optic cable testing. This is a function of fuel management.",
+      "d": "Calibrating humidifiers is a task related to HVAC system maintenance, ensuring proper environmental control within a facility. This process involves adjusting sensors and controls, which is entirely distinct from fiber optic testing."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Clean agent room integrity fan test verifies:",
     "options": [
       {
         "id": "a",
-        "text": "Envelope tightness to hold design agent concentration"
-      },
-      {
-        "id": "b",
         "text": "Only paint gloss"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Cafeteria taste tests"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Patch cable color"
+      },
+      {
+        "id": "d",
+        "text": "Envelope tightness to hold design agent concentration"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Door damper and construction leakage affect suppression effectiveness.",
+    "correctOptionId": "d",
+    "explanation": "A clean agent room integrity fan test, often called a 'door fan test,' verifies the tightness of a room's envelope to ensure it can effectively hold the design concentration of a clean agent fire suppression system for the required duration. This test is critical for confirming the system's ability to extinguish fires by preventing agent leakage.",
     "distractorExplanations": {
-      "b": "Cosmetic.",
-      "c": "Irrelevant.",
-      "d": "Color minor."
+      "a": "Paint gloss is a cosmetic characteristic and has no bearing on the structural integrity or sealing capabilities of a room for fire suppression purposes. The test focuses on air leakage, not surface finish.",
+      "b": "Cafeteria taste tests are entirely unrelated to the technical assessment of a room's integrity for fire suppression systems. This option represents a completely irrelevant activity.",
+      "c": "Patch cable color is a minor organizational detail for cable management and has no impact on the airtightness or integrity of a room's physical structure. The test is concerned with sealing, not aesthetics or cabling."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Defense in depth for cybersecurity in facilities includes:",
     "options": [
       {
         "id": "a",
-        "text": "Physical controls, network segmentation, and monitoring layered together"
-      },
-      {
-        "id": "b",
         "text": "Single password for all systems"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Unpatched firmware always"
+      },
+      {
+        "id": "c",
+        "text": "Physical controls, network segmentation, and monitoring layered together"
       },
       {
         "id": "d",
         "text": "Open management VLAN to public internet"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Multiple layers limit compromise spread.",
+    "correctOptionId": "c",
+    "explanation": "Defense in depth for cybersecurity in facilities involves implementing multiple layers of security controls, including physical security measures, network segmentation, and continuous monitoring. This layered approach ensures that if one control fails, others are in place to prevent or detect a breach, limiting the spread of compromise.",
     "distractorExplanations": {
-      "b": "Shared passwords fail depth.",
-      "c": "Patching required.",
-      "d": "Exposure unacceptable."
+      "a": "Using a single password for all systems creates a single point of failure, making the entire infrastructure vulnerable if that one password is compromised. This practice directly undermines the principle of defense in depth.",
+      "b": "Consistently leaving firmware unpatched exposes systems to known vulnerabilities that attackers can exploit. Regular patching is a fundamental security practice to address security flaws and maintain system integrity.",
+      "d": "Exposing a management VLAN to the public internet creates a direct and highly dangerous pathway for attackers to access critical infrastructure controls. Management networks should always be isolated and protected from external access."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Smoke detector spacing in data halls follows:",
     "options": [
       {
         "id": "a",
-        "text": "Engineered layout per ceiling height, airflow, and code"
+        "text": "One detector for entire campus"
       },
       {
         "id": "b",
-        "text": "One detector for entire campus"
+        "text": "Engineered layout per ceiling height, airflow, and code"
       },
       {
         "id": "c",
@@ -470,17 +469,17 @@
         "text": "Placement inside sealed racks only"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Air movement and ceiling geometry affect detector performance.",
+    "correctOptionId": "b",
+    "explanation": "Smoke detector spacing in data halls is not arbitrary; it must be engineered based on ceiling height, airflow patterns, and local fire codes to ensure effective and timely smoke detection. Air movement and ceiling geometry significantly affect how smoke travels and where detectors should be placed for optimal performance.",
     "distractorExplanations": {
-      "b": "Multiple detectors required.",
-      "c": "Listed equipment required.",
-      "d": "Room-level detection still needed."
+      "a": "Believing that a single detector can cover an entire campus overlooks the vast area and diverse environments involved, which would render it ineffective for localized fire detection. Multiple detectors are always required to adequately cover different zones and buildings.",
+      "c": "Relying solely on visual inspection by untrained personnel like interns for fire safety is a critical oversight, as fire detection systems require specialized, listed equipment and professional design. This approach neglects the need for automated, reliable detection.",
+      "d": "Placing smoke detectors only inside sealed racks ignores the risk of fires originating outside equipment racks or spreading within the data hall environment. Room-level detection is crucial to identify fires that may not be confined to a single rack."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Guard force contract SLAs should define:",
     "options": [
       {
@@ -501,252 +500,253 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Measurable SLAs align security service with risk.",
+    "explanation": "Guard force Service Level Agreements (SLAs) must clearly define measurable performance metrics such as response times, patrol frequency, and detailed escalation procedures to ensure security services align with risk. Measurable SLAs are essential for holding the security provider accountable and ensuring effective protection.",
     "distractorExplanations": {
-      "b": "Cosmetic only insufficient.",
-      "c": "Irrelevant.",
-      "d": "Dev standards separate."
+      "b": "Focusing only on cosmetic details like uniform color in an SLA is insufficient and fails to address the core security functions and performance expectations. An effective SLA must define operational parameters, not just superficial aspects.",
+      "c": "Including menu options in a guard force SLA is irrelevant to security operations and indicates a misunderstanding of what constitutes a service level agreement for security services. SLAs should focus on security-related performance.",
+      "d": "Defining software coding standards in a guard force SLA is inappropriate, as these are technical specifications for software development, not for physical security services. Development standards are separate from security operational agreements."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Fiber diversity between buildings on a campus uses:",
     "options": [
       {
         "id": "a",
-        "text": "Geographically separated routes and entrance facilities"
-      },
-      {
-        "id": "b",
         "text": "One shared trench always"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Copper POTS only"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "No redundancy"
+      },
+      {
+        "id": "d",
+        "text": "Geographically separated routes and entrance facilities"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Separate paths protect against construction damage.",
+    "correctOptionId": "d",
+    "explanation": "To achieve fiber diversity between buildings on a campus, it is crucial to use geographically separated routes and distinct entrance facilities for fiber optic cables. This strategy protects against a single point of failure, such as construction damage or natural disaster, by ensuring that if one path is compromised, the other remains operational.",
     "distractorExplanations": {
-      "b": "Shared trench is single failure point.",
-      "c": "Modern backbone is fiber.",
-      "d": "Redundancy often required."
+      "a": "Using one shared trench for all fiber optic cables creates a single point of failure, meaning that any damage to that trench would disrupt all connectivity. This approach negates the purpose of diversity and redundancy.",
+      "b": "Relying solely on copper POTS (Plain Old Telephone Service) for campus backbone connectivity is outdated and insufficient for modern data center requirements, which demand high-bandwidth fiber optic networks. Modern backbones are fiber-based.",
+      "c": "Assuming no redundancy is needed for critical fiber connections between buildings is a high-risk approach that leaves the campus vulnerable to complete network outages from a single incident. Redundancy is often a mandatory requirement for business continuity."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Suppression system impairment procedures require:",
     "options": [
       {
         "id": "a",
-        "text": "Fire watch, notifications, and expedited repair when systems are down"
-      },
-      {
-        "id": "b",
         "text": "Ignoring impairments"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Disabling egress"
+      },
+      {
+        "id": "c",
+        "text": "Fire watch, notifications, and expedited repair when systems are down"
       },
       {
         "id": "d",
         "text": "Removing extinguishers"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Impaired protection needs compensatory measures.",
+    "correctOptionId": "c",
+    "explanation": "When a suppression system is impaired, robust procedures are required, including implementing a fire watch, notifying all relevant personnel, and expediting repairs to minimize the period of vulnerability. Impaired protection systems necessitate compensatory measures to maintain an acceptable level of safety until full functionality is restored.",
     "distractorExplanations": {
-      "b": "Impairments are high risk.",
-      "c": "Egress must work.",
-      "d": "Extinguishers supplement."
+      "a": "Ignoring impairments to a suppression system is a critical safety violation that leaves the facility highly vulnerable to fire damage and potential loss of life. Impairments represent a significant increase in risk that must be addressed immediately.",
+      "b": "Disabling egress routes during a suppression system impairment is extremely dangerous and violates fire safety regulations, as it prevents occupants from safely evacuating during an emergency. Egress paths must always remain clear and functional.",
+      "d": "Removing fire extinguishers when a suppression system is impaired is counterproductive and eliminates a crucial first line of defense against small fires. Extinguishers supplement fixed suppression systems and are vital for immediate response."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Network cable bend radius violation causes:",
     "options": [
       {
         "id": "a",
-        "text": "Increased attenuation and potential fiber breakage"
-      },
-      {
-        "id": "b",
         "text": "Improved latency always"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Higher PUE automatically"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Better cooling airflow"
+      },
+      {
+        "id": "d",
+        "text": "Increased attenuation and potential fiber breakage"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Tight bends damage cladding and increase loss.",
+    "correctOptionId": "d",
+    "explanation": "Violating the network cable bend radius, especially for fiber optic cables, can cause increased signal attenuation and potentially lead to fiber breakage. Tight bends stress the cable, causing light to escape the fiber core and reducing signal strength, which can degrade network performance or cause complete failure.",
     "distractorExplanations": {
-      "b": "Latency not improved.",
-      "c": "PUE unrelated.",
-      "d": "Cooling unrelated."
+      "a": "The belief that violating bend radius improves latency is incorrect; in fact, signal degradation from tight bends can lead to retransmissions and increased latency. Latency is not improved by damaging cables.",
+      "b": "A cable bend radius violation has no direct impact on Power Usage Effectiveness (PUE), which is a metric for data center energy efficiency. PUE is unrelated to the physical integrity of network cables.",
+      "c": "Violating the bend radius of network cables does not improve cooling airflow; instead, poorly managed cabling can obstruct airflow and negatively impact cooling efficiency. Cable management is key to maintaining proper airflow."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Security badges should be:",
     "options": [
       {
         "id": "a",
-        "text": "Revoked promptly on termination and reported if lost"
-      },
-      {
-        "id": "b",
         "text": "Shared among team for convenience"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Left unencrypted on open shelves"
+      },
+      {
+        "id": "c",
+        "text": "Revoked promptly on termination and reported if lost"
       },
       {
         "id": "d",
         "text": "Never audited"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Credential lifecycle prevents unauthorized access.",
+    "correctOptionId": "c",
+    "explanation": "Security badges must be promptly revoked upon employee termination and reported immediately if lost to prevent unauthorized access to facilities. A robust credential lifecycle management process is essential to maintain security and prevent former employees or unauthorized individuals from gaining entry.",
     "distractorExplanations": {
-      "b": "Sharing breaks accountability.",
-      "c": "Physical control required.",
-      "d": "Audits detect orphans."
+      "a": "Sharing security badges among a team for convenience undermines individual accountability and creates significant security vulnerabilities, as it becomes impossible to track who accessed what areas. Sharing badges breaks the chain of accountability.",
+      "b": "Leaving security badges unencrypted on open shelves is a severe security lapse that makes them easily accessible to unauthorized individuals, compromising physical access control. Physical control and secure storage are paramount for badges.",
+      "d": "Never auditing security badges allows for the accumulation of inactive or lost credentials, creating potential backdoors for unauthorized access over time. Regular audits are crucial for detecting and rectifying such vulnerabilities."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Fire stopping inspection during construction verifies:",
     "options": [
       {
         "id": "a",
-        "text": "Penetrations match approved firestop submittals"
-      },
-      {
-        "id": "b",
         "text": "Only paint color"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Fiber speed tests only"
+      },
+      {
+        "id": "c",
+        "text": "Penetrations match approved firestop submittals"
       },
       {
         "id": "d",
         "text": "Cafeteria hours"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Inspections ensure rated assemblies perform as designed.",
+    "correctOptionId": "c",
+    "explanation": "Fire stopping inspections during construction are critical to verify that all penetrations through fire-rated barriers are sealed according to approved firestop submittals, ensuring the fire resistance rating of the assembly is maintained.",
     "distractorExplanations": {
-      "b": "Cosmetic insufficient.",
-      "c": "Fiber tests separate phase.",
-      "d": "Irrelevant."
+      "a": "Focusing solely on paint color during a fire stopping inspection is a misconception, as the cosmetic appearance does not indicate the functional integrity or code compliance of firestop materials.",
+      "b": "Fiber speed tests are part of network commissioning and are unrelated to fire stopping inspections, which focus on the physical integrity and code compliance of fire-rated barriers.",
+      "d": "Cafeteria hours are entirely irrelevant to fire stopping inspections, which are a critical safety and compliance check for the building's fire protection systems."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Carrier demarcation point is where:",
     "options": [
       {
         "id": "a",
-        "text": "Provider network ends and customer responsibility begins"
-      },
-      {
-        "id": "b",
         "text": "UPS batteries start"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Chillers connect to towers"
+      },
+      {
+        "id": "c",
+        "text": "Provider network ends and customer responsibility begins"
       },
       {
         "id": "d",
         "text": "Humidifiers start"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Demarc defines handoff for testing and fault isolation.",
+    "correctOptionId": "c",
+    "explanation": "The carrier demarcation point is the precise location where the telecommunications provider's network responsibility ends and the customer's responsibility for their internal network infrastructure begins, defining the handoff for service and fault isolation.",
     "distractorExplanations": {
-      "b": "Electrical domain.",
-      "c": "Mechanical domain.",
-      "d": "HVAC domain."
+      "a": "The starting point of UPS batteries is part of the electrical power infrastructure, which is a separate domain from the carrier's telecommunications network demarcation point.",
+      "b": "The connection point of chillers to cooling towers is a component of the mechanical HVAC system, which is unrelated to the carrier's network demarcation.",
+      "d": "The starting point of humidifiers is part of the environmental control system (HVAC), which is a separate operational domain from the carrier's network demarcation."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Integrated security dashboards help operators:",
     "options": [
       {
         "id": "a",
-        "text": "Correlate alarms and reduce mean time to investigate"
-      },
-      {
-        "id": "b",
         "text": "Delete all logs automatically"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Disable cameras"
+      },
+      {
+        "id": "c",
+        "text": "Correlate alarms and reduce mean time to investigate"
       },
       {
         "id": "d",
         "text": "Avoid training"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Unified views speed triage across systems.",
+    "correctOptionId": "c",
+    "explanation": "Integrated security dashboards help operators by providing a unified view of various security systems, enabling them to quickly correlate alarms, identify patterns, and significantly reduce the mean time to investigate security incidents.",
     "distractorExplanations": {
-      "b": "Logs needed for forensics.",
-      "c": "Cameras essential.",
-      "d": "Training still required."
+      "a": "Automatically deleting all logs is a dangerous misconception, as logs are crucial for forensic analysis, auditing, and understanding security incidents after they occur.",
+      "b": "Disabling cameras is counterproductive to security; integrated dashboards are designed to enhance surveillance and monitoring, not to compromise it.",
+      "d": "The idea that integrated dashboards eliminate the need for training is a misconception; operators still require training to effectively use and interpret the data presented by these complex systems."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Annual fire system inspection by qualified vendors ensures:",
     "options": [
       {
         "id": "a",
-        "text": "Detection/suppression components function per code and design"
-      },
-      {
-        "id": "b",
         "text": "Only lobby plants watered"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Software compile success"
+      },
+      {
+        "id": "c",
+        "text": "Detection/suppression components function per code and design"
       },
       {
         "id": "d",
         "text": "Rack paint touch-up"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Licensed inspection maintains life safety readiness.",
+    "correctOptionId": "c",
+    "explanation": "Annual fire system inspections by qualified vendors are essential to ensure that all fire detection and suppression components are functioning correctly, in compliance with applicable codes and the original design specifications, maintaining life safety readiness.",
     "distractorExplanations": {
-      "b": "Irrelevant task.",
-      "c": "IT build unrelated.",
-      "d": "Cosmetic unrelated."
+      "a": "Watering lobby plants is a facilities management task and has no relevance to the critical safety function of an annual fire system inspection.",
+      "b": "Software compile success relates to IT development and deployment, which is entirely unrelated to the physical inspection and maintenance of fire safety systems.",
+      "d": "Rack paint touch-up is a cosmetic maintenance task and does not contribute to the functional integrity or code compliance verified during a fire system inspection."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   }
 ]

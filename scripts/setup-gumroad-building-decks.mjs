@@ -88,12 +88,18 @@ function runGumroad(args, { dryRun = false } = {}) {
 }
 
 async function loadDeckMeta() {
-  const configs = await import("../src/lib/mock-exams/configs.ts");
+  // Avoid importing configs.ts under plain node (extensionless TS paths break).
   const specs = loadSpecs();
   const titles = Object.fromEntries(
     Object.entries(specs).map(([slug, spec]) => [slug, spec.gumroadName]),
   );
-  return { getAllMockExams: configs.getAllMockExams, titles };
+  function getAllMockExams() {
+    return Object.values(specs).map((spec) => ({
+      slug: spec.mockSlug,
+      linkedDeckSlug: spec.deckSlug,
+    }));
+  }
+  return { getAllMockExams, titles };
 }
 
 /** Minimal HTML fallback on create. Prefer `python3 scripts/polish-building-gumroad.py` afterward for exam context + FAQ + samples. */

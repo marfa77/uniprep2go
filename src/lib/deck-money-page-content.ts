@@ -213,6 +213,21 @@ export const positioningOverrides: Partial<
 };
 
 const uniqueContentBySlug: Partial<Record<string, string>> = {
+  "cdcp-anki-deck": `### What is inside
+
+250 MCQ cards across the EXIN EPI CDCP facility and operations blueprint: site/standards/building, power & EMF, cooling/water/thermal, fire/security/network, and data-centre operations. Every card has a correct explanation plus short notes on why the other three options fail — the same bank that feeds the free timed readiness check.
+
+### 3–4 week study plan with the free mock
+
+**Week 1:** 20 new cards/day across power and cooling while you finish EPI course registration. **Week 2:** Keep 15–20 new cards/day and add fire/security. **Week 3:** Sit the [free 40-question CDCP readiness check](/mock-exams/cdcp-readiness-check) (60 minutes, 68% target). **Final days:** Review-only Anki on weak topics from the report — do not dump new cards the night before the accredited-course exam sitting.
+
+### Pitfalls this deck targets
+
+Candidates confuse CRAH vs CRAC, mix UPS topology tiers with marketing “N+1” claims, and forget that high RH causes condensation while low RH raises ESD risk. Cards force the facility distinction under timed recall, not brochure definitions.
+
+### What this does not replace
+
+Accredited EPI CDCP training is mandatory on the official exam path. This deck is independent spaced-repetition drill — not EXIN or EPI exam material.`,
   "cfa-level-1-anki-deck": `### What is inside
 
 The deck spans all 10 CFA Level 1 topic areas in the coverage table. Quantitative Methods cards drill TVM, probability, hypothesis testing, and regression output interpretation. Financial Statement Analysis covers ratio families (liquidity, activity, solvency, profitability), inventory methods, and cash-flow linkages. Fixed Income and Derivatives cards include duration, convexity, forward/futures pricing, and option payoff diagrams. Ethics cards use the Code and Standards framing the exam repeats every sitting.

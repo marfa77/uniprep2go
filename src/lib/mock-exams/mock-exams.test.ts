@@ -242,7 +242,10 @@ describe("mock exam configs", () => {
     ] as const) {
       expect(getMockExamConfig(slug)?.status, slug).toBe("live");
       expect(getMockExamConfig(slug)?.linkedDeckSlug, slug).toBe(deckSlug);
-      expect(getDeckBySlug(deckSlug)?.status, deckSlug).toBe("planned");
+      // Luxembourg is force-launched; other Nordic/Benelux decks stay planned waitlists.
+      const expectedDeckStatus =
+        deckSlug === "luxembourg-vivre-ensemble-anki-deck" ? "available" : "planned";
+      expect(getDeckBySlug(deckSlug)?.status, deckSlug).toBe(expectedDeckStatus);
       expect(isMockExamRunnable(slug), slug).toBe(true);
       const { questions, errors } = getQuestionBankForExam(slug);
       expect(errors, slug).toEqual([]);
@@ -852,6 +855,9 @@ describe("llm visibility", () => {
     expect(buildMockExamFacts(ashrae).runnable).toBe(true);
 
     const cdcp = getMockExamConfig("cdcp-readiness-check")!;
+    expect(cdcp.questionCount).toBe(40);
+    expect(cdcp.durationMinutes).toBe(60);
+    expect(cdcp.topics.reduce((sum, topic) => sum + (topic.questionCount ?? 0), 0)).toBe(40);
     expect(buildMockExamMarkdown(cdcp)).toContain("Certified Data Centre Professional");
     expect(buildMockExamMarkdown(cdcp)).toContain("68%");
     expect(buildMockExamFacts(cdcp).runnable).toBe(true);

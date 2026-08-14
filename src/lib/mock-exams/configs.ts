@@ -1342,7 +1342,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     linkedDeckSlug: "cdcp-anki-deck",
     status: "live",
     accessMode: "free_demand_test",
-    durationMinutes: 50,
+    durationMinutes: 60,
     questionCount: 40,
     passRule: {
       type: "readiness_check",

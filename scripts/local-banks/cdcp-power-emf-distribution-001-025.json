@@ -1,75 +1,74 @@
 [
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Power Usage Effectiveness (PUE) is calculated as:",
     "options": [
       {
         "id": "a",
-        "text": "Total facility energy divided by IT equipment energy"
-      },
-      {
-        "id": "b",
         "text": "IT equipment energy divided by total facility energy"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Cooling energy only divided by UPS losses"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Generator fuel gallons divided by rack count"
+      },
+      {
+        "id": "d",
+        "text": "Total facility energy divided by IT equipment energy"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "PUE compares all facility energy to energy delivered to IT load; values closer to 1.0 indicate higher efficiency.",
+    "correctOptionId": "d",
+    "explanation": "Power Usage Effectiveness (PUE) is a metric that evaluates the energy efficiency of a data center by comparing the total energy consumed by the facility to the energy used by the IT equipment. A lower PUE value, closer to 1.0, indicates higher energy efficiency, meaning less energy is wasted on non-IT loads like cooling and lighting.",
     "distractorExplanations": {
-      "b": "This inverts the formula (that ratio is sometimes called DCiE).",
-      "c": "PUE includes all facility loads, not cooling alone.",
-      "d": "Fuel volume is not the PUE definition."
+      "a": "This describes the inverse of PUE, sometimes referred to as Data Center infrastructure Efficiency (DCiE). While related, PUE specifically focuses on the total facility energy relative to the IT load, not the other way around.",
+      "b": "PUE considers all energy consumed by the data center facility, including cooling, lighting, and other infrastructure, not just cooling energy or UPS losses in isolation. Focusing only on these components would provide an incomplete and inaccurate measure of overall efficiency.",
+      "c": "PUE is a ratio of energy consumption, not a measure involving fuel volume or rack count. While generators provide power to the facility, their fuel consumption is not a direct component of the PUE calculation, nor is the number of racks."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "A 2N UPS configuration at the module level means:",
     "options": [
       {
         "id": "a",
-        "text": "Two independent UPS systems each capable of carrying the full load"
-      },
-      {
-        "id": "b",
         "text": "One UPS with extra batteries only"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Two UPS modules each sized to 50% with no independence"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "A single rectifier with two display panels"
+      },
+      {
+        "id": "d",
+        "text": "Two independent UPS systems each capable of carrying the full load"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "2N provides full redundancy—either path can support the entire load independently.",
+    "correctOptionId": "d",
+    "explanation": "A 2N UPS configuration signifies a fully redundant system where there are two independent UPS systems, each capable of supporting the entire critical load on its own. This design ensures that if one UPS system fails, the other can seamlessly take over, providing maximum uptime and fault tolerance.",
     "distractorExplanations": {
-      "b": "Extra batteries on one system is N+1 battery strings, not 2N UPS.",
-      "c": "50% modules without independence is N+1, not 2N.",
-      "d": "Displays do not create redundancy."
+      "a": "Adding extra batteries to a single UPS system provides extended runtime but does not create a 2N configuration. This would typically be considered an N+1 battery string configuration, which enhances battery autonomy but not the redundancy of the UPS modules themselves.",
+      "b": "This describes an N+1 configuration, where there is one extra module beyond what is strictly required to meet the load. In a 2N setup, each of the two systems is independently capable of handling the full load, offering a higher level of redundancy than two 50% modules without independence.",
+      "c": "A single rectifier with two display panels does not provide any redundancy for the power path. Display panels are for monitoring and control, not for power delivery or fault tolerance, and do not contribute to a 2N configuration."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "An automatic transfer switch (ATS) between utility and generator:",
     "options": [
       {
         "id": "a",
-        "text": "Detects utility failure and starts generator transfer within designed time limits"
+        "text": "Replaces the need for any UPS"
       },
       {
         "id": "b",
-        "text": "Replaces the need for any UPS"
+        "text": "Detects utility failure and starts generator transfer within designed time limits"
       },
       {
         "id": "c",
@@ -80,107 +79,107 @@
         "text": "Eliminates grounding requirements"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "ATS logic initiates engine start and transfers load to emergency power on outage.",
+    "correctOptionId": "b",
+    "explanation": "An Automatic Transfer Switch (ATS) is a critical component in power distribution that automatically detects a loss of utility power and initiates the startup sequence for a backup generator. Once the generator is stable, the ATS transfers the electrical load from the utility to the generator within designed time limits, ensuring continuous power supply to critical systems.",
     "distractorExplanations": {
-      "b": "UPS still bridges transfer and provides ride-through for sensitive loads.",
-      "c": "ATS is electrical switching, not IT patching.",
-      "d": "Grounding remains mandatory."
+      "a": "An ATS manages the transfer between primary and backup power sources but does not replace the need for a UPS. A UPS provides instantaneous power during the brief transfer period and conditions power, which an ATS cannot do.",
+      "c": "An ATS is an electrical device designed for power switching and monitoring, not for managing or synchronizing IT software patches. Software management is a function of IT operations and network infrastructure.",
+      "d": "Grounding is a fundamental safety requirement in all electrical installations, including those with ATS and generators, to protect equipment and personnel from electrical faults. An ATS does not eliminate or reduce these essential grounding requirements."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Static transfer switch (STS) at rack or row level is used to:",
     "options": [
       {
         "id": "a",
-        "text": "Transfer between two AC sources in milliseconds to maintain dual-fed equipment uptime"
-      },
-      {
-        "id": "b",
         "text": "Convert DC to fiber optic signals"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Measure humidity only"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Replace diesel generators"
+      },
+      {
+        "id": "d",
+        "text": "Transfer between two AC sources in milliseconds to maintain dual-fed equipment uptime"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "STS enables fast A/B source switching for dual-corded IT equipment.",
+    "correctOptionId": "d",
+    "explanation": "A Static Transfer Switch (STS) is an electronic device that can rapidly switch between two independent AC power sources, typically within milliseconds, to maintain continuous power to dual-fed equipment. This fast transfer capability is crucial for sensitive IT equipment that cannot tolerate even momentary power interruptions, ensuring high availability at the rack or row level.",
     "distractorExplanations": {
-      "b": "STS is AC power switching, not media conversion.",
-      "c": "Humidity is environmental monitoring.",
-      "d": "Generators provide long-duration backup, not rack STS."
+      "a": "An STS is designed for high-speed electrical power switching between AC sources, not for converting DC power to fiber optic signals. Media conversion is performed by specialized network equipment, not by an STS.",
+      "b": "An STS is a power management device, not an environmental sensor. Measuring humidity is a function of environmental monitoring systems, which are separate from power distribution components.",
+      "c": "An STS provides rapid source switching for individual racks or rows and does not replace the need for large-scale backup power sources like diesel generators. Generators provide long-duration power during extended utility outages, a function entirely different from an STS."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Harmonic distortion from non-linear IT loads can cause:",
     "options": [
       {
         "id": "a",
-        "text": "Transformer heating, neutral conductor overload, and nuisance breaker trips"
-      },
-      {
-        "id": "b",
         "text": "Improved power factor without side effects"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Automatic elimination of UPS losses"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Increased power quality with no mitigation needed"
+      },
+      {
+        "id": "d",
+        "text": "Transformer heating, neutral conductor overload, and nuisance breaker trips"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Harmonics increase heating and may require filters or K-rated transformers.",
+    "correctOptionId": "d",
+    "explanation": "Non-linear IT loads, such as switch-mode power supplies found in servers and other data center equipment, draw current in non-sinusoidal waveforms, leading to harmonic distortion. This distortion can cause significant problems in the electrical distribution system, including overheating of transformers, overloading of neutral conductors, and nuisance tripping of circuit breakers, all of which can compromise system reliability and efficiency.",
     "distractorExplanations": {
-      "b": "Non-linear loads typically worsen power factor and harmonics.",
-      "c": "UPS losses remain.",
-      "d": "Mitigation is often needed in dense IT loads."
+      "a": "Harmonic distortion from non-linear loads typically degrades the power factor, making the electrical system less efficient, rather than improving it. It also introduces negative side effects like increased heat and potential equipment damage.",
+      "b": "Harmonic distortion is a power quality issue related to the waveform of current drawn by loads, and it does not automatically eliminate UPS losses. UPS systems have their own inherent efficiency losses, which are separate from harmonic issues.",
+      "c": "Harmonic distortion is a form of power quality degradation, not an improvement. In environments with significant non-linear loads, mitigation techniques such as harmonic filters or K-rated transformers are often necessary to manage these issues and maintain system reliability."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "N+1 redundancy in a UPS plant means:",
     "options": [
       {
         "id": "a",
-        "text": "One additional module beyond what is required to support the load"
-      },
-      {
-        "id": "b",
         "text": "No spare capacity under any failure"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Twice the load capacity with both paths always loaded 100%"
+      },
+      {
+        "id": "c",
+        "text": "One additional module beyond what is required to support the load"
       },
       {
         "id": "d",
         "text": "Only one PDU in the entire facility"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "N+1 adds one redundant unit so a single failure still leaves N modules to carry load.",
+    "correctOptionId": "c",
+    "explanation": "N+1 redundancy in a UPS plant means that there is one additional module beyond the minimum number required to support the critical load. This configuration provides a level of fault tolerance, as the system can continue to operate at full capacity even if one module fails, ensuring continuous power delivery without interruption.",
     "distractorExplanations": {
-      "b": "N+1 explicitly provides spare capacity.",
-      "c": "2N is full duplication; N+1 is modular spare.",
-      "d": "PDU count is downstream of UPS redundancy."
+      "a": "N+1 redundancy is specifically designed to provide spare capacity, meaning there is always at least one extra module available to take over if another fails. The statement that there is no spare capacity under any failure is incorrect, as that would describe an N (no redundancy) configuration.",
+      "b": "This describes a 2N (or 1+1) configuration, where there are two completely independent systems, each capable of supporting the full load. N+1 provides a single spare module, not a full duplication of the entire load capacity with both paths always loaded at 100%.",
+      "d": "The number of PDUs (Power Distribution Units) in a facility is a separate design consideration from the redundancy level of the UPS plant. N+1 redundancy refers specifically to the UPS modules themselves, not the downstream power distribution equipment."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Lead-acid VRLA batteries in UPS strings require:",
     "options": [
       {
@@ -201,16 +200,16 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "VRLA life is sensitive to temperature and requires proactive replacement planning.",
+    "explanation": "VRLA batteries are sensitive to temperature and require proactive maintenance, including impedance testing and temperature monitoring, to ensure reliability and plan for replacement at the end of their design life. This approach prevents unexpected failures and maintains UPS string integrity.",
     "distractorExplanations": {
-      "b": "Batteries degrade and must be maintained/replaced.",
-      "c": "VRLA are valve-regulated; watering differs from flooded types.",
-      "d": "High temperatures shorten battery life."
+      "b": "This choice reflects a common but dangerous misconception that VRLA batteries are maintenance-free. All batteries degrade over time and require monitoring and eventual replacement to ensure system reliability.",
+      "c": "This choice confuses VRLA (Valve Regulated Lead Acid) batteries with flooded lead-acid cells. VRLA batteries are sealed and do not require daily watering; attempting to water them is incorrect and can damage the battery.",
+      "d": "This choice presents a harmful misconception about battery operation. Operating VRLA batteries above 25°C significantly shortens their lifespan, with higher temperatures drastically accelerating degradation, not improving life."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "A PDU (Power Distribution Unit) at the rack typically provides:",
     "options": [
       {
@@ -231,85 +230,85 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "PDUs distribute power at the rack with monitoring and breaker granularity.",
+    "explanation": "A PDU (Power Distribution Unit) at the rack level is designed to provide granular power distribution, typically including branch circuit breakers and multiple outlets, to feed IT equipment from upstream power sources. This allows for efficient power delivery and protection within the rack.",
     "distractorExplanations": {
-      "b": "Cooling is separate infrastructure.",
-      "c": "Fiber patching is network, not PDU function.",
-      "d": "Suppression agents are stored in fire systems."
+      "b": "This choice misunderstands the primary function of a PDU. While cooling is critical in data centers, chilled water delivery is handled by dedicated cooling infrastructure, not by a PDU, which focuses solely on electrical power distribution.",
+      "c": "This choice confuses power distribution with network connectivity. Fiber patch panels are used for organizing and connecting network cables, which is a completely separate function from a PDU's role in electrical power distribution.",
+      "d": "This choice misattributes a safety system function to a PDU. Fire suppression agents are stored and deployed by specialized fire suppression systems, not by a PDU, which is exclusively for electrical power management."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Intelligent rack PDUs with metering enable:",
     "options": [
       {
         "id": "a",
-        "text": "Per-outlet or per-phase kW tracking for capacity and billing"
-      },
-      {
-        "id": "b",
         "text": "Elimination of all load balancing"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Automatic software coding"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Removal of overcurrent protection"
+      },
+      {
+        "id": "d",
+        "text": "Per-outlet or per-phase kW tracking for capacity and billing"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Metered PDUs support capacity management, chargeback, and alarm thresholds.",
+    "correctOptionId": "d",
+    "explanation": "Intelligent rack PDUs with metering capabilities allow for precise tracking of power consumption (kW) at the per-outlet or per-phase level. This data is crucial for capacity planning, chargeback to departments, and setting alarm thresholds for efficient data center management.",
     "distractorExplanations": {
-      "b": "Load balancing across phases still matters.",
-      "c": "PDUs do not write software.",
-      "d": "Overcurrent protection remains required."
+      "a": "This choice is incorrect because while intelligent PDUs provide data, they do not eliminate the need for proper load balancing across phases. Maintaining balanced loads is still important for system efficiency and preventing overloads on individual phases.",
+      "b": "This choice reflects a misunderstanding of PDU capabilities. Intelligent PDUs provide data and control over power, but they do not perform automatic software coding; that is a function of IT development and deployment, not power hardware.",
+      "c": "This choice is dangerous and incorrect. Overcurrent protection, typically provided by circuit breakers, is a fundamental safety requirement in all electrical systems, including PDUs, and cannot be removed, regardless of metering capabilities."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Three-phase Wye (Y) distribution at 400/230 V is common in EU facilities because:",
     "options": [
       {
         "id": "a",
-        "text": "It provides 230 V line-to-neutral for single-phase loads and 400 V line-to-line for three-phase loads"
-      },
-      {
-        "id": "b",
         "text": "It eliminates the need for grounding"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "It removes all harmonic content"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "It is DC-only distribution"
+      },
+      {
+        "id": "d",
+        "text": "It provides 230 V line-to-neutral for single-phase loads and 400 V line-to-line for three-phase loads"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Wye systems deliver both line-to-line and line-to-neutral voltages for mixed loads.",
+    "correctOptionId": "d",
+    "explanation": "The 400/230 V Wye distribution system is common in EU facilities because it efficiently provides both 230 V line-to-neutral for single-phase loads (like IT equipment) and 400 V line-to-line for three-phase loads (like larger HVAC or UPS units) from a single source. This versatility simplifies power infrastructure.",
     "distractorExplanations": {
-      "b": "Wye includes a neutral and still requires grounding.",
-      "c": "Harmonics still exist with non-linear loads.",
-      "d": "This is AC distribution."
+      "a": "This choice is incorrect and dangerous. All electrical systems, including Wye configurations, require proper grounding for safety and fault protection; it does not eliminate the need for grounding.",
+      "b": "This choice is a misconception about power quality. While Wye systems can help manage some types of harmonics, they do not eliminate all harmonic content, especially with the prevalence of non-linear loads in data centers.",
+      "c": "This choice fundamentally misunderstands the nature of the power system. A 400/230 V Wye distribution is an Alternating Current (AC) system, not a Direct Current (DC) system; it is designed for AC power delivery."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Generator paralleling with utility (islanded operation) requires:",
     "options": [
       {
         "id": "a",
-        "text": "Synchronization of voltage, frequency, and phase angle before closing the paralleling breaker"
+        "text": "Closing breakers randomly without sync checks"
       },
       {
         "id": "b",
-        "text": "Closing breakers randomly without sync checks"
+        "text": "Synchronization of voltage, frequency, and phase angle before closing the paralleling breaker"
       },
       {
         "id": "c",
@@ -320,26 +319,26 @@
         "text": "Operating IT without UPS"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Out-of-phase paralleling can damage equipment; sync checks are mandatory.",
+    "correctOptionId": "b",
+    "explanation": "When paralleling a generator with the utility in islanded operation, precise synchronization of voltage, frequency, and phase angle is critical before closing the paralleling breaker. This ensures a smooth transition without damaging equipment or causing power disturbances.",
     "distractorExplanations": {
-      "b": "Unsynchronized closing causes severe fault currents.",
-      "c": "Grounding schemes must follow code during parallel operation.",
-      "d": "UPS may still protect IT during transitions."
+      "a": "This choice describes a highly dangerous practice. Closing breakers randomly without synchronization checks can lead to severe fault currents, equipment damage, and significant power outages due to the large voltage and phase differences.",
+      "c": "This choice is incorrect and unsafe. Grounding schemes are essential for safety and fault protection and must be maintained according to code, even during generator parallel operation; disconnecting them permanently is hazardous.",
+      "d": "This choice is a poor operational decision. While generators provide backup power, UPS systems are still crucial for protecting sensitive IT equipment from momentary power fluctuations and ensuring continuous operation during the transition to generator power."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Earth grounding and bonding in a data centre aim to:",
     "options": [
       {
         "id": "a",
-        "text": "Maintain equipotential bonding and safe fault current paths"
+        "text": "Float all neutrals without reference"
       },
       {
         "id": "b",
-        "text": "Float all neutrals without reference"
+        "text": "Maintain equipotential bonding and safe fault current paths"
       },
       {
         "id": "c",
@@ -350,47 +349,47 @@
         "text": "Replace surge protective devices"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Effective grounding limits touch potential and supports protective device operation.",
+    "correctOptionId": "b",
+    "explanation": "Earth grounding and bonding in a data center are essential to maintain equipotential bonding, ensuring all conductive surfaces are at the same potential, and to provide safe, low-impedance paths for fault currents. This protects personnel and equipment from electrical hazards.",
     "distractorExplanations": {
-      "b": "Systems require defined ground references.",
-      "c": "Racks bond to the grounding system.",
-      "d": "SPD complement grounding; they do not replace it."
+      "a": "This choice describes a dangerous and non-compliant practice. Electrical systems require a defined ground reference for safety and proper operation; floating all neutrals without reference would create an unstable and hazardous condition.",
+      "c": "This choice is incorrect and unsafe. Racks and IT equipment are typically bonded to the grounding system to ensure they are at the same potential as other conductive surfaces, providing a safe path for fault currents and preventing shock hazards.",
+      "d": "This choice misunderstands the role of grounding. Surge Protective Devices (SPDs) are designed to divert transient overvoltages, complementing the grounding system, but they do not replace the fundamental function of earth grounding and bonding for safety and fault current paths."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "EMF (electromagnetic fields) management near sensitive areas may involve:",
     "options": [
       {
         "id": "a",
-        "text": "Separation distances, shielding, and routing of high-current cables"
-      },
-      {
-        "id": "b",
         "text": "Ignoring cable routing because EMF does not exist"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Placing all power cables on top of unshielded fiber without separation"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Increasing harmonic distortion intentionally"
+      },
+      {
+        "id": "d",
+        "text": "Separation distances, shielding, and routing of high-current cables"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Physical separation and shielding reduce induced noise on signal cabling.",
+    "correctOptionId": "d",
+    "explanation": "EMF management strategies like separation distances, shielding, and careful routing of high-current cables are crucial to mitigate electromagnetic interference, which can disrupt sensitive electronic equipment. These measures reduce induced noise on signal cabling and ensure data integrity.",
     "distractorExplanations": {
-      "b": "EMF is real around current-carrying conductors.",
-      "c": "Poor separation can induce noise on data circuits.",
-      "d": "Harmonics worsen EMI environments."
+      "a": "This choice reflects a fundamental misunderstanding that electromagnetic fields (EMF) are not real. EMFs are an inherent physical phenomenon around any current-carrying conductor and must be managed to prevent interference.",
+      "b": "Placing power cables on top of unshielded fiber without separation is poor practice because it can induce noise and data corruption in the fiber optic cables, even if they are not directly carrying electrical signals.",
+      "c": "Intentionally increasing harmonic distortion is counterproductive to EMF management. Harmonics exacerbate electromagnetic interference (EMI) environments, leading to increased noise and potential equipment malfunction."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "A busway (busbar) distribution system advantages include:",
     "options": [
       {
@@ -411,16 +410,16 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Busway supports scalable tap-offs along the data hall length.",
+    "explanation": "Busway (busbar) distribution systems offer significant advantages in data centers, including flexible tap-off points for easy power distribution to racks and high ampacity to support dense power requirements. This modularity allows for scalable power delivery along the data hall length.",
     "distractorExplanations": {
-      "b": "Busway must comply with electrical codes.",
-      "c": "Coordination studies still apply.",
-      "d": "Busway is industrial/data centre equipment."
+      "b": "This choice is incorrect because all electrical installations, including busway systems, must comply with relevant electrical codes and standards to ensure safety and proper operation. Ignoring codes can lead to hazards and legal issues.",
+      "c": "Overcurrent coordination studies are still necessary for busway systems to ensure that protective devices operate correctly and selectively, isolating faults without unnecessarily tripping upstream breakers. This prevents widespread power outages.",
+      "d": "Busway systems are robust, industrial-grade equipment primarily used in commercial, industrial, and data center environments due to their high power capacity and flexibility, not in residential kitchens."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Transformer step-down from medium voltage to low voltage is used to:",
     "options": [
       {
@@ -441,25 +440,25 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Site transformers adapt utility MV to facility LV distribution.",
+    "explanation": "Transformers step down medium voltage (MV) to low voltage (LV) to deliver utilizable voltage levels to UPS systems and distribution gear closer to the load. This process makes the electrical power safe and compatible with the facility's equipment while minimizing transmission losses over longer distances.",
     "distractorExplanations": {
-      "b": "Rack-level voltages are low voltage standards.",
-      "c": "Transformers have inherent losses.",
-      "d": "Fuel storage is generator-related."
+      "b": "This choice is incorrect because rack-level voltages are typically low voltage standards (e.g., 120V, 208V, 230V, 400V) suitable for IT equipment, not high voltages like 11 kV, which would be unsafe and incompatible.",
+      "c": "Transformers, while efficient, are not perfect and have inherent losses (e.g., core losses, copper losses) during the voltage transformation process. It is impossible to eliminate all losses in any electrical system.",
+      "d": "Transformers are electrical devices used for voltage conversion, whereas diesel storage tanks are part of a generator system used for fuel storage. They serve entirely different functions and are not interchangeable."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Power factor correction capacitors must be applied cautiously in data centres because:",
     "options": [
       {
         "id": "a",
-        "text": "Harmonic resonance with non-linear loads can cause overheating and failures"
+        "text": "Capacitors always destroy UPS systems instantly"
       },
       {
         "id": "b",
-        "text": "Capacitors always destroy UPS systems instantly"
+        "text": "Harmonic resonance with non-linear loads can cause overheating and failures"
       },
       {
         "id": "c",
@@ -470,47 +469,47 @@
         "text": "Capacitors replace batteries in UPS strings"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Engineering studies are needed to avoid resonance with harmonics from IT rectifiers.",
+    "correctOptionId": "b",
+    "explanation": "Power factor correction (PFC) capacitors must be applied cautiously in data centers because the presence of non-linear loads, such as IT equipment rectifiers, can generate harmonics. These harmonics can interact with capacitors, leading to harmonic resonance, which causes overheating and potential failures of electrical components.",
     "distractorExplanations": {
-      "b": "Properly engineered PFC can be beneficial; issues arise with poor design.",
-      "c": "Facilities still have reactive components.",
-      "d": "UPS batteries serve a different function."
+      "a": "This choice is an overgeneralization; properly engineered and installed PFC systems can be beneficial for improving power quality and efficiency. Issues arise from poor design or misapplication, not from capacitors inherently destroying UPS systems.",
+      "c": "Data centers, like most electrical facilities, still have reactive components (e.g., motors, transformers) that contribute to reactive power. While IT loads are primarily resistive, the overall facility still benefits from power factor management.",
+      "d": "Capacitors are used for power factor correction and energy storage in certain applications, but they do not replace batteries in UPS strings. UPS batteries provide critical backup power during outages, a function capacitors cannot fulfill for extended periods."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Dual-corded servers connected to A and B PDUs:",
     "options": [
       {
         "id": "a",
-        "text": "Allow maintenance on one power path while the other feeds the load"
-      },
-      {
-        "id": "b",
         "text": "Require both cords on the same breaker"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Disable redundant power supplies internally"
+      },
+      {
+        "id": "c",
+        "text": "Allow maintenance on one power path while the other feeds the load"
       },
       {
         "id": "d",
         "text": "Must share one STS output"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Dual cords align with A/B feeds for concurrent maintenance and failover.",
+    "correctOptionId": "c",
+    "explanation": "Dual-corded servers connected to independent A and B PDUs are a fundamental design for redundancy in data centers. This configuration allows for concurrent maintenance on one power path without interrupting the server's operation, as the other path continues to feed the load, ensuring high availability and failover capability.",
     "distractorExplanations": {
-      "b": "Same breaker defeats redundancy.",
-      "c": "Dual PSU servers use both inputs for redundancy.",
-      "d": "Separate feeds should remain independent unless STS design intends switching."
+      "a": "Connecting both cords to the same breaker or power source defeats the purpose of redundancy. If that single breaker trips, the server loses all power, eliminating the benefit of dual power supplies.",
+      "b": "Dual power supply (PSU) servers are designed to utilize both inputs for redundancy, not disable them. They draw power from both sources, or one if the other fails, to maintain continuous operation.",
+      "d": "Dual-corded servers are typically connected to independent A and B power paths. While a Static Transfer Switch (STS) can provide redundancy from a single source, the primary benefit of dual-corded servers is to leverage two entirely separate power distribution paths."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Battery monitoring systems (BMS) for UPS banks typically track:",
     "options": [
       {
@@ -531,85 +530,85 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Trending battery parameters predicts failures and validates runtime capacity.",
+    "explanation": "Battery monitoring systems (BMS) for UPS banks typically track critical parameters such as string voltage, individual cell impedance, temperature, and provide runtime estimates. Trending these parameters helps predict potential failures, validate the remaining runtime capacity, and optimize battery lifespan.",
     "distractorExplanations": {
-      "b": "Cosmetic attributes are irrelevant.",
-      "c": "Cafeteria inventory is unrelated.",
-      "d": "Version control is IT operations."
+      "b": "This choice is incorrect because cosmetic attributes like paint color have no relevance to the operational health or performance of UPS batteries. BMS focuses on electrical and thermal characteristics.",
+      "c": "Cafeteria inventory management is a facility service function and has no connection to the technical monitoring of UPS battery banks. This option represents a completely unrelated operational area.",
+      "d": "Software Git commits are related to version control in software development and IT operations, not to the physical monitoring of battery systems. This choice confuses IT infrastructure with power infrastructure."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "A static UPS (double-conversion) continuously:",
     "options": [
       {
         "id": "a",
-        "text": "Rectifies AC to DC and inverts back to regulated AC for the load"
-      },
-      {
-        "id": "b",
         "text": "Passes raw utility directly with no conditioning in normal mode"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Operates only when generators are online"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Provides cooling water to CRAHs"
+      },
+      {
+        "id": "d",
+        "text": "Rectifies AC to DC and inverts back to regulated AC for the load"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Double-conversion UPS isolates load from utility disturbances.",
+    "correctOptionId": "d",
+    "explanation": "A static double-conversion UPS continuously rectifies incoming AC power to DC, then inverts it back to a clean, regulated AC output for the critical load, providing complete isolation from utility disturbances.",
     "distractorExplanations": {
-      "b": "That describes line-interactive or passive standby topologies.",
-      "c": "UPS runs on utility normally.",
-      "d": "Cooling is separate."
+      "a": "This describes line-interactive or passive standby UPS topologies, which allow utility power to pass through directly, only engaging the inverter during power fluctuations or outages.",
+      "b": "A UPS operates on utility power under normal conditions, providing continuous power conditioning; generators are only engaged during extended utility outages.",
+      "c": "Providing cooling water to Computer Room Air Handlers (CRAHs) is a function of the data center's cooling infrastructure, not the UPS system."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Line-interactive UPS topology differs from double-conversion by:",
     "options": [
       {
         "id": "a",
-        "text": "Regulating voltage with a transformer/tap changer while normally passing utility through"
-      },
-      {
-        "id": "b",
         "text": "Always inverting 100% of load power continuously"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Having no batteries"
+      },
+      {
+        "id": "c",
+        "text": "Regulating voltage with a transformer/tap changer while normally passing utility through"
       },
       {
         "id": "d",
         "text": "Operating only on 48 V DC racks"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Line-interactive designs boost/buck utility with limited conversion losses in normal mode.",
+    "correctOptionId": "c",
+    "explanation": "A line-interactive UPS regulates voltage by using a transformer with a tap changer to boost or buck the utility voltage, while normally allowing the utility power to pass through to the load.",
     "distractorExplanations": {
-      "b": "Continuous inversion is double-conversion behavior.",
-      "c": "Line-interactive units include batteries.",
-      "d": "Topology is not defined by 48 V racks only."
+      "a": "Continuously inverting 100% of the load power is characteristic of a double-conversion UPS, not a line-interactive system, which aims to minimize conversion losses in normal operation.",
+      "b": "Line-interactive UPS units include batteries to provide backup power during utility outages, similar to other UPS topologies.",
+      "d": "The operating voltage (e.g., 48 V DC for racks) is a characteristic of the IT equipment's power distribution, not a defining difference in UPS topology itself."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Emergency power off (EPO) buttons are controversial because:",
     "options": [
       {
         "id": "a",
-        "text": "They can drop all IT load instantly for life safety but risk broad unplanned outages if misused"
+        "text": "They improve PUE automatically"
       },
       {
         "id": "b",
-        "text": "They improve PUE automatically"
+        "text": "They can drop all IT load instantly for life safety but risk broad unplanned outages if misused"
       },
       {
         "id": "c",
@@ -620,56 +619,56 @@
         "text": "They synchronize generators without controls"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "EPO supports firefighter safety but must be designed to avoid accidental activation.",
+    "correctOptionId": "b",
+    "explanation": "EPO buttons are controversial because while they provide a critical safety function to quickly de-energize equipment for emergency personnel, their accidental activation can lead to widespread, unplanned data center outages.",
     "distractorExplanations": {
-      "b": "EPO does not improve efficiency.",
-      "c": "EPO is facility-level, not per outlet.",
-      "d": "Generator sync uses dedicated controls."
+      "a": "EPO buttons are safety devices and have no direct impact on Power Usage Effectiveness (PUE), which measures energy efficiency.",
+      "c": "EPO buttons are typically located at facility exits and designated emergency points, not at every individual rack outlet, due to their critical and potentially disruptive function.",
+      "d": "EPO buttons are designed to cut power, not to synchronize generators; generator synchronization is a complex process managed by dedicated control systems."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Fuel storage for diesel generators must address:",
     "options": [
       {
         "id": "a",
-        "text": "Tank capacity for required runtime, spill containment, and periodic fuel polishing"
-      },
-      {
-        "id": "b",
         "text": "Storing fuel inside hot aisles"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Ignoring microbial contamination indefinitely"
+      },
+      {
+        "id": "c",
+        "text": "Tank capacity for required runtime, spill containment, and periodic fuel polishing"
       },
       {
         "id": "d",
         "text": "Using gasoline in diesel engines for efficiency"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Reliable generation depends on fuel quality, containment, and sized storage.",
+    "correctOptionId": "c",
+    "explanation": "Fuel storage for diesel generators must address sufficient tank capacity for the required runtime, robust spill containment measures to prevent environmental contamination, and periodic fuel polishing to maintain fuel quality.",
     "distractorExplanations": {
-      "b": "Fuel in IT spaces is prohibited.",
-      "c": "Diesel degrades and needs testing/treatment.",
-      "d": "Wrong fuel damages engines."
+      "a": "Storing fuel inside hot aisles or any IT space is a significant fire hazard and is strictly prohibited by safety regulations.",
+      "b": "Diesel fuel degrades over time and is susceptible to microbial contamination, requiring regular testing and treatment to ensure generator reliability.",
+      "d": "Using gasoline in a diesel engine will cause severe damage and is not a method for improving efficiency; diesel engines require diesel fuel."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "K-rated transformers are specified in data centres to:",
     "options": [
       {
         "id": "a",
-        "text": "Handle harmonic currents from non-linear loads without excessive heating"
+        "text": "Eliminate all electrical safety codes"
       },
       {
         "id": "b",
-        "text": "Eliminate all electrical safety codes"
+        "text": "Handle harmonic currents from non-linear loads without excessive heating"
       },
       {
         "id": "c",
@@ -680,56 +679,56 @@
         "text": "Provide chilled water pumping"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "K-factor ratings indicate tolerance to harmonic loading.",
+    "correctOptionId": "b",
+    "explanation": "K-rated transformers are specified in data centers to safely handle the high harmonic currents generated by non-linear loads (like IT equipment) without overheating or premature failure.",
     "distractorExplanations": {
-      "b": "Codes still apply.",
-      "c": "Neutrals are often required for wye systems.",
-      "d": "Pumping is mechanical scope."
+      "a": "K-rated transformers are a component of electrical systems; they do not eliminate the need to adhere to electrical safety codes, which remain fully applicable.",
+      "c": "Neutral conductors are often essential in wye-configured electrical systems to carry unbalanced currents and are not eliminated by the use of K-rated transformers.",
+      "d": "Providing chilled water pumping is a function of the data center's cooling infrastructure and mechanical systems, not electrical transformers."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Rotary UPS (DRUPS) combines:",
     "options": [
       {
         "id": "a",
-        "text": "A motor-generator set with kinetic energy storage for ride-through"
-      },
-      {
-        "id": "b",
         "text": "Only solar panels"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Fire sprinklers"
+      },
+      {
+        "id": "c",
+        "text": "A motor-generator set with kinetic energy storage for ride-through"
       },
       {
         "id": "d",
         "text": "Network switches"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "DRUPS use flywheel/motor-generator inertia to bridge outages.",
+    "correctOptionId": "c",
+    "explanation": "A Rotary UPS (DRUPS) combines a motor-generator set with kinetic energy storage, typically a flywheel, to provide short-term ride-through power during utility outages and isolate the critical load.",
     "distractorExplanations": {
-      "b": "Solar is separate generation.",
-      "c": "Fire systems are unrelated.",
-      "d": "Network gear is not UPS."
+      "a": "Solar panels are a form of renewable energy generation and are separate from the core components and function of a Rotary UPS system.",
+      "b": "Fire sprinklers are part of the data center's fire suppression system and are unrelated to the power conditioning and backup functions of a UPS.",
+      "d": "Network switches are components of the data center's IT network infrastructure and are not part of a UPS system."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Power chain single-line diagrams document:",
     "options": [
       {
         "id": "a",
-        "text": "From utility through transformers, UPS, distribution, to rack PDUs"
+        "text": "Only cafeteria seating"
       },
       {
         "id": "b",
-        "text": "Only cafeteria seating"
+        "text": "From utility through transformers, UPS, distribution, to rack PDUs"
       },
       {
         "id": "c",
@@ -740,13 +739,14 @@
         "text": "Desktop wallpaper choices"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Single-line diagrams are essential for operations, troubleshooting, and design review.",
+    "correctOptionId": "b",
+    "explanation": "Single-line diagrams provide a comprehensive, simplified view of the entire electrical power system, illustrating the path from the utility source through all critical components like transformers, UPS, and distribution panels, down to the rack PDUs. This visual representation is crucial for understanding the system's architecture, facilitating troubleshooting, and ensuring proper design review.",
     "distractorExplanations": {
-      "b": "Non-technical information is out of scope.",
-      "c": "HR schedules are unrelated.",
-      "d": "Wallpaper is irrelevant."
+      "a": "This option suggests that single-line diagrams document non-technical information like cafeteria seating, which is entirely outside the scope of electrical power system documentation. The purpose of these diagrams is to detail electrical infrastructure, not facility amenities.",
+      "c": "This option refers to human resources schedules, which are completely unrelated to the technical documentation of a data center's power infrastructure. Single-line diagrams are engineering tools, not administrative records.",
+      "d": "This option mentions desktop wallpaper choices, which is a trivial and irrelevant detail for a power chain single-line diagram. Such diagrams focus on critical electrical components and their interconnections, not aesthetic or user-preference settings."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "power-emf-distribution"
   }
 ]

@@ -1,6 +1,5 @@
 [
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Load bank testing of a generator verifies:",
     "options": [
       {
@@ -21,85 +20,85 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Loaded tests confirm fuel, cooling, and electrical output under realistic conditions.",
+    "explanation": "Load bank testing of a generator is a critical procedure to verify its performance under realistic operating conditions, ensuring the engine and alternator can reliably produce rated power. This testing also confirms the stability of the transfer switch operation, which is vital for seamless power transitions during outages.",
     "distractorExplanations": {
-      "b": "Cosmetic checks are insufficient.",
-      "c": "API latency is IT testing.",
-      "d": "Carpet wear is unrelated."
+      "b": "This option incorrectly suggests that load bank testing is only concerned with cosmetic aspects like paint thickness. Generator testing is a rigorous technical evaluation of its operational capacity and reliability, not its superficial appearance.",
+      "c": "This option refers to software API latency, which is a concern for IT system performance and network communication, not for the mechanical and electrical performance of a generator. Generator testing focuses on power output and mechanical integrity.",
+      "d": "This option mentions office carpet wear, which is an irrelevant facility management concern and has no connection to the technical evaluation of a generator's power output and reliability. Generator testing is a critical engineering assessment."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Concurrent maintenance on 2N power requires:",
     "options": [
       {
         "id": "a",
-        "text": "Procedures ensuring the remaining path carries load while one path is isolated"
-      },
-      {
-        "id": "b",
         "text": "Shutting down all IT every time"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Removing all breakers permanently"
+      },
+      {
+        "id": "c",
+        "text": "Procedures ensuring the remaining path carries load while one path is isolated"
       },
       {
         "id": "d",
         "text": "Disabling labeling"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Ops procedures and interlocks maintain service on the live path during work.",
+    "correctOptionId": "c",
+    "explanation": "Concurrent maintenance in a 2N power architecture requires meticulously planned procedures that ensure one power path can be safely isolated for maintenance while the remaining, redundant path continues to carry the full critical load without interruption. This capability is fundamental to maintaining high availability in data centers.",
     "distractorExplanations": {
-      "b": "2N/2N designs aim to avoid full IT shutdown.",
-      "c": "Breakers are reinstalled after maintenance.",
-      "d": "Labeling aids safe isolation."
+      "a": "This option suggests that concurrent maintenance requires shutting down all IT, which contradicts the fundamental purpose of 2N redundancy. The goal of 2N design is to allow maintenance without impacting IT operations, thus avoiding full shutdowns.",
+      "b": "This option implies that breakers are permanently removed, which is incorrect. Breakers are temporarily isolated or opened for maintenance and then reinstalled or closed to restore the system's full protective and operational capabilities.",
+      "d": "This option suggests disabling labeling, which would severely compromise safety and operational efficiency during maintenance. Clear and accurate labeling is essential for identifying components, ensuring correct isolation, and preventing human error."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Neutral-to-ground voltage rise at high harmonic loads indicates:",
     "options": [
       {
         "id": "a",
-        "text": "Potential neutral conductor sizing or bonding issues needing investigation"
-      },
-      {
-        "id": "b",
         "text": "Perfect power quality"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Ideal PUE of 1.0"
+      },
+      {
+        "id": "c",
+        "text": "Potential neutral conductor sizing or bonding issues needing investigation"
       },
       {
         "id": "d",
         "text": "Successful humidity control"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Harmonic currents on the neutral can elevate voltage and heat conductors.",
+    "correctOptionId": "c",
+    "explanation": "A rise in neutral-to-ground voltage, especially in systems with high harmonic loads, is a significant indicator of potential issues such as undersized neutral conductors or improper bonding. This condition can lead to overheating, equipment malfunction, and safety hazards, necessitating immediate investigation and corrective action.",
     "distractorExplanations": {
-      "b": "Elevated neutral voltage is a concern.",
-      "c": "PUE is unrelated.",
-      "d": "Humidity is environmental."
+      "a": "This option incorrectly states that elevated neutral voltage indicates perfect power quality. In reality, a rise in neutral-to-ground voltage is a clear sign of power quality degradation, often due to harmonic currents, and requires attention.",
+      "b": "This option refers to Power Usage Effectiveness (PUE), which is a metric for data center energy efficiency and is unrelated to neutral-to-ground voltage issues. PUE measures total facility power divided by IT equipment power, not voltage anomalies.",
+      "d": "This option mentions successful humidity control, which is an environmental factor for data center operations and has no direct relation to electrical power quality issues like neutral-to-ground voltage rise. These are distinct operational concerns."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Overhead vs underfloor power distribution trade-offs include:",
     "options": [
       {
         "id": "a",
-        "text": "Maintenance access, clearance, and impact on airflow under raised floor"
+        "text": "Only color preferences"
       },
       {
         "id": "b",
-        "text": "Only color preferences"
+        "text": "Maintenance access, clearance, and impact on airflow under raised floor"
       },
       {
         "id": "c",
@@ -110,77 +109,77 @@
         "text": "Mandatory use of DC only"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Routing choice affects plenum obstruction, tap flexibility, and installation cost.",
+    "correctOptionId": "b",
+    "explanation": "The choice between overhead and underfloor power distribution involves trade-offs concerning maintenance access, the required clearance for cabling, and the potential impact on airflow dynamics, particularly under a raised floor. Each method presents distinct advantages and disadvantages that influence data center design and operation.",
     "distractorExplanations": {
-      "b": "Engineering drives the decision.",
-      "c": "Ampacity limits always apply.",
-      "d": "AC remains common."
+      "a": "This option incorrectly suggests that color preferences are a primary trade-off in power distribution design. Engineering considerations such as accessibility, cooling, and capacity are the main drivers, not aesthetic choices.",
+      "c": "This option implies the elimination of ampacity limits, which is fundamentally incorrect. All electrical conductors have ampacity limits, regardless of their distribution method, to prevent overheating and ensure safety.",
+      "d": "This option suggests a mandatory use of DC power only, which is not a universal trade-off. While DC power distribution is gaining traction, AC remains the predominant standard in most data centers, and the choice depends on specific design goals."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Surge protective devices (SPDs) at service entrances help:",
     "options": [
       {
         "id": "a",
-        "text": "Clamp transient overvoltages from lightning or switching events"
-      },
-      {
-        "id": "b",
         "text": "Eliminate the need for UPS"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Increase harmonics for fun"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Replace generators"
+      },
+      {
+        "id": "d",
+        "text": "Clamp transient overvoltages from lightning or switching events"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "SPDs mitigate damaging voltage spikes on incoming feeders.",
+    "correctOptionId": "d",
+    "explanation": "Surge Protective Devices (SPDs) installed at service entrances are crucial for clamping transient overvoltages, which are sudden, high-energy spikes caused by events like lightning strikes or utility switching. By diverting these surges, SPDs protect sensitive downstream equipment from damage and ensure system reliability.",
     "distractorExplanations": {
-      "b": "UPS addresses different outage types.",
-      "c": "Harmonics are undesirable.",
-      "d": "Generators provide sustained backup."
+      "a": "This option incorrectly suggests that SPDs eliminate the need for UPS systems. SPDs protect against voltage spikes, while UPS systems provide continuous power during outages and voltage sags, addressing different types of power disturbances.",
+      "b": "This option proposes increasing harmonics, which are undesirable distortions in the electrical waveform that can cause equipment malfunction and overheating. SPDs are designed to mitigate harmful transients, not to introduce or increase other power quality issues.",
+      "c": "This option suggests that SPDs replace generators, which is incorrect. Generators provide sustained backup power during prolonged utility outages, whereas SPDs protect against momentary voltage spikes. They serve entirely different functions in a power system."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "DC power distribution at 48 V in modern racks is growing because:",
     "options": [
       {
         "id": "a",
-        "text": "It can reduce conversion stages for DC-native IT and improve efficiency in some architectures"
-      },
-      {
-        "id": "b",
         "text": "It eliminates all safety requirements"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "It removes need for any monitoring"
+      },
+      {
+        "id": "c",
+        "text": "It can reduce conversion stages for DC-native IT and improve efficiency in some architectures"
       },
       {
         "id": "d",
         "text": "It replaces all fire systems"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "HVDC/48 V architectures target fewer conversions for compatible loads.",
+    "correctOptionId": "c",
+    "explanation": "Modern data centers are increasingly adopting 48 V DC power distribution to reduce the number of AC-DC and DC-AC conversion stages, thereby improving overall energy efficiency, especially for DC-native IT equipment. This architecture minimizes energy losses associated with multiple power transformations.",
     "distractorExplanations": {
-      "b": "DC has significant safety and code requirements.",
-      "c": "Monitoring remains critical.",
-      "d": "Fire protection is independent."
+      "a": "This option is incorrect because DC power systems, especially at higher voltages, still have significant safety and code requirements that must be strictly adhered to for personnel protection. The presence of DC does not inherently eliminate safety concerns.",
+      "b": "This option is incorrect because all critical infrastructure, including DC power distribution, requires continuous monitoring to ensure operational stability, detect anomalies, and prevent potential failures. Monitoring is essential for reliability and efficiency.",
+      "d": "This option is incorrect because fire protection systems are independent of the power distribution architecture and are mandated by building codes and safety regulations. The type of electrical power (AC or DC) does not replace the need for fire suppression."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Power quality monitoring captures metrics such as:",
     "options": [
       {
@@ -201,55 +200,55 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "PQ meters support correlation with IT errors and equipment stress.",
+    "explanation": "Power quality monitoring is crucial for identifying electrical disturbances that can impact equipment performance and longevity. Key metrics include voltage sag/swell (momentary drops or rises), total harmonic distortion (THD), frequency deviation, and power factor, all of which indicate the health of the electrical supply.",
     "distractorExplanations": {
-      "b": "Irrelevant metrics.",
-      "c": "Irrelevant.",
-      "d": "Irrelevant."
+      "b": "This option is incorrect because cafeteria noise is an acoustic measurement and has no relevance to electrical power quality. Power quality metrics are specific electrical characteristics.",
+      "c": "This option is incorrect because lobby plant height is a facility aesthetic or horticultural detail and is entirely unrelated to the electrical power quality within a data center. Power quality focuses on electrical parameters.",
+      "d": "This option is incorrect because rack paint gloss is a cosmetic attribute of equipment enclosures and bears no relation to the electrical characteristics of power quality. Power quality monitoring measures electrical phenomena."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Maintenance bypass on a UPS allows:",
     "options": [
       {
         "id": "a",
-        "text": "Routing utility directly around the UPS module for service while risking reduced conditioning"
-      },
-      {
-        "id": "b",
         "text": "Permanent removal of all protection"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Automatic PUE reduction to 0.5"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Cooling tower cleaning"
+      },
+      {
+        "id": "d",
+        "text": "Routing utility directly around the UPS module for service while risking reduced conditioning"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Bypass paths enable safe UPS maintenance with operational risk controls.",
+    "correctOptionId": "d",
+    "explanation": "A maintenance bypass on a UPS allows the electrical load to be transferred directly to the utility power, bypassing the UPS module. This enables safe servicing or replacement of the UPS without interrupting power to critical loads, though it means the load temporarily loses the UPS's power conditioning and battery backup. The bypass is a critical operational feature for maintaining uptime during UPS service.",
     "distractorExplanations": {
-      "b": "Bypass is temporary for service.",
-      "c": "PUE is not changed by bypass magically.",
-      "d": "Cooling maintenance is separate."
+      "a": "This option is incorrect because a maintenance bypass is a temporary measure for servicing the UPS, not a permanent removal of protection. The UPS's protection capabilities are restored once maintenance is complete and the load is transferred back.",
+      "b": "This option is incorrect because PUE (Power Usage Effectiveness) is a measure of data center energy efficiency and is not automatically or magically reduced by engaging a UPS maintenance bypass. PUE is influenced by overall facility design and operational efficiency, not a temporary bypass.",
+      "c": "This option is incorrect because cooling tower cleaning is a maintenance activity for the HVAC system and is entirely unrelated to the electrical UPS system or its maintenance bypass. These are distinct operational domains."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Cable sizing for feeders considers:",
     "options": [
       {
         "id": "a",
-        "text": "Ampacity, voltage drop, and future load growth"
+        "text": "Only shortest physical path regardless of drop"
       },
       {
         "id": "b",
-        "text": "Only shortest physical path regardless of drop"
+        "text": "Ampacity, voltage drop, and future load growth"
       },
       {
         "id": "c",
@@ -260,17 +259,17 @@
         "text": "Fiber strand count"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Conductors must carry current within temperature limits and acceptable voltage drop.",
+    "correctOptionId": "b",
+    "explanation": "Proper cable sizing for electrical feeders is critical and involves considering the conductor's ampacity (current-carrying capacity without overheating), acceptable voltage drop over its length to ensure stable power delivery, and anticipating future load growth to avoid premature replacement. These factors ensure safety, efficiency, and reliability.",
     "distractorExplanations": {
-      "b": "Excessive drop harms equipment performance.",
-      "c": "Gauge must be engineered.",
-      "d": "Fiber count is network design."
+      "a": "This option is incorrect because while a shorter physical path is often desirable, it cannot be the sole criterion. Ignoring voltage drop can lead to significant power losses and equipment malfunction, even with a short cable run. All factors must be balanced.",
+      "c": "This option is incorrect because cable gauge selection must be a carefully engineered decision based on electrical calculations, not a random choice. Random selection can lead to undersized cables, overheating, and fire hazards, or oversized cables, which are costly.",
+      "d": "This option is incorrect because fiber strand count pertains to optical fiber communication cables, which transmit data, not electrical power. Electrical feeder cable sizing is concerned with power transmission, not data network capacity."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "EMI from variable frequency drives (VFDs) on cooling plant can affect:",
     "options": [
       {
@@ -291,25 +290,25 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "VFD switching produces harmonics and EMI requiring proper filters and separation.",
+    "explanation": "Variable Frequency Drives (VFDs) used in cooling plants can generate electromagnetic interference (EMI) due to their high-speed switching. If not properly filtered and if sensitive analog or network circuits are routed too closely without adequate shielding, this EMI can disrupt their operation, leading to data corruption or control system malfunctions. Proper installation practices are key to mitigating EMI.",
     "distractorExplanations": {
-      "b": "Structural steel is unaffected.",
-      "c": "Irrelevant.",
-      "d": "Fuel polishing is unrelated."
+      "b": "This option is incorrect because EMI from VFDs is an electromagnetic phenomenon that affects electronic circuits, not the physical strength or integrity of structural steel. Structural steel yield strength is a mechanical property.",
+      "c": "This option is incorrect because cafeteria menus are related to food service and have no connection to the electromagnetic interference generated by VFDs in a cooling plant. These are completely unrelated aspects of facility operation.",
+      "d": "This option is incorrect because generator fuel polishing is a maintenance process for ensuring the quality of diesel fuel for backup generators, and it is unrelated to EMI from VFDs. EMI affects electrical signals, not fuel quality."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Arc flash hazard analysis in electrical rooms determines:",
     "options": [
       {
         "id": "a",
-        "text": "Incident energy, required PPE, and safe work boundaries"
+        "text": "Rack U heights"
       },
       {
         "id": "b",
-        "text": "Rack U heights"
+        "text": "Incident energy, required PPE, and safe work boundaries"
       },
       {
         "id": "c",
@@ -320,17 +319,17 @@
         "text": "Humidity setpoints"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Arc flash studies protect personnel during energized work.",
+    "correctOptionId": "b",
+    "explanation": "Arc flash hazard analysis is a critical safety study performed in electrical rooms to determine the incident energy levels, specify the required Personal Protective Equipment (PPE) for workers, and establish safe work boundaries. This analysis protects personnel from severe burns and injuries that can result from an arc flash event during energized electrical work. It is mandated by safety standards like NFPA 70E.",
     "distractorExplanations": {
-      "b": "Rack sizing is IT layout.",
-      "c": "Patch colors are minor documentation.",
-      "d": "Humidity is HVAC."
+      "a": "This option is incorrect because rack U heights refer to the standardized vertical unit of space within server racks, which is a concern for IT equipment layout and has no relevance to arc flash hazard analysis. Arc flash analysis focuses on electrical safety.",
+      "c": "This option is incorrect because patch cable colors are a convention for organizing and identifying network or data cables, which is a minor aspect of cabling documentation. Arc flash analysis is a critical safety assessment, not a cabling aesthetic.",
+      "d": "This option is incorrect because humidity setpoints are parameters for environmental control within a data center, managed by the HVAC system. They are unrelated to the electrical safety concerns addressed by an arc flash hazard analysis. Arc flash analysis focuses on electrical hazards."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Redundant utility feeds from separate substations provide:",
     "options": [
       {
@@ -351,25 +350,25 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Dual feeds improve utility-side resilience but still need on-site backup for full continuity.",
+    "explanation": "Redundant utility feeds from separate substations provide diversity, meaning that a failure at one substation or along one feed path will not necessarily affect the other, thereby improving resilience against single points of failure upstream of the site.",
     "distractorExplanations": {
-      "b": "Outages can still occur downstream or on both feeds in extreme events.",
-      "c": "Generation may still be required by tier objectives.",
-      "d": "Tier rating requires holistic design."
+      "b": "This choice reflects a misunderstanding of power system reliability, as even with redundant feeds, outages can still occur due to failures downstream of the feeds, or in extreme events that affect both utility paths simultaneously.",
+      "c": "While redundant utility feeds enhance reliability, they do not eliminate the need for on-site generation, especially for data centers aiming for higher tiers of availability, as on-site generation provides backup during extended utility outages or for planned maintenance.",
+      "d": "Achieving Tier IV certification requires a holistic approach to design, including concurrent maintainability, fault tolerance, and specific infrastructure components, which goes far beyond merely having redundant utility feeds."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Ground fault detection on UPS output helps:",
     "options": [
       {
         "id": "a",
-        "text": "Identify insulation faults before they escalate to outages or safety hazards"
+        "text": "Measure PUE directly"
       },
       {
         "id": "b",
-        "text": "Measure PUE directly"
+        "text": "Identify insulation faults before they escalate to outages or safety hazards"
       },
       {
         "id": "c",
@@ -380,26 +379,26 @@
         "text": "Patch fiber cables"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Monitoring ground leakage supports early maintenance on feeders and PDUs.",
+    "correctOptionId": "b",
+    "explanation": "Ground fault detection on UPS output helps identify insulation faults or leakage currents before they escalate into major electrical outages, equipment damage, or safety hazards for personnel, allowing for proactive maintenance.",
     "distractorExplanations": {
-      "b": "PUE uses energy metering.",
-      "c": "CRAH control is BMS/HVAC.",
-      "d": "Fiber patching is network."
+      "a": "PUE (Power Usage Effectiveness) is a metric calculated by dividing total facility power by IT equipment power, and it is measured using energy metering devices, not ground fault detection.",
+      "c": "CRAH (Computer Room Air Handler) fans are part of the cooling system, and their control is managed by the Building Management System (BMS) or dedicated HVAC control systems, not by UPS ground fault detection.",
+      "d": "Patching fiber cables is a task related to network infrastructure and connectivity, which is entirely separate from the electrical safety function of ground fault detection on a UPS output."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Capacity planning for rack kW should include:",
     "options": [
       {
         "id": "a",
-        "text": "Nameplate vs actual draw, inrush, and phase balance across PDUs"
+        "text": "Only label printer capacity"
       },
       {
         "id": "b",
-        "text": "Only label printer capacity"
+        "text": "Nameplate vs actual draw, inrush, and phase balance across PDUs"
       },
       {
         "id": "c",
@@ -410,47 +409,47 @@
         "text": "Assuming zero growth forever"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Planning prevents overloads and ensures balanced three-phase loading.",
+    "correctOptionId": "b",
+    "explanation": "Effective capacity planning for rack kW must consider the actual power draw versus nameplate ratings, account for inrush currents during equipment startup, and ensure phase balance across PDUs to prevent overloads and optimize power distribution.",
     "distractorExplanations": {
-      "b": "Label printers are trivial load.",
-      "c": "Redundant feeds affect available capacity per path.",
-      "d": "Growth must be forecast."
+      "a": "Focusing only on label printer capacity is a significant underestimation of power requirements, as label printers consume negligible power compared to IT equipment in a data center rack.",
+      "c": "Ignoring redundant feeds in capacity planning is a critical error, as redundant feeds directly impact the available power capacity and the ability to maintain operations during a feed failure or maintenance.",
+      "d": "Assuming zero growth forever in a data center environment is unrealistic and leads to under-provisioning, as IT infrastructure typically expands over time, requiring future capacity for new equipment."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Shielded power cable may be used to:",
     "options": [
       {
         "id": "a",
-        "text": "Limit radiated EMI in sensitive environments"
-      },
-      {
-        "id": "b",
         "text": "Eliminate all ampacity derating"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Replace grounding"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Store diesel"
+      },
+      {
+        "id": "d",
+        "text": "Limit radiated EMI in sensitive environments"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Shielding contains electric fields around conductors.",
+    "correctOptionId": "d",
+    "explanation": "Shielded power cable is used to limit radiated electromagnetic interference (EMI) by containing the electric fields generated by the current-carrying conductors, which is crucial in sensitive environments to prevent interference with nearby electronic equipment.",
     "distractorExplanations": {
-      "b": "Derating may still apply especially when bundled.",
-      "c": "Shield bonds to ground; does not replace system ground.",
-      "d": "Fuel storage is tanks."
+      "a": "While shielding can offer some benefits, it does not eliminate the need for ampacity derating, which is primarily determined by factors like conductor size, insulation type, ambient temperature, and bundling of cables.",
+      "b": "The shield of a power cable is typically bonded to ground to be effective in mitigating EMI, but it does not replace the primary grounding system for electrical safety and fault current paths.",
+      "c": "Shielded power cable is designed for electrical power transmission and EMI mitigation, not for the storage of diesel fuel, which requires specialized tanks and containment systems."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Black start capability refers to:",
     "options": [
       {
@@ -471,85 +470,85 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Black start is needed when the grid is down and plants must self-energize.",
+    "explanation": "Black start capability refers to the ability of a power generation system, such as a data center's generators, to start up and restore power without relying on an external electrical grid, which is essential after a complete grid outage.",
     "distractorExplanations": {
-      "b": "Lighting control is unrelated.",
-      "c": "Log deletion is unrelated.",
-      "d": "Cosmetic painting is unrelated."
+      "b": "Turning off all lighting is a power conservation measure, not related to the technical capability of starting power generation systems independently from the grid.",
+      "c": "Deleting logs pertains to data management or security practices and has no connection to the operational capability of power generation equipment.",
+      "d": "Painting switchgear black is a cosmetic or aesthetic choice and has no functional relevance to the electrical operational capability of starting power generation systems."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Coordination of overcurrent protective devices ensures:",
     "options": [
       {
         "id": "a",
-        "text": "The device nearest the fault opens first without unnecessary upstream trips"
-      },
-      {
-        "id": "b",
         "text": "All breakers trip simultaneously always"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "No breakers ever trip"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Generators never start"
+      },
+      {
+        "id": "d",
+        "text": "The device nearest the fault opens first without unnecessary upstream trips"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Selective coordination limits outage scope to the faulted section.",
+    "correctOptionId": "d",
+    "explanation": "Coordination of overcurrent protective devices ensures that in the event of a fault, only the protective device immediately upstream of the fault opens, isolating the problem area and preventing unnecessary tripping of other devices further upstream, thus minimizing the scope of the outage.",
     "distractorExplanations": {
-      "b": "Simultaneous trips broaden outages.",
-      "c": "Protection must trip on faults.",
-      "d": "Generator start is separate logic."
+      "a": "The idea that all breakers should trip simultaneously is incorrect; this would lead to widespread outages for even localized faults, defeating the purpose of selective coordination.",
+      "b": "The belief that no breakers should ever trip is a misunderstanding of their function; protective devices are designed to trip to prevent damage to equipment and ensure safety during fault conditions.",
+      "c": "The starting of generators is governed by separate control logic and is unrelated to the coordination of overcurrent protective devices, which are designed to respond to electrical faults."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Monitoring DC bus voltage in a UPS indicates:",
     "options": [
       {
         "id": "a",
-        "text": "Health of rectifier/charger and battery float conditions"
-      },
-      {
-        "id": "b",
         "text": "Fiber optic loss"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Chilled water temperature only"
+      },
+      {
+        "id": "c",
+        "text": "Health of rectifier/charger and battery float conditions"
       },
       {
         "id": "d",
         "text": "Visitor count"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "DC bus stability reflects charging and inverter input health.",
+    "correctOptionId": "c",
+    "explanation": "Monitoring DC bus voltage in a UPS is crucial as it directly reflects the health of the rectifier/charger, ensuring it provides stable DC power, and indicates the proper float charging conditions for the batteries, which is vital for their longevity and readiness.",
     "distractorExplanations": {
-      "b": "Fiber loss is optical testing.",
-      "c": "Water temp is HVAC.",
-      "d": "Visitor count is access control."
+      "a": "Fiber optic loss refers to the attenuation of light signals in fiber optic cables, which is a communication issue and completely unrelated to the electrical DC bus voltage in a UPS system.",
+      "b": "Chilled water temperature is a parameter monitored within the HVAC (Heating, Ventilation, and Air Conditioning) system to manage cooling, and it has no direct correlation with the DC bus voltage of a UPS.",
+      "d": "Visitor count is a metric used for security and access control purposes, or perhaps occupancy management, and bears no relevance to the operational status or electrical parameters of a UPS system."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Power capping in virtualized clusters can:",
     "options": [
       {
         "id": "a",
-        "text": "Limit server power draw to protect facility headroom during stress"
+        "text": "Eliminate UPS requirements"
       },
       {
         "id": "b",
-        "text": "Eliminate UPS requirements"
+        "text": "Limit server power draw to protect facility headroom during stress"
       },
       {
         "id": "c",
@@ -560,137 +559,137 @@
         "text": "Disable all cooling"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Software power caps help align IT demand with available infrastructure.",
+    "correctOptionId": "b",
+    "explanation": "Power capping in virtualized clusters is a software-defined mechanism that limits the maximum power draw of servers, effectively protecting the facility's available power headroom and preventing overloads during peak demand or stress conditions.",
     "distractorExplanations": {
-      "b": "UPS still needed for continuity.",
-      "c": "Caps limit draw, not increase without limit.",
-      "d": "Cooling must continue."
+      "a": "Power capping helps manage power consumption but does not eliminate the fundamental need for UPS systems, which provide continuous power during utility outages to maintain critical operations.",
+      "c": "Power capping is designed to limit and control power draw, not to increase the facility's available kW without limits; it works within existing infrastructure constraints to prevent exceeding them.",
+      "d": "Disabling all cooling would lead to immediate overheating and failure of IT equipment; power capping is a power management strategy and does not involve shutting down essential cooling systems."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Transient voltage from utility capacitor switching may be mitigated by:",
     "options": [
       {
         "id": "a",
-        "text": "UPS conditioning, surge devices, and utility coordination"
-      },
-      {
-        "id": "b",
         "text": "Removing all SPDs"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Opening all rack doors"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Increasing harmonic generation"
+      },
+      {
+        "id": "d",
+        "text": "UPS conditioning, surge devices, and utility coordination"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Combined mitigation limits nuisance IT reboots from switching transients.",
+    "correctOptionId": "d",
+    "explanation": "Mitigating transient voltage from utility capacitor switching typically involves a multi-pronged approach: UPS conditioning filters and stabilizes power, surge protective devices (SPDs) divert excess voltage, and coordination with the utility helps manage switching events.",
     "distractorExplanations": {
-      "b": "Removing SPDs worsens exposure.",
-      "c": "Doors do not affect utility switching.",
-      "d": "Harmonics worsen power quality."
+      "a": "Removing all Surge Protective Devices (SPDs) would eliminate a critical layer of defense against transient voltages, making equipment more vulnerable to damage and operational disruptions from utility switching events.",
+      "b": "Opening all rack doors is a cooling strategy to dissipate heat, not a method to mitigate electrical transient voltages, which are power quality issues originating from the utility grid.",
+      "c": "Increasing harmonic generation would worsen power quality by introducing distortions into the electrical waveform, which is the opposite of what is needed to mitigate transient voltages and protect sensitive equipment."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "A power distribution hierarchy typically flows:",
     "options": [
       {
         "id": "a",
-        "text": "Utility → MV switchgear → transformer → LV switchboard → UPS → PDU → rack"
-      },
-      {
-        "id": "b",
         "text": "Rack → utility directly without protection"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "PDU → utility → generator only"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Fiber patch panel → UPS → chiller"
+      },
+      {
+        "id": "d",
+        "text": "Utility → MV switchgear → transformer → LV switchboard → UPS → PDU → rack"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Standard hierarchy steps voltage down and conditions power before rack delivery.",
+    "correctOptionId": "d",
+    "explanation": "A typical power distribution hierarchy in a data center starts with the utility, steps down voltage through switchgear and transformers, conditions power via UPS, and then distributes it to racks through PDUs, ensuring a reliable and regulated supply.",
     "distractorExplanations": {
-      "b": "Protection and transformation are required.",
-      "c": "Order is incorrect.",
-      "d": "Fiber is not in electrical hierarchy."
+      "a": "Directly connecting a rack to the utility without protection, transformation, or conditioning is highly unsafe and impractical, as IT equipment requires specific voltage levels and stable power quality.",
+      "b": "This option presents an incorrect and illogical sequence; power typically flows from the utility, potentially through a generator (as a backup), and then to PDUs, not the other way around or with a PDU as the primary source.",
+      "c": "This option mixes unrelated components; a fiber patch panel is for network connectivity, and a chiller is part of the cooling system, neither of which are part of the electrical power distribution hierarchy in the sequence described."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "EMF exposure assessments in staff work areas compare measured fields to:",
     "options": [
       {
         "id": "a",
-        "text": "Occupational exposure guidelines and equipment vendor limits"
-      },
-      {
-        "id": "b",
         "text": "Cafeteria calorie charts"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Social media trends"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Movie ratings"
+      },
+      {
+        "id": "d",
+        "text": "Occupational exposure guidelines and equipment vendor limits"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Assessments ensure worker safety relative to recognized limits.",
+    "correctOptionId": "d",
+    "explanation": "EMF exposure assessments in staff work areas are conducted to ensure worker safety by comparing measured electromagnetic fields against established occupational exposure guidelines and equipment vendor limits, which are designed to prevent adverse health effects.",
     "distractorExplanations": {
-      "b": "Irrelevant reference.",
-      "c": "Irrelevant.",
-      "d": "Irrelevant."
+      "a": "Cafeteria calorie charts are nutritional information and have no relevance whatsoever to the measurement or assessment of electromagnetic field (EMF) exposure in a work environment.",
+      "b": "Social media trends are related to popular culture and online activities, which are entirely unrelated to the scientific and safety-focused assessment of electromagnetic field exposure.",
+      "c": "Movie ratings are classifications based on content suitability for audiences and bear no connection to the technical and health-related standards used for evaluating electromagnetic field exposure."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Island mode operation during a grid outage means:",
     "options": [
       {
         "id": "a",
-        "text": "On-site generation feeds facility loads isolated from the utility"
-      },
-      {
-        "id": "b",
         "text": "All IT is shut down permanently"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Utility and generator are tied without controls"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Only battery-less PDUs run"
+      },
+      {
+        "id": "d",
+        "text": "On-site generation feeds facility loads isolated from the utility"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Islanded plants sustain critical loads while disconnected from grid.",
+    "correctOptionId": "d",
+    "explanation": "Island mode operation during a grid outage means that the facility's on-site generation, typically generators and UPS systems, takes over to feed the internal loads, effectively isolating the facility from the utility grid to maintain continuous power.",
     "distractorExplanations": {
-      "b": "Island mode sustains load, not permanent shutdown.",
-      "c": "Paralleling requires synchronization.",
-      "d": "PDUs distribute whatever source is online."
+      "a": "Island mode operation is specifically designed to maintain power to critical loads during a grid outage, not to shut down all IT permanently; its purpose is business continuity.",
+      "b": "Tying the utility and generator without proper controls (synchronization and protection) would lead to severe electrical damage and safety hazards, as their outputs must be carefully managed when connected.",
+      "c": "PDUs (Power Distribution Units) distribute power from an upstream source; they do not generate power themselves, and their operation is independent of whether they are battery-less or not in the context of island mode."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Retrofit adding high-density GPU racks to a legacy row most often requires:",
     "options": [
       {
@@ -711,16 +710,16 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "High kW racks can exceed original design; electrical and thermal must be revalidated.",
+    "explanation": "High-density GPU racks significantly increase power draw and heat output, often exceeding the original design limits of legacy infrastructure. Therefore, revalidating the capacity of Power Distribution Units (PDUs), power whips, upstream breakers, and the entire cooling system is crucial to prevent overloads and ensure stable operation.",
     "distractorExplanations": {
-      "b": "Keyboard trays do not address kW.",
-      "c": "Fire detection remains mandatory.",
-      "d": "Phase imbalance can trip breakers and overheat neutrals."
+      "b": "Keyboard trays are peripheral accessories and have no bearing on the electrical power or thermal management requirements of high-density GPU racks. Focusing on such items indicates a misunderstanding of the critical infrastructure changes needed.",
+      "c": "Removing fire detection systems is a dangerous and non-compliant action that compromises safety and violates building codes. Fire detection is a mandatory safety feature in all data centers, regardless of equipment density.",
+      "d": "Ignoring phase balance can lead to overloaded neutral conductors, tripped circuit breakers, and inefficient power delivery, especially with unbalanced loads common in IT equipment. Maintaining phase balance is essential for reliable and safe electrical operation."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "power-emf-distribution"
   },
   {
-    "topicId": "power-emf-distribution",
     "prompt": "Voltage sag ride-through for IT equipment is primarily provided by:",
     "options": [
       {
@@ -741,12 +740,13 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "UPS bridges sags and outages while generators start or faults clear.",
+    "explanation": "Uninterruptible Power Supply (UPS) systems are specifically designed to provide continuous, conditioned power to IT equipment, bridging voltage sags, spikes, and momentary outages. Proper sizing ensures the UPS can support the load for the required duration until utility power stabilizes or backup generators activate, preventing service disruption.",
     "distractorExplanations": {
-      "b": "Cable length does not buffer voltage sags.",
-      "c": "Cosmetic changes do not affect ride-through.",
-      "d": "SPDs complement but do not replace UPS ride-through."
+      "b": "The length of patch cables affects signal integrity and latency, but it does not provide any mechanism to buffer or compensate for fluctuations in the incoming electrical voltage. This option reflects a misunderstanding of power quality solutions.",
+      "c": "Painting PDUs is a cosmetic change that has absolutely no impact on their electrical performance, capacity, or ability to provide voltage sag ride-through. This choice indicates a lack of understanding of critical power infrastructure functions.",
+      "d": "Surge protective devices (SPDs) protect equipment from voltage spikes, but they do not provide continuous power during voltage sags or outages. Removing them would increase vulnerability to transient overvoltages, not improve ride-through capability."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "power-emf-distribution"
   }
 ]

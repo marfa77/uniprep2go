@@ -1,96 +1,95 @@
 [
   {
-    "topicId": "operations-management",
     "prompt": "Key performance indicators for operations may include:",
     "options": [
       {
         "id": "a",
-        "text": "MTTR, change success rate, PUE trend, and alarm noise ratio"
-      },
-      {
-        "id": "b",
         "text": "Only logo color"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Cafeteria revenue only"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Number of typos in email"
+      },
+      {
+        "id": "d",
+        "text": "MTTR, change success rate, PUE trend, and alarm noise ratio"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "KPIs measure reliability and efficiency of ops.",
+    "correctOptionId": "d",
+    "explanation": "Key Performance Indicators (KPIs) for data center operations include metrics like Mean Time To Restore (MTTR) for incidents, the success rate of changes implemented, Power Usage Effectiveness (PUE) trends for energy efficiency, and the alarm noise ratio to assess monitoring effectiveness. These KPIs provide measurable insights into operational efficiency and reliability.",
     "distractorExplanations": {
-      "b": "Cosmetic.",
-      "c": "Irrelevant.",
-      "d": "Irrelevant."
+      "a": "The color of a logo is a branding element and has no relevance to the operational performance or efficiency of a data center, making it an inappropriate KPI.",
+      "b": "Cafeteria revenue is a business metric related to ancillary services, not a direct indicator of the core operational performance, reliability, or efficiency of the data center infrastructure.",
+      "c": "The number of typos in an email is a measure of communication quality or attention to detail, not a relevant KPI for assessing the technical operations, uptime, or efficiency of a data center."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Battery replacement project planning needs:",
     "options": [
       {
         "id": "a",
-        "text": "Runtime validation, load transfer plan, and disposal of hazardous waste properly"
-      },
-      {
-        "id": "b",
         "text": "Dumping batteries in landfill casually"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "No outage communication"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Ignoring torque specs on terminations"
+      },
+      {
+        "id": "d",
+        "text": "Runtime validation, load transfer plan, and disposal of hazardous waste properly"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Battery work affects runtime and involves environmental rules.",
+    "correctOptionId": "d",
+    "explanation": "Proper battery replacement planning is crucial for maintaining data center uptime and ensuring safety. It involves validating runtime, planning for load transfer to avoid service interruptions, and correctly disposing of hazardous waste according to environmental regulations.",
     "distractorExplanations": {
-      "b": "Illegal/unsafe disposal.",
-      "c": "Customers/stakeholders informed.",
-      "d": "Terminations must be torqued."
+      "a": "Dumping batteries in a landfill is an illegal and environmentally irresponsible practice, leading to severe penalties and pollution due to toxic chemicals.",
+      "b": "Failing to communicate potential outages to stakeholders and customers can lead to significant business disruption, loss of trust, and financial penalties.",
+      "c": "Ignoring torque specifications on battery terminations can result in loose connections, leading to increased resistance, overheating, potential fires, and system failures."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Freeze/thaw of software-defined changes still requires:",
     "options": [
       {
         "id": "a",
-        "text": "Facilities change control when physical risk or customer impact exists"
-      },
-      {
-        "id": "b",
         "text": "No process ever"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Only email emoji approval"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Automatic execution at midnight without notice"
+      },
+      {
+        "id": "d",
+        "text": "Facilities change control when physical risk or customer impact exists"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Physical or customer-impacting work stays in change system.",
+    "correctOptionId": "d",
+    "explanation": "Even with software-defined changes, if there's a physical risk to infrastructure or a potential impact on customer services, facilities change control processes are still required. This ensures proper coordination, risk assessment, and approval before implementation.",
     "distractorExplanations": {
-      "b": "Process still applies.",
-      "c": "Formal approval needed.",
-      "d": "Notice required."
+      "a": "The idea that no process is ever required for software-defined changes, even with physical impact, is a misconception that can lead to uncontrolled risks and outages.",
+      "b": "Relying solely on informal approvals like email emojis for changes with physical or customer impact is unprofessional and lacks the necessary audit trail and accountability for critical infrastructure.",
+      "c": "Automatic execution of changes without prior notice, especially those affecting physical infrastructure or customer services, can cause unexpected downtime and violate service level agreements."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Asset tagging at receipt should link:",
     "options": [
       {
@@ -111,55 +110,55 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Tags enable lifecycle and warranty tracking.",
+    "explanation": "Asset tagging upon receipt is a fundamental practice for effective asset management. It involves linking serial numbers to their specific location within the Configuration Management Database (CMDB) and assigning an owner, which is essential for tracking, inventory, and warranty management throughout the asset's lifecycle.",
     "distractorExplanations": {
-      "b": "Insufficient data.",
-      "c": "Tracking required.",
-      "d": "Irrelevant."
+      "b": "Only tracking price stickers provides insufficient data for comprehensive asset management, failing to capture critical information like serial numbers, location, and ownership necessary for operational efficiency.",
+      "c": "Not tagging assets at all makes it impossible to track their location, status, and ownership, leading to inventory discrepancies, lost equipment, and inefficient resource allocation.",
+      "d": "Linking social media handles to assets is irrelevant for operational asset management and does not provide any useful information for tracking, maintenance, or compliance purposes."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Problem management differs from incident management by:",
     "options": [
       {
         "id": "a",
-        "text": "Investigating recurring underlying causes vs restoring service quickly"
-      },
-      {
-        "id": "b",
         "text": "Being identical always"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Ignoring trends"
+      },
+      {
+        "id": "c",
+        "text": "Investigating recurring underlying causes vs restoring service quickly"
       },
       {
         "id": "d",
         "text": "Only handling cafeteria issues"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Problem mgmt targets root elimination; incident mgmt restores service.",
+    "correctOptionId": "c",
+    "explanation": "Problem management focuses on investigating and eliminating the underlying causes of recurring incidents to prevent future occurrences, while incident management's primary goal is to restore normal service operation as quickly as possible after an unplanned interruption.",
     "distractorExplanations": {
-      "b": "Different objectives.",
-      "c": "Trends central to problem mgmt.",
-      "d": "Facilities/IT scope."
+      "a": "Believing problem and incident management are identical overlooks their distinct objectives; incident management is reactive, while problem management is proactive in preventing future issues.",
+      "b": "Ignoring trends is a critical mistake in problem management, as identifying recurring patterns and root causes is central to its purpose of preventing future incidents.",
+      "d": "Limiting problem management to only cafeteria issues is a misunderstanding of its scope; it applies to all operational aspects of a data center, including IT and facilities infrastructure."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Daily walkthrough inspections look for:",
     "options": [
       {
         "id": "a",
-        "text": "Leaks, abnormal noise, hot spots, and safety hazards"
+        "text": "Only desk cleanliness in offices"
       },
       {
         "id": "b",
-        "text": "Only desk cleanliness in offices"
+        "text": "Leaks, abnormal noise, hot spots, and safety hazards"
       },
       {
         "id": "c",
@@ -170,47 +169,47 @@
         "text": "Skipping mechanical rooms"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Walkthroughs catch early signs of failure.",
+    "correctOptionId": "b",
+    "explanation": "Daily walkthrough inspections are vital for proactive data center operations, aiming to identify early warning signs of potential issues such as leaks, abnormal equipment noise, hot spots, and any safety hazards before they escalate into major problems.",
     "distractorExplanations": {
-      "b": "Technical areas prioritized.",
-      "c": "Unprofessional focus.",
-      "d": "Mechanical rooms critical."
+      "a": "Focusing only on desk cleanliness in offices during a data center walkthrough neglects the critical technical areas where operational issues are most likely to occur, such as equipment rooms and infrastructure spaces.",
+      "c": "Engaging in only personal conversations during a walkthrough indicates a lack of professionalism and a failure to perform the essential task of inspecting the facility for operational integrity and safety.",
+      "d": "Skipping mechanical rooms during inspections is a significant oversight, as these areas house critical infrastructure like HVAC and power systems, which are prone to issues that can impact the entire data center."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Compliance audits for ISO 27001 in a DC context examine:",
     "options": [
       {
         "id": "a",
-        "text": "Information security controls including physical and operational procedures"
-      },
-      {
-        "id": "b",
         "text": "Only coffee quality"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Chiller paint"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Fiber color only"
+      },
+      {
+        "id": "d",
+        "text": "Information security controls including physical and operational procedures"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "ISO 27001 covers ISMS including physical security controls.",
+    "correctOptionId": "d",
+    "explanation": "Compliance audits for ISO 27001 in a data center context thoroughly examine the effectiveness of an organization's Information Security Management System (ISMS), including both logical and physical security controls, as well as operational procedures designed to protect information assets.",
     "distractorExplanations": {
-      "b": "Irrelevant.",
-      "c": "Cosmetic.",
-      "d": "Minor factor."
+      "a": "Focusing only on coffee quality is irrelevant to an ISO 27001 audit, which is concerned with information security and operational controls, not catering services.",
+      "b": "Inspecting chiller paint is a cosmetic detail and does not pertain to the information security controls or operational procedures that an ISO 27001 audit evaluates.",
+      "c": "While fiber color coding can be part of good cable management, focusing solely on it during an ISO 27001 audit misses the broader scope of information security, physical access controls, and operational processes."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Load testing before accepting a new hall verifies:",
     "options": [
       {
@@ -231,16 +230,16 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Integrated load tests validate capacity before production traffic.",
+    "explanation": "Load testing, also known as integrated systems testing, is crucial for verifying that the data center's power and cooling infrastructure can reliably support the intended IT load under design conditions before going live. This ensures operational stability and prevents costly failures once production equipment is installed.",
     "distractorExplanations": {
-      "b": "Irrelevant.",
-      "c": "Thermal validation required.",
-      "d": "Engineering data required."
+      "b": "Focusing solely on aesthetic elements like lobby art is irrelevant to the critical technical performance and operational readiness of a data center facility. This choice misunderstands the purpose of pre-acceptance testing.",
+      "c": "Skipping thermal tests is a critical oversight, as thermal performance is a key aspect of data center reliability and efficiency. Proper load testing explicitly includes verifying cooling capacity under simulated IT loads.",
+      "d": "Relying only on marketing claims ignores the need for rigorous engineering validation and performance verification. Data center acceptance requires objective, measurable data to confirm functionality and capacity."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Escalation matrix defines:",
     "options": [
       {
@@ -261,136 +260,136 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Escalation ensures timely management involvement.",
+    "explanation": "An escalation matrix is a critical operational document that clearly defines the communication path and responsible personnel for different incident severities and timeframes. This ensures that issues are addressed promptly by the appropriate level of management or technical expertise.",
     "distractorExplanations": {
-      "b": "Irrelevant.",
-      "c": "Irrelevant.",
-      "d": "Irrelevant."
+      "b": "The cafeteria menu is unrelated to incident management and operational protocols within a data center. This choice reflects a misunderstanding of the structured nature of data center documentation.",
+      "c": "A holiday gift policy pertains to human resources and company culture, not to the critical incident response and communication structure of an escalation matrix. This option is entirely out of scope for data center operations.",
+      "d": "Font choices are aesthetic decisions for documentation, not a functional definition of an escalation matrix. This option demonstrates a lack of understanding of the purpose and content of operational procedures."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Tool control entering white space prevents:",
     "options": [
       {
         "id": "a",
-        "text": "Foreign object damage and forgotten conductive tools in racks"
-      },
-      {
-        "id": "b",
         "text": "All maintenance"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Logging"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Badge use"
+      },
+      {
+        "id": "d",
+        "text": "Foreign object damage and forgotten conductive tools in racks"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Tool checkout/scan reduces FOD and short circuits.",
+    "correctOptionId": "d",
+    "explanation": "Strict tool control procedures, such as logging tools in and out of the white space, are implemented to prevent foreign object debris (FOD) and ensure no conductive tools are left behind in racks. This minimizes the risk of short circuits, equipment damage, and service disruptions.",
     "distractorExplanations": {
-      "b": "Maintenance continues with control.",
-      "c": "Logging enhanced.",
-      "d": "Badges still used."
+      "a": "Tool control is a safety and operational best practice that enables maintenance to be performed safely and effectively, rather than preventing it. This choice incorrectly assumes that control measures impede necessary work.",
+      "b": "Tool control procedures often involve logging, which enhances accountability and traceability, rather than preventing it. This option misunderstands how controlled environments operate.",
+      "c": "Badge use is a separate security measure for access control and is typically still required in conjunction with tool control. This choice confuses different security and operational protocols."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Recertification for CDCP every three years implies:",
     "options": [
       {
         "id": "a",
-        "text": "Ongoing education or higher credentials to maintain professional standing"
-      },
-      {
-        "id": "b",
         "text": "Never learning again"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Automatic renewal without action"
+      },
+      {
+        "id": "c",
+        "text": "Ongoing education or higher credentials to maintain professional standing"
       },
       {
         "id": "d",
         "text": "Only paying without any requirements"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "EPI recertification requires continued professional development or exams.",
+    "correctOptionId": "c",
+    "explanation": "Recertification requirements, such as those for CDCP every three years, emphasize the importance of continuous professional development. This ensures that certified individuals stay current with evolving industry standards, technologies, and best practices, either through further education or re-examination.",
     "distractorExplanations": {
-      "b": "Learning continues.",
-      "c": "Action required.",
-      "d": "Program has requirements."
+      "a": "The need for recertification directly contradicts the idea of never learning again; it mandates ongoing engagement with new knowledge and skills. This choice misinterprets the purpose of professional certification.",
+      "b": "Professional certifications typically require active participation, such as earning continuing education credits or passing a new exam, rather than automatic renewal. This choice ignores the effort required to maintain credentials.",
+      "d": "While fees may be involved, recertification programs usually include specific requirements for demonstrating continued competency, not just payment. This choice oversimplifies the recertification process."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Weather preparedness for hurricanes includes:",
     "options": [
       {
         "id": "a",
-        "text": "Fuel top-off, generator tests, flood barriers, and staffing plans"
-      },
-      {
-        "id": "b",
         "text": "Ignoring forecasts"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Leaving roof doors open"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Disabling all alarms"
+      },
+      {
+        "id": "d",
+        "text": "Fuel top-off, generator tests, flood barriers, and staffing plans"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Severe weather playbooks reduce downtime and risk.",
+    "correctOptionId": "d",
+    "explanation": "Comprehensive weather preparedness for events like hurricanes involves critical steps such as topping off fuel for generators, conducting generator tests, deploying flood barriers, and establishing staffing plans. These actions ensure business continuity and protect infrastructure during severe weather events.",
     "distractorExplanations": {
-      "b": "Forecasts drive prep.",
-      "c": "Open doors admit water.",
-      "d": "Alarms stay active."
+      "a": "Ignoring forecasts is a dangerous approach that leaves a data center vulnerable to severe weather impacts. Proactive preparation relies heavily on monitoring and responding to weather predictions.",
+      "b": "Leaving roof doors open during a hurricane would invite severe water damage and compromise the integrity of the facility. This action is contrary to all emergency preparedness protocols.",
+      "c": "Disabling alarms during a severe weather event would remove critical monitoring capabilities, preventing timely detection of issues like flooding, power failures, or equipment malfunctions. Alarms are essential for incident response."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Customer access audit logs support:",
     "options": [
       {
         "id": "a",
-        "text": "Forensics after security events and compliance demonstrations"
-      },
-      {
-        "id": "b",
         "text": "Deleting history daily"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Publishing to public web"
+      },
+      {
+        "id": "c",
+        "text": "Forensics after security events and compliance demonstrations"
       },
       {
         "id": "d",
         "text": "Avoiding retention policies"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Logs prove who entered when for investigations.",
+    "correctOptionId": "c",
+    "explanation": "Customer access audit logs are vital for maintaining security and compliance, providing an immutable record of who accessed the facility and when. These logs are essential for forensic investigations after security incidents and for demonstrating adherence to regulatory requirements.",
     "distractorExplanations": {
-      "b": "Retention policies apply.",
-      "c": "Privacy violation.",
-      "d": "Retention required."
+      "a": "Deleting history daily would undermine the entire purpose of audit logs, which is to provide a continuous and verifiable record of access. Retention policies typically require logs to be kept for extended periods.",
+      "b": "Publishing audit logs to the public web would be a severe security breach, exposing sensitive operational data and potentially customer information. Audit logs are confidential and for internal use only.",
+      "d": "Avoiding retention policies for audit logs is a non-compliant practice that can lead to significant legal and regulatory penalties. Proper data retention is a fundamental aspect of information security and compliance."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Balanced scorecard for facility ops might track:",
     "options": [
       {
@@ -411,16 +410,16 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Multiple dimensions prevent optimizing one area at expense of others.",
+    "explanation": "A balanced scorecard provides a holistic view of facility operations by tracking multiple dimensions like availability, cost, safety, and sustainability. This prevents optimizing one area at the expense of others, ensuring overall operational health.",
     "distractorExplanations": {
-      "b": "Irrelevant.",
-      "c": "Multiple metrics needed.",
-      "d": "Data-driven."
+      "b": "Focusing solely on an irrelevant metric like pizza consumption does not provide any meaningful insight into facility operations or performance. A balanced scorecard requires relevant, measurable metrics.",
+      "c": "Relying on a single metric can lead to a skewed perspective and unintended negative consequences in other areas. Effective operations management requires a comprehensive set of metrics.",
+      "d": "Operational decisions should be based on data and strategic objectives, not random guesses. A balanced scorecard provides a structured framework for data-driven performance measurement."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "On-call rotation burnout mitigation includes:",
     "options": [
       {
@@ -441,55 +440,55 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Sustainable rotations maintain response quality.",
+    "explanation": "Mitigating on-call rotation burnout requires strategies that ensure fairness, support, and recovery for personnel. Fair scheduling, secondary backup, and mandatory post-incident rest are crucial for maintaining staff well-being and response quality.",
     "distractorExplanations": {
-      "b": "Unsustainable.",
-      "c": "Runbooks required.",
-      "d": "Fatigue causes errors."
+      "b": "Assigning one person to be on-call indefinitely is unsustainable and will quickly lead to severe burnout, impacting their health and ability to perform effectively. Rotations must be shared.",
+      "c": "Lack of documentation, such as runbooks and procedures, increases the burden on on-call staff to troubleshoot and resolve issues from scratch, contributing to stress and burnout. Clear documentation is essential.",
+      "d": "Ignoring fatigue in on-call staff can lead to increased errors, slower response times, and a higher risk of incidents. Acknowledging and addressing fatigue is vital for operational safety and efficiency."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Release management coordinating firmware on PDUs/UPS should:",
     "options": [
       {
         "id": "a",
-        "text": "Test in staging, schedule maintenance window, and maintain rollback"
-      },
-      {
-        "id": "b",
         "text": "Patch production blindly Friday 5 PM always"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Skip vendor release notes"
+      },
+      {
+        "id": "c",
+        "text": "Test in staging, schedule maintenance window, and maintain rollback"
       },
       {
         "id": "d",
         "text": "Disable all alarms during patch forever"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Firmware changes risk outages; controlled rollout required.",
+    "correctOptionId": "c",
+    "explanation": "Release management for critical infrastructure like PDUs/UPS firmware demands a cautious, structured approach. This includes thorough testing in a staging environment, scheduling updates during a maintenance window, and having a robust rollback plan to mitigate risks.",
     "distractorExplanations": {
-      "b": "Risky timing without plan.",
-      "c": "Notes guide compatibility.",
-      "d": "Alarms re-enabled after."
+      "a": "Patching production systems blindly, especially at a high-risk time like Friday 5 PM, is a recipe for disaster. Such actions lack planning, testing, and proper risk assessment.",
+      "b": "Vendor release notes contain critical information about new features, bug fixes, known issues, and compatibility requirements. Skipping them can lead to unexpected problems or system failures.",
+      "d": "Disabling all alarms permanently during patching removes vital monitoring and warning systems, leaving the facility vulnerable to undetected issues and potential outages. Alarms should be re-enabled promptly after changes."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Water leak incident first steps include:",
     "options": [
       {
         "id": "a",
-        "text": "Isolate source, protect IT downstream, notify customers if impact"
+        "text": "Ignore small drips"
       },
       {
         "id": "b",
-        "text": "Ignore small drips"
+        "text": "Isolate source, protect IT downstream, notify customers if impact"
       },
       {
         "id": "c",
@@ -500,77 +499,77 @@
         "text": "Hide incident"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Fast isolation limits damage and safety risk.",
+    "correctOptionId": "b",
+    "explanation": "In a water leak incident, the immediate priorities are to contain the damage and ensure safety. This involves quickly isolating the source, protecting downstream IT equipment from water exposure, and notifying customers if their services are impacted.",
     "distractorExplanations": {
-      "b": "Small leaks become major.",
-      "c": "Electrical hazard.",
-      "d": "Transparency required."
+      "a": "Ignoring small drips is a dangerous oversight, as minor leaks can rapidly escalate into major incidents, causing significant damage and operational disruption. All leaks require immediate attention.",
+      "c": "Spraying water on energized electrical buses creates an extreme electrocution hazard and can cause severe damage to equipment. This action is highly dangerous and should never be performed.",
+      "d": "Hiding an incident, especially one with potential customer impact, erodes trust and can lead to more severe consequences if the issue is not properly addressed. Transparency and clear communication are crucial."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Documentation version control for MOPs ensures:",
     "options": [
       {
         "id": "a",
-        "text": "Operators execute current approved steps"
-      },
-      {
-        "id": "b",
         "text": "Multiple conflicting pdfs floating"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "No owner"
+      },
+      {
+        "id": "c",
+        "text": "Operators execute current approved steps"
       },
       {
         "id": "d",
         "text": "Deletion after one use"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Controlled docs prevent outdated hazardous steps.",
+    "correctOptionId": "c",
+    "explanation": "Documentation version control for Method of Procedures (MOPs) ensures that operators always use the most current, approved, and safe steps for critical tasks. This prevents the use of outdated or incorrect procedures that could lead to errors or incidents.",
     "distractorExplanations": {
-      "b": "Version control prevents chaos.",
-      "c": "Owners maintain docs.",
-      "d": "Docs reused."
+      "a": "Without version control, multiple conflicting versions of documents can circulate, leading to confusion, errors, and inconsistent operations. Version control centralizes and standardizes documentation.",
+      "b": "Lack of ownership for documentation often results in outdated, inaccurate, or missing procedures. Clear ownership ensures that MOPs are regularly reviewed, updated, and maintained.",
+      "d": "Deleting documentation after a single use is counterproductive, as MOPs are designed to be repeatable and reusable for recurring tasks. They serve as a vital reference for consistent operations."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Mean time to repair (MTTR) improvement focuses on:",
     "options": [
       {
         "id": "a",
-        "text": "Spares, training, tooling, and accessible documentation"
-      },
-      {
-        "id": "b",
         "text": "Hiding spare parts"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Removing diagrams"
+      },
+      {
+        "id": "c",
+        "text": "Spares, training, tooling, and accessible documentation"
       },
       {
         "id": "d",
         "text": "Longer escalation paths"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Preparedness shortens restoration time.",
+    "correctOptionId": "c",
+    "explanation": "Improving Mean Time To Repair (MTTR) focuses on reducing the time it takes to restore service after a failure. This is achieved through readily available spares, well-trained personnel, appropriate tooling, and easily accessible, accurate documentation.",
     "distractorExplanations": {
-      "b": "Spares help MTTR.",
-      "c": "Diagrams aid repair.",
-      "d": "Shorter paths better."
+      "a": "Hiding spare parts or making them inaccessible directly impedes quick repairs, increasing MTTR. Spares must be organized, inventoried, and easily retrievable when needed.",
+      "b": "Removing diagrams or making them unavailable hinders troubleshooting and repair efforts, as technicians lack visual aids to understand system layouts and connections. Diagrams are crucial for efficient repair.",
+      "d": "Longer escalation paths introduce delays in getting the right expertise to address an issue, thereby increasing MTTR. Streamlined and efficient escalation processes are vital for rapid problem resolution."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Sustainability reporting for data centres may include:",
     "options": [
       {
@@ -591,25 +590,25 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Standard environmental metrics demonstrate stewardship.",
+    "explanation": "Sustainability reporting for data centers focuses on quantifiable environmental impacts and resource consumption. Key metrics like Power Usage Effectiveness (PUE), Water Usage Effectiveness (WUE), renewable energy fraction, and e-waste handling provide a comprehensive view of environmental stewardship.",
     "distractorExplanations": {
-      "b": "Data must be measurable.",
-      "c": "Irrelevant.",
-      "d": "Irrelevant."
+      "b": "Focusing only on marketing claims without measurable data is a misconception, as sustainability reporting requires verifiable metrics and transparent disclosure to be credible and effective.",
+      "c": "Including cafeteria napkin count is irrelevant to data center sustainability reporting, which focuses on operational environmental impacts such as energy, water, and waste directly related to the facility's function.",
+      "d": "Reporting employee shoe sizes is entirely irrelevant to data center sustainability, as these personal details have no bearing on the environmental performance or resource efficiency of the facility."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Alignment with ASHRAE TC 9.9 in operations means:",
     "options": [
       {
         "id": "a",
-        "text": "Monitoring inlet temps/RH and aligning setpoints with equipment classes"
+        "text": "Ignoring vendor specs"
       },
       {
         "id": "b",
-        "text": "Ignoring vendor specs"
+        "text": "Monitoring inlet temps/RH and aligning setpoints with equipment classes"
       },
       {
         "id": "c",
@@ -620,26 +619,26 @@
         "text": "No sensors"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Ops keeps environment within allowable envelopes for reliability.",
+    "correctOptionId": "b",
+    "explanation": "Alignment with ASHRAE TC 9.9 guidelines in data center operations involves continuously monitoring environmental conditions like inlet temperatures and relative humidity. This ensures that setpoints are maintained within the specific allowable envelopes for different equipment classes, optimizing reliability and energy efficiency.",
     "distractorExplanations": {
-      "b": "Vendor specs mandatory.",
-      "c": "May waste energy if below need.",
-      "d": "Sensors required."
+      "a": "Ignoring vendor specifications is a critical misconception, as ASHRAE guidelines are often used in conjunction with, and do not supersede, the specific environmental requirements and operating limits set by equipment manufacturers.",
+      "c": "Running a data center consistently at 5°C (41°F) is a misconception; while some equipment might tolerate it, it often leads to excessive energy consumption for cooling beyond what is necessary, contradicting ASHRAE's goal of optimizing efficiency within safe operating ranges.",
+      "d": "The idea of operating without sensors is a significant misconception, as continuous monitoring of environmental conditions like temperature and humidity is fundamental to maintaining ASHRAE compliance and ensuring equipment reliability."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Handover from construction to operations (COO) includes:",
     "options": [
       {
         "id": "a",
-        "text": "Training, warranty lists, test reports, and defect punch list closure"
+        "text": "Keys tossed without docs"
       },
       {
         "id": "b",
-        "text": "Keys tossed without docs"
+        "text": "Training, warranty lists, test reports, and defect punch list closure"
       },
       {
         "id": "c",
@@ -650,26 +649,26 @@
         "text": "Skipping baseline energy measurement"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "COO packages enable safe steady-state operation.",
+    "correctOptionId": "b",
+    "explanation": "A thorough handover from construction to operations (COO) is crucial for safe and efficient data center management. This process includes comprehensive training for operational staff, detailed warranty lists, all relevant test reports, and ensuring the complete closure of any defect punch lists.",
     "distractorExplanations": {
-      "b": "Formal handover required.",
-      "c": "Manuals essential.",
-      "d": "Baselines support PUE tracking."
+      "a": "The notion of simply 'tossing keys without docs' is a dangerous misconception, as a formal and documented handover process is essential to ensure operational readiness, safety, and accountability for a complex data center facility.",
+      "c": "The absence of Operations and Maintenance (O&M) manuals is a critical misconception, as these documents are indispensable for guiding staff on proper equipment operation, maintenance schedules, and troubleshooting procedures.",
+      "d": "Skipping baseline energy measurement is a misconception because establishing these initial metrics is vital for tracking Power Usage Effectiveness (PUE) and identifying opportunities for energy efficiency improvements over time."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Critical alarm flood handling uses:",
     "options": [
       {
         "id": "a",
-        "text": "Correlation, suppression of duplicates, and priority routing"
+        "text": "Disabling all monitoring"
       },
       {
         "id": "b",
-        "text": "Disabling all monitoring"
+        "text": "Correlation, suppression of duplicates, and priority routing"
       },
       {
         "id": "c",
@@ -680,26 +679,26 @@
         "text": "Ignoring duplicates forever"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Alarm management reduces noise while preserving critical signals.",
+    "correctOptionId": "b",
+    "explanation": "Effective critical alarm flood handling in data centers is achieved by implementing strategies such as alarm correlation to identify root causes, intelligent suppression of duplicate or nuisance alarms, and priority-based routing to ensure critical alerts reach the right personnel promptly.",
     "distractorExplanations": {
-      "b": "Monitoring stays on.",
-      "c": "Unfiltered floods cause fatigue.",
-      "d": "Duplicates masked intelligently."
+      "a": "Disabling all monitoring is a dangerous misconception, as it would leave the data center vulnerable to undetected failures and critical events, completely undermining operational awareness and incident response capabilities.",
+      "c": "Emailing every single alarm to all staff unfiltered is a misconception that leads to alarm fatigue and makes it nearly impossible to identify truly critical issues amidst a flood of irrelevant notifications, hindering effective response.",
+      "d": "Ignoring duplicates forever is a misconception; while immediate duplicates should be suppressed, the underlying cause of recurring alarms should be investigated and addressed to prevent future alarm floods and potential system issues."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Business continuity planning for data centres addresses:",
     "options": [
       {
         "id": "a",
-        "text": "Continuity of critical functions during prolonged outages"
+        "text": "Only office picnic scheduling"
       },
       {
         "id": "b",
-        "text": "Only office picnic scheduling"
+        "text": "Continuity of critical functions during prolonged outages"
       },
       {
         "id": "c",
@@ -710,43 +709,44 @@
         "text": "Single site with zero plan"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "BCP defines how services continue or recover.",
+    "correctOptionId": "b",
+    "explanation": "Business Continuity Planning (BCP) for data centers is designed to ensure the uninterrupted availability of critical IT functions and services during and after significant disruptive events or prolonged outages. It outlines strategies and procedures for maintaining essential operations.",
     "distractorExplanations": {
-      "b": "Irrelevant.",
-      "c": "Backups part of continuity.",
-      "d": "Planning required."
+      "a": "Focusing only on office picnic scheduling is a misconception, as BCP is a serious strategic process aimed at protecting vital business operations, not social events.",
+      "c": "Eliminating all backups is a severe misconception, as data backups are a fundamental component of any robust business continuity and disaster recovery strategy, ensuring data integrity and restorability after an incident.",
+      "d": "Relying on a single site with zero plan is a critical misconception, as BCP inherently involves planning for resilience, often through redundancy, geographic diversity, and detailed recovery procedures to mitigate single points of failure."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "operations-management"
   },
   {
-    "topicId": "operations-management",
     "prompt": "Final readiness before production go-live confirms:",
     "options": [
       {
         "id": "a",
-        "text": "Redundancy tests, monitoring baselines, staffing, and escalation paths"
-      },
-      {
-        "id": "b",
         "text": "Only logo placement"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Skipping failover tests"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "No on-call defined"
+      },
+      {
+        "id": "d",
+        "text": "Redundancy tests, monitoring baselines, staffing, and escalation paths"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Go-live checklist validates people, process, and technology.",
+    "correctOptionId": "d",
+    "explanation": "Final readiness before a data center goes live into production involves a comprehensive validation of all operational aspects. This includes successful redundancy tests, establishing monitoring baselines, confirming adequate staffing levels, and clearly defining all escalation paths for incident management.",
     "distractorExplanations": {
-      "b": "Cosmetic insufficient.",
-      "c": "Failover tests mandatory.",
-      "d": "On-call required."
+      "a": "Focusing only on logo placement is a misconception, as go-live readiness is about operational functionality and reliability, not superficial branding elements.",
+      "b": "Skipping failover tests is a critical misconception, as these tests are essential to verify that redundant systems and processes will function correctly during an actual outage, ensuring business continuity.",
+      "c": "Not defining on-call responsibilities is a significant misconception, as clear on-call schedules and procedures are vital for ensuring that critical incidents are addressed promptly by qualified personnel outside of regular business hours."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "operations-management"
   }
 ]

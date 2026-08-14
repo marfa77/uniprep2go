@@ -1,36 +1,35 @@
 [
   {
-    "topicId": "fire-security-network",
     "prompt": "NFPA 75 primarily addresses fire protection for:",
     "options": [
       {
         "id": "a",
-        "text": "Information technology equipment and data processing areas"
-      },
-      {
-        "id": "b",
         "text": "Only residential kitchens"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Swimming pool chemistry"
+      },
+      {
+        "id": "c",
+        "text": "Information technology equipment and data processing areas"
       },
       {
         "id": "d",
         "text": "Aircraft navigation lights"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "NFPA 75 covers IT equipment areas including detection and suppression strategies.",
+    "correctOptionId": "c",
+    "explanation": "NFPA 75, 'Standard for the Fire Protection of Information Technology Equipment,' specifically addresses fire safety requirements for computer rooms, data centers, and other areas containing IT equipment. It covers aspects like construction, fire detection, suppression systems, and environmental controls to protect these critical assets.",
     "distractorExplanations": {
-      "b": "Residential kitchens use other codes.",
-      "c": "Pool chemistry unrelated.",
-      "d": "Aviation unrelated."
+      "a": "This choice is incorrect because NFPA 75 is focused on information technology equipment and data processing areas, not residential kitchens. Fire safety for residential kitchens is covered by other building codes and fire safety standards.",
+      "b": "This choice is incorrect because NFPA 75 has no relevance to swimming pool chemistry. Fire protection standards are distinct from regulations concerning water treatment and chemical balance in recreational facilities.",
+      "d": "This choice is incorrect because NFPA 75 is not concerned with aircraft navigation lights. This standard specifically targets fire protection within IT environments, not aviation equipment or infrastructure."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "NFPA 76 focuses on:",
     "options": [
       {
@@ -51,16 +50,16 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "NFPA 76 addresses telecom infrastructure fire risks.",
+    "explanation": "NFPA 76, 'Standard for the Fire Protection of Telecommunications Facilities,' provides comprehensive guidelines for fire safety in central offices, remote sites, and other facilities housing telecommunications equipment. It addresses unique fire hazards and protection strategies specific to these critical communication infrastructures.",
     "distractorExplanations": {
-      "b": "Striping unrelated.",
-      "c": "Refrigerant is mechanical code.",
-      "d": "HR policy unrelated."
+      "b": "This choice is incorrect because NFPA 76 is a fire protection standard for telecommunications facilities, not for parking lot striping. Parking lot markings fall under civil engineering and traffic safety guidelines, not fire codes.",
+      "c": "This choice is incorrect because NFPA 76 focuses on fire protection for telecommunications facilities, not exclusively on chiller refrigerant selection. Refrigerant choices are typically governed by mechanical codes and environmental regulations, though they can have fire safety implications.",
+      "d": "This choice is incorrect because NFPA 76 is a technical standard for fire protection, not an employee vacation policy. Human resources policies are entirely separate from fire safety regulations for critical infrastructure."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Clean agent fire suppression (e.g., FM-200, Novec 1230) is chosen because:",
     "options": [
       {
@@ -81,16 +80,16 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Clean agents protect electronics better than water in many IT spaces.",
+    "explanation": "Clean agent fire suppression systems are chosen for data centers and other sensitive environments because they extinguish fires by chemical reaction or oxygen displacement without leaving corrosive or conductive residues. This characteristic is crucial for protecting energized electronic equipment and minimizing downtime after a fire event.",
     "distractorExplanations": {
-      "b": "Agents work via heat absorption/inhibition, not long oxygen displacement alone.",
-      "c": "Water is separate sprinkler approach.",
-      "d": "Agents are for enclosed volumes."
+      "b": "This choice is incorrect because clean agents primarily work by interrupting the fire's chemical reaction or by reducing oxygen to a level that cannot sustain combustion, not by permanently replacing oxygen for hours. The oxygen level typically returns to normal once the agent dissipates.",
+      "c": "This choice is incorrect because clean agent systems use gaseous or liquid agents that vaporize, not water. Flooding a room with water is characteristic of traditional sprinkler systems, which are generally avoided in data halls due to potential equipment damage.",
+      "d": "This choice is incorrect because clean agents are designed for enclosed spaces, such as data centers, server rooms, and telecommunications facilities, where their concentration can be maintained. They are not suitable for large, open-air environments like outdoor brush fires."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Pre-action sprinkler systems in data halls typically:",
     "options": [
       {
@@ -111,25 +110,25 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Pre-action reduces false discharge risk in sensitive areas.",
+    "explanation": "Pre-action sprinkler systems are commonly used in data halls because they require a two-step activation process: a fire detection event (e.g., smoke detector) and then a sprinkler head activation (due to heat). This dual confirmation significantly reduces the risk of accidental water discharge, which is critical for protecting sensitive IT equipment.",
     "distractorExplanations": {
-      "b": "Detection precedes water release.",
-      "c": "Diesel is not suppression agent.",
-      "d": "Detection is integral."
+      "b": "This choice is incorrect because pre-action systems are designed specifically to prevent instant water release. They require a confirmed fire detection event before water is allowed to fill the pipes, and then a sprinkler head must activate to discharge water.",
+      "c": "This choice is incorrect because pre-action systems use water as the extinguishing agent, not diesel fuel. Diesel fuel is highly flammable and would exacerbate a fire, not suppress it.",
+      "d": "This choice is incorrect because detection is an integral and crucial component of a pre-action sprinkler system. The system relies on fire detection (e.g., smoke detectors) to initiate the first step of its activation sequence, filling the pipes with water."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "VESDA (very early smoke detection apparatus) samples air to:",
     "options": [
       {
         "id": "a",
-        "text": "Detect combustion products at low concentrations before visible smoke"
+        "text": "Measure rack kW only"
       },
       {
         "id": "b",
-        "text": "Measure rack kW only"
+        "text": "Detect combustion products at low concentrations before visible smoke"
       },
       {
         "id": "c",
@@ -140,176 +139,176 @@
         "text": "Patch fiber cables"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Aspirating detection provides early warning in critical facilities.",
+    "correctOptionId": "b",
+    "explanation": "VESDA systems actively draw air samples into a detection chamber to identify minute combustion particles, providing an extremely early warning of potential fires before visible smoke or flames appear. This proactive detection is crucial for critical facilities to allow maximum time for intervention.",
     "distractorExplanations": {
-      "b": "Power metering separate.",
-      "c": "Humidification separate.",
-      "d": "Patching unrelated."
+      "a": "Measuring rack kW (kilowatts) is a function of power monitoring systems, not a smoke detection apparatus. VESDA's purpose is solely fire detection, not power consumption analysis.",
+      "c": "Humidifying a room is a function of environmental control systems, such as CRAC/CRAH units or dedicated humidifiers. VESDA systems are designed for fire detection and do not alter room humidity.",
+      "d": "Patching fiber cables involves connecting optical fibers for network connectivity, a task performed by network technicians. This is entirely unrelated to the function of a Very Early Smoke Detection Apparatus (VESDA)."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Fire compartmentation in a data centre aims to:",
     "options": [
       {
         "id": "a",
-        "text": "Limit fire/smoke spread between zones to protect life and continuity"
-      },
-      {
-        "id": "b",
         "text": "Increase airflow mixing"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Eliminate all egress"
+      },
+      {
+        "id": "c",
+        "text": "Limit fire/smoke spread between zones to protect life and continuity"
       },
       {
         "id": "d",
         "text": "Store cardboard freely"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Rated barriers and firestops contain events to manageable zones.",
+    "correctOptionId": "c",
+    "explanation": "Fire compartmentation uses fire-rated walls, floors, and doors to create distinct zones within a data center, effectively limiting the spread of fire and smoke. This containment strategy is vital for protecting human life, minimizing damage to critical equipment, and ensuring business continuity by isolating the incident.",
     "distractorExplanations": {
-      "b": "Compartmentation restricts spread.",
-      "c": "Egress must remain.",
-      "d": "Combustibles discouraged."
+      "a": "Fire compartmentation is designed to restrict the movement of fire and smoke, which inherently limits airflow between zones, not increases mixing. Increased airflow mixing would counteract the goal of containment.",
+      "b": "Fire safety regulations mandate clear and accessible egress routes for personnel evacuation. Compartmentation is about containing fire, not eliminating the ability for people to exit safely.",
+      "d": "Storing combustible materials like cardboard freely in a data center significantly increases fire risk and is contrary to fire safety best practices. Compartmentation aims to protect against, not enable, such hazards."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Gaseous suppression discharge may require:",
     "options": [
       {
         "id": "a",
-        "text": "Abort holds, warning horns/strobes, and door dampers to maintain agent concentration"
-      },
-      {
-        "id": "b",
         "text": "All doors wedged open during discharge"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Operators inside the room during release"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Disabling all alarms"
+      },
+      {
+        "id": "d",
+        "text": "Abort holds, warning horns/strobes, and door dampers to maintain agent concentration"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Life safety sequences warn occupants and hold doors to retain agent.",
+    "correctOptionId": "d",
+    "explanation": "To ensure the effectiveness of gaseous suppression systems, specific safety and containment measures are required. Abort holds allow personnel to stop an accidental discharge, warning horns and strobes alert occupants to evacuate, and door dampers (closers) ensure the agent concentration is maintained within the protected space by preventing its escape. These steps are critical for both life safety and system efficacy.",
     "distractorExplanations": {
-      "b": "Open doors vent agent.",
-      "c": "Evacuation required.",
-      "d": "Alarms must activate."
+      "a": "Leaving doors wedged open during a gaseous suppression discharge would allow the extinguishing agent to escape the protected area, rendering the system ineffective. The goal is to contain the agent to achieve the necessary concentration.",
+      "b": "It is extremely dangerous and strictly prohibited for operators or any personnel to remain inside a room during a gaseous suppression release. These agents can be hazardous or displace oxygen, requiring immediate evacuation.",
+      "c": "Disabling all alarms would compromise safety by preventing critical warnings to occupants and emergency services. Alarms are essential to alert personnel of the impending discharge and the need for evacuation."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Physical security mantrap (airlock) controls:",
     "options": [
       {
         "id": "a",
-        "text": "Sequential door access so only one door is open at a time"
-      },
-      {
-        "id": "b",
         "text": "Chilled water temperature"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Fiber optic loss"
+      },
+      {
+        "id": "c",
+        "text": "Sequential door access so only one door is open at a time"
       },
       {
         "id": "d",
         "text": "Battery watering"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Mantraps prevent tailgating into secure areas.",
+    "correctOptionId": "c",
+    "explanation": "A physical security mantrap, also known as an airlock, is designed to control access by ensuring that only one door can be opened at a time. This sequential access prevents unauthorized individuals from 'tailgating' or following an authorized person into a secure area, significantly enhancing physical security. It creates a controlled buffer zone.",
     "distractorExplanations": {
-      "b": "HVAC control.",
-      "c": "Optical testing.",
-      "d": "Battery maintenance."
+      "a": "Chilled water temperature is a parameter controlled by a data center's cooling infrastructure, such as chillers and Computer Room Air Conditioners (CRACs). A mantrap is a physical security device, not an HVAC control.",
+      "b": "Fiber optic loss refers to the reduction in signal strength over a fiber optic cable, which is measured during network testing. This is a network performance metric and has no relation to a physical security mantrap.",
+      "d": "Battery watering is a maintenance task for certain types of lead-acid batteries to ensure proper electrolyte levels. This is a power infrastructure maintenance activity and is unrelated to physical access control systems like a mantrap."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Biometric access control adds:",
     "options": [
       {
         "id": "a",
-        "text": "Stronger identity binding than shared PINs or cards alone"
-      },
-      {
-        "id": "b",
         "text": "Elimination of audit logs"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Public anonymous entry"
+      },
+      {
+        "id": "c",
+        "text": "Stronger identity binding than shared PINs or cards alone"
       },
       {
         "id": "d",
         "text": "Removal of cameras"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Biometrics reduce credential sharing risk when properly implemented.",
+    "correctOptionId": "c",
+    "explanation": "Biometric access control systems, which use unique physical characteristics like fingerprints or iris patterns, provide a much stronger link between an individual and their access credentials. Unlike shared PINs or transferable cards, biometrics confirm 'who you are,' significantly reducing the risk of unauthorized access through stolen or shared credentials. This enhances security by making it harder to impersonate an authorized user.",
     "distractorExplanations": {
-      "b": "Logs still required.",
-      "c": "Access remains authenticated.",
-      "d": "Cameras complement access."
+      "a": "Audit logs are crucial for security, providing a record of who accessed what, when, and where. Biometric systems enhance, rather than eliminate, the need for robust audit trails to ensure accountability and detect anomalies.",
+      "b": "Biometric access control is implemented to restrict entry to authorized individuals, not to facilitate public or anonymous access. Its purpose is to enhance security by verifying identity, making entry more controlled and less anonymous.",
+      "d": "Cameras are often used in conjunction with biometric access control systems to provide visual verification, record events, and deter unauthorized activity. Biometrics complement, rather than replace, other security measures like surveillance cameras."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "CCTV retention policies should align with:",
     "options": [
       {
         "id": "a",
-        "text": "Security investigations, privacy regulations, and storage capacity"
-      },
-      {
-        "id": "b",
         "text": "Random deletion hourly always"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Only cafeteria reviews"
+      },
+      {
+        "id": "c",
+        "text": "Security investigations, privacy regulations, and storage capacity"
       },
       {
         "id": "d",
         "text": "Zero recording ever"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Retention balances investigative need and legal privacy requirements.",
+    "correctOptionId": "c",
+    "explanation": "CCTV retention policies must be carefully crafted to balance the needs of security investigations, legal and regulatory privacy requirements, and the practical limitations of storage capacity. The policy should define how long footage is kept, considering the potential need for evidence in incidents, compliance with data protection laws, and the cost-effectiveness of storing large volumes of data. This ensures that footage is available when needed but not retained indefinitely without cause.",
     "distractorExplanations": {
-      "b": "Policy-driven retention, not random.",
-      "c": "Irrelevant scope.",
-      "d": "Recording often required."
+      "a": "Random deletion of CCTV footage hourly would undermine its purpose for security investigations and compliance. Retention policies must be structured and based on defined criteria, not arbitrary deletion schedules.",
+      "b": "Limiting CCTV reviews only to cafeteria activities would ignore the primary security purpose of surveillance in a data center, which is to monitor critical areas and detect unauthorized access or incidents. The scope of review must align with security objectives.",
+      "d": "Zero recording would eliminate any forensic evidence for security incidents, completely negating the purpose of CCTV. Most data centers require recording for security, compliance, and incident investigation purposes."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Intrusion detection on perimeter fencing may use:",
     "options": [
       {
         "id": "a",
-        "text": "Vibration, fiber optic sensing, or microwave beams"
+        "text": "Only decorative paint"
       },
       {
         "id": "b",
-        "text": "Only decorative paint"
+        "text": "Vibration, fiber optic sensing, or microwave beams"
       },
       {
         "id": "c",
@@ -320,17 +319,17 @@
         "text": "Removal of lighting"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Layered sensors detect climb/cut attempts.",
+    "correctOptionId": "b",
+    "explanation": "Perimeter intrusion detection systems often use a combination of technologies like vibration sensors, fiber optic sensing, or microwave beams to detect attempts to climb over or cut through fencing. These layered sensors provide early warning of unauthorized access to a secure area.",
     "distractorExplanations": {
-      "b": "Paint not detection.",
-      "c": "Open gates weaken security.",
-      "d": "Lighting aids detection."
+      "a": "Decorative paint serves an aesthetic purpose and offers no security detection capabilities for perimeter fencing. Relying on paint for security is a fundamental misunderstanding of physical security measures.",
+      "c": "Leaving gates open overnight actively undermines security by providing unrestricted access to a facility. This action directly contradicts the purpose of perimeter security, which is to prevent unauthorized entry.",
+      "d": "Removing lighting around perimeter fencing reduces visibility, making it easier for intruders to operate undetected. Adequate lighting is a crucial deterrent and aid for surveillance in physical security systems."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Visitor management in a colocation facility requires:",
     "options": [
       {
@@ -351,25 +350,25 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Visitor procedures maintain chain of custody and accountability.",
+    "explanation": "Effective visitor management in a colocation facility requires strict protocols such as escort policies, detailed badge logging, and clearly defined access zones. These measures ensure accountability, track visitor movements, and restrict access only to authorized areas, maintaining the chain of custody for all personnel.",
     "distractorExplanations": {
-      "b": "Escorts typical in white space.",
-      "c": "Shared PINs violate accountability.",
-      "d": "Logs required."
+      "b": "Allowing unescorted roaming in all halls of a colocation facility creates significant security vulnerabilities and violates strict access control policies. Visitors should always be accompanied or restricted to specific, approved areas to prevent unauthorized access to sensitive equipment.",
+      "c": "Sharing PINs for all visitors compromises individual accountability and makes it impossible to track who accessed what, when. Each visitor should have unique, temporary credentials to ensure proper audit trails and security.",
+      "d": "Not keeping records of visitors eliminates any audit trail, making it impossible to determine who was on-site or when, which is a critical security and compliance failure. Comprehensive logging is essential for accountability and incident investigation."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Structured cabling TIA-568 recommends:",
     "options": [
       {
         "id": "a",
-        "text": "Maximum channel lengths and performance categories for copper and fiber"
+        "text": "Unlimited cable length without loss"
       },
       {
         "id": "b",
-        "text": "Unlimited cable length without loss"
+        "text": "Maximum channel lengths and performance categories for copper and fiber"
       },
       {
         "id": "c",
@@ -380,26 +379,26 @@
         "text": "No testing of installed links"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Standards ensure predictable network performance.",
+    "correctOptionId": "b",
+    "explanation": "TIA-568 is a structured cabling standard that specifies maximum channel lengths and performance categories for both copper and fiber optic cabling. Adhering to these recommendations ensures predictable network performance, reliability, and interoperability across different systems and vendors.",
     "distractorExplanations": {
-      "b": "Length limits apply.",
-      "c": "Power/data separation rules exist.",
-      "d": "Certification testing validates installs."
+      "a": "The idea of unlimited cable length without signal loss is incorrect; all cable types, including copper and fiber, have specific distance limitations due to signal attenuation and dispersion. Exceeding these limits will lead to degraded or non-functional network performance.",
+      "c": "Mixing different voltages, especially power and data, within the same patch cords or pathways can cause electromagnetic interference (EMI) and create safety hazards. Structured cabling standards emphasize separation of power and data to prevent interference and ensure safety.",
+      "d": "Skipping testing of installed links is a critical oversight that can lead to unreliable network performance and difficult-to-diagnose issues. Certification testing validates that the cabling meets specified performance standards and is ready for operation."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Single-mode fiber is preferred for:",
     "options": [
       {
         "id": "a",
-        "text": "Long-distance campus and carrier links due to lower attenuation"
+        "text": "Only 2 m patch cords inside one rack always"
       },
       {
         "id": "b",
-        "text": "Only 2 m patch cords inside one rack always"
+        "text": "Long-distance campus and carrier links due to lower attenuation"
       },
       {
         "id": "c",
@@ -410,26 +409,26 @@
         "text": "Fire suppression piping"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "SMF supports long spans at high speeds.",
+    "correctOptionId": "b",
+    "explanation": "Single-mode fiber (SMF) is the preferred choice for long-distance campus and carrier links due to its significantly lower attenuation and higher bandwidth capabilities over extended runs. Its small core allows for a single light path, minimizing signal dispersion and enabling greater distances.",
     "distractorExplanations": {
-      "b": "MMF may be fine short distance; SMF not limited to rack only.",
-      "c": "Fiber carries light signals.",
-      "d": "Suppression uses listed piping."
+      "a": "While single-mode fiber can be used for short patch cords, its primary advantage is for long-distance applications, not exclusively for short rack connections. Multimode fiber is often more cost-effective for short distances within a rack or data center.",
+      "c": "Fiber optic cables transmit data using light signals, not electrical power. They are designed for communication and are completely unsuitable for carrying high-voltage power like 480V, which requires specialized electrical conductors.",
+      "d": "Fire suppression piping is part of a building's fire safety system and is designed to carry water or gas, not data signals. Fiber optic cables are for network communication and have no role in fire suppression infrastructure."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Multimode fiber OM4 supports:",
     "options": [
       {
         "id": "a",
-        "text": "Higher bandwidth at moderate distances within buildings"
+        "text": "Unlimited distance globally without repeaters"
       },
       {
         "id": "b",
-        "text": "Unlimited distance globally without repeaters"
+        "text": "Higher bandwidth at moderate distances within buildings"
       },
       {
         "id": "c",
@@ -440,86 +439,86 @@
         "text": "Diesel storage"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "OM4 is common for intra-building high-speed links.",
+    "correctOptionId": "b",
+    "explanation": "Multimode fiber (MMF) OM4 is designed to support higher bandwidth applications over moderate distances, typically within buildings or data centers. It offers improved performance compared to older multimode standards, making it suitable for high-speed intra-building links.",
     "distractorExplanations": {
-      "b": "Distance still limited by loss/modal dispersion.",
-      "c": "Modern data centres use digital fiber channels.",
-      "d": "Fuel unrelated."
+      "a": "No fiber optic cable, including OM4 multimode, supports unlimited global distance without repeaters; all fiber types experience signal loss and dispersion over distance. Multimode fiber, in particular, has much shorter distance limitations compared to single-mode fiber.",
+      "c": "While fiber can carry voice signals, OM4 multimode fiber is a modern, high-bandwidth medium designed for digital data transmission, not exclusively for legacy analog POTS (Plain Old Telephone Service). Modern data centers utilize fiber for high-speed digital communications.",
+      "d": "Diesel storage is related to fuel for generators and has no connection to fiber optic cabling, which is used for data transmission. This option represents a complete misunderstanding of the function of fiber optic technology."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Meet-me room security typically includes:",
     "options": [
       {
         "id": "a",
-        "text": "Carrier-only access, CCTV, and logging of cross-connect work"
-      },
-      {
-        "id": "b",
         "text": "Public open house without badges"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Storage of propane cylinders"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "No locks"
+      },
+      {
+        "id": "d",
+        "text": "Carrier-only access, CCTV, and logging of cross-connect work"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "MMRs are high-value connectivity points requiring strict control.",
+    "correctOptionId": "d",
+    "explanation": "Meet-me rooms (MMRs) are critical interconnection points in data centers, requiring stringent security measures such as carrier-only access, continuous CCTV monitoring, and detailed logging of all cross-connect work. These controls protect vital network infrastructure and ensure service integrity.",
     "distractorExplanations": {
-      "b": "Public access unacceptable.",
-      "c": "Hazmat prohibited.",
-      "d": "Locks required."
+      "a": "Allowing public open house access without badges to a meet-me room would be a severe security breach, compromising the integrity and confidentiality of critical network interconnections. Access must be strictly controlled and authenticated.",
+      "b": "Storing hazardous materials like propane cylinders in a meet-me room is a significant fire and safety hazard and is strictly prohibited in data center environments. MMRs must adhere to strict safety regulations.",
+      "c": "Having no locks on a meet-me room door would leave critical network infrastructure completely exposed to unauthorized access, theft, and tampering. Physical locks are a fundamental component of securing any sensitive area in a data center."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Cable fire stopping at rated walls must use:",
     "options": [
       {
         "id": "a",
-        "text": "Listed systems tested for that penetration type"
-      },
-      {
-        "id": "b",
         "text": "Foam without listing"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Leaving holes open"
+      },
+      {
+        "id": "c",
+        "text": "Listed systems tested for that penetration type"
       },
       {
         "id": "d",
         "text": "Duct tape only"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Firestop maintains wall rating integrity.",
+    "correctOptionId": "c",
+    "explanation": "Fire stopping is crucial for maintaining the fire-resistance rating of walls and floors, preventing the spread of fire and smoke through penetrations. Only listed systems, tested for specific penetration types and fire ratings, ensure compliance with building codes and fire safety standards.",
     "distractorExplanations": {
-      "b": "Non-listed foam may fail.",
-      "c": "Open holes defeat rating.",
-      "d": "Duct tape not approved."
+      "a": "Using foam without proper listing and testing for firestop applications is a significant safety hazard. Unlisted materials cannot guarantee the required fire resistance and may fail to contain fire or smoke, compromising the integrity of the fire-rated barrier.",
+      "b": "Leaving holes open in fire-rated walls completely defeats their purpose, allowing fire and smoke to spread unimpeded. This practice is a severe code violation and creates a direct pathway for fire propagation, endangering occupants and equipment.",
+      "d": "Duct tape is not designed or tested as a firestop material and offers no fire resistance. Relying on it for fire stopping is a critical misconception that would lead to immediate failure in a fire event, providing no protection against fire or smoke spread."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Emergency lighting in egress paths:",
     "options": [
       {
         "id": "a",
-        "text": "Illuminates exit routes during power loss per life safety codes"
+        "text": "Is optional in all data centres"
       },
       {
         "id": "b",
-        "text": "Is optional in all data centres"
+        "text": "Illuminates exit routes during power loss per life safety codes"
       },
       {
         "id": "c",
@@ -530,47 +529,47 @@
         "text": "Operates only during festivals"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Battery/generator-backed egress lighting supports evacuation.",
+    "correctOptionId": "b",
+    "explanation": "Emergency lighting in egress paths is mandated by life safety codes to ensure safe evacuation during power outages. These systems, typically backed by batteries or generators, illuminate exit routes, allowing personnel to find their way out of the facility safely.",
     "distractorExplanations": {
-      "b": "Typically mandatory.",
-      "c": "Detection separate.",
-      "d": "Continuous readiness required."
+      "a": "The idea that emergency lighting is optional in all data centers is a dangerous misconception. Life safety codes universally require emergency lighting in egress paths to ensure personnel can safely evacuate during power failures, making it mandatory in most facilities.",
+      "c": "Emergency lighting serves to illuminate egress paths, while fire detection systems are designed to identify the presence of fire. These are distinct safety systems with different functions; one cannot replace the other.",
+      "d": "Emergency lighting must be continuously ready to operate whenever the building is occupied, not just during specific events. The misconception that it only operates during festivals ignores its critical role in daily safety and emergency preparedness."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Safety shower/eyewash near battery rooms addresses:",
     "options": [
       {
         "id": "a",
-        "text": "Chemical splash exposure from electrolyte or maintenance fluids"
-      },
-      {
-        "id": "b",
         "text": "Coffee spills only"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Fiber polishing"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Humidity control"
+      },
+      {
+        "id": "d",
+        "text": "Chemical splash exposure from electrolyte or maintenance fluids"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Battery areas require emergency wash equipment per safety codes.",
+    "correctOptionId": "d",
+    "explanation": "Safety showers and eyewash stations are critical emergency equipment required near battery rooms to address potential chemical splash exposure. These facilities provide immediate decontamination for personnel who may come into contact with corrosive battery electrolytes or other hazardous maintenance fluids, minimizing injury.",
     "distractorExplanations": {
-      "b": "Electrolyte exposure is primary driver.",
-      "c": "Fiber work uses other tools.",
-      "d": "HVAC separate."
+      "a": "While coffee spills might occur, the primary and critical hazard that safety showers and eyewash stations are designed to mitigate in battery rooms is exposure to corrosive battery electrolyte. Focusing only on minor spills overlooks the severe chemical risks involved.",
+      "b": "Fiber polishing involves fine particulate matter and requires specific personal protective equipment, but it does not typically pose the chemical splash hazard that necessitates a safety shower or eyewash station. This option confuses different types of workplace hazards.",
+      "c": "Humidity control is a function of the HVAC system, designed to maintain environmental conditions for equipment. It is entirely unrelated to the immediate personal safety response required for chemical exposure, which is the purpose of safety showers and eyewash stations."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Hot work permits in a live data centre:",
     "options": [
       {
@@ -591,145 +590,145 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Hot work is a major ignition source requiring permits and watches.",
+    "explanation": "Hot work permits are essential for managing high-risk activities like welding or cutting in a live data center, controlling potential ignition sources. These permits mandate specific precautions, including a fire watch, area preparation to remove combustibles, and readily available fire extinguishing equipment, to prevent fires.",
     "distractorExplanations": {
-      "b": "Precautions mandatory.",
-      "c": "Extinguishers required.",
-      "d": "Change management still applies."
+      "b": "The idea of allowing welding on live racks without precautions is extremely dangerous and goes against all safety protocols for hot work. Such activities require stringent safety measures, including power isolation and extensive fire prevention, to avoid catastrophic incidents.",
+      "c": "Hot work permits do not eliminate the need for fire extinguishers; rather, they often mandate their presence and readiness. This misconception incorrectly assumes that the permit itself provides sufficient protection, ignoring the need for immediate fire suppression tools.",
+      "d": "Hot work permits are a specific safety control for high-risk activities, while change management is a broader process for controlling all changes to an IT environment. One does not replace the other; both are necessary for different aspects of operational control and safety."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Smoke control during fire events may use:",
     "options": [
       {
         "id": "a",
-        "text": "Pressurization, exhaust, and damper sequences per engineered plans"
-      },
-      {
-        "id": "b",
         "text": "Random fan reversal without design"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Sealing egress doors permanently"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Disabling all HVAC forever"
+      },
+      {
+        "id": "d",
+        "text": "Pressurization, exhaust, and damper sequences per engineered plans"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Engineered smoke control protects egress and equipment zones.",
+    "correctOptionId": "d",
+    "explanation": "Smoke control systems are engineered to manage smoke movement during a fire event, typically using pressurization, exhaust fans, and automated damper sequences. These systems are designed to protect egress paths, maintain visibility, and prevent smoke from spreading to critical areas, following specific engineered plans.",
     "distractorExplanations": {
-      "b": "Unplanned reversal can worsen spread.",
-      "c": "Egress must remain functional.",
-      "d": "Controlled sequences, not permanent disable."
+      "a": "Random fan reversal without an engineered design can exacerbate smoke spread and compromise safety. Smoke control systems rely on precise, pre-programmed sequences to effectively manage smoke, not arbitrary fan operations.",
+      "b": "Sealing egress doors permanently would trap occupants, directly contradicting the purpose of fire safety, which is to facilitate safe evacuation. Egress paths must remain accessible and functional during an emergency.",
+      "c": "Disabling all HVAC permanently would lead to environmental control failure and equipment damage, which is not the goal of smoke control. Instead, HVAC systems are integrated into engineered smoke control sequences, operating in a controlled manner to manage smoke, not to be permanently shut down."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Access control anti-passback prevents:",
     "options": [
       {
         "id": "a",
-        "text": "Using a badge to enter without a matching exit record (tailgating/credential pass-back)"
-      },
-      {
-        "id": "b",
         "text": "All legitimate access"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Logging events"
+      },
+      {
+        "id": "c",
+        "text": "Using a badge to enter without a matching exit record (tailgating/credential pass-back)"
       },
       {
         "id": "d",
         "text": "Installing cameras"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Anti-passback enforces sequential entry/exit rules.",
+    "correctOptionId": "c",
+    "explanation": "Access control anti-passback is a security feature designed to prevent unauthorized entry or credential sharing by enforcing a strict sequence of entry and exit. It ensures that a badge used to enter a controlled area must also be used to exit before it can be used to enter again, preventing tailgating or credential pass-back.",
     "distractorExplanations": {
-      "b": "Legitimate users follow sequence.",
-      "c": "Events still logged.",
-      "d": "Cameras independent."
+      "a": "Anti-passback is designed to enhance security by preventing misuse of credentials, not to block legitimate access. Authorized users who follow the correct entry and exit sequence will still be granted access, making this a misunderstanding of its function.",
+      "b": "Access control systems, including those with anti-passback, are fundamentally designed to log all entry and exit events for auditing and security purposes. The anti-passback feature works in conjunction with event logging, not as a replacement for it.",
+      "d": "Anti-passback is a logical security feature within an access control system, while cameras are physical surveillance devices. These are complementary security measures that operate independently; anti-passback does not affect the installation or function of cameras."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Network redundancy via diverse paths means:",
     "options": [
       {
         "id": "a",
-        "text": "Separate conduits/routes so one backhoe cut does not kill all links"
-      },
-      {
-        "id": "b",
         "text": "One conduit shared by all carriers"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Wireless only without encryption"
+      },
+      {
+        "id": "c",
+        "text": "Separate conduits/routes so one backhoe cut does not kill all links"
       },
       {
         "id": "d",
         "text": "No documentation"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Physical diversity underpins resilient connectivity.",
+    "correctOptionId": "c",
+    "explanation": "Network redundancy through diverse paths ensures that critical connections are maintained even if one physical route is compromised. This means using separate physical conduits or routes for network cables, so a single point of failure like a backhoe cutting a line does not disrupt all links.",
     "distractorExplanations": {
-      "b": "Shared conduit is single point of failure.",
-      "c": "Wireless still needs security.",
-      "d": "Documentation essential."
+      "a": "A shared conduit for all carriers creates a single point of failure, directly contradicting the principle of diverse path redundancy. If that single conduit is damaged, all links within it would be lost.",
+      "b": "While wireless technology can offer connectivity, operating it without encryption introduces significant security vulnerabilities, making it an unsuitable choice for secure network redundancy. Network security is paramount regardless of the transmission medium.",
+      "d": "Lack of documentation severely hinders troubleshooting, maintenance, and future planning for any network infrastructure, including redundant systems. Proper documentation is essential for effective network management."
     },
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Patch panel labeling standards (e.g., TIA-606) improve:",
     "options": [
       {
         "id": "a",
-        "text": "Troubleshooting and MAC work accuracy"
-      },
-      {
-        "id": "b",
         "text": "Fire suppression agent selection"
       },
       {
-        "id": "c",
+        "id": "b",
         "text": "Chiller efficiency only"
       },
       {
-        "id": "d",
+        "id": "c",
         "text": "Generator fuel polishing"
+      },
+      {
+        "id": "d",
+        "text": "Troubleshooting and MAC work accuracy"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Consistent IDs map physical ports to logical records.",
+    "correctOptionId": "d",
+    "explanation": "Patch panel labeling standards, such as TIA-606, provide a consistent and organized method for identifying network connections. This standardization significantly improves the accuracy and efficiency of troubleshooting network issues and performing Moves, Adds, and Changes (MAC work) by clearly mapping physical ports to their logical connections.",
     "distractorExplanations": {
-      "b": "Agent selection is fire engineering.",
-      "c": "Chiller separate.",
-      "d": "Fuel separate."
+      "a": "Fire suppression agent selection is a critical aspect of fire engineering and safety systems, which is entirely separate from network cabling and patch panel labeling. These standards do not influence the choice of fire suppression agents.",
+      "b": "Chiller efficiency relates to the cooling infrastructure of a data center and is unrelated to network patch panel labeling standards. While both are important for data center operations, they address different domains.",
+      "c": "Generator fuel polishing is a maintenance procedure for emergency power systems, ensuring fuel quality. This process has no connection to network cabling or the labeling of patch panels."
     },
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "topicId": "fire-security-network"
   },
   {
-    "topicId": "fire-security-network",
     "prompt": "Water mist systems in some IT-adjacent areas:",
     "options": [
       {
         "id": "a",
-        "text": "Use fine droplets to absorb heat with less water damage than standard sprinklers"
+        "text": "Always flood entire facility instantly"
       },
       {
         "id": "b",
-        "text": "Always flood entire facility instantly"
+        "text": "Use fine droplets to absorb heat with less water damage than standard sprinklers"
       },
       {
         "id": "c",
@@ -740,13 +739,14 @@
         "text": "Operate only manually with no alarms"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Water mist can be engineered for certain enclosures with reduced water volume.",
+    "correctOptionId": "b",
+    "explanation": "Water mist systems use very fine water droplets to extinguish fires by absorbing heat and displacing oxygen, while minimizing water damage compared to traditional sprinkler systems. This makes them suitable for certain IT-adjacent areas where water damage to equipment is a concern.",
     "distractorExplanations": {
-      "b": "Design targets specific hazards.",
-      "c": "Detection still required.",
-      "d": "Alarms integrate with systems."
+      "a": "Water mist systems are typically designed to target specific hazards or areas, not to instantly flood an entire facility. Their deployment is often localized to protect specific equipment or zones.",
+      "c": "Water mist systems are fire suppression mechanisms and do not replace the need for fire detection systems. Detection is still required to activate the suppression system and alert personnel to a fire event.",
+      "d": "Fire suppression systems, including water mist, are integrated with alarms and often operate automatically upon detection of a fire. Manual operation only, without alarms, would be a critical safety deficiency."
     },
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "topicId": "fire-security-network"
   }
 ]

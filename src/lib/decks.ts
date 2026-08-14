@@ -3697,26 +3697,26 @@ const rawDecks: Deck[] = [
     coverImage: "/covers/cdcp-anki-deck.webp",
     title: "CDCP Anki Deck",
     shortName: "CDCP",
-    subtitle: "A planned deck for EXIN EPI Certified Data Centre Professional exam prep.",
+    subtitle: "250 Anki flashcards for EXIN EPI Certified Data Centre Professional (CDCP) exam prep.",
     directAnswer:
-      "The CDCP Anki Deck is a planned UniPrep2Go product covering EXIN EPI Certified Data Centre Professional exam domains. It is not yet available for purchase. Take the free CDCP readiness check to benchmark weak domains.",
-    lastUpdated: "2026-06-02",
+      "The CDCP Anki Deck is a UniPrep2Go product with 250 MCQ flashcards covering EXIN EPI Certified Data Centre Professional domains — site/standards, power & EMF, cooling, fire/security, and operations — plus a free 40-question timed readiness check.",
+    lastUpdated: "2026-08-14",
     audience:
       "Data centre operators, facility engineers, and IT infrastructure professionals preparing for the EXIN EPI CDCP credential after accredited EPI training.",
     format: ".apkg",
     facts: {
-      cards: "Planned",
+      cards: "250+",
       topics: "Facilities (power, cooling, fire, security) and Operations per EXIN EPI CDCP blueprint",
-      formulas: "Planned PUE, cooling capacity, UPS sizing, and tier-classification facts",
+      formulas: "PUE, cooling capacity, UPS sizing, and tier-classification facts",
       examYear: "Current EXIN EPI CDCP cycle",
-      delivery: "Digital download (planned)",
+      delivery: "Digital download via Gumroad",
     },
     topicCoverage: [
-      { name: "Site, Standards, and Building", examWeight: "~7.5%", cards: "Planned" },
-      { name: "Power Infrastructure and EMF", examWeight: "~20%", cards: "Planned" },
-      { name: "Cooling, Water, and Thermal", examWeight: "~12.5%", cards: "Planned" },
-      { name: "Fire Protection, Security, and Network", examWeight: "~35%", cards: "Planned" },
-      { name: "Data Centre Operations", examWeight: "15%", cards: "Planned" },
+      { name: "Site, Standards, and Building", examWeight: "~7.5%", cards: "50" },
+      { name: "Power Infrastructure and EMF", examWeight: "~20%", cards: "50" },
+      { name: "Cooling, Water, and Thermal", examWeight: "~12.5%", cards: "50" },
+      { name: "Fire Protection, Security, and Network", examWeight: "~35%", cards: "50" },
+      { name: "Data Centre Operations", examWeight: "15%", cards: "50" },
     ],
     sampleCards: [
       {
