@@ -105,6 +105,39 @@ describe("visitor metrics", () => {
     expect(metrics.lifetimePathsByChannel.chatgpt["/decks/frm-part-1-anki-deck"]).toBe(1);
   });
 
+  it("does not leak historical paths into period ranks after reset", () => {
+    resetAllVisitorSets();
+
+    recordVisitorMetricInMemory(
+      createFunnelEvent({
+        name: "page_view",
+        deckSlug: "cfa-level-1-anki-deck",
+        visitorId: "vis_google",
+        path: "/decks/cfa-level-1-anki-deck",
+        referrer: "https://www.google.com/",
+      }),
+    );
+
+    resetPeriodVisitorSets();
+
+    recordVisitorMetricInMemory(
+      createFunnelEvent({
+        name: "page_view",
+        deckSlug: "sie-exam-anki-deck",
+        visitorId: "vis_google",
+        path: "/mock-exams/sie-full-mock",
+        referrer: "https://www.google.com/",
+      }),
+    );
+
+    const metrics = readVisitorMetricsFromMemory();
+
+    expect(metrics.pathsByChannel.google["/mock-exams/sie-full-mock"]).toBe(1);
+    expect(metrics.pathsByChannel.google["/decks/cfa-level-1-anki-deck"]).toBeUndefined();
+    expect(metrics.lifetimePathsByChannel.google["/decks/cfa-level-1-anki-deck"]).toBe(1);
+    expect(metrics.lifetimePathsByChannel.google["/mock-exams/sie-full-mock"]).toBe(1);
+  });
+
   it("attributes later internal pages to the Google visitor via path∩channel", () => {
     resetAllVisitorSets();
 

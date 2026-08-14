@@ -11,6 +11,7 @@ import {
   deleteIndexedRedisKeys,
   deleteAllProductRedisKeys,
   deletePeriodCountryRedisKeys,
+  deletePeriodPathRedisKeys,
   deletePeriodProductRedisKeys,
   emptyVisitorMetrics,
   periodVisitorRedisKeysForReset,
@@ -350,7 +351,8 @@ export async function resetFunnelStats() {
     ...periodVisitorRedisKeysForReset(),
   );
 
-  // Keep path visitor sets across period resets for all-time Google/LLM top pages.
+  // Keep lifetime path visitor sets across period resets for all-time Google/LLM top pages.
+  await deletePeriodPathRedisKeys(client);
   await deletePeriodCountryRedisKeys(client);
   await deletePeriodProductRedisKeys(client);
 }
@@ -395,6 +397,7 @@ export async function resetAllFunnelStats() {
   await deleteIndexedRedisKeys(client, VISITOR_REDIS_KEYS.pathIndex, (path) => [
     VISITOR_REDIS_KEYS.pathVisitors(path),
   ]);
+  await deletePeriodPathRedisKeys(client);
   await deletePeriodCountryRedisKeys(client);
   await deleteAllProductRedisKeys(client);
 }

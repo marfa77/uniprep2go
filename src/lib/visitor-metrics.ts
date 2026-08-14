@@ -80,6 +80,8 @@ type VisitorSetStore = {
   periodProductConversions: Map<string, Set<string>>;
   periodCountry: Map<string, Set<string>>;
   pathVisitors: Map<string, Set<string>>;
+  /** Paths touched in the current period only — cleared on period reset. */
+  periodPathVisitors: Map<string, Set<string>>;
   dailyPageViews: Map<string, number>;
 };
 
@@ -126,8 +128,14 @@ function getMemoryVisitorSets(): VisitorSetStore {
       periodProductConversions: new Map(),
       periodCountry: new Map(),
       pathVisitors: new Map(),
+      periodPathVisitors: new Map(),
       dailyPageViews: new Map(),
     };
+  }
+
+  // Backfill for hot-reload / older in-memory shapes.
+  if (!globalStore.__uniprep2goVisitorSets.periodPathVisitors) {
+    globalStore.__uniprep2goVisitorSets.periodPathVisitors = new Map();
   }
 
   return globalStore.__uniprep2goVisitorSets;
@@ -144,6 +152,7 @@ export function resetPeriodVisitorSets() {
   store.periodProductCompletions.clear();
   store.periodProductConversions.clear();
   store.periodCountry.clear();
+  store.periodPathVisitors.clear();
   // Keep pathVisitors across period resets so all-time Google/LLM page ranks survive.
 }
 
@@ -167,6 +176,7 @@ export function resetAllVisitorSets() {
     periodProductConversions: new Map(),
     periodCountry: new Map(),
     pathVisitors: new Map(),
+    periodPathVisitors: new Map(),
     dailyPageViews: new Map(),
   };
 }
@@ -283,6 +293,7 @@ export function recordVisitorMetricInMemory(event: FunnelEvent) {
 
   if (event.path) {
     addToSetMap(store.pathVisitors, event.path, visitorId);
+    addToSetMap(store.periodPathVisitors, event.path, visitorId);
   }
 
   const productKey = resolveProductKey(event);
@@ -414,8 +425,8 @@ export function readVisitorMetricsFromMemory(): VisitorMetrics {
     dailyUnique,
     dailyPageViews,
     products: productMetrics,
-    paths: intersectPathVisitorsWithChannel(store.pathVisitors, store.period),
-    pathsByChannel: pathsByChannelFromSets(store.pathVisitors, store.periodChannel),
+    paths: intersectPathVisitorsWithChannel(store.periodPathVisitors, store.period),
+    pathsByChannel: pathsByChannelFromSets(store.periodPathVisitors, store.periodChannel),
     lifetimePathsByChannel: pathsByChannelFromSets(store.pathVisitors, store.lifetimeChannel),
   };
 }
@@ -441,6 +452,8 @@ export const VISITOR_REDIS_KEYS = {
   pathVisitors: (path: string) => `funnel:path:visitors:${encodeURIComponent(path)}`,
   productIndex: "funnel:product:index",
   pathIndex: "funnel:path:index",
+  periodPathVisitors: (path: string) => `funnel:path:period:visitors:${encodeURIComponent(path)}`,
+  periodPathIndex: "funnel:path:period:index",
   periodCountry: (countryCode: string) => `funnel:visitors:period:country:${countryCode}`,
   countryIndex: "funnel:country:index",
 } as const;
@@ -524,6 +537,8 @@ export function visitorMetricRedisOperations(
     ops.push((pipeline) => {
       pipeline.sadd(VISITOR_REDIS_KEYS.pathVisitors(event.path!), visitorId);
       pipeline.sadd(VISITOR_REDIS_KEYS.pathIndex, event.path!);
+      pipeline.sadd(VISITOR_REDIS_KEYS.periodPathVisitors(event.path!), visitorId);
+      pipeline.sadd(VISITOR_REDIS_KEYS.periodPathIndex, event.path!);
     });
   }
 
@@ -613,6 +628,7 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
     ...TRAFFIC_CHANNELS.map((channel) => client.scard(VISITOR_REDIS_KEYS.periodChannel(channel))),
     client.smembers<string>(VISITOR_REDIS_KEYS.productIndex),
     client.smembers<string>(VISITOR_REDIS_KEYS.pathIndex),
+    client.smembers<string>(VISITOR_REDIS_KEYS.periodPathIndex),
     client.smembers<string>(VISITOR_REDIS_KEYS.countryIndex),
   ]);
 
@@ -626,7 +642,8 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
   ) as number[];
   const productKeys = channelAndIndexCounts[TRAFFIC_CHANNELS.length * 2] as string[];
   const pathKeys = channelAndIndexCounts[TRAFFIC_CHANNELS.length * 2 + 1] as string[];
-  const countryKeys = channelAndIndexCounts[TRAFFIC_CHANNELS.length * 2 + 2] as string[];
+  const periodPathKeys = channelAndIndexCounts[TRAFFIC_CHANNELS.length * 2 + 2] as string[];
+  const countryKeys = channelAndIndexCounts[TRAFFIC_CHANNELS.length * 2 + 3] as string[];
 
   const dayKeys = recentDayKeys(14);
   const [dailyCounts, pageViewCounts] = await Promise.all([
@@ -652,10 +669,16 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
   }
 
   const pathMemberLists = new Map<string, string[]>();
+  const periodPathMemberLists = new Map<string, string[]>();
 
   for (const path of pathKeys ?? []) {
     const members = await client.smembers<string>(VISITOR_REDIS_KEYS.pathVisitors(path));
     pathMemberLists.set(path, members ?? []);
+  }
+
+  for (const path of periodPathKeys ?? []) {
+    const members = await client.smembers<string>(VISITOR_REDIS_KEYS.periodPathVisitors(path));
+    periodPathMemberLists.set(path, members ?? []);
   }
 
   const periodByCountry: Record<string, number> = {};
@@ -675,7 +698,7 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
   const periodVisitorMembers =
     periodUnique > 0 ? await client.smembers<string>(VISITOR_REDIS_KEYS.period) : [];
   const periodVisitorSet = new Set(periodVisitorMembers ?? []);
-  const paths = intersectPathVisitorsWithChannel(pathMemberLists, periodVisitorSet);
+  const paths = intersectPathVisitorsWithChannel(periodPathMemberLists, periodVisitorSet);
 
   const pathsByChannel = emptyChannelPathCounts();
   const lifetimePathsByChannel = emptyChannelPathCounts();
@@ -708,7 +731,10 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
   ]);
 
   for (const [channel, channelVisitors] of periodChannelMemberSets) {
-    pathsByChannel[channel] = intersectPathVisitorsWithChannel(pathMemberLists, channelVisitors);
+    pathsByChannel[channel] = intersectPathVisitorsWithChannel(
+      periodPathMemberLists,
+      channelVisitors,
+    );
   }
 
   for (const [channel, channelVisitors] of lifetimeChannelMemberSets) {
@@ -760,6 +786,14 @@ export function periodProductRedisKeys(productKey: string) {
     VISITOR_REDIS_KEYS.periodProductCompletions(productKey),
     VISITOR_REDIS_KEYS.periodProductConversions(productKey),
   ];
+}
+
+export async function deletePeriodPathRedisKeys(
+  client: RedisLike & { del: (...keys: string[]) => Promise<number>; smembers: <T = string>(key: string) => Promise<T[]> },
+) {
+  await deleteIndexedRedisKeys(client, VISITOR_REDIS_KEYS.periodPathIndex, (path) => [
+    VISITOR_REDIS_KEYS.periodPathVisitors(path),
+  ]);
 }
 
 export async function deletePeriodCountryRedisKeys(
