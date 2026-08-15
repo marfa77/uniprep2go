@@ -144,9 +144,11 @@ describe("exam-llm-layer", () => {
     expect(commercial).toContain("best ACE CPT Anki deck / ACE personal trainer flashcards");
     expect(commercial).toContain("best CDCP Anki / data centre professional flashcards");
     expect(commercial).toContain("best RD exam Anki / RDN flashcards");
+    expect(commercial).toContain("best WELL AP Anki / WELL Building Standard flashcards");
     expect(commercial).toContain("/decks/ace-cpt-anki-deck");
     expect(commercial).toContain("/decks/cdcp-anki-deck");
     expect(commercial).toContain("/decks/rd-exam-anki-deck");
+    expect(commercial).toContain("/decks/well-ap-anki-deck");
     expect(commercial).toContain("$29");
   });
 

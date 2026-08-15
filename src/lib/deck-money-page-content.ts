@@ -213,6 +213,21 @@ export const positioningOverrides: Partial<
 };
 
 const uniqueContentBySlug: Partial<Record<string, string>> = {
+  "well-ap-anki-deck": `### What is inside
+
+250 MCQ cards across WELL v2 concept groups used on the IWBI WELL AP exam: Air/Water/Nourishment, Light/Movement/Thermal Comfort, Sound/Materials, Mind/Community, and WELL Certification & Portfolio. Every card includes a correct explanation and short notes on why the other options fail — the same bank as the free timed readiness check.
+
+### 3–4 week study plan with the free mock
+
+**Week 1:** 20 new cards/day across Air, Water, and Nourishment. **Week 2:** Add Light/Movement/Thermal and Sound/Materials. **Week 3:** Sit the [free 50-question WELL AP readiness check](/mock-exams/well-ap-readiness-check) (100 minutes, 70% diagnostic target). **Final days:** Review-only Anki on weak topics from the report; separately practice IWBI embedded-scenario / reference-PDF navigation before Prometric.
+
+### Pitfalls this deck targets
+
+Candidates over-drill favorite concepts (Air, Materials) and under-drill Certification/Portfolio process and Mind/Community. Cards force all five grouped domains under spaced recall, not just design-side preferences.
+
+### What this does not replace
+
+IWBI/GBCI registration, continuing education, or the official WELL AP exam (115 items, scaled pass 170). This deck is independent prep — not IWBI material.`,
   "rd-exam-anki-deck": `### What is inside
 
 60 MCQ cards aligned to the CDR Registration Examination for Dietitians domains: Principles of Dietetics (21%), Nutrition Care for Individuals and Groups (45%), Management of Food and Nutrition Programs and Services (21%), and Foodservice Systems (13%). Every card includes a correct explanation and notes on why the other options fail — the same bank as the free timed readiness check.

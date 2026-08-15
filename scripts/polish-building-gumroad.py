@@ -97,6 +97,18 @@ EXAM_CONTEXT: dict[str, dict[str, str]] = {
         "covers": "BD+C specialty domain drills for daily review.",
         "disclaimer": "USGBC / GBCI",
     },
+    "well-ap-anki-deck": {
+        "exam_name": "WELL Accredited Professional — WELL AP (IWBI / GBCI)",
+        "blurb": (
+            "WELL AP is IWBI’s credential for human health in the built environment (WELL Building Standard v2). "
+            "GBCI administers the exam: 115 MCQ (100 scored + 15 unscored) in 2.5 hours, scaled pass 170 (125–200)."
+        ),
+        "covers": (
+            "This deck drills Air, Water, Nourishment, Light, Movement, Thermal Comfort, Sound, Materials, "
+            "Mind, Community, and WELL Certification / Portfolio process MCQs with explanations on every card."
+        ),
+        "disclaimer": "IWBI / GBCI",
+    },
 }
 
 

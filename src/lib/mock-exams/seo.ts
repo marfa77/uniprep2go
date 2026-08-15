@@ -460,21 +460,23 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "LEED AP O+M practice test",
   },
   "well-ap-readiness-check": {
-    title: "Free WELL AP Practice Test | 50-Question WELL Accredited Professional Readiness Check",
+    title: "Free WELL AP Practice Test 2026 | 50 Timed Questions + Topic Report",
     description:
-      "Free WELL AP practice questions online: 50 timed questions across WELL v2 concepts and certification process, 100 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent prep — not IWBI exam material.",
+      "Free WELL AP practice test online: 50 timed questions, 100 minutes, 70% readiness target, full topic diagnosis, and answer review. Official GBCI/IWBI exam is 115 items in 2.5 hours (scaled pass 170) — not the outdated “100 questions / 2 hours” summaries some sites still show. Independent prep — not IWBI material.",
     keywords: [
       "well ap practice test",
+      "well ap free mock exam",
       "well accredited professional exam",
       "well v2 exam prep",
       "iwbi well ap study guide",
       "free well ap practice questions",
       "well building standard exam",
       "gbci well ap prep",
+      "well ap practice exam 2026",
     ],
     headline: "Free WELL Accredited Professional (WELL AP) Readiness Check",
     intro:
-      "A timed WELL AP readiness diagnostic across WELL v2 knowledge domains. Official exam: 115 questions, 2.5 hours, scaled pass score 170 (125–200 scale), delivered by GBCI for IWBI.",
+      "A timed WELL AP readiness diagnostic across WELL v2 knowledge domains. Official exam (verify on IWBI): 115 questions (100 scored + 15 unscored), 2.5 hours, scaled pass 170 on a 125–200 scale, Prometric delivery by GBCI for IWBI — with embedded scenario/reference PDFs.",
     audience:
       "Architects, designers, building operators, HR/wellness professionals, and sustainability consultants preparing for the WELL Accredited Professional credential.",
     practiceTestLabel: "WELL AP practice test",

@@ -1194,14 +1194,15 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Readiness check sampled across WELL v2 knowledge domains per IWBI exam specifications. Official GBCI exam: 115 questions (100 scored + 15 unscored pilot), 2.5 hours, scaled pass score 170 (125–200 scale). Closed book with embedded scenario and reference PDFs. Not IWBI exam material.",
+      "Official GBCI/IWBI WELL AP (verify candidate handbook): 115 MCQ (100 scored + 15 unscored), 2.5 hours, scaled pass 170 (125–200), closed book with embedded scenario + reference PDFs. Some third-party sites still cite outdated “100 questions / 2 hours / scale out of 300” — use IWBI sources. This UniPrep2Go check is a 50-question diagnostic, not a GBCI exam.",
     disclaimer: wellDisclaimer,
     description:
-      "A 50-question WELL AP readiness diagnostic across WELL v2 concepts — air, water, nourishment, light, movement, materials, mind, community, and certification process. Independent prep, not IWBI material.",
+      "Free 50-question WELL AP readiness check across WELL v2 concepts — air, water, nourishment, light, movement, materials, mind, community, and certification process. Independent prep, not IWBI material.",
     examBody: "IWBI / GBCI (International WELL Building Institute)",
-    lastUpdated: "2026-07-24",
+    lastUpdated: "2026-08-15",
     questionSourceNote:
-      "Original UniPrep2Go questions authored for the WELL AP readiness check (250 cards across five WELL v2 concept groups; 50-question timed session).",
+      "Original UniPrep2Go questions authored for the WELL AP readiness check (250 cards across five WELL v2 concept groups; 50-question timed session). Distractor notes locally thickened August 2026.",
+    ankiDeckCardCount: 250,
   },
   {
     slug: "cem-readiness-check",

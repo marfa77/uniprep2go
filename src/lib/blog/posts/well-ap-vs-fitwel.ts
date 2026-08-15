@@ -5,7 +5,7 @@ export const wellApVsFitwelPost: BlogPostDraft = {
   title: "WELL AP vs Fitwel: Which Wellness Certification Is Worth It in 2026?",
   titleTag: "WELL AP vs Fitwel 2026: Cost, Difficulty & Employer Demand",
   metaDescription:
-    "WELL AP costs $1,500 and has a 50% pass rate. Fitwel costs $495 and is online. Here is which one building owners ask for, and which one is a checkbox.",
+    "WELL AP vs Fitwel in 2026: exam format (115Q / 2.5h / scaled pass 170), credential difficulty, project cost, and which wellness cert employers actually ask for.",
   publishedAt: "2026-07-27",
   eyebrow: "WELL · Building wellness",
   clusterId: "well-ap",
@@ -79,20 +79,20 @@ export const wellApVsFitwelPost: BlogPostDraft = {
             ],
             [
               "Passing score",
-              "70% (estimated; IWBI does not publish exact)",
+              "Scaled 170 on a 125–200 scale (GBCI/IWBI)",
               "Automatic upon course completion",
             ],
-            ["Cost", "$1,065–$1,500 depending on membership", "$495"],
+            ["Exam / course fee", "~$299 exam registration (verify current IWBI pricing); prep courses extra", "$495"],
             ["Prerequisites", "None", "None"],
             ["Study time", "60–100 hours", "4–6 hours"],
             [
               "Maintenance",
-              "36 CE hours over 3 years",
+              "Continuing education required (verify current CE rules)",
               "None required; recertification encouraged",
             ],
             [
               "Difficulty",
-              "High. Pass rate estimated 50–60%.",
+              "High — scenario-heavy WELL v2 detail; first-time pass rates vary by prep quality",
               "Low. Completion-based.",
             ],
           ],

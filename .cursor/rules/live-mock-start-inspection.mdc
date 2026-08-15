@@ -1,0 +1,42 @@
+---
+description: Live mock:start traffic — bank + GEO + competitor AEO checklist
+alwaysApply: true
+---
+
+# Live mock start inspection
+
+When the user pastes a UniPrep2Go `mock:…:start` / “Mock started” signal (or asks to inspect a live mock path), run this **same pass every time**. Do not stop at bank/Gumroad only.
+
+## Mandatory layers (all three)
+
+### 1) Bank / product pathway
+- Smell triage (`npm run triage:mock-banks -- --slug {mockSlug}` or equivalent)
+- Correct gate: `validate:certification` (building) or `validate:wave-deck` (wave)
+- Session size vs official exam note, key bias, template stems, sample cards, Gumroad polish/landing if selling
+
+### 2) Our GEO / LLM visibility
+- `exam-facts` + registry `examFactsKey` when applicable
+- High-intent mock block + commercial deck cite in `exam-llm-layer` when the deck is live for sale
+- Homepage + mock-index discovery links
+- Money-page unique content for the deck slug
+- `npm run llms:export` after cite/facts changes
+- Focused tests for facts / llm-layer / launch as touched
+
+### 3) Competitor SEO / GEO / AEO (no OpenRouter)
+OpenRouter audits are **forbidden**. Use WebSearch + fetch of top SERP results only.
+
+For the mock’s primary intents (e.g. `{exam} practice test`, `{exam} free mock`, `{exam} Anki`):
+
+1. List top ~5 organic competitors (and any AI-overview / featured-snippet style targets if visible)
+2. Compare against our `/mock-exams/{slug}` + `/decks/{deckSlug}`:
+   - title / H1 / direct-answer first paragraph
+   - official exam facts (Q count, time, pass score) accuracy
+   - FAQ / schema / extractable Q&A
+   - free timed mock vs paywall / lead-gate
+   - Anki / flashcards CTA clarity
+3. Output a short **beat / gap / ship** list and **fix gaps that are cheap and ours** in the same pass when possible
+
+## Speed
+- One writer pass for the SKU that got traffic — do not mix unrelated certs
+- Prefer local mechanical bank fixes; no OpenRouter enrich
+- Commit/push only when the user asks to deploy / ship

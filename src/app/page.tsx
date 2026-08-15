@@ -79,12 +79,14 @@ const examPathLinks = [
   {
     title: "Building, safety & sustainability",
     description:
-      "EPA 608, LEED, NEBOSH, CFPS, CDCP data centre, and MRICS QS pathways — free timed mocks with linked Anki decks for competency repair.",
+      "EPA 608, LEED, WELL AP, NEBOSH, CFPS, CDCP data centre, and MRICS QS pathways — free timed mocks with linked Anki decks for competency repair.",
     links: [
       { href: `/${BUILDING_CERTIFICATION_HUB_SLUG}`, label: "All building certification pathways" },
       { href: "/mock-exams/mrics-quantity-surveying-readiness-check", label: "MRICS QS practice test" },
       { href: "/mock-exams/epa-608-readiness-check", label: "EPA 608 practice test" },
       { href: "/mock-exams/leed-green-associate-readiness-check", label: "LEED GA practice test" },
+      { href: "/mock-exams/well-ap-readiness-check", label: "WELL AP practice test" },
+      { href: "/decks/well-ap-anki-deck", label: "WELL AP Anki deck" },
       { href: "/mock-exams/cdcp-readiness-check", label: "CDCP data centre practice test" },
       { href: "/mock-exams/nebosh-readiness-check", label: "NEBOSH readiness check" },
     ],
