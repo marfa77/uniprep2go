@@ -111,7 +111,7 @@ describe("deck catalog", () => {
     }
   });
 
-  it("keeps twenty-one curated language Anki decks plus DELF Prim and citizenship bundle on Gumroad", () => {
+  it("keeps curated language Anki decks plus DELF Prim, citizenship, and DELE/CCSE bundle on Gumroad", () => {
     const expectedAnkiLanguageDecks = [
       "ciple-a2-european-portuguese-anki-deck",
       "delf-b2-french-anki-deck",
@@ -141,6 +141,7 @@ describe("deck catalog", () => {
       "citizenship-naturalization-anki-bundle",
       "swiss-citizenship-anki-deck",
       "luxembourg-vivre-ensemble-anki-deck",
+      "dele-a2-ccse-spanish-citizenship-bundle",
     ];
 
     const languageDecks = availableDecks.filter((deck) => deck.category === "language");
@@ -274,7 +275,7 @@ describe("deck catalog", () => {
     expect(deleDeck?.directAnswer).toContain("not a DELE + CCSE nationality bundle");
     expect(deleDeck?.facts.cards).toBe("1500");
     expect(deleDeck?.directAnswer).toContain("single Anki .apkg");
-    expect(getDeckBySlug("dele-a2-ccse-spanish-citizenship-bundle")?.status).toBe("planned");
+    expect(getCatalogDeckBySlug("dele-a2-ccse-spanish-citizenship-bundle")?.status).toBe("available");
     expect(getDeckBySlug("czech-citizenship-anki-deck")?.status).toBe("planned");
     expect(getDeckBySlug("polish-citizenship-anki-deck")?.status).toBe("planned");
     const frenchDeck = getDeckBySlug("delf-b2-french-anki-deck");
@@ -795,12 +796,34 @@ describe("deck catalog", () => {
       "cdcp-anki-deck": "CDCP Anki Deck — 250+ Flashcards",
       "cem-anki-deck": "CEM Anki Deck — 250+ Flashcards",
       "enrolled-agent-anki-deck": "IRS Enrolled Agent Anki Deck — 60 Flashcards",
+      "fl-real-estate-anki-deck": "Florida Real Estate Anki Deck — 60 Flashcards",
       "mortgage-loan-originator-anki-deck": "SAFE MLO Anki Deck — 60 Flashcards",
       "series-6-anki-deck": "Series 6 Anki Deck — 60 Flashcards",
       "series-65-anki-deck": "Series 65 Anki Deck — 60 Flashcards",
       "series-66-anki-deck": "Series 66 Anki Deck — 60 Flashcards",
       "series-79-anki-deck": "Series 79 Anki Deck — 60 Flashcards",
       "series-99-anki-deck": "Series 99 Anki Deck — 60 Flashcards",
+      "ak-real-estate-anki-deck": "Alaska Real Estate Anki Deck — 60 Flashcards",
+      "al-real-estate-anki-deck": "Alabama Real Estate Anki Deck — 60 Flashcards",
+      "ar-real-estate-anki-deck": "Arkansas Real Estate Anki Deck — 60 Flashcards",
+      "az-real-estate-anki-deck": "Arizona Real Estate Anki Deck — 60 Flashcards",
+      "co-real-estate-anki-deck": "Colorado Real Estate Anki Deck — 60 Flashcards",
+      "dele-a2-ccse-spanish-citizenship-bundle":
+        "DELE CCSE Spanish Nationality Anki Deck — 60 Flashcards",
+      "ga-real-estate-anki-deck": "Georgia Real Estate Anki Deck — 60 Flashcards",
+      "il-real-estate-anki-deck": "Illinois Real Estate Anki Deck — 60 Flashcards",
+      "ma-real-estate-anki-deck": "Massachusetts Real Estate Anki Deck — 60 Flashcards",
+      "mi-real-estate-anki-deck": "Michigan Real Estate Anki Deck — 60 Flashcards",
+      "nc-real-estate-anki-deck": "North Carolina Real Estate Anki Deck — 60 Flashcards",
+      "nj-real-estate-anki-deck": "New Jersey Real Estate Anki Deck — 60 Flashcards",
+      "ny-real-estate-anki-deck": "NY Real Estate Anki Deck — 60 Flashcards",
+      "oh-real-estate-anki-deck": "Ohio Real Estate Anki Deck — 60 Flashcards",
+      "pa-real-estate-anki-deck": "Pennsylvania Real Estate Anki Deck — 60 Flashcards",
+      "rd-exam-anki-deck": "RD Exam Anki Deck — 60 Flashcards",
+      "real-estate-appraiser-anki-deck": "Real Estate Appraiser Anki Deck — 60 Flashcards",
+      "tx-real-estate-anki-deck": "Texas Real Estate Anki Deck — 60 Flashcards",
+      "va-real-estate-anki-deck": "Virginia Real Estate Anki Deck — 60 Flashcards",
+      "wa-real-estate-anki-deck": "Washington Real Estate Anki Deck — 60 Flashcards",
       "us-adaptation-english-prep2go-app": "US Adaptation (English) — Prep2Go Immigration App",
       "uae-survival-guide-prep2go-app": "UAE Survival Guide — Prep2Go Immigration App",
       "saudi-arabia-survival-guide-prep2go-app":

@@ -41,13 +41,15 @@ type WaveSpec = { cohort?: string; cardCount?: number };
 const waveSpecBySlug = waveSpecs as Record<string, WaveSpec>;
 
 /**
- * Wave Gumroad products may exist for later cohorts (state RE, health/CDL, etc.).
- * Only the money cohort auto-launches on the site — plus explicit force-launch SKUs
- * when traffic justifies shipping outside money (e.g. ACE CPT).
+ * Wave Gumroad products may exist before the site should sell them.
+ * Auto-launch when:
+ * - money cohort, or
+ * - explicit force-launch allowlist, or
+ * - product has gumroadProductId + apkgUploadedAt (sellable — do not leave orphans)
  */
 export const WAVE_LAUNCH_COHORTS = new Set(["money"]);
 
-/** Non-money wave decks approved to flip planned → available when Gumroad product exists. */
+/** Non-money wave decks approved to flip planned → available when Gumroad product exists (even before apkg). */
 export const WAVE_FORCE_LAUNCH_SLUGS = new Set([
   "ace-cpt-anki-deck",
   "luxembourg-vivre-ensemble-anki-deck",
@@ -77,11 +79,21 @@ export function isWaveForceLaunchSlug(slug: string): boolean {
   return WAVE_FORCE_LAUNCH_SLUGS.has(slug);
 }
 
-/** Building catalog + approved wave money SKUs + force-launch allowlist. */
+/** Wave product already sellable on Gumroad (id + apkg) — site catalog must not stay planned. */
+export function isWaveApkgReadyLaunchSlug(slug: string): boolean {
+  const product = wave.products[slug];
+  return Boolean(product?.gumroadProductId && product?.apkgUploadedAt);
+}
+
+/** Building catalog + money / force-launch / apkg-ready wave SKUs. */
 export function isLaunchableAnkiDeckSlug(slug: string): boolean {
   if (slug in building.products) return true;
   if (!(slug in wave.products)) return false;
-  return isWaveMoneyLaunchSlug(slug) || isWaveForceLaunchSlug(slug);
+  return (
+    isWaveMoneyLaunchSlug(slug) ||
+    isWaveForceLaunchSlug(slug) ||
+    isWaveApkgReadyLaunchSlug(slug)
+  );
 }
 
 /** @deprecated Prefer isLaunchableAnkiDeckSlug — kept for building-only call sites. */

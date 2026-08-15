@@ -43,11 +43,13 @@ describe("anki-deck-launch", () => {
     expect(stubOnly.status).toBe("planned");
   });
 
-  it("launches wave money SKUs but keeps state-RE / other wave decks planned for traffic", () => {
+  it("launches money, force-launch, and apkg-ready wave SKUs; keeps stub-only planned", () => {
     expect(isLaunchableAnkiDeckSlug("series-65-anki-deck")).toBe(true);
     expect(isLaunchableAnkiDeckSlug("ace-cpt-anki-deck")).toBe(true);
-    expect(isLaunchableAnkiDeckSlug("fl-real-estate-anki-deck")).toBe(false);
+    expect(isLaunchableAnkiDeckSlug("fl-real-estate-anki-deck")).toBe(true);
+    expect(isLaunchableAnkiDeckSlug("dele-a2-ccse-spanish-citizenship-bundle")).toBe(true);
     expect(isLaunchableAnkiDeckSlug("cdl-general-knowledge-anki-deck")).toBe(false);
+    expect(isLaunchableAnkiDeckSlug("ct-real-estate-anki-deck")).toBe(false);
 
     const money = getCatalogDeckBySlug("series-65-anki-deck");
     expect(money?.status).toBe("available");
@@ -92,9 +94,13 @@ describe("anki-deck-launch", () => {
       "Dans quelle ville siège le gouvernement luxembourgeois?",
     ]);
 
-    const stateRe = getDeckBySlug("fl-real-estate-anki-deck");
-    expect(stateRe?.status).toBe("planned");
-    expect(stateRe && "checkoutUrl" in stateRe ? stateRe.checkoutUrl : undefined).toBeUndefined();
+    const stateRe = getCatalogDeckBySlug("fl-real-estate-anki-deck");
+    expect(stateRe?.status).toBe("available");
+    expect(stateRe?.checkoutUrl).toContain("gumroad.com/l/fl-real-estate-anki-deck");
+    expect(stateRe?.apkgStatus).toBe("ready");
+
+    const noApkgYet = getDeckBySlug("ct-real-estate-anki-deck");
+    expect(noApkgYet?.status).toBe("planned");
   });
 
   it("estimates wave deck card counts from mock bank size", () => {

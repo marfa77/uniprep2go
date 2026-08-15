@@ -703,9 +703,17 @@ Learners buy a DELE+CCSE bundle when they only need vocabulary, confuse Latin Am
 
 Single DELE / SIELE vocabulary .apkg on Gumroad — not a DELE + CCSE nationality bundle.`,
 
-  "dele-a2-ccse-spanish-citizenship-bundle": `### Planned listing
+  "dele-a2-ccse-spanish-citizenship-bundle": `### What is inside
 
-Dual DELE + CCSE nationality bundle is not currently for sale. Use the standalone [DELE SIELE Spanish Anki deck](/decks/dele-a2-spanish-anki-deck) for language vocabulary now.`,
+Spanish citizenship dual pack: DELE/SIELE A2 vocabulary Anki plus CCSE civics themes for the nationality pathway. Delivered as a Gumroad .apkg bundle for candidates who need language + civics in one checkout — independent prep, not Instituto Cervantes or Ministerio del Interior material.
+
+### Study plan with the free mocks
+
+Drill vocabulary daily, then sit the linked Spanish citizenship / CCSE readiness check on UniPrep2Go when available on your path. Keep DELE speaking/writing practice separate from Anki recall.
+
+### What this does not replace
+
+Official DELE/SIELE registration, CCSE booking, or residency paperwork. Use Instituto Cervantes and official Spanish government sources for dates and fees.`,
 
   "cfa-level-1-formula-reference-2026": `### What is inside
 
