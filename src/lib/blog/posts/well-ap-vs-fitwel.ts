@@ -148,7 +148,7 @@ export const wellApVsFitwelPost: BlogPostDraft = {
           rows: [
             [
               "WELL AP",
-              "$1,500 + ~80 study hours",
+              "~$299 exam + optional prep (~$0–$1,200) + ~80 study hours",
               "2–3 months part-time",
               "1–2 projects to break even",
             ],
@@ -185,7 +185,7 @@ export const wellApVsFitwelPost: BlogPostDraft = {
     {
       question: "How much does WELL AP certification cost?",
       answer:
-        "$1,065 for IWBI members; $1,500 for non-members. There are no student discounts. Retakes typically cost the full fee.",
+        "$299 exam registration at current IWBI pricing (verify before booking); third-party prep courses are extra. Retake fees follow current IWBI/GBCI rules.",
     },
     {
       question: "What is the difference between WELL and Fitwel?",
