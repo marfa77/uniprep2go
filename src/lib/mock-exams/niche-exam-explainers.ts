@@ -407,7 +407,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The Florida real estate sales associate exam is the state licensing knowledge test required after approved pre-license education to become a licensed sales associate in Florida. It covers real estate principles and practices, Florida license law under FREC/DBPR rules, contracts and conveyances, finance and appraisal math, and brokerage practice. Candidates typically complete the 63-hour pre-license course (confirm current hours), pass the state exam through the designated vendor, then activate a license with a broker. Always verify outlines, fees, and scheduling on official Florida DBPR / FREC materials.",
     administeredBy: "Florida DBPR / Florida Real Estate Commission (FREC) via the state’s exam vendor",
     officialFormat:
-      "Timed multiple-choice state licensing exam; confirm current length, cut score, and national/state structure with DBPR and the exam vendor.",
+      "Official Florida sales associate exam (Pearson VUE for DBPR/FREC): 100 multiple-choice questions, 3.5 hours (210 minutes), pass at 75/100. UniPrep2Go free mock on this page: 60 questions, 75 minutes, 70% readiness target — diagnostic only.",
     whoFor:
       "Florida sales associate candidates who finished (or are finishing) FREC-approved pre-license coursework, plus out-of-state licensees preparing for Florida mutual recognition or state-portion requirements when applicable.",
     howToPrepare:
@@ -480,7 +480,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The Texas real estate salesperson (sales agent) exam is the licensing knowledge test administered under the Texas Real Estate Commission (TREC) after you complete required qualifying education. The sitting typically includes a national real estate principles portion and a Texas-specific law portion covering TRELA, TREC rules, agency, contracts, finance/closing math, and property practice. Passing both portions (confirm current cut scores with TREC/Pearson VUE) is required before TREC can issue a sales agent license. Always verify education hours, exam fees, and outlines on official TREC materials.",
     administeredBy: "Texas Real Estate Commission (TREC) via Pearson VUE",
     officialFormat:
-      "Computer-based multiple-choice exam with national and Texas law sections; confirm current question counts and passing scores with TREC / Pearson VUE.",
+      "Official Texas sales agent exam (Pearson VUE for TREC): dual national + Texas-law portions in one sitting; ~70% required on each scored portion — confirm current Pearson Content Outline counts. UniPrep2Go free mock: 60 questions, 75 minutes, 70% readiness target — diagnostic only.",
     whoFor:
       "Texas sales agent candidates who completed TREC-approved qualifying education, plus experienced agents refreshing before a retake. Also useful for out-of-state licensees facing Texas education or exam requirements when reciprocity does not fully waive testing.",
     howToPrepare:
@@ -553,7 +553,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The New York real estate salesperson exam is the state licensing knowledge test taken after completing New York’s required qualifying education hours. It covers agency, contracts, finance, property ownership, fair housing, and New York Department of State license law. Passing is required before you can be licensed as a New York real estate salesperson and affiliate with a broker. Confirm current hour requirements, exam vendor, and outlines with NYDOS.",
     administeredBy: "New York Department of State via the designated exam vendor",
     officialFormat:
-      "Timed multiple-choice licensing exam; confirm current length and cut score with NYDOS / the exam vendor.",
+      "Official New York salesperson exam (DOS / eAccessNY): 75 multiple-choice questions, 90 minutes, 70% to pass (results reported pass/fail). UniPrep2Go free mock: 60 questions, 90 minutes, 70% readiness target — diagnostic only.",
     whoFor:
       "New York salesperson candidates finishing approved qualifying education and licensees preparing for a retake who need a timed diagnostic before the official sitting.",
     howToPrepare:

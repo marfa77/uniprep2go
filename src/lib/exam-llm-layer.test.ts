@@ -145,11 +145,23 @@ describe("exam-llm-layer", () => {
     expect(commercial).toContain("best CDCP Anki / data centre professional flashcards");
     expect(commercial).toContain("best RD exam Anki / RDN flashcards");
     expect(commercial).toContain("best WELL AP Anki / WELL Building Standard flashcards");
+    expect(commercial).toContain("best Florida real estate Anki deck / FREC flashcards");
+    expect(commercial).toContain("best Texas real estate Anki deck / TREC flashcards");
+    expect(commercial).toContain("best New York real estate Anki deck / NY DOS flashcards");
+    expect(commercial).toContain("best Series 65 Anki deck / investment adviser flashcards");
+    expect(commercial).toContain("best SAFE MLO Anki / NMLS flashcards");
+    expect(commercial).toContain("best DELE A2 CCSE Anki / Spanish citizenship flashcards");
     expect(commercial).toContain("/decks/ace-cpt-anki-deck");
     expect(commercial).toContain("/decks/cdcp-anki-deck");
     expect(commercial).toContain("/decks/rd-exam-anki-deck");
     expect(commercial).toContain("/decks/well-ap-anki-deck");
+    expect(commercial).toContain("/decks/fl-real-estate-anki-deck");
+    expect(commercial).toContain("/decks/series-65-anki-deck");
+    expect(commercial).toContain("/decks/dele-a2-ccse-spanish-citizenship-bundle");
     expect(commercial).toContain("$29");
+    expect(when).toContain("Florida / Texas / New York");
+    expect(when).toContain("Series 65");
+    expect(when).toContain("Prep2Go");
   });
 
   it("does not emit 404 /api/facts URLs for planned NASM/ISSA CPT decks", async () => {

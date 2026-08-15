@@ -224,6 +224,77 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     audience: "California DRE salesperson exam candidates who want a timed baseline before licensing prep.",
     practiceTestLabel: "California real estate practice test",
   },
+  "fl-real-estate-readiness-check": {
+    title: "Free Florida Real Estate Practice Test | 60Q Diagnostic",
+    description:
+      "Free Florida real estate practice test: 60 timed questions, 75 minutes, 70% readiness target, FREC topic scoring. Official DBPR exam is 100Q / 3.5h / 75% — this mock is shorter. Independent — not DBPR/FREC material.",
+    keywords: [
+      "florida real estate practice test",
+      "florida real estate exam questions",
+      "fl sales associate practice exam",
+      "free florida real estate practice test",
+      "frec practice test",
+    ],
+    headline: "Free Florida Real Estate Practice Test",
+    intro:
+      "A Florida DBPR/FREC sales associate diagnostic covering license law, contracts/titles, finance/appraisal math, and brokerage practice — with topic scoring. Official exam is 100 questions in 3.5 hours at 75%; use this 60-question timed mock to find weak domains before you schedule Pearson VUE.",
+    audience:
+      "Florida sales associate candidates after the 63-hour pre-license course who want a free timed baseline before the official 100-question DBPR exam.",
+    practiceTestLabel: "Florida real estate practice test",
+  },
+  "tx-real-estate-readiness-check": {
+    title: "Free Texas Real Estate Practice Test | 60Q Diagnostic",
+    description:
+      "Free Texas real estate practice test: 60 timed questions, 75 minutes, 70% readiness target, TREC topic scoring. Official TREC exam is dual national+state (~70% each) — this mock is shorter. Independent — not TREC material.",
+    keywords: [
+      "texas real estate practice test",
+      "texas real estate exam questions",
+      "trec practice exam",
+      "free texas real estate practice test",
+      "texas sales agent practice test",
+    ],
+    headline: "Free Texas Real Estate Practice Test",
+    intro:
+      "A Texas TREC sales agent diagnostic covering TRELA/TREC license law, contracts & agency, finance/closing math, and property practice. Official Pearson VUE sitting is dual national + Texas-law portions; use this 60-question timed mock to prioritize Anki repair before exam day.",
+    audience:
+      "Texas sales agent candidates who finished TREC qualifying education and want a free timed baseline before the official dual-portion exam.",
+    practiceTestLabel: "Texas real estate practice test",
+  },
+  "ny-real-estate-readiness-check": {
+    title: "Free NY Real Estate Practice Test | 60Q Diagnostic",
+    description:
+      "Free New York real estate practice test: 60 timed questions, 90 minutes, 70% readiness target, DOS topic scoring. Official NYDOS exam is 75Q / 90 min / 70% — this mock is shorter. Independent — not DOS material.",
+    keywords: [
+      "new york real estate practice test",
+      "ny real estate exam questions",
+      "ny dos salesperson practice exam",
+      "free ny real estate practice test",
+    ],
+    headline: "Free New York Real Estate Practice Test",
+    intro:
+      "A New York DOS salesperson diagnostic covering license law, contracts/agency/fair housing, finance/valuation/closing, and property practice. Official exam is 75 questions in 90 minutes at 70%; use this 60-question timed mock to find weak domains before eAccessNY.",
+    audience:
+      "New York salesperson candidates after qualifying education who want a free timed baseline before the official 75-question DOS exam.",
+    practiceTestLabel: "New York real estate practice test",
+  },
+  "series-65-readiness-check": {
+    title: "Free Series 65 Practice Test | 60-Question Diagnostic",
+    description:
+      "Free Series 65 practice test: 60 timed questions, 75 minutes, topic scoring for NASAA IAR themes. Official Series 65 is 130 scored (+10 pretest) / 180 min / 92 correct — this mock is shorter. Independent — not NASAA/FINRA material.",
+    keywords: [
+      "series 65 practice test",
+      "series 65 practice exam",
+      "free series 65 questions",
+      "nasaa series 65 mock",
+      "investment adviser exam practice",
+    ],
+    headline: "Free Series 65 Practice Test",
+    intro:
+      "A NASAA Series 65 diagnostic across economics/analysis, investment products, client recommendations, and laws & ethics. Official exam requires 92 of 130 scored questions in 180 minutes; use this free 60-question timed mock to prioritize Anki repair before Prometric.",
+    audience:
+      "Investment adviser representative candidates preparing for the NASAA Series 65 who want a free timed baseline before a full-length Q-bank.",
+    practiceTestLabel: "Series 65 practice test",
+  },
   "life-and-health-insurance-readiness-check": {
     title: "Free Life and Health Insurance Practice Test | 60 Questions",
     description:

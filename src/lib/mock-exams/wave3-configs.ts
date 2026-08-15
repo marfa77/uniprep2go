@@ -802,7 +802,8 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "client", label: "Client recommendations" },
       { id: "ethics", label: "Laws & ethics" }
     ]),
-    officialSourceNote: "Mapped to NASAA / FINRA delivery themes. Independent UniPrep2Go readiness check — not an official exam.",
+    officialSourceNote:
+      "Independent diagnostic on NASAA Uniform Investment Adviser Law (Series 65) themes. Official Series 65 (FINRA delivery): 130 scored + 10 pretest questions, 180 minutes, pass at 92/130 scored — not a 70% percentage cut. This UniPrep2Go mock is 60 questions / 75 minutes / 70% readiness target. Not NASAA/FINRA exam material.",
     description: "Free 60-question Series 65 readiness check with topic scoring.",
     examBody: "NASAA / FINRA delivery",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
@@ -1049,7 +1050,8 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "fed-law", label: "Federal law" },
       { id: "ethics", label: "Ethics & Uniform State Content" }
     ]),
-    officialSourceNote: "Mapped to NMLS / SAFE MLO themes. Independent UniPrep2Go readiness check — not an official exam.",
+    officialSourceNote:
+      "Independent diagnostic on NMLS SAFE MLO national test themes (origination, products, federal law, ethics/USC). Confirm current NMLS national test length and cut score before exam day. This UniPrep2Go mock is 60 questions / 75 minutes / 70% readiness target. Not NMLS exam material.",
     description: "Free 60-question SAFE MLO readiness check with topic scoring.",
     examBody: "NMLS / SAFE MLO",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
@@ -1087,7 +1089,8 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "math", label: "Appraisal math" },
       { id: "ethics", label: "Ethics & reporting" }
     ]),
-    officialSourceNote: "Mapped to AQB / state appraiser boards themes. Independent UniPrep2Go readiness check — not an official exam.",
+    officialSourceNote:
+      "Independent diagnostic on AQB National Uniform Licensing Examination themes (USPAP ethics, valuation approaches, math, reporting). Official AQB national exam is commonly cited as ~125 questions with a scaled pass near 75 — confirm current AQB / state board outline. This UniPrep2Go mock is 60 questions / 75 minutes / 70% readiness target. Not AQB exam material.",
     description: "Free 60-question Real Estate Appraiser readiness check with topic scoring.",
     examBody: "AQB / state appraiser boards",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",

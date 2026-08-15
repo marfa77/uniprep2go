@@ -250,7 +250,8 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "finance-valuation", label: "Finance, valuation & closing" },
       { id: "property-practice", label: "Property, land use & practice" },
     ]),
-    officialSourceNote: "NY DOS salesperson knowledge themes. Not a New York licensing exam.",
+    officialSourceNote:
+      "Independent diagnostic on NY DOS salesperson themes. Official New York salesperson exam (DOS / eAccessNY): 75 multiple-choice questions, 90 minutes, 70% to pass (results reported pass/fail only). This UniPrep2Go mock is 60 questions / 90 minutes / 70% readiness target. Not NYDOS exam material.",
     description: "Free 60-question New York real estate salesperson readiness check.",
     examBody: "NY DOS",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",

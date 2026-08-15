@@ -705,15 +705,15 @@ Single DELE / SIELE vocabulary .apkg on Gumroad — not a DELE + CCSE nationalit
 
   "dele-a2-ccse-spanish-citizenship-bundle": `### What is inside
 
-Spanish citizenship dual pack: DELE/SIELE A2 vocabulary Anki plus CCSE civics themes for the nationality pathway. Delivered as a Gumroad .apkg bundle for candidates who need language + civics in one checkout — independent prep, not Instituto Cervantes or Ministerio del Interior material.
+60 compact MCQ cards spanning DELE A2-adjacent language themes and CCSE civics (constitution, institutions/rights, geography/culture, everyday procedures). Delivered as a Gumroad .apkg companion for candidates who want a light language + civics drill — not a full Cervantes substitute. Pairs with the free timed [CCSE España readiness check](/mock-exams/ccse-espana-readiness-check) (60Q / 45 min / 60% diagnostic). Official Cervantes CCSE is **25 items / 45 minutes / 60%**; DELE A2 is a separate language exam. For thicker DELE vocabulary and full CCSE Anki stacks, use Prep2Go.
 
-### Study plan with the free mocks
+### Study plan with the free mock
 
-Drill vocabulary daily, then sit the linked Spanish citizenship / CCSE readiness check on UniPrep2Go when available on your path. Keep DELE speaking/writing practice separate from Anki recall.
+Light daily Anki (10–15 new cards), then sit the free CCSE diagnostic once. Keep DELE speaking/writing practice separate from Anki recall. Do not treat this 60-card pack as full nationality prep.
 
 ### What this does not replace
 
-Official DELE/SIELE registration, CCSE booking, or residency paperwork. Use Instituto Cervantes and official Spanish government sources for dates and fees.`,
+Official DELE/SIELE registration, CCSE booking, residency paperwork, or Instituto Cervantes materials.`,
 
   "cfa-level-1-formula-reference-2026": `### What is inside
 
@@ -846,6 +846,86 @@ Complete pre-license coursework first, then 20 cards/day. Run the free Californi
 ### Pitfalls this deck targets
 
 Applicants confuse agency relationships (seller's agent vs dual agent), disclosure delivery deadlines, and trust fund handling. Cards use California statutory framing.`,
+
+  "fl-real-estate-anki-deck": `### What is inside
+
+60 Florida-specific MCQ cards across FREC sales associate themes: license law & FREC rules, contracts/titles/conveyances, finance/appraisal math, and property/brokerage practice. Same bank themes as the free timed Florida readiness check.
+
+### Plan with the free FL mock
+
+Finish the 63-hour pre-license course first. Then 15–20 cards/day for two weeks and sit the [free 60-question Florida readiness check](/mock-exams/fl-real-estate-readiness-check) (75 min, 70% diagnostic). Official DBPR exam is **100Q / 3.5h / 75%** — keep that pacing separate from this shorter diagnostic.
+
+### Pitfalls this deck targets
+
+Candidates over-study national principles and under-drill Florida license law, homestead/disclosure themes, and daily math. Cards force Florida framing under spaced recall.
+
+### What this does not replace
+
+DBPR/FREC registration, required coursework, or the official Pearson VUE exam. Independent prep — not DBPR material.`,
+
+  "tx-real-estate-anki-deck": `### What is inside
+
+60 Texas-focused MCQ cards across TRELA/TREC license law, contracts & agency, finance/closing math, and property practice. Same themes as the free timed Texas readiness check.
+
+### Plan with the free TX mock
+
+Complete TREC qualifying education, then 15–20 cards/day. Sit the [free 60-question Texas readiness check](/mock-exams/tx-real-estate-readiness-check) mid-prep; repair the weaker of national-style vs Texas-law rows. Official exam is dual national + state (~70% each portion) — confirm current Pearson outline.
+
+### Pitfalls this deck targets
+
+Candidates pass one portion mentally and ignore the other. Cards keep TRELA/TREC agency and Texas contract themes in daily rotation.
+
+### What this does not replace
+
+TREC education hours, Pearson VUE scheduling, or the official dual-portion exam. Independent prep — not TREC material.`,
+
+  "ny-real-estate-anki-deck": `### What is inside
+
+60 New York-focused MCQ cards across DOS license law, contracts/agency/fair housing, finance/valuation/closing, and property practice. Same themes as the free timed NY readiness check.
+
+### Plan with the free NY mock
+
+Finish qualifying education, then 15–20 cards/day. Sit the [free 60-question NY readiness check](/mock-exams/ny-real-estate-readiness-check) (90 min, 70% diagnostic). Official NYDOS exam is **75Q / 90 min / 70%** (pass/fail only) — practice that pacing separately.
+
+### Pitfalls this deck targets
+
+Candidates drill generic national packs and miss New York DOS license-law and co-op/condo-adjacent practice themes. Cards keep NY framing under spaced recall.
+
+### What this does not replace
+
+NYDOS registration, qualifying hours, or the official eAccessNY exam. Independent prep — not DOS material.`,
+
+  "series-65-anki-deck": `### What is inside
+
+60 focused Series 65 MCQ cards across economics & analysis, investment products, client recommendations, and laws & ethics — the same theme map as the free timed Series 65 readiness check.
+
+### Plan with the free Series 65 mock
+
+15–20 cards/day for two to three weeks, then the [free 60-question Series 65 readiness check](/mock-exams/series-65-readiness-check). Official NASAA exam is **130 scored (+10 pretest) / 180 minutes / 92 correct** — use a full-length Q-bank for final pacing; this deck is weak-topic repair.
+
+### Pitfalls this deck targets
+
+Candidates confuse Series 65 vs 66 scope, under-drill ethics/state law, and treat 70% as the official cut (it is not — pass is 92/130). Cards keep suitability and ethics in rotation.
+
+### What this does not replace
+
+NASAA/FINRA registration or the official Series 65. Independent prep — not NASAA material.`,
+
+  "mortgage-loan-originator-anki-deck": `### What is inside
+
+60 SAFE MLO MCQ cards across origination process, mortgage products, federal law, and ethics/Uniform State Content — aligned to the free timed MLO readiness check.
+
+### Plan with the free MLO mock
+
+15–20 cards/day, then the [free 60-question SAFE MLO readiness check](/mock-exams/mortgage-loan-originator-readiness-check). Confirm current NMLS national test length and cut score before exam day; use this deck for weak-topic repair after the diagnostic.
+
+### Pitfalls this deck targets
+
+Candidates over-drill products and under-drill RESPA/TILA/ECOA ethics judgments. Cards force federal-law and USC themes under spaced recall.
+
+### What this does not replace
+
+NMLS enrollment or the official SAFE MLO national test. Independent prep — not NMLS material.`,
 
   "bench-energy-metal-trader-anki-deck": `### What is inside
 

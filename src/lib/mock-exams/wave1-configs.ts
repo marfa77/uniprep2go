@@ -148,7 +148,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
       { id: "property-practice", label: "Property, brokerage & practice" },
     ]),
     officialSourceNote:
-      "Readiness check aligned to Florida DBPR / FREC sales associate knowledge areas. Not a state licensing exam.",
+      "Independent diagnostic on Florida DBPR / FREC sales associate themes. Official Florida sales associate exam (Pearson VUE for DBPR): 100 multiple-choice questions, 3.5 hours (210 minutes), pass at 75/100. This UniPrep2Go mock is 60 questions / 75 minutes / 70% readiness target — shorter than the official sitting. Not DBPR/FREC exam material.",
     description:
       "Free 60-question Florida real estate sales associate readiness check with topic scoring for FREC candidates.",
     examBody: "DBPR / Florida Real Estate Commission",
@@ -168,7 +168,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
       { id: "property-practice", label: "Property, land & practice" },
     ]),
     officialSourceNote:
-      "Readiness check aligned to TREC salesperson knowledge areas. Not a Texas licensing exam.",
+      "Independent diagnostic on TREC salesperson themes. Official Texas sales agent exam (Pearson VUE for TREC) is a dual national + Texas-law sitting; candidates must pass each portion (~70% on scored items — confirm current Pearson Content Outline). This UniPrep2Go mock is 60 questions / 75 minutes / 70% readiness target — not full official length. Not TREC exam material.",
     description:
       "Free 60-question Texas real estate salesperson readiness check with topic scoring for TREC candidates.",
     examBody: "TREC",

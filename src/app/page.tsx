@@ -59,10 +59,13 @@ const examPathLinks = [
   {
     title: "State licensing exams",
     description:
-      "California real estate plus Life/Health and Property & Casualty insurance — state license cohorts with clear search intent.",
+      "California, Florida, Texas, and New York real estate plus Life/Health and Property & Casualty insurance — state license cohorts with clear search intent.",
     links: [
       { href: "/mock-exams/v/real-estate", label: "All real estate mocks" },
       { href: "/mock-exams/california-real-estate-readiness-check", label: "California RE mock" },
+      { href: "/mock-exams/fl-real-estate-readiness-check", label: "Florida RE mock" },
+      { href: "/mock-exams/tx-real-estate-readiness-check", label: "Texas RE mock" },
+      { href: "/mock-exams/ny-real-estate-readiness-check", label: "New York RE mock" },
       { href: "/mock-exams/life-and-health-insurance-readiness-check", label: "Life & Health insurance" },
       { href: "/mock-exams/property-casualty-insurance-readiness-check", label: "P&C insurance" },
     ],
@@ -183,6 +186,9 @@ const mockDeckRepairPairSlugs: Array<{ mockSlug: string; deckSlug: string }> = [
   { mockSlug: "series-63-readiness-check", deckSlug: "series-63-anki-deck" },
   { mockSlug: "series-65-readiness-check", deckSlug: "series-65-anki-deck" },
   { mockSlug: "california-real-estate-readiness-check", deckSlug: "california-real-estate-exam-anki-deck" },
+  { mockSlug: "fl-real-estate-readiness-check", deckSlug: "fl-real-estate-anki-deck" },
+  { mockSlug: "tx-real-estate-readiness-check", deckSlug: "tx-real-estate-anki-deck" },
+  { mockSlug: "ny-real-estate-readiness-check", deckSlug: "ny-real-estate-anki-deck" },
   { mockSlug: "life-and-health-insurance-readiness-check", deckSlug: "life-and-health-insurance-exam-anki-deck" },
   { mockSlug: "property-casualty-insurance-readiness-check", deckSlug: "property-casualty-insurance-exam-anki-deck" },
   { mockSlug: "us-citizenship-readiness-check", deckSlug: "citizenship-naturalization-anki-bundle" },
@@ -198,6 +204,8 @@ const popularDeckBoostLinks = [
   { href: "/decks/cfp-certification-anki-deck", label: "CFP" },
   { href: "/decks/enrolled-agent-anki-deck", label: "Enrolled Agent" },
   { href: "/decks/series-65-anki-deck", label: "Series 65" },
+  { href: "/decks/fl-real-estate-anki-deck", label: "Florida RE" },
+  { href: "/decks/tx-real-estate-anki-deck", label: "Texas RE" },
   { href: "/decks/series-66-anki-deck", label: "Series 66" },
   { href: "/decks/pmp-anki-deck", label: "PMP" },
   { href: "/decks/gmat-focus-anki-deck", label: "GMAT Focus" },
