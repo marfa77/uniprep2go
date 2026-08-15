@@ -361,6 +361,38 @@ export function intersectPathVisitorsWithChannel(
   return result;
 }
 
+/**
+ * Period path keys only started dual-writing on 2026-08-14. While the period set still
+ * equals (or nearly equals) lifetime — i.e. period was never reset — and period-path
+ * coverage is sparse vs lifetime paths, reconstruct period ranks from lifetime
+ * path∩period so Top pages / Google·LLM period tops are not stuck on post-deploy crumbs.
+ *
+ * After a real period reset (period ≪ lifetime), or when period paths already look complete,
+ * trust periodPath* only so historical path membership cannot leak into the new period.
+ */
+export function shouldUseLifetimePathBackfillForPeriod(
+  lifetimeUnique: number,
+  periodUnique: number,
+  lifetimePathCount = 0,
+  periodPathCount = 0,
+) {
+  if (periodUnique <= 0 || lifetimeUnique <= 0 || lifetimePathCount <= 0) {
+    return false;
+  }
+
+  // Real period reset: do not reconstruct from lifetime paths (returners would leak).
+  if (periodUnique < Math.ceil(lifetimeUnique * 0.95)) {
+    return false;
+  }
+
+  if (periodPathCount === 0) {
+    return true;
+  }
+
+  // Sparse period-path index vs lifetime paths → pre-dual-write gap.
+  return periodPathCount * 4 < lifetimePathCount;
+}
+
 function pathsByChannelFromSets(
   pathVisitors: Map<string, Set<string>>,
   periodChannel: Record<TrafficChannel, Set<string>>,
@@ -402,6 +434,16 @@ export function readVisitorMetricsFromMemory(): VisitorMetrics {
 
   const dailyPageViews: DailyUniqueCounts = Object.fromEntries(store.dailyPageViews.entries());
 
+  const useLifetimePathBackfill = shouldUseLifetimePathBackfillForPeriod(
+    store.lifetime.size,
+    store.period.size,
+    store.pathVisitors.size,
+    store.periodPathVisitors.size,
+  );
+  const periodPathSource = useLifetimePathBackfill
+    ? store.pathVisitors
+    : store.periodPathVisitors;
+
   return {
     lifetimeUnique: store.lifetime.size,
     periodUnique: store.period.size,
@@ -425,8 +467,8 @@ export function readVisitorMetricsFromMemory(): VisitorMetrics {
     dailyUnique,
     dailyPageViews,
     products: productMetrics,
-    paths: intersectPathVisitorsWithChannel(store.periodPathVisitors, store.period),
-    pathsByChannel: pathsByChannelFromSets(store.periodPathVisitors, store.periodChannel),
+    paths: intersectPathVisitorsWithChannel(periodPathSource, store.period),
+    pathsByChannel: pathsByChannelFromSets(periodPathSource, store.periodChannel),
     lifetimePathsByChannel: pathsByChannelFromSets(store.pathVisitors, store.lifetimeChannel),
   };
 }
@@ -698,7 +740,14 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
   const periodVisitorMembers =
     periodUnique > 0 ? await client.smembers<string>(VISITOR_REDIS_KEYS.period) : [];
   const periodVisitorSet = new Set(periodVisitorMembers ?? []);
-  const paths = intersectPathVisitorsWithChannel(periodPathMemberLists, periodVisitorSet);
+  const useLifetimePathBackfill = shouldUseLifetimePathBackfillForPeriod(
+    lifetimeUnique,
+    periodUnique,
+    (pathKeys ?? []).length,
+    (periodPathKeys ?? []).length,
+  );
+  const periodPathSource = useLifetimePathBackfill ? pathMemberLists : periodPathMemberLists;
+  const paths = intersectPathVisitorsWithChannel(periodPathSource, periodVisitorSet);
 
   const pathsByChannel = emptyChannelPathCounts();
   const lifetimePathsByChannel = emptyChannelPathCounts();
@@ -731,10 +780,7 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
   ]);
 
   for (const [channel, channelVisitors] of periodChannelMemberSets) {
-    pathsByChannel[channel] = intersectPathVisitorsWithChannel(
-      periodPathMemberLists,
-      channelVisitors,
-    );
+    pathsByChannel[channel] = intersectPathVisitorsWithChannel(periodPathSource, channelVisitors);
   }
 
   for (const [channel, channelVisitors] of lifetimeChannelMemberSets) {

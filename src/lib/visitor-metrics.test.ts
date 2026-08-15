@@ -7,6 +7,7 @@ import {
   resetAllVisitorSets,
   resetPeriodVisitorSets,
   resolveProductKey,
+  shouldUseLifetimePathBackfillForPeriod,
 } from "./visitor-metrics";
 
 describe("visitor metrics", () => {
@@ -136,6 +137,54 @@ describe("visitor metrics", () => {
     expect(metrics.pathsByChannel.google["/decks/cfa-level-1-anki-deck"]).toBeUndefined();
     expect(metrics.lifetimePathsByChannel.google["/decks/cfa-level-1-anki-deck"]).toBe(1);
     expect(metrics.lifetimePathsByChannel.google["/mock-exams/sie-full-mock"]).toBe(1);
+  });
+
+  it("backfills period top paths from lifetime∩period when period was never reset", () => {
+    resetAllVisitorSets();
+
+    recordVisitorMetricInMemory(
+      createFunnelEvent({
+        name: "page_view",
+        deckSlug: "sie-exam-anki-deck",
+        visitorId: "vis_sie",
+        path: "/mock-exams/sie-full-mock",
+        referrer: "https://www.google.com/",
+      }),
+    );
+    recordVisitorMetricInMemory(
+      createFunnelEvent({
+        name: "page_view",
+        deckSlug: "nebosh-anki-deck",
+        visitorId: "vis_nebosh",
+        path: "/decks/nebosh-anki-deck",
+        referrer: "",
+      }),
+    );
+
+    // Simulate pre-2026-08-14 Redis: lifetime paths exist, period path sets empty.
+    const store = (
+      globalThis as {
+        __uniprep2goVisitorSets?: { periodPathVisitors: Map<string, Set<string>> };
+      }
+    ).__uniprep2goVisitorSets;
+    store?.periodPathVisitors.clear();
+
+    expect(shouldUseLifetimePathBackfillForPeriod(2, 2, 2, 0)).toBe(true);
+
+    const metrics = readVisitorMetricsFromMemory();
+
+    expect(metrics.paths["/mock-exams/sie-full-mock"]).toBe(1);
+    expect(metrics.paths["/decks/nebosh-anki-deck"]).toBe(1);
+    expect(metrics.pathsByChannel.google["/mock-exams/sie-full-mock"]).toBe(1);
+  });
+
+  it("only enables lifetime path backfill while period ≈ lifetime and paths are sparse", () => {
+    expect(shouldUseLifetimePathBackfillForPeriod(299, 299, 120, 6)).toBe(true);
+    expect(shouldUseLifetimePathBackfillForPeriod(299, 299, 120, 0)).toBe(true);
+    expect(shouldUseLifetimePathBackfillForPeriod(299, 299, 120, 80)).toBe(false);
+    expect(shouldUseLifetimePathBackfillForPeriod(299, 50, 120, 6)).toBe(false);
+    expect(shouldUseLifetimePathBackfillForPeriod(2, 2, 2, 1)).toBe(false);
+    expect(shouldUseLifetimePathBackfillForPeriod(0, 0)).toBe(false);
   });
 
   it("attributes later internal pages to the Google visitor via path∩channel", () => {
