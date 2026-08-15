@@ -194,6 +194,9 @@ export default function MockExamsIndexPage() {
             <Link className="underline-offset-4 hover:underline" href="/mock-exams/cdcp-readiness-check">
               CDCP data centre practice test
             </Link>
+            <Link className="underline-offset-4 hover:underline" href="/mock-exams/nebosh-readiness-check">
+              NEBOSH IGC practice test
+            </Link>
             <Link className="underline-offset-4 hover:underline" href="/#catalog">
               Full catalog
             </Link>

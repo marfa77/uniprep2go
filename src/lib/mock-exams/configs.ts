@@ -1459,7 +1459,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Readiness check sampled across NEBOSH IGC syllabus elements (GIC1 OBE + GIC2 practical). Official GIC1: 5-hour open-book scenario exam, 100 marks, 45% pass (grade Distinction/Credit/Pass from GIC1 only). Official GIC2: 4-hour practical risk assessment — pass standard in GIC2 guidance. Not NEBOSH assessment material.",
+      "Independent MCQ knowledge diagnostic on NEBOSH IGC syllabus themes (GIC1 Elements 1–11 + GIC2 risk assessment). Official IGC (learner guide Jan 2026): GIC1 open-book scenario exam — 5 hours assessment time, 100 marks, 45% provisional pass; GIC2 practical — 4 hours, pass/refer. This UniPrep2Go mock is 50 MCQ / 100 minutes / 70% readiness — not the official assessment format. Not NEBOSH material.",
     disclaimer: neboshDisclaimer,
     description:
       "A 50-question NEBOSH IGC readiness diagnostic across management systems, workplace hazards, and risk assessment skills. Independent prep, not NEBOSH material.",

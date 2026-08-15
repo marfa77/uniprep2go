@@ -148,8 +148,10 @@ describe("exam facts layer", () => {
     const profile = getExamFactsProfileForDeck("nebosh-anki-deck");
     expect(profile).not.toBeNull();
     expect(profile!.exam_facts.passing_score).toContain("45%");
+    expect(profile!.exam_facts.verify_at_url).toContain("international-general-certificate");
     expect(profile!.domain_weights.length).toBeGreaterThanOrEqual(11);
     expect(profile!.candidate_qa.some((item) => /GIC2/i.test(item.a))).toBe(true);
+    expect(profile!.candidate_qa.some((item) => /free 50-question/i.test(item.a))).toBe(true);
   });
 
   it("returns a CFPS profile with eight NFPA domains and pass/fail scoring note", () => {

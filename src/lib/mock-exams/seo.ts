@@ -611,9 +611,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "CDCP practice test",
   },
   "nebosh-readiness-check": {
-    title: "Free NEBOSH Practice Test | 50-Question IGC Readiness Check",
+    title: "Free NEBOSH Practice Test | 50-Question IGC Diagnostic",
     description:
-      "Free NEBOSH practice questions online: 50 timed questions across IGC GIC1 syllabus elements and GIC2 risk assessment skills, 100 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent prep — not NEBOSH assessment material.",
+      "Free NEBOSH IGC practice test: 50 timed MCQs, 100 minutes, 70% readiness target, topic scoring. Official GIC1 is open-book (5h / 45% pass), GIC2 is a 4h practical — this mock is a knowledge diagnostic only. Independent — not NEBOSH material.",
     keywords: [
       "nebosh practice test",
       "nebosh igc exam",
@@ -621,11 +621,12 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "nebosh gic2 risk assessment",
       "free nebosh practice questions",
       "nebosh international general certificate",
+      "nebosh anki",
       "health and safety exam prep",
     ],
-    headline: "Free NEBOSH International General Certificate (IGC) Readiness Check",
+    headline: "Free NEBOSH IGC Practice Test (Knowledge Diagnostic)",
     intro:
-      "A timed readiness diagnostic across NEBOSH IGC syllabus elements — health and safety management systems, workplace hazards, and risk assessment. Official assessments: GIC1 open-book examination (5 hours) and GIC2 practical risk assessment (4 hours).",
+      "A timed MCQ readiness diagnostic across NEBOSH IGC syllabus elements — management systems, workplace hazards, and GIC2-style risk assessment skills. Official assessments are GIC1 scenario open-book (5 hours, 45% provisional pass) and GIC2 practical (4 hours) — use this free 50-question mock to find weak domains, then drill the linked Anki deck.",
     audience:
       "Health and safety officers, supervisors, managers, and career changers preparing for the NEBOSH International General Certificate (IGC) through an accredited Learning Partner.",
     practiceTestLabel: "NEBOSH practice test",

@@ -243,6 +243,21 @@ Candidates over-focus on clinical MNT and under-drill foodservice sanitation, pr
 ### What this does not replace
 
 ACEND education, supervised practice, and the official CDR / Pearson VUE exam. This deck is independent prep — not CDR material.`,
+  "nebosh-anki-deck": `### What is inside
+
+250 MCQ cards across NEBOSH IGC syllabus groups: H&S management systems/culture/monitoring, physical/psychological/musculoskeletal health, chemical/biological/workplace hazards, work equipment/fire/electricity, and GIC2 risk-assessment & control skills. Same bank themes as the free 50-question timed readiness check.
+
+### Plan with the free NEBOSH mock
+
+Study with your accredited Learning Partner materials first. Then 15–20 cards/day for 2–3 weeks and sit the [free 50-question NEBOSH readiness check](/mock-exams/nebosh-readiness-check) (100 min, 70% diagnostic). Official GIC1 is a **5-hour open-book scenario paper (45% provisional pass)** and GIC2 is a **4-hour practical** — keep narrative/practical practice separate from this MCQ diagnostic.
+
+### Pitfalls this deck targets
+
+Candidates treat free MCQ banks as the real exam format, under-drill hierarchy of control and GIC2 five-step risk assessment, and confuse IG1/IG2 legacy labels with current GIC1/GIC2 units. Cards force Elements 1–11 themes under spaced recall.
+
+### What this does not replace
+
+Accredited Learning Partner tuition, NEBOSH registration, or official GIC1/GIC2 assessments. Independent prep — not NEBOSH material.`,
   "cdcp-anki-deck": `### What is inside
 
 250 MCQ cards across the EXIN EPI CDCP facility and operations blueprint: site/standards/building, power & EMF, cooling/water/thermal, fire/security/network, and data-centre operations. Every card has a correct explanation plus short notes on why the other three options fail — the same bank that feeds the free timed readiness check.

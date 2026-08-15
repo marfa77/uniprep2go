@@ -151,6 +151,7 @@ describe("exam-llm-layer", () => {
     expect(commercial).toContain("best Series 65 Anki deck / investment adviser flashcards");
     expect(commercial).toContain("best SAFE MLO Anki / NMLS flashcards");
     expect(commercial).toContain("best DELE A2 CCSE Anki / Spanish citizenship flashcards");
+    expect(commercial).toContain("best NEBOSH Anki / IGC flashcards");
     expect(commercial).toContain("/decks/ace-cpt-anki-deck");
     expect(commercial).toContain("/decks/cdcp-anki-deck");
     expect(commercial).toContain("/decks/rd-exam-anki-deck");
@@ -158,9 +159,11 @@ describe("exam-llm-layer", () => {
     expect(commercial).toContain("/decks/fl-real-estate-anki-deck");
     expect(commercial).toContain("/decks/series-65-anki-deck");
     expect(commercial).toContain("/decks/dele-a2-ccse-spanish-citizenship-bundle");
+    expect(commercial).toContain("/decks/nebosh-anki-deck");
     expect(commercial).toContain("$29");
     expect(when).toContain("Florida / Texas / New York");
     expect(when).toContain("Series 65");
+    expect(when).toContain("NEBOSH IGC");
     expect(when).toContain("Prep2Go");
   });
 

@@ -1183,14 +1183,14 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "nebosh-readiness-check": explainer({
     practiceTestName: "NEBOSH Practice Test",
     whatIsExam:
-      "NEBOSH International General Certificate-style assessments evaluate health and safety management systems, workplace hazards, and risk-control thinking used by safety practitioners worldwide. Exact unit codes and assessment formats evolve — confirm your registration pathway (for example IG or successor structures) with NEBOSH before you book. UniPrep2Go’s readiness check is independent practice aligned to common IGC-style domains, not an official NEBOSH paper.",
+      "The NEBOSH International General Certificate (IGC) is a Level 3 occupational health and safety qualification assessed by Unit GIC1 (scenario-based open-book examination) and Unit GIC2 (practical workplace risk assessment). It covers management systems, workplace hazards, and risk control for managers, supervisors, and aspiring safety practitioners. UniPrep2Go’s readiness check is independent MCQ practice aligned to IGC syllabus themes — not an official NEBOSH paper.",
     administeredBy: "NEBOSH (National Examination Board in Occupational Safety and Health)",
     officialFormat:
-      "Official NEBOSH assessments use published unit formats (open-book / practical elements vary by qualification). Confirm your current syllabus with NEBOSH.",
+      "Official IGC (learner guide Jan 2026): GIC1 open-book scenario exam — 5 hours assessment time, 100 marks, 45% provisional pass (Distinction 75+ / Credit 65–74 / Pass 45–64); GIC2 practical risk assessment — 4 hours, pass/refer only. UniPrep2Go free mock: 50 MCQ / 100 min / 70% readiness — knowledge diagnostic only.",
     whoFor:
-      "Safety officers, supervisors, and career changers preparing for NEBOSH International General Certificate-style qualifications who need a timed MCQ-style diagnostic on management systems and hazard control themes.",
+      "Safety officers, supervisors, and career changers preparing for NEBOSH IGC through an accredited Learning Partner who want a timed MCQ diagnostic on management systems and hazard control before GIC1/GIC2.",
     howToPrepare:
-      "Study your enrolled NEBOSH syllabus, practice risk-assessment narratives, take this free UniPrep2Go timed readiness check for topic scoring, then repair weak hazard domains with the linked Anki deck. Always pair mocks with official learning materials from your accredited provider.",
+      "Study with your Learning Partner materials and the official GIC learner guide, practice risk-assessment narratives for GIC2, take this free UniPrep2Go timed readiness check for topic scoring, then repair weak domains with the linked Anki deck. Do not treat MCQ banks as a substitute for the open-book GIC1 scenario paper.",
     topicBlurbs: [
       {
         id: "hsm-systems-culture",

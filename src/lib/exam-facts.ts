@@ -2078,17 +2078,19 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       question_count:
         "GIC1: scenario-based open-book examination (100 marks); GIC2: practical workplace risk assessment — not multiple-choice",
       scored_count: "GIC1: 100 marks (qualification grade); GIC2: pass/refer only (does not affect Distinction/Credit/Pass grade)",
-      time_limit: "GIC1: 5 hours; GIC2: 4 hours (verify with your Learning Partner)",
+      time_limit:
+        "GIC1: 5 hours assessment time (scenario-based open book on NEBOSH digital platform — NEBOSH also describes a 24-hour scenario-based assessment window); GIC2: 4 hours practical (verify with your Learning Partner)",
       passing_score:
-        "GIC1: 45% provisional pass (45/100); grades — Distinction 75+, Credit 65–74, Pass 45–64. GIC2: pass standard in GIC2 guidance (verify at nebosh.org.uk)",
-      delivery: "GIC1: remote open-book examination (OBE) via NEBOSH online platform; GIC2: practical submission per NEBOSH template",
+        "GIC1: 45% provisional pass (45/100); grades — Distinction 75+, Credit 65–74, Pass 45–64. GIC2: pass standard in GIC2 guidance (verify at nebosh.org.uk). Not a 60% MCQ cut score.",
+      delivery:
+        "GIC1: remote open-book examination (OBE) via NEBOSH Assessment Platform with closing interview; GIC2: practical workplace risk assessment submission per NEBOSH template",
       outline_effective_date: "IGC learner guide v1, specification June 2025, publication January 2026",
-      verify_at_url: "https://www.nebosh.org.uk/qualifications/nebosh-international-general-certificate-in-occupational-health-and-safety/",
+      verify_at_url: "https://www.nebosh.org.uk/qualifications/international-general-certificate/",
     },
     official_sources: [
       {
         label: "NEBOSH — International General Certificate (IGC)",
-        url: "https://www.nebosh.org.uk/qualifications/nebosh-international-general-certificate-in-occupational-health-and-safety/",
+        url: "https://www.nebosh.org.uk/qualifications/international-general-certificate/",
       },
       {
         label: "NEBOSH — GIC learner guide (PDF, January 2026)",
@@ -2114,11 +2116,12 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       { domain: "Unit GIC2 — Risk assessment (5-step approach, hierarchy of control)", weight: "Practical assessment only — pass/refer" },
     ],
     whats_changed: [
-      "The revised IGC syllabus (GIC1/GIC2 units) replaced the previous IG1/IG2 structure — learner guide published January 2026.",
-      "GIC1 is a 5-hour open-book scenario examination marked out of 100; qualification grade (Distinction/Credit/Pass) is based on GIC1 only.",
+      "The revised IGC syllabus (GIC1/GIC2 units) replaced the previous IG1/IG2 structure — learner guide published January 2026; teaching of the revised syllabus began February 2026.",
+      "GIC1 is a scenario-based open-book examination (100 marks, 5 hours assessment time per learner guide) on NEBOSH’s digital platform; qualification grade (Distinction/Credit/Pass) is based on GIC1 only.",
       "GIC2 is a 4-hour practical risk assessment using the official NEBOSH template — pass/refer only, does not affect the qualification grade.",
       "You have five years from your first successful unit ('declaration date') to pass both units and complete the qualification.",
-      "NEBOSH also offers National General Certificate (NGC), Construction, Fire, Environment, and Diploma qualifications — each with separate syllabuses and assessments.",
+      "Third-party MCQ banks are not the official format — UniPrep2Go’s free mock is a knowledge diagnostic only, not a substitute for GIC1 OBE or GIC2 practical.",
+      "NEBOSH also offers National General Certificate (NGC/GNC), Construction, Fire, Environment, and Diploma qualifications — each with separate syllabuses and assessments.",
     ],
     high_yield_facts: [
       "GIC1 pass mark is 45% (45/100) — but aim higher; Distinction requires 75+ and Credit requires 65–74.",
@@ -2144,11 +2147,15 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is the NEBOSH IGC exam open book?",
-        a: "GIC1 is an open-book examination (OBE) — you may use course notes and reference materials during the 5-hour sitting. GIC2 is a practical workplace risk assessment, not a closed-book MCQ test.",
+        a: "GIC1 is an open-book examination (OBE) — you may use course notes and reference materials during the sitting (learner guide: 5 hours assessment time). GIC2 is a practical workplace risk assessment, not a closed-book MCQ test.",
+      },
+      {
+        q: "Is there a free NEBOSH practice test?",
+        a: "Yes — UniPrep2Go offers a free 50-question timed IGC readiness check with topic scoring. It drills syllabus knowledge only; official assessments remain GIC1 OBE + GIC2 practical through an accredited Learning Partner.",
       },
       {
         q: "What other NEBOSH qualifications exist?",
-        a: "NEBOSH offers National General Certificate (NGC), Certificates in Construction Health and Safety, Fire Safety, Environmental Management, and the National/International Diploma — each with separate unit assessments.",
+        a: "NEBOSH offers National General Certificate (NGC/GNC), Certificates in Construction Health and Safety, Fire Safety, Environmental Management, and the National/International Diploma — each with separate unit assessments.",
       },
     ],
     trademark_note:
