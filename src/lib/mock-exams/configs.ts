@@ -1327,7 +1327,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Readiness check sampled across ASHRAE ANSI-accredited certification domains. Most ASHRAE exams: 115 items (100 scored + 15 pretest), 2.5 hours; BCxP: 130 items (120 scored); HFDP: 2 hours. Pass scores vary by credential (verify at ashrae.org).",
+      "Readiness check sampled across ASHRAE ANSI-accredited certification domains. Most ASHRAE exams: 115 items (100 scored + 15 pretest), 2.5 hours; BCxP: 130 items (120 scored); HFDP: 2 hours. Pass scores vary by credential (BEMP 69/100, BCxP 83/120, etc. — verify at ashrae.org). Official ASHRAE also sells a 30-question practice exam per credential — our 50Q timed diagnostic is independent.",
     disclaimer: ashraeDisclaimer,
     description:
       "A 50-question ASHRAE certifications readiness diagnostic across BEMP, BEAP, BCxP, CHD/HBDP/HFDP, and OPMP knowledge areas. Independent prep, not ASHRAE exam material.",

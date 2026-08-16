@@ -191,11 +191,17 @@ export default function MockExamsIndexPage() {
             <Link className="underline-offset-4 hover:underline" href="/mock-exams/well-ap-readiness-check">
               WELL AP practice test
             </Link>
+            <Link className="underline-offset-4 hover:underline" href="/mock-exams/ashrae-certifications-readiness-check">
+              ASHRAE certifications practice test
+            </Link>
             <Link className="underline-offset-4 hover:underline" href="/mock-exams/cdcp-readiness-check">
               CDCP data centre practice test
             </Link>
             <Link className="underline-offset-4 hover:underline" href="/mock-exams/nebosh-readiness-check">
               NEBOSH IGC practice test
+            </Link>
+            <Link className="underline-offset-4 hover:underline" href="/mock-exams/acsm-cpt-readiness-check">
+              ACSM CPT practice test
             </Link>
             <Link className="underline-offset-4 hover:underline" href="/#catalog">
               Full catalog

@@ -152,6 +152,8 @@ describe("exam-llm-layer", () => {
     expect(commercial).toContain("best SAFE MLO Anki / NMLS flashcards");
     expect(commercial).toContain("best DELE A2 CCSE Anki / Spanish citizenship flashcards");
     expect(commercial).toContain("best NEBOSH Anki / IGC flashcards");
+    expect(commercial).toContain("best ASHRAE Anki / BEMP BCxP flashcards");
+    expect(commercial).toContain("best ACSM CPT Anki / ACSM personal trainer flashcards");
     expect(commercial).toContain("/decks/ace-cpt-anki-deck");
     expect(commercial).toContain("/decks/cdcp-anki-deck");
     expect(commercial).toContain("/decks/rd-exam-anki-deck");
@@ -160,10 +162,14 @@ describe("exam-llm-layer", () => {
     expect(commercial).toContain("/decks/series-65-anki-deck");
     expect(commercial).toContain("/decks/dele-a2-ccse-spanish-citizenship-bundle");
     expect(commercial).toContain("/decks/nebosh-anki-deck");
+    expect(commercial).toContain("/decks/ashrae-certifications-anki-deck");
+    expect(commercial).toContain("/decks/acsm-cpt-anki-deck");
     expect(commercial).toContain("$29");
     expect(when).toContain("Florida / Texas / New York");
     expect(when).toContain("Series 65");
     expect(when).toContain("NEBOSH IGC");
+    expect(when).toContain("ASHRAE");
+    expect(when).toContain("ACSM CPT");
     expect(when).toContain("Prep2Go");
   });
 
@@ -191,6 +197,8 @@ describe("exam-llm-layer", () => {
     expect(highIntent).not.toContain("/api/facts/issa-cpt-anki-deck");
     expect(highIntent).toContain("ACE CPT practice test free");
     expect(highIntent).toContain("/mock-exams/ace-cpt-readiness-check");
+    expect(highIntent).toContain("ACSM CPT practice test free");
+    expect(highIntent).toContain("/mock-exams/acsm-cpt-readiness-check");
   });
 
   it("builds high-intent llms.txt section with FINRA ladder first", () => {

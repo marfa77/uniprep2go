@@ -70,24 +70,38 @@ function evaluateWaveDeck(deckSlug, spec) {
 
   const questionBankTs = readText("src/lib/mock-exams/question-bank.ts") ?? "";
   const citizenshipBanks = readText("src/lib/mock-exams/citizenship-banks.ts") ?? "";
+  const wave3Banks = readText("src/lib/mock-exams/wave3-banks.ts") ?? "";
+  const wave4Banks = readText("src/lib/mock-exams/wave4-banks.ts") ?? "";
   if (
     questionBankTs.includes(`"${mockSlug}"`) ||
     questionBankTs.includes(`${mockSlug}.json`) ||
     citizenshipBanks.includes(`"${mockSlug}"`) ||
-    citizenshipBanks.includes(`${mockSlug}.json`)
+    citizenshipBanks.includes(`${mockSlug}.json`) ||
+    wave3Banks.includes(`"${mockSlug}"`) ||
+    wave3Banks.includes(`${mockSlug}.json`) ||
+    wave4Banks.includes(`"${mockSlug}"`) ||
+    wave4Banks.includes(`${mockSlug}.json`)
   ) {
-    pass("mock-bank-import", "Bank import", "question-bank / citizenship-banks");
+    pass("mock-bank-import", "Bank import", "question-bank / citizenship / wave3-4 banks");
   } else {
-    fail("mock-bank-import", "Bank import", `Wire ${mockSlug} in question-bank.ts or citizenship-banks.ts`);
+    fail(
+      "mock-bank-import",
+      "Bank import",
+      `Wire ${mockSlug} in question-bank, citizenship-banks, or wave3/4-banks`,
+    );
   }
 
   const wave2 = readText("src/lib/mock-exams/wave2-configs.ts") ?? "";
   const wave1 = readText("src/lib/mock-exams/wave1-configs.ts") ?? "";
+  const wave3 = readText("src/lib/mock-exams/wave3-configs.ts") ?? "";
+  const wave4 = readText("src/lib/mock-exams/wave4-configs.ts") ?? "";
   const citizenship = readText("src/lib/mock-exams/citizenship-configs.ts") ?? "";
   const configs = readText("src/lib/mock-exams/configs.ts") ?? "";
   if (
     wave2.includes(`slug: "${mockSlug}"`) ||
     wave1.includes(`slug: "${mockSlug}"`) ||
+    wave3.includes(`slug: "${mockSlug}"`) ||
+    wave4.includes(`slug: "${mockSlug}"`) ||
     citizenship.includes(`slug: "${mockSlug}"`) ||
     configs.includes(`slug: "${mockSlug}"`)
   ) {
@@ -99,6 +113,8 @@ function evaluateWaveDeck(deckSlug, spec) {
   if (
     wave2.includes(`linkedDeckSlug: "${deckSlug}"`) ||
     wave1.includes(`linkedDeckSlug: "${deckSlug}"`) ||
+    wave3.includes(`linkedDeckSlug: "${deckSlug}"`) ||
+    wave4.includes(`linkedDeckSlug: "${deckSlug}"`) ||
     citizenship.includes(`linkedDeckSlug: "${deckSlug}"`) ||
     configs.includes(`linkedDeckSlug: "${deckSlug}"`)
   ) {
@@ -125,16 +141,29 @@ function evaluateWaveDeck(deckSlug, spec) {
   }
 
   const launchTs = readText("src/lib/anki-deck-launch.ts") ?? "";
-  const forceLaunch =
-    launchTs.includes(`"${deckSlug}"`) && launchTs.includes("WAVE_FORCE_LAUNCH");
+  const forceLaunchMatch = launchTs.match(
+    /WAVE_FORCE_LAUNCH_SLUGS\s*=\s*new Set\(\[([\s\S]*?)\]\)/,
+  );
+  const forceLaunch = Boolean(
+    forceLaunchMatch?.[1]?.includes(`"${deckSlug}"`),
+  );
   const moneyCohort = ["money", "licensing", "finance"].includes(String(spec.cohort));
-  if (forceLaunch || moneyCohort) {
-    pass("launch-path", "Launch path", forceLaunch ? "WAVE_FORCE_LAUNCH_SLUGS" : `cohort ${spec.cohort}`);
+  const apkgReadyLaunch = Boolean(product?.gumroadProductId && product?.apkgUploadedAt);
+  if (forceLaunch || moneyCohort || apkgReadyLaunch) {
+    pass(
+      "launch-path",
+      "Launch path",
+      forceLaunch
+        ? "WAVE_FORCE_LAUNCH_SLUGS"
+        : apkgReadyLaunch
+          ? "Gumroad apkg-ready"
+          : `cohort ${spec.cohort}`,
+    );
   } else {
     warn(
       "launch-path",
       "Launch path",
-      `Cohort ${spec.cohort} stays planned unless added to WAVE_FORCE_LAUNCH_SLUGS`,
+      `Cohort ${spec.cohort} stays planned unless Gumroad apkg-ready or WAVE_FORCE_LAUNCH_SLUGS`,
     );
   }
 

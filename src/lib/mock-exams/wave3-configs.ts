@@ -555,7 +555,8 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "science", label: "Exercise science" },
       { id: "behavior", label: "Behavior & safety" }
     ]),
-    officialSourceNote: "Mapped to ACSM themes. Independent UniPrep2Go readiness check — not an official exam.",
+    officialSourceNote:
+      "Mapped to ACSM-CPT themes (Domains I–IV). Official ACSM-CPT: 135 items (120 scored + 15 pretest), 150 minutes, scaled pass 550 on 200–800 — verify Candidate Handbook / FAQs at acsm.org. This 60Q timed check is a shorter diagnostic. Independent UniPrep2Go prep — not ACSM exam material.",
     description: "Free 60-question ACSM CPT readiness check with topic scoring.",
     examBody: "ACSM",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",

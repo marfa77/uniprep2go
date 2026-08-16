@@ -573,7 +573,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "ashrae-certifications-readiness-check": {
     title: "Free ASHRAE Certification Practice Test | 50-Question Readiness Check",
     description:
-      "Free ASHRAE certification practice questions online: 50 timed questions across BEMP, BEAP, BCxP, CHD/HBDP/HFDP, and OPMP domains, 100 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent prep — not ASHRAE exam material.",
+      "Free ASHRAE certification practice questions online: 50 timed questions across BEMP, BEAP, BCxP, CHD/HBDP/HFDP, and OPMP domains, 100 minutes, 70% readiness target, topic diagnosis, and full answer review. Official exams are mostly 115 items / 2.5h (BCxP 130 / 120 scored) with credential-specific pass points — not ASHRAE exam material.",
     keywords: [
       "ashrae certification practice test",
       "bemp exam prep",
@@ -585,7 +585,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free ASHRAE Certifications Readiness Check",
     intro:
-      "A timed readiness diagnostic sampled across ASHRAE's ANSI-accredited personnel certifications — energy modeling, assessment, commissioning, HVAC design, healthcare facility design, and operations management.",
+      "A timed readiness diagnostic sampled across ASHRAE's ANSI-accredited personnel certifications — energy modeling, assessment, commissioning, HVAC design, healthcare facility design, and operations management. Prefer this free timed mock + ownable Anki over mega free Q-banks when you need topic scoring; keep ASHRAE's official $49 30-question practice exam and credential-specific pass points (e.g. BEMP 69/100, BCxP 83/120) as the source of truth.",
     audience:
       "HVAC engineers, energy modelers, commissioning providers, facility managers, and designers preparing for ASHRAE BCxP, BEMP, BEAP, CHD, HBDP, HFDP, or OPMP exams.",
     practiceTestLabel: "ASHRAE certification practice test",

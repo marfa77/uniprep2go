@@ -147,6 +147,7 @@ export function formatAnkiDeckCardLabel(count: number) {
 /** Launched wave decks with hand-authored card-preview webps under public/samples/. */
 const LAUNCH_SAMPLE_IMAGE_SLUGS = new Set([
   "ace-cpt-anki-deck",
+  "acsm-cpt-anki-deck",
   "luxembourg-vivre-ensemble-anki-deck",
 ]);
 
@@ -169,6 +170,27 @@ const ACE_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
     answer:
       "(c) Stop exercise and advise seeking urgent medical evaluation as appropriate.",
     imageUrl: "/samples/ace-cpt-anki-deck-sample-3.webp",
+  },
+];
+
+/** Copy must match public/samples/acsm-cpt-anki-deck-sample-{1,2,3}.webp (not bank Q1–Q3). */
+const ACSM_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
+  {
+    question: "Feet turning out in the overhead squat assessment most commonly suggests overactivity of:",
+    answer:
+      "(b) Soleus / lateral gastrocnemius and/or biceps femoris (short head) with underactive medial gastroc/medial hamstrings/gracilis/sartorius/popliteus as applicable",
+    imageUrl: "/samples/acsm-cpt-anki-deck-sample-1.webp",
+  },
+  {
+    question: "What does a resting heart rate assessment primarily help a trainer establish?",
+    answer:
+      "(c) A baseline cardiorespiratory status and training intensity reference (with other metrics)",
+    imageUrl: "/samples/acsm-cpt-anki-deck-sample-2.webp",
+  },
+  {
+    question: "Which assessment is most appropriate as a dynamic postural observation of the kinetic chain under load?",
+    answer: "(d) Overhead squat assessment",
+    imageUrl: "/samples/acsm-cpt-anki-deck-sample-3.webp",
   },
 ];
 
@@ -204,6 +226,9 @@ function attachLaunchSampleImages(slug: string, cards: SampleCard[]): SampleCard
 function buildSampleCardsFromLinkedMock(deck: PlannedDeck): SampleCard[] {
   if (deck.slug === "ace-cpt-anki-deck") {
     return ACE_LAUNCH_SAMPLE_CARDS;
+  }
+  if (deck.slug === "acsm-cpt-anki-deck") {
+    return ACSM_LAUNCH_SAMPLE_CARDS;
   }
   if (deck.slug === "luxembourg-vivre-ensemble-anki-deck") {
     return LUXEMBOURG_LAUNCH_SAMPLE_CARDS;

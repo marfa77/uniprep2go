@@ -522,9 +522,20 @@ async function syncProductAssets({
     dryRun: false,
   });
 
-  uploadSamplePreviews({ productId, slug, dryRun: false });
   await putGumroadDescriptionAsync(productId, description, dryRun);
-  publishSampleLanding({ slug, dryRun: false });
+
+  const sampleCount = resolveSampleWebps(slug).length;
+  let samplesReady = false;
+  if (sampleCount >= 3) {
+    uploadSamplePreviews({ productId, slug, dryRun: false });
+    publishSampleLanding({ slug, dryRun: false });
+    samplesReady = true;
+  } else {
+    console.warn(
+      `  skip samples/landing: ${sampleCount}/3 webps — ship cover + description until user Anki screenshots`,
+    );
+  }
+
   runGumroad(`products publish ${productId}`);
 
   const refreshed = JSON.parse(readFileSync(CATALOG_PATH, "utf8"));
@@ -532,11 +543,19 @@ async function syncProductAssets({
     ...(refreshed.products[slug] ?? record),
     apkgUploadedAt: new Date().toISOString(),
     publishedAt: record.publishedAt ?? new Date().toISOString(),
-    descriptionPolishedAt: new Date().toISOString(),
-    samplesUploadedAt: new Date().toISOString(),
+    ...(samplesReady
+      ? {
+          descriptionPolishedAt: new Date().toISOString(),
+          samplesUploadedAt: new Date().toISOString(),
+        }
+      : {}),
   };
 
-  console.log(`  assets + description + samples + landing uploaded + product published`);
+  console.log(
+    samplesReady
+      ? `  assets + description + samples + landing uploaded + product published`
+      : `  assets + description uploaded + product published (samples pending)`,
+  );
 }
 
 async function syncProductPolish({ slug, record, titles, getAllMockExams, catalog, dryRun }) {

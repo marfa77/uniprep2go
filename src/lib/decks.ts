@@ -3787,22 +3787,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question:
-          "BCxP (Building Commissioning Professional) certification validates ability to:",
+        question: "ASHRAE Guideline 0 describes commissioning as:",
         answer:
-          "Correct: (a) Lead and manage the commissioning process from design through occupancy per owner requirements. BCxP emphasizes owner advocacy and process management across project phases.",
+          "Correct: (a) A quality-focused process verifying systems achieve owner requirements throughout project delivery. Guideline 0 is the overarching framework for total building commissioning.",
         imageUrl: "/samples/ashrae-certifications-anki-deck-sample-1.webp",
       },
       {
-        question: "The Owner's Project Requirements (OPR) document defines:",
+        question: "The BCxP exam form includes approximately:",
         answer:
-          "Correct: (a) Owner's measurable performance expectations for systems and the facility. OPR is the foundation against which commissioning verifies success.",
+          "Correct: (b) 130 total items with 120 scored and 10 unscored pretest questions. BCxP has the largest scored item count among common ASHRAE certification exams.",
         imageUrl: "/samples/ashrae-certifications-anki-deck-sample-2.webp",
       },
       {
-        question: "Basis of Design (BOD) translates OPR into:",
+        question: "The published BCxP passing score is approximately:",
         answer:
-          "Correct: (a) Design team assumptions, standards, and system selections explaining how requirements will be met. CxA reviews BOD for alignment with OPR early in design.",
+          "Correct: (a) 83 correct out of 120 scored items (verify current FAQs). BCxP has the highest pass threshold among the common ASHRAE credentials.",
         imageUrl: "/samples/ashrae-certifications-anki-deck-sample-3.webp",
       },
     ],

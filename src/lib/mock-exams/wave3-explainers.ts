@@ -546,17 +546,26 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "acsm-cpt-readiness-check": {
     practiceTestName: "ACSM CPT Practice Test",
-    whatIsExam: "The ACSM Certified Personal Trainer exam is an NCCA-accredited CPT credential covering assessment, programming, and exercise science.",
-    administeredBy: "ACSM",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with ACSM.",
+    whatIsExam:
+      "The ACSM Certified Personal Trainer (ACSM-CPT) exam is an NCCA-accredited credential covering initial client consultation and assessment (~25%), exercise programming and implementation (~43%), exercise leadership and client education (~22%), and legal/professional responsibilities (~10%).",
+    administeredBy: "American College of Sports Medicine (ACSM)",
+    officialFormat:
+      "Official ACSM-CPT: 135 multiple-choice items (120 scored + 15 unidentified pretest), 150 minutes seat time, scaled passing score 550 on a 200–800 scale (verify Candidate Handbook / FAQs at acsm.org). This UniPrep2Go session is a free 60-question timed diagnostic — shorter than the live form.",
     examFaqs: [
       {
         question: "What is the ACSM CPT exam?",
-        answer: "The ACSM Certified Personal Trainer exam is an NCCA-accredited CPT credential covering assessment, programming, and exercise science.",
+        answer:
+          "The ACSM Certified Personal Trainer exam is an NCCA-accredited CPT credential covering assessment, programming, leadership/education, and professional responsibilities.",
+      },
+      {
+        question: "How many questions are on the official ACSM-CPT exam?",
+        answer:
+          "135 items (120 scored + 15 pretest) in 150 minutes, with a scaled pass of 550 (200–800). Verify current details in the ACSM Candidate Handbook.",
       },
       {
         question: "Is this an official ACSM CPT exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from ACSM.",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice — not official exam material from ACSM.",
       },
     ],
     keywords: ["acsm cpt practice test", "acsm personal trainer practice test", "acsm cpt practice exam"],

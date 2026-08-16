@@ -2462,6 +2462,75 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "ACE® and American Council on Exercise® are trademarks of the American Council on Exercise. UniPrep2Go is not affiliated with or endorsed by ACE.",
   },
+  "acsm-cpt": {
+    examKey: "acsm-cpt",
+    pageHeading: "ACSM CPT Exam — Facts, Domains & Prep",
+    intro:
+      "The ACSM Certified Personal Trainer (ACSM-CPT) exam is the NCCA-accredited personal trainer certification from the American College of Sports Medicine. This page summarizes exam structure, domain weights, and independent UniPrep2Go study products (not official ACSM exam material).",
+    exam_facts: {
+      exam_name: "ACSM Certified Personal Trainer (ACSM-CPT) Examination",
+      administered_by: "American College of Sports Medicine (ACSM)",
+      question_count: "135 multiple-choice (120 scored + 15 unscored pretest)",
+      scored_count: "120",
+      time_limit: "150 minutes (2.5 hours)",
+      scoring_scale: "Scaled score (200–800 reporting scale)",
+      passing_score: "Scaled score of 550 or greater (verify at acsm.org)",
+      delivery:
+        "Computer-based testing via ACSM’s exam provider (verify current scheduling options in the Candidate Handbook)",
+      outline_effective_date:
+        "ACSM-CPT Exam Content Outline effective July 10, 2025 (GETP 12 alignment — verify current edition)",
+      verify_at_url: "https://acsm.org/certification/get-certified/faqs/",
+    },
+    official_sources: [
+      {
+        label: "ACSM — Certification FAQs (exam length and scaled pass)",
+        url: "https://acsm.org/certification/get-certified/faqs/",
+      },
+      {
+        label: "ACSM — Personal Trainer certification",
+        url: "https://acsm.org/certification/get-certified/personal-trainer/",
+      },
+      {
+        label: "ACSM — CPT Exam Content Outline (PDF)",
+        url: "https://acsm.org/wp-content/uploads/2024/12/ACSM-Certified-Personal-Trainer-Exam-Content-Outline.pdf",
+      },
+    ],
+    domain_weights: [
+      { domain: "Domain I — Initial Client Consultation and Assessment", weight: "About 25%" },
+      { domain: "Domain II — Exercise Programming and Implementation", weight: "About 43%" },
+      { domain: "Domain III — Exercise Leadership and Client Education", weight: "About 22%" },
+      { domain: "Domain IV — Legal and Professional Responsibilities", weight: "About 10%" },
+    ],
+    whats_changed: [
+      "Effective July 10, 2025, ACSM certification exams align with GETP 12th edition — verify current Candidate Handbook before scheduling.",
+      "ACSM-CPT seat time remains 150 minutes with 135 items (120 scored + 15 pretest).",
+      "Passing standard remains a scaled score of 550 on the 200–800 reporting scale across ACSM certification exams (verify FAQs).",
+    ],
+    high_yield_facts: [
+      "ACSM-CPT uses 135 items: 120 scored and 15 unidentified pretest questions; only scored items count toward the scaled score.",
+      "Candidates must earn a scaled score of 550 or greater (200–800 scale) to pass — verify at acsm.org before scheduling.",
+      "Domain II (programming & implementation) is the heaviest weight (~43%); Domain IV (legal/professional) is lightest (~10%) but frequently missed.",
+      "Cognitive levels tested: recall, application, and synthesis — not memorization alone.",
+      "Trainers screen and refer; they do not diagnose medical conditions or prescribe drugs.",
+      "PAR-Q+ / preparticipation screening and informed consent precede vigorous testing or progressive loading.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the ACSM CPT exam?",
+        a: "135 multiple-choice questions: 120 scored and 15 unscored pretest items, in 150 minutes.",
+      },
+      {
+        q: "What score do you need to pass the ACSM CPT exam?",
+        a: "A scaled score of 550 or greater on a 200–800 reporting scale. Verify the current passing point in ACSM FAQs / Candidate Handbook.",
+      },
+      {
+        q: "Is UniPrep2Go's ACSM readiness check the real ACSM exam?",
+        a: "No. The free 60-question readiness check and 60-card Anki deck are independent study aids mapped to ACSM-CPT themes — not official ACSM exams or curriculum.",
+      },
+    ],
+    trademark_note:
+      "ACSM® and ACSM-CPT® are trademarks of the American College of Sports Medicine. UniPrep2Go is not affiliated with or endorsed by ACSM.",
+  },
   "rd-exam": {
     examKey: "rd-exam",
     pageHeading: "CDR Registered Dietitian (RD / RDN) Exam — Facts & Prep",
@@ -2629,6 +2698,7 @@ const deckExamKeyMap: Record<string, string> = {
   "mrics-anki-deck": "mrics",
   "mrics-quantity-surveying-anki-deck": "mrics-quantity-surveying",
   "ace-cpt-anki-deck": "ace-cpt",
+  "acsm-cpt-anki-deck": "acsm-cpt",
   "rd-exam-anki-deck": "rd-exam",
   "luxembourg-vivre-ensemble-anki-deck": "luxembourg-vivre-ensemble",
   "us-citizenship-test-prep2go-app": "us-citizenship",

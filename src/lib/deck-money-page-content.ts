@@ -258,6 +258,36 @@ Candidates treat free MCQ banks as the real exam format, under-drill hierarchy o
 ### What this does not replace
 
 Accredited Learning Partner tuition, NEBOSH registration, or official GIC1/GIC2 assessments. Independent prep — not NEBOSH material.`,
+  "ashrae-certifications-anki-deck": `### What is inside
+
+250 MCQ cards sampled across ASHRAE personnel-certification themes: building energy modeling (BEMP), energy assessment (BEAP), commissioning (BCxP), HVAC / high-performance / healthcare design (CHD, HBDP, HFDP), and operations performance (OPMP). Same bank that feeds the free 50-question timed readiness check.
+
+### Plan with the free ASHRAE mock
+
+Study your credential’s candidate guidebook first. Then 15–20 cards/day for 2–3 weeks and sit the [free 50-question ASHRAE certifications readiness check](/mock-exams/ashrae-certifications-readiness-check) (100 min, 70% diagnostic). Official forms are mostly **115 items / 2.5 hours** (BCxP **130 / 120 scored**); pass points vary (e.g. BEMP **69/100**, BCxP **83/120**). Keep ASHRAE’s official 30-question practice exam and study guides separate from this multi-credential diagnostic.
+
+### Pitfalls this deck targets
+
+Candidates confuse BEMP vs BEAP vs BCxP blueprints, treat a single mega free Q-bank as credential-specific prep, and ignore pretest-item structure on official forms. Cards force cross-credential HVAC / energy / commissioning themes under spaced recall.
+
+### What this does not replace
+
+ASHRAE eligibility, application fees, credential-specific study guides, or the official 30Q practice exam. Independent prep — not ASHRAE material.`,
+  "acsm-cpt-anki-deck": `### What is inside
+
+60 MCQ cards across ACSM-CPT themes: client assessment, exercise programming, exercise science, and behavior & safety. Every card includes a correct explanation and notes on why the other options fail — the same bank as the free timed readiness check.
+
+### 2–3 week study plan with the free mock
+
+**Week 1:** 15–20 new cards/day across assessment and programming (PAR-Q+/risk, FITT-style loading). **Week 2:** Add science and behavior/safety cards; sit the [free 60-question ACSM CPT readiness check](/mock-exams/acsm-cpt-readiness-check). **Final days:** Review-only Anki on weak topics — keep official ACSM timing practice separate (**135 items / 150 minutes / scaled pass 550**).
+
+### Pitfalls this deck targets
+
+Candidates over-drill exercise science trivia and under-drill initial consultation, medical-clearance decisions, and legal/professional responsibilities (~10% of the official outline). Cards force all four domain clusters under spaced recall.
+
+### What this does not replace
+
+ACSM eligibility, CPR/AED requirements, GETP study, or the official ACSM-CPT exam. Independent prep — not ACSM material.`,
   "cdcp-anki-deck": `### What is inside
 
 250 MCQ cards across the EXIN EPI CDCP facility and operations blueprint: site/standards/building, power & EMF, cooling/water/thermal, fire/security/network, and data-centre operations. Every card has a correct explanation plus short notes on why the other three options fail — the same bank that feeds the free timed readiness check.
