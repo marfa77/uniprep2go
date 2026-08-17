@@ -512,17 +512,26 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "aspt-phlebotomy-readiness-check": {
     practiceTestName: "ASPT Phlebotomy Practice Test",
-    whatIsExam: "ASPT phlebotomy certification exams validate blood collection technique, tube handling, safety, and specimen processing for phlebotomy technicians.",
+    whatIsExam:
+      "ASPT (American Society of Phlebotomy Technicians) certifies phlebotomy technicians on blood collection, tube handling, safety, and specimen processing. It is not NHA CPT and not ASCP PBT.",
     administeredBy: "ASPT",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with ASPT.",
+    officialFormat:
+      "Verify the current official item count, time, and pass rule at aspt.org. Third-party sites disagree (some say 100Q, others 150Q) — UniPrep does not invent those numbers. This page is a 60-question / 75-minute independent diagnostic.",
     examFaqs: [
       {
         question: "What is the ASPT Phlebotomy exam?",
-        answer: "ASPT phlebotomy certification exams validate blood collection technique, tube handling, safety, and specimen processing for phlebotomy technicians.",
+        answer:
+          "ASPT phlebotomy certification covers venipuncture, order of draw, safety, and specimen processing. Confirm the current official outline at aspt.org.",
+      },
+      {
+        question: "Is ASPT the same as NHA CPT or ASCP PBT?",
+        answer:
+          "No. NHA CPT and ASCP PBT are different certifiers. ASCP PBT is a computer-adaptive exam (about 80 items / 2 hours). Pick the mock that matches the body you registered with.",
       },
       {
         question: "Is this an official ASPT Phlebotomy exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from ASPT.",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice — not official exam material from ASPT. The matching Anki deck is planned, not a live product.",
       },
     ],
     keywords: ["aspt practice test", "phlebotomy technician practice test", "aspt phlebotomy practice exam"],

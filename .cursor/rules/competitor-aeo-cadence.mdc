@@ -1,0 +1,21 @@
+---
+description: Competitor AEO live-pass cadence — do not re-audit weekly
+alwaysApply: true
+---
+
+# Competitor AEO cadence (2 months)
+
+When the user pastes growth-pulse / Top pages / Google / LLM traffic:
+
+1. Read `docs/mock-bank-qa/competitor-aeo-ledger.md` **before** starting a competitor SERP pass.
+2. If a slug’s **last competitor AEO** is **&lt; 60 days** ago: do **not** re-run WebSearch SERP or rewrite cites. Report “fresh until {date}” and only inspect bank/Gumroad if the user asked about a live mock start or a P0.
+3. Re-audit (full bank + GEO + competitor) only when:
+   - last pass is **≥ 60 days**, or
+   - SKU is **new / never ledgered**, or
+   - user explicitly asks, or
+   - P0 content / official-facts drift (wrong Q count, time, pass score)
+4. After a pass, **update the ledger** (date + one-line beat/gap). Do not invent weekly re-audits from pulse repeats.
+
+Homepage `/` is a hub — not a SKU audit.
+
+Existing live-pass docs (ACSM, ASHRAE, NEBOSH, WELL, wave-31, Luxembourg ship) count as the last pass for those slugs.

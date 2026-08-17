@@ -170,7 +170,20 @@ describe("exam-llm-layer", () => {
     expect(when).toContain("NEBOSH IGC");
     expect(when).toContain("ASHRAE");
     expect(when).toContain("ACSM CPT");
+    expect(when).toContain("CFA Level 2");
+    expect(when).toContain("DELF / DALF / TCF / TEF");
+    expect(when).toContain("Dutch Inburgering");
+    expect(when).toContain("German A2");
+    expect(when).toContain("ASPT phlebotomy");
     expect(when).toContain("Prep2Go");
+    expect(commercial).toContain("best CFA Level 2 Anki deck");
+    expect(commercial).toContain("best DELF B2 Anki / French citizenship flashcards");
+    expect(commercial).toContain("best Dutch A2 Inburgering Anki");
+    expect(commercial).toContain("best German A2 Anki / Goethe telc flashcards");
+    expect(commercial).toContain("/decks/cfa-level-2-anki-deck");
+    expect(commercial).toContain("/decks/delf-b2-french-anki-deck");
+    expect(commercial).toContain("/decks/dutch-a2-inburgering-anki-deck");
+    expect(commercial).toContain("/decks/german-a2-anki-deck");
   });
 
   it("does not emit 404 /api/facts URLs for planned NASM/ISSA CPT decks", async () => {
@@ -199,6 +212,9 @@ describe("exam-llm-layer", () => {
     expect(highIntent).toContain("/mock-exams/ace-cpt-readiness-check");
     expect(highIntent).toContain("ACSM CPT practice test free");
     expect(highIntent).toContain("/mock-exams/acsm-cpt-readiness-check");
+    expect(highIntent).toContain("ASPT phlebotomy practice test free");
+    expect(highIntent).toContain("/mock-exams/aspt-phlebotomy-readiness-check");
+    expect(highIntent).not.toContain("/api/facts/aspt-phlebotomy-anki-deck");
   });
 
   it("builds high-intent llms.txt section with FINRA ladder first", () => {

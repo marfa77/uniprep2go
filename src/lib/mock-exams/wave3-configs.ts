@@ -517,8 +517,10 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "safety", label: "Safety & infection" },
       { id: "processing", label: "Processing & QA" }
     ]),
-    officialSourceNote: "Mapped to ASPT themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question ASPT Phlebotomy readiness check with topic scoring.",
+    officialSourceNote:
+      "Independent UniPrep2Go diagnostic on ASPT phlebotomy themes (venipuncture, tubes, safety, processing). ASPT is not NHA CPT and not ASCP PBT (ASCP PBT is ~80-item CAT / ~2h). Third-party sites disagree on ASPT item count — verify the current official form at aspt.org. Not official ASPT exam material.",
+    description:
+      "Free 60-question ASPT Phlebotomy readiness check with topic scoring. Verify official format at aspt.org — this page is an independent diagnostic, not NHA CPT or ASCP PBT.",
     examBody: "ASPT",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["ASPT", "phlebotomy technician"],

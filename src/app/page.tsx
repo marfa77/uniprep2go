@@ -76,6 +76,7 @@ const examPathLinks = [
     links: [
       { href: "/mock-exams/cfa-level-1-readiness-check", label: "CFA Level 1 mock" },
       { href: "/mock-exams/cfa-level-2-readiness-check", label: "CFA Level 2 mock" },
+      { href: "/mock-exams/frm-part-1-readiness-check", label: "FRM Part 1 mock" },
       { href: "/decks/frm-part-1-anki-deck", label: "FRM Part 1 deck" },
     ],
   },
@@ -126,10 +127,11 @@ const examPathLinks = [
   },
   {
     title: "Allied health (specialty)",
-    description: "NHA phlebotomy and CCMA readiness checks — niche allied-health mocks.",
+    description: "NHA phlebotomy, ASPT phlebotomy, and CCMA readiness checks — niche allied-health mocks.",
     links: [
       { href: "/mock-exams/v/allied-health", label: "Browse allied health mocks" },
       { href: "/mock-exams/nha-cpt-phlebotomy-readiness-check", label: "NHA CPT phlebotomy" },
+      { href: "/mock-exams/aspt-phlebotomy-readiness-check", label: "ASPT phlebotomy" },
       { href: "/mock-exams/nha-ccma-readiness-check", label: "NHA CCMA mock" },
     ],
   },
@@ -217,6 +219,8 @@ const popularDeckBoostLinks = [
   { href: "/decks/swiss-citizenship-anki-deck", label: "Swiss citizenship" },
   { href: "/decks/dutch-a2-inburgering-anki-deck", label: "Dutch A2" },
   { href: "/decks/delf-b2-french-anki-deck", label: "DELF B2" },
+  { href: "/decks/german-a2-anki-deck", label: "German A2" },
+  { href: "/decks/luxembourg-vivre-ensemble-anki-deck", label: "Luxembourg Vivre ensemble" },
   { href: "/decks/citizenship-naturalization-anki-bundle", label: "Citizenship bundle" },
   { href: "/decks/german-a2-for-russian-speakers-anki-deck", label: "German A2 (RU)" },
   { href: "/decks", label: "All decks" },
@@ -274,6 +278,8 @@ const featuredMockSlugs = [
   "portugal-nacionalidade-readiness-check",
   "ccse-espana-readiness-check",
   "canadian-citizenship-readiness-check",
+  "luxembourg-vivre-ensemble-readiness-check",
+  "aspt-phlebotomy-readiness-check",
   "california-real-estate-readiness-check",
   "life-and-health-insurance-readiness-check",
   "property-casualty-insurance-readiness-check",

@@ -8,6 +8,8 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "342+ flashcards mapped to all 10 CFA Level 1 topic weights — pairs with the printable 2026 formula reference PDF.",
   "cfa-level-1-formula-reference-2026":
     "54-page 2026 formula reference: 250 formulas + 98 definitions by topic plus an 80-question recall drill with answer key.",
+  "cfa-level-2-anki-deck":
+    "495 vignette-depth cards across all 10 CFA Level 2 topics — plus a free 60-question mock and the matching formula PDF. Not a Level 1 leftover dump.",
   "frm-part-1-anki-deck":
     "444 cards across FRM Part 1 foundations, quant, markets, and valuation — with a free 50-question readiness check.",
   "bench-energy-metal-trader-anki-deck":
@@ -26,6 +28,8 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "300 PTCE cards for top-200 drugs, sig codes, and pharmacy math — pairs with the 2026 printable study guide PDF.",
   "luxembourg-vivre-ensemble-anki-deck":
     "60 French Vivre ensemble cards for institutions, rights, history/EU, and daily life — plus a free 60-question Luxembourg diagnostic. Built for nationality civics, not Sproochentest.",
+  "aspt-phlebotomy-anki-deck":
+    "Planned 60-card ASPT phlebotomy Anki (venipuncture, order of draw, safety, processing). Take the free 60-question diagnostic now — verify the current official form at aspt.org. ASPT is not NHA CPT and not ASCP PBT.",
   "rd-exam-anki-deck":
     "60 CDR-domain cards (Principles, Nutrition Care, Management, Foodservice) with explanations — pairs with the free 60-question RD readiness check before Pearson VUE.",
   "enrolled-agent-anki-deck":
@@ -66,7 +70,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "servsafe-manager-anki-deck":
     "Temperature danger zones, HACCP steps, Big 6 pathogens, and manager responsibilities appear as short recall prompts. Run the free 90-question ServSafe mock first — it maps directly to the domains in the coverage table.",
   "california-real-estate-exam-anki-deck":
-    "Agency fiduciary duties, disclosure timelines, financing math, and California-specific practice cards mirror DRE topic areas. The free 60-question CA mock highlights which contract and property-law sections need another pass.",
+    "400 California DRE-only cards — agency, disclosure timelines, financing math — plus a free 60-question timed mock. Official salesperson sitting is 150Q (75+75) / 3h15 / 70% both portions; our mock is a shorter diagnostic, not a 1,500-question course dump.",
   "bench-energy-metal-trader-anki-deck":
     "LME cash vs 3M, carry economics, contango/backwardation, and base/precious metals benchmarks — the vocabulary new metals desk analysts actually hear. Spaced repetition beats rereading a PDF glossary the night before a desk interview.",
   "life-and-health-insurance-exam-anki-deck":
@@ -87,6 +91,16 @@ export const positioningOverrides: Partial<
     ],
     summaryProse:
       "Fewer than 400 weighted flashcards beat a 3,000-card dump for CFA Level 1: ethics, FRA, and quant alone account for a third of the exam. This deck matches the 10 topic weights in the table — run the free mock to see where your daily 25-card session should focus.",
+  },
+  "cfa-level-2-anki-deck": {
+    ourEdge: [
+      "495 cards across all 10 equally weighted CFA Level 2 topics",
+      "Vignette-depth FSA, equity/FI valuation, derivatives, PM, and ethics application",
+      "Pairs with the Level 2 formula reference PDF and a free 60-question mock",
+      "Ownable .apkg — not a 3,000-card Level 1 leftover or monthly Q-bank",
+    ],
+    summaryProse:
+      "Level 2 punishes item-set misfires, not missing a random L1 definition. Four hundred ninety-five focused cards plus one free timed diagnostic beat a mega-dump when you need FCFF vs FCFE and FSA adjustments under the clock.",
   },
   "cfa-level-1-formula-reference-2026": {
     ourEdge: [
@@ -268,6 +282,22 @@ Candidates grind Part 1 (Individuals) and skip Representation/Practices, confuse
 
 IRS SEE registration, official study materials, or the three-part Prometric exam. Independent prep — not IRS material.`,
 
+  "aspt-phlebotomy-anki-deck": `### What this page is
+
+A planned 60-card ASPT phlebotomy Anki (venipuncture, order of draw & tubes, safety/infection, processing & QA) paired with a **live free 60-question** timed readiness check. The deck is **not a live Gumroad SKU** yet — do not treat this page as a buyable .apkg.
+
+### ASPT vs NHA vs ASCP
+
+**ASPT** (American Society of Phlebotomy Technicians) is a separate certifier from **NHA CPT** and **ASCP PBT**. ASCP PBT is a computer-adaptive exam (~80 items / ~2 hours). Third-party practice sites disagree on ASPT item count and time — UniPrep does **not** invent 100Q or 150Q official numbers. Verify the current form at [aspt.org](https://www.aspt.org).
+
+### Plan with the free mock
+
+Start with the [free ASPT phlebotomy readiness check](/mock-exams/aspt-phlebotomy-readiness-check). Use the topic report (venipuncture, tubes, safety, processing) to decide whether you also need the NHA CPT mock. Join the waitlist when the Anki ships.
+
+### What this does not replace
+
+ASPT registration, clinical training, or NHA/ASCP exams. Independent diagnostic — not ASPT exam material.`,
+
   "luxembourg-vivre-ensemble-anki-deck": `### What is inside
 
 60 French MCQ prompts mapped to Vivre ensemble themes: institutions and vivre ensemble, history/geography/EU, rights and nationality, and society/daily life. Cards mirror the civics judgment the official 40-question exam (or 24-hour course) expects — not Sproochentest language drills and not Belgian/French civics recycled under a Luxembourg title.
@@ -364,9 +394,11 @@ Candidates lose points confusing forward vs futures margin flows, mis-stating in
 
 **Weeks 1–2:** 20 new cards/day across ethics and FSA. **Week 3:** Run the [free 60-question CFA Level 2 mock](/mock-exams/cfa-level-2-readiness-check). **Week 4+:** Drill only weak topics from the report; pair with the [Level 2 formula reference PDF](/decks/cfa-level-2-formula-reference-2026) for printable recall tables.
 
+Official CFA Level 2 is vignette / item-set across 10 equally weighted topics — this 60-question mock is a shorter diagnostic, not a CFA Institute mock.
+
 ### Pitfalls this deck targets
 
-Level 2 failures often come from mis-applying inventory and lease adjustments in FSA vignettes, confusing FCFF vs FCFE setups, and weak ethics judgment under time pressure.`,
+Level 2 failures often come from mis-applying inventory and lease adjustments in FSA vignettes, confusing FCFF vs FCFE setups, and weak ethics judgment under time pressure. Mega L1 leftovers do not train that item-set logic.`,
 
   "ciple-a2-european-portuguese-anki-deck": `### Which Portuguese pathways this deck targets
 
@@ -408,7 +440,7 @@ PixID Studio Gumroad fulfillment with UniPrep2Go multi-exam French framing: one 
 
   "dutch-a2-inburgering-anki-deck": `### Which Dutch pathways this deck targets
 
-**Inburgering** is the civic integration language track for many Dutch residency cases. **Staatsexamen NT2** (A2-range overlap) shares a large high-frequency Dutch core. The same lexicon supports everyday communication toward **naturalisatie** language expectations. Exam names and cut scores differ by municipality and year — confirm your required module officially.
+**Inburgering** is the civic integration language track for many Dutch residency cases. Official Inburgering is **five modules** (KNM civics, ONA, plus speaking, writing, and listening/reading) — this deck is the **language lexicon**, not a single MCQ substitute for the whole path. **Staatsexamen NT2** (A2-range overlap) shares a large high-frequency Dutch core. The same lexicon supports everyday communication toward **naturalisatie** language expectations. Exam names and cut scores differ by municipality and year — confirm your required module officially.
 
 This is **Netherlands language** prep — not Belgium Flanders **maatschappelijke oriëntatie** civics. For Flanders MO, use the free readiness check and planned waitlist deck.
 
@@ -916,6 +948,8 @@ Candidates swap parametric vs historical VaR, mis-state delta-gamma approximatio
 ### Plan with the free CA mock
 
 Complete pre-license coursework first, then 20 cards/day. Run the free California practice test at 30 days out; concentrate on agency and disclosure cards if those domains score lowest. California-specific disclosure timing is repeated more than national decks cover.
+
+Official DRE salesperson exam is **150 questions (75 national + 75 state) / 3 hours 15 minutes / 70% on both portions**. Our free mock is a **60-question** diagnostic — not a 1,500-question course Q-bank.
 
 ### Pitfalls this deck targets
 

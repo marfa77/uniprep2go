@@ -1,0 +1,29 @@
+# Competitor AEO ledger
+
+Cadence: **60 days**. Read this before a growth-pulse / Top-pages competitor SERP pass.
+Rule: `.cursor/rules/competitor-aeo-cadence.mdc`.
+
+Do **not** re-run WebSearch SERP or rewrite cites if `last_pass` is &lt; 60 days unless the SKU is new, the user asks, or official facts drifted.
+
+| Slug | Kind | last_pass | next_ok | One-line beat / gap |
+| --- | --- | --- | --- | --- |
+| acsm-cpt-anki-deck | wave | 2026-08-16 | 2026-10-15 | Official 135Q / 150 min / 550; $11 + 60Q mock vs Mometrix volume |
+| ashrae-certifications-anki-deck | building | 2026-08-16 | 2026-10-15 | Multi-cred 50Q + $11 vs official 30Q practice; facts locked |
+| nebosh-anki-deck | building | 2026-08-15 | 2026-10-14 | Honest GIC1/GIC2 not-MCQ; $11 + 50Q diagnostic |
+| well-ap-anki-deck | building | 2026-08-15 | 2026-10-14 | WELL v2 concepts + 50Q; not IWBI material |
+| wave-31 cohort | wave | 2026-08-15 | 2026-10-14 | State-RE / money / DELE compact; see wave-31 doc |
+| luxembourg-vivre-ensemble-anki-deck | wave | 2026-08-14 | 2026-10-13 | Live $11 / 60 FR cards + 60Q; SEO waitlist copy fixed 2026-08-17 |
+| delf-b2-french-anki-deck | language | 2026-08-17 | 2026-10-16 | $26 / 2000+ audio vs Language Atlas / AnkiWeb LITE; don’t overclaim vs Prep2Go shop |
+| dutch-a2-inburgering-anki-deck | language | 2026-08-17 | 2026-10-16 | $26 / 2000 audio; Inburgering = 5 modules, not one MCQ |
+| german-a2-anki-deck | language | 2026-08-17 | 2026-10-16 | $26 / 2000 Goethe-telc-ÖSD-DTZ; not Leben in Deutschland civics |
+| cfa-level-1-anki-deck | finance | 2026-08-17 | 2026-10-16 | $29 / 342 + 60Q + formula PDF; official 180 MCQ / 4h30 / no fixed MPS |
+| cfa-level-1-formula-reference-2026 | finance | 2026-08-17 | 2026-10-16 | $19 / 250 formulas; already cited |
+| cfa-level-2-anki-deck | finance | 2026-08-17 | 2026-10-16 | Cite gap closed: $39 / 495 + 60Q + L2 formula PDF |
+| frm-part-1-anki-deck | finance | 2026-08-17 | 2026-10-16 | $29 / 444 + 50Q; homepage now links mock |
+| california-real-estate-exam-anki-deck | state-RE | 2026-08-17 | 2026-10-16 | 400 CA + 60Q vs 1500+ Q-banks; official 150Q / 3h15 / 70% both |
+| bench-energy-metal-trader-anki-deck | finance | 2026-08-17 | 2026-10-16 | 202 LME cards already cited; samples 2–3 still duplicate sample-1 (no invent) |
+| aspt-phlebotomy-readiness-check | wave planned | 2026-08-17 | 2026-10-16 | Free 60Q live; deck planned; no invented official Q/time; ≠ NHA / ASCP PBT |
+
+Homepage `/` is a hub — not a SKU row.
+
+Next full pulse re-audit window: **2026-10-17** (or later).

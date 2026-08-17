@@ -36,6 +36,13 @@ For the mock’s primary intents (e.g. `{exam} practice test`, `{exam} free mock
    - Anki / flashcards CTA clarity
 3. Output a short **beat / gap / ship** list and **fix gaps that are cheap and ours** in the same pass when possible
 
+## Cadence (do not re-audit weekly)
+
+Before layer 3 (competitor SERP), read `docs/mock-bank-qa/competitor-aeo-ledger.md`.
+If last competitor AEO for that slug is **&lt; 60 days**, skip SERP/cite rewrites — report “fresh until {date}”.
+Full re-audit only at **≥ 60 days**, new/never-ledgered SKU, explicit user ask, or P0 official-facts drift.
+See `.cursor/rules/competitor-aeo-cadence.mdc`.
+
 ## Speed
 - One writer pass for the SKU that got traffic — do not mix unrelated certs
 - Prefer local mechanical bank fixes; no OpenRouter enrich
