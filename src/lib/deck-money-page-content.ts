@@ -25,7 +25,11 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "ptcb-pharmacy-technician-anki-deck":
     "300 PTCE cards for top-200 drugs, sig codes, and pharmacy math — pairs with the 2026 printable study guide PDF.",
   "luxembourg-vivre-ensemble-anki-deck":
-    "60 French Vivre ensemble cards for institutions, rights, history/EU, and daily life — plus a free 60-question Luxembourg diagnostic.",
+    "60 French Vivre ensemble cards for institutions, rights, history/EU, and daily life — plus a free 60-question Luxembourg diagnostic. Built for nationality civics, not Sproochentest.",
+  "rd-exam-anki-deck":
+    "60 CDR-domain cards (Principles, Nutrition Care, Management, Foodservice) with explanations — pairs with the free 60-question RD readiness check before Pearson VUE.",
+  "enrolled-agent-anki-deck":
+    "60 IRS SEE cards across Individuals, Businesses, Representation, and Practices — plus a free Enrolled Agent readiness check for topic scoring.",
   "ace-cpt-anki-deck":
     "300 ACE CPT cards for client screening, program design, spotting cues, and professional conduct — plus a free 60-question readiness check.",
   "ptcb-study-guide-2026":
@@ -50,7 +54,11 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "ace-cpt-anki-deck":
     "Cards track ACE CPT competency themes: preparticipation screening and consent, FITT-VP program design, cueing and spotting under load, and scope/ethics/business boundaries. Run the free 60-question readiness check first, then filter Anki to weak topics — not a NASM/ISSA mega-dump.",
   "luxembourg-vivre-ensemble-anki-deck":
-    "French MCQs mapped to Vivre ensemble themes: Grand-Duchy institutions, fundamental rights and nationality literacy, history/geography/EU, and society/daily life. Run the free 60-question diagnostic first, then drill weak domains — Sproochentest language evidence stays on a separate track.",
+    "French MCQs mapped to Vivre ensemble themes: Grand-Duchy institutions, fundamental rights and nationality literacy, history/geography/EU, and society/daily life. Run the free 60-question diagnostic first, then drill weak domains — Sproochentest language evidence stays on a separate track. Ownable .apkg for the exam-or-course civics path, not Guichet.lu dumps.",
+  "rd-exam-anki-deck":
+    "CDR domain-weighted prompts: Principles of Dietetics, Nutrition Care (PES/ADIME), Management of Food and Nutrition Programs, and Foodservice Systems. Explanations name why distractors fail. Take the free 60-question RD readiness check first, then filter Anki to weak domains — not a random 2,000-card clinical dump.",
+  "enrolled-agent-anki-deck":
+    "SEE Part 1–3 themes in one ownable deck: individuals (income, deductions, credits), businesses (entities, payroll themes), representation before the IRS, and practices & procedures. Pair with the free Enrolled Agent readiness check for timed topic scoring before you schedule Prometric — independent prep, not IRS material.",
   "ptcb-study-guide-2026":
     "Four chapters sized to 2026 domain weights (Medications 35%, Federal 18.75% with DSCSA, Patient Safety 23.75%, Order Entry 22.5%). The 80-question exam mirrors PTCE scored length (28/15/19/18). Pair with the free 90-question online mock and the separate 300-card Anki deck — beats free blogs still teaching removed compounding topics.",
   "mrics-quantity-surveying-anki-deck":
@@ -230,19 +238,52 @@ Candidates over-drill favorite concepts (Air, Materials) and under-drill Certifi
 IWBI/GBCI registration, continuing education, or the official WELL AP exam (115 items, scaled pass 170). This deck is independent prep — not IWBI material.`,
   "rd-exam-anki-deck": `### What is inside
 
-60 MCQ cards aligned to the CDR Registration Examination for Dietitians domains: Principles of Dietetics (21%), Nutrition Care for Individuals and Groups (45%), Management of Food and Nutrition Programs and Services (21%), and Foodservice Systems (13%). Every card includes a correct explanation and notes on why the other options fail — the same bank as the free timed readiness check.
+60 MCQ cards aligned to the CDR Registration Examination for Dietitians domains: Principles of Dietetics (21%), Nutrition Care for Individuals and Groups (45%), Management of Food and Nutrition Programs and Services (21%), and Foodservice Systems (13%). Every card includes a correct explanation and notes on why the other options fail — the same bank themes as the free timed readiness check.
 
 ### 2–3 week study plan with the free mock
 
-**Week 1:** 15–20 new cards/day across principles and nutrition care (PES / ADIME, macros, MNT themes). **Week 2:** Add foodservice and management cards; sit the [free 60-question RD readiness check](/mock-exams/rd-exam-readiness-check). **Final days:** Review-only Anki on weak topics from the report — keep official CDR handbook timing practice separate (3-hour adaptive exam).
+**Week 1:** 15–20 new cards/day across principles and nutrition care (PES / ADIME, macros, MNT themes). **Week 2:** Add foodservice and management cards; sit the [free 60-question RD readiness check](/mock-exams/rd-exam-readiness-check). **Final days:** Review-only Anki on weak topics from the report — keep official CDR handbook timing practice separate (3-hour adaptive exam, scaled pass 25/50).
 
 ### Pitfalls this deck targets
 
-Candidates over-focus on clinical MNT and under-drill foodservice sanitation, procurement, and management finance. Cards force all four CDR domains under spaced recall, not just favorite clinical topics.
+Candidates over-focus on clinical MNT and under-drill foodservice sanitation, procurement, and management finance. Cards force all four CDR domains under spaced recall, not just favorite clinical topics. This is not a recycled nursing or personal-trainer bank.
 
 ### What this does not replace
 
 ACEND education, supervised practice, and the official CDR / Pearson VUE exam. This deck is independent prep — not CDR material.`,
+
+  "enrolled-agent-anki-deck": `### What is inside
+
+60 MCQ cards mapped to IRS Special Enrollment Examination (SEE) themes: Individuals, Businesses, Representation, and Practices & procedures. Cards force tax-year judgment and Circular 230-style representation boundaries — not a generic “tax trivia” dump. Pair with the free timed Enrolled Agent readiness check for topic scoring.
+
+### Plan with the free EA mock
+
+**Start:** Take the [free Enrolled Agent readiness check](/mock-exams/enrolled-agent-readiness-check) under quiet conditions. **Then:** 15–20 Anki cards/day on your weakest SEE part. **Before Prometric:** re-sit a short timed block on failed topics only; keep IRS/Prometric candidate bulletin timing separate from this diagnostic.
+
+### Pitfalls this deck targets
+
+Candidates grind Part 1 (Individuals) and skip Representation/Practices, confuse EA with CPA exam content, or memorize numbers without reading fact patterns. Cards isolate those near-miss traps.
+
+### What this does not replace
+
+IRS SEE registration, official study materials, or the three-part Prometric exam. Independent prep — not IRS material.`,
+
+  "luxembourg-vivre-ensemble-anki-deck": `### What is inside
+
+60 French MCQ prompts mapped to Vivre ensemble themes: institutions and vivre ensemble, history/geography/EU, rights and nationality, and society/daily life. Cards mirror the civics judgment the official 40-question exam (or 24-hour course) expects — not Sproochentest language drills and not Belgian/French civics recycled under a Luxembourg title.
+
+### Plan with the free Luxembourg mock
+
+**Start:** Take the [free 60-question Luxembourg Vivre ensemble readiness check](/mock-exams/luxembourg-vivre-ensemble-readiness-check). **Then:** 15–20 Anki cards/day on your weakest topic row. **Before booking:** practice a 40-question / 60-minute mindset at 70% using weak-domain cards only.
+
+### Pitfalls this deck targets
+
+Applicants confuse Sproochentest with Vivre ensemble, mix Belgian/French institutions into Luxembourg answers, or skip communal vs state roles. Cards isolate those near-miss traps.
+
+### What this does not replace
+
+Official Vivre ensemble course or exam registration, language evidence, or Guichet.lu procedures. Ownable .apkg only — not government material.`,
+
   "nebosh-anki-deck": `### What is inside
 
 250 MCQ cards across NEBOSH IGC syllabus groups: H&S management systems/culture/monitoring, physical/psychological/musculoskeletal health, chemical/biological/workplace hazards, work equipment/fire/electricity, and GIC2 risk-assessment & control skills. Same bank themes as the free 50-question timed readiness check.
@@ -640,19 +681,19 @@ Prep2Go app bank (2,504 cards) with UniPrep2Go IELTS/TOEFL framing on Gumroad at
 
   "ielts-toefl-english-for-spanish-speakers-anki-deck": `### Which English exams this deck targets
 
-**IELTS**, **TOEFL**, Cambridge English exams, and **PTE** share a large high-frequency academic and general English lexicon. This deck packages that bank for **Latin American Spanish speakers**: English headword, LatAm Spanish gloss, bilingual example, native English audio, and an image on each card. It is vocabulary recall — not a full mock exam or writing scorer.
+**IELTS**, **TOEFL**, Cambridge English exams, and **PTE** share a large high-frequency academic and general English lexicon. This deck packages that bank specifically for **Latin American Spanish speakers**: English headword, LatAm Spanish gloss (not Spain-only Castilian framing), bilingual example, native English audio, and an image on each card. It is vocabulary recall for exam-frequency words — not a full mock exam, writing scorer, or DELE Spanish vocabulary product.
 
 ### Study plan
 
-Use a 12-week calendar if your IELTS/TOEFL date is far out: months one and two at ~35 new cards/day, month three at 15 new + heavy review. Always hear the English audio before reading the LatAm Spanish gloss. Every Sunday, mark cards you still fail and bury easy ones so weekday sessions stay under 45 minutes.
+Use a 12-week calendar if your IELTS/TOEFL date is far out: months one and two at ~35 new cards/day, month three at 15 new + heavy review. Always hear the English audio before reading the LatAm Spanish gloss. Every Sunday, mark cards you still fail and bury easy ones so weekday sessions stay under 45 minutes. Once weekly, sit an official practice Listening/Reading section and note unknown lexis into a filtered Anki tag.
 
 ### Pitfalls this deck targets
 
-Spanish-speaking learners translate every sentence into Spanish under time pressure, skip listening to English audio, and study tourist phrase lists instead of exam-frequency academic vocabulary. Bilingual LatAm examples + English audio reduce translation dependence.
+Spanish-speaking learners translate every sentence into Spanish under time pressure, skip listening to English audio, and study tourist phrase lists instead of exam-frequency academic vocabulary. LatAm bilingual examples + English audio reduce translation dependence without teaching Spain-only slang as “exam English.”
 
 ### What makes this Gumroad edition different
 
-Prep2Go app bank (2,504 cards, LatAm Spanish) with UniPrep2Go IELTS/TOEFL framing on Gumroad at $26 — not a Lemon-only listing and not a DELE Spanish vocabulary deck.`,
+Prep2Go app bank (2,504 cards, LatAm Spanish) with UniPrep2Go IELTS/TOEFL framing on Gumroad at $26 — not a Lemon-only listing, not a DELE Spanish deck, and not the Russian/Portuguese-speaker sibling packs with different glosses.`,
 
 
   "ielts-toefl-english-for-portuguese-speakers-anki-deck": `### Which English exams this deck targets
@@ -819,18 +860,6 @@ Technicians miss look-alike/sound-alike pairs, misread sig abbreviations, and fo
 ### Pitfalls this deck targets
 
 Candidates skip screening, load dysfunctional patterns, or drift into diagnosis and medical nutrition therapy. Cards isolate those stop-or-refer boundaries.`,
-
-  "luxembourg-vivre-ensemble-anki-deck": `### What is inside
-
-60 French MCQ prompts mapped to Vivre ensemble themes: institutions and vivre ensemble, history/geography/EU, rights and nationality, and society/daily life. Cards mirror the civics judgment the official 40-question exam (or 24-hour course) expects — not Sproochentest language drills.
-
-### Plan with the free Luxembourg mock
-
-**Start:** Take the [free 60-question Luxembourg Vivre ensemble readiness check](/mock-exams/luxembourg-vivre-ensemble-readiness-check). **Then:** 15–20 Anki cards/day on your weakest topic row. **Before booking:** practice a 40-question / 60-minute mindset at 70% using weak-domain cards only.
-
-### Pitfalls this deck targets
-
-Applicants confuse Sproochentest with Vivre ensemble, mix Belgian/French institutions into Luxembourg answers, or skip communal vs state roles. Cards isolate those near-miss traps.`,
 
   "ptcb-study-guide-2026": `### What is inside
 

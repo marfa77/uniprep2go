@@ -104,7 +104,9 @@ describe("seo utilities (Barakhlo patterns)", () => {
       "gre-readiness-check",
       "sat-readiness-check",
       "california-real-estate-readiness-check",
+      "tx-real-estate-readiness-check",
       "cfa-level-1-readiness-check",
+      "cfa-level-2-readiness-check",
       "frm-part-1-readiness-check",
       "ptcb-pharmacy-technician-mock",
       "nha-excpt-readiness-check",
@@ -113,6 +115,7 @@ describe("seo utilities (Barakhlo patterns)", () => {
       "nclex-rn-readiness-check",
       "shrm-cp-readiness-check",
       "us-citizenship-readiness-check",
+      "rd-exam-readiness-check",
       "life-in-the-uk-readiness-check",
       "leben-in-deutschland-readiness-check",
       "naturalisation-francaise-readiness-check",
@@ -122,6 +125,7 @@ describe("seo utilities (Barakhlo patterns)", () => {
     ]);
     expect(isNicheGooglePrioritySlug("sie-full-mock")).toBe(true);
     expect(isNicheGooglePrioritySlug("cfa-level-1-readiness-check")).toBe(true);
+    expect(isNicheGooglePrioritySlug("cfa-level-2-readiness-check")).toBe(true);
     expect(isNicheGooglePrioritySlug("ptcb-pharmacy-technician-mock")).toBe(true);
     expect(isNicheGooglePrioritySlug("frm-part-1-readiness-check")).toBe(true);
     expect(isNicheGooglePrioritySlug("nha-excpt-readiness-check")).toBe(true);
@@ -136,12 +140,16 @@ describe("seo utilities (Barakhlo patterns)", () => {
     expect(isNicheGooglePrioritySlug("portugal-nacionalidade-readiness-check")).toBe(true);
     expect(isNicheGooglePrioritySlug("pmp-readiness-check")).toBe(true);
     expect(isNicheGooglePrioritySlug("us-citizenship-readiness-check")).toBe(true);
+    expect(isNicheGooglePrioritySlug("rd-exam-readiness-check")).toBe(true);
+    expect(isNicheGooglePrioritySlug("tx-real-estate-readiness-check")).toBe(true);
     expect(isNicheGooglePrioritySlug("life-in-the-uk-readiness-check")).toBe(true);
     expect(isNicheGooglePrioritySlug("leben-in-deutschland-readiness-check")).toBe(true);
     expect(isNicheGooglePrioritySlug("epa-608-readiness-check")).toBe(false);
     expect(googleHeadExamSlugs).not.toContain("cfa-level-1-readiness-check");
     expect(googleHeadExamSlugs).not.toContain("ptcb-pharmacy-technician-mock");
     expect(googleHeadExamSlugs).not.toContain("us-citizenship-readiness-check");
+    expect(googleHeadExamSlugs).not.toContain("tx-real-estate-readiness-check");
+    expect(googleHeadExamSlugs).not.toContain("rd-exam-readiness-check");
     expect(googleHeadExamSlugs).not.toContain("gmat-focus-readiness-check");
     expect(googleHeadExamSlugs).not.toContain("gre-readiness-check");
     expect(mockExamSitemapPriority("sie-full-mock")).toBe(0.98);

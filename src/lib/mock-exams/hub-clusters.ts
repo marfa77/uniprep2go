@@ -58,6 +58,7 @@ export const nicheGooglePrioritySlugs = [
   "gre-readiness-check",
   "sat-readiness-check",
   "california-real-estate-readiness-check",
+  "tx-real-estate-readiness-check",
   "cfa-level-1-readiness-check",
   "cfa-level-2-readiness-check",
   "frm-part-1-readiness-check",
@@ -68,6 +69,7 @@ export const nicheGooglePrioritySlugs = [
   "nclex-rn-readiness-check",
   "shrm-cp-readiness-check",
   "us-citizenship-readiness-check",
+  "rd-exam-readiness-check",
   "life-in-the-uk-readiness-check",
   "leben-in-deutschland-readiness-check",
   "naturalisation-francaise-readiness-check",
@@ -90,7 +92,6 @@ export const googleHeadExamSlugs = [
   "electrical-journeyman-readiness-check",
   "nha-cpt-phlebotomy-readiness-check",
   "fl-real-estate-readiness-check",
-  "tx-real-estate-readiness-check",
   "servsafe-manager-mock",
 ] as const;
 
@@ -130,7 +131,11 @@ export const nicheGooglePageLeads: Partial<Record<(typeof nicheGooglePrioritySlu
   "mrics-quantity-surveying-readiness-check":
     "This free MRICS Quantity Surveying readiness check stresses QS pathway competencies — measurement, cost, contract practice, and ethics — so APC candidates can see which Level 2/3 rows still need Anki before the next supervisor review.",
   "series-65-readiness-check":
-    "This free Series 65 readiness check targets NASAA investment-adviser topics — economics, products, client recommendations, and laws/ethics — so RIA candidates can see which domains still need Anki before the state Uniform Investment Adviser exam.",
+    "This free Series 65 readiness check is a timed NASAA Uniform Investment Adviser Law diagnostic — not a recycled Series 7 product quiz. Official Series 65 is 130 scored (+10 pretest) / 180 minutes / 92 correct; this UniPrep2Go mock is shorter (60Q / 75 min) with topic scoring across economics & analysis, investment vehicles, client recommendations/suitability, and laws & ethics. Use the report to queue Anki repairs before Prometric — independent practice, not NASAA/FINRA material.",
+  "tx-real-estate-readiness-check":
+    "This free Texas real estate sales agent readiness check is a timed TREC-style diagnostic after qualifying education — dual national + Texas-law themes (TRELA/TREC rules, contracts & agency, finance/closing math, property practice). Official Pearson VUE sitting is longer with ~70% required on each scored portion; this 60-question / 75-minute / 70% mock finds weak domains before you schedule. Independent — not TREC material.",
+  "rd-exam-readiness-check":
+    "This free RD / RDN readiness check maps to CDR’s four Registration Examination domains — Principles (21%), Nutrition Care (45%), Management (21%), and Foodservice Systems (13%). Official exam is computer-adaptive 125–145 items in 3 hours with scaled pass 25/50; this 60-question timed diagnostic is a shorter baseline so dietetic candidates repair weak domains with Anki before Pearson VUE — not CDR material.",
   "pmp-readiness-check":
     "This free PMP readiness check stresses PMI ECO domains under timed pressure so project managers can see which people, process, and business-environment topics still need Anki before booking the Pearson VUE window.",
   "us-citizenship-readiness-check":

@@ -3,22 +3,22 @@ import type { BlogPostDraft } from "../types";
 export const finraOptionsQuestionsPost: BlogPostDraft = {
   slug: "finra-options-questions-read-without-getting-tricked",
   title: "How to Read a FINRA Options Question Without Getting Tricked",
-  titleTag: "SIE Options Questions 2026 | Read Without Getting Tricked",
+  titleTag: "SIE Options Question Traps 2026 | 4-Step Reading Method",
   metaDescription:
-    "SIE/Series 7 options questions are reading traps, not math. 4-step method, formulas for every basic position, six common traps — plus free 75Q SIE mock.",
+    "SIE and Series 7 options items are reading traps: long vs short, call vs put, 100× multiplier. Use this 4-step protocol, formula table, and six traps — then take the free 75Q SIE mock.",
   publishedAt: "2026-07-28",
   eyebrow: "FINRA SIE · Options",
   clusterId: "finra-sie",
   relatedSlugs: ["finra-sie-exam-prep-why-people-fail"],
   intro:
-    "**Options questions are among the highest-weighted categories on the FINRA SIE and Series 7 exams — and where most candidates lose points.** Not because they cannot calculate breakeven, but because they misread the question, miss the word “short,” or pick the call formula when the question asks about a put. FINRA writes these items to test careful reading, not a memorized formula sheet. This guide gives a four-step reading protocol, the formulas for every basic position, and the six traps that show up on nearly every form.",
+    "**Options questions are among the highest-weighted trap categories on the FINRA SIE and Series 7 — and where most first-time candidates bleed points.** Not because the math is hard (breakeven is strike ± premium), but because they misread “short,” mix call formulas into put stems, or forget the 100-share multiplier. FINRA writes these items to reward careful reading, not a memorized formula sheet. This guide gives a four-step reading protocol, formulas for every basic position, six traps that show up on nearly every form, and a practice loop that pairs with UniPrep2Go’s free timed SIE mock.",
   mockSlug: "sie-full-mock",
   deckSlug: "sie-exam-anki-deck",
   cta: {
     mockLabel: "Take the free FINRA SIE readiness check",
     deckLabel: "Drill options formulas with Anki",
     summary:
-      "Need options formulas automatic? Take the free FINRA SIE readiness check (products & risks includes options), then lock in max gain/loss/breakeven with the SIE Anki deck.",
+      "Need options formulas automatic? Take the free FINRA SIE readiness check (products & risks includes options), then lock in max gain/loss/breakeven with the SIE Anki deck. Climbing toward Series 65 later? Keep fiduciary framing separate — Series 65 is adviser law, not SIE product math.",
   },
   sections: [
     {

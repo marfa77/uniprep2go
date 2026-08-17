@@ -123,6 +123,75 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "cfa level 2 vignette practice",
     ],
   }),
+  "series-65-readiness-check": explainer({
+    practiceTestName: "Series 65 Practice Test",
+    whatIsExam:
+      "The Series 65 Uniform Investment Adviser Law Exam is the NASAA qualification many states require for investment adviser representatives (IARs). It stresses economics and quantitative analysis, investment vehicles, client recommendations and suitability, and laws, regulations, and ethics — not the product-sales focus of Series 7. Candidates often confuse it with Series 66 (which pairs with Series 7 for dual registration); Series 65 stands alone for many RIA pathways.",
+    administeredBy:
+      "North American Securities Administrators Association (NASAA); computer-based delivery via FINRA/Prometric. Confirm current outlines on nasaa.org — UniPrep2Go is independent practice.",
+    officialFormat:
+      "Official Series 65: 130 scored questions + 10 pretest / 180 minutes / 92 correct to pass (verify live NASAA bulletin). UniPrep2Go free mock: 60 questions, 75 minutes, topic scoring — diagnostic only.",
+    whoFor:
+      "RIA / IAR candidates preparing Series 65; career switchers from Series 7 who need adviser-law depth; and learners pairing the free mock with Anki for daily domain repair.",
+    howToPrepare:
+      "1) Map NASAA topic weights and drill ethics/laws early. 2) Practice suitability and fiduciary framing — not just product definitions. 3) Take this free 60-question timed check. 4) Repair weak domains with Anki daily. 5) Move to full-length Q-banks only after your readiness report stabilizes.",
+    topicBlurbs: [
+      {
+        id: "economics",
+        label: "Economics & analysis",
+        blurb: "Macro/micro themes, valuation inputs, and quantitative judgment advisers use with clients.",
+      },
+      {
+        id: "products",
+        label: "Investment vehicles",
+        blurb: "Characteristics and risks of securities and packaged products under adviser recommendations.",
+      },
+      {
+        id: "client",
+        label: "Client recommendations",
+        blurb: "Suitability, portfolio construction judgment, and client-objective framing.",
+      },
+      {
+        id: "ethics",
+        label: "Laws & ethics",
+        blurb: "Registration, prohibited practices, and fiduciary/ethical boundaries for IARs.",
+      },
+    ],
+    examFaqs: [
+      {
+        question: "What is the Series 65 exam?",
+        answer:
+          "It is NASAA’s Uniform Investment Adviser Law Exam for many state investment adviser representative registrations — economics, products, recommendations, and laws/ethics.",
+      },
+      {
+        question: "How many questions are on the official Series 65?",
+        answer:
+          "130 scored plus 10 pretest items in 180 minutes; historically 92 correct to pass — confirm the current NASAA bulletin before you schedule.",
+      },
+      {
+        question: "Is Series 65 the same as Series 66?",
+        answer:
+          "No. Series 66 combines state adviser and agent law and is commonly paired with Series 7. Series 65 is the stand-alone IAR law exam many RIA candidates take without Series 7.",
+      },
+      {
+        question: "Is this UniPrep2Go check the official Series 65?",
+        answer:
+          "No. It is an independent timed readiness diagnostic with original questions — not NASAA or FINRA exam material.",
+      },
+      {
+        question: "Is there a free Series 65 practice test?",
+        answer:
+          "Yes — this page hosts a free UniPrep2Go Series 65 readiness check with topic scoring and answer review.",
+      },
+    ],
+    keywords: [
+      "series 65 practice test",
+      "series 65 practice exam",
+      "free series 65 questions",
+      "nasaa series 65 mock",
+      "investment adviser exam practice",
+    ],
+  }),
   "cdl-general-knowledge-readiness-check": explainer({
     practiceTestName: "CDL General Knowledge Practice Test",
     whatIsExam:

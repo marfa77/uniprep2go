@@ -415,11 +415,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "ielts-toefl-english-for-spanish-speakers-anki-deck": {
-    title: "IELTS / TOEFL English for Spanish Speakers Anki | 2504 Cards",
+    title: "IELTS / TOEFL English for LatAm Spanish Speakers Anki | 2504 Cards",
     headline: "IELTS / TOEFL English for Spanish Speakers (LatAm) — 2504 Flashcards",
     studyLabel: "IELTS TOEFL English for Spanish speakers LatAm",
     description:
-      "English Anki deck with 2504 flashcards for Latin American Spanish speakers preparing IELTS, TOEFL, Cambridge, and PTE — LatAm Spanish glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
+      "Free-preview path to 2504 English Anki cards for Latin American Spanish speakers: LatAm glosses, bilingual examples, native English audio — built for IELTS/TOEFL/Cambridge/PTE vocabulary, not tourist phrases or DELE Spanish. Independent study aid.",
     keywords: [
       "english for spanish speakers anki",
       "ielts vocabulary spanish speakers",
@@ -428,7 +428,57 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "ielts toefl flashcards spanish",
     ],
     intro:
-      "Latin American Spanish-speaking IELTS and TOEFL candidates use bilingual English vocabulary recall with LatAm Spanish support before timed exam practice.",
+      "Latin American Spanish-speaking IELTS and TOEFL candidates use bilingual English vocabulary recall with LatAm Spanish support before timed exam practice — distinct from Spain-Castilian or DELE decks.",
+  },
+
+  "rd-exam-anki-deck": {
+    title: "RD Exam Anki Deck 2026 | 60 CDR Flashcards + Free Mock",
+    headline: "RD / RDN Exam Prep — 60 CDR Domain Flashcards",
+    studyLabel: "RD exam Anki flashcards",
+    description:
+      "RDN Anki deck: 60 cards across CDR Principles, Nutrition Care, Management, and Foodservice — with explanations and a free 60-question RD readiness check. Ownable .apkg for dietetic candidates after ACEND practice. Independent — not CDR material.",
+    keywords: [
+      "rd exam anki",
+      "rdn flashcards",
+      "dietitian registration anki",
+      "cdr exam flashcards",
+      "rd exam practice",
+    ],
+    intro:
+      "Dietetic candidates use CDR-domain Anki after a free timed RD readiness check to repair weak nutrition-care and foodservice rows before Pearson VUE.",
+  },
+
+  "enrolled-agent-anki-deck": {
+    title: "IRS Enrolled Agent Anki Deck | 60 SEE Flashcards + Free Mock",
+    headline: "IRS Enrolled Agent (SEE) Prep — 60 Flashcards",
+    studyLabel: "Enrolled Agent Anki flashcards",
+    description:
+      "Enrolled Agent Anki: 60 cards for IRS SEE themes — Individuals, Businesses, Representation, Practices — plus a free EA readiness check with topic scoring. Ownable .apkg before Prometric. Independent — not IRS material.",
+    keywords: [
+      "enrolled agent anki",
+      "ea exam flashcards",
+      "irs see anki deck",
+      "enrolled agent study cards",
+      "see practice flashcards",
+    ],
+    intro:
+      "EA candidates drill SEE domain cards after a free timed readiness check so Representation and Practices get equal weight to Individuals.",
+  },
+
+  "luxembourg-vivre-ensemble-anki-deck": {
+    title: "Luxembourg Vivre ensemble Anki | 60 French Civics Cards + Mock",
+    headline: "Luxembourg Vivre ensemble Civics — 60 French Flashcards",
+    studyLabel: "Luxembourg Vivre ensemble Anki",
+    description:
+      "Luxembourg nationality civics Anki: 60 French MCQ cards on institutions, rights, history/EU, and daily life — plus a free 60-question Vivre ensemble readiness check. Not Sproochentest language drills. Independent — not Guichet.lu material.",
+    keywords: [
+      "luxembourg vivre ensemble anki",
+      "luxembourg citizenship flashcards",
+      "nationalite luxembourg anki",
+      "vivre ensemble practice cards",
+    ],
+    intro:
+      "Applicants preparing Vivre ensemble / nationality civics use French MCQ Anki after a free timed diagnostic — Sproochentest stays on a separate language track.",
   },
 
   "ielts-toefl-english-for-portuguese-speakers-anki-deck": {

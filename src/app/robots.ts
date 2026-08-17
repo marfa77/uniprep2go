@@ -30,7 +30,8 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "Googlebot",
         allow: "/",
-        disallow: ["/*?utm_source=llm"],
+        // UTM LLM catalog dupes + GEO markdown mirrors (HTML canonicals are the indexable URLs).
+        disallow: ["/*?utm_source=llm", "/*.md$"],
       },
       ...aiCrawlers.map((userAgent) => ({
         userAgent,
