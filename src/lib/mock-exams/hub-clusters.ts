@@ -59,6 +59,7 @@ export const nicheGooglePrioritySlugs = [
   "sat-readiness-check",
   "california-real-estate-readiness-check",
   "cfa-level-1-readiness-check",
+  "cfa-level-2-readiness-check",
   "frm-part-1-readiness-check",
   "ptcb-pharmacy-technician-mock",
   "nha-excpt-readiness-check",
@@ -118,6 +119,8 @@ export const nicheGooglePageLeads: Partial<Record<(typeof nicheGooglePrioritySlu
     "This free California real estate salesperson readiness check focuses on DRE license law, contracts, property ownership, agency, and exam math for the endless CA cohort. Use it as a timed diagnostic before PSI — then repair weak topics with the linked Anki deck between study blocks.",
   "cfa-level-1-readiness-check":
     "This free CFA Level 1 readiness check stresses Ethics, quant, economics, FRA, and the product domains Level 1 candidates forget under time. Score by topic, then repair weak formulas and definitions with the linked Anki deck and formula PDF before your next full mock block.",
+  "cfa-level-2-readiness-check":
+    "This free CFA Level 2 readiness check is built for candidates who already cleared Level 1 and now need vignette-style application under time — Ethics, FSA, equity and fixed-income valuation, derivatives, and portfolio management. It is not a recycled Level 1 quiz: score by Level 2 topic weights, then repair weak item-set domains with the linked CFA Level 2 Anki deck before your next practice block.",
   "frm-part-1-readiness-check":
     "This free FRM Part 1 readiness check targets foundations of risk, quant, markets and products, and valuation models so GARP candidates can see which Part 1 pillars still need daily Anki before booking the exam window.",
   "ptcb-pharmacy-technician-mock":
@@ -131,7 +134,7 @@ export const nicheGooglePageLeads: Partial<Record<(typeof nicheGooglePrioritySlu
   "pmp-readiness-check":
     "This free PMP readiness check stresses PMI ECO domains under timed pressure so project managers can see which people, process, and business-environment topics still need Anki before booking the Pearson VUE window.",
   "us-citizenship-readiness-check":
-    "This free U.S. citizenship civics readiness check mirrors USCIS-style Q&A pacing so naturalization candidates can see which history and government topics still need daily Anki before the interview.",
+    "This free U.S. citizenship civics readiness check is a timed written MCQ drill for N-400 candidates — not the USCIS oral interview itself. Official civics is live: up to 10 questions from the 100-item list, pass at 6 correct. Use this 30-question / 30-minute / 80% diagnostic to find weak government, history, and geography rows, then speak the full bank aloud and repair with the Citizenship & Naturalization Anki Bundle.",
   "life-in-the-uk-readiness-check":
     "This free Life in the UK readiness check covers British values, history, government, and everyday life themes so settlement and citizenship candidates can queue Anki repairs before the Home Office handbook test.",
   "leben-in-deutschland-readiness-check":

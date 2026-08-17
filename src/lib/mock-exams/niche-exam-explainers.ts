@@ -32,6 +32,97 @@ function explainer(input: NicheExamExplainer): NicheExamExplainer {
 }
 
 export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = {
+  "cfa-level-2-readiness-check": explainer({
+    practiceTestName: "CFA Level 2 Practice Test",
+    whatIsExam:
+      "CFA Level 2 is the second exam in the CFA Program. After Level 1’s broad foundations, Level 2 emphasizes application and analysis through item-set (vignette) questions across ten topic areas — Ethics, Quantitative Methods, Economics, Financial Statement Analysis, Corporate Issuers, Equity, Fixed Income, Derivatives, Alternatives, and Portfolio Management. Candidates who treat it like another Level 1 recognition quiz usually underperform; Level 2 rewards reading a case, selecting the right valuation or accounting judgment, and managing time across sets.",
+    administeredBy:
+      "CFA Institute (computer-based testing at Prometric). Confirm current topic weights and session windows on cfainstitute.org — this UniPrep2Go page is independent practice, not CFA Institute material.",
+    officialFormat:
+      "Official Level 2 uses item-set / vignette-style questions across two sessions. This UniPrep2Go readiness check is a free 60-question / 90-minute / 70% diagnostic with topic scoring — a baseline before full item-set blocks, not a substitute for CFA Institute mocks.",
+    whoFor:
+      "Candidates who passed Level 1 and need a timed Level 2 topic baseline; career switchers reviewing FSA/equity/fixed income under pressure; and learners pairing mocks with the CFA Level 2 Anki deck for spaced repetition of formulas and judgment frames.",
+    howToPrepare:
+      "1) Re-read Ethics and FSA early — they still swing band scores. 2) Drill equity and fixed-income valuation until you can apply a vignette without hunting formulas. 3) Take this free 60-question / 90-minute check for topic diagnosis. 4) Repair weak domains with the linked CFA Level 2 Anki deck daily. 5) Move to full item-set mocks only after your readiness check clears weak pillars.",
+    topicBlurbs: [
+      {
+        id: "ethics",
+        label: "Ethical and Professional Standards",
+        blurb:
+          "Level 2 Ethics still tests GIPS and Standards application inside case facts — not memorising handbook titles alone.",
+      },
+      {
+        id: "fra",
+        label: "Financial Statement Analysis",
+        blurb:
+          "Intercorporate investments, pensions, multinationals, and quality of earnings judgments inside vignettes.",
+      },
+      {
+        id: "equity",
+        label: "Equity Valuation",
+        blurb:
+          "DDM, FCF, residual income, and market-based valuation applied to a company narrative.",
+      },
+      {
+        id: "fixed-income",
+        label: "Fixed Income",
+        blurb:
+          "Term structure, valuation, credit, and securitized products under Level 2 item-set timing.",
+      },
+      {
+        id: "derivatives",
+        label: "Derivatives",
+        blurb:
+          "Pricing and risk of forwards, futures, options, and swaps in applied scenarios.",
+      },
+      {
+        id: "portfolio",
+        label: "Portfolio Management",
+        blurb:
+          "Portfolio construction, risk, and ETF/index applications that connect other Level 2 pillars.",
+      },
+    ],
+    examFaqs: [
+      {
+        question: "What is the CFA Level 2 exam?",
+        answer:
+          "It is the second CFA Program exam. It focuses on applying Level 1 tools to analysis and valuation through vignette-style item sets across ten topic areas.",
+      },
+      {
+        question: "How is CFA Level 2 different from Level 1?",
+        answer:
+          "Level 1 stresses knowledge and comprehension with independent questions. Level 2 stresses application and analysis with item sets tied to a shared vignette — memorisation alone is rarely enough.",
+      },
+      {
+        question: "Is this UniPrep2Go check an official CFA Institute mock?",
+        answer:
+          "No. It is an independent free readiness diagnostic (60 questions, 90 minutes, 70% target) with topic scoring. Use CFA Institute materials and mocks for official format practice.",
+      },
+      {
+        question: "What score should I aim for on this readiness check?",
+        answer:
+          "Treat 70%+ with no catastrophic weak pillar as a readiness pass signal. Borderline scores mean repair Anki rows in Ethics, FSA, equity, or fixed income before another full block.",
+      },
+      {
+        question: "Which topics matter most on CFA Level 2?",
+        answer:
+          "Weights change by curriculum year, but Ethics, Financial Statement Analysis, Equity, and Fixed Income usually deserve early daily drill because they are both heavy and vignette-dense.",
+      },
+      {
+        question: "How should I use the linked CFA Level 2 Anki deck with this mock?",
+        answer:
+          "After the topic report, queue only failed domains into Anki for spaced repetition, then re-sit a shorter block on those pillars before returning to full-length item sets.",
+      },
+    ],
+    keywords: [
+      "cfa level 2 practice test",
+      "cfa level 2 mock exam free",
+      "cfa level 2 item set practice",
+      "cfa level 2 readiness check",
+      "free cfa level 2 questions",
+      "cfa level 2 vignette practice",
+    ],
+  }),
   "cdl-general-knowledge-readiness-check": explainer({
     practiceTestName: "CDL General Knowledge Practice Test",
     whatIsExam:
