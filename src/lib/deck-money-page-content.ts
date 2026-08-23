@@ -30,6 +30,8 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "60 French Vivre ensemble cards for institutions, rights, history/EU, and daily life — plus a free 60-question Luxembourg diagnostic. Built for nationality civics, not Sproochentest.",
   "aspt-phlebotomy-anki-deck":
     "Planned 60-card ASPT phlebotomy Anki (venipuncture, order of draw, safety, processing). Take the free 60-question diagnostic now — verify the current official form at aspt.org. ASPT is not NHA CPT and not ASCP PBT.",
+  "cscs-nsca-anki-deck":
+    "Planned 60-card NSCA CSCS Anki (exercise science, nutrition, program design, organization). Take the free 60-question diagnostic now — official CSCS is two papers / scaled 70 each. CSCS is not a personal-trainer CPT exam.",
   "rd-exam-anki-deck":
     "60 CDR-domain cards (Principles, Nutrition Care, Management, Foodservice) with explanations — pairs with the free 60-question RD readiness check before Pearson VUE.",
   "enrolled-agent-anki-deck":
@@ -297,6 +299,22 @@ Start with the [free ASPT phlebotomy readiness check](/mock-exams/aspt-phlebotom
 ### What this does not replace
 
 ASPT registration, clinical training, or NHA/ASCP exams. Independent diagnostic — not ASPT exam material.`,
+
+  "cscs-nsca-anki-deck": `### What this page is
+
+A planned 60-card NSCA CSCS Anki (exercise science, nutrition, program design, organization & admin) paired with a **live free 60-question** timed readiness check. The deck is **not a live Gumroad SKU** yet — do not treat this page as a buyable .apkg.
+
+### CSCS vs personal-trainer CPT
+
+**CSCS** (Certified Strength and Conditioning Specialist) is NSCA’s athlete-programming credential. It is **not** NASM-CPT, ACE CPT, ACSM-CPT, or NSCA-CPT. Official CSCS is two separately scored papers: Scientific Foundations (**80 scored + 15 pretest / 1.5 hours**) and Practical/Applied (**110 scored + 15 pretest / 2.5 hours**, including 30–40 video/image items). Scaled pass is **70 or higher on each section**. Verify at [nsca.com](https://www.nsca.com/certification/cscs/certified-strength-and-conditioning-specialist-exam-description/).
+
+### Plan with the free mock
+
+Start with the [free NSCA CSCS readiness check](/mock-exams/cscs-nsca-readiness-check). Use the topic report to see science vs programming gaps. This 60-question diagnostic is shorter than either official paper and has no video items. Join the waitlist when the Anki ships.
+
+### What this does not replace
+
+NSCA registration, the Essentials textbook, video-item practice, or a personal-trainer CPT exam. Independent diagnostic — not NSCA exam material.`,
 
   "luxembourg-vivre-ensemble-anki-deck": `### What is inside
 

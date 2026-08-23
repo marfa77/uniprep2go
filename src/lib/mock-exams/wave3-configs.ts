@@ -615,8 +615,10 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "program-design", label: "Program design" },
       { id: "organization", label: "Organization & admin" }
     ]),
-    officialSourceNote: "Mapped to NSCA themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question NSCA CSCS readiness check with topic scoring.",
+    officialSourceNote:
+      "Independent UniPrep2Go diagnostic on NSCA CSCS themes. Official CSCS is two separately scored papers — Scientific Foundations (80 scored + 15 pretest / 1.5h) and Practical/Applied (110 scored + 15 pretest / 2.5h, including 30–40 video/image items); scaled pass 70 on each (verify nsca.com). This 60-question / 75-minute check is shorter and has no video items. CSCS is not NASM/ACE/ACSM CPT and not NSCA-CPT. Not official NSCA exam material. Anki deck is planned, not a live Gumroad SKU.",
+    description:
+      "Free 60-question NSCA CSCS readiness check with topic scoring. Official exam is two papers (Scientific Foundations + Practical/Applied) — this page is a shorter independent diagnostic, not a personal-trainer CPT mock.",
     examBody: "NSCA",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["CSCS", "NSCA CSCS", "strength coach"],

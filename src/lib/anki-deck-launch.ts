@@ -312,7 +312,9 @@ function buildDirectAnswer(
 function buildLaunchFaqs(deck: PlannedDeck, mockPath: string | null, apkgReady: boolean): DeckFaq[] {
   const kept = deck.faqs.filter(
     (faq) =>
-      !/when will|not yet available|not yet on sale|planned but not/i.test(faq.question),
+      !/when will|not yet available|not yet on sale|planned but not|is this deck available for purchase/i.test(
+        faq.question,
+      ),
   );
 
   const deliveryFaq: DeckFaq = apkgReady

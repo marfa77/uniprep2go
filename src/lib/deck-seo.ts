@@ -549,11 +549,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "DELE A2 learners drill high-frequency Spanish vocabulary on a daily Anki schedule — language recall only, without CCSE civics.",
   },
   "dele-a2-ccse-spanish-citizenship-bundle": {
-    title: "DELE CCSE Spanish Nationality Anki Bundle | Exam Cards",
-    headline: "DELE CCSE Spanish Nationality Prep — Dual Anki Bundle",
+    title: "DELE CCSE Spanish Nationality Anki | 60 Cards + Free Mock",
+    headline: "DELE + CCSE Compact Anki — 60 Cards + Free CCSE Mock",
     studyLabel: "DELE CCSE Spanish nationality exam prep",
     description:
-      "Planned Spanish nationality Anki bundle: DELE A2 vocabulary plus CCSE civics. Not currently for sale — take the free CCSE readiness check, then join the waitlist. Use the standalone DELE SIELE deck for language prep now.",
+      "Live $11 compact DELE A2 + CCSE Anki (60 MCQ cards) plus a free 60-question CCSE timed diagnostic. Official Cervantes CCSE is 25Q / 45 min / 60%. Companion only — for thicker DELE vocab use the 1500-card DELE SIELE deck. Not Instituto Cervantes material.",
     keywords: [
       "dele a2 anki",
       "ccse anki deck",
@@ -562,7 +562,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "dele ccse bundle",
     ],
     intro:
-      "Planned listing for applicants who want DELE language and CCSE civics together. Free CCSE readiness check is live; Anki bundle is waitlist-only until launch.",
+      "A compact 60-card DELE-adjacent + CCSE civics .apkg for nationality applicants who want a light language-and-civics drill — not a full Cervantes substitute. Official CCSE is 25 questions / 45 minutes / 60%. Take the free 60-question CCSE readiness check first; use the standalone 1500-card DELE SIELE deck when you need thicker vocabulary.",
   },
   "swiss-citizenship-anki-deck": {
     title: "Swiss Citizenship Anki Bundle | DE FR IT · 618 Cards",

@@ -152,7 +152,10 @@ describe("exam-llm-layer", () => {
     expect(commercial).toContain("best New York real estate Anki deck / NY DOS flashcards");
     expect(commercial).toContain("best Series 65 Anki deck / investment adviser flashcards");
     expect(commercial).toContain("best SAFE MLO Anki / NMLS flashcards");
+    expect(commercial).toContain("best DELE A2 Anki / SIELE Spanish flashcards");
+    expect(commercial).toContain("/decks/dele-a2-spanish-anki-deck");
     expect(commercial).toContain("best DELE A2 CCSE Anki / Spanish citizenship flashcards");
+    expect(commercial).toContain("Live Gumroad .apkg — not a waitlist");
     expect(commercial).toContain("best NEBOSH Anki / IGC flashcards");
     expect(commercial).toContain("best ASHRAE Anki / BEMP BCxP flashcards");
     expect(commercial).toContain("best ACSM CPT Anki / ACSM personal trainer flashcards");
@@ -177,6 +180,8 @@ describe("exam-llm-layer", () => {
     expect(when).toContain("Dutch Inburgering");
     expect(when).toContain("German A2");
     expect(when).toContain("ASPT phlebotomy");
+    expect(when).toContain("NSCA CSCS");
+    expect(when).toContain("DELE A2 / SIELE");
     expect(when).toContain("Prep2Go");
     expect(commercial).toContain("best CFA Level 2 Anki deck");
     expect(commercial).toContain("best DELF B2 Anki / French citizenship flashcards");
@@ -217,6 +222,9 @@ describe("exam-llm-layer", () => {
     expect(highIntent).toContain("ASPT phlebotomy practice test free");
     expect(highIntent).toContain("/mock-exams/aspt-phlebotomy-readiness-check");
     expect(highIntent).not.toContain("/api/facts/aspt-phlebotomy-anki-deck");
+    expect(highIntent).toContain("CSCS practice test free");
+    expect(highIntent).toContain("/mock-exams/cscs-nsca-readiness-check");
+    expect(highIntent).not.toContain("/api/facts/cscs-nsca-anki-deck");
   });
 
   it("builds high-intent llms.txt section with FINRA ladder first", () => {

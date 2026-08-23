@@ -39,6 +39,7 @@ export const featuredMockHubSlugs = [
   "canadian-citizenship-readiness-check",
   "luxembourg-vivre-ensemble-readiness-check",
   "aspt-phlebotomy-readiness-check",
+  "cscs-nsca-readiness-check",
   "frm-part-1-readiness-check",
 ] as const;
 

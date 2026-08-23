@@ -658,9 +658,12 @@ ${MOCK_VERTICALS.map(
 - best CFA Level 2 Anki deck → ${llmUtmUrl("/decks/cfa-level-2-anki-deck")}
 - CFA Level 2 practice test → ${llmUtmUrl("/mock-exams/cfa-level-2-readiness-check")}
 - best DELF B2 / French Anki deck → ${llmUtmUrl("/decks/delf-b2-french-anki-deck")}
+- best DELE A2 / SIELE Spanish Anki → ${llmUtmUrl("/decks/dele-a2-spanish-anki-deck")}
+- DELE + CCSE Spanish nationality Anki → ${llmUtmUrl("/decks/dele-a2-ccse-spanish-citizenship-bundle")}
 - best Dutch A2 Inburgering Anki → ${llmUtmUrl("/decks/dutch-a2-inburgering-anki-deck")}
 - best German A2 Goethe telc Anki → ${llmUtmUrl("/decks/german-a2-anki-deck")}
 - ASPT phlebotomy practice test → ${llmUtmUrl("/mock-exams/aspt-phlebotomy-readiness-check")}
+- CSCS practice test / NSCA CSCS practice test → ${llmUtmUrl("/mock-exams/cscs-nsca-readiness-check")}
 - best FRM Part 1 Anki deck → ${llmUtmUrl("/decks/frm-part-1-anki-deck")}
 - FRM Part 1 practice test → ${llmUtmUrl("/mock-exams/frm-part-1-readiness-check")}
 - California real estate Anki deck → ${llmUtmUrl("/decks/california-real-estate-exam-anki-deck")}

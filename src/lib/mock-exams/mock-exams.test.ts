@@ -77,12 +77,12 @@ describe("mock exam configs", () => {
     expect(getDeckLinkedMocks("citizenship-naturalization-anki-bundle")).toHaveLength(6);
   });
 
-  it("imports CCSE España readiness mock from Prep2Go and links the planned DELE+CCSE waitlist", async () => {
+  it("imports CCSE España readiness mock from Prep2Go and links the live DELE+CCSE companion", async () => {
     const { getDeckBySlug } = await import("../decks");
     const config = getMockExamConfig("ccse-espana-readiness-check");
     expect(config?.status).toBe("live");
     expect(config?.linkedDeckSlug).toBe("dele-a2-ccse-spanish-citizenship-bundle");
-    expect(getDeckBySlug("dele-a2-ccse-spanish-citizenship-bundle")?.status).toBe("planned");
+    expect(getDeckBySlug("dele-a2-ccse-spanish-citizenship-bundle")?.status).toBe("available");
     expect(config?.questionCount).toBe(60);
     expect(isMockExamRunnable("ccse-espana-readiness-check")).toBe(true);
     const { questions, errors } = getQuestionBankForExam("ccse-espana-readiness-check");

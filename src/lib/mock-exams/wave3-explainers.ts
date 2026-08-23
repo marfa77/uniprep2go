@@ -615,17 +615,31 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "cscs-nsca-readiness-check": {
     practiceTestName: "NSCA CSCS Practice Test",
-    whatIsExam: "The NSCA Certified Strength and Conditioning Specialist (CSCS) exam certifies professionals who design training programs for athletes.",
-    administeredBy: "NSCA",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with NSCA.",
+    whatIsExam:
+      "The NSCA Certified Strength and Conditioning Specialist (CSCS) credential is for professionals who design training programs for athletes. It is not a personal-trainer CPT (NASM, ACE, ACSM, or NSCA-CPT). Candidates typically need a bachelor’s degree and current CPR/AED, then must pass both CSCS exam sections.",
+    administeredBy: "National Strength and Conditioning Association (NSCA)",
+    officialFormat:
+      "Official CSCS is two separately scored computer-based sections (verify the current handbook at nsca.com): Scientific Foundations — 80 scored + 15 pretest items in 1.5 hours (exercise science ~60%, sport psychology ~25%, nutrition ~15%); Practical/Applied — 110 scored + 15 pretest items in 2.5 hours (program design ~40%, exercise technique ~25%, program implementation ~20%, organization & administration ~15%), including 30–40 video/image items. Scaled pass is 70 or higher on each section. This UniPrep2Go session is a free 60-question / 75-minute text-only diagnostic — shorter than either official paper and without video items.",
     examFaqs: [
       {
         question: "What is the NSCA CSCS exam?",
-        answer: "The NSCA Certified Strength and Conditioning Specialist (CSCS) exam certifies professionals who design training programs for athletes.",
+        answer:
+          "CSCS is NSCA’s strength-and-conditioning specialist exam for people who program training for athletes. It is two separately scored papers (Scientific Foundations and Practical/Applied). It is not NASM, ACE, ACSM, or NSCA-CPT personal-trainer certification.",
+      },
+      {
+        question: "How many questions are on the official CSCS exam?",
+        answer:
+          "Two sections: Scientific Foundations has 95 items (80 scored + 15 pretest) in 1.5 hours; Practical/Applied has 125 items (110 scored + 15 pretest) in 2.5 hours. You must pass both (scaled score 70+ each). Verify at nsca.com before scheduling.",
+      },
+      {
+        question: "Is CSCS the same as a personal trainer CPT exam?",
+        answer:
+          "No. CSCS is a strength-and-conditioning specialist credential. NASM-CPT, ACE CPT, ACSM-CPT, and NSCA-CPT are separate personal-trainer exams with different outlines. Use the mock that matches the certifier you registered with.",
       },
       {
         question: "Is this an official NSCA CSCS exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from NSCA.",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice — not official exam material from NSCA. It is shorter than either official section and has no video items. The matching Anki deck is planned, not a live product.",
       },
     ],
     keywords: ["cscs practice test", "nsca cscs practice test", "strength coach practice test", "nsca cscs practice exam"],

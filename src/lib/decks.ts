@@ -2740,12 +2740,12 @@ const rawDecks: Deck[] = [
       {
         question: "Is this a DELE + CCSE nationality bundle?",
         answer:
-          "No. This listing is a single DELE / SIELE vocabulary .apkg. The separate DELE + CCSE nationality bundle remains a planned listing and is not sold here. For Spanish nationality civics now, take the free CCSE (España) readiness check and join the planned CCSE bundle waitlist.",
+          "No. This listing is a single DELE / SIELE vocabulary .apkg. The separate DELE + CCSE nationality deck is a compact 60-card civics companion sold on its own page, plus a free CCSE readiness check.",
       },
       {
         question: "Do I need CCSE civics as well as DELE?",
         answer:
-          "Many nacionalidad española pathways require language evidence (often DELE A2) plus the CCSE civics test. This deck covers language vocabulary only. Pair it with the free CCSE readiness check; the DELE + CCSE Anki bundle is planned, not currently for sale.",
+          "Many nacionalidad española pathways require language evidence (often DELE A2) plus the CCSE civics test. This deck covers language vocabulary only. Pair it with the free CCSE readiness check and the compact 60-card DELE + CCSE companion if you want civics flashcards too.",
       },
       {
         question: "What file format is delivered?",
@@ -2762,35 +2762,35 @@ const rawDecks: Deck[] = [
     slug: "dele-a2-ccse-spanish-citizenship-bundle",
     category: "language",
     status: "planned",
-    title: "DELE CCSE Spanish Nationality Anki Bundle — Exam Flashcards",
+    title: "DELE CCSE Spanish Nationality Anki Deck — 60 Flashcards",
     shortName: "DELE CCSE Spanish Nationality",
     subtitle:
-      "Planned Spanish nationality bundle: DELE A2 vocabulary + CCSE civics (not currently for sale).",
+      "Compact 60-card DELE-adjacent + CCSE civics .apkg — not a full Cervantes substitute.",
     directAnswer:
-      "The DELE A2 + CCSE Spanish nationality Anki bundle is a planned UniPrep2Go listing and is not currently available for purchase. Take the free CCSE (España) readiness check first, then request waitlist notification on this page. For Spanish language prep now, use the standalone DELE SIELE Anki deck instead.",
-    lastUpdated: "2026-07-26",
-    audience: "Spanish nationality applicants preparing DELE A2 and CCSE (planned listing only).",
+      "UniPrep2Go sells a compact DELE A2 + CCSE Spanish nationality Anki deck with 60 MCQ cards plus a free 60-question CCSE timed diagnostic. Official Cervantes CCSE is 25 questions / 45 minutes / 60%. For thicker DELE / SIELE vocabulary use the standalone 1500-card listing. Delivered as an Anki .apkg for {PRICE} through Gumroad.",
+    lastUpdated: "2026-08-23",
+    audience: "Spanish nationality applicants preparing DELE A2 language evidence plus CCSE civics.",
     format: ".apkg",
     coverImage: "/samples/prep2go-dele-a2-ccse-spanish-citizenship-cover.webp",
     facts: {
-      cards: "1000+ vocabulary plus CCSE civic cards",
-      topics: "DELE A2, CCSE, Spanish nationality",
-      formulas: "Planned dual .apkg nationality bundle",
-      examYear: "Planned",
-      delivery: "Not currently for sale — waitlist notify",
+      cards: "60",
+      topics: "DELE A2-adjacent language themes and CCSE civics",
+      formulas: "Compact MCQ companion — not a full Cervantes bank",
+      examYear: "Current DELE A2 / CCSE cycle",
+      delivery: "Digital .apkg through Gumroad (instant download)",
     },
     topicCoverage: [],
     sampleCards: [],
     faqs: [
       {
-        question: "Is this deck available for purchase?",
+        question: "Is this a full DELE + CCSE nationality course?",
         answer:
-          "No. This DELE + CCSE nationality bundle is a planned listing. Use Notify me when Anki launches on this page, or buy the standalone DELE SIELE Spanish Anki deck for language vocabulary now.",
+          "No. This is a compact 60-card companion (DELE-adjacent language themes + CCSE civics). Official CCSE is 25 questions / 45 minutes / 60%. For thicker DELE / SIELE vocabulary buy the standalone 1500-card DELE SIELE Anki deck.",
       },
       {
         question: "Is there a free CCSE practice test?",
         answer:
-          "Yes. Take the free 60-question CCSE (España) readiness check at /mock-exams/ccse-espana-readiness-check, then join this waitlist for the dual Anki bundle.",
+          "Yes. Take the free 60-question CCSE (España) readiness check at /mock-exams/ccse-espana-readiness-check, then repair weak topics in this 60-card deck.",
       },
       {
         question: "Is this official exam material?",

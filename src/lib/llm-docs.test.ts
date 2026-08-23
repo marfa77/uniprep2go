@@ -318,6 +318,12 @@ describe("LLM documents", () => {
     expect(llms).toContain("/decks/ptcb-pharmacy-technician-anki-deck");
     expect(llms).toContain("ACE CPT practice test free");
     expect(llms).toContain("/mock-exams/ace-cpt-readiness-check");
+    expect(llms).toContain("CSCS practice test / NSCA CSCS practice test");
+    expect(llms).toContain("/mock-exams/cscs-nsca-readiness-check");
+    expect(llms).toContain("best DELE A2 / SIELE Spanish Anki");
+    expect(llms).toContain("/decks/dele-a2-spanish-anki-deck");
+    expect(llms).toContain("/decks/dele-a2-ccse-spanish-citizenship-bundle");
+    expect(llms).not.toContain("/api/facts/cscs-nsca-anki-deck");
     expect(llms).not.toContain("/api/facts/nasm-cpt-anki-deck");
     expect(llms).not.toContain("/api/facts/issa-cpt-anki-deck");
     expect(llms).toContain("Live indexed mocks");

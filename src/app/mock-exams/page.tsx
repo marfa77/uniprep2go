@@ -203,6 +203,9 @@ export default function MockExamsIndexPage() {
             <Link className="underline-offset-4 hover:underline" href="/mock-exams/acsm-cpt-readiness-check">
               ACSM CPT practice test
             </Link>
+            <Link className="underline-offset-4 hover:underline" href="/mock-exams/cscs-nsca-readiness-check">
+              NSCA CSCS practice test
+            </Link>
             <Link className="underline-offset-4 hover:underline" href="/#catalog">
               Full catalog
             </Link>

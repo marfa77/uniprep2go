@@ -717,6 +717,11 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
     certifier: "Luxembourg — Guichet.lu (Vivre ensemble au Grand-Duché)",
     verifyAtUrl: "https://guichet.public.lu/en.html",
   },
+  "cscs-nsca-readiness-check": {
+    certifier: "National Strength and Conditioning Association (NSCA) — CSCS",
+    verifyAtUrl:
+      "https://www.nsca.com/certification/cscs/certified-strength-and-conditioning-specialist-exam-description/",
+  },
 };
 
 /** State real-estate commission home pages keyed by slug prefix / known slug. */

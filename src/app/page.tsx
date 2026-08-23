@@ -146,12 +146,14 @@ const examPathLinks = [
   },
   {
     title: "Personal training (CPT)",
-    description: "NASM, ISSA, ACE, and ACSM CPT practice tests for domain scoring before exam day.",
+    description:
+      "NASM, ISSA, ACE, and ACSM CPT practice tests — plus NSCA CSCS (strength & conditioning, not a CPT exam).",
     links: [
-      { href: "/mock-exams/v/fitness", label: "All CPT mocks" },
+      { href: "/mock-exams/v/fitness", label: "All fitness mocks" },
       { href: "/mock-exams/nasm-cpt-readiness-check", label: "NASM CPT" },
       { href: "/mock-exams/ace-cpt-readiness-check", label: "ACE CPT" },
       { href: "/mock-exams/acsm-cpt-readiness-check", label: "ACSM CPT" },
+      { href: "/mock-exams/cscs-nsca-readiness-check", label: "NSCA CSCS" },
     ],
   },
   {
@@ -280,6 +282,7 @@ const featuredMockSlugs = [
   "canadian-citizenship-readiness-check",
   "luxembourg-vivre-ensemble-readiness-check",
   "aspt-phlebotomy-readiness-check",
+  "cscs-nsca-readiness-check",
   "california-real-estate-readiness-check",
   "life-and-health-insurance-readiness-check",
   "property-casualty-insurance-readiness-check",
