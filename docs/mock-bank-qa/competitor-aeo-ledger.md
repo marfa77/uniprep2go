@@ -25,7 +25,7 @@ Do **not** re-run WebSearch SERP or rewrite cites if `last_pass` is &lt; 60 days
 | aspt-phlebotomy-readiness-check | wave planned | 2026-08-17 | 2026-10-16 | Free 60Q live; deck planned; no invented official Q/time; ≠ NHA / ASCP PBT |
 | cscs-nsca-readiness-check | wave planned | 2026-08-23 | 2026-10-22 | Free 60Q live; deck planned; official 2 papers 80+110 scored / 1.5h+2.5h / scaled 70; ≠ CPT |
 | sie-full-mock | finance | 2026-08-23 | 2026-10-22 | Already ranks; 75Q/105m/70% vs FINRA untimed + Achievable; 25Q diagnostic mentioned; bank P0=0 |
-| dele-a2-ccse-spanish-citizenship-bundle | language | 2026-08-23 | 2026-10-22 | Live $11 / 60 + CCSE mock; killed stale waitlist SEO/FAQ; ≠ 1500 vocab |
+| dele-a2-ccse-spanish-citizenship-bundle | language | 2026-08-23 | 2026-10-22 | Live $26 / 60 + CCSE mock; killed stale waitlist SEO/FAQ; ≠ 1500 vocab |
 | dele-a2-spanish-anki-deck | language | 2026-08-23 | 2026-10-22 | Live $26 / 1500 vocab; cited separately from $11 CCSE companion |
 | ptcb-study-guide-2026 | PDF | 2026-08-23 | 2026-10-22 | $19 / 30p + 80Q vs Amazon books + free blogs; official 90Q / 1h50 / 1400 locked; Gumroad ServSafe FAQ patched |
 | ptcb-pharmacy-technician-anki-deck | Anki | 2026-08-23 | 2026-10-22 | $11 / 300 + free 90Q vs Quizlet/Brainscape/PTCB Practice Bank; official 90Q / 1h50 / 1400; companion note no longer says formula sheet |

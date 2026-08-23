@@ -553,7 +553,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "DELE + CCSE Compact Anki — 60 Cards + Free CCSE Mock",
     studyLabel: "DELE CCSE Spanish nationality exam prep",
     description:
-      "Live $11 compact DELE A2 + CCSE Anki (60 MCQ cards) plus a free 60-question CCSE timed diagnostic. Official Cervantes CCSE is 25Q / 45 min / 60%. Companion only — for thicker DELE vocab use the 1500-card DELE SIELE deck. Not Instituto Cervantes material.",
+      "Live $26 compact DELE A2 + CCSE Anki (60 MCQ cards) plus a free 60-question CCSE timed diagnostic. Official Cervantes CCSE is 25Q / 45 min / 60%. Companion only — for thicker DELE vocab use the 1500-card DELE SIELE deck. Not Instituto Cervantes material.",
     keywords: [
       "dele a2 anki",
       "ccse anki deck",
