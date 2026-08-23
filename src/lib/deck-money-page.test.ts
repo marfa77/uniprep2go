@@ -1,7 +1,12 @@
 import { describe, expect, it } from "vitest";
 import { catalogAvailableDecks, getDeckBySlug } from "./decks";
 import { buildMergedDeckFaqs, collectDeckPageVisibleText } from "./deck-faq";
-import { formatExamFocusedContent, getDeckShortPitch, getDeckLongDescription } from "./deck-page-copy";
+import {
+  formatExamFocusedContent,
+  formatProductNoun,
+  getDeckShortPitch,
+  getDeckLongDescription,
+} from "./deck-page-copy";
 import { getDeckPositioning } from "./deck-positioning";
 import { getDeckUniqueContent } from "./deck-money-page-content";
 
@@ -10,6 +15,13 @@ describe("deck money pages", () => {
     const deck = getDeckBySlug("cfa-level-1-anki-deck")!;
     expect(formatExamFocusedContent(deck)).toBe("342+ exam-focused flashcards");
     expect(formatExamFocusedContent(deck)).not.toMatch(/of exam-focused content/);
+  });
+
+  it("labels the PTCB study guide as a PDF, not an Anki deck", () => {
+    const guide = getDeckBySlug("ptcb-study-guide-2026")!;
+    expect(formatProductNoun(guide)).toBe("PDF");
+    expect(getDeckUniqueContent(guide)).toContain("1,400");
+    expect(getDeckUniqueContent(guide)).toContain("90 questions");
   });
 
   it("uses distinct shortPitch, audience, and longDescription on FRM", () => {

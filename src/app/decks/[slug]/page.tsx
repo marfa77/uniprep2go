@@ -36,7 +36,7 @@ import {
   getDeckPracticeMock,
   isMockFirstDeckPage,
 } from "@/lib/deck-funnel";
-import { getDeckShortPitch } from "@/lib/deck-page-copy";
+import { formatProductNoun, getDeckShortPitch } from "@/lib/deck-page-copy";
 import {
   catalogAvailableDecks,
   catalogPlannedDecks,
@@ -214,6 +214,7 @@ export default async function DeckPage({
     examFactsProfile ? VISIBLE_FAQ_COUNT_WITH_EXAM : VISIBLE_FAQ_COUNT,
   );
   const shortPitch = getDeckShortPitch(deck);
+  const productNoun = formatProductNoun(deck);
   const showPracticeMockSection = practiceMock && shouldShowDeckPracticeMockSection(deck.slug);
 
   const jsonLd = availableDeck ? buildDeckPageJsonLd(availableDeck) : null;
@@ -242,7 +243,11 @@ export default async function DeckPage({
                   note:
                     deck.format === "PDF"
                       ? "Daily spaced-repetition companion"
-                      : "Printable formula reference",
+                      : companionDeck.format === "PDF" && companionDeck.slug.includes("formula")
+                        ? "Printable formula reference"
+                        : companionDeck.format === "PDF"
+                          ? "Printable study guide companion"
+                          : `${companionDeck.shortName} companion`,
                 },
               ]
             : []),
@@ -523,7 +528,13 @@ export default async function DeckPage({
         availableDeck.checkoutProvider !== "App Store" &&
         deck.sampleCards.length > 0 ? (
           <section className="mt-10 rounded-3xl border border-[#1f3a5f]/20 bg-[#fffaf0] p-6 sm:p-8">
-            <h2 className="text-xl font-semibold tracking-tight">Ready to drill with the full deck?</h2>
+            <h2 className="text-xl font-semibold tracking-tight">
+              {productNoun === "PDF"
+                ? "Ready to download the full PDF?"
+                : productNoun === "app"
+                  ? "Ready to open the full app?"
+                  : "Ready to drill with the full deck?"}
+            </h2>
             <p className="mt-2 max-w-2xl text-sm leading-7 text-[#5f5749]">
               Instant {deck.format === "PDF" ? "PDF" : ".apkg"} download after {availableDeck.checkoutProvider}{" "}
               checkout.

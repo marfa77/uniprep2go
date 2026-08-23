@@ -4450,8 +4450,8 @@ const rawDecks: Deck[] = [
     shortName: "PTCB Pharmacy Technician",
     subtitle: "300 flashcards for PTCE prep — top 200 drugs, sig codes, pharmacy math, and federal law.",
     directAnswer:
-      "Built for pharmacy technicians preparing for the PTCE: 300 Anki flashcards covering the top 200 brand/generic pairs, drug classes, sig abbreviations, days-supply math, DEA schedules, HIPAA basics, recalls, and order-entry workflow. Short daily sessions on your phone beat rereading notes the week before the exam. Independent study aid — not official PTCB, NHA, FDA, or DEA material. .apkg download for {PRICE} via Gumroad.",
-    lastUpdated: "2026-06-02",
+      "Built for pharmacy technicians preparing for the PTCE: 300 Anki flashcards covering the top 200 brand/generic pairs, drug classes, sig abbreviations, days-supply math, DEA schedules, HIPAA basics, recalls, and order-entry workflow. Official PTCE is 90 questions (80 scored) / 1 hour 50 minutes / scaled pass 1,400. Short daily sessions on your phone beat rereading notes the week before the exam. Independent study aid — not official PTCB, NHA, FDA, or DEA material. .apkg download for {PRICE} via Gumroad.",
+    lastUpdated: "2026-08-23",
     audience:
       "Pharmacy technician candidates, pharmacy tech students, career changers preparing for the PTCE, and technicians who want daily brand/generic and sig-code recall on their phone.",
     format: ".apkg",
@@ -4468,11 +4468,10 @@ const rawDecks: Deck[] = [
       delivery: "Digital download through Gumroad",
     },
     topicCoverage: [
-      { name: "Top 200 Drugs", examWeight: "Core PTCE topic", cards: "Brand ↔ generic ↔ class with primary use" },
-      { name: "Sig Codes & Abbreviations", examWeight: "Core PTCE topic", cards: "Common U.S. pharmacy abbreviations" },
-      { name: "Pharmacy Math", examWeight: "Core PTCE topic", cards: "Days supply, conversions, ratio/proportion problems" },
-      { name: "Federal Law & Safety", examWeight: "18.75% (2026)", cards: "DEA schedules, HIPAA, recalls, DSCSA traceability" },
-      { name: "Order Entry & Inventory", examWeight: "Core PTCE topic", cards: "Dispensing workflow, labeling, handling basics" },
+      { name: "Medications (top 200 drugs)", examWeight: "35%", cards: "Brand ↔ generic ↔ class with primary use" },
+      { name: "Patient Safety & QA", examWeight: "23.75%", cards: "High-alert, LASA pairs, error-prevention workflow" },
+      { name: "Order Entry, sigs & math", examWeight: "22.5%", cards: "Sig codes, days supply, conversions, labeling" },
+      { name: "Federal Requirements", examWeight: "18.75%", cards: "DEA schedules, HIPAA, recalls, DSCSA traceability" },
     ],
     sampleCards: [
       {
@@ -4513,7 +4512,7 @@ const rawDecks: Deck[] = [
       {
         question: "Does this work for ExCPT / NHA too?",
         answer:
-          "Many topics overlap U.S. pharmacy technician curricula, but the deck is written for PTCE-style prep. Verify your exam blueprint before relying on it as your only study source.",
+          "Many topics overlap U.S. pharmacy technician curricula, but the deck is written for PTCE-style prep. NHA ExCPT is a separate certifier — take UniPrep2Go’s free NHA ExCPT readiness check if that is your exam, and verify the current NHA blueprint before treating this deck as your only source.",
       },
       {
         question: "Does this guarantee a passing score?",

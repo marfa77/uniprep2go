@@ -1,6 +1,6 @@
 import type { Deck } from "@/lib/decks";
 import { getDeckPositioning } from "@/lib/deck-positioning";
-import { formatExamFocusedContent } from "@/lib/deck-page-copy";
+import { formatExamFocusedContent, formatProductNoun } from "@/lib/deck-page-copy";
 
 type DeckPositioningSectionProps = {
   deck: Deck;
@@ -10,10 +10,13 @@ export function DeckPositioningSection({ deck }: DeckPositioningSectionProps) {
   const positioning = getDeckPositioning(deck);
   const [community, mega] = positioning.alternatives;
   const thisDeckLabel = formatExamFocusedContent(deck);
+  const productNoun = formatProductNoun(deck);
 
   return (
     <section id="how-this-compares" className="mt-12">
-      <h2 className="text-2xl font-semibold tracking-tight">How this deck compares</h2>
+      <h2 className="text-2xl font-semibold tracking-tight">
+        {productNoun === "PDF" ? "How this PDF compares" : `How this ${productNoun} compares`}
+      </h2>
       <p className="mt-3 max-w-3xl text-sm leading-7 text-[#4f493e]">{positioning.summaryProse}</p>
 
       <div className="mt-6 overflow-x-auto rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
@@ -49,7 +52,9 @@ export function DeckPositioningSection({ deck }: DeckPositioningSectionProps) {
               </td>
             </tr>
             <tr className="bg-[#1f3a5f]/5">
-              <td className="px-5 py-4 font-semibold text-[#1f3a5f]">This deck</td>
+              <td className="px-5 py-4 font-semibold text-[#1f3a5f]">
+                {productNoun === "PDF" ? "This PDF" : `This ${productNoun}`}
+              </td>
               <td className="px-5 py-4 font-medium text-[#18140f]">{thisDeckLabel}</td>
               <td className="px-5 py-4 text-[#18140f]">
                 <ul className="list-disc space-y-1 pl-4">

@@ -15,6 +15,13 @@ export function getDeckLongDescription(deck: Deck): string {
   return getDeckSeoProfile(deck).intro;
 }
 
+/** Short noun for CTAs and compare tables — PDF guides are not Anki decks. */
+export function formatProductNoun(deck: Pick<Deck, "format">): "PDF" | "app" | "deck" {
+  if (deck.format === "PDF") return "PDF";
+  if (deck.format === "App") return "app";
+  return "deck";
+}
+
 /** Bullet label for exam-focused content size (fixes "{count}+ of …" grammar). */
 export function formatExamFocusedContent(deck: Deck): string {
   const { cards } = deck.facts;

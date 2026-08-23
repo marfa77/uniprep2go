@@ -142,8 +142,8 @@ export const positioningOverrides: Partial<
     ourEdge: [
       "300 cards: top-200 brand/generic, sig codes, math, DEA, DSCSA",
       "January 2026 PTCE blueprint — compounding/alligation removed",
-      "Pairs with printable 2026 study guide (80-question practice exam)",
-      "10–15 cards/day workflow fits working technicians",
+      "Free 90-question timed mock + printable 2026 study guide (separate SKUs)",
+      "Ownable .apkg — 10–15 cards/shift, not a Quizlet or account-gated bank",
     ],
     summaryProse:
       "PTCE rewards drug names, sig codes, and math speed — not 2,000 low-yield cards. Three hundred validated prompts beat a mega-pack when you have 15 minutes between fills.",
@@ -871,7 +871,7 @@ Representatives mix suitability standards for elderly clients, options exercise 
 
   "ptcb-pharmacy-technician-anki-deck": `### What is inside
 
-Roughly 300 prompts organized for the January 2026 PTCE: top 200 brand/generic pairs, common sig codes (q.d., b.i.d., p.r.n.), days-supply calculations, DEA schedules, DSCSA traceability basics, recall and error-prevention workflow, and federal law. Math cards use the short integer setups the exam favors — no alligation or compounding (removed from the 2026 outline).
+Roughly 300 prompts organized for the January 2026 PTCE: top 200 brand/generic pairs, common sig codes (q.d., b.i.d., p.r.n.), days-supply calculations, DEA schedules, DSCSA traceability basics, recall and error-prevention workflow, and federal law. Official PTCE is **90 questions (80 scored + 10 pretest) / 1 hour 50 minutes / scaled pass 1,400** at Pearson VUE (in-person; online proctoring suspended December 12, 2025). Math cards use the short integer setups the exam favors — no alligation or compounding (removed from the 2026 outline).
 
 ### Shift-friendly study plan with the study guide
 
@@ -895,7 +895,7 @@ Candidates skip screening, load dysfunctional patterns, or drift into diagnosis 
 
   "ptcb-study-guide-2026": `### What is inside
 
-Four review chapters sized to January 2026 PTCE weights: Medications (35%), Federal Requirements (18.75% — including DSCSA), Patient Safety & QA (23.75%), and Order Entry & Processing (22.5%). The 80-question practice exam matches real PTCE scored length (28/15/19/18) with a domain-scored answer key. Three cheat sheets cover 60 high-yield drugs A–Z, 45 prescription sig codes, and pharmacy math formulas with worked examples. The free 90-question online mock and 300-card Anki deck are companion products (not bundled inside the PDF download).
+Four review chapters sized to January 2026 PTCE weights: Medications (35%), Federal Requirements (18.75% — including DSCSA), Patient Safety & QA (23.75%), and Order Entry & Processing (22.5%). The 80-question practice exam matches real PTCE **scored** length (28/15/19/18) with a domain-scored answer key. Official PTCE is **90 questions (80 scored + 10 pretest) / 1 hour 50 minutes / scaled pass 1,400** at Pearson VUE (in-person; online proctoring suspended December 12, 2025). Three cheat sheets cover 60 high-yield drugs A–Z, 45 prescription sig codes, and pharmacy math formulas with worked examples. The free 90-question online mock and 300-card Anki deck are companion products (not bundled inside the PDF download).
 
 ### 4-week study plan with the Anki deck
 
