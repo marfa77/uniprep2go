@@ -12,6 +12,7 @@ import {
   selectSessionQuestions,
   shuffleQuestions,
 } from "@/lib/mock-exams/scoring";
+import { TrackedCheckoutLink } from "@/components/funnel-tracker";
 import { LearnPassPaywall } from "./learn-pass-paywall";
 import { MockInterestCta } from "./mock-interest-cta";
 import { MockReportPanel } from "./mock-report";
@@ -404,6 +405,23 @@ export function MockExamClient({
     selectedMode === "learn" ? "Untimed · instant feedback" : formatDuration(config.durationMinutes);
   const showLearnPaywall = learnPassEnabled && selectedMode === "learn" && learnRemaining <= 0;
   const lengthAlternate = mockLengthAlternates[config.slug];
+  const sellDeckFirst =
+    Boolean(linkedCheckout?.checkoutUrl) &&
+    (config.slug === "sie-full-mock" || config.slug === "sie-quick-diagnostic");
+  const startCtaLabel =
+    selectedMode === "learn"
+      ? "Start learn mode"
+      : config.questionCount <= 30
+        ? `Start free diagnostic · ${config.questionCount} questions`
+        : `Start timed exam · free · no signup`;
+  const startButtonClass = (primary: boolean) =>
+    primary
+      ? "inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#18140f] px-6 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] disabled:opacity-50 sm:w-auto"
+      : "inline-flex min-h-12 w-full items-center justify-center rounded-full border border-[#18140f]/20 px-6 text-sm font-semibold text-[#18140f] transition hover:border-[#18140f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] disabled:opacity-50 sm:w-auto";
+  const deckButtonClass = (primary: boolean) =>
+    primary
+      ? "inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#18140f] px-6 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] sm:w-auto"
+      : "inline-flex min-h-12 w-full items-center justify-center rounded-full border border-[#18140f]/20 px-6 text-sm font-semibold text-[#18140f] transition hover:border-[#18140f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] sm:w-auto";
 
   return (
     <div className="mt-6 space-y-6" id="start-mock">
@@ -506,22 +524,57 @@ export function MockExamClient({
                     setLearnError(null);
                   }}
                 />
-              ) : (
-                <button
-                  className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#18140f] px-6 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] disabled:opacity-50 sm:w-auto"
-                  disabled={learnBusy}
-                  onClick={() => void startMock(selectedMode)}
-                  type="button"
-                >
-                  {learnBusy
-                    ? "Starting…"
-                    : selectedMode === "learn"
-                      ? "Start learn mode"
-                      : config.questionCount <= 30
-                        ? `Start free diagnostic · ${config.questionCount} questions`
-                        : `Start timed exam · free · no signup`}
-                </button>
-              )}
+              ) : null}
+
+              {sellDeckFirst ? (
+                <div className="flex gap-3 rounded-2xl border border-[#1f3a5f]/15 bg-[#1f3a5f]/[0.04] p-3">
+                  <img
+                    alt="SIE Anki flashcard sample"
+                    className="h-[4.5rem] w-[4.5rem] shrink-0 rounded-xl object-cover"
+                    height={72}
+                    src="/samples/sie-exam-anki-deck-sample-1.webp"
+                    width={72}
+                  />
+                  <p className="text-sm leading-6 text-[#4f493e]">
+                    {config.slug === "sie-full-mock"
+                      ? "Skip the 105-minute sitting if you want — 300 SIE Anki cards cover the same FINRA topics for daily recall."
+                      : "Use the 25-question check if you have 35 minutes. Repair the same topics daily with the 300-card Anki deck."}
+                  </p>
+                </div>
+              ) : null}
+
+              <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap">
+                {linkedCheckout?.checkoutUrl && sellDeckFirst ? (
+                  <TrackedCheckoutLink
+                    className={deckButtonClass(true)}
+                    deckSlug={linkedCheckout.deckSlug}
+                    href={linkedCheckout.checkoutUrl}
+                    source={`mock:${config.slug}:landing:checkout`}
+                  >
+                    {linkedCheckout.ctaLabel}
+                  </TrackedCheckoutLink>
+                ) : null}
+                {!showLearnPaywall ? (
+                  <button
+                    className={startButtonClass(!sellDeckFirst)}
+                    disabled={learnBusy}
+                    onClick={() => void startMock(selectedMode)}
+                    type="button"
+                  >
+                    {learnBusy ? "Starting…" : startCtaLabel}
+                  </button>
+                ) : null}
+                {linkedCheckout?.checkoutUrl && !sellDeckFirst ? (
+                  <TrackedCheckoutLink
+                    className={deckButtonClass(false)}
+                    deckSlug={linkedCheckout.deckSlug}
+                    href={linkedCheckout.checkoutUrl}
+                    source={`mock:${config.slug}:landing:checkout`}
+                  >
+                    {linkedCheckout.ctaLabel}
+                  </TrackedCheckoutLink>
+                ) : null}
+              </div>
 
               {lengthAlternate ? (
                 <p className="text-sm leading-6 text-[#5f5749]">
@@ -531,29 +584,6 @@ export function MockExamClient({
                   >
                     {lengthAlternate.label}
                   </Link>
-                </p>
-              ) : null}
-
-              {linkedCheckout?.checkoutUrl ? (
-                <p className="text-sm leading-6 text-[#5f5749]">
-                  After the report, repair weak topics with the{" "}
-                  <a
-                    className="font-medium text-[#1f3a5f] underline decoration-[#1f3a5f]/30 underline-offset-4 transition hover:decoration-[#1f3a5f]"
-                    href={linkedCheckout.checkoutUrl}
-                    onClick={() =>
-                      trackMockEvent({
-                        name: "mock_deck_cta_click",
-                        deckSlug: config.linkedDeckSlug,
-                        mockSlug: config.slug,
-                        source: `mock:${config.slug}:landing:soft_checkout`,
-                      })
-                    }
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    {linkedCheckout.ctaLabel ?? "Anki deck on Gumroad"}
-                  </a>
-                  .
                 </p>
               ) : null}
 
