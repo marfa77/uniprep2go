@@ -164,6 +164,29 @@ export function getCatalogListPriceRecord(deck: CatalogAvailableDeck): SyncedPri
   return null;
 }
 
+function hasExplicitCatalogListPriceOverride(slug: string) {
+  return listPriceConfig.overrides[slug] !== undefined;
+}
+
+function preferCatalogOverrideOverSynced(
+  deck: CatalogAvailableDeck,
+  synced: SyncedPriceRecord,
+): SyncedPriceRecord {
+  const catalogFallback = getCatalogListPriceRecord(deck);
+  if (
+    catalogFallback &&
+    hasExplicitCatalogListPriceOverride(deck.slug) &&
+    Math.abs(synced.amount - catalogFallback.amount) > 0.01
+  ) {
+    console.warn(
+      `[checkout_pricing] ${deck.slug}: synced $${synced.amount} != catalog $${catalogFallback.amount}; using catalog list price`,
+    );
+    return catalogFallback;
+  }
+
+  return synced;
+}
+
 export function formatCheckoutPrice(amount: number) {
   return amount % 1 === 0 ? `$${amount}` : `$${amount.toFixed(2)}`;
 }
@@ -439,7 +462,11 @@ export async function resolveDeckPrice(deck: CatalogAvailableDeck): Promise<Pric
   const cached = await readCachedPrice(deck.slug);
   // Ignore stale cache after checkout provider migrations (e.g. Lemon → Gumroad).
   if (cached && cachedPriceMatchesCheckoutProvider(deck, cached)) {
-    return applyPriceRecordToDeck(deck, cached);
+    const record = preferCatalogOverrideOverSynced(deck, cached);
+    if (record !== cached) {
+      await writeCachedPrice(deck.slug, record);
+    }
+    return applyPriceRecordToDeck(deck, record);
   }
 
   const staticBuilding = getStaticBuildingDeckPriceRecord(deck.slug);
@@ -461,21 +488,9 @@ export async function resolveDeckPrice(deck: CatalogAvailableDeck): Promise<Pric
 
   try {
     const synced = await syncDeckPrice(deck);
-    const catalogFallback = getCatalogListPriceRecord(deck);
-    const hasExplicitOverride = listPriceConfig.overrides[deck.slug] !== undefined;
-    if (
-      catalogFallback &&
-      hasExplicitOverride &&
-      Math.abs(synced.amount - catalogFallback.amount) > 0.01
-    ) {
-      console.warn(
-        `[checkout_pricing] ${deck.slug}: Gumroad $${synced.amount} != catalog $${catalogFallback.amount}; using catalog list price`,
-      );
-      await writeCachedPrice(deck.slug, catalogFallback);
-      return applyPriceRecordToDeck(deck, catalogFallback);
-    }
-    await writeCachedPrice(deck.slug, synced);
-    return applyPriceRecordToDeck(deck, synced);
+    const record = preferCatalogOverrideOverSynced(deck, synced);
+    await writeCachedPrice(deck.slug, record);
+    return applyPriceRecordToDeck(deck, record);
   } catch (error) {
     rememberGumroadFailure(deck.slug);
     console.warn(`[checkout_pricing] price unavailable for ${deck.slug}`, error);

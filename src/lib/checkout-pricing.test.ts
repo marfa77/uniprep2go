@@ -178,7 +178,7 @@ describe("checkout pricing", () => {
   });
 
   it("serves cached synced price on deck resolve", async () => {
-    const deck = getCatalogDeckBySlug("cfa-level-1-anki-deck");
+    const deck = getCatalogDeckBySlug("hvac-epa-608-anki-deck");
     expect(deck).toBeDefined();
 
     await writeCachedPrice(deck!.slug, {
@@ -192,6 +192,22 @@ describe("checkout pricing", () => {
     expect(resolved.price.amount).toBe(13.5);
     expect(resolved.directAnswer).toContain("$13.50 USD");
     expect(applySyncedPriceToDeck).toBeDefined();
+  });
+
+  it("prefers catalog override over stale cached Gumroad price", async () => {
+    const deck = getCatalogDeckBySlug("sie-exam-anki-deck");
+    expect(deck).toBeDefined();
+
+    await writeCachedPrice(deck!.slug, {
+      amount: 11,
+      currency: "USD",
+      syncedAt: "2026-06-01T00:00:00.000Z",
+      source: "gumroad",
+    });
+
+    const resolved = await resolveDeckPrice(deck!);
+    expect(resolved.price.amount).toBe(19);
+    expect(resolved.directAnswer).toContain("$19 USD");
   });
 
   it("ignores stale Lemon cache after a deck moves to Gumroad", async () => {
