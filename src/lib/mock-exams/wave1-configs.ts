@@ -11,10 +11,11 @@ const WAVE1_SESSION_QUESTIONS = WAVE1_TOPIC_QUESTIONS * 4;
 function fourTopics(
   topics: Array<{ id: string; label: string }>,
   targetPercent = 70,
+  perTopic = WAVE1_TOPIC_QUESTIONS,
 ): MockTopic[] {
   return topics.map((topic) => ({
     ...topic,
-    questionCount: WAVE1_TOPIC_QUESTIONS,
+    questionCount: perTopic,
     weightPercent: 25,
     targetPercent,
   }));
@@ -219,18 +220,22 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     title: "NHA CPCT/A Patient Care Technician Readiness Check",
     shortTitle: "NHA CPCT/A",
     linkedDeckSlug: "nha-cpct-anki-deck",
-    durationMinutes: 60,
-    questionCount: WAVE1_SESSION_QUESTIONS,
-    topics: fourTopics([
-      { id: "patient-care", label: "Patient care & ADLs" },
-      { id: "safety-infection", label: "Safety & infection control" },
-      { id: "phlebotomy-ekg", label: "Phlebotomy & EKG basics (text)" },
-      { id: "professional-practice", label: "Professional practice & communication" },
-    ]),
+    durationMinutes: 120,
+    questionCount: 120,
+    topics: fourTopics(
+      [
+        { id: "patient-care", label: "Patient care & ADLs" },
+        { id: "safety-infection", label: "Safety & infection control" },
+        { id: "phlebotomy-ekg", label: "Phlebotomy & EKG basics (text)" },
+        { id: "professional-practice", label: "Professional practice & communication" },
+      ],
+      70,
+      30,
+    ),
     officialSourceNote:
-      "Readiness check mapped to NHA CPCT/A themes. Not an NHA certification exam.",
+      "Official NHA CPCT/A (2025 test plan): 100 scored + 20 pretest / 2 hours / scaled 390 (200–500). This UniPrep2Go check is a 120-question / 120-minute text diagnostic with four topic buckets — all items scored here; official forms include 20 unscored pretest items and a skills lab. CPCT/A ≠ CCMA ≠ NHA CPT phlebotomy ≠ ASPT. Independent prep — not an NHA exam.",
     description:
-      "Free 60-question NHA CPCT/A readiness check with domain scoring for patient care technician candidates.",
+      "Free 120-question NHA CPCT/A readiness check with domain scoring for patient care technician candidates.",
     examBody: "NHA",
     questionSourceNote: "Original UniPrep2Go local bank for CPCT topics.",
   }),

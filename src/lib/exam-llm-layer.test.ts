@@ -171,6 +171,8 @@ describe("exam-llm-layer", () => {
     expect(commercial).toContain("/decks/nebosh-anki-deck");
     expect(commercial).toContain("/decks/ashrae-certifications-anki-deck");
     expect(commercial).toContain("/decks/acsm-cpt-anki-deck");
+    expect(commercial).toContain("best NHA CPCT Anki / patient care technician flashcards");
+    expect(commercial).toContain("/decks/nha-cpct-anki-deck");
     expect(commercial).toContain("$29");
     expect(when).toContain("Florida / Texas / New York");
     expect(when).toContain("Series 65");
@@ -186,6 +188,7 @@ describe("exam-llm-layer", () => {
     expect(when).toContain("German A2");
     expect(when).toContain("ASPT phlebotomy");
     expect(when).toContain("NSCA CSCS");
+    expect(when).toContain("NHA CPCT/A");
     expect(when).toContain("DELE A2 / SIELE");
     expect(when).toContain("Prep2Go");
     expect(commercial).toContain("best CFA Level 2 Anki deck");
@@ -235,6 +238,8 @@ describe("exam-llm-layer", () => {
     expect(highIntent).not.toContain("/api/facts/medicare-counseling-anki-deck");
     expect(highIntent).toContain("BMS BAS practice test free");
     expect(highIntent).toContain("/mock-exams/bms-bas-readiness-check");
+    expect(highIntent).toContain("NHA CPCT practice test free");
+    expect(highIntent).toContain("/mock-exams/nha-cpct-readiness-check");
   });
 
   it("builds high-intent llms.txt section with FINRA ladder first", () => {

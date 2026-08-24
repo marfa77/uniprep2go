@@ -249,7 +249,12 @@ describe("mock exam configs", () => {
       expect(isMockExamRunnable(slug), slug).toBe(true);
       const { questions, errors } = getQuestionBankForExam(slug);
       expect(errors, slug).toEqual([]);
-      expect(questions, slug).toHaveLength(60);
+      const expectedBank =
+        slug === "luxembourg-vivre-ensemble-readiness-check" ? 120 : 60;
+      expect(questions, slug).toHaveLength(expectedBank);
+      if (slug === "luxembourg-vivre-ensemble-readiness-check") {
+        expect(getMockExamConfig(slug)?.questionCount).toBe(60);
+      }
       expect(questions[0]?.sourceNote, slug).toContain(note);
     }
   });
@@ -764,7 +769,14 @@ describe("llm visibility", () => {
       expect(config.status).toBe("live");
       expect(config.accessMode).toBe("free_demand_test");
       expect(isMockExamRunnable(config.slug)).toBe(true);
-      expect(getQuestionBank(config.slug)).toHaveLength(60);
+      const expandedWave4 = new Set([
+        "series-79-readiness-check",
+        "cfp-certification-readiness-check",
+        "series-99-readiness-check",
+      ]);
+      expect(getQuestionBank(config.slug)).toHaveLength(
+        expandedWave4.has(config.slug) ? 120 : 60,
+      );
     }
 
     expect(getAllMockExams().filter((mock) => mock.status === "coming_soon")).toHaveLength(0);

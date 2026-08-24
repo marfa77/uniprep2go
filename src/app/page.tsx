@@ -130,10 +130,11 @@ const examPathLinks = [
   {
     title: "Allied health (specialty)",
     description:
-      "NHA phlebotomy, ASPT phlebotomy, CCMA, and SHIP Medicare counseling readiness checks — niche allied-health mocks.",
+      "NHA phlebotomy, NHA CPCT/A, ASPT phlebotomy, CCMA, and SHIP Medicare counseling readiness checks — niche allied-health mocks.",
     links: [
       { href: "/mock-exams/v/allied-health", label: "Browse allied health mocks" },
       { href: "/mock-exams/nha-cpt-phlebotomy-readiness-check", label: "NHA CPT phlebotomy" },
+      { href: "/mock-exams/nha-cpct-readiness-check", label: "NHA CPCT/A patient care" },
       { href: "/mock-exams/aspt-phlebotomy-readiness-check", label: "ASPT phlebotomy" },
       { href: "/mock-exams/nha-ccma-readiness-check", label: "NHA CCMA mock" },
       { href: "/mock-exams/medicare-counseling-readiness-check", label: "SHIP Medicare counseling" },

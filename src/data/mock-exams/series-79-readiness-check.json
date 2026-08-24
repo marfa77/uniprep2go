@@ -1978,5 +1978,1985 @@
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
+  },
+  {
+    "id": "series-79-readiness-check-valuation-016",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Cost of equity under CAPM is calculated as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Risk-free rate minus beta times equity risk premium"
+      },
+      {
+        "id": "b",
+        "text": "Beta divided by risk-free rate only"
+      },
+      {
+        "id": "c",
+        "text": "Book value of equity times the coupon rate"
+      },
+      {
+        "id": "d",
+        "text": "Risk-free rate plus beta times the equity risk premium"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "CAPM: Ke = Rf + β(ERP); beta scales systematic risk relative to the market.",
+    "distractorExplanations": {
+      "a": "Subtracting ERP inverts the model.",
+      "b": "Coupon rates apply to debt, not equity cost.",
+      "c": "Rf alone ignores equity risk premium."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-017",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Market capitalization of a public company equals:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Current share price multiplied by shares outstanding"
+      },
+      {
+        "id": "b",
+        "text": "Total assets minus total liabilities on the balance sheet"
+      },
+      {
+        "id": "c",
+        "text": "Enterprise value plus net debt always"
+      },
+      {
+        "id": "d",
+        "text": "EBITDA times the industry average multiple"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Headline market cap is price × basic shares outstanding; IB equity value may separately use diluted shares for convertibles and options.",
+    "distractorExplanations": {
+      "b": "That formula defines book equity, not market cap.",
+      "c": "EV minus net debt gives equity, not plus.",
+      "d": "EBITDA multiples value the firm, not define market cap."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-018",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Trailing twelve-month (TTM) financial metrics include data from:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the latest single quarter annualized once"
+      },
+      {
+        "id": "b",
+        "text": "The most recent four consecutive fiscal quarters"
+      },
+      {
+        "id": "c",
+        "text": "Calendar years ending five years ago"
+      },
+      {
+        "id": "d",
+        "text": "Forward analyst estimates for next year only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "TTM rolls the last four quarters to smooth seasonality and show current run-rate performance.",
+    "distractorExplanations": {
+      "a": "One quarter is not trailing twelve months.",
+      "c": "Historical five-year data is not TTM.",
+      "d": "Forward estimates are separate from TTM."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-019",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Net debt in valuation is generally computed as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cash minus total debt with no other adjustments"
+      },
+      {
+        "id": "b",
+        "text": "Market cap minus enterprise value"
+      },
+      {
+        "id": "c",
+        "text": "Total debt minus cash and cash equivalents"
+      },
+      {
+        "id": "d",
+        "text": "Accounts payable minus accounts receivable"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Net debt captures interest-bearing obligations net of liquid cash available to repay them.",
+    "distractorExplanations": {
+      "a": "Reversing the formula gives net cash, not net debt.",
+      "b": "Market cap and EV relate through net debt but are not net debt itself.",
+      "d": "Working capital items are not net debt."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-020",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "A levered company's cost of equity typically exceeds its cost of debt because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Debt holders always earn higher returns than equity holders"
+      },
+      {
+        "id": "b",
+        "text": "Interest expense is never tax-deductible"
+      },
+      {
+        "id": "c",
+        "text": "Equity has a fixed maturity date like bonds"
+      },
+      {
+        "id": "d",
+        "text": "Equity holders bear residual risk and rank behind creditors in bankruptcy"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Seniority and unlimited upside/downside make equity riskier; debt enjoys contractual payments and priority.",
+    "distractorExplanations": {
+      "a": "Debt usually has lower required return due to priority.",
+      "b": "Interest is generally tax-deductible in the U.S.",
+      "c": "Equity has no fixed maturity."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-021",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Adjusted EBITDA in sell-side marketing materials often adds back:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Non-recurring expenses, stock-based compensation, and other owner-defined items per disclosure"
+      },
+      {
+        "id": "b",
+        "text": "All capital expenditures and working capital changes"
+      },
+      {
+        "id": "c",
+        "text": "Every dollar of depreciation permanently with no reconciliation"
+      },
+      {
+        "id": "d",
+        "text": "Only goodwill impairment from prior acquisitions always with no limits"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Buyers normalize earnings for one-time or non-cash items; adjustments must be defensible in diligence.",
+    "distractorExplanations": {
+      "b": "CapEx and WC belong in cash-flow analysis, not EBITDA add-back indiscriminately.",
+      "c": "Depreciation policy varies; not all is added back without context.",
+      "d": "Goodwill impairments may be adjusted but not as a blanket rule."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-022",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "When building a precedent transactions comp set, bankers usually filter deals by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Random selection of any M&A headline from unrelated sectors"
+      },
+      {
+        "id": "b",
+        "text": "Industry, deal size, transaction date, and target geography or business model similarity"
+      },
+      {
+        "id": "c",
+        "text": "Only deals where the buyer lost money"
+      },
+      {
+        "id": "d",
+        "text": "Exclusively bankrupt-target transactions regardless of sector"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Precedent multiples are useful only when transactions resemble the subject company on key dimensions.",
+    "distractorExplanations": {
+      "a": "Unrelated sectors distort valuation ranges.",
+      "c": "Buyer losses are not a standard filter.",
+      "d": "Distressed-only sets skew unless that is the thesis."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-023",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "If terminal value exceeds roughly 70% of total enterprise value in a DCF, analysts often conclude:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The company is certainly undervalued by the market"
+      },
+      {
+        "id": "b",
+        "text": "Discount rates should be set to zero"
+      },
+      {
+        "id": "c",
+        "text": "The model may be overly sensitive to long-term growth and WACC assumptions"
+      },
+      {
+        "id": "d",
+        "text": "Near-term cash flows are irrelevant in every model"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Heavy terminal weight means small changes in g or WACC swing valuation materially—worth stress-testing.",
+    "distractorExplanations": {
+      "a": "High terminal share is a modeling flag, not proof of undervaluation.",
+      "b": "Zero discount rate is not standard practice.",
+      "d": "Near-term flows still matter for credibility."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-024",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Public-to-private buyers often pay a control premium over the unaffected share price because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Minority passive stakes trade at the same price as full control always"
+      },
+      {
+        "id": "b",
+        "text": "Public shareholders require no premium when delisting"
+      },
+      {
+        "id": "c",
+        "text": "Control premiums apply only to distressed companies"
+      },
+      {
+        "id": "d",
+        "text": "They acquire 100% ownership and can change strategy, capital structure, and synergies"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Control value reflects full decision rights and integration benefits unavailable to minority public holders.",
+    "distractorExplanations": {
+      "a": "Minority stakes lack control benefits.",
+      "b": "Delisting full companies typically requires premium to induce tender.",
+      "c": "Control premium is not limited to distress."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-025",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Sensitivity tables in investment banking pitch books commonly vary:",
+    "options": [
+      {
+        "id": "a",
+        "text": "WACC and terminal growth, or exit multiples and leverage in LBO contexts"
+      },
+      {
+        "id": "b",
+        "text": "Only the font size of the chart title"
+      },
+      {
+        "id": "c",
+        "text": "Historical stock split ratios from decades ago"
+      },
+      {
+        "id": "d",
+        "text": "The CEO's age and tenure exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Sensitivities show valuation range under key assumption changes investors care about.",
+    "distractorExplanations": {
+      "b": "Formatting is not analytical sensitivity.",
+      "c": "Old splits do not drive DCF ranges.",
+      "d": "Management bio is not a valuation variable."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-026",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "An equity value bridge from enterprise value typically subtracts:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only revenue with no balance sheet items"
+      },
+      {
+        "id": "b",
+        "text": "Net debt, preferred stock, minority interest, and other non-common claims as applicable"
+      },
+      {
+        "id": "c",
+        "text": "Future capex budgets with no debt adjustment"
+      },
+      {
+        "id": "d",
+        "text": "Marketing expenses from the income statement only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "EV to equity bridge removes all claims ahead of common shareholders.",
+    "distractorExplanations": {
+      "a": "Revenue alone does not bridge EV to equity.",
+      "c": "Capex budgets are not the standard bridge line.",
+      "d": "Operating expenses are not subtracted from EV for equity value."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-027",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "EV/Revenue multiples are often used instead of EV/EBITDA when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Every mature industrial company prefers revenue multiples only"
+      },
+      {
+        "id": "b",
+        "text": "Debt balances are zero by definition"
+      },
+      {
+        "id": "c",
+        "text": "The company is unprofitable or EBITDA is negative or not meaningful"
+      },
+      {
+        "id": "d",
+        "text": "Tax rates exceed 100%"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Revenue can benchmark high-growth or pre-profit firms where EBITDA multiples distort comparisons.",
+    "distractorExplanations": {
+      "a": "Profitable mature firms often use EBITDA or earnings multiples.",
+      "b": "Debt level does not dictate multiple choice.",
+      "d": "Tax rates do not determine multiple selection that way."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-028",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Mid-year convention in a DCF adjusts discount periods because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "All cash is received on December 31 only"
+      },
+      {
+        "id": "b",
+        "text": "Discount rates must be doubled"
+      },
+      {
+        "id": "c",
+        "text": "Terminal value is excluded from the model"
+      },
+      {
+        "id": "d",
+        "text": "Cash flows are assumed to arrive evenly through the year, not all at year-end"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Mid-year discounting (e.g., t − 0.5) avoids overstating the present value of annual flows.",
+    "distractorExplanations": {
+      "a": "Year-end convention assumes end-of-year receipt; mid-year differs.",
+      "b": "Discount rates are not doubled for convention.",
+      "c": "Terminal value remains part of DCF."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-029",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Circular reference in an LBO model (interest expense affecting debt paydown) is typically resolved by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Enabling iterative calculation or a circularity switch in the spreadsheet until balances converge"
+      },
+      {
+        "id": "b",
+        "text": "Deleting all debt from the capital structure"
+      },
+      {
+        "id": "c",
+        "text": "Setting interest expense to zero permanently"
+      },
+      {
+        "id": "d",
+        "text": "Using only book value with no cash flow forecast"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Interest depends on debt balance; debt paydown depends on cash available after interest—iteration solves the loop.",
+    "distractorExplanations": {
+      "b": "Removing debt avoids LBO mechanics entirely.",
+      "c": "Zero interest ignores financing cost.",
+      "d": "Book value alone does not model LBO returns."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-valuation-030",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "valuation",
+    "prompt": "Under ASC 842 operating leases, enterprise value analysis may need to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignore all lease commitments because they are off-balance-sheet with no effect"
+      },
+      {
+        "id": "b",
+        "text": "Treat capitalized operating lease obligations similarly to debt when comparing levered profiles across companies"
+      },
+      {
+        "id": "c",
+        "text": "Add lease expense to revenue without adjustment"
+      },
+      {
+        "id": "d",
+        "text": "Remove all depreciation because leases replaced it entirely"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Capitalized lease liabilities affect net debt and comparability; analysts often add lease-adjusted debt to EV bridges.",
+    "distractorExplanations": {
+      "a": "ASC 842 brought many leases on balance sheet; they matter for leverage.",
+      "c": "Lease expense adjustment is not simply added to revenue.",
+      "d": "Depreciation treatment is separate from lease capitalization."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-016",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "A non-binding letter of intent in M&A usually outlines:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Final binding purchase price with no further negotiation permitted"
+      },
+      {
+        "id": "b",
+        "text": "Guaranteed regulatory approval in all jurisdictions"
+      },
+      {
+        "id": "c",
+        "text": "Immediate closing without confirmatory due diligence"
+      },
+      {
+        "id": "d",
+        "text": "Indicative price, structure, diligence timeline, and exclusivity terms subject to definitive agreements"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "LOIs set expectations and process terms but definitive docs and diligence determine final deal.",
+    "distractorExplanations": {
+      "a": "LOIs are typically non-binding on price until final docs.",
+      "b": "Regulatory approval is never guaranteed in an LOI.",
+      "c": "Confirmatory diligence follows LOI in most processes."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-017",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "An exclusivity (no-shop) clause during sell-side negotiations generally allows the seller to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Negotiate only with the designated buyer for a defined period, with limited fiduciary out for superior proposals"
+      },
+      {
+        "id": "b",
+        "text": "Solicit unlimited competing bids publicly during the entire period without exception"
+      },
+      {
+        "id": "c",
+        "text": "Terminate the deal without any break-up fee in every case"
+      },
+      {
+        "id": "d",
+        "text": "Share confidential data with unlimited third parties freely"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Exclusivity focuses the process on one buyer while preserving board fiduciary duties in material respects.",
+    "distractorExplanations": {
+      "b": "Public auctions contradict typical exclusivity.",
+      "c": "Break-up fees may still apply per contract.",
+      "d": "Data sharing is restricted under confidentiality."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-018",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "Accretion/dilution analysis in a stock merger compares:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the target's historical book value per share"
+      },
+      {
+        "id": "b",
+        "text": "Pro forma combined EPS to the acquirer's standalone EPS"
+      },
+      {
+        "id": "c",
+        "text": "Combined revenue to the acquirer's headcount"
+      },
+      {
+        "id": "d",
+        "text": "Target EBITDA to acquirer cash balance only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Stock deals are screened for whether the exchange ratio increases or decreases acquirer EPS.",
+    "distractorExplanations": {
+      "a": "Book value alone is not accretion/dilution focus.",
+      "c": "Revenue per employee is unrelated.",
+      "d": "Cash balance does not define EPS accretion."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-019",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "A hostile takeover bid may be launched through:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A friendly board-approved merger agreement only"
+      },
+      {
+        "id": "b",
+        "text": "An informal phone call to one employee"
+      },
+      {
+        "id": "c",
+        "text": "A tender offer directly to shareholders without board approval of the transaction"
+      },
+      {
+        "id": "d",
+        "text": "Voluntary delisting without shareholder vote"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Unsolicited tender offers bypass target management when the board resists negotiation.",
+    "distractorExplanations": {
+      "a": "Friendly mergers require board support.",
+      "b": "Informal calls are not a takeover mechanism.",
+      "d": "Delisting requires corporate action and votes."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-020",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "Management presentations in a sell-side auction are typically delivered to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The general public through open webcast without NDA"
+      },
+      {
+        "id": "b",
+        "text": "Only the target company's rank-and-file employees"
+      },
+      {
+        "id": "c",
+        "text": "Regulators before any buyer is identified"
+      },
+      {
+        "id": "d",
+        "text": "Qualified prospective bidders after signing confidentiality agreements"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "CIM and management meetings follow NDAs to protect sensitive financial and strategic information.",
+    "distractorExplanations": {
+      "a": "Public disclosure precedes regulated marketing in registered offerings, not private auctions.",
+      "b": "Employee-only meetings are not the buyer process.",
+      "c": "Regulator-first presentation is not standard sell-side order."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-021",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "A collar in a stock-for-stock merger protects against:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Exchange ratio fluctuation if the acquirer's or target's share price moves beyond agreed bands"
+      },
+      {
+        "id": "b",
+        "text": "All regulatory risk including HSR clearance automatically"
+      },
+      {
+        "id": "c",
+        "text": "Every post-closing integration cost without limit"
+      },
+      {
+        "id": "d",
+        "text": "Currency translation on foreign subsidiaries only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Collars fix or float the ratio within limits so neither party bears unlimited price movement before close.",
+    "distractorExplanations": {
+      "b": "Regulatory risk is addressed separately.",
+      "c": "Integration costs are not collar mechanics.",
+      "d": "Collars address share price, not FX of subs alone."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-022",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "Representation and warranty insurance in M&A primarily shifts:",
+    "options": [
+      {
+        "id": "a",
+        "text": "All antitrust liability to the target's customers"
+      },
+      {
+        "id": "b",
+        "text": "Breach risk from seller indemnities toward an insurer, often reducing escrow holdbacks"
+      },
+      {
+        "id": "c",
+        "text": "Tax filing obligations to employees"
+      },
+      {
+        "id": "d",
+        "text": "D&O liability for directors to retail shareholders automatically"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "RWI lets buyers pursue claims against insurers for covered reps instead of solely chasing seller escrows.",
+    "distractorExplanations": {
+      "a": "Antitrust remains with parties and regulators.",
+      "c": "Tax obligations stay with the entity and buyers.",
+      "d": "D&O coverage is a separate policy type."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-023",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "A locked-box mechanism sets purchase price based on:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Future EBITDA achieved only after closing without adjustment"
+      },
+      {
+        "id": "b",
+        "text": "Random lottery among shareholders"
+      },
+      {
+        "id": "c",
+        "text": "Equity value at a historical balance sheet date, with cash generated after that date accruing to the buyer (subject to leakage covenants)"
+      },
+      {
+        "id": "d",
+        "text": "Daily stock price averaging after closing indefinitely"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Locked-box fixes price at a reference date; economic benefit from that date belongs to the buyer, and leakage covenants stop the seller from extracting value.",
+    "distractorExplanations": {
+      "a": "Post-close EBITDA earnouts differ from locked-box.",
+      "b": "Price is not set by lottery.",
+      "d": "Post-close averaging is not locked-box mechanics."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-024",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "A go-shop provision in a merger agreement allows the target to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Never contact any other bidder under any circumstance"
+      },
+      {
+        "id": "b",
+        "text": "Immediately break the deal with zero fees always"
+      },
+      {
+        "id": "c",
+        "text": "Sell assets to competitors without board approval freely"
+      },
+      {
+        "id": "d",
+        "text": "Solicit alternative proposals for a limited period after signing the initial agreement"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Go-shops test the market briefly after a signed deal to confirm no superior offer exists.",
+    "distractorExplanations": {
+      "a": "No-shop is the opposite restriction.",
+      "b": "Break fees may still apply.",
+      "c": "Asset sales require governance and covenants."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-025",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "Strategic acquirers differ from financial sponsors in that strategics often pursue:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Operating synergies, portfolio fit, and integration with existing business lines"
+      },
+      {
+        "id": "b",
+        "text": "Only dividend recapitalizations with no operating involvement"
+      },
+      {
+        "id": "c",
+        "text": "Mandatory liquidation of the target within 30 days"
+      },
+      {
+        "id": "d",
+        "text": "Exclusive focus on short-term trading gains without holding assets"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Strategics buy for commercial rationale; sponsors seek financial returns via leverage and eventual exit.",
+    "distractorExplanations": {
+      "b": "Recaps are sponsor tools, not defining strategic motive.",
+      "c": "Liquidation is not a typical strategic goal.",
+      "d": "Sponsors hold for value creation, not day trading."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-026",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "A Hart-Scott-Rodino second request typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eliminates all U.S. filing requirements permanently"
+      },
+      {
+        "id": "b",
+        "text": "Extends antitrust review by requiring substantial additional documents and information"
+      },
+      {
+        "id": "c",
+        "text": "Guarantees immediate clearance within one business day"
+      },
+      {
+        "id": "d",
+        "text": "Applies only to private companies with zero revenue"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Second requests pause the waiting period until agencies complete deeper competitive analysis.",
+    "distractorExplanations": {
+      "a": "HSR obligations remain until terminated or expired.",
+      "c": "Second requests lengthen review, not shorten it.",
+      "d": "Size-of-person thresholds can capture private firms."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-027",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "Virtual data rooms in sell-side M&A control access by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Publishing all files on an unsecured public website"
+      },
+      {
+        "id": "b",
+        "text": "Allowing unlimited download without audit trail"
+      },
+      {
+        "id": "c",
+        "text": "Granting permissioned logins, watermarking documents, and tracking user activity"
+      },
+      {
+        "id": "d",
+        "text": "Sharing passwords company-wide on social media"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "VDRs protect confidentiality and provide diligence evidence through access controls and logging.",
+    "distractorExplanations": {
+      "a": "Public posting violates confidentiality.",
+      "b": "Unlogged downloads increase leak risk.",
+      "d": "Public password sharing breaches process integrity."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-028",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "A dual-track process in restructuring or sale means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Running two unrelated IPOs simultaneously in different countries only"
+      },
+      {
+        "id": "b",
+        "text": "Merging two buyers into one legal entity before bidding"
+      },
+      {
+        "id": "c",
+        "text": "Issuing dual-class stock without shareholder vote"
+      },
+      {
+        "id": "d",
+        "text": "Pursuing an out-of-court sale or restructuring alongside Chapter 11 preparation"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Dual-track preserves optionality between negotiated sale and bankruptcy if a deal is not reached.",
+    "distractorExplanations": {
+      "a": "Dual IPO is not the M&A meaning.",
+      "b": "Buyer merger is not dual-track.",
+      "c": "Dual-class shares are capital structure, not process."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-029",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "A forward triangular merger structure is often used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acquire the target through a subsidiary merger while keeping the parent as the surviving public entity"
+      },
+      {
+        "id": "b",
+        "text": "Liquidate the acquirer and dissolve the target automatically"
+      },
+      {
+        "id": "c",
+        "text": "Avoid all shareholder votes in every jurisdiction without exception"
+      },
+      {
+        "id": "d",
+        "text": "Convert all debt to equity without documentation"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Forward triangles merge target into acquirer sub; parent remains and often avoids direct asset transfer complexity.",
+    "distractorExplanations": {
+      "b": "Liquidation is not the goal.",
+      "c": "Shareholder votes may still be required.",
+      "d": "Debt conversion requires contractual or bankruptcy process."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-mna-030",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "mna",
+    "prompt": "Poison pills and staggered boards primarily affect hostile bids by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guaranteeing any bidder immediate 100% ownership at book value"
+      },
+      {
+        "id": "b",
+        "text": "Diluting or delaying acquirer ability to gain control without board negotiation"
+      },
+      {
+        "id": "c",
+        "text": "Eliminating all fiduciary duties of the target board"
+      },
+      {
+        "id": "d",
+        "text": "Forcing automatic sale to the first bidder regardless of price"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Shareholder rights plans and classified boards raise cost and time for unsolicited control attempts.",
+    "distractorExplanations": {
+      "a": "Pills deter rapid control; they do not grant cheap control.",
+      "c": "Boards retain fiduciary duties.",
+      "d": "Boards can reject inadequate offers."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-016",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "A confidential information memorandum in sell-side M&A is distributed to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Retail investors through a free public website without registration"
+      },
+      {
+        "id": "b",
+        "text": "All employees before any buyer qualification"
+      },
+      {
+        "id": "c",
+        "text": "Media outlets under embargo without buyer status"
+      },
+      {
+        "id": "d",
+        "text": "Potential buyers who have signed confidentiality agreements after initial screening"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "CIMs contain non-public financial and operational detail for qualified bidders only.",
+    "distractorExplanations": {
+      "a": "Public retail distribution would violate securities laws for private M&A.",
+      "b": "Broad employee distribution is not the marketing path.",
+      "c": "Press does not replace qualified buyer process."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-017",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "An accelerated bookbuild for a follow-on equity offering means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Marketing and pricing occur in a compressed window, often overnight, to reduce market risk"
+      },
+      {
+        "id": "b",
+        "text": "The issuer waits six months between order collection and pricing"
+      },
+      {
+        "id": "c",
+        "text": "Only bonds may be sold, never equity"
+      },
+      {
+        "id": "d",
+        "text": "Retail brokers set the final price without underwriter input"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ABBs quickly gather institutional demand and set final price/volume in days or hours.",
+    "distractorExplanations": {
+      "b": "Six-month gaps are not accelerated.",
+      "c": "Bookbuilds apply to equity and sometimes convertibles.",
+      "d": "Underwriters lead pricing in firm/ best-efforts contexts."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-018",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "A 144A-for-life high-yield bond is sold:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only to individuals in registered public offerings on Form S-1"
+      },
+      {
+        "id": "b",
+        "text": "To qualified institutional buyers under Rule 144A without a subsequent SEC registration for resale"
+      },
+      {
+        "id": "c",
+        "text": "Exclusively on municipal tax-exempt platforms"
+      },
+      {
+        "id": "d",
+        "text": "Without any disclosure document to any investor"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "144A-for-life relies on QIB private placement exemptions for both issuance and trading restrictions.",
+    "distractorExplanations": {
+      "a": "Registered public retail offerings use different rules.",
+      "c": "Municipal tax-exempt is a separate market.",
+      "d": "Offering memoranda still provide disclosure."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-019",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "An at-the-market (ATM) equity program lets an issuer:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conduct only a single fixed-price tender to insiders"
+      },
+      {
+        "id": "b",
+        "text": "Borrow unlimited cash from the Fed discount window"
+      },
+      {
+        "id": "c",
+        "text": "Sell shares into the open market at prevailing prices through a sales agent over time"
+      },
+      {
+        "id": "d",
+        "text": "Repurchase all outstanding shares in one day without disclosure"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "ATMs dribble out primary shares opportunistically with lower market impact than block deals.",
+    "distractorExplanations": {
+      "a": "Tenders differ from ATM dribble sales.",
+      "b": "Fed discount window is banking, not equity ATM.",
+      "d": "Large repurchases require authorization and disclosure."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-020",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "In a best-efforts underwriting, the underwriter:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Must purchase all unsold securities from the issuer at the offer price"
+      },
+      {
+        "id": "b",
+        "text": "Guarantees the issuer's stock price after listing"
+      },
+      {
+        "id": "c",
+        "text": "Acts as issuer's legal counsel on tax matters"
+      },
+      {
+        "id": "d",
+        "text": "Uses commercially reasonable efforts to sell securities but does not commit to buy unsold shares"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Best efforts shift unsold risk to the issuer; firm commitment underwriters buy the offering.",
+    "distractorExplanations": {
+      "a": "Buying unsold shares describes firm commitment.",
+      "b": "Price guarantees are not underwriting terms.",
+      "c": "Legal counsel role is separate."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-021",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "IPO lock-up agreements typically restrict:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Company insiders and major shareholders from selling shares for a period after the offering"
+      },
+      {
+        "id": "b",
+        "text": "The underwriter from publishing a prospectus"
+      },
+      {
+        "id": "c",
+        "text": "The SEC from reviewing the registration statement"
+      },
+      {
+        "id": "d",
+        "text": "Retail investors from buying shares in the aftermarket"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Lock-ups reduce post-IPO supply pressure from pre-IPO holders and align with stabilization period.",
+    "distractorExplanations": {
+      "b": "Underwriters must deliver prospectuses.",
+      "c": "SEC review is not restricted by lock-up.",
+      "d": "Retail may trade freely after listing."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-022",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "A dual-tranche bond offering might include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only common stock and warrants with no debt component"
+      },
+      {
+        "id": "b",
+        "text": "Senior secured notes alongside senior unsecured notes with different collateral packages and yields"
+      },
+      {
+        "id": "c",
+        "text": "Municipal general obligation bonds for corporate issuers always"
+      },
+      {
+        "id": "d",
+        "text": "Physical commodities instead of securities"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Issuers split credit risk tiers to broaden investor demand and optimize pricing.",
+    "distractorExplanations": {
+      "a": "Equity-only is not a bond dual-tranche.",
+      "c": "Corporate issuers do not issue munis.",
+      "d": "Commodity tranches are not standard bond structures."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-023",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "Green bond issuers commit to allocate proceeds toward:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unrestricted general corporate purposes with no project linkage"
+      },
+      {
+        "id": "b",
+        "text": "Only executive compensation increases"
+      },
+      {
+        "id": "c",
+        "text": "Eligible environmental projects tracked and often reported to investors"
+      },
+      {
+        "id": "d",
+        "text": "Cryptocurrency mining without disclosure"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Green-labeled bonds tie use of proceeds to climate or environmental projects per framework (e.g., ICMA principles).",
+    "distractorExplanations": {
+      "a": "Unrestricted use contradicts green labeling.",
+      "b": "Executive pay is not green use of proceeds.",
+      "d": "Undisclosed crypto use would violate green bond norms."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-024",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "Rule 10b5-1 trading plans allow insiders to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Trade on material nonpublic information whenever convenient"
+      },
+      {
+        "id": "b",
+        "text": "Avoid all Section 16 reporting obligations"
+      },
+      {
+        "id": "c",
+        "text": "Sell unlimited shares without any plan documentation"
+      },
+      {
+        "id": "d",
+        "text": "Pre-schedule trades under a written plan adopted in good faith when not in possession of MNPI"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Affirmative defense plans set automatic sales/purchases to reduce appearance of trading on MNPI.",
+    "distractorExplanations": {
+      "a": "Trading on MNPI remains illegal.",
+      "b": "Section 16 still applies to reporting insiders.",
+      "c": "Plans require documented parameters."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-025",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "An incurrence covenant in bond indentures typically allows additional debt only if:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pro forma financial tests (e.g., leverage or coverage ratios) are satisfied"
+      },
+      {
+        "id": "b",
+        "text": "The issuer wishes to borrow with no limits or tests"
+      },
+      {
+        "id": "c",
+        "text": "Any competitor approves the new borrowing"
+      },
+      {
+        "id": "d",
+        "text": "Stock price falls below $1 per share automatically"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Incurrence tests gate new debt on credit metrics; maintenance covenants require ongoing compliance.",
+    "distractorExplanations": {
+      "b": "Unlimited borrowing contradicts incurrence covenants.",
+      "c": "Competitors do not approve debt.",
+      "d": "Stock price alone is not standard incurrence test."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-026",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "An equity carve-out IPO involves:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dissolving the parent and merging all subs simultaneously"
+      },
+      {
+        "id": "b",
+        "text": "Selling a minority stake in a subsidiary while the parent retains control"
+      },
+      {
+        "id": "c",
+        "text": "Selling 100% of the parent with no subsidiary retained"
+      },
+      {
+        "id": "d",
+        "text": "Converting all subsidiary debt to perpetual preferred automatically"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Carve-outs monetize a division and establish public currency while parent keeps majority ownership.",
+    "distractorExplanations": {
+      "a": "Parent dissolution is not a carve-out.",
+      "c": "100% parent sale is not minority carve-out.",
+      "d": "Automatic debt conversion is not carve-out definition."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-027",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "A private placement memorandum under Regulation D typically includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A guaranteed return promise without risk disclosure"
+      },
+      {
+        "id": "b",
+        "text": "Only marketing slogans with no financials"
+      },
+      {
+        "id": "c",
+        "text": "Risk factors, use of proceeds, and issuer financial information for accredited or qualified investors"
+      },
+      {
+        "id": "d",
+        "text": "Public advertising to unlimited unqualified investors for Rule 506(b)"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "PPMs disclose material facts for exempt offerings; 506(b) generally prohibits general solicitation.",
+    "distractorExplanations": {
+      "a": "Guaranteed returns misstate securities risk.",
+      "b": "Financial disclosure is required material.",
+      "d": "506(b) restricts general solicitation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-028",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "Liability management exercises (e.g., debt tender offers) often aim to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increase principal owed without holder approval in every case"
+      },
+      {
+        "id": "b",
+        "text": "Convert all debt to equity without consideration"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate SEC reporting for public issuers permanently"
+      },
+      {
+        "id": "d",
+        "text": "Refinance or extend maturities, reduce coupons, or amend covenants with holder consent"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "LM transactions restructure outstanding bonds when issuers seek lower cost or flexibility.",
+    "distractorExplanations": {
+      "a": "Principal increases usually need holder consent.",
+      "b": "Forced equity conversion requires exchange offers.",
+      "c": "Reporting obligations persist for public issuers."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-029",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "Stapled financing offered by a sell-side advisor provides:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pre-arranged debt commitment letters bidders can use to fund the acquisition"
+      },
+      {
+        "id": "b",
+        "text": "Free legal opinions to all employees of the target"
+      },
+      {
+        "id": "c",
+        "text": "Guaranteed antitrust approval from DOJ"
+      },
+      {
+        "id": "d",
+        "text": "Permanent elimination of all financing condition in every bid"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Stapled packages speed auction certainty but may create conflicts managed through disclosure and Chinese walls.",
+    "distractorExplanations": {
+      "b": "Legal opinions to employees are unrelated.",
+      "c": "Antitrust is not stapled.",
+      "d": "Financing conditions may remain in bids."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-products-030",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "products",
+    "prompt": "Reverse inquiry in a bond new-issue process refers to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The issuer refusing all investor calls"
+      },
+      {
+        "id": "b",
+        "text": "An investor initiating interest in a potential offering before the issuer formally launches"
+      },
+      {
+        "id": "c",
+        "text": "Mandatory retail order period on Form S-1 equity only"
+      },
+      {
+        "id": "d",
+        "text": "Rating agency downgrade during roadshow exclusively"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Reverse inquiry helps bankers gauge demand and structure for opportunistic or window offerings.",
+    "distractorExplanations": {
+      "a": "Refusing calls is not reverse inquiry.",
+      "c": "Retail order periods relate to registered equity.",
+      "d": "Downgrades are credit events, not reverse inquiry."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-016",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "FINRA's Series 79 examination qualifies registered persons to participate in:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Retail mutual fund sales without any supervisory principal"
+      },
+      {
+        "id": "b",
+        "text": "Real estate brokerage licensing nationwide"
+      },
+      {
+        "id": "c",
+        "text": "Medical malpractice litigation exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Investment banking representative activities such as M&A, underwriting, and restructuring"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Series 79 is the IB representative exam covering primary and advisory IB functions under FINRA rules.",
+    "distractorExplanations": {
+      "a": "Retail fund sales use other exams (e.g., S6/S7 paths).",
+      "b": "Real estate is state-licensed separately.",
+      "c": "Legal malpractice is outside securities licensing."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-017",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "SEC Regulation S-K Item 402 requires disclosure of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Executive compensation including summary comp tables and related policies"
+      },
+      {
+        "id": "b",
+        "text": "Only the company's water utility bills"
+      },
+      {
+        "id": "c",
+        "text": "Personal social media posts of all interns"
+      },
+      {
+        "id": "d",
+        "text": "Daily trading volume of unrelated ETFs"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Item 402 governs named executive officer pay disclosure in public company filings.",
+    "distractorExplanations": {
+      "b": "Utility bills are immaterial operating detail.",
+      "c": "Intern social media is not Item 402.",
+      "d": "Unrelated ETF volume is not issuer compensation disclosure."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-018",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Section 4(a)(2) of the Securities Act exempts:",
+    "options": [
+      {
+        "id": "a",
+        "text": "All securities sales regardless of investor count without limit since 1933"
+      },
+      {
+        "id": "b",
+        "text": "Transactions not involving a public offering (private placements)"
+      },
+      {
+        "id": "c",
+        "text": "Only municipal bond offerings to foreign governments"
+      },
+      {
+        "id": "d",
+        "text": "Registered Form S-1 initial public offerings"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "4(a)(2) (and Reg D safe harbors) cover non-public offerings to sophisticated or accredited investors.",
+    "distractorExplanations": {
+      "a": "Unlimited public offerings need registration.",
+      "c": "Municipal rules are separate.",
+      "d": "S-1 is a registered public offering."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-019",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "A shelf takedown under Rule 415 often uses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No filing because shelves require zero SEC documents"
+      },
+      {
+        "id": "b",
+        "text": "Only oral statements with no written supplement"
+      },
+      {
+        "id": "c",
+        "text": "A prospectus supplement updating the base shelf registration for the specific issuance"
+      },
+      {
+        "id": "d",
+        "text": "Blue sky registration in one state only with no federal filing"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Effective shelf registrations allow delayed offerings via supplements describing terms of each takedown.",
+    "distractorExplanations": {
+      "a": "Shelves require base registration statements.",
+      "b": "Written prospectus rules apply.",
+      "d": "Federal registration underlies shelf takedowns."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-020",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "FINRA Rule 5130 restricts:",
+    "options": [
+      {
+        "id": "a",
+        "text": "All retail investors from ever buying IPO stock"
+      },
+      {
+        "id": "b",
+        "text": "Issuers from hiring underwriters"
+      },
+      {
+        "id": "c",
+        "text": "The SEC from reviewing registration statements"
+      },
+      {
+        "id": "d",
+        "text": "Sharing in IPO allocations with certain covered persons (e.g., brokers' restricted persons)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "5130 (new issues) limits IPO flipping and allocation to industry insiders and related accounts.",
+    "distractorExplanations": {
+      "a": "Retail may participate in IPOs.",
+      "b": "Issuers routinely hire underwriters.",
+      "c": "SEC review is unaffected by 5130."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-021",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Rule 144 resale holding period for affiliates of reporting issuers is generally:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Six months if the company has been subject to Exchange Act reporting for at least 90 days"
+      },
+      {
+        "id": "b",
+        "text": "One business day for all securities without condition"
+      },
+      {
+        "id": "c",
+        "text": "Ten years for every private placement regardless of status"
+      },
+      {
+        "id": "d",
+        "text": "Zero days with no restrictions for all affiliates always"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Rule 144 provides safe harbor conditions including holding period and volume limits for control stock.",
+    "distractorExplanations": {
+      "b": "One day is insufficient for affiliate safe harbor.",
+      "c": "Ten years is not the standard Rule 144 period.",
+      "d": "Affiliates face conditions, not zero restrictions."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-022",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Regulation Crowdfunding (Reg CF) caps the amount an issuer may raise in a 12-month period at approximately:",
+    "options": [
+      {
+        "id": "a",
+        "text": "$50 billion with no investor limits"
+      },
+      {
+        "id": "b",
+        "text": "$5 million (as amended under current SEC rules)"
+      },
+      {
+        "id": "c",
+        "text": "$1,000 total for all issuers combined nationally"
+      },
+      {
+        "id": "d",
+        "text": "Unlimited if the issuer is private with zero disclosure"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Reg CF permits capital formation from retail investors within offering limits and disclosure requirements.",
+    "distractorExplanations": {
+      "a": "$50B exceeds Reg CF caps.",
+      "c": "$1,000 national cap is incorrect.",
+      "d": "Disclosure is required under Reg CF."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-023",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Exchange Act Rule 10b-5 prohibits:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only physical theft of stock certificates from vaults"
+      },
+      {
+        "id": "b",
+        "text": "Lawful disclosure under Regulation FD exclusively"
+      },
+      {
+        "id": "c",
+        "text": "Fraud in connection with the purchase or sale of securities, including material misstatements and omissions"
+      },
+      {
+        "id": "d",
+        "text": "All trading during regular market hours"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "10b-5 is the principal antifraud rule enforced by SEC and used in insider trading cases.",
+    "distractorExplanations": {
+      "a": "Certificate theft is crime but 10b-5 covers fraud in securities transactions broadly.",
+      "b": "Reg FD lawful disclosure is not prohibited.",
+      "d": "Regular-hours trading is permitted."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-024",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Regulation FD generally requires that when an issuer discloses material nonpublic information to market professionals or holders, it must:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep the information private indefinitely after a selective disclosure"
+      },
+      {
+        "id": "b",
+        "text": "Disclose only to retail customers of a single broker"
+      },
+      {
+        "id": "c",
+        "text": "File Form ADV in place of any public release"
+      },
+      {
+        "id": "d",
+        "text": "Make public disclosure of that information simultaneously or promptly, as applicable"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Reg FD stops selective disclosure of MNPI; public release (e.g., Form 8-K or broad dissemination) must accompany or promptly follow the private communication.",
+    "distractorExplanations": {
+      "a": "Selective disclosure without public release violates Reg FD.",
+      "b": "One broker's retail book is not public disclosure.",
+      "c": "Form ADV is an adviser brochure, not issuer MNPI dissemination."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-025",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Regulation M is designed to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prevent issuers, underwriters, and other distribution participants from manipulating the offered security's market price"
+      },
+      {
+        "id": "b",
+        "text": "Guarantee IPO aftermarket performance for all buyers"
+      },
+      {
+        "id": "c",
+        "text": "Set the federal funds rate during registered offerings"
+      },
+      {
+        "id": "d",
+        "text": "Exempt follow-on offerings from prospectus delivery"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Reg M trading restrictions (Rules 101–105) limit bids, purchases, and shorting around a distribution so the offering is not artificially supported.",
+    "distractorExplanations": {
+      "b": "Aftermarket prices are not guaranteed.",
+      "c": "The federal funds rate is monetary policy, not Reg M.",
+      "d": "Prospectus delivery remains a Securities Act obligation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-026",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Exchange Act Section 12(g) requires registration when an issuer exceeds thresholds such as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Any company with a website regardless of assets or holders"
+      },
+      {
+        "id": "b",
+        "text": "More than $10 million in assets and a class of equity held by 2,000 or more holders (or 500 non-accredited holders)"
+      },
+      {
+        "id": "c",
+        "text": "Only issuers with zero shareholders"
+      },
+      {
+        "id": "d",
+        "text": "Foreign private issuers with no U.S. holders ever without exception"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "12(g) triggers public reporting obligations when private companies grow broad shareholder bases.",
+    "distractorExplanations": {
+      "a": "Websites do not trigger 12(g).",
+      "c": "Zero shareholders would not exceed holder thresholds.",
+      "d": "FPI rules differ but U.S. holder counts can matter."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-027",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Investment Company Act Section 3(c)(1) allows a private fund to avoid registration if:",
+    "options": [
+      {
+        "id": "a",
+        "text": "It markets freely to unlimited retail investors on TV"
+      },
+      {
+        "id": "b",
+        "text": "It holds only real estate for personal use with no investors"
+      },
+      {
+        "id": "c",
+        "text": "It has no more than 100 beneficial owners (or qualifies under other exemptions) and meets investment company definitions tests"
+      },
+      {
+        "id": "d",
+        "text": "It is a nationally chartered commercial bank"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "3(c)(1) funds rely on limited investor count and not making a public offering of interests.",
+    "distractorExplanations": {
+      "a": "Unlimited retail marketing triggers registration.",
+      "b": "Personal use property is not a 3(c)(1) fund.",
+      "d": "Banks are separate regulatory regime."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-028",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Rule 701 exempts employee equity compensation offerings if aggregate sales in 12 months do not exceed the greater of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "$100 total or one share whichever is lower"
+      },
+      {
+        "id": "b",
+        "text": "Unlimited amount with no disclosure ever"
+      },
+      {
+        "id": "c",
+        "text": "Only profits from the CEO's personal trading"
+      },
+      {
+        "id": "d",
+        "text": "$1 million, 15% of total assets, or 15% of outstanding securities measured by class"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Rule 701 lets private companies grant equity to employees without full registration within caps and disclosure rules.",
+    "distractorExplanations": {
+      "a": "$100 cap is far below Rule 701 limits.",
+      "b": "Disclosure requirements apply beyond de minimis.",
+      "c": "CEO personal trades are unrelated."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-029",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Section 11 of the Securities Act generally imposes liability for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Material misstatements or omissions in a registration statement on the issuer and specified offering participants"
+      },
+      {
+        "id": "b",
+        "text": "Only oral roadshow jokes that never appear in a filing"
+      },
+      {
+        "id": "c",
+        "text": "State property-tax assessments on issuer real estate"
+      },
+      {
+        "id": "d",
+        "text": "Failure to pay FINRA continuing-education fees"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Section 11 is a core registered-offering liability statute for the registration statement; due-diligence defenses may be available to non-issuer defendants.",
+    "distractorExplanations": {
+      "b": "Section 11 attaches to the registration statement, not casual unfiled remarks alone.",
+      "c": "Property tax is unrelated to Securities Act §11.",
+      "d": "CE fees are an SRO obligation, not §11."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-79-readiness-check-regulations-030",
+    "examSlug": "series-79-readiness-check",
+    "topicId": "regulations",
+    "prompt": "Exchange Act Section 13(d) requires beneficial ownership reporting on Schedule 13D within:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ten years after any purchase"
+      },
+      {
+        "id": "b",
+        "text": "Five business days after crossing 5% beneficial ownership of a class of equity securities"
+      },
+      {
+        "id": "c",
+        "text": "Only if the issuer requests voluntarily"
+      },
+      {
+        "id": "d",
+        "text": "One hour before market open on any random day"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Schedule 13D discloses activist or large passive positions and acquisition purpose within the SEC deadline.",
+    "distractorExplanations": {
+      "a": "Ten years exceeds statutory deadline.",
+      "c": "Filing is mandatory, not voluntary on request.",
+      "d": "Random timing is not the rule."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
   }
 ]

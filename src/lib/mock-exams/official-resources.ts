@@ -653,6 +653,21 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
     certifier: "National Healthcareer Association (NHA)",
     verifyAtUrl: "https://www.nhanow.com/certification/nha-certifications/certified-clinical-medical-assistant-(ccma)",
   },
+  "nha-cpct-readiness-check": {
+    certifier: "National Healthcareer Association (NHA) — CPCT/A",
+    verifyAtUrl:
+      "https://www.nhanow.com/certification/nha-certifications/certified-patient-care-technician-assistant-(cpct-a)",
+    sources: [
+      {
+        label: "NHA — CPCT/A certification",
+        url: "https://www.nhanow.com/certification/nha-certifications/certified-patient-care-technician-assistant-(cpct-a)",
+      },
+      {
+        label: "NHA 2025 CPCT/A Test Plan",
+        url: "https://info.nhanow.com/hubfs/Products/Certified%20Patient%20Care%20Technician%20(CPCT)/Test%20Plan/2025/NHA%202025%20CPCT%20Test%20Plan.pdf",
+      },
+    ],
+  },
   "ptcb-pharmacy-technician-mock": {
     certifier: "Pharmacy Technician Certification Board (PTCB)",
     verifyAtUrl: "https://ptcb.org/credentials/certification/certified-pharmacy-technician/",

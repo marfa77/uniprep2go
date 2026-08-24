@@ -21,6 +21,7 @@ import {
 import {
   dualBrandFooterHtml,
 } from "./lib/gumroad-dual-brand.mjs";
+import { gumroadDiscoverFields } from "./lib/gumroad-discover.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CATALOG_PATH = join(root, "src/data/gumroad/language-anki-decks.json");
@@ -505,13 +506,22 @@ async function putGumroadDescriptionAsync(productId, description, dryRun, slug =
   const token = resolveGumroadToken();
   if (!token) throw new Error("GUMROAD_ACCESS_TOKEN required to update description");
   const finalDescription = slug ? finalizeLanguageDescription(slug, description) : description;
+  const spec = slug ? SPECS[slug] : null;
   const response = await fetch(`https://api.gumroad.com/v2/products/${productId}`, {
     method: "PUT",
     headers: {
       Authorization: `Bearer ${token}`,
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ description: finalDescription }),
+    body: JSON.stringify({
+      description: finalDescription,
+      ...(slug
+        ? gumroadDiscoverFields({
+            slug,
+            name: spec?.name,
+          })
+        : {}),
+    }),
   });
   const payload = await response.json();
   if (!response.ok || !payload.success) {

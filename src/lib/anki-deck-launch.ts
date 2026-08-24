@@ -149,6 +149,14 @@ const LAUNCH_SAMPLE_IMAGE_SLUGS = new Set([
   "ace-cpt-anki-deck",
   "acsm-cpt-anki-deck",
   "luxembourg-vivre-ensemble-anki-deck",
+  "mortgage-loan-originator-anki-deck",
+  "series-6-anki-deck",
+  "series-65-anki-deck",
+  "cfp-certification-anki-deck",
+  "enrolled-agent-anki-deck",
+  "series-66-anki-deck",
+  "series-79-anki-deck",
+  "series-99-anki-deck",
 ]);
 
 /** Copy must match public/samples/ace-cpt-anki-deck-sample-{1,2,3}.webp (not bank Q1–Q3). */

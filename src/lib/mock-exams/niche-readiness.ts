@@ -11,10 +11,11 @@ export const NICHE_SESSION_QUESTIONS = NICHE_TOPIC_QUESTIONS * 4;
 export function fourNicheTopics(
   topics: Array<{ id: string; label: string }>,
   targetPercent = 70,
+  perTopic = NICHE_TOPIC_QUESTIONS,
 ): MockTopic[] {
   return topics.map((topic) => ({
     ...topic,
-    questionCount: NICHE_TOPIC_QUESTIONS,
+    questionCount: perTopic,
     weightPercent: 25,
     targetPercent,
   }));

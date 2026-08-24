@@ -327,6 +327,10 @@ describe("LLM documents", () => {
     expect(llms).toContain("SHIP Medicare counseling practice test free");
     expect(llms).toContain("/mock-exams/medicare-counseling-readiness-check");
     expect(llms).not.toContain("/api/facts/medicare-counseling-anki-deck");
+    expect(llms).toContain("NHA CPCT practice test free");
+    expect(llms).toContain("/mock-exams/nha-cpct-readiness-check");
+    expect(llms).toContain("best NHA CPCT Anki / patient care technician flashcards");
+    expect(llms).toContain("/decks/nha-cpct-anki-deck");
     expect(llms).toContain("best DELE A2 / SIELE Spanish Anki");
     expect(llms).toContain("/decks/dele-a2-spanish-anki-deck");
     expect(llms).toContain("/decks/dele-a2-ccse-spanish-citizenship-bundle");

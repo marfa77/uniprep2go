@@ -1978,5 +1978,1985 @@
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-ops-016",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "ops",
+    "prompt": "When processing a DTC-eligible equity trade, good delivery generally requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Physical delivery to the customer's home address by courier only"
+      },
+      {
+        "id": "b",
+        "text": "Verbal confirmation without settlement instructions"
+      },
+      {
+        "id": "c",
+        "text": "Delivery of unsigned blank stock certificates"
+      },
+      {
+        "id": "d",
+        "text": "Properly endorsed certificates or book-entry transfer through DTC/participant"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "U.S. equities settle through DTC book-entry for eligible securities; physical certs need proper endorsement.",
+    "distractorExplanations": {
+      "a": "Home delivery is not standard settlement.",
+      "b": "Verbal alone does not satisfy delivery.",
+      "c": "Blank certs are not good delivery."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-ops-017",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "ops",
+    "prompt": "A partial ACATS transfer request moves:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only specified assets the customer designates, leaving other holdings at the delivering firm"
+      },
+      {
+        "id": "b",
+        "text": "The entire account automatically with no customer choice"
+      },
+      {
+        "id": "c",
+        "text": "Only cash with no securities permitted ever"
+      },
+      {
+        "id": "d",
+        "text": "Customer tax returns instead of financial assets"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ACATS supports full or partial transfers per customer instruction and receiving firm acceptance.",
+    "distractorExplanations": {
+      "b": "Full transfer is optional, not mandatory always.",
+      "c": "Securities may transfer in ACATS.",
+      "d": "Tax returns are not ACATS assets."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-ops-018",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "ops",
+    "prompt": "Under T+1 settlement for standard U.S. equities, ownership and payment obligations finalize:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Five business days after trade date (T+5)"
+      },
+      {
+        "id": "b",
+        "text": "One business day after the trade date"
+      },
+      {
+        "id": "c",
+        "text": "On the trade date with no lag"
+      },
+      {
+        "id": "d",
+        "text": "Thirty calendar days after month-end only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Industry moved to T+1 settlement for most U.S. equities to reduce counterparty risk.",
+    "distractorExplanations": {
+      "a": "T+5 was the older standard, not current.",
+      "c": "Same-day is T+0, not standard equities.",
+      "d": "Month-end timing is incorrect."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-ops-019",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "ops",
+    "prompt": "For a voluntary corporate action such as a tender offer, operations must:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Force all customers to participate without consent"
+      },
+      {
+        "id": "b",
+        "text": "Ignore the offer because it is voluntary"
+      },
+      {
+        "id": "c",
+        "text": "Notify customers, collect elections by deadline, and submit instructions to the issuer/agent"
+      },
+      {
+        "id": "d",
+        "text": "Cancel all open orders in unrelated symbols automatically"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Voluntary actions require timely client communication and accurate election processing.",
+    "distractorExplanations": {
+      "a": "Participation requires customer instruction.",
+      "b": "Voluntary actions must be processed.",
+      "d": "Unrelated orders are separate."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-ops-020",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "ops",
+    "prompt": "Employer restricted stock deposited to a brokerage account typically requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Immediate unrestricted sale without any legend review"
+      },
+      {
+        "id": "b",
+        "text": "Conversion to municipal bonds automatically"
+      },
+      {
+        "id": "c",
+        "text": "Deletion of cost basis records"
+      },
+      {
+        "id": "d",
+        "text": "Restriction legend tracking, release schedules, and compliance with Rule 144 where applicable"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Ops tracks control restrictions and release dates before unrestricted trading.",
+    "distractorExplanations": {
+      "a": "Legends block free sale until removed.",
+      "b": "Muni conversion is unrelated.",
+      "c": "Cost basis must be maintained."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-ops-021",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "ops",
+    "prompt": "When a customer requests an outbound wire from a brokerage account, operations should first:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verify authorization, confirm payee details, and apply fraud controls per firm policy"
+      },
+      {
+        "id": "b",
+        "text": "Release funds to any new payee without callback verification"
+      },
+      {
+        "id": "c",
+        "text": "Skip identity checks for wires above firm limits"
+      },
+      {
+        "id": "d",
+        "text": "Post the wire to the error account permanently"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Wire fraud controls include callback to number on file and hold periods for new payees.",
+    "distractorExplanations": {
+      "b": "Unverified payees are a top fraud vector.",
+      "c": "Limits trigger enhanced review.",
+      "d": "Error accounts are temporary."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-ops-022",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "ops",
+    "prompt": "Processing a mandatory cash merger typically requires operations to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave target shares trading indefinitely after close"
+      },
+      {
+        "id": "b",
+        "text": "Remove target shares, credit cash proceeds, and post corporate action entries on payment date"
+      },
+      {
+        "id": "c",
+        "text": "Debit customer accounts for receiving cash"
+      },
+      {
+        "id": "d",
+        "text": "Convert cash proceeds to physical coin shipments"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Mandatory mergers exchange shares for cash and/or acquirer stock per terms on effective date.",
+    "distractorExplanations": {
+      "a": "Target ceases trading post-close.",
+      "c": "Cash proceeds credit customers.",
+      "d": "Physical coin is not settlement method."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-ops-023",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "ops",
+    "prompt": "A fail to deliver in equities settlement may result from:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Customer depositing too much cash in the account"
+      },
+      {
+        "id": "b",
+        "text": "Correct timely delivery of all shares"
+      },
+      {
+        "id": "c",
+        "text": "Short seller lacking locate/borrow or deliverer missing shares at settlement"
+      },
+      {
+        "id": "d",
+        "text": "Using a limit order instead of market order"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fails occur when the delivering broker cannot provide shares owed on settlement date.",
+    "distractorExplanations": {
+      "a": "Excess cash does not cause delivery fails.",
+      "b": "Timely delivery prevents fails.",
+      "d": "Order type alone does not cause fails."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-ops-024",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "ops",
+    "prompt": "Customer check deposits to a brokerage account require operations to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Make funds immediately available for all checks without exception"
+      },
+      {
+        "id": "b",
+        "text": "Forward checks to the SEC for approval"
+      },
+      {
+        "id": "c",
+        "text": "Shred checks upon receipt without posting"
+      },
+      {
+        "id": "d",
+        "text": "Apply hold periods per firm policy and applicable funds-availability rules before releasing funds for trading"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Broker-dealers apply hold schedules and fraud controls on check deposits; bank-like Reg CC schedules may inform policy but the firm’s procedures govern release for trading.",
+    "distractorExplanations": {
+      "a": "Immediate availability for every check is not required.",
+      "b": "SEC does not approve individual checks.",
+      "c": "Checks must be posted to the ledger."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-ops-025",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "ops",
+    "prompt": "A short American-style equity option can be assigned:",
+    "options": [
+      {
+        "id": "a",
+        "text": "On any business day the long holder exercises, including before expiration"
+      },
+      {
+        "id": "b",
+        "text": "Only after the contract has expired worthless"
+      },
+      {
+        "id": "c",
+        "text": "Only when the underlying stock splits 2-for-1"
+      },
+      {
+        "id": "d",
+        "text": "Automatically for every out-of-the-money contract"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "American options may be exercised early; OCC also auto-exercises many ITM contracts at expiration. Ops must process assignments whenever they occur.",
+    "distractorExplanations": {
+      "b": "Worthless expiration is the opposite of assignment.",
+      "c": "Splits may adjust terms but are not the assignment trigger.",
+      "d": "OTM options typically expire unexercised."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-ops-026",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "ops",
+    "prompt": "A change of address of record on a brokerage account should trigger:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Immediate wire transfer to any new address without verification"
+      },
+      {
+        "id": "b",
+        "text": "Verification procedures, possible hold on disbursements, and updated mailings per AML/red flags policy"
+      },
+      {
+        "id": "c",
+        "text": "Closure of the account without customer contact"
+      },
+      {
+        "id": "d",
+        "text": "Deletion of all trade history"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Address changes are common fraud vectors; firms verify identity before releasing assets.",
+    "distractorExplanations": {
+      "a": "Unverified wires increase fraud risk.",
+      "c": "Closure requires cause and process.",
+      "d": "Trade history must be retained."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-ops-027",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "ops",
+    "prompt": "Prime brokerage operations differ from retail back-office work partly because prime clients often need:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only passbook savings with no securities activity"
+      },
+      {
+        "id": "b",
+        "text": "In-person coin counting for every trade"
+      },
+      {
+        "id": "c",
+        "text": "Securities lending, margin financing, consolidated reporting, and capital introduction services"
+      },
+      {
+        "id": "d",
+        "text": "Elimination of all SIPC coverage automatically"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Prime services support hedge funds and institutions with complex financing and reporting.",
+    "distractorExplanations": {
+      "a": "Passbook savings is banking, not prime brokerage.",
+      "b": "Coin counting is not prime ops.",
+      "d": "SIPC rules still apply where eligible."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-ops-028",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "ops",
+    "prompt": "When a customer claims missing dividend payment, operations should first:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Issue a duplicate payment without research"
+      },
+      {
+        "id": "b",
+        "text": "Close the account for complaining"
+      },
+      {
+        "id": "c",
+        "text": "Transfer blame to the customer without review"
+      },
+      {
+        "id": "d",
+        "text": "Verify record date holdings, payment date entries, and entitlements on the account"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Dividend inquiries require reconciliation of positions on record date and cash postings.",
+    "distractorExplanations": {
+      "a": "Duplicate pay without research creates loss.",
+      "b": "Complaints require investigation.",
+      "c": "Research precedes conclusions."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-ops-029",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "ops",
+    "prompt": "Processing an IPO allocation involves operations ensuring:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shares credit on settlement date with correct restricted status and cost basis for allocated customers"
+      },
+      {
+        "id": "b",
+        "text": "Retail customers receive unlimited shares without registration compliance"
+      },
+      {
+        "id": "c",
+        "text": "IPO shares bypass all settlement systems"
+      },
+      {
+        "id": "d",
+        "text": "Cost basis is always zero regardless of offering price"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Allocations must reflect offering price, restrictions, and settlement through standard channels.",
+    "distractorExplanations": {
+      "b": "Allocations follow offering and 5130 rules.",
+      "c": "IPOs settle through normal processes.",
+      "d": "Cost basis reflects offering/allocation price."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-ops-030",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "ops",
+    "prompt": "A global trade support desk covering multiple regions must coordinate:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only U.S. holidays ignoring London or Tokyo closures"
+      },
+      {
+        "id": "b",
+        "text": "Local market settlement cycles, holiday calendars, and currency cut-off times for cross-border trades"
+      },
+      {
+        "id": "c",
+        "text": "Single time zone without FX consideration"
+      },
+      {
+        "id": "d",
+        "text": "Physical certificate delivery for all international book-entry markets"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Cross-border ops aligns settlement dates and FX funding across jurisdictions.",
+    "distractorExplanations": {
+      "a": "Foreign markets have local holidays.",
+      "c": "FX matters for cross-border settlement.",
+      "d": "Many markets are dematerialized."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-regs-016",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "regs",
+    "prompt": "FINRA Rule 4511 requires firms to preserve books and records in:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paper only with no electronic copies permitted ever"
+      },
+      {
+        "id": "b",
+        "text": "Encrypted form that the firm cannot decrypt"
+      },
+      {
+        "id": "c",
+        "text": "Personal employee laptops with no backup"
+      },
+      {
+        "id": "d",
+        "text": "A format that is readily accessible and auditable for required retention periods"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "4511 sets WORM/electronic media standards and retention aligned with SEC rules.",
+    "distractorExplanations": {
+      "a": "Electronic records are permitted with controls.",
+      "b": "Regulators must be able to examine records.",
+      "c": "Personal unbacked laptops violate requirements."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-regs-017",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "regs",
+    "prompt": "FINRA Rule 4370 requires broker-dealers to establish:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Business continuity and contingency plans for critical operations"
+      },
+      {
+        "id": "b",
+        "text": "Only marketing slogans for retail advertising"
+      },
+      {
+        "id": "c",
+        "text": "Personal vacation schedules for all employees"
+      },
+      {
+        "id": "d",
+        "text": "Unlimited proprietary trading without risk limits"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Rule 4370 mandates BCP addressing data backup, alternate sites, and critical function recovery.",
+    "distractorExplanations": {
+      "b": "Marketing is separate compliance.",
+      "c": "Vacation schedules are not Rule 4370.",
+      "d": "Prop trading requires risk controls."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-regs-018",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "regs",
+    "prompt": "The Bank Secrecy Act requires broker-dealers to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignore cash transactions below any threshold without monitoring"
+      },
+      {
+        "id": "b",
+        "text": "Implement AML programs including customer due diligence and suspicious activity monitoring"
+      },
+      {
+        "id": "c",
+        "text": "Report all customer birthdays to FINRA daily"
+      },
+      {
+        "id": "d",
+        "text": "Prohibit all international wires without exception"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "BSA/AML programs include CDD, SAR filings, and currency transaction reporting where applicable.",
+    "distractorExplanations": {
+      "a": "Monitoring is required beyond single thresholds holistically.",
+      "c": "Birthday reporting is not BSA.",
+      "d": "International wires are permitted with controls."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-regs-019",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "regs",
+    "prompt": "Customer Identification Program requirements under the Patriot Act mandate firms to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Open accounts anonymously with no name collected"
+      },
+      {
+        "id": "b",
+        "text": "Rely solely on social media profiles without documents"
+      },
+      {
+        "id": "c",
+        "text": "Verify identity of customers opening accounts using documentary or non-documentary methods"
+      },
+      {
+        "id": "d",
+        "text": "Skip verification for all legal entity accounts"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "CIP collects name, address, DOB/formation date, and ID number with verification procedures.",
+    "distractorExplanations": {
+      "a": "Anonymous accounts violate CIP.",
+      "b": "Social media alone is insufficient.",
+      "d": "Entities require beneficial ownership identification."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-regs-020",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "regs",
+    "prompt": "Regulation Best Interest applies to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Every conversation between friends about sports"
+      },
+      {
+        "id": "b",
+        "text": "Corporate issuers filing 10-K reports only"
+      },
+      {
+        "id": "c",
+        "text": "State insurance department property claims exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Broker-dealer recommendations of securities and accounts to retail customers"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Reg BI governs retail recommendation conduct for BD recommendations and account types.",
+    "distractorExplanations": {
+      "a": "Personal non-business talk is out of scope.",
+      "b": "Issuer filings are separate.",
+      "c": "Insurance claims are not Reg BI."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-regs-021",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "regs",
+    "prompt": "Municipal Securities Rulemaking Board rules apply primarily to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Broker-dealers and municipal advisors engaged in municipal securities activities"
+      },
+      {
+        "id": "b",
+        "text": "Only federal credit unions with no securities business"
+      },
+      {
+        "id": "c",
+        "text": "Retail clothing merchants"
+      },
+      {
+        "id": "d",
+        "text": "Private pilots operating aircraft"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "MSRB regulates municipal market professionals, not all businesses generally.",
+    "distractorExplanations": {
+      "b": "Credit unions without muni business are not MSRB focus.",
+      "c": "Clothing merchants unrelated.",
+      "d": "Aviation unrelated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-regs-022",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "regs",
+    "prompt": "FINRA margin rules for pattern day traders require minimum equity of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "$500 for unlimited day trades"
+      },
+      {
+        "id": "b",
+        "text": "$25,000 in the margin account before day trading is permitted without restriction"
+      },
+      {
+        "id": "c",
+        "text": "$1 million for any cash account"
+      },
+      {
+        "id": "d",
+        "text": "$0 with no equity requirement"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "PDT rules under FINRA margin requirements protect firms and customers from excessive intraday leverage.",
+    "distractorExplanations": {
+      "a": "$500 is far below PDT minimum.",
+      "c": "Cash accounts have different rules.",
+      "d": "Zero equity does not satisfy PDT."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-regs-023",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "regs",
+    "prompt": "FINRA Rule 4530 requires firms to report certain customer complaints when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A customer asks for a duplicate statement politely"
+      },
+      {
+        "id": "b",
+        "text": "Market indices rise more than 1% in a day"
+      },
+      {
+        "id": "c",
+        "text": "Complaints involve allegations of theft, misappropriation, or certain sales practice violations"
+      },
+      {
+        "id": "d",
+        "text": "Operations staff take scheduled vacation"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "4530 defines reportable events including specified complaints and financial losses.",
+    "distractorExplanations": {
+      "a": "Duplicate statements are routine service.",
+      "b": "Index moves are not complaint triggers.",
+      "d": "Vacation is unrelated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-regs-024",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "regs",
+    "prompt": "Payment for order flow disclosure informs customers that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Orders are executed only on the NYSE floor physically always"
+      },
+      {
+        "id": "b",
+        "text": "The customer pays no fees ever on any transaction"
+      },
+      {
+        "id": "c",
+        "text": "The SEC sets the customer's limit price"
+      },
+      {
+        "id": "d",
+        "text": "The firm may receive compensation from market makers for routing orders"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Rule 606/607 and Form CRS disclose PFOF and routing practices to retail customers.",
+    "distractorExplanations": {
+      "a": "Many orders execute electronically off floor.",
+      "b": "Commissions and fees may apply.",
+      "c": "Customers set limit prices, not SEC."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-regs-025",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "regs",
+    "prompt": "SEC Rule 15c2-11 governs:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Publication of quotations for over-the-counter equity securities by broker-dealers"
+      },
+      {
+        "id": "b",
+        "text": "Only municipal bond underwriting syndicate formation"
+      },
+      {
+        "id": "c",
+        "text": "Insurance annuity illustration standards exclusively"
+      },
+      {
+        "id": "d",
+        "text": "Airport security screening procedures"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "15c2-11 requires issuer information for quoting OTC securities to protect investors.",
+    "distractorExplanations": {
+      "b": "Muni syndicates follow MSRB/other rules.",
+      "c": "Annuities are state insurance.",
+      "d": "Airport security unrelated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-regs-026",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "regs",
+    "prompt": "OFAC sanctions compliance requires broker-dealers to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Process wires to sanctioned countries without review"
+      },
+      {
+        "id": "b",
+        "text": "Screen customers and transactions against SDN and blocked persons lists"
+      },
+      {
+        "id": "c",
+        "text": "Ignore government list updates"
+      },
+      {
+        "id": "d",
+        "text": "Share sanctions evasion tips with customers"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "OFAC prohibits dealings with blocked parties; firms must block and report matches.",
+    "distractorExplanations": {
+      "a": "Sanctioned dealings are prohibited.",
+      "c": "Lists must be updated and screened.",
+      "d": "Assisting evasion is illegal."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-regs-027",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "regs",
+    "prompt": "SEC Rule 17a-4 for electronic communications requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deletion of all emails after one hour"
+      },
+      {
+        "id": "b",
+        "text": "Storage on unsecured personal phones only"
+      },
+      {
+        "id": "c",
+        "text": "Non-rewriteable, non-erasable format (or equivalent) for retained broker-dealer records"
+      },
+      {
+        "id": "d",
+        "text": "No retention of any instant messages ever"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "WORM or audit-trail alternatives preserve books and records for examination.",
+    "distractorExplanations": {
+      "a": "One-hour deletion violates retention.",
+      "b": "Personal unsecured storage fails requirements.",
+      "d": "IMs must be retained per policy."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-regs-028",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "regs",
+    "prompt": "FINRA gift and gratuity rules under Rule 3220 limit:",
+    "options": [
+      {
+        "id": "a",
+        "text": "All meals regardless of value without any limit ever"
+      },
+      {
+        "id": "b",
+        "text": "Only gifts from customers with no limits"
+      },
+      {
+        "id": "c",
+        "text": "Salary paid by the broker-dealer to employees"
+      },
+      {
+        "id": "d",
+        "text": "Gifts and entertainment from non-customers that could impair objectivity, with de minimis thresholds"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "3220 restricts non-cash compensation from vendors to associated persons.",
+    "distractorExplanations": {
+      "a": "De minimis thresholds exist.",
+      "b": "Non-customer gifts are the focus.",
+      "c": "Salary is employment compensation, not 3220 gift."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-regs-029",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "regs",
+    "prompt": "Proxy voting for shares held in street name is typically performed by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The broker-dealer or designated agent sending proxy materials and recording customer instructions"
+      },
+      {
+        "id": "b",
+        "text": "The Federal Reserve Board directly"
+      },
+      {
+        "id": "c",
+        "text": "Random selection among account holders daily"
+      },
+      {
+        "id": "d",
+        "text": "The issuer's CEO without shareholder input"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Beneficial owners receive voting instructions via broker; ops processes ballots and omnibus votes.",
+    "distractorExplanations": {
+      "b": "Fed does not vote retail proxies.",
+      "c": "Voting follows shareholder instruction.",
+      "d": "CEO cannot vote customer shares."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-regs-030",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "regs",
+    "prompt": "Personal trading policies for operations employees commonly require:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unlimited day trading in employer stock without disclosure"
+      },
+      {
+        "id": "b",
+        "text": "Pre-clearance of trades, restricted lists, and blackout periods around corporate actions"
+      },
+      {
+        "id": "c",
+        "text": "Sharing MNPI with family for their trading benefit"
+      },
+      {
+        "id": "d",
+        "text": "No restrictions because ops staff are not associated persons"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Ops staff access MNPI; firms restrict personal trading to prevent conflicts and insider trading.",
+    "distractorExplanations": {
+      "a": "Employer stock trading is often restricted.",
+      "c": "Tipping family violates insider rules.",
+      "d": "Many ops staff are associated persons."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-books-016",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "books",
+    "prompt": "When a customer wires cash into a brokerage account, the general ledger typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Credits revenue immediately as earned fee income only"
+      },
+      {
+        "id": "b",
+        "text": "Debits customer payable and credits cash incorrectly reversed"
+      },
+      {
+        "id": "c",
+        "text": "Ignores the deposit until year-end close only"
+      },
+      {
+        "id": "d",
+        "text": "Debits cash/assets and credits the customer's liability (payable) account"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Customer cash is a liability until invested; double-entry reflects firm custody obligation.",
+    "distractorExplanations": {
+      "a": "Wire deposits are not automatic fee revenue.",
+      "b": "Reversed entries misstate balances.",
+      "c": "Deposits post promptly per policy."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-books-017",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "books",
+    "prompt": "Monthly customer statements must reflect:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Positions, balances, transactions, and fees for the statement period accurately"
+      },
+      {
+        "id": "b",
+        "text": "Only the firm logo with no account detail"
+      },
+      {
+        "id": "c",
+        "text": "Projected future trades not yet executed"
+      },
+      {
+        "id": "d",
+        "text": "Other customers' account numbers for comparison"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "FINRA Rule 2231 and firm policy require complete transactional and holdings disclosure.",
+    "distractorExplanations": {
+      "b": "Detail is mandatory.",
+      "c": "Unexecuted projections are not statement facts.",
+      "d": "Other customer data is confidential."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-books-018",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "books",
+    "prompt": "Cost basis on Form 1099-B for covered securities generally reports:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only dividends with no sale information"
+      },
+      {
+        "id": "b",
+        "text": "Proceeds and basis for sales to assist customer tax reporting"
+      },
+      {
+        "id": "c",
+        "text": "Customer Social Security numbers publicly online"
+      },
+      {
+        "id": "d",
+        "text": "Fictional basis set to zero for all sales always"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Brokers report sales proceeds and basis on 1099-B per cost basis reporting rules.",
+    "distractorExplanations": {
+      "a": "1099-B covers sales, not dividends alone.",
+      "c": "SSNs are confidential on tax forms.",
+      "d": "Basis reflects actual acquisition data."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-books-019",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "books",
+    "prompt": "A suspense account in brokerage operations temporarily holds:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Customer long-term investments for retirement planning"
+      },
+      {
+        "id": "b",
+        "text": "Permanent firm profit reserves without reconciliation"
+      },
+      {
+        "id": "c",
+        "text": "Unidentified receipts or items pending proper allocation to customer or firm accounts"
+      },
+      {
+        "id": "d",
+        "text": "Deleted trade records"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Suspense clears when research identifies correct booking; prolonged balances trigger audit flags.",
+    "distractorExplanations": {
+      "a": "Suspense is temporary, not investment.",
+      "b": "Profit reserves use different GL accounts.",
+      "d": "Records cannot be deleted improperly."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-books-020",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "books",
+    "prompt": "Under the SEC Customer Protection Rule (15c3-3), fully paid customer securities must be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Commingled freely with firm inventory without restriction"
+      },
+      {
+        "id": "b",
+        "text": "Sold to cover firm expenses automatically"
+      },
+      {
+        "id": "c",
+        "text": "Sent to the CEO's personal vault"
+      },
+      {
+        "id": "d",
+        "text": "Segregated and protected from firm proprietary use"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "15c3-3 requires possession or control of customer fully paid and excess margin securities.",
+    "distractorExplanations": {
+      "a": "Commingling violates customer protection.",
+      "b": "Firm cannot sell customer fully paid securities.",
+      "c": "Personal storage is prohibited."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-books-021",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "books",
+    "prompt": "End-of-day position reconciliation compares:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Internal ledgers to DTC/depository records and counterparty statements"
+      },
+      {
+        "id": "b",
+        "text": "Only marketing mailers to retail prospects"
+      },
+      {
+        "id": "c",
+        "text": "Employee timesheets to payroll tax forms"
+      },
+      {
+        "id": "d",
+        "text": "Weather forecasts to trading volume"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Position breaks between books and depository must be researched and resolved promptly.",
+    "distractorExplanations": {
+      "b": "Marketing is unrelated.",
+      "c": "Payroll is HR function.",
+      "d": "Weather is not reconciliation input."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-books-022",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "books",
+    "prompt": "An ACATS residual credit balance transfer includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only physical coin collections in safe deposit boxes"
+      },
+      {
+        "id": "b",
+        "text": "Remaining cash after securities transfer settles between firms"
+      },
+      {
+        "id": "c",
+        "text": "Customer personal loans to neighbors"
+      },
+      {
+        "id": "d",
+        "text": "Unrelated IRA rollovers without paperwork"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Residual balances follow asset transfers to complete account closure at delivering firm.",
+    "distractorExplanations": {
+      "a": "Coin collections are not ACATS standard assets.",
+      "c": "Personal loans are not brokerage assets.",
+      "d": "IRA rollovers use separate forms."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-books-023",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "books",
+    "prompt": "The wash sale rule affects:",
+    "options": [
+      {
+        "id": "a",
+        "text": "All long-term capital gains rates exclusively"
+      },
+      {
+        "id": "b",
+        "text": "Municipal bond interest tax exemption"
+      },
+      {
+        "id": "c",
+        "text": "Recognition of tax losses when substantially identical securities are repurchased within 30 days before or after the sale"
+      },
+      {
+        "id": "d",
+        "text": "Corporate payroll withholding schedules"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Wash sales defer losses when replacement purchases occur in the 61-day window.",
+    "distractorExplanations": {
+      "a": "Wash sales concern losses, not LTCG rates directly.",
+      "b": "Muni interest is separate tax rule.",
+      "d": "Payroll unrelated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-books-024",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "books",
+    "prompt": "Escheatment of dormant accounts involves:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Donating customer assets to charity without notice always"
+      },
+      {
+        "id": "b",
+        "text": "Deleting account records immediately with no reporting"
+      },
+      {
+        "id": "c",
+        "text": "Transferring accounts to employees as bonus"
+      },
+      {
+        "id": "d",
+        "text": "Turning unclaimed property over to the state after dormancy periods per unclaimed property laws"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "States claim abandoned property; firms must diligence and remit per escheat statutes.",
+    "distractorExplanations": {
+      "a": "Charitable donation requires legal process.",
+      "b": "Records must be retained.",
+      "c": "Employee transfer is theft."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-books-025",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "books",
+    "prompt": "Using FIFO lot relief on a sale means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The earliest purchased shares are deemed sold first for gain/loss calculation"
+      },
+      {
+        "id": "b",
+        "text": "The highest-cost shares sell first automatically"
+      },
+      {
+        "id": "c",
+        "text": "Random lots are chosen daily without method"
+      },
+      {
+        "id": "d",
+        "text": "Only shares bought yesterday may be sold"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "FIFO is a default method unless customer specifies another acceptable lot relief.",
+    "distractorExplanations": {
+      "b": "Highest cost is HIFO/specific ID, not FIFO.",
+      "c": "Random selection is not standard default.",
+      "d": "FIFO uses earliest lots, not only yesterday."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-books-026",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "books",
+    "prompt": "Journal entry moving cash between two customer accounts requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No documentation if amounts are small"
+      },
+      {
+        "id": "b",
+        "text": "Authorization, matching debit/credit, and compliance review to prevent unauthorized transfers"
+      },
+      {
+        "id": "c",
+        "text": "Only verbal approval from unknown third parties"
+      },
+      {
+        "id": "d",
+        "text": "Posting to firm proprietary account without customer consent"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Inter-account journals need client instruction or lawful authority and audit trail.",
+    "distractorExplanations": {
+      "a": "Size does not eliminate controls.",
+      "c": "Unknown third parties cannot authorize.",
+      "d": "Proprietary use without consent is misappropriation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-books-027",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "books",
+    "prompt": "Fail charges on prime brokerage statements reflect:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Marketing fees for mutual fund prospectuses"
+      },
+      {
+        "id": "b",
+        "text": "Customer birthday club rewards"
+      },
+      {
+        "id": "c",
+        "text": "Costs or interest associated with securities borrow fails or settlement delays"
+      },
+      {
+        "id": "d",
+        "text": "State income tax withholding on wages"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Prime clients may see fail charges tied to financing and securities lending operations.",
+    "distractorExplanations": {
+      "a": "Prospectus fees are separate.",
+      "b": "Birthday clubs unrelated.",
+      "d": "Wage withholding unrelated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-books-028",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "books",
+    "prompt": "Regulatory books and records inspection requires the firm to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Destroy records before examiner arrival"
+      },
+      {
+        "id": "b",
+        "text": "Provide only verbal summaries with no documents"
+      },
+      {
+        "id": "c",
+        "text": "Charge regulators prohibited excessive fees to block access"
+      },
+      {
+        "id": "d",
+        "text": "Produce requested records promptly in accessible form during examinations"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "SEC/FINRA examinations depend on timely production of complete books and records.",
+    "distractorExplanations": {
+      "a": "Destruction is obstruction.",
+      "b": "Written records are required.",
+      "c": "Blocking access violates law."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-books-029",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "books",
+    "prompt": "Customer free credit balance represents:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cash payable to the customer on demand from fully paid activity not yet withdrawn"
+      },
+      {
+        "id": "b",
+        "text": "Margin loan owed by the customer to the firm"
+      },
+      {
+        "id": "c",
+        "text": "Firm's retained earnings for shareholders"
+      },
+      {
+        "id": "d",
+        "text": "Accrued interest on corporate bonds held in inventory"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Free credit balances are liabilities owed to customers, distinct from margin debit balances.",
+    "distractorExplanations": {
+      "b": "Margin debit is customer owes firm.",
+      "c": "Retained earnings are equity.",
+      "d": "Inventory bond interest is firm asset income."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-books-030",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "books",
+    "prompt": "When processing a forward stock split, operations adjusts:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Customer cash balances downward by the split ratio"
+      },
+      {
+        "id": "b",
+        "text": "Share quantity and price history while preserving total market value per account"
+      },
+      {
+        "id": "c",
+        "text": "Securities symbols to unrelated tickers permanently"
+      },
+      {
+        "id": "d",
+        "text": "Cost basis to zero for all affected lots"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Splits multiply shares and divide price; total value unchanged absent fractional handling.",
+    "distractorExplanations": {
+      "a": "Cash is unaffected by standard splits.",
+      "c": "Symbol may add suffix temporarily but not random tickers.",
+      "d": "Basis per share adjusts, not zeroed."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-risk-016",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "risk",
+    "prompt": "Operational risk in a brokerage includes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only market price changes on customer long portfolios"
+      },
+      {
+        "id": "b",
+        "text": "Interest rate moves on Treasuries held by customers only"
+      },
+      {
+        "id": "c",
+        "text": "Inflation affecting grocery prices nationally"
+      },
+      {
+        "id": "d",
+        "text": "Loss from failed processes, people, systems, or external events"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Op risk covers settlement fails, fraud, system outages, and human error—not primary market risk.",
+    "distractorExplanations": {
+      "a": "Customer market risk is separate category.",
+      "b": "Customer Treasury moves are investment risk.",
+      "c": "Grocery inflation is not firm op risk directly."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-risk-017",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "risk",
+    "prompt": "A red flag for potential account takeover fraud is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Password reset followed immediately by large wire to a new external account"
+      },
+      {
+        "id": "b",
+        "text": "Customer logging in from usual home IP occasionally"
+      },
+      {
+        "id": "c",
+        "text": "Receiving scheduled dividend payments"
+      },
+      {
+        "id": "d",
+        "text": "Holding a diversified ETF long term"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Credential changes plus urgent disbursements to new payees trigger enhanced verification.",
+    "distractorExplanations": {
+      "b": "Routine home login is normal.",
+      "c": "Dividends are expected.",
+      "d": "Long-term ETF holding is not fraud signal."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-risk-018",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "risk",
+    "prompt": "Supervisor review of operations exception reports should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignore repeats if the dollar amount is below an arbitrary round number once"
+      },
+      {
+        "id": "b",
+        "text": "Investigate root cause, assign remediation, and escalate patterns per policy"
+      },
+      {
+        "id": "c",
+        "text": "Delete the report after reading"
+      },
+      {
+        "id": "d",
+        "text": "Approve all exceptions without documentation"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Exception management closes control gaps and documents supervisory oversight.",
+    "distractorExplanations": {
+      "a": "Repeat exceptions need escalation.",
+      "c": "Deletion destroys audit trail.",
+      "d": "Undocumented approval fails supervision."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-risk-019",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "risk",
+    "prompt": "Business continuity plans for operations centers must address:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only marketing brochure redesign"
+      },
+      {
+        "id": "b",
+        "text": "Eliminating all customer communication during outages"
+      },
+      {
+        "id": "c",
+        "text": "Backup sites, data replication, and staffing for critical functions during disruptions"
+      },
+      {
+        "id": "d",
+        "text": "Single point of failure with no backups"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "BCP ensures trade processing and customer service continue after disasters or system failures.",
+    "distractorExplanations": {
+      "a": "Marketing is not core BCP.",
+      "b": "Customer communication increases during crises.",
+      "d": "No backups violate BCP purpose."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-risk-020",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "risk",
+    "prompt": "Liquidity risk in brokerage clearing operations arises when:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Customer portfolios appreciate in a bull market"
+      },
+      {
+        "id": "b",
+        "text": "Employees take approved vacation days"
+      },
+      {
+        "id": "c",
+        "text": "Statements mail on schedule to all accounts"
+      },
+      {
+        "id": "d",
+        "text": "The firm cannot meet cash or securities settlement obligations on due dates"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Clearing liquidity risk is failure to fund settlements—not customer investment performance.",
+    "distractorExplanations": {
+      "a": "Appreciation reduces liquidity stress.",
+      "b": "Vacation is operational staffing.",
+      "c": "Statement mailing unrelated."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-risk-021",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "risk",
+    "prompt": "Market risk for firm proprietary inventory (not customer accounts) affects:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Firm P&L when securities held for trading change in value"
+      },
+      {
+        "id": "b",
+        "text": "Customer segregated fully paid holdings owned by customers"
+      },
+      {
+        "id": "c",
+        "text": "Employee payroll direct deposits only"
+      },
+      {
+        "id": "d",
+        "text": "Office lease utility bills exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Prop positions expose the firm to price moves; customer segregated assets are separate.",
+    "distractorExplanations": {
+      "b": "Customer assets belong to customers.",
+      "c": "Payroll is operational expense.",
+      "d": "Utilities are expense, not market risk."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-risk-022",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "risk",
+    "prompt": "Conflicting KYC information (e.g., address mismatch across documents) should prompt:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Immediate large wire release without verification"
+      },
+      {
+        "id": "b",
+        "text": "Enhanced due diligence and hold on disbursements until resolved"
+      },
+      {
+        "id": "c",
+        "text": "Account opening for additional anonymous sub-accounts"
+      },
+      {
+        "id": "d",
+        "text": "Deletion of the discrepancy from records"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "AML programs require resolving identity conflicts before moving funds.",
+    "distractorExplanations": {
+      "a": "Unverified wires increase fraud/AML risk.",
+      "c": "Anonymous sub-accounts violate CIP.",
+      "d": "Hiding discrepancies is misconduct."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-risk-023",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "risk",
+    "prompt": "Error accounts are intended for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Permanent storage of customer retirement assets"
+      },
+      {
+        "id": "b",
+        "text": "Hiding losses from regulators indefinitely"
+      },
+      {
+        "id": "c",
+        "text": "Temporary posting of trade breaks or processing errors pending correction"
+      },
+      {
+        "id": "d",
+        "text": "Paying employee bonuses without tax reporting"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Error accounts must clear quickly with supervisory review—not mask customer assets.",
+    "distractorExplanations": {
+      "a": "Customer retirement assets belong in customer accounts.",
+      "b": "Hiding losses is fraud.",
+      "d": "Bonuses require payroll process."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-risk-024",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "risk",
+    "prompt": "Settlement risk (Herstatt risk) is mitigated by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Extending settlement to T+20 always"
+      },
+      {
+        "id": "b",
+        "text": "Eliminating all confirmation processes"
+      },
+      {
+        "id": "c",
+        "text": "Trading only via unverified email without records"
+      },
+      {
+        "id": "d",
+        "text": "Shorter settlement cycles, central clearing, and payment-versus-payment where available"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "T+1 and CCP models reduce counterparty exposure between trade and settlement.",
+    "distractorExplanations": {
+      "a": "Longer settlement increases risk.",
+      "b": "Confirmations reduce errors.",
+      "c": "Unverified email trading is unsafe."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-risk-025",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "risk",
+    "prompt": "Cybersecurity incident response in operations should include:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Isolating affected systems, preserving logs, and notifying security leadership per playbook"
+      },
+      {
+        "id": "b",
+        "text": "Publishing customer passwords online to confirm breach scope"
+      },
+      {
+        "id": "c",
+        "text": "Deleting all audit trails before investigation"
+      },
+      {
+        "id": "d",
+        "text": "Continuing wire processing through compromised systems"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Incident response contains damage and supports forensic review and regulatory reporting.",
+    "distractorExplanations": {
+      "b": "Password publication worsens breach.",
+      "c": "Log preservation is essential.",
+      "d": "Compromised systems should be isolated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-risk-026",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "risk",
+    "prompt": "Trending customer complaint analysis helps operations leadership:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignore recurring themes if each ticket looks unique superficially"
+      },
+      {
+        "id": "b",
+        "text": "Identify systemic process failures and prioritize control improvements"
+      },
+      {
+        "id": "c",
+        "text": "Reduce staffing whenever complaints rise"
+      },
+      {
+        "id": "d",
+        "text": "Delete complaint records after one day"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Pattern detection on complaints surfaces training, system, or policy gaps.",
+    "distractorExplanations": {
+      "a": "Recurring themes matter.",
+      "c": "Staff cuts may worsen service.",
+      "d": "Complaint retention is regulatory."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-risk-027",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "risk",
+    "prompt": "An ops routing error leaving a customer limit order unfilled may create:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Automatic profit for the firm with no liability"
+      },
+      {
+        "id": "b",
+        "text": "Exemption from all best execution obligations"
+      },
+      {
+        "id": "c",
+        "text": "Financial exposure, customer harm, and regulatory conduct issues requiring prompt correction"
+      },
+      {
+        "id": "d",
+        "text": "No need to notify the customer ever"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Mishandled orders can breach duty of care; firms must fix and compensate where appropriate.",
+    "distractorExplanations": {
+      "a": "Errors can create liability.",
+      "b": "Best execution still applies.",
+      "d": "Customers must be notified of errors."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-risk-028",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "risk",
+    "prompt": "A key risk indicator for operations might track:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Number of coffee cups in the break room"
+      },
+      {
+        "id": "b",
+        "text": "CEO's favorite color"
+      },
+      {
+        "id": "c",
+        "text": "Historical weather averages"
+      },
+      {
+        "id": "d",
+        "text": "Rate of trade breaks, fail rates, or aged unreconciled items"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "KRIs quantify control effectiveness; rising breaks signal escalating op risk.",
+    "distractorExplanations": {
+      "a": "Coffee cups are not KRIs.",
+      "b": "Personal preferences irrelevant.",
+      "c": "Weather averages unrelated."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-risk-029",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "risk",
+    "prompt": "Third-party vendor risk for a cloud back-office provider requires:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Due diligence, contract SLAs, SOC reports, and exit/contingency planning"
+      },
+      {
+        "id": "b",
+        "text": "Blind trust with no periodic review"
+      },
+      {
+        "id": "c",
+        "text": "Sharing admin credentials publicly"
+      },
+      {
+        "id": "d",
+        "text": "No backup if vendor fails"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Outsourcing critical ops functions extends firm's responsibility for vendor oversight.",
+    "distractorExplanations": {
+      "b": "Periodic review is required.",
+      "c": "Credential sharing is prohibited.",
+      "d": "Contingency plans are essential."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "series-99-readiness-check-risk-030",
+    "examSlug": "series-99-readiness-check",
+    "topicId": "risk",
+    "prompt": "After filing a Suspicious Activity Report, associated persons must:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Notify the customer immediately that they are under investigation"
+      },
+      {
+        "id": "b",
+        "text": "Not tip off the subject that a SAR was filed, per BSA confidentiality rules"
+      },
+      {
+        "id": "c",
+        "text": "Post SAR details on the firm website"
+      },
+      {
+        "id": "d",
+        "text": "Discuss the SAR openly on social media"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "SAR confidentiality prohibits notifying subjects; tipping off may be a crime.",
+    "distractorExplanations": {
+      "a": "Tipping off violates BSA.",
+      "c": "Public SAR disclosure is prohibited.",
+      "d": "Social media disclosure is illegal."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
   }
 ]

@@ -130,11 +130,11 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
     administeredBy:
       "North American Securities Administrators Association (NASAA); computer-based delivery via FINRA/Prometric. Confirm current outlines on nasaa.org — UniPrep2Go is independent practice.",
     officialFormat:
-      "Official Series 65: 130 scored questions + 10 pretest / 180 minutes / 92 correct to pass (verify live NASAA bulletin). UniPrep2Go free mock: 60 questions, 75 minutes, topic scoring — diagnostic only.",
+      "Official Series 65: 130 scored questions + 10 pretest / 180 minutes / 92 correct to pass (verify live NASAA bulletin). UniPrep2Go free mock: 120 questions, 120 minutes, topic scoring — diagnostic only.",
     whoFor:
       "RIA / IAR candidates preparing Series 65; career switchers from Series 7 who need adviser-law depth; and learners pairing the free mock with Anki for daily domain repair.",
     howToPrepare:
-      "1) Map NASAA topic weights and drill ethics/laws early. 2) Practice suitability and fiduciary framing — not just product definitions. 3) Take this free 60-question timed check. 4) Repair weak domains with Anki daily. 5) Move to full-length Q-banks only after your readiness report stabilizes.",
+      "1) Map NASAA topic weights and drill ethics/laws early. 2) Practice suitability and fiduciary framing — not just product definitions. 3) Take this free 120-question timed check. 4) Repair weak domains with Anki daily. 5) Move to full-length Q-banks only after your readiness report stabilizes.",
     topicBlurbs: [
       {
         id: "economics",
@@ -367,16 +367,53 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "nha-cpct-readiness-check": explainer({
     practiceTestName: "NHA CPCT Practice Test",
     whatIsExam:
-      "The NHA Certified Patient Care Technician / Assistant (CPCT/A) exam covers bedside care, vital signs, ECG basics, and phlebotomy-related skills for multi-skilled patient care roles in hospitals and clinics.",
+      "The NHA Certified Patient Care Technician/Assistant (CPCT/A) exam certifies multi-skilled bedside technicians who assist with ADLs, vitals, safety, infection control, phlebotomy, and EKG under nursing direction. Official 2025 test plan: 100 scored + 20 pretest items in 2 hours; NHA handbook scaled pass is 390 on a 200–500 scale. This UniPrep2Go page is a free 120-question / 120-minute text diagnostic — all items scored here, not a skills lab, and not NHA material. CPCT/A is not CCMA, not NHA CPT phlebotomy, and not ASPT. Pair it with the $11 / 120-card Anki .apkg.",
     administeredBy: "National Healthcareer Association (NHA)",
+    officialFormat:
+      "Official CPCT/A (2025 test plan): 100 scored + 20 pretest / 2 hours / five domains (Patient Care 43, Compliance/Safety/Professional 19, Infection Control 16, Phlebotomy 12, EKG 10). NHA handbook scaled pass 390 (200–500). This UniPrep2Go check: 120 timed questions, 120 minutes, four topic buckets, text only. NHA lists a separate plan for sittings after January 2027 — verify at nhanow.com.",
+    whoFor:
+      "PCT students and working aides who need a free timed baseline before NHA/PSI or remote proctoring — not candidates looking for CCMA, NHA CPT phlebotomy, CNA-only, or ASPT exams. Always verify eligibility and the current test plan before you register.",
+    howToPrepare:
+      "Download the current NHA CPCT/A test plan, drill Patient Care first (43% of scored items), then sit this free 120-question / 120-minute check. Use the topic report to queue weak ADLs, infection, or phlebotomy/EKG rows. Keep NHA’s paid official practice test and any skills-lab practice separate. Repair misses with the 120-card Anki .apkg.",
     examFaqs: [
       {
         question: "What is the NHA CPCT certification?",
         answer:
-          "CPCT/A certifies patient care technicians who combine nursing-assistant-style care with selected technical skills such as ECG and phlebotomy support.",
+          "CPCT/A certifies patient care technicians who combine nursing-assistant-style bedside care with selected technical skills such as EKG and phlebotomy. Official 2025 form is 100 scored + 20 pretest items in 2 hours. This page is independent UniPrep2Go prep — not NHA material.",
+      },
+      {
+        question: "How many questions are on the official CPCT/A exam?",
+        answer:
+          "The 2025 NHA test plan lists 100 scored items plus 20 pretest items (120 total) in 2 hours. NHA marketing pages often say “100-question exam.” Confirm the PDF that matches your sitting — NHA also lists a plan for exams after January 2027.",
+      },
+      {
+        question: "Is CPCT/A the same as CCMA or NHA CPT phlebotomy?",
+        answer:
+          "No. CCMA is clinical medical assisting. NHA CPT is the phlebotomy technician exam. ASPT is a different phlebotomy certifier. Use this page only if you are sitting CPCT/A.",
+      },
+      {
+        question: "Is this an official NHA CPCT exam?",
+        answer:
+          "No. UniPrep2Go provides an independent 120-question / 120-minute timed diagnostic with topic scoring — not official NHA items. Official forms include 20 unscored pretest items and a skills lab.",
+      },
+      {
+        question: "Is there a free NHA CPCT practice test?",
+        answer:
+          "Yes — take the free UniPrep2Go timed readiness check on this page now. After your report, drill weak topics with the 120-card Anki deck. NHA also sells an official practice test on nhanow.com.",
+      },
+      {
+        question: "What score do you need to pass CPCT/A?",
+        answer:
+          "NHA’s candidate handbook uses a 200–500 scaled score and requires 390 or higher for exams covered in that handbook. Verify current score-report rules at nhanow.com.",
       },
     ],
-    keywords: ["nha cpct practice test", "patient care technician practice test"],
+    keywords: [
+      "nha cpct practice test",
+      "patient care technician practice test",
+      "free nha cpct practice test",
+      "cpct/a practice exam",
+      "nha patient care technician practice test",
+    ],
   }),
   "nha-excpt-readiness-check": explainer({
     practiceTestName: "NHA ExCPT Practice Test",
@@ -1103,7 +1140,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
     whoFor:
       "Dietetic interns and candidates who have finished (or are finishing) ACEND-accredited education and supervised practice and need a timed domain diagnostic before scheduling the official CDR exam.",
     howToPrepare:
-      "Drill all four CDR domains — do not skip foodservice or management. Take this free 60-question UniPrep2Go readiness check for a topic report, then repair weak areas with the linked RD Anki deck while you keep official handbook timing practice separate.",
+      "Drill all four CDR domains — do not skip foodservice or management. Take this free 120-question UniPrep2Go readiness check for a topic report, then repair weak areas with the linked RD Anki deck while you keep official handbook timing practice separate.",
     topicBlurbs: [
       { id: "principles", label: "Principles of dietetics", blurb: "Food/nutrition sciences, education/communication, and research applications (~21%)." },
       { id: "nutrition-care", label: "Nutrition care", blurb: "Screening, PES diagnosis, intervention, and monitoring/evaluation for individuals and groups (~45%)." },
@@ -1124,7 +1161,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "Is this UniPrep2Go check the official CDR exam?",
         answer:
-          "No. It is an independent 60-question readiness diagnostic mapped to CDR domain themes — not CDR or Pearson VUE material.",
+          "No. It is an independent 120-question readiness diagnostic mapped to CDR domain themes — not CDR or Pearson VUE material.",
       },
     ],
     keywords: ["rd exam practice test", "rdn practice exam", "dietitian registration exam practice", "cdr rd practice test"],

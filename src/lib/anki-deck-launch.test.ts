@@ -54,7 +54,7 @@ describe("anki-deck-launch", () => {
     const money = getCatalogDeckBySlug("series-65-anki-deck");
     expect(money?.status).toBe("available");
     expect(money?.checkoutUrl).toContain("gumroad.com/l/series-65-anki-deck");
-    expect(money?.facts.cards).toBe("60");
+    expect(money?.facts.cards).toBe("120");
     expect(money?.sampleCards.length).toBeGreaterThanOrEqual(3);
     expect(money?.sampleCards[0]?.question.length).toBeGreaterThan(20);
 
@@ -80,7 +80,7 @@ describe("anki-deck-launch", () => {
     expect(isLaunchableAnkiDeckSlug("luxembourg-vivre-ensemble-anki-deck")).toBe(true);
     const lux = getCatalogDeckBySlug("luxembourg-vivre-ensemble-anki-deck");
     expect(lux?.status).toBe("available");
-    expect(lux?.facts.cards).toBe("60");
+    expect(lux?.facts.cards).toBe("120");
     expect(lux?.checkoutUrl).toContain("gumroad.com/l/luxembourg-vivre-ensemble-anki-deck");
     expect(lux?.lastUpdated).toBe("2026-08-14");
     expect(lux?.sampleCards).toHaveLength(3);
@@ -104,7 +104,7 @@ describe("anki-deck-launch", () => {
   });
 
   it("estimates wave deck card counts from mock bank size", () => {
-    expect(estimateAnkiDeckCardCount("series-65-anki-deck")).toBe(60);
+    expect(estimateAnkiDeckCardCount("series-65-anki-deck")).toBe(120);
   });
 
   it("routes duplicate L&H mock to the buyable exam deck", () => {

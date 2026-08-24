@@ -188,6 +188,16 @@ describe("exam facts layer", () => {
     expect(profile!.candidate_qa.some((item) => /not official ACE/i.test(item.a))).toBe(true);
   });
 
+  it("returns an NHA CPCT/A profile with 2025 test-plan counts", () => {
+    const profile = getExamFactsProfileForDeck("nha-cpct-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.question_count).toContain("100 scored");
+    expect(profile!.exam_facts.time_limit).toMatch(/2 hours/);
+    expect(profile!.exam_facts.passing_score).toMatch(/390/);
+    expect(profile!.domain_weights).toHaveLength(5);
+    expect(profile!.candidate_qa.some((item) => /CCMA/i.test(item.a) && /phlebotomy/i.test(item.a))).toBe(true);
+  });
+
   it("returns a Luxembourg Vivre ensemble profile with 40Q exam pathway", () => {
     const profile = getExamFactsProfileForDeck("luxembourg-vivre-ensemble-anki-deck");
     expect(profile).not.toBeNull();

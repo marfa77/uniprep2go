@@ -278,9 +278,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "New York real estate practice test",
   },
   "series-65-readiness-check": {
-    title: "Free Series 65 Practice Test | 60-Question Diagnostic",
+    title: "Free Series 65 Practice Test | 120-Question Diagnostic",
     description:
-      "Free Series 65 practice test: 60 timed questions, 75 minutes, topic scoring for NASAA IAR themes. Official Series 65 is 130 scored (+10 pretest) / 180 min / 92 correct — this mock is shorter. Independent — not NASAA/FINRA material.",
+      "Free Series 65 practice test: 120 timed questions, 120 minutes, topic scoring for NASAA IAR themes. Official Series 65 is 130 scored (+10 pretest) / 180 min / 92 correct — this mock is shorter. Independent — not NASAA/FINRA material.",
     keywords: [
       "series 65 practice test",
       "series 65 practice exam",
@@ -290,7 +290,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free Series 65 Practice Test",
     intro:
-      "A NASAA Series 65 diagnostic across economics/analysis, investment products, client recommendations, and laws & ethics. Official exam requires 92 of 130 scored questions in 180 minutes; use this free 60-question timed mock to prioritize Anki repair before Prometric.",
+      "A NASAA Series 65 diagnostic across economics/analysis, investment products, client recommendations, and laws & ethics. Official exam requires 92 of 130 scored questions in 180 minutes; use this free 120-question timed mock to prioritize Anki repair before Prometric.",
     audience:
       "Investment adviser representative candidates preparing for the NASAA Series 65 who want a free timed baseline before a full-length Q-bank.",
     practiceTestLabel: "Series 65 practice test",
@@ -475,6 +475,24 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     audience:
       "BMS engineers, controls technicians, facility automation staff, and integrator apprentices preparing for BAS roles or vendor certification training.",
     practiceTestLabel: "BMS practice test",
+  },
+  "nha-cpct-readiness-check": {
+    title: "Free NHA CPCT/A Practice Test | 120-Question PCT Mock",
+    description:
+      "Free NHA CPCT/A practice test: 120 timed questions, 120 minutes, topic scoring and answer review. Official exam is 100 scored + 20 pretest / 2 hours / scaled 390. Independent prep — not NHA material. Not CCMA, not NHA CPT phlebotomy.",
+    keywords: [
+      "free nha cpct practice test",
+      "nha cpct practice test",
+      "patient care technician practice test",
+      "cpct/a practice exam",
+      "nha pct mock exam",
+    ],
+    headline: "Free NHA CPCT/A Patient Care Technician Readiness Check",
+    intro:
+      "A timed 120-question / 120-minute text diagnostic for NHA CPCT/A. Official 2025 test plan is 100 scored + 20 pretest items in 2 hours (scaled pass 390). Four topic buckets here — all items scored; official forms include 20 pretest items and a skills lab. CPCT/A is not CCMA, not NHA CPT phlebotomy, and not ASPT.",
+    audience:
+      "Patient care technician students and working aides preparing for NHA CPCT/A at a school site, PSI, or live remote proctoring — not CCMA or phlebotomy-only candidates.",
+    practiceTestLabel: "NHA CPCT practice test",
   },
   "leed-green-associate-readiness-check": {
     title: "Free LEED Green Associate Practice Test | 50-Question Readiness Check",
@@ -972,7 +990,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "luxembourg-vivre-ensemble-readiness-check": {
     title: "Free Luxembourg Vivre ensemble Practice Test | 60 Questions",
     description:
-      "Free Luxembourg Vivre ensemble practice: 60 timed questions. Official SFA exam is 40Q/60min/70% (or course path); Sproochentest is separate. Live 60-card Anki on Gumroad. Independent prep.",
+      "Free Luxembourg Vivre ensemble practice: 60 timed questions. Official SFA exam is 40Q/60min/70% (or course path); Sproochentest is separate. Live 120-card Anki on Gumroad. Independent prep.",
     keywords: ["Vivre ensemble Luxembourg", "Luxembourg citizenship test", "nationalité luxembourgeoise"],
     headline: "Free Luxembourg Vivre ensemble Readiness Check",
     intro:

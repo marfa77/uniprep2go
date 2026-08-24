@@ -45,6 +45,9 @@ describe("getMockOfficialResources", () => {
 
     const ship = getMockOfficialResources(getMockExamConfig("medicare-counseling-readiness-check")!);
     expect(ship.verifyAtUrl).toContain("shiptacenter.org");
+
+    const cpct = getMockOfficialResources(getMockExamConfig("nha-cpct-readiness-check")!);
+    expect(cpct.verifyAtUrl).toContain("certified-patient-care-technician-assistant");
   });
 
   it("gives every mock a certifier name and https verify URL when known", () => {

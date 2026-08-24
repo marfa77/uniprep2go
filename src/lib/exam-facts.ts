@@ -2525,7 +2525,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go's ACSM readiness check the real ACSM exam?",
-        a: "No. The free 60-question readiness check and 60-card Anki deck are independent study aids mapped to ACSM-CPT themes — not official ACSM exams or curriculum.",
+        a: "No. The free 120-question readiness check and 120-card Anki deck are independent study aids mapped to ACSM-CPT themes — not official ACSM exams or curriculum.",
       },
     ],
     trademark_note:
@@ -2591,7 +2591,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s RD readiness check the official CDR exam?",
-        a: "No. The free 60-question check and 60-card Anki deck are independent study aids mapped to CDR domain themes — not official CDR exams or Pearson VUE items.",
+        a: "No. The free 120-question check and 120-card Anki deck are independent study aids mapped to CDR domain themes — not official CDR exams or Pearson VUE items.",
       },
     ],
     trademark_note:
@@ -2652,11 +2652,84 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s Luxembourg readiness check the official exam?",
-        a: "No. The free 60-question check and 60-card Anki deck are independent French-language study aids on overlapping themes — not Guichet.lu / SFA exams.",
+        a: "No. The free 60-question check and 120-card Anki deck are independent French-language study aids on overlapping themes — not Guichet.lu / SFA exams.",
       },
     ],
     trademark_note:
       "Guichet.lu, SFA, and Luxembourg government marks belong to Luxembourg authorities. UniPrep2Go is not affiliated with or endorsed by the Luxembourg government.",
+  },
+  "nha-cpct": {
+    examKey: "nha-cpct",
+    pageHeading: "NHA CPCT/A Exam — Facts, Domains & Prep",
+    intro:
+      "The NHA Certified Patient Care Technician/Assistant (CPCT/A) exam certifies multi-skilled bedside techs (ADLs, safety, infection control, phlebotomy, EKG). This page summarizes the 2025 NHA test plan; UniPrep2Go products are independent prep (not NHA exam material). CPCT/A is not NHA CCMA, not NHA CPT phlebotomy, and not ASPT.",
+    exam_facts: {
+      exam_name: "NHA Certified Patient Care Technician/Assistant (CPCT/A) Examination",
+      administered_by: "National Healthcareer Association (NHA)",
+      question_count: "120 items (100 scored + 20 pretest)",
+      scored_count: "100",
+      time_limit: "2 hours",
+      scoring_scale: "Scaled score 200–500 (NHA candidate handbook)",
+      passing_score: "Scaled 390 or higher (NHA handbook for exams covered in that handbook — verify at nhanow.com)",
+      delivery:
+        "School/program site, PSI test center, or NHA live remote proctoring (verify current options when you schedule)",
+      outline_effective_date: "2025 CPCT/A test plan (job analysis 2025). NHA also lists a plan for exams after January 2027 — verify the plan that matches your sitting.",
+      verify_at_url:
+        "https://www.nhanow.com/certification/nha-certifications/certified-patient-care-technician-assistant-(cpct-a)",
+    },
+    official_sources: [
+      {
+        label: "NHA — CPCT/A certification",
+        url: "https://www.nhanow.com/certification/nha-certifications/certified-patient-care-technician-assistant-(cpct-a)",
+      },
+      {
+        label: "NHA 2025 CPCT/A Test Plan (100 scored / 20 pretest / 2 hours)",
+        url: "https://info.nhanow.com/hubfs/Products/Certified%20Patient%20Care%20Technician%20(CPCT)/Test%20Plan/2025/NHA%202025%20CPCT%20Test%20Plan.pdf",
+      },
+      {
+        label: "NHA Candidate Handbook (scaled 200–500, pass 390)",
+        url: "https://www.nhanow.com/docs/default-source/test-plans/candidate_handbook.pdf",
+      },
+    ],
+    domain_weights: [
+      { domain: "Patient Care", weight: "43 scored items (43%)" },
+      { domain: "Compliance, Safety, and Professional Responsibility", weight: "19 scored items (19%)" },
+      { domain: "Infection Control", weight: "16 scored items (16%)" },
+      { domain: "Phlebotomy and Nonblood Specimen Collection", weight: "12 scored items (12%)" },
+      { domain: "EKG", weight: "10 scored items (10%)" },
+    ],
+    whats_changed: [
+      "The 2025 test plan (job analysis 2025) lists 100 scored + 20 pretest items in 2 hours — NHA marketing copy often says “100-question exam.”",
+      "NHA prep pages list a separate CPCT/A plan for sittings after January 2027 — confirm which PDF matches your appointment.",
+      "Older third-party blogs still quote pre-2025 domain cuts (e.g. Patient Care 45 / Infection 11). Use the 2025 outline: 43 / 19 / 16 / 12 / 10.",
+    ],
+    high_yield_facts: [
+      "Official form is 120 items in 2 hours; only the 100 scored items count toward the scaled score.",
+      "NHA exams in the candidate handbook use a 200–500 scale with a passing scaled score of 390.",
+      "Patient Care is the heaviest domain (43/100 scored). Do not over-drill EKG (10) at the expense of ADLs and vitals.",
+      "CPCT/A is not CCMA (medical assisting), not NHA CPT (phlebotomy-only), and not ASPT.",
+      "UniPrep2Go’s free check is a 120-question / 120-minute text diagnostic with four topic buckets — all items scored here; official forms include 20 unscored pretest items and a skills lab.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the NHA CPCT/A exam?",
+        a: "The 2025 NHA test plan lists 100 scored items plus 20 pretest items (120 total) in 2 hours. Marketing pages may say “100-question exam.” Verify the plan for your sitting at nhanow.com.",
+      },
+      {
+        q: "What score do you need to pass CPCT/A?",
+        a: "NHA’s candidate handbook uses a 200–500 scaled score and requires 390 or higher for exams covered in that handbook. Confirm on your score-report rules at nhanow.com.",
+      },
+      {
+        q: "Is CPCT/A the same as NHA CCMA or NHA CPT phlebotomy?",
+        a: "No. CPCT/A is the patient-care technician credential (bedside care plus selected phlebotomy/EKG). CCMA is clinical medical assisting. NHA CPT is the phlebotomy technician exam. ASPT is a different phlebotomy certifier.",
+      },
+      {
+        q: "Is UniPrep2Go’s CPCT readiness check the official NHA exam?",
+        a: "No. The free 120-question / 120-minute check is an independent diagnostic. The matching Anki deck is a $11 / 120-card .apkg on Gumroad. Not NHA material.",
+      },
+    ],
+    trademark_note:
+      "NHA® and CPCT/A® are trademarks of the National Healthcareer Association. UniPrep2Go is not affiliated with or endorsed by NHA.",
   },
 };
 
@@ -2701,6 +2774,7 @@ const deckExamKeyMap: Record<string, string> = {
   "acsm-cpt-anki-deck": "acsm-cpt",
   "rd-exam-anki-deck": "rd-exam",
   "luxembourg-vivre-ensemble-anki-deck": "luxembourg-vivre-ensemble",
+  "nha-cpct-anki-deck": "nha-cpct",
   "us-citizenship-test-prep2go-app": "us-citizenship",
   "leben-in-deutschland-prep2go-app": "leben-in-deutschland",
   "naturalisation-francaise-prep2go-app": "naturalisation-francaise",

@@ -432,11 +432,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "rd-exam-anki-deck": {
-    title: "RD Exam Anki Deck 2026 | 60 CDR Flashcards + Free Mock",
-    headline: "RD / RDN Exam Prep — 60 CDR Domain Flashcards",
+    title: "RD Exam Anki Deck 2026 | 120 CDR Flashcards + Free Mock",
+    headline: "RD / RDN Exam Prep — 120 CDR Domain Flashcards",
     studyLabel: "RD exam Anki flashcards",
     description:
-      "RDN Anki deck: 60 cards across CDR Principles, Nutrition Care, Management, and Foodservice — with explanations and a free 60-question RD readiness check. Ownable .apkg for dietetic candidates after ACEND practice. Independent — not CDR material.",
+      "RDN Anki deck: 120 cards across CDR Principles, Nutrition Care, Management, and Foodservice — with explanations and a free 120-question RD readiness check. Ownable .apkg for dietetic candidates after ACEND practice. Independent — not CDR material.",
     keywords: [
       "rd exam anki",
       "rdn flashcards",
@@ -449,11 +449,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "enrolled-agent-anki-deck": {
-    title: "IRS Enrolled Agent Anki Deck | 60 SEE Flashcards + Free Mock",
-    headline: "IRS Enrolled Agent (SEE) Prep — 60 Flashcards",
+    title: "IRS Enrolled Agent Anki Deck | 120 SEE Flashcards + Free Mock",
+    headline: "IRS Enrolled Agent (SEE) Prep — 120 Flashcards",
     studyLabel: "Enrolled Agent Anki flashcards",
     description:
-      "Enrolled Agent Anki: 60 cards for IRS SEE themes — Individuals, Businesses, Representation, Practices — plus a free EA readiness check with topic scoring. Ownable .apkg before Prometric. Independent — not IRS material.",
+      "Enrolled Agent Anki: 120 cards for IRS SEE themes — Individuals, Businesses, Representation, Practices — plus a free 120-question EA readiness check with topic scoring. Ownable .apkg before Prometric. Independent — not IRS material.",
     keywords: [
       "enrolled agent anki",
       "ea exam flashcards",
@@ -466,11 +466,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "luxembourg-vivre-ensemble-anki-deck": {
-    title: "Luxembourg Vivre ensemble Anki | 60 French Civics Cards + Mock",
-    headline: "Luxembourg Vivre ensemble Civics — 60 French Flashcards",
+    title: "Luxembourg Vivre ensemble Anki | 120 French Civics Cards + Mock",
+    headline: "Luxembourg Vivre ensemble Civics — 120 French Flashcards",
     studyLabel: "Luxembourg Vivre ensemble Anki",
     description:
-      "Luxembourg nationality civics Anki: 60 French MCQ cards on institutions, rights, history/EU, and daily life — plus a free 60-question Vivre ensemble readiness check. Not Sproochentest language drills. Independent — not Guichet.lu material.",
+      "Luxembourg nationality civics Anki: 120 French MCQ cards on institutions, rights, history/EU, and daily life — plus a free 60-question Vivre ensemble readiness check. Not Sproochentest language drills. Independent — not Guichet.lu material.",
     keywords: [
       "luxembourg vivre ensemble anki",
       "luxembourg citizenship flashcards",

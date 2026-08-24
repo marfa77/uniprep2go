@@ -33,6 +33,7 @@ import {
   ensureGumroadAccessToken,
   loadLocalEnvFiles,
 } from "./lib/gumroad-auth.mjs";
+import { gumroadDiscoverFields } from "./lib/gumroad-discover.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CATALOG_PATH = join(root, "src/data/gumroad/wave-anki-decks.json");
@@ -260,7 +261,17 @@ function buildApkgDisplayName(slug, titles) {
   return `${safe}_Anki_Deck.apkg`;
 }
 
-async function putGumroadDescriptionAsync(productId, description, dryRun) {
+function discoverFieldsForWave(slug, spec) {
+  return gumroadDiscoverFields({
+    slug,
+    tagPrefix: spec?.tagPrefix,
+    deckLabel: spec?.deckLabel,
+    shortTitle: spec?.shortTitle,
+    name: spec?.gumroadName,
+  });
+}
+
+async function putGumroadDescriptionAsync(productId, description, dryRun, slug, spec) {
   if (dryRun) {
     return;
   }
@@ -274,7 +285,10 @@ async function putGumroadDescriptionAsync(productId, description, dryRun) {
       Authorization: `Bearer ${token}`,
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ description }),
+    body: JSON.stringify({
+      description,
+      ...(slug ? discoverFieldsForWave(slug, spec) : {}),
+    }),
   });
   const payload = await response.json();
   if (!response.ok || !payload.success) {
@@ -522,7 +536,7 @@ async function syncProductAssets({
     dryRun: false,
   });
 
-  await putGumroadDescriptionAsync(productId, description, dryRun);
+  await putGumroadDescriptionAsync(productId, description, dryRun, slug, spec);
 
   const sampleCount = resolveSampleWebps(slug).length;
   let samplesReady = false;
@@ -580,7 +594,7 @@ async function syncProductPolish({ slug, record, titles, getAllMockExams, catalo
   }
 
   uploadSamplePreviews({ productId, slug, dryRun: false });
-  await putGumroadDescriptionAsync(productId, description, false);
+  await putGumroadDescriptionAsync(productId, description, false, slug, spec);
   publishSampleLanding({ slug, dryRun: false });
   runGumroad(`products publish ${productId}`);
   const refreshed = JSON.parse(readFileSync(CATALOG_PATH, "utf8"));
@@ -768,6 +782,21 @@ async function main() {
         persistCatalog(catalog);
 
         console.log(`  created: ${product.short_url} (${product.id})`);
+        const discover = discoverFieldsForWave(slug, specs[slug]);
+        const discoverRes = await fetch(`https://api.gumroad.com/v2/products/${productId}`, {
+          method: "PUT",
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(discover),
+        });
+        const discoverPayload = await discoverRes.json();
+        if (!discoverRes.ok || !discoverPayload.success) {
+          console.warn(`  discover warning: ${JSON.stringify(discoverPayload).slice(0, 160)}`);
+        } else {
+          console.log(`  discover: ${discover.category} ${JSON.stringify(discover.tags)}`);
+        }
         await sleep(PRODUCT_CREATE_DELAY_MS);
       }
 

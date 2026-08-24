@@ -27,17 +27,19 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "ptcb-pharmacy-technician-anki-deck":
     "300 PTCE cards for top-200 drugs, sig codes, and pharmacy math — pairs with the 2026 printable study guide PDF.",
   "luxembourg-vivre-ensemble-anki-deck":
-    "60 French Vivre ensemble cards for institutions, rights, history/EU, and daily life — plus a free 60-question Luxembourg diagnostic. Built for nationality civics, not Sproochentest.",
+    "120 French Vivre ensemble cards for institutions, rights, history/EU, and daily life — plus a free 60-question Luxembourg diagnostic. Built for nationality civics, not Sproochentest.",
   "aspt-phlebotomy-anki-deck":
     "Planned 60-card ASPT phlebotomy Anki (venipuncture, order of draw, safety, processing). Take the free 60-question diagnostic now — verify the current official form at aspt.org. ASPT is not NHA CPT and not ASCP PBT.",
   "cscs-nsca-anki-deck":
     "Planned 60-card NSCA CSCS Anki (exercise science, nutrition, program design, organization). Take the free 60-question diagnostic now — official CSCS is two papers / scaled 70 each. CSCS is not a personal-trainer CPT exam.",
   "rd-exam-anki-deck":
-    "60 CDR-domain cards (Principles, Nutrition Care, Management, Foodservice) with explanations — pairs with the free 60-question RD readiness check before Pearson VUE.",
+    "120 CDR-domain cards (Principles, Nutrition Care, Management, Foodservice) with explanations — pairs with the free 120-question RD readiness check before Pearson VUE.",
   "enrolled-agent-anki-deck":
-    "60 IRS SEE cards across Individuals, Businesses, Representation, and Practices — plus a free Enrolled Agent readiness check for topic scoring.",
+    "120 IRS SEE cards across Individuals, Businesses, Representation, and Practices — plus a free 120-question Enrolled Agent readiness check for topic scoring.",
   "ace-cpt-anki-deck":
     "300 ACE CPT cards for client screening, program design, spotting cues, and professional conduct — plus a free 60-question readiness check.",
+  "nha-cpct-anki-deck":
+    "120 NHA CPCT/A cards for ADLs/patient care, safety/infection, phlebotomy+EKG text, and professional practice — plus a free 120-question / 120-minute readiness check. Official exam is 100 scored + 20 pretest / 2 hours / scaled 390.",
   "ptcb-study-guide-2026":
     "Best 2026 PTCE printable guide: DSCSA-weighted Federal Requirements, 80-question exam, cheat sheets + free 90Q online mock.",
   "mrics-quantity-surveying-anki-deck":
@@ -64,7 +66,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "luxembourg-vivre-ensemble-anki-deck":
     "French MCQs mapped to Vivre ensemble themes: Grand-Duchy institutions, fundamental rights and nationality literacy, history/geography/EU, and society/daily life. Run the free 60-question diagnostic first, then drill weak domains — Sproochentest language evidence stays on a separate track. Ownable .apkg for the exam-or-course civics path, not Guichet.lu dumps.",
   "rd-exam-anki-deck":
-    "CDR domain-weighted prompts: Principles of Dietetics, Nutrition Care (PES/ADIME), Management of Food and Nutrition Programs, and Foodservice Systems. Explanations name why distractors fail. Take the free 60-question RD readiness check first, then filter Anki to weak domains — not a random 2,000-card clinical dump.",
+    "CDR domain-weighted prompts: Principles of Dietetics, Nutrition Care (PES/ADIME), Management of Food and Nutrition Programs, and Foodservice Systems. Explanations name why distractors fail. Take the free 120-question RD readiness check first, then filter Anki to weak domains — not a random 2,000-card clinical dump.",
   "enrolled-agent-anki-deck":
     "SEE Part 1–3 themes in one ownable deck: individuals (income, deductions, credits), businesses (entities, payroll themes), representation before the IRS, and practices & procedures. Pair with the free Enrolled Agent readiness check for timed topic scoring before you schedule Prometric — independent prep, not IRS material.",
   "ptcb-study-guide-2026":
@@ -164,15 +166,25 @@ export const positioningOverrides: Partial<
     summaryProse:
       "ACE CPT rewards screening judgment, program progression, and professional boundaries — not memorizing 2,000 random anatomy flashcards. Three hundred focused prompts plus one free timed mock beat a mega-pack when you study between client sessions.",
   },
+  "nha-cpct-anki-deck": {
+    ourEdge: [
+      "120 cards across ADLs/patient care, safety/infection, phlebotomy+EKG text, and professional practice",
+      "Free 120-question / 120-minute CPCT/A readiness check with topic scoring",
+      "Honest official facts: 100 scored + 20 pretest / 2 hours / scaled 390",
+      "Ownable Gumroad .apkg — CPCT/A ≠ CCMA ≠ NHA CPT ≠ ASPT",
+    ],
+    summaryProse:
+      "CPCT/A rewards bedside ADLs, infection control, and selected phlebotomy/EKG judgment — not a CCMA or phlebotomy-only dump. One hundred twenty focused prompts plus a free 120-question timed check beat a 260-question blog bank that mixes official counts.",
+  },
   "luxembourg-vivre-ensemble-anki-deck": {
     ourEdge: [
-      "60 French MCQ cards across institutions, rights, history/EU, and daily life",
+      "120 French MCQ cards across institutions, rights, history/EU, and daily life",
       "Free 60-question Luxembourg Vivre ensemble diagnostic with topic scoring",
       "Built for the exam-or-course civics path — Sproochentest stays separate",
       "Ownable Gumroad .apkg for nationality applicants",
     ],
     summaryProse:
-      "Vivre ensemble rewards precise civics recall — Grand-Duchy institutions, rights, and EU context — not a random Europe trivia dump. Sixty French prompts plus one free timed diagnostic beat rereading Guichet PDFs the night before.",
+      "Vivre ensemble rewards precise civics recall — Grand-Duchy institutions, rights, and EU context — not a random Europe trivia dump. One hundred twenty French prompts plus one free 60-question timed diagnostic beat rereading Guichet PDFs the night before.",
   },
   "ptcb-study-guide-2026": {
     ourEdge: [
@@ -268,11 +280,11 @@ Candidates over-drill favorite concepts (Air, Materials) and under-drill Certifi
 IWBI/GBCI registration, continuing education, or the official WELL AP exam (115 items, scaled pass 170). This deck is independent prep — not IWBI material.`,
   "rd-exam-anki-deck": `### What is inside
 
-60 MCQ cards aligned to the CDR Registration Examination for Dietitians domains: Principles of Dietetics (21%), Nutrition Care for Individuals and Groups (45%), Management of Food and Nutrition Programs and Services (21%), and Foodservice Systems (13%). Every card includes a correct explanation and notes on why the other options fail — the same bank themes as the free timed readiness check.
+120 MCQ cards aligned to the CDR Registration Examination for Dietitians domains: Principles of Dietetics (21%), Nutrition Care for Individuals and Groups (45%), Management of Food and Nutrition Programs and Services (21%), and Foodservice Systems (13%). Every card includes a correct explanation and notes on why the other options fail — the same bank themes as the free timed readiness check.
 
 ### 2–3 week study plan with the free mock
 
-**Week 1:** 15–20 new cards/day across principles and nutrition care (PES / ADIME, macros, MNT themes). **Week 2:** Add foodservice and management cards; sit the [free 60-question RD readiness check](/mock-exams/rd-exam-readiness-check). **Final days:** Review-only Anki on weak topics from the report — keep official CDR handbook timing practice separate (3-hour adaptive exam, scaled pass 25/50).
+**Week 1:** 15–20 new cards/day across principles and nutrition care (PES / ADIME, macros, MNT themes). **Week 2:** Add foodservice and management cards; sit the [free 120-question RD readiness check](/mock-exams/rd-exam-readiness-check). **Final days:** Review-only Anki on weak topics from the report — keep official CDR handbook timing practice separate (3-hour adaptive exam, scaled pass 25/50).
 
 ### Pitfalls this deck targets
 
@@ -284,7 +296,7 @@ ACEND education, supervised practice, and the official CDR / Pearson VUE exam. T
 
   "enrolled-agent-anki-deck": `### What is inside
 
-60 MCQ cards mapped to IRS Special Enrollment Examination (SEE) themes: Individuals, Businesses, Representation, and Practices & procedures. Cards force tax-year judgment and Circular 230-style representation boundaries — not a generic “tax trivia” dump. Pair with the free timed Enrolled Agent readiness check for topic scoring.
+120 MCQ cards mapped to IRS Special Enrollment Examination (SEE) themes: Individuals, Businesses, Representation, and Practices & procedures. Cards force tax-year judgment and Circular 230-style representation boundaries — not a generic “tax trivia” dump. Pair with the free 120-question timed Enrolled Agent readiness check for topic scoring.
 
 ### Plan with the free EA mock
 
@@ -330,9 +342,25 @@ Start with the [free NSCA CSCS readiness check](/mock-exams/cscs-nsca-readiness-
 
 NSCA registration, the Essentials textbook, video-item practice, or a personal-trainer CPT exam. Independent diagnostic — not NSCA exam material.`,
 
+  "nha-cpct-anki-deck": `### What is inside
+
+120 MCQ prompts mapped to CPCT/A bedside work: patient care and ADLs, safety and infection control, phlebotomy plus EKG text basics, and professional practice. Same validated bank as the free 120-question / 120-minute timed check. Official NHA form is 100 scored + 20 pretest / 2 hours / scaled 390 — this deck is independent prep, not a skills lab.
+
+### Plan with the free CPCT mock
+
+**Start:** Take the [free 120-question NHA CPCT/A readiness check](/mock-exams/nha-cpct-readiness-check). **Then:** 15–20 Anki cards/day on your weakest topic row. **Before booking:** re-run the timed check and drill only missed stems.
+
+### Pitfalls this deck targets
+
+Candidates mix CPCT/A with CCMA, NHA CPT phlebotomy, or ASPT; over-drill EKG (10 scored items) and skip Patient Care (43). Cards keep PCT scope: report to the nurse, do not diagnose or titrate meds.
+
+### What this does not replace
+
+NHA registration, the official practice test, or a skills lab. Ownable .apkg only — not NHA exam material.`,
+
   "luxembourg-vivre-ensemble-anki-deck": `### What is inside
 
-60 French MCQ prompts mapped to Vivre ensemble themes: institutions and vivre ensemble, history/geography/EU, rights and nationality, and society/daily life. Cards mirror the civics judgment the official 40-question exam (or 24-hour course) expects — not Sproochentest language drills and not Belgian/French civics recycled under a Luxembourg title.
+120 French MCQ prompts mapped to Vivre ensemble themes: institutions and vivre ensemble, history/geography/EU, rights and nationality, and society/daily life. Cards mirror the civics judgment the official 40-question exam (or 24-hour course) expects — not Sproochentest language drills and not Belgian/French civics recycled under a Luxembourg title.
 
 ### Plan with the free Luxembourg mock
 
@@ -394,11 +422,11 @@ Candidates confuse BEMP vs BEAP vs BCxP blueprints, treat a single mega free Q-b
 ASHRAE eligibility, application fees, credential-specific study guides, or the official 30Q practice exam. Independent prep — not ASHRAE material.`,
   "acsm-cpt-anki-deck": `### What is inside
 
-60 MCQ cards across ACSM-CPT themes: client assessment, exercise programming, exercise science, and behavior & safety. Every card includes a correct explanation and notes on why the other options fail — the same bank as the free timed readiness check.
+120 MCQ cards across ACSM-CPT themes: client assessment, exercise programming, exercise science, and behavior & safety. Every card includes a correct explanation and notes on why the other options fail — the same bank as the free timed readiness check.
 
 ### 2–3 week study plan with the free mock
 
-**Week 1:** 15–20 new cards/day across assessment and programming (PAR-Q+/risk, FITT-style loading). **Week 2:** Add science and behavior/safety cards; sit the [free 60-question ACSM CPT readiness check](/mock-exams/acsm-cpt-readiness-check). **Final days:** Review-only Anki on weak topics — keep official ACSM timing practice separate (**135 items / 150 minutes / scaled pass 550**).
+**Week 1:** 15–20 new cards/day across assessment and programming (PAR-Q+/risk, FITT-style loading). **Week 2:** Add science and behavior/safety cards; sit the [free 120-question ACSM CPT readiness check](/mock-exams/acsm-cpt-readiness-check). **Final days:** Review-only Anki on weak topics — keep official ACSM timing practice separate (**135 items / 150 minutes / scaled pass 550**).
 
 ### Pitfalls this deck targets
 
@@ -1053,11 +1081,11 @@ NYDOS registration, qualifying hours, or the official eAccessNY exam. Independen
 
   "series-65-anki-deck": `### What is inside
 
-60 focused Series 65 MCQ cards across economics & analysis, investment products, client recommendations, and laws & ethics — the same theme map as the free timed Series 65 readiness check.
+120 focused Series 65 MCQ cards across economics & analysis, investment products, client recommendations, and laws & ethics — the same theme map as the free timed Series 65 readiness check.
 
 ### Plan with the free Series 65 mock
 
-15–20 cards/day for two to three weeks, then the [free 60-question Series 65 readiness check](/mock-exams/series-65-readiness-check). Official NASAA exam is **130 scored (+10 pretest) / 180 minutes / 92 correct** — use a full-length Q-bank for final pacing; this deck is weak-topic repair.
+15–20 cards/day for two to three weeks, then the [free 120-question Series 65 readiness check](/mock-exams/series-65-readiness-check). Official NASAA exam is **130 scored (+10 pretest) / 180 minutes / 92 correct** — use a full-length Q-bank for final pacing; this deck is weak-topic repair.
 
 ### Pitfalls this deck targets
 
@@ -1069,11 +1097,11 @@ NASAA/FINRA registration or the official Series 65. Independent prep — not NAS
 
   "mortgage-loan-originator-anki-deck": `### What is inside
 
-60 SAFE MLO MCQ cards across origination process, mortgage products, federal law, and ethics/Uniform State Content — aligned to the free timed MLO readiness check.
+120 SAFE MLO MCQ cards across origination process, mortgage products, federal law, and ethics/Uniform State Content — aligned to the free timed MLO readiness check.
 
 ### Plan with the free MLO mock
 
-15–20 cards/day, then the [free 60-question SAFE MLO readiness check](/mock-exams/mortgage-loan-originator-readiness-check). Confirm current NMLS national test length and cut score before exam day; use this deck for weak-topic repair after the diagnostic.
+15–20 cards/day, then the [free 120-question SAFE MLO readiness check](/mock-exams/mortgage-loan-originator-readiness-check). Confirm current NMLS national test length and cut score before exam day; use this deck for weak-topic repair after the diagnostic.
 
 ### Pitfalls this deck targets
 
