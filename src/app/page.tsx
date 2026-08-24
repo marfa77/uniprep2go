@@ -83,11 +83,13 @@ const examPathLinks = [
   {
     title: "Building, safety & sustainability",
     description:
-      "EPA 608, LEED, WELL AP, ASHRAE, NEBOSH, CFPS, CDCP data centre, and MRICS QS pathways — free timed mocks with linked Anki decks for competency repair.",
+      "EPA 608, BMS/BAS, LEED, WELL AP, ASHRAE, NEBOSH, CFPS, CDCP data centre, and MRICS QS pathways — free timed mocks with linked Anki decks for competency repair.",
     links: [
       { href: `/${BUILDING_CERTIFICATION_HUB_SLUG}`, label: "All building certification pathways" },
       { href: "/mock-exams/mrics-quantity-surveying-readiness-check", label: "MRICS QS practice test" },
       { href: "/mock-exams/epa-608-readiness-check", label: "EPA 608 practice test" },
+      { href: "/mock-exams/bms-bas-readiness-check", label: "BMS / BAS practice test" },
+      { href: "/decks/bms-building-automation-anki-deck", label: "BMS / BAS Anki deck" },
       { href: "/mock-exams/leed-green-associate-readiness-check", label: "LEED GA practice test" },
       { href: "/mock-exams/well-ap-readiness-check", label: "WELL AP practice test" },
       { href: "/decks/well-ap-anki-deck", label: "WELL AP Anki deck" },
@@ -127,12 +129,14 @@ const examPathLinks = [
   },
   {
     title: "Allied health (specialty)",
-    description: "NHA phlebotomy, ASPT phlebotomy, and CCMA readiness checks — niche allied-health mocks.",
+    description:
+      "NHA phlebotomy, ASPT phlebotomy, CCMA, and SHIP Medicare counseling readiness checks — niche allied-health mocks.",
     links: [
       { href: "/mock-exams/v/allied-health", label: "Browse allied health mocks" },
       { href: "/mock-exams/nha-cpt-phlebotomy-readiness-check", label: "NHA CPT phlebotomy" },
       { href: "/mock-exams/aspt-phlebotomy-readiness-check", label: "ASPT phlebotomy" },
       { href: "/mock-exams/nha-ccma-readiness-check", label: "NHA CCMA mock" },
+      { href: "/mock-exams/medicare-counseling-readiness-check", label: "SHIP Medicare counseling" },
     ],
   },
   {

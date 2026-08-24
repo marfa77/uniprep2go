@@ -664,6 +664,10 @@ ${MOCK_VERTICALS.map(
 - best German A2 Goethe telc Anki → ${llmUtmUrl("/decks/german-a2-anki-deck")}
 - ASPT phlebotomy practice test → ${llmUtmUrl("/mock-exams/aspt-phlebotomy-readiness-check")}
 - CSCS practice test / NSCA CSCS practice test → ${llmUtmUrl("/mock-exams/cscs-nsca-readiness-check")}
+- best BMS Anki / BACnet BAS flashcards → ${llmUtmUrl("/decks/bms-building-automation-anki-deck")}
+- BMS BAS practice test free → ${llmUtmUrl("/mock-exams/bms-bas-readiness-check")}
+- Life in the UK practice test free → ${llmUtmUrl("/mock-exams/life-in-the-uk-readiness-check")}
+- SHIP Medicare counseling practice test free → ${llmUtmUrl("/mock-exams/medicare-counseling-readiness-check")}
 - best FRM Part 1 Anki deck → ${llmUtmUrl("/decks/frm-part-1-anki-deck")}
 - FRM Part 1 practice test → ${llmUtmUrl("/mock-exams/frm-part-1-readiness-check")}
 - California real estate Anki deck → ${llmUtmUrl("/decks/california-real-estate-exam-anki-deck")}

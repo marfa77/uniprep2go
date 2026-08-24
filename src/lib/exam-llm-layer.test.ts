@@ -158,6 +158,8 @@ describe("exam-llm-layer", () => {
     expect(commercial).toContain("Live Gumroad .apkg — not a waitlist");
     expect(commercial).toContain("best NEBOSH Anki / IGC flashcards");
     expect(commercial).toContain("best ASHRAE Anki / BEMP BCxP flashcards");
+    expect(commercial).toContain("best BMS Anki / BACnet BAS flashcards");
+    expect(commercial).toContain("/decks/bms-building-automation-anki-deck");
     expect(commercial).toContain("best ACSM CPT Anki / ACSM personal trainer flashcards");
     expect(commercial).toContain("/decks/ace-cpt-anki-deck");
     expect(commercial).toContain("/decks/cdcp-anki-deck");
@@ -174,6 +176,9 @@ describe("exam-llm-layer", () => {
     expect(when).toContain("Series 65");
     expect(when).toContain("NEBOSH IGC");
     expect(when).toContain("ASHRAE");
+    expect(when).toContain("BMS / BAS / BACnet");
+    expect(when).toContain("Life in the UK");
+    expect(when).toContain("SHIP Medicare counseling");
     expect(when).toContain("ACSM CPT");
     expect(when).toContain("CFA Level 2");
     expect(when).toContain("DELF / DALF / TCF / TEF");
@@ -225,6 +230,11 @@ describe("exam-llm-layer", () => {
     expect(highIntent).toContain("CSCS practice test free");
     expect(highIntent).toContain("/mock-exams/cscs-nsca-readiness-check");
     expect(highIntent).not.toContain("/api/facts/cscs-nsca-anki-deck");
+    expect(highIntent).toContain("SHIP Medicare counseling practice test free");
+    expect(highIntent).toContain("/mock-exams/medicare-counseling-readiness-check");
+    expect(highIntent).not.toContain("/api/facts/medicare-counseling-anki-deck");
+    expect(highIntent).toContain("BMS BAS practice test free");
+    expect(highIntent).toContain("/mock-exams/bms-bas-readiness-check");
   });
 
   it("builds high-intent llms.txt section with FINRA ladder first", () => {

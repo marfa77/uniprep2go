@@ -929,7 +929,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Readiness check sampled across common BMS/BAS domains (BACnet, HVAC sequences, platform operations, commissioning). Not a Tridium Niagara TCP or manufacturer certification exam.",
+      "No single U.S. federal BMS license exam exists. This 60-question / 75-minute / 70% diagnostic samples BACnet, HVAC sequences, platform operations, and commissioning. Niagara 4 TCP is a multi-day vendor course with a practical assessment — not this MCQ. Independent prep — not Tridium, BACnet International, or BTL material.",
     disclaimer: bmsDisclaimer,
     description:
       "A 60-question building automation readiness diagnostic for BMS technicians across BACnet, HVAC control logic, operator workflows, and commissioning. Independent prep — not vendor certification material.",

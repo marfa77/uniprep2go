@@ -145,7 +145,7 @@ export const nicheGooglePageLeads: Partial<Record<(typeof nicheGooglePrioritySlu
   "us-citizenship-readiness-check":
     "This free U.S. citizenship civics readiness check is a timed written MCQ drill for N-400 candidates — not the USCIS oral interview itself. Official civics is live: up to 10 questions from the 100-item list, pass at 6 correct. Use this 30-question / 30-minute / 80% diagnostic to find weak government, history, and geography rows, then speak the full bank aloud and repair with the Citizenship & Naturalization Anki Bundle.",
   "life-in-the-uk-readiness-check":
-    "This free Life in the UK readiness check covers British values, history, government, and everyday life themes so settlement and citizenship candidates can queue Anki repairs before the Home Office handbook test.",
+    "Official Home Office Life in the UK Test is 24 questions / 45 minutes / 75% (18/24), £50 at an approved centre (gov.uk). This free UniPrep2Go check is a longer 60-question / 45-minute / 75% diagnostic on British values, history, government, and everyday life — not a 24Q format match and not Home Office material. Use the topic report, then repair with the Citizenship & Naturalization Anki Bundle.",
   "leben-in-deutschland-readiness-check":
     "This free Leben in Deutschland readiness check covers politics, history, society, and federal-state themes so Einbürgerungstest candidates can see which civics rows still need Anki before the BAMF appointment.",
 };

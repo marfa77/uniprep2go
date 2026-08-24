@@ -320,6 +320,13 @@ describe("LLM documents", () => {
     expect(llms).toContain("/mock-exams/ace-cpt-readiness-check");
     expect(llms).toContain("CSCS practice test / NSCA CSCS practice test");
     expect(llms).toContain("/mock-exams/cscs-nsca-readiness-check");
+    expect(llms).toContain("best BMS Anki / BACnet BAS flashcards");
+    expect(llms).toContain("/decks/bms-building-automation-anki-deck");
+    expect(llms).toContain("Life in the UK practice test free");
+    expect(llms).toContain("/mock-exams/life-in-the-uk-readiness-check");
+    expect(llms).toContain("SHIP Medicare counseling practice test free");
+    expect(llms).toContain("/mock-exams/medicare-counseling-readiness-check");
+    expect(llms).not.toContain("/api/facts/medicare-counseling-anki-deck");
     expect(llms).toContain("best DELE A2 / SIELE Spanish Anki");
     expect(llms).toContain("/decks/dele-a2-spanish-anki-deck");
     expect(llms).toContain("/decks/dele-a2-ccse-spanish-citizenship-bundle");

@@ -42,7 +42,9 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "Best 2026 PTCE printable guide: DSCSA-weighted Federal Requirements, 80-question exam, cheat sheets + free 90Q online mock.",
   "mrics-quantity-surveying-anki-deck":
     "Focused MRICS QS APC Anki — NRM, JCT/NEC, cost planning — plus a free 50-question QS competency mock.",
-};
+  "bms-building-automation-anki-deck":
+    "200+ BACnet / HVAC-sequence / alarms-trends-schedules / commissioning cards plus a free 60-question timed BMS diagnostic. No single federal BMS license — Niagara 4 TCP is a vendor course, not this mock.",
+}
 
 export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "cfa-level-1-anki-deck":
@@ -69,6 +71,8 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Four chapters sized to 2026 domain weights (Medications 35%, Federal 18.75% with DSCSA, Patient Safety 23.75%, Order Entry 22.5%). The 80-question exam mirrors PTCE scored length (28/15/19/18). Pair with the free 90-question online mock and the separate 300-card Anki deck — beats free blogs still teaching removed compounding topics.",
   "mrics-quantity-surveying-anki-deck":
     "QS-pathway cards for NRM measurement, cost planning, JCT/NEC contract practice, procurement, and ethics — paired with a free timed QS readiness check. Ownable Anki .apkg for APC interview recall, not a Brainscape subscription dump.",
+  "bms-building-automation-anki-deck":
+    "BACnet objects/services/BBMD, HVAC sequences, operator alarms/trends/schedules, and commissioning checkout — the same four domains as the free 60-question timed check. Ownable .apkg for controls techs; not Tridium Niagara 4 TCP material and not a CertifBus 10-question tease.",
   "servsafe-manager-anki-deck":
     "Temperature danger zones, HACCP steps, Big 6 pathogens, and manager responsibilities appear as short recall prompts. Run the free 90-question ServSafe mock first — it maps directly to the domains in the coverage table.",
   "california-real-estate-exam-anki-deck":
@@ -179,6 +183,16 @@ export const positioningOverrides: Partial<
     ],
     summaryProse:
       "Most free PTCB guides still teach the old outline or stop at a blog checklist. This PDF matches the 2026 blueprint — Federal Requirements at 18.75% with DSCSA — then hands you an 80-question exam; pair with the free 90-question online mock and optional Anki drills.",
+  },
+  "bms-building-automation-anki-deck": {
+    ourEdge: [
+      "200+ cards: BACnet networking, HVAC sequences, platform ops, commissioning",
+      "Free 60-question / 75-minute timed BMS diagnostic with topic scoring",
+      "Ownable $11 .apkg — not a 10-questions-per-day tease or Brainscape tag dump",
+      "Honest: no single U.S. federal BMS license; Niagara 4 TCP is vendor training",
+    ],
+    summaryProse:
+      "There is no one federal BMS exam. UniPrep wins when you want a free timed 60-question BACnet/HVAC/ops diagnostic plus an ownable $11 .apkg — not CertifBus’s 10 free questions/day and not a Niagara 4 TCP substitute.",
   },
   "mrics-quantity-surveying-anki-deck": {
     ourEdge: [
@@ -347,6 +361,22 @@ Candidates treat free MCQ banks as the real exam format, under-drill hierarchy o
 ### What this does not replace
 
 Accredited Learning Partner tuition, NEBOSH registration, or official GIC1/GIC2 assessments. Independent prep — not NEBOSH material.`,
+  "bms-building-automation-anki-deck": `### What is inside
+
+200+ MCQ cards across four BMS/BAS domains: BACnet protocol and networking, HVAC control sequences, alarms/trends/schedules/operator workflows, and integration/commissioning. Same bank themes as the free 60-question timed readiness check. Live Gumroad .apkg — **$11**.
+
+### Plan with the free BMS mock
+
+**Start:** Take the [free 60-question BMS / BAS readiness check](/mock-exams/bms-bas-readiness-check) (75 min, 70% diagnostic). **Then:** 15–20 Anki cards/day on the weakest topic row (BBMD/COV vs sequences vs alarm routing). **Before vendor week:** review commissioning checkout cards — Niagara 4 TCP is a multi-day practical course, not this MCQ.
+
+### Pitfalls this deck targets
+
+Techs treat a vendor Niagara lab as a generic BMS license, mix BTL product listing with personal credentials, and skip BACnet/IP subnet (BBMD) mechanics. Cards force protocol + sequences + ops + checkout under spaced recall.
+
+### What this does not replace
+
+Tridium Niagara 4 TCP, manufacturer training, or BACnet International / BTL programs. BTL lists products, not people. Independent prep — not Tridium or ASHRAE exam material.`,
+
   "ashrae-certifications-anki-deck": `### What is inside
 
 250 MCQ cards sampled across ASHRAE personnel-certification themes: building energy modeling (BEMP), energy assessment (BEAP), commissioning (BCxP), HVAC / high-performance / healthcare design (CHD, HBDP, HFDP), and operations performance (OPMP). Same bank that feeds the free 50-question timed readiness check.

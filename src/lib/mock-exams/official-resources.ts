@@ -722,6 +722,44 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
     verifyAtUrl:
       "https://www.nsca.com/certification/cscs/certified-strength-and-conditioning-specialist-exam-description/",
   },
+  "bms-bas-readiness-check": {
+    certifier: "No unified U.S. BMS license — BACnet International / vendor programs",
+    verifyAtUrl: "https://www.bacnetinternational.org/",
+    sources: [
+      {
+        label: "BACnet International",
+        url: "https://www.bacnetinternational.org/",
+      },
+      {
+        label: "Tridium (Niagara training — verify TCP with Tridium University)",
+        url: "https://www.tridium.com/",
+      },
+    ],
+  },
+  "life-in-the-uk-readiness-check": {
+    certifier: "UK Home Office — Life in the UK Test",
+    verifyAtUrl: "https://www.gov.uk/life-in-the-uk-test",
+    sources: [
+      {
+        label: "GOV.UK — Life in the UK Test (24Q / 45 min / 75% / £50)",
+        url: "https://www.gov.uk/life-in-the-uk-test",
+      },
+    ],
+  },
+  "medicare-counseling-readiness-check": {
+    certifier: "State Health Insurance Assistance Programs (SHIP) / SHIP TA Center",
+    verifyAtUrl: "https://www.shiptacenter.org/",
+    sources: [
+      {
+        label: "SHIP TA Center (OCCT counselor training)",
+        url: "https://www.shiptacenter.org/",
+      },
+      {
+        label: "ACL — State Health Insurance Assistance Program (SHIP)",
+        url: "https://acl.gov/programs/connecting-people-services/state-health-insurance-assistance-program-ship",
+      },
+    ],
+  },
 };
 
 /** State real-estate commission home pages keyed by slug prefix / known slug. */
@@ -802,14 +840,14 @@ export function getMockOfficialResources(config: MockExamConfig): MockOfficialRe
   const bodyHit = resolveBodyResource(config.examBody);
 
   const certifier =
-    profile?.exam_facts.administered_by ??
     slugHit?.certifier ??
+    profile?.exam_facts.administered_by ??
     bodyHit?.certifier ??
     config.examBody;
 
   const verifyAtUrl =
-    profile?.exam_facts.verify_at_url ??
     slugHit?.verifyAtUrl ??
+    profile?.exam_facts.verify_at_url ??
     bodyHit?.verifyAtUrl ??
     null;
 

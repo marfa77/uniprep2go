@@ -952,7 +952,8 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "fraud", label: "Fraud & abuse" },
       { id: "counseling", label: "Counseling skills" }
     ]),
-    officialSourceNote: "Mapped to State Health Insurance Assistance Programs themes. Independent UniPrep2Go readiness check — not an official exam.",
+    officialSourceNote:
+      "There is no public national SHIP counselor exam with a published item count or pass score. State programs schedule certification (often via SHIP TA Center OCCT); module quizzes and sit-downs vary by state. This 60-question / 75-minute diagnostic is independent Medicare-counseling prep — not a state SHIP certificate.",
     description: "Free 60-question SHIP Medicare Counseling readiness check with topic scoring.",
     examBody: "State Health Insurance Assistance Programs",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",

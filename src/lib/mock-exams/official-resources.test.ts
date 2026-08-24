@@ -35,6 +35,18 @@ describe("getMockOfficialResources", () => {
     expect(resources.verifyAtUrl).toMatch(/floridalicense|myfloridalicense/i);
   });
 
+  it("resolves today's pulse mocks to official (not self) verify URLs", () => {
+    const bms = getMockOfficialResources(getMockExamConfig("bms-bas-readiness-check")!);
+    expect(bms.verifyAtUrl).toContain("bacnetinternational.org");
+
+    const lituk = getMockOfficialResources(getMockExamConfig("life-in-the-uk-readiness-check")!);
+    expect(lituk.verifyAtUrl).toContain("gov.uk/life-in-the-uk-test");
+    expect(lituk.verifyAtUrl).not.toContain("uniprep2go.study");
+
+    const ship = getMockOfficialResources(getMockExamConfig("medicare-counseling-readiness-check")!);
+    expect(ship.verifyAtUrl).toContain("shiptacenter.org");
+  });
+
   it("gives every mock a certifier name and https verify URL when known", () => {
     const mocks = getAllMockExams();
     expect(mocks.length).toBeGreaterThan(100);

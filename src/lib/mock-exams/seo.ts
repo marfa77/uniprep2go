@@ -471,7 +471,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free BMS / BAS Building Automation Readiness Check",
     intro:
-      "A timed building automation readiness diagnostic covering BACnet networking, HVAC control sequences, operator platform workflows, and commissioning — the core domains BMS technicians face before vendor certifications like Tridium Niagara 4 TCP.",
+      "A timed 60-question building automation diagnostic covering BACnet networking, HVAC control sequences, operator platform workflows, and commissioning. There is no single U.S. federal BMS license — Niagara 4 TCP is a vendor course with a practical assessment, not this MCQ. Independent prep, not Tridium or BACnet International material.",
     audience:
       "BMS engineers, controls technicians, facility automation staff, and integrator apprentices preparing for BAS roles or vendor certification training.",
     practiceTestLabel: "BMS practice test",
