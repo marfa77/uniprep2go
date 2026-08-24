@@ -461,6 +461,19 @@ export async function resolveDeckPrice(deck: CatalogAvailableDeck): Promise<Pric
 
   try {
     const synced = await syncDeckPrice(deck);
+    const catalogFallback = getCatalogListPriceRecord(deck);
+    const hasExplicitOverride = listPriceConfig.overrides[deck.slug] !== undefined;
+    if (
+      catalogFallback &&
+      hasExplicitOverride &&
+      Math.abs(synced.amount - catalogFallback.amount) > 0.01
+    ) {
+      console.warn(
+        `[checkout_pricing] ${deck.slug}: Gumroad $${synced.amount} != catalog $${catalogFallback.amount}; using catalog list price`,
+      );
+      await writeCachedPrice(deck.slug, catalogFallback);
+      return applyPriceRecordToDeck(deck, catalogFallback);
+    }
     await writeCachedPrice(deck.slug, synced);
     return applyPriceRecordToDeck(deck, synced);
   } catch (error) {

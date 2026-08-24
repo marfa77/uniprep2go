@@ -99,6 +99,25 @@ describe("checkout pricing", () => {
     expect(updated.directAnswer).not.toContain(PRICE_PLACEHOLDER);
   });
 
+  it("prefers explicit catalog override when Gumroad scrape drifts lower", async () => {
+    const deck = getCatalogDeckBySlug("sie-exam-anki-deck");
+    expect(deck).toBeDefined();
+
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async () => ({
+        ok: true,
+        text: async () => 'price_cents&quot;:1100',
+      })) as typeof fetch,
+    );
+
+    const resolved = await resolveDeckPrice(deck!);
+    expect(resolved.price.amount).toBe(19);
+    expect(resolved.directAnswer).toContain("$19 USD");
+
+    vi.unstubAllGlobals();
+  });
+
   it("syncs Gumroad deck price from checkout page", async () => {
     const deck = getCatalogDeckBySlug("cfa-level-1-anki-deck");
     expect(deck).toBeDefined();
