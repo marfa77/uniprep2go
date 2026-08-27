@@ -804,21 +804,53 @@ Spanish-speaking learners translate every sentence into Spanish under time press
 Prep2Go app bank (2,504 cards, LatAm Spanish) with UniPrep2Go IELTS/TOEFL framing on Gumroad at $26 — not a Lemon-only listing, not a DELE Spanish deck, and not the Russian/Portuguese-speaker sibling packs with different glosses.`,
 
 
-  "ielts-toefl-english-for-portuguese-speakers-anki-deck": `### Which English exams this deck targets
+  "ielts-toefl-english-for-portuguese-speakers-anki-deck": `### Who this deck is for
 
-**IELTS**, **TOEFL**, Cambridge English exams, and **PTE** share a large high-frequency academic and general English lexicon. This deck packages that bank for **Brazilian Portuguese speakers**: English headword, PT-BR gloss, bilingual example, native English audio, and an image on each card. It is vocabulary recall — not a full mock exam, writing scorer, or CIPLE European Portuguese deck.
+**Brazilian Portuguese (PT-BR) speakers** preparing **IELTS**, **TOEFL iBT**, Cambridge English (B2 First / C1 Advanced), or **PTE Academic** for study abroad, skilled migration, or professional registration. Typical use cases: Canada Express Entry / SDS IELTS, Australian student or skilled visas, UK student route, U.S. graduate TOEFL, and university English thresholds in Europe. It is **English vocabulary Anki**, not a CIPLE / CAPLE European Portuguese citizenship deck and not a Celpe-Bras product.
 
-### Study plan
+### Card face (what you see every review)
 
-Block eight weeks before your IELTS or TOEFL sitting: 25 new cards/day in weeks 1–5, then mostly reviews plus one official practice test each weekend. Force English-first recall; open the Brazilian Portuguese (PT-BR) gloss only after you attempt the meaning. In week 8, clear the backlog and re-study any card you failed on the last mock’s vocabulary list.
+- **Front:** English headword (+ image where included)
+- **Back:** Brazilian Portuguese (PT-BR) gloss, bilingual example sentence, native English audio
+- **Drill rule:** hear English → guess meaning → only then open the PT-BR gloss
 
-### Pitfalls this deck targets
+Free AnkiWeb dumps for “Inglês–Português” are usually tourist phrases, phrasal-verb dumps, or undated frequency lists without IELTS/TOEFL framing. This listing ships **2,504** exam-frequency cards from the Prep2Go bank as one Gumroad \`.apkg\` at **$26**.
 
-Brazilian Portuguese speakers translate every sentence into Portuguese under time pressure, skip listening to English audio, and study tourist phrase lists instead of exam-frequency academic vocabulary. Bilingual PT-BR examples + English audio reduce translation dependence.
+### PT-BR false friends that break Reading scores
+
+Brazilian candidates lose easy IELTS/TOEFL Reading points when they map Portuguese cognates 1:1. Drill these as English-first (examples of traps this bank helps you notice — not a closed false-friend list):
+
+| Portuguese lookalike | Wrong English guess | Exam-safe English sense |
+| --- | --- | --- |
+| *atual* | “actual” | **current / present** |
+| *pretender* | “pretend” | **intend / plan** |
+| *assistir* | “assist” | **watch / attend** (assist = help) |
+| *procurar* | “procure” (overformal) | **look for / seek** |
+| *êxito* | “exit” | **success** |
+| *relatório* | “relatory” | **report** |
+
+Anki forces spaced English recall so you stop translating under Listening/Reading time pressure.
+
+### Eight-week study plan (IELTS Academic or TOEFL)
+
+| Weeks | Daily Anki | Pair with |
+| --- | --- | --- |
+| 1–5 | ~25 new cards/day + reviews | One official Listening or Reading section each weekend |
+| 6–7 | New cards taper; clear “Again” queue | Full practice test (British Council / ETS / Cambridge) |
+| 8 | Reviews only | Re-learn every word you missed on the last mock |
+
+Always play English audio before reading the PT-BR gloss. If you still need Portuguese on the back after week 4, tag those cards and review them twice on weekdays.
+
+### What this deck is not
+
+- Not **CIPLE A2 / CAPLE** European Portuguese (use the separate CIPLE Anki if you need PT-PT for nationality)
+- Not **European Portuguese** glosses — this edition is **PT-BR**
+- Not a full Writing Task 2 scorer, Speaking partner, or timed mock exam
+- Not official IELTS, ETS TOEFL, Cambridge Assessment, or Pearson PTE material
 
 ### What makes this Gumroad edition different
 
-Prep2Go app bank (2,504 cards, Brazilian Portuguese) with UniPrep2Go IELTS/TOEFL framing on Gumroad at $26 — not a Lemon-only listing and not a CIPLE / CAPLE European Portuguese vocabulary deck.`,
+Prep2Go app bank (**2,504** cards, Brazilian Portuguese) with UniPrep2Go IELTS/TOEFL framing on Gumroad at **$26** — instant \`.apkg\`, not a Lemon-only listing, not AnkiWeb tourist packs, and not a CIPLE / CAPLE European Portuguese vocabulary deck.`,
 
 
   "delf-prim-printable-french-flashcards": `### Who this printable is for

@@ -2652,15 +2652,15 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-portuguese-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 2504 Flashcards",
-    shortName: "IELTS / TOEFL English for Portuguese Speakers (BR)",
+    title: "IELTS / TOEFL English for Brazilian Portuguese Speakers Anki — 2504 Cards",
+    shortName: "IELTS / TOEFL English for Brazilian Portuguese Speakers (BR)",
     subtitle:
-      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Brazilian Portuguese support on every card.",
+      "2,504 English flashcards for Brazilians on IELTS, TOEFL, Cambridge, and PTE — PT-BR glosses, audio, and cognate traps (atual ≠ actual).",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English for Portuguese Speakers Anki deck with 2,504 high-frequency English vocabulary cards, Brazilian Portuguese (PT-BR) glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Brazilian Portuguese-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
-    lastUpdated: "2026-07-22",
+      "UniPrep2Go sells an IELTS / TOEFL English Anki deck for Brazilian Portuguese speakers: 2,504 high-frequency English vocabulary cards with PT-BR glosses, bilingual examples, native English audio, and illustrations. Built for Brazilians targeting IELTS (including common Canada / UK / Australia pathways), TOEFL iBT, Cambridge, and PTE — English-first recall so false friends like atual/actual and pretender/pretend stop costing Reading points. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio. Not CIPLE / CAPLE European Portuguese.",
+    lastUpdated: "2026-08-25",
     audience:
-      "Brazilian Portuguese-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
+      "Brazilian Portuguese speakers preparing IELTS, TOEFL, Cambridge, or PTE who want Anki vocabulary with PT-BR support — not a CIPLE European Portuguese deck.",
     format: ".apkg",
     coverImage: "/covers/ielts-toefl-english-for-portuguese-speakers-anki-deck-v2.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/ielts-toefl-english-for-portuguese-speakers-anki-deck?wanted=true",
@@ -2668,7 +2668,8 @@ const rawDecks: Deck[] = [
     checkoutSeller: "PixID Studio",
     facts: {
       cards: "2504",
-      topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with Brazilian Portuguese bilingual support",
+      topics:
+        "IELTS / TOEFL / Cambridge / PTE English vocabulary for Brazilian Portuguese speakers (PT-BR glosses, false-friend awareness)",
       formulas: "Audio + Brazilian Portuguese (PT-BR) glosses + bilingual example sentences",
       examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
       delivery: "Digital download through Gumroad",
@@ -2679,17 +2680,22 @@ const rawDecks: Deck[] = [
       {
         question: "Which English exams does this deck support?",
         answer:
-          "IELTS, TOEFL, Cambridge English exams, and PTE — as a shared high-frequency English vocabulary bank with Brazilian Portuguese support. Pair Anki with official practice tests for each exam's format.",
+          "IELTS Academic and General Training word knowledge, TOEFL iBT, Cambridge English exams, and PTE Academic — one shared high-frequency English bank with Brazilian Portuguese (PT-BR) support. Pair Anki with official practice tests for each exam's Listening/Speaking format.",
       },
       {
-        question: "Does this help IRCC, UKVI, or academic English pathways?",
+        question: "Does this help Canada Express Entry, Australia, UKVI, or U.S. TOEFL pathways?",
         answer:
-          "Yes as shared high-frequency English vocabulary used across IELTS (including common IRCC and UKVI sittings), TOEFL, Cambridge, and PTE academic pathways. Confirm the exact test version your case requires — this deck trains word knowledge, not each board's listening/speaking format.",
+          "Yes as shared exam English vocabulary used across IELTS sittings common for IRCC / Australia / UKVI and across TOEFL for U.S. graduate admissions. Confirm the exact test version and score band your case needs — this deck trains word knowledge, not each board's timed paper.",
       },
       {
         question: "Is this Brazilian or European Portuguese?",
         answer:
-          "Brazilian Portuguese (PT-BR) glosses and examples. It is English vocabulary prep for Brazilian Portuguese speakers — not a CIPLE / CAPLE European Portuguese exam deck.",
+          "Brazilian Portuguese (PT-BR) glosses and examples only. If you need European Portuguese for CIPLE / CAPLE / Portuguese nationality, use the separate CIPLE Anki deck — this product is English for Brazilians.",
+      },
+      {
+        question: "How does this beat free AnkiWeb Inglês–Português decks?",
+        answer:
+          "Most free PT–EN shared decks are tourist phrases, phrasal-verb dumps, or undated frequency lists. This is a 2,504-card Prep2Go exam bank with IELTS/TOEFL framing, PT-BR glosses, English audio, and cognate-trap study notes on the product page — instant Gumroad .apkg at list price.",
       },
       {
         question: "What does the deck include?",

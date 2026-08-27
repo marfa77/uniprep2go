@@ -33,6 +33,7 @@ Do **not** re-run WebSearch SERP or rewrite cites if `last_pass` is &lt; 60 days
 | nha-cpct-readiness-check | wave | 2026-08-24 | 2026-10-23 | Live $11 / 120-card Anki + free 120Q/120m; official 100+20 / 2h / 390; ≠ CCMA/CPT/ASPT |
 | ptcb-study-guide-2026 | PDF | 2026-08-23 | 2026-10-22 | $19 / 30p + 80Q vs Amazon books + free blogs; official 90Q / 1h50 / 1400 locked; Gumroad ServSafe FAQ patched |
 | ptcb-pharmacy-technician-anki-deck | Anki | 2026-08-23 | 2026-10-22 | $11 / 300 + free 90Q vs Quizlet/Brainscape/PTCB Practice Bank; official 90Q / 1h50 / 1400; companion note no longer says formula sheet |
+| ielts-toefl-english-for-portuguese-speakers-anki-deck | language | 2026-08-25 | 2026-10-24 | GSC crawled-not-indexed → unique PT-BR money page (false friends, BR pathways, ≠ CIPLE); beat AnkiWeb tourist PT–EN dumps; $26 / 2504 |
 
 Homepage `/` is a hub — not a SKU row.
 

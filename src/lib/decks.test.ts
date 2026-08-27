@@ -264,7 +264,7 @@ describe("deck catalog", () => {
     expect(enEs?.directAnswer).toContain("Latin American Spanish");
     expect(enEs?.shortName).toContain("LatAm");
     const enPt = getDeckBySlug("ielts-toefl-english-for-portuguese-speakers-anki-deck");
-    expect(enPt?.title).toContain("IELTS / TOEFL English for Portuguese Speakers");
+    expect(enPt?.title).toContain("IELTS / TOEFL English for Brazilian Portuguese Speakers");
     expect(enPt?.facts.cards).toBe("2504");
     expect(enPt?.directAnswer).toContain("Brazilian Portuguese");
     expect(enPt?.shortName).toContain("BR");
@@ -768,7 +768,7 @@ describe("deck catalog", () => {
       "ielts-toefl-english-for-spanish-speakers-anki-deck":
         "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2504 Flashcards",
       "ielts-toefl-english-for-portuguese-speakers-anki-deck":
-        "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 2504 Flashcards",
+        "IELTS / TOEFL English for Brazilian Portuguese Speakers Anki — 2504 Cards",
       "hvac-epa-608-anki-deck": "EPA 608 HVAC Anki Deck — 200+ Flashcards",
       "ib-biology-sl-anki-deck": "IB Biology SL Anki Deck — 149 Smart Flashcards",
       "cat4-level-d-anki-deck-printable-pdf":

@@ -1,0 +1,27 @@
+---
+description: GSC "Crawled - currently not indexed" on UniPrep money pages → strengthen immediately
+alwaysApply: true
+---
+
+# GSC crawled – not indexed → strengthen now
+
+When URL Inspection (or a batch recheck) returns **Crawled - currently not indexed** for a UniPrep `/decks/*` or `/mock-exams/*` money URL:
+
+## Do (same turn)
+
+1. Open the live page + `decks.ts` / `deck-seo.ts` / `deck-money-page-content.ts` (or mock landing equivalents).
+2. **Unique content first** — expand money-page / study-guide copy so it is not a near-duplicate of sibling SKUs (language family decks are the usual fail).
+3. Tighten `seo_title` / description / `directAnswer` / FAQs with concrete exam facts, audience, and “what this is not”.
+4. Bump `lastUpdated` on real content change; run focused tests; `npm run llms:export` if facts/cites change.
+5. Commit/push only when the user asks to ship.
+
+## Do not
+
+- Ignore crawled-not-indexed and only wait for another GSC recheck.
+- Copy-paste another language sibling’s money block with a demonym swap.
+- Invent official exam Q-counts or pass scores.
+
+## Related
+
+- Discovered / unknown → usually wait + re-request; still strengthen if the page is thin.
+- Competitor AEO: `competitor-aeo-cadence.mdc` + ledger (skip SERP rewrite if &lt; 60 days unless user asks).
