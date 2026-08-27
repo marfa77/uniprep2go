@@ -1,0 +1,46 @@
+---
+description: UniPrep2Go dual-track SEO — near-page-one push + FINRA index-first (not weekly FINRA title churn)
+alwaysApply: true
+---
+
+# UniPrep2Go SEO dual-track (live since 2026-08-27)
+
+**Canonical strategy:** `docs/SEO_AUTOPILOT_STRATEGY.md`  
+**Supersedes:** FINRA-only weekly title allowlist (2026-08-06…08-13) while `sie-full-mock` stayed unknown.
+
+## North star (unchanged funnel)
+
+US organic + LLM → free timed mock → Anki/Gumroad.
+
+## Operating model (90 days)
+
+Dual-track — **not** weekly SIE/7/63 mock title churn:
+
+1. **Layer A — Index:** force Google to know money URLs that are unknown / discovered / crawled-not-indexed **and** have 0 impressions. Cap ~8–10 Request indexing / week. Do **not** re-request pages that already have GSC impressions.
+2. **Layer B — Push:** point-edit URLs already at **pos 8–25** into top 10. Max 1–2 URLs/week. One lever (title/meta/H1/directAnswer/FAQ + mock→deck CTA).
+3. **Layer C — FINRA long game:** reopen SIE → 7 → 63 mock SEO **only when** `sie-full-mock` ≠ unknown **and** ≥10 impr/28d **and** Series 63 deck pos ≤8.
+
+## Layer B allowlist (weekly)
+
+- `/`
+- `/decks/ptcb-study-guide-2026`
+- `/decks/cfa-level-2-formula-reference-2026`
+- `/decks/series-63-anki-deck`
+- `/blog/life-in-the-uk-test-why-one-in-three-fail`
+- `/mock-exams/life-and-health-insurance-readiness-check`
+
+Reserve: CA RE blog (pos 26–35), then `/mock-exams` hub.
+
+## Homepage rule
+
+Hero must feature **live Layer B money** (PTCB, CFA L2, Series 63, Life & Health, citizenship). Do **not** billboard SIE as primary CTA while `sie-full-mock` is unknown to Google. SIE may stay a secondary link.
+
+## Freeze (keep live, no weekly SEO)
+
+SIE / Series 7 / Series 63 **mock** title rewrites while SIE unknown · comics · survival/prep2go-app decks · new SKUs · building/LEED weekly · OpenRouter audits · competitor AEO if last pass &lt; 60 days.
+
+## Always
+
+- Crawled-not-indexed money URL → strengthen unique copy same turn (see `gsc-crawled-not-indexed-strengthen.mdc`).
+- After content/cite change: focused tests + `npm run llms:export` when facts/cites change.
+- Ship via `git push origin main` when user asks — no `vercel --prod` CLI.

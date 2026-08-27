@@ -32,7 +32,7 @@ import {
   type BuildingClusterId,
 } from "@/lib/building-cert-clusters";
 import { buildCatalogItemListJsonLd, buildSiteOrganizationJsonLd } from "@/lib/product-jsonld";
-import { getAllMockExams, getMockExamConfig, primaryMock } from "@/lib/mock-exams/configs";
+import { getAllMockExams, getMockExamConfig } from "@/lib/mock-exams/configs";
 import { buildFeaturedMockItemListJsonLd, buildMockExamItemListJsonLd } from "@/lib/mock-exams/llm";
 import { siteConfig } from "@/lib/site";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
@@ -190,46 +190,38 @@ const examPathLinks = [
   },
 ];
 
-/** US money-path mock → deck pairs on the homepage face. Building certs are in #building-repair-pairs. */
+/** US money-path mock → deck pairs — Layer B first (dual-track 2026-08-27). Building certs are in #building-repair-pairs. */
 const mockDeckRepairPairSlugs: Array<{ mockSlug: string; deckSlug: string }> = [
+  { mockSlug: "ptcb-pharmacy-technician-mock", deckSlug: "ptcb-pharmacy-technician-anki-deck" },
+  { mockSlug: "series-63-readiness-check", deckSlug: "series-63-anki-deck" },
+  { mockSlug: "life-and-health-insurance-readiness-check", deckSlug: "life-and-health-insurance-exam-anki-deck" },
+  { mockSlug: "cfa-level-2-readiness-check", deckSlug: "cfa-level-2-anki-deck" },
+  { mockSlug: "us-citizenship-readiness-check", deckSlug: "citizenship-naturalization-anki-bundle" },
+  { mockSlug: "cfa-level-1-readiness-check", deckSlug: "cfa-level-1-anki-deck" },
+  { mockSlug: "series-65-readiness-check", deckSlug: "series-65-anki-deck" },
   { mockSlug: "sie-full-mock", deckSlug: "sie-exam-anki-deck" },
   { mockSlug: "series-7-readiness-check", deckSlug: "series-7-anki-deck" },
-  { mockSlug: "series-63-readiness-check", deckSlug: "series-63-anki-deck" },
-  { mockSlug: "series-65-readiness-check", deckSlug: "series-65-anki-deck" },
   { mockSlug: "california-real-estate-readiness-check", deckSlug: "california-real-estate-exam-anki-deck" },
   { mockSlug: "fl-real-estate-readiness-check", deckSlug: "fl-real-estate-anki-deck" },
   { mockSlug: "tx-real-estate-readiness-check", deckSlug: "tx-real-estate-anki-deck" },
   { mockSlug: "ny-real-estate-readiness-check", deckSlug: "ny-real-estate-anki-deck" },
-  { mockSlug: "life-and-health-insurance-readiness-check", deckSlug: "life-and-health-insurance-exam-anki-deck" },
   { mockSlug: "property-casualty-insurance-readiness-check", deckSlug: "property-casualty-insurance-exam-anki-deck" },
-  { mockSlug: "us-citizenship-readiness-check", deckSlug: "citizenship-naturalization-anki-bundle" },
   { mockSlug: "pmp-readiness-check", deckSlug: "pmp-anki-deck" },
-  { mockSlug: "cfa-level-1-readiness-check", deckSlug: "cfa-level-1-anki-deck" },
-  { mockSlug: "cfa-level-2-readiness-check", deckSlug: "cfa-level-2-anki-deck" },
   { mockSlug: "servsafe-manager-mock", deckSlug: "servsafe-manager-anki-deck" },
-  { mockSlug: "ptcb-pharmacy-technician-mock", deckSlug: "ptcb-pharmacy-technician-anki-deck" },
 ];
 
-/** Compact homepage index-boost row — priority decks + commercial hubs. */
+/** Compact homepage index-boost row — Layer B money first, then hubs. */
 const popularDeckBoostLinks = [
+  { href: "/decks/ptcb-study-guide-2026", label: "PTCB study guide" },
+  { href: "/decks/series-63-anki-deck", label: "Series 63" },
+  { href: "/decks/cfa-level-2-formula-reference-2026", label: "CFA L2 formulas" },
+  { href: "/decks/citizenship-naturalization-anki-bundle", label: "Citizenship bundle" },
+  { href: "/decks/life-and-health-insurance-exam-anki-deck", label: "Life & Health" },
+  { href: "/decks/pmp-anki-deck", label: "PMP" },
   { href: "/decks/cfp-certification-anki-deck", label: "CFP" },
   { href: "/decks/enrolled-agent-anki-deck", label: "Enrolled Agent" },
   { href: "/decks/series-65-anki-deck", label: "Series 65" },
-  { href: "/decks/fl-real-estate-anki-deck", label: "Florida RE" },
-  { href: "/decks/tx-real-estate-anki-deck", label: "Texas RE" },
-  { href: "/decks/series-66-anki-deck", label: "Series 66" },
-  { href: "/decks/pmp-anki-deck", label: "PMP" },
-  { href: "/decks/gmat-focus-anki-deck", label: "GMAT Focus" },
-  { href: "/decks/gre-anki-deck", label: "GRE" },
-  { href: "/decks/nebosh-anki-deck", label: "NEBOSH" },
-  { href: "/decks/leed-green-associate-anki-deck", label: "LEED GA" },
-  { href: "/decks/swiss-citizenship-anki-deck", label: "Swiss citizenship" },
-  { href: "/decks/dutch-a2-inburgering-anki-deck", label: "Dutch A2" },
-  { href: "/decks/delf-b2-french-anki-deck", label: "DELF B2" },
-  { href: "/decks/german-a2-anki-deck", label: "German A2" },
-  { href: "/decks/luxembourg-vivre-ensemble-anki-deck", label: "Luxembourg Vivre ensemble" },
-  { href: "/decks/citizenship-naturalization-anki-bundle", label: "Citizenship bundle" },
-  { href: "/decks/german-a2-for-russian-speakers-anki-deck", label: "German A2 (RU)" },
+  { href: "/decks/sie-exam-anki-deck", label: "SIE" },
   { href: "/decks", label: "All decks" },
   { href: "/finance-anki-decks", label: "Finance hub" },
   { href: "/language-certification-decks", label: "Language hub" },
@@ -238,9 +230,10 @@ const popularDeckBoostLinks = [
 ] as const;
 
 const heroSecondaryLinks = [
-  { href: "/mock-exams/california-real-estate-readiness-check", label: "California real estate" },
-  { href: "/mock-exams/life-and-health-insurance-readiness-check", label: "Life & Health insurance" },
-  { href: "/mock-exams/property-casualty-insurance-readiness-check", label: "P&C insurance" },
+  { href: "/mock-exams/series-63-readiness-check", label: "Series 63 free mock" },
+  { href: "/decks/cfa-level-2-formula-reference-2026", label: "CFA L2 formula PDF" },
+  { href: "/mock-exams/life-and-health-insurance-readiness-check", label: "Life & Health" },
+  { href: "/mock-exams/sie-full-mock", label: "SIE mock (indexing)" },
 ] as const;
 
 const howItWorksSteps = [
@@ -261,25 +254,31 @@ const howItWorksSteps = [
   },
 ];
 
-/** Home featured strip — FINRA ladder + priority readiness checks. */
+/** Home featured strip — Layer B live money first; SIE kept but not lead while unknown to Google. */
 const featuredMockSlugs = [
+  "ptcb-pharmacy-technician-mock",
+  "series-63-readiness-check",
+  "life-and-health-insurance-readiness-check",
+  "cfa-level-2-readiness-check",
+  "us-citizenship-readiness-check",
+  "life-in-the-uk-readiness-check",
+  "cfa-level-1-readiness-check",
+  "series-65-readiness-check",
   "sie-full-mock",
   "series-7-readiness-check",
-  "series-63-readiness-check",
-  "series-65-readiness-check",
+  "cfp-certification-readiness-check",
+  "enrolled-agent-readiness-check",
+  "pmp-readiness-check",
+  "california-real-estate-readiness-check",
+  "property-casualty-insurance-readiness-check",
   "series-6-readiness-check",
   "series-66-readiness-check",
   "series-79-readiness-check",
-  "cfp-certification-readiness-check",
-  "enrolled-agent-readiness-check",
   "gmat-focus-readiness-check",
   "gre-readiness-check",
   "sat-readiness-check",
-  "pmp-readiness-check",
   "nclex-rn-readiness-check",
   "shrm-cp-readiness-check",
-  "us-citizenship-readiness-check",
-  "life-in-the-uk-readiness-check",
   "leben-in-deutschland-readiness-check",
   "naturalisation-francaise-readiness-check",
   "portugal-nacionalidade-readiness-check",
@@ -288,9 +287,6 @@ const featuredMockSlugs = [
   "luxembourg-vivre-ensemble-readiness-check",
   "aspt-phlebotomy-readiness-check",
   "cscs-nsca-readiness-check",
-  "california-real-estate-readiness-check",
-  "life-and-health-insurance-readiness-check",
-  "property-casualty-insurance-readiness-check",
 ] as const;
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -406,39 +402,39 @@ export default async function HomePage() {
       />
       <SiteHeader />
       <FunnelTracker
-        deckSlug={primaryMock.linkedDeckSlug}
+        deckSlug="ptcb-pharmacy-technician-anki-deck"
         sectionEvents={sectionEvents}
-        source={`mock:${primaryMock.slug}:home`}
+        source="mock:ptcb-pharmacy-technician-mock:home"
       />
       <main id="main-content" tabIndex={-1}>
-        {/* 1. Hero — brand, headline, one sentence, CTAs, image */}
+        {/* 1. Hero — live Layer B money (dual-track); SIE secondary until indexed */}
         <section className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
           <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:items-center lg:py-20">
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-                FINRA SIE · Series 7 · Series 63
+                PTCB · Series 63 · Life &amp; Health · CFA
               </p>
               <h1 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight text-balance text-[#18140f] sm:text-5xl">
-                Free SIE practice test — then Series 7 and 63
+                Free timed mocks — then Anki for weak topics
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-8 text-[#4f493e]">
-                Take the free timed SIE mock with a pass/no-pass topic report — no signup — then climb
-                the Series 7 / 63 ladder and drill weak topics with Anki.
+                Start with a free PTCB or Series 63 practice test — pass/no-pass topic report, no
+                signup — then drill daily with Anki or a printable study guide.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
-                  href="/mock-exams/sie-full-mock"
+                  href="/mock-exams/ptcb-pharmacy-technician-mock"
                   className={btnPrimary}
-                  aria-label="Start free SIE practice test"
+                  aria-label="Start free PTCB practice test"
                 >
-                  Start Free SIE Practice Test
+                  Start Free PTCB Mock
                 </Link>
                 <Link
-                  href="/mock-exams/series-7-readiness-check"
+                  href="/decks/series-63-anki-deck"
                   className={btnSecondary}
-                  aria-label="Start Series 7 readiness check"
+                  aria-label="Open Series 63 Anki deck"
                 >
-                  Series 7 readiness
+                  Series 63 Anki deck
                 </Link>
               </div>
               <p className="mt-5 text-sm text-[#5f5749]">
@@ -458,7 +454,7 @@ export default async function HomePage() {
             </div>
             <div className="relative overflow-hidden rounded-[2rem] border border-[#18140f]/10 bg-[#fffaf0] shadow-[0_24px_60px_-32px_rgba(24,20,15,0.35)]">
               <Image
-                alt="UniPrep2Go free FINRA SIE practice test and US securities exam prep"
+                alt="UniPrep2Go free timed practice tests and Anki decks for US licensing exams"
                 className="h-auto w-full object-cover"
                 height={630}
                 priority

@@ -861,12 +861,13 @@ const rawDecks: Deck[] = [
     status: "available",
     title: "Series 63 Anki Deck — 250 High-Yield Flashcards",
     shortName: "Series 63",
-    subtitle: "A focused Anki deck for NASAA Series 63 state securities law active recall.",
+    subtitle:
+      "250 NASAA Series 63 flashcards + free 60-question timed practice test — registration, ethics, communications.",
     directAnswer:
-      "UniPrep2Go sells an independent Series 63 Anki deck with 250 high-yield cards covering NASAA's official exam structure: broker-dealer regulation, agent registration, ethical practices, customer communications, securities and exemptions, investment adviser basics, investment adviser representatives, and remedies. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck is a supplementary active-recall study aid for Series 63 candidates and is not official NASAA material.",
-    lastUpdated: "2026-05-31",
+      "UniPrep2Go sells a Series 63 Anki deck with 250 high-yield cards for NASAA state securities law — broker-dealer regulation, agent registration, ethics, customer communications, securities exemptions, investment adviser basics, and remedies — plus a free 60-question timed Series 63 readiness check (no signup). Delivered as an Anki .apkg for {PRICE} through Gumroad. Independent study aid — not official NASAA or FINRA material.",
+    lastUpdated: "2026-08-27",
     audience:
-      "Series 63 candidates, new broker-dealer agents, SIE and Series 7 candidates who also need state registration, and financial services trainees who want spaced repetition instead of rereading outlines.",
+      "Series 63 candidates, new broker-dealer agents, and SIE/Series 7 passers who need state registration via spaced repetition plus a free timed mock.",
     format: ".apkg",
     coverImage: "/covers/series-63-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/vsbsgw?wanted=true",
@@ -914,6 +915,11 @@ const rawDecks: Deck[] = [
         question: "What does the Series 63 deck include?",
         answer:
           "250 high-yield Anki cards covering NASAA Series 63 topics including broker-dealer regulation, agent registration, ethics, communications, securities and exemptions, investment advisers, and remedies.",
+      },
+      {
+        question: "Is there a free Series 63 practice test?",
+        answer:
+          "Yes. Take the free 60-question timed Series 63 readiness check on UniPrep2Go (no signup), then drill weak topics with this Anki deck between sittings.",
       },
       {
         question: "Who is this deck for?",
@@ -4537,7 +4543,7 @@ const rawDecks: Deck[] = [
       "Printable PTCE study guide for the January 2026 blueprint — domain chapters, 80-question exam, cheat sheets; pairs with free 90Q online mock.",
     directAnswer:
       "The independent PTCB / PTCE study guide PDF for 2026 on UniPrep2Go is a 30-page printable pack aligned to the January 2026 PTCE blueprint: Medications 35%, Federal Requirements 18.75% (with DSCSA), Patient Safety & QA 23.75%, Order Entry & Processing 22.5% — plus an 80-question practice exam with domain-scored answer key, three cheat sheets (60 drugs, 45 sig codes, math), and a 4-week plan. It pairs with UniPrep2Go’s free 90-question timed online mock and a separate 300-card Anki deck (sold separately). Not a free blog outline that still teaches removed compounding topics. Delivered for {PRICE} through Gumroad. Independent — not official PTCB, NHA, FDA, or DEA material.",
-    lastUpdated: "2026-08-13",
+    lastUpdated: "2026-08-27",
     audience:
       "PTCE candidates who want one structured printable document — read domain chapters, take the 80-question practice exam, print cheat sheets, and pair with spaced-repetition drills on the companion Anki deck.",
     format: "PDF",

@@ -226,9 +226,10 @@ export function finalize(meta: Metadata): Metadata {
 
 export function homeMetadata(): Metadata {
   // Keep absolute title ≤57 chars (Ahrefs / audit TITLE_MAX).
-  const title = "Free SIE Practice Test | Series 7 & 63";
+  // Dual-track (2026-08-27): hero money = live Layer B, not unknown SIE billboard.
+  const title = "Free PTCB & Series 63 Mocks | Anki Decks";
   const description =
-    "Free timed FINRA SIE practice test + Series 7/63 checks — then focused Anki for CFA, FRM, CA real estate, and metals desks. Pass/no-pass topic reports. No signup.";
+    "Free timed PTCB, Series 63, Life & Health, and CFA practice — then Anki/PDF decks. Pass/no-pass topic reports. No signup. Independent prep.";
 
   return finalize({
     title: {
