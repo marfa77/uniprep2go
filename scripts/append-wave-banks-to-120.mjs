@@ -24,6 +24,8 @@ const SOURCE_BY_SLUG = {
   "mortgage-loan-originator-readiness-check": "Original UniPrep2Go local bank (Wave 3 quality).",
   "rd-exam-readiness-check":
     "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys.",
+  "belgium-flanders-mo-readiness-check":
+    "Original UniPrep2Go local bank (Belgium Flanders MO).",
   "luxembourg-vivre-ensemble-readiness-check":
     "Original UniPrep2Go local bank (Luxembourg Vivre ensemble).",
 };

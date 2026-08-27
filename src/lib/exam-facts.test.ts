@@ -205,4 +205,20 @@ describe("exam facts layer", () => {
     expect(profile!.exam_facts.passing_score).toMatch(/70%/);
     expect(profile!.candidate_qa.some((item) => /Sproochentest/i.test(item.a))).toBe(true);
   });
+
+  it("returns a Flanders MO profile with AgII pathway facts", () => {
+    const profile = getExamFactsProfileForDeck("belgium-flanders-mo-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.passing_score).toMatch(/70%/);
+    expect(profile!.exam_facts.passing_score).toMatch(/60%/);
+    expect(profile!.candidate_qa.some((item) => /Wallonia/i.test(item.a))).toBe(true);
+  });
+
+  it("returns a Finland kansalaisuuskoe profile with 2027 application gate", () => {
+    const profile = getExamFactsProfileForDeck("finland-kansalaisuuskoe-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.verify_at_url).toContain("migri.fi");
+    expect(profile!.high_yield_facts.some((fact) => /1 March 2027/i.test(fact))).toBe(true);
+    expect(profile!.candidate_qa.some((item) => /Anki deck/i.test(item.a))).toBe(true);
+  });
 });

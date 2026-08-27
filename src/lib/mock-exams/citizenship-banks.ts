@@ -17,6 +17,7 @@ import swedenBank from "@/data/mock-exams/sweden-medborgarskapsprov-readiness-ch
 import belgiumFlandersBank from "@/data/mock-exams/belgium-flanders-mo-readiness-check.json";
 import belgiumWallonieBank from "@/data/mock-exams/belgium-wallonie-citoyennete-readiness-check.json";
 import luxembourgBank from "@/data/mock-exams/luxembourg-vivre-ensemble-readiness-check.json";
+import finlandBank from "@/data/mock-exams/finland-kansalaisuuskoe-readiness-check.json";
 
 export const citizenshipBanksBySlug: Record<string, MockQuestion[]> = {
   "leben-in-deutschland-readiness-check": lebenBank as unknown as MockQuestion[],
@@ -37,4 +38,5 @@ export const citizenshipBanksBySlug: Record<string, MockQuestion[]> = {
   "belgium-flanders-mo-readiness-check": belgiumFlandersBank as unknown as MockQuestion[],
   "belgium-wallonie-citoyennete-readiness-check": belgiumWallonieBank as unknown as MockQuestion[],
   "luxembourg-vivre-ensemble-readiness-check": luxembourgBank as unknown as MockQuestion[],
+  "finland-kansalaisuuskoe-readiness-check": finlandBank as unknown as MockQuestion[],
 };

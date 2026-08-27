@@ -511,6 +511,90 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
       "guichet vivre ensemble",
     ],
   },
+  "finland-kansalaisuuskoe-readiness-check": {
+    practiceTestName: "Finland Kansalaisuuskoe Readiness Check (2027)",
+    whatIsExam:
+      "Finland’s kansalaisuuskoe is a new citizenship knowledge test required for applications submitted from 1 March 2027 under the amended Citizenship Act (effective 1 January 2027). Maahanmuuttovirasto (Migri) will organise a computer-based test in Finnish or Swedish for working-age applicants (typically 18–65); Helsingin yliopisto is preparing shared learning materials to be published on migri.fi before the first sitting. Government communications have cited roughly 20–40 multiple-choice questions and about a 70% pass threshold — treat those figures as provisional until Migri publishes binding exam rules. Topics include legislation, fundamental and human rights, equality, Finnish history, and culture. Exemptions may apply for a Finnish/Swedish matriculation exam or a higher-education degree completed in Finnish or Swedish. There is no official public question bank yet. This UniPrep2Go page is an independent Finnish-language diagnostic (60 questions, 45 minutes, 70% pass) on overlapping themes — not Migri material and not a substitute for the official computer test.",
+    administeredBy:
+      "Maahanmuuttovirasto (Migri) for the citizenship test; learning materials prepared by the University of Helsinki and published on migri.fi. Confirm application timing, exemptions, and booking on migri.fi before you assume exam-day rules.",
+    officialFormat:
+      "NEW from 1 Mar 2027 applications: computer-based kansalaisuuskoe in Finnish or Swedish; government proposals cited ~20–40 MCQs and ~70% pass — confirm final format on migri.fi when materials ship. UniPrep2Go readiness check on this page: 60 timed questions, 45 minutes, 70% diagnostic pass — longer than the proposed official paper, for topic scoring only.",
+    whoFor:
+      "Applicants filing Finnish citizenship from March 2027 onward who cannot rely on a Finnish/Swedish matriculation or degree exemption; residents who want Finnish-language civic literacy while waiting for Migri’s official bank; and learners comparing Nordic citizenship tests. Not legal advice and not the official Migri exam.",
+    howToPrepare:
+      "1) Check whether your application date falls under the 1 March 2027 rule and whether a degree/matriculation exemption applies. 2) Watch migri.fi for the University of Helsinki learning package — study that first when it publishes. 3) Build literacy on Eduskunta, government, rights, equality, history, EU membership (1995), and everyday services (Kela, police, TE Services). 4) Take this free 60-question Finnish readiness check and repair weak domains. 5) When official samples appear, switch drills to Migri’s format. UniPrep2Go does not sell a Finland kansalaisuuskoe Anki deck — mock-only prep on this pathway.",
+    topicBlurbs: [
+      {
+        id: "state-democracy",
+        label: "Valtio ja demokratia",
+        blurb:
+          "Tasavalta, eduskunta, hallitus, presidentti, Ahvenanmaan autonomia ja demokratian perusteet.",
+      },
+      {
+        id: "history-geo-eu",
+        label: "Historia, maantiede ja EU",
+        blurb:
+          "Itsenäisyys, naapurimaat, EU-jäsenyys, kulttuuri ja maantiede — merkitys eikä pelkkä vuositrivia.",
+      },
+      {
+        id: "rights-society",
+        label: "Oikeudet ja yhteiskunta",
+        blurb:
+          "Perusoikeudet, tasa-arvo, yhdenvertaisuus, uskonnonvapaus ja arjen osallistuminen.",
+      },
+      {
+        id: "services-extras",
+        label: "Palvelut ja arki",
+        blurb:
+          "Kela, terveydenhuolto, kunnat, hätänumero 112, Migri-asiointi ja käytännön palvelut.",
+      },
+    ],
+    examFaqs: [
+      {
+        question: "Milloin Suomen kansalaisuuskoe tulee voimaan?",
+        answer:
+          "Laki astuu voimaan 1.1.2027. Koe koskee hakemuksia, jotka jätetään 1.3.2027 tai sen jälkeen. Hakemukset 28.2.2027 mennessä käsitellään siirtymäsäännösten mukaan — tarkista Migristä.",
+      },
+      {
+        question: "Onko tämä UniPrep2Go-sivu virallinen Migri-koe?",
+        answer:
+          "Ei. Tämä on itsenäinen harjoitustesti suomeksi. Se ei ole Maahanmuuttoviraston materiaalia eikä korvaa virallista konetestausta.",
+      },
+      {
+        question: "Mikä on virallinen kansalaisuuskokeen muoto?",
+        answer:
+          "Lopullista julkista spesifikaatiota ei ole vielä julkaistu. Hallituksen esityksissä on mainittu noin 20–40 monivalintakysymystä ja noin 70 % läpäisyraja — vahvista migri.fi-sivuilta, kun oppimateriaali julkaistaan.",
+      },
+      {
+        question: "Voiko kokeen korvata tutkinnolla?",
+        answer:
+          "Migri mainitsee vaihtoehtoja, kuten suomen- tai ruotsinkielisen ylioppilastutkinnon tai Suomessa suoritetun korkeakoulututkinnon. Tarkista poikkeukset virallisista lähteistä.",
+      },
+      {
+        question: "Millä kielellä koe suoritetaan?",
+        answer:
+          "Virallinen koe on suomeksi tai ruotsiksi. Tämä harjoitustesti on suomeksi.",
+      },
+      {
+        question: "Onko ilmainen kansalaisuuskoe-harjoitustesti saatavilla?",
+        answer:
+          "Kyllä — tämä UniPrep2Go-valmiustesti on ilmainen 60 kysymyksen ajoitettu diagnostiikka. Kun Migri julkaisee virallisen pankin, harjoittele sen mukaan.",
+      },
+      {
+        question: "Myykö UniPrep2Go Suomen kansalaisuuskoe-Anki-pakkaa?",
+        answer:
+          "Ei. Tälle polulle tarjotaan vain ilmainen mock. Käytä Migri-materiaalia ja tätä testiä.",
+      },
+    ],
+    keywords: [
+      "kansalaisuuskoe",
+      "finnish citizenship practice test",
+      "suomen kansalaisuuskoe",
+      "kansalaisuustesti 2027",
+      "migri citizenship test",
+      "finland naturalisation test",
+    ],
+  },
   "belgium-flanders-mo-readiness-check": {
     practiceTestName: "Belgium Flanders MO Readiness Check",
     whatIsExam:
@@ -518,11 +602,11 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     administeredBy:
       "Flanders: Agentschap Integratie & Inburgering / local inburgering partners for MO and Dutch. Naturalisation: federal / municipal pathways. Proposed national test: not a stable bookable federal MCQ yet — verify on official Belgian and Flemish pages.",
     officialFormat:
-      "No single federal Belgian citizenship MCQ in force. Live Flanders path: maatschappelijke oriëntatie (course/agency rules) + Dutch language — not one national 60-question paper. Proposed federal knowledge test: format unpublished. UniPrep2Go mock: independent 60/45/70 diagnostic only.",
+      "No single federal Belgian citizenship MCQ in force. Live Flanders path: 60-hour MO course under Agentschap Integratie & Inburgering, then a standardized digital standaardtest MO (learner’s language, audio-supported) weighted 60% alongside 40% in-class process evaluation — total pass threshold 70% from 2 Feb 2026 per AgII publications (verify reglement). Dutch NT2 A2 is a separate pillar. Proposed federal knowledge test: format unpublished. UniPrep2Go mock: independent 60/45/70 Dutch diagnostic only — not the official standaardtest.",
     whoFor:
       "Newcomers in Flanders preparing maatschappelijke oriëntatie and Dutch; applicants who wrongly expect a federal MCQ like CCSE or Life in the UK; and learners future-proofing against a proposed national test. Not legal advice and not official inburgering material.",
     howToPrepare:
-      "1) Register your inburgering / MO pathway with the correct Flemish agency. 2) Prioritise Dutch evidence and MO course requirements that actually appear on your contract. 3) Build civic literacy on Belgian/Flemish institutions, rights, history, EU, and daily life. 4) Use this free 60-question check to find weak domains. 5) If a federal test is enacted, switch to that official bank. Join the Belgium Flanders MO Anki waitlist for cards when they ship.",
+      "1) Register your inburgering / MO pathway with the correct Flemish agency. 2) Prioritise Dutch evidence and MO course requirements that actually appear on your contract. 3) Build civic literacy on Belgian/Flemish institutions, rights, history, EU, and daily life. 4) Use this free 60-question check to find weak domains. 5) If a federal test is enacted, switch to that official bank. Pair Dutch NT2 with the live Dutch A2 Inburgering Anki deck; drill MO civics with the 120-card Flanders MO Anki after this free check.",
     topicBlurbs: [
       {
         id: "institutions-orientation",
@@ -558,7 +642,12 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
       {
         question: "What is maatschappelijke oriëntatie (MO)?",
         answer:
-          "MO is Flanders’ social orientation / civic integration component — typically course-based under Agentschap Integratie & Inburgering rules, not a federal passport MCQ like Life in the UK.",
+          "MO is Flanders’ mandatory social-orientation course (about 60 hours) followed by AgII’s standardized digital standaardtest MO plus in-class process evaluation (60% test / 40% process). It is not a federal passport MCQ like Life in the UK.",
+      },
+      {
+        question: "What is the official MO pass rule?",
+        answer:
+          "AgII combines the standaardtest score (60%) with teacher process evaluation (40%). Publications note the total pass threshold rising to 70% from 2 February 2026 — confirm the current reglement on integratie-inburgering.be before your sitting.",
       },
       {
         question: "Is this UniPrep2Go page the official Flanders MO exam?",

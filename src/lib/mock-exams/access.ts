@@ -3,6 +3,8 @@ import { getMockExamConfig } from "./configs";
 import { mockFunnelNoticeForLinkedDeck } from "./pricing";
 import type { MockAccessState } from "./types";
 
+export { getMockCta } from "./mock-cta";
+
 export function getMockAccessState(mockSlug: string): MockAccessState | null {
   const config = getMockExamConfig(mockSlug);
 
@@ -47,18 +49,6 @@ export function getMockAccessState(mockSlug: string): MockAccessState | null {
 
 export function isFullReportUnlocked(accessState: MockAccessState | null) {
   return accessState?.fullReportUnlocked === true;
-}
-
-export function getMockCta(accessState: MockAccessState | null) {
-  if (!accessState) {
-    return null;
-  }
-
-  return {
-    label: accessState.ctaLabel,
-    description: accessState.ctaDescription,
-    interestCaptureEnabled: accessState.interestCaptureEnabled,
-  };
 }
 
 /** @deprecated Prefer verifyGumroadLearnLicense for Learn Pass credits. */

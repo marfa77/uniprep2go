@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { parseMarkdownTable, parseQuestionContentBlocks } from "./question-content";
+import {
+  needsMathRendering,
+  parseMarkdownTable,
+  parseQuestionContentBlocks,
+} from "./question-content";
 
 describe("question content parsing", () => {
   it("parses markdown tables embedded in prompts", () => {
@@ -25,6 +29,11 @@ Did the company meet the target?`;
     });
     expect(blocks[2]).toMatchObject({ type: "text" });
     expect(blocks[0]?.type === "text" && blocks[0].content).toContain("$ thousands");
+  });
+
+  it("detects when math rendering is needed", () => {
+    expect(needsMathRendering("Solve \\(x^2 + 1 = 0\\)")).toBe(true);
+    expect(needsMathRendering("Plain text with no math")).toBe(false);
   });
 
   it("detects right-aligned table columns", () => {

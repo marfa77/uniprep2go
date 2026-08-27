@@ -1,10 +1,10 @@
 import type { MockExamConfig, MockReport } from "@/lib/mock-exams/types";
 import type { MockSessionMode } from "@/lib/mock-exams/session-mode";
-import { getCatalogDeckBySlug } from "@/lib/decks";
 import { FormulaBlock } from "./formula-block";
 import { MathContent } from "./math-content";
 import { QuestionContent } from "./question-content";
 import { MockReportHandoff, type LinkedDeckCheckout } from "./mock-report-handoff";
+import { MockCompanionDecksPanel, type MockCompanionCheckout } from "./mock-companion-decks-panel";
 
 function verdictStyles(verdict: MockReport["verdict"]) {
   switch (verdict) {
@@ -46,6 +46,8 @@ function topicBarTone(status: MockReport["topicResults"][number]["status"]) {
 type MockReportPanelProps = {
   config: MockExamConfig;
   linkedCheckout: LinkedDeckCheckout | null;
+  linkedDeckShortName?: string;
+  companionCheckouts?: MockCompanionCheckout[];
   report: MockReport;
   sessionMode?: MockSessionMode;
 };
@@ -53,11 +55,13 @@ type MockReportPanelProps = {
 export function MockReportPanel({
   config,
   linkedCheckout,
+  linkedDeckShortName,
+  companionCheckouts = [],
   report,
   sessionMode = "exam",
 }: MockReportPanelProps) {
-  const linkedDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
-  const deckShortName = linkedDeck?.shortName ?? config.linkedDeckSlug.replace(/-/g, " ");
+  const deckShortName =
+    linkedDeckShortName ?? config.linkedDeckSlug.replace(/-anki-deck$/, "").replace(/-/g, " ");
   const shouldRecommendDeck =
     report.verdict === "NO PASS" || report.verdict === "BORDERLINE RISK";
   const showExamPacing = sessionMode === "exam";
@@ -262,6 +266,8 @@ export function MockReportPanel({
           weakTopicLabels={weakTopicLabels}
         />
       </section>
+
+      <MockCompanionDecksPanel companions={companionCheckouts} config={config} />
 
       <p className="text-sm leading-7 text-[#7a6e5a]">{report.disclaimer}</p>
     </div>

@@ -186,7 +186,7 @@ function prepareSquareThumbnail(coverPath, slug) {
       `sips -c ${side} ${side} --cropOffset ${cropX} 0 "${fullPng}" --out "${squarePng}"`,
       { stdio: "ignore" },
     );
-    execSync(`sips -z 1200 1200 "${squarePng}" --out "${squarePng}"`, { stdio: "ignore" });
+    execSync(`sips -z 600 600 "${squarePng}" --out "${squarePng}"`, { stdio: "ignore" });
     execSync(`sips -s format jpeg "${squarePng}" --out "${thumbJpg}"`, { stdio: "ignore" });
     return { thumbJpg, workDir, prebuilt: false };
   } catch (error) {
@@ -233,7 +233,7 @@ function uploadProductThumbnail({ productId, slug, coverPath, dryRun }) {
   const { thumbJpg, workDir, prebuilt } = prepareSquareThumbnail(coverPath, slug);
   try {
     console.log(
-      `  thumbnail: 1200×1200 JPEG${prebuilt ? " (blueprint square)" : " (cropped fallback)"}`,
+      `  thumbnail: 600×600 JPEG${prebuilt ? " (blueprint square)" : " (cropped fallback)"}`,
     );
     runGumroad(`products thumbnail set ${productId} --image "${thumbJpg}"`, { dryRun });
   } finally {
@@ -260,7 +260,7 @@ function uploadProductAssets({
   const { thumbJpg, workDir, prebuilt } = prepareSquareThumbnail(coverPath, slug);
   try {
     console.log(
-      `  assets: thumbnail (1200×1200 JPEG${prebuilt ? ", blueprint square" : ", cropped fallback"})`,
+      `  assets: thumbnail (600×600 JPEG${prebuilt ? ", blueprint square" : ", cropped fallback"})`,
     );
     runGumroad(`products thumbnail set ${productId} --image "${thumbJpg}"`, { dryRun });
 

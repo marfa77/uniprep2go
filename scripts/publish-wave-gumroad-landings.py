@@ -191,7 +191,7 @@ def render_landing(
     mock_slug = spec.get("mockSlug") or ""
     checkout = product.get("short_url") or product.get("url") or f"https://pixidstudio.gumroad.com/l/{slug}"
     price = product.get("formatted_price") or product.get("price") or "$11"
-    headline = product.get("name") or spec.get("gumroadName") or f"{exam} Anki Deck"
+    headline = spec.get("gumroadName") or product.get("name") or f"{exam} Anki Deck"
     mock_url = f"https://uniprep2go.study/mock-exams/{mock_slug}" if mock_slug else "https://uniprep2go.study/mock-exams"
     deck_url = f"https://uniprep2go.study/decks/{slug}"
     topics = list((spec.get("topics") or {}).values())

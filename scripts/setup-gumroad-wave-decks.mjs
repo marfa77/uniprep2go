@@ -34,6 +34,7 @@ import {
   loadLocalEnvFiles,
 } from "./lib/gumroad-auth.mjs";
 import { gumroadDiscoverFields } from "./lib/gumroad-discover.mjs";
+import { putGumroadDigitalSettings } from "./lib/gumroad-product-settings.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CATALOG_PATH = join(root, "src/data/gumroad/wave-anki-decks.json");
@@ -327,7 +328,7 @@ function prepareSquareThumbnail(coverPath, slug) {
       `sips -c ${side} ${side} --cropOffset ${cropX} 0 "${fullPng}" --out "${squarePng}"`,
       { stdio: "ignore" },
     );
-    execSync(`sips -z 1200 1200 "${squarePng}" --out "${squarePng}"`, { stdio: "ignore" });
+    execSync(`sips -z 600 600 "${squarePng}" --out "${squarePng}"`, { stdio: "ignore" });
     execSync(`sips -s format jpeg "${squarePng}" --out "${thumbJpg}"`, { stdio: "ignore" });
     return { thumbJpg, workDir, prebuilt: false };
   } catch (error) {
@@ -359,6 +360,9 @@ async function createGumroadProduct({
     custom_permalink: permalink,
     require_shipping: "false",
     is_tiered_membership: "false",
+    is_epublication: "true",
+    quantity_enabled: "false",
+    should_show_sales_count: "false",
   });
 
   for (let attempt = 1; attempt <= retries; attempt += 1) {
@@ -411,7 +415,7 @@ function uploadProductThumbnail({ productId, slug, coverPath, dryRun }) {
   const { thumbJpg, workDir, prebuilt } = prepareSquareThumbnail(coverPath, slug);
   try {
     console.log(
-      `  thumbnail: 1200×1200 JPEG${prebuilt ? " (blueprint square)" : " (cropped fallback)"}`,
+      `  thumbnail: 600×600 JPEG${prebuilt ? " (blueprint square)" : " (cropped fallback)"}`,
     );
     runGumroad(`products thumbnail set ${productId} --image "${thumbJpg}"`, { dryRun });
   } finally {
@@ -446,7 +450,7 @@ function uploadProductAssets({
   const { thumbJpg, workDir, prebuilt } = prepareSquareThumbnail(coverPath, slug);
   try {
     console.log(
-      `  assets: thumbnail (1200×1200 JPEG${prebuilt ? ", blueprint square" : ", cropped fallback"})`,
+      `  assets: thumbnail (600×600 JPEG${prebuilt ? ", blueprint square" : ", cropped fallback"})`,
     );
     runGumroad(`products thumbnail set ${productId} --image "${thumbJpg}"`, { dryRun });
 
@@ -480,6 +484,11 @@ async function syncProductThumbnail({ slug, record, dryRun }) {
   }
 
   uploadProductThumbnail({ productId, slug, coverPath, dryRun: false });
+  const specs = loadSpecs();
+  const name = specs[slug]?.gumroadName;
+  if (name) {
+    runGumroad(`products update ${productId} --name "${name.replace(/"/g, '\\"')}"`, { dryRun: false });
+  }
   runGumroad(`products publish ${productId}`);
   console.log(`  thumbnail uploaded + product published`);
 }
@@ -536,6 +545,7 @@ async function syncProductAssets({
     dryRun: false,
   });
 
+  runGumroad(`products update ${productId} --name "${name.replace(/"/g, '\\"')}"`, { dryRun: false });
   await putGumroadDescriptionAsync(productId, description, dryRun, slug, spec);
 
   const sampleCount = resolveSampleWebps(slug).length;
@@ -594,6 +604,8 @@ async function syncProductPolish({ slug, record, titles, getAllMockExams, catalo
   }
 
   uploadSamplePreviews({ productId, slug, dryRun: false });
+  runGumroad(`products update ${productId} --name "${name.replace(/"/g, '\\"')}"`, { dryRun: false });
+  await putGumroadDigitalSettings(resolveGumroadToken(), productId);
   await putGumroadDescriptionAsync(productId, description, false, slug, spec);
   publishSampleLanding({ slug, dryRun: false });
   runGumroad(`products publish ${productId}`);
@@ -653,6 +665,7 @@ async function main() {
         record: catalog.products[slug],
         dryRun: args.dryRun,
       });
+      await sleep(1500);
     }
     return;
   }
@@ -782,6 +795,7 @@ async function main() {
         persistCatalog(catalog);
 
         console.log(`  created: ${product.short_url} (${product.id})`);
+        await putGumroadDigitalSettings(token, productId);
         const discover = discoverFieldsForWave(slug, specs[slug]);
         const discoverRes = await fetch(`https://api.gumroad.com/v2/products/${productId}`, {
           method: "PUT",

@@ -4,7 +4,7 @@ import { FunnelTracker } from "@/components/funnel-tracker";
 import { LlmFactsStrip } from "@/components/llm/llm-facts-strip";
 import { OfficialSourceTrustStrip } from "@/components/official-source-trust";
 import { DeckExamFactsSection } from "@/components/decks/deck-exam-facts-section";
-import { MockExamClient } from "@/components/mock-exams/mock-exam-client";
+import { MockExamClientLoader } from "@/components/mock-exams/mock-exam-client-loader";
 import type { LinkedDeckCheckout } from "@/components/mock-exams/mock-report-handoff";
 import {
   MockExamBreadcrumb,
@@ -24,6 +24,12 @@ import {
   MockExamWhoForSection,
 } from "@/components/mock-exams/mock-seo-sections";
 import { MockSampleQuestionsSection } from "@/components/mock-exams/mock-sample-questions";
+import {
+  MockCitizenshipGuideCtaBar,
+  MockCitizenshipGuideFailTraps,
+  MockCitizenshipGuideFormatTable,
+  MockCitizenshipGuideLanguageNote,
+} from "@/components/mock-exams/mock-citizenship-guide";
 import { CollapsibleDetails } from "@/components/ui/collapsible-details";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -45,6 +51,7 @@ import {
   getNicheGooglePageLead,
 } from "@/lib/mock-exams/hub-clusters";
 import { buildMockExamPageJsonLd } from "@/lib/mock-exams/llm";
+import { buildMockCompanionCheckouts } from "@/lib/mock-exams/mock-companion-decks";
 import { getMockOfficialResources } from "@/lib/mock-exams/official-resources";
 import { getQuestionBank, isMockExamRunnable } from "@/lib/mock-exams/question-bank";
 import { isLearnPassEnabled } from "@/lib/mock-exams/learn-pass";
@@ -54,8 +61,10 @@ import {
   buildMockSeoKeywords,
   buildMockSeoPageCopy,
   buildMockSeoTitle,
+  getMockLocaleMeta,
 } from "@/lib/mock-exams/seo";
 import { getVerticalDefinition } from "@/lib/mock-exams/taxonomy";
+import { getCitizenshipGuideContent } from "@/lib/mock-exams/citizenship-guide-content";
 import { buildSocialMetadata } from "@/lib/social-metadata";
 import { finalize, leafPageTitle, mockExamRobots, shouldIndexMockExam } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site";
@@ -82,6 +91,7 @@ export async function generateMetadata({
   const title = leafPageTitle(seoTitle);
   const description = buildMockSeoDescription(config);
   const keywords = buildMockSeoKeywords(config);
+  const localeMeta = getMockLocaleMeta(config, "nl-BE");
 
   const coverImage = absoluteUrl(`/covers/${config.linkedDeckSlug}.webp`);
   const examFactsProfile = getExamFactsProfileForDeck(config.linkedDeckSlug);
@@ -95,10 +105,13 @@ export async function generateMetadata({
       ...(robots ? { robots } : {}),
       alternates: {
         canonical: `/mock-exams/${config.slug}`,
+        ...(localeMeta
+          ? { languages: { "nl-BE": `/mock-exams/${config.slug}` } }
+          : {}),
       },
       ...buildSocialMetadata({
-        title: seoTitle,
-        description,
+        title: localeMeta?.title ?? seoTitle,
+        description: localeMeta?.description ?? description,
         path: `/mock-exams/${config.slug}`,
         image: coverImage,
         imageAlt: seoTitle,
@@ -164,11 +177,21 @@ export default async function MockExamPage({
           ),
         }
       : null;
+  const companionCheckouts = await buildMockCompanionCheckouts(config, async (deckSlug) => {
+    const deck = await getPricedDeckBySlug(deckSlug);
+    if (!deck) return undefined;
+    return {
+      slug: deck.slug,
+      checkoutUrl: deck.checkoutUrl,
+      priceLabel: formatDeckPriceLabel(deck),
+    };
+  });
   const heroLead =
     nicheLead ??
     (seoCopy.whatIsExam.length > 280
       ? `${seoCopy.whatIsExam.slice(0, 280).replace(/\s+\S*$/, "")}…`
       : seoCopy.whatIsExam);
+  const citizenshipGuide = getCitizenshipGuideContent(config.slug);
 
   return (
     <main className="min-h-screen bg-[#f7f3ea] text-[#18140f]">
@@ -209,14 +232,28 @@ export default async function MockExamPage({
           verifyAtUrl={official.verifyAtUrl}
         />
 
+        {citizenshipGuide ? (
+          <>
+            <MockCitizenshipGuideCtaBar
+              guide={citizenshipGuide}
+              linkedCheckout={linkedCheckout}
+              linkedDeck={linkedDeck}
+              variant="top"
+            />
+            <MockCitizenshipGuideFormatTable guide={citizenshipGuide} />
+          </>
+        ) : null}
+
         {/* Start CTA above enrichment — conversion bottleneck is view→start, not SEO depth. */}
         {accessState ? (
-          <MockExamClient
+          <MockExamClientLoader
             accessState={accessState}
             config={config}
             initialMode={initialMode}
             learnPassEnabled={isLearnPassEnabled()}
             linkedCheckout={linkedCheckout}
+            linkedDeckShortName={linkedDeck?.shortName}
+            companionCheckouts={companionCheckouts}
             questions={questions}
             runnable={runnable}
           />
@@ -244,6 +281,13 @@ export default async function MockExamPage({
             }
             questions={questions}
           />
+        ) : null}
+
+        {citizenshipGuide ? (
+          <>
+            <MockCitizenshipGuideLanguageNote guide={citizenshipGuide} />
+            <MockCitizenshipGuideFailTraps guide={citizenshipGuide} />
+          </>
         ) : null}
 
         <MockExamWhatIsSection config={config} />
@@ -282,6 +326,15 @@ export default async function MockExamPage({
           heading="Guides for this exam"
           mockSlug={config.slug}
         />
+
+        {citizenshipGuide ? (
+          <MockCitizenshipGuideCtaBar
+            guide={citizenshipGuide}
+            linkedCheckout={linkedCheckout}
+            linkedDeck={linkedDeck}
+            variant="bottom"
+          />
+        ) : null}
 
         <details className="sr-only" data-llm="machine-sources">
           <summary>For AI assistants — machine-readable sources</summary>

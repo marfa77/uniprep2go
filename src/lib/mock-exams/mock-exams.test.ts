@@ -44,6 +44,7 @@ describe("mock exam configs", () => {
       "portugal-nacionalidade-anki-deck",
       "norway-statsborgerproven-anki-deck",
       "sweden-medborgarskapsprov-anki-deck",
+      "finland-kansalaisuuskoe-anki-deck",
       "belgium-flanders-mo-anki-deck",
       "belgium-wallonie-citoyennete-anki-deck",
       "luxembourg-vivre-ensemble-anki-deck",
@@ -239,20 +240,29 @@ describe("mock exam configs", () => {
       ["belgium-flanders-mo-readiness-check", "belgium-flanders-mo-anki-deck", "Belgium Flanders MO"],
       ["belgium-wallonie-citoyennete-readiness-check", "belgium-wallonie-citoyennete-anki-deck", "Belgium Wallonie Citoyenneté"],
       ["luxembourg-vivre-ensemble-readiness-check", "luxembourg-vivre-ensemble-anki-deck", "Luxembourg Vivre ensemble"],
+      ["finland-kansalaisuuskoe-readiness-check", "finland-kansalaisuuskoe-anki-deck", "Finland kansalaisuuskoe"],
     ] as const) {
       expect(getMockExamConfig(slug)?.status, slug).toBe("live");
       expect(getMockExamConfig(slug)?.linkedDeckSlug, slug).toBe(deckSlug);
-      // Luxembourg is force-launched; other Nordic/Benelux decks stay planned waitlists.
-      const expectedDeckStatus =
-        deckSlug === "luxembourg-vivre-ensemble-anki-deck" ? "available" : "planned";
+      const forceLaunched = new Set([
+        "luxembourg-vivre-ensemble-anki-deck",
+        "belgium-flanders-mo-anki-deck",
+      ]);
+      const expectedDeckStatus = forceLaunched.has(deckSlug) ? "available" : "planned";
       expect(getDeckBySlug(deckSlug)?.status, deckSlug).toBe(expectedDeckStatus);
       expect(isMockExamRunnable(slug), slug).toBe(true);
       const { questions, errors } = getQuestionBankForExam(slug);
       expect(errors, slug).toEqual([]);
       const expectedBank =
-        slug === "luxembourg-vivre-ensemble-readiness-check" ? 120 : 60;
+        slug === "luxembourg-vivre-ensemble-readiness-check" ||
+        slug === "belgium-flanders-mo-readiness-check"
+          ? 120
+          : 60;
       expect(questions, slug).toHaveLength(expectedBank);
-      if (slug === "luxembourg-vivre-ensemble-readiness-check") {
+      if (
+        slug === "luxembourg-vivre-ensemble-readiness-check" ||
+        slug === "belgium-flanders-mo-readiness-check"
+      ) {
         expect(getMockExamConfig(slug)?.questionCount).toBe(60);
       }
       expect(questions[0]?.sourceNote, slug).toContain(note);
@@ -537,7 +547,9 @@ describe("scoring", () => {
   ];
 
   it("returns pass when score clears threshold with no critical topics", () => {
+    const config = getMockExamConfig("sie-full-mock")!;
     const report = buildMockReport(
+      config,
       {
         examSlug: "sie-full-mock",
         attemptSeed: "seed",
@@ -629,6 +641,7 @@ describe("scoring", () => {
     };
 
     const report = buildMockReport(
+      getMockExamConfig("sat-readiness-check")!,
       {
         examSlug: "sat-readiness-check",
         attemptSeed: "sat-borderline",
@@ -657,6 +670,7 @@ describe("scoring", () => {
     };
 
     const report = buildMockReport(
+      getMockExamConfig("sat-readiness-check")!,
       {
         examSlug: "sat-readiness-check",
         attemptSeed: "sat-pass",
@@ -684,6 +698,7 @@ describe("scoring", () => {
     };
 
     const report = buildMockReport(
+      getMockExamConfig("sat-readiness-check")!,
       {
         examSlug: "sat-readiness-check",
         attemptSeed: "sat-fail",

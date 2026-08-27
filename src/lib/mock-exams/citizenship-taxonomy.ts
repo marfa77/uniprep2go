@@ -97,4 +97,9 @@ export const citizenshipTaxonomyEntries: Record<string, CitizenshipTaxonomyEntry
     familyId: "citizenship",
     searchAliases: ["Vivre ensemble Luxembourg", "Luxembourg citizenship"],
   },
+  "finland-kansalaisuuskoe-readiness-check": {
+    verticalId: "citizenship",
+    familyId: "citizenship",
+    searchAliases: ["kansalaisuuskoe", "Finnish citizenship test", "kansalaisuustesti"],
+  },
 };

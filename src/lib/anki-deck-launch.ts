@@ -52,6 +52,7 @@ export const WAVE_LAUNCH_COHORTS = new Set(["money"]);
 /** Non-money wave decks approved to flip planned → available when Gumroad product exists (even before apkg). */
 export const WAVE_FORCE_LAUNCH_SLUGS = new Set([
   "ace-cpt-anki-deck",
+  "belgium-flanders-mo-anki-deck",
   "luxembourg-vivre-ensemble-anki-deck",
   "rd-exam-anki-deck",
 ]);
@@ -149,6 +150,7 @@ const LAUNCH_SAMPLE_IMAGE_SLUGS = new Set([
   "ace-cpt-anki-deck",
   "acsm-cpt-anki-deck",
   "luxembourg-vivre-ensemble-anki-deck",
+  "belgium-flanders-mo-anki-deck",
   "mortgage-loan-originator-anki-deck",
   "series-6-anki-deck",
   "series-65-anki-deck",
@@ -221,6 +223,25 @@ const LUXEMBOURG_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
   },
 ];
 
+/** Copy must match public/samples/belgium-flanders-mo-anki-deck-sample-{1,2,3}.webp. */
+const BELGIUM_FLANDERS_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
+  {
+    question: "Wat is de hoofdstad van België volgens de Belgische grondwet?",
+    answer: "(a) Brussel",
+    imageUrl: "/samples/belgium-flanders-mo-anki-deck-sample-1.webp",
+  },
+  {
+    question: "Hoeveel gewesten telt België in totaal volgens de staatshervorming?",
+    answer: "(b) Drie gewesten",
+    imageUrl: "/samples/belgium-flanders-mo-anki-deck-sample-2.webp",
+  },
+  {
+    question: "Welke officiële taal wordt er gesproken in het gewest Vlaanderen?",
+    answer: "(c) Nederlands",
+    imageUrl: "/samples/belgium-flanders-mo-anki-deck-sample-3.webp",
+  },
+];
+
 function attachLaunchSampleImages(slug: string, cards: SampleCard[]): SampleCard[] {
   if (!LAUNCH_SAMPLE_IMAGE_SLUGS.has(slug) || cards.length === 0) {
     return cards;
@@ -240,6 +261,9 @@ function buildSampleCardsFromLinkedMock(deck: PlannedDeck): SampleCard[] {
   }
   if (deck.slug === "luxembourg-vivre-ensemble-anki-deck") {
     return LUXEMBOURG_LAUNCH_SAMPLE_CARDS;
+  }
+  if (deck.slug === "belgium-flanders-mo-anki-deck") {
+    return BELGIUM_FLANDERS_LAUNCH_SAMPLE_CARDS;
   }
   const cover = deck.coverImage ?? `/covers/${deck.slug}.webp`;
   const fromDeck = deck.sampleCards.length > 0 ? deck.sampleCards : [];
@@ -425,11 +449,13 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
       .replace(/^A planned /i, "A focused "),
     directAnswer: buildDirectAnswer(deck, cardLabel, mockPath, apkgReady),
     lastUpdated:
-      deck.slug === "luxembourg-vivre-ensemble-anki-deck"
-        ? "2026-08-14"
-        : deck.slug === "ace-cpt-anki-deck"
-          ? "2026-08-13"
-          : "2026-08-06",
+      deck.slug === "belgium-flanders-mo-anki-deck"
+        ? "2026-08-27"
+        : deck.slug === "luxembourg-vivre-ensemble-anki-deck"
+          ? "2026-08-14"
+          : deck.slug === "ace-cpt-anki-deck"
+            ? "2026-08-13"
+            : "2026-08-06",
     facts: {
       ...deck.facts,
       cards: cardLabel,

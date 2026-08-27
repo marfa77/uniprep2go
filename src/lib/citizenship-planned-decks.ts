@@ -125,7 +125,7 @@ export const citizenshipPlannedDecks: PlannedDeck[] = [
     slug: "belgium-flanders-mo-anki-deck",
     shortName: "Belgium Flanders MO",
     title: "Belgium Flanders MO Anki Deck — Maatschappelijke Oriëntatie",
-    subtitle: "Planned Anki deck for Flanders social orientation (maatschappelijke oriëntatie).",
+    subtitle: "Anki deck for Flanders maatschappelijke oriëntatie (120 Dutch MCQ cards).",
     audience: "Applicants preparing Flanders maatschappelijke oriëntatie / integration civics.",
     examLabel: "Flemish integration / citizenship authorities",
     mockSlug: "belgium-flanders-mo-readiness-check",
@@ -169,4 +169,48 @@ export const citizenshipPlannedDecks: PlannedDeck[] = [
     ],
     searchNote: "Pair with official Vivre ensemble materials.",
   }),
+  {
+    slug: "finland-kansalaisuuskoe-anki-deck",
+    category: "language",
+    status: "planned",
+    title: "Finland Kansalaisuuskoe — Mock-only prep",
+    shortName: "Finland Kansalaisuuskoe",
+    subtitle: "No Anki deck for sale — use the free Finnish-language readiness check.",
+    directAnswer:
+      "UniPrep2Go does not sell a Finland kansalaisuuskoe Anki deck. Take the free 60-question Finnish mock at /mock-exams/finland-kansalaisuuskoe-readiness-check and study Migri learning materials when the University of Helsinki package publishes on migri.fi.",
+    lastUpdated: "2026-08-27",
+    audience: "Applicants preparing Finland’s 2027 citizenship knowledge test.",
+    format: ".apkg",
+    coverImage: "/covers/finland-kansalaisuuskoe-anki-deck.webp",
+    facts: {
+      cards: "Not offered",
+      topics: "Valtio ja demokratia; historia ja EU; oikeudet; palvelut",
+      formulas: "Use the free mock + official Migri materials",
+      examYear: "Applications from 1 March 2027",
+      delivery: "No Anki deck — mock-only pathway",
+    },
+    topicCoverage: [
+      { name: "Valtio ja demokratia", examWeight: "25%", cards: "Mock" },
+      { name: "Historia, maantiede ja EU", examWeight: "25%", cards: "Mock" },
+      { name: "Oikeudet ja yhteiskunta", examWeight: "25%", cards: "Mock" },
+      { name: "Palvelut ja arki", examWeight: "25%", cards: "Mock" },
+    ],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Is there a Finland kansalaisuuskoe Anki deck?",
+        answer:
+          "No. UniPrep2Go offers a free Finnish-language readiness check only. Study Migri’s official learning materials when published.",
+      },
+      {
+        question: "Where is the free practice test?",
+        answer: "Take the 60-question mock at /mock-exams/finland-kansalaisuuskoe-readiness-check.",
+      },
+      {
+        question: "When does the official test apply?",
+        answer:
+          "Citizenship applications submitted from 1 March 2027 require the kansalaisuuskoe unless an exemption applies. Confirm on migri.fi.",
+      },
+    ],
+  },
 ];

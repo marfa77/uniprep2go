@@ -37,6 +37,7 @@ describe("blog guides", () => {
       "luxembourg-vivre-ensemble-test-format-pass",
       "belgium-citizenship-test-flanders-vs-wallonia",
       "sweden-medborgarskapsprov-2026-new-test",
+      "finland-kansalaisuuskoe-2027-new-test",
       "norway-statsborgerproven-format-questions-pass",
       "denmark-indfoedsretsproeven-47-percent-pass-rate",
       "portugal-nationality-test-2026-new-civic-exam",
@@ -156,6 +157,9 @@ describe("blog guides", () => {
     ]);
     expect(getBlogPostsByCluster("sweden-citizenship").map((post) => post.slug)).toEqual([
       "sweden-medborgarskapsprov-2026-new-test",
+    ]);
+    expect(getBlogPostsByCluster("finland-citizenship").map((post) => post.slug)).toEqual([
+      "finland-kansalaisuuskoe-2027-new-test",
     ]);
     expect(getBlogPostsByCluster("belgium-citizenship").map((post) => post.slug)).toEqual([
       "wallonie-citoyennete-francais-a2-parcours-integration",
@@ -432,6 +436,7 @@ describe("blog guides", () => {
     expect(getBlogPostsForMockSlug("denmark-indfoedsretsproeven-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("norway-statsborgerproven-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("sweden-medborgarskapsprov-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("finland-kansalaisuuskoe-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("belgium-flanders-mo-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("belgium-wallonie-citoyennete-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("luxembourg-vivre-ensemble-readiness-check")).toHaveLength(1);

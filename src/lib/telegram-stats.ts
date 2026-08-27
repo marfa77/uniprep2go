@@ -8,7 +8,7 @@ import {
   trafficChannelLabels,
   type TrafficChannel,
 } from "./traffic-channel";
-import type { ProductUniqueMetrics } from "./visitor-metrics";
+import type { DailyTrafficSnapshot, ProductUniqueMetrics } from "./visitor-metrics";
 
 export function shouldReturnStats(text: string) {
   const normalized = text.trim().toLowerCase();
@@ -69,15 +69,7 @@ export function formatSevenDayDynamics(
   days = 7,
   now = new Date(),
 ) {
-  const dayKeys = recentDayKeys(days, now);
-  const lines = dayKeys.map((day) => {
-    const visitors = dailyUnique[day] ?? 0;
-    const views = dailyPageViews[day] ?? 0;
-
-    return `  ${formatShortDate(day)}: ${visitors} / ${views}${formatVisitorBar(visitors)}`;
-  });
-
-  return ["Динамика 7 дней (посетители / просмотры)", ...lines].join("\n");
+  return formatSevenDayGrowthSection(dailyUnique, dailyPageViews, days, now);
 }
 
 function sumDailyWindow(dailyUnique: Record<string, number>, dayKeys: string[]) {
@@ -137,7 +129,7 @@ function formatProductLabel(productKey: string) {
   return productKey;
 }
 
-const TOP_PRODUCTS_LIMIT = 10;
+const TOP_PRODUCTS_LIMIT = 5;
 
 function formatProductLine(productKey: string, metrics: ProductUniqueMetrics) {
   const conversionRate = formatRate(metrics.conversions, metrics.visitors);
@@ -148,22 +140,6 @@ function formatProductLine(productKey: string, metrics: ProductUniqueMetrics) {
   }
 
   return `- ${formatProductLabel(productKey)}: ${metrics.visitors} view → ${metrics.intents} intent → ${metrics.conversions} convert (${conversionRate})`;
-}
-
-function formatTopProducts(products: Array<[string, ProductUniqueMetrics]>) {
-  if (products.length === 0) {
-    return "- no product traffic yet";
-  }
-
-  const topProducts = products.slice(0, TOP_PRODUCTS_LIMIT);
-  const lines = topProducts.map(([productKey, metrics]) => formatProductLine(productKey, metrics));
-  const hiddenCount = products.length - topProducts.length;
-
-  if (hiddenCount > 0) {
-    lines.push(`- ...and ${hiddenCount} more`);
-  }
-
-  return lines.join("\n");
 }
 
 function formatReturningUsers(periodNew: number, periodReturning: number, periodUnique: number) {
@@ -206,13 +182,237 @@ function formatTopCountries(
   );
 }
 
-function formatTopPaths(paths: Record<string, number>, limit = 6) {
-  const lines = Object.entries(paths)
-    .sort(([, left], [, right]) => right - left)
-    .slice(0, limit)
-    .map(([path, count]) => `- ${path} — ${count}`);
+function formatSignedCountDelta(current: number, previous: number) {
+  if (previous <= 0) {
+    return current > 0 ? "new" : "—";
+  }
 
-  return lines.join("\n") || "- no page data yet";
+  const delta = current - previous;
+  if (delta === 0) {
+    return "flat";
+  }
+
+  return delta > 0 ? `+${delta}` : `${delta}`;
+}
+
+function formatSignedPercentDelta(current: number, previous: number) {
+  if (previous <= 0) {
+    return current > 0 ? "+∞%" : "—";
+  }
+
+  const deltaPercent = Math.round(((current - previous) / previous) * 100);
+  return `${deltaPercent >= 0 ? "+" : ""}${deltaPercent}%`;
+}
+
+export function dayOffsetUtc(now: Date, offsetDays: number) {
+  const date = new Date(now);
+  date.setUTCDate(date.getUTCDate() - offsetDays);
+  return date.toISOString().slice(0, 10);
+}
+
+function rankDailyPaths(snapshot: DailyTrafficSnapshot | undefined): RankedPath[] {
+  if (!snapshot) {
+    return [];
+  }
+
+  return Object.entries(snapshot.paths)
+    .map(([path, metrics]) => ({
+      path,
+      unique: metrics.unique,
+      views: metrics.views,
+    }))
+    .sort(
+      (left, right) =>
+        right.views - left.views || right.unique - left.unique || left.path.localeCompare(right.path),
+    );
+}
+
+function formatDailyPathLines(
+  snapshot: DailyTrafficSnapshot | undefined,
+  limit: number,
+  emptyHint: string,
+) {
+  const ranked = rankDailyPaths(snapshot);
+  if (ranked.length === 0) {
+    return [`- ${emptyHint}`];
+  }
+
+  const lines = ranked
+    .slice(0, limit)
+    .map(({ path, unique, views }) => `- ${path} — ${views}v (${unique}u)`);
+
+  if (ranked.length > limit) {
+    lines.push(`- ...and ${ranked.length - limit} more paths`);
+  }
+
+  return lines;
+}
+
+function countRecentDayEvents(recentEvents: FunnelEvent[], day: string) {
+  const counts = {
+    mock_started: 0,
+    mock_completed: 0,
+    checkout_click: 0,
+    mock_deck_cta_click: 0,
+  };
+
+  for (const event of recentEvents) {
+    if (!(event.occurredAt || "").startsWith(day)) {
+      continue;
+    }
+
+    if (event.name in counts) {
+      counts[event.name as keyof typeof counts] += 1;
+    }
+  }
+
+  return counts;
+}
+
+export function formatYesterdaySection(stats: FunnelStats, now = new Date(), pathLimit = 6) {
+  const yesterday = dayOffsetUtc(now, 1);
+  const dayBefore = dayOffsetUtc(now, 2);
+  const snapshot = stats.visitors.dailySnapshots[yesterday];
+  const previousSnapshot = stats.visitors.dailySnapshots[dayBefore];
+  const unique = snapshot?.unique ?? stats.visitors.dailyUnique[yesterday] ?? 0;
+  const views = snapshot?.pageViews ?? stats.visitors.dailyPageViews[yesterday] ?? 0;
+  const prevUnique = previousSnapshot?.unique ?? stats.visitors.dailyUnique[dayBefore] ?? 0;
+  const prevViews = previousSnapshot?.pageViews ?? stats.visitors.dailyPageViews[dayBefore] ?? 0;
+  const dayEvents = countRecentDayEvents(stats.recentEvents, yesterday);
+
+  const lines = [
+    `▸ YESTERDAY · ${formatShortDate(yesterday)} UTC`,
+    `${unique} unique · ${views} views (${formatSignedCountDelta(unique, prevUnique)}u · ${formatSignedCountDelta(views, prevViews)}v vs ${formatShortDate(dayBefore)})`,
+  ];
+
+  if (snapshot) {
+    lines.push(
+      `Sources: ${formatChannelLine(snapshot.byChannel)}`,
+      `Countries: ${formatTopCountries(snapshot.byCountry, {}, 6)}`,
+      "Top paths:",
+      ...formatDailyPathLines(
+        snapshot,
+        pathLimit,
+        unique > 0 ? "tracked visits without page_view path" : "no traffic",
+      ),
+    );
+  } else if (unique > 0 || views > 0) {
+    lines.push(
+      "Top paths:",
+      "- daily path index starts now — full breakdown tomorrow for new hits",
+    );
+  } else {
+    lines.push("- no traffic yesterday");
+  }
+
+  if (
+    dayEvents.mock_started > 0 ||
+    dayEvents.mock_completed > 0 ||
+    dayEvents.checkout_click > 0 ||
+    dayEvents.mock_deck_cta_click > 0
+  ) {
+    lines.push(
+      `Actions (recent window): ${dayEvents.mock_started} mock start · ${dayEvents.mock_completed} mock done · ${dayEvents.checkout_click} checkout · ${dayEvents.mock_deck_cta_click} deck CTA`,
+    );
+  }
+
+  return lines.join("\n");
+}
+
+export function formatSevenDayGrowthSection(
+  dailyUnique: Record<string, number>,
+  dailyPageViews: Record<string, number>,
+  days = 7,
+  now = new Date(),
+) {
+  const dayKeys = recentDayKeys(days, now);
+  const previousKeys = recentDayKeys(days, new Date(now.getTime() - days * 24 * 60 * 60 * 1000));
+  const currentUnique = sumDailyWindow(dailyUnique, dayKeys);
+  const previousUnique = sumDailyWindow(dailyUnique, previousKeys);
+  const currentViews = sumDailyWindow(dailyPageViews, dayKeys);
+  const avgUnique = dayKeys.length > 0 ? currentUnique / dayKeys.length : 0;
+
+  const chartLines = dayKeys.map((day) => {
+    const visitors = dailyUnique[day] ?? 0;
+    const views = dailyPageViews[day] ?? 0;
+    const marker = day === dayOffsetUtc(now, 1) ? " ← yesterday" : "";
+
+    return `  ${formatShortDate(day)}: ${String(visitors).padStart(2, " ")}u / ${String(views).padStart(3, " ")}v${formatVisitorBar(visitors)}${marker}`;
+  });
+
+  return [
+    "▸ LAST 7 DAYS · unique / views per UTC day",
+    ...chartLines,
+    `Σ7d: ${currentUnique} unique · ${currentViews} views · avg ${avgUnique.toFixed(1)}u/day`,
+    `vs prior 7d unique: ${formatSignedPercentDelta(currentUnique, previousUnique)} · ${computeGrowthSignal(dailyUnique, now).label}`,
+  ].join("\n");
+}
+
+function formatPeriodFunnelSection(stats: FunnelStats) {
+  const mockStarts = countMockStartsByMode(stats.bySource);
+  const visitors = stats.visitors;
+
+  return [
+    "▸ PERIOD TOTAL · since reset",
+    `${visitors.periodUnique} unique (${formatReturningUsers(visitors.periodNew, visitors.periodReturning, visitors.periodUnique)})`,
+    `Mock: ${mockStarts.total} starts (exam ${mockStarts.exam} · learn ${mockStarts.learn}) · ${stats.byEvent.mock_completed ?? 0} completed · ${stats.byEvent.mock_deck_cta_click ?? 0} deck CTA · ${stats.byEvent.checkout_click ?? 0} checkout`,
+    `Sources: ${formatChannelLine(visitors.periodByChannel)}`,
+    `Countries: ${formatTopCountries(visitors.periodByCountry, stats.byCountry)}`,
+  ].join("\n");
+}
+
+function formatPeriodProductsSection(products: Array<[string, ProductUniqueMetrics]>, limit = 5) {
+  if (products.length === 0) {
+    return "▸ TOP SKUs (period)\n- no product traffic yet";
+  }
+
+  const lines = products.slice(0, limit).map(([productKey, metrics]) => formatProductLine(productKey, metrics));
+  const hiddenCount = products.length - limit;
+
+  return [
+    `▸ TOP SKUs (period · view → intent/start → convert)`,
+    ...lines,
+    ...(hiddenCount > 0 ? [`- ...and ${hiddenCount} more SKUs`] : []),
+  ].join("\n");
+}
+
+function formatAcquisitionSection(stats: FunnelStats, limit = 3) {
+  const googlePeriod = stats.visitors.periodByChannel.google ?? 0;
+  const llmPeriod =
+    (stats.visitors.periodByChannel.chatgpt ?? 0) + (stats.visitors.periodByChannel.llm ?? 0);
+
+  if (googlePeriod === 0 && llmPeriod === 0) {
+    return "▸ ACQUISITION\n- no Google/LLM uniques this period yet";
+  }
+
+  const google = pickChannelPathRanks(
+    stats.visitors.lifetimePathsByChannel?.google,
+    stats.visitors.pathsByChannel?.google,
+    aggregateTopPathsByChannels(stats.recentEvents, ["google"]).ranked,
+  );
+  const llm = pickChannelPathRanks(
+    mergeChannelPathCounts(stats.visitors.lifetimePathsByChannel, ["chatgpt", "llm"]),
+    mergeChannelPathCounts(stats.visitors.pathsByChannel, ["chatgpt", "llm"]),
+    aggregateTopPathsByChannels(stats.recentEvents, ["chatgpt", "llm"]).ranked,
+  );
+
+  const lines = ["▸ ACQUISITION · period Google / LLM landing pages"];
+
+  if (googlePeriod > 0) {
+    lines.push(
+      `Google (${googlePeriod}u):`,
+      ...formatRankedPathLines(google.ranked, limit, "none yet", true).map((line) => `  ${line}`),
+    );
+  }
+
+  if (llmPeriod > 0) {
+    lines.push(
+      `LLM (${llmPeriod}u):`,
+      ...formatRankedPathLines(llm.ranked, limit, "none yet", true).map((line) => `  ${line}`),
+    );
+  }
+
+  return lines.join("\n");
 }
 
 function isPagePathEvent(event: FunnelEvent) {
@@ -553,52 +753,31 @@ function formatPeriodRange(stats: FunnelStats) {
   return `${start} → ${end}`;
 }
 
-export function toTelegramStatsMessage(stats: FunnelStats) {
-  return toTelegramStatsMessages(stats)[0] ?? "UniPrep2Go · no stats yet";
+export function toTelegramStatsMessage(stats: FunnelStats, now = new Date()) {
+  return toTelegramStatsMessages(stats, now)[0] ?? "UniPrep2Go · no stats yet";
 }
 
-export function toTelegramStatsMessages(stats: FunnelStats) {
+export function toTelegramStatsMessages(stats: FunnelStats, now = new Date()) {
   const visitors = stats.visitors;
-  const growth = computeGrowthSignal(visitors.dailyUnique);
   const products = Object.entries(visitors.products).sort(
     ([, left], [, right]) => right.visitors - left.visitors,
   );
 
-  const mockStarts = countMockStartsByMode(stats.bySource);
-  const mockStartsLifetime = countMockStartsByMode(stats.lifetime.bySource);
-
   const lines = [
     "UniPrep2Go · growth pulse",
+    `As of ${formatShortDate(dayOffsetUtc(now, 0))} UTC · period ${formatPeriodRange(stats)}`,
     "",
-    `Trend: ${growth.label}`,
-    `Unique users: ${visitors.periodUnique} period · ${visitors.lifetimeUnique} lifetime`,
-    formatReturningUsers(visitors.periodNew, visitors.periodReturning, visitors.periodUnique),
+    formatYesterdaySection(stats, now),
     "",
-    "Mock starts (Exam vs Learn):",
-    `period exam ${mockStarts.exam} · learn ${mockStarts.learn} · total ${mockStarts.total}`,
-    `lifetime exam ${mockStartsLifetime.exam} · learn ${mockStartsLifetime.learn} · total ${mockStartsLifetime.total}`,
+    formatSevenDayGrowthSection(visitors.dailyUnique, visitors.dailyPageViews, 7, now),
     "",
-    `Mock completed (period): ${stats.byEvent.mock_completed ?? 0} · deck CTA: ${stats.byEvent.mock_deck_cta_click ?? 0}`,
+    formatPeriodFunnelSection(stats),
     "",
-    "Sources (unique, period):",
-    formatChannelLine(visitors.periodByChannel),
+    formatPeriodProductsSection(products, 5),
     "",
-    "Countries (unique, period):",
-    formatTopCountries(visitors.periodByCountry, stats.byCountry),
+    formatAcquisitionSection(stats),
     "",
-    "Decks & mocks (unique view → intent/start → done → convert):",
-    formatTopProducts(products),
-    "",
-    "Top pages (period):",
-    formatTopPaths(visitors.paths),
-    "",
-    formatSearchAndLlmTopPages(stats),
-    "",
-    formatTodayTopPages(stats),
-    "",
-    formatSevenDayDynamics(visitors.dailyUnique, visitors.dailyPageViews),
-    "",
-    `Period: ${formatPeriodRange(stats)} · storage: ${stats.storage}`,
+    `Storage: ${stats.storage} · lifetime ${visitors.lifetimeUnique} unique`,
   ];
 
   return splitTelegramMessages(lines.join("\n"));

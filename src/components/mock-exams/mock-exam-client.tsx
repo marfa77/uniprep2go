@@ -1,9 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { getCatalogDeckBySlug } from "@/lib/decks";
 import type { MockAccessState, MockExamConfig, MockQuestion, MockReport } from "@/lib/mock-exams/types";
-import { getMockCta } from "@/lib/mock-exams/access";
+import { getMockCta } from "@/lib/mock-exams/mock-cta";
 import { LEARN_PASS_PRICE_USD } from "@/lib/mock-exams/learn-pass";
 import type { MockSessionMode } from "@/lib/mock-exams/session-mode";
 import {
@@ -17,6 +16,7 @@ import { LearnPassPaywall } from "./learn-pass-paywall";
 import { MockInterestCta } from "./mock-interest-cta";
 import { MockReportPanel } from "./mock-report";
 import type { LinkedDeckCheckout } from "./mock-report-handoff";
+import type { MockCompanionCheckout } from "./mock-companion-decks-panel";
 import { MockRunner } from "./mock-runner";
 import { trackMockEvent } from "./mock-analytics";
 import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
@@ -31,11 +31,14 @@ function MockFocusShell({ children }: { children: ReactNode }) {
   );
 }
 
-type MockExamClientProps = {
+export type MockExamClientProps = {
   config: MockExamConfig;
   questions: MockQuestion[];
   accessState: MockAccessState;
   linkedCheckout: LinkedDeckCheckout | null;
+  companionCheckouts?: MockCompanionCheckout[];
+  /** Resolved on the server — avoids pulling the full deck catalog into the client bundle. */
+  linkedDeckShortName?: string;
   runnable: boolean;
   /** From `?mode=learn`; default exam. */
   initialMode?: MockSessionMode;
@@ -88,6 +91,8 @@ export function MockExamClient({
   questions,
   accessState,
   linkedCheckout,
+  companionCheckouts = [],
+  linkedDeckShortName,
   runnable,
   initialMode = "exam",
   learnPassEnabled = false,
@@ -267,6 +272,7 @@ export function MockExamClient({
   }) {
     const completedAt = new Date().toISOString();
     const nextReport = buildMockReport(
+      config,
       {
         examSlug: config.slug,
         attemptSeed,
@@ -329,15 +335,16 @@ export function MockExamClient({
   }
 
   if (screen === "results" && report) {
-    const linkedDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
     const hideInterestCta = Boolean(linkedCheckout?.checkoutUrl);
 
     return (
       <MockFocusShell>
         <div className="space-y-6 px-4 py-4 pb-[max(1.5rem,env(safe-area-inset-bottom))] sm:space-y-8 sm:px-6 sm:py-6">
           <MockReportPanel
+            companionCheckouts={companionCheckouts}
             config={config}
             linkedCheckout={linkedCheckout}
+            linkedDeckShortName={linkedDeckShortName}
             report={report}
             sessionMode={sessionMode}
           />
@@ -381,7 +388,7 @@ export function MockExamClient({
                 })
               }
             >
-              {linkedDeck?.checkoutUrl ? "Deck details" : "Join Anki deck waitlist"}
+              {linkedCheckout?.checkoutUrl ? "Deck details" : "Join Anki deck waitlist"}
             </Link>
           </div>
           {learnPassEnabled && sessionMode === "learn" && learnRemaining <= 0 ? (

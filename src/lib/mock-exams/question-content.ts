@@ -99,3 +99,8 @@ export function parseQuestionContentBlocks(text: string): QuestionTextBlock[] {
 export function normalizeDisplayMath(text: string) {
   return text.replace(/\$\$([\s\S]+?)\$\$/g, "\\[$1\\]");
 }
+
+/** True when MathJax must load (LaTeX delimiters present). Skips plain-text finance stems. */
+export function needsMathRendering(text: string): boolean {
+  return /\\[\[(]|\\[\(]|\$\$/.test(text);
+}

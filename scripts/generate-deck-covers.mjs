@@ -174,6 +174,13 @@ const DECK_CONFIGS = {
     badge: "Planned",
     panelKind: "language",
   },
+  "finland-kansalaisuuskoe-anki-deck": {
+    title: "Finland\nKansalaisuuskoe",
+    subtitle: "2027 citizenship test — mock-only (no Anki)",
+    monogram: "FI",
+    badge: "Mock",
+    panelKind: "language",
+  },
   "belgium-flanders-mo-anki-deck": {
     title: "Belgium Flanders\nMO Anki Deck",
     subtitle: "Maatschappelijke oriëntatie flashcards",
@@ -192,7 +199,7 @@ const DECK_CONFIGS = {
     title: "Luxembourg\nVivre ensemble",
     subtitle: "Luxembourg citizenship civics flashcards",
     monogram: "LU",
-    badge: "Planned",
+    badge: "Anki Deck",
     panelKind: "language",
   },
   "dele-a2-ccse-spanish-citizenship-bundle": {
@@ -402,7 +409,7 @@ async function generateGumroadThumbnail(slug, config, { dryRun = false, force = 
     return { slug, skipped: true };
   }
 
-  console.log(`→ ${slug} (Gumroad 1200×1200)`);
+  console.log(`→ ${slug} (Gumroad 600×600)`);
   if (dryRun) {
     console.log(`  dry-run: ${outPath} [${config.panelKind}]`);
     return { slug, dryRun: true };
@@ -455,9 +462,10 @@ function resolveSlugs(args, deckConfigs) {
 
   if (args.allMissing || args.catalog) {
     const slugs = Object.keys(deckConfigs);
-    return args.force
-      ? slugs
-      : slugs.filter((slug) => !existsSync(join(COVERS_DIR, `${slug}.webp`)));
+    if (args.force) return slugs;
+    const missingDir = args.gumroadThumbnails ? GUMROAD_THUMBS_DIR : COVERS_DIR;
+    const ext = args.gumroadThumbnails ? ".jpg" : ".webp";
+    return slugs.filter((slug) => !existsSync(join(missingDir, `${slug}${ext}`)));
   }
 
   return [];

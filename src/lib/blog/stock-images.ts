@@ -417,6 +417,34 @@ export const BLOG_STOCK_IMAGE_CONFIG: Record<
       },
     ],
   },
+  "finland-kansalaisuuskoe-2027-new-test": {
+    hero: {
+      id: "finland-kansalaisuuskoe-hero",
+      alt: "Helsinki waterfront and cathedral skyline in Finland",
+      caption: "Kansalaisuuskoe from March 2027 — Migri runs it, Helsinki University writes the pack",
+      queries: [
+        "Helsinki Senate Square cathedral Finland skyline",
+        "Helsinki harbor waterfront Finland summer",
+        "Helsinki city skyline Baltic Finland",
+      ],
+      mustInclude: ["helsinki", "finland", "finnish", "harbor", "cathedral", "water"],
+      mustExclude: ["sweden stockholm", "norway oslo"],
+    },
+    inline: [
+      {
+        id: "finland-kansalaisuuskoe-study",
+        alt: "Person studying Finnish civics notes and laptop at a desk",
+        caption: "Drill in Finnish — the live test is not in English",
+        queries: [
+          "studying Finnish textbook laptop desk notes",
+          "person reading civics book Nordic desk",
+          "adult education citizenship exam prep desk",
+        ],
+        mustInclude: ["study", "book", "desk", "laptop", "notebook", "exam"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
   "czech-cce-language-vs-realie-civics-two-exams": {
     hero: {
       id: "czech-cce-vs-realie-hero",

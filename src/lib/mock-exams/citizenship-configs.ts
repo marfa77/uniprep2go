@@ -478,12 +478,13 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Flanders has no single federal civics MCQ like BAMF/LITUK. Live path is typically Dutch language + Maatschappelijke Oriëntatie (MO) / integration proof. A national civic test has been proposed, not assumed live. This 60Q check is independent MO-theme practice — not AGII material.",
     description:
-      "Free 60-question Flanders MO / social-orientation diagnostic. Not an official national citizenship MCQ (Belgium’s civic test is proposed). Waitlist Anki. Independent prep.",
+      "Free 60-question Flanders MO / social-orientation diagnostic. Not an official national citizenship MCQ (Belgium’s civic test is proposed). Live 120-card Anki on Gumroad. Independent prep.",
     examBody:
       "Belgium Flanders — Maatschappelijke oriëntatie (no single federal MCQ; proposed national test separate)",
     questionSourceNote:
       "Questions rewritten from Prep2Go Belgium Flanders MO (maatschappelijke oriëntatie) themes as full-stem MCQs with parallel-form near-miss distractors. Independent readiness check — not official Flemish government material.",
-    lastUpdated: "2026-08-04",
+    ankiDeckCardCount: 120,
+    lastUpdated: "2026-08-27",
     searchAliases: ["maatschappelijke oriëntatie", "Flanders MO test", "inburgering Vlaanderen"],
   }),
   nicheReadinessConfig({
@@ -541,6 +542,39 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       "Questions rewritten from Prep2Go Luxembourg Vivre ensemble themes as full-stem MCQs with parallel-form near-miss distractors. Independent readiness check — not official Luxembourg government material.",
     lastUpdated: "2026-08-04",
     searchAliases: ["Vivre ensemble Luxembourg", "Luxembourg citizenship test", "nationalité luxembourgeoise"],
+  }),
+  nicheReadinessConfig({
+    slug: "finland-kansalaisuuskoe-readiness-check",
+    title: "Finland Kansalaisuuskoe Readiness Check",
+    shortTitle: "Finland Kansalaisuuskoe",
+    linkedDeckSlug: "finland-kansalaisuuskoe-anki-deck",
+    durationMinutes: 45,
+    questionCount: NICHE_SESSION_QUESTIONS,
+    passPercent: 70,
+    topics: fourNicheTopics(
+      [
+        { id: "state-democracy", label: "Valtio ja demokratia" },
+        { id: "history-geo-eu", label: "Historia, maantiede ja EU" },
+        { id: "rights-society", label: "Oikeudet ja yhteiskunta" },
+        { id: "services-extras", label: "Palvelut ja arki" },
+      ],
+      70,
+    ),
+    officialSourceNote:
+      "Finland’s kansalaisuuskoe applies to citizenship applications submitted from 1 March 2027 (Citizenship Act effective 1 Jan 2027). Migri organizes the computer-based test in Finnish or Swedish; Helsingin yliopisto prepares learning materials published on migri.fi before the first sitting. Government proposals cited ~20–40 MCQs and ~70% pass — confirm binding format when Migri publishes. This is an independent 60Q / 45 min / 70% Finnish diagnostic — not official Maahanmuuttovirasto material. No Anki deck is sold for this pathway.",
+    description:
+      "Free 60-question Finnish-language kansalaisuuskoe diagnostic for the 2027 citizenship test path. Official item bank not published yet — independent theme practice on legislation, rights, history, and services. Mock-only prep (no Anki deck).",
+    examBody:
+      "Finland — kansalaisuuskoe (Migri; applications from 1 Mar 2027; format confirm on migri.fi)",
+    questionSourceNote:
+      "Authored by UniPrep2Go for Finland kansalaisuuskoe (2027) theme practice — independent MCQs on Migri-published topic areas, not official Maahanmuuttovirasto material.",
+    lastUpdated: "2026-08-27",
+    searchAliases: [
+      "kansalaisuuskoe",
+      "Finnish citizenship test",
+      "Suomen kansalaisuuskoe",
+      "kansalaisuustesti",
+    ],
   }),
 ];
 

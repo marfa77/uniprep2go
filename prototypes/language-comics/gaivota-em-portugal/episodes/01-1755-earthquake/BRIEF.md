@@ -2,9 +2,11 @@
 
 | | |
 |--|--|
-| Status | **HTML pilot ready** |
-| Price | **FREE** sampler |
+| Status | **PDF + Etsy pack ready** |
+| Price | FREE on site · Etsy digital PDF |
 | Open | `index.html` |
+| Pack | `../dist/Gaivota-Ep01-O-Terramoto.pdf` |
+| Etsy | `docs/etsy/gaivota-ep01-listing-media/` |
 | Event | Terramoto de Lisboa · 1 November 1755 |
 | Mascot | canon-stamp + canon-mark |
 

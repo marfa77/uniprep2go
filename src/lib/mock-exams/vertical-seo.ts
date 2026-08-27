@@ -33,7 +33,7 @@ export const verticalSeoCopy: Record<MockVerticalId, VerticalSeoCopy> = {
       {
         question: "What citizenship practice tests are free on UniPrep2Go?",
         answer:
-          "Free timed mocks include U.S. citizenship civics, Life in the UK, Canadian and Australian citizenship, Leben in Deutschland, French naturalization themes, CCSE España, Belgium Flanders/Wallonie, and other pathways listed on this hub — each with topic scoring and answer review.",
+          "Free timed mocks include U.S. citizenship civics, Life in the UK, Canadian and Australian citizenship, Leben in Deutschland, French naturalization themes, CCSE España, Finland kansalaisuuskoe (2027), Belgium Flanders/Wallonie, and other pathways listed on this hub — each with topic scoring and answer review.",
       },
       {
         question: "Are these official government citizenship exams?",

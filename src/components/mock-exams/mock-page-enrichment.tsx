@@ -55,7 +55,7 @@ export function MockExamVisualHero({ config }: { config: MockExamConfig }) {
     <div className="mt-6 overflow-hidden rounded-[1.75rem] border border-[#18140f]/10 bg-[#18140f]">
       <div className="relative h-44 w-full sm:h-56">
         <Image
-          alt=""
+          alt={`${config.shortTitle} practice test study cluster`}
           className="object-cover"
           fill
           priority

@@ -8,6 +8,20 @@ import {
 
 export type DailyUniqueCounts = Record<string, number>;
 
+export type DailyPathMetrics = {
+  unique: number;
+  views: number;
+};
+
+/** Per-UTC-day traffic snapshot for growth pulse (paths, sources, countries). */
+export type DailyTrafficSnapshot = {
+  unique: number;
+  pageViews: number;
+  paths: Record<string, DailyPathMetrics>;
+  byChannel: Record<TrafficChannel, number>;
+  byCountry: Record<string, number>;
+};
+
 export type ProductUniqueMetrics = {
   visitors: number;
   intents: number;
@@ -26,6 +40,8 @@ export type VisitorMetrics = {
   periodByCountry: Record<string, number>;
   dailyUnique: DailyUniqueCounts;
   dailyPageViews: DailyUniqueCounts;
+  /** Last ~14 UTC days — keyed by YYYY-MM-DD. Powers yesterday / daily path ranks in pulse. */
+  dailySnapshots: Record<string, DailyTrafficSnapshot>;
   products: Record<string, ProductUniqueMetrics>;
   paths: Record<string, number>;
   /** Unique visitors per path ∩ period channel (pages seen by that channel's visitors). */
@@ -55,6 +71,7 @@ export function emptyVisitorMetrics(): VisitorMetrics {
     periodByCountry: {},
     dailyUnique: {},
     dailyPageViews: {},
+    dailySnapshots: {},
     products: {},
     paths: {},
     pathsByChannel: emptyChannelPathCounts(),
@@ -83,6 +100,10 @@ type VisitorSetStore = {
   /** Paths touched in the current period only — cleared on period reset. */
   periodPathVisitors: Map<string, Set<string>>;
   dailyPageViews: Map<string, number>;
+  dailyChannel: Map<string, Record<TrafficChannel, Set<string>>>;
+  dailyCountry: Map<string, Map<string, Set<string>>>;
+  dailyPathVisitors: Map<string, Map<string, Set<string>>>;
+  dailyPathViews: Map<string, Map<string, number>>;
 };
 
 type GlobalWithVisitorSets = typeof globalThis & {
@@ -130,15 +151,32 @@ function getMemoryVisitorSets(): VisitorSetStore {
       pathVisitors: new Map(),
       periodPathVisitors: new Map(),
       dailyPageViews: new Map(),
+      dailyChannel: new Map(),
+      dailyCountry: new Map(),
+      dailyPathVisitors: new Map(),
+      dailyPathViews: new Map(),
     };
   }
 
   // Backfill for hot-reload / older in-memory shapes.
-  if (!globalStore.__uniprep2goVisitorSets.periodPathVisitors) {
-    globalStore.__uniprep2goVisitorSets.periodPathVisitors = new Map();
+  const store = globalStore.__uniprep2goVisitorSets;
+  if (!store.periodPathVisitors) {
+    store.periodPathVisitors = new Map();
+  }
+  if (!store.dailyChannel) {
+    store.dailyChannel = new Map();
+  }
+  if (!store.dailyCountry) {
+    store.dailyCountry = new Map();
+  }
+  if (!store.dailyPathVisitors) {
+    store.dailyPathVisitors = new Map();
+  }
+  if (!store.dailyPathViews) {
+    store.dailyPathViews = new Map();
   }
 
-  return globalStore.__uniprep2goVisitorSets;
+  return store;
 }
 
 export function resetPeriodVisitorSets() {
@@ -178,7 +216,108 @@ export function resetAllVisitorSets() {
     pathVisitors: new Map(),
     periodPathVisitors: new Map(),
     dailyPageViews: new Map(),
+    dailyChannel: new Map(),
+    dailyCountry: new Map(),
+    dailyPathVisitors: new Map(),
+    dailyPathViews: new Map(),
   };
+}
+
+function recordDailyChannelVisit(
+  store: VisitorSetStore,
+  date: string,
+  channel: TrafficChannel,
+  visitorId: string,
+) {
+  let bucket = store.dailyChannel.get(date);
+  if (!bucket) {
+    bucket = emptyChannelSets();
+    store.dailyChannel.set(date, bucket);
+  }
+  bucket[channel].add(visitorId);
+}
+
+function recordDailyCountryVisit(
+  store: VisitorSetStore,
+  date: string,
+  country: string,
+  visitorId: string,
+) {
+  let bucket = store.dailyCountry.get(date);
+  if (!bucket) {
+    bucket = new Map();
+    store.dailyCountry.set(date, bucket);
+  }
+  addToSetMap(bucket, country, visitorId);
+}
+
+function recordDailyPathPageView(
+  store: VisitorSetStore,
+  date: string,
+  path: string,
+  visitorId: string,
+) {
+  let pathVisitors = store.dailyPathVisitors.get(date);
+  if (!pathVisitors) {
+    pathVisitors = new Map();
+    store.dailyPathVisitors.set(date, pathVisitors);
+  }
+  addToSetMap(pathVisitors, path, visitorId);
+
+  let pathViews = store.dailyPathViews.get(date);
+  if (!pathViews) {
+    pathViews = new Map();
+    store.dailyPathViews.set(date, pathViews);
+  }
+  pathViews.set(path, (pathViews.get(path) ?? 0) + 1);
+}
+
+function buildDailySnapshotsFromMemoryStore(store: VisitorSetStore): Record<string, DailyTrafficSnapshot> {
+  const dates = new Set<string>([
+    ...store.daily.keys(),
+    ...store.dailyPageViews.keys(),
+    ...store.dailyChannel.keys(),
+    ...store.dailyCountry.keys(),
+    ...store.dailyPathVisitors.keys(),
+  ]);
+  const snapshots: Record<string, DailyTrafficSnapshot> = {};
+
+  for (const date of dates) {
+    const channelBucket = store.dailyChannel.get(date) ?? emptyChannelSets();
+    const countryBucket = store.dailyCountry.get(date) ?? new Map<string, Set<string>>();
+    const pathVisitors = store.dailyPathVisitors.get(date) ?? new Map<string, Set<string>>();
+    const pathViews = store.dailyPathViews.get(date) ?? new Map<string, number>();
+    const paths: Record<string, DailyPathMetrics> = {};
+
+    for (const [path, visitors] of pathVisitors.entries()) {
+      paths[path] = {
+        unique: visitors.size,
+        views: pathViews.get(path) ?? 0,
+      };
+    }
+
+    for (const [path, views] of pathViews.entries()) {
+      if (!paths[path]) {
+        paths[path] = { unique: 0, views };
+      }
+    }
+
+    snapshots[date] = {
+      unique: store.daily.get(date)?.size ?? 0,
+      pageViews: store.dailyPageViews.get(date) ?? 0,
+      paths,
+      byChannel: {
+        google: channelBucket.google.size,
+        chatgpt: channelBucket.chatgpt.size,
+        llm: channelBucket.llm.size,
+        direct: channelBucket.direct.size,
+        other: channelBucket.other.size,
+      },
+      byCountry: mapSetSizes(countryBucket),
+    };
+  }
+
+  return snapshots;
 }
 
 function normalizeCountryCode(country: string | undefined) {
@@ -285,15 +424,22 @@ export function recordVisitorMetricInMemory(event: FunnelEvent) {
 
   if (country) {
     addToSetMap(store.periodCountry, country, visitorId);
+    recordDailyCountryVisit(store, date, country, visitorId);
   }
 
   const dailyBucket = store.daily.get(date) ?? new Set<string>();
   dailyBucket.add(visitorId);
   store.daily.set(date, dailyBucket);
 
+  recordDailyChannelVisit(store, date, channel, visitorId);
+
   if (event.path) {
     addToSetMap(store.pathVisitors, event.path, visitorId);
     addToSetMap(store.periodPathVisitors, event.path, visitorId);
+  }
+
+  if (isPageViewEvent(event) && event.path) {
+    recordDailyPathPageView(store, date, event.path, visitorId);
   }
 
   const productKey = resolveProductKey(event);
@@ -466,6 +612,7 @@ export function readVisitorMetricsFromMemory(): VisitorMetrics {
     periodByCountry: mapSetSizes(store.periodCountry),
     dailyUnique,
     dailyPageViews,
+    dailySnapshots: buildDailySnapshotsFromMemoryStore(store),
     products: productMetrics,
     paths: intersectPathVisitorsWithChannel(periodPathSource, store.period),
     pathsByChannel: pathsByChannelFromSets(periodPathSource, store.periodChannel),
@@ -482,6 +629,16 @@ export const VISITOR_REDIS_KEYS = {
   periodChannel: (channel: TrafficChannel) => `funnel:visitors:period:channel:${channel}`,
   daily: (date: string) => `funnel:visitors:day:${date}`,
   dailyPageViews: (date: string) => `funnel:pageviews:day:${date}`,
+  dailyChannel: (date: string, channel: TrafficChannel) =>
+    `funnel:visitors:day:${date}:channel:${channel}`,
+  dailyCountry: (date: string, countryCode: string) =>
+    `funnel:visitors:day:${date}:country:${countryCode}`,
+  dailyCountryIndex: (date: string) => `funnel:visitors:day:${date}:country:index`,
+  dailyPathIndex: (date: string) => `funnel:path:day:${date}:index`,
+  dailyPathVisitors: (date: string, path: string) =>
+    `funnel:path:day:${date}:visitors:${encodeURIComponent(path)}`,
+  dailyPathViews: (date: string, path: string) =>
+    `funnel:path:day:${date}:views:${encodeURIComponent(path)}`,
   lifetimeProductVisitors: (productKey: string) => `funnel:product:lifetime:visitors:${productKey}`,
   lifetimeProductIntents: (productKey: string) => `funnel:product:lifetime:intents:${productKey}`,
   lifetimeProductCompletions: (productKey: string) =>
@@ -556,6 +713,8 @@ export function visitorMetricRedisOperations(
   ops.push(trackVisitor);
   ops.push((pipeline) => {
     pipeline.expire(VISITOR_REDIS_KEYS.daily(date), 60 * 60 * 24 * 45);
+    pipeline.sadd(VISITOR_REDIS_KEYS.dailyChannel(date, channel), visitorId);
+    pipeline.expire(VISITOR_REDIS_KEYS.dailyChannel(date, channel), 60 * 60 * 24 * 45);
   });
 
   if (!returnStatus.alreadyInPeriod) {
@@ -572,6 +731,10 @@ export function visitorMetricRedisOperations(
     ops.push((pipeline) => {
       pipeline.sadd(VISITOR_REDIS_KEYS.periodCountry(country), visitorId);
       pipeline.sadd(VISITOR_REDIS_KEYS.countryIndex, country);
+      pipeline.sadd(VISITOR_REDIS_KEYS.dailyCountry(date, country), visitorId);
+      pipeline.sadd(VISITOR_REDIS_KEYS.dailyCountryIndex(date), country);
+      pipeline.expire(VISITOR_REDIS_KEYS.dailyCountry(date, country), 60 * 60 * 24 * 45);
+      pipeline.expire(VISITOR_REDIS_KEYS.dailyCountryIndex(date), 60 * 60 * 24 * 45);
     });
   }
 
@@ -624,13 +787,33 @@ export function dailyTrafficRedisOperations(event: FunnelEvent) {
     return [] as const;
   }
 
+  const visitorId = event.visitorId?.trim();
   const date = dayKey(event.occurredAt);
+  const path = event.path;
 
   return [
     (pipeline: { incr: (key: string) => unknown; expire: (key: string, seconds: number) => unknown }) => {
       pipeline.incr(VISITOR_REDIS_KEYS.dailyPageViews(date));
       pipeline.expire(VISITOR_REDIS_KEYS.dailyPageViews(date), 60 * 60 * 24 * 45);
     },
+    ...(path
+      ? [
+          (pipeline: {
+            sadd: (key: string, member: string) => unknown;
+            incr: (key: string) => unknown;
+            expire: (key: string, seconds: number) => unknown;
+          }) => {
+            if (visitorId) {
+              pipeline.sadd(VISITOR_REDIS_KEYS.dailyPathVisitors(date, path), visitorId);
+            }
+            pipeline.sadd(VISITOR_REDIS_KEYS.dailyPathIndex(date), path);
+            pipeline.incr(VISITOR_REDIS_KEYS.dailyPathViews(date, path));
+            pipeline.expire(VISITOR_REDIS_KEYS.dailyPathIndex(date), 60 * 60 * 24 * 45);
+            pipeline.expire(VISITOR_REDIS_KEYS.dailyPathVisitors(date, path), 60 * 60 * 24 * 45);
+            pipeline.expire(VISITOR_REDIS_KEYS.dailyPathViews(date, path), 60 * 60 * 24 * 45);
+          },
+        ]
+      : []),
   ] as const;
 }
 
@@ -790,6 +973,13 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
     );
   }
 
+  const dailySnapshots = await readDailySnapshotsFromRedis(
+    client,
+    dayKeys,
+    dailyUnique,
+    dailyPageViews,
+  );
+
   return {
     lifetimeUnique,
     periodUnique,
@@ -800,11 +990,72 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
     periodByCountry,
     dailyUnique,
     dailyPageViews,
+    dailySnapshots,
     products,
     paths,
     pathsByChannel,
     lifetimePathsByChannel,
   };
+}
+
+async function readDailySnapshotsFromRedis(
+  client: RedisLike,
+  dayKeys: string[],
+  dailyUnique: DailyUniqueCounts,
+  dailyPageViews: DailyUniqueCounts,
+): Promise<Record<string, DailyTrafficSnapshot>> {
+  const snapshots: Record<string, DailyTrafficSnapshot> = {};
+
+  for (const date of dayKeys) {
+    const unique = dailyUnique[date] ?? 0;
+    const pageViews = dailyPageViews[date] ?? 0;
+    if (unique <= 0 && pageViews <= 0) {
+      continue;
+    }
+
+    const [pathKeys, countryKeys, ...channelCounts] = await Promise.all([
+      client.smembers<string>(VISITOR_REDIS_KEYS.dailyPathIndex(date)),
+      client.smembers<string>(VISITOR_REDIS_KEYS.dailyCountryIndex(date)),
+      ...TRAFFIC_CHANNELS.map((channel) =>
+        client.scard(VISITOR_REDIS_KEYS.dailyChannel(date, channel)),
+      ),
+    ]);
+
+    const paths: Record<string, DailyPathMetrics> = {};
+    for (const path of pathKeys ?? []) {
+      const [pathUnique, pathViews] = await Promise.all([
+        client.scard(VISITOR_REDIS_KEYS.dailyPathVisitors(date, path)),
+        client.get(VISITOR_REDIS_KEYS.dailyPathViews(date, path)),
+      ]);
+      if (pathUnique > 0 || Number(pathViews) > 0) {
+        paths[path] = {
+          unique: pathUnique,
+          views: Number(pathViews) || 0,
+        };
+      }
+    }
+
+    const byCountry: Record<string, number> = {};
+    for (const countryCode of countryKeys ?? []) {
+      byCountry[countryCode] = await client.scard(VISITOR_REDIS_KEYS.dailyCountry(date, countryCode));
+    }
+
+    snapshots[date] = {
+      unique,
+      pageViews,
+      paths,
+      byChannel: {
+        google: channelCounts[0] ?? 0,
+        chatgpt: channelCounts[1] ?? 0,
+        llm: channelCounts[2] ?? 0,
+        direct: channelCounts[3] ?? 0,
+        other: channelCounts[4] ?? 0,
+      },
+      byCountry,
+    };
+  }
+
+  return snapshots;
 }
 
 export function periodVisitorRedisKeysForReset() {

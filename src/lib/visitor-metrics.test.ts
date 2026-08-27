@@ -71,6 +71,24 @@ describe("visitor metrics", () => {
     expect(metrics.lifetimePathsByChannel.chatgpt["/mock-exams/cfa-level-1-readiness-check"]).toBe(1);
     expect(metrics.periodNew).toBe(2);
     expect(metrics.periodReturning).toBe(0);
+
+    const day = createFunnelEvent({
+      name: "page_view",
+      deckSlug: "cfa-level-1-anki-deck",
+      visitorId: "vis_a",
+      path: "/decks/cfa-level-1-anki-deck",
+    }).occurredAt.slice(0, 10);
+    expect(metrics.dailySnapshots[day]?.unique).toBe(2);
+    expect(metrics.dailySnapshots[day]?.paths["/decks/cfa-level-1-anki-deck"]).toMatchObject({
+      unique: 1,
+      views: 1,
+    });
+    expect(metrics.dailySnapshots[day]?.paths["/mock-exams/cfa-level-1-readiness-check"]).toMatchObject({
+      unique: 1,
+      views: 1,
+    });
+    expect(metrics.dailySnapshots[day]?.byChannel.google).toBe(1);
+    expect(metrics.dailySnapshots[day]?.byCountry.US).toBe(1);
   });
 
   it("keeps all-time Google/LLM path ranks after a period reset", () => {

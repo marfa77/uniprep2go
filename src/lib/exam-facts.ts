@@ -2658,6 +2658,133 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "Guichet.lu, SFA, and Luxembourg government marks belong to Luxembourg authorities. UniPrep2Go is not affiliated with or endorsed by the Luxembourg government.",
   },
+  "belgium-flanders-mo": {
+    examKey: "belgium-flanders-mo",
+    pageHeading: "Flanders Maatschappelijke Oriëntatie (MO) — Facts & Prep",
+    intro:
+      "In Flanders, maatschappelijke oriëntatie (MO) is a mandatory inburgering component with a standardized digital test after a 60-hour course — not a single federal Belgian citizenship MCQ. This page summarizes AGII-published pathway facts plus independent UniPrep2Go study products (not official Agentschap Integratie & Inburgering material).",
+    exam_facts: {
+      exam_name:
+        "Maatschappelijke oriëntatie (MO) — standaardtest within the Flanders inburgeringstraject",
+      administered_by:
+        "Agentschap Integratie & Inburgering (AgII) and local inburgering partners in Flanders",
+      question_count:
+        "Standardized digital MO test after course completion (exact item count in official reglement cursus en test MO — verify PDF on integratie-inburgering.be)",
+      time_limit:
+        "Course is typically 60 hours; test timing is set by AgII delivery rules — verify current reglement",
+      passing_score:
+        "Combined MO result: standardized test weighted 60% + in-class process evaluation 40%. Total pass threshold rises to 70% from 2 February 2026 (verify current reglement)",
+      delivery:
+        "Mandatory inburgeringstraject: Dutch (NT2 A2 target) + MO course + work + participation tracks; MO test taken after course in the learner’s language (26+ languages with audio support per AgII publications)",
+      verify_at_url:
+        "https://www.integratie-inburgering.be/nl/inburgering/maatschappelijke-orientatie",
+    },
+    official_sources: [
+      {
+        label: "AgII — Maatschappelijke oriëntatie",
+        url: "https://www.integratie-inburgering.be/nl/inburgering/maatschappelijke-orientatie",
+      },
+      {
+        label: "AgII — Inburgeringstraject (MO component)",
+        url: "https://www.integratie-inburgering.be/nl/wat-kunnen-we-voor-jou-doen/inburgeringstraject-en-cursus-maatschappelijke-orientatie/inburgeringstraject",
+      },
+      {
+        label: "AgII — Reglement cursus en test MO (PDF index)",
+        url: "https://www.integratie-inburgering.be/nl/wat-kunnen-we-voor-jou-doen/ondersteuning-voor-je-organisatie-of-lokaal-bestuur/juridische-dienstverlening/inburgering/documenten-in-het-kader-van-inburgering",
+      },
+    ],
+    domain_weights: [
+      { domain: "Werken, wonen, onderwijs, gezondheid", weight: "MO course / test themes" },
+      { domain: "Rechten, plichten, vrijheden en waarden", weight: "MO course / test themes" },
+      { domain: "Belgian / Flemish institutions and daily participation", weight: "MO course / test themes" },
+    ],
+    high_yield_facts: [
+      "Belgium has no single nationwide citizenship MCQ in force today — Flanders uses MO + Dutch within inburgering; a federal civic test remains proposed only.",
+      "MO is course-based under AgII rules: you typically cannot skip straight to a public free MCQ bank — the standaardtest follows course completion.",
+      "MO test score counts for 60% of the MO component; teacher process evaluation counts for 40% (attendance, participation, core skills).",
+      "Dutch A2 evidence (NT2) is a separate inburgering pillar — Netherlands Inburgering KNM decks do not substitute for Flanders MO civics.",
+      "UniPrep2Go’s free 60-question Dutch diagnostic (45 min / 70%) is independent theme practice — not AgII exam items and not the official standaardtest format.",
+    ],
+    candidate_qa: [
+      {
+        q: "Is there a free official Flanders MO practice test online?",
+        a: "AgII publishes course rules and sample learning modules — not a full public timed MCQ bank. VRT NWS and similar outlets publish sample quiz items for awareness only.",
+      },
+      {
+        q: "What pass score applies to the official MO standaardtest?",
+        a: "AgII combines test (60%) and process evaluation (40%). Publications note the total pass threshold moving to 70% from 2 February 2026 — verify the current reglement before your sitting.",
+      },
+      {
+        q: "Is Flanders MO the same as Wallonia citoyenneté?",
+        a: "No. Wallonia uses French-language integration pathways without the same MO standaardtest structure.",
+      },
+      {
+        q: "Is UniPrep2Go’s Belgium Flanders MO readiness check the official test?",
+        a: "No. It is an independent 60-question Dutch diagnostic on MO-style themes. The live 120-card Flanders MO Anki deck on Gumroad is separate spaced-repetition prep — not AgII material.",
+      },
+    ],
+    trademark_note:
+      "Agentschap Integratie & Inburgering and Flemish government marks belong to the Flemish Region / Belgium. UniPrep2Go is not affiliated with or endorsed by AgII.",
+  },
+  "finland-kansalaisuuskoe": {
+    examKey: "finland-kansalaisuuskoe",
+    pageHeading: "Finland Kansalaisuuskoe — Facts & Prep",
+    intro:
+      "Finland introduces a citizenship knowledge test (kansalaisuuskoe) for applications submitted from 1 March 2027. Maahanmuuttovirasto (Migri) organises the computer-based exam in Finnish or Swedish; the University of Helsinki prepares learning materials published on migri.fi. This page summarises published pathway facts plus UniPrep2Go’s free Finnish mock (no Anki deck sold — not official Migri material).",
+    exam_facts: {
+      exam_name: "Kansalaisuuskoe (Finnish citizenship knowledge test)",
+      administered_by: "Maahanmuuttovirasto (Migri); learning materials by University of Helsinki",
+      question_count:
+        "Government proposals cited roughly 20–40 multiple-choice questions — confirm binding count when Migri publishes materials",
+      time_limit: "Computer-based test; official timer not stably published yet — verify migri.fi",
+      passing_score: "Government proposals cited about 70% — confirm on migri.fi when materials publish",
+      delivery:
+        "Computer-based in Finnish or Swedish for working-age applicants (typically 18–65) on applications from 1 March 2027; exemptions may apply for Finnish/Swedish matriculation or higher-education degree",
+      verify_at_url: "https://migri.fi/en/citizenship",
+    },
+    official_sources: [
+      { label: "Migri — Citizenship", url: "https://migri.fi/en/citizenship" },
+      { label: "Migri — Kansalaisuuskoe (FI)", url: "https://migri.fi/kansalaisuuskoe" },
+      {
+        label: "University of Helsinki — citizenship test learning materials",
+        url: "https://helsinki.fi/en/news/education/helsinki-university-prepares-learning-materials-finlands-citizenship-test",
+      },
+    ],
+    domain_weights: [
+      { domain: "Legislation & state/democracy", weight: "Migri-published themes" },
+      { domain: "Fundamental/human rights & equality", weight: "Migri-published themes" },
+      { domain: "Finnish history & culture", weight: "Migri-published themes" },
+      { domain: "Public services & everyday civic life", weight: "Migri-published themes" },
+    ],
+    high_yield_facts: [
+      "Citizenship Act changes effective 1 January 2027; kansalaisuuskoe applies to applications submitted from 1 March 2027.",
+      "Transition: applications by 28 February 2027 are processed under prior rules — confirm your filing date on migri.fi.",
+      "Migri organises the test; University of Helsinki learning package publishes on migri.fi before the first sitting.",
+      "Test language is Finnish or Swedish — not English.",
+      "Exemptions may include Finnish/Swedish matriculation exam or a higher-education degree completed in Finnish or Swedish.",
+      "UniPrep2Go offers a free 60-question / 45-minute / 70% Finnish diagnostic only — no Anki deck on this pathway.",
+    ],
+    candidate_qa: [
+      {
+        q: "When does Finland’s citizenship test start?",
+        a: "For applications submitted from 1 March 2027, unless an exemption applies. Law effective 1 January 2027.",
+      },
+      {
+        q: "Is there an official free kansalaisuuskoe question bank yet?",
+        a: "Not a full public timed bank at ship time — watch migri.fi for the University of Helsinki learning materials.",
+      },
+      {
+        q: "What pass score will Finland use?",
+        a: "Government communications cited about 70% on proposed MCQs — confirm final rules when Migri publishes.",
+      },
+      {
+        q: "Does UniPrep2Go sell a Finland kansalaisuuskoe Anki deck?",
+        a: "No. UniPrep2Go does not sell a Finland kansalaisuuskoe Anki deck — mock-only prep at /mock-exams/finland-kansalaisuuskoe-readiness-check.",
+      },
+    ],
+    trademark_note:
+      "Maahanmuuttovirasto and Finnish government marks belong to Finland. UniPrep2Go is not affiliated with or endorsed by Migri.",
+  },
   "nha-cpct": {
     examKey: "nha-cpct",
     pageHeading: "NHA CPCT/A Exam — Facts, Domains & Prep",
@@ -2774,6 +2901,8 @@ const deckExamKeyMap: Record<string, string> = {
   "acsm-cpt-anki-deck": "acsm-cpt",
   "rd-exam-anki-deck": "rd-exam",
   "luxembourg-vivre-ensemble-anki-deck": "luxembourg-vivre-ensemble",
+  "belgium-flanders-mo-anki-deck": "belgium-flanders-mo",
+  "finland-kansalaisuuskoe-anki-deck": "finland-kansalaisuuskoe",
   "nha-cpct-anki-deck": "nha-cpct",
   "us-citizenship-test-prep2go-app": "us-citizenship",
   "leben-in-deutschland-prep2go-app": "leben-in-deutschland",

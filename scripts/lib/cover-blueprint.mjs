@@ -14,7 +14,7 @@ export const COVER_WIDTH = 1005;
 export const COVER_HEIGHT = 561;
 export const HERO_WIDTH = 1200;
 export const HERO_HEIGHT = 630;
-export const GUMROAD_THUMB_SIZE = 1200;
+export const GUMROAD_THUMB_SIZE = 600;
 
 const COLORS = {
   cream: "#f7f3ea",
@@ -95,7 +95,13 @@ export function simplifyCoverSubtitle(subtitle) {
 }
 
 export function inferMonogram(title, monogram) {
-  if (monogram) return monogram.slice(0, 12);
+  if (monogram) {
+    const trimmed = String(monogram).trim();
+    if (trimmed.length <= 8) return trimmed;
+    const state = trimmed.match(/^(.+?)\s+Real Estate/i);
+    if (state) return state[1];
+    return trimmed.split(/\s+/)[0].slice(0, 12);
+  }
   const cleaned = simplifyCoverTitle(title);
   const known = [
     ["CFA Level 2", "CFA L2"],
@@ -238,7 +244,41 @@ export function buildCoverSvg({
   );
 }
 
-/** Square product thumbnail for Gumroad listings (1200×1200). */
+function squareHeadline(title, monogram) {
+  const display = simplifyCoverTitle(title);
+  if (/appraiser/i.test(display)) return "Appraiser";
+  if (/^NY\b/i.test(display) || (monogram && /^NY\b/i.test(String(monogram).trim()))) {
+    return "New York";
+  }
+  if (/real estate/i.test(display)) {
+    return display.replace(/\s+Real Estate$/i, "").trim() || display;
+  }
+  const inferred = inferMonogram(title, monogram);
+  if (inferred && inferred.length <= 14 && !inferred.includes("\n")) return inferred;
+  return display.split(/\s+/).slice(0, 2).join(" ");
+}
+
+function squareHeadlineLines(title, monogram) {
+  const display = simplifyCoverTitle(title);
+  const speakers = display.match(/^(.+?)\s+for\s+(.+?)\s+Speakers$/i);
+  if (speakers) return [speakers[1].trim()];
+  const headline = squareHeadline(title, monogram);
+  const words = headline.split(/\s+/).filter(Boolean);
+  if (words.length >= 2 && headline.length > 11) {
+    return [words[0], words.slice(1).join(" ")];
+  }
+  return [headline];
+}
+
+function squareHeadlineSize(text, size) {
+  const n = String(text).length;
+  if (n <= 5) return Math.round(size * 0.1);
+  if (n <= 8) return Math.round(size * 0.08);
+  if (n <= 11) return Math.round(size * 0.064);
+  return Math.round(size * 0.05);
+}
+
+/** Square product thumbnail for Gumroad listings (600×600 minimum). */
 export function buildSquareThumbnailSvg({
   size = GUMROAD_THUMB_SIZE,
   title,
@@ -248,27 +288,30 @@ export function buildSquareThumbnailSvg({
   monogram,
 }) {
   const theme = PANEL_THEMES[panelKind] ?? PANEL_THEMES.study;
-  const code = inferMonogram(title, monogram);
-  const monoLines = code.split("\n");
-  const monoSize = monoLines.length > 1 ? 118 : monoLines[0].length > 8 ? 96 : 132;
   const cx = size / 2;
-  const cy = size * 0.46;
+  const lines = squareHeadlineLines(title, monogram);
+  const longest = lines.reduce((a, b) => (a.length >= b.length ? a : b));
+  const headlineSize = squareHeadlineSize(longest, size);
   const displayTitle = simplifyCoverTitle(title);
-  const titleLines = wrapLines(displayTitle, 14).slice(0, 2);
-  const titleSize = titleLines.length > 1 ? 34 : 38;
-  const titleStartY = size - 118;
-  const monoTspans = monoLines
-    .map(
-      (line, index) =>
-        `<tspan x="${cx}" dy="${index === 0 ? 0 : monoSize * 0.92}">${escapeXml(line)}</tspan>`,
-    )
+  const speakers = displayTitle.match(/^(.+?)\s+for\s+(.+?)\s+Speakers$/i);
+  const kicker = /real estate|appraiser/i.test(displayTitle)
+    ? "REAL ESTATE ANKI DECK"
+      : speakers
+      ? escapeXml(`FOR ${speakers[2].trim().toUpperCase()} SPEAKERS`)
+      : escapeXml((badge || "Anki Deck").toUpperCase());
+  const bannerW = Math.round(size * 0.88);
+  const bannerH = Math.round(size * (lines.length > 1 ? 0.3 : 0.24));
+  const bannerX = Math.round((size - bannerW) / 2);
+  const bannerY = Math.round((size - bannerH) / 2);
+  const titleBlockH = lines.length * headlineSize * 0.95;
+  const titleStart = bannerY + Math.round((bannerH - titleBlockH - size * 0.045) / 2) + headlineSize * 0.78;
+  const titleTspans = lines
+    .map((line, index) => {
+      const y = titleStart + index * headlineSize * 0.95;
+      return `<text x="${cx}" y="${y}" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="${headlineSize}" font-weight="700" letter-spacing="0.04em" fill="#fffaf0">${escapeXml(line.toUpperCase())}</text>`;
+    })
     .join("");
-  const titleTspans = titleLines
-    .map(
-      (line, index) =>
-        `<tspan x="${cx}" dy="${index === 0 ? 0 : titleSize * 1.12}">${escapeXml(line)}</tspan>`,
-    )
-    .join("");
+  const kickerY = bannerY + bannerH - Math.round(size * 0.045);
 
   return Buffer.from(
     `<svg width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg">
@@ -277,21 +320,11 @@ export function buildSquareThumbnailSvg({
           <stop offset="0%" stop-color="${theme.bg}"/>
           <stop offset="100%" stop-color="${COLORS.navyDeep}"/>
         </linearGradient>
-        <radialGradient id="sqGlow" cx="50%" cy="40%" r="58%">
-          <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
-          <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-        </radialGradient>
       </defs>
       <rect width="100%" height="100%" fill="url(#sqGrad)"/>
-      <rect width="100%" height="100%" fill="url(#sqGlow)"/>
-      <circle cx="${size * 0.84}" cy="${size * 0.14}" r="${size * 0.18}" fill="#ffffff" opacity="0.05"/>
-      <g transform="translate(44, 40) scale(1.05)">${LOGO_SVG}</g>
-      ${flashcardStack(size * 0.1, size * 0.62, theme.fg, 0.24)}
-      <text x="${cx}" y="${cy - (monoLines.length > 1 ? 18 : 0)}" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="${monoSize}" font-weight="700" letter-spacing="0.05em" fill="${theme.fg}">${monoTspans}</text>
-      <rect x="0" y="${size - 148}" width="${size}" height="148" fill="${COLORS.cream}"/>
-      <rect x="${size * 0.38}" y="${size - 148}" width="${size * 0.24}" height="5" rx="2.5" fill="${COLORS.amber}"/>
-      <text x="${cx}" y="${titleStartY}" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="${titleSize}" font-weight="700" fill="${COLORS.ink}">${titleTspans}</text>
-      <text x="${cx}" y="${size - 36}" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="0.16em" fill="${COLORS.muted}">${escapeXml(badge.toUpperCase())}</text>
+      <rect x="${bannerX}" y="${bannerY}" width="${bannerW}" height="${bannerH}" rx="8" fill="#152238" stroke="${COLORS.amber}" stroke-width="2.5"/>
+      ${titleTspans}
+      <text x="${cx}" y="${kickerY}" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="${Math.round(size * 0.028)}" font-weight="600" letter-spacing="0.14em" fill="${COLORS.amber}">${kicker}</text>
     </svg>`,
   );
 }

@@ -100,7 +100,12 @@ export function MockInterestCta({ config, cta, report, compact = false }: MockIn
 
   if (compact) {
     return (
-      <form className="inline-flex w-full max-w-xl flex-col gap-2 sm:flex-row sm:items-center" onSubmit={registerInterest}>
+      <form
+        action="#"
+        className="inline-flex w-full max-w-xl flex-col gap-2 sm:flex-row sm:items-center"
+        method="post"
+        onSubmit={registerInterest}
+      >
         {emailField}
         <button
           className={btnSecondarySm}
@@ -125,7 +130,12 @@ export function MockInterestCta({ config, cta, report, compact = false }: MockIn
     <section className="rounded-3xl border border-[#1f3a5f]/20 bg-[#fffaf0] p-6 sm:p-8">
       <h3 className="text-2xl font-semibold tracking-tight">{cta.label}</h3>
       <p className="mt-3 text-sm leading-7 text-[#4f493e]">{cta.description}</p>
-      <form className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-end" onSubmit={registerInterest}>
+      <form
+        action="#"
+        className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-end"
+        method="post"
+        onSubmit={registerInterest}
+      >
         {emailField}
         <button
           className={btnPrimary}

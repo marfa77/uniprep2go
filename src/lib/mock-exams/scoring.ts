@@ -1,4 +1,3 @@
-import { getMockExamConfig } from "./configs";
 import type {
   MockAttemptInput,
   MockExamConfig,
@@ -362,13 +361,11 @@ export function scoreMockAttempt(
   };
 }
 
-export function buildMockReport(attempt: MockAttemptInput, questions: MockQuestion[]) {
-  const config = getMockExamConfig(attempt.examSlug);
-
-  if (!config) {
-    throw new Error(`Unknown mock exam: ${attempt.examSlug}`);
-  }
-
+export function buildMockReport(
+  config: MockExamConfig,
+  attempt: MockAttemptInput,
+  questions: MockQuestion[],
+) {
   return scoreMockAttempt(config, questions, attempt);
 }
 

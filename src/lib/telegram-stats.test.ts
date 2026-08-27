@@ -14,6 +14,7 @@ import {
   formatSearchAndLlmTopPages,
   formatSevenDayDynamics,
   formatTodayTopPages,
+  formatYesterdaySection,
 } from "./telegram-stats";
 import type { FunnelStats } from "./funnel-store";
 import type { FunnelEvent } from "./analytics";
@@ -111,6 +112,31 @@ const sampleStats: FunnelStats = {
       other: {},
     },
     periodByCountry: { US: 12, PT: 4, DE: 2 },
+    dailySnapshots: {
+      "2026-06-09": {
+        unique: 23,
+        pageViews: 88,
+        paths: {
+          "/decks/cfa-level-1-anki-deck": { unique: 8, views: 12 },
+          "/": { unique: 5, views: 7 },
+        },
+        byChannel: {
+          google: 4,
+          chatgpt: 2,
+          llm: 1,
+          direct: 12,
+          other: 4,
+        },
+        byCountry: { US: 10, DE: 3 },
+      },
+      "2026-06-08": {
+        unique: 22,
+        pageViews: 210,
+        paths: { "/": { unique: 9, views: 15 } },
+        byChannel: { google: 3, chatgpt: 1, llm: 0, direct: 14, other: 4 },
+        byCountry: { US: 8 },
+      },
+    },
   },
   storage: "redis",
 };
@@ -153,44 +179,35 @@ describe("telegram stats", () => {
     expect(message).toContain("Errors: none");
   });
 
-  it("formats a single growth-focused stats message", () => {
-    const messages = toTelegramStatsMessages(sampleStats);
-    const message = toTelegramStatsMessage(sampleStats);
+  it("formats a growth-focused stats message", () => {
+    const now = new Date("2026-06-10T12:00:00.000Z");
+    const messages = toTelegramStatsMessages(sampleStats, now);
+    const message = toTelegramStatsMessage(sampleStats, now);
 
     expect(messages).toHaveLength(1);
     expect(message).toContain("UniPrep2Go · growth pulse");
-    expect(message).toContain("Unique users: 23 period · 128 lifetime");
-    expect(message).toContain("new 18 · returning 5 (21.7% return rate)");
-    expect(message).toContain("Mock starts (Exam vs Learn):");
-    expect(message).toContain("period exam 2 · learn 1 · total 3");
-    expect(message).toContain("Google 12 · ChatGPT 4 · LLM 3 · Direct 5 · Other 2");
-    expect(message).toContain("Countries (unique, period):");
-    expect(message).toContain("US 12 · PT 4 · DE 2");
+    expect(message).toContain("▸ YESTERDAY · 09.06 UTC");
+    expect(message).toContain("23 unique · 88 views");
+    expect(message).toContain("/decks/cfa-level-1-anki-deck — 12v (8u)");
+    expect(message).toContain("▸ LAST 7 DAYS · unique / views per UTC day");
+    expect(message).toContain("← yesterday");
+    expect(message).toContain("▸ PERIOD TOTAL · since reset");
+    expect(message).toContain("23 unique (new 18 · returning 5 (21.7% return rate))");
+    expect(message).toContain("Mock: 3 starts (exam 2 · learn 1)");
+    expect(message).toContain("▸ TOP SKUs (period");
     expect(message).toContain("cfa-level-1-anki-deck: 14 view → 2 intent → 1 convert (7.1%)");
-    expect(message).toContain(
-      "mock · cfa-level-1-readiness-check: 8 view → 3 start → 1 done → 0 convert (0.0%)",
-    );
-    expect(message).toContain("Mock completed (period):");
-    expect(message).toContain("/decks/cfa-level-1-anki-deck — 14");
-    expect(message).toContain("Top pages (Google · recent):");
-    expect(message).toContain(
-      "none yet (all-time Google uniques: 0; period: 12; checked last 100 events)",
-    );
-    expect(message).toContain("Top pages (LLM · ChatGPT+LLM · recent):");
-    expect(message).toContain(
-      "none yet (all-time LLM uniques: 0; period: 7; checked last 100 events)",
-    );
-    expect(message).toContain("Top pages (today ·");
-    expect(message).toContain("Динамика 7 дней (посетители / просмотры)");
-    expect(message).toContain(
-      formatSevenDayDynamics(
-        sampleStats.visitors.dailyUnique,
-        sampleStats.visitors.dailyPageViews,
-      ),
-    );
-    expect(message).not.toContain("All-time");
-    expect(message).not.toContain("Recent events");
-    expect(message).not.toContain("Last 7 days");
+    expect(message).toContain("▸ ACQUISITION");
+    expect(message).not.toContain("Top pages (period):");
+    expect(message).not.toContain("Динамика 7 дней");
+  });
+
+  it("explains yesterday paths from dailySnapshots", () => {
+    const block = formatYesterdaySection(sampleStats, new Date("2026-06-10T12:00:00.000Z"));
+
+    expect(block).toContain("▸ YESTERDAY · 09.06 UTC");
+    expect(block).toContain("Top paths:");
+    expect(block).toContain("/decks/cfa-level-1-anki-deck — 12v (8u)");
+    expect(block).toContain("+1u");
   });
 
   it("formats Google and LLM top pages from recent events", () => {
@@ -494,7 +511,7 @@ describe("telegram stats", () => {
     expect(message).toContain("US 45 · PT 12 (visits)");
   });
 
-  it("formats the 7-day dynamics block like the reference example", () => {
+  it("formats the 7-day dynamics block with daily totals", () => {
     const block = formatSevenDayDynamics(
       sampleStats.visitors.dailyUnique,
       sampleStats.visitors.dailyPageViews,
@@ -502,11 +519,13 @@ describe("telegram stats", () => {
       new Date("2026-06-10T12:00:00.000Z"),
     );
 
-    expect(block).toContain("Динамика 7 дней (посетители / просмотры)");
-    expect(block).toContain("04.06: 0 / 0 ·");
-    expect(block).toContain("05.06: 10 / 114 ▪▪▪▪▪▪▪▪▪▪");
-    expect(block).toContain("06.06: 19 / 169 ▪▪▪▪▪▪▪▪▪▪▪▪");
-    expect(block).toContain("10.06: 0 / 0 ·");
+    expect(block).toContain("▸ LAST 7 DAYS · unique / views per UTC day");
+    expect(block).toContain("04.06:  0u /   0v ·");
+    expect(block).toContain("05.06: 10u / 114v ▪▪▪▪▪▪▪▪▪▪");
+    expect(block).toContain("09.06: 23u /  88v");
+    expect(block).toContain("← yesterday");
+    expect(block).toContain("Σ7d:");
+    expect(block).toContain("vs prior 7d unique:");
   });
 
   it("computes growth vs prior week", () => {
@@ -533,7 +552,7 @@ describe("telegram stats", () => {
     expect(signal.label).toContain("↑ growing");
   });
 
-  it("shows only top 10 decks and mocks in the growth pulse", () => {
+  it("shows only top 5 SKUs in the growth pulse", () => {
     const products = Object.fromEntries(
       Array.from({ length: 15 }, (_, index) => [
         `deck-${index + 1}`,
@@ -550,9 +569,9 @@ describe("telegram stats", () => {
     });
 
     expect(message).toContain("deck-1: 15 view");
-    expect(message).toContain("deck-10: 6 view");
-    expect(message).not.toContain("deck-11:");
-    expect(message).toContain("- ...and 5 more");
+    expect(message).toContain("deck-5: 11 view");
+    expect(message).not.toContain("deck-6:");
+    expect(message).toContain("- ...and 10 more SKUs");
   });
 
   it("splits only when the message is too long", () => {

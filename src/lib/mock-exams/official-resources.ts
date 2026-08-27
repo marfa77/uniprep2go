@@ -720,9 +720,41 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
     certifier: "Sweden — Migrationsverket",
     verifyAtUrl: "https://www.migrationsverket.se/English.html",
   },
+  "finland-kansalaisuuskoe-readiness-check": {
+    certifier: "Finland — Maahanmuuttovirasto (Migri)",
+    verifyAtUrl: "https://migri.fi/en/citizenship",
+    sources: [
+      {
+        label: "Migri — Citizenship",
+        url: "https://migri.fi/en/citizenship",
+      },
+      {
+        label: "Migri — Kansalaisuuskoe (FI)",
+        url: "https://migri.fi/kansalaisuuskoe",
+      },
+      {
+        label: "HE — Citizenship Act amendment (learning materials / test)",
+        url: "https://helsinki.fi/en/news/education/helsinki-university-prepares-learning-materials-finlands-citizenship-test",
+      },
+    ],
+  },
   "belgium-flanders-mo-readiness-check": {
     certifier: "Flanders — Agentschap Integratie & Inburgering",
-    verifyAtUrl: "https://www.vlaanderen.be/en",
+    verifyAtUrl: "https://www.integratie-inburgering.be/nl/inburgering/maatschappelijke-orientatie",
+    sources: [
+      {
+        label: "AgII — Maatschappelijke oriëntatie",
+        url: "https://www.integratie-inburgering.be/nl/inburgering/maatschappelijke-orientatie",
+      },
+      {
+        label: "AgII — Inburgeringstraject",
+        url: "https://www.integratie-inburgering.be/nl/wat-kunnen-we-voor-jou-doen/inburgeringstraject-en-cursus-maatschappelijke-orientatie/inburgeringstraject",
+      },
+      {
+        label: "VRT NWS — sample MO quiz (official Online Leren style)",
+        url: "https://www.vrt.be/vrtnws/nl/2025/05/07/quiz-inburgering-maatschappelijke-orientatie/",
+      },
+    ],
   },
   "belgium-wallonie-citoyennete-readiness-check": {
     certifier: "Wallonia — parcours d'intégration / citoyenneté",

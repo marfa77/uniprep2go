@@ -26,7 +26,9 @@ type MockSeoProfileOverride = Omit<
   MockSeoProfile,
   "whatIsExam" | "administeredBy" | "officialFormat" | "examFaqs"
 > &
-  Partial<Pick<MockSeoProfile, "whatIsExam" | "administeredBy" | "officialFormat" | "examFaqs">>;
+  Partial<Pick<MockSeoProfile, "whatIsExam" | "administeredBy" | "officialFormat" | "examFaqs">> & {
+    localeMeta?: Record<string, { title?: string; description?: string; intro?: string }>;
+  };
 
 function defaultProfile(config: MockExamConfig): MockSeoProfile {
   const niche = getNicheExamExplainer(config.slug);
@@ -966,7 +968,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "belgium-flanders-mo-readiness-check": {
     title: "Free Belgium Flanders MO Practice Test | 60 Questions",
     description:
-      "Free Flanders MO practice: 60 timed questions. Belgium has no single federal civics MCQ today — live path is Dutch + MO/integration; a national civic test is proposed. Waitlist Anki. Independent prep.",
+      "Free Flanders MO practice: 60 timed questions. Belgium has no single federal civics MCQ today — live path is Dutch + MO/integration; a national civic test is proposed. Live 120-card Anki on Gumroad. Independent prep.",
     keywords: ["maatschappelijke oriëntatie", "Flanders MO", "inburgering Vlaanderen"],
     headline: "Free Belgium Flanders MO Readiness Check",
     intro:
@@ -974,6 +976,15 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     audience:
       "Applicants preparing Flanders social orientation / integration civics themes.",
     practiceTestLabel: "Flanders MO practice test",
+    localeMeta: {
+      "nl-BE": {
+        title: "Gratis MO oefentest Vlaanderen | 60 vragen maatschappelijke oriëntatie",
+        description:
+          "Gratis MO-oefentest Vlaanderen: 60 getimede vragen over maatschappelijke oriëntatie (instellingen, geschiedenis, rechten, dagelijks leven). Geen officiële AgII-standaardtest — onafhankelijke voorbereiding. Live 120-card Anki-deck op Gumroad.",
+        intro:
+          "Nederstalige oefentest voor maatschappelijke oriëntatie in Vlaanderen. Officieel traject = 60u MO-cursus + standaardtest (60/40) via Agentschap Integratie & Inburgering — deze pagina is extra oefening, geen AgII-materiaal.",
+      },
+    },
   },
   "belgium-wallonie-citoyennete-readiness-check": {
     title: "Free Belgium Wallonie Citoyenneté Practice Test | 60 Questions",
@@ -998,6 +1009,27 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     audience:
       "Applicants preparing Luxembourg Vivre ensemble / nationality civics.",
     practiceTestLabel: "Vivre ensemble practice test",
+  },
+  "finland-kansalaisuuskoe-readiness-check": {
+    title: "Free Finland Kansalaisuuskoe Practice Test | 60 Questions (Finnish)",
+    description:
+      "Free Finnish kansalaisuuskoe practice: 60 timed questions for the 2027 citizenship test path. Applications from 1 Mar 2027 — Migri organises; official bank not published yet. Independent mock-only prep (no Anki deck).",
+    keywords: ["kansalaisuuskoe", "Finnish citizenship test", "kansalaisuustesti", "Suomen kansalaisuuskoe"],
+    headline: "Free Finland Kansalaisuuskoe Readiness Check",
+    intro:
+      "Timed Finnish-language diagnostic for Finland’s new kansalaisuuskoe (applications from 1 March 2027). Confirm final Migri format when learning materials publish — this page is independent theme practice, not official Maahanmuuttovirasto material.",
+    audience:
+      "Applicants preparing Finland’s 2027 citizenship knowledge test in Finnish or comparing Nordic civics pathways.",
+    practiceTestLabel: "Kansalaisuuskoe harjoitustesti",
+    localeMeta: {
+      "fi-FI": {
+        title: "Ilmainen kansalaisuuskoe-harjoitustesti | 60 kysymystä suomeksi",
+        description:
+          "Ilmainen ajoitettu kansalaisuuskoe-harjoitustesti: 60 monivalintaa Migri-teemoista (2027-polku). Virallinen pankki ei ole vielä julkaistu — itsenäinen harjoitus, ei Maahanmuuttoviraston materiaalia.",
+        intro:
+          "Suomenkielinen harjoitustesti tulevaan kansalaisuuskokeeseen (hakemukset 1.3.2027 alkaen). Tarkista lopullinen muoto migri.fi-sivuilta, kun oppimateriaali julkaistaan.",
+      },
+    },
   },
 };
 
@@ -1030,6 +1062,11 @@ export function buildMockSeoDescription(config: MockExamConfig) {
 
 export function buildMockSeoKeywords(config: MockExamConfig) {
   return getMockSeoProfile(config).keywords;
+}
+
+export function getMockLocaleMeta(config: MockExamConfig, locale: string) {
+  const override = mockSeoProfiles[config.slug]?.localeMeta?.[locale];
+  return override ?? null;
 }
 
 export function buildMockSearchFaqs(config: MockExamConfig) {

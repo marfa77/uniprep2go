@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gaivota em Portugal · Ep.01 — O Terramoto (1755) · FREE</title>
+  <title>Gaivota em Portugal · Ep.01 — O Terramoto (1755)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -174,6 +174,30 @@
       .dock { display: grid; }
       .glossary { grid-template-columns: 1fr; font-size: .9rem; }
     }
+    @media print {
+      @page { size: A4; margin: 8mm; }
+      body { background: white; margin: 0; }
+      .bar { display: none !important; }
+      .badge-free { display: none !important; }
+      .wrap { max-width: none; margin: 0; padding: 0; }
+      .page {
+        box-shadow: none; border: none; margin: 0; padding: 0 0 4mm;
+        width: auto; max-width: none; min-height: 0 !important; height: auto;
+        break-after: page; page-break-after: always;
+      }
+      .page:last-child { break-after: auto; page-break-after: auto; }
+      .page-head { margin-bottom: .45rem; }
+      .hero, .panel, .brief-img { min-height: 0 !important; height: auto; }
+      .hero > img:not(.stamp), .panel img, .brief-img img {
+        max-height: 195mm;
+        width: 100%;
+        height: auto !important;
+        object-fit: contain;
+      }
+      .stamp { width: 52px; height: 52px; top: .6rem; right: .6rem; }
+      .bubble { box-shadow: none; }
+      .foot { margin-top: .4rem; }
+    }
 
   </style>
 </head>
@@ -193,7 +217,7 @@
     <article class="page">
       <div class="page-head">
         <div class="left"><img src="art/gaivota-canon-mark.webp" alt="" /> Gaivota em Portugal</div>
-        <div class="meta">Episode 01 · Free sample</div>
+        <div class="meta">Episode 01 · Lisbon 1755</div>
       </div>
       <div class="hero">
         <img src="art/ep01-cover.webp" alt="Cover: Lisbon 1755" />
@@ -204,7 +228,7 @@
           <p>Lisboa, 1 de novembro de 1755 — uma história completa em cinco páginas.</p>
         </div>
       </div>
-      <div class="foot"><span>Noir history comic · PT-PT + EN glossary</span><span>Sample episode</span></div>
+      <div class="foot"><span>Noir history comic · PT-PT + EN glossary</span><span>Episode 01</span></div>
     </article>
 
     <!-- HISTORY BRIEF -->
@@ -463,7 +487,7 @@
 
       <div class="cta">
         <strong>Next: Ep.02 — 25 de Abril</strong>
-        <span>Paid episodes $5 · Ep.01 is free so you can feel the format: history brief → noir comic story → study pack.</span>
+        <span>Series format: history brief → noir comic story → study pack · Hub: uniprep2go.study/comics/gaivota-em-portugal</span>
       </div>
     </article>
 

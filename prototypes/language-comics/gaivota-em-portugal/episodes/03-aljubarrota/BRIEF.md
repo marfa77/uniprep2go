@@ -2,9 +2,10 @@
 
 | | |
 |--|--|
-| Status | **Ready** — Gumroad **PDF** live |
-| Price | **$5** (separate Gumroad product) |
+| Status | **Ready** — Gumroad + Etsy pack |
+| Price | **$5** |
 | Pack | `../dist/Gaivota-Ep03-Aljubarrota.pdf` |
+| Etsy | `docs/etsy/gaivota-ep03-listing-media/` |
 | Landing | `/comics/gaivota-em-portugal/03-aljubarrota` |
 | Event | Battle of Aljubarrota · 14 August 1385 |
 | Mascot | brand canon stamp/mark |
