@@ -5,6 +5,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { buildSocialMetadata } from "@/lib/social-metadata";
+import { leafPageTitle } from "@/lib/seo";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
@@ -72,7 +73,7 @@ const faqs = [
 
 export const metadata: Metadata = withAiMetadata(
   {
-    title: "Cursor rules for indie hackers — .mdc kit from shipped solo products",
+    title: leafPageTitle("Cursor Rules for Indie Hackers | .mdc Ship Kit"),
     description: directAnswer,
     alternates: {
       canonical: `/${slug}`,

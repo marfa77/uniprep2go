@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return withAiMetadata(
     finalize({
-      title: leafPageTitle(`${vertical.seoTitle} | UniPrep2Go`),
+      title: leafPageTitle(vertical.seoTitle),
       description,
       alternates: { canonical: path },
       openGraph: {

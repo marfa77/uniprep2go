@@ -4,7 +4,7 @@ import Link from "next/link";
 import { GaivotaEpisodeSeoSections } from "@/components/comics/gaivota-episode-seo-sections";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { gaivotaSeries } from "@/lib/gaivota-comics";
+import { gaivotaEpisodePageTitle, gaivotaSeries } from "@/lib/gaivota-comics";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
@@ -17,7 +17,7 @@ const directAnswer =
 
 export const metadata: Metadata = withAiMetadata(
   {
-  title: "O Terramoto (1755) — Free Portuguese History Comic | Gaivota em Portugal",
+  title: gaivotaEpisodePageTitle("01-1755-earthquake"),
   description: directAnswer,
   alternates: { canonical: `${siteConfig.url}${pagePath}` },
   openGraph: {

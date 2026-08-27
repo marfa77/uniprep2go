@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { leafPageTitle } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 /** Series catalog for Gaivota em Portugal comics (HTML free + Gumroad paid). */
@@ -157,4 +159,16 @@ export const gaivotaEpisodes: GaivotaEpisode[] = [
 
 export function gaivotaAbsolute(path: string) {
   return new URL(path, siteConfig.url).toString();
+}
+
+export function gaivotaHubPageTitle(): Metadata["title"] {
+  return leafPageTitle("Gaivota em Portugal | Free History Comics");
+}
+
+export function gaivotaEpisodePageTitle(episodeId: string): Metadata["title"] {
+  const episode = gaivotaEpisodes.find((entry) => entry.id === episodeId);
+  if (!episode) {
+    return leafPageTitle("Gaivota em Portugal | History Comic");
+  }
+  return leafPageTitle(`${episode.titlePt} (${episode.year}) | Gaivota Comic`);
 }

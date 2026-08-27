@@ -4,7 +4,7 @@ import Link from "next/link";
 import { GaivotaEpisodeSeoSections } from "@/components/comics/gaivota-episode-seo-sections";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { gaivotaEpisodes, gaivotaSeries } from "@/lib/gaivota-comics";
+import { gaivotaEpisodePageTitle, gaivotaEpisodes, gaivotaSeries } from "@/lib/gaivota-comics";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
@@ -18,7 +18,7 @@ const directAnswer =
 
 export const metadata: Metadata = withAiMetadata(
   {
-  title: "Aljubarrota (1385) — Portuguese History Comic | Gaivota em Portugal",
+  title: gaivotaEpisodePageTitle("03-aljubarrota"),
   description: directAnswer,
   alternates: { canonical: `${siteConfig.url}${pagePath}` },
   openGraph: {

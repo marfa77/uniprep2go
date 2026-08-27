@@ -21,6 +21,12 @@ export const SITE_NAME = siteConfig.name;
 /** Ahrefs: keep primary title under ~57 chars before the layout template suffix. */
 export const SEO_TITLE_MAX = 57;
 
+/** Max rendered `<title>` for absolute/leaf pages (SERP display ~60 chars). */
+export const SERP_TITLE_ABSOLUTE_MAX = 60;
+
+/** Suffix appended by root layout when `title` is a plain string. */
+export const SEO_TITLE_TEMPLATE_SUFFIX = ` | ${SITE_NAME}`;
+
 export const SEO_KEYWORDS = [
   "free practice test",
   "readiness check",
@@ -118,9 +124,14 @@ export function truncateSeoTitle(title: string, max = SEO_TITLE_MAX): string {
   return fitSeoTitle(title, max);
 }
 
-/** Leaf product/mock pages — skip layout `| SiteName` suffix so titles are not double-truncated in SERPs. */
-export function leafPageTitle(title: string, max = 60): Metadata["title"] {
+/** Leaf/hub pages — skip layout `| SiteName` suffix so titles are not double-truncated in SERPs. */
+export function leafPageTitle(title: string, max = SERP_TITLE_ABSOLUTE_MAX): Metadata["title"] {
   return { absolute: fitSeoTitle(title, max) };
+}
+
+/** Plain metadata titles that use the root layout template — keep total under SERP_TITLE_ABSOLUTE_MAX. */
+export function templatePageTitle(title: string, max = SEO_TITLE_MAX): string {
+  return fitSeoTitle(title, max);
 }
 
 /**

@@ -5,14 +5,17 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { getAllBlogPosts } from "@/lib/blog";
 import { withAiMetadata } from "@/lib/llm-meta";
+import { finalize, leafPageTitle } from "@/lib/seo";
 import { absoluteUrl, siteConfig } from "@/lib/site";
+
+const blogIndexTitle = leafPageTitle("Exam Prep Guides | Citizenship, SIE, ServSafe");
 
 const blogDescription =
   "Practical UniPrep2Go study guides for EU citizenship exams, EPA 608, ServSafe, FINRA SIE, and more — with free timed mocks and Anki decks.";
 
 export const metadata: Metadata = withAiMetadata(
-  {
-    title: "Exam Prep Guides — Citizenship, EPA 608, ServSafe, FINRA",
+  finalize({
+    title: blogIndexTitle,
     description: blogDescription,
     alternates: {
       canonical: "/blog",
@@ -23,13 +26,13 @@ export const metadata: Metadata = withAiMetadata(
       googleBot: { index: true, follow: true, "max-image-preview": "large" },
     },
     openGraph: {
-      title: "Exam Prep Guides — UniPrep2Go Blog",
+      title: "Exam Prep Guides | UniPrep2Go Blog",
       description:
         "Practical study guides for citizenship and US licensing exams — paired with free timed practice tests.",
       url: "/blog",
       type: "website",
     },
-  },
+  }),
   {
     aiDescription: blogDescription,
     aiCategory: "exam-prep;blog;study-guides",

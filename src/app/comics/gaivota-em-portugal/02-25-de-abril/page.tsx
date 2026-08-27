@@ -4,7 +4,7 @@ import Link from "next/link";
 import { GaivotaEpisodeSeoSections } from "@/components/comics/gaivota-episode-seo-sections";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { gaivotaSeries } from "@/lib/gaivota-comics";
+import { gaivotaEpisodePageTitle, gaivotaSeries } from "@/lib/gaivota-comics";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
@@ -16,7 +16,7 @@ const directAnswer =
 
 export const metadata: Metadata = withAiMetadata(
   {
-  title: "25 de Abril (1974) — Portuguese History Comic | Gaivota em Portugal",
+  title: gaivotaEpisodePageTitle("02-25-de-abril"),
   description: directAnswer,
   alternates: { canonical: `${siteConfig.url}${pagePath}` },
   openGraph: {

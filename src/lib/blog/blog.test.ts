@@ -491,4 +491,10 @@ describe("blog guides", () => {
     // Non-money citizenship dumps stay out of Google sitemap.
     expect(urls).not.toContain(absoluteUrl("/blog/portugal-nationality-test"));
   });
+
+  it("keeps blog index title within SERP absolute limit", () => {
+    expect(
+      fitSeoTitle("Exam Prep Guides | Citizenship, SIE, ServSafe", 60).length,
+    ).toBeLessThanOrEqual(60);
+  });
 });

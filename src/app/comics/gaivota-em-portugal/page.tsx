@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { gaivotaEpisodes, gaivotaSeries } from "@/lib/gaivota-comics";
+import { gaivotaEpisodes, gaivotaHubPageTitle, gaivotaSeries } from "@/lib/gaivota-comics";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
@@ -13,7 +13,7 @@ const directAnswer =
 
 export const metadata: Metadata = withAiMetadata(
   {
-    title: "Gaivota em Portugal — Free Portuguese History Comics | UniPrep2Go",
+    title: gaivotaHubPageTitle(),
     description: directAnswer,
     alternates: { canonical: `${siteConfig.url}${gaivotaSeries.hubPath}` },
     openGraph: {

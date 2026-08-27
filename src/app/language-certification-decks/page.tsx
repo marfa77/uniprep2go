@@ -15,9 +15,7 @@ import { buildCatalogItemListJsonLd } from "@/lib/product-jsonld";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const title = leafPageTitle(
-    "Language Certification Anki Decks | CIPLE, DELE, DELF, TCF, NT2",
-  );
+  const title = leafPageTitle("Language Exam Anki Decks | CIPLE, DELE, DELF, NT2");
 
   return withAiMetadata(
     finalize({
