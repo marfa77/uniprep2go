@@ -476,6 +476,20 @@ Official CFA Level 2 is vignette / item-set across 10 equally weighted topics �
 
 Level 2 failures often come from mis-applying inventory and lease adjustments in FSA vignettes, confusing FCFF vs FCFE setups, and weak ethics judgment under time pressure. Mega L1 leftovers do not train that item-set logic.`,
 
+  "cfa-level-2-formula-reference-2026": `### What is inside
+
+60 printable pages with **219 typeset formulas** and **276 examiner-style definitions** across all ten CFA Level 2 topic areas — Quant, Economics, FSA, Corporate Issuers, Equity, Fixed Income, Derivatives, Alternatives, Portfolio Management, and Ethics. Each row shows concept, typeset math, and a one-line plain-English meaning. The bundled **80-question Formula Recall Drill** tests whether you can name the concept behind a displayed formula under item-set timing.
+
+### Study plan with the free mock and Anki deck
+
+**Week 1:** Print weak-topic tables (Fixed Income, Equity, FSA first). **Week 2:** Run the 80-question recall drill timed; review every explanation. **Week 3:** Take the [free 60-question CFA Level 2 mock](/mock-exams/cfa-level-2-readiness-check) — no signup — and map topic gaps back to the PDF tables. **Week 4+:** Drill missed formulas in the [495-card Level 2 Anki deck](/decks/cfa-level-2-anki-deck) between mock retakes.
+
+Official CFA Level 2 is vignette / item-set across 10 equally weighted topics — this PDF is a recall companion, not CFA Institute curriculum.
+
+### Pitfalls this reference targets
+
+Candidates lose item-set points from slow formula retrieval (duration/convexity families, residual income vs FCFE), mixing Level 1 ratio shortcuts with L2 adjustments, and skipping ethics application cards. The recall drill forces concept naming — not passive highlighting.`,
+
   "ciple-a2-european-portuguese-anki-deck": `### Which Portuguese pathways this deck targets
 
 **CIPLE A2 (CAPLE)** is the University of Lisbon A2 diploma many candidates use as language evidence for Portuguese residency and citizenship. The same European Portuguese (PT-PT) high-frequency lexicon supports **autorização de residência** and **nacionalidade portuguesa** paperwork even when the exact certificate name on your case differs. Formats and bureaucracy change — everyday PT-PT vocabulary does not.

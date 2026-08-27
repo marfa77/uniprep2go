@@ -3,9 +3,9 @@ import type { BlogPostDraft } from "../types";
 export const lifeInTheUkFailPassPost: BlogPostDraft = {
   slug: "life-in-the-uk-test-why-one-in-three-fail",
   title: "Life in the UK Test: Why 1 in 3 People Fail",
-  titleTag: "Life in the UK Test 2026: Why 1 in 3 Fail & How to Pass First Time",
+  titleTag: "Life in the UK Test 2026: Why 1 in 3 Fail | Free Mock",
   metaDescription:
-    "24 questions. 45 minutes. £50 per attempt. The Life in the UK Test has a ~75% pass rate — meaning ~25% fail. Format, handbook trap, and why Chapter 3 kills scores.",
+    "24Q / 45 min / £50 per attempt — ~25% fail. Official handbook trap, Chapter 3 dates, and free 60Q Life in the UK mock + Citizenship Anki bundle before you book.",
   publishedAt: "2026-07-28",
   eyebrow: "UK · Life in the UK Test",
   clusterId: "life-in-the-uk",
@@ -22,13 +22,7 @@ export const lifeInTheUkFailPassPost: BlogPostDraft = {
     mockLabel: "Take the free Life in the UK readiness check",
     deckLabel: "Get the Citizenship & Naturalization Anki Bundle",
     summary:
-      "Drill handbook themes with the free Life in the UK readiness check (Prep2Go-sourced). Then lock dates and facts with the Citizenship & Naturalization Anki Bundle (includes the Life in the UK deck) before you pay £50 on gov.uk — and browse Prep2Go for related immigration decks.",
-    extraLinks: [
-      {
-        href: "https://www.prep2go.study",
-        label: "Prep2Go.study — language & immigration decks",
-      },
-    ],
+      "Run the free 60-question Life in the UK readiness check (no signup) until timed mocks hit ~20/24. Then lock Chapter 3 dates and civics facts with the Citizenship & Naturalization Anki Bundle — includes the Life in the UK deck — before you pay £50 on gov.uk.",
   },
   sections: [
     {
@@ -190,6 +184,16 @@ export const lifeInTheUkFailPassPost: BlogPostDraft = {
       question: "Can I take the Life in the UK Test online?",
       answer:
         "No. It is in-person at an approved centre. A short on-screen practice does not count toward the score.",
+    },
+    {
+      question: "Is there a free Life in the UK practice test?",
+      answer:
+        "Yes. UniPrep2Go offers a free 60-question / 45-minute Life in the UK readiness check with topic scoring — a longer diagnostic, not the official 24-question format. Use it to find weak handbook areas before booking.",
+    },
+    {
+      question: "What Anki deck helps with Life in the UK prep?",
+      answer:
+        "The Citizenship & Naturalization Anki Bundle includes a Life in the UK deck plus five other country civics decks — useful for dates, monarchs, and government facts from the official handbook.",
     },
   ],
   bottomLine:

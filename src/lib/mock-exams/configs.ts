@@ -462,7 +462,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A 60-question Life & Health insurance licensing readiness diagnostic built from UniPrep2Go deck content.",
     examBody: "State insurance licensing authorities",
-    lastUpdated: "2026-06-01",
+    lastUpdated: "2026-08-27",
   },
   {
     slug: "property-casualty-insurance-readiness-check",

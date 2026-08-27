@@ -672,20 +672,21 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "CFA Level 2 candidates use spaced-repetition flashcards to retain vignette-depth formulas and application logic across all ten equally weighted curriculum topics — run the free readiness check before item-set practice blocks.",
   },
   "cfa-level-2-formula-reference-2026": {
-    title: "CFA L2 Formula Reference 2026 | 219 Formulas + Drill",
-    headline: "CFA Level 2 Formula Reference — 219 Formulas + 80 Recall Drill",
+    title: "CFA L2 Formula Sheet 2026 | Free 60Q Mock + PDF",
+    headline: "CFA Level 2 Formula Sheet PDF 2026 — 219 Formulas + Free Mock",
     studyLabel: "CFA Level 2 exam prep",
     description:
-      "CFA Level 2 formula quick reference PDF: 219 typeset formulas and 276 examiner-style definitions across 10 topic areas, 80-question recall drill with explanations, 60 print-ready pages. Pairs with 495-card Anki deck. Recall companion — not CFA Institute curriculum.",
+      "CFA Level 2 formula sheet PDF for 2026: 219 typeset formulas, 276 definitions, 80-question recall drill, 60 print pages — plus free 60-question timed L2 mock (no signup). Pairs with 495-card Anki. Not CFA Institute curriculum.",
     keywords: [
       "cfa level 2 formula sheet",
       "cfa level 2 formula reference",
       "cfa level 2 recall drill",
       "cfa level 2 quick reference pdf",
       "cfa level 2 formulas",
+      "cfa level 2 practice test",
     ],
     intro:
-      "Candidates who need sub-three-second formula retrieval under item-set timing print this reference for typeset formula tables and an 80-question recall drill — then drill weak topics in the companion Anki deck.",
+      "Free one-page cheat sheets skip item-set timing. Print this 60-page reference for typeset formula tables and the 80-question recall drill — then run the free 60-question CFA Level 2 mock and drill weak vignette topics in the companion Anki deck.",
   },
   "cfa-level-1-formula-reference-2026": {
     title: "Best CFA L1 Formula Sheet 2026 | 250 Formulas + Drill",
@@ -836,11 +837,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "National real estate Anki packs miss California disclosure timelines and DRE agency traps. Four hundred state-specific cards plus a free 60-question CA mock beat a Quizlet national dump before you buy a full Aceable-style course.",
   },
   "life-and-health-insurance-exam-anki-deck": {
-    title: "Life & Health Insurance Prep | 400 Cards + Mock",
+    title: "Life & Health Insurance Prep 2026 | 400 Cards + Mock",
     headline: "Life & Health Insurance Exam Prep — 400 Flashcards + Free Mock",
     studyLabel: "Life & Health insurance exam prep",
     description:
-      "Life and Health insurance license exam prep with 400 flashcards for policy types, annuities, Medicare basics, and producer responsibilities — plus a free 60-question insurance practice test for US licensing candidates.",
+      "Life & Health insurance license prep: 400 Anki flashcards (provisions, annuities, Medicare) + free 60-question timed practice test online — no signup. Independent study aid — not official state exam material.",
     keywords: [
       "life and health insurance practice test",
       "insurance license exam prep",

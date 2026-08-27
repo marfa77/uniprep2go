@@ -1041,10 +1041,10 @@ const rawDecks: Deck[] = [
     title: "Life & Health Insurance Exam Anki Deck — 400 High-Yield Flashcards",
     shortName: "Life & Health Insurance",
     subtitle:
-      "A focused Anki deck for Life & Health insurance producer exam active recall and licensing terminology.",
+      "400 Life & Health insurance flashcards + free 60-question timed practice test — provisions, annuities, Medicare.",
     directAnswer:
-      "UniPrep2Go sells an independent Life & Health Insurance Exam Anki deck with 400 high-yield cards covering national core topics tested across Life & Health insurance producer exams: general insurance principles, life insurance policy types, policy provisions and riders, annuities, health insurance plans and cost-sharing, disability income and long-term care, Medicare basics, and tax treatment, replacement, ethics, and producer responsibilities. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck is a supplementary active-recall study aid for insurance licensing candidates and is not official state exam material.",
-    lastUpdated: "2026-05-31",
+      "UniPrep2Go sells an independent Life & Health Insurance Exam Anki deck with 400 high-yield cards covering national core topics tested across Life & Health insurance producer exams: general insurance principles, life insurance policy types, policy provisions and riders, annuities, health insurance plans and cost-sharing, disability income and long-term care, Medicare basics, and tax treatment, replacement, ethics, and producer responsibilities — plus a free 60-question timed Life & Health readiness check (no signup). Delivered as an Anki .apkg file for {PRICE} through Gumroad. Supplementary active-recall study aid — not official state exam material.",
+    lastUpdated: "2026-08-27",
     audience:
       "Life & Health insurance license candidates, new insurance producers, career changers entering insurance sales, pre-licensing students, and candidates who want active recall for policy provisions, riders, annuities, health plans, and insurance terminology.",
     format: ".apkg",
@@ -1095,6 +1095,11 @@ const rawDecks: Deck[] = [
         question: "What does the Life & Health Insurance deck include?",
         answer:
           "400 high-yield Anki cards covering Life & Health insurance producer exam topics including general principles, life policies, provisions and riders, annuities, health plans, disability and LTC, Medicare, tax, replacement, ethics, and producer responsibilities.",
+      },
+      {
+        question: "Is there a free Life & Health insurance practice test?",
+        answer:
+          "Yes. Take the free 60-question timed Life & Health readiness check on UniPrep2Go (no signup), then drill weak topics with this Anki deck between sittings.",
       },
       {
         question: "Who is this deck for?",
@@ -1294,10 +1299,10 @@ const rawDecks: Deck[] = [
       "CFA Level 2 Formula Reference 2026 — 219 Formulas + 276 Definitions + 80-Question Drill (PDF)",
     shortName: "CFA Level 2 Formula Reference",
     subtitle:
-      "60-page printable formula quick reference for the 2026 cycle — 219 typeset formulas, 276 examiner-style definitions, and an 80-question recall drill.",
+      "60-page printable formula quick reference for the 2026 cycle — 219 typeset formulas, 276 definitions, 80-question recall drill, plus free 60Q timed mock.",
     directAnswer:
-      "UniPrep2Go sells an independent CFA Level 2 Formula & Definitions Quick Reference PDF with 60 printable pages: 495 entries (219 typeset formulas and 276 examiner-style definitions) organized across all 10 Level 2 topic areas (concept, typeset formula, one-line meaning), an 80-question Formula Recall Drill with explained answer key, and a clickable table of contents. Built from the same validated item bank as the CFA Level 2 Anki deck. Delivered as a grayscale-friendly US Letter PDF for {PRICE} through Gumroad. Recall companion — not CFA Institute curriculum or a study course.",
-    lastUpdated: "2026-06-13",
+      "UniPrep2Go sells an independent CFA Level 2 Formula & Definitions Quick Reference PDF with 60 printable pages: 495 entries (219 typeset formulas and 276 examiner-style definitions) organized across all 10 Level 2 topic areas (concept, typeset formula, one-line meaning), an 80-question Formula Recall Drill with explained answer key, and a clickable table of contents — same validated bank as the 495-card Anki deck and free 60-question timed CFA Level 2 readiness check (no signup). Delivered as a grayscale-friendly US Letter PDF for {PRICE} through Gumroad. Recall companion — not CFA Institute curriculum or a study course.",
+    lastUpdated: "2026-08-27",
     audience:
       "CFA Level 2 candidates who need fast formula retrieval under item-set exam timing — print the reference, run the recall drill, and pair with spaced-repetition review on the companion Anki deck.",
     format: "PDF",
@@ -1362,6 +1367,11 @@ const rawDecks: Deck[] = [
         question: "Does this pair with the CFA Level 2 Anki deck?",
         answer:
           "Yes. The PDF and 495-card Anki deck share the same validated item bank. Use the reference for printable formula tables and the recall drill; use Anki for daily spaced-repetition on your phone.",
+      },
+      {
+        question: "Is there a free CFA Level 2 practice test?",
+        answer:
+          "Yes. Take the free 60-question CFA Level 2 readiness check at uniprep2go.study/mock-exams/cfa-level-2-readiness-check — topic scoring and full answer review, then drill weak vignette areas with this PDF and the companion Anki deck.",
       },
       {
         question: "Is this official CFA Institute material?",

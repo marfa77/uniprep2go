@@ -298,18 +298,20 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Series 65 practice test",
   },
   "life-and-health-insurance-readiness-check": {
-    title: "Free Life and Health Insurance Practice Test | 60 Questions",
+    title: "Life & Health Insurance Practice Test 2026 | Free 60Q",
     description:
-      "Free Life & Health insurance licensing practice online: 60 timed questions, 90 minutes, 70% target, topic scoring, and answer review. Independent insurance prep — not official state exam material.",
+      "Free Life & Health insurance practice test — no signup: 60 timed questions, 90 minutes, 70% target, topic scoring, and full answer review. Pairs with 400-card Anki deck. Independent prep — not official state exam material.",
     keywords: [
       "life and health insurance practice test",
+      "free life and health insurance practice test",
       "insurance license practice exam",
       "life health insurance mock exam",
       "free insurance exam questions",
+      "life and health insurance exam prep",
     ],
-    headline: "Free Life & Health Insurance Readiness Check",
+    headline: "Free Life & Health Insurance Practice Test — 60 Questions",
     intro:
-      "A Life & Health insurance licensing readiness check covering health insurance, life basics, provisions, annuities, disability, LTC, and regulation.",
+      "A Life & Health insurance licensing practice test built from UniPrep2Go deck content — health insurance, life basics, provisions, annuities, disability, LTC, and regulation. Timed 60-question diagnostic with topic scoring — no signup. Drill weak areas in the 400-card Life & Health Anki deck between sittings.",
     audience: "Insurance producer candidates preparing for state Life & Health licensing exams.",
     practiceTestLabel: "Life & Health insurance practice test",
   },
