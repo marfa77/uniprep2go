@@ -367,6 +367,48 @@ SPECS: dict[str, dict[str, Any]] = {
             ("Delivery", "Instant .apkg"),
         ],
     },
+    "dele-a2-ccse-spanish-citizenship-bundle": {
+        "label": "DELE CCSE Spanish Nationality",
+        "headline": "DELE CCSE Spanish Nationality Anki Deck — 60 Flashcards",
+        "exam": "DELE A2-adjacent language · CCSE civics",
+        "hook": (
+            "Compact 60-card companion for Spanish nationality prep: DELE-adjacent language "
+            "themes plus CCSE civics — not a full Cervantes substitute."
+        ),
+        "audience": (
+            "For Spanish nationality applicants preparing DELE A2 language evidence plus "
+            "CCSE civics who want a short daily Anki loop."
+        ),
+        "disclaimer": "Instituto Cervantes / Spanish Ministry of Justice",
+        "about_heading": "What is this DELE + CCSE deck?",
+        "about": (
+            "Official Cervantes CCSE is 25 questions / 45 minutes / 60% pass. This deck is a "
+            "compact 60-card MCQ companion covering DELE-adjacent language themes and CCSE "
+            "civics. For thicker DELE / SIELE vocabulary, use the standalone 1500-card DELE deck."
+        ),
+        "pathways": "DELE A2 language evidence · CCSE · nacionalidad española",
+        "deck_covers": (
+            "60 MCQ cards mixing DELE-adjacent language themes and CCSE civics recall, "
+            "paired with the free UniPrep2Go CCSE timed diagnostic."
+        ),
+        "not_included": (
+            "Official Cervantes past papers, a full 1500-card DELE vocabulary bank, or "
+            "guaranteed nationality outcomes — pair with official CCSE materials."
+        ),
+        "why_anki": (
+            "Nationality timelines reward short daily loops. Sixty focused cards keep both "
+            "language and civics topics warm between mocks."
+        ),
+        "cards": "60",
+        "format_note": "Anki .apkg (compact nationality companion)",
+        "sample_captions": ["CCSE theme", "language theme", "civics recall"],
+        "facts": [
+            ("Pathways", "DELE A2 · CCSE · nationality"),
+            ("Cards", "60 MCQ"),
+            ("Official CCSE", "25Q / 45 min / 60%"),
+            ("Delivery", "Instant .apkg"),
+        ],
+    },
     "swedish-a2-sfi-anki-deck": {
         "label": "Swedish SFI Residence Citizenship",
         "headline": "Swedish SFI Residence Citizenship Anki Deck — 1000 Flashcards",

@@ -655,6 +655,13 @@ describe("deck catalog", () => {
     );
   });
 
+  it("shows only explicit PTCB peers on the study guide page", () => {
+    const guide = getCatalogDeckBySlug("ptcb-study-guide-2026");
+    expect(guide).toBeDefined();
+    const related = getRelatedDecks(guide!);
+    expect(related.map((deck) => deck.slug)).toEqual(["ptcb-pharmacy-technician-anki-deck"]);
+  });
+
   it("uses three real sample previews for the IB Biology SL deck", () => {
     const biologyDeck = getDeckBySlug("ib-biology-sl-anki-deck");
 

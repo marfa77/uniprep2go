@@ -5009,15 +5009,18 @@ export const RELATED_DECK_PEER_GROUPS: string[][] = [
 
 export function getRelatedDecks(deck: Pick<Deck, "slug" | "category">, limit = 4): Deck[] {
   const peerSlugs = RELATED_DECK_PEER_GROUPS.find((group) => group.includes(deck.slug)) ?? [];
-  const peers = peerSlugs
-    .filter((slug) => slug !== deck.slug)
-    .map((slug) => getDeckBySlug(slug))
-    .filter((candidate): candidate is Deck => Boolean(candidate));
-  const used = new Set([deck.slug, ...peers.map((peer) => peer.slug)]);
+  if (peerSlugs.length > 0) {
+    return peerSlugs
+      .filter((slug) => slug !== deck.slug)
+      .map((slug) => getDeckBySlug(slug))
+      .filter((candidate): candidate is Deck => Boolean(candidate))
+      .slice(0, limit);
+  }
+  const used = new Set([deck.slug]);
   const categoryFill = catalogAvailableDecks.filter(
     (candidate) => !used.has(candidate.slug) && candidate.category === deck.category,
   );
-  return [...peers, ...categoryFill].slice(0, limit);
+  return categoryFill.slice(0, limit);
 }
 
 export const siteFaqs = [

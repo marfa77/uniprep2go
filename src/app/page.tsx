@@ -233,7 +233,7 @@ const heroSecondaryLinks = [
   { href: "/mock-exams/series-63-readiness-check", label: "Series 63 free mock" },
   { href: "/decks/cfa-level-2-formula-reference-2026", label: "CFA L2 formula PDF" },
   { href: "/mock-exams/life-and-health-insurance-readiness-check", label: "Life & Health" },
-  { href: "/mock-exams/sie-full-mock", label: "SIE mock (indexing)" },
+  { href: "/mock-exams/sie-full-mock", label: "Free SIE mock" },
 ] as const;
 
 const howItWorksSteps = [

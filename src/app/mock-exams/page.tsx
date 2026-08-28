@@ -152,7 +152,7 @@ export default function MockExamsIndexPage() {
       >
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Free practice tests</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-          Free timed mock exams for US licensing &amp; finance
+          Free timed mock exams for US licensing & finance
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
           {indexedCount} live indexed mocks across {verticals.length} exam paths
