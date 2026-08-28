@@ -10,7 +10,11 @@ import { execSync } from "node:child_process";
 import { existsSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { ensureGumroadAccessToken, loadLocalEnvFiles } from "./lib/gumroad-auth.mjs";
+import {
+  ensureGumroadAccessToken,
+  loadLocalEnvFiles,
+  resolveGumroadAccessToken,
+} from "./lib/gumroad-auth.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const listPrices = JSON.parse(readFileSync(join(root, "src/data/catalog-list-prices.json"), "utf8"));
@@ -23,10 +27,13 @@ const finance = existsSync(financePath)
   : {};
 
 function parseArgs(argv) {
-  const args = { dryRun: false, slug: null };
+  const args = { dryRun: false, slugs: null };
   for (let i = 2; i < argv.length; i += 1) {
     if (argv[i] === "--dry-run") args.dryRun = true;
-    else if (argv[i] === "--slug") args.slug = argv[++i];
+    else if (argv[i] === "--slug") {
+      if (!args.slugs) args.slugs = [];
+      args.slugs.push(argv[++i]);
+    }
   }
   return args;
 }
@@ -69,7 +76,34 @@ function gumroadView(idOrPermalink) {
     stdio: ["ignore", "pipe", "pipe"],
   });
   const payload = JSON.parse(raw);
+  if (payload.success === false) {
+    throw new Error(payload.error?.message ?? "gumroad view failed");
+  }
   return payload.product ?? payload;
+}
+
+async function findProductByPermalink(permalink) {
+  const { token } = resolveGumroadAccessToken();
+  if (!token) throw new Error("no Gumroad access token");
+  const needle = permalink.toLowerCase();
+  let pageKey = null;
+  for (let page = 0; page < 40; page += 1) {
+    const url = new URL("https://api.gumroad.com/v2/products");
+    url.searchParams.set("access_token", token);
+    if (pageKey) url.searchParams.set("page_key", pageKey);
+    const res = await fetch(url);
+    const payload = await res.json();
+    if (!payload.success) {
+      throw new Error(payload.message ?? "gumroad products list failed");
+    }
+    for (const product of payload.products ?? []) {
+      const blob = `${product.short_url ?? ""} ${product.custom_permalink ?? ""} ${product.url ?? ""}`.toLowerCase();
+      if (blob.includes(needle)) return product;
+    }
+    pageKey = payload.next_page_key;
+    if (!pageKey) break;
+  }
+  throw new Error(`product not found for permalink ${permalink}`);
 }
 
 function gumroadUpdatePrice(productId, usd, dryRun) {
@@ -82,12 +116,17 @@ function gumroadUpdatePrice(productId, usd, dryRun) {
   execSync(`gumroad products publish ${productId} --non-interactive`, { stdio: "inherit" });
 }
 
-function resolveProductId(slug, checkoutUrl) {
+async function resolveProductId(slug, checkoutUrl) {
   const gum = wave[slug] || building[slug] || language[slug] || finance[slug];
   if (gum?.gumroadProductId) return gum.gumroadProductId;
-  const permalink = permalinkFromCheckoutUrl(checkoutUrl);
-  if (!permalink) throw new Error("no permalink in checkoutUrl");
-  const product = gumroadView(permalink);
+  const perm = permalinkFromCheckoutUrl(checkoutUrl);
+  if (!perm) throw new Error("no permalink in checkoutUrl");
+  let product;
+  try {
+    product = gumroadView(perm);
+  } catch {
+    product = await findProductByPermalink(perm);
+  }
   if (!product.id) throw new Error("gumroad view returned no id");
   return product.id;
 }
@@ -101,12 +140,12 @@ function livePriceUsd(product) {
   return Number.isFinite(parsed) ? parsed : 0;
 }
 
-function main() {
+async function main() {
   const args = parseArgs(process.argv);
   loadLocalEnvFiles();
   ensureGumroadAccessToken({ persist: true });
 
-  const slugs = args.slug ? [args.slug] : listAvailableDecks();
+  const slugs = args.slugs ?? listAvailableDecks();
   let updated = 0;
   let skipped = 0;
   let failed = 0;
@@ -119,8 +158,7 @@ function main() {
     }
     const target = targetUsd(slug, deck.format);
     try {
-      const gum = wave[slug] || building[slug] || language[slug] || finance[slug];
-      const productId = resolveProductId(slug, deck.checkoutUrl);
+      const productId = await resolveProductId(slug, deck.checkoutUrl);
       const product = gumroadView(productId);
       const liveUsd = livePriceUsd(product);
       if (Math.abs(liveUsd - target) < 0.01) {
@@ -141,4 +179,7 @@ function main() {
   if (failed > 0) process.exit(1);
 }
 
-main();
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});

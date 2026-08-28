@@ -20,6 +20,7 @@
     "setup:gumroad-building-decks": "node scripts/setup-gumroad-building-decks.mjs",
     "setup:gumroad-wave-decks": "node scripts/setup-gumroad-wave-decks.mjs",
     "sync:gumroad-catalog-prices": "node scripts/sync-gumroad-catalog-prices.mjs",
+    "check:gumroad-sample-cdn": "node scripts/check-gumroad-sample-cdn.mjs",
     "polish:prod-skus": "node scripts/batch-polish-prod-skus.mjs",
     "generate:wave-deck-specs": "node scripts/generate-wave-deck-specs.mjs --sync-anki-generator",
     "partner:payout-report": "npx tsx scripts/partner-payout-report.mjs",

@@ -40,6 +40,16 @@ Building: `polish-building-gumroad.py` + `publish-building-gumroad-landings.py`.
 
 Do not leave a live Gumroad product with thin one-paragraph copy and cover-only images.
 
+## Gumroad sample CDN (403 guard)
+
+After `--polish-only`, cover cleanup, or any Gumroad asset change, run:
+
+```bash
+npm run check:gumroad-sample-cdn
+```
+
+If broken: re-publish landings with `--force-cdn` on the matching script (`publish-building-gumroad-landings.py`, `publish-wave-gumroad-landings.py`, `publish-language-gumroad-landings.py`). Exit code 1 = at least one `public-files.gumroad.com` sample URL is stale (usually HTTP 403).
+
 ## Speed rules
 
 - Do **not** mix unrelated audits (Danish, PTCB, planned P0, …) into the active ship
