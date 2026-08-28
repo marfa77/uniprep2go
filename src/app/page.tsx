@@ -694,15 +694,15 @@ export default async function HomePage() {
                     <div className="flex items-stretch gap-4 rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-5">
                       {thumbnail ? (
                         <Link
-                          className="relative block w-36 min-h-20 shrink-0 self-stretch overflow-hidden rounded-xl border border-[#18140f]/10 bg-[#f6efe8]"
+                          className="relative block aspect-[16/10] w-40 shrink-0 overflow-hidden rounded-xl border border-[#18140f]/10 bg-[#f6efe8]"
                           href={`/decks/${deck.slug}`}
                         >
                           <Image
                             alt=""
                             aria-hidden
-                            className="object-cover object-center"
+                            className="object-cover object-left"
                             fill
-                            sizes="144px"
+                            sizes="160px"
                             src={thumbnail}
                             unoptimized={isPreoptimizedPublicImage(thumbnail)}
                           />
@@ -881,7 +881,7 @@ export default async function HomePage() {
                                 <Image
                                   alt=""
                                   aria-hidden
-                                  className="h-16 w-28 object-cover object-[78%_center]"
+                                  className="h-16 w-28 object-cover object-left"
                                   height={64}
                                   src={thumbnail}
                                   unoptimized={isPreoptimizedPublicImage(thumbnail)}
