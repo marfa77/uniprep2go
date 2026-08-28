@@ -36,6 +36,7 @@ Do **not** re-run WebSearch SERP or rewrite cites if `last_pass` is &lt; 60 days
 | ptcb-pharmacy-technician-anki-deck | Anki | 2026-08-23 | 2026-10-22 | $11 / 300 + free 90Q vs Quizlet/Brainscape/PTCB Practice Bank; official 90Q / 1h50 / 1400; companion note no longer says formula sheet |
 | ielts-toefl-english-for-portuguese-speakers-anki-deck | language | 2026-08-25 | 2026-10-24 | GSC crawled-not-indexed → unique PT-BR money page (false friends, BR pathways, ≠ CIPLE); beat AnkiWeb tourist PT–EN dumps; $26 / 2504 |
 | finland-kansalaisuuskoe-readiness-check | citizenship mock | 2026-08-27 | 2026-10-26 | New 2027 Migri path; free 60Q FI mock + blog; no official bank yet; mock-only (no Anki); beat thin Migri-only pages on timed FI practice intent |
+| mrics-quantity-surveying-readiness-check | building | 2026-08-28 | 2026-10-27 | Bing GB start; free 50Q/100m/70% + $11/250+ Anki beats Brainscape packs; honest no-MCQ APC; RICS Academy = interview CPD paywall |
 
 Homepage `/` is a hub — not a SKU row.
 

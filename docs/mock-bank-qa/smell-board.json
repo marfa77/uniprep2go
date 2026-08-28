@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-27T04:32:38.171Z",
+  "generatedAt": "2026-08-28T14:21:50.577Z",
   "scope": "live runnable mocks excluding citizenship",
   "totalBanks": 1,
   "tierCounts": {
     "P0": 0,
     "P1": 0,
-    "P2": 1,
-    "clean": 0
+    "P2": 0,
+    "clean": 1
   },
   "thresholds": {
     "EXPL_THIN": 100,
@@ -19,28 +19,28 @@
   },
   "banks": [
     {
-      "slug": "finland-kansalaisuuskoe-readiness-check",
-      "n": 60,
-      "tier": "P2",
+      "slug": "mrics-quantity-surveying-readiness-check",
+      "n": 250,
+      "tier": null,
       "score": 0,
       "templateStems": 0,
       "templateRate": 0,
-      "thinExplanations": 1,
-      "thinRate": 0.017,
+      "thinExplanations": 0,
+      "thinRate": 0,
       "keyBias": "a",
-      "keyDom": 0.267,
+      "keyDom": 0.26,
       "keyCounts": {
-        "a": 16,
-        "b": 16,
-        "c": 16,
-        "d": 12
+        "a": 65,
+        "b": 65,
+        "c": 60,
+        "d": 60
       },
       "junkHits": 0,
-      "shortStems": 23,
-      "medianExplanationLen": 169,
+      "shortStems": 4,
+      "medianExplanationLen": 193,
       "needsShuffle": false,
       "needsTemplateStrip": false,
-      "needsLocalEnrich": true,
+      "needsLocalEnrich": false,
       "needsJunkScrub": false
     }
   ]
