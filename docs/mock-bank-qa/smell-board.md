@@ -1,14 +1,14 @@
 # Mock bank smell board
 
-Generated: 2026-08-28T14:21:50.577Z
+Generated: 2026-08-30T07:50:20.698Z
 Scope: live runnable mocks excluding citizenship
 
 | Tier | Count |
 | --- | ---: |
 | P0 | 0 |
 | P1 | 0 |
-| P2 | 0 |
-| clean | 1 |
+| P2 | 2 |
+| clean | 2 |
 
 ## P0 (fix first)
 

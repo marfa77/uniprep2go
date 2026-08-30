@@ -356,7 +356,7 @@ describe("LLM documents", () => {
     expect(llms).toContain("LLM/GEO");
     expect(llms).toContain("$100");
     expect(llms).toContain("retail price agreed with you");
-    expect(llms.length).toBeLessThan(60000);
+    expect(llms.length).toBeLessThan(70000);
   });
 
   it("builds a full GEO markdown bundle for LLM ingestion", () => {

@@ -867,20 +867,30 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "parapro-readiness-check": {
     practiceTestName: "ParaPro Practice Test",
-    whatIsExam: "The ParaPro Assessment measures reading, writing, and math skills for instructional paraprofessionals under ESSA-related requirements.",
+    whatIsExam:
+      "The ETS ParaPro Assessment (1755) is a 90-question / 150-minute selected-response exam covering reading, writing, and math for instructional paraprofessionals. About two-thirds of items test basic skills and about one-third apply them in classroom contexts. Many districts use a 460 scaled cut — verify locally.",
     administeredBy: "ETS",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with ETS.",
+    officialFormat:
+      "Official: 90 selected-response / 150 minutes. UniPrep2Go free check: 60 questions / 75 minutes with topic scoring — shorter diagnostic, not a full ETS form.",
     examFaqs: [
       {
         question: "What is the ParaPro exam?",
-        answer: "The ParaPro Assessment measures reading, writing, and math skills for instructional paraprofessionals under ESSA-related requirements.",
+        answer:
+          "The ETS ParaPro Assessment (1755) measures reading, writing, and math for instructional paraprofessionals — 90 questions in 150 minutes. Confirm your local passing score (often 460).",
       },
       {
         question: "Is this an official ParaPro exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from ETS.",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice — not official exam material from ETS. The linked Anki deck is planned, not a live Gumroad product yet.",
       },
     ],
-    keywords: ["parapro practice test", "paraprofessional exam practice test", "parapro practice exam"],
+    keywords: [
+      "parapro practice test",
+      "paraprofessional exam practice test",
+      "parapro practice exam",
+      "parapro anki",
+      "ets parapro assessment 1755",
+    ],
   },
   "unarmed-security-officer-readiness-check": {
     practiceTestName: "Unarmed Security Officer Practice Test",

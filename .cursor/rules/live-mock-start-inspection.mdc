@@ -7,6 +7,15 @@ alwaysApply: true
 
 When the user pastes a UniPrep2Go `mock:…:start` / “Mock started” signal (or asks to inspect a live mock path), run this **same pass every time**. Do not stop at bank/Gumroad only.
 
+## Linked mock ↔ Anki pair (hard rule)
+
+If the SKU has a linked pair (`linkedDeckSlug` on the mock **or** `mockSlug` on the deck/spec), **always apply audit results to both pages in the same pass**:
+
+- `/mock-exams/{mockSlug}` — title / meta / H1 / intro / FAQ / official-format honesty / hub link / high-intent mock block
+- `/decks/{deckSlug}` — money-page pitch + unique content / directAnswer–FAQ honesty / commercial cite (when live) / exam-facts map
+
+Do **not** ship GEO/SERP fixes on only the traffic URL. Ledger both slugs (or one row that names both). Planned Anki still gets honesty + mock CTA; live Anki gets money-page + cite.
+
 ## Mandatory layers (all three)
 
 ### 1) Bank / product pathway

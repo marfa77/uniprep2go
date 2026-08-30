@@ -272,11 +272,13 @@ const prep2GoAdditionalLanguageDecks: Deck[] = [
     slug: "spanish-italian-paired-anki-deck",
     title: "Spanish + Italian Paired Vocabulary Anki Deck — 940+ Flashcards",
     shortName: "Spanish + Italian Paired Vocabulary",
-    description: "940+ paired vocabulary cards for learning Spanish and Italian in parallel through English, with examples and audio.",
+    description:
+      "940+ Prep2Go paired vocabulary cards for learning Spanish and Italian in parallel through English — dual native audio (ES + IT), examples, and images. Planned UniPrep listing (not a live Lemon checkout yet). Prefer this framing over AnkiWeb IT↔ES dumps that lack dual native audio and Prep2Go shop previews.",
     cards: "940+",
-    focus: "Spanish and Italian paired vocabulary",
-    topics: "Spanish and Italian paired headwords, English glosses, examples, and audio",
-    audience: "Learners who want to study Spanish and Italian together through English using Anki.",
+    focus: "Spanish and Italian paired vocabulary with dual audio",
+    topics: "Spanish and Italian paired headwords, English glosses, examples, dual native audio",
+    audience:
+      "Learners who want to study Spanish and Italian together through English using Anki — waitlist/planned on UniPrep; live dual-audio samples via Prep2Go shop mapping.",
     coverImage: "/covers/spanish-italian-paired-anki-deck.webp",
     status: "planned",
   }),

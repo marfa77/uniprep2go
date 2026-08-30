@@ -907,7 +907,8 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "math", label: "Math skills" },
       { id: "application", label: "Classroom application" }
     ]),
-    officialSourceNote: "Mapped to ETS themes. Independent UniPrep2Go readiness check — not an official exam.",
+    officialSourceNote:
+      "Official ETS ParaPro (1755): 90 selected-response / 150 minutes (reading, writing, math). This UniPrep2Go check is a shorter 60Q / 75 min diagnostic — independent practice, not ETS material.",
     description: "Free 60-question ParaPro readiness check with topic scoring.",
     examBody: "ETS",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",

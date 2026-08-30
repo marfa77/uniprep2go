@@ -1340,6 +1340,66 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "GRE® is a registered trademark of ETS. UniPrep2Go is not affiliated with or endorsed by ETS.",
   },
+  "parapro": {
+    examKey: "parapro",
+    pageHeading: "ParaPro Assessment — Exam Facts & Prep",
+    intro:
+      "The ETS ParaPro Assessment (test code 1755) measures reading, writing, and mathematics skills for instructional paraprofessionals. This page summarizes official structure; UniPrep2Go products are independent prep (not ETS exam material).",
+    exam_facts: {
+      exam_name: "ParaPro Assessment (1755)",
+      administered_by: "Educational Testing Service (ETS)",
+      question_count: "90 selected-response questions across reading, writing, and mathematics",
+      scored_count: "90 (some forms may include unscored pretest items — verify current Study Companion)",
+      time_limit: "150 minutes",
+      scoring_scale: "Scaled score reported by ETS",
+      passing_score:
+        "Cut scores are set by states/districts — many employers use 460 as a common threshold; verify your local requirement",
+      delivery: "Computer-delivered (in-person or at-home options — verify at ets.org/parapro)",
+      outline_effective_date: "ParaPro Assessment Study Companion (verify current PDF at ets.org)",
+      verify_at_url: "https://www.ets.org/parapro/test-takers/about/prepare.htm.html",
+    },
+    official_sources: [
+      {
+        label: "ETS — Prepare for the ParaPro Assessment",
+        url: "https://www.ets.org/parapro/test-takers/about/prepare.htm.html",
+      },
+      {
+        label: "ETS — ParaPro Assessment Study Companion (PDF)",
+        url: "https://www.ets.org/pdfs/parapro/1755.pdf",
+      },
+      {
+        label: "ETS — ParaPro TestPrep hub",
+        url: "https://parapro.ets.org/testprep.html",
+      },
+    ],
+    domain_weights: [
+      { domain: "Reading", weight: "~1/3 of items — skills + classroom application" },
+      { domain: "Writing", weight: "~1/3 of items — skills + classroom application" },
+      { domain: "Mathematics", weight: "~1/3 of items — skills + classroom application" },
+    ],
+    high_yield_facts: [
+      "About two-thirds of items in each subject test basic skills; about one-third apply those skills in a classroom context.",
+      "There is no penalty for guessing on selected-response items.",
+      "Official free Study Companion PDF includes sample questions; interactive practice tests may be paid.",
+      "Retake waiting periods and fees vary — verify current ETS bulletin before registering.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the ParaPro Assessment?",
+        a: "90 selected-response questions in 150 minutes across reading, writing, and math.",
+      },
+      {
+        q: "What is a passing ParaPro score?",
+        a: "ETS reports a scaled score; many districts use 460 as a common cut — confirm the score your employer or state requires.",
+      },
+      {
+        q: "Is UniPrep2Go's ParaPro check the official exam?",
+        a: "No. The free UniPrep2Go 60-question readiness check is independent practice — not ETS exam material. The Anki deck is planned, not a live purchase SKU yet.",
+      },
+    ],
+    trademark_note:
+      "ParaPro® and Praxis® are trademarks of ETS. UniPrep2Go is not affiliated with or endorsed by ETS.",
+  },
   "pmp": {
     examKey: "pmp",
     pageHeading: "PMP — Domains, Scoring & Prep Facts",
@@ -2883,6 +2943,7 @@ const deckExamKeyMap: Record<string, string> = {
   "gmat-focus-anki-deck": "gmat",
   "sat-anki-deck": "sat",
   "pmp-anki-deck": "pmp",
+  "parapro-anki-deck": "parapro",
   "gre-anki-deck": "gre",
   "hvac-epa-608-anki-deck": "epa-608",
   "bms-building-automation-anki-deck": "bms-bas",

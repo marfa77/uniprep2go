@@ -44,6 +44,30 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "Best 2026 PTCE printable guide: DSCSA-weighted Federal Requirements, 80-question exam, cheat sheets + free 90Q online mock.",
   "mrics-quantity-surveying-anki-deck":
     "Focused MRICS QS APC Anki — NRM, JCT/NEC, cost planning — plus a free 50-question QS competency mock.",
+  "leed-green-associate-anki-deck":
+    "$11 / 250+ LEED GA cards + free 50Q timed mock — ownable .apkg vs free 100–700Q lead-gen banks. Official GA is 100Q / 2h / scaled 170.",
+  "pmp-anki-deck":
+    "$11 / 346+ PMP cards for 2026 ECO (People / Process / Business Environment) + free domain readiness check. Official exam is 180Q / 240 min.",
+  "parapro-anki-deck":
+    "Planned 60-card ParaPro Anki (reading, writing, math, classroom application). Take the free 60Q / 75 min diagnostic now — official ETS ParaPro is 90Q / 150 min.",
+  "acsm-cpt-anki-deck":
+    "$11 / 120 ACSM-CPT cards + free 120Q timed check — official 135 items / 150 min / scaled 550. Ownable .apkg vs Mometrix volume banks.",
+  "ashrae-certifications-anki-deck":
+    "$11 / 250 ASHRAE multi-cred cards + free 50Q diagnostic — ownable .apkg vs mega free Q-banks; keep ASHRAE’s official 30Q practice separate.",
+  "nebosh-anki-deck":
+    "$11 / 250 NEBOSH IGC cards + free 50Q knowledge diagnostic — honest: official GIC1/GIC2 are not MCQ.",
+  "well-ap-anki-deck":
+    "$11 / 250 WELL AP cards + free 50Q timed mock — official 115 items / 2.5h / scaled 170. Not IWBI material.",
+  "california-real-estate-exam-anki-deck":
+    "400 California DRE-only cards + free 60Q timed mock — not a national Quizlet pack; official salesperson is 150Q / 3h15 / 70% both portions.",
+  "series-63-anki-deck":
+    "$11 Series 63 Anki + free 60Q NASAA-topic mock — state-law repair after SIE/7; not official NASAA material.",
+  "dele-a2-ccse-spanish-citizenship-bundle":
+    "$26 / 60 compact CCSE MCQ cards + free 60Q timed diagnostic — official Cervantes CCSE is 25Q / 45 min / 60%. Not the 1500-card DELE vocab deck.",
+  "citizenship-naturalization-anki-bundle":
+    "Multi-country citizenship Anki bundle + free timed civics diagnostics (UK / CA / AU / more) — not a single-country handbook dump.",
+  "medicare-counseling-anki-deck":
+    "Planned SHIP Medicare counseling Anki. Take the free 60Q diagnostic now — no national published Q-count; verify your state SHIP/OCCT path.",
   "bms-building-automation-anki-deck":
     "200+ BACnet / HVAC-sequence / alarms-trends-schedules / commissioning cards plus a free 60-question timed BMS diagnostic. No single federal BMS license — Niagara 4 TCP is a vendor course, not this mock.",
 }
@@ -73,6 +97,16 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Four chapters sized to 2026 domain weights (Medications 35%, Federal 18.75% with DSCSA, Patient Safety 23.75%, Order Entry 22.5%). The 80-question exam mirrors PTCE scored length (28/15/19/18). Pair with the free 90-question online mock and the separate 300-card Anki deck — beats free blogs still teaching removed compounding topics.",
   "mrics-quantity-surveying-anki-deck":
     "QS-pathway cards for NRM measurement, cost planning, JCT/NEC contract practice, procurement, and ethics — paired with a free timed QS readiness check. Ownable Anki .apkg for APC interview recall, not a Brainscape subscription dump.",
+  "leed-green-associate-anki-deck":
+    "LEED GA domain cards: integrative process, location/transportation, sites & water, energy & atmosphere, materials & IEQ — same bank themes as the free 50-question timed check. Ownable $11 .apkg; official GBCI form is 100Q / 2 hours / scaled 170. Not USGBC material.",
+  "pmp-anki-deck":
+    "346+ ECO-aligned cards across People (33%), Process (41%), and Business Environment (26%) for the 2026 PMP outline — paired with the free domain-weighted readiness check. Ownable $11 .apkg vs AnkiWeb dumps; official sitting is 180Q / 240 minutes. Not PMI material.",
+  "parapro-anki-deck":
+    "Planned ParaPro spaced-repetition deck for ETS Assessment 1755 themes (reading, writing, math, classroom application). The free 60-question / 75-minute readiness check is live now; the official exam is 90 selected-response / 150 minutes. Not ETS material.",
+  "series-63-anki-deck":
+    "Series 63 state-law cards for broker-dealer regulation, agent registration, ethics, communications, and investment adviser basics — paired with the free 60-question NASAA-topic readiness check. Ownable .apkg after SIE/Series 7; not NASAA material.",
+  "medicare-counseling-anki-deck":
+    "Planned SHIP Medicare counseling cards for Parts A/B/C/D themes, rights/appeals, fraud awareness, and counseling standards. The free 60-question diagnostic is live; there is no public national Q-count — verify your state SHIP/OCCT path. Not a state SHIP certificate.",
   "bms-building-automation-anki-deck":
     "BACnet objects/services/BBMD, HVAC sequences, operator alarms/trends/schedules, and commissioning checkout — the same four domains as the free 60-question timed check. Ownable .apkg for controls techs; not Tridium Niagara 4 TCP material and not a CertifBus 10-question tease.",
   "servsafe-manager-anki-deck":
@@ -215,6 +249,56 @@ export const positioningOverrides: Partial<
     ],
     summaryProse:
       "Brainscape packs drown QS candidates in 2,000 mixed cards. A focused Anki .apkg plus a free timed QS mock tells you which competencies to drill before the RICS assessment interview.",
+  },
+  "leed-green-associate-anki-deck": {
+    ourEdge: [
+      "250+ LEED GA domain cards from the same bank as the free 50Q mock",
+      "Official honesty: GBCI form is 100Q / 2h / scaled 170 — our mock is a shorter diagnostic",
+      "Ownable $11 .apkg — not a free 100–700Q lead-gen bank",
+      "Independent prep — not USGBC/GBCI exam material",
+    ],
+    summaryProse:
+      "Free LEED GA Q-banks (Archiroots, CareerEmployer, Projectific) chase volume. UniPrep wins when you want a free timed 50-question diagnostic plus an ownable $11 Anki .apkg mapped to the same domains — then sit the real 100Q / 2h / 170 exam.",
+  },
+  "pmp-anki-deck": {
+    ourEdge: [
+      "346+ cards across People 33% / Process 41% / Business Environment 26% (2026 ECO)",
+      "Free domain-weighted readiness check before you buy a 180Q simulator",
+      "Ownable $11 .apkg — not AnkiWeb dumps or AI card generators",
+      "Independent prep — not PMI exam material",
+    ],
+    summaryProse:
+      "Full-length PMP sims matter late. Start with UniPrep’s free domain diagnostic and $11 ECO-aligned Anki — then move to a 180-question / 240-minute simulator when domain scores stabilize.",
+  },
+  "parapro-anki-deck": {
+    ourEdge: [
+      "Planned 60-card ParaPro Anki for reading, writing, math, classroom application",
+      "Free 60Q / 75 min diagnostic live now — official ETS form is 90Q / 150 min",
+      "Honest cut-score note: many districts use 460 — verify locally",
+      "Independent prep — not ETS exam material",
+    ],
+    summaryProse:
+      "ETS Study Companion and paid interactive practice tests own official format. UniPrep’s free shorter diagnostic (and planned Anki) is for topic scoring before you schedule Assessment 1755.",
+  },
+  "series-63-anki-deck": {
+    ourEdge: [
+      "NASAA state-law themes: BD/agent registration, ethics, communications, IA basics",
+      "Free 60-question timed Series 63 readiness check",
+      "Ownable .apkg for post-SIE/7 state-law repair",
+      "Independent prep — not NASAA material",
+    ],
+    summaryProse:
+      "Series 63 fails candidates on Uniform Securities Act judgment, not product trivia. A focused Anki deck plus a free 60-question timed mock beats grinding unrelated SIE leftovers before the state law sitting.",
+  },
+  "medicare-counseling-anki-deck": {
+    ourEdge: [
+      "Planned SHIP counseling Anki for Medicare parts, rights, fraud, counseling standards",
+      "Free 60-question timed diagnostic live now",
+      "Honest: no public national Q-count — verify state SHIP/OCCT",
+      "Independent prep — not a state SHIP certificate",
+    ],
+    summaryProse:
+      "State SHIP offices own certification. UniPrep’s free 60-question diagnostic (and planned Anki) is independent practice for Medicare counseling themes — not OCCT and not a national exam form.",
   },
   "servsafe-manager-anki-deck": {
     ourEdge: [
@@ -1038,6 +1122,86 @@ Focused QS-pathway prompts for RICS APC: NRM measurement and costing, design eco
 ### Pitfalls this deck targets
 
 Candidates confuse NRM1/2/3 uses, mix NEC Option B BOQ rules with activity schedules, and under-prepare ethics scenarios for the final assessment interview. Cards force those distinctions.`,
+
+  "leed-green-associate-anki-deck": `### What is inside
+
+250+ LEED Green Associate cards across integrative process, location & transportation, sustainable sites & water, energy & atmosphere, and materials/IEQ — the same domain bank as the free timed readiness check. Built for spaced recall of credit intents and high-yield GA terminology, not a 700-question lead-gen dump.
+
+### Plan with the free LEED GA mock
+
+**Phase 1:** Sit the [free 50-question LEED GA readiness check](/mock-exams/leed-green-associate-readiness-check) (100 min / 70% diagnostic). **Phase 2:** 20–25 Anki cards/day on your weakest domains. **Phase 3:** Retake the mock; finish with energy/atmosphere and materials/IEQ if those rows lag. Official GBCI exam is **100Q / 2 hours / scaled 170** — keep that pacing separate from this shorter diagnostic.
+
+### Pitfalls this deck targets
+
+Candidates memorize random green-building trivia without credit-category structure, or treat free mega Q-banks as a substitute for timed diagnosis + spaced repair. Cards force LEED process and category framing.
+
+### What this does not replace
+
+USGBC/GBCI registration, candidate handbook study, or the official Prometric/online exam. Independent prep — not USGBC material.`,
+
+  "pmp-anki-deck": `### What is inside
+
+346+ PMP cards mapped to the 2026 Exam Content Outline: People (33%), Process (41%), and Business Environment (26%). Predictive, agile, and hybrid judgment prompts — same domain themes as the free readiness check.
+
+### Plan with the free PMP mock
+
+**Phase 1:** Sit the [free PMP readiness check](/mock-exams/pmp-readiness-check) for domain scoring. **Phase 2:** 20–25 Anki cards/day biased to your lowest domain (Business Environment jumped in 2026 — do not under-weight it). **Phase 3:** Move to a full-length **180Q / 240 min** simulator only after domain scores stabilize. Official PMI sitting has no published fixed % cut — review domain performance on the score report.
+
+### Pitfalls this deck targets
+
+Candidates grind AnkiWeb dumps or AI-generated cards without ECO domain weights, or jump straight into 180-question sims before knowing which domain fails. Cards keep People / Process / Business Environment in daily rotation.
+
+### What this does not replace
+
+PMI eligibility hours, authorized training, or the official Pearson VUE / online proctored exam. Independent prep — not PMI material.`,
+
+  "parapro-anki-deck": `### What is inside
+
+Planned 60-card ParaPro Anki for ETS Assessment 1755 themes: reading skills, writing skills, mathematics, and classroom application. Same topic map as the free timed readiness check.
+
+### Plan with the free ParaPro mock (live now)
+
+**Phase 1:** Sit the [free 60-question ParaPro readiness check](/mock-exams/parapro-readiness-check) (75 min diagnostic). **Phase 2:** Drill weak subjects with ETS Study Companion samples and (when live) this Anki deck. **Phase 3:** Schedule Assessment **1755** — official form is **90 selected-response / 150 minutes**. Many districts use a **460** scaled cut — verify your employer/state requirement.
+
+### Pitfalls this deck targets
+
+Candidates treat a shorter free diagnostic as a full ETS form, or ignore classroom-application items (~1/3 of each subject). Cards (when shipped) force skills + application framing.
+
+### What this does not replace
+
+ETS registration, the free Study Companion PDF, or paid ETS interactive practice. Anki is planned on UniPrep — not a live Gumroad SKU yet. Independent prep — not ETS material.`,
+
+  "series-63-anki-deck": `### What is inside
+
+Series 63 cards for NASAA Uniform Securities Act themes: broker-dealer and agent registration, unethical business practices, communications with the public, and investment adviser basics. Built for state-law repair after SIE / Series 7 — same themes as the free timed readiness check.
+
+### Plan with the free Series 63 mock
+
+**Phase 1:** Sit the [free 60-question Series 63 readiness check](/mock-exams/series-63-readiness-check). **Phase 2:** 15–20 Anki cards/day on your weakest law rows. **Phase 3:** Retake the mock; finish on ethics and communications if those domains lag. Confirm current NASAA outline and state scheduling separately.
+
+### Pitfalls this deck targets
+
+Candidates reuse SIE product cards for Series 63, under-drill USA registration exemptions, and confuse federal vs state jurisdiction. Cards force state-law framing under spaced recall.
+
+### What this does not replace
+
+NASAA outlines, state registration, or the official exam. Independent prep — not NASAA material.`,
+
+  "medicare-counseling-anki-deck": `### What is inside
+
+Planned SHIP Medicare counseling Anki for Parts A/B/C/D literacy, beneficiary rights and appeals, fraud/abuse awareness, and unbiased counseling standards. Same theme map as the free timed readiness check.
+
+### Plan with the free Medicare counseling mock (live now)
+
+**Phase 1:** Complete your state SHIP training modules. **Phase 2:** Sit the [free 60-question Medicare counseling readiness check](/mock-exams/medicare-counseling-readiness-check). **Phase 3:** Drill weak themes with state materials and (when live) this Anki deck before your office schedules OCCT or local certification.
+
+### Pitfalls this deck targets
+
+Candidates invent a national fixed Q-count/pass score, skip Part D comparison practice, or treat this diagnostic as a state SHIP certificate. There is no public national published item count — verify locally.
+
+### What this does not replace
+
+State SHIP training, OCCT scheduling, or your program’s certificate. Anki is planned on UniPrep — not a live Gumroad SKU yet. Independent prep — not SHIP TA Center material.`,
 
   "servsafe-manager-anki-deck": `### What is inside
 

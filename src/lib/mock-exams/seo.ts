@@ -105,18 +105,19 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     // CTR pattern: Prep2Go (exam + concrete need + year) + PixID (specific offer in blue link)
     title: "SIE Practice Test Free 2026 | 75Q Timed, No Signup",
     description:
-      "Free SIE practice test online — no signup: 75 timed questions, 105 minutes, 70% pass target, instant pass/no-pass report and full answer review. FINRA-topic-weighted. Independent mock — not official FINRA material.",
+      "Free SIE practice test online — no signup: 75 timed questions, 105 minutes, 70% pass target, instant pass/no-pass report and full answer review. FINRA-topic-weighted. Then repair weak domains with the $11 / 300-card SIE Anki deck. Independent — not official FINRA material.",
     keywords: [
       "free sie practice test",
       "sie practice test",
       "sie mock exam",
       "finra sie practice exam",
       "sie exam questions",
+      "sie anki deck",
       "sie readiness check",
     ],
     headline: "Free SIE Practice Test — 75 Questions, Timed",
     intro:
-      "A full-length FINRA SIE mock exam modeled on the official outline: 75 scored questions, 105 minutes, and a 70% pass threshold with weighted topic diagnosis across capital markets, products and risks, trading and accounts, and regulatory framework. No signup — start when you are ready. If 105 minutes is too long for a first pass, use the 25-question SIE quick diagnostic first.",
+      "A full-length FINRA SIE mock exam modeled on the official outline: 75 scored questions, 105 minutes, and a 70% pass threshold with weighted topic diagnosis across capital markets, products and risks, trading and accounts, and regulatory framework. No signup — start when you are ready. If 105 minutes is too long for a first pass, use the 25-question SIE quick diagnostic first. After the report, drill weak topics in the linked $11 / 300-card Anki deck.",
     audience:
       "SIE candidates, finance students, and career changers entering brokerage and securities roles who need a timed baseline before paying for a prep course.",
     practiceTestLabel: "FINRA SIE practice test",
@@ -180,16 +181,17 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "cfa-level-1-readiness-check": {
     title: "Free CFA Level 1 Practice Test | 60-Question Readiness Check",
     description:
-      "Free CFA Level 1 practice questions online: 60 timed questions across all 10 topic weights, 90 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent CFA prep — not CFA Institute material.",
+      "Free CFA Level 1 practice: 60 timed questions across all 10 topic weights, 90 minutes, 70% diagnostic — then repair with the $29 / 342-card Anki + $19 formula PDF. Official L1 is 180 MCQ / 4h30. Independent — not CFA Institute material.",
     keywords: [
       "cfa level 1 practice test",
       "cfa level 1 mock exam",
       "free cfa practice questions",
+      "cfa level 1 anki",
       "cfa readiness check",
     ],
     headline: "Free CFA Level 1 Readiness Check",
     intro:
-      "A timed CFA Level 1 readiness diagnostic sampled across ethics, quant, economics, FRA, corporate issuers, equity, fixed income, derivatives, alternatives, and portfolio management.",
+      "A timed CFA Level 1 readiness diagnostic sampled across ethics, quant, economics, FRA, corporate issuers, equity, fixed income, derivatives, alternatives, and portfolio management — then drill weak topics in the linked $29 / 342-card Anki deck and printable formula reference. Official Level 1 is 180 multiple-choice questions across two sessions (~4 hours 30 minutes total); this check is a shorter diagnostic.",
     audience: "CFA Level 1 candidates who want a weighted topic baseline before committing to a full mock provider.",
     practiceTestLabel: "CFA Level 1 practice test",
   },
@@ -213,16 +215,17 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "california-real-estate-readiness-check": {
     title: "Free California Real Estate Practice Test | 60-Question Mock",
     description:
-      "Free California real estate exam practice online: 60 timed questions, 90 minutes, 70% target, DRE-style topic scoring, and answer review. Independent CA salesperson prep — not official DRE material.",
+      "Free California real estate practice: 60 timed questions / 90 minutes / 70% diagnostic, then repair with the 400-card CA DRE Anki deck. Official salesperson exam is 150Q / 3h15 / 70% both portions. Independent — not DRE material.",
     keywords: [
       "california real estate practice test",
       "ca real estate exam questions",
       "california salesperson practice exam",
+      "california real estate anki",
       "free real estate mock exam california",
     ],
     headline: "Free California Real Estate Readiness Check",
     intro:
-      "A California real estate licensing readiness check covering practice and disclosures, agency, ownership, valuation, contracts, financing, and transfer of property.",
+      "A California real estate licensing readiness check covering practice and disclosures, agency, ownership, valuation, contracts, financing, and transfer of property — then drill weak DRE domains in the linked 400-card Anki deck. Official salesperson sitting is 150 questions (75 national + 75 state) / 3 hours 15 minutes / 70% on both portions; this mock is a shorter diagnostic.",
     audience: "California DRE salesperson exam candidates who want a timed baseline before licensing prep.",
     practiceTestLabel: "California real estate practice test",
   },
@@ -318,35 +321,37 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "frm-part-1-readiness-check": {
     title: "Free FRM Part 1 Practice Test 2026 | 50-Question Readiness Check",
     description:
-      "Free FRM Part 1 practice questions online: 50 timed questions across all 4 GARP topic weights, 120 minutes, topic scoring, answer review, and pass/no-pass report. Independent FRM prep — not GARP material.",
+      "Free FRM Part 1 practice: 50 timed questions across all 4 GARP topic weights, 120 minutes, topic scoring — then repair with the $29 / 444-card FRM Anki deck. Independent — not GARP material.",
     keywords: [
       "frm part 1 practice test",
       "frm mock exam",
       "free frm practice questions",
+      "frm part 1 anki",
       "garp frm readiness check",
       "frm part 1 exam prep",
     ],
     headline: "Free FRM Part 1 Readiness Check",
     intro:
-      "A timed FRM Part 1 diagnostic sampled across foundations of risk, quant, financial markets and products, and valuation and risk models — with weighted topic feedback.",
+      "A timed FRM Part 1 diagnostic sampled across foundations of risk, quant, financial markets and products, and valuation and risk models — with weighted topic feedback, then spaced repair in the linked $29 / 444-card Anki deck.",
     audience: "FRM Part 1 candidates who want a timed baseline before committing to a full mock provider.",
     practiceTestLabel: "FRM Part 1 practice test",
   },
   "series-63-readiness-check": {
     title: "Series 63 Practice Test 2026 | Free 60Q NASAA",
     description:
-      "Free Series 63 practice test — no signup: 60 timed questions on NASAA state law topics, 90 minutes, 72% target, topic scoring, and full answer review. Independent Series 63 prep — not official NASAA material.",
+      "Free Series 63 practice test — no signup: 60 timed questions on NASAA state law topics, 90 minutes, 72% target, topic scoring — then repair with the linked Series 63 Anki deck. Independent — not official NASAA material.",
     keywords: [
       "series 63 practice test",
       "free series 63 practice test",
       "series 63 mock exam",
+      "series 63 anki",
       "nasaa series 63 questions",
       "uniform securities act practice test",
       "free series 63 exam prep",
     ],
     headline: "Free Series 63 Practice Test — 60 Questions",
     intro:
-      "A Series 63 practice test built from UniPrep2Go deck content across broker-dealer regulation, agent registration, ethics, communications, and investment adviser basics. Timed NASAA-topic diagnostic — no signup.",
+      "A Series 63 practice test built from UniPrep2Go deck content across broker-dealer regulation, agent registration, ethics, communications, and investment adviser basics. Timed NASAA-topic diagnostic — no signup — then drill weak law rows in the linked Anki deck.",
     audience: "Series 63 candidates who need a timed diagnostic after SIE and Series 7 prep.",
     practiceTestLabel: "Series 63 practice test",
   },
@@ -405,20 +410,21 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Digital SAT practice test",
   },
   "pmp-readiness-check": {
-    title: "Free PMP Practice Test | 51-Question Mock",
+    title: "Free PMP Practice Test | Domain Readiness Check",
     description:
-      "Free PMP practice questions online: 51 timed questions across People, Process, and Business Environment (2026 ECO weights), 70 minutes, 70% readiness target with all domains required, and full answer review. Independent PMP prep — not PMI exam material.",
+      "Free PMP practice: timed domain diagnostic across People, Process, and Business Environment (2026 ECO), then repair with the $11 / 346+ PMP Anki deck. Official PMI exam is 180Q / 240 min. Independent — not PMI material.",
     keywords: [
       "pmp practice test",
       "pmp mock exam",
       "free pmp practice questions",
       "pmp readiness check",
+      "pmp anki deck",
       "pmp exam prep",
       "project management professional practice test",
     ],
     headline: "Free PMP Readiness Check",
     intro:
-      "A timed PMP readiness diagnostic scored on the three official PMI Exam Content Outline domains — People (33%), Process (41%), and Business Environment (26%). All three domains must clear the readiness bar for a pass.",
+      "A timed PMP readiness diagnostic scored on the three official PMI Exam Content Outline domains — People (33%), Process (41%), and Business Environment (26%). All three domains must clear the readiness bar for a pass. After the report, drill weak domains in the linked $11 / 346+ Anki deck before a full 180-question / 240-minute simulator.",
     audience:
       "Project managers and aspirants preparing for the PMI PMP certification who want a domain-weighted baseline before a full-length mock or paid study course.",
     practiceTestLabel: "PMP practice test",
@@ -464,18 +470,19 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "bms-bas-readiness-check": {
     title: "Free BMS Practice Test | 60-Question BAS Mock",
     description:
-      "Free BMS / BAS practice questions online: 60 timed questions across BACnet, HVAC sequences, alarms and trends, and commissioning, 75 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent building automation prep — not Tridium or BACnet International exam material.",
+      "Free BMS / BAS practice: 60 timed questions across BACnet, HVAC sequences, alarms/trends, and commissioning — then repair with the $11 / 200+ BMS Anki deck. No single federal BMS license. Independent — not Tridium material.",
     keywords: [
       "bms practice test",
       "building automation practice exam",
       "bas technician test",
       "bacnet practice questions",
+      "bms anki",
       "niagara 4 study guide",
       "building management system exam",
     ],
     headline: "Free BMS / BAS Building Automation Readiness Check",
     intro:
-      "A timed 60-question building automation diagnostic covering BACnet networking, HVAC control sequences, operator platform workflows, and commissioning. There is no single U.S. federal BMS license — Niagara 4 TCP is a vendor course with a practical assessment, not this MCQ. Independent prep, not Tridium or BACnet International material.",
+      "A timed 60-question building automation diagnostic covering BACnet networking, HVAC control sequences, operator platform workflows, and commissioning — then drill weak domains in the linked $11 / 200+ Anki deck. There is no single U.S. federal BMS license — Niagara 4 TCP is a vendor course with a practical assessment, not this MCQ. Independent prep, not Tridium or BACnet International material.",
     audience:
       "BMS engineers, controls technicians, facility automation staff, and integrator apprentices preparing for BAS roles or vendor certification training.",
     practiceTestLabel: "BMS practice test",
@@ -483,17 +490,18 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "nha-cpct-readiness-check": {
     title: "Free NHA CPCT/A Practice Test | 120-Question PCT Mock",
     description:
-      "Free NHA CPCT/A practice test: 120 timed questions, 120 minutes, topic scoring and answer review. Official exam is 100 scored + 20 pretest / 2 hours / scaled 390. Independent prep — not NHA material. Not CCMA, not NHA CPT phlebotomy.",
+      "Free NHA CPCT/A practice: 120 timed questions / 120 minutes with topic scoring — then repair with the $11 / 120-card Anki deck. Official exam is 100+20 / 2h / scaled 390. Not CCMA / NHA CPT / ASPT. Independent — not NHA material.",
     keywords: [
       "free nha cpct practice test",
       "nha cpct practice test",
       "patient care technician practice test",
       "cpct/a practice exam",
+      "nha cpct anki",
       "nha pct mock exam",
     ],
     headline: "Free NHA CPCT/A Patient Care Technician Readiness Check",
     intro:
-      "A timed 120-question / 120-minute text diagnostic for NHA CPCT/A. Official 2025 test plan is 100 scored + 20 pretest items in 2 hours (scaled pass 390). Four topic buckets here — all items scored; official forms include 20 pretest items and a skills lab. CPCT/A is not CCMA, not NHA CPT phlebotomy, and not ASPT.",
+      "A timed 120-question / 120-minute text diagnostic for NHA CPCT/A — then drill weak domains in the linked $11 / 120-card Anki deck. Official 2025 test plan is 100 scored + 20 pretest items in 2 hours (scaled pass 390). Four topic buckets here — all items scored; official forms include 20 pretest items and a skills lab. CPCT/A is not CCMA, not NHA CPT phlebotomy, and not ASPT.",
     audience:
       "Patient care technician students and working aides preparing for NHA CPCT/A at a school site, PSI, or live remote proctoring — not CCMA or phlebotomy-only candidates.",
     practiceTestLabel: "NHA CPCT practice test",
@@ -501,17 +509,18 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "leed-green-associate-readiness-check": {
     title: "Free LEED Green Associate Practice Test | 50-Question Readiness Check",
     description:
-      "Free LEED Green Associate practice questions online: 50 timed questions across LEED knowledge domains, 100 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent green building prep — not USGBC exam material.",
+      "Free LEED GA practice: 50 timed questions / 100 minutes / 70% diagnostic across LEED domains, then repair with the $11 / 250+ LEED GA Anki deck. Official GBCI exam is 100Q / 2h / scaled 170. Independent — not USGBC material.",
     keywords: [
       "leed green associate practice test",
       "leed ga exam questions",
       "free leed practice test",
       "leed green associate study guide",
+      "leed ga anki",
       "gbci leed exam prep",
     ],
     headline: "Free LEED Green Associate Readiness Check",
     intro:
-      "A timed LEED GA readiness diagnostic modeled on the official 100-question GBCI exam structure with a 170 scaled-score pass target on the real test (125–200 scale).",
+      "A timed 50-question LEED GA diagnostic (100 minutes, 70% readiness target) modeled on GBCI credit categories — then drill weak domains in the linked $11 / 250+ Anki deck. Official LEED GA is 100 questions / 2 hours / scaled 170 (125–200). Not a free 700-question lead-gen bank.",
     audience:
       "Architects, engineers, sustainability consultants, and students entering green building who want a baseline before USGBC exam registration.",
     practiceTestLabel: "LEED Green Associate practice test",
@@ -555,12 +564,13 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "well-ap-readiness-check": {
     title: "Free WELL AP Practice Test 2026 | 50 Timed Questions + Topic Report",
     description:
-      "Free WELL AP practice test online: 50 timed questions, 100 minutes, 70% readiness target, full topic diagnosis, and answer review. Official GBCI/IWBI exam is 115 items in 2.5 hours (scaled pass 170) — not the outdated “100 questions / 2 hours” summaries some sites still show. Independent prep — not IWBI material.",
+      "Free WELL AP practice: 50 timed questions / 100 minutes / 70% diagnostic — then repair with the $11 / 250-card WELL AP Anki deck. Official GBCI/IWBI exam is 115 items / 2.5h / scaled 170. Independent — not IWBI material.",
     keywords: [
       "well ap practice test",
       "well ap free mock exam",
       "well accredited professional exam",
       "well v2 exam prep",
+      "well ap anki",
       "iwbi well ap study guide",
       "free well ap practice questions",
       "well building standard exam",
@@ -569,7 +579,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free WELL Accredited Professional (WELL AP) Readiness Check",
     intro:
-      "A timed WELL AP readiness diagnostic across WELL v2 knowledge domains. Official exam (verify on IWBI): 115 questions (100 scored + 15 unscored), 2.5 hours, scaled pass 170 on a 125–200 scale, Prometric delivery by GBCI for IWBI — with embedded scenario/reference PDFs.",
+      "A timed WELL AP readiness diagnostic across WELL v2 knowledge domains — then drill weak concept groups in the linked $11 / 250-card Anki deck. Official exam (verify on IWBI): 115 questions (100 scored + 15 unscored), 2.5 hours, scaled pass 170 on a 125–200 scale, Prometric delivery by GBCI for IWBI — with embedded scenario/reference PDFs.",
     audience:
       "Architects, designers, building operators, HR/wellness professionals, and sustainability consultants preparing for the WELL Accredited Professional credential.",
     practiceTestLabel: "WELL AP practice test",
@@ -595,19 +605,20 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "ashrae-certifications-readiness-check": {
     title: "Free ASHRAE Certification Practice Test | 50-Question Readiness Check",
     description:
-      "Free ASHRAE certification practice questions online: 50 timed questions across BEMP, BEAP, BCxP, CHD/HBDP/HFDP, and OPMP domains, 100 minutes, 70% readiness target, topic diagnosis, and full answer review. Official exams are mostly 115 items / 2.5h (BCxP 130 / 120 scored) with credential-specific pass points — not ASHRAE exam material.",
+      "Free ASHRAE certification practice: 50 timed questions across BEMP/BEAP/BCxP/CHD–HBDP–HFDP/OPMP — then repair with the $11 / 250-card Anki deck. Official forms mostly 115Q / 2.5h. Independent — not ASHRAE material.",
     keywords: [
       "ashrae certification practice test",
       "bemp exam prep",
       "bcxp practice questions",
       "beap study guide",
+      "ashrae anki",
       "chd ashrae exam",
       "opmp certification",
       "ashrae hbdp practice test",
     ],
     headline: "Free ASHRAE Certifications Readiness Check",
     intro:
-      "A timed readiness diagnostic sampled across ASHRAE's ANSI-accredited personnel certifications — energy modeling, assessment, commissioning, HVAC design, healthcare facility design, and operations management. Prefer this free timed mock + ownable Anki over mega free Q-banks when you need topic scoring; keep ASHRAE's official $49 30-question practice exam and credential-specific pass points (e.g. BEMP 69/100, BCxP 83/120) as the source of truth.",
+      "A timed readiness diagnostic sampled across ASHRAE's ANSI-accredited personnel certifications — energy modeling, assessment, commissioning, HVAC design, healthcare facility design, and operations management. Prefer this free timed mock + $11 ownable Anki over mega free Q-banks when you need topic scoring; keep ASHRAE's official $49 30-question practice exam and credential-specific pass points (e.g. BEMP 69/100, BCxP 83/120) as the source of truth.",
     audience:
       "HVAC engineers, energy modelers, commissioning providers, facility managers, and designers preparing for ASHRAE BCxP, BEMP, BEAP, CHD, HBDP, HFDP, or OPMP exams.",
     practiceTestLabel: "ASHRAE certification practice test",
@@ -632,10 +643,28 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "Data centre operators, facility engineers, IT infrastructure staff, and technicians preparing for the EXIN EPI Certified Data Centre Professional credential after accredited EPI training.",
     practiceTestLabel: "CDCP practice test",
   },
+  "acsm-cpt-readiness-check": {
+    title: "Free ACSM CPT Practice Test 2026 | 120 Questions Online",
+    description:
+      "Free ACSM CPT practice: 120 timed questions / 120 minutes with topic scoring — then repair with the $11 / 120-card Anki deck. Official ACSM-CPT is 135 items (120 scored) / 150 min / scaled 550. Independent — not ACSM material.",
+    keywords: [
+      "acsm cpt practice test",
+      "acsm personal trainer practice exam",
+      "free acsm cpt questions",
+      "acsm cpt anki",
+      "acsm certification practice test",
+    ],
+    headline: "Free ACSM CPT Readiness Check",
+    intro:
+      "A free 120-question / 120-minute ACSM CPT readiness check with topic scoring — then drill weak domains in the linked $11 / 120-card Anki deck. Official ACSM-CPT is 135 items (120 scored + 15 pretest) / 150 minutes / scaled pass 550.",
+    audience:
+      "Personal trainer candidates preparing for the ACSM Certified Personal Trainer exam who want a timed baseline before paid Q-banks.",
+    practiceTestLabel: "ACSM CPT practice test",
+  },
   "nebosh-readiness-check": {
     title: "Free NEBOSH Practice Test | 50-Question IGC Diagnostic",
     description:
-      "Free NEBOSH IGC practice test: 50 timed MCQs, 100 minutes, 70% readiness target, topic scoring. Official GIC1 is open-book (5h / 45% pass), GIC2 is a 4h practical — this mock is a knowledge diagnostic only. Independent — not NEBOSH material.",
+      "Free NEBOSH IGC practice: 50 timed MCQs / 100 minutes / 70% diagnostic — then repair with the $11 / 250-card Anki deck. Official GIC1 is open-book (5h / 45%), GIC2 is a 4h practical — this mock is knowledge-only. Independent — not NEBOSH material.",
     keywords: [
       "nebosh practice test",
       "nebosh igc exam",
@@ -648,7 +677,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free NEBOSH IGC Practice Test (Knowledge Diagnostic)",
     intro:
-      "A timed MCQ readiness diagnostic across NEBOSH IGC syllabus elements — management systems, workplace hazards, and GIC2-style risk assessment skills. Official assessments are GIC1 scenario open-book (5 hours, 45% provisional pass) and GIC2 practical (4 hours) — use this free 50-question mock to find weak domains, then drill the linked Anki deck.",
+      "A timed MCQ readiness diagnostic across NEBOSH IGC syllabus elements — management systems, workplace hazards, and GIC2-style risk assessment skills. Official assessments are GIC1 scenario open-book (5 hours, 45% provisional pass) and GIC2 practical (4 hours) — use this free 50-question mock to find weak domains, then drill the linked $11 / 250-card Anki deck.",
     audience:
       "Health and safety officers, supervisors, managers, and career changers preparing for the NEBOSH International General Certificate (IGC) through an accredited Learning Partner.",
     practiceTestLabel: "NEBOSH practice test",
@@ -715,19 +744,20 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "MRICS Quantity Surveying practice test",
   },
   "cfa-level-2-readiness-check": {
-    title: "Free CFA Level 2 Mock Exam 2026 | 60 Questions",
+    title: "Free CFA Level 2 Mock Exam 2026 | 60-Question Diagnostic",
     description:
-      "Free CFA Level 2 practice questions online: 60 timed questions across all ten topic areas, 90 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent prep — not CFA Institute material.",
+      "Free CFA Level 2 practice: 60 timed questions / 90 minutes across all 10 topics, then repair with the $39 / 495-card Level 2 Anki + formula PDF. Official L2 is 88 vignette-linked items / ~4h24 — this page is a shorter diagnostic. Independent — not CFA Institute material.",
     keywords: [
       "cfa level 2 practice test",
       "cfa level 2 mock exam",
       "free cfa level 2 questions",
       "cfa level 2 readiness check",
+      "cfa level 2 anki",
       "cfa level 2 item set prep",
     ],
     headline: "Free CFA Level 2 Readiness Check",
     intro:
-      "A timed CFA Level 2 readiness diagnostic with vignette-style application prompts across ethics, FSA, equity, fixed income, derivatives, and portfolio management.",
+      "A timed 60-question / 90-minute CFA Level 2 readiness diagnostic with vignette-style application prompts across ethics, FSA, equity, fixed income, derivatives, and portfolio management — then drill weak topics in the linked 495-card Anki deck and Level 2 formula PDF. Official Level 2 is 88 vignette-linked multiple-choice items across two sessions (~4 hours 24 minutes total); this check is not a full-length item-set mock.",
     audience: "CFA Level 2 candidates who passed Level 1 and want a baseline before item-set practice blocks.",
     practiceTestLabel: "CFA Level 2 practice test",
   },
@@ -781,11 +811,11 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "life-in-the-uk-readiness-check": {
     title: "Free Life in the UK Practice Test | 60 Questions",
     description:
-      "Free Life in the UK practice: 60 timed questions (45 min, 75%). Official Home Office test is 24Q/45min/75% (£50) — this page is longer diagnostic practice. Citizenship Anki Bundle. Independent prep.",
-    keywords: ["Life in the UK practice test", "LITUK free test", "British citizenship test practice"],
+      "Free Life in the UK practice: 60 timed questions (45 min, 75%). Official Home Office test is 24Q/45min/75% (£50) — this page is longer diagnostic practice. Pair with the Citizenship Anki Bundle for spaced civics recall. Independent prep.",
+    keywords: ["Life in the UK practice test", "LITUK free test", "British citizenship test practice", "life in the uk anki"],
     headline: "Free Life in the UK Readiness Check",
     intro:
-      "Timed Life in the UK diagnostic. Format note: official test is 24 questions / 45 minutes / 18/24; this check is 60 / 45 / 75% to find weak handbook topics.",
+      "Timed Life in the UK diagnostic — then repair weak handbook topics with the Citizenship Anki Bundle. Format note: official test is 24 questions / 45 minutes / 18/24; this check is 60 / 45 / 75% to find weak handbook topics.",
     audience:
       "Applicants preparing settlement or British citizenship via the Life in the UK test.",
     practiceTestLabel: "Life in the UK practice test",
@@ -817,17 +847,18 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "ccse-espana-readiness-check": {
     title: "Free CCSE Practice Test (España) | 60 Questions",
     description:
-      "Free CCSE España practice: 60 timed questions (45 min, 60%). Official Cervantes CCSE is 25 items / 45 min / 15/25 — this page is longer. DELE A2 is separate. DELE+CCSE Anki bundle.",
+      "Free CCSE España practice: 60 timed questions (45 min, 60%). Official Cervantes CCSE is 25 items / 45 min / 15/25 — this page is longer. Then repair with the $26 / 60-card DELE+CCSE Anki companion. DELE A2 vocab is separate.",
     keywords: [
       "CCSE practice test",
       "prueba CCSE gratis",
       "CCSE España test",
       "nacionalidad española práctica",
+      "CCSE anki",
       "Instituto Cervantes CCSE",
     ],
     headline: "Free CCSE (España) Readiness Check",
     intro:
-      "Timed CCSE diagnostic for Spanish nationality civics. Format note: official exam is 25 questions / 45 minutes / 60%; this check is 60 / 45 / 60%. DELE A2 language is a different exam.",
+      "Timed CCSE diagnostic for Spanish nationality civics — then drill weak themes in the linked $26 / 60-card DELE+CCSE Anki companion. Format note: official exam is 25 questions / 45 minutes / 60%; this check is 60 / 45 / 60%. DELE A2 language is a different exam (1500-card DELE vocab deck sold separately).",
     audience:
       "Applicants preparing CCSE for nacionalidad española (DELE A2 separate).",
     practiceTestLabel: "CCSE practice test",

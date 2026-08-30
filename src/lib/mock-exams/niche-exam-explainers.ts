@@ -1229,7 +1229,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The LEED Green Associate (GA) exam from GBCI is the foundational LEED credential demonstrating green-building literacy across integrative process, location and transportation, sustainable sites, water efficiency, energy and atmosphere, materials and resources, indoor environmental quality, and project synergies. It is often the first step before specialty LEED AP exams such as BD+C. Confirm current candidate handbook details with GBCI/USGBC before registering.",
     administeredBy: "Green Business Certification Inc. (GBCI) / USGBC",
     officialFormat:
-      "Computer-based multiple-choice exam (commonly 100 questions); confirm current length, timing, and scaled pass score with GBCI.",
+      "Official GBCI LEED Green Associate: commonly 100 multiple-choice / 2 hours / scaled pass 170 (125–200). UniPrep2Go free check: 50 questions / 100 minutes / 70% diagnostic — then drill weak domains in the linked $11 / 250+ Anki deck. Confirm current handbook at usgbc.org.",
     whoFor:
       "Architects, engineers, sustainability staff, students, and project team members who need a baseline LEED credential before project roles or LEED AP specialty exams.",
     howToPrepare:

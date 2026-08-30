@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-28T14:21:50.577Z",
+  "generatedAt": "2026-08-30T07:50:20.698Z",
   "scope": "live runnable mocks excluding citizenship",
-  "totalBanks": 1,
+  "totalBanks": 4,
   "tierCounts": {
     "P0": 0,
     "P1": 0,
-    "P2": 0,
-    "clean": 1
+    "P2": 2,
+    "clean": 2
   },
   "thresholds": {
     "EXPL_THIN": 100,
@@ -19,7 +19,82 @@
   },
   "banks": [
     {
-      "slug": "mrics-quantity-surveying-readiness-check",
+      "slug": "parapro-readiness-check",
+      "n": 60,
+      "tier": "P2",
+      "score": 0,
+      "templateStems": 0,
+      "templateRate": 0,
+      "thinExplanations": 0,
+      "thinRate": 0,
+      "keyBias": "c",
+      "keyDom": 0.267,
+      "keyCounts": {
+        "a": 15,
+        "b": 14,
+        "c": 16,
+        "d": 15
+      },
+      "junkHits": 0,
+      "shortStems": 17,
+      "medianExplanationLen": 168,
+      "needsShuffle": false,
+      "needsTemplateStrip": false,
+      "needsLocalEnrich": false,
+      "needsJunkScrub": false
+    },
+    {
+      "slug": "pmp-readiness-check",
+      "n": 346,
+      "tier": "P2",
+      "score": 0,
+      "templateStems": 0,
+      "templateRate": 0,
+      "thinExplanations": 0,
+      "thinRate": 0,
+      "keyBias": "b",
+      "keyDom": 0.546,
+      "keyCounts": {
+        "a": 56,
+        "b": 189,
+        "c": 85,
+        "d": 16
+      },
+      "junkHits": 0,
+      "shortStems": 0,
+      "medianExplanationLen": 283,
+      "needsShuffle": false,
+      "needsTemplateStrip": false,
+      "needsLocalEnrich": false,
+      "needsJunkScrub": false
+    },
+    {
+      "slug": "cfa-level-2-readiness-check",
+      "n": 60,
+      "tier": null,
+      "score": 0,
+      "templateStems": 0,
+      "templateRate": 0,
+      "thinExplanations": 0,
+      "thinRate": 0,
+      "keyBias": "c",
+      "keyDom": 0.367,
+      "keyCounts": {
+        "a": 10,
+        "b": 13,
+        "c": 22,
+        "d": 15
+      },
+      "junkHits": 0,
+      "shortStems": 2,
+      "medianExplanationLen": 318,
+      "needsShuffle": false,
+      "needsTemplateStrip": false,
+      "needsLocalEnrich": false,
+      "needsJunkScrub": false
+    },
+    {
+      "slug": "leed-green-associate-readiness-check",
       "n": 250,
       "tier": null,
       "score": 0,
@@ -36,8 +111,8 @@
         "d": 60
       },
       "junkHits": 0,
-      "shortStems": 4,
-      "medianExplanationLen": 193,
+      "shortStems": 0,
+      "medianExplanationLen": 136,
       "needsShuffle": false,
       "needsTemplateStrip": false,
       "needsLocalEnrich": false,

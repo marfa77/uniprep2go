@@ -200,8 +200,17 @@ export default function MockExamsIndexPage() {
             <Link className="underline-offset-4 hover:underline" href="/mock-exams/nebosh-readiness-check">
               NEBOSH IGC practice test
             </Link>
+            <Link className="underline-offset-4 hover:underline" href="/mock-exams/leed-green-associate-readiness-check">
+              LEED GA practice test
+            </Link>
+            <Link className="underline-offset-4 hover:underline" href="/mock-exams/pmp-readiness-check">
+              PMP practice test
+            </Link>
             <Link className="underline-offset-4 hover:underline" href="/mock-exams/mrics-quantity-surveying-readiness-check">
               MRICS QS practice test
+            </Link>
+            <Link className="underline-offset-4 hover:underline" href="/mock-exams/parapro-readiness-check">
+              ParaPro practice test
             </Link>
             <Link className="underline-offset-4 hover:underline" href="/mock-exams/acsm-cpt-readiness-check">
               ACSM CPT practice test
