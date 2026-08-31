@@ -611,6 +611,65 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     ],
     trademark_note: "Crown copyright and Home Office marks belong to the UK government. Not affiliated with or endorsed by the Home Office.",
   },
+  "czech-citizenship": {
+    examKey: "czech-citizenship",
+    pageHeading: "Czech Citizenship Reálie Exam — Facts & Prep",
+    intro:
+      "Czech naturalisation usually requires Czech language at B1 plus the Czech Life and Institutions exam (zkouška z českých reálií). This page summarizes published format facts; UniPrep2Go products are independent prep — not MV ČR / NPI exam material.",
+    exam_facts: {
+      exam_name: "Zkouška z českých reálií (Czech Life and Institutions)",
+      administered_by: "Exam centres under Czech Ministry of the Interior / NPI ČR frameworks (e.g. ÚJOP UK and regional centres)",
+      question_count: "30 multiple-choice (one item from each of 30 official topics)",
+      scored_count: "30",
+      time_limit: "30 minutes",
+      passing_score: "60% (18 of 30)",
+      delivery: "Paper booklet + answer sheet at approved exam centres",
+      outline_effective_date: "NPI databanka updates periodically (verify current PDF on cestina-pro-cizince.cz)",
+      verify_at_url: "https://cestina-pro-cizince.cz/obcanstvi/",
+    },
+    official_sources: [
+      {
+        label: "Official citizenship exam portal (cestina-pro-cizince.cz)",
+        url: "https://cestina-pro-cizince.cz/obcanstvi/",
+      },
+      {
+        label: "Interactive model reálie test (30Q / 30 min)",
+        url: "https://cestina-pro-cizince.cz/obcanstvi/interaktivni-modelovy-test/",
+      },
+      {
+        label: "NPI test-question databank (~300 items)",
+        url: "https://cestina-pro-cizince.cz/obcanstvi/databanka-uloh/",
+      },
+    ],
+    domain_weights: [
+      { domain: "Občanský základ (civic fundamentals)", weight: "16 of 30 topics on the live form" },
+      { domain: "Geography of the Czech Republic", weight: "7 of 30 topics" },
+      { domain: "History and culture", weight: "7 of 30 topics" },
+    ],
+    high_yield_facts: [
+      "Citizenship usually needs B1 Czech language AND reálie — they are separate sittings.",
+      "Permanent residence (trvalý pobyt) usually needs language (often A2), not reálie.",
+      "All live reálie items are drawn from the published ~300-item NPI databank — study that pool for exam-day fidelity.",
+      "Typical reálie fee is about CZK 2,000 per attempt — confirm with your exam centre.",
+      "UniPrep2Go’s free check is a longer 60Q / 45 min / 70% diagnostic — not the official 30/30/60% form.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the official zkouška z reálií?",
+        a: "30 multiple-choice questions in 30 minutes with a 60% (18/30) pass mark, one item from each of 30 official topics.",
+      },
+      {
+        q: "Do I need reálie for permanent residence?",
+        a: "Usually no. Permanent residence typically needs language evidence (often A2). Citizenship usually needs B1 language plus reálie — verify exemptions on official MV ČR pages.",
+      },
+      {
+        q: "Is UniPrep2Go’s Czech Citizenship check the official exam?",
+        a: "No. It is an independent 60-question / 45-minute diagnostic. Use the official interactive model test and NPI databank for format match. The linked Anki deck is planned, not a live Gumroad SKU yet.",
+      },
+    ],
+    trademark_note:
+      "NPI ČR and Ministry of the Interior marks belong to the Czech authorities. UniPrep2Go is not affiliated with or endorsed by MV ČR or NPI.",
+  },
   "canadian-citizenship": {
     examKey: "canadian-citizenship",
     pageHeading: "Canadian Citizenship Test — Facts & Prep",
@@ -2969,6 +3028,7 @@ const deckExamKeyMap: Record<string, string> = {
   "leben-in-deutschland-prep2go-app": "leben-in-deutschland",
   "naturalisation-francaise-prep2go-app": "naturalisation-francaise",
   "life-in-the-uk-prep2go-app": "life-in-the-uk",
+  "czech-citizenship-anki-deck": "czech-citizenship",
   "canadian-citizenship-prep2go-app": "canadian-citizenship",
   "australian-citizenship-prep2go-app": "australian-citizenship",
   "citizenship-naturalization-anki-bundle": "citizenship-naturalization-bundle",

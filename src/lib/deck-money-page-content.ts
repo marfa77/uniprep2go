@@ -68,6 +68,8 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "Multi-country citizenship Anki bundle + free timed civics diagnostics (UK / CA / AU / more) — not a single-country handbook dump.",
   "medicare-counseling-anki-deck":
     "Planned SHIP Medicare counseling Anki. Take the free 60Q diagnostic now — no national published Q-count; verify your state SHIP/OCCT path.",
+  "czech-citizenship-anki-deck":
+    "Planned Czech reálie Anki. Free 60Q / 45 min diagnostic live now — official zkouška z reálií is 30Q / 30 min / 60% from the NPI ~300-item pool.",
   "bms-building-automation-anki-deck":
     "200+ BACnet / HVAC-sequence / alarms-trends-schedules / commissioning cards plus a free 60-question timed BMS diagnostic. No single federal BMS license — Niagara 4 TCP is a vendor course, not this mock.",
 }
@@ -107,6 +109,8 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Series 63 state-law cards for broker-dealer regulation, agent registration, ethics, communications, and investment adviser basics — paired with the free 60-question NASAA-topic readiness check. Ownable .apkg after SIE/Series 7; not NASAA material.",
   "medicare-counseling-anki-deck":
     "Planned SHIP Medicare counseling cards for Parts A/B/C/D themes, rights/appeals, fraud awareness, and counseling standards. The free 60-question diagnostic is live; there is no public national Q-count — verify your state SHIP/OCCT path. Not a state SHIP certificate.",
+  "czech-citizenship-anki-deck":
+    "Planned Anki for Czech citizenship reálie (zkouška z českých reálií) themes: state & rights, history/geography/EU, society, and public services. Free 60Q diagnostic live now; official exam is 30Q/30min/60% from the NPI pool. Language B1 is a separate sitting; permanent residence usually needs A2 language, not this civics deck.",
   "bms-building-automation-anki-deck":
     "BACnet objects/services/BBMD, HVAC sequences, operator alarms/trends/schedules, and commissioning checkout — the same four domains as the free 60-question timed check. Ownable .apkg for controls techs; not Tridium Niagara 4 TCP material and not a CertifBus 10-question tease.",
   "servsafe-manager-anki-deck":
@@ -299,6 +303,16 @@ export const positioningOverrides: Partial<
     ],
     summaryProse:
       "State SHIP offices own certification. UniPrep’s free 60-question diagnostic (and planned Anki) is independent practice for Medicare counseling themes — not OCCT and not a national exam form.",
+  },
+  "czech-citizenship-anki-deck": {
+    ourEdge: [
+      "Planned reálie Anki for Czech citizenship civics themes",
+      "Free 60Q / 45 min timed diagnostic live now",
+      "Honest: official exam is 30Q / 30 min / 60% from the NPI ~300-item pool",
+      "B1 language is separate; permanent residence usually needs A2 language, not reálie",
+    ],
+    summaryProse:
+      "Official NPI databank and model test own exam-day format. UniPrep wins when you want a free longer timed diagnostic plus a planned Anki waitlist for spaced reálie recall — not a third-party AI dump that skips the 30/30/60% honesty.",
   },
   "servsafe-manager-anki-deck": {
     ourEdge: [
@@ -1202,6 +1216,22 @@ Candidates invent a national fixed Q-count/pass score, skip Part D comparison pr
 ### What this does not replace
 
 State SHIP training, OCCT scheduling, or your program’s certificate. Anki is planned on UniPrep — not a live Gumroad SKU yet. Independent prep — not SHIP TA Center material.`,
+
+  "czech-citizenship-anki-deck": `### What is inside
+
+Planned Czech citizenship reálie Anki for zkouška z českých reálií themes: state/constitution/rights, history–geography–EU, society & daily life, and education/health/public services. Same topic map as the free timed readiness check.
+
+### Plan with the free Czech reálie mock (live now)
+
+**Phase 1:** Confirm you need reálie (citizenship) vs language-only permanent residence (often A2). **Phase 2:** Sit the [free 60-question Czech Citizenship readiness check](/mock-exams/czech-citizenship-readiness-check) (45 min / 70% diagnostic). **Phase 3:** Drill the official NPI ~300-item databank and interactive 30-question model test on [cestina-pro-cizince.cz](https://cestina-pro-cizince.cz/obcanstvi/). **Phase 4:** Join this Anki waitlist for spaced recall when the .apkg ships; keep B1 language on a separate track (Czech CCE Anki).
+
+### Pitfalls this deck targets
+
+Candidates treat a longer free diagnostic as the official 30/30/60% form, confuse trvalý pobyt A2 language with citizenship reálie, or skip the published NPI pool. Cards (when shipped) force civic framing under spaced recall.
+
+### What this does not replace
+
+MV ČR / NPI registration, the official databank/model test, or the B1 language exam. Anki is planned on UniPrep — not a live Gumroad SKU yet. Independent prep — not MV ČR material.`,
 
   "servsafe-manager-anki-deck": `### What is inside
 

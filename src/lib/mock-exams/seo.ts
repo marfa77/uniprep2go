@@ -917,17 +917,19 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "czech-citizenship-readiness-check": {
     title: "Free Czech Reálie Practice Test | 60-Question Diagnostic",
     description:
-      "Free Czech citizenship / zkouška z reálií readiness check: 60 timed questions (45 min, 70% diagnostic). Official exam is 30/30/60% from the NPI pool — this page is longer practice. Waitlist Anki. Independent — not MV ČR material.",
+      "Free Czech citizenship / zkouška z reálií practice: 60 timed questions (45 min, 70% diagnostic), then join the planned Czech Citizenship Anki waitlist. Official exam is 30Q/30min/60% from the NPI ~300-item pool — drill that model test for format. Independent — not MV ČR material.",
     keywords: [
       "Czech citizenship practice test",
       "občanství ČR test",
       "zkouška z českých reálií",
       "zkouska z realii practice",
+      "czech reálie anki",
       "Czech naturalisation quiz",
+      "npi reálie practice test",
     ],
     headline: "Free Czech Citizenship / Reálie Readiness Check",
     intro:
-      "Timed Czech-language diagnostic for citizenship reálie themes. Format note: official exam is 30 questions / 30 minutes / 60%; this check is 60 / 45 / 70% to surface weak topics. Permanent residence usually needs language (A2), not reálie.",
+      "Timed Czech-language diagnostic for citizenship reálie themes — then join the linked Anki waitlist for spaced recall when the .apkg ships. Format note: official zkouška z reálií is 30 questions / 30 minutes / 60% from the published NPI databank; this check is 60 / 45 / 70% to surface weak topics. Prefer this free timed diagnostic + official model test over third-party “100+ AI” banks that skip the NPI format. Permanent residence usually needs language (A2), not reálie.",
     audience:
       "Citizenship applicants preparing zkouška z českých reálií (plus B1 language) — not a substitute for the official NPI 30-question sitting.",
     practiceTestLabel: "Czech reálie / citizenship practice test",

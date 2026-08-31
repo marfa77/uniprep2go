@@ -42,6 +42,7 @@ Do **not** re-run WebSearch SERP or rewrite cites if `last_pass` is &lt; 60 days
 | pmp-anki-deck + pmp-readiness-check | building pair | 2026-08-30 | 2026-10-29 | Both pages: $11/346+ + domain diagnostic; official 180Q/240m |
 | parapro-anki-deck + parapro-readiness-check | wave pair (Anki planned) | 2026-08-30 | 2026-10-29 | Both pages: free 60Q/75m vs ETS 90Q/150m; Anki not live |
 | spanish-italian-paired-anki-deck | language planned (no mock) | 2026-08-30 | 2026-10-29 | Deck-only: dual-audio Prep2Go 940+ vs AnkiWeb IT↔ES |
+| czech-citizenship-anki-deck + czech-citizenship-readiness-check | citizenship pair (Anki planned) | 2026-08-31 | 2026-10-30 | Yahoo CZ Learn start; free 60Q/45m vs NPI 30/30/60% + OpenExamPrep; money-page + exam-facts + official cestina-pro-cizince cites |
 | ace-cpt-anki-deck + ace-cpt-readiness-check | wave pair | 2026-08-13 | 2026-10-12 | Already paired: $11/300 + free 60Q |
 
 Homepage `/` is a hub — not a SKU row.

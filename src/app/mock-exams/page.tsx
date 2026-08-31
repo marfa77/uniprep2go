@@ -212,6 +212,9 @@ export default function MockExamsIndexPage() {
             <Link className="underline-offset-4 hover:underline" href="/mock-exams/parapro-readiness-check">
               ParaPro practice test
             </Link>
+            <Link className="underline-offset-4 hover:underline" href="/mock-exams/czech-citizenship-readiness-check">
+              Czech citizenship / reálie practice test
+            </Link>
             <Link className="underline-offset-4 hover:underline" href="/mock-exams/acsm-cpt-readiness-check">
               ACSM CPT practice test
             </Link>

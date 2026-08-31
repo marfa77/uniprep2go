@@ -304,7 +304,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     examBody: "Czech Republic — zkouška z českých reálií (citizenship); not the permanent-residence language exam",
     questionSourceNote:
       "Questions rewritten from Prep2Go Czech Citizenship civics themes as full-stem MCQs with parallel-form near-miss distractors. Independent diagnostic — not the official NPI 300-item booklet.",
-    lastUpdated: "2026-08-12",
+    lastUpdated: "2026-08-31",
     searchAliases: [
       "Czech citizenship test",
       "občanství ČR test",

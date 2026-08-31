@@ -2905,11 +2905,7 @@ const rawDecks: Deck[] = [
       "Planned Anki deck for Czech citizenship reálie / zkouška z českých reálií themes (not currently for sale).",
     directAnswer:
       "The Czech Citizenship Anki Deck is a planned UniPrep2Go product for citizenship realities (reálie) flashcards. It is not yet for sale. Take the free 60-question readiness check (diagnostic format — official exam is 30Q/30min/60%), then join the waitlist. Permanent residence usually needs language evidence, not this civics deck.",
-    lastUpdated: "2026-08-12",
-    audience:
-      "Citizenship applicants preparing zkouška z českých reálií (alongside B1 Czech) — not the A2 permanent-residence language path alone.",
-    format: ".apkg",
-    coverImage: "/covers/czech-citizenship-anki-deck.webp",
+    lastUpdated: "2026-08-31",
     facts: {
       cards: "Planned",
       topics: "State & rights; history, geography & EU; society & daily life; education, health & extras",

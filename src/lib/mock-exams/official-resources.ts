@@ -697,7 +697,21 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
   "czech-citizenship-readiness-check": {
     certifier:
       "Czech Ministry of the Interior (MV ČR) / NPI — official zkouška z reálií (30Q / 30 min / 60%)",
-    verifyAtUrl: "https://www.mvcr.cz/mvcren/",
+    verifyAtUrl: "https://cestina-pro-cizince.cz/obcanstvi/",
+    sources: [
+      {
+        label: "Official citizenship exam portal",
+        url: "https://cestina-pro-cizince.cz/obcanstvi/",
+      },
+      {
+        label: "Interactive model reálie test",
+        url: "https://cestina-pro-cizince.cz/obcanstvi/interaktivni-modelovy-test/",
+      },
+      {
+        label: "NPI test-question databank",
+        url: "https://cestina-pro-cizince.cz/obcanstvi/databanka-uloh/",
+      },
+    ],
   },
   "polish-citizenship-readiness-check": {
     certifier:
