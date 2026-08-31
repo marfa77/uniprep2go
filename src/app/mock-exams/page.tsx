@@ -209,6 +209,9 @@ export default function MockExamsIndexPage() {
             <Link className="underline-offset-4 hover:underline" href="/mock-exams/mrics-quantity-surveying-readiness-check">
               MRICS QS practice test
             </Link>
+            <Link className="underline-offset-4 hover:underline" href="/mock-exams/mrics-readiness-check">
+              MRICS APC practice test
+            </Link>
             <Link className="underline-offset-4 hover:underline" href="/mock-exams/parapro-readiness-check">
               ParaPro practice test
             </Link>

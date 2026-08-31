@@ -44,6 +44,8 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "Best 2026 PTCE printable guide: DSCSA-weighted Federal Requirements, 80-question exam, cheat sheets + free 90Q online mock.",
   "mrics-quantity-surveying-anki-deck":
     "Focused MRICS QS APC Anki — NRM, JCT/NEC, cost planning — plus a free 50-question QS competency mock.",
+  "mrics-anki-deck":
+    "$11 / 250+ cross-pathway MRICS APC cards + free 50Q timed mock — ownable .apkg vs Brainscape packs. Official APC is interview + written evidence, not MCQ.",
   "leed-green-associate-anki-deck":
     "$11 / 250+ LEED GA cards + free 50Q timed mock — ownable .apkg vs free 100–700Q lead-gen banks. Official GA is 100Q / 2h / scaled 170.",
   "pmp-anki-deck":
@@ -99,6 +101,8 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Four chapters sized to 2026 domain weights (Medications 35%, Federal 18.75% with DSCSA, Patient Safety 23.75%, Order Entry 22.5%). The 80-question exam mirrors PTCE scored length (28/15/19/18). Pair with the free 90-question online mock and the separate 300-card Anki deck — beats free blogs still teaching removed compounding topics.",
   "mrics-quantity-surveying-anki-deck":
     "QS-pathway cards for NRM measurement, cost planning, JCT/NEC contract practice, procurement, and ethics — paired with a free timed QS readiness check. Ownable Anki .apkg for APC interview recall, not a Brainscape subscription dump.",
+  "mrics-anki-deck":
+    "Cross-pathway MRICS APC cards for mandatory competencies, ethics/Rules of Conduct, Level 2/3 application, and interview structure — paired with the free 50-question APC readiness check. Ownable $11 .apkg; official route remains written submission + 60-minute interview (not MCQ). QS NRM/JCT depth lives on the separate MRICS QS deck.",
   "leed-green-associate-anki-deck":
     "LEED GA domain cards: integrative process, location/transportation, sites & water, energy & atmosphere, materials & IEQ — same bank themes as the free 50-question timed check. Ownable $11 .apkg; official GBCI form is 100Q / 2 hours / scaled 170. Not USGBC material.",
   "pmp-anki-deck":
@@ -253,6 +257,16 @@ export const positioningOverrides: Partial<
     ],
     summaryProse:
       "Brainscape packs drown QS candidates in 2,000 mixed cards. A focused Anki .apkg plus a free timed QS mock tells you which competencies to drill before the RICS assessment interview.",
+  },
+  "mrics-anki-deck": {
+    ourEdge: [
+      "250+ cross-pathway APC cards: mandatory, ethics, Level 2/3, interview structure",
+      "Free 50-question / 100-minute timed APC diagnostic with topic scoring",
+      "Ownable $11 .apkg — not Brainscape subscription or browser-only free decks",
+      "Honest: official MRICS is written evidence + 60-min interview, not an MCQ exam",
+    ],
+    summaryProse:
+      "APC fails candidates on ethics and Level 3 advice under interview pressure — not on grinding browser flashcards. UniPrep’s free timed diagnostic plus an ownable $11 Anki .apkg beats Brainscape packs when you need spaced ethics/mandatory recall while writing evidence. QS NRM/JCT specialists should add the separate MRICS QS SKU.",
   },
   "leed-green-associate-anki-deck": {
     ourEdge: [
@@ -1136,6 +1150,24 @@ Focused QS-pathway prompts for RICS APC: NRM measurement and costing, design eco
 ### Pitfalls this deck targets
 
 Candidates confuse NRM1/2/3 uses, mix NEC Option B BOQ rules with activity schedules, and under-prepare ethics scenarios for the final assessment interview. Cards force those distinctions.`,
+
+  "mrics-anki-deck": `### What is inside
+
+250+ cross-pathway MRICS APC cards for mandatory competencies, ethics and Rules of Conduct, core technical themes, Level 2/3 application and advice, and case-study / interview structure. Same bank themes as the free timed APC readiness check. Built for spaced interview recall — not a substitute for written APC evidence.
+
+### Plan with the free MRICS APC mock
+
+**Phase 1:** Sit the [free 50-question MRICS readiness check](/mock-exams/mrics-readiness-check) (100 min / 70% diagnostic). **Phase 2:** 20–25 Anki cards/day on ethics and your weakest mandatory rows (ethics can auto-refer). **Phase 3:** Keep writing Level 2/3 examples and case-study drafts; retake the mock before booking the 60-minute interview. QS candidates who need NRM/JCT depth should add the [MRICS QS deck](/decks/mrics-quantity-surveying-anki-deck).
+
+Official APC remains **written submission + 60-minute final assessment interview** — this MCQ diagnostic is knowledge rehearsal only.
+
+### Pitfalls this deck targets
+
+Candidates treat free browser flashcards as the APC, under-drill Rules of Conduct, or confuse this cross-pathway deck with the QS-only NRM/contracts SKU. Cards force ethics + Level 3 framing under spaced recall.
+
+### What this does not replace
+
+RICS APC registration, pathway guides, written submissions, or the final interview. Independent prep — not RICS material.`,
 
   "leed-green-associate-anki-deck": `### What is inside
 

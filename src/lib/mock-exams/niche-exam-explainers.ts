@@ -1540,11 +1540,11 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "MRICS membership via the Assessment of Professional Competence (APC) is RICS’s pathway for surveyors to demonstrate ethics, mandatory competencies, and pathway-specific technical judgment — culminating in a final assessment interview rather than a single multiple-choice license test. UniPrep2Go’s MRICS readiness check helps candidates rehearse competency-style application and ethics scenarios before interview evidence writing. Confirm current APC guides with RICS for your pathway.",
     administeredBy: "Royal Institution of Chartered Surveyors (RICS)",
     officialFormat:
-      "APC structured training, written submissions, and final assessment interview (pathway-dependent). This UniPrep2Go check is an MCQ-style diagnostic aid, not the APC interview.",
+      "Official APC: written submissions (summary of experience + 3,000-word case study) plus a 60-minute final assessment interview (10-min case study presentation, 10-min presentation Q&A, 30-min technical competency, 10-min mandatory/ethics). UniPrep2Go free check: 50 MCQs / 100 minutes / 70% diagnostic — knowledge rehearsal only, not the interview. Ethics can auto-refer.",
     whoFor:
       "Surveyors and quantity-surveying candidates on RICS APC pathways who need timed practice on ethics, mandatory competencies, and technical application before final assessment.",
     howToPrepare:
-      "Map your pathway competencies, draft Level 2/3 examples, take this free UniPrep2Go timed MRICS readiness check for judgment gaps, then repair weak competency themes with the linked Anki deck while you refine written APC evidence.",
+      "Map your pathway competencies, draft Level 2/3 examples, take this free UniPrep2Go timed MRICS readiness check for judgment gaps, then repair weak competency themes with the linked $11 / 250+ Anki deck while you refine written APC evidence. QS specialists should also use the separate MRICS QS mock/deck for NRM and contracts.",
     topicBlurbs: [
       {
         id: "mandatory-competencies",

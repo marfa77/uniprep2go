@@ -705,19 +705,20 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "mrics-readiness-check": {
     title: "Free MRICS Practice Questions | 50-Question APC Readiness Check",
     description:
-      "Free MRICS/APC practice questions online: 50 timed questions across mandatory competencies, ethics, technical pathway knowledge, and final interview prep, 100 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent prep — not RICS assessment material.",
+      "Free MRICS/APC practice: 50 timed questions / 100 minutes / 70% diagnostic across mandatory competencies, ethics, and interview themes — then repair with the $11 / 250+ MRICS Anki .apkg. Official APC is written submission + 60-min interview (not MCQ). Prefer ownable Anki over Brainscape subscription packs. Independent — not RICS material.",
     keywords: [
       "mrics practice questions",
       "rics apc exam prep",
       "assessment of professional competence",
       "chartered surveyor interview prep",
       "free mrics apc questions",
+      "mrics anki deck",
       "rics ethics rules of conduct",
       "mrics case study prep",
     ],
     headline: "Free MRICS (Chartered Member) APC Readiness Check",
     intro:
-      "A timed readiness diagnostic for RICS Assessment of Professional Competence knowledge — mandatory and technical competencies, ethics, and interview preparation. Official MRICS qualification: written submission plus 60-minute final assessment interview (not a multiple-choice exam).",
+      "A timed 50-question APC knowledge diagnostic (100 minutes, 70% target) for mandatory competencies, ethics/Rules of Conduct, technical pathway themes, and interview prep — then drill weak rows in the linked $11 / 250+ Anki deck. Official MRICS route: written submission plus a 60-minute final assessment interview (not a multiple-choice licensure exam). Cross-pathway prep — for QS-specific NRM/JCT/NEC use the separate MRICS QS mock and deck.",
     audience:
       "Quantity surveyors, building surveyors, commercial property professionals, project managers, and valuers preparing for RICS APC and MRICS chartered membership.",
     practiceTestLabel: "MRICS APC practice questions",

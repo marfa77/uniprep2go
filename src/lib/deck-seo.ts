@@ -977,7 +977,21 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     title: "CFPS Exam Prep | 400+ Cards + Free Mock",
   },
   "mrics-anki-deck": {
-    title: "MRICS APC Prep | 250+ Cards + Free Mock",
+    title: "Best MRICS APC Anki Deck | 250+ Cards + Free Mock",
+    headline: "MRICS / APC Prep — 250+ Anki Cards + Free Mock",
+    studyLabel: "MRICS APC interview and competency prep",
+    description:
+      "Best independent MRICS APC Anki: $11 / 250+ cards for mandatory competencies, ethics, Level 2/3 advice, and interview structure — plus a free 50-question timed diagnostic. Ownable .apkg vs Brainscape packs. Official APC is written evidence + 60-min interview, not MCQ. QS NRM/JCT depth is a separate SKU.",
+    keywords: [
+      "best mrics anki deck",
+      "rics apc anki",
+      "mrics flashcards",
+      "apc ethics flashcards",
+      "chartered surveyor anki",
+      "free mrics practice questions",
+    ],
+    intro:
+      "APC candidates need ethics and Level 3 advice under interview pressure. Use a free timed diagnostic plus an ownable Anki .apkg for spaced mandatory/ethics recall — not a Brainscape subscription dump. For QS measurement and contracts, use the separate MRICS QS deck.",
   },
   "mrics-quantity-surveying-anki-deck": {
     title: "Best MRICS QS Anki Deck | APC Cards + Free Mock",

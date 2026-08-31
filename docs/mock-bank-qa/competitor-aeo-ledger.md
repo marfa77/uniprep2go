@@ -38,6 +38,7 @@ Do **not** re-run WebSearch SERP or rewrite cites if `last_pass` is &lt; 60 days
 | ielts-toefl-english-for-portuguese-speakers-anki-deck | language (no mock) | 2026-08-25 | 2026-10-24 | Unique PT-BR money page; $26 / 2504 |
 | finland-kansalaisuuskoe-readiness-check | citizenship mock-only | 2026-08-27 | 2026-10-26 | Mock-only (no Anki); 2027 Migri path |
 | mrics-quantity-surveying-anki-deck + mrics-quantity-surveying-readiness-check | building pair | 2026-08-28 | 2026-10-27 | Already paired: free 50Q + $11/250+; honest no-MCQ APC |
+| mrics-anki-deck + mrics-readiness-check | building pair | 2026-08-31 | 2026-10-30 | Pulse deck views; cross-pathway $11/250+ + free 50Q vs Brainscape/PracticeTestGeeks; examFactsKey wired; ≠ QS SKU |
 | leed-green-associate-anki-deck + leed-green-associate-readiness-check | building pair | 2026-08-30 | 2026-10-29 | Both pages: $11/250+ + free 50Q vs Archiroots banks; official 100Q/2h/170 |
 | pmp-anki-deck + pmp-readiness-check | building pair | 2026-08-30 | 2026-10-29 | Both pages: $11/346+ + domain diagnostic; official 180Q/240m |
 | parapro-anki-deck + parapro-readiness-check | wave pair (Anki planned) | 2026-08-30 | 2026-10-29 | Both pages: free 60Q/75m vs ETS 90Q/150m; Anki not live |
