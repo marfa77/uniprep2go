@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CIPLE A2 Comic — O Apartamento (test)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a2332;
+      --paper: #f7f3eb;
+      --azulejo: #1f6f8b;
+      --azulejo-deep: #0f4c63;
+      --terracotta: #c45c26;
+      --sand: #e8dfd0;
+      --bubble: #fffdf8;
+      --gutter: #d9cfc0;
+      --success: #2f6b4f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 20% 0%, #dceaf0 0%, transparent 45%),
+        radial-gradient(ellipse at 90% 20%, #f0ddd0 0%, transparent 40%),
+        #ebe4d8;
+      color: var(--ink);
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      line-height: 1.45;
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1.25rem;
+      background: rgba(26, 35, 50, 0.92);
+      color: #f7f3eb;
+      backdrop-filter: blur(8px);
+    }
+
+    .toolbar strong { font-family: Fraunces, Georgia, serif; font-weight: 700; }
+    .toolbar span { opacity: 0.8; font-size: 0.9rem; }
+
+    .toolbar button,
+    .toolbar a.btn {
+      appearance: none;
+      border: 0;
+      border-radius: 999px;
+      padding: 0.55rem 1rem;
+      background: var(--terracotta);
+      color: white;
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .toolbar a.ghost {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.35);
+    }
+
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 4rem;
+    }
+
+    .principles {
+      margin: 0 0 1.5rem;
+      padding: 1.1rem 1.25rem;
+      background: rgba(255,255,255,0.55);
+      border: 1px solid var(--gutter);
+      border-left: 4px solid var(--azulejo);
+    }
+
+    .principles h2 {
+      margin: 0 0 0.5rem;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.15rem;
+    }
+
+    .principles ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      font-size: 0.92rem;
+    }
+
+    .page {
+      width: min(100%, 794px);
+      min-height: 1123px;
+      margin: 0 auto 2rem;
+      background: var(--paper);
+      border: 1px solid #cfc3b0;
+      box-shadow: 0 18px 40px rgba(26, 35, 50, 0.12);
+      padding: 1.4rem 1.5rem 1.6rem;
+      page-break-after: always;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page::before {
+      content: "";
+      position: absolute;
+      inset: 0.55rem;
+      border: 1px solid rgba(31, 111, 139, 0.18);
+      pointer-events: none;
+    }
+
+    .page-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 0.85rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .page-head .brand {
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 700;
+      color: var(--azulejo-deep);
+      font-size: 0.95rem;
+    }
+
+    .page-head .meta {
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #6b6256;
+    }
+
+    .cover {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 1rem;
+    }
+
+    .cover-art {
+      position: relative;
+      border: 3px solid var(--ink);
+      min-height: 720px;
+      background: #ccc center/cover no-repeat;
+      overflow: hidden;
+    }
+
+    .cover-art img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .cover-badge {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      background: var(--azulejo);
+      color: white;
+      padding: 0.45rem 0.75rem;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+    }
+
+    .cover-title-block {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 1.4rem 1.3rem 1.2rem;
+      background: linear-gradient(transparent, rgba(15, 30, 40, 0.92) 35%);
+      color: white;
+    }
+
+    .cover-title-block h1 {
+      margin: 0;
+      font-family: Fraunces, Georgia, serif;
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      line-height: 1.05;
+    }
+
+    .cover-title-block p {
+      margin: 0.45rem 0 0;
+      max-width: 34ch;
+      font-size: 1.05rem;
+      opacity: 0.95;
+    }
+
+    .cover-foot {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 1rem;
+      font-size: 0.92rem;
+    }
+
+    .cover-foot .chip {
+      background: var(--sand);
+      padding: 0.85rem 1rem;
+      border: 1px solid var(--gutter);
+    }
+
+    .cover-foot strong { display: block; color: var(--azulejo-deep); margin-bottom: 0.2rem; }
+
+    .strip {
+      display: grid;
+      gap: 0.7rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .row-2 { grid-template-columns: 1.15fr 0.85fr; }
+    .row-1 { grid-template-columns: 1fr; }
+    .row-3 { grid-template-columns: 1fr 1fr 1fr; }
+
+    .panel {
+      position: relative;
+      border: 3px solid var(--ink);
+      background: #ddd center/cover no-repeat;
+      min-height: 250px;
+      overflow: hidden;
+    }
+
+    .panel.tall { min-height: 420px; }
+    .panel.hero { min-height: 520px; }
+
+    .panel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .panel .caption {
+      position: absolute;
+      left: 0.55rem;
+      bottom: 0.55rem;
+      background: rgba(26, 35, 50, 0.88);
+      color: white;
+      font-size: 0.78rem;
+      padding: 0.28rem 0.5rem;
+      max-width: 85%;
+    }
+
+    .bubble {
+      position: absolute;
+      max-width: min(78%, 280px);
+      background: var(--bubble);
+      border: 2.5px solid var(--ink);
+      border-radius: 1.1rem;
+      padding: 0.55rem 0.7rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      line-height: 1.3;
+      box-shadow: 3px 3px 0 rgba(26, 35, 50, 0.15);
+      z-index: 2;
+    }
+
+    .bubble .who {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--azulejo);
+      margin-bottom: 0.15rem;
+    }
+
+    .bubble.maya .who { color: var(--terracotta); }
+    .bubble.thought {
+      border-style: dashed;
+      font-style: italic;
+    }
+
+    .bubble::after {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background: var(--bubble);
+      border-right: 2.5px solid var(--ink);
+      border-bottom: 2.5px solid var(--ink);
+      transform: rotate(45deg);
+    }
+
+    .bubble.bl { left: 4%; bottom: 8%; }
+    .bubble.bl::after { left: 22px; bottom: -8px; }
+    .bubble.br { right: 4%; bottom: 8%; }
+    .bubble.br::after { right: 22px; bottom: -8px; }
+    .bubble.tl { left: 4%; top: 6%; }
+    .bubble.tl::after { left: 22px; top: auto; bottom: -8px; }
+    .bubble.tr { right: 4%; top: 6%; }
+    .bubble.tr::after { right: 22px; top: auto; bottom: -8px; }
+    .bubble.tm { left: 50%; top: 5%; transform: translateX(-50%); }
+    .bubble.tm::after { left: 50%; margin-left: -7px; top: auto; bottom: -8px; }
+
+    .page-note {
+      margin-top: 0.8rem;
+      font-size: 0.82rem;
+      color: #5d564c;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .study h2 {
+      margin: 0 0 0.75rem;
+      font-family: Fraunces, Georgia, serif;
+      color: var(--azulejo-deep);
+      font-size: 1.7rem;
+    }
+
+    .study h3 {
+      margin: 1.2rem 0 0.5rem;
+      font-size: 1.05rem;
+      color: var(--terracotta);
+    }
+
+    .glossary {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+
+    .glossary th,
+    .glossary td {
+      border-bottom: 1px solid var(--gutter);
+      padding: 0.45rem 0.35rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .glossary th { color: var(--azulejo-deep); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; }
+    .glossary td:first-child { font-weight: 600; width: 34%; }
+
+    .quiz ol { margin: 0; padding-left: 1.2rem; }
+    .quiz li { margin: 0.45rem 0; }
+
+    .anki {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.45rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .anki div {
+      background: white;
+      border: 1px solid var(--gutter);
+      padding: 0.45rem 0.55rem;
+    }
+
+    .anki strong { color: var(--azulejo-deep); }
+
+    .tips {
+      background: #e7f1f4;
+      border: 1px solid #b9d4de;
+      padding: 0.8rem 0.9rem;
+      font-size: 0.9rem;
+    }
+
+    @media print {
+      body { background: white; }
+      .toolbar, .principles { display: none !important; }
+      .wrap { max-width: none; padding: 0; }
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        box-shadow: none;
+        border: 0;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .row-2, .row-3, .cover-foot, .anki { grid-template-columns: 1fr; }
+      .page { min-height: auto; }
+      .panel, .panel.tall, .panel.hero, .cover-art { min-height: 280px; }
+      .bubble { font-size: 0.88rem; max-width: 88%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <div>
+      <strong>Prep2Go · CIPLE A2 Comic (test)</strong>
+      <span> · O Apartamento · 5 pages + study pack</span>
+    </div>
+    <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
+      <a class="btn ghost" href="#study">Study pack</a>
+      <button type="button" onclick="window.print()">Print / PDF</button>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <aside class="principles">
+      <h2>How this “best comic” pilot was built</h2>
+      <ul>
+        <li><strong>Comprehensible input (~95%):</strong> short A2 dialogue, concrete nouns shown in art.</li>
+        <li><strong>Pictures first, bubbles second:</strong> art has no baked-in text (AI text is unreliable).</li>
+        <li><strong>Exam scenario:</strong> apartment viewing — CIPLE / daily-life Portuguese.</li>
+        <li><strong>Adult tone:</strong> not kids’ manga; Lisbon azulejo visual identity.</li>
+        <li><strong>Study layer after story:</strong> glossary → comprehension → Anki chunk list (no parallel EN during reading).</li>
+      </ul>
+    </aside>
+
+    <!-- COVER -->
+    <article class="page cover">
+      <div class="page-head">
+        <div class="brand">Prep2Go Language Comics</div>
+        <div class="meta">Prototype · CIPLE A2</div>
+      </div>
+      <div class="cover-art" style="background-image:url('art/ciple-comic-cover.jpg')">
+        <img src="art/ciple-comic-cover.jpg" alt="Cover: apartment hunt in Lisbon" />
+        <div class="cover-badge">A2 · PT-PT</div>
+        <div class="cover-title-block">
+          <h1>O Apartamento</h1>
+          <p>Uma história curta para ler, ouvir e falar — nível CIPLE A2.</p>
+        </div>
+      </div>
+      <div class="cover-foot">
+        <div class="chip">
+          <strong>Personagens</strong>
+          Maya (estudante) · Sr. Costa (senhorio)
+        </div>
+        <div class="chip">
+          <strong>O que vais praticar</strong>
+          cumprimentos · casa · renda · caução · acordo
+        </div>
+      </div>
+    </article>
+
+    <!-- PAGE 1 -->
+    <article class="page">
+      <div class="page-head">
+        <div class="brand">O Apartamento · 1/5</div>
+        <div class="meta">À porta</div>
+      </div>
+      <div class="strip row-1">
+        <div class="panel hero">
+          <img src="art/ciple-comic-p1-door.jpg" alt="Maya at the apartment door" />
+          <div class="bubble maya tl">
+            <span class="who">Maya</span>
+            Bom dia! Eu chamo-me Maya. Venho ver o apartamento.
+          </div>
+          <div class="bubble br">
+            <span class="who">Sr. Costa</span>
+            Bom dia! Entre, por favor. Eu sou o senhor Costa.
+          </div>
+        </div>
+      </div>
+      <div class="page-note">
+        <span>Tip: read once without translating. Guess from the picture.</span>
+        <span>Prep2Go · test sample</span>
+      </div>
+    </article>
+
+    <!-- PAGE 2 -->
+    <article class="page">
+      <div class="page-head">
+        <div class="brand">O Apartamento · 2/5</div>
+        <div class="meta">A visita</div>
+      </div>
+      <div class="strip row-1">
+        <div class="panel hero">
+          <img src="art/ciple-comic-p2-tour.jpg" alt="Tour of the living room" />
+          <div class="bubble tl">
+            <span class="who">Sr. Costa</span>
+            Esta é a sala. A cozinha é ali.
+          </div>
+          <div class="bubble maya tr">
+            <span class="who">Maya</span>
+            É muito bonito! Há muita luz.
+          </div>
+          <div class="bubble br">
+            <span class="who">Sr. Costa</span>
+            Sim. A janela dá para a rua.
+          </div>
+        </div>
+      </div>
+      <div class="page-note">
+        <span>Target chunks: <em>Esta é…</em> · <em>Há muita…</em> · <em>dá para…</em></span>
+        <span>2/5</span>
+      </div>
+    </article>
+
+    <!-- PAGE 3 -->
+    <article class="page">
+      <div class="page-head">
+        <div class="brand">O Apartamento · 3/5</div>
+        <div class="meta">A renda</div>
+      </div>
+      <div class="strip row-1">
+        <div class="panel hero">
+          <img src="art/ciple-comic-p3-rent.jpg" alt="Talking about rent at the table" />
+          <div class="bubble maya tl">
+            <span class="who">Maya</span>
+            Quanto custa a renda?
+          </div>
+          <div class="bubble tr">
+            <span class="who">Sr. Costa</span>
+            São oitocentos euros por mês.
+          </div>
+          <div class="bubble maya bl">
+            <span class="who">Maya</span>
+            As despesas estão incluídas?
+          </div>
+          <div class="bubble br">
+            <span class="who">Sr. Costa</span>
+            A água e a luz não. Só o condomínio.
+          </div>
+        </div>
+      </div>
+      <div class="page-note">
+        <span>Exam gold: <em>Quanto custa…?</em> · <em>estão incluídas?</em></span>
+        <span>3/5</span>
+      </div>
+    </article>
+
+    <!-- PAGE 4 -->
+    <article class="page">
+      <div class="page-head">
+        <div class="brand">O Apartamento · 4/5</div>
+        <div class="meta">O problema</div>
+      </div>
+      <div class="strip row-1">
+        <div class="panel hero">
+          <img src="art/ciple-comic-p4-stairs.jpg" alt="Stairs instead of elevator" />
+          <div class="bubble maya tl">
+            <span class="who">Maya</span>
+            Há elevador?
+          </div>
+          <div class="bubble tr">
+            <span class="who">Sr. Costa</span>
+            Não, há só as escadas. É o terceiro andar.
+          </div>
+          <div class="bubble maya thought bl">
+            <span class="who">Maya</span>
+            Hmm… É um pouco difícil com as malas.
+          </div>
+          <div class="bubble br">
+            <span class="who">Sr. Costa</span>
+            Compreendo. Mas o bairro é calmo e seguro.
+          </div>
+        </div>
+      </div>
+      <div class="page-note">
+        <span>Softeners: <em>um pouco</em> · politeness: <em>Compreendo</em></span>
+        <span>4/5</span>
+      </div>
+    </article>
+
+    <!-- PAGE 5 -->
+    <article class="page">
+      <div class="page-head">
+        <div class="brand">O Apartamento · 5/5</div>
+        <div class="meta">O acordo</div>
+      </div>
+      <div class="strip row-1">
+        <div class="panel hero">
+          <img src="art/ciple-comic-p5-deal.jpg" alt="Handshake and keys" />
+          <div class="bubble maya tl">
+            <span class="who">Maya</span>
+            Está bem. Eu quero o apartamento.
+          </div>
+          <div class="bubble tr">
+            <span class="who">Sr. Costa</span>
+            Ótimo! Preciso de uma caução de um mês.
+          </div>
+          <div class="bubble maya bl">
+            <span class="who">Maya</span>
+            Sem problema. Obrigada, senhor Costa!
+          </div>
+          <div class="bubble br">
+            <span class="who">Sr. Costa</span>
+            De nada. Até amanhã!
+          </div>
+        </div>
+      </div>
+      <div class="page-note">
+        <span>Close the deal: <em>Eu quero…</em> · <em>caução</em> · <em>Até amanhã</em></span>
+        <span>5/5</span>
+      </div>
+    </article>
+
+    <!-- STUDY PACK -->
+    <article class="page study" id="study">
+      <div class="page-head">
+        <div class="brand">Study pack</div>
+        <div class="meta">After reading</div>
+      </div>
+      <h2>Study pack — O Apartamento</h2>
+      <div class="tips">
+        <strong>How to use (5 minutes):</strong> 1) Read the comic once. 2) Check the glossary only for stuck words.
+        3) Answer the 5 questions aloud. 4) Add the Anki chunks to your CIPLE deck.
+      </div>
+
+      <h3>1. Glossary (PT → EN)</h3>
+      <table class="glossary">
+        <thead>
+          <tr><th>Português</th><th>English</th><th>Note</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>apartamento</td><td>apartment / flat</td><td>core noun</td></tr>
+          <tr><td>senhorio</td><td>landlord</td><td>sr. Costa</td></tr>
+          <tr><td>renda</td><td>rent</td><td>monthly</td></tr>
+          <tr><td>despesas</td><td>bills / expenses</td><td>água, luz…</td></tr>
+          <tr><td>condomínio</td><td>condo / building fees</td><td>PT housing</td></tr>
+          <tr><td>elevador</td><td>elevator / lift</td><td></td></tr>
+          <tr><td>andar</td><td>floor (storey)</td><td>terceiro andar</td></tr>
+          <tr><td>bairro</td><td>neighbourhood</td><td></td></tr>
+          <tr><td>caução</td><td>deposit</td><td>security deposit</td></tr>
+          <tr><td>Entre, por favor</td><td>Come in, please</td><td>polite invite</td></tr>
+        </tbody>
+      </table>
+
+      <h3>2. Comprehension (answer in Portuguese)</h3>
+      <div class="quiz">
+        <ol>
+          <li>Como se chama a estudante?</li>
+          <li>Quanto custa a renda por mês?</li>
+          <li>As despesas estão incluídas?</li>
+          <li>Há elevador no prédio?</li>
+          <li>De que precisa o senhor Costa?</li>
+        </ol>
+      </div>
+
+      <h3>3. Mini Anki list (chunks, not single words)</h3>
+      <div class="anki">
+        <div><strong>Eu chamo-me…</strong><br />My name is…</div>
+        <div><strong>Venho ver o apartamento.</strong><br />I’ve come to see the flat.</div>
+        <div><strong>Entre, por favor.</strong><br />Come in, please.</div>
+        <div><strong>Quanto custa a renda?</strong><br />How much is the rent?</div>
+        <div><strong>As despesas estão incluídas?</strong><br />Are the bills included?</div>
+        <div><strong>Há elevador?</strong><br />Is there a lift?</div>
+        <div><strong>É o terceiro andar.</strong><br />It’s the third floor.</div>
+        <div><strong>O bairro é calmo e seguro.</strong><br />The area is quiet and safe.</div>
+        <div><strong>Eu quero o apartamento.</strong><br />I want the flat.</div>
+        <div><strong>Preciso de uma caução.</strong><br />I need a deposit.</div>
+      </div>
+
+      <h3>4. Product note (internal)</h3>
+      <p style="margin:0;font-size:0.9rem;color:#5d564c">
+        Test SKU idea: <strong>CIPLE A2 Comic #01 — O Apartamento</strong> · PDF 6 pages · optional 40-card Anki add-on ·
+        bundle with <code>ciple-a2-european-portuguese-anki-deck</code>. Next stories: <em>No café</em>, <em>Na farmácia</em>, <em>Na loja</em>.
+      </p>
+    </article>
+  </div>
+</body>
+</html>
