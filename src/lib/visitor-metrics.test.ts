@@ -373,4 +373,48 @@ describe("computeGrowthSignal", () => {
 
     expect(growing.label).toContain("↑ growing");
   });
+
+  it("tracks tagged Threads uniques, views, and mock starts", () => {
+    resetAllVisitorSets();
+
+    recordVisitorMetricInMemory(
+      createFunnelEvent({
+        name: "page_view",
+        deckSlug: "sie-exam-anki-deck",
+        visitorId: "th_a",
+        path: "/mock-exams/sie-full-mock",
+        utmSource: "threads",
+        utmMedium: "social",
+      }),
+    );
+    recordVisitorMetricInMemory(
+      createFunnelEvent({
+        name: "mock_started",
+        deckSlug: "sie-exam-anki-deck",
+        visitorId: "th_a",
+        path: "/mock-exams/sie-full-mock",
+        source: "mock:sie-full-mock:start:exam",
+        utmSource: "threads",
+        utmMedium: "social",
+      }),
+    );
+    recordVisitorMetricInMemory(
+      createFunnelEvent({
+        name: "page_view",
+        deckSlug: "cfa-level-1-anki-deck",
+        visitorId: "th_b",
+        path: "/decks/cfa-level-1-anki-deck",
+        referrer: "https://google.com/",
+      }),
+    );
+
+    const metrics = readVisitorMetricsFromMemory();
+    const day = new Date().toISOString().slice(0, 10);
+
+    expect(metrics.threads.periodUnique).toBe(1);
+    expect(metrics.threads.lifetimeUnique).toBe(1);
+    expect(metrics.threads.dailyUnique[day]).toBe(1);
+    expect(metrics.threads.dailyViews[day]).toBe(1);
+    expect(metrics.threads.dailyMockStarts[day]).toBe(1);
+  });
 });

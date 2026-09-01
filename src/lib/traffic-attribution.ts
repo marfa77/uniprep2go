@@ -32,6 +32,11 @@ export function isLlmUtm(utmSource?: string, utmMedium?: string) {
   return source === "llm" || medium === "llm" || medium === "llms.txt";
 }
 
+/** Tagged UniPrep Threads links only — not a generic threads.net referrer. */
+export function isThreadsTaggedTouch(utmSource?: string) {
+  return utmSource?.trim().toLowerCase() === "threads";
+}
+
 function readStoredFirstTouch(storage: Storage): FirstTouchAttribution | undefined {
   try {
     const raw = storage.getItem(FIRST_TOUCH_STORAGE_KEY);

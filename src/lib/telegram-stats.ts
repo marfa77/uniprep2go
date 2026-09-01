@@ -2,13 +2,14 @@ import type { FunnelEvent } from "./analytics";
 import type { CheckoutPriceSyncResult } from "./checkout-pricing";
 import type { FunnelStats } from "./funnel-store";
 import { countMockStartsByMode } from "./mock-exams/session-mode";
+import { isThreadsTaggedTouch } from "./traffic-attribution";
 import {
   TRAFFIC_CHANNELS,
   classifyTrafficChannel,
   trafficChannelLabels,
   type TrafficChannel,
 } from "./traffic-channel";
-import type { DailyTrafficSnapshot, ProductUniqueMetrics } from "./visitor-metrics";
+import { emptyThreadsMetrics, type DailyTrafficSnapshot, type ProductUniqueMetrics } from "./visitor-metrics";
 
 export function shouldReturnStats(text: string) {
   const normalized = text.trim().toLowerCase();
@@ -753,6 +754,54 @@ function formatPeriodRange(stats: FunnelStats) {
   return `${start} → ${end}`;
 }
 
+export function formatThreadsSection(stats: FunnelStats, now = new Date(), pathLimit = 4) {
+  const threads = stats.visitors.threads ?? emptyThreadsMetrics();
+  const dayKeys = recentDayKeys(7, now);
+  const currentUnique = sumDailyWindow(threads.dailyUnique, dayKeys);
+  const currentViews = sumDailyWindow(threads.dailyViews, dayKeys);
+  const currentStarts = sumDailyWindow(threads.dailyMockStarts, dayKeys);
+
+  const chartLines = dayKeys.map((day) => {
+    const unique = threads.dailyUnique[day] ?? 0;
+    const views = threads.dailyViews[day] ?? 0;
+    const starts = threads.dailyMockStarts[day] ?? 0;
+    const marker = day === dayOffsetUtc(now, 1) ? " ← yesterday" : "";
+    const bar = unique > 0 ? formatVisitorBar(unique) : " ·";
+
+    return `  ${formatShortDate(day)}: ${String(unique).padStart(2, " ")}u / ${String(views).padStart(3, " ")}v · ${starts} start${bar}${marker}`;
+  });
+
+  const pathVisitors = new Map<string, Set<string>>();
+  const pathViews = new Map<string, number>();
+
+  for (const event of stats.recentEvents) {
+    if (!isThreadsTaggedTouch(event.utmSource) || !isPagePathEvent(event) || !event.path) {
+      continue;
+    }
+
+    pathViews.set(event.path, (pathViews.get(event.path) ?? 0) + 1);
+    const visitors = pathVisitors.get(event.path) ?? new Set<string>();
+    visitors.add(event.visitorId?.trim() || `anon:${event.eventId}`);
+    pathVisitors.set(event.path, visitors);
+  }
+
+  const ranked = rankPaths(pathVisitors, pathViews);
+  const lines = [
+    "▸ THREADS · @uniprep2go · tagged links (utm_source=threads)",
+    ...chartLines,
+    `Σ7d: ${currentUnique} unique · ${currentViews} views · ${currentStarts} mock starts`,
+    `Period ${threads.periodUnique}u · lifetime ${threads.lifetimeUnique}u`,
+  ];
+
+  if (ranked.length > 0) {
+    lines.push("Top (recent window):", ...formatRankedPathLines(ranked, pathLimit, "none yet"));
+  } else if (currentUnique === 0 && threads.lifetimeUnique === 0) {
+    lines.push("- no tagged Threads clicks yet");
+  }
+
+  return lines.join("\n");
+}
+
 export function toTelegramStatsMessage(stats: FunnelStats, now = new Date()) {
   return toTelegramStatsMessages(stats, now)[0] ?? "UniPrep2Go · no stats yet";
 }
@@ -776,6 +825,8 @@ export function toTelegramStatsMessages(stats: FunnelStats, now = new Date()) {
     formatPeriodProductsSection(products, 5),
     "",
     formatAcquisitionSection(stats),
+    "",
+    formatThreadsSection(stats, now),
     "",
     `Storage: ${stats.storage} · lifetime ${visitors.lifetimeUnique} unique`,
   ];

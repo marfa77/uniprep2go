@@ -14,6 +14,7 @@ import {
   formatSearchAndLlmTopPages,
   formatSevenDayDynamics,
   formatTodayTopPages,
+  formatThreadsSection,
   formatYesterdaySection,
 } from "./telegram-stats";
 import type { FunnelStats } from "./funnel-store";
@@ -197,6 +198,8 @@ describe("telegram stats", () => {
     expect(message).toContain("▸ TOP SKUs (period");
     expect(message).toContain("cfa-level-1-anki-deck: 14 view → 2 intent → 1 convert (7.1%)");
     expect(message).toContain("▸ ACQUISITION");
+    expect(message).toContain("▸ THREADS · @uniprep2go");
+    expect(message).toContain("no tagged Threads clicks yet");
     expect(message).not.toContain("Top pages (period):");
     expect(message).not.toContain("Динамика 7 дней");
   });
@@ -580,5 +583,42 @@ describe("telegram stats", () => {
     expect(messages.length).toBeGreaterThan(1);
     expect(messages[0]).toContain("[1/");
     expect(toTelegramStatsMessages(sampleStats).every((message) => message.length <= 4096)).toBe(true);
+  });
+
+  it("formats the Threads block from tagged clicks", () => {
+    const now = new Date("2026-09-01T16:00:00.000Z");
+    const block = formatThreadsSection(
+      {
+        ...sampleStats,
+        recentEvents: [
+          {
+            eventId: "t1",
+            name: "page_view",
+            deckSlug: "sie-exam-anki-deck",
+            occurredAt: "2026-09-01T12:00:00.000Z",
+            visitorId: "th1",
+            path: "/mock-exams/sie-full-mock",
+            utmSource: "threads",
+            utmMedium: "social",
+          },
+        ],
+        visitors: {
+          ...sampleStats.visitors,
+          threads: {
+            lifetimeUnique: 2,
+            periodUnique: 1,
+            dailyUnique: { "2026-09-01": 1 },
+            dailyViews: { "2026-09-01": 2 },
+            dailyMockStarts: { "2026-09-01": 1 },
+          },
+        },
+      },
+      now,
+    );
+
+    expect(block).toContain("▸ THREADS · @uniprep2go");
+    expect(block).toContain("Σ7d: 1 unique · 2 views · 1 mock starts");
+    expect(block).toContain("/mock-exams/sie-full-mock");
+    expect(block).not.toContain("no tagged Threads clicks yet");
   });
 });

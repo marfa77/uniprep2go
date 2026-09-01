@@ -3,6 +3,7 @@ import {
   FIRST_TOUCH_STORAGE_KEY,
   captureFirstTouchAttribution,
   isLlmUtm,
+  isThreadsTaggedTouch,
   parseUtmParams,
   resolveAttributionReferrer,
 } from "./traffic-attribution";
@@ -107,5 +108,12 @@ describe("traffic attribution", () => {
 
     expect(enriched.utmSource).toBe("llm");
     expect(enriched.utmMedium).toBe("llms.txt");
+  });
+
+  it("recognizes tagged Threads clicks only", () => {
+    expect(isThreadsTaggedTouch("threads")).toBe(true);
+    expect(isThreadsTaggedTouch("THREADS")).toBe(true);
+    expect(isThreadsTaggedTouch("llm")).toBe(false);
+    expect(isThreadsTaggedTouch(undefined)).toBe(false);
   });
 });

@@ -1,4 +1,5 @@
 import type { FunnelEvent } from "./analytics";
+import { isThreadsTaggedTouch } from "./traffic-attribution";
 import {
   TRAFFIC_CHANNELS,
   classifyTrafficChannel,
@@ -21,6 +22,24 @@ export type DailyTrafficSnapshot = {
   byChannel: Record<TrafficChannel, number>;
   byCountry: Record<string, number>;
 };
+
+export type ThreadsVisitorMetrics = {
+  lifetimeUnique: number;
+  periodUnique: number;
+  dailyUnique: DailyUniqueCounts;
+  dailyViews: DailyUniqueCounts;
+  dailyMockStarts: DailyUniqueCounts;
+};
+
+export function emptyThreadsMetrics(): ThreadsVisitorMetrics {
+  return {
+    lifetimeUnique: 0,
+    periodUnique: 0,
+    dailyUnique: {},
+    dailyViews: {},
+    dailyMockStarts: {},
+  };
+}
 
 export type ProductUniqueMetrics = {
   visitors: number;
@@ -48,6 +67,8 @@ export type VisitorMetrics = {
   pathsByChannel: Record<TrafficChannel, Record<string, number>>;
   /** Unique visitors per path ∩ lifetime channel (all-time Google / LLM page ranks). */
   lifetimePathsByChannel: Record<TrafficChannel, Record<string, number>>;
+  /** Tagged Threads clicks (utm_source=threads) — separate from Direct/Other. */
+  threads: ThreadsVisitorMetrics;
 };
 
 function emptyChannelPathCounts(): Record<TrafficChannel, Record<string, number>> {
@@ -76,6 +97,7 @@ export function emptyVisitorMetrics(): VisitorMetrics {
     paths: {},
     pathsByChannel: emptyChannelPathCounts(),
     lifetimePathsByChannel: emptyChannelPathCounts(),
+    threads: emptyThreadsMetrics(),
   };
 }
 
@@ -104,6 +126,11 @@ type VisitorSetStore = {
   dailyCountry: Map<string, Map<string, Set<string>>>;
   dailyPathVisitors: Map<string, Map<string, Set<string>>>;
   dailyPathViews: Map<string, Map<string, number>>;
+  lifetimeThreads: Set<string>;
+  periodThreads: Set<string>;
+  dailyThreads: Map<string, Set<string>>;
+  dailyThreadsViews: Map<string, number>;
+  dailyThreadsMockStarts: Map<string, number>;
 };
 
 type GlobalWithVisitorSets = typeof globalThis & {
@@ -155,6 +182,11 @@ function getMemoryVisitorSets(): VisitorSetStore {
       dailyCountry: new Map(),
       dailyPathVisitors: new Map(),
       dailyPathViews: new Map(),
+      lifetimeThreads: new Set(),
+      periodThreads: new Set(),
+      dailyThreads: new Map(),
+      dailyThreadsViews: new Map(),
+      dailyThreadsMockStarts: new Map(),
     };
   }
 
@@ -175,6 +207,21 @@ function getMemoryVisitorSets(): VisitorSetStore {
   if (!store.dailyPathViews) {
     store.dailyPathViews = new Map();
   }
+  if (!store.lifetimeThreads) {
+    store.lifetimeThreads = new Set();
+  }
+  if (!store.periodThreads) {
+    store.periodThreads = new Set();
+  }
+  if (!store.dailyThreads) {
+    store.dailyThreads = new Map();
+  }
+  if (!store.dailyThreadsViews) {
+    store.dailyThreadsViews = new Map();
+  }
+  if (!store.dailyThreadsMockStarts) {
+    store.dailyThreadsMockStarts = new Map();
+  }
 
   return store;
 }
@@ -191,6 +238,7 @@ export function resetPeriodVisitorSets() {
   store.periodProductConversions.clear();
   store.periodCountry.clear();
   store.periodPathVisitors.clear();
+  store.periodThreads.clear();
   // Keep pathVisitors across period resets so all-time Google/LLM page ranks survive.
 }
 
@@ -220,6 +268,11 @@ export function resetAllVisitorSets() {
     dailyCountry: new Map(),
     dailyPathVisitors: new Map(),
     dailyPathViews: new Map(),
+    lifetimeThreads: new Set(),
+    periodThreads: new Set(),
+    dailyThreads: new Map(),
+    dailyThreadsViews: new Map(),
+    dailyThreadsMockStarts: new Map(),
   };
 }
 
@@ -463,6 +516,22 @@ export function recordVisitorMetricInMemory(event: FunnelEvent) {
     addToSetMap(store.lifetimeProductConversions, productKey, visitorId);
     addToSetMap(store.periodProductConversions, productKey, visitorId);
   }
+
+  if (isThreadsTaggedTouch(event.utmSource)) {
+    store.lifetimeThreads.add(visitorId);
+    store.periodThreads.add(visitorId);
+    const threadsDay = store.dailyThreads.get(date) ?? new Set<string>();
+    threadsDay.add(visitorId);
+    store.dailyThreads.set(date, threadsDay);
+
+    if (isPageViewEvent(event)) {
+      store.dailyThreadsViews.set(date, (store.dailyThreadsViews.get(date) ?? 0) + 1);
+    }
+
+    if (event.name === "mock_started") {
+      store.dailyThreadsMockStarts.set(date, (store.dailyThreadsMockStarts.get(date) ?? 0) + 1);
+    }
+  }
 }
 
 function setSize(value: Set<string> | undefined) {
@@ -617,6 +686,15 @@ export function readVisitorMetricsFromMemory(): VisitorMetrics {
     paths: intersectPathVisitorsWithChannel(periodPathSource, store.period),
     pathsByChannel: pathsByChannelFromSets(periodPathSource, store.periodChannel),
     lifetimePathsByChannel: pathsByChannelFromSets(store.pathVisitors, store.lifetimeChannel),
+    threads: {
+      lifetimeUnique: store.lifetimeThreads.size,
+      periodUnique: store.periodThreads.size,
+      dailyUnique: Object.fromEntries(
+        [...store.dailyThreads.entries()].map(([date, visitors]) => [date, visitors.size]),
+      ),
+      dailyViews: Object.fromEntries(store.dailyThreadsViews.entries()),
+      dailyMockStarts: Object.fromEntries(store.dailyThreadsMockStarts.entries()),
+    },
   };
 }
 
@@ -655,6 +733,11 @@ export const VISITOR_REDIS_KEYS = {
   periodPathIndex: "funnel:path:period:index",
   periodCountry: (countryCode: string) => `funnel:visitors:period:country:${countryCode}`,
   countryIndex: "funnel:country:index",
+  lifetimeThreads: "funnel:visitors:lifetime:threads",
+  periodThreads: "funnel:visitors:period:threads",
+  dailyThreads: (date: string) => `funnel:visitors:day:${date}:threads`,
+  dailyThreadsViews: (date: string) => `funnel:pageviews:day:${date}:threads`,
+  dailyThreadsMockStarts: (date: string) => `funnel:mockstarts:day:${date}:threads`,
 } as const;
 
 export type VisitorReturnStatus = {
@@ -700,6 +783,7 @@ export function visitorMetricRedisOperations(
   const ops: Array<(pipeline: {
     sadd: (key: string, member: string) => unknown;
     expire: (key: string, seconds: number) => unknown;
+    incr: (key: string) => unknown;
   }) => void> = [];
 
   const trackVisitor = (pipeline: { sadd: (key: string, member: string) => unknown }) => {
@@ -779,6 +863,22 @@ export function visitorMetricRedisOperations(
     });
   }
 
+  if (isThreadsTaggedTouch(event.utmSource)) {
+    ops.push((pipeline) => {
+      pipeline.sadd(VISITOR_REDIS_KEYS.lifetimeThreads, visitorId);
+      pipeline.sadd(VISITOR_REDIS_KEYS.periodThreads, visitorId);
+      pipeline.sadd(VISITOR_REDIS_KEYS.dailyThreads(date), visitorId);
+      pipeline.expire(VISITOR_REDIS_KEYS.dailyThreads(date), 60 * 60 * 24 * 45);
+    });
+
+    if (event.name === "mock_started") {
+      ops.push((pipeline) => {
+        pipeline.incr(VISITOR_REDIS_KEYS.dailyThreadsMockStarts(date));
+        pipeline.expire(VISITOR_REDIS_KEYS.dailyThreadsMockStarts(date), 60 * 60 * 24 * 45);
+      });
+    }
+  }
+
   return ops;
 }
 
@@ -795,6 +895,10 @@ export function dailyTrafficRedisOperations(event: FunnelEvent) {
     (pipeline: { incr: (key: string) => unknown; expire: (key: string, seconds: number) => unknown }) => {
       pipeline.incr(VISITOR_REDIS_KEYS.dailyPageViews(date));
       pipeline.expire(VISITOR_REDIS_KEYS.dailyPageViews(date), 60 * 60 * 24 * 45);
+      if (isThreadsTaggedTouch(event.utmSource)) {
+        pipeline.incr(VISITOR_REDIS_KEYS.dailyThreadsViews(date));
+        pipeline.expire(VISITOR_REDIS_KEYS.dailyThreadsViews(date), 60 * 60 * 24 * 45);
+      }
     },
     ...(path
       ? [
@@ -855,6 +959,8 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
     client.smembers<string>(VISITOR_REDIS_KEYS.pathIndex),
     client.smembers<string>(VISITOR_REDIS_KEYS.periodPathIndex),
     client.smembers<string>(VISITOR_REDIS_KEYS.countryIndex),
+    client.scard(VISITOR_REDIS_KEYS.lifetimeThreads),
+    client.scard(VISITOR_REDIS_KEYS.periodThreads),
   ]);
 
   const lifetimeChannelCounts = channelAndIndexCounts.slice(
@@ -869,15 +975,30 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
   const pathKeys = channelAndIndexCounts[TRAFFIC_CHANNELS.length * 2 + 1] as string[];
   const periodPathKeys = channelAndIndexCounts[TRAFFIC_CHANNELS.length * 2 + 2] as string[];
   const countryKeys = channelAndIndexCounts[TRAFFIC_CHANNELS.length * 2 + 3] as string[];
+  const lifetimeThreadsUnique = Number(channelAndIndexCounts[TRAFFIC_CHANNELS.length * 2 + 4]) || 0;
+  const periodThreadsUnique = Number(channelAndIndexCounts[TRAFFIC_CHANNELS.length * 2 + 5]) || 0;
 
   const dayKeys = recentDayKeys(14);
-  const [dailyCounts, pageViewCounts] = await Promise.all([
-    Promise.all(dayKeys.map((date) => client.scard(VISITOR_REDIS_KEYS.daily(date)))),
-    Promise.all(dayKeys.map((date) => client.get(VISITOR_REDIS_KEYS.dailyPageViews(date)))),
-  ]);
+  const [dailyCounts, pageViewCounts, threadsUniqueCounts, threadsViewCounts, threadsMockStartCounts] =
+    await Promise.all([
+      Promise.all(dayKeys.map((date) => client.scard(VISITOR_REDIS_KEYS.daily(date)))),
+      Promise.all(dayKeys.map((date) => client.get(VISITOR_REDIS_KEYS.dailyPageViews(date)))),
+      Promise.all(dayKeys.map((date) => client.scard(VISITOR_REDIS_KEYS.dailyThreads(date)))),
+      Promise.all(dayKeys.map((date) => client.get(VISITOR_REDIS_KEYS.dailyThreadsViews(date)))),
+      Promise.all(dayKeys.map((date) => client.get(VISITOR_REDIS_KEYS.dailyThreadsMockStarts(date)))),
+    ]);
   const dailyUnique = Object.fromEntries(dayKeys.map((date, index) => [date, dailyCounts[index] ?? 0]));
   const dailyPageViews = Object.fromEntries(
     dayKeys.map((date, index) => [date, Number(pageViewCounts[index]) || 0]),
+  );
+  const dailyThreadsUnique = Object.fromEntries(
+    dayKeys.map((date, index) => [date, threadsUniqueCounts[index] ?? 0]),
+  );
+  const dailyThreadsViews = Object.fromEntries(
+    dayKeys.map((date, index) => [date, Number(threadsViewCounts[index]) || 0]),
+  );
+  const dailyThreadsMockStarts = Object.fromEntries(
+    dayKeys.map((date, index) => [date, Number(threadsMockStartCounts[index]) || 0]),
   );
 
   const products: Record<string, ProductUniqueMetrics> = {};
@@ -995,6 +1116,13 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
     paths,
     pathsByChannel,
     lifetimePathsByChannel,
+    threads: {
+      lifetimeUnique: lifetimeThreadsUnique,
+      periodUnique: periodThreadsUnique,
+      dailyUnique: dailyThreadsUnique,
+      dailyViews: dailyThreadsViews,
+      dailyMockStarts: dailyThreadsMockStarts,
+    },
   };
 }
 
@@ -1064,6 +1192,7 @@ export function periodVisitorRedisKeysForReset() {
     VISITOR_REDIS_KEYS.periodNew,
     VISITOR_REDIS_KEYS.periodReturning,
     ...TRAFFIC_CHANNELS.map((channel) => VISITOR_REDIS_KEYS.periodChannel(channel)),
+    VISITOR_REDIS_KEYS.periodThreads,
   ];
 }
 

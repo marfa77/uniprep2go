@@ -392,6 +392,7 @@ export async function resetAllFunnelStats() {
     VISITOR_REDIS_KEYS.lifetime,
     ...periodVisitorRedisKeysForReset(),
     ...TRAFFIC_CHANNELS.map((channel) => VISITOR_REDIS_KEYS.lifetimeChannel(channel)),
+    VISITOR_REDIS_KEYS.lifetimeThreads,
   );
 
   await deleteIndexedRedisKeys(client, VISITOR_REDIS_KEYS.pathIndex, (path) => [
