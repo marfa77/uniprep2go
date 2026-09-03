@@ -742,7 +742,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Series 7 Exam Prep — 300 Flashcards + Free 60Q Test",
     studyLabel: "Series 7 exam prep",
     description:
-      "Series 7 Top-Off prep: 300 flashcards for suitability, options, products, and FINRA job functions — plus a free 60-question Series 7 practice test online (no signup). For US registered rep candidates.",
+      "Series 7 Top-Off prep: 300 flashcards for suitability, options, products, and FINRA job functions — plus a free 60-question Series 7 practice test online (no signup). Official exam is 125Q / 3h45 / ~72%; our mock is shorter. For US registered rep candidates.",
     keywords: [
       "series 7 exam prep",
       "series 7 flashcards",
@@ -751,7 +751,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "series 7 top off study guide",
     ],
     intro:
-      "US Series 7 candidates drill suitability, investment products, and order-flow rules on their phone between full-length Q-banks — then use the free readiness check for a timed baseline.",
+      "US Series 7 candidates drill suitability, investment products, and order-flow rules on their phone between full-length Q-banks — then use the free 60Q readiness check for a timed job-function baseline before the official 125-question sit.",
   },
   "series-63-anki-deck": {
     title: "Series 63 Anki 2026 | Free 60Q Mock + 250 Cards",
@@ -775,7 +775,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "ServSafe Manager Practice Test Free — 300 Cards + 90 Questions",
     studyLabel: "ServSafe Manager exam prep",
     description:
-      "ServSafe Manager / CFPM exam prep with 300 food safety flashcards — time and temperature, HACCP, hygiene, contamination — plus a free 90-question ServSafe practice test online. For US restaurant managers and kitchen supervisors.",
+      "ServSafe Manager / CFPM exam prep with 300 food safety flashcards — time and temperature, HACCP, hygiene, contamination — plus a free 90-question ServSafe practice test online. Official: 90Q (80 scored + 10 pilot) / 2h; handbook 75% pass. For US restaurant managers and kitchen supervisors.",
     keywords: [
       "servsafe manager exam prep",
       "servsafe manager practice test",
@@ -784,7 +784,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "food safety manager study guide",
     ],
     intro:
-      "American restaurant managers preparing for the ServSafe Manager certification review food safety rules on Anki during breaks, then take the free 90-question mock before scheduling the proctored exam.",
+      "Food-service managers need TCS temperature and HACCP recall under the clock — use the free 90-question timed mock, then drill weak domains in the $19 / 300-card Anki (PDF guide sold separately).",
   },
   "ptcb-pharmacy-technician-anki-deck": {
     title: "PTCB Prep 2026 | 300 PTCE Cards + Free Mock",
@@ -1012,6 +1012,20 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
   "gre-anki-deck": {
     title: "GRE Exam Prep | 350 Verbal & Quant Cards + Mock",
+    headline: "GRE General Prep — Planned 350 Cards + Free 30Q Mock",
+    studyLabel: "GRE exam prep",
+    description:
+      "Planned GRE General Anki: 350 Verbal + Quant flashcards plus a free 30-question timed readiness check (15V+15Q, both axes required). Official shorter GRE is ~1h58 / 27V+27Q + Writing — this mock is a diagnostic, not PowerPrep. Independent — not ETS material.",
+    keywords: [
+      "gre anki deck",
+      "gre flashcards",
+      "gre practice test",
+      "gre verbal practice",
+      "gre quant practice",
+      "free gre practice questions",
+    ],
+    intro:
+      "Graduate applicants who want a free timed Verbal+Quant baseline before PowerPrep — then a planned ownable 350-card .apkg for section repair. Free AnkiWeb vocab megas still win on word count; UniPrep is the diagnostic + planned V+Q deck path.",
   },
   "bench-energy-metal-trader-anki-deck": {
     title: "Best Metal Trader Anki | 202 LME Desk Cards",

@@ -353,7 +353,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A free 60-question Series 7 readiness diagnostic built from UniPrep2Go deck content, with FINRA job-function weighted scoring, answer review, and a linked Anki deck repair plan.",
     examBody: "FINRA",
-    lastUpdated: "2026-07-16",
+    lastUpdated: "2026-09-03",
   },
   {
     slug: "series-63-readiness-check",
@@ -552,12 +552,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Modeled on the ServSafe Manager exam outline: 90 questions, 120 minutes, pass score 75%.",
+      "Modeled on the ServSafe Manager exam: 90 questions (80 scored + 10 unscored pilot), 120 minutes. Prep pass target 75% per Examinee Handbook — verify current rules at servsafe.com.",
     disclaimer: servSafeDisclaimer,
     description:
       "A timed 90-question ServSafe Manager mock with topic-weighted scoring, full question review, and a pass/no-pass readiness verdict aligned to the official exam format.",
     examBody: "ServSafe / National Restaurant Association",
-    lastUpdated: "2026-06-02",
+    lastUpdated: "2026-09-03",
   },
   {
     slug: "ptcb-pharmacy-technician-mock",
@@ -815,7 +815,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A 30-question GRE General readiness diagnostic scored on the two official MCQ axes — Verbal Reasoning and Quantitative Reasoning — with pacing feedback and full answer review. Independent prep aligned to ETS section types.",
     examBody: "ETS",
-    lastUpdated: "2026-07-16",
+    lastUpdated: "2026-09-03",
     questionSourceNote:
       "Original UniPrep2Go questions authored for the GRE General readiness check (175 Verbal + 175 Quant in the Anki bank; 30-question timed session).",
     ankiDeckCardCount: 350,

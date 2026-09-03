@@ -793,8 +793,8 @@ const rawDecks: Deck[] = [
     shortName: "Series 7",
     subtitle: "A focused Anki deck for FINRA Series 7 Top-Off active recall.",
     directAnswer:
-      "UniPrep2Go sells an independent Series 7 Anki deck with 300 high-yield cards covering FINRA's Series 7 job-function outline: seeking business, opening accounts, investment products, recommendations, suitability, records, order handling, confirmations, settlement, and trade processing. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck is a supplementary active-recall study aid for Series 7 candidates and is not official FINRA material.",
-    lastUpdated: "2026-05-31",
+      "UniPrep2Go sells an independent Series 7 Anki deck with 300 high-yield cards covering FINRA's Series 7 job-function outline: seeking business, opening accounts, investment products, recommendations, suitability, records, order handling, confirmations, settlement, and trade processing. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. Pair it with the free 60-question / 90-minute Series 7 readiness check (official Top-Off is 125 scored / 3h45 / ~72%). The deck is a supplementary active-recall study aid for Series 7 candidates and is not official FINRA material.",
+    lastUpdated: "2026-09-03",
     audience: "Series 7 candidates sponsored by a FINRA member firm, new financial advisors, registered representative trainees, and SIE passers who want focused spaced-repetition review.",
     format: ".apkg",
     coverImage: "/covers/series-7-anki-deck.webp",
@@ -850,6 +850,11 @@ const rawDecks: Deck[] = [
       {
         question: "Is this official FINRA material?",
         answer: "No. This is an independent study aid and is not affiliated with, endorsed by, or sponsored by FINRA.",
+      },
+      {
+        question: "Is there a free Series 7 practice test?",
+        answer:
+          "Yes. UniPrep2Go hosts a free 60-question / 90-minute Series 7 readiness check with job-function scoring at /mock-exams/series-7-readiness-check. Official FINRA Series 7 is 125 questions / 3 hours 45 minutes / about 72% pass — our mock is a shorter diagnostic before you drill this 300-card deck.",
       },
       {
         question: "Does the deck replace Series 7 practice questions?",
@@ -3289,8 +3294,8 @@ const rawDecks: Deck[] = [
     shortName: "GRE",
     subtitle: "A planned spaced-repetition deck for GRE Verbal Reasoning and Quantitative Reasoning.",
     directAnswer:
-      "The GRE General Anki Deck is a planned UniPrep2Go product with 350 flashcards across Verbal and Quantitative Reasoning. It is not yet available for purchase. Take the free GRE readiness check to benchmark both scored sections first.",
-    lastUpdated: "2026-07-16",
+      "The GRE General Anki Deck is a planned UniPrep2Go product with 350 flashcards across Verbal and Quantitative Reasoning (175 each). It is not yet available for purchase. Take the free 30-question / 45-minute GRE readiness check first (both Verbal and Quant axes required). Official shorter GRE is about 1 hour 58 minutes with 27 Verbal + 27 Quant plus Analytical Writing — our mock is a diagnostic baseline, not PowerPrep.",
+    lastUpdated: "2026-09-03",
     audience:
       "Graduate school applicants preparing for the ETS GRE General Test using spaced repetition alongside PowerPrep.",
     format: ".apkg",
@@ -4310,8 +4315,8 @@ const rawDecks: Deck[] = [
     shortName: "ServSafe Manager",
     subtitle: "A focused Anki deck for ServSafe Manager food safety review.",
     directAnswer:
-      "UniPrep2Go sells an independent ServSafe Manager Anki deck with 300 high-yield food safety flashcards covering foodborne illness, time and temperature control, cross-contamination, personal hygiene, cleaning and sanitizing, receiving and storage, HACCP basics, and manager responsibilities. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck is a supplementary active-recall study aid and is not official ServSafe or National Restaurant Association material.",
-    lastUpdated: "2026-06-02",
+      "UniPrep2Go sells an independent ServSafe Manager Anki deck with 300 high-yield food safety flashcards covering foodborne illness, time and temperature control, cross-contamination, personal hygiene, cleaning and sanitizing, receiving and storage, HACCP basics, and manager responsibilities. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. Pair it with the free 90-question / 120-minute ServSafe Manager mock (official form: 80 scored + 10 pilot / 2 hours; Examinee Handbook cites 75% pass). The deck is a supplementary active-recall study aid and is not official ServSafe or National Restaurant Association material.",
+    lastUpdated: "2026-09-03",
     audience:
       "Restaurant managers, food handlers moving into supervisor roles, hospitality students, and ServSafe Manager candidates who want spaced-repetition review instead of rereading notes.",
     format: ".apkg",
@@ -4373,6 +4378,11 @@ const rawDecks: Deck[] = [
         question: "Is this official ServSafe material?",
         answer:
           "No. This is an independent study aid and is not affiliated with, endorsed by, or sponsored by ServSafe or the National Restaurant Association.",
+      },
+      {
+        question: "Is there a free ServSafe Manager practice test?",
+        answer:
+          "Yes. UniPrep2Go hosts a free 90-question / 120-minute ServSafe Manager mock with topic scoring at /mock-exams/servsafe-manager-mock. Official exam is 90 questions (80 scored + 10 pilot) in 2 hours; the Examinee Handbook cites 75% pass — verify at servsafe.com.",
       },
       {
         question: "Does this replace the official course or exam practice?",

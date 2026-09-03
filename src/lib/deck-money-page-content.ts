@@ -23,7 +23,11 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "german-a2-anki-deck":
     "2,000 German A2–B1 cards for Goethe, telc, ÖSD, and DTZ — the shared lexicon residence and Einbürgerung pathways reuse.",
   "series-7-anki-deck":
-    "300 Top-Off cards for suitability, products, and order flow — plus a free 60-question Series 7 mock.",
+    "300 Top-Off cards for suitability, products, and order flow — plus a free 60-question Series 7 mock (official exam is 125Q / 3h45 / ~72%).",
+  "servsafe-manager-anki-deck":
+    "300 food-safety cards for TCS temps, HACCP, hygiene, and manager duties — plus a free 90-question ServSafe mock (official 80 scored + 10 pilot / 2h / handbook 75%).",
+  "gre-anki-deck":
+    "Planned 350 Verbal + Quant cards for the shorter GRE — free 30-question / 45-minute readiness check is live now (both axes required). Not a Magoosh/Manhattan vocab mega.",
   "ptcb-pharmacy-technician-anki-deck":
     "300 PTCE cards for top-200 drugs, sig codes, and pharmacy math — pairs with the 2026 printable study guide PDF.",
   "luxembourg-vivre-ensemble-anki-deck":
@@ -86,7 +90,11 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "sie-exam-anki-deck":
     "FINRA weights drive the deck: capital markets, products and risks, trading, customer accounts, and prohibited activities. Start with the free 25-question quick diagnostic (~35 min) to find weak domains, or run the full 75-question / 105-minute mock before you schedule the real exam.",
   "series-7-anki-deck":
-    "Job-function outline coverage: suitability, options strategies, margin, municipal rules, and trade processing. Pair 15–20 cards per day with the free Top-Off mock to catch weak suitability and products chapters early.",
+    "Job-function outline coverage: suitability, options strategies, margin, municipal rules, and trade processing. Official Top-Off is 125 scored / 3h45 / ~72% — pair 15–20 cards/day with the free 60Q diagnostic to catch weak suitability and products chapters early. Ownable $29 .apkg vs mega free 125Q banks when you want spaced repair after SIE.",
+  "servsafe-manager-anki-deck":
+    "Temperature danger zones, HACCP steps, Big 6 pathogens, and manager responsibilities as short recall prompts. Official exam is 90Q (80 scored + 10 pilot) / 2 hours; Examinee Handbook cites 75% pass. Run the free 90-question mock first — it maps to the domains in the coverage table — then ownable $19 .apkg instead of a Brainscape subscription.",
+  "gre-anki-deck":
+    "Planned 350-card V+Q Anki (175/175) for shorter GRE section skills — not a 1,000-word free AnkiWeb vocab dump. Free 30-question timed diagnostic (15 Verbal + 15 Quant, both axes required) is live; Analytical Writing stays on PowerPrep. Prefer ETS PowerPrep for adaptive format, UniPrep for a no-signup baseline.",
   "ptcb-pharmacy-technician-anki-deck":
     "Front-load brand/generic pairs, sig abbreviations, DEA schedules, DSCSA, and days-supply math — aligned to the January 2026 PTCE blueprint. Pair with the printable study guide for domain chapters and an 80-question practice exam; drill 10–15 cards per shift on your phone.",
   "ace-cpt-anki-deck":
@@ -117,8 +125,6 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Planned Anki for Czech citizenship reálie (zkouška z českých reálií) themes: state & rights, history/geography/EU, society, and public services. Free 60Q diagnostic live now; official exam is 30Q/30min/60% from the NPI pool. Language B1 is a separate sitting; permanent residence usually needs A2 language, not this civics deck.",
   "bms-building-automation-anki-deck":
     "BACnet objects/services/BBMD, HVAC sequences, operator alarms/trends/schedules, and commissioning checkout — the same four domains as the free 60-question timed check. Ownable .apkg for controls techs; not Tridium Niagara 4 TCP material and not a CertifBus 10-question tease.",
-  "servsafe-manager-anki-deck":
-    "Temperature danger zones, HACCP steps, Big 6 pathogens, and manager responsibilities appear as short recall prompts. Run the free 90-question ServSafe mock first — it maps directly to the domains in the coverage table.",
   "california-real-estate-exam-anki-deck":
     "400 California DRE-only cards — agency, disclosure timelines, financing math — plus a free 60-question timed mock. Official salesperson sitting is 150Q (75+75) / 3h15 / 70% both portions; our mock is a shorter diagnostic, not a 1,500-question course dump.",
   "bench-energy-metal-trader-anki-deck":
@@ -185,8 +191,10 @@ export const positioningOverrides: Partial<
       "300 cards mapped to FINRA Series 7 Top-Off job functions",
       "Suitability, options, bonds, margin, and settlement recall",
       "Free 60-question Series 7 practice test with topic breakdown",
-      "Weighted to Top-Off outline — not a generic securities dump",
+      "Official Top-Off is 125Q / 3h45 / ~72% — our mock is a shorter diagnostic, not a FreeFellow-scale bank",
     ],
+    summaryProse:
+      "Full-length free 125Q banks win on volume. UniPrep wins when you want a free timed 60Q job-function diagnostic plus an ownable $29 / 300-card .apkg for daily suitability and products repair after SIE — not another browser-only Q dump.",
   },
   "ptcb-pharmacy-technician-anki-deck": {
     ourEdge: [
@@ -331,10 +339,22 @@ export const positioningOverrides: Partial<
   "servsafe-manager-anki-deck": {
     ourEdge: [
       "300 cards: time/temperature, HACCP, hygiene, allergens, manager duties",
-      "Matches ServSafe Manager / CFPM domain structure",
-      "Free 90-question ServSafe practice test online",
-      "Pairs with printable PDF study guide in the catalog",
+      "Free 90-question / 120-minute ServSafe practice test online",
+      "Honest: official 80 scored + 10 pilot; Examinee Handbook 75% pass",
+      "Ownable $19 .apkg + optional PDF guide — not a Brainscape subscription",
     ],
+    summaryProse:
+      "Free 25Q teaser banks and Brainscape packs own volume. UniPrep wins when you want a free full-length 90Q timed mock plus an ownable 300-card .apkg for TCS temps and HACCP repair — verify pass rules at servsafe.com.",
+  },
+  "gre-anki-deck": {
+    ourEdge: [
+      "Planned 350 Verbal + Quant cards (175/175) from the same bank themes as the mock",
+      "Free 30-question / 45-minute timed diagnostic — both axes required",
+      "Honest: shorter GRE is ~1h58 / 27V+27Q + Writing; Writing not in this MCQ check",
+      "Not a free Magoosh/Manhattan AnkiWeb vocab mega — section diagnostic first",
+    ],
+    summaryProse:
+      "Free AnkiWeb vocab decks win on word count. UniPrep wins when you want a free timed Verbal+Quant diagnostic with both axes required, then a planned ownable V+Q .apkg — use PowerPrep for adaptive format and Writing.",
   },
   "california-real-estate-exam-anki-deck": {
     ourEdge: [
@@ -1095,13 +1115,47 @@ New entrants confuse IPO vs secondary offerings, margin account rules, and when 
 
 Top-Off coverage: seeking business and opening accounts, investment products (equity, debt, options, funds), recommendations and suitability, order handling, confirmations, settlement, and regulatory records. Options cards include spreads, straddles, and margin requirements. Municipal securities and MSRB rules have dedicated prompts.
 
+Official FINRA Series 7 Top-Off is **125 scored questions / 3 hours 45 minutes / ~72% pass**. Our free mock is a **60-question / 90-minute** job-function diagnostic — not a full-length 125Q bank like Mastery/TakeZero/FreeFellow.
+
 ### Study plan with the free mock
 
-Run the free 60-question Series 7 practice test after one pass through products and suitability cards. Use topic scores to decide whether options or municipal chapters need a second week. Aim for 20 cards/day while working full time — the deck is sized for that cadence, not 100-card marathon sessions.
+Run the [free 60-question Series 7 practice test](/mock-exams/series-7-readiness-check) after one pass through products and suitability cards. Use topic scores to decide whether options or municipal chapters need a second week. Aim for 20 cards/day while working full time — the deck is sized for that cadence, not 100-card marathon sessions.
 
 ### Pitfalls this deck targets
 
 Representatives mix suitability standards for elderly clients, options exercise vs assignment, and when a principal must approve a trade. Cards isolate those rule boundaries.`,
+
+  "servsafe-manager-anki-deck": `### What is inside
+
+Food safety manager prompts: TCS temperature danger zone (41°F–135°F), cooking temperatures for poultry and ground meat, HACCP principles, hand-washing sequence, cross-contamination controls, Big 6 pathogens, and manager verification duties. Cards mirror ServSafe Manager domain language.
+
+Official exam is **90 questions (80 scored + 10 unscored pilot) / 2 hours**. The ServSafe Examinee Handbook states a **75%** passing score — some FAQ pages historically cite 70% (56 of 80); verify at servsafe.com. Our free mock matches the 90Q / 120 min / 75% prep target.
+
+### Plan with the free 90-question mock
+
+Read manager book chapters once, then 20 cards/day. Take the [free ServSafe Manager mock](/mock-exams/servsafe-manager-mock) two weeks before your proctored exam — focus review on domains scoring under 75%. Final three days: temperature and HACCP cards only. Optional companion: printable [ServSafe Manager study guide](/decks/servsafe-manager-complete-study-guide).
+
+### Pitfalls this deck targets
+
+Managers confuse cleaning vs sanitizing steps, cooling time limits, and when to exclude ill employees. Cards use the exact temperature thresholds ServSafe tests.`,
+
+  "gre-anki-deck": `### What is inside
+
+Planned **350** flashcards — **175 Verbal** (Text Completion, Sentence Equivalence, Reading Comprehension judgment) and **175 Quantitative** (arithmetic, algebra, geometry, data analysis) — built from the same bank themes as the free readiness check. This is section-skill recall, not a 1,000-word free AnkiWeb vocab mega (Magoosh/Manhattan shared decks still win on raw vocab volume).
+
+### Plan with the free GRE mock
+
+**Start:** Take the [free 30-question GRE readiness check](/mock-exams/gre-readiness-check) (15 Verbal + 15 Quant / 45 minutes; both axes must clear the readiness bar). **Then:** Use ETS PowerPrep for adaptive timing and Analytical Writing. **When the Anki ships:** 15–20 cards/day on the weaker section only.
+
+Official shorter GRE is about **1 hour 58 minutes** with **27 Verbal + 27 Quant** plus Writing (0–6). Our mock is a shorter diagnostic — Writing is not included.
+
+### Pitfalls this deck targets (when live)
+
+Candidates treat a vocab mega as enough for Quant, skip Sentence Equivalence synonym pairs, or confuse our 30Q check with PowerPrep. Cards (when shipped) force section decisions under spaced recall.
+
+### What this does not replace
+
+ETS PowerPrep, official practice books, or tutoring. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not ETS material.`,
 
   "ptcb-pharmacy-technician-anki-deck": `### What is inside
 
@@ -1264,18 +1318,6 @@ Candidates treat a longer free diagnostic as the official 30/30/60% form, confus
 ### What this does not replace
 
 MV ČR / NPI registration, the official databank/model test, or the B1 language exam. Anki is planned on UniPrep — not a live Gumroad SKU yet. Independent prep — not MV ČR material.`,
-
-  "servsafe-manager-anki-deck": `### What is inside
-
-Food safety manager prompts: TCS temperature danger zone (41°F–135°F), cooking temperatures for poultry and ground meat, HACCP principles, hand-washing sequence, cross-contamination controls, Big 6 pathogens, and manager verification duties. Cards mirror ServSafe Manager domain language.
-
-### Plan with the free 90-question mock
-
-Read manager book chapters once, then 20 cards/day. Take the free ServSafe mock two weeks before your proctored exam — focus review on domains scoring under 75%. Final three days: temperature and HACCP cards only.
-
-### Pitfalls this deck targets
-
-Managers confuse cleaning vs sanitizing steps, cooling time limits, and when to exclude ill employees. Cards use the exact temperature thresholds ServSafe tests.`,
 
   "frm-part-1-anki-deck": `### What is inside
 

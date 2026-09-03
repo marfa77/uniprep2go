@@ -851,18 +851,23 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     exam_facts: {
       exam_name: "ServSafe Food Protection Manager Certification Examination",
       administered_by: "National Restaurant Association (ServSafe program)",
-      question_count: "90 multiple-choice",
-      scored_count: "90",
+      question_count: "90 multiple-choice (80 scored + 10 unscored pilot)",
+      scored_count: "80",
       time_limit: "2 hours",
-      passing_score: "75%",
+      passing_score:
+        "Examinee Handbook: 75% or better — verify current requirements at servsafe.com (some FAQ pages historically cite 70% / 56 of 80 scored)",
       delivery: "Computer-based at approved test providers or online proctoring (where available)",
-      verify_at_url: "https://www.servsafe.com",
+      verify_at_url: "https://www.servsafe.com/ServSafe-Manager/Get-Certified",
     },
     official_sources: [
       { label: "ServSafe Manager certification", url: "https://www.servsafe.com/ServSafe-Manager" },
       {
-        label: "ServSafe Manager exam facts (NRA)",
+        label: "ServSafe Manager Get Certified",
         url: "https://www.servsafe.com/ServSafe-Manager/Get-Certified",
+      },
+      {
+        label: "ServSafe Examinee Handbook (PDF)",
+        url: "https://www.servsafe.com/ServSafe/media/ServSafe/Documents/SSFS-Examinee-Handbook.pdf",
       },
     ],
     domain_weights: [
@@ -887,11 +892,11 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the ServSafe Manager exam?",
-        a: "90 multiple-choice questions in 2 hours.",
+        a: "90 multiple-choice in 2 hours — 80 scored operational items plus 10 unscored pilot items mixed through the form.",
       },
       {
         q: "What score do you need to pass ServSafe Manager?",
-        a: "75% — verify current requirements at servsafe.com before scheduling.",
+        a: "The ServSafe Examinee Handbook states 75% or better. Some ServSafe FAQ pages historically cite 70% (56 of 80 scored) — verify the current standard at servsafe.com before scheduling.",
       },
       {
         q: "What is the food temperature danger zone?",

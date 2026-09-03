@@ -45,6 +45,9 @@ Do **not** re-run WebSearch SERP or rewrite cites if `last_pass` is &lt; 60 days
 | spanish-italian-paired-anki-deck | language planned (no mock) | 2026-08-30 | 2026-10-29 | Deck-only: dual-audio Prep2Go 940+ vs AnkiWeb IT↔ES |
 | czech-citizenship-anki-deck + czech-citizenship-readiness-check | citizenship pair (Anki planned) | 2026-08-31 | 2026-10-30 | Yahoo CZ Learn start; free 60Q/45m vs NPI 30/30/60% + OpenExamPrep; money-page + exam-facts + official cestina-pro-cizince cites |
 | ace-cpt-anki-deck + ace-cpt-readiness-check | wave pair | 2026-08-13 | 2026-10-12 | Already paired: $11/300 + free 60Q |
+| series-7-anki-deck + series-7-readiness-check | finance pair | 2026-09-03 | 2026-11-02 | Pulse+Threads traffic; free 60Q vs Mastery/TakeZero/FreeFellow 125Q banks; $29/300 Anki CTA; official 125/3h45/~72% honesty |
+| gre-anki-deck + gre-readiness-check | academic pair (Anki planned) | 2026-09-03 | 2026-11-02 | Free 30Q V+Q both-axes vs PowerPrep/AnkiWeb vocab megas; planned 350-card Anki; Writing not in mock |
+| servsafe-manager-anki-deck + servsafe-manager-mock | professional pair | 2026-09-03 | 2026-11-02 | Free 90Q + $19/300 vs Brainscape/servsafepractice teasers; exam-facts 80+10; handbook 75% honesty |
 
 Homepage `/` is a hub — not a SKU row.
 

@@ -674,7 +674,7 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
   },
   "servsafe-manager-mock": {
     certifier: "ServSafe / National Restaurant Association",
-    verifyAtUrl: "https://www.servsafe.com/ServSafe-Manager",
+    verifyAtUrl: "https://www.servsafe.com/ServSafe-Manager/Get-Certified",
   },
   "toefl-ibt-readiness-check": {
     certifier: "ETS",

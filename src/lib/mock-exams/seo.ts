@@ -125,17 +125,18 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "servsafe-manager-mock": {
     title: "Free ServSafe Manager Practice Test 2026 | 90-Question Mock Exam",
     description:
-      "Take a free ServSafe Manager practice test online: 90 timed questions, 120 minutes, 75% pass target, food safety topic scoring, answer explanations, and pass/no-pass report. Independent CFPM-style mock — not official ServSafe material.",
+      "Free ServSafe Manager practice test — no signup: 90 timed questions, 120 minutes, 75% pass target, food-safety topic scoring — then repair with the linked $19 / 300-card Anki deck. Official form is 90Q (80 scored + 10 pilot) / 2 hours; Examinee Handbook cites 75% pass. Independent — not NRA/ServSafe material.",
     keywords: [
       "servsafe manager practice test",
       "servsafe manager mock exam",
       "free servsafe practice test",
       "certified food protection manager practice test",
       "servsafe manager exam questions",
+      "servsafe anki",
     ],
     headline: "Free ServSafe Manager Practice Test",
     intro:
-      "A full-length ServSafe Manager mock exam aligned to the common 90-question / 120-minute / 75% pass format. Topics include foodborne illness, time and temperature control, hygiene, cleaning and sanitizing, receiving and storage, HACCP, and manager responsibilities.",
+      "A full-length ServSafe Manager / CFPM-style mock: 90 questions, 120 minutes, 75% pass target with topic scoring — then drill weak domains in the linked $19 / 300-card Anki deck (PDF study guide sold separately). Official exam is 90 multiple-choice (80 scored + 10 unscored pilot) in 2 hours; the ServSafe Examinee Handbook states a 75% passing score — verify current rules at servsafe.com. Topics: foodborne illness, time/temperature, hygiene, cleaning/sanitizing, receiving/storage, HACCP, and manager duties.",
     audience:
       "Restaurant managers, kitchen supervisors, hospitality students, and CFPM candidates who need a timed food safety baseline before exam day.",
     practiceTestLabel: "ServSafe Manager practice test",
@@ -198,17 +199,18 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "series-7-readiness-check": {
     title: "Series 7 Practice Test 2026 | Free 60Q Timed Online",
     description:
-      "Free Series 7 practice test — no signup: 60 timed questions across FINRA job-function weights, 90 minutes, 72% target, topic scoring, and full answer review. Independent Series 7 prep — not official FINRA material.",
+      "Free Series 7 practice test — no signup: 60 timed questions across FINRA job-function weights, 90 minutes, 72% target, topic scoring — then repair with the linked $29 / 300-card Anki deck. Official Top-Off is 125Q / 3h45 / ~72%; this check is shorter. Independent — not FINRA material.",
     keywords: [
       "series 7 practice test",
       "free series 7 practice test",
       "series 7 mock exam",
       "free series 7 questions",
       "finra series 7 readiness check",
+      "series 7 anki",
     ],
     headline: "Free Series 7 Practice Test — 60 Questions",
     intro:
-      "A Series 7 practice test built from UniPrep2Go deck content across seeking business, opening accounts, recommendations and suitability, and obtaining customer instructions. Timed diagnostic with topic scoring — no signup.",
+      "A timed Series 7 Top-Off diagnostic across seeking business, opening accounts, recommendations and suitability, and obtaining customer instructions — then drill weak job functions in the linked $29 / 300-card Anki deck. Official FINRA Series 7 is 125 scored questions / 3 hours 45 minutes / ~72% pass; this free check is a shorter weighted diagnostic, not a full-length 125Q bank.",
     audience: "Series 7 Top-Off candidates who want a timed diagnostic before drilling suitability and product questions.",
     practiceTestLabel: "Series 7 practice test",
   },
@@ -432,7 +434,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "gre-readiness-check": {
     title: "Free GRE Practice Test | 30-Question Mock",
     description:
-      "Free GRE General practice questions online: 30 timed questions across Verbal Reasoning and Quantitative Reasoning, 45 minutes, 70% readiness target with both section axes required, and full answer review. Independent GRE prep — not ETS material.",
+      "Free GRE General practice — no signup: 30 timed questions (15 Verbal + 15 Quant), 45 minutes, both sections must clear 70% readiness — then waitlist for the planned 350-card Anki. Official shorter GRE is ~1h58 with 27V+27Q; this check is a diagnostic, not PowerPrep. Independent — not ETS material.",
     keywords: [
       "gre practice test",
       "gre mock exam",
@@ -440,10 +442,11 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "gre readiness check",
       "gre verbal practice",
       "gre quant practice test",
+      "gre anki",
     ],
     headline: "Free GRE General Readiness Check",
     intro:
-      "A timed GRE General readiness diagnostic scored on the two official ETS MCQ axes — Verbal Reasoning and Quantitative Reasoning (130–170 each). Both sections must clear the readiness bar for a pass. Analytical Writing is not included in this MCQ check.",
+      "A timed GRE General diagnostic scored on the two official ETS MCQ axes — Verbal Reasoning and Quantitative Reasoning (130–170 each). Both sections must clear the readiness bar for a pass. Official shorter GRE (~1 hour 58 minutes) is 27 Verbal + 27 Quant plus Analytical Writing; this free check is a 30-question baseline (Writing not included), not an adaptive PowerPrep form. Planned 350-card Anki (175V/175Q) for daily repair after the report.",
     audience:
       "Graduate and business school applicants who want a baseline timed diagnostic before official ETS PowerPrep or tutoring.",
     practiceTestLabel: "GRE practice test",
