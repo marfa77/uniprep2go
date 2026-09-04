@@ -27,7 +27,7 @@ const gumroad = {
 const proofPoints = [
   "13 .mdc rules with DO + ANTI-PATTERNS + WHY",
   "6 agent workflows (idea→spec, MVP weekend, SEO clusters, debug loop)",
-  "From shipped repos: Barakhlo ingest, UniPrep2Go GEO, PixID Gumroad stack",
+  "From shipped repos: UniPrep2Go GEO, PixID Gumroad stack, marketplace ingest",
   "Free preview: ai-collaboration.mdc (alwaysApply rule)",
   "Launch code SHIP30 = 30% off Pro and Basic",
   "Independent product — not affiliated with Cursor Inc.",

@@ -219,7 +219,7 @@ function CtaBand({
                   className="underline underline-offset-2"
                   href={link.href}
                   rel={
-                    /(?:^|\.)(prep2go\.study|emigro\.online|barakhlo\.online|uniprep2go\.study|pixid\.studio|webmorp\.art)$/i.test(
+                    /(?:^|\.)(prep2go\.study|emigro\.online|uniprep2go\.study|pixid\.studio|webmorp\.art)$/i.test(
                       (() => {
                         try {
                           return new URL(link.href).hostname;

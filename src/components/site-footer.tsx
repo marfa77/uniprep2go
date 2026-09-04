@@ -124,15 +124,6 @@ export function SiteFooter() {
             <span aria-hidden>·</span>
             <a
               className="underline decoration-[#18140f]/15 underline-offset-2 transition hover:text-[#4f493e]"
-              href="https://www.barakhlo.online/"
-              rel="noopener"
-              target="_blank"
-            >
-              Barakhlo
-            </a>
-            <span aria-hidden>·</span>
-            <a
-              className="underline decoration-[#18140f]/15 underline-offset-2 transition hover:text-[#4f493e]"
               href="https://www.emigro.online/ru/role-radar?utm_source=uniprep2go&utm_medium=footer&utm_campaign=role_radar"
               rel="noopener"
               target="_blank"
