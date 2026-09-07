@@ -960,16 +960,31 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "cosmetology-state-readiness-check": explainer({
     practiceTestName: "Cosmetology Practice Test",
     whatIsExam:
-      "State cosmetology written exams (often NIC or state-specific) are required for cosmetology licensure. They cover infection control, hair care, chemical services, and state rules. A practical/skills exam is usually separate.",
-    administeredBy: "State cosmetology boards (often NIC written exams)",
+      "State cosmetology written exams often use the NIC National Cosmetology Theory Examination (110 items / 90 minutes on the NIC CIB; 100 scored). Domains: Scientific Concepts 35%, Hair Care & Services 45%, Skin Care 10%, Nail Care 10%. A practical/skills exam is usually separate — verify your state Candidate Information Bulletin.",
+    administeredBy: "State cosmetology boards (often NIC written exams via PSI or another vendor)",
     examFaqs: [
       {
         question: "What is the cosmetology licensing exam?",
         answer:
           "Most states require a written theory exam and a practical exam before issuing a cosmetology license after school hours are complete.",
       },
+      {
+        question: "How many questions are on the NIC Cosmetology Theory exam?",
+        answer:
+          "The NIC Cosmetology Theory CIB lists 110 items (100 scored + 10 pretest) in 90 minutes. Some state CIBs allot 120 minutes — verify your board. UniPrep2Go’s free check is a shorter 60-question / 75-minute diagnostic.",
+      },
+      {
+        question: "Is this the esthetician or nail exam?",
+        answer:
+          "No. This readiness check targets cosmetology theory (hair + skin + nails). Esthetician-only and manicurist-only pathways have separate exams.",
+      },
     ],
-    keywords: ["cosmetology practice test", "cosmetology state board practice exam"],
+    keywords: [
+      "cosmetology practice test",
+      "cosmetology state board practice exam",
+      "nic cosmetology practice test",
+      "free cosmetology practice test",
+    ],
   }),
   "esthetician-state-readiness-check": explainer({
     practiceTestName: "Esthetician Practice Test",

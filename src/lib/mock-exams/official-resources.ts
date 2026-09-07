@@ -687,6 +687,20 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
       },
     ],
   },
+  "cosmetology-state-readiness-check": {
+    certifier: "NIC / state cosmetology boards (often PSI delivery)",
+    verifyAtUrl: "https://nictesting.org/",
+    sources: [
+      {
+        label: "NIC — Candidate Information Bulletins",
+        url: "https://nictesting.org/",
+      },
+      {
+        label: "NIC Cosmetology Theory CIB (Eff. 7/1/2022)",
+        url: "https://nictesting.org/wp-content/uploads/formidable/3/NIC_Cosmetology-Theory_ENG_CIB_Eff.-7.1.2022-1.pdf",
+      },
+    ],
+  },
   "ptcb-pharmacy-technician-mock": {
     certifier: "Pharmacy Technician Certification Board (PTCB)",
     verifyAtUrl: "https://ptcb.org/credentials/certification/certified-pharmacy-technician/",

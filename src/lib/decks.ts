@@ -1449,6 +1449,11 @@ const rawDecks: Deck[] = [
           "European Portuguese (PT-PT) for CAPLE CIPLE. Brazilian Portuguese word lists are a poor fit for CIPLE and Portuguese nationality language checks.",
       },
       {
+        question: "I am Brazilian and need IELTS or TOEFL English — is this the right deck?",
+        answer:
+          "No. This is CIPLE / CAPLE European Portuguese for Portuguese nationality language evidence. For IELTS, TOEFL, Cambridge, or PTE with Brazilian Portuguese (PT-BR) glosses, use the IELTS / TOEFL English for Brazilian Portuguese Speakers Anki deck at /decks/ielts-toefl-english-for-portuguese-speakers-anki-deck.",
+      },
+      {
         question: "Is this the same as Portugal nacionalidade civics?",
         answer:
           "No. This deck is CIPLE / CAPLE A2 language vocabulary for residency and citizenship language evidence. Portugal nacionalidade civic knowledge is a separate track — take the free Portugal Nacionalidade readiness check and join the planned civics Anki waitlist for that.",
@@ -1746,8 +1751,8 @@ const rawDecks: Deck[] = [
     shortName: "Danish Prøve i Dansk PD2 PD3",
     subtitle: "1,000 Danish flashcards for Prøve i Dansk PD2 / PD3 and Danish residence or citizenship language prep.",
     directAnswer:
-      "UniPrep2Go sells a Danish Prøve i Dansk Anki deck with 1,000 exam-specific vocabulary cards for PD2 and PD3 pathways (officially around CEFR B1 / B1+, not A2/PD1), audio, and practical example sentences for work, housing, services, and everyday life in Denmark — including language prep tied to permanent residence and citizenship requirements. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
-    lastUpdated: "2026-08-13",
+      "UniPrep2Go sells a Danish Prøve i Dansk Anki deck with 1,000 exam-specific vocabulary cards for PD2 and PD3 pathways (officially around CEFR B1 / B1+, not A2/PD1), audio, and practical example sentences for work, housing, services, and everyday life in Denmark — including language prep tied to permanent residence and citizenship requirements. Prefer this full $26 Gumroad .apkg over the free Prep2Go AnkiWeb LITE 100 when you need pathway coverage; it is lexicon repair, not a timed listening/writing substitute for official sample papers. Delivered as an Anki .apkg through Gumroad by PixID Studio.",
+    lastUpdated: "2026-09-07",
     audience: "Prøve i Dansk PD2 / PD3 learners and applicants using Danish for residence or citizenship language requirements.",
     format: ".apkg",
     coverImage: "/covers/danish-a2-prove-i-dansk-anki-deck.webp",
@@ -2660,6 +2665,11 @@ const rawDecks: Deck[] = [
           "Latin American Spanish glosses and examples (LatAm). It is English vocabulary prep for Spanish speakers, not a DELE Spanish exam deck.",
       },
       {
+        question: "Is this the Brazilian Portuguese (PT-BR) English deck?",
+        answer:
+          "No. This edition uses Latin American Spanish glosses. Brazilians preparing IELTS/TOEFL with PT-BR glosses and cognate traps (atual ≠ actual) need /decks/ielts-toefl-english-for-portuguese-speakers-anki-deck — a separate product, not a demonym swap of this page.",
+      },
+      {
         question: "What does the deck include?",
         answer:
           "2,504 English vocabulary cards from the Prep2Go app: LatAm Spanish glosses, bilingual examples, native English audio, and illustrations.",
@@ -2680,10 +2690,10 @@ const rawDecks: Deck[] = [
     subtitle:
       "2,504 English flashcards for Brazilians on IELTS, TOEFL, Cambridge, and PTE — PT-BR glosses, audio, and cognate traps (atual ≠ actual).",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English Anki deck for Brazilian Portuguese speakers: 2,504 high-frequency English vocabulary cards with PT-BR glosses, bilingual examples, native English audio, and illustrations. Built for Brazilians targeting IELTS (including common Canada / UK / Australia pathways), TOEFL iBT, Cambridge, and PTE — English-first recall so false friends like atual/actual and pretender/pretend stop costing Reading points. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio. Not CIPLE / CAPLE European Portuguese.",
-    lastUpdated: "2026-08-25",
+      "UniPrep2Go sells an IELTS / TOEFL English Anki deck for Brazilian Portuguese (PT-BR) speakers: 2,504 high-frequency English vocabulary cards with PT-BR glosses, bilingual examples, native English audio, and illustrations. Built for Brazilians targeting IELTS Academic or General (Canada Express Entry / SDS, Australia, UKVI), TOEFL iBT (U.S. graduate), Cambridge, and PTE — English-first recall so false friends like atual/actual and pretender/pretend stop costing Reading points. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio. What this is not: CIPLE / CAPLE European Portuguese, Celpe-Bras, ENEM English drills, a timed mock exam, or a LatAm-Spanish-gloss sibling pack.",
+    lastUpdated: "2026-09-06",
     audience:
-      "Brazilian Portuguese speakers preparing IELTS, TOEFL, Cambridge, or PTE who want Anki vocabulary with PT-BR support — not a CIPLE European Portuguese deck.",
+      "Brazilian Portuguese speakers preparing IELTS, TOEFL, Cambridge, or PTE who want Anki vocabulary with PT-BR support — not CIPLE, not Celpe-Bras, not ENEM English.",
     format: ".apkg",
     coverImage: "/covers/ielts-toefl-english-for-portuguese-speakers-anki-deck-v2.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/ielts-toefl-english-for-portuguese-speakers-anki-deck?wanted=true",
@@ -2703,27 +2713,27 @@ const rawDecks: Deck[] = [
       {
         question: "Which English exams does this deck support?",
         answer:
-          "IELTS Academic and General Training word knowledge, TOEFL iBT, Cambridge English exams, and PTE Academic — one shared high-frequency English bank with Brazilian Portuguese (PT-BR) support. Pair Anki with official practice tests for each exam's Listening/Speaking format.",
+          "IELTS Academic and General Training word knowledge, TOEFL iBT, Cambridge English (B2 First / C1 Advanced-style lexis), and PTE Academic — one shared high-frequency English bank with Brazilian Portuguese (PT-BR) support. Pair Anki with official British Council / IDP / ETS / Cambridge / Pearson practice for each exam's Listening and Speaking format.",
       },
       {
         question: "Does this help Canada Express Entry, Australia, UKVI, or U.S. TOEFL pathways?",
         answer:
-          "Yes as shared exam English vocabulary used across IELTS sittings common for IRCC / Australia / UKVI and across TOEFL for U.S. graduate admissions. Confirm the exact test version and score band your case needs — this deck trains word knowledge, not each board's timed paper.",
+          "Yes as shared exam English vocabulary used across IELTS sittings common for IRCC / SDS / Australia / UKVI and across TOEFL for U.S. graduate admissions. Confirm the exact test version and score band your case needs — this deck trains word knowledge, not each board's timed paper or visa checklist.",
       },
       {
-        question: "Is this Brazilian or European Portuguese?",
+        question: "Is this Brazilian or European Portuguese? Is it CIPLE or Celpe-Bras?",
         answer:
-          "Brazilian Portuguese (PT-BR) glosses and examples only. If you need European Portuguese for CIPLE / CAPLE / Portuguese nationality, use the separate CIPLE Anki deck — this product is English for Brazilians.",
+          "Brazilian Portuguese (PT-BR) glosses only — on an English vocabulary deck. It is not CIPLE / CAPLE European Portuguese for Portuguese nationality, and it is not Celpe-Bras (Portuguese proficiency for non-native speakers). If you need PT-PT for CIPLE, use the separate CIPLE Anki deck.",
       },
       {
-        question: "How does this beat free AnkiWeb Inglês–Português decks?",
+        question: "Is this the same as ENEM English or free AnkiWeb Inglês–Português decks?",
         answer:
-          "Most free PT–EN shared decks are tourist phrases, phrasal-verb dumps, or undated frequency lists. This is a 2,504-card Prep2Go exam bank with IELTS/TOEFL framing, PT-BR glosses, English audio, and cognate-trap study notes on the product page — instant Gumroad .apkg at list price.",
+          "No. ENEM English reading is a Brazilian high-school exam skill set; free AnkiWeb PT–EN dumps are usually tourist phrases or undated frequency lists. This is a 2,504-card Prep2Go IELTS/TOEFL-framed bank with PT-BR glosses, English audio, and cognate-trap notes — instant Gumroad .apkg at list price.",
       },
       {
         question: "What does the deck include?",
         answer:
-          "2,504 English vocabulary cards from the Prep2Go app: Brazilian Portuguese glosses, bilingual examples, native English audio, and illustrations.",
+          "2,504 English vocabulary cards from the Prep2Go app: Brazilian Portuguese glosses, bilingual examples, native English audio, and illustrations where included.",
       },
       {
         question: "What file format is delivered?",
@@ -5016,6 +5026,17 @@ export const RELATED_DECK_PEER_GROUPS: string[][] = [
   ["luxembourg-vivre-ensemble-anki-deck", "swiss-citizenship-anki-deck", "citizenship-naturalization-anki-bundle"],
   ["ptcb-pharmacy-technician-anki-deck", "ptcb-study-guide-2026"],
   ["cfa-level-1-anki-deck", "cfa-level-1-formula-reference-2026", "cfa-level-2-anki-deck"],
+  // English-for-* family — cross-link siblings so Google sees distinct gloss editions (PT was crawled-not-indexed as near-dupe).
+  [
+    "ielts-toefl-english-for-portuguese-speakers-anki-deck",
+    "ielts-toefl-english-for-spanish-speakers-anki-deck",
+    "ielts-toefl-english-for-russian-speakers-anki-deck",
+    "ielts-toefl-english-for-ukrainian-speakers-anki-deck",
+    "ielts-toefl-english-for-french-speakers-anki-deck",
+    "ielts-toefl-english-for-arabic-speakers-anki-deck",
+  ],
+  // CIPLE (PT-PT nationality) ↔ English-for-Brazilians (IELTS/TOEFL) — wrong-product pair.
+  ["ciple-a2-european-portuguese-anki-deck", "ielts-toefl-english-for-portuguese-speakers-anki-deck"],
 ];
 
 export function getRelatedDecks(deck: Pick<Deck, "slug" | "category">, limit = 4): Deck[] {

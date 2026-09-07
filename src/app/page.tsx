@@ -217,6 +217,7 @@ const popularDeckBoostLinks = [
   { href: "/decks/cfa-level-2-formula-reference-2026", label: "CFA L2 formulas" },
   { href: "/decks/citizenship-naturalization-anki-bundle", label: "Citizenship bundle" },
   { href: "/decks/life-and-health-insurance-exam-anki-deck", label: "Life & Health" },
+  { href: "/decks/ielts-toefl-english-for-portuguese-speakers-anki-deck", label: "English for Brazilians" },
   { href: "/decks/pmp-anki-deck", label: "PMP" },
   { href: "/decks/cfp-certification-anki-deck", label: "CFP" },
   { href: "/decks/enrolled-agent-anki-deck", label: "Enrolled Agent" },

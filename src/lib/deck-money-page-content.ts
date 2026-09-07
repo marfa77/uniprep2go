@@ -76,8 +76,12 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "Planned SHIP Medicare counseling Anki. Take the free 60Q diagnostic now — no national published Q-count; verify your state SHIP/OCCT path.",
   "czech-citizenship-anki-deck":
     "Planned Czech reálie Anki. Free 60Q / 45 min diagnostic live now — official zkouška z reálií is 30Q / 30 min / 60% from the NPI ~300-item pool.",
+  "danish-a2-prove-i-dansk-anki-deck":
+    "1,000 Danish PD2/PD3 cards with audio (≈ B1/B1+, not PD1/A2) — residence/citizenship language framing vs free AnkiWeb LITE 100.",
   "nha-cbcs-anki-deck":
     "Planned 60-card NHA CBCS Anki (coding, claims, HIPAA, revenue cycle). Free 60Q / 75 min diagnostic live now — official CBCS is 100+25 / 3h / scaled 390. ≠ AAPC CPC.",
+  "cosmetology-state-anki-deck":
+    "Planned 60-card NIC-style cosmetology theory Anki. Free 60Q / 75 min diagnostic live now — official NIC theory is typically 110 (100 scored) / 90 min; state CIBs vary.",
   "bms-building-automation-anki-deck":
     "200+ BACnet / HVAC-sequence / alarms-trends-schedules / commissioning cards plus a free 60-question timed BMS diagnostic. No single federal BMS license — Niagara 4 TCP is a vendor course, not this mock.",
 }
@@ -125,8 +129,12 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Planned SHIP Medicare counseling cards for Parts A/B/C/D themes, rights/appeals, fraud awareness, and counseling standards. The free 60-question diagnostic is live; there is no public national Q-count — verify your state SHIP/OCCT path. Not a state SHIP certificate.",
   "czech-citizenship-anki-deck":
     "Planned Anki for Czech citizenship reálie (zkouška z českých reálií) themes: state & rights, history/geography/EU, society, and public services. Free 60Q diagnostic live now; official exam is 30Q/30min/60% from the NPI pool. Language B1 is a separate sitting; permanent residence usually needs A2 language, not this civics deck.",
+  "danish-a2-prove-i-dansk-anki-deck":
+    "1,000 Danish vocabulary cards with audio for Prøve i Dansk PD2 / PD3 (≈ CEFR B1 / B1+, not A2/PD1) plus residence and citizenship language themes. Ownable $26 .apkg — prefer over the free Prep2Go AnkiWeb LITE 100 when you need full pathway coverage; not a timed listening/writing substitute for official sample papers on danskogproever.dk.",
   "nha-cbcs-anki-deck":
     "Planned NHA CBCS spaced-repetition deck for ICD/CPT coding judgment, claims/reimbursement, HIPAA/compliance, and revenue-cycle front office. Free 60-question / 75-minute readiness check is live; official CBCS is 100 scored + 25 pretest / 3 hours / scaled 390. Not AAPC CPC and not NHA CCMA.",
+  "cosmetology-state-anki-deck":
+    "Planned NIC-style cosmetology theory Anki for scientific concepts & safety, hair services, skin & nails, and salon/infection-control themes. Free 60-question / 75-minute readiness check is live; NIC Cosmetology Theory is typically 110 items (100 scored) / 90 minutes — verify your state CIB. Theory only — practical exam is separate.",
   "bms-building-automation-anki-deck":
     "BACnet objects/services/BBMD, HVAC sequences, operator alarms/trends/schedules, and commissioning checkout — the same four domains as the free 60-question timed check. Ownable .apkg for controls techs; not Tridium Niagara 4 TCP material and not a CertifBus 10-question tease.",
   "california-real-estate-exam-anki-deck":
@@ -349,6 +357,26 @@ export const positioningOverrides: Partial<
     ],
     summaryProse:
       "NHA’s paid practice tests and MedPreps/OpenExamPrep free banks win on volume. UniPrep wins when you want a free timed 60Q diagnostic with topic scoring plus a planned ownable Anki waitlist — not a full-length 125-item NHA substitute.",
+  },
+  "cosmetology-state-anki-deck": {
+    ourEdge: [
+      "Planned 60-card NIC-style cosmetology theory Anki",
+      "Free 60Q / 75 min timed diagnostic live now",
+      "Honest: NIC Theory typically 110 items (100 scored) / 90 min; state CIBs vary",
+      "Theory only — practical/skills exam is separate",
+    ],
+    summaryProse:
+      "SalonExam and AnkiWeb 300+ dumps win on volume. UniPrep wins when you want a free timed 60Q NIC-style diagnostic plus a planned ownable Anki waitlist — not a full 110-item substitute and not the practical exam.",
+  },
+  "danish-a2-prove-i-dansk-anki-deck": {
+    ourEdge: [
+      "$26 / 1000 Danish cards with native audio for PD2 / PD3 themes",
+      "Honest: ≈ CEFR B1 / B1+ — not PD1 / A2 tourist packs",
+      "Residence + citizenship language framing on Gumroad",
+      "Prefer over free Prep2Go AnkiWeb LITE 100 when you need full pathway coverage",
+    ],
+    summaryProse:
+      "Free AnkiWeb LITE 100 and OpenExamPrep PD2 task drills own volume or format practice. UniPrep wins when you want an ownable $26 / 1000-card .apkg with audio for PD2/PD3 + residence language — not a timed listening/writing substitute for danskogproever.dk samples.",
   },
   "servsafe-manager-anki-deck": {
     ourEdge: [
@@ -732,21 +760,39 @@ CELI + CILS + PLIDA multi-certificate framing with explicit permesso / cittadina
 
   "danish-a2-prove-i-dansk-anki-deck": `### Which Danish pathways this deck targets
 
-**Prøve i Dansk** modules (**PD2** / **PD3** and related tracks) plus everyday Danish used for **permanent residence** and **citizenship** language requirements. Exact module names and score rules change — always confirm your required level with official Danish authorities before you book.
+**Prøve i Dansk PD2 / PD3** (officially around CEFR **B1 / B1+** — **not** PD1 / A2 tourist packs) plus everyday Danish used for **permanent residence** and **citizenship** language requirements. Exact module names and score rules change — always confirm your required level with official Danish authorities (SIRI / danskogproever.dk) before you book.
 
 Cards focus high-frequency Danish with audio for work, housing, services, and daily interaction.
 
 ### Study plan
 
-20 cards/day with audio for six to eight weeks. Keep oral exam practice separate from Anki. Record yourself reading example sentences twice a week — Danish oral modules punish silent vocabulary study.
+20 cards/day with audio for six to eight weeks. Keep oral exam practice separate from Anki. Record yourself reading example sentences twice a week — Danish oral modules punish silent vocabulary study. Use official sample papers on [danskogproever.dk](https://danskogproever.dk) for listening/writing format; this deck is lexicon repair.
 
 ### Pitfalls this deck targets
 
-Candidates under-train listening discrimination, skip particle/verb combinations, and study tourist phrases instead of bureaucracy and workplace words. Audio-first review is built into the card format on this page’s samples.
+Candidates under-train listening discrimination, confuse **PD1/A2** with **PD2/PD3**, skip particle/verb combinations, and study tourist phrases instead of bureaucracy and workplace words. The free Prep2Go AnkiWeb **LITE 100** is a starter only — this Gumroad edition is the full **1000**-card pathway bank.
 
 ### What makes this Gumroad edition different
 
-PD2 / PD3 + residence/citizenship pathway copy — not a generic Danish tourist deck.`,
+PD2 / PD3 + residence/citizenship pathway copy with audio — not a generic Danish tourist deck and not Indfødsretsprøven civics (separate free mock on UniPrep).`,
+
+  "cosmetology-state-anki-deck": `### What is inside
+
+Planned **60** flashcards across scientific concepts & safety, hair care & services, skin & nail services, and salon/infection-control themes — the same four topic buckets as the free readiness check. Mapped to NIC Cosmetology Theory study themes (Hair is the heaviest official domain at 45%).
+
+### Plan with the free cosmetology mock (live now)
+
+**Start:** Take the [free 60-question Cosmetology Theory readiness check](/mock-exams/cosmetology-state-readiness-check) (75 minutes / 70% diagnostic). **Then:** Drill weak rows with your school notes / Milady or Pivot Point references. **When Anki ships:** 15–20 cards/day on the weakest topic only.
+
+Official NIC Cosmetology Theory CIB: **110 items (100 scored + 10 pretest) / 90 minutes** (some state CIBs allot **120 minutes**); pass cuts are state-specific (often ~70–75%). Our mock is a shorter diagnostic — not a full 110Q form. **Practical/skills exams are separate.**
+
+### Pitfalls this deck targets (when live)
+
+Candidates treat a 60Q free check as the full NIC form, skip infection-control under Scientific Concepts, or confuse cosmetology theory with esthetician-only / nail-only exams.
+
+### What this does not replace
+
+Your state Candidate Information Bulletin, school hours, or the practical exam. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not NIC/PSI material.`,
 
   "norwegian-a2-norskprove-anki-deck": `### Which Norwegian pathways this deck targets
 

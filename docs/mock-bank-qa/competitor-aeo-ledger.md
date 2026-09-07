@@ -49,6 +49,8 @@ Do **not** re-run WebSearch SERP or rewrite cites if `last_pass` is &lt; 60 days
 | gre-anki-deck + gre-readiness-check | academic pair (Anki planned) | 2026-09-03 | 2026-11-02 | Free 30Q V+Q both-axes vs PowerPrep/AnkiWeb vocab megas; planned 350-card Anki; Writing not in mock |
 | servsafe-manager-anki-deck + servsafe-manager-mock | professional pair | 2026-09-03 | 2026-11-02 | Free 90Q + $19/300 vs Brainscape/servsafepractice teasers; exam-facts 80+10; handbook 75% honesty |
 | nha-cbcs-anki-deck + nha-cbcs-readiness-check | wave pair (Anki planned) | 2026-09-07 | 2026-11-06 | DuckDuckGo US start; free 60Q vs MedPreps/OpenExamPrep volume; official 100+25/3h/390; ≠ AAPC CPC; Anki waitlist |
+| cosmetology-state-anki-deck + cosmetology-state-readiness-check | wave pair (Anki planned) | 2026-09-07 | 2026-11-06 | Pulse deck views; free 60Q vs SalonExam/AnkiWeb 300+; NIC Theory 110/90m honesty; practical separate |
+| danish-a2-prove-i-dansk-anki-deck | language (no mock) | 2026-09-07 | 2026-11-06 | Pulse views; $26/1000 audio PD2/PD3 (B1+) vs AnkiWeb LITE 100; ≠ PD1/A2; ≠ Indfødsretsprøven |
 
 Homepage `/` is a hub — not a SKU row.
 

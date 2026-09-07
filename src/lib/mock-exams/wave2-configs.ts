@@ -108,10 +108,13 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "skin-nails", label: "Skin & nail services" },
       { id: "laws-salon", label: "Laws, infection control & salon" },
     ]),
-    officialSourceNote: "NIC-style theory themes. State boards vary. Not a PSI/NIC exam.",
-    description: "Free 60-question cosmetology theory readiness check (NIC-style).",
+    officialSourceNote:
+      "NIC Cosmetology Theory themes (scientific concepts, hair, skin/nails). Official NIC form is typically 110 items (100 scored) / 90 minutes — this check is a shorter diagnostic. State CIBs and pass scores vary. Not a PSI/NIC exam.",
+    description:
+      "Free 60-question cosmetology theory readiness check (NIC-style) — then join the planned Anki waitlist for spaced repair.",
     examBody: "NIC / PSI / state board",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
+    lastUpdated: "2026-09-07",
   }),
   nicheReadinessConfig({
     slug: "nclex-pn-readiness-check",

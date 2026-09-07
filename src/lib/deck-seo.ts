@@ -208,16 +208,17 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Danish Prøve i Dansk PD2 PD3 Prep — 1000 Flashcards",
     studyLabel: "Danish Prøve i Dansk PD2 PD3 exam prep",
     description:
-      "Danish Anki deck with 1000 flashcards for Prøve i Dansk PD2 / PD3 (≈ CEFR B1 / B1+, not A2) and residence or citizenship language prep. Audio and examples. Independent study aid — not official Danish exam material.",
+      "Danish Anki deck with 1000 flashcards for Prøve i Dansk PD2 / PD3 (≈ CEFR B1 / B1+, not A2/PD1) and residence or citizenship language prep. Audio and examples. Prefer over free AnkiWeb LITE 100. Independent — not official Danish exam material.",
     keywords: [
       "prove i dansk anki",
       "pd2 danish flashcards",
       "pd3 prove i dansk",
       "danish citizenship vocabulary",
       "danish b1 vocabulary anki",
+      "prove i dansk 2 anki",
     ],
     intro:
-      "Prøve i Dansk PD2 / PD3 learners (≈ B1 / B1+) and residence or citizenship applicants drill everyday Danish vocabulary on a daily Anki schedule — this is not a PD1/A2 tourist pack.",
+      "Prøve i Dansk PD2 / PD3 learners (≈ B1 / B1+) and residence or citizenship applicants drill everyday Danish vocabulary on a daily Anki schedule — this is not a PD1/A2 tourist pack or the free LITE 100.",
   },
   "norwegian-a2-norskprove-anki-deck": {
     title: "Norwegian Norskprøve Residence Citizenship Anki | 1500 Cards",
@@ -1043,6 +1044,23 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     ],
     intro:
       "Billing and coding candidates who want a free timed CBCS diagnostic before NHA’s paid practice tests — then a planned 60-card .apkg for spaced repair. Not AAPC CPC and not a 125-item NHA substitute.",
+  },
+  "cosmetology-state-anki-deck": {
+    title: "Cosmetology Anki | Planned 60 Cards + Free Mock",
+    headline: "Cosmetology Theory Prep — Planned Cards + Free 60Q Test",
+    studyLabel: "cosmetology state board exam prep",
+    description:
+      "Planned cosmetology theory Anki for NIC-style state board prep — infection control, hair services, skin & nails — plus a free 60-question timed practice test. NIC Theory is typically 110Q / 90 min; practical is separate. Independent — not NIC/PSI material.",
+    keywords: [
+      "cosmetology anki",
+      "cosmetology flashcards",
+      "cosmetology practice test",
+      "nic cosmetology study guide",
+      "state board cosmetology practice",
+      "free cosmetology practice test",
+    ],
+    intro:
+      "Cosmetology students who want a free timed NIC-style theory diagnostic before a full-length Q-bank — then a planned 60-card .apkg for spaced repair. Theory only; verify your state CIB for time and pass score.",
   },
   "bench-energy-metal-trader-anki-deck": {
     title: "Best Metal Trader Anki | 202 LME Desk Cards",

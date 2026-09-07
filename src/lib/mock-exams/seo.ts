@@ -528,6 +528,25 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "Medical billing and coding students and revenue-cycle staff preparing for NHA CBCS who want a timed baseline before NHA’s paid practice tests or official study guide.",
     practiceTestLabel: "NHA CBCS practice test",
   },
+  "cosmetology-state-readiness-check": {
+    title: "Free Cosmetology Practice Test 2026 | 60Q NIC Theory Mock",
+    description:
+      "Free cosmetology state-board practice test — no signup: 60 timed questions, 75 minutes, 70% readiness target — then waitlist for the planned 60-card Anki. NIC Cosmetology Theory is typically 110 items (100 scored) / 90 minutes; state CIBs vary. Independent — not NIC/PSI material.",
+    keywords: [
+      "cosmetology practice test",
+      "free cosmetology practice test",
+      "cosmetology state board practice exam",
+      "nic cosmetology practice test",
+      "cosmetology theory practice test",
+      "cosmetology anki",
+    ],
+    headline: "Free Cosmetology Theory Practice Test — 60 Questions",
+    intro:
+      "A timed NIC-style cosmetology theory diagnostic across scientific concepts & safety, hair care & services, skin & nails, and salon/infection-control themes — then join the planned 60-card Anki waitlist. Official NIC Cosmetology Theory CIB: 110 items (100 scored + 10 pretest) / 90 minutes (some states 120 minutes); pass cuts are state-specific (~70–75% common). This free check is a shorter diagnostic — not a full 110Q form and not the practical exam.",
+    audience:
+      "Cosmetology students and recent graduates preparing for the written state-board / NIC theory exam who want a timed baseline before a full-length Q-bank.",
+    practiceTestLabel: "Cosmetology practice test",
+  },
   "leed-green-associate-readiness-check": {
     title: "Free LEED Green Associate Practice Test | 50-Question Readiness Check",
     description:

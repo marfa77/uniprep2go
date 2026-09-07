@@ -3055,6 +3055,72 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "NHA® and CBCS® are trademarks of the National Healthcareer Association. UniPrep2Go is not affiliated with or endorsed by NHA.",
   },
+  "nic-cosmetology-theory": {
+    examKey: "nic-cosmetology-theory",
+    pageHeading: "NIC Cosmetology Theory Exam — Facts, Domains & Prep",
+    intro:
+      "Many U.S. states use the NIC National Cosmetology Theory Examination (often delivered via PSI or another vendor) for written licensure. This page summarizes the public NIC Cosmetology Theory CIB; UniPrep2Go products are independent prep (not NIC/PSI or state-board material). Practical/skills exams are usually separate — verify your state Candidate Information Bulletin.",
+    exam_facts: {
+      exam_name: "NIC National Cosmetology Theory Examination",
+      administered_by: "National-Interstate Council of State Boards of Cosmetology (NIC); delivery often via PSI or state vendor",
+      question_count: "110 items (100 scored + 10 pretest)",
+      scored_count: "100",
+      time_limit: "90 minutes (NIC CIB) — some state CIBs allot 120 minutes; verify your board",
+      passing_score:
+        "Set by the state board / testing vendor (commonly about 70–75% of scored items) — verify your CIB",
+      delivery: "Computer-based at approved testing centers (vendor varies by state)",
+      outline_effective_date: "NIC Cosmetology Theory CIB effective 7/1/2022 (verify current bulletin before testing)",
+      verify_at_url: "https://nictesting.org/",
+    },
+    official_sources: [
+      {
+        label: "NIC — Candidate Information Bulletins",
+        url: "https://nictesting.org/",
+      },
+      {
+        label: "NIC Cosmetology Theory CIB (Eff. 7/1/2022) — 110 items / 90 minutes",
+        url: "https://nictesting.org/wp-content/uploads/formidable/3/NIC_Cosmetology-Theory_ENG_CIB_Eff.-7.1.2022-1.pdf",
+      },
+    ],
+    domain_weights: [
+      { domain: "1. Scientific Concepts", weight: "35%" },
+      { domain: "2. Hair Care and Services", weight: "45%" },
+      { domain: "3. Skin Care and Services", weight: "10%" },
+      { domain: "4. Nail Care and Services", weight: "10%" },
+    ],
+    whats_changed: [
+      "NIC Cosmetology Theory CIB (Eff. 7/1/2022) lists 110 items with 100 scored in 90 minutes — some state PSI bulletins use 120 minutes; always download your state’s CIB.",
+      "Pass cut scores are state-specific (often ~70–75%); do not treat a third-party blog percentage as official.",
+      "Practical/skills exams remain separate in most pathways — this UniPrep mock is theory-only.",
+    ],
+    high_yield_facts: [
+      "NIC Cosmetology Theory is 110 items: 100 scored + 10 pretest; only scored items count.",
+      "Hair Care and Services is the heaviest domain (45%); Skin and Nails are 10% each.",
+      "Infection control and safety practices sit under Scientific Concepts — not a fifth top-level NIC domain.",
+      "UniPrep2Go’s free check is a shorter 60-question / 75-minute diagnostic — not a full 110-item NIC form.",
+      "This is not the esthetician-only or manicurist-only theory exam.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the NIC Cosmetology Theory exam?",
+        a: "The NIC Cosmetology Theory CIB lists 110 items (100 scored + 10 pretest) in 90 minutes. Confirm time and pass rules in your state’s Candidate Information Bulletin.",
+      },
+      {
+        q: "What score do you need to pass?",
+        a: "Pass scores are set by the state board / testing vendor — commonly around 70–75% of scored items. Verify your CIB before exam day.",
+      },
+      {
+        q: "Is the practical exam included?",
+        a: "No. NIC Cosmetology Theory is the written exam. Most states also require a separate practical/skills exam — confirm with your board.",
+      },
+      {
+        q: "Is UniPrep2Go’s cosmetology readiness check the official NIC exam?",
+        a: "No. The free 60-question / 75-minute check is an independent diagnostic. The matching Anki deck is planned (waitlist). Not NIC, PSI, or state-board material.",
+      },
+    ],
+    trademark_note:
+      "NIC® and National-Interstate Council of State Boards of Cosmetology marks belong to NIC. UniPrep2Go is not affiliated with or endorsed by NIC or PSI.",
+  },
 };
 
 /** Deck slug → shared exam profile key. Language decks are omitted intentionally. */
@@ -3103,6 +3169,7 @@ const deckExamKeyMap: Record<string, string> = {
   "finland-kansalaisuuskoe-anki-deck": "finland-kansalaisuuskoe",
   "nha-cpct-anki-deck": "nha-cpct",
   "nha-cbcs-anki-deck": "nha-cbcs",
+  "cosmetology-state-anki-deck": "nic-cosmetology-theory",
   "us-citizenship-test-prep2go-app": "us-citizenship",
   "leben-in-deutschland-prep2go-app": "leben-in-deutschland",
   "naturalisation-francaise-prep2go-app": "naturalisation-francaise",
