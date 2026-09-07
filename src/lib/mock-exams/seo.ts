@@ -509,6 +509,25 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "Patient care technician students and working aides preparing for NHA CPCT/A at a school site, PSI, or live remote proctoring — not CCMA or phlebotomy-only candidates.",
     practiceTestLabel: "NHA CPCT practice test",
   },
+  "nha-cbcs-readiness-check": {
+    title: "Free NHA CBCS Practice Test 2026 | 60-Question Billing & Coding Mock",
+    description:
+      "Free NHA CBCS practice test — no signup: 60 timed questions, 75 minutes, 70% readiness target, topic scoring — then waitlist for the planned 60-card Anki. Official CBCS is 100 scored + 25 pretest / 3 hours / scaled 390. Independent — not NHA material. Not AAPC CPC.",
+    keywords: [
+      "nha cbcs practice test",
+      "free nha cbcs practice test",
+      "billing and coding practice test",
+      "cbcs practice exam",
+      "nha billing coding mock",
+      "nha cbcs anki",
+    ],
+    headline: "Free NHA CBCS Practice Test — 60 Questions",
+    intro:
+      "A timed NHA Certified Billing and Coding Specialist diagnostic across coding guidelines, claims/reimbursement, compliance/HIPAA, and revenue-cycle themes — then join the planned 60-card Anki waitlist for spaced repair. Official CBCS test plan: 100 scored + 25 pretest (125 total) / 3 hours / scaled pass 390. This free check is a shorter 60Q / 75 min diagnostic — not a full-length NHA form and not AAPC CPC.",
+    audience:
+      "Medical billing and coding students and revenue-cycle staff preparing for NHA CBCS who want a timed baseline before NHA’s paid practice tests or official study guide.",
+    practiceTestLabel: "NHA CBCS practice test",
+  },
   "leed-green-associate-readiness-check": {
     title: "Free LEED Green Associate Practice Test | 50-Question Readiness Check",
     description:

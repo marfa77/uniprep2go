@@ -668,6 +668,25 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
       },
     ],
   },
+  "nha-cbcs-readiness-check": {
+    certifier: "National Healthcareer Association (NHA) — CBCS",
+    verifyAtUrl:
+      "https://www.nhanow.com/certification/nha-certifications/medical-billing-and-coding-specialist-(cbcs)",
+    sources: [
+      {
+        label: "NHA — CBCS certification",
+        url: "https://www.nhanow.com/certification/nha-certifications/medical-billing-and-coding-specialist-(cbcs)",
+      },
+      {
+        label: "NHA CBCS Test Plan (100 scored / 25 pretest / 3 hours)",
+        url: "https://www.nhanow.com/docs/default-source/test-plans/2021-nha-certified-billing-and-coding-specialist-(cbcs)-test-plan-10-08.pdf",
+      },
+      {
+        label: "NHA Candidate Handbook",
+        url: "https://www.nhanow.com/docs/default-source/test-plans/candidate_handbook.pdf",
+      },
+    ],
+  },
   "ptcb-pharmacy-technician-mock": {
     certifier: "Pharmacy Technician Certification Board (PTCB)",
     verifyAtUrl: "https://ptcb.org/credentials/certification/certified-pharmacy-technician/",

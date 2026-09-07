@@ -482,21 +482,21 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "ielts-toefl-english-for-portuguese-speakers-anki-deck": {
-    title: "IELTS TOEFL Anki for Brazilian Portuguese Speakers | 2504 Cards",
+    title: "IELTS / TOEFL Anki for Brazilians (PT-BR) | 2504 Cards · Not CIPLE",
     headline: "IELTS / TOEFL English for Brazilian Portuguese Speakers — 2504 Cards",
-    studyLabel: "IELTS TOEFL English Anki for Brazilian Portuguese (PT-BR)",
+    studyLabel: "IELTS TOEFL English Anki for Brazilians (PT-BR glosses)",
     description:
-      "2,504 English Anki flashcards for Brazilians on IELTS, TOEFL, Cambridge & PTE: PT-BR glosses, audio, false-friend traps (atual≠actual). Not CIPLE. $26 .apkg — independent study aid.",
+      "2,504 English Anki cards for Brazilians: IELTS/TOEFL/Cambridge/PTE, PT-BR glosses, atual≠actual traps. Not CIPLE · not Celpe-Bras · not tourist AnkiWeb. $26.",
     keywords: [
-      "english for portuguese speakers anki",
-      "english for brazilian portuguese speakers",
-      "ielts vocabulary portuguese speakers",
+      "english for brazilian portuguese speakers anki",
+      "ielts vocabulary for brazilians",
       "toefl vocabulary brazilian portuguese",
-      "anki ingles para brasileiros ielts",
-      "ielts toefl flashcards portuguese",
+      "anki ingles para brasileiros ielts toefl",
+      "english false friends portuguese anki",
+      "ielts toefl flashcards pt-br",
     ],
     intro:
-      "Brazilians preparing IELTS or TOEFL drill 2,504 high-frequency English words with PT-BR glosses and native audio — English-first recall so cognate traps (atual/actual, pretender/pretend) stop costing Reading points.",
+      "Brazilians targeting IELTS, TOEFL iBT, Cambridge, or PTE drill 2,504 exam-frequency English words with PT-BR glosses and native audio — English-first recall so cognate traps (atual/actual, pretender/pretend) stop costing Reading points. Not CIPLE European Portuguese and not Celpe-Bras.",
   },
 
   "delf-prim-printable-french-flashcards": {
@@ -1026,6 +1026,23 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     ],
     intro:
       "Graduate applicants who want a free timed Verbal+Quant baseline before PowerPrep — then a planned ownable 350-card .apkg for section repair. Free AnkiWeb vocab megas still win on word count; UniPrep is the diagnostic + planned V+Q deck path.",
+  },
+  "nha-cbcs-anki-deck": {
+    title: "NHA CBCS Anki | Planned 60 Cards + Free Mock",
+    headline: "NHA CBCS Prep — Planned Cards + Free 60Q Practice Test",
+    studyLabel: "NHA CBCS exam prep",
+    description:
+      "Planned NHA CBCS Anki for billing and coding specialist prep — coding guidelines, claims, HIPAA, revenue cycle — plus a free 60-question timed practice test. Official CBCS is 100+25 / 3h / scaled 390. Not AAPC CPC. Independent — not NHA material.",
+    keywords: [
+      "nha cbcs anki",
+      "billing and coding flashcards",
+      "nha cbcs practice test",
+      "cbcs study guide",
+      "medical billing anki",
+      "free nha cbcs practice test",
+    ],
+    intro:
+      "Billing and coding candidates who want a free timed CBCS diagnostic before NHA’s paid practice tests — then a planned 60-card .apkg for spaced repair. Not AAPC CPC and not a 125-item NHA substitute.",
   },
   "bench-energy-metal-trader-anki-deck": {
     title: "Best Metal Trader Anki | 202 LME Desk Cards",

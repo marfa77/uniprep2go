@@ -470,16 +470,31 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "nha-cbcs-readiness-check": explainer({
     practiceTestName: "NHA CBCS Practice Test",
     whatIsExam:
-      "The NHA Certified Billing and Coding Specialist (CBCS) exam covers medical billing, coding basics, claims, and reimbursement workflows for outpatient billing roles.",
+      "The NHA Certified Billing and Coding Specialist (CBCS) exam covers medical billing, coding guidelines, insurance eligibility, claims, and reimbursement for outpatient billing roles. Official public test plan: 100 scored + 25 pretest items / 3 hours / scaled pass 390.",
     administeredBy: "National Healthcareer Association (NHA)",
     examFaqs: [
       {
         question: "What is the NHA CBCS exam?",
         answer:
-          "CBCS is NHA’s billing and coding specialist certification for candidates who submit and manage medical claims.",
+          "CBCS is NHA’s billing and coding specialist certification for candidates who submit and manage medical claims. It is not AAPC CPC and not NHA CCMA.",
+      },
+      {
+        question: "How many questions are on the official NHA CBCS exam?",
+        answer:
+          "The public NHA CBCS test plan lists 100 scored items plus 25 pretest items (125 total) in 3 hours, with a scaled passing score of 390 (200–500 scale). UniPrep2Go’s free check is a shorter 60-question / 75-minute diagnostic.",
+      },
+      {
+        question: "Is CBCS the same as AAPC CPC?",
+        answer:
+          "No. CBCS is an NHA credential. AAPC CPC is a separate coding certification with its own outline and exam rules.",
       },
     ],
-    keywords: ["nha cbcs practice test", "billing and coding practice test"],
+    keywords: [
+      "nha cbcs practice test",
+      "billing and coding practice test",
+      "free nha cbcs practice test",
+      "cbcs mock exam",
+    ],
   }),
   "ccht-dialysis-readiness-check": explainer({
     practiceTestName: "CCHT Dialysis Practice Test",

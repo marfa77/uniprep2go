@@ -76,6 +76,8 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "Planned SHIP Medicare counseling Anki. Take the free 60Q diagnostic now — no national published Q-count; verify your state SHIP/OCCT path.",
   "czech-citizenship-anki-deck":
     "Planned Czech reálie Anki. Free 60Q / 45 min diagnostic live now — official zkouška z reálií is 30Q / 30 min / 60% from the NPI ~300-item pool.",
+  "nha-cbcs-anki-deck":
+    "Planned 60-card NHA CBCS Anki (coding, claims, HIPAA, revenue cycle). Free 60Q / 75 min diagnostic live now — official CBCS is 100+25 / 3h / scaled 390. ≠ AAPC CPC.",
   "bms-building-automation-anki-deck":
     "200+ BACnet / HVAC-sequence / alarms-trends-schedules / commissioning cards plus a free 60-question timed BMS diagnostic. No single federal BMS license — Niagara 4 TCP is a vendor course, not this mock.",
 }
@@ -123,6 +125,8 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Planned SHIP Medicare counseling cards for Parts A/B/C/D themes, rights/appeals, fraud awareness, and counseling standards. The free 60-question diagnostic is live; there is no public national Q-count — verify your state SHIP/OCCT path. Not a state SHIP certificate.",
   "czech-citizenship-anki-deck":
     "Planned Anki for Czech citizenship reálie (zkouška z českých reálií) themes: state & rights, history/geography/EU, society, and public services. Free 60Q diagnostic live now; official exam is 30Q/30min/60% from the NPI pool. Language B1 is a separate sitting; permanent residence usually needs A2 language, not this civics deck.",
+  "nha-cbcs-anki-deck":
+    "Planned NHA CBCS spaced-repetition deck for ICD/CPT coding judgment, claims/reimbursement, HIPAA/compliance, and revenue-cycle front office. Free 60-question / 75-minute readiness check is live; official CBCS is 100 scored + 25 pretest / 3 hours / scaled 390. Not AAPC CPC and not NHA CCMA.",
   "bms-building-automation-anki-deck":
     "BACnet objects/services/BBMD, HVAC sequences, operator alarms/trends/schedules, and commissioning checkout — the same four domains as the free 60-question timed check. Ownable .apkg for controls techs; not Tridium Niagara 4 TCP material and not a CertifBus 10-question tease.",
   "california-real-estate-exam-anki-deck":
@@ -335,6 +339,16 @@ export const positioningOverrides: Partial<
     ],
     summaryProse:
       "Official NPI databank and model test own exam-day format. UniPrep wins when you want a free longer timed diagnostic plus a planned Anki waitlist for spaced reálie recall — not a third-party AI dump that skips the 30/30/60% honesty.",
+  },
+  "nha-cbcs-anki-deck": {
+    ourEdge: [
+      "Planned 60-card CBCS Anki for coding, claims, HIPAA, revenue cycle",
+      "Free 60Q / 75 min timed diagnostic live now",
+      "Honest: official CBCS is 100 scored + 25 pretest / 3h / scaled 390",
+      "≠ AAPC CPC / NHA CCMA — independent prep, not NHA material",
+    ],
+    summaryProse:
+      "NHA’s paid practice tests and MedPreps/OpenExamPrep free banks win on volume. UniPrep wins when you want a free timed 60Q diagnostic with topic scoring plus a planned ownable Anki waitlist — not a full-length 125-item NHA substitute.",
   },
   "servsafe-manager-anki-deck": {
     ourEdge: [
@@ -952,19 +966,27 @@ Prep2Go app bank (2,504 cards, LatAm Spanish) with UniPrep2Go IELTS/TOEFL framin
 
   "ielts-toefl-english-for-portuguese-speakers-anki-deck": `### Who this deck is for
 
-**Brazilian Portuguese (PT-BR) speakers** preparing **IELTS**, **TOEFL iBT**, Cambridge English (B2 First / C1 Advanced), or **PTE Academic** for study abroad, skilled migration, or professional registration. Typical use cases: Canada Express Entry / SDS IELTS, Australian student or skilled visas, UK student route, U.S. graduate TOEFL, and university English thresholds in Europe. It is **English vocabulary Anki**, not a CIPLE / CAPLE European Portuguese citizenship deck and not a Celpe-Bras product.
+**Brazilian Portuguese (PT-BR) speakers** preparing **IELTS** (Academic or General Training), **TOEFL iBT**, Cambridge English (B2 First / C1 Advanced-style lexis), or **PTE Academic** for study abroad, skilled migration, or professional registration. Typical Brazil-outbound cases:
 
-### Card face (what you see every review)
+- **Canada** — Express Entry / SDS-style IELTS sittings (confirm your program’s exact IELTS or TEF/TCF rules separately)
+- **Australia** — student or skilled IELTS / PTE pathways
+- **UK** — UKVI IELTS where required for study or skilled routes
+- **United States** — graduate and professional **TOEFL iBT** score bands
+- **Europe** — university English thresholds that accept IELTS, TOEFL, Cambridge, or PTE
+
+This product is **English vocabulary Anki with PT-BR support**. It is not a CIPLE / CAPLE European Portuguese citizenship deck, not Celpe-Bras, and not an ENEM English reading course.
+
+### Card face (what Brazilians see every review)
 
 - **Front:** English headword (+ image where included)
 - **Back:** Brazilian Portuguese (PT-BR) gloss, bilingual example sentence, native English audio
-- **Drill rule:** hear English → guess meaning → only then open the PT-BR gloss
+- **Drill rule:** hear English → guess meaning in English → only then open the PT-BR gloss
 
-Free AnkiWeb dumps for “Inglês–Português” are usually tourist phrases, phrasal-verb dumps, or undated frequency lists without IELTS/TOEFL framing. This listing ships **2,504** exam-frequency cards from the Prep2Go bank as one Gumroad \`.apkg\` at **$26**.
+Free AnkiWeb dumps labelled “Inglês–Português” are usually tourist phrases, phrasal-verb dumps, or undated frequency lists without IELTS/TOEFL framing. This listing ships **2,504** exam-frequency cards from the Prep2Go bank as one Gumroad \`.apkg\` at **$26**.
 
-### PT-BR false friends that break Reading scores
+### Why Brazilians lose IELTS/TOEFL Reading points on cognates
 
-Brazilian candidates lose easy IELTS/TOEFL Reading points when they map Portuguese cognates 1:1. Drill these as English-first (examples of traps this bank helps you notice — not a closed false-friend list):
+PT-BR speakers often “understand” a passage because Portuguese lookalikes feel familiar — then choose the wrong option because the English sense differs. Drill these as English-first (examples of traps this bank helps you notice — not a closed false-friend list):
 
 | Portuguese lookalike | Wrong English guess | Exam-safe English sense |
 | --- | --- | --- |
@@ -974,29 +996,51 @@ Brazilian candidates lose easy IELTS/TOEFL Reading points when they map Portugue
 | *procurar* | “procure” (overformal) | **look for / seek** |
 | *êxito* | “exit” | **success** |
 | *relatório* | “relatory” | **report** |
+| *eventual* | “eventual” meaning “possible” | Portuguese often means **possible / potential**; English **eventual** usually means **ultimate / final** |
+| *compromisso* | “compromise” | **appointment / commitment** (compromise = acordo) |
 
 Anki forces spaced English recall so you stop translating under Listening/Reading time pressure.
 
-### Eight-week study plan (IELTS Academic or TOEFL)
+### Brazil pathway map (vocabulary only)
+
+| Goal | Typical English proof | How this deck helps |
+| --- | --- | --- |
+| Canada study / skilled | IELTS (or French TEF/TCF — separate) | Shared high-frequency Academic/General lexis |
+| Australia study / skilled | IELTS or PTE | Same bank; pair with official timed sections |
+| UK study / skilled | UKVI IELTS when required | Word knowledge only — not UKVI booking or format coaching |
+| U.S. graduate school | TOEFL iBT | Academic vocabulary overlap with IELTS Reading |
+| Portugal nationality | CIPLE / CAPLE (PT-PT) | **Wrong product** — use the CIPLE Anki instead |
+
+### Eight-week study plan (IELTS Academic or TOEFL from Brazil)
 
 | Weeks | Daily Anki | Pair with |
 | --- | --- | --- |
-| 1–5 | ~25 new cards/day + reviews | One official Listening or Reading section each weekend |
-| 6–7 | New cards taper; clear “Again” queue | Full practice test (British Council / ETS / Cambridge) |
+| 1–5 | ~25 new cards/day + reviews | One official Listening or Reading section each weekend (British Council / IDP / ETS) |
+| 6–7 | New cards taper; clear “Again” queue | Full practice test under timed conditions |
 | 8 | Reviews only | Re-learn every word you missed on the last mock |
 
-Always play English audio before reading the PT-BR gloss. If you still need Portuguese on the back after week 4, tag those cards and review them twice on weekdays.
+Always play English audio before reading the PT-BR gloss. If you still need Portuguese on the back after week 4, tag those cards and review them twice on weekdays. Do not treat ENEM English passages as a substitute for IELTS Academic Reading timing.
+
+### Pitfalls this deck targets (Brazil-specific)
+
+- Mapping every cognate 1:1 (*atual* → “actual”) under exam time pressure
+- Skipping English audio because the written word “looks like Portuguese”
+- Studying tourist Inglês–Português AnkiWeb packs instead of IELTS/TOEFL-frequency lexis
+- Buying a **CIPLE** or **Celpe-Bras** product when the real goal is IELTS/TOEFL for Canada, Australia, the UK, or the U.S.
+- Confusing this listing with the **LatAm Spanish-gloss** or **Russian-gloss** English sibling packs
 
 ### What this deck is not
 
-- Not **CIPLE A2 / CAPLE** European Portuguese (use the separate CIPLE Anki if you need PT-PT for nationality)
+- Not **CIPLE A2 / CAPLE** European Portuguese (PT-PT nationality language)
+- Not **Celpe-Bras** (Portuguese proficiency for non-native speakers)
+- Not **ENEM** English reading prep for Brazilian university entrance
 - Not **European Portuguese** glosses — this edition is **PT-BR**
-- Not a full Writing Task 2 scorer, Speaking partner, or timed mock exam
+- Not a Writing Task 2 scorer, Speaking partner, or timed mock exam
 - Not official IELTS, ETS TOEFL, Cambridge Assessment, or Pearson PTE material
 
 ### What makes this Gumroad edition different
 
-Prep2Go app bank (**2,504** cards, Brazilian Portuguese) with UniPrep2Go IELTS/TOEFL framing on Gumroad at **$26** — instant \`.apkg\`, not a Lemon-only listing, not AnkiWeb tourist packs, and not a CIPLE / CAPLE European Portuguese vocabulary deck.`,
+Prep2Go app bank (**2,504** cards, **Brazilian Portuguese** glosses) with UniPrep2Go IELTS/TOEFL framing on Gumroad at **$26** — instant \`.apkg\`, cognate-trap study notes, not a Lemon-only listing, not AnkiWeb tourist packs, not CIPLE / Celpe-Bras / ENEM, and not a demonym-swapped Spanish or Italian sibling page.`,
 
 
   "delf-prim-printable-french-flashcards": `### Who this printable is for
@@ -1318,6 +1362,24 @@ Candidates treat a longer free diagnostic as the official 30/30/60% form, confus
 ### What this does not replace
 
 MV ČR / NPI registration, the official databank/model test, or the B1 language exam. Anki is planned on UniPrep — not a live Gumroad SKU yet. Independent prep — not MV ČR material.`,
+
+  "nha-cbcs-anki-deck": `### What is inside
+
+Planned **60** flashcards across coding guidelines & ICD/CPT concepts, claims & reimbursement, compliance/HIPAA/fraud, and revenue-cycle & front office — the same four topic buckets as the free readiness check. Built for NHA CBCS spaced repair, not AAPC CPC exam dumps.
+
+### Plan with the free CBCS mock (live now)
+
+**Start:** Take the [free 60-question NHA CBCS readiness check](/mock-exams/nha-cbcs-readiness-check) (75 minutes / 70% diagnostic). **Then:** Use NHA’s official study guide / practice tests for full-length stamina. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Official CBCS test plan: **100 scored + 25 pretest (125 total) / 3 hours / scaled pass 390** (200–500). Our mock is a shorter diagnostic — not a full NHA form.
+
+### Pitfalls this deck targets (when live)
+
+Candidates confuse CBCS with AAPC CPC, treat a 60Q free check as the 125-item NHA sitting, or skip insurance-eligibility and denial/appeal workflows. Cards force billing/coding judgment under spaced recall.
+
+### What this does not replace
+
+NHA registration, Candidate Handbook policies (including coding-manual rules for your sitting), or NHA’s paid practice tests. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not NHA material.`,
 
   "frm-part-1-anki-deck": `### What is inside
 

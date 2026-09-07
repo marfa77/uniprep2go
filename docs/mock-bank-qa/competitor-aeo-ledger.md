@@ -48,6 +48,7 @@ Do **not** re-run WebSearch SERP or rewrite cites if `last_pass` is &lt; 60 days
 | series-7-anki-deck + series-7-readiness-check | finance pair | 2026-09-03 | 2026-11-02 | Pulse+Threads traffic; free 60Q vs Mastery/TakeZero/FreeFellow 125Q banks; $29/300 Anki CTA; official 125/3h45/~72% honesty |
 | gre-anki-deck + gre-readiness-check | academic pair (Anki planned) | 2026-09-03 | 2026-11-02 | Free 30Q V+Q both-axes vs PowerPrep/AnkiWeb vocab megas; planned 350-card Anki; Writing not in mock |
 | servsafe-manager-anki-deck + servsafe-manager-mock | professional pair | 2026-09-03 | 2026-11-02 | Free 90Q + $19/300 vs Brainscape/servsafepractice teasers; exam-facts 80+10; handbook 75% honesty |
+| nha-cbcs-anki-deck + nha-cbcs-readiness-check | wave pair (Anki planned) | 2026-09-07 | 2026-11-06 | DuckDuckGo US start; free 60Q vs MedPreps/OpenExamPrep volume; official 100+25/3h/390; ≠ AAPC CPC; Anki waitlist |
 
 Homepage `/` is a hub — not a SKU row.
 

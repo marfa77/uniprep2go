@@ -2982,6 +2982,79 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "NHA® and CPCT/A® are trademarks of the National Healthcareer Association. UniPrep2Go is not affiliated with or endorsed by NHA.",
   },
+  "nha-cbcs": {
+    examKey: "nha-cbcs",
+    pageHeading: "NHA CBCS Exam — Facts, Domains & Prep",
+    intro:
+      "The NHA Certified Billing and Coding Specialist (CBCS) exam certifies entry-level medical billing and coding specialists across the revenue cycle. This page summarizes the public NHA CBCS test plan; UniPrep2Go products are independent prep (not NHA exam material). CBCS is not AAPC CPC and not NHA CCMA.",
+    exam_facts: {
+      exam_name: "NHA Certified Billing and Coding Specialist (CBCS) Examination",
+      administered_by: "National Healthcareer Association (NHA)",
+      question_count: "125 items (100 scored + 25 pretest)",
+      scored_count: "100",
+      time_limit: "3 hours",
+      scoring_scale: "Scaled score 200–500 (NHA candidate handbook)",
+      passing_score: "Scaled 390 or higher (NHA handbook — verify at nhanow.com)",
+      delivery:
+        "School/program site, PSI test center, or NHA live remote proctoring (verify current options when you schedule)",
+      outline_effective_date:
+        "CBCS test plan based on 2020 job analysis (NHA PDF: 100 scored / 25 pretest / 3 hours) — verify the plan that matches your sitting",
+      verify_at_url:
+        "https://www.nhanow.com/certification/nha-certifications/medical-billing-and-coding-specialist-(cbcs)",
+    },
+    official_sources: [
+      {
+        label: "NHA — CBCS certification",
+        url: "https://www.nhanow.com/certification/nha-certifications/medical-billing-and-coding-specialist-(cbcs)",
+      },
+      {
+        label: "NHA CBCS Test Plan (100 scored / 25 pretest / 3 hours)",
+        url: "https://www.nhanow.com/docs/default-source/test-plans/2021-nha-certified-billing-and-coding-specialist-(cbcs)-test-plan-10-08.pdf",
+      },
+      {
+        label: "NHA Candidate Handbook (scaled 200–500, pass 390)",
+        url: "https://www.nhanow.com/docs/default-source/test-plans/candidate_handbook.pdf",
+      },
+    ],
+    domain_weights: [
+      { domain: "1. The Revenue Cycle and Regulatory Compliance", weight: "15 scored items (15%)" },
+      { domain: "2. Insurance Eligibility and Other Payer Requirements", weight: "20 scored items (20%)" },
+      { domain: "3. Coding and Coding Guidelines", weight: "32 scored items (32%)" },
+      { domain: "4. Billing and Reimbursement", weight: "33 scored items (33%)" },
+    ],
+    whats_changed: [
+      "Public CBCS test plan lists 100 scored + 25 pretest items in 3 hours — marketing pages may say “100-question exam.”",
+      "Coding/reference-manual policy for in-room books has changed on some sittings — verify the current Candidate Handbook addendum before exam day (do not assume older open-book rules).",
+      "Third-party sites disagree on domain labels and item counts — prefer the NHA CBCS test plan PDF over PracticeTestGeeks-style blogs.",
+    ],
+    high_yield_facts: [
+      "Official form is 125 items in 3 hours; only the 100 scored items count toward the scaled score.",
+      "NHA exams in the candidate handbook use a 200–500 scale with a passing scaled score of 390.",
+      "Billing and Reimbursement (33) and Coding and Coding Guidelines (32) are the heaviest domains.",
+      "CBCS is NHA billing/coding — not AAPC CPC, not CCS, and not NHA CCMA (clinical medical assistant).",
+      "UniPrep2Go’s free check is a shorter 60-question / 75-minute diagnostic with four topic buckets — not a full-length 125-item NHA form.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the NHA CBCS exam?",
+        a: "The public NHA CBCS test plan lists 100 scored items plus 25 pretest items (125 total) in 3 hours. Verify the plan for your sitting at nhanow.com.",
+      },
+      {
+        q: "What score do you need to pass CBCS?",
+        a: "NHA’s candidate handbook uses a 200–500 scaled score and requires 390 or higher for exams covered in that handbook. Confirm on your score-report rules at nhanow.com.",
+      },
+      {
+        q: "Is CBCS the same as AAPC CPC?",
+        a: "No. CBCS is NHA’s Certified Billing and Coding Specialist credential. AAPC CPC is a separate coding certification with its own outline, fee, and exam rules.",
+      },
+      {
+        q: "Is UniPrep2Go’s CBCS readiness check the official NHA exam?",
+        a: "No. The free 60-question / 75-minute check is an independent diagnostic. The matching Anki deck is planned (waitlist) — not a live Gumroad SKU yet. Not NHA material.",
+      },
+    ],
+    trademark_note:
+      "NHA® and CBCS® are trademarks of the National Healthcareer Association. UniPrep2Go is not affiliated with or endorsed by NHA.",
+  },
 };
 
 /** Deck slug → shared exam profile key. Language decks are omitted intentionally. */
@@ -3029,6 +3102,7 @@ const deckExamKeyMap: Record<string, string> = {
   "belgium-flanders-mo-anki-deck": "belgium-flanders-mo",
   "finland-kansalaisuuskoe-anki-deck": "finland-kansalaisuuskoe",
   "nha-cpct-anki-deck": "nha-cpct",
+  "nha-cbcs-anki-deck": "nha-cbcs",
   "us-citizenship-test-prep2go-app": "us-citizenship",
   "leben-in-deutschland-prep2go-app": "leben-in-deutschland",
   "naturalisation-francaise-prep2go-app": "naturalisation-francaise",

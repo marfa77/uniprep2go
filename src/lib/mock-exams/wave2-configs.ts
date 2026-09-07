@@ -26,11 +26,13 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "compliance-privacy", label: "Compliance, HIPAA & fraud" },
       { id: "revenue-cycle", label: "Revenue cycle & front office" },
     ]),
-    officialSourceNote: "Mapped to NHA CBCS themes. Not an NHA certification exam.",
+    officialSourceNote:
+      "Mapped to NHA CBCS themes (coding, claims, compliance, revenue cycle). Official CBCS is 100 scored + 25 pretest / 3 hours / scaled 390 — this check is a shorter diagnostic. Not an NHA certification exam.",
     description:
-      "Free 60-question NHA CBCS readiness check for medical billing and coding specialist candidates.",
+      "Free 60-question NHA CBCS readiness check for medical billing and coding specialist candidates — then join the planned Anki waitlist for spaced repair.",
     examBody: "NHA",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
+    lastUpdated: "2026-09-07",
   }),
   nicheReadinessConfig({
     slug: "ccht-dialysis-readiness-check",
