@@ -547,6 +547,25 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "Cosmetology students and recent graduates preparing for the written state-board / NIC theory exam who want a timed baseline before a full-length Q-bank.",
     practiceTestLabel: "Cosmetology practice test",
   },
+  "cdl-general-knowledge-readiness-check": {
+    title: "Free CDL General Knowledge Practice Test 2026 | 60Q Mock",
+    description:
+      "Free CDL General Knowledge practice test — no signup: 60 timed questions, 75 minutes, 70% readiness target, topic scoring — then waitlist for the planned 60-card Anki. Most state GK forms are ~50Q / 80%; this is a longer diagnostic. Independent — not a DMV/FMCSA exam.",
+    keywords: [
+      "cdl general knowledge practice test",
+      "free cdl practice test",
+      "cdl general knowledge exam",
+      "clp practice test",
+      "commercial drivers license practice test",
+      "cdl anki",
+    ],
+    headline: "Free CDL General Knowledge Practice Test — 60 Questions",
+    intro:
+      "A timed FMCSA-handbook-topic diagnostic across vehicle systems & inspection, safe driving & space management, cargo securement & weight, and emergencies/hours/rules — then join the planned 60-card Anki waitlist. Typical state General Knowledge sittings are ~50 questions / 80% (40 correct); this free check is a longer 60Q / 75 min diagnostic — not a DMV form, not the skills/road test, and not endorsement knowledge tests (Air Brakes, Combination, HazMat, etc.).",
+    audience:
+      "CLP / Class A–B applicants who want a free timed General Knowledge baseline before studying their state CDL manual and booking the DMV knowledge test.",
+    practiceTestLabel: "CDL General Knowledge practice test",
+  },
   "leed-green-associate-readiness-check": {
     title: "Free LEED Green Associate Practice Test | 50-Question Readiness Check",
     description:

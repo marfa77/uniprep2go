@@ -82,6 +82,10 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "Planned 60-card NHA CBCS Anki (coding, claims, HIPAA, revenue cycle). Free 60Q / 75 min diagnostic live now — official CBCS is 100+25 / 3h / scaled 390. ≠ AAPC CPC.",
   "cosmetology-state-anki-deck":
     "Planned 60-card NIC-style cosmetology theory Anki. Free 60Q / 75 min diagnostic live now — official NIC theory is typically 110 (100 scored) / 90 min; state CIBs vary.",
+  "cdl-general-knowledge-anki-deck":
+    "Planned 60-card CDL General Knowledge Anki. Free 60Q / 75 min diagnostic live now — typical state GK is ~50Q / 80%; skills/road and endorsements are separate.",
+  "ielts-toefl-english-for-russian-speakers-anki-deck":
+    "$26 / 2504 IELTS–TOEFL English cards with Russian glosses + cognate traps — prefer over free AnkiWeb EN–RU / EVU dumps.",
   "bms-building-automation-anki-deck":
     "200+ BACnet / HVAC-sequence / alarms-trends-schedules / commissioning cards plus a free 60-question timed BMS diagnostic. No single federal BMS license — Niagara 4 TCP is a vendor course, not this mock.",
 }
@@ -135,6 +139,10 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Planned NHA CBCS spaced-repetition deck for ICD/CPT coding judgment, claims/reimbursement, HIPAA/compliance, and revenue-cycle front office. Free 60-question / 75-minute readiness check is live; official CBCS is 100 scored + 25 pretest / 3 hours / scaled 390. Not AAPC CPC and not NHA CCMA.",
   "cosmetology-state-anki-deck":
     "Planned NIC-style cosmetology theory Anki for scientific concepts & safety, hair services, skin & nails, and salon/infection-control themes. Free 60-question / 75-minute readiness check is live; NIC Cosmetology Theory is typically 110 items (100 scored) / 90 minutes — verify your state CIB. Theory only — practical exam is separate.",
+  "cdl-general-knowledge-anki-deck":
+    "Planned CDL General Knowledge Anki for vehicle systems & inspection, safe driving & space management, cargo securement & weight, and emergencies/hours/rules. Free 60-question / 75-minute readiness check is live; typical state GK sittings are ~50Q / 80% — verify your DMV manual. Knowledge only — not skills/road or endorsement tests.",
+  "ielts-toefl-english-for-russian-speakers-anki-deck":
+    "2,504 IELTS/TOEFL/Cambridge/PTE English vocabulary cards with Russian glosses, bilingual examples, and native English audio — English-first recall for cognate traps (актуальный≠actual, магазин≠magazine). Ownable $26 .apkg; prefer over free AnkiWeb EN–RU tourist dumps or EVU book mirrors.",
   "bms-building-automation-anki-deck":
     "BACnet objects/services/BBMD, HVAC sequences, operator alarms/trends/schedules, and commissioning checkout — the same four domains as the free 60-question timed check. Ownable .apkg for controls techs; not Tridium Niagara 4 TCP material and not a CertifBus 10-question tease.",
   "california-real-estate-exam-anki-deck":
@@ -367,6 +375,26 @@ export const positioningOverrides: Partial<
     ],
     summaryProse:
       "SalonExam and AnkiWeb 300+ dumps win on volume. UniPrep wins when you want a free timed 60Q NIC-style diagnostic plus a planned ownable Anki waitlist — not a full 110-item substitute and not the practical exam.",
+  },
+  "cdl-general-knowledge-anki-deck": {
+    ourEdge: [
+      "Planned 60-card CDL General Knowledge Anki",
+      "Free 60Q / 75 min timed diagnostic live now",
+      "Honest: typical state GK is ~50Q / 80% — our mock is a longer diagnostic",
+      "Knowledge only — ≠ skills/road test; endorsements separate",
+    ],
+    summaryProse:
+      "CristCDL, US Permit Prep, and state DMV practice banks win on free Q volume and 50Q format match. UniPrep wins when you want a free no-signup timed 60Q diagnostic with topic scoring plus a planned ownable Anki waitlist — not a DMV substitute.",
+  },
+  "ielts-toefl-english-for-russian-speakers-anki-deck": {
+    ourEdge: [
+      "$26 / 2504 exam-frequency English cards with Russian glosses + audio",
+      "IELTS / TOEFL / Cambridge / PTE framing — not tourist EN–RU dumps",
+      "Cognate-trap notes (актуальный≠actual, магазин≠magazine)",
+      "Ownable Gumroad .apkg — prefer over free AnkiWeb EVU mirrors for exam pathway copy",
+    ],
+    summaryProse:
+      "Free AnkiWeb EVU / EN–RU dumps win on raw card count. UniPrep wins when Russian speakers want an ownable $26 / 2504-card IELTS–TOEFL-framed bank with audio and cognate-trap honesty — not a tourist phrase pack and not the PT-BR or LatAm sibling gloss editions.",
   },
   "danish-a2-prove-i-dansk-anki-deck": {
     ourEdge: [
@@ -794,6 +822,24 @@ Candidates treat a 60Q free check as the full NIC form, skip infection-control u
 
 Your state Candidate Information Bulletin, school hours, or the practical exam. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not NIC/PSI material.`,
 
+  "cdl-general-knowledge-anki-deck": `### What is inside
+
+Planned **60** flashcards across vehicle systems & inspection, safe driving & space management, cargo securement & weight, and emergencies/hours/rules — the same four topic buckets as the free readiness check. Mapped to FMCSA Commercial Driver’s Manual General Knowledge themes.
+
+### Plan with the free CDL mock (live now)
+
+**Start:** Take the [free 60-question CDL General Knowledge readiness check](/mock-exams/cdl-general-knowledge-readiness-check) (75 minutes / 70% diagnostic). **Then:** Study your **state CDL manual** and re-drill weak topics. **When Anki ships:** 15–20 cards/day on the weakest topic only.
+
+Typical state General Knowledge sittings are **~50 questions / 80% (40 correct)** — confirm with your DMV. Our mock is a longer diagnostic — not a DMV form. **Skills/road testing is separate.** Air Brakes, Combination, HazMat, Passenger, and other endorsements have their own knowledge tests.
+
+### Pitfalls this deck targets (when live)
+
+Candidates treat a free 60Q check as the official 50Q form, skip the state handbook, or confuse General Knowledge with the skills/road test or endorsement sittings.
+
+### What this does not replace
+
+Your state CDL manual, ELDT theory/behind-the-wheel requirements, or DMV scheduling. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not FMCSA or state DMV material.`,
+
   "norwegian-a2-norskprove-anki-deck": `### Which Norwegian pathways this deck targets
 
 **Norskprøve A2** (Bokmål) plus language prep for **permanent oppholdstillatelse** and **statsborgerskap**. Immigration language rules change — verify current requirements for your case with official sources. This deck trains everyday Bokmål for work, housing, services, and interaction — the vocabulary those pathways and Norskprøve both lean on.
@@ -976,21 +1022,61 @@ Ukrainian-speaking learners translate every sentence into Ukrainian under time p
 Prep2Go app bank (2,504 cards) with UniPrep2Go IELTS/TOEFL framing on Gumroad at $26 — not a Lemon-only listing and not a generic “learn English” pack without exam positioning.`,
 
 
-  "ielts-toefl-english-for-russian-speakers-anki-deck": `### Which English exams this deck targets
+  "ielts-toefl-english-for-russian-speakers-anki-deck": `### Who this deck is for
 
-**IELTS**, **TOEFL**, Cambridge English exams, and **PTE** share a large high-frequency academic and general English lexicon. This deck packages that bank for **Russian speakers**: English headword, Russian gloss, bilingual example, native English audio, and an image on each card. It is vocabulary recall — not a full mock exam or writing scorer.
+**Russian speakers** preparing **IELTS** (Academic or General Training), **TOEFL iBT**, Cambridge English (B2 First / C1 Advanced-style lexis), or **PTE Academic** for study abroad, skilled migration, or professional registration. Typical RU-outbound cases:
 
-### Study plan
+- **Canada / Australia / UK** — IELTS (including UKVI where required)
+- **United States** — graduate and professional **TOEFL iBT** score bands
+- **Europe** — university English thresholds that accept IELTS, TOEFL, Cambridge, or PTE
 
-Front-load vocabulary for six weeks at 30–40 cards/day, then taper to review-heavy sessions while you sit Cambridge, IELTS, or TOEFL mocks. Keep English audio on; hide the Russian gloss until you have guessed the meaning. Once a week, export a filtered “again” queue and relearn only those leeches for 15 minutes.
+This product is **English vocabulary Anki with Russian support**. It is not a tourist EN–RU phrase pack, not an “English Vocabulary in Use” AnkiWeb dump, and not the PT-BR or LatAm-Spanish sibling listings.
 
-### Pitfalls this deck targets
+### Card face (what Russian speakers see every review)
 
-Russian-speaking learners translate every sentence into Russian under time pressure, skip listening to English audio, and study tourist phrase lists instead of exam-frequency academic vocabulary. Bilingual examples + English audio reduce translation dependence.
+- **Front:** English headword (+ image where included)
+- **Back:** Russian gloss, bilingual example sentence, native English audio
+- **Drill rule:** hear English → guess meaning in English → only then open the Russian gloss
 
-### What makes this Gumroad edition different
+Free AnkiWeb dumps labelled “English–Russian” or EVU book mirrors are often tourist phrases, undated frequency lists, or multi-thousand CEFR dumps without IELTS/TOEFL framing. This listing ships **2,504** exam-frequency cards from the Prep2Go bank as one Gumroad \`.apkg\` at **$26**.
 
-Prep2Go app bank (2,504 cards) with UniPrep2Go IELTS/TOEFL framing on Gumroad at $26 — not a Lemon-only listing and not a generic “learn English” pack without exam positioning.`,
+### Why Russian speakers lose IELTS/TOEFL Reading points on false friends
+
+Russian lookalikes feel familiar — then the English sense differs under time pressure. Drill these as English-first (examples of traps this bank helps you notice — not a closed list):
+
+| Russian lookalike | Wrong English guess | Exam-safe English sense |
+| --- | --- | --- |
+| *актуальный* | “actual” | **current / topical** (actual = реальный / фактический) |
+| *магазин* | “magazine” | **shop / store** (magazine = журнал) |
+| *кабинет* | “cabinet” | often **office / study** (cabinet = шкаф / кабинет министров) |
+| *резина* | “resin” | **rubber / tyre rubber** (resin = смола) |
+| *контроль* | “control” only | often **check / inspection** (exam *control* ≠ проверка) |
+| *фабрика* | “fabric” | **factory** (fabric = ткань) |
+| *интеллигентный* | “intelligent” | often **cultured / refined** (intelligent = умный) |
+| *консервативный* | only “conservative politics” | also **cautious / traditional** in academic prose |
+
+Anki forces spaced English recall so you stop translating under Listening/Reading time pressure.
+
+### Eight-week study plan (IELTS Academic or TOEFL)
+
+| Weeks | Daily Anki | Pair with |
+| --- | --- | --- |
+| 1–5 | ~25 new cards/day + reviews | One official Listening or Reading section each weekend (British Council / IDP / ETS) |
+| 6–7 | New cards taper; clear “Again” queue | Full practice test under timed conditions |
+| 8 | Reviews only | Re-learn every word you missed on the last mock |
+
+Always play English audio before reading the Russian gloss. If you still need Russian on the back after week 4, tag those cards and review them twice on weekdays.
+
+### Pitfalls this deck targets (Russia-specific)
+
+- Mapping every cognate 1:1 (*актуальный* → “actual”) under exam time pressure
+- Skipping English audio because the written word “looks familiar”
+- Studying tourist EN–RU AnkiWeb packs or raw EVU book dumps instead of IELTS/TOEFL-frequency lexis
+- Confusing this listing with the **PT-BR** or **LatAm Spanish-gloss** English sibling packs
+
+### What this deck is not
+
+Not a timed mock exam, writing scorer, or speaking coach. Not official British Council / IDP / ETS / Cambridge / Pearson material. Sibling UniPrep English decks share an exam-frequency spine but use different gloss languages — this page is **Russian glosses only**.`,
 
 
   "ielts-toefl-english-for-spanish-speakers-anki-deck": `### Which English exams this deck targets

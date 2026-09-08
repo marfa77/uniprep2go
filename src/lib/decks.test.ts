@@ -141,6 +141,7 @@ describe("deck catalog", () => {
       "citizenship-naturalization-anki-bundle",
       "swiss-citizenship-anki-deck",
       "luxembourg-vivre-ensemble-anki-deck",
+      "belgium-flanders-mo-anki-deck",
       "dele-a2-ccse-spanish-citizenship-bundle",
     ];
 
@@ -776,6 +777,7 @@ describe("deck catalog", () => {
         "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2504 Flashcards",
       "ielts-toefl-english-for-portuguese-speakers-anki-deck":
         "IELTS / TOEFL English for Brazilian Portuguese Speakers Anki — 2504 Cards",
+      "belgium-flanders-mo-anki-deck": "Belgium Flanders MO Anki Deck — 120 Flashcards",
       "hvac-epa-608-anki-deck": "EPA 608 HVAC Anki Deck — 200+ Flashcards",
       "ib-biology-sl-anki-deck": "IB Biology SL Anki Deck — 149 Smart Flashcards",
       "cat4-level-d-anki-deck-printable-pdf":

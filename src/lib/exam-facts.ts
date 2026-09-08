@@ -3121,6 +3121,67 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "NIC® and National-Interstate Council of State Boards of Cosmetology marks belong to NIC. UniPrep2Go is not affiliated with or endorsed by NIC or PSI.",
   },
+  "cdl-general-knowledge": {
+    examKey: "cdl-general-knowledge",
+    pageHeading: "CDL General Knowledge Exam — Facts & Prep",
+    intro:
+      "CDL General Knowledge is the core written knowledge test for a Commercial Learner’s Permit (CLP) and later a Commercial Driver’s License. States administer the exam from FMCSA Commercial Driver’s Manual topics; UniPrep2Go products are independent prep (not a DMV or FMCSA exam). Skills/road testing and endorsement knowledge tests are separate.",
+    exam_facts: {
+      exam_name: "CDL General Knowledge (Commercial Learner’s Permit / CDL knowledge test)",
+      administered_by: "State DMV / licensing agency (FMCSA Commercial Driver’s Manual topics)",
+      question_count: "Typically ~50 questions in most states (verify your state CDL manual)",
+      scored_count: "All items typically scored (state-specific)",
+      time_limit: "Often about 60 minutes where published — many states do not publish a hard limit; verify locally",
+      passing_score: "Typically 80% (40 of 50 correct) in most states — confirm with your DMV",
+      delivery: "Written or computer-based at state licensing offices / approved vendors",
+      outline_effective_date: "Current FMCSA / state CDL manual cycle — download your state’s handbook",
+      verify_at_url: "https://www.fmcsa.dot.gov/registration/commercial-drivers-license",
+    },
+    official_sources: [
+      {
+        label: "FMCSA — Commercial Driver’s License",
+        url: "https://www.fmcsa.dot.gov/registration/commercial-drivers-license",
+      },
+      {
+        label: "Find your state CDL resources",
+        url: "https://www.fmcsa.dot.gov/registration/commercial-drivers-license/drivers",
+      },
+    ],
+    domain_weights: [
+      { domain: "Vehicle systems & inspection", weight: "Handbook section — state manuals vary" },
+      { domain: "Safe driving & space management", weight: "Handbook section — state manuals vary" },
+      { domain: "Cargo securement & weight", weight: "Handbook section — state manuals vary" },
+      { domain: "Emergencies, hours & rules", weight: "Handbook section — state manuals vary" },
+    ],
+    whats_changed: [
+      "Most states still use ~50 General Knowledge questions with an 80% pass — a minority differ; always check your state CDL manual.",
+      "ELDT theory/behind-the-wheel training rules apply before skills testing for many first-time CDL applicants — separate from this knowledge mock.",
+      "Air Brakes, Combination Vehicles, and endorsements (HazMat, Passenger, School Bus, Tank, Doubles/Triples) are separate knowledge tests.",
+    ],
+    high_yield_facts: [
+      "Typical General Knowledge form: ~50 questions / 80% (40 correct) — verify your state.",
+      "UniPrep2Go’s free check is a longer 60-question / 75-minute diagnostic with four topic buckets — not a DMV form.",
+      "General Knowledge is not the skills/road test (vehicle inspection, basic controls, road).",
+      "Class A applicants usually also need Combination Vehicles knowledge; air-brake vehicles need the Air Brakes knowledge test.",
+      "Study your state’s official CDL manual first — free third-party banks (CristCDL, US Permit Prep, state DMV practice) win on volume; UniPrep wins on a no-signup timed diagnostic + planned Anki waitlist.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the CDL General Knowledge test?",
+        a: "Most states use about 50 questions with an 80% pass (40 correct). Confirm length and cut score in your state’s official CDL manual / DMV page.",
+      },
+      {
+        q: "Is UniPrep2Go’s CDL readiness check the official DMV exam?",
+        a: "No. The free 60-question / 75-minute check is an independent diagnostic. The matching Anki deck is planned (waitlist). Not a state DMV or FMCSA exam.",
+      },
+      {
+        q: "Does this include the skills test or HazMat?",
+        a: "No. This page is General Knowledge only. Skills/road testing is separate after a CLP. HazMat and other endorsements have their own knowledge tests.",
+      },
+    ],
+    trademark_note:
+      "CDL and FMCSA marks relate to U.S. commercial driver licensing. UniPrep2Go is not affiliated with or endorsed by FMCSA or any state DMV.",
+  },
 };
 
 /** Deck slug → shared exam profile key. Language decks are omitted intentionally. */
@@ -3170,6 +3231,7 @@ const deckExamKeyMap: Record<string, string> = {
   "nha-cpct-anki-deck": "nha-cpct",
   "nha-cbcs-anki-deck": "nha-cbcs",
   "cosmetology-state-anki-deck": "nic-cosmetology-theory",
+  "cdl-general-knowledge-anki-deck": "cdl-general-knowledge",
   "us-citizenship-test-prep2go-app": "us-citizenship",
   "leben-in-deutschland-prep2go-app": "leben-in-deutschland",
   "naturalisation-francaise-prep2go-app": "naturalisation-francaise",

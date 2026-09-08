@@ -2578,12 +2578,12 @@ const rawDecks: Deck[] = [
     title: "IELTS / TOEFL English for Russian Speakers Anki Deck — 2504 Flashcards",
     shortName: "IELTS / TOEFL English for Russian Speakers",
     subtitle:
-      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Russian support on every card.",
+      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Russian support and cognate-trap notes on every card.",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English for Russian Speakers Anki deck with 2,504 high-frequency English vocabulary cards, Russian glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Russian-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
-    lastUpdated: "2026-07-22",
+      "UniPrep2Go sells an IELTS / TOEFL English Anki deck for Russian speakers: 2,504 high-frequency English vocabulary cards with Russian glosses, bilingual examples, native English audio, and illustrations. Built for Russian-speaking candidates targeting IELTS Academic or General (Canada / Australia / UKVI), TOEFL iBT (U.S. graduate), Cambridge, and PTE — English-first recall so false friends like актуальный/actual and магазин/magazine stop costing Reading points. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio. What this is not: a tourist EN–RU AnkiWeb dump, an English Vocabulary in Use book mirror, a timed mock exam, or a PT-BR / LatAm-Spanish-gloss sibling pack.",
+    lastUpdated: "2026-09-08",
     audience:
-      "Russian-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
+      "Russian-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary — not tourist phrase learners.",
     format: ".apkg",
     coverImage: "/covers/ielts-toefl-english-for-russian-speakers-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/ielts-toefl-english-for-russian-speakers-anki-deck?wanted=true",
@@ -2591,7 +2591,8 @@ const rawDecks: Deck[] = [
     checkoutSeller: "PixID Studio",
     facts: {
       cards: "2504",
-      topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with Russian bilingual support",
+      topics:
+        "IELTS / TOEFL / Cambridge / PTE English vocabulary for Russian speakers (Russian glosses, false-friend awareness)",
       formulas: "Audio + Russian glosses + bilingual example sentences",
       examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
       delivery: "Digital download through Gumroad",
@@ -2602,17 +2603,27 @@ const rawDecks: Deck[] = [
       {
         question: "Which English exams does this deck support?",
         answer:
-          "IELTS, TOEFL, Cambridge English exams, and PTE — as a shared high-frequency English vocabulary bank with Russian support. Pair Anki with official practice tests for each exam's format.",
+          "IELTS Academic and General Training word knowledge, TOEFL iBT, Cambridge English (B2 First / C1 Advanced-style lexis), and PTE Academic — one shared high-frequency English bank with Russian support. Pair Anki with official British Council / IDP / ETS / Cambridge / Pearson practice for each exam's Listening and Speaking format.",
       },
       {
-        question: "Does this help IRCC, UKVI, or academic English pathways?",
+        question: "Does this help Canada, Australia, UKVI, or U.S. TOEFL pathways?",
         answer:
-          "Yes as shared high-frequency English vocabulary used across IELTS (including common IRCC and UKVI sittings), TOEFL, Cambridge, and PTE academic pathways. Confirm the exact test version your case requires — this deck trains word knowledge, not each board's listening/speaking format.",
+          "Yes as shared exam English vocabulary used across IELTS sittings common for IRCC / Australia / UKVI and across TOEFL for U.S. graduate admissions. Confirm the exact test version and score band your case needs — this deck trains word knowledge, not each board's timed paper or visa checklist.",
+      },
+      {
+        question: "Is this the same as free AnkiWeb English–Russian or EVU decks?",
+        answer:
+          "No. Free AnkiWeb EN–RU dumps and English Vocabulary in Use mirrors are often tourist phrases, undated frequency lists, or CEFR book mirrors without IELTS/TOEFL framing. This is a 2,504-card Prep2Go exam-frequency bank with Russian glosses, English audio, and cognate-trap notes — instant Gumroad .apkg at list price.",
+      },
+      {
+        question: "Is this the same as the Portuguese- or Spanish-speaker English Anki pages?",
+        answer:
+          "No. Sibling UniPrep English decks share an exam-frequency spine but use different gloss languages and false-friend notes. This listing is Russian glosses only (актуальный≠actual, магазин≠magazine). PT-BR and LatAm Spanish editions are separate products with their own sample cards and Gumroad permalinks.",
       },
       {
         question: "What does the deck include?",
         answer:
-          "2,504 English vocabulary cards from the Prep2Go app: Russian glosses, bilingual examples, native English audio, and illustrations.",
+          "2,504 English vocabulary cards from the Prep2Go app: Russian glosses, bilingual examples, native English audio, and illustrations where included.",
       },
       {
         question: "What file format is delivered?",

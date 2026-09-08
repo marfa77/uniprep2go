@@ -198,12 +198,17 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The CDL General Knowledge exam is the written knowledge test required before you can get a Commercial Learner’s Permit (CLP) and later a Commercial Driver’s License (CDL) for Class A or Class B vehicles. It covers vehicle systems, safe driving, cargo, and hours-of-service style rules from the FMCSA Commercial Driver’s Manual — not the skills/road test. States administer the test through their DMV or equivalent; you typically must pass General Knowledge (and any required endorsement knowledge tests) before scheduling skills testing.",
     administeredBy: "State DMV / licensing agency, using FMCSA Commercial Driver’s Manual topics",
     officialFormat:
-      "Written (or computer-based) multiple-choice knowledge test; length and pass score vary by state. Skills/road testing is separate after you hold a CLP.",
+      "Written (or computer-based) multiple-choice knowledge test. Most states use ~50 questions with an 80% pass (40 correct); confirm length, time, and cut score with your state DMV CDL manual. Skills/road testing is separate after you hold a CLP. Endorsement knowledge tests (Air Brakes, Combination, HazMat, etc.) are additional sittings.",
     examFaqs: [
       {
         question: "What is the CDL General Knowledge exam?",
         answer:
           "It is the core written knowledge test for a Commercial Learner’s Permit / CDL. It checks whether you understand commercial vehicle operation, safety, and cargo rules before you take the skills test.",
+      },
+      {
+        question: "How many questions are on the CDL General Knowledge test?",
+        answer:
+          "Most states use about 50 questions with an 80% pass (40 correct). Some states differ — always verify in your state’s official CDL manual / DMV page. UniPrep’s free check is a longer 60-question / 75-minute diagnostic, not a DMV form.",
       },
       {
         question: "Is CDL General Knowledge the same as the skills test?",
@@ -213,7 +218,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "Do I need HazMat or passenger endorsements for General Knowledge?",
         answer:
-          "General Knowledge is the base test. Endorsements such as HazMat (H), Passenger (P), or School Bus (S) have their own knowledge tests if your job requires them.",
+          "General Knowledge is the base test. Endorsements such as HazMat (H), Passenger (P), or School Bus (S) — and often Air Brakes / Combination for Class A — have their own knowledge tests if your job requires them.",
       },
     ],
     keywords: [

@@ -399,20 +399,22 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "ielts-toefl-english-for-russian-speakers-anki-deck": {
-    title: "IELTS / TOEFL English for Russian Speakers Anki | 2504 Cards",
-    headline: "IELTS / TOEFL English for Russian Speakers — 2504 Flashcards",
-    studyLabel: "IELTS TOEFL English for Russian speakers",
+    title: "IELTS Anki Russians 2026 | 2504 · RU Gloss · Not Tourist",
+    headline: "IELTS / TOEFL English for Russian Speakers — 2504 Cards",
+    studyLabel: "IELTS TOEFL English Anki for Russian speakers",
     description:
-      "English Anki deck with 2504 flashcards for Russian speakers preparing IELTS, TOEFL, Cambridge, and PTE — Russian glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
+      "Russians: 2,504 IELTS/TOEFL Anki cards with Russian glosses + актуально≠actual traps. Not AnkiWeb EVU dumps, not tourist EN–RU lists. Gumroad $26.",
     keywords: [
       "english for russian speakers anki",
       "ielts vocabulary russian speakers",
       "toefl vocabulary russian speakers",
-      "английский для русских anki",
+      "anki английский для русских ielts toefl",
+      "english false friends russian anki",
       "ielts toefl flashcards russian",
+      "anki ielts русские 2026",
     ],
     intro:
-      "Russian-speaking IELTS and TOEFL candidates use bilingual English vocabulary recall with Russian support before timed exam practice.",
+      "Russian speakers targeting IELTS, TOEFL iBT, Cambridge, or PTE drill 2,504 exam-frequency English words with Russian glosses and native audio — English-first recall so cognate traps (актуально/actual, магазин/magazine) stop costing Reading points. Separate from free AnkiWeb EVU packs and the PT-BR or LatAm-Spanish English sibling decks.",
   },
 
   "ielts-toefl-english-for-spanish-speakers-anki-deck": {
@@ -1062,6 +1064,23 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     ],
     intro:
       "Cosmetology students who want a free timed NIC-style theory diagnostic before a full-length Q-bank — then a planned 60-card .apkg for spaced repair. Theory only; verify your state CIB for time and pass score.",
+  },
+  "cdl-general-knowledge-anki-deck": {
+    title: "CDL General Knowledge Anki | Planned 60 Cards + Free Mock",
+    headline: "CDL General Knowledge Prep — Planned Cards + Free 60Q Test",
+    studyLabel: "CDL General Knowledge exam prep",
+    description:
+      "Planned CDL General Knowledge Anki for CLP / Class A–B written prep — vehicle systems, safe driving, cargo, hours/rules — plus a free 60-question timed practice test. Typical state GK is ~50Q / 80%; this mock is longer. Independent — not a DMV exam.",
+    keywords: [
+      "cdl anki",
+      "cdl general knowledge flashcards",
+      "cdl practice test",
+      "clp study guide",
+      "commercial drivers license anki",
+      "free cdl practice test",
+    ],
+    intro:
+      "CLP applicants who want a free timed General Knowledge diagnostic before their state CDL manual — then a planned 60-card .apkg for spaced repair. Knowledge only; skills/road and endorsements are separate.",
   },
   "bench-energy-metal-trader-anki-deck": {
     title: "Best Metal Trader Anki | 202 LME Desk Cards",
