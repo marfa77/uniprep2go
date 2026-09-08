@@ -1084,6 +1084,16 @@ Always play English audio before reading the PT-BR gloss. If you still need Port
 - Not a Writing Task 2 scorer, Speaking partner, or timed mock exam
 - Not official IELTS, ETS TOEFL, Cambridge Assessment, or Pearson PTE material
 
+### Sibling pages (do not confuse)
+
+| Product | Gloss | Use when |
+| --- | --- | --- |
+| **This deck** | PT-BR | Brazilians on IELTS / TOEFL / Cambridge / PTE |
+| [English for Spanish speakers](/decks/ielts-toefl-english-for-spanish-speakers-anki-deck) | LatAm Spanish | Spanish-gloss IELTS/TOEFL bank |
+| [CIPLE A2 European Portuguese](/decks/ciple-a2-european-portuguese-anki-deck) | PT-PT | Portuguese nationality language — **not** IELTS English |
+
+Each URL has its own samples, FAQs, and Gumroad permalink. Google treating them as near-duplicates is wrong: the exam target and gloss language differ.
+
 ### What makes this Gumroad edition different
 
 Prep2Go app bank (**2,504** cards, **Brazilian Portuguese** glosses) with UniPrep2Go IELTS/TOEFL framing on Gumroad at **$26** — instant \`.apkg\`, cognate-trap study notes, not a Lemon-only listing, not AnkiWeb tourist packs, not CIPLE / Celpe-Bras / ENEM, and not a demonym-swapped Spanish or Italian sibling page.`,

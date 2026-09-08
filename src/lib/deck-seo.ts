@@ -483,11 +483,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "ielts-toefl-english-for-portuguese-speakers-anki-deck": {
-    title: "IELTS / TOEFL Anki for Brazilians (PT-BR) | 2504 Cards · Not CIPLE",
-    headline: "IELTS / TOEFL English for Brazilian Portuguese Speakers — 2504 Cards",
+    title: "IELTS Anki Brazilians 2026 | 2504 · PT-BR · Not CIPLE",
+    headline: "IELTS / TOEFL English for Brazilians (PT-BR) — 2504 Cards · Not CIPLE",
     studyLabel: "IELTS TOEFL English Anki for Brazilians (PT-BR glosses)",
     description:
-      "2,504 English Anki cards for Brazilians: IELTS/TOEFL/Cambridge/PTE, PT-BR glosses, atual≠actual traps. Not CIPLE · not Celpe-Bras · not tourist AnkiWeb. $26.",
+      "Brazilians: 2,504 IELTS/TOEFL Anki cards with PT-BR glosses + atual≠actual traps. Not CIPLE, not Celpe-Bras, not the Spanish-gloss sibling. Gumroad $26.",
     keywords: [
       "english for brazilian portuguese speakers anki",
       "ielts vocabulary for brazilians",
@@ -495,9 +495,10 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "anki ingles para brasileiros ielts toefl",
       "english false friends portuguese anki",
       "ielts toefl flashcards pt-br",
+      "anki ielts brasil 2026",
     ],
     intro:
-      "Brazilians targeting IELTS, TOEFL iBT, Cambridge, or PTE drill 2,504 exam-frequency English words with PT-BR glosses and native audio — English-first recall so cognate traps (atual/actual, pretender/pretend) stop costing Reading points. Not CIPLE European Portuguese and not Celpe-Bras.",
+      "Brazilians targeting IELTS, TOEFL iBT, Cambridge, or PTE drill 2,504 exam-frequency English words with PT-BR glosses and native audio — English-first recall so cognate traps (atual/actual, pretender/pretend) stop costing Reading points. Separate from CIPLE European Portuguese, Celpe-Bras, and the LatAm-Spanish or Russian English sibling decks.",
   },
 
   "delf-prim-printable-french-flashcards": {

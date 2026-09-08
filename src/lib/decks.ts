@@ -2691,7 +2691,7 @@ const rawDecks: Deck[] = [
       "2,504 English flashcards for Brazilians on IELTS, TOEFL, Cambridge, and PTE — PT-BR glosses, audio, and cognate traps (atual ≠ actual).",
     directAnswer:
       "UniPrep2Go sells an IELTS / TOEFL English Anki deck for Brazilian Portuguese (PT-BR) speakers: 2,504 high-frequency English vocabulary cards with PT-BR glosses, bilingual examples, native English audio, and illustrations. Built for Brazilians targeting IELTS Academic or General (Canada Express Entry / SDS, Australia, UKVI), TOEFL iBT (U.S. graduate), Cambridge, and PTE — English-first recall so false friends like atual/actual and pretender/pretend stop costing Reading points. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio. What this is not: CIPLE / CAPLE European Portuguese, Celpe-Bras, ENEM English drills, a timed mock exam, or a LatAm-Spanish-gloss sibling pack.",
-    lastUpdated: "2026-09-06",
+    lastUpdated: "2026-09-08",
     audience:
       "Brazilian Portuguese speakers preparing IELTS, TOEFL, Cambridge, or PTE who want Anki vocabulary with PT-BR support — not CIPLE, not Celpe-Bras, not ENEM English.",
     format: ".apkg",
@@ -2729,6 +2729,11 @@ const rawDecks: Deck[] = [
         question: "Is this the same as ENEM English or free AnkiWeb Inglês–Português decks?",
         answer:
           "No. ENEM English reading is a Brazilian high-school exam skill set; free AnkiWeb PT–EN dumps are usually tourist phrases or undated frequency lists. This is a 2,504-card Prep2Go IELTS/TOEFL-framed bank with PT-BR glosses, English audio, and cognate-trap notes — instant Gumroad .apkg at list price.",
+      },
+      {
+        question: "Is this the same as the Spanish- or Russian-speaker English Anki pages?",
+        answer:
+          "No. Sibling UniPrep English decks share an exam-frequency spine but use different gloss languages and false-friend notes. This listing is PT-BR only (atual≠actual, pretender≠pretend). LatAm Spanish and Russian editions are separate products with their own sample cards and Gumroad permalinks — do not treat this page as a demonym swap of those URLs.",
       },
       {
         question: "What does the deck include?",
