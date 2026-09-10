@@ -475,13 +475,19 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "nha-cbcs-readiness-check": explainer({
     practiceTestName: "NHA CBCS Practice Test",
     whatIsExam:
-      "The NHA Certified Billing and Coding Specialist (CBCS) exam covers medical billing, coding guidelines, insurance eligibility, claims, and reimbursement for outpatient billing roles. Official public test plan: 100 scored + 25 pretest items / 3 hours / scaled pass 390.",
+      "The NHA Certified Billing and Coding Specialist (CBCS) exam certifies outpatient billing and coding staff who verify eligibility, apply coding guidelines, submit claims, and chase reimbursement. Official public NHA test plan: 100 scored + 25 pretest items (125 total) in 3 hours; scaled pass 390 on a 200–500 scale. This UniPrep2Go page is a free 60-question / 75-minute timed diagnostic with domain scoring — not NHA material, not AAPC CPC, and not NHA CCMA/CMAA.",
     administeredBy: "National Healthcareer Association (NHA)",
+    officialFormat:
+      "Official NHA CBCS (public test plan): 100 scored + 25 pretest / 3 hours / scaled pass 390 (200–500). Domains emphasize coding guidelines, insurance, claims, and reimbursement workflows. UniPrep2Go free readiness check: 60 timed questions, 75 minutes, topic scoring, full answer review — shorter than the live form so you can baseline before NHA’s paid practice test.",
+    whoFor:
+      "Medical billing students, revenue-cycle juniors, and front-office staff moving into coding/claims who need a free timed CBCS baseline — not candidates sitting AAPC CPC, AHIMA CCS, NHA CCMA, or CMAA. Confirm employer preference and NHA eligibility before you register.",
+    howToPrepare:
+      "Download the current NHA CBCS test plan, drill coding guidelines and claims denial patterns first, then sit this free 60-question / 75-minute check. Use the domain report to queue weak eligibility, coding, or reimbursement rows. Keep NHA’s official practice test separate. Repair misses with spaced Anki if you use a linked deck.",
     examFaqs: [
       {
         question: "What is the NHA CBCS exam?",
         answer:
-          "CBCS is NHA’s billing and coding specialist certification for candidates who submit and manage medical claims. It is not AAPC CPC and not NHA CCMA.",
+          "CBCS is NHA’s billing and coding specialist certification for candidates who submit and manage medical claims in outpatient settings. It is not AAPC CPC, not AHIMA CCS, and not NHA CCMA.",
       },
       {
         question: "How many questions are on the official NHA CBCS exam?",
@@ -491,7 +497,22 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "Is CBCS the same as AAPC CPC?",
         answer:
-          "No. CBCS is an NHA credential. AAPC CPC is a separate coding certification with its own outline and exam rules.",
+          "No. CBCS is an NHA credential focused on billing/coding specialist workflows. AAPC CPC is a separate coding certification with its own outline, proctoring rules, and employer recognition — do not mix study blueprints.",
+      },
+      {
+        question: "Is this an official NHA CBCS exam?",
+        answer:
+          "No. UniPrep2Go provides an independent timed diagnostic with domain scoring and answer review — not official NHA items and not a substitute for NHA registration.",
+      },
+      {
+        question: "Is there a free NHA CBCS practice test online?",
+        answer:
+          "Yes — take the free UniPrep2Go CBCS readiness check on this page (60 questions / 75 minutes). NHA also sells an official practice test on nhanow.com; use both as complementary, not identical, prep.",
+      },
+      {
+        question: "What score do you need to pass NHA CBCS?",
+        answer:
+          "NHA’s public materials cite a 200–500 scaled score with a 390 pass threshold for the CBCS plan — verify the candidate handbook that matches your sitting date.",
       },
     ],
     keywords: [
@@ -499,6 +520,8 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "billing and coding practice test",
       "free nha cbcs practice test",
       "cbcs mock exam",
+      "certified billing and coding specialist practice test",
+      "nha billing coding practice exam",
     ],
   }),
   "ccht-dialysis-readiness-check": explainer({
