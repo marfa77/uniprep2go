@@ -487,14 +487,50 @@ export const wave4ExamExplainers: Record<string, NicheExamExplainer> = {
   },
   "armed-security-officer-readiness-check": {
     practiceTestName: "Armed Security Officer Practice Test",
-    whatIsExam: "Armed security officer licensing exams where required add firearms, use-of-force, and liability topics on top of unarmed guard fundamentals. States differ sharply on training hours, range qualification, and written tests\u2014confirm with your licensing board before carrying on duty. Always verify current candidate bulletins, fees, and testing vendor details before you register. Always verify current candidate bulletins, fees, and testing vendor details before you register.",
-    administeredBy: "State security licensing boards",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with State security licensing boards.",
-    whoFor: "Security professionals upgrading from unarmed to armed posts, plus new hires in states that require a separate armed officer license or endorsement exam. Always verify current candidate bulletins, fees, and testing vendor details before you register.",
-    howToPrepare: "Complete state-required firearms and legal training first, then drill use-of-force scenarios and report writing. Take the free UniPrep2Go written readiness check on this page, then join the linked Anki deck waitlist. Always verify current candidate bulletins, fees, and testing vendor details before you register.",
-    topicBlurbs: [{"id": "law", "label": "Use of force & law", "blurb": "Legal standards and liability. Review official outlines for current weighting and examples."}, {"id": "weapons", "label": "Weapons safety", "blurb": "Handling and storage awareness. Review official outlines for current weighting and examples."}, {"id": "patrol", "label": "Patrol & emergencies", "blurb": "Observation and emergencies. Review official outlines for current weighting and examples."}, {"id": "ethics", "label": "Ethics & professionalism", "blurb": "Conduct and prohibited practices. Review official outlines for current weighting and examples."}],
-    examFaqs: [{"question": "What is the Armed Security Officer exam?", "answer": "Armed security officer licensing exams where required add firearms, use-of-force, and liability topics on top of unarmed guard fundamentals. States differ sharply on training hours, range qualification, and written tests\u2014confirm with your licensing board before carrying on duty. Always verify current candidate bulletins, fees, and testing vendor details before you register. Always verify current candidate bulletins, fees, and testing vendor details before you register."}, {"question": "Is this an official Armed Security Officer exam?", "answer": "No. UniPrep2Go provides independent exam guides and practice tests \u2014 not official material from State security licensing boards."}, {"question": "Who administers the Armed Security Officer exam?", "answer": "State security licensing boards. Always verify registration, fees, and the current content outline on the official site."}, {"question": "What topics appear on the Armed Security Officer exam?", "answer": "Typical domains include: Use of force & law; Weapons safety; Patrol & emergencies; Ethics & professionalism. Confirm weights on the official outline."}, {"question": "How should I prepare for the Armed Security Officer exam?", "answer": "Complete state-required firearms and legal training first, then drill use-of-force scenarios and report writing. Take the free UniPrep2Go written readiness check on this page, then join the linked Anki deck waitlist. Always verify current candidate bulletins, fees, and testing vendor details before you register."}, {"question": "Is there a free Armed Security Officer practice test?", "answer": "Yes — take the free UniPrep2Go timed readiness check on this page now. After your report, join the linked Anki deck waitlist for spaced-repetition repair when the .apkg ships."}],
-    keywords: ["armed security guard exam practice test", "armed guard card practice test", "armed security officer practice exam"],
+    whatIsExam:
+      "Armed security officer licensing is state-specific: many boards require an unarmed/guard-card credential first, then firearms training hours, a written knowledge test, and a separate range qualification before you may carry on duty. Topics usually include use of force, weapons safety, patrol/emergencies, and ethics. Confirm hours, fees, and vendor with your state board (e.g. FL Class G, TX Level III, CA BSIS firearm permit).",
+    administeredBy: "State security licensing boards (varies by state)",
+    officialFormat:
+      "State-specific written multiple-choice knowledge test plus firearms training and range qualification in most armed pathways. Question counts and pass scores vary widely by state — there is no single national armed-guard exam. UniPrep’s free check is a 60Q / 75 min written diagnostic only.",
+    whoFor:
+      "Security professionals upgrading from unarmed to armed posts, and new hires in states that require a separate armed officer license or firearm endorsement.",
+    howToPrepare:
+      "Complete your state’s required firearms and legal training first, then drill use-of-force and weapons-safety scenarios. Take the free UniPrep2Go written readiness check on this page, then join the planned Anki waitlist. Range qualification is separate and not covered by this mock.",
+    topicBlurbs: [
+      { id: "law", label: "Use of force & law", blurb: "Legal standards and liability for armed posts." },
+      { id: "weapons", label: "Weapons safety", blurb: "Handling, storage, and safety awareness." },
+      { id: "patrol", label: "Patrol & emergencies", blurb: "Observation, response, and emergencies." },
+      { id: "ethics", label: "Ethics & professionalism", blurb: "Conduct and prohibited practices." },
+    ],
+    examFaqs: [
+      {
+        question: "What is the Armed Security Officer exam?",
+        answer:
+          "Armed security licensing adds firearms, use-of-force, and liability topics on top of unarmed guard fundamentals. States differ on training hours, written tests, and range qualification — confirm with your licensing board before carrying on duty.",
+      },
+      {
+        question: "Is this the same as an unarmed guard card?",
+        answer:
+          "No. Unarmed/guard-card credentials are usually a separate (often prerequisite) step. This UniPrep check targets armed written themes — not the unarmed-only pathway and not the live-fire qualification.",
+      },
+      {
+        question: "Is this an official Armed Security Officer exam?",
+        answer:
+          "No. UniPrep2Go provides an independent 60-question / 75-minute written diagnostic. The matching Anki deck is planned (waitlist). Not a state board exam.",
+      },
+      {
+        question: "Does this include range qualification?",
+        answer:
+          "No. This is a written knowledge diagnostic only. Most armed pathways also require instructor-led firearms training and a separate live-fire qualification.",
+      },
+    ],
+    keywords: [
+      "armed security guard exam practice test",
+      "armed guard card practice test",
+      "armed security officer practice exam",
+      "free armed security practice test",
+      "armed security anki",
+    ],
   },
   "medical-billing-specialist-readiness-check": {
     practiceTestName: "Medical Billing Specialist Practice Test",

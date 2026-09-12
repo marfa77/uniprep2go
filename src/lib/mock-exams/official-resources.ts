@@ -649,6 +649,34 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
       },
     ],
   },
+  "armed-security-officer-readiness-check": {
+    certifier: "State security licensing boards",
+    verifyAtUrl: "https://www.fdacs.gov/Business-Services/Private-Security-Licenses",
+    sources: [
+      {
+        label: "Florida FDACS — private security licenses",
+        url: "https://www.fdacs.gov/Business-Services/Private-Security-Licenses",
+      },
+      {
+        label: "California BSIS",
+        url: "https://www.bsis.ca.gov/",
+      },
+    ],
+  },
+  "veterinary-assistant-readiness-check": {
+    certifier: "NAVTA (exam platform: VetMedTeam)",
+    verifyAtUrl: "https://navta.net/veterinary-assistants-program/",
+    sources: [
+      {
+        label: "NAVTA — Veterinary Assistants Program / AVA",
+        url: "https://navta.net/veterinary-assistants-program/",
+      },
+      {
+        label: "VetMedTeam — AVA examination",
+        url: "https://www.vetmedteam.com/class.aspx?id=736",
+      },
+    ],
+  },
   "nha-ccma-readiness-check": {
     certifier: "National Healthcareer Association (NHA)",
     verifyAtUrl: "https://www.nhanow.com/certification/nha-certifications/certified-clinical-medical-assistant-(ccma)",

@@ -867,8 +867,10 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "patrol", label: "Patrol & emergencies" },
       { id: "ethics", label: "Ethics & professionalism" }
     ]),
-    officialSourceNote: "Mapped to State security licensing boards themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Armed Security Officer readiness check with topic scoring.",
+    officialSourceNote:
+      "Armed security licensing is state-specific (e.g. FL Class G, TX Level III, CA BSIS firearm permit). Most pathways need unarmed/guard-card credentials first, plus firearms training and a separate range qualification — this UniPrep check is a 60Q / 75 min written diagnostic only. Independent — not a state board exam.",
+    description:
+      "A free 60-question / 75-minute armed security officer readiness check with topic scoring across use of force & law, weapons safety, patrol & emergencies, and ethics — for candidates upgrading to armed posts. Not a state license exam and not the range qualification.",
     examBody: "State security licensing boards",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["armed security guard exam", "armed guard card"],

@@ -1180,8 +1180,10 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "hospital", label: "Hospital procedures" },
       { id: "safety", label: "Safety & zoonosis" }
     ]),
-    officialSourceNote: "Mapped to NAVTA / employer VA competencies themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Veterinary Assistant readiness check with topic scoring.",
+    officialSourceNote:
+      "NAVTA Approved Veterinary Assistant (AVA) exam via VetMedTeam is typically 100 multiple-choice questions / 150 minutes / 75% pass / $100 per attempt — for graduates of a NAVTA-approved VA program only. This UniPrep check is a shorter 60Q / 75 min diagnostic. Independent — not NAVTA/VetMedTeam material. Not the VTNE (veterinary technician).",
+    description:
+      "A free 60-question / 75-minute veterinary assistant readiness check with topic scoring across restraint, nursing assist, hospital procedures, and safety/zoonosis — for AVA-style prep. Official AVA is typically 100Q / 150 min / 75%; not VTNE.",
     examBody: "NAVTA / employer VA competencies",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["veterinary assistant", "AVA"],

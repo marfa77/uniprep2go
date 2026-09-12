@@ -1082,6 +1082,38 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     intro:
       "CLP applicants who want a free timed General Knowledge diagnostic before their state CDL manual — then a planned 60-card .apkg for spaced repair. Knowledge only; skills/road and endorsements are separate.",
   },
+  "armed-security-officer-anki-deck": {
+    title: "Armed Security Anki | Planned 60 Cards + Free Mock",
+    headline: "Armed Security Officer Prep — Planned Cards + Free 60Q Test",
+    studyLabel: "armed security officer exam prep",
+    description:
+      "Planned armed security Anki for use-of-force, weapons safety, patrol, and ethics — plus a free 60-question timed written practice test. State-specific licensing; ≠ unarmed card; range qualification separate. Independent — not a state board exam.",
+    keywords: [
+      "armed security anki",
+      "armed guard flashcards",
+      "armed security practice test",
+      "armed guard card study",
+      "free armed security practice test",
+    ],
+    intro:
+      "Guards upgrading to armed posts who want a free timed written diagnostic before state firearms training — then a planned 60-card .apkg. Written only; live-fire qualification is separate.",
+  },
+  "veterinary-assistant-anki-deck": {
+    title: "Veterinary Assistant Anki | Planned 60 Cards + Free Mock",
+    headline: "Veterinary Assistant / AVA Prep — Planned Cards + Free 60Q Test",
+    studyLabel: "NAVTA AVA veterinary assistant exam prep",
+    description:
+      "Planned veterinary assistant Anki for restraint, nursing assist, hospital procedures, and safety — plus a free 60-question timed practice test. Official NAVTA AVA is typically 100Q / 150 min / 75%. Not VTNE. Independent — not NAVTA material.",
+    keywords: [
+      "veterinary assistant anki",
+      "navta ava flashcards",
+      "ava practice test",
+      "veterinary assistant study guide",
+      "free veterinary assistant practice test",
+    ],
+    intro:
+      "VA students who want a free timed AVA-style diagnostic before VetMedTeam’s official exam — then a planned 60-card .apkg. Not the VTNE technician pathway.",
+  },
   "bench-energy-metal-trader-anki-deck": {
     title: "Best Metal Trader Anki | 202 LME Desk Cards",
     headline: "Best Metal Trader Anki — 202 LME & Metals Desk Cards",

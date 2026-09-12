@@ -1115,19 +1115,39 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "veterinary-assistant-readiness-check": {
     practiceTestName: "Veterinary Assistant Practice Test",
-    whatIsExam: "Veterinary assistant assessments cover restraint, basic nursing support, hospital procedures, and safety for assistants working under veterinary supervision.",
-    administeredBy: "NAVTA / employer VA competencies",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with NAVTA / employer VA competencies.",
+    whatIsExam:
+      "The NAVTA Approved Veterinary Assistant (AVA) designation is for graduates of a NAVTA-approved veterinary assistant program who pass the proprietary AVA exam administered through VetMedTeam. It covers restraint, nursing support, hospital procedures, pharmacy/office themes, and safety — under veterinary supervision. It is not the VTNE (veterinary technician national exam).",
+    administeredBy: "NAVTA (exam platform: VetMedTeam)",
+    officialFormat:
+      "Official AVA exam (VetMedTeam): typically 100 multiple-choice questions / 150 minutes / 75% pass / $100 per attempt; requires a NAVTA-approved program code and an exam mentor/proctor. UniPrep’s free check is a shorter 60Q / 75 min diagnostic — not a full-length AVA form.",
     examFaqs: [
       {
-        question: "What is the Veterinary Assistant exam?",
-        answer: "Veterinary assistant assessments cover restraint, basic nursing support, hospital procedures, and safety for assistants working under veterinary supervision.",
+        question: "What is the Veterinary Assistant / AVA exam?",
+        answer:
+          "NAVTA’s Approved Veterinary Assistant (AVA) exam certifies graduates of NAVTA-approved VA programs. VetMedTeam administers the exam (typically 100Q / 150 min / 75% / $100). Employer-only assistant competencies may differ — confirm which path your clinic expects.",
+      },
+      {
+        question: "Is AVA the same as the VTNE?",
+        answer:
+          "No. AVA is the veterinary assistant designation. The VTNE (AAVSB) is the national exam for veterinary technicians / nurses — a different credential and outline.",
       },
       {
         question: "Is this an official Veterinary Assistant exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from NAVTA / employer VA competencies.",
+        answer:
+          "No. UniPrep2Go provides an independent 60-question / 75-minute diagnostic. The matching Anki deck is planned (waitlist). Not NAVTA or VetMedTeam material.",
+      },
+      {
+        question: "Who can sit the official AVA exam?",
+        answer:
+          "Graduates of a NAVTA-approved veterinary assistant program with a program code and an approved exam mentor/proctor. Verify current rules at navta.net and VetMedTeam.",
       },
     ],
-    keywords: ["veterinary assistant practice test", "ava practice test", "veterinary assistant practice exam"],
+    keywords: [
+      "veterinary assistant practice test",
+      "ava practice test",
+      "navta ava practice exam",
+      "free veterinary assistant practice test",
+      "veterinary assistant anki",
+    ],
   },
 };

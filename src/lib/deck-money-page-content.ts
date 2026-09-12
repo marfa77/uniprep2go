@@ -84,6 +84,10 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "Planned 60-card NIC-style cosmetology theory Anki. Free 60Q / 75 min diagnostic live now — official NIC theory is typically 110 (100 scored) / 90 min; state CIBs vary.",
   "cdl-general-knowledge-anki-deck":
     "Planned 60-card CDL General Knowledge Anki. Free 60Q / 75 min diagnostic live now — typical state GK is ~50Q / 80%; skills/road and endorsements are separate.",
+  "armed-security-officer-anki-deck":
+    "Planned 60-card armed security Anki. Free 60Q / 75 min written diagnostic live now — state-specific; ≠ unarmed card; range qualification separate.",
+  "veterinary-assistant-anki-deck":
+    "Planned 60-card veterinary assistant / AVA Anki. Free 60Q / 75 min diagnostic live now — official NAVTA AVA typically 100Q / 150 min / 75%. ≠ VTNE.",
   "ielts-toefl-english-for-russian-speakers-anki-deck":
     "$26 / 2504 IELTS–TOEFL English cards with Russian glosses + cognate traps — prefer over free AnkiWeb EN–RU / EVU dumps.",
   "bms-building-automation-anki-deck":
@@ -141,6 +145,10 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Planned NIC-style cosmetology theory Anki for scientific concepts & safety, hair services, skin & nails, and salon/infection-control themes. Free 60-question / 75-minute readiness check is live; NIC Cosmetology Theory is typically 110 items (100 scored) / 90 minutes — verify your state CIB. Theory only — practical exam is separate.",
   "cdl-general-knowledge-anki-deck":
     "Planned CDL General Knowledge Anki for vehicle systems & inspection, safe driving & space management, cargo securement & weight, and emergencies/hours/rules. Free 60-question / 75-minute readiness check is live; typical state GK sittings are ~50Q / 80% — verify your DMV manual. Knowledge only — not skills/road or endorsement tests.",
+  "armed-security-officer-anki-deck":
+    "Planned armed security Anki for use of force & law, weapons safety, patrol & emergencies, and ethics. Free 60-question / 75-minute written readiness check is live; licensing is state-specific — range qualification and unarmed credentials are separate.",
+  "veterinary-assistant-anki-deck":
+    "Planned veterinary assistant Anki for restraint, nursing assist, hospital procedures, and safety/zoonosis. Free 60-question / 75-minute readiness check is live; official NAVTA AVA via VetMedTeam is typically 100Q / 150 min / 75%. Not VTNE.",
   "ielts-toefl-english-for-russian-speakers-anki-deck":
     "2,504 IELTS/TOEFL/Cambridge/PTE English vocabulary cards with Russian glosses, bilingual examples, and native English audio — English-first recall for cognate traps (актуальный≠actual, магазин≠magazine). Ownable $26 .apkg; prefer over free AnkiWeb EN–RU tourist dumps or EVU book mirrors.",
   "bms-building-automation-anki-deck":
@@ -385,6 +393,26 @@ export const positioningOverrides: Partial<
     ],
     summaryProse:
       "CristCDL, US Permit Prep, and state DMV practice banks win on free Q volume and 50Q format match. UniPrep wins when you want a free no-signup timed 60Q diagnostic with topic scoring plus a planned ownable Anki waitlist — not a DMV substitute.",
+  },
+  "armed-security-officer-anki-deck": {
+    ourEdge: [
+      "Planned 60-card armed security written Anki",
+      "Free 60Q / 75 min timed written diagnostic live now",
+      "Honest: licensing is state-specific — no single national form",
+      "≠ Unarmed guard card; range/live-fire qualification separate",
+    ],
+    summaryProse:
+      "OpenExamPrep multi-state banks win on free Q volume. UniPrep wins when you want a free no-signup timed 60Q written diagnostic plus a planned ownable Anki waitlist — not a board substitute and not the range qualification.",
+  },
+  "veterinary-assistant-anki-deck": {
+    ourEdge: [
+      "Planned 60-card veterinary assistant / AVA Anki",
+      "Free 60Q / 75 min timed diagnostic live now",
+      "Honest: official NAVTA AVA typically 100Q / 150 min / 75%",
+      "≠ VTNE (veterinary technician)",
+    ],
+    summaryProse:
+      "OpenExamPrep and VetMedTeam practice options win on AVA-length volume. UniPrep wins when you want a free no-signup timed 60Q diagnostic plus a planned ownable Anki waitlist — not a full 100-item AVA substitute and not VTNE.",
   },
   "ielts-toefl-english-for-russian-speakers-anki-deck": {
     ourEdge: [
@@ -839,6 +867,42 @@ Candidates treat a free 60Q check as the official 50Q form, skip the state handb
 ### What this does not replace
 
 Your state CDL manual, ELDT theory/behind-the-wheel requirements, or DMV scheduling. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not FMCSA or state DMV material.`,
+
+  "armed-security-officer-anki-deck": `### What is inside
+
+Planned **60** flashcards across use of force & law, weapons safety, patrol & emergencies, and ethics & professionalism — the same four topic buckets as the free readiness check.
+
+### Plan with the free armed security mock (live now)
+
+**Start:** Take the [free 60-question Armed Security Officer readiness check](/mock-exams/armed-security-officer-readiness-check) (75 minutes / 70% diagnostic). **Then:** Complete your **state-required firearms training** and study your board manual. **When Anki ships:** 15–20 cards/day on the weakest topic only.
+
+Armed licensing is **state-specific** (e.g. FL Class G, TX Level III, CA BSIS firearm permit). Most pathways need an **unarmed/guard-card** credential first plus a **separate range qualification**. Our mock is a written diagnostic only.
+
+### Pitfalls this deck targets (when live)
+
+Candidates treat a free 60Q check as their state board form, skip live-fire training, or confuse this page with the [unarmed security](/mock-exams/unarmed-security-officer-readiness-check) pathway.
+
+### What this does not replace
+
+Your state board bulletin, instructor-led firearms hours, or range qualification. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not FDACS/BSIS/DPS material.`,
+
+  "veterinary-assistant-anki-deck": `### What is inside
+
+Planned **60** flashcards across animal restraint, nursing assist, hospital procedures, and safety & zoonosis — the same four topic buckets as the free readiness check. Mapped to NAVTA AVA-style assistant themes (NAVTA does not publish domain weights).
+
+### Plan with the free veterinary assistant mock (live now)
+
+**Start:** Take the [free 60-question Veterinary Assistant readiness check](/mock-exams/veterinary-assistant-readiness-check) (75 minutes / 70% diagnostic). **Then:** Use your NAVTA-approved program materials and VetMedTeam practice options. **When Anki ships:** 15–20 cards/day on the weakest topic only.
+
+Official NAVTA AVA via VetMedTeam: typically **100 questions / 150 minutes / 75% / $100** for graduates of a NAVTA-approved program. Our mock is a shorter diagnostic — not a full-length AVA form. **Not the VTNE** (veterinary technician).
+
+### Pitfalls this deck targets (when live)
+
+Candidates treat a 60Q free check as the full AVA form, skip approved-program eligibility, or confuse AVA with VTNE technician prep.
+
+### What this does not replace
+
+NAVTA-approved program completion, VetMedTeam enrollment, or an exam mentor/proctor. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not NAVTA/VetMedTeam material.`,
 
   "norwegian-a2-norskprove-anki-deck": `### Which Norwegian pathways this deck targets
 

@@ -566,6 +566,42 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "CLP / Class A–B applicants who want a free timed General Knowledge baseline before studying their state CDL manual and booking the DMV knowledge test.",
     practiceTestLabel: "CDL General Knowledge practice test",
   },
+  "armed-security-officer-readiness-check": {
+    title: "Free Armed Security Practice Test 2026 | 60Q Written Mock",
+    description:
+      "Free armed security officer practice test — no signup: 60 timed questions, 75 minutes, 70% readiness target — then waitlist for the planned 60-card Anki. State-specific (≠ unarmed card; range qualification separate). Independent — not a state board exam.",
+    keywords: [
+      "armed security practice test",
+      "free armed security guard exam",
+      "armed guard card practice test",
+      "armed security officer practice exam",
+      "armed security anki",
+    ],
+    headline: "Free Armed Security Officer Practice Test — 60 Questions",
+    intro:
+      "A timed written diagnostic across use of force & law, weapons safety, patrol & emergencies, and ethics — then join the planned 60-card Anki waitlist. Armed licensing is state-specific (e.g. FL Class G, TX Level III); most pathways need unarmed credentials first plus separate firearms training and range qualification. This free check is a shorter written diagnostic only — not a live-fire test and not OpenExamPrep’s multi-state volume banks.",
+    audience:
+      "Security professionals upgrading to armed posts who want a free timed written baseline before state-required firearms training and board exams.",
+    practiceTestLabel: "Armed security practice test",
+  },
+  "veterinary-assistant-readiness-check": {
+    title: "Free Veterinary Assistant Practice Test 2026 | 60Q AVA Mock",
+    description:
+      "Free veterinary assistant / AVA-style practice test — no signup: 60 timed questions, 75 minutes, 70% readiness target — then waitlist for the planned 60-card Anki. Official NAVTA AVA is typically 100Q / 150 min / 75%. Independent — not NAVTA material. Not VTNE.",
+    keywords: [
+      "veterinary assistant practice test",
+      "navta ava practice test",
+      "free ava practice exam",
+      "veterinary assistant anki",
+      "ava exam practice questions",
+    ],
+    headline: "Free Veterinary Assistant Practice Test — 60 Questions",
+    intro:
+      "A timed AVA-style diagnostic across animal restraint, nursing assist, hospital procedures, and safety/zoonosis — then join the planned 60-card Anki waitlist. Official NAVTA AVA via VetMedTeam is typically 100 questions / 150 minutes / 75% / $100 for graduates of a NAVTA-approved program. This free check is a shorter diagnostic — not a full-length AVA form and not the VTNE technician exam.",
+    audience:
+      "Veterinary assistant students and graduates preparing for NAVTA AVA-style themes who want a free timed baseline before VetMedTeam’s official exam.",
+    practiceTestLabel: "Veterinary assistant practice test",
+  },
   "leed-green-associate-readiness-check": {
     title: "Free LEED Green Associate Practice Test | 50-Question Readiness Check",
     description:

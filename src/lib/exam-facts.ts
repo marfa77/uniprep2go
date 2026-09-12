@@ -3182,6 +3182,124 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "CDL and FMCSA marks relate to U.S. commercial driver licensing. UniPrep2Go is not affiliated with or endorsed by FMCSA or any state DMV.",
   },
+  "armed-security-officer": {
+    examKey: "armed-security-officer",
+    pageHeading: "Armed Security Officer Exam — Facts & Prep",
+    intro:
+      "Armed security officer licensing is administered by state boards — there is no single national written exam. Pathways usually stack unarmed/guard-card credentials, firearms training hours, a written knowledge test, and a separate range qualification. UniPrep2Go products are independent prep (not state-board material).",
+    exam_facts: {
+      exam_name: "Armed Security Officer / Armed Guard Card (state-specific)",
+      administered_by: "State security licensing boards (e.g. FL FDACS Class G, TX DPS Level III, CA BSIS firearm permit)",
+      question_count: "Varies widely by state (no single national form)",
+      time_limit: "State-specific — verify your board bulletin",
+      passing_score: "State-specific (often ~70–75% on written portions where published)",
+      delivery: "State-approved training schools / licensing vendors; range qualification separate",
+      outline_effective_date: "Current state board bulletins — verify before carrying on duty",
+      verify_at_url: "https://www.dhs.gov/private-security",
+    },
+    official_sources: [
+      {
+        label: "Florida FDACS — Class G (armed) licensing overview",
+        url: "https://www.fdacs.gov/Business-Services/Private-Security-Licenses",
+      },
+      {
+        label: "California BSIS — Firearms permit / security",
+        url: "https://www.bsis.ca.gov/",
+      },
+    ],
+    domain_weights: [
+      { domain: "Use of force & law", weight: "State outline — varies" },
+      { domain: "Weapons safety", weight: "State outline — varies" },
+      { domain: "Patrol & emergencies", weight: "State outline — varies" },
+      { domain: "Ethics & professionalism", weight: "State outline — varies" },
+    ],
+    whats_changed: [
+      "OpenExamPrep and similar sites publish large multi-state free banks — useful for volume; UniPrep is a single no-signup timed diagnostic + planned Anki.",
+      "Armed pathways almost always require live-fire qualification separate from any written practice test.",
+      "Unarmed guard-card / Class D-style credentials are usually prerequisites — do not treat this mock as the unarmed exam.",
+    ],
+    high_yield_facts: [
+      "No single national armed-security MCQ — confirm your state’s hours, written cut score, and range rules.",
+      "UniPrep2Go’s free check is a 60-question / 75-minute written diagnostic — not a board exam and not range qualification.",
+      "≠ Unarmed security officer / guard-card-only pathway (separate UniPrep mock exists).",
+      "Firearms training hours and FOID/CCW-style prerequisites are state-specific.",
+    ],
+    candidate_qa: [
+      {
+        q: "Is there one national armed security exam?",
+        a: "No. Licensing is state-specific. Examples include Florida Class G, Texas Level III, and California BSIS firearm permits — each with its own training and testing rules.",
+      },
+      {
+        q: "Is UniPrep2Go’s armed security check the official exam?",
+        a: "No. The free 60-question / 75-minute check is an independent written diagnostic. The matching Anki deck is planned (waitlist). Not a state board exam.",
+      },
+      {
+        q: "Does this include the firearms range test?",
+        a: "No. This is written knowledge only. Most armed pathways require separate instructor-led firearms training and live-fire qualification.",
+      },
+    ],
+    trademark_note:
+      "State security licensing marks belong to their respective agencies. UniPrep2Go is not affiliated with or endorsed by FDACS, BSIS, DPS, or other boards.",
+  },
+  "navta-ava": {
+    examKey: "navta-ava",
+    pageHeading: "NAVTA AVA Exam — Facts & Prep",
+    intro:
+      "The NAVTA Approved Veterinary Assistant (AVA) designation is for graduates of NAVTA-approved veterinary assistant programs who pass the proprietary AVA exam administered through VetMedTeam. UniPrep2Go products are independent prep (not NAVTA or VetMedTeam material). AVA is not the VTNE.",
+    exam_facts: {
+      exam_name: "NAVTA Approved Veterinary Assistant (AVA) Examination",
+      administered_by: "NAVTA (exam platform: VetMedTeam)",
+      question_count: "100 multiple-choice questions (VetMedTeam public listing)",
+      time_limit: "150 minutes (VetMedTeam / third-party listings — verify at enrollment)",
+      passing_score: "75%",
+      delivery: "Online via VetMedTeam with an approved exam mentor/proctor; program code required",
+      outline_effective_date: "Current NAVTA AVA program skills list — NAVTA does not publish domain weights",
+      verify_at_url: "https://navta.net/veterinary-assistants-program/",
+    },
+    official_sources: [
+      {
+        label: "NAVTA — Veterinary Assistants Program / AVA",
+        url: "https://navta.net/veterinary-assistants-program/",
+      },
+      {
+        label: "VetMedTeam — AVA examination registration",
+        url: "https://www.vetmedteam.com/class.aspx?id=736",
+      },
+    ],
+    domain_weights: [
+      { domain: "Animal restraint", weight: "Skills list — weights not published by NAVTA" },
+      { domain: "Nursing assist", weight: "Skills list — weights not published by NAVTA" },
+      { domain: "Hospital procedures", weight: "Skills list — weights not published by NAVTA" },
+      { domain: "Safety & zoonosis", weight: "Skills list — weights not published by NAVTA" },
+    ],
+    whats_changed: [
+      "NAVTA (effective mid-2026 policy messaging) states it has not reviewed or endorsed third-party online AVA prep courses — prefer VetMedTeam practice options and your approved program materials.",
+      "Official AVA remains 100Q / 75% / $100 per attempt via VetMedTeam for approved-program graduates.",
+      "Do not confuse AVA with VTNE (AAVSB veterinary technician national exam).",
+    ],
+    high_yield_facts: [
+      "Official AVA: typically 100 questions / 150 minutes / 75% / $100 — verify at VetMedTeam enrollment.",
+      "Eligibility: graduate of a NAVTA-approved VA program + program code + exam mentor.",
+      "UniPrep2Go’s free check is a shorter 60-question / 75-minute diagnostic — not a full-length AVA form.",
+      "≠ VTNE / veterinary technician credential.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the NAVTA AVA exam?",
+        a: "VetMedTeam lists the AVA exam as 100 multiple-choice questions with a 75% pass. Confirm time limit and attempt rules when you enroll.",
+      },
+      {
+        q: "Is AVA the same as VTNE?",
+        a: "No. AVA is the veterinary assistant designation. VTNE is the national exam for veterinary technicians / nurses.",
+      },
+      {
+        q: "Is UniPrep2Go’s veterinary assistant check the official AVA exam?",
+        a: "No. The free 60-question / 75-minute check is an independent diagnostic. The matching Anki deck is planned (waitlist). Not NAVTA or VetMedTeam material.",
+      },
+    ],
+    trademark_note:
+      "NAVTA® and AVA® marks belong to the National Association of Veterinary Technicians in America. UniPrep2Go is not affiliated with or endorsed by NAVTA or VetMedTeam.",
+  },
 };
 
 /** Deck slug → shared exam profile key. Language decks are omitted intentionally. */
@@ -3232,6 +3350,8 @@ const deckExamKeyMap: Record<string, string> = {
   "nha-cbcs-anki-deck": "nha-cbcs",
   "cosmetology-state-anki-deck": "nic-cosmetology-theory",
   "cdl-general-knowledge-anki-deck": "cdl-general-knowledge",
+  "armed-security-officer-anki-deck": "armed-security-officer",
+  "veterinary-assistant-anki-deck": "navta-ava",
   "us-citizenship-test-prep2go-app": "us-citizenship",
   "leben-in-deutschland-prep2go-app": "leben-in-deutschland",
   "naturalisation-francaise-prep2go-app": "naturalisation-francaise",
