@@ -145,7 +145,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "cards": "2000",
         "format_note": "Anki .apkg with audio and images",
-        "sample_captions": ["school", "werken", "ziekenhuis"],
+        "sample_captions": ["zijn", "ik", "jij"],
         "facts": [
             ("Pathways", "Inburgering · NT2 A2"),
             ("Cards", "2000 vocabulary"),
