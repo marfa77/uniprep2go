@@ -9,6 +9,7 @@ import {
   trafficChannelLabels,
   type TrafficChannel,
 } from "./traffic-channel";
+import { detectBotBurstDay, filterBotBurstDailyCounts } from "./traffic-bot-burst";
 import { emptyThreadsMetrics, type DailyTrafficSnapshot, type ProductUniqueMetrics } from "./visitor-metrics";
 
 export function shouldReturnStats(text: string) {
@@ -69,8 +70,9 @@ export function formatSevenDayDynamics(
   dailyPageViews: Record<string, number>,
   days = 7,
   now = new Date(),
+  dailySnapshots?: Record<string, DailyTrafficSnapshot>,
 ) {
-  return formatSevenDayGrowthSection(dailyUnique, dailyPageViews, days, now);
+  return formatSevenDayGrowthSection(dailyUnique, dailyPageViews, days, now, dailySnapshots);
 }
 
 function sumDailyWindow(dailyUnique: Record<string, number>, dayKeys: string[]) {
@@ -89,11 +91,21 @@ function recentDayKeys(days: number, anchorDate = new Date()) {
   return keys;
 }
 
-export function computeGrowthSignal(dailyUnique: Record<string, number>, now = new Date()) {
+export function computeGrowthSignal(
+  dailyUnique: Record<string, number>,
+  now = new Date(),
+  dailySnapshots?: Record<string, DailyTrafficSnapshot>,
+) {
   const last7 = recentDayKeys(7, now);
   const previous7 = recentDayKeys(7, new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000));
-  const current = sumDailyWindow(dailyUnique, last7);
-  const previous = sumDailyWindow(dailyUnique, previous7);
+  const { filteredUnique } = filterBotBurstDailyCounts(
+    dailyUnique,
+    {},
+    dailySnapshots,
+    [...last7, ...previous7],
+  );
+  const current = sumDailyWindow(filteredUnique, last7);
+  const previous = sumDailyWindow(filteredUnique, previous7);
 
   if (current === 0 && previous === 0) {
     return { label: "— no traffic yet", deltaPercent: 0 };
@@ -317,6 +329,12 @@ export function formatYesterdaySection(stats: FunnelStats, now = new Date(), pat
     );
   }
 
+  const burst = detectBotBurstDay(snapshot);
+
+  if (burst.isBurst) {
+    lines.push(`⚠ bot burst — excluded from 7d growth (${burst.reason})`);
+  }
+
   return lines.join("\n");
 }
 
@@ -325,28 +343,57 @@ export function formatSevenDayGrowthSection(
   dailyPageViews: Record<string, number>,
   days = 7,
   now = new Date(),
+  dailySnapshots?: Record<string, DailyTrafficSnapshot>,
 ) {
   const dayKeys = recentDayKeys(days, now);
   const previousKeys = recentDayKeys(days, new Date(now.getTime() - days * 24 * 60 * 60 * 1000));
-  const currentUnique = sumDailyWindow(dailyUnique, dayKeys);
-  const previousUnique = sumDailyWindow(dailyUnique, previousKeys);
-  const currentViews = sumDailyWindow(dailyPageViews, dayKeys);
+  const { filteredUnique, filteredViews, burstDays } = filterBotBurstDailyCounts(
+    dailyUnique,
+    dailyPageViews,
+    dailySnapshots,
+    [...dayKeys, ...previousKeys],
+  );
+  const currentUnique = sumDailyWindow(filteredUnique, dayKeys);
+  const previousUnique = sumDailyWindow(filteredUnique, previousKeys);
+  const currentViews = sumDailyWindow(filteredViews, dayKeys);
   const avgUnique = dayKeys.length > 0 ? currentUnique / dayKeys.length : 0;
+  const burstByDay = new Map(burstDays.map((entry) => [entry.day, entry]));
 
   const chartLines = dayKeys.map((day) => {
     const visitors = dailyUnique[day] ?? 0;
     const views = dailyPageViews[day] ?? 0;
-    const marker = day === dayOffsetUtc(now, 1) ? " ← yesterday" : "";
+    const burst = burstByDay.get(day);
+    const barCount = burst ? 0 : visitors;
+    const marker =
+      day === dayOffsetUtc(now, 1)
+        ? burst
+          ? " ← yesterday · bot"
+          : " ← yesterday"
+        : burst
+          ? " ← bot"
+          : "";
 
-    return `  ${formatShortDate(day)}: ${String(visitors).padStart(2, " ")}u / ${String(views).padStart(3, " ")}v${formatVisitorBar(visitors)}${marker}`;
+    return `  ${formatShortDate(day)}: ${String(visitors).padStart(2, " ")}u / ${String(views).padStart(3, " ")}v${formatVisitorBar(barCount)}${marker}`;
   });
 
-  return [
+  const lines = [
     "▸ LAST 7 DAYS · unique / views per UTC day",
     ...chartLines,
-    `Σ7d: ${currentUnique} unique · ${currentViews} views · avg ${avgUnique.toFixed(1)}u/day`,
-    `vs prior 7d unique: ${formatSignedPercentDelta(currentUnique, previousUnique)} · ${computeGrowthSignal(dailyUnique, now).label}`,
-  ].join("\n");
+    `Σ7d: ${currentUnique} unique · ${currentViews} views · avg ${avgUnique.toFixed(1)}u/day${
+      burstDays.some((entry) => dayKeys.includes(entry.day)) ? " (bot bursts excluded)" : ""
+    }`,
+    `vs prior 7d unique: ${formatSignedPercentDelta(currentUnique, previousUnique)} · ${computeGrowthSignal(dailyUnique, now, dailySnapshots).label}`,
+  ];
+
+  if (burstDays.some((entry) => dayKeys.includes(entry.day))) {
+    const notes = burstDays
+      .filter((entry) => dayKeys.includes(entry.day))
+      .map((entry) => `${formatShortDate(entry.day)} raw ${entry.unique}u/${entry.views}v`)
+      .join(" · ");
+    lines.push(`Filtered bot burst: ${notes}`);
+  }
+
+  return lines.join("\n");
 }
 
 function formatPeriodFunnelSection(stats: FunnelStats) {
@@ -818,7 +865,13 @@ export function toTelegramStatsMessages(stats: FunnelStats, now = new Date()) {
     "",
     formatYesterdaySection(stats, now),
     "",
-    formatSevenDayGrowthSection(visitors.dailyUnique, visitors.dailyPageViews, 7, now),
+    formatSevenDayGrowthSection(
+      visitors.dailyUnique,
+      visitors.dailyPageViews,
+      7,
+      now,
+      visitors.dailySnapshots,
+    ),
     "",
     formatPeriodFunnelSection(stats),
     "",

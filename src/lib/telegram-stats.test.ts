@@ -520,6 +520,7 @@ describe("telegram stats", () => {
       sampleStats.visitors.dailyPageViews,
       7,
       new Date("2026-06-10T12:00:00.000Z"),
+      sampleStats.visitors.dailySnapshots,
     );
 
     expect(block).toContain("▸ LAST 7 DAYS · unique / views per UTC day");
@@ -529,6 +530,53 @@ describe("telegram stats", () => {
     expect(block).toContain("← yesterday");
     expect(block).toContain("Σ7d:");
     expect(block).toContain("vs prior 7d unique:");
+    expect(block).not.toContain("(bot bursts excluded)");
+  });
+
+  it("excludes bot-burst days from 7d growth totals", () => {
+    const now = new Date("2026-09-18T12:00:00.000Z");
+    const paths: Record<string, { unique: number; views: number }> = {};
+
+    for (let index = 0; index < 120; index += 1) {
+      paths[`/decks/path-${index}`] = { unique: 1, views: 2 };
+    }
+
+    const dailyUnique: Record<string, number> = {
+      "2026-09-12": 6,
+      "2026-09-13": 13,
+      "2026-09-14": 15,
+      "2026-09-15": 9,
+      "2026-09-16": 13,
+      "2026-09-17": 477,
+      "2026-09-18": 5,
+    };
+    const dailyPageViews: Record<string, number> = {
+      "2026-09-12": 13,
+      "2026-09-13": 19,
+      "2026-09-14": 29,
+      "2026-09-15": 17,
+      "2026-09-16": 26,
+      "2026-09-17": 898,
+      "2026-09-18": 9,
+    };
+    const dailySnapshots = {
+      "2026-09-17": {
+        unique: 477,
+        pageViews: 898,
+        paths,
+        byChannel: { google: 0, chatgpt: 0, llm: 0, direct: 475, other: 2 },
+        byCountry: { SG: 458, CN: 9, US: 6 },
+      },
+    };
+
+    const block = formatSevenDayDynamics(dailyUnique, dailyPageViews, 7, now, dailySnapshots);
+
+    expect(block).toContain("17.09: 477u / 898v");
+    expect(block).toContain("← yesterday · bot");
+    expect(block).toContain("Σ7d: 61 unique");
+    expect(block).toContain("(bot bursts excluded)");
+    expect(block).toContain("Filtered bot burst: 17.09 raw 477u/898v");
+    expect(block).not.toContain("Σ7d: 538 unique");
   });
 
   it("computes growth vs prior week", () => {
