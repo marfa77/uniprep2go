@@ -180,37 +180,79 @@ describe("telegram stats", () => {
     expect(message).toContain("Errors: none");
   });
 
-  it("formats a growth-focused stats message", () => {
+  it("formats a growth card that reads as a full story", () => {
     const now = new Date("2026-06-10T12:00:00.000Z");
     const messages = toTelegramStatsMessages(sampleStats, now);
     const message = toTelegramStatsMessage(sampleStats, now);
 
     expect(messages).toHaveLength(1);
-    expect(message).toContain("UniPrep2Go · growth pulse");
-    expect(message).toContain("▸ YESTERDAY · 09.06 UTC");
-    expect(message).toContain("23 unique · 88 views");
+    expect(message).toContain("UniPrep2Go · growth card · UTC · 10.06");
+    expect(message).toContain("▸ Now");
+    expect(message).toContain("Lifetime 128u · period 23u");
+    expect(message).toContain("Money path so far:");
+    expect(message).toContain("▸ Today · 10.06 UTC");
+    expect(message).toContain("▸ Yesterday · 09.06 UTC");
+    expect(message).toContain("23u · 88v");
     expect(message).toContain("/decks/cfa-level-1-anki-deck — 12v (8u)");
-    expect(message).toContain("▸ LAST 7 DAYS · unique / views per UTC day");
-    expect(message).toContain("← yesterday");
-    expect(message).toContain("▸ PERIOD TOTAL · since reset");
-    expect(message).toContain("23 unique (new 18 · returning 5 (21.7% return rate))");
-    expect(message).toContain("Mock: 3 starts (exam 2 · learn 1)");
-    expect(message).toContain("▸ TOP SKUs (period");
+    expect(message).toContain("▸ Period money");
     expect(message).toContain("cfa-level-1-anki-deck: 14 view → 2 intent → 1 convert (7.1%)");
-    expect(message).toContain("▸ ACQUISITION");
-    expect(message).toContain("▸ THREADS · @uniprep2go");
-    expect(message).toContain("no tagged Threads clicks yet");
+    expect(message).toContain("▸ Acquisition");
+    expect(message).toContain("▸ Threads · @uniprep2go");
+    expect(message).toContain("No tagged Threads clicks yet.");
+    expect(message).toContain("▸ Week · unique / views per UTC day");
+    expect(message).toContain("← yesterday");
+    expect(message).toContain("redis · lifetime 128u");
     expect(message).not.toContain("Top pages (period):");
     expect(message).not.toContain("Динамика 7 дней");
   });
 
-  it("explains yesterday paths from dailySnapshots", () => {
-    const block = formatYesterdaySection(sampleStats, new Date("2026-06-10T12:00:00.000Z"));
+  it("cuts bot-burst yesterday out of the story card", () => {
+    const paths: Record<string, { unique: number; views: number }> = {};
+    for (let index = 0; index < 120; index += 1) {
+      paths[`/path-${index}`] = { unique: 1, views: 2 };
+    }
 
-    expect(block).toContain("▸ YESTERDAY · 09.06 UTC");
-    expect(block).toContain("Top paths:");
-    expect(block).toContain("/decks/cfa-level-1-anki-deck — 12v (8u)");
-    expect(block).toContain("+1u");
+    const block = formatYesterdaySection(
+      {
+        ...sampleStats,
+        visitors: {
+          ...sampleStats.visitors,
+          dailyUnique: {
+            ...sampleStats.visitors.dailyUnique,
+            "2026-06-09": 477,
+            "2026-06-08": 13,
+          },
+          dailyPageViews: {
+            ...sampleStats.visitors.dailyPageViews,
+            "2026-06-09": 898,
+            "2026-06-08": 26,
+          },
+          dailySnapshots: {
+            "2026-06-09": {
+              unique: 477,
+              pageViews: 898,
+              paths,
+              byChannel: { google: 0, chatgpt: 0, llm: 0, direct: 475, other: 2 },
+              byCountry: { SG: 458, CN: 9, US: 6 },
+            },
+            "2026-06-08": {
+              unique: 13,
+              pageViews: 26,
+              paths: { "/": { unique: 5, views: 8 } },
+              byChannel: { google: 2, chatgpt: 0, llm: 1, direct: 8, other: 2 },
+              byCountry: { US: 7, DE: 3 },
+            },
+          },
+        },
+      },
+      new Date("2026-06-10T12:00:00.000Z"),
+    );
+
+    expect(block).toContain("Cut bot burst");
+    expect(block).toContain("Raw scraped 477u / 898v");
+    expect(block).toContain("Human baseline: 08.06 · 13u / 26v");
+    expect(block).not.toContain("Top paths:");
+    expect(block).not.toContain("Sources: Google 0");
   });
 
   it("formats Google and LLM top pages from recent events", () => {
@@ -523,14 +565,15 @@ describe("telegram stats", () => {
       sampleStats.visitors.dailySnapshots,
     );
 
-    expect(block).toContain("▸ LAST 7 DAYS · unique / views per UTC day");
+    expect(block).toContain("▸ Week · unique / views per UTC day");
     expect(block).toContain("04.06:  0u /   0v ·");
     expect(block).toContain("05.06: 10u / 114v ▪▪▪▪▪▪▪▪▪▪");
     expect(block).toContain("09.06: 23u /  88v");
     expect(block).toContain("← yesterday");
     expect(block).toContain("Σ7d:");
-    expect(block).toContain("vs prior 7d unique:");
+    expect(block).toContain("vs prior 7d:");
     expect(block).not.toContain("(bot bursts excluded)");
+    expect(block).not.toContain("(bot bursts excluded from Σ)");
   });
 
   it("excludes bot-burst days from 7d growth totals", () => {
@@ -571,10 +614,9 @@ describe("telegram stats", () => {
 
     const block = formatSevenDayDynamics(dailyUnique, dailyPageViews, 7, now, dailySnapshots);
 
-    expect(block).toContain("17.09: 477u / 898v");
-    expect(block).toContain("← yesterday · bot");
-    expect(block).toContain("Σ7d: 61 unique");
-    expect(block).toContain("(bot bursts excluded)");
+    expect(block).toContain("17.09:  — bot (477u/898v raw) ← yesterday · bot cut");
+    expect(block).toContain("Σ7d: 61u");
+    expect(block).toContain("(bot bursts excluded from Σ)");
     expect(block).toContain("Filtered bot burst: 17.09 raw 477u/898v");
     expect(block).not.toContain("Σ7d: 538 unique");
   });
@@ -619,10 +661,11 @@ describe("telegram stats", () => {
       },
     });
 
+    expect(message).toContain("Top SKUs (view → intent/start → convert):");
     expect(message).toContain("deck-1: 15 view");
     expect(message).toContain("deck-5: 11 view");
     expect(message).not.toContain("deck-6:");
-    expect(message).toContain("- ...and 10 more SKUs");
+    expect(message).toContain("- …and 10 more SKUs");
   });
 
   it("splits only when the message is too long", () => {
@@ -664,9 +707,9 @@ describe("telegram stats", () => {
       now,
     );
 
-    expect(block).toContain("▸ THREADS · @uniprep2go");
-    expect(block).toContain("Σ7d: 1 unique · 2 views · 1 mock starts");
+    expect(block).toContain("▸ Threads · @uniprep2go");
+    expect(block).toContain("7d 1u / 2v · 1 mock starts");
     expect(block).toContain("/mock-exams/sie-full-mock");
-    expect(block).not.toContain("no tagged Threads clicks yet");
+    expect(block).not.toContain("No tagged Threads clicks yet.");
   });
 });

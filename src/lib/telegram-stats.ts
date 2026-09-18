@@ -208,6 +208,20 @@ function formatSignedCountDelta(current: number, previous: number) {
   return delta > 0 ? `+${delta}` : `${delta}`;
 }
 
+/** Delta label with unit: +3u / new / flat / — */
+function formatCountDeltaWithUnit(current: number, previous: number, unit: string) {
+  if (previous <= 0) {
+    return current > 0 ? "new" : "—";
+  }
+
+  const delta = current - previous;
+  if (delta === 0) {
+    return "flat";
+  }
+
+  return `${delta > 0 ? "+" : ""}${delta}${unit}`;
+}
+
 function formatSignedPercentDelta(current: number, previous: number) {
   if (previous <= 0) {
     return current > 0 ? "+∞%" : "—";
@@ -215,6 +229,184 @@ function formatSignedPercentDelta(current: number, previous: number) {
 
   const deltaPercent = Math.round(((current - previous) / previous) * 100);
   return `${deltaPercent >= 0 ? "+" : ""}${deltaPercent}%`;
+}
+
+function daySnapshotMetrics(
+  stats: FunnelStats,
+  day: string,
+): { unique: number; views: number; snapshot?: DailyTrafficSnapshot } {
+  const snapshot = stats.visitors.dailySnapshots[day];
+  return {
+    unique: snapshot?.unique ?? stats.visitors.dailyUnique[day] ?? 0,
+    views: snapshot?.pageViews ?? stats.visitors.dailyPageViews[day] ?? 0,
+    snapshot,
+  };
+}
+
+function shortProductLabel(productKey: string) {
+  return productKey
+    .replace(/^mock:/, "m·")
+    .replace(/-anki-deck$/, "")
+    .replace(/-readiness-check$/, "")
+    .replace(/-full-mock$/, "")
+    .replace(/-practice-test$/, "");
+}
+
+function formatCompactProduct(productKey: string, metrics: ProductUniqueMetrics) {
+  const label = shortProductLabel(productKey);
+  const rate = formatRate(metrics.conversions, metrics.visitors);
+
+  if (productKey.startsWith("mock:")) {
+    return `${label} ${metrics.visitors}v→${metrics.intents}s→${metrics.completions}d`;
+  }
+
+  return `${label} ${metrics.visitors}v→${metrics.conversions}c (${rate})`;
+}
+
+function compactPathRanks(
+  ranked: Array<{ path: string; unique: number; views: number }>,
+  limit = 3,
+) {
+  if (ranked.length === 0) {
+    return "—";
+  }
+
+  return ranked
+    .slice(0, limit)
+    .map((row) => {
+      const path = row.path.length <= 28 ? row.path : `${row.path.slice(0, 25)}…`;
+      return `${path} ${row.unique}u`;
+    })
+    .join(" · ");
+}
+
+function findLastHumanDay(
+  stats: FunnelStats,
+  now: Date,
+  startOffset: number,
+): { day: string; unique: number; views: number; snapshot?: DailyTrafficSnapshot } {
+  for (let offset = startOffset; offset <= 14; offset += 1) {
+    const day = dayOffsetUtc(now, offset);
+    const metrics = daySnapshotMetrics(stats, day);
+    if (detectBotBurstDay(metrics.snapshot).isBurst) {
+      continue;
+    }
+    return { day, ...metrics };
+  }
+
+  const fallbackDay = dayOffsetUtc(now, startOffset);
+  return { day: fallbackDay, ...daySnapshotMetrics(stats, fallbackDay) };
+}
+
+function sumKnownBotBurstUniques(stats: FunnelStats, now: Date, days = 14) {
+  let total = 0;
+  const reasons: string[] = [];
+
+  for (let offset = 0; offset < days; offset += 1) {
+    const day = dayOffsetUtc(now, offset);
+    const metrics = daySnapshotMetrics(stats, day);
+    const verdict = detectBotBurstDay(metrics.snapshot);
+    if (!verdict.isBurst) {
+      continue;
+    }
+    total += metrics.unique;
+    reasons.push(`${formatShortDate(day)} ${metrics.unique}u`);
+  }
+
+  return { total, reasons };
+}
+
+/**
+ * Full growth card — reads as a story with complete chapters:
+ * now → today → yesterday → period money → acquisition → threads → week.
+ */
+export function formatPulseSection(stats: FunnelStats, now = new Date()) {
+  const todayKey = dayOffsetUtc(now, 0);
+  const mockStarts = countMockStartsByMode(stats.bySource);
+  const visitors = stats.visitors;
+  const completed = stats.byEvent.mock_completed ?? 0;
+  const checkout = stats.byEvent.checkout_click ?? 0;
+  const deckCta = stats.byEvent.mock_deck_cta_click ?? 0;
+  const botCut = sumKnownBotBurstUniques(stats, now);
+  const humanPeriod =
+    botCut.total > 0 ? Math.max(0, visitors.periodUnique - botCut.total) : visitors.periodUnique;
+
+  const lines = [
+    `UniPrep2Go · growth card · UTC · ${formatShortDate(todayKey)}`,
+    `Period ${formatPeriodRange(stats)}`,
+    "",
+    "▸ Now",
+    `Lifetime ${visitors.lifetimeUnique}u · period ${humanPeriod}u${
+      botCut.total > 0 ? ` human-est (raw ${visitors.periodUnique}u − ${botCut.total}u bot)` : ""
+    } (${formatReturningUsers(visitors.periodNew, visitors.periodReturning, visitors.periodUnique)})`,
+    `Money path so far: ${mockStarts.total} mock starts (${mockStarts.exam} exam · ${mockStarts.learn} learn) → ${completed} done · ${deckCta} deck CTA · ${checkout} checkout`,
+  ];
+
+  if (botCut.total > 0) {
+    lines.push(`Bot days cut: ${botCut.reasons.join(" · ")}`);
+  }
+
+  return lines.join("\n");
+}
+
+export function formatTodaySection(stats: FunnelStats, now = new Date(), pathLimit = 5) {
+  const todayKey = dayOffsetUtc(now, 0);
+  const today = daySnapshotMetrics(stats, todayKey);
+  const compare = findLastHumanDay(stats, now, 1);
+  const events = countRecentDayEvents(stats.recentEvents, todayKey);
+  const snapshot = today.snapshot;
+  const compareLabel =
+    compare.day === dayOffsetUtc(now, 1)
+      ? "yesterday"
+      : `last human day ${formatShortDate(compare.day)}`;
+
+  const lines = [
+    `▸ Today · ${formatShortDate(todayKey)} UTC`,
+    `${today.unique}u · ${today.views}v (${formatCountDeltaWithUnit(today.unique, compare.unique, "u")} · ${formatCountDeltaWithUnit(today.views, compare.views, "v")} vs ${compareLabel})`,
+    `Actions: ${events.mock_started} start → ${events.mock_completed} done · ${events.checkout_click} checkout · ${events.mock_deck_cta_click} deck CTA`,
+  ];
+
+  if (snapshot && !detectBotBurstDay(snapshot).isBurst) {
+    lines.push(
+      `Sources: ${formatChannelLine(snapshot.byChannel)}`,
+      `Countries: ${formatTopCountries(snapshot.byCountry, {}, 6)}`,
+    );
+    const paths = rankDailyPaths(snapshot);
+    if (paths.length > 0) {
+      lines.push("Top paths:", ...formatDailyPathLines(snapshot, pathLimit, "no paths"));
+    }
+  } else if (today.unique === 0 && today.views === 0) {
+    lines.push("Quiet so far today.");
+  }
+
+  return lines.join("\n");
+}
+
+export function formatFunnelSection(
+  stats: FunnelStats,
+  products: Array<[string, ProductUniqueMetrics]>,
+  skuLimit = 5,
+) {
+  const visitors = stats.visitors;
+  const lines = [
+    "▸ Period money",
+    `Traffic: ${formatChannelLine(visitors.periodByChannel)}`,
+    `Countries: ${formatTopCountries(visitors.periodByCountry, stats.byCountry, 6)}`,
+    "Top SKUs (view → intent/start → convert):",
+  ];
+
+  if (products.length === 0) {
+    lines.push("- no product traffic yet");
+  } else {
+    for (const [key, metrics] of products.slice(0, skuLimit)) {
+      lines.push(formatProductLine(key, metrics));
+    }
+    if (products.length > skuLimit) {
+      lines.push(`- …and ${products.length - skuLimit} more SKUs`);
+    }
+  }
+
+  return lines.join("\n");
 }
 
 export function dayOffsetUtc(now: Date, offsetDays: number) {
@@ -284,18 +476,43 @@ function countRecentDayEvents(recentEvents: FunnelEvent[], day: string) {
 
 export function formatYesterdaySection(stats: FunnelStats, now = new Date(), pathLimit = 6) {
   const yesterday = dayOffsetUtc(now, 1);
-  const dayBefore = dayOffsetUtc(now, 2);
   const snapshot = stats.visitors.dailySnapshots[yesterday];
-  const previousSnapshot = stats.visitors.dailySnapshots[dayBefore];
   const unique = snapshot?.unique ?? stats.visitors.dailyUnique[yesterday] ?? 0;
   const views = snapshot?.pageViews ?? stats.visitors.dailyPageViews[yesterday] ?? 0;
+  const dayEvents = countRecentDayEvents(stats.recentEvents, yesterday);
+  const burst = detectBotBurstDay(snapshot);
+
+  if (burst.isBurst) {
+    const human = findLastHumanDay(stats, now, 2);
+    const lines = [
+      `▸ Yesterday · ${formatShortDate(yesterday)} UTC`,
+      `Cut bot burst (${burst.reason})`,
+      `Raw scraped ${unique}u / ${views}v — removed from growth card`,
+      `Human baseline: ${formatShortDate(human.day)} · ${human.unique}u / ${human.views}v`,
+    ];
+
+    if (
+      dayEvents.mock_started > 0 ||
+      dayEvents.mock_completed > 0 ||
+      dayEvents.checkout_click > 0 ||
+      dayEvents.mock_deck_cta_click > 0
+    ) {
+      lines.push(
+        `Real actions that day: ${dayEvents.mock_started} start → ${dayEvents.mock_completed} done · ${dayEvents.checkout_click} checkout · ${dayEvents.mock_deck_cta_click} deck CTA`,
+      );
+    }
+
+    return lines.join("\n");
+  }
+
+  const dayBefore = dayOffsetUtc(now, 2);
+  const previousSnapshot = stats.visitors.dailySnapshots[dayBefore];
   const prevUnique = previousSnapshot?.unique ?? stats.visitors.dailyUnique[dayBefore] ?? 0;
   const prevViews = previousSnapshot?.pageViews ?? stats.visitors.dailyPageViews[dayBefore] ?? 0;
-  const dayEvents = countRecentDayEvents(stats.recentEvents, yesterday);
 
   const lines = [
-    `▸ YESTERDAY · ${formatShortDate(yesterday)} UTC`,
-    `${unique} unique · ${views} views (${formatSignedCountDelta(unique, prevUnique)}u · ${formatSignedCountDelta(views, prevViews)}v vs ${formatShortDate(dayBefore)})`,
+    `▸ Yesterday · ${formatShortDate(yesterday)} UTC`,
+    `${unique}u · ${views}v (${formatCountDeltaWithUnit(unique, prevUnique, "u")} · ${formatCountDeltaWithUnit(views, prevViews, "v")} vs ${formatShortDate(dayBefore)})`,
   ];
 
   if (snapshot) {
@@ -329,12 +546,6 @@ export function formatYesterdaySection(stats: FunnelStats, now = new Date(), pat
     );
   }
 
-  const burst = detectBotBurstDay(snapshot);
-
-  if (burst.isBurst) {
-    lines.push(`⚠ bot burst — excluded from 7d growth (${burst.reason})`);
-  }
-
   return lines.join("\n");
 }
 
@@ -363,26 +574,29 @@ export function formatSevenDayGrowthSection(
     const visitors = dailyUnique[day] ?? 0;
     const views = dailyPageViews[day] ?? 0;
     const burst = burstByDay.get(day);
-    const barCount = burst ? 0 : visitors;
     const marker =
       day === dayOffsetUtc(now, 1)
         ? burst
-          ? " ← yesterday · bot"
+          ? " ← yesterday · bot cut"
           : " ← yesterday"
         : burst
-          ? " ← bot"
+          ? " ← bot cut"
           : "";
 
-    return `  ${formatShortDate(day)}: ${String(visitors).padStart(2, " ")}u / ${String(views).padStart(3, " ")}v${formatVisitorBar(barCount)}${marker}`;
+    if (burst) {
+      return `  ${formatShortDate(day)}:  — bot (${visitors}u/${views}v raw)${marker}`;
+    }
+
+    return `  ${formatShortDate(day)}: ${String(visitors).padStart(2, " ")}u / ${String(views).padStart(3, " ")}v${formatVisitorBar(visitors)}${marker}`;
   });
 
   const lines = [
-    "▸ LAST 7 DAYS · unique / views per UTC day",
+    "▸ Week · unique / views per UTC day",
     ...chartLines,
-    `Σ7d: ${currentUnique} unique · ${currentViews} views · avg ${avgUnique.toFixed(1)}u/day${
-      burstDays.some((entry) => dayKeys.includes(entry.day)) ? " (bot bursts excluded)" : ""
+    `Σ7d: ${currentUnique}u · ${currentViews}v · avg ${avgUnique.toFixed(1)}u/day${
+      burstDays.some((entry) => dayKeys.includes(entry.day)) ? " (bot bursts excluded from Σ)" : ""
     }`,
-    `vs prior 7d unique: ${formatSignedPercentDelta(currentUnique, previousUnique)} · ${computeGrowthSignal(dailyUnique, now, dailySnapshots).label}`,
+    `vs prior 7d: ${formatSignedPercentDelta(currentUnique, previousUnique)} · ${computeGrowthSignal(dailyUnique, now, dailySnapshots).label}`,
   ];
 
   if (burstDays.some((entry) => dayKeys.includes(entry.day))) {
@@ -430,7 +644,7 @@ function formatAcquisitionSection(stats: FunnelStats, limit = 3) {
     (stats.visitors.periodByChannel.chatgpt ?? 0) + (stats.visitors.periodByChannel.llm ?? 0);
 
   if (googlePeriod === 0 && llmPeriod === 0) {
-    return "▸ ACQUISITION\n- no Google/LLM uniques this period yet";
+    return "▸ Acquisition\nNo Google/LLM uniques this period yet.";
   }
 
   const google = pickChannelPathRanks(
@@ -444,18 +658,18 @@ function formatAcquisitionSection(stats: FunnelStats, limit = 3) {
     aggregateTopPathsByChannels(stats.recentEvents, ["chatgpt", "llm"]).ranked,
   );
 
-  const lines = ["▸ ACQUISITION · period Google / LLM landing pages"];
+  const lines = ["▸ Acquisition · where organic/LLM land"];
 
   if (googlePeriod > 0) {
     lines.push(
-      `Google (${googlePeriod}u):`,
+      `Google · ${googlePeriod}u`,
       ...formatRankedPathLines(google.ranked, limit, "none yet", true).map((line) => `  ${line}`),
     );
   }
 
   if (llmPeriod > 0) {
     lines.push(
-      `LLM (${llmPeriod}u):`,
+      `LLM · ${llmPeriod}u`,
       ...formatRankedPathLines(llm.ranked, limit, "none yet", true).map((line) => `  ${line}`),
     );
   }
@@ -808,16 +1022,6 @@ export function formatThreadsSection(stats: FunnelStats, now = new Date(), pathL
   const currentViews = sumDailyWindow(threads.dailyViews, dayKeys);
   const currentStarts = sumDailyWindow(threads.dailyMockStarts, dayKeys);
 
-  const chartLines = dayKeys.map((day) => {
-    const unique = threads.dailyUnique[day] ?? 0;
-    const views = threads.dailyViews[day] ?? 0;
-    const starts = threads.dailyMockStarts[day] ?? 0;
-    const marker = day === dayOffsetUtc(now, 1) ? " ← yesterday" : "";
-    const bar = unique > 0 ? formatVisitorBar(unique) : " ·";
-
-    return `  ${formatShortDate(day)}: ${String(unique).padStart(2, " ")}u / ${String(views).padStart(3, " ")}v · ${starts} start${bar}${marker}`;
-  });
-
   const pathVisitors = new Map<string, Set<string>>();
   const pathViews = new Map<string, number>();
 
@@ -833,17 +1037,28 @@ export function formatThreadsSection(stats: FunnelStats, now = new Date(), pathL
   }
 
   const ranked = rankPaths(pathVisitors, pathViews);
+  const activeDays = dayKeys.filter((day) => (threads.dailyUnique[day] ?? 0) > 0);
   const lines = [
-    "▸ THREADS · @uniprep2go · tagged links (utm_source=threads)",
-    ...chartLines,
-    `Σ7d: ${currentUnique} unique · ${currentViews} views · ${currentStarts} mock starts`,
-    `Period ${threads.periodUnique}u · lifetime ${threads.lifetimeUnique}u`,
+    "▸ Threads · @uniprep2go (utm_source=threads)",
+    `7d ${currentUnique}u / ${currentViews}v · ${currentStarts} mock starts · period ${threads.periodUnique}u · lifetime ${threads.lifetimeUnique}u`,
   ];
 
+  if (activeDays.length > 0) {
+    for (const day of activeDays) {
+      const unique = threads.dailyUnique[day] ?? 0;
+      const views = threads.dailyViews[day] ?? 0;
+      const starts = threads.dailyMockStarts[day] ?? 0;
+      const marker = day === dayOffsetUtc(now, 1) ? " ← yesterday" : "";
+      lines.push(
+        `  ${formatShortDate(day)}: ${unique}u / ${views}v · ${starts} start${formatVisitorBar(unique)}${marker}`,
+      );
+    }
+  }
+
   if (ranked.length > 0) {
-    lines.push("Top (recent window):", ...formatRankedPathLines(ranked, pathLimit, "none yet"));
+    lines.push("Landed on:", ...formatRankedPathLines(ranked, pathLimit, "none yet"));
   } else if (currentUnique === 0 && threads.lifetimeUnique === 0) {
-    lines.push("- no tagged Threads clicks yet");
+    lines.push("No tagged Threads clicks yet.");
   }
 
   return lines.join("\n");
@@ -860,10 +1075,17 @@ export function toTelegramStatsMessages(stats: FunnelStats, now = new Date()) {
   );
 
   const lines = [
-    "UniPrep2Go · growth pulse",
-    `As of ${formatShortDate(dayOffsetUtc(now, 0))} UTC · period ${formatPeriodRange(stats)}`,
+    formatPulseSection(stats, now),
+    "",
+    formatTodaySection(stats, now),
     "",
     formatYesterdaySection(stats, now),
+    "",
+    formatFunnelSection(stats, products, 5),
+    "",
+    formatAcquisitionSection(stats),
+    "",
+    formatThreadsSection(stats, now),
     "",
     formatSevenDayGrowthSection(
       visitors.dailyUnique,
@@ -873,15 +1095,7 @@ export function toTelegramStatsMessages(stats: FunnelStats, now = new Date()) {
       visitors.dailySnapshots,
     ),
     "",
-    formatPeriodFunnelSection(stats),
-    "",
-    formatPeriodProductsSection(products, 5),
-    "",
-    formatAcquisitionSection(stats),
-    "",
-    formatThreadsSection(stats, now),
-    "",
-    `Storage: ${stats.storage} · lifetime ${visitors.lifetimeUnique} unique`,
+    `${stats.storage} · lifetime ${visitors.lifetimeUnique}u`,
   ];
 
   return splitTelegramMessages(lines.join("\n"));
