@@ -1,0 +1,16 @@
+---
+description: Threads banks — Sol adapts written banks from farm history, never full rewrite
+alwaysApply: true
+---
+
+# Threads banks and review
+
+Threads banks (UniPrep US, Prep2Go/CIPLE, Barakhlo, Emigro):
+
+- **Do not rewrite a written bank** (`*days.json`, `*guides.json`, wizard, investment). No new 28/100-day replacement file while the live bank exists.
+- **Adapt** only: point-edit weak rows. Input is farm HQ history + post ledger + `/engine` pipeline + pattern/adapt queue (views × weekday × hour × language × structure × tags × timers). Sol applies the patch; this agent does not write `p1`/`p2`.
+- Farm engine (`threads_farm_engine.py`) is the mechanical knowledge core — best pipeline per account. Do not auto-rewrite banks from it.
+- New SKU / new account with no bank yet: **`gpt-5.6-sol-medium`** writes the first bank.
+- Review / best-model / fix-first: Task model **`gpt-5.6-sol-medium`** only.
+- Never use Grok for Threads review, bank copy, or content judgment.
+- Live farm on the VPS is write-locked (`/opt/farm-lock`). Do not rsync or unlock farm files from this UniPrep repo. Unlock only from the farm HQ chat that created the lock.
