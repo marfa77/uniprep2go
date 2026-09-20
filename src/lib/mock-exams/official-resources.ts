@@ -677,6 +677,20 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
       },
     ],
   },
+  "medical-scribe-readiness-check": {
+    certifier: "AHDPG (MSCE → AMSP / CMSP); employer and ACMSS-style paths vary",
+    verifyAtUrl: "https://ahdpg.com/certification/medical-scribe/",
+    sources: [
+      {
+        label: "AHDPG — Medical Scribe Certification (MSCE)",
+        url: "https://ahdpg.com/certification/medical-scribe/",
+      },
+      {
+        label: "AHDPG — MSCE registration / exam start",
+        url: "https://ahdpg.com/certification/medical-scribe/certification-exam/",
+      },
+    ],
+  },
   "nha-ccma-readiness-check": {
     certifier: "National Healthcareer Association (NHA)",
     verifyAtUrl: "https://www.nhanow.com/certification/nha-certifications/certified-clinical-medical-assistant-(ccma)",

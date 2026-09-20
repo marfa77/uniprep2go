@@ -602,6 +602,24 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "Veterinary assistant students and graduates preparing for NAVTA AVA-style themes who want a free timed baseline before VetMedTeam’s official exam.",
     practiceTestLabel: "Veterinary assistant practice test",
   },
+  "medical-scribe-readiness-check": {
+    title: "Free Medical Scribe Practice Test 2026 | 60Q Timed Mock",
+    description:
+      "Free medical scribe practice test — no signup: 60 timed questions, 75 minutes, 70% readiness target across documentation, terminology, EHR workflow, and HIPAA — then waitlist for the planned 60-card Anki. AHDPG MSCE is 100Q / 75 min / 80%. Independent — not AHDPG or ACMSS material. Not CCMA or CMA.",
+    keywords: [
+      "medical scribe practice test",
+      "free medical scribe practice test",
+      "msce practice test",
+      "medical scribe exam questions",
+      "medical scribe anki",
+    ],
+    headline: "Free Medical Scribe Practice Test — 60 Questions",
+    intro:
+      "A timed scribe diagnostic across clinical documentation (SOAP, HPI, ROS, scribe scope), medical terminology and chart abbreviations, EHR workflow (problem list, allergies, medication reconciliation, templates), and HIPAA privacy — then join the planned 60-card Anki waitlist. AHDPG’s Medical Scribe Certification Exam (MSCE) is 100 questions / 1 hour 15 minutes / 80% / $185 and mixes fill-in-the-blank items. This free check is a shorter multiple-choice diagnostic — not an MSCE form, and not the NHA CCMA or CMA (AAMA) clinical-assistant exam.",
+    audience:
+      "New and aspiring medical scribes — including employer-trained hires and candidates heading for AHDPG AMSP/CMSP or ACMSS-style certification — who want a free timed baseline on documentation and HIPAA.",
+    practiceTestLabel: "Medical scribe practice test",
+  },
   "leed-green-associate-readiness-check": {
     title: "Free LEED Green Associate Practice Test | 50-Question Readiness Check",
     description:

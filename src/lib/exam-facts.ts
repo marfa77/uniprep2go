@@ -3308,17 +3308,24 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     exam_facts: {
       exam_name: "Medical Scribe Competency / AHDPG MSCE (common path)",
       administered_by: "Employers, training programs, AHDPG (MSCE), ACMSS-style certifiers",
-      question_count: "Varies — AHDPG MSCE typically ~100 questions (verify current form)",
-      time_limit: "AHDPG MSCE typically ~75 minutes — verify with certifier",
-      passing_score: "AHDPG MSCE typically ~80% — verify; UniPrep diagnostic uses 70%",
-      delivery: "Online / program-specific (employer or certifier)",
-      outline_effective_date: "Current certifier / employer outline — verify before registering",
-      verify_at_url: "https://ahdpg.com/",
+      question_count:
+        "Varies by path — AHDPG MSCE is listed as 100 questions (multiple-choice and fill-in-the-blank)",
+      time_limit: "AHDPG MSCE: 1 hour 15 minutes",
+      passing_score: "AHDPG MSCE: 80% (80 of 100); UniPrep diagnostic uses 70%",
+      delivery:
+        "Online; MSCE is $185 per individual registration (bulk $155–$175), audio playback required, 30-day wait before a retake",
+      outline_effective_date:
+        "Current MSCE Credentialing Exam Blueprint (14 knowledge domains) — AHDPG does not publish domain weights",
+      verify_at_url: "https://ahdpg.com/certification/medical-scribe/",
     },
     official_sources: [
       {
         label: "AHDPG — Medical Scribe Certification (MSCE / AMSP / CMSP)",
-        url: "https://ahdpg.com/",
+        url: "https://ahdpg.com/certification/medical-scribe/",
+      },
+      {
+        label: "AHDPG — MSCE registration / exam start",
+        url: "https://ahdpg.com/certification/medical-scribe/certification-exam/",
       },
     ],
     domain_weights: [
@@ -3328,28 +3335,43 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       { domain: "HIPAA privacy & compliance", weight: "Varies by path" },
     ],
     whats_changed: [
-      "OpenExamPrep and PracticeTestGeeks publish large free MSCE-style banks — UniPrep is a shorter no-signup timed diagnostic + planned Anki.",
-      "AMSP vs CMSP: CMSP typically requires 200+ documented scribe hours after passing MSCE — verify with AHDPG.",
+      "AHDPG lists the MSCE as 100 questions / 1 hour 15 minutes / 80% pass / $185, with affiliate bulk pricing of $155–$175 per exam.",
+      "The MSCE mixes fill-in-the-blank with multiple-choice items — pure MCQ banks, including UniPrep’s, do not match that format exactly.",
+      "AMSP vs CMSP: CMSP requires 200+ documented front-line scribe hours in addition to passing the MSCE — verify with AHDPG.",
+      "AHDPG cites The Joint Commission’s updated position that documentation assistants may enter orders at a provider’s direction; those not authorized to submit leave orders pending for licensed staff to verify.",
+      "OpenExamPrep and PracticeTestGeeks publish large free MSCE-style banks — UniPrep is a shorter no-signup timed diagnostic plus planned Anki.",
       "Do not confuse scribe credentials with NHA CCMA or CMA (AAMA) clinical medical assistant exams.",
     ],
     high_yield_facts: [
-      "AHDPG MSCE is commonly listed as ~100Q / 75 min / 80% / ~$185 → AMSP; CMSP adds hours — verify current rules.",
-      "UniPrep2Go’s free check is a shorter 60-question / 75-minute / 70% diagnostic — not a full MSCE form.",
+      "AHDPG MSCE: 100 questions / 75 minutes / 80% to pass / $185 → AMSP; CMSP adds 200+ documented scribe hours.",
+      "UniPrep2Go’s free check is a shorter 60-question / 75-minute / 70% multiple-choice diagnostic — not a full MSCE form.",
       "Scribes document under provider direction — they do not diagnose, treat, or authenticate notes alone.",
+      "SOAP: Subjective is what the patient reports, Objective is what is measured or observed, Assessment is the provider’s impression, Plan is orders and follow-up.",
+      "Errors in a signed note are corrected by a dated, timed, attributed addendum — never by deleting text or backdating a late entry.",
+      "Never document a review of systems or exam element that was not actually performed, and edit template defaults to match the encounter.",
+      "Many scribe jobs require no certification at all — check the posting before paying for an exam.",
       "≠ NHA CCMA / CMA (AAMA).",
     ],
     candidate_qa: [
       {
         q: "How many questions are on the MSCE?",
-        a: "AHDPG commonly lists the Medical Scribe Certification Exam as about 100 questions in 75 minutes with an 80% pass. Confirm the current format before you register.",
+        a: "AHDPG lists the Medical Scribe Certification Exam as 100 questions (multiple-choice plus fill-in-the-blank) in 1 hour 15 minutes, with 80% required to pass and a $185 individual fee. Confirm the current format before you register.",
       },
       {
         q: "Is UniPrep2Go’s medical scribe check the official exam?",
-        a: "No. The free 60-question / 75-minute check is an independent diagnostic. The matching Anki deck is planned (waitlist). Not AHDPG, ACMSS, or employer material.",
+        a: "No. The free 60-question / 75-minute / 70% check is an independent multiple-choice diagnostic with topic scoring. The matching Anki deck is planned (waitlist). Not AHDPG, ACMSS, or employer material.",
       },
       {
         q: "Is a scribe exam the same as CCMA or CMA?",
-        a: "No. CCMA/CMA are clinical medical assistant credentials. Scribe exams focus on documentation, terminology, EHR workflow, and HIPAA.",
+        a: "No. CCMA/CMA are clinical medical assistant credentials covering hands-on skills such as injections, phlebotomy, and EKG. Scribe exams focus on documentation, terminology, EHR workflow, and HIPAA.",
+      },
+      {
+        q: "Do you need certification to work as a medical scribe?",
+        a: "Often no. Many employers hire and train scribes directly. Where a credential is expected, AHDPG AMSP/CMSP or an ACMSS-style program is the usual path — confirm with the specific job posting.",
+      },
+      {
+        q: "What is on a medical scribe exam?",
+        a: "Clinical documentation (SOAP structure, HPI elements, ROS, note integrity, scribe scope), medical terminology and chart abbreviations, EHR workflow (problem list, allergy and medication entry, medication reconciliation, templates), and HIPAA privacy and compliance.",
       },
     ],
     trademark_note:

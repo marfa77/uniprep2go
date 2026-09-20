@@ -1114,6 +1114,22 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     intro:
       "VA students who want a free timed AVA-style diagnostic before VetMedTeam’s official exam — then a planned 60-card .apkg. Not the VTNE technician pathway.",
   },
+  "medical-scribe-anki-deck": {
+    title: "Medical Scribe Anki | Planned 60 Cards + Free Mock",
+    headline: "Medical Scribe Prep — Planned Cards + Free 60Q Practice Test",
+    studyLabel: "medical scribe documentation and HIPAA exam prep",
+    description:
+      "Planned medical scribe Anki for SOAP/HPI documentation, terminology, EHR workflow, and HIPAA — plus a free 60-question timed practice test. AHDPG MSCE is 100Q / 75 min / 80%. Not CCMA or CMA. Independent — not AHDPG or ACMSS material.",
+    keywords: [
+      "medical scribe anki",
+      "medical scribe flashcards",
+      "msce practice test",
+      "medical scribe study guide",
+      "free medical scribe practice test",
+    ],
+    intro:
+      "Scribes and scribe candidates who want a free timed documentation-and-HIPAA diagnostic before an employer check or AHDPG MSCE — then a planned 60-card .apkg. Not a CCMA/CMA clinical-skills pathway.",
+  },
   "bench-energy-metal-trader-anki-deck": {
     title: "Best Metal Trader Anki | 202 LME Desk Cards",
     headline: "Best Metal Trader Anki — 202 LME & Metals Desk Cards",
