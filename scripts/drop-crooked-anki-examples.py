@@ -6,7 +6,7 @@ from pathlib import Path
 TARGET_BAD = [
     re.compile(r"^I know the word\b", re.I),
     re.compile(r"^We use \w+ often\b", re.I),
-    re.compile(r"^Remember the word\b", re.I),
+    re.compile(r"^(Please )?remember the word\b", re.I),
     re.compile(r"^Znam (dobrze )?słowo\b", re.I),
     re.compile(r"^Używamy \S+ często\b", re.I),
     re.compile(r"^On czuje się \S+ dziś\b", re.I),
@@ -38,6 +38,11 @@ NATIVE_BAD = [
     re.compile(r"За вікном сьогодні дуже"),
     re.compile(r"Сьогодні це практичне"),
     re.compile(r"Слово .+ мені вже добре знайоме"),
+    # Brazilian Portuguese stamp leftovers
+    re.compile(r"Eu (?:conhe[cç]o|sei) (?:bem )?a palavra", re.I),
+    re.compile(r"Lembre bem a palavra", re.I),
+    re.compile(r"Por favor, lembr[ae](?: da)? palavra", re.I),
+    re.compile(r"A gente usa .+ com frequência", re.I),
 ]
 
 def crooked(example: str) -> bool:

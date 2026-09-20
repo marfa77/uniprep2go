@@ -329,12 +329,12 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Spanish_Speakers_LatAm_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-portuguese-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 2504 Flashcards",
+    name: "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 2466 Flashcards",
     summary:
-      "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Brazilian Portuguese support on every card.",
+      "2,466 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Brazilian Portuguese support on every card.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Brazilian Portuguese speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
-      "<p><strong>2,504</strong> high-frequency English cards with Brazilian Portuguese (PT-BR) glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p><strong>2,466</strong> high-frequency English cards with Brazilian Portuguese (PT-BR) glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material. Not a CIPLE European Portuguese deck.</em></p>",
     ].join(""),

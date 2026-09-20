@@ -53,6 +53,7 @@ describe("Prep2Go shop preview samples", () => {
         "ciple-a2-european-portuguese-anki-deck",
         "delf-b2-french-anki-deck",
         "dele-a2-spanish-anki-deck",
+        "dele-a2-ccse-spanish-citizenship-bundle",
         "dutch-a2-inburgering-anki-deck",
         "german-a2-anki-deck",
         "celi-b1-italian-anki-deck",

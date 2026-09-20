@@ -918,10 +918,10 @@ SPECS: dict[str, dict[str, Any]] = {
     },
     "ielts-toefl-english-for-portuguese-speakers-anki-deck": {
         "label": "IELTS / TOEFL English for Portuguese Speakers (BR)",
-        "headline": "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 2504 Flashcards",
+        "headline": "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 2466 Flashcards",
         "exam": "IELTS · TOEFL · Cambridge · PTE — for Brazilian Portuguese speakers",
         "hook": (
-            "2,504 high-frequency English vocabulary cards with Brazilian Portuguese glosses, "
+            "2,466 high-frequency English vocabulary cards with Brazilian Portuguese glosses, "
             "bilingual examples, and native English audio — built for PT-BR speakers preparing IELTS and TOEFL."
         ),
         "audience": (
@@ -937,7 +937,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "IELTS · TOEFL · Cambridge · PTE · English for Portuguese speakers (BR)",
         "deck_covers": (
-            "2,504 English cards from the Prep2Go app with Brazilian Portuguese glosses, bilingual examples, "
+            "2,466 English cards from the Prep2Go app with Brazilian Portuguese glosses, bilingual examples, "
             "native English audio, and illustrations."
         ),
         "not_included": (
@@ -948,12 +948,12 @@ SPECS: dict[str, dict[str, Any]] = {
             "Exam sittings punish slow retrieval. Spaced Anki with English-first recall "
             "(Brazilian Portuguese as a check) beats translating every sentence under time pressure."
         ),
-        "cards": "2504",
+        "cards": "2466",
         "format_note": "Anki .apkg with audio, images, and Brazilian Portuguese support",
         "sample_captions": ["be", "i", "you"],
         "facts": [
             ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
-            ("Cards", "2504 vocabulary"),
+            ("Cards", "2466 vocabulary"),
             ("Media", "Audio + PT-BR glosses"),
             ("Delivery", "Instant .apkg"),
         ],

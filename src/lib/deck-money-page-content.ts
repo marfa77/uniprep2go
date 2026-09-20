@@ -1212,7 +1212,7 @@ This product is **English vocabulary Anki with PT-BR support**. It is not a CIPL
 - **Back:** Brazilian Portuguese (PT-BR) gloss, bilingual example sentence, native English audio
 - **Drill rule:** hear English → guess meaning in English → only then open the PT-BR gloss
 
-Free AnkiWeb dumps labelled “Inglês–Português” are usually tourist phrases, phrasal-verb dumps, or undated frequency lists without IELTS/TOEFL framing. This listing ships **2,504** exam-frequency cards from the Prep2Go bank as one Gumroad \`.apkg\` at **$26**.
+Free AnkiWeb dumps labelled “Inglês–Português” are usually tourist phrases, phrasal-verb dumps, or undated frequency lists without IELTS/TOEFL framing. This listing ships **2,466** exam-frequency cards from the Prep2Go bank as one Gumroad \`.apkg\` at **$26**.
 
 ### Why Brazilians lose IELTS/TOEFL Reading points on cognates
 
@@ -1280,7 +1280,7 @@ Each URL has its own samples, FAQs, and Gumroad permalink. Google treating them 
 
 ### What makes this Gumroad edition different
 
-Prep2Go app bank (**2,504** cards, **Brazilian Portuguese** glosses) with UniPrep2Go IELTS/TOEFL framing on Gumroad at **$26** — instant \`.apkg\`, cognate-trap study notes, not a Lemon-only listing, not AnkiWeb tourist packs, not CIPLE / Celpe-Bras / ENEM, and not a demonym-swapped Spanish or Italian sibling page.`,
+Prep2Go app bank (**2,466** cards, **Brazilian Portuguese** glosses) with UniPrep2Go IELTS/TOEFL framing on Gumroad at **$26** — instant \`.apkg\`, cognate-trap study notes, not a Lemon-only listing, not AnkiWeb tourist packs, not CIPLE / Celpe-Bras / ENEM, and not a demonym-swapped Spanish or Italian sibling page.`,
 
 
   "delf-prim-printable-french-flashcards": `### Who this printable is for
