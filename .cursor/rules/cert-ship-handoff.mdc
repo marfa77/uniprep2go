@@ -8,7 +8,7 @@ alwaysApply: true
 User workflow (do not invent a slower one):
 
 1. **Writer (this chat)** — one pass: bank expand once → apkg once → Gumroad create/assets → SEO/GEO wire → focused tests → gate script → **STOP**
-2. **Best-model review** — fix-first subagent (Grok 4.6 / Opus). No second bank rewrite unless P0 content bug
+2. **Bank content review (mandatory)** — fix-first subagent. Default **`gpt-5.6-sol-medium`** (cheaper). Escalate **`claude-opus-5-thinking-high`** on P0 remap/contamination, first live start on never-ledgered SKU, or user asks Opus. Never Grok. See `mock-bank-review-model.mdc`. No second full bank rewrite unless content P0.
 3. **User screenshots** — real Anki card captures → `public/samples/{deckSlug}-sample-{1,2,3}.webp` → **immediately** `npm run setup:gumroad-wave-decks -- --slug {slug} --polish-only` so Gumroad gets rich description + gallery **and** custom landing **Sample cards body** (not cover-only / site-only)
 4. **Publish** — commit/push only after user OK; `llms:export` already done in step 1
 

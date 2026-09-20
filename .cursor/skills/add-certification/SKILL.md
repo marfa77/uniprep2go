@@ -19,7 +19,7 @@ User cadence (keep ACE-style ships under one writer pass + one review):
 | Phase | Who | Exit |
 |-------|-----|------|
 | **A. Write** | Parent agent | Bank expand **once** → apkg **once** → Gumroad → SEO/GEO → focused tests → gate READY → **STOP** |
-| **B. Review** | Best model (Grok 4.6 / Opus) fix-first | P0/P1 fixed; **no** second full bank rewrite unless content P0 |
+| **B. Bank review** | Fix-first: default **`gpt-5.6-sol-medium`**; escalate **`claude-opus-5-thinking-high`** on P0 remap / first live never-ledgered / user asks Opus. Never Grok. Rule: `mock-bank-review-model.mdc` | P0/P1 fixed; **no** second full bank rewrite unless content P0 |
 | **C. Screenshots** | User | Drop 3 Anki captures → agent converts to `public/samples/{deckSlug}-sample-{1,2,3}.webp` |
 | **D. Publish** | Parent after user OK | commit + push `main` (Vercel) |
 
@@ -180,16 +180,17 @@ python3 scripts/expand-{id}-bank-local.py
 
 If no expand script exists for the cert yet, **create one** (template factories + seeded RNG), then run it. OpenRouter bank generation is forbidden for this pipeline.
 
-### 8. LLM bank validation (mandatory)
+### 8. Bank validation (mandatory — local + content review)
 
+**Mechanical (always):**
 ```bash
-npm run validate:mock-banks -- --slug {mockSlug}
-npm run validate:mock-banks -- --slug {mockSlug} --apply   # drop rejects
+npm run triage:mock-banks -- --slug {mockSlug}
+# then the path gate: validate:wave-deck or validate:certification
 ```
 
-Then sync all **card count** strings/specs to post-apply size. Re-run session/topic quota tests.
+**Content review (always after READY):** launch fix-first Task — default **`gpt-5.6-sol-medium`**; escalate **`claude-opus-5-thinking-high`** on P0 remap / first live never-ledgered / user asks Opus. Never Grok. Never OpenRouter `validate:mock-banks` (forbidden — `no-openrouter.mdc`). Details: `.cursor/rules/mock-bank-review-model.mdc`.
 
-Reports live under `src/data/mock-exams/.validation-reports/` (gitignored; gate checks local file).
+Then sync all **card count** strings/specs if the reviewer dropped/rewrote items. Re-run session/topic quota tests.
 
 ### 9. Promote to live
 
@@ -292,7 +293,9 @@ Warnings: gumroad-live, mock-validation, llm-high-intent, homepage-links, mock-i
 | `validate:wave-deck` | Blocking gates (wave / ACE / niche) |
 | `expand-*-bank-local.py` | **Local** bank gen (required) |
 | `generate:mock-banks` | ❌ Do not use for banks |
-| `validate:mock-banks` | Gemini cross-validation (+ `--apply`) |
+| `triage:mock-banks` | Mechanical smells (always) |
+| Bank content review | Task `gpt-5.6-sol-medium` default / Opus escalate — see `mock-bank-review-model.mdc` |
+| `validate:mock-banks` | ❌ Do not use (OpenRouter) |
 | `generate:deck-covers` | Cover + `--gumroad-thumbnails` |
 | `setup:gumroad-building-decks` | Building Gumroad |
 | `setup:gumroad-wave-decks` | Wave Gumroad |

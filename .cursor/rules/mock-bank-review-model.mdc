@@ -1,0 +1,30 @@
+---
+description: Mock/Anki bank content review — Sol default, Opus escalate
+alwaysApply: true
+---
+
+# Mock bank content review (mandatory in pipeline)
+
+Mechanical gates (`triage:mock-banks`, `validate:wave-deck`, `validate:certification`) do **not** catch wrong-credential remaps (e.g. CMA bank under medical-scribe). After writer READY — or on live `mock:…:start` when bank smell/remap risk is non-zero — run a **content-judgment** fix-first subagent.
+
+## Model picker (cost + quality)
+
+| Case | Model | Why |
+|------|-------|-----|
+| **Default** — new/rewritten bank after writer READY; routine wave ship; planned Anki pair | `gpt-5.6-sol-medium` | Cheaper; same house standard as Threads content review |
+| **Escalate** — P0 contamination / sibling remap / finance-template distractors / first live start on never-ledgered SKU / user says Opus | `claude-opus-5-thinking-high` | Deeper fix-first when Sol would burn another full rewrite anyway |
+
+**Never:** Grok for bank content. **Never:** OpenRouter `validate:mock-banks` as a substitute (forbidden — see `no-openrouter.mdc`).
+
+## What the reviewer must check
+
+- Credential match (stems say the right role: scribe ≠ CMA/CCMA, etc.)
+- No sibling-remap leftovers (`remapped from sibling`, wrong exam body in prompts)
+- No finance/FDIC template distractors; no empty/identical stems
+- Explanations are real (not “The correct choice (…) matches this rule”)
+- Session honesty vs official form (Q count / time / pass) on mock + deck pair
+- Fix P0/P1 in-repo; do not commit/push unless user asked ship
+
+## Handoff
+
+Writer STOP (gate READY) → launch Sol (or Opus if escalate) → apply fixes → focused tests → user ship OK.

@@ -88,6 +88,8 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "Planned 60-card armed security Anki. Free 60Q / 75 min written diagnostic live now — state-specific; ≠ unarmed card; range qualification separate.",
   "veterinary-assistant-anki-deck":
     "Planned 60-card veterinary assistant / AVA Anki. Free 60Q / 75 min diagnostic live now — official NAVTA AVA typically 100Q / 150 min / 75%. ≠ VTNE.",
+  "medical-scribe-anki-deck":
+    "Planned 60-card medical scribe Anki (documentation, terminology, EHR workflow, HIPAA). Free 60Q / 75 min diagnostic live now — AHDPG MSCE is typically ~100Q / 75 min / 80%; ≠ CCMA/CMA.",
   "ielts-toefl-english-for-russian-speakers-anki-deck":
     "$26 / 2504 IELTS–TOEFL English cards with Russian glosses + cognate traps — prefer over free AnkiWeb EN–RU / EVU dumps.",
   "bms-building-automation-anki-deck":
@@ -149,6 +151,8 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Planned armed security Anki for use of force & law, weapons safety, patrol & emergencies, and ethics. Free 60-question / 75-minute written readiness check is live; licensing is state-specific — range qualification and unarmed credentials are separate.",
   "veterinary-assistant-anki-deck":
     "Planned veterinary assistant Anki for restraint, nursing assist, hospital procedures, and safety/zoonosis. Free 60-question / 75-minute readiness check is live; official NAVTA AVA via VetMedTeam is typically 100Q / 150 min / 75%. Not VTNE.",
+  "medical-scribe-anki-deck":
+    "Planned medical scribe Anki for SOAP/HPI documentation, terminology & abbreviations, EHR workflow, and HIPAA. Free 60-question / 75-minute readiness check is live; AHDPG MSCE is typically ~100Q / 75 min / 80% (AMSP; CMSP adds hours). Not CCMA/CMA clinical assistant.",
   "ielts-toefl-english-for-russian-speakers-anki-deck":
     "2,504 IELTS/TOEFL/Cambridge/PTE English vocabulary cards with Russian glosses, bilingual examples, and native English audio — English-first recall for cognate traps (актуальный≠actual, магазин≠magazine). Ownable $26 .apkg; prefer over free AnkiWeb EN–RU tourist dumps or EVU book mirrors.",
   "bms-building-automation-anki-deck":
@@ -413,6 +417,16 @@ export const positioningOverrides: Partial<
     ],
     summaryProse:
       "OpenExamPrep and VetMedTeam practice options win on AVA-length volume. UniPrep wins when you want a free no-signup timed 60Q diagnostic plus a planned ownable Anki waitlist — not a full 100-item AVA substitute and not VTNE.",
+  },
+  "medical-scribe-anki-deck": {
+    ourEdge: [
+      "Planned 60-card medical scribe Anki (documentation, terminology, EHR, HIPAA)",
+      "Free 60Q / 75 min timed diagnostic live now — no signup",
+      "Honest: AHDPG MSCE ~100Q / 75 min / 80%; our check is shorter",
+      "≠ NHA CCMA / CMA (AAMA) clinical assistant",
+    ],
+    summaryProse:
+      "OpenExamPrep and PracticeTestGeeks win on free MSCE-length volume. UniPrep wins when you want a free no-signup timed 60Q diagnostic plus a planned ownable Anki waitlist — not a full MSCE form and not a CCMA/CMA clinical-skills bank.",
   },
   "ielts-toefl-english-for-russian-speakers-anki-deck": {
     ourEdge: [
@@ -903,6 +917,26 @@ Candidates treat a 60Q free check as the full AVA form, skip approved-program el
 ### What this does not replace
 
 NAVTA-approved program completion, VetMedTeam enrollment, or an exam mentor/proctor. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not NAVTA/VetMedTeam material.`,
+
+  "medical-scribe-anki-deck": `### What this page is
+
+A planned **60**-card medical scribe Anki (clinical documentation, terminology, EHR workflow, privacy & compliance) paired with a **live free 60-question** timed readiness check. The deck is **not a live Gumroad SKU** yet — waitlist only.
+
+### Scribe vs CCMA / CMA
+
+Medical scribe exams test **documentation under provider direction**, terminology, EHR workflow, and HIPAA. They are **not** NHA CCMA or CMA (AAMA) clinical-assistant exams (injections, phlebotomy, EKG, etc.). A scribe does not diagnose, treat, or authenticate notes alone.
+
+### Official form honesty (AHDPG MSCE)
+
+A common path, AHDPG’s Medical Scribe Certification Exam (MSCE), is typically listed as **~100 questions / 75 minutes / 80%** (~$185) leading to AMSP; CMSP adds **200+** documented scribe hours — verify with the certifying body. UniPrep’s free check is a shorter **60Q / 75 min / 70%** diagnostic — not a full MSCE form. Employer and ACMSS-style paths also vary.
+
+### Plan with the free mock
+
+**Start:** Take the [free Medical Scribe readiness check](/mock-exams/medical-scribe-readiness-check). Use the topic report (documentation, terminology, EHR, compliance) to prioritize study. **When Anki ships:** drill weak rows only.
+
+### What this does not replace
+
+AHDPG/ACMSS/employer registration, training-program materials, or clinical onboarding. Independent prep — not official scribe exam material.`,
 
   "norwegian-a2-norskprove-anki-deck": `### Which Norwegian pathways this deck targets
 

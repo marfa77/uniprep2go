@@ -3,1980 +3,1980 @@
     "id": "medical-scribe-readiness-check-documentation-001",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "documentation",
-    "prompt": "A patient requests that no family members receive health information. The CMA should",
+    "prompt": "A patient says, “I’ve had burning chest pain after meals for three days.” In a SOAP note, where does that statement belong?",
     "options": [
       {
         "id": "a",
-        "text": "Document the restriction per policy and honor it unless a legal exception applies"
+        "text": "Subjective — the patient’s own description of symptoms and history"
       },
       {
         "id": "b",
-        "text": "Tell the spouse everything anyway for convenience"
+        "text": "Objective — measurable findings the provider observes"
       },
       {
         "id": "c",
-        "text": "Post the request on the waiting-room board"
+        "text": "Assessment — the provider’s clinical impression"
       },
       {
         "id": "d",
-        "text": "Ignore the request because families always decide"
+        "text": "Plan — orders, prescriptions, and follow-up"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Patients may restrict disclosures; document and follow privacy rules The correct choice (“Document the restriction per policy and honor it unless a l…”) is the one that matches this rule.",
+    "explanation": "Subjective captures what the patient or caregiver reports: chief complaint, HPI, review of systems, and relevant history. A quoted symptom description is patient-reported information, so it is documented in S rather than in the exam, impression, or treatment sections.",
     "distractorExplanations": {
-      "b": "Unauthorized disclosure violates HIPAA. Learners who choose “Tell the spouse everything anyway for convenience” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Public posting is a breach. Learners who choose “Post the request on the waiting-room board” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Competent adults control their PHI. Learners who choose “Ignore the request because families always decide” are usually making that exact mistake instead of applying the rule in the stem."
+      "b": "Objective holds vitals, physical exam findings, and test results the provider obtains directly. A patient’s verbal symptom report is not a measured or observed finding, so it does not belong in O.",
+      "c": "Assessment is the provider’s interpretation of the data: impression, differential, and working diagnosis. Filing a raw patient quote there confuses the patient’s report with clinical judgment.",
+      "d": "Plan documents what happens next: orders, medications, referrals, patient instructions, and follow-up interval. A three-day symptom history is history, not a next step."
     },
-    "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-documentation-002",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "documentation",
-    "prompt": "Which task is typically within CMA scope regarding prescriptions?",
+    "prompt": "BP 148/92, temperature 37.1 °C, and “lungs clear to auscultation bilaterally” are documented in which SOAP section?",
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "Subjective"
       },
       {
         "id": "b",
-        "text": "Calling in or transmitting refills only as directed by a licensed provider and permitted by law/policy"
+        "text": "Objective"
       },
       {
         "id": "c",
-        "text": "this concept has no application in US securities, insurance, or licensing markets"
+        "text": "Assessment"
       },
       {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "Plan"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "MAs may assist with communication of provider orders within legal limits—not independent prescribing.",
+    "explanation": "Objective contains data the provider measures or observes during the encounter: vital signs, physical exam findings, point-of-care testing, and results available at the visit. Vitals plus an auscultation finding are all objective data.",
     "distractorExplanations": {
-      "a": "This statement is false about the tested concept and does not match the correct definition.",
-      "c": "This statement is false about the tested concept and does not match the correct definition.",
-      "d": "This statement is false about the tested concept and does not match the correct definition."
+      "a": "Subjective is limited to what the patient or caregiver reports. Vital signs and auscultation findings are obtained by staff and the provider, so they are objective rather than reported history.",
+      "c": "Assessment records the provider’s impression or differential drawn from the data. Raw vitals and exam findings are the inputs to that reasoning, not the reasoning itself.",
+      "d": "Plan lists orders, prescriptions, referrals, and follow-up. Documenting measurements there separates data from the exam section where other clinicians expect to find it."
     },
-    "difficulty": "hard",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-documentation-003",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "documentation",
-    "prompt": "Active listening in clinical communication includes:",
+    "prompt": "The provider states, “Likely community-acquired pneumonia; consider atypical pathogens.” Where is that documented?",
     "options": [
       {
         "id": "a",
-        "text": "Checking email while the patient talks"
+        "text": "Subjective"
       },
       {
         "id": "b",
-        "text": "Finishing every sentence for the patient"
+        "text": "Objective"
       },
       {
         "id": "c",
-        "text": "Paraphrasing key points and clarifying understanding without interrupting constantly"
+        "text": "Assessment"
       },
       {
         "id": "d",
-        "text": "Dismissing concerns as overreactions"
+        "text": "Plan"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Active listening confirms understanding and builds trust The correct choice (“Paraphrasing key points and clarifying understanding withou…”) is the one that matches this rule.",
+    "explanation": "The assessment records the provider’s clinical impression, working diagnosis, and differential reasoning for the encounter. A stated likely diagnosis with alternatives still under consideration is exactly that impression.",
     "distractorExplanations": {
-      "a": "Divided attention blocks listening. Learners who choose “Checking email while the patient talks” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Constant interruption hinders history. Learners who choose “Finishing every sentence for the patient” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Dismissal harms rapport and safety. Learners who choose “Dismissing concerns as overreactions” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Subjective is reserved for the patient’s reported symptoms and history. A diagnostic impression is generated by the provider, not reported by the patient.",
+      "b": "Objective holds measured data such as vitals, exam findings, and results. A working diagnosis is an interpretation of that data, so it is filed one section later.",
+      "d": "Plan captures the actions that follow from the impression — imaging, prescriptions, follow-up. The impression itself is documented in the assessment that drives those actions."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-documentation-004",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "documentation",
-    "prompt": "Which site is generally preferred for an adult intramuscular injection of a routine vaccine dose?",
+    "prompt": "Which entry belongs in the Plan section of a SOAP note?",
     "options": [
       {
         "id": "a",
-        "text": "Deltoid muscle (upper arm) when volume is appropriate"
+        "text": "Patient reports a productive cough that started four days ago"
       },
       {
         "id": "b",
-        "text": "Gluteus maximus without landmarking"
+        "text": "Temperature 38.4 °C with crackles in the right lower lobe"
       },
       {
         "id": "c",
-        "text": "Subcutaneous tissue of the abdomen only"
+        "text": "Working diagnosis of community-acquired pneumonia"
       },
       {
         "id": "d",
-        "text": "Intravenous antecubital vein"
+        "text": "Chest X-ray ordered, azithromycin prescribed, return in 48 hours if symptoms worsen"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "For many adult IM vaccines, the deltoid is preferred when the volume fits; proper landmarking avoids nerves/vessels. Route must match the order.",
+    "correctOptionId": "d",
+    "explanation": "Plan documents the actions arising from the encounter: diagnostic orders, prescriptions, referrals, patient education, and the return or follow-up interval. Ordering imaging, starting an antibiotic, and giving return precautions are all plan items.",
     "distractorExplanations": {
-      "b": "Dorsogluteal without landmarks risks sciatic nerve injury and is often avoided. Learners who choose “Gluteus maximus without landmarking” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Abdomen is a common SQ site, not the default IM vaccine site. Learners who choose “Subcutaneous tissue of the abdomen only” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "IV is a different route requiring specific authorization/training. Learners who choose “Intravenous antecubital vein” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "A patient-reported symptom with onset belongs in the subjective history of present illness, not in the plan of care.",
+      "b": "A measured temperature and an auscultation finding are objective data collected at the visit, so they belong in the objective section.",
+      "c": "A working diagnosis is the provider’s clinical impression and belongs in the assessment, which then justifies the plan items."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-documentation-005",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "documentation",
-    "prompt": "When measuring an adult oral temperature with an electronic probe, the CMA should?",
+    "prompt": "A patient reports the pain “gets worse climbing stairs and eases after sitting for ten minutes.” Which HPI element is being documented?",
     "options": [
       {
         "id": "a",
-        "text": "Place the probe against the forehead without skin contact"
+        "text": "Modifying factors"
       },
       {
         "id": "b",
-        "text": "Place the probe under the tongue in the posterior sublingual pocket and wait for the signal"
+        "text": "Severity"
       },
       {
         "id": "c",
-        "text": "Insert the probe into the ear canal for oral readings"
+        "text": "Timing"
       },
       {
         "id": "d",
-        "text": "Leave the probe in ice water first"
+        "text": "Associated signs and symptoms"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Oral electronic thermometers read from the sublingual pocket; technique differs for tympanic/temporal devices.",
+    "correctOptionId": "a",
+    "explanation": "Modifying factors describe what makes the symptom better or worse — exertion, rest, position, food, or medication. Exertional worsening that relieves with rest is a classic modifying-factor statement and should be documented as such in the HPI.",
     "distractorExplanations": {
-      "a": "Forehead readings use temporal methods, not oral probes. Learners who choose “Place the probe against the forehead without skin contact” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Ear probes are tympanic, not oral. Learners who choose “Insert the probe into the ear canal for oral readings” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Ice water would falsify the reading. Learners who choose “Leave the probe in ice water first” are usually making that exact mistake instead of applying the rule in the stem."
+      "b": "Severity records how intense the symptom is, usually as a 0–10 rating or a descriptor such as mild, moderate, or severe. Nothing in the statement quantifies intensity.",
+      "c": "Timing describes the pattern of the symptom — constant, intermittent, nocturnal, or tied to a time of day. The statement describes triggers and relief, not a temporal pattern.",
+      "d": "Associated signs and symptoms are other complaints occurring with the main problem, such as nausea or diaphoresis with chest pain. None are reported here."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-documentation-006",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "documentation",
-    "prompt": "Which vital sign change most urgently suggests possible orthostatic hypotension when a patient stands?",
+    "prompt": "How does the review of systems (ROS) differ from the history of present illness (HPI)?",
     "options": [
       {
         "id": "a",
-        "text": "A slight rise in temperature after walking"
+        "text": "ROS records the provider’s physical exam findings organized by body system"
       },
       {
         "id": "b",
-        "text": "Unchanged pulse and BP with no symptoms"
+        "text": "ROS is a system-by-system inventory of symptoms the patient does or does not have; HPI narrates the current problem"
       },
       {
         "id": "c",
-        "text": "A significant drop in blood pressure with dizziness on standing"
+        "text": "ROS lists the patient’s prior surgeries and hospitalizations"
       },
       {
         "id": "d",
-        "text": "Increased respiratory rate only after laughing"
+        "text": "ROS summarizes family and social history"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Orthostatic hypotension is a drop in BP (often with HR rise) on standing, risking syncope—assist and report per protocol.",
+    "correctOptionId": "b",
+    "explanation": "The HPI tells the story of the presenting problem using elements such as location, quality, severity, duration, timing, context, modifying factors, and associated symptoms. The ROS is a separate checklist-style inventory across body systems, including pertinent negatives.",
     "distractorExplanations": {
-      "a": "Mild activity temperature change is not orthostasis. Learners who choose “A slight rise in temperature after walking” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "No change without symptoms is not orthostatic hypotension. Learners who choose “Unchanged pulse and BP with no symptoms” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Laugh-related breathing changes are not the definition. Learners who choose “Increased respiratory rate only after laughing” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Exam findings are objective data documented in the physical exam. The ROS is subjective — it records what the patient reports, not what the provider observes.",
+      "c": "Prior surgeries and admissions belong to past medical and surgical history, which is a distinct history component from the ROS.",
+      "d": "Family and social history are their own history sections covering relatives’ conditions and factors like tobacco, alcohol, and occupation — not a symptom inventory."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-documentation-007",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "documentation",
-    "prompt": "Proper technique for adult blood pressure measurement includes:",
+    "prompt": "The provider never asked about gastrointestinal symptoms during the visit. What should the scribe document in the GI portion of the ROS?",
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "Document “GI negative” because no complaint was raised"
       },
       {
         "id": "b",
-        "text": "this concept has no application in US securities, insurance, or licensing markets"
+        "text": "Document “GI not applicable to this visit” as a default entry"
       },
       {
         "id": "c",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "Nothing — leave it undocumented and ask the provider rather than recording a system that was not reviewed"
       },
       {
         "id": "d",
-        "text": "Using a cuff with bladder width/length appropriate for arm circumference, arm at heart level"
+        "text": "Copy the GI review from the patient’s previous visit note"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Wrong cuff size and arm position cause inaccurate BP; follow standard technique The correct choice (“Using a cuff with bladder width/length appropriate for arm…”) is the one that matches this rule.",
+    "correctOptionId": "c",
+    "explanation": "Scribes document only what actually happened in the encounter. Recording a system that was never reviewed creates false documentation that can inflate the visit level and misleads anyone reading the chart later. When in doubt, query the provider.",
     "distractorExplanations": {
-      "a": "This statement is false about the tested concept and does not match the correct definition.",
-      "b": "This statement is false about the tested concept and does not match the correct definition.",
-      "c": "This statement is false about the tested concept and does not match the correct definition."
+      "a": "A pertinent negative means the provider asked and the patient denied the symptom. Writing “negative” for a system that was never discussed fabricates a finding.",
+      "b": "A default phrase still asserts that the system was considered and dismissed. Boilerplate text is not a substitute for what the provider actually reviewed.",
+      "d": "Copying a prior review forward documents today’s encounter with yesterday’s information, which is the core note-cloning integrity problem auditors look for."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-documentation-008",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "documentation",
-    "prompt": "When assisting with a clean-catch midstream urine collection, the CMA should instruct the patient to?",
+    "prompt": "Who is responsible for reviewing and authenticating (signing) a scribed note?",
     "options": [
       {
         "id": "a",
-        "text": "Cleanse the area as directed, void a small amount, then collect midstream in a sterile container"
+        "text": "The scribe, once the note is complete"
       },
       {
         "id": "b",
-        "text": "Collect the first few drops only into a nonsterile cup"
+        "text": "The clinic’s coding staff before claim submission"
       },
       {
         "id": "c",
-        "text": "Add soap to the specimen to reduce bacteria"
+        "text": "Either the scribe or the provider, whichever finishes first"
       },
       {
         "id": "d",
-        "text": "Fill the container from a bedpan that sat overnight"
+        "text": "The treating provider, who must review the documentation and sign it"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Midstream clean-catch reduces contamination for culture/UA; sterile container and proper cleansing matter.",
+    "correctOptionId": "d",
+    "explanation": "A scribe documents on behalf of the provider, but the provider owns the record. The provider must review the entire note for accuracy, edit anything incorrect, and authenticate it with a signature and attestation before it becomes the final encounter record.",
     "distractorExplanations": {
-      "b": "First drops are more contaminated. Learners who choose “Collect the first few drops only into a nonsterile cup” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Soap ruins the specimen. Learners who choose “Add soap to the specimen to reduce bacteria” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Stale bedpan urine is unacceptable for culture. Learners who choose “Fill the container from a bedpan that sat overnight” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Scribes have no authority to authenticate a clinical record. Signing would assert clinical responsibility the scribe does not hold and is outside scribe scope everywhere.",
+      "b": "Coders assign codes from documentation that is already signed. They do not authenticate clinical content and cannot attest that an encounter occurred as described.",
+      "c": "Authentication is not interchangeable. Only the clinician who performed and is responsible for the service can attest to the note."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-documentation-009",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "documentation",
-    "prompt": "Which action is correct when applying a 12-lead ECG electrodes (text concepts)?",
+    "prompt": "During an encounter a patient asks the scribe, “Do you think this is an infection?” What is the appropriate response?",
     "options": [
       {
         "id": "a",
-        "text": "Place all six chest leads on the left scapula"
+        "text": "Refer the question to the provider — scribes do not give clinical opinions or diagnoses"
       },
       {
         "id": "b",
-        "text": "Place limb and precordial electrodes on clean, dry skin at standard anatomic locations"
+        "text": "Summarize the working diagnosis already typed in the assessment"
       },
       {
         "id": "c",
-        "text": "Apply electrodes over thick lotion without cleaning"
+        "text": "Offer general medical information so the patient is not left waiting"
       },
       {
         "id": "d",
-        "text": "Put V1–V6 in a random order for variety"
+        "text": "Answer only if the provider discussed the same diagnosis at a prior visit"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Accurate ECG placement requires correct landmarks and good skin contact; lotion and wrong sites distort tracings.",
+    "correctOptionId": "a",
+    "explanation": "A scribe’s role is documentation, not clinical judgment or patient counseling. Answering a diagnostic question would place the scribe outside scope of practice, so the question is redirected to the provider who is responsible for the patient’s care.",
     "distractorExplanations": {
-      "a": "Scapular placement is incorrect for standard precordial leads. Learners who choose “Place all six chest leads on the left scapula” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Lotion increases artifact. Learners who choose “Apply electrodes over thick lotion without cleaning” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Lead order/sites are standardized. Learners who choose “Put V1–V6 in a random order for variety” are usually making that exact mistake instead of applying the rule in the stem."
+      "b": "Reading the impression back to the patient delivers clinical information as if the scribe were the clinician, and a draft assessment can still change before the provider signs.",
+      "c": "Even general information framed as an answer to a diagnostic question can be heard as medical advice from the care team, which is outside a scribe’s scope.",
+      "d": "A prior diagnosis does not authorize the scribe to interpret today’s presentation. Scope of practice does not change based on chart history."
     },
-    "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-documentation-010",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "documentation",
-    "prompt": "A patient reports an allergy to penicillin before an injection. The CMA should",
+    "prompt": "A provider verbally states a medication order while the scribe is documenting. What is the scribe’s correct action?",
     "options": [
       {
         "id": "a",
-        "text": "Give a half dose to test tolerance"
+        "text": "Enter and sign the order in the EHR under the scribe’s own login"
       },
       {
         "id": "b",
-        "text": "Document the allergy after giving the full dose"
+        "text": "Document the order as dictated and route it for the provider to place and authenticate per clinic policy"
       },
       {
         "id": "c",
-        "text": "Hold the medication and notify the provider/nurse per protocol before giving it"
+        "text": "Wait until the end of the day and enter the order from memory"
       },
       {
         "id": "d",
-        "text": "Substitute any antibiotic available in the cabinet"
+        "text": "Ask the nurse to place the order under the nurse’s credentials"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Allergies must be verified and escalated; MAs do not independently change or challenge allergies The correct choice (“Hold the medication and notify the provider/nurse per proto…”) is the one that matches this rule.",
+    "correctOptionId": "b",
+    "explanation": "Scribes capture what the provider says, but order entry authority is governed by organizational policy and licensure. The safe default is to document the verbal order in the note and have the provider enter or authenticate it so the order carries the prescriber’s credentials.",
     "distractorExplanations": {
-      "a": "Partial doses are still dangerous challenges. Learners who choose “Give a half dose to test tolerance” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Documenting after exposure is unsafe. Learners who choose “Document the allergy after giving the full dose” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Substitution requires a provider order. Learners who choose “Substitute any antibiotic available in the cabinet” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Signing an order under scribe credentials attributes a prescribing decision to an unlicensed user and breaks the audit trail that ties orders to the responsible clinician.",
+      "c": "Delayed documentation from memory risks dose and drug errors and leaves the order unavailable to the care team when it is actually needed.",
+      "d": "Pushing the entry to another staff member still misattributes the order and adds a second hand-off where details can be lost."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-documentation-011",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "documentation",
-    "prompt": "On the Medical Scribe, which statement about pulse oximetry is correct? Select the best answer.",
+    "prompt": "A scribe notices an error in a note the provider already signed. What is the correct correction method?",
     "options": [
       {
         "id": "a",
-        "text": "It directly measures arterial blood pH"
+        "text": "Delete the incorrect text so the record reads correctly"
       },
       {
         "id": "b",
-        "text": "It replaces the need for any vital signs"
+        "text": "Overwrite the original entry but keep the original signature date"
       },
       {
         "id": "c",
-        "text": "Nail polish always improves accuracy"
+        "text": "Add a dated, timed, and attributed addendum that corrects the entry while the original text remains visible"
       },
       {
         "id": "d",
-        "text": "It estimates oxygen saturation and can be affected by poor perfusion, nail polish, or motion"
+        "text": "Ask the provider to unsign, retype, and re-sign using the date of service"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "SpO2 is a useful estimate but has limitations; interpret with clinical context The correct choice (“It estimates oxygen saturation and can be affected by poor…”) is the one that matches this rule.",
+    "correctOptionId": "c",
+    "explanation": "Signed documentation is a legal record. Corrections are made by addendum: the new entry states the correction, carries its own date, time, and author, and is authenticated by the provider. The original entry stays in the record and remains retrievable.",
     "distractorExplanations": {
-      "a": "PH requires blood gas analysis. Learners who choose “It directly measures arterial blood pH” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Other vitals remain necessary. Learners who choose “It replaces the need for any vital signs” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Dark nail polish can impair readings. Learners who choose “Nail polish always improves accuracy” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Deleting signed content destroys the audit trail and looks like concealment if the chart is later reviewed in an audit or legal matter.",
+      "b": "Overwriting with the old date hides when the change happened and misrepresents the record as if it were always accurate.",
+      "d": "Re-signing with the service date backdates the correction. The chart must show when the amendment was actually made."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-documentation-012",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "documentation",
-    "prompt": "For a subcutaneous insulin injection, an appropriate general site rotation principle is",
+    "prompt": "What is the main documentation-integrity problem with backdating a late entry to the date of service?",
     "options": [
       {
         "id": "a",
-        "text": "Rotate sites systematically within approved areas to reduce lipodystrophy"
+        "text": "It makes the note harder for other clinicians to read"
       },
       {
         "id": "b",
-        "text": "Use the exact same puncture point every day"
+        "text": "It prevents the diagnosis from being added to the problem list"
       },
       {
         "id": "c",
-        "text": "Always inject IM into the deltoid for insulin"
+        "text": "It duplicates the encounter in the billing queue"
       },
       {
         "id": "d",
-        "text": "Inject through clothing to save time"
+        "text": "It misrepresents when the documentation was created and can be treated as falsification of the record"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Site rotation prevents tissue changes that alter absorption; insulin is typically SQ, not IM, unless specifically ordered.",
+    "correctOptionId": "d",
+    "explanation": "Late entries are acceptable when they are labeled as late and carry the real date and time of entry along with the date of service. Backdating hides the delay, defeats the audit trail, and can be treated as falsifying a medical record.",
     "distractorExplanations": {
-      "b": "Same point causes tissue damage. Learners who choose “Use the exact same puncture point every day” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Insulin is usually SQ. Learners who choose “Always inject IM into the deltoid for insulin” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Injecting through clothing is improper. Learners who choose “Inject through clothing to save time” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Readability is not the issue. A backdated note can read perfectly well while still misstating when the documentation was created.",
+      "b": "Problem-list updates are independent of entry timestamps. The integrity problem is the false timestamp, not a workflow blocker.",
+      "c": "Backdating does not create a duplicate charge. The harm is to the accuracy and defensibility of the record itself."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-documentation-013",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "documentation",
-    "prompt": "When performing adult height/weight for BMI screening, the CMA should?",
+    "prompt": "What is the primary risk of copying a prior visit’s physical exam forward into today’s note?",
     "options": [
       {
         "id": "a",
-        "text": "Estimate weight from the last visit without measuring"
+        "text": "The note may document findings that were never performed today, making the record inaccurate and indefensible"
       },
       {
         "id": "b",
-        "text": "Use calibrated scales, remove heavy outerwear/shoes per protocol, and record accurately"
+        "text": "It slows the EHR down during peak clinic hours"
       },
       {
         "id": "c",
-        "text": "Ask the patient to hold a heavy bag on the scale"
+        "text": "It removes the prior note from the chart"
       },
       {
         "id": "d",
-        "text": "Round all weights to the nearest 20 pounds"
+        "text": "It prevents the provider from signing the encounter"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Accurate anthropometrics require proper technique and calibrated equipment for clinical decisions The correct choice (“Use calibrated scales, remove heavy outerwear/shoes per pro…”) is the one that matches this rule.",
+    "correctOptionId": "a",
+    "explanation": "Copy-forward carries yesterday’s findings into an encounter where they may be wrong or where the exam was never repeated. It inflates the apparent work performed, buries new findings in stale text, and is a common audit and malpractice exposure.",
     "distractorExplanations": {
-      "a": "Estimates are not acceptable for ordered measurements. Learners who choose “Estimate weight from the last visit without measuring” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Extra items falsify weight. Learners who choose “Ask the patient to hold a heavy bag on the scale” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Excessive rounding loses clinical value. Learners who choose “Round all weights to the nearest 20 pounds” are usually making that exact mistake instead of applying the rule in the stem."
+      "b": "System performance is not the concern. The risk is that the chart asserts clinical work that did not occur at this visit.",
+      "c": "Copying duplicates text; it does not delete the source note. The problem is duplication of unverified findings, not loss of history.",
+      "d": "Cloned text does not block authentication — which is exactly why it is dangerous: the inaccurate note can be signed and billed."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-documentation-014",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "documentation",
-    "prompt": "When administering an intradermal TB skin test (Mantoux), the CMA should expect to see?",
+    "prompt": "Which statement belongs in a scribe attestation at the end of a note?",
     "options": [
       {
         "id": "a",
-        "text": "Immediate muscle twitching in the deltoid"
+        "text": "This note was prepared independently by the scribe and reviewed later by the clinic manager"
       },
       {
         "id": "b",
-        "text": "Blood return in the syringe barrel as with IV push"
+        "text": "Documentation entered by [scribe name] acting as scribe in the presence of and at the direction of [provider name]"
       },
       {
         "id": "c",
-        "text": "A small wheal (bleb) form under the skin if the injection is placed correctly"
+        "text": "The scribe confirms the accuracy of the clinical assessment and plan"
       },
       {
         "id": "d",
-        "text": "No skin change because ID injections never raise a wheal"
+        "text": "The scribe performed the history and physical examination documented above"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Correct intradermal placement produces a pale wheal; absence of a wheal suggests the dose was too deep/subcutaneous.",
+    "correctOptionId": "b",
+    "explanation": "A scribe attestation identifies the scribe by name, states that documentation was entered at the direction of and in the presence of the named provider, and is paired with the provider’s own attestation that the note was reviewed and is accurate.",
     "distractorExplanations": {
-      "a": "Deltoid IM is a different route. Learners who choose “Immediate muscle twitching in the deltoid” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "ID tests are not IV injections. Learners who choose “Blood return in the syringe barrel as with IV push” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "A wheal is the expected local finding. Learners who choose “No skin change because ID injections never raise a wheal” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Scribes never document independently, and a clinic manager cannot substitute for provider review and authentication of clinical content.",
+      "c": "Attesting to clinical accuracy is a provider function. A scribe can only attest to having documented what the provider directed.",
+      "d": "Scribes do not perform history taking or examination. Such a statement would document unlicensed clinical practice."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-documentation-015",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "documentation",
-    "prompt": "Which action is appropriate before applying a Holter monitor (concept)?",
+    "prompt": "How should the chief complaint be documented?",
     "options": [
       {
         "id": "a",
-        "text": "Tell the patient to swim daily with the monitor on"
+        "text": "As the provider’s final diagnosis for the encounter"
       },
       {
         "id": "b",
-        "text": "Remove all electrodes after one hour routinely"
+        "text": "As a full list of the patient’s chronic conditions"
       },
       {
         "id": "c",
-        "text": "Have the patient MRI the same day without notifying staff"
+        "text": "As a brief statement of the reason for the visit, generally in the patient’s own words"
       },
       {
         "id": "d",
-        "text": "Educate the patient on keeping a symptom/activity diary and not getting the unit wet per instructions"
+        "text": "As the billing code selected for the visit"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Ambulatory monitors require diary use and device care; water and MRI can damage equipment or risk safety.",
+    "correctOptionId": "c",
+    "explanation": "The chief complaint is a short, concise statement of why the patient presented, ideally quoting or closely paraphrasing the patient. It anchors the HPI and should not be replaced by a diagnosis, a problem list, or a billing descriptor.",
     "distractorExplanations": {
-      "a": "Water exposure typically damages the unit. Learners who choose “Tell the patient to swim daily with the monitor on” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Holter studies last longer than one hour. Learners who choose “Remove all electrodes after one hour routinely” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "MRI is contraindicated with many monitors. Learners who choose “Have the patient MRI the same day without notifying staff” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "A diagnosis is the provider’s conclusion documented in the assessment. Putting it in the chief complaint presumes the outcome before the history is recorded.",
+      "b": "Chronic conditions belong to the problem list and past medical history. A list of them does not say why the patient came in today.",
+      "d": "Codes are assigned from completed documentation. A code is not a patient-facing reason for the encounter and cannot serve as the chief complaint."
     },
-    "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-terminology-001",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "terminology",
-    "prompt": "Surgical asepsis differs from medical asepsis in that surgical asepsis",
+    "prompt": "In the term pericarditis, what does the suffix -itis indicate?",
     "options": [
       {
         "id": "a",
-        "text": "Aims to eliminate all microorganisms from an area/object (sterile technique)"
+        "text": "Inflammation"
       },
       {
         "id": "b",
-        "text": "Only reduces microbes on hands with social handwashing"
+        "text": "Surgical removal"
       },
       {
         "id": "c",
-        "text": "Allows nonsterile items on a sterile field"
+        "text": "Enlargement"
       },
       {
         "id": "d",
-        "text": "Is identical to Standard Precautions alone"
+        "text": "Abnormal narrowing"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Sterile technique seeks absence of microbes for invasive procedures; medical asepsis reduces them The correct choice (“Aims to eliminate all microorganisms from an area/object (s…”) is the one that matches this rule.",
+    "explanation": "The suffix -itis means inflammation of the structure named by the word root. Pericarditis is inflammation of the pericardium, just as bronchitis is inflammation of the bronchi and dermatitis is inflammation of the skin.",
     "distractorExplanations": {
-      "b": "Social handwashing is medical asepsis level. Learners who choose “Only reduces microbes on hands with social handwashing” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Nonsterile items contaminate fields. Learners who choose “Allows nonsterile items on a sterile field” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Standard Precautions are not full sterile technique. Learners who choose “Is identical to Standard Precautions alone” are usually making that exact mistake instead of applying the rule in the stem."
+      "b": "Surgical removal is -ectomy, as in appendectomy or cholecystectomy. The -itis ending never denotes a procedure.",
+      "c": "Enlargement is -megaly, as in cardiomegaly or hepatomegaly. Inflammation and enlargement are distinct findings a scribe must not interchange.",
+      "d": "Narrowing is -stenosis, as in aortic stenosis or spinal stenosis. That describes a structural change, not an inflammatory process."
     },
-    "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-terminology-002",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "terminology",
-    "prompt": "On the Medical Scribe, when is it appropriate to use an alcohol-based hand rub? Select the best answer.",
+    "prompt": "What does the suffix -ectomy mean in cholecystectomy?",
     "options": [
       {
         "id": "a",
-        "text": "When hands are heavily contaminated with blood without washing first"
+        "text": "Visual examination with a scope"
       },
       {
         "id": "b",
-        "text": "When hands are not visibly soiled and the product is indicated by policy for the pathogens involved"
+        "text": "Surgical removal"
       },
       {
         "id": "c",
-        "text": "After caring for a patient with known C. difficile if soap/water is required by policy—prefer rub only"
+        "text": "Surgical repair"
       },
       {
         "id": "d",
-        "text": "Instead of removing gloves between patients"
+        "text": "Creation of a permanent opening"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "ABHR is for clean hands in many situations; soap/water is needed for visible soil and certain spores per policy.",
+    "explanation": "The suffix -ectomy means surgical excision or removal. Cholecystectomy is removal of the gallbladder; appendectomy removes the appendix; tonsillectomy removes the tonsils. Scribes see it constantly in surgical history.",
     "distractorExplanations": {
-      "a": "Visible blood needs soap/water washing. Learners who choose “When hands are heavily contaminated with blood without washing first” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Spore-forming organisms often require soap/water. Learners who choose “After caring for a patient with known C. difficile if soap/water is required by…” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Gloves are changed; hygiene still required. Learners who choose “Instead of removing gloves between patients” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Scope examination is -scopy, as in colonoscopy or laparoscopy. A scope procedure may be diagnostic without removing anything.",
+      "c": "Surgical repair is -plasty, as in arthroplasty or rhinoplasty. Repair restores a structure rather than removing it.",
+      "d": "Creating an opening is -ostomy, as in colostomy. That builds a new pathway rather than excising an organ."
     },
-    "difficulty": "hard",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-terminology-003",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "terminology",
-    "prompt": "A sterile package's sterility is considered compromised if",
+    "prompt": "How do the suffixes -otomy and -ostomy differ?",
     "options": [
       {
         "id": "a",
-        "text": "It was stored on a clean shelf within date with intact seals"
+        "text": "-otomy means removal and -ostomy means repair"
       },
       {
         "id": "b",
-        "text": "The chemical indicator shows an acceptable change per IFU"
+        "text": "They are interchangeable spellings of the same procedure"
       },
       {
         "id": "c",
-        "text": "It is wet, torn, expired, or has a broken seal/indicator failure"
+        "text": "-otomy is a surgical incision into a structure; -ostomy is creation of an artificial opening"
       },
       {
         "id": "d",
-        "text": "It was opened in a controlled sterile field and used immediately as intended"
+        "text": "-otomy applies to soft tissue and -ostomy to bone"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Moisture, damage, expiration, and failed indicators mean do not use The correct choice (“It is wet, torn, expired, or has a broken seal/indicator fa…”) is the one that matches this rule.",
+    "explanation": "A tracheotomy is the act of cutting into the trachea, while a tracheostomy is the resulting surgically created opening. Documenting the wrong suffix changes the procedure recorded in the surgical history.",
     "distractorExplanations": {
-      "a": "Proper storage supports sterility. Learners who choose “It was stored on a clean shelf within date with intact seals” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Acceptable indicators support use. Learners who choose “The chemical indicator shows an acceptable change per IFU” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Correct immediate use is the point of sterile supplies. Learners who choose “It was opened in a controlled sterile field and used immediately as intended” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Removal is -ectomy and repair is -plasty. Neither maps to the incision-versus-opening distinction being tested here.",
+      "b": "They describe different surgical acts, and charts, operative reports, and procedure codes distinguish them.",
+      "d": "Tissue type does not determine the suffix. Both are used across organ systems; the difference is incision versus created opening."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-terminology-004",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "terminology",
-    "prompt": "Under HIPAA, protected health information (PHI) may be disclosed without authorization when",
+    "prompt": "A note records bradycardia. What does the prefix brady- indicate?",
     "options": [
       {
         "id": "a",
-        "text": "Required for treatment, payment, or healthcare operations within allowed rules, or as otherwise permitted/required by law"
+        "text": "Fast"
       },
       {
         "id": "b",
-        "text": "Posted to social media for education if names are nicknames"
+        "text": "Irregular"
       },
       {
         "id": "c",
-        "text": "Shared with any friend who asks politely"
+        "text": "Absent"
       },
       {
         "id": "d",
-        "text": "Sold to marketers without patient knowledge"
+        "text": "Slow"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "TPO and other legal permissions exist, but casual/social disclosures are prohibited The correct choice (“Required for treatment, payment, or healthcare operations w…”) is the one that matches this rule.",
+    "correctOptionId": "d",
+    "explanation": "Brady- means slow, so bradycardia is a slow heart rate, conventionally under 60 beats per minute in adults. Its counterpart tachy- means fast, as in tachycardia or tachypnea.",
     "distractorExplanations": {
-      "b": "Social media PHI disclosures are violations. Learners who choose “Posted to social media for education if names are nicknames” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Friends are not in the care team by default. Learners who choose “Shared with any friend who asks politely” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Sale of PHI without authorization is illegal. Learners who choose “Sold to marketers without patient knowledge” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Fast is tachy-. Confusing brady- and tachy- reverses the clinical meaning of a vital-sign finding, which is a high-risk documentation error.",
+      "b": "Irregular rhythm is described with terms such as arrhythmia or fibrillation, not with brady-, which refers only to rate.",
+      "c": "Absence is conveyed by a- or an-, as in asystole or anuria. Bradycardia means a slow rate, not no rate."
     },
-    "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-terminology-005",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "terminology",
-    "prompt": "When scheduling a patient who needs fasting labs, the CMA should?",
+    "prompt": "A patient reports difficulty swallowing. Which term should be documented?",
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "Dysphagia"
       },
       {
         "id": "b",
-        "text": "Communicate fasting requirements and appointment timing clearly before the visit"
+        "text": "Dysphasia"
       },
       {
         "id": "c",
-        "text": "this concept has no application in US securities, insurance, or licensing markets"
+        "text": "Dyspnea"
       },
       {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "Dysuria"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Clear prep instructions prevent cancelled draws and inaccurate results The correct choice (“Communicate fasting requirements and appointment timing cle…”) is the one that matches this rule.",
+    "correctOptionId": "a",
+    "explanation": "Dysphagia combines dys- (difficult or painful) with -phagia (eating or swallowing), so it means difficulty swallowing. It is easily confused in dictation with dysphasia, which is a language impairment.",
     "distractorExplanations": {
-      "a": "This statement is false about the tested concept and does not match the correct definition.",
-      "c": "This statement is false about the tested concept and does not match the correct definition.",
-      "d": "This statement is false about the tested concept and does not match the correct definition."
+      "b": "Dysphasia is impaired speech or language production, typically neurological. Substituting it for a swallowing complaint changes the clinical picture entirely.",
+      "c": "Dyspnea is difficult or labored breathing. It is a respiratory symptom, not a swallowing complaint.",
+      "d": "Dysuria is painful or difficult urination, a urinary-tract symptom with no relationship to swallowing or the upper gastrointestinal tract."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-terminology-006",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "terminology",
-    "prompt": "A patient is angry about wait time. The most professional first response is",
+    "prompt": "What does hepatomegaly mean?",
     "options": [
       {
         "id": "a",
-        "text": "Argue that other patients matter more"
+        "text": "Inflammation of the liver"
       },
       {
         "id": "b",
-        "text": "Ignore them until they calm down fully"
+        "text": "Enlargement of the liver"
       },
       {
         "id": "c",
-        "text": "Acknowledge the frustration, apologize for the wait, and offer realistic updates/help"
+        "text": "Surgical removal of part of the liver"
       },
       {
         "id": "d",
-        "text": "Raise your voice to match theirs"
+        "text": "Enlargement of the spleen"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Therapeutic communication uses empathy and information without escalating conflict The correct choice (“Acknowledge the frustration, apologize for the wait, and of…”) is the one that matches this rule.",
+    "correctOptionId": "b",
+    "explanation": "Hepat/o is the combining form for liver and -megaly means enlargement, so hepatomegaly is an enlarged liver — typically documented as a palpable finding on abdominal examination.",
     "distractorExplanations": {
-      "a": "Arguing worsens conflict. Learners who choose “Argue that other patients matter more” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Ignoring can increase agitation. Learners who choose “Ignore them until they calm down fully” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Matching anger unprofessionally escalates. Learners who choose “Raise your voice to match theirs” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Liver inflammation is hepatitis. Inflammation and enlargement can coexist but are documented as separate findings.",
+      "c": "Partial liver resection is a hepatectomy, using the -ectomy suffix. The -megaly ending describes a physical finding and never a procedure.",
+      "d": "Splenic enlargement is splenomegaly, from splen/o. The combining form identifies the organ, and swapping it misstates the exam finding."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-terminology-007",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "terminology",
-    "prompt": "On the Medical Scribe, which is an example of proper EHR documentation practice? Select the best answer.",
+    "prompt": "What does the term hyperkalemia describe?",
     "options": [
       {
         "id": "a",
-        "text": "Backdate entries to make the chart look complete"
+        "text": "An elevated blood calcium level"
       },
       {
         "id": "b",
-        "text": "Copy-paste another patient's note without review"
+        "text": "A low blood potassium level"
       },
       {
         "id": "c",
-        "text": "Delete unfavorable vital signs permanently"
+        "text": "An elevated blood potassium level"
       },
       {
         "id": "d",
-        "text": "Enter objective, timely, accurate notes using approved abbreviations only"
+        "text": "Excess potassium excreted in urine"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Documentation must be truthful, timely, and patient-specific; falsification is illegal/unethical The correct choice (“Enter objective, timely, accurate notes using approved abbr…”) is the one that matches this rule.",
+    "correctOptionId": "c",
+    "explanation": "Hyper- means above normal, kal/i refers to potassium, and -emia means a blood condition, so hyperkalemia is a high serum potassium. Hypokalemia, with hypo-, is the opposite low-potassium state.",
     "distractorExplanations": {
-      "a": "Backdating is fraudulent. Learners who choose “Backdate entries to make the chart look complete” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Wrong-patient copy-paste is a serious error. Learners who choose “Copy-paste another patient's note without review” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Altering clinical data is misconduct. Learners who choose “Delete unfavorable vital signs permanently” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "High calcium is hypercalcemia, from calc/i. The mineral root determines the electrolyte named, and substituting one changes the abnormality documented.",
+      "b": "A low potassium is hypokalemia. Reversing hyper- and hypo- inverts the laboratory abnormality in the chart.",
+      "d": "Urinary excretion would use a urinary suffix such as -uria. The -emia ending specifically places the finding in the blood."
     },
-    "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-terminology-008",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "terminology",
-    "prompt": "Informed consent for a procedure means the patient",
+    "prompt": "A triage note records “pt c/o SOB with exertion.” What does SOB mean here?",
     "options": [
       {
         "id": "a",
-        "text": "Understands risks, benefits, and alternatives and agrees voluntarily"
+        "text": "Sudden onset of bleeding"
       },
       {
         "id": "b",
-        "text": "Signs any form without explanation"
+        "text": "Standard oxygen baseline"
       },
       {
         "id": "c",
-        "text": "Is coerced by staff to avoid delays"
+        "text": "Symptoms of bronchitis"
       },
       {
         "id": "d",
-        "text": "Has a family member sign when the patient is competent and refuses"
+        "text": "Shortness of breath"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Consent requires comprehension and voluntariness; competent adults decide for themselves The correct choice (“Understands risks, benefits, and alternatives and agrees vo…”) is the one that matches this rule.",
+    "correctOptionId": "d",
+    "explanation": "SOB is the standard clinical abbreviation for shortness of breath, usually paired with a qualifier such as at rest or with exertion. In the same note, c/o means complains of.",
     "distractorExplanations": {
-      "b": "Signature without information is not informed consent. Learners who choose “Signs any form without explanation” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Coercion invalidates consent. Learners who choose “Is coerced by staff to avoid delays” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Competent refusals must be respected and escalated appropriately. Learners who choose “Has a family member sign when the patient is competent and refuses” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "There is no accepted abbreviation SOB for bleeding. Inventing expansions for abbreviations is a documented source of chart error.",
+      "b": "Baseline oxygen status is written out or recorded as an SpO2 value with the delivery method, never as SOB.",
+      "c": "Diagnoses are documented by name in the assessment. SOB denotes a symptom — shortness of breath — not a named condition."
     },
-    "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-terminology-009",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "terminology",
-    "prompt": "On the Medical Scribe, when verifying insurance eligibility, the CMA should:? Select the best answer.",
+    "prompt": "The allergy field of a chart reads NKDA. What does that mean?",
     "options": [
       {
         "id": "a",
-        "text": "Guarantee that all services will be paid 100%"
+        "text": "No known drug allergies"
       },
       {
         "id": "b",
-        "text": "Confirm coverage/benefits as directed and communicate patient financial responsibility per policy"
+        "text": "Not known, documentation absent"
       },
       {
         "id": "c",
-        "text": "Ignore referral requirements"
+        "text": "New known drug adverse reaction"
       },
       {
         "id": "d",
-        "text": "Bill a different patient's insurance to get payment"
+        "text": "Nurse-konfirmed drug administration"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Eligibility checks reduce denials; guarantees and fraudulent billing are improper The correct choice (“Confirm coverage/benefits as directed and communicate patie…”) is the one that matches this rule.",
+    "correctOptionId": "a",
+    "explanation": "NKDA states that the patient reports no known allergies to medications. It is narrower than NKA (no known allergies), which also covers food and environmental allergens, so the two should not be used interchangeably.",
     "distractorExplanations": {
-      "a": "Staff should not guarantee payment. Learners who choose “Guarantee that all services will be paid 100%” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Referrals/authorizations matter for coverage. Learners who choose “Ignore referral requirements” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Using another patient's insurance is fraud. Learners who choose “Bill a different patient's insurance to get payment” are usually making that exact mistake instead of applying the rule in the stem."
+      "b": "NKDA is an affirmative statement that the patient was asked and reported no drug allergies. An unasked or unknown allergy history must be documented as such.",
+      "c": "A new adverse reaction is documented by naming the drug and the reaction in the allergy list, not with the NKDA abbreviation.",
+      "d": "No such abbreviation exists. Medication administration is documented in the medication administration record with drug, dose, route, and time."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-terminology-010",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "terminology",
-    "prompt": "Which telephone triage action is within a typical CMA scope?",
+    "prompt": "A prescription reads “1 tab PO BID.” How often is the medication taken?",
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "Once a day"
       },
       {
         "id": "b",
-        "text": "this concept has no application in US securities, insurance, or licensing markets"
+        "text": "Twice a day"
       },
       {
         "id": "c",
-        "text": "Follow office protocols to gather information and escalate urgent symptoms to licensed clinicians"
+        "text": "Three times a day"
       },
       {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "Four times a day"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "MAs use protocols and escalate; diagnosis and prescribing are licensed-provider functions The correct choice (“Follow office protocols to gather information and escalate…”) is the one that matches this rule.",
+    "correctOptionId": "b",
+    "explanation": "BID is from bis in die, meaning twice daily. The related sig abbreviations are QD or daily for once a day, TID for three times a day, and QID for four times a day. PO means by mouth.",
     "distractorExplanations": {
-      "a": "This statement is false about the tested concept and does not match the correct definition.",
-      "b": "This statement is false about the tested concept and does not match the correct definition.",
-      "d": "This statement is false about the tested concept and does not match the correct definition."
+      "a": "Once daily is written as daily or QD, though many organizations require the word daily to avoid misreading QD as QID.",
+      "c": "Three times daily is TID. Misreading BID as TID increases the daily dose by fifty percent, which is a genuine medication-safety error.",
+      "d": "Four times daily is QID. It is the most commonly confused partner of BID when handwriting or dictation is unclear."
     },
-    "difficulty": "hard",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-terminology-011",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "terminology",
-    "prompt": "A release of medical records to a third party generally requires:",
+    "prompt": "A medication is ordered PRN. How should that be documented in plain language?",
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "Before meals"
       },
       {
         "id": "b",
-        "text": "this concept has no application in US securities, insurance, or licensing markets"
+        "text": "At bedtime"
       },
       {
         "id": "c",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "By mouth"
       },
       {
         "id": "d",
-        "text": "A valid patient authorization unless a legal exception applies"
+        "text": "As needed"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "HIPAA requires appropriate authorization or permitted disclosure pathways before releasing records The correct choice (“A valid patient authorization unless a legal exception appl…”) is the one that matches this rule.",
+    "explanation": "PRN comes from pro re nata and means the medication is taken as needed rather than on a fixed schedule. Good documentation pairs PRN with the indication and a maximum frequency, for example as needed for pain, up to every six hours.",
     "distractorExplanations": {
-      "a": "This statement is false about the tested concept and does not match the correct definition.",
-      "b": "This statement is false about the tested concept and does not match the correct definition.",
-      "c": "This statement is false about the tested concept and does not match the correct definition."
+      "a": "Before meals is AC, from ante cibum. Timing relative to food is a separate instruction from an as-needed indication.",
+      "b": "At bedtime is HS, from hora somni. That is a scheduled time, not a symptom-triggered dose.",
+      "c": "By mouth is PO, which specifies the route of administration rather than the frequency or trigger for a dose."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-terminology-012",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "terminology",
-    "prompt": "Cultural humility in patient communication includes:",
+    "prompt": "In chart shorthand, what does Dx stand for?",
     "options": [
       {
         "id": "a",
-        "text": "Asking respectfully about needs/preferences and avoiding assumptions"
+        "text": "Diagnosis"
       },
       {
         "id": "b",
-        "text": "Speaking only slang to seem friendly"
+        "text": "Discharge"
       },
       {
         "id": "c",
-        "text": "Refusing interpreters when language barriers exist"
+        "text": "Dosage"
       },
       {
         "id": "d",
-        "text": "Mocking traditional remedies"
+        "text": "Duration"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Respectful inquiry and qualified interpretation improve safety and trust The correct choice (“Asking respectfully about needs/preferences and avoiding as…”) is the one that matches this rule.",
+    "explanation": "Dx is the standard abbreviation for diagnosis. It sits alongside Hx for history, Tx for treatment, Sx for symptoms or surgery depending on context, and Rx for prescription — all common in fast-paced scribe documentation.",
     "distractorExplanations": {
-      "b": "Slang can confuse and disrespect. Learners who choose “Speaking only slang to seem friendly” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Interpreters are required for effective communication when needed. Learners who choose “Refusing interpreters when language barriers exist” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Mockery is unethical. Learners who choose “Mocking traditional remedies” are usually making that exact mistake instead of applying the rule in the stem."
+      "b": "Discharge is usually written out or abbreviated D/C, an abbreviation many organizations discourage because it also reads as discontinue.",
+      "c": "Dosage is documented with the actual amount, units, and frequency. There is no accepted Dx abbreviation for dose.",
+      "d": "Duration is written out or captured in the HPI timing element. Dx always refers to the diagnosis in standard chart shorthand."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-terminology-013",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "terminology",
-    "prompt": "Which is the correct action if you notice another staff member accessing charts without a job-related need?",
+    "prompt": "A problem list includes COPD. What condition is being documented?",
     "options": [
       {
         "id": "a",
-        "text": "Ask them for gossip details from the chart"
+        "text": "Chronic obstructive pancreatic disorder"
       },
       {
         "id": "b",
-        "text": "Report the privacy incident per facility policy"
+        "text": "Chronic obstructive pulmonary disease"
       },
       {
         "id": "c",
-        "text": "Ignore it because they are senior"
+        "text": "Congenital obstructive pulmonary defect"
       },
       {
         "id": "d",
-        "text": "Post about it on social media with patient initials"
+        "text": "Cardiac output pressure deficit"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Curiosity viewing is a HIPAA violation; report through proper channels without further disclosure The correct choice (“Report the privacy incident per facility policy”) is the one that matches this rule.",
+    "explanation": "COPD is chronic obstructive pulmonary disease, a progressive airflow-limitation disorder that includes emphysema and chronic bronchitis. Scribes routinely document COPD exacerbations, inhaler regimens, and home oxygen use.",
     "distractorExplanations": {
-      "a": "Participating worsens the breach. Learners who choose “Ask them for gossip details from the chart” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Seniority does not authorize snooping. Learners who choose “Ignore it because they are senior” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Social posts create additional breaches. Learners who choose “Post about it on social media with patient initials” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "There is no such recognized diagnosis. COPD is a respiratory condition, and the pulmonary expansion is the only correct one.",
+      "c": "COPD is an acquired disease strongly associated with smoking and inhalational exposure, not a congenital malformation.",
+      "d": "COPD has no cardiac expansion. Heart-failure terminology uses entirely separate abbreviations such as CHF or HFrEF."
     },
-    "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-terminology-014",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "terminology",
-    "prompt": "Which is the best example of a closed-ended question for clarifying a symptom timeline?",
+    "prompt": "In nephrology, what body structure does the combining form nephr/o refer to?",
     "options": [
       {
         "id": "a",
-        "text": "Tell me everything about your life story."
+        "text": "Nerve"
       },
       {
         "id": "b",
-        "text": "How does that make you feel in a poetic sense?"
+        "text": "Bladder"
       },
       {
         "id": "c",
-        "text": "Did the chest pain start today?"
+        "text": "Liver"
       },
       {
         "id": "d",
-        "text": "Why are you always late?"
+        "text": "Kidney"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Closed questions elicit yes/no or brief facts useful for triage details; open questions gather narrative.",
+    "correctOptionId": "d",
+    "explanation": "Nephr/o means kidney, so nephrology is the study of the kidneys and nephrectomy is removal of a kidney. Ren/o is the Latin-derived combining form for the same organ, seen in terms such as renal failure.",
     "distractorExplanations": {
-      "a": "That is open-ended and broad. Learners who choose “Tell me everything about your life story.” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Not a clinical clarifying closed question. Learners who choose “How does that make you feel in a poetic sense?” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Judgmental and unhelpful. Learners who choose “Why are you always late?” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Nerve is neur/o, as in neuropathy or neurology. The visual similarity between nephr/o and neur/o makes this a frequent transcription error.",
+      "b": "Bladder is cyst/o, as in cystitis or cystoscopy. Urinary-tract roots must be kept distinct when documenting the site of a problem.",
+      "c": "Liver is hepat/o. Confusing it with nephr/o would place a renal finding in the wrong organ system entirely."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-terminology-015",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "terminology",
-    "prompt": "On the Medical Scribe, when documenting in an EHR, the CMA should avoid:? Select the best answer.",
+    "prompt": "Why do many organizations prohibit writing “U” for units and “QD” for daily in clinical documentation?",
     "options": [
       {
         "id": "a",
-        "text": "Using approved abbreviations listed in facility policy"
+        "text": "They are copyrighted terms that require licensing to use in an EHR"
       },
       {
         "id": "b",
-        "text": "Recording vital signs at the time measured"
+        "text": "They are only valid in inpatient settings and not in clinics"
       },
       {
         "id": "c",
-        "text": "Correcting errors per amendment policy"
+        "text": "They are error-prone abbreviations that are commonly misread, causing medication dosing errors"
       },
       {
         "id": "d",
-        "text": "Using another user's login credentials to enter notes"
+        "text": "They cannot be indexed by coding software"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Shared logins destroy audit integrity and violate security policy The correct choice (“Using another user's login credentials to enter notes”) is the one that matches this rule.",
+    "correctOptionId": "c",
+    "explanation": "A handwritten U can be read as a zero or a four, turning 4U of insulin into 40 or 44 units, and QD is frequently misread as QID. Safety lists from bodies such as ISMP and The Joint Commission call for writing units and daily in full.",
     "distractorExplanations": {
-      "a": "Approved abbreviations are acceptable. Learners who choose “Using approved abbreviations listed in facility policy” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Timely vitals are required. Learners who choose “Recording vital signs at the time measured” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Proper corrections are allowed. Learners who choose “Correcting errors per amendment policy” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Clinical abbreviations are not licensed intellectual property. The restriction exists purely for patient-safety reasons.",
+      "b": "The risk of misreading exists in every setting. Do-not-use guidance applies across inpatient, outpatient, and pharmacy documentation alike.",
+      "d": "Coders work from narrative documentation and orders regardless of abbreviation style. The concern is misdosing, not indexing."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-workflow-001",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "workflow",
-    "prompt": "Which statement about capillary (fingerstick) collection is correct?",
+    "prompt": "What is the purpose of the problem list in an EHR?",
     "options": [
       {
         "id": "a",
-        "text": "Wipe away the first drop when protocol forbids and avoid milking the finger excessively"
+        "text": "A maintained list of the patient’s active and chronic diagnoses, with resolved items moved to inactive"
       },
       {
         "id": "b",
-        "text": "Wipe away the first drop when protocol requires and avoid milking the finger excessively"
+        "text": "A running log of every symptom the patient has ever reported"
       },
       {
         "id": "c",
-        "text": "this concept has no application in US securities, insurance, or licensing markets"
+        "text": "The list of medications the patient currently takes"
       },
       {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "A record of appointments and no-shows for the patient"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Excessive milking introduces tissue fluid; site selection and first-drop rules follow protocol for accurate POCT/lab results.",
+    "correctOptionId": "a",
+    "explanation": "The problem list gives any clinician a longitudinal snapshot of what the patient is being managed for. Keeping it current means adding newly confirmed diagnoses, updating wording, and marking resolved problems inactive rather than deleting the history.",
     "distractorExplanations": {
-      "a": "This statement is false about the tested concept and does not match the correct definition.",
-      "c": "This statement is false about the tested concept and does not match the correct definition.",
-      "d": "This statement is false about the tested concept and does not match the correct definition."
+      "b": "Transient symptoms belong in encounter notes. Dumping them on the problem list makes the real chronic conditions impossible to see.",
+      "c": "Current medications live in the medication list. Problems and medications are separate structured fields that support different clinical decisions.",
+      "d": "Scheduling history is tracked by the practice-management side of the system, not by the clinical problem list."
     },
-    "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-workflow-002",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "workflow",
-    "prompt": "Which tube additive is typically associated with EDTA lavender-top collections?",
+    "prompt": "A patient says penicillin gives her hives. What is the most complete allergy entry?",
     "options": [
       {
         "id": "a",
-        "text": "Clot activator only for chemistry serum always"
+        "text": "Allergen penicillin with no reaction field completed"
       },
       {
         "id": "b",
-        "text": "Sodium citrate for PT/INR exclusively in lavender tops"
+        "text": "Allergen penicillin with the reaction documented as hives"
       },
       {
         "id": "c",
-        "text": "An anticoagulant used for CBC and related hematology tests"
+        "text": "A free-text note in the HPI that the patient is allergic"
       },
       {
         "id": "d",
-        "text": "No additive—lavender tops are plain red"
+        "text": "Allergen antibiotics as a general class"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "EDTA anticoagulates whole blood for hematology; citrate is light blue; serum tubes differ The correct choice (“An anticoagulant used for CBC and related hematology tests”) is the one that matches this rule.",
+    "correctOptionId": "b",
+    "explanation": "An allergy entry is only useful when both the substance and the reaction are captured. Recording the reaction lets the next clinician distinguish a rash from anaphylaxis and decide whether a related drug class can be used safely.",
     "distractorExplanations": {
-      "a": "Many chemistry tests use serum/plasma tubes, not EDTA CBC tubes. Learners who choose “Clot activator only for chemistry serum always” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Citrate is light blue. Learners who choose “Sodium citrate for PT/INR exclusively in lavender tops” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Lavender contains EDTA. Learners who choose “No additive—lavender tops are plain red” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "An allergen alone leaves the next prescriber unable to judge severity or whether a cephalosporin could reasonably be given.",
+      "c": "Narrative text does not trigger the EHR interaction alerts that a structured allergy entry produces at the point of ordering.",
+      "d": "Blanket class entries strip out usable detail and can needlessly block safe therapies the patient actually tolerates."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-workflow-003",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "workflow",
-    "prompt": "Lead II on a standard ECG typically views the heart's electrical activity between",
+    "prompt": "A patient reports that metformin causes nausea but he keeps taking it. How is this best captured?",
     "options": [
       {
         "id": "a",
-        "text": "V1 and V6 only"
+        "text": "As a drug allergy with nausea listed as the reaction"
       },
       {
         "id": "b",
-        "text": "Both earlobes exclusively"
+        "text": "As a new problem-list diagnosis of medication intolerance"
       },
       {
         "id": "c",
-        "text": "The umbilicus and left scapula"
+        "text": "As an intolerance or adverse reaction rather than a true allergy"
       },
       {
         "id": "d",
-        "text": "The right arm and left leg electrodes"
+        "text": "It does not need documenting because the patient continues the drug"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Limb lead II is RA (−) to LL (+); precordial leads are chest positions The correct choice (“The right arm and left leg electrodes”) is the one that matches this rule.",
+    "correctOptionId": "c",
+    "explanation": "Nausea is a side effect, not an immune-mediated allergic reaction. Filing it as an intolerance keeps the information visible without generating an allergy alert that could unnecessarily block an effective medication.",
     "distractorExplanations": {
-      "a": "V leads are precordial. Learners who choose “V1 and V6 only” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Earlobes are not standard limb lead sites. Learners who choose “Both earlobes exclusively” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Those landmarks are not Lead II. Learners who choose “The umbilicus and left scapula” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Labelling a side effect as an allergy can permanently remove a useful drug class from the patient’s options across the health system.",
+      "b": "The problem list tracks clinical conditions being managed. Drug-specific reaction data belongs in the allergy or intolerance field.",
+      "d": "Tolerated side effects still inform future dosing and counselling, so they belong in the record."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-workflow-004",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "workflow",
-    "prompt": "If a patient develops syncope during venipuncture, the CMA should",
+    "prompt": "What is medication reconciliation?",
     "options": [
       {
         "id": "a",
-        "text": "Remove the needle, protect the patient from injury, and follow syncope/first-aid protocol"
+        "text": "Refilling every medication on the list at the end of the visit"
       },
       {
         "id": "b",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "Converting brand names to generic names in the chart"
       },
       {
         "id": "c",
-        "text": "this concept has no application in US securities, insurance, or licensing markets"
+        "text": "Checking whether the patient’s insurance covers each medication"
       },
       {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "Comparing the medications the patient is actually taking against the EHR list and resolving discrepancies with the provider"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Stop the procedure, prevent falls/injury, and get help per protocol The correct choice (“Remove the needle, protect the patient from injury, and fol…”) is the one that matches this rule.",
+    "correctOptionId": "d",
+    "explanation": "Reconciliation happens at transitions of care and at routine visits: the patient-reported regimen, including over-the-counter and supplement use, is compared line by line with the chart so duplicates, discontinued drugs, and dose changes are corrected before new prescribing.",
     "distractorExplanations": {
-      "b": "This statement is false about the tested concept and does not match the correct definition.",
-      "c": "This statement is false about the tested concept and does not match the correct definition.",
-      "d": "This statement is false about the tested concept and does not match the correct definition."
+      "a": "Refills are a prescribing decision. Reconciliation is about accuracy of the list, and it may well conclude that a drug should stop.",
+      "b": "Name normalization may happen along the way, but it is a formatting task and does not detect the dose and adherence discrepancies reconciliation targets.",
+      "c": "Coverage checks are a pharmacy and benefits function, separate from verifying what the patient is actually taking."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-workflow-005",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "workflow",
-    "prompt": "On the Medical Scribe, which statement about plasma vs serum is correct? Select the best answer.",
+    "prompt": "Which set of details makes a medication entry complete?",
     "options": [
       {
         "id": "a",
-        "text": "Serum always contains fibrinogen like plasma"
+        "text": "Drug name, dose, route, frequency, and when the patient last took it"
       },
       {
         "id": "b",
-        "text": "Plasma is the liquid portion of anticoagulated blood; serum is after clotting without anticoagulant"
+        "text": "Drug name and the prescribing physician only"
       },
       {
         "id": "c",
-        "text": "Plasma is only obtained from capillary heel sticks"
+        "text": "Drug name and the pharmacy that filled it"
       },
       {
         "id": "d",
-        "text": "They are identical terms with no lab distinction"
+        "text": "Drug name and the year it was started"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Anticoagulated tubes yield plasma; clot tubes yield serum after centrifugation The correct choice (“Plasma is the liquid portion of anticoagulated blood; serum…”) is the one that matches this rule.",
+    "correctOptionId": "a",
+    "explanation": "A usable medication entry lets the provider make a dosing decision without re-interviewing the patient. Name alone is not enough: dose, route, and frequency drive interaction checking, and last-taken time matters for acute decisions.",
     "distractorExplanations": {
-      "a": "Serum lacks fibrinogen consumed in the clot. Learners who choose “Serum always contains fibrinogen like plasma” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Venous anticoagulated draws commonly yield plasma. Learners who choose “Plasma is only obtained from capillary heel sticks” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Labs distinguish plasma vs serum. Learners who choose “They are identical terms with no lab distinction” are usually making that exact mistake instead of applying the rule in the stem."
+      "b": "Knowing who prescribed a drug says nothing about how much the patient takes or how often, which is what safe prescribing requires.",
+      "c": "The dispensing pharmacy is useful for refills but does not describe the current regimen the patient is following.",
+      "d": "Start year gives historical context but omits the dose and frequency needed for interaction checks and titration decisions."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-workflow-006",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "workflow",
-    "prompt": "A wandering baseline on an ECG is often improved by:",
+    "prompt": "A note template pre-populates a full normal physical exam. What must the scribe do?",
     "options": [
       {
         "id": "a",
-        "text": "Removing the ground electrode permanently"
+        "text": "Leave the defaults in place because they represent the expected baseline"
       },
       {
         "id": "b",
-        "text": "Asking the patient to cough continuously"
+        "text": "Edit the template so it reflects only the exam elements the provider actually performed"
       },
       {
         "id": "c",
-        "text": "Cleaning skin, securing electrodes, and checking for loose leads or patient movement/cable tension"
+        "text": "Delete the entire exam section whenever a template loads"
       },
       {
         "id": "d",
-        "text": "Setting the machine to defibrillate"
+        "text": "Keep the defaults and add a note that the template was used"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Poor contact and motion cause baseline wander; fix skin prep and lead security The correct choice (“Cleaning skin, securing electrodes, and checking for loose…”) is the one that matches this rule.",
+    "correctOptionId": "b",
+    "explanation": "Templates and smart phrases speed documentation but assert findings by default. Leaving unperformed normals in place documents work that did not happen, inflates the visit level, and hides the abnormal findings that matter.",
     "distractorExplanations": {
-      "a": "Ground/reference connections are needed. Learners who choose “Removing the ground electrode permanently” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Coughing worsens artifact. Learners who choose “Asking the patient to cough continuously” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Defibrillation is not an ECG quality fix. Learners who choose “Setting the machine to defibrillate” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "A default is not an observation. Signing off pre-filled normals attests to an examination the provider may never have done.",
+      "c": "Removing everything discards genuinely performed elements and leaves the encounter under-documented in the other direction.",
+      "d": "Disclosing the template does not make the unperformed findings true. The text itself has to match the encounter."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-workflow-007",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "workflow",
-    "prompt": "Standard Precautions mean that healthcare workers should",
+    "prompt": "The provider orders labs that will not result until after the patient leaves. How should the scribe document this?",
     "options": [
       {
         "id": "a",
-        "text": "Assume all blood and body fluids may be infectious and use appropriate barriers"
+        "text": "Leave the labs out of the note until results are available"
       },
       {
         "id": "b",
-        "text": "Use PPE only for patients with known HIV"
+        "text": "Document expected normal results so the note reads as complete"
       },
       {
         "id": "c",
-        "text": "Wash gloves instead of changing them between patients"
+        "text": "Note the pending tests in the plan along with the agreed follow-up for communicating results"
       },
       {
         "id": "d",
-        "text": "Skip hand hygiene if gloves were worn"
+        "text": "Enter the pending labs directly into the problem list"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Standard Precautions protect against unrecognized infection; gloves do not replace hand hygiene The correct choice (“Assume all blood and body fluids may be infectious and use…”) is the one that matches this rule.",
+    "correctOptionId": "c",
+    "explanation": "Pending studies belong in the plan so the chart shows what was ordered and how results will be handled. The scribe does not interpret or release results; those route to the provider for review and patient communication.",
     "distractorExplanations": {
-      "b": "Known-status-only PPE is outdated practice. Learners who choose “Use PPE only for patients with known HIV” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Gloves are single-use between patients. Learners who choose “Wash gloves instead of changing them between patients” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Hand hygiene is still required after glove removal. Learners who choose “Skip hand hygiene if gloves were worn” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Omitting ordered tests breaks the chain between the encounter and the order, and nothing in the note explains why the patient is expecting a call.",
+      "b": "Recording results that do not exist is fabrication, and predicted values can be flatly wrong.",
+      "d": "The problem list holds diagnoses under management. Pending diagnostics belong in the plan for the encounter."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-workflow-008",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "workflow",
-    "prompt": "The most important action to prevent healthcare-associated infection is",
+    "prompt": "Which details make a referral entry useful to the receiving specialist?",
     "options": [
       {
         "id": "a",
-        "text": "Wearing jewelry under gloves for grip"
+        "text": "The specialty requested only"
       },
       {
         "id": "b",
-        "text": "Performing hand hygiene at appropriate moments"
+        "text": "The patient’s insurance plan and copay amount"
       },
       {
         "id": "c",
-        "text": "Using the same gown all day for every patient"
+        "text": "The date of the patient’s last visit to the primary provider"
       },
       {
         "id": "d",
-        "text": "Disabling sharps containers to save space"
+        "text": "The specialty requested, the clinical reason for referral, and the urgency"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Hand hygiene is the cornerstone of infection prevention in clinical settings The correct choice (“Performing hand hygiene at appropriate moments”) is the one that matches this rule.",
+    "correctOptionId": "d",
+    "explanation": "A referral that names the specialty, states the specific clinical question, and indicates urgency lets the receiving office triage correctly. Vague referrals get scheduled late and arrive without the context the specialist needs.",
     "distractorExplanations": {
-      "a": "Jewelry harbors microbes and tears gloves. Learners who choose “Wearing jewelry under gloves for grip” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Gowns are changed per policy/patient. Learners who choose “Using the same gown all day for every patient” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Sharps containers must remain available and functional. Learners who choose “Disabling sharps containers to save space” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "A bare specialty leaves the consultant guessing at the clinical question and gives scheduling staff nothing to triage against.",
+      "b": "Benefits information supports authorization workflows but tells the specialist nothing about why the patient is being sent.",
+      "c": "Visit history is already in the chart and does not convey the reason or urgency driving the referral."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-workflow-009",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "workflow",
-    "prompt": "A contaminated needle should be disposed of by:",
+    "prompt": "In an orthopedic visit the provider examines the right knee. Why does the scribe document laterality explicitly?",
     "options": [
       {
         "id": "a",
-        "text": "Bending it carefully then placing in the trash"
+        "text": "Because the wrong side documented can drive wrong-site imaging, therapy, or surgery"
       },
       {
         "id": "b",
-        "text": "Recapping with two hands then pocketing it"
+        "text": "Because the EHR cannot save an orthopedic note without it"
       },
       {
         "id": "c",
-        "text": "Placing it immediately into a puncture-resistant sharps container without recapping"
+        "text": "Because laterality determines the copay for the visit"
       },
       {
         "id": "d",
-        "text": "Leaving it on the mayo stand for housekeeping"
+        "text": "Because specialists prefer anatomical detail as a matter of style"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "OSHA-aligned practice: no two-handed recapping; immediate sharps disposal prevents needlesticks The correct choice (“Placing it immediately into a puncture-resistant sharps con…”) is the one that matches this rule.",
+    "correctOptionId": "a",
+    "explanation": "Laterality is a safety-critical data point. Downstream orders, procedure scheduling, and coding all pull from the note, so an unspecified or incorrect side can result in imaging or a procedure performed on the wrong limb.",
     "distractorExplanations": {
-      "a": "Bending and trash disposal is prohibited. Learners who choose “Bending it carefully then placing in the trash” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Two-handed recapping is high risk. Learners who choose “Recapping with two hands then pocketing it” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Leaving sharps out endangers others. Learners who choose “Leaving it on the mayo stand for housekeeping” are usually making that exact mistake instead of applying the rule in the stem."
+      "b": "Many systems will happily save an unspecified note. The requirement is clinical safety, not a software constraint.",
+      "c": "Patient cost sharing is not driven by which side was examined. The reason to be precise is patient safety and accurate coding.",
+      "d": "This is not a stylistic preference. Wrong-site events are a recognized never-event category tied to documentation."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-workflow-010",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "workflow",
-    "prompt": "Which PPE item is most critical when there is a risk of splash to the eyes?",
+    "prompt": "A scribe supports an emergency department provider seeing several patients at once. What documentation practice matters most?",
     "options": [
       {
         "id": "a",
-        "text": "Shoe covers only"
+        "text": "Writing all notes at the end of the shift from memory"
       },
       {
         "id": "b",
-        "text": "A cloth scarf"
+        "text": "Using one shared draft note and splitting it later"
       },
       {
         "id": "c",
-        "text": "Sterile gloves without any face protection"
+        "text": "Time-stamping reassessments and keeping each patient’s events in the correct chart"
       },
       {
         "id": "d",
-        "text": "Eye protection (goggles or face shield)"
+        "text": "Documenting only the final disposition for each patient"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Mucous membrane exposure requires eye/face protection appropriate to the task The correct choice (“Eye protection (goggles or face shield)”) is the one that matches this rule.",
+    "correctOptionId": "c",
+    "explanation": "Emergency documentation is a timeline. Recording when reassessments, medications, and disposition decisions occurred — in the right chart — supports clinical handoffs and is exactly what reviewers examine after an adverse outcome.",
     "distractorExplanations": {
-      "a": "Shoe covers do not protect eyes. Learners who choose “Shoe covers only” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Scarves are not PPE. Learners who choose “A cloth scarf” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Gloves alone do not protect eyes. Learners who choose “Sterile gloves without any face protection” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Batch documentation from memory loses times and details and delays information the next treating clinician needs now.",
+      "b": "A shared draft invites PHI from one patient landing in another’s chart, which is both a safety and a privacy failure.",
+      "d": "Disposition without the intervening course hides the reassessments and interventions that justify the decision."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-workflow-011",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "workflow",
-    "prompt": "Airborne precautions (concept) are used for diseases such as measles/TB and typically require",
+    "prompt": "A provider performs a laceration repair and dictates the procedure details. What is the scribe’s role?",
     "options": [
       {
         "id": "a",
-        "text": "A fit-tested respirator (e.g., N95) and appropriate room controls per facility policy"
+        "text": "Write the procedure note from the standard template without dictation"
       },
       {
         "id": "b",
-        "text": "No mask if the patient is asymptomatic"
+        "text": "Record the procedure and sign it as the documenting clinician"
       },
       {
         "id": "c",
-        "text": "Surgical mask only for the patient and none for staff"
+        "text": "Document the procedure only if a nurse was present to witness it"
       },
       {
         "id": "d",
-        "text": "Gloves as the only PPE"
+        "text": "Document the dictated procedure elements and route the note for the provider to review and attest"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Airborne pathogens need respiratory protection and engineering controls beyond Standard Precautions alone.",
+    "correctOptionId": "d",
+    "explanation": "For procedures the scribe records what the provider dictates: consent, anesthesia, technique, materials, counts, and tolerance. The provider then attests that the procedure was performed as documented before the note is finalized.",
     "distractorExplanations": {
-      "b": "Asymptomatic status does not remove airborne rules when indicated. Learners who choose “No mask if the patient is asymptomatic” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Staff need appropriate respirators for airborne diseases. Learners who choose “Surgical mask only for the patient and none for staff” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Gloves alone are insufficient. Learners who choose “Gloves as the only PPE” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "A template alone cannot know the anesthetic used, suture material, or patient tolerance for this specific repair.",
+      "b": "Signing a procedure note asserts clinical responsibility for having performed the repair, which is outside a scribe’s scope in every setting.",
+      "c": "Witnessing requirements apply to consent processes, not to whether the encounter is documented."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-workflow-012",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "workflow",
-    "prompt": "When cleaning an exam room between patients, the CMA should?",
+    "prompt": "Before the visit, a scribe prepares the chart. Which activity is within scope?",
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "Pulling prior notes, recent labs, and imaging reports so the provider can review them"
       },
       {
         "id": "b",
-        "text": "Disinfect high-touch surfaces with EPA-registered product per contact time instructions"
+        "text": "Drafting today’s assessment based on the last visit’s diagnosis"
       },
       {
         "id": "c",
-        "text": "this concept has no application in US securities, insurance, or licensing markets"
+        "text": "Interpreting the newest lab values and flagging abnormal ones as significant"
       },
       {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "Selecting the visit level so coding is ready at check-out"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Effective disinfection requires correct product and wet contact time; appearance alone is unreliable.",
+    "correctOptionId": "a",
+    "explanation": "Chart prep means assembling existing information for the provider: last visit summary, outstanding results, and relevant imaging. It is retrieval and organization, not the creation of new clinical content or conclusions.",
     "distractorExplanations": {
-      "a": "This statement is false about the tested concept and does not match the correct definition.",
-      "c": "This statement is false about the tested concept and does not match the correct definition.",
-      "d": "This statement is false about the tested concept and does not match the correct definition."
+      "b": "Pre-writing an impression assigns clinical judgment to the scribe and biases the note before the patient is even seen.",
+      "c": "Deciding what is clinically significant is provider judgment. Scribes can surface results but not interpret them.",
+      "d": "Level-of-service selection follows from the completed documentation and is the provider’s or coder’s decision, not part of chart prep."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-workflow-013",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "workflow",
-    "prompt": "If a CMA sustains a needlestick from a used needle, the first priority is",
+    "prompt": "The provider steps out and completes part of the exam while the scribe is not in the room. What should the note show?",
     "options": [
       {
         "id": "a",
-        "text": "Hide the incident to avoid paperwork"
+        "text": "A complete exam, since the provider is expected to have finished it"
       },
       {
         "id": "b",
-        "text": "Finish all scheduled patients first"
+        "text": "Only what the scribe witnessed, with the remainder added by the provider or documented from the provider’s direct account"
       },
       {
         "id": "c",
-        "text": "Wash the site, report immediately, and follow occupational exposure protocol"
+        "text": "A note that the exam was incomplete, with no further entry"
       },
       {
         "id": "d",
-        "text": "Apply bleach into the wound"
+        "text": "The exam as described by the rooming nurse afterwards"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Prompt washing, reporting, and evaluation enable timely prophylaxis and documentation The correct choice (“Wash the site, report immediately, and follow occupational…”) is the one that matches this rule.",
+    "correctOptionId": "b",
+    "explanation": "A scribe documents in the provider’s presence and at the provider’s direction. Anything that happened outside that presence must come from the provider so the record reflects the provider’s account and not the scribe’s assumption.",
     "distractorExplanations": {
-      "a": "Concealment delays care and violates policy. Learners who choose “Hide the incident to avoid paperwork” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Delay risks missing treatment windows. Learners who choose “Finish all scheduled patients first” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Harsh chemicals can worsen tissue injury. Learners who choose “Apply bleach into the wound” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Expectation is not observation. Filling gaps with what probably happened is fabricated documentation.",
+      "c": "Declaring the exam incomplete when the provider actually performed it under-documents the encounter and misstates the care given.",
+      "d": "Second-hand accounts from other staff are not the provider’s documentation and can diverge from what was actually found."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-workflow-014",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "workflow",
-    "prompt": "On the Medical Scribe, which statement about sterile fields is correct? Select the best answer.",
+    "prompt": "How does scribe documentation relate to the level of service billed for a visit?",
     "options": [
       {
         "id": "a",
-        "text": "Talking and reaching over the field is always encouraged"
+        "text": "The scribe selects the level of service once the note is finished"
       },
       {
         "id": "b",
-        "text": "Wet sterile fields remain sterile indefinitely"
+        "text": "The level is fixed by appointment type regardless of documentation"
       },
       {
         "id": "c",
-        "text": "Nonsterile items may rest on the sterile drape briefly"
+        "text": "The scribe documents what occurred; the provider is responsible for the service level and code selection"
       },
       {
         "id": "d",
-        "text": "If sterility is in doubt, consider it contaminated"
+        "text": "The scribe should add history elements when a level looks under-documented"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Aseptic principle: when in doubt, replace; moisture and nonsterile contact contaminate fields The correct choice (“If sterility is in doubt, consider it contaminated”) is the one that matches this rule.",
+    "correctOptionId": "c",
+    "explanation": "Documentation should describe the encounter accurately and let coding follow. Writing toward a target level — padding history or exam elements to reach it — is upcoding, and the provider remains accountable for the code selected.",
     "distractorExplanations": {
-      "a": "Talking/reaching shed particles onto the field. Learners who choose “Talking and reaching over the field is always encouraged” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Wicking moisture contaminates. Learners who choose “Wet sterile fields remain sterile indefinitely” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Nonsterile contact contaminates immediately. Learners who choose “Nonsterile items may rest on the sterile drape briefly” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Code selection is a clinical and compliance decision that rests with the provider, supported by coding staff.",
+      "b": "Appointment type sets expectations for scheduling only. The documented work and medical decision-making determine the level.",
+      "d": "Adding elements that did not occur to reach a level is the textbook definition of upcoding and is a fraud exposure."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-workflow-015",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "workflow",
-    "prompt": "Biohazardous regulated medical waste (sharps/saturated blood items) should be",
+    "prompt": "The EHR goes down mid-clinic. What is the correct documentation approach?",
     "options": [
       {
         "id": "a",
-        "text": "Placed in labeled biohazard containers appropriate to the waste type"
+        "text": "Wait for the system to return and reconstruct the visits from memory"
       },
       {
         "id": "b",
-        "text": "Mixed into regular office paper recycling"
+        "text": "Have patients repeat their histories at a follow-up visit to rebuild the note"
       },
       {
         "id": "c",
-        "text": "Taken home for disposal"
+        "text": "Enter the notes when the system returns using the date of service as the entry date"
       },
       {
         "id": "d",
-        "text": "Flushed into public restrooms"
+        "text": "Follow downtime procedures on paper, then enter the content as a clearly labeled late entry with the true entry date and time"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "OSHA/CDC-aligned practice uses designated biohazard disposal streams The correct choice (“Placed in labeled biohazard containers appropriate to the w…”) is the one that matches this rule.",
+    "correctOptionId": "d",
+    "explanation": "Downtime documentation is still documentation. Paper forms capture the encounter in real time, and the later electronic entry is labeled as a late entry showing both the date of service and the actual date and time the record was created.",
     "distractorExplanations": {
-      "b": "Recycling streams are not for biohazard sharps/blood. Learners who choose “Mixed into regular office paper recycling” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Home disposal is illegal/unsafe. Learners who choose “Taken home for disposal” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Flushing biohazard waste is improper. Learners who choose “Flushed into public restrooms” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Memory-based reconstruction loses vitals, timing, and specifics, and leaves the chart empty while patients are still being treated.",
+      "b": "Shifting the burden to the patient does not document today’s encounter, which still has to stand on its own in the record.",
+      "c": "Using the service date as the entry date backdates the record and conceals when the documentation was actually created."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-compliance-001",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "compliance",
-    "prompt": "On the Medical Scribe, when is it appropriate to use an alcohol-based hand rub? Select the best answer.",
+    "prompt": "Under HIPAA, which combination makes information protected health information (PHI)?",
     "options": [
       {
         "id": "a",
-        "text": "When hands are heavily contaminated with blood without washing first"
+        "text": "Health information tied to an identifier such as a name, medical record number, or date of birth"
       },
       {
         "id": "b",
-        "text": "When hands are not visibly soiled and the product is indicated by policy for the pathogens involved"
+        "text": "Any information stored inside an electronic health record system"
       },
       {
         "id": "c",
-        "text": "After caring for a patient with known C. difficile if soap/water is required by policy—prefer rub only"
+        "text": "Only laboratory and imaging results with patient names attached"
       },
       {
         "id": "d",
-        "text": "Instead of removing gloves between patients"
+        "text": "Health information only after it has been billed to an insurer"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "ABHR is for clean hands in many situations; soap/water is needed for visible soil and certain spores per policy.",
+    "correctOptionId": "a",
+    "explanation": "PHI is individually identifiable health information held or transmitted by a covered entity. Health data becomes PHI once it is linked to identifiers — name, MRN, dates, address, phone, email, and similar — in any form: electronic, paper, or spoken.",
     "distractorExplanations": {
-      "a": "Visible blood needs soap/water washing. Learners who choose “When hands are heavily contaminated with blood without washing first” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Spore-forming organisms often require soap/water. Learners who choose “After caring for a patient with known C. difficile if soap/water is required by…” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Gloves are changed; hygiene still required. Learners who choose “Instead of removing gloves between patients” are usually making that exact mistake instead of applying the rule in the stem."
+      "b": "Storage location does not define PHI. A clinic’s staffing roster in the EHR is not PHI, while a patient detail spoken aloud in a hallway is.",
+      "c": "Diagnoses, appointment dates, billing records, and visit notes are equally PHI when identifiable. Results are just one category.",
+      "d": "PHI protection attaches when the information is created or received, not when a claim is submitted."
     },
-    "difficulty": "hard",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-compliance-002",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "compliance",
-    "prompt": "A sterile package's sterility is considered compromised if",
+    "prompt": "What does the HIPAA minimum necessary standard require?",
     "options": [
       {
         "id": "a",
-        "text": "It was stored on a clean shelf within date with intact seals"
+        "text": "Disclosing the complete chart whenever any records request arrives"
       },
       {
         "id": "b",
-        "text": "The chemical indicator shows an acceptable change per IFU"
+        "text": "Accessing and disclosing only the amount of PHI needed to accomplish the task at hand"
       },
       {
         "id": "c",
-        "text": "It is wet, torn, expired, or has a broken seal/indicator failure"
+        "text": "Keeping records for the minimum period required by state law"
       },
       {
         "id": "d",
-        "text": "It was opened in a controlled sterile field and used immediately as intended"
+        "text": "Documenting the minimum detail needed to support the billing code"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Moisture, damage, expiration, and failed indicators mean do not use The correct choice (“It is wet, torn, expired, or has a broken seal/indicator fa…”) is the one that matches this rule.",
+    "correctOptionId": "b",
+    "explanation": "Minimum necessary limits use, disclosure, and requests to what is actually required for the purpose. A scribe reads the chart sections needed to document the encounter, not the patient’s full history out of curiosity.",
     "distractorExplanations": {
-      "a": "Proper storage supports sterility. Learners who choose “It was stored on a clean shelf within date with intact seals” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Acceptable indicators support use. Learners who choose “The chemical indicator shows an acceptable change per IFU” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Correct immediate use is the point of sterile supplies. Learners who choose “It was opened in a controlled sterile field and used immediately as intended” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Blanket disclosure is the opposite of minimum necessary. Requests are fulfilled narrowly for the stated purpose.",
+      "c": "Retention schedules are a separate requirement. Minimum necessary governs how much information is accessed or shared, not how long it is kept.",
+      "d": "Clinical documentation should be complete and accurate. Minimum necessary applies to access and disclosure, never to trimming the clinical record."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-compliance-003",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "compliance",
-    "prompt": "Under HIPAA, protected health information (PHI) may be disclosed without authorization when",
+    "prompt": "A scribe is curious about a celebrity treated at the hospital yesterday and opens the chart. Why is this a violation?",
     "options": [
       {
         "id": "a",
-        "text": "Required for treatment, payment, or healthcare operations within allowed rules, or as otherwise permitted/required by law"
+        "text": "It is only a violation if the scribe tells someone what was in the chart"
       },
       {
         "id": "b",
-        "text": "Posted to social media for education if names are nicknames"
+        "text": "It is acceptable as long as the scribe works for the same hospital"
       },
       {
         "id": "c",
-        "text": "Shared with any friend who asks politely"
+        "text": "Access must have a legitimate work-related purpose; curiosity is not one, and every access is logged"
       },
       {
         "id": "d",
-        "text": "Sold to marketers without patient knowledge"
+        "text": "It is permitted because the visit is already public knowledge"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "TPO and other legal permissions exist, but casual/social disclosures are prohibited The correct choice (“Required for treatment, payment, or healthcare operations w…”) is the one that matches this rule.",
+    "correctOptionId": "c",
+    "explanation": "EHR access is audited by user. Opening a record without a treatment, payment, or operations reason — for a celebrity, coworker, neighbor, or family member — is snooping, and it regularly results in termination and reportable breaches.",
     "distractorExplanations": {
-      "b": "Social media PHI disclosures are violations. Learners who choose “Posted to social media for education if names are nicknames” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Friends are not in the care team by default. Learners who choose “Shared with any friend who asks politely” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Sale of PHI without authorization is illegal. Learners who choose “Sold to marketers without patient knowledge” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "The unauthorized access is itself the violation. Further disclosure adds harm but is not required for a breach to exist.",
+      "b": "Employment grants credentials, not entitlement. Authorization is tied to the specific patients in your care.",
+      "d": "Media coverage does not waive a patient’s privacy rights or authorize staff access to the record."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-compliance-004",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "compliance",
-    "prompt": "When scheduling a patient who needs fasting labs, the CMA should?",
+    "prompt": "A busy provider offers the scribe her EHR login so notes can be finished faster. What should the scribe do?",
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "Accept for this shift only and change nothing in the audit settings"
       },
       {
         "id": "b",
-        "text": "Communicate fasting requirements and appointment timing clearly before the visit"
+        "text": "Accept but avoid signing anything under the provider’s account"
       },
       {
         "id": "c",
-        "text": "this concept has no application in US securities, insurance, or licensing markets"
+        "text": "Accept and note in the chart that the scribe used the provider’s login"
       },
       {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "Decline and use only his or her own credentials, escalating any access problem to the supervisor"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Clear prep instructions prevent cancelled draws and inaccurate results The correct choice (“Communicate fasting requirements and appointment timing cle…”) is the one that matches this rule.",
+    "correctOptionId": "d",
+    "explanation": "Shared credentials destroy the audit trail that ties each entry and access to a named user, and they let a scribe act with provider-level privileges such as signing. Access issues are solved by provisioning the right role, never by sharing a password.",
     "distractorExplanations": {
-      "a": "This statement is false about the tested concept and does not match the correct definition.",
-      "c": "This statement is false about the tested concept and does not match the correct definition.",
-      "d": "This statement is false about the tested concept and does not match the correct definition."
+      "a": "A single shift of shared access still misattributes every entry made and is a policy violation regardless of duration.",
+      "b": "The breach occurs at login. Restraint about signing does not repair the broken attribution of everything viewed or typed.",
+      "c": "A disclosure in the note does not authorize the access and does not restore an accurate audit record."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-compliance-005",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "compliance",
-    "prompt": "A patient is angry about wait time. The most professional first response is",
+    "prompt": "A patient’s PHI is shared with a consulting specialist who will see the patient next week. Is separate written authorization required?",
     "options": [
       {
         "id": "a",
-        "text": "Argue that other patients matter more"
+        "text": "No — disclosure for treatment is permitted without separate patient authorization"
       },
       {
         "id": "b",
-        "text": "Ignore them until they calm down fully"
+        "text": "Yes — every disclosure outside the practice requires signed authorization"
       },
       {
         "id": "c",
-        "text": "Acknowledge the frustration, apologize for the wait, and offer realistic updates/help"
+        "text": "Yes — unless the specialist works for the same health system"
       },
       {
         "id": "d",
-        "text": "Raise your voice to match theirs"
+        "text": "No — because once a referral is placed, PHI is no longer protected"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Therapeutic communication uses empathy and information without escalating conflict The correct choice (“Acknowledge the frustration, apologize for the wait, and of…”) is the one that matches this rule.",
+    "correctOptionId": "a",
+    "explanation": "HIPAA permits use and disclosure of PHI for treatment, payment, and health care operations without a specific authorization. Sharing relevant records with a treating specialist falls squarely within treatment.",
     "distractorExplanations": {
-      "a": "Arguing worsens conflict. Learners who choose “Argue that other patients matter more” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Ignoring can increase agitation. Learners who choose “Ignore them until they calm down fully” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Matching anger unprofessionally escalates. Learners who choose “Raise your voice to match theirs” are usually making that exact mistake instead of applying the rule in the stem."
+      "b": "Requiring authorization for all external sharing would make routine referrals impossible. Treatment disclosures are expressly permitted.",
+      "c": "The permission depends on the purpose of the disclosure, not on whether the clinicians share an employer.",
+      "d": "PHI stays protected in the specialist’s hands. The disclosure is permitted, but the protections travel with the information."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-compliance-006",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "compliance",
-    "prompt": "On the Medical Scribe, which is an example of proper EHR documentation practice? Select the best answer.",
+    "prompt": "A patient asks that health information not be shared with any family member. How should the care team handle it?",
     "options": [
       {
         "id": "a",
-        "text": "Backdate entries to make the chart look complete"
+        "text": "Share information with the spouse anyway, since spouses are automatically authorized"
       },
       {
         "id": "b",
-        "text": "Copy-paste another patient's note without review"
+        "text": "Document the restriction request per policy and honor it unless a legal exception applies"
       },
       {
         "id": "c",
-        "text": "Delete unfavorable vital signs permanently"
+        "text": "Note the request verbally to the front desk without recording it"
       },
       {
         "id": "d",
-        "text": "Enter objective, timely, accurate notes using approved abbreviations only"
+        "text": "Treat the request as invalid because families are part of the care plan"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Documentation must be truthful, timely, and patient-specific; falsification is illegal/unethical The correct choice (“Enter objective, timely, accurate notes using approved abbr…”) is the one that matches this rule.",
+    "correctOptionId": "b",
+    "explanation": "Patients may request restrictions on disclosure, and requests granted or required by policy must be recorded where the care team will see them. Exceptions are narrow — emergencies or legally required reporting — and are handled by the privacy officer, not improvised at the desk.",
     "distractorExplanations": {
-      "a": "Backdating is fraudulent. Learners who choose “Backdate entries to make the chart look complete” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Wrong-patient copy-paste is a serious error. Learners who choose “Copy-paste another patient's note without review” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Altering clinical data is misconduct. Learners who choose “Delete unfavorable vital signs permanently” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Marriage does not create automatic access to an adult patient’s records. Disclosure needs the patient’s involvement or a legal representative.",
+      "c": "An undocumented request will not reach the next clinician or the after-hours team, so it will not be honored.",
+      "d": "Family participation is a choice the competent adult patient makes, and the patient can decline it."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-compliance-007",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "compliance",
-    "prompt": "Informed consent for a procedure means the patient",
+    "prompt": "A scribe realizes an unencrypted USB drive containing visit notes was lost. What is the correct first step?",
     "options": [
       {
         "id": "a",
-        "text": "Understands risks, benefits, and alternatives and agrees voluntarily"
+        "text": "Search for the drive quietly for a few days before telling anyone"
       },
       {
         "id": "b",
-        "text": "Signs any form without explanation"
+        "text": "Notify the affected patients directly before informing the organization"
       },
       {
         "id": "c",
-        "text": "Is coerced by staff to avoid delays"
+        "text": "Report the loss to the privacy or security officer immediately, following the organization’s incident procedure"
       },
       {
         "id": "d",
-        "text": "Has a family member sign when the patient is competent and refuses"
+        "text": "Take no action because the drive may be found and nothing is confirmed"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Consent requires comprehension and voluntariness; competent adults decide for themselves The correct choice (“Understands risks, benefits, and alternatives and agrees vo…”) is the one that matches this rule.",
+    "correctOptionId": "c",
+    "explanation": "Potential breaches are time-sensitive: the privacy officer performs the risk assessment, determines whether notification is required, and manages the deadlines. Prompt internal reporting is a workforce obligation, and delay makes the outcome worse.",
     "distractorExplanations": {
-      "b": "Signature without information is not informed consent. Learners who choose “Signs any form without explanation” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Coercion invalidates consent. Learners who choose “Is coerced by staff to avoid delays” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Competent refusals must be respected and escalated appropriately. Learners who choose “Has a family member sign when the patient is competent and refuses” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Delay burns the assessment and notification clock and can turn a manageable incident into a reportable failure of the compliance program.",
+      "b": "Breach notification is an organizational process with defined content and timing. Ad hoc calls from staff create confusion and inconsistent information.",
+      "d": "A risk assessment is required precisely because the outcome is unknown. Uncertainty is the trigger to report, not a reason to stay silent."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-compliance-008",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "compliance",
-    "prompt": "On the Medical Scribe, when verifying insurance eligibility, the CMA should:? Select the best answer.",
+    "prompt": "An email claiming to be from IT asks the scribe to confirm the EHR password via a link. What is the correct action?",
     "options": [
       {
         "id": "a",
-        "text": "Guarantee that all services will be paid 100%"
+        "text": "Reply asking IT to confirm the request is genuine"
       },
       {
         "id": "b",
-        "text": "Confirm coverage/benefits as directed and communicate patient financial responsibility per policy"
+        "text": "Click the link but stop before entering the password"
       },
       {
         "id": "c",
-        "text": "Ignore referral requirements"
+        "text": "Change the password using the link to stay ahead of the attacker"
       },
       {
         "id": "d",
-        "text": "Bill a different patient's insurance to get payment"
+        "text": "Do not click or reply; report the message through the organization’s phishing or security channel"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Eligibility checks reduce denials; guarantees and fraudulent billing are improper The correct choice (“Confirm coverage/benefits as directed and communicate patie…”) is the one that matches this rule.",
+    "correctOptionId": "d",
+    "explanation": "Legitimate IT departments do not request passwords by email. Credential-phishing is a leading cause of health care data breaches, and the correct response is to leave the link alone and report the message so security can block the campaign.",
     "distractorExplanations": {
-      "a": "Staff should not guarantee payment. Learners who choose “Guarantee that all services will be paid 100%” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Referrals/authorizations matter for coverage. Learners who choose “Ignore referral requirements” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Using another patient's insurance is fraud. Learners who choose “Bill a different patient's insurance to get payment” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Replying confirms the mailbox is active and engages the attacker. Verification should go through a known internal channel instead.",
+      "b": "Clicking can trigger malware or fingerprinting. The safe boundary is not opening the link at all.",
+      "c": "That hands the current and new credentials straight to the attacker’s site. Password changes go through the official portal."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-compliance-009",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "compliance",
-    "prompt": "Which telephone triage action is within a typical CMA scope?",
+    "prompt": "A remote scribe works from home on a laptop. Which practice meets privacy expectations?",
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "Working in a shared living area as long as headphones are worn"
       },
       {
         "id": "b",
-        "text": "this concept has no application in US securities, insurance, or licensing markets"
+        "text": "Working in a private space on approved equipment with the screen shielded from household members"
       },
       {
         "id": "c",
-        "text": "Follow office protocols to gather information and escalate urgent symptoms to licensed clinicians"
+        "text": "Screenshotting charts to a personal phone for faster reference"
       },
       {
         "id": "d",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "Using a public café network when home internet is slow"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "MAs use protocols and escalate; diagnosis and prescribing are licensed-provider functions The correct choice (“Follow office protocols to gather information and escalate…”) is the one that matches this rule.",
+    "correctOptionId": "b",
+    "explanation": "Remote scribing keeps the same obligations as on-site work: an approved device, secure connection, a private area where the screen and audio are not exposed, and no storage or capture of PHI on personal equipment.",
     "distractorExplanations": {
-      "a": "This statement is false about the tested concept and does not match the correct definition.",
-      "b": "This statement is false about the tested concept and does not match the correct definition.",
-      "d": "This statement is false about the tested concept and does not match the correct definition."
+      "a": "Headphones protect the audio only. A visible screen in a shared space still discloses PHI to anyone walking past.",
+      "c": "Copying PHI to a personal device moves it outside managed, auditable systems and is a classic unauthorized-disclosure route.",
+      "d": "Untrusted public networks expose session traffic and shoulder-surfing risk, and they are typically prohibited by remote-work policy."
     },
-    "difficulty": "hard",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-compliance-010",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "compliance",
-    "prompt": "A release of medical records to a third party generally requires:",
+    "prompt": "A scribe wants to post about an unusual case on social media without naming the patient. Is this acceptable?",
     "options": [
       {
         "id": "a",
-        "text": "this concept always eliminates all investment, legal, and regulatory risk for every customer"
+        "text": "Yes, because omitting the name makes the post de-identified"
       },
       {
         "id": "b",
-        "text": "this concept has no application in US securities, insurance, or licensing markets"
+        "text": "Yes, if the post is on a private account visible only to friends"
       },
       {
         "id": "c",
-        "text": "this concept is identical to FDIC deposit insurance for every customer account"
+        "text": "No — case details can re-identify a patient and posting about patients is prohibited"
       },
       {
         "id": "d",
-        "text": "A valid patient authorization unless a legal exception applies"
+        "text": "Yes, if the scribe waits several weeks before posting"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "HIPAA requires appropriate authorization or permitted disclosure pathways before releasing records The correct choice (“A valid patient authorization unless a legal exception appl…”) is the one that matches this rule.",
+    "correctOptionId": "c",
+    "explanation": "Removing a name does not de-identify a case. Timing, location, employer, diagnosis, and distinctive details routinely allow identification, and workforce social-media policies prohibit posting patient information regardless of intent.",
     "distractorExplanations": {
-      "a": "This statement is false about the tested concept and does not match the correct definition.",
-      "b": "This statement is false about the tested concept and does not match the correct definition.",
-      "c": "This statement is false about the tested concept and does not match the correct definition."
+      "a": "De-identification is a formal standard requiring removal of a defined identifier set or expert determination, not simply dropping the name.",
+      "b": "Privacy settings do not change the nature of the disclosure, and content is easily screenshotted and re-shared.",
+      "d": "Delay does not de-identify anything. Recognizable details remain recognizable to anyone who knows the patient."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-compliance-011",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "compliance",
-    "prompt": "Cultural humility in patient communication includes:",
+    "prompt": "Two scribes discuss a patient by name in a crowded elevator. What is the issue?",
     "options": [
       {
         "id": "a",
-        "text": "Asking respectfully about needs/preferences and avoiding assumptions"
+        "text": "There is no issue because both scribes are employees of the facility"
       },
       {
         "id": "b",
-        "text": "Speaking only slang to seem friendly"
+        "text": "There is no issue as long as the diagnosis is not mentioned"
       },
       {
         "id": "c",
-        "text": "Refusing interpreters when language barriers exist"
+        "text": "The issue is only that elevator noise can cause the details to be misheard"
       },
       {
         "id": "d",
-        "text": "Mocking traditional remedies"
+        "text": "Conversations in public areas risk disclosing PHI to people with no need to know"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Respectful inquiry and qualified interpretation improve safety and trust The correct choice (“Asking respectfully about needs/preferences and avoiding as…”) is the one that matches this rule.",
+    "correctOptionId": "d",
+    "explanation": "PHI protection covers spoken information. Elevators, cafeterias, hallways, and waiting rooms are places where visitors and other patients overhear, so case discussions belong in private areas and workstations behind closed doors.",
     "distractorExplanations": {
-      "b": "Slang can confuse and disrespect. Learners who choose “Speaking only slang to seem friendly” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Interpreters are required for effective communication when needed. Learners who choose “Refusing interpreters when language barriers exist” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Mockery is unethical. Learners who choose “Mocking traditional remedies” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Employment does not authorize either the discussion or the bystanders who overhear it. Need to know still governs.",
+      "b": "A name linked to being treated at the facility is itself identifiable health information, even without the diagnosis.",
+      "c": "The privacy exposure, not accuracy, is the problem. Discussing the case correctly in public is still a disclosure."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-compliance-012",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "compliance",
-    "prompt": "Which is the correct action if you notice another staff member accessing charts without a job-related need?",
+    "prompt": "Why must a scribe lock the workstation when stepping away, even briefly?",
     "options": [
       {
         "id": "a",
-        "text": "Ask them for gossip details from the chart"
+        "text": "An unlocked session exposes PHI on screen and lets anyone act under the scribe’s credentials"
       },
       {
         "id": "b",
-        "text": "Report the privacy incident per facility policy"
+        "text": "It frees the license so another user can log in on that machine"
       },
       {
         "id": "c",
-        "text": "Ignore it because they are senior"
+        "text": "It prevents the EHR from saving an incomplete draft note"
       },
       {
         "id": "d",
-        "text": "Post about it on social media with patient initials"
+        "text": "It is only required when the workstation is in a patient care area"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Curiosity viewing is a HIPAA violation; report through proper channels without further disclosure The correct choice (“Report the privacy incident per facility policy”) is the one that matches this rule.",
+    "correctOptionId": "a",
+    "explanation": "An open session is both a disclosure risk and an attribution risk: passers-by can read the chart, and anything typed by someone else is logged as the scribe’s activity. Automatic timeouts are a backstop, not a substitute for locking.",
     "distractorExplanations": {
-      "a": "Participating worsens the breach. Learners who choose “Ask them for gossip details from the chart” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Seniority does not authorize snooping. Learners who choose “Ignore it because they are senior” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Social posts create additional breaches. Learners who choose “Post about it on social media with patient initials” are usually making that exact mistake instead of applying the rule in the stem."
+      "b": "Concurrent-license behavior is an IT detail. The reason for locking is protecting PHI and the integrity of the audit trail.",
+      "c": "Drafts are preserved by the application regardless. Locking addresses privacy and accountability, not data loss.",
+      "d": "Any workstation can display PHI. Locking applies in back offices, workrooms, and at home as well."
     },
-    "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-compliance-013",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "compliance",
-    "prompt": "Which is the best example of a closed-ended question for clarifying a symptom timeline?",
+    "prompt": "What is the practical effect of EHR audit logs on a scribe’s daily work?",
     "options": [
       {
         "id": "a",
-        "text": "Tell me everything about your life story."
+        "text": "Only edits are logged, so viewing a chart leaves no record"
       },
       {
         "id": "b",
-        "text": "How does that make you feel in a poetic sense?"
+        "text": "Every chart the scribe opens and every entry made is recorded against that user account and can be reviewed"
       },
       {
         "id": "c",
-        "text": "Did the chest pain start today?"
+        "text": "Logs are retained for twenty-four hours and then discarded"
       },
       {
         "id": "d",
-        "text": "Why are you always late?"
+        "text": "Logs track only clinicians because scribes do not have their own accounts"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Closed questions elicit yes/no or brief facts useful for triage details; open questions gather narrative.",
+    "correctOptionId": "b",
+    "explanation": "Audit logs capture user, patient, action, and timestamp. That makes unauthorized access detectable after the fact, makes credential sharing traceable to the account owner, and is why access decisions must always be defensible.",
     "distractorExplanations": {
-      "a": "That is open-ended and broad. Learners who choose “Tell me everything about your life story.” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Not a clinical clarifying closed question. Learners who choose “How does that make you feel in a poetic sense?” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Judgmental and unhelpful. Learners who choose “Why are you always late?” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Read access is logged as well. Most snooping investigations are built entirely on view events, with no edits involved.",
+      "c": "Audit records are retained under organizational and regulatory retention schedules, typically for years.",
+      "d": "Scribes are provisioned with individual accounts precisely so their activity is separately attributable."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-compliance-014",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "compliance",
-    "prompt": "On the Medical Scribe, when documenting in an EHR, the CMA should avoid:? Select the best answer.",
+    "prompt": "A scribe printed a patient summary for a provider and no longer needs it. How should it be disposed of?",
     "options": [
       {
         "id": "a",
-        "text": "Using approved abbreviations listed in facility policy"
+        "text": "Drop it in the regular office recycling bin"
       },
       {
         "id": "b",
-        "text": "Recording vital signs at the time measured"
+        "text": "Take it home to shred there at the end of the shift"
       },
       {
         "id": "c",
-        "text": "Correcting errors per amendment policy"
+        "text": "Place it in a designated shredding or secure-disposal container"
       },
       {
         "id": "d",
-        "text": "Using another user's login credentials to enter notes"
+        "text": "Leave it at the workstation in case the provider needs it again"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Shared logins destroy audit integrity and violate security policy The correct choice (“Using another user's login credentials to enter notes”) is the one that matches this rule.",
+    "correctOptionId": "c",
+    "explanation": "Paper PHI goes to secure destruction, normally a locked shred bin. Recycling bins and regular trash are accessible to cleaning staff and the public, and improper disposal of paper records is a recurring source of enforcement actions.",
     "distractorExplanations": {
-      "a": "Approved abbreviations are acceptable. Learners who choose “Using approved abbreviations listed in facility policy” are usually making that exact mistake instead of applying the rule in the stem.",
-      "b": "Timely vitals are required. Learners who choose “Recording vital signs at the time measured” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Proper corrections are allowed. Learners who choose “Correcting errors per amendment policy” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Recycling streams are handled by people with no need to know and are frequently left unattended in accessible areas.",
+      "b": "Carrying PHI off site creates a loss-in-transit risk that the on-site secure bin entirely avoids.",
+      "d": "Unattended printouts sit in view of anyone passing the desk, which is exactly the exposure secure disposal prevents."
     },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   },
   {
     "id": "medical-scribe-readiness-check-compliance-015",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "compliance",
-    "prompt": "A patient requests that no family members receive health information. The CMA should",
+    "prompt": "A patient asks the scribe for a copy of the full medical record. What is the right response?",
     "options": [
       {
         "id": "a",
-        "text": "Document the restriction per policy and honor it unless a legal exception applies"
+        "text": "Print the chart at the workstation and hand it to the patient immediately"
       },
       {
         "id": "b",
-        "text": "Tell the spouse everything anyway for convenience"
+        "text": "Tell the patient that records cannot be released to patients"
       },
       {
         "id": "c",
-        "text": "Post the request on the waiting-room board"
+        "text": "Email the record from the scribe’s work account to the patient’s address"
       },
       {
         "id": "d",
-        "text": "Ignore the request because families always decide"
+        "text": "Direct the patient to the health information management or medical records process for a formal request"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Patients may restrict disclosures; document and follow privacy rules The correct choice (“Document the restriction per policy and honor it unless a l…”) is the one that matches this rule.",
+    "correctOptionId": "d",
+    "explanation": "Patients have a right of access, but it is fulfilled through a defined process that verifies identity, applies any legal review, and tracks the request and response timeline. A scribe hands off to that process rather than printing records at the desk.",
     "distractorExplanations": {
-      "b": "Unauthorized disclosure violates HIPAA. Learners who choose “Tell the spouse everything anyway for convenience” are usually making that exact mistake instead of applying the rule in the stem.",
-      "c": "Public posting is a breach. Learners who choose “Post the request on the waiting-room board” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Competent adults control their PHI. Learners who choose “Ignore the request because families always decide” are usually making that exact mistake instead of applying the rule in the stem."
+      "a": "Bypassing the request process skips identity verification and required review, and leaves no record that access was provided.",
+      "b": "Patients have a right of access under HIPAA. Refusing access misstates the rule and creates a compliance problem.",
+      "c": "Sending PHI outside approved, secure channels risks misdirection and is typically prohibited by policy."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
+    "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
   }
 ]

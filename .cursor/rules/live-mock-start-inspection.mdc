@@ -22,6 +22,7 @@ Do **not** ship GEO/SERP fixes on only the traffic URL. Ledger both slugs (or on
 - Smell triage (`npm run triage:mock-banks -- --slug {mockSlug}` or equivalent)
 - Correct gate: `validate:certification` (building) or `validate:wave-deck` (wave)
 - Session size vs official exam note, key bias, template stems, sample cards, Gumroad polish/landing if selling
+- **Content review (mandatory if never ledgered, remap smell, or triage misses credential match):** fix-first subagent — default `gpt-5.6-sol-medium`; escalate `claude-opus-5-thinking-high` on P0 contamination / user asks Opus. See `mock-bank-review-model.mdc`. Mechanical clean ≠ content OK.
 
 ### 2) Our GEO / LLM visibility
 - `exam-facts` + registry `examFactsKey` when applicable

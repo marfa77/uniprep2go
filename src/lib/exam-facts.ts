@@ -3300,6 +3300,61 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "NAVTA® and AVA® marks belong to the National Association of Veterinary Technicians in America. UniPrep2Go is not affiliated with or endorsed by NAVTA or VetMedTeam.",
   },
+  "medical-scribe": {
+    examKey: "medical-scribe",
+    pageHeading: "Medical Scribe Exam — Facts & Prep",
+    intro:
+      "Medical scribe competency paths cover clinical documentation (SOAP, HPI, ROS, scribe scope), terminology, EHR workflow, and HIPAA. There is no single national scribe licence — employers, training programs, and bodies such as AHDPG (MSCE → AMSP/CMSP) and ACMSS-style programs each set their own rules. UniPrep2Go products are independent prep (not official scribe exam material). Scribe exams are not NHA CCMA or CMA (AAMA) clinical-assistant exams.",
+    exam_facts: {
+      exam_name: "Medical Scribe Competency / AHDPG MSCE (common path)",
+      administered_by: "Employers, training programs, AHDPG (MSCE), ACMSS-style certifiers",
+      question_count: "Varies — AHDPG MSCE typically ~100 questions (verify current form)",
+      time_limit: "AHDPG MSCE typically ~75 minutes — verify with certifier",
+      passing_score: "AHDPG MSCE typically ~80% — verify; UniPrep diagnostic uses 70%",
+      delivery: "Online / program-specific (employer or certifier)",
+      outline_effective_date: "Current certifier / employer outline — verify before registering",
+      verify_at_url: "https://ahdpg.com/",
+    },
+    official_sources: [
+      {
+        label: "AHDPG — Medical Scribe Certification (MSCE / AMSP / CMSP)",
+        url: "https://ahdpg.com/",
+      },
+    ],
+    domain_weights: [
+      { domain: "Clinical documentation (SOAP / HPI / ROS / scribe scope)", weight: "Varies by path" },
+      { domain: "Medical terminology & abbreviations", weight: "Varies by path" },
+      { domain: "EHR workflow", weight: "Varies by path" },
+      { domain: "HIPAA privacy & compliance", weight: "Varies by path" },
+    ],
+    whats_changed: [
+      "OpenExamPrep and PracticeTestGeeks publish large free MSCE-style banks — UniPrep is a shorter no-signup timed diagnostic + planned Anki.",
+      "AMSP vs CMSP: CMSP typically requires 200+ documented scribe hours after passing MSCE — verify with AHDPG.",
+      "Do not confuse scribe credentials with NHA CCMA or CMA (AAMA) clinical medical assistant exams.",
+    ],
+    high_yield_facts: [
+      "AHDPG MSCE is commonly listed as ~100Q / 75 min / 80% / ~$185 → AMSP; CMSP adds hours — verify current rules.",
+      "UniPrep2Go’s free check is a shorter 60-question / 75-minute / 70% diagnostic — not a full MSCE form.",
+      "Scribes document under provider direction — they do not diagnose, treat, or authenticate notes alone.",
+      "≠ NHA CCMA / CMA (AAMA).",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the MSCE?",
+        a: "AHDPG commonly lists the Medical Scribe Certification Exam as about 100 questions in 75 minutes with an 80% pass. Confirm the current format before you register.",
+      },
+      {
+        q: "Is UniPrep2Go’s medical scribe check the official exam?",
+        a: "No. The free 60-question / 75-minute check is an independent diagnostic. The matching Anki deck is planned (waitlist). Not AHDPG, ACMSS, or employer material.",
+      },
+      {
+        q: "Is a scribe exam the same as CCMA or CMA?",
+        a: "No. CCMA/CMA are clinical medical assistant credentials. Scribe exams focus on documentation, terminology, EHR workflow, and HIPAA.",
+      },
+    ],
+    trademark_note:
+      "MSCE™, AMSP™, and CMSP™ marks relate to AHDPG credentialing. UniPrep2Go is not affiliated with or endorsed by AHDPG, ACMSS, or employers.",
+  },
 };
 
 /** Deck slug → shared exam profile key. Language decks are omitted intentionally. */
@@ -3352,6 +3407,7 @@ const deckExamKeyMap: Record<string, string> = {
   "cdl-general-knowledge-anki-deck": "cdl-general-knowledge",
   "armed-security-officer-anki-deck": "armed-security-officer",
   "veterinary-assistant-anki-deck": "navta-ava",
+  "medical-scribe-anki-deck": "medical-scribe",
   "us-citizenship-test-prep2go-app": "us-citizenship",
   "leben-in-deutschland-prep2go-app": "leben-in-deutschland",
   "naturalisation-francaise-prep2go-app": "naturalisation-francaise",

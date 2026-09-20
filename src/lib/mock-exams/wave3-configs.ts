@@ -460,10 +460,11 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "workflow", label: "EHR workflow" },
       { id: "compliance", label: "Privacy & compliance" }
     ]),
-    officialSourceNote: "Mapped to Employer / ACMSS-style scribe competencies themes. Independent UniPrep2Go readiness check — not an official exam.",
+    officialSourceNote:
+      "Mapped to medical scribe documentation, terminology, EHR workflow, and HIPAA competencies. Independent UniPrep2Go readiness check — 60Q / 75 min / 70%, not the AHDPG MSCE (~100Q / 75 min / 80%) and not an NHA CCMA or CMA clinical-assistant exam.",
     description: "Free 60-question Medical Scribe readiness check with topic scoring.",
-    examBody: "Employer / ACMSS-style scribe competencies",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    examBody: "Employer / training-program scribe competencies (AHDPG MSCE, ACMSS-style paths)",
+    questionSourceNote: "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap).",
     searchAliases: ["medical scribe", "scribe certification"],
   }),
   nicheReadinessConfig({

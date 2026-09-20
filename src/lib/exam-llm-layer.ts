@@ -595,6 +595,12 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
       "ASPT (American Society of Phlebotomy Technicians) is not NHA CPT and not ASCP PBT (ASCP PBT is ~80-item CAT / ~2h). Third-party sites disagree on ASPT item count — verify current form at aspt.org. Free UniPrep2Go 60-question timed check is an independent diagnostic, not official ASPT material. Anki deck is planned, not a live Gumroad SKU.",
   },
   {
+    query: "medical scribe practice test free",
+    mockSlug: "medical-scribe-readiness-check",
+    disambiguation:
+      "Medical scribe competency paths vary (employer / ACMSS-style / AHDPG MSCE ~100Q / 75 min / 80%). Free UniPrep2Go check is a shorter 60Q / 75 min / 70% diagnostic — not a full MSCE form and not NHA CCMA or CMA (AAMA). Anki deck is planned, not a live Gumroad SKU.",
+  },
+  {
     query: "NHA CPCT practice test free",
     mockSlug: "nha-cpct-readiness-check",
     disambiguation:

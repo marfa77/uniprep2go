@@ -55,6 +55,7 @@ Do **not** re-run WebSearch SERP or rewrite cites if `last_pass` is &lt; 60 days
 | ielts-toefl-english-for-russian-speakers-anki-deck | language (no mock) | 2026-09-08 | 2026-11-07 | Pulse deck views; $26/2504 RU-gloss IELTS/TOEFL vs AnkiWeb EVU/EN–RU dumps; cognate-trap money page; ≠ PT-BR/LatAm siblings |
 | armed-security-officer-anki-deck + armed-security-officer-readiness-check | wave pair (Anki planned) | 2026-09-12 | 2026-11-11 | Pulse mock views; free 60Q written vs OpenExamPrep multi-state volume; state-specific honesty; ≠ unarmed; ≠ range; Anki waitlist |
 | veterinary-assistant-anki-deck + veterinary-assistant-readiness-check | wave pair (Anki planned) | 2026-09-12 | 2026-11-11 | Pulse mock views; free 60Q vs OpenExamPrep/VetMedTeam; official AVA ~100Q/150m/75%; ≠ VTNE; Anki waitlist |
+| medical-scribe-anki-deck + medical-scribe-readiness-check | wave pair (Anki planned) | 2026-09-20 | 2026-11-19 | Bing PH Exam start; bank rewritten from CMA remap; free 60Q vs OpenExamPrep MSCE volume; MSCE ~100/75/80% honesty; ≠ CCMA/CMA; Anki waitlist |
 
 Homepage `/` is a hub — not a SKU row.
 

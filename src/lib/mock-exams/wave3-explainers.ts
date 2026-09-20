@@ -461,20 +461,46 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "medical-scribe-readiness-check": {
     practiceTestName: "Medical Scribe Practice Test",
-    whatIsExam: "Medical scribe competency checks cover documentation accuracy, medical terminology, EHR workflow, and HIPAA\u2014used by training programs and employers (credentials vary).",
-    administeredBy: "Employer / ACMSS-style scribe competencies",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with Employer / ACMSS-style scribe competencies.",
+    whatIsExam:
+      "Medical scribe competency checks cover clinical documentation (SOAP, HPI, ROS, scribe scope), medical terminology and chart abbreviations, EHR workflow (problem list, allergies, medication reconciliation, templates), and HIPAA privacy. There is no single national scribe licence — employers, training programs, and certifying bodies such as AHDPG (MSCE \u2192 AMSP/CMSP) and ACMSS each run their own path. This is a documentation and privacy exam, not a clinical-skills exam: scribes do not diagnose, treat, or perform procedures.",
+    administeredBy: "Employer / training-program scribe competencies (AHDPG MSCE, ACMSS-style paths)",
+    officialFormat:
+      "Credentials vary. A common path, AHDPG\u2019s Medical Scribe Certification Exam (MSCE), is listed as ~100 questions / 75 minutes / 80% to pass / ~$185, leading to AMSP; CMSP additionally requires 200+ documented scribe hours \u2014 verify current rules with the certifying body. UniPrep\u2019s free check is a shorter 60-question / 75-minute / 70% diagnostic \u2014 not an official MSCE form and not an NHA CCMA or CMA (AAMA) clinical-assistant exam.",
     examFaqs: [
       {
-        question: "What is the Medical Scribe exam?",
-        answer: "Medical scribe competency checks cover documentation accuracy, medical terminology, EHR workflow, and HIPAA\u2014used by training programs and employers (credentials vary).",
+        question: "What is on a medical scribe certification exam?",
+        answer:
+          "Documentation structure (SOAP, HPI elements, ROS, note integrity and scribe scope), medical terminology and clinical abbreviations, EHR workflow (problem list, allergy and medication entry, medication reconciliation, templates), and HIPAA privacy and compliance. Clinical hands-on skills are not in scope.",
       },
       {
-        question: "Is this an official Medical Scribe exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from Employer / ACMSS-style scribe competencies.",
+        question: "How many questions is the MSCE and what is the pass score?",
+        answer:
+          "AHDPG lists its Medical Scribe Certification Exam (MSCE) as roughly 100 questions in 75 minutes with an 80% pass requirement (~$185), leading to the AMSP designation; CMSP adds a 200+ scribe-hour requirement. Confirm the current format with the certifying body before you register.",
+      },
+      {
+        question: "Is this an official Medical Scribe certification exam?",
+        answer:
+          "No. This UniPrep2Go readiness check is an independent 60-question / 75-minute / 70% diagnostic with topic scoring, free and with no signup. It is not AHDPG, ACMSS, or employer exam material, and it is not a full-length MSCE form.",
+      },
+      {
+        question: "Is a medical scribe exam the same as CCMA or CMA?",
+        answer:
+          "No. NHA CCMA and CMA (AAMA) are clinical medical assistant credentials covering injections, phlebotomy, EKG, and other hands-on skills. Scribe competency exams test documentation, terminology, EHR workflow, and privacy \u2014 a scribe documents under the provider\u2019s direction and never diagnoses or authenticates a note alone.",
+      },
+      {
+        question: "Do I need certification to work as a medical scribe?",
+        answer:
+          "Often not. Many employers hire and train scribes directly, while others prefer or require a certificate such as AHDPG AMSP/CMSP or an ACMSS-style credential. Check the specific job posting \u2014 this check is a readiness diagnostic for either route.",
       },
     ],
-    keywords: ["medical scribe practice test", "scribe certification practice test", "medical scribe practice exam"],
+    keywords: [
+      "medical scribe practice test",
+      "medical scribe practice test free",
+      "scribe certification practice test",
+      "msce practice test",
+      "medical scribe exam questions",
+      "medical scribe anki",
+    ],
   },
   "nremt-aemt-readiness-check": {
     practiceTestName: "NREMT AEMT Practice Test",
