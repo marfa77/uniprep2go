@@ -1853,7 +1853,7 @@ const rawDecks: Deck[] = [
       "1,000 Swedish flashcards for SFI A2 and Swedish residence or citizenship language prep.",
     directAnswer:
       "UniPrep2Go sells a Swedish SFI Anki deck with 1,000 exam-specific vocabulary cards, audio, and practical example sentences for work, housing, services, and everyday interaction in Sweden. Built for SFI (Swedish for Immigrants) A2 and the language side of residence and citizenship pathways. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
-    lastUpdated: "2026-07-22",
+    lastUpdated: "2026-09-20",
     audience:
       "SFI learners and applicants preparing Swedish for residence or citizenship language requirements.",
     format: ".apkg",
@@ -2400,13 +2400,13 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-arabic-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2504 Flashcards",
+    title: "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2493 Flashcards",
     shortName: "IELTS / TOEFL English for Arabic Speakers",
     subtitle:
-      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Arabic support on every card.",
+      "2,493 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Arabic support on every card.",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English for Arabic Speakers Anki deck with 2,504 high-frequency English vocabulary cards, Arabic glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Arabic-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
-    lastUpdated: "2026-07-22",
+      "UniPrep2Go sells an IELTS / TOEFL English for Arabic Speakers Anki deck with 2,493 high-frequency English vocabulary cards, Arabic glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Arabic-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-09-20",
     audience:
       "Arabic-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
     format: ".apkg",
@@ -2415,7 +2415,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2504",
+      cards: "2493",
       topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with Arabic bilingual support",
       formulas: "Audio + Arabic glosses + bilingual example sentences",
       examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
@@ -2437,7 +2437,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "2,504 English vocabulary cards from the Prep2Go app: Arabic glosses, bilingual examples, native English audio, and illustrations.",
+          "2,493 English vocabulary cards from the Prep2Go app: Arabic glosses, bilingual examples, native English audio, and illustrations.",
       },
       {
         question: "What file format is delivered?",
@@ -2525,13 +2525,13 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-ukrainian-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2504 Flashcards",
+    title: "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2493 Flashcards",
     shortName: "IELTS / TOEFL English for Ukrainian Speakers",
     subtitle:
-      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Ukrainian support on every card.",
+      "2,493 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Ukrainian support on every card.",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English for Ukrainian Speakers Anki deck with 2,504 high-frequency English vocabulary cards, Ukrainian glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Ukrainian-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
-    lastUpdated: "2026-07-22",
+      "UniPrep2Go sells an IELTS / TOEFL English for Ukrainian Speakers Anki deck with 2,493 high-frequency English vocabulary cards, Ukrainian glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Ukrainian-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-09-20",
     audience:
       "Ukrainian-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
     format: ".apkg",
@@ -2540,7 +2540,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2504",
+      cards: "2493",
       topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with Ukrainian bilingual support",
       formulas: "Audio + Ukrainian glosses + bilingual example sentences",
       examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
@@ -2562,7 +2562,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "2,504 English vocabulary cards from the Prep2Go app: Ukrainian glosses, bilingual examples, native English audio, and illustrations.",
+          "2,493 English vocabulary cards from the Prep2Go app: Ukrainian glosses, bilingual examples, native English audio, and illustrations.",
       },
       {
         question: "What file format is delivered?",
@@ -2575,13 +2575,13 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-russian-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for Russian Speakers Anki Deck — 2504 Flashcards",
+    title: "IELTS / TOEFL English for Russian Speakers Anki Deck — 2493 Flashcards",
     shortName: "IELTS / TOEFL English for Russian Speakers",
     subtitle:
-      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Russian support and cognate-trap notes on every card.",
+      "2,493 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Russian support and cognate-trap notes on every card.",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English Anki deck for Russian speakers: 2,504 high-frequency English vocabulary cards with Russian glosses, bilingual examples, native English audio, and illustrations. Built for Russian-speaking candidates targeting IELTS Academic or General (Canada / Australia / UKVI), TOEFL iBT (U.S. graduate), Cambridge, and PTE — English-first recall so false friends like актуальный/actual and магазин/magazine stop costing Reading points. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio. What this is not: a tourist EN–RU AnkiWeb dump, an English Vocabulary in Use book mirror, a timed mock exam, or a PT-BR / LatAm-Spanish-gloss sibling pack.",
-    lastUpdated: "2026-09-08",
+      "UniPrep2Go sells an IELTS / TOEFL English Anki deck for Russian speakers: 2,493 high-frequency English vocabulary cards with Russian glosses, bilingual examples, native English audio, and illustrations. Built for Russian-speaking candidates targeting IELTS Academic or General (Canada / Australia / UKVI), TOEFL iBT (U.S. graduate), Cambridge, and PTE — English-first recall so false friends like актуальный/actual and магазин/magazine stop costing Reading points. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio. What this is not: a tourist EN–RU AnkiWeb dump, an English Vocabulary in Use book mirror, a timed mock exam, or a PT-BR / LatAm-Spanish-gloss sibling pack.",
+    lastUpdated: "2026-09-20",
     audience:
       "Russian-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary — not tourist phrase learners.",
     format: ".apkg",
@@ -2590,7 +2590,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2504",
+      cards: "2493",
       topics:
         "IELTS / TOEFL / Cambridge / PTE English vocabulary for Russian speakers (Russian glosses, false-friend awareness)",
       formulas: "Audio + Russian glosses + bilingual example sentences",
@@ -2613,7 +2613,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this the same as free AnkiWeb English–Russian or EVU decks?",
         answer:
-          "No. Free AnkiWeb EN–RU dumps and English Vocabulary in Use mirrors are often tourist phrases, undated frequency lists, or CEFR book mirrors without IELTS/TOEFL framing. This is a 2,504-card Prep2Go exam-frequency bank with Russian glosses, English audio, and cognate-trap notes — instant Gumroad .apkg at list price.",
+          "No. Free AnkiWeb EN–RU dumps and English Vocabulary in Use mirrors are often tourist phrases, undated frequency lists, or CEFR book mirrors without IELTS/TOEFL framing. This is a 2,493-card Prep2Go exam-frequency bank with Russian glosses, English audio, and cognate-trap notes — instant Gumroad .apkg at list price.",
       },
       {
         question: "Is this the same as the Portuguese- or Spanish-speaker English Anki pages?",
@@ -2623,7 +2623,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "2,504 English vocabulary cards from the Prep2Go app: Russian glosses, bilingual examples, native English audio, and illustrations where included.",
+          "2,493 English vocabulary cards from the Prep2Go app: Russian glosses, bilingual examples, native English audio, and illustrations where included.",
       },
       {
         question: "What file format is delivered?",
@@ -2636,13 +2636,13 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-spanish-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2504 Flashcards",
+    title: "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2494 Flashcards",
     shortName: "IELTS / TOEFL English for Spanish Speakers (LatAm)",
     subtitle:
-      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Latin American Spanish support on every card.",
+      "2,494 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Latin American Spanish support on every card.",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English for Spanish Speakers Anki deck with 2,504 high-frequency English vocabulary cards, Latin American Spanish glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Spanish-speaking (LatAm) candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
-    lastUpdated: "2026-07-22",
+      "UniPrep2Go sells an IELTS / TOEFL English for Spanish Speakers Anki deck with 2,494 high-frequency English vocabulary cards, Latin American Spanish glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Spanish-speaking (LatAm) candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-09-20",
     audience:
       "Latin American Spanish-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
     format: ".apkg",
@@ -2651,7 +2651,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2504",
+      cards: "2494",
       topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with Latin American Spanish bilingual support",
       formulas: "Audio + LatAm Spanish glosses + bilingual example sentences",
       examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
@@ -2683,7 +2683,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "2,504 English vocabulary cards from the Prep2Go app: LatAm Spanish glosses, bilingual examples, native English audio, and illustrations.",
+          "2,494 English vocabulary cards from the Prep2Go app: LatAm Spanish glosses, bilingual examples, native English audio, and illustrations.",
       },
       {
         question: "What file format is delivered?",

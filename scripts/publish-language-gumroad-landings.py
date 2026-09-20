@@ -750,7 +750,7 @@ SPECS: dict[str, dict[str, Any]] = {
     },
     "ielts-toefl-english-for-arabic-speakers-anki-deck": {
         "label": "IELTS / TOEFL English for Arabic Speakers",
-        "headline": "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2504 Flashcards",
+        "headline": "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2493 Flashcards",
         "exam": "IELTS · TOEFL · Cambridge · PTE — for Arabic speakers",
         "hook": (
             "2,504 high-frequency English vocabulary cards with Arabic glosses, bilingual "
@@ -780,19 +780,19 @@ SPECS: dict[str, dict[str, Any]] = {
             "Exam sittings punish slow retrieval. Spaced Anki with English-first recall "
             "(Arabic as a check) beats translating every sentence under time pressure."
         ),
-        "cards": "2504",
+        "cards": "2493",
         "format_note": "Anki .apkg with audio, images, and Arabic support",
         "sample_captions": ["be", "i", "you"],
         "facts": [
             ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
-            ("Cards", "2504 vocabulary"),
+            ("Cards", "2493 vocabulary"),
             ("Media", "Audio + Arabic glosses"),
             ("Delivery", "Instant .apkg"),
         ],
     },
     "ielts-toefl-english-for-ukrainian-speakers-anki-deck": {
         "label": "IELTS / TOEFL English for Ukrainian Speakers",
-        "headline": "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2504 Flashcards",
+        "headline": "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2493 Flashcards",
         "exam": "IELTS · TOEFL · Cambridge · PTE — for Ukrainian speakers",
         "hook": (
             "2,504 high-frequency English vocabulary cards with Ukrainian glosses, bilingual "
@@ -822,19 +822,19 @@ SPECS: dict[str, dict[str, Any]] = {
             "Exam sittings punish slow retrieval. Spaced Anki with English-first recall "
             "(Ukrainian as a check) beats translating every sentence under time pressure."
         ),
-        "cards": "2504",
+        "cards": "2493",
         "format_note": "Anki .apkg with audio, images, and Ukrainian support",
         "sample_captions": ["be", "i", "you"],
         "facts": [
             ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
-            ("Cards", "2504 vocabulary"),
+            ("Cards", "2493 vocabulary"),
             ("Media", "Audio + Ukrainian glosses"),
             ("Delivery", "Instant .apkg"),
         ],
     },
     "ielts-toefl-english-for-russian-speakers-anki-deck": {
         "label": "IELTS / TOEFL English for Russian Speakers",
-        "headline": "IELTS / TOEFL English for Russian Speakers Anki Deck — 2504 Flashcards",
+        "headline": "IELTS / TOEFL English for Russian Speakers Anki Deck — 2493 Flashcards",
         "exam": "IELTS · TOEFL · Cambridge · PTE — for Russian speakers",
         "hook": (
             "2,504 high-frequency English vocabulary cards with Russian glosses, bilingual "
@@ -864,19 +864,19 @@ SPECS: dict[str, dict[str, Any]] = {
             "Exam sittings punish slow retrieval. Spaced Anki with English-first recall "
             "(Russian as a check) beats translating every sentence under time pressure."
         ),
-        "cards": "2504",
+        "cards": "2493",
         "format_note": "Anki .apkg with audio, images, and Russian support",
         "sample_captions": ["be", "i", "you"],
         "facts": [
             ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
-            ("Cards", "2504 vocabulary"),
+            ("Cards", "2493 vocabulary"),
             ("Media", "Audio + Russian glosses"),
             ("Delivery", "Instant .apkg"),
         ],
     },
     "ielts-toefl-english-for-spanish-speakers-anki-deck": {
         "label": "IELTS / TOEFL English for Spanish Speakers (LatAm)",
-        "headline": "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2504 Flashcards",
+        "headline": "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2494 Flashcards",
         "exam": "IELTS · TOEFL · Cambridge · PTE — for Spanish speakers (LatAm)",
         "hook": (
             "2,504 high-frequency English vocabulary cards with Latin American Spanish glosses, "
@@ -906,12 +906,12 @@ SPECS: dict[str, dict[str, Any]] = {
             "Exam sittings punish slow retrieval. Spaced Anki with English-first recall "
             "(Spanish as a check) beats translating every sentence under time pressure."
         ),
-        "cards": "2504",
+        "cards": "2494",
         "format_note": "Anki .apkg with audio, images, and LatAm Spanish support",
         "sample_captions": ["be", "i", "you"],
         "facts": [
             ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
-            ("Cards", "2504 vocabulary"),
+            ("Cards", "2494 vocabulary"),
             ("Media", "Audio + LatAm Spanish glosses"),
             ("Delivery", "Instant .apkg"),
         ],

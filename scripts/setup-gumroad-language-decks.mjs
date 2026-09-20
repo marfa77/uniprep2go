@@ -265,7 +265,7 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_French_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-arabic-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2504 Flashcards",
+    name: "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2493 Flashcards",
     summary:
       "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Arabic support on every card.",
     descriptionHtml: [
@@ -281,7 +281,7 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Arabic_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-ukrainian-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2504 Flashcards",
+    name: "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2493 Flashcards",
     summary:
       "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Ukrainian support on every card.",
     descriptionHtml: [
@@ -297,7 +297,7 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Ukrainian_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-russian-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Russian Speakers Anki Deck — 2504 Flashcards",
+    name: "IELTS / TOEFL English for Russian Speakers Anki Deck — 2493 Flashcards",
     summary:
       "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Russian support on every card.",
     descriptionHtml: [
@@ -313,7 +313,7 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Russian_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-spanish-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2504 Flashcards",
+    name: "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2494 Flashcards",
     summary:
       "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Latin American Spanish support on every card.",
     descriptionHtml: [

@@ -365,11 +365,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "French-speaking IELTS and TOEFL candidates use bilingual English vocabulary recall with French support before timed exam practice.",
   },
   "ielts-toefl-english-for-arabic-speakers-anki-deck": {
-    title: "IELTS / TOEFL English for Arabic Speakers Anki | 2504 Cards",
-    headline: "IELTS / TOEFL English for Arabic Speakers — 2504 Flashcards",
+    title: "IELTS / TOEFL English for Arabic Speakers Anki | 2493 Cards",
+    headline: "IELTS / TOEFL English for Arabic Speakers — 2493 Flashcards",
     studyLabel: "IELTS TOEFL English for Arabic speakers",
     description:
-      "English Anki deck with 2504 flashcards for Arabic speakers preparing IELTS, TOEFL, Cambridge, and PTE — Arabic glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
+      "English Anki deck with 2493 flashcards for Arabic speakers preparing IELTS, TOEFL, Cambridge, and PTE — Arabic glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
     keywords: [
       "english for arabic speakers anki",
       "ielts vocabulary arabic speakers",
@@ -382,11 +382,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "ielts-toefl-english-for-ukrainian-speakers-anki-deck": {
-    title: "IELTS / TOEFL English for Ukrainian Speakers Anki | 2504 Cards",
-    headline: "IELTS / TOEFL English for Ukrainian Speakers — 2504 Flashcards",
+    title: "IELTS / TOEFL English for Ukrainian Speakers Anki | 2493 Cards",
+    headline: "IELTS / TOEFL English for Ukrainian Speakers — 2493 Flashcards",
     studyLabel: "IELTS TOEFL English for Ukrainian speakers",
     description:
-      "English Anki deck with 2504 flashcards for Ukrainian speakers preparing IELTS, TOEFL, Cambridge, and PTE — Ukrainian glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
+      "English Anki deck with 2493 flashcards for Ukrainian speakers preparing IELTS, TOEFL, Cambridge, and PTE — Ukrainian glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
     keywords: [
       "english for ukrainian speakers anki",
       "ielts vocabulary ukrainian speakers",
@@ -399,11 +399,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "ielts-toefl-english-for-russian-speakers-anki-deck": {
-    title: "IELTS Anki Russians 2026 | 2504 · RU Gloss · Not Tourist",
-    headline: "IELTS / TOEFL English for Russian Speakers — 2504 Cards",
+    title: "IELTS Anki Russians 2026 | 2493 · RU Gloss · Not Tourist",
+    headline: "IELTS / TOEFL English for Russian Speakers — 2493 Cards",
     studyLabel: "IELTS TOEFL English Anki for Russian speakers",
     description:
-      "Russians: 2,504 IELTS/TOEFL Anki cards with Russian glosses + актуально≠actual traps. Not AnkiWeb EVU dumps, not tourist EN–RU lists. Gumroad $26.",
+      "Russians: 2,493 IELTS/TOEFL Anki cards with Russian glosses + актуально≠actual traps. Not AnkiWeb EVU dumps, not tourist EN–RU lists. Gumroad $26.",
     keywords: [
       "english for russian speakers anki",
       "ielts vocabulary russian speakers",
@@ -414,15 +414,15 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "anki ielts русские 2026",
     ],
     intro:
-      "Russian speakers targeting IELTS, TOEFL iBT, Cambridge, or PTE drill 2,504 exam-frequency English words with Russian glosses and native audio — English-first recall so cognate traps (актуально/actual, магазин/magazine) stop costing Reading points. Separate from free AnkiWeb EVU packs and the PT-BR or LatAm-Spanish English sibling decks.",
+      "Russian speakers targeting IELTS, TOEFL iBT, Cambridge, or PTE drill 2,493 exam-frequency English words with Russian glosses and native audio — English-first recall so cognate traps (актуально/actual, магазин/magazine) stop costing Reading points. Separate from free AnkiWeb EVU packs and the PT-BR or LatAm-Spanish English sibling decks.",
   },
 
   "ielts-toefl-english-for-spanish-speakers-anki-deck": {
-    title: "IELTS / TOEFL English for LatAm Spanish Speakers Anki | 2504 Cards",
-    headline: "IELTS / TOEFL English for Spanish Speakers (LatAm) — 2504 Flashcards",
+    title: "IELTS / TOEFL English for LatAm Spanish Speakers Anki | 2494 Cards",
+    headline: "IELTS / TOEFL English for Spanish Speakers (LatAm) — 2494 Flashcards",
     studyLabel: "IELTS TOEFL English for Spanish speakers LatAm",
     description:
-      "Free-preview path to 2504 English Anki cards for Latin American Spanish speakers: LatAm glosses, bilingual examples, native English audio — built for IELTS/TOEFL/Cambridge/PTE vocabulary, not tourist phrases or DELE Spanish. Independent study aid.",
+      "Free-preview path to 2494 English Anki cards for Latin American Spanish speakers: LatAm glosses, bilingual examples, native English audio — built for IELTS/TOEFL/Cambridge/PTE vocabulary, not tourist phrases or DELE Spanish. Independent study aid.",
     keywords: [
       "english for spanish speakers anki",
       "ielts vocabulary spanish speakers",

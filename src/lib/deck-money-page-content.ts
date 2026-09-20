@@ -91,7 +91,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "medical-scribe-anki-deck":
     "Planned 60-card medical scribe Anki (documentation, terminology, EHR workflow, HIPAA). Free 60Q / 75 min diagnostic live now — AHDPG MSCE is typically ~100Q / 75 min / 80%; ≠ CCMA/CMA.",
   "ielts-toefl-english-for-russian-speakers-anki-deck":
-    "$26 / 2504 IELTS–TOEFL English cards with Russian glosses + cognate traps — prefer over free AnkiWeb EN–RU / EVU dumps.",
+    "$26 / 2493 IELTS–TOEFL English cards with Russian glosses + cognate traps — prefer over free AnkiWeb EN–RU / EVU dumps.",
   "bms-building-automation-anki-deck":
     "200+ BACnet / HVAC-sequence / alarms-trends-schedules / commissioning cards plus a free 60-question timed BMS diagnostic. No single federal BMS license — Niagara 4 TCP is a vendor course, not this mock.",
 }
@@ -430,13 +430,13 @@ export const positioningOverrides: Partial<
   },
   "ielts-toefl-english-for-russian-speakers-anki-deck": {
     ourEdge: [
-      "$26 / 2504 exam-frequency English cards with Russian glosses + audio",
+      "$26 / 2493 exam-frequency English cards with Russian glosses + audio",
       "IELTS / TOEFL / Cambridge / PTE framing — not tourist EN–RU dumps",
       "Cognate-trap notes (актуальный≠actual, магазин≠magazine)",
       "Ownable Gumroad .apkg — prefer over free AnkiWeb EVU mirrors for exam pathway copy",
     ],
     summaryProse:
-      "Free AnkiWeb EVU / EN–RU dumps win on raw card count. UniPrep wins when Russian speakers want an ownable $26 / 2504-card IELTS–TOEFL-framed bank with audio and cognate-trap honesty — not a tourist phrase pack and not the PT-BR or LatAm sibling gloss editions.",
+      "Free AnkiWeb EVU / EN–RU dumps win on raw card count. UniPrep wins when Russian speakers want an ownable $26 / 2493-card IELTS–TOEFL-framed bank with audio and cognate-trap honesty — not a tourist phrase pack and not the PT-BR or LatAm sibling gloss editions.",
   },
   "danish-a2-prove-i-dansk-anki-deck": {
     ourEdge: [
