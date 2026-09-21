@@ -34,7 +34,7 @@ function civicSoldDeck(slug: string, product: CivicProduct): CatalogAvailableDec
     title: product.name,
     shortName,
     subtitle: `${product.cards} ${product.exam} civics cards — $9 Anki .apkg.`,
-    directAnswer: `UniPrep2Go sells a ${product.cards}-card ${product.exam} Anki deck for $9 through Gumroad by PixID Studio. Cards are question-to-answer civics prompts for spaced repetition, not a language certificate and not a multi-country bundle. Start with the free readiness check at /mock-exams/${product.mockSlug}, then import the .apkg. Independent study aid — not official ${product.exam} material.${polishNote}`,
+    directAnswer: `UniPrep2Go sells a ${product.cards}-card ${product.exam} Anki deck for $9 through Gumroad by PixID Studio. This ${product.exam} file is question-to-answer civics recall for that country only — not a language certificate and not a multi-country bundle. Start with the free readiness check at /mock-exams/${product.mockSlug}, then import the .apkg. Independent study aid — not official ${product.exam} material.${polishNote}`,
     lastUpdated: "2026-09-21",
     audience: `Applicants preparing ${product.exam} who want a $9 Anki deck of ${product.cards} civics cards.`,
     format: ".apkg",
@@ -50,10 +50,10 @@ function civicSoldDeck(slug: string, product: CivicProduct): CatalogAvailableDec
       delivery: "Digital .apkg through Gumroad (instant download)",
     },
     topicCoverage: [
-      { name: "State, constitution & rights", examWeight: "25%", cards: String(product.cards) },
-      { name: "History & institutions", examWeight: "25%", cards: String(product.cards) },
-      { name: "Society & daily life", examWeight: "25%", cards: String(product.cards) },
-      { name: "Exam-style recall", examWeight: "25%", cards: String(product.cards) },
+      { name: `${product.exam} — state, constitution & rights`, examWeight: "25%", cards: String(product.cards) },
+      { name: `${product.exam} — history & institutions`, examWeight: "25%", cards: String(product.cards) },
+      { name: `${product.exam} — society & daily life`, examWeight: "25%", cards: String(product.cards) },
+      { name: `${product.exam} — exam-style recall`, examWeight: "25%", cards: String(product.cards) },
     ],
     sampleCards: product.samples.slice(0, 3).map((card) => ({
       question: card.q,
@@ -63,15 +63,15 @@ function civicSoldDeck(slug: string, product: CivicProduct): CatalogAvailableDec
     faqs: [
       {
         question: "How many cards are in this deck?",
-        answer: `${product.cards} question-to-answer civics cards in one Anki .apkg for $9.`,
+        answer: `${product.cards} ${product.exam} question-to-answer civics cards in one Anki .apkg for $9.`,
       },
       {
         question: "Is there a free practice test?",
-        answer: `Yes. Take the free readiness check at /mock-exams/${product.mockSlug}, then drill misses in this deck.`,
+        answer: `Yes. Take the free ${product.exam} readiness check at /mock-exams/${product.mockSlug}, then drill misses in this deck.`,
       },
       {
         question: "Is this official government material?",
-        answer: `No. Independent UniPrep2Go study aid for ${product.exam}. Confirm current rules with the official authority.`,
+        answer: `No. Independent UniPrep2Go study aid for ${product.exam}. Confirm current ${product.exam} rules with the official authority.`,
       },
     ],
   };
