@@ -160,8 +160,14 @@ export function getQuestionBank(examSlug: string) {
 }
 
 export function getQuestionBankForExam(examSlug: string) {
+  return getQuestionBankForExamFromQuestions(examSlug, getQuestionBank(examSlug));
+}
+
+export function getQuestionBankForExamFromQuestions(
+  examSlug: string,
+  questions: MockQuestion[],
+) {
   const config = getMockExamConfig(examSlug);
-  const questions = getQuestionBank(examSlug);
 
   if (!config) {
     return { config: null, questions: [] as MockQuestion[], errors: ["Unknown mock exam slug"] };
@@ -240,8 +246,11 @@ export function validateQuestionBank(
   return errors;
 }
 
-export function isMockExamRunnable(examSlug: string) {
-  const { config, questions, errors } = getQuestionBankForExam(examSlug);
+export function isMockExamRunnableFromQuestions(
+  examSlug: string,
+  questions: MockQuestion[],
+) {
+  const { config, errors } = getQuestionBankForExamFromQuestions(examSlug, questions);
 
   if (!config || config.status === "coming_soon") {
     return false;
@@ -249,4 +258,8 @@ export function isMockExamRunnable(examSlug: string) {
 
   // Live and preview both run when the bank covers the timed session (exact or oversized Anki bank).
   return questions.length >= config.questionCount && errors.length === 0;
+}
+
+export function isMockExamRunnable(examSlug: string) {
+  return isMockExamRunnableFromQuestions(examSlug, getQuestionBank(examSlug));
 }

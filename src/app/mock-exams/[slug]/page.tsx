@@ -53,7 +53,8 @@ import {
 import { buildMockExamPageJsonLd } from "@/lib/mock-exams/llm";
 import { buildMockCompanionCheckouts } from "@/lib/mock-exams/mock-companion-decks";
 import { getMockOfficialResources } from "@/lib/mock-exams/official-resources";
-import { getQuestionBank, isMockExamRunnable } from "@/lib/mock-exams/question-bank";
+import { getLiveQuestionBank } from "@/lib/mock-exams/question-bank-ops";
+import { isMockExamRunnableFromQuestions } from "@/lib/mock-exams/question-bank";
 import { isLearnPassEnabled } from "@/lib/mock-exams/learn-pass";
 import { parseMockSessionMode } from "@/lib/mock-exams/session-mode";
 import {
@@ -155,8 +156,8 @@ export default async function MockExamPage({
   }
 
   const accessState = getMockAccessState(slug);
-  const questions = getQuestionBank(slug);
-  const runnable = isMockExamRunnable(slug);
+  const questions = await getLiveQuestionBank(slug);
+  const runnable = isMockExamRunnableFromQuestions(slug, questions);
   const jsonLd = buildMockExamPageJsonLd(config);
   const seoCopy = buildMockSeoPageCopy(config);
   const nicheLead = getNicheGooglePageLead(config.slug);
