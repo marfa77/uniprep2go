@@ -12,6 +12,7 @@ import type {
 } from "./decks";
 import { getAllMockExams } from "./mock-exams/configs";
 import { getQuestionBank } from "./mock-exams/question-bank";
+import { pickStrongMcqSamples } from "./select-strong-samples";
 import { absoluteUrl } from "./site";
 
 /** Sale-grade bank size target — matches mock bank generator for thick banks. */
@@ -284,19 +285,25 @@ function buildSampleCardsFromLinkedMock(deck: PlannedDeck): SampleCard[] {
   if (!bank?.length) {
     return [];
   }
-  return attachLaunchSampleImages(
-    deck.slug,
-    bank.slice(0, 3).map((question) => {
-      const correct =
-        question.options.find((option) => option.id === question.correctOptionId)?.text ??
-        question.explanation;
-      return {
-        question: question.prompt,
-        answer: `${correct}${question.explanation ? ` — ${question.explanation}` : ""}`,
-        imageUrl: cover,
-      };
-    }),
-  );
+  const strong = pickStrongMcqSamples(bank, deck.slug, 3);
+  const chosen =
+    strong.length === 3
+      ? strong.map((card) => ({
+          question: card.q,
+          answer: card.a,
+          imageUrl: cover,
+        }))
+      : bank.slice(0, 3).map((question) => {
+          const correct =
+            question.options.find((option) => option.id === question.correctOptionId)?.text ??
+            question.explanation;
+          return {
+            question: question.prompt,
+            answer: `${correct}${question.explanation ? ` — ${question.explanation}` : ""}`,
+            imageUrl: cover,
+          };
+        });
+  return attachLaunchSampleImages(deck.slug, chosen);
 }
 
 function upgradeTopicCoverage(

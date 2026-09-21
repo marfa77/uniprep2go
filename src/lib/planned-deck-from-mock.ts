@@ -2,6 +2,8 @@ import type { PlannedDeck, SampleCard } from "./decks";
 import { getNicheExamExplainer } from "./mock-exams/niche-exam-explainers";
 import { getQuestionBankForExam } from "./mock-exams/question-bank";
 import type { MockExamConfig } from "./mock-exams/types";
+import { pickStrongMcqSamples } from "./select-strong-samples";
+import { soldSamplesForSlug } from "./apply-sold-samples";
 
 /** Expand short examBody labels so audience copy is human-readable. */
 const EXAM_BODY_EXPANSIONS: Record<string, string> = {
@@ -62,10 +64,18 @@ function topicWeightLabel(config: MockExamConfig, weightPercent: number | undefi
   return `${weightPercent ?? 25}%`;
 }
 
-function sampleCardsFromMockBank(mockSlug: string): SampleCard[] {
+function sampleCardsFromMockBank(mockSlug: string, deckSlug: string): SampleCard[] {
+  const sold = soldSamplesForSlug(deckSlug);
+  if (sold.length === 3) {
+    return sold.map((card) => ({ question: card.q, answer: card.a, imageUrl: "" }));
+  }
   try {
     const { questions, errors } = getQuestionBankForExam(mockSlug);
     if (errors.length || questions.length === 0) return [];
+    const picks = pickStrongMcqSamples(questions, deckSlug, 3);
+    if (picks.length === 3) {
+      return picks.map((card) => ({ question: card.q, answer: card.a, imageUrl: "" }));
+    }
     return questions.slice(0, 3).map((q) => {
       const correct = q.options.find((o) => o.id === q.correctOptionId)?.text ?? "";
       return {
@@ -123,7 +133,7 @@ export function plannedDeckFromMock(
       examWeight: topicWeightLabel(config, t.weightPercent),
       cards: "Planned",
     })),
-    sampleCards: sampleCardsFromMockBank(config.slug),
+    sampleCards: sampleCardsFromMockBank(config.slug, deckSlug),
     faqs: [
       {
         question: `Is there a free ${shortName} practice test?`,

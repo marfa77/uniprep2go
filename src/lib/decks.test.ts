@@ -376,11 +376,14 @@ describe("deck catalog", () => {
     });
     expect(sieDeck?.facts.cards).toBe("300");
     expect(sieDeck?.sampleCards).toHaveLength(3);
-    expect(sieDeck?.sampleCards.map((card) => card.question)).toEqual([
+    expect(sieDeck?.sampleCards.map((card) => card.question)).not.toEqual([
       "What is the SEC?",
       "What is FINRA?",
       "What does the MSRB regulate?",
     ]);
+    expect(sieDeck?.sampleCards.every((card) => card.question.length > 28 && card.answer.length > 8)).toBe(
+      true,
+    );
   });
 
   it("includes the Series 7 deck with three Gumroad preview cards", () => {
@@ -459,11 +462,14 @@ describe("deck catalog", () => {
       "/samples/california-real-estate-exam-anki-deck-sample-2.webp",
       "/samples/california-real-estate-exam-anki-deck-sample-3.webp",
     ]);
-    expect(californiaRealEstateDeck?.sampleCards.map((card) => card.question)).toEqual([
+    expect(californiaRealEstateDeck?.sampleCards.map((card) => card.question)).not.toEqual([
       "What is real property?",
       "What is personal property?",
       "What is a fixture?",
     ]);
+    expect(
+      californiaRealEstateDeck?.sampleCards.every((card) => card.question.length > 28 && card.answer.length > 8),
+    ).toBe(true);
   });
 
   it("includes the Life & Health Insurance deck with three Gumroad preview cards", () => {
@@ -483,11 +489,14 @@ describe("deck catalog", () => {
       "/samples/life-and-health-insurance-exam-anki-deck-sample-2.webp",
       "/samples/life-and-health-insurance-exam-anki-deck-sample-3.webp",
     ]);
-    expect(lifeHealthDeck?.sampleCards.map((card) => card.question)).toEqual([
+    expect(lifeHealthDeck?.sampleCards.map((card) => card.question)).not.toEqual([
       "What is risk in insurance?",
       "What is pure risk?",
       "What is speculative risk?",
     ]);
+    expect(
+      lifeHealthDeck?.sampleCards.every((card) => card.question.length > 28 && card.answer.length > 8),
+    ).toBe(true);
   });
 
   it("includes the Property & Casualty Insurance deck with three Gumroad preview cards", () => {
@@ -507,11 +516,14 @@ describe("deck catalog", () => {
       "/samples/property-casualty-insurance-exam-anki-deck-sample-2.webp",
       "/samples/property-casualty-insurance-exam-anki-deck-sample-3.webp",
     ]);
-    expect(propertyCasualtyDeck?.sampleCards.map((card) => card.question)).toEqual([
+    expect(propertyCasualtyDeck?.sampleCards.map((card) => card.question)).not.toEqual([
       "What is risk in property and casualty insurance?",
       "What is pure risk?",
       "What is speculative risk?",
     ]);
+    expect(
+      propertyCasualtyDeck?.sampleCards.every((card) => card.question.length > 28 && card.answer.length > 8),
+    ).toBe(true);
   });
 
   it("includes the ServSafe Manager deck as a full food safety product", () => {

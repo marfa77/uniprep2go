@@ -18,6 +18,16 @@ const FINANCE_CATALOG = join(root, "src/data/gumroad/finance-anki-decks.json");
 const CDN_CACHE = join(root, "src/data/gumroad/finance-sample-cdn.json");
 const OUT_DIR = join(root, "landing-pages/finance");
 
+const SCREENSHOT_FAITHFUL = new Set([
+  "cfa-level-1-anki-deck",
+  "cfa-level-2-anki-deck",
+  "cfa-level-1-formula-reference-2026",
+  "cfa-level-2-formula-reference-2026",
+  "frm-part-1-anki-deck",
+  "series-7-anki-deck",
+  "series-63-anki-deck",
+]);
+
 function parseArgs(argv) {
   const args = { dryRun: false, slug: null };
   for (let i = 2; i < argv.length; i += 1) {
@@ -103,12 +113,29 @@ function ensureCdnUrls(productId, slug, cache, dryRun) {
   return urls.slice(0, 3);
 }
 
-function renderLanding({ title, shortName, slug, sampleUrls, mockUrl }) {
+function loadSoldSamples(slug) {
+  const path = join(root, "src/data/sold-samples.json");
+  if (!existsSync(path)) return [];
+  const rows = JSON.parse(readFileSync(path, "utf8"))[slug];
+  return Array.isArray(rows) ? rows.slice(0, 3) : [];
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+function renderLanding({ title, shortName, slug, sampleUrls, mockUrl, sampleCaptions }) {
   const samplesHtml = sampleUrls
-    .map(
-      (url, i) =>
-        `<figure style="margin:1rem 0"><img src="${url}" alt="Sample card ${i + 1}" style="max-width:100%;border-radius:8px"/><figcaption style="color:#666;font-size:0.9rem">Sample ${i + 1} — ${shortName}</figcaption></figure>`,
-    )
+    .map((url, i) => {
+      const pick = sampleCaptions[i];
+      const caption = pick?.q
+        ? `${escapeHtml(pick.q)} — ${escapeHtml(pick.a)}`
+        : `Sample ${i + 1} — ${escapeHtml(shortName)}`;
+      return `<figure style="margin:1rem 0"><img src="${url}" alt="Sample card ${i + 1}" style="max-width:100%;border-radius:8px"/><figcaption style="color:#666;font-size:0.9rem">${caption}</figcaption></figure>`;
+    })
     .join("\n");
   return `<!DOCTYPE html><html><body style="font-family:system-ui,sans-serif;max-width:720px;margin:0 auto;padding:1.5rem;line-height:1.5">
 <h1>${title}</h1>
@@ -166,6 +193,7 @@ function main() {
         slug,
         sampleUrls,
         mockUrl,
+        sampleCaptions: SCREENSHOT_FAITHFUL.has(slug) ? [] : loadSoldSamples(slug),
       });
       const outPath = join(OUT_DIR, `${slug}.html`);
       writeFileSync(outPath, html);
@@ -177,10 +205,10 @@ function main() {
 
       const tmp = `/tmp/gumroad-finance-${slug}.html`;
       writeFileSync(tmp, html);
-      execSync(`gumroad products page publish ${productId} "${tmp}" --yes --non-interactive`, {
+      execSync(`gumroad products page publish --yes --non-interactive -- "${perm}" "${tmp}"`, {
         stdio: "inherit",
       });
-      execSync(`gumroad products publish ${productId} --non-interactive`, { stdio: "inherit" });
+      execSync(`gumroad products publish --non-interactive -- "${perm}"`, { stdio: "inherit" });
 
       catalog.products[slug] = {
         ...(catalog.products[slug] ?? { permalink: perm }),

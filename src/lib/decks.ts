@@ -1,4 +1,5 @@
 import { enrichDeckWithShopPreviews } from "./prep2go-shop-samples";
+import { applySoldSamplesToDeck } from "./apply-sold-samples";
 import { prep2GoAppDecks, prep2GoCitizenshipAppDecks } from "./prep2go-app-decks";
 import { applyAnkiDeckLaunchToCatalog } from "./anki-deck-launch";
 import { citizenshipPlannedDecks } from "./citizenship-planned-decks";
@@ -723,7 +724,7 @@ const rawDecks: Deck[] = [
     subtitle: "A focused Anki deck for FINRA SIE exam active recall.",
     directAnswer:
       "UniPrep2Go sells an independent SIE Exam Anki deck with 300 high-yield cards covering FINRA's official topic weights: capital markets, products and risks, trading, customer accounts, prohibited activities, and regulatory framework. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck is a supplementary active-recall study aid for SIE candidates and is not official FINRA material.",
-    lastUpdated: "2026-05-31",
+    lastUpdated: "2026-09-21",
     audience: "SIE exam candidates, finance interns, new hires, and career changers who want active-recall practice instead of passive rereading.",
     format: ".apkg",
     coverImage: "/covers/sie-exam-anki-deck.webp",
@@ -960,7 +961,7 @@ const rawDecks: Deck[] = [
       "400 California DRE salesperson Anki cards + free 60-question CA practice test — agency, disclosures, math.",
     directAnswer:
       "For California DRE salesperson exam prep, UniPrep2Go’s California Real Estate Anki deck is 400 high-yield cards on property ownership, agency and fiduciary duties, valuation, financing, transfer, mandated disclosures, contracts, and real estate math — plus a free 60-question timed California practice test with topic scoring. Delivered as an Anki .apkg for {PRICE} through Gumroad. State-specific California content, not a national deck relabeled, and not official DRE material.",
-    lastUpdated: "2026-08-11",
+    lastUpdated: "2026-09-21",
     audience:
       "California real estate salesperson exam candidates, career changers entering real estate, pre-licensing students, and candidates who want active recall for agency, disclosures, contracts, and real estate math.",
     format: ".apkg",
@@ -1052,7 +1053,7 @@ const rawDecks: Deck[] = [
       "400 Life & Health insurance flashcards + free 60-question timed practice test — provisions, annuities, Medicare.",
     directAnswer:
       "UniPrep2Go sells an independent Life & Health Insurance Exam Anki deck with 400 high-yield cards covering national core topics tested across Life & Health insurance producer exams: general insurance principles, life insurance policy types, policy provisions and riders, annuities, health insurance plans and cost-sharing, disability income and long-term care, Medicare basics, and tax treatment, replacement, ethics, and producer responsibilities — plus a free 60-question timed Life & Health readiness check (no signup). Delivered as an Anki .apkg file for {PRICE} through Gumroad. Supplementary active-recall study aid — not official state exam material.",
-    lastUpdated: "2026-08-27",
+    lastUpdated: "2026-09-21",
     audience:
       "Life & Health insurance license candidates, new insurance producers, career changers entering insurance sales, pre-licensing students, and candidates who want active recall for policy provisions, riders, annuities, health plans, and insurance terminology.",
     format: ".apkg",
@@ -1140,7 +1141,7 @@ const rawDecks: Deck[] = [
       "A focused Anki deck for U.S. Property & Casualty insurance licensing exam active recall.",
     directAnswer:
       "UniPrep2Go sells an independent Property & Casualty Insurance Exam Anki deck with 400 high-yield cards covering national core topics tested across U.S. P&C licensing exams: property insurance basics, homeowners and dwelling policies, personal auto, commercial property, business owners policy, commercial general liability, workers compensation, policy structure, exclusions, claims, and key regulation concepts. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck is a supplementary active-recall study aid for P&C insurance licensing candidates and is not official state exam material.",
-    lastUpdated: "2026-06-01",
+    lastUpdated: "2026-09-21",
     audience:
       "Property & Casualty insurance license candidates, new insurance producers, career changers entering insurance sales, pre-licensing students, and candidates who want active recall for homeowners, auto, commercial lines, and policy provisions.",
     format: ".apkg",
@@ -4805,7 +4806,7 @@ const uniqueWavePlannedDecks = [
 
 export const decks: Deck[] = applyAnkiDeckLaunchToCatalog(
   [...rawDecks, ...uniqueWavePlannedDecks].map(enrichDeckWithShopPreviews),
-);
+).map(applySoldSamplesToDeck);
 
 export const catalogAvailableDecks = decks.filter(
   (deck): deck is CatalogAvailableDeck => deck.status === "available",
