@@ -80,18 +80,18 @@ describe("anki-deck-launch", () => {
     expect(isLaunchableAnkiDeckSlug("luxembourg-vivre-ensemble-anki-deck")).toBe(true);
     const lux = getCatalogDeckBySlug("luxembourg-vivre-ensemble-anki-deck");
     expect(lux?.status).toBe("available");
-    expect(lux?.facts.cards).toBe("120");
+    expect(lux?.facts.cards).toBe("165");
     expect(lux?.checkoutUrl).toContain("gumroad.com/l/luxembourg-vivre-ensemble-anki-deck");
-    expect(lux?.lastUpdated).toBe("2026-08-14");
+    expect(lux?.lastUpdated).toBe("2026-09-21");
     expect(lux?.sampleCards).toHaveLength(3);
     expect(lux?.sampleCards[0]?.imageUrl).toBe(
       "/samples/luxembourg-vivre-ensemble-anki-deck-sample-1.webp",
     );
     expect(lux?.sampleCards[0]?.question).toContain("forme d'État");
     expect(lux?.sampleCards.map((card) => card.question)).toEqual([
-      "Quelle est la forme d'État du Grand-Duché de Luxembourg?",
-      "Qui est le chef d'État du Grand-Duché de Luxembourg?",
-      "Dans quelle ville siège le gouvernement luxembourgeois?",
+      "Quelle est la forme d'État?",
+      "Qui est le chef d'État?",
+      "Quelles sont les trois langues administratives?",
     ]);
 
     const stateRe = getCatalogDeckBySlug("fl-real-estate-anki-deck");

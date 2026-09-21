@@ -28,10 +28,10 @@ const ANKI_DECK_VAULT = join(ANKI_GENERATOR_ROOT, "out", "anki-decks");
 
 const PRODUCT = {
   permalink: "swiss-citizenship-anki-deck",
-  name: "Swiss Citizenship Anki Bundle — DE / FR / IT · 618 Cards",
+  name: "Swiss Citizenship Anki Bundle — DE / FR / IT · 621 Cards",
   priceCents: 1200,
   summary:
-    "Federal Staatskunde for Swiss ordinary naturalisation — three Anki decks (German, French, Italian), 206 cards each. One $12 download.",
+    "Federal Staatskunde for Swiss ordinary naturalisation — three Anki decks (German, French, Italian), 207 cards each. One $12 download.",
 };
 
 /** @type {{ folder: string; baseName: string; fileName: string; label: string }[]} */
@@ -40,19 +40,19 @@ const DECKS = [
     folder: "prep2go_Einburgerung_Schweiz",
     baseName: "prep2go_Einburgerung_Schweiz_FULL",
     fileName: "01_Einburgerung_Schweiz_DE_Anki_Deck.apkg",
-    label: "Einbürgerung Schweiz (German) — 206 cards",
+    label: "Einbürgerung Schweiz (German) — 207 cards",
   },
   {
     folder: "prep2go_Naturalisation_Suisse",
     baseName: "prep2go_Naturalisation_Suisse_FULL",
     fileName: "02_Naturalisation_Suisse_FR_Anki_Deck.apkg",
-    label: "Naturalisation Suisse (French) — 206 cards",
+    label: "Naturalisation Suisse (French) — 207 cards",
   },
   {
     folder: "prep2go_Naturalizzazione_Svizzera",
     baseName: "prep2go_Naturalizzazione_Svizzera_FULL",
     fileName: "03_Naturalizzazione_Svizzera_IT_Anki_Deck.apkg",
-    label: "Naturalizzazione Svizzera (Italian) — 206 cards",
+    label: "Naturalizzazione Svizzera (Italian) — 207 cards",
   },
 ];
 
@@ -103,12 +103,16 @@ function resolveApkg(folder, baseName) {
 function buildDescription() {
   const list = DECKS.map((d) => `<li><strong>${d.label}</strong></li>`).join("");
   return [
+    "<h3>Sample cards</h3>",
+    "<p><strong>Welche drei offiziellen Wege gibt es, die Schweizer Staatsbürgerschaft durch Entscheid zu erwerben?</strong><br>Ordentliche Einbürgerung, erleichterte Einbürgerung und Wiedereinbürgerung.</p>",
+    "<p><strong>Quelles sont les trois voies officielles d'acquisition de la nationalité suisse par décision ?</strong><br>La naturalisation ordinaire, la naturalisation facilitée et le rétablissement de la nationalité.</p>",
+    "<p><strong>Quali sono le tre vie ufficiali per acquisire la cittadinanza svizzera per decisione?</strong><br>Naturalizzazione ordinaria, naturalizzazione semplificata e reintegrazione della cittadinanza.</p>",
     "<p><strong>Swiss ordinary naturalisation is not one English quiz — canton exams run in German, French, or Italian.</strong></p>",
-    "<p>This bundle gives you <strong>618 federal Staatskunde flashcards</strong> as <strong>three separate Anki .apkg files</strong> — same federal block in DE, FR, and IT — so you drill politics, direct democracy, history, geography, the social system, and the naturalisation process in the language of your canton.</p>",
+    "<p>This bundle gives you <strong>621 federal Staatskunde flashcards</strong> as <strong>three separate Anki .apkg files</strong> — same federal block in DE, FR, and IT — so you drill politics, direct democracy, history, geography, the social system, and the naturalisation process in the language of your canton.</p>",
     "<p><strong>PixID Studio</strong> — one <strong>$12</strong> download. Import the language you need; keep the others for household members or a language switch later.</p>",
     "<h3>What’s inside</h3>",
     `<ul>${list}</ul>`,
-    "<p><strong>618 cards total</strong> (206 × 3) · text-first Q&A · built for daily 20–30 card sessions alongside your commune brochure.</p>",
+    "<p><strong>621 cards total</strong> (207 × 3) · text-first Q&A · built for daily 20–30 card sessions alongside your commune brochure.</p>",
     "<h3>Who this is for</h3>",
     "<ul>",
     "<li>Applicants preparing <strong>ordinary naturalisation</strong> federal civics (SEM / cantonal Staatskunde)</li>",

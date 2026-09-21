@@ -17,12 +17,12 @@ export const germanyEinbuergerungstestVsLidPost: BlogPostDraft = {
   intro:
     "**Search for the German citizenship test and you will find two names: Einbürgerungstest and Leben in Deutschland.** Same ~300-question BAMF bank. Same 33-question format. Same administrator. They are still not interchangeable paperwork. One is framed for citizenship; the other for permanent residence / integration courses. Sign up under the wrong title and you may spend weeks explaining to a Beamter why your certificate says the “wrong” name. This guide covers the exact difference, the registration trap, and how to study when most questions come from a free public database.",
   mockSlug: "leben-in-deutschland-readiness-check",
-  deckSlug: "citizenship-naturalization-anki-bundle",
+  deckSlug: "leben-in-deutschland-anki-deck",
   cta: {
     mockLabel: "Take the free Leben in Deutschland readiness check",
-    deckLabel: "Get the Citizenship & Naturalization Anki Bundle",
+    deckLabel: "Get the Leben in Deutschland Anki deck ($9)",
     summary:
-      "Drill BAMF themes with the free Leben in Deutschland readiness check (Prep2Go-sourced). Then lock the catalog with the Citizenship & Naturalization Anki Bundle (includes the LiD / Einbürgerungstest deck) before your VHS sitting — and browse Prep2Go for related immigration decks.",
+      "Drill BAMF themes with the free Leben in Deutschland readiness check (Prep2Go-sourced). Then lock the catalog with the $9 Leben in Deutschland Anki deck before your VHS sitting — and browse Prep2Go for related immigration decks.",
     extraLinks: [
       {
         href: "https://www.prep2go.study",

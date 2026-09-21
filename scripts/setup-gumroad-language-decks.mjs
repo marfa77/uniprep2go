@@ -42,12 +42,12 @@ const PRICE_USD = 26;
  * }>} */
 const SPECS = {
   "ciple-a2-european-portuguese-anki-deck": {
-    name: "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2000 Flashcards",
+    name: "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2026 Flashcards",
     summary:
-      "2000 European Portuguese cards for CIPLE / CAPLE A2, residency, and citizenship (nacionalidade).",
+      "2026 European Portuguese cards for CIPLE / CAPLE A2, residency, and citizenship (nacionalidade).",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — Portuguese Anki deck for <strong>CIPLE / CAPLE A2</strong>, <strong>autorização de residência</strong>, and <strong>nacionalidade portuguesa</strong>.</p>",
-      "<p><strong>2000</strong> PT-PT cards with audio, phrases, and examples — one vocabulary bank for the CAPLE diploma and Portugal immigration pathways.</p>",
+      "<p><strong>2026</strong> PT-PT cards with audio, phrases, and examples — one vocabulary bank for the CAPLE diploma and Portugal immigration pathways.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki desktop, then sync to mobile via AnkiWeb.</p>",
       "<p><em>Independent study aid — not official CAPLE / University of Lisbon material.</em></p>",
     ].join(""),
@@ -56,13 +56,13 @@ const SPECS = {
     fileNames: ["CIPLE_CAPLE_Portuguese_Citizenship_Anki_Deck.apkg"],
   },
   "delf-b2-french-anki-deck": {
-    name: "DELF DALF TCF TEF French Anki Deck — 2000+ Flashcards",
+    name: "DELF DALF TCF TEF French Anki Deck — 2026 Flashcards",
     summary:
-      "2000+ French cards for DELF, DALF, TCF/TEF Canada, TCF ANF, TCF général — plus shared lexicon for fide / Swiss residency French.",
+      "2026 French cards for DELF, DALF, TCF/TEF Canada, TCF ANF, TCF général — plus shared lexicon for fide / Swiss residency French.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — French Anki deck for the main certificate and immigration pathways: <strong>DELF / DALF</strong> (lifetime diploma gold standard), <strong>TCF Canada</strong> and <strong>TEF Canada</strong> (Express Entry / Quebec), <strong>TCF ANF</strong> (French naturalization), and <strong>TCF général</strong> (French universities).</p>",
       "<p>The same high-frequency lexicon also supports <strong>fide / Swiss residency French</strong> language prep and everyday Belgian French — not official fide / SEM formats. For Swiss civics (Staatskunde), see the Swiss Citizenship Anki Bundle.</p>",
-      "<p><strong>2000+</strong> cards pair each headword with a visual cue, native French audio, and a contextual example — one shared high-frequency vocabulary bank across those exams, not A1 survival fluff.</p>",
+      "<p><strong>2026</strong> cards pair each headword with a visual cue, native French audio, and a contextual example — one shared high-frequency vocabulary bank across those exams, not A1 survival fluff.</p>",
       "<p><strong>Delivery:</strong> Import into Anki desktop, then sync to mobile via AnkiWeb.</p>",
       "<p><em>Independent study aid — not affiliated with France Éducation international, IRCC, official TCF/TEF bodies, or Swiss fide / SEM.</em></p>",
     ].join(""),
@@ -71,12 +71,12 @@ const SPECS = {
     fileNames: ["DELF_DALF_TCF_TEF_French_Anki_Deck.apkg"],
   },
   "dutch-a2-inburgering-anki-deck": {
-    name: "Dutch Inburgering NT2 A2 Anki Deck — 2000 Flashcards",
+    name: "Dutch Inburgering NT2 A2 Anki Deck — 1897 Flashcards",
     summary:
-      "2,000 Dutch A2 cards for Inburgering, Staatsexamen NT2 A2, residency, and naturalisatie.",
+      "1,897 Dutch A2 cards for Inburgering, Staatsexamen NT2 A2, residency, and naturalisatie.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — Dutch Anki deck for <strong>Inburgering</strong>, <strong>Staatsexamen NT2 A2</strong>, and <strong>naturalisatie</strong> vocabulary.</p>",
-      "<p><strong>2,000</strong> high-frequency words with bilingual examples, native audio, and illustrations.</p>",
+      "<p><strong>1,897</strong> high-frequency words with bilingual examples, native audio, and illustrations.</p>",
       "<p><strong>Delivery:</strong> Anki .apkg — import on desktop, sync to mobile.</p>",
       "<p><em>Independent study aid — not official Dutch government / DUO material.</em></p>",
     ].join(""),
@@ -85,12 +85,12 @@ const SPECS = {
     fileNames: ["Dutch_Inburgering_NT2_A2_Anki_Deck.apkg"],
   },
   "german-a2-anki-deck": {
-    name: "German Goethe telc ÖSD DTZ Anki Deck — 2000 Flashcards",
+    name: "German Goethe telc ÖSD DTZ Anki Deck — 2026 Flashcards",
     summary:
-      "2000 German cards for Goethe, telc, ÖSD, DTZ — plus shared lexicon for residence / Einbürgerung language and fide / Swiss residency German.",
+      "2026 German cards for Goethe, telc, ÖSD, DTZ — plus shared lexicon for residence / Einbürgerung language and fide / Swiss residency German.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — German Anki deck for <strong>Goethe-Institut A2</strong>, <strong>telc Deutsch A2</strong>, <strong>ÖSD A2</strong>, and <strong>DTZ</strong>.</p>",
-      "<p><strong>2,000</strong> essential words — one shared vocabulary bank across certificate and immigration pathways, including soft overlap for residence / Einbürgerung language and <strong>fide / Swiss residency German</strong>.</p>",
+      "<p><strong>2,026</strong> essential words — one shared vocabulary bank across certificate and immigration pathways, including soft overlap for residence / Einbürgerung language and <strong>fide / Swiss residency German</strong>.</p>",
       "<p>Not a Leben in Deutschland civics deck (see Citizenship &amp; Naturalization Anki Bundle) and not Swiss Staatskunde (see Swiss Citizenship Anki Bundle).</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki desktop, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official Goethe, telc, ÖSD, BAMF / DTZ, or Swiss fide / SEM material.</em></p>",
@@ -100,12 +100,12 @@ const SPECS = {
     fileNames: ["German_Goethe_telc_OSD_DTZ_Anki_Deck.apkg"],
   },
   "celi-b1-italian-anki-deck": {
-    name: "CELI CILS PLIDA Italian Anki Deck — 1500 Flashcards",
+    name: "CELI CILS PLIDA Italian Anki Deck — 2026 Flashcards",
     summary:
-      "1,500 Italian B1 cards for CELI, CILS, and PLIDA — including permesso di soggiorno and cittadinanza language overlap.",
+      "2,026 Italian B1 cards for CELI, CILS, and PLIDA — including permesso di soggiorno and cittadinanza language overlap.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — Italian B1 Anki deck for <strong>CELI</strong>, <strong>CILS</strong>, and <strong>PLIDA</strong>, including vocabulary used for <strong>permesso di soggiorno</strong> and <strong>cittadinanza</strong> language pathways (CILS B1 cittadinanza-adjacent).</p>",
-      "<p><strong>1,500</strong> cards covering the shared intermediate vocabulary across the main Italian certificates — language prep, not an Italian civics quiz.</p>",
+      "<p><strong>2,026</strong> cards covering the shared intermediate vocabulary across the main Italian certificates — language prep, not an Italian civics quiz.</p>",
       "<p><strong>Delivery:</strong> Anki-compatible .apkg via your Gumroad library after checkout.</p>",
       "<p><em>Independent study aid — not official CELI / CILS / PLIDA material.</em></p>",
     ].join(""),
@@ -128,12 +128,12 @@ const SPECS = {
     fileNames: ["Danish_Prove_i_Dansk_PD2_PD3_Anki_Deck.apkg"],
   },
   "norwegian-a2-norskprove-anki-deck": {
-    name: "Norwegian Norskprøve Residence Citizenship Anki Deck — 1500 Flashcards",
+    name: "Norwegian Norskprøve Residence Citizenship Anki Deck — 1487 Flashcards",
     summary:
-      "1,500 Bokmål cards for Norskprøve A2 and Norwegian residence or citizenship language prep.",
+      "1,487 Bokmål cards for Norskprøve A2 and Norwegian residence or citizenship language prep.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — Norwegian Anki deck for <strong>Norskprøve A2</strong>, <strong>permanent oppholdstillatelse</strong>, and <strong>statsborgerskap</strong> language prep.</p>",
-      "<p><strong>1,500</strong> Bokmål cards with audio and everyday example sentences.</p>",
+      "<p><strong>1,487</strong> Bokmål cards with audio and everyday example sentences.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official Norskprøve material.</em></p>",
     ].join(""),
@@ -184,12 +184,12 @@ const SPECS = {
     fileNames: ["Czech_CCE_Residence_Citizenship_Anki_Deck.apkg"],
   },
   "polish-a2-certyfikat-anki-deck": {
-    name: "Polish A2 Certyfikat Residence Citizenship Anki Deck — 1500 Flashcards",
+    name: "Polish A2 Certyfikat Residence Citizenship Anki Deck — 1491 Flashcards",
     summary:
-      "1,500 Polish cards for Certyfikat języka polskiego A2 and residence or citizenship language prep.",
+      "1,491 Polish cards for Certyfikat języka polskiego A2 and residence or citizenship language prep.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — Polish Anki deck for <strong>Certyfikat języka polskiego</strong> A2 and residence or citizenship language prep.</p>",
-      "<p><strong>1,500</strong> high-frequency Polish cards with audio and practical example sentences for everyday life in Poland — language vocabulary only, not Polish citizenship civics.</p>",
+      "<p><strong>1,491</strong> high-frequency Polish cards with audio and practical example sentences for everyday life in Poland — language vocabulary only, not Polish citizenship civics.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official Certyfikat / state exam material.</em></p>",
     ].join(""),
@@ -198,12 +198,12 @@ const SPECS = {
     fileNames: ["Polish_A2_Certyfikat_Residence_Citizenship_Anki_Deck.apkg"],
   },
   "polish-a2-for-ukrainian-speakers-anki-deck": {
-    name: "Polish A2 for Ukrainian Speakers Anki Deck — 1500 Flashcards",
+    name: "Polish A2 for Ukrainian Speakers Anki Deck — 1491 Flashcards",
     summary:
-      "1,500 Polish A2 cards for Certyfikat and residence language — with Ukrainian support on every card.",
+      "1,491 Polish A2 cards for Certyfikat and residence language — with Ukrainian support on every card.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — Polish Anki deck for <strong>Ukrainian speakers</strong> preparing <strong>Certyfikat języka polskiego A2</strong> and residence or citizenship language.</p>",
-      "<p><strong>1,500</strong> high-frequency Polish cards with Ukrainian glosses, bilingual examples, native Polish audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p><strong>1,491</strong> high-frequency Polish cards with Ukrainian glosses, bilingual examples, native Polish audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p>Not Polish citizenship civics (wiedza o Polsce). Distinct from the English-gloss Polish Certyfikat deck.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official Certyfikat / state exam material.</em></p>",
@@ -265,7 +265,7 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_French_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-arabic-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2493 Flashcards",
+    name: "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2504 Flashcards",
     summary:
       "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Arabic support on every card.",
     descriptionHtml: [
@@ -281,7 +281,7 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Arabic_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-ukrainian-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2493 Flashcards",
+    name: "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2504 Flashcards",
     summary:
       "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Ukrainian support on every card.",
     descriptionHtml: [
@@ -297,7 +297,7 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Ukrainian_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-russian-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Russian Speakers Anki Deck — 2493 Flashcards",
+    name: "IELTS / TOEFL English for Russian Speakers Anki Deck — 2504 Flashcards",
     summary:
       "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Russian support on every card.",
     descriptionHtml: [
@@ -313,7 +313,7 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Russian_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-spanish-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2494 Flashcards",
+    name: "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2504 Flashcards",
     summary:
       "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Latin American Spanish support on every card.",
     descriptionHtml: [
@@ -329,12 +329,12 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Spanish_Speakers_LatAm_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-portuguese-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 2466 Flashcards",
+    name: "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 2504 Flashcards",
     summary:
-      "2,466 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Brazilian Portuguese support on every card.",
+      "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Brazilian Portuguese support on every card.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Brazilian Portuguese speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
-      "<p><strong>2,466</strong> high-frequency English cards with Brazilian Portuguese (PT-BR) glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p><strong>2,504</strong> high-frequency English cards with Brazilian Portuguese (PT-BR) glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material. Not a CIPLE European Portuguese deck.</em></p>",
     ].join(""),
@@ -345,12 +345,12 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Portuguese_Speakers_BR_Anki_Deck.apkg"],
   },
   "dele-a2-spanish-anki-deck": {
-    name: "DELE SIELE Spanish Anki Deck — 1500 Flashcards",
+    name: "DELE SIELE Spanish Anki Deck — 2026 Flashcards",
     summary:
-      "1,500 Spanish A2 vocabulary cards for DELE A2 and SIELE A2-style word knowledge — language only, not a CCSE bundle.",
+      "2,026 Spanish A2 vocabulary cards for DELE A2 and SIELE A2-style word knowledge — language only, not a CCSE bundle.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — Spanish Anki deck for <strong>DELE A2</strong> (Instituto Cervantes) and overlapping <strong>SIELE A2</strong>-style vocabulary.</p>",
-      "<p><strong>1,500</strong> high-frequency A2 cards with examples and media — a single language .apkg, not a DELE + CCSE nationality bundle.</p>",
+      "<p><strong>2,026</strong> high-frequency A2 cards with examples and media — a single language .apkg, not a DELE + CCSE nationality bundle.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki desktop, then sync to mobile via AnkiWeb.</p>",
       "<p><em>Independent study aid — not affiliated with Instituto Cervantes or SIELE.</em></p>",
     ].join(""),

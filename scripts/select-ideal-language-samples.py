@@ -330,6 +330,113 @@ BASIC_BACK = {
     "бути",
 }
 
+# L2-front decks (Czech, Swedish, …) — reject pronouns/aux on the FRONT
+CZECH_BASIC = {
+    "být",
+    "jsem",
+    "jsi",
+    "je",
+    "jsme",
+    "jste",
+    "jsou",
+    "já",
+    "ja",
+    "ty",
+    "on",
+    "ona",
+    "ono",
+    "my",
+    "vy",
+    "oni",
+    "ony",
+    "to",
+    "ten",
+    "ta",
+    "ti",
+    "tyto",
+    "tento",
+    "tato",
+    "se",
+    "si",
+    "a",
+    "i",
+    "ale",
+    "nebo",
+    "že",
+    "ze",
+    "ne",
+    "ano",
+    "v",
+    "na",
+    "do",
+    "z",
+    "s",
+    "k",
+    "o",
+    "u",
+    "po",
+    "pro",
+    "od",
+    "za",
+    "před",
+    "při",
+    "mít",
+    "mit",
+    "dělat",
+    "delat",
+    "chtít",
+    "chtit",
+    "moci",
+    "moct",
+    "muset",
+}
+
+CZECH_VISUAL = {
+    "univerzita",
+    "fakulta",
+    "škola",
+    "skola",
+    "student",
+    "učitel",
+    "ucitel",
+    "knihovna",
+    "zkouška",
+    "zkouska",
+    "pohovor",
+    "schůzka",
+    "schuzka",
+    "kancelář",
+    "kancelar",
+    "práce",
+    "prace",
+    "nádraží",
+    "nadrazi",
+    "vlak",
+    "letiště",
+    "letiste",
+    "nemocnice",
+    "lékárna",
+    "lekarna",
+    "trh",
+    "obchod",
+    "dům",
+    "dum",
+    "byt",
+    "restaurace",
+    "rodina",
+    "město",
+    "mesto",
+    "park",
+    "pláž",
+    "plaz",
+}
+
+CZECH_THEME = {
+    "education": {"univerzita", "fakulta", "škola", "skola", "student", "knihovna", "zkouška", "kurz", "třída", "trida"},
+    "work": {"pohovor", "schůzka", "schuzka", "kancelář", "kancelar", "práce", "prace", "konference", "kariéra", "kariera"},
+    "daily": {"nádraží", "nadrazi", "vlak", "letiště", "letiste", "nemocnice", "trh", "dům", "dum", "byt", "rodina", "město", "mesto"},
+}
+
 VISUAL = {
     "airport",
     "passport",
@@ -466,6 +573,22 @@ def load_crooked():
     return mod.crooked
 
 
+def headword_in_target(front: str, tgt: str) -> bool:
+    words = [front]
+    parts = front.split()
+    if len(parts) > 1:
+        words.append(parts[-1])
+    for word in words:
+        if re.search(rf"\b{re.escape(word)}\b", tgt, re.I):
+            return True
+        # Inflected L2 (Czech univerzita → univerzitu, Polish biura → biurze): stem prefix.
+        if len(word) >= 5:
+            stem = word[:-1]
+            if re.search(rf"\b{re.escape(stem)}", tgt, re.I):
+                return True
+    return False
+
+
 def split_example(ex: str) -> tuple[str, str]:
     parts = re.split(r"\s+[—–]\s+", (ex or "").strip(), maxsplit=1)
     if len(parts) < 2:
@@ -475,7 +598,7 @@ def split_example(ex: str) -> tuple[str, str]:
 
 def theme_of(front: str, tgt: str) -> str:
     blob = f"{front} {tgt}".lower()
-    for name, words in THEME.items():
+    for name, words in {**THEME, **{k: THEME.get(k, set()) | CZECH_THEME.get(k, set()) for k in ("education", "work", "daily")}}.items():
         if front in words or any(w in blob for w in words):
             return name
     return "other"
@@ -485,7 +608,7 @@ def score_row(i: int, r: dict, media: Path, crooked) -> dict | None:
     front = (r.get("front") or "").strip().lower()
     back = (r.get("back") or "").strip()
     ex = r.get("example") or ""
-    if not front or front in BASIC or len(front) < 3:
+    if not front or front in BASIC or front in CZECH_BASIC or len(front) < 3:
         return None
     if len(front.split()) > 2:
         return None
@@ -498,7 +621,7 @@ def score_row(i: int, r: dict, media: Path, crooked) -> dict | None:
     tgt, nat = split_example(ex)
     if not tgt or not nat:
         return None
-    if not re.search(rf"\b{re.escape(front)}\b", tgt, re.I):
+    if not headword_in_target(front, tgt):
         return None
     if len(nat) < 12 or len(tgt) < 12:
         return None
@@ -514,7 +637,7 @@ def score_row(i: int, r: dict, media: Path, crooked) -> dict | None:
 
     score = 0.0
     score += min(isize / 5000.0, 8.0)
-    if front in VISUAL or any(w in tgt.lower() for w in VISUAL):
+    if front in VISUAL or front in CZECH_VISUAL or any(w in tgt.lower() for w in VISUAL | CZECH_VISUAL):
         score += 6
     if 80 <= i <= 900:
         score += 5

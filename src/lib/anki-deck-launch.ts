@@ -207,18 +207,18 @@ const ACSM_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
 /** Copy must match public/samples/luxembourg-vivre-ensemble-anki-deck-sample-{1,2,3}.webp. */
 const LUXEMBOURG_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
   {
-    question: "Quelle est la forme d'État du Grand-Duché de Luxembourg?",
-    answer: "(a) Monarchie constitutionnelle",
+    question: "Quelle est la forme d'État?",
+    answer: "Grand-Duché, monarchie constitutionnelle",
     imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-1.webp",
   },
   {
-    question: "Qui est le chef d'État du Grand-Duché de Luxembourg?",
-    answer: "(b) Le Grand-Duc",
+    question: "Qui est le chef d'État?",
+    answer: "Le Grand-Duc",
     imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-2.webp",
   },
   {
-    question: "Dans quelle ville siège le gouvernement luxembourgeois?",
-    answer: "(c) Luxembourg-Ville",
+    question: "Quelles sont les trois langues administratives?",
+    answer: "Luxembourgeois, français, allemand",
     imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-3.webp",
   },
 ];
@@ -226,18 +226,18 @@ const LUXEMBOURG_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
 /** Copy must match public/samples/belgium-flanders-mo-anki-deck-sample-{1,2,3}.webp. */
 const BELGIUM_FLANDERS_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
   {
-    question: "Wat is de hoofdstad van België volgens de Belgische grondwet?",
-    answer: "(a) Brussel",
+    question: "Hoeveel gewesten heeft België?",
+    answer: "Drie: Vlaanderen, Wallonië en het Brussels Hoofdstedelijk Gewest",
     imageUrl: "/samples/belgium-flanders-mo-anki-deck-sample-1.webp",
   },
   {
-    question: "Hoeveel gewesten telt België in totaal volgens de staatshervorming?",
-    answer: "(b) Drie gewesten",
+    question: "Wat is de officiële taal in Vlaanderen?",
+    answer: "Nederlands",
     imageUrl: "/samples/belgium-flanders-mo-anki-deck-sample-2.webp",
   },
   {
-    question: "Welke officiële taal wordt er gesproken in het gewest Vlaanderen?",
-    answer: "(c) Nederlands",
+    question: "Wie is het hoofd van de Vlaamse regering?",
+    answer: "De minister-president van Vlaanderen",
     imageUrl: "/samples/belgium-flanders-mo-anki-deck-sample-3.webp",
   },
 ];
@@ -449,11 +449,10 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
       .replace(/^A planned /i, "A focused "),
     directAnswer: buildDirectAnswer(deck, cardLabel, mockPath, apkgReady),
     lastUpdated:
-      deck.slug === "belgium-flanders-mo-anki-deck"
-        ? "2026-08-27"
-        : deck.slug === "luxembourg-vivre-ensemble-anki-deck"
-          ? "2026-08-14"
-          : deck.slug === "ace-cpt-anki-deck"
+      deck.slug === "belgium-flanders-mo-anki-deck" ||
+      deck.slug === "luxembourg-vivre-ensemble-anki-deck"
+        ? "2026-09-21"
+        : deck.slug === "ace-cpt-anki-deck"
             ? "2026-08-13"
             : "2026-08-06",
     facts: {

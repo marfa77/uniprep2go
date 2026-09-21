@@ -209,7 +209,7 @@ describe("blog guides", () => {
       "leben-in-deutschland-readiness-check",
     );
     expect(getBlogPostBySlug("leben-in-deutschland-test-english-preparation-guide")?.deckSlug).toBe(
-      "citizenship-naturalization-anki-bundle",
+      "leben-in-deutschland-anki-deck",
     );
     expect(getBlogPostBySlug("cdl-hazmat-endorsement-state-fingerprinting-background-check")?.mockSlug).toBe(
       "cdl-hazmat-readiness-check",
@@ -298,7 +298,7 @@ describe("blog guides", () => {
       "australian-citizenship-readiness-check",
     );
     expect(getBlogPostBySlug("australian-citizenship-test-our-common-bond-complete-guide")?.deckSlug).toBe(
-      "citizenship-naturalization-anki-bundle",
+      "australian-citizenship-anki-deck",
     );
     expect(getBlogPostBySlug("wallonie-citoyennete-francais-a2-parcours-integration")?.mockSlug).toBe(
       "belgium-wallonie-citoyennete-readiness-check",
@@ -350,7 +350,7 @@ describe("blog guides", () => {
       "leben-in-deutschland-readiness-check",
     );
     expect(getBlogPostBySlug("germany-einbuergerungstest-vs-leben-in-deutschland-difference")?.deckSlug).toBe(
-      "citizenship-naturalization-anki-bundle",
+      "leben-in-deutschland-anki-deck",
     );
     expect(getBlogPostBySlug("france-naturalization-2026-civic-exam-b2-language-test")?.mockSlug).toBe(
       "naturalisation-francaise-readiness-check",
@@ -366,25 +366,25 @@ describe("blog guides", () => {
       "life-in-the-uk-readiness-check",
     );
     expect(getBlogPostBySlug("life-in-the-uk-test-why-one-in-three-fail")?.deckSlug).toBe(
-      "citizenship-naturalization-anki-bundle",
+      "life-in-the-uk-anki-deck",
     );
     expect(getBlogPostBySlug("us-naturalization-civics-test-100-questions-only-10")?.mockSlug).toBe(
       "us-citizenship-readiness-check",
     );
     expect(getBlogPostBySlug("us-naturalization-civics-test-100-questions-only-10")?.deckSlug).toBe(
-      "citizenship-naturalization-anki-bundle",
+      "us-citizenship-anki-deck",
     );
     expect(getBlogPostBySlug("canada-citizenship-test-20-questions-630-dollars")?.mockSlug).toBe(
       "canadian-citizenship-readiness-check",
     );
     expect(getBlogPostBySlug("canada-citizenship-test-20-questions-630-dollars")?.deckSlug).toBe(
-      "citizenship-naturalization-anki-bundle",
+      "canadian-citizenship-anki-deck",
     );
   });
 
   it("exposes reverse lookups from mock and deck slugs to guides", () => {
     expect(getBlogPostsForMockSlug("leben-in-deutschland-readiness-check")).toHaveLength(2);
-    expect(getBlogPostsForDeckSlug("citizenship-naturalization-anki-bundle").map((p) => p.slug)).toEqual(
+    expect(getBlogPostsForDeckSlug("leben-in-deutschland-anki-deck").map((p) => p.slug)).toEqual(
       expect.arrayContaining([
         "leben-in-deutschland-test-english-preparation-guide",
         "germany-einbuergerungstest-vs-leben-in-deutschland-difference",

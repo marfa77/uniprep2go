@@ -120,6 +120,10 @@ function resolveApkg(folder, baseName) {
 function buildDescription() {
   const list = DECKS.map((d) => `<li><strong>${d.label}</strong></li>`).join("");
   return [
+    "<h3>Sample cards</h3>",
+    "<p><strong>Deutschland ist ein Rechtsstaat. Was ist damit gemeint?</strong><br>Alle Einwohner und der Staat müssen sich an die Gesetze halten.</p>",
+    "<p><strong>Quelle est la devise de la République française?</strong><br>Liberté / Égalité / Fraternité</p>",
+    "<p><strong>What are the fundamental principles of British life?</strong><br>Democracy, the rule of law, individual liberty, and tolerance.</p>",
     "<p><strong>Your citizenship interview is not the day to blank on “what is the supreme law of the land?”</strong></p>",
     "<p>Free blog quizzes scatter facts across six countries. This bundle puts <strong>1,225 civics flashcards</strong> into Anki — so you drill rights, institutions, values, and test-style questions with spaced repetition until they stick.</p>",
     "<p><strong>PixID Studio</strong> — one <strong>$20</strong> download, <strong>six separate .apkg files</strong>. Study only the country you need. Keep the rest for family members on other pathways.</p>",

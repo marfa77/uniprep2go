@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import civicCatalog from "@/data/gumroad/civic-anki-decks.json";
 import sitemap from "../app/sitemap";
 import robots from "../app/robots";
 import { availableDecks, catalogPlannedDecks } from "./decks";
@@ -55,13 +56,13 @@ describe("intent pages visibility", () => {
 
   it("lists every available language deck on the language exam intent page", () => {
     const page = intentPages.find((item) => item.slug === "anki-decks-for-language-exams");
+    const civicSlugs = new Set(Object.keys(civicCatalog.products));
     const languageDeckSlugs = availableDecks
-      .filter((deck) => deck.category === "language")
+      .filter((deck) => deck.category === "language" && !civicSlugs.has(deck.slug))
       .map((deck) => deck.slug);
 
     expect(page).toBeDefined();
     expect(page?.deckSlugs).toEqual(languageDeckSlugs);
-    expect(page?.deckSlugs).toHaveLength(24);
     expect(page?.directAnswer).toContain("CIPLE CAPLE Portuguese");
     expect(page?.directAnswer).toContain("German Goethe telc ÖSD DTZ");
     expect(page?.directAnswer).toContain("Norwegian Norskprøve");
@@ -86,8 +87,8 @@ describe("intent pages visibility", () => {
     expect(page?.directAnswer).toContain("Polish A2 for Ukrainian Speakers");
     expect(page?.directAnswer).toContain("DELF Prim printable");
     expect(page?.directAnswer).toContain("ages 7–12");
-    expect(page?.directAnswer).toContain("Citizenship & Naturalization Anki Bundle");
-    expect(page?.directAnswer).toContain("Swiss Citizenship Anki Bundle");
+    expect(page?.directAnswer).toContain("$9 country Anki decks");
+    expect(page?.directAnswer).toContain("Leben in Deutschland");
     expect(page?.directAnswer).toContain("Gumroad");
   });
 

@@ -133,11 +133,11 @@ function defaultKeywords(deck: SeoDeck, mock?: MockExamConfig): string[] {
 
 const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   "ciple-a2-european-portuguese-anki-deck": {
-    title: "CIPLE CAPLE Portuguese Citizenship Exam Prep | 2000 Cards",
-    headline: "CIPLE CAPLE Portuguese Citizenship Exam Prep — 2000 Flashcards",
+    title: "CIPLE CAPLE Portuguese Citizenship Exam Prep | 2026 Cards",
+    headline: "CIPLE CAPLE Portuguese Citizenship Exam Prep — 2026 Flashcards",
     studyLabel: "CIPLE CAPLE Portuguese citizenship exam prep",
     description:
-      "CIPLE / CAPLE A2 European Portuguese Anki deck with 2000 flashcards for Portuguese residency and citizenship (nacionalidade). PT-PT audio and examples. Independent study aid — not official CAPLE material.",
+      "CIPLE / CAPLE A2 European Portuguese Anki deck with 2026 flashcards for Portuguese residency and citizenship (nacionalidade). PT-PT audio and examples. Independent study aid — not official CAPLE material.",
     keywords: [
       "ciple anki deck",
       "caple a2 flashcards",
@@ -150,11 +150,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Applicants using CIPLE A2 for Portuguese residency or citizenship drill European Portuguese vocabulary daily, then practice speaking and official-style exam tasks separately.",
   },
   "dutch-a2-inburgering-anki-deck": {
-    title: "Dutch Inburgering NT2 A2 Anki Deck | 2000 Cards",
-    headline: "Dutch Inburgering NT2 A2 Prep — 2000 Flashcards",
+    title: "Dutch Inburgering NT2 A2 Anki Deck | 1897 Cards",
+    headline: "Dutch Inburgering NT2 A2 Prep — 1897 Flashcards",
     studyLabel: "Dutch Inburgering NT2 exam prep",
     description:
-      "Dutch A2 Anki deck with 2000 flashcards for Inburgering, Staatsexamen NT2 A2 vocabulary, residency, and naturalisatie. Audio and bilingual examples. Independent study aid — not official DUO material.",
+      "Dutch A2 Anki deck with 1897 flashcards for Inburgering, Staatsexamen NT2 A2 vocabulary, residency, and naturalisatie. Audio and bilingual examples. Independent study aid — not official DUO material.",
     keywords: [
       "inburgering anki",
       "nt2 a2 flashcards",
@@ -166,11 +166,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Migrants preparing Inburgering or NT2 A2 use one high-frequency Dutch vocabulary bank for civic integration and naturalisatie language requirements.",
   },
   "german-a2-anki-deck": {
-    title: "German Goethe telc ÖSD DTZ Exam Prep | 2000 Cards",
-    headline: "German Goethe telc ÖSD DTZ Exam Prep — 2000 Flashcards",
+    title: "German Goethe telc ÖSD DTZ Exam Prep | 2026 Cards",
+    headline: "German Goethe telc ÖSD DTZ Exam Prep — 2026 Flashcards",
     studyLabel: "German Goethe telc ÖSD DTZ exam prep",
     description:
-      "German Anki deck with 2000 flashcards for Goethe-Institut A2, telc Deutsch A2, ÖSD A2, and DTZ — plus shared lexicon for residence / Einbürgerung language and fide / Swiss residency German. Independent study aid — not official Goethe, telc, ÖSD, BAMF, or fide / SEM material.",
+      "German Anki deck with 2026 flashcards for Goethe-Institut A2, telc Deutsch A2, ÖSD A2, and DTZ — plus shared lexicon for residence / Einbürgerung language and fide / Swiss residency German. Independent study aid — not official Goethe, telc, ÖSD, BAMF, or fide / SEM material.",
     keywords: [
       "goethe a2 anki",
       "telc a2 flashcards",
@@ -182,14 +182,14 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "swiss residency german vocabulary",
     ],
     intro:
-      "Learners preparing Goethe A2, telc A2, ÖSD A2, DTZ, or high-frequency German for residence / Einbürgerung language and fide / Swiss residency share one A2–B1 vocabulary bank — then practice each exam's format separately. For Leben in Deutschland civics, use the Citizenship & Naturalization Anki Bundle; for Swiss civics, use the Swiss Citizenship Anki Bundle.",
+      "Learners preparing Goethe A2, telc A2, ÖSD A2, DTZ, or high-frequency German for residence / Einbürgerung language and fide / Swiss residency share one A2–B1 vocabulary bank — then practice each exam's format separately. For Leben in Deutschland civics, buy the $9 Leben in Deutschland Anki deck; for Swiss civics, buy the $9 Einbürgerung Schweiz Anki deck.",
   },
   "celi-b1-italian-anki-deck": {
-    title: "CELI CILS PLIDA Italian Anki Deck | 1500 Cards",
-    headline: "CELI CILS PLIDA Italian Prep — 1500 Flashcards",
+    title: "CELI CILS PLIDA Italian Anki Deck | 2026 Cards",
+    headline: "CELI CILS PLIDA Italian Prep — 2026 Flashcards",
     studyLabel: "CELI CILS PLIDA Italian exam prep",
     description:
-      "Italian B1 Anki deck with 1,500 flashcards for CELI, CILS, and PLIDA — including vocabulary overlap for permesso di soggiorno and cittadinanza language pathways. Independent study aid — not official exam material.",
+      "Italian B1 Anki deck with 2,026 flashcards for CELI, CILS, and PLIDA — including vocabulary overlap for permesso di soggiorno and cittadinanza language pathways. Independent study aid — not official exam material.",
     keywords: [
       "celi b1 anki",
       "cils b1 flashcards",
@@ -221,11 +221,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Prøve i Dansk PD2 / PD3 learners (≈ B1 / B1+) and residence or citizenship applicants drill everyday Danish vocabulary on a daily Anki schedule — this is not a PD1/A2 tourist pack or the free LITE 100.",
   },
   "norwegian-a2-norskprove-anki-deck": {
-    title: "Norwegian Norskprøve Residence Citizenship Anki | 1500 Cards",
-    headline: "Norwegian Norskprøve Residence Citizenship Prep — 1500 Flashcards",
+    title: "Norwegian Norskprøve Residence Citizenship Anki | 1487 Cards",
+    headline: "Norwegian Norskprøve Residence Citizenship Prep — 1487 Flashcards",
     studyLabel: "Norwegian Norskprøve exam prep",
     description:
-      "Norwegian Bokmål Anki deck with 1500 flashcards for Norskprøve A2 and residence or citizenship language prep. Independent study aid — not official Norskprøve material.",
+      "Norwegian Bokmål Anki deck with 1487 flashcards for Norskprøve A2 and residence or citizenship language prep. Independent study aid — not official Norskprøve material.",
     keywords: [
       "norskprove anki",
       "norskprøve flashcards",
@@ -285,11 +285,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "CCE learners preparing residence or citizenship language requirements use daily Czech vocabulary recall alongside speaking practice.",
   },
   "polish-a2-certyfikat-anki-deck": {
-    title: "Polish A2 Certyfikat Anki Deck | 1500 Cards",
-    headline: "Polish A2 Certyfikat Prep — 1500 Flashcards",
+    title: "Polish A2 Certyfikat Anki Deck | 1491 Cards",
+    headline: "Polish A2 Certyfikat Prep — 1491 Flashcards",
     studyLabel: "Polish Certyfikat A2 exam prep",
     description:
-      "Polish Anki deck with 1500 flashcards for Certyfikat języka polskiego A2 and residence or citizenship language prep. Independent study aid — not official Certyfikat material.",
+      "Polish Anki deck with 1491 flashcards for Certyfikat języka polskiego A2 and residence or citizenship language prep. Independent study aid — not official Certyfikat material.",
     keywords: [
       "polish certyfikat anki",
       "certyfikat jezyka polskiego anki",
@@ -301,11 +301,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Certyfikat języka polskiego A2 learners preparing residence or citizenship language requirements use daily Polish vocabulary recall — not a Polish civics deck.",
   },
   "polish-a2-for-ukrainian-speakers-anki-deck": {
-    title: "Polish A2 for Ukrainian Speakers Anki | 1500 Cards",
-    headline: "Polish A2 for Ukrainian Speakers — 1500 Flashcards",
+    title: "Polish A2 for Ukrainian Speakers Anki | 1491 Cards",
+    headline: "Polish A2 for Ukrainian Speakers — 1491 Flashcards",
     studyLabel: "Polish A2 for Ukrainian speakers exam prep",
     description:
-      "Polish Anki deck with 1500 flashcards for Ukrainian speakers preparing Certyfikat języka polskiego A2 and residence language — Ukrainian glosses, bilingual examples, and native Polish audio. Independent study aid — not official Certyfikat material.",
+      "Polish Anki deck with 1491 flashcards for Ukrainian speakers preparing Certyfikat języka polskiego A2 and residence language — Ukrainian glosses, bilingual examples, and native Polish audio. Independent study aid — not official Certyfikat material.",
     keywords: [
       "polish for ukrainian speakers anki",
       "польська для українців anki",
@@ -365,11 +365,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "French-speaking IELTS and TOEFL candidates use bilingual English vocabulary recall with French support before timed exam practice.",
   },
   "ielts-toefl-english-for-arabic-speakers-anki-deck": {
-    title: "IELTS / TOEFL English for Arabic Speakers Anki | 2493 Cards",
-    headline: "IELTS / TOEFL English for Arabic Speakers — 2493 Flashcards",
+    title: "IELTS / TOEFL English for Arabic Speakers Anki | 2504 Cards",
+    headline: "IELTS / TOEFL English for Arabic Speakers — 2504 Flashcards",
     studyLabel: "IELTS TOEFL English for Arabic speakers",
     description:
-      "English Anki deck with 2493 flashcards for Arabic speakers preparing IELTS, TOEFL, Cambridge, and PTE — Arabic glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
+      "English Anki deck with 2504 flashcards for Arabic speakers preparing IELTS, TOEFL, Cambridge, and PTE — Arabic glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
     keywords: [
       "english for arabic speakers anki",
       "ielts vocabulary arabic speakers",
@@ -382,11 +382,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "ielts-toefl-english-for-ukrainian-speakers-anki-deck": {
-    title: "IELTS / TOEFL English for Ukrainian Speakers Anki | 2493 Cards",
-    headline: "IELTS / TOEFL English for Ukrainian Speakers — 2493 Flashcards",
+    title: "IELTS / TOEFL English for Ukrainian Speakers Anki | 2504 Cards",
+    headline: "IELTS / TOEFL English for Ukrainian Speakers — 2504 Flashcards",
     studyLabel: "IELTS TOEFL English for Ukrainian speakers",
     description:
-      "English Anki deck with 2493 flashcards for Ukrainian speakers preparing IELTS, TOEFL, Cambridge, and PTE — Ukrainian glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
+      "English Anki deck with 2504 flashcards for Ukrainian speakers preparing IELTS, TOEFL, Cambridge, and PTE — Ukrainian glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
     keywords: [
       "english for ukrainian speakers anki",
       "ielts vocabulary ukrainian speakers",
@@ -399,11 +399,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "ielts-toefl-english-for-russian-speakers-anki-deck": {
-    title: "IELTS Anki Russians 2026 | 2493 · RU Gloss · Not Tourist",
-    headline: "IELTS / TOEFL English for Russian Speakers — 2493 Cards",
+    title: "IELTS Anki Russians 2026 | 2504 · RU Gloss · Not Tourist",
+    headline: "IELTS / TOEFL English for Russian Speakers — 2504 Cards",
     studyLabel: "IELTS TOEFL English Anki for Russian speakers",
     description:
-      "Russians: 2,493 IELTS/TOEFL Anki cards with Russian glosses + актуально≠actual traps. Not AnkiWeb EVU dumps, not tourist EN–RU lists. Gumroad $26.",
+      "Russians: 2,504 IELTS/TOEFL Anki cards with Russian glosses + актуально≠actual traps. Not AnkiWeb EVU dumps, not tourist EN–RU lists. Gumroad $26.",
     keywords: [
       "english for russian speakers anki",
       "ielts vocabulary russian speakers",
@@ -414,15 +414,15 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "anki ielts русские 2026",
     ],
     intro:
-      "Russian speakers targeting IELTS, TOEFL iBT, Cambridge, or PTE drill 2,493 exam-frequency English words with Russian glosses and native audio — English-first recall so cognate traps (актуально/actual, магазин/magazine) stop costing Reading points. Separate from free AnkiWeb EVU packs and the PT-BR or LatAm-Spanish English sibling decks.",
+      "Russian speakers targeting IELTS, TOEFL iBT, Cambridge, or PTE drill 2,504 exam-frequency English words with Russian glosses and native audio — English-first recall so cognate traps (актуально/actual, магазин/magazine) stop costing Reading points. Separate from free AnkiWeb EVU packs and the PT-BR or LatAm-Spanish English sibling decks.",
   },
 
   "ielts-toefl-english-for-spanish-speakers-anki-deck": {
-    title: "IELTS / TOEFL English for LatAm Spanish Speakers Anki | 2494 Cards",
-    headline: "IELTS / TOEFL English for Spanish Speakers (LatAm) — 2494 Flashcards",
+    title: "IELTS / TOEFL English for LatAm Spanish Speakers Anki | 2504 Cards",
+    headline: "IELTS / TOEFL English for Spanish Speakers (LatAm) — 2504 Flashcards",
     studyLabel: "IELTS TOEFL English for Spanish speakers LatAm",
     description:
-      "Free-preview path to 2494 English Anki cards for Latin American Spanish speakers: LatAm glosses, bilingual examples, native English audio — built for IELTS/TOEFL/Cambridge/PTE vocabulary, not tourist phrases or DELE Spanish. Independent study aid.",
+      "Free-preview path to 2504 English Anki cards for Latin American Spanish speakers: LatAm glosses, bilingual examples, native English audio — built for IELTS/TOEFL/Cambridge/PTE vocabulary, not tourist phrases or DELE Spanish. Independent study aid.",
     keywords: [
       "english for spanish speakers anki",
       "ielts vocabulary spanish speakers",
@@ -469,11 +469,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "luxembourg-vivre-ensemble-anki-deck": {
-    title: "Luxembourg Vivre ensemble Anki | 120 French Civics Cards + Mock",
-    headline: "Luxembourg Vivre ensemble Civics — 120 French Flashcards",
+    title: "Luxembourg Vivre ensemble Anki | 165 French Civics Cards + Mock",
+    headline: "Luxembourg Vivre ensemble Civics — 165 French Flashcards",
     studyLabel: "Luxembourg Vivre ensemble Anki",
     description:
-      "Luxembourg nationality civics Anki: 120 French MCQ cards on institutions, rights, history/EU, and daily life — plus a free 60-question Vivre ensemble readiness check. Not Sproochentest language drills. Independent — not Guichet.lu material.",
+      "Luxembourg nationality civics Anki: 165 French cards on institutions, rights, history/EU, and daily life — plus a free 60-question Vivre ensemble readiness check. Not Sproochentest language drills. Independent — not Guichet.lu material.",
     keywords: [
       "luxembourg vivre ensemble anki",
       "luxembourg citizenship flashcards",
@@ -485,11 +485,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "ielts-toefl-english-for-portuguese-speakers-anki-deck": {
-    title: "IELTS Anki Brazilians 2026 | 2466 · PT-BR · Not CIPLE",
-    headline: "IELTS / TOEFL English for Brazilians (PT-BR) — 2466 Cards · Not CIPLE",
+    title: "IELTS Anki Brazilians 2026 | 2504 · PT-BR · Not CIPLE",
+    headline: "IELTS / TOEFL English for Brazilians (PT-BR) — 2504 Cards · Not CIPLE",
     studyLabel: "IELTS TOEFL English Anki for Brazilians (PT-BR glosses)",
     description:
-      "Brazilians: 2,466 IELTS/TOEFL Anki cards with PT-BR glosses + atual≠actual traps. Not CIPLE, not Celpe-Bras, not the Spanish-gloss sibling. Gumroad $26.",
+      "Brazilians: 2,504 IELTS/TOEFL Anki cards with PT-BR glosses + atual≠actual traps. Not CIPLE, not Celpe-Bras, not the Spanish-gloss sibling. Gumroad $26.",
     keywords: [
       "english for brazilian portuguese speakers anki",
       "ielts vocabulary for brazilians",
@@ -500,7 +500,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "anki ielts brasil 2026",
     ],
     intro:
-      "Brazilians targeting IELTS, TOEFL iBT, Cambridge, or PTE drill 2,466 exam-frequency English words with PT-BR glosses and native audio — English-first recall so cognate traps (atual/actual, pretender/pretend) stop costing Reading points. Separate from CIPLE European Portuguese, Celpe-Bras, and the LatAm-Spanish or Russian English sibling decks.",
+      "Brazilians targeting IELTS, TOEFL iBT, Cambridge, or PTE drill 2,504 exam-frequency English words with PT-BR glosses and native audio — English-first recall so cognate traps (atual/actual, pretender/pretend) stop costing Reading points. Separate from CIPLE European Portuguese, Celpe-Bras, and the LatAm-Spanish or Russian English sibling decks.",
   },
 
   "delf-prim-printable-french-flashcards": {
@@ -538,11 +538,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "U.S. applicants: take the free citizenship readiness check, then lock the 100 civics questions with Anki. Same $20 bundle also includes DE/FR/UK/CA/AU decks if you need another country later.",
   },
   "dele-a2-spanish-anki-deck": {
-    title: "DELE SIELE Spanish Anki Deck | 1500 Flashcards",
-    headline: "DELE SIELE Spanish Exam Prep — 1500 Flashcards",
+    title: "DELE SIELE Spanish Anki Deck | 2026 Flashcards",
+    headline: "DELE SIELE Spanish Exam Prep — 2026 Flashcards",
     studyLabel: "DELE SIELE Spanish exam prep",
     description:
-      "Spanish Anki deck with 1500 A2 vocabulary flashcards for DELE A2 and SIELE A2-style word knowledge. Single .apkg — language only, not a CCSE civics bundle. Independent study aid — not Instituto Cervantes or SIELE material.",
+      "Spanish Anki deck with 2026 A2 vocabulary flashcards for DELE A2 and SIELE A2-style word knowledge. Single .apkg — language only, not a CCSE civics bundle. Independent study aid — not Instituto Cervantes or SIELE material.",
     keywords: [
       "dele a2 anki",
       "siele a2 vocabulary",
@@ -558,7 +558,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "DELE + CCSE Compact Anki — 60 Cards + Free CCSE Mock",
     studyLabel: "DELE CCSE Spanish nationality exam prep",
     description:
-      "Live $26 compact DELE A2 + CCSE Anki (60 MCQ cards) plus a free 60-question CCSE timed diagnostic. Official Cervantes CCSE is 25Q / 45 min / 60%. Companion only — for thicker DELE vocab use the 1500-card DELE SIELE deck. Not Instituto Cervantes material.",
+      "Live $26 compact DELE A2 + CCSE Anki (60 MCQ cards) plus a free 60-question CCSE timed diagnostic. Official Cervantes CCSE is 25Q / 45 min / 60%. Companion only — for thicker DELE vocab use the 2026-card DELE SIELE deck. Not Instituto Cervantes material.",
     keywords: [
       "dele a2 anki",
       "ccse anki deck",
@@ -567,14 +567,14 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "dele ccse bundle",
     ],
     intro:
-      "A compact 60-card DELE-adjacent + CCSE civics .apkg for nationality applicants who want a light language-and-civics drill — not a full Cervantes substitute. Official CCSE is 25 questions / 45 minutes / 60%. Take the free 60-question CCSE readiness check first; use the standalone 1500-card DELE SIELE deck when you need thicker vocabulary.",
+      "A compact 60-card DELE-adjacent + CCSE civics .apkg for nationality applicants who want a light language-and-civics drill — not a full Cervantes substitute. Official CCSE is 25 questions / 45 minutes / 60%. Take the free 60-question CCSE readiness check first; use the standalone 2026-card DELE SIELE deck when you need thicker vocabulary.",
   },
   "swiss-citizenship-anki-deck": {
-    title: "Swiss Citizenship Anki Bundle | DE FR IT · 618 Cards",
-    headline: "Swiss Citizenship Anki Bundle — DE / FR / IT · 618 Cards",
+    title: "Swiss Citizenship Anki Bundle | DE FR IT · 621 Cards",
+    headline: "Swiss Citizenship Anki Bundle — DE / FR / IT · 621 Cards",
     studyLabel: "Swiss citizenship Staatskunde exam prep",
     description:
-      "Swiss citizenship Anki bundle: 618 federal Staatskunde flashcards in three .apkg decks (German, French, Italian). Free DE / FR / IT readiness checks funnel into this $12 Gumroad download. Independent study aid — not SEM material.",
+      "Swiss citizenship Anki bundle: 621 federal Staatskunde flashcards in three .apkg decks (German, French, Italian). Free DE / FR / IT readiness checks funnel into this $12 Gumroad download. Independent study aid — not SEM material.",
     keywords: [
       "swiss citizenship anki",
       "einbürgerung anki",
@@ -587,10 +587,10 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
   "czech-citizenship-anki-deck": {
     title: "Czech Citizenship Anki Deck | Zkouška z Reálií",
-    headline: "Czech Reálie Prep — Planned Anki Deck",
+    headline: "Czech Reálie Prep — 169 Cards · $9",
     studyLabel: "Czech zkouška z reálií prep",
     description:
-      "Planned Anki for Czech citizenship reálie. Official exam is 30Q/30min/60% (NPI pool); free UniPrep2Go check is a longer diagnostic. Waitlist — not MV ČR material. Permanent residence usually needs language, not this deck.",
+      "Czech citizenship reálie Anki: 169 cards for $9. Official exam is 30Q/30min/60% (NPI pool); free UniPrep2Go check is a longer diagnostic. Not MV ČR material. Permanent residence usually needs language, not this deck.",
     keywords: [
       "czech citizenship anki",
       "občanství anki",
@@ -603,7 +603,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
   "polish-citizenship-anki-deck": {
     title: "Polish Citizenship Anki Deck | Proposed Wiedza o Polsce",
-    headline: "Polish Citizenship Civics — Planned Anki Deck",
+    headline: "Polish Citizenship Civics — 170 Cards · $9",
     studyLabel: "Proposed Polish civics / PaF-adjacent prep",
     description:
       "Planned Anki deck for proposed Polish knowledge-of-Poland themes. No official citizenship civics exam is required today (PaF B1 is the live hurdle). Free readiness check + waitlist. Independent — not government material.",
@@ -619,11 +619,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "delf-b2-french-anki-deck": {
-    title: "DELF DALF TCF TEF French Anki Deck | 2000+ Flashcards",
-    headline: "DELF DALF TCF TEF French Exam Prep — 2000+ Flashcards",
+    title: "DELF DALF TCF TEF French Anki Deck | 2026 Flashcards",
+    headline: "DELF DALF TCF TEF French Exam Prep — 2026 Flashcards",
     studyLabel: "DELF DALF TCF TEF French exam prep",
     description:
-      "French Anki deck with 2000+ flashcards for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, and TCF général — plus shared lexicon for fide / Swiss residency French. Native audio and examples. Independent study aid — not official France Éducation international, IRCC, or fide / SEM material.",
+      "French Anki deck with 2026 flashcards for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, and TCF général — plus shared lexicon for fide / Swiss residency French. Native audio and examples. Independent study aid — not official France Éducation international, IRCC, or fide / SEM material.",
     keywords: [
       "delf anki deck",
       "dalf anki deck",
@@ -638,7 +638,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "tef canada quebec anki",
     ],
     intro:
-      "Candidates preparing DELF / DALF diplomas, TCF Canada or TEF Canada for Canadian immigration, TCF ANF for French naturalization, TCF général for French universities, or high-frequency French for fide / Swiss residency language prep use one shared vocabulary bank — then practice each exam's format separately. For Swiss civics, use the Swiss Citizenship Anki Bundle.",
+      "Candidates preparing DELF / DALF diplomas, TCF Canada or TEF Canada for Canadian immigration, TCF ANF for French naturalization, TCF général for French universities, or high-frequency French for fide / Swiss residency language prep use one shared vocabulary bank — then practice each exam's format separately. For Swiss civics, buy the $9 Naturalisation suisse Anki deck.",
     audience:
       "DELF / DALF diploma candidates, Canada immigration applicants (TCF Canada / TEF Canada), French naturalization (TCF ANF), French university applicants (TCF général), and fide / Swiss residency French language learners.",
   },

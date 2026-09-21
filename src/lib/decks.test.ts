@@ -138,11 +138,26 @@ describe("deck catalog", () => {
     const expectedLanguageDecks = [
       ...expectedAnkiLanguageDecks,
       "delf-prim-printable-french-flashcards",
-      "citizenship-naturalization-anki-bundle",
-      "swiss-citizenship-anki-deck",
       "luxembourg-vivre-ensemble-anki-deck",
       "belgium-flanders-mo-anki-deck",
       "dele-a2-ccse-spanish-citizenship-bundle",
+      "leben-in-deutschland-anki-deck",
+      "denmark-indfoedsretsproeven-anki-deck",
+      "ccse-espana-anki-deck",
+      "naturalisation-francaise-anki-deck",
+      "norway-statsborgerproven-anki-deck",
+      "einburgerung-schweiz-anki-deck",
+      "polish-citizenship-anki-deck",
+      "sweden-medborgarskapsprov-anki-deck",
+      "canadian-citizenship-anki-deck",
+      "czech-citizenship-anki-deck",
+      "life-in-the-uk-anki-deck",
+      "belgium-wallonie-citoyennete-anki-deck",
+      "portugal-nacionalidade-anki-deck",
+      "australian-citizenship-anki-deck",
+      "naturalisation-suisse-anki-deck",
+      "naturalizzazione-svizzera-anki-deck",
+      "us-citizenship-anki-deck",
     ];
 
     const languageDecks = availableDecks.filter((deck) => deck.category === "language");
@@ -184,17 +199,12 @@ describe("deck catalog", () => {
     expect(primDeck?.sampleCards).toHaveLength(4);
 
     const citizenshipBundle = getDeckBySlug("citizenship-naturalization-anki-bundle");
-    expect(citizenshipBundle).toMatchObject({
-      status: "available",
-      format: ".apkg",
-      checkoutProvider: "Gumroad",
-      checkoutSeller: "PixID Studio",
-      checkoutUrl:
-        "https://pixidstudio.gumroad.com/l/citizenship-naturalization-anki-bundle?wanted=true",
-    });
-    expect(citizenshipBundle?.title).toContain("Citizenship & Naturalization");
-    expect(citizenshipBundle?.directAnswer).toContain("six Anki .apkg");
-    expect(citizenshipBundle?.sampleCards).toHaveLength(3);
+    expect(citizenshipBundle?.status).toBe("planned");
+    expect(citizenshipBundle?.checkoutUrl).toBeUndefined();
+    expect(citizenshipBundle?.title).toContain("retired hub");
+    expect(citizenshipBundle?.directAnswer).toContain("$9");
+    expect(getDeckBySlug("us-citizenship-anki-deck")?.status).toBe("available");
+    expect(getDeckBySlug("leben-in-deutschland-anki-deck")?.facts.cards).toBe("296");
 
     for (const slug of [
       "us-citizenship-test-prep2go-app",
@@ -209,35 +219,29 @@ describe("deck catalog", () => {
     }
 
     const swissBundle = getDeckBySlug("swiss-citizenship-anki-deck");
-    expect(swissBundle).toMatchObject({
-      status: "available",
-      format: ".apkg",
-      checkoutProvider: "Gumroad",
-      checkoutSeller: "PixID Studio",
-      checkoutUrl: "https://pixidstudio.gumroad.com/l/swiss-citizenship-anki-deck?wanted=true",
-    });
-    expect(swissBundle?.facts.cards).toBe("618");
-    expect(swissBundle?.directAnswer).toContain("three separate .apkg");
-    expect(swissBundle?.sampleCards).toHaveLength(3);
+    expect(swissBundle?.status).toBe("planned");
+    expect(swissBundle?.checkoutUrl).toBeUndefined();
+    expect(swissBundle?.title).toContain("retired hub");
+    expect(getDeckBySlug("einburgerung-schweiz-anki-deck")?.facts.cards).toBe("207");
 
     expect(getDeckBySlug("ciple-a2-european-portuguese-anki-deck")?.directAnswer).toContain(
       "nacionalidade portuguesa",
     );
     expect(getDeckBySlug("dutch-a2-inburgering-anki-deck")?.title).toContain("NT2");
-    expect(getDeckBySlug("dutch-a2-inburgering-anki-deck")?.facts.cards).toBe("2000");
+    expect(getDeckBySlug("dutch-a2-inburgering-anki-deck")?.facts.cards).toBe("1897");
     expect(getDeckBySlug("german-a2-anki-deck")?.title).toContain("Goethe telc ÖSD DTZ");
     expect(getDeckBySlug("celi-b1-italian-anki-deck")?.title).toContain("CELI CILS PLIDA");
-    expect(getDeckBySlug("celi-b1-italian-anki-deck")?.facts.cards).toBe("1500");
+    expect(getDeckBySlug("celi-b1-italian-anki-deck")?.facts.cards).toBe("2026");
     expect(getDeckBySlug("danish-a2-prove-i-dansk-anki-deck")?.title).toContain("PD2 PD3");
     expect(getDeckBySlug("norwegian-a2-norskprove-anki-deck")?.title).toContain("Norskprøve");
-    expect(getDeckBySlug("norwegian-a2-norskprove-anki-deck")?.facts.cards).toBe("1500");
+    expect(getDeckBySlug("norwegian-a2-norskprove-anki-deck")?.facts.cards).toBe("1487");
     expect(getDeckBySlug("swedish-a2-sfi-anki-deck")?.title).toContain("Swedish SFI");
     expect(getDeckBySlug("greek-a2-ellinomatheia-anki-deck")?.title).toContain("Ellinomatheia");
     expect(getDeckBySlug("czech-a2-cce-anki-deck")?.title).toContain("Czech CCE");
     expect(getDeckBySlug("polish-a2-certyfikat-anki-deck")?.title).toContain("Certyfikat");
-    expect(getDeckBySlug("polish-a2-certyfikat-anki-deck")?.facts.cards).toBe("1500");
+    expect(getDeckBySlug("polish-a2-certyfikat-anki-deck")?.facts.cards).toBe("1491");
     expect(getDeckBySlug("polish-a2-for-ukrainian-speakers-anki-deck")?.title).toContain("Ukrainian Speakers");
-    expect(getDeckBySlug("polish-a2-for-ukrainian-speakers-anki-deck")?.facts.cards).toBe("1500");
+    expect(getDeckBySlug("polish-a2-for-ukrainian-speakers-anki-deck")?.facts.cards).toBe("1491");
     expect(getDeckBySlug("german-a2-for-ukrainian-speakers-anki-deck")?.title).toContain("Ukrainian Speakers");
     expect(getDeckBySlug("german-a2-for-ukrainian-speakers-anki-deck")?.facts.cards).toBe("1926");
     expect(getDeckBySlug("german-a2-for-russian-speakers-anki-deck")?.title).toContain("Russian Speakers");
@@ -249,24 +253,24 @@ describe("deck catalog", () => {
     expect(enFr?.directAnswer).toContain("IELTS");
     const enAr = getDeckBySlug("ielts-toefl-english-for-arabic-speakers-anki-deck");
     expect(enAr?.title).toContain("IELTS / TOEFL English for Arabic Speakers");
-    expect(enAr?.facts.cards).toBe("2493");
+    expect(enAr?.facts.cards).toBe("2504");
     expect(enAr?.directAnswer).toContain("Arabic");
     const enUk = getDeckBySlug("ielts-toefl-english-for-ukrainian-speakers-anki-deck");
     expect(enUk?.title).toContain("IELTS / TOEFL English for Ukrainian Speakers");
-    expect(enUk?.facts.cards).toBe("2493");
+    expect(enUk?.facts.cards).toBe("2504");
     expect(enUk?.directAnswer).toContain("Ukrainian");
     const enRu = getDeckBySlug("ielts-toefl-english-for-russian-speakers-anki-deck");
     expect(enRu?.title).toContain("IELTS / TOEFL English for Russian Speakers");
-    expect(enRu?.facts.cards).toBe("2493");
+    expect(enRu?.facts.cards).toBe("2504");
     expect(enRu?.directAnswer).toContain("Russian");
     const enEs = getDeckBySlug("ielts-toefl-english-for-spanish-speakers-anki-deck");
     expect(enEs?.title).toContain("IELTS / TOEFL English for Spanish Speakers");
-    expect(enEs?.facts.cards).toBe("2494");
+    expect(enEs?.facts.cards).toBe("2504");
     expect(enEs?.directAnswer).toContain("Latin American Spanish");
     expect(enEs?.shortName).toContain("LatAm");
     const enPt = getDeckBySlug("ielts-toefl-english-for-portuguese-speakers-anki-deck");
     expect(enPt?.title).toContain("IELTS / TOEFL English for Brazilian Portuguese Speakers");
-    expect(enPt?.facts.cards).toBe("2466");
+    expect(enPt?.facts.cards).toBe("2504");
     expect(enPt?.directAnswer).toContain("Brazilian Portuguese");
     expect(enPt?.shortName).toContain("BR");
     const deleDeck = getDeckBySlug("dele-a2-spanish-anki-deck");
@@ -274,11 +278,11 @@ describe("deck catalog", () => {
     expect(deleDeck?.directAnswer).toContain("DELE A2");
     expect(deleDeck?.directAnswer).toContain("SIELE");
     expect(deleDeck?.directAnswer).toContain("not a DELE + CCSE nationality bundle");
-    expect(deleDeck?.facts.cards).toBe("1500");
+    expect(deleDeck?.facts.cards).toBe("2026");
     expect(deleDeck?.directAnswer).toContain("single Anki .apkg");
     expect(getCatalogDeckBySlug("dele-a2-ccse-spanish-citizenship-bundle")?.status).toBe("available");
-    expect(getDeckBySlug("czech-citizenship-anki-deck")?.status).toBe("planned");
-    expect(getDeckBySlug("polish-citizenship-anki-deck")?.status).toBe("planned");
+    expect(getDeckBySlug("czech-citizenship-anki-deck")?.status).toBe("available");
+    expect(getDeckBySlug("polish-citizenship-anki-deck")?.status).toBe("available");
     const frenchDeck = getDeckBySlug("delf-b2-french-anki-deck");
     expect(frenchDeck?.title).toContain("DELF DALF TCF TEF");
     expect(frenchDeck?.directAnswer).toContain("TCF Canada");
@@ -292,7 +296,7 @@ describe("deck catalog", () => {
     const germanDeck = getDeckBySlug("german-a2-anki-deck");
     expect(germanDeck?.directAnswer).toContain("Einbürgerung");
     expect(germanDeck?.directAnswer).toContain("fide");
-    expect(germanDeck?.faqs.some((faq) => faq.answer.includes("Swiss Citizenship Anki Bundle"))).toBe(
+    expect(germanDeck?.faqs.some((faq) => faq.answer.includes("Einbürgerung Schweiz"))).toBe(
       true,
     );
 
@@ -682,21 +686,24 @@ describe("deck catalog", () => {
 
   it("uses Prep2Go shop preview cards for curated language decks", () => {
     const expectations: Record<string, string[]> = {
-      "ciple-a2-european-portuguese-anki-deck": ["estar", "eu", "tu"],
-      "delf-b2-french-anki-deck": ["être", "je", "tu"],
-      "dutch-a2-inburgering-anki-deck": ["zijn", "ik", "jij"],
-      "german-a2-anki-deck": ["sein", "ich", "du"],
-      "celi-b1-italian-anki-deck": ["essere", "io", "tu"],
-      "danish-a2-prove-i-dansk-anki-deck": ["ansøgning", "bolig", "aftale"],
-      "norwegian-a2-norskprove-anki-deck": ["være", "jeg", "du"],
-      "swedish-a2-sfi-anki-deck": ["vara", "jag", "du"],
-      "greek-a2-ellinomatheia-anki-deck": ["είμαι", "εγώ", "εσύ"],
-      "czech-a2-cce-anki-deck": ["být", "já", "ty"],
-      "ielts-toefl-english-for-french-speakers-anki-deck": ["be", "i", "you"],
-      "ielts-toefl-english-for-arabic-speakers-anki-deck": ["be", "i", "you"],
-      "ielts-toefl-english-for-ukrainian-speakers-anki-deck": ["be", "i", "you"],
-      "ielts-toefl-english-for-russian-speakers-anki-deck": ["be", "i", "you"],
-      "ielts-toefl-english-for-spanish-speakers-anki-deck": ["be", "i", "you"],
+      "ciple-a2-european-portuguese-anki-deck": ["a universidade", "o escritório", "o mercado"],
+      "delf-b2-french-anki-deck": ["université", "bureau", "marché"],
+      "dutch-a2-inburgering-anki-deck": ["universiteit", "kantoor", "huis"],
+      "german-a2-anki-deck": ["universität", "büro", "markt"],
+      "dele-a2-spanish-anki-deck": ["universidad", "oficina", "mercado"],
+      "celi-b1-italian-anki-deck": ["università", "ufficio", "mercato"],
+      "danish-a2-prove-i-dansk-anki-deck": ["universitet", "kontor", "marked"],
+      "norwegian-a2-norskprove-anki-deck": ["universitet", "kontor", "marked"],
+      "swedish-a2-sfi-anki-deck": ["universitet", "kontor", "marknad"],
+      "greek-a2-ellinomatheia-anki-deck": ["πανεπιστήμιο", "γραφείο", "αγορά"],
+      "czech-a2-cce-anki-deck": ["univerzita", "kancelář", "trh"],
+      "polish-a2-certyfikat-anki-deck": ["uniwersytety", "biura", "rynek"],
+      "polish-a2-for-ukrainian-speakers-anki-deck": ["uniwersytety", "biura", "rynek"],
+      "ielts-toefl-english-for-french-speakers-anki-deck": ["university", "interview", "station"],
+      "ielts-toefl-english-for-arabic-speakers-anki-deck": ["university", "interview", "station"],
+      "ielts-toefl-english-for-ukrainian-speakers-anki-deck": ["university", "interview", "station"],
+      "ielts-toefl-english-for-russian-speakers-anki-deck": ["university", "interview", "station"],
+      "ielts-toefl-english-for-spanish-speakers-anki-deck": ["university", "interview", "station"],
       "ielts-toefl-english-for-portuguese-speakers-anki-deck": ["university", "interview", "station"],
     };
 
@@ -729,28 +736,24 @@ describe("deck catalog", () => {
       "property-casualty-insurance-exam-anki-deck":
         "Property & Casualty Insurance Exam Anki Deck — 400 High-Yield Flashcards",
       "ciple-a2-european-portuguese-anki-deck":
-        "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2000 Flashcards",
-      "delf-b2-french-anki-deck": "DELF DALF TCF TEF French Anki Deck — 2000+ Flashcards",
+        "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2026 Flashcards",
+      "delf-b2-french-anki-deck": "DELF DALF TCF TEF French Anki Deck — 2026 Flashcards",
       "delf-prim-printable-french-flashcards":
         "DELF Prim Printable French Flashcards — Ages 7–12 · 360 PDF Cards",
-      "citizenship-naturalization-anki-bundle":
-        "Citizenship & Naturalization Anki Bundle — 6 Countries · 1225 Cards",
-      "swiss-citizenship-anki-deck":
-        "Swiss Citizenship Anki Bundle — DE / FR / IT · 618 Cards",
-      "dele-a2-spanish-anki-deck": "DELE SIELE Spanish Anki Deck — 1500 Flashcards",
+            "dele-a2-spanish-anki-deck": "DELE SIELE Spanish Anki Deck — 2026 Flashcards",
       "dutch-a2-inburgering-anki-deck":
-        "Dutch Inburgering NT2 A2 Anki Deck — 2000 Flashcards",
-      "german-a2-anki-deck": "German Goethe telc ÖSD DTZ Anki Deck — 2000 Flashcards",
+        "Dutch Inburgering NT2 A2 Anki Deck — 1897 Flashcards",
+      "german-a2-anki-deck": "German Goethe telc ÖSD DTZ Anki Deck — 2026 Flashcards",
       "gmat-focus-anki-deck": "GMAT Focus Anki Deck — 400+ Flashcards",
       "sat-anki-deck": "Digital SAT Anki Deck — 342+ Flashcards",
       "pmp-anki-deck": "PMP Anki Deck — 346+ Flashcards",
       "gre-anki-deck": "GRE Anki Deck — 350+ Flashcards",
       "leed-ap-om-anki-deck": "LEED AP O+M Anki Deck — 250+ Flashcards",
-      "celi-b1-italian-anki-deck": "CELI CILS PLIDA Italian Anki Deck — 1500 Flashcards",
+      "celi-b1-italian-anki-deck": "CELI CILS PLIDA Italian Anki Deck — 2026 Flashcards",
       "danish-a2-prove-i-dansk-anki-deck":
         "Danish Prøve i Dansk PD2 PD3 Anki Deck — 1000 Flashcards",
       "norwegian-a2-norskprove-anki-deck":
-        "Norwegian Norskprøve Residence Citizenship Anki Deck — 1500 Flashcards",
+        "Norwegian Norskprøve Residence Citizenship Anki Deck — 1487 Flashcards",
       "swedish-a2-sfi-anki-deck":
         "Swedish SFI Residence Citizenship Anki Deck — 1000 Flashcards",
       "greek-a2-ellinomatheia-anki-deck":
@@ -758,9 +761,9 @@ describe("deck catalog", () => {
       "czech-a2-cce-anki-deck":
         "Czech CCE Residence Citizenship Anki Deck — 1000 Flashcards",
       "polish-a2-certyfikat-anki-deck":
-        "Polish A2 Certyfikat Residence Citizenship Anki Deck — 1500 Flashcards",
+        "Polish A2 Certyfikat Residence Citizenship Anki Deck — 1491 Flashcards",
       "polish-a2-for-ukrainian-speakers-anki-deck":
-        "Polish A2 for Ukrainian Speakers Anki Deck — 1500 Flashcards",
+        "Polish A2 for Ukrainian Speakers Anki Deck — 1491 Flashcards",
       "german-a2-for-ukrainian-speakers-anki-deck":
         "German A2 for Ukrainian Speakers Anki Deck — 1926 Flashcards",
       "german-a2-for-russian-speakers-anki-deck":
@@ -768,16 +771,16 @@ describe("deck catalog", () => {
       "ielts-toefl-english-for-french-speakers-anki-deck":
         "IELTS / TOEFL English for French Speakers Anki Deck — 2522 Flashcards",
       "ielts-toefl-english-for-arabic-speakers-anki-deck":
-        "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2493 Flashcards",
+        "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2504 Flashcards",
       "ielts-toefl-english-for-ukrainian-speakers-anki-deck":
-        "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2493 Flashcards",
+        "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2504 Flashcards",
       "ielts-toefl-english-for-russian-speakers-anki-deck":
-        "IELTS / TOEFL English for Russian Speakers Anki Deck — 2493 Flashcards",
+        "IELTS / TOEFL English for Russian Speakers Anki Deck — 2504 Flashcards",
       "ielts-toefl-english-for-spanish-speakers-anki-deck":
-        "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2494 Flashcards",
+        "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2504 Flashcards",
       "ielts-toefl-english-for-portuguese-speakers-anki-deck":
-        "IELTS / TOEFL English for Brazilian Portuguese Speakers Anki — 2466 Cards",
-      "belgium-flanders-mo-anki-deck": "Belgium Flanders MO Anki Deck — 120 Flashcards",
+        "IELTS / TOEFL English for Brazilian Portuguese Speakers Anki — 2504 Cards",
+      "belgium-flanders-mo-anki-deck": "Belgium Flanders MO Anki Deck — 165 Flashcards",
       "hvac-epa-608-anki-deck": "EPA 608 HVAC Anki Deck — 200+ Flashcards",
       "ib-biology-sl-anki-deck": "IB Biology SL Anki Deck — 149 Smart Flashcards",
       "cat4-level-d-anki-deck-printable-pdf":
@@ -793,7 +796,7 @@ describe("deck catalog", () => {
       "acsm-cpt-anki-deck": "ACSM CPT Anki Deck — 120 Flashcards",
       "nha-cpct-anki-deck": "NHA CPCT/A Anki Deck — 120 Flashcards",
       "luxembourg-vivre-ensemble-anki-deck":
-        "Luxembourg Vivre ensemble Anki Deck — 120 Flashcards",
+        "Luxembourg Vivre ensemble Anki Deck — 165 Flashcards",
       "bench-energy-metal-trader-anki-deck":
         "Metal Trader Anki Deck — 202 Commodity Flashcards",
       "bench-energy-oil-trader-anki-deck":
@@ -858,6 +861,23 @@ describe("deck catalog", () => {
       "mrics-anki-deck": "MRICS / APC Anki Deck — 250+ Flashcards",
       "mrics-quantity-surveying-anki-deck":
         "MRICS QS Anki Deck — 250+ Flashcards",
+      "leben-in-deutschland-anki-deck": "Leben in Deutschland Anki Deck — 296 Cards",
+      "denmark-indfoedsretsproeven-anki-deck": "Denmark Indfødsretsprøven Anki Deck — 191 Cards",
+      "ccse-espana-anki-deck": "CCSE España Anki Deck — 343 Cards",
+      "naturalisation-francaise-anki-deck": "Naturalisation française Anki Deck — 200 Cards",
+      "norway-statsborgerproven-anki-deck": "Norway Statsborgerprøven Anki Deck — 170 Cards",
+      "einburgerung-schweiz-anki-deck": "Einbürgerung Schweiz Anki Deck — 207 Cards",
+      "polish-citizenship-anki-deck": "Polish Citizenship Anki Deck — 170 Cards",
+      "sweden-medborgarskapsprov-anki-deck": "Sweden Medborgarskapsprov Anki Deck — 170 Cards",
+      "canadian-citizenship-anki-deck": "Canadian Citizenship Anki Deck — 200 Cards",
+      "czech-citizenship-anki-deck": "Czech Citizenship Anki Deck — 169 Cards",
+      "life-in-the-uk-anki-deck": "Life in the UK Anki Deck — 201 Cards",
+      "belgium-wallonie-citoyennete-anki-deck": "Belgium Wallonie Citoyenneté Anki Deck — 165 Cards",
+      "portugal-nacionalidade-anki-deck": "Portugal Nacionalidade Anki Deck — 173 Cards",
+      "australian-citizenship-anki-deck": "Australian Citizenship Anki Deck — 200 Cards",
+      "naturalisation-suisse-anki-deck": "Naturalisation suisse Anki Deck — 207 Cards",
+      "naturalizzazione-svizzera-anki-deck": "Naturalizzazione svizzera Anki Deck — 207 Cards",
+      "us-citizenship-anki-deck": "U.S. Citizenship Anki Deck — 128 Cards",
       "well-ap-anki-deck": "WELL AP Anki Deck — 250+ Flashcards",
     };
 

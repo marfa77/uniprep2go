@@ -28,6 +28,8 @@ export const UNIPREP_TO_SHOP_PREVIEW_KEY: Record<string, string> = {
   "swedish-a2-sfi-anki-deck": "Swedish_SFI",
   "greek-a2-ellinomatheia-anki-deck": "Greek_Ellinomatheia",
   "czech-a2-cce-anki-deck": "Czech_CCE",
+  "polish-a2-certyfikat-anki-deck": "Polish_Certyfikat",
+  "polish-a2-for-ukrainian-speakers-anki-deck": "Polish_Ukrainian",
   "spanish-italian-paired-anki-deck": "Spanish_Italian_Together",
   "ielts-toefl-english-for-arabic-speakers-anki-deck": "Arabic_to_English",
   "ielts-toefl-english-for-french-speakers-anki-deck": "French_to_English",

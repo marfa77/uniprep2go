@@ -3439,6 +3439,15 @@ const deckExamKeyMap: Record<string, string> = {
   "australian-citizenship-prep2go-app": "australian-citizenship",
   "citizenship-naturalization-anki-bundle": "citizenship-naturalization-bundle",
   "swiss-citizenship-anki-deck": "swiss-citizenship",
+  "us-citizenship-anki-deck": "us-citizenship",
+  "leben-in-deutschland-anki-deck": "leben-in-deutschland",
+  "naturalisation-francaise-anki-deck": "naturalisation-francaise",
+  "life-in-the-uk-anki-deck": "life-in-the-uk",
+  "canadian-citizenship-anki-deck": "canadian-citizenship",
+  "australian-citizenship-anki-deck": "australian-citizenship",
+  "einburgerung-schweiz-anki-deck": "swiss-citizenship",
+  "naturalisation-suisse-anki-deck": "swiss-citizenship",
+  "naturalizzazione-svizzera-anki-deck": "swiss-citizenship",
 };
 
 export function getExamFactsProfileForDeck(slug: string): ExamFactsProfile | null {

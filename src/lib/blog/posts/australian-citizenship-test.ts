@@ -17,12 +17,12 @@ export const australianCitizenshipTestPost: BlogPostDraft = {
   intro:
     "**The Australian citizenship test is not a language exam and not a personal interview.** It is a **computer-based, multiple-choice test of 20 questions** drawn from the Department of Home Affairs booklet *Australian Citizenship: Our Common Bond* (OCB). You have **45 minutes**, need **15/20 (75%)**, and face the rule that destroys unprepared candidates: **5 of those 20 are Australian values questions, and you must get all 5 correct.** Miss one values item and you fail — even at 19/20 overall. This guide covers format, the four OCB categories, values traps, and a first-attempt prep plan mapped to UniPrep2Go’s free readiness check and Citizenship Anki Bundle.",
   mockSlug: "australian-citizenship-readiness-check",
-  deckSlug: "citizenship-naturalization-anki-bundle",
+  deckSlug: "australian-citizenship-anki-deck",
   cta: {
     mockLabel: "Take the free Australian Citizenship readiness check",
-    deckLabel: "Get the Citizenship & Naturalization Anki Bundle",
+    deckLabel: "Get the Australian Citizenship Anki deck ($9)",
     summary:
-      "Drill Our Common Bond themes — especially values — with the free Australian Citizenship readiness check. Then lock government, history, and values with the Citizenship & Naturalization Anki Bundle (includes Australia) before ceremony day.",
+      "Drill Our Common Bond themes — especially values — with the free Australian Citizenship readiness check. Then lock government, history, and values with the $9 Australian Citizenship Anki deck before ceremony day.",
     extraLinks: [
       {
         href: "https://www.prep2go.study",

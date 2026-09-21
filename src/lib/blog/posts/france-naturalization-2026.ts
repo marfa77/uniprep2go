@@ -22,11 +22,11 @@ export const franceNaturalization2026Post: BlogPostDraft = {
     mockLabel: "Take the free Naturalisation française readiness check",
     deckLabel: "Get the DELF / DALF / TCF / TEF French Anki deck",
     summary:
-      "Drill republican civics with the free Naturalisation française readiness check (Prep2Go-sourced). Bridge B1→B2 with the French Anki deck (DELF, DALF, TCF, TEF). The Citizenship & Naturalization Anki Bundle also includes Naturalisation française cards — browse Prep2Go before you pay €200+ in official fees.",
+      "Drill republican civics with the free Naturalisation française readiness check, then the $9 Naturalisation française Anki deck. Bridge B1→B2 with the French language Anki deck (DELF, DALF, TCF, TEF).",
     extraLinks: [
       {
-        href: "/decks/citizenship-naturalization-anki-bundle",
-        label: "Citizenship & Naturalization Anki Bundle (includes FR civics)",
+        href: "/decks/naturalisation-francaise-anki-deck",
+        label: "Naturalisation française Anki deck ($9)",
       },
       {
         href: "https://www.prep2go.study",

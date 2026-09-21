@@ -17,12 +17,12 @@ export const lifeInTheUkFailPassPost: BlogPostDraft = {
   intro:
     "**The Life in the UK Test is the most taken citizenship exam in Europe.** Since 2005, millions have sat it. The pass rate hovers around 70–75% — generous until you realise roughly 1 in 3 candidates leave £50 lighter with a fail. It is a memory test on British history, government, and daily life. Volume of facts, date specificity, and false confidence from practice apps create the trap. This guide covers format, where to spend study time, 2026 policy context, and a method that targets 20+/24 on mocks before you book.",
   mockSlug: "life-in-the-uk-readiness-check",
-  deckSlug: "citizenship-naturalization-anki-bundle",
+  deckSlug: "life-in-the-uk-anki-deck",
   cta: {
     mockLabel: "Take the free Life in the UK readiness check",
-    deckLabel: "Get the Citizenship & Naturalization Anki Bundle",
+    deckLabel: "Get the Life in the UK Anki deck ($9)",
     summary:
-      "Run the free 60-question Life in the UK readiness check (no signup) until timed mocks hit ~20/24. Then lock Chapter 3 dates and civics facts with the Citizenship & Naturalization Anki Bundle — includes the Life in the UK deck — before you pay £50 on gov.uk.",
+      "Run the free 60-question Life in the UK readiness check (no signup) until timed mocks hit ~20/24. Then lock Chapter 3 dates and civics facts with the $9 Life in the UK Anki deck before you pay £50 on gov.uk.",
   },
   sections: [
     {
@@ -193,7 +193,7 @@ export const lifeInTheUkFailPassPost: BlogPostDraft = {
     {
       question: "What Anki deck helps with Life in the UK prep?",
       answer:
-        "The Citizenship & Naturalization Anki Bundle includes a Life in the UK deck plus five other country civics decks — useful for dates, monarchs, and government facts from the official handbook.",
+        "The $9 Life in the UK Anki deck is 201 civics cards for dates, monarchs, and government facts from the official handbook.",
     },
   ],
   bottomLine:

@@ -9,7 +9,9 @@ describe("Prep2Go shop preview samples", () => {
   it("keeps shop preview mappings for curated and planned language decks", () => {
     const mappedSlugs = Object.keys(UNIPREP_TO_SHOP_PREVIEW_KEY);
 
-    expect(mappedSlugs).toHaveLength(27);
+    expect(mappedSlugs).toHaveLength(29);
+    expect(mappedSlugs).toContain("polish-a2-certyfikat-anki-deck");
+    expect(mappedSlugs).toContain("polish-a2-for-ukrainian-speakers-anki-deck");
     expect(mappedSlugs).toContain("ielts-toefl-english-for-arabic-speakers-anki-deck");
     expect(mappedSlugs).toContain("ielts-toefl-english-for-ukrainian-speakers-anki-deck");
     expect(mappedSlugs).toContain("ielts-toefl-english-for-russian-speakers-anki-deck");
@@ -25,11 +27,11 @@ describe("Prep2Go shop preview samples", () => {
 
     expect(samples).toHaveLength(3);
     expect(samples?.[0]).toMatchObject({
-      question: "be",
+      question: "university",
       imageUrl: "/shop-preview-media/Arabic_to_English/1.webp",
       audioUrl: "/shop-preview-media/Arabic_to_English/1.mp3",
     });
-    expect(samples?.[0]?.answer).toContain("يكون");
+    expect(samples?.[0]?.answer).toContain("جامعة");
     expect(samples?.[0]?.answer).not.toContain("What is included in");
   });
 
@@ -62,6 +64,8 @@ describe("Prep2Go shop preview samples", () => {
         "swedish-a2-sfi-anki-deck",
         "greek-a2-ellinomatheia-anki-deck",
         "czech-a2-cce-anki-deck",
+        "polish-a2-certyfikat-anki-deck",
+        "polish-a2-for-ukrainian-speakers-anki-deck",
         "ielts-toefl-english-for-french-speakers-anki-deck",
         "ielts-toefl-english-for-arabic-speakers-anki-deck",
         "ielts-toefl-english-for-ukrainian-speakers-anki-deck",

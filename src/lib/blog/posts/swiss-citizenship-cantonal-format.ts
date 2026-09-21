@@ -13,12 +13,12 @@ export const swissCitizenshipCantonalFormatPost: BlogPostDraft = {
   intro:
     "If you are preparing for Swiss citizenship and searching for \"the\" citizenship test, you are already behind. Switzerland does not have a single federal naturalisation exam. The federal government sets the framework — 10 years of residence, a C permit, language skills, integration — but the **knowledge test** is written, administered, and scored by your **canton** and sometimes your **commune**. That means a candidate in Zurich faces a different test than a candidate in Geneva. The pass rates, question banks, and even the languages of administration vary. This guide explains what the test actually looks like, where to find your canton’s real questions, and how to study without wasting money on generic \"Swiss citizenship prep\" books that do not match your local exam.",
   mockSlug: "swiss-citizenship-readiness-check",
-  deckSlug: "swiss-citizenship-anki-deck",
+  deckSlug: "einburgerung-schweiz-anki-deck",
   cta: {
     mockLabel: "Take the free Swiss citizenship readiness check",
     deckLabel: "Drill weak topics with the Anki deck",
     summary:
-      "Take the free Einbürgerung Schweiz readiness check — federal civics, cantonal structure, and daily-life scenarios — then drill weak topics with the Swiss Citizenship Anki deck before your cantonal exam date.",
+      "Take the free Einbürgerung Schweiz readiness check — federal civics, cantonal structure, and daily-life scenarios — then drill weak topics with the $9 Einbürgerung Schweiz Anki deck before your cantonal exam date.",
   },
   sections: [
     {

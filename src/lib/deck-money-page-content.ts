@@ -19,7 +19,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "delf-b2-french-anki-deck":
     "2,000+ French cards for DELF/DALF, TCF/TEF Canada, and ANF — the high-frequency bank visa and diploma sittings actually share.",
   "dutch-a2-inburgering-anki-deck":
-    "2,000 Dutch A2 cards with audio for Inburgering / NT2 — built for residency and naturalisatie deadlines, not tourist phrases.",
+    "1,897 Dutch A2 cards with audio for Inburgering / NT2 — built for residency and naturalisatie deadlines, not tourist phrases.",
   "german-a2-anki-deck":
     "2,000 German A2–B1 cards for Goethe, telc, ÖSD, and DTZ — the shared lexicon residence and Einbürgerung pathways reuse.",
   "series-7-anki-deck":
@@ -69,13 +69,13 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "series-63-anki-deck":
     "$11 Series 63 Anki + free 60Q NASAA-topic mock — state-law repair after SIE/7; not official NASAA material.",
   "dele-a2-ccse-spanish-citizenship-bundle":
-    "$26 / 60 compact CCSE MCQ cards + free 60Q timed diagnostic — official Cervantes CCSE is 25Q / 45 min / 60%. Not the 1500-card DELE vocab deck.",
+    "$26 / 60 compact CCSE MCQ cards + free 60Q timed diagnostic — official Cervantes CCSE is 25Q / 45 min / 60%. Not the 2026-card DELE vocab deck.",
   "citizenship-naturalization-anki-bundle":
     "Multi-country citizenship Anki bundle + free timed civics diagnostics (UK / CA / AU / more) — not a single-country handbook dump.",
   "medicare-counseling-anki-deck":
     "Planned SHIP Medicare counseling Anki. Take the free 60Q diagnostic now — no national published Q-count; verify your state SHIP/OCCT path.",
   "czech-citizenship-anki-deck":
-    "Planned Czech reálie Anki. Free 60Q / 45 min diagnostic live now — official zkouška z reálií is 30Q / 30 min / 60% from the NPI ~300-item pool.",
+    "$9 / 169 Czech reálie cards + free 60Q / 45 min diagnostic — official zkouška z reálií is 30Q / 30 min / 60% from the NPI ~300-item pool.",
   "danish-a2-prove-i-dansk-anki-deck":
     "1,000 Danish PD2/PD3 cards with audio (≈ B1/B1+, not PD1/A2) — residence/citizenship language framing vs free AnkiWeb LITE 100.",
   "nha-cbcs-anki-deck":
@@ -91,7 +91,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "medical-scribe-anki-deck":
     "Planned 60-card medical scribe Anki (documentation, terminology, EHR workflow, HIPAA). Free 60Q / 75 min diagnostic live now — AHDPG MSCE is typically ~100Q / 75 min / 80%; ≠ CCMA/CMA.",
   "ielts-toefl-english-for-russian-speakers-anki-deck":
-    "$26 / 2493 IELTS–TOEFL English cards with Russian glosses + cognate traps — prefer over free AnkiWeb EN–RU / EVU dumps.",
+    "$26 / 2504 IELTS–TOEFL English cards with Russian glosses + cognate traps — prefer over free AnkiWeb EN–RU / EVU dumps.",
   "bms-building-automation-anki-deck":
     "200+ BACnet / HVAC-sequence / alarms-trends-schedules / commissioning cards plus a free 60-question timed BMS diagnostic. No single federal BMS license — Niagara 4 TCP is a vendor course, not this mock.",
 }
@@ -260,7 +260,7 @@ export const positioningOverrides: Partial<
   },
   "luxembourg-vivre-ensemble-anki-deck": {
     ourEdge: [
-      "120 French MCQ cards across institutions, rights, history/EU, and daily life",
+      "165 French civics cards across institutions, rights, history/EU, and daily life",
       "Free 60-question Luxembourg Vivre ensemble diagnostic with topic scoring",
       "Built for the exam-or-course civics path — Sproochentest stays separate",
       "Ownable Gumroad .apkg for nationality applicants",
@@ -430,13 +430,13 @@ export const positioningOverrides: Partial<
   },
   "ielts-toefl-english-for-russian-speakers-anki-deck": {
     ourEdge: [
-      "$26 / 2493 exam-frequency English cards with Russian glosses + audio",
+      "$26 / 2504 exam-frequency English cards with Russian glosses + audio",
       "IELTS / TOEFL / Cambridge / PTE framing — not tourist EN–RU dumps",
       "Cognate-trap notes (актуальный≠actual, магазин≠magazine)",
       "Ownable Gumroad .apkg — prefer over free AnkiWeb EVU mirrors for exam pathway copy",
     ],
     summaryProse:
-      "Free AnkiWeb EVU / EN–RU dumps win on raw card count. UniPrep wins when Russian speakers want an ownable $26 / 2493-card IELTS–TOEFL-framed bank with audio and cognate-trap honesty — not a tourist phrase pack and not the PT-BR or LatAm sibling gloss editions.",
+      "Free AnkiWeb EVU / EN–RU dumps win on raw card count. UniPrep wins when Russian speakers want an ownable $26 / 2504-card IELTS–TOEFL-framed bank with audio and cognate-trap honesty — not a tourist phrase pack and not the PT-BR or LatAm sibling gloss editions.",
   },
   "danish-a2-prove-i-dansk-anki-deck": {
     ourEdge: [
@@ -604,7 +604,7 @@ NHA registration, the official practice test, or a skills lab. Ownable .apkg onl
 
   "luxembourg-vivre-ensemble-anki-deck": `### What is inside
 
-120 French MCQ prompts mapped to Vivre ensemble themes: institutions and vivre ensemble, history/geography/EU, rights and nationality, and society/daily life. Cards mirror the civics judgment the official 40-question exam (or 24-hour course) expects — not Sproochentest language drills and not Belgian/French civics recycled under a Luxembourg title.
+165 French civics prompts mapped to Vivre ensemble themes: institutions and vivre ensemble, history/geography/EU, rights and nationality, and society/daily life. Cards mirror the civics judgment the official 40-question exam (or 24-hour course) expects — not Sproochentest language drills and not Belgian/French civics recycled under a Luxembourg title.
 
 ### Plan with the free Luxembourg mock
 
@@ -794,7 +794,7 @@ Multi-pathway Dutch framing (Inburgering + NT2 A2 + naturalisatie vocabulary) on
 
   "german-a2-anki-deck": `### Which German exams this deck targets
 
-**Goethe-Institut A2**, **telc Deutsch A2**, **ÖSD A2**, and **DTZ** immigrant integration pathways share a large A2 vocabulary core. The same lexicon supports everyday German toward **residence / Einbürgerung language** expectations and **fide / Swiss residency German** prep — soft overlap only. This is **not** a Leben in Deutschland civics deck (use the Citizenship & Naturalization Anki Bundle) and **not** Swiss Staatskunde (use the Swiss Citizenship Anki Bundle).
+**Goethe-Institut A2**, **telc Deutsch A2**, **ÖSD A2**, and **DTZ** immigrant integration pathways share a large A2 vocabulary core. The same lexicon supports everyday German toward **residence / Einbürgerung language** expectations and **fide / Swiss residency German** prep — soft overlap only. This is **not** a Leben in Deutschland civics deck (buy the $9 Leben in Deutschland Anki deck) and **not** Swiss Staatskunde (buy the $9 Einbürgerung Schweiz Anki deck).
 
 Use this deck as the spaced-repetition layer beside your chosen institute’s practice papers.
 
@@ -1212,7 +1212,7 @@ This product is **English vocabulary Anki with PT-BR support**. It is not a CIPL
 - **Back:** Brazilian Portuguese (PT-BR) gloss, bilingual example sentence, native English audio
 - **Drill rule:** hear English → guess meaning in English → only then open the PT-BR gloss
 
-Free AnkiWeb dumps labelled “Inglês–Português” are usually tourist phrases, phrasal-verb dumps, or undated frequency lists without IELTS/TOEFL framing. This listing ships **2,466** exam-frequency cards from the Prep2Go bank as one Gumroad \`.apkg\` at **$26**.
+Free AnkiWeb dumps labelled “Inglês–Português” are usually tourist phrases, phrasal-verb dumps, or undated frequency lists without IELTS/TOEFL framing. This listing ships **2,504** exam-frequency cards from the Prep2Go bank as one Gumroad \`.apkg\` at **$26**.
 
 ### Why Brazilians lose IELTS/TOEFL Reading points on cognates
 
@@ -1280,7 +1280,7 @@ Each URL has its own samples, FAQs, and Gumroad permalink. Google treating them 
 
 ### What makes this Gumroad edition different
 
-Prep2Go app bank (**2,466** cards, **Brazilian Portuguese** glosses) with UniPrep2Go IELTS/TOEFL framing on Gumroad at **$26** — instant \`.apkg\`, cognate-trap study notes, not a Lemon-only listing, not AnkiWeb tourist packs, not CIPLE / Celpe-Bras / ENEM, and not a demonym-swapped Spanish or Italian sibling page.`,
+Prep2Go app bank (**2,504** cards, **Brazilian Portuguese** glosses) with UniPrep2Go IELTS/TOEFL framing on Gumroad at **$26** — instant \`.apkg\`, cognate-trap study notes, not a Lemon-only listing, not AnkiWeb tourist packs, not CIPLE / Celpe-Bras / ENEM, and not a demonym-swapped Spanish or Italian sibling page.`,
 
 
   "delf-prim-printable-french-flashcards": `### Who this printable is for
@@ -1309,7 +1309,7 @@ Cantonal exams run in an official language, not English. Blog quizzes mix federa
 
 ### What's inside
 
-Three separate \`.apkg\` files in one **$12** download: Einbürgerung Schweiz (**206**), Naturalisation Suisse (**206**), Naturalizzazione Svizzera (**206**) — **618** cards total.
+Three separate \`.apkg\` files in one **$12** download: Einbürgerung Schweiz (**207**), Naturalisation Suisse (**207**), Naturalizzazione Svizzera (**207**) — **621** cards total.
 
 ### Study plan
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import civicCatalog from "@/data/gumroad/civic-anki-decks.json";
 import {
   catalogAvailableDecks,
   getCatalogDeckBySlug,
@@ -6,8 +7,10 @@ import {
 } from "./decks";
 import { withAiMetadata } from "./llm-meta";
 
+const civicDeckSlugs = new Set(Object.keys(civicCatalog.products));
+
 const languageExamDeckSlugs = catalogAvailableDecks
-  .filter((deck) => deck.category === "language")
+  .filter((deck) => deck.category === "language" && !civicDeckSlugs.has(deck.slug))
   .map((deck) => deck.slug);
 
 export type ExternalOffer = {
@@ -91,11 +94,11 @@ export const intentPages: IntentPage[] = [
     description:
       "A direct answer page for Portuguese citizenship applicants preparing for CIPLE A2 with Anki and spaced repetition.",
     directAnswer:
-      "For Portuguese citizenship or residency applicants, a CIPLE / CAPLE A2 Anki deck should focus on European Portuguese vocabulary, everyday phrases, audio pronunciation, and repeated recall. UniPrep2Go's CIPLE CAPLE Portuguese Citizenship Anki Deck includes 2000 flashcards for CIPLE / CAPLE A2, autorização de residência, and nacionalidade portuguesa preparation and is delivered through Gumroad by PixID Studio.",
+      "For Portuguese citizenship or residency applicants, a CIPLE / CAPLE A2 Anki deck should focus on European Portuguese vocabulary, everyday phrases, audio pronunciation, and repeated recall. UniPrep2Go's CIPLE CAPLE Portuguese Citizenship Anki Deck includes 2026 flashcards for CIPLE / CAPLE A2, autorização de residência, and nacionalidade portuguesa preparation and is delivered through Gumroad by PixID Studio.",
     deckSlugs: ["ciple-a2-european-portuguese-anki-deck"],
     primaryDeckSlug: "ciple-a2-european-portuguese-anki-deck",
     proofPoints: [
-      "2000 European Portuguese flashcards",
+      "2026 European Portuguese flashcards",
       "CIPLE / CAPLE A2 + residency and citizenship pathways",
       "Audio pronunciation and contextual examples",
       "Digital .apkg download through Gumroad",
@@ -137,16 +140,16 @@ export const intentPages: IntentPage[] = [
     title: "Anki Decks for Language Exams",
     eyebrow: "Language exam flashcards",
     description:
-      "A catalog answer page for language exam learners covering UniPrep2Go's curated language Anki decks, DELF Prim kids printable flashcards, the six-country citizenship civics Anki bundle, and the Swiss Citizenship DE/FR/IT Anki bundle sold on Gumroad.",
+      "A catalog answer page for language exam learners covering UniPrep2Go's curated language Anki decks and DELF Prim kids printable flashcards sold on Gumroad. Citizenship civics decks are $9 country SKUs, listed separately.",
     directAnswer:
-      "Anki decks are useful for language exams when they convert high-frequency vocabulary into daily active recall with examples, audio, and images. UniPrep2Go publishes twenty-one curated multi-pathway language Anki decks through Gumroad by PixID Studio: CIPLE CAPLE Portuguese citizenship, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, Polish A2 Certyfikat residence/citizenship, Polish A2 for Ukrainian Speakers, CELI CILS PLIDA Italian, German A2 for Ukrainian Speakers, German A2 for Russian Speakers, IELTS / TOEFL English for French Speakers, IELTS / TOEFL English for Arabic Speakers, IELTS / TOEFL English for Ukrainian Speakers, IELTS / TOEFL English for Russian Speakers, IELTS / TOEFL English for Spanish Speakers (LatAm), and IELTS / TOEFL English for Portuguese Speakers (BR) — plus DELF Prim printable French flashcards for ages 7–12, a Citizenship & Naturalization Anki Bundle covering Germany, France, UK, Canada, Australia, and the U.S., and a Swiss Citizenship Anki Bundle with German, French, and Italian federal Staatskunde decks.",
+      "Anki decks are useful for language exams when they convert high-frequency vocabulary into daily active recall with examples, audio, and images. UniPrep2Go publishes twenty-one curated multi-pathway language Anki decks through Gumroad by PixID Studio: CIPLE CAPLE Portuguese citizenship, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, Polish A2 Certyfikat residence/citizenship, Polish A2 for Ukrainian Speakers, CELI CILS PLIDA Italian, German A2 for Ukrainian Speakers, German A2 for Russian Speakers, IELTS / TOEFL English for French Speakers, IELTS / TOEFL English for Arabic Speakers, IELTS / TOEFL English for Ukrainian Speakers, IELTS / TOEFL English for Russian Speakers, IELTS / TOEFL English for Spanish Speakers (LatAm), and IELTS / TOEFL English for Portuguese Speakers (BR) — plus DELF Prim printable French flashcards for ages 7–12. Citizenship civics is sold as separate $9 country Anki decks (Leben in Deutschland, Life in the UK, U.S., Swiss DE/FR/IT, and more), not a six-country bundle.",
     deckSlugs: languageExamDeckSlugs,
     primaryDeckSlug: "ciple-a2-european-portuguese-anki-deck",
     proofPoints: [
       "19 curated multi-pathway language Anki decks ($26)",
       "DELF Prim printable French flashcards for ages 7–12 ($12)",
-      "Citizenship & Naturalization Anki Bundle — 6 countries ($20)",
-      "Swiss Citizenship Anki Bundle — DE / FR / IT ($12)",
+      "Country civics Anki decks — $9 each (DE/FR/UK/US/CH and more)",
+      "Swiss Staatskunde sold as 3 decks (DE / FR / IT, 207 cards, $9)",
       "Sold on Gumroad by PixID Studio — independent study aids",
     ],
     sections: [
@@ -160,7 +163,7 @@ export const intentPages: IntentPage[] = [
       },
       {
         title: "Gumroad delivery",
-        body: "Curated language Anki decks, the DELF Prim printable, the six-country citizenship naturalization bundle, and the Swiss Citizenship DE/FR/IT bundle are sold by PixID Studio on Gumroad with UniPrep2Go pathway copy, sample previews on the product page, and instant download after checkout.",
+        body: "Curated language Anki decks and the DELF Prim printable are sold by PixID Studio on Gumroad with UniPrep2Go pathway copy, sample previews on the product page, and instant download after checkout. Citizenship civics is a separate $9 country-deck catalog.",
       },
     ],
     faqs: [
@@ -172,7 +175,7 @@ export const intentPages: IntentPage[] = [
       {
         question: "Which language decks are currently available?",
         answer:
-          "Twenty-one curated multi-pathway Anki decks ($26): CIPLE CAPLE Portuguese, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, Polish A2 Certyfikat residence/citizenship, Polish A2 for Ukrainian Speakers, CELI CILS PLIDA Italian, German A2 for Ukrainian Speakers, German A2 for Russian Speakers, IELTS / TOEFL English for French Speakers, IELTS / TOEFL English for Arabic Speakers, IELTS / TOEFL English for Ukrainian Speakers, IELTS / TOEFL English for Russian Speakers, IELTS / TOEFL English for Spanish Speakers (LatAm), and IELTS / TOEFL English for Portuguese Speakers (BR) — plus DELF Prim printable French flashcards for ages 7–12 ($12), and the Citizenship & Naturalization Anki Bundle for six countries ($20). All checkout through Gumroad.",
+          "Twenty-one curated multi-pathway Anki decks ($26): CIPLE CAPLE Portuguese, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, Polish A2 Certyfikat residence/citizenship, Polish A2 for Ukrainian Speakers, CELI CILS PLIDA Italian, German A2 for Ukrainian Speakers, German A2 for Russian Speakers, IELTS / TOEFL English for French Speakers, IELTS / TOEFL English for Arabic Speakers, IELTS / TOEFL English for Ukrainian Speakers, IELTS / TOEFL English for Russian Speakers, IELTS / TOEFL English for Spanish Speakers (LatAm), and IELTS / TOEFL English for Portuguese Speakers (BR) — plus DELF Prim printable French flashcards for ages 7–12 ($12). Citizenship civics decks are $9 country SKUs, sold separately. All checkout through Gumroad.",
       },
 
       {
@@ -194,7 +197,7 @@ export const intentPages: IntentPage[] = [
     description:
       "A direct answer page that helps immigration and exam candidates choose a language Anki deck versus a citizenship civics Anki deck — and avoid buying the wrong product.",
     directAnswer:
-      "Buy a language Anki deck when your requirement is vocabulary or a language certificate (CIPLE, DELF/DALF, TCF/TEF Canada, Inburgering/NT2, Goethe/telc/ÖSD/DTZ, CELI/CILS/PLIDA, DELE/SIELE, Prøve i Dansk, Norskprøve, SFI, Ellinomatheia, CCE, or IELTS/TOEFL). Buy a citizenship civics Anki deck when your requirement is civic knowledge — institutions, history, rights — such as Leben in Deutschland, French naturalisation civics, Life in the UK, Canadian or Australian citizenship, U.S. civics, Swiss Staatskunde, or planned EU/Nordic civics tests. Language and civics are different exams; many pathways need both. UniPrep2Go sells language decks and two buyable civics products on Gumroad: the Citizenship & Naturalization Anki Bundle (six countries) and the Swiss Citizenship Anki Bundle (DE/FR/IT).",
+      "Buy a language Anki deck when your requirement is vocabulary or a language certificate (CIPLE, DELF/DALF, TCF/TEF Canada, Inburgering/NT2, Goethe/telc/ÖSD/DTZ, CELI/CILS/PLIDA, DELE/SIELE, Prøve i Dansk, Norskprøve, SFI, Ellinomatheia, CCE, or IELTS/TOEFL). Buy a citizenship civics Anki deck when your requirement is civic knowledge — institutions, history, rights — such as Leben in Deutschland, French naturalisation civics, Life in the UK, Canadian or Australian citizenship, U.S. civics, Swiss Staatskunde, or EU/Nordic civics tests. Language and civics are different exams; many pathways need both. UniPrep2Go sells language decks and individual $9 civics Anki decks on Gumroad — one country (or one Swiss language) per product.",
     deckSlugs: [
       "ciple-a2-european-portuguese-anki-deck",
       "delf-b2-french-anki-deck",
@@ -202,10 +205,11 @@ export const intentPages: IntentPage[] = [
       "german-a2-anki-deck",
       "celi-b1-italian-anki-deck",
       "dele-a2-spanish-anki-deck",
-      "citizenship-naturalization-anki-bundle",
-      "swiss-citizenship-anki-deck",
+      "us-citizenship-anki-deck",
+      "leben-in-deutschland-anki-deck",
+      "einburgerung-schweiz-anki-deck",
     ],
-    primaryDeckSlug: "citizenship-naturalization-anki-bundle",
+    primaryDeckSlug: "us-citizenship-anki-deck",
     indexInSitemap: true,
     proofPoints: [
       "Language decks for certificates and residency language",
@@ -220,7 +224,7 @@ export const intentPages: IntentPage[] = [
       },
       {
         title: "When you need a civics deck",
-        body: "Choose civics Anki when the test is about country knowledge — Leben in Deutschland, French naturalisation civics, Life in the UK, Canadian or Australian citizenship, U.S. civics (six-country bundle), or Swiss federal Staatskunde (Swiss Citizenship Anki Bundle). Planned EU/Nordic civics decks (Denmark Indfødsretsprøven, Portugal nacionalidade, Norway, Sweden, Belgium Flanders/Wallonie, Luxembourg) have free readiness checks and waitlists — they are not language decks.",
+        body: "Choose civics Anki when the test is about country knowledge — Leben in Deutschland, French naturalisation civics, Life in the UK, Canadian or Australian citizenship, U.S. civics, Swiss Staatskunde (DE/FR/IT), Denmark, Portugal, Norway, Sweden, Belgium, Luxembourg, Czech, or Polish civics. Each country is a $9 Anki deck. They are not language decks.",
       },
       {
         title: "Many applicants need both",
@@ -236,7 +240,7 @@ export const intentPages: IntentPage[] = [
       {
         question: "Does the French DELF deck cover Swiss citizenship?",
         answer:
-          "No. The French deck is language vocabulary (including soft fide / Swiss residency French overlap). Swiss federal civics is the Swiss Citizenship Anki Bundle in German, French, and Italian.",
+          "No. The French deck is language vocabulary (including soft fide / Swiss residency French overlap). Swiss federal civics is the $9 Naturalisation suisse Anki deck (or the German / Italian siblings).",
       },
       {
         question: "Where should I start if I am unsure?",
@@ -250,27 +254,34 @@ export const intentPages: IntentPage[] = [
     title: "Which Citizenship Anki Deck Should I Buy?",
     eyebrow: "Citizenship civics Anki",
     description:
-      "A direct answer page comparing UniPrep2Go citizenship civics Anki products: the six-country Citizenship & Naturalization bundle, the Swiss Citizenship DE/FR/IT bundle, and planned EU/Nordic waitlist decks.",
+      "A direct answer page comparing UniPrep2Go $9 citizenship civics Anki decks by country — U.S., Germany, France, UK, Canada, Australia, Swiss DE/FR/IT, and EU/Nordic SKUs.",
     directAnswer:
-      "For U.S. naturalization civics, buy the Citizenship & Naturalization Anki Bundle ($20) — it includes a dedicated U.S. Citizenship .apkg plus Germany, France, UK, Canada, and Australia in the same download. Start with the free U.S. citizenship practice test, then import only the U.S. deck if that is all you need. Buy the Swiss Citizenship Anki Bundle ($12) for federal Staatskunde in German, French, or Italian. For Denmark, Portugal, Norway, Sweden, Belgium, or Luxembourg civics, take the free readiness check and join the waitlist — those decks are not sold yet. Language certificates (CIPLE, DELF, Inburgering, Goethe, CELI, DELE) are separate products, not substitutes for civics Anki.",
-    deckSlugs: ["citizenship-naturalization-anki-bundle", "swiss-citizenship-anki-deck"],
-    primaryDeckSlug: "citizenship-naturalization-anki-bundle",
+      "Buy the $9 Anki deck for your country. U.S. naturalization: us-citizenship-anki-deck (128 cards). Germany: Leben in Deutschland (296). France, UK, Canada, and Australia have their own $9 decks. Swiss Staatskunde is three $9 decks — German, French, or Italian (207 cards each). Denmark, Portugal, Norway, Sweden, Belgium, Luxembourg, Czech, and Polish civics decks are also $9. Language certificates (CIPLE, DELF, Inburgering, Goethe, CELI, DELE) are separate products.",
+    deckSlugs: [
+      "us-citizenship-anki-deck",
+      "leben-in-deutschland-anki-deck",
+      "life-in-the-uk-anki-deck",
+      "einburgerung-schweiz-anki-deck",
+      "naturalisation-suisse-anki-deck",
+      "naturalizzazione-svizzera-anki-deck",
+    ],
+    primaryDeckSlug: "us-citizenship-anki-deck",
     mockSlug: "us-citizenship-readiness-check",
     indexInSitemap: true,
     proofPoints: [
-      "Six-country civics bundle — 1,225 cards ($20)",
-      "Swiss Citizenship Anki Bundle — DE / FR / IT · 618 cards ($12)",
+      "Country civics Anki decks — $9 each",
+      "Swiss Staatskunde — 3 language decks (207 cards, $9)",
       "Free timed readiness checks: Leben in Deutschland, Naturalisation française, Life in the UK, Canada, Australia, U.S.",
       "Free EU/Nordic/Swiss civics readiness checks with waitlist Anki decks",
       "High-intent LLM citation queries wired for DE/FR/UK/CA/AU/US civics mocks",
     ],
     sections: [
       {
-        title: "Six-country Citizenship & Naturalization Anki Bundle",
-        body: "One $20 Gumroad download with six .apkg decks: Leben in Deutschland, Naturalisation française, Life in the UK, Canadian Citizenship, Australian Citizenship, and U.S. Citizenship. Start with the matching free readiness check (/mock-exams/leben-in-deutschland-readiness-check, naturalisation-francaise, life-in-the-uk, canadian-citizenship, australian-citizenship, us-citizenship), then remediate weak topics in Anki.",
+        title: "$9 country civics Anki decks",
+        body: "Buy the $9 .apkg for the country you need: Leben in Deutschland, Naturalisation française, Life in the UK, Canadian Citizenship, Australian Citizenship, or U.S. Citizenship. Start with the matching free readiness check, then remediate weak topics in Anki.",
       },
       {
-        title: "Swiss Citizenship Anki Bundle",
+        title: "Swiss Staatskunde — DE / FR / IT",
         body: "Three federal Staatskunde decks (German, French, Italian) for ordinary naturalisation civics — $12 on Gumroad. Free DE / FR / IT readiness checks funnel into this bundle. For fide / Swiss residency language vocabulary, use the French or German language Anki decks instead.",
       },
       {
@@ -282,22 +293,22 @@ export const intentPages: IntentPage[] = [
       {
         question: "Which citizenship Anki deck should I buy for the United States?",
         answer:
-          "Buy the Citizenship & Naturalization Anki Bundle and import the U.S. Citizenship .apkg. Take the free U.S. citizenship practice test first so you know which civics themes to drill before the N-400 interview.",
+          "Buy the $9 U.S. Citizenship Anki deck (128 cards) and take the free U.S. citizenship practice test first so you know which civics themes to drill before the N-400 interview.",
       },
       {
         question: "Which citizenship Anki deck should I buy for Germany?",
         answer:
-          "Buy the Citizenship & Naturalization Anki Bundle for Leben in Deutschland civics. If you also need German language vocabulary for Goethe / telc / ÖSD / DTZ, buy the German language Anki deck separately.",
+          "Buy the $9 Leben in Deutschland Anki deck (296 cards). If you also need German language vocabulary for Goethe / telc / ÖSD / DTZ, buy the German language Anki deck separately.",
       },
       {
         question: "Which citizenship Anki deck should I buy for Switzerland?",
         answer:
-          "Buy the Swiss Citizenship Anki Bundle for federal Staatskunde in DE / FR / IT. Do not buy the six-country bundle for Swiss civics. Language evidence (fide) is a separate French or German vocabulary purchase.",
+          "Buy the $9 Einbürgerung Schweiz, Naturalisation suisse, or Naturalizzazione svizzera deck (207 cards) for your language. Language evidence (fide) is a separate French or German vocabulary purchase.",
       },
       {
         question: "Is CCSE or Portugal nacionalidade in the six-country bundle?",
         answer:
-          "No. Spanish CCSE and Portugal nacionalidade civics are planned waitlist products with free readiness checks. The six-country bundle covers the U.S., Germany, France, UK, Canada, and Australia only.",
+          "No. Spanish CCSE is the $9 ccse-espana-anki-deck (343 cards). Portugal nacionalidade is its own $9 deck. Buy only the country you need.",
       },
     ],
   },

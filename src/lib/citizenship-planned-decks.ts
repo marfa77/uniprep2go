@@ -55,77 +55,16 @@ function plannedCivicsDeck(spec: PlannedCivicsSpec): PlannedDeck {
   };
 }
 
-/** Planned waitlist Anki decks for EU/Nordic civics mocks not yet on Gumroad. */
+/**
+ * Waitlist templates that the wave launcher flips to available.
+ * Live $9 civic SKUs live in civic-sold-decks.ts — do not duplicate them here.
+ */
 export const citizenshipPlannedDecks: PlannedDeck[] = [
-  plannedCivicsDeck({
-    slug: "denmark-indfoedsretsproeven-anki-deck",
-    shortName: "Denmark Indfødsretsprøven",
-    title: "Denmark Indfødsretsprøven Anki Deck — Citizenship Civics",
-    subtitle: "Planned Anki deck for the Danish citizenship (indfødsret) civics test.",
-    audience: "Applicants preparing the Danish Indfødsretsprøven citizenship civics test.",
-    examLabel: "Danish immigration / citizenship authorities",
-    mockSlug: "denmark-indfoedsretsproeven-readiness-check",
-    topics: [
-      "Constitution & democracy",
-      "Society, culture & history",
-      "Welfare & daily life",
-      "Geography, EU & extras",
-    ],
-    searchNote: "Pair with official Indfødsretsprøven materials.",
-  }),
-  plannedCivicsDeck({
-    slug: "portugal-nacionalidade-anki-deck",
-    shortName: "Portugal Nacionalidade",
-    title: "Portugal Nacionalidade Anki Deck — Civic Knowledge",
-    subtitle: "Planned Anki deck for Portuguese nationality civic knowledge.",
-    audience: "Applicants preparing Portuguese nationality civic knowledge requirements.",
-    examLabel: "Portuguese nationality / IRN authorities",
-    mockSlug: "portugal-nacionalidade-readiness-check",
-    topics: [
-      "State & rights",
-      "Nationality & civic participation",
-      "History, geography & EU",
-      "Society & public services",
-    ],
-    searchNote: "Pair with official nationality guidance.",
-  }),
-  plannedCivicsDeck({
-    slug: "norway-statsborgerproven-anki-deck",
-    shortName: "Norway Statsborgerprøven",
-    title: "Norway Statsborgerprøven Anki Deck — Citizenship Civics",
-    subtitle: "Planned Anki deck for the Norwegian citizenship test (statsborgerprøven).",
-    audience: "Applicants preparing the Norwegian Statsborgerprøven.",
-    examLabel: "UDI / Norwegian citizenship authorities",
-    mockSlug: "norway-statsborgerproven-readiness-check",
-    topics: [
-      "State & democracy",
-      "History, geography & EEA",
-      "Rights & society",
-      "Services & extras",
-    ],
-    searchNote: "Pair with official Statsborgerprøven materials.",
-  }),
-  plannedCivicsDeck({
-    slug: "sweden-medborgarskapsprov-anki-deck",
-    shortName: "Sweden Medborgarskapsprov",
-    title: "Sweden Medborgarskapsprov Anki Deck — Citizenship Civics",
-    subtitle: "Planned Anki deck for the Swedish citizenship test (medborgarskapsprov).",
-    audience: "Applicants preparing the Swedish Medborgarskapsprov.",
-    examLabel: "Swedish Migration Agency / citizenship authorities",
-    mockSlug: "sweden-medborgarskapsprov-readiness-check",
-    topics: [
-      "State & democracy",
-      "History, geography & EU",
-      "Rights & society",
-      "Services & extras",
-    ],
-    searchNote: "Pair with official Medborgarskapsprov materials.",
-  }),
   plannedCivicsDeck({
     slug: "belgium-flanders-mo-anki-deck",
     shortName: "Belgium Flanders MO",
     title: "Belgium Flanders MO Anki Deck — Maatschappelijke Oriëntatie",
-    subtitle: "Anki deck for Flanders maatschappelijke oriëntatie (120 Dutch MCQ cards).",
+    subtitle: "Anki deck for Flanders maatschappelijke oriëntatie (165 Dutch civics cards).",
     audience: "Applicants preparing Flanders maatschappelijke oriëntatie / integration civics.",
     examLabel: "Flemish integration / citizenship authorities",
     mockSlug: "belgium-flanders-mo-readiness-check",
@@ -138,26 +77,10 @@ export const citizenshipPlannedDecks: PlannedDeck[] = [
     searchNote: "Pair with official Flanders MO materials.",
   }),
   plannedCivicsDeck({
-    slug: "belgium-wallonie-citoyennete-anki-deck",
-    shortName: "Belgium Wallonie Citoyenneté",
-    title: "Belgium Wallonie Citoyenneté Anki Deck — Integration Civics",
-    subtitle: "Planned Anki deck for Wallonia citizenship / integration parcours.",
-    audience: "Applicants preparing Wallonia citoyenneté / parcours d'intégration civics.",
-    examLabel: "Walloon integration / citizenship authorities",
-    mockSlug: "belgium-wallonie-citoyennete-readiness-check",
-    topics: [
-      "Institutions & integration",
-      "History, geography & EU",
-      "Rights & nationality",
-      "Society & daily life",
-    ],
-    searchNote: "Pair with official Wallonia citoyenneté materials.",
-  }),
-  plannedCivicsDeck({
     slug: "luxembourg-vivre-ensemble-anki-deck",
     shortName: "Luxembourg Vivre ensemble",
     title: "Luxembourg Vivre ensemble Anki Deck — Citizenship Civics",
-    subtitle: "Planned Anki deck for Luxembourg 'Vivre ensemble' citizenship course themes.",
+    subtitle: "Anki deck for Luxembourg Vivre ensemble civics (165 French cards).",
     audience: "Applicants preparing Luxembourg Vivre ensemble / nationality civics.",
     examLabel: "Luxembourg nationality / Vivre ensemble authorities",
     mockSlug: "luxembourg-vivre-ensemble-readiness-check",

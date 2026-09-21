@@ -259,7 +259,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     slug: "us-citizenship-readiness-check",
     title: "U.S. Citizenship Civics Readiness Check",
     shortTitle: "U.S. Citizenship Readiness",
-    linkedDeckSlug: "citizenship-naturalization-anki-bundle",
+    linkedDeckSlug: "us-citizenship-anki-deck",
     status: "live",
     accessMode: "free_demand_test",
     durationMinutes: 30,
@@ -283,11 +283,11 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Independent MCQ diagnostic on USCIS civics themes. Official naturalization civics is an oral interview: up to 10 questions from the 100-item list, pass at 6. This page is 30 timed MCQs / 30 minutes / 80% — not the oral USCIS interview format.",
     disclaimer: citizenshipDisclaimer,
     description:
-      "A 30-question U.S. citizenship civics readiness check covering government, history, and geography — pairs with the Citizenship & Naturalization Anki Bundle. Independent prep — not USCIS material.",
+      "A 30-question U.S. citizenship civics readiness check covering government, history, and geography — pairs with the $9 U.S. Citizenship Anki deck. Independent prep — not USCIS material.",
     examBody: "USCIS",
     lastUpdated: "2026-07-26",
     questionSourceNote:
-      "Questions sourced from the Prep2Go U.S. Citizenship bank (2025 USCIS civics Q&A converted to MCQ with in-deck distractors) — same bank as the Citizenship & Naturalization Anki Bundle.",
+      "Questions sourced from the Prep2Go U.S. Citizenship bank (2025 USCIS civics Q&A converted to MCQ with in-deck distractors) — same bank as the $9 U.S. Citizenship Anki deck.",
   },
   {
     slug: "frm-part-1-readiness-check",

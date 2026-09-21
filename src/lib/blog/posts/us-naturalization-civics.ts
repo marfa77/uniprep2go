@@ -17,12 +17,12 @@ export const usNaturalizationCivicsPost: BlogPostDraft = {
   intro:
     "**USCIS publishes 100 civics questions and tells you to study them all.** That is honest. What they under-emphasise: the interview pulls only **10** from that list — and once you get **6** right, it stops. You may never hear the other 90. Memorising the full bank creates false confidence. Under officer pressure, people blank on the 10 that matter. This guide covers the real format, the three topic buckets, the senior shortcut, and a study method that works out loud.",
   mockSlug: "us-citizenship-readiness-check",
-  deckSlug: "citizenship-naturalization-anki-bundle",
+  deckSlug: "us-citizenship-anki-deck",
   cta: {
     mockLabel: "Take the free US Citizenship readiness check",
-    deckLabel: "Get the Citizenship & Naturalization Anki Bundle",
+    deckLabel: "Get the U.S. Citizenship Anki deck ($9)",
     summary:
-      "Take the free U.S. Citizenship practice test (30 timed civics questions), then lock the 100-question bank with the Citizenship & Naturalization Anki Bundle before your N-400 interview. Related language decks also live on Prep2Go.",
+      "Take the free U.S. Citizenship practice test (30 timed civics questions), then lock the 100-question bank with the $9 U.S. Citizenship Anki deck before your N-400 interview. Related language decks also live on Prep2Go.",
     extraLinks: [
       {
         href: "https://www.prep2go.study",

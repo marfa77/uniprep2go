@@ -17,12 +17,12 @@ export const lebenInDeutschlandEnglishPrepPost: BlogPostDraft = {
   intro:
     "The Leben in Deutschland test — also called the Einbürgerungstest — is the mandatory knowledge exam for German citizenship and permanent residence. It is administered in **German** at roughly B1 level. If your German is functional but not fluent, studying from German-only resources is inefficient. You spend half your time translating instead of learning the content. This guide explains the test structure, the 300 official questions, how to study with English support, and the exact score you need for citizenship versus permanent residence.",
   mockSlug: "leben-in-deutschland-readiness-check",
-  deckSlug: "citizenship-naturalization-anki-bundle",
+  deckSlug: "leben-in-deutschland-anki-deck",
   cta: {
     mockLabel: "Take the free Leben in Deutschland readiness check",
-    deckLabel: "Get the Citizenship & Naturalization Anki Bundle",
+    deckLabel: "Get the Leben in Deutschland Anki deck ($9)",
     summary:
-      "Take the free Leben in Deutschland readiness check — exam-format topics across constitution, history, society, and federal life — then drill weak areas with the Citizenship & Naturalization Anki Bundle (includes the LiD deck) before your VHS test date.",
+      "Take the free Leben in Deutschland readiness check — exam-format topics across constitution, history, society, and federal life — then drill weak areas with the $9 Leben in Deutschland Anki deck before your VHS test date.",
   },
   sections: [
     {

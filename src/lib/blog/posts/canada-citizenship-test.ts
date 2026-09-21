@@ -17,12 +17,12 @@ export const canadaCitizenshipTestPost: BlogPostDraft = {
   intro:
     "**Canada’s citizenship test is one of the shortest in the world — 20 questions in 30 minutes — and one of the most expensive per question.** Between application, right of citizenship, and related charges, you are near CAD $630 to sit those 20 items. Fail and you pay again in time, stress, and possibly a citizenship-officer interview. This guide covers format, five topic areas, the geography trap, and how to use the free official *Discover Canada* guide instead of error-prone apps.",
   mockSlug: "canadian-citizenship-readiness-check",
-  deckSlug: "citizenship-naturalization-anki-bundle",
+  deckSlug: "canadian-citizenship-anki-deck",
   cta: {
     mockLabel: "Take the free Canadian Citizenship readiness check",
-    deckLabel: "Get the Citizenship & Naturalization Anki Bundle",
+    deckLabel: "Get the Canadian Citizenship Anki deck ($9)",
     summary:
-      "Drill Discover Canada themes with the free Canadian Citizenship readiness check (Prep2Go-sourced). Then lock provinces, history, and rights with the Citizenship & Naturalization Anki Bundle before you file with IRCC — and browse Prep2Go for related immigration decks.",
+      "Drill Discover Canada themes with the free Canadian Citizenship readiness check (Prep2Go-sourced). Then lock provinces, history, and rights with the $9 Canadian Citizenship Anki deck before you file with IRCC — and browse Prep2Go for related immigration decks.",
     extraLinks: [
       {
         href: "https://www.prep2go.study",
