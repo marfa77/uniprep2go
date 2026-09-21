@@ -136,9 +136,11 @@ update ops.mock_banks set review_status = 'fixing' where slug = '...';
 | Wallonie / FI / PL / SE | `ready` accepted P2 or clean | authored |
 | LEED O+M / GA, WELL, ASHRAE, CEM, CDCP, NEBOSH, MRICS×2, EPA 608, CFPS, ACE, ACSM | `ready` clean | authored building/fitness |
 | money-36: CFA L1/L2, S63/S7, FRM, L&H, P&C, CA/FL/TX/NY RE, NHA×5, NREMT×3, NCLEX RN/PN, CNA, NBDHE, CST, VTNE, MBLEx, ASCP, ARDMS, TMC, RBT, CDL×3, NASM, ISSA, SHRM | `ready` clean | authored keep; no factory rewrite |
-| **итог** | **100 / 206 ready** | top-sellable done |
+| **итог** | **123 / 206 ready** | top-sellable + P0 five + P1 eighteen |
 | non-civic re-export 2026-09-21 | LEED BD+C (250 rewrite) + PTCB (1 expl) + GMAT (uniquify 8 dup ids) | civic skipped; SIE quick = remap of full, no file |
-| остальные ~106 | imported | state-RE tail + niche; не трогать без запроса |
+| remaining-106 audit 2026-09-21 | 106 were `audited` | then P0 five fixed same day |
+| P0 fix 2026-09-21 | `nate-core` + `wastewater` rewritten; electrical/plumbing/water-treatment stripped `always always` | all 5 `ready` clean; no sibling-prompt overlap |
+| P1 fix 2026-09-21 | 13 sibling remaps rewritten; Praxis SPED leftover strip; L&H binder → life receipt; scribe / ServSafe FH / VTNE kept | all 18 `ready`; sibling prompt overlap 0 (L&H vs P&C leftover 1 shared “experience rating” stem) |
 
 ## Чего не делать
 

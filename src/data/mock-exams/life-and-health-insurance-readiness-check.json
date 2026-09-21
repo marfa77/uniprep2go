@@ -268,6 +268,7 @@
     "examSlug": "life-and-health-insurance-readiness-check",
     "topicId": "ins-health",
     "prompt": "Which statement correctly describes coinsurance in health insurance as tested in health insurance?",
+    "formula": "$$Insured\\ Share=Covered\\ Expense\\times Coinsurance\\ Percentage$$",
     "options": [
       {
         "id": "a",
@@ -294,8 +295,7 @@
       "d": "This statement is false about coinsurance in health insurance and does not match the correct definition."
     },
     "difficulty": "medium",
-    "sourceNote": "From UniPrep2Go deck content (life_health_400_authored.csv, INS-HEALTH). · Local QA repair (stems/distractors)",
-    "formula": "$$Insured\\ Share=Covered\\ Expense\\times Coinsurance\\ Percentage$$"
+    "sourceNote": "From UniPrep2Go deck content (life_health_400_authored.csv, INS-HEALTH). · Local QA repair (stems/distractors)"
   },
   {
     "id": "life-and-health-insurance-readiness-check-ins-health-010",
@@ -1621,34 +1621,34 @@
     "id": "life-and-health-insurance-readiness-check-ins-tax-regulation-003",
     "examSlug": "life-and-health-insurance-readiness-check",
     "topicId": "ins-tax-regulation",
-    "prompt": "A binder in property-casualty insurance — which option is correct for insurance taxation and regulation?",
+    "prompt": "A conditional receipt on a life insurance application typically means:",
     "options": [
       {
         "id": "a",
-        "text": "Permanently replaces the policy without conditions"
+        "text": "Coverage may begin on the receipt date if the applicant is later found insurable as applied"
       },
       {
         "id": "b",
-        "text": "Provides temporary coverage until formal policy is issued"
+        "text": "The policy is a homeowners binder that permanently replaces underwriting"
       },
       {
         "id": "c",
-        "text": "Is only used in life insurance always"
+        "text": "The insurer must pay a property claim from an auto policy"
       },
       {
         "id": "d",
-        "text": "Eliminates all underwriting forever"
+        "text": "No coverage can ever start before policy delivery"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Binders grant interim protection pending policy issuance The correct choice (“Provides temporary coverage until formal policy is issued”) is the one that matches this rule.",
+    "correctOptionId": "a",
+    "explanation": "Life producers use a conditional or binding receipt for the gap after application and premium. This is not a property-casualty homeowners or auto binder. Independent UniPrep diagnostic — not a state insurance exam paper.",
     "distractorExplanations": {
-      "a": "Temporary. This option does not correctly answer the stem (Permanently replaces the policy without conditions).",
-      "c": "P&C concept mainly. Learners who choose “Is only used in life insurance always” are usually making that exact mistake instead of applying the rule in the stem.",
-      "d": "Underwriting still occurs. Learners who choose “Eliminates all underwriting forever” are usually making that exact mistake instead of applying the rule in the stem."
+      "b": "A homeowners binder is a P&C document, not this life-application receipt.",
+      "c": "Auto property claims are P&C, not life conditional receipts.",
+      "d": "Conditional receipts can start coverage earlier if underwriting later agrees."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Ops P1 point-fix 2026-09-21: replaced P&C binder leftover with life conditional receipt."
   },
   {
     "id": "life-and-health-insurance-readiness-check-ins-tax-regulation-004",
