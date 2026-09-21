@@ -56,7 +56,6 @@ import { getMockOfficialResources } from "@/lib/mock-exams/official-resources";
 import { getLiveQuestionBank } from "@/lib/mock-exams/question-bank-ops";
 import { isMockExamRunnableFromQuestions } from "@/lib/mock-exams/question-bank";
 import { isLearnPassEnabled } from "@/lib/mock-exams/learn-pass";
-import { parseMockSessionMode } from "@/lib/mock-exams/session-mode";
 import {
   buildMockSeoDescription,
   buildMockSeoKeywords,
@@ -141,14 +140,11 @@ function mockEyebrow(config: NonNullable<ReturnType<typeof getMockExamConfig>>) 
 
 export default async function MockExamPage({
   params,
-  searchParams,
 }: {
   params: Promise<{ slug: string }>;
-  searchParams: Promise<{ mode?: string }>;
 }) {
   const { slug } = await params;
-  const { mode } = await searchParams;
-  const initialMode = parseMockSessionMode(mode);
+  // `?mode=learn` is read in MockExamClient so this landing stays ISR/cacheable.
   const config = getMockExamConfig(slug);
 
   if (!config) {
@@ -250,7 +246,6 @@ export default async function MockExamPage({
           <MockExamClientLoader
             accessState={accessState}
             config={config}
-            initialMode={initialMode}
             learnPassEnabled={isLearnPassEnabled()}
             linkedCheckout={linkedCheckout}
             linkedDeckShortName={linkedDeck?.shortName}

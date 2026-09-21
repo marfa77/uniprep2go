@@ -149,14 +149,12 @@ function topicMatchesRepairFocus(topicName: string, focusIds: string[]): boolean
 
 export default async function DeckPage({
   params,
-  searchParams,
 }: {
   params: Promise<{ slug: string }>;
-  searchParams?: Promise<{ topics?: string | string[] }>;
 }) {
   const { slug } = await params;
-  const query = searchParams ? await searchParams : {};
-  const repairTopicIds = parseRepairTopicIds(query.topics);
+  // Repair deep-links (?topics=) are handled client-side so this page stays ISR/cacheable.
+  const repairTopicIds: string[] = [];
   const deck = await resolveDeckPage(slug);
 
   if (!deck) {

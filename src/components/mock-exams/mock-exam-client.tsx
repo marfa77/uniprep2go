@@ -20,6 +20,8 @@ import type { MockCompanionCheckout } from "./mock-companion-decks-panel";
 import { MockRunner } from "./mock-runner";
 import { trackMockEvent } from "./mock-analytics";
 import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
+import { useSearchParams } from "next/navigation";
+import { parseMockSessionMode } from "@/lib/mock-exams/session-mode";
 
 type Screen = "landing" | "exam" | "results";
 
@@ -97,11 +99,12 @@ export function MockExamClient({
   initialMode = "exam",
   learnPassEnabled = false,
 }: MockExamClientProps) {
+  const searchParams = useSearchParams();
+  const modeFromUrl = parseMockSessionMode(searchParams.get("mode"));
+  const resolvedInitialMode = initialMode === "learn" || modeFromUrl === "learn" ? "learn" : "exam";
   const [screen, setScreen] = useState<Screen>("landing");
-  const [selectedMode, setSelectedMode] = useState<MockSessionMode>(
-    initialMode === "learn" ? "learn" : "exam",
-  );
-  const [sessionMode, setSessionMode] = useState<MockSessionMode>(initialMode);
+  const [selectedMode, setSelectedMode] = useState<MockSessionMode>(resolvedInitialMode);
+  const [sessionMode, setSessionMode] = useState<MockSessionMode>(resolvedInitialMode);
   const [attemptSeed, setAttemptSeed] = useState<string>("");
   const [report, setReport] = useState<MockReport | null>(null);
   const [deepLinkConsumed, setDeepLinkConsumed] = useState(false);
@@ -213,7 +216,7 @@ export function MockExamClient({
   );
 
   useEffect(() => {
-    if (!runnable || deepLinkConsumed || initialMode !== "learn" || !learnStatusLoaded) {
+    if (!runnable || deepLinkConsumed || resolvedInitialMode !== "learn" || !learnStatusLoaded) {
       return;
     }
     setDeepLinkConsumed(true);
@@ -230,7 +233,7 @@ export function MockExamClient({
     config.slug,
     deepLinkConsumed,
     enterSession,
-    initialMode,
+    resolvedInitialMode,
     learnPassEnabled,
     learnRemaining,
     learnStatusLoaded,

@@ -47,7 +47,8 @@ async function fetchOpsQuestions(examSlug: string, rpc: string): Promise<MockQue
       "Content-Type": "application/json",
     },
     body: JSON.stringify({ p_slug: examSlug }),
-    cache: "no-store",
+    // Allow ISR of mock landings — no-store here forced every /mock-exams/* to Cache-Control: no-store.
+    next: { revalidate: 3600 },
   });
   const text = await response.text();
   if (!response.ok) {
