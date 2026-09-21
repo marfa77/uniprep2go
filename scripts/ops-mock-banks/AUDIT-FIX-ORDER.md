@@ -17,6 +17,8 @@ JSON в git, Anki `.apkg`, Gumroad, `llms:export` — **только после 
 
 Сайт читает `ops_get_live_mock_bank` (только `ready`) и падает на git JSON, если банк ещё не ready.
 
+Vercel production: `PREP2GO_SUPABASE_URL` + `PREP2GO_SUPABASE_SERVICE_ROLE_KEY` (sensitive). Без них live loader всегда берёт git JSON.
+
 ## Кто пишет контент
 
 | что | кто |

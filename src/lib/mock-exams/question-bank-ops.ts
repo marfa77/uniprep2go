@@ -6,6 +6,7 @@ const cache = new Map<string, { expiresAt: number; questions: MockQuestion[] }>(
 const liveCache = new Map<string, { expiresAt: number; questions: MockQuestion[] }>();
 
 function opsConfig() {
+  // Production: Vercel sensitive PREP2GO_SUPABASE_URL + PREP2GO_SUPABASE_SERVICE_ROLE_KEY.
   const url = process.env.PREP2GO_SUPABASE_URL || process.env.SUPABASE_URL;
   const key =
     process.env.PREP2GO_SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY;
