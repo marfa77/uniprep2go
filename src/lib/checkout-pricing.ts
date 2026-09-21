@@ -454,19 +454,19 @@ function cachedPriceMatchesCheckoutProvider(
   return true;
 }
 
-export async function resolveDeckPrice(deck: CatalogAvailableDeck): Promise<PricedDeck> {
+/**
+ * Resolve price for page/SSR/GEO renders without live Gumroad/Lemon fetches.
+ * Live scrapes use `cache: "no-store"` and force every money page to `Cache-Control: no-store`.
+ * Keep catalog list prices (+ in-memory sync cache) for HTML; syncAllCheckoutPrices for ops.
+ */
+export function resolveDeckPriceForRender(deck: CatalogAvailableDeck): PricedDeck {
   if (deck.checkoutProvider === "App Store") {
     return applyAppStorePriceToDeck(deck);
   }
 
-  const cached = await readCachedPrice(deck.slug);
-  // Ignore stale cache after checkout provider migrations (e.g. Lemon → Gumroad).
-  if (cached && cachedPriceMatchesCheckoutProvider(deck, cached)) {
-    const record = preferCatalogOverrideOverSynced(deck, cached);
-    if (record !== cached) {
-      await writeCachedPrice(deck.slug, record);
-    }
-    return applyPriceRecordToDeck(deck, record);
+  const memoryCached = getMemoryCache().get(deck.slug);
+  if (memoryCached && cachedPriceMatchesCheckoutProvider(deck, memoryCached)) {
+    return applyPriceRecordToDeck(deck, preferCatalogOverrideOverSynced(deck, memoryCached));
   }
 
   const staticBuilding = getStaticBuildingDeckPriceRecord(deck.slug);
@@ -474,36 +474,23 @@ export async function resolveDeckPrice(deck: CatalogAvailableDeck): Promise<Pric
     return applyPriceRecordToDeck(deck, staticBuilding);
   }
 
+  const catalogFallback = getCatalogListPriceRecord(deck);
+  if (catalogFallback) {
+    return applyPriceRecordToDeck(deck, catalogFallback);
+  }
+
   if (isGumroadFailureCached(deck.slug)) {
     const buildingFallback = getBuildingGumroadFallbackPriceRecord(deck.slug);
     if (buildingFallback) {
       return applyPriceRecordToDeck(deck, buildingFallback);
     }
-    const catalogFallback = getCatalogListPriceRecord(deck);
-    if (catalogFallback) {
-      return applyPriceRecordToDeck(deck, catalogFallback);
-    }
-    return applyPendingPriceToDeck(deck);
   }
 
-  try {
-    const synced = await syncDeckPrice(deck);
-    const record = preferCatalogOverrideOverSynced(deck, synced);
-    await writeCachedPrice(deck.slug, record);
-    return applyPriceRecordToDeck(deck, record);
-  } catch (error) {
-    rememberGumroadFailure(deck.slug);
-    console.warn(`[checkout_pricing] price unavailable for ${deck.slug}`, error);
-    const buildingFallback = getBuildingGumroadFallbackPriceRecord(deck.slug);
-    if (buildingFallback) {
-      return applyPriceRecordToDeck(deck, buildingFallback);
-    }
-    const catalogFallback = getCatalogListPriceRecord(deck);
-    if (catalogFallback) {
-      return applyPriceRecordToDeck(deck, catalogFallback);
-    }
-    return applyPendingPriceToDeck(deck);
-  }
+  return applyPendingPriceToDeck(deck);
+}
+
+export async function resolveDeckPrice(deck: CatalogAvailableDeck): Promise<PricedDeck> {
+  return resolveDeckPriceForRender(deck);
 }
 
 export async function getPricedDeckBySlug(slug: string) {

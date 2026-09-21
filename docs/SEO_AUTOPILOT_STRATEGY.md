@@ -37,6 +37,13 @@ Pricing, Gumroad IDs, auth, DB banks, layout CSS, invented official pass rates, 
 
 ## Run log
 
+### 2026-09-21 — Foundation repair (no new SKUs)
+
+**Why:** Catalog churn (language/civic) while Google still shows ~574 impr / 1 click / pos ~60; sitemap stamped every deploy; money pages forced `Cache-Control: no-store` via live Gumroad price scrape.
+**Shipped:** Sitemap `lastmod` from deck/mock/blog dates; Layer B priority 0.99 vs language 0.72 / comics ~0.7; SSR prices from catalog list (no live scrape); home meta CTR polish; IndexNow Layer A/B URL list.
+**Manual:** GSC Request indexing on `sie-full-mock` if still unknown; watch Layer B impr 14d.
+**Next:** Layer B point-edit max 1–2 URLs/week only when GSC shows pos 8–25; no new SKUs until money index grows.
+
 ### 2026-08-27 — Dual-track top strategy (supersedes FINRA-only weekly)
 
 **Why:** GSC 28d = 574 impr / 1 click; `sie-full-mock` still unknown; 0 "sie" queries; Series 63 deck at pos 11.2 is the only working FINRA wedge. Layer B pages (PTCB, CFA L2, home) were frozen while dead FINRA titles churned.  

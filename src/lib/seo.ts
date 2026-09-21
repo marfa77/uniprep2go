@@ -229,7 +229,7 @@ export function homeMetadata(): Metadata {
   // Dual-track (2026-08-27): hero money = live Layer B, not unknown SIE billboard.
   const title = "Free PTCB & Series 63 Mocks | Anki Decks";
   const description =
-    "Free timed PTCB, Series 63, Life & Health, and CFA practice — then Anki/PDF decks. Pass/no-pass topic reports. No signup. Independent prep.";
+    "Free timed PTCB, Series 63, Life & Health, and CFA mocks — no signup. Pass/no-pass topic reports, then Anki/PDF decks for weak topics. Independent US exam prep.";
 
   return finalize({
     title: {

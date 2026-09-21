@@ -99,21 +99,17 @@ describe("checkout pricing", () => {
     expect(updated.directAnswer).not.toContain(PRICE_PLACEHOLDER);
   });
 
-  it("prefers explicit catalog override when Gumroad scrape drifts lower", async () => {
+  it("prefers explicit catalog override without live Gumroad scrape on render", async () => {
     const deck = getCatalogDeckBySlug("sie-exam-anki-deck");
     expect(deck).toBeDefined();
 
-    vi.stubGlobal(
-      "fetch",
-      vi.fn(async () => ({
-        ok: true,
-        text: async () => 'price_cents&quot;:1100',
-      })) as typeof fetch,
-    );
+    const fetchMock = vi.fn();
+    vi.stubGlobal("fetch", fetchMock);
 
     const resolved = await resolveDeckPrice(deck!);
     expect(resolved.price.amount).toBe(19);
     expect(resolved.directAnswer).toContain("$19 USD");
+    expect(fetchMock).not.toHaveBeenCalled();
 
     vi.unstubAllGlobals();
   });
@@ -161,7 +157,7 @@ describe("checkout pricing", () => {
     expect(getCheckoutActionLabel(priced.checkoutProvider)).toBe("Open in App Store");
   });
 
-  it("syncs live building decks from Gumroad and falls back to catalog default on failure", async () => {
+  it("uses catalog list price for building decks without live Gumroad scrape on render", async () => {
     const fetchMock = vi.fn().mockResolvedValue({ ok: false, status: 404, statusText: "Not Found" });
     vi.stubGlobal("fetch", fetchMock);
 
@@ -170,7 +166,7 @@ describe("checkout pricing", () => {
 
     const priced = await resolveDeckPrice(deck!);
 
-    expect(fetchMock).toHaveBeenCalled();
+    expect(fetchMock).not.toHaveBeenCalled();
     expect(priced.price.amount).toBe(11);
     expect(priced.directAnswer).toContain("$11 USD");
 
@@ -210,7 +206,7 @@ describe("checkout pricing", () => {
     expect(resolved.directAnswer).toContain("$19 USD");
   });
 
-  it("ignores stale Lemon cache after a deck moves to Gumroad", async () => {
+  it("ignores stale Lemon memory cache after a deck moves to Gumroad", async () => {
     const deck = getCatalogDeckBySlug("delf-b2-french-anki-deck");
     expect(deck).toBeDefined();
     expect(deck!.checkoutProvider).toBe("Gumroad");
@@ -222,18 +218,15 @@ describe("checkout pricing", () => {
       source: "lemon",
     });
 
-    vi.stubGlobal(
-      "fetch",
-      vi.fn(async () => ({
-        ok: true,
-        text: async () => 'price_cents&quot;:2600',
-      })) as typeof fetch,
-    );
+    const fetchMock = vi.fn();
+    vi.stubGlobal("fetch", fetchMock);
 
     const resolved = await resolveDeckPrice(deck!);
     expect(resolved.price.amount).toBe(26);
     expect(resolved.directAnswer).toContain("$26 USD");
+    expect(fetchMock).not.toHaveBeenCalled();
 
     vi.unstubAllGlobals();
   });
+
 });

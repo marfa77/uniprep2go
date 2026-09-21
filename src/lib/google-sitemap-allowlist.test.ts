@@ -20,7 +20,7 @@ describe("google sitemap allowlist", () => {
 
     expect(unique.size).toBe(urls.length);
     expect(urls.length).toBeGreaterThanOrEqual(280);
-    expect(urls.length).toBeLessThanOrEqual(310);
+    expect(urls.length).toBeLessThanOrEqual(360);
 
     for (const deck of availableDecks) {
       expect(urls).toContain(absoluteUrl(`/decks/${deck.slug}`));
@@ -91,6 +91,26 @@ describe("google sitemap allowlist", () => {
       ? config.rules.find((rule) => rule.userAgent === "Googlebot")
       : undefined;
     expect(googleRule?.allow).toBe("/");
-    expect(googleRule?.disallow).toEqual(["/*?utm_source=llm"]);
+    expect(googleRule?.disallow).toEqual(["/*?utm_source=llm", "/*.md$"]);
+  });
+
+  it("uses content dates for lastmod and elevates Layer B money priorities", () => {
+    const entries = sitemap();
+    const byUrl = new Map(entries.map((entry) => [entry.url, entry]));
+    const today = new Date().toISOString().slice(0, 10);
+
+    const home = byUrl.get(absoluteUrl("/"));
+    expect(home?.lastModified).toBeInstanceOf(Date);
+    expect((home?.lastModified as Date).toISOString().slice(0, 10)).not.toBe(today);
+
+    const series63 = byUrl.get(absoluteUrl("/decks/series-63-anki-deck"));
+    const polish = byUrl.get(absoluteUrl("/decks/polish-a2-certyfikat-anki-deck"));
+    expect(series63?.priority).toBe(0.99);
+    expect(polish?.priority).toBe(0.72);
+
+    const lifeHealth = byUrl.get(
+      absoluteUrl("/mock-exams/life-and-health-insurance-readiness-check"),
+    );
+    expect(lifeHealth?.priority).toBe(0.99);
   });
 });

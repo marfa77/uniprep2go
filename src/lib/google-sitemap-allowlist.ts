@@ -44,11 +44,61 @@ export const GOOGLE_SITEMAP_EXCLUDED_PATH_PREFIXES = [
   "/llms-full.txt",
 ] as const;
 
+/** Dual-track Layer B money URLs (2026-08-27) — highest sitemap priority. */
+export const LAYER_B_DECK_SLUGS = [
+  "ptcb-study-guide-2026",
+  "cfa-level-2-formula-reference-2026",
+  "series-63-anki-deck",
+] as const;
+
+export const LAYER_B_MOCK_SLUGS = [
+  "life-and-health-insurance-readiness-check",
+  "ptcb-pharmacy-technician-mock",
+  "series-63-readiness-check",
+] as const;
+
+export const LAYER_B_BLOG_SLUGS = ["life-in-the-uk-test-why-one-in-three-fail"] as const;
+
+/** Stable hub lastmod — do not stamp every deploy. Bump only when hub copy ships. */
+export const GOOGLE_SITEMAP_HUB_LASTMOD = "2026-08-27";
+
+/** Comics lastmod — freeze weekly SEO; bump only when an episode ships. */
+export const GOOGLE_SITEMAP_COMICS_LASTMOD = "2026-07-28";
+
+/** Support / intent lastmod when page has no content date field. */
+export const GOOGLE_SITEMAP_SUPPORT_LASTMOD = "2026-08-27";
+
 const MONEY_BLOG_SLUG_PATTERN =
   /finra|sie|series-|cfa|frm|servsafe|ptcb|pharmacy|excpt|california-real-estate|real-estate-dre|real-estate-psi|mrics/i;
 
+const US_MONEY_DECK_SLUG_PATTERN =
+  /sie|series-|cfa|frm|ptcb|excpt|servsafe|real-estate|insurance|life-and-health|property-casualty|gmat|gre|sat|pmp|nclex|shrm|cfp|enrolled-agent|finra/i;
+
 export function isGoogleSitemapMoneyBlogSlug(slug: string): boolean {
   return MONEY_BLOG_SLUG_PATTERN.test(slug);
+}
+
+export function parseSitemapDate(isoDate: string): Date {
+  if (/^\d{4}-\d{2}-\d{2}$/.test(isoDate)) {
+    return new Date(`${isoDate}T12:00:00.000Z`);
+  }
+  return new Date(isoDate);
+}
+
+export function deckSitemapPriority(slug: string, category: string): number {
+  if ((LAYER_B_DECK_SLUGS as readonly string[]).includes(slug)) {
+    return 0.99;
+  }
+  if (US_MONEY_DECK_SLUG_PATTERN.test(slug)) {
+    return 0.96;
+  }
+  if (category === "language") {
+    return 0.72;
+  }
+  if (category === "professional") {
+    return 0.8;
+  }
+  return 0.88;
 }
 
 export function getGoogleSitemapDeckSlugs(): string[] {
