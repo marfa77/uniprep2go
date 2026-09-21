@@ -26,7 +26,7 @@ OUT_DIR = ROOT / "landing-pages/language"
 SPECS: dict[str, dict[str, Any]] = {
     "ciple-a2-european-portuguese-anki-deck": {
         "label": "CIPLE CAPLE Portuguese Citizenship",
-        "headline": "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2026 Flashcards",
+        "headline": "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2058 Flashcards",
         "exam": "CIPLE / CAPLE A2 · Portuguese residency & citizenship",
         "hook": (
             "European Portuguese vocabulary for CIPLE / CAPLE A2 — the CAPLE diploma "
@@ -45,7 +45,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "CIPLE A2 · CAPLE A2 · autorização de residência · nacionalidade portuguesa",
         "deck_covers": (
-            "2026 PT-PT cards with headword, meaning, contextual examples, pronunciation audio, "
+            "2,058 PT-PT cards with headword, meaning, contextual examples, pronunciation audio, "
             "and image cues for everyday A2 situations."
         ),
         "not_included": (
@@ -56,19 +56,19 @@ SPECS: dict[str, dict[str, Any]] = {
             "Citizenship and residency deadlines reward consistent recall. Spaced Anki keeps "
             "high-frequency European Portuguese available under exam pressure."
         ),
-        "cards": "2026",
+        "cards": "2058",
         "format_note": "Anki .apkg with audio and images",
         "sample_captions": ["a universidade", "o escritório", "o mercado"],
         "facts": [
             ("Pathways", "CIPLE / CAPLE · residency · citizenship"),
-            ("Cards", "2026 vocabulary"),
+            ("Cards", "2058 vocabulary"),
             ("Media", "Audio + images"),
             ("Delivery", "Instant .apkg"),
         ],
     },
     "delf-b2-french-anki-deck": {
         "label": "DELF DALF TCF TEF French",
-        "headline": "DELF DALF TCF TEF French Anki Deck — 2026 Flashcards",
+        "headline": "DELF DALF TCF TEF French Anki Deck — 2100 Flashcards",
         "exam": "DELF / DALF · TCF Canada · TEF Canada · TCF ANF · TCF général · fide soft overlap",
         "hook": (
             "One French vocabulary bank for DELF / DALF diplomas, TCF/TEF Canada immigration, "
@@ -90,7 +90,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "DELF · DALF · TCF Canada · TEF Canada · TCF ANF · TCF général · fide soft",
         "deck_covers": (
-            "2026 cards pairing each headword with a visual cue, native French audio, "
+            "2,100 cards pairing each headword with a visual cue, native French audio, "
             "and a contextual example — shared core vocabulary across those exams."
         ),
         "not_included": (
@@ -101,12 +101,12 @@ SPECS: dict[str, dict[str, Any]] = {
             "French certificate and immigration scores reward fast lexical access. "
             "Daily spaced recall beats cramming word lists the week before."
         ),
-        "cards": "2026",
-        "format_note": "Anki .apkg with audio and images (~148 MB)",
+        "cards": "2100",
+        "format_note": "Anki .apkg with audio and images",
         "sample_captions": ["université", "bureau", "marché"],
         "facts": [
             ("Pathways", "DELF DALF · TCF · TEF · fide soft"),
-            ("Cards", "2026 vocabulary"),
+            ("Cards", "2100 vocabulary"),
             ("Media", "Audio + images"),
             ("Delivery", "Instant .apkg"),
         ],
@@ -155,7 +155,7 @@ SPECS: dict[str, dict[str, Any]] = {
     },
     "german-a2-anki-deck": {
         "label": "German Goethe telc ÖSD DTZ",
-        "headline": "German Goethe telc ÖSD DTZ Anki Deck — 2026 Flashcards",
+        "headline": "German Goethe telc ÖSD DTZ Anki Deck — 2101 Flashcards",
         "exam": "Goethe A2 · telc A2 · ÖSD A2 · DTZ · Einbürgerung language · fide soft",
         "hook": (
             "Shared German vocabulary for Goethe-Institut, telc, ÖSD certificates, "
@@ -177,7 +177,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "Goethe A2 · telc A2 · ÖSD A2 · DTZ · Einbürgerung language · fide soft",
         "deck_covers": (
-            "2,026 essential German words with meanings, examples, and media cues "
+            "2,101 essential German words with meanings, examples, and media cues "
             "for certificate and immigration language pathways."
         ),
         "not_included": (
@@ -188,19 +188,19 @@ SPECS: dict[str, dict[str, Any]] = {
             "A2 certificate and DTZ success depends on automatic everyday vocabulary. "
             "Spaced repetition keeps that core available under timed conditions."
         ),
-        "cards": "2026",
+        "cards": "2101",
         "format_note": "Anki .apkg with audio and images",
         "sample_captions": ["Universität", "Büro", "Markt"],
         "facts": [
             ("Pathways", "Goethe · telc · ÖSD · DTZ · fide soft"),
-            ("Cards", "2026 vocabulary"),
+            ("Cards", "2101 vocabulary"),
             ("Media", "Audio + images"),
             ("Delivery", "Instant .apkg"),
         ],
     },
     "celi-b1-italian-anki-deck": {
         "label": "CELI CILS PLIDA Italian",
-        "headline": "CELI CILS PLIDA Italian Anki Deck — 2026 Flashcards",
+        "headline": "CELI CILS PLIDA Italian Anki Deck — 2151 Flashcards",
         "exam": "CELI · CILS · PLIDA · permesso / cittadinanza language",
         "hook": (
             "Italian B1 vocabulary for CELI (Perugia), CILS (Siena), and PLIDA "
@@ -220,7 +220,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "CELI B1 · CILS B1 · PLIDA B1 · permesso · cittadinanza language",
         "deck_covers": (
-            "2,026 Italian B1 flashcards covering the shared intermediate vocabulary "
+            "2,151 Italian B1 flashcards covering the shared intermediate vocabulary "
             "and phrases across CELI, CILS, and PLIDA."
         ),
         "not_included": (
@@ -231,12 +231,12 @@ SPECS: dict[str, dict[str, Any]] = {
             "B1 certificates and immigration language checks reward automatic intermediate "
             "vocabulary. Spaced Anki keeps the shared CELI/CILS/PLIDA lexicon exam-ready."
         ),
-        "cards": "2026",
+        "cards": "2151",
         "format_note": "Anki .apkg with audio and images",
-        "sample_captions": ["Università", "Ufficio", "Mercato"],
+        "sample_captions": ["università", "ufficio", "mercato"],
         "facts": [
             ("Pathways", "CELI · CILS · PLIDA · cittadinanza language"),
-            ("Cards", "2026 vocabulary"),
+            ("Cards", "2151 vocabulary"),
             ("Media", "Audio + images"),
             ("Delivery", "Instant .apkg"),
         ],
@@ -327,7 +327,7 @@ SPECS: dict[str, dict[str, Any]] = {
     },
     "dele-a2-spanish-anki-deck": {
         "label": "DELE SIELE Spanish",
-        "headline": "DELE SIELE Spanish Anki Deck — 2026 Flashcards",
+        "headline": "DELE SIELE Spanish Anki Deck — 2105 Flashcards",
         "exam": "DELE A2 · SIELE A2 vocabulary",
         "hook": (
             "Spanish A2 vocabulary for DELE A2 and overlapping SIELE A2-style word knowledge — "
@@ -346,7 +346,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "DELE A2 · SIELE A2 vocabulary overlap",
         "deck_covers": (
-            "One .apkg with 2,026 high-frequency Spanish A2 vocabulary cards, examples, "
+            "One .apkg with 2,105 high-frequency Spanish A2 vocabulary cards, examples, "
             "and media for DELE / SIELE-style recall."
         ),
         "not_included": (
@@ -357,12 +357,12 @@ SPECS: dict[str, dict[str, Any]] = {
             "DELE and SIELE reward fast lexical access. Spaced Anki keeps high-frequency "
             "Spanish available under exam pressure."
         ),
-        "cards": "2026",
+        "cards": "2105",
         "format_note": "Single Anki .apkg (language only)",
-        "sample_captions": ["Universidad", "Oficina", "Mercado"],
+        "sample_captions": ["universidad", "oficina", "mercado"],
         "facts": [
             ("Pathways", "DELE A2 · SIELE vocabulary"),
-            ("Cards", "2026 vocabulary"),
+            ("Cards", "2105 vocabulary"),
             ("Media", "Audio + images"),
             ("Delivery", "Instant .apkg"),
         ],
@@ -384,7 +384,7 @@ SPECS: dict[str, dict[str, Any]] = {
         "about": (
             "Official Cervantes CCSE is 25 questions / 45 minutes / 60% pass. This deck is a "
             "compact 60-card MCQ companion covering DELE-adjacent language themes and CCSE "
-            "civics. For thicker DELE / SIELE vocabulary, use the standalone 2026-card DELE deck."
+            "civics. For thicker DELE / SIELE vocabulary, use the standalone 2105-card DELE deck."
         ),
         "pathways": "DELE A2 language evidence · CCSE · nacionalidad española",
         "deck_covers": (
@@ -392,7 +392,7 @@ SPECS: dict[str, dict[str, Any]] = {
             "paired with the free UniPrep2Go CCSE timed diagnostic."
         ),
         "not_included": (
-            "Official Cervantes past papers, a full 2026-card DELE vocabulary bank, or "
+            "Official Cervantes past papers, a full 2105-card DELE vocabulary bank, or "
             "guaranteed nationality outcomes — pair with official CCSE materials."
         ),
         "why_anki": (
@@ -453,7 +453,7 @@ SPECS: dict[str, dict[str, Any]] = {
     },
     "greek-a2-ellinomatheia-anki-deck": {
         "label": "Greek Ellinomatheia Residence Citizenship",
-        "headline": "Greek Ellinomatheia Residence Citizenship Anki Deck — 1000 Flashcards",
+        "headline": "Greek Ellinomatheia Residence Citizenship Anki Deck — 939 Flashcards",
         "exam": "Ellinomatheia A2 · Greek residence · citizenship language",
         "hook": (
             "Greek vocabulary for Ellinomatheia A2 and the language side of residence "
@@ -472,7 +472,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "Ellinomatheia A2 · residence · citizenship language",
         "deck_covers": (
-            "1,000 exam-specific Greek vocabulary cards with audio and practical "
+            "939 exam-specific Greek vocabulary cards with audio and practical "
             "example sentences for work, housing, services, and everyday interaction."
         ),
         "not_included": (
@@ -483,19 +483,19 @@ SPECS: dict[str, dict[str, Any]] = {
             "Residence and citizenship timelines reward consistent Greek recall. "
             "Spaced Anki keeps everyday Greek available under exam pressure."
         ),
-        "cards": "1000",
+        "cards": "939",
         "format_note": "Anki .apkg with audio and examples",
         "sample_captions": ["πανεπιστήμιο", "γραφείο", "αγορά"],
         "facts": [
             ("Pathways", "Ellinomatheia · residence · citizenship"),
-            ("Cards", "1000 vocabulary"),
+            ("Cards", "939 vocabulary"),
             ("Media", "Audio + examples"),
             ("Delivery", "Instant .apkg"),
         ],
     },
     "czech-a2-cce-anki-deck": {
         "label": "Czech CCE Residence Citizenship",
-        "headline": "Czech CCE Residence Citizenship Anki Deck — 1000 Flashcards",
+        "headline": "Czech CCE Residence Citizenship Anki Deck — 945 Flashcards",
         "exam": "CCE A2 · Czech residence · citizenship language",
         "hook": (
             "Czech vocabulary for CCE (Czech Language Certificate Exam) A2 and the language "
@@ -514,7 +514,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "CCE A2 · residence · citizenship language",
         "deck_covers": (
-            "1,000 exam-specific Czech vocabulary cards with audio and practical "
+            "945 exam-specific Czech vocabulary cards with audio and practical "
             "example sentences for work, housing, services, and everyday interaction."
         ),
         "not_included": (
@@ -525,12 +525,12 @@ SPECS: dict[str, dict[str, Any]] = {
             "Residence and citizenship timelines reward consistent Czech recall. "
             "Spaced Anki keeps everyday Czech available under exam pressure."
         ),
-        "cards": "1000",
+        "cards": "945",
         "format_note": "Anki .apkg with audio and examples",
         "sample_captions": ["univerzita", "kancelář", "trh"],
         "facts": [
             ("Pathways", "CCE · residence · citizenship"),
-            ("Cards", "1000 vocabulary"),
+            ("Cards", "945 vocabulary"),
             ("Media", "Audio + examples"),
             ("Delivery", "Instant .apkg"),
         ],
@@ -955,6 +955,48 @@ SPECS: dict[str, dict[str, Any]] = {
             ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
             ("Cards", "2504 vocabulary"),
             ("Media", "Audio + PT-BR glosses"),
+            ("Delivery", "Instant .apkg"),
+        ],
+    },
+    "ielts-toefl-english-for-turkish-speakers-anki-deck": {
+        "label": "IELTS / TOEFL English for Turkish Speakers",
+        "headline": "IELTS / TOEFL English for Turkish Speakers Anki Deck — 952 Flashcards",
+        "exam": "IELTS · TOEFL · Cambridge · PTE — for Turkish speakers",
+        "hook": (
+            "952 high-frequency English vocabulary cards with Turkish glosses, bilingual "
+            "examples, and native English audio — built for Turkish speakers preparing IELTS and TOEFL."
+        ),
+        "audience": (
+            "For Turkish-speaking IELTS, TOEFL, Cambridge, and PTE candidates who need daily "
+            "English recall with native-language support — not tourist phrase lists."
+        ),
+        "disclaimer": "IELTS / TOEFL / Cambridge / PTE bodies",
+        "about_heading": "Which English exams does this cover?",
+        "about": (
+            "IELTS, TOEFL, Cambridge English exams, and PTE share a large high-frequency "
+            "academic and general English lexicon. This deck packages that bank for Turkish "
+            "speakers: English headword, Turkish gloss, bilingual example, and English audio."
+        ),
+        "pathways": "IELTS · TOEFL · Cambridge · PTE · English for Turkish speakers",
+        "deck_covers": (
+            "952 English cards from the Prep2Go app with Turkish glosses, bilingual examples, "
+            "native English audio, and illustrations."
+        ),
+        "not_included": (
+            "Official IELTS/TOEFL practice tests, writing scorers, or speaking partners — "
+            "pair Anki with timed official practice for each exam format."
+        ),
+        "why_anki": (
+            "Exam sittings punish slow retrieval. Spaced Anki with English-first recall "
+            "(Turkish as a check) beats translating every sentence under time pressure."
+        ),
+        "cards": "952",
+        "format_note": "Anki .apkg with audio, images, and Turkish support",
+        "sample_captions": ["university", "interview", "station"],
+        "facts": [
+            ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
+            ("Cards", "952 vocabulary"),
+            ("Media", "Audio + Turkish glosses"),
             ("Delivery", "Instant .apkg"),
         ],
     },

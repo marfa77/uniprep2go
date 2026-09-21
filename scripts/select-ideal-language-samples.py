@@ -669,6 +669,35 @@ def score_row(i: int, r: dict, media: Path, crooked) -> dict | None:
     }
 
 
+def forced_pick(i: int, r: dict, media: Path) -> dict | None:
+    """Build a pick from a CSV row when --picks forces a lemma past the gate."""
+    front = (r.get("front") or "").strip().lower()
+    back = (r.get("back") or "").strip()
+    ex = r.get("example") or ""
+    if not front:
+        return None
+    tgt, nat = split_example(ex)
+    img_name = r.get("image_file") or ""
+    aud_name = r.get("audio_file") or ""
+    img = media / img_name
+    aud = media / aud_name
+    if not img.exists() or not aud.exists():
+        return None
+    return {
+        "rank": i,
+        "front": front,
+        "back": back,
+        "exampleTarget": tgt,
+        "exampleNative": nat,
+        "example": ex,
+        "image_file": img_name,
+        "audio_file": aud_name,
+        "image_bytes": img.stat().st_size,
+        "theme": theme_of(front, tgt),
+        "score": 0.0,
+    }
+
+
 def diversify(cands: list[dict], n: int = 3) -> list[dict]:
     """Greedy: highest score, then fill missing themes, else next best unique front."""
     picked: list[dict] = []
@@ -794,10 +823,21 @@ def main() -> int:
     if args.picks.strip():
         want = [w.strip().lower() for w in args.picks.split(",") if w.strip()]
         by_front = {c["front"]: c for c in cands}
+        # Forced picks after visual review: allow CSV rows that fail the
+        # candidate gate (e.g. Markt only appears inside Freiluftmarkt).
+        missing = [w for w in want if w not in by_front]
+        if missing:
+            for i, r in enumerate(rows):
+                front = (r.get("front") or "").strip().lower()
+                if front not in missing:
+                    continue
+                scored = forced_pick(i, r, media)
+                if scored:
+                    by_front[scored["front"]] = scored
         picks = []
         for w in want:
             if w not in by_front:
-                print(f"ERROR: pick {w!r} not in candidates", file=sys.stderr)
+                print(f"ERROR: pick {w!r} not in CSV/media", file=sys.stderr)
                 return 2
             picks.append(by_front[w])
     else:

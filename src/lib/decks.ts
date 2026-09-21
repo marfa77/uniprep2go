@@ -297,18 +297,6 @@ const prep2GoAdditionalLanguageDecks: Deck[] = [
     status: "planned",
   }),
   buildPrep2GoLanguageDeck({
-    slug: "ielts-toefl-english-for-turkish-speakers-anki-deck",
-    title: "IELTS / TOEFL English for Turkish Speakers Anki Deck — 952 Flashcards",
-    shortName: "IELTS / TOEFL English for Turkish Speakers",
-    description: "English exam vocabulary for IELTS, TOEFL, Cambridge, and PTE with Turkish support, bilingual cards, and native English audio examples.",
-    cards: "952",
-    focus: "IELTS, TOEFL, Cambridge, and PTE English vocabulary",
-    topics: "IELTS and TOEFL English vocabulary with Turkish bilingual support",
-    audience: "Turkish-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
-    coverImage: "/samples/prep2go-ielts-toefl-english-for-turkish-speakers-cover.webp",
-    status: "planned",
-  }),
-  buildPrep2GoLanguageDeck({
     slug: "japanese-survival-phrases-anki-deck",
     title: "Japanese Survival Phrases Anki Deck — 300 Flashcards",
     shortName: "Japanese Survival Phrases",
@@ -1399,12 +1387,12 @@ const rawDecks: Deck[] = [
     slug: "ciple-a2-european-portuguese-anki-deck",
     category: "language",
     status: "available",
-    title: "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2026 Flashcards",
+    title: "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2058 Flashcards",
     shortName: "CIPLE CAPLE Portuguese",
     subtitle:
-      "2026 European Portuguese flashcards for CIPLE / CAPLE A2, Portuguese residency, and citizenship (nacionalidade).",
+      "2,058 European Portuguese flashcards for CIPLE / CAPLE A2, Portuguese residency, and citizenship (nacionalidade).",
     directAnswer:
-      "UniPrep2Go sells a CIPLE / CAPLE Portuguese Anki deck with 2026 European Portuguese flashcards for the CAPLE CIPLE A2 certificate used in Portuguese residency (autorização de residência) and citizenship (nacionalidade portuguesa) applications. Cards focus on PT-PT vocabulary, short phrases, contextual examples, and pronunciation audio. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank for CAPLE A2 diploma and Portugal immigration pathways.",
+      "UniPrep2Go sells a CIPLE / CAPLE Portuguese Anki deck with 2,058 European Portuguese flashcards for the CAPLE CIPLE A2 certificate used in Portuguese residency (autorização de residência) and citizenship (nacionalidade portuguesa) applications. Cards focus on PT-PT vocabulary, short phrases, contextual examples, and pronunciation audio. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank for CAPLE A2 diploma and Portugal immigration pathways.",
     lastUpdated: "2026-09-21",
     audience: "CIPLE / CAPLE A2 candidates, Portuguese residency and citizenship applicants, and European Portuguese self-learners.",
     format: ".apkg",
@@ -1413,7 +1401,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2026",
+      cards: "2058",
       topics: "CIPLE, CAPLE A2, Portuguese residency and citizenship vocabulary",
       formulas: "Audio pronunciation + contextual examples (PT-PT)",
       examYear: "Current CAPLE / Portuguese nationality cycle",
@@ -1463,7 +1451,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "2026 Anki cards with European Portuguese vocabulary, phrases, contextual examples, audio pronunciation, and images where helpful.",
+          "2,058 Anki cards with European Portuguese vocabulary, phrases, contextual examples, audio pronunciation, and images where helpful.",
       },
       {
         question: "What file format is delivered?",
@@ -1475,12 +1463,12 @@ const rawDecks: Deck[] = [
     slug: "delf-b2-french-anki-deck",
     category: "language",
     status: "available",
-    title: "DELF DALF TCF TEF French Anki Deck — 2026 Flashcards",
+    title: "DELF DALF TCF TEF French Anki Deck — 2100 Flashcards",
     shortName: "DELF DALF TCF TEF French",
     subtitle:
-      "2026 French vocabulary flashcards for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, TCF général — plus shared lexicon useful for fide / Swiss residency French and everyday Belgian French.",
+      "2,100 French vocabulary flashcards for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, TCF général — plus shared lexicon useful for fide / Swiss residency French and everyday Belgian French.",
     directAnswer:
-      "UniPrep2Go sells a French Anki deck with 2026 flashcards for DELF / DALF (lifetime diploma track), TCF Canada and TEF Canada (Express Entry / Quebec immigration), TCF ANF (French naturalization), and TCF général (French university admission). The same high-frequency lexicon also supports fide / Swiss residency French language prep and everyday Belgian French work-and-life vocabulary — not a Swiss civics or official fide format pack. Each card pairs a headword with a visual cue, native French audio, and a contextual example. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank covering the main French certificate and immigration pathways.",
+      "UniPrep2Go sells a French Anki deck with 2,100 flashcards for DELF / DALF (lifetime diploma track), TCF Canada and TEF Canada (Express Entry / Quebec immigration), TCF ANF (French naturalization), and TCF général (French university admission). The same high-frequency lexicon also supports fide / Swiss residency French language prep and everyday Belgian French work-and-life vocabulary — not a Swiss civics or official fide format pack. Each card pairs a headword with a visual cue, native French audio, and a contextual example. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank covering the main French certificate and immigration pathways.",
     lastUpdated: "2026-09-21",
     audience:
       "DELF / DALF candidates, TCF Canada and TEF Canada immigration applicants, TCF ANF naturalization candidates, TCF général university applicants, and learners needing high-frequency French for fide / Swiss residency or Belgian everyday pathways.",
@@ -1490,12 +1478,12 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2026",
+      cards: "2100",
       topics:
         "DELF, DALF, TCF Canada, TEF Canada, TCF ANF, TCF général; soft overlap for fide / Swiss residency French and Belgian everyday French",
       formulas: "Native audio + visual image + contextual example per card",
       examYear: "Current DELF / DALF / TCF / TEF cycles",
-      delivery: "Digital download through Gumroad (148 MB)",
+      delivery: "Digital download through Gumroad",
     },
     topicCoverage: [],
     sampleCards: [
@@ -1540,7 +1528,7 @@ const rawDecks: Deck[] = [
       {
         question: "How many cards does the deck have?",
         answer:
-          "2026 cards covering the high-frequency French vocabulary you need for DELF, DALF, TCF, and TEF prep — not grammar lectures.",
+          "2,100 cards covering the high-frequency French vocabulary you need for DELF, DALF, TCF, and TEF prep — not grammar lectures.",
       },
       {
         question: "What file format is delivered?",
@@ -1616,12 +1604,12 @@ const rawDecks: Deck[] = [
     slug: "german-a2-anki-deck",
     category: "language",
     status: "available",
-    title: "German Goethe telc ÖSD DTZ Anki Deck — 2026 Flashcards",
+    title: "German Goethe telc ÖSD DTZ Anki Deck — 2101 Flashcards",
     shortName: "German Goethe telc ÖSD DTZ",
     subtitle:
-      "2026 German A2–B1 flashcards for Goethe-Institut, telc, ÖSD, and DTZ — plus shared lexicon useful for residence / Einbürgerung language and fide / Swiss residency German.",
+      "2,101 German A2–B1 flashcards for Goethe-Institut, telc, ÖSD, and DTZ — plus shared lexicon useful for residence / Einbürgerung language and fide / Swiss residency German.",
     directAnswer:
-      "UniPrep2Go sells a German Anki deck with 2026 essential words for Goethe-Institut A2, telc Deutsch A2, ÖSD Zertifikat A2, and DTZ (Deutsch-Test für Zuwanderer) immigrant integration vocabulary. The same A2–B1 lexicon overlaps everyday German used toward residence and Einbürgerung language expectations and fide / Swiss residency German prep — not a Leben in Deutschland civics deck or official fide format pack. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one shared vocabulary bank across the main German certificate and immigration pathways, not a tourist phrase pack.",
+      "UniPrep2Go sells a German Anki deck with 2,101 essential words for Goethe-Institut A2, telc Deutsch A2, ÖSD Zertifikat A2, and DTZ (Deutsch-Test für Zuwanderer) immigrant integration vocabulary. The same A2–B1 lexicon overlaps everyday German used toward residence and Einbürgerung language expectations and fide / Swiss residency German prep — not a Leben in Deutschland civics deck or official fide format pack. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one shared vocabulary bank across the main German certificate and immigration pathways, not a tourist phrase pack.",
     lastUpdated: "2026-09-21",
     audience:
       "Goethe A2, telc A2, ÖSD A2, and DTZ learners, plus applicants building German for residence / Einbürgerung language or fide / Swiss residency pathways.",
@@ -1631,7 +1619,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2026",
+      cards: "2101",
       topics:
         "Goethe-Institut A2, telc Deutsch A2, ÖSD A2, DTZ; soft overlap for residence / Einbürgerung language and fide / Swiss residency German",
       formulas: "Essential words with examples for integration and certificate prep",
@@ -1683,12 +1671,12 @@ const rawDecks: Deck[] = [
     slug: "celi-b1-italian-anki-deck",
     category: "language",
     status: "available",
-    title: "CELI CILS PLIDA Italian Anki Deck — 2026 Flashcards",
+    title: "CELI CILS PLIDA Italian Anki Deck — 2151 Flashcards",
     shortName: "CELI CILS PLIDA Italian",
     subtitle:
-      "2,026 Italian B1 flashcards for CELI, CILS, and PLIDA — including vocabulary overlap used for permesso di soggiorno and cittadinanza language pathways.",
+      "2,151 Italian B1 flashcards for CELI, CILS, and PLIDA — including vocabulary overlap used for permesso di soggiorno and cittadinanza language pathways.",
     directAnswer:
-      "UniPrep2Go sells an Italian B1 Anki deck with 2,026 flashcards for CELI (Università per Stranieri di Perugia), CILS (Università per Stranieri di Siena), and PLIDA (Società Dante Alighieri). Cards target the shared B1 vocabulary and phrase bank across those certificates, including the lexicon overlap used for permesso di soggiorno and cittadinanza language requirements (including CILS B1 cittadinanza-adjacent pathways). It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary deck for the main Italian B1 and immigration-language pathways, not an Italian civics quiz.",
+      "UniPrep2Go sells an Italian B1 Anki deck with 2,151 flashcards for CELI (Università per Stranieri di Perugia), CILS (Università per Stranieri di Siena), and PLIDA (Società Dante Alighieri). Cards target the shared B1 vocabulary and phrase bank across those certificates, including the lexicon overlap used for permesso di soggiorno and cittadinanza language requirements (including CILS B1 cittadinanza-adjacent pathways). It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary deck for the main Italian B1 and immigration-language pathways, not an Italian civics quiz.",
     lastUpdated: "2026-09-21",
     audience:
       "CELI, CILS, and PLIDA B1 candidates plus applicants building Italian for permesso di soggiorno or cittadinanza language requirements.",
@@ -1698,7 +1686,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2026",
+      cards: "2151",
       topics:
         "CELI, CILS, PLIDA B1 Italian vocabulary; permesso di soggiorno and cittadinanza language overlap",
       formulas: "Exam-focused B1 vocabulary shared across Italian certificates",
@@ -1737,7 +1725,7 @@ const rawDecks: Deck[] = [
       },
       {
         question: "How many cards does the deck have?",
-        answer: "2,026 cards covering B1-level Italian vocabulary for CELI, CILS, and PLIDA preparation.",
+        answer: "2,151 cards covering B1-level Italian vocabulary for CELI, CILS, and PLIDA preparation.",
       },
       {
         question: "What file format is delivered?",
@@ -1898,12 +1886,12 @@ const rawDecks: Deck[] = [
     slug: "greek-a2-ellinomatheia-anki-deck",
     category: "language",
     status: "available",
-    title: "Greek Ellinomatheia Residence Citizenship Anki Deck — 1000 Flashcards",
+    title: "Greek Ellinomatheia Residence Citizenship Anki Deck — 939 Flashcards",
     shortName: "Greek Ellinomatheia",
     subtitle:
-      "1,000 Greek flashcards for Ellinomatheia A2 and Greek residence or citizenship language prep.",
+      "939 Greek flashcards for Ellinomatheia A2 and Greek residence or citizenship language prep.",
     directAnswer:
-      "UniPrep2Go sells a Greek Ellinomatheia Anki deck with 1,000 exam-specific vocabulary cards, audio, and practical example sentences for work, housing, services, and everyday interaction in Greece. Built for Ellinomatheia A2 and the language side of residence and citizenship pathways. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+      "UniPrep2Go sells a Greek Ellinomatheia Anki deck with 939 exam-specific vocabulary cards, audio, and practical example sentences for work, housing, services, and everyday interaction in Greece. Built for Ellinomatheia A2 and the language side of residence and citizenship pathways. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
     lastUpdated: "2026-09-21",
     audience:
       "Ellinomatheia learners and applicants preparing Greek for residence or citizenship language requirements.",
@@ -1913,7 +1901,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "1000",
+      cards: "939",
       topics: "Ellinomatheia A2, Greek residence and citizenship vocabulary",
       formulas: "Audio + example sentences for Ellinomatheia and daily-life themes",
       examYear: "Current Ellinomatheia / residence-citizenship cycle",
@@ -1935,7 +1923,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "1,000 exam-specific Greek vocabulary words for Ellinomatheia with audio and Anki-ready review.",
+          "939 exam-specific Greek vocabulary words for Ellinomatheia with audio and Anki-ready review.",
       },
       {
         question: "What file format is delivered?",
@@ -1947,12 +1935,12 @@ const rawDecks: Deck[] = [
     slug: "czech-a2-cce-anki-deck",
     category: "language",
     status: "available",
-    title: "Czech CCE Residence Citizenship Anki Deck — 1000 Flashcards",
+    title: "Czech CCE Residence Citizenship Anki Deck — 945 Flashcards",
     shortName: "Czech CCE",
     subtitle:
-      "1,000 Czech flashcards for CCE A2 and Czech residence or citizenship language prep.",
+      "945 Czech flashcards for CCE A2 and Czech residence or citizenship language prep.",
     directAnswer:
-      "UniPrep2Go sells a Czech CCE Anki deck with 1,000 exam-specific vocabulary cards, audio, and practical example sentences for work, housing, services, and everyday interaction in Czechia. Built for CCE (Czech Language Certificate Exam) A2 and the language side of residence and citizenship pathways. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+      "UniPrep2Go sells a Czech CCE Anki deck with 945 exam-specific vocabulary cards, audio, and practical example sentences for work, housing, services, and everyday interaction in Czechia. Built for CCE (Czech Language Certificate Exam) A2 and the language side of residence and citizenship pathways. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
     lastUpdated: "2026-09-21",
     audience:
       "CCE learners and applicants preparing Czech for residence or citizenship language requirements.",
@@ -1962,7 +1950,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "1000",
+      cards: "945",
       topics: "CCE A2, Czech residence and citizenship vocabulary",
       formulas: "Audio + example sentences for CCE and daily-life themes",
       examYear: "Current CCE / residence-citizenship cycle",
@@ -1984,7 +1972,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "1,000 exam-specific Czech vocabulary words for CCE with audio and Anki-ready review.",
+          "945 exam-specific Czech vocabulary words for CCE with audio and Anki-ready review.",
       },
       {
         question: "What file format is delivered?",
@@ -2757,16 +2745,71 @@ const rawDecks: Deck[] = [
   },
 
   {
+    slug: "ielts-toefl-english-for-turkish-speakers-anki-deck",
+    category: "language",
+    status: "available",
+    title: "IELTS / TOEFL English for Turkish Speakers Anki Deck — 952 Flashcards",
+    shortName: "IELTS / TOEFL English for Turkish Speakers",
+    subtitle:
+      "952 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Turkish support on every card.",
+    directAnswer:
+      "UniPrep2Go sells an IELTS / TOEFL English for Turkish Speakers Anki deck with 952 high-frequency English vocabulary cards, Turkish glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Turkish-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-09-21",
+    audience:
+      "Turkish-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
+    format: ".apkg",
+    coverImage: "/covers/ielts-toefl-english-for-turkish-speakers-anki-deck.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/ielts-toefl-english-for-turkish-speakers-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "952",
+      topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with Turkish bilingual support",
+      formulas: "Audio + Turkish glosses + bilingual example sentences",
+      examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [],
+    faqs: [
+      {
+        question: "Which English exams does this deck support?",
+        answer:
+          "IELTS, TOEFL, Cambridge English exams, and PTE — as a shared high-frequency English vocabulary bank with Turkish support. Pair Anki with official practice tests for each exam's format.",
+      },
+      {
+        question: "Does this help IRCC, UKVI, or academic English pathways?",
+        answer:
+          "Yes as shared high-frequency English vocabulary used across IELTS (including common IRCC and UKVI sittings), TOEFL, Cambridge, and PTE academic pathways. Confirm the exact test version your case requires — this deck trains word knowledge, not each board's listening/speaking format.",
+      },
+      {
+        question: "What does the deck include?",
+        answer:
+          "952 English vocabulary cards from the Prep2Go app: Turkish glosses, bilingual examples, native English audio, and illustrations.",
+      },
+      {
+        question: "Is this the same as the French- or Arabic-speaker English Anki pages?",
+        answer:
+          "No. Sibling UniPrep English decks share an exam-frequency spine but use different gloss languages. This listing is Turkish only. Other English-for-X editions are separate products with their own sample cards and Gumroad permalinks.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
+      },
+    ],
+  },
+
+  {
     slug: "dele-a2-spanish-anki-deck",
     category: "language",
     status: "available",
-    title: "DELE SIELE Spanish Anki Deck — 2026 Flashcards",
+    title: "DELE SIELE Spanish Anki Deck — 2105 Flashcards",
 
     shortName: "DELE SIELE Spanish",
     subtitle:
-      "2,026 Spanish A2 vocabulary flashcards for DELE A2 and SIELE A2-style word knowledge — language only, not a CCSE civics bundle.",
+      "2,105 Spanish A2 vocabulary flashcards for DELE A2 and SIELE A2-style word knowledge — language only, not a CCSE civics bundle.",
     directAnswer:
-      "UniPrep2Go sells a Spanish Anki deck with 2,026 high-frequency A2 vocabulary cards for DELE A2 (Instituto Cervantes) and overlapping SIELE A2-style word knowledge. Each card targets exam-ready Spanish recall with examples and media where included. It is delivered as a single Anki .apkg file for {PRICE} through Gumroad by PixID Studio — DELE / SIELE vocabulary only, not a DELE + CCSE nationality bundle.",
+      "UniPrep2Go sells a Spanish Anki deck with 2,105 high-frequency A2 vocabulary cards for DELE A2 (Instituto Cervantes) and overlapping SIELE A2-style word knowledge. Each card targets exam-ready Spanish recall with examples and media where included. It is delivered as a single Anki .apkg file for {PRICE} through Gumroad by PixID Studio — DELE / SIELE vocabulary only, not a DELE + CCSE nationality bundle.",
     lastUpdated: "2026-09-21",
     audience:
       "DELE A2 candidates and learners building SIELE A2-overlapping Spanish vocabulary with spaced repetition.",
@@ -2776,7 +2819,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2026",
+      cards: "2105",
       topics: "DELE A2, SIELE A2-overlapping Spanish vocabulary",
       formulas: "High-frequency A2 vocabulary with examples and media",
       examYear: "Current DELE A2 / SIELE cycle",
@@ -2820,7 +2863,7 @@ const rawDecks: Deck[] = [
     subtitle:
       "Compact 60-card DELE-adjacent + CCSE civics .apkg — not a full Cervantes substitute.",
     directAnswer:
-      "UniPrep2Go sells a compact DELE A2 + CCSE Spanish nationality Anki deck with 60 MCQ cards plus a free 60-question CCSE timed diagnostic. Official Cervantes CCSE is 25 questions / 45 minutes / 60%. For thicker DELE / SIELE vocabulary use the standalone 2026-card listing. Delivered as an Anki .apkg for {PRICE} through Gumroad.",
+      "UniPrep2Go sells a compact DELE A2 + CCSE Spanish nationality Anki deck with 60 MCQ cards plus a free 60-question CCSE timed diagnostic. Official Cervantes CCSE is 25 questions / 45 minutes / 60%. For thicker DELE / SIELE vocabulary use the standalone 2105-card listing. Delivered as an Anki .apkg for {PRICE} through Gumroad.",
     lastUpdated: "2026-08-23",
     audience: "Spanish nationality applicants preparing DELE A2 language evidence plus CCSE civics.",
     format: ".apkg",
@@ -2841,7 +2884,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this a full DELE + CCSE nationality course?",
         answer:
-          "No. This is a compact 60-card companion (DELE-adjacent language themes + CCSE civics). Official CCSE is 25 questions / 45 minutes / 60%. For thicker DELE / SIELE vocabulary buy the standalone 2026-card DELE SIELE Anki deck.",
+          "No. This is a compact 60-card companion (DELE-adjacent language themes + CCSE civics). Official CCSE is 25 questions / 45 minutes / 60%. For thicker DELE / SIELE vocabulary buy the standalone 2105-card DELE SIELE Anki deck.",
       },
       {
         question: "Is there a free CCSE practice test?",
@@ -4949,6 +4992,7 @@ export const RELATED_DECK_PEER_GROUPS: string[][] = [
     "ielts-toefl-english-for-ukrainian-speakers-anki-deck",
     "ielts-toefl-english-for-french-speakers-anki-deck",
     "ielts-toefl-english-for-arabic-speakers-anki-deck",
+    "ielts-toefl-english-for-turkish-speakers-anki-deck",
   ],
   // CIPLE (PT-PT nationality) ↔ English-for-Brazilians (IELTS/TOEFL) — wrong-product pair.
   ["ciple-a2-european-portuguese-anki-deck", "ielts-toefl-english-for-portuguese-speakers-anki-deck"],

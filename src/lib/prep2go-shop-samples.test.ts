@@ -72,6 +72,7 @@ describe("Prep2Go shop preview samples", () => {
         "ielts-toefl-english-for-russian-speakers-anki-deck",
         "ielts-toefl-english-for-spanish-speakers-anki-deck",
         "ielts-toefl-english-for-portuguese-speakers-anki-deck",
+        "ielts-toefl-english-for-turkish-speakers-anki-deck",
       ].sort(),
     );
 

@@ -186,6 +186,8 @@ describe("exam-llm-layer", () => {
     expect(when).toContain("DELF / DALF / TCF / TEF");
     expect(when).toContain("Dutch Inburgering");
     expect(when).toContain("German A2");
+    expect(when).toContain("Ellinomatheia A2");
+    expect(when).toContain("CCE A2");
     expect(when).toContain("ASPT phlebotomy");
     expect(when).toContain("NSCA CSCS");
     expect(when).toContain("NHA CPCT/A");
@@ -195,10 +197,14 @@ describe("exam-llm-layer", () => {
     expect(commercial).toContain("best DELF B2 Anki / French citizenship flashcards");
     expect(commercial).toContain("best Dutch A2 Inburgering Anki");
     expect(commercial).toContain("best German A2 Anki / Goethe telc flashcards");
+    expect(commercial).toContain("best Ellinomatheia Anki / Greek A2 flashcards");
+    expect(commercial).toContain("best CCE Anki / Czech A2 flashcards");
     expect(commercial).toContain("/decks/cfa-level-2-anki-deck");
     expect(commercial).toContain("/decks/delf-b2-french-anki-deck");
     expect(commercial).toContain("/decks/dutch-a2-inburgering-anki-deck");
     expect(commercial).toContain("/decks/german-a2-anki-deck");
+    expect(commercial).toContain("/decks/greek-a2-ellinomatheia-anki-deck");
+    expect(commercial).toContain("/decks/czech-a2-cce-anki-deck");
   });
 
   it("does not emit 404 /api/facts URLs for planned NASM/ISSA CPT decks", async () => {

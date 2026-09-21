@@ -75,12 +75,13 @@ describe("intent pages visibility", () => {
     expect(page?.directAnswer).toContain("IELTS / TOEFL English for Russian Speakers");
     expect(page?.directAnswer).toContain("IELTS / TOEFL English for Spanish Speakers (LatAm)");
     expect(page?.directAnswer).toContain("IELTS / TOEFL English for Portuguese Speakers (BR)");
-    expect(page?.directAnswer).toContain("twenty-one curated");
+    expect(page?.directAnswer).toContain("IELTS / TOEFL English for Turkish Speakers");
+    expect(page?.directAnswer).toContain("twenty-two curated");
     expect(page?.directAnswer).toContain("DELF DALF TCF TEF French");
     expect(page?.directAnswer).toContain("CELI CILS PLIDA Italian");
     expect(page?.directAnswer).not.toContain("DELE CCSE");
     expect(page?.directAnswer).toContain("DELE SIELE Spanish");
-    expect(page?.directAnswer).toContain("twenty-one curated multi-pathway language Anki decks");
+    expect(page?.directAnswer).toContain("twenty-two curated multi-pathway language Anki decks");
     expect(page?.directAnswer).toContain("German A2 for Ukrainian Speakers");
     expect(page?.directAnswer).toContain("German A2 for Russian Speakers");
     expect(page?.directAnswer).toContain("Polish A2 Certyfikat");

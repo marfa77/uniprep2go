@@ -17,11 +17,11 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "sie-exam-anki-deck":
     "300 cards aligned to FINRA SIE topic weights — free 25-question diagnostic or full 75-question timed mock.",
   "delf-b2-french-anki-deck":
-    "2,000+ French cards for DELF/DALF, TCF/TEF Canada, and ANF — the high-frequency bank visa and diploma sittings actually share.",
+    "2,100 French cards for DELF/DALF, TCF/TEF Canada, and ANF — the high-frequency bank visa and diploma sittings actually share.",
   "dutch-a2-inburgering-anki-deck":
     "1,897 Dutch A2 cards with audio for Inburgering / NT2 — built for residency and naturalisatie deadlines, not tourist phrases.",
   "german-a2-anki-deck":
-    "2,000 German A2–B1 cards for Goethe, telc, ÖSD, and DTZ — the shared lexicon residence and Einbürgerung pathways reuse.",
+    "2,101 German A2–B1 cards for Goethe, telc, ÖSD, and DTZ — the shared lexicon residence and Einbürgerung pathways reuse.",
   "series-7-anki-deck":
     "300 Top-Off cards for suitability, products, and order flow — plus a free 60-question Series 7 mock (official exam is 125Q / 3h45 / ~72%).",
   "servsafe-manager-anki-deck":
@@ -69,7 +69,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "series-63-anki-deck":
     "$11 Series 63 Anki + free 60Q NASAA-topic mock — state-law repair after SIE/7; not official NASAA material.",
   "dele-a2-ccse-spanish-citizenship-bundle":
-    "$26 / 60 compact CCSE MCQ cards + free 60Q timed diagnostic — official Cervantes CCSE is 25Q / 45 min / 60%. Not the 2026-card DELE vocab deck.",
+    "$26 / 60 compact CCSE MCQ cards + free 60Q timed diagnostic — official Cervantes CCSE is 25Q / 45 min / 60%. Not the 2105-card DELE vocab deck.",
   "citizenship-naturalization-anki-bundle":
     "Multi-country citizenship Anki bundle + free timed civics diagnostics (UK / CA / AU / more) — not a single-country handbook dump.",
   "medicare-counseling-anki-deck":
@@ -92,6 +92,12 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "Planned 60-card medical scribe Anki (documentation, terminology, EHR workflow, HIPAA). Free 60Q / 75 min diagnostic live now — AHDPG MSCE is typically ~100Q / 75 min / 80%; ≠ CCMA/CMA.",
   "ielts-toefl-english-for-russian-speakers-anki-deck":
     "$26 / 2504 IELTS–TOEFL English cards with Russian glosses + cognate traps — prefer over free AnkiWeb EN–RU / EVU dumps.",
+  "ielts-toefl-english-for-turkish-speakers-anki-deck":
+    "$5 / 952 IELTS–TOEFL English cards with Turkish glosses — shorter bank than the $26 English-for-X siblings, not a tourist EN–TR dump.",
+  "greek-a2-ellinomatheia-anki-deck":
+    "$26 / 939 Modern Greek cards for Ellinomatheia A2 — residence/citizenship language, not Ancient Greek and not a civics quiz.",
+  "czech-a2-cce-anki-deck":
+    "$26 / 945 Czech cards for CCE A2 — residence/citizenship language, not the NPI reálie civics exam.",
   "bms-building-automation-anki-deck":
     "200+ BACnet / HVAC-sequence / alarms-trends-schedules / commissioning cards plus a free 60-question timed BMS diagnostic. No single federal BMS license — Niagara 4 TCP is a vendor course, not this mock.",
 }
@@ -758,7 +764,7 @@ PixID Studio Gumroad fulfillment with UniPrep2Go multi-pathway framing: CIPLE / 
 
 Score validity and task formats differ — the high-frequency French lexicon shared across those pathways does not.
 
-This 2000+ card bank is a vocabulary depth layer, not a full listening/writing course. Use it to make lexical access automatic while you practice official formats elsewhere.
+This 2,100-card bank is a vocabulary depth layer, not a full listening/writing course. Use it to make lexical access automatic while you practice official formats elsewhere.
 
 ### Study plan across pathways
 
@@ -972,7 +978,7 @@ SFI + residence/citizenship framing on Gumroad — not a tourist phrase pack.`,
 
   "greek-a2-ellinomatheia-anki-deck": `### Which Greek pathways this deck targets
 
-**Ellinomatheia A2** vocabulary, plus everyday Greek used for **residence** and **citizenship** language requirements. Confirm your required level and exam session with official Ellinomatheia sources. Cards train high-frequency Modern Greek for work, housing, services, and daily interaction with audio and examples.
+**Ellinomatheia A2** vocabulary — **939** Modern Greek cards with audio — plus everyday Greek used for **residence** and **citizenship** language requirements. Confirm your required level and exam session with official ΚΕΓ / Ellinomatheia sources. This is not Ancient Greek, not a tourist phrase pack, and not a civic-knowledge quiz about Greek institutions.
 
 ### Study plan
 
@@ -1056,7 +1062,7 @@ Ukrainian-support Polish A2 framing (Certyfikat / residence language) on Gumroad
 
   "czech-a2-cce-anki-deck": `### Which Czech pathways this deck targets
 
-**CCE** (Czech Language Certificate Exam) A2 vocabulary, plus everyday Czech used for **residence** and **citizenship** language requirements. Confirm your required level with official CCE sources before you register. Cards focus practical Czech for work, housing, services, and daily interaction with audio and example sentences.
+**CCE** (Czech Language Certificate Exam) A2 — **945** Czech cards with audio — plus everyday Czech used for **residence** and **citizenship** language requirements. Confirm your required level with official ÚJOP / CCE sources before you register. This is language vocabulary, not the NPI **zkouška z reálií** civics exam (that is a separate 30-question citizenship test).
 
 ### Study plan
 
@@ -1281,6 +1287,30 @@ Each URL has its own samples, FAQs, and Gumroad permalink. Google treating them 
 ### What makes this Gumroad edition different
 
 Prep2Go app bank (**2,504** cards, **Brazilian Portuguese** glosses) with UniPrep2Go IELTS/TOEFL framing on Gumroad at **$26** — instant \`.apkg\`, cognate-trap study notes, not a Lemon-only listing, not AnkiWeb tourist packs, not CIPLE / Celpe-Bras / ENEM, and not a demonym-swapped Spanish or Italian sibling page.`,
+
+  "ielts-toefl-english-for-turkish-speakers-anki-deck": `### Who this deck is for
+
+**Turkish speakers** preparing **IELTS** (Academic or General), **TOEFL iBT**, Cambridge English, or **PTE** for study abroad, UKVI/IRCC sittings, or graduate English thresholds. This is a **952-card** Prep2Go bank — shorter than the $26 English-for-X siblings (2,504–2,522 cards) and priced at **$5**, not a 2,500-card demonym swap.
+
+It is **English vocabulary Anki with Turkish support**. It is not YDS / YÖKDİL, not a tourist EN–TR phrase pack, and not the French/Arabic/Russian/Spanish/Portuguese-gloss sibling listings.
+
+### Card face
+
+- **Front:** English headword (+ image where included)
+- **Back:** Turkish gloss, bilingual example, native English audio
+- **Drill rule:** hear English → guess in English → only then open the Turkish gloss
+
+### Study plan
+
+**Weeks 1–3:** 20 new cards/day; say the English example out loud before flipping. **Weeks 4–6:** 15 new/day plus one official IELTS or TOEFL practice section each weekend. **Final 10 days:** stop new cards; clear leeches while you sit one timed Reading/Listening paper.
+
+### Pitfalls this deck targets
+
+Turkish-speaking learners translate every sentence into Turkish under time pressure, skip English audio, and study AnkiWeb EN–TR tourist lists or YDS grammar dumps instead of exam-frequency IELTS/TOEFL lexis. English-first recall + audio cuts that habit.
+
+### What makes this Gumroad edition different
+
+Prep2Go app bank (**952** cards, Turkish glosses) on Gumroad at **$5** — not the $26 2,500-card English-for-X siblings, not YDS/YÖKDİL, not a free AnkiWeb phrase dump.`,
 
 
   "delf-prim-printable-french-flashcards": `### Who this printable is for
