@@ -950,7 +950,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "cards": "2466",
         "format_note": "Anki .apkg with audio, images, and Brazilian Portuguese support",
-        "sample_captions": ["be", "i", "you"],
+        "sample_captions": ["university", "interview", "station"],
         "facts": [
             ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
             ("Cards", "2466 vocabulary"),

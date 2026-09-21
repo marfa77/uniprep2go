@@ -1,0 +1,39 @@
+# Ideal selling samples on language deck rebuild
+
+When rebuilding a Prep2Go / Anki language deck from the app DB (export → drop-crooked → apkg → Gumroad → UniPrep):
+
+## Do not
+
+- Use the first 3 CSV rows (`be` / `i` / `you` or L1 equivalents). Frequency order ≠ selling samples.
+- Ship stamp leftover examples as previews.
+- Skip visual check of the three JPGs before `--apply` / Gumroad `--force-cdn`.
+
+## Do
+
+1. After `source.csv` is final, run:
+
+```bash
+python3 scripts/select-ideal-language-samples.py \
+  --deck-dir "/Users/pavelveselov/Projects/Anki Generator/out/prep2go_<Deck>" \
+  --shop-key <ShopPreviewKey> \
+  --slug <uniprep-slug> \
+  --print-top 20
+```
+
+2. Visually confirm 3 picks (image matches headword; not wrong sense). Prefer theme mix: education + work + daily for IELTS EN-* decks.
+3. Apply:
+
+```bash
+python3 scripts/select-ideal-language-samples.py ... \
+  --picks word1,word2,word3 --apply
+```
+
+4. Update Gumroad landing `sample_captions` if needed; `--force-cdn` + site sample webps.
+
+## Ideal-sample criteria (summary)
+
+Hard: media present, clean bilingual example, headword in target sentence, not function/basic lemma, no stamp templates.  
+Soft: mid-frequency, concrete/visualizable, noun gloss cues, larger image.  
+Diversity: distinct themes for the SKU story (not three near-synonyms).
+
+Full rules live in the script docstring.

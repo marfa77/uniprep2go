@@ -697,7 +697,7 @@ describe("deck catalog", () => {
       "ielts-toefl-english-for-ukrainian-speakers-anki-deck": ["be", "i", "you"],
       "ielts-toefl-english-for-russian-speakers-anki-deck": ["be", "i", "you"],
       "ielts-toefl-english-for-spanish-speakers-anki-deck": ["be", "i", "you"],
-      "ielts-toefl-english-for-portuguese-speakers-anki-deck": ["be", "i", "you"],
+      "ielts-toefl-english-for-portuguese-speakers-anki-deck": ["university", "interview", "station"],
     };
 
     for (const [slug, questions] of Object.entries(expectations)) {
