@@ -9,7 +9,9 @@ describe("Prep2Go shop preview samples", () => {
   it("keeps shop preview mappings for curated and planned language decks", () => {
     const mappedSlugs = Object.keys(UNIPREP_TO_SHOP_PREVIEW_KEY);
 
-    expect(mappedSlugs).toHaveLength(29);
+    expect(mappedSlugs).toHaveLength(31);
+    expect(mappedSlugs).toContain("german-a2-for-ukrainian-speakers-anki-deck");
+    expect(mappedSlugs).toContain("german-a2-for-russian-speakers-anki-deck");
     expect(mappedSlugs).toContain("polish-a2-certyfikat-anki-deck");
     expect(mappedSlugs).toContain("polish-a2-for-ukrainian-speakers-anki-deck");
     expect(mappedSlugs).toContain("ielts-toefl-english-for-arabic-speakers-anki-deck");
@@ -58,6 +60,8 @@ describe("Prep2Go shop preview samples", () => {
         "dele-a2-ccse-spanish-citizenship-bundle",
         "dutch-a2-inburgering-anki-deck",
         "german-a2-anki-deck",
+        "german-a2-for-ukrainian-speakers-anki-deck",
+        "german-a2-for-russian-speakers-anki-deck",
         "celi-b1-italian-anki-deck",
         "danish-a2-prove-i-dansk-anki-deck",
         "norwegian-a2-norskprove-anki-deck",

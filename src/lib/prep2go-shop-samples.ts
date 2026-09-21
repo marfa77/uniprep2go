@@ -22,6 +22,8 @@ export const UNIPREP_TO_SHOP_PREVIEW_KEY: Record<string, string> = {
   "delf-b2-french-anki-deck": "DELF_TCF",
   "dutch-a2-inburgering-anki-deck": "Inburgering",
   "german-a2-anki-deck": "Goethe_telc_OSD",
+  "german-a2-for-ukrainian-speakers-anki-deck": "German_Ukrainian",
+  "german-a2-for-russian-speakers-anki-deck": "German_Russian",
   "celi-b1-italian-anki-deck": "CELI_CILS_PLIDA",
   "danish-a2-prove-i-dansk-anki-deck": "Prove_i_Dansk_PD2",
   "norwegian-a2-norskprove-anki-deck": "Norskprove_Bokmal",

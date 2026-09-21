@@ -145,7 +145,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "cards": "1897",
         "format_note": "Anki .apkg with audio and images",
-        "sample_captions": ["universiteit", "kantoor", "huis"],
+        "sample_captions": ["universiteit", "kantoor", "markt"],
         "facts": [
             ("Pathways", "Inburgering · NT2 A2"),
             ("Cards", "1897 vocabulary"),
@@ -569,7 +569,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "cards": "1491",
         "format_note": "Anki .apkg with audio and examples",
-        "sample_captions": ["uniwersytety", "biura", "rynek"],
+        "sample_captions": ["uniwersytet", "biuro", "rynek"],
         "facts": [
             ("Pathways", "Certyfikat · residence · citizenship language"),
             ("Cards", "1491 vocabulary"),
@@ -612,7 +612,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "cards": "1491",
         "format_note": "Anki .apkg with audio, images, and Ukrainian glosses",
-        "sample_captions": ["uniwersytety", "biura", "rynek"],
+        "sample_captions": ["uniwersytet", "biuro", "rynek"],
         "facts": [
             ("Pathways", "Certyfikat · residence language"),
             ("Cards", "1491 vocabulary"),
@@ -655,7 +655,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "cards": "1926",
         "format_note": "Anki .apkg with audio, images, and Ukrainian glosses",
-        "sample_captions": ["sein", "ich", "du"],
+        "sample_captions": ["Universität", "Büro", "Markt"],
         "facts": [
             ("Pathways", "Goethe · telc · ÖSD · DTZ"),
             ("Cards", "1926 vocabulary"),
@@ -698,7 +698,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "cards": "1926",
         "format_note": "Anki .apkg with audio, images, and Russian glosses",
-        "sample_captions": ["sein", "ich", "du"],
+        "sample_captions": ["Universität", "Büro", "Markt"],
         "facts": [
             ("Pathways", "Goethe · telc · ÖSD · DTZ"),
             ("Cards", "1926 vocabulary"),

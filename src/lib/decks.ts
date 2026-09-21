@@ -2127,7 +2127,7 @@ const rawDecks: Deck[] = [
       "1,926 German A2 flashcards for Goethe, telc, ÖSD, and DTZ — with Ukrainian support on every card.",
     directAnswer:
       "UniPrep2Go sells a German A2 for Ukrainian Speakers Anki deck with 1,926 high-frequency German vocabulary cards, Ukrainian glosses, bilingual examples, native German audio, and illustrations. Built from the Prep2Go app bank for Ukrainian-speaking candidates preparing Goethe-Institut A2, telc Deutsch A2, ÖSD A2, and DTZ (Deutsch-Test für Zuwanderer) word knowledge — plus everyday German used toward residence and Einbürgerung language expectations. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio. Independent study aid — not a Leben in Deutschland civics deck.",
-    lastUpdated: "2026-07-26",
+    lastUpdated: "2026-09-21",
     audience:
       "Ukrainian-speaking Goethe A2, telc A2, ÖSD A2, and DTZ candidates using Anki for German exam and integration vocabulary.",
     format: ".apkg",
@@ -2145,26 +2145,7 @@ const rawDecks: Deck[] = [
       delivery: "Digital download through Gumroad",
     },
     topicCoverage: [],
-    sampleCards: [
-      {
-        question: "Schule",
-        answer:
-          "школа — Kinder gehen mit ihren Rucksäcken zur Schule. (Діти йдуть до школи зі своїми рюкзаками.)",
-        imageUrl: "/samples/german-a2-for-ukrainian-speakers-anki-deck-sample-1.webp",
-      },
-      {
-        question: "Haus",
-        answer:
-          "дім — Dies ist ein kleines rotes Backsteinhaus mit einem weißen Zaun. (Це маленький червоний цегляний будинок із білим парканом.)",
-        imageUrl: "/samples/german-a2-for-ukrainian-speakers-anki-deck-sample-2.webp",
-      },
-      {
-        question: "Freund",
-        answer:
-          "друг — Mein Freund und ich umarmen uns auf der Parkbank. (Ми з другом обіймаємося на лавці в парку.)",
-        imageUrl: "/samples/german-a2-for-ukrainian-speakers-anki-deck-sample-3.webp",
-      },
-    ],
+    sampleCards: [],
     faqs: [
       {
         question: "Which German exams does this deck support?",
@@ -2202,7 +2183,7 @@ const rawDecks: Deck[] = [
       "1,926 German A2 flashcards for Goethe, telc, ÖSD, and DTZ — with Russian support on every card.",
     directAnswer:
       "UniPrep2Go sells a German A2 for Russian Speakers Anki deck with 1,926 high-frequency German vocabulary cards, Russian glosses, bilingual examples, native German audio, and illustrations. Built from the Prep2Go app bank for Russian-speaking candidates preparing Goethe-Institut A2, telc Deutsch A2, ÖSD A2, and DTZ (Deutsch-Test für Zuwanderer) word knowledge — plus everyday German used toward residence and Einbürgerung language expectations. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio. Independent study aid — not a Leben in Deutschland civics deck.",
-    lastUpdated: "2026-07-26",
+    lastUpdated: "2026-09-21",
     audience:
       "Russian-speaking Goethe A2, telc A2, ÖSD A2, and DTZ candidates using Anki for German exam and integration vocabulary.",
     format: ".apkg",
@@ -2220,26 +2201,7 @@ const rawDecks: Deck[] = [
       delivery: "Digital download through Gumroad",
     },
     topicCoverage: [],
-    sampleCards: [
-      {
-        question: "Schule",
-        answer:
-          "школа — Kinder gehen mit ihren Rucksäcken zur Schule. (Дети идут в школу со своими рюкзаками.)",
-        imageUrl: "/samples/german-a2-for-russian-speakers-anki-deck-sample-1.webp",
-      },
-      {
-        question: "Haus",
-        answer:
-          "дом — Dies ist ein kleines rotes Backsteinhaus mit einem weißen Zaun. (Это маленький красный кирпичный дом с белым забором.)",
-        imageUrl: "/samples/german-a2-for-russian-speakers-anki-deck-sample-2.webp",
-      },
-      {
-        question: "Freund",
-        answer:
-          "друг — Mein Freund und ich umarmen uns auf der Parkbank. (Мы с другом обнимаемся на скамейке в парке.)",
-        imageUrl: "/samples/german-a2-for-russian-speakers-anki-deck-sample-3.webp",
-      },
-    ],
+    sampleCards: [],
     faqs: [
       {
         question: "Which German exams does this deck support?",

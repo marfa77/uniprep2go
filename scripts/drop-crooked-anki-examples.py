@@ -37,6 +37,11 @@ NATIVE_BAD = [
     re.compile(r"У неї вдома є "),
     re.compile(r"За вікном сьогодні дуже"),
     re.compile(r"Сьогодні це практичне"),
+    re.compile(r"Подивись на .+ там перед собою"),
+    re.compile(r"Посмотри на .+ там перед собой"),
+    re.compile(r"Ось корисний .+ на сьогодні"),
+    re.compile(r"Мені потрібен цей .+ просто зараз"),
+    re.compile(r"Мне нужен этот .+ прямо сейчас"),
     re.compile(r"Слово .+ мені вже добре знайоме"),
     # Brazilian Portuguese stamp leftovers
     re.compile(r"Eu (?:conhe[cç]o|sei) (?:bem )?a palavra", re.I),
