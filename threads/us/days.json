@@ -1,0 +1,1775 @@
+{
+  "campaign": "us_certs",
+  "site": "https://uniprep2go.study",
+  "language": "en-US",
+  "market": "United States",
+  "format": {
+    "p1": "Parent post. No URL. Stands alone if nobody opens the reply.",
+    "p2": "First reply on that post. Close + dest. This is the straw — same machine as Barakhlo, different voice."
+  },
+  "voice": "US licensing candidate between shifts. American English. Native Threads: story or pain in p1, concrete numbers + soft CTA in p2. No subscribe, no Gumroad on first touch. Not a brochure. Took/ran the mock — never sat the official paper.",
+  "profile": {
+    "username": "uniprep2go",
+    "name": "UniPrep US",
+    "bio": "Free timed US mocks. Topic report, no account. SIE, 7, 63, CA real estate, PTCE. Not FINRA or the state board.",
+    "link": "https://uniprep2go.study/mock-exams?utm_source=threads&utm_medium=profile&utm_campaign=us_certs&utm_content=bio",
+    "linkLabel": "Free mock exams",
+    "privacy": "public"
+  },
+  "rules": [
+    "American English. US certifications only — no CIPLE, CCSE, Leben in Deutschland, Life in the UK.",
+    "Each day is a thread: p1 parent (no URL), p2 first reply (close + dest).",
+    "Name the exam body and the mock numbers. If they differ from the official test, say so.",
+    "CTA is the free timed mock, not Anki. No signup.",
+    "Not official FINRA / NASAA / DRE / PTCB / ServSafe / DMV material.",
+    "Topic tag = that exam, not a generic study tag.",
+    "State real estate: always name the state. Never 'the real estate exam'.",
+    "USCIS civics is oral (10 from 100). Do not treat the 30Q MCQ as the interview.",
+    "took / ran / take — not sat / sitting / paper. advisor, not adviser.",
+    "Bank is 100 days (d=1 through 100).",
+    "Point-edit 2026-09-23: diversify duplicate hooks (≈22 P1s); add hook_type/content_mode/repetition_group/modifier. No bank rewrite, no dest/topic change."
+  ],
+  "pin": {
+    "topic_tag": "SIE exam",
+    "dest": "/mock-exams",
+    "p1": "US licensing mocks. Timed. Topic score when you finish. No account.\n\nSIE, Series 7/63, California DRE, PTCE, ServSafe, CDL. Independent practice — not FINRA, not the state board.\n\nTake the mock first. Anki only for the topics you failed."
+  },
+  "days": [
+    {
+      "d": 1,
+      "exam": "SIE",
+      "topic_tag": "SIE exam",
+      "dest": "/mock-exams/sie-full-mock",
+      "p1": "I thought SIE was a short online quiz. It’s 75 questions on a 105-minute clock with a 70% line — FINRA’s outline length, not a 20-question blog mock.",
+      "p2": "Products and risks are ~44%. I want pass/no-pass plus the weak domain. Independent. Not FINRA.",
+      "hook_type": "comparison",
+      "content_mode": "fact",
+      "repetition_group": "sie_1",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 2,
+      "exam": "SIE",
+      "topic_tag": "SIE exam",
+      "dest": "/mock-exams/sie-quick-diagnostic",
+      "p1": "I don’t have 105 minutes before a shift. I needed a shorter SIE screen that still hits the four domains.",
+      "p2": "25 questions / 35 minutes here — a diagnostic, then the full 75 when I have time. Still not FINRA.",
+      "hook_type": "pain",
+      "content_mode": "fact",
+      "repetition_group": "sie_2",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 3,
+      "exam": "Series 7",
+      "topic_tag": "Series 7",
+      "dest": "/mock-exams/series-7-readiness-check",
+      "p1": "Series 7 weekends are long. A 40-question “lite” mock lied about readiness.",
+      "p2": "I run 60Q / 90 min across job functions. Report names what I missed. Independent — check FINRA’s outline.",
+      "hook_type": "scenario",
+      "content_mode": "story",
+      "repetition_group": "series_7_3",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 4,
+      "exam": "Series 63",
+      "topic_tag": "Series 63",
+      "dest": "/mock-exams/series-63-readiness-check",
+      "p1": "Boss said I needed Series 63. I almost kept studying Series 7. Wrong license.",
+      "p2": "63 = state securities law (NASAA). This check: 60Q / 75 min / 72% line. Confirm your state. Not Series 7.",
+      "hook_type": "mistake",
+      "content_mode": "correction",
+      "repetition_group": "series_63_4",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 5,
+      "exam": "California DRE",
+      "topic_tag": "California real estate",
+      "dest": "/mock-exams/california-real-estate-readiness-check",
+      "p1": "I bought a “US real estate” pack. California agency and disclosures were three slides with a palm-tree emoji.",
+      "p2": "DRE tests California. This diagnostic is 60Q / 90 min / 70%. Salesperson has national + CA portions. Not DRE.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "CA_RE_national_pack",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 6,
+      "exam": "PTCE",
+      "topic_tag": "PTCB exam",
+      "dest": "/mock-exams/ptcb-pharmacy-technician-mock",
+      "p1": "Pharmacy tech job: “PTCE required.” Blog quiz was 15 items. Real shape is ~90 questions and a long clock.",
+      "p2": "I run 90Q / 110 min with a 70% diagnostic line. Medications dominate. Independent — not PTCB. Check ptcb.org.",
+      "hook_type": "pain",
+      "content_mode": "fact",
+      "repetition_group": "PTCE_quiz_vs_clock",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 7,
+      "exam": "ServSafe Manager",
+      "topic_tag": "ServSafe",
+      "dest": "/mock-exams/servsafe-manager-mock",
+      "p1": "Kitchen said ServSafe Manager card before I could open alone. Facebook quiz was 10 questions. Usual format is 90/120/75.",
+      "p2": "I run that length on a timer with a topic report. Independent — not National Restaurant Association. Confirm your state.",
+      "hook_type": "comparison",
+      "content_mode": "fact",
+      "repetition_group": "ServSafe_fb_quiz",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 8,
+      "exam": "CDL GK",
+      "topic_tag": "CDL test",
+      "dest": "/mock-exams/cdl-general-knowledge-readiness-check",
+      "p1": "CLP written is state DMV off the FMCSA handbook. My “CDL app” had truck memes and zero space-management questions.",
+      "p2": "60 general-knowledge on a timer: inspection, space, cargo, hours. Not the DMV test. Endorsements are separate.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "cdl_gk_8",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 9,
+      "exam": "Series 65",
+      "topic_tag": "Series 65",
+      "dest": "/mock-exams/series-65-readiness-check",
+      "p1": "Someone told me 65 is “Series 7 for advisors.” It isn’t. Different body, different pass math.",
+      "p2": "Official IAR shape is long. This page is a shorter diagnostic — say so up front. Independent. Not NASAA.",
+      "hook_type": "comparison",
+      "content_mode": "story",
+      "repetition_group": "S65_not_series7",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 10,
+      "exam": "hub",
+      "topic_tag": "SIE exam",
+      "dest": "/mock-exams",
+      "p1": "I almost bought Anki before I knew which domain was failing. Wrong order: mock → report → cards on the red rows.",
+      "p2": "Free timed mocks, no signup. US licensing catalog. Independent — we don’t sell your score to FINRA.",
+      "hook_type": "mistake",
+      "content_mode": "diagnostic",
+      "repetition_group": "hub_10",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 11,
+      "exam": "CFA L1",
+      "topic_tag": "CFA Level 1",
+      "dest": "/mock-exams/cfa-level-1-readiness-check",
+      "p1": "Paid for a “full CFA L1 mock” that was 60 questions. Real exam day is a different planet.",
+      "p2": "This diagnostic is honest about being a sample — use it to find weak topics, then your full mocks. Independent. Not CFA Institute.",
+      "hook_type": "comparison",
+      "content_mode": "story",
+      "repetition_group": "cfa_l1_11",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 12,
+      "exam": "Florida RE",
+      "topic_tag": "Florida real estate",
+      "dest": "/mock-exams/fl-real-estate-readiness-check",
+      "p1": "Florida sales associate is FREC/DBPR, not a national meme deck with a flamingo.",
+      "p2": "I run a Florida-scoped timed check first. Confirm DBPR’s live outline. Independent — not the state exam.",
+      "hook_type": "comparison",
+      "content_mode": "story",
+      "repetition_group": "FL_RE_frec",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 13,
+      "exam": "Life & Health",
+      "topic_tag": "Life and Health insurance",
+      "dest": "/mock-exams/life-and-health-insurance-readiness-check",
+      "p1": "Life & Health is a state insurance license — not Series 7 with a smile.",
+      "p2": "60Q timed diagnostic. Confirm your state’s outline. Independent.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "LH_not_series7",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 14,
+      "exam": "SAFE MLO",
+      "topic_tag": "NMLS MLO exam",
+      "dest": "/mock-exams/mortgage-loan-originator-readiness-check",
+      "p1": "SAFE MLO (NMLS) kept getting called “the mortgage Series 7.” It’s not.",
+      "p2": "National test shape: origination, products, federal law. Timed diagnostic. Independent — not NMLS.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "SAFE_not_series7",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 15,
+      "exam": "SIE",
+      "topic_tag": "SIE exam",
+      "dest": "/mock-exams/sie-full-mock",
+      "p1": "Manager put SIE on my onboarding checklist like it was a lunch form. I had never seen a 75-question / 105-minute securities exam before.",
+      "p2": "I run a free timed SIE at that length and get the weak domain named. Products/risks is usually the killer. Not FINRA.",
+      "hook_type": "scenario",
+      "content_mode": "fact",
+      "repetition_group": "SIE_manager_checklist",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 16,
+      "exam": "Series 7",
+      "topic_tag": "Series 7",
+      "dest": "/mock-exams/series-7-readiness-check",
+      "p1": "Someone sold me “Series 7 lite.” It was 40 questions and zero recommendations weight. The real exam is a long day.",
+      "p2": "I run a 60Q / 90-min sample across job functions. Report names what you missed. Independent — check FINRA’s live outline.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "S7_lite_pack",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 17,
+      "exam": "Texas RE",
+      "topic_tag": "Texas real estate",
+      "dest": "/mock-exams/tx-real-estate-readiness-check",
+      "p1": "Texas real estate license study group kept sending national packs. TREC doesn’t grade those.",
+      "p2": "Practice Texas. Timed diagnostic, then fix the red topics. Independent — not TREC.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "TX_RE_national_pack",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 18,
+      "exam": "PTCE",
+      "topic_tag": "PTCB exam",
+      "dest": "/mock-exams/ptcb-pharmacy-technician-mock",
+      "p1": "Remote PTCE is gone. My practice routine still assumed a quiet sofa, then test-center timing exposed every slow calculation.",
+      "p2": "First reset: practise the full clock under test-center conditions. Independent practice — not PTCB.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "ptce_18",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 19,
+      "exam": "PTCE",
+      "topic_tag": "PTCB exam",
+      "dest": "/mock-exams/ptcb-pharmacy-technician-mock",
+      "p1": "PTCE calculation check: quantity 30, take one tablet twice daily. I answered 30 days. It is 15. What step do you write first?",
+      "p2": "Tablets per day first: 1 × 2 = 2. Then 30 ÷ 2 = 15 days. Independent practice — not PTCB.",
+      "hook_type": "question",
+      "content_mode": "micro_problem",
+      "repetition_group": "PTCE_micro_19_24",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": true
+      }
+    },
+    {
+      "d": 20,
+      "exam": "PTCE",
+      "topic_tag": "PTCB exam",
+      "dest": "/mock-exams/ptcb-pharmacy-technician-mock",
+      "p1": "I could score well on short PTCE quizzes. My first full timed run exposed how much slower I was once calculations and drug questions piled up.",
+      "p2": "Run the long clock before trusting the score. Independent practice — not PTCB.",
+      "hook_type": "question",
+      "content_mode": "micro_problem",
+      "repetition_group": "PTCE_micro_19_24",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": true
+      }
+    },
+    {
+      "d": 21,
+      "exam": "PTCE",
+      "topic_tag": "PTCB exam",
+      "dest": "/mock-exams/ptcb-pharmacy-technician-mock",
+      "p1": "Sig check: “ii tabs po bid.” I used to decode each piece and forget the daily total. How many tablets does the patient take per day?",
+      "p2": "Two tablets by mouth twice daily = four tablets per day. Independent practice — not PTCB.",
+      "hook_type": "question",
+      "content_mode": "micro_problem",
+      "repetition_group": "PTCE_micro_19_24",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": true
+      }
+    },
+    {
+      "d": 22,
+      "exam": "PTCE",
+      "topic_tag": "PTCB exam",
+      "dest": "/mock-exams/ptcb-pharmacy-technician-mock",
+      "p1": "Concentration trap: 1:1000 means 1 gram in 1000 mL. I kept missing the next conversion. How many mg are in one mL?",
+      "p2": "1 gram = 1000 mg, so the concentration is 1 mg/mL. Independent practice — not PTCB.",
+      "hook_type": "question",
+      "content_mode": "micro_problem",
+      "repetition_group": "PTCE_micro_19_24",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": true
+      }
+    },
+    {
+      "d": 23,
+      "exam": "PTCE",
+      "topic_tag": "PTCB exam",
+      "dest": "/mock-exams/ptcb-pharmacy-technician-mock",
+      "p1": "The refrigerator log is outside range. Quietly resetting the thermometer is not a fix. What is your first safe action?",
+      "p2": "Quarantine affected stock and follow the pharmacy’s escalation procedure. Independent practice — not PTCB.",
+      "hook_type": "question",
+      "content_mode": "micro_problem",
+      "repetition_group": "PTCE_micro_19_24",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": true
+      }
+    },
+    {
+      "d": 24,
+      "exam": "PTCE",
+      "topic_tag": "PTCB exam",
+      "dest": "/mock-exams/ptcb-pharmacy-technician-mock",
+      "p1": "Hydralazine and hydroxyzine look close enough to punish fast reading. Which extra detail do you check before selecting the product?",
+      "p2": "Read the full drug name, strength, dosage form, and indication context. Independent practice — not PTCB.",
+      "hook_type": "question",
+      "content_mode": "micro_problem",
+      "repetition_group": "PTCE_micro_19_24",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": true
+      }
+    },
+    {
+      "d": 25,
+      "exam": "CDL GK",
+      "topic_tag": "CDL test",
+      "dest": "/mock-exams/cdl-general-knowledge-readiness-check",
+      "p1": "I failed a practice set because I skipped hours-of-service. The handbook doesn’t skip it.",
+      "p2": "Timed GK diagnostic, then air brakes / tankers as their own mocks. Independent — not FMCSA.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "cdl_gk_25",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 26,
+      "exam": "ExCPT",
+      "topic_tag": "ExCPT exam",
+      "dest": "/mock-exams/nha-excpt-readiness-check",
+      "p1": "Recruiter asked ExCPT or PTCE and shrugged. They’re not the same brand.",
+      "p2": "Pick the one your employer names. Timed practice that matches. Independent.",
+      "hook_type": "comparison",
+      "content_mode": "story",
+      "repetition_group": "excpt_26",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 27,
+      "exam": "New York RE",
+      "topic_tag": "New York real estate",
+      "dest": "/mock-exams/ny-real-estate-readiness-check",
+      "p1": "NY salesperson prep that ignored state-specific hours almost wasted my fee. Ask what the school actually covers.",
+      "p2": "Timed practice that names New York — not “US real estate.” Independent.",
+      "hook_type": "mistake",
+      "content_mode": "story",
+      "repetition_group": "new_york_re_27",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 28,
+      "exam": "SIE",
+      "topic_tag": "SIE exam",
+      "dest": "/mock-exams/sie-full-mock",
+      "p1": "I failed my first practice because I treated SIE like Series 7. Different job. Different weight on products.",
+      "p2": "75Q / 105 min / 70% on this page. Fix the red domain, then sit the real one. Not FINRA material.",
+      "hook_type": "comparison",
+      "content_mode": "story",
+      "repetition_group": "sie_28",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 29,
+      "exam": "CFA L2",
+      "topic_tag": "CFA Level 2",
+      "dest": "/mock-exams/cfa-level-2-readiness-check",
+      "p1": "L2 vignettes hit different than L1 item sets. My L1 muscle memory lied to me.",
+      "p2": "Timed L2-shaped practice for the weak topic. Independent — not CFA Institute.",
+      "hook_type": "comparison",
+      "content_mode": "story",
+      "repetition_group": "cfa_l2_29",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 30,
+      "exam": "CFA L1",
+      "topic_tag": "CFA Level 1",
+      "dest": "/mock-exams/cfa-level-1-readiness-check",
+      "p1": "Ethics wrecked my first timed set. Formula sheets didn’t save me.",
+      "p2": "Timed readiness check, then hammer the red topic. Independent practice.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "cfa_l1_30",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 31,
+      "exam": "Series 6",
+      "topic_tag": "Series 6",
+      "dest": "/mock-exams/series-6-readiness-check",
+      "p1": "Series 6 kept getting pitched as “baby Series 7.” The products scope is not the same fight.",
+      "p2": "If the role says 6, practice 6 — don’t bleed into 7 banks. Timed check, independent, not FINRA.",
+      "hook_type": "comparison",
+      "content_mode": "story",
+      "repetition_group": "series_6_31",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 32,
+      "exam": "Florida RE",
+      "topic_tag": "Florida real estate",
+      "dest": "/mock-exams/fl-real-estate-readiness-check",
+      "p1": "I studied from a national real estate deck and kept missing Florida-specific questions. The state part wasn't optional.",
+      "p2": "State law + practices on a timer. Free diagnostic here. Not DBPR.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "FL_RE_frec",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 33,
+      "exam": "Life & Health",
+      "topic_tag": "Life and Health insurance",
+      "dest": "/mock-exams/life-and-health-insurance-readiness-check",
+      "p1": "The Life & Health questions weren't hard until the policy provisions started stacking up under a timer.",
+      "p2": "Timed practice, topic report. Independent — not your state DOI.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "LH_not_series7",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 34,
+      "exam": "Series 7",
+      "topic_tag": "Series 7",
+      "dest": "/mock-exams/series-7-readiness-check",
+      "p1": "I knew the Series 7 material. My first timed run showed I was spending too long on the questions I thought were easy.",
+      "p2": "Timed sample first, then Anki on the red functions. This page is practice, not FINRA.",
+      "hook_type": "myth",
+      "content_mode": "story",
+      "repetition_group": "S7_lite_pack",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 35,
+      "exam": "SAFE MLO",
+      "topic_tag": "NMLS MLO exam",
+      "dest": "/mock-exams/mortgage-loan-originator-readiness-check",
+      "p1": "I studied state law and missed federal mortgage rules on a practice set. Wrong emphasis.",
+      "p2": "Timed MLO check first. Independent.",
+      "hook_type": "mistake",
+      "content_mode": "correction",
+      "repetition_group": "safe_mlo_35",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 36,
+      "exam": "PTCE",
+      "topic_tag": "PTCB exam",
+      "dest": "/mock-exams/ptcb-pharmacy-technician-mock",
+      "p1": "My PTCE score looked better on 20 questions than it did after a full timed block. Short quizzes hide pacing problems.",
+      "p2": "I run 90Q / 110 min with a 70% diagnostic line. Medications dominate. Independent — not PTCB. Check ptcb.org.",
+      "hook_type": "pain",
+      "content_mode": "diagnostic",
+      "repetition_group": "PTCE_quiz_vs_clock",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 37,
+      "exam": "CDL Air Brakes",
+      "topic_tag": "CDL air brakes",
+      "dest": "/mock-exams/cdl-air-brakes-readiness-check",
+      "p1": "Air brakes endorsement is its own exam. Treating it like a GK footnote cost me a week.",
+      "p2": "Separate timed practice. Independent. Confirm your state DMV.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "cdl_air_brakes_37",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 38,
+      "exam": "SIE",
+      "topic_tag": "SIE exam",
+      "dest": "/mock-exams/sie-quick-diagnostic",
+      "p1": "Between shifts I only had 35 minutes. Full SIE is 105. I needed a short screen that still hits all four domains.",
+      "p2": "There’s a 25-question diagnostic for that window. Same map, shorter clock — then the 75 when you have time.",
+      "hook_type": "pain",
+      "content_mode": "fact",
+      "repetition_group": "sie_38",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 39,
+      "exam": "Series 63",
+      "topic_tag": "Series 63",
+      "dest": "/mock-exams/series-63-readiness-check",
+      "p1": "I studied Series 7 for two weeks and ignored 63. State law questions still wrecked me on a practice set.",
+      "p2": "Different exam, different pass math. Free timed check here — not Series 6, not Series 7. Not NASAA’s paper.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "series_63_39",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 40,
+      "exam": "SIE",
+      "topic_tag": "SIE exam",
+      "dest": "/mock-exams/sie-full-mock",
+      "p1": "I was fine on SIE questions until the clock started. Then 75 questions in 105 minutes felt very different.",
+      "p2": "I run a free timed SIE at that length and get the weak domain named. Products/risks is usually the killer. Not FINRA.",
+      "hook_type": "comparison",
+      "content_mode": "fact",
+      "repetition_group": "SIE_manager_checklist",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 41,
+      "exam": "Texas RE",
+      "topic_tag": "Texas real estate",
+      "dest": "/mock-exams/tx-real-estate-readiness-check",
+      "p1": "I kept studying national real estate questions and wondering why Texas practice scores weren't moving. The missing piece was state-specific law.",
+      "p2": "Practice Texas. Timed diagnostic, then fix the red topics. Independent — not TREC.",
+      "hook_type": "pain",
+      "content_mode": "diagnostic",
+      "repetition_group": "TX_RE_national_pack",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 42,
+      "exam": "FRM P1",
+      "topic_tag": "FRM Part 1",
+      "dest": "/mock-exams/frm-part-1-readiness-check",
+      "p1": "FRM P1 study plan from a random Discord skipped risk foundations. Timer exposed it.",
+      "p2": "Timed diagnostic first. Independent. Confirm GARP’s live outline.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "frm_p1_42",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 43,
+      "exam": "Series 65",
+      "topic_tag": "Series 65",
+      "dest": "/mock-exams/series-65-readiness-check",
+      "p1": "I prepared for Series 65 like it was a shorter Series 7. That shortcut showed up immediately in my practice score.",
+      "p2": "Official IAR shape is long. This page is a shorter diagnostic — say so up front. Independent. Not NASAA.",
+      "hook_type": "mistake",
+      "content_mode": "diagnostic",
+      "repetition_group": "S65_not_series7",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 44,
+      "exam": "California DRE",
+      "topic_tag": "California real estate",
+      "dest": "/mock-exams/california-real-estate-readiness-check",
+      "p1": "California real estate questions kept exposing the same gap: I knew general agency rules, but not how California tested them.",
+      "p2": "DRE tests California. This diagnostic is 60Q / 90 min / 70%. Salesperson has national + CA portions. Not DRE.",
+      "hook_type": "pain",
+      "content_mode": "diagnostic",
+      "repetition_group": "CA_RE_national_pack",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 45,
+      "exam": "P&C",
+      "topic_tag": "Property and Casualty insurance",
+      "dest": "/mock-exams/property-casualty-insurance-readiness-check",
+      "p1": "P&C vs L&H — different license, same Facebook groups mixing decks. Annoying.",
+      "p2": "Practice the line you’re sitting. Timed. Independent.",
+      "hook_type": "comparison",
+      "content_mode": "story",
+      "repetition_group": "pandc_45",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 46,
+      "exam": "USCIS civics",
+      "topic_tag": "US citizenship civics",
+      "dest": "/mock-exams/us-citizenship-readiness-check",
+      "p1": "Civics interview is oral — 10 from 100. A 30Q multiple-choice app is not the interview.",
+      "p2": "Practice the oral list. This page is prep, not USCIS. Don’t treat MCQ score as interview-ready.",
+      "hook_type": "comparison",
+      "content_mode": "story",
+      "repetition_group": "uscis_civics_46",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 47,
+      "exam": "ServSafe Manager",
+      "topic_tag": "ServSafe",
+      "dest": "/mock-exams/servsafe-manager-mock",
+      "p1": "I treated ServSafe Manager prep like a short food-safety quiz. The full timed format exposed gaps I wasn't seeing.",
+      "p2": "I run that length on a timer with a topic report. Independent — not National Restaurant Association. Confirm your state.",
+      "hook_type": "comparison",
+      "content_mode": "diagnostic",
+      "repetition_group": "ServSafe_fb_quiz",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 48,
+      "exam": "CDL GK",
+      "topic_tag": "CDL test",
+      "dest": "/mock-exams/cdl-general-knowledge-readiness-check",
+      "p1": "CLP written is state DMV off the FMCSA handbook. My “CDL app” had truck memes and zero space-management questions.",
+      "p2": "60 general-knowledge on a timer: inspection, space, cargo, hours. Not the DMV test. Endorsements are separate.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "cdl_gk_48",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 49,
+      "exam": "NCLEX-RN",
+      "topic_tag": "NCLEX-RN",
+      "dest": "/mock-exams/nclex-rn-readiness-check",
+      "p1": "NCLEX anxiety is real. Untimed question banks lied to me about readiness.",
+      "p2": "Timed practice that feels like a block. Independent — not NCSBN.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "nclex-rn_49",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 50,
+      "exam": "SHRM-CP",
+      "topic_tag": "SHRM-CP",
+      "dest": "/mock-exams/shrm-cp-readiness-check",
+      "p1": "SHRM-CP isn’t “HR Quizlet.” Situational judgment eats people who only memorize terms.",
+      "p2": "Timed practice with the ugly scenarios. Independent — not SHRM.",
+      "hook_type": "comparison",
+      "content_mode": "story",
+      "repetition_group": "shrm-cp_50",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 51,
+      "exam": "OSHA 10",
+      "topic_tag": "OSHA 10",
+      "dest": "/mock-exams/osha-10-general-readiness-check",
+      "p1": "OSHA 10 got assigned like a YouTube binge. Still need to actually finish the modules.",
+      "p2": "Use an authorized trainer path. This account flags the trap of fake cards. Independent.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "osha_10_51",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 52,
+      "exam": "Series 7",
+      "topic_tag": "Series 7",
+      "dest": "/mock-exams/series-7-readiness-check",
+      "p1": "I kept confusing Series 7 with 63. 7 is the general securities rep. 63 is state law. Different clocks.",
+      "p2": "If you need the long one, start with a timed 60Q check. Independent. Confirm the live FINRA outline before you book.",
+      "hook_type": "comparison",
+      "content_mode": "story",
+      "repetition_group": "S7_vs_63",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 53,
+      "exam": "NHA CCMA",
+      "topic_tag": "NHA CCMA",
+      "dest": "/mock-exams/nha-ccma-readiness-check",
+      "p1": "CCMA study group sent random medical quizzes. Domain weights weren’t even close.",
+      "p2": "Timed diagnostic matched to the cert name. Independent.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "nha_ccma_53",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 54,
+      "exam": "Florida RE",
+      "topic_tag": "Florida real estate",
+      "dest": "/mock-exams/fl-real-estate-readiness-check",
+      "p1": "The practice questions I knew cold were useless when the Florida wording changed. State-specific practice caught that gap.",
+      "p2": "I run a Florida-scoped timed check first. Confirm DBPR’s live outline. Independent — not the state exam.",
+      "hook_type": "pain",
+      "content_mode": "diagnostic",
+      "repetition_group": "FL_RE_frec",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 55,
+      "exam": "PTCE",
+      "topic_tag": "PTCB exam",
+      "dest": "/mock-exams/ptcb-pharmacy-technician-mock",
+      "p1": "Remote PTCE is gone. I stopped practicing like I could take it on a sofa.",
+      "p2": "Timed full-length mock, topic report, then the weak drug classes. Not PTCB.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "ptce_55",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 56,
+      "exam": "Life & Health",
+      "topic_tag": "Life and Health insurance",
+      "dest": "/mock-exams/life-and-health-insurance-readiness-check",
+      "p1": "Life & Health is a state insurance license — not Series 7 with a smile.",
+      "p2": "60Q timed diagnostic. Confirm your state’s outline. Independent.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "LH_not_series7",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 57,
+      "exam": "Series 63",
+      "topic_tag": "Series 63",
+      "dest": "/mock-exams/series-63-readiness-check",
+      "p1": "Recruiter said “just pass 63, it’s easy.” Easy until the ethics scenarios stack up on a timer.",
+      "p2": "I run 60 questions on a 75-minute clock. Independent practice. Check your state for the live 72% rule.",
+      "hook_type": "myth",
+      "content_mode": "story",
+      "repetition_group": "series_63_57",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 58,
+      "exam": "SIE",
+      "topic_tag": "SIE exam",
+      "dest": "/mock-exams/sie-quick-diagnostic",
+      "p1": "Coworker said “just do Quizlet.” Quizlet doesn’t put you on a 105-minute clock with a 70% line.",
+      "p2": "I use a full-length practice run first. Pass/no-pass plus the domain that broke. Independent — not the FINRA paper.",
+      "hook_type": "pain",
+      "content_mode": "fact",
+      "repetition_group": "sie_58",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 59,
+      "exam": "SAFE MLO",
+      "topic_tag": "NMLS MLO exam",
+      "dest": "/mock-exams/mortgage-loan-originator-readiness-check",
+      "p1": "I studied mortgage rules by topic, but the timed questions exposed where I was confusing federal requirements with the state side.",
+      "p2": "National test shape: origination, products, federal law. Timed diagnostic. Independent — not NMLS.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "SAFE_not_series7",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 60,
+      "exam": "Arizona RE",
+      "topic_tag": "Arizona real estate",
+      "dest": "/mock-exams/az-real-estate-readiness-check",
+      "p1": "Arizona ADRE path isn’t interchangeable with California slides. I learned that the expensive way.",
+      "p2": "State-named timed check first. Independent practice.",
+      "hook_type": "comparison",
+      "content_mode": "story",
+      "repetition_group": "arizona_re_60",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 61,
+      "exam": "Series 79",
+      "topic_tag": "Series 79",
+      "dest": "/mock-exams/series-79-readiness-check",
+      "p1": "IB analyst track asked for Series 79. My Series 7 deck didn’t cover the investment banking angle.",
+      "p2": "Use a bank that matches the license name on the offer letter. Timed practice first. Independent.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "series_79_61",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 62,
+      "exam": "SIE",
+      "topic_tag": "SIE exam",
+      "dest": "/mock-exams/sie-full-mock",
+      "p1": "I failed my first practice because I treated SIE like Series 7. Different job. Different weight on products.",
+      "p2": "75Q / 105 min / 70% on this page. Fix the red domain, then sit the real one. Not FINRA material.",
+      "hook_type": "comparison",
+      "content_mode": "story",
+      "repetition_group": "sie_62",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 63,
+      "exam": "Texas RE",
+      "topic_tag": "Texas real estate",
+      "dest": "/mock-exams/tx-real-estate-readiness-check",
+      "p1": "Texas was the state on my application, but half my study material still wasn't Texas-specific.",
+      "p2": "Practice Texas. Timed diagnostic, then fix the red topics. Independent — not TREC.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "TX_RE_national_pack",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 64,
+      "exam": "Series 65",
+      "topic_tag": "Series 65",
+      "dest": "/mock-exams/series-65-readiness-check",
+      "p1": "I almost booked 65 with a 70% mindset. Official pass is a raw score on 130, not a cute percentage meme.",
+      "p2": "Confirm NASAA’s live numbers, then use a timed diagnostic to find the weak area. Independent practice.",
+      "hook_type": "mistake",
+      "content_mode": "diagnostic",
+      "repetition_group": "S65_pass_score",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 65,
+      "exam": "CFP",
+      "topic_tag": "CFP exam",
+      "dest": "/mock-exams/cfp-certification-readiness-check",
+      "p1": "CFP education hours aren’t a substitute for timed case practice. Ask my calendar.",
+      "p2": "Timed diagnostic on weak domains. Independent.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "cfp_65",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 66,
+      "exam": "California DRE",
+      "topic_tag": "California real estate",
+      "dest": "/mock-exams/california-real-estate-readiness-check",
+      "p1": "Moving states changed more than the ZIP code. My old real estate notes were full of rules that didn't help on California questions.",
+      "p2": "Name the state. Run a CA-focused timed set. Independent practice — not the Department of Real Estate.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "CA_RE_national_pack",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 67,
+      "exam": "ServSafe Food Handler",
+      "topic_tag": "ServSafe Food Handler",
+      "dest": "/mock-exams/servsafe-food-handler-readiness-check",
+      "p1": "Food Handler isn’t Manager. Shorter card, different expectation — still not a meme quiz.",
+      "p2": "Practice the level your job asked for. Independent.",
+      "hook_type": "comparison",
+      "content_mode": "story",
+      "repetition_group": "servsafe_food_handler_67",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 68,
+      "exam": "CDL HazMat",
+      "topic_tag": "CDL hazmat",
+      "dest": "/mock-exams/cdl-hazmat-readiness-check",
+      "p1": "HazMat study group sent GK decks. Wrong pile for the endorsement.",
+      "p2": "Practice the endorsement you booked. Timed. Independent.",
+      "hook_type": "mistake",
+      "content_mode": "correction",
+      "repetition_group": "cdl_hazmat_68",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 69,
+      "exam": "ServSafe Manager",
+      "topic_tag": "ServSafe",
+      "dest": "/mock-exams/servsafe-manager-mock",
+      "p1": "Health inspector week. Manager wanted proof I wasn’t winging food safety from TikTok.",
+      "p2": "Full-length Manager practice first. Independent. Check proctor rules before you pay.",
+      "hook_type": "scenario",
+      "content_mode": "story",
+      "repetition_group": "ServSafe_inspector",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 70,
+      "exam": "Series 7",
+      "topic_tag": "Series 7",
+      "dest": "/mock-exams/series-7-readiness-check",
+      "p1": "My Series 7 score looked fine until I checked which job functions were actually costing me points.",
+      "p2": "I run a 60Q / 90-min sample across job functions. Report names what you missed. Independent — check FINRA’s live outline.",
+      "hook_type": "pain",
+      "content_mode": "diagnostic",
+      "repetition_group": "S7_lite_pack",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 71,
+      "exam": "CDL Combination",
+      "topic_tag": "CDL combination",
+      "dest": "/mock-exams/cdl-combination-readiness-check",
+      "p1": "Combination vehicles — another endorsement people bury inside GK cram. Don’t.",
+      "p2": "Own timed set. Independent.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "cdl_combination_71",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 72,
+      "exam": "CFA L1",
+      "topic_tag": "CFA Level 1",
+      "dest": "/mock-exams/cfa-level-1-readiness-check",
+      "p1": "Paid for a “full CFA L1 mock” that was 60 questions. Real exam day is a different planet.",
+      "p2": "This diagnostic is honest about being a sample — use it to find weak topics, then your full mocks. Independent. Not CFA Institute.",
+      "hook_type": "comparison",
+      "content_mode": "story",
+      "repetition_group": "cfa_l1_72",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 73,
+      "exam": "Enrolled Agent",
+      "topic_tag": "Enrolled Agent exam",
+      "dest": "/mock-exams/enrolled-agent-readiness-check",
+      "p1": "EA Part number confusion cost me a registration fee. Read which part you’re sitting.",
+      "p2": "Timed practice for that part. Independent — not IRS.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "enrolled_agent_73",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 74,
+      "exam": "PTCE",
+      "topic_tag": "PTCB exam",
+      "dest": "/mock-exams/ptcb-pharmacy-technician-mock",
+      "p1": "Pharmacy tech job: “PTCE required.” Blog quiz was 15 items. Real shape is ~90 questions and a long clock.",
+      "p2": "I run 90Q / 110 min with a 70% diagnostic line. Medications dominate. Independent — not PTCB. Check ptcb.org.",
+      "hook_type": "pain",
+      "content_mode": "fact",
+      "repetition_group": "ptce_74",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 75,
+      "exam": "Series 63",
+      "topic_tag": "Series 63",
+      "dest": "/mock-exams/series-63-readiness-check",
+      "p1": "Boss: “You need 63 before you talk to clients in this state.” I thought it was Series 7 with a sticker.",
+      "p2": "63 is NASAA state securities law/ethics. This check is 60Q / 75 min / 72% line. Confirm your state’s cut before you schedule.",
+      "hook_type": "scenario",
+      "content_mode": "story",
+      "repetition_group": "series_63_75",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 76,
+      "exam": "Florida RE",
+      "topic_tag": "Florida real estate",
+      "dest": "/mock-exams/fl-real-estate-readiness-check",
+      "p1": "A generic real estate score told me almost nothing about Florida readiness. I needed the state-specific weak topics.",
+      "p2": "State law + practices on a timer. Free diagnostic here. Not DBPR.",
+      "hook_type": "mistake",
+      "content_mode": "diagnostic",
+      "repetition_group": "FL_RE_frec",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 77,
+      "exam": "Alcohol server",
+      "topic_tag": "Alcohol server",
+      "dest": "/mock-exams/alcohol-server-readiness-check",
+      "p1": "Bar asked for alcohol server cert before weekend shifts. State rules differ — don’t grab a random national card.",
+      "p2": "Confirm your state, then practice. Independent.",
+      "hook_type": "scenario",
+      "content_mode": "story",
+      "repetition_group": "alcohol_server_77",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 78,
+      "exam": "SIE",
+      "topic_tag": "SIE exam",
+      "dest": "/mock-exams/sie-full-mock",
+      "p1": "Between shifts I only had 35 minutes. Full SIE is 105. I needed a short screen that still hits all four domains.",
+      "p2": "There’s a 25-question diagnostic for that window. Same map, shorter clock — then the 75 when you have time.",
+      "hook_type": "pain",
+      "content_mode": "fact",
+      "repetition_group": "sie_78",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 79,
+      "exam": "NASM CPT",
+      "topic_tag": "NASM CPT",
+      "dest": "/mock-exams/nasm-cpt-readiness-check",
+      "p1": "Trainer job wanted NASM. Free Instagram quizzes weren’t the exam.",
+      "p2": "Timed CPT practice. Independent — not NASM.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "nasm_cpt_79",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 80,
+      "exam": "Series 7",
+      "topic_tag": "Series 7",
+      "dest": "/mock-exams/series-7-readiness-check",
+      "p1": "Series 7 ate my weekends. Flashcards before a timed run was backwards — I memorized the wrong pile.",
+      "p2": "Timed sample first, then Anki on the red functions. This page is practice, not FINRA.",
+      "hook_type": "mistake",
+      "content_mode": "correction",
+      "repetition_group": "series_7_80",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 81,
+      "exam": "ACE CPT",
+      "topic_tag": "ACE CPT",
+      "dest": "/mock-exams/ace-cpt-readiness-check",
+      "p1": "ACE vs NASM argument in every gym. Employer named one — that’s the only vote that counts.",
+      "p2": "Practice the cert on the job post. Timed. Independent.",
+      "hook_type": "comparison",
+      "content_mode": "story",
+      "repetition_group": "ace_cpt_81",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 82,
+      "exam": "SIE",
+      "topic_tag": "SIE exam",
+      "dest": "/mock-exams/sie-quick-diagnostic",
+      "p1": "I kept using short SIE quizzes because they felt productive. Then a full-length run showed me where my pace actually broke.",
+      "p2": "I run a free timed SIE at that length and get the weak domain named. Products/risks is usually the killer. Not FINRA.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "SIE_manager_checklist",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 83,
+      "exam": "Georgia RE",
+      "topic_tag": "Georgia real estate",
+      "dest": "/mock-exams/ga-real-estate-readiness-check",
+      "p1": "Georgia broker talk at work assumed I’d already passed salesperson. Different gates.",
+      "p2": "Confirm GREC’s current path, then time a practice set. Independent.",
+      "hook_type": "comparison",
+      "content_mode": "story",
+      "repetition_group": "georgia_re_83",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 84,
+      "exam": "PMP",
+      "topic_tag": "PMP exam",
+      "dest": "/mock-exams/pmp-readiness-check",
+      "p1": "PMP memes say memorize processes. Timed situational questions still hurt.",
+      "p2": "Timed practice block. Independent — confirm PMI’s current outline.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "pmp_84",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 85,
+      "exam": "Series 65",
+      "topic_tag": "Series 65",
+      "dest": "/mock-exams/series-65-readiness-check",
+      "p1": "The Series 65 questions weren't my problem. Knowing which topics were costing me points was.",
+      "p2": "Official IAR shape is long. This page is a shorter diagnostic — say so up front. Independent. Not NASAA.",
+      "hook_type": "pain",
+      "content_mode": "diagnostic",
+      "repetition_group": "S65_not_series7",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 86,
+      "exam": "Texas RE",
+      "topic_tag": "Texas real estate",
+      "dest": "/mock-exams/tx-real-estate-readiness-check",
+      "p1": "My real estate prep looked comprehensive until I filtered it down to what Texas actually tests.",
+      "p2": "Practice Texas. Timed diagnostic, then fix the red topics. Independent — not TREC.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "TX_RE_national_pack",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 87,
+      "exam": "NREMT EMT",
+      "topic_tag": "NREMT EMT",
+      "dest": "/mock-exams/nremt-emt-readiness-check",
+      "p1": "EMT psychomotor gets all the memes. Cognitive still needs a timer.",
+      "p2": "Timed cognitive practice. Independent — confirm NREMT’s live path.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "nremt_emt_87",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 88,
+      "exam": "CDL Passenger",
+      "topic_tag": "CDL passenger",
+      "dest": "/mock-exams/cdl-passenger-readiness-check",
+      "p1": "Passenger endorsement for the school-bus adjacent job. GK alone wasn’t enough.",
+      "p2": "Timed passenger practice. Independent. State DMV rules win.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "cdl_passenger_88",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 89,
+      "exam": "Ohio RE",
+      "topic_tag": "Ohio real estate",
+      "dest": "/mock-exams/oh-real-estate-readiness-check",
+      "p1": "Ohio licensing paperwork asked for proof I wasn’t using a random national deck. Fair.",
+      "p2": "State-scoped practice on a timer. Independent.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "ohio_re_89",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 90,
+      "exam": "CFA L1",
+      "topic_tag": "CFA Level 1",
+      "dest": "/mock-exams/cfa-level-1-readiness-check",
+      "p1": "Ethics wrecked my first timed set. Formula sheets didn’t save me.",
+      "p2": "Timed readiness check, then hammer the red topic. Independent practice.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "cfa_l1_90",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 91,
+      "exam": "ServSafe Manager",
+      "topic_tag": "ServSafe",
+      "dest": "/mock-exams/servsafe-manager-mock",
+      "p1": "I knew the food-safety rules. What I hadn't practiced was answering enough of them under the actual time pressure.",
+      "p2": "I run that length on a timer with a topic report. Independent — not National Restaurant Association. Confirm your state.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "ServSafe_fb_quiz",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 92,
+      "exam": "PTCE",
+      "topic_tag": "PTCB exam",
+      "dest": "/mock-exams/ptcb-pharmacy-technician-mock",
+      "p1": "Remote PTCE is gone. I stopped practicing like I could take it on a sofa.",
+      "p2": "Timed full-length mock, topic report, then the weak drug classes. Not PTCB.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "ptce_92",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 93,
+      "exam": "Series 63",
+      "topic_tag": "Series 63",
+      "dest": "/mock-exams/series-63-readiness-check",
+      "p1": "I studied Series 7 for two weeks and ignored 63. State law questions still wrecked me on a practice set.",
+      "p2": "Different exam, different pass math. Free timed check here — not Series 6, not Series 7. Not NASAA’s paper.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "series_63_93",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 94,
+      "exam": "SIE",
+      "topic_tag": "SIE exam",
+      "dest": "/mock-exams/sie-full-mock",
+      "p1": "Coworker said “just do Quizlet.” Quizlet doesn’t put you on a 105-minute clock with a 70% line.",
+      "p2": "I use a full-length practice run first. Pass/no-pass plus the domain that broke. Independent — not the FINRA paper.",
+      "hook_type": "pain",
+      "content_mode": "fact",
+      "repetition_group": "sie_94",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 95,
+      "exam": "CDL Tankers",
+      "topic_tag": "CDL tankers",
+      "dest": "/mock-exams/cdl-tankers-readiness-check",
+      "p1": "Tankers questions feel obvious until the timer’s on. Ask me how I know.",
+      "p2": "Separate timed mock. Independent.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "cdl_tankers_95",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 96,
+      "exam": "Illinois RE",
+      "topic_tag": "Illinois real estate",
+      "dest": "/mock-exams/il-real-estate-readiness-check",
+      "p1": "Illinois IDFPR path — another state, another outline. National Quizlet still shows up in every Facebook group.",
+      "p2": "Practice Illinois. Timed diagnostic. Independent.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "illinois_re_96",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 97,
+      "exam": "Florida RE",
+      "topic_tag": "Florida real estate",
+      "dest": "/mock-exams/fl-real-estate-readiness-check",
+      "p1": "Florida was the fifth \"real estate exam\" resource I tried. The problem was that the first four weren't actually Florida-specific.",
+      "p2": "I run a Florida-scoped timed check first. Confirm DBPR’s live outline. Independent — not the state exam.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "FL_RE_frec",
+      "modifier": {
+        "hook": "variant",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 98,
+      "exam": "SAFE MLO",
+      "topic_tag": "NMLS MLO exam",
+      "dest": "/mock-exams/mortgage-loan-originator-readiness-check",
+      "p1": "I studied state law and missed federal mortgage rules on a practice set. Wrong emphasis.",
+      "p2": "Timed MLO check first. Independent.",
+      "hook_type": "mistake",
+      "content_mode": "correction",
+      "repetition_group": "SAFE_state_vs_federal",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 99,
+      "exam": "Notary",
+      "topic_tag": "Notary public",
+      "dest": "/mock-exams/notary-public-readiness-check",
+      "p1": "Notary commission isn’t a weekend meme course in every state. Bond and education rules vary.",
+      "p2": "Check your state first. Timed knowledge practice if your path needs it. Independent.",
+      "hook_type": "comparison",
+      "content_mode": "story",
+      "repetition_group": "notary_99",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    },
+    {
+      "d": 100,
+      "exam": "USCIS civics",
+      "topic_tag": "US citizenship civics",
+      "dest": "/mock-exams/us-citizenship-readiness-check",
+      "p1": "Someone promised “pass the citizenship test online.” USCIS doesn’t grade that site.",
+      "p2": "Use the official question list. Timed or oral drill — then the interview. Independent.",
+      "hook_type": "pain",
+      "content_mode": "story",
+      "repetition_group": "uscis_civics_100",
+      "modifier": {
+        "hook": "control",
+        "media": "none",
+        "reply_style": "diagnostic",
+        "conversation": false
+      }
+    }
+  ],
+  "adapt": {
+    "date": "2026-09-23",
+    "kind": "point_edit_duplicate_hooks",
+    "changed_days": [
+      20,
+      32,
+      33,
+      34,
+      36,
+      40,
+      41,
+      43,
+      44,
+      47,
+      54,
+      59,
+      63,
+      66,
+      70,
+      76,
+      82,
+      85,
+      86,
+      91,
+      97
+    ],
+    "unchanged": [
+      "structure_100",
+      "p1_p2",
+      "dest",
+      "topic_tag",
+      "PTCE_micro_19_24",
+      "CDL",
+      "American_English"
+    ]
+  }
+}

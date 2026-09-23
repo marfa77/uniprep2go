@@ -14,3 +14,4 @@ Threads banks (UniPrep US, Prep2Go/CIPLE, Barakhlo, Emigro):
 - Review / best-model / fix-first: Task model **`gpt-5.6-sol-medium`** only.
 - Never use Grok for Threads review, bank copy, or content judgment.
 - Live farm on the VPS is write-locked (`/opt/farm-lock`). Do not rsync or unlock farm files from this UniPrep repo. Unlock only from the farm HQ chat that created the lock.
+- **Warn, don’t decide:** anything that might hurt reach, trust, measurement honesty, brand, or funnel (mismatched image/text, skipped answers, sparse dest while bio link dies, volume spikes on weak accounts, observe-only experiment arms, language mismatch, overlapping tests on one handle) — flag to the user first and wait for OK. Do not ship “good enough” shortcuts that confound a live experiment.
