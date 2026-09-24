@@ -12,6 +12,7 @@ import {
   shuffleQuestions,
 } from "@/lib/mock-exams/scoring";
 import { TrackedCheckoutLink } from "@/components/funnel-tracker";
+import { getMockRepairCheckoutCtaLabel } from "@/lib/checkout-pricing";
 import { LearnPassPaywall } from "./learn-pass-paywall";
 import { MockInterestCta } from "./mock-interest-cta";
 import { MockReportPanel } from "./mock-report";
@@ -369,7 +370,10 @@ export function MockExamClient({
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Buy Anki deck on Gumroad
+                {getMockRepairCheckoutCtaLabel({
+                  weakTopicLabels: report.repairPlan.map((item) => item.topicLabel),
+                  existingCtaLabel: linkedCheckout.ctaLabel,
+                })}
               </a>
             ) : null}
             <button
@@ -391,7 +395,7 @@ export function MockExamClient({
                 })
               }
             >
-              {linkedCheckout?.checkoutUrl ? "Deck details" : "Join Anki deck waitlist"}
+              {linkedCheckout?.checkoutUrl ? "Deck details" : "Join exam prep waitlist"}
             </Link>
           </div>
           {learnPassEnabled && sessionMode === "learn" && learnRemaining <= 0 ? (

@@ -356,7 +356,8 @@ describe("LLM documents", () => {
     expect(llms).toContain("LLM/GEO");
     expect(llms).toContain("$100");
     expect(llms).toContain("retail price agreed with you");
-    expect(llms.length).toBeLessThan(75000);
+    // Soft size guard — Tier A outcome copy (2026-09-24) nudged past 75k.
+    expect(llms.length).toBeLessThan(78000);
   });
 
   it("builds a full GEO markdown bundle for LLM ingestion", () => {

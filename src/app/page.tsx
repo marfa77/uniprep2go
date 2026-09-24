@@ -249,9 +249,9 @@ const howItWorksSteps = [
       "See pass/no-pass verdict, weak topics, pacing notes, and full answer review with explanations.",
   },
   {
-    title: "Drill weak topics daily",
+    title: "Fix only what you're weak at",
     detail:
-      "Use the linked Anki deck or printable PDF for spaced-repetition repair between study sessions.",
+      "Targeted flashcards or a printable guide map to the same topics — close the gaps, then retake the mock before exam day.",
   },
 ];
 
@@ -416,11 +416,11 @@ export default async function HomePage() {
                 PTCB · Series 63 · Life &amp; Health · CFA
               </p>
               <h1 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight text-balance text-[#18140f] sm:text-5xl">
-                Free timed mocks — then Anki for weak topics
+                Find your weak topics before exam day
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-8 text-[#4f493e]">
-                Start with a free PTCB or Series 63 practice test — pass/no-pass topic report, no
-                signup — then drill daily with Anki or a printable study guide.
+                Free timed PTCB or Series 63 practice test — no signup — then a pass/no-pass topic
+                readiness report so you fix only the gaps that matter.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
@@ -433,9 +433,9 @@ export default async function HomePage() {
                 <Link
                   href="/decks/series-63-anki-deck"
                   className={btnSecondary}
-                  aria-label="Open Series 63 Anki deck"
+                  aria-label="Open Series 63 exam prep deck"
                 >
-                  Series 63 Anki deck
+                  Series 63 exam prep
                 </Link>
               </div>
               <p className="mt-5 text-sm text-[#5f5749]">

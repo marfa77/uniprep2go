@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { TrackedCheckoutLink } from "@/components/funnel-tracker";
+import { getMockRepairCheckoutCtaLabel } from "@/lib/checkout-pricing";
 import { trackMockEvent } from "./mock-analytics";
 
 export type LinkedDeckCheckout = {
@@ -46,6 +47,15 @@ export function MockReportHandoff({
       ? weakTopicLabels.slice(0, 3).join(", ")
       : null;
 
+  const primaryCheckoutLabel = getMockRepairCheckoutCtaLabel({
+    weakTopicLabels,
+    existingCtaLabel: linkedCheckout?.ctaLabel,
+  });
+
+  const primaryDeckLabel = weakLabel
+    ? "Fix your weak topics before retake"
+    : "Open linked exam prep deck";
+
   return (
     <div className="mt-6 flex flex-wrap gap-3">
       {linkedCheckout ? (
@@ -55,7 +65,7 @@ export function MockReportHandoff({
           href={linkedCheckout.checkoutUrl}
           source={`mock_report:${mockSlug}:checkout`}
         >
-          {linkedCheckout.ctaLabel}
+          {primaryCheckoutLabel}
         </TrackedCheckoutLink>
       ) : (
         <Link
@@ -63,7 +73,7 @@ export function MockReportHandoff({
           href={deckPageUrl}
           onClick={() => trackDeckClick(`mock_report:${mockSlug}:deck_primary`)}
         >
-          {weakLabel ? `Drill weak topics in Anki` : "Open linked Anki deck"}
+          {primaryDeckLabel}
         </Link>
       )}
       {linkedCheckout ? (
@@ -83,8 +93,8 @@ export function MockReportHandoff({
       </Link>
       {recommendDeck ? (
         <p className="w-full text-sm leading-7 text-[#4f493e]">
-          Recommended next step: drill {deckShortName}
-          {weakLabel ? ` (${weakLabel})` : " on weak topics"}, then retake in 3–7 days.
+          Recommended next step: fix {weakLabel ?? "your weakest topics"} with {deckShortName}
+          , then retake in 3–7 days.
         </p>
       ) : null}
     </div>

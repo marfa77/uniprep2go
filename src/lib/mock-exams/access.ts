@@ -20,9 +20,12 @@ export function getMockAccessState(mockSlug: string): MockAccessState | null {
         mockSlug,
         accessMode: config.accessMode,
         fullReportUnlocked: true,
-        // No “notify me when paid mocks launch” — funnel is free mock → Anki deck.
+        // No “notify me when paid mocks launch” — funnel is free mock → fix weak topics.
         interestCaptureEnabled: false,
-        ctaLabel: linkedDeck?.status === "available" ? "Buy linked Anki deck" : "Open linked Anki deck",
+        ctaLabel:
+          linkedDeck?.status === "available"
+            ? "Fix weak topics with linked prep"
+            : "Open linked exam prep",
         ctaDescription: mockFunnelNoticeForLinkedDeck(linkedDeck),
       };
     case "gumroad_license":

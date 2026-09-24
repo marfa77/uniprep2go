@@ -1,10 +1,24 @@
 # UniPrep2Go SEO / LLM autopilot strategy
 
-**North star:** US organic + LLM → free timed mock → Anki/Gumroad.  
+**North star:** US organic + LLM → free timed mock → topic readiness report → fix weak topics (Anki/PDF = mechanism, not the brand promise).  
 **Primary operating model (90d from 2026-08-27):** dual-track — (1) near-page-one push on URLs already at pos 8–25, (2) FINRA index-first (`sie-full-mock` unknown until Google knows it).  
-**Not:** weekly FINRA title allowlist. That track was premature (2026-08-06…08-13) while `sie-full-mock` stayed unknown and "sie" queries = 0.
+**Not:** weekly FINRA title allowlist. That track was premature (2026-08-06…08-13) while `sie-full-mock` stayed unknown and "sie" queries = 0.  
+**Not:** catalog scale / new SKUs / `/exams/{slug}/` URL migration until one Tier A exam proves SEO → mock → sale.
 
 **90-day targets (vs 28d baseline 574 impr / 1 click / pos ~60):** ≥1 200 impr, ≥20 clicks, ≥3 of 6 Layer B URLs at pos ≤10, `sie-full-mock` ≠ unknown with ≥10 impr/28d.
+
+## Exam tiers (Wave 1 — 2026-09-24)
+
+Deepen-in-place on existing `/mock-exams/*` + `/decks/*` + `/blog/*`. No new URL tree.
+
+| Tier | Exams | Cadence |
+|------|--------|---------|
+| **A — push ecosystems** | PTCB, Series 63, CFA L2, Life & Health (Layer B money) | Homepage hero, mock-result conversion, Layer B point-edits ≤1–2 URLs/week |
+| **A depth pilots** | EPA 608, ServSafe (already live mock↔deck) | Maintain + outcome CTAs; **no new URLs** this wave |
+| **B — maintain** | CFA L1, FRM, SIE/7 (index-only until Layer C), building/LEED, PMP, etc. | Keep live; no weekly SEO churn |
+| **C — freeze** | Thin state-by-state real estate, language churn, comics, new SKUs, mass FAQ/blog, GEO catalog dump | Keep live; no weekly work |
+
+**Conversion rule:** mock result sells “fix these weak topics / pass the exam,” not “buy Anki.”
 
 ## Dual-track signal rules
 
@@ -29,13 +43,19 @@
 
 ## Homepage rule
 
-Hero = live Layer B money (PTCB free mock, Series 63, CFA L2 formula, Life & Health, citizenship). SIE is a secondary link until Google knows `/mock-exams/sie-full-mock`.
+Hero = outcome-first diagnostic prep for live Layer B money (PTCB free mock, Series 63, CFA L2 formula, Life & Health). Sell readiness report → weak-topic fix, not Anki as the H1. SIE is a secondary link until Google knows `/mock-exams/sie-full-mock`. Do not billboard the full catalog in the first viewport.
 
 ## Out of scope for weekly auto-edits
 
-Pricing, Gumroad IDs, auth, DB banks, layout CSS, invented official pass rates, SIE/7/63 mock title churn while SIE is unknown, USCIS/building/language/comics weekly ships, new SKUs, OpenRouter audits.
+Pricing, Gumroad IDs, auth, DB banks, layout CSS, invented official pass rates, SIE/7/63 mock title churn while SIE is unknown, USCIS/building/language/comics weekly ships, new SKUs, OpenRouter audits, state-RE catalog growth, `/exams/` migration, mass topical blog clusters without GSC proof.
 
 ## Run log
+
+### 2026-09-24 — Tier A diagnostic funnel (Wave 1)
+
+**Why:** Public audit — catalog too wide; Anki-as-VP; mock→sale under-sold; no proven niche.  
+**Shipped:** Tier A/B/C freeze; homepage outcome hero + home meta; mock report / handoff / mid-session CTAs = fix weak topics; PTCB + Series 63 readiness framing polish.  
+**Next:** GSC Pages+Queries + GA4 funnel table → pick one winner; deepen that exam only. No new SKUs.
 
 ### 2026-09-21 — Foundation repair (no new SKUs)
 

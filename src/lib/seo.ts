@@ -226,10 +226,10 @@ export function finalize(meta: Metadata): Metadata {
 
 export function homeMetadata(): Metadata {
   // Keep absolute title ≤57 chars (Ahrefs / audit TITLE_MAX).
-  // Dual-track (2026-08-27): hero money = live Layer B, not unknown SIE billboard.
-  const title = "Free PTCB & Series 63 Mocks | Anki Decks";
+  // Dual-track + Tier A (2026-09-24): outcome diagnostic, not Anki-as-VP.
+  const title = "Free PTCB & Series 63 Mocks | Weak Topics";
   const description =
-    "Free timed PTCB, Series 63, Life & Health, and CFA mocks — no signup. Pass/no-pass topic reports, then Anki/PDF decks for weak topics. Independent US exam prep.";
+    "Free timed PTCB, Series 63, Life & Health, and CFA mocks — no signup. Pass/no-pass topic readiness reports, then fix only your weak areas. Independent US exam prep.";
 
   return finalize({
     title: {
@@ -254,7 +254,7 @@ export function homeMetadata(): Metadata {
       card: "summary_large_image",
       title,
       description:
-        "Timed mocks with topic reports — plus Anki decks for daily drilling. Start with a free practice test.",
+        "Timed mocks with topic readiness reports — then fix only your weak areas. Start free.",
       images: ["/home/hero.webp"],
     },
   });

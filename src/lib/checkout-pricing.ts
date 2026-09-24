@@ -237,6 +237,41 @@ export function getDeckCheckoutCtaLabel(
   return `Get ${cardPart}${deck.shortName} Deck${priceSuffix}`;
 }
 
+/** Extract " — $11" (or similar) from an existing checkout CTA for reuse on outcome labels. */
+export function extractCheckoutPriceSuffix(ctaLabel: string): string {
+  const match = ctaLabel.match(/(\s—\s\$[\d.,]+(?:\s[A-Z]{3})?)\s*$/);
+  return match?.[1] ?? "";
+}
+
+/**
+ * Mock-result / repair CTA: sell fixing weak topics (outcome), not "Buy Anki".
+ * Falls back to the product checkout label when there is no repair context.
+ */
+export function getMockRepairCheckoutCtaLabel(options: {
+  weakTopicLabels?: string[];
+  existingCtaLabel?: string | null;
+  priceLabel?: string;
+}): string {
+  const fromExisting = options.existingCtaLabel
+    ? extractCheckoutPriceSuffix(options.existingCtaLabel)
+    : "";
+  const priceSuffix =
+    fromExisting ||
+    (options.priceLabel && options.priceLabel.trim() ? ` — ${options.priceLabel.trim()}` : "");
+
+  const topics = (options.weakTopicLabels ?? []).map((t) => t.trim()).filter(Boolean);
+  if (topics.length > 0) {
+    const short = topics.slice(0, 2).join(" + ");
+    return `Fix ${short}${priceSuffix}`;
+  }
+
+  if (options.existingCtaLabel) {
+    return options.existingCtaLabel;
+  }
+
+  return `Fix your weak topics before retake${priceSuffix}`;
+}
+
 export function parseLemonVariantId(checkoutUrl: string) {
   const match = checkoutUrl.match(/\/checkout\/buy\/([0-9a-f-]{36})/i);
   return match?.[1] ?? null;

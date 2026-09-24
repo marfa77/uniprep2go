@@ -144,7 +144,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "ptcb-pharmacy-technician-mock": {
     title: "Free PTCB Practice Test 2026 | 90-Question PTCE Mock Exam Online",
     description:
-      "Take a free PTCB / PTCE practice test online: 90 timed questions, 110 minutes, 2026 domain-weighted scoring (Medications 35%, Federal Requirements 18.75%, Patient Safety 23.75%, Order Entry 22.5%), answer explanations, and pass/no-pass report. Independent mock — not official PTCB material.",
+      "Take a free PTCB / PTCE practice test online: 90 timed questions, 110 minutes, 2026 domain-weighted scoring (Medications 35%, Federal Requirements 18.75%, Patient Safety 23.75%, Order Entry 22.5%), answer explanations, and a pass/no-pass topic readiness report. Independent mock — not official PTCB material.",
     keywords: [
       "ptcb practice test",
       "ptcb mock exam",
@@ -155,9 +155,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free PTCB Pharmacy Technician Practice Test",
     intro:
-      "A full-length PTCB / PTCE mock aligned to the January 2026 content outline: 90 questions, 110 minutes, and domain-weighted topic diagnosis across medications, federal requirements, patient safety, and order entry — sourced from the same validated item bank as the UniPrep2Go Anki deck.",
+      "A full-length PTCB / PTCE mock aligned to the January 2026 content outline: 90 questions, 110 minutes, and domain-weighted topic diagnosis across medications, federal requirements, patient safety, and order entry — then fix only the weak domains before exam day.",
     audience:
-      "Pharmacy technician candidates, pharmacy tech students, and career changers preparing for the PTCE who want a timed baseline before buying prep courses or drilling flashcards.",
+      "Pharmacy technician candidates, pharmacy tech students, and career changers preparing for the PTCE who want a timed readiness baseline before buying prep courses or drilling flashcards.",
     practiceTestLabel: "PTCB / PTCE practice test",
   },
   "nha-excpt-readiness-check": {
@@ -341,7 +341,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "series-63-readiness-check": {
     title: "Series 63 Practice Test 2026 | Free 60Q NASAA",
     description:
-      "Free Series 63 practice test — no signup: 60 timed questions on NASAA state law topics, 90 minutes, 72% target, topic scoring — then repair with the linked Series 63 Anki deck. Independent — not official NASAA material.",
+      "Free Series 63 practice test — no signup: 60 timed questions on NASAA state law topics, 90 minutes, 72% target, topic readiness scoring — then fix weak law rows before the state sit. Independent — not official NASAA material.",
     keywords: [
       "series 63 practice test",
       "free series 63 practice test",
@@ -353,7 +353,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free Series 63 Practice Test — 60 Questions",
     intro:
-      "A Series 63 practice test built from UniPrep2Go deck content across broker-dealer regulation, agent registration, ethics, communications, and investment adviser basics. Timed NASAA-topic diagnostic — no signup — then drill weak law rows in the linked Anki deck.",
+      "A Series 63 practice test built from UniPrep2Go deck content across broker-dealer regulation, agent registration, ethics, communications, and investment adviser basics. Timed NASAA-topic diagnostic with a readiness report — no signup — then repair only your weak law rows.",
     audience: "Series 63 candidates who need a timed diagnostic after SIE and Series 7 prep.",
     practiceTestLabel: "Series 63 practice test",
   },

@@ -4,8 +4,10 @@ import {
   applyPendingPriceToDeck,
   applyPriceRecordToDeck,
   applySyncedPriceToDeck,
+  extractCheckoutPriceSuffix,
   formatDeckPriceLabel,
   getCheckoutActionLabel,
+  getMockRepairCheckoutCtaLabel,
   parseGumroadPriceCentsFromHtml,
   parseLemonVariantId,
   resetLemonVariantIndexCache,
@@ -227,6 +229,22 @@ describe("checkout pricing", () => {
     expect(fetchMock).not.toHaveBeenCalled();
 
     vi.unstubAllGlobals();
+  });
+
+  it("builds outcome repair CTAs from weak topics and price suffix", () => {
+    expect(extractCheckoutPriceSuffix("Get 300-Card Series 63 Deck — $11")).toBe(" — $11");
+    expect(
+      getMockRepairCheckoutCtaLabel({
+        weakTopicLabels: ["Type II", "Recovery", "Leak rates"],
+        existingCtaLabel: "Get 200-Card EPA 608 Deck — $11",
+      }),
+    ).toBe("Fix Type II + Recovery — $11");
+    expect(
+      getMockRepairCheckoutCtaLabel({
+        existingCtaLabel: "Get 300-Card Series 63 Deck — $11",
+      }),
+    ).toBe("Get 300-Card Series 63 Deck — $11");
+    expect(getMockRepairCheckoutCtaLabel({})).toBe("Fix your weak topics before retake");
   });
 
 });

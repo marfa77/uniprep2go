@@ -8,9 +8,21 @@ alwaysApply: true
 **Canonical strategy:** `docs/SEO_AUTOPILOT_STRATEGY.md`  
 **Supersedes:** FINRA-only weekly title allowlist (2026-08-06…08-13) while `sie-full-mock` stayed unknown.
 
-## North star (unchanged funnel)
+## North star
 
-US organic + LLM → free timed mock → Anki/Gumroad.
+US organic + LLM → free timed mock → topic readiness report → fix weak topics.  
+**Anki/PDF = mechanism**, not the brand promise. Outcome = pass the exam / close diagnostic gaps.
+
+## Exam tiers (Wave 1 — 2026-09-24)
+
+| Tier | Scope | Action |
+|------|--------|--------|
+| **A** | PTCB, Series 63, CFA L2, Life & Health | Homepage + Layer B push + mock-result conversion |
+| **A pilots** | EPA 608, ServSafe (live pairs) | Outcome CTAs only; **no new URLs** |
+| **B** | Other live money (CFA L1, FRM, building, …) | Maintain; no weekly churn |
+| **C** | Thin state RE, language churn, comics, new SKUs | Freeze |
+
+Deepen-in-place on `/mock-exams/*` + `/decks/*` + `/blog/*`. Do **not** build `/exams/{slug}/` until Tier A proves demand.
 
 ## Operating model (90 days)
 
@@ -33,11 +45,11 @@ Reserve: CA RE blog (pos 26–35), then `/mock-exams` hub.
 
 ## Homepage rule
 
-Hero must feature **live Layer B money** (PTCB, CFA L2, Series 63, Life & Health, citizenship). Do **not** billboard SIE as primary CTA while `sie-full-mock` is unknown to Google. SIE may stay a secondary link.
+Hero must feature **live Layer B money** (PTCB, CFA L2, Series 63, Life & Health) with **outcome-first** copy (weak topics / readiness), not Anki-as-H1. Do **not** billboard SIE as primary CTA while `sie-full-mock` is unknown to Google. SIE may stay a secondary link. Do not dump the full catalog into the first viewport.
 
 ## Freeze (keep live, no weekly SEO)
 
-SIE / Series 7 / Series 63 **mock** title rewrites while SIE unknown · comics · survival/prep2go-app decks · new SKUs · building/LEED weekly · OpenRouter audits · competitor AEO if last pass &lt; 60 days.
+SIE / Series 7 / Series 63 **mock** title rewrites while SIE unknown · comics · survival/prep2go-app decks · new SKUs · building/LEED weekly · OpenRouter audits · competitor AEO if last pass &lt; 60 days · thin state-RE scale · mass FAQ/blog · GEO catalog dump · `/exams/` URL migration.
 
 ## Always
 

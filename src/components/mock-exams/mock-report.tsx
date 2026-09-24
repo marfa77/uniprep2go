@@ -86,11 +86,11 @@ export function MockReportPanel({
         ))}
       </ol>
       <p className="mt-6 text-sm leading-7 text-[#4f493e]">
-        Retake recommendation: drill the weak topics above in the linked{" "}
+        Biggest gap first: close the weak topics above with targeted review in the linked{" "}
         <a className="font-medium underline decoration-[#18140f]/20 underline-offset-4" href={report.linkedDeckUrl}>
           {deckShortName}
         </a>{" "}
-        deck, then run this mock again in 3–7 days.
+        prep, then retake this mock in 3–7 days.
       </p>
     </section>
   );
@@ -127,10 +127,12 @@ export function MockReportPanel({
         <p className="mt-4 max-w-3xl text-sm leading-7">{report.verdictExplanation}</p>
         {shouldRecommendDeck ? (
           <div className="mt-6 rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-5 text-[#18140f]">
-            <p className="font-semibold">Recommended next step: drill the linked Anki deck before retaking.</p>
+            <p className="font-semibold">
+              Recommended next step: fix your weak topics before retaking.
+            </p>
             <p className="mt-2 text-sm leading-7 text-[#4f493e]">
-              Your score is not yet safely above target. Use the deck to rebuild the weak topics below,
-              then retake this mock after a focused review cycle.
+              Your score is not yet safely above target. Close the gaps below with focused daily
+              review, then retake this mock after 3–7 days.
             </p>
             <MockReportHandoff
               deckPageUrl={report.linkedDeckUrl}
@@ -248,12 +250,14 @@ export function MockReportPanel({
       <section className="rounded-3xl border border-[#1f3a5f]/20 bg-[#fffaf0] p-6 sm:p-8">
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Full study system</p>
         <h3 className="mt-3 text-2xl font-semibold tracking-tight">
-          Ready for daily drilling on {deckShortName}?
+          {shouldRecommendDeck
+            ? `Close your gaps on ${deckShortName}`
+            : `Keep momentum on ${deckShortName}`}
         </h3>
         <p className="mt-4 max-w-3xl text-sm leading-7 text-[#4f493e]">
           {shouldRecommendDeck
-            ? "Your mock score shows gaps this report cannot fix alone. The linked Anki deck covers the same topic map with spaced repetition — drill weak areas, then retake this mock in 3–7 days."
-            : "Strong mock result — keep momentum with the linked Anki deck for daily active recall on the same topics you just tested."}
+            ? "Your mock score shows gaps this report cannot fix alone. Targeted daily review on the same topic map — then retake this mock in 3–7 days."
+            : "Strong mock result — keep daily active recall on the same topics you just tested so the pass holds on exam day."}
         </p>
         <MockReportHandoff
           deckPageUrl={report.linkedDeckUrl}
