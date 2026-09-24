@@ -42,6 +42,7 @@
     "audit:aeo": "npx tsx scripts/aeo-audit-local.mjs --scope all",
     "audit:aeo:live": "npx tsx scripts/aeo-audit-local.mjs --scope all --live",
     "llms:export": "tsx scripts/export-llms-txt.ts",
+    "gsc:export": "node scripts/export-gsc-performance.mjs",
     "check:aeo": "npm run llms:export && node scripts/check-aeo-parity.mjs",
     "llm:citation-test": "tsx scripts/llm-citation-test.ts",
     "seo-autopilot:weekly": "npm run audit:seo:rules && npm run audit:aeo && npm run audit:visibility:rules",

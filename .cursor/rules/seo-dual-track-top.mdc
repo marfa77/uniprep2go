@@ -69,4 +69,4 @@ SIE / Series 7 / Series 63 **mock** title rewrites while SIE unknown · comics �
 - Crawled-not-indexed money URL → strengthen unique copy same turn (see `gsc-crawled-not-indexed-strengthen.mdc`).
 - After content/cite change: focused tests + `npm run llms:export` when facts/cites change.
 - Ship via `git push origin main` when user asks — no `vercel --prod` CLI.
-- Re-export GSC: `node scripts/export-gsc-performance.mjs` (includes query×page). Ledger: `tmp/gsc-export-*/QUERY_PAGE_ACTIONS.md`.
+- Re-export GSC: `npm run gsc:export` (includes query×page). Ledger: `tmp/gsc-export-*/QUERY_PAGE_ACTIONS.md`.

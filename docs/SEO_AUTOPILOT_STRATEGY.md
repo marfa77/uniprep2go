@@ -31,7 +31,7 @@
 | `/blog/mrics-apc-vs-assocrics-pathway-cost` | `assocrics` | **KEEP · internal link** → MRICS mock/deck |
 | AU Common Bond · CDL hazmat blogs | long-tail @ pos 50–90 | **KEEP · NO SCALE** |
 
-Export path: `tmp/gsc-export-YYYY-MM-DD/` via `node scripts/export-gsc-performance.mjs` (includes `query-page-*.csv`). Action ledger: `QUERY_PAGE_ACTIONS.md` in that folder.
+Export path: `tmp/gsc-export-YYYY-MM-DD/` via `npm run gsc:export` (includes `query-page-*.csv`). Action ledger: `QUERY_PAGE_ACTIONS.md` in that folder.
 
 ## Exam tiers (Wave 1 — 2026-09-24)
 
