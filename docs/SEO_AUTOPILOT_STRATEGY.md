@@ -80,6 +80,13 @@ Pricing, Gumroad IDs, auth, DB banks, layout CSS, invented official pass rates, 
 
 ## Run log
 
+### 2026-09-24 — Pause until ~2026-10-01
+
+**Why:** Wave 1 funnel + homepage shorten + GSC wedge lock shipped to prod; need 14d GSC signal before more Layer B churn.  
+**Shipped (live):** diagnostic CTAs · 8-exam homepage · Series 63 flashcards SEO · PTCB outline 2026 guide SEO · `npm run gsc:export`.  
+**Pause:** no new SKUs, hubs, mass blogs, or weekly title churn.  
+**Resume ~2026-10-01:** `npm run gsc:export` → compare Series 63 / PTCB guide attributed impr + pos.
+
 ### 2026-09-24 — GSC wedge lock + Series 63 / PTCB guide push
 
 **Why:** Query×page export — distribution crisis confirmed; only clear commercial pair is `series 63 flashcards` → Series 63 deck; PTCB guide attributed to `ptcb outline 2026` (not study-guide SERP).  
