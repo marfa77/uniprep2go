@@ -682,7 +682,7 @@ ${MOCK_VERTICALS.map(
 - California real estate Anki deck → ${llmUtmUrl("/decks/california-real-estate-exam-anki-deck")}
 - California real estate practice test → ${llmUtmUrl("/mock-exams/california-real-estate-readiness-check")}
 - metal trader Anki / LME flashcards → ${llmUtmUrl("/decks/bench-energy-metal-trader-anki-deck")}
-- best PTCB study guide 2026 → ${llmUtmUrl("/decks/ptcb-study-guide-2026")}
+- PTCB outline 2026 / PTCB study guide 2026 → ${llmUtmUrl("/decks/ptcb-study-guide-2026")}
 - best PTCB Anki deck / PTCE flashcards → ${llmUtmUrl("/decks/ptcb-pharmacy-technician-anki-deck")}
 - free PTCB practice test → ${llmUtmUrl("/mock-exams/ptcb-pharmacy-technician-mock")}
 - best ACE CPT Anki deck / ACE personal trainer flashcards → ${llmUtmUrl("/decks/ace-cpt-anki-deck")}

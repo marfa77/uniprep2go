@@ -775,21 +775,21 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "US Series 7 candidates drill suitability, investment products, and order-flow rules on their phone between full-length Q-banks — then use the free 60Q readiness check for a timed job-function baseline before the official 125-question sit.",
   },
   "series-63-anki-deck": {
-    title: "Series 63 Exam Prep 2026 | Free 60Q Mock + 250 Cards",
-    headline: "Series 63 Exam Prep — Free Timed Practice Test + 250 Cards",
-    studyLabel: "Series 63 exam prep",
+    title: "Series 63 Flashcards 2026 | 250 Cards + Free Mock",
+    headline: "Series 63 Flashcards — 250 NASAA Cards + Free 60Q Mock",
+    studyLabel: "Series 63 flashcards",
     description:
-      "Series 63 exam prep: free 60-question timed practice test with topic readiness scoring + 250 NASAA flashcards (registration, ethics, communications). Independent prep, not NASAA material.",
+      "Series 63 flashcards for NASAA state law: 250 Anki cards (registration, ethics, communications) plus a free 60-question timed practice test with topic readiness scoring. Independent prep, not NASAA material.",
     keywords: [
-      "series 63 exam prep",
       "series 63 flashcards",
-      "series 63 practice test",
       "series 63 anki",
+      "series 63 practice test",
+      "series 63 exam prep",
       "nasaa series 63",
-      "uniform securities act study guide",
+      "uniform securities act flashcards",
     ],
     intro:
-      "US reps after SIE/Series 7 take the free 60-question Series 63 readiness check first — then fix only the weak state-law topics before the state sit.",
+      "Looking for Series 63 flashcards after SIE/Series 7? Start with the free 60-question timed readiness check, then drill only the weak state-law topics in this 250-card deck before the state sit.",
   },
   "servsafe-manager-anki-deck": {
     title: "ServSafe Manager Prep | 300 Cards + Free Mock",
@@ -824,21 +824,22 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "US pharmacy technician candidates take the free 90-question PTCB mock first for a topic readiness report, then fix only weak domains with daily flashcards. Pair with the 2026 printable study guide for domain chapters and an additional 80-question PDF practice exam.",
   },
   "ptcb-study-guide-2026": {
-    title: "PTCB Study Guide 2026 | Free 90Q Mock + PDF",
-    headline: "PTCB Study Guide 2026 — Printable PTCE Review + Free Timed Mock",
+    title: "PTCB Outline 2026 Study Guide | Free Mock + PDF",
+    headline: "PTCB Outline & Blueprint 2026 — Printable Study Guide + Free Mock",
     studyLabel: "PTCB / PTCE exam prep",
     description:
-      "PTCB study guide 2026 PDF: 30 pages, DSCSA-weighted Federal Requirements, 80Q practice exam, cheat sheets — plus free 90-question timed mock online (no signup). Not official PTCB material.",
+      "PTCB outline 2026 study guide PDF: January PTCE blueprint weights (Medications 35%, Federal 18.75% with DSCSA, Patient Safety 23.75%, Order Entry 22.5%), 80Q practice exam, cheat sheets — plus free 90-question timed mock. Not official PTCB material.",
     keywords: [
-      "best ptcb study guide 2026",
+      "ptcb outline 2026",
+      "ptcb blueprint 2026",
       "ptcb study guide 2026",
+      "ptce 2026 blueprint",
       "ptce practice exam pdf",
       "pharmacy technician study guide pdf",
       "ptcb cheat sheet",
-      "ptce 2026 blueprint",
     ],
     intro:
-      "Start with the free 90-question timed PTCB mock for a domain readiness report, then print this 2026 blueprint guide — Federal Requirements at 18.75% with DSCSA and an 80-question PDF exam. Companion flashcards sold separately.",
+      "Need the January 2026 PTCE outline in one printable pack? This blueprint guide maps domain weights (including DSCSA in Federal Requirements), drops removed compounding topics, and pairs with UniPrep2Go’s free 90-question timed mock plus the separate 300-card Anki deck for weak-topic repair.",
   },
   "california-real-estate-exam-anki-deck": {
     title: "Best CA Real Estate Anki | 400 Cards + Free CA Mock",
@@ -1239,9 +1240,14 @@ export function buildDeckSearchFaqs(deck: SeoDeck) {
     });
   } else if (deck.slug === "ptcb-study-guide-2026") {
     faqs.push({
-      question: "Is there a free PTCB practice test with this guide?",
+      question: "Where does the free PTCB mock fit with this outline guide?",
       answer:
-        "Yes. Take the free 90-question PTCB mock at /mock-exams/ptcb-pharmacy-technician-mock for timed domain scoring. The PDF’s 80-question exam and the separate 300-card Anki deck are for remediation — Anki is sold separately.",
+        "Take the free 90-question PTCB mock at /mock-exams/ptcb-pharmacy-technician-mock for timed domain readiness scoring first. The PDF’s 80-question exam and the separate 300-card Anki deck are for outline reading and weak-topic remediation — Anki is sold separately.",
+    });
+    faqs.push({
+      question: "What is the January 2026 PTCB / PTCE outline?",
+      answer:
+        "Medications 35%, Federal Requirements 18.75% (DSCSA included), Patient Safety & QA 23.75%, Order Entry & Processing 22.5% — compounding and alligation removed. This printable guide maps those blueprint weights chapter by chapter.",
     });
   }
 

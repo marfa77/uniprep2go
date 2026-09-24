@@ -856,15 +856,15 @@ const rawDecks: Deck[] = [
     slug: "series-63-anki-deck",
     category: "finance",
     status: "available",
-    title: "Series 63 Anki Deck — 250 High-Yield Flashcards",
+    title: "Series 63 Flashcards — 250 High-Yield NASAA Cards + Free Timed Mock",
     shortName: "Series 63",
     subtitle:
-      "250 NASAA Series 63 flashcards + free 60-question timed practice test — registration, ethics, communications.",
+      "Series 63 flashcards: 250 NASAA Anki cards + free 60-question timed practice test — registration, ethics, communications.",
     directAnswer:
-      "UniPrep2Go sells a Series 63 Anki deck with 250 high-yield cards for NASAA state securities law — broker-dealer regulation, agent registration, ethics, customer communications, securities exemptions, investment adviser basics, and remedies — plus a free 60-question timed Series 63 readiness check (no signup). Delivered as an Anki .apkg for {PRICE} through Gumroad. Independent study aid — not official NASAA or FINRA material.",
-    lastUpdated: "2026-08-27",
+      "UniPrep2Go sells Series 63 flashcards as a 250-card Anki deck for NASAA state securities law — broker-dealer regulation, agent registration, ethics, customer communications, securities exemptions, investment adviser basics, and remedies — plus a free 60-question timed Series 63 practice test (no signup) with topic readiness scoring. Delivered as an Anki .apkg for {PRICE} through Gumroad. Independent study aid — not official NASAA or FINRA material.",
+    lastUpdated: "2026-09-24",
     audience:
-      "Series 63 candidates, new broker-dealer agents, and SIE/Series 7 passers who need state registration via spaced repetition plus a free timed mock.",
+      "Series 63 candidates searching for flashcards, new broker-dealer agents, and SIE/Series 7 passers who need state registration via spaced repetition plus a free timed mock.",
     format: ".apkg",
     coverImage: "/covers/series-63-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/vsbsgw?wanted=true",
@@ -909,19 +909,19 @@ const rawDecks: Deck[] = [
     ],
     faqs: [
       {
-        question: "What does the Series 63 deck include?",
+        question: "Where can I get Series 63 flashcards?",
         answer:
-          "250 high-yield Anki cards covering NASAA Series 63 topics including broker-dealer regulation, agent registration, ethics, communications, securities and exemptions, investment advisers, and remedies.",
+          "UniPrep2Go’s Series 63 Anki deck is 250 high-yield flashcards covering NASAA state-law topics — broker-dealer regulation, agent registration, ethics, communications, securities and exemptions, investment advisers, and remedies — delivered as an .apkg for spaced repetition on phone or desktop.",
       },
       {
-        question: "Is there a free Series 63 practice test?",
+        question: "Is there a free Series 63 practice test with these flashcards?",
         answer:
-          "Yes. Take the free 60-question timed Series 63 readiness check on UniPrep2Go (no signup), then drill weak topics with this Anki deck between sittings.",
+          "Yes. Take the free 60-question timed Series 63 readiness check on UniPrep2Go (no signup) for a topic readiness report, then drill only the weak flashcard topics in this deck between sittings.",
       },
       {
         question: "Who is this deck for?",
         answer:
-          "It is for Series 63 candidates, new broker-dealer agents, and SIE or Series 7 candidates who also need state registration.",
+          "It is for Series 63 candidates who want flashcards after SIE or Series 7, new broker-dealer agents, and anyone who needs state registration via spaced repetition plus a free timed mock.",
       },
       {
         question: "What file format is delivered?",
@@ -933,9 +933,9 @@ const rawDecks: Deck[] = [
           "No. This is an independent study aid and is not affiliated with, endorsed by, or sponsored by NASAA.",
       },
       {
-        question: "Does the deck replace Series 63 practice questions?",
+        question: "Do Series 63 flashcards replace a full Q-bank?",
         answer:
-          "No. It is a supplementary recall tool for rules, definitions, and common exam traps. Use it alongside a full Series 63 course and practice questions.",
+          "No. Flashcards are a supplementary recall tool for rules, definitions, and common exam traps. Use them alongside a full Series 63 course and practice questions — ideally after a timed readiness check shows which topics to filter.",
       },
     ],
   },
@@ -4488,15 +4488,16 @@ const rawDecks: Deck[] = [
     slug: "ptcb-study-guide-2026",
     category: "professional",
     status: "available",
-    title: "PTCB Exam Study Guide 2026 — Complete PTCE Review + 80-Question Practice Exam + Cheat Sheets (PDF)",
+    title:
+      "PTCB Outline 2026 Study Guide — PTCE Blueprint PDF + 80-Question Exam + Cheat Sheets",
     shortName: "PTCB Study Guide 2026",
     subtitle:
-      "Printable PTCE study guide for the January 2026 blueprint — domain chapters, 80-question exam, cheat sheets; pairs with free 90Q online mock.",
+      "January 2026 PTCE outline/blueprint PDF — domain chapters, 80-question exam, cheat sheets; pairs with free 90Q online mock + Anki.",
     directAnswer:
-      "The independent PTCB / PTCE study guide PDF for 2026 on UniPrep2Go is a 30-page printable pack aligned to the January 2026 PTCE blueprint: Medications 35%, Federal Requirements 18.75% (with DSCSA), Patient Safety & QA 23.75%, Order Entry & Processing 22.5% — plus an 80-question practice exam with domain-scored answer key, three cheat sheets (60 drugs, 45 sig codes, math), and a 4-week plan. It pairs with UniPrep2Go’s free 90-question timed online mock and a separate 300-card Anki deck (sold separately). Not a free blog outline that still teaches removed compounding topics. Delivered for {PRICE} through Gumroad. Independent — not official PTCB, NHA, FDA, or DEA material.",
-    lastUpdated: "2026-08-27",
+      "The independent PTCB / PTCE outline study guide for 2026 on UniPrep2Go is a 30-page printable pack aligned to the January 2026 PTCE blueprint: Medications 35%, Federal Requirements 18.75% (with DSCSA), Patient Safety & QA 23.75%, Order Entry & Processing 22.5% — plus an 80-question practice exam with domain-scored answer key, three cheat sheets (60 drugs, 45 sig codes, math), and a 4-week plan. Cluster with UniPrep2Go’s free 90-question timed online mock for readiness scoring and a separate 300-card Anki deck for weak-topic repair (sold separately). Not a free blog outline that still teaches removed compounding topics. Delivered for {PRICE} through Gumroad. Independent — not official PTCB, NHA, FDA, or DEA material.",
+    lastUpdated: "2026-09-24",
     audience:
-      "PTCE candidates who want one structured printable document — read domain chapters, take the 80-question practice exam, print cheat sheets, and pair with spaced-repetition drills on the companion Anki deck.",
+      "PTCE candidates who need the January 2026 outline in one structured printable document — read domain chapters, take the 80-question practice exam, print cheat sheets, then pair with the free timed mock and optional Anki drills.",
     format: "PDF",
     coverImage: "/covers/ptcb-study-guide-2026.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/ptcb-study-guide-2026?wanted=true",
@@ -4541,12 +4542,12 @@ const rawDecks: Deck[] = [
     ],
     faqs: [
       {
-        question: "What is the best PTCB study guide for 2026?",
+        question: "What is the PTCB outline / blueprint for 2026?",
         answer:
-          "Use a January 2026 blueprint guide with Federal Requirements at 18.75% (DSCSA), no removed compounding chapters, an 80-question practice exam, and printable cheat sheets — then pair with a free timed online mock and optional Anki drills sold separately. UniPrep2Go’s PTCB Exam Study Guide 2026 is that PDF stack — not a free web outline still teaching the old PTCE weights.",
+          "The January 2026 PTCE blueprint weights are Medications 35%, Federal Requirements 18.75% (DSCSA added), Patient Safety & QA 23.75%, and Order Entry & Processing 22.5% — compounding and alligation removed. UniPrep2Go’s PTCB Outline 2026 Study Guide maps those weights into printable chapters, an 80-question practice exam, and cheat sheets.",
       },
       {
-        question: "What does the PTCB Exam Study Guide 2026 include?",
+        question: "What does the PTCB Outline 2026 Study Guide include?",
         answer:
           "A 30-page printable PDF with four domain-weighted review chapters (January 2026 PTCE blueprint), an 80-question full-length practice exam with domain-scored answer key and explanations, three print-ready cheat sheets (drugs, sig codes, math), and a 4-week study plan. The free 90-question online PTCB mock and companion Anki deck are separate UniPrep2Go products linked from the page — not files inside the PDF download.",
       },
@@ -4556,14 +4557,14 @@ const rawDecks: Deck[] = [
           "Yes. Chapter sizes follow the 2026 domain weights — Federal Requirements at 18.75% with DSCSA coverage, and compounding/alligation topics removed from the outline.",
       },
       {
-        question: "Is there a free PTCB practice test with this guide?",
+        question: "How does the free PTCB mock fit with this outline guide?",
         answer:
-          "Yes. Take the free 90-question PTCB mock at uniprep2go.study/mock-exams/ptcb-pharmacy-technician-mock for timed domain scoring, then use this PDF’s 80-question exam and Anki deck for remediation.",
+          "Take the free 90-question PTCB mock at uniprep2go.study/mock-exams/ptcb-pharmacy-technician-mock for a timed domain readiness report first. Use this PDF for structured outline reading and the 80-question practice exam, then buy the separate 300-card Anki deck only for weak-topic daily repair.",
       },
       {
         question: "Does this pair with the PTCB Anki deck?",
         answer:
-          "Yes — as a separate purchase. Use the PDF for structured reading and the timed 80-question practice exam; buy the 300-card Anki deck if you want daily brand/generic and sig-code recall on your phone. Neither product is bundled inside the other.",
+          "Yes — as a separate purchase. Use the PDF for outline reading and the timed 80-question practice exam; buy the 300-card Anki deck if you want daily brand/generic and sig-code recall on your phone. Neither product is bundled inside the other.",
       },
       {
         question: "Is this official PTCB material?",
@@ -4573,7 +4574,7 @@ const rawDecks: Deck[] = [
       {
         question: "How should I use it before exam day?",
         answer:
-          "Follow the 4-week plan: read each domain chapter, take the 80-question practice exam, review every explanation, print the cheat sheets, and drill matching topics in the companion Anki deck if you use it.",
+          "Follow the 4-week plan: take the free online mock cold, read each domain chapter in this outline guide, take the 80-question practice exam, review every explanation, print the cheat sheets, and drill matching topics in the companion Anki deck if you use it.",
       },
       {
         question: "Is this the same as the NHA ExCPT exam?",

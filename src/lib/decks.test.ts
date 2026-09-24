@@ -751,7 +751,7 @@ describe("deck catalog", () => {
       "frm-part-1-anki-deck": "FRM Part 1 Anki Deck — 444 Exam Flashcards",
       "sie-exam-anki-deck": "SIE Exam Anki Deck — 300 High-Yield Flashcards",
       "series-7-anki-deck": "Series 7 Anki Deck — 300 High-Yield Flashcards",
-      "series-63-anki-deck": "Series 63 Anki Deck — 250 High-Yield Flashcards",
+      "series-63-anki-deck": "Series 63 Flashcards — 250 High-Yield NASAA Cards + Free Timed Mock",
       "california-real-estate-exam-anki-deck":
         "California Real Estate Exam Anki Deck — 400 High-Yield Flashcards",
       "life-and-health-insurance-exam-anki-deck":
@@ -816,7 +816,7 @@ describe("deck catalog", () => {
       "ptcb-pharmacy-technician-anki-deck":
         "PTCB Pharmacy Technician Anki Deck — 300 High-Yield Flashcards",
       "ptcb-study-guide-2026":
-        "PTCB Exam Study Guide 2026 — Complete PTCE Review + 80-Question Practice Exam + Cheat Sheets (PDF)",
+        "PTCB Outline 2026 Study Guide — PTCE Blueprint PDF + 80-Question Exam + Cheat Sheets",
       "ace-cpt-anki-deck": "ACE CPT Anki Deck — 300 Flashcards",
       "acsm-cpt-anki-deck": "ACSM CPT Anki Deck — 120 Flashcards",
       "nha-cpct-anki-deck": "NHA CPCT/A Anki Deck — 120 Flashcards",

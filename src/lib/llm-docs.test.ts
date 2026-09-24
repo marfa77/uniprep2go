@@ -171,7 +171,7 @@ describe("LLM documents", () => {
     });
     expect(facts.direct_answer).toMatch(/sold separately|separate 300-card/i);
     expect(facts.direct_answer).not.toMatch(/and a matching 300-card Anki deck\./);
-    expect(markdown).toContain("PTCB Exam Study Guide 2026");
+    expect(markdown).toContain("PTCB Outline 2026 Study Guide");
     expect(markdown).toContain("80-question practice exam");
     expect(facts.serp_answer).toContain("30 pages + 80 practice questions");
   });

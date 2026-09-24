@@ -45,7 +45,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "nha-cpct-anki-deck":
     "120 NHA CPCT/A cards for ADLs/patient care, safety/infection, phlebotomy+EKG text, and professional practice — plus a free 120-question / 120-minute readiness check. Official exam is 100 scored + 20 pretest / 2 hours / scaled 390.",
   "ptcb-study-guide-2026":
-    "Best 2026 PTCE printable guide: DSCSA-weighted Federal Requirements, 80-question exam, cheat sheets + free 90Q online mock.",
+    "January 2026 PTCE outline/blueprint PDF — DSCSA-weighted Federal Requirements, 80-question exam, cheat sheets + free 90Q online mock.",
   "mrics-quantity-surveying-anki-deck":
     "Focused MRICS QS APC Anki — NRM, JCT/NEC, cost planning — plus a free 50-question QS competency mock.",
   "mrics-anki-deck":
@@ -67,7 +67,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "california-real-estate-exam-anki-deck":
     "400 California DRE-only cards + free 60Q timed mock — not a national Quizlet pack; official salesperson is 150Q / 3h15 / 70% both portions.",
   "series-63-anki-deck":
-    "$11 Series 63 Anki + free 60Q NASAA-topic mock — state-law repair after SIE/7; not official NASAA material.",
+    "$11 Series 63 flashcards (250 NASAA cards) + free 60Q timed mock — state-law repair after SIE/7; not official NASAA material.",
   "dele-a2-ccse-spanish-citizenship-bundle":
     "$26 / 60 compact CCSE MCQ cards + free 60Q timed diagnostic — official Cervantes CCSE is 25Q / 45 min / 60%. Not the 2105-card DELE vocab deck.",
   "citizenship-naturalization-anki-bundle":
@@ -128,7 +128,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "enrolled-agent-anki-deck":
     "SEE Part 1–3 themes in one ownable deck: individuals (income, deductions, credits), businesses (entities, payroll themes), representation before the IRS, and practices & procedures. Pair with the free Enrolled Agent readiness check for timed topic scoring before you schedule Prometric — independent prep, not IRS material.",
   "ptcb-study-guide-2026":
-    "Four chapters sized to 2026 domain weights (Medications 35%, Federal 18.75% with DSCSA, Patient Safety 23.75%, Order Entry 22.5%). The 80-question exam mirrors PTCE scored length (28/15/19/18). Pair with the free 90-question online mock and the separate 300-card Anki deck — beats free blogs still teaching removed compounding topics.",
+    "Four chapters sized to the January 2026 PTCE outline/blueprint (Medications 35%, Federal 18.75% with DSCSA, Patient Safety 23.75%, Order Entry 22.5%). The 80-question exam mirrors PTCE scored length (28/15/19/18). Cluster: free 90-question online mock for readiness scoring → this PDF for structured reading → separate 300-card Anki for daily weak-topic repair.",
   "mrics-quantity-surveying-anki-deck":
     "QS-pathway cards for NRM measurement, cost planning, JCT/NEC contract practice, procurement, and ethics — paired with a free timed QS readiness check. Ownable Anki .apkg for APC interview recall, not a Brainscape subscription dump.",
   "mrics-anki-deck":
@@ -140,7 +140,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "parapro-anki-deck":
     "Planned ParaPro spaced-repetition deck for ETS Assessment 1755 themes (reading, writing, math, classroom application). The free 60-question / 75-minute readiness check is live now; the official exam is 90 selected-response / 150 minutes. Not ETS material.",
   "series-63-anki-deck":
-    "Series 63 state-law cards for broker-dealer regulation, agent registration, ethics, communications, and investment adviser basics — paired with the free 60-question NASAA-topic readiness check. Ownable .apkg after SIE/Series 7; not NASAA material.",
+    "Series 63 flashcards for NASAA state law: broker-dealer regulation, agent registration, ethics, communications, and investment adviser basics — paired with the free 60-question timed readiness check. Ownable .apkg after SIE/Series 7; not NASAA material.",
   "medicare-counseling-anki-deck":
     "Planned SHIP Medicare counseling cards for Parts A/B/C/D themes, rights/appeals, fraud awareness, and counseling standards. The free 60-question diagnostic is live; there is no public national Q-count — verify your state SHIP/OCCT path. Not a state SHIP certificate.",
   "czech-citizenship-anki-deck":

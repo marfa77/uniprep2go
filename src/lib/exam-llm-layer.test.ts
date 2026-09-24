@@ -141,7 +141,7 @@ describe("exam-llm-layer", () => {
     expect(commercial).toContain("LME flashcards");
     expect(commercial).toContain("best PTCB Anki deck / PTCE flashcards");
     expect(commercial).toContain("Ownable .apkg");
-    expect(commercial).toContain("best PTCB study guide 2026");
+    expect(commercial).toContain("PTCB outline 2026");
     expect(commercial).toContain("scaled 1,400");
     expect(commercial).toContain("best ACE CPT Anki deck / ACE personal trainer flashcards");
     expect(commercial).toContain("best CDCP Anki / data centre professional flashcards");

@@ -1,5 +1,5 @@
 ---
-description: UniPrep2Go dual-track SEO — near-page-one push + FINRA index-first (not weekly FINRA title churn)
+description: UniPrep2Go dual-track SEO — GSC wedge first (not catalog scale)
 alwaysApply: true
 ---
 
@@ -12,6 +12,19 @@ alwaysApply: true
 
 US organic + LLM → free timed mock → topic readiness report → fix weak topics.  
 **Anki/PDF = mechanism**, not the brand promise. Outcome = pass the exam / close diagnostic gaps.
+
+## GSC reality (export 2026-09-24)
+
+~1.5k page impr / 10 clicks / 90d — **distribution problem, not conversion.**  
+Only ~26% of impr have query attribution. Do **not** invent winners from page-only positions.
+
+**This week’s wedges (max 1–2 URLs):**
+
+1. `/decks/series-63-anki-deck` ← attributed `series 63 flashcards`
+2. `/decks/ptcb-study-guide-2026` ← attributed `ptcb outline 2026` (page pos~4 ≠ proven study-guide SERP)
+
+**Keep · no scale:** DELF/CELI (real clicks), language catalog, AU Common Bond / CDL hazmat blogs.  
+**Ignore pos:** LEED AP O+M `site:` junk queries.
 
 ## Exam tiers (Wave 1 — 2026-09-24)
 
@@ -29,15 +42,15 @@ Deepen-in-place on `/mock-exams/*` + `/decks/*` + `/blog/*`. Do **not** build `/
 Dual-track — **not** weekly SIE/7/63 mock title churn:
 
 1. **Layer A — Index:** force Google to know money URLs that are unknown / discovered / crawled-not-indexed **and** have 0 impressions. Cap ~8–10 Request indexing / week. Do **not** re-request pages that already have GSC impressions.
-2. **Layer B — Push:** point-edit URLs already at **pos 8–25** into top 10. Max 1–2 URLs/week. One lever (title/meta/H1/directAnswer/FAQ + mock→deck CTA).
+2. **Layer B — Push:** point-edit URLs already at **pos 8–25** into top 10. Max 1–2 URLs/week. One lever (title/meta/H1/directAnswer/FAQ + mock→deck CTA). Prefer GSC-attributed queries over hunches.
 3. **Layer C — FINRA long game:** reopen SIE → 7 → 63 mock SEO **only when** `sie-full-mock` ≠ unknown **and** ≥10 impr/28d **and** Series 63 deck pos ≤8.
 
 ## Layer B allowlist (weekly)
 
 - `/`
-- `/decks/ptcb-study-guide-2026`
+- `/decks/ptcb-study-guide-2026` ← **active wedge** (outline/blueprint)
+- `/decks/series-63-anki-deck` ← **active wedge** (flashcards)
 - `/decks/cfa-level-2-formula-reference-2026`
-- `/decks/series-63-anki-deck`
 - `/blog/life-in-the-uk-test-why-one-in-three-fail`
 - `/mock-exams/life-and-health-insurance-readiness-check`
 
@@ -56,3 +69,4 @@ SIE / Series 7 / Series 63 **mock** title rewrites while SIE unknown · comics �
 - Crawled-not-indexed money URL → strengthen unique copy same turn (see `gsc-crawled-not-indexed-strengthen.mdc`).
 - After content/cite change: focused tests + `npm run llms:export` when facts/cites change.
 - Ship via `git push origin main` when user asks — no `vercel --prod` CLI.
+- Re-export GSC: `node scripts/export-gsc-performance.mjs` (includes query×page). Ledger: `tmp/gsc-export-*/QUERY_PAGE_ACTIONS.md`.
