@@ -51,6 +51,12 @@ Pricing, Gumroad IDs, auth, DB banks, layout CSS, invented official pass rates, 
 
 ## Run log
 
+### 2026-09-24 — Homepage acquisition shorten
+
+**Why:** Re-audit + GSC — homepage still billed 20+ mocks incl. citizenship/SAT; Tier A money has almost no impr.  
+**Shipped:** Featured strip = 8 exams (PTCB, SIE, 63, 65, L&H, EPA 608, ServSafe, CFA L2); 4 category cards; repair pairs = same 8; dropped building dump + citizenship/language from home acquisition.  
+**Next:** Layer B push on `/decks/ptcb-study-guide-2026` (pos ~4); hubs only after demand proof.
+
 ### 2026-09-24 — Tier A diagnostic funnel (Wave 1)
 
 **Why:** Public audit — catalog too wide; Anki-as-VP; mock→sale under-sold; no proven niche.  
