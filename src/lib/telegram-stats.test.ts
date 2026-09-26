@@ -645,13 +645,17 @@ describe("telegram stats", () => {
     expect(signal.label).toContain("↑ growing");
   });
 
-  it("shows only top 5 SKUs in the growth pulse", () => {
-    const products = Object.fromEntries(
-      Array.from({ length: 15 }, (_, index) => [
-        `deck-${index + 1}`,
-        { visitors: 15 - index, intents: 0, completions: 0, conversions: 0 },
+  it("splits Period money into top 10 mocks and top 10 Anki", () => {
+    const products = Object.fromEntries([
+      ...Array.from({ length: 12 }, (_, index) => [
+        `mock:mock-${index + 1}`,
+        { visitors: 120 - index, intents: 1, completions: 0, conversions: 0 },
       ]),
-    );
+      ...Array.from({ length: 12 }, (_, index) => [
+        `deck-${index + 1}`,
+        { visitors: 80 - index, intents: 0, completions: 0, conversions: 0 },
+      ]),
+    ]);
 
     const message = toTelegramStatsMessage({
       ...sampleStats,
@@ -661,11 +665,16 @@ describe("telegram stats", () => {
       },
     });
 
-    expect(message).toContain("Top SKUs (view → intent/start → convert):");
-    expect(message).toContain("deck-1: 15 view");
-    expect(message).toContain("deck-5: 11 view");
-    expect(message).not.toContain("deck-6:");
-    expect(message).toContain("- …and 10 more SKUs");
+    expect(message).toContain("Top mocks (view → start → done → convert):");
+    expect(message).toContain("Top Anki (view → intent → convert):");
+    expect(message).toContain("mock · mock-1: 120 view");
+    expect(message).toContain("mock · mock-10: 111 view");
+    expect(message).not.toContain("mock · mock-11:");
+    expect(message).toContain("deck-1: 80 view");
+    expect(message).toContain("deck-10: 71 view");
+    expect(message).not.toContain("deck-11:");
+    expect(message).toContain("- …and 2 more mocks");
+    expect(message).toContain("- …and 2 more Anki");
   });
 
   it("splits only when the message is too long", () => {

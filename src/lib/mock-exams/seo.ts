@@ -1151,7 +1151,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "luxembourg-vivre-ensemble-readiness-check": {
     title: "Free Luxembourg Vivre ensemble Practice Test | 60 Questions",
     description:
-      "Free Luxembourg Vivre ensemble practice: 60 timed questions. Official SFA exam is 40Q/60min/70% (or course path); Sproochentest is separate. Live 120-card Anki on Gumroad. Independent prep.",
+      "Free Luxembourg Vivre ensemble practice: 60 timed questions. Official SFA exam is 40Q/60min/70% (or course path; FR or EN sitting); Sproochentest is separate. Live FR+EN Anki pair ($16) on Gumroad. Independent prep.",
     keywords: ["Vivre ensemble Luxembourg", "Luxembourg citizenship test", "nationalité luxembourgeoise"],
     headline: "Free Luxembourg Vivre ensemble Readiness Check",
     intro:

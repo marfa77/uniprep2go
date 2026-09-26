@@ -80,7 +80,7 @@ export const citizenshipPlannedDecks: PlannedDeck[] = [
     slug: "luxembourg-vivre-ensemble-anki-deck",
     shortName: "Luxembourg Vivre ensemble",
     title: "Luxembourg Vivre ensemble Anki Deck — Citizenship Civics",
-    subtitle: "Anki deck for Luxembourg Vivre ensemble civics (165 French cards).",
+    subtitle: "Anki deck for Luxembourg Vivre ensemble civics (165 French + 165 English cards).",
     audience: "Applicants preparing Luxembourg Vivre ensemble / nationality civics.",
     examLabel: "Luxembourg nationality / Vivre ensemble authorities",
     mockSlug: "luxembourg-vivre-ensemble-readiness-check",

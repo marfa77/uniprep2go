@@ -31,7 +31,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "ptcb-pharmacy-technician-anki-deck":
     "300 PTCE cards for top-200 drugs, sig codes, and pharmacy math — pairs with the 2026 printable study guide PDF.",
   "luxembourg-vivre-ensemble-anki-deck":
-    "120 French Vivre ensemble cards for institutions, rights, history/EU, and daily life — plus a free 60-question Luxembourg diagnostic. Built for nationality civics, not Sproochentest.",
+    "165 French + 165 English Vivre ensemble cards for institutions, rights, history/EU, and daily life — plus a free 60-question Luxembourg diagnostic. Built for nationality civics (exam language FR or EN), not Sproochentest.",
   "aspt-phlebotomy-anki-deck":
     "Planned 60-card ASPT phlebotomy Anki (venipuncture, order of draw, safety, processing). Take the free 60-question diagnostic now — verify the current official form at aspt.org. ASPT is not NHA CPT and not ASCP PBT.",
   "cscs-nsca-anki-deck":
@@ -122,7 +122,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "ace-cpt-anki-deck":
     "Cards track ACE CPT competency themes: preparticipation screening and consent, FITT-VP program design, cueing and spotting under load, and scope/ethics/business boundaries. Run the free 60-question readiness check first, then filter Anki to weak topics — not a NASM/ISSA mega-dump.",
   "luxembourg-vivre-ensemble-anki-deck":
-    "French MCQs mapped to Vivre ensemble themes: Grand-Duchy institutions, fundamental rights and nationality literacy, history/geography/EU, and society/daily life. Run the free 60-question diagnostic first, then drill weak domains — Sproochentest language evidence stays on a separate track. Ownable .apkg for the exam-or-course civics path, not Guichet.lu dumps.",
+    "French and English civics prompts mapped to Vivre ensemble themes: Grand-Duchy institutions, fundamental rights and nationality literacy, history/geography/EU, and society/daily life. Run the free 60-question diagnostic first, then drill weak domains in the exam language you will sit — Sproochentest language evidence stays on a separate track. Ownable .apkg pair for the exam-or-course civics path, not Guichet.lu dumps.",
   "rd-exam-anki-deck":
     "CDR domain-weighted prompts: Principles of Dietetics, Nutrition Care (PES/ADIME), Management of Food and Nutrition Programs, and Foodservice Systems. Explanations name why distractors fail. Take the free 120-question RD readiness check first, then filter Anki to weak domains — not a random 2,000-card clinical dump.",
   "enrolled-agent-anki-deck":
@@ -266,13 +266,13 @@ export const positioningOverrides: Partial<
   },
   "luxembourg-vivre-ensemble-anki-deck": {
     ourEdge: [
-      "165 French civics cards across institutions, rights, history/EU, and daily life",
+      "165 French + 165 English civics cards across institutions, rights, history/EU, and daily life",
       "Free 60-question Luxembourg Vivre ensemble diagnostic with topic scoring",
-      "Built for the exam-or-course civics path — Sproochentest stays separate",
-      "Ownable Gumroad .apkg for nationality applicants",
+      "Built for the exam-or-course civics path (FR or EN sitting) — Sproochentest stays separate",
+      "Ownable Gumroad .apkg pair for nationality applicants — $16",
     ],
     summaryProse:
-      "Vivre ensemble rewards precise civics recall — Grand-Duchy institutions, rights, and EU context — not a random Europe trivia dump. One hundred twenty French prompts plus one free 60-question timed diagnostic beat rereading Guichet PDFs the night before.",
+      "Vivre ensemble rewards precise civics recall — Grand-Duchy institutions, rights, and EU context — not a random Europe trivia dump. Matching French and English decks plus one free 60-question timed diagnostic beat rereading Guichet PDFs the night before.",
   },
   "ptcb-study-guide-2026": {
     ourEdge: [
@@ -610,19 +610,19 @@ NHA registration, the official practice test, or a skills lab. Ownable .apkg onl
 
   "luxembourg-vivre-ensemble-anki-deck": `### What is inside
 
-165 French civics prompts mapped to Vivre ensemble themes: institutions and vivre ensemble, history/geography/EU, rights and nationality, and society/daily life. Cards mirror the civics judgment the official 40-question exam (or 24-hour course) expects — not Sproochentest language drills and not Belgian/French civics recycled under a Luxembourg title.
+Two ownable .apkg files — **165 French** and **165 English** civics prompts mapped to Vivre ensemble themes: institutions and vivre ensemble, history/geography/EU, rights and nationality, and society/daily life. Cards mirror the civics judgment the official 40-question exam (or 24-hour course) expects. Official SFA sittings can be French or English — pick the matching deck. Not Sproochentest language drills and not Belgian/French civics recycled under a Luxembourg title.
 
 ### Plan with the free Luxembourg mock
 
-**Start:** Take the [free 60-question Luxembourg Vivre ensemble readiness check](/mock-exams/luxembourg-vivre-ensemble-readiness-check). **Then:** 15–20 Anki cards/day on your weakest topic row. **Before booking:** practice a 40-question / 60-minute mindset at 70% using weak-domain cards only.
+**Start:** Take the [free 60-question Luxembourg Vivre ensemble readiness check](/mock-exams/luxembourg-vivre-ensemble-readiness-check). **Then:** 15–20 Anki cards/day on your weakest topic row in the language you will sit. **Before booking:** practice a 40-question / 60-minute mindset at 70% using weak-domain cards only.
 
 ### Pitfalls this deck targets
 
-Applicants confuse Sproochentest with Vivre ensemble, mix Belgian/French institutions into Luxembourg answers, or skip communal vs state roles. Cards isolate those near-miss traps.
+Applicants confuse Sproochentest with Vivre ensemble, buy a French-only deck when they will sit English (or the reverse), mix Belgian/French institutions into Luxembourg answers, or skip communal vs state roles. Cards isolate those near-miss traps in both languages.
 
 ### What this does not replace
 
-Official Vivre ensemble course or exam registration, language evidence, or Guichet.lu procedures. Ownable .apkg only — not government material.`,
+Official Vivre ensemble course or exam registration, language evidence, or Guichet.lu procedures. Ownable .apkg pair only — not government material.`,
 
   "nebosh-anki-deck": `### What is inside
 

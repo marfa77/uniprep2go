@@ -142,17 +142,42 @@ function formatProductLabel(productKey: string) {
   return productKey;
 }
 
-const TOP_PRODUCTS_LIMIT = 5;
+const TOP_PRODUCTS_LIMIT = 10;
+
+function isMockProductKey(productKey: string) {
+  return productKey.startsWith("mock:");
+}
 
 function formatProductLine(productKey: string, metrics: ProductUniqueMetrics) {
   const conversionRate = formatRate(metrics.conversions, metrics.visitors);
-  const isMock = productKey.startsWith("mock:");
 
-  if (isMock) {
+  if (isMockProductKey(productKey)) {
     return `- ${formatProductLabel(productKey)}: ${metrics.visitors} view → ${metrics.intents} start → ${metrics.completions} done → ${metrics.conversions} convert (${conversionRate})`;
   }
 
   return `- ${formatProductLabel(productKey)}: ${metrics.visitors} view → ${metrics.intents} intent → ${metrics.conversions} convert (${conversionRate})`;
+}
+
+function formatProductCategoryLines(
+  products: Array<[string, ProductUniqueMetrics]>,
+  heading: string,
+  emptyHint: string,
+  moreLabel: string,
+  limit: number,
+) {
+  if (products.length === 0) {
+    return [`${heading}`, `- ${emptyHint}`];
+  }
+
+  const lines = [
+    heading,
+    ...products.slice(0, limit).map(([key, metrics]) => formatProductLine(key, metrics)),
+  ];
+  const hidden = products.length - limit;
+  if (hidden > 0) {
+    lines.push(`- …and ${hidden} more ${moreLabel}`);
+  }
+  return lines;
 }
 
 function formatReturningUsers(periodNew: number, periodReturning: number, periodUnique: number) {
@@ -385,25 +410,36 @@ export function formatTodaySection(stats: FunnelStats, now = new Date(), pathLim
 export function formatFunnelSection(
   stats: FunnelStats,
   products: Array<[string, ProductUniqueMetrics]>,
-  skuLimit = 5,
+  skuLimit = TOP_PRODUCTS_LIMIT,
 ) {
   const visitors = stats.visitors;
+  const mocks = products.filter(([key]) => isMockProductKey(key));
+  const anki = products.filter(([key]) => !isMockProductKey(key));
   const lines = [
     "▸ Period money",
     `Traffic: ${formatChannelLine(visitors.periodByChannel)}`,
     `Countries: ${formatTopCountries(visitors.periodByCountry, stats.byCountry, 6)}`,
-    "Top SKUs (view → intent/start → convert):",
   ];
 
   if (products.length === 0) {
-    lines.push("- no product traffic yet");
+    lines.push("Top mocks / Anki:", "- no product traffic yet");
   } else {
-    for (const [key, metrics] of products.slice(0, skuLimit)) {
-      lines.push(formatProductLine(key, metrics));
-    }
-    if (products.length > skuLimit) {
-      lines.push(`- …and ${products.length - skuLimit} more SKUs`);
-    }
+    lines.push(
+      ...formatProductCategoryLines(
+        mocks,
+        "Top mocks (view → start → done → convert):",
+        "no mock traffic yet",
+        "mocks",
+        skuLimit,
+      ),
+      ...formatProductCategoryLines(
+        anki,
+        "Top Anki (view → intent → convert):",
+        "no Anki traffic yet",
+        "Anki",
+        skuLimit,
+      ),
+    );
   }
 
   return lines.join("\n");
@@ -623,18 +659,33 @@ function formatPeriodFunnelSection(stats: FunnelStats) {
   ].join("\n");
 }
 
-function formatPeriodProductsSection(products: Array<[string, ProductUniqueMetrics]>, limit = 5) {
+function formatPeriodProductsSection(
+  products: Array<[string, ProductUniqueMetrics]>,
+  limit = TOP_PRODUCTS_LIMIT,
+) {
+  const mocks = products.filter(([key]) => isMockProductKey(key));
+  const anki = products.filter(([key]) => !isMockProductKey(key));
+
   if (products.length === 0) {
     return "▸ TOP SKUs (period)\n- no product traffic yet";
   }
 
-  const lines = products.slice(0, limit).map(([productKey, metrics]) => formatProductLine(productKey, metrics));
-  const hiddenCount = products.length - limit;
-
   return [
-    `▸ TOP SKUs (period · view → intent/start → convert)`,
-    ...lines,
-    ...(hiddenCount > 0 ? [`- ...and ${hiddenCount} more SKUs`] : []),
+    "▸ TOP SKUs (period)",
+    ...formatProductCategoryLines(
+      mocks,
+      "Top mocks (view → start → done → convert):",
+      "no mock traffic yet",
+      "mocks",
+      limit,
+    ),
+    ...formatProductCategoryLines(
+      anki,
+      "Top Anki (view → intent → convert):",
+      "no Anki traffic yet",
+      "Anki",
+      limit,
+    ),
   ].join("\n");
 }
 
@@ -1081,7 +1132,7 @@ export function toTelegramStatsMessages(stats: FunnelStats, now = new Date()) {
     "",
     formatYesterdaySection(stats, now),
     "",
-    formatFunnelSection(stats, products, 5),
+    formatFunnelSection(stats, products),
     "",
     formatAcquisitionSection(stats),
     "",

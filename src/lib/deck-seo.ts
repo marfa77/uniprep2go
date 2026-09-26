@@ -469,19 +469,20 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "luxembourg-vivre-ensemble-anki-deck": {
-    title: "Luxembourg Vivre ensemble Anki | 165 French Civics Cards + Mock",
-    headline: "Luxembourg Vivre ensemble Civics — 165 French Flashcards",
+    title: "Luxembourg Vivre ensemble Anki | FR + EN · 330 Cards + Mock",
+    headline: "Luxembourg Vivre ensemble — 165 French + 165 English Flashcards",
     studyLabel: "Luxembourg Vivre ensemble Anki",
     description:
-      "Luxembourg nationality civics Anki: 165 French cards on institutions, rights, history/EU, and daily life — plus a free 60-question Vivre ensemble readiness check. Not Sproochentest language drills. Independent — not Guichet.lu material.",
+      "Luxembourg nationality civics Anki: 165 French cards and 165 English cards on institutions, rights, history/EU, and daily life — plus a free 60-question Vivre ensemble readiness check. Official SFA exam can be FR or EN. Not Sproochentest language drills. Independent — not Guichet.lu material.",
     keywords: [
       "luxembourg vivre ensemble anki",
       "luxembourg citizenship flashcards",
       "nationalite luxembourg anki",
       "vivre ensemble practice cards",
+      "luxembourg vivre ensemble english",
     ],
     intro:
-      "Applicants preparing Vivre ensemble / nationality civics use French MCQ Anki after a free timed diagnostic — Sproochentest stays on a separate language track.",
+      "Applicants preparing Vivre ensemble / nationality civics get matching French and English Anki files after a free timed diagnostic — pick the exam language you will sit; Sproochentest stays on a separate language track.",
   },
 
   "ielts-toefl-english-for-turkish-speakers-anki-deck": {

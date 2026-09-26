@@ -205,21 +205,21 @@ const ACSM_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
   },
 ];
 
-/** Copy must match public/samples/luxembourg-vivre-ensemble-anki-deck-sample-{1,2,3}.webp. */
+/** Copy must match public/samples/luxembourg-vivre-ensemble-anki-deck-sample-{1,2,3}.webp (EN). */
 const LUXEMBOURG_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
   {
-    question: "Quelle est la forme d'État?",
-    answer: "Grand-Duché, monarchie constitutionnelle",
+    question: "What are the three administrative languages?",
+    answer: "Luxembourgish, French and German",
     imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-1.webp",
   },
   {
-    question: "Qui est le chef d'État?",
-    answer: "Le Grand-Duc",
+    question: "Which major EU institution is in Luxembourg?",
+    answer: "European Court of Justice",
     imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-2.webp",
   },
   {
-    question: "Quelles sont les trois langues administratives?",
-    answer: "Luxembourgeois, français, allemand",
+    question: "Legislative elections elect which chamber?",
+    answer: "Chambre des Députés",
     imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-3.webp",
   },
 ];
@@ -456,10 +456,11 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
       .replace(/^A planned /i, "A focused "),
     directAnswer: buildDirectAnswer(deck, cardLabel, mockPath, apkgReady),
     lastUpdated:
-      deck.slug === "belgium-flanders-mo-anki-deck" ||
       deck.slug === "luxembourg-vivre-ensemble-anki-deck"
-        ? "2026-09-21"
-        : deck.slug === "ace-cpt-anki-deck"
+        ? "2026-09-26"
+        : deck.slug === "belgium-flanders-mo-anki-deck"
+          ? "2026-09-21"
+          : deck.slug === "ace-cpt-anki-deck"
             ? "2026-08-13"
             : "2026-08-06",
     facts: {

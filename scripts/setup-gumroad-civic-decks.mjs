@@ -83,6 +83,7 @@ function escapeHtml(value) {
 }
 
 function buildDescription(product) {
+  const priceUsd = ((product.priceCents || 900) / 100).toFixed(0);
   const samples = (product.samples || [])
     .map(
       (card) =>
@@ -90,13 +91,34 @@ function buildDescription(product) {
     )
     .join("\n");
   const mock = product.mockSlug
-    ? `<p>Free timed practice: <a href="https://uniprep2go.com/mock-exams/${product.mockSlug}">${escapeHtml(product.exam)} readiness check</a>.</p>`
+    ? `<p>Free timed practice: <a href="https://uniprep2go.study/mock-exams/${product.mockSlug}">${escapeHtml(product.exam)} readiness check</a>.</p>`
     : "";
+
+  if (product.permalink === "luxembourg-vivre-ensemble-anki-deck") {
+    return [
+      "<h3>What’s inside</h3>",
+      "<p><strong>Two Anki .apkg files</strong> for Luxembourg <strong>Vivre ensemble</strong> / nationality civics:</p>",
+      "<ul>",
+      "<li><strong>French (FR)</strong> — 165 question → answer civics cards</li>",
+      "<li><strong>English (EN)</strong> — 165 matching cards for SFA English sittings</li>",
+      "</ul>",
+      `<p><strong>PixID Studio</strong> — <strong>$${priceUsd}</strong> · both languages · instant Gumroad download.</p>`,
+      mock,
+      "<p>Official SFA Vivre ensemble can be sat in French or English (and other administrative languages). Import the file that matches your exam language. Sproochentest Luxembourgish language evidence is a separate requirement.</p>",
+      "<h3>Sample cards (English)</h3>",
+      samples,
+      "<h3>How you use it</h3>",
+      "<ol><li>Download both .apkg files from your Gumroad library</li><li>Anki → File → Import the FR and/or EN deck</li><li>15–20 new cards a day on weak topics, then reviews only in the final week</li></ol>",
+      dualBrandFooterHtml(product.permalink),
+      "<p><em>Independent study aid — not Guichet.lu / SFA material. Confirm current rules before you book.</em></p>",
+    ].join("\n");
+  }
+
   return [
     "<h3>Sample cards</h3>",
     samples,
     `<p><strong>${product.cards} civics flashcards</strong> for <strong>${escapeHtml(product.exam)}</strong> — question → answer, ready for Anki spaced repetition.</p>`,
-    `<p><strong>PixID Studio</strong> — <strong>$9</strong> · one .apkg · instant Gumroad download.</p>`,
+    `<p><strong>PixID Studio</strong> — <strong>$${priceUsd}</strong> · one .apkg · instant Gumroad download.</p>`,
     mock,
     "<h3>What’s inside</h3>",
     `<ul><li><strong>${product.cards} cards</strong> from the Prep2Go ${escapeHtml(product.exam)} bank</li><li>Text question → short answer (no audio required)</li><li>Import into Anki desktop, then sync to phone</li></ul>`,
@@ -140,7 +162,7 @@ async function createProduct(token, product) {
     price: String(product.priceCents || 900),
     description: buildDescription(product),
     custom_permalink: product.permalink,
-    custom_summary: `${product.cards} ${product.exam} Anki cards — $9 .apkg. Independent study aid.`,
+    custom_summary: `${product.cards} ${product.exam} Anki cards — $${((product.priceCents || 900) / 100).toFixed(0)} .apkg. Independent study aid.`,
     require_shipping: "false",
     is_tiered_membership: "false",
   });
@@ -184,6 +206,24 @@ function replaceApkg(productId, product, apkgPath) {
     console.log(`  remove ${file.name}`);
     runGumroad(`products update ${productId} --remove-file "${file.id}"`);
   }
+
+  const multi = Array.isArray(product.files) && product.files.length > 0;
+  if (multi) {
+    for (const fileSpec of product.files) {
+      const path = resolveApkg(product.folder, fileSpec.baseName);
+      if (!path) {
+        throw new Error(
+          `Missing apkg for ${product.permalink} (${product.folder}/${fileSpec.baseName})`,
+        );
+      }
+      console.log(`  add ${fileSpec.fileName} ← ${basename(path)}`);
+      runGumroad(
+        `products update ${productId} --file "${path}" --file-name "${fileSpec.fileName}" --file-description "${fileSpec.description || fileSpec.label}"`,
+      );
+    }
+    return;
+  }
+
   console.log(`  add ${product.fileName} ← ${basename(apkgPath)}`);
   runGumroad(
     `products update ${productId} --file "${apkgPath}" --file-name "${product.fileName}" --file-description "${product.cards} ${product.exam} Anki cards."`,
@@ -223,11 +263,19 @@ async function processProduct(token, catalog, slug, args) {
     return;
   }
 
-  const apkgPath = resolveApkg(product.folder, product.baseName);
-  if (!apkgPath) throw new Error(`Missing apkg for ${slug} (${product.folder}/${product.baseName})`);
+  const apkgPath = product.files?.length
+    ? resolveApkg(product.folder, product.files[0].baseName)
+    : resolveApkg(product.folder, product.baseName);
+  if (!apkgPath) {
+    throw new Error(
+      `Missing apkg for ${slug} (${product.folder}/${product.baseName || product.files?.[0]?.baseName})`,
+    );
+  }
   const coverPath = join(root, "public/covers", product.cover);
   if (!existsSync(coverPath)) throw new Error(`Cover missing for ${slug}: ${coverPath}`);
-  console.log(`${slug}: ${basename(apkgPath)}`);
+  console.log(
+    `${slug}: ${basename(apkgPath)}${product.files?.length ? ` (+${product.files.length - 1} more)` : ""}`,
+  );
 
   if (args.dryRun) return;
 

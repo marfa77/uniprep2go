@@ -821,7 +821,7 @@ describe("deck catalog", () => {
       "acsm-cpt-anki-deck": "ACSM CPT Anki Deck — 120 Flashcards",
       "nha-cpct-anki-deck": "NHA CPCT/A Anki Deck — 120 Flashcards",
       "luxembourg-vivre-ensemble-anki-deck":
-        "Luxembourg Vivre ensemble Anki Deck — 165 Flashcards",
+        "Luxembourg Vivre ensemble Anki Deck — 330 Flashcards",
       "bench-energy-metal-trader-anki-deck":
         "Metal Trader Anki Deck — 202 Commodity Flashcards",
       "bench-energy-oil-trader-anki-deck":
