@@ -205,8 +205,24 @@ const ACSM_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
   },
 ];
 
-/** Copy must match public/samples/luxembourg-vivre-ensemble-anki-deck-sample-{1,2,3}.webp (EN). */
+/** Copy must match public/samples/luxembourg-vivre-ensemble-anki-deck-sample-fr-{1,2,3}.webp
+ *  and ...-sample-{1,2,3}.webp (EN). */
 const LUXEMBOURG_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
+  {
+    question: "Langues administratives?",
+    answer: "Luxembourgeois, français et allemand",
+    imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-fr-1.webp",
+  },
+  {
+    question: "Quelle institution majeure de l'UE est à Luxembourg?",
+    answer: "Cour de justice de l'Union européenne",
+    imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-fr-2.webp",
+  },
+  {
+    question: "Les élections législatives concernent quelle chambre?",
+    answer: "Chambre des Députés",
+    imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-fr-3.webp",
+  },
   {
     question: "What are the three administrative languages?",
     answer: "Luxembourgish, French and German",

@@ -42,6 +42,13 @@ def gumroad_json(args: list[str]) -> dict[str, Any]:
 
 
 def sample_paths(slug: str) -> list[Path]:
+    """Ordered sample webps. Luxembourg bilingual product ships FR then EN (6)."""
+    if slug == "luxembourg-vivre-ensemble-anki-deck":
+        paths = [
+            *[SAMPLES_DIR / f"{slug}-sample-fr-{n}.webp" for n in (1, 2, 3)],
+            *[SAMPLES_DIR / f"{slug}-sample-{n}.webp" for n in (1, 2, 3)],
+        ]
+        return [p for p in paths if p.exists()]
     paths = [SAMPLES_DIR / f"{slug}-sample-{n}.webp" for n in (1, 2, 3)]
     return [p for p in paths if p.exists()]
 
@@ -62,16 +69,20 @@ def ensure_sample_cdn_urls(
 ) -> list[str]:
     """Host sample JPGs on public-files.gumroad.com without leaving them as covers."""
     paths = sample_paths(slug)
-    if len(paths) < 3:
-        raise RuntimeError(f"{slug}: need 3 sample webps at public/samples/{slug}-sample-{{1,2,3}}.webp")
+    needed = 6 if slug == "luxembourg-vivre-ensemble-anki-deck" else 3
+    if len(paths) < needed:
+        raise RuntimeError(
+            f"{slug}: need {needed} sample webps under public/samples/ (found {len(paths)})"
+        )
     cached = cache.get(slug) or []
-    if not force and len(cached) >= 3:
-        return cached[:3]
+    if not force and len(cached) >= needed:
+        return cached[:needed]
 
     before = gumroad_json(["products", "view", product_id])
     covers_before = ((before.get("product") or before).get("covers") or [])
     # Gumroad hard-caps at 8 previews; free slots before temporary CDN uploads.
-    if len(covers_before) > 5:
+    max_keep = max(1, 8 - needed)
+    if len(covers_before) > max_keep:
         for cover in reversed(covers_before[1:]):
             cid = cover.get("id")
             if not cid:
@@ -163,8 +174,8 @@ def ensure_sample_cdn_urls(
             check=False,
         )
 
-    if len(urls) < 3:
-        raise RuntimeError(f"expected 3 CDN urls for {slug}, got {len(urls)}")
+    if len(urls) < needed:
+        raise RuntimeError(f"expected {needed} CDN urls for {slug}, got {len(urls)}")
     cache[slug] = urls
     save_cdn_cache(cache)
     return urls
@@ -176,6 +187,112 @@ def cover_url_from_product(product: dict[str, Any]) -> str:
         return ""
     first = covers[0] or {}
     return str(first.get("original_url") or first.get("url") or "")
+
+
+def render_luxembourg_landing(
+    headline: str,
+    checkout: str,
+    price: str,
+    mock_url: str,
+    deck_url: str,
+    cover_url: str,
+    sample_urls: list[str],
+) -> str:
+    urls = (sample_urls + [""] * 6)[:6]
+    captions = [
+        "FR · Institutions",
+        "FR · UE",
+        "FR · Vote",
+        "EN · Languages",
+        "EN · EU",
+        "EN · Voting",
+    ]
+    fr_figs = []
+    en_figs = []
+    for i, (url, caption) in enumerate(zip(urls, captions), 1):
+        if not url:
+            continue
+        fig = f"""        <figure class="card overflow-hidden rounded-2xl">
+          <img src="{e(url)}" alt="Luxembourg Vivre ensemble sample {i}" class="w-full h-auto object-contain" loading="lazy">
+          <figcaption class="px-3 py-2 text-xs text-muted">{e(caption)}</figcaption>
+        </figure>"""
+        (fr_figs if i <= 3 else en_figs).append(fig)
+
+    cover_block = ""
+    if cover_url:
+        cover_block = (
+            f'<figure class="card overflow-hidden rounded-2xl shadow-sm">'
+            f'<img src="{e(cover_url)}" alt="Luxembourg Vivre ensemble Anki deck cover" '
+            f'class="w-full h-auto object-cover" loading="eager"></figure>'
+        )
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{e(headline)}</title>
+  <meta name="description" content="165 French + 165 English Luxembourg Vivre ensemble Anki cards — UniPrep2Go · {e(price)}.">
+  <link rel="canonical" href="{e(checkout)}">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {{ --bg:#f4f7fb; --fg:#0f172a; --muted:#475569; --card:#ffffff; --border:rgba(15,23,42,.12); --accent:#1d4ed8; }}
+    body {{ background:var(--bg); color:var(--fg); }}
+    .card {{ background:var(--card); border:1px solid var(--border); }}
+    .text-muted {{ color:var(--muted); }}
+    .btn {{ background:var(--fg); color:#fff; }}
+    .btn:hover {{ background:var(--accent); }}
+  </style>
+</head>
+<body class="antialiased font-sans">
+  <header class="sticky top-0 z-40 border-b backdrop-blur" style="background:color-mix(in srgb,var(--bg) 90%,transparent);border-color:var(--border)">
+    <div class="max-w-4xl mx-auto px-5 py-3 flex items-center justify-between gap-3">
+      <p class="font-semibold text-sm truncate">{e(headline)}</p>
+      <a href="{e(checkout)}" data-gumroad-action="buy" class="btn rounded-full px-4 py-2 text-sm font-semibold">{e(price)}</a>
+    </div>
+  </header>
+  <main class="max-w-4xl mx-auto px-5 py-10">
+    <p class="text-xs uppercase tracking-[0.18em] text-blue-700 font-semibold">UniPrep2Go · Luxembourg Vivre ensemble</p>
+    <h1 class="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight">{e(headline)}</h1>
+    <div class="mt-8 grid lg:grid-cols-2 gap-8 items-start">
+      <div class="space-y-4">
+        <p class="text-lg leading-8"><strong>Two Anki decks</strong> — <strong>165 French</strong> + <strong>165 English</strong> question→answer civics cards. Pick the language you will sit.</p>
+        <p class="text-muted leading-7">Independent study aid. Instant <code>.apkg</code> downloads for Anki. Official SFA exam can be FR or EN. Not Guichet.lu / SFA material.</p>
+        <div class="flex flex-col sm:flex-row gap-3 pt-1">
+          <a href="{e(checkout)}" data-gumroad-action="buy" class="btn inline-flex justify-center rounded-full px-5 py-3 text-sm font-semibold">Get both decks — {e(price)}</a>
+          <a href="{e(mock_url)}" class="inline-flex justify-center rounded-full px-5 py-3 text-sm font-semibold card">Free readiness check</a>
+        </div>
+      </div>
+      {cover_block}
+    </div>
+
+    <section id="samples" class="mt-12" aria-labelledby="samples-heading">
+      <h2 id="samples-heading" class="text-2xl font-semibold tracking-tight">Sample cards</h2>
+      <p class="mt-2 text-sm text-muted">Three French + three English cards from the matching .apkg files.</p>
+      <h3 class="mt-6 text-sm font-semibold uppercase tracking-wide text-muted">French deck</h3>
+      <div class="mt-3 grid gap-4 sm:grid-cols-3">
+{chr(10).join(fr_figs)}
+      </div>
+      <h3 class="mt-8 text-sm font-semibold uppercase tracking-wide text-muted">English deck</h3>
+      <div class="mt-3 grid gap-4 sm:grid-cols-3">
+{chr(10).join(en_figs)}
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold tracking-tight">What's inside</h2>
+      <ul class="mt-4 space-y-2 text-muted leading-7">
+        <li><strong>French .apkg</strong> — 165 civics cards</li>
+        <li><strong>English .apkg</strong> — 165 matching cards for SFA English sittings</li>
+        <li>Free 60-question UniPrep2Go readiness check on the site</li>
+        <li>Import once, review on phone every day</li>
+      </ul>
+      <p class="mt-4 text-sm text-muted">Also on UniPrep2Go: <a class="underline" href="{e(deck_url)}">deck page</a> · <a class="underline" href="{e(mock_url)}">free check</a>.</p>
+    </section>
+  </main>
+</body>
+</html>
+"""
 
 
 def render_landing(
@@ -191,9 +308,15 @@ def render_landing(
     mock_slug = spec.get("mockSlug") or ""
     checkout = product.get("short_url") or product.get("url") or f"https://pixidstudio.gumroad.com/l/{slug}"
     price = product.get("formatted_price") or product.get("price") or "$11"
+    if isinstance(price, (int, float)) and price >= 100:
+        price = f"${int(price) // 100}"
     headline = spec.get("gumroadName") or product.get("name") or f"{exam} Anki Deck"
     mock_url = f"https://uniprep2go.study/mock-exams/{mock_slug}" if mock_slug else "https://uniprep2go.study/mock-exams"
     deck_url = f"https://uniprep2go.study/decks/{slug}"
+
+    if slug == "luxembourg-vivre-ensemble-anki-deck":
+        return render_luxembourg_landing(headline, checkout, price, mock_url, deck_url, cover_url, sample_urls)
+
     topics = list((spec.get("topics") or {}).values())
     captions = topics[:3] if topics else [f"Sample {i}" for i in range(1, 4)]
 
@@ -331,9 +454,11 @@ def main() -> None:
                 raise RuntimeError("missing wave-deck-specs or gumroadProductId")
 
             if args.dry_run and not args.force_cdn and slug in cdn_cache:
-                sample_urls = cdn_cache[slug][:3]
+                need = 6 if slug == "luxembourg-vivre-ensemble-anki-deck" else 3
+                sample_urls = cdn_cache[slug][:need]
             elif args.dry_run:
-                sample_urls = [f"https://public-files.gumroad.com/dry-run-{slug}-{i}" for i in range(1, 4)]
+                need = 6 if slug == "luxembourg-vivre-ensemble-anki-deck" else 3
+                sample_urls = [f"https://public-files.gumroad.com/dry-run-{slug}-{i}" for i in range(1, need + 1)]
             else:
                 sample_urls = ensure_sample_cdn_urls(
                     product_id, slug, cdn_cache, force=args.force_cdn
