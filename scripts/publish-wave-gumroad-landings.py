@@ -200,12 +200,12 @@ def render_luxembourg_landing(
 ) -> str:
     urls = (sample_urls + [""] * 6)[:6]
     captions = [
-        "FR · Institutions",
-        "FR · UE",
-        "FR · Vote",
-        "EN · Languages",
-        "EN · EU",
-        "EN · Voting",
+        "FR · Module 2 · piège fréquent",
+        "FR · Module 1 · droits",
+        "FR · Module 3 · piège fréquent",
+        "EN · Module 2 · common trap",
+        "EN · Module 1 · rights",
+        "EN · Module 3 · common trap",
     ]
     fr_figs = []
     en_figs = []
@@ -232,7 +232,7 @@ def render_luxembourg_landing(
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{e(headline)}</title>
-  <meta name="description" content="165 French + 165 English Luxembourg Vivre ensemble Anki cards — UniPrep2Go · {e(price)}.">
+  <meta name="description" content="239 French + 239 English Luxembourg Vivre ensemble Anki cards in subdecks for the 3 official exam modules — key point on every card — UniPrep2Go · {e(price)}.">
   <link rel="canonical" href="{e(checkout)}">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -256,11 +256,17 @@ def render_luxembourg_landing(
     <h1 class="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight">{e(headline)}</h1>
     <div class="mt-8 grid lg:grid-cols-2 gap-8 items-start">
       <div class="space-y-4">
-        <p class="text-lg leading-8"><strong>Two Anki decks</strong> — <strong>165 French</strong> + <strong>165 English</strong> question→answer civics cards. Pick the language you will sit.</p>
-        <p class="text-muted leading-7">Independent study aid. Instant <code>.apkg</code> downloads for Anki. Official SFA exam can be FR or EN. Not Guichet.lu / SFA material.</p>
+        <p class="text-lg leading-8"><strong>478 cards, two languages, one price.</strong> The same <strong>239 cards</strong> in <strong>French</strong> and in <strong>English</strong>, sorted into subdecks for the 3 official exam modules — with the <em>why</em> on every card.</p>
+        <ul class="text-muted leading-7 list-disc pl-5">
+          <li>Module 2 institutions — half the exam — gets <strong>104 cards</strong> per language</li>
+          <li>22 <strong>common-trap</strong> cards: Council of State vs Chamber, 1839 vs 1867, who votes in which election</li>
+          <li>Checked against the <strong>2023 Constitution</strong> and 2026 STATEC figures</li>
+          <li>$16 once, offline in Anki forever — no subscription, no login</li>
+        </ul>
+        <p class="text-sm text-muted leading-6">Independent study aid. Instant <code>.apkg</code> downloads. Not Guichet.lu / SFA material.</p>
         <div class="flex flex-col sm:flex-row gap-3 pt-1">
-          <a href="{e(checkout)}" data-gumroad-action="buy" class="btn inline-flex justify-center rounded-full px-5 py-3 text-sm font-semibold">Get both decks — {e(price)}</a>
-          <a href="{e(mock_url)}" class="inline-flex justify-center rounded-full px-5 py-3 text-sm font-semibold card">Free readiness check</a>
+          <a href="{e(checkout)}" data-gumroad-action="buy" class="btn inline-flex justify-center rounded-full px-5 py-3 text-sm font-semibold">Get FR + EN decks — {e(price)}</a>
+          <a href="{e(mock_url)}" class="inline-flex justify-center rounded-full px-5 py-3 text-sm font-semibold card">Try the free 40-question exam simulation</a>
         </div>
       </div>
       {cover_block}
@@ -268,7 +274,7 @@ def render_luxembourg_landing(
 
     <section id="samples" class="mt-12" aria-labelledby="samples-heading">
       <h2 id="samples-heading" class="text-2xl font-semibold tracking-tight">Sample cards</h2>
-      <p class="mt-2 text-sm text-muted">Three French + three English cards from the matching .apkg files.</p>
+      <p class="mt-2 text-sm text-muted">Real card backs from the .apkg files — one per official module, in French and in English.</p>
       <h3 class="mt-6 text-sm font-semibold uppercase tracking-wide text-muted">French deck</h3>
       <div class="mt-3 grid gap-4 sm:grid-cols-3">
 {chr(10).join(fr_figs)}
@@ -282,12 +288,13 @@ def render_luxembourg_landing(
     <section class="mt-12">
       <h2 class="text-2xl font-semibold tracking-tight">What's inside</h2>
       <ul class="mt-4 space-y-2 text-muted leading-7">
-        <li><strong>French .apkg</strong> — 165 civics cards</li>
-        <li><strong>English .apkg</strong> — 165 matching cards for SFA English sittings</li>
-        <li>Free 60-question UniPrep2Go readiness check on the site</li>
-        <li>Import once, review on phone every day</li>
+        <li><strong>French .apkg</strong> — 239 cards · <strong>English .apkg</strong> — the same 239 cards in English</li>
+        <li>Subdecks: 1 · Fundamental rights (42) · 2 · State &amp; municipal institutions (104) · 3 · History &amp; European integration (49) · plus exam steps (17) and daily life (25)</li>
+        <li>Answer + key-point explanation on every card; tags by module and topic</li>
+        <li>Free UniPrep2Go exam simulation in the official format (40 questions, 60 minutes, 10/20/10) to find your weakest module first</li>
+        <li>Import once on desktop, sync to your phone, 15–20 new cards a day</li>
       </ul>
-      <p class="mt-4 text-sm text-muted">Also on UniPrep2Go: <a class="underline" href="{e(deck_url)}">deck page</a> · <a class="underline" href="{e(mock_url)}">free check</a>.</p>
+      <p class="mt-4 text-sm text-muted">Also on UniPrep2Go: <a class="underline" href="{e(deck_url)}">deck page</a> · <a class="underline" href="{e(mock_url)}">free exam simulation</a>.</p>
     </section>
   </main>
 </body>

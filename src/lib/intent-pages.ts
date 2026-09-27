@@ -224,7 +224,7 @@ export const intentPages: IntentPage[] = [
       },
       {
         title: "When you need a civics deck",
-        body: "Choose civics Anki when the test is about country knowledge — Leben in Deutschland, French naturalisation civics, Life in the UK, Canadian or Australian citizenship, U.S. civics, Swiss Staatskunde (DE/FR/IT), Denmark, Portugal, Norway, Sweden, Belgium, Luxembourg, Czech, or Polish civics. Each country is a $9 Anki deck. They are not language decks.",
+        body: "Choose civics Anki when the test is about country knowledge — Leben in Deutschland, French naturalisation civics, Life in the UK, Canadian or Australian citizenship, U.S. civics, Swiss Staatskunde (DE/FR/IT), Denmark, Portugal, Norway, Sweden, Belgium, Luxembourg, Czech, or Polish civics. Each country is a $9 Anki deck, except Luxembourg Vivre ensemble ($16 for a French + English pair). They are not language decks.",
       },
       {
         title: "Many applicants need both",
@@ -256,7 +256,7 @@ export const intentPages: IntentPage[] = [
     description:
       "A direct answer page comparing UniPrep2Go $9 citizenship civics Anki decks by country — U.S., Germany, France, UK, Canada, Australia, Swiss DE/FR/IT, and EU/Nordic SKUs.",
     directAnswer:
-      "Buy the $9 Anki deck for your country. U.S. naturalization: us-citizenship-anki-deck (128 cards). Germany: Leben in Deutschland (296). France, UK, Canada, and Australia have their own $9 decks. Swiss Staatskunde is three $9 decks — German, French, or Italian (207 cards each). Denmark, Portugal, Norway, Sweden, Belgium, Luxembourg, Czech, and Polish civics decks are also $9. Language certificates (CIPLE, DELF, Inburgering, Goethe, CELI, DELE) are separate products.",
+      "Buy the $9 Anki deck for your country. U.S. naturalization: us-citizenship-anki-deck (128 cards). Germany: Leben in Deutschland (296). France, UK, Canada, and Australia have their own $9 decks. Swiss Staatskunde is three $9 decks — German, French, or Italian (207 cards each). Denmark, Portugal, Norway, Sweden, Belgium, Czech, and Polish civics decks are also $9. Luxembourg Vivre ensemble is a $16 French + English deck pair. Language certificates (CIPLE, DELF, Inburgering, Goethe, CELI, DELE) are separate products.",
     deckSlugs: [
       "us-citizenship-anki-deck",
       "leben-in-deutschland-anki-deck",
@@ -286,7 +286,7 @@ export const intentPages: IntentPage[] = [
       },
       {
         title: "Planned EU and Nordic civics decks",
-        body: "Denmark Indfødsretsprøven, Portugal nacionalidade, Norway Statsborgerprøven, Sweden Medborgarskapsprov, Belgium Flanders MO, Belgium Wallonie, and Luxembourg Vivre ensemble have free readiness checks and waitlist notify pages. They are not language decks and are not in the six-country or Swiss bundles yet.",
+        body: "Denmark Indfødsretsprøven, Portugal nacionalidade, Norway Statsborgerprøven, Sweden Medborgarskapsprov, Belgium Flanders MO, Belgium Wallonie, and Luxembourg Vivre ensemble each have a free readiness check plus a live Anki deck ($9; Luxembourg is a $16 French + English pair). They are not language decks and are not in the six-country or Swiss bundles yet.",
       },
     ],
     faqs: [

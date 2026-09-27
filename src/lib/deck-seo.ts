@@ -469,11 +469,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "luxembourg-vivre-ensemble-anki-deck": {
-    title: "Luxembourg Vivre ensemble Anki | FR + EN · 330 Cards + Mock",
-    headline: "Luxembourg Vivre ensemble — 165 French + 165 English Flashcards",
+    title: "Luxembourg Vivre ensemble Anki | FR + EN · 478 Cards + Free Mock",
+    headline: "Luxembourg Vivre ensemble — 239 French + 239 English Flashcards",
     studyLabel: "Luxembourg Vivre ensemble Anki",
     description:
-      "Luxembourg nationality civics Anki: 165 French cards and 165 English cards on institutions, rights, history/EU, and daily life — plus a free 60-question Vivre ensemble readiness check. Official SFA exam can be FR or EN. Not Sproochentest language drills. Independent — not Guichet.lu material.",
+      "Pass the Luxembourg Vivre ensemble exam: 239 French + 239 English Anki cards in subdecks for the 3 official modules (rights, institutions, history & EU), a key-point explanation on every card, facts checked against the 2023 Constitution. $16 one-time, plus a free 40-question, 60-minute exam simulation. Independent — not Guichet.lu material.",
     keywords: [
       "luxembourg vivre ensemble anki",
       "luxembourg citizenship flashcards",
@@ -482,7 +482,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "luxembourg vivre ensemble english",
     ],
     intro:
-      "Applicants preparing Vivre ensemble / nationality civics get matching French and English Anki files after a free timed diagnostic — pick the exam language you will sit; Sproochentest stays on a separate language track.",
+      "Half of the 40 exam questions are on state and municipal institutions — so 104 of the 239 cards per language sit in that module. Take the free 40-question exam simulation, then study the subdeck for your weakest module in the language you will sit (FR or EN). Sproochentest stays on a separate language track.",
   },
 
   "ielts-toefl-english-for-turkish-speakers-anki-deck": {

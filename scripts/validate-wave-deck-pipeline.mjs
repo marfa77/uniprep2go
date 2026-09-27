@@ -56,15 +56,17 @@ function evaluateWaveDeck(deckSlug, spec) {
   } else {
     const bank = JSON.parse(readFileSync(bankPath, "utf8"));
     const n = Array.isArray(bank) ? bank.length : 0;
+    // Decks written independently of the mock bank (e.g. bilingual civic pairs) set mockBankMin.
+    const minBank = spec.mockBankMin ?? spec.cardCount;
     if (n === 0) fail("mock-bank", "Question bank JSON", "Empty bank");
-    else if (spec.cardCount && n < spec.cardCount) {
+    else if (minBank && n < minBank) {
       fail(
         "mock-bank",
         "Question bank JSON",
-        `${n} questions < spec.cardCount ${spec.cardCount}`,
+        `${n} questions < ${spec.mockBankMin ? "spec.mockBankMin" : "spec.cardCount"} ${minBank}`,
       );
     } else {
-      pass("mock-bank", "Question bank JSON", `${n} questions (spec ${spec.cardCount})`);
+      pass("mock-bank", "Question bank JSON", `${n} questions (min ${minBank})`);
     }
   }
 

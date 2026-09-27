@@ -31,7 +31,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "ptcb-pharmacy-technician-anki-deck":
     "300 PTCE cards for top-200 drugs, sig codes, and pharmacy math — pairs with the 2026 printable study guide PDF.",
   "luxembourg-vivre-ensemble-anki-deck":
-    "165 French + 165 English Vivre ensemble cards for institutions, rights, history/EU, and daily life — plus a free 60-question Luxembourg diagnostic. Built for nationality civics (exam language FR or EN), not Sproochentest.",
+    "239 French + 239 English Vivre ensemble cards in subdecks for the 3 official exam modules, each with a key-point explanation — facts checked against the 2023 Constitution. $16 one-time for both languages, plus a free 40-question, 60-minute exam simulation. Not Sproochentest.",
   "aspt-phlebotomy-anki-deck":
     "Planned 60-card ASPT phlebotomy Anki (venipuncture, order of draw, safety, processing). Take the free 60-question diagnostic now — verify the current official form at aspt.org. ASPT is not NHA CPT and not ASCP PBT.",
   "cscs-nsca-anki-deck":
@@ -122,7 +122,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "ace-cpt-anki-deck":
     "Cards track ACE CPT competency themes: preparticipation screening and consent, FITT-VP program design, cueing and spotting under load, and scope/ethics/business boundaries. Run the free 60-question readiness check first, then filter Anki to weak topics — not a NASM/ISSA mega-dump.",
   "luxembourg-vivre-ensemble-anki-deck":
-    "French and English civics prompts mapped to Vivre ensemble themes: Grand-Duchy institutions, fundamental rights and nationality literacy, history/geography/EU, and society/daily life. Run the free 60-question diagnostic first, then drill weak domains in the exam language you will sit — Sproochentest language evidence stays on a separate track. Ownable .apkg pair for the exam-or-course civics path, not Guichet.lu dumps.",
+    "Subdecks follow the official exam split — module 1 fundamental rights (42 cards, 10 exam questions), module 2 state and municipal institutions (104 cards, 20 questions), module 3 history and European integration (49 cards, 10 questions) — plus exam/nationality steps and daily-life context. Every card carries a key-point line; 22 cards flag the classic traps (Council of State does not vote laws, 1839 vs 1867, foreigners and legislative elections). Sit the free 40-question, 60-minute exam simulation (same 10/20/10 split), then study your weakest module in the language you will sit.",
   "rd-exam-anki-deck":
     "CDR domain-weighted prompts: Principles of Dietetics, Nutrition Care (PES/ADIME), Management of Food and Nutrition Programs, and Foodservice Systems. Explanations name why distractors fail. Take the free 120-question RD readiness check first, then filter Anki to weak domains — not a random 2,000-card clinical dump.",
   "enrolled-agent-anki-deck":
@@ -266,13 +266,14 @@ export const positioningOverrides: Partial<
   },
   "luxembourg-vivre-ensemble-anki-deck": {
     ourEdge: [
-      "165 French + 165 English civics cards across institutions, rights, history/EU, and daily life",
-      "Free 60-question Luxembourg Vivre ensemble diagnostic with topic scoring",
-      "Built for the exam-or-course civics path (FR or EN sitting) — Sproochentest stays separate",
-      "Ownable Gumroad .apkg pair for nationality applicants — $16",
+      "239 French + 239 English cards — about double the largest free Vivre ensemble question bank we found (118 questions)",
+      "Subdecks mirror the official 10 / 20 / 10 exam split; institutions get 104 cards per language",
+      "Key-point explanation on every card, 22 common-trap cards, facts checked against the 2023 Constitution and 2026 STATEC figures",
+      "$16 one-time for both languages as ownable Anki files — web-only prep platforms charge about €69 for access",
+      "Free exam simulation in the official format — 40 questions, 60 minutes, 10/20/10 — with a score per module before you buy",
     ],
     summaryProse:
-      "Vivre ensemble rewards precise civics recall — Grand-Duchy institutions, rights, and EU context — not a random Europe trivia dump. Matching French and English decks plus one free 60-question timed diagnostic beat rereading Guichet PDFs the night before.",
+      "Vivre ensemble rewards precise recall of Luxembourg’s institutions, rights and history — and punishes classic confusions like 1839 vs 1867 or Council of State vs Chamber. This pair gives you the same 239 cards in French and English, sorted by official module, with the why on every card, for a one-time $16 you keep offline.",
   },
   "ptcb-study-guide-2026": {
     ourEdge: [
@@ -610,19 +611,31 @@ NHA registration, the official practice test, or a skills lab. Ownable .apkg onl
 
   "luxembourg-vivre-ensemble-anki-deck": `### What is inside
 
-Two ownable .apkg files — **165 French** and **165 English** civics prompts mapped to Vivre ensemble themes: institutions and vivre ensemble, history/geography/EU, rights and nationality, and society/daily life. Cards mirror the civics judgment the official 40-question exam (or 24-hour course) expects. Official SFA sittings can be French or English — pick the matching deck. Not Sproochentest language drills and not Belgian/French civics recycled under a Luxembourg title.
+Two ownable .apkg files with the same 239 cards each — one in French, one in English — so you study in the language you will sit (the exam is offered in Luxembourgish, French, German and English).
+
+Each file opens as subdecks that follow the official exam split: module 1 fundamental rights has 42 cards (10 of the 40 exam questions), module 2 state and municipal institutions including justice has 104 cards (20 questions), and module 3 history and European integration has 49 cards (10 questions). Two short context subdecks cover exam and nationality steps (17 cards) and life in Luxembourg (25 cards).
+
+Every card shows the answer plus a key-point line — the article, date or distinction that makes the answer stick. 22 cards are flagged as common traps — including the CAI exemption that shortens the course but not the exam.
+
+### Why this beats the alternatives
+
+Coverage: 478 cards across both languages, versus 118 questions in the largest free bank we found. Institutions — half the exam — get 104 cards per language, from the Grand Duke’s countersignature to how a bourgmestre is appointed.
+
+Accuracy: facts are checked against the Constitution in force since 1 July 2023 — for example the citizens’ legislative initiative (125 initiators, 12,500 supporting voters), the 5,500-signature petition threshold, the CCVEI commune commission, and 2026 STATEC population figures. Material written before 2023 still teaches the 1868 Constitution and old institution names.
+
+Price and ownership: $16 once for both languages, offline in Anki on desktop and phone. Web-only prep platforms charge about €69 for online access.
 
 ### Plan with the free Luxembourg mock
 
-**Start:** Take the [free 60-question Luxembourg Vivre ensemble readiness check](/mock-exams/luxembourg-vivre-ensemble-readiness-check). **Then:** 15–20 Anki cards/day on your weakest topic row in the language you will sit. **Before booking:** practice a 40-question / 60-minute mindset at 70% using weak-domain cards only.
+Start with the free Luxembourg Vivre ensemble exam simulation (/mock-exams/luxembourg-vivre-ensemble-readiness-check): 40 questions in 60 minutes with the official 10/20/10 split, scored per module. Then add 15–20 new cards a day from the subdeck of your weakest module, in the language you will sit. In the final week, do reviews only, starting with the module 2 institutions subdeck — it carries 20 of the 40 questions.
 
 ### Pitfalls this deck targets
 
-Applicants confuse Sproochentest with Vivre ensemble, buy a French-only deck when they will sit English (or the reverse), mix Belgian/French institutions into Luxembourg answers, or skip communal vs state roles. Cards isolate those near-miss traps in both languages.
+Confusing the Council of State (advice) with the Chamber (votes laws), 1839 (independence) with 1867 (neutrality), communal voting rights for foreigners with legislative elections, and Sproochentest with Vivre ensemble. Each has its own trap card in both languages.
 
 ### What this does not replace
 
-Official Vivre ensemble course or exam registration, language evidence, or Guichet.lu procedures. Ownable .apkg pair only — not government material.`,
+Official Vivre ensemble course or exam registration, the Sproochentest, or Guichet.lu procedures. The official regulation does not publish a pass mark — prep sites cite 28/40; confirm with SFA. Ownable .apkg pair only — not government material.`,
 
   "nebosh-anki-deck": `### What is inside
 

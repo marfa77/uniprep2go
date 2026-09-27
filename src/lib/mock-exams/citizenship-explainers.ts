@@ -430,39 +430,33 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
   "luxembourg-vivre-ensemble-readiness-check": {
     practiceTestName: "Luxembourg Vivre ensemble Readiness Check",
     whatIsExam:
-      "Luxembourg’s “Vivre ensemble au Grand-Duché de Luxembourg” is the live nationality / living-together knowledge requirement for many applicants. Officially you typically either pass a written multiple-choice exam — about 40 questions in 60 minutes with a 70% pass mark — or complete the recognised Vivre ensemble course pathway (confirm current Guichet.lu options). Themes cover institutions and vivre ensemble, history/geography/EU, rights and nationality, and society/daily life. Official sittings can be French or English (and other administrative languages); Sproochentest Luxembourgish language evidence is separate. This UniPrep2Go page is an independent French-language diagnostic (60 questions, 45 minutes, 70% pass) on overlapping themes — not Guichet.lu material and not a substitute for the official 40/60/70 paper or the course certificate. The linked Anki product includes matching French and English .apkg files.",
+      "Luxembourg’s “Vivre ensemble au Grand-Duché de Luxembourg” is the live nationality / living-together knowledge requirement for many applicants. You either attend the 24-hour course or pass a 1-hour exam of 40 multiple-choice questions: 10 on fundamental rights, 20 on state and communal institutions, 10 on history and European integration (règlement grand-ducal of 7 April 2017). The regulation does not publish a pass mark; prep sites cite 28/40. Course and exam run in Luxembourgish, French, German or English; Sproochentest is separate. This UniPrep2Go page is an independent French-language simulation in the same format (40 questions, 60 minutes, 10/20/10 split, 28/40 target) — not official material. The linked $16 Anki pair has 239 French + 239 English cards in subdecks per official module.",
     administeredBy:
       "Luxembourg government frameworks published on Guichet.lu (nationality / Vivre ensemble). Confirm whether your path is the exam sitting, the course, or an exemption before you book.",
     officialFormat:
-      "Official Vivre ensemble: typically 40 MCQs, 60 minutes, 70% pass — OR recognised course completion instead of the exam. UniPrep2Go readiness check on this page: 60 timed questions, 45 minutes, 70% diagnostic pass — topic scoring only; finish with official samples or the course route.",
+      "Official Vivre ensemble exam: 40 MCQs in 1 hour (10 rights / 20 institutions / 10 history & EU); pass mark not published in the regulation (prep sites cite 28/40) — OR the 24-hour course (6/12/6 hours). CAI / citizens’ pact holders skip the history module of the course only, not the exam. UniPrep2Go simulation on this page: the same 40 questions / 60 minutes / 10-20-10 split from a 168-question bank, 70% (28/40) target, score per module.",
     whoFor:
       "Nationality applicants choosing between the Vivre ensemble exam and the course; residents who confuse language certificates with the living-together requirement; and anyone wanting a timed civics diagnostic. Not legal advice and not the official Luxembourg exam.",
     howToPrepare:
-      "1) On Guichet.lu, decide exam vs course vs exemption for your file. 2) If sitting the exam, drill institutions, rights, history, EU/Benelux context, and everyday civic life. 3) Take this free 60-question readiness check for topic scoring. 4) Drill weak domains with the 60-card Luxembourg Vivre ensemble Anki deck, then practice a 40-question / 60-minute set at 70% before booking. 5) Keep language evidence (Sproochentest) on the correct parallel track.",
+      "1) On Guichet.lu, decide exam vs course vs exemption for your file. 2) If sitting the exam, focus on institutions first — they are half the paper. 3) Take this free 40-question, 60-minute simulation for a score per module. 4) Drill weak domains with the Luxembourg Vivre ensemble Anki pair (239 FR + 239 EN cards, subdecks per official module, a key point on every card), then aim for 32/40+ on timed practice before booking. 5) Keep language evidence (Sproochentest) on the correct parallel track.",
     topicBlurbs: [
       {
-        id: "institutions-vivre",
-        label: "Institutions & vivre ensemble",
+        id: "droits-fondamentaux",
+        label: "Droits fondamentaux (10 questions)",
         blurb:
-          "Grand Duchy institutions, living-together norms, and civic participation themes central to the Vivre ensemble requirement.",
+          "2023 Constitution rights: dignity, equality, expression and religion, separation of churches and state, petitions (5,500 signatures in 42 days), compulsory voting, who votes in which election.",
       },
       {
-        id: "history-geo-eu",
-        label: "History, geography & EU",
+        id: "institutions",
+        label: "Institutions de l’État et des communes (20 questions)",
         blurb:
-          "Civic milestones, geography, neighbours, and EU/Benelux membership framed as citizenship knowledge.",
+          "Half the paper: Grand Duke and countersignature, government, 60-member Chamber, Council of State (advisory, 21 members), Constitutional Court, courts, and the 100 communes (council, bourgmestre, échevins).",
       },
       {
-        id: "rights-nationality",
-        label: "Rights & nationality",
+        id: "histoire-europe",
+        label: "Histoire & intégration européenne (10 questions)",
         blurb:
-          "Fundamental rights, nationality pathway literacy, and obligations tied to life in Luxembourg.",
-      },
-      {
-        id: "society-daily",
-        label: "Society & daily life",
-        blurb:
-          "Everyday society, public life, and practical civic literacy useful for both exam and course pathways.",
+          "963, 1815, 1839 vs 1867, 1890, both World Wars, 1942 strike, Benelux, NATO, ECSC, Rome 1957, Schengen 1985, euro, and the EU institutions seated in Luxembourg.",
       },
     ],
     examFaqs: [
@@ -474,12 +468,12 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
       {
         question: "What is the official Vivre ensemble exam format?",
         answer:
-          "Typically about 40 questions in 60 minutes with a 70% pass mark. Some applicants complete the course instead of sitting the exam — always verify current options officially.",
+          "40 multiple-choice questions in 1 hour: 10 on fundamental rights, 20 on state and communal institutions, 10 on history and European integration. The 2017 regulation does not publish a pass mark (prep sites cite 28/40). The 24-hour course is the alternative to the exam.",
       },
       {
         question: "Is this UniPrep2Go test the official Luxembourg exam?",
         answer:
-          "No. This is an independent 60-question readiness diagnostic (45 minutes, 70% pass). It is not Guichet.lu material and does not replace the official 40/60/70 paper or course certificate.",
+          "No. This is an independent simulation in the official format (40 questions, 60 minutes, 10/20/10). It is not official material and does not replace the official 40-question exam or the course certificate.",
       },
       {
         question: "Can I take a course instead of the Vivre ensemble exam?",
@@ -494,7 +488,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
       {
         question: "Is there a free Luxembourg citizenship practice test?",
         answer:
-          "Yes — take the free UniPrep2Go Vivre ensemble readiness check on this page, then use official samples or the course materials for exam-day fidelity.",
+          "Yes — this page is a free simulation in the official format: 40 French questions in 60 minutes (10 rights, 20 institutions, 10 history & EU), drawn from a 168-question bank, with a score per module and an explanation for every wrong option.",
       },
       {
         question: "Who administers the Luxembourg Vivre ensemble exam?",

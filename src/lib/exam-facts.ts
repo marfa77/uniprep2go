@@ -2733,7 +2733,8 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       question_count: "Exam pathway: 40 multiple-choice questions (course pathway: 24 hours instead of the exam)",
       scored_count: "40 (exam pathway)",
       time_limit: "60 minutes (exam pathway)",
-      passing_score: "70% (28/40) on the exam pathway — verify current rules on Guichet.lu / MEN",
+      passing_score:
+        "Not stated in the règlement grand-ducal of 7 April 2017 or on the MEN course/exam page; prep sites commonly cite 28/40 (70%) — confirm with SFA (sfa@men.lu)",
       delivery:
         "Computer-based exam sittings organised by SFA (often Esch-Belval / listed centres) — or recognised 24-hour course completion",
       verify_at_url:
@@ -2755,20 +2756,26 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       { domain: "Histoire du Grand-Duché et intégration européenne", weight: "About 10 of 40 exam items / 6h course" },
     ],
     high_yield_facts: [
-      "You can satisfy Vivre ensemble either by passing the 40-question exam (60 minutes, 70%) or by completing the recognised 24-hour course — both produce the same certificate type.",
+      "You can satisfy Vivre ensemble either by passing the 40-question, 1-hour exam or by completing the recognised 24-hour course — both produce the same certificate type.",
+      "The règlement grand-ducal of 7 April 2017 sets the 1-hour limit and the languages: Luxembourgish, French, German and English. It does not publish a pass mark; 28/40 (70%) is the figure prep sites cite.",
       "Sproochentest (Luxembourgish language) is a separate nationality requirement — do not confuse it with Vivre ensemble.",
       "Official themes emphasise fundamental rights, state/communal institutions, Luxembourg history, and European integration.",
       "Registration for the course or exam is typically free via SFA pathways — confirm dates and centres on official pages before booking.",
-      "UniPrep2Go’s free 60-question French diagnostic is longer theme practice (45 min / 70%) — not the official 40/60/70 paper.",
+      "A CAI civic-course certificate, or the citizens’ pact 6-hour Luxembourg module, exempts you from the history module of the course (18h instead of 24h) — not from the exam, where all 40 questions count (Guichet.lu).",
+      "UniPrep2Go’s free French simulation mirrors the official format — 40 questions, 60 minutes, 10/20/10 split, score per module — independent practice, not the official exam.",
     ],
     candidate_qa: [
       {
         q: "How many questions are on the official Vivre ensemble exam?",
-        a: "40 multiple-choice questions in 60 minutes, with a 70% (28/40) pass mark on the exam pathway. Confirm current rules on Guichet.lu / MEN.",
+        a: "40 multiple-choice questions in 1 hour: 10 on fundamental rights, 20 on state and municipal institutions, 10 on history and European integration. The official regulation does not publish a pass mark; prep sites cite 28/40 (70%) — confirm with SFA.",
       },
       {
         q: "Can I take a course instead of the exam?",
         a: "Yes. Completing the recognised 24-hour Vivre ensemble course also produces the certificate — verify seats and language of instruction on official SFA pages.",
+      },
+      {
+        q: "Does the CAI exempt me from the history questions in the Vivre ensemble exam?",
+        a: "No. A CAI civic-course certificate or the citizens’ pact 6-hour Luxembourg module exempts you only from the history module of the 24-hour course. If you choose the exam, you sit and must pass all 40 questions, history included.",
       },
       {
         q: "Is Sproochentest the same as Vivre ensemble?",
@@ -2776,7 +2783,11 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s Luxembourg readiness check the official exam?",
-        a: "No. The free 60-question check and 120-card Anki deck are independent French-language study aids on overlapping themes — not Guichet.lu / SFA exams.",
+        a: "No. The free 40-question French exam simulation and the $16 Anki pair (239 French + 239 English cards) are independent study aids mapped to the three official modules — not Guichet.lu / SFA exams.",
+      },
+      {
+        q: "What is in the UniPrep2Go Luxembourg Vivre ensemble Anki pair?",
+        a: "Two .apkg files, 239 French and 239 English cards, with subdecks for the three official modules (rights 42, institutions 104, history & EU 49) plus exam/nationality and daily-life context. Every card has a key-point explanation; 22 cards flag common traps. Facts checked against the 2023 Constitution.",
       },
     ],
     trademark_note:

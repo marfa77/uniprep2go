@@ -256,19 +256,34 @@ describe("mock exam configs", () => {
       const { questions, errors } = getQuestionBankForExam(slug);
       expect(errors, slug).toEqual([]);
       const expectedBank =
-        slug === "luxembourg-vivre-ensemble-readiness-check" ||
-        slug === "belgium-flanders-mo-readiness-check"
-          ? 120
-          : 60;
+        slug === "luxembourg-vivre-ensemble-readiness-check"
+          ? 168
+          : slug === "belgium-flanders-mo-readiness-check"
+            ? 120
+            : 60;
       expect(questions, slug).toHaveLength(expectedBank);
-      if (
-        slug === "luxembourg-vivre-ensemble-readiness-check" ||
-        slug === "belgium-flanders-mo-readiness-check"
-      ) {
+      if (slug === "belgium-flanders-mo-readiness-check") {
         expect(getMockExamConfig(slug)?.questionCount).toBe(60);
       }
       expect(questions[0]?.sourceNote, slug).toContain(note);
     }
+  });
+
+  it("runs Luxembourg Vivre ensemble in the official 40Q / 60 min 10-20-10 format", () => {
+    const config = getMockExamConfig("luxembourg-vivre-ensemble-readiness-check");
+    expect(config?.questionCount).toBe(40);
+    expect(config?.durationMinutes).toBe(60);
+    expect(config?.topics.map((topic) => [topic.id, topic.questionCount])).toEqual([
+      ["droits-fondamentaux", 10],
+      ["institutions", 20],
+      ["histoire-europe", 10],
+    ]);
+    const { questions } = getQuestionBankForExam("luxembourg-vivre-ensemble-readiness-check");
+    const session = selectSessionQuestions(questions, config!, "lux-seed");
+    expect(session).toHaveLength(40);
+    expect(session.filter((q) => q.topicId === "institutions")).toHaveLength(20);
+    const keys = new Set(questions.map((q) => q.correctOptionId));
+    expect(keys.size).toBe(4);
   });
 
   it("defines SIE topic counts that sum to 75", () => {

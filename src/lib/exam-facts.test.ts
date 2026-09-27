@@ -202,7 +202,7 @@ describe("exam facts layer", () => {
     const profile = getExamFactsProfileForDeck("luxembourg-vivre-ensemble-anki-deck");
     expect(profile).not.toBeNull();
     expect(profile!.exam_facts.question_count).toContain("40");
-    expect(profile!.exam_facts.passing_score).toMatch(/70%/);
+    expect(profile!.exam_facts.passing_score).toMatch(/Not stated.*28\/40/);
     expect(profile!.candidate_qa.some((item) => /Sproochentest/i.test(item.a))).toBe(true);
   });
 

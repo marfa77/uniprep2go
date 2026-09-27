@@ -209,33 +209,39 @@ const ACSM_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
  *  and ...-sample-{1,2,3}.webp (EN). */
 const LUXEMBOURG_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
   {
-    question: "Langues administratives?",
-    answer: "Luxembourgeois, français et allemand",
+    question: "Le Conseil d’État vote-t-il les lois ? (Module 2 · piège fréquent)",
+    answer:
+      "Non : il donne un avis ; seule la Chambre vote les lois. À retenir : il peut toutefois refuser la dispense du second vote constitutionnel.",
     imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-fr-1.webp",
   },
   {
-    question: "Quelle institution majeure de l'UE est à Luxembourg?",
-    answer: "Cour de justice de l'Union européenne",
+    question: "Le vote est-il obligatoire au Luxembourg ? (Module 1)",
+    answer:
+      "Oui, pour tous les électeurs inscrits ; dispense à partir de 75 ans. À retenir : l’abstention non justifiée est punie d’une amende, y compris pour les étrangers inscrits.",
     imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-fr-2.webp",
   },
   {
-    question: "Les élections législatives concernent quelle chambre?",
-    answer: "Chambre des Députés",
+    question: "Le traité de Londres de 1867 a-t-il donné son indépendance au Luxembourg ? (Module 3 · piège fréquent)",
+    answer:
+      "Non : l’indépendance est reconnue en 1839 ; 1867 impose la neutralité et le démantèlement de la forteresse.",
     imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-fr-3.webp",
   },
   {
-    question: "What are the three administrative languages?",
-    answer: "Luxembourgish, French and German",
+    question: "Does the Council of State pass laws? (Module 2 · common trap)",
+    answer:
+      "No: it gives an opinion; only the Chamber passes laws. Key point: it can refuse to waive the second constitutional vote.",
     imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-1.webp",
   },
   {
-    question: "Which major EU institution is in Luxembourg?",
-    answer: "European Court of Justice",
+    question: "Is voting compulsory in Luxembourg? (Module 1)",
+    answer:
+      "Yes, for all registered voters; exempt from age 75. Key point: unjustified abstention is punished by a fine, including for registered foreigners.",
     imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-2.webp",
   },
   {
-    question: "Legislative elections elect which chamber?",
-    answer: "Chambre des Députés",
+    question: "Did the 1867 Treaty of London give Luxembourg its independence? (Module 3 · common trap)",
+    answer:
+      "No: independence was recognised in 1839; 1867 imposed neutrality and the dismantling of the fortress.",
     imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-3.webp",
   },
 ];
@@ -473,7 +479,7 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
     directAnswer: buildDirectAnswer(deck, cardLabel, mockPath, apkgReady),
     lastUpdated:
       deck.slug === "luxembourg-vivre-ensemble-anki-deck"
-        ? "2026-09-26"
+        ? "2026-09-27"
         : deck.slug === "belgium-flanders-mo-anki-deck"
           ? "2026-09-21"
           : deck.slug === "ace-cpt-anki-deck"

@@ -518,27 +518,23 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     title: "Luxembourg Vivre ensemble Readiness Check",
     shortTitle: "Luxembourg Vivre ensemble",
     linkedDeckSlug: "luxembourg-vivre-ensemble-anki-deck",
-    durationMinutes: 45,
-    questionCount: NICHE_SESSION_QUESTIONS,
+    durationMinutes: 60,
+    questionCount: 40,
     passPercent: 70,
-    topics: fourNicheTopics(
-      [
-        { id: "institutions-vivre", label: "Institutions & vivre ensemble" },
-        { id: "history-geo-eu", label: "History, geography & EU" },
-        { id: "rights-nationality", label: "Rights & nationality" },
-        { id: "society-daily", label: "Society & daily life" },
-      ],
-      70,
-    ),
+    topics: [
+      { id: "droits-fondamentaux", label: "Droits fondamentaux", questionCount: 10, weightPercent: 25, targetPercent: 70 },
+      { id: "institutions", label: "Institutions de l’État et des communes", questionCount: 20, weightPercent: 50, targetPercent: 70 },
+      { id: "histoire-europe", label: "Histoire & intégration européenne", questionCount: 10, weightPercent: 25, targetPercent: 70 },
+    ],
     officialSourceNote:
-      "Independent readiness check on Vivre ensemble themes. Official SFA exam path: 40 MCQs / 60 minutes / 28/40 (70%), or a 24h course alternative. This diagnostic is 60 questions / 45 minutes / 70% sampled from a 120-card bank. Luxembourgish Sproochentest is separate. Not official SFA material.",
+      "Independent simulation in the official Vivre ensemble format: 40 MCQs in 60 minutes, 10 fundamental rights / 20 state & communal institutions / 10 history & European integration (règlement grand-ducal of 7 April 2017), drawn from a 168-question French bank checked against the 2023 Constitution. The regulation does not publish a pass mark; the 70% (28/40) target mirrors the figure prep sites cite. Sproochentest is separate. Not official SFA material.",
     description:
-      "Free 60-question Luxembourg Vivre ensemble diagnostic. Official exam is 40Q/60min/70% (or course path) — this page is longer theme practice. Pairs with the 120-card Anki deck. Independent prep.",
+      "Free Luxembourg Vivre ensemble exam simulation in the official format: 40 questions, 60 minutes, 10/20/10 module split, score per module. Fix weak modules with the $16 FR + EN Anki pair (239 cards per language). Independent prep.",
     examBody:
       "Luxembourg — Vivre ensemble (40Q official or course; Sproochentest separate)",
     questionSourceNote:
-      "Questions rewritten from Prep2Go Luxembourg Vivre ensemble themes as full-stem MCQs with parallel-form near-miss distractors. Independent readiness check — not official Luxembourg government material.",
-    lastUpdated: "2026-08-04",
+      "Original French MCQs written by UniPrep2Go for the three official modules, with a specific explanation for every wrong option. Facts checked against the Constitution of 1 July 2023, the 2017 regulation and guichet.lu. Not official Luxembourg government material.",
+    lastUpdated: "2026-09-27",
     searchAliases: ["Vivre ensemble Luxembourg", "Luxembourg citizenship test", "nationalité luxembourgeoise"],
   }),
   nicheReadinessConfig({

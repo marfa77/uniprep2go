@@ -1149,13 +1149,13 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Wallonie citoyenneté practice test",
   },
   "luxembourg-vivre-ensemble-readiness-check": {
-    title: "Free Luxembourg Vivre ensemble Practice Test | 60 Questions",
+    title: "Free Luxembourg Vivre ensemble Practice Test | 40Q Exam Simulation",
     description:
-      "Free Luxembourg Vivre ensemble practice: 60 timed questions. Official SFA exam is 40Q/60min/70% (or course path; FR or EN sitting); Sproochentest is separate. Live FR+EN Anki pair ($16) on Gumroad. Independent prep.",
+      "Free Luxembourg Vivre ensemble exam simulation: 40 questions in 60 minutes, official 10 rights / 20 institutions / 10 history & EU split, score per module and an explanation for every answer. Then fix weak modules with the $16 FR + EN Anki pair (239 cards each). Independent prep.",
     keywords: ["Vivre ensemble Luxembourg", "Luxembourg citizenship test", "nationalité luxembourgeoise"],
-    headline: "Free Luxembourg Vivre ensemble Readiness Check",
+    headline: "Free Luxembourg Vivre ensemble Exam Simulation (40 Questions, 60 Minutes)",
     intro:
-      "Timed Vivre ensemble diagnostic. Format note: official exam path is 40 questions / 60 minutes / 28/40, or a 24-hour course; this check is 60 / 45 / 70%. Luxembourgish language (Sproochentest) is separate.",
+      "Same format as the official exam: 40 French multiple-choice questions in 60 minutes — 10 on fundamental rights, 20 on state and communal institutions, 10 on history and European integration — drawn from a 168-question bank checked against the 2023 Constitution. You get a score per module and an explanation for every wrong option. Target 28/40 (the figure prep sites cite; the regulation publishes none). Sproochentest is separate.",
     audience:
       "Applicants preparing Luxembourg Vivre ensemble / nationality civics.",
     practiceTestLabel: "Vivre ensemble practice test",

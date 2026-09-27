@@ -13,7 +13,7 @@ Do **not** re-run WebSearch SERP or rewrite cites if `last_pass` is &lt; 60 days
 | nebosh-anki-deck + nebosh-readiness-check | building pair | 2026-08-30 | 2026-10-29 | Pair backfill: honest GIC1/GIC2 not-MCQ; $11 + 50Q; pitch + SEO Anki CTA |
 | well-ap-anki-deck + well-ap-readiness-check | building pair | 2026-08-30 | 2026-10-29 | Pair backfill: $11/250 + 50Q; official 115/2.5h/170; pitch + mock SEO Anki CTA |
 | wave-31 cohort | wave | 2026-08-15 | 2026-10-14 | State-RE / money / DELE compact; see wave-31 doc |
-| luxembourg-vivre-ensemble-anki-deck + luxembourg-vivre-ensemble-readiness-check | wave pair | 2026-08-17 | 2026-10-16 | Already paired: $11/60 FR + 60Q; waitlist SEO fixed |
+| luxembourg-vivre-ensemble-anki-deck + luxembourg-vivre-ensemble-readiness-check | wave pair | 2026-09-27 | 2026-11-26 | Full rebuild (user ask): beat — $16 FR+EN 239+239 cards (vs OpenExamPrep 118 free Q, vivre-ensemble.lu ~€69 web-only), official 10/20/10 subdecks, key point on every card, 22 traps incl. CAI=course-only, 2023 Constitution; pass mark hedged (not in RGD 2017; prep sites 28/40); blog + explainer facts fixed; mock rebuilt as official-format sim (40Q/60m, 10/20/10, 168-Q bank). Gap — no DE deck, no cheat sheets, no EN mock |
 | delf-b2-french-anki-deck | language (no mock) | 2026-08-17 | 2026-10-16 | $26 / 2000+ audio vs Language Atlas / AnkiWeb LITE; don’t overclaim vs Prep2Go shop |
 | dutch-a2-inburgering-anki-deck | language (no mock) | 2026-08-17 | 2026-10-16 | $26 / 2000 audio; Inburgering = 5 modules, not one MCQ |
 | german-a2-anki-deck | language (no mock) | 2026-08-17 | 2026-10-16 | $26 / 2000 Goethe-telc-ÖSD-DTZ; not Leben in Deutschland civics |

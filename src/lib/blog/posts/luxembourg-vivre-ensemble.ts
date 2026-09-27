@@ -5,7 +5,7 @@ export const luxembourgVivreEnsemblePost: BlogPostDraft = {
   title: "Luxembourg Vivre Ensemble: The 40-Question Test That Replaces 24 Hours of Class",
   titleTag: "Luxembourg Vivre Ensemble Test 2026: Format, Questions & Pass Score",
   metaDescription:
-    "You can sit a 1-hour exam instead of taking a 24-hour course. 40 questions. 28 correct to pass. Here is the exact topic split and why the CAI certificate exempts you from half the material.",
+    "You can sit a 1-hour, 40-question exam instead of a 24-hour course. Exact 10/20/10 topic split, the pass-mark truth (28/40 is a prep-site figure, not in the regulation), exam languages, and what the CAI exemption really covers.",
   publishedAt: "2026-07-28",
   eyebrow: "Luxembourg · Vivre ensemble",
   clusterId: "luxembourg-citizenship",
@@ -15,14 +15,14 @@ export const luxembourgVivreEnsemblePost: BlogPostDraft = {
     "portugal-nationality-test-2026-new-civic-exam",
   ],
   intro:
-    "**Luxembourg offers two paths for civic knowledge: 24 hours in a classroom, or a 1-hour computer-based MCQ.** Most applicants never hear about the exam. “Vivre ensemble au Grand-Duché de Luxembourg” covers the same material as the course in a single sitting. This guide covers format, the three topic areas, the passing score, and the CAI shortcut that waives one-third of the content.",
+    "**Luxembourg offers two paths for civic knowledge: 24 hours in a classroom, or a 1-hour computer-based MCQ.** Most applicants never hear about the exam. “Vivre ensemble au Grand-Duché de Luxembourg” covers the same material as the course in a single sitting. This guide covers format, the three topic areas, what is (and is not) published about the pass mark, and why the CAI exemption only applies to the course — not the exam.",
   mockSlug: "luxembourg-vivre-ensemble-readiness-check",
   deckSlug: "luxembourg-vivre-ensemble-anki-deck",
   cta: {
-    mockLabel: "Take the free Luxembourg Vivre ensemble readiness check",
-    deckLabel: "Join the Luxembourg Vivre ensemble Anki waitlist",
+    mockLabel: "Take the free 40-question Vivre ensemble exam simulation",
+    deckLabel: "Get the Luxembourg Vivre ensemble Anki decks (FR + EN)",
     summary:
-      "Drill rights, institutions, and history with the free Luxembourg Vivre ensemble readiness check (Prep2Go-sourced). Join the Anki waitlist before your sitting in Esch-Belval — and remember Sproochentest is the harder half.",
+      "Sit the free Vivre ensemble exam simulation — 40 questions, 60 minutes, the official 10/20/10 split, scored per module. Then drill the misses with the FR + EN Anki pair (subdecks per official module, a key point on every card) — and remember Sproochentest is the harder half.",
     extraLinks: [
       {
         href: "https://www.prep2go.study",
@@ -42,19 +42,23 @@ export const luxembourgVivreEnsemblePost: BlogPostDraft = {
             ["Time commitment", "24 hours (often 4×6 hours)", "1 hour"],
             ["Format", "Classroom instruction", "Computer-based multiple-choice"],
             ["Questions", "None — attendance-based", "40 multiple-choice"],
-            ["Passing score", "Attendance only", "28 of 40 (70%)"],
-            ["Cost", "Free or low-cost through SFA", "Exam fee only"],
+            [
+              "Passing score",
+              "Attendance only",
+              "Not stated in the 2017 regulation — prep sites cite 28/40 (70%); confirm with SFA",
+            ],
+            ["Cost", "Free registration (lux.men.lu)", "Free registration (lux.men.lu)"],
             [
               "Language",
-              "Luxembourgish, French, German, English (course)",
-              "Likely Luxembourgish/French — confirm with SFA",
+              "Luxembourgish, French, German or English",
+              "Luxembourgish, French, German or English (règlement grand-ducal of 7 April 2017)",
             ],
             ["Certificate", "Issued upon completion", "Issued upon passing"],
           ],
         },
         {
           type: "p",
-          text: "The exam is run by Service de la formation des adultes (SFA) at a CBT centre in Esch-Belval. Register via the SFA website.",
+          text: "The exam is run by the Service de la formation des adultes (SFA) at a CBT centre in Esch-Belval. Register on lux.men.lu — the site is only reachable from a Luxembourg connection.",
         },
       ],
     },
@@ -88,24 +92,24 @@ export const luxembourgVivreEnsemblePost: BlogPostDraft = {
         },
         {
           type: "p",
-          text: "**Heavy section:** institutions are half the exam. Know the Grand Duke, Prime Minister, 60-member Chamber of Deputies, and the state’s relationship to the 102 communes.",
+          text: "**Heavy section:** institutions are half the exam. Know the Grand Duke, Prime Minister, 60-member Chamber of Deputies, Council of State, the courts, and the state’s relationship to the 100 communes.",
         },
       ],
     },
     {
-      heading: "The CAI Shortcut: Exempt From History",
+      heading: "The CAI Exemption: Course Only, Not the Exam",
       blocks: [
         {
           type: "p",
-          text: "The Welcome and Integration Contract (CAI — Contrat d’Accueil et d’Intégration) is optional for legal residents 16+ planning to stay permanently. Completing CAI can exempt you from the **history / European integration** module (6 hours / 10 exam questions) at citizenship time.",
+          text: "The Welcome and Integration Contract (CAI — Contrat d’Accueil et d’Intégration) is optional for legal residents 16+ planning to stay permanently. Since the law of 23 August 2023 it has been replaced by the citizens’ pact (pacte citoyen du vivre-ensemble interculturel). A CAI civic-course certificate, or the pact’s 6-hour “overview of Luxembourg” module, exempts you from the **history / European integration module of the course** — so you attend 18 hours instead of 24.",
         },
         {
           type: "p",
-          text: "A CAI holder sitting Vivre ensemble then focuses on rights (10) + institutions (20). History is waived — effectively a 28/30 target instead of 28/40.",
+          text: "**The exemption does not carry over to the exam.** Guichet.lu is explicit: if you choose to sit the exam instead of attending the course, you must take and pass the full test, history included. There is no “30-question” version.",
         },
         {
           type: "p",
-          text: "**Trade-off:** CAI itself needs orientation, language (up to A1), and an integration course — months of work. If you are close to eligibility and never started CAI, studying the full 40-question exam is usually faster.",
+          text: "**Rule of thumb:** if you already hold a CAI or pact certificate and prefer class, the 18-hour course is the shortest route. If you want one sitting, prepare all three modules for the 40-question exam.",
         },
       ],
     },
@@ -143,19 +147,19 @@ export const luxembourgVivreEnsemblePost: BlogPostDraft = {
           items: [
             {
               title: "Week 1: State and municipal institutions (20 Q)",
-              body: "Grand Duke, PM, Chamber of Deputies (60), Council of State, Constitutional Court. EU bodies in Luxembourg: CJEU, EP, EIB, ECB. Communes: 102, mayors, councils.",
+              body: "Grand Duke, PM, Chamber of Deputies (60), Council of State, Constitutional Court. EU bodies in Luxembourg: Court of Justice of the EU, European Court of Auditors, EIB, European Parliament General Secretariat. Communes: 100, bourgmestre and échevins, communal councils.",
             },
             {
               title: "Week 2: Fundamental rights (10 Q)",
-              body: "Constitution basics: speech, equality, suffrage, secularism. ECHR relationship to Luxembourg law.",
+              body: "2023 Constitution: equality, freedom of expression and religion, separation of churches and state, voting rights (compulsory voting), petitions and citizens’ initiatives. ECHR relationship to Luxembourg law.",
             },
             {
-              title: "Week 3: History (10 Q) — skip if CAI",
-              body: "963, 1815, 1867, 1890, WWI/WWII occupations, 1957 Rome, 1985 Schengen, 1999 Euro. Figures: Henri, Jean, Charlotte.",
+              title: "Week 3: History and European integration (10 Q)",
+              body: "963, 1815, 1839, 1867, 1890, WWI/WWII occupations, 1942 general strike, 1951 ECSC, 1957 Rome, 1985 Schengen, 1999/2002 Euro. Figures: Charlotte, Jean, Henri, Guillaume; Robert Schuman, Joseph Bech, Pierre Werner.",
             },
             {
               title: "Week 4: Practice and mock",
-              body: "Full timed 40-question mock. Target 32/40 for buffer above 28/40.",
+              body: "Sit the free 40-question / 60-minute simulation (same 10/20/10 split), then drill every miss. Aim for 32/40+ so you clear the commonly cited 28/40 with a buffer.",
             },
           ],
         },
@@ -170,22 +174,23 @@ export const luxembourgVivreEnsemblePost: BlogPostDraft = {
     },
     {
       question: "What is the passing score for the Vivre ensemble exam?",
-      answer: "28 out of 40 (70%).",
+      answer:
+        "The règlement grand-ducal of 7 April 2017 and the MEN exam page do not publish a pass mark. Prep sites commonly cite 28 out of 40 (70%) — aim higher and confirm with SFA (sfa@men.lu).",
     },
     {
       question: "Can I take the Luxembourg citizenship test in English?",
       answer:
-        "24-hour courses are offered in English (including online). Exam language is often Luxembourgish or French — confirm with SFA before registering.",
+        "Yes. Since the 2017 regulation, both the course and the exam can be taken in Luxembourgish, French, German or English.",
     },
     {
       question: "How much does the Luxembourg citizenship test cost?",
       answer:
-        "Vivre ensemble fees are typically low (often under €100) but not always prominently listed. Sproochentest has a separate INLL fee.",
+        "Registration for the Vivre ensemble course or exam is free on lux.men.lu. Sproochentest is booked separately with INLL.",
     },
     {
       question: "What is the CAI in Luxembourg?",
       answer:
-        "Contrat d’Accueil et d’Intégration — a voluntary newcomer programme. Completing it can exempt you from the history module of Vivre ensemble at citizenship.",
+        "Contrat d’Accueil et d’Intégration — a voluntary newcomer programme. Now replaced by the citizens’ pact. A CAI civic-course certificate (or the pact’s 6-hour Luxembourg module) exempts you from the history module of the course only — exam candidates still sit all 40 questions.",
     },
     {
       question: "Do I need to speak Luxembourgish to become a citizen?",
@@ -214,5 +219,5 @@ export const luxembourgVivreEnsemblePost: BlogPostDraft = {
     },
   ],
   bottomLine:
-    "Luxembourg lets you choose: 24 hours in class or 1 hour at a computer. Strong self-learners can skip the course, study three topics for 2–3 weeks, and sit 40 questions. CAI holders may only need 30. The real bottleneck is usually Luxembourgish — not Vivre ensemble.",
+    "Luxembourg lets you choose: 24 hours in class or 1 hour at a computer. Strong self-learners can skip the course, study three topics for 2–3 weeks, and sit 40 questions. The CAI exemption shortens the course, not the exam. The real bottleneck is usually Luxembourgish — not Vivre ensemble.",
 };
