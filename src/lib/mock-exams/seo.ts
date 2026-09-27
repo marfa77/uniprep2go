@@ -1149,7 +1149,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Wallonie citoyenneté practice test",
   },
   "luxembourg-vivre-ensemble-readiness-check": {
-    title: "Free Luxembourg Vivre ensemble Practice Test | 40Q Exam Simulation",
+    title: "Free Luxembourg Vivre ensemble Practice Test (40Q, 60 min)",
     description:
       "Free Luxembourg Vivre ensemble exam simulation: 40 questions in 60 minutes, official 10 rights / 20 institutions / 10 history & EU split, score per module and an explanation for every answer. Then fix weak modules with the $16 FR + EN Anki pair (239 cards each). Independent prep.",
     keywords: ["Vivre ensemble Luxembourg", "Luxembourg citizenship test", "nationalité luxembourgeoise"],

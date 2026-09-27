@@ -397,7 +397,9 @@ function buildLaunchFaqs(deck: PlannedDeck, mockPath: string | null, apkgReady: 
       }
     : null;
 
-  return [deliveryFaq, ...(mockFaq ? [mockFaq] : []), ...kept];
+  const rest = mockFaq ? kept.filter((faq) => faq.question !== mockFaq.question) : kept;
+
+  return [deliveryFaq, ...(mockFaq ? [mockFaq] : []), ...rest];
 }
 
 function buildImportSteps(apkgReady: boolean): ImportStep[] {

@@ -92,6 +92,9 @@ describe("anki-deck-launch", () => {
     );
     expect(lux?.sampleCards[0]?.question).toContain("Conseil d’État");
     expect(lux?.sampleCards[3]?.question).toContain("Council of State");
+    const luxFaqQuestions = lux?.faqs.map((faq) => faq.question) ?? [];
+    expect(new Set(luxFaqQuestions).size).toBe(luxFaqQuestions.length);
+    expect(lux?.faqs.some((faq) => /60-question/.test(faq.answer))).toBe(false);
 
     const stateRe = getCatalogDeckBySlug("fl-real-estate-anki-deck");
     expect(stateRe?.status).toBe("available");
