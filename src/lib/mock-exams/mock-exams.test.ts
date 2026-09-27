@@ -7,7 +7,7 @@ import {
   buildMockExamMarkdown,
   buildMockExamPageJsonLd,
 } from "./llm";
-import { buildMockSeoDescription } from "./seo";
+import { buildMockSeoDescription, buildMockSeoTitle } from "./seo";
 import {
   getQuestionBank,
   getQuestionBankForExam,
@@ -273,6 +273,7 @@ describe("mock exam configs", () => {
     const config = getMockExamConfig("luxembourg-vivre-ensemble-readiness-check");
     expect(config?.questionCount).toBe(40);
     expect(config?.durationMinutes).toBe(60);
+    expect(buildMockSeoTitle(config!)).toBe("Luxembourg Vivre ensemble Practice Test: Free 40Q, 60 min");
     expect(config?.topics.map((topic) => [topic.id, topic.questionCount])).toEqual([
       ["droits-fondamentaux", 10],
       ["institutions", 20],
