@@ -480,13 +480,15 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
       .replace(/^A planned /i, "A focused "),
     directAnswer: buildDirectAnswer(deck, cardLabel, mockPath, apkgReady),
     lastUpdated:
-      deck.slug === "luxembourg-vivre-ensemble-anki-deck"
-        ? "2026-09-27"
-        : deck.slug === "belgium-flanders-mo-anki-deck"
-          ? "2026-09-21"
-          : deck.slug === "ace-cpt-anki-deck"
-            ? "2026-08-13"
-            : "2026-08-06",
+      deck.slug === "pmp-anki-deck" || deck.slug === "nebosh-anki-deck"
+        ? "2026-09-29"
+        : deck.slug === "luxembourg-vivre-ensemble-anki-deck"
+          ? "2026-09-27"
+          : deck.slug === "belgium-flanders-mo-anki-deck"
+            ? "2026-09-21"
+            : deck.slug === "ace-cpt-anki-deck"
+              ? "2026-08-13"
+              : "2026-08-06",
     facts: {
       ...deck.facts,
       cards: cardLabel,
