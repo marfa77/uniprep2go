@@ -35,6 +35,10 @@ export function getDeckPracticeMock(deckSlug: string): MockExamConfig | undefine
   return getMockExamConfig(companionSlug);
 }
 
+export function isSameBankCompanion(deckSlug: string): boolean {
+  return deckSlug in COMPANION_DECK_BY_SLUG;
+}
+
 export function getCompanionDeck(deckSlug: string): CatalogAvailableDeck | undefined {
   const companionSlug =
     COMPANION_DECK_BY_SLUG[deckSlug] ?? getBuildingCompanionDeckSlug(deckSlug);

@@ -597,7 +597,7 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
   },
   "series-7-readiness-check": {
     certifier: "FINRA",
-    verifyAtUrl: "https://www.finra.org/registration-exams-ce/qualification-exams/series7-exam",
+    verifyAtUrl: "https://www.finra.org/registration-exams-ce/qualification-exams/series7",
   },
   "series-63-readiness-check": {
     certifier: "NASAA",

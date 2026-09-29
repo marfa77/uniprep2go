@@ -708,10 +708,10 @@ SPECS: dict[str, dict[str, Any]] = {
     },
     "ielts-toefl-english-for-french-speakers-anki-deck": {
         "label": "IELTS / TOEFL English for French Speakers",
-        "headline": "IELTS / TOEFL English for French Speakers Anki Deck — 2522 Flashcards",
+        "headline": "IELTS / TOEFL English for French Speakers Anki Deck — 2482 Flashcards",
         "exam": "IELTS · TOEFL · Cambridge · PTE — for French speakers",
         "hook": (
-            "2,522 high-frequency English vocabulary cards with French glosses, bilingual "
+            "2,482 high-frequency English vocabulary cards with French glosses, bilingual "
             "examples, and native English audio — built for French speakers preparing IELTS and TOEFL."
         ),
         "audience": (
@@ -727,7 +727,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "IELTS · TOEFL · Cambridge · PTE · English for French speakers",
         "deck_covers": (
-            "2,522 English cards from the Prep2Go app with French glosses, bilingual examples, "
+            "2,482 English cards from the Prep2Go app with French glosses, bilingual examples, "
             "native English audio, and illustrations."
         ),
         "not_included": (
@@ -738,22 +738,22 @@ SPECS: dict[str, dict[str, Any]] = {
             "Exam sittings punish slow retrieval. Spaced Anki with English-first recall "
             "(French as a check) beats translating every sentence under time pressure."
         ),
-        "cards": "2522",
+        "cards": "2482",
         "format_note": "Anki .apkg with audio, images, and French support",
         "sample_captions": ["university", "interview", "station"],
         "facts": [
             ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
-            ("Cards", "2522 vocabulary"),
+            ("Cards", "2482 vocabulary"),
             ("Media", "Audio + French glosses"),
             ("Delivery", "Instant .apkg"),
         ],
     },
     "ielts-toefl-english-for-arabic-speakers-anki-deck": {
         "label": "IELTS / TOEFL English for Arabic Speakers",
-        "headline": "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2504 Flashcards",
+        "headline": "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2482 Flashcards",
         "exam": "IELTS · TOEFL · Cambridge · PTE — for Arabic speakers",
         "hook": (
-            "2,504 high-frequency English vocabulary cards with Arabic glosses, bilingual "
+            "2,482 high-frequency English vocabulary cards with Arabic glosses, bilingual "
             "examples, and native English audio — built for Arabic speakers preparing IELTS and TOEFL."
         ),
         "audience": (
@@ -769,7 +769,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "IELTS · TOEFL · Cambridge · PTE · English for Arabic speakers",
         "deck_covers": (
-            "2,504 English cards from the Prep2Go app with Arabic glosses, bilingual examples, "
+            "2,482 English cards from the Prep2Go app with Arabic glosses, bilingual examples, "
             "native English audio, and illustrations."
         ),
         "not_included": (
@@ -780,22 +780,22 @@ SPECS: dict[str, dict[str, Any]] = {
             "Exam sittings punish slow retrieval. Spaced Anki with English-first recall "
             "(Arabic as a check) beats translating every sentence under time pressure."
         ),
-        "cards": "2504",
+        "cards": "2482",
         "format_note": "Anki .apkg with audio, images, and Arabic support",
         "sample_captions": ["university", "interview", "station"],
         "facts": [
             ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
-            ("Cards", "2504 vocabulary"),
+            ("Cards", "2482 vocabulary"),
             ("Media", "Audio + Arabic glosses"),
             ("Delivery", "Instant .apkg"),
         ],
     },
     "ielts-toefl-english-for-ukrainian-speakers-anki-deck": {
         "label": "IELTS / TOEFL English for Ukrainian Speakers",
-        "headline": "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2504 Flashcards",
+        "headline": "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2482 Flashcards",
         "exam": "IELTS · TOEFL · Cambridge · PTE — for Ukrainian speakers",
         "hook": (
-            "2,504 high-frequency English vocabulary cards with Ukrainian glosses, bilingual "
+            "2,482 high-frequency English vocabulary cards with Ukrainian glosses, bilingual "
             "examples, and native English audio — built for Ukrainian speakers preparing IELTS and TOEFL."
         ),
         "audience": (
@@ -811,7 +811,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "IELTS · TOEFL · Cambridge · PTE · English for Ukrainian speakers",
         "deck_covers": (
-            "2,504 English cards from the Prep2Go app with Ukrainian glosses, bilingual examples, "
+            "2,482 English cards from the Prep2Go app with Ukrainian glosses, bilingual examples, "
             "native English audio, and illustrations."
         ),
         "not_included": (
@@ -822,22 +822,22 @@ SPECS: dict[str, dict[str, Any]] = {
             "Exam sittings punish slow retrieval. Spaced Anki with English-first recall "
             "(Ukrainian as a check) beats translating every sentence under time pressure."
         ),
-        "cards": "2504",
+        "cards": "2482",
         "format_note": "Anki .apkg with audio, images, and Ukrainian support",
         "sample_captions": ["university", "interview", "station"],
         "facts": [
             ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
-            ("Cards", "2504 vocabulary"),
+            ("Cards", "2482 vocabulary"),
             ("Media", "Audio + Ukrainian glosses"),
             ("Delivery", "Instant .apkg"),
         ],
     },
     "ielts-toefl-english-for-russian-speakers-anki-deck": {
         "label": "IELTS / TOEFL English for Russian Speakers",
-        "headline": "IELTS / TOEFL English for Russian Speakers Anki Deck — 2504 Flashcards",
+        "headline": "IELTS / TOEFL English for Russian Speakers Anki Deck — 2482 Flashcards",
         "exam": "IELTS · TOEFL · Cambridge · PTE — for Russian speakers",
         "hook": (
-            "2,504 high-frequency English vocabulary cards with Russian glosses, bilingual "
+            "2,482 high-frequency English vocabulary cards with Russian glosses, bilingual "
             "examples, and native English audio — built for Russian speakers preparing IELTS and TOEFL."
         ),
         "audience": (
@@ -853,7 +853,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "IELTS · TOEFL · Cambridge · PTE · English for Russian speakers",
         "deck_covers": (
-            "2,504 English cards from the Prep2Go app with Russian glosses, bilingual examples, "
+            "2,482 English cards from the Prep2Go app with Russian glosses, bilingual examples, "
             "native English audio, and illustrations."
         ),
         "not_included": (
@@ -864,22 +864,22 @@ SPECS: dict[str, dict[str, Any]] = {
             "Exam sittings punish slow retrieval. Spaced Anki with English-first recall "
             "(Russian as a check) beats translating every sentence under time pressure."
         ),
-        "cards": "2504",
+        "cards": "2482",
         "format_note": "Anki .apkg with audio, images, and Russian support",
         "sample_captions": ["university", "interview", "station"],
         "facts": [
             ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
-            ("Cards", "2504 vocabulary"),
+            ("Cards", "2482 vocabulary"),
             ("Media", "Audio + Russian glosses"),
             ("Delivery", "Instant .apkg"),
         ],
     },
     "ielts-toefl-english-for-spanish-speakers-anki-deck": {
         "label": "IELTS / TOEFL English for Spanish Speakers (LatAm)",
-        "headline": "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2504 Flashcards",
+        "headline": "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2482 Flashcards",
         "exam": "IELTS · TOEFL · Cambridge · PTE — for Spanish speakers (LatAm)",
         "hook": (
-            "2,504 high-frequency English vocabulary cards with Latin American Spanish glosses, "
+            "2,482 high-frequency English vocabulary cards with Latin American Spanish glosses, "
             "bilingual examples, and native English audio — built for LatAm Spanish speakers preparing IELTS and TOEFL."
         ),
         "audience": (
@@ -895,7 +895,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "IELTS · TOEFL · Cambridge · PTE · English for Spanish speakers (LatAm)",
         "deck_covers": (
-            "2,504 English cards from the Prep2Go app with LatAm Spanish glosses, bilingual examples, "
+            "2,482 English cards from the Prep2Go app with LatAm Spanish glosses, bilingual examples, "
             "native English audio, and illustrations."
         ),
         "not_included": (
@@ -906,22 +906,22 @@ SPECS: dict[str, dict[str, Any]] = {
             "Exam sittings punish slow retrieval. Spaced Anki with English-first recall "
             "(Spanish as a check) beats translating every sentence under time pressure."
         ),
-        "cards": "2504",
+        "cards": "2482",
         "format_note": "Anki .apkg with audio, images, and LatAm Spanish support",
         "sample_captions": ["university", "interview", "station"],
         "facts": [
             ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
-            ("Cards", "2504 vocabulary"),
+            ("Cards", "2482 vocabulary"),
             ("Media", "Audio + LatAm Spanish glosses"),
             ("Delivery", "Instant .apkg"),
         ],
     },
     "ielts-toefl-english-for-portuguese-speakers-anki-deck": {
         "label": "IELTS / TOEFL English for Portuguese Speakers (BR)",
-        "headline": "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 2504 Flashcards",
+        "headline": "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 2482 Flashcards",
         "exam": "IELTS · TOEFL · Cambridge · PTE — for Brazilian Portuguese speakers",
         "hook": (
-            "2,504 high-frequency English vocabulary cards with Brazilian Portuguese glosses, "
+            "2,482 high-frequency English vocabulary cards with Brazilian Portuguese glosses, "
             "bilingual examples, and native English audio — built for PT-BR speakers preparing IELTS and TOEFL."
         ),
         "audience": (
@@ -937,7 +937,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "IELTS · TOEFL · Cambridge · PTE · English for Portuguese speakers (BR)",
         "deck_covers": (
-            "2,504 English cards from the Prep2Go app with Brazilian Portuguese glosses, bilingual examples, "
+            "2,482 English cards from the Prep2Go app with Brazilian Portuguese glosses, bilingual examples, "
             "native English audio, and illustrations."
         ),
         "not_included": (
@@ -948,22 +948,22 @@ SPECS: dict[str, dict[str, Any]] = {
             "Exam sittings punish slow retrieval. Spaced Anki with English-first recall "
             "(Brazilian Portuguese as a check) beats translating every sentence under time pressure."
         ),
-        "cards": "2504",
+        "cards": "2482",
         "format_note": "Anki .apkg with audio, images, and Brazilian Portuguese support",
         "sample_captions": ["university", "interview", "station"],
         "facts": [
             ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
-            ("Cards", "2504 vocabulary"),
+            ("Cards", "2482 vocabulary"),
             ("Media", "Audio + PT-BR glosses"),
             ("Delivery", "Instant .apkg"),
         ],
     },
     "ielts-toefl-english-for-turkish-speakers-anki-deck": {
         "label": "IELTS / TOEFL English for Turkish Speakers",
-        "headline": "IELTS / TOEFL English for Turkish Speakers Anki Deck — 952 Flashcards",
+        "headline": "IELTS / TOEFL English for Turkish Speakers Anki Deck — 924 Flashcards",
         "exam": "IELTS · TOEFL · Cambridge · PTE — for Turkish speakers",
         "hook": (
-            "952 high-frequency English vocabulary cards with Turkish glosses, bilingual "
+            "924 high-frequency English vocabulary cards with Turkish glosses, bilingual "
             "examples, and native English audio — built for Turkish speakers preparing IELTS and TOEFL."
         ),
         "audience": (
@@ -979,7 +979,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "IELTS · TOEFL · Cambridge · PTE · English for Turkish speakers",
         "deck_covers": (
-            "952 English cards from the Prep2Go app with Turkish glosses, bilingual examples, "
+            "924 English cards from the Prep2Go app with Turkish glosses, bilingual examples, "
             "native English audio, and illustrations."
         ),
         "not_included": (
@@ -990,12 +990,12 @@ SPECS: dict[str, dict[str, Any]] = {
             "Exam sittings punish slow retrieval. Spaced Anki with English-first recall "
             "(Turkish as a check) beats translating every sentence under time pressure."
         ),
-        "cards": "952",
+        "cards": "924",
         "format_note": "Anki .apkg with audio, images, and Turkish support",
         "sample_captions": ["university", "interview", "station"],
         "facts": [
             ("Pathways", "IELTS · TOEFL · Cambridge · PTE"),
-            ("Cards", "952 vocabulary"),
+            ("Cards", "924 vocabulary"),
             ("Media", "Audio + Turkish glosses"),
             ("Delivery", "Instant .apkg"),
         ],

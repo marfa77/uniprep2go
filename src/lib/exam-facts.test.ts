@@ -55,8 +55,10 @@ describe("exam facts layer", () => {
     expect(hasCitableExamLayer("ib-biology-sl-anki-deck")).toBe(true);
 
     const cfaL2 = buildExamFactsMarkdownSection(getExamFactsProfileForDeck("cfa-level-2-anki-deck")!);
-    expect(cfaL2).toContain("88 vignette-linked");
-    expect(cfaL2).toContain("Equity Valuation");
+    expect(cfaL2).toContain("88 multiple-choice questions in 22 vignette-based item sets");
+    expect(cfaL2).toContain("Equities");
+    expect(cfaL2).toContain("level-ii-exam");
+    expect(cfaL2).not.toContain("44 vignette");
 
     const cat4 = buildExamFactsMarkdownSection(
       getExamFactsProfileForDeck("cat4-level-d-anki-deck-printable-pdf")!,

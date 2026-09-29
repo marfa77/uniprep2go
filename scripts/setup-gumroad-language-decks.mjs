@@ -249,12 +249,12 @@ const SPECS = {
     fileNames: ["German_A2_for_Russian_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-french-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for French Speakers Anki Deck — 2522 Flashcards",
+    name: "IELTS / TOEFL English for French Speakers Anki Deck — 2482 Flashcards",
     summary:
-      "2,522 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with French support on every card.",
+      "2,482 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with French support on every card.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — English Anki deck for <strong>French speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
-      "<p><strong>2,522</strong> high-frequency English cards with French glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p><strong>2,482</strong> high-frequency English cards with French glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
     ].join(""),
@@ -265,12 +265,12 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_French_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-arabic-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2504 Flashcards",
+    name: "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2482 Flashcards",
     summary:
-      "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Arabic support on every card.",
+      "2,482 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Arabic support on every card.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Arabic speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
-      "<p><strong>2,504</strong> high-frequency English cards with Arabic glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p><strong>2,482</strong> high-frequency English cards with Arabic glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
     ].join(""),
@@ -281,12 +281,12 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Arabic_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-ukrainian-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2504 Flashcards",
+    name: "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2482 Flashcards",
     summary:
-      "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Ukrainian support on every card.",
+      "2,482 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Ukrainian support on every card.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Ukrainian speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
-      "<p><strong>2,504</strong> high-frequency English cards with Ukrainian glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p><strong>2,482</strong> high-frequency English cards with Ukrainian glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
     ].join(""),
@@ -297,12 +297,12 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Ukrainian_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-russian-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Russian Speakers Anki Deck — 2504 Flashcards",
+    name: "IELTS / TOEFL English for Russian Speakers Anki Deck — 2482 Flashcards",
     summary:
-      "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Russian support on every card.",
+      "2,482 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Russian support on every card.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Russian speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
-      "<p><strong>2,504</strong> high-frequency English cards with Russian glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p><strong>2,482</strong> high-frequency English cards with Russian glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
     ].join(""),
@@ -313,12 +313,12 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Russian_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-spanish-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2504 Flashcards",
+    name: "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2482 Flashcards",
     summary:
-      "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Latin American Spanish support on every card.",
+      "2,482 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Latin American Spanish support on every card.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Spanish speakers (LatAm)</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
-      "<p><strong>2,504</strong> high-frequency English cards with Latin American Spanish glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p><strong>2,482</strong> high-frequency English cards with Latin American Spanish glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
     ].join(""),
@@ -329,12 +329,12 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Spanish_Speakers_LatAm_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-portuguese-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 2504 Flashcards",
+    name: "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 2482 Flashcards",
     summary:
-      "2,504 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Brazilian Portuguese support on every card.",
+      "2,482 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Brazilian Portuguese support on every card.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Brazilian Portuguese speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
-      "<p><strong>2,504</strong> high-frequency English cards with Brazilian Portuguese (PT-BR) glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p><strong>2,482</strong> high-frequency English cards with Brazilian Portuguese (PT-BR) glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material. Not a CIPLE European Portuguese deck.</em></p>",
     ].join(""),
@@ -345,13 +345,13 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Portuguese_Speakers_BR_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-turkish-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Turkish Speakers Anki Deck — 952 Flashcards",
+    name: "IELTS / TOEFL English for Turkish Speakers Anki Deck — 924 Flashcards",
     summary:
-      "952 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Turkish support on every card.",
+      "924 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Turkish support on every card.",
     priceUsd: 5,
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Turkish speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
-      "<p><strong>952</strong> high-frequency English cards with Turkish glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p><strong>924</strong> high-frequency English cards with Turkish glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
     ].join(""),

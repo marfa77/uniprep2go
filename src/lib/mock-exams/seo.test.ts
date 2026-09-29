@@ -12,6 +12,7 @@ describe("mock exam SEO", () => {
 
     expect(buildMockSeoTitle(servSafe!)).toContain("ServSafe Manager Practice Test");
     expect(buildMockSeoDescription(servSafe!)).toContain("90 timed questions");
+    expect(buildMockSeoDescription(servSafe!)).toContain("70%");
     expect(buildMockSeoDescription(servSafe!)).toContain("75%");
 
     expect(buildMockSeoTitle(sie!)).toContain("SIE Practice Test");

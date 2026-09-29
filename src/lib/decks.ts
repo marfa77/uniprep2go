@@ -381,7 +381,7 @@ const rawDecks: Deck[] = [
       "Focused 342-card CFA Level 1 Anki deck + free 60-question timed mock — not a 1,600-card dump.",
     directAnswer:
       "The best independent CFA Level 1 Anki stack on UniPrep2Go is a focused 342+ card .apkg across all 10 topic weights, paired with a free 60-question timed readiness-check mock (topic scoring) and a printable 2026 formula reference PDF (250 formulas + 98 definitions + 80 recall drill). Delivered for {PRICE} through Gumroad. Built for daily spaced-repetition remediation after a mock — not a bloated mega-deck and not official CFA Institute material.",
-    lastUpdated: "2026-08-11",
+    lastUpdated: "2026-09-29",
     audience: "CFA Level 1 candidates who want structured recall practice for formulas, concepts, and topic definitions.",
     format: ".apkg",
     coverImage: "/covers/cfa-level-1-anki-deck.webp",
@@ -514,7 +514,7 @@ const rawDecks: Deck[] = [
       "54-page printable formula quick reference for the 2026 cycle — 250 typeset formulas, 98 key definitions, and an 80-question recall drill.",
     directAnswer:
       "For CFA Level 1 formula retrieval in 2026, UniPrep2Go’s Formula & Definitions Quick Reference is a 54-page printable PDF: 250 typeset formulas + 98 examiner-style definitions across all 10 topics, an 80-question recall drill with explained answers, and a clickable TOC — same validated bank as the 342+ card Anki deck and free 60-question timed mock. Delivered for {PRICE} through Gumroad. Printable recall companion — not a free one-page cheat sheet dump and not CFA Institute curriculum.",
-    lastUpdated: "2026-08-11",
+    lastUpdated: "2026-09-29",
     audience:
       "CFA Level 1 candidates who need fast formula retrieval under exam timing — print the reference, run the recall drill, and pair with spaced-repetition review on the companion Anki deck.",
     format: "PDF",
@@ -629,7 +629,7 @@ const rawDecks: Deck[] = [
     subtitle: "444 FRM Part 1 Anki cards + free 50-question timed practice test — VaR, ES, Greeks, credit risk.",
     directAnswer:
       "The strongest independent FRM Part 1 Anki answer on UniPrep2Go is a 444-card .apkg covering foundations of risk, quant, markets/products, valuation models, VaR, Expected Shortfall, credit and operational risk, derivatives, fixed income, and Greeks — plus a free 50-question timed readiness-check mock with topic scoring. Delivered for {PRICE} through Gumroad. Built for active recall after a diagnostic mock — not a generic risk trivia pack and not affiliated with or endorsed by GARP.",
-    lastUpdated: "2026-08-11",
+    lastUpdated: "2026-09-29",
     audience: "FRM Part 1 candidates who want active recall practice for formulas, concepts, definitions, and risk-management logic.",
     format: ".apkg",
     coverImage: "/covers/frm-part-1-anki-deck.webp",
@@ -644,10 +644,10 @@ const rawDecks: Deck[] = [
       delivery: "Digital download through Gumroad (364 KB)",
     },
     topicCoverage: [
-      { name: "Foundations of Risk Management", examWeight: "FRM Part 1 topic", cards: "High-yield cards" },
-      { name: "Quantitative Analysis", examWeight: "FRM Part 1 topic", cards: "High-yield cards" },
-      { name: "Financial Markets and Products", examWeight: "FRM Part 1 topic", cards: "High-yield cards" },
-      { name: "Valuation and Risk Models", examWeight: "FRM Part 1 topic", cards: "High-yield cards" },
+      { name: "Foundations of Risk Management", examWeight: "20% of Part I", cards: "87" },
+      { name: "Quantitative Analysis", examWeight: "20% of Part I", cards: "122" },
+      { name: "Financial Markets and Products", examWeight: "30% of Part I", cards: "124" },
+      { name: "Valuation and Risk Models", examWeight: "30% of Part I", cards: "111" },
     ],
     sampleCards: [
       {
@@ -712,7 +712,7 @@ const rawDecks: Deck[] = [
     subtitle: "A focused Anki deck for FINRA SIE exam active recall.",
     directAnswer:
       "UniPrep2Go sells an independent SIE Exam Anki deck with 300 high-yield cards covering FINRA's official topic weights: capital markets, products and risks, trading, customer accounts, prohibited activities, and regulatory framework. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck is a supplementary active-recall study aid for SIE candidates and is not official FINRA material.",
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-09-29",
     audience: "SIE exam candidates, finance interns, new hires, and career changers who want active-recall practice instead of passive rereading.",
     format: ".apkg",
     coverImage: "/covers/sie-exam-anki-deck.webp",
@@ -727,10 +727,14 @@ const rawDecks: Deck[] = [
       delivery: "Digital download through Gumroad",
     },
     topicCoverage: [
-      { name: "Knowledge of Capital Markets", examWeight: "FINRA SIE topic", cards: "High-yield cards" },
-      { name: "Products and Their Risks", examWeight: "FINRA SIE topic", cards: "High-yield cards" },
-      { name: "Trading, Customer Accounts, and Prohibited Activities", examWeight: "FINRA SIE topic", cards: "High-yield cards" },
-      { name: "Regulatory Framework", examWeight: "FINRA SIE topic", cards: "High-yield cards" },
+      { name: "Knowledge of Capital Markets", examWeight: "16% of exam (12 items)", cards: "48" },
+      { name: "Products and Their Risks", examWeight: "44% of exam (33 items)", cards: "132" },
+      {
+        name: "Trading, Customer Accounts, and Prohibited Activities",
+        examWeight: "31% of exam (23 items)",
+        cards: "93",
+      },
+      { name: "Regulatory Framework", examWeight: "9% of exam (7 items)", cards: "27" },
     ],
     sampleCards: [
       {
@@ -783,8 +787,8 @@ const rawDecks: Deck[] = [
     shortName: "Series 7",
     subtitle: "A focused Anki deck for FINRA Series 7 Top-Off active recall.",
     directAnswer:
-      "UniPrep2Go sells an independent Series 7 Anki deck with 300 high-yield cards covering FINRA's Series 7 job-function outline: seeking business, opening accounts, investment products, recommendations, suitability, records, order handling, confirmations, settlement, and trade processing. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. Pair it with the free 60-question / 90-minute Series 7 readiness check (official Top-Off is 125 scored / 3h45 / ~72%). The deck is a supplementary active-recall study aid for Series 7 candidates and is not official FINRA material.",
-    lastUpdated: "2026-09-03",
+      "UniPrep2Go sells an independent Series 7 Anki deck with 300 high-yield cards covering FINRA's Series 7 job-function outline: seeking business, opening accounts, investment products, recommendations, suitability, records, order handling, confirmations, settlement, and trade processing. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. Pair it with the free 60-question / 90-minute Series 7 readiness check (official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 equated). The deck is a supplementary active-recall study aid for Series 7 candidates and is not official FINRA material.",
+    lastUpdated: "2026-09-29",
     audience: "Series 7 candidates sponsored by a FINRA member firm, new financial advisors, registered representative trainees, and SIE passers who want focused spaced-repetition review.",
     format: ".apkg",
     coverImage: "/covers/series-7-anki-deck.webp",
@@ -799,10 +803,18 @@ const rawDecks: Deck[] = [
       delivery: "Digital download through Gumroad",
     },
     topicCoverage: [
-      { name: "Seeking Business and Communications", examWeight: "Series 7 job function", cards: "High-yield cards" },
-      { name: "Opening Customer Accounts", examWeight: "Series 7 job function", cards: "High-yield cards" },
-      { name: "Investment Products, Recommendations, Suitability, and Records", examWeight: "Series 7 job function", cards: "High-yield cards" },
-      { name: "Order Handling, Confirmations, Settlement, and Trade Processing", examWeight: "Series 7 job function", cards: "High-yield cards" },
+      { name: "Seeking Business and Communications", examWeight: "7% of exam (9 items)", cards: "21" },
+      { name: "Opening Customer Accounts", examWeight: "9% of exam (11 items)", cards: "27" },
+      {
+        name: "Investment Products, Recommendations, Suitability, and Records",
+        examWeight: "73% of exam (91 items)",
+        cards: "219",
+      },
+      {
+        name: "Order Handling, Confirmations, Settlement, and Trade Processing",
+        examWeight: "11% of exam (14 items)",
+        cards: "33",
+      },
     ],
     sampleCards: [
       {
@@ -844,7 +856,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free Series 7 practice test?",
         answer:
-          "Yes. UniPrep2Go hosts a free 60-question / 90-minute Series 7 readiness check with job-function scoring at /mock-exams/series-7-readiness-check. Official FINRA Series 7 is 125 questions / 3 hours 45 minutes / about 72% pass — our mock is a shorter diagnostic before you drill this 300-card deck.",
+          "Yes. UniPrep2Go hosts a free 60-question / 90-minute Series 7 readiness check with job-function scoring at /mock-exams/series-7-readiness-check. Official FINRA Series 7 is 125 scored + 5 pretest / 3 hours 45 minutes / passing score 72 (equated) — our mock is a shorter diagnostic before you drill this 300-card deck.",
       },
       {
         question: "Does the deck replace Series 7 practice questions?",
@@ -949,7 +961,7 @@ const rawDecks: Deck[] = [
       "400 California DRE salesperson Anki cards + free 60-question CA practice test — agency, disclosures, math.",
     directAnswer:
       "For California DRE salesperson exam prep, UniPrep2Go’s California Real Estate Anki deck is 400 high-yield cards on property ownership, agency and fiduciary duties, valuation, financing, transfer, mandated disclosures, contracts, and real estate math — plus a free 60-question timed California practice test with topic scoring. Delivered as an Anki .apkg for {PRICE} through Gumroad. State-specific California content, not a national deck relabeled, and not official DRE material.",
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-09-29",
     audience:
       "California real estate salesperson exam candidates, career changers entering real estate, pre-licensing students, and candidates who want active recall for agency, disclosures, contracts, and real estate math.",
     format: ".apkg",
@@ -1211,7 +1223,7 @@ const rawDecks: Deck[] = [
     subtitle: "A vignette-depth Anki deck for CFA Level 2 candidates using spaced repetition.",
     directAnswer:
       "UniPrep2Go sells an independent CFA Level 2 Anki deck with 495 flashcards covering all 10 CFA Level 2 topic areas, including FSA, equity and fixed income valuation, portfolio management, derivatives, and ethics application. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck is a supplementary spaced-repetition study aid for the 2026 exam cycle and is not official CFA Institute material or a replacement for the curriculum.",
-    lastUpdated: "2026-06-13",
+    lastUpdated: "2026-09-29",
     audience: "CFA Level 2 candidates who want structured recall practice for vignette-depth formulas, concepts, and application-level definitions.",
     format: ".apkg",
     coverImage: "/covers/cfa-level-2-anki-deck.webp",
@@ -1299,7 +1311,7 @@ const rawDecks: Deck[] = [
       "60-page printable formula quick reference for the 2026 cycle — 219 typeset formulas, 276 definitions, 80-question recall drill, plus free 60Q timed mock.",
     directAnswer:
       "UniPrep2Go sells an independent CFA Level 2 Formula & Definitions Quick Reference PDF with 60 printable pages: 495 entries (219 typeset formulas and 276 examiner-style definitions) organized across all 10 Level 2 topic areas (concept, typeset formula, one-line meaning), an 80-question Formula Recall Drill with explained answer key, and a clickable table of contents — same validated bank as the 495-card Anki deck and free 60-question timed CFA Level 2 readiness check (no signup). Delivered as a grayscale-friendly US Letter PDF for {PRICE} through Gumroad. Recall companion — not CFA Institute curriculum or a study course.",
-    lastUpdated: "2026-08-27",
+    lastUpdated: "2026-09-29",
     audience:
       "CFA Level 2 candidates who need fast formula retrieval under item-set exam timing — print the reference, run the recall drill, and pair with spaced-repetition review on the companion Anki deck.",
     format: "PDF",
@@ -2233,13 +2245,13 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-french-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for French Speakers Anki Deck — 2522 Flashcards",
+    title: "IELTS / TOEFL English for French Speakers Anki Deck — 2482 Flashcards",
     shortName: "IELTS / TOEFL English for French Speakers",
     subtitle:
-      "2,522 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with French support on every card.",
+      "2,482 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with French support on every card.",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English for French Speakers Anki deck with 2,522 high-frequency English vocabulary cards, French glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for French-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
-    lastUpdated: "2026-09-21",
+      "UniPrep2Go sells an IELTS / TOEFL English for French Speakers Anki deck with 2,482 high-frequency English vocabulary cards, French glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for French-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-09-28",
     audience:
       "French-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
     format: ".apkg",
@@ -2248,7 +2260,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2522",
+      cards: "2482",
       topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with French bilingual support",
       formulas: "Audio + French glosses + bilingual example sentences",
       examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
@@ -2270,7 +2282,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "2,522 English vocabulary cards from the Prep2Go app: French glosses, bilingual examples, native English audio, and illustrations.",
+          "2,482 English vocabulary cards from the Prep2Go app: French glosses, bilingual examples, native English audio, and illustrations.",
       },
       {
         question: "What file format is delivered?",
@@ -2352,13 +2364,13 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-arabic-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2504 Flashcards",
+    title: "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2482 Flashcards",
     shortName: "IELTS / TOEFL English for Arabic Speakers",
     subtitle:
-      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Arabic support on every card.",
+      "2,482 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Arabic support on every card.",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English for Arabic Speakers Anki deck with 2,504 high-frequency English vocabulary cards, Arabic glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Arabic-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
-    lastUpdated: "2026-09-21",
+      "UniPrep2Go sells an IELTS / TOEFL English for Arabic Speakers Anki deck with 2,482 high-frequency English vocabulary cards, Arabic glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Arabic-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-09-28",
     audience:
       "Arabic-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
     format: ".apkg",
@@ -2367,7 +2379,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2504",
+      cards: "2482",
       topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with Arabic bilingual support",
       formulas: "Audio + Arabic glosses + bilingual example sentences",
       examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
@@ -2389,7 +2401,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "2,504 English vocabulary cards from the Prep2Go app: Arabic glosses, bilingual examples, native English audio, and illustrations.",
+          "2,482 English vocabulary cards from the Prep2Go app: Arabic glosses, bilingual examples, native English audio, and illustrations.",
       },
       {
         question: "What file format is delivered?",
@@ -2473,13 +2485,13 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-ukrainian-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2504 Flashcards",
+    title: "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2482 Flashcards",
     shortName: "IELTS / TOEFL English for Ukrainian Speakers",
     subtitle:
-      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Ukrainian support on every card.",
+      "2,482 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Ukrainian support on every card.",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English for Ukrainian Speakers Anki deck with 2,504 high-frequency English vocabulary cards, Ukrainian glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Ukrainian-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
-    lastUpdated: "2026-09-21",
+      "UniPrep2Go sells an IELTS / TOEFL English for Ukrainian Speakers Anki deck with 2,482 high-frequency English vocabulary cards, Ukrainian glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Ukrainian-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-09-28",
     audience:
       "Ukrainian-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
     format: ".apkg",
@@ -2488,7 +2500,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2504",
+      cards: "2482",
       topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with Ukrainian bilingual support",
       formulas: "Audio + Ukrainian glosses + bilingual example sentences",
       examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
@@ -2510,7 +2522,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "2,504 English vocabulary cards from the Prep2Go app: Ukrainian glosses, bilingual examples, native English audio, and illustrations.",
+          "2,482 English vocabulary cards from the Prep2Go app: Ukrainian glosses, bilingual examples, native English audio, and illustrations.",
       },
       {
         question: "What file format is delivered?",
@@ -2523,13 +2535,13 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-russian-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for Russian Speakers Anki Deck — 2504 Flashcards",
+    title: "IELTS / TOEFL English for Russian Speakers Anki Deck — 2482 Flashcards",
     shortName: "IELTS / TOEFL English for Russian Speakers",
     subtitle:
-      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Russian support and cognate-trap notes on every card.",
+      "2,482 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Russian support and cognate-trap notes on every card.",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English Anki deck for Russian speakers: 2,504 high-frequency English vocabulary cards with Russian glosses, bilingual examples, native English audio, and illustrations. Built for Russian-speaking candidates targeting IELTS Academic or General (Canada / Australia / UKVI), TOEFL iBT (U.S. graduate), Cambridge, and PTE — English-first recall so false friends like актуальный/actual and магазин/magazine stop costing Reading points. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio. What this is not: a tourist EN–RU AnkiWeb dump, an English Vocabulary in Use book mirror, a timed mock exam, or a PT-BR / LatAm-Spanish-gloss sibling pack.",
-    lastUpdated: "2026-09-21",
+      "UniPrep2Go sells an IELTS / TOEFL English Anki deck for Russian speakers: 2,482 high-frequency English vocabulary cards with Russian glosses, bilingual examples, native English audio, and illustrations. Built for Russian-speaking candidates targeting IELTS Academic or General (Canada / Australia / UKVI), TOEFL iBT (U.S. graduate), Cambridge, and PTE — English-first recall so false friends like актуальный/actual and магазин/magazine stop costing Reading points. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio. What this is not: a tourist EN–RU AnkiWeb dump, an English Vocabulary in Use book mirror, a timed mock exam, or a PT-BR / LatAm-Spanish-gloss sibling pack.",
+    lastUpdated: "2026-09-28",
     audience:
       "Russian-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary — not tourist phrase learners.",
     format: ".apkg",
@@ -2538,7 +2550,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2504",
+      cards: "2482",
       topics:
         "IELTS / TOEFL / Cambridge / PTE English vocabulary for Russian speakers (Russian glosses, false-friend awareness)",
       formulas: "Audio + Russian glosses + bilingual example sentences",
@@ -2561,7 +2573,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this the same as free AnkiWeb English–Russian or EVU decks?",
         answer:
-          "No. Free AnkiWeb EN–RU dumps and English Vocabulary in Use mirrors are often tourist phrases, undated frequency lists, or CEFR book mirrors without IELTS/TOEFL framing. This is a 2,504-card Prep2Go exam-frequency bank with Russian glosses, English audio, and cognate-trap notes — instant Gumroad .apkg at list price.",
+          "No. Free AnkiWeb EN–RU dumps and English Vocabulary in Use mirrors are often tourist phrases, undated frequency lists, or CEFR book mirrors without IELTS/TOEFL framing. This is a 2,482-card Prep2Go exam-frequency bank with Russian glosses, English audio, and cognate-trap notes — instant Gumroad .apkg at list price.",
       },
       {
         question: "Is this the same as the Portuguese- or Spanish-speaker English Anki pages?",
@@ -2571,7 +2583,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "2,504 English vocabulary cards from the Prep2Go app: Russian glosses, bilingual examples, native English audio, and illustrations where included.",
+          "2,482 English vocabulary cards from the Prep2Go app: Russian glosses, bilingual examples, native English audio, and illustrations where included.",
       },
       {
         question: "What file format is delivered?",
@@ -2584,13 +2596,13 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-spanish-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2504 Flashcards",
+    title: "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2482 Flashcards",
     shortName: "IELTS / TOEFL English for Spanish Speakers (LatAm)",
     subtitle:
-      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Latin American Spanish support on every card.",
+      "2,482 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Latin American Spanish support on every card.",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English for Spanish Speakers Anki deck with 2,504 high-frequency English vocabulary cards, Latin American Spanish glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Spanish-speaking (LatAm) candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
-    lastUpdated: "2026-09-21",
+      "UniPrep2Go sells an IELTS / TOEFL English for Spanish Speakers Anki deck with 2,482 high-frequency English vocabulary cards, Latin American Spanish glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Spanish-speaking (LatAm) candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-09-28",
     audience:
       "Latin American Spanish-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
     format: ".apkg",
@@ -2599,7 +2611,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2504",
+      cards: "2482",
       topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with Latin American Spanish bilingual support",
       formulas: "Audio + LatAm Spanish glosses + bilingual example sentences",
       examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
@@ -2631,7 +2643,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "2,504 English vocabulary cards from the Prep2Go app: LatAm Spanish glosses, bilingual examples, native English audio, and illustrations.",
+          "2,482 English vocabulary cards from the Prep2Go app: LatAm Spanish glosses, bilingual examples, native English audio, and illustrations.",
       },
       {
         question: "What file format is delivered?",
@@ -2644,13 +2656,13 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-portuguese-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for Brazilian Portuguese Speakers Anki — 2504 Cards",
+    title: "IELTS / TOEFL English for Brazilian Portuguese Speakers Anki — 2482 Cards",
     shortName: "IELTS / TOEFL English for Brazilian Portuguese Speakers (BR)",
     subtitle:
-      "2,504 English flashcards for Brazilians on IELTS, TOEFL, Cambridge, and PTE — PT-BR glosses, audio, and cognate traps (atual ≠ actual).",
+      "2,482 English flashcards for Brazilians on IELTS, TOEFL, Cambridge, and PTE — PT-BR glosses, audio, and cognate traps (atual ≠ actual).",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English Anki deck for Brazilian Portuguese (PT-BR) speakers: 2,504 high-frequency English vocabulary cards with PT-BR glosses, bilingual examples, native English audio, and illustrations. Built for Brazilians targeting IELTS Academic or General (Canada Express Entry / SDS, Australia, UKVI), TOEFL iBT (U.S. graduate), Cambridge, and PTE — English-first recall so false friends like atual/actual and pretender/pretend stop costing Reading points. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio. What this is not: CIPLE / CAPLE European Portuguese, Celpe-Bras, ENEM English drills, a timed mock exam, or a LatAm-Spanish-gloss sibling pack.",
-    lastUpdated: "2026-09-21",
+      "UniPrep2Go sells an IELTS / TOEFL English Anki deck for Brazilian Portuguese (PT-BR) speakers: 2,482 high-frequency English vocabulary cards with PT-BR glosses, bilingual examples, native English audio, and illustrations. Built for Brazilians targeting IELTS Academic or General (Canada Express Entry / SDS, Australia, UKVI), TOEFL iBT (U.S. graduate), Cambridge, and PTE — English-first recall so false friends like atual/actual and pretender/pretend stop costing Reading points. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio. What this is not: CIPLE / CAPLE European Portuguese, Celpe-Bras, ENEM English drills, a timed mock exam, or a LatAm-Spanish-gloss sibling pack.",
+    lastUpdated: "2026-09-28",
     audience:
       "Brazilian Portuguese speakers preparing IELTS, TOEFL, Cambridge, or PTE who want Anki vocabulary with PT-BR support — not CIPLE, not Celpe-Bras, not ENEM English.",
     format: ".apkg",
@@ -2659,7 +2671,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2504",
+      cards: "2482",
       topics:
         "IELTS / TOEFL / Cambridge / PTE English vocabulary for Brazilian Portuguese speakers (PT-BR glosses, false-friend awareness)",
       formulas: "Audio + Brazilian Portuguese (PT-BR) glosses + bilingual example sentences",
@@ -2687,7 +2699,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this the same as ENEM English or free AnkiWeb Inglês–Português decks?",
         answer:
-          "No. ENEM English reading is a Brazilian high-school exam skill set; free AnkiWeb PT–EN dumps are usually tourist phrases or undated frequency lists. This is a 2,504-card Prep2Go IELTS/TOEFL-framed bank with PT-BR glosses, English audio, and cognate-trap notes — instant Gumroad .apkg at list price.",
+          "No. ENEM English reading is a Brazilian high-school exam skill set; free AnkiWeb PT–EN dumps are usually tourist phrases or undated frequency lists. This is a 2,482-card Prep2Go IELTS/TOEFL-framed bank with PT-BR glosses, English audio, and cognate-trap notes — instant Gumroad .apkg at list price.",
       },
       {
         question: "Is this the same as the Spanish- or Russian-speaker English Anki pages?",
@@ -2697,7 +2709,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "2,504 English vocabulary cards from the Prep2Go app: Brazilian Portuguese glosses, bilingual examples, native English audio, and illustrations where included.",
+          "2,482 English vocabulary cards from the Prep2Go app: Brazilian Portuguese glosses, bilingual examples, native English audio, and illustrations where included.",
       },
       {
         question: "What file format is delivered?",
@@ -2710,13 +2722,13 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-turkish-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for Turkish Speakers Anki Deck — 952 Flashcards",
+    title: "IELTS / TOEFL English for Turkish Speakers Anki Deck — 924 Flashcards",
     shortName: "IELTS / TOEFL English for Turkish Speakers",
     subtitle:
-      "952 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Turkish support on every card.",
+      "924 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Turkish support on every card.",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English for Turkish Speakers Anki deck with 952 high-frequency English vocabulary cards, Turkish glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Turkish-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
-    lastUpdated: "2026-09-21",
+      "UniPrep2Go sells an IELTS / TOEFL English for Turkish Speakers Anki deck with 924 high-frequency English vocabulary cards, Turkish glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Turkish-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-09-28",
     audience:
       "Turkish-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
     format: ".apkg",
@@ -2725,7 +2737,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "952",
+      cards: "924",
       topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with Turkish bilingual support",
       formulas: "Audio + Turkish glosses + bilingual example sentences",
       examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
@@ -2747,7 +2759,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "952 English vocabulary cards from the Prep2Go app: Turkish glosses, bilingual examples, native English audio, and illustrations.",
+          "924 English vocabulary cards from the Prep2Go app: Turkish glosses, bilingual examples, native English audio, and illustrations.",
       },
       {
         question: "Is this the same as the French- or Arabic-speaker English Anki pages?",
@@ -3591,22 +3603,35 @@ const rawDecks: Deck[] = [
     subtitle: "A planned deck for NEBOSH International General Certificate (GIC1/GIC2) exam prep.",
     directAnswer:
       "The NEBOSH IGC Anki Deck is a planned UniPrep2Go product covering NEBOSH International General Certificate syllabus elements. It is not yet available for purchase. Take the free NEBOSH readiness check to benchmark weak domains.",
-    lastUpdated: "2026-06-02",
+    lastUpdated: "2026-09-29",
     audience:
       "Health and safety officers, supervisors, managers, and career changers preparing for the NEBOSH International General Certificate through an accredited Learning Partner.",
     format: ".apkg",
     facts: {
       cards: "Planned",
-      topics: "GIC1 Elements 1–11 and GIC2 risk assessment skills per NEBOSH IGC syllabus",
+      topics:
+        "GIC1 Elements 1–4 (open book exam) and GIC2 Elements 5–11 hazards + risk assessment (practical) per NEBOSH IGC syllabus",
       formulas: "Planned hierarchy of control, risk rating, and incident investigation facts",
       examYear: "NEBOSH IGC syllabus (January 2026 learner guide)",
       delivery: "Digital download (planned)",
     },
     topicCoverage: [
-      { name: "H&S Management Systems and Culture", examWeight: "GIC1 Elements 1–4", cards: "Planned" },
-      { name: "Physical, Psychological, and Musculoskeletal Health", examWeight: "GIC1 Elements 5–6", cards: "Planned" },
-      { name: "Chemical, Biological, and Workplace Hazards", examWeight: "GIC1 Elements 7–8", cards: "Planned" },
-      { name: "Work Equipment, Fire, and Electricity", examWeight: "GIC1 Elements 9–11", cards: "Planned" },
+      { name: "H&S Management Systems and Culture", examWeight: "GIC1 Elements 1–4 (open book exam)", cards: "Planned" },
+      {
+        name: "Physical, Psychological, and Musculoskeletal Health",
+        examWeight: "Elements 5–6 — assessed in GIC2 practical",
+        cards: "Planned",
+      },
+      {
+        name: "Chemical, Biological, and Workplace Hazards",
+        examWeight: "Elements 7–8 — assessed in GIC2 practical",
+        cards: "Planned",
+      },
+      {
+        name: "Work Equipment, Fire, and Electricity",
+        examWeight: "Elements 9–11 — assessed in GIC2 practical",
+        cards: "Planned",
+      },
       { name: "Risk Assessment (GIC2)", examWeight: "GIC2 practical unit", cards: "Planned" },
     ],
     sampleCards: [
@@ -3724,7 +3749,7 @@ const rawDecks: Deck[] = [
     shortName: "ASHRAE Certs",
     subtitle: "A planned deck for BCxP, BEMP, BEAP, CHD, HBDP, HFDP, and OPMP exam prep.",
     directAnswer:
-      "The ASHRAE Certifications Anki Deck is a planned UniPrep2Go product covering ASHRAE's ANSI-accredited credential exams. It is not yet available for purchase. Take the free ASHRAE certifications readiness check to benchmark weak domains.",
+      "The ASHRAE Certifications Anki Deck is a planned UniPrep2Go shared-core product across seven separate ASHRAE certifications (BCxP, BEAP, BEMP, CHD, HBDP, HFDP, OPMP) — each has its own exam, blueprint, and candidate guidebook. It is not yet available for purchase. Take the free ASHRAE certifications readiness check to benchmark weak domains.",
     lastUpdated: "2026-06-02",
     audience:
       "HVAC engineers, energy modelers, commissioning agents, and facility professionals pursuing ASHRAE BCxP, BEMP, BEAP, CHD, HBDP, HFDP, or OPMP credentials.",
@@ -4245,8 +4270,8 @@ const rawDecks: Deck[] = [
     shortName: "ServSafe Manager",
     subtitle: "A focused Anki deck for ServSafe Manager food safety review.",
     directAnswer:
-      "UniPrep2Go sells an independent ServSafe Manager Anki deck with 300 high-yield food safety flashcards covering foodborne illness, time and temperature control, cross-contamination, personal hygiene, cleaning and sanitizing, receiving and storage, HACCP basics, and manager responsibilities. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. Pair it with the free 90-question / 120-minute ServSafe Manager mock (official form: 80 scored + 10 pilot / 2 hours; Examinee Handbook cites 75% pass). The deck is a supplementary active-recall study aid and is not official ServSafe or National Restaurant Association material.",
-    lastUpdated: "2026-09-03",
+      "UniPrep2Go sells an independent ServSafe Manager Anki deck with 300 high-yield food safety flashcards covering foodborne illness, time and temperature control, cross-contamination, personal hygiene, cleaning and sanitizing, receiving and storage, HACCP basics, and manager responsibilities. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. Pair it with the free 90-question / 120-minute ServSafe Manager mock (official form: 80 scored + 10 pilot / 2 hours; official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target on the mock). The deck is a supplementary active-recall study aid and is not official ServSafe or National Restaurant Association material.",
+    lastUpdated: "2026-09-29",
     audience:
       "Restaurant managers, food handlers moving into supervisor roles, hospitality students, and ServSafe Manager candidates who want spaced-repetition review instead of rereading notes.",
     format: ".apkg",
@@ -4312,7 +4337,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free ServSafe Manager practice test?",
         answer:
-          "Yes. UniPrep2Go hosts a free 90-question / 120-minute ServSafe Manager mock with topic scoring at /mock-exams/servsafe-manager-mock. Official exam is 90 questions (80 scored + 10 pilot) in 2 hours; the Examinee Handbook cites 75% pass — verify at servsafe.com.",
+          "Yes. UniPrep2Go hosts a free 90-question / 120-minute ServSafe Manager mock with topic scoring at /mock-exams/servsafe-manager-mock. Official exam is 90 questions (80 scored + 10 pilot) in 2 hours; current ServSafe FAQ pass is 70% (56/80 scored). The mock uses 75% as a readiness target; the older 2020 Examinee Handbook PDF still prints 75% — verify at servsafe.com.",
       },
       {
         question: "Does this replace the official course or exam practice?",

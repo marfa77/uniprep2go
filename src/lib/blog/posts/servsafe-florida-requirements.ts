@@ -85,7 +85,7 @@ export const servsafeFloridaRequirementsPost: BlogPostDraft = {
               bullets: [
                 "You already know temperatures, pathogens, and HACCP from kitchen work",
                 "Your employer only asks for the certificate number",
-                "You can pass a timed mock at 75%+ before paying for the real sitting",
+                "You can pass a timed mock at 75%+ readiness target (official pass is 70%) before paying for the real sitting",
               ],
             },
             {
@@ -138,7 +138,7 @@ export const servsafeFloridaRequirementsPost: BlogPostDraft = {
             },
             {
               title: "Day 5: Timed mock",
-              body: "Run a full ServSafe-style mock under exam timing. Anything under 75% means another day on weak topics — not more passive reading.",
+              body: "Run a full ServSafe-style mock under exam timing. Anything under the 75% readiness target (official pass is 70%) means another day on weak topics — not more passive reading.",
             },
             {
               title: "Day 6–7: Weak-topic repair, then book",

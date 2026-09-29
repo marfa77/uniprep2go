@@ -111,7 +111,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Modeled on the FINRA SIE outline: 75 scored questions, 105 minutes, pass score 70%.",
+      "Modeled on the FINRA SIE outline: 75 scored questions, 105 minutes; official passing score 70 (equated). This mock uses a 70% readiness target.",
     disclaimer: financeDisclaimer,
     description:
       "A timed 75-question SIE mock with topic-weighted scoring, full question review, and a pass/no-pass readiness verdict aligned to the official outline.",
@@ -426,7 +426,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A 60-question California real estate licensing readiness diagnostic built from UniPrep2Go deck content.",
     examBody: "California DRE",
-    lastUpdated: "2026-06-01",
+    lastUpdated: "2026-09-29",
   },
   {
     slug: "life-and-health-insurance-readiness-check",
@@ -552,12 +552,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Modeled on the ServSafe Manager exam: 90 questions (80 scored + 10 unscored pilot), 120 minutes. Prep pass target 75% per Examinee Handbook — verify current rules at servsafe.com.",
+      "Modeled on the ServSafe Manager exam: 90 questions (80 scored + 10 unscored pilot), 120 minutes. Official pass 70% (56/80 scored) per current ServSafe FAQ; our mock uses 75% as a UniPrep2Go readiness target (margin above the official standard). Older 2020 Examinee Handbook PDF still prints 75%.",
     disclaimer: servSafeDisclaimer,
     description:
       "A timed 90-question ServSafe Manager mock with topic-weighted scoring, full question review, and a pass/no-pass readiness verdict aligned to the official exam format.",
     examBody: "ServSafe / National Restaurant Association",
-    lastUpdated: "2026-09-03",
+    lastUpdated: "2026-09-29",
   },
   {
     slug: "ptcb-pharmacy-technician-mock",
@@ -1459,7 +1459,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Independent MCQ knowledge diagnostic on NEBOSH IGC syllabus themes (GIC1 Elements 1–11 + GIC2 risk assessment). Official IGC (learner guide Jan 2026): GIC1 open-book scenario exam — 5 hours assessment time, 100 marks, 45% provisional pass; GIC2 practical — 4 hours, pass/refer. This UniPrep2Go mock is 50 MCQ / 100 minutes / 70% readiness — not the official assessment format. Not NEBOSH material.",
+      "Independent MCQ knowledge diagnostic on NEBOSH IGC syllabus themes (GIC1 Elements 1–4 open book exam + GIC2 Elements 5–11 hazards and risk assessment practical). Official IGC (syllabus guide v2.2): GIC1 open-book scenario exam — 5 hours assessment time within a 24-hour window, 100 marks, 45% provisional pass; GIC2 practical — 4 hours, pass/refer. This UniPrep2Go mock is 50 MCQ / 100 minutes / 70% readiness — not the official assessment format. Not NEBOSH material.",
     disclaimer: neboshDisclaimer,
     description:
       "A 50-question NEBOSH IGC readiness diagnostic across management systems, workplace hazards, and risk assessment skills. Independent prep, not NEBOSH material.",

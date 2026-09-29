@@ -252,29 +252,29 @@ describe("deck catalog", () => {
     expect(getDeckBySlug("german-a2-for-russian-speakers-anki-deck")?.facts.cards).toBe("1926");
     const enFr = getDeckBySlug("ielts-toefl-english-for-french-speakers-anki-deck");
     expect(enFr?.title).toContain("IELTS / TOEFL English for French Speakers");
-    expect(enFr?.facts.cards).toBe("2522");
+    expect(enFr?.facts.cards).toBe("2482");
     expect(enFr?.directAnswer).toContain("French");
     expect(enFr?.directAnswer).toContain("IELTS");
     const enAr = getDeckBySlug("ielts-toefl-english-for-arabic-speakers-anki-deck");
     expect(enAr?.title).toContain("IELTS / TOEFL English for Arabic Speakers");
-    expect(enAr?.facts.cards).toBe("2504");
+    expect(enAr?.facts.cards).toBe("2482");
     expect(enAr?.directAnswer).toContain("Arabic");
     const enUk = getDeckBySlug("ielts-toefl-english-for-ukrainian-speakers-anki-deck");
     expect(enUk?.title).toContain("IELTS / TOEFL English for Ukrainian Speakers");
-    expect(enUk?.facts.cards).toBe("2504");
+    expect(enUk?.facts.cards).toBe("2482");
     expect(enUk?.directAnswer).toContain("Ukrainian");
     const enRu = getDeckBySlug("ielts-toefl-english-for-russian-speakers-anki-deck");
     expect(enRu?.title).toContain("IELTS / TOEFL English for Russian Speakers");
-    expect(enRu?.facts.cards).toBe("2504");
+    expect(enRu?.facts.cards).toBe("2482");
     expect(enRu?.directAnswer).toContain("Russian");
     const enEs = getDeckBySlug("ielts-toefl-english-for-spanish-speakers-anki-deck");
     expect(enEs?.title).toContain("IELTS / TOEFL English for Spanish Speakers");
-    expect(enEs?.facts.cards).toBe("2504");
+    expect(enEs?.facts.cards).toBe("2482");
     expect(enEs?.directAnswer).toContain("Latin American Spanish");
     expect(enEs?.shortName).toContain("LatAm");
     const enPt = getDeckBySlug("ielts-toefl-english-for-portuguese-speakers-anki-deck");
     expect(enPt?.title).toContain("IELTS / TOEFL English for Brazilian Portuguese Speakers");
-    expect(enPt?.facts.cards).toBe("2504");
+    expect(enPt?.facts.cards).toBe("2482");
     expect(enPt?.directAnswer).toContain("Brazilian Portuguese");
     expect(enPt?.shortName).toContain("BR");
     const deleDeck = getDeckBySlug("dele-a2-spanish-anki-deck");
@@ -327,7 +327,7 @@ describe("deck catalog", () => {
 
     const enTr = getDeckBySlug("ielts-toefl-english-for-turkish-speakers-anki-deck");
     expect(enTr?.status).toBe("available");
-    expect(enTr?.facts.cards).toBe("952");
+    expect(enTr?.facts.cards).toBe("924");
     expect(enTr?.directAnswer).toContain("Turkish");
     expect(enTr?.checkoutUrl).toContain("ielts-toefl-english-for-turkish-speakers-anki-deck");
   });
@@ -792,19 +792,19 @@ describe("deck catalog", () => {
       "german-a2-for-russian-speakers-anki-deck":
         "German A2 for Russian Speakers Anki Deck — 1926 Flashcards",
       "ielts-toefl-english-for-french-speakers-anki-deck":
-        "IELTS / TOEFL English for French Speakers Anki Deck — 2522 Flashcards",
+        "IELTS / TOEFL English for French Speakers Anki Deck — 2482 Flashcards",
       "ielts-toefl-english-for-arabic-speakers-anki-deck":
-        "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2504 Flashcards",
+        "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2482 Flashcards",
       "ielts-toefl-english-for-ukrainian-speakers-anki-deck":
-        "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2504 Flashcards",
+        "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2482 Flashcards",
       "ielts-toefl-english-for-russian-speakers-anki-deck":
-        "IELTS / TOEFL English for Russian Speakers Anki Deck — 2504 Flashcards",
+        "IELTS / TOEFL English for Russian Speakers Anki Deck — 2482 Flashcards",
       "ielts-toefl-english-for-spanish-speakers-anki-deck":
-        "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2504 Flashcards",
+        "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2482 Flashcards",
       "ielts-toefl-english-for-portuguese-speakers-anki-deck":
-        "IELTS / TOEFL English for Brazilian Portuguese Speakers Anki — 2504 Cards",
+        "IELTS / TOEFL English for Brazilian Portuguese Speakers Anki — 2482 Cards",
       "ielts-toefl-english-for-turkish-speakers-anki-deck":
-        "IELTS / TOEFL English for Turkish Speakers Anki Deck — 952 Flashcards",
+        "IELTS / TOEFL English for Turkish Speakers Anki Deck — 924 Flashcards",
       "belgium-flanders-mo-anki-deck": "Belgium Flanders MO Anki Deck — 165 Flashcards",
       "hvac-epa-608-anki-deck": "EPA 608 HVAC Anki Deck — 200+ Flashcards",
       "ib-biology-sl-anki-deck": "IB Biology SL Anki Deck — 149 Smart Flashcards",

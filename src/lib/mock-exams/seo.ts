@@ -117,7 +117,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free SIE Practice Test — 75 Questions, Timed",
     intro:
-      "A full-length FINRA SIE mock exam modeled on the official outline: 75 scored questions, 105 minutes, and a 70% pass threshold with weighted topic diagnosis across capital markets, products and risks, trading and accounts, and regulatory framework. No signup — start when you are ready. If 105 minutes is too long for a first pass, use the 25-question SIE quick diagnostic first. After the report, drill weak topics in the linked $11 / 300-card Anki deck.",
+      "A full-length FINRA SIE mock exam modeled on the official outline: 75 scored questions, 105 minutes, and a 70% readiness target on this mock (official FINRA passing score is 70 equated, not a raw percentage), with weighted topic diagnosis across capital markets, products and risks, trading and accounts, and regulatory framework. No signup — start when you are ready. If 105 minutes is too long for a first pass, use the 25-question SIE quick diagnostic first. After the report, drill weak topics in the linked $11 / 300-card Anki deck.",
     audience:
       "SIE candidates, finance students, and career changers entering brokerage and securities roles who need a timed baseline before paying for a prep course.",
     practiceTestLabel: "FINRA SIE practice test",
@@ -125,7 +125,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "servsafe-manager-mock": {
     title: "Free ServSafe Manager Practice Test 2026 | 90-Question Mock Exam",
     description:
-      "Free ServSafe Manager practice test — no signup: 90 timed questions, 120 minutes, 75% pass target, food-safety topic scoring — then repair with the linked $19 / 300-card Anki deck. Official form is 90Q (80 scored + 10 pilot) / 2 hours; Examinee Handbook cites 75% pass. Independent — not NRA/ServSafe material.",
+      "Free ServSafe Manager practice test — no signup: 90 timed questions, 120 minutes, official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target, food-safety topic scoring — then repair with the linked $19 / 300-card Anki deck. Official form is 90Q (80 scored + 10 pilot) / 2 hours. Independent — not NRA/ServSafe material.",
     keywords: [
       "servsafe manager practice test",
       "servsafe manager mock exam",
@@ -136,7 +136,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free ServSafe Manager Practice Test",
     intro:
-      "A full-length ServSafe Manager / CFPM-style mock: 90 questions, 120 minutes, 75% pass target with topic scoring — then drill weak domains in the linked $19 / 300-card Anki deck (PDF study guide sold separately). Official exam is 90 multiple-choice (80 scored + 10 unscored pilot) in 2 hours; the ServSafe Examinee Handbook states a 75% passing score — verify current rules at servsafe.com. Topics: foodborne illness, time/temperature, hygiene, cleaning/sanitizing, receiving/storage, HACCP, and manager duties.",
+      "A full-length ServSafe Manager / CFPM-style mock: 90 questions, 120 minutes, official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target with topic scoring — then drill weak domains in the linked $19 / 300-card Anki deck (PDF study guide sold separately). Official exam is 90 multiple-choice (80 scored + 10 unscored pilot) in 2 hours. Topics: foodborne illness, time/temperature, hygiene, cleaning/sanitizing, receiving/storage, HACCP, and manager duties.",
     audience:
       "Restaurant managers, kitchen supervisors, hospitality students, and CFPM candidates who need a timed food safety baseline before exam day.",
     practiceTestLabel: "ServSafe Manager practice test",
@@ -199,7 +199,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "series-7-readiness-check": {
     title: "Series 7 Practice Test 2026 | Free 60Q Timed Online",
     description:
-      "Free Series 7 practice test — no signup: 60 timed questions across FINRA job-function weights, 90 minutes, 72% target, topic scoring — then repair with the linked $29 / 300-card Anki deck. Official Top-Off is 125Q / 3h45 / ~72%; this check is shorter. Independent — not FINRA material.",
+      "Free Series 7 practice test — no signup: 60 timed questions across FINRA job-function weights, 90 minutes, 72% target, topic scoring — then repair with the linked $29 / 300-card Anki deck. Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated); this check is shorter. Independent — not FINRA material.",
     keywords: [
       "series 7 practice test",
       "free series 7 practice test",
@@ -210,14 +210,14 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free Series 7 Practice Test — 60 Questions",
     intro:
-      "A timed Series 7 Top-Off diagnostic across seeking business, opening accounts, recommendations and suitability, and obtaining customer instructions — then drill weak job functions in the linked $29 / 300-card Anki deck. Official FINRA Series 7 is 125 scored questions / 3 hours 45 minutes / ~72% pass; this free check is a shorter weighted diagnostic, not a full-length 125Q bank.",
+      "A timed Series 7 Top-Off diagnostic across seeking business, opening accounts, recommendations and suitability, and obtaining customer instructions — then drill weak job functions in the linked $29 / 300-card Anki deck. Official FINRA Series 7 is 125 scored + 5 pretest / 3 hours 45 minutes / passing score 72 (equated); this free check is a shorter weighted diagnostic, not a full-length 125Q bank.",
     audience: "Series 7 Top-Off candidates who want a timed diagnostic before drilling suitability and product questions.",
     practiceTestLabel: "Series 7 practice test",
   },
   "california-real-estate-readiness-check": {
-    title: "Free California Real Estate Practice Test | 60-Question Mock",
+    title: "Free California Real Estate Salesperson Practice Test | 60Q Mock",
     description:
-      "Free California real estate practice: 60 timed questions / 90 minutes / 70% diagnostic, then repair with the 400-card CA DRE Anki deck. Official salesperson exam is 150Q / 3h15 / 70% both portions. Independent — not DRE material.",
+      "Free California real estate practice: 60 timed questions / 90 minutes / 70% diagnostic, then repair with the 400-card CA DRE Anki deck. Official DRE salesperson exam is 150Q / 3 hours / 70%. Independent — not DRE material.",
     keywords: [
       "california real estate practice test",
       "ca real estate exam questions",
@@ -225,9 +225,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "california real estate anki",
       "free real estate mock exam california",
     ],
-    headline: "Free California Real Estate Readiness Check",
+    headline: "Free California Real Estate Salesperson Readiness Check",
     intro:
-      "A California real estate licensing readiness check covering practice and disclosures, agency, ownership, valuation, contracts, financing, and transfer of property — then drill weak DRE domains in the linked 400-card Anki deck. Official salesperson sitting is 150 questions (75 national + 75 state) / 3 hours 15 minutes / 70% on both portions; this mock is a shorter diagnostic.",
+      "A California real estate licensing readiness check covering practice and disclosures, agency, ownership, valuation, contracts, financing, and transfer of property — then drill weak DRE domains in the linked 400-card Anki deck. Official DRE salesperson sitting is 150 questions / 3 hours / 70%; this mock is a shorter diagnostic.",
     audience: "California DRE salesperson exam candidates who want a timed baseline before licensing prep.",
     practiceTestLabel: "California real estate practice test",
   },
@@ -778,7 +778,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "nebosh-readiness-check": {
     title: "Free NEBOSH Practice Test | 50-Question IGC Diagnostic",
     description:
-      "Free NEBOSH IGC practice: 50 timed MCQs / 100 minutes / 70% diagnostic — then repair with the $11 / 250-card Anki deck. Official GIC1 is open-book (5h / 45%), GIC2 is a 4h practical — this mock is knowledge-only. Independent — not NEBOSH material.",
+      "Free NEBOSH IGC practice: 50 timed MCQs / 100 minutes / 70% diagnostic — then repair with the $11 / 250-card Anki deck. Official GIC1 is open-book (5h within a 24-hour window / 45% provisional pass), GIC2 is a 4h practical — this mock is knowledge-only. Independent — not NEBOSH material.",
     keywords: [
       "nebosh practice test",
       "nebosh igc exam",
@@ -791,7 +791,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free NEBOSH IGC Practice Test (Knowledge Diagnostic)",
     intro:
-      "A timed MCQ readiness diagnostic across NEBOSH IGC syllabus elements — management systems, workplace hazards, and GIC2-style risk assessment skills. Official assessments are GIC1 scenario open-book (5 hours, 45% provisional pass) and GIC2 practical (4 hours) — use this free 50-question mock to find weak domains, then drill the linked $11 / 250-card Anki deck.",
+      "A timed MCQ readiness diagnostic across NEBOSH IGC syllabus elements — GIC1 Elements 1–4 (management/monitoring) and GIC2 Elements 5–11 hazards plus risk-assessment skills. Official assessments are GIC1 scenario open-book (5 hours within a 24-hour window, 45% provisional pass) and GIC2 practical (4 hours) — use this free 50-question mock to find weak domains, then drill the linked $11 / 250-card Anki deck.",
     audience:
       "Health and safety officers, supervisors, managers, and career changers preparing for the NEBOSH International General Certificate (IGC) through an accredited Learning Partner.",
     practiceTestLabel: "NEBOSH practice test",

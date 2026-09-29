@@ -53,7 +53,7 @@ export const californiaRealEstateDreCentersPost: BlogPostDraft = {
           headers: ["Detail", "Salesperson", "Broker"],
           rows: [
             ["Questions", "150 multiple-choice", "200 multiple-choice"],
-            ["Time limit", "3 hours (180 minutes)", "5 hours"],
+            ["Time limit", "3 hours (180 minutes)", "4 hours"],
             ["Passing score", "70% (105 correct)", "75% (150 correct)"],
             ["Results", "Immediate on screen", "Immediate on screen"],
             ["Exam fee", "$100", "$150"],

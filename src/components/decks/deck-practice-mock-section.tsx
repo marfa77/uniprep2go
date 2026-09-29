@@ -24,7 +24,7 @@ export function DeckPracticeMockSection({
       <h2 className="mt-2 text-xl font-semibold tracking-tight">{buildMockSeoTitle(mock)}</h2>
       <p className="mt-2 text-sm leading-7 text-[#4f493e]">
         {companionMock
-          ? `Same ${deck.shortName} exam — run the linked ${mock.questionCount}-question timed check for topic scoring and a pass/no-pass report before you buy the ${deck.format === "PDF" ? "PDF" : "deck"}.`
+          ? `Free ${deck.shortName} knowledge diagnostic — ${mock.questionCount} timed questions with topic scoring and a readiness report before you buy the ${deck.format === "PDF" ? "PDF" : "deck"}. It checks what you know; it is not a copy of the official exam format.`
           : `Run the linked ${mock.questionCount}-question timed practice test for topic scoring, answer review, and a pass/no-pass remediation plan before deciding what to drill next.`}
       </p>
       <Link

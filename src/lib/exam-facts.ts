@@ -135,10 +135,12 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     exam_facts: {
       exam_name: "Securities Industry Essentials (SIE)",
       administered_by: "FINRA",
-      question_count: "75 multiple-choice",
+      question_count:
+        "75 scored multiple-choice + 5 unscored pretest items = 80 total (pretest reduced from 10 to 5 on Oct 27, 2025)",
       scored_count: "75",
-      time_limit: "105 minutes",
-      passing_score: "70% (pass/fail; no scaled score published)",
+      time_limit: "1 hour 45 minutes (105 minutes)",
+      passing_score:
+        "70 on FINRA's equated scale (not a raw 70% of questions); pass/fail result at the test center",
       delivery: "Computer-based at Prometric test centers",
       verify_at_url: "https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam-sie",
     },
@@ -148,15 +150,18 @@ const examProfiles: Record<string, ExamFactsProfile> = {
         url: "https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam-sie",
       },
       {
-        label: "FINRA SIE content outline (PDF)",
-        url: "https://www.finra.org/sites/default/files/2022-06/SIE_Exam_Content_Outline.pdf",
+        label: "SIE content outline (topic allocation)",
+        url: "https://www.finra.org/sites/default/files/SIE_Content_Outline.pdf",
       },
     ],
     domain_weights: [
-      { domain: "Knowledge of Capital Markets", weight: "16%" },
-      { domain: "Understanding Products and Their Risks", weight: "44%" },
-      { domain: "Understanding Trading, Customer Accounts, and Prohibited Activities", weight: "31%" },
-      { domain: "Overview of the Regulatory Framework", weight: "9%" },
+      { domain: "Knowledge of Capital Markets", weight: "16% (12 of 75 scored items)" },
+      { domain: "Understanding Products and Their Risks", weight: "44% (33 of 75 scored items)" },
+      {
+        domain: "Understanding Trading, Customer Accounts, and Prohibited Activities",
+        weight: "31% (23 of 75 scored items)",
+      },
+      { domain: "Overview of the Regulatory Framework", weight: "9% (7 of 75 scored items)" },
     ],
     high_yield_facts: [
       "The SEC regulates securities markets and issuers; FINRA is the SRO overseeing broker-dealers and registered representatives.",
@@ -170,11 +175,11 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "What score do you need to pass the SIE exam?",
-        a: "FINRA reports SIE results as pass/fail. Candidates typically prepare for a 70% threshold on practice exams; verify current rules at finra.org.",
+        a: "FINRA sets a passing score of 70 on its equated scale — not a raw percentage of questions missed. Results are reported pass/fail at the test center; verify current rules at finra.org.",
       },
       {
         q: "How many questions are on the SIE and how long is the exam?",
-        a: "75 multiple-choice questions in 105 minutes.",
+        a: "75 scored multiple-choice questions plus 5 unscored pretest items (80 total since Oct 27, 2025) in 1 hour 45 minutes (105 minutes).",
       },
       {
         q: "What topics does the SIE cover?",
@@ -194,28 +199,41 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     exam_facts: {
       exam_name: "Series 7 Top-Off (General Securities Representative)",
       administered_by: "FINRA",
-      question_count: "125 multiple-choice",
+      question_count:
+        "125 scored multiple-choice + 5 unscored pretest items = 130 total (since Oct 27, 2025)",
       scored_count: "125",
       time_limit: "3 hours 45 minutes",
-      passing_score: "Pass/fail; candidates typically prepare for ~72% on practice exams",
+      passing_score: "72 on FINRA's equated scale (not a raw percentage); SIE is a corequisite",
       delivery: "Computer-based at Prometric test centers",
-      verify_at_url: "https://www.finra.org/registration-exams-ce/qualification-exams/series7-exam",
+      verify_at_url: "https://www.finra.org/registration-exams-ce/qualification-exams/series7",
     },
     official_sources: [
       {
         label: "FINRA Series 7 exam overview",
-        url: "https://www.finra.org/registration-exams-ce/qualification-exams/series7-exam",
+        url: "https://www.finra.org/registration-exams-ce/qualification-exams/series7",
       },
       {
-        label: "FINRA Series 7 content outline (PDF)",
-        url: "https://www.finra.org/sites/default/files/2022-06/Series_7_Exam_Content_Outline.pdf",
+        label: "FINRA Series 7 content outline (Oct 2025, PDF)",
+        url: "https://www.finra.org/sites/default/files/2025-10/Series_7_Content_Outline.pdf",
       },
     ],
     domain_weights: [
-      { domain: "Seeks Business for the Broker-Dealer from Customers and Potential Customers", weight: "7%" },
-      { domain: "Opens Accounts After Obtaining and Evaluating Customer Financial Profile and Investment Objectives", weight: "9%" },
-      { domain: "Provides Customers with Information About Investments, Makes Recommendations, Transfers Assets, and Maintains Appropriate Records", weight: "73%" },
-      { domain: "Obtains and Verifies Customer's Purchase and Sales Instructions and Agreements; Processes, Completes, and Confirm Transactions", weight: "11%" },
+      {
+        domain: "Seeks Business for the Broker-Dealer from Customers and Potential Customers",
+        weight: "7% (9 items)",
+      },
+      {
+        domain: "Opens Accounts After Obtaining and Evaluating Customer Financial Profile and Investment Objectives",
+        weight: "9% (11 items)",
+      },
+      {
+        domain: "Provides Customers with Information About Investments, Makes Recommendations, Transfers Assets, and Maintains Appropriate Records",
+        weight: "73% (91 items)",
+      },
+      {
+        domain: "Obtains and Verifies Customer's Purchase and Sales Instructions and Agreements; Processes, Completes, and Confirm Transactions",
+        weight: "11% (14 items)",
+      },
     ],
     high_yield_facts: [
       "Suitability requires that recommendations match a customer's investment profile, objectives, and risk tolerance.",
@@ -228,7 +246,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the Series 7 Top-Off?",
-        a: "125 multiple-choice questions in 3 hours 45 minutes.",
+        a: "125 scored multiple-choice questions plus 5 unscored pretest items (130 total since Oct 27, 2025) in 3 hours 45 minutes.",
       },
       {
         q: "What is the largest Series 7 job-function area?",
@@ -300,7 +318,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "life-health-insurance",
     pageHeading: "Life & Health Insurance License Exam — Facts & Prep",
     intro:
-      "U.S. Life and Health insurance producer licensing exams are state-administered (often via PSI or Pearson VUE). Outlines vary by state; this page summarizes common topic areas and independent UniPrep2Go study products (not official state exam material).",
+      "U.S. Life and Health insurance producer licensing exams are state-administered (often via PSI or Pearson VUE). Outlines vary by state; this page summarizes common topic areas and independent UniPrep2Go study products (not official state exam material). There is no single national Life & Health exam — each state sets its own outline, question count, and passing score; state insurance law is tested separately.",
     exam_facts: {
       exam_name: "Life and Health Insurance Producer Licensing Exam",
       administered_by: "State insurance department (exam vendor varies by state)",
@@ -318,13 +336,13 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
     ],
     domain_weights: [
-      { domain: "Health Insurance", weight: "~21%" },
-      { domain: "Life Insurance Basics", weight: "~18%" },
-      { domain: "Policy Provisions, Options, and Riders", weight: "~18%" },
-      { domain: "General Insurance Concepts", weight: "~12%" },
-      { domain: "Annuities", weight: "~11%" },
-      { domain: "Taxation and Regulation", weight: "~11%" },
-      { domain: "Disability and Long-Term Care", weight: "~9%" },
+      { domain: "Health Insurance", weight: "Common national-core area — weight varies by state outline" },
+      { domain: "Life Insurance Basics", weight: "Common national-core area — weight varies by state outline" },
+      { domain: "Policy Provisions, Options, and Riders", weight: "Common national-core area — weight varies by state outline" },
+      { domain: "General Insurance Concepts", weight: "Common national-core area — weight varies by state outline" },
+      { domain: "Annuities", weight: "Common national-core area — weight varies by state outline" },
+      { domain: "Taxation and Regulation", weight: "Common national-core area — weight varies by state outline" },
+      { domain: "Disability and Long-Term Care", weight: "Common national-core area — weight varies by state outline" },
     ],
     high_yield_facts: [
       "An insurable interest must exist at the time of application for life insurance on another person.",
@@ -400,15 +418,25 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     exam_facts: {
       exam_name: "California Real Estate Salesperson Examination",
       administered_by: "California Department of Real Estate (DRE)",
-      question_count: "150 multiple-choice (75 national + 75 state-specific)",
+      question_count:
+        "150 multiple-choice (four answer choices each), one California state exam — no separate national portion",
       scored_count: "150",
-      time_limit: "3 hours 15 minutes",
-      passing_score: "70% on both the national and California portions",
+      time_limit: "3 hours",
+      passing_score:
+        "70% of the questions (105 of 150); DRE does not report the score to passing candidates",
       delivery: "Computer-based at authorized testing centers",
       verify_at_url: "https://www.dre.ca.gov",
     },
     official_sources: [
       { label: "California DRE", url: "https://www.dre.ca.gov" },
+      {
+        label: "DRE — Taking the Exam",
+        url: "https://www.dre.ca.gov/Examinees/TakingExam.html",
+      },
+      {
+        label: "DRE RE 425 salesperson exam content",
+        url: "https://dre.ca.gov/files/pdf/forms/re425.pdf",
+      },
       {
         label: "DRE salesperson exam reference book",
         url: "https://www.dre.ca.gov/files/pdf/ReferenceBook.pdf",
@@ -433,11 +461,11 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the California real estate salesperson exam?",
-        a: "150 multiple-choice questions (75 national and 75 California-specific) in 3 hours 15 minutes.",
+        a: "150 multiple-choice questions in 3 hours, drawn from seven DRE content areas (form RE 425). California runs a single state exam — there is no separate national portion.",
       },
       {
         q: "What score is needed to pass the California real estate exam?",
-        a: "70% on both the national and California portions.",
+        a: "70% of the questions (105 of 150 correct). Passing candidates only see PASS; failing candidates get per-area percentages.",
       },
     ],
   },
@@ -855,7 +883,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       scored_count: "80",
       time_limit: "2 hours",
       passing_score:
-        "Examinee Handbook: 75% or better — verify current requirements at servsafe.com (some FAQ pages historically cite 70% / 56 of 80 scored)",
+        "70% (56 of 80 scored questions) per current ServSafe Manager FAQ; older 2020 Examinee Handbook PDF still prints 75%",
       delivery: "Computer-based at approved test providers or online proctoring (where available)",
       verify_at_url: "https://www.servsafe.com/ServSafe-Manager/Get-Certified",
     },
@@ -864,6 +892,10 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       {
         label: "ServSafe Manager Get Certified",
         url: "https://www.servsafe.com/ServSafe-Manager/Get-Certified",
+      },
+      {
+        label: "ServSafe Manager FAQs (passing score)",
+        url: "https://www.servsafe.com/ServSafe-Manager/FAQs",
       },
       {
         label: "ServSafe Examinee Handbook (PDF)",
@@ -896,7 +928,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "What score do you need to pass ServSafe Manager?",
-        a: "The ServSafe Examinee Handbook states 75% or better. Some ServSafe FAQ pages historically cite 70% (56 of 80 scored) — verify the current standard at servsafe.com before scheduling.",
+        a: "The current ServSafe FAQ sets the pass mark at 70% (56 of 80 scored questions). The older 2020 Examinee Handbook PDF still prints 75% — verify at servsafe.com before scheduling.",
       },
       {
         q: "What is the food temperature danger zone?",
@@ -908,26 +940,27 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "cfa-level-1",
     pageHeading: "CFA Level 1 Exam — Facts, Topic Weights & Prep",
     intro:
-      "The CFA Level 1 exam is administered by CFA Institute for investment professionals. This page summarizes structure, 2025 topic weights, and independent UniPrep2Go study products (not official CFA Institute material).",
+      "The CFA Level 1 exam is administered by CFA Institute for investment professionals. This page summarizes structure, 2026 topic weights, and independent UniPrep2Go study products (not official CFA Institute material).",
     exam_facts: {
       exam_name: "CFA Level 1",
       administered_by: "CFA Institute",
       question_count: "180 multiple-choice (two 90-question sessions)",
       scored_count: "180",
-      time_limit: "4 hours 30 minutes total (two sessions with optional break)",
+      time_limit:
+        "4 hours 30 minutes total — two 135-minute sessions of 90 questions each, optional break",
       passing_score: "No fixed passing score published; CFA Institute sets the MPS each cycle",
       delivery: "Computer-based at Prometric test centers",
-      outline_effective_date: "2025 exam cycle topic weights",
-      verify_at_url: "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exams",
+      outline_effective_date: "2026 Level I topic outline (CFA Institute)",
+      verify_at_url: "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam",
     },
     official_sources: [
       {
         label: "CFA Level I exam overview",
-        url: "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exams",
+        url: "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam",
       },
       {
         label: "CFA Program curriculum and topic weights",
-        url: "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exams",
+        url: "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam",
       },
     ],
     domain_weights: [
@@ -974,18 +1007,19 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     exam_facts: {
       exam_name: "Financial Risk Manager (FRM) Part 1",
       administered_by: "Global Association of Risk Professionals (GARP)",
-      question_count: "100 multiple-choice",
+      question_count: "100 equally weighted multiple-choice questions",
       scored_count: "100",
       time_limit: "4 hours",
       passing_score: "No fixed passing score published; GARP sets the cutoff each cycle",
       delivery: "Computer-based at Pearson VUE test centers",
-      verify_at_url: "https://www.garp.org/frm",
+      outline_effective_date: "2026 FRM Learning Objectives (GARP)",
+      verify_at_url: "https://www.garp.org/frm/program-exams",
     },
     official_sources: [
-      { label: "GARP FRM Program", url: "https://www.garp.org/frm" },
+      { label: "GARP — FRM exam information", url: "https://www.garp.org/frm/program-exams" },
       {
-        label: "FRM Part 1 learning objectives",
-        url: "https://www.garp.org/frm/part-1",
+        label: "GARP — 2026 FRM Learning Objectives",
+        url: "https://www.garp.org/landing/frm-learning-objectives",
       },
     ],
     domain_weights: [
@@ -1000,11 +1034,12 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       "Credit risk is the risk of loss from a counterparty's failure to meet contractual obligations.",
       "Basel frameworks set capital requirements for banking institutions.",
       "Expected shortfall (CVaR) averages losses beyond the VaR threshold.",
+      "Passing Part I alone is not certification — you must pass Part II and submit two years of relevant work experience.",
     ],
     candidate_qa: [
       {
         q: "How many questions are on FRM Part 1?",
-        a: "100 multiple-choice questions in 4 hours.",
+        a: "100 equally weighted multiple-choice questions in 4 hours.",
       },
       {
         q: "What are the FRM Part 1 topic weights?",
@@ -1024,18 +1059,23 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     exam_facts: {
       exam_name: "CFA Level 2",
       administered_by: "CFA Institute",
-      question_count: "88 vignette-linked multiple-choice (22 item sets × 4 questions per session; 2 sessions)",
-      scored_count: "88",
-      time_limit: "4 hours 24 minutes total (two 132-minute sessions with optional break)",
+      question_count:
+        "88 multiple-choice questions in 22 vignette-based item sets (11 item sets per session, 4 questions each)",
+      scored_count: "80 scored (20 item sets); 2 trial item sets (8 questions) are unscored",
+      time_limit: "4 hours 24 minutes total (two 132-minute sessions with an optional break)",
       passing_score: "No fixed passing score published; CFA Institute sets the MPS each cycle",
       delivery: "Computer-based at Prometric test centers",
-      outline_effective_date: "2025–2026 exam cycle topic weights",
-      verify_at_url: "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-ii-exams",
+      outline_effective_date: "2026 Level II topic outline (CFA Institute)",
+      verify_at_url: "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-ii-exam",
     },
     official_sources: [
       {
         label: "CFA Level II exam overview",
-        url: "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-ii-exams",
+        url: "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-ii-exam",
+      },
+      {
+        label: "CFA Institute mock exam and practice questions",
+        url: "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/mock-exam-and-practice-questions",
       },
     ],
     domain_weights: [
@@ -1043,12 +1083,12 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       { domain: "Quantitative Methods", weight: "5–10%" },
       { domain: "Economics", weight: "5–10%" },
       { domain: "Financial Statement Analysis", weight: "10–15%" },
-      { domain: "Corporate Issuers", weight: "5–10%" },
-      { domain: "Equity Valuation", weight: "10–15%" },
+      { domain: "Corporate Finance", weight: "5–10%" },
+      { domain: "Equities", weight: "10–15%" },
       { domain: "Fixed Income", weight: "10–15%" },
-      { domain: "Derivatives", weight: "5–10%" },
+      { domain: "Derivatives and Risk Management", weight: "5–10%" },
       { domain: "Alternative Investments", weight: "5–10%" },
-      { domain: "Portfolio Management", weight: "10–15%" },
+      { domain: "Portfolio Construction", weight: "10–15%" },
     ],
     high_yield_facts: [
       "Level 2 tests application in vignettes — formulas must be tied to a short case, not recalled in isolation.",
@@ -1060,7 +1100,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on CFA Level 2?",
-        a: "88 multiple-choice questions grouped into 44 vignette item sets (22 per session, typically 4 questions per vignette).",
+        a: "88 multiple-choice questions in 22 vignette-based item sets — 11 item sets per session, 4 questions each. 20 item sets are scored; 2 are unscored trial sets.",
       },
       {
         q: "How long is the CFA Level 2 exam?",
@@ -1072,7 +1112,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "What are the CFA Level 2 topic weights?",
-        a: "Ten topics; Financial Statement Analysis, Equity, Fixed Income, Portfolio Management, and Ethics are each 10–15%; Quant, Economics, Corporate Issuers, Derivatives, and Alternatives are 5–10%.",
+        a: "Ten topics; Financial Statement Analysis, Equities, Fixed Income, Portfolio Construction, and Ethical and Professional Standards are each 10–15%; Quantitative Methods, Economics, Corporate Finance, Derivatives and Risk Management, and Alternative Investments are 5–10%.",
       },
     ],
     trademark_note:
@@ -2203,12 +2243,13 @@ const examProfiles: Record<string, ExamFactsProfile> = {
         "GIC1: scenario-based open-book examination (100 marks); GIC2: practical workplace risk assessment — not multiple-choice",
       scored_count: "GIC1: 100 marks (qualification grade); GIC2: pass/refer only (does not affect Distinction/Credit/Pass grade)",
       time_limit:
-        "GIC1: 5 hours assessment time (scenario-based open book on NEBOSH digital platform — NEBOSH also describes a 24-hour scenario-based assessment window); GIC2: 4 hours practical (verify with your Learning Partner)",
+        "GIC1: 5 hours assessment time within a 24-hour open-book window on the NEBOSH digital platform, plus a closing interview; GIC2: 4 hours practical per the IGC syllabus guide (NEBOSH's IGC web page lists 3 hours — confirm with your Learning Partner)",
       passing_score:
         "GIC1: 45% provisional pass (45/100); grades — Distinction 75+, Credit 65–74, Pass 45–64. GIC2: pass standard in GIC2 guidance (verify at nebosh.org.uk). Not a 60% MCQ cut score.",
       delivery:
         "GIC1: remote open-book examination (OBE) via NEBOSH Assessment Platform with closing interview; GIC2: practical workplace risk assessment submission per NEBOSH template",
-      outline_effective_date: "IGC learner guide v1, specification June 2025, publication January 2026",
+      outline_effective_date:
+        "IGC syllabus guide v2.2 (revised syllabus taught from 2 February 2026; first assessments from 4 March 2026)",
       verify_at_url: "https://www.nebosh.org.uk/qualifications/international-general-certificate/",
     },
     official_sources: [
@@ -2217,8 +2258,8 @@ const examProfiles: Record<string, ExamFactsProfile> = {
         url: "https://www.nebosh.org.uk/qualifications/international-general-certificate/",
       },
       {
-        label: "NEBOSH — GIC learner guide (PDF, January 2026)",
-        url: "https://www.nebosh.org.uk/documents/gic-syllabus-guide-for-learners/gic-learner-guide-v1.pdf",
+        label: "NEBOSH — IGC syllabus guide for Learning Partners (v2.2, PDF)",
+        url: "https://www.nebosh.org.uk/documents/gic-syllabus-guide-for-learning-partners/gic-lp-guide-v2.2.pdf",
       },
       {
         label: "NEBOSH — Where to study (accredited Learning Partners)",
@@ -2226,29 +2267,30 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
     ],
     domain_weights: [
-      { domain: "Element 1 — Why we should manage workplace health and safety", weight: "GIC1 OBE + GIC2 practical" },
-      { domain: "Element 2 — How health and safety management systems work", weight: "GIC1 OBE + GIC2 practical (ISO 45001, ILO-OSH 2001)" },
-      { domain: "Element 3 — Managing risk: people and processes", weight: "GIC1 OBE + GIC2 practical (culture, human factors, change, SSOW, PTW)" },
-      { domain: "Element 4 — Health and safety monitoring and measuring", weight: "GIC1 OBE (incidents, audits, reviews)" },
-      { domain: "Element 5 — Physical and psychological health", weight: "GIC1 OBE; hazards assessed in GIC2" },
-      { domain: "Element 6 — Musculoskeletal health", weight: "GIC1 OBE; hazards assessed in GIC2" },
-      { domain: "Element 7 — Chemical and biological agents", weight: "GIC1 OBE; hazards assessed in GIC2" },
-      { domain: "Element 8 — General workplace issues", weight: "GIC1 OBE; hazards assessed in GIC2" },
-      { domain: "Element 9 — Work equipment", weight: "GIC1 OBE; hazards assessed in GIC2" },
-      { domain: "Element 10 — Fire", weight: "GIC1 OBE; hazards assessed in GIC2" },
-      { domain: "Element 11 — Electricity", weight: "GIC1 OBE; hazards assessed in GIC2" },
+      { domain: "Element 1 — Why we should manage workplace health and safety", weight: "GIC1 open book exam + GIC2 practical" },
+      { domain: "Element 2 — How health and safety management systems work", weight: "GIC1 open book exam + GIC2 practical (ISO 45001, ILO-OSH 2001)" },
+      { domain: "Element 3 — Managing risk: people and processes", weight: "GIC1 open book exam + GIC2 practical (culture, human factors, change, SSOW, PTW)" },
+      { domain: "Element 4 — Health and safety monitoring and measuring", weight: "GIC1 open book exam only" },
+      { domain: "Element 5 — Physical and psychological health", weight: "GIC2 practical risk assessment only — not assessed in GIC1" },
+      { domain: "Element 6 — Musculoskeletal health", weight: "GIC2 practical risk assessment only — not assessed in GIC1" },
+      { domain: "Element 7 — Chemical and biological agents", weight: "GIC2 practical risk assessment only — not assessed in GIC1" },
+      { domain: "Element 8 — General workplace issues", weight: "GIC2 practical risk assessment only — not assessed in GIC1" },
+      { domain: "Element 9 — Work equipment", weight: "GIC2 practical risk assessment only — not assessed in GIC1" },
+      { domain: "Element 10 — Fire", weight: "GIC2 practical risk assessment only — not assessed in GIC1" },
+      { domain: "Element 11 — Electricity", weight: "GIC2 practical risk assessment only — not assessed in GIC1" },
       { domain: "Unit GIC2 — Risk assessment (5-step approach, hierarchy of control)", weight: "Practical assessment only — pass/refer" },
     ],
     whats_changed: [
-      "The revised IGC syllabus (GIC1/GIC2 units) replaced the previous IG1/IG2 structure — learner guide published January 2026; teaching of the revised syllabus began February 2026.",
-      "GIC1 is a scenario-based open-book examination (100 marks, 5 hours assessment time per learner guide) on NEBOSH’s digital platform; qualification grade (Distinction/Credit/Pass) is based on GIC1 only.",
-      "GIC2 is a 4-hour practical risk assessment using the official NEBOSH template — pass/refer only, does not affect the qualification grade.",
+      "The revised IGC syllabus (units GIC1/GIC2) replaced the IG1/IG2 structure — teaching began 2 February 2026 and first assessments ran from 4 March 2026.",
+      "GIC1 is a scenario-based open-book examination (100 marks, 5 hours assessment time within a 24-hour window, plus a closing interview) covering Elements 1–4 on NEBOSH’s digital platform; qualification grade (Distinction/Credit/Pass) is based on GIC1 only.",
+      "GIC2 is a practical workplace risk assessment (4 hours per the syllabus guide) covering Elements 5–11 hazards plus risk-assessment principles — pass/refer only, does not affect the qualification grade.",
       "You have five years from your first successful unit ('declaration date') to pass both units and complete the qualification.",
       "Third-party MCQ banks are not the official format — UniPrep2Go’s free mock is a knowledge diagnostic only, not a substitute for GIC1 OBE or GIC2 practical.",
       "NEBOSH also offers National General Certificate (NGC/GNC), Construction, Fire, Environment, and Diploma qualifications — each with separate syllabuses and assessments.",
     ],
     high_yield_facts: [
-      "GIC1 pass mark is 45% (45/100) — but aim higher; Distinction requires 75+ and Credit requires 65–74.",
+      "GIC1 provisional pass mark is 45% (45/100) — but aim higher; Distinction requires 75+ and Credit requires 65–74.",
+      "Elements 5–11 (health, musculoskeletal, chemical/biological, workplace issues, work equipment, fire, electricity) are assessed only through the GIC2 practical — not in the GIC1 exam.",
       "GIC1 answers must be supported by evidence from the scenario — generic textbook answers without scenario linkage score poorly.",
       "Hierarchy of control: eliminate → substitute → engineering → administrative → PPE (last resort).",
       "ISO 45001 and ILO-OSH 2001 are the reference management system frameworks in the syllabus.",
@@ -2259,7 +2301,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How is the NEBOSH IGC assessed?",
-        a: "Two units: GIC1 (5-hour open-book scenario examination, 100 marks) and GIC2 (4-hour practical risk assessment). You must pass both within five years.",
+        a: "Two units: GIC1 — an open book scenario examination (5 hours assessment time in a 24-hour window, 100 marks, closing interview) covering Elements 1–4; and GIC2 — a practical workplace risk assessment covering Elements 5–11 hazards. You must pass both within five years.",
       },
       {
         q: "What score do you need to pass NEBOSH GIC1?",

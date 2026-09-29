@@ -15,7 +15,7 @@ export const servsafeManagerStudyGuidePost: BlogPostDraft = {
     "servsafe-manager-florida-requirements-2026",
   ],
   intro:
-    "The ServSafe Manager exam has a first-time pass rate of roughly **75%**, which sounds generous until you realize the 25% who fail have to pay again, reschedule, and explain to their employer why the certificate is delayed. This guide is for people who do not want to be in that 25%.",
+    "Failing the ServSafe Manager exam means paying again, rescheduling, and explaining to your employer why the certificate is delayed — usually because temperature rules and pathogens were underestimated. This guide is for people who want to pass the first time.",
   mockSlug: "servsafe-manager-mock",
   deckSlug: "servsafe-manager-anki-deck",
   cta: {
@@ -34,7 +34,7 @@ export const servsafeManagerStudyGuidePost: BlogPostDraft = {
         },
         {
           type: "p",
-          text: "The passing score is **75%** (60 out of 80 scored questions correct). The exam is available in paper, computer, and online proctored formats.",
+          text: "The current ServSafe FAQ sets the passing score at **70%** (56 of 80 scored questions correct). The older 2020 Examinee Handbook PDF still prints 75%. The exam is available in paper, computer, and online proctored formats.",
         },
         {
           type: "p",
@@ -210,7 +210,7 @@ export const servsafeManagerStudyGuidePost: BlogPostDraft = {
     {
       question: "How hard is the ServSafe Manager exam?",
       answer:
-        "Moderate. The 75% pass rate means most people pass, but the 25% who fail usually underestimated the temperature and pathogen sections. It is not a test you can wing with common sense.",
+        "Moderate. People who fail usually underestimated the temperature and pathogen sections. It is not a test you can wing with common sense.",
     },
     {
       question: "How long is the ServSafe Manager certification valid?",

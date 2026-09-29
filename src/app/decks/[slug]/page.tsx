@@ -10,10 +10,12 @@ import {
   buildDeckAiCategory,
   buildDeckAiDescription,
 } from "@/lib/exam-llm-layer";
+import { buildDeckExamVersionModel } from "@/lib/deck-exam-version";
 import { getExamFactsProfileForDeck } from "@/lib/exam-facts";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { DeckApkgPendingNotice } from "@/components/decks/deck-apkg-pending-notice";
 import { DeckCompanionProductSection } from "@/components/decks/deck-companion-product-section";
+import { DeckExamVersionBlock } from "@/components/decks/deck-exam-version-block";
 import { DeckExamFactsSection } from "@/components/decks/deck-exam-facts-section";
 import { DeckPositioningSection } from "@/components/decks/deck-positioning-section";
 import { DeckPracticeMockSection } from "@/components/decks/deck-practice-mock-section";
@@ -35,6 +37,7 @@ import {
   getCompanionDeck,
   getDeckPracticeMock,
   isMockFirstDeckPage,
+  isSameBankCompanion,
 } from "@/lib/deck-funnel";
 import { formatProductNoun, getDeckShortPitch } from "@/lib/deck-page-copy";
 import {
@@ -214,6 +217,7 @@ export default async function DeckPage({
   const shortPitch = getDeckShortPitch(deck);
   const productNoun = formatProductNoun(deck);
   const showPracticeMockSection = practiceMock && shouldShowDeckPracticeMockSection(deck.slug);
+  const deckExamVersion = buildDeckExamVersionModel(deck, examFactsProfile);
 
   const jsonLd = availableDeck ? buildDeckPageJsonLd(availableDeck) : null;
   const heroImage = getDeckCoverUrl(deck);
@@ -420,6 +424,8 @@ export default async function DeckPage({
 
         {availableDeck ? <DeckApkgPendingNotice deck={availableDeck} /> : null}
 
+        {deckExamVersion ? <DeckExamVersionBlock model={deckExamVersion} /> : null}
+
         {showPracticeMockSection ? (
           <div id="practice-mock">
             <DeckPracticeMockSection
@@ -549,7 +555,11 @@ export default async function DeckPage({
         ) : null}
 
         {pricedCompanionDeck && availableDeck ? (
-          <DeckCompanionProductSection companion={pricedCompanionDeck} deck={availableDeck} />
+          <DeckCompanionProductSection
+            companion={pricedCompanionDeck}
+            deck={availableDeck}
+            sameBank={isSameBankCompanion(deck.slug)}
+          />
         ) : null}
 
         <section id="facts" className="mt-12">

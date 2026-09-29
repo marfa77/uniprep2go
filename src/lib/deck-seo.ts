@@ -349,11 +349,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Russian-speaking Goethe, telc, ÖSD, and DTZ candidates use bilingual German vocabulary recall with Russian support before timed exam practice. Not a Leben in Deutschland civics deck.",
   },
   "ielts-toefl-english-for-french-speakers-anki-deck": {
-    title: "IELTS / TOEFL English for French Speakers Anki | 2522 Cards",
-    headline: "IELTS / TOEFL English for French Speakers — 2522 Flashcards",
+    title: "IELTS / TOEFL English for French Speakers Anki | 2482 Cards",
+    headline: "IELTS / TOEFL English for French Speakers — 2482 Flashcards",
     studyLabel: "IELTS TOEFL English for French speakers",
     description:
-      "English Anki deck with 2522 flashcards for French speakers preparing IELTS, TOEFL, Cambridge, and PTE — French glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
+      "English Anki deck with 2482 flashcards for French speakers preparing IELTS, TOEFL, Cambridge, and PTE — French glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
     keywords: [
       "english for french speakers anki",
       "ielts vocabulary french speakers",
@@ -365,11 +365,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "French-speaking IELTS and TOEFL candidates use bilingual English vocabulary recall with French support before timed exam practice.",
   },
   "ielts-toefl-english-for-arabic-speakers-anki-deck": {
-    title: "IELTS / TOEFL English for Arabic Speakers Anki | 2504 Cards",
-    headline: "IELTS / TOEFL English for Arabic Speakers — 2504 Flashcards",
+    title: "IELTS / TOEFL English for Arabic Speakers Anki | 2482 Cards",
+    headline: "IELTS / TOEFL English for Arabic Speakers — 2482 Flashcards",
     studyLabel: "IELTS TOEFL English for Arabic speakers",
     description:
-      "English Anki deck with 2504 flashcards for Arabic speakers preparing IELTS, TOEFL, Cambridge, and PTE — Arabic glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
+      "English Anki deck with 2482 flashcards for Arabic speakers preparing IELTS, TOEFL, Cambridge, and PTE — Arabic glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
     keywords: [
       "english for arabic speakers anki",
       "ielts vocabulary arabic speakers",
@@ -382,11 +382,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "ielts-toefl-english-for-ukrainian-speakers-anki-deck": {
-    title: "IELTS / TOEFL English for Ukrainian Speakers Anki | 2504 Cards",
-    headline: "IELTS / TOEFL English for Ukrainian Speakers — 2504 Flashcards",
+    title: "IELTS / TOEFL English for Ukrainian Speakers Anki | 2482 Cards",
+    headline: "IELTS / TOEFL English for Ukrainian Speakers — 2482 Flashcards",
     studyLabel: "IELTS TOEFL English for Ukrainian speakers",
     description:
-      "English Anki deck with 2504 flashcards for Ukrainian speakers preparing IELTS, TOEFL, Cambridge, and PTE — Ukrainian glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
+      "English Anki deck with 2482 flashcards for Ukrainian speakers preparing IELTS, TOEFL, Cambridge, and PTE — Ukrainian glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
     keywords: [
       "english for ukrainian speakers anki",
       "ielts vocabulary ukrainian speakers",
@@ -399,11 +399,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "ielts-toefl-english-for-russian-speakers-anki-deck": {
-    title: "IELTS Anki Russians 2026 | 2504 · RU Gloss · Not Tourist",
-    headline: "IELTS / TOEFL English for Russian Speakers — 2504 Cards",
+    title: "IELTS Anki Russians 2026 | 2482 · RU Gloss · Not Tourist",
+    headline: "IELTS / TOEFL English for Russian Speakers — 2482 Cards",
     studyLabel: "IELTS TOEFL English Anki for Russian speakers",
     description:
-      "Russians: 2,504 IELTS/TOEFL Anki cards with Russian glosses + актуально≠actual traps. Not AnkiWeb EVU dumps, not tourist EN–RU lists. Gumroad $26.",
+      "Russians: 2,482 IELTS/TOEFL Anki cards with Russian glosses + актуально≠actual traps. Not AnkiWeb EVU dumps, not tourist EN–RU lists. Gumroad $26.",
     keywords: [
       "english for russian speakers anki",
       "ielts vocabulary russian speakers",
@@ -414,15 +414,15 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "anki ielts русские 2026",
     ],
     intro:
-      "Russian speakers targeting IELTS, TOEFL iBT, Cambridge, or PTE drill 2,504 exam-frequency English words with Russian glosses and native audio — English-first recall so cognate traps (актуально/actual, магазин/magazine) stop costing Reading points. Separate from free AnkiWeb EVU packs and the PT-BR or LatAm-Spanish English sibling decks.",
+      "Russian speakers targeting IELTS, TOEFL iBT, Cambridge, or PTE drill 2,482 exam-frequency English words with Russian glosses and native audio — English-first recall so cognate traps (актуально/actual, магазин/magazine) stop costing Reading points. Separate from free AnkiWeb EVU packs and the PT-BR or LatAm-Spanish English sibling decks.",
   },
 
   "ielts-toefl-english-for-spanish-speakers-anki-deck": {
-    title: "IELTS / TOEFL English for LatAm Spanish Speakers Anki | 2504 Cards",
-    headline: "IELTS / TOEFL English for Spanish Speakers (LatAm) — 2504 Flashcards",
+    title: "IELTS / TOEFL English for LatAm Spanish Speakers Anki | 2482 Cards",
+    headline: "IELTS / TOEFL English for Spanish Speakers (LatAm) — 2482 Flashcards",
     studyLabel: "IELTS TOEFL English for Spanish speakers LatAm",
     description:
-      "Free-preview path to 2504 English Anki cards for Latin American Spanish speakers: LatAm glosses, bilingual examples, native English audio — built for IELTS/TOEFL/Cambridge/PTE vocabulary, not tourist phrases or DELE Spanish. Independent study aid.",
+      "Free-preview path to 2482 English Anki cards for Latin American Spanish speakers: LatAm glosses, bilingual examples, native English audio — built for IELTS/TOEFL/Cambridge/PTE vocabulary, not tourist phrases or DELE Spanish. Independent study aid.",
     keywords: [
       "english for spanish speakers anki",
       "ielts vocabulary spanish speakers",
@@ -486,11 +486,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "ielts-toefl-english-for-turkish-speakers-anki-deck": {
-    title: "IELTS / TOEFL English for Turkish Speakers Anki | 952 Cards",
-    headline: "IELTS / TOEFL English for Turkish Speakers — 952 Flashcards",
+    title: "IELTS / TOEFL English for Turkish Speakers Anki | 924 Cards",
+    headline: "IELTS / TOEFL English for Turkish Speakers — 924 Flashcards",
     studyLabel: "IELTS TOEFL English for Turkish speakers",
     description:
-      "English Anki deck with 952 flashcards for Turkish speakers preparing IELTS, TOEFL, Cambridge, and PTE — Turkish glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
+      "English Anki deck with 924 flashcards for Turkish speakers preparing IELTS, TOEFL, Cambridge, and PTE — Turkish glosses, bilingual examples, and native English audio. Independent study aid — not official exam material.",
     keywords: [
       "english for turkish speakers anki",
       "ielts vocabulary turkish speakers",
@@ -503,11 +503,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "ielts-toefl-english-for-portuguese-speakers-anki-deck": {
-    title: "IELTS Anki Brazilians 2026 | 2504 · PT-BR · Not CIPLE",
-    headline: "IELTS / TOEFL English for Brazilians (PT-BR) — 2504 Cards · Not CIPLE",
+    title: "IELTS Anki Brazilians 2026 | 2482 · PT-BR · Not CIPLE",
+    headline: "IELTS / TOEFL English for Brazilians (PT-BR) — 2482 Cards · Not CIPLE",
     studyLabel: "IELTS TOEFL English Anki for Brazilians (PT-BR glosses)",
     description:
-      "Brazilians: 2,504 IELTS/TOEFL Anki cards with PT-BR glosses + atual≠actual traps. Not CIPLE, not Celpe-Bras, not the Spanish-gloss sibling. Gumroad $26.",
+      "Brazilians: 2,482 IELTS/TOEFL Anki cards with PT-BR glosses + atual≠actual traps. Not CIPLE, not Celpe-Bras, not the Spanish-gloss sibling. Gumroad $26.",
     keywords: [
       "english for brazilian portuguese speakers anki",
       "ielts vocabulary for brazilians",
@@ -518,7 +518,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "anki ielts brasil 2026",
     ],
     intro:
-      "Brazilians targeting IELTS, TOEFL iBT, Cambridge, or PTE drill 2,504 exam-frequency English words with PT-BR glosses and native audio — English-first recall so cognate traps (atual/actual, pretender/pretend) stop costing Reading points. Separate from CIPLE European Portuguese, Celpe-Bras, and the LatAm-Spanish or Russian English sibling decks.",
+      "Brazilians targeting IELTS, TOEFL iBT, Cambridge, or PTE drill 2,482 exam-frequency English words with PT-BR glosses and native audio — English-first recall so cognate traps (atual/actual, pretender/pretend) stop costing Reading points. Separate from CIPLE European Portuguese, Celpe-Bras, and the LatAm-Spanish or Russian English sibling decks.",
   },
 
   "delf-prim-printable-french-flashcards": {
@@ -764,7 +764,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Series 7 Exam Prep — 300 Flashcards + Free 60Q Test",
     studyLabel: "Series 7 exam prep",
     description:
-      "Series 7 Top-Off prep: 300 flashcards for suitability, options, products, and FINRA job functions — plus a free 60-question Series 7 practice test online (no signup). Official exam is 125Q / 3h45 / ~72%; our mock is shorter. For US registered rep candidates.",
+      "Series 7 Top-Off prep: 300 flashcards for suitability, options, products, and FINRA job functions — plus a free 60-question Series 7 practice test online (no signup). Official exam is 125 scored + 5 pretest / 3h45 / passing score 72 (equated); our mock is shorter. For US registered rep candidates.",
     keywords: [
       "series 7 exam prep",
       "series 7 flashcards",
@@ -797,7 +797,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "ServSafe Manager Practice Test Free — 300 Cards + 90 Questions",
     studyLabel: "ServSafe Manager exam prep",
     description:
-      "ServSafe Manager / CFPM exam prep with 300 food safety flashcards — time and temperature, HACCP, hygiene, contamination — plus a free 90-question ServSafe practice test online. Official: 90Q (80 scored + 10 pilot) / 2h; handbook 75% pass. For US restaurant managers and kitchen supervisors.",
+      "ServSafe Manager / CFPM exam prep with 300 food safety flashcards — time and temperature, HACCP, hygiene, contamination — plus a free 90-question ServSafe practice test online. Official: 90Q (80 scored + 10 pilot) / 2h; official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target on the mock. For US restaurant managers and kitchen supervisors.",
     keywords: [
       "servsafe manager exam prep",
       "servsafe manager practice test",
@@ -843,8 +843,8 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Need the January 2026 PTCE outline in one printable pack? This blueprint guide maps domain weights (including DSCSA in Federal Requirements), drops removed compounding topics, and pairs with UniPrep2Go’s free 90-question timed mock plus the separate 300-card Anki deck for weak-topic repair.",
   },
   "california-real-estate-exam-anki-deck": {
-    title: "Best CA Real Estate Anki | 400 Cards + Free CA Mock",
-    headline: "Best California Real Estate Anki — 400 DRE Cards + Free Mock",
+    title: "CA Real Estate Salesperson Anki | 400 DRE Cards + Free Mock",
+    headline: "California Real Estate Salesperson Anki — 400 DRE Cards + Free Mock",
     studyLabel: "California real estate exam prep",
     description:
       "Best California DRE salesperson Anki: 400 CA-only cards (agency, disclosures, contracts, math) + free 60-question CA practice test. Beats national Quizlet/Aceable packs with a California sticker. Not official DRE material.",

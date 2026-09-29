@@ -1,0 +1,28 @@
+---
+description: Subagent model picker — Composer 2.5 Fast default, Grok 4.7 High Fast for hard engineering tasks
+alwaysApply: true
+---
+
+# Subagent model picker (set 2026-09-29)
+
+Delegate work to Task subagents with an explicit model:
+
+| Case | Model slug |
+|---|---|
+| **Default** — routine tasks (deck rebuilds, site sync, scripts, PDF builds, Gumroad ops, tests) | `composer-2.5-fast` |
+| **Complex** — multi-file refactors, hard debugging, layout/rendering pipelines, anything Composer failed on | `grok-4.7-high-fast` |
+
+User asked for "Composer 2.5 Standard" / "Grok Standard"; those are not in the subagent list — the slugs above are the closest available. If they appear later, switch to them.
+
+## Grok limits (unchanged)
+
+Grok is **never** used for:
+- Threads review, bank copy, or content judgment (`threads-smart-agent-gpt-sol.mdc`)
+- Mock / Anki bank content review (`mock-bank-review-model.mdc` — Sol default, Opus escalate)
+
+If Sol/Opus are not available as a subagent model, do the content review in the main chat — do not fall back to Grok.
+
+## Always
+
+- The main chat verifies subagent output (tests, live checks) before reporting done.
+- Commit/push only when the user asks.

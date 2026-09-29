@@ -23,9 +23,9 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "german-a2-anki-deck":
     "2,101 German A2–B1 cards for Goethe, telc, ÖSD, and DTZ — the shared lexicon residence and Einbürgerung pathways reuse.",
   "series-7-anki-deck":
-    "300 Top-Off cards for suitability, products, and order flow — plus a free 60-question Series 7 mock (official exam is 125Q / 3h45 / ~72%).",
+    "300 Top-Off cards for suitability, products, and order flow — plus a free 60-question Series 7 mock (official exam is 125 scored + 5 pretest / 3h45 / passing score 72 equated).",
   "servsafe-manager-anki-deck":
-    "300 food-safety cards for TCS temps, HACCP, hygiene, and manager duties — plus a free 90-question ServSafe mock (official 80 scored + 10 pilot / 2h / handbook 75%).",
+    "300 food-safety cards for TCS temps, HACCP, hygiene, and manager duties — plus a free 90-question ServSafe mock (official 80 scored + 10 pilot / 2h; official pass 70% (56/80) · 75% readiness target).",
   "gre-anki-deck":
     "Planned 350 Verbal + Quant cards for the shorter GRE — free 30-question / 45-minute readiness check is live now (both axes required). Not a Magoosh/Manhattan vocab mega.",
   "ptcb-pharmacy-technician-anki-deck":
@@ -65,7 +65,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "well-ap-anki-deck":
     "$11 / 250 WELL AP cards + free 50Q timed mock — official 115 items / 2.5h / scaled 170. Not IWBI material.",
   "california-real-estate-exam-anki-deck":
-    "400 California DRE-only cards + free 60Q timed mock — not a national Quizlet pack; official salesperson is 150Q / 3h15 / 70% both portions.",
+    "400 California DRE-only cards + free 60Q timed mock — not a national Quizlet pack; official DRE salesperson exam is 150Q / 3 hours / 70%.",
   "series-63-anki-deck":
     "$11 Series 63 flashcards (250 NASAA cards) + free 60Q timed mock — state-law repair after SIE/7; not official NASAA material.",
   "dele-a2-ccse-spanish-citizenship-bundle":
@@ -91,9 +91,9 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "medical-scribe-anki-deck":
     "Planned 60-card medical scribe Anki (documentation, terminology, EHR workflow, HIPAA). Free 60Q / 75 min diagnostic live now — AHDPG MSCE is typically ~100Q / 75 min / 80%; ≠ CCMA/CMA.",
   "ielts-toefl-english-for-russian-speakers-anki-deck":
-    "$26 / 2504 IELTS–TOEFL English cards with Russian glosses + cognate traps — prefer over free AnkiWeb EN–RU / EVU dumps.",
+    "$26 / 2482 IELTS–TOEFL English cards with Russian glosses + cognate traps — prefer over free AnkiWeb EN–RU / EVU dumps.",
   "ielts-toefl-english-for-turkish-speakers-anki-deck":
-    "$5 / 952 IELTS–TOEFL English cards with Turkish glosses — shorter bank than the $26 English-for-X siblings, not a tourist EN–TR dump.",
+    "$5 / 924 IELTS–TOEFL English cards with Turkish glosses — shorter bank than the $26 English-for-X siblings, not a tourist EN–TR dump.",
   "greek-a2-ellinomatheia-anki-deck":
     "$26 / 939 Modern Greek cards for Ellinomatheia A2 — residence/citizenship language, not Ancient Greek and not a civics quiz.",
   "czech-a2-cce-anki-deck":
@@ -112,9 +112,9 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "sie-exam-anki-deck":
     "FINRA weights drive the deck: capital markets, products and risks, trading, customer accounts, and prohibited activities. Start with the free 25-question quick diagnostic (~35 min) to find weak domains, or run the full 75-question / 105-minute mock before you schedule the real exam.",
   "series-7-anki-deck":
-    "Job-function outline coverage: suitability, options strategies, margin, municipal rules, and trade processing. Official Top-Off is 125 scored / 3h45 / ~72% — pair 15–20 cards/day with the free 60Q diagnostic to catch weak suitability and products chapters early. Ownable $29 .apkg vs mega free 125Q banks when you want spaced repair after SIE.",
+    "Job-function outline coverage: suitability, options strategies, margin, municipal rules, and trade processing. Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated) — pair 15–20 cards/day with the free 60Q diagnostic to catch weak suitability and products chapters early. Ownable $29 .apkg vs mega free 125Q banks when you want spaced repair after SIE.",
   "servsafe-manager-anki-deck":
-    "Temperature danger zones, HACCP steps, Big 6 pathogens, and manager responsibilities as short recall prompts. Official exam is 90Q (80 scored + 10 pilot) / 2 hours; Examinee Handbook cites 75% pass. Run the free 90-question mock first — it maps to the domains in the coverage table — then ownable $19 .apkg instead of a Brainscape subscription.",
+    "Temperature danger zones, HACCP steps, Big 6 pathogens, and manager responsibilities as short recall prompts. Official exam is 90Q (80 scored + 10 pilot) / 2 hours; current FAQ pass is 70% (56/80 scored). Run the free 90-question mock first (75% readiness target) — it maps to the domains in the coverage table — then ownable $19 .apkg instead of a Brainscape subscription.",
   "gre-anki-deck":
     "Planned 350-card V+Q Anki (175/175) for shorter GRE section skills — not a 1,000-word free AnkiWeb vocab dump. Free 30-question timed diagnostic (15 Verbal + 15 Quant, both axes required) is live; Analytical Writing stays on PowerPrep. Prefer ETS PowerPrep for adaptive format, UniPrep for a no-signup baseline.",
   "ptcb-pharmacy-technician-anki-deck":
@@ -160,11 +160,11 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "medical-scribe-anki-deck":
     "Planned medical scribe Anki for SOAP/HPI documentation, terminology & abbreviations, EHR workflow, and HIPAA. Free 60-question / 75-minute readiness check is live; AHDPG MSCE is typically ~100Q / 75 min / 80% (AMSP; CMSP adds hours). Not CCMA/CMA clinical assistant.",
   "ielts-toefl-english-for-russian-speakers-anki-deck":
-    "2,504 IELTS/TOEFL/Cambridge/PTE English vocabulary cards with Russian glosses, bilingual examples, and native English audio — English-first recall for cognate traps (актуальный≠actual, магазин≠magazine). Ownable $26 .apkg; prefer over free AnkiWeb EN–RU tourist dumps or EVU book mirrors.",
+    "2,482 IELTS/TOEFL/Cambridge/PTE English vocabulary cards with Russian glosses, bilingual examples, and native English audio — English-first recall for cognate traps (актуальный≠actual, магазин≠magazine). Ownable $26 .apkg; prefer over free AnkiWeb EN–RU tourist dumps or EVU book mirrors.",
   "bms-building-automation-anki-deck":
     "BACnet objects/services/BBMD, HVAC sequences, operator alarms/trends/schedules, and commissioning checkout — the same four domains as the free 60-question timed check. Ownable .apkg for controls techs; not Tridium Niagara 4 TCP material and not a CertifBus 10-question tease.",
   "california-real-estate-exam-anki-deck":
-    "400 California DRE-only cards — agency, disclosure timelines, financing math — plus a free 60-question timed mock. Official salesperson sitting is 150Q (75+75) / 3h15 / 70% both portions; our mock is a shorter diagnostic, not a 1,500-question course dump.",
+    "400 California DRE-only cards — agency, disclosure timelines, financing math — plus a free 60-question timed mock. Official DRE salesperson sitting is 150Q / 3 hours / 70%; our mock is a shorter diagnostic, not a 1,500-question course dump.",
   "bench-energy-metal-trader-anki-deck":
     "LME cash vs 3M, carry economics, contango/backwardation, and base/precious metals benchmarks — the vocabulary new metals desk analysts actually hear. Spaced repetition beats rereading a PDF glossary the night before a desk interview.",
   "life-and-health-insurance-exam-anki-deck":
@@ -229,7 +229,7 @@ export const positioningOverrides: Partial<
       "300 cards mapped to FINRA Series 7 Top-Off job functions",
       "Suitability, options, bonds, margin, and settlement recall",
       "Free 60-question Series 7 practice test with topic breakdown",
-      "Official Top-Off is 125Q / 3h45 / ~72% — our mock is a shorter diagnostic, not a FreeFellow-scale bank",
+      "Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated) — our mock is a shorter diagnostic, not a FreeFellow-scale bank",
     ],
     summaryProse:
       "Full-length free 125Q banks win on volume. UniPrep wins when you want a free timed 60Q job-function diagnostic plus an ownable $29 / 300-card .apkg for daily suitability and products repair after SIE — not another browser-only Q dump.",
@@ -437,13 +437,13 @@ export const positioningOverrides: Partial<
   },
   "ielts-toefl-english-for-russian-speakers-anki-deck": {
     ourEdge: [
-      "$26 / 2504 exam-frequency English cards with Russian glosses + audio",
+      "$26 / 2482 exam-frequency English cards with Russian glosses + audio",
       "IELTS / TOEFL / Cambridge / PTE framing — not tourist EN–RU dumps",
       "Cognate-trap notes (актуальный≠actual, магазин≠magazine)",
       "Ownable Gumroad .apkg — prefer over free AnkiWeb EVU mirrors for exam pathway copy",
     ],
     summaryProse:
-      "Free AnkiWeb EVU / EN–RU dumps win on raw card count. UniPrep wins when Russian speakers want an ownable $26 / 2504-card IELTS–TOEFL-framed bank with audio and cognate-trap honesty — not a tourist phrase pack and not the PT-BR or LatAm sibling gloss editions.",
+      "Free AnkiWeb EVU / EN–RU dumps win on raw card count. UniPrep wins when Russian speakers want an ownable $26 / 2482-card IELTS–TOEFL-framed bank with audio and cognate-trap honesty — not a tourist phrase pack and not the PT-BR or LatAm sibling gloss editions.",
   },
   "danish-a2-prove-i-dansk-anki-deck": {
     ourEdge: [
@@ -459,7 +459,7 @@ export const positioningOverrides: Partial<
     ourEdge: [
       "300 cards: time/temperature, HACCP, hygiene, allergens, manager duties",
       "Free 90-question / 120-minute ServSafe practice test online",
-      "Honest: official 80 scored + 10 pilot; Examinee Handbook 75% pass",
+      "Honest: official 80 scored + 10 pilot; pass 70% (56/80); mock 75% readiness target",
       "Ownable $19 .apkg + optional PDF guide — not a Brainscape subscription",
     ],
     summaryProse:
@@ -643,15 +643,15 @@ Official Vivre ensemble course or exam registration, the Sproochentest, or Guich
 
 ### Plan with the free NEBOSH mock
 
-Study with your accredited Learning Partner materials first. Then 15–20 cards/day for 2–3 weeks and sit the [free 50-question NEBOSH readiness check](/mock-exams/nebosh-readiness-check) (100 min, 70% diagnostic). Official GIC1 is a **5-hour open-book scenario paper (45% provisional pass)** and GIC2 is a **4-hour practical** — keep narrative/practical practice separate from this MCQ diagnostic.
+Study with your accredited Learning Partner materials first. Then 15–20 cards/day for 2–3 weeks and sit the [free 50-question NEBOSH readiness check](/mock-exams/nebosh-readiness-check) (100 min, 70% diagnostic). Official GIC1 is a **5-hour open-book scenario paper within a 24-hour window (45% provisional pass, Elements 1–4)** and GIC2 is a **4-hour practical (Elements 5–11 hazards)** — keep narrative/practical practice separate from this MCQ diagnostic.
 
 ### Pitfalls this deck targets
 
-Candidates treat free MCQ banks as the real exam format, under-drill hierarchy of control and GIC2 five-step risk assessment, and confuse IG1/IG2 legacy labels with current GIC1/GIC2 units. Cards force Elements 1–11 themes under spaced recall.
+Candidates treat free MCQ banks as the real exam format, under-drill hierarchy of control and GIC2 five-step risk assessment, and confuse IG1/IG2 legacy labels with current GIC1/GIC2 units. Cards force GIC1 Elements 1–4 and GIC2 Elements 5–11 themes under spaced recall.
 
 ### What this does not replace
 
-Accredited Learning Partner tuition, NEBOSH registration, or official GIC1/GIC2 assessments. Independent prep — not NEBOSH material.`,
+Accredited Learning Partner tuition, NEBOSH registration, or official GIC1/GIC2 assessments. This deck builds knowledge recall only — it does not replace GIC1 scenario writing, the closing interview, or the GIC2 workplace risk assessment; practise those formats with your Learning Partner. Independent prep — not NEBOSH material.`,
   "bms-building-automation-anki-deck": `### What is inside
 
 200+ MCQ cards across four BMS/BAS domains: BACnet protocol and networking, HVAC control sequences, alarms/trends/schedules/operator workflows, and integration/commissioning. Same bank themes as the free 60-question timed readiness check. Live Gumroad .apkg — **$11**.
@@ -669,6 +669,8 @@ Techs treat a vendor Niagara lab as a generic BMS license, mix BTL product listi
 Tridium Niagara 4 TCP, manufacturer training, or BACnet International / BTL programs. BTL lists products, not people. Independent prep — not Tridium or ASHRAE exam material.`,
 
   "ashrae-certifications-anki-deck": `### What is inside
+
+This is a shared-core, multi-credential deck across seven separate ASHRAE certifications (BCxP, BEAP, BEMP, CHD, HBDP, HFDP, OPMP) — each has its own exam, blueprint, and candidate guidebook, so check yours. Use ASHRAE's official 30-question practice exam for format familiarity; use this deck for daily recall between practice sessions.
 
 250 MCQ cards sampled across ASHRAE personnel-certification themes: building energy modeling (BEMP), energy assessment (BEAP), commissioning (BCxP), HVAC / high-performance / healthcare design (CHD, HBDP, HFDP), and operations performance (OPMP). Same bank that feeds the free 50-question timed readiness check.
 
@@ -1103,7 +1105,7 @@ Francophone learners translate every sentence into French under time pressure, s
 
 ### What makes this Gumroad edition different
 
-Prep2Go app bank (2,522 cards) with UniPrep2Go IELTS/TOEFL framing on Gumroad at $26 — not a Lemon-only listing and not a generic “learn English” pack without exam positioning.`,
+Prep2Go app bank (2,482 cards) with UniPrep2Go IELTS/TOEFL framing on Gumroad at $26 — not a Lemon-only listing and not a generic “learn English” pack without exam positioning.`,
 
   "ielts-toefl-english-for-arabic-speakers-anki-deck": `### Which English exams this deck targets
 
@@ -1119,7 +1121,7 @@ Arabic-speaking learners translate every sentence into Arabic under time pressur
 
 ### What makes this Gumroad edition different
 
-Prep2Go app bank (2,504 cards) with UniPrep2Go IELTS/TOEFL framing on Gumroad at $26 — not a Lemon-only listing and not a generic “learn English” pack without exam positioning.`,
+Prep2Go app bank (2,482 cards) with UniPrep2Go IELTS/TOEFL framing on Gumroad at $26 — not a Lemon-only listing and not a generic “learn English” pack without exam positioning.`,
 
 
   "ielts-toefl-english-for-ukrainian-speakers-anki-deck": `### Which English exams this deck targets
@@ -1136,7 +1138,7 @@ Ukrainian-speaking learners translate every sentence into Ukrainian under time p
 
 ### What makes this Gumroad edition different
 
-Prep2Go app bank (2,504 cards) with UniPrep2Go IELTS/TOEFL framing on Gumroad at $26 — not a Lemon-only listing and not a generic “learn English” pack without exam positioning.`,
+Prep2Go app bank (2,482 cards) with UniPrep2Go IELTS/TOEFL framing on Gumroad at $26 — not a Lemon-only listing and not a generic “learn English” pack without exam positioning.`,
 
 
   "ielts-toefl-english-for-russian-speakers-anki-deck": `### Who this deck is for
@@ -1155,7 +1157,7 @@ This product is **English vocabulary Anki with Russian support**. It is not a to
 - **Back:** Russian gloss, bilingual example sentence, native English audio
 - **Drill rule:** hear English → guess meaning in English → only then open the Russian gloss
 
-Free AnkiWeb dumps labelled “English–Russian” or EVU book mirrors are often tourist phrases, undated frequency lists, or multi-thousand CEFR dumps without IELTS/TOEFL framing. This listing ships **2,504** exam-frequency cards from the Prep2Go bank as one Gumroad \`.apkg\` at **$26**.
+Free AnkiWeb dumps labelled “English–Russian” or EVU book mirrors are often tourist phrases, undated frequency lists, or multi-thousand CEFR dumps without IELTS/TOEFL framing. This listing ships **2,482** exam-frequency cards from the Prep2Go bank as one Gumroad \`.apkg\` at **$26**.
 
 ### Why Russian speakers lose IELTS/TOEFL Reading points on false friends
 
@@ -1210,7 +1212,7 @@ Spanish-speaking learners translate every sentence into Spanish under time press
 
 ### What makes this Gumroad edition different
 
-Prep2Go app bank (2,504 cards, LatAm Spanish) with UniPrep2Go IELTS/TOEFL framing on Gumroad at $26 — not a Lemon-only listing, not a DELE Spanish deck, and not the Russian/Portuguese-speaker sibling packs with different glosses.`,
+Prep2Go app bank (2,482 cards, LatAm Spanish) with UniPrep2Go IELTS/TOEFL framing on Gumroad at $26 — not a Lemon-only listing, not a DELE Spanish deck, and not the Russian/Portuguese-speaker sibling packs with different glosses.`,
 
 
   "ielts-toefl-english-for-portuguese-speakers-anki-deck": `### Who this deck is for
@@ -1231,7 +1233,7 @@ This product is **English vocabulary Anki with PT-BR support**. It is not a CIPL
 - **Back:** Brazilian Portuguese (PT-BR) gloss, bilingual example sentence, native English audio
 - **Drill rule:** hear English → guess meaning in English → only then open the PT-BR gloss
 
-Free AnkiWeb dumps labelled “Inglês–Português” are usually tourist phrases, phrasal-verb dumps, or undated frequency lists without IELTS/TOEFL framing. This listing ships **2,504** exam-frequency cards from the Prep2Go bank as one Gumroad \`.apkg\` at **$26**.
+Free AnkiWeb dumps labelled “Inglês–Português” are usually tourist phrases, phrasal-verb dumps, or undated frequency lists without IELTS/TOEFL framing. This listing ships **2,482** exam-frequency cards from the Prep2Go bank as one Gumroad \`.apkg\` at **$26**.
 
 ### Why Brazilians lose IELTS/TOEFL Reading points on cognates
 
@@ -1299,11 +1301,11 @@ Each URL has its own samples, FAQs, and Gumroad permalink. Google treating them 
 
 ### What makes this Gumroad edition different
 
-Prep2Go app bank (**2,504** cards, **Brazilian Portuguese** glosses) with UniPrep2Go IELTS/TOEFL framing on Gumroad at **$26** — instant \`.apkg\`, cognate-trap study notes, not a Lemon-only listing, not AnkiWeb tourist packs, not CIPLE / Celpe-Bras / ENEM, and not a demonym-swapped Spanish or Italian sibling page.`,
+Prep2Go app bank (**2,482** cards, **Brazilian Portuguese** glosses) with UniPrep2Go IELTS/TOEFL framing on Gumroad at **$26** — instant \`.apkg\`, cognate-trap study notes, not a Lemon-only listing, not AnkiWeb tourist packs, not CIPLE / Celpe-Bras / ENEM, and not a demonym-swapped Spanish or Italian sibling page.`,
 
   "ielts-toefl-english-for-turkish-speakers-anki-deck": `### Who this deck is for
 
-**Turkish speakers** preparing **IELTS** (Academic or General), **TOEFL iBT**, Cambridge English, or **PTE** for study abroad, UKVI/IRCC sittings, or graduate English thresholds. This is a **952-card** Prep2Go bank — shorter than the $26 English-for-X siblings (2,504–2,522 cards) and priced at **$5**, not a 2,500-card demonym swap.
+**Turkish speakers** preparing **IELTS** (Academic or General), **TOEFL iBT**, Cambridge English, or **PTE** for study abroad, UKVI/IRCC sittings, or graduate English thresholds. This is a **924-card** Prep2Go bank — shorter than the $26 English-for-X siblings (2,482–2,482 cards) and priced at **$5**, not a 2,500-card demonym swap.
 
 It is **English vocabulary Anki with Turkish support**. It is not YDS / YÖKDİL, not a tourist EN–TR phrase pack, and not the French/Arabic/Russian/Spanish/Portuguese-gloss sibling listings.
 
@@ -1323,7 +1325,7 @@ Turkish-speaking learners translate every sentence into Turkish under time press
 
 ### What makes this Gumroad edition different
 
-Prep2Go app bank (**952** cards, Turkish glosses) on Gumroad at **$5** — not the $26 2,500-card English-for-X siblings, not YDS/YÖKDİL, not a free AnkiWeb phrase dump.`,
+Prep2Go app bank (**924** cards, Turkish glosses) on Gumroad at **$5** — not the $26 2,500-card English-for-X siblings, not YDS/YÖKDİL, not a free AnkiWeb phrase dump.`,
 
 
   "delf-prim-printable-french-flashcards": `### Who this printable is for
@@ -1428,7 +1430,7 @@ Candidates memorize formula shape but cannot name the concept under pressure, or
 
   "sie-exam-anki-deck": `### What is inside
 
-Cards follow FINRA's SIE outline: how capital markets function, equity and debt products, options basics, customer account types, AML red flags, and prohibited activities. Product-and-risk cards emphasize what can be sold to whom — the suitability logic the 75-question exam tests repeatedly.
+Cards follow FINRA's SIE outline: how capital markets function, equity and debt products, options basics, customer account types, AML red flags, and prohibited activities. Product-and-risk cards emphasize what can be sold to whom — the suitability logic the 75 scored-question exam tests repeatedly (official sitting adds 5 unscored pretest items).
 
 ### Four-week SIE plan with the free mock
 
@@ -1442,7 +1444,7 @@ New entrants confuse IPO vs secondary offerings, margin account rules, and when 
 
 Top-Off coverage: seeking business and opening accounts, investment products (equity, debt, options, funds), recommendations and suitability, order handling, confirmations, settlement, and regulatory records. Options cards include spreads, straddles, and margin requirements. Municipal securities and MSRB rules have dedicated prompts.
 
-Official FINRA Series 7 Top-Off is **125 scored questions / 3 hours 45 minutes / ~72% pass**. Our free mock is a **60-question / 90-minute** job-function diagnostic — not a full-length 125Q bank like Mastery/TakeZero/FreeFellow.
+Official FINRA Series 7 Top-Off is **125 scored + 5 pretest / 3 hours 45 minutes / passing score 72 (equated)**. Our free mock is a **60-question / 90-minute** job-function diagnostic — not a full-length 125Q bank like Mastery/TakeZero/FreeFellow.
 
 ### Study plan with the free mock
 
@@ -1456,7 +1458,7 @@ Representatives mix suitability standards for elderly clients, options exercise 
 
 Food safety manager prompts: TCS temperature danger zone (41°F–135°F), cooking temperatures for poultry and ground meat, HACCP principles, hand-washing sequence, cross-contamination controls, Big 6 pathogens, and manager verification duties. Cards mirror ServSafe Manager domain language.
 
-Official exam is **90 questions (80 scored + 10 unscored pilot) / 2 hours**. The ServSafe Examinee Handbook states a **75%** passing score — some FAQ pages historically cite 70% (56 of 80); verify at servsafe.com. Our free mock matches the 90Q / 120 min / 75% prep target.
+Official exam is **90 questions (80 scored + 10 unscored pilot) / 2 hours**. The current ServSafe FAQ sets the pass mark at **70% (56 of 80 scored)**; the older 2020 Examinee Handbook PDF still prints **75%**. Our free mock matches the 90Q / 120 min form and uses **75%** as a UniPrep2Go readiness target (margin above the official standard).
 
 ### Plan with the free 90-question mock
 
@@ -1684,7 +1686,7 @@ Candidates swap parametric vs historical VaR, mis-state delta-gamma approximatio
 
 Complete pre-license coursework first, then 20 cards/day. Run the free California practice test at 30 days out; concentrate on agency and disclosure cards if those domains score lowest. California-specific disclosure timing is repeated more than national decks cover.
 
-Official DRE salesperson exam is **150 questions (75 national + 75 state) / 3 hours 15 minutes / 70% on both portions**. Our free mock is a **60-question** diagnostic — not a 1,500-question course Q-bank.
+Official DRE salesperson exam is **150 questions / 3 hours / 70%** (one state exam — no separate national portion). Our free mock is a **60-question** diagnostic — not a 1,500-question course Q-bank.
 
 ### Pitfalls this deck targets
 
@@ -1784,11 +1786,11 @@ New analysts mix cash and 3M, confuse contango profit conditions with backwardat
 
   "life-and-health-insurance-exam-anki-deck": `### What is inside
 
-Life & Health licensing cards: policy types (term, whole, universal), riders, annuities, group vs individual health, Medicare Parts A–D basics, HIPAA privacy, replacement regulations, and producer licensing duties. Cards track national outline language state exams adapt.
+Life & Health licensing cards: policy types (term, whole, universal), riders, annuities, group vs individual health, Medicare Parts A–D basics, HIPAA privacy, replacement regulations, and producer licensing duties. Covers national-core Life & Health topics only — add your state's insurance-law material separately.
 
 ### Plan with the free mock
 
-20 cards/day for four weeks, then the free Life & Health practice test. Review annuity and Medicare sections twice — they carry disproportionate question share. Pair with P&C deck only if pursuing both lines.
+20 cards/day for four weeks, then the free Life & Health practice test. Give annuities, policy provisions, and Medicare extra passes when your state's outline lists them — weights vary by state. Pair with P&C deck only if pursuing both lines.
 
 ### Pitfalls this deck targets
 

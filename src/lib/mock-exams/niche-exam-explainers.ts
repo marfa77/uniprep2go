@@ -1441,7 +1441,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The NEBOSH International General Certificate (IGC) is a Level 3 occupational health and safety qualification assessed by Unit GIC1 (scenario-based open-book examination) and Unit GIC2 (practical workplace risk assessment). It covers management systems, workplace hazards, and risk control for managers, supervisors, and aspiring safety practitioners. UniPrep2Go’s readiness check is independent MCQ practice aligned to IGC syllabus themes — not an official NEBOSH paper.",
     administeredBy: "NEBOSH (National Examination Board in Occupational Safety and Health)",
     officialFormat:
-      "Official IGC (learner guide Jan 2026): GIC1 open-book scenario exam — 5 hours assessment time, 100 marks, 45% provisional pass (Distinction 75+ / Credit 65–74 / Pass 45–64); GIC2 practical risk assessment — 4 hours, pass/refer only. UniPrep2Go free mock: 50 MCQ / 100 min / 70% readiness — knowledge diagnostic only.",
+      "Official IGC (syllabus guide v2.2): GIC1 open-book scenario exam — 5 hours assessment time within a 24-hour window, 100 marks, 45% provisional pass (Distinction 75+ / Credit 65–74 / Pass 45–64), covers Elements 1–4; GIC2 practical risk assessment — 4 hours, Elements 5–11 hazards, pass/refer only. UniPrep2Go free mock: 50 MCQ / 100 min / 70% readiness — knowledge diagnostic only.",
     whoFor:
       "Safety officers, supervisors, and career changers preparing for NEBOSH IGC through an accredited Learning Partner who want a timed MCQ diagnostic on management systems and hazard control before GIC1/GIC2.",
     howToPrepare:

@@ -9,23 +9,23 @@ Do **not** re-run WebSearch SERP or rewrite cites if `last_pass` is &lt; 60 days
 | Slug | Kind | last_pass | next_ok | One-line beat / gap |
 | --- | --- | --- | --- | --- |
 | acsm-cpt-anki-deck + acsm-cpt-readiness-check | wave pair | 2026-08-30 | 2026-10-29 | Pair backfill: $11/120 + free 120Q; official 135Q/150m/550; pitch + mock SEO Anki CTA |
-| ashrae-certifications-anki-deck + ashrae-certifications-readiness-check | building pair | 2026-08-30 | 2026-10-29 | Pair backfill: $11/250 + free 50Q; pitch + mock SEO $11 Anki CTA |
-| nebosh-anki-deck + nebosh-readiness-check | building pair | 2026-08-30 | 2026-10-29 | Pair backfill: honest GIC1/GIC2 not-MCQ; $11 + 50Q; pitch + SEO Anki CTA |
+| ashrae-certifications-anki-deck + ashrae-certifications-readiness-check | building pair | 2026-08-30 | 2026-10-29 | Pair backfill: $11/250 + free 50Q; pitch + mock SEO $11 Anki CTA · 2026-09-29 P0 honesty: no 'same exam' template; multi-credential + official practice exam positioning |
+| nebosh-anki-deck + nebosh-readiness-check | building pair | 2026-08-30 | 2026-10-29 | Pair backfill: honest GIC1/GIC2 not-MCQ; $11 + 50Q; pitch + SEO Anki CTA · 2026-09-29 P0 honesty: no 'same exam' template; GIC1=Elements 1–4, Elements 5–11 GIC2-only; 24h window; provisional 45% |
 | well-ap-anki-deck + well-ap-readiness-check | building pair | 2026-08-30 | 2026-10-29 | Pair backfill: $11/250 + 50Q; official 115/2.5h/170; pitch + mock SEO Anki CTA |
 | wave-31 cohort | wave | 2026-08-15 | 2026-10-14 | State-RE / money / DELE compact; see wave-31 doc |
 | luxembourg-vivre-ensemble-anki-deck + luxembourg-vivre-ensemble-readiness-check | wave pair | 2026-09-27 | 2026-11-26 | Full rebuild (user ask): beat — $16 FR+EN 239+239 cards (vs OpenExamPrep 118 free Q, vivre-ensemble.lu ~€69 web-only), official 10/20/10 subdecks, key point on every card, 22 traps incl. CAI=course-only, 2023 Constitution; pass mark hedged (not in RGD 2017; prep sites 28/40); blog + explainer facts fixed; mock rebuilt as official-format sim (40Q/60m, 10/20/10, 168-Q bank). Gap — no DE deck, no cheat sheets, no EN mock |
 | delf-b2-french-anki-deck | language (no mock) | 2026-08-17 | 2026-10-16 | $26 / 2000+ audio vs Language Atlas / AnkiWeb LITE; don’t overclaim vs Prep2Go shop |
 | dutch-a2-inburgering-anki-deck | language (no mock) | 2026-08-17 | 2026-10-16 | $26 / 2000 audio; Inburgering = 5 modules, not one MCQ |
 | german-a2-anki-deck | language (no mock) | 2026-08-17 | 2026-10-16 | $26 / 2000 Goethe-telc-ÖSD-DTZ; not Leben in Deutschland civics |
-| cfa-level-1-anki-deck + cfa-level-1-readiness-check | finance pair | 2026-08-30 | 2026-10-29 | Pair backfill: mock SEO → $29/342 Anki + formula PDF; official 180/4h30 |
+| cfa-level-1-anki-deck + cfa-level-1-readiness-check | finance pair | 2026-08-30 | 2026-10-29 | Pair backfill: mock SEO → $29/342 Anki + formula PDF; official 180/4h30 · 2026-09-29 P0 facts: 2026 outline label, 2×135 min |
 | cfa-level-1-formula-reference-2026 | finance PDF | 2026-08-17 | 2026-10-16 | $19 / 250 formulas; companion to L1 Anki + mock |
-| cfa-level-2-anki-deck + cfa-level-2-readiness-check | finance pair | 2026-08-30 | 2026-10-29 | Both pages: mock honesty vs 300Hours/FinQuiz/LES; 60Q + $39/495 |
-| frm-part-1-anki-deck + frm-part-1-readiness-check | finance pair | 2026-08-30 | 2026-10-29 | Pair backfill: mock SEO → $29/444 Anki CTA |
-| california-real-estate-exam-anki-deck + california-real-estate-readiness-check | state-RE pair | 2026-08-30 | 2026-10-29 | Pair backfill: 400 CA + 60Q; pitch + mock SEO Anki CTA; official 150Q/3h15/70% |
+| cfa-level-2-anki-deck + cfa-level-2-readiness-check | finance pair | 2026-08-30 | 2026-10-29 | Both pages: mock honesty vs 300Hours/FinQuiz/LES; 60Q + $39/495 · 2026-09-29 P0 facts: CFA L2 = 22 item sets/88Q (11 per session), 80 scored + 2 trial sets, 2026 topic names; fixed 404 CFA Institute URLs (L1+L2); Gumroad bundle renamed Recall Bundle + true $58→$24 savings |
+| frm-part-1-anki-deck + frm-part-1-readiness-check | finance pair | 2026-08-30 | 2026-10-29 | Pair backfill: mock SEO → $29/444 Anki CTA · 2026-09-29 P0 facts: 2026 LOs source, cards 87/122/124/111 shown |
+| california-real-estate-exam-anki-deck + california-real-estate-readiness-check | state-RE pair | 2026-08-30 | 2026-10-29 | Pair backfill: 400 CA + 60Q; pitch + mock SEO Anki CTA; official 150Q/3h15/70% · 2026-09-29 P0 facts: DRE TakingExam = 150Q / 3h / 70% single state exam (was 3h15, 75+75, both portions); Salesperson in mock+deck SEO title/H1; price $29 verified consistent site+Gumroad |
 | bench-energy-metal-trader-anki-deck | finance (no mock) | 2026-08-17 | 2026-10-16 | 202 LME cards already cited; samples 2–3 still duplicate sample-1 (no invent) |
 | aspt-phlebotomy-anki-deck + aspt-phlebotomy-readiness-check | wave pair (Anki planned) | 2026-08-17 | 2026-10-16 | Already paired: free 60Q live; deck planned; ≠ NHA / ASCP PBT |
 | cscs-nsca-anki-deck + cscs-nsca-readiness-check | wave pair (Anki planned) | 2026-08-23 | 2026-10-22 | Already paired: free 60Q; official 2 papers; ≠ CPT |
-| sie-exam-anki-deck + sie-full-mock (+ sie-quick-diagnostic) | finance pair | 2026-08-30 | 2026-10-29 | Pair backfill: full mock SEO → $11/300 Anki CTA; 75Q/105m/70% |
+| sie-exam-anki-deck + sie-full-mock (+ sie-quick-diagnostic) | finance pair | 2026-08-30 | 2026-10-29 | Pair backfill: full mock SEO → $11/300 Anki CTA; 75Q/105m/70% · 2026-09-29 P0 facts: 75+5 pretest=80 (Oct 2025), pass 70 equated, topic card counts 48/132/93/27 shown |
 | dele-a2-ccse-spanish-citizenship-bundle + ccse-espana-readiness-check | language pair | 2026-08-30 | 2026-10-29 | Pair backfill: pitch + mock SEO $26/60 CTA; ≠ 1500 vocab |
 | dele-a2-spanish-anki-deck | language (no mock) | 2026-08-23 | 2026-10-22 | Live $26 / 1500 vocab; cited separately from CCSE companion |
 | bms-building-automation-anki-deck + bms-bas-readiness-check | building pair | 2026-08-30 | 2026-10-29 | Pair backfill: mock SEO → $11/200+ Anki CTA |
@@ -35,7 +35,7 @@ Do **not** re-run WebSearch SERP or rewrite cites if `last_pass` is &lt; 60 days
 | ptcb-study-guide-2026 | PDF | 2026-08-23 | 2026-10-22 | $19 / 30p + 80Q; companion to PTCB Anki + 90Q mock |
 | ptcb-pharmacy-technician-anki-deck + ptcb-pharmacy-technician-mock | Anki pair | 2026-08-23 | 2026-10-22 | Already paired: $11/300 + free 90Q; official 90Q/1h50/1400 |
 | series-63-anki-deck + series-63-readiness-check | finance pair | 2026-08-30 | 2026-10-29 | Pair backfill: money-page + mock SEO Anki CTA (Layer B pos ~11) |
-| ielts-toefl-english-for-portuguese-speakers-anki-deck | language (no mock) | 2026-08-25 | 2026-10-24 | Unique PT-BR money page; $26 / 2504 |
+| ielts-toefl-english-for-portuguese-speakers-anki-deck | language (no mock) | 2026-08-25 | 2026-10-24 | Unique PT-BR money page; $26 / 2482 |
 | finland-kansalaisuuskoe-readiness-check | citizenship mock-only | 2026-08-27 | 2026-10-26 | Mock-only (no Anki); 2027 Migri path |
 | mrics-quantity-surveying-anki-deck + mrics-quantity-surveying-readiness-check | building pair | 2026-08-28 | 2026-10-27 | Already paired: free 50Q + $11/250+; honest no-MCQ APC |
 | mrics-anki-deck + mrics-readiness-check | building pair | 2026-08-31 | 2026-10-30 | Pulse deck views; cross-pathway $11/250+ + free 50Q vs Brainscape/PracticeTestGeeks; examFactsKey wired; ≠ QS SKU |
@@ -45,14 +45,14 @@ Do **not** re-run WebSearch SERP or rewrite cites if `last_pass` is &lt; 60 days
 | spanish-italian-paired-anki-deck | language planned (no mock) | 2026-08-30 | 2026-10-29 | Deck-only: dual-audio Prep2Go 940+ vs AnkiWeb IT↔ES |
 | czech-citizenship-anki-deck + czech-citizenship-readiness-check | citizenship pair (Anki planned) | 2026-08-31 | 2026-10-30 | Yahoo CZ Learn start; free 60Q/45m vs NPI 30/30/60% + OpenExamPrep; money-page + exam-facts + official cestina-pro-cizince cites |
 | ace-cpt-anki-deck + ace-cpt-readiness-check | wave pair | 2026-08-13 | 2026-10-12 | Already paired: $11/300 + free 60Q |
-| series-7-anki-deck + series-7-readiness-check | finance pair | 2026-09-03 | 2026-11-02 | Pulse+Threads traffic; free 60Q vs Mastery/TakeZero/FreeFellow 125Q banks; $29/300 Anki CTA; official 125/3h45/~72% honesty |
+| series-7-anki-deck + series-7-readiness-check | finance pair | 2026-09-03 | 2026-11-02 | Pulse+Threads traffic; free 60Q vs Mastery/TakeZero/FreeFellow 125Q banks; $29/300 Anki CTA; official 125/3h45/~72% honesty · 2026-09-29 P0 facts: 125+5=130, pass 72 equated, FINRA URL fixed, cards 21/27/219/33 shown |
 | gre-anki-deck + gre-readiness-check | academic pair (Anki planned) | 2026-09-03 | 2026-11-02 | Free 30Q V+Q both-axes vs PowerPrep/AnkiWeb vocab megas; planned 350-card Anki; Writing not in mock |
-| servsafe-manager-anki-deck + servsafe-manager-mock | professional pair | 2026-09-03 | 2026-11-02 | Free 90Q + $19/300 vs Brainscape/servsafepractice teasers; exam-facts 80+10; handbook 75% honesty |
+| servsafe-manager-anki-deck + servsafe-manager-mock | professional pair | 2026-09-03 | 2026-11-02 | Free 90Q + $19/300 vs Brainscape/servsafepractice teasers; exam-facts 80+10; handbook 75% honesty; 2026-09-29 P0 facts: official 70% (56/80) per current FAQ, handbook 75% = old doc, mock 75% = readiness target |
 | nha-cbcs-anki-deck + nha-cbcs-readiness-check | wave pair (Anki planned) | 2026-09-07 | 2026-11-06 | DuckDuckGo US start; free 60Q vs MedPreps/OpenExamPrep volume; official 100+25/3h/390; ≠ AAPC CPC; Anki waitlist |
 | cosmetology-state-anki-deck + cosmetology-state-readiness-check | wave pair (Anki planned) | 2026-09-07 | 2026-11-06 | Pulse deck views; free 60Q vs SalonExam/AnkiWeb 300+; NIC Theory 110/90m honesty; practical separate |
 | danish-a2-prove-i-dansk-anki-deck | language (no mock) | 2026-09-07 | 2026-11-06 | Pulse views; $26/1000 audio PD2/PD3 (B1+) vs AnkiWeb LITE 100; ≠ PD1/A2; ≠ Indfødsretsprøven |
 | cdl-general-knowledge-anki-deck + cdl-general-knowledge-readiness-check | wave pair (Anki planned) | 2026-09-08 | 2026-11-07 | Pulse+Threads US traffic; free 60Q vs CristCDL/US Permit Prep 50Q banks; typical state GK ~50/80% honesty; ≠ skills/endorsements; Anki waitlist |
-| ielts-toefl-english-for-russian-speakers-anki-deck | language (no mock) | 2026-09-08 | 2026-11-07 | Pulse deck views; $26/2504 RU-gloss IELTS/TOEFL vs AnkiWeb EVU/EN–RU dumps; cognate-trap money page; ≠ PT-BR/LatAm siblings |
+| ielts-toefl-english-for-russian-speakers-anki-deck | language (no mock) | 2026-09-08 | 2026-11-07 | Pulse deck views; $26/2482 RU-gloss IELTS/TOEFL vs AnkiWeb EVU/EN–RU dumps; cognate-trap money page; ≠ PT-BR/LatAm siblings |
 | armed-security-officer-anki-deck + armed-security-officer-readiness-check | wave pair (Anki planned) | 2026-09-12 | 2026-11-11 | Pulse mock views; free 60Q written vs OpenExamPrep multi-state volume; state-specific honesty; ≠ unarmed; ≠ range; Anki waitlist |
 | veterinary-assistant-anki-deck + veterinary-assistant-readiness-check | wave pair (Anki planned) | 2026-09-12 | 2026-11-11 | Pulse mock views; free 60Q vs OpenExamPrep/VetMedTeam; official AVA ~100Q/150m/75%; ≠ VTNE; Anki waitlist |
 | medical-scribe-anki-deck + medical-scribe-readiness-check | wave pair (Anki planned) | 2026-09-20 | 2026-11-19 | Bing PH Exam start; bank rewritten from CMA remap; free 60Q vs OpenExamPrep MSCE volume; MSCE ~100/75/80% honesty; ≠ CCMA/CMA; Anki waitlist |
