@@ -767,9 +767,9 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A 51-question PMP readiness diagnostic scored on the three official ECO domains — People, Process, and Business Environment — with pacing feedback and full answer review. Independent prep aligned to the 2026 PMI outline.",
     examBody: "PMI",
-    lastUpdated: "2026-07-16",
+    lastUpdated: "2026-09-29",
     questionSourceNote:
-      "Original UniPrep2Go questions authored for the PMP readiness check (115 People + 115 Process + 116 Business Environment in the Anki bank; 51-question timed session).",
+      "Original UniPrep2Go questions authored for the PMP readiness check (114 People + 142 Process + 90 Business Environment in the Anki bank, matching the 2026 ECO 33/41/26 weighting; 51-question timed session).",
     ankiDeckCardCount: 346,
   },
   {

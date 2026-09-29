@@ -70,7 +70,15 @@ EXAM_CONTEXT: dict[str, dict[str, str]] = {
             "The PMP is PMI's project management certification exam based on the Exam Content Outline "
             "(People, Process, and Business Environment domains)."
         ),
-        "covers": "This deck drills ECO-aligned scenario MCQs across People, Process, and Business Environment.",
+        "covers": (
+            "This deck drills scenario MCQs weighted to the 2026 Exam Content Outline (live July 9, 2026): "
+            "People 33%, Process 41%, Business Environment 26%."
+        ),
+        "topic_lines": [
+            "People — 114 cards (33%)",
+            "Process — 142 cards (41%)",
+            "Business Environment — 90 cards (26%)",
+        ],
         "disclaimer": "PMI",
     },
     "leed-ap-om-anki-deck": {
@@ -176,9 +184,14 @@ def build_sample_section(spec: dict) -> str:
 def build_description(spec: dict) -> str:
     count = spec["cardCount"]
     topics = list(spec["topics"].values())
-    topic_items = "".join(f"<li>{t}</li>" for t in topics[:8])
     per_topic = count // max(len(topics), 1)
     ctx = EXAM_CONTEXT.get(spec["deckSlug"])
+    if ctx and ctx.get("topic_lines"):
+        topic_items = "".join(f"<li>{t}</li>" for t in ctx["topic_lines"])
+        count_line = f"<li>{count} high-yield MCQ cards, split by exam domain weight</li>"
+    else:
+        topic_items = "".join(f"<li>{t}</li>" for t in topics[:8])
+        count_line = f"<li>{count} high-yield MCQ cards (~{per_topic} per topic domain)</li>"
     exam_name = ctx["exam_name"] if ctx else (spec.get("deckName") or spec["deckLabel"])
     blurb = (
         f"<p><strong>Exam:</strong> {ctx['blurb']}</p><p>{ctx['covers']}</p>"
@@ -191,7 +204,7 @@ def build_description(spec: dict) -> str:
     return f"""<p><strong>{count} {spec['deckLabel']} Anki flashcards</strong> for the {exam_name} — MCQ format with explanations and distractor notes on every card.</p>
 {blurb}
 <p><strong>What's inside:</strong></p><ul>
-<li>{count} high-yield MCQ cards (~{per_topic} per topic domain)</li>
+{count_line}
 {topic_items}
 <li>Built from the same validated item bank as the free UniPrep2Go readiness check</li>
 </ul>

@@ -3156,7 +3156,7 @@ const rawDecks: Deck[] = [
     subtitle: "A planned spaced-repetition deck for PMI PMP People, Process, and Business Environment domains.",
     directAnswer:
       "The PMP Anki Deck is a planned UniPrep2Go product with 346 flashcards across the three 2026 Exam Content Outline domains. It is not yet available for purchase. Take the free PMP readiness check to benchmark People, Process, and Business Environment first.",
-    lastUpdated: "2026-07-16",
+    lastUpdated: "2026-09-29",
     audience:
       "Project managers preparing for the PMI Project Management Professional (PMP) exam using spaced repetition alongside ECO-aligned study.",
     format: ".apkg",
@@ -3171,17 +3171,17 @@ const rawDecks: Deck[] = [
       {
         name: "People",
         examWeight: "33% of PMP exam (2026 ECO)",
-        cards: "115",
+        cards: "114",
       },
       {
         name: "Process",
         examWeight: "41% of PMP exam (2026 ECO)",
-        cards: "115",
+        cards: "142",
       },
       {
         name: "Business Environment",
         examWeight: "26% of PMP exam (2026 ECO)",
-        cards: "116",
+        cards: "90",
       },
     ],
     sampleCards: [
