@@ -5853,7 +5853,7 @@
     "options": [
       {
         "id": "a",
-        "text": "-3/4"
+        "text": "4/3"
       },
       {
         "id": "b",
@@ -5865,15 +5865,15 @@
       },
       {
         "id": "d",
-        "text": "4/3"
+        "text": "-3/4"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "The radius from origin (0,0) to point (6,8) has slope m = 8/6 = 4/3. Since a tangent line is perpendicular to the radius at the point of tangency, the slope of the tangent line is the negative reciprocal: m_tangent = -1/(4/3) = -3/4.",
     "distractorExplanations": {
+      "a": "This incorrectly uses the radius slope without applying the perpendicular relationship, or confuses the coordinates when calculating slope.",
       "b": "This is the slope of the radius itself (4/3), not the tangent line. The tangent is perpendicular to the radius.",
-      "c": "This results from taking the reciprocal of the radius slope but forgetting the negative sign required for perpendicular lines.",
-      "d": "This incorrectly uses the radius slope without applying the perpendicular relationship, or confuses the coordinates when calculating slope."
+      "c": "This results from taking the reciprocal of the radius slope but forgetting the negative sign required for perpendicular lines."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -5952,7 +5952,7 @@
     "options": [
       {
         "id": "a",
-        "text": "5/11"
+        "text": "1/3"
       },
       {
         "id": "b",
@@ -5964,15 +5964,15 @@
       },
       {
         "id": "d",
-        "text": "1/3"
+        "text": "5/11"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Initially: 9 red, 12 blue, 15 green marbles (ratio 3:4:5 of 36 total). After removing 2 red and 1 blue: 7 red, 11 blue, 15 green remain, for 33 total. Probability of green = 15/33 = 5/11.",
     "distractorExplanations": {
+      "a": "1/3 = 11/33 is the probability of drawing a blue marble, not a green one.",
       "b": "15/34 subtracts only two marbles from the total instead of three.",
-      "c": "This incorrectly uses 36 as the denominator instead of the remaining 33 marbles, giving 15/36 = 5/12.",
-      "d": "1/3 = 11/33 is the probability of drawing a blue marble, not a green one."
+      "c": "This incorrectly uses 36 as the denominator instead of the remaining 33 marbles, giving 15/36 = 5/12."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -6053,7 +6053,7 @@
     "options": [
       {
         "id": "a",
-        "text": "20π minutes"
+        "text": "80 minutes"
       },
       {
         "id": "b",
@@ -6065,15 +6065,15 @@
       },
       {
         "id": "d",
-        "text": "80 minutes"
+        "text": "20π minutes"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "The volume of the cylinder is π × 4² × 10 = 160π cubic feet. At a rate of 8 cubic feet per minute, it takes 160π ÷ 8 = 20π minutes to fill the tank.",
     "distractorExplanations": {
+      "a": "This calculates the volume as 160π ≈ 502.65 cubic feet, then divides by 8 to get approximately 62.8 minutes, but rounds incorrectly or uses π ≈ 2.5 instead of π ≈ 3.14.",
       "b": "This incorrectly uses the diameter instead of radius in the volume calculation, getting V = π × 8² × 10 = 640π, then 640π ÷ 8 = 80π, but then divides by 2 to get 40π.",
-      "c": "This calculates the volume correctly as 160π but forgets to divide by the pumping rate of 8 cubic feet per minute.",
-      "d": "This calculates the volume as 160π ≈ 502.65 cubic feet, then divides by 8 to get approximately 62.8 minutes, but rounds incorrectly or uses π ≈ 2.5 instead of π ≈ 3.14."
+      "c": "This calculates the volume correctly as 160π but forgets to divide by the pumping rate of 8 cubic feet per minute."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -6163,19 +6163,19 @@
       },
       {
         "id": "c",
-        "text": "268"
+        "text": "244"
       },
       {
         "id": "d",
-        "text": "244"
+        "text": "268"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "c",
     "explanation": "a₁ = 4, a₂ = 10, a₃ = 28, a₄ = 82, a₅ = 3(82) − 2 = 244.",
     "distractorExplanations": {
       "a": "274 would require a₄ = 92.",
       "b": "250 adds 4 instead of subtracting 2 at the last step.",
-      "c": "268 would require a₄ = 90."
+      "d": "268 would require a₄ = 90."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -6193,7 +6193,7 @@
       },
       {
         "id": "b",
-        "text": "72"
+        "text": "108"
       },
       {
         "id": "c",
@@ -6201,15 +6201,15 @@
       },
       {
         "id": "d",
-        "text": "108"
+        "text": "72"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "The inscribed circle has radius 6 (half the square's side length). When a square is inscribed in this circle, the diagonal of the inner square equals the circle's diameter (12). If the inner square has side length s, then its diagonal is s√2 = 12, so s = 12/√2 = 6√2. The area of the inner square is s² = (6√2)² = 36 × 2 = 72.",
     "distractorExplanations": {
       "a": "This results from incorrectly using the radius (6) as the side length of the inscribed square, giving 6² = 36.",
-      "c": "This comes from using the diameter (12) as the side length of the inscribed square instead of recognizing it as the diagonal.",
-      "d": "This results from making an error in the relationship between the diagonal and side length, such as using s√3 instead of s√2."
+      "b": "This results from making an error in the relationship between the diagonal and side length, such as using s√3 instead of s√2.",
+      "c": "This comes from using the diameter (12) as the side length of the inscribed square instead of recognizing it as the diagonal."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -6356,7 +6356,7 @@
     "options": [
       {
         "id": "a",
-        "text": "24π square inches"
+        "text": "96π square inches"
       },
       {
         "id": "b",
@@ -6368,15 +6368,15 @@
       },
       {
         "id": "d",
-        "text": "96π square inches"
+        "text": "24π square inches"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "The radius is 16/2 = 8 inches. The total area is π(8)² = 64π square inches. Since 3 slices represent 3/8 of the total pizza, the area of 3 slices is (3/8) × 64π = 24π square inches.",
     "distractorExplanations": {
+      "a": "This results from calculating the area of 6 slices instead of 3 slices, or from other computational errors.",
       "b": "This results from calculating the area of 4 slices (half the pizza) instead of 3 slices.",
-      "c": "This comes from using the diameter instead of radius in the area formula, giving π(16)² = 256π, then taking 3/8 of that.",
-      "d": "This results from calculating the area of 6 slices instead of 3 slices, or from other computational errors."
+      "c": "This comes from using the diameter instead of radius in the area formula, giving π(16)² = 256π, then taking 3/8 of that."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -6534,19 +6534,19 @@
       },
       {
         "id": "c",
-        "text": "43/253"
+        "text": "49/253"
       },
       {
         "id": "d",
-        "text": "49/253"
+        "text": "43/253"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "d",
     "explanation": "Total ways to choose 3 balls from 24: C(24,3) = 2024. Ways to choose 3 red: C(8,3) = 56. Ways to choose 3 blue: C(10,3) = 120. Ways to choose 3 green: C(6,3) = 20. Probability = (56+120+20)/2024 = 196/2024 = 43/253.",
     "distractorExplanations": {
       "a": "This results from miscalculating one of the combination values, likely C(6,3) as 14 instead of 20.",
       "b": "This comes from an error in calculating C(10,3), possibly as 105 instead of 120.",
-      "d": "This results from adding an extra favorable outcome or miscalculating the total combinations."
+      "c": "This results from adding an extra favorable outcome or miscalculating the total combinations."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -6560,7 +6560,7 @@
     "options": [
       {
         "id": "a",
-        "text": "4"
+        "text": "5"
       },
       {
         "id": "b",
@@ -6572,15 +6572,15 @@
       },
       {
         "id": "d",
-        "text": "5"
+        "text": "4"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "Work backward: a₂ = (29 − 3) ÷ 2 = 13, then a₁ = (13 − 3) ÷ 2 = 5. Check: 5 → 13 → 29.",
     "distractorExplanations": {
-      "a": "a₁ = 4 gives 4 → 11 → 25.",
       "b": "a₁ = 8 gives 8 → 19 → 41.",
-      "c": "a₁ = 7 gives 7 → 17 → 37."
+      "c": "a₁ = 7 gives 7 → 17 → 37.",
+      "d": "a₁ = 4 gives 4 → 11 → 25."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -6602,19 +6602,19 @@
       },
       {
         "id": "c",
-        "text": "5/4"
+        "text": "√5/2"
       },
       {
         "id": "d",
-        "text": "√5/2"
+        "text": "5/4"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "c",
     "explanation": "The radius is √(36 + 64) = 10. For the line y = mx + 15 to be tangent, its distance from the origin must equal 10: 15/√(m² + 1) = 10, so m² + 1 = 2.25 and m² = 1.25. The positive slope is √1.25 = √5/2.",
     "distractorExplanations": {
       "a": "m = 1/2 gives distance 15/√1.25 ≈ 13.4, so the line misses the circle.",
       "b": "m = 3/4 gives distance 15/1.25 = 12, so the line misses the circle.",
-      "c": "m = 5/4 gives distance 15/√2.5625 ≈ 9.4, so the line cuts the circle."
+      "d": "m = 5/4 gives distance 15/√2.5625 ≈ 9.4, so the line cuts the circle."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -6761,7 +6761,7 @@
     "options": [
       {
         "id": "a",
-        "text": "10"
+        "text": "4"
       },
       {
         "id": "b",
@@ -6773,15 +6773,15 @@
       },
       {
         "id": "d",
-        "text": "4"
+        "text": "10"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "The rectangle's area is 96, so triangle ABE has area 24. Since BE is perpendicular to AB, area = ½ × 12 × BE = 6 × BE = 24, so BE = 4.",
     "distractorExplanations": {
-      "a": "BE = 10 is longer than side BC, which is only 8.",
       "b": "BE = 6 gives a triangle area of 36, which is three-eighths of the rectangle.",
-      "c": "BE = 8 is the full side BC and gives an area of 48, half the rectangle."
+      "c": "BE = 8 is the full side BC and gives an area of 48, half the rectangle.",
+      "d": "BE = 10 is longer than side BC, which is only 8."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -6904,19 +6904,19 @@
       },
       {
         "id": "c",
-        "text": "105%"
+        "text": "100%"
       },
       {
         "id": "d",
-        "text": "100%"
+        "text": "105%"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "c",
     "explanation": "Multiply the factors: 1.25 × 0.80 = 1.00, so the final price equals 100% of the original.",
     "distractorExplanations": {
       "a": "90% would mean a 10% net decrease; 1.25 × 0.80 is exactly 1.",
       "b": "95% assumes a small net loss, but the 20% cut applies to the larger price and exactly undoes the 25% rise.",
-      "c": "105% simply adds +25% and −20%."
+      "d": "105% simply adds +25% and −20%."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -7064,7 +7064,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The mean will decrease and the median will remain unchanged"
+        "text": "The mean will decrease but the median may increase, decrease, or stay the same"
       },
       {
         "id": "b",
@@ -7072,18 +7072,18 @@
       },
       {
         "id": "c",
-        "text": "The mean will decrease but the median may increase, decrease, or stay the same"
+        "text": "The mean will decrease and the median will remain unchanged"
       },
       {
         "id": "d",
         "text": "The median will decrease but the mean may increase, decrease, or stay the same"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "a",
     "explanation": "Removing the largest value will definitely decrease the mean since we're removing a value that's above the current mean of 45. However, the median's behavior depends on the specific distribution of values around the middle positions, so it could increase, decrease, or remain the same depending on the data arrangement.",
     "distractorExplanations": {
-      "a": "While the mean will decrease, the median will not necessarily remain unchanged - it depends on the specific values near the middle positions.",
       "b": "Although the mean will decrease, the median doesn't have to decrease when removing the maximum value - it depends on the distribution around the middle.",
+      "c": "While the mean will decrease, the median will not necessarily remain unchanged - it depends on the specific values near the middle positions.",
       "d": "This reverses the certainty - removing the largest value will always decrease the mean, but the median's change is uncertain."
     },
     "difficulty": "hard",
@@ -7106,19 +7106,19 @@
       },
       {
         "id": "c",
-        "text": "8.0 hours"
+        "text": "6.4 hours"
       },
       {
         "id": "d",
-        "text": "6.4 hours"
+        "text": "8.0 hours"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "c",
     "explanation": "Volume = 20 × 30 × 6 = 3,600 ft³. 80% is 2,880 ft³. At 450 ft³ per hour: 2,880 ÷ 450 = 6.4 hours.",
     "distractorExplanations": {
       "a": "9.6 hours would require a rate of 300 ft³ per hour.",
       "b": "7.2 hours fills 3,240 ft³, which is 90% of capacity.",
-      "c": "8.0 hours fills 3,600 ft³, which is the full pool."
+      "d": "8.0 hours fills 3,600 ft³, which is the full pool."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -7233,7 +7233,7 @@
     "options": [
       {
         "id": "a",
-        "text": "176π + 64 square feet"
+        "text": "352 + 64π square feet"
       },
       {
         "id": "b",
@@ -7241,18 +7241,18 @@
       },
       {
         "id": "c",
-        "text": "352 + 64π square feet"
+        "text": "176π + 64 square feet"
       },
       {
         "id": "d",
         "text": "176 + 32π square feet"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "a",
     "explanation": "First, find the garden's radius: 88 = 2πr, so r = 14 feet. The garden area is π(14)² = 196π. The rectangular pathway creates a square with side length 2(14 + 4) = 36 feet, so the total area is 36² = 1,296. The pathway area is 1,296 - 196π = 1,296 - 196π. Since 1,296 = 352 + 944 and 944 ≈ 196π when π ≈ 3.14, we get approximately 352 + 64π square feet.",
     "distractorExplanations": {
-      "a": "This incorrectly calculates the pathway area as the circumference times width plus corner area, rather than using the difference between total and garden areas.",
       "b": "This treats the pathway as having a constant width around the circumference, ignoring that the rectangular boundary creates a different shape.",
+      "c": "This incorrectly calculates the pathway area as the circumference times width plus corner area, rather than using the difference between total and garden areas.",
       "d": "This uses an incorrect formula for the rectangular boundary dimensions and miscalculates the area difference."
     },
     "difficulty": "hard",
@@ -7333,7 +7333,7 @@
     "options": [
       {
         "id": "a",
-        "text": "$200,000"
+        "text": "$160,000"
       },
       {
         "id": "b",
@@ -7341,18 +7341,18 @@
       },
       {
         "id": "c",
-        "text": "$160,000"
+        "text": "$200,000"
       },
       {
         "id": "d",
         "text": "$220,000"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Working backwards: if Q3 = $184,000 and this represents an 80% of Q2 (20% decrease), then Q2 = $184,000 ÷ 0.8 = $230,000. Since Q2 represents 115% of Q1 (15% increase), then Q1 = $230,000 ÷ 1.15 = $200,000.",
     "distractorExplanations": {
+      "a": "This applies the percentage changes in the wrong direction, treating increases as decreases.",
       "b": "This incorrectly assumes Q3 revenue equals Q1 revenue after the increases and decreases cancel out, ignoring the compounding effect.",
-      "c": "This applies the percentage changes in the wrong direction, treating increases as decreases.",
       "d": "This incorrectly calculates by adding the net percentage change (15% - 20% = -5%) directly to Q3 revenue."
     },
     "difficulty": "medium",
@@ -7366,7 +7366,7 @@
     "options": [
       {
         "id": "a",
-        "text": "(5, 11)"
+        "text": "(10, 20)"
       },
       {
         "id": "b",
@@ -7378,15 +7378,15 @@
       },
       {
         "id": "d",
-        "text": "(10, 20)"
+        "text": "(5, 11)"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "First find the slope: m = (17-5)/(8-2) = 12/6 = 2. Using point-slope form with point (2,5): y - 5 = 2(x - 2), which simplifies to y = 2x + 1. Checking point (5, 11): 11 = 2(5) + 1 = 11 ✓.",
     "distractorExplanations": {
+      "a": "On y = 2x + 1, x = 10 gives y = 21, not 20.",
       "b": "On y = 2x + 1, x = 4 gives y = 9, not 10.",
-      "c": "On y = 2x + 1, x = 6 gives y = 13, not 12.",
-      "d": "On y = 2x + 1, x = 10 gives y = 21, not 20."
+      "c": "On y = 2x + 1, x = 6 gives y = 13, not 12."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -7399,7 +7399,7 @@
     "options": [
       {
         "id": "a",
-        "text": "48π"
+        "text": "96π"
       },
       {
         "id": "b",
@@ -7411,15 +7411,15 @@
       },
       {
         "id": "d",
-        "text": "96π"
+        "text": "48π"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "Cone volume = (1/3)πr²h = (1/3)π(36)(8) = 96π.",
     "distractorExplanations": {
-      "a": "48π is half the correct volume.",
       "b": "288π is the volume of a cylinder with the same radius and height.",
-      "c": "144π uses r = 6 with h = 12."
+      "c": "144π uses r = 6 with h = 12.",
+      "d": "48π is half the correct volume."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -7440,19 +7440,19 @@
       },
       {
         "id": "c",
-        "text": "27"
+        "text": "18"
       },
       {
         "id": "d",
-        "text": "18"
+        "text": "27"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "c",
     "explanation": "By inclusion–exclusion, 45 + 75 − 18 = 102 students play at least one sport, so 120 − 102 = 18 play neither.",
     "distractorExplanations": {
       "a": "12 does not match 120 − (45 + 75 − 18).",
       "b": "33 does not match the inclusion–exclusion total.",
-      "c": "27 is 45 − 18, the number who play only basketball."
+      "d": "27 is 45 − 18, the number who play only basketball."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -7601,7 +7601,7 @@
     "options": [
       {
         "id": "a",
-        "text": "20"
+        "text": "30"
       },
       {
         "id": "b",
@@ -7613,15 +7613,15 @@
       },
       {
         "id": "d",
-        "text": "30"
+        "text": "20"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "With a adult tickets, 12a + 8(50 − a) = 520, so 4a + 400 = 520 and a = 30. Check: 30 × $12 + 20 × $8 = $360 + $160 = $520.",
     "distractorExplanations": {
-      "a": "20 is the number of child tickets.",
       "b": "25 adult tickets would bring in $500.",
-      "c": "35 adult tickets would bring in $540."
+      "c": "35 adult tickets would bring in $540.",
+      "d": "20 is the number of child tickets."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -7639,22 +7639,22 @@
       },
       {
         "id": "b",
-        "text": "100π"
+        "text": "144π"
       },
       {
         "id": "c",
-        "text": "144π"
+        "text": "100π"
       },
       {
         "id": "d",
         "text": "196π"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "The radius of the circle is the distance from the center (0, 0) to the point (6, 8). Using the distance formula: r = √[(6-0)² + (8-0)²] = √[36 + 64] = √100 = 10. Therefore, the area is πr² = π(10)² = 100π.",
     "distractorExplanations": {
       "a": "This incorrectly uses only one coordinate (8²) instead of calculating the full distance.",
-      "c": "This appears to use (6 + 8)² = 14² = 196, but then incorrectly reduces it, showing confusion about the distance formula.",
+      "b": "This appears to use (6 + 8)² = 14² = 196, but then incorrectly reduces it, showing confusion about the distance formula.",
       "d": "This uses (6 + 8)² = 14² = 196 as if the radius were 14, incorrectly adding coordinates instead of using the distance formula."
     },
     "difficulty": "medium",
@@ -7806,7 +7806,7 @@
       },
       {
         "id": "b",
-        "text": "20π"
+        "text": "160π"
       },
       {
         "id": "c",
@@ -7814,15 +7814,15 @@
       },
       {
         "id": "d",
-        "text": "160π"
+        "text": "20π"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "The volume of the cylinder is π(4²)(10) = 160π cubic feet. At a rate of 8 cubic feet per minute, it takes 160π ÷ 8 = 20π minutes to fill the tank.",
     "distractorExplanations": {
       "a": "This results from incorrectly calculating the volume as π(4)(10) = 40π and then dividing by 8, forgetting to square the radius.",
-      "c": "This comes from using the surface area formula 2πrh instead of the volume formula, getting 2π(4)(10) = 80π, then dividing by 8 incorrectly.",
-      "d": "This is the total volume of the tank (160π) but fails to divide by the pumping rate of 8 cubic feet per minute."
+      "b": "This is the total volume of the tank (160π) but fails to divide by the pumping rate of 8 cubic feet per minute.",
+      "c": "This comes from using the surface area formula 2πrh instead of the volume formula, getting 2π(4)(10) = 80π, then dividing by 8 incorrectly."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -7970,7 +7970,7 @@
     "options": [
       {
         "id": "a",
-        "text": "2"
+        "text": "-6"
       },
       {
         "id": "b",
@@ -7978,18 +7978,18 @@
       },
       {
         "id": "c",
-        "text": "-6"
+        "text": "2"
       },
       {
         "id": "d",
         "text": "5"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Using the slope formula with points A(2, 8) and B(10, y): -3/4 = (y - 8)/(10 - 2). Solving: -3/4 = (y - 8)/8, so -6 = y - 8, therefore y = 2.",
     "distractorExplanations": {
+      "a": "This comes from solving -6 = y - 8 incorrectly as y = -6 - 8.",
       "b": "This results from incorrectly using a positive slope of 3/4 instead of negative 3/4.",
-      "c": "This comes from solving -6 = y - 8 incorrectly as y = -6 - 8.",
       "d": "This results from using the wrong direction in the slope calculation or arithmetic errors."
     },
     "difficulty": "medium",
@@ -8203,7 +8203,7 @@
     "options": [
       {
         "id": "a",
-        "text": "100"
+        "text": "125"
       },
       {
         "id": "b",
@@ -8215,15 +8215,15 @@
       },
       {
         "id": "d",
-        "text": "125"
+        "text": "100"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "6s² = 150, so s² = 25 and s = 5. Volume = 5³ = 125 cubic inches.",
     "distractorExplanations": {
-      "a": "100 is 4s², the area of four faces.",
       "b": "216 is the volume of a cube with side 6.",
-      "c": "150 is the surface area, not the volume."
+      "c": "150 is the surface area, not the volume.",
+      "d": "100 is 4s², the area of four faces."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -8304,7 +8304,7 @@
     "options": [
       {
         "id": "a",
-        "text": "$95.22"
+        "text": "$93.15"
       },
       {
         "id": "b",
@@ -8316,15 +8316,15 @@
       },
       {
         "id": "d",
-        "text": "$93.15"
+        "text": "$95.22"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Following the alternating pattern: Monday (start) $80 → Tuesday (+15%) $92 → Wednesday (-10%) $82.80 → Thursday (+15%) $95.22. Since we want the price at the end of Wednesday, we need the result after three operations.",
     "distractorExplanations": {
+      "a": "This error occurs from stopping the calculation after only two days instead of continuing through Wednesday.",
       "b": "This results from incorrectly applying the percentage changes in the wrong order or making a calculation error in the final multiplication.",
-      "c": "This comes from adding the percentages arithmetically (15% - 10% = 5% net increase) rather than applying them sequentially, then calculating 80 × 1.05³.",
-      "d": "This error occurs from stopping the calculation after only two days instead of continuing through Wednesday."
+      "c": "This comes from adding the percentages arithmetically (15% - 10% = 5% net increase) rather than applying them sequentially, then calculating 80 × 1.05³."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -8372,7 +8372,7 @@
     "options": [
       {
         "id": "a",
-        "text": "$204.00"
+        "text": "$220.32"
       },
       {
         "id": "b",
@@ -8384,15 +8384,15 @@
       },
       {
         "id": "d",
-        "text": "$220.32"
+        "text": "$204.00"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "The $240 purchase qualifies for 15% off: $240 × 0.85 = $204. Adding 8% tax: $204 × 1.08 = $220.32.",
     "distractorExplanations": {
-      "a": "$204.00 is the discounted price before tax.",
       "b": "$219.24 does not match $204 × 1.08.",
-      "c": "$259.20 applies tax to the undiscounted $240."
+      "c": "$259.20 applies tax to the undiscounted $240.",
+      "d": "$204.00 is the discounted price before tax."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -8447,19 +8447,19 @@
       },
       {
         "id": "c",
-        "text": "63"
+        "text": "56"
       },
       {
         "id": "d",
-        "text": "56"
+        "text": "63"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "c",
     "explanation": "3w² = 147, so w² = 49 and w = 7; length = 21. Perimeter = 2(7 + 21) = 56.",
     "distractorExplanations": {
       "a": "42 is the perimeter of a 7 × 14 rectangle, whose area is 98.",
       "b": "70 would require a length of 28.",
-      "c": "63 is 3 × 21, not a perimeter."
+      "d": "63 is 3 × 21, not a perimeter."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -8472,7 +8472,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Both the mean and median increase"
+        "text": "The mean stays the same and the median increases"
       },
       {
         "id": "b",
@@ -8484,15 +8484,15 @@
       },
       {
         "id": "d",
-        "text": "The mean stays the same and the median increases"
+        "text": "Both the mean and median increase"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "When the smallest number is removed, the sum of the remaining numbers increases relative to their count, so the mean increases. Since we're removing the smallest value, the median (middle value) of the remaining 11 numbers will be higher than the original median of 42, so the median also increases.",
     "distractorExplanations": {
+      "a": "This incorrectly assumes the mean wouldn't change when removing the smallest number from a set where numbers vary.",
       "b": "This incorrectly assumes that removing one number doesn't affect the median position, but with 11 numbers, the median position shifts.",
-      "c": "This incorrectly suggests the median would decrease when removing the smallest value, which is impossible.",
-      "d": "This incorrectly assumes the mean wouldn't change when removing the smallest number from a set where numbers vary."
+      "c": "This incorrectly suggests the median would decrease when removing the smallest value, which is impossible."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -8539,7 +8539,7 @@
     "options": [
       {
         "id": "a",
-        "text": "6"
+        "text": "10"
       },
       {
         "id": "b",
@@ -8551,15 +8551,15 @@
       },
       {
         "id": "d",
-        "text": "10"
+        "text": "6"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "Reflecting P(a, b) across y = x gives Q(b, a); reflecting across the x-axis gives R(b, −a). PR² = (b − a)² + (a + b)² = 2a² + 2b² = 100, so a² + b² = 50. Positive-integer solutions: (1, 7), (7, 1), (5, 5), giving a + b = 8 or 10. Only 10 is listed.",
     "distractorExplanations": {
-      "a": "a + b = 6 allows at most a² + b² = 26, which is less than 50.",
       "b": "a + b = 14 would need a² + b² = 50 with a + b = 14, but the minimum is 98.",
-      "c": "a + b = 12 would need a² + b² = 50 with a + b = 12, but the minimum is 72."
+      "c": "a + b = 12 would need a² + b² = 50 with a + b = 12, but the minimum is 72.",
+      "d": "a + b = 6 allows at most a² + b² = 26, which is less than 50."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -8647,19 +8647,19 @@
       },
       {
         "id": "c",
-        "text": "6"
+        "text": "3"
       },
       {
         "id": "d",
-        "text": "3"
+        "text": "6"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "c",
     "explanation": "πr²(8) = 72π, so r² = 9 and r = 3.",
     "distractorExplanations": {
       "a": "r = 2 gives a volume of 32π.",
       "b": "9 is r², not r.",
-      "c": "6 is the diameter, not the radius."
+      "d": "6 is the diameter, not the radius."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -8739,7 +8739,7 @@
     "options": [
       {
         "id": "a",
-        "text": "23"
+        "text": "29"
       },
       {
         "id": "b",
@@ -8751,15 +8751,15 @@
       },
       {
         "id": "d",
-        "text": "29"
+        "text": "23"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "a₁ = 3, a₂ = 3(3) − 4 = 5, a₃ = 3(5) − 4 = 11, a₄ = 3(11) − 4 = 29.",
     "distractorExplanations": {
-      "a": "23 would require a₃ = 9.",
       "b": "35 would require a₃ = 13.",
-      "c": "31 would require a₃ = 35/3, which is not an integer."
+      "c": "31 would require a₃ = 35/3, which is not an integer.",
+      "d": "23 would require a₃ = 9."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -8773,7 +8773,7 @@
     "options": [
       {
         "id": "a",
-        "text": "$81,600"
+        "text": "$78,400"
       },
       {
         "id": "b",
@@ -8781,18 +8781,18 @@
       },
       {
         "id": "c",
-        "text": "$78,400"
+        "text": "$81,600"
       },
       {
         "id": "d",
         "text": "$68,000"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "First, calculate the revenue after the 20% increase: $80,000 × 1.20 = $96,000. Then apply the 15% decrease: $96,000 × 0.85 = $81,600. The final revenue is $81,600.",
     "distractorExplanations": {
+      "a": "This applies the 15% decrease directly to the original $80,000 without first applying the 20% increase.",
       "b": "This incorrectly adds the percentage changes (20% - 15% = 5%) and applies only a 5% increase to the original amount.",
-      "c": "This applies the 15% decrease directly to the original $80,000 without first applying the 20% increase.",
       "d": "This incorrectly subtracts 15% from 20% to get 5%, then decreases the original amount by 15% instead of following the sequential changes."
     },
     "difficulty": "medium",
@@ -8811,7 +8811,7 @@
       },
       {
         "id": "b",
-        "text": "3"
+        "text": "1"
       },
       {
         "id": "c",
@@ -8819,15 +8819,15 @@
       },
       {
         "id": "d",
-        "text": "1"
+        "text": "3"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "First find the slope: m = (-1 - 5)/(4 - (-2)) = -6/6 = -1. Using point-slope form with (-2, 5): y - 5 = -1(x + 2), which simplifies to y = -x + 3. The y-intercept occurs when x = 0, giving y = 3.",
     "distractorExplanations": {
       "a": "This might result from an arithmetic error when simplifying the point-slope equation or confusing the calculation steps.",
-      "c": "This incorrectly uses the slope value as the y-intercept, confusing the two different components of the linear equation.",
-      "d": "This could result from sign errors in the slope calculation or when substituting into the point-slope form."
+      "b": "This could result from sign errors in the slope calculation or when substituting into the point-slope form.",
+      "c": "This incorrectly uses the slope value as the y-intercept, confusing the two different components of the linear equation."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -8874,11 +8874,11 @@
     "options": [
       {
         "id": "a",
-        "text": "x = 4"
+        "text": "x = 5"
       },
       {
         "id": "b",
-        "text": "x = 5"
+        "text": "x = 4"
       },
       {
         "id": "c",
@@ -8889,10 +8889,10 @@
         "text": "x = 7"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "For a parabola with vertex at (3, -4), the axis of symmetry is x = 3. Since the parabola is symmetric about this line, if one x-intercept is at x = 1 (which is 2 units left of x = 3), the other x-intercept must be 2 units right of x = 3, at x = 5.",
     "distractorExplanations": {
-      "a": "This places the second intercept only 1 unit from the axis of symmetry, while the first intercept is 2 units away, violating the symmetry property.",
+      "b": "This places the second intercept only 1 unit from the axis of symmetry, while the first intercept is 2 units away, violating the symmetry property.",
       "c": "This places the second intercept 3 units from the axis of symmetry, while the first intercept is only 2 units away, violating the symmetry property.",
       "d": "This places the second intercept 4 units from the axis of symmetry, while the first intercept is only 2 units away, violating the symmetry property."
     },
@@ -9013,22 +9013,22 @@
       },
       {
         "id": "b",
-        "text": "√13/2"
+        "text": "√10"
       },
       {
         "id": "c",
-        "text": "√10"
+        "text": "√13/2"
       },
       {
         "id": "d",
         "text": "√13"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "First, find the midpoint R of PQ: R = ((4 + (-1))/2, (-2 + 3)/2) = (3/2, 1/2). Then calculate the distance from R to the origin (0, 0): distance = √((3/2 - 0)² + (1/2 - 0)²) = √(9/4 + 1/4) = √(10/4) = √10/2 = √13/2.",
     "distractorExplanations": {
       "a": "This results from correctly finding the midpoint but making an error in the distance calculation, possibly computing √(9/4 + 1/4) as √(9/4) instead of √(10/4).",
-      "c": "This is the distance between the original points P and Q, not the distance from the midpoint R to the origin.",
+      "b": "This is the distance between the original points P and Q, not the distance from the midpoint R to the origin.",
       "d": "This results from correctly computing √(9/4 + 1/4) = √(10/4) but then incorrectly simplifying √(10/4) as √13 instead of (√10)/2."
     },
     "difficulty": "medium",
@@ -9109,7 +9109,7 @@
     "options": [
       {
         "id": "a",
-        "text": "576π cubic feet"
+        "text": "960π cubic feet"
       },
       {
         "id": "b",
@@ -9117,18 +9117,18 @@
       },
       {
         "id": "c",
-        "text": "960π cubic feet"
+        "text": "576π cubic feet"
       },
       {
         "id": "d",
         "text": "1440π cubic feet"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "The volume of a cylinder is πr²h. With r = 8 and h = 15, the total volume is π(8²)(15) = π(64)(15) = 960π cubic feet. Since the tank is 60% full, the current water volume is 0.60 × 960π = 576π cubic feet.",
     "distractorExplanations": {
+      "a": "This is the total capacity of the tank at 100%, not the current 60% fill level.",
       "b": "This represents 75% of the tank's capacity (720π ÷ 960π = 0.75), not 60%.",
-      "c": "This is the total capacity of the tank at 100%, not the current 60% fill level.",
       "d": "This incorrectly uses the diameter instead of radius in the calculation, giving π(16²)(15) × 0.60."
     },
     "difficulty": "medium",
@@ -9342,7 +9342,7 @@
     "options": [
       {
         "id": "a",
-        "text": "83"
+        "text": "89"
       },
       {
         "id": "b",
@@ -9354,15 +9354,15 @@
       },
       {
         "id": "d",
-        "text": "89"
+        "text": "83"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "aₙ = Sₙ − Sₙ₋₁ = 6n − 1. So a₁₅ = 6(15) − 1 = 89. Check: S₁₅ − S₁₄ = 705 − 616 = 89.",
     "distractorExplanations": {
-      "a": "83 is the 14th term (6 × 14 − 1).",
       "b": "95 is the 16th term (6 × 16 − 1).",
-      "c": "90 uses 6n instead of 6n − 1."
+      "c": "90 uses 6n instead of 6n − 1.",
+      "d": "83 is the 14th term (6 × 14 − 1)."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question). · Local short-stem expansion"
@@ -9409,7 +9409,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The mean will increase and the median will remain unchanged"
+        "text": "The mean will remain unchanged and the median will increase"
       },
       {
         "id": "b",
@@ -9417,18 +9417,18 @@
       },
       {
         "id": "c",
-        "text": "The mean will remain unchanged and the median will increase"
+        "text": "The mean will increase and the median will remain unchanged"
       },
       {
         "id": "d",
         "text": "Neither the mean nor the median will change"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Replacing the smallest value with 100 (which is above the current mean of 85) will increase the sum and therefore increase the mean. However, since we're only changing one extreme value in a 20-value set, the median (average of the 10th and 11th values when ordered) will remain unchanged.",
     "distractorExplanations": {
+      "a": "The mean must increase when we replace a low value with a higher value (100 > 85), so it cannot remain unchanged.",
       "b": "While the mean will increase, the median depends only on the middle values. Changing one extreme value doesn't affect the 10th and 11th ordered values in a 20-value set.",
-      "c": "The mean must increase when we replace a low value with a higher value (100 > 85), so it cannot remain unchanged.",
       "d": "The mean will definitely change since we're replacing a value below the mean with one above the mean, affecting the total sum."
     },
     "difficulty": "medium",
@@ -9447,7 +9447,7 @@
       },
       {
         "id": "b",
-        "text": "5/8"
+        "text": "5/3"
       },
       {
         "id": "c",
@@ -9455,15 +9455,15 @@
       },
       {
         "id": "d",
-        "text": "5/3"
+        "text": "5/8"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "If 3 out of 8 slices are eaten, then 5 slices remain. Since the slices are equal, the remaining pizza represents 5/8 of the original pizza, including 5/8 of the circumference.",
     "distractorExplanations": {
       "a": "This represents the fraction that was eaten, not the fraction remaining.",
-      "c": "This incorrectly uses 5 as the denominator instead of the total number of slices (8).",
-      "d": "This inverts the correct fraction and doesn't represent a valid portion of the whole pizza."
+      "b": "This inverts the correct fraction and doesn't represent a valid portion of the whole pizza.",
+      "c": "This incorrectly uses 5 as the denominator instead of the total number of slices (8)."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -9519,19 +9519,19 @@
       },
       {
         "id": "c",
-        "text": "162"
+        "text": "152"
       },
       {
         "id": "d",
-        "text": "152"
+        "text": "162"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "c",
     "explanation": "With width w, length = 2w + 3. Perimeter: 6w + 6 = 54, so w = 8 and length = 19. Area = 8 × 19 = 152 square meters.",
     "distractorExplanations": {
       "a": "108 does not come from a width–length pair satisfying both conditions.",
       "b": "180 does not satisfy the perimeter of 54.",
-      "c": "162 = 9 × 18 does not satisfy length = 2w + 3."
+      "d": "162 = 9 × 18 does not satisfy length = 2w + 3."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -9612,7 +9612,7 @@
     "options": [
       {
         "id": "a",
-        "text": "1:9"
+        "text": "3:26"
       },
       {
         "id": "b",
@@ -9624,15 +9624,15 @@
       },
       {
         "id": "d",
-        "text": "3:26"
+        "text": "1:9"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "There are 24 × 8 = 192 employees at first, then 208 after hiring 16. 24:208 simplifies (divide by 8) to 3:26.",
     "distractorExplanations": {
-      "a": "1:9 would require 216 employees.",
       "b": "3:25 would require 200 employees.",
-      "c": "1:10 would require 240 employees."
+      "c": "1:10 would require 240 employees.",
+      "d": "1:9 would require 216 employees."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -9645,7 +9645,7 @@
     "options": [
       {
         "id": "a",
-        "text": "24"
+        "text": "96"
       },
       {
         "id": "b",
@@ -9653,18 +9653,18 @@
       },
       {
         "id": "c",
-        "text": "96"
+        "text": "24"
       },
       {
         "id": "d",
         "text": "12"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "To find the smallest number of each item, we need the least common multiple (LCM) of 12 and 8. Since 12 = 2² × 3 and 8 = 2³, the LCM is 2³ × 3 = 24. Maria needs 24 cookies (2 packages) and 24 muffins (3 packages).",
     "distractorExplanations": {
+      "a": "This is the product 12 × 8 = 96, which would be the LCM only if 12 and 8 were coprime (they're not).",
       "b": "This incorrectly calculates 12 × 8 ÷ 2 = 48, which is not the proper method for finding LCM.",
-      "c": "This is the product 12 × 8 = 96, which would be the LCM only if 12 and 8 were coprime (they're not).",
       "d": "This assumes the answer is simply the smaller package size, ignoring that packages must be whole numbers."
     },
     "difficulty": "medium",
@@ -9981,7 +9981,7 @@
       },
       {
         "id": "b",
-        "text": "43"
+        "text": "Cannot be determined from the given information"
       },
       {
         "id": "c",
@@ -9989,15 +9989,15 @@
       },
       {
         "id": "d",
-        "text": "Cannot be determined from the given information"
+        "text": "43"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "b",
     "explanation": "While we know the original median (42) and mean (38), removing the smallest value could affect the median differently depending on the distribution of values. The median of 14 numbers is the average of the 7th and 8th values when ordered, but without knowing the specific values or their positions relative to 42, we cannot determine the new median.",
     "distractorExplanations": {
       "a": "This assumes the median stays the same, but removing the smallest value will shift the position of the median in the ordered list.",
-      "b": "This incorrectly assumes a simple arithmetic relationship between the old and new median based on the number of remaining values.",
-      "c": "This represents a guess based on the mean being less than the median, but the actual median depends on the specific distribution of values around the middle."
+      "c": "This represents a guess based on the mean being less than the median, but the actual median depends on the specific distribution of values around the middle.",
+      "d": "This incorrectly assumes a simple arithmetic relationship between the old and new median based on the number of remaining values."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -10015,22 +10015,22 @@
       },
       {
         "id": "b",
-        "text": "128 square meters"
+        "text": "96 square meters"
       },
       {
         "id": "c",
-        "text": "96 square meters"
+        "text": "128 square meters"
       },
       {
         "id": "d",
         "text": "112 square meters"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "For a square inscribed in a circle, the diagonal of the square equals the diameter of the circle. With radius 8, the diameter is 16. Using the Pythagorean theorem, if the square has side length s, then s² + s² = 16², so 2s² = 256, giving s² = 128. Therefore, the area is 128 square meters.",
     "distractorExplanations": {
       "a": "This incorrectly assumes the side length of the square equals the radius of the circle, leading to area = 8² = 64.",
-      "c": "This error comes from incorrectly calculating the side length as 8√1.5 instead of 8√2, resulting in area ≈ 96.",
+      "b": "This error comes from incorrectly calculating the side length as 8√1.5 instead of 8√2, resulting in area ≈ 96.",
       "d": "This mistake occurs from using an incorrect relationship between the inscribed square and circle, possibly confusing formulas for different geometric configurations."
     },
     "difficulty": "medium",
@@ -10077,7 +10077,7 @@
     "options": [
       {
         "id": "a",
-        "text": "20 (+1)"
+        "text": "20"
       },
       {
         "id": "b",
@@ -10085,18 +10085,18 @@
       },
       {
         "id": "c",
-        "text": "20"
+        "text": "20 (+1)"
       },
       {
         "id": "d",
         "text": "25"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "a",
     "explanation": "Parts = 8; each part = 5; seniors = 4×5 = 20.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “20”.",
       "b": "Not the best answer here; the right answer is “20”.",
+      "c": "Not the best answer here; the right answer is “20”.",
       "d": "This is the answer to a different question (“The average of 4 scores is 16. After one score is removed, the average of the remaining 3 scores is 13. What…”), not to this one."
     },
     "difficulty": "easy",
@@ -10115,7 +10115,7 @@
       },
       {
         "id": "b",
-        "text": "$80"
+        "text": "$72"
       },
       {
         "id": "c",
@@ -10123,15 +10123,15 @@
       },
       {
         "id": "d",
-        "text": "$72"
+        "text": "$80"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "b",
     "explanation": "Sequential discounts: 100×0.80×0.90 = 72.",
     "distractorExplanations": {
       "a": "Not the best answer here; the right answer is “$72”.",
-      "b": "Not the best answer here; the right answer is “$72”.",
-      "c": "Not the best answer here; the right answer is “$72”."
+      "c": "Not the best answer here; the right answer is “$72”.",
+      "d": "Not the best answer here; the right answer is “$72”."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -10149,22 +10149,22 @@
       },
       {
         "id": "b",
-        "text": "2 hours"
+        "text": "9 hours"
       },
       {
         "id": "c",
-        "text": "9 hours"
+        "text": "2 hours"
       },
       {
         "id": "d",
         "text": "5 hours"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Combined rate 1/3+1/6; time = 2 hours.",
     "distractorExplanations": {
       "a": "Not the best answer here; the right answer is “2 hours”.",
-      "c": "Not the best answer here; the right answer is “2 hours”.",
+      "b": "Not the best answer here; the right answer is “2 hours”.",
       "d": "Not the best answer here; the right answer is “2 hours”."
     },
     "difficulty": "medium",
@@ -10212,7 +10212,7 @@
     "options": [
       {
         "id": "a",
-        "text": "30"
+        "text": "28"
       },
       {
         "id": "b",
@@ -10224,15 +10224,15 @@
       },
       {
         "id": "d",
-        "text": "28"
+        "text": "30"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "Removed = 80 − 52 = 28.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“The average of 5 scores is 22. After one score is removed, the average of the remaining 4 scores is 20. What…”), not to this one.",
       "b": "This is the answer to a different question (“For the data set [10, 14, 16, 30, 36], what is the median?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “28”."
+      "c": "Not the best answer here; the right answer is “28”.",
+      "d": "This is the answer to a different question (“The average of 5 scores is 22. After one score is removed, the average of the remaining 4 scores is 20. What…”), not to this one."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -10250,7 +10250,7 @@
       },
       {
         "id": "b",
-        "text": "7"
+        "text": "8"
       },
       {
         "id": "c",
@@ -10258,15 +10258,15 @@
       },
       {
         "id": "d",
-        "text": "8"
+        "text": "7"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "b",
     "explanation": "4x = 32, so x = 8.",
     "distractorExplanations": {
       "a": "Not the best answer here; the right answer is “8”.",
-      "b": "This is the answer to a different question (“A store sells two types of notebooks: regular and premium. The regular notebooks cost $3 each and the premium…”), not to this one.",
-      "c": "This is the answer to a different question (“In the coordinate plane, point P has coordinates (a, b) where both a and b are positive integers. Point P is…”), not to this one."
+      "c": "This is the answer to a different question (“In the coordinate plane, point P has coordinates (a, b) where both a and b are positive integers. Point P is…”), not to this one.",
+      "d": "This is the answer to a different question (“A store sells two types of notebooks: regular and premium. The regular notebooks cost $3 each and the premium…”), not to this one."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -10283,22 +10283,22 @@
       },
       {
         "id": "b",
-        "text": "70"
+        "text": "63"
       },
       {
         "id": "c",
-        "text": "63"
+        "text": "70"
       },
       {
         "id": "d",
         "text": "17"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Area = 10×7 = 70.",
     "distractorExplanations": {
       "a": "Not the best answer here; the right answer is “70”.",
-      "c": "Not the best answer here; the right answer is “70”.",
+      "b": "Not the best answer here; the right answer is “70”.",
       "d": "Not the best answer here; the right answer is “70”."
     },
     "difficulty": "easy",
@@ -10312,7 +10312,7 @@
     "options": [
       {
         "id": "a",
-        "text": "5/10"
+        "text": "4/10"
       },
       {
         "id": "b",
@@ -10324,15 +10324,15 @@
       },
       {
         "id": "d",
-        "text": "4/10"
+        "text": "5/10"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "P(red) = 5/10.",
     "distractorExplanations": {
+      "a": "Not the best answer here; the right answer is “5/10”.",
       "b": "Not the best answer here; the right answer is “5/10”.",
-      "c": "Not the best answer here; the right answer is “5/10”.",
-      "d": "Not the best answer here; the right answer is “5/10”."
+      "c": "Not the best answer here; the right answer is “5/10”."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -10383,7 +10383,7 @@
       },
       {
         "id": "b",
-        "text": "x ≤ 3.5"
+        "text": "x < 3.5"
       },
       {
         "id": "c",
@@ -10391,15 +10391,15 @@
       },
       {
         "id": "d",
-        "text": "x < 3.5"
+        "text": "x ≤ 3.5"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "b",
     "explanation": "Divide by 4: x < 3.5.",
     "distractorExplanations": {
       "a": "Not the best answer here; the right answer is “x < 3.5”.",
-      "b": "Not the best answer here; the right answer is “x < 3.5”.",
-      "c": "Not the best answer here; the right answer is “x < 3.5”."
+      "c": "Not the best answer here; the right answer is “x < 3.5”.",
+      "d": "Not the best answer here; the right answer is “x < 3.5”."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -10447,7 +10447,7 @@
     "options": [
       {
         "id": "a",
-        "text": "$41"
+        "text": "$46"
       },
       {
         "id": "b",
@@ -10459,15 +10459,15 @@
       },
       {
         "id": "d",
-        "text": "$46"
+        "text": "$41"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Sequential discounts: 60×0.85×0.80 = 41.",
     "distractorExplanations": {
+      "a": "Not the best answer here; the right answer is “$41”.",
       "b": "Not the best answer here; the right answer is “$41”.",
-      "c": "Not the best answer here; the right answer is “$41”.",
-      "d": "Not the best answer here; the right answer is “$41”."
+      "c": "Not the best answer here; the right answer is “$41”."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -10481,7 +10481,7 @@
     "options": [
       {
         "id": "a",
-        "text": "5 hours"
+        "text": "2.4 hours"
       },
       {
         "id": "b",
@@ -10493,15 +10493,15 @@
       },
       {
         "id": "d",
-        "text": "2.4 hours"
+        "text": "5 hours"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "Combined rate 1/4+1/6; time = 2.4 hours.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “2.4 hours”.",
       "b": "This is the answer to a different question (“A water tank can be filled by pipe A alone in 12 hours and by pipe B alone in 18 hours. If both pipes work…”), not to this one.",
-      "c": "Not the best answer here; the right answer is “2.4 hours”."
+      "c": "Not the best answer here; the right answer is “2.4 hours”.",
+      "d": "Not the best answer here; the right answer is “2.4 hours”."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -10519,22 +10519,22 @@
       },
       {
         "id": "b",
-        "text": "$550"
+        "text": "$400"
       },
       {
         "id": "c",
-        "text": "$400"
+        "text": "$550"
       },
       {
         "id": "d",
         "text": "$100"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "b",
     "explanation": "I = Prt = 400.",
     "distractorExplanations": {
       "a": "Not the best answer here; the right answer is “$400”.",
-      "b": "Not the best answer here; the right answer is “$400”.",
+      "c": "Not the best answer here; the right answer is “$400”.",
       "d": "This is the answer to a different question (“A store offers a 20% discount on all items during a sale. After the sale, prices are increased by 25% from…”), not to this one."
     },
     "difficulty": "easy",
@@ -10556,19 +10556,19 @@
       },
       {
         "id": "c",
-        "text": "13"
+        "text": "25"
       },
       {
         "id": "d",
-        "text": "25"
+        "text": "13"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "c",
     "explanation": "Removed = 64 − 39 = 25.",
     "distractorExplanations": {
       "a": "Not the best answer here; the right answer is “25”.",
       "b": "This is the answer to a different question (“For the data set [10, 14, 16, 30, 36], what is the median?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “25”."
+      "d": "Not the best answer here; the right answer is “25”."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -10582,7 +10582,7 @@
     "options": [
       {
         "id": "a",
-        "text": "9"
+        "text": "11"
       },
       {
         "id": "b",
@@ -10594,15 +10594,15 @@
       },
       {
         "id": "d",
-        "text": "11"
+        "text": "9"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "2x = 18, so x = 9.",
     "distractorExplanations": {
+      "a": "Not the best answer here; the right answer is “9”.",
       "b": "This is the answer to a different question (“In the coordinate plane, point P has coordinates (a, b) where both a and b are positive integers. Point P is…”), not to this one.",
-      "c": "Not the best answer here; the right answer is “9”.",
-      "d": "Not the best answer here; the right answer is “9”."
+      "c": "Not the best answer here; the right answer is “9”."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -10689,19 +10689,19 @@
       },
       {
         "id": "c",
-        "text": "5/11 (+1)"
+        "text": "6/11"
       },
       {
         "id": "d",
-        "text": "6/11"
+        "text": "5/11 (+1)"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "c",
     "explanation": "P(red) = 6/11.",
     "distractorExplanations": {
       "a": "This is the answer to a different question (“A bag contains red, blue, and green marbles in the ratio 3:4:5. If there are 36 marbles total, and 2 red…”), not to this one.",
       "b": "Not the best answer here; the right answer is “6/11”.",
-      "c": "Not the best answer here; the right answer is “6/11”."
+      "d": "Not the best answer here; the right answer is “6/11”."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -10714,7 +10714,7 @@
     "options": [
       {
         "id": "a",
-        "text": "14"
+        "text": "32"
       },
       {
         "id": "b",
@@ -10726,15 +10726,15 @@
       },
       {
         "id": "d",
-        "text": "32"
+        "text": "14"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Ordered middle value is 14.",
     "distractorExplanations": {
+      "a": "Not the best answer here; the right answer is “14”.",
       "b": "Not the best answer here; the right answer is “14”.",
-      "c": "This is the answer to a different question (“In the coordinate plane, point P has coordinates (a, b) where both a and b are positive integers. Point P is…”), not to this one.",
-      "d": "Not the best answer here; the right answer is “14”."
+      "c": "This is the answer to a different question (“In the coordinate plane, point P has coordinates (a, b) where both a and b are positive integers. Point P is…”), not to this one."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -10748,7 +10748,7 @@
     "options": [
       {
         "id": "a",
-        "text": "x > 4.5"
+        "text": "x < 4.5"
       },
       {
         "id": "b",
@@ -10760,15 +10760,15 @@
       },
       {
         "id": "d",
-        "text": "x < 4.5"
+        "text": "x > 4.5"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "Divide by 4: x < 4.5.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “x < 4.5”.",
       "b": "Not the best answer here; the right answer is “x < 4.5”.",
-      "c": "Not the best answer here; the right answer is “x < 4.5”."
+      "c": "Not the best answer here; the right answer is “x < 4.5”.",
+      "d": "Not the best answer here; the right answer is “x < 4.5”."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -10782,11 +10782,11 @@
     "options": [
       {
         "id": "a",
-        "text": "140 miles"
+        "text": "72 miles"
       },
       {
         "id": "b",
-        "text": "72 miles"
+        "text": "140 miles"
       },
       {
         "id": "c",
@@ -10797,10 +10797,10 @@
         "text": "120 miles"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "b",
     "explanation": "Distance = rate × time = 140 miles.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “140 miles”.",
+      "a": "Not the best answer here; the right answer is “140 miles”.",
       "c": "Not the best answer here; the right answer is “140 miles”.",
       "d": "Not the best answer here; the right answer is “140 miles”."
     },
@@ -10857,19 +10857,19 @@
       },
       {
         "id": "c",
-        "text": "$54"
+        "text": "$59"
       },
       {
         "id": "d",
-        "text": "$59"
+        "text": "$54"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "d",
     "explanation": "Sequential discounts: 80×0.75×0.90 = 54.",
     "distractorExplanations": {
       "a": "Not the best answer here; the right answer is “$54”.",
       "b": "Not the best answer here; the right answer is “$54”.",
-      "d": "Not the best answer here; the right answer is “$54”."
+      "c": "Not the best answer here; the right answer is “$54”."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -10920,22 +10920,22 @@
       },
       {
         "id": "b",
-        "text": "22"
+        "text": "30"
       },
       {
         "id": "c",
-        "text": "30"
+        "text": "22"
       },
       {
         "id": "d",
         "text": "20"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "b",
     "explanation": "Removed = 110 − 80 = 30.",
     "distractorExplanations": {
       "a": "Not the best answer here; the right answer is “30”.",
-      "b": "Not the best answer here; the right answer is “30”.",
+      "c": "Not the best answer here; the right answer is “30”.",
       "d": "This is the answer to a different question (“For the data set [10, 14, 20, 21, 27], what is the median?”), not to this one."
     },
     "difficulty": "medium",
@@ -10991,19 +10991,19 @@
       },
       {
         "id": "c",
-        "text": "$144"
+        "text": "$154"
       },
       {
         "id": "d",
-        "text": "$154"
+        "text": "$144"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "d",
     "explanation": "New = 120×(1+20/100) = 144.",
     "distractorExplanations": {
       "a": "Not the best answer here; the right answer is “$144”.",
       "b": "Not the best answer here; the right answer is “$144”.",
-      "d": "Not the best answer here; the right answer is “$144”."
+      "c": "Not the best answer here; the right answer is “$144”."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -11016,7 +11016,7 @@
     "options": [
       {
         "id": "a",
-        "text": "48"
+        "text": "135"
       },
       {
         "id": "b",
@@ -11024,18 +11024,18 @@
       },
       {
         "id": "c",
-        "text": "135"
+        "text": "48"
       },
       {
         "id": "d",
         "text": "24"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "a",
     "explanation": "Area = 15×9 = 135.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “135”.",
       "b": "Not the best answer here; the right answer is “135”.",
+      "c": "Not the best answer here; the right answer is “135”.",
       "d": "This is the answer to a different question (“A bakery sells cookies in packages of 12 and muffins in packages of 8. If Maria wants to buy the same number…”), not to this one."
     },
     "difficulty": "easy",
@@ -11083,7 +11083,7 @@
     "options": [
       {
         "id": "a",
-        "text": "$81"
+        "text": "$90"
       },
       {
         "id": "b",
@@ -11091,18 +11091,18 @@
       },
       {
         "id": "c",
-        "text": "$90"
+        "text": "$81"
       },
       {
         "id": "d",
         "text": "$86"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Sequential discounts: 120×0.75×0.90 = 81.",
     "distractorExplanations": {
+      "a": "Not the best answer here; the right answer is “$81”.",
       "b": "Not the best answer here; the right answer is “$81”.",
-      "c": "Not the best answer here; the right answer is “$81”.",
       "d": "Not the best answer here; the right answer is “$81”."
     },
     "difficulty": "easy",
@@ -11117,7 +11117,7 @@
     "options": [
       {
         "id": "a",
-        "text": "3.3 hours"
+        "text": "9 hours"
       },
       {
         "id": "b",
@@ -11129,15 +11129,15 @@
       },
       {
         "id": "d",
-        "text": "9 hours"
+        "text": "3.3 hours"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Combined rate 1/5+1/10; time = 3.3 hours.",
     "distractorExplanations": {
+      "a": "Not the best answer here; the right answer is “3.3 hours”.",
       "b": "Not the best answer here; the right answer is “3.3 hours”.",
-      "c": "Not the best answer here; the right answer is “3.3 hours”.",
-      "d": "Not the best answer here; the right answer is “3.3 hours”."
+      "c": "Not the best answer here; the right answer is “3.3 hours”."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -11188,22 +11188,22 @@
       },
       {
         "id": "b",
-        "text": "25"
+        "text": "28"
       },
       {
         "id": "c",
-        "text": "28"
+        "text": "25"
       },
       {
         "id": "d",
         "text": "24"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "b",
     "explanation": "Removed = 100 − 72 = 28.",
     "distractorExplanations": {
       "a": "This is the answer to a different question (“The average of 5 scores is 22. After one score is removed, the average of the remaining 4 scores is 20. What…”), not to this one.",
-      "b": "This is the answer to a different question (“The average of 4 scores is 16. After one score is removed, the average of the remaining 3 scores is 13. What…”), not to this one.",
+      "c": "This is the answer to a different question (“The average of 4 scores is 16. After one score is removed, the average of the remaining 3 scores is 13. What…”), not to this one.",
       "d": "This is the answer to a different question (“A bakery sells cookies in packages of 12 and muffins in packages of 8. If Maria wants to buy the same number…”), not to this one."
     },
     "difficulty": "medium",
@@ -11251,7 +11251,7 @@
     "options": [
       {
         "id": "a",
-        "text": "$220"
+        "text": "$230"
       },
       {
         "id": "b",
@@ -11263,15 +11263,15 @@
       },
       {
         "id": "d",
-        "text": "$230"
+        "text": "$220"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "New = 200×(1+10/100) = 220.",
     "distractorExplanations": {
+      "a": "Not the best answer here; the right answer is “$220”.",
       "b": "Not the best answer here; the right answer is “$220”.",
-      "c": "Not the best answer here; the right answer is “$220”.",
-      "d": "Not the best answer here; the right answer is “$220”."
+      "c": "Not the best answer here; the right answer is “$220”."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -11284,7 +11284,7 @@
     "options": [
       {
         "id": "a",
-        "text": "32"
+        "text": "64"
       },
       {
         "id": "b",
@@ -11296,15 +11296,15 @@
       },
       {
         "id": "d",
-        "text": "64"
+        "text": "32"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "A square's side is diagonal ÷ √2 = 8, so the area is 8² = 64. Alternatively, area = d²/2 = 128/2 = 64.",
     "distractorExplanations": {
-      "a": "32 divides d² by 4 instead of 2.",
       "b": "128 is d², not the area.",
-      "c": "72 does not match d²/2."
+      "c": "72 does not match d²/2.",
+      "d": "32 divides d² by 4 instead of 2."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -11358,19 +11358,19 @@
       },
       {
         "id": "c",
-        "text": "27"
+        "text": "20"
       },
       {
         "id": "d",
-        "text": "20"
+        "text": "27"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "c",
     "explanation": "Ordered middle value is 20.",
     "distractorExplanations": {
       "a": "Not the best answer here; the right answer is “20”.",
       "b": "This is the answer to a different question (“In the coordinate plane, point P has coordinates (a, b) where both a and b are positive integers. Point P is…”), not to this one.",
-      "c": "Not the best answer here; the right answer is “20”."
+      "d": "Not the best answer here; the right answer is “20”."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -11392,19 +11392,19 @@
       },
       {
         "id": "c",
-        "text": "x < 6"
+        "text": "x ≥ 6"
       },
       {
         "id": "d",
-        "text": "x ≥ 6"
+        "text": "x < 6"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "d",
     "explanation": "Divide by 3: x < 6.",
     "distractorExplanations": {
       "a": "Not the best answer here; the right answer is “x < 6”.",
       "b": "Not the best answer here; the right answer is “x < 6”.",
-      "d": "Not the best answer here; the right answer is “x < 6”."
+      "c": "Not the best answer here; the right answer is “x < 6”."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -11455,22 +11455,22 @@
       },
       {
         "id": "b",
-        "text": "15"
+        "text": "12"
       },
       {
         "id": "c",
-        "text": "12"
+        "text": "15"
       },
       {
         "id": "d",
         "text": "16 (+1)"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "b",
     "explanation": "Parts = 7; each part = 4; seniors = 3×4 = 12.",
     "distractorExplanations": {
       "a": "This is the answer to a different question (“For the data set [10, 14, 16, 30, 36], what is the median?”), not to this one.",
-      "b": "Not the best answer here; the right answer is “12”.",
+      "c": "Not the best answer here; the right answer is “12”.",
       "d": "Not the best answer here; the right answer is “12”."
     },
     "difficulty": "easy",
@@ -11492,19 +11492,19 @@
       },
       {
         "id": "c",
-        "text": "8"
+        "text": "6"
       },
       {
         "id": "d",
-        "text": "6"
+        "text": "8"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "c",
     "explanation": "Net rate = 1/4 − 1/12 = 2/12 = 1/6 of the tank per hour, so filling takes 6 hours.",
     "distractorExplanations": {
       "a": "3 hours adds the rates as if both were filling.",
       "b": "16 hours adds the times.",
-      "c": "8 hours subtracts the times (12 − 4) instead of the rates."
+      "d": "8 hours subtracts the times (12 − 4) instead of the rates."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -11551,11 +11551,11 @@
     "options": [
       {
         "id": "a",
-        "text": "$105"
+        "text": "$108"
       },
       {
         "id": "b",
-        "text": "$108"
+        "text": "$105"
       },
       {
         "id": "c",
@@ -11566,10 +11566,10 @@
         "text": "$113"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "Sequential discounts: 150×0.80×0.90 = 108.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “$108”.",
+      "b": "Not the best answer here; the right answer is “$108”.",
       "c": "Not the best answer here; the right answer is “$108”.",
       "d": "Not the best answer here; the right answer is “$108”."
     },
@@ -11585,11 +11585,11 @@
     "options": [
       {
         "id": "a",
-        "text": "3.6 hours"
+        "text": "7 hours"
       },
       {
         "id": "b",
-        "text": "7 hours"
+        "text": "3.6 hours"
       },
       {
         "id": "c",
@@ -11600,10 +11600,10 @@
         "text": "8 hours"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "b",
     "explanation": "Combined rate 1/6+1/9; time = 3.6 hours.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “3.6 hours”.",
+      "a": "Not the best answer here; the right answer is “3.6 hours”.",
       "c": "Not the best answer here; the right answer is “3.6 hours”.",
       "d": "Not the best answer here; the right answer is “3.6 hours”."
     },
@@ -11619,7 +11619,7 @@
     "options": [
       {
         "id": "a",
-        "text": "$360"
+        "text": "$510"
       },
       {
         "id": "b",
@@ -11627,18 +11627,18 @@
       },
       {
         "id": "c",
-        "text": "$510"
+        "text": "$360"
       },
       {
         "id": "d",
         "text": "$120"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "I = Prt = 360.",
     "distractorExplanations": {
+      "a": "Not the best answer here; the right answer is “$360”.",
       "b": "Not the best answer here; the right answer is “$360”.",
-      "c": "Not the best answer here; the right answer is “$360”.",
       "d": "Not the best answer here; the right answer is “$360”."
     },
     "difficulty": "easy",

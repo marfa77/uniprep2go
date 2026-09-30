@@ -1,0 +1,335 @@
+{
+  "aapc-ccs-readiness-check": {
+    "aapc-ccs-readiness-check-guidelines-002": {
+      "options": {
+        "a": "The surgeon makes the first skin incision",
+        "c": "The patient is taken to the post-anesthesia unit"
+      }
+    },
+    "aapc-ccs-readiness-check-guidelines-004": {
+      "correctOptionId": "a",
+      "options": {
+        "a": "The patient's ASA physical status classification",
+        "b": "The anesthesia provider's level of supervision",
+        "c": "The emergency status of the surgical procedure",
+        "d": "The base unit value of the anesthesia code"
+      },
+      "distractorExplanations": {
+        "b": "Supervision level is shown with modifiers such as AA, QK, QX, and QZ.",
+        "c": "Emergency conditions are reported with qualifying circumstance code 99140.",
+        "d": "Base units come from the anesthesia code itself, not the P modifier."
+      },
+      "prompt": "Physical status modifiers (P1–P6) in anesthesia coding describe:"
+    },
+    "aapc-ccs-readiness-check-guidelines-010": {
+      "options": {
+        "b": "Excision, percutaneous endoscopic approach",
+        "d": "Extirpation, percutaneous endoscopic approach"
+      }
+    },
+    "aapc-ccs-readiness-check-icd-004": {
+      "options": {
+        "b": "Report the code without adding the 7th character"
+      }
+    },
+    "aapc-ccs-readiness-check-icd-010": {
+      "options": {
+        "b": "Listed first in the emergency department's records",
+        "c": "Found after study to be chiefly responsible for admission"
+      }
+    },
+    "aapc-ccs-readiness-check-icd-011": {
+      "options": {
+        "b": "Procedures performed during an inpatient hospital stay"
+      }
+    },
+    "aapc-ccs-readiness-check-icd-012": {
+      "options": {
+        "a": "Not coded separately; they are routine for appendicitis",
+        "c": "Coded only when they appear on the discharge summary"
+      }
+    },
+    "aapc-ccs-readiness-check-compliance-002": {
+      "options": {
+        "b": "The service is needed to diagnose or treat the patient",
+        "d": "The service is the least expensive option available"
+      }
+    },
+    "aapc-ccs-readiness-check-compliance-004": {
+      "correctOptionId": "b",
+      "options": {
+        "a": "Honest billing errors corrected in a timely way",
+        "b": "Knowingly submitting false claims to the government",
+        "c": "Disputes between patients and private insurers",
+        "d": "Claims filed after a payer's timely filing limit"
+      },
+      "distractorExplanations": {
+        "a": "Honest mistakes corrected promptly lack the knowing intent the Act requires.",
+        "c": "Private insurance disputes are not federal false claims.",
+        "d": "Late filing leads to denial, not False Claims Act liability."
+      },
+      "prompt": "The False Claims Act targets:"
+    },
+    "aapc-ccs-readiness-check-compliance-005": {
+      "options": {
+        "a": "Workplace safety rules and sharps injury logs",
+        "d": "Referral fees and kickback payments by providers"
+      }
+    },
+    "aapc-ccs-readiness-check-compliance-013": {
+      "options": {
+        "c": "A complete, accurate record that supports correct coding"
+      }
+    },
+    "aapc-ccs-readiness-check-compliance-015": {
+      "options": {
+        "b": "Block payment for improperly paired codes"
+      }
+    }
+  },
+  "amt-rma-readiness-check": {
+    "amt-rma-readiness-check-clinical-010": {
+      "options": {
+        "a": "Strike once; initial, date, and correct it"
+      }
+    },
+    "amt-rma-readiness-check-admin-010": {
+      "correctOptionId": "b",
+      "options": {
+        "a": "Procedures and services performed",
+        "b": "Diagnoses and reasons for encounter",
+        "c": "Drugs, supplies, and equipment",
+        "d": "Where the service was performed"
+      },
+      "distractorExplanations": {
+        "a": "Procedures and services are reported with CPT.",
+        "c": "Drugs, supplies, and equipment are HCPCS Level II.",
+        "d": "Location is reported with place-of-service codes."
+      },
+      "prompt": "ICD-10-CM codes primarily describe:"
+    },
+    "amt-rma-readiness-check-admin-014": {
+      "options": {
+        "d": "Palmar middle or ring finger, slightly off-center"
+      }
+    },
+    "amt-rma-readiness-check-law-ethics-002": {
+      "options": {
+        "a": "Only patients with known infections pose a risk",
+        "b": "Any patient's blood or body fluids may be infectious"
+      }
+    },
+    "amt-rma-readiness-check-law-ethics-009": {
+      "correctOptionId": "b",
+      "options": {
+        "a": "A toddler with a bruised shin after learning to walk",
+        "b": "Patterned bruises with an inconsistent history",
+        "c": "A child who missed one appointment with no concerns",
+        "d": "A child who cries and resists a routine blood draw"
+      },
+      "distractorExplanations": {
+        "a": "Shin bruises in a new walker are typical accidental injuries.",
+        "c": "A single missed visit without other concerns is not a sign of abuse.",
+        "d": "Fear of needles is a normal response."
+      }
+    },
+    "amt-rma-readiness-check-law-ethics-010": {
+      "correctOptionId": "a",
+      "options": {
+        "a": "Provide training, PPE, and an exposure control plan",
+        "b": "Test all employees for HIV every year",
+        "c": "Require staff to buy their own gloves and gowns",
+        "d": "Offer hepatitis C vaccine to all employees"
+      },
+      "distractorExplanations": {
+        "b": "The standard does not require routine HIV testing of employees.",
+        "c": "Employers must provide PPE at no cost to employees.",
+        "d": "There is no hepatitis C vaccine; employers must offer the hepatitis B vaccine."
+      },
+      "prompt": "The OSHA Bloodborne Pathogens Standard requires employers to:"
+    },
+    "amt-rma-readiness-check-law-ethics-015": {
+      "options": {
+        "b": "Simple and low-risk if directions are followed"
+      }
+    }
+  },
+  "nremt-aemt-readiness-check": {
+    "nremt-aemt-readiness-check-airway-011": {
+      "options": {
+        "a": "Signs/symptoms, Allergies, Medications, Past history, Last intake, Events"
+      }
+    },
+    "nremt-aemt-readiness-check-pharm-003": {
+      "correctOptionId": "c",
+      "options": {
+        "a": "Nasal cannula at 6 L/min",
+        "b": "Simple face mask at 10 L/min",
+        "c": "Nonrebreather mask at 15 L/min",
+        "d": "Venturi mask set to 28% oxygen"
+      },
+      "distractorExplanations": {
+        "a": "A nasal cannula tops out around 44% FiO2.",
+        "b": "A simple mask delivers roughly 35–60% FiO2.",
+        "d": "A Venturi mask at 28% delivers a fixed low concentration."
+      }
+    },
+    "nremt-aemt-readiness-check-pharm-005": {
+      "correctOptionId": "a",
+      "options": {
+        "a": "Suction no longer than about 15 seconds at a time",
+        "b": "Suction continuously until the airway is dry",
+        "c": "Suction only while inserting the catheter",
+        "d": "Suction for up to 60 seconds per attempt"
+      },
+      "distractorExplanations": {
+        "b": "Continuous suction removes oxygen and causes hypoxia.",
+        "c": "Suction is applied while withdrawing the catheter, not while inserting it.",
+        "d": "Sixty seconds is far too long; adult attempts are limited to about 15 seconds."
+      },
+      "prompt": "When suctioning an adult airway, a key safety limit is:"
+    },
+    "nremt-aemt-readiness-check-pharm-011": {
+      "correctOptionId": "c",
+      "options": {
+        "a": "The asthma attack is resolving on its own",
+        "b": "The nebulizer treatment has fully worked",
+        "c": "Worsening obstruction and respiratory failure",
+        "d": "A panic reaction causing hyperventilation"
+      },
+      "distractorExplanations": {
+        "a": "Less wheezing with drowsiness and poor air movement means less air is moving, not recovery.",
+        "b": "Real improvement brings better air movement and alertness, not drowsiness.",
+        "d": "Drowsiness and poor air movement point to hypoxia and fatigue, not panic."
+      }
+    },
+    "nremt-aemt-readiness-check-pharm-014": {
+      "options": {
+        "d": "Corner of the mouth to the earlobe or jaw angle"
+      }
+    },
+    "nremt-aemt-readiness-check-medical-002": {
+      "correctOptionId": "c",
+      "options": {
+        "a": "About 1 inch (2.5 cm) for all adults",
+        "b": "At least 3 inches (7.5 cm) or deeper",
+        "c": "At least 2 inches (5 cm), full recoil",
+        "d": "About one-half of the chest's depth"
+      },
+      "distractorExplanations": {
+        "a": "One inch is too shallow to circulate blood in an adult.",
+        "b": "Compressions deeper than about 2.4 inches (6 cm) raise the risk of injury.",
+        "d": "Adult depth is 2 to 2.4 inches; fractions of chest depth are used for infants and children, and one-half is too deep."
+      },
+      "prompt": "High-quality adult CPR compression depth is:"
+    },
+    "nremt-aemt-readiness-check-medical-003": {
+      "options": {
+        "a": "Check a pulse for a full minute first",
+        "b": "Reanalyze the rhythm immediately after"
+      }
+    },
+    "nremt-aemt-readiness-check-medical-006": {
+      "options": {
+        "b": "Defibrillate with pads over the driveline",
+        "c": "Follow local VAD protocols; call the VAD team"
+      }
+    },
+    "nremt-aemt-readiness-check-medical-007": {
+      "options": {
+        "a": "Treat airway, breathing, and circulation first",
+        "d": "Transport only after a full secondary survey"
+      }
+    },
+    "nremt-aemt-readiness-check-medical-014": {
+      "options": {
+        "d": "Intraosseous (IO) access"
+      }
+    },
+    "nremt-aemt-readiness-check-medical-015": {
+      "options": {
+        "b": "Constricting vessels to raise pressure and cut swelling"
+      }
+    },
+    "nremt-aemt-readiness-check-trauma-003": {
+      "options": {
+        "b": "Protect from injury; manage the airway afterward"
+      }
+    },
+    "nremt-aemt-readiness-check-trauma-004": {
+      "options": {
+        "c": "0.4 mg sublingual, repeated every 5 minutes"
+      }
+    }
+  },
+  "servsafe-food-handler-readiness-check": {
+    "servsafe-food-handler-readiness-check-contamination-009": {
+      "correctOptionId": "b",
+      "options": {
+        "a": "Fever and chills that begin 2–3 days later",
+        "b": "Hives, swelling, wheezing, or trouble breathing",
+        "c": "Jaundice with dark urine and yellowing eyes",
+        "d": "Sore throat and fever from a viral infection"
+      },
+      "distractorExplanations": {
+        "a": "Delayed fever and chills suggest a foodborne infection, not an allergy.",
+        "c": "Jaundice suggests hepatitis A, not an allergic reaction.",
+        "d": "Sore throat with fever suggests an infection, not an allergy."
+      },
+      "prompt": "Which symptoms may indicate a food-allergic reaction?",
+      "explanation": "Food-allergy reactions can include hives, itching, swelling of the face or throat, wheezing, trouble breathing, vomiting, diarrhea, abdominal pain, and anaphylaxis. Symptoms often start within minutes of eating."
+    },
+    "servsafe-food-handler-readiness-check-contamination-014": {
+      "options": {
+        "c": "Metal can leach into the food and cause poisoning",
+        "d": "These containers are too heavy to lift when full"
+      }
+    },
+    "servsafe-food-handler-readiness-check-hygiene-015": {
+      "correctOptionId": "b",
+      "options": {
+        "a": "Accept any delivery that arrives on schedule",
+        "b": "Use approved suppliers and inspect all packaging",
+        "c": "Let drivers put deliveries away unsupervised",
+        "d": "Skip checks for trusted long-term suppliers"
+      },
+      "distractorExplanations": {
+        "a": "Arriving on time does not show a delivery is safe or expected.",
+        "c": "Unsupervised drivers create a tampering risk.",
+        "d": "Every delivery needs inspection, even from trusted suppliers."
+      },
+      "prompt": "How can receiving procedures support food defense?",
+      "explanation": "Accept deliveries only from approved suppliers, inspect seals and packaging for tampering, and question unexpected deliveries. Supervise deliveries and store products promptly."
+    },
+    "servsafe-food-handler-readiness-check-time-temp-005": {
+      "correctOptionId": "a",
+      "options": {
+        "a": "Ice and water pull heat out, faster when stirred",
+        "b": "It keeps food above 135°F until it is served",
+        "c": "It lets food cool slowly at room temperature",
+        "d": "It freezes the outer layer to seal in the heat"
+      },
+      "distractorExplanations": {
+        "b": "Holding above 135°F is hot holding, not cooling.",
+        "c": "Cooling slowly at room temperature is unsafe.",
+        "d": "The goal is to remove heat quickly, not trap it."
+      },
+      "prompt": "How does an ice-water bath help cool food?"
+    },
+    "servsafe-food-handler-readiness-check-cleaning-002": {
+      "correctOptionId": "a",
+      "options": {
+        "a": "Labeled, away from food, utensils, and linens",
+        "b": "On shelves above food prep areas to stay dry",
+        "c": "In clean, empty food containers for easy access",
+        "d": "Next to single-use items in the dry storage area"
+      },
+      "distractorExplanations": {
+        "b": "Chemicals stored above food can drip or spill onto it.",
+        "c": "Food containers can be mistaken for food; use original or labeled chemical containers.",
+        "d": "Chemicals must be kept away from single-use items."
+      },
+      "prompt": "How should chemicals be stored?"
+    }
+  }
+}

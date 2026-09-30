@@ -8,7 +8,7 @@
     "options": [
       {
         "id": "a",
-        "text": "$54"
+        "text": "$52"
       },
       {
         "id": "b",
@@ -20,15 +20,15 @@
       },
       {
         "id": "d",
-        "text": "$52"
+        "text": "$54"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Sequential discounts multiply the remaining-price factors: 80 × 0.75 × 0.90 = 54.",
     "distractorExplanations": {
+      "a": "This adds the percentages (25% + 10% = 35%) and applies a single 35% discount, which is not how sequential discounts work.",
       "b": "This results from treating the two discounts as a single 30% discount (80 × 0.70 = 56) instead of applying them in sequence.",
-      "c": "This only applies the first 25% discount and forgets to apply the second 10% discount.",
-      "d": "This adds the percentages (25% + 10% = 35%) and applies a single 35% discount, which is not how sequential discounts work."
+      "c": "This only applies the first 25% discount and forgets to apply the second 10% discount."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
@@ -41,7 +41,7 @@
     "options": [
       {
         "id": "a",
-        "text": "25"
+        "text": "16"
       },
       {
         "id": "b",
@@ -53,15 +53,15 @@
       },
       {
         "id": "d",
-        "text": "16"
+        "text": "25"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "The ratio 3:5 splits the class into 8 equal parts (3 + 5 = 8). Each part is 40 ÷ 8 = 5 students, so girls = 5 × 5 = 25.",
     "distractorExplanations": {
+      "a": "This comes from computing 2/5 × 40, using the wrong fraction entirely.",
       "b": "15 is the number of boys (3 parts × 5), not girls — a common mix-up of which group corresponds to which ratio term.",
-      "c": "This comes from incorrectly computing 3/5 × 40 instead of using the correct part-of-8 fraction.",
-      "d": "This comes from computing 2/5 × 40, using the wrong fraction entirely."
+      "c": "This comes from incorrectly computing 3/5 × 40 instead of using the correct part-of-8 fraction."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
@@ -74,7 +74,7 @@
     "options": [
       {
         "id": "a",
-        "text": "6"
+        "text": "9"
       },
       {
         "id": "b",
@@ -86,15 +86,15 @@
       },
       {
         "id": "d",
-        "text": "9"
+        "text": "6"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Let Tom's age be T, so Sara's age is 2T. In 6 years: 2T + 6 = 1.5(T + 6). Expanding: 2T + 6 = 1.5T + 9, so 0.5T = 3, giving T = 6.",
     "distractorExplanations": {
+      "a": "9 results from solving the equation incorrectly, such as mishandling the constant terms.",
       "b": "8 does not satisfy the equation; it likely results from an arithmetic slip while isolating T.",
-      "c": "12 is Sara's current age (2 × 6), not Tom's — a common trap of answering with the wrong person's age.",
-      "d": "9 results from solving the equation incorrectly, such as mishandling the constant terms."
+      "c": "12 is Sara's current age (2 × 6), not Tom's — a common trap of answering with the wrong person's age."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
@@ -108,7 +108,7 @@
     "options": [
       {
         "id": "a",
-        "text": "2.4 hours"
+        "text": "3 hours"
       },
       {
         "id": "b",
@@ -120,15 +120,15 @@
       },
       {
         "id": "d",
-        "text": "3 hours"
+        "text": "2.4 hours"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Combined rate = 1/6 + 1/4 = 2/12 + 3/12 = 5/12 of the job per hour. Time = 1 ÷ (5/12) = 12/5 = 2.4 hours.",
     "distractorExplanations": {
+      "a": "3 hours is the simple average of 6 and 4 minus an adjustment, but combined work-rate problems require adding rates, not averaging times.",
       "b": "2 hours would be correct only if the rates were being averaged rather than added, which is not how combined work rates function.",
-      "c": "5 hours is close to Machine A's time alone and does not reflect any correct combination of the two rates.",
-      "d": "3 hours is the simple average of 6 and 4 minus an adjustment, but combined work-rate problems require adding rates, not averaging times."
+      "c": "5 hours is close to Machine A's time alone and does not reflect any correct combination of the two rates."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
@@ -141,7 +141,7 @@
     "options": [
       {
         "id": "a",
-        "text": "10 liters"
+        "text": "15 liters"
       },
       {
         "id": "b",
@@ -153,15 +153,15 @@
       },
       {
         "id": "d",
-        "text": "15 liters"
+        "text": "10 liters"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Let x = liters of the 20% solution. Total acid must equal 30% of the total volume: 0.20x + 0.50(5) = 0.30(x + 5). This gives 0.20x + 2.5 = 0.30x + 1.5, so 1 = 0.10x, and x = 10.",
     "distractorExplanations": {
+      "a": "15 liters overshoots the required amount and does not satisfy the concentration equation when checked.",
       "b": "5 liters assumes the two solutions should be mixed in equal amounts, which does not satisfy the required 30% concentration.",
-      "c": "7.5 liters results from an arithmetic error when solving the mixture equation.",
-      "d": "15 liters overshoots the required amount and does not satisfy the concentration equation when checked."
+      "c": "7.5 liters results from an arithmetic error when solving the mixture equation."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
@@ -174,7 +174,7 @@
     "options": [
       {
         "id": "a",
-        "text": "215"
+        "text": "225"
       },
       {
         "id": "b",
@@ -186,15 +186,15 @@
       },
       {
         "id": "d",
-        "text": "225"
+        "text": "215"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Total committees of 4 from 11 people: C(11,4) = 330. Subtract committees with fewer than 2 women: 0 women = C(6,4) = 15; 1 woman = C(5,1)×C(6,3) = 5×20 = 100. Excluded total = 115, so at least 2 women = 330 − 115 = 215.",
     "distractorExplanations": {
+      "a": "225 results from miscounting the 1-woman case, which understates the number of committees to exclude.",
       "b": "210 results from a small arithmetic slip when subtracting the excluded cases from the total of 330.",
-      "c": "165 is exactly half of 330 and does not correspond to any correct case-counting approach for this problem.",
-      "d": "225 results from miscounting the 1-woman case, which understates the number of committees to exclude."
+      "c": "165 is exactly half of 330 and does not correspond to any correct case-counting approach for this problem."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
@@ -207,7 +207,7 @@
     "options": [
       {
         "id": "a",
-        "text": "15"
+        "text": "3"
       },
       {
         "id": "b",
@@ -215,18 +215,18 @@
       },
       {
         "id": "c",
-        "text": "3"
+        "text": "15"
       },
       {
         "id": "d",
         "text": "225"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "15 = 3¹ × 5¹. For 15n to be a perfect square, every prime factor must have an even exponent, so n must supply one more factor of 3 and one more factor of 5, i.e., n = 3 × 5 = 15. Then 15 × 15 = 225 = 15².",
     "distractorExplanations": {
+      "a": "n = 3 gives 15 × 3 = 45 = 3² × 5, which still has an odd exponent on 5, so it is not a perfect square.",
       "b": "n = 5 gives 15 × 5 = 75 = 3 × 5², which still has an odd exponent on 3, so it is not a perfect square.",
-      "c": "n = 3 gives 15 × 3 = 45 = 3² × 5, which still has an odd exponent on 5, so it is not a perfect square.",
       "d": "225 is the resulting perfect square (15²), not the value of n itself — a common mix-up between n and the square it produces."
     },
     "difficulty": "medium",
@@ -240,7 +240,7 @@
     "options": [
       {
         "id": "a",
-        "text": "28"
+        "text": "32"
       },
       {
         "id": "b",
@@ -252,15 +252,15 @@
       },
       {
         "id": "d",
-        "text": "32"
+        "text": "28"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Sum of all 5 numbers = 5 × 20 = 100. Sum of the remaining 4 numbers = 4 × 18 = 72. The removed number = 100 − 72 = 28.",
     "distractorExplanations": {
+      "a": "32 results from miscalculating one of the two sums before subtracting.",
       "b": "24 results from an arithmetic error when subtracting 72 from 100.",
-      "c": "20 simply repeats the original average and is not the result of the required subtraction.",
-      "d": "32 results from miscalculating one of the two sums before subtracting."
+      "c": "20 simply repeats the original average and is not the result of the required subtraction."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
@@ -274,7 +274,7 @@
     "options": [
       {
         "id": "a",
-        "text": "12"
+        "text": "6"
       },
       {
         "id": "b",
@@ -282,18 +282,18 @@
       },
       {
         "id": "c",
-        "text": "6"
+        "text": "12"
       },
       {
         "id": "d",
         "text": "16"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Area of the first triangle = (1/2)(12)(8) = 48. For the second triangle, (1/2)(8)(h) = 48, so h = 96/8 = 12.",
     "distractorExplanations": {
+      "a": "6 results from a division error when solving for h.",
       "b": "8 assumes the second triangle has the same height as the first, which is not implied by the problem.",
-      "c": "6 results from a division error when solving for h.",
       "d": "16 results from doubling the correct height by mistake."
     },
     "difficulty": "medium",
@@ -308,7 +308,7 @@
     "options": [
       {
         "id": "a",
-        "text": "5/33"
+        "text": "25/144"
       },
       {
         "id": "b",
@@ -320,15 +320,15 @@
       },
       {
         "id": "d",
-        "text": "25/144"
+        "text": "5/33"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "P(first green) = 5/12. P(second green | first green) = 4/11, since one green marble and one total marble have been removed. P(both green) = (5/12)(4/11) = 20/132 = 5/33.",
     "distractorExplanations": {
+      "a": "25/144 results from treating the draws as independent with replacement, squaring 5/12, which is incorrect since the marbles are drawn without replacement.",
       "b": "5/12 is only the probability that the first marble drawn is green; it ignores the second draw entirely.",
-      "c": "1/6 is a plausible-looking simplified fraction but does not result from the correct multiplication of the two draw probabilities.",
-      "d": "25/144 results from treating the draws as independent with replacement, squaring 5/12, which is incorrect since the marbles are drawn without replacement."
+      "c": "1/6 is a plausible-looking simplified fraction but does not result from the correct multiplication of the two draw probabilities."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
@@ -342,7 +342,7 @@
     "options": [
       {
         "id": "a",
-        "text": "3"
+        "text": "4"
       },
       {
         "id": "b",
@@ -350,18 +350,18 @@
       },
       {
         "id": "c",
-        "text": "4"
+        "text": "3"
       },
       {
         "id": "d",
         "text": "6"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Rewrite 8 as 2³, so 8^(x-1) = 2^(3x-3). Since the bases are equal, the exponents must be equal: x + 3 = 3x − 3. Solving gives 6 = 2x, so x = 3.",
     "distractorExplanations": {
+      "a": "4 results from a sign error when moving terms across the equation.",
       "b": "2 results from an arithmetic slip while isolating x in the exponent equation.",
-      "c": "4 results from a sign error when moving terms across the equation.",
       "d": "6 is the value of 2x before the final division step and is mistakenly given as the answer instead of x."
     },
     "difficulty": "medium",
@@ -376,7 +376,7 @@
     "options": [
       {
         "id": "a",
-        "text": "$300"
+        "text": "$100"
       },
       {
         "id": "b",
@@ -388,15 +388,15 @@
       },
       {
         "id": "d",
-        "text": "$100"
+        "text": "$300"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Simple interest is calculated as I = P × r × t = 2,000 × 0.05 × 3 = 300.",
     "distractorExplanations": {
+      "a": "$100 results from using only 1 year instead of the full 3-year term.",
       "b": "$200 results from using only 2 years instead of the full 3-year term.",
-      "c": "$350 does not correspond to the correct application of the 5% annual rate over 3 years.",
-      "d": "$100 results from using only 1 year instead of the full 3-year term."
+      "c": "$350 does not correspond to the correct application of the 5% annual rate over 3 years."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
@@ -410,7 +410,7 @@
     "options": [
       {
         "id": "a",
-        "text": "4"
+        "text": "6"
       },
       {
         "id": "b",
@@ -418,18 +418,18 @@
       },
       {
         "id": "c",
-        "text": "6"
+        "text": "4"
       },
       {
         "id": "d",
         "text": "3"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "From the second equation, x = y + 2. Substituting into the first equation: 3(y + 2) + 2y = 16, so 3y + 6 + 2y = 16, giving 5y = 10 and y = 2. Then x = y + 2 = 4.",
     "distractorExplanations": {
+      "a": "6 results from an arithmetic error when combining like terms after substitution.",
       "b": "2 is the value of y, not x — a common mix-up between the two variables solved in the system.",
-      "c": "6 results from an arithmetic error when combining like terms after substitution.",
       "d": "3 does not satisfy either original equation and results from a setup error."
     },
     "difficulty": "hard",
@@ -444,7 +444,7 @@
     "options": [
       {
         "id": "a",
-        "text": "49"
+        "text": "45"
       },
       {
         "id": "b",
@@ -456,15 +456,15 @@
       },
       {
         "id": "d",
-        "text": "45"
+        "text": "49"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Using the given rule, the 6th term is (6+1)^2 = 7^2 = 49.",
     "distractorExplanations": {
+      "a": "45 does not match the defined pattern and results from an arithmetic slip.",
       "b": "36 = 6^2 results from squaring n directly instead of (n+1), an off-by-one error.",
-      "c": "64 = 8^2 results from squaring (n+2) instead of (n+1), overshifting the index.",
-      "d": "45 does not match the defined pattern and results from an arithmetic slip."
+      "c": "64 = 8^2 results from squaring (n+2) instead of (n+1), overshifting the index."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
@@ -478,7 +478,7 @@
     "options": [
       {
         "id": "a",
-        "text": "81π"
+        "text": "9π"
       },
       {
         "id": "b",
@@ -486,18 +486,18 @@
       },
       {
         "id": "c",
-        "text": "9π"
+        "text": "81π"
       },
       {
         "id": "d",
         "text": "162π"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Circumference = 2πr = 18π, so r = 9. Area = πr² = π(9²) = 81π.",
     "distractorExplanations": {
+      "a": "9π uses the radius itself instead of the radius squared in the area formula.",
       "b": "18π simply restates the given circumference and is not the area.",
-      "c": "9π uses the radius itself instead of the radius squared in the area formula.",
       "d": "162π results from doubling the correct area by mistake."
     },
     "difficulty": "medium",
@@ -645,11 +645,11 @@
     "options": [
       {
         "id": "a",
-        "text": "15π minutes"
+        "text": "20π minutes"
       },
       {
         "id": "b",
-        "text": "20π minutes"
+        "text": "15π minutes"
       },
       {
         "id": "c",
@@ -660,10 +660,10 @@
         "text": "30π minutes"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "The volume of the cylindrical tank is V = πr²h = π(4)²(10) = 160π cubic feet. At a pumping rate of 8 cubic feet per minute, the time to fill the tank is 160π ÷ 8 = 20π minutes.",
     "distractorExplanations": {
-      "a": "This results from using an incorrect radius or height value in the volume calculation.",
+      "b": "This results from using an incorrect radius or height value in the volume calculation.",
       "c": "This comes from making an error in the division step or incorrectly calculating the volume.",
       "d": "This results from using the wrong formula or making multiple computational errors."
     },
@@ -819,19 +819,19 @@
       },
       {
         "id": "c",
-        "text": "$21.02"
+        "text": "$19.02"
       },
       {
         "id": "d",
-        "text": "$19.02"
+        "text": "$21.02"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "c",
     "explanation": "C(101) = 2000 + 1515 + 0.02(10,201) = 3719.02 and C(100) = 2000 + 1500 + 200 = 3700. The difference is $19.02: $15 from the linear term plus 0.02(101² − 100²) = 0.02 × 201 = $4.02.",
     "distractorExplanations": {
       "a": "$15.02 adds only 0.02 for the squared term instead of 0.02 × 201.",
       "b": "$17.02 understates the squared-term increase.",
-      "c": "$21.02 overstates the increase from the squared term."
+      "d": "$21.02 overstates the increase from the squared term."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -848,7 +848,7 @@
       },
       {
         "id": "b",
-        "text": "11:9"
+        "text": "9:11"
       },
       {
         "id": "c",
@@ -856,15 +856,15 @@
       },
       {
         "id": "d",
-        "text": "9:11"
+        "text": "11:9"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "Let S be the value of stocks and B be the value of bonds. The equation is: 0.12S - 0.08B = 0.03(S + B). Simplifying: 0.12S - 0.08B = 0.03S + 0.03B, which gives 0.09S = 0.11B, so S/B = 11/9. The ratio of stocks to bonds is 11:9.",
     "distractorExplanations": {
       "a": "This ratio would result in a portfolio gain of approximately 4.8%, not 3%.",
-      "c": "This inverts the correct ratio and would result in a portfolio loss, not a 3% gain.",
-      "d": "This inverts the correct ratio of 11:9, leading to a portfolio that would lose value overall."
+      "b": "This inverts the correct ratio of 11:9, leading to a portfolio that would lose value overall.",
+      "c": "This inverts the correct ratio and would result in a portfolio loss, not a 3% gain."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -877,7 +877,7 @@
     "options": [
       {
         "id": "a",
-        "text": "7.5 hours"
+        "text": "12.5 hours"
       },
       {
         "id": "b",
@@ -889,15 +889,15 @@
       },
       {
         "id": "d",
-        "text": "12.5 hours"
+        "text": "7.5 hours"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "Volume = 20 × 12 × 2 = 480 m³ = 480,000 L. 75% of that is 360,000 L. At 480 L per minute: 360,000 ÷ 480 = 750 minutes = 12.5 hours.",
     "distractorExplanations": {
-      "a": "7.5 hours treats 450 minutes as the fill time; 750 minutes is correct.",
       "b": "10 hours is 600 minutes, which fills only 288,000 L (60%).",
-      "c": "15 hours is 900 minutes, which fills 432,000 L (90%)."
+      "c": "15 hours is 900 minutes, which fills 432,000 L (90%).",
+      "d": "7.5 hours treats 450 minutes as the fill time; 750 minutes is correct."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -947,7 +947,7 @@
       },
       {
         "id": "b",
-        "text": "$240"
+        "text": "$144"
       },
       {
         "id": "c",
@@ -955,15 +955,15 @@
       },
       {
         "id": "d",
-        "text": "$144"
+        "text": "$240"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "If the item has a 25% discount, Sarah pays 75% of the original price. Setting up the equation: 0.75 × original price = $180, so original price = $180 ÷ 0.75 = $240.",
     "distractorExplanations": {
       "a": "This incorrectly adds 25% to the discounted price ($180 × 1.25 = $225) instead of finding what price would give $180 after a 25% reduction.",
-      "c": "This error comes from adding $25 to $180, misunderstanding that 25% of the original price is not $25.",
-      "d": "This incorrectly applies the 25% discount to the already discounted price ($180 × 0.8 = $144)."
+      "b": "This incorrectly applies the 25% discount to the already discounted price ($180 × 0.8 = $144).",
+      "c": "This error comes from adding $25 to $180, misunderstanding that 25% of the original price is not $25."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -977,7 +977,7 @@
     "options": [
       {
         "id": "a",
-        "text": "100"
+        "text": "82"
       },
       {
         "id": "b",
@@ -989,15 +989,15 @@
       },
       {
         "id": "d",
-        "text": "82"
+        "text": "100"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "a₁ = 4, a₂ = 3(4) − 2 = 10, a₃ = 3(10) − 2 = 28, a₄ = 3(28) − 2 = 82.",
     "distractorExplanations": {
-      "a": "100 would require a₃ = 34.",
       "b": "88 would require a₃ = 30.",
-      "c": "94 would require a₃ = 32."
+      "c": "94 would require a₃ = 32.",
+      "d": "100 would require a₃ = 34."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -1276,7 +1276,7 @@
     "options": [
       {
         "id": "a",
-        "text": "2y"
+        "text": "4y"
       },
       {
         "id": "b",
@@ -1284,18 +1284,18 @@
       },
       {
         "id": "c",
-        "text": "4y"
+        "text": "2y"
       },
       {
         "id": "d",
         "text": "2√(y²)"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "For a quadratic to have exactly two distinct solutions, the discriminant must be positive. Using the quadratic formula discriminant: k² - 4(1)(y²) > 0, so k² > 4y². Since x and y are positive integers and we need exactly two solutions, k = 2y gives the boundary case where the discriminant equals zero, but we need k slightly larger. However, among the given options, k = 2y is the correct relationship.",
     "distractorExplanations": {
+      "a": "This value is too large and would create more than the required number of solutions in the integer constraint context.",
       "b": "This would make the discriminant negative for most positive integer values of y, yielding no real solutions.",
-      "c": "This value is too large and would create more than the required number of solutions in the integer constraint context.",
       "d": "This is equivalent to 2y but written in a more complex form that doesn't add mathematical value to the solution."
     },
     "difficulty": "hard",
@@ -1313,7 +1313,7 @@
       },
       {
         "id": "b",
-        "text": "5:8"
+        "text": "8:5"
       },
       {
         "id": "c",
@@ -1321,15 +1321,15 @@
       },
       {
         "id": "d",
-        "text": "8:5"
+        "text": "5:8"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "If 3 slices are removed from 8 total slices, then 5 slices remain. Since the slices are equal, the remaining arc length represents 5/8 of the original circumference. Therefore, the ratio is 5:8.",
     "distractorExplanations": {
       "a": "This gives the ratio of removed slices to total slices, not remaining to total.",
-      "c": "This compares remaining slices to removed slices instead of remaining to original total.",
-      "d": "This inverts the correct ratio, putting the larger number first."
+      "b": "This inverts the correct ratio, putting the larger number first.",
+      "c": "This compares remaining slices to removed slices instead of remaining to original total."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -1342,7 +1342,7 @@
     "options": [
       {
         "id": "a",
-        "text": "750"
+        "text": "726"
       },
       {
         "id": "b",
@@ -1350,18 +1350,18 @@
       },
       {
         "id": "c",
-        "text": "726"
+        "text": "750"
       },
       {
         "id": "d",
         "text": "762"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "a",
     "explanation": "a₄ = 6r³ = 162 gives r³ = 27, so r = 3. Terms: 6, 18, 54, 162, 486. Sum = 726. Check: S₅ = 6(3⁵ − 1)/(3 − 1) = 6 × 242 / 2 = 726.",
     "distractorExplanations": {
-      "a": "750 does not match the geometric-series sum.",
       "b": "738 adds 12 too many; recheck the sum 6 + 18 + 54 + 162 + 486.",
+      "c": "750 does not match the geometric-series sum.",
       "d": "762 does not match the geometric-series sum."
     },
     "difficulty": "medium",
@@ -1379,7 +1379,7 @@
       },
       {
         "id": "b",
-        "text": "36"
+        "text": "24"
       },
       {
         "id": "c",
@@ -1387,15 +1387,15 @@
       },
       {
         "id": "d",
-        "text": "24"
+        "text": "36"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "b",
     "explanation": "Let the sides be 2x, 3x, and 4x. Volume = 24x³ = 5,184, so x³ = 216 and x = 6. The longest side is 4x = 24.",
     "distractorExplanations": {
       "a": "18 is the middle side, 3x.",
-      "b": "36 is 6x, not 4x.",
-      "c": "27 would require x = 6.75, which does not give volume 5,184."
+      "c": "27 would require x = 6.75, which does not give volume 5,184.",
+      "d": "36 is 6x, not 4x."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -1475,7 +1475,7 @@
     "options": [
       {
         "id": "a",
-        "text": "30π minutes"
+        "text": "75π minutes"
       },
       {
         "id": "b",
@@ -1483,18 +1483,18 @@
       },
       {
         "id": "c",
-        "text": "75π minutes"
+        "text": "30π minutes"
       },
       {
         "id": "d",
         "text": "300π minutes"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "The volume of the cylinder is πr²h = π(5²)(12) = 300π cubic feet. At a rate of 10 cubic feet per minute, the time needed is 300π ÷ 10 = 30π minutes.",
     "distractorExplanations": {
+      "a": "This uses the surface area formula instead of volume, calculating 2πr(r+h) rather than πr²h.",
       "b": "This incorrectly uses the diameter (10) instead of radius (5) in calculating the base area.",
-      "c": "This uses the surface area formula instead of volume, calculating 2πr(r+h) rather than πr²h.",
       "d": "This forgets to divide by the pumping rate, giving just the volume in cubic feet rather than time in minutes."
     },
     "difficulty": "medium",
@@ -1549,19 +1549,19 @@
       },
       {
         "id": "c",
-        "text": "119"
+        "text": "180"
       },
       {
         "id": "d",
-        "text": "180"
+        "text": "119"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "d",
     "explanation": "With width w, length = 2w + 3. Perimeter: 6w + 6 = 48, so w = 7 and length = 17. Area = 7 × 17 = 119 square meters.",
     "distractorExplanations": {
       "a": "105 = 7 × 15 uses length 2w + 1.",
       "b": "135 does not come from a width–length pair satisfying both conditions.",
-      "d": "180 does not satisfy the perimeter of 48."
+      "c": "180 does not satisfy the perimeter of 48."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -1608,7 +1608,7 @@
     "options": [
       {
         "id": "a",
-        "text": "2"
+        "text": "4"
       },
       {
         "id": "b",
@@ -1620,15 +1620,15 @@
       },
       {
         "id": "d",
-        "text": "4"
+        "text": "2"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "Multiply both sides by 12: 3(3x − 2) + 2(x + 5) = 48, so 11x + 4 = 48 and x = 4. Check: 10/4 + 9/6 = 2.5 + 1.5 = 4.",
     "distractorExplanations": {
-      "a": "x = 2 gives 1 + 7/6 ≈ 2.17, not 4.",
       "b": "x = 8 gives 5.5 + 13/6 ≈ 7.67, not 4.",
-      "c": "x = 6 gives 4 + 11/6 ≈ 5.83, not 4."
+      "c": "x = 6 gives 4 + 11/6 ≈ 5.83, not 4.",
+      "d": "x = 2 gives 1 + 7/6 ≈ 2.17, not 4."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question). · Local short-stem expansion"
@@ -1845,22 +1845,22 @@
       },
       {
         "id": "b",
-        "text": "6.4% increase"
+        "text": "5.6% increase"
       },
       {
         "id": "c",
-        "text": "5.6% increase"
+        "text": "6.4% increase"
       },
       {
         "id": "d",
         "text": "8.0% increase"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "b",
     "explanation": "Stocks are 3/5 = 60% and bonds 2/5 = 40% of the value. Weighted change = 0.6(12%) + 0.4(−4%) = 7.2% − 1.6% = 5.6% increase.",
     "distractorExplanations": {
       "a": "7.2% is the stock contribution alone, ignoring the bond loss.",
-      "b": "6.4% weights the bond loss by 0.2 instead of 0.4.",
+      "c": "6.4% weights the bond loss by 0.2 instead of 0.4.",
       "d": "8.0% simply subtracts 4% from 12% without weighting."
     },
     "difficulty": "medium",
@@ -2139,7 +2139,7 @@
     "options": [
       {
         "id": "a",
-        "text": "1"
+        "text": "9"
       },
       {
         "id": "b",
@@ -2147,18 +2147,18 @@
       },
       {
         "id": "c",
-        "text": "9"
+        "text": "1"
       },
       {
         "id": "d",
         "text": "7"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "a",
     "explanation": "Units digits of powers of 7 repeat every 4: 7, 9, 3, 1. Since 42 = 4 × 10 + 2, 7^42 has the same units digit as 7², which is 9.",
     "distractorExplanations": {
-      "a": "1 is the units digit when the exponent is a multiple of 4.",
       "b": "3 is the units digit when the exponent leaves remainder 3 on division by 4.",
+      "c": "1 is the units digit when the exponent is a multiple of 4.",
       "d": "7 is the units digit when the exponent leaves remainder 1 on division by 4."
     },
     "difficulty": "medium",
@@ -2176,7 +2176,7 @@
       },
       {
         "id": "b",
-        "text": "15"
+        "text": "12.5"
       },
       {
         "id": "c",
@@ -2184,15 +2184,15 @@
       },
       {
         "id": "d",
-        "text": "12.5"
+        "text": "15"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "b",
     "explanation": "2n − 3 = 17 gives n = 10. Increasing 10 by 25% gives 10 × 1.25 = 12.5.",
     "distractorExplanations": {
       "a": "10 is the number before the 25% increase.",
-      "b": "15 is a 50% increase, not 25%.",
-      "c": "13.75 applies 25% to 11 instead of 10."
+      "c": "13.75 applies 25% to 11 instead of 10.",
+      "d": "15 is a 50% increase, not 25%."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -4451,11 +4451,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Statement (1) alone is sufficient, but statement (2) alone is not sufficient."
+        "text": "Statement (2) alone is sufficient, but statement (1) alone is not sufficient."
       },
       {
         "id": "b",
-        "text": "Statement (2) alone is sufficient, but statement (1) alone is not sufficient."
+        "text": "Statement (1) alone is sufficient, but statement (2) alone is not sufficient."
       },
       {
         "id": "c",
@@ -4466,10 +4466,10 @@
         "text": "Neither statement alone nor both together are sufficient."
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "Statement (1): x² = 16 gives x = 4 or x = -4, so it cannot definitively answer whether x > 0 — not sufficient alone. Statement (2): x³ = -64 has exactly one real solution, x = -4 (cube roots are unique for real numbers), which definitively answers the question \"is x > 0\" with a firm NO. A definitive NO is sufficient, so statement (2) alone is sufficient.",
     "distractorExplanations": {
-      "a": "This incorrectly treats statement (1) as sufficient, but x² = 16 allows two possible values of x with different signs.",
+      "b": "This incorrectly treats statement (1) as sufficient, but x² = 16 allows two possible values of x with different signs.",
       "c": "This is incorrect because statement (2) alone already provides a definitive answer, so both statements together are not required.",
       "d": "This incorrectly assumes statement (2) is ambiguous like statement (1), overlooking that a real cube root is unique."
     },
@@ -4518,7 +4518,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Statement (1) alone is sufficient, but statement (2) alone is not sufficient."
+        "text": "Both statements together are sufficient, but neither alone is sufficient."
       },
       {
         "id": "b",
@@ -4526,18 +4526,18 @@
       },
       {
         "id": "c",
-        "text": "Both statements together are sufficient, but neither alone is sufficient."
+        "text": "Statement (1) alone is sufficient, but statement (2) alone is not sufficient."
       },
       {
         "id": "d",
         "text": "Neither statement alone nor both together are sufficient."
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "a",
     "explanation": "Statement (1) alone allows for a rhombus that is not a square (equal sides but not necessarily right angles), so it is not sufficient. Statement (2) alone allows for a rectangle that is not a square (right angles but not necessarily equal sides), so it is not sufficient. Together, equal sides and right angles uniquely define a square, so both statements together are sufficient.",
     "distractorExplanations": {
-      "a": "This is incorrect because equal sides alone do not rule out a non-square rhombus.",
       "b": "This is incorrect because right angles alone do not rule out a non-square rectangle.",
+      "c": "This is incorrect because equal sides alone do not rule out a non-square rhombus.",
       "d": "This is incorrect because the two statements together do uniquely determine that ABCD is a square."
     },
     "difficulty": "hard",
@@ -4551,7 +4551,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Statement (1) alone is sufficient, but statement (2) alone is not sufficient."
+        "text": "Neither statement alone nor both together are sufficient."
       },
       {
         "id": "b",
@@ -4563,15 +4563,15 @@
       },
       {
         "id": "d",
-        "text": "Neither statement alone nor both together are sufficient."
+        "text": "Statement (1) alone is sufficient, but statement (2) alone is not sufficient."
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Statement (1): if a is even, then a × b is even regardless of the value of b, since an even number times any integer is even. This is sufficient alone. Statement (2) only tells us about b; a could be even or odd, so a × b could be even or odd — not sufficient alone.",
     "distractorExplanations": {
+      "a": "This is incorrect because statement (1) alone is sufficient to answer the question.",
       "b": "This is incorrect because knowing only that b is odd tells us nothing about whether a is even or odd, so the product's parity cannot be determined.",
-      "c": "This is incorrect because statement (1) alone is already sufficient without needing statement (2).",
-      "d": "This is incorrect because statement (1) alone is sufficient to answer the question."
+      "c": "This is incorrect because statement (1) alone is already sufficient without needing statement (2)."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question). · Local short-stem expansion"
@@ -4584,7 +4584,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Statement (1) alone is sufficient, but statement (2) alone is not sufficient."
+        "text": "Both statements together are sufficient, but neither alone is sufficient."
       },
       {
         "id": "b",
@@ -4592,18 +4592,18 @@
       },
       {
         "id": "c",
-        "text": "Both statements together are sufficient, but neither alone is sufficient."
+        "text": "Statement (1) alone is sufficient, but statement (2) alone is not sufficient."
       },
       {
         "id": "d",
         "text": "Neither statement alone nor both together are sufficient."
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "a",
     "explanation": "Statement (1) alone is not sufficient because higher January revenue could result from a higher price rather than more units sold. Statement (2) alone is not sufficient because it says nothing about which month had higher revenue or more units. Together: since price per unit is constant and positive, revenue is directly proportional to units sold, so higher January revenue directly implies x > y.",
     "distractorExplanations": {
-      "a": "This is incorrect because revenue alone, without knowing that price was constant, cannot isolate the number of units sold.",
       "b": "This is incorrect because knowing the price was constant, without knowing which month had higher revenue, does not indicate which month had more units.",
+      "c": "This is incorrect because revenue alone, without knowing that price was constant, cannot isolate the number of units sold.",
       "d": "This is incorrect because the two statements together do allow revenue to be directly translated into a comparison of units sold."
     },
     "difficulty": "hard",
@@ -4618,7 +4618,7 @@
     "options": [
       {
         "id": "a",
-        "text": "North"
+        "text": "East"
       },
       {
         "id": "b",
@@ -4626,18 +4626,18 @@
       },
       {
         "id": "c",
-        "text": "East"
+        "text": "North"
       },
       {
         "id": "d",
         "text": "West"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Percentage changes: North = (150-120)/120 = 25%; South = (180-200)/200 = -10% (a decrease); East = (110-90)/90 ≈ 22.2%; West = (170-160)/160 = 6.25%. North has the largest increase at 25%.",
     "distractorExplanations": {
+      "a": "East had a substantial increase (about 22.2%) but it is still lower than North's 25% increase.",
       "b": "South actually experienced a decrease in units sold from Q1 to Q2, not an increase.",
-      "c": "East had a substantial increase (about 22.2%) but it is still lower than North's 25% increase.",
       "d": "West's increase (6.25%) is the smallest positive change among the four regions, not the largest."
     },
     "difficulty": "medium",
@@ -4655,7 +4655,7 @@
       },
       {
         "id": "b",
-        "text": "Beta"
+        "text": "Delta"
       },
       {
         "id": "c",
@@ -4663,15 +4663,15 @@
       },
       {
         "id": "d",
-        "text": "Delta"
+        "text": "Beta"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "Ratios: Alpha = 10/200 = 0.050; Beta = 20/250 = 0.080; Gamma = 8/180 ≈ 0.044; Delta = 15/220 ≈ 0.068. Beta has the highest ratio at 0.080 grams of protein per calorie.",
     "distractorExplanations": {
       "a": "Alpha's ratio (0.050) is lower than Beta's and does not represent the highest value in the table.",
-      "c": "Gamma has the lowest protein-to-calorie ratio of the four bars, not the highest.",
-      "d": "Delta's ratio (approximately 0.068) is the second highest, close to but still lower than Beta's."
+      "b": "Delta's ratio (approximately 0.068) is the second highest, close to but still lower than Beta's.",
+      "c": "Gamma has the lowest protein-to-calorie ratio of the four bars, not the highest."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question). · Local short-stem expansion"
@@ -4717,7 +4717,7 @@
     "options": [
       {
         "id": "a",
-        "text": "2"
+        "text": "3"
       },
       {
         "id": "b",
@@ -4725,18 +4725,18 @@
       },
       {
         "id": "c",
-        "text": "3"
+        "text": "2"
       },
       {
         "id": "d",
         "text": "0"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Month-over-month changes: Feb (+15), Mar (-5, a decrease), Apr (+20), May (-5, a decrease), Jun (+20). Traffic decreased in exactly 2 months: March and May.",
     "distractorExplanations": {
+      "a": "This overcounts the decreases; only March and May show a decline, not three months.",
       "b": "This undercounts the decreases; there are two months (March and May) where traffic dropped from the prior month, not one.",
-      "c": "This overcounts the decreases; only March and May show a decline, not three months.",
       "d": "This is incorrect because traffic did decline in both March and May relative to the preceding month."
     },
     "difficulty": "medium",
@@ -4751,7 +4751,7 @@
     "options": [
       {
         "id": "a",
-        "text": "13.5"
+        "text": "15"
       },
       {
         "id": "b",
@@ -4763,15 +4763,15 @@
       },
       {
         "id": "d",
-        "text": "15"
+        "text": "13.5"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Average = (12 + 18 + 9 + 15) / 4 = 54 / 4 = 13.5.",
     "distractorExplanations": {
+      "a": "15 is simply Week 4's value, not the average across all four weeks.",
       "b": "14 results from a rounding or arithmetic error when dividing the total by 4.",
-      "c": "12 is simply Week 1's value, not the average across all four weeks.",
-      "d": "15 is simply Week 4's value, not the average across all four weeks."
+      "c": "12 is simply Week 1's value, not the average across all four weeks."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question)."
@@ -4817,7 +4817,7 @@
     "options": [
       {
         "id": "a",
-        "text": "No, because Jordan has not completed 6 months of continuous employment by December 31."
+        "text": "Yes, because both eligibility conditions are met."
       },
       {
         "id": "b",
@@ -4825,18 +4825,18 @@
       },
       {
         "id": "c",
-        "text": "Yes, because both eligibility conditions are met."
+        "text": "No, because Jordan has not completed 6 months of continuous employment by December 31."
       },
       {
         "id": "d",
         "text": "No, because Jordan's performance rating is not high enough."
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "From August 1 to December 31 is only 5 months of employment, one month short of the required 6-month minimum. Despite an excellent performance rating, Jordan does not meet the tenure requirement and is therefore not eligible.",
     "distractorExplanations": {
+      "a": "This incorrectly concludes both conditions are met; the tenure condition specifically is not satisfied.",
       "b": "This ignores the separate tenure requirement, which Jordan does not satisfy regardless of the strong performance rating.",
-      "c": "This incorrectly concludes both conditions are met; the tenure condition specifically is not satisfied.",
       "d": "This misidentifies the issue — Jordan's rating actually exceeds the minimum requirement; the problem is the length of employment, not the rating."
     },
     "difficulty": "medium",
@@ -4883,7 +4883,7 @@
     "options": [
       {
         "id": "a",
-        "text": "4:45 PM"
+        "text": "5:45 PM"
       },
       {
         "id": "b",
@@ -4895,15 +4895,15 @@
       },
       {
         "id": "d",
-        "text": "5:45 PM"
+        "text": "4:45 PM"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Flight 204 departs at 9:15 AM City A time and flies for 4 hours 30 minutes, arriving at 1:45 PM in City A's time frame. Converting to City B time (2 hours ahead) gives an arrival of 3:45 PM City B time. Adding the required 1-hour minimum layover gives an earliest departure of 4:45 PM City B time.",
     "distractorExplanations": {
+      "a": "5:45 PM adds an extra hour beyond the correctly calculated departure time, likely from double-counting part of the layover or time difference.",
       "b": "3:45 PM is the arrival time in City B but omits the required 1-hour minimum layover before the connecting flight can depart.",
-      "c": "2:45 PM fails to apply the 2-hour time zone adjustment when converting the arrival time to City B's local time.",
-      "d": "5:45 PM adds an extra hour beyond the correctly calculated departure time, likely from double-counting part of the layover or time difference."
+      "c": "2:45 PM fails to apply the 2-hour time zone adjustment when converting the arrival time to City B's local time."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go for the GMAT Focus Edition readiness check (original question). · Local short-stem expansion"
@@ -5048,7 +5048,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Machine A, by 1.25 units/hour"
+        "text": "Machine B, by 1.25 units/hour"
       },
       {
         "id": "b",
@@ -5060,15 +5060,15 @@
       },
       {
         "id": "d",
-        "text": "Machine B, by 1.25 units/hour"
+        "text": "Machine A, by 1.25 units/hour"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "Machine A: 105 units ÷ 4 = 26.25 per hour. Machine B: 110 ÷ 4 = 27.5 per hour. Machine B is higher by 27.5 − 26.25 = 1.25 units per hour.",
     "distractorExplanations": {
-      "a": "Machine A's total (105) is lower than Machine B's (110).",
       "b": "2.5 is half the gap in totals (5 ÷ 2); the gap in averages is 5 ÷ 4 = 1.25.",
-      "c": "Machine A is not higher, and 2.5 is not the gap in averages."
+      "c": "Machine A is not higher, and 2.5 is not the gap in averages.",
+      "d": "Machine A's total (105) is lower than Machine B's (110)."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -5115,7 +5115,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Product X, by 5 percentage points"
+        "text": "Product X, by 10 percentage points"
       },
       {
         "id": "b",
@@ -5123,18 +5123,18 @@
       },
       {
         "id": "c",
-        "text": "Product X, by 10 percentage points"
+        "text": "Product X, by 5 percentage points"
       },
       {
         "id": "d",
         "text": "Product Y, by 10 percentage points"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "First, calculate the total reviews for each product. For Product X: 120 + 60 + 20 = 200. For Product Y: 150 + 80 + 70 = 300. Next, calculate the percentage of positive reviews for each. Product X: (120/200) * 100% = 60%. Product Y: (150/300) * 100% = 50%. Product X has a higher percentage of positive reviews (60% vs 50%), and the difference is 10 percentage points.",
     "distractorExplanations": {
+      "a": "This correctly identifies Product X as having a higher percentage but miscalculates the difference. The difference is 10 percentage points, not 5.",
       "b": "This incorrectly identifies Product Y as having a higher percentage and miscalculates the difference, possibly by comparing raw numbers or making an error in percentage calculation.",
-      "c": "This correctly identifies Product X as having a higher percentage but miscalculates the difference. The difference is 10 percentage points, not 5.",
       "d": "This incorrectly identifies Product Y as having a higher percentage and miscalculates the difference. It's crucial to calculate percentages relative to the total reviews for each product, not just compare raw positive counts."
     },
     "difficulty": "easy",
@@ -5248,7 +5248,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Factory X, by 5 units/month"
+        "text": "Factory Y, by 5 units/month"
       },
       {
         "id": "b",
@@ -5260,15 +5260,15 @@
       },
       {
         "id": "d",
-        "text": "Factory Y, by 5 units/month"
+        "text": "Factory X, by 5 units/month"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "Factory X: 500 ÷ 4 = 125 per month. Factory Y: 520 ÷ 4 = 130 per month. Factory Y is higher by 5 units per month.",
     "distractorExplanations": {
-      "a": "Factory X's total (500) is lower than Factory Y's (520).",
       "b": "10 is half the gap in totals (20 ÷ 2); the gap in averages is 20 ÷ 4 = 5.",
-      "c": "Factory X is not higher, and 10 is not the gap in averages."
+      "c": "Factory X is not higher, and 10 is not the gap in averages.",
+      "d": "Factory X's total (500) is lower than Factory Y's (520)."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -5386,7 +5386,7 @@
       },
       {
         "id": "b",
-        "text": "Product B, by 1.7 percentage points"
+        "text": "Product B, by 10.0 percentage points"
       },
       {
         "id": "c",
@@ -5394,15 +5394,15 @@
       },
       {
         "id": "d",
-        "text": "Product B, by 10.0 percentage points"
+        "text": "Product B, by 1.7 percentage points"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "b",
     "explanation": "Product A: (280 − 200)/200 = 40%. Product B: (225 − 150)/150 = 50%. Product B's increase is larger by 10 percentage points.",
     "distractorExplanations": {
       "a": "Product A's increase (40%) is smaller than Product B's (50%).",
-      "b": "The gap is 50% − 40% = 10 points, not 1.7.",
-      "c": "Product A is not higher, and 13.3 is not the gap."
+      "c": "Product A is not higher, and 13.3 is not the gap.",
+      "d": "The gap is 50% − 40% = 10 points, not 1.7."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -5424,19 +5424,19 @@
       },
       {
         "id": "c",
-        "text": "0.932"
+        "text": "0.902"
       },
       {
         "id": "d",
-        "text": "0.902"
+        "text": "0.932"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "c",
     "explanation": "P(all three) = 0.8 × 0.7 × 0.9 = 0.504. Exactly two: 0.8 × 0.7 × 0.1 + 0.8 × 0.3 × 0.9 + 0.2 × 0.7 × 0.9 = 0.056 + 0.216 + 0.126 = 0.398. At least two = 0.504 + 0.398 = 0.902.",
     "distractorExplanations": {
       "a": "0.648 does not match the sum of the exactly-two and all-three cases.",
       "b": "0.720 is only P(X) × P(Z), which ignores Task Y.",
-      "c": "0.932 overcounts; the correct total is 0.902."
+      "d": "0.932 overcounts; the correct total is 0.902."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -5454,7 +5454,7 @@
       },
       {
         "id": "b",
-        "text": "0.25 percentage points"
+        "text": "0.45 percentage points"
       },
       {
         "id": "c",
@@ -5462,15 +5462,15 @@
       },
       {
         "id": "d",
-        "text": "0.45 percentage points"
+        "text": "0.25 percentage points"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "First, calculate the average quarterly return for Portfolio A: Average A = (5.2 + 4.8 + 6.0 + 5.6) / 4 = 21.6 / 4 = 5.4% Next, calculate the average quarterly return for Portfolio B: Average B = (4.5 + 5.0 + 5.5 + 6.0) / 4 = 21.0 / 4 = 5.25% Finally, find the difference between the average returns: Difference = Average A - Average B = 5.4% - 5.25% = 0.15 percentage points.",
     "distractorExplanations": {
       "a": "This is the correct answer. The average for Portfolio A is 5.4% and for Portfolio B is 5.25%, resulting in a difference of 0.15 percentage points.",
-      "c": "This option might arise from a calculation error in summing the returns or in dividing by the number of quarters. For example, if one incorrectly calculated one of the averages or subtracted incorrectly.",
-      "d": "This option could result from a significant arithmetic error in calculating the averages or the difference. It might also occur if one mistakenly used absolute differences of individual quarters and then averaged those, instead of averaging first and then finding the difference."
+      "b": "This option could result from a significant arithmetic error in calculating the averages or the difference. It might also occur if one mistakenly used absolute differences of individual quarters and then averaged those, instead of averaging first and then finding the difference.",
+      "c": "This option might arise from a calculation error in summing the returns or in dividing by the number of quarters. For example, if one incorrectly calculated one of the averages or subtracted incorrectly."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -5483,7 +5483,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Q1; 8.0%"
+        "text": "Q3; 9.0%"
       },
       {
         "id": "b",
@@ -5491,18 +5491,18 @@
       },
       {
         "id": "c",
-        "text": "Q3; 9.0%"
+        "text": "Q1; 8.0%"
       },
       {
         "id": "d",
         "text": "Q4; 8.5%"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "a",
     "explanation": "To find the turnover rate for each quarter, divide the number of departures by the total number of employees at the beginning of the quarter and multiply by 100. Q1: (16/200) * 100 = 8.0% Q2: (15/200) * 100 = 7.5% Q3: (18/200) * 100 = 9.0% Q4: (17/200) * 100 = 8.5% Comparing these rates, Q3 had the highest turnover rate at 9.0%.",
     "distractorExplanations": {
-      "a": "This is the correct calculation for Q1, but it is not the highest turnover rate.",
       "b": "This is the correct calculation for Q2, but it is not the highest turnover rate.",
+      "c": "This is the correct calculation for Q1, but it is not the highest turnover rate.",
       "d": "This is the correct calculation for Q4, but it is not the highest turnover rate."
     },
     "difficulty": "easy",
@@ -5748,7 +5748,7 @@
     "options": [
       {
         "id": "a",
-        "text": "$200,000"
+        "text": "$175,000"
       },
       {
         "id": "b",
@@ -5760,15 +5760,15 @@
       },
       {
         "id": "d",
-        "text": "$175,000"
+        "text": "$200,000"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "Actual spending: personnel $350,000 × 1.10 = $385,000; licenses $250,000; hardware $200,000 × 0.95 = $190,000. Total = $825,000, leaving $1,000,000 − $825,000 = $175,000 for miscellaneous.",
     "distractorExplanations": {
-      "a": "$200,000 is the original miscellaneous budget before the overrun and savings.",
       "b": "$190,000 is the actual hardware cost, not the amount left.",
-      "c": "$195,000 would require hardware to come in 15% under budget."
+      "c": "$195,000 would require hardware to come in 15% under budget.",
+      "d": "$200,000 is the original miscellaneous budget before the overrun and savings."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -5822,19 +5822,19 @@
       },
       {
         "id": "c",
-        "text": "Day 3"
+        "text": "Day 4"
       },
       {
         "id": "d",
-        "text": "Day 4"
+        "text": "Day 3"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "c",
     "explanation": "Day 4 has the smallest gap in both absolute terms ($2) and relative terms: 2 ÷ 111 ≈ 1.8%, versus about 5.1%, 4.9%, 7.5%, and 6.3% on the other days.",
     "distractorExplanations": {
       "a": "The percentage difference on Day 1 was approximately 5.13%, which is not the smallest.",
       "b": "The percentage difference on Day 2 was approximately 4.88%, which is not the smallest.",
-      "c": "The percentage difference on Day 3 was approximately 7.55%, which is the largest among the options."
+      "d": "The percentage difference on Day 3 was approximately 7.55%, which is the largest among the options."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -5913,7 +5913,7 @@
     "options": [
       {
         "id": "a",
-        "text": "$140,000"
+        "text": "$144,500"
       },
       {
         "id": "b",
@@ -5925,15 +5925,15 @@
       },
       {
         "id": "d",
-        "text": "$144,500"
+        "text": "$140,000"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "North $37,500 + South $36,000 + East $36,000 + West $35,000 = $144,500.",
     "distractorExplanations": {
-      "a": "$140,000 undercounts one region's revenue.",
       "b": "$155,000 overstates the revenue from at least one region.",
-      "c": "$150,000 is a rounded estimate, not the exact total."
+      "c": "$150,000 is a rounded estimate, not the exact total.",
+      "d": "$140,000 undercounts one region's revenue."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -5950,7 +5950,7 @@
       },
       {
         "id": "b",
-        "text": "20.5 days"
+        "text": "15 days"
       },
       {
         "id": "c",
@@ -5958,15 +5958,15 @@
       },
       {
         "id": "d",
-        "text": "15 days"
+        "text": "20.5 days"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "b",
     "explanation": "Remaining work: A = 10 × 0.30 = 3 days, B = 15 × 0.40 = 6 days, C = 8 × 0.75 = 6 days. Total = 15 days.",
     "distractorExplanations": {
       "a": "12 days leaves out part of Task B or Task C.",
-      "b": "20.5 days uses completed percentages instead of remaining ones for some tasks.",
-      "c": "18.5 days does not match 3 + 6 + 6."
+      "c": "18.5 days does not match 3 + 6 + 6.",
+      "d": "20.5 days uses completed percentages instead of remaining ones for some tasks."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -5987,19 +5987,19 @@
       },
       {
         "id": "c",
-        "text": "$4,250"
+        "text": "$4,167"
       },
       {
         "id": "d",
-        "text": "$4,167"
+        "text": "$4,250"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "c",
     "explanation": "Total sales = $40,000 + $67,500 + $17,500 = $125,000 across 30 reps, so the weighted average is $125,000 ÷ 30 ≈ $4,167.",
     "distractorExplanations": {
       "a": "$4,000 is the simple average of the three regional averages.",
       "b": "$4,333 does not match the rep-weighted average.",
-      "c": "$4,250 overweights the Central region."
+      "d": "$4,250 overweights the Central region."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -6111,7 +6111,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Campaign X, by 5 leads per day"
+        "text": "Both campaigns had the same average leads per day"
       },
       {
         "id": "b",
@@ -6119,18 +6119,18 @@
       },
       {
         "id": "c",
-        "text": "Both campaigns had the same average leads per day"
+        "text": "Campaign X, by 5 leads per day"
       },
       {
         "id": "d",
         "text": "Campaign X, by 10 leads per day"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "a",
     "explanation": "Calculate the average leads per day for Campaign X: 1,500 leads / 30 days = 50 leads per day. Calculate the average leads per day for Campaign Y: 2,250 leads / 45 days = 50 leads per day. Since both campaigns generated 50 leads per day on average, they had the same performance.",
     "distractorExplanations": {
-      "a": "This answer suggests an incorrect calculation of the average for one or both campaigns, or an error in comparing them.",
       "b": "This answer suggests an incorrect calculation of the average for one or both campaigns, or an error in comparing them.",
+      "c": "This answer suggests an incorrect calculation of the average for one or both campaigns, or an error in comparing them.",
       "d": "This answer suggests a significant miscalculation of the average leads per day for Campaign X or an incorrect comparison."
     },
     "difficulty": "medium",
@@ -6216,22 +6216,22 @@
       },
       {
         "id": "b",
-        "text": "120, 240, 140"
+        "text": "80, 160, 260"
       },
       {
         "id": "c",
-        "text": "80, 160, 260"
+        "text": "120, 240, 140"
       },
       {
         "id": "d",
         "text": "90, 180, 230"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "b",
     "explanation": "Profit per unit is $30 for A, $40 for B, and $40 for C. With B = 2A and C = 500 − 3A, total profit = 30A + 40(2A) + 40(500 − 3A) = 20,000 − 10A. Profit is highest when A is smallest, so 80, 160, 260 gives $19,200.",
     "distractorExplanations": {
       "a": "100, 200, 200 gives 20,000 − 10(100) = $19,000, less than $19,200.",
-      "b": "120, 240, 140 gives 20,000 − 10(120) = $18,800, the lowest of the four.",
+      "c": "120, 240, 140 gives 20,000 − 10(120) = $18,800, the lowest of the four.",
       "d": "90, 180, 230 gives 20,000 − 10(90) = $19,100, $100 short of the best combination."
     },
     "difficulty": "medium",
@@ -6253,19 +6253,19 @@
       },
       {
         "id": "c",
-        "text": "$2,500"
+        "text": "$2,400"
       },
       {
         "id": "d",
-        "text": "$2,400"
+        "text": "$2,500"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "c",
     "explanation": "Profit per unit: A $5, B $6, C $5. Totals: $500 + $900 + $1,000 = $2,400.",
     "distractorExplanations": {
       "a": "$2,200 undercounts Product B's profit.",
       "b": "$2,700 overstates the unit profit of at least one product.",
-      "c": "$2,500 treats Product B as earning $6.67 per unit."
+      "d": "$2,500 treats Product B as earning $6.67 per unit."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -6412,7 +6412,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Sales representatives with more experience consistently make more sales."
+        "text": "Sales Rep D made the most sales, and also has the most experience."
       },
       {
         "id": "b",
@@ -6420,18 +6420,18 @@
       },
       {
         "id": "c",
-        "text": "Sales Rep D made the most sales, and also has the most experience."
+        "text": "Sales representatives with more experience consistently make more sales."
       },
       {
         "id": "d",
         "text": "Sales Rep C has the lowest number of sales and the least experience, indicating a direct causal relationship."
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "a",
     "explanation": "By examining the table, Sales Rep D made 35 sales, which is the highest number among all representatives. Sales Rep D also has 7 years of experience, which is the highest among all representatives. Therefore, the statement is directly supported by the data.",
     "distractorExplanations": {
-      "a": "While there is a general trend, it is not consistent. For example, Sales Rep A (3 years, 25 sales) has less experience than Sales Rep E (4 years, 28 sales) but made fewer sales, and Sales Rep B (5 years, 30 sales) has more experience than Sales Rep E but made only slightly more sales. The statement 'consistently' is too strong to be inferred.",
       "b": "To calculate this, we would sum all sales (25+30+20+35+28 = 138) and sum all years of experience (3+5+2+7+4 = 21). The average sales per year of experience would be 138/21 ≈ 6.57, not 7. This statement is a miscalculation.",
+      "c": "While there is a general trend, it is not consistent. For example, Sales Rep A (3 years, 25 sales) has less experience than Sales Rep E (4 years, 28 sales) but made fewer sales, and Sales Rep B (5 years, 30 sales) has more experience than Sales Rep E but made only slightly more sales. The statement 'consistently' is too strong to be inferred.",
       "d": "While Sales Rep C indeed has the lowest sales (20) and least experience (2), inferring a 'direct causal relationship' is an assumption that cannot be made solely from this limited dataset. Correlation does not imply causation, and other factors could be at play."
     },
     "difficulty": "medium",
@@ -6521,19 +6521,19 @@
       },
       {
         "id": "c",
-        "text": "Higher advertising expenditures generally correspond to higher monthly sales, but not always proportionally."
+        "text": "Advertising expenditure has no discernible impact on monthly sales."
       },
       {
         "id": "d",
-        "text": "Advertising expenditure has no discernible impact on monthly sales."
+        "text": "Higher advertising expenditures generally correspond to higher monthly sales, but not always proportionally."
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "d",
     "explanation": "Sales generally rise with advertising spend, but not proportionally: the jump from $25k to $30k adds only $5k in sales, and months 3 and 4 have the same spend with different sales. The relationship is positive but neither perfect nor strictly proportional.",
     "distractorExplanations": {
       "a": "A perfect correlation needs every point on one straight line, but the sales gain per $5k of spend varies from $5k to $25k.",
       "b": "The data show association, not cause, and months 3 and 4 have equal spend but different sales, so spend alone does not determine sales.",
-      "d": "Sales rise from $100k to $165k as spend triples, which is a clear positive pattern."
+      "c": "Sales rise from $100k to $165k as spend triples, which is a clear positive pattern."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -6581,7 +6581,7 @@
     "options": [
       {
         "id": "a",
-        "text": "$340,000"
+        "text": "$350,000"
       },
       {
         "id": "b",
@@ -6593,15 +6593,15 @@
       },
       {
         "id": "d",
-        "text": "$350,000"
+        "text": "$340,000"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "Product B: 80 + 85 + 90 + 95 = 350 thousand, so total sales were $350,000.",
     "distractorExplanations": {
-      "a": "$340,000 drops $10,000 from the quarterly sum.",
       "b": "$545,000 is Product A's four-quarter total.",
-      "c": "$360,000 adds $10,000 too much."
+      "c": "$360,000 adds $10,000 too much.",
+      "d": "$340,000 drops $10,000 from the quarterly sum."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -6618,7 +6618,7 @@
       },
       {
         "id": "b",
-        "text": "$5,000"
+        "text": "$2,000"
       },
       {
         "id": "c",
@@ -6626,15 +6626,15 @@
       },
       {
         "id": "d",
-        "text": "$2,000"
+        "text": "$5,000"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "b",
     "explanation": "Each product earns $10 per unit. Contribution = 200 × $10 + 300 × $10 = $5,000. Subtracting $3,000 in fixed costs leaves a profit of $2,000.",
     "distractorExplanations": {
       "a": "$1,500 subtracts more than the $3,000 fixed cost.",
-      "b": "$5,000 is contribution margin before fixed costs.",
-      "c": "$2,500 subtracts only $2,500 in fixed costs."
+      "c": "$2,500 subtracts only $2,500 in fixed costs.",
+      "d": "$5,000 is contribution margin before fixed costs."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."

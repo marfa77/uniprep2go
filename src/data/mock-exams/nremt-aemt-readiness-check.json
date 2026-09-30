@@ -3,31 +3,31 @@
     "id": "nremt-aemt-readiness-check-airway-001",
     "examSlug": "nremt-aemt-readiness-check",
     "topicId": "trauma",
-    "prompt": "For a suspected pelvic fracture with shock, EMS should",
+    "prompt": "For a suspected pelvic fracture with signs of shock, EMS should:",
     "options": [
       {
         "id": "a",
-        "text": "Avoid log-rolling excessively, stabilize pelvis per protocol, and treat for shock"
+        "text": "Stabilize the pelvis, limit movement, treat for shock"
       },
       {
         "id": "b",
-        "text": "Have the patient walk to assess stability"
+        "text": "Rock the pelvis repeatedly to confirm instability"
       },
       {
         "id": "c",
-        "text": "Rock the pelvis repeatedly to confirm fracture"
+        "text": "Have the patient stand to test weight bearing"
       },
       {
         "id": "d",
-        "text": "Apply ice and discharge on scene"
+        "text": "Apply a traction splint to the injured leg"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Pelvic fractures can cause massive bleeding; minimize movement and stabilize.",
     "distractorExplanations": {
-      "b": "Walking worsens hemorrhage.",
-      "c": "Rocking is harmful.",
-      "d": "Scene discharge is inappropriate."
+      "b": "Repeated rocking can dislodge clots and worsen bleeding.",
+      "c": "Standing risks further injury and bleeding.",
+      "d": "Traction splints are contraindicated with pelvic fractures."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -36,31 +36,31 @@
     "id": "nremt-aemt-readiness-check-airway-002",
     "examSlug": "nremt-aemt-readiness-check",
     "topicId": "trauma",
-    "prompt": "Burn severity estimation in the field commonly uses",
+    "prompt": "Burn size in the field is commonly estimated with:",
     "options": [
       {
         "id": "a",
-        "text": "Only the patient's subjective pain score"
+        "text": "The patient's pain score from 0 to 10"
       },
       {
         "id": "b",
-        "text": "Rule of Nines (or age-appropriate alternative) for BSA percentage"
+        "text": "Rule of Nines for body surface area"
       },
       {
         "id": "c",
-        "text": "Pupil size"
+        "text": "Glasgow Coma Scale score and pupils"
       },
       {
         "id": "d",
-        "text": "Blood glucose"
+        "text": "Blood glucose and pulse oximetry"
       }
     ],
     "correctOptionId": "b",
     "explanation": "TBSA estimation guides fluid/transport decisions along with depth and location.",
     "distractorExplanations": {
-      "a": "Pain alone underestimates severity.",
-      "c": "Pupils are neuro.",
-      "d": "Glucose is metabolic."
+      "a": "Pain does not measure burn size; deep burns can be painless.",
+      "c": "GCS assesses neurologic status, not burn extent.",
+      "d": "Glucose and SpO2 do not estimate burned area."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -69,31 +69,31 @@
     "id": "nremt-aemt-readiness-check-airway-003",
     "examSlug": "nremt-aemt-readiness-check",
     "topicId": "trauma",
-    "prompt": "A penetrating object impaled in the thigh should generally be",
+    "prompt": "An object impaled in the thigh should generally be:",
     "options": [
       {
         "id": "a",
-        "text": "Removed immediately to reduce infection"
+        "text": "Remove it to reduce infection risk"
       },
       {
         "id": "b",
-        "text": "Twisted out to free clothing"
+        "text": "Pull it out to control the bleeding"
       },
       {
         "id": "c",
-        "text": "Stabilized in place and not removed in the field unless it interferes with CPR/airway"
+        "text": "Stabilize it in place for transport"
       },
       {
         "id": "d",
-        "text": "Cut flush with the skin"
+        "text": "Cut it flush with the skin surface"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Impaled objects may tamponade bleeding; stabilize for transport unless removal is required for resuscitation.",
     "distractorExplanations": {
-      "a": "Field removal can cause hemorrhage.",
-      "b": "Twisting increases damage.",
-      "d": "Cutting flush still leaves the object and may worsen control issues."
+      "a": "Removal can release tamponade and cause severe bleeding.",
+      "b": "The object may be tamponading bleeding; pulling it out worsens hemorrhage.",
+      "d": "Cutting it moves the object and can worsen tissue damage."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -118,7 +118,7 @@
       },
       {
         "id": "d",
-        "text": "Hypertension, bradycardia, and irregular respirations"
+        "text": "High BP, slow pulse, irregular breathing"
       }
     ],
     "correctOptionId": "d",
@@ -139,27 +139,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Mechanism and exam suggest possible spinal injury (e.g., high-risk MOI with midline tenderness/neuro deficits)"
+        "text": "High-risk mechanism with midline pain or deficits"
       },
       {
         "id": "b",
-        "text": "Every patient with a hangnail"
+        "text": "Any patient involved in a motor vehicle crash"
       },
       {
         "id": "c",
-        "text": "Only patients under age 10"
+        "text": "Only patients who are unconscious at the scene"
       },
       {
         "id": "d",
-        "text": "Never in modern EMS"
+        "text": "Only patients who can walk at the scene"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Selective spinal precautions follow protocol based on MOI and findings.",
     "distractorExplanations": {
-      "b": "Minor injuries without risk factors do not mandate full SMR.",
-      "c": "Age alone is not the rule.",
-      "d": "SMR remains indicated when criteria met."
+      "b": "Crash involvement alone is not enough; selective criteria combine mechanism with findings.",
+      "c": "Alert patients with midline tenderness or deficits also need restriction.",
+      "d": "Being able to walk does not rule spinal injury in or out."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -168,31 +168,31 @@
     "id": "nremt-aemt-readiness-check-airway-006",
     "examSlug": "nremt-aemt-readiness-check",
     "topicId": "trauma",
-    "prompt": "Evisceration management includes:",
+    "prompt": "Management of an abdominal evisceration includes:",
     "options": [
       {
         "id": "a",
-        "text": "Replace organs firmly into the abdomen on scene"
+        "text": "Push the organs back into the abdomen"
       },
       {
         "id": "b",
-        "text": "Cover protruding organs with moist sterile dressing and occlusive cover; do not push back inside"
+        "text": "Cover with moist sterile and occlusive dressings"
       },
       {
         "id": "c",
-        "text": "Apply a dry adhesive bandage tightly over organs"
+        "text": "Cover tightly with a dry adhesive bandage"
       },
       {
         "id": "d",
-        "text": "Give the patient food and water"
+        "text": "Give the patient sips of water for shock"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Keep organs moist and protected; replacement is a surgical task.",
     "distractorExplanations": {
-      "a": "Pushing organs back can worsen injury/contamination.",
-      "c": "Dry tight dressings damage tissue.",
-      "d": "NPO for likely surgery."
+      "a": "Replacing organs risks infection and injury; that is a surgical task.",
+      "c": "Dry dressings stick to and dry out exposed organs.",
+      "d": "Give nothing by mouth to a patient who may need surgery."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -205,27 +205,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Isolated ankle sprain"
+        "text": "Isolated rib fracture with splinting"
       },
       {
         "id": "b",
-        "text": "Hyperventilation syndrome"
+        "text": "Hyperventilation from anxiety"
       },
       {
         "id": "c",
-        "text": "Tension pneumothorax physiology and support ABC/ALS per protocol"
+        "text": "Tension pneumothorax"
       },
       {
         "id": "d",
-        "text": "Food poisoning"
+        "text": "Diaphragmatic muscle spasm"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Penetrating chest trauma with distress/JVD raises tension pneumothorax concern—rapid transport/ALS.",
+    "explanation": "Penetrating chest trauma with worsening dyspnea and JVD suggests tension pneumothorax. Support airway, breathing, and circulation, request ALS for decompression, and transport rapidly.",
     "distractorExplanations": {
-      "a": "Not an ankle injury pattern.",
-      "b": "Do not dismiss as anxiety.",
-      "d": "GI illness does not explain this trauma pattern."
+      "a": "Rib fractures cause pain but not JVD with worsening dyspnea.",
+      "b": "Anxiety does not cause JVD; assume a life threat after penetrating trauma.",
+      "d": "Muscle spasm does not explain JVD and progressive distress."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -250,7 +250,7 @@
       },
       {
         "id": "d",
-        "text": "Expectant / deceased (black)"
+        "text": "Expectant (black)"
       }
     ],
     "correctOptionId": "d",
@@ -271,15 +271,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Isolated midshaft femur fracture without contraindications per protocol"
+        "text": "Isolated midshaft femur fracture"
       },
       {
         "id": "b",
-        "text": "Pelvic fracture as the only treatment"
+        "text": "Pelvic fracture with leg shortening"
       },
       {
         "id": "c",
-        "text": "Open skull fracture"
+        "text": "Open tibia fracture near the ankle"
       },
       {
         "id": "d",
@@ -289,8 +289,8 @@
     "correctOptionId": "a",
     "explanation": "Traction splints stabilize midshaft femurs when criteria are met; pelvis/spine need other care.",
     "distractorExplanations": {
-      "b": "Pelvis needs binder/stabilization strategies, not classic traction splint as sole care.",
-      "c": "Skull injuries need different management.",
+      "b": "Pelvic fractures are a contraindication for traction splints.",
+      "c": "Lower-leg and ankle injuries are contraindications for traction splinting.",
       "d": "C-spine needs immobilization strategies."
     },
     "difficulty": "medium",
@@ -300,31 +300,31 @@
     "id": "nremt-aemt-readiness-check-airway-010",
     "examSlug": "nremt-aemt-readiness-check",
     "topicId": "trauma",
-    "prompt": "On the NREMT AEMT, when managing an amputation, you should:? Select the best answer.",
+    "prompt": "When managing an amputation, you should:",
     "options": [
       {
         "id": "a",
-        "text": "Place the part in water to soak"
+        "text": "Place the part directly on ice"
       },
       {
         "id": "b",
-        "text": "Throw the part away to reduce scene time"
+        "text": "Soak the part in a container of water"
       },
       {
         "id": "c",
-        "text": "Control bleeding, care for the stump, and transport the part wrapped cool/dry per protocol (not directly on ice)"
+        "text": "Control bleeding; bag the part and keep it cool"
       },
       {
         "id": "d",
-        "text": "Apply a tourniquet to the amputated part instead of the stump"
+        "text": "Apply a tourniquet to the amputated part"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Save the part properly for possible reimplantation while prioritizing life-threatening hemorrhage.",
+    "explanation": "Control bleeding at the stump first. Wrap the part in a sterile dressing per protocol, seal it in a plastic bag, and keep the bag cool without direct ice contact so the tissue can possibly be reattached.",
     "distractorExplanations": {
-      "a": "Soaking damages tissue.",
-      "b": "Preserve the part.",
-      "d": "Tourniquet goes on the residual limb as indicated."
+      "a": "Direct ice contact can freeze and destroy the tissue.",
+      "b": "Soaking waterlogs tissue and lowers reattachment success.",
+      "d": "A tourniquet belongs on the stump if bleeding is uncontrolled, not on the part."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -337,27 +337,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Signs/Symptoms, Allergies, Medications, Past history, Last oral intake, Events"
+        "text": "Signs/symptoms, Allergies, Medications, Past history, Last intake, Events"
       },
       {
         "id": "b",
-        "text": "Saturation, Airway, Medications, Pulse, LOC, ECG"
+        "text": "Saturation, Airway, Medications, Pulse, Level of consciousness, ECG"
       },
       {
         "id": "c",
-        "text": "Stroke, Asthma, MI, PE, Lung, ED"
+        "text": "Scene, Allergies, Mechanism, Pulse, Last meal, Exposure"
       },
       {
         "id": "d",
-        "text": "Scene, Ambulance, Medic, Patient, Landing, Exit"
+        "text": "Symptoms, Airway, Mental status, Pulse, Lungs, Extremities"
       }
     ],
     "correctOptionId": "a",
     "explanation": "SAMPLE structures medical history gathering.",
     "distractorExplanations": {
-      "b": "That mix is not SAMPLE.",
-      "c": "Disease list is not SAMPLE.",
-      "d": "Operations mnemonic is wrong."
+      "b": "This mixes vital signs and monitoring into a list that is not SAMPLE.",
+      "c": "Scene and mechanism belong to scene size-up, not the SAMPLE history.",
+      "d": "Airway and lungs belong to the primary assessment, not SAMPLE."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -366,31 +366,31 @@
     "id": "nremt-aemt-readiness-check-airway-012",
     "examSlug": "nremt-aemt-readiness-check",
     "topicId": "medical",
-    "prompt": "OPQRST is primarily used to assess",
+    "prompt": "OPQRST is primarily used to assess:",
     "options": [
       {
         "id": "a",
-        "text": "Trauma scene hazards"
+        "text": "Scene hazards and number of patients"
       },
       {
         "id": "b",
-        "text": "Pain/symptom characteristics (Onset, Provocation, Quality, Radiation, Severity, Time)"
+        "text": "The characteristics of pain or a symptom"
       },
       {
         "id": "c",
-        "text": "Only pediatric developmental milestones"
+        "text": "Pediatric developmental milestones"
       },
       {
         "id": "d",
-        "text": "Ambulance maintenance schedules"
+        "text": "Level of consciousness and orientation"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "OPQRST fleshes out the chief complaint symptom profile.",
+    "explanation": "OPQRST stands for Onset, Provocation, Quality, Radiation, Severity, and Time. It builds a profile of the chief complaint, especially pain.",
     "distractorExplanations": {
-      "a": "Scene hazards use other mnemonics.",
-      "c": "Milestones are pediatric development.",
-      "d": "Fleet maintenance is unrelated."
+      "a": "Scene hazards are part of scene size-up.",
+      "c": "Developmental milestones are not part of OPQRST.",
+      "d": "Mental status is assessed with AVPU or GCS."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -399,31 +399,31 @@
     "id": "nremt-aemt-readiness-check-airway-013",
     "examSlug": "nremt-aemt-readiness-check",
     "topicId": "medical",
-    "prompt": "A patient with stroke-like symptoms should be transported with priority on",
+    "prompt": "For a patient with stroke-like symptoms, the priority is:",
     "options": [
       {
         "id": "a",
-        "text": "Waiting on scene for symptoms to resolve for hours"
+        "text": "Waiting on scene to see if symptoms resolve"
       },
       {
         "id": "b",
-        "text": "Giving oral aspirin crushed in juice"
+        "text": "Giving oral aspirin before transport"
       },
       {
         "id": "c",
-        "text": "Rapid transport to an appropriate stroke-capable facility within time windows"
+        "text": "Rapid transport to a stroke-capable center"
       },
       {
         "id": "d",
-        "text": "Encouraging ambulation upstairs for assessment"
+        "text": "Walking the patient to assess coordination"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Time-sensitive stroke care needs rapid identification and transport; avoid delays and unsafe oral meds if swallow uncertain.",
     "distractorExplanations": {
-      "a": "Time loss worsens outcomes.",
-      "b": "Aspirin is not routine for suspected stroke in field like ACS.",
-      "d": "Ambulation risks falls."
+      "a": "Waiting wastes treatment time, and symptoms may worsen.",
+      "b": "Aspirin can harm a hemorrhagic stroke, and oral meds risk aspiration.",
+      "d": "Walking risks falls and delays transport."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -535,27 +535,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Encourage the patient to walk it off"
+        "text": "Place in recovery position and observe"
       },
       {
         "id": "b",
-        "text": "Support ventilation with BVM/oxygen and consider naloxone per protocol"
+        "text": "Ventilate with a BVM; consider naloxone"
       },
       {
         "id": "c",
-        "text": "Give oral fluids"
+        "text": "Give oral fluids to dilute the drug"
       },
       {
         "id": "d",
-        "text": "Apply a tourniquet to both arms"
+        "text": "Induce vomiting to remove the drug"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Respiratory depression drives opioid morbidity; ventilate and reverse per protocol.",
     "distractorExplanations": {
-      "a": "Ambulation worsens hypoxia risk.",
-      "c": "Oral fluids risk aspiration.",
-      "d": "Tourniquets are for hemorrhage, not overdose."
+      "a": "Slow, shallow breathing needs assisted ventilation, not observation.",
+      "c": "Never give oral fluids to an unresponsive patient.",
+      "d": "Inducing vomiting risks aspiration and is not recommended."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -568,27 +568,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Nasal cannula at 1 L/min"
+        "text": "Nasal cannula at 6 L/min"
       },
       {
         "id": "b",
-        "text": "Simple face mask at 2 L/min"
+        "text": "Simple face mask at 10 L/min"
       },
       {
         "id": "c",
-        "text": "Nonrebreather mask at adequate flow"
+        "text": "Nonrebreather mask at 15 L/min"
       },
       {
         "id": "d",
-        "text": "Room air"
+        "text": "Venturi mask set to 28% oxygen"
       }
     ],
     "correctOptionId": "c",
     "explanation": "A properly flushed nonrebreather at high flow delivers high FiO2 versus low-flow nasal cannula.",
     "distractorExplanations": {
-      "a": "1 L NC provides low FiO2.",
-      "b": "2 L is inadequate for a simple mask and still lower than NRB.",
-      "d": "Room air is ~21% oxygen."
+      "a": "A nasal cannula tops out around 44% FiO2.",
+      "b": "A simple mask delivers roughly 35–60% FiO2.",
+      "d": "A Venturi mask at 28% delivers a fixed low concentration."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -597,31 +597,31 @@
     "id": "nremt-aemt-readiness-check-pharm-004",
     "examSlug": "nremt-aemt-readiness-check",
     "topicId": "airway",
-    "prompt": "Stridor in an upper-airway obstruction patient suggests",
+    "prompt": "Stridor suggests:",
     "options": [
       {
         "id": "a",
-        "text": "Normal quiet breathing"
+        "text": "Lower airway narrowing from asthma"
       },
       {
         "id": "b",
-        "text": "Only lower-lobe pneumonia"
+        "text": "Fluid in the alveoli from heart failure"
       },
       {
         "id": "c",
-        "text": "Cardiac tamponade"
+        "text": "A normal breath sound in young children"
       },
       {
         "id": "d",
-        "text": "Partial obstruction at or above the larynx producing high-pitched inspiratory sound"
+        "text": "Partial obstruction of the upper airway"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Stridor is a hallmark of upper airway narrowing and is an emergency warning sign.",
     "distractorExplanations": {
-      "a": "Quiet breathing is not stridor.",
-      "b": "Pneumonia causes other sounds.",
-      "c": "Tamponade presents with shock/Beck-type findings, not stridor."
+      "a": "Lower airway narrowing produces wheezing, not stridor.",
+      "b": "Fluid in the alveoli causes crackles (rales).",
+      "c": "Stridor is never a normal breath sound."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -630,31 +630,31 @@
     "id": "nremt-aemt-readiness-check-pharm-005",
     "examSlug": "nremt-aemt-readiness-check",
     "topicId": "airway",
-    "prompt": "On the NREMT AEMT, when suctioning an adult airway, a key safety limit is:? Select the best answer.",
+    "prompt": "When suctioning an adult airway, a key safety limit is:",
     "options": [
       {
         "id": "a",
-        "text": "Limit suction attempts to about 15 seconds and preoxygenate as able"
+        "text": "Suction no longer than about 15 seconds at a time"
       },
       {
         "id": "b",
-        "text": "Suction continuously for several minutes without pause"
+        "text": "Suction continuously until the airway is dry"
       },
       {
         "id": "c",
-        "text": "Never suction if vomit is present"
+        "text": "Suction only while inserting the catheter"
       },
       {
         "id": "d",
-        "text": "Suction only after intubation in all cases"
+        "text": "Suction for up to 60 seconds per attempt"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Prolonged suction causes hypoxia; clear the airway in brief attempts.",
     "distractorExplanations": {
-      "b": "Long continuous suction desaturates patients.",
-      "c": "Vomit is a primary indication to suction.",
-      "d": "BLS suction may be needed before advanced airway."
+      "b": "Continuous suction removes oxygen and causes hypoxia.",
+      "c": "Suction is applied while withdrawing the catheter, not while inserting it.",
+      "d": "Sixty seconds is far too long; adult attempts are limited to about 15 seconds."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -667,27 +667,27 @@
     "options": [
       {
         "id": "a",
-        "text": "It always causes vomiting"
+        "text": "It always causes the patient to vomit"
       },
       {
         "id": "b",
-        "text": "It may worsen cervical spine injury; use jaw-thrust when indicated"
+        "text": "It can worsen a cervical spine injury"
       },
       {
         "id": "c",
-        "text": "It increases blood pressure too much"
+        "text": "It raises intracranial pressure"
       },
       {
         "id": "d",
-        "text": "It is illegal in all EMS systems"
+        "text": "It cannot open the airway of adults"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Suspected c-spine injury warrants jaw-thrust with spinal motion restriction considerations.",
+    "explanation": "Head-tilt/chin-lift extends the neck, which can worsen a cervical spine injury. In suspected trauma, use the jaw-thrust with manual stabilization.",
     "distractorExplanations": {
-      "a": "Vomiting is not the primary reason.",
-      "c": "BP effect is not the rationale.",
-      "d": "It is standard for medical unresponsiveness without trauma concern."
+      "a": "Head-tilt does not reliably cause vomiting.",
+      "c": "The concern is spinal movement, not intracranial pressure.",
+      "d": "Head-tilt/chin-lift opens adult airways well in non-trauma patients."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -700,27 +700,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Complete apnea"
+        "text": "Complete upper airway obstruction"
       },
       {
         "id": "b",
-        "text": "Only pneumothorax"
+        "text": "Upper airway swelling at the larynx"
       },
       {
         "id": "c",
-        "text": "Lower airway bronchoconstriction such as asthma/COPD exacerbations"
+        "text": "Lower airway bronchoconstriction"
       },
       {
         "id": "d",
-        "text": "Hyperglycemia alone"
+        "text": "Air collecting in the pleural space"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Expiratory wheeze reflects narrowed lower airways; still assess for other causes.",
     "distractorExplanations": {
-      "a": "Apnea has no breath sounds of wheeze.",
-      "b": "Pneumothorax may decrease sounds unilaterally.",
-      "d": "Glucose disorders do not directly cause wheeze."
+      "a": "Complete obstruction moves no air, so there is no wheeze.",
+      "b": "Laryngeal swelling produces stridor.",
+      "d": "Pneumothorax causes diminished breath sounds, not wheezing."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -729,31 +729,31 @@
     "id": "nremt-aemt-readiness-check-pharm-008",
     "examSlug": "nremt-aemt-readiness-check",
     "topicId": "airway",
-    "prompt": "A patient with inadequate breathing should receive",
+    "prompt": "A patient with inadequate breathing should receive:",
     "options": [
       {
         "id": "a",
-        "text": "Only a nasal cannula regardless of effort"
+        "text": "Oxygen by nasal cannula alone"
       },
       {
         "id": "b",
-        "text": "No airway interventions until hospital"
+        "text": "Oxygen by nonrebreather mask alone"
       },
       {
         "id": "c",
-        "text": "Abdominal thrusts if they can speak clearly"
+        "text": "Abdominal thrusts until breathing improves"
       },
       {
         "id": "d",
-        "text": "Assisted positive-pressure ventilation (e.g., BVM) rather than passive oxygen alone"
+        "text": "Positive-pressure ventilation with a BVM"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Inadequate rate/depth needs assisted ventilation; oxygen alone does not ventilate.",
     "distractorExplanations": {
-      "a": "NC cannot fix apnea/near-apnea.",
-      "b": "Delays worsen hypoxia.",
-      "c": "Speaking patients are not complete airway obstruction candidates for thrusts."
+      "a": "Oxygen without ventilation cannot fix inadequate rate or depth.",
+      "b": "A nonrebreather needs adequate spontaneous breathing.",
+      "c": "Abdominal thrusts are for foreign-body obstruction."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -766,27 +766,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Respiratory distress from conditions like CHF/pulmonary edema by stenting airways and improving oxygenation"
+        "text": "Respiratory distress from CHF or pulmonary edema"
       },
       {
         "id": "b",
-        "text": "Complete airway obstruction from a foreign body"
+        "text": "Complete airway obstruction by a foreign body"
       },
       {
         "id": "c",
-        "text": "Cardiac arrest without breathing"
+        "text": "Respiratory arrest with no spontaneous breaths"
       },
       {
         "id": "d",
-        "text": "Unresponsive patients without a pulse"
+        "text": "Unresponsive patients who cannot protect the airway"
       }
     ],
     "correctOptionId": "a",
     "explanation": "CPAP requires a spontaneously breathing cooperative patient; not for arrest or complete obstruction.",
     "distractorExplanations": {
-      "b": "FBAO needs removal maneuvers.",
-      "c": "Arrest needs CPR/ventilation.",
-      "d": "Pulseless patients need resuscitation, not CPAP."
+      "b": "CPAP cannot push air past a complete obstruction.",
+      "c": "CPAP needs spontaneous breathing; apneic patients need ventilation.",
+      "d": "CPAP requires a patient alert enough to protect the airway."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -795,31 +795,31 @@
     "id": "nremt-aemt-readiness-check-pharm-010",
     "examSlug": "nremt-aemt-readiness-check",
     "topicId": "airway",
-    "prompt": "Cyanosis indicates",
+    "prompt": "Cyanosis indicates:",
     "options": [
       {
         "id": "a",
-        "text": "Always perfect oxygenation"
+        "text": "Adequate oxygenation of the tissues"
       },
       {
         "id": "b",
-        "text": "Significant hypoxemia and need for urgent airway/oxygen/ventilation assessment"
+        "text": "Significant hypoxemia needing urgent care"
       },
       {
         "id": "c",
-        "text": "Only anemia with normal oxygen"
+        "text": "Low hemoglobin with normal oxygen"
       },
       {
         "id": "d",
-        "text": "Hyperthermia"
+        "text": "High body temperature from infection"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Central cyanosis is a late, serious sign of poor oxygenation.",
     "distractorExplanations": {
-      "a": "It means poor oxygenation.",
-      "c": "Anemia can limit cyanosis visibility.",
-      "d": "Fever alone is not cyanosis."
+      "a": "A bluish color signals poor oxygenation, not adequate.",
+      "c": "Anemia makes cyanosis less likely to appear.",
+      "d": "Fever causes flushing, not cyanosis."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -832,27 +832,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Complete recovery"
+        "text": "The asthma attack is resolving on its own"
       },
       {
         "id": "b",
-        "text": "That nebulizer therapy is no longer needed ever"
+        "text": "The nebulizer treatment has fully worked"
       },
       {
         "id": "c",
-        "text": "Worsening obstruction and impending respiratory failure"
+        "text": "Worsening obstruction and respiratory failure"
       },
       {
         "id": "d",
-        "text": "A primary psychiatric emergency"
+        "text": "A panic reaction causing hyperventilation"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Silent chest/fatigue with drowsiness signals exhaustion and failure—support ventilation and ALS.",
     "distractorExplanations": {
-      "a": "Less wheezing can mean less air movement, not cure.",
-      "b": "Treatment escalation is needed.",
-      "d": "Airway/breathing failure is medical."
+      "a": "Less wheezing with drowsiness and poor air movement means less air is moving, not recovery.",
+      "b": "Real improvement brings better air movement and alertness, not drowsiness.",
+      "d": "Drowsiness and poor air movement point to hypoxia and fatigue, not panic."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -869,7 +869,7 @@
       },
       {
         "id": "b",
-        "text": "Flexing the neck fully forward"
+        "text": "Flexing the neck forward to open it"
       },
       {
         "id": "c",
@@ -877,7 +877,7 @@
       },
       {
         "id": "d",
-        "text": "Jaw-thrust maneuver while maintaining manual cervical stabilization"
+        "text": "Jaw-thrust with manual cervical stabilization"
       }
     ],
     "correctOptionId": "d",
@@ -894,31 +894,31 @@
     "id": "nremt-aemt-readiness-check-pharm-013",
     "examSlug": "nremt-aemt-readiness-check",
     "topicId": "airway",
-    "prompt": "Adequate adult ventilation rate with a BVM for a patient with a pulse (general guideline concept) is approximately",
+    "prompt": "The appropriate BVM ventilation rate for an adult with a pulse is about:",
     "options": [
       {
         "id": "a",
-        "text": "About 1 breath every 5–6 seconds (roughly 10–12/min), enough to produce visible chest rise"
+        "text": "One breath every 5–6 seconds (10–12/min)"
       },
       {
         "id": "b",
-        "text": "60 breaths per minute as fast as possible"
+        "text": "One breath every 1–2 seconds (30–60/min)"
       },
       {
         "id": "c",
-        "text": "One breath every 30 seconds"
+        "text": "One breath every 10–12 seconds (5–6/min)"
       },
       {
         "id": "d",
-        "text": "No ventilation if SpO2 is unknown"
+        "text": "One breath every 3 seconds (20/min)"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Avoid hyperventilation; deliver breaths that produce chest rise at an appropriate rate.",
     "distractorExplanations": {
-      "b": "Excessive rates harm hemodynamics.",
-      "c": "Too slow is inadequate.",
-      "d": "Support breathing based on assessment."
+      "b": "This rate hyperventilates, raising chest pressure and lowering cardiac output.",
+      "c": "Five to six breaths per minute underventilates an adult.",
+      "d": "Twenty breaths per minute is a pediatric-range rate and too fast for an adult with a pulse."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -943,7 +943,7 @@
       },
       {
         "id": "d",
-        "text": "From the corner of the mouth to the earlobe or angle of the jaw"
+        "text": "Corner of the mouth to the earlobe or jaw angle"
       }
     ],
     "correctOptionId": "d",
@@ -997,27 +997,27 @@
     "options": [
       {
         "id": "a",
-        "text": "All patients with sinus bradycardia and a strong pulse"
+        "text": "Symptomatic bradycardia with a pulse"
       },
       {
         "id": "b",
-        "text": "Pulseless ventricular fibrillation / pulseless ventricular tachycardia (shockable rhythms)"
+        "text": "Pulseless VF or pulseless VT"
       },
       {
         "id": "c",
-        "text": "Every stable patient with chest pain"
+        "text": "Stable chest pain with a pulse"
       },
       {
         "id": "d",
-        "text": "Conscious patients with normal mentation and pulse"
+        "text": "Asystole confirmed on the monitor"
       }
     ],
     "correctOptionId": "b",
     "explanation": "AEDs shock shockable arrest rhythms; pulsed patients are not defibrillated.",
     "distractorExplanations": {
-      "a": "Bradycardia with pulse needs other care.",
-      "c": "Stable chest pain is not AED shock.",
-      "d": "Conscious pulsed patients are not defibrillated."
+      "a": "Patients with a pulse are not defibrillated.",
+      "c": "A stable patient with a pulse gets no shock.",
+      "d": "Asystole is not a shockable rhythm."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1026,31 +1026,31 @@
     "id": "nremt-aemt-readiness-check-medical-002",
     "examSlug": "nremt-aemt-readiness-check",
     "topicId": "medical",
-    "prompt": "High-quality adult CPR compression depth is generally",
+    "prompt": "High-quality adult CPR compression depth is:",
     "options": [
       {
         "id": "a",
-        "text": "Less than 1 cm to avoid injury"
+        "text": "About 1 inch (2.5 cm) for all adults"
       },
       {
         "id": "b",
-        "text": "As deep as possible through the spine"
+        "text": "At least 3 inches (7.5 cm) or deeper"
       },
       {
         "id": "c",
-        "text": "At least 2 inches (5 cm) with full chest recoil"
+        "text": "At least 2 inches (5 cm), full recoil"
       },
       {
         "id": "d",
-        "text": "Only enough to move clothing"
+        "text": "About one-half of the chest's depth"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Adequate depth and recoil improve coronary perfusion; excessive unsafe force is not the goal—meet guideline depth.",
     "distractorExplanations": {
-      "a": "Too shallow is ineffective.",
-      "b": "Compressing through the spine is harmful.",
-      "d": "Clothing movement is not a depth measure."
+      "a": "One inch is too shallow to circulate blood in an adult.",
+      "b": "Compressions deeper than about 2.4 inches (6 cm) raise the risk of injury.",
+      "d": "Adult depth is 2 to 2.4 inches; fractions of chest depth are used for infants and children, and one-half is too deep."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1059,31 +1059,31 @@
     "id": "nremt-aemt-readiness-check-medical-003",
     "examSlug": "nremt-aemt-readiness-check",
     "topicId": "medical",
-    "prompt": "After an AED delivers a shock, the EMT should next",
+    "prompt": "After an AED delivers a shock, the EMT should next:",
     "options": [
       {
         "id": "a",
-        "text": "Check a pulse for a full 3 minutes before any compressions"
+        "text": "Check a pulse for a full minute first"
       },
       {
         "id": "b",
-        "text": "Turn off the AED permanently"
+        "text": "Reanalyze the rhythm immediately after"
       },
       {
         "id": "c",
-        "text": "Give the patient water"
+        "text": "Remove the pads and reassess"
       },
       {
         "id": "d",
-        "text": "Resume CPR immediately for about 2 minutes (or until prompted), then reanalyze"
+        "text": "Resume CPR for 2 minutes, then reanalyze"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Post-shock CPR minimizes interruptions; AEDs prompt the next analyze cycle.",
     "distractorExplanations": {
-      "a": "Long pulse checks delay CPR.",
-      "b": "Keep the AED attached/ready.",
-      "c": "Oral intake is inappropriate in arrest."
+      "a": "Long pulse checks interrupt compressions.",
+      "b": "Immediate reanalysis delays CPR; resume compressions first.",
+      "c": "The pads stay on for the next analysis."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1162,27 +1162,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Assume death without assessment because VADs prevent all emergencies"
+        "text": "Assume death since no pulse is palpable"
       },
       {
         "id": "b",
-        "text": "Defibrillate by placing pads only on the device driveline"
+        "text": "Defibrillate with pads over the driveline"
       },
       {
         "id": "c",
-        "text": "Follow local VAD/cardiac arrest protocols (often CPR if indicated) and contact medical direction/device coordinator resources"
+        "text": "Follow local VAD protocols; call the VAD team"
       },
       {
         "id": "d",
-        "text": "Give oral nitroglycerin"
+        "text": "Give sublingual nitroglycerin first"
       }
     ],
     "correctOptionId": "c",
     "explanation": "VAD patients need specialized protocols; lack of palpable pulse may be expected—use device assessment cues and local rules.",
     "distractorExplanations": {
-      "a": "VAD patients still have emergencies.",
-      "b": "Pads go on skin per AED/manual guidance, not on drivelines.",
-      "d": "Unresponsive patients do not take oral NTG."
+      "a": "VAD patients often lack a palpable pulse; that alone does not mean death.",
+      "b": "Pads never go on the driveline or the device.",
+      "d": "Nitroglycerin has no role for an unresponsive pulseless patient."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1195,7 +1195,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Find and fix life threats to airway, breathing, and circulation first"
+        "text": "Treat airway, breathing, and circulation first"
       },
       {
         "id": "b",
@@ -1207,7 +1207,7 @@
       },
       {
         "id": "d",
-        "text": "Transport only after full secondary survey"
+        "text": "Transport only after a full secondary survey"
       }
     ],
     "correctOptionId": "a",
@@ -1228,11 +1228,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Deep abdominal thrusts"
+        "text": "Firm abdominal thrusts to expel air"
       },
       {
         "id": "b",
-        "text": "Occlusive dressing sealed on three sides (or commercial chest seal) per protocol"
+        "text": "An occlusive dressing or vented chest seal"
       },
       {
         "id": "c",
@@ -1246,7 +1246,7 @@
     "correctOptionId": "b",
     "explanation": "Three-sided occlusive dressing can prevent air entry while allowing escape; monitor for tension.",
     "distractorExplanations": {
-      "a": "Heimlich is for FBAO.",
+      "a": "Abdominal thrusts are for airway obstruction, not chest wounds.",
       "c": "Indiscriminate removal without indication is wrong.",
       "d": "Positioning is individualized; prone is not default."
     },
@@ -1261,7 +1261,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Ice packs alone"
+        "text": "Ice packs and elevation alone"
       },
       {
         "id": "b",
@@ -1269,7 +1269,7 @@
       },
       {
         "id": "c",
-        "text": "Direct pressure and tourniquet use when indicated for extremities"
+        "text": "Direct pressure and a tourniquet"
       },
       {
         "id": "d",
@@ -1372,7 +1372,7 @@
       },
       {
         "id": "d",
-        "text": "Maintain minimal perfusion, such as a radial pulse or SBP near 80–90"
+        "text": "Minimal perfusion, such as a radial pulse"
       }
     ],
     "correctOptionId": "d",
@@ -1438,7 +1438,7 @@
       },
       {
         "id": "d",
-        "text": "Intraosseous (IO) access, such as the proximal tibia or humerus"
+        "text": "Intraosseous (IO) access"
       }
     ],
     "correctOptionId": "d",
@@ -1463,7 +1463,7 @@
       },
       {
         "id": "b",
-        "text": "Constricting blood vessels to raise blood pressure and reduce swelling"
+        "text": "Constricting vessels to raise pressure and cut swelling"
       },
       {
         "id": "c",
@@ -1562,7 +1562,7 @@
       },
       {
         "id": "b",
-        "text": "Protect the patient from injury, then manage the airway after the seizure"
+        "text": "Protect from injury; manage the airway afterward"
       },
       {
         "id": "c",
@@ -1599,7 +1599,7 @@
       },
       {
         "id": "c",
-        "text": "0.4 mg sublingual, repeatable about every 5 minutes"
+        "text": "0.4 mg sublingual, repeated every 5 minutes"
       },
       {
         "id": "d",
@@ -1624,7 +1624,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Begin high-quality CPR and apply AED as soon as available"
+        "text": "Begin CPR and apply an AED as soon as possible"
       },
       {
         "id": "b",
@@ -1636,7 +1636,7 @@
       },
       {
         "id": "d",
-        "text": "Check blood glucose before CPR"
+        "text": "Check blood glucose before starting CPR"
       }
     ],
     "correctOptionId": "a",
@@ -1690,27 +1690,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Check a pulse for a full minute before shocking"
+        "text": "Check a pulse for a full minute first"
       },
       {
         "id": "b",
-        "text": "Turn the AED off and start driving"
+        "text": "Turn the AED off and begin transport"
       },
       {
         "id": "c",
-        "text": "Ensure no one is touching the patient, deliver the shock, then immediately resume CPR"
+        "text": "Clear the patient, shock, then resume CPR"
       },
       {
         "id": "d",
-        "text": "Place the pads over a medication patch without removing it"
+        "text": "Place pads over a medication patch"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Clear, shock, then immediate CPR minimizes interruptions.",
     "distractorExplanations": {
-      "a": "Long pulse checks delay defibrillation.",
-      "b": "Transport without resus is wrong.",
-      "d": "Remove patches and wipe residue before pads."
+      "a": "Pulse checks before a shock delay defibrillation; the AED has already found a shockable rhythm.",
+      "b": "Turning the AED off abandons defibrillation for a shockable rhythm.",
+      "d": "Remove medication patches and wipe the skin; shocking through a patch can cause burns and block current."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1756,27 +1756,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The patient has used a PDE-5 inhibitor recently or has hypotension per protocol"
+        "text": "Recent PDE-5 inhibitor use or hypotension"
       },
       {
         "id": "b",
-        "text": "The patient has chest pain"
+        "text": "Chest pain lasting more than 5 minutes"
       },
       {
         "id": "c",
-        "text": "Systolic BP is 150 mm Hg"
+        "text": "Systolic blood pressure of 150 mm Hg"
       },
       {
         "id": "d",
-        "text": "The patient is on aspirin"
+        "text": "The patient already took aspirin today"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Nitroglycerin can cause profound hypotension with PDE-5 drugs or low BP.",
     "distractorExplanations": {
-      "b": "Chest pain is an indication when allowed.",
-      "c": "150 systolic is not a typical contraindication.",
-      "d": "Aspirin is often co-administered."
+      "b": "Ongoing chest pain is the indication, not a contraindication.",
+      "c": "A systolic of 150 is above the usual 90–100 mm Hg minimum.",
+      "d": "Prior aspirin does not prevent nitroglycerin use."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1855,27 +1855,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Asystole on the monitor"
+        "text": "Asystole after two minutes of CPR"
       },
       {
         "id": "b",
-        "text": "Absence of any end-tidal CO2"
+        "text": "A sudden drop in end-tidal CO2"
       },
       {
         "id": "c",
-        "text": "Fixed dilated pupils"
+        "text": "Fixed, dilated pupils after CPR"
       },
       {
         "id": "d",
-        "text": "Return of organized pulse/signs of circulation after arrest care"
+        "text": "A palpable pulse after arrest care"
       }
     ],
     "correctOptionId": "d",
     "explanation": "ROSC means circulation returns; continue post-arrest support and transport.",
     "distractorExplanations": {
-      "a": "Asystole is arrest rhythm.",
-      "b": "ETCO2 often rises with ROSC.",
-      "c": "Pupils alone are unreliable."
+      "a": "Asystole means there is no circulation.",
+      "b": "ROSC causes a sudden rise, not a drop, in end-tidal CO2.",
+      "c": "Fixed, dilated pupils suggest poor brain perfusion, not ROSC."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1888,27 +1888,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Possible acute coronary syndrome until proven otherwise"
+        "text": "Possible acute coronary syndrome"
       },
       {
         "id": "b",
-        "text": "Always simple muscle strain"
+        "text": "Chest wall muscle strain"
       },
       {
         "id": "c",
-        "text": "Only anxiety in men under 70"
+        "text": "A panic or anxiety attack"
       },
       {
         "id": "d",
-        "text": "A reason to refuse oxygen"
+        "text": "Acid reflux from a recent meal"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Classic ACS symptoms warrant prompt EMS cardiac protocols.",
     "distractorExplanations": {
-      "b": "Musculoskeletal is diagnosis of exclusion.",
-      "c": "ACS occurs across ages/sexes with varied presentations.",
-      "d": "Oxygen is protocol-based, not forever refused."
+      "b": "Assuming muscle strain risks missing a heart attack.",
+      "c": "Anxiety is a diagnosis of exclusion after ACS is ruled out.",
+      "d": "Reflux can mimic ACS, but radiation to the arm or jaw must be treated as cardiac."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."

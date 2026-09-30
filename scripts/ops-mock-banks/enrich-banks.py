@@ -42,6 +42,12 @@ KEY_BALANCE_TOPICS = {
     "gmat-focus-readiness-check": {"verbal"},
     "gre-readiness-check": {"verbal"},
 }
+# Numeric topics: items whose numeric options are already sorted stay put; the rest fill the gaps.
+KEY_FILL_TOPICS = {
+    "gmat-focus-readiness-check": {"quant", "data-insights"},
+    "gre-readiness-check": {"quant"},
+}
+NUMERIC_OPTION = re.compile(r"\s*\$?(-?[\d,]*\.?\d+)\s*(%|[a-zA-Z ]{0,12})?\s*")
 SOURCE_FILE = {"sie-quick-diagnostic": "sie-full-mock"}
 NON_EN_MARKERS = (
     "leben-in-deutschland",
@@ -405,6 +411,35 @@ def enrich_bank(slug: str, questions: list[dict], relaxed: set[str] | None = Non
                 movable.append(q)
         for n, q in enumerate(movable):
             cur, target = q["correctOptionId"], KEY_LETTERS[n % len(KEY_LETTERS)]
+            if cur == target:
+                continue
+            by_id = {o["id"]: o for o in q["options"]}
+            by_id[cur]["text"], by_id[target]["text"] = by_id[target]["text"], by_id[cur]["text"]
+            notes = q["distractorExplanations"]
+            notes[cur] = notes.pop(target)
+            q["correctOptionId"] = target
+            stats["key_rebalanced"] += 1
+
+    for topic in KEY_FILL_TOPICS.get(slug, set()):
+        letter_ref = re.compile(r"\b(option|choice|answer)s?\s*\(?[a-e]\)?\b|\([a-e]\)|all of the above|none of the above", re.I)
+        counts = Counter()
+        movable = []
+        for q in sorted((q for q in bank if q.get("topicId") == topic), key=lambda q: q["id"]):
+            ids = [o.get("id") for o in q.get("options") or []]
+            blob = " ".join([q.get("explanation") or ""] + list((q.get("distractorExplanations") or {}).values()) + [o.get("text") or "" for o in q["options"]])
+            values = []
+            for o in q["options"]:
+                m = NUMERIC_OPTION.fullmatch((o.get("text") or "").replace("−", "-"))
+                values.append(float(m.group(1).replace(",", "")) if m else None)
+            ordered = None not in values and values in (sorted(values), sorted(values, reverse=True))
+            if ids != KEY_LETTERS or ordered or letter_ref.search(blob):
+                counts[q["correctOptionId"]] += 1
+            else:
+                movable.append(q)
+        for q in movable:
+            cur = q["correctOptionId"]
+            target = min(KEY_LETTERS, key=lambda l: (counts[l], KEY_LETTERS.index(l)))
+            counts[target] += 1
             if cur == target:
                 continue
             by_id = {o["id"]: o for o in q["options"]}

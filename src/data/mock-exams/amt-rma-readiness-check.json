@@ -40,27 +40,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Review documentation and payer policy, then follow appeal/correction procedures"
+        "text": "Review documentation and payer policy, then appeal"
       },
       {
         "id": "b",
-        "text": "Change the diagnosis randomly to get paid"
+        "text": "Resubmit the same claim without any changes"
       },
       {
         "id": "c",
-        "text": "Ignore the denial"
+        "text": "Change the diagnosis code to one that pays"
       },
       {
         "id": "d",
-        "text": "Bill the patient double immediately"
+        "text": "Bill the patient for the full amount at once"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Denials require review of documentation/medical necessity criteria and proper appeal or correction workflows.",
     "distractorExplanations": {
-      "b": "Falsifying diagnoses is fraud.",
-      "c": "Ignoring loses revenue and care continuity.",
-      "d": "Double billing is inappropriate."
+      "b": "Resubmitting an unchanged claim usually gets the same denial.",
+      "c": "Changing codes without documentation support is fraud.",
+      "d": "Billing the patient before reviewing the denial and appeal rights is premature and may be prohibited."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -106,27 +106,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Guarantee payment for all services"
+        "text": "Guarantee that Medicare pays for the service"
       },
       {
         "id": "b",
-        "text": "Replace informed consent for surgery"
+        "text": "Replace informed consent for a procedure"
       },
       {
         "id": "c",
-        "text": "Notify a beneficiary that Medicare may not pay for a service and that they may be financially responsible"
+        "text": "Warn that Medicare may not pay for a service"
       },
       {
         "id": "d",
-        "text": "Enroll providers in Medicaid"
+        "text": "Enroll the patient in a Medicare plan"
       }
     ],
     "correctOptionId": "c",
     "explanation": "ABNs inform Medicare beneficiaries about potential noncoverage and financial responsibility before certain services.",
     "distractorExplanations": {
-      "a": "ABN does not guarantee payment.",
-      "b": "Consent is separate.",
-      "d": "ABN is not Medicaid enrollment."
+      "a": "An ABN warns of possible denial; it guarantees nothing.",
+      "b": "Informed consent is separate and still required.",
+      "d": "Plan enrollment is handled through Medicare, not an ABN."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -172,27 +172,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Coverage active dates, plan type, and referral/authorization needs"
+        "text": "Active dates, plan type, and referral needs"
       },
       {
         "id": "b",
-        "text": "Whether the waiting room TV works"
+        "text": "The patient's employer and job title"
       },
       {
         "id": "c",
-        "text": "The provider's personal email password"
+        "text": "The patient's preferred appointment times"
       },
       {
         "id": "d",
-        "text": "Only the patient's favorite pharmacy"
+        "text": "The patient's past medical history"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Eligibility checks focus on active coverage, benefits, and authorization/referral requirements.",
     "distractorExplanations": {
-      "b": "Facility amenities are unrelated.",
-      "c": "Passwords are unrelated and confidential.",
-      "d": "Pharmacy preference is secondary."
+      "b": "Employer details may be on file but do not confirm coverage.",
+      "c": "Scheduling preferences are not part of an eligibility check.",
+      "d": "Medical history is clinical intake, not insurance verification."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -234,31 +234,31 @@
     "id": "amt-rma-readiness-check-clinical-008",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "admin",
-    "prompt": "On the AMT RMA, which telephone triage action is appropriate for a medical assistant? Select the best answer.",
+    "prompt": "Which telephone triage action is appropriate for a medical assistant?",
     "options": [
       {
         "id": "a",
-        "text": "Diagnose chest pain as anxiety and advise waiting a week"
+        "text": "Tell callers with chest pain it is likely anxiety"
       },
       {
         "id": "b",
-        "text": "Prescribe antibiotics over the phone"
+        "text": "Call in an antibiotic prescription for the caller"
       },
       {
         "id": "c",
-        "text": "Follow written protocols and escalate urgent symptoms to a licensed clinician"
+        "text": "Follow protocols and escalate urgent symptoms"
       },
       {
         "id": "d",
-        "text": "Tell all callers to go to the ER regardless of symptoms"
+        "text": "Send every caller to the ER regardless of symptoms"
       }
     ],
     "correctOptionId": "c",
     "explanation": "MAs use approved protocols and escalate; they do not independently diagnose or prescribe.",
     "distractorExplanations": {
-      "a": "Diagnosing and delaying care for possible cardiac symptoms is unsafe.",
-      "b": "Prescribing is outside MA scope.",
-      "d": "Blanket ER advice is not protocol-based triage."
+      "a": "MAs do not diagnose; chest pain needs urgent escalation.",
+      "b": "MAs cannot prescribe or authorize prescriptions.",
+      "d": "Sending everyone to the ER ignores protocol-based triage."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -267,31 +267,31 @@
     "id": "amt-rma-readiness-check-clinical-009",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "admin",
-    "prompt": "Accounts receivable aging reports help the office",
+    "prompt": "An accounts receivable aging report helps the office:",
     "options": [
       {
         "id": "a",
-        "text": "Measure patient height and weight"
+        "text": "Track supply inventory by expiration date"
       },
       {
         "id": "b",
-        "text": "Calibrate ECG machines"
+        "text": "Schedule patients by appointment length"
       },
       {
         "id": "c",
-        "text": "Track unpaid claims/balances by how long they have been outstanding"
+        "text": "Sort unpaid balances by days outstanding"
       },
       {
         "id": "d",
-        "text": "Schedule surgeries"
+        "text": "Compare billed charges to the fee schedule"
       }
     ],
     "correctOptionId": "c",
     "explanation": "AR aging categorizes outstanding balances by time buckets to prioritize follow-up.",
     "distractorExplanations": {
-      "a": "Vitals are clinical.",
-      "b": "Calibration is clinical equipment maintenance.",
-      "d": "Scheduling is a different function."
+      "a": "Inventory expiration tracking is not accounts receivable.",
+      "b": "Scheduling is not an accounts receivable function.",
+      "d": "Comparing charges to the fee schedule is charge review, not aging."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -304,27 +304,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Draw a single line through the error, initial, date, and write the correction"
+        "text": "Strike once; initial, date, and correct it"
       },
       {
         "id": "b",
-        "text": "Erase completely with white-out"
+        "text": "Cover the error with correction fluid"
       },
       {
         "id": "c",
-        "text": "Rip out the page"
+        "text": "Remove the page and rewrite the entry"
       },
       {
         "id": "d",
-        "text": "Write over the words until unreadable"
+        "text": "Write over the error until unreadable"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Legal medical records require transparent corrections: single line, initials/date, no obliteration.",
     "distractorExplanations": {
-      "b": "White-out obscures the original entry.",
-      "c": "Removing pages destroys the record.",
-      "d": "Overwriting makes the record illegible/suspicious."
+      "b": "Correction fluid hides the original entry, which is not allowed.",
+      "c": "Removing pages destroys part of the legal record.",
+      "d": "Obliterating the original entry makes the record look altered."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -337,27 +337,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A provider takes lunch"
+        "text": "A patient pays cash for an office visit"
       },
       {
         "id": "b",
-        "text": "A patient pays cash for all OTC items"
+        "text": "A patient requests a copy of their records"
       },
       {
         "id": "c",
-        "text": "Staff buy office supplies"
+        "text": "A patient schedules an annual wellness visit"
       },
       {
         "id": "d",
-        "text": "A payer requires approval before covering certain services or medications"
+        "text": "A payer requires approval before covering a service"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Prior auth is payer approval before selected services/drugs are covered.",
     "distractorExplanations": {
-      "a": "Breaks are unrelated.",
-      "b": "Cash OTC purchases do not need payer prior auth.",
-      "c": "Office purchasing is internal."
+      "a": "Cash payment involves no payer, so no authorization is needed.",
+      "b": "Records requests fall under HIPAA access rules, not payer approval.",
+      "c": "Routine preventive visits generally do not need prior authorization."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -366,7 +366,7 @@
     "id": "amt-rma-readiness-check-clinical-012",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "admin",
-    "prompt": "On the AMT RMA, which statement about referral management is correct? Select the best answer.",
+    "prompt": "Which statement about referral management is correct?",
     "options": [
       {
         "id": "a",
@@ -576,7 +576,7 @@
       },
       {
         "id": "c",
-        "text": "Beta-2 agonist bronchodilator"
+        "text": "Beta-2 agonist"
       },
       {
         "id": "d",
@@ -634,11 +634,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Filter blood urea"
+        "text": "Filter urea from the blood"
       },
       {
         "id": "b",
-        "text": "Pump systemic blood"
+        "text": "Produce digestive bile"
       },
       {
         "id": "c",
@@ -646,15 +646,15 @@
       },
       {
         "id": "d",
-        "text": "Produce insulin"
+        "text": "Secrete insulin and glucagon"
       }
     ],
     "correctOptionId": "c",
     "explanation": "The gallbladder stores and concentrates bile produced by the liver.",
     "distractorExplanations": {
-      "a": "Kidneys filter urea.",
-      "b": "The heart pumps blood.",
-      "d": "Insulin is from the pancreas."
+      "a": "Filtering urea is a kidney function.",
+      "b": "The liver produces bile; the gallbladder stores and concentrates it.",
+      "d": "Insulin and glucagon come from the pancreatic islets."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -762,7 +762,7 @@
     "id": "amt-rma-readiness-check-admin-009",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "clinical",
-    "prompt": "On the AMT RMA, which is the best example of using two patient identifiers? Select the best answer.",
+    "prompt": "Which is the best example of using two patient identifiers?",
     "options": [
       {
         "id": "a",
@@ -795,11 +795,11 @@
     "id": "amt-rma-readiness-check-admin-010",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "admin",
-    "prompt": "In ICD-10-CM coding, codes primarily describe",
+    "prompt": "ICD-10-CM codes primarily describe:",
     "options": [
       {
         "id": "a",
-        "text": "Supply inventory SKUs"
+        "text": "Procedures and services performed"
       },
       {
         "id": "b",
@@ -807,19 +807,19 @@
       },
       {
         "id": "c",
-        "text": "Physician work RVUs"
+        "text": "Drugs, supplies, and equipment"
       },
       {
         "id": "d",
-        "text": "Employee payroll categories"
+        "text": "Where the service was performed"
       }
     ],
     "correctOptionId": "b",
     "explanation": "ICD-10-CM is the diagnosis coding system used to report conditions and encounter reasons.",
     "distractorExplanations": {
-      "a": "Inventory is not ICD.",
-      "c": "RVUs relate to payment valuation, not ICD purpose.",
-      "d": "Payroll is unrelated."
+      "a": "Procedures and services are reported with CPT.",
+      "c": "Drugs, supplies, and equipment are HCPCS Level II.",
+      "d": "Location is reported with place-of-service codes."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -877,7 +877,7 @@
       },
       {
         "id": "d",
-        "text": "When hands are visibly soiled or after C. difficile exposure"
+        "text": "Hands visibly soiled or after C. difficile care"
       }
     ],
     "correctOptionId": "d",
@@ -943,7 +943,7 @@
       },
       {
         "id": "d",
-        "text": "The palmar surface of the middle or ring finger, slightly off-center"
+        "text": "Palmar middle or ring finger, slightly off-center"
       }
     ],
     "correctOptionId": "d",
@@ -1100,7 +1100,7 @@
       },
       {
         "id": "b",
-        "text": "Beta cells of the pancreatic islets"
+        "text": "Pancreatic beta cells"
       },
       {
         "id": "c",
@@ -1174,7 +1174,7 @@
       },
       {
         "id": "d",
-        "text": "Frontal (coronal) plane"
+        "text": "Frontal plane"
       }
     ],
     "correctOptionId": "d",
@@ -1298,15 +1298,15 @@
       },
       {
         "id": "b",
-        "text": "On the anterior surface of the elbow"
+        "text": "At the front of the elbow"
       },
       {
         "id": "c",
-        "text": "On the inner wrist"
+        "text": "On the palm side of the wrist"
       },
       {
         "id": "d",
-        "text": "Behind the knee"
+        "text": "At the back of the knee"
       }
     ],
     "correctOptionId": "b",
@@ -1459,27 +1459,27 @@
     "options": [
       {
         "id": "a",
-        "text": "ACE inhibitors, ARBs, thiazide diuretics, or calcium channel blockers (per guidelines/provider)"
+        "text": "ACE inhibitors, ARBs, thiazides, or CCBs"
       },
       {
         "id": "b",
-        "text": "Antihistamines"
+        "text": "Beta-2 agonists such as albuterol"
       },
       {
         "id": "c",
-        "text": "Topical anesthetics"
+        "text": "Proton pump inhibitors such as omeprazole"
       },
       {
         "id": "d",
-        "text": "Antifungals"
+        "text": "Antihistamines such as diphenhydramine"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Common first-line antihypertensives include ACEI/ARB, thiazides, and CCBs depending on patient factors.",
     "distractorExplanations": {
-      "b": "Antihistamines treat allergy symptoms.",
-      "c": "Topical anesthetics numb skin locally.",
-      "d": "Antifungals treat fungal infections."
+      "b": "Beta-2 agonists are bronchodilators and can raise heart rate.",
+      "c": "PPIs reduce stomach acid and do not lower blood pressure.",
+      "d": "Antihistamines treat allergy symptoms, not hypertension."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1488,7 +1488,7 @@
     "id": "amt-rma-readiness-check-law-ethics-001",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "On the AMT RMA, which is an example of battery in clinical care? Select the best answer.",
+    "prompt": "Which is an example of battery in clinical care?",
     "options": [
       {
         "id": "a",
@@ -1521,31 +1521,31 @@
     "id": "amt-rma-readiness-check-law-ethics-002",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "Standard Precautions assume that",
+    "prompt": "Standard Precautions assume that:",
     "options": [
       {
         "id": "a",
-        "text": "Gloves are never needed"
+        "text": "Only patients with known infections pose a risk"
       },
       {
         "id": "b",
-        "text": "Blood and certain body fluids of all patients may be infectious"
+        "text": "Any patient's blood or body fluids may be infectious"
       },
       {
         "id": "c",
-        "text": "Hand hygiene is optional after glove removal"
+        "text": "Gloves replace the need for hand hygiene"
       },
       {
         "id": "d",
-        "text": "Only visibly ill patients pose risk"
+        "text": "Only visibly ill patients need precautions"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Standard Precautions treat all patients' blood/body fluids as potentially infectious.",
     "distractorExplanations": {
-      "a": "PPE is used based on anticipated exposure.",
-      "c": "Hand hygiene is required after glove removal.",
-      "d": "Asymptomatic patients can transmit infection."
+      "a": "Standard Precautions apply to every patient, not only known infections.",
+      "c": "Hand hygiene is still required after removing gloves.",
+      "d": "People without symptoms can still carry bloodborne pathogens."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1554,31 +1554,31 @@
     "id": "amt-rma-readiness-check-law-ethics-003",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "A 'Good Samaritan' statute typically protects",
+    "prompt": "A Good Samaritan statute typically protects:",
     "options": [
       {
         "id": "a",
-        "text": "Reasonable emergency aid given in good faith outside a duty-to-treat setting (varies by state)"
+        "text": "Reasonable emergency aid given in good faith"
       },
       {
         "id": "b",
-        "text": "Falsifying medical records"
+        "text": "Care given as part of a paid clinic shift"
       },
       {
         "id": "c",
-        "text": "Billing fraud"
+        "text": "Grossly negligent care given at an accident"
       },
       {
         "id": "d",
-        "text": "Reckless intentional harm"
+        "text": "Emergency care given in exchange for payment"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Good Samaritan laws generally shield good-faith emergency helpers acting reasonably; they do not cover intentional misconduct or fraud.",
     "distractorExplanations": {
-      "b": "Falsification is illegal.",
-      "c": "Fraud is criminal.",
-      "d": "Recklessness/intentional harm is not protected."
+      "b": "Care within a paid job carries a duty to treat and is outside Good Samaritan protection.",
+      "c": "Gross negligence and willful misconduct are generally not protected.",
+      "d": "Expecting payment usually removes Good Samaritan protection."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1591,27 +1591,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Parents/guardians usually consent for minors, with specific exceptions (e.g., certain reproductive/mental health laws varying by state)"
+        "text": "A parent or guardian usually consents, with exceptions"
       },
       {
         "id": "b",
-        "text": "Consent is never needed for minors"
+        "text": "Minors never need anyone's consent for care"
       },
       {
         "id": "c",
-        "text": "Teachers always consent for school-age children in clinics"
+        "text": "School staff can consent for any student's care"
       },
       {
         "id": "d",
-        "text": "Minors always consent for all surgeries alone in every state"
+        "text": "Any minor may consent alone to any surgery"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Parental/guardian consent is usual, but state laws create exceptions for emancipated minors and certain sensitive services.",
     "distractorExplanations": {
-      "b": "Consent is still required from an authorized person.",
-      "c": "Teachers are not default healthcare decision-makers.",
-      "d": "Not universally true for all care."
+      "b": "Minors generally need a parent's or guardian's consent.",
+      "c": "Teachers and school staff cannot give general medical consent.",
+      "d": "Minors consent alone only under specific state exceptions, such as emancipation."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1620,31 +1620,31 @@
     "id": "amt-rma-readiness-check-law-ethics-005",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "An incident report should be",
+    "prompt": "An incident report should be:",
     "options": [
       {
         "id": "a",
-        "text": "Used as a public press release"
+        "text": "Written only after the manager assigns blame"
       },
       {
         "id": "b",
-        "text": "Destroyed immediately"
+        "text": "Copied into the patient's medical record"
       },
       {
         "id": "c",
-        "text": "Filed objectively, promptly, and per facility policy without blaming language in the medical record narrative"
+        "text": "Factual, prompt, and filed per facility policy"
       },
       {
         "id": "d",
-        "text": "Posted in the waiting room"
+        "text": "Completed only if the patient was harmed"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Incident reports document facts for risk management; they are handled per policy and are not public notices.",
     "distractorExplanations": {
-      "a": "Press release is inappropriate.",
-      "b": "Destruction may violate policy/law.",
-      "d": "Public posting breaches privacy."
+      "a": "Reports should be objective and timely, not blame-focused.",
+      "b": "Incident reports are kept separate from the chart; the record notes only the facts of care.",
+      "d": "Near misses and events without harm should also be reported."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1653,7 +1653,7 @@
     "id": "amt-rma-readiness-check-law-ethics-006",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "On the AMT RMA, which best reflects ethical principles of autonomy? Select the best answer.",
+    "prompt": "Which best reflects the ethical principle of autonomy?",
     "options": [
       {
         "id": "a",
@@ -1686,7 +1686,7 @@
     "id": "amt-rma-readiness-check-law-ethics-007",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "HIPAA's Privacy Rule primarily protects",
+    "prompt": "HIPAA's Privacy Rule primarily protects:",
     "options": [
       {
         "id": "a",
@@ -1694,23 +1694,23 @@
       },
       {
         "id": "b",
-        "text": "Clinic parking spaces"
+        "text": "Employee workplace safety records"
       },
       {
         "id": "c",
-        "text": "Vendor lunch menus"
+        "text": "Clinic financial and tax records"
       },
       {
         "id": "d",
-        "text": "Public weather data"
+        "text": "Public health statistics without identifiers"
       }
     ],
     "correctOptionId": "a",
     "explanation": "HIPAA Privacy Rule governs use and disclosure of PHI.",
     "distractorExplanations": {
-      "b": "Parking is unrelated.",
-      "c": "Menus are not PHI.",
-      "d": "Weather is public information."
+      "b": "Workplace safety falls under OSHA.",
+      "c": "Financial and tax records are not PHI.",
+      "d": "De-identified data is not protected by the Privacy Rule."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1719,31 +1719,31 @@
     "id": "amt-rma-readiness-check-law-ethics-008",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "Informed consent requires that the patient",
+    "prompt": "Informed consent requires that the patient:",
     "options": [
       {
         "id": "a",
-        "text": "Be told risks, benefits, and alternatives in understandable terms and agree voluntarily"
+        "text": "Hear risks, benefits, and alternatives, then agree"
       },
       {
         "id": "b",
-        "text": "Sign any form without explanation"
+        "text": "Sign the form before any explanation is given"
       },
       {
         "id": "c",
-        "text": "Be coerced if they hesitate"
+        "text": "Agree after the provider decides for them"
       },
       {
         "id": "d",
-        "text": "Receive no opportunity for questions"
+        "text": "Be told only the benefits of the procedure"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Informed consent is voluntary agreement after adequate disclosure and opportunity for questions.",
     "distractorExplanations": {
-      "b": "A signature without understanding is inadequate.",
-      "c": "Coercion invalidates consent.",
-      "d": "Questions are part of the process."
+      "b": "Signing without explanation is not informed consent.",
+      "c": "Consent must be the patient's voluntary decision.",
+      "d": "Risks and alternatives must also be disclosed."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1756,27 +1756,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A child who prefers vegetables"
+        "text": "A toddler with a bruised shin after learning to walk"
       },
       {
         "id": "b",
-        "text": "A child with unexplained patterned bruises and inconsistent history"
+        "text": "Patterned bruises with an inconsistent history"
       },
       {
         "id": "c",
-        "text": "A child late to one appointment without other concerns"
+        "text": "A child who missed one appointment with no concerns"
       },
       {
         "id": "d",
-        "text": "A child who dislikes blood draws"
+        "text": "A child who cries and resists a routine blood draw"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Mandated reporters must report reasonable suspicion of abuse/neglect; patterned injuries with inconsistent history are classic red flags.",
     "distractorExplanations": {
-      "a": "Food preference is not abuse.",
-      "c": "A single late visit alone is not abuse.",
-      "d": "Fear of procedures is common."
+      "a": "Shin bruises in a new walker are typical accidental injuries.",
+      "c": "A single missed visit without other concerns is not a sign of abuse.",
+      "d": "Fear of needles is a normal response."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1785,7 +1785,7 @@
     "id": "amt-rma-readiness-check-law-ethics-010",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "OSHA Bloodborne Pathogens Standard requires employers to:",
+    "prompt": "The OSHA Bloodborne Pathogens Standard requires employers to:",
     "options": [
       {
         "id": "a",
@@ -1793,23 +1793,23 @@
       },
       {
         "id": "b",
-        "text": "Ban all hand hygiene"
+        "text": "Test all employees for HIV every year"
       },
       {
         "id": "c",
-        "text": "Require staff to pay for all PPE personally"
+        "text": "Require staff to buy their own gloves and gowns"
       },
       {
         "id": "d",
-        "text": "Ignore needle-stick injuries"
+        "text": "Offer hepatitis C vaccine to all employees"
       }
     ],
     "correctOptionId": "a",
     "explanation": "OSHA BBP standards mandate exposure control plans, training, PPE, and post-exposure processes.",
     "distractorExplanations": {
-      "b": "Hand hygiene is required.",
-      "c": "Employers must provide necessary PPE.",
-      "d": "Exposures must be evaluated and followed up."
+      "b": "The standard does not require routine HIV testing of employees.",
+      "c": "Employers must provide PPE at no cost to employees.",
+      "d": "There is no hepatitis C vaccine; employers must offer the hepatitis B vaccine."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1884,31 +1884,31 @@
     "id": "amt-rma-readiness-check-law-ethics-013",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "A living will typically",
+    "prompt": "A living will typically:",
     "options": [
       {
         "id": "a",
-        "text": "Authorizes staff to ignore DNR tattoos"
+        "text": "Names a person to make health decisions"
       },
       {
         "id": "b",
-        "text": "Assigns a healthcare proxy"
+        "text": "Gives someone control over bank accounts"
       },
       {
         "id": "c",
-        "text": "States wishes about life-sustaining treatment if the patient cannot communicate"
+        "text": "States treatment wishes if unable to communicate"
       },
       {
         "id": "d",
-        "text": "Transfers real estate ownership"
+        "text": "Records the patient's organ donor status only"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Living wills document preferences for end-of-life/life-sustaining care when the patient lacks capacity.",
     "distractorExplanations": {
-      "a": "Facility policies govern DNR orders; tattoos alone are unreliable.",
-      "b": "Healthcare proxy/POA is a separate directive (though often paired).",
-      "d": "Property transfer is estate planning, not a living will."
+      "a": "Naming a decision-maker is a health care proxy or durable power of attorney.",
+      "b": "Control over finances is a financial power of attorney.",
+      "d": "Organ donation uses a separate registry or document."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1917,7 +1917,7 @@
     "id": "amt-rma-readiness-check-law-ethics-014",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "On the AMT RMA, which action violates patient confidentiality? Select the best answer.",
+    "prompt": "Which action violates patient confidentiality?",
     "options": [
       {
         "id": "a",
@@ -1950,31 +1950,31 @@
     "id": "amt-rma-readiness-check-law-ethics-015",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "CLIA categorizes tests; a CLIA-waived test is generally",
+    "prompt": "CLIA categorizes lab tests. A CLIA-waived test is generally:",
     "options": [
       {
         "id": "a",
-        "text": "So complex that only pathologists may perform it"
+        "text": "So complex only a pathologist may run it"
       },
       {
         "id": "b",
-        "text": "Simple with low risk of erroneous results when directions are followed"
+        "text": "Simple and low-risk if directions are followed"
       },
       {
         "id": "c",
-        "text": "Illegal in physician offices"
+        "text": "Not allowed in physician office labs"
       },
       {
         "id": "d",
-        "text": "Always requiring a full microbiology lab"
+        "text": "Performed only in a full reference lab"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Waived tests are simple, low-risk methods cleared for waived status when manufacturer instructions are followed.",
     "distractorExplanations": {
-      "a": "High-complexity tests need more stringent personnel standards.",
-      "c": "Many waived tests are done in offices.",
-      "d": "Micro labs perform complex testing; not all waived tests need that."
+      "a": "High-complexity tests need qualified lab personnel; waived tests are the simplest category.",
+      "c": "Waived tests are commonly done in physician offices.",
+      "d": "Waived tests do not require a full reference laboratory."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
