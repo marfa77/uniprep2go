@@ -10,6 +10,7 @@ import {
   getMockOfficialResources,
   type MockOfficialResources,
 } from "@/lib/mock-exams/official-resources";
+import { formatMockStatLine } from "@/lib/mock-exams/mock-labels";
 import { buildMockSeoPageCopy } from "@/lib/mock-exams/seo";
 import { getVerticalDefinition } from "@/lib/mock-exams/taxonomy";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
@@ -87,8 +88,11 @@ export function MockExamVisualHero({ config }: { config: MockExamConfig }) {
               {copy.practiceTestLabel}
             </p>
             <p className="mt-1 text-sm text-[#fffaf0]/75">
-              {config.questionCount} Q · {config.durationMinutes} min · {config.passRule.passPercent}%
-              target
+              {formatMockStatLine({
+                questionCount: config.questionCount,
+                durationMinutes: config.durationMinutes,
+                passPercent: config.passRule.passPercent,
+              })}
             </p>
           </div>
         </div>
@@ -135,7 +139,7 @@ export function MockExamSnapshot({ config }: { config: MockExamConfig }) {
       value: String(config.questionCount),
     },
     { label: "Time", value: `${config.durationMinutes} min` },
-    { label: "Pass target", value: `${config.passRule.passPercent}%` },
+    { label: "UniPrep2Go readiness target", value: `${config.passRule.passPercent}%` },
     { label: "Domains", value: String(config.topics.length) },
     { label: "Exam body", value: config.examBody },
     {

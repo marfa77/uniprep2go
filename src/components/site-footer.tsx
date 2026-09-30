@@ -134,7 +134,7 @@ export function SiteFooter() {
         </nav>
 
         <p className="mt-6 text-xs text-[#6d6252]">
-          Last updated {siteConfig.legalLastUpdated}. &copy; {new Date().getFullYear()}{" "}
+          &copy; {new Date().getFullYear()}{" "}
           {siteConfig.name}
         </p>
         <FooterCredit className="footer-credit mt-3 text-xs text-[#6d6252]" />

@@ -458,7 +458,7 @@ export function MockExamClient({
             <dd className="mt-1 text-lg font-semibold">{timingLabel}</dd>
           </div>
           <div>
-            <dt className="font-mono text-xs uppercase tracking-[0.2em] text-[#1f3a5f]">Pass threshold</dt>
+            <dt className="font-mono text-xs uppercase tracking-[0.2em] text-[#1f3a5f]">Readiness target</dt>
             <dd className="mt-1 text-lg font-semibold">{config.passRule.passPercent}%</dd>
           </div>
         </dl>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getCatalogDeckBySlug, getDeckBySlug } from "@/lib/decks";
+import { mockReadinessTargetLabel } from "@/lib/mock-exams/mock-labels";
 import { getMockOfficialResources } from "@/lib/mock-exams/official-resources";
 import { buildMockExamFaqs, buildMockSeoPageCopy } from "@/lib/mock-exams/seo";
 import { mockFunnelNoticeForLinkedDeck } from "@/lib/mock-exams/pricing";
@@ -157,7 +158,7 @@ export function MockExamAboutSection({ config }: { config: MockExamConfig }) {
           {config.durationMinutes}-minute pacing target
         </li>
         <li className="rounded-2xl bg-[#18140f]/5 px-4 py-3">
-          {config.passRule.passPercent}% pass threshold with topic breakdown
+          {mockReadinessTargetLabel(config.passRule.passPercent)} with topic breakdown
         </li>
         <li className="rounded-2xl bg-[#18140f]/5 px-4 py-3">
           {waitlist ? "Notify when the bank launches" : "Full answer review after you submit"}

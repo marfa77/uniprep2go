@@ -23,6 +23,7 @@ export function DeckExamVersionBlock({ model }: DeckExamVersionBlockProps) {
     },
     { term: "Last reviewed", detail: model.lastReviewed },
     { term: "What this covers", detail: model.covers },
+    ...(model.passRule ? [{ term: "Pass rule", detail: model.passRule }] : []),
     { term: "Does not replace", detail: model.doesNotReplace },
   ];
 

@@ -4,6 +4,7 @@ import { FunnelTracker } from "@/components/funnel-tracker";
 import { LlmFactsStrip } from "@/components/llm/llm-facts-strip";
 import { OfficialSourceTrustStrip } from "@/components/official-source-trust";
 import { DeckExamFactsSection } from "@/components/decks/deck-exam-facts-section";
+import { DeckExamVersionBlock } from "@/components/decks/deck-exam-version-block";
 import { MockExamClientLoader } from "@/components/mock-exams/mock-exam-client-loader";
 import type { LinkedDeckCheckout } from "@/components/mock-exams/mock-report-handoff";
 import {
@@ -43,6 +44,7 @@ import {
   buildMockAiCategory,
   buildMockAiDescription,
 } from "@/lib/exam-llm-layer";
+import { buildMockExamVersionModel } from "@/lib/deck-exam-version";
 import { getExamFactsProfileForDeck } from "@/lib/exam-facts";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { getMockAccessState } from "@/lib/mock-exams/access";
@@ -161,6 +163,7 @@ export default async function MockExamPage({
     runnable && questions.length > 0 && shouldIndexMockExam(config.slug);
   const linkedDeck = getCatalogDeckBySlug(config.linkedDeckSlug);
   const examFactsProfile = getExamFactsProfileForDeck(config.linkedDeckSlug);
+  const mockExamVersion = buildMockExamVersionModel(config, examFactsProfile);
   const official = getMockOfficialResources(config);
   const pricedLinkedDeck = await getPricedDeckBySlug(config.linkedDeckSlug);
   const linkedCheckout: LinkedDeckCheckout | null =
@@ -256,6 +259,7 @@ export default async function MockExamPage({
         ) : null}
 
         <MockExamSnapshot config={config} />
+        {mockExamVersion ? <DeckExamVersionBlock model={mockExamVersion} /> : null}
         <MockExamVisualHero config={config} />
 
         <MockOfficialResourcesPanel config={config} resources={official} />

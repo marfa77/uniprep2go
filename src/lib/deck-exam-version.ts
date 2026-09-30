@@ -1,5 +1,6 @@
 import type { ExamFactsProfile } from "@/lib/exam-facts";
 import type { Deck } from "@/lib/decks";
+import type { MockExamConfig } from "@/lib/mock-exams/types";
 
 const DOES_NOT_REPLACE_BY_EXAM: Record<string, string> = {
   "cfa-level-1":
@@ -45,16 +46,18 @@ export type DeckExamVersionModel = {
   sourceUrl: string;
   lastReviewed: string;
   covers: string;
+  passRule?: string;
   doesNotReplace: string;
 };
 
-function formatLastReviewed(isoDate: string): string {
+export function formatLastReviewed(isoDate: string): string {
   const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(isoDate.trim());
   if (!match) return isoDate;
   const year = match[1];
   const month = Number.parseInt(match[2], 10);
-  if (month < 1 || month > 12) return isoDate;
-  return `${REVIEW_MONTHS[month - 1]} ${year}`;
+  const day = Number.parseInt(match[3], 10);
+  if (month < 1 || month > 12 || day < 1 || day > 31) return isoDate;
+  return `${REVIEW_MONTHS[month - 1]} ${day}, ${year}`;
 }
 
 function isNumericCardCount(cards: string): boolean {
@@ -109,6 +112,28 @@ export function buildDeckExamVersionModel(
     sourceUrl: source.url,
     lastReviewed: formatLastReviewed(deck.lastUpdated),
     covers: buildCovers(deck),
+    doesNotReplace: buildDoesNotReplace(profile),
+  };
+}
+
+export function buildMockExamVersionModel(
+  config: MockExamConfig,
+  profile: ExamFactsProfile | null,
+): DeckExamVersionModel | null {
+  if (!profile) return null;
+
+  const { exam_facts: facts } = profile;
+  const source = resolveOfficialSource(profile);
+  const officialPass = facts.passing_score?.trim();
+
+  return {
+    examName: facts.exam_name,
+    version: facts.outline_effective_date ?? "Current official outline",
+    sourceLabel: source.label,
+    sourceUrl: source.url,
+    lastReviewed: formatLastReviewed(config.lastUpdated),
+    covers: `${config.questionCount}-question timed diagnostic (${config.durationMinutes} min) across ${config.topics.length} topic areas, with topic scoring and answer review — shorter than the official exam.`,
+    passRule: `${officialPass ? `Official exam: ${officialPass}. ` : ""}UniPrep2Go mock: ${config.passRule.passPercent}% readiness target (not an official pass score).`,
     doesNotReplace: buildDoesNotReplace(profile),
   };
 }

@@ -31,6 +31,7 @@ import {
 import { buildCatalogItemListJsonLd, buildSiteOrganizationJsonLd } from "@/lib/product-jsonld";
 import { getAllMockExams, getMockExamConfig } from "@/lib/mock-exams/configs";
 import { buildFeaturedMockItemListJsonLd, buildMockExamItemListJsonLd } from "@/lib/mock-exams/llm";
+import { formatMockStatLine } from "@/lib/mock-exams/mock-labels";
 import { siteConfig } from "@/lib/site";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
 import {
@@ -345,7 +346,11 @@ export default async function HomePage() {
                 >
                   <h3 className="text-lg font-semibold text-[#18140f]">{mock.shortTitle}</h3>
                   <p className="mt-2 flex-1 text-sm leading-6 text-[#5f5749]">
-                    {mock.questionCount} questions · {mock.durationMinutes} min · pass {mock.passRule.passPercent}%
+                    {formatMockStatLine({
+                      questionCount: mock.questionCount,
+                      durationMinutes: mock.durationMinutes,
+                      passPercent: mock.passRule.passPercent,
+                    })}
                   </p>
                   <Link
                     aria-label={`${mockCtaLabel(mock)} for ${mock.shortTitle}`}
@@ -491,12 +496,15 @@ export default async function HomePage() {
                   >
                     <div className="flex flex-col rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-5">
                       <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-[#1f3a5f]">
-                        {mock.status === "live" ? "Full mock" : "Readiness check"}
+                        {mock.status === "live" ? "Free timed mock" : "Readiness check"}
                       </p>
                       <h3 className="mt-2 text-lg font-semibold text-[#18140f]">{mock.shortTitle}</h3>
                       <p className="mt-2 flex-1 text-sm leading-6 text-[#5f5749]">
-                        {mock.questionCount} questions · {mock.durationMinutes} min · pass{" "}
-                        {mock.passRule.passPercent}%
+                        {formatMockStatLine({
+                          questionCount: mock.questionCount,
+                          durationMinutes: mock.durationMinutes,
+                          passPercent: mock.passRule.passPercent,
+                        })}
                       </p>
                       <Link
                         className={`mt-4 ${btnPrimarySm}`}

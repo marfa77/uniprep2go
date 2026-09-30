@@ -8,6 +8,7 @@ import {
   filterMockSearchIndex,
   type MockSearchIndexItem,
 } from "@/lib/mock-exams/search-index";
+import { formatMockStatLine } from "@/lib/mock-exams/mock-labels";
 
 export type MockHubFeaturedCard = {
   slug: string;
@@ -185,7 +186,7 @@ export function MockExamsHubCatalog({
                   </span>
                 </div>
                 <p className="mt-2 flex-1 text-sm text-[#5f5749]">
-                  {mock.questionCount} questions · {mock.durationMinutes} min · pass {mock.passPercent}%
+                  {formatMockStatLine(mock)}
                 </p>
                 {mock.deckHref && mock.deckLabel ? (
                   <Link

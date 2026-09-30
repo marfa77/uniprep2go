@@ -9,6 +9,7 @@ import {
   mockFreeAccessPriceLabel,
   mockFunnelNoticeForLinkedDeck,
 } from "./mock-exams/pricing";
+import { mockReadinessTargetLabel } from "./mock-exams/mock-labels";
 import { getMockSeoProfile } from "./mock-exams/seo";
 import type { MockExamConfig } from "./mock-exams/types";
 import { absoluteUrl, siteConfig } from "./site";
@@ -778,7 +779,7 @@ export function buildMockAiDescription(
   const whatIs = seo.whatIsExam.replace(/\s+/g, " ").trim();
 
   return (
-    `${seo.headline}: ${config.questionCount} timed questions, ${config.durationMinutes} min, ${config.passRule.passPercent}% target, topic scoring, answer review.` +
+    `${seo.headline}: ${config.questionCount} timed questions, ${config.durationMinutes} min, ${mockReadinessTargetLabel(config.passRule.passPercent)}, topic scoring, answer review.` +
     passHint +
     ` ${whatIs.length > 180 ? `${whatIs.slice(0, 180).replace(/\s+\S*$/, "")}…` : whatIs}` +
     ` Independent ${config.examBody} prep by ${siteConfig.name} — not official exam material.`

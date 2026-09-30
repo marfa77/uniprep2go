@@ -10,7 +10,7 @@ import {
   buildDeckAiCategory,
   buildDeckAiDescription,
 } from "@/lib/exam-llm-layer";
-import { buildDeckExamVersionModel } from "@/lib/deck-exam-version";
+import { buildDeckExamVersionModel, formatLastReviewed } from "@/lib/deck-exam-version";
 import { getExamFactsProfileForDeck } from "@/lib/exam-facts";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { DeckApkgPendingNotice } from "@/components/decks/deck-apkg-pending-notice";
@@ -725,7 +725,11 @@ export default async function DeckPage({
           </Link>
         </section>
 
-        <p className="mt-10 text-xs text-[#8a7d68]">Last updated {deck.lastUpdated}.</p>
+        {deckExamVersion ? null : (
+          <p className="mt-10 text-xs text-[#8a7d68]">
+            Last reviewed: {formatLastReviewed(deck.lastUpdated)}.
+          </p>
+        )}
       </article>
 
       <DeckStickyCheckoutBar

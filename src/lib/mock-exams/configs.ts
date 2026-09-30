@@ -111,12 +111,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Modeled on the FINRA SIE outline: 75 scored questions, 105 minutes; official passing score 70 (equated). This mock uses a 70% readiness target.",
+      "Official SIE: 80 items (75 scored + 5 unscored pretest), 105 minutes, passing score 70 on FINRA's equated scale. This 75-question diagnostic mirrors the scored portion with a UniPrep2Go readiness target of 70%.",
     disclaimer: financeDisclaimer,
     description:
-      "A timed 75-question SIE mock with topic-weighted scoring, full question review, and a pass/no-pass readiness verdict aligned to the official outline.",
+      "A timed 75-question SIE diagnostic with topic-weighted scoring, full question review, and a readiness verdict aligned to the official outline.",
     examBody: "FINRA",
-    lastUpdated: "2026-06-01",
+    lastUpdated: "2026-09-30",
   },
   {
     slug: "sie-quick-diagnostic",
@@ -209,12 +209,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "portfolio", label: "Portfolio Management", weightPercent: 8, targetPercent: 70 },
     ],
     officialSourceNote:
-      "Readiness check sampled across CFA Level 1 topic weights. Not a full CFA Institute mock exam.",
+      "Readiness check sampled across 2026 CFA Level I topic weights. Official exam: 180 questions, ~4.5 hours; CFA Institute sets the minimum passing score (MPS) after each administration. UniPrep2Go readiness target: 70%. Not a full CFA Institute mock exam.",
     disclaimer: financeDisclaimer,
     description:
       "A free 60-question CFA Level 1 readiness diagnostic with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
     examBody: "CFA Institute",
-    lastUpdated: "2026-07-16",
+    lastUpdated: "2026-09-30",
   },
   {
     slug: "cfa-level-2-readiness-check",
@@ -248,12 +248,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "portfolio", label: "Portfolio Management", questionCount: 6, weightPercent: 10, targetPercent: 70 },
     ],
     officialSourceNote:
-      "Readiness check sampled across CFA Level 2 topic weights with vignette-style application prompts. Not a full CFA Institute mock exam.",
+      "Readiness check sampled across 2026 CFA Level II topic weights with vignette-style application prompts. Official exam: 88 item-set questions across two sessions; CFA Institute sets the minimum passing score (MPS) after each administration. UniPrep2Go readiness target: 70%. Not a full CFA Institute mock exam.",
     disclaimer: financeDisclaimer,
     description:
       "A 60-question CFA Level 2 readiness diagnostic with weighted topic scoring across all ten curriculum areas. Independent prep — not CFA Institute material.",
     examBody: "CFA Institute",
-    lastUpdated: "2026-07-15",
+    lastUpdated: "2026-09-30",
   },
   {
     slug: "us-citizenship-readiness-check",
@@ -315,12 +315,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "valuation-models", label: "Valuation and Risk Models", weightPercent: 30, targetPercent: 70 },
     ],
     officialSourceNote:
-      "Readiness check aligned to FRM Part 1 topic weights. Not official GARP exam material.",
+      "Readiness check aligned to 2026 FRM Part 1 topic weights. Official exam: 100 multiple-choice questions, 4 hours; GARP does not publish a fixed passing score and sets the cutoff each cycle. UniPrep2Go readiness target: 70%. Not official GARP exam material.",
     disclaimer: financeDisclaimer,
     description:
       "A free 50-question FRM Part 1 readiness diagnostic with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
     examBody: "GARP",
-    lastUpdated: "2026-06-01",
+    lastUpdated: "2026-09-30",
   },
   {
     slug: "series-7-readiness-check",
@@ -348,12 +348,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "s7-f4", label: "Obtains and Verifies Customer Instructions", weightPercent: 11, targetPercent: 72 },
     ],
     officialSourceNote:
-      "Readiness check sampled from the Series 7 deck across FINRA job-function areas. Not a full official FINRA practice exam.",
+      "Readiness check sampled from the Series 7 deck across FINRA job-function areas. Official Series 7 Top-Off: 130 items (125 scored + 5 unscored pretest), 3 hours 45 minutes, passing score 72 on FINRA's equated scale. UniPrep2Go readiness target: 72%. Not a full official FINRA practice exam.",
     disclaimer: financeDisclaimer,
     description:
       "A free 60-question Series 7 readiness diagnostic built from UniPrep2Go deck content, with FINRA job-function weighted scoring, answer review, and a linked Anki deck repair plan.",
     examBody: "FINRA",
-    lastUpdated: "2026-09-03",
+    lastUpdated: "2026-09-30",
   },
   {
     slug: "series-63-readiness-check",

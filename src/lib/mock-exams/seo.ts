@@ -117,7 +117,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free SIE Practice Test — 75 Questions, Timed",
     intro:
-      "A full-length FINRA SIE mock exam modeled on the official outline: 75 scored questions, 105 minutes, and a 70% readiness target on this mock (official FINRA passing score is 70 equated, not a raw percentage), with weighted topic diagnosis across capital markets, products and risks, trading and accounts, and regulatory framework. No signup — start when you are ready. If 105 minutes is too long for a first pass, use the 25-question SIE quick diagnostic first. After the report, drill weak topics in the linked $11 / 300-card Anki deck.",
+      "A 75-question FINRA SIE diagnostic modeled on the scored portion of the official exam (the official SIE is 80 items — 75 scored + 5 unscored pretest — in 105 minutes). This mock runs 75 questions in 105 minutes with a UniPrep2Go readiness target of 70% (the official FINRA passing score is 70 on an equated scale, not a raw percentage), with weighted topic diagnosis across capital markets, products and risks, trading and accounts, and regulatory framework. No signup — start when you are ready. If 105 minutes is too long for a first pass, use the 25-question SIE quick diagnostic first. After the report, drill weak topics in the linked $11 / 300-card Anki deck.",
     audience:
       "SIE candidates, finance students, and career changers entering brokerage and securities roles who need a timed baseline before paying for a prep course.",
     practiceTestLabel: "FINRA SIE practice test",
@@ -182,7 +182,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "cfa-level-1-readiness-check": {
     title: "Free CFA Level 1 Practice Test | 60-Question Readiness Check",
     description:
-      "Free CFA Level 1 practice: 60 timed questions across all 10 topic weights, 90 minutes, 70% diagnostic — then repair with the $29 / 342-card Anki + $19 formula PDF. Official L1 is 180 MCQ / 4h30. Independent — not CFA Institute material.",
+      "Free CFA Level 1 practice: 60 timed questions across all 10 topic weights, 90 minutes, UniPrep2Go readiness target 70% — then repair with the $29 / 342-card Anki + $19 formula PDF. Official L1 is 180 MCQ / 4h30; CFA Institute sets the MPS each administration. Independent — not CFA Institute material.",
     keywords: [
       "cfa level 1 practice test",
       "cfa level 1 mock exam",
@@ -192,14 +192,14 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free CFA Level 1 Readiness Check",
     intro:
-      "A timed CFA Level 1 readiness diagnostic sampled across ethics, quant, economics, FRA, corporate issuers, equity, fixed income, derivatives, alternatives, and portfolio management — then drill weak topics in the linked $29 / 342-card Anki deck and printable formula reference. Official Level 1 is 180 multiple-choice questions across two sessions (~4 hours 30 minutes total); this check is a shorter diagnostic.",
+      "A timed CFA Level 1 readiness diagnostic sampled across ethics, quant, economics, FRA, corporate issuers, equity, fixed income, derivatives, alternatives, and portfolio management — then drill weak topics in the linked $29 / 342-card Anki deck and printable formula reference. Official Level 1 is 180 multiple-choice questions across two sessions (~4 hours 30 minutes total), and CFA Institute sets the minimum passing score (MPS) after each administration — there is no fixed pass percentage. This check is a shorter diagnostic with a UniPrep2Go readiness target of 70%.",
     audience: "CFA Level 1 candidates who want a weighted topic baseline before committing to a full mock provider.",
     practiceTestLabel: "CFA Level 1 practice test",
   },
   "series-7-readiness-check": {
     title: "Series 7 Practice Test 2026 | Free 60Q Timed Online",
     description:
-      "Free Series 7 practice test — no signup: 60 timed questions across FINRA job-function weights, 90 minutes, 72% target, topic scoring — then repair with the linked $29 / 300-card Anki deck. Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated); this check is shorter. Independent — not FINRA material.",
+      "Free Series 7 practice test — no signup: 60 timed questions across FINRA job-function weights, 90 minutes, 72% UniPrep2Go readiness target, topic scoring — then repair with the linked $29 / 300-card Anki deck. Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated); this check is shorter. Independent — not FINRA material.",
     keywords: [
       "series 7 practice test",
       "free series 7 practice test",
