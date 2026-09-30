@@ -685,6 +685,20 @@ describe("telegram stats", () => {
     expect(toTelegramStatsMessages(sampleStats).every((message) => message.length <= 4096)).toBe(true);
   });
 
+  it("reports a storage failure instead of a zero growth card", () => {
+    const messages = toTelegramStatsMessages({
+      ...sampleStats,
+      storage: "memory",
+      storageError:
+        "Command failed: ERR max requests limit exceeded. Limit: 500000, Usage: 500000.",
+    });
+
+    expect(messages).toHaveLength(1);
+    expect(messages[0]).toContain("request quota is exhausted");
+    expect(messages[0]).toContain("not zero traffic");
+    expect(messages[0]).not.toContain("▸ Week");
+  });
+
   it("formats the Threads block from tagged clicks", () => {
     const now = new Date("2026-09-01T16:00:00.000Z");
     const block = formatThreadsSection(

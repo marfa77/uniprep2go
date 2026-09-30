@@ -1119,7 +1119,26 @@ export function toTelegramStatsMessage(stats: FunnelStats, now = new Date()) {
   return toTelegramStatsMessages(stats, now)[0] ?? "UniPrep2Go · no stats yet";
 }
 
+export function toTelegramStorageErrorMessage(error: string) {
+  const quota = /max requests limit/i.test(error);
+
+  return [
+    "UniPrep2Go · growth card unavailable",
+    "",
+    quota
+      ? "⚠️ Upstash Redis monthly request quota is exhausted — events are not being saved and stats cannot be read."
+      : "⚠️ Redis read failed — stats cannot be read.",
+    `Error: ${error.slice(0, 300)}`,
+    "",
+    "This is a storage failure, not zero traffic.",
+  ].join("\n");
+}
+
 export function toTelegramStatsMessages(stats: FunnelStats, now = new Date()) {
+  if (stats.storageError) {
+    return [toTelegramStorageErrorMessage(stats.storageError)];
+  }
+
   const visitors = stats.visitors;
   const products = Object.entries(visitors.products).sort(
     ([, left], [, right]) => right.visitors - left.visitors,

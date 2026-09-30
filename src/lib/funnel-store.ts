@@ -70,6 +70,7 @@ export type FunnelStats = FunnelAggregate & {
   lifetime: FunnelAggregate;
   visitors: VisitorMetrics;
   storage: "redis" | "memory";
+  storageError?: string;
 };
 
 function getMemoryState() {
@@ -322,7 +323,10 @@ export async function getFunnelStats(): Promise<FunnelStats> {
     };
   } catch (error) {
     console.error("[funnel_store] failed to read stats, falling back to memory", error);
-    return computeMemoryStats();
+    return {
+      ...computeMemoryStats(),
+      storageError: error instanceof Error ? error.message : String(error),
+    };
   }
 }
 
