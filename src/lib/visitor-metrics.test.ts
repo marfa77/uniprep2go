@@ -1,14 +1,105 @@
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import { createFunnelEvent } from "./analytics";
 import { computeGrowthSignal } from "./telegram-stats";
 import {
+  dailyTrafficRedisOperations,
   readVisitorMetricsFromMemory,
+  readVisitorMetricsFromRedis,
+  VISITOR_REDIS_KEYS,
+  visitorMetricRedisOperations,
   recordVisitorMetricInMemory,
   resetAllVisitorSets,
   resetPeriodVisitorSets,
   resolveProductKey,
   shouldUseLifetimePathBackfillForPeriod,
 } from "./visitor-metrics";
+
+function createFakeRedis() {
+  const sets = new Map<string, Set<string>>();
+  const values = new Map<string, unknown>();
+  let commands = 0;
+  const pipeline = {
+    sadd: (key: string, member: string) => {
+      const set = sets.get(key) ?? new Set<string>();
+      set.add(member);
+      sets.set(key, set);
+    },
+    incr: (key: string) => {
+      values.set(key, Number(values.get(key) ?? 0) + 1);
+    },
+    expire: () => undefined,
+  };
+
+  return {
+    pipeline,
+    commandCount: () => commands,
+    client: {
+      scard: async (key: string) => {
+        commands += 1;
+        return sets.get(key)?.size ?? 0;
+      },
+      get: async (key: string) => {
+        commands += 1;
+        return (values.get(key) as number | string | undefined) ?? null;
+      },
+      smembers: async <T = string>(key: string) => {
+        commands += 1;
+        return [...(sets.get(key) ?? [])] as T[];
+      },
+      mget: async <T = unknown>(...keys: string[]) => {
+        commands += 1;
+        return keys.map((key) => (values.get(key) as T | undefined) ?? null);
+      },
+      set: async (key: string, value: unknown) => {
+        commands += 1;
+        values.set(key, structuredClone(value));
+      },
+    },
+  };
+}
+
+describe("visitor metrics redis read cache", () => {
+  afterEach(() => {
+    vi.useRealTimers();
+  });
+
+  it("serves closed days and lifetime paths from cache with identical output", async () => {
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date("2026-09-30T08:00:00.000Z"));
+    const redis = createFakeRedis();
+    const events = [
+      { at: "2026-09-29T10:00:00.000Z", visitorId: "vis_a", path: "/decks/pmp-anki-deck", referrer: "https://www.google.com/" },
+      { at: "2026-09-29T11:00:00.000Z", visitorId: "vis_b", path: "/mock-exams/pmp-readiness-check", referrer: "https://chatgpt.com/" },
+      { at: "2026-09-30T07:00:00.000Z", visitorId: "vis_c", path: "/decks/pmp-anki-deck", referrer: "https://www.google.com/" },
+    ];
+    for (const input of events) {
+      const event = createFunnelEvent({
+        name: "page_view",
+        deckSlug: "pmp-anki-deck",
+        visitorId: input.visitorId,
+        path: input.path,
+        referrer: input.referrer,
+        country: "US",
+        occurredAt: input.at,
+      });
+      for (const op of visitorMetricRedisOperations(event)) op(redis.pipeline);
+      for (const op of dailyTrafficRedisOperations(event)) op(redis.pipeline);
+    }
+
+    const first = await readVisitorMetricsFromRedis(redis.client);
+    const firstCost = redis.commandCount();
+    const second = await readVisitorMetricsFromRedis(redis.client);
+    const secondCost = redis.commandCount() - firstCost;
+
+    expect(second).toEqual(first);
+    expect(secondCost).toBeLessThan(firstCost);
+    expect(first.dailySnapshots["2026-09-29"]?.paths["/decks/pmp-anki-deck"]).toEqual({ unique: 1, views: 1 });
+    expect(first.lifetimePathsByChannel.google["/decks/pmp-anki-deck"]).toBe(2);
+    expect(
+      await redis.client.mget(VISITOR_REDIS_KEYS.dailySnapshotCache("2026-09-30")),
+    ).toEqual([null]);
+  });
+});
 
 describe("visitor metrics", () => {
   it("tracks unique visitors, channels, products, and paths", () => {

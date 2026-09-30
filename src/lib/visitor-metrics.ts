@@ -738,7 +738,12 @@ export const VISITOR_REDIS_KEYS = {
   dailyThreads: (date: string) => `funnel:visitors:day:${date}:threads`,
   dailyThreadsViews: (date: string) => `funnel:pageviews:day:${date}:threads`,
   dailyThreadsMockStarts: (date: string) => `funnel:mockstarts:day:${date}:threads`,
+  dailySnapshotCache: (date: string) => `funnel:cache:day:${date}:snapshot`,
+  lifetimePathsByChannelCache: "funnel:cache:lifetime:paths-by-channel",
 } as const;
+
+const DAILY_KEY_TTL_SECONDS = 60 * 60 * 24 * 45;
+const LIFETIME_PATHS_CACHE_TTL_SECONDS = 60 * 60 * 6;
 
 export type VisitorReturnStatus = {
   alreadyInPeriod: boolean;
@@ -937,7 +942,31 @@ type RedisLike = {
   scard: (key: string) => Promise<number>;
   get: (key: string) => Promise<number | string | null>;
   smembers: <T = string>(key: string) => Promise<T[]>;
+  mget?: <T = unknown>(...keys: string[]) => Promise<(T | null)[]>;
+  set?: (key: string, value: unknown, options: { ex: number }) => Promise<unknown>;
 };
+
+async function readCachedValues<T>(client: RedisLike, keys: string[]): Promise<(T | null)[]> {
+  if (!client.mget || keys.length === 0) {
+    return keys.map(() => null);
+  }
+  try {
+    return await client.mget<T>(...keys);
+  } catch {
+    return keys.map(() => null);
+  }
+}
+
+async function writeCachedValue(client: RedisLike, key: string, value: unknown, ttlSeconds: number) {
+  if (!client.set) {
+    return;
+  }
+  try {
+    await client.set(key, value, { ex: ttlSeconds });
+  } catch {
+    // Cache writes are best-effort; the next read recomputes.
+  }
+}
 
 const PATH_CHANNEL_RANK_CHANNELS: TrafficChannel[] = ["google", "chatgpt", "llm"];
 
@@ -1014,17 +1043,31 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
     products[productKey] = { visitors, intents, completions, conversions };
   }
 
+  const useLifetimePathBackfill = shouldUseLifetimePathBackfillForPeriod(
+    lifetimeUnique,
+    periodUnique,
+    (pathKeys ?? []).length,
+    (periodPathKeys ?? []).length,
+  );
+  const [cachedLifetimePathsByChannel] = await readCachedValues<
+    Record<TrafficChannel, Record<string, number>>
+  >(client, [VISITOR_REDIS_KEYS.lifetimePathsByChannelCache]);
+
   const pathMemberLists = new Map<string, string[]>();
   const periodPathMemberLists = new Map<string, string[]>();
 
-  for (const path of pathKeys ?? []) {
-    const members = await client.smembers<string>(VISITOR_REDIS_KEYS.pathVisitors(path));
-    pathMemberLists.set(path, members ?? []);
+  if (useLifetimePathBackfill || !cachedLifetimePathsByChannel) {
+    for (const path of pathKeys ?? []) {
+      const members = await client.smembers<string>(VISITOR_REDIS_KEYS.pathVisitors(path));
+      pathMemberLists.set(path, members ?? []);
+    }
   }
 
-  for (const path of periodPathKeys ?? []) {
-    const members = await client.smembers<string>(VISITOR_REDIS_KEYS.periodPathVisitors(path));
-    periodPathMemberLists.set(path, members ?? []);
+  if (!useLifetimePathBackfill) {
+    for (const path of periodPathKeys ?? []) {
+      const members = await client.smembers<string>(VISITOR_REDIS_KEYS.periodPathVisitors(path));
+      periodPathMemberLists.set(path, members ?? []);
+    }
   }
 
   const periodByCountry: Record<string, number> = {};
@@ -1044,17 +1087,11 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
   const periodVisitorMembers =
     periodUnique > 0 ? await client.smembers<string>(VISITOR_REDIS_KEYS.period) : [];
   const periodVisitorSet = new Set(periodVisitorMembers ?? []);
-  const useLifetimePathBackfill = shouldUseLifetimePathBackfillForPeriod(
-    lifetimeUnique,
-    periodUnique,
-    (pathKeys ?? []).length,
-    (periodPathKeys ?? []).length,
-  );
   const periodPathSource = useLifetimePathBackfill ? pathMemberLists : periodPathMemberLists;
   const paths = intersectPathVisitorsWithChannel(periodPathSource, periodVisitorSet);
 
   const pathsByChannel = emptyChannelPathCounts();
-  const lifetimePathsByChannel = emptyChannelPathCounts();
+  const lifetimePathsByChannel = cachedLifetimePathsByChannel ?? emptyChannelPathCounts();
 
   const loadChannelMembers = async (scope: "period" | "lifetime", channel: TrafficChannel) => {
     const count =
@@ -1076,21 +1113,31 @@ export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<Vi
         return [channel, await loadChannelMembers("period", channel)] as const;
       }),
     ),
-    Promise.all(
-      PATH_CHANNEL_RANK_CHANNELS.map(async (channel) => {
-        return [channel, await loadChannelMembers("lifetime", channel)] as const;
-      }),
-    ),
+    cachedLifetimePathsByChannel
+      ? Promise.resolve([])
+      : Promise.all(
+          PATH_CHANNEL_RANK_CHANNELS.map(async (channel) => {
+            return [channel, await loadChannelMembers("lifetime", channel)] as const;
+          }),
+        ),
   ]);
 
   for (const [channel, channelVisitors] of periodChannelMemberSets) {
     pathsByChannel[channel] = intersectPathVisitorsWithChannel(periodPathSource, channelVisitors);
   }
 
-  for (const [channel, channelVisitors] of lifetimeChannelMemberSets) {
-    lifetimePathsByChannel[channel] = intersectPathVisitorsWithChannel(
-      pathMemberLists,
-      channelVisitors,
+  if (!cachedLifetimePathsByChannel) {
+    for (const [channel, channelVisitors] of lifetimeChannelMemberSets) {
+      lifetimePathsByChannel[channel] = intersectPathVisitorsWithChannel(
+        pathMemberLists,
+        channelVisitors,
+      );
+    }
+    await writeCachedValue(
+      client,
+      VISITOR_REDIS_KEYS.lifetimePathsByChannelCache,
+      lifetimePathsByChannel,
+      LIFETIME_PATHS_CACHE_TTL_SECONDS,
     );
   }
 
@@ -1133,13 +1180,32 @@ async function readDailySnapshotsFromRedis(
   dailyPageViews: DailyUniqueCounts,
 ): Promise<Record<string, DailyTrafficSnapshot>> {
   const snapshots: Record<string, DailyTrafficSnapshot> = {};
+  const today = new Date().toISOString().slice(0, 10);
+  const activeDays = dayKeys.filter(
+    (date) => (dailyUnique[date] ?? 0) > 0 || (dailyPageViews[date] ?? 0) > 0,
+  );
+  const closedDays = activeDays.filter((date) => date < today);
+  const cachedClosed = await readCachedValues<DailyTrafficSnapshot>(
+    client,
+    closedDays.map((date) => VISITOR_REDIS_KEYS.dailySnapshotCache(date)),
+  );
+  const cachedByDate = new Map<string, DailyTrafficSnapshot>();
+  closedDays.forEach((date, index) => {
+    const cached = cachedClosed[index];
+    if (cached) {
+      cachedByDate.set(date, cached);
+    }
+  });
 
-  for (const date of dayKeys) {
-    const unique = dailyUnique[date] ?? 0;
-    const pageViews = dailyPageViews[date] ?? 0;
-    if (unique <= 0 && pageViews <= 0) {
+  for (const date of activeDays) {
+    const cached = cachedByDate.get(date);
+    if (cached) {
+      snapshots[date] = cached;
       continue;
     }
+
+    const unique = dailyUnique[date] ?? 0;
+    const pageViews = dailyPageViews[date] ?? 0;
 
     const [pathKeys, countryKeys, ...channelCounts] = await Promise.all([
       client.smembers<string>(VISITOR_REDIS_KEYS.dailyPathIndex(date)),
@@ -1149,11 +1215,16 @@ async function readDailySnapshotsFromRedis(
       ),
     ]);
 
+    const dayPathKeys = pathKeys ?? [];
+    const batchedViews = await readCachedValues<number | string>(
+      client,
+      dayPathKeys.map((path) => VISITOR_REDIS_KEYS.dailyPathViews(date, path)),
+    );
     const paths: Record<string, DailyPathMetrics> = {};
-    for (const path of pathKeys ?? []) {
+    for (const [index, path] of dayPathKeys.entries()) {
       const [pathUnique, pathViews] = await Promise.all([
         client.scard(VISITOR_REDIS_KEYS.dailyPathVisitors(date, path)),
-        client.get(VISITOR_REDIS_KEYS.dailyPathViews(date, path)),
+        client.mget ? batchedViews[index] : client.get(VISITOR_REDIS_KEYS.dailyPathViews(date, path)),
       ]);
       if (pathUnique > 0 || Number(pathViews) > 0) {
         paths[path] = {
@@ -1181,6 +1252,15 @@ async function readDailySnapshotsFromRedis(
       },
       byCountry,
     };
+
+    if (date < today) {
+      await writeCachedValue(
+        client,
+        VISITOR_REDIS_KEYS.dailySnapshotCache(date),
+        snapshots[date],
+        DAILY_KEY_TTL_SECONDS,
+      );
+    }
   }
 
   return snapshots;
