@@ -3,31 +3,31 @@
     "id": "acsm-cpt-readiness-check-assessment-001",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "Feet turning out in the overhead squat assessment most commonly suggests overactivity of:",
+    "prompt": "When several fitness assessments are done in one session, which order does ACSM generally recommend?",
     "options": [
       {
         "id": "a",
-        "text": "Only pectoralis major"
+        "text": "Flexibility and muscular strength first, then cardio and resting measures"
       },
       {
         "id": "b",
-        "text": "Soleus / lateral gastrocnemius and/or biceps femoris (short head) with underactive medial gastroc/medial hamstrings/gracilis/sartorius/popliteus as applicable"
+        "text": "Resting measures, body composition, cardio, muscular fitness, flexibility"
       },
       {
         "id": "c",
-        "text": "Only upper trapezius without lower extremity involvement"
+        "text": "Muscular strength first, then resting HR and BP, then the cardio test"
       },
       {
         "id": "d",
-        "text": "Only the masseter"
+        "text": "Cardiorespiratory test first, then body composition and resting BP"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Foot/ankle compensation patterns often involve lateral calf and biceps femoris overactivity.",
+    "explanation": "ACSM's Guidelines suggest resting HR, BP, and body composition first, then cardiorespiratory fitness, then muscular fitness, with flexibility last, so earlier tests do not distort later ones.",
     "distractorExplanations": {
-      "a": "Chest muscles do not turn the feet out.",
-      "c": "Upper trap relates more to shoulder elevation.",
-      "d": "Jaw muscles are unrelated."
+      "a": "Resting HR and BP must be taken before exercise raises them, so they come first, not last.",
+      "c": "Strength testing first raises HR and BP and fatigues the client before the cardio test.",
+      "d": "A cardio test first raises HR and BP and can distort body-composition readings such as BIA."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -40,27 +40,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Exact 1RM squat without testing"
+        "text": "An estimated one-repetition maximum for the back squat"
       },
       {
         "id": "b",
-        "text": "Body fat percentage by itself"
+        "text": "Body fat percentage without any other measurements"
       },
       {
         "id": "c",
-        "text": "A baseline cardiorespiratory status and training intensity reference (with other metrics)"
+        "text": "A cardiorespiratory baseline and intensity reference"
       },
       {
         "id": "d",
-        "text": "Bone mineral density"
+        "text": "Bone mineral density and long-term fracture risk"
       }
     ],
     "correctOptionId": "c",
     "explanation": "RHR is a simple baseline; programming still needs goals, history, and other assessments.",
     "distractorExplanations": {
-      "a": "Strength must be tested or estimated separately.",
-      "b": "Body composition needs other methods.",
-      "d": "BMD requires medical imaging."
+      "a": "A 1RM needs strength testing or prediction from submaximal lifts; resting HR gives no strength data.",
+      "b": "Body fat needs skinfolds, BIA, or another composition method.",
+      "d": "Bone density requires DXA imaging, not a heart rate reading."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -102,31 +102,31 @@
     "id": "acsm-cpt-readiness-check-assessment-004",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "Knee valgus (knees cave in) during a squat commonly involves underactivity of:",
+    "prompt": "Knee valgus (knees caving in) during a squat is most commonly linked to:",
     "options": [
       {
         "id": "a",
-        "text": "Gluteus medius / maximus (among other contributors)"
+        "text": "Weak hip abductors and external rotators, such as gluteus medius"
       },
       {
         "id": "b",
-        "text": "Only wrist flexors"
+        "text": "Weak ankle plantar flexors, such as the soleus and gastrocnemius"
       },
       {
         "id": "c",
-        "text": "Only deep neck flexors as the sole cause"
+        "text": "Tight hamstrings pulling the pelvis into a posterior tilt"
       },
       {
         "id": "d",
-        "text": "Only finger extensors"
+        "text": "Weak quadriceps that cannot extend the knee under load"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Knee valgus often pairs with weak hip abductors/external rotators and overactive adductors/TFL patterns.",
     "distractorExplanations": {
-      "b": "Wrist flexors do not control knee frontal-plane motion.",
-      "c": "Neck flexors are not the primary knee-valgus drivers.",
-      "d": "Finger muscles are irrelevant here."
+      "b": "Weak plantar flexors do not pull the knees inward; valgus is a frontal-plane hip control problem.",
+      "c": "Posterior pelvic tilt from tight hamstrings shows as a rounded low back, not knees caving in.",
+      "d": "Quadriceps weakness limits depth or knee extension, but does not by itself drive the knees medially."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -139,27 +139,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Measure VO2max in a laboratory"
+        "text": "Estimate VO2max before a laboratory treadmill test"
       },
       {
         "id": "b",
-        "text": "Screen for health risks and determine whether medical clearance or modified programming is needed before exercise"
+        "text": "Screen for health risks and flag need for medical clearance"
       },
       {
         "id": "c",
-        "text": "Prescribe medications"
+        "text": "Replace the informed consent form before training begins"
       },
       {
         "id": "d",
-        "text": "Replace informed consent entirely in all jurisdictions"
+        "text": "Classify the client's fitness level for program design"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Preparticipation screening tools identify red flags; they do not replace clinical diagnosis or all legal forms.",
     "distractorExplanations": {
-      "a": "VO2max requires metabolic testing.",
-      "c": "Trainers do not prescribe drugs.",
-      "d": "Consent/waiver processes remain separate requirements."
+      "a": "The PAR-Q+ is a questionnaire; it does not estimate aerobic capacity.",
+      "c": "Screening and informed consent are separate documents; one does not replace the other.",
+      "d": "Fitness level comes from assessments, not from a health-risk questionnaire."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -168,31 +168,31 @@
     "id": "acsm-cpt-readiness-check-assessment-006",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "Which circumference measurement site is commonly used when estimating body composition with circumference formulas?",
+    "prompt": "Which site is commonly included in circumference-based body composition formulas?",
     "options": [
       {
         "id": "a",
-        "text": "Only the earlobe"
+        "text": "Upper-arm skinfold at the triceps only"
       },
       {
         "id": "b",
-        "text": "Only the toenail bed"
+        "text": "Resting heart rate taken at the wrist"
       },
       {
         "id": "c",
-        "text": "Waist (among other sites depending on protocol)"
+        "text": "Waist, with other sites per protocol"
       },
       {
         "id": "d",
-        "text": "Only the scalp hairline"
+        "text": "Chest girth measured at full inhalation"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Waist, hip, neck, and limb sites appear in various circumference protocols; choose the protocol’s sites.",
     "distractorExplanations": {
-      "a": "Earlobe is not a standard girth site for body-comp formulas.",
-      "b": "Toenails are not circumference sites.",
-      "d": "Hairline is not used for girth equations."
+      "a": "Triceps skinfold is a skinfold site, not a circumference site.",
+      "b": "Resting heart rate is a cardiovascular measure, not a body-composition circumference.",
+      "d": "Circumference protocols measure at end of normal exhalation, and chest girth is not a standard formula site."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -205,27 +205,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only gluteus maximus"
+        "text": "Weak upper trapezius that cannot hold the scapula up"
       },
       {
         "id": "b",
-        "text": "Only gastrocnemius"
+        "text": "Tight rhomboids pulling the scapulae toward the spine"
       },
       {
         "id": "c",
-        "text": "Only tibialis posterior"
+        "text": "Weak latissimus dorsi failing to control shoulder flexion"
       },
       {
         "id": "d",
-        "text": "Upper trapezius / levator scapulae (with underactive mid/lower trapezius as applicable)"
+        "text": "Upper trapezius and levator scapulae dominating the lift"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Scapular elevation compensations often involve upper trap/levator overactivity.",
     "distractorExplanations": {
-      "a": "Glutes are hip extensors/stabilizers.",
-      "b": "Calves act at the ankle.",
-      "c": "Tibialis posterior supports the medial arch."
+      "a": "Shoulder elevation means the upper trapezius is overworking, not weak.",
+      "b": "Tight rhomboids retract the scapulae; they do not cause shrugging during a push.",
+      "c": "The lats depress and extend the shoulder; weak lats do not explain the shoulders rising."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -238,27 +238,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Uncontrolled hypertension is a risk factor that may require medical clearance and intensity modification"
+        "text": "Uncontrolled hypertension may need clearance and lower intensity"
       },
       {
         "id": "b",
-        "text": "BP has no relevance to exercise safety"
+        "text": "Blood pressure sets the exact target heart rate for the session"
       },
       {
         "id": "c",
-        "text": "High BP always means the client should sprint intervals that day"
+        "text": "Low blood pressure always rules out resistance training that day"
       },
       {
         "id": "d",
-        "text": "Low readings alone diagnose all cardiac disease"
+        "text": "A single reading is enough to diagnose the client with hypertension"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Elevated BP can contraindicate or modify exercise; trainers refer as indicated.",
     "distractorExplanations": {
-      "b": "BP is a core preparticipation vital.",
-      "c": "High BP warrants caution, not automatic HIIT.",
-      "d": "Diagnosis belongs to licensed clinicians."
+      "b": "Target heart rate comes from HRmax or HRR methods, not from a BP reading.",
+      "c": "Low readings warrant symptom checks, but they do not automatically rule out training.",
+      "d": "Trainers do not diagnose; hypertension is diagnosed by a clinician from repeated readings."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -267,31 +267,31 @@
     "id": "acsm-cpt-readiness-check-assessment-009",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "The Rockport Walk Test is primarily used to estimate",
+    "prompt": "The Rockport 1-mile walk test is primarily used to estimate:",
     "options": [
       {
         "id": "a",
-        "text": "Maximal bench press 1RM"
+        "text": "Lower-body muscular endurance from repeated stepping"
       },
       {
         "id": "b",
-        "text": "Cardiorespiratory fitness (VO2-related estimate) from a timed 1-mile walk and heart rate"
+        "text": "Aerobic fitness from 1-mile walk time and heart rate"
       },
       {
         "id": "c",
-        "text": "Flexibility of the hamstrings"
+        "text": "Hamstring and low-back flexibility after a warm-up"
       },
       {
         "id": "d",
-        "text": "Bone density"
+        "text": "Walking gait mechanics and ankle range of motion"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Field walk tests estimate aerobic fitness without a full lab VO2 protocol.",
     "distractorExplanations": {
-      "a": "Strength tests estimate muscular force.",
-      "c": "Flexibility needs ROM tests.",
-      "d": "BMD needs medical testing."
+      "a": "The test uses walk time and heart rate to estimate VO2, not leg muscular endurance.",
+      "c": "Flexibility is measured with tests such as sit-and-reach, not a timed walk.",
+      "d": "Gait observation is not scored; the Rockport result is an aerobic estimate."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -304,27 +304,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Tight deep neck flexors and weak upper trapezius"
+        "text": "Tight chest and upper trapezius with weak deep neck flexors"
       },
       {
         "id": "b",
-        "text": "Only weak finger flexors"
+        "text": "Tight hamstrings and glutes with weak hip flexors"
       },
       {
         "id": "c",
-        "text": "Tight hip flexors and erector spinae with weak gluteus maximus and abdominals"
+        "text": "Tight hip flexors and low back with weak glutes and abs"
       },
       {
         "id": "d",
-        "text": "Perfectly balanced anterior and posterior chains"
+        "text": "Weak erector spinae with tight abdominals and glutes"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Janda’s lower crossed pattern: anterior pelvic tilt with the classic tight/weak pairings.",
     "distractorExplanations": {
-      "a": "That pairing is closer to upper crossed ideas reversed/incorrect.",
-      "b": "Hand muscles are not the defining pattern.",
-      "d": "The syndrome is defined by imbalance."
+      "a": "Tight chest and upper traps with weak neck flexors is upper crossed syndrome.",
+      "b": "Tight hamstrings and glutes pull the pelvis into posterior tilt, the opposite pattern.",
+      "d": "This reverses the pattern: in lower crossed syndrome the erectors are tight and the abs weak."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -333,31 +333,31 @@
     "id": "acsm-cpt-readiness-check-assessment-011",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "When a client reports sharp joint pain during an assessment, the trainer should?",
+    "prompt": "A client reports sharp joint pain during an assessment. The trainer should:",
     "options": [
       {
         "id": "a",
-        "text": "Increase load to 'push through' sharp pain"
+        "text": "Reduce the load and continue if the pain eases"
       },
       {
         "id": "b",
-        "text": "Ignore pain if the client is motivated"
+        "text": "Switch to the same movement on a machine"
       },
       {
         "id": "c",
-        "text": "Diagnose a ligament tear on the spot as a definitive medical diagnosis"
+        "text": "Apply ice and resume after a short rest break"
       },
       {
         "id": "d",
-        "text": "Stop the painful movement and refer out / seek medical clearance as appropriate"
+        "text": "Stop the movement and refer for medical review"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Sharp pain is a stop-and-refer cue; trainers do not diagnose injuries.",
     "distractorExplanations": {
-      "a": "Sharp pain is not trained through.",
-      "b": "Motivation does not override safety.",
-      "c": "Diagnosis is outside CPT scope."
+      "a": "Sharp joint pain is a stop signal, not something to train around with lighter load.",
+      "b": "Changing equipment still loads the painful joint without knowing the cause.",
+      "c": "Resuming after ice ignores a red-flag symptom that needs evaluation."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -366,31 +366,31 @@
     "id": "acsm-cpt-readiness-check-assessment-012",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "Davies test is primarily designed to assess",
+    "prompt": "The current ACSM preparticipation screening algorithm first considers:",
     "options": [
       {
         "id": "a",
-        "text": "Upper-body agility and stabilization (reactive hand touches in plank)"
+        "text": "Whether the client already exercises regularly"
       },
       {
         "id": "b",
-        "text": "Maximal deadlift strength"
+        "text": "The client's resting blood pressure category"
       },
       {
         "id": "c",
-        "text": "Resting metabolic rate"
+        "text": "The number of CVD risk factors the client has"
       },
       {
         "id": "d",
-        "text": "Visual acuity"
+        "text": "The client's age and body mass index category"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Davies test challenges shoulder stability/agility in a plank position.",
+    "explanation": "Since 2015, ACSM screening starts with whether the client currently exercises, then looks at known cardiovascular, metabolic, or renal disease, signs or symptoms, and the desired intensity.",
     "distractorExplanations": {
-      "b": "Max strength needs 1RM or estimated strength tests.",
-      "c": "RMR needs metabolic measurement.",
-      "d": "Vision is not a CPT motor test."
+      "b": "BP is useful data, but the current algorithm does not start from BP category.",
+      "c": "Risk-factor counting was removed from the ACSM algorithm in 2015.",
+      "d": "Age and BMI are not decision points in the current preparticipation algorithm."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -403,27 +403,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Perfect bilateral symmetry with no possible fault ever"
+        "text": "Toes pointing straight ahead through the rep"
       },
       {
         "id": "b",
-        "text": "Knee valgus / hip drop / trunk lean (depending on observation)"
+        "text": "Knee valgus, hip drop, or trunk lean"
       },
       {
         "id": "c",
-        "text": "Only ear asymmetry"
+        "text": "Arms held level with the shoulders"
       },
       {
         "id": "d",
-        "text": "Only fingernail length changes"
+        "text": "Heel of the standing foot flat on the floor"
       }
     ],
     "correctOptionId": "b",
     "explanation": "SLS reveals frontal-plane control deficits at hip/knee and trunk strategies.",
     "distractorExplanations": {
-      "a": "Compensations are common and informative.",
-      "c": "Ears are not the focus of SLS.",
-      "d": "Nails are irrelevant."
+      "a": "A neutral foot position is the goal, not a compensation.",
+      "c": "Level arms are part of the test setup, not a fault.",
+      "d": "A flat standing heel is expected; heel lift would be the compensation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -436,27 +436,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A direct gold-standard measure of visceral fat mass"
+        "text": "A direct measure of body fat and visceral fat"
       },
       {
         "id": "b",
-        "text": "A strength index equal to 1RM"
+        "text": "Weight relative to waist circumference"
       },
       {
         "id": "c",
-        "text": "A height–weight ratio that estimates weight category risk but does not measure body fat directly"
+        "text": "Weight relative to height, not body fat"
       },
       {
         "id": "d",
-        "text": "A flexibility score"
+        "text": "An estimate of lean mass from height alone"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "BMI screens weight status; athletes and older adults may be misclassified versus true composition.",
+    "explanation": "BMI is weight in kilograms divided by height in meters squared. It screens weight category risk but cannot separate fat from lean mass, so athletes and older adults may be misclassified.",
     "distractorExplanations": {
-      "a": "Imaging/DEXA estimate fat more directly.",
-      "b": "BMI is not a strength metric.",
-      "d": "Flexibility uses ROM tests."
+      "a": "BMI does not measure fat directly; muscular people can score as overweight.",
+      "b": "Waist circumference is a separate measure; BMI uses weight and height.",
+      "d": "BMI does not estimate lean mass and uses weight, not height alone."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -465,31 +465,31 @@
     "id": "acsm-cpt-readiness-check-assessment-015",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "During an overhead squat assessment, excessive forward lean most commonly indicates overactivity of which muscles?",
+    "prompt": "During an overhead squat, excessive forward trunk lean most commonly suggests:",
     "options": [
       {
         "id": "a",
-        "text": "Hip flexor complex and/or soleus (with possible underactivity of gluteus maximus/erectors depending on findings)"
+        "text": "Tight calves or hip flexors with a weak posterior chain"
       },
       {
         "id": "b",
-        "text": "Only the deep neck flexors with no lower-body involvement"
+        "text": "Tight hamstrings with weak hip flexors and quadriceps"
       },
       {
         "id": "c",
-        "text": "Only the wrist extensors"
+        "text": "Weak calves with overactive tibialis anterior muscles"
       },
       {
         "id": "d",
-        "text": "Only the tibialis anterior as the sole cause"
+        "text": "Tight latissimus dorsi with weak abdominal muscles"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Forward lean often relates to tight calves/hip flexors and weak posterior chain; interpret the whole kinetic chain.",
     "distractorExplanations": {
-      "b": "Cervical findings alone do not explain trunk lean.",
-      "c": "Wrist muscles do not drive squat trunk angle.",
-      "d": "Tibialis anterior tightness is not the classic forward-lean driver."
+      "b": "Tight hamstrings pull the pelvis back; they do not cause excessive forward lean.",
+      "c": "Weak calves and an overactive tibialis would ease dorsiflexion, not limit it.",
+      "d": "Tight lats cause the arms to fall forward, not the trunk to lean excessively."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -502,27 +502,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Barely balance on two feet with pain"
+        "text": "Complete two weeks of steady-state cardio without pain"
       },
       {
         "id": "b",
-        "text": "Skip all foundational phases regardless of ability"
+        "text": "Perform bodyweight squats at a fast, continuous tempo"
       },
       {
         "id": "c",
-        "text": "Demonstrate adequate strength, landing mechanics, and joint stability for the chosen drill"
+        "text": "Show adequate strength and controlled landing mechanics"
       },
       {
         "id": "d",
-        "text": "Only if they refuse resistance training"
+        "text": "Hold a static stretch for 30 seconds at each major joint"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Impact drills require landing control and strength baselines to manage injury risk.",
     "distractorExplanations": {
-      "a": "Pain and poor balance are contraindications to progress.",
-      "b": "Foundations matter for safety.",
-      "d": "Resistance training complements plyometrics."
+      "a": "Aerobic base does not show the strength and landing control that impact drills need.",
+      "b": "Fast squats show little about absorbing landing forces.",
+      "d": "Flexibility alone does not prepare joints for impact loading."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -535,27 +535,27 @@
     "options": [
       {
         "id": "a",
-        "text": "0–10 seconds"
+        "text": "About 30–60 seconds between sets"
       },
       {
         "id": "b",
-        "text": "24 hours between every single set"
+        "text": "About 60–90 seconds between sets"
       },
       {
         "id": "c",
-        "text": "No rest by definition of strength"
+        "text": "About 90–120 seconds between sets"
       },
       {
         "id": "d",
-        "text": "About 3–5 minutes (longer recovery for neural/ATP–PC restoration)"
+        "text": "About 3–5 minutes between sets"
       }
     ],
     "correctOptionId": "d",
     "explanation": "High-load strength work needs longer rest than endurance circuits.",
     "distractorExplanations": {
-      "a": "Very short rests limit load quality.",
-      "b": "Inter-set rest is minutes, not a day.",
-      "c": "Strength training uses planned rest."
+      "a": "Short rest suits muscular endurance, not maximal strength.",
+      "b": "This rest range is typical of hypertrophy work.",
+      "c": "Two minutes may not fully restore phosphocreatine for heavy sets near maximum."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -568,27 +568,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Bodyweight squat or assisted squat to box → goblet squat → barbell variations as technique allows"
+        "text": "Box or bodyweight squat, then goblet squat, then barbell"
       },
       {
         "id": "b",
-        "text": "Maximal back squat on session one for all clients"
+        "text": "Barbell back squat first, then goblet squat, then box squat"
       },
       {
         "id": "c",
-        "text": "Pistol squat to failure on day one for every sedentary adult"
+        "text": "Split squat first, then pistol squat, then barbell squat"
       },
       {
         "id": "d",
-        "text": "Skip squats and only shrug maximally"
+        "text": "Leg press only until the client can lift bodyweight twice"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Progress complexity and load after pattern competency.",
     "distractorExplanations": {
-      "b": "Max loading without skill is unsafe.",
-      "c": "Unilateral advanced variants are not universal day-one drills.",
-      "d": "Shrugs do not train the squat pattern."
+      "b": "Starting with a loaded barbell skips pattern learning; progress from simpler to harder.",
+      "c": "A pistol squat is an advanced single-leg skill and a poor second step.",
+      "d": "Machine strength does not teach the free squat pattern, and this criterion is arbitrary."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -597,31 +597,31 @@
     "id": "acsm-cpt-readiness-check-programming-004",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "programming",
-    "prompt": "On the ACSM CPT, which statement about progressive overload is correct? Select the best answer.",
+    "prompt": "Which statement best describes progressive overload?",
     "options": [
       {
         "id": "a",
-        "text": "Clients should never change any variable after week one"
+        "text": "Increasing load every session regardless of form"
       },
       {
         "id": "b",
-        "text": "Training stress must gradually increase via load, volume, density, or complexity over time"
+        "text": "Gradually raising load, volume, or complexity"
       },
       {
         "id": "c",
-        "text": "Only flexibility can be overloaded, never strength"
+        "text": "Keeping the same program to master technique"
       },
       {
         "id": "d",
-        "text": "Overload means training through sharp joint pain"
+        "text": "Adding sets until the client reaches exhaustion"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Adaptation requires progressive challenge within recovery capacity—not pain chasing.",
     "distractorExplanations": {
-      "a": "Stagnation occurs without progression.",
-      "c": "All fitness qualities can progress.",
-      "d": "Pain is a warning, not a method."
+      "a": "Adding load regardless of form invites injury; overload must stay within recovery and technique.",
+      "c": "An unchanged program stops producing adaptation once the body adjusts.",
+      "d": "Training to exhaustion every session is not progressive overload and hurts recovery."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -634,27 +634,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Replaces the need for any dietary awareness"
+        "text": "It burns more calories per session than aerobic training"
       },
       {
         "id": "b",
-        "text": "Guarantees spot reduction of belly fat only where electrodes are placed"
+        "text": "It allows spot reduction of fat from the trained muscles"
       },
       {
         "id": "c",
-        "text": "Helps preserve lean mass and supports metabolic rate while in a calorie deficit"
+        "text": "It helps preserve lean mass during a calorie deficit"
       },
       {
         "id": "d",
-        "text": "Makes cardiovascular exercise useless in all cases"
+        "text": "It removes the need to track diet while losing weight"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Resistance training protects muscle during weight loss; nutrition and cardio still matter.",
     "distractorExplanations": {
-      "a": "Energy balance still drives fat loss.",
-      "b": "Spot reduction is a myth.",
-      "d": "Cardio can still support energy expenditure and health."
+      "a": "Steady aerobic work usually burns more calories per session than typical lifting.",
+      "b": "Spot reduction is a myth; fat loss happens across the whole body.",
+      "d": "Nutrition still drives the calorie deficit needed for fat loss."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -667,27 +667,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Hyperventilate rapidly throughout every rep with no brace"
+        "text": "Inhale deeply and hold through the whole set"
       },
       {
         "id": "b",
-        "text": "Never breathe during any set"
+        "text": "Breathe in rapidly and shallowly on each rep"
       },
       {
         "id": "c",
-        "text": "Only breathe during the warm-up, not working sets"
+        "text": "Exhale fully before starting the lowering phase"
       },
       {
         "id": "d",
-        "text": "Brace and exhale through the sticking point (avoid prolonged breath-holding if contraindicated)"
+        "text": "Brace, then exhale through the sticking point"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Bracing with controlled breathing manages intra-abdominal pressure; Valsalva may be used carefully in advanced lifters without contraindications.",
     "distractorExplanations": {
-      "a": "Uncontrolled hyperventilation impairs stability.",
-      "b": "Breathing is required.",
-      "c": "Working sets especially need bracing/breath strategy."
+      "a": "Prolonged breath-holding spikes blood pressure and is risky for many clients.",
+      "b": "Rapid shallow breathing prevents a stable brace.",
+      "c": "Exhaling before the lowering phase removes trunk support when the load is heaviest."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -696,31 +696,31 @@
     "id": "acsm-cpt-readiness-check-programming-007",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "programming",
-    "prompt": "Integrated training in NASM refers to:",
+    "prompt": "ACSM's FITT-VP principle stands for:",
     "options": [
       {
         "id": "a",
-        "text": "Combining flexibility, core, balance, SAQ, plyometric, and resistance training in a purposeful program"
+        "text": "Frequency, intensity, time, type, volume, and progression"
       },
       {
         "id": "b",
-        "text": "Only foam rolling"
+        "text": "Flexibility, intensity, tempo, type, variety, and power"
       },
       {
         "id": "c",
-        "text": "Only sport practice with no physical preparation"
+        "text": "Frequency, interval, training load, type, velocity, pace"
       },
       {
         "id": "d",
-        "text": "Only machine circuit training without any other qualities"
+        "text": "Fitness, intensity, time, technique, volume, and posture"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "OPT integrates multiple components rather than isolating one modality indefinitely.",
+    "explanation": "FITT-VP means frequency, intensity, time, type, volume, and progression. ACSM uses it to structure aerobic, resistance, flexibility, and neuromotor prescriptions.",
     "distractorExplanations": {
-      "b": "SMR is one tool, not the whole program.",
-      "c": "Sport skill alone is incomplete preparation.",
-      "d": "Machines can be useful but are not the entire model."
+      "b": "Flexibility, tempo, variety, and power are not the FITT-VP letters.",
+      "c": "Interval, training load, velocity, and pace are not part of FITT-VP.",
+      "d": "Fitness, technique, and posture are not the FITT-VP components."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -733,27 +733,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A week of maximal testing every day"
+        "text": "A week of 1RM testing to set new training loads"
       },
       {
         "id": "b",
-        "text": "A planned reduction in volume and/or intensity to allow recovery and adaptation"
+        "text": "A planned drop in volume or intensity for recovery"
       },
       {
         "id": "c",
-        "text": "Complete retirement from exercise permanently"
+        "text": "A week off all exercise after an injury diagnosis"
       },
       {
         "id": "d",
-        "text": "Eating zero protein"
+        "text": "A week of extra volume to push past a plateau"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Deloads manage fatigue while maintaining some training stimulus.",
     "distractorExplanations": {
-      "a": "Daily max testing increases fatigue.",
-      "c": "Deload is temporary.",
-      "d": "Nutrition support remains important."
+      "a": "Maximal testing adds stress; a deload reduces it.",
+      "c": "A deload keeps some training; it is not injury rest.",
+      "d": "Extra volume is an overreaching block, the opposite of a deload."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -762,31 +762,31 @@
     "id": "acsm-cpt-readiness-check-programming-009",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "programming",
-    "prompt": "On the ACSM CPT, which balance progression is most advanced? Select the best answer.",
+    "prompt": "Which balance exercise is the most advanced progression?",
     "options": [
       {
         "id": "a",
-        "text": "Seated supported bilateral stance on a stable chair"
+        "text": "Standing on two feet on a firm floor with eyes closed"
       },
       {
         "id": "b",
-        "text": "Two-foot standing on a firm floor with eyes open and hand support"
+        "text": "Single-leg stance on a firm floor with eyes open"
       },
       {
         "id": "c",
-        "text": "Single-leg unstable surface with perturbation / reactive tasks"
+        "text": "Single-leg stance on foam while catching a ball"
       },
       {
         "id": "d",
-        "text": "Lying completely supported with no upright challenge"
+        "text": "Tandem stance on a firm floor with arms crossed"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Progress by reducing base of support, adding instability, vision challenges, and reactions.",
     "distractorExplanations": {
-      "a": "Seated support is introductory.",
-      "b": "Bilateral firm stance is basic.",
-      "d": "Lying removes balance demand."
+      "a": "Closing the eyes adds difficulty, but a two-foot base is still wide and stable.",
+      "b": "A single leg on a firm surface lacks instability and reactive demands.",
+      "d": "Tandem stance narrows the base but keeps both feet on a stable floor."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -795,31 +795,31 @@
     "id": "acsm-cpt-readiness-check-programming-010",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "programming",
-    "prompt": "For a new client in Stabilization Endurance, which acute variable set is most typical?",
+    "prompt": "For a healthy novice, ACSM's starting resistance-training guideline is closest to:",
     "options": [
       {
         "id": "a",
-        "text": "12–20 reps, 1–3 sets, slow tempos, shorter rest, lower intensity"
+        "text": "2–3 days a week, 8–10 exercises, starting at 1 set of 8–12"
       },
       {
         "id": "b",
-        "text": "1–5 reps at near-maximal loads with long rest"
+        "text": "5–6 days a week, 3 exercises, 5 sets of 3 reps at 90% 1RM"
       },
       {
         "id": "c",
-        "text": "Only 100-rep sets with no rest ever"
+        "text": "1 day a week, 20 exercises, 3 sets to failure for each one"
       },
       {
         "id": "d",
-        "text": "Plyometric depth jumps on day one without preparation"
+        "text": "Daily sessions, 2 exercises, 10 sets of 15 reps each"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Phase 1 uses higher reps, controlled tempos, and stability emphasis before heavy/power work.",
+    "explanation": "ACSM suggests novices train each major muscle group 2–3 days a week with 8–10 multi-joint exercises, starting with one set of 8–12 repetitions and adding sets as they adapt.",
     "distractorExplanations": {
-      "b": "Low-rep maximal loading fits strength phases later.",
-      "c": "Extreme fatigue sets are not the standard Phase 1 template.",
-      "d": "High-intensity plyometrics require preparation."
+      "b": "Low-rep, high-set work is a strength block for trained lifters, not a novice start.",
+      "c": "Once a week is too infrequent, and 20 exercises to failure is excessive for a novice.",
+      "d": "Daily training of the same muscles leaves no recovery for a beginner."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -828,31 +828,31 @@
     "id": "acsm-cpt-readiness-check-programming-011",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "programming",
-    "prompt": "Which exercise progression is most appropriate for core in early stabilization training?",
+    "prompt": "Which core exercises are most appropriate for a beginner's first program?",
     "options": [
       {
         "id": "a",
-        "text": "Maximal sit-up contests on day one"
+        "text": "Weighted sit-ups and machine crunches for high reps"
       },
       {
         "id": "b",
-        "text": "Floor bridges / dead bugs / bird dogs before loaded spinal flexion machines"
+        "text": "Bridges, dead bugs, and bird dogs with control"
       },
       {
         "id": "c",
-        "text": "Heavy standing Russian twists with end-range spinal rotation under fatigue for beginners"
+        "text": "Loaded Russian twists at end-range rotation"
       },
       {
         "id": "d",
-        "text": "Loaded good mornings to failure for all new clients"
+        "text": "Hanging leg raises to failure each session"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Start with controlled anti-extension/anti-rotation stability before aggressive loaded trunk work.",
     "distractorExplanations": {
-      "a": "High-volume sit-ups are not ideal first progressions.",
-      "c": "Aggressive loaded rotation is advanced.",
-      "d": "Loaded spinal flexion/hinge to failure is inappropriate for novices."
+      "a": "Loaded spinal flexion is harder on the spine and comes after basic stability.",
+      "c": "End-range loaded rotation is an advanced, higher-risk movement.",
+      "d": "Hanging leg raises need grip and hip-flexor strength most beginners lack."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -861,31 +861,31 @@
     "id": "acsm-cpt-readiness-check-programming-012",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "programming",
-    "prompt": "SAQ training primarily develops",
+    "prompt": "Speed, agility, and quickness drills primarily develop:",
     "options": [
       {
         "id": "a",
-        "text": "Only maximal hypertrophy"
+        "text": "Maximal strength through low-rep heavy lifting"
       },
       {
         "id": "b",
-        "text": "Only static flexibility"
+        "text": "Aerobic capacity through long steady-state work"
       },
       {
         "id": "c",
-        "text": "Speed, agility, and quickness (reaction and change of direction)"
+        "text": "Acceleration, change of direction, and reaction"
       },
       {
         "id": "d",
-        "text": "Only bone mineral density as the sole outcome"
+        "text": "Muscle hypertrophy through moderate-rep sets"
       }
     ],
     "correctOptionId": "c",
     "explanation": "SAQ drills improve acceleration, COD, and reactive ability alongside other programming.",
     "distractorExplanations": {
-      "a": "Hypertrophy uses resistance overload schemes.",
-      "b": "Flexibility is ROM-focused.",
-      "d": "BMD may improve with loading but is not SAQ’s primary aim."
+      "a": "Heavy low-rep work builds maximal strength, not agility.",
+      "b": "Long steady work builds aerobic capacity.",
+      "d": "Hypertrophy comes from resistance volume, not agility drills."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -894,31 +894,31 @@
     "id": "acsm-cpt-readiness-check-programming-013",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "programming",
-    "prompt": "Which modality is most appropriate for correcting an overhead squat arms-fall-forward compensation in a corrective sequence?",
+    "prompt": "A client's arms fall forward during an overhead squat. Which corrective approach fits best?",
     "options": [
       {
         "id": "a",
-        "text": "Only foam roll the calves and ignore the upper body"
+        "text": "Stretch the calves and strengthen the tibialis anterior"
       },
       {
         "id": "b",
-        "text": "Only train heavy bench press"
+        "text": "Strengthen the chest with heavier bench press sets"
       },
       {
         "id": "c",
-        "text": "Only stretch the plantar fascia"
+        "text": "Stretch the hamstrings and strengthen the hip flexors"
       },
       {
         "id": "d",
-        "text": "Inhibit/lengthen latissimus dorsi and pectorals; activate/integrate mid/lower trapezius and rhomboids as indicated"
+        "text": "Stretch the lats and chest; train mid and lower traps"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Arms-fall-forward often involves tight lats/pecs and weak scapular retractors/depressors.",
     "distractorExplanations": {
-      "a": "Calves may matter for other faults, not this one primarily.",
-      "b": "Heavy pressing can worsen the pattern.",
-      "c": "Plantar fascia is unrelated."
+      "a": "Calf work addresses heel lift or foot turn-out, not the arms.",
+      "b": "More chest loading reinforces the tightness that pulls the arms forward.",
+      "c": "Hamstring and hip work targets pelvic position, not the shoulders."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -931,27 +931,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Approximately 6–12 reps at moderate-to-challenging loads"
+        "text": "About 6–12 reps at moderate to heavy loads"
       },
       {
         "id": "b",
-        "text": "Only 30–40 reps with empty bar"
+        "text": "About 1–5 reps at near-maximal loads each set"
       },
       {
         "id": "c",
-        "text": "Only singles at 100% 1RM every set"
+        "text": "About 20–30 reps at very light loads per set"
       },
       {
         "id": "d",
-        "text": "Zero resistance"
+        "text": "About 3–6 reps performed explosively"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Hypertrophy commonly uses mid-range reps with sufficient tension and volume.",
     "distractorExplanations": {
-      "b": "Very high reps shift toward endurance.",
-      "c": "Constant maximal singles fit peak strength peaking, not typical hypertrophy blocks.",
-      "d": "Progressive overload requires resistance."
+      "b": "One to five heavy reps mainly builds maximal strength.",
+      "c": "Very high reps with light loads target muscular endurance.",
+      "d": "Low-rep explosive work trains power."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -964,27 +964,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Completely exhaust the client before the session"
+        "text": "Lengthen muscles with long static stretches"
       },
       {
         "id": "b",
-        "text": "Increase tissue temperature, nervous system readiness, and movement-specific ROM"
+        "text": "Raise tissue temperature and rehearse movements"
       },
       {
         "id": "c",
-        "text": "Replace all cool-down needs"
+        "text": "Pre-fatigue the target muscles before lifting"
       },
       {
         "id": "d",
-        "text": "Diagnose disease"
+        "text": "Lower heart rate before the working sets begin"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Warm-ups prepare tissues and motor patterns; they should not create excessive fatigue.",
     "distractorExplanations": {
-      "a": "Fatigue before work impairs performance.",
-      "c": "Cool-down is still useful.",
-      "d": "Diagnosis is clinical."
+      "a": "Long static holds before lifting can briefly reduce force output.",
+      "c": "Pre-fatigue reduces performance and is not the purpose of a warm-up.",
+      "d": "A warm-up raises heart rate gradually; it does not lower it."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -993,31 +993,31 @@
     "id": "acsm-cpt-readiness-check-science-001",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "science",
-    "prompt": "In NASM terminology, which subsystem includes the deep longitudinal subsystem (DLS) concept?",
+    "prompt": "Synergist muscles are best described as:",
     "options": [
       {
         "id": "a",
-        "text": "Only the integumentary system"
+        "text": "Muscles that only produce movement in the sagittal plane"
       },
       {
         "id": "b",
-        "text": "Global muscular subsystems that transfer force across the kinetic chain"
+        "text": "Muscles that work together to stabilize and move a joint"
       },
       {
         "id": "c",
-        "text": "Only the digestive tract musculature"
+        "text": "Muscles that oppose the prime mover during an action"
       },
       {
         "id": "d",
-        "text": "Cartilage-only connective tissue with no muscle"
+        "text": "Muscles that attach to the same bone at both ends"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Local and global muscular subsystems (including DLS, POS, AOS, LS) describe force transfer and stabilization roles.",
+    "explanation": "Synergists assist the agonist and help stabilize the joint so the intended movement happens efficiently. Antagonists oppose the movement, and stabilizers hold other segments still.",
     "distractorExplanations": {
-      "a": "Skin is not a muscular subsystem.",
-      "c": "GI smooth muscle is unrelated to OPT subsystems.",
-      "d": "Subsystem models include muscular linkages."
+      "a": "Synergists can act in any plane; plane is not what defines them.",
+      "c": "Muscles that oppose the prime mover are antagonists.",
+      "d": "A muscle attaching to one bone at both ends could not move a joint."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1030,11 +1030,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Greater trochanter of the femur"
+        "text": "Coracoid process of the scapula"
       },
       {
         "id": "b",
-        "text": "Medial malleolus"
+        "text": "Lateral epicondyle of the humerus"
       },
       {
         "id": "c",
@@ -1042,15 +1042,15 @@
       },
       {
         "id": "d",
-        "text": "Olecranon process only as the sole biceps insertion"
+        "text": "Olecranon process of the ulna"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Biceps brachii inserts primarily on the radial tuberosity and bicipital aponeurosis.",
     "distractorExplanations": {
-      "a": "Greater trochanter is a hip landmark.",
-      "b": "Medial malleolus is distal tibia.",
-      "d": "Olecranon is the triceps insertion region."
+      "a": "The coracoid process is an origin of the short head of the biceps, not its insertion.",
+      "b": "The lateral epicondyle is the origin of the wrist extensors.",
+      "d": "The olecranon is where the triceps inserts."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1059,31 +1059,31 @@
     "id": "acsm-cpt-readiness-check-science-003",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "science",
-    "prompt": "In the NASM OPT model, which phase emphasizes improving muscular endurance and stabilizing the kinetic chain?",
+    "prompt": "For a deconditioned client, which resistance-training emphasis usually comes first?",
     "options": [
       {
         "id": "a",
-        "text": "Phase 1: Stabilization Endurance"
+        "text": "Muscular endurance: high reps, low load, short rest"
       },
       {
         "id": "b",
-        "text": "Phase 3: Muscular Development (Hypertrophy)"
+        "text": "Maximal strength: low reps, heavy load, long rest"
       },
       {
         "id": "c",
-        "text": "Phase 4: Maximal Strength"
+        "text": "Power: explosive reps with moderate load"
       },
       {
         "id": "d",
-        "text": "Phase 5: Power"
+        "text": "Hypertrophy: moderate reps and moderate rest"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Phase 1 focuses on endurance, neuromuscular efficiency, and core/joint stability before heavy loading.",
+    "explanation": "New or deconditioned clients usually start with lighter loads, higher repetitions, and shorter rest to build muscular endurance and technique before moving to hypertrophy, strength, or power work.",
     "distractorExplanations": {
-      "b": "Hypertrophy emphasizes muscle size with moderate-to-heavy loads.",
-      "c": "Maximal strength targets peak force production.",
-      "d": "Power blends strength and speed after foundational phases."
+      "b": "Heavy low-rep work is a later phase once technique and tolerance are built.",
+      "c": "Power training needs a strength base first.",
+      "d": "Hypertrophy work usually follows an initial endurance and technique phase."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1092,11 +1092,11 @@
     "id": "acsm-cpt-readiness-check-science-004",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "science",
-    "prompt": "On the ACSM CPT, which muscle is the primary agonist for hip extension? Select the best answer.",
+    "prompt": "Which muscle is the primary agonist for hip extension?",
     "options": [
       {
         "id": "a",
-        "text": "Iliacus"
+        "text": "Iliopsoas"
       },
       {
         "id": "b",
@@ -1104,19 +1104,19 @@
       },
       {
         "id": "c",
-        "text": "Rectus femoris (isolated hip flexion role)"
+        "text": "Rectus femoris"
       },
       {
         "id": "d",
-        "text": "Anterior tibialis"
+        "text": "Tensor fasciae latae"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Gluteus maximus is the primary hip extensor; iliopsoas/rectus femoris flex the hip; tibialis anterior dorsiflexes.",
     "distractorExplanations": {
-      "a": "Iliacus is a hip flexor.",
-      "c": "Rectus femoris flexes the hip and extends the knee.",
-      "d": "Tibialis anterior acts at the ankle."
+      "a": "The iliopsoas is the primary hip flexor.",
+      "c": "The rectus femoris flexes the hip and extends the knee.",
+      "d": "The TFL assists hip flexion and abduction."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1158,7 +1158,7 @@
     "id": "acsm-cpt-readiness-check-science-006",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "science",
-    "prompt": "On the ACSM CPT, which connective tissue attaches muscle to bone? Select the best answer.",
+    "prompt": "Which connective tissue attaches muscle to bone?",
     "options": [
       {
         "id": "a",
@@ -1170,7 +1170,7 @@
       },
       {
         "id": "c",
-        "text": "Meniscus"
+        "text": "Cartilage"
       },
       {
         "id": "d",
@@ -1180,9 +1180,9 @@
     "correctOptionId": "d",
     "explanation": "Tendons connect muscle to bone; ligaments connect bone to bone; bursae reduce friction.",
     "distractorExplanations": {
-      "a": "Ligaments stabilize joints bone-to-bone.",
-      "b": "Bursae are fluid sacs, not attachments.",
-      "c": "Menisci are fibrocartilage cushions in some joints."
+      "a": "Ligaments connect bone to bone.",
+      "b": "Bursae are fluid sacs that reduce friction.",
+      "c": "Cartilage covers joint surfaces and cushions them."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1195,27 +1195,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Slow-twitch, fatigue-resistant fibers used heavily in endurance and postural work"
+        "text": "Slow-twitch, oxidative, and fatigue-resistant"
       },
       {
         "id": "b",
-        "text": "Fast-twitch fibers specialized only for one-rep max lifts"
+        "text": "Fast-twitch, glycolytic, and quick to fatigue"
       },
       {
         "id": "c",
-        "text": "Non-contractile connective tissue"
+        "text": "Fast-twitch fibers recruited first at low effort"
       },
       {
         "id": "d",
-        "text": "Fibers that cannot use oxygen"
+        "text": "Slow-twitch fibers used mainly for maximal lifts"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Type I fibers are oxidative and fatigue-resistant; Type II are faster and more fatigable.",
     "distractorExplanations": {
-      "b": "Maximal power/force relies more on Type II fibers.",
-      "c": "Muscle fibers are contractile tissue.",
-      "d": "Type I fibers are highly oxidative."
+      "b": "Fast-twitch glycolytic fibers are Type IIx.",
+      "c": "Low-effort tasks recruit slow-twitch fibers first, following the size principle.",
+      "d": "Maximal lifts rely heavily on Type II fibers."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1257,31 +1257,31 @@
     "id": "acsm-cpt-readiness-check-science-009",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "science",
-    "prompt": "In OPT Phase 5 (Power), training typically pairs",
+    "prompt": "Complex (contrast) training for power typically pairs:",
     "options": [
       {
         "id": "a",
-        "text": "Only long slow distance cardio with no resistance"
+        "text": "Heavy squats and jump squats on separate days"
       },
       {
         "id": "b",
-        "text": "Isometric holds exclusively at end range"
+        "text": "A light plyometric drill followed by a 1RM test"
       },
       {
         "id": "c",
-        "text": "A heavy strength exercise with a lighter, high-velocity power exercise for the same movement pattern"
+        "text": "A heavy lift paired with a similar explosive move"
       },
       {
         "id": "d",
-        "text": "Complete rest from all lower-body work for 8 weeks"
+        "text": "Isometric holds followed by long steady cardio"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Power phases use complex/contrast pairing of strength + explosive work after foundations are built.",
+    "explanation": "Complex training pairs a heavy strength exercise with a lighter, high-velocity exercise for the same pattern, such as a squat followed by a jump, to use post-activation potentiation.",
     "distractorExplanations": {
-      "a": "Power is not aerobic-only programming.",
-      "b": "Isometrics alone do not develop rate of force development.",
-      "d": "Complete rest is not a power protocol."
+      "a": "Separating the lifts on different days removes the pairing effect.",
+      "b": "A 1RM test is a test, not a contrast training pair.",
+      "d": "Isometrics and steady cardio do not train power."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1290,31 +1290,31 @@
     "id": "acsm-cpt-readiness-check-science-010",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "science",
-    "prompt": "On the ACSM CPT, which muscle concentrically produces scapular retraction? Select the best answer.",
+    "prompt": "Which muscles concentrically retract the scapula?",
     "options": [
       {
         "id": "a",
-        "text": "Serratus anterior (primary protraction)"
+        "text": "Serratus anterior and pectoralis minor"
       },
       {
         "id": "b",
-        "text": "Pectoralis minor"
+        "text": "Upper trapezius and levator scapulae"
       },
       {
         "id": "c",
-        "text": "Upper trapezius elevation"
+        "text": "Pectoralis major and anterior deltoid"
       },
       {
         "id": "d",
-        "text": "Middle trapezius / rhomboids"
+        "text": "Rhomboids and middle trapezius"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Middle trapezius and rhomboids retract the scapula; serratus anterior protracts/upwardly rotates.",
     "distractorExplanations": {
-      "a": "Serratus anterior protracts the scapula.",
-      "b": "Pectoralis minor contributes to protraction/depression, not primary retraction.",
-      "c": "Upper trapezius mainly elevates/upwardly rotates."
+      "a": "Serratus anterior and pectoralis minor protract the scapula.",
+      "b": "Upper trapezius and levator scapulae elevate the scapula.",
+      "c": "Pectoralis major and anterior deltoid move the humerus, mainly in horizontal adduction; they do not retract the scapula."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1327,27 +1327,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Provide deep local stabilization by increasing intra-abdominal pressure and bracing the lumbar spine"
+        "text": "Stabilize the lumbar spine by raising intra-abdominal pressure"
       },
       {
         "id": "b",
-        "text": "Serve as the primary prime mover for heavy spinal extension under load"
+        "text": "Flex the trunk as the prime mover during sit-ups and crunches"
       },
       {
         "id": "c",
-        "text": "Replace the need for any hip musculature"
+        "text": "Rotate the trunk as the prime mover during cable woodchops"
       },
       {
         "id": "d",
-        "text": "Act only as a respiratory muscle with no spinal role"
+        "text": "Extend the lumbar spine as the prime mover during deadlifts"
       }
     ],
     "correctOptionId": "a",
     "explanation": "TrA is a local stabilizer that supports segmental control; global movers create larger trunk motions.",
     "distractorExplanations": {
-      "b": "Erector spinae are major extensors.",
-      "c": "Hip musculature remains essential for force transfer.",
-      "d": "TrA contributes to both bracing and respiratory timing."
+      "b": "The rectus abdominis is the prime mover for trunk flexion.",
+      "c": "The obliques are the prime movers for trunk rotation.",
+      "d": "The erector spinae extend the spine."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1393,27 +1393,27 @@
     "options": [
       {
         "id": "a",
-        "text": "It is placed in extreme passive insufficiency with no overlap possible"
+        "text": "It is fully shortened with sarcomeres overlapping"
       },
       {
         "id": "b",
-        "text": "It is completely slack with sarcomeres fully bunched"
+        "text": "It is stretched to the end of its range of motion"
       },
       {
         "id": "c",
-        "text": "Actin and myosin have an optimal overlap (near resting length)"
+        "text": "Actin and myosin overlap optimally near rest length"
       },
       {
         "id": "d",
-        "text": "The nervous system is turned off"
+        "text": "It is contracting at the fastest possible velocity"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Force peaks near optimal sarcomere length; too short or too long reduces cross-bridge capacity.",
     "distractorExplanations": {
-      "a": "Extreme stretch reduces overlap and force.",
-      "b": "Extreme shortening also reduces force capacity.",
-      "d": "Neural drive is required for voluntary force."
+      "a": "When fully shortened, filaments overlap too much and force drops.",
+      "b": "When overstretched, too few cross-bridges can form.",
+      "d": "Force falls as shortening velocity rises (force–velocity relationship)."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1426,15 +1426,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Oxidative system as the sole source"
+        "text": "Oxidative system using carbohydrate"
       },
       {
         "id": "b",
-        "text": "Only beta-oxidation of fats"
+        "text": "Oxidative system using fatty acids"
       },
       {
         "id": "c",
-        "text": "Protein deamination"
+        "text": "Fast glycolysis producing lactate"
       },
       {
         "id": "d",
@@ -1444,9 +1444,9 @@
     "correctOptionId": "d",
     "explanation": "Very short maximal efforts rely primarily on phosphagen stores; oxidative metabolism dominates longer work.",
     "distractorExplanations": {
-      "a": "Oxidative pathways dominate longer-duration efforts.",
-      "b": "Fat oxidation is too slow for short maximal power.",
-      "c": "Protein is not the primary fuel for brief maximal efforts."
+      "a": "Aerobic metabolism is too slow to meet the demand of a maximal 10-second effort.",
+      "b": "Fat oxidation is the slowest ATP pathway.",
+      "c": "Glycolysis rises after the first several seconds but does not dominate this short effort."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1463,23 +1463,23 @@
       },
       {
         "id": "b",
-        "text": "is never the primary mover producing the desired joint action"
+        "text": "Relaxes to allow the desired joint action to happen"
       },
       {
         "id": "c",
-        "text": "Only opposes the movement (antagonist role)"
+        "text": "Assists the prime mover in producing the joint action"
       },
       {
         "id": "d",
-        "text": "Only stabilizes without producing force"
+        "text": "Holds nearby joints steady while the movement happens"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Agonists produce the main action; antagonists oppose; synergists assist; stabilizers control unwanted motion.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Is the primary mover producing the desired joint action”.",
-      "c": "That describes the antagonist.",
-      "d": "Stabilizers control, but agonists create the primary action."
+      "b": "The antagonist relaxes and lengthens to allow the action.",
+      "c": "A muscle that assists the prime mover is a synergist.",
+      "d": "Muscles that hold nearby joints steady are stabilizers."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1492,27 +1492,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Collaborative, client-centered exploration of ambivalence and intrinsic motivation"
+        "text": "Collaborative exploration of ambivalence and motivation"
       },
       {
         "id": "b",
-        "text": "Lecturing clients until they comply"
+        "text": "Direct advice on the fastest way to reach client goals"
       },
       {
         "id": "c",
-        "text": "Ignoring the client’s values"
+        "text": "Clear consequences when the client misses sessions"
       },
       {
         "id": "d",
-        "text": "Threatening to cancel sessions for any slip"
+        "text": "Detailed education on health risks of inactivity"
       }
     ],
     "correctOptionId": "a",
     "explanation": "MI uses empathy, evocative questions, and partnership rather than confrontation alone.",
     "distractorExplanations": {
-      "b": "Pure lecturing often increases resistance.",
-      "c": "Values drive lasting change.",
-      "d": "Threats damage autonomy and rapport."
+      "b": "MI evokes the client's own reasons rather than leading with advice.",
+      "c": "Consequences and pressure increase resistance; MI avoids them.",
+      "d": "Education has a place, but MI centers the client's own motivation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1525,27 +1525,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Improving sweat rate indefinitely with no downside"
+        "text": "Increasing sweat rate so the body cools more efficiently"
       },
       {
         "id": "b",
-        "text": "Reducing plasma volume, increasing cardiovascular strain, and impairing thermoregulation"
+        "text": "Reducing plasma volume and raising cardiovascular strain"
       },
       {
         "id": "c",
-        "text": "Eliminating the need for electrolytes in all ultra-endurance events automatically"
+        "text": "Lowering heart rate at a given workload during exercise"
       },
       {
         "id": "d",
-        "text": "Increasing bone length acutely"
+        "text": "Increasing blood volume available to the working muscles"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Fluid deficits raise heart rate for a given workload and raise heat illness risk.",
     "distractorExplanations": {
-      "a": "Excessive dehydration harms performance.",
-      "c": "Long events may still need electrolyte strategies.",
-      "d": "Hydration does not lengthen bones."
+      "a": "Dehydration reduces sweating capacity and raises core temperature.",
+      "c": "Heart rate rises at a given workload when plasma volume falls (cardiovascular drift).",
+      "d": "Fluid loss lowers blood volume; it does not increase it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1554,31 +1554,31 @@
     "id": "acsm-cpt-readiness-check-behavior-003",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "behavior",
-    "prompt": "On the ACSM CPT, which is an example of an open-ended coaching question? Select the best answer.",
+    "prompt": "Which is an example of an open-ended coaching question?",
     "options": [
       {
         "id": "a",
-        "text": "Did you work out? (yes/no only, with no follow-up)"
+        "text": "Did you complete all of your workouts this week?"
       },
       {
         "id": "b",
-        "text": "You failed again, right?"
+        "text": "Would you like to add one more session next week?"
       },
       {
         "id": "c",
-        "text": "What barriers got in the way of your workouts this week?"
+        "text": "What got in the way of your workouts this week?"
       },
       {
         "id": "d",
-        "text": "Stop talking and just do what I say."
+        "text": "Was the last session too hard or about right?"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Open questions invite reflection and problem-solving; closed questions limit dialogue.",
     "distractorExplanations": {
-      "a": "Yes/no questions can start, but open follow-ups deepen change talk.",
-      "b": "Judgmental framing harms rapport.",
-      "d": "Command-only coaching reduces autonomy."
+      "a": "This invites a yes or no answer, so it is closed.",
+      "b": "This is a yes/no question even though it is polite.",
+      "d": "Offering two choices limits the answer; it is a closed question."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1591,27 +1591,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Create a disease-treatment diet and adjust insulin doses"
+        "text": "Build a low-carbohydrate meal plan and track glucose"
       },
       {
         "id": "b",
-        "text": "Tell them to stop metformin immediately"
+        "text": "Suggest a calorie target and remind the client to test"
       },
       {
         "id": "c",
-        "text": "Diagnose the severity of retinopathy"
+        "text": "Provide sample diabetic menus from a trusted website"
       },
       {
         "id": "d",
-        "text": "Refer to a registered dietitian / physician for medical nutrition therapy and stay within general guidelines"
+        "text": "Refer to a dietitian or physician for nutrition therapy"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Diabetes MNT and medication management require licensed clinicians.",
     "distractorExplanations": {
-      "a": "Insulin adjustment is medical.",
-      "b": "Medication changes need the physician.",
-      "c": "Eye disease diagnosis is medical."
+      "a": "A disease-specific meal plan is medical nutrition therapy, outside CPT scope.",
+      "b": "Setting targets for a diabetic client is clinical nutrition therapy.",
+      "c": "Handing out diabetic menus is still individualized medical nutrition advice."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1624,27 +1624,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Prioritize sleep, progressive programming, and adequate nutrition/hydration"
+        "text": "Prioritize sleep, planned progression, and nutrition"
       },
       {
         "id": "b",
-        "text": "Sleep is optional if caffeine is high enough"
+        "text": "Use daily ice baths after every training session"
       },
       {
         "id": "c",
-        "text": "Never take rest days regardless of fatigue and pain"
+        "text": "Take a full week off training after every 2 weeks"
       },
       {
         "id": "d",
-        "text": "Only passive ice baths replace all training recovery needs"
+        "text": "Stretch statically for 20 minutes after each session"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Sleep and periodization are foundational; modalities are adjuncts.",
     "distractorExplanations": {
-      "b": "Chronic sleep loss impairs adaptation.",
-      "c": "Rest/recovery days manage load.",
-      "d": "Cold therapy does not replace programming and sleep."
+      "b": "Frequent cold water immersion can blunt strength and hypertrophy gains.",
+      "c": "This is far more rest than typical periodization requires.",
+      "d": "Static stretching has little effect on recovery or soreness."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1657,27 +1657,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignores red-flag symptoms to keep billing high"
+        "text": "Keeps session notes brief to limit what can be subpoenaed"
       },
       {
         "id": "b",
-        "text": "Screens clients, documents sessions, uses informed consent, and stays in scope"
+        "text": "Screens clients, documents sessions, and stays in scope"
       },
       {
         "id": "c",
-        "text": "Falsifies CPR/AED certification dates"
+        "text": "Relies on the gym's insurance to cover any client injury"
       },
       {
         "id": "d",
-        "text": "Trains in prohibited medical procedures"
+        "text": "Uses a waiver so no further screening or records are needed"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Risk management combines screening, documentation, competence, and referral.",
     "distractorExplanations": {
-      "a": "Ignoring symptoms increases harm/liability.",
-      "c": "False credentials are illegal/unethical.",
-      "d": "Out-of-scope acts increase liability."
+      "a": "Thin notes weaken a trainer's defense; clear records reduce liability.",
+      "c": "Facility insurance may not cover an independent trainer's negligence.",
+      "d": "Waivers do not replace screening, documentation, or reasonable care."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1690,27 +1690,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Alcohol is an essential macronutrient required daily for hypertrophy"
+        "text": "Moderate intake improves muscle protein synthesis"
       },
       {
         "id": "b",
-        "text": "Alcohol always increases protein synthesis"
+        "text": "Alcohol calories are not stored as body fat"
       },
       {
         "id": "c",
-        "text": "Excessive intake can impair recovery, sleep, and calorie control"
+        "text": "Excess intake can impair recovery, sleep, and diet"
       },
       {
         "id": "d",
-        "text": "Alcohol hydration fully replaces water needs during training"
+        "text": "Alcohol rehydrates well after an endurance session"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Alcohol can displace nutrients, disrupt sleep, and add energy without supporting training adaptations.",
     "distractorExplanations": {
-      "a": "Alcohol is not essential for muscle growth.",
-      "b": "It can impair muscle protein synthesis/recovery.",
-      "d": "It is not a hydration strategy for training."
+      "a": "Alcohol reduces muscle protein synthesis after training.",
+      "b": "Alcohol provides 7 kcal/g, and those calories can contribute to fat gain.",
+      "d": "Alcohol is a diuretic and can worsen post-exercise dehydration."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1723,27 +1723,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Provide general healthy eating guidelines and refer to an RD for medical nutrition therapy"
+        "text": "Share general healthy eating guidance; refer MNT to an RD"
       },
       {
         "id": "b",
-        "text": "Prescribe a therapeutic ketogenic protocol for epilepsy as clinical treatment"
+        "text": "Design meal plans for clients with high blood cholesterol"
       },
       {
         "id": "c",
-        "text": "Diagnose celiac disease from a food log"
+        "text": "Recommend an elimination diet for suspected food allergies"
       },
       {
         "id": "d",
-        "text": "Tell a client to stop physician-prescribed medication to lose weight"
+        "text": "Adjust a client's carbohydrate intake to manage diabetes"
       }
     ],
     "correctOptionId": "a",
     "explanation": "CPTs educate with general guidelines; disease-specific MNT and diagnosis are for licensed clinicians.",
     "distractorExplanations": {
-      "b": "Therapeutic diets for disease are RD/MD territory.",
-      "c": "Diagnosis is medical.",
-      "d": "Medication changes require the prescribing clinician."
+      "b": "Planning meals to treat a disease is medical nutrition therapy.",
+      "c": "Elimination diets for allergies need clinical supervision.",
+      "d": "Managing diabetes through diet is clinical care for an RD or physician."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1756,7 +1756,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only dietary cholesterol"
+        "text": "Dietary fat"
       },
       {
         "id": "b",
@@ -1764,19 +1764,19 @@
       },
       {
         "id": "c",
-        "text": "Only alcohol"
+        "text": "Dietary protein"
       },
       {
         "id": "d",
-        "text": "Only insoluble fiber as ATP"
+        "text": "Ketone bodies"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Glycolysis uses carbohydrate (glucose/glycogen); fat is slower oxidative fuel; fiber is not a rapid ATP source.",
     "distractorExplanations": {
-      "a": "Cholesterol is not a workout fuel.",
-      "c": "Alcohol is not a training macronutrient strategy.",
-      "d": "Fiber is poorly used for rapid ATP."
+      "a": "Fat is oxidized aerobically and is too slow for glycolysis.",
+      "c": "Protein contributes little energy during intense exercise.",
+      "d": "Ketones are oxidized aerobically and do not fuel glycolysis."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1785,31 +1785,31 @@
     "id": "acsm-cpt-readiness-check-behavior-010",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "behavior",
-    "prompt": "Recommended dietary protein for many exercising adults often falls near",
+    "prompt": "Protein intake for many regularly exercising adults falls near:",
     "options": [
       {
         "id": "a",
-        "text": "0 g/day if lifting"
+        "text": "About 0.5–0.8 g/kg/day, at or below the RDA"
       },
       {
         "id": "b",
-        "text": "10 g/kg/day for all sedentary adults as a universal rule"
+        "text": "About 3.0–4.0 g/kg/day for all active adults"
       },
       {
         "id": "c",
-        "text": "About 1.2–2.2 g/kg/day depending on goals and total energy intake (general fitness guidance ranges)"
+        "text": "About 1.2–2.0 g/kg/day, by goals and training"
       },
       {
         "id": "d",
-        "text": "Protein has no role in muscle repair"
+        "text": "About 0.8 g/kg/day regardless of training load"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Active individuals usually need more than sedentary RDAs; extreme values are unnecessary or unrealistic.",
     "distractorExplanations": {
-      "a": "Protein is required for remodeling.",
-      "b": "10 g/kg is excessive for most people.",
-      "d": "Protein supports repair and adaptation."
+      "a": "This is at or below the sedentary RDA and too low for most active adults.",
+      "b": "Intakes this high exceed what is needed for most exercisers.",
+      "d": "0.8 g/kg is the sedentary RDA; active adults usually need more."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1822,27 +1822,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Vague wishes without tracking"
+        "text": "Long-term outcome goals without weekly targets"
       },
       {
         "id": "b",
-        "text": "Public shaming as the only tool"
+        "text": "Motivational quotes posted in the training area"
       },
       {
         "id": "c",
-        "text": "Avoiding all feedback"
+        "text": "Rewards that are given only after the final goal"
       },
       {
         "id": "d",
-        "text": "Specific, measurable action plans and self-monitoring"
+        "text": "Specific action plans and self-monitoring"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Implementation intentions, tracking, and feedback support adherence.",
     "distractorExplanations": {
-      "a": "Vague goals undermine follow-through.",
-      "b": "Shame harms rapport and adherence.",
-      "c": "Feedback guides adjustment."
+      "a": "Outcome goals without weekly actions give no clear next step.",
+      "b": "Quotes may inspire briefly, but they are not a behavior-change technique.",
+      "c": "Waiting for the end goal removes the regular reinforcement that builds habits."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1851,31 +1851,31 @@
     "id": "acsm-cpt-readiness-check-behavior-012",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "behavior",
-    "prompt": "A CPT should maintain client confidentiality except when:",
+    "prompt": "A CPT may disclose a client's private information when:",
     "options": [
       {
         "id": "a",
-        "text": "Disclosure is required by law / duty-to-warn situations or the client provides appropriate consent"
+        "text": "The law requires it or the client gives consent"
       },
       {
         "id": "b",
-        "text": "Gossiping with other gym members for fun"
+        "text": "The client's physician calls to ask for details"
       },
       {
         "id": "c",
-        "text": "Posting client before/after photos without consent"
+        "text": "A family member asks about the client's progress"
       },
       {
         "id": "d",
-        "text": "Sharing private health details to market services without permission"
+        "text": "The gym manager asks to review client files"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Privacy is an ethical/legal duty; limited exceptions exist for legal obligations and consent.",
     "distractorExplanations": {
-      "b": "Casual gossip is a breach.",
-      "c": "Photos need consent.",
-      "d": "Marketing use needs permission."
+      "b": "Sharing with a physician still requires the client's consent.",
+      "c": "Family members have no right to the client's information without consent.",
+      "d": "Managers need a legitimate business reason and policy basis, not casual access."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1888,27 +1888,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Guarantee that any supplement sold in a gym cures disease"
+        "text": "Recommend supplements that are third-party tested"
       },
       {
         "id": "b",
-        "text": "Discuss general evidence cautiously and refer clients to qualified professionals; do not prescribe like a clinician"
+        "text": "Share general evidence and refer clinical questions"
       },
       {
         "id": "c",
-        "text": "Inject clients with peptides in the locker room"
+        "text": "Sell supplements only if the client asks for them"
       },
       {
         "id": "d",
-        "text": "Claim FDA approval for all sports supplements automatically"
+        "text": "Suggest doses based on the client's body weight"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Supplement advice has legal/ethical limits; disease claims and invasive procedures are out of scope.",
     "distractorExplanations": {
-      "a": "Cure claims are inappropriate and often illegal.",
-      "c": "Injections are not CPT practice.",
-      "d": "Most supplements are not FDA-approved drugs."
+      "a": "Testing reduces contamination risk, but recommending products still stretches scope.",
+      "c": "Selling products creates a conflict of interest and is not evidence-based guidance.",
+      "d": "Individual dosing is clinical advice outside CPT scope."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1921,27 +1921,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Secret, Magical, Abstract, Random, Timeless"
+        "text": "Simple, Motivating, Achievable, Rewarding, Tracked"
       },
       {
         "id": "b",
-        "text": "Only financial goals for the trainer"
+        "text": "Specific, Meaningful, Active, Reviewed, Targeted"
       },
       {
         "id": "c",
-        "text": "Specific, Measurable, Attainable, Realistic/Relevant, Time-bound"
+        "text": "Specific, Measurable, Attainable, Relevant, Time-bound"
       },
       {
         "id": "d",
-        "text": "Goals that must never be written down"
+        "text": "Strategic, Measured, Agreed, Realistic, Timed"
       }
     ],
     "correctOptionId": "c",
     "explanation": "SMART structure improves clarity and accountability for client outcomes.",
     "distractorExplanations": {
-      "a": "Vague/magical framing fails.",
-      "b": "Client outcome goals matter, not only trainer revenue.",
-      "d": "Writing goals supports tracking."
+      "a": "These words are not the standard SMART acronym.",
+      "b": "Meaningful, Active, Reviewed, and Targeted are not SMART terms.",
+      "d": "Strategic and Agreed are not in the standard acronym."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1950,31 +1950,31 @@
     "id": "acsm-cpt-readiness-check-behavior-015",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "behavior",
-    "prompt": "On the ACSM CPT, which business practice is most professional? Select the best answer.",
+    "prompt": "Which business practice is most professional for a personal trainer?",
     "options": [
       {
         "id": "a",
-        "text": "Guaranteeing a 20-lb fat loss in 7 days for every client"
+        "text": "Offering a money-back guarantee on weight-loss results"
       },
       {
         "id": "b",
-        "text": "Training minors without required consents/policies"
+        "text": "Advertising body-transformation photos from past clients"
       },
       {
         "id": "c",
-        "text": "Using another trainer’s credentials on your ads"
+        "text": "Setting prices individually based on each client's income"
       },
       {
         "id": "d",
-        "text": "Clear contracts, transparent pricing, documented scope of practice, and accurate marketing claims"
+        "text": "Clear contracts, transparent pricing, and honest claims"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Professional practice requires honesty, consent, and legal compliance.",
     "distractorExplanations": {
-      "a": "Unrealistic guarantees are unethical.",
-      "b": "Minors require proper consent/policies.",
-      "c": "Credential misrepresentation is fraud."
+      "a": "Results guarantees overpromise; outcomes depend on many factors outside the trainer's control.",
+      "b": "Client photos need written consent and can mislead if results are not typical.",
+      "c": "Undisclosed individual pricing is not transparent."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1987,27 +1987,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Proceed with a Bruce treadmill test the same day"
+        "text": "Run a submaximal cycle test and stop at 85% of HRmax"
       },
       {
         "id": "b",
-        "text": "Ignore symptoms if his resting heart rate is normal"
+        "text": "Start light walking and reassess symptoms in two weeks"
       },
       {
         "id": "c",
-        "text": "Prescribe nitroglycerin before the session"
+        "text": "Check resting HR and BP, then test if both are normal"
       },
       {
         "id": "d",
-        "text": "Defer maximal testing and refer him for medical evaluation"
+        "text": "Defer testing and refer him for medical evaluation"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Cardiovascular symptoms during daily activity are red flags that require medical clearance before exercise testing.",
     "distractorExplanations": {
-      "a": "Maximal testing with active chest symptoms is unsafe.",
-      "b": "Normal resting HR does not rule out ischemia.",
-      "c": "Medication prescribing is outside CPT scope."
+      "a": "A submaximal test still loads the heart of a client with possible cardiac symptoms.",
+      "b": "Starting exercise before evaluation ignores a red-flag symptom.",
+      "c": "Normal resting values do not rule out exertional chest symptoms."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2020,27 +2020,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Reduces transient elevation from recent activity, caffeine, or anxiety"
+        "text": "Reduces short-term rises from activity, caffeine, or stress"
       },
       {
         "id": "b",
-        "text": "Guarantees a diagnosis of hypertension"
+        "text": "Lets the cuff warm to body temperature for a steady reading"
       },
       {
         "id": "c",
-        "text": "Eliminates the need to ever re-check BP"
+        "text": "Is the time an automatic monitor needs to calibrate itself"
       },
       {
         "id": "d",
-        "text": "Replaces PAR-Q+ screening entirely"
+        "text": "Allows blood to pool in the legs for a lower reading"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Brief quiet sitting stabilizes readings before using BP in risk stratification.",
     "distractorExplanations": {
-      "b": "One reading alone is not a medical diagnosis.",
-      "c": "BP should be tracked over time when relevant.",
-      "d": "PAR-Q+ remains a separate screening tool."
+      "b": "Cuff temperature does not affect the reading.",
+      "c": "Monitors do not need a calibration period between clients.",
+      "d": "The goal is a stable resting value, not an artificially low one."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2053,27 +2053,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Lower-body flexibility"
+        "text": "Lower-body muscular endurance from total step count"
       },
       {
         "id": "b",
-        "text": "Cardiorespiratory fitness from post-test heart rate recovery"
+        "text": "Aerobic fitness from post-test heart rate recovery"
       },
       {
         "id": "c",
-        "text": "Bone mineral density"
+        "text": "Anaerobic power from the fastest stepping cadence"
       },
       {
         "id": "d",
-        "text": "Maximal bench press strength"
+        "text": "Balance from the number of missteps during the test"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Step tests use heart rate response after standardized stepping to estimate aerobic capacity.",
     "distractorExplanations": {
-      "a": "Flexibility uses different assessments.",
-      "c": "BMD requires imaging.",
-      "d": "Bench press measures upper-body strength."
+      "a": "Cadence is fixed by a metronome; step count is not the score.",
+      "c": "The fixed cadence makes this a submaximal aerobic test, not an anaerobic one.",
+      "d": "Missteps are not scored; the result is the one-minute recovery heart rate."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2086,27 +2086,27 @@
     "options": [
       {
         "id": "a",
-        "text": "That the trainer will diagnose all medical conditions"
+        "text": "The trainer's certifications and their expiry dates"
       },
       {
         "id": "b",
-        "text": "That results are guaranteed in writing"
+        "text": "That the waiver removes liability for all injuries"
       },
       {
         "id": "c",
-        "text": "Session activities, potential risks, confidentiality limits, and the right to stop at any time"
+        "text": "Activities, risks, and the right to stop at any time"
       },
       {
         "id": "d",
-        "text": "That consent removes all facility liability in every situation"
+        "text": "The expected results and a timeline to reach them"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Informed consent clarifies scope, risks, and voluntary participation.",
     "distractorExplanations": {
-      "a": "Diagnosis is medical, not CPT scope.",
-      "b": "Outcomes cannot be guaranteed.",
-      "d": "Consent does not eliminate all legal duties."
+      "a": "Credentials may be shared, but they are not the core of informed consent.",
+      "b": "Consent documents do not remove liability for negligence.",
+      "d": "Promising results is not part of consent and can mislead the client."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2119,27 +2119,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Shortened femur length"
+        "text": "Low bone density and a higher fracture risk"
       },
       {
         "id": "b",
-        "text": "Superior ankle mobility"
+        "text": "Reduced flexibility of the lumbar spine"
       },
       {
         "id": "c",
-        "text": "Higher maximal oxygen uptake by itself"
+        "text": "Lower resting metabolic rate than average"
       },
       {
         "id": "d",
-        "text": "Visceral adiposity and cardiometabolic disease"
+        "text": "Visceral fat and cardiometabolic disease"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Central adiposity correlates with metabolic and cardiovascular risk beyond BMI alone.",
     "distractorExplanations": {
-      "a": "Femur length is unrelated to waist girth risk.",
-      "b": "Ankle mobility is not measured by waist.",
-      "c": "High VO2max is protective but not implied by waist size."
+      "a": "Waist size does not assess bone density.",
+      "b": "Waist circumference does not measure flexibility.",
+      "c": "Waist size is a disease-risk marker, not a measure of metabolic rate."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2185,27 +2185,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Take only one pinch regardless of reproducibility"
+        "text": "Take one reading per site to avoid compressing tissue"
       },
       {
         "id": "b",
-        "text": "Use the median or mean per protocol once measurements are within acceptable variance"
+        "text": "Average readings that fall within the protocol's range"
       },
       {
         "id": "c",
-        "text": "Add 10 mm to every site for safety"
+        "text": "Use the highest reading at each site for safety"
       },
       {
         "id": "d",
-        "text": "Measure over clothing to save time"
+        "text": "Measure on the left side of the body for accuracy"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Multiple trials improve reliability; protocols specify how to select the final value.",
     "distractorExplanations": {
-      "a": "Single unreliable pinches reduce validity.",
-      "c": "Arbitrary additions distort results.",
-      "d": "Skinfolds require direct skin contact."
+      "a": "A single reading is unreliable; protocols require repeat measurements.",
+      "c": "Choosing the highest value biases the estimate upward.",
+      "d": "Most US protocols, including ACSM's, use the right side of the body."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2218,27 +2218,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediate maximal cycle ergometry without warm-up"
+        "text": "Getting physician clearance before any exercise begins"
       },
       {
         "id": "b",
-        "text": "Automatic exclusion from all resistance training"
+        "text": "Completing a maximal exercise test before training"
       },
       {
         "id": "c",
-        "text": "Beginning a gradual program without physician clearance if no red flags emerge"
+        "text": "Starting light to moderate exercise and progressing"
       },
       {
         "id": "d",
-        "text": "Mandatory cardiac catheterization first"
+        "text": "Starting at vigorous intensity to establish a baseline"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Current ACSM screening uses activity status, known disease, and signs/symptoms—not old CVD risk-factor counting—to decide clearance for moderate exercise.",
     "distractorExplanations": {
-      "a": "Maximal tests still require appropriate preparation.",
-      "b": "Resistance training is not automatically contraindicated.",
-      "d": "Invasive cardiac procedures are not routine screening."
+      "a": "Healthy asymptomatic clients do not need clearance for light to moderate exercise.",
+      "b": "A maximal test is not required for an asymptomatic client starting moderate exercise.",
+      "d": "ACSM suggests starting inactive clients at light to moderate intensity and progressing gradually."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2251,27 +2251,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Isolated grip strength deficit"
+        "text": "Shoulder and thoracic spine mobility"
       },
       {
         "id": "b",
-        "text": "Maximal lung volume"
+        "text": "Hip flexor and quadriceps flexibility"
       },
       {
         "id": "c",
-        "text": "Resting bradycardia"
+        "text": "Ankle dorsiflexion range of motion"
       },
       {
         "id": "d",
-        "text": "Posterior hip and hamstring / low-back flexibility"
+        "text": "Hamstring and low-back flexibility"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Sit-and-reach primarily reflects posterior chain flexibility at the hip and spine.",
     "distractorExplanations": {
-      "a": "Grip is tested separately.",
-      "b": "Lung volume is spirometry.",
-      "c": "Heart rate is unrelated to sit-and-reach."
+      "a": "Shoulder mobility is assessed with tests such as the back scratch test.",
+      "b": "Hip flexor length is checked with the Thomas test.",
+      "c": "Ankle dorsiflexion is assessed with a knee-to-wall test."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2284,27 +2284,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Can speak in complete sentences but cannot sing comfortably"
+        "text": "Can talk in full sentences but cannot sing"
       },
       {
         "id": "b",
-        "text": "Cannot say a single word at any pace"
+        "text": "Can sing comfortably while keeping pace"
       },
       {
         "id": "c",
-        "text": "Must shout to be heard over music"
+        "text": "Can speak only a few words between breaths"
       },
       {
         "id": "d",
-        "text": "Is completely breathless after one step"
+        "text": "Cannot speak at all without stopping"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Comfortable conversation without singing approximates moderate intensity; only a few words indicates vigorous work.",
     "distractorExplanations": {
-      "b": "Inability to speak is vigorous or higher.",
-      "c": "Shouting is not the talk-test criterion.",
-      "d": "One step is not a standardized workload."
+      "b": "Being able to sing suggests light intensity.",
+      "c": "Only a few words at a time suggests vigorous intensity.",
+      "d": "Inability to speak suggests near-maximal effort."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2350,27 +2350,27 @@
     "options": [
       {
         "id": "a",
-        "text": "25-year-old asymptomatic recreational runner with normal vitals"
+        "text": "A 45-year-old with controlled hypertension on medication"
       },
       {
         "id": "b",
-        "text": "40-year-old with well-controlled asthma using prescribed inhaler"
+        "text": "A 60-year-old walker with a knee replacement last year"
       },
       {
         "id": "c",
-        "text": "52-year-old with uncontrolled Stage 2 hypertension and a recent syncope episode"
+        "text": "A 52-year-old with uncontrolled hypertension and syncope"
       },
       {
         "id": "d",
-        "text": "30-year-old with healed ankle sprain 6 months ago and full ROM"
+        "text": "A 38-year-old with type 1 diabetes and good control"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Uncontrolled hypertension plus syncope warrants physician evaluation before maximal testing.",
     "distractorExplanations": {
-      "a": "Low-risk asymptomatic adults may proceed with standard precautions.",
-      "b": "Controlled asthma is not an automatic testing ban.",
-      "d": "Healed sprain with full function is lower concern."
+      "a": "Controlled hypertension usually allows training with monitoring.",
+      "b": "A healed joint replacement may limit impact but is not a cardiac red flag.",
+      "d": "Well-controlled diabetes needs glucose monitoring, not deferral of all testing."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2416,27 +2416,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Resting heart rate, maximal heart rate (measured or age-predicted), and the target intensity percentage"
+        "text": "Resting HR, maximal HR, and the target intensity"
       },
       {
         "id": "b",
-        "text": "Only the client's shoe size"
+        "text": "Resting HR, age, and the client's body weight"
       },
       {
         "id": "c",
-        "text": "Skinfold sum at one site"
+        "text": "Maximal HR, blood pressure, and target intensity"
       },
       {
         "id": "d",
-        "text": "1RM deadlift without resting HR"
+        "text": "Resting BP, age, and the client's RPE rating"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Karvonen uses HRR: (HRmax − HRrest) × intensity + HRrest.",
     "distractorExplanations": {
-      "b": "Footwear size is irrelevant.",
-      "c": "Skinfolds do not substitute for HR data.",
-      "d": "Strength data alone cannot compute HRR."
+      "b": "Body weight is not part of the HRR formula.",
+      "c": "Blood pressure is not used in the Karvonen formula.",
+      "d": "The formula uses heart rates, not BP or RPE."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2449,27 +2449,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Is a 22-year-old asymptomatic recreational walker with no known disease"
+        "text": "Is inactive, over 45, and has two CVD risk factors"
       },
       {
         "id": "b",
-        "text": "Has known cardiovascular, metabolic, or renal disease and has been inactive, or has suggestive signs or symptoms"
+        "text": "Has known heart disease and signs or symptoms"
       },
       {
         "id": "c",
-        "text": "Has only a distant family history of longevity"
+        "text": "Is active, healthy, and wants to add vigorous work"
       },
       {
         "id": "d",
-        "text": "Wants flexibility work after a recent normal physical and no symptoms"
+        "text": "Has a BMI over 30 but no other known health issues"
       }
     ],
     "correctOptionId": "b",
     "explanation": "The ACSM algorithm uses current activity, known disease, signs/symptoms, and desired intensity—not old CVD risk-factor counting alone—to decide clearance.",
     "distractorExplanations": {
-      "a": "Asymptomatic adults without known disease can often start moderate activity.",
-      "c": "Family history alone is not the current clearance trigger.",
-      "d": "Flexibility after a normal workup is not a red-flag scenario."
+      "a": "Risk-factor counts and age were removed from the 2015 algorithm.",
+      "c": "Active clients without disease or symptoms can progress without clearance.",
+      "d": "Obesity alone is not a clearance trigger in the current algorithm."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2482,27 +2482,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Near-maximal singles on day one"
+        "text": "Moderate loads for 6–8 reps with long rest periods"
       },
       {
         "id": "b",
-        "text": "Plyometric depth jumps before any strength work"
+        "text": "Machine exercises only for the first three months"
       },
       {
         "id": "c",
-        "text": "No movement preparation or instruction"
+        "text": "Bodyweight exercises only until they lose weight"
       },
       {
         "id": "d",
-        "text": "12–15 repetitions at light-to-moderate load with controlled tempo"
+        "text": "12–15 reps at light to moderate load with control"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Older deconditioned clients need technique, moderate loads, and higher initial rep ranges.",
     "distractorExplanations": {
-      "a": "Heavy singles increase injury risk early.",
-      "b": "Plyometrics require a strength base.",
-      "c": "Instruction and preparation are essential."
+      "a": "Six to eight reps is heavier than a deconditioned older adult needs at first.",
+      "b": "Machines help, but restricting to machines for months is unnecessary.",
+      "c": "Weight loss is not a prerequisite for adding external resistance."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2515,27 +2515,27 @@
     "options": [
       {
         "id": "a",
-        "text": "150 minutes per week of moderate-intensity aerobic activity (or equivalent)"
+        "text": "150 minutes a week of moderate aerobic activity"
       },
       {
         "id": "b",
-        "text": "10 minutes of activity once per year"
+        "text": "75 minutes a week of moderate aerobic activity"
       },
       {
         "id": "c",
-        "text": "Only flexibility work with no aerobic component"
+        "text": "300 minutes a week of vigorous aerobic activity"
       },
       {
         "id": "d",
-        "text": "300 minutes of maximal sprint intervals daily"
+        "text": "30 minutes a week of moderate aerobic activity"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Adults benefit from ≥150 min/wk moderate aerobic activity or vigorous equivalents.",
     "distractorExplanations": {
-      "b": "Annual minimal activity is insufficient.",
-      "c": "Aerobic and flexibility both matter; aerobic minimums exist.",
-      "d": "Daily maximal sprints are not the public-health guideline."
+      "b": "75 minutes is the vigorous-intensity equivalent, not the moderate target.",
+      "c": "300 minutes is the upper moderate range for added benefit, not the vigorous minimum.",
+      "d": "30 minutes a week is far below the recommended minimum."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2548,27 +2548,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Push the bar away from the lifter randomly"
+        "text": "Hold the lifter's elbows to guide the bar path"
       },
       {
         "id": "b",
-        "text": "Assist if the bar path stalls, drifts, or the client requests help"
+        "text": "Assist if the bar stalls or the client asks"
       },
       {
         "id": "c",
-        "text": "Leave the area during the working set"
+        "text": "Keep hands on the bar through every rep"
       },
       {
         "id": "d",
-        "text": "Add load without telling the client"
+        "text": "Stand beside the bench to watch the arch"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Spotting means hands near the bar, watching path, and assisting only as needed.",
     "distractorExplanations": {
-      "a": "Random bar contact is unsafe.",
-      "c": "Spotters must stay engaged during the set.",
-      "d": "Load changes require client agreement."
+      "a": "Spotting at the elbows gives no control of the bar.",
+      "c": "Touching the bar on every rep changes the lift and hides true effort.",
+      "d": "A bench spotter stands at the head to reach the bar, not at the side."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2581,27 +2581,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Singles at 95% 1RM with 5-minute rest"
+        "text": "Low reps at heavy loads with 3–5 minutes rest"
       },
       {
         "id": "b",
-        "text": "Only static stretching for 60 minutes"
+        "text": "Moderate reps at moderate loads to failure"
       },
       {
         "id": "c",
-        "text": "Higher repetitions (often 15–20+) with relatively short rest intervals"
+        "text": "15–20 or more reps with short rest intervals"
       },
       {
         "id": "d",
-        "text": "Zero concentric work"
+        "text": "Explosive reps at light loads with full rest"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Endurance adaptations use sustained submaximal repetitions and limited rest.",
     "distractorExplanations": {
-      "a": "Heavy singles target strength/power.",
-      "b": "Stretching alone does not build local endurance.",
-      "d": "Concentric/eccentric work is required."
+      "a": "Heavy low-rep work with long rest builds maximal strength.",
+      "b": "Moderate reps to failure mainly target hypertrophy.",
+      "d": "Explosive reps with full rest train power."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2614,27 +2614,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A weighted pistol jump on day one"
+        "text": "Walking lunges with light dumbbells"
       },
       {
         "id": "b",
-        "text": "No lower-body training for six months"
+        "text": "Reverse lunges onto a soft balance pad"
       },
       {
         "id": "c",
-        "text": "Maximal lateral bounds first"
+        "text": "Lateral lunges with the arms overhead"
       },
       {
         "id": "d",
-        "text": "A split squat with hand support on a stable surface"
+        "text": "Split squats holding a stable support"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Supported split squats reduce balance demand while preserving lunge pattern learning.",
     "distractorExplanations": {
-      "a": "Pistol jumps are advanced.",
-      "b": "Lower-body training can be regressed, not omitted for months.",
-      "c": "Bounds require stability first."
+      "a": "Walking lunges add forward motion, which increases balance demand.",
+      "b": "An unstable pad makes balance harder, not easier.",
+      "c": "Lateral movement and arms overhead both increase the balance challenge."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2647,27 +2647,27 @@
     "options": [
       {
         "id": "a",
-        "text": "About 3 days per week with gradual progression"
+        "text": "About 3 days a week, then progress"
       },
       {
         "id": "b",
-        "text": "7 days of maximal intervals immediately"
+        "text": "About 5–7 days a week from week one"
       },
       {
         "id": "c",
-        "text": "One session every 6 months"
+        "text": "About 1 day a week for the first month"
       },
       {
         "id": "d",
-        "text": "Only passive rest with no planned sessions"
+        "text": "Every other week until fitness improves"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Beginners typically start with 3 moderate sessions weekly and progress safely.",
     "distractorExplanations": {
-      "b": "Daily max intervals risk overuse in novices.",
-      "c": "Infrequent activity limits adaptation.",
-      "d": "Rest alone is not a complete cardio plan."
+      "b": "Daily sessions from week one progress too quickly for a beginner.",
+      "c": "One day a week is too little to produce meaningful adaptation.",
+      "d": "Training every other week does not provide a regular stimulus."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2680,27 +2680,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Encourage breath-holding on every maximal effort without exception"
+        "text": "Use heavy loads with few reps to keep sets short"
       },
       {
         "id": "b",
-        "text": "Use moderate loads, avoid prolonged Valsalva, and cue continuous breathing"
+        "text": "Use moderate loads and cue continuous breathing"
       },
       {
         "id": "c",
-        "text": "Eliminate all resistance work permanently"
+        "text": "Avoid all upper-body exercises during training"
       },
       {
         "id": "d",
-        "text": "Add unapproved sodium supplements to raise BP"
+        "text": "Train only seated to prevent any rise in BP"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Controlled hypertension allows training with breathing cues and moderate loading.",
     "distractorExplanations": {
-      "a": "Prolonged Valsalva can spike BP.",
-      "c": "Resistance training is often beneficial when controlled.",
-      "d": "Supplements for BP are out of scope."
+      "a": "Heavy low-rep sets encourage breath-holding and BP spikes.",
+      "c": "Upper-body work is appropriate with sensible load and breathing.",
+      "d": "Position does not prevent BP from rising; load and breathing matter most."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2713,27 +2713,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Begin with all-out 60-second sprints and no recovery"
+        "text": "Match work and rest periods at 1:1 from the first session"
       },
       {
         "id": "b",
-        "text": "Skip warm-up because intervals are short"
+        "text": "Use all-out efforts and let the client choose the rest"
       },
       {
         "id": "c",
-        "text": "Start with lower work-to-rest ratios and monitor recovery between bouts"
+        "text": "Start with short work bouts and longer recovery periods"
       },
       {
         "id": "d",
-        "text": "Use intervals only after 10 years of training regardless of readiness"
+        "text": "Replace steady cardio fully with intervals right away"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Novices need conservative intervals, adequate recovery, and preparation.",
     "distractorExplanations": {
-      "a": "All-out sprints without base fitness increase risk.",
-      "b": "Warm-up is still required.",
-      "d": "Readiness matters more than arbitrary years."
+      "a": "Equal work and rest is too demanding for most sedentary clients at first.",
+      "b": "All-out efforts are inappropriate for a sedentary beginner.",
+      "d": "Intervals should be added gradually alongside a steady aerobic base."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2746,27 +2746,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Maximal bench press strength"
+        "text": "VO2max through all-out one-minute repeats"
       },
       {
         "id": "b",
-        "text": "Static hamstring-only stretching as the sole stimulus"
+        "text": "Running economy through hill sprint drills"
       },
       {
         "id": "c",
-        "text": "Complete cessation of easy mileage"
+        "text": "Aerobic base through long, easy distance runs"
       },
       {
         "id": "d",
-        "text": "Lactate threshold and sustained race-pace tolerance"
+        "text": "Lactate threshold and sustained race pace"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Tempo runs improve the pace that can be sustained near threshold.",
     "distractorExplanations": {
-      "a": "Upper-body strength is secondary for 5K pace.",
-      "b": "Stretching alone does not build threshold fitness.",
-      "c": "Easy miles still support aerobic base."
+      "a": "Short all-out repeats target VO2max and anaerobic capacity, not threshold.",
+      "b": "Hill sprints build power and economy; tempo runs build threshold.",
+      "c": "Easy long runs build aerobic base at a lower intensity than tempo work."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2779,27 +2779,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Lowering repetitions and increasing load while adjusting rest"
+        "text": "Lowering reps and raising load, with longer rest"
       },
       {
         "id": "b",
-        "text": "Removing all resistance work for a month"
+        "text": "Raising reps and lowering load, with less rest"
       },
       {
         "id": "c",
-        "text": "Performing only balance drills with zero loading"
+        "text": "Keeping reps the same and adding more sets"
       },
       {
         "id": "d",
-        "text": "Doubling volume every session indefinitely"
+        "text": "Switching to explosive reps with light loads"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Periodization shifts rep ranges and load to emphasize strength after hypertrophy.",
     "distractorExplanations": {
-      "b": "Complete training cessation reverses adaptations.",
-      "c": "Balance work complements but does not replace strength loading.",
-      "d": "Indefinite volume doubling risks overtraining."
+      "b": "Higher reps with lighter loads shift toward endurance.",
+      "c": "More sets at the same reps adds volume, not a strength emphasis.",
+      "d": "Explosive light loads train power, which usually follows a strength phase."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2812,27 +2812,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Repeated deep loaded squats through sharp pain"
+        "text": "Deep loaded squats to rebuild cartilage strength"
       },
       {
         "id": "b",
-        "text": "Cycling, swimming, and partial-range resistance with pain monitoring"
+        "text": "Cycling, swimming, and pain-monitored strength"
       },
       {
         "id": "c",
-        "text": "High-impact plyometrics on day one"
+        "text": "Running on soft surfaces to reduce joint load"
       },
       {
         "id": "d",
-        "text": "Complete immobilization for years"
+        "text": "Rest until symptoms fully resolve, then train"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Low-impact cardio and controlled resistance can maintain function in OA when monitored.",
     "distractorExplanations": {
-      "a": "Painful deep loading may worsen symptoms.",
-      "c": "Plyometrics are usually progressed later if appropriate.",
-      "d": "Immobilization reduces strength and function."
+      "a": "Deep loaded squats can aggravate an arthritic knee, and loading does not rebuild cartilage.",
+      "c": "Running is still high impact, even on soft surfaces.",
+      "d": "Rest leads to deconditioning; appropriate activity helps OA symptoms."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2845,27 +2845,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Back-to-back maximal deadlift testing"
+        "text": "A heavy upper-body session to rest the legs"
       },
       {
         "id": "b",
-        "text": "No movement for two weeks"
+        "text": "Complete rest with no movement for two days"
       },
       {
         "id": "c",
-        "text": "Light walking or mobility work rather than another maximal squat day"
+        "text": "Light walking or mobility work at low effort"
       },
       {
         "id": "d",
-        "text": "Only saunas with zero hydration"
+        "text": "Moderate squats to flush out the soreness"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Light activity promotes recovery without repeating maximal neuromuscular stress.",
     "distractorExplanations": {
-      "a": "Repeated max testing impairs recovery.",
-      "b": "Some movement aids recovery.",
-      "d": "Hydration remains important."
+      "a": "A heavy session is not recovery, even for different muscles.",
+      "b": "Complete inactivity is not needed after a normal hard session.",
+      "d": "More squatting adds stress to the same tired muscles."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2878,15 +2878,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Ankle dorsiflexion requirements entirely"
+        "text": "Grip strength needed to hold the bar"
       },
       {
         "id": "b",
-        "text": "Need for any warm-up sets"
+        "text": "Knee flexion at the start of the pull"
       },
       {
         "id": "c",
-        "text": "Requirement for a neutral grip"
+        "text": "Hip hinge range at the top of the lift"
       },
       {
         "id": "d",
@@ -2896,9 +2896,9 @@
     "correctOptionId": "d",
     "explanation": "Hip hinge patterns distribute load to hips and hamstrings rather than rounding the lumbar spine.",
     "distractorExplanations": {
-      "a": "Ankle mobility may still matter for setup.",
-      "b": "Warm-up sets remain good practice.",
-      "c": "Grip style is a separate coaching choice."
+      "a": "Grip is trained separately; the hinge does not affect grip.",
+      "b": "Some knee flexion is part of a correct conventional setup.",
+      "c": "The hinge is a movement pattern, not something to reduce at lockout."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2911,27 +2911,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Lower-body strength, aerobic base, and recovery between hard sessions"
+        "text": "Leg strength, aerobic base, and recovery days"
       },
       {
         "id": "b",
-        "text": "Only bench press with no walking preparation"
+        "text": "Upper-body strength and short sprint intervals"
       },
       {
         "id": "c",
-        "text": "Two maximal leg days back-to-back every week without rest"
+        "text": "Maximal leg strength with little aerobic work"
       },
       {
         "id": "d",
-        "text": "Eliminating all protein intake"
+        "text": "Long daily hikes with no rest days scheduled"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Hiking demands endurance, leg strength, and managed fatigue across sessions.",
     "distractorExplanations": {
-      "b": "Upper-only training neglects hiking demands.",
-      "c": "Back-to-back max leg days hinder recovery.",
-      "d": "Protein supports repair during training blocks."
+      "b": "Upper-body strength and sprints do not match hiking demands.",
+      "c": "Hiking needs endurance as well as strength.",
+      "d": "Daily long hikes without rest risk overuse and fatigue before the trip."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2944,27 +2944,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Repeat the same maximal eccentric volume the next day"
+        "text": "Repeat the session to speed up the adaptation"
       },
       {
         "id": "b",
-        "text": "Reduce volume/intensity, prioritize recovery, and avoid diagnosing a specific injury"
+        "text": "Reduce volume and prioritize recovery"
       },
       {
         "id": "c",
-        "text": "Tell the client they tore every muscle fiber definitively"
+        "text": "Switch to heavy concentric-only lifting"
       },
       {
         "id": "d",
-        "text": "Stop all future training permanently"
+        "text": "Tell the client it is a muscle strain"
       }
     ],
     "correctOptionId": "b",
     "explanation": "DOMS is common after novel eccentric stress; modify load and refer if pain is joint-level or persistent.",
     "distractorExplanations": {
-      "a": "Repeating max eccentric load worsens soreness risk.",
-      "c": "Definitive injury diagnosis is medical.",
-      "d": "Training can resume progressively after recovery."
+      "a": "Repeating the same eccentric load on sore muscles delays recovery.",
+      "c": "Heavy loading of sore muscles is not recovery.",
+      "d": "Trainers do not diagnose injuries; DOMS is expected after new eccentric work."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2977,27 +2977,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Lengthens while generating tension"
+        "text": "Lengthens while producing tension"
       },
       {
         "id": "b",
-        "text": "Produces no tension"
+        "text": "Holds its length while producing tension"
       },
       {
         "id": "c",
-        "text": "Only stabilizes the ankle"
+        "text": "Relaxes while the triceps pulls"
       },
       {
         "id": "d",
-        "text": "Shortens while generating tension to flex the elbow"
+        "text": "Shortens while producing tension"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Concentric actions shorten the muscle while it develops force.",
     "distractorExplanations": {
-      "a": "Lengthening under tension is eccentric.",
-      "b": "Active contraction produces tension.",
-      "c": "Ankle stability is unrelated to elbow flexion."
+      "a": "Lengthening under tension is an eccentric action.",
+      "b": "Constant length under tension is isometric.",
+      "c": "The biceps is the agonist here; it does not relax during the lift."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3010,27 +3010,27 @@
     "options": [
       {
         "id": "a",
-        "text": "An eccentric action as the shoulders move into horizontal abduction"
+        "text": "An eccentric action as the chest lowers"
       },
       {
         "id": "b",
-        "text": "An isometric hold with zero tension"
+        "text": "A concentric action as the chest lowers"
       },
       {
         "id": "c",
-        "text": "Only concentric shortening"
+        "text": "An isometric action at the bottom only"
       },
       {
         "id": "d",
-        "text": "An action in the transverse plane at the knee"
+        "text": "No action; the triceps controls the descent"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Lowering lengthens the pecs under load (eccentric) as the arms move away from the midline.",
     "distractorExplanations": {
-      "b": "Lowering involves active tension.",
-      "c": "Eccentric, not concentric, dominates the descent.",
-      "d": "Knee transverse actions are unrelated."
+      "b": "Concentric means shortening, which happens while pushing up.",
+      "c": "The pecs work through the whole descent, not only at the bottom.",
+      "d": "The pecs control the descent together with the triceps and anterior deltoid."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3043,27 +3043,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Random regardless of exercise choice"
+        "text": "Adaptations continue at the same rate indefinitely"
       },
       {
         "id": "b",
-        "text": "Specific to the imposed mode, intensity, and movement demands"
+        "text": "Adaptations match the specific demands imposed"
       },
       {
         "id": "c",
-        "text": "Identical for every energy system"
+        "text": "Adaptations are reversed when training stops"
       },
       {
         "id": "d",
-        "text": "Unrelated to movement velocity"
+        "text": "Adaptations differ between individual clients"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Specific Adaptations to Imposed Demands: the body adapts to the stress applied.",
     "distractorExplanations": {
-      "a": "Random training yields unfocused adaptations.",
-      "c": "Energy systems respond to specific demands.",
-      "d": "Velocity is part of imposed demand."
+      "a": "Adaptation slows as clients get fitter; this is not SAID.",
+      "c": "Losing gains after stopping is the reversibility principle.",
+      "d": "Individual differences are a separate principle."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3109,27 +3109,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Aerobic oxidative phosphorylation"
+        "text": "Aerobic metabolism of carbohydrate"
       },
       {
         "id": "b",
-        "text": "Protein catabolism as the main fuel"
+        "text": "Anaerobic glycolysis producing lactate"
       },
       {
         "id": "c",
-        "text": "Digestion of dietary fiber"
+        "text": "Oxidation of fatty acids"
       },
       {
         "id": "d",
-        "text": "The ATP–phosphocreatine (phosphagen) system"
+        "text": "The ATP–PC (phosphagen) system"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Very short maximal efforts use stored phosphagen before glycolysis dominates.",
     "distractorExplanations": {
-      "a": "Oxidative metabolism dominates longer efforts.",
-      "b": "Protein is not primary sprint fuel.",
-      "c": "Fiber is not oxidized for sprint ATP."
+      "a": "Aerobic metabolism is too slow for a 6-second maximal sprint.",
+      "b": "Glycolysis grows after several seconds but does not dominate a 6-second sprint.",
+      "c": "Fat oxidation is the slowest energy pathway."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3175,27 +3175,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Permanent reduction in blood volume"
+        "text": "Lower heart rate allowing longer filling time"
       },
       {
         "id": "b",
-        "text": "Greater venous return and stronger cardiac contraction"
+        "text": "Greater venous return and stronger contraction"
       },
       {
         "id": "c",
-        "text": "Complete cessation of sympathetic activity"
+        "text": "Reduced blood volume from sweating"
       },
       {
         "id": "d",
-        "text": "Elimination of heart rate increase"
+        "text": "Increased peripheral vascular resistance"
       }
     ],
     "correctOptionId": "b",
     "explanation": "The Frank-Starling mechanism and contractility raise stroke volume during exercise.",
     "distractorExplanations": {
-      "a": "Blood volume does not permanently drop to raise SV.",
-      "c": "Sympathetic activity supports cardiac output.",
-      "d": "Heart rate still rises with intensity."
+      "a": "Heart rate rises during exercise, so filling time shortens.",
+      "c": "Sweat loss reduces blood volume and tends to lower stroke volume.",
+      "d": "Resistance in working muscle falls during exercise; higher resistance would reduce stroke volume."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3208,27 +3208,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Slow oxidative profile with high fatigue resistance"
+        "text": "Slow contraction speed and high oxidative capacity"
       },
       {
         "id": "b",
-        "text": "Non-contractile connective tissue"
+        "text": "Moderate speed with both oxidative and glycolytic use"
       },
       {
         "id": "c",
-        "text": "High contraction velocity and force with rapid fatigue"
+        "text": "Fast contraction and high force, with rapid fatigue"
       },
       {
         "id": "d",
-        "text": "Exclusive use during marathon pacing"
+        "text": "Recruitment first during low-intensity activity"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Type IIx fibers produce high power but fatigue quickly.",
     "distractorExplanations": {
-      "a": "Slow oxidative describes Type I.",
-      "b": "Fibers are contractile cells.",
-      "d": "Marathons rely more on Type I and IIa."
+      "a": "Slow, oxidative fibers are Type I.",
+      "b": "Mixed oxidative-glycolytic fibers are Type IIa.",
+      "d": "Low-intensity work recruits Type I fibers first."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3241,27 +3241,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Universal vasoconstriction in all tissues"
+        "text": "Increased heart rate alone with no change in vessels"
       },
       {
         "id": "b",
-        "text": "Stopping cardiac output entirely"
+        "text": "Constriction of arteries supplying the working muscle"
       },
       {
         "id": "c",
-        "text": "Only increasing blood viscosity"
+        "text": "Reduced cardiac output sent to the skeletal muscles"
       },
       {
         "id": "d",
-        "text": "Local metabolite-mediated vasodilation and redirected cardiac output"
+        "text": "Local vasodilation and redirected cardiac output"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Working muscle vasodilates while flow is shunted from less active tissues.",
     "distractorExplanations": {
-      "a": "Vasodilation, not universal constriction, occurs in muscle.",
-      "b": "Cardiac output rises, not stops.",
-      "c": "Viscosity is not the primary mechanism."
+      "a": "Heart rate helps, but local vessel changes are key to redirecting flow.",
+      "b": "Working muscle vessels dilate; constriction would reduce flow.",
+      "c": "Cardiac output rises during exercise, and more of it goes to muscle."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3274,27 +3274,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Unaccustomed eccentric muscle damage and inflammation"
+        "text": "Unaccustomed eccentric muscle damage"
       },
       {
         "id": "b",
-        "text": "Immediate ATP–PC depletion"
+        "text": "Lactic acid building up in the muscles"
       },
       {
         "id": "c",
-        "text": "Static stretching performed once"
+        "text": "Dehydration during the downhill run"
       },
       {
         "id": "d",
-        "text": "Normal concentric-only adaptation with zero microtrauma"
+        "text": "Depleted muscle glycogen stores"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Eccentric emphasis causes microdamage that peaks soreness around 24–72 hours.",
     "distractorExplanations": {
-      "b": "PC depletion resolves quickly.",
-      "c": "One stretch does not explain DOMS alone.",
-      "d": "Eccentric novelty is the classic DOMS trigger."
+      "b": "Lactate clears within about an hour and does not cause soreness days later.",
+      "c": "Dehydration does not explain soreness peaking 24–72 hours later.",
+      "d": "Low glycogen causes fatigue, not delayed soreness."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3307,7 +3307,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Lower blood pressure to unsafe hypotension every time"
+        "text": "Lower blood pressure by reducing venous return"
       },
       {
         "id": "b",
@@ -3315,19 +3315,19 @@
       },
       {
         "id": "c",
-        "text": "Eliminate core bracing entirely"
+        "text": "Reduce spinal stability during the heavy lift"
       },
       {
         "id": "d",
-        "text": "Stop the heart permanently"
+        "text": "Increase oxygen delivery to the working muscles"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Valsalva increases IAP and can spike BP; use caution with hypertensive clients.",
     "distractorExplanations": {
-      "a": "Valsalva typically raises, not lowers, BP.",
-      "c": "Breath-holding is a bracing strategy.",
-      "d": "Brief Valsalva does not stop the heart."
+      "a": "Blood pressure rises during the strain; it can drop after release.",
+      "c": "Breath-holding increases trunk stiffness and spinal stability.",
+      "d": "Breath-holding does not improve oxygen delivery."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3340,27 +3340,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Double maximal heart rate predictably"
+        "text": "Raise maximal heart rate, so zones are set too low"
       },
       {
         "id": "b",
-        "text": "Eliminate all need for warm-up"
+        "text": "Increase blood pressure during resistance training"
       },
       {
         "id": "c",
-        "text": "Blunt heart rate response, making HR zones less reliable"
+        "text": "Blunt the heart rate response, so zones are unreliable"
       },
       {
         "id": "d",
-        "text": "Guarantee higher VO2max"
+        "text": "Cause heart rate to spike during the warm-up only"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Beta-blockers limit HR elevation; RPE and workload may track intensity better.",
     "distractorExplanations": {
-      "a": "Beta-blockers lower, not double, HR response.",
-      "b": "Warm-up remains important.",
-      "d": "VO2max is not guaranteed to rise."
+      "a": "Beta-blockers lower, not raise, maximal and exercise heart rate.",
+      "b": "Beta-blockers usually lower blood pressure.",
+      "d": "They blunt heart rate throughout exercise, not just the warm-up."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3373,27 +3373,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediate strength PRs every session"
+        "text": "Rapid strength gains followed by a short plateau"
       },
       {
         "id": "b",
-        "text": "Complete immunity to infection guaranteed"
+        "text": "Muscle soreness lasting 24–72 hours after training"
       },
       {
         "id": "c",
-        "text": "Only improved appetite with no fatigue"
+        "text": "Increased appetite during high-volume weeks"
       },
       {
         "id": "d",
-        "text": "Persistent fatigue, performance decline, mood disturbance, and disrupted sleep"
+        "text": "Persistent fatigue, falling performance, poor sleep"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Non-functional overreaching progresses to performance loss and systemic symptoms.",
     "distractorExplanations": {
-      "a": "PRs every session contradict overtraining.",
-      "b": "Immunity often worsens with excess stress.",
-      "c": "Appetite and sleep often worsen."
+      "a": "Gains followed by a plateau are normal training responses.",
+      "b": "Short-term DOMS is normal after new or hard sessions.",
+      "c": "More appetite during heavy training is expected, not a sign of overtraining."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3406,27 +3406,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Using eccentric pre-stretch to store elastic energy and potentiate concentric output"
+        "text": "Storing elastic energy in a quick eccentric pre-stretch"
       },
       {
         "id": "b",
-        "text": "Eliminating all muscle activation before takeoff"
+        "text": "Holding a long isometric pause before the takeoff"
       },
       {
         "id": "c",
-        "text": "Preventing any ankle movement"
+        "text": "Using a slow eccentric phase to recruit more fibers"
       },
       {
         "id": "d",
-        "text": "Relying solely on passive ligament stretch without muscle contribution"
+        "text": "Relying on passive ligament stretch for rebound"
       }
     ],
     "correctOptionId": "a",
     "explanation": "A rapid eccentric phase followed by concentric action improves power via elastic and neural mechanisms.",
     "distractorExplanations": {
-      "b": "Muscle activation is required.",
-      "c": "Ankle motion contributes to jumps.",
-      "d": "Ligaments alone cannot produce jump power."
+      "b": "A long pause lets stored elastic energy dissipate.",
+      "c": "The cycle depends on a fast eccentric phase, not a slow one.",
+      "d": "The effect comes from muscle and tendon, not ligaments."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3439,27 +3439,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediate return to resting metabolism with zero elevation"
+        "text": "The oxygen deficit at the start of exercise"
       },
       {
         "id": "b",
-        "text": "Excess post-exercise oxygen consumption (EPOC) during recovery"
+        "text": "Excess post-exercise oxygen consumption (EPOC)"
       },
       {
         "id": "c",
-        "text": "Only digestion of dietary fat during the set"
+        "text": "The ventilatory threshold during the session"
       },
       {
         "id": "d",
-        "text": "Permanent reduction in lung capacity"
+        "text": "Maximal oxygen uptake reached during the session"
       }
     ],
     "correctOptionId": "b",
     "explanation": "EPOC repays oxygen debt and supports recovery processes after hard work.",
     "distractorExplanations": {
-      "a": "Metabolism stays elevated temporarily.",
-      "c": "In-set fuel use is separate from post-exercise EPOC.",
-      "d": "Lung capacity is not permanently reduced."
+      "a": "The oxygen deficit occurs at the start of exercise, not afterward.",
+      "c": "Ventilatory threshold is an intensity marker during exercise.",
+      "d": "VO2max is peak uptake during exercise, not recovery consumption."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3472,27 +3472,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Lectures that lack of time is just an excuse"
+        "text": "Suggest early-morning sessions to fit the schedule"
       },
       {
         "id": "b",
-        "text": "Writes a maximal six-day program without discussion"
+        "text": "Explain the health risks of staying inactive"
       },
       {
         "id": "c",
-        "text": "Threatens to cancel membership immediately"
+        "text": "Design a short program the client can start now"
       },
       {
         "id": "d",
-        "text": "Reflects the conflict and explores what small change might look like"
+        "text": "Reflect the conflict and explore small changes"
       }
     ],
     "correctOptionId": "d",
     "explanation": "MI explores ambivalence collaboratively before prescribing action steps.",
     "distractorExplanations": {
-      "a": "Lecturing reduces autonomy.",
-      "b": "Programs should fit client context.",
-      "c": "Threats harm rapport and adherence."
+      "a": "Offering solutions first skips exploring the client's ambivalence.",
+      "b": "Leading with risks can increase resistance in MI.",
+      "c": "Prescribing before exploring ambivalence is not the MI first step."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3505,27 +3505,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Refer to the signed agreement and clarify paid versus complimentary boundaries"
+        "text": "Refer to the agreement and clarify paid boundaries"
       },
       {
         "id": "b",
-        "text": "Provide unlimited free plans to avoid conflict"
+        "text": "Provide a few free plans to keep the relationship"
       },
       {
         "id": "c",
-        "text": "Share other clients' private programs as examples"
+        "text": "Stop replying to messages without any explanation"
       },
       {
         "id": "d",
-        "text": "Ignore all future communication permanently without explanation"
+        "text": "Offer a discount only if the client posts a review"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Clear business boundaries protect scope, time, and confidentiality.",
     "distractorExplanations": {
-      "b": "Unlimited free work is unsustainable.",
-      "c": "Sharing others' plans violates confidentiality.",
-      "d": "Professional closure can be courteous and clear."
+      "b": "Ad hoc free work blurs boundaries and sets expectations.",
+      "c": "Ignoring the client is unprofessional; boundaries should be stated clearly.",
+      "d": "Trading discounts for reviews can be deceptive marketing."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3538,27 +3538,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Exercise more sometimes"
+        "text": "Drink less soda and more water starting next month"
       },
       {
         "id": "b",
-        "text": "Replace one 20-oz soda with water on weekdays for the next four weeks"
+        "text": "Swap one 20-oz soda for water on weekdays for 4 weeks"
       },
       {
         "id": "c",
-        "text": "Be healthier eventually"
+        "text": "Cut out soda completely and never drink it again"
       },
       {
         "id": "d",
-        "text": "Never drink anything again starting today"
+        "text": "Try to reduce soda intake as much as possible"
       }
     ],
     "correctOptionId": "b",
     "explanation": "SMART goals specify behavior, measure, timeline, and realistic scope.",
     "distractorExplanations": {
-      "a": "\"Sometimes\" is not measurable.",
-      "c": "\"Eventually\" lacks a timeline.",
-      "d": "All-or-nothing bans often fail."
+      "a": "This lacks a measurable amount and a clear timeline.",
+      "c": "An all-or-nothing goal is rarely realistic for a first step.",
+      "d": "This is vague and has no measure or deadline."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3567,31 +3567,31 @@
     "id": "acsm-cpt-readiness-check-behavior-019",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "behavior",
-    "prompt": "When discussing dietary supplements, a CPT appropriately:",
+    "prompt": "Which strategy best helps a client prevent a lapse from becoming a relapse?",
     "options": [
       {
         "id": "a",
-        "text": "Prescribes megadoses to treat disease"
+        "text": "Removing all flexibility from the weekly schedule"
       },
       {
         "id": "b",
-        "text": "Replaces prescribed medication with herbs"
+        "text": "Restarting at full volume after any missed week"
       },
       {
         "id": "c",
-        "text": "Shares general evidence cautiously and refers clinical questions to qualified providers"
+        "text": "Planning ahead for high-risk times such as travel"
       },
       {
         "id": "d",
-        "text": "Guarantees cure of diabetes with powders"
+        "text": "Setting stricter goals after each missed session"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Supplement talk stays educational; disease treatment belongs to licensed clinicians.",
+    "explanation": "Relapse prevention identifies high-risk situations such as travel, illness, or schedule changes and plans alternatives in advance, so one missed session does not end the habit.",
     "distractorExplanations": {
-      "a": "Disease treatment exceeds scope.",
-      "b": "Medication changes require physicians.",
-      "d": "Cures cannot be guaranteed."
+      "a": "Rigid schedules break easily; relapse prevention builds in flexible options.",
+      "b": "Jumping back to full volume after a lapse raises soreness and dropout risk.",
+      "d": "Stricter goals after a lapse increase pressure and the chance of quitting."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3604,27 +3604,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Keep silent to preserve gym revenue"
+        "text": "Speak with the parents before taking any action"
       },
       {
         "id": "b",
-        "text": "Post details on social media for awareness"
+        "text": "Document concerns and wait for more evidence"
       },
       {
         "id": "c",
-        "text": "Confront the alleged abuser alone as investigator"
+        "text": "Report only if the minor asks for help directly"
       },
       {
         "id": "d",
-        "text": "Follow state mandated-reporter laws and facility reporting policies"
+        "text": "Follow state mandated-reporter laws and policy"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Mandatory reporting laws may require disclosure to protective services.",
     "distractorExplanations": {
-      "a": "Revenue does not override child safety.",
-      "b": "Public posts breach confidentiality.",
-      "c": "Investigation belongs to authorities."
+      "a": "Confronting parents can put the child at further risk.",
+      "b": "Reporting laws require acting on reasonable suspicion, not proof.",
+      "c": "Children often do not disclose; the duty applies on reasonable suspicion."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3637,27 +3637,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Listen supportively, avoid diagnosing an eating disorder, and refer to qualified professionals"
+        "text": "Listen, avoid diagnosing, and refer to a professional"
       },
       {
         "id": "b",
-        "text": "Prescribe a 500-kcal daily diet"
+        "text": "Build a structured meal plan to reduce binge triggers"
       },
       {
         "id": "c",
-        "text": "Shame the client into stopping immediately"
+        "text": "Suggest skipping meals after a binge to balance calories"
       },
       {
         "id": "d",
-        "text": "Claim to treat bulimia independently"
+        "text": "Increase training volume to offset the extra calories"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Disordered eating signs warrant referral; CPTs do not provide eating-disorder treatment.",
     "distractorExplanations": {
-      "b": "Very low calories can be harmful.",
-      "c": "Shame reduces help-seeking.",
-      "d": "ED treatment requires specialized care."
+      "b": "Meal plans for disordered eating need an RD or clinician.",
+      "c": "Compensatory restriction can reinforce the binge cycle.",
+      "d": "Compensatory exercise can worsen disordered eating."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3670,27 +3670,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Restricting all fluids to improve heat tolerance"
+        "text": "Drink only when thirsty, even in hot weather"
       },
       {
         "id": "b",
-        "text": "Starting euhydrated and replacing fluids based on sweat losses"
+        "text": "Start well hydrated and replace sweat losses"
       },
       {
         "id": "c",
-        "text": "Only drinking after syncope occurs"
+        "text": "Drink a liter of water just before starting"
       },
       {
         "id": "d",
-        "text": "Replacing water with high-dose caffeine"
+        "text": "Use sports drinks only, with no plain water"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Pre-hydration and ongoing replacement support performance and thermoregulation.",
     "distractorExplanations": {
-      "a": "Fluid restriction increases heat illness risk.",
-      "c": "Drinking only after collapse is unsafe.",
-      "d": "Excess caffeine can dehydrate."
+      "a": "Thirst can lag behind fluid needs during long sessions in heat.",
+      "c": "A large bolus just before exercise is poorly absorbed and uncomfortable.",
+      "d": "Water is fine for most sessions; sports drinks are optional."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3703,27 +3703,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Create a 800-kcal plan to accelerate results"
+        "text": "Offer a moderate deficit plan with weekly check-ins"
       },
       {
         "id": "b",
-        "text": "Compete with the client on lowest intake"
+        "text": "Agree only if the client's physician signs off first"
       },
       {
         "id": "c",
-        "text": "Decline to prescribe restrictive diets and refer to an RD or mental health provider"
+        "text": "Decline restrictive plans and refer to an RD or therapist"
       },
       {
         "id": "d",
-        "text": "Ignore the history if weight loss is requested"
+        "text": "Focus on exercise and let the client manage their diet"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Restrictive meal plans for ED history require specialized interdisciplinary care.",
     "distractorExplanations": {
-      "a": "Very low calories are dangerous with ED history.",
-      "b": "Competition reinforces harmful behavior.",
-      "d": "History matters for safety."
+      "a": "Any prescribed deficit is risky with an eating disorder history and outside scope.",
+      "b": "Physician sign-off does not bring clinical diet design into CPT scope.",
+      "d": "Staying silent misses a chance to refer a client with a known risk."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3736,27 +3736,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Setting only unrealistic long-term goals"
+        "text": "Long-term goals reviewed once every six months"
       },
       {
         "id": "b",
-        "text": "Punishing every missed session publicly"
+        "text": "Comparing progress with more experienced clients"
       },
       {
         "id": "c",
-        "text": "Avoiding all feedback"
+        "text": "Frequent changes of program to keep things new"
       },
       {
         "id": "d",
-        "text": "Achievable short-term goals and self-monitoring of progress"
+        "text": "Achievable short-term goals and self-monitoring"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Mastery experiences and tracking reinforce belief in capability.",
     "distractorExplanations": {
-      "a": "Unrealistic goals undermine confidence.",
-      "b": "Public punishment harms adherence.",
-      "c": "Feedback guides improvement."
+      "a": "Rare reviews give few chances for mastery experiences.",
+      "b": "Comparison with advanced exercisers can lower self-efficacy.",
+      "c": "Frequent changes prevent the client from mastering skills."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3769,27 +3769,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Exercises, loads, client responses, and any adverse events"
+        "text": "Exercises, loads, client responses, adverse events"
       },
       {
         "id": "b",
-        "text": "Only the trainer's personal workout"
+        "text": "The client's full medical history from their doctor"
       },
       {
         "id": "c",
-        "text": "Other clients' medical diagnoses"
+        "text": "Only attendance and payment for each session"
       },
       {
         "id": "d",
-        "text": "Guaranteed future performance outcomes"
+        "text": "Only the exercises completed in that session"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Documentation supports continuity, safety, and professional standards.",
     "distractorExplanations": {
-      "b": "Trainer workouts are irrelevant to client records.",
-      "c": "Other clients' data is confidential.",
-      "d": "Outcomes cannot be guaranteed in notes."
+      "b": "Full medical records are not routine session notes.",
+      "c": "Attendance and billing leave out safety and progression details.",
+      "d": "Exercises without loads and responses do not support safety or continuity."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3802,27 +3802,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Proceed with heavy deadlifts as planned"
+        "text": "Train at a lighter intensity and monitor closely"
       },
       {
         "id": "b",
-        "text": "Postpone the session and address immediate safety concerns"
+        "text": "Postpone the session and address safety concerns"
       },
       {
         "id": "c",
-        "text": "Post video of the client online"
+        "text": "Continue with machines only to reduce fall risk"
       },
       {
         "id": "d",
-        "text": "Provide more alcohol to calm nerves"
+        "text": "Ask the client to hydrate and then begin training"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Impairment creates safety and liability risks; training should not proceed.",
     "distractorExplanations": {
-      "a": "Heavy lifts while impaired are dangerous.",
-      "c": "Posting violates privacy.",
-      "d": "Providing alcohol is unethical and unsafe."
+      "a": "Training an impaired client at any intensity is unsafe.",
+      "c": "Machines do not remove the risks of impairment.",
+      "d": "Water does not reverse alcohol impairment."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3835,27 +3835,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Assuming one diet fits all cultural backgrounds"
+        "text": "Using the same program template for every client"
       },
       {
         "id": "b",
-        "text": "Refusing to modify exercises for religious dress"
+        "text": "Avoiding discussion of culture to stay neutral"
       },
       {
         "id": "c",
-        "text": "Respecting diverse values, communication styles, and health beliefs when coaching"
+        "text": "Respecting values and adapting communication"
       },
       {
         "id": "d",
-        "text": "Using stereotypes to assign goals"
+        "text": "Assigning goals based on a client's background"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Effective coaching adapts communication and plans to client context.",
     "distractorExplanations": {
-      "a": "Diets should be individualized.",
-      "b": "Modifications can honor dress and beliefs.",
-      "d": "Stereotypes harm rapport and outcomes."
+      "a": "One template ignores differences in values and needs.",
+      "b": "Avoiding the topic can miss needs such as dress or dietary practices.",
+      "d": "Assigning goals by background relies on stereotypes."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3868,27 +3868,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Has no intention to change for six months"
+        "text": "Is thinking about change within the next 6 months"
       },
       {
         "id": "b",
-        "text": "Has maintained change for five years"
+        "text": "Has been exercising regularly for over 6 months"
       },
       {
         "id": "c",
-        "text": "Denies any need for change permanently"
+        "text": "Began exercising regularly within the last 6 months"
       },
       {
         "id": "d",
-        "text": "Intends to act soon and may already be taking small steps"
+        "text": "Plans to start within 30 days and takes small steps"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Preparation sits between contemplation and action with near-term intent.",
     "distractorExplanations": {
-      "a": "Six-month denial describes precontemplation.",
-      "b": "Five-year maintenance is a later stage.",
-      "c": "Permanent denial is precontemplation."
+      "a": "Thinking about change within six months is contemplation.",
+      "b": "Six or more months of regular exercise is maintenance.",
+      "c": "Recent regular exercise is the action stage."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3901,27 +3901,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Respond briefly with factual, non-confidential information if responding at all"
+        "text": "Respond briefly with facts and no client details"
       },
       {
         "id": "b",
-        "text": "Share private health details to win the argument"
+        "text": "Post the client's attendance record to correct it"
       },
       {
         "id": "c",
-        "text": "Ignore all reviews and never set boundaries"
+        "text": "Ask other clients to post reviews to outweigh it"
       },
       {
         "id": "d",
-        "text": "Threaten legal action in every public reply"
+        "text": "Reply in detail to explain the client's situation"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Professional responses protect confidentiality while correcting clear errors when appropriate.",
     "distractorExplanations": {
-      "b": "Health details require consent.",
-      "c": "Some response policies are reasonable.",
-      "d": "Threats may escalate conflict unnecessarily."
+      "b": "Sharing client records breaches confidentiality.",
+      "c": "Soliciting reviews to bury criticism is deceptive.",
+      "d": "Detailed replies risk exposing private client information."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3934,27 +3934,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Guaranteed elimination of all barriers"
+        "text": "A replacement for goal setting and self-monitoring"
       },
       {
         "id": "b",
-        "text": "Accountability, encouragement, and shared norms for healthy behavior"
+        "text": "Accountability, encouragement, and shared norms"
       },
       {
         "id": "c",
-        "text": "Permission to skip all sessions without consequence"
+        "text": "Competition that ranks clients by their results"
       },
       {
         "id": "d",
-        "text": "Replacement for medical care"
+        "text": "Advice from friends in place of professional input"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Support networks reinforce consistency and positive identity around activity.",
     "distractorExplanations": {
-      "a": "Barriers may remain; support helps cope.",
-      "c": "Skipping all sessions undermines goals.",
-      "d": "Medical issues still need clinicians."
+      "a": "Support works alongside goals and monitoring, not instead of them.",
+      "c": "Ranking can discourage beginners; it is not the main support mechanism.",
+      "d": "Friends' advice does not replace professional guidance."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."

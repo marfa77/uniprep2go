@@ -7,11 +7,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Equity voting rights"
+        "text": "Lower credit risk and usually higher yields"
       },
       {
         "id": "b",
-        "text": "Higher credit risk and higher yields"
+        "text": "Higher credit risk and usually higher yields"
       },
       {
         "id": "c",
@@ -19,15 +19,15 @@
       },
       {
         "id": "d",
-        "text": "No interest-rate risk"
+        "text": "Equal credit risk but longer maturities"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Higher ratings imply lower credit risk and typically lower yield spreads.",
     "distractorExplanations": {
-      "a": "Bonds don't grant common voting rights.",
-      "b": "Opposite of IG vs HY.",
-      "d": "Duration/rate risk remains."
+      "a": "Investors accept lower yields for lower credit risk, not higher.",
+      "b": "Higher credit risk and yields describe junk (high-yield) bonds.",
+      "d": "Ratings reflect different credit risk; maturity is not the distinction."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -40,27 +40,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Insurance premiums paid by the holder"
+        "text": "Semiannual coupon payments at a fixed rate"
       },
       {
         "id": "b",
-        "text": "Stock split premiums"
+        "text": "Interest paid in a lump sum each year"
       },
       {
         "id": "c",
-        "text": "Quarterly dividends"
+        "text": "Price gains from falling rates only"
       },
       {
         "id": "d",
-        "text": "Accretion/purchase discount to face value"
+        "text": "Accretion from discount to face value"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Zeros pay no periodic coupons; return is the discount to par.",
     "distractorExplanations": {
-      "a": "Not applicable.",
-      "b": "Equity event.",
-      "c": "Bonds don't pay stock dividends."
+      "a": "Zero-coupon bonds pay no periodic coupons.",
+      "b": "Zeros make no annual payments; all return comes at maturity or sale.",
+      "c": "Rate changes affect price, but the built-in return is the accreting discount."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -73,15 +73,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Municipal general obligation taxes"
+        "text": "Mortgage loans insured by federal agencies"
       },
       {
         "id": "b",
-        "text": "Treasury-only portfolios"
+        "text": "Construction loans made to homebuilders"
       },
       {
         "id": "c",
-        "text": "FDIC-insured CDs"
+        "text": "Direct ownership of a single rental property"
       },
       {
         "id": "d",
@@ -91,9 +91,9 @@
     "correctOptionId": "d",
     "explanation": "REITs own/finance real estate and pass through income characteristics.",
     "distractorExplanations": {
-      "a": "Munis are different.",
-      "b": "Different asset.",
-      "c": "Bank products."
+      "a": "Agency-insured mortgages describe GNMA pass-throughs, not REITs.",
+      "b": "Some mortgage REITs lend, but REITs mainly give pooled real estate exposure.",
+      "c": "REIT holders own shares in a portfolio, not title to a property."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -106,27 +106,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Has no dividend features ever"
+        "text": "Has voting rights but is paid after common holders"
       },
       {
         "id": "b",
-        "text": "Has priority over common for dividends but usually limited/no voting"
+        "text": "Gets dividend priority over common, with limited votes"
       },
       {
         "id": "c",
-        "text": "Is identical to Treasury bills"
+        "text": "Pays variable dividends that rise with earnings"
       },
       {
         "id": "d",
-        "text": "Must convert to bonds annually"
+        "text": "Has priority over bonds in a corporate liquidation"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Preferred sits above common for dividends; voting is often limited.",
     "distractorExplanations": {
-      "a": "Dividends are a key feature.",
-      "c": "False.",
-      "d": "Not a requirement."
+      "a": "Preferred holders are paid before common and usually cannot vote.",
+      "c": "Preferred dividends are usually fixed; common dividends vary with earnings.",
+      "d": "Bondholders are paid before preferred holders in liquidation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -139,7 +139,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Physical commodities in a warehouse"
+        "text": "Long-term, investment-grade corporate notes"
       },
       {
         "id": "b",
@@ -147,19 +147,19 @@
       },
       {
         "id": "c",
-        "text": "Long-duration junk equities"
+        "text": "Short-term, high-yield corporate bonds"
       },
       {
         "id": "d",
-        "text": "30-year zero-coupon municipals"
+        "text": "Exchange-traded funds holding T-notes"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Money markets: short maturities, high credit quality.",
     "distractorExplanations": {
-      "a": "Not money markets.",
-      "c": "Opposite characteristics.",
-      "d": "Long munis aren't MM."
+      "a": "Long-term notes are capital-market instruments; money market paper matures within about a year.",
+      "c": "Money market instruments are high quality; high-yield debt is not.",
+      "d": "An ETF is a fund, not a money market instrument, and T-notes run 2–10 years."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -172,27 +172,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Guaranteed by the FDIC"
+        "text": "Interest taxed at long-term capital gain rates"
       },
       {
         "id": "b",
-        "text": "No credit risk ever"
+        "text": "Capital gains exempt from all federal taxes"
       },
       {
         "id": "c",
-        "text": "Always higher yield than corporates of equal risk"
+        "text": "Principal guaranteed by the issuing state"
       },
       {
         "id": "d",
-        "text": "Interest often exempt from federal income tax (and sometimes state)"
+        "text": "Interest often exempt from federal income tax"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Muni interest is frequently federally tax-exempt (state rules vary)",
     "distractorExplanations": {
-      "a": "Not FDIC.",
-      "b": "Credit risk exists.",
-      "c": "Taxable-equivalent yield analysis needed."
+      "a": "Taxable municipal interest is taxed as ordinary income, and most muni interest is federally exempt.",
+      "b": "Gains on municipal bonds are taxable; only the interest is usually exempt.",
+      "c": "Munis carry credit risk; states do not guarantee local issuers' principal."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -205,27 +205,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The insurance company always for market returns"
+        "text": "The insurer, through its general account"
       },
       {
         "id": "b",
-        "text": "FINRA personally"
+        "text": "The separate account's portfolio manager"
       },
       {
         "id": "c",
-        "text": "The contract owner for subaccount market performance"
+        "text": "The contract owner, through subaccounts"
       },
       {
         "id": "d",
-        "text": "The Federal Reserve"
+        "text": "The insurer for all subaccount losses"
       }
     ],
     "correctOptionId": "c",
     "explanation": "VA subaccounts expose the owner to market risk (guarantees vary by rider)",
     "distractorExplanations": {
-      "a": "Market risk sits with owner unless a guarantee applies.",
-      "b": "False.",
-      "d": "False."
+      "a": "General-account guarantees back fixed annuities, not variable subaccount returns.",
+      "b": "Managers run the subaccounts but do not absorb investment losses.",
+      "d": "The insurer bears investment risk only on fixed or guaranteed riders, not subaccount returns."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -238,27 +238,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Bond price sensitivity to interest-rate changes"
+        "text": "Bond price sensitivity to rate changes"
       },
       {
         "id": "b",
-        "text": "GDP growth next quarter precisely"
+        "text": "Time remaining until a bond matures"
       },
       {
         "id": "c",
-        "text": "A stock's P/E"
+        "text": "A stock's sensitivity to the market"
       },
       {
         "id": "d",
-        "text": "Option open interest"
+        "text": "Credit risk of a bond's issuer"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Duration approximates interest-rate price sensitivity of bonds.",
     "distractorExplanations": {
-      "b": "Macro forecast.",
-      "c": "Equity multiple.",
-      "d": "Options metric."
+      "b": "Maturity is a date; duration weights the timing of all cash flows.",
+      "c": "Sensitivity of a stock to the market is beta.",
+      "d": "Credit risk is measured by ratings and spreads, not duration."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -271,27 +271,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A municipal pre-refunding escrow"
+        "text": "A foreign share traded on its home exchange"
       },
       {
         "id": "b",
-        "text": "A money market mutual fund share class"
+        "text": "A U.S. company's shares sold to foreign buyers"
       },
       {
         "id": "c",
-        "text": "A U.S. depositary receipt for a foreign company's shares"
+        "text": "A U.S.-traded receipt for foreign company shares"
       },
       {
         "id": "d",
-        "text": "A Treasury inflation swap"
+        "text": "A fund that holds a basket of foreign stocks"
       }
     ],
     "correctOptionId": "c",
     "explanation": "ADRs facilitate U.S. trading of foreign equities.",
     "distractorExplanations": {
-      "a": "Muni structure.",
-      "b": "Too narrow/wrong.",
-      "d": "Different instrument."
+      "a": "An ADR trades in the U.S., not on the foreign home exchange.",
+      "b": "ADRs represent foreign issuers' shares, not U.S. companies'.",
+      "d": "A basket of foreign stocks is a fund, while an ADR represents one issuer."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -304,27 +304,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The issuer calling when rates fall, forcing reinvestment at lower yields"
+        "text": "Reinvestment risk if called when rates fall"
       },
       {
         "id": "b",
-        "text": "Unlimited upside exactly like common stock"
+        "text": "Default risk if called when rates rise"
       },
       {
         "id": "c",
-        "text": "No interest-rate risk"
+        "text": "Liquidity risk because they cannot be sold"
       },
       {
         "id": "d",
-        "text": "Mandatory conversion to crypto"
+        "text": "Inflation risk because coupons adjust to CPI"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Call risk: bonds called in declining-rate environments.",
     "distractorExplanations": {
-      "b": "Bond upside is capped near call/par dynamics.",
-      "c": "False.",
-      "d": "False."
+      "b": "Issuers call bonds when rates fall, not when they rise, and calling is not default.",
+      "c": "Callable bonds trade in the secondary market like other bonds.",
+      "d": "Callable bond coupons are fixed; CPI-adjusted coupons describe TIPS."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -337,27 +337,27 @@
     "options": [
       {
         "id": "a",
-        "text": "More flexible strategies, higher fees, and often accredited-investor eligibility"
+        "text": "Flexible strategies, higher fees, and investor eligibility limits"
       },
       {
         "id": "b",
-        "text": "Identical retail liquidity daily"
+        "text": "Lower fees and restrictions on leverage and short selling"
       },
       {
         "id": "c",
-        "text": "FDIC insurance"
+        "text": "Daily liquidity and SEC registration as investment companies"
       },
       {
         "id": "d",
-        "text": "No use of leverage ever by definition"
+        "text": "Open availability to retail investors with low investment minimums"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Hedge funds are less regulated in structure, often illiquid/fee-heavy, and limited to eligible investors.",
     "distractorExplanations": {
-      "b": "Liquidity often restricted.",
-      "c": "Not FDIC.",
-      "d": "Many may use leverage."
+      "b": "Hedge funds typically charge more and may use leverage and shorting freely.",
+      "c": "Hedge funds usually limit redemptions and rely on exemptions from Investment Company Act registration.",
+      "d": "Hedge funds are usually limited to accredited or qualified investors with high minimums."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "No market risk"
+        "text": "Direct voting control over each underlying stock"
       },
       {
         "id": "b",
-        "text": "FDIC insurance on equity funds"
+        "text": "Guaranteed principal backed by the fund sponsor"
       },
       {
         "id": "c",
-        "text": "Guaranteed principal"
+        "text": "Intraday trading at prices set by the market"
       },
       {
         "id": "d",
-        "text": "Professional management and diversification at relatively low minimums"
+        "text": "Professional management and diversification"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Funds pool money for diversified, managed portfolios (risk remains)",
     "distractorExplanations": {
-      "a": "Market risk remains.",
-      "b": "Equity funds aren't FDIC-insured.",
-      "c": "Not guaranteed."
+      "a": "The fund votes proxies for its holdings, not individual shareholders.",
+      "b": "Mutual funds do not guarantee principal; share values fluctuate.",
+      "c": "Mutual funds are priced once daily at NAV; intraday trading describes ETFs."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -403,11 +403,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Are always actively managed hedge funds"
+        "text": "Are priced once a day at net asset value"
       },
       {
         "id": "b",
-        "text": "Never track an index"
+        "text": "Are always actively managed by a portfolio team"
       },
       {
         "id": "c",
@@ -415,15 +415,15 @@
       },
       {
         "id": "d",
-        "text": "Cannot hold stocks"
+        "text": "Are redeemed directly with the issuing fund"
       }
     ],
     "correctOptionId": "c",
     "explanation": "ETFs trade throughout the day like stocks; many are index-based.",
     "distractorExplanations": {
-      "a": "Most are not hedge funds.",
-      "b": "Many are index trackers.",
-      "d": "They can hold equities."
+      "a": "Once-daily NAV pricing describes open-end mutual funds.",
+      "b": "Most ETFs track indexes; active ETFs exist but are not the rule.",
+      "d": "Retail investors sell ETF shares on an exchange; only authorized participants redeem with the fund."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -436,7 +436,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Credit default of municipalities"
+        "text": "Rising interest rates lowering prices"
       },
       {
         "id": "b",
@@ -444,19 +444,19 @@
       },
       {
         "id": "c",
-        "text": "Currency devaluation of bitcoin"
+        "text": "Reinvestment of coupons at lower rates"
       },
       {
         "id": "d",
-        "text": "Call risk on corporates"
+        "text": "Default by the U.S. Treasury as issuer"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Treasury Inflation-Protected Securities adjust with inflation.",
     "distractorExplanations": {
-      "a": "TIPS are Treasuries.",
-      "c": "Not their design.",
-      "d": "Different risk."
+      "a": "TIPS prices still fall when real rates rise; they do not remove interest-rate risk.",
+      "c": "Reinvestment risk still applies to TIPS coupons.",
+      "d": "Default risk on Treasuries is minimal; TIPS are designed for inflation."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -473,23 +473,23 @@
       },
       {
         "id": "b",
-        "text": "Force dividends to increase"
+        "text": "Sell the stock at the strike before expiration"
       },
       {
         "id": "c",
-        "text": "Avoid all losses"
+        "text": "Buy the stock at the strike only at expiration"
       },
       {
         "id": "d",
-        "text": "Sell the stock at any time"
+        "text": "Sell the stock at market price at expiration"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Calls give the right to buy at the strike; American style allows exercise before expiry.",
     "distractorExplanations": {
-      "b": "No.",
-      "c": "Options can expire worthless.",
-      "d": "That is a put right."
+      "b": "The right to sell at the strike belongs to a put buyer.",
+      "c": "Exercise only at expiration describes European-style options.",
+      "d": "A call gives a right to buy at the strike, not to sell at market."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -498,31 +498,31 @@
     "id": "series-6-readiness-check-suitability-001",
     "examSlug": "series-6-readiness-check",
     "topicId": "suitability",
-    "prompt": "ERISA fiduciary standards (for plan fiduciaries) emphasize",
+    "prompt": "Regulation Best Interest is built on which four component obligations?",
     "options": [
       {
         "id": "a",
-        "text": "Maximizing revenue-sharing without disclosure"
+        "text": "Disclosure, suitability, pricing, and supervision"
       },
       {
         "id": "b",
-        "text": "Acting solely in the interest of plan participants/beneficiaries"
+        "text": "Disclosure, care, conflict of interest, compliance"
       },
       {
         "id": "c",
-        "text": "Ignoring diversification"
+        "text": "Know your customer, care, fair pricing, and loyalty"
       },
       {
         "id": "d",
-        "text": "Selecting the highest-cost share class deliberately without analysis"
+        "text": "Disclosure, best execution, suitability, and training"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "ERISA fiduciaries must act for participants with prudence/loyalty.",
+    "explanation": "Reg BI requires broker-dealers to meet a disclosure obligation, a care obligation, a conflict-of-interest obligation, and a compliance obligation when recommending securities to retail customers.",
     "distractorExplanations": {
-      "a": "Conflicts problematic.",
-      "c": "Diversification is a core concept.",
-      "d": "Inconsistent with prudence."
+      "a": "Reg BI's components are disclosure, care, conflict of interest, and compliance; pricing is not one of them.",
+      "c": "Fair pricing and loyalty are not the named Reg BI obligations.",
+      "d": "Best execution and training are separate FINRA duties, not Reg BI components."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -531,31 +531,31 @@
     "id": "series-6-readiness-check-suitability-002",
     "examSlug": "series-6-readiness-check",
     "topicId": "suitability",
-    "prompt": "A fiduciary investment adviser must",
+    "prompt": "Breakpoint selling, which FINRA prohibits, means:",
     "options": [
       {
         "id": "a",
-        "text": "Only follow suitability, never loyalty"
+        "text": "Buying just under a breakpoint to save the client money"
       },
       {
         "id": "b",
-        "text": "Maximize firm revenue regardless of client impact"
+        "text": "Telling clients about breakpoints in the fund prospectus"
       },
       {
         "id": "c",
-        "text": "Put the client's interests ahead of their own"
+        "text": "Selling just below a breakpoint to earn a higher charge"
       },
       {
         "id": "d",
-        "text": "Avoid written disclosures"
+        "text": "Combining family accounts to reach a lower sales charge"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Fiduciary duty includes loyalty and care for the client.",
+    "explanation": "Breakpoint selling is recommending a purchase just below a breakpoint, or splitting purchases across fund families, so the customer pays a higher sales charge and the representative earns more.",
     "distractorExplanations": {
-      "a": "IA fiduciary exceeds mere suitability.",
-      "b": "Conflicts must be managed/disclosed; client first.",
-      "d": "Disclosures are core."
+      "a": "The violation is failing to help the client reach a discount, not saving them money.",
+      "b": "Disclosing breakpoints is required and proper.",
+      "d": "Combining eligible family accounts is a legitimate way to reach breakpoints."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -568,27 +568,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Time the market daily"
+        "text": "Pick the individual securities with the best outlook"
       },
       {
         "id": "b",
-        "text": "Avoid equities"
+        "text": "Time moves between stocks and cash to avoid losses"
       },
       {
         "id": "c",
-        "text": "Balance risk/return across asset classes aligned to goals and risk tolerance"
+        "text": "Balance risk and return across asset classes"
       },
       {
         "id": "d",
-        "text": "Eliminate all risk"
+        "text": "Maximize expected return regardless of volatility"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Allocation matches portfolio mix to objectives and constraints.",
     "distractorExplanations": {
-      "a": "Allocation ≠ day trading.",
-      "b": "Depends on client.",
-      "d": "Risk cannot be eliminated."
+      "a": "Choosing individual securities is security selection, not allocation.",
+      "b": "Shifting based on forecasts is market timing.",
+      "d": "Allocation matches risk to goals and tolerance, not return alone."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -601,27 +601,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Margin day-trading as the IPS default"
+        "text": "A mostly bond portfolio to protect principal"
       },
       {
         "id": "b",
-        "text": "Only collectible art"
+        "text": "Equal weights in stocks, bonds, and cash"
       },
       {
         "id": "c",
-        "text": "A higher equity allocation than a retiree needing income soon"
+        "text": "A higher equity allocation than a retiree"
       },
       {
         "id": "d",
-        "text": "100% short-term T-bills only by rule"
+        "text": "Mostly money market funds for liquidity"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Longer horizons can typically bear more equity risk (client-specific)",
     "distractorExplanations": {
-      "a": "Usually inappropriate default.",
-      "b": "Concentrated alternative.",
-      "d": "Too rigid."
+      "a": "A long horizon and high tolerance allow more equity exposure.",
+      "b": "An equal split is more conservative than this profile needs.",
+      "d": "Heavy cash sacrifices growth over a long horizon."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -634,27 +634,27 @@
     "options": [
       {
         "id": "a",
-        "text": "All munis inside a traditional IRA for maximum benefit"
+        "text": "Municipal bonds inside a traditional IRA"
       },
       {
         "id": "b",
-        "text": "High-turnover taxable bond funds in taxable accounts and ignoring IRAs"
+        "text": "Tax-efficient index funds in tax-deferred accounts"
       },
       {
         "id": "c",
-        "text": "Never using asset location"
+        "text": "High-yield bonds in a taxable brokerage account"
       },
       {
         "id": "d",
-        "text": "Tax-inefficient assets in tax-advantaged accounts when appropriate"
+        "text": "Tax-inefficient assets in tax-advantaged accounts"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Asset location: put tax-inefficient exposures in sheltered accounts when it helps.",
     "distractorExplanations": {
-      "a": "Muni tax exemption is wasted in a traditional IRA.",
-      "b": "Opposite intuition often applies.",
-      "c": "Location can add value."
+      "a": "Munis are already tax-exempt, so holding them in an IRA wastes the benefit.",
+      "b": "Tax-efficient index funds usually belong in taxable accounts.",
+      "c": "High-yield bond interest is taxed as ordinary income, so it fits better in tax-advantaged accounts."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -667,27 +667,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Taxable brokerage cash always monthly"
+        "text": "Roth IRAs of the original owner after age 73"
       },
       {
         "id": "b",
-        "text": "Traditional IRAs/401(k)s after the applicable RMD age (rules evolve)"
+        "text": "Traditional IRAs and 401(k)s after RMD age"
       },
       {
         "id": "c",
-        "text": "Roth IRA contributions in the year made"
+        "text": "529 plans once the beneficiary turns 18"
       },
       {
         "id": "d",
-        "text": "529 plans at age 18 by federal mandate"
+        "text": "Taxable brokerage accounts after retirement"
       }
     ],
     "correctOptionId": "b",
     "explanation": "RMDs apply to most pre-tax retirement accounts starting at the statutory age.",
     "distractorExplanations": {
-      "a": "No.",
-      "c": "Roth IRA RMDs generally not during owner lifetime.",
-      "d": "No federal RMD like that."
+      "a": "Original Roth IRA owners have no RMDs.",
+      "c": "529 plans have no required distributions.",
+      "d": "Taxable accounts have no required distributions."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -696,31 +696,31 @@
     "id": "series-6-readiness-check-suitability-007",
     "examSlug": "series-6-readiness-check",
     "topicId": "suitability",
-    "prompt": "An IPS (investment policy statement) should include",
+    "prompt": "A letter of intent (LOI) for mutual fund breakpoints typically covers:",
     "options": [
       {
         "id": "a",
-        "text": "Goals, constraints, risk tolerance, and allocation guidelines"
+        "text": "Up to 13 months, and it can be backdated 90 days"
       },
       {
         "id": "b",
-        "text": "Guaranteed returns"
+        "text": "Up to 12 months, and it cannot be backdated"
       },
       {
         "id": "c",
-        "text": "A promise to beat the S&P every quarter"
+        "text": "Up to 24 months, and it can be backdated 30 days"
       },
       {
         "id": "d",
-        "text": "Only the adviser's lunch preferences"
+        "text": "Up to 6 months, and it can be backdated 60 days"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "IPS documents objectives, constraints, and process.",
+    "explanation": "A letter of intent lets a customer receive a breakpoint discount now by promising to invest the breakpoint amount within 13 months. It may be backdated up to 90 days to cover a recent purchase.",
     "distractorExplanations": {
-      "b": "Cannot guarantee.",
-      "c": "Unrealistic promise.",
-      "d": "Irrelevant."
+      "b": "The standard LOI window is 13 months, and it can be backdated up to 90 days.",
+      "c": "24 months is too long; the window is 13 months.",
+      "d": "Six months is too short; the window is 13 months with a 90-day backdate."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -733,27 +733,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Avoiding equities entirely"
+        "text": "Investing a lump sum when prices look low"
       },
       {
         "id": "b",
-        "text": "Buying only at market bottoms with perfect foresight"
+        "text": "Buying the same number of shares each month"
       },
       {
         "id": "c",
-        "text": "A type of municipal pre-refunding"
+        "text": "Selling a fixed dollar amount each month"
       },
       {
         "id": "d",
-        "text": "Investing a fixed dollar amount at regular intervals"
+        "text": "Investing a fixed dollar amount at intervals"
       }
     ],
     "correctOptionId": "d",
     "explanation": "DCA invests steadily regardless of short-term price moves.",
     "distractorExplanations": {
-      "a": "Not the definition.",
-      "b": "Market timing myth.",
-      "c": "Unrelated."
+      "a": "Buying on perceived lows is market timing.",
+      "b": "A fixed share count is not dollar-cost averaging; the dollar amount is fixed.",
+      "c": "Fixed withdrawals are a systematic withdrawal plan."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -766,27 +766,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Concentrated small-cap growth"
+        "text": "Growth stocks for a higher expected return"
       },
       {
         "id": "b",
-        "text": "Leveraged volatility ETFs"
+        "text": "Long-term bonds to lock in a higher yield"
       },
       {
         "id": "c",
-        "text": "Illiquid private equity lockups"
+        "text": "A balanced fund of stocks and bonds"
       },
       {
         "id": "d",
-        "text": "Capital preservation and liquidity over high expected return"
+        "text": "Capital preservation and liquidity"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Short-horizon goals favor safety and liquidity.",
     "distractorExplanations": {
-      "a": "High risk of shortfall.",
-      "b": "Inappropriate.",
-      "c": "Illiquid."
+      "a": "Stocks can fall sharply within a year.",
+      "b": "Long bonds can lose value if rates rise before the purchase.",
+      "c": "A balanced fund still carries meaningful equity risk over 12 months."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -799,27 +799,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Reduce unsystematic risk by combining imperfectly correlated assets"
+        "text": "Reduce unsystematic risk through low correlation"
       },
       {
         "id": "b",
-        "text": "Remove all systematic risk"
+        "text": "Remove market risk by holding many securities"
       },
       {
         "id": "c",
-        "text": "Guarantee alpha"
+        "text": "Raise expected return without adding risk"
       },
       {
         "id": "d",
-        "text": "Eliminate the need for an IPS"
+        "text": "Replace the need to set an asset allocation"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Diversification reduces idiosyncratic risk; market risk remains.",
     "distractorExplanations": {
-      "b": "Systematic remains.",
-      "c": "No guarantee.",
-      "d": "IPS still needed."
+      "b": "Market (systematic) risk cannot be diversified away.",
+      "c": "Diversification improves risk-adjusted return but does not raise return for free.",
+      "d": "Diversification works within an allocation; it does not replace one."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -828,31 +828,31 @@
     "id": "series-6-readiness-check-suitability-011",
     "examSlug": "series-6-readiness-check",
     "topicId": "suitability",
-    "prompt": "On the Series 6, when assessing risk tolerance, an adviser should consider:? Select the best answer.",
+    "prompt": "When assessing a client's risk tolerance, an adviser should consider:",
     "options": [
       {
         "id": "a",
-        "text": "Only the client's age by a rigid formula"
+        "text": "The client's age as the single deciding factor"
       },
       {
         "id": "b",
-        "text": "Ignoring liquidity needs"
+        "text": "The client's past returns in other accounts"
       },
       {
         "id": "c",
-        "text": "Only the adviser's favorite sector"
+        "text": "The risk level of the adviser's model portfolio"
       },
       {
         "id": "d",
-        "text": "Willingness and ability to take risk, plus goals/constraints"
+        "text": "Willingness and ability to take risk, plus goals"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Ability + willingness + circumstances drive suitable risk.",
     "distractorExplanations": {
-      "a": "Age is one factor, not sole.",
-      "b": "Liquidity is key.",
-      "c": "Conflict."
+      "a": "Age matters, but it is only one input.",
+      "b": "Past returns do not show willingness or capacity to bear losses.",
+      "c": "The model's risk describes the product, not the client."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -865,15 +865,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only capital gains are taxed"
+        "text": "Everyone pays the same percentage of income"
       },
       {
         "id": "b",
-        "text": "Interest is never taxed"
+        "text": "Tax rates fall as taxable income rises"
       },
       {
         "id": "c",
-        "text": "Everyone pays the same flat dollar tax"
+        "text": "Taxes are based on spending, not income"
       },
       {
         "id": "d",
@@ -883,9 +883,9 @@
     "correctOptionId": "d",
     "explanation": "Progressive brackets tax additional income at higher marginal rates.",
     "distractorExplanations": {
-      "a": "False.",
-      "b": "False.",
-      "c": "Flat/head tax idea."
+      "a": "One rate for all income levels is a flat tax.",
+      "b": "Falling rates as income rises is a regressive system.",
+      "c": "Taxes on spending are consumption taxes, such as sales taxes."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -898,27 +898,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Is illegal for advisers"
+        "text": "Buys more of the best performers to add momentum"
       },
       {
         "id": "b",
-        "text": "Abandons the IPS permanently"
+        "text": "Changes target weights to follow market trends"
       },
       {
         "id": "c",
-        "text": "Sells winners and buys laggards to restore target weights"
+        "text": "Sells winners and buys laggards to reset targets"
       },
       {
         "id": "d",
-        "text": "Only happens once in a lifetime"
+        "text": "Moves the full portfolio to cash after losses"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Rebalancing restores strategic weights after drift.",
     "distractorExplanations": {
-      "a": "Common practice.",
-      "b": "Opposite of discipline.",
-      "d": "Usually periodic."
+      "a": "Adding to winners increases drift from targets, the opposite of rebalancing.",
+      "b": "Rebalancing restores existing targets; it does not chase trends.",
+      "d": "Moving to cash after losses is market timing, not rebalancing."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -931,27 +931,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore prices entirely"
+        "text": "Hold winning positions too long before selling"
       },
       {
         "id": "b",
-        "text": "Always maximize taxes owed"
+        "text": "Overweight recent news when forecasting prices"
       },
       {
         "id": "c",
-        "text": "Feel losses more strongly than equivalent gains"
+        "text": "Feel losses more strongly than equal gains"
       },
       {
         "id": "d",
-        "text": "Prefer only foreign bonds"
+        "text": "Anchor to the price they originally paid"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Prospect theory: losses hurt more than similar gains please.",
     "distractorExplanations": {
-      "a": "False.",
-      "b": "False.",
-      "d": "False."
+      "a": "Loss aversion leads investors to sell winners early and hold losers.",
+      "b": "Overweighting recent events is recency bias.",
+      "d": "Fixing on a purchase price is anchoring."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -964,27 +964,27 @@
     "options": [
       {
         "id": "a",
-        "text": "High-turnover active trading each week"
+        "text": "Actively managed funds with high turnover"
       },
       {
         "id": "b",
-        "text": "Low-turnover index equity exposure"
+        "text": "Low-turnover index equity funds"
       },
       {
         "id": "c",
-        "text": "Ignoring wash-sale rules while day-trading the same security"
+        "text": "Taxable bond funds paying monthly interest"
       },
       {
         "id": "d",
-        "text": "Frequent short-term gain harvesting for fun"
+        "text": "Short-term trading to harvest small gains"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Low turnover reduces realized capital gains drag.",
     "distractorExplanations": {
-      "a": "Creates taxable events.",
-      "c": "Wash sales disallow losses.",
-      "d": "Increases taxes."
+      "a": "High turnover generates frequent taxable capital gains distributions.",
+      "c": "Bond interest is taxed as ordinary income each year.",
+      "d": "Short-term gains are taxed at higher ordinary income rates."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -993,31 +993,31 @@
     "id": "series-6-readiness-check-regulations-001",
     "examSlug": "series-6-readiness-check",
     "topicId": "regulations",
-    "prompt": "Books and records for advisers must generally be",
+    "prompt": "Under forward pricing, a mutual fund order is filled:",
     "options": [
       {
         "id": "a",
-        "text": "Optional if AUM is high"
+        "text": "At the NAV calculated at the prior day's close"
       },
       {
         "id": "b",
-        "text": "Kept for required periods and available for inspection"
+        "text": "At the next NAV calculated after the order arrives"
       },
       {
         "id": "c",
-        "text": "Stored only on personal phones without backup"
+        "text": "At the NAV in effect when the client signs the form"
       },
       {
         "id": "d",
-        "text": "Destroyed weekly"
+        "text": "At the average NAV over the previous five trading days"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Recordkeeping rules mandate retention and accessibility.",
+    "explanation": "Rule 22c-1 requires forward pricing: purchase and redemption orders are priced at the next net asset value computed after the fund or its agent receives the order, usually at the 4 p.m. ET close.",
     "distractorExplanations": {
-      "a": "AUM doesn't waive rules.",
-      "c": "Inadequate controls.",
-      "d": "Violates retention."
+      "a": "Using a prior NAV is backward pricing, which the 1940 Act rules prohibit.",
+      "c": "Signing a form does not set the price; receipt of the order does.",
+      "d": "There is no averaging; each order gets the next computed NAV."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1026,31 +1026,31 @@
     "id": "series-6-readiness-check-regulations-002",
     "examSlug": "series-6-readiness-check",
     "topicId": "regulations",
-    "prompt": "Under the Advisers Act, an advertisement generally may not",
+    "prompt": "Under the Investment Company Act of 1940, a mutual fund must generally pay redemption proceeds:",
     "options": [
       {
         "id": "a",
-        "text": "Disclose conflicts"
+        "text": "Within 3 business days of the redemption request"
       },
       {
         "id": "b",
-        "text": "Contain untrue statements of material fact or be otherwise misleading"
+        "text": "Within 7 calendar days of the redemption request"
       },
       {
         "id": "c",
-        "text": "Include fair and balanced presentations"
+        "text": "Within 30 days of the redemption request"
       },
       {
         "id": "d",
-        "text": "Describe the adviser's methods accurately"
+        "text": "Within one business day of the redemption request"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Ads cannot be false or misleading; marketing rule sets detailed standards.",
+    "explanation": "Section 22(e) of the Investment Company Act generally requires open-end funds to pay redemption proceeds within seven calendar days, except in limited emergencies permitted by the SEC.",
     "distractorExplanations": {
-      "a": "Often required.",
-      "c": "Allowed if not misleading.",
-      "d": "Allowed if accurate."
+      "a": "Three business days is not the 1940 Act redemption standard.",
+      "c": "Thirty days is far longer than the Act allows.",
+      "d": "Many funds pay next day, but the legal outer limit is seven days."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1059,31 +1059,31 @@
     "id": "series-6-readiness-check-regulations-003",
     "examSlug": "series-6-readiness-check",
     "topicId": "regulations",
-    "prompt": "Soft-dollar arrangements, when permitted, must primarily benefit",
+    "prompt": "Under FINRA rules, the maximum sales charge on a mutual fund purchase is:",
     "options": [
       {
         "id": "a",
-        "text": "The adviser's personal vacation"
+        "text": "5.75% of the public offering price"
       },
       {
         "id": "b",
-        "text": "Only the broker's marketing department"
+        "text": "8.5% of the net asset value"
       },
       {
         "id": "c",
-        "text": "Clients through research/brokerage services"
+        "text": "8.5% of the public offering price"
       },
       {
         "id": "d",
-        "text": "Unrelated office furniture"
+        "text": "10% of the public offering price"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Soft dollars must provide lawful and appropriate assistance to advisory services for clients.",
+    "explanation": "FINRA caps mutual fund sales charges at 8.5% of the public offering price. Funds that do not offer breakpoints, rights of accumulation, or reinvestment at NAV must charge less.",
     "distractorExplanations": {
-      "a": "Personal benefit is improper.",
-      "b": "Client benefit required.",
-      "d": "Typically not qualifying research."
+      "a": "5.75% is a common equity fund load, not the FINRA maximum.",
+      "b": "The cap is measured against the public offering price, not NAV.",
+      "d": "10% exceeds the FINRA maximum sales charge."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1092,31 +1092,31 @@
     "id": "series-6-readiness-check-regulations-004",
     "examSlug": "series-6-readiness-check",
     "topicId": "regulations",
-    "prompt": "Custody of client assets triggers",
+    "prompt": "A broker-dealer must deliver Form CRS to a new retail investor:",
     "options": [
       {
         "id": "a",
-        "text": "Exemption from fiduciary duty"
+        "text": "Only after the customer's first trade settles"
       },
       {
         "id": "b",
-        "text": "Automatic SIPC coverage for advice fees"
+        "text": "Within 30 days after the account is opened"
       },
       {
         "id": "c",
-        "text": "Additional Advisers Act custody rule requirements (e.g., qualified custodian, notices, surprise exam in many cases)"
+        "text": "At or before the recommendation, order, or account"
       },
       {
         "id": "d",
-        "text": "No extra rules"
+        "text": "Only when the customer asks about firm conflicts"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Custody increases compliance obligations under Rule 206(4)-2 themes.",
+    "explanation": "Form CRS must be delivered before or at the earliest of a recommendation, placing an order, or opening an account for a retail investor.",
     "distractorExplanations": {
-      "a": "Duty remains.",
-      "b": "SIPC is about brokerage failures, not advice fees.",
-      "d": "False."
+      "a": "Form CRS must be delivered before or at the first key event, not after settlement.",
+      "b": "Delivery after account opening is too late.",
+      "d": "Delivery is required to all retail investors, not only on request."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1125,31 +1125,31 @@
     "id": "series-6-readiness-check-regulations-005",
     "examSlug": "series-6-readiness-check",
     "topicId": "regulations",
-    "prompt": "An adviser trading ahead of client orders for personal benefit is an example of:",
+    "prompt": "A registered representative's Form U4 must generally be amended for a reportable event:",
     "options": [
       {
         "id": "a",
-        "text": "Qualified custodianship"
+        "text": "Within 10 days of the event occurring"
       },
       {
         "id": "b",
-        "text": "Best execution"
+        "text": "Within 60 days of the event"
       },
       {
         "id": "c",
-        "text": "Soft-dollar research"
+        "text": "At the next annual registration renewal"
       },
       {
         "id": "d",
-        "text": "Front-running / breach of duty"
+        "text": "Within 30 days of learning of it"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Using advance knowledge of client trades for personal gain is prohibited.",
+    "explanation": "Firms must keep Form U4 current. Reportable events such as certain liens, judgments, or regulatory actions generally must be amended within 30 days of the firm learning of them.",
     "distractorExplanations": {
-      "a": "Custody topic.",
-      "b": "Opposite of best execution ethics.",
-      "c": "Different concept."
+      "a": "Ten days is not the Form U4 amendment deadline.",
+      "b": "Sixty days is too long for U4 amendments.",
+      "c": "Waiting for renewal would leave the record inaccurate for months."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1158,31 +1158,31 @@
     "id": "series-6-readiness-check-regulations-006",
     "examSlug": "series-6-readiness-check",
     "topicId": "regulations",
-    "prompt": "Form ADV Part 2 brochure delivery is important because it",
+    "prompt": "Under FINRA Rule 3270, a representative who starts a paid outside business activity must give:",
     "options": [
       {
         "id": "a",
-        "text": "Is filed only with state insurance departments"
+        "text": "No notice if the activity is unrelated to securities"
       },
       {
         "id": "b",
-        "text": "Provides clients with material disclosures about the advisory business, fees, and conflicts"
+        "text": "Prior written notice to the member firm"
       },
       {
         "id": "c",
-        "text": "Is optional"
+        "text": "Written notice to FINRA within 30 days"
       },
       {
         "id": "d",
-        "text": "Replaces the need for any suitability analysis"
+        "text": "Approval from the state securities administrator"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "The brochure is a key client disclosure document.",
+    "explanation": "FINRA Rule 3270 requires registered persons to give their member firm prior written notice before engaging in outside business activities for compensation, so the firm can assess conflicts.",
     "distractorExplanations": {
-      "a": "SEC/state securities regulators.",
-      "c": "Required in specified circumstances.",
-      "d": "Doesn't replace care/fiduciary analysis."
+      "a": "Rule 3270 applies to outside business activities even if unrelated to securities.",
+      "c": "Notice goes to the member firm, not directly to FINRA.",
+      "d": "Outside business activities are a firm notice issue, not state approval."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1191,31 +1191,31 @@
     "id": "series-6-readiness-check-regulations-007",
     "examSlug": "series-6-readiness-check",
     "topicId": "regulations",
-    "prompt": "Performance advertising that shows only the best accounts without disclosure is typically",
+    "prompt": "SIPC protects each customer of a failed broker-dealer for:",
     "options": [
       {
         "id": "a",
-        "text": "Misleading cherry-picking"
+        "text": "Up to $500,000, including $250,000 in cash"
       },
       {
         "id": "b",
-        "text": "Required by ERISA"
+        "text": "Up to $250,000, including $100,000 in cash"
       },
       {
         "id": "c",
-        "text": "Always acceptable"
+        "text": "Up to $500,000 for market losses on securities"
       },
       {
         "id": "d",
-        "text": "A form of custody"
+        "text": "Unlimited protection for securities held"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Selective performance without proper presentation is misleading.",
+    "explanation": "SIPC restores missing customer cash and securities up to $500,000 per customer, including up to $250,000 in cash. It does not protect against market losses.",
     "distractorExplanations": {
-      "b": "False.",
-      "c": "Not acceptable.",
-      "d": "Unrelated."
+      "b": "These are not SIPC's limits; the cap is $500,000 with a $250,000 cash sublimit.",
+      "c": "SIPC never covers market losses; it replaces missing assets at a failed firm.",
+      "d": "SIPC protection is capped, not unlimited."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1224,31 +1224,31 @@
     "id": "series-6-readiness-check-regulations-008",
     "examSlug": "series-6-readiness-check",
     "topicId": "regulations",
-    "prompt": "A solicitor arrangement generally requires:",
+    "prompt": "A broker-dealer must file a Currency Transaction Report (CTR) for a customer transaction involving:",
     "options": [
       {
         "id": "a",
-        "text": "Required disclosures/agreements under applicable solicitor/marketing rules"
+        "text": "Over $10,000 in cash"
       },
       {
         "id": "b",
-        "text": "No disclosures"
+        "text": "Over $5,000 in cash"
       },
       {
         "id": "c",
-        "text": "Avoiding written records"
+        "text": "Over $3,000 in cash"
       },
       {
         "id": "d",
-        "text": "Cash payments only in crypto"
+        "text": "Over $25,000 in cash"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Paid solicitation typically needs documented disclosures and compliance.",
+    "explanation": "Firms must file a CTR with FinCEN for cash transactions over $10,000 in one business day, including multiple related transactions that total more than $10,000.",
     "distractorExplanations": {
-      "b": "False.",
-      "c": "Records are needed.",
-      "d": "Nonsense."
+      "b": "$5,000 is the broker-dealer SAR threshold, not the CTR threshold.",
+      "c": "$3,000 relates to recordkeeping for money orders and wires, not CTRs.",
+      "d": "$25,000 is not the currency transaction threshold."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1257,31 +1257,31 @@
     "id": "series-6-readiness-check-regulations-009",
     "examSlug": "series-6-readiness-check",
     "topicId": "regulations",
-    "prompt": "Insider trading involves trading on",
+    "prompt": "Under the Investment Company Act of 1940, a mutual fund board must have independent (non-interested) directors making up:",
     "options": [
       {
         "id": "a",
-        "text": "Yesterday's closing prices"
+        "text": "At least 25% of its directors"
       },
       {
         "id": "b",
-        "text": "Material nonpublic information in breach of a duty"
+        "text": "At least 40% of its directors"
       },
       {
         "id": "c",
-        "text": "Public SEC filings"
+        "text": "At least 75% of its directors"
       },
       {
         "id": "d",
-        "text": "CPI releases after public announcement"
+        "text": "All of its directors"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Classic illegal insider trading: MNPI + duty breach.",
+    "explanation": "The Investment Company Act requires that at least 40% of a fund's board be independent of the adviser and underwriter. Many funds exceed this through exemptive rules or best practice.",
     "distractorExplanations": {
-      "a": "Public.",
-      "c": "Public info.",
-      "d": "Public after release."
+      "a": "25% is below the 1940 Act minimum.",
+      "c": "Many funds exceed 75% by practice, but the statutory floor is 40%.",
+      "d": "Interested directors, such as adviser officers, may serve on the board."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1290,31 +1290,31 @@
     "id": "series-6-readiness-check-regulations-010",
     "examSlug": "series-6-readiness-check",
     "topicId": "regulations",
-    "prompt": "Best execution requires advisers to seek",
+    "prompt": "Late trading in mutual funds, which is illegal, means:",
     "options": [
       {
         "id": "a",
-        "text": "The lowest advertised commission only, ignoring quality"
+        "text": "Buying fund shares just before the ex-dividend date"
       },
       {
         "id": "b",
-        "text": "Only after-hours dark pools"
+        "text": "Placing orders just before the 4 p.m. market close"
       },
       {
         "id": "c",
-        "text": "Always the slowest venue"
+        "text": "Switching between funds in the same family"
       },
       {
         "id": "d",
-        "text": "The most favorable total execution quality reasonably available under the circumstances"
+        "text": "Accepting orders after 4 p.m. at that day's NAV"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Best execution is about overall quality, not solely sticker commission.",
+    "explanation": "Late trading lets some investors place orders after the 4 p.m. close but receive that day's NAV, exploiting news released after the close. It violates forward pricing rules.",
     "distractorExplanations": {
-      "a": "Too narrow.",
-      "b": "Not a rule.",
-      "c": "False."
+      "a": "Buying before ex-dividend is legal, though often unwise for taxes.",
+      "b": "Orders received before the close properly get that day's NAV.",
+      "c": "Exchanges within a family are legal if not abusive market timing."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1323,31 +1323,31 @@
     "id": "series-6-readiness-check-regulations-011",
     "examSlug": "series-6-readiness-check",
     "topicId": "regulations",
-    "prompt": "Principal trades with a client generally require",
+    "prompt": "FINRA Rule 2231 requires broker-dealers to send customer account statements:",
     "options": [
       {
         "id": "a",
-        "text": "Avoiding confirmations"
+        "text": "Monthly, whether or not there was activity"
       },
       {
         "id": "b",
-        "text": "No consent"
+        "text": "Annually, together with the tax forms"
       },
       {
         "id": "c",
-        "text": "Automatic approval by FINRA exam staff"
+        "text": "Only in months with trading activity"
       },
       {
         "id": "d",
-        "text": "Disclosure and client consent as required under Advisers Act rules"
+        "text": "At least quarterly"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Principal transactions need consent/disclosure under applicable rules.",
+    "explanation": "FINRA Rule 2231 requires customer account statements at least once each calendar quarter, showing positions, money balances, and account activity.",
     "distractorExplanations": {
-      "a": "Confirms matter.",
-      "b": "False.",
-      "c": "Not how it works."
+      "a": "Monthly statements are required only in months with activity, not always.",
+      "b": "Annual statements are too infrequent under FINRA rules.",
+      "c": "Statements are still due at least quarterly even without activity."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1356,31 +1356,31 @@
     "id": "series-6-readiness-check-regulations-012",
     "examSlug": "series-6-readiness-check",
     "topicId": "regulations",
-    "prompt": "An adviser borrowing money from a retail client is generally",
+    "prompt": "Broker-dealers must file a Suspicious Activity Report (SAR) for:",
     "options": [
       {
         "id": "a",
-        "text": "Encouraged without limits"
+        "text": "Suspicious transactions of $10,000 or more"
       },
       {
         "id": "b",
-        "text": "Required annually"
+        "text": "Suspicious transactions of $2,000 or more"
       },
       {
         "id": "c",
-        "text": "Prohibited/highly restricted except narrow circumstances (eg, certain broker-dealers/affiliates) under NASAA model themes"
+        "text": "Suspicious transactions of $5,000 or more"
       },
       {
         "id": "d",
-        "text": "The same as soft dollars"
+        "text": "Any cash deposit, regardless of amount"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Borrowing from clients creates severe conflicts and is largely prohibited.",
+    "explanation": "Broker-dealers must file a SAR within 30 days for transactions of $5,000 or more that they know or suspect involve illegal funds, evasion, or no apparent lawful purpose.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Prohibited/highly restricted except narrow circumstances (eg, certain broker-dealers/affiliates) under NASAA model themes”.",
-      "b": "Not the best answer here; the right answer is “Prohibited/highly restricted except narrow circumstances (eg, certain broker-dealers/affiliates) under NASAA model themes”.",
-      "d": "Not the best answer here; the right answer is “Prohibited/highly restricted except narrow circumstances (eg, certain broker-dealers/affiliates) under NASAA model themes”."
+      "a": "$10,000 is the CTR threshold, not the broker-dealer SAR threshold.",
+      "b": "$2,000 is the money services business SAR threshold, not the broker-dealer threshold.",
+      "d": "SARs are based on suspicion and a threshold, not every cash deposit."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1389,31 +1389,31 @@
     "id": "series-6-readiness-check-regulations-013",
     "examSlug": "series-6-readiness-check",
     "topicId": "regulations",
-    "prompt": "Custody can be created when an adviser",
+    "prompt": "Which change requires a mutual fund shareholder vote?",
     "options": [
       {
         "id": "a",
-        "text": "Has authority to withdraw client fees/funds or holds client securities"
+        "text": "Changing the fund's investment objective"
       },
       {
         "id": "b",
-        "text": "Files Form ADV Part 1"
+        "text": "Hiring a new portfolio manager at the adviser"
       },
       {
         "id": "c",
-        "text": "Only gives impersonal market commentary"
+        "text": "Changing the fund's transfer agent"
       },
       {
         "id": "d",
-        "text": "Uses a third-party custodian exclusively with no fee deduction authority and no possession"
+        "text": "Declaring the fund's annual dividend"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Authority over client assets/fees or possession can constitute custody.",
+    "explanation": "Under the Investment Company Act, shareholders vote on changes to fundamental investment objectives or policies, on new advisory contracts, and on electing directors.",
     "distractorExplanations": {
-      "b": "Filing ≠ custody.",
-      "c": "Not custody.",
-      "d": "Properly structured can avoid custody."
+      "b": "Staffing at the adviser is a management decision, not a shareholder vote.",
+      "c": "Service providers such as transfer agents are chosen by the board.",
+      "d": "Dividends are declared by the board."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1422,31 +1422,31 @@
     "id": "series-6-readiness-check-regulations-014",
     "examSlug": "series-6-readiness-check",
     "topicId": "regulations",
-    "prompt": "Testimonials in adviser advertising under the modern marketing rule",
+    "prompt": "Under FINRA Rule 2210, a written communication becomes a retail communication when it goes to:",
     "options": [
       {
         "id": "a",
-        "text": "Are always banned without exception"
+        "text": "More than 10 retail investors in 30 days"
       },
       {
         "id": "b",
-        "text": "May be used if conditions/disclosures are met"
+        "text": "More than 25 retail investors in 30 days"
       },
       {
         "id": "c",
-        "text": "Require no disclosures ever"
+        "text": "More than 50 retail investors in 90 days"
       },
       {
         "id": "d",
-        "text": "Apply only to commodity pools"
+        "text": "More than 100 retail investors in a year"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "The marketing rule permits testimonials with required conditions.",
+    "explanation": "A retail communication is written material distributed to more than 25 retail investors within any 30-day period. Communications to 25 or fewer are correspondence.",
     "distractorExplanations": {
-      "a": "Old blanket bans changed.",
-      "c": "Disclosures required.",
-      "d": "Advisers Act marketing."
+      "a": "Ten is not the Rule 2210 threshold.",
+      "c": "The threshold is 25 retail investors within 30 days.",
+      "d": "The rule uses a 30-day window and 25 investors."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1455,31 +1455,31 @@
     "id": "series-6-readiness-check-regulations-015",
     "examSlug": "series-6-readiness-check",
     "topicId": "regulations",
-    "prompt": "A conflict of interest should be",
+    "prompt": "Mutual funds must send shareholders financial reports at least:",
     "options": [
       {
         "id": "a",
-        "text": "Resolved by increasing fees quietly"
+        "text": "Monthly"
       },
       {
         "id": "b",
-        "text": "Hidden if profitable"
+        "text": "Quarterly"
       },
       {
         "id": "c",
-        "text": "Ignored if the client doesn't ask"
+        "text": "Annually only"
       },
       {
         "id": "d",
-        "text": "Identified, disclosed, and mitigated/eliminated as appropriate"
+        "text": "Semiannually"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Fiduciary process: disclose and manage conflicts.",
+    "explanation": "Under the Investment Company Act, funds send shareholders reports at least semiannually. The annual report includes audited financial statements.",
     "distractorExplanations": {
-      "a": "Worsens conflict.",
-      "b": "Violation.",
-      "c": "Duty is proactive."
+      "a": "Funds are not required to send monthly shareholder reports.",
+      "b": "Quarterly holdings are filed with the SEC, but shareholder reports go out twice a year.",
+      "c": "Funds must send both an annual and a semiannual report."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1488,31 +1488,31 @@
     "id": "series-6-readiness-check-retirement-001",
     "examSlug": "series-6-readiness-check",
     "topicId": "retirement",
-    "prompt": "In the expansion phase of the business cycle, typically",
+    "prompt": "A SEP IRA is characterized by which funding rule?",
     "options": [
       {
         "id": "a",
-        "text": "GDP collapses"
+        "text": "Employees fund it through salary deferrals only"
       },
       {
         "id": "b",
-        "text": "Unemployment falls and production rises"
+        "text": "The employer funds it at the same rate for all"
       },
       {
         "id": "c",
-        "text": "Interest rates are irrelevant"
+        "text": "The employer may choose which staff to fund"
       },
       {
         "id": "d",
-        "text": "Only bankruptcies soar by definition"
+        "text": "Employee and employer contributions must match"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Expansions feature rising activity and usually improving employment.",
+    "explanation": "A SEP IRA is funded only by the employer, which must contribute the same percentage of compensation for every eligible employee in any year it contributes.",
     "distractorExplanations": {
-      "a": "Contraction.",
-      "c": "Rates matter but aren't the definition.",
-      "d": "Not definitional."
+      "a": "SEP IRAs are funded by employer contributions, not employee deferrals.",
+      "c": "SEP contributions must be the same percentage of pay for all eligible employees.",
+      "d": "There are no employee contributions to match in a SEP."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1521,31 +1521,31 @@
     "id": "series-6-readiness-check-retirement-002",
     "examSlug": "series-6-readiness-check",
     "topicId": "retirement",
-    "prompt": "Purchasing power risk is most associated with:",
+    "prompt": "A SIMPLE IRA is available to employers with how many employees, and what early withdrawal penalty can apply?",
     "options": [
       {
         "id": "a",
-        "text": "Exchange-traded option expiration Friday"
+        "text": "No limit on employer size, and a 10% early penalty"
       },
       {
         "id": "b",
-        "text": "A single company's product recall"
+        "text": "Up to 500 employees, and a 15% early penalty"
       },
       {
         "id": "c",
-        "text": "Unexpected inflation eroding real returns"
+        "text": "Up to 100 employees, and 25% in the first 2 years"
       },
       {
         "id": "d",
-        "text": "Call risk on mortgages"
+        "text": "Up to 50 employees, and no early penalty at all"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Inflation reduces purchasing power of fixed cash flows/returns.",
+    "explanation": "SIMPLE IRAs are for employers with 100 or fewer employees. Withdrawals within two years of first participation before age 59½ can owe a 25% penalty instead of 10%.",
     "distractorExplanations": {
-      "a": "Timing/technical.",
-      "b": "Business-specific.",
-      "d": "Prepayment/call is different."
+      "a": "SIMPLE IRAs are limited to employers with 100 or fewer employees.",
+      "b": "Neither the 500-employee limit nor a 15% penalty applies.",
+      "d": "The limit is 100 employees, and early withdrawals owe a penalty."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1554,31 +1554,31 @@
     "id": "series-6-readiness-check-retirement-003",
     "examSlug": "series-6-readiness-check",
     "topicId": "retirement",
-    "prompt": "Weakening U.S. dollar, all else equal, tends to:",
+    "prompt": "Converting a traditional IRA to a Roth IRA generally makes the pre-tax amount converted:",
     "options": [
       {
         "id": "a",
-        "text": "Make U.S. exports more competitive abroad"
+        "text": "Taxable as income in the year of conversion"
       },
       {
         "id": "b",
-        "text": "Eliminate currency risk for all investors"
+        "text": "Tax-free if the owner is over age 59½"
       },
       {
         "id": "c",
-        "text": "Set the Fed funds rate by law"
+        "text": "Subject to a 10% penalty on the full amount"
       },
       {
         "id": "d",
-        "text": "Make U.S. exports less competitive abroad"
+        "text": "Taxable only when later withdrawn from the Roth"
       }
     ],
     "correctOptionId": "a",
     "explanation": "A weaker dollar makes U.S. goods cheaper in foreign currency terms.",
     "distractorExplanations": {
-      "b": "False.",
-      "c": "Fed sets policy rates, not the dollar level by statute.",
-      "d": "Opposite."
+      "b": "Age does not make a conversion tax-free; pre-tax amounts are taxed.",
+      "c": "The 10% penalty does not apply to the conversion itself.",
+      "d": "Tax is due in the conversion year, not later."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1587,31 +1587,31 @@
     "id": "series-6-readiness-check-retirement-004",
     "examSlug": "series-6-readiness-check",
     "topicId": "retirement",
-    "prompt": "If the Federal Reserve conducts open-market purchases of Treasuries, the most likely near-term effect is",
+    "prompt": "If a 401(k) plan allows loans, the maximum is generally:",
     "options": [
       {
         "id": "a",
-        "text": "Higher short-term rates as reserves shrink"
+        "text": "Up to 100% of the vested balance with no cap"
       },
       {
         "id": "b",
-        "text": "Increased bank reserves and downward pressure on short-term rates"
+        "text": "The lesser of $50,000 or 50% of the vested balance"
       },
       {
         "id": "c",
-        "text": "Guaranteed stock market gains"
+        "text": "The lesser of $10,000 or 25% of the vested balance"
       },
       {
         "id": "d",
-        "text": "Immediate statutory tax cuts"
+        "text": "Only hardship amounts approved by the IRS"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "OMOs that buy securities inject reserves and tend to ease short-term rates.",
+    "explanation": "Plan loans are generally limited to the lesser of $50,000 or 50% of the vested balance, with an exception allowing up to $10,000 for small balances. Loans must usually be repaid within five years.",
     "distractorExplanations": {
-      "a": "Purchases expand, not shrink, reserves.",
-      "c": "Markets are not guaranteed.",
-      "d": "Fiscal policy, not Fed OMOs."
+      "a": "Plan loans are capped; the full balance cannot be borrowed.",
+      "c": "The limits are $50,000 or 50% of vested balance, not these figures.",
+      "d": "Hardship withdrawals are separate from loans and need no IRS approval."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1620,31 +1620,31 @@
     "id": "series-6-readiness-check-retirement-005",
     "examSlug": "series-6-readiness-check",
     "topicId": "retirement",
-    "prompt": "GDP that is adjusted for inflation is called:",
+    "prompt": "ERISA primarily governs:",
     "options": [
       {
         "id": "a",
-        "text": "Real GDP"
+        "text": "Private-sector employer retirement plans"
       },
       {
         "id": "b",
-        "text": "M1 money supply"
+        "text": "Retirement plans for state employees"
       },
       {
         "id": "c",
-        "text": "Nominal GDP"
+        "text": "Individual retirement accounts (IRAs)"
       },
       {
         "id": "d",
-        "text": "Current account"
+        "text": "Federal government employee plans"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Real GDP removes price-level changes to show volume of output.",
     "distractorExplanations": {
-      "b": "Money supply measure.",
-      "c": "Nominal is in current dollars.",
-      "d": "Trade balance component."
+      "b": "Government plans are exempt from ERISA.",
+      "c": "IRAs are not ERISA employer plans.",
+      "d": "Federal plans are governed by separate statutes, not ERISA."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1653,31 +1653,31 @@
     "id": "series-6-readiness-check-retirement-006",
     "examSlug": "series-6-readiness-check",
     "topicId": "retirement",
-    "prompt": "In a normal yield curve, longer-term Treasury yields are typically",
+    "prompt": "A defined benefit pension plan is best described as one in which:",
     "options": [
       {
         "id": "a",
-        "text": "Lower than short-term yields"
+        "text": "The employee bears the investment risk"
       },
       {
         "id": "b",
-        "text": "Higher than short-term yields"
+        "text": "The employer promises a set benefit"
       },
       {
         "id": "c",
-        "text": "Exactly zero"
+        "text": "Benefits depend on account performance"
       },
       {
         "id": "d",
-        "text": "Unrelated to maturity"
+        "text": "Contributions are fixed each year"
       }
     ],
     "correctOptionId": "b",
     "explanation": "A normal (upward-sloping) curve pays more for longer maturity.",
     "distractorExplanations": {
-      "a": "That describes inversion.",
-      "c": "False.",
-      "d": "Maturity is a key driver."
+      "a": "Employees bear investment risk in defined contribution plans.",
+      "c": "Performance-based benefits describe defined contribution plans.",
+      "d": "Contributions in a DB plan vary to fund the promised benefit."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1686,31 +1686,31 @@
     "id": "series-6-readiness-check-retirement-007",
     "examSlug": "series-6-readiness-check",
     "topicId": "retirement",
-    "prompt": "On the Series 6, which is a leading economic indicator example? Select the best answer.",
+    "prompt": "A nonqualified deferred compensation plan is typically:",
     "options": [
       {
         "id": "a",
-        "text": "CPI confirmed after the fact"
+        "text": "Funded in a trust protected from creditors"
       },
       {
         "id": "b",
-        "text": "Corporate bond defaults after recession trough"
+        "text": "Available on the same terms to all workers"
       },
       {
         "id": "c",
-        "text": "Building permits / new orders (often leading)"
+        "text": "An unfunded promise open to employer creditors"
       },
       {
         "id": "d",
-        "text": "Average duration of unemployment (often lagging)"
+        "text": "Tax-deductible to the employer when promised"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Permits and new orders often turn before the broad economy.",
     "distractorExplanations": {
-      "a": "CPI is more coincident/lagging in practice discussions.",
-      "b": "Defaults often lag.",
-      "d": "Unemployment duration tends to lag."
+      "a": "Assets set aside for NQDC remain subject to the employer's creditors.",
+      "b": "Nonqualified plans may favor selected executives.",
+      "d": "The employer deducts the cost when benefits are paid, not when promised."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1719,31 +1719,31 @@
     "id": "series-6-readiness-check-retirement-008",
     "examSlug": "series-6-readiness-check",
     "topicId": "retirement",
-    "prompt": "Stagflation refers to:",
+    "prompt": "Withdrawals from a nonqualified variable annuity before annuitization are generally:",
     "options": [
       {
         "id": "a",
-        "text": "Only a bull market in bonds"
+        "text": "Tax-free, since contributions were after-tax"
       },
       {
         "id": "b",
-        "text": "Deflation with boom employment"
+        "text": "Taxed at capital gains rates on earnings only"
       },
       {
         "id": "c",
-        "text": "Stagnant growth with high inflation and often high unemployment"
+        "text": "Taxed as ordinary income, earnings out first"
       },
       {
         "id": "d",
-        "text": "High growth and low inflation"
+        "text": "Taxed pro rata between cost basis and gains"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Stagflation combines weak growth with elevated inflation.",
+    "explanation": "Nonqualified annuity withdrawals follow LIFO: earnings come out first and are taxed as ordinary income, with a 10% penalty before age 59½ unless an exception applies.",
     "distractorExplanations": {
-      "a": "Incomplete.",
-      "b": "Not stagflation.",
-      "d": "Opposite mix."
+      "a": "Earnings on after-tax contributions are still taxable.",
+      "b": "Annuity earnings are taxed as ordinary income, not capital gains.",
+      "d": "Pro rata treatment applies to annuitized payments, not lump-sum withdrawals."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1752,31 +1752,31 @@
     "id": "series-6-readiness-check-retirement-009",
     "examSlug": "series-6-readiness-check",
     "topicId": "retirement",
-    "prompt": "The present value of a future cash flow rises when:",
+    "prompt": "Which annuity payout option generally provides the highest monthly payment?",
     "options": [
       {
         "id": "a",
-        "text": "Time to receipt increases (holding rate constant)"
+        "text": "Life with period certain"
       },
       {
         "id": "b",
-        "text": "The discount rate increases"
+        "text": "Joint and last survivor"
       },
       {
         "id": "c",
-        "text": "Cash flow becomes zero"
+        "text": "Unit refund life annuity"
       },
       {
         "id": "d",
-        "text": "The discount rate decreases"
+        "text": "Straight life only"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Lower discount rates increase PV.",
+    "explanation": "Straight life (life only) pays the most per month because payments stop at the annuitant's death, with nothing left for beneficiaries.",
     "distractorExplanations": {
-      "a": "More time lowers PV at positive rates.",
-      "b": "Higher rates lower PV.",
-      "c": "Zero CF has zero PV."
+      "a": "A period certain guarantee costs money, so monthly payments are lower.",
+      "b": "Covering two lives lowers each payment.",
+      "c": "A refund feature lowers the monthly amount."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1785,31 +1785,31 @@
     "id": "series-6-readiness-check-retirement-010",
     "examSlug": "series-6-readiness-check",
     "topicId": "retirement",
-    "prompt": "Systematic risk is best described as:",
+    "prompt": "During the accumulation phase, variable annuity purchase payments buy:",
     "options": [
       {
         "id": "a",
-        "text": "Risk unique to one firm's warehouse fire"
+        "text": "Annuity units"
       },
       {
         "id": "b",
-        "text": "Market-wide risk that diversification cannot remove"
+        "text": "Accumulation units"
       },
       {
         "id": "c",
-        "text": "Risk eliminable by owning one stock"
+        "text": "Fund shares at NAV"
       },
       {
         "id": "d",
-        "text": "Only fraud risk"
+        "text": "Units of a fixed account"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Systematic (market) risk remains after diversification.",
     "distractorExplanations": {
-      "a": "Idiosyncratic/unsystematic.",
-      "c": "Unsystematic can be diversified.",
-      "d": "Too narrow."
+      "a": "Annuity units are used after annuitization, during payout.",
+      "c": "Owners hold units of subaccounts, not fund shares directly.",
+      "d": "Fixed account values are not measured in variable units."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1818,31 +1818,31 @@
     "id": "series-6-readiness-check-retirement-011",
     "examSlug": "series-6-readiness-check",
     "topicId": "retirement",
-    "prompt": "Beta of 1.2 suggests a stock historically",
+    "prompt": "If separate account returns exceed the assumed interest rate (AIR), variable annuity payments:",
     "options": [
       {
         "id": "a",
-        "text": "Is risk-free"
+        "text": "Payments stay the same as the prior month"
       },
       {
         "id": "b",
-        "text": "Moved less than the market"
+        "text": "Payments fall because the AIR is exceeded"
       },
       {
         "id": "c",
-        "text": "Has no market risk"
+        "text": "Payments reset to the original guaranteed amount"
       },
       {
         "id": "d",
-        "text": "Moved about 20% more than the market on average"
+        "text": "Payments rise for the next period"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Beta > 1 implies higher average sensitivity to market moves.",
     "distractorExplanations": {
-      "a": "Equities aren't risk-free.",
-      "b": "That would be beta < 1.",
-      "c": "False."
+      "a": "Payments change when returns differ from the AIR.",
+      "b": "Returns above the AIR raise payments, not lower them.",
+      "c": "Variable payments are not reset to a guaranteed amount."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1851,31 +1851,31 @@
     "id": "series-6-readiness-check-retirement-012",
     "examSlug": "series-6-readiness-check",
     "topicId": "retirement",
-    "prompt": "Fiscal policy tools include",
+    "prompt": "Coverdell Education Savings Account contributions are limited to:",
     "options": [
       {
         "id": "a",
-        "text": "Government spending and taxation"
+        "text": "$2,000 a year per beneficiary"
       },
       {
         "id": "b",
-        "text": "Only reserve requirements"
+        "text": "$5,000 a year per beneficiary"
       },
       {
         "id": "c",
-        "text": "Only the discount rate"
+        "text": "$6,500 a year per contributor"
       },
       {
         "id": "d",
-        "text": "Only open-market operations"
+        "text": "$18,000 a year per beneficiary"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Fiscal policy is taxing/spending by government.",
     "distractorExplanations": {
-      "b": "Monetary.",
-      "c": "Monetary.",
-      "d": "Monetary tool."
+      "b": "$5,000 is not the Coverdell limit.",
+      "c": "The limit applies per beneficiary, and $6,500 is not correct.",
+      "d": "$18,000 resembles gift tax exclusion amounts, not the Coverdell limit."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1884,31 +1884,31 @@
     "id": "series-6-readiness-check-retirement-013",
     "examSlug": "series-6-readiness-check",
     "topicId": "retirement",
-    "prompt": "CPI measures",
+    "prompt": "Section 457(b) deferred compensation plans are mainly offered by:",
     "options": [
       {
         "id": "a",
-        "text": "Corporate earnings yields"
+        "text": "Private for-profit companies of any size"
       },
       {
         "id": "b",
-        "text": "Gold reserves at the Fed"
+        "text": "Self-employed individuals and sole owners"
       },
       {
         "id": "c",
-        "text": "Price changes for a basket of consumer goods/services"
+        "text": "State and local government employers"
       },
       {
         "id": "d",
-        "text": "Producer inventory"
+        "text": "Public schools and 501(c)(3) groups only"
       }
     ],
     "correctOptionId": "c",
     "explanation": "CPI tracks consumer price inflation for a defined basket.",
     "distractorExplanations": {
-      "a": "Valuation concept.",
-      "b": "Balance sheet item.",
-      "d": "Different metrics."
+      "a": "For-profit companies use 401(k) plans, not 457 plans.",
+      "b": "Self-employed people use SEP IRAs or solo 401(k)s.",
+      "d": "Public schools and 501(c)(3) groups use 403(b) plans."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1917,31 +1917,31 @@
     "id": "series-6-readiness-check-retirement-014",
     "examSlug": "series-6-readiness-check",
     "topicId": "retirement",
-    "prompt": "An inverted yield curve has often been watched as:",
+    "prompt": "A non-working spouse may contribute to a spousal IRA:",
     "options": [
       {
         "id": "a",
-        "text": "Evidence stocks cannot fall"
+        "text": "Only if the spouse has some earned income"
       },
       {
         "id": "b",
-        "text": "Proof inflation is always zero"
+        "text": "Only if both spouses file separate returns"
       },
       {
         "id": "c",
-        "text": "A possible recession warning signal"
+        "text": "If the working spouse has enough earned income"
       },
       {
         "id": "d",
-        "text": "A requirement to buy only munis"
+        "text": "Only if the spouse is at least age 50"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Inversion has historically preceded many U.S. recessions (not a guarantee)",
     "distractorExplanations": {
-      "a": "False.",
-      "b": "False.",
-      "d": "Unrelated mandate."
+      "a": "The spousal IRA exists for a spouse without earned income.",
+      "b": "Spousal IRAs require a joint return.",
+      "d": "Age affects catch-up amounts, not eligibility."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1950,31 +1950,31 @@
     "id": "series-6-readiness-check-retirement-015",
     "examSlug": "series-6-readiness-check",
     "topicId": "retirement",
-    "prompt": "Opportunity cost is",
+    "prompt": "Distributions a beneficiary takes from an inherited traditional IRA are generally:",
     "options": [
       {
         "id": "a",
-        "text": "Always an accounting depreciation entry"
+        "text": "Tax-free, since the owner already paid tax"
       },
       {
         "id": "b",
-        "text": "The value of the next-best alternative forgone"
+        "text": "Income-taxed, with no 10% penalty for heirs"
       },
       {
         "id": "c",
-        "text": "A type of put option"
+        "text": "Taxed at capital gains rates for all heirs"
       },
       {
         "id": "d",
-        "text": "Only brokerage commissions"
+        "text": "Income-taxed plus a 10% early penalty"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Economics defines opportunity cost as the forgone alternative.",
     "distractorExplanations": {
-      "a": "Accounting ≠ opportunity cost definition.",
-      "c": "Derivative.",
-      "d": "Too narrow."
+      "a": "Pre-tax traditional IRA money is taxed when heirs withdraw it.",
+      "c": "IRA distributions are taxed as ordinary income, not capital gains.",
+      "d": "Beneficiaries are exempt from the 10% early withdrawal penalty."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1987,27 +1987,27 @@
     "options": [
       {
         "id": "a",
-        "text": "On an exchange at prices unrelated to portfolio value"
+        "text": "On an exchange at prices set by buyers and sellers"
       },
       {
         "id": "b",
-        "text": "Only once at the fund's termination date"
+        "text": "At the prior day's NAV plus any accrued income"
       },
       {
         "id": "c",
-        "text": "Directly from other shareholders without fund involvement"
+        "text": "From other shareholders through the fund's transfer agent"
       },
       {
         "id": "d",
-        "text": "At net asset value (NAV) through the fund or its agent"
+        "text": "At net asset value through the fund or its agent"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Open-end funds continuously issue and redeem at NAV computed daily.",
     "distractorExplanations": {
-      "a": "Exchange trading describes ETFs/closed-end funds.",
-      "b": "Open-end funds do not terminate on a fixed UIT schedule.",
-      "c": "Primary transactions are with the fund."
+      "a": "Exchange trading at market prices describes ETFs and closed-end funds.",
+      "b": "Forward pricing uses the next NAV, not the prior day's.",
+      "c": "The fund itself issues and redeems shares; holders do not trade with each other."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2020,27 +2020,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Buys a fixed portfolio and terminates on a set date"
+        "text": "Holds a fixed portfolio and ends on a set date"
       },
       {
         "id": "b",
-        "text": "Actively changes holdings daily at the manager's discretion"
+        "text": "Has a board that hires an active portfolio manager"
       },
       {
         "id": "c",
-        "text": "Guarantees a minimum 10% annual return"
+        "text": "Trades on an exchange throughout the trading day"
       },
       {
         "id": "d",
-        "text": "Is FDIC insured like a bank CD"
+        "text": "Continuously issues shares to new investors"
       }
     ],
     "correctOptionId": "a",
     "explanation": "UITs are fixed baskets with stated termination; they are not actively managed ongoing.",
     "distractorExplanations": {
-      "b": "Active management describes mutual funds.",
-      "c": "Returns are not guaranteed.",
-      "d": "UITs are securities, not bank deposits."
+      "b": "UITs have no board or active manager.",
+      "c": "UIT units are usually redeemed with the sponsor, not traded intraday.",
+      "d": "UITs issue units once; continuous issuance describes open-end funds."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2053,27 +2053,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The representative's personal trading account"
+        "text": "The insurer's general account with a fixed rate"
       },
       {
         "id": "b",
-        "text": "Separate accounts segregated from the insurer's general account"
+        "text": "Separate accounts apart from the general account"
       },
       {
         "id": "c",
-        "text": "FDIC-insured checking at the client's bank"
+        "text": "A bank trust account insured by the FDIC"
       },
       {
         "id": "d",
-        "text": "Physical gold stored at the investor's home"
+        "text": "Guaranteed investment contracts from the insurer"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Separate account assets back variable annuity values apart from general account claims.",
     "distractorExplanations": {
-      "a": "Rep personal accounts are unrelated.",
-      "c": "Bank deposits differ from insurer separate accounts.",
-      "d": "Home storage is not a VA subaccount."
+      "a": "The general account backs fixed products, not variable subaccounts.",
+      "c": "Separate accounts are not bank accounts and are not FDIC insured.",
+      "d": "GICs are fixed-return contracts, not variable subaccounts."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2086,27 +2086,27 @@
     "options": [
       {
         "id": "a",
-        "text": "No sales charge ever and the highest 12b-1 fees"
+        "text": "A back-end CDSC with higher ongoing 12b-1 fees"
       },
       {
         "id": "b",
-        "text": "Only a back-end CDSC with zero ongoing expenses"
+        "text": "A level load charged each year with no CDSC"
       },
       {
         "id": "c",
-        "text": "A front-end sales load with lower ongoing 12b-1 fees"
+        "text": "A front-end load with lower ongoing 12b-1 fees"
       },
       {
         "id": "d",
-        "text": "A SEC registration fee paid directly by shareholders each trade"
+        "text": "No sales charge and no 12b-1 fees at all"
       }
     ],
     "correctOptionId": "c",
     "explanation": "A shares often have front loads and comparatively lower ongoing distribution fees.",
     "distractorExplanations": {
-      "a": "Many A shares have front loads.",
-      "b": "CDSC structures describe B or other share classes.",
-      "d": "SEC fees are not shareholder sales loads."
+      "a": "A back-end CDSC with higher 12b-1 fees describes Class B shares.",
+      "b": "A level annual charge describes Class C shares.",
+      "d": "No sales charge describes no-load shares, not Class A."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2119,27 +2119,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Federal income taxes owed by shareholders"
+        "text": "Portfolio management fees paid to the adviser"
       },
       {
         "id": "b",
-        "text": "Guaranteed death benefits in variable life"
+        "text": "Custody and transfer agent fees for the fund"
       },
       {
         "id": "c",
-        "text": "Exchange listing fees for closed-end funds"
+        "text": "Brokerage commissions on portfolio trades"
       },
       {
         "id": "d",
-        "text": "Marketing and distribution expenses included in the expense ratio"
+        "text": "Marketing and distribution costs"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Rule 12b-1 permits fund assets to pay distribution costs disclosed in the prospectus.",
     "distractorExplanations": {
-      "a": "Taxes are separate from fund expense ratios.",
-      "b": "Death benefits are insurance contract features.",
-      "c": "Listing fees are not 12b-1's purpose."
+      "a": "Management fees are a separate part of the expense ratio.",
+      "b": "Custody and transfer agent costs are other operating expenses.",
+      "c": "Brokerage commissions are not part of the expense ratio at all."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2152,27 +2152,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Reduce the sales charge percentage as investment amount increases"
+        "text": "Lower the sales charge as the purchase grows"
       },
       {
         "id": "b",
-        "text": "Eliminate the need to read the prospectus"
+        "text": "Raise the sales charge as the purchase grows"
       },
       {
         "id": "c",
-        "text": "Apply only to bond funds, never equity funds"
+        "text": "Apply only to purchases in a single account"
       },
       {
         "id": "d",
-        "text": "Increase loads as purchase size rises"
+        "text": "Waive the sales charge on all reinvestments"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Breakpoints reward larger purchases with lower load percentages per FINRA rules.",
     "distractorExplanations": {
-      "b": "Prospectus disclosure remains required.",
-      "c": "Breakpoints apply across fund types per offering.",
-      "d": "Loads decrease, not increase, with size."
+      "b": "Breakpoints reduce, not increase, the charge on larger purchases.",
+      "c": "Family accounts can often be combined to reach breakpoints.",
+      "d": "Reinvestment at NAV is a separate feature, not a breakpoint."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2185,27 +2185,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Personal income taxes of the portfolio manager"
+        "text": "Front-end sales loads paid when buying shares"
       },
       {
         "id": "b",
-        "text": "Management fees and other operating costs borne by the fund"
+        "text": "Management fees and other operating costs"
       },
       {
         "id": "c",
-        "text": "Commissions paid when shareholders buy on the secondary market from each other"
+        "text": "Brokerage commissions on portfolio trades"
       },
       {
         "id": "d",
-        "text": "State property taxes on the shareholder's home"
+        "text": "Taxes owed on the fund's distributions"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Expense ratios cover fund operating costs, not shareholder personal taxes or home taxes.",
     "distractorExplanations": {
-      "a": "Manager personal taxes are not fund expenses.",
-      "c": "Secondary market trades are outside the fund.",
-      "d": "Shareholder property taxes are unrelated."
+      "a": "Sales loads are charged at purchase, outside the expense ratio.",
+      "c": "Trading commissions are not included in the expense ratio.",
+      "d": "Taxes on distributions are paid by shareholders, not the fund."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2218,27 +2218,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Are fixed forever with no link to investments"
+        "text": "Are fixed, while the cash value is guaranteed"
       },
       {
         "id": "b",
-        "text": "Are paid from the FDIC if the insurer fails"
+        "text": "Are guaranteed to rise every year of the policy"
       },
       {
         "id": "c",
-        "text": "May vary with separate account performance subject to guaranteed minimums if purchased"
+        "text": "Can vary with performance above a minimum"
       },
       {
         "id": "d",
-        "text": "Decline to zero whenever the policyholder pays premiums"
+        "text": "Are paid from the insurer's general account only"
       }
     ],
     "correctOptionId": "c",
     "explanation": "VLI combines insurance protection with investment risk in separate accounts.",
     "distractorExplanations": {
-      "a": "Many VL policies link benefits to account performance.",
-      "b": "Insurance guaranty associations differ from FDIC.",
-      "d": "Premium payments fund the policy; benefits do not auto-zero."
+      "a": "Variable life cash values are not guaranteed.",
+      "b": "Death benefits can fall back toward the minimum after losses.",
+      "d": "Variable benefits depend on separate account performance."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2251,27 +2251,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Beat every benchmark by 20% every year"
+        "text": "Beat its benchmark through active stock picking"
       },
       {
         "id": "b",
-        "text": "Hold only one corporate bond at a time"
+        "text": "Hold only the ten largest stocks in the market"
       },
       {
         "id": "c",
-        "text": "Avoid all disclosure in the prospectus"
+        "text": "Change holdings based on market forecasts"
       },
       {
         "id": "d",
-        "text": "Track a stated benchmark with minimal active stock picking"
+        "text": "Track a stated benchmark at low cost"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Index funds replicate benchmarks passively with disclosed tracking methods.",
     "distractorExplanations": {
-      "a": "Outperformance every year is not the passive index goal.",
-      "b": "Index funds hold diversified baskets.",
-      "c": "Prospectus disclosure is mandatory."
+      "a": "Beating a benchmark is the goal of active funds.",
+      "b": "Index funds hold the index constituents, not only the largest ten.",
+      "c": "Forecast-driven changes are active management."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2284,27 +2284,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Market price is below the per-share value of underlying holdings"
+        "text": "Market price is below the value of its holdings"
       },
       {
         "id": "b",
-        "text": "The fund must liquidate immediately by law"
+        "text": "Market price is above the value of its holdings"
       },
       {
         "id": "c",
-        "text": "Shareholders are guaranteed a premium at redemption with the issuer daily"
+        "text": "The fund is charging a sales load on purchases"
       },
       {
         "id": "d",
-        "text": "The fund has zero operating expenses"
+        "text": "The fund must buy back shares at NAV right away"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Discounts/premiums reflect supply and demand distinct from NAV.",
     "distractorExplanations": {
-      "b": "Trading discounts do not force liquidation.",
-      "c": "Closed-end funds do not redeem daily at NAV.",
-      "d": "Operating expenses still apply."
+      "b": "Price above NAV is a premium, not a discount.",
+      "c": "Discounts reflect market pricing, not sales loads.",
+      "d": "Closed-end funds do not have to redeem shares at NAV."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2317,27 +2317,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Elimination of all market risk without fees"
+        "text": "Protection from market losses at no added cost"
       },
       {
         "id": "b",
-        "text": "Guaranteed minimum withdrawal benefits for additional cost"
+        "text": "A guaranteed minimum withdrawal, for a fee"
       },
       {
         "id": "c",
-        "text": "FDIC insurance on separate account values"
+        "text": "A higher death benefit paid only to a spouse"
       },
       {
         "id": "d",
-        "text": "Immediate tax-free access with no IRS rules"
+        "text": "Tax-free withdrawals during the payout phase"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Riders add guarantees for extra charges; they do not remove all costs or tax rules.",
     "distractorExplanations": {
-      "a": "Market risk remains outside guaranteed elements.",
-      "c": "Separate accounts are not FDIC insured.",
-      "d": "Tax rules still apply to withdrawals."
+      "a": "Living benefit riders cost extra.",
+      "c": "Enhanced death benefits are death benefit riders, not living benefits.",
+      "d": "Riders do not change how withdrawals are taxed."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2350,27 +2350,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The number of shareholder phone calls to the transfer agent"
+        "text": "How often shareholders redeem their shares"
       },
       {
         "id": "b",
-        "text": "The fund's rank on social media trending lists"
+        "text": "The fund's asset growth over the year"
       },
       {
         "id": "c",
-        "text": "How frequently the portfolio's holdings are traded"
+        "text": "How often the fund's holdings are traded"
       },
       {
         "id": "d",
-        "text": "Only redemptions by shareholders, not portfolio trades"
+        "text": "The share of assets held in cash"
       }
     ],
     "correctOptionId": "c",
     "explanation": "High turnover can increase trading costs and tax inefficiency in taxable accounts.",
     "distractorExplanations": {
-      "a": "Call volume is operational, not turnover.",
-      "b": "Social trends are unrelated.",
-      "d": "Turnover measures portfolio trading."
+      "a": "Redemption activity is not the turnover ratio.",
+      "b": "Asset growth is a separate statistic.",
+      "d": "Cash allocation is not turnover."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2379,31 +2379,31 @@
     "id": "series-6-readiness-check-products-028",
     "examSlug": "series-6-readiness-check",
     "topicId": "products",
-    "prompt": "When comparing no-load funds, a Series 6 rep should emphasize",
+    "prompt": "When comparing no-load funds, a representative should emphasize:",
     "options": [
       {
         "id": "a",
-        "text": "Only historical performance from a single good year"
+        "text": "Recent one-year returns compared with peers"
       },
       {
         "id": "b",
-        "text": "Guaranteed future returns printed on marketing flyers"
+        "text": "Star ratings from a fund rating service"
       },
       {
         "id": "c",
-        "text": "Ignoring share class differences in 401(k) plans"
+        "text": "The size of each fund's assets under management"
       },
       {
         "id": "d",
-        "text": "Expense ratios, investment objectives, and risk disclosures in the prospectus"
+        "text": "Expenses, objectives, and prospectus risks"
       }
     ],
     "correctOptionId": "d",
     "explanation": "No-load does not mean no costs; expenses and fit still drive suitability.",
     "distractorExplanations": {
-      "a": "Single-year performance is incomplete.",
-      "b": "Future returns cannot be guaranteed.",
-      "c": "Plan share classes need comparison."
+      "a": "Short-term returns alone are a weak basis for comparison.",
+      "b": "Ratings are backward-looking and do not replace the prospectus.",
+      "c": "Fund size says little about costs or fit."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2416,27 +2416,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Tax-deferred replacement of one annuity contract with another if requirements are met"
+        "text": "Tax-free exchange of one annuity for another"
       },
       {
         "id": "b",
-        "text": "Permanent elimination of all tax on earnings without withdrawal rules"
+        "text": "Tax-free withdrawal of gains after age 59½"
       },
       {
         "id": "c",
-        "text": "Conversion of the annuity into common stock of the insurer"
+        "text": "Conversion of an annuity into a Roth IRA"
       },
       {
         "id": "d",
-        "text": "Bypassing suitability review because taxes are deferred"
+        "text": "A rollover of an annuity into a 401(k) plan"
       }
     ],
     "correctOptionId": "a",
     "explanation": "1035 exchanges defer gain recognition but new contracts must still be suitable.",
     "distractorExplanations": {
-      "b": "Tax deferral continues; eventual taxation may apply on withdrawals.",
-      "c": "Exchanges are contract-to-contract, not stock conversion.",
-      "d": "Suitability still applies."
+      "b": "Section 1035 concerns exchanges, not tax-free withdrawals.",
+      "c": "Roth conversions are separate and taxable.",
+      "d": "Section 1035 covers contract-to-contract exchanges, not plan rollovers."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2449,27 +2449,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Physical real estate rentals managed by shareholders"
+        "text": "Individual stocks chosen by a single manager"
       },
       {
         "id": "b",
-        "text": "Other mutual funds rather than direct securities only"
+        "text": "Other mutual funds, not direct securities"
       },
       {
         "id": "c",
-        "text": "Single-stock portfolios with no diversification"
+        "text": "Real estate held directly by the fund"
       },
       {
         "id": "d",
-        "text": "FDIC-insured CDs from multiple banks"
+        "text": "Bank CDs from several insured banks"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Funds of funds add a layer of fees and diversification through underlying funds.",
     "distractorExplanations": {
-      "a": "Real estate funds exist but fund-of-funds hold other funds.",
-      "c": "They diversify across funds, not one stock.",
-      "d": "They are securities funds, not bank CD baskets by definition."
+      "a": "A fund of funds holds other funds, not stocks directly.",
+      "c": "Direct real estate is not a fund-of-funds holding.",
+      "d": "Funds of funds do not mainly hold CDs."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2478,31 +2478,31 @@
     "id": "series-6-readiness-check-suitability-016",
     "examSlug": "series-6-readiness-check",
     "topicId": "suitability",
-    "prompt": "Before recommending a mutual fund, a Series 6 rep must have",
+    "prompt": "Before recommending a mutual fund, a representative must have:",
     "options": [
       {
         "id": "a",
-        "text": "No knowledge of the fund's investment objective"
+        "text": "A signed risk disclosure from the customer"
       },
       {
         "id": "b",
-        "text": "Only a guess about next week's market direction"
+        "text": "The fund's top rating from a research service"
       },
       {
         "id": "c",
-        "text": "Permission to ignore the customer's investment profile"
+        "text": "Approval from the fund's wholesaler"
       },
       {
         "id": "d",
-        "text": "A reasonable basis that the fund is suitable for some investors and fair dealing for the specific customer"
+        "text": "A reasonable basis and customer-specific fit"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Reasonable-basis and customer-specific suitability apply to fund recommendations.",
     "distractorExplanations": {
-      "a": "Objectives must be understood from the prospectus.",
-      "b": "Market guesses are not suitability analysis.",
-      "c": "Customer profile is required."
+      "a": "A signature does not replace the representative's suitability analysis.",
+      "b": "Ratings do not show suitability for a specific customer.",
+      "c": "Wholesaler approval is not a suitability requirement."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2515,27 +2515,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Highly volatile sector funds requiring long recovery periods"
+        "text": "Highly volatile sector funds"
       },
       {
         "id": "b",
-        "text": "Investment-grade bond funds if suitable and understood"
+        "text": "Investment-grade bond funds"
       },
       {
         "id": "c",
-        "text": "Balanced funds aligned with moderate risk"
+        "text": "Conservative balanced funds"
       },
       {
         "id": "d",
-        "text": "Money market funds for near-term cash needs"
+        "text": "Money market funds for cash"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Volatile equity sectors may be unsuitable when preservation and income dominate.",
     "distractorExplanations": {
-      "b": "Bond funds may fit income needs if suitable.",
-      "c": "Balanced funds can match moderate profiles.",
-      "d": "Money markets address liquidity."
+      "b": "Investment-grade bond funds can fit an income-seeking conservative investor.",
+      "c": "Conservative balanced funds may be appropriate.",
+      "d": "Money market funds suit near-term cash needs."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2548,27 +2548,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The SEC's annual examination schedule"
+        "text": "The commission the representative earns"
       },
       {
         "id": "b",
-        "text": "Whether a recommended fund matches the customer's goals"
+        "text": "Whether a recommended fund fits the goals"
       },
       {
         "id": "c",
-        "text": "The firm's office lease terms"
+        "text": "The firm's margin requirements for the account"
       },
       {
         "id": "d",
-        "text": "Unrelated insurance licensing in other states"
+        "text": "The account's eligibility for SIPC coverage"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Objectives like growth, income, or preservation guide fund selection.",
     "distractorExplanations": {
-      "a": "SEC exams are not set by customer forms.",
-      "c": "Office leases are operational.",
-      "d": "Licensing is separate from customer objectives."
+      "a": "Commission is not determined by the objective.",
+      "c": "Margin requirements are set by rules, not the objective.",
+      "d": "SIPC eligibility does not depend on objectives."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2581,27 +2581,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Maximum allocation to speculative growth funds"
+        "text": "Growth funds for higher expected returns"
       },
       {
         "id": "b",
-        "text": "Long surrender-charge annuities without liquidity needs analysis"
+        "text": "Long-term bond funds for higher yields"
       },
       {
         "id": "c",
-        "text": "Principal stability and liquidity over aggressive growth funds"
+        "text": "Principal stability and liquidity"
       },
       {
         "id": "d",
-        "text": "Ignoring when the money will be needed"
+        "text": "A variable annuity for tax deferral"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Short horizons reduce ability to recover from equity drawdowns.",
     "distractorExplanations": {
-      "a": "Aggressive growth conflicts with near-term spending.",
-      "b": "Surrender charges may trap needed cash.",
-      "d": "Timing of need is central to suitability."
+      "a": "Growth funds can fall sharply in the short term.",
+      "b": "Long-term bond funds lose value when rates rise.",
+      "d": "Annuity surrender charges conflict with near-term needs."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2614,27 +2614,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Eliminating the need for prospectus delivery"
+        "text": "Choosing the fund with the best past returns"
       },
       {
         "id": "b",
-        "text": "Guaranteeing the fund will not lose value"
+        "text": "Setting the customer's investment objective"
       },
       {
         "id": "c",
-        "text": "Replacing FINRA registration requirements"
+        "text": "Replacing the need to explain fund risks"
       },
       {
         "id": "d",
-        "text": "Documenting how much volatility a client can accept emotionally and financially"
+        "text": "Documenting how much volatility fits"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Tolerance informs whether a fund's volatility fits the client.",
     "distractorExplanations": {
-      "a": "Prospectus delivery remains required.",
-      "b": "Funds can lose value.",
-      "c": "Registration is unrelated."
+      "a": "Questionnaires measure the client, not fund performance.",
+      "b": "Objectives are set with the client; the questionnaire is one input.",
+      "c": "Risk disclosure is still required."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2643,31 +2643,31 @@
     "id": "series-6-readiness-check-suitability-021",
     "examSlug": "series-6-readiness-check",
     "topicId": "suitability",
-    "prompt": "When a customer cannot afford loss of principal, recommending a aggressive growth fund is",
+    "prompt": "When a customer cannot afford loss of principal, recommending an aggressive growth fund is:",
     "options": [
       {
         "id": "a",
-        "text": "Likely unsuitable unless other factors clearly override with documentation"
+        "text": "Likely unsuitable without clear documentation"
       },
       {
         "id": "b",
-        "text": "Required because growth funds always outperform"
+        "text": "Suitable if the fund has a strong track record"
       },
       {
         "id": "c",
-        "text": "Irrelevant because suitability applies only to options"
+        "text": "Suitable if the customer signs a waiver"
       },
       {
         "id": "d",
-        "text": "Encouraged if the fund had a good last quarter"
+        "text": "Suitable if the position is under 50% of assets"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Financial ability to bear loss is core to suitability.",
     "distractorExplanations": {
-      "b": "Outperformance is not guaranteed.",
-      "c": "Suitability applies to fund recommendations.",
-      "d": "Recent performance alone is insufficient."
+      "b": "Past performance does not make a volatile fund suitable for someone who cannot bear loss.",
+      "c": "Waivers do not cure unsuitable recommendations.",
+      "d": "An arbitrary percentage does not make it suitable."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2680,27 +2680,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Automatic tax deduction at purchase"
+        "text": "Tax deductions for annuity contributions"
       },
       {
         "id": "b",
-        "text": "Surrender charges and liquidity constraints"
+        "text": "Surrender charges and limited liquidity"
       },
       {
         "id": "c",
-        "text": "FDIC insurance on cash value"
+        "text": "The annuity's death benefit guarantee"
       },
       {
         "id": "d",
-        "text": "Zero disclosure requirements"
+        "text": "The insurer's financial strength rating"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Early withdrawals may trigger charges and tax consequences.",
     "distractorExplanations": {
-      "a": "Tax treatment follows contract rules, not automatic purchase deductions.",
-      "c": "VA values are not FDIC insured.",
-      "d": "Prospectus and disclosure are mandatory."
+      "a": "Nonqualified annuity contributions are not deductible, but the main issue is liquidity.",
+      "c": "The death benefit does not address a need for cash in two years.",
+      "d": "Insurer strength matters, but it does not solve liquidity needs."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2713,27 +2713,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Guarantees profit in every market environment"
+        "text": "Guarantees a lower average price per share"
       },
       {
         "id": "b",
-        "text": "Eliminates all sales charges without prospectus review"
+        "text": "Removes sales charges from each purchase"
       },
       {
         "id": "c",
-        "text": "May reduce timing risk by investing fixed amounts periodically if suitable"
+        "text": "May reduce timing risk with fixed amounts"
       },
       {
         "id": "d",
-        "text": "Exempts the rep from knowing the customer"
+        "text": "Protects the account against market losses"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Dollar-cost averaging can smooth entry but does not ensure gains.",
     "distractorExplanations": {
-      "a": "Losses are still possible.",
-      "b": "Loads/fees depend on share class.",
-      "d": "Know-your-customer still applies."
+      "a": "DCA often lowers the average cost, but it does not guarantee it.",
+      "b": "Sales charges still apply to periodic purchases.",
+      "d": "Periodic investing does not protect against losses."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2746,27 +2746,27 @@
     "options": [
       {
         "id": "a",
-        "text": "That expenses do not affect long-term results"
+        "text": "How the fund's past returns justify the cost"
       },
       {
         "id": "b",
-        "text": "That higher expenses guarantee better management"
+        "text": "How the fund's rating compares to its peers"
       },
       {
         "id": "c",
-        "text": "That the prospectus omits fee data"
+        "text": "How higher costs signal better management"
       },
       {
         "id": "d",
-        "text": "How ongoing costs may reduce net returns over time"
+        "text": "How ongoing costs reduce net returns"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Fees compound against returns; disclosure supports informed consent.",
     "distractorExplanations": {
-      "a": "Expenses materially affect net performance.",
-      "b": "Higher fees do not guarantee results.",
-      "c": "Prospectuses disclose fees."
+      "a": "Past returns do not justify future costs.",
+      "b": "Ratings do not explain the cost impact.",
+      "c": "Higher fees do not indicate better management."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2779,27 +2779,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Tax-managed or municipal funds when consistent with objectives"
+        "text": "Tax-managed or municipal bond funds"
       },
       {
         "id": "b",
-        "text": "Funds that maximize taxable distributions unnecessarily"
+        "text": "High-yield corporate bond funds"
       },
       {
         "id": "c",
-        "text": "Any fund regardless of dividend policy"
+        "text": "Actively traded sector funds"
       },
       {
         "id": "d",
-        "text": "Only variable annuities with no tax analysis"
+        "text": "Real estate investment trust funds"
       }
     ],
     "correctOptionId": "a",
     "explanation": "After-tax returns matter in taxable accounts.",
     "distractorExplanations": {
-      "b": "Unnecessary distributions increase taxes.",
-      "c": "Dividend policy should align with tax situation.",
-      "d": "Annuities have their own tax rules needing analysis."
+      "b": "High-yield bond interest is fully taxable.",
+      "c": "Active trading creates taxable distributions.",
+      "d": "REIT dividends are mostly taxed as ordinary income."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2812,27 +2812,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the rep's commission potential"
+        "text": "Which option pays the representative more"
       },
       {
         "id": "b",
-        "text": "Fees, investment options, advice availability, and creditor protections"
+        "text": "Fees, options, advice, and protections"
       },
       {
         "id": "c",
-        "text": "Promising the IRA will beat the plan every year"
+        "text": "Only the investment choices in each"
       },
       {
         "id": "d",
-        "text": "Ignoring whether the client still works for the sponsor"
+        "text": "Only the past returns of each option"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Rollover recommendations require balanced analysis of plan versus IRA features.",
     "distractorExplanations": {
-      "a": "Compensation conflicts must be managed, not sole driver.",
-      "c": "Performance cannot be guaranteed.",
-      "d": "Employment status affects plan options."
+      "a": "Representative compensation cannot drive the recommendation.",
+      "c": "Investment choices are one factor among several.",
+      "d": "Past returns do not capture fees, services, or protections."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2845,27 +2845,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Separate accounts cannot decline in value"
+        "text": "Separate account values are fully guaranteed"
       },
       {
         "id": "b",
-        "text": "All guarantees are free with no ongoing charges"
+        "text": "All riders are included at no extra cost"
       },
       {
         "id": "c",
-        "text": "Separate account values fluctuate and guarantees may cost extra via riders"
+        "text": "Values fluctuate; guarantees may cost extra"
       },
       {
         "id": "d",
-        "text": "Suitability does not apply to insurance products"
+        "text": "Subaccounts are insured by the FDIC"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Variable products carry market risk unless specific guarantees are purchased.",
     "distractorExplanations": {
-      "a": "Subaccounts can lose value.",
-      "b": "Riders typically add fees.",
-      "d": "Insurance securities require suitability."
+      "a": "Separate account values can decline.",
+      "b": "Riders usually carry extra charges.",
+      "d": "Subaccounts are not FDIC insured."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2878,27 +2878,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Automatically best because CDSC never applies"
+        "text": "Better because B shares have no sales charge"
       },
       {
         "id": "b",
-        "text": "Unrelated to purchase size or holding period"
+        "text": "Better because the CDSC falls over time"
       },
       {
         "id": "c",
-        "text": "Exempt from comparison under suitability"
+        "text": "Equal to A shares for any purchase size"
       },
       {
         "id": "d",
-        "text": "Less favorable than breakpointed A shares or no-load alternatives depending on costs"
+        "text": "Worse than A shares with breakpoints"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Share class selection must consider length of hold and total costs.",
     "distractorExplanations": {
-      "a": "CDSC may apply on early redemption.",
-      "b": "Size and horizon affect class economics.",
-      "c": "Cost comparison is required."
+      "a": "B shares carry a CDSC and higher 12b-1 fees.",
+      "b": "A declining CDSC does not beat A-share breakpoints on large purchases.",
+      "c": "Large purchases often get A-share discounts that B shares lack."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2911,27 +2911,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Unsuitable and violates fair dealing obligations"
+        "text": "Unsuitable and a fair dealing violation"
       },
       {
         "id": "b",
-        "text": "Encouraged if the new fund has a higher load"
+        "text": "Acceptable within the same fund family"
       },
       {
         "id": "c",
-        "text": "Allowed if the client initials a blank form"
+        "text": "Acceptable if the client signs off"
       },
       {
         "id": "d",
-        "text": "Permitted every month regardless of client harm"
+        "text": "Acceptable if the new fund performs better"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Excessive switching harms clients through costs and taxes.",
     "distractorExplanations": {
-      "b": "Higher loads increase conflict, not justification.",
-      "c": "Blanket forms do not cure churning.",
-      "d": "Frequency must serve client interests."
+      "b": "Switching to earn commissions is improper even within one family.",
+      "c": "A signature does not cure a commission-driven switch.",
+      "d": "Later performance does not justify switching for commissions."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2944,27 +2944,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Use only the more aggressive spouse's profile silently"
+        "text": "Use the more aggressive spouse's profile"
       },
       {
         "id": "b",
-        "text": "Document both profiles and recommend investments suitable for the stated joint objective"
+        "text": "Document both profiles and the joint goal"
       },
       {
         "id": "c",
-        "text": "Ignore the conservative spouse entirely"
+        "text": "Use the more conservative spouse's profile"
       },
       {
         "id": "d",
-        "text": "Split accounts without discussing goals"
+        "text": "Open separate accounts without discussion"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Joint accounts require understanding both owners and the account's purpose.",
     "distractorExplanations": {
-      "a": "Both owners' inputs matter.",
-      "c": "Ignoring one owner violates know-your-customer.",
-      "d": "Goals should drive account structure."
+      "a": "Ignoring one owner's profile risks unsuitable advice.",
+      "c": "Defaulting to one owner ignores the joint objective.",
+      "d": "Splitting accounts without discussing goals skips the analysis."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2977,15 +2977,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Commercial bank deposit insurance limits"
+        "text": "Broker-dealer registration and net capital rules"
       },
       {
         "id": "b",
-        "text": "State property tax assessments"
+        "text": "Public offerings of new corporate securities"
       },
       {
         "id": "c",
-        "text": "Airline safety certification"
+        "text": "Trading on national securities exchanges and OTC"
       },
       {
         "id": "d",
@@ -2995,9 +2995,9 @@
     "correctOptionId": "d",
     "explanation": "The 1940 Act governs fund structure, disclosure, and fiduciary duties of funds.",
     "distractorExplanations": {
-      "a": "Deposit insurance is FDIC banking law.",
-      "b": "Property tax is unrelated.",
-      "c": "Aviation safety is unrelated."
+      "a": "Broker-dealer registration falls under the Securities Exchange Act of 1934.",
+      "b": "Public offerings are governed by the Securities Act of 1933.",
+      "c": "Exchange trading is regulated under the 1934 Act."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3010,27 +3010,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Delivered or provided before or at the time of sale"
+        "text": "Delivered or made available at or before the sale"
       },
       {
         "id": "b",
-        "text": "Optional if the customer is experienced"
+        "text": "Delivered within 90 days after the purchase date"
       },
       {
         "id": "c",
-        "text": "Destroyed immediately after purchase"
+        "text": "Delivered only if the customer asks for a copy"
       },
       {
         "id": "d",
-        "text": "Provided only after redemption requests"
+        "text": "Delivered only to first-time fund investors"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Prospectus delivery ensures investors receive material fund information.",
     "distractorExplanations": {
-      "b": "Experience does not waive prospectus rules.",
-      "c": "Records must be kept; destruction is improper.",
-      "d": "Delivery precedes or accompanies sale."
+      "b": "Delivery after 90 days is too late.",
+      "c": "Delivery is required, not only on request.",
+      "d": "Every purchaser must receive a prospectus."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3043,27 +3043,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Federal Reserve open-market operations"
+        "text": "Suitability of customer recommendations"
       },
       {
         "id": "b",
-        "text": "Communications with the public by broker-dealers"
+        "text": "Communications with the public by members"
       },
       {
         "id": "c",
-        "text": "FDA drug labeling"
+        "text": "Outside business activities of representatives"
       },
       {
         "id": "d",
-        "text": "Local zoning ordinances"
+        "text": "Customer account statements and confirmations"
       }
     ],
     "correctOptionId": "b",
     "explanation": "2210 sets standards for fair, balanced, and not misleading communications.",
     "distractorExplanations": {
-      "a": "Fed operations are monetary policy.",
-      "c": "FDA regulates drugs.",
-      "d": "Zoning is municipal land use."
+      "a": "Suitability is Rule 2111.",
+      "c": "Outside business activities fall under Rule 3270.",
+      "d": "Account statements are Rule 2231."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3076,27 +3076,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The client's social security numbers"
+        "text": "The representative's personal account balances"
       },
       {
         "id": "b",
-        "text": "Proprietary trading algorithms of the firm"
+        "text": "The firm's commission schedule for the rep"
       },
       {
         "id": "c",
-        "text": "Qualifications, registrations, and disclosed disciplinary events"
+        "text": "Registrations, exams, and disclosure events"
       },
       {
         "id": "d",
-        "text": "Unrelated medical history of the rep"
+        "text": "Customer complaints only after arbitration"
       }
     ],
     "correctOptionId": "c",
     "explanation": "CRD/ BrokerCheck discloses rep credentials and certain disclosures.",
     "distractorExplanations": {
-      "a": "Client SSNs are confidential.",
-      "b": "Algorithms are proprietary.",
-      "d": "Medical history is irrelevant."
+      "a": "Personal balances are not CRD data.",
+      "b": "Commission schedules are not part of CRD.",
+      "d": "CRD includes reportable complaints, not only arbitrated ones."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3109,27 +3109,27 @@
     "options": [
       {
         "id": "a",
-        "text": "No disclosure because plans are informal gifts"
+        "text": "Only state insurance rules, since 529s are not securities"
       },
       {
         "id": "b",
-        "text": "Automatic exemption from all FINRA communications standards"
+        "text": "No prospectus, since the state sponsors the plan"
       },
       {
         "id": "c",
-        "text": "Only insurance department rules with no securities oversight"
+        "text": "Only MSRB approval of each individual sale"
       },
       {
         "id": "d",
-        "text": "Compliance with securities rules and plan program disclosures"
+        "text": "Securities rules and plan disclosure documents"
       }
     ],
     "correctOptionId": "d",
     "explanation": "529 plans are securities programs subject to applicable rules.",
     "distractorExplanations": {
-      "a": "529s are formal tax-advantaged plans.",
-      "b": "FINRA communications rules may apply.",
-      "c": "Securities regulators oversee 529 programs."
+      "a": "529 plans are municipal fund securities under securities rules.",
+      "b": "529 plans provide an offering document that must be delivered.",
+      "c": "MSRB rules apply, but they do not require approval of each sale."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3142,27 +3142,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Content is fair, balanced, and not misleading before use"
+        "text": "Content is fair, balanced, and not misleading"
       },
       {
         "id": "b",
-        "text": "Maximum exaggeration to attract clicks"
+        "text": "Content is approved by FINRA before its use"
       },
       {
         "id": "c",
-        "text": "Omission of all risk disclosures"
+        "text": "Content includes a guarantee of performance"
       },
       {
         "id": "d",
-        "text": "Use of guaranteed performance claims freely"
+        "text": "Content is filed with the SEC before its use"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Supervisors review materials for compliance with communication rules.",
     "distractorExplanations": {
-      "b": "Exaggeration violates standards.",
-      "c": "Risk disclosure is required.",
-      "d": "Guarantees are prohibited."
+      "b": "Principal approval is internal; FINRA filing is separate.",
+      "c": "Performance guarantees are prohibited.",
+      "d": "Retail communications are not filed with the SEC for approval."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3175,27 +3175,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Show only the best month without context"
+        "text": "Show returns since the fund's best year"
       },
       {
         "id": "b",
-        "text": "Include standardized time periods and disclose expenses as required"
+        "text": "Include standard periods and expenses"
       },
       {
         "id": "c",
-        "text": "Use hypothetical returns as actual without labeling"
+        "text": "Show only gross returns before fees"
       },
       {
         "id": "d",
-        "text": "Imply FINRA endorsement of the fund"
+        "text": "Include a projected future return"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Performance ads follow FINRA/SEC guidance on time periods and disclosures.",
     "distractorExplanations": {
-      "a": "Cherry-picking misleads investors.",
-      "c": "Hypotheticals must be labeled.",
-      "d": "FINRA does not endorse funds."
+      "a": "Choosing a favorable start date is cherry-picking.",
+      "c": "Fee disclosure is required for fair presentation.",
+      "d": "Projections of fund performance are generally prohibited."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3208,27 +3208,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Promise maximum illustrated rates as contractual guarantees"
+        "text": "Show the highest rate as a guaranteed value"
       },
       {
         "id": "b",
-        "text": "Omit fees to simplify the presentation"
+        "text": "Show only the guaranteed values, not projections"
       },
       {
         "id": "c",
-        "text": "Distinguish guaranteed elements from nonguaranteed assumptions"
+        "text": "Separate guaranteed and nonguaranteed values"
       },
       {
         "id": "d",
-        "text": "Replace the statutory prospectus entirely"
+        "text": "Use the illustration in place of the prospectus"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Illustrations are educational; guarantees must be clearly identified separately.",
     "distractorExplanations": {
-      "a": "Nonguaranteed elements are not promises.",
-      "b": "Fees affect outcomes and must be disclosed.",
-      "d": "Prospectuses remain required."
+      "a": "Illustrations cannot present hypothetical rates as guarantees.",
+      "b": "Illustrations may show projections if clearly labeled.",
+      "d": "Illustrations must be accompanied or preceded by the prospectus."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3241,27 +3241,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore it unless the customer sues in court"
+        "text": "Respond only if the complaint is in writing"
       },
       {
         "id": "b",
-        "text": "Delete emails to reduce recordkeeping"
+        "text": "Refer the customer directly to FINRA"
       },
       {
         "id": "c",
-        "text": "Transfer the account without addressing the issue"
+        "text": "Close the account to end the dispute"
       },
       {
         "id": "d",
-        "text": "Log, supervise, and respond per firm procedures and regulatory rules"
+        "text": "Log, supervise, and respond per procedures"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Complaint handling is part of supervisory systems.",
     "distractorExplanations": {
-      "a": "Early response may resolve issues; rules require tracking.",
-      "b": "Destroying records violates requirements.",
-      "c": "Transfer alone does not cure complaints."
+      "a": "Firms must handle complaints under procedures, and written complaints must be recorded.",
+      "b": "Firms must handle complaints themselves.",
+      "c": "Closing the account does not resolve the firm's obligations."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3274,27 +3274,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Registration or notice filing for mutual fund offerings sold in the state"
+        "text": "Registration or notice filing in the state"
       },
       {
         "id": "b",
-        "text": "Elimination of all SEC disclosure requirements"
+        "text": "Full merit review of each fund offered"
       },
       {
         "id": "c",
-        "text": "Approval of every trade ticket by the governor"
+        "text": "Approval of each sale by the administrator"
       },
       {
         "id": "d",
-        "text": "Exemption of all variable contracts from any oversight"
+        "text": "No filing, since funds are federal covered"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Funds must comply with federal and applicable state securities laws.",
     "distractorExplanations": {
-      "b": "SEC rules still apply federally.",
-      "c": "Governors do not approve tickets.",
-      "d": "Variable contracts remain regulated."
+      "b": "Mutual funds are federal covered and not subject to state merit review.",
+      "c": "States do not approve individual sales.",
+      "d": "States may still require notice filings and fees."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3307,27 +3307,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Acceptance of anonymous cash with no questions"
+        "text": "Filing a report for every wire transfer"
       },
       {
         "id": "b",
-        "text": "Customer identification and monitoring of suspicious activity"
+        "text": "Customer identification and monitoring"
       },
       {
         "id": "c",
-        "text": "Sharing SAR filings publicly on social media"
+        "text": "Refusing all cash deposits from customers"
       },
       {
         "id": "d",
-        "text": "Ignoring large wire transfers from unrelated third parties"
+        "text": "Annual audits by FinCEN of every firm"
       }
     ],
     "correctOptionId": "b",
     "explanation": "AML rules implement BSA requirements through FINRA procedures.",
     "distractorExplanations": {
-      "a": "Customer identification is mandatory.",
-      "c": "SAR confidentiality must be maintained.",
-      "d": "Suspicious activity must be monitored."
+      "a": "Not every wire requires a report.",
+      "c": "Firms may accept cash with reporting rules.",
+      "d": "FinCEN does not audit every firm annually."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3340,27 +3340,27 @@
     "options": [
       {
         "id": "a",
-        "text": "May be taken freely to a competitor without restriction"
+        "text": "Moves with the rep if customers agree verbally"
       },
       {
         "id": "b",
-        "text": "Should be posted online for marketing"
+        "text": "Is shared between the old and new firm"
       },
       {
         "id": "c",
-        "text": "Remains with the firm; soliciting customers improperly may violate protocols"
+        "text": "Stays with the firm; improper use is barred"
       },
       {
         "id": "d",
-        "text": "Must be destroyed to protect the departing rep"
+        "text": "Is deleted once the rep leaves the firm"
       }
     ],
     "correctOptionId": "c",
     "explanation": "PII belongs to the firm; departing rep rules govern client contact.",
     "distractorExplanations": {
-      "a": "Customer lists are firm assets subject to agreements.",
-      "b": "Public posting violates privacy.",
-      "d": "Records must be retained per rules."
+      "a": "Customer records belong to the firm, not the representative.",
+      "b": "Firms do not split customer records.",
+      "d": "Records must be retained, not deleted."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3369,31 +3369,31 @@
     "id": "series-6-readiness-check-regulations-028",
     "examSlug": "series-6-readiness-check",
     "topicId": "regulations",
-    "prompt": "Under FINRA rules, gifts to associated persons from mutual fund vendors above thresholds",
+    "prompt": "Under FINRA rules, gifts to associated persons from fund vendors above the threshold:",
     "options": [
       {
         "id": "a",
-        "text": "Are unlimited if labeled 'marketing support'"
+        "text": "Allowed without limit if disclosed"
       },
       {
         "id": "b",
-        "text": "Must be kept secret from compliance"
+        "text": "Allowed if under $500 per person"
       },
       {
         "id": "c",
-        "text": "Automatically improve suitability outcomes"
+        "text": "Allowed if paid by the fund itself"
       },
       {
         "id": "d",
-        "text": "Require supervision and may be restricted to prevent conflicts"
+        "text": "Supervised and limited by rule"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Gift rules reduce undue influence on fund sales.",
     "distractorExplanations": {
-      "a": "Limits apply regardless of labeling.",
-      "b": "Compliance must oversee gifts.",
-      "c": "Gifts do not replace suitability."
+      "a": "FINRA limits gifts; disclosure alone is not enough.",
+      "b": "FINRA Rule 3220 sets a much lower annual per-person limit, and firm approval rules still apply.",
+      "c": "Who pays does not remove the limit."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3406,27 +3406,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Follow correction and disclosure procedures per fund and regulatory requirements"
+        "text": "Follow correction and disclosure procedures"
       },
       {
         "id": "b",
-        "text": "Ignore minor errors because shareholders will not notice"
+        "text": "Correct errors only above a set dollar amount"
       },
       {
         "id": "c",
-        "text": "Hide errors until the next marketing campaign"
+        "text": "Pass the cost of the error to shareholders"
       },
       {
         "id": "d",
-        "text": "Charge customers fees to cover the mistake secretly"
+        "text": "Correct the error at the next audit date"
       }
     ],
     "correctOptionId": "a",
     "explanation": "NAV errors can require refunds or corrections under fund policies and rules.",
     "distractorExplanations": {
-      "b": "Errors require remediation.",
-      "c": "Concealment violates duties.",
-      "d": "Secret fees are improper."
+      "b": "Funds have materiality policies, but they still follow procedures for every error.",
+      "c": "Shareholders should not bear the fund's errors.",
+      "d": "Correction must be prompt, not at the next audit."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3439,27 +3439,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Is prohibited in every circumstance without exception"
+        "text": "Allowed with no special rules"
       },
       {
         "id": "b",
-        "text": "Is subject to margin rules and suitability considerations"
+        "text": "Subject to margin and suitability rules"
       },
       {
         "id": "c",
-        "text": "Eliminates all risk disclosure obligations"
+        "text": "Allowed only in retirement accounts"
       },
       {
         "id": "d",
-        "text": "Exempts the transaction from FINRA oversight"
+        "text": "Allowed if shares are held over a year"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Margin increases risk; firms must approve and disclose accordingly.",
     "distractorExplanations": {
-      "a": "Some margin use may be permitted with approval.",
-      "c": "Risk disclosure remains.",
-      "d": "FINRA margin rules apply."
+      "a": "Margin rules and suitability still apply.",
+      "c": "Margin is not allowed in retirement accounts.",
+      "d": "Holding period does not govern margin use."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3472,27 +3472,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Always tax-deductible with no income limits ever"
+        "text": "Deductible for everyone regardless of income"
       },
       {
         "id": "b",
-        "text": "Taxed twice at contribution and never deferred"
+        "text": "Never deductible under current tax law"
       },
       {
         "id": "c",
-        "text": "Limited only to employer payroll deduction with no IRA option"
+        "text": "Deductible only for those without a job"
       },
       {
         "id": "d",
-        "text": "Tax-deductible within IRS limits if the customer qualifies"
+        "text": "Deductible within IRS limits if eligible"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Deductibility depends on income, coverage by a workplace plan, and annual limits.",
     "distractorExplanations": {
-      "a": "Income and plan coverage affect deductibility.",
-      "b": "Earnings grow tax-deferred.",
-      "c": "IRAs exist outside employer payroll."
+      "a": "Deductibility phases out for workplace plan participants above income limits.",
+      "b": "Many taxpayers can deduct traditional IRA contributions.",
+      "c": "Earned income is required to contribute."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3505,27 +3505,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Tax-free if meeting IRS age and holding period rules"
+        "text": "Tax-free if age and holding rules are met"
       },
       {
         "id": "b",
-        "text": "Taxed as ordinary income"
+        "text": "Taxed as ordinary income on earnings"
       },
       {
         "id": "c",
-        "text": "Subject to 10% penalty in every case"
+        "text": "Taxed at capital gains rates on earnings"
       },
       {
         "id": "d",
-        "text": "Available only before age 50"
+        "text": "Tax-free only if taken before age 59½"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Qualified Roth distributions avoid federal income tax on earnings.",
     "distractorExplanations": {
-      "b": "Qualified withdrawals are tax-free.",
-      "c": "Penalties apply to non-qualified cases, not all.",
-      "d": "Roth use extends beyond pre-50 only restrictions."
+      "b": "Qualified Roth withdrawals are tax-free.",
+      "c": "Roth earnings are not taxed as gains when qualified.",
+      "d": "Qualified withdrawals generally require age 59½ or another qualifying event."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3538,27 +3538,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediately with no vesting ever allowed"
+        "text": "Immediately, in every plan"
       },
       {
         "id": "b",
-        "text": "According to the plan's vesting schedule"
+        "text": "Per the plan's vesting schedule"
       },
       {
         "id": "c",
-        "text": "Only if the employee purchases company stock"
+        "text": "Only after ten years of service"
       },
       {
         "id": "d",
-        "text": "Never; they remain employer property"
+        "text": "Only when the employee retires"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Vesting schedules determine when employer contributions become the employee's.",
     "distractorExplanations": {
-      "a": "Plans may impose vesting periods.",
-      "c": "Match need not be company stock only.",
-      "d": "Vested amounts become employee property."
+      "a": "Some plans vest immediately, but many use schedules.",
+      "c": "Vesting schedules cannot exceed ERISA maximums, which are shorter.",
+      "d": "Vesting is based on service, not retirement."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3571,27 +3571,27 @@
     "options": [
       {
         "id": "a",
-        "text": "At account opening regardless of age"
+        "text": "At age 59½ for all IRA owners"
       },
       {
         "id": "b",
-        "text": "Never; traditional IRAs have no RMD rules"
+        "text": "At age 65, alongside Medicare"
       },
       {
         "id": "c",
-        "text": "By the IRS-required age under current law"
+        "text": "At the IRS-required age by law"
       },
       {
         "id": "d",
-        "text": "Only when the beneficiary is a minor"
+        "text": "At age 70½ for all IRA owners"
       }
     ],
     "correctOptionId": "c",
     "explanation": "RMD rules force taxable distributions from tax-deferred accounts after the starting age.",
     "distractorExplanations": {
-      "a": "RMDs are age-based, not at opening.",
-      "b": "Traditional IRAs have RMD requirements.",
-      "d": "Minors as beneficiaries follow separate rules."
+      "a": "Age 59½ ends the early withdrawal penalty; it does not start RMDs.",
+      "b": "RMD age is not tied to Medicare eligibility.",
+      "d": "70½ was the old rule; the SECURE Acts raised the age."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3604,27 +3604,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Maintains 100% cash from inception"
+        "text": "Keeps the same allocation until the target date"
       },
       {
         "id": "b",
-        "text": "Guarantees the account balance at retirement"
+        "text": "Guarantees the balance at the target date"
       },
       {
         "id": "c",
-        "text": "Is unavailable in qualified plans"
+        "text": "Grows more aggressive as the date nears"
       },
       {
         "id": "d",
-        "text": "Adjusts asset allocation to become more conservative as the target date approaches"
+        "text": "Becomes more conservative over time"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Target-date funds glide toward conservative mixes near retirement.",
     "distractorExplanations": {
-      "a": "They invest across assets, not all cash.",
-      "b": "Balances fluctuate with markets.",
-      "c": "Many plans offer target-date options."
+      "a": "Target-date funds follow a glide path that changes over time.",
+      "b": "Target-date funds do not guarantee values.",
+      "c": "They become more conservative, not more aggressive."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3637,27 +3637,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ordinary income tax plus a 10% penalty unless an exception applies"
+        "text": "Income tax plus a 10% penalty, unless exempt"
       },
       {
         "id": "b",
-        "text": "No tax ever because IRAs are tax-free"
+        "text": "Income tax only, with no additional penalty"
       },
       {
         "id": "c",
-        "text": "Only capital gains tax rates automatically"
+        "text": "Capital gains tax plus a 10% penalty on gains"
       },
       {
         "id": "d",
-        "text": "Automatic loan treatment with no taxes"
+        "text": "A 25% penalty with no income tax due"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Premature distributions usually trigger tax and penalty absent exceptions.",
     "distractorExplanations": {
-      "b": "Traditional IRAs are tax-deferred, not tax-free.",
-      "c": "IRA withdrawals are generally ordinary income.",
-      "d": "IRAs are not loans."
+      "b": "Early withdrawals usually add a 10% penalty.",
+      "c": "IRA withdrawals are taxed as ordinary income, not capital gains.",
+      "d": "The 25% rate applies to early SIMPLE withdrawals in the first two years."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3670,27 +3670,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Unlimited contribution limits above IRS caps"
+        "text": "Allows contributions above annual IRS limits"
       },
       {
         "id": "b",
-        "text": "Tax-deferred status if done as a direct rollover within rules"
+        "text": "Keeps tax deferral if done as a direct rollover"
       },
       {
         "id": "c",
-        "text": "Automatic exemption from all investment risk"
+        "text": "Converts pre-tax money into Roth money tax-free"
       },
       {
         "id": "d",
-        "text": "Immediate taxation on the entire balance if direct rollover rules are followed"
+        "text": "Gives the assets FDIC insurance in the IRA"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Direct rollovers avoid current taxation when executed properly.",
     "distractorExplanations": {
-      "a": "IRA contribution limits still apply to new contributions.",
-      "c": "Investments still carry risk.",
-      "d": "Proper rollovers defer tax."
+      "a": "Rollovers do not change annual contribution limits.",
+      "c": "Moving pre-tax money to a Roth is a taxable conversion.",
+      "d": "IRA investments are not FDIC insured unless held in bank deposits."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3703,27 +3703,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Contribute without any annual dollar limits"
+        "text": "Contribute without any annual dollar limit"
       },
       {
         "id": "b",
-        "text": "Avoid all vesting schedules in 401(k) plans"
+        "text": "Skip the plan's vesting schedule"
       },
       {
         "id": "c",
-        "text": "Contribute additional amounts above standard limits after a specified age"
+        "text": "Add more above standard limits after age 50"
       },
       {
         "id": "d",
-        "text": "Convert Roth IRAs to taxable accounts tax-free instantly"
+        "text": "Make Roth contributions above income limits"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Catch-ups help older savers accelerate retirement savings within IRS caps.",
     "distractorExplanations": {
-      "a": "Additional amounts are capped, not unlimited.",
-      "b": "Vesting is plan-specific, unrelated to catch-ups.",
-      "d": "Roth conversions have tax consequences."
+      "a": "Catch-up contributions have their own limits.",
+      "b": "Catch-ups do not affect vesting.",
+      "d": "Catch-ups do not waive Roth IRA income limits."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3736,27 +3736,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Guaranteed to replace 100% of pre-retirement income"
+        "text": "Designed to replace all pre-retirement income"
       },
       {
         "id": "b",
-        "text": "Untaxed for every recipient regardless of income"
+        "text": "Tax-free for every recipient at any income"
       },
       {
         "id": "c",
-        "text": "Unavailable until age 70 for all workers"
+        "text": "Available in full at age 62 for all workers"
       },
       {
         "id": "d",
-        "text": "Based on earnings history and claiming age with possible taxation of benefits"
+        "text": "Based on earnings and claiming age"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Benefits vary by record and start age; taxation depends on provisional income.",
     "distractorExplanations": {
-      "a": "Replacement rates are partial, not 100%.",
-      "b": "Benefits may be taxable above thresholds.",
-      "c": "Earliest claiming ages are below 70."
+      "a": "Social Security replaces only part of income.",
+      "b": "Up to 85% of benefits can be taxable.",
+      "c": "Claiming at 62 permanently reduces benefits."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3769,27 +3769,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Direct transfers to charities that may satisfy RMDs within limits"
+        "text": "Transfers to charity that can count toward RMDs"
       },
       {
         "id": "b",
-        "text": "Unlimited tax-free gifts to private foundations without rules"
+        "text": "Unlimited tax-free gifts to any private foundation"
       },
       {
         "id": "c",
-        "text": "Avoidance of all RMD requirements permanently"
+        "text": "Deductions for charitable gifts from any account"
       },
       {
         "id": "d",
-        "text": "Conversion of IRA assets to life insurance without tax"
+        "text": "Withdrawals for any purpose without taxes"
       }
     ],
     "correctOptionId": "a",
     "explanation": "QCDs up to statutory limits can count toward RMDs for eligible IRA owners.",
     "distractorExplanations": {
-      "b": "QCDs have annual caps and eligibility rules.",
-      "c": "RMD rules generally continue except satisfied amounts.",
-      "d": "Insurance conversions follow separate tax rules."
+      "b": "QCDs have annual limits, and private foundations generally do not qualify.",
+      "c": "QCDs come from IRAs and are excluded from income, not deducted.",
+      "d": "Only direct transfers to qualifying charities receive QCD treatment."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3802,27 +3802,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediate forced liquidation with full taxation in all cases"
+        "text": "A required lump-sum payout within one year"
       },
       {
         "id": "b",
-        "text": "Spousal rollover options not available to non-spouse beneficiaries"
+        "text": "A spousal rollover others cannot choose"
       },
       {
         "id": "c",
-        "text": "Exemption from all beneficiary rules"
+        "text": "An exemption from all income taxes"
       },
       {
         "id": "d",
-        "text": "Automatic conversion to a 529 plan"
+        "text": "A transfer into a 529 plan for heirs"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Spouses may treat inherited IRAs as their own under certain elections.",
     "distractorExplanations": {
-      "a": "Spousal rollovers can defer taxation longer.",
-      "c": "Beneficiary rules still apply.",
-      "d": "529 conversion is separate planning."
+      "a": "Spouses are not forced into a lump-sum payout.",
+      "c": "Distributions are still taxable.",
+      "d": "IRAs cannot generally be converted into 529 plans."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3835,27 +3835,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Automatic superiority over all mutual funds"
+        "text": "Higher contribution limits than the IRA"
       },
       {
         "id": "b",
-        "text": "FDIC insurance on account values"
+        "text": "FDIC insurance on the annuity values"
       },
       {
         "id": "c",
-        "text": "Extra costs relative to benefits because the IRA already provides tax deferral"
+        "text": "Extra cost, since the IRA is tax-deferred"
       },
       {
         "id": "d",
-        "text": "Elimination of all surrender charges by law in IRAs"
+        "text": "Removal of surrender charges by law"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Tax deferral in an IRA may duplicate VA tax features while fees remain.",
     "distractorExplanations": {
-      "a": "Costs must be compared to alternatives.",
-      "b": "VA values are not FDIC insured.",
-      "d": "Surrender charges depend on contract terms."
+      "a": "IRA contribution limits apply regardless of investment.",
+      "b": "Annuities are not FDIC insured.",
+      "d": "Surrender charges can still apply inside IRAs."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3868,27 +3868,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Remain tax-deferred indefinitely with no distributions"
+        "text": "Stay invested indefinitely with no payouts"
       },
       {
         "id": "b",
-        "text": "Be distributed entirely tax-free regardless of type"
+        "text": "Be withdrawn in full within five years"
       },
       {
         "id": "c",
-        "text": "Convert automatically to Roth with no tax"
+        "text": "Be paid out over the heir's life expectancy"
       },
       {
         "id": "d",
-        "text": "Deplete the account within 10 years subject to beneficiary rules"
+        "text": "Be emptied within 10 years for most heirs"
       }
     ],
     "correctOptionId": "d",
     "explanation": "10-year rule limits extended stretch for many non-spouse beneficiaries.",
     "distractorExplanations": {
-      "a": "Distributions are required within the period.",
-      "b": "Tax treatment depends on account type.",
-      "c": "Roth conversion is elective, not automatic."
+      "a": "Inherited IRAs require distributions.",
+      "b": "The five-year rule applies in limited cases, not most non-spouse heirs.",
+      "c": "Stretch payouts are now limited to eligible designated beneficiaries."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3901,27 +3901,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Employees of public schools and certain 501(c)(3) tax-exempt organizations"
+        "text": "Public school and 501(c)(3) employees"
       },
       {
         "id": "b",
-        "text": "Any for-profit C corporation employee automatically"
+        "text": "Employees of any for-profit company"
       },
       {
         "id": "c",
-        "text": "Only active-duty military service members"
+        "text": "State and local government workers"
       },
       {
         "id": "d",
-        "text": "Solely self-employed farmers with no other plan option"
+        "text": "Self-employed individuals only"
       }
     ],
     "correctOptionId": "a",
     "explanation": "403(b) plans are workplace retirement vehicles for public education and many tax-exempt employers; Series 6 reps often sell annuity or fund options inside them.",
     "distractorExplanations": {
-      "b": "For-profit corporations generally use 401(k) or similar plans, not 403(b).",
-      "c": "Military benefits are a different regime (e.g., TSP).",
-      "d": "Self-employed farmers more often use SEP/SIMPLE/solo 401(k)."
+      "b": "For-profit employers use 401(k) plans.",
+      "c": "State and local governments generally use 457 plans.",
+      "d": "Self-employed individuals use SEP IRAs or solo 401(k)s."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3934,27 +3934,27 @@
     "options": [
       {
         "id": "a",
-        "text": "May be repeated unlimited times each year with no IRS timing rule"
+        "text": "May be repeated as often as the owner likes"
       },
       {
         "id": "b",
-        "text": "Must be completed within 60 days and is limited to one rollover per 12-month period across IRAs"
+        "text": "Takes 60 days; one per 12 months across IRAs"
       },
       {
         "id": "c",
-        "text": "Always avoids tax withholding when cash is taken from an employer plan"
+        "text": "Takes 90 days; one per calendar year per IRA"
       },
       {
         "id": "d",
-        "text": "Automatically converts the IRA into a taxable brokerage account"
+        "text": "Is exempt from any timing or frequency rules"
       }
     ],
     "correctOptionId": "b",
     "explanation": "The 60-day clock and one-rollover-per-year rule apply to indirect IRA rollovers; a direct trustee-to-trustee transfer avoids both traps.",
     "distractorExplanations": {
-      "a": "Indirect IRA rollovers are limited to one per 12 months.",
-      "c": "Employer-plan cashouts typically withhold 20% on indirect rollovers.",
-      "d": "A rollover preserves IRA status when completed correctly."
+      "a": "Indirect rollovers are limited to one per 12 months.",
+      "c": "The window is 60 days, and the limit applies across all IRAs.",
+      "d": "Indirect rollovers are subject to the 60-day and once-a-year rules."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."

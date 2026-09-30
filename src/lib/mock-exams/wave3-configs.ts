@@ -839,7 +839,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       [
         { id: "products", label: "Investment products" },
         { id: "recommendations", label: "Recommendations" },
-        { id: "state-law", label: "State laws" },
+        { id: "state-law", label: "State law & economics" },
         { id: "ethics", label: "Ethics & supervision" },
       ],
       70,
