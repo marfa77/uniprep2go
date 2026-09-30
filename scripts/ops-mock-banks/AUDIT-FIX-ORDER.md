@@ -141,6 +141,7 @@ update ops.mock_banks set review_status = 'fixing' where slug = '...';
 | remaining-106 audit 2026-09-21 | 106 were `audited` | then P0 five fixed same day |
 | P0 fix 2026-09-21 | `nate-core` + `wastewater` rewritten; electrical/plumbing/water-treatment stripped `always always` | all 5 `ready` clean; no sibling-prompt overlap |
 | P1 fix 2026-09-21 | 13 sibling remaps rewritten; Praxis SPED leftover strip; L&H binder → life receipt; scribe / ServSafe FH / VTNE kept | all 18 `ready`; sibling prompt overlap 0 (L&H vs P&C leftover 1 shared “experience rating” stem) |
+| enrichment 2026-09-30 | `deep-audit.py` all 206 → FDIC boilerplate 1 915 items / 142 banks restored from git history (`recover-template-distractors.py`); template expl/notes stripped (7 646 / 11 281 items); `only/exclusively/always` tails on wrong options 2 510 + 1 657; truncations 198 restored + 83 clipped; correct answers shortened by repair 103 restored; 51 “which option is correct for” stems; PTCB brand dumps 25; 14 hand patches (`manual-patches-2026-09-30.json`) | 192 banks upserted via `apply-enriched-banks.py` (status kept: 123 ready / 83 audited); 123 ready pass site runnable check; 178 non-civic exported to git; 163 mock-built apkgs rebuilt |
 
 ## Чего не делать
 
@@ -149,3 +150,4 @@ update ops.mock_banks set review_status = 'fixing' where slug = '...';
 - Не запускать `import-all.ts` поверх починенного банка (затрёт git-оригиналом)
 - Не мешать AEO/GSC в этот контур
 - Не писать банк Grokom, кроме явного override
+- Не оставлять неправильный вариант без `distractorExplanations` — страница мока считает такой банк не runnable

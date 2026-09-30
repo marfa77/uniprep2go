@@ -20,7 +20,7 @@ node --import tsx scripts/triage-mock-bank-smells.mjs --fix-mechanical --slug nb
 
 Reports: `smell-board.json` / `smell-board.md`
 
-**Do not** re-run `repair-definition-style-distractors-local.mjs --all-live` on non-money banks (pollutes distractors).
+**Disabled:** `repair-definition-style-distractors-local.mjs` injected FDIC / "eliminates all risk" boilerplate distractors into 142 banks (money banks included). It now exits unless `--allow-boilerplate`. Cleanup and re-runs: `scripts/ops-mock-banks/enrich-banks.py` → `apply-enriched-banks.py` → `export-ready-to-git.py` (ops is the live source; git edits are shadowed by ready ops banks).
 
 ## Other reports
 
@@ -35,6 +35,4 @@ node --import tsx scripts/audit-mock-banks-structure.mjs
 node --import tsx scripts/audit-mock-banks-structure.mjs --fix-cheap
 node scripts/repair-money-mock-banks-local.mjs
 node --import tsx scripts/expand-short-mock-stems-local.mjs
-# money banks only — never blanket --all-live on health/building waves
-node --import tsx scripts/repair-definition-style-distractors-local.mjs --slug series-63-readiness-check
 ```

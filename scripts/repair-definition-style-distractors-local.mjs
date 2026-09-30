@@ -12,6 +12,14 @@ import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
+if (!process.argv.includes("--allow-boilerplate")) {
+  console.error(
+    "Disabled: this repair injects FDIC / 'eliminates all risk' boilerplate distractors and truncates options " +
+      "(1,915 contaminated items cleaned 2026-09-30). Edit banks in ops via scripts/ops-mock-banks/ instead.",
+  );
+  process.exit(1);
+}
+
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DIR = join(root, "src/data/mock-exams");
 

@@ -57,6 +57,7 @@ def is_civic(slug: str, meta: dict) -> bool:
         return True
     markers = (
         "citizenship",
+        "life-in-the-uk",
         "naturalisation",
         "naturalizzazione",
         "leben-in-deutschland",
