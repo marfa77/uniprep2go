@@ -27,7 +27,21 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[2]
 RECOVER = Path("/tmp/recover")
 OUT = Path("/tmp/enrich")
-MANUAL_PATCHES = json.loads((Path(__file__).parent / "manual-patches-2026-09-30.json").read_text())
+MANUAL_PATCHES: dict[str, dict[str, dict]] = {}
+for _patch_file in sorted(Path(__file__).parent.glob("manual-patches-*.json")):
+    for _slug, _items in json.loads(_patch_file.read_text()).items():
+        for _id, _patch in _items.items():
+            _merged = MANUAL_PATCHES.setdefault(_slug, {}).setdefault(_id, {})
+            for _key, _value in _patch.items():
+                if isinstance(_value, dict):
+                    _merged.setdefault(_key, {}).update(_value)
+                else:
+                    _merged[_key] = _value
+KEY_LETTERS = ["a", "b", "c", "d"]
+KEY_BALANCE_TOPICS = {
+    "gmat-focus-readiness-check": {"verbal"},
+    "gre-readiness-check": {"verbal"},
+}
 SOURCE_FILE = {"sie-quick-diagnostic": "sie-full-mock"}
 NON_EN_MARKERS = (
     "leben-in-deutschland",
@@ -359,14 +373,46 @@ def enrich_bank(slug: str, questions: list[dict], relaxed: set[str] | None = Non
         patch = MANUAL_PATCHES.get(slug, {}).get(q.get("id"))
         if not patch:
             continue
-        for key in ("prompt", "explanation"):
+        for key in ("prompt", "explanation", "correctOptionId", "topicId", "difficulty"):
             if key in patch:
                 q[key] = patch[key]
+        if "formula" in patch:
+            if patch["formula"]:
+                q["formula"] = patch["formula"]
+            else:
+                q.pop("formula", None)
         for o in q.get("options") or []:
             if o.get("id") in patch.get("options", {}):
                 o["text"] = patch["options"][o["id"]]
-        q.setdefault("distractorExplanations", {}).update(patch.get("distractorExplanations", {}))
+        # A full rewrite (all options given) must not inherit notes from the old question.
+        if {o.get("id") for o in q.get("options") or []} <= set(patch.get("options", {})):
+            q["distractorExplanations"] = dict(patch.get("distractorExplanations", {}))
+        else:
+            q.setdefault("distractorExplanations", {}).update(patch.get("distractorExplanations", {}))
+        q["distractorExplanations"].pop(q.get("correctOptionId"), None)
         stats["manual_patch"] += 1
+
+    # Options are not shuffled at runtime, so key letters must be spread in the data.
+    # Text options only: numeric quant options keep their ascending order.
+    for topic in KEY_BALANCE_TOPICS.get(slug, set()):
+        letter_ref = re.compile(r"\b(option|choice|answer)s?\s*\(?[a-e]\)?\b|\([a-e]\)|all of the above|none of the above", re.I)
+        items = sorted((q for q in bank if q.get("topicId") == topic), key=lambda q: q["id"])
+        movable = []
+        for q in items:
+            ids = [o.get("id") for o in q.get("options") or []]
+            blob = " ".join([q.get("explanation") or ""] + list((q.get("distractorExplanations") or {}).values()) + [o.get("text") or "" for o in q["options"]])
+            if ids == KEY_LETTERS and not letter_ref.search(blob):
+                movable.append(q)
+        for n, q in enumerate(movable):
+            cur, target = q["correctOptionId"], KEY_LETTERS[n % len(KEY_LETTERS)]
+            if cur == target:
+                continue
+            by_id = {o["id"]: o for o in q["options"]}
+            by_id[cur]["text"], by_id[target]["text"] = by_id[target]["text"], by_id[cur]["text"]
+            notes = q["distractorExplanations"]
+            notes[cur] = notes.pop(target)
+            q["correctOptionId"] = target
+            stats["key_rebalanced"] += 1
 
     problems = []
     for q in bank:

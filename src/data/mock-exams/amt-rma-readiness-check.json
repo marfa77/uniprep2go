@@ -2,8 +2,8 @@
   {
     "id": "amt-rma-readiness-check-clinical-001",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "clinical",
-    "prompt": "When scheduling a patient who needs a fasting lipid panel, the CMA should?",
+    "topicId": "admin",
+    "prompt": "When scheduling a patient who needs a fasting lipid panel, the medical assistant should:",
     "options": [
       {
         "id": "a",
@@ -35,7 +35,7 @@
   {
     "id": "amt-rma-readiness-check-clinical-002",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "clinical",
+    "topicId": "admin",
     "prompt": "A claim is denied as 'not medically necessary.' The most appropriate first administrative step is to:",
     "options": [
       {
@@ -68,7 +68,7 @@
   {
     "id": "amt-rma-readiness-check-clinical-003",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "clinical",
+    "topicId": "admin",
     "prompt": "Which document authorizes release of protected health information to a third party?",
     "options": [
       {
@@ -101,7 +101,7 @@
   {
     "id": "amt-rma-readiness-check-clinical-004",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "clinical",
+    "topicId": "admin",
     "prompt": "The advance beneficiary notice (ABN) is used in Medicare contexts to:",
     "options": [
       {
@@ -134,7 +134,7 @@
   {
     "id": "amt-rma-readiness-check-clinical-005",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "clinical",
+    "topicId": "admin",
     "prompt": "Which filing system organizes charts alphabetically by last name?",
     "options": [
       {
@@ -167,8 +167,8 @@
   {
     "id": "amt-rma-readiness-check-clinical-006",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "clinical",
-    "prompt": "When verifying insurance eligibility, the CMA should typically confirm?",
+    "topicId": "admin",
+    "prompt": "When verifying insurance eligibility, the medical assistant should typically confirm:",
     "options": [
       {
         "id": "a",
@@ -200,7 +200,7 @@
   {
     "id": "amt-rma-readiness-check-clinical-007",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "clinical",
+    "topicId": "admin",
     "prompt": "A superbill (encounter form) is primarily used to:",
     "options": [
       {
@@ -233,8 +233,8 @@
   {
     "id": "amt-rma-readiness-check-clinical-008",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "clinical",
-    "prompt": "On the AMT RMA, which telephone triage action is appropriate for a CMA? Select the best answer.",
+    "topicId": "admin",
+    "prompt": "On the AMT RMA, which telephone triage action is appropriate for a medical assistant? Select the best answer.",
     "options": [
       {
         "id": "a",
@@ -266,7 +266,7 @@
   {
     "id": "amt-rma-readiness-check-clinical-009",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "clinical",
+    "topicId": "admin",
     "prompt": "Accounts receivable aging reports help the office",
     "options": [
       {
@@ -299,7 +299,7 @@
   {
     "id": "amt-rma-readiness-check-clinical-010",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "clinical",
+    "topicId": "admin",
     "prompt": "Which is the most appropriate way to correct a paper chart error?",
     "options": [
       {
@@ -332,7 +332,7 @@
   {
     "id": "amt-rma-readiness-check-clinical-011",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "clinical",
+    "topicId": "admin",
     "prompt": "Prior authorization is typically required when:",
     "options": [
       {
@@ -365,7 +365,7 @@
   {
     "id": "amt-rma-readiness-check-clinical-012",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "clinical",
+    "topicId": "admin",
     "prompt": "On the AMT RMA, which statement about referral management is correct? Select the best answer.",
     "options": [
       {
@@ -399,105 +399,105 @@
     "id": "amt-rma-readiness-check-clinical-013",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "clinical",
-    "prompt": "HIPAA's Privacy Rule primarily protects",
+    "prompt": "Where is the V1 electrode placed for a 12-lead ECG?",
     "options": [
       {
         "id": "a",
-        "text": "Clinic parking spaces"
+        "text": "Fourth intercostal space, left sternal border"
       },
       {
         "id": "b",
-        "text": "Vendor lunch menus"
+        "text": "Fourth intercostal space, right sternal border"
       },
       {
         "id": "c",
-        "text": "Protected health information (PHI)"
+        "text": "Fifth intercostal space, left midclavicular line"
       },
       {
         "id": "d",
-        "text": "Public weather data"
+        "text": "Fifth intercostal space, left anterior axillary line"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "HIPAA Privacy Rule governs use and disclosure of PHI.",
+    "correctOptionId": "b",
+    "explanation": "V1 goes at the 4th intercostal space just right of the sternum and V2 at the 4th intercostal space just left. V4 is at the 5th intercostal space midclavicular, and V3 is between V2 and V4.",
     "distractorExplanations": {
-      "a": "Parking is unrelated.",
-      "b": "Menus are not PHI.",
-      "d": "Weather is public information."
+      "a": "The 4th intercostal space at the left sternal border is V2.",
+      "c": "The 5th intercostal space at the midclavicular line is V4.",
+      "d": "The anterior axillary line at V4's level is V5."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "amt-rma-readiness-check-clinical-014",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "clinical",
-    "prompt": "Informed consent requires that the patient",
+    "prompt": "A standard steam autoclave cycle for wrapped instruments typically runs at about:",
     "options": [
       {
         "id": "a",
-        "text": "Sign any form without explanation"
+        "text": "100°C (212°F) at normal pressure for 5 minutes"
       },
       {
         "id": "b",
-        "text": "Receive no opportunity for questions"
+        "text": "70°C (158°F) with alcohol vapor for 10 minutes"
       },
       {
         "id": "c",
-        "text": "Be coerced if they hesitate"
+        "text": "121°C (250°F) at about 15 psi for 15–30 minutes"
       },
       {
         "id": "d",
-        "text": "Be told risks, benefits, and alternatives in understandable terms and agree voluntarily"
+        "text": "60°C (140°F) in a dishwasher cycle for an hour"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Informed consent is voluntary agreement after adequate disclosure and opportunity for questions.",
+    "correctOptionId": "c",
+    "explanation": "Gravity steam sterilization typically uses 121°C (250°F) at about 15 psi for 15–30 minutes depending on the load and wrapping. Follow the manufacturer's cycle and verify it with indicators.",
     "distractorExplanations": {
-      "a": "A signature without understanding is inadequate.",
-      "b": "Questions are part of the process.",
-      "c": "Coercion invalidates consent."
+      "a": "Boiling at normal pressure does not reliably kill bacterial spores.",
+      "b": "Alcohol is a disinfectant, not a sterilizing method for instruments.",
+      "d": "Dishwasher temperatures only sanitize; they do not sterilize."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "amt-rma-readiness-check-clinical-015",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "clinical",
-    "prompt": "Which situation is reportable as suspected child abuse in most U.S. jurisdictions for mandated reporters?",
+    "prompt": "Intramuscular injections are given with the needle at an angle of:",
     "options": [
       {
         "id": "a",
-        "text": "A child late to one appointment without other concerns"
+        "text": "10–15 degrees"
       },
       {
         "id": "b",
-        "text": "A child who dislikes blood draws"
+        "text": "45 degrees"
       },
       {
         "id": "c",
-        "text": "A child with unexplained patterned bruises and inconsistent history"
+        "text": "25–30 degrees"
       },
       {
         "id": "d",
-        "text": "A child who prefers vegetables"
+        "text": "90 degrees"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Mandated reporters must report reasonable suspicion of abuse/neglect; patterned injuries with inconsistent history are classic red flags.",
+    "correctOptionId": "d",
+    "explanation": "IM injections are given at 90° to reach muscle tissue. Subcutaneous injections are usually at 45° (or 90° with short needles), and intradermal injections at 10–15°.",
     "distractorExplanations": {
-      "a": "A single late visit alone is not abuse.",
-      "b": "Fear of procedures is common.",
-      "d": "Food preference is not abuse."
+      "a": "10–15° is the intradermal angle, used for example for TB skin tests.",
+      "b": "45° is typical for subcutaneous injections.",
+      "c": "About 15–30° is used for venipuncture, not IM injections."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
   },
   {
     "id": "amt-rma-readiness-check-admin-001",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "admin",
+    "topicId": "clinical",
     "prompt": "Which schedule classification indicates the highest abuse potential among controlled substances that still have accepted medical use in the U.S.?",
     "options": [
       {
@@ -530,7 +530,7 @@
   {
     "id": "amt-rma-readiness-check-admin-002",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "admin",
+    "topicId": "anatomy",
     "prompt": "The anatomical term 'proximal' means:",
     "options": [
       {
@@ -563,7 +563,7 @@
   {
     "id": "amt-rma-readiness-check-admin-003",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "admin",
+    "topicId": "clinical",
     "prompt": "Albuterol is classified primarily as a",
     "options": [
       {
@@ -596,7 +596,7 @@
   {
     "id": "amt-rma-readiness-check-admin-004",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "admin",
+    "topicId": "clinical",
     "prompt": "Which electrolyte imbalance is classically associated with peaked T waves on ECG?",
     "options": [
       {
@@ -629,7 +629,7 @@
   {
     "id": "amt-rma-readiness-check-admin-005",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "admin",
+    "topicId": "anatomy",
     "prompt": "The gallbladder's primary function is to:",
     "options": [
       {
@@ -662,7 +662,7 @@
   {
     "id": "amt-rma-readiness-check-admin-006",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "admin",
+    "topicId": "clinical",
     "prompt": "Which route provides the slowest onset for most medications compared with IV?",
     "options": [
       {
@@ -695,7 +695,7 @@
   {
     "id": "amt-rma-readiness-check-admin-007",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "admin",
+    "topicId": "clinical",
     "prompt": "Epinephrine auto-injectors for anaphylaxis are typically given",
     "options": [
       {
@@ -728,7 +728,7 @@
   {
     "id": "amt-rma-readiness-check-admin-008",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "admin",
+    "topicId": "anatomy",
     "prompt": "Which cranial nerve is tested when asking a patient to shrug the shoulders against resistance?",
     "options": [
       {
@@ -761,7 +761,7 @@
   {
     "id": "amt-rma-readiness-check-admin-009",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "admin",
+    "topicId": "clinical",
     "prompt": "On the AMT RMA, which is the best example of using two patient identifiers? Select the best answer.",
     "options": [
       {
@@ -860,32 +860,32 @@
   {
     "id": "amt-rma-readiness-check-admin-012",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "admin",
-    "prompt": "When scheduling a patient who needs a fasting lipid panel, the CMA should?",
+    "topicId": "clinical",
+    "prompt": "When is an alcohol-based hand rub NOT sufficient, so hands must be washed with soap and water?",
     "options": [
       {
         "id": "a",
-        "text": "Instruct overnight fasting per protocol and confirm instructions"
+        "text": "Before touching a patient for a routine exam"
       },
       {
         "id": "b",
-        "text": "Schedule immediately after a holiday meal"
+        "text": "After removing gloves when hands look clean"
       },
       {
         "id": "c",
-        "text": "Skip preparation instructions to save time"
+        "text": "Before entering a clean supply room"
       },
       {
         "id": "d",
-        "text": "Tell the patient to eat a large breakfast before the draw"
+        "text": "When hands are visibly soiled or after C. difficile exposure"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Fasting labs require clear preparation instructions to avoid invalid results and repeat visits.",
+    "correctOptionId": "d",
+    "explanation": "Soap and water are required when hands are visibly soiled and after caring for patients with spore-forming organisms such as C. difficile, because alcohol does not kill spores.",
     "distractorExplanations": {
-      "b": "Post-meal timing may invalidate fasting requirements.",
-      "c": "Omitting prep causes errors.",
-      "d": "Food can alter lipid results."
+      "a": "Alcohol rub is appropriate before routine patient contact when hands are not soiled.",
+      "b": "Alcohol rub is acceptable after glove removal if hands are not visibly soiled.",
+      "c": "Alcohol rub is fine before entering a clean supply area."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -893,65 +893,65 @@
   {
     "id": "amt-rma-readiness-check-admin-013",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "admin",
-    "prompt": "A claim is denied as 'not medically necessary.' The most appropriate first administrative step is to:",
+    "topicId": "clinical",
+    "prompt": "The main purpose of a clean-catch midstream urine collection is to:",
     "options": [
       {
         "id": "a",
-        "text": "Review documentation and payer policy, then follow appeal/correction procedures"
+        "text": "Measure the total urine volume over 24 hours"
       },
       {
         "id": "b",
-        "text": "Ignore the denial"
+        "text": "Let the patient avoid cleansing before collection"
       },
       {
         "id": "c",
-        "text": "Change the diagnosis randomly to get paid"
+        "text": "Collect the most concentrated first-morning urine"
       },
       {
         "id": "d",
-        "text": "Bill the patient double immediately"
+        "text": "Minimize contamination from skin and genital flora"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Denials require review of documentation/medical necessity criteria and proper appeal or correction workflows.",
+    "correctOptionId": "d",
+    "explanation": "Cleansing the urethral area and collecting midstream urine reduces contamination from skin and genital flora, which matters for urine cultures.",
     "distractorExplanations": {
-      "b": "Ignoring loses revenue and care continuity.",
-      "c": "Falsifying diagnoses is fraud.",
-      "d": "Double billing is inappropriate."
+      "a": "Total volume requires a timed 24-hour collection.",
+      "b": "Cleansing is a required step of a clean catch.",
+      "c": "First-morning specimens are about concentration, not contamination control."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
   },
   {
     "id": "amt-rma-readiness-check-admin-014",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "admin",
-    "prompt": "Which document authorizes release of protected health information to a third party?",
+    "topicId": "clinical",
+    "prompt": "For an adult capillary (fingerstick) puncture, the preferred site is:",
     "options": [
       {
         "id": "a",
-        "text": "Verbal hallway rumor"
+        "text": "The center tip of the index finger"
       },
       {
         "id": "b",
-        "text": "Valid patient authorization meeting HIPAA requirements"
+        "text": "The side of the thumb near the nail"
       },
       {
         "id": "c",
-        "text": "Insurance card photocopy alone without authorization when not otherwise permitted"
+        "text": "The medial or lateral plantar heel surface"
       },
       {
         "id": "d",
-        "text": "Blank sticky note"
+        "text": "The palmar surface of the middle or ring finger, slightly off-center"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "HIPAA requires a valid authorization (or another permitted use/disclosure) before releasing PHI to many third parties.",
+    "correctOptionId": "d",
+    "explanation": "Use the fleshy palmar surface of the middle or ring finger, off-center and perpendicular to the fingerprint lines, and wipe away the first drop.",
     "distractorExplanations": {
-      "a": "Rumors are not authorization.",
-      "c": "Having a card does not equal authorization for all disclosures.",
-      "d": "Informal notes are insufficient."
+      "a": "The index fingertip is more sensitive and callused; the center tip is near bone.",
+      "b": "The thumb has a pulse and thicker tissue and is not recommended.",
+      "c": "Heel sticks are used for infants, not adults."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -960,64 +960,64 @@
     "id": "amt-rma-readiness-check-admin-015",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "admin",
-    "prompt": "The advance beneficiary notice (ABN) is used in Medicare contexts to:",
+    "prompt": "Which scheduling method books several patients at the start of each hour and sees them in the order they arrive?",
     "options": [
       {
         "id": "a",
-        "text": "Guarantee payment for all services"
+        "text": "Stream scheduling"
       },
       {
         "id": "b",
-        "text": "Replace informed consent for surgery"
+        "text": "Wave scheduling"
       },
       {
         "id": "c",
-        "text": "Notify a beneficiary that Medicare may not pay for a service and that they may be financially responsible"
+        "text": "Open-hours scheduling"
       },
       {
         "id": "d",
-        "text": "Enroll providers in Medicaid"
+        "text": "Cluster scheduling"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "ABNs inform Medicare beneficiaries about potential noncoverage and financial responsibility before certain services.",
+    "correctOptionId": "b",
+    "explanation": "Wave scheduling books a group of patients at the top of the hour and sees them in arrival order, so late arrivals do not derail the day. Modified wave staggers some patients later in the hour.",
     "distractorExplanations": {
-      "a": "ABN does not guarantee payment.",
-      "b": "Consent is separate.",
-      "d": "ABN is not Medicaid enrollment."
+      "a": "Stream scheduling gives each patient an individual appointment time.",
+      "c": "Open hours means no appointments; patients walk in during set hours.",
+      "d": "Clustering groups similar procedures together, not several patients at the top of each hour."
     },
-    "difficulty": "hard",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "amt-rma-readiness-check-anatomy-001",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "OSHA Bloodborne Pathogens Standard requires employers to:",
+    "prompt": "The term \"bradycardia\" means:",
     "options": [
       {
         "id": "a",
-        "text": "Ban all hand hygiene"
+        "text": "A heart rate faster than 100 beats per minute"
       },
       {
         "id": "b",
-        "text": "Provide training, PPE, and an exposure control plan"
+        "text": "An enlarged heart seen on a chest X-ray"
       },
       {
         "id": "c",
-        "text": "Ignore needle-stick injuries"
+        "text": "An irregular rhythm with no visible P waves"
       },
       {
         "id": "d",
-        "text": "Require staff to pay for all PPE personally"
+        "text": "A heart rate slower than 60 beats per minute"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "OSHA BBP standards mandate exposure control plans, training, PPE, and post-exposure processes.",
+    "correctOptionId": "d",
+    "explanation": "Brady- means slow and -cardia refers to the heart. In adults, bradycardia is a resting rate below 60 beats per minute.",
     "distractorExplanations": {
-      "a": "Hand hygiene is required.",
-      "c": "Exposures must be evaluated and followed up.",
-      "d": "Employers must provide necessary PPE."
+      "a": "A rate over 100 is tachycardia.",
+      "b": "An enlarged heart is cardiomegaly.",
+      "c": "An irregular rhythm without P waves suggests atrial fibrillation."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1026,31 +1026,31 @@
     "id": "amt-rma-readiness-check-anatomy-002",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "A medical assistant may not",
+    "prompt": "Which heart chamber pumps oxygenated blood out to the body through the aorta?",
     "options": [
       {
         "id": "a",
-        "text": "Take vital signs under supervision/protocol"
+        "text": "Right atrium"
       },
       {
         "id": "b",
-        "text": "Independently diagnose disease and prescribe medication"
+        "text": "Left ventricle"
       },
       {
         "id": "c",
-        "text": "Perform CLIA-waived tests if trained and authorized"
+        "text": "Left atrium"
       },
       {
         "id": "d",
-        "text": "Schedule appointments"
+        "text": "Right ventricle"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Diagnosis and prescribing are licensed-provider functions outside MA scope.",
+    "explanation": "The left ventricle pumps oxygenated blood into the aorta and systemic circulation, which is why its wall is the thickest of the four chambers.",
     "distractorExplanations": {
-      "a": "Vitals are common MA duties.",
-      "c": "CLIA-waived testing is often within trained MA scope.",
-      "d": "Scheduling is administrative within role."
+      "a": "The right atrium receives deoxygenated blood from the venae cavae.",
+      "c": "The left atrium receives oxygenated blood from the lungs and passes it to the left ventricle.",
+      "d": "The right ventricle pumps deoxygenated blood to the lungs."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1059,64 +1059,64 @@
     "id": "amt-rma-readiness-check-anatomy-003",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "Which best describes 'negligence' in a healthcare malpractice context?",
+    "prompt": "The suffix \"-ectomy\" means:",
     "options": [
       {
         "id": "a",
-        "text": "A successful treatment outcome"
+        "text": "Visual examination"
       },
       {
         "id": "b",
-        "text": "Failure to meet the standard of care causing harm"
+        "text": "Surgical incision into"
       },
       {
         "id": "c",
-        "text": "Following evidence-based protocols perfectly"
+        "text": "Creation of an opening"
       },
       {
         "id": "d",
-        "text": "Any patient dissatisfaction"
+        "text": "Surgical removal"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Negligence is breach of duty (standard of care) that proximately causes damages.",
+    "correctOptionId": "d",
+    "explanation": "-ectomy means excision or surgical removal, as in appendectomy.",
     "distractorExplanations": {
-      "a": "Good outcomes are not negligence.",
-      "c": "Meeting standards helps prevent negligence claims.",
-      "d": "Dissatisfaction alone is not negligence."
+      "a": "Visual examination is -scopy, as in endoscopy.",
+      "b": "Incision into is -otomy, as in tracheotomy.",
+      "c": "Creating an opening is -ostomy, as in colostomy."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
   },
   {
     "id": "amt-rma-readiness-check-anatomy-004",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "A living will typically",
+    "prompt": "Insulin is produced by the:",
     "options": [
       {
         "id": "a",
-        "text": "States wishes about life-sustaining treatment if the patient cannot communicate"
+        "text": "Adrenal cortex"
       },
       {
         "id": "b",
-        "text": "Assigns a healthcare proxy"
+        "text": "Beta cells of the pancreatic islets"
       },
       {
         "id": "c",
-        "text": "Authorizes staff to ignore DNR tattoos"
+        "text": "Anterior pituitary gland"
       },
       {
         "id": "d",
-        "text": "Transfers real estate ownership"
+        "text": "Thyroid follicular cells"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Living wills document preferences for end-of-life/life-sustaining care when the patient lacks capacity.",
+    "correctOptionId": "b",
+    "explanation": "Beta cells in the islets of Langerhans secrete insulin. Alpha cells in the same islets secrete glucagon.",
     "distractorExplanations": {
-      "b": "Healthcare proxy/POA is a separate directive (though often paired).",
-      "c": "Facility policies govern DNR orders; tattoos alone are unreliable.",
-      "d": "Property transfer is estate planning, not a living will."
+      "a": "The adrenal cortex produces cortisol, aldosterone, and androgens.",
+      "c": "The anterior pituitary produces hormones such as GH, TSH, and ACTH.",
+      "d": "Thyroid follicular cells make T3 and T4."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1125,31 +1125,31 @@
     "id": "amt-rma-readiness-check-anatomy-005",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "On the AMT RMA, which action violates patient confidentiality? Select the best answer.",
+    "prompt": "The functional unit of the kidney that filters blood and forms urine is the:",
     "options": [
       {
         "id": "a",
-        "text": "Discussing a case with the care team for treatment"
+        "text": "Alveolus"
       },
       {
         "id": "b",
-        "text": "Posting a patient's diagnosis on social media"
+        "text": "Neuron"
       },
       {
         "id": "c",
-        "text": "Verifying identity before releasing results"
+        "text": "Nephron"
       },
       {
         "id": "d",
-        "text": "Filing records securely"
+        "text": "Villus"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Public disclosure of PHI on social media is a confidentiality/HIPAA breach.",
+    "correctOptionId": "c",
+    "explanation": "Each kidney has about a million nephrons. Each nephron includes a glomerulus for filtration and tubules for reabsorption and secretion.",
     "distractorExplanations": {
-      "a": "Treatment-related sharing with the care team is permitted.",
-      "c": "Identity verification protects against wrongful disclosure.",
-      "d": "Secure filing protects privacy."
+      "a": "Alveoli are air sacs in the lungs where gas exchange occurs.",
+      "b": "The neuron is the functional cell of the nervous system.",
+      "d": "Villi line the small intestine and absorb nutrients."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1158,31 +1158,31 @@
     "id": "amt-rma-readiness-check-anatomy-006",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "CLIA categorizes tests; a CLIA-waived test is generally",
+    "prompt": "Which anatomical plane divides the body into anterior (front) and posterior (back) portions?",
     "options": [
       {
         "id": "a",
-        "text": "Illegal in physician offices"
+        "text": "Sagittal plane"
       },
       {
         "id": "b",
-        "text": "So complex that only pathologists may perform it"
+        "text": "Midsagittal plane"
       },
       {
         "id": "c",
-        "text": "Always requiring a full microbiology lab"
+        "text": "Transverse plane"
       },
       {
         "id": "d",
-        "text": "Simple with low risk of erroneous results when directions are followed"
+        "text": "Frontal (coronal) plane"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Waived tests are simple, low-risk methods cleared for waived status when manufacturer instructions are followed.",
+    "explanation": "The frontal (coronal) plane runs side to side and separates the front of the body from the back.",
     "distractorExplanations": {
-      "a": "Many waived tests are done in offices.",
-      "b": "High-complexity tests need more stringent personnel standards.",
-      "c": "Micro labs perform complex testing; not all waived tests need that."
+      "a": "A sagittal plane divides the body into left and right parts.",
+      "b": "The midsagittal plane divides the body into equal left and right halves.",
+      "c": "The transverse plane divides the body into upper and lower parts."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1191,64 +1191,64 @@
     "id": "amt-rma-readiness-check-anatomy-007",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "On the AMT RMA, which is an example of battery in clinical care? Select the best answer.",
+    "prompt": "The combining form \"hepat/o\" refers to the:",
     "options": [
       {
         "id": "a",
-        "text": "Documenting vital signs accurately"
+        "text": "Kidney"
       },
       {
         "id": "b",
-        "text": "Touching or treating a patient without consent"
+        "text": "Liver"
       },
       {
         "id": "c",
-        "text": "Offering a chaperone"
+        "text": "Stomach"
       },
       {
         "id": "d",
-        "text": "Performing a procedure after valid informed consent"
+        "text": "Spleen"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Battery is intentional unauthorized touching; consent is key.",
+    "explanation": "Hepat/o means liver, as in hepatitis (liver inflammation) and hepatomegaly (enlarged liver).",
     "distractorExplanations": {
-      "a": "Accurate documentation is appropriate.",
-      "c": "Chaperones support safety/comfort.",
-      "d": "Consented care is not battery."
+      "a": "Kidney is nephr/o or ren/o.",
+      "c": "Stomach is gastr/o.",
+      "d": "Spleen is splen/o."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "amt-rma-readiness-check-anatomy-008",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "Standard Precautions assume that",
+    "prompt": "The medical term for inflammation of a joint is:",
     "options": [
       {
         "id": "a",
-        "text": "Blood and certain body fluids of all patients may be infectious"
+        "text": "Arthralgia"
       },
       {
         "id": "b",
-        "text": "Only visibly ill patients pose risk"
+        "text": "Osteitis"
       },
       {
         "id": "c",
-        "text": "Hand hygiene is optional after glove removal"
+        "text": "Arthritis"
       },
       {
         "id": "d",
-        "text": "Gloves are never needed"
+        "text": "Myositis"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Standard Precautions treat all patients' blood/body fluids as potentially infectious.",
+    "correctOptionId": "c",
+    "explanation": "Arthr/o means joint and -itis means inflammation, so arthritis is joint inflammation.",
     "distractorExplanations": {
-      "b": "Asymptomatic patients can transmit infection.",
-      "c": "Hand hygiene is required after glove removal.",
-      "d": "PPE is used based on anticipated exposure."
+      "a": "Arthralgia means joint pain, not inflammation.",
+      "b": "Osteitis is inflammation of bone.",
+      "d": "Myositis is inflammation of muscle."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1257,97 +1257,97 @@
     "id": "amt-rma-readiness-check-anatomy-009",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "A 'Good Samaritan' statute typically protects",
+    "prompt": "Most absorption of nutrients from digested food takes place in the:",
     "options": [
       {
         "id": "a",
-        "text": "Reckless intentional harm"
+        "text": "Stomach"
       },
       {
         "id": "b",
-        "text": "Billing fraud"
+        "text": "Esophagus"
       },
       {
         "id": "c",
-        "text": "Falsifying medical records"
+        "text": "Large intestine"
       },
       {
         "id": "d",
-        "text": "Reasonable emergency aid given in good faith outside a duty-to-treat setting (varies by state)"
+        "text": "Small intestine"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Good Samaritan laws generally shield good-faith emergency helpers acting reasonably; they do not cover intentional misconduct or fraud.",
+    "explanation": "The small intestine, with its villi and microvilli, absorbs most nutrients. The large intestine mainly absorbs water and electrolytes.",
     "distractorExplanations": {
-      "a": "Recklessness/intentional harm is not protected.",
-      "b": "Fraud is criminal.",
-      "c": "Falsification is illegal."
+      "a": "The stomach mixes and begins digesting food but absorbs little besides some water, alcohol, and certain drugs.",
+      "b": "The esophagus only transports food to the stomach.",
+      "c": "The large intestine absorbs mainly water and electrolytes."
     },
-    "difficulty": "hard",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "amt-rma-readiness-check-anatomy-010",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "Which statement about minors and consent is generally true in the U.S.?",
+    "prompt": "The antecubital fossa, a common venipuncture site, is located:",
     "options": [
       {
         "id": "a",
-        "text": "Parents/guardians usually consent for minors, with specific exceptions (e.g., certain reproductive/mental health laws varying by state)"
+        "text": "On the back of the hand"
       },
       {
         "id": "b",
-        "text": "Minors always consent for all surgeries alone in every state"
+        "text": "On the anterior surface of the elbow"
       },
       {
         "id": "c",
-        "text": "Teachers always consent for school-age children in clinics"
+        "text": "On the inner wrist"
       },
       {
         "id": "d",
-        "text": "Consent is never needed for minors"
+        "text": "Behind the knee"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Parental/guardian consent is usual, but state laws create exceptions for emancipated minors and certain sensitive services.",
+    "correctOptionId": "b",
+    "explanation": "The antecubital fossa is the front (anterior) surface of the elbow. The median cubital vein there is usually the first-choice vein for venipuncture.",
     "distractorExplanations": {
-      "b": "Not universally true for all care.",
-      "c": "Teachers are not default healthcare decision-makers.",
-      "d": "Consent is still required from an authorized person."
+      "a": "Dorsal hand veins are an alternate site, not the antecubital fossa.",
+      "c": "The inner wrist has arteries and nerves close to the surface and is avoided.",
+      "d": "The area behind the knee is the popliteal fossa."
     },
-    "difficulty": "hard",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
   },
   {
     "id": "amt-rma-readiness-check-anatomy-011",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "anatomy",
-    "prompt": "An incident report should be",
+    "topicId": "clinical",
+    "prompt": "Following the CLSI order of draw for evacuated tubes, which is collected first?",
     "options": [
       {
         "id": "a",
-        "text": "Posted in the waiting room"
+        "text": "Lavender-top (EDTA) tube"
       },
       {
         "id": "b",
-        "text": "Filed objectively, promptly, and per facility policy without blaming language in the medical record narrative"
+        "text": "Gray-top (sodium fluoride) tube"
       },
       {
         "id": "c",
-        "text": "Destroyed immediately"
+        "text": "Blood culture bottles or sterile tubes"
       },
       {
         "id": "d",
-        "text": "Used as a public press release"
+        "text": "Green-top (heparin) tube"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Incident reports document facts for risk management; they are handled per policy and are not public notices.",
+    "correctOptionId": "c",
+    "explanation": "CLSI order: blood cultures/sterile, light blue (citrate), red or gold (serum), green (heparin), lavender (EDTA), gray (fluoride/oxalate). Drawing sterile specimens first prevents contamination and additive carryover.",
     "distractorExplanations": {
-      "a": "Public posting breaches privacy.",
-      "c": "Destruction may violate policy/law.",
-      "d": "Press release is inappropriate."
+      "a": "EDTA comes near the end; drawn early, its carryover can falsely raise potassium and lower calcium in later tubes.",
+      "b": "Gray-top fluoride tubes are drawn last.",
+      "d": "Heparin tubes are drawn after citrate and serum tubes, not first."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1355,34 +1355,34 @@
   {
     "id": "amt-rma-readiness-check-anatomy-012",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "anatomy",
-    "prompt": "On the AMT RMA, which best reflects ethical principles of autonomy? Select the best answer.",
+    "topicId": "clinical",
+    "prompt": "For an accurate adult blood pressure, the cuff's inflatable bladder should encircle about:",
     "options": [
       {
         "id": "a",
-        "text": "Hiding risks to improve compliance"
+        "text": "25% of the upper-arm circumference"
       },
       {
         "id": "b",
-        "text": "Respecting a capacitated patient's informed decisions about care"
+        "text": "50% of the upper-arm circumference"
       },
       {
         "id": "c",
-        "text": "Making decisions solely to maximize clinic revenue"
+        "text": "150% of the upper-arm circumference"
       },
       {
         "id": "d",
-        "text": "Forcing treatment despite informed refusal when the patient has capacity"
+        "text": "80% of the upper-arm circumference"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Autonomy respects informed patients' rights to accept or refuse care.",
+    "correctOptionId": "d",
+    "explanation": "The bladder length should encircle about 80% of the arm, with width about 40% of arm circumference. A cuff that is too small reads falsely high; one that is too large reads falsely low.",
     "distractorExplanations": {
-      "a": "Withholding risks undermines informed consent.",
-      "c": "Revenue alone is not an ethical care principle.",
-      "d": "Forcing care against capacitated refusal violates autonomy."
+      "a": "A bladder this small is undersized and gives falsely high readings.",
+      "b": "Half the circumference is still too small for an accurate reading.",
+      "c": "A bladder longer than the arm cannot be applied correctly and tends to read low."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
@@ -1454,7 +1454,7 @@
   {
     "id": "amt-rma-readiness-check-anatomy-015",
     "examSlug": "amt-rma-readiness-check",
-    "topicId": "anatomy",
+    "topicId": "clinical",
     "prompt": "Which drug class is commonly used first-line for many patients with hypertension?",
     "options": [
       {

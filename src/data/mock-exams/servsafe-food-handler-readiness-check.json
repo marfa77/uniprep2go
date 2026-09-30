@@ -2,7 +2,7 @@
   {
     "id": "servsafe-food-handler-readiness-check-contamination-001",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "contamination",
+    "topicId": "cleaning",
     "prompt": "On the ServSafe Food Handler, what is anaphylaxis? Select the best answer.",
     "options": [
       {
@@ -233,7 +233,7 @@
   {
     "id": "servsafe-food-handler-readiness-check-contamination-008",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "contamination",
+    "topicId": "cleaning",
     "prompt": "On the ServSafe Food Handler, why are buffets risky for allergen control? Select the best answer.",
     "options": [
       {
@@ -266,7 +266,7 @@
   {
     "id": "servsafe-food-handler-readiness-check-contamination-009",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "contamination",
+    "topicId": "cleaning",
     "prompt": "On the ServSafe Food Handler, what symptoms may indicate a food-allergic reaction? Select the best answer.",
     "options": [
       {
@@ -299,7 +299,7 @@
   {
     "id": "servsafe-food-handler-readiness-check-contamination-010",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "contamination",
+    "topicId": "cleaning",
     "prompt": "On the ServSafe Food Handler, why must staff know ingredients in menu items? Select the best answer.",
     "options": [
       {
@@ -332,7 +332,7 @@
   {
     "id": "servsafe-food-handler-readiness-check-contamination-011",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "contamination",
+    "topicId": "cleaning",
     "prompt": "On the ServSafe Food Handler, what should staff avoid saying to a guest with an allergy? Select the best answer.",
     "options": [
       {
@@ -365,7 +365,7 @@
   {
     "id": "servsafe-food-handler-readiness-check-contamination-012",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "contamination",
+    "topicId": "cleaning",
     "prompt": "On the ServSafe Food Handler, what are the major food allergens managers must control? Select the best answer.",
     "options": [
       {
@@ -399,31 +399,31 @@
     "id": "servsafe-food-handler-readiness-check-contamination-013",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "contamination",
-    "prompt": "On the ServSafe Food Handler, what is the temperature danger zone for TCS food? Select the best answer.",
+    "prompt": "Shiga toxin-producing E. coli is most commonly linked to:",
     "options": [
       {
         "id": "a",
-        "text": "Determine time and temperature exposure and take corrective action such as rapid chilling or discarding according to rules."
+        "text": "Cooked rice left at room temperature"
       },
       {
         "id": "b",
-        "text": "Use shallow pans, smaller portions, ice-water baths, ice paddles, blast chillers, loose covers, and containers that transfer heat well."
+        "text": "Undercooked ground beef and contaminated produce"
       },
       {
         "id": "c",
-        "text": "The danger zone is 41°F to 135°F, where many pathogens can grow rapidly"
+        "text": "Large predatory reef fish such as barracuda"
       },
       {
         "id": "d",
-        "text": "Reheat to 165°F for 15 seconds within 2 hours before hot holding."
+        "text": "Home-canned vegetables with bulging lids"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "The danger zone is 41°F to 135°F, where many pathogens can grow rapidly. Example: Cold hold at 41°F or lower and hot hold at 135°F or higher.",
+    "correctOptionId": "b",
+    "explanation": "Shiga toxin-producing E. coli comes from cattle intestines. It is linked to undercooked ground beef (cook to 155°F) and to produce contaminated by animal feces.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “The danger zone is 41°F to 135°F, where many pathogens can grow rapidly”.",
-      "b": "This is the answer to a different question (“Which of the following best completes this item: Name safe methods for cooling food quickly.”), not to this one.",
-      "d": "Not the best answer here; the right answer is “The danger zone is 41°F to 135°F, where many pathogens can grow rapidly”."
+      "a": "Rice left at room temperature is associated with Bacillus cereus.",
+      "c": "Large reef fish are associated with ciguatera toxin.",
+      "d": "Bulging home-canned goods suggest Clostridium botulinum."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -432,31 +432,31 @@
     "id": "servsafe-food-handler-readiness-check-contamination-014",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "contamination",
-    "prompt": "What are key requirements for cooking TCS food in a microwave?",
+    "prompt": "Why should acidic foods such as tomato sauce not be stored in copper or galvanized containers?",
     "options": [
       {
         "id": "a",
-        "text": "Microwave-cooked TCS food must reach 165°F, be rotated or stirred, be covered, and stand for 2 minutes after cooking"
+        "text": "The containers make the sauce spoil faster from mold"
       },
       {
         "id": "b",
-        "text": "Microwave-cooked TCS food must never reach 165°F, be rotated or stirred, be covered, and stand for 2 minutes after cooking"
+        "text": "The acid causes the food to reach unsafe temperatures"
       },
       {
         "id": "c",
-        "text": "Commercially processed ready-to-eat TCS food must be heated to at least 135°F for hot holding."
+        "text": "Metal can leach into the food and cause toxic-metal poisoning"
       },
       {
         "id": "d",
-        "text": "An ice paddle cools hot liquid foods from the inside while stirring."
+        "text": "These containers are too heavy to lift safely"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Microwave-cooked TCS food must reach 165°F, be rotated or stirred, be covered, and stand for 2 minutes after cooking. Example: Microwave chicken evenly and let it stand covered.",
+    "correctOptionId": "c",
+    "explanation": "Acidic foods can dissolve copper, zinc, lead, and similar metals into the food and cause chemical (toxic-metal) poisoning. Use food-grade containers only.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Microwave-cooked TCS food must reach 165°F, be rotated or stirred, be covered, and stand for 2 minutes after cooking”.",
-      "c": "This is the answer to a different question (“What temperature is used for commercially processed ready-to-eat TCS food that will be hot held?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “Microwave-cooked TCS food must reach 165°F, be rotated or stirred, be covered, and stand for 2 minutes after cooking”."
+      "a": "The main hazard is chemical leaching, not faster mold growth.",
+      "b": "Container material does not change the food's temperature.",
+      "d": "Weight is not the food safety issue."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -465,33 +465,33 @@
     "id": "servsafe-food-handler-readiness-check-contamination-015",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "contamination",
-    "prompt": "On the ServSafe Food Handler, how does an ice-water bath help cooling? Select the best answer.",
+    "prompt": "A food handler cuts raw chicken, then slices bread for sandwiches without washing hands or changing the cutting board. This is an example of:",
     "options": [
       {
         "id": "a",
-        "text": "An ice-water bath surrounds a container with cold water and ice, pulling heat out faster when food is stirred."
+        "text": "Time-temperature abuse"
       },
       {
         "id": "b",
-        "text": "Calibration ensures temperature readings are accurate for food safety decisions."
+        "text": "Physical contamination"
       },
       {
         "id": "c",
-        "text": "Commercially processed ready-to-eat TCS food must be heated to at least 135°F for hot holding."
+        "text": "Toxic-metal poisoning"
       },
       {
         "id": "d",
-        "text": "Poultry must reach 165°F for at least 15 seconds."
+        "text": "Cross-contamination"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "An ice-water bath surrounds a container with cold water and ice, pulling heat out faster when food is stirred. Example: Cool soup in a metal pan set in ice water.",
+    "correctOptionId": "d",
+    "explanation": "Cross-contamination moves pathogens from raw food to ready-to-eat food by hands, boards, or utensils. Wash hands, change gloves, and clean and sanitize (or switch) boards between tasks.",
     "distractorExplanations": {
-      "b": "Trusting a thermometer forever without checks.",
-      "c": "Using 165°F for every reheating situation.",
-      "d": "Using 145°F for chicken because it is a whole muscle."
+      "a": "Time-temperature abuse is leaving food in the danger zone too long.",
+      "b": "Physical contamination involves foreign objects such as glass or metal.",
+      "c": "Toxic-metal poisoning comes from food reacting with metal containers."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
@@ -1553,7 +1553,7 @@
   {
     "id": "servsafe-food-handler-readiness-check-cleaning-003",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "cleaning",
+    "topicId": "contamination",
     "prompt": "Why are some seafood toxins hard to control in an operation?",
     "options": [
       {
@@ -1586,7 +1586,7 @@
   {
     "id": "servsafe-food-handler-readiness-check-cleaning-004",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "cleaning",
+    "topicId": "contamination",
     "prompt": "On the ServSafe Food Handler, what conditions help bacteria grow? Select the best answer.",
     "options": [
       {
@@ -1619,7 +1619,7 @@
   {
     "id": "servsafe-food-handler-readiness-check-cleaning-005",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "cleaning",
+    "topicId": "contamination",
     "prompt": "Why is Listeria monocytogenes a concern in refrigerated food?",
     "options": [
       {
@@ -1653,64 +1653,64 @@
     "id": "servsafe-food-handler-readiness-check-cleaning-006",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "cleaning",
-    "prompt": "On the ServSafe Food Handler, what is anaphylaxis? Select the best answer.",
+    "prompt": "What is the difference between cleaning and sanitizing a food-contact surface?",
     "options": [
       {
         "id": "a",
-        "text": "Staff should avoid guessing, minimizing the allergy, or guaranteeing safety unless the operation can truly control the risk."
+        "text": "Cleaning kills all germs; sanitizing only makes the surface look shiny"
       },
       {
         "id": "b",
-        "text": "Physical contamination occurs when foreign objects get into food."
+        "text": "Cleaning removes food and dirt; sanitizing reduces pathogens to safe levels"
       },
       {
         "id": "c",
-        "text": "Anaphylaxis is a severe, potentially life-threatening allergic reaction that can restrict breathing and cause shock"
+        "text": "They mean the same thing and either step can be skipped"
       },
       {
         "id": "d",
-        "text": "Salmonella Typhi is carried only by humans and is often linked to ready-to-eat food and beverages contaminated by infected food handlers."
+        "text": "Sanitizing removes grease; cleaning is only needed once a week"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Anaphylaxis is a severe, potentially life-threatening allergic reaction that can restrict breathing and cause shock. Example: A guest has trouble breathing after exposure to peanuts.",
+    "correctOptionId": "b",
+    "explanation": "Cleaning removes food, dirt, and grease; sanitizing then reduces pathogens on the clean surface to safe levels. Sanitizer does not work well on a dirty surface, so clean first.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“What should staff avoid saying to a guest with an allergy?”), not to this one.",
-      "b": "Not the best answer here; the right answer is “Anaphylaxis is a severe, potentially life-threatening allergic reaction that can restrict breathing and cause shock”.",
-      "d": "This is the answer to a different question (“What is special about Salmonella Typhi?”), not to this one."
+      "a": "Cleaning does not reliably kill pathogens; that is the purpose of sanitizing.",
+      "c": "They are different steps and both are required for food-contact surfaces.",
+      "d": "Cleaning is what removes grease, and it is needed after every use and every 4 hours."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-cleaning-007",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "cleaning",
-    "prompt": "On the ServSafe Food Handler, what is the main food safety concern with norovirus? Select the best answer.",
+    "prompt": "What is the correct order of steps when washing items in a three-compartment sink?",
     "options": [
       {
         "id": "a",
-        "text": "Norovirus spreads easily from infected people and contaminated surfaces, especially through ready-to-eat food"
+        "text": "Wash, sanitize, rinse, scrape, towel-dry"
       },
       {
         "id": "b",
-        "text": "It can produce a deadly toxin in anaerobic conditions, especially improperly canned, reduced-oxygen, or temperature-abused foods."
+        "text": "Scrape, wash, rinse, sanitize, air-dry"
       },
       {
         "id": "c",
-        "text": "Biological contamination occurs when pathogens or toxins from living organisms contaminate food."
+        "text": "Rinse, sanitize, wash, scrape, air-dry"
       },
       {
         "id": "d",
-        "text": "Time-temperature abuse occurs when TCS food stays too long at temperatures that allow pathogen growth."
+        "text": "Sanitize, scrape, wash, rinse, towel-dry"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Norovirus spreads easily from infected people and contaminated surfaces, especially through ready-to-eat food. Example: A sick food handler touches sandwich ingredients with bare hands.",
+    "correctOptionId": "b",
+    "explanation": "Scrape or pre-rinse, wash in detergent, rinse in clean water, sanitize for the required contact time, then air-dry. Rinsing before sanitizing removes detergent that would weaken the sanitizer.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Norovirus spreads easily from infected people and contaminated surfaces, especially through ready-to-eat food”.",
-      "c": "Not the best answer here; the right answer is “Norovirus spreads easily from infected people and contaminated surfaces, especially through ready-to-eat food”.",
-      "d": "Not the best answer here; the right answer is “Norovirus spreads easily from infected people and contaminated surfaces, especially through ready-to-eat food”."
+      "a": "Rinsing after sanitizing removes the sanitizer, and towel-drying can recontaminate items.",
+      "c": "Sanitizing before washing puts sanitizer on a dirty surface, where it cannot work.",
+      "d": "Sanitizing must be the last wet step, after washing and rinsing."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1719,130 +1719,130 @@
     "id": "servsafe-food-handler-readiness-check-cleaning-008",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "cleaning",
-    "prompt": "On the ServSafe Food Handler, what is the safest rule for wild mushrooms? Select the best answer.",
+    "prompt": "How should a food handler check that a sanitizer solution is the right strength?",
     "options": [
       {
         "id": "a",
-        "text": "Store allergen-containing ingredients to reduce spills or contact with other foods, and keep labels clear."
+        "text": "Smell it to make sure it is strong enough"
       },
       {
         "id": "b",
-        "text": "An outbreak occurs when two or more people have the same symptoms after eating the same food and an investigation confirms the food as the source."
+        "text": "Use a test kit made for that sanitizer"
       },
       {
         "id": "c",
-        "text": "Only use mushrooms from approved, reputable suppliers; wild mushrooms can contain toxins that cooking may not destroy"
+        "text": "Add extra sanitizer so it is always strong enough"
       },
       {
         "id": "d",
-        "text": "Managers should ensure menu and staff information are accurate, current, and consistent with recipes."
+        "text": "Look at the color of the water in the sink"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Only use mushrooms from approved, reputable suppliers; wild mushrooms can contain toxins that cooking may not destroy. Example: Do not accept mushrooms picked by an employee.",
+    "correctOptionId": "b",
+    "explanation": "Use the test kit or strips made for that sanitizer, and check concentration regularly because it drops with use. Too weak will not reduce pathogens; too strong can be unsafe.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Only use mushrooms from approved, reputable suppliers; wild mushrooms can contain toxins that cooking may not destroy”.",
-      "b": "This is the answer to a different question (“What is a foodborne-illness outbreak?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “Only use mushrooms from approved, reputable suppliers; wild mushrooms can contain toxins that cooking may not destroy”."
+      "a": "Smell cannot measure concentration and exposes the handler to fumes.",
+      "c": "Too much sanitizer can be toxic and leave harmful residue.",
+      "d": "Water color does not show sanitizer strength."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-cleaning-009",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "cleaning",
-    "prompt": "On the ServSafe Food Handler, what food is often associated with Bacillus cereus? Select the best answer.",
+    "prompt": "Between uses, wet wiping cloths used on food-contact surfaces should be:",
     "options": [
       {
         "id": "a",
-        "text": "Cross-contamination is the transfer of pathogens from one food or surface to another."
+        "text": "Kept in an apron pocket"
       },
       {
         "id": "b",
-        "text": "Use clean and sanitized equipment, separate utensils, fresh gloves, and dedicated prep areas when possible."
+        "text": "Stored in a sanitizer solution"
       },
       {
         "id": "c",
-        "text": "Bacillus cereus is commonly associated with cooked rice and other starchy foods that are time-temperature abused."
+        "text": "Left on the prep counter"
       },
       {
         "id": "d",
-        "text": "A foodborne illness is a disease carried or transmitted to people by food."
+        "text": "Hung over a hot pan to dry"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Bacillus cereus is commonly associated with cooked rice and other starchy foods that are time-temperature abused. Example: Fried rice sits at room temperature for hours.",
+    "correctOptionId": "b",
+    "explanation": "Wet wiping cloths are kept in a sanitizer solution of the correct strength, and the solution is changed on schedule. Cloths for raw meat areas are kept separate.",
     "distractorExplanations": {
-      "a": "Only thinking of dirty hands, not equipment or storage.",
-      "b": "Using the same tongs after wiping them with a towel.",
-      "d": "Thinking foodborne illness only means stomach pain."
+      "a": "A cloth in a pocket or apron spreads pathogens between surfaces.",
+      "c": "A cloth left on the counter grows bacteria and can contaminate food.",
+      "d": "Drying a cloth over cooking equipment is a fire and contamination risk."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "servsafe-food-handler-readiness-check-cleaning-010",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "cleaning",
-    "prompt": "On the ServSafe Food Handler, what is a foodborne-illness outbreak? Select the best answer.",
+    "prompt": "After cleaning and sanitizing, how should dishes and utensils be dried?",
     "options": [
       {
         "id": "a",
-        "text": "Salmonella is commonly linked with poultry, eggs, meat, milk/dairy, produce, and foods contaminated by animal feces."
+        "text": "Wiped with a clean kitchen towel"
       },
       {
         "id": "b",
-        "text": "A low infectious dose means very few organisms or particles can cause illness."
+        "text": "Air-dried on a clean, sanitized rack"
       },
       {
         "id": "c",
-        "text": "An outbreak occurs when two or more people have the same symptoms after eating the same food and an investigation confirms the food as the source."
+        "text": "Dried with paper towels right away"
       },
       {
         "id": "d",
-        "text": "A changed ingredient can introduce a new allergen unless menus, labels, and staff knowledge are updated."
+        "text": "Dried with a cloth from the wiping bucket"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "An outbreak occurs when two or more people have the same symptoms after eating the same food and an investigation confirms the food as the source. Example: Two guests report vomiting after eating the same catered salad.",
+    "correctOptionId": "b",
+    "explanation": "Items should air-dry on a clean rack or drainboard. Towel-drying can put pathogens back on sanitized surfaces.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “An outbreak occurs when two or more people have the same symptoms after eating the same food and an investigation confirms the food as the…”.",
-      "b": "Not the best answer here; the right answer is “An outbreak occurs when two or more people have the same symptoms after eating the same food and an investigation confirms the food as the…”.",
-      "d": "Not the best answer here; the right answer is “An outbreak occurs when two or more people have the same symptoms after eating the same food and an investigation confirms the food as the…”."
+      "a": "Towels can recontaminate sanitized items.",
+      "c": "Paper towels are not the approved drying method for sanitized ware.",
+      "d": "Wiping cloths are for surfaces, not for drying sanitized dishes."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-cleaning-011",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "cleaning",
-    "prompt": "For the ServSafe Food Handler, which of the following best completes this item: Name common examples of TCS foods.",
+    "prompt": "Before preparing an allergen-special order on shared equipment, the food handler should:",
     "options": [
       {
         "id": "a",
-        "text": "Common TCS foods include meat, poultry, fish, shell eggs, dairy, cooked rice, cooked beans, baked potatoes, tofu, sprouts, cut melon, cut tomatoes, and cut leafy greens."
+        "text": "Wipe the equipment with a dry towel"
       },
       {
         "id": "b",
-        "text": "Symptoms may include hives, swelling, itching, difficulty breathing, wheezing, vomiting, diarrhea, abdominal pain, or anaphylaxis."
+        "text": "Wash, rinse, and sanitize the equipment first"
       },
       {
         "id": "c",
-        "text": "Staff should avoid guessing, minimizing the allergy, or guaranteeing safety unless the operation can truly control the risk."
+        "text": "Rinse the equipment briefly under hot water"
       },
       {
         "id": "d",
-        "text": "Campylobacter is commonly linked to poultry, contaminated water, and raw milk."
+        "text": "Use the same utensils as long as they look clean"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Common TCS foods include meat, poultry, fish, shell eggs, dairy, cooked rice, cooked beans, baked potatoes, tofu, sprouts, cut melon, cut tomatoes, and cut leafy greens. Example: A cooked bean burrito contains TCS ingredients.",
+    "correctOptionId": "b",
+    "explanation": "To prevent allergen cross-contact, equipment, utensils, and surfaces must be washed, rinsed, and sanitized before use, or dedicated allergen-free equipment used. Handlers also wash hands and change gloves.",
     "distractorExplanations": {
-      "b": "This is the answer to a different question (“What symptoms may indicate a food-allergic reaction?”), not to this one.",
-      "c": "This is the answer to a different question (“What should staff avoid saying to a guest with an allergy?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “Common TCS foods include meat, poultry, fish, shell eggs, dairy, cooked rice, cooked beans, baked potatoes, tofu, sprouts, cut melon, cut…”."
+      "a": "A dry towel spreads allergen residue instead of removing it.",
+      "c": "A quick rinse does not remove allergen proteins.",
+      "d": "Invisible allergen residue can still cause a severe reaction."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1851,97 +1851,97 @@
     "id": "servsafe-food-handler-readiness-check-cleaning-012",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "cleaning",
-    "prompt": "On the ServSafe Food Handler, what is special about Salmonella Typhi? Select the best answer.",
+    "prompt": "Where should dirty mop water be dumped?",
     "options": [
       {
         "id": "a",
-        "text": "Norovirus spreads easily from infected people and contaminated surfaces, especially through ready-to-eat food."
+        "text": "In the handwashing sink"
       },
       {
         "id": "b",
-        "text": "Salmonella Typhi is carried only by humans and is often linked to ready-to-eat food and beverages contaminated by infected food handlers"
+        "text": "In the food-prep sink"
       },
       {
         "id": "c",
-        "text": "Physical contamination occurs when foreign objects get into food."
+        "text": "In the three-compartment sink"
       },
       {
         "id": "d",
-        "text": "TCS means Time/Temperature Control for Safety: food that needs time and temperature control to limit pathogen growth or toxin production."
+        "text": "In a utility (service) sink"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Salmonella Typhi is carried only by humans and is often linked to ready-to-eat food and beverages contaminated by infected food handlers. Example: A food handler with typhoid fever contaminates food.",
+    "correctOptionId": "d",
+    "explanation": "Dirty mop water goes into a utility or service sink or a floor drain meant for that use. It must never go into handwashing, prep, or dishwashing sinks.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“What is the main food safety concern with norovirus?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “Salmonella Typhi is carried only by humans and is often linked to ready-to-eat food and beverages contaminated by infected food handlers”.",
-      "d": "Not the best answer here; the right answer is “Salmonella Typhi is carried only by humans and is often linked to ready-to-eat food and beverages contaminated by infected food handlers”."
+      "a": "Handwashing sinks are for handwashing only.",
+      "b": "Dumping dirty water where food is prepped contaminates the sink.",
+      "c": "The three-compartment sink is for cleaning dishes and utensils."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-cleaning-013",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "cleaning",
-    "prompt": "On the ServSafe Food Handler, why are buffets risky for allergen control? Select the best answer.",
+    "topicId": "contamination",
+    "prompt": "Which of these is an example of a physical contaminant?",
     "options": [
       {
         "id": "a",
-        "text": "Bacteria grow best with food, acidity near neutral, time, proper temperature, oxygen conditions, and moisture."
+        "text": "Norovirus on a food handler's hands"
       },
       {
         "id": "b",
-        "text": "Dirty or improperly sanitized surfaces can let pathogens survive and contaminate food."
+        "text": "Metal shavings from a worn can opener"
       },
       {
         "id": "c",
-        "text": "Shared fryer oil can transfer allergens from one food to another."
+        "text": "Sanitizer sprayed near an open salad"
       },
       {
         "id": "d",
-        "text": "Guests may move utensils or foods, causing allergen cross-contact."
+        "text": "Ciguatoxin in a large reef fish"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Guests may move utensils or foods, causing allergen cross-contact. Example: A spoon from a nut-containing dessert is placed in a nut-free dessert.",
+    "correctOptionId": "b",
+    "explanation": "Physical contaminants are objects such as metal shavings, glass, staples, hair, or bandages. Keep can openers in good repair and inspect food for foreign objects.",
     "distractorExplanations": {
-      "a": "Remembering only temperature and ignoring time/moisture.",
-      "b": "Confusing cleaning with sanitizing.",
-      "c": "Thinking heat removes allergens."
+      "a": "Norovirus is a biological contaminant.",
+      "c": "Sanitizer is a chemical contaminant.",
+      "d": "Ciguatoxin is a biological toxin."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "servsafe-food-handler-readiness-check-cleaning-014",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "cleaning",
-    "prompt": "On the ServSafe Food Handler, what symptoms may indicate a food-allergic reaction? Select the best answer.",
+    "topicId": "contamination",
+    "prompt": "Hepatitis A is most often spread in foodservice when:",
     "options": [
       {
         "id": "a",
-        "text": "Only use mushrooms from approved, reputable suppliers; wild mushrooms can contain toxins that cooking may not destroy."
+        "text": "Raw chicken is cooked to only 145°F"
       },
       {
         "id": "b",
-        "text": "Symptoms may include hives, swelling, itching, difficulty breathing, wheezing, vomiting, diarrhea, abdominal pain, or anaphylaxis"
+        "text": "Canned food is stored past its best-by date"
       },
       {
         "id": "c",
-        "text": "Anaphylaxis is a severe, potentially life-threatening allergic reaction that can restrict breathing and cause shock."
+        "text": "Cooked rice cools too slowly at room temperature"
       },
       {
         "id": "d",
-        "text": "A changed ingredient can introduce a new allergen unless menus, labels, and staff knowledge are updated."
+        "text": "An infected handler with poor handwashing touches ready-to-eat food"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Symptoms may include hives, swelling, itching, difficulty breathing, wheezing, vomiting, diarrhea, abdominal pain, or anaphylaxis. Example: A guest reports throat swelling after eating shellfish.",
+    "correctOptionId": "d",
+    "explanation": "Hepatitis A spreads by the fecal-oral route, usually through ready-to-eat food handled by an infected worker with poor handwashing. Cooking does not help for food served raw, so handwashing, no bare-hand contact, and excluding ill staff are the controls.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“What is the safest rule for wild mushrooms?”), not to this one.",
-      "c": "This is the answer to a different question (“What is anaphylaxis?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “Symptoms may include hives, swelling, itching, difficulty breathing, wheezing, vomiting, diarrhea, abdominal pain, or anaphylaxis”."
+      "a": "Undercooked poultry is linked to Salmonella and Campylobacter, not hepatitis A.",
+      "b": "A best-by date is about quality, not hepatitis A transmission.",
+      "c": "Slow cooling of rice is linked to Bacillus cereus."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1949,34 +1949,34 @@
   {
     "id": "servsafe-food-handler-readiness-check-cleaning-015",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "cleaning",
-    "prompt": "On the ServSafe Food Handler, why must staff know ingredients in menu items? Select the best answer.",
+    "topicId": "contamination",
+    "prompt": "In a walk-in cooler, how should raw poultry be stored relative to ready-to-eat food?",
     "options": [
       {
         "id": "a",
-        "text": "Staff must never identify allergens and hidden ingredients so guests receive accurate information"
+        "text": "On the bottom shelf, below ready-to-eat food"
       },
       {
         "id": "b",
-        "text": "Bacteria grow best with food, acidity near neutral, time, proper temperature, oxygen conditions, and moisture."
+        "text": "On the same shelf, as long as items are wrapped"
       },
       {
         "id": "c",
-        "text": "Staff must identify allergens and hidden ingredients so guests receive accurate information"
+        "text": "Anywhere, because the cooler keeps food at 41°F"
       },
       {
         "id": "d",
-        "text": "Biological contamination occurs when pathogens or toxins from living organisms contaminate food."
+        "text": "On the top shelf so it stays coldest"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Staff must identify allergens and hidden ingredients so guests receive accurate information. Example: Worcestershire sauce may contain fish ingredients.",
+    "correctOptionId": "a",
+    "explanation": "Store ready-to-eat food on top and raw items below in order of cooking temperature, with raw poultry (165°F) on the bottom. This keeps drips from contaminating food that will not be cooked.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Staff must identify allergens and hidden ingredients so guests receive accurate information”.",
-      "b": "This is the answer to a different question (“What conditions help bacteria grow?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “Staff must identify allergens and hidden ingredients so guests receive accurate information”."
+      "b": "Wrapping helps, but raw meat still goes below ready-to-eat food.",
+      "c": "Cold temperatures slow growth but do not prevent cross-contamination.",
+      "d": "Raw poultry on top can drip onto everything below it."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   }
 ]

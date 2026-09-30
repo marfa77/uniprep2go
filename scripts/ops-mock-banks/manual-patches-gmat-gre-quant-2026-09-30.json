@@ -1,0 +1,1163 @@
+{
+  "gmat-focus-readiness-check": {
+    "gmat-focus-readiness-check-011": {
+      "prompt": "Solve the equation shown for x."
+    },
+    "gmat-focus-readiness-check-013": {
+      "prompt": "If 3x + 2y = 16 and x − y = 2, what is the value of x?"
+    },
+    "gmat-focus-readiness-check-quant-064": {
+      "prompt": "For a certain positive integer n, the remainder is 3 when n is divided by 7. What is the remainder when 2n + 5 is divided by 7?",
+      "formula": null,
+      "options": {
+        "a": "1",
+        "b": "6",
+        "c": "5",
+        "d": "4"
+      },
+      "correctOptionId": "d",
+      "explanation": "Write n = 7k + 3. Then 2n + 5 = 14k + 11 = 14k + 7 + 4, so the remainder is 4. Shortcut: replace n with its remainder 3, giving 2(3) + 5 = 11, which leaves remainder 4 when divided by 7.",
+      "distractorExplanations": {
+        "a": "1 would require 2n ≡ 3 (mod 7), which means n ≡ 5, not 3.",
+        "c": "5 would require 2n + 5 ≡ 5, which holds only if n were a multiple of 7.",
+        "b": "6 is the remainder of 2n (2 × 3), before adding 5."
+      }
+    },
+    "gmat-focus-readiness-check-quant-067": {
+      "prompt": "For a certain positive integer n, the remainder is 3 when n is divided by 7. What is the remainder when n² + 5n + 1 is divided by 7?",
+      "formula": null,
+      "options": {
+        "a": "1",
+        "b": "2",
+        "c": "4",
+        "d": "3"
+      },
+      "correctOptionId": "c",
+      "explanation": "Replace n with its remainder 3: 3² + 5(3) + 1 = 9 + 15 + 1 = 25, and 25 = 3 × 7 + 4, so the remainder is 4. The 7k terms from n = 7k + 3 are all multiples of 7 and do not change the remainder.",
+      "distractorExplanations": {
+        "a": "1 is the remainder of 5n alone (15 ÷ 7), not the whole expression.",
+        "b": "2 is the remainder of n² alone (9 ÷ 7).",
+        "d": "3 is the remainder of n itself, not of the expression."
+      }
+    },
+    "gmat-focus-readiness-check-quant-065-dup2": {
+      "prompt": "What is the units digit of 7^42?",
+      "formula": null,
+      "options": {
+        "a": "1",
+        "b": "3",
+        "c": "9",
+        "d": "7"
+      },
+      "correctOptionId": "c",
+      "explanation": "Units digits of powers of 7 repeat every 4: 7, 9, 3, 1. Since 42 = 4 × 10 + 2, 7^42 has the same units digit as 7², which is 9.",
+      "distractorExplanations": {
+        "a": "1 is the units digit when the exponent is a multiple of 4.",
+        "b": "3 is the units digit when the exponent leaves remainder 3 on division by 4.",
+        "d": "7 is the units digit when the exponent leaves remainder 1 on division by 4."
+      }
+    },
+    "gmat-focus-readiness-check-quant-066-dup2": {
+      "prompt": "Twice a number, decreased by 3, equals 17. If the number is then increased by 25%, what is the result?",
+      "formula": null,
+      "options": {
+        "a": "10",
+        "b": "15",
+        "c": "13.75",
+        "d": "12.5"
+      },
+      "correctOptionId": "d",
+      "explanation": "2n − 3 = 17 gives n = 10. Increasing 10 by 25% gives 10 × 1.25 = 12.5.",
+      "distractorExplanations": {
+        "a": "10 is the number before the 25% increase.",
+        "c": "13.75 applies 25% to 11 instead of 10.",
+        "b": "15 is a 50% increase, not 25%."
+      }
+    },
+    "gmat-focus-readiness-check-quant-016": {
+      "options": {
+        "a": "96",
+        "b": "192",
+        "c": "168",
+        "d": "152"
+      },
+      "correctOptionId": "d",
+      "explanation": "With width w, length = 2w + 3. Perimeter: 2(2w + 3) + 2w = 6w + 6 = 54, so w = 8 and length = 19. Area = 8 × 19 = 152 square meters.",
+      "distractorExplanations": {
+        "a": "96 does not match any width–length pair satisfying both conditions.",
+        "c": "168 = 8 × 21 uses a length of 2w + 5 instead of 2w + 3.",
+        "b": "192 = 8 × 24 uses a length of 3w instead of 2w + 3."
+      }
+    },
+    "gmat-focus-readiness-check-quant-026": {
+      "prompt": "A company's total cost of producing x widgets is C(x) = 2000 + 15x + 0.02x² dollars. What is the additional cost of producing the 101st widget, that is, C(101) − C(100)?",
+      "formula": null,
+      "options": {
+        "a": "$15.02",
+        "b": "$17.02",
+        "c": "$21.02",
+        "d": "$19.02"
+      },
+      "correctOptionId": "d",
+      "explanation": "C(101) = 2000 + 1515 + 0.02(10,201) = 3719.02 and C(100) = 2000 + 1500 + 200 = 3700. The difference is $19.02: $15 from the linear term plus 0.02(101² − 100²) = 0.02 × 201 = $4.02.",
+      "distractorExplanations": {
+        "a": "$15.02 adds only 0.02 for the squared term instead of 0.02 × 201.",
+        "b": "$17.02 understates the squared-term increase.",
+        "c": "$21.02 overstates the increase from the squared term."
+      }
+    },
+    "gmat-focus-readiness-check-quant-029": {
+      "options": {
+        "a": "7.5 hours",
+        "b": "10 hours",
+        "c": "15 hours",
+        "d": "12.5 hours"
+      },
+      "correctOptionId": "d",
+      "explanation": "Volume = 20 × 12 × 2 = 480 m³ = 480,000 L. 75% of that is 360,000 L. At 480 L per minute: 360,000 ÷ 480 = 750 minutes = 12.5 hours.",
+      "distractorExplanations": {
+        "a": "7.5 hours treats 450 minutes as the fill time; 750 minutes is correct.",
+        "b": "10 hours is 600 minutes, which fills only 288,000 L (60%).",
+        "c": "15 hours is 900 minutes, which fills 432,000 L (90%)."
+      }
+    },
+    "gmat-focus-readiness-check-quant-030": {
+      "options": {
+        "a": "4",
+        "b": "1",
+        "c": "0",
+        "d": "6"
+      },
+      "correctOptionId": "c",
+      "explanation": "M = 13, A = 1, T = 20, H = 8, so the sum is 42. Since 42 = 6 × 7, the remainder on division by 7 is 0.",
+      "distractorExplanations": {
+        "b": "1 would require a letter sum of 43 or another number 1 more than a multiple of 7.",
+        "d": "6 is the quotient of 42 ÷ 7, not the remainder.",
+        "a": "4 would require a letter sum such as 39 (for example TEAM), not MATH."
+      }
+    },
+    "gmat-focus-readiness-check-quant-032": {
+      "options": {
+        "a": "100",
+        "b": "88",
+        "c": "94",
+        "d": "82"
+      },
+      "correctOptionId": "d",
+      "explanation": "a₁ = 4, a₂ = 3(4) − 2 = 10, a₃ = 3(10) − 2 = 28, a₄ = 3(28) − 2 = 82.",
+      "distractorExplanations": {
+        "b": "88 would require a₃ = 30.",
+        "c": "94 would require a₃ = 32.",
+        "a": "100 would require a₃ = 34."
+      }
+    },
+    "gmat-focus-readiness-check-quant-044": {
+      "options": {
+        "a": "750",
+        "b": "738",
+        "c": "726",
+        "d": "762"
+      },
+      "correctOptionId": "c",
+      "explanation": "a₄ = 6r³ = 162 gives r³ = 27, so r = 3. Terms: 6, 18, 54, 162, 486. Sum = 726. Check: S₅ = 6(3⁵ − 1)/(3 − 1) = 6 × 242 / 2 = 726.",
+      "distractorExplanations": {
+        "b": "738 adds 12 too many; recheck the sum 6 + 18 + 54 + 162 + 486.",
+        "d": "762 does not match the geometric-series sum.",
+        "a": "750 does not match the geometric-series sum."
+      }
+    },
+    "gmat-focus-readiness-check-quant-045": {
+      "prompt": "A rectangular box has dimensions in the ratio 2:3:4. If the volume of the box is 5,184 cubic units, what is the length of the longest side?",
+      "options": {
+        "a": "18",
+        "b": "36",
+        "c": "27",
+        "d": "24"
+      },
+      "correctOptionId": "d",
+      "explanation": "Let the sides be 2x, 3x, and 4x. Volume = 24x³ = 5,184, so x³ = 216 and x = 6. The longest side is 4x = 24.",
+      "distractorExplanations": {
+        "a": "18 is the middle side, 3x.",
+        "c": "27 would require x = 6.75, which does not give volume 5,184.",
+        "b": "36 is 6x, not 4x."
+      }
+    },
+    "gmat-focus-readiness-check-quant-050": {
+      "options": {
+        "a": "105",
+        "b": "135",
+        "c": "119",
+        "d": "180"
+      },
+      "correctOptionId": "c",
+      "explanation": "With width w, length = 2w + 3. Perimeter: 6w + 6 = 48, so w = 7 and length = 17. Area = 7 × 17 = 119 square meters.",
+      "distractorExplanations": {
+        "a": "105 = 7 × 15 uses length 2w + 1.",
+        "d": "180 does not satisfy the perimeter of 48.",
+        "b": "135 does not come from a width–length pair satisfying both conditions."
+      }
+    },
+    "gmat-focus-readiness-check-quant-052": {
+      "prompt": "If (3x − 2)/4 + (x + 5)/6 = 4, what is the value of x?",
+      "formula": "$$\\frac{3x - 2}{4} + \\frac{x + 5}{6} = 4$$",
+      "options": {
+        "a": "2",
+        "b": "8",
+        "c": "6",
+        "d": "4"
+      },
+      "correctOptionId": "d",
+      "explanation": "Multiply both sides by 12: 3(3x − 2) + 2(x + 5) = 48, so 11x + 4 = 48 and x = 4. Check: 10/4 + 9/6 = 2.5 + 1.5 = 4.",
+      "distractorExplanations": {
+        "a": "x = 2 gives 1 + 7/6 ≈ 2.17, not 4.",
+        "c": "x = 6 gives 4 + 11/6 ≈ 5.83, not 4.",
+        "b": "x = 8 gives 5.5 + 13/6 ≈ 7.67, not 4."
+      }
+    },
+    "gmat-focus-readiness-check-quant-059": {
+      "prompt": "An investment portfolio contains stocks and bonds in a 3:2 ratio by value. If the stocks increase in value by 12% and the bonds decrease in value by 4%, what is the overall percentage change in the portfolio's value?",
+      "options": {
+        "a": "7.2% increase",
+        "b": "6.4% increase",
+        "c": "5.6% increase",
+        "d": "8.0% increase"
+      },
+      "correctOptionId": "c",
+      "explanation": "Stocks are 3/5 = 60% and bonds 2/5 = 40% of the value. Weighted change = 0.6(12%) + 0.4(−4%) = 7.2% − 1.6% = 5.6% increase.",
+      "distractorExplanations": {
+        "b": "6.4% weights the bond loss by 0.2 instead of 0.4.",
+        "d": "8.0% simply subtracts 4% from 12% without weighting.",
+        "a": "7.2% is the stock contribution alone, ignoring the bond loss."
+      }
+    },
+    "gmat-focus-readiness-check-034": {
+      "prompt": "If a and b are integers, is ab even? (1) a is even. (2) b is odd. (Data Sufficiency: (a) Statement (1) ALONE is sufficient, but statement (2) alone is not. (b) Statement (2) ALONE is sufficient, but statement (1) alone is not. (c) BOTH statements TOGETHER are sufficient, but neither alone is. (d) NEITHER statement alone NOR both together are sufficient.)",
+      "formula": null
+    },
+    "gmat-focus-readiness-check-data-insights-019": {
+      "prompt": "A company's annual profit, in millions of dollars, is modeled by P(t) = 0.5t² + 2t + 10, where t is the number of years since the company was founded. What is the projected profit when t = 5?",
+      "formula": null,
+      "options": {
+        "a": "$17.5 million",
+        "b": "$22.5 million",
+        "c": "$27.5 million",
+        "d": "$32.5 million"
+      },
+      "correctOptionId": "d",
+      "explanation": "P(5) = 0.5(25) + 2(5) + 10 = 12.5 + 10 + 10 = 32.5, so the projected profit is $32.5 million.",
+      "distractorExplanations": {
+        "a": "$17.5 million does not include every term of P(5) = 12.5 + 10 + 10.",
+        "b": "$22.5 million leaves out the 2t term (10).",
+        "c": "$27.5 million uses 0.5t² = 7.5 instead of 12.5."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-020": {
+      "prompt": "Units produced per hour over four consecutive hours — Machine A: 25, 28, 22, 30; Machine B: 30, 26, 29, 25. Which machine had the greater average production rate over the four hours, and by how many units per hour?",
+      "options": {
+        "a": "Machine A, by 1.25 units/hour",
+        "b": "Machine B, by 2.5 units/hour",
+        "c": "Machine A, by 2.5 units/hour",
+        "d": "Machine B, by 1.25 units/hour"
+      },
+      "correctOptionId": "d",
+      "explanation": "Machine A: 105 units ÷ 4 = 26.25 per hour. Machine B: 110 ÷ 4 = 27.5 per hour. Machine B is higher by 27.5 − 26.25 = 1.25 units per hour.",
+      "distractorExplanations": {
+        "a": "Machine A's total (105) is lower than Machine B's (110).",
+        "c": "Machine A is not higher, and 2.5 is not the gap in averages.",
+        "b": "2.5 is half the gap in totals (5 ÷ 2); the gap in averages is 5 ÷ 4 = 1.25."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-021": {
+      "prompt": "A company's market share, in percent, x years after a campaign began is modeled as North = 5x + 20 and South = −x² + 10x + 15. Three years after the campaign began, which region has the larger share, and by how many percentage points?",
+      "formula": null
+    },
+    "gmat-focus-readiness-check-data-insights-025": {
+      "prompt": "A company's annual revenue, in millions of dollars, is modeled by R(t) = 0.5t² + 2t + 10, where t is the number of years since the company was founded. What is the projected revenue when t = 4?",
+      "formula": null,
+      "options": {
+        "a": "$18 million",
+        "b": "$22 million",
+        "c": "$24 million",
+        "d": "$26 million"
+      },
+      "correctOptionId": "d",
+      "explanation": "R(4) = 0.5(16) + 2(4) + 10 = 8 + 8 + 10 = 26, so the projected revenue is $26 million.",
+      "distractorExplanations": {
+        "a": "$18 million leaves out the 0.5t² term (8).",
+        "b": "$22 million uses 2t = 4 instead of 8.",
+        "c": "$24 million uses 0.5t² = 6 instead of 8."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-027": {
+      "prompt": "Units produced over four consecutive months — Factory X: 120, 130, 110, 140; Factory Y: 135, 125, 145, 115. Which factory had the greater average monthly production, and by how many units per month?",
+      "options": {
+        "a": "Factory X, by 5 units/month",
+        "b": "Factory Y, by 10 units/month",
+        "c": "Factory X, by 10 units/month",
+        "d": "Factory Y, by 5 units/month"
+      },
+      "correctOptionId": "d",
+      "explanation": "Factory X: 500 ÷ 4 = 125 per month. Factory Y: 520 ÷ 4 = 130 per month. Factory Y is higher by 5 units per month.",
+      "distractorExplanations": {
+        "a": "Factory X's total (500) is lower than Factory Y's (520).",
+        "c": "Factory X is not higher, and 10 is not the gap in averages.",
+        "b": "10 is half the gap in totals (20 ÷ 2); the gap in averages is 20 ÷ 4 = 5."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-031": {
+      "formula": "$$\\begin{array}{|l|c|c|c|c|}\\hline \\text{Quarter} & \\text{Q1} & \\text{Q2} & \\text{Q3} & \\text{Q4} \\\\ \\hline \\text{Product A (units)} & 200 & 220 & 250 & 280 \\\\ \\text{Product B (units)} & 150 & 165 & 180 & 225 \\\\ \\hline \\end{array}$$",
+      "options": {
+        "a": "Product A, by 6.7 percentage points",
+        "b": "Product B, by 1.7 percentage points",
+        "c": "Product A, by 13.3 percentage points",
+        "d": "Product B, by 10.0 percentage points"
+      },
+      "correctOptionId": "d",
+      "explanation": "Product A: (280 − 200)/200 = 40%. Product B: (225 − 150)/150 = 50%. Product B's increase is larger by 10 percentage points.",
+      "distractorExplanations": {
+        "a": "Product A's increase (40%) is smaller than Product B's (50%).",
+        "b": "The gap is 50% − 40% = 10 points, not 1.7.",
+        "c": "Product A is not higher, and 13.3 is not the gap."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-032": {
+      "options": {
+        "a": "0.648",
+        "b": "0.720",
+        "c": "0.932",
+        "d": "0.902"
+      },
+      "correctOptionId": "d",
+      "explanation": "P(all three) = 0.8 × 0.7 × 0.9 = 0.504. Exactly two: 0.8 × 0.7 × 0.1 + 0.8 × 0.3 × 0.9 + 0.2 × 0.7 × 0.9 = 0.056 + 0.216 + 0.126 = 0.398. At least two = 0.504 + 0.398 = 0.902.",
+      "distractorExplanations": {
+        "a": "0.648 does not match the sum of the exactly-two and all-three cases.",
+        "b": "0.720 is only P(X) × P(Z), which ignores Task Y.",
+        "c": "0.932 overcounts; the correct total is 0.902."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-034": {
+      "prompt": "A company began each quarter with 200 employees. Departures were Q1: 16, Q2: 15, Q3: 18, Q4: 17. Which quarter had the highest turnover rate (departures ÷ starting headcount), and what was that rate?"
+    },
+    "gmat-focus-readiness-check-data-insights-035": {
+      "prompt": "In a clinical trial, the line of best fit relating drug dose D (mg) to symptom reduction R (0–100 scale) is R = 2.5D + 15. What reduction does the line predict for a 30 mg dose?",
+      "formula": null
+    },
+    "gmat-focus-readiness-check-data-insights-036": {
+      "prompt": "Three marketing campaigns had these results — Campaign A: reach 50,000, conversion 9%; Campaign B: reach 60,000, conversion 8%; Campaign C: reach 65,000, conversion 7%. Which campaign generated the most purchases, and how many?"
+    },
+    "gmat-focus-readiness-check-data-insights-040": {
+      "options": {
+        "a": "$5,500",
+        "b": "$6,000",
+        "c": "$7,500",
+        "d": "$7,000"
+      },
+      "correctOptionId": "d",
+      "explanation": "From the two cost points, variable cost = ($7,000 − $5,000) ÷ 100 = $20 per unit and fixed cost = $5,000 − $2,000 = $3,000. For 250 units: cost = $3,000 + $5,000 = $8,000, revenue = 250 × $60 = $15,000, profit = $7,000.",
+      "distractorExplanations": {
+        "a": "$5,500 would be the profit at a $54 selling price, not $60.",
+        "b": "$6,000 does not match revenue minus total cost at 250 units.",
+        "c": "$7,500 leaves out part of the fixed cost."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-042": {
+      "options": {
+        "a": "$200,000",
+        "b": "$190,000",
+        "c": "$195,000",
+        "d": "$175,000"
+      },
+      "correctOptionId": "d",
+      "explanation": "Actual spending: personnel $350,000 × 1.10 = $385,000; licenses $250,000; hardware $200,000 × 0.95 = $190,000. Total = $825,000, leaving $1,000,000 − $825,000 = $175,000 for miscellaneous.",
+      "distractorExplanations": {
+        "b": "$190,000 is the actual hardware cost, not the amount left.",
+        "c": "$195,000 would require hardware to come in 15% under budget.",
+        "a": "$200,000 is the original miscellaneous budget before the overrun and savings."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-043": {
+      "prompt": "Last quarter's reviews (positive / neutral / negative) — Product X: 120 / 50 / 30; Product Y: 150 / 40 / 50; Product Z: 140 / 60 / 40. Which product has the highest share of positive reviews, and what is that share?"
+    },
+    "gmat-focus-readiness-check-data-insights-044": {
+      "prompt": "Closing prices over five days (Company A / Company B) — Day 1: 100 / 95; Day 2: 105 / 100; Day 3: 110 / 102; Day 4: 112 / 110; Day 5: 115 / 108. On which day was the percentage difference between the two closing prices smallest?",
+      "explanation": "Day 4 has the smallest gap in both absolute terms ($2) and relative terms: 2 ÷ 111 ≈ 1.8%, versus about 5.1%, 4.9%, 7.5%, and 6.3% on the other days."
+    },
+    "gmat-focus-readiness-check-data-insights-045": {
+      "prompt": "In a survey of 300 commuters, 30 use only Car and Public Transit, 25 use only Public Transit and Bicycle, 25 use only Car and Bicycle, and 10 use all three modes. How many commuters use exactly two modes?",
+      "explanation": "Exactly two modes means the pairwise-only regions of the Venn diagram: 30 + 25 + 25 = 80. The 10 who use all three are excluded."
+    },
+    "gmat-focus-readiness-check-data-insights-046": {
+      "prompt": "A company's revenue and expenses (in $ millions) were — 2021: 120 and 95; 2022: 135 and 105; 2023: 150 and 110. What was the average annual net profit over these three years?",
+      "formula": null,
+      "options": {
+        "a": "$25 million",
+        "b": "$30 million",
+        "c": "$35 million",
+        "d": "$31.67 million"
+      },
+      "correctOptionId": "d",
+      "explanation": "Net profit: 2021 = 25, 2022 = 30, 2023 = 40 (in $ millions). Total = 95, so the average is 95 ÷ 3 ≈ $31.67 million.",
+      "distractorExplanations": {
+        "a": "$25 million is only the 2021 profit.",
+        "b": "$30 million is the 2022 profit (the median), not the mean.",
+        "c": "$35 million does not match the average of 25, 30, and 40."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-047": {
+      "prompt": "Sales of a new product by region (units × average price) — North: 1,500 × $25; South: 1,200 × $30; East: 1,800 × $20; West: 1,000 × $35. What is the total revenue across all four regions?",
+      "formula": null,
+      "options": {
+        "a": "$140,000",
+        "b": "$155,000",
+        "c": "$150,000",
+        "d": "$144,500"
+      },
+      "correctOptionId": "d",
+      "explanation": "North $37,500 + South $36,000 + East $36,000 + West $35,000 = $144,500.",
+      "distractorExplanations": {
+        "a": "$140,000 undercounts one region's revenue.",
+        "c": "$150,000 is a rounded estimate, not the exact total.",
+        "b": "$155,000 overstates the revenue from at least one region."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-048": {
+      "prompt": "Three tasks have estimated durations and completion levels — Task A: 10 days, 70% done; Task B: 15 days, 60% done; Task C: 8 days, 25% done. If the tasks are finished one after another, how many days of estimated work remain?",
+      "formula": null,
+      "options": {
+        "a": "12 days",
+        "b": "20.5 days",
+        "c": "18.5 days",
+        "d": "15 days"
+      },
+      "correctOptionId": "d",
+      "explanation": "Remaining work: A = 10 × 0.30 = 3 days, B = 15 × 0.40 = 6 days, C = 8 × 0.75 = 6 days. Total = 15 days.",
+      "distractorExplanations": {
+        "a": "12 days leaves out part of Task B or Task C.",
+        "c": "18.5 days does not match 3 + 6 + 6.",
+        "b": "20.5 days uses completed percentages instead of remaining ones for some tasks."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-049": {
+      "prompt": "Sales team by region (reps × average monthly sales per rep) — North: 10 × $4,000; Central: 15 × $4,500; South: 5 × $3,500. What is the company-wide average monthly sales per representative?",
+      "options": {
+        "a": "$4,000",
+        "b": "$4,333",
+        "c": "$4,250",
+        "d": "$4,167"
+      },
+      "correctOptionId": "d",
+      "explanation": "Total sales = $40,000 + $67,500 + $17,500 = $125,000 across 30 reps, so the weighted average is $125,000 ÷ 30 ≈ $4,167.",
+      "distractorExplanations": {
+        "a": "$4,000 is the simple average of the three regional averages.",
+        "c": "$4,250 overweights the Central region.",
+        "b": "$4,333 does not match the rep-weighted average."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-050": {
+      "prompt": "Unit cost and selling price by product — A: $50 and $70; B: $55 and $80; C: $40 and $65. If the company sells 100 units of A, 150 units of B, and 200 units of C, what is the total profit?",
+      "options": {
+        "a": "$10,500",
+        "b": "$12,000",
+        "c": "$11,500",
+        "d": "$10,750"
+      },
+      "correctOptionId": "d",
+      "explanation": "Profit per unit: A $20, B $25, C $25. Totals: 100 × $20 = $2,000, 150 × $25 = $3,750, 200 × $25 = $5,000. Sum = $10,750.",
+      "distractorExplanations": {
+        "a": "$10,500 undercounts Product B's profit.",
+        "c": "$11,500 overstates at least one product's unit profit.",
+        "b": "$12,000 treats every product as earning $25 per unit, but A earns $20."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-051": {
+      "prompt": "A company's employees by department — Sales: 60, Marketing: 40, HR: 30, Finance: 50, R&D: 70. What percentage of all employees work in Sales or Marketing?",
+      "explanation": "Total employees = 60 + 40 + 30 + 50 + 70 = 250. Sales plus Marketing = 100, and 100 ÷ 250 = 40%."
+    },
+    "gmat-focus-readiness-check-data-insights-057": {
+      "prompt": "Unit cost and selling price by product — A: $10 and $15; B: $12 and $18; C: $8 and $13. If the company sells 100 units of A, 150 units of B, and 200 units of C, what is the total profit?",
+      "formula": null,
+      "options": {
+        "a": "$2,200",
+        "b": "$2,700",
+        "c": "$2,500",
+        "d": "$2,400"
+      },
+      "correctOptionId": "d",
+      "explanation": "Profit per unit: A $5, B $6, C $5. Totals: $500 + $900 + $1,000 = $2,400.",
+      "distractorExplanations": {
+        "a": "$2,200 undercounts Product B's profit.",
+        "c": "$2,500 treats Product B as earning $6.67 per unit.",
+        "b": "$2,700 overstates the unit profit of at least one product."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-060": {
+      "prompt": "A store's weekly sales were $12,000 in week 1 and rose by $1,500 each week after that. In which week did weekly sales first exceed $20,000?",
+      "formula": null,
+      "options": {
+        "a": "Week 6",
+        "b": "Week 9",
+        "c": "Week 8",
+        "d": "Week 7"
+      },
+      "correctOptionId": "d",
+      "explanation": "Week n sales = 12,000 + 1,500(n − 1). Week 6 = $19,500 (not above $20,000); week 7 = $21,000, the first week above $20,000.",
+      "distractorExplanations": {
+        "a": "Week 6 sales are $19,500, still below $20,000.",
+        "c": "Week 8 ($22,500) is above $20,000, but week 7 already was.",
+        "b": "Week 9 is two weeks after sales first passed $20,000."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-061": {
+      "prompt": "A product's market share, in percent, is projected as M(t) = 10 × (1.2)^t, where t is the number of years since launch. What is the projected market share after 3 years?",
+      "formula": null
+    },
+    "gmat-focus-readiness-check-data-insights-065": {
+      "prompt": "Monthly advertising spend and sales (both in $ thousands) — Month 1: 10 and 100; Month 2: 15 and 120; Month 3: 20 and 140; Month 4: 20 and 135; Month 5: 25 and 160; Month 6: 30 and 165. Which statement is best supported by the data?",
+      "explanation": "Sales generally rise with advertising spend, but not proportionally: the jump from $25k to $30k adds only $5k in sales, and months 3 and 4 have the same spend with different sales. The relationship is positive but neither perfect nor strictly proportional."
+    },
+    "gmat-focus-readiness-check-data-insights-066-dup2": {
+      "prompt": "Using the quarterly sales table (in thousands of dollars) for Products A and B, what were Product B's total sales across all four quarters?",
+      "options": {
+        "a": "$340,000",
+        "b": "$545,000",
+        "c": "$360,000",
+        "d": "$350,000"
+      },
+      "correctOptionId": "d",
+      "explanation": "Product B: 80 + 85 + 90 + 95 = 350 thousand, so total sales were $350,000.",
+      "distractorExplanations": {
+        "a": "$340,000 drops $10,000 from the quarterly sum.",
+        "c": "$360,000 adds $10,000 too much.",
+        "b": "$545,000 is Product A's four-quarter total."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-066-dup3": {
+      "prompt": "Unit cost and selling price — Product A: $15 and $25; Product B: $20 and $30. Fixed costs are $3,000 per month. If the company sells 200 units of A and 300 units of B in a month, what is its total profit for the month?",
+      "options": {
+        "a": "$1,500",
+        "b": "$5,000",
+        "c": "$2,500",
+        "d": "$2,000"
+      },
+      "correctOptionId": "d",
+      "explanation": "Each product earns $10 per unit. Contribution = 200 × $10 + 300 × $10 = $5,000. Subtracting $3,000 in fixed costs leaves a profit of $2,000.",
+      "distractorExplanations": {
+        "a": "$1,500 subtracts more than the $3,000 fixed cost.",
+        "c": "$2,500 subtracts only $2,500 in fixed costs.",
+        "b": "$5,000 is contribution margin before fixed costs."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-041": {
+      "prompt": "Quarterly unit sales (thousands) — Product A: 120, 130, 140, 150; Product B: 100, 120, 130, 140. By what percent did Product B's quarterly sales increase from Q1 to Q4?",
+      "options": {
+        "a": "25%",
+        "b": "30%",
+        "c": "35%",
+        "d": "40%"
+      },
+      "correctOptionId": "d",
+      "explanation": "Product B went from 100 to 140 thousand units: (140 − 100) ÷ 100 = 40%.",
+      "distractorExplanations": {
+        "a": "25% is Product A's increase (120 to 150).",
+        "b": "30% does not match (140 − 100) ÷ 100.",
+        "c": "35% does not match (140 − 100) ÷ 100."
+      }
+    }
+  },
+  "gre-readiness-check": {
+    "gre-readiness-check-quant-149": {
+      "prompt": "If 4x = 32, what is the value of x?"
+    },
+    "gre-readiness-check-quant-161": {
+      "prompt": "If 2x + 3 = 21, what is the value of x?"
+    },
+    "gre-readiness-check-quant-173": {
+      "prompt": "If 3x + 3 = 30, what is the value of x?"
+    },
+    "gre-readiness-check-quant-181": {
+      "prompt": "If 5x + 6 = 46, what is the value of x?"
+    },
+    "gre-readiness-check-quant-154": {
+      "prompt": "Which values of x satisfy 4x < 14?"
+    },
+    "gre-readiness-check-quant-166": {
+      "prompt": "Which values of x satisfy 4x < 18?"
+    },
+    "gre-readiness-check-quant-186": {
+      "prompt": "Which values of x satisfy 3x < 18?"
+    },
+    "gre-readiness-check-quant-002": {
+      "options": {
+        "a": "29",
+        "b": "31",
+        "c": "35",
+        "d": "33"
+      },
+      "correctOptionId": "d",
+      "explanation": "a₁ = 3, a₂ = 2(3) − 1 = 5, a₃ = 9, a₄ = 17, a₅ = 2(17) − 1 = 33.",
+      "distractorExplanations": {
+        "a": "29 would require a₄ = 15.",
+        "b": "31 would require a₄ = 16.",
+        "c": "35 adds 1 instead of subtracting 1 at the last step."
+      }
+    },
+    "gre-readiness-check-quant-007": {
+      "options": {
+        "a": "4",
+        "b": "7",
+        "c": "6",
+        "d": "5"
+      },
+      "correctOptionId": "d",
+      "explanation": "r + p = 12 and 3r + 7p = 56. Substituting r = 12 − p: 36 + 4p = 56, so p = 5. Check: 7 × $3 + 5 × $7 = $21 + $35 = $56.",
+      "distractorExplanations": {
+        "a": "p = 4 gives 8 × $3 + 4 × $7 = $52.",
+        "c": "p = 6 gives 6 × $3 + 6 × $7 = $60.",
+        "b": "p = 7 gives 5 × $3 + 7 × $7 = $64."
+      }
+    },
+    "gre-readiness-check-quant-009": {
+      "options": {
+        "a": "250",
+        "b": "244",
+        "c": "248",
+        "d": "242"
+      },
+      "correctOptionId": "d",
+      "explanation": "Terms: 2, 6, 18, 54, 162. Sum = 242. Check with the formula: S₅ = 2(3⁵ − 1)/(3 − 1) = 2 × 242 / 2 = 242.",
+      "distractorExplanations": {
+        "b": "244 adds 2 too many (counts the first term twice).",
+        "c": "248 does not match the geometric-series sum.",
+        "a": "250 does not match the geometric-series sum."
+      }
+    },
+    "gre-readiness-check-quant-017": {
+      "options": {
+        "a": "274",
+        "b": "250",
+        "c": "268",
+        "d": "244"
+      },
+      "correctOptionId": "d",
+      "explanation": "a₁ = 4, a₂ = 10, a₃ = 28, a₄ = 82, a₅ = 3(82) − 2 = 244.",
+      "distractorExplanations": {
+        "b": "250 adds 4 instead of subtracting 2 at the last step.",
+        "c": "268 would require a₄ = 90.",
+        "a": "274 would require a₄ = 92."
+      }
+    },
+    "gre-readiness-check-quant-031": {
+      "prompt": "A sequence is defined so that each term after the first is 3 more than twice the previous term. If the third term is 29, what is the first term?",
+      "options": {
+        "a": "4",
+        "b": "8",
+        "c": "7",
+        "d": "5"
+      },
+      "correctOptionId": "d",
+      "explanation": "Work backward: a₂ = (29 − 3) ÷ 2 = 13, then a₁ = (13 − 3) ÷ 2 = 5. Check: 5 → 13 → 29.",
+      "distractorExplanations": {
+        "a": "a₁ = 4 gives 4 → 11 → 25.",
+        "c": "a₁ = 7 gives 7 → 17 → 37.",
+        "b": "a₁ = 8 gives 8 → 19 → 41."
+      }
+    },
+    "gre-readiness-check-quant-032": {
+      "prompt": "In the coordinate plane, a circle centered at the origin passes through (6, 8). A line with positive slope is tangent to the circle and has a y-intercept of 15. What is the slope of the line?",
+      "options": {
+        "a": "1/2",
+        "b": "3/4",
+        "c": "5/4",
+        "d": "√5/2"
+      },
+      "correctOptionId": "d",
+      "explanation": "The radius is √(36 + 64) = 10. For the line y = mx + 15 to be tangent, its distance from the origin must equal 10: 15/√(m² + 1) = 10, so m² + 1 = 2.25 and m² = 1.25. The positive slope is √1.25 = √5/2.",
+      "distractorExplanations": {
+        "a": "m = 1/2 gives distance 15/√1.25 ≈ 13.4, so the line misses the circle.",
+        "b": "m = 3/4 gives distance 15/1.25 = 12, so the line misses the circle.",
+        "c": "m = 5/4 gives distance 15/√2.5625 ≈ 9.4, so the line cuts the circle."
+      }
+    },
+    "gre-readiness-check-quant-034": {
+      "prompt": "A machine produces 240 widgets in its first 4 hours at a constant rate. Its rate then increases by 25% for the next 6 hours. How many widgets does it produce in the full 10 hours?",
+      "options": {
+        "a": "600",
+        "b": "660",
+        "c": "720",
+        "d": "690"
+      },
+      "correctOptionId": "d",
+      "explanation": "The initial rate is 60 per hour. After a 25% increase it is 75 per hour, giving 75 × 6 = 450 in the last 6 hours. Total = 240 + 450 = 690.",
+      "distractorExplanations": {
+        "a": "600 assumes the rate stayed at 60 per hour for all 10 hours.",
+        "b": "660 applies a 15% increase instead of 25%.",
+        "c": "720 applies a 33% increase instead of 25%."
+      }
+    },
+    "gre-readiness-check-quant-038": {
+      "prompt": "Rectangle ABCD has AB = 12 and BC = 8. Point E lies on side BC so that the area of triangle ABE is one-quarter of the area of the rectangle. What is the length of BE?",
+      "options": {
+        "a": "10",
+        "b": "6",
+        "c": "8",
+        "d": "4"
+      },
+      "correctOptionId": "d",
+      "explanation": "The rectangle's area is 96, so triangle ABE has area 24. Since BE is perpendicular to AB, area = ½ × 12 × BE = 6 × BE = 24, so BE = 4.",
+      "distractorExplanations": {
+        "b": "BE = 6 gives a triangle area of 36, which is three-eighths of the rectangle.",
+        "c": "BE = 8 is the full side BC and gives an area of 48, half the rectangle.",
+        "a": "BE = 10 is longer than side BC, which is only 8."
+      }
+    },
+    "gre-readiness-check-quant-040": {
+      "options": {
+        "a": "6 hours",
+        "b": "12 hours",
+        "c": "10 hours",
+        "d": "8 hours"
+      },
+      "correctOptionId": "d",
+      "explanation": "Together the pipes fill 1/12 + 1/18 = 5/36 of the tank per hour. In 4 hours they fill 20/36 = 5/9, leaving 4/9. Pipe B alone needs (4/9) ÷ (1/18) = 8 hours.",
+      "distractorExplanations": {
+        "a": "6 hours fills only 1/3 of the tank at pipe B's rate.",
+        "c": "10 hours fills 5/9 at pipe B's rate, more than the 4/9 remaining.",
+        "b": "12 hours fills 2/3 at pipe B's rate."
+      }
+    },
+    "gre-readiness-check-quant-043": {
+      "prompt": "In the coordinate plane, line L passes through (2, 5) and (8, 17). Line M is perpendicular to line L and passes through (9, 9). At what point do lines L and M intersect?",
+      "options": {
+        "a": "(3, 7)",
+        "b": "(6, 13)",
+        "c": "(4, 9)",
+        "d": "(5, 11)"
+      },
+      "correctOptionId": "d",
+      "explanation": "Line L has slope 2: y = 2x + 1. Line M has slope −1/2 through (9, 9): y = −x/2 + 13.5. Setting them equal: 2x + 1 = −x/2 + 13.5, so 2.5x = 12.5 and x = 5, y = 11.",
+      "distractorExplanations": {
+        "b": "(6, 13) is on line L but not on line M (M gives y = 10.5 at x = 6).",
+        "c": "(4, 9) is on line L but not on line M (M gives y = 11.5 at x = 4).",
+        "a": "(3, 7) is on line L but not on line M (M gives y = 12 at x = 3)."
+      }
+    },
+    "gre-readiness-check-quant-048": {
+      "options": {
+        "a": "9.6 hours",
+        "b": "7.2 hours",
+        "c": "8.0 hours",
+        "d": "6.4 hours"
+      },
+      "correctOptionId": "d",
+      "explanation": "Volume = 20 × 30 × 6 = 3,600 ft³. 80% is 2,880 ft³. At 450 ft³ per hour: 2,880 ÷ 450 = 6.4 hours.",
+      "distractorExplanations": {
+        "b": "7.2 hours fills 3,240 ft³, which is 90% of capacity.",
+        "c": "8.0 hours fills 3,600 ft³, which is the full pool.",
+        "a": "9.6 hours would require a rate of 300 ft³ per hour."
+      }
+    },
+    "gre-readiness-check-quant-049": {
+      "options": {
+        "a": "46",
+        "b": "58",
+        "c": "64",
+        "d": "82"
+      },
+      "correctOptionId": "d",
+      "explanation": "a₁ = 5, a₂ = 2(5 + 3) = 16, a₃ = 2(16 + 3) = 38, a₄ = 2(38 + 3) = 82.",
+      "distractorExplanations": {
+        "a": "46 would require a₃ = 20.",
+        "b": "58 is the fourth term when the first term is 2, not 5.",
+        "c": "64 would require a₃ = 29."
+      }
+    },
+    "gre-readiness-check-quant-051": {
+      "options": {
+        "a": "2",
+        "b": "√5",
+        "c": "√13",
+        "d": "√2"
+      },
+      "correctOptionId": "d",
+      "explanation": "Midpoint R = ((3 − 1)/2, (−2 + 4)/2) = (1, 1). Distance to the origin = √(1² + 1²) = √2.",
+      "distractorExplanations": {
+        "b": "√5 would be the distance from (1, 2) or (2, 1), not (1, 1).",
+        "c": "√13 is the distance from P(3, −2) to the origin, not from the midpoint.",
+        "a": "2 would be the distance from (2, 0) or (0, 2)."
+      }
+    },
+    "gre-readiness-check-quant-059": {
+      "prompt": "In a group of 120 students, 45 play basketball and 75 play soccer. If 18 students play both sports, how many students play neither sport?",
+      "options": {
+        "a": "12",
+        "b": "33",
+        "c": "27",
+        "d": "18"
+      },
+      "correctOptionId": "d",
+      "explanation": "By inclusion–exclusion, 45 + 75 − 18 = 102 students play at least one sport, so 120 − 102 = 18 play neither.",
+      "distractorExplanations": {
+        "a": "12 does not match 120 − (45 + 75 − 18).",
+        "c": "27 is 45 − 18, the number who play only basketball.",
+        "b": "33 does not match the inclusion–exclusion total."
+      }
+    },
+    "gre-readiness-check-quant-062": {
+      "options": {
+        "a": "5",
+        "b": "3",
+        "c": "4",
+        "d": "2.5"
+      },
+      "correctOptionId": "d",
+      "explanation": "(25 + 2x)(15 + 2x) = 600 expands to 4x² + 80x + 375 = 600, so x² + 20x − 56.25 = 0. The positive root is x = (−20 + √(400 + 225)) / 2 = (−20 + 25) / 2 = 2.5. Check: 30 × 20 = 600.",
+      "distractorExplanations": {
+        "b": "x = 3 gives 31 × 21 = 651 square meters.",
+        "c": "x = 4 gives 33 × 23 = 759 square meters.",
+        "a": "x = 5 gives 35 × 25 = 875 square meters."
+      }
+    },
+    "gre-readiness-check-quant-064": {
+      "prompt": "A theater sells adult tickets for $12 and child tickets for $8. If 50 tickets were sold for a total of $520, how many adult tickets were sold?",
+      "formula": null,
+      "options": {
+        "a": "20",
+        "b": "25",
+        "c": "35",
+        "d": "30"
+      },
+      "correctOptionId": "d",
+      "explanation": "With a adult tickets, 12a + 8(50 − a) = 520, so 4a + 400 = 520 and a = 30. Check: 30 × $12 + 20 × $8 = $360 + $160 = $520.",
+      "distractorExplanations": {
+        "a": "20 is the number of child tickets.",
+        "b": "25 adult tickets would bring in $500.",
+        "c": "35 adult tickets would bring in $540."
+      }
+    },
+    "gre-readiness-check-quant-081": {
+      "options": {
+        "a": "103",
+        "b": "121",
+        "c": "115",
+        "d": "109"
+      },
+      "correctOptionId": "d",
+      "explanation": "a₁ = 5, a₂ = 3(5) − 2 = 13, a₃ = 3(13) − 2 = 37, a₄ = 3(37) − 2 = 109.",
+      "distractorExplanations": {
+        "a": "103 subtracts 8 at the last step instead of 2.",
+        "c": "115 adds 4 instead of subtracting 2 at the last step.",
+        "b": "121 would require a₃ = 41."
+      }
+    },
+    "gre-readiness-check-quant-092": {
+      "options": {
+        "a": "$204.00",
+        "b": "$219.24",
+        "c": "$259.20",
+        "d": "$220.32"
+      },
+      "correctOptionId": "d",
+      "explanation": "The $240 purchase qualifies for 15% off: $240 × 0.85 = $204. Adding 8% tax: $204 × 1.08 = $220.32.",
+      "distractorExplanations": {
+        "a": "$204.00 is the discounted price before tax.",
+        "b": "$219.24 does not match $204 × 1.08.",
+        "c": "$259.20 applies tax to the undiscounted $240."
+      }
+    },
+    "gre-readiness-check-quant-097": {
+      "options": {
+        "a": "6",
+        "b": "14",
+        "c": "12",
+        "d": "10"
+      },
+      "correctOptionId": "d",
+      "explanation": "Reflecting P(a, b) across y = x gives Q(b, a); reflecting across the x-axis gives R(b, −a). PR² = (b − a)² + (a + b)² = 2a² + 2b² = 100, so a² + b² = 50. Positive-integer solutions: (1, 7), (7, 1), (5, 5), giving a + b = 8 or 10. Only 10 is listed.",
+      "distractorExplanations": {
+        "a": "a + b = 6 allows at most a² + b² = 26, which is less than 50.",
+        "c": "a + b = 12 would need a² + b² = 50 with a + b = 12, but the minimum is 72.",
+        "b": "a + b = 14 would need a² + b² = 50 with a + b = 14, but the minimum is 98."
+      }
+    },
+    "gre-readiness-check-quant-112": {
+      "prompt": "A rectangular box has dimensions in the ratio 2:3:4. If the volume of the box is 5,184 cubic centimeters, what is the length of the shortest side?",
+      "options": {
+        "a": "9 cm",
+        "b": "24 cm",
+        "c": "18 cm",
+        "d": "12 cm"
+      },
+      "correctOptionId": "d",
+      "explanation": "Let the sides be 2x, 3x, 4x. Volume = 24x³ = 5,184, so x³ = 216 and x = 6. The shortest side is 2x = 12 cm.",
+      "distractorExplanations": {
+        "a": "9 cm would require x = 4.5, which gives a volume of 2,187.",
+        "c": "18 cm is the middle side (3x).",
+        "b": "24 cm is the longest side (4x)."
+      }
+    },
+    "gre-readiness-check-quant-121": {
+      "prompt": "The sum of the first n terms of an arithmetic sequence is Sₙ = 3n² + 2n. What is the 15th term?",
+      "options": {
+        "a": "83",
+        "b": "95",
+        "c": "90",
+        "d": "89"
+      },
+      "correctOptionId": "d",
+      "explanation": "aₙ = Sₙ − Sₙ₋₁ = 6n − 1. So a₁₅ = 6(15) − 1 = 89. Check: S₁₅ − S₁₄ = 705 − 616 = 89.",
+      "distractorExplanations": {
+        "a": "83 is the 14th term (6 × 14 − 1).",
+        "c": "90 uses 6n instead of 6n − 1.",
+        "b": "95 is the 16th term (6 × 16 − 1)."
+      }
+    },
+    "gre-readiness-check-quant-126": {
+      "options": {
+        "a": "108",
+        "b": "180",
+        "c": "162",
+        "d": "152"
+      },
+      "correctOptionId": "d",
+      "explanation": "With width w, length = 2w + 3. Perimeter: 6w + 6 = 54, so w = 8 and length = 19. Area = 8 × 19 = 152 square meters.",
+      "distractorExplanations": {
+        "a": "108 does not come from a width–length pair satisfying both conditions.",
+        "c": "162 = 9 × 18 does not satisfy length = 2w + 3.",
+        "b": "180 does not satisfy the perimeter of 54."
+      }
+    },
+    "gre-readiness-check-quant-127": {
+      "options": {
+        "a": "49",
+        "b": "52",
+        "c": "59",
+        "d": "56"
+      },
+      "correctOptionId": "d",
+      "explanation": "S₁₂ = 6(2a₁ + 77) = 546, so 2a₁ + 77 = 91 and a₁ = 7. Then a₈ = 7 + 7 × 7 = 56.",
+      "distractorExplanations": {
+        "a": "49 is the 7th term.",
+        "b": "52 would require a first term of 3.",
+        "c": "59 would require a first term of 10."
+      }
+    },
+    "gre-readiness-check-quant-129": {
+      "options": {
+        "a": "1:9",
+        "b": "3:25",
+        "c": "1:10",
+        "d": "3:26"
+      },
+      "correctOptionId": "d",
+      "explanation": "There are 24 × 8 = 192 employees at first, then 208 after hiring 16. 24:208 simplifies (divide by 8) to 3:26.",
+      "distractorExplanations": {
+        "a": "1:9 would require 216 employees.",
+        "b": "3:25 would require 200 employees.",
+        "c": "1:10 would require 240 employees."
+      }
+    },
+    "gre-readiness-check-quant-143": {
+      "prompt": "In a code, each letter has the value of its alphabet position (A = 1, B = 2, …, Z = 26), and a word's code is the sum of its letters. For example, MATH = 42. What is the code for HEAT?",
+      "options": {
+        "a": "32",
+        "b": "40",
+        "c": "36",
+        "d": "34"
+      },
+      "correctOptionId": "d",
+      "explanation": "H = 8, E = 5, A = 1, T = 20, so HEAT = 8 + 5 + 1 + 20 = 34.",
+      "distractorExplanations": {
+        "a": "32 undercounts one letter by 2.",
+        "c": "36 overcounts one letter by 2.",
+        "b": "40 is not the sum of H, E, A, and T."
+      }
+    },
+    "gre-readiness-check-quant-042": {
+      "prompt": "A price is increased by 25% and then the new price is decreased by 20%. The final price is what percent of the original price?",
+      "formula": null,
+      "options": {
+        "a": "90%",
+        "b": "95%",
+        "c": "105%",
+        "d": "100%"
+      },
+      "correctOptionId": "d",
+      "explanation": "Multiply the factors: 1.25 × 0.80 = 1.00, so the final price equals 100% of the original.",
+      "distractorExplanations": {
+        "a": "90% would mean a 10% net decrease; 1.25 × 0.80 is exactly 1.",
+        "b": "95% assumes a small net loss, but the 20% cut applies to the larger price and exactly undoes the 25% rise.",
+        "c": "105% simply adds +25% and −20%."
+      }
+    },
+    "gre-readiness-check-quant-058": {
+      "prompt": "A right circular cone has radius 6 and height 8. What is its volume?",
+      "formula": null,
+      "options": {
+        "a": "48π",
+        "b": "288π",
+        "c": "144π",
+        "d": "96π"
+      },
+      "correctOptionId": "d",
+      "explanation": "Cone volume = (1/3)πr²h = (1/3)π(36)(8) = 96π.",
+      "distractorExplanations": {
+        "a": "48π is half the correct volume.",
+        "c": "144π uses r = 6 with h = 12.",
+        "b": "288π is the volume of a cylinder with the same radius and height."
+      }
+    },
+    "gre-readiness-check-quant-094": {
+      "prompt": "The length of a rectangle is 3 times its width, and its area is 147 square units. What is its perimeter?",
+      "formula": null,
+      "options": {
+        "a": "42",
+        "b": "70",
+        "c": "63",
+        "d": "56"
+      },
+      "correctOptionId": "d",
+      "explanation": "3w² = 147, so w² = 49 and w = 7; length = 21. Perimeter = 2(7 + 21) = 56.",
+      "distractorExplanations": {
+        "a": "42 is the perimeter of a 7 × 14 rectangle, whose area is 98.",
+        "c": "63 is 3 × 21, not a perimeter.",
+        "b": "70 would require a length of 28."
+      }
+    },
+    "gre-readiness-check-quant-086": {
+      "prompt": "A cube has a total surface area of 150 square inches. What is its volume, in cubic inches?",
+      "formula": null,
+      "options": {
+        "a": "100",
+        "b": "216",
+        "c": "150",
+        "d": "125"
+      },
+      "correctOptionId": "d",
+      "explanation": "6s² = 150, so s² = 25 and s = 5. Volume = 5³ = 125 cubic inches.",
+      "distractorExplanations": {
+        "a": "100 is 4s², the area of four faces.",
+        "c": "150 is the surface area, not the volume.",
+        "b": "216 is the volume of a cube with side 6."
+      }
+    },
+    "gre-readiness-check-quant-100": {
+      "prompt": "A right circular cylinder has a volume of 72π cubic units and a height of 8 units. What is its radius?",
+      "formula": null,
+      "options": {
+        "a": "2",
+        "b": "9",
+        "c": "6",
+        "d": "3"
+      },
+      "correctOptionId": "d",
+      "explanation": "πr²(8) = 72π, so r² = 9 and r = 3.",
+      "distractorExplanations": {
+        "a": "r = 2 gives a volume of 32π.",
+        "c": "6 is the diameter, not the radius.",
+        "b": "9 is r², not r."
+      }
+    },
+    "gre-readiness-check-quant-115": {
+      "prompt": "In an arithmetic sequence, the 4th term is 17 and the 9th term is 42. What is the first term?",
+      "formula": null,
+      "options": {
+        "a": "−3",
+        "b": "7",
+        "c": "5",
+        "d": "2"
+      },
+      "correctOptionId": "d",
+      "explanation": "Five steps from the 4th to the 9th term add 25, so d = 5. Then a₁ = 17 − 3 × 5 = 2.",
+      "distractorExplanations": {
+        "a": "−3 subtracts four differences instead of three.",
+        "c": "5 is the common difference, not the first term.",
+        "b": "7 is the second term."
+      }
+    },
+    "gre-readiness-check-quant-131": {
+      "prompt": "What is the distance between the points (−2, 3) and (4, 11) in the coordinate plane?",
+      "formula": null,
+      "options": {
+        "a": "8",
+        "b": "14",
+        "c": "12",
+        "d": "10"
+      },
+      "correctOptionId": "d",
+      "explanation": "d = √((4 − (−2))² + (11 − 3)²) = √(36 + 64) = √100 = 10.",
+      "distractorExplanations": {
+        "a": "8 is only the vertical change.",
+        "c": "12 does not match √(6² + 8²).",
+        "b": "14 adds the horizontal and vertical changes instead of using the distance formula."
+      }
+    },
+    "gre-readiness-check-quant-190": {
+      "prompt": "Pipe A fills an empty tank in 4 hours, and drain B empties a full tank in 12 hours. If both are open, how many hours does it take to fill the empty tank?",
+      "formula": null,
+      "options": {
+        "a": "3",
+        "b": "16",
+        "c": "8",
+        "d": "6"
+      },
+      "correctOptionId": "d",
+      "explanation": "Net rate = 1/4 − 1/12 = 2/12 = 1/6 of the tank per hour, so filling takes 6 hours.",
+      "distractorExplanations": {
+        "a": "3 hours adds the rates as if both were filling.",
+        "c": "8 hours subtracts the times (12 − 4) instead of the rates.",
+        "b": "16 hours adds the times."
+      }
+    },
+    "gre-readiness-check-quant-183": {
+      "prompt": "A square has a diagonal of length 8√2. What is its area?",
+      "formula": null,
+      "options": {
+        "a": "32",
+        "b": "128",
+        "c": "72",
+        "d": "64"
+      },
+      "correctOptionId": "d",
+      "explanation": "A square's side is diagonal ÷ √2 = 8, so the area is 8² = 64. Alternatively, area = d²/2 = 128/2 = 64.",
+      "distractorExplanations": {
+        "a": "32 divides d² by 4 instead of 2.",
+        "c": "72 does not match d²/2.",
+        "b": "128 is d², not the area."
+      }
+    },
+    "gre-readiness-check-quant-102": {
+      "prompt": "A rectangular tank 10 feet long, 8 feet wide, and 5 feet deep is filled at 16 cubic feet per minute. How many minutes does it take to fill the tank to 60% of capacity?",
+      "formula": null,
+      "options": {
+        "a": "12",
+        "b": "25",
+        "c": "20",
+        "d": "15"
+      },
+      "correctOptionId": "d",
+      "explanation": "Volume = 10 × 8 × 5 = 400 ft³. 60% is 240 ft³. At 16 ft³ per minute: 240 ÷ 16 = 15 minutes.",
+      "distractorExplanations": {
+        "a": "12 minutes fills 192 ft³, only 48% of capacity.",
+        "c": "20 minutes fills 320 ft³, 80% of capacity.",
+        "b": "25 minutes fills the whole tank (400 ft³)."
+      }
+    },
+    "gre-readiness-check-quant-103": {
+      "prompt": "Each term of a sequence after the first is 4 less than 3 times the previous term. If the first term is 3, what is the fourth term?",
+      "formula": "$$a_1 = 3, \\quad a_{n+1} = 3a_n - 4$$",
+      "options": {
+        "a": "23",
+        "b": "35",
+        "c": "31",
+        "d": "29"
+      },
+      "correctOptionId": "d",
+      "explanation": "a₁ = 3, a₂ = 3(3) − 4 = 5, a₃ = 3(5) − 4 = 11, a₄ = 3(11) − 4 = 29.",
+      "distractorExplanations": {
+        "a": "23 would require a₃ = 9.",
+        "c": "31 would require a₃ = 35/3, which is not an integer.",
+        "b": "35 would require a₃ = 13."
+      }
+    }
+  }
+}

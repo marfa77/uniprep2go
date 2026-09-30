@@ -3,33 +3,33 @@
     "id": "aapc-ccs-readiness-check-guidelines-001",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "guidelines",
-    "prompt": "Modifier 51 is generally used to indicate",
+    "prompt": "In the outpatient setting, the physician documents \"probable pneumonia\" for a patient with cough and fever. Per ICD-10-CM outpatient guidelines, you should code:",
     "options": [
       {
         "id": "a",
-        "text": "Bilateral procedure"
+        "text": "Pneumonia, as if the diagnosis were confirmed"
       },
       {
         "id": "b",
-        "text": "Multiple procedures performed at the same session by the same provider"
+        "text": "An observation Z code for suspected pneumonia"
       },
       {
         "id": "c",
-        "text": "Assistant surgeon"
+        "text": "The documented signs and symptoms (cough, fever)"
       },
       {
         "id": "d",
-        "text": "Discontinued procedure"
+        "text": "R69, illness, unspecified, until tests return"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Modifier 51 reports multiple procedures; payer edits may affect its use.",
+    "correctOptionId": "c",
+    "explanation": "In outpatient encounters, do not code diagnoses documented as probable, suspected, likely, or rule-out. Code to the highest degree of certainty, which here is the signs and symptoms. Coding uncertain diagnoses as confirmed applies only to inpatient admissions.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Multiple procedures performed at the same session by the same provider”.",
-      "c": "Not the best answer here; the right answer is “Multiple procedures performed at the same session by the same provider”.",
-      "d": "Not the best answer here; the right answer is “Multiple procedures performed at the same session by the same provider”."
+      "a": "Coding an uncertain diagnosis as confirmed is the inpatient rule, not the outpatient rule.",
+      "b": "Z03 observation codes are for a suspected condition that is ruled out with no signs or symptoms present.",
+      "d": "R69 is a nonspecific code; documented symptoms are more specific and required."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
@@ -68,34 +68,34 @@
   {
     "id": "aapc-ccs-readiness-check-guidelines-003",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "guidelines",
-    "prompt": "Separate procedure designation in CPT means the service is",
+    "topicId": "compliance",
+    "prompt": "Cloned (copy-and-paste) documentation is a compliance risk mainly because it:",
     "options": [
       {
         "id": "a",
-        "text": "Always billed in addition to a more extensive related procedure"
+        "text": "Always makes notes too short to support coding"
       },
       {
         "id": "b",
-        "text": "Usually considered integral to a larger procedure and not separately reported when performed as part of that larger service"
+        "text": "Forces coders to assign unspecified diagnosis codes"
       },
       {
         "id": "c",
-        "text": "Only for radiology"
+        "text": "Is prohibited in every EHR by federal software rules"
       },
       {
         "id": "d",
-        "text": "Never payable under any circumstance"
+        "text": "May not reflect the actual encounter and can support billing for services not performed"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "“Separate procedure” codes are typically not unbundled from a more comprehensive related procedure.",
+    "correctOptionId": "d",
+    "explanation": "Cloned notes can carry forward findings that were not present or services that were not performed. Medical necessity and service levels must be supported by documentation specific to each encounter.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Usually considered integral to a larger procedure and not separately reported when performed as part of that larger service”.",
-      "c": "Not the best answer here; the right answer is “Usually considered integral to a larger procedure and not separately reported when performed as part of that larger service”.",
-      "d": "Not the best answer here; the right answer is “Usually considered integral to a larger procedure and not separately reported when performed as part of that larger service”."
+      "a": "Cloned notes are usually long, not short; the issue is accuracy.",
+      "b": "Cloning does not force unspecified codes; it undermines the integrity of the record.",
+      "c": "Copy-paste is not banned outright; it must be used responsibly and audited."
     },
-    "difficulty": "hard",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
@@ -134,98 +134,98 @@
   {
     "id": "aapc-ccs-readiness-check-guidelines-005",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "guidelines",
-    "prompt": "Upcoding is",
+    "topicId": "compliance",
+    "prompt": "Why do hospitals screen employees and contractors against the OIG List of Excluded Individuals/Entities (LEIE)?",
     "options": [
       {
         "id": "a",
-        "text": "Reporting a higher-level service than documented/supported"
+        "text": "To verify that staff completed annual HIPAA training"
       },
       {
         "id": "b",
-        "text": "Reporting a lower level than performed intentionally always as the definition"
+        "text": "To confirm that providers hold a valid NPI number"
       },
       {
         "id": "c",
-        "text": "Using the correct code"
+        "text": "To avoid billing federal programs for items or services from excluded parties"
       },
       {
         "id": "d",
-        "text": "Appending a correct modifier"
+        "text": "To check that coders passed a credentialing exam"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Upcoding is a compliance/fraud risk; downcoding underreports services.",
+    "correctOptionId": "c",
+    "explanation": "Federal health programs do not pay for items or services furnished, ordered, or directed by excluded individuals. Billing for them can lead to civil monetary penalties, so organizations screen at hire and periodically.",
     "distractorExplanations": {
-      "b": "That's downcoding/under coding concepts.",
-      "c": "Correct coding is compliant.",
-      "d": "Proper modifiers are fine."
-    },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
-  },
-  {
-    "id": "aapc-ccs-readiness-check-guidelines-006",
-    "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "guidelines",
-    "prompt": "The False Claims Act targets",
-    "options": [
-      {
-        "id": "a",
-        "text": "Honest clerical corrections via timely voids/replacements"
-      },
-      {
-        "id": "b",
-        "text": "Knowingly submitting false or fraudulent claims to the government"
-      },
-      {
-        "id": "c",
-        "text": "Patient thank-you cards"
-      },
-      {
-        "id": "d",
-        "text": "Scheduling reminders"
-      }
-    ],
-    "correctOptionId": "b",
-    "explanation": "Knowledge includes deliberate ignorance/reckless disregard in FCA jurisprudence—compliance programs matter.",
-    "distractorExplanations": {
-      "a": "Good-faith corrections differ.",
-      "c": "Courtesy cards fine.",
-      "d": "Reminders fine."
+      "a": "Training records are tracked separately from exclusion screening.",
+      "b": "NPI verification uses NPPES, not the OIG exclusion list.",
+      "d": "Exam credentialing is verified with AHIMA or AAPC, not the LEIE."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
-    "id": "aapc-ccs-readiness-check-guidelines-007",
+    "id": "aapc-ccs-readiness-check-guidelines-006",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "guidelines",
-    "prompt": "HIPAA privacy rules govern",
+    "topicId": "pcs",
+    "prompt": "How many characters does every valid ICD-10-PCS code contain?",
     "options": [
       {
         "id": "a",
-        "text": "Only CPT relative value units"
+        "text": "Five"
       },
       {
         "id": "b",
-        "text": "Only OSHA sharps logs"
+        "text": "Six"
       },
       {
         "id": "c",
-        "text": "Protected health information use and disclosure"
+        "text": "Three to seven"
       },
       {
         "id": "d",
-        "text": "Federal highway speed limits"
+        "text": "Seven"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Covered entities must safeguard PHI; minimum necessary and patient rights apply.",
+    "correctOptionId": "d",
+    "explanation": "Every ICD-10-PCS code has exactly 7 alphanumeric characters. Each position has a defined meaning that depends on the section.",
     "distractorExplanations": {
-      "a": "RVUs are payment.",
-      "b": "OSHA is safety.",
-      "d": "Speed limits are traffic."
+      "a": "Five-character codes are CPT, not ICD-10-PCS.",
+      "b": "Six characters is incomplete; PCS always uses seven.",
+      "c": "Variable length (3–7) describes ICD-10-CM diagnosis codes."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+  },
+  {
+    "id": "aapc-ccs-readiness-check-guidelines-007",
+    "examSlug": "aapc-ccs-readiness-check",
+    "topicId": "pcs",
+    "prompt": "In ICD-10-PCS, codes in the Medical and Surgical section begin with which first character?",
+    "options": [
+      {
+        "id": "a",
+        "text": "0"
+      },
+      {
+        "id": "b",
+        "text": "1"
+      },
+      {
+        "id": "c",
+        "text": "B"
+      },
+      {
+        "id": "d",
+        "text": "X"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The first character identifies the section; 0 = Medical and Surgical. For example, 1 = Obstetrics, B = Imaging, and X = New Technology.",
+    "distractorExplanations": {
+      "b": "1 is the Obstetrics section.",
+      "c": "B is the Imaging section.",
+      "d": "X is the New Technology section."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -233,197 +233,197 @@
   {
     "id": "aapc-ccs-readiness-check-guidelines-008",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "guidelines",
-    "prompt": "HCPCS Level II codes commonly report",
+    "topicId": "pcs",
+    "prompt": "In a Medical and Surgical ICD-10-PCS code, the third character represents the:",
     "options": [
       {
         "id": "a",
-        "text": "ICD diagnoses"
+        "text": "Body part"
       },
       {
         "id": "b",
-        "text": "Only inpatient ICD-10-PCS"
+        "text": "Approach"
       },
       {
         "id": "c",
-        "text": "Only anesthesia base units"
+        "text": "Root operation"
       },
       {
         "id": "d",
-        "text": "Drugs, supplies, DME, and certain services not in CPT"
-      }
-    ],
-    "correctOptionId": "d",
-    "explanation": "A-codes, J-codes, etc., are Level II examples used on claims with CPT as applicable.",
-    "distractorExplanations": {
-      "a": "Diagnoses are ICD.",
-      "b": "PCS is hospital inpatient procedures.",
-      "c": "Anesthesia base is CPT anesthesia methodology."
-    },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
-  },
-  {
-    "id": "aapc-ccs-readiness-check-guidelines-009",
-    "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "guidelines",
-    "prompt": "ABN (Advance Beneficiary Notice) is used when:",
-    "options": [
-      {
-        "id": "a",
-        "text": "A provider believes Medicare may deny a service as not reasonable/necessary and the beneficiary may be liable"
-      },
-      {
-        "id": "b",
-        "text": "Medicaid always pays 100%"
-      },
-      {
-        "id": "c",
-        "text": "A service is always covered without issue"
-      },
-      {
-        "id": "d",
-        "text": "The patient is under age 1"
-      }
-    ],
-    "correctOptionId": "a",
-    "explanation": "ABN shifts financial liability for expected denials when properly executed for Medicare Part B situations.",
-    "distractorExplanations": {
-      "b": "Not a Medicaid payment guarantee.",
-      "c": "Covered services don't need ABN for that reason.",
-      "d": "Age unrelated generally."
-    },
-    "difficulty": "hard",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
-  },
-  {
-    "id": "aapc-ccs-readiness-check-guidelines-010",
-    "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "guidelines",
-    "prompt": "National Provider Identifier (NPI) is",
-    "options": [
-      {
-        "id": "a",
-        "text": "A diagnosis code"
-      },
-      {
-        "id": "b",
-        "text": "A unique identification number for covered health care providers"
-      },
-      {
-        "id": "c",
-        "text": "A place of service code"
-      },
-      {
-        "id": "d",
-        "text": "A patient's SSN replacement on all public posts"
-      }
-    ],
-    "correctOptionId": "b",
-    "explanation": "NPIs identify providers on claims; do not confuse with taxonomy or PIN legacy systems.",
-    "distractorExplanations": {
-      "a": "DX are ICD.",
-      "c": "POS is two-digit setting.",
-      "d": "SSNs must not be publicly posted."
-    },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
-  },
-  {
-    "id": "aapc-ccs-readiness-check-guidelines-011",
-    "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "guidelines",
-    "prompt": "Unbundling means:",
-    "options": [
-      {
-        "id": "a",
-        "text": "Using a panel code correctly"
-      },
-      {
-        "id": "b",
-        "text": "Following NCCI"
-      },
-      {
-        "id": "c",
-        "text": "Billing component codes separately when a comprehensive code includes them, contrary to rules"
-      },
-      {
-        "id": "d",
-        "text": "Reporting one inclusive code properly"
+        "text": "Device"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Unbundling to increase payment violates NCCI/CPT inclusive coding principles.",
+    "explanation": "Medical and Surgical character order: 1 section, 2 body system, 3 root operation, 4 body part, 5 approach, 6 device, 7 qualifier.",
     "distractorExplanations": {
-      "a": "Correct panel use is fine.",
-      "b": "Following NCCI is compliant.",
-      "d": "Inclusive coding is proper."
+      "a": "Body part is the 4th character.",
+      "b": "Approach is the 5th character.",
+      "d": "Device is the 6th character."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
-    "id": "aapc-ccs-readiness-check-guidelines-012",
+    "id": "aapc-ccs-readiness-check-guidelines-009",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "guidelines",
-    "prompt": "Medical necessity means:",
+    "topicId": "pcs",
+    "prompt": "Which ICD-10-PCS root operation means cutting out or off, without replacement, only a portion of a body part?",
     "options": [
       {
         "id": "a",
-        "text": "Any service a patient requests for convenience only always payable"
+        "text": "Resection"
       },
       {
         "id": "b",
-        "text": "The most expensive option"
+        "text": "Detachment"
       },
       {
         "id": "c",
-        "text": "Services without documentation"
+        "text": "Extraction"
       },
       {
         "id": "d",
-        "text": "Services are reasonable and necessary for diagnosis/treatment per payer coverage criteria"
+        "text": "Excision"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Coverage policies/LCDs/NCDs define necessity; documentation must support it.",
+    "explanation": "Excision removes a portion of a body part. Resection removes all of a body part, and Extraction pulls out or off all or part of a body part by force.",
     "distractorExplanations": {
-      "a": "Convenience isn't automatic necessity.",
-      "b": "Cost ≠ necessity.",
-      "c": "No documentation fails audits."
+      "a": "Resection is removal of the entire body part.",
+      "b": "Detachment is cutting off all or part of an upper or lower extremity.",
+      "c": "Extraction uses force (pulling or stripping), such as a tooth extraction."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+  },
+  {
+    "id": "aapc-ccs-readiness-check-guidelines-010",
+    "examSlug": "aapc-ccs-readiness-check",
+    "topicId": "pcs",
+    "prompt": "A laparoscopic cholecystectomy removes the entire gallbladder. The ICD-10-PCS root operation and approach are:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Resection, percutaneous endoscopic approach"
+      },
+      {
+        "id": "b",
+        "text": "Excision, open approach"
+      },
+      {
+        "id": "c",
+        "text": "Resection, open approach"
+      },
+      {
+        "id": "d",
+        "text": "Extirpation, percutaneous approach"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Removing the whole gallbladder is Resection. Laparoscopic procedures use the percutaneous endoscopic approach (value 4). The code is 0FT44ZZ.",
+    "distractorExplanations": {
+      "b": "Excision is for a portion; laparoscopic is not open.",
+      "c": "The root operation is right, but laparoscopy is percutaneous endoscopic, not open.",
+      "d": "Extirpation removes solid matter such as stones, not the organ."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+  },
+  {
+    "id": "aapc-ccs-readiness-check-guidelines-011",
+    "examSlug": "aapc-ccs-readiness-check",
+    "topicId": "pcs",
+    "prompt": "A calculus is removed intact from the renal pelvis. The correct ICD-10-PCS root operation is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Drainage"
+      },
+      {
+        "id": "b",
+        "text": "Extraction"
+      },
+      {
+        "id": "c",
+        "text": "Extirpation"
+      },
+      {
+        "id": "d",
+        "text": "Fragmentation"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Extirpation is taking or cutting out solid matter from a body part, such as stones, clots, or foreign bodies. Here the body part itself (renal pelvis) is not removed.",
+    "distractorExplanations": {
+      "a": "Drainage removes fluids or gases.",
+      "b": "Extraction removes all or part of a body part by force, not solid matter from within it.",
+      "d": "Fragmentation breaks solid matter into pieces without removing it."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+  },
+  {
+    "id": "aapc-ccs-readiness-check-guidelines-012",
+    "examSlug": "aapc-ccs-readiness-check",
+    "topicId": "pcs",
+    "prompt": "Extracorporeal shock-wave lithotripsy (ESWL) of a ureteral stone, with fragments left to pass naturally, is coded to which root operation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Extirpation"
+      },
+      {
+        "id": "b",
+        "text": "Destruction"
+      },
+      {
+        "id": "c",
+        "text": "Drainage"
+      },
+      {
+        "id": "d",
+        "text": "Fragmentation"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Fragmentation breaks solid matter into pieces; the pieces may be passed or left in place. ESWL uses the External approach.",
+    "distractorExplanations": {
+      "a": "Extirpation requires the solid matter to be taken out.",
+      "b": "Destruction eradicates a body part itself, not solid matter within it.",
+      "c": "Drainage applies to fluids or gases."
+    },
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "aapc-ccs-readiness-check-guidelines-013",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "guidelines",
-    "prompt": "A compliance program commonly includes:",
+    "topicId": "pcs",
+    "prompt": "Coronary artery bypass grafting (CABG) is coded in ICD-10-PCS to which root operation?",
     "options": [
       {
         "id": "a",
-        "text": "Policies, training, auditing, and a process to report/respond to issues"
+        "text": "Bypass"
       },
       {
         "id": "b",
-        "text": "Encouraging silent upcoding goals"
+        "text": "Replacement"
       },
       {
         "id": "c",
-        "text": "Destroying records after one week"
+        "text": "Dilation"
       },
       {
         "id": "d",
-        "text": "Sharing passwords among all staff"
+        "text": "Supplement"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "OIG seven-element concepts emphasize prevention and detection of fraud/abuse.",
+    "explanation": "Bypass alters the route of passage of the contents of a tubular body part. CABG reroutes blood around the blocked coronary segment.",
     "distractorExplanations": {
-      "b": "Upcoding goals are illegal.",
-      "c": "Retention schedules are longer.",
-      "d": "Password sharing breaks security."
+      "b": "Replacement puts a device in place of all or part of a body part.",
+      "c": "Dilation expands a tubular body part's orifice or lumen, as in angioplasty.",
+      "d": "Supplement reinforces or augments a body part with a device."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -431,98 +431,98 @@
   {
     "id": "aapc-ccs-readiness-check-guidelines-014",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "guidelines",
-    "prompt": "Modifier 59 (or X{EPSU}) is used to indicate",
+    "topicId": "pcs",
+    "prompt": "A total hip arthroplasty with a prosthetic joint is coded in ICD-10-PCS to which root operation?",
     "options": [
       {
         "id": "a",
-        "text": "Bilateral surgery"
+        "text": "Supplement"
       },
       {
         "id": "b",
-        "text": "A distinct procedural service not normally reported together, when criteria are met"
+        "text": "Reposition"
       },
       {
         "id": "c",
-        "text": "Assistant surgeon"
+        "text": "Replacement"
       },
       {
         "id": "d",
-        "text": "Increased E/M complexity automatically"
+        "text": "Insertion"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Use distinct-service modifiers only with documentation; overuse is an audit target.",
+    "correctOptionId": "c",
+    "explanation": "Replacement puts in a biological or synthetic material that takes the place of all or part of a body part. A total hip arthroplasty replaces the joint with a prosthesis.",
     "distractorExplanations": {
-      "a": "50 bilateral.",
-      "c": "80 assistant.",
-      "d": "E/M complexity isn't 59."
+      "a": "Supplement reinforces a body part that remains in place.",
+      "b": "Reposition moves a body part to its normal location.",
+      "d": "Insertion places a nonbiological device that does not replace a body part."
     },
-    "difficulty": "hard",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "aapc-ccs-readiness-check-guidelines-015",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "guidelines",
-    "prompt": "The False Claims Act primarily targets",
+    "topicId": "pcs",
+    "prompt": "When no device remains in the body after an ICD-10-PCS procedure, the 6th character (device) value is:",
     "options": [
       {
         "id": "a",
-        "text": "Late employee time cards"
+        "text": "0"
       },
       {
         "id": "b",
-        "text": "Knowingly submitting false or fraudulent claims for government payment"
+        "text": "X"
       },
       {
         "id": "c",
-        "text": "Patient no-shows"
+        "text": "Y"
       },
       {
         "id": "d",
-        "text": "HIPAA training attendance"
+        "text": "Z"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "FCA liability attaches to knowing false claims to federal healthcare programs.",
+    "correctOptionId": "d",
+    "explanation": "Z means No Device in the 6th character (and No Qualifier in the 7th). Devices are coded only when they remain after the procedure.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Knowingly submitting false or fraudulent claims for government payment”.",
-      "c": "Not the best answer here; the right answer is “Knowingly submitting false or fraudulent claims for government payment”.",
-      "d": "Not the best answer here; the right answer is “Knowingly submitting false or fraudulent claims for government payment”."
+      "a": "0 is a specific value in many tables, not \"no device.\"",
+      "b": "X as a 7th-character qualifier means Diagnostic.",
+      "c": "Y is used for \"other device\" in some tables, not for no device."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "aapc-ccs-readiness-check-icd-001",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "icd",
-    "prompt": "The False Claims Act targets",
+    "prompt": "In ICD-10-CM, an Excludes1 note means:",
     "options": [
       {
         "id": "a",
-        "text": "Honest clerical corrections via timely voids/replacements"
+        "text": "The two conditions are never coded together (mutually exclusive)"
       },
       {
         "id": "b",
-        "text": "Knowingly submitting false or fraudulent claims to the government"
+        "text": "The excluded condition may be coded additionally if present"
       },
       {
         "id": "c",
-        "text": "Patient thank-you cards"
+        "text": "The excluded code must always be sequenced first"
       },
       {
         "id": "d",
-        "text": "Scheduling reminders"
+        "text": "The code requires an additional 7th character"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Knowledge includes deliberate ignorance/reckless disregard in FCA jurisprudence—compliance programs matter.",
+    "correctOptionId": "a",
+    "explanation": "Excludes1 is a pure exclusion: the two codes cannot be reported together because the conditions cannot occur together, such as congenital and acquired forms of the same condition. Guidelines allow limited exceptions when the conditions are unrelated.",
     "distractorExplanations": {
-      "a": "Good-faith corrections differ.",
-      "c": "Courtesy cards fine.",
-      "d": "Reminders fine."
+      "b": "\"May also be coded if present\" describes Excludes2.",
+      "c": "Sequencing instructions come from \"code first\" and \"use additional code\" notes.",
+      "d": "7th-character requirements are separate tabular instructions."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -531,163 +531,163 @@
     "id": "aapc-ccs-readiness-check-icd-002",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "icd",
-    "prompt": "HIPAA privacy rules govern",
+    "prompt": "An Excludes2 note in ICD-10-CM indicates that:",
     "options": [
       {
         "id": "a",
-        "text": "Only CPT relative value units"
+        "text": "The two conditions can never appear on the same claim"
       },
       {
         "id": "b",
-        "text": "Only OSHA sharps logs"
+        "text": "The excluded condition is always a manifestation code"
       },
       {
         "id": "c",
-        "text": "Protected health information use and disclosure"
+        "text": "The condition is not part of this code, but both may be coded if both are present"
       },
       {
         "id": "d",
-        "text": "Federal highway speed limits"
+        "text": "The code is valid only for inpatient encounters"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Covered entities must safeguard PHI; minimum necessary and patient rights apply.",
+    "explanation": "Excludes2 means \"not included here.\" The excluded condition is not part of the code, but a patient can have both, so both codes may be reported when documented.",
     "distractorExplanations": {
-      "a": "RVUs are payment.",
-      "b": "OSHA is safety.",
-      "d": "Speed limits are traffic."
+      "a": "Never coding together describes Excludes1.",
+      "b": "Excludes2 is not related to etiology/manifestation convention.",
+      "d": "Excludes notes apply in every setting."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "aapc-ccs-readiness-check-icd-003",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "icd",
-    "prompt": "HCPCS Level II codes commonly report",
+    "prompt": "For an ICD-10-CM injury code, the 7th character \"A\" is used when the patient is:",
     "options": [
       {
         "id": "a",
-        "text": "ICD diagnoses"
+        "text": "Seen by that provider for the first time only"
       },
       {
         "id": "b",
-        "text": "Only inpatient ICD-10-PCS"
+        "text": "Seen only for routine healing and follow-up"
       },
       {
         "id": "c",
-        "text": "Only anesthesia base units"
+        "text": "Treated for a late effect (sequela) of the injury"
       },
       {
         "id": "d",
-        "text": "Drugs, supplies, DME, and certain services not in CPT"
+        "text": "Receiving active treatment for the injury"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "A-codes, J-codes, etc., are Level II examples used on claims with CPT as applicable.",
+    "explanation": "A (initial encounter) means active treatment, such as surgery, an ED visit, or evaluation by a new physician. D is used for routine healing or recovery care, and S for sequelae.",
     "distractorExplanations": {
-      "a": "Diagnoses are ICD.",
-      "b": "PCS is hospital inpatient procedures.",
-      "c": "Anesthesia base is CPT anesthesia methodology."
+      "a": "\"A\" depends on active treatment, not on whether it is the provider's first visit.",
+      "b": "Routine healing or follow-up care uses D (subsequent encounter).",
+      "c": "Late effects use S (sequela)."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "aapc-ccs-readiness-check-icd-004",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "icd",
-    "prompt": "ABN (Advance Beneficiary Notice) is used when:",
+    "prompt": "When an ICD-10-CM code needs a 7th character but has fewer than six characters, you should:",
     "options": [
       {
         "id": "a",
-        "text": "A provider believes Medicare may deny a service as not reasonable/necessary and the beneficiary may be liable"
+        "text": "Add the placeholder \"X\" to fill the empty positions"
       },
       {
         "id": "b",
-        "text": "Medicaid always pays 100%"
+        "text": "Report the code without the 7th character"
       },
       {
         "id": "c",
-        "text": "A service is always covered without issue"
+        "text": "Add zeros to the end of the code"
       },
       {
         "id": "d",
-        "text": "The patient is under age 1"
+        "text": "Choose an unspecified code instead"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "ABN shifts financial liability for expected denials when properly executed for Medicare Part B situations.",
+    "explanation": "The placeholder X fills empty positions so the 7th character lands in the 7th position, for example T50.905A or S93.401A. Without it the code is invalid.",
     "distractorExplanations": {
-      "b": "Not a Medicaid payment guarantee.",
-      "c": "Covered services don't need ABN for that reason.",
-      "d": "Age unrelated generally."
+      "b": "Omitting a required 7th character makes the code invalid.",
+      "c": "Zeros are not placeholders in ICD-10-CM.",
+      "d": "Specificity rules still require a valid, complete code."
     },
-    "difficulty": "hard",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "aapc-ccs-readiness-check-icd-005",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "icd",
-    "prompt": "National Provider Identifier (NPI) is",
+    "prompt": "A manifestation code whose title includes \"in diseases classified elsewhere\" must be:",
     "options": [
       {
         "id": "a",
-        "text": "A diagnosis code"
+        "text": "Sequenced first as the principal diagnosis"
       },
       {
         "id": "b",
-        "text": "A unique identification number for covered health care providers"
+        "text": "Sequenced after the code for the underlying etiology"
       },
       {
         "id": "c",
-        "text": "A place of service code"
+        "text": "Reported alone, without the underlying condition"
       },
       {
         "id": "d",
-        "text": "A patient's SSN replacement on all public posts"
+        "text": "Reported only on outpatient claims"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "NPIs identify providers on claims; do not confuse with taxonomy or PIN legacy systems.",
+    "explanation": "Etiology/manifestation convention: code the underlying condition first, then the manifestation. Codes titled \"in diseases classified elsewhere\" can never be principal or first-listed.",
     "distractorExplanations": {
-      "a": "DX are ICD.",
-      "c": "POS is two-digit setting.",
-      "d": "SSNs must not be publicly posted."
+      "a": "These manifestation codes may never be principal or first-listed.",
+      "c": "The etiology code must always be reported with the manifestation.",
+      "d": "The convention applies in all settings."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "aapc-ccs-readiness-check-icd-006",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "icd",
-    "prompt": "Unbundling means:",
+    "prompt": "A patient has type 2 diabetes with diabetic chronic kidney disease, stage 3a. Correct ICD-10-CM coding is:",
     "options": [
       {
         "id": "a",
-        "text": "Using a panel code correctly"
+        "text": "E11.9 plus N18.31"
       },
       {
         "id": "b",
-        "text": "Following NCCI"
+        "text": "N18.31 only, since CKD is the focus"
       },
       {
         "id": "c",
-        "text": "Billing component codes separately when a comprehensive code includes them, contrary to rules"
+        "text": "E11.22 plus N18.31"
       },
       {
         "id": "d",
-        "text": "Reporting one inclusive code properly"
+        "text": "E11.65 plus N18.9"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Unbundling to increase payment violates NCCI/CPT inclusive coding principles.",
+    "explanation": "E11.22 is the combination code for type 2 diabetes with diabetic CKD; its \"use additional code\" note requires the CKD stage code (N18.31 for stage 3a).",
     "distractorExplanations": {
-      "a": "Correct panel use is fine.",
-      "b": "Following NCCI is compliant.",
-      "d": "Inclusive coding is proper."
+      "a": "E11.9 means diabetes without complications, which contradicts the documented CKD.",
+      "b": "The diabetes combination code is required to show the causal link.",
+      "d": "E11.65 means diabetes with hyperglycemia, and N18.9 ignores the documented stage."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -696,130 +696,130 @@
     "id": "aapc-ccs-readiness-check-icd-007",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "icd",
-    "prompt": "Medical necessity means:",
+    "prompt": "A patient has hypertension and stage 4 chronic kidney disease; the provider does not link them. Per ICD-10-CM guidelines:",
     "options": [
       {
         "id": "a",
-        "text": "Any service a patient requests for convenience only always payable"
+        "text": "Code I10 and N18.4 separately, since no link is documented"
       },
       {
         "id": "b",
-        "text": "The most expensive option"
+        "text": "Query the provider before assigning any code"
       },
       {
         "id": "c",
-        "text": "Services without documentation"
+        "text": "Assign I12.9 only, without a CKD stage code"
       },
       {
         "id": "d",
-        "text": "Services are reasonable and necessary for diagnosis/treatment per payer coverage criteria"
+        "text": "Assign I12.9 plus N18.4, because the link is presumed"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Coverage policies/LCDs/NCDs define necessity; documentation must support it.",
+    "explanation": "ICD-10-CM presumes a causal relationship between hypertension and CKD. Use I12.- (I12.9 for CKD stages 1–4) plus N18.- for the stage, unless the provider documents they are unrelated.",
     "distractorExplanations": {
-      "a": "Convenience isn't automatic necessity.",
-      "b": "Cost ≠ necessity.",
-      "c": "No documentation fails audits."
+      "a": "The \"with\" convention presumes the link, so separate I10 is incorrect.",
+      "b": "A query is not needed because the classification presumes the link.",
+      "c": "The I12 category instructs you to add the N18 stage code."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "aapc-ccs-readiness-check-icd-008",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "icd",
-    "prompt": "A compliance program commonly includes:",
+    "prompt": "A patient is admitted with sepsis due to a urinary tract infection; both are present on admission and meet the definition of principal diagnosis. Sequencing is:",
     "options": [
       {
         "id": "a",
-        "text": "Policies, training, auditing, and a process to report/respond to issues"
+        "text": "Systemic infection code (e.g., A41.9) first, then N39.0"
       },
       {
         "id": "b",
-        "text": "Encouraging silent upcoding goals"
+        "text": "UTI (N39.0) first, then the sepsis code"
       },
       {
         "id": "c",
-        "text": "Destroying records after one week"
+        "text": "R65.20 severe sepsis first, then the organism"
       },
       {
         "id": "d",
-        "text": "Sharing passwords among all staff"
+        "text": "Either may be principal at the coder's discretion"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "OIG seven-element concepts emphasize prevention and detection of fraud/abuse.",
+    "explanation": "When sepsis and a localized infection are both present on admission, the systemic infection code is sequenced first, followed by the localized infection. R65.2- is never principal; it is added for severe sepsis.",
     "distractorExplanations": {
-      "b": "Upcoding goals are illegal.",
-      "c": "Retention schedules are longer.",
-      "d": "Password sharing breaks security."
+      "b": "The localized infection is secondary to the systemic infection code.",
+      "c": "R65.2- codes cannot be sequenced first.",
+      "d": "Guidelines give explicit sequencing for sepsis with a localized infection."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "aapc-ccs-readiness-check-icd-009",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "icd",
-    "prompt": "Modifier 59 (or X{EPSU}) is used to indicate",
+    "prompt": "In ICD-10-CM, the abbreviation NOS means:",
     "options": [
       {
         "id": "a",
-        "text": "Bilateral surgery"
+        "text": "Other specified; no separate code exists for the detail"
       },
       {
         "id": "b",
-        "text": "A distinct procedural service not normally reported together, when criteria are met"
+        "text": "Not otherwise specified; the documentation lacks detail"
       },
       {
         "id": "c",
-        "text": "Assistant surgeon"
+        "text": "Not on schedule; the code is new this fiscal year"
       },
       {
         "id": "d",
-        "text": "Increased E/M complexity automatically"
+        "text": "Non-operative status; no procedure was performed"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Use distinct-service modifiers only with documentation; overuse is an audit target.",
+    "explanation": "NOS = not otherwise specified, meaning unspecified because the record lacks detail. NEC = not elsewhere classifiable, meaning the detail is documented but no specific code exists.",
     "distractorExplanations": {
-      "a": "50 bilateral.",
-      "c": "80 assistant.",
-      "d": "E/M complexity isn't 59."
+      "a": "That definition describes NEC (other specified).",
+      "c": "NOS has nothing to do with code update schedules.",
+      "d": "NOS does not describe procedure status."
     },
-    "difficulty": "hard",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "aapc-ccs-readiness-check-icd-010",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "icd",
-    "prompt": "The False Claims Act primarily targets",
+    "prompt": "Under UHDDS, the inpatient principal diagnosis is defined as the condition:",
     "options": [
       {
         "id": "a",
-        "text": "Late employee time cards"
+        "text": "That was most expensive to treat during the stay"
       },
       {
         "id": "b",
-        "text": "Knowingly submitting false or fraudulent claims for government payment"
+        "text": "Listed first on the emergency department record"
       },
       {
         "id": "c",
-        "text": "Patient no-shows"
+        "text": "Established after study to be chiefly responsible for the admission"
       },
       {
         "id": "d",
-        "text": "HIPAA training attendance"
+        "text": "With the highest relative weight among all diagnoses"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "FCA liability attaches to knowing false claims to federal healthcare programs.",
+    "correctOptionId": "c",
+    "explanation": "UHDDS defines principal diagnosis as \"that condition established after study to be chiefly responsible for occasioning the admission of the patient to the hospital for care.\"",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Knowingly submitting false or fraudulent claims for government payment”.",
-      "c": "Not the best answer here; the right answer is “Knowingly submitting false or fraudulent claims for government payment”.",
-      "d": "Not the best answer here; the right answer is “Knowingly submitting false or fraudulent claims for government payment”."
+      "a": "Cost does not determine the principal diagnosis.",
+      "b": "The ED's first-listed diagnosis may change after study.",
+      "d": "Choosing by DRG weight rather than the definition is noncompliant."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -828,31 +828,31 @@
     "id": "aapc-ccs-readiness-check-icd-011",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "icd",
-    "prompt": "Upcoding means:",
+    "prompt": "ICD-10-CM Z codes are used to report:",
     "options": [
       {
         "id": "a",
-        "text": "Selecting a code that accurately reflects documentation"
+        "text": "External causes of injury such as falls"
       },
       {
         "id": "b",
-        "text": "Reporting a higher-level service than supported by documentation to increase payment"
+        "text": "Procedures performed during an inpatient stay"
       },
       {
         "id": "c",
-        "text": "Using ICD-10-CM seventh characters correctly"
+        "text": "Only neoplasms of uncertain behavior"
       },
       {
         "id": "d",
-        "text": "Appending modifier 59 appropriately"
+        "text": "Factors influencing health status and contact with health services"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Upcoding is a compliance risk and potential fraud when unsupported.",
+    "correctOptionId": "d",
+    "explanation": "Z codes (Z00–Z99) report reasons for encounters and factors such as screening, personal or family history, status (for example a pacemaker), aftercare, and follow-up.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Reporting a higher-level service than supported by documentation to increase payment”.",
-      "c": "Not the best answer here; the right answer is “Reporting a higher-level service than supported by documentation to increase payment”.",
-      "d": "Not the best answer here; the right answer is “Reporting a higher-level service than supported by documentation to increase payment”."
+      "a": "External causes use V00–Y99.",
+      "b": "Inpatient procedures are coded in ICD-10-PCS.",
+      "c": "Neoplasms are in Chapter 2 (C00–D49)."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -861,31 +861,31 @@
     "id": "aapc-ccs-readiness-check-icd-012",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "icd",
-    "prompt": "NCCI edits are designed to:",
+    "prompt": "A patient has confirmed acute appendicitis with abdominal pain and nausea. How are the pain and nausea coded?",
     "options": [
       {
         "id": "a",
-        "text": "Increase unrelated diagnosis codes"
+        "text": "Not coded separately; they are routinely part of appendicitis"
       },
       {
         "id": "b",
-        "text": "Prevent improper payment of services that should not be billed together"
+        "text": "Coded first, followed by the appendicitis code"
       },
       {
         "id": "c",
-        "text": "Replace medical necessity policies"
+        "text": "Coded only if they appear on the discharge summary"
       },
       {
         "id": "d",
-        "text": "Assign DRGs for physician claims"
+        "text": "Coded as secondary diagnoses to support severity"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "National Correct Coding Initiative edits promote correct coding and avoid unbundling.",
+    "correctOptionId": "a",
+    "explanation": "Signs and symptoms routinely associated with a confirmed disease are not coded separately. Symptoms are coded only if they are not routinely part of the condition or no definitive diagnosis is established.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Prevent improper payment of services that should not be billed together”.",
-      "c": "Not the best answer here; the right answer is “Prevent improper payment of services that should not be billed together”.",
-      "d": "Not the best answer here; the right answer is “Prevent improper payment of services that should not be billed together”."
+      "b": "Integral symptoms are never sequenced ahead of the confirmed diagnosis.",
+      "c": "Where they are documented does not matter; integral symptoms are not coded.",
+      "d": "Coding integral symptoms adds redundant codes and is not allowed."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -894,72 +894,72 @@
     "id": "aapc-ccs-readiness-check-icd-013",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "icd",
-    "prompt": "An Advance Beneficiary Notice (ABN) is used in Medicare contexts primarily to:",
+    "prompt": "A patient has the same condition in both the left and right sides, and ICD-10-CM provides a bilateral code. You should assign:",
     "options": [
       {
         "id": "a",
-        "text": "Guarantee payment from Medicaid"
+        "text": "Separate right-side and left-side codes"
       },
       {
         "id": "b",
-        "text": "Notify a beneficiary that Medicare may deny a service so they can accept financial responsibility"
+        "text": "The bilateral code"
       },
       {
         "id": "c",
-        "text": "Replace the CMS-1500 form"
+        "text": "The unspecified-side code"
       },
       {
         "id": "d",
-        "text": "Authorize a research study without consent"
+        "text": "The right-side code only"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "ABNs shift potential financial liability for anticipated Medicare noncoverage when properly used.",
+    "explanation": "When a bilateral code exists and the condition affects both sides, assign the bilateral code. Separate right and left codes are used only when no bilateral option exists.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Notify a beneficiary that Medicare may deny a service so they can accept financial responsibility”.",
-      "c": "Not the best answer here; the right answer is “Notify a beneficiary that Medicare may deny a service so they can accept financial responsibility”.",
-      "d": "Not the best answer here; the right answer is “Notify a beneficiary that Medicare may deny a service so they can accept financial responsibility”."
+      "a": "Separate codes are used only when no bilateral code is available.",
+      "c": "Unspecified laterality is wrong when both sides are documented.",
+      "d": "Coding one side omits documented information."
     },
-    "difficulty": "hard",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
   },
   {
     "id": "aapc-ccs-readiness-check-icd-014",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "icd",
-    "prompt": "Medical necessity for coding/billing means:",
+    "prompt": "A pregnant patient is treated for a condition that complicates the pregnancy. How are Chapter 15 (O00–O9A) codes sequenced?",
     "options": [
       {
         "id": "a",
-        "text": "The service is convenient for the clinic schedule"
+        "text": "After all other chapter codes"
       },
       {
         "id": "b",
-        "text": "The service is reasonable and necessary for diagnosis or treatment per payer/coverage rules and documentation"
+        "text": "Only when the patient is in labor"
       },
       {
         "id": "c",
-        "text": "Any requested service must be paid"
+        "text": "They take sequencing priority over codes from other chapters"
       },
       {
         "id": "d",
-        "text": "Only cosmetic procedures qualify"
+        "text": "Only on the newborn's record"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Coverage depends on documented medical necessity aligned with payer policies.",
+    "correctOptionId": "c",
+    "explanation": "Chapter 15 codes have sequencing priority over other chapters. Codes from other chapters may be added for specificity. If the provider documents that the pregnancy is incidental, Z33.1 is used instead.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “The service is reasonable and necessary for diagnosis or treatment per payer/coverage rules and documentation”.",
-      "c": "Not the best answer here; the right answer is “The service is reasonable and necessary for diagnosis or treatment per payer/coverage rules and documentation”.",
-      "d": "Not the best answer here; the right answer is “The service is reasonable and necessary for diagnosis or treatment per payer/coverage rules and documentation”."
+      "a": "Obstetric codes take priority rather than coming last.",
+      "b": "Chapter 15 applies throughout the pregnancy and puerperium, not only during labor.",
+      "d": "Obstetric codes go on the mother's record, never the newborn's."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "aapc-ccs-readiness-check-icd-015",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "icd",
+    "topicId": "guidelines",
     "prompt": "Office/outpatient E/M level selection (current AMA framework) is based primarily on",
     "options": [
       {
@@ -992,7 +992,7 @@
   {
     "id": "aapc-ccs-readiness-check-pcs-001",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "pcs",
+    "topicId": "guidelines",
     "prompt": "Modifier 78 indicates",
     "options": [
       {
@@ -1026,31 +1026,31 @@
     "id": "aapc-ccs-readiness-check-pcs-002",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "pcs",
-    "prompt": "NCCI edits primarily exist to:",
+    "prompt": "In ICD-10-PCS, a biopsy performed as an excision is identified by which 7th-character qualifier?",
     "options": [
       {
         "id": "a",
-        "text": "Increase RVUs automatically"
+        "text": "Z (No Qualifier)"
       },
       {
         "id": "b",
-        "text": "Replace ICD-10 guidelines"
+        "text": "3 (Laser Interstitial)"
       },
       {
         "id": "c",
-        "text": "Prevent improper reporting of services that should not be billed together"
+        "text": "0 (Allogeneic)"
       },
       {
         "id": "d",
-        "text": "Assign anesthesia ASAs"
+        "text": "X (Diagnostic)"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "NCCI PTP edits and MUEs control unbundling; modifiers may bypass when clinically appropriate (e.g., 59/X{EPSU}).",
+    "correctOptionId": "d",
+    "explanation": "Diagnostic procedures such as biopsies use qualifier X in the 7th character, for example Excision with qualifier X for a needle or excisional biopsy.",
     "distractorExplanations": {
-      "a": "Edits limit improper payment.",
-      "b": "ICD guidelines remain.",
-      "d": "Anesthesia has separate concepts."
+      "a": "Z means no qualifier, which is used for therapeutic excisions.",
+      "b": "Laser interstitial is a technique qualifier in specific tables.",
+      "c": "Allogeneic describes donor tissue in transplant tables."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1058,7 +1058,7 @@
   {
     "id": "aapc-ccs-readiness-check-pcs-003",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "pcs",
+    "topicId": "guidelines",
     "prompt": "Anesthesia coding typically uses",
     "options": [
       {
@@ -1091,7 +1091,7 @@
   {
     "id": "aapc-ccs-readiness-check-pcs-004",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "pcs",
+    "topicId": "guidelines",
     "prompt": "Modifier 51 is used for:",
     "options": [
       {
@@ -1124,7 +1124,7 @@
   {
     "id": "aapc-ccs-readiness-check-pcs-005",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "pcs",
+    "topicId": "guidelines",
     "prompt": "Separate procedure designation in CPT means:",
     "options": [
       {
@@ -1157,7 +1157,7 @@
   {
     "id": "aapc-ccs-readiness-check-pcs-006",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "pcs",
+    "topicId": "guidelines",
     "prompt": "Wound repair coding selection depends mainly on",
     "options": [
       {
@@ -1190,7 +1190,7 @@
   {
     "id": "aapc-ccs-readiness-check-pcs-007",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "pcs",
+    "topicId": "guidelines",
     "prompt": "Global surgical periods commonly used by Medicare concepts include",
     "options": [
       {
@@ -1223,7 +1223,7 @@
   {
     "id": "aapc-ccs-readiness-check-pcs-008",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "pcs",
+    "topicId": "guidelines",
     "prompt": "Assistant surgeon modifiers (e.g., 80) indicate",
     "options": [
       {
@@ -1256,7 +1256,7 @@
   {
     "id": "aapc-ccs-readiness-check-pcs-009",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "pcs",
+    "topicId": "guidelines",
     "prompt": "Add-on codes in CPT are identified by:",
     "options": [
       {
@@ -1289,7 +1289,7 @@
   {
     "id": "aapc-ccs-readiness-check-pcs-010",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "pcs",
+    "topicId": "guidelines",
     "prompt": "The surgical package (global surgery) typically includes:",
     "options": [
       {
@@ -1323,138 +1323,138 @@
     "id": "aapc-ccs-readiness-check-pcs-011",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "pcs",
-    "prompt": "Modifier 51 is generally used to indicate",
+    "prompt": "The same root operation is repeated at different body sites that have distinct values in the body-part character. Per ICD-10-PCS guidelines, you should:",
     "options": [
       {
         "id": "a",
-        "text": "Bilateral procedure"
+        "text": "Report a separate code for each distinct body-part value"
       },
       {
         "id": "b",
-        "text": "Multiple procedures performed at the same session by the same provider"
+        "text": "Report one code for the most significant site only"
       },
       {
         "id": "c",
-        "text": "Assistant surgeon"
+        "text": "Report a single \"multiple sites\" code"
       },
       {
         "id": "d",
-        "text": "Discontinued procedure"
+        "text": "Append a modifier to show multiple sites"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Modifier 51 reports multiple procedures; payer edits may affect its use.",
+    "correctOptionId": "a",
+    "explanation": "Guideline B3.2a: code multiple procedures separately when the same root operation is performed on different body parts defined by distinct values of the body-part character.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Multiple procedures performed at the same session by the same provider”.",
-      "c": "Not the best answer here; the right answer is “Multiple procedures performed at the same session by the same provider”.",
-      "d": "Not the best answer here; the right answer is “Multiple procedures performed at the same session by the same provider”."
+      "b": "Coding one site under-reports distinct procedures.",
+      "c": "Distinct body-part values require separate codes.",
+      "d": "ICD-10-PCS does not use modifiers."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "aapc-ccs-readiness-check-pcs-012",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "pcs",
-    "prompt": "Anesthesia time for reporting typically begins when:",
+    "prompt": "A laparoscopic procedure is converted to open and completed through the open incision. Per ICD-10-PCS guidelines, code:",
     "options": [
       {
         "id": "a",
-        "text": "The surgeon makes the incision"
+        "text": "Only the laparoscopic (percutaneous endoscopic) procedure"
       },
       {
         "id": "b",
-        "text": "The anesthesiologist begins to prepare the patient for anesthesia in the OR/procedure area"
+        "text": "The open procedure plus a percutaneous endoscopic Inspection"
       },
       {
         "id": "c",
-        "text": "The patient schedules the surgery online"
+        "text": "The open procedure only"
       },
       {
         "id": "d",
-        "text": "The recovery room nurse discharges the patient"
+        "text": "Both the full laparoscopic and full open procedures"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Anesthesia time starts with preparation for anesthesia induction and ends when the anesthesiologist is no longer in personal attendance.",
+    "explanation": "Guideline B3.2d: when the intended root operation is attempted by one approach and converted to another, code the completed procedure with its approach plus an Inspection for the abandoned approach.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “The anesthesiologist begins to prepare the patient for anesthesia in the OR/procedure area”.",
-      "c": "Not the best answer here; the right answer is “The anesthesiologist begins to prepare the patient for anesthesia in the OR/procedure area”.",
-      "d": "Not the best answer here; the right answer is “The anesthesiologist begins to prepare the patient for anesthesia in the OR/procedure area”."
+      "a": "The procedure was completed open, so coding only the laparoscopic approach is wrong.",
+      "c": "The laparoscopic attempt is captured as an Inspection, which is required.",
+      "d": "The procedure was performed once; the laparoscopic part is an Inspection only."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "aapc-ccs-readiness-check-pcs-013",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "pcs",
-    "prompt": "Separate procedure designation in CPT means the service is",
+    "prompt": "Amputation of a finger through the proximal phalanx is coded to which ICD-10-PCS root operation?",
     "options": [
       {
         "id": "a",
-        "text": "Always billed in addition to a more extensive related procedure"
+        "text": "Resection"
       },
       {
         "id": "b",
-        "text": "Usually considered integral to a larger procedure and not separately reported when performed as part of that larger service"
+        "text": "Excision"
       },
       {
         "id": "c",
-        "text": "Only for radiology"
+        "text": "Detachment"
       },
       {
         "id": "d",
-        "text": "Never payable under any circumstance"
+        "text": "Destruction"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "“Separate procedure” codes are typically not unbundled from a more comprehensive related procedure.",
+    "correctOptionId": "c",
+    "explanation": "Detachment is cutting off all or a portion of an upper or lower extremity, including fingers and toes. The qualifier specifies the level of amputation.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Usually considered integral to a larger procedure and not separately reported when performed as part of that larger service”.",
-      "c": "Not the best answer here; the right answer is “Usually considered integral to a larger procedure and not separately reported when performed as part of that larger service”.",
-      "d": "Not the best answer here; the right answer is “Usually considered integral to a larger procedure and not separately reported when performed as part of that larger service”."
+      "a": "Resection is not used for extremity amputations.",
+      "b": "Excision removes a portion of a body part but is not used for amputations.",
+      "d": "Destruction eradicates tissue by energy, force, or agent; it does not cut off an extremity."
     },
-    "difficulty": "hard",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "aapc-ccs-readiness-check-pcs-014",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "pcs",
-    "prompt": "Physical status modifiers (P1–P6) in anesthesia coding describe",
+    "prompt": "In ICD-10-PCS, which approach value describes a procedure performed through a laparoscope inserted via a small skin puncture?",
     "options": [
       {
         "id": "a",
-        "text": "The patient's ASA physical status classification"
+        "text": "Open"
       },
       {
         "id": "b",
-        "text": "The hospital's trauma level"
+        "text": "Percutaneous"
       },
       {
         "id": "c",
-        "text": "Whether the case was elective marketing"
+        "text": "Via Natural or Artificial Opening"
       },
       {
         "id": "d",
-        "text": "The CPT surgical global days"
+        "text": "Percutaneous Endoscopic"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Anesthesia physical status modifiers communicate ASA classification for risk/payment policies.",
+    "correctOptionId": "d",
+    "explanation": "Percutaneous Endoscopic (value 4) means entry through the skin or mucous membrane by puncture or minor incision, with instrumentation that allows visualization, as in laparoscopy.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “The patient's ASA physical status classification”.",
-      "c": "Not the best answer here; the right answer is “The patient's ASA physical status classification”.",
-      "d": "Not the best answer here; the right answer is “The patient's ASA physical status classification”."
+      "a": "Open means cutting through tissue to expose the site.",
+      "b": "Percutaneous without an endoscope has no visualization instrument.",
+      "c": "That approach enters through a natural orifice, such as the mouth or urethra."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "aapc-ccs-readiness-check-pcs-015",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "pcs",
+    "topicId": "icd",
     "prompt": "ICD-10-CM codes are used primarily to report",
     "options": [
       {
@@ -1652,7 +1652,7 @@
   {
     "id": "aapc-ccs-readiness-check-compliance-006",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "compliance",
+    "topicId": "guidelines",
     "prompt": "HCPCS Level II codes commonly report",
     "options": [
       {
@@ -1686,33 +1686,33 @@
     "id": "aapc-ccs-readiness-check-compliance-007",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "compliance",
-    "prompt": "ABN (Advance Beneficiary Notice) is used when:",
+    "prompt": "Which is a compliant physician query under AHIMA/ACDIS query practice guidance?",
     "options": [
       {
         "id": "a",
-        "text": "A provider believes Medicare may deny a service as not reasonable/necessary and the beneficiary may be liable"
+        "text": "Stating the DRG payment increase if sepsis is documented"
       },
       {
         "id": "b",
-        "text": "Medicaid always pays 100%"
+        "text": "Asking only \"Does the patient have acute respiratory failure? Yes/No\" for a new diagnosis"
       },
       {
         "id": "c",
-        "text": "A service is always covered without issue"
+        "text": "Presenting clinical indicators with options including \"other\" or \"undetermined\""
       },
       {
         "id": "d",
-        "text": "The patient is under age 1"
+        "text": "Asking the provider to add a diagnosis the coder believes is present"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "ABN shifts financial liability for expected denials when properly executed for Medicare Part B situations.",
+    "correctOptionId": "c",
+    "explanation": "Compliant queries cite clinical indicators from the record and offer clinically reasonable options, including other/undetermined. They must not lead the provider or mention financial impact.",
     "distractorExplanations": {
-      "b": "Not a Medicaid payment guarantee.",
-      "c": "Covered services don't need ABN for that reason.",
-      "d": "Age unrelated generally."
+      "a": "Mentioning payment impact is leading and noncompliant.",
+      "b": "Yes/no queries may not be used to introduce a new, undocumented diagnosis.",
+      "d": "Coders cannot direct a diagnosis; the provider decides based on clinical judgment."
     },
-    "difficulty": "hard",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
@@ -1785,33 +1785,33 @@
     "id": "aapc-ccs-readiness-check-compliance-010",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "compliance",
-    "prompt": "Medical necessity means:",
+    "prompt": "A present on admission (POA) indicator of \"Y\" means the condition:",
     "options": [
       {
         "id": "a",
-        "text": "Any service a patient requests for convenience only always payable"
+        "text": "Developed after the inpatient admission order"
       },
       {
         "id": "b",
-        "text": "The most expensive option"
+        "text": "Lacked enough documentation to decide"
       },
       {
         "id": "c",
-        "text": "Services without documentation"
+        "text": "Could not be determined clinically by the provider"
       },
       {
         "id": "d",
-        "text": "Services are reasonable and necessary for diagnosis/treatment per payer coverage criteria"
+        "text": "Was present when the inpatient admission occurred"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Coverage policies/LCDs/NCDs define necessity; documentation must support it.",
+    "explanation": "Y = present at the time of inpatient admission, including conditions that developed during an outpatient encounter such as the ED before the admission order. N = not present, U = insufficient documentation, W = clinically undetermined.",
     "distractorExplanations": {
-      "a": "Convenience isn't automatic necessity.",
-      "b": "Cost ≠ necessity.",
-      "c": "No documentation fails audits."
+      "a": "A condition that developed after admission is reported as N.",
+      "b": "Insufficient documentation is U.",
+      "c": "Clinically undetermined is W."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
@@ -1850,7 +1850,7 @@
   {
     "id": "aapc-ccs-readiness-check-compliance-012",
     "examSlug": "aapc-ccs-readiness-check",
-    "topicId": "compliance",
+    "topicId": "guidelines",
     "prompt": "Modifier 59 (or X{EPSU}) is used to indicate",
     "options": [
       {
@@ -1884,66 +1884,66 @@
     "id": "aapc-ccs-readiness-check-compliance-013",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "compliance",
-    "prompt": "The False Claims Act primarily targets",
+    "prompt": "The main goal of a clinical documentation integrity (CDI) program is:",
     "options": [
       {
         "id": "a",
-        "text": "Late employee time cards"
+        "text": "Replacing physician documentation with coder-written summaries"
       },
       {
         "id": "b",
-        "text": "Knowingly submitting false or fraudulent claims for government payment"
+        "text": "Raising the case-mix index regardless of the patient's condition"
       },
       {
         "id": "c",
-        "text": "Patient no-shows"
+        "text": "A complete, accurate record reflecting severity that supports correct coding"
       },
       {
         "id": "d",
-        "text": "HIPAA training attendance"
+        "text": "Reducing the number of diagnoses reported on each claim"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "FCA liability attaches to knowing false claims to federal healthcare programs.",
+    "correctOptionId": "c",
+    "explanation": "CDI works with providers so the record accurately reflects the patient's severity of illness and risk of mortality, which supports correct code assignment, quality data, and compliant reimbursement.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Knowingly submitting false or fraudulent claims for government payment”.",
-      "c": "Not the best answer here; the right answer is “Knowingly submitting false or fraudulent claims for government payment”.",
-      "d": "Not the best answer here; the right answer is “Knowingly submitting false or fraudulent claims for government payment”."
+      "a": "Only providers can document diagnoses; CDI clarifies, it does not replace.",
+      "b": "Pursuing case-mix gains that are not clinically supported is a compliance risk.",
+      "d": "The goal is accuracy, not fewer (or more) codes."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "aapc-ccs-readiness-check-compliance-014",
     "examSlug": "aapc-ccs-readiness-check",
     "topicId": "compliance",
-    "prompt": "Upcoding means:",
+    "prompt": "Under the Medicare HAC–POA program, a CMS-selected hospital-acquired condition that was NOT present on admission will:",
     "options": [
       {
         "id": "a",
-        "text": "Selecting a code that accurately reflects documentation"
+        "text": "Always move the case into a higher MS-DRG"
       },
       {
         "id": "b",
-        "text": "Reporting a higher-level service than supported by documentation to increase payment"
+        "text": "Be reported only as a Z code for tracking"
       },
       {
         "id": "c",
-        "text": "Using ICD-10-CM seventh characters correctly"
+        "text": "Be deleted from the claim before submission"
       },
       {
         "id": "d",
-        "text": "Appending modifier 59 appropriately"
+        "text": "Not count as a CC/MCC to raise MS-DRG payment"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Upcoding is a compliance risk and potential fraud when unsupported.",
+    "correctOptionId": "d",
+    "explanation": "When a selected HAC (for example a stage 3 or 4 pressure ulcer or a catheter-associated UTI) has POA = N, it cannot act as a CC/MCC to raise the MS-DRG. The condition is still coded.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Reporting a higher-level service than supported by documentation to increase payment”.",
-      "c": "Not the best answer here; the right answer is “Reporting a higher-level service than supported by documentation to increase payment”.",
-      "d": "Not the best answer here; the right answer is “Reporting a higher-level service than supported by documentation to increase payment”."
+      "a": "The policy prevents higher payment for these conditions when acquired in the hospital.",
+      "b": "The condition keeps its own diagnosis code; it is not replaced by a Z code.",
+      "c": "The condition must still be coded and reported accurately."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {

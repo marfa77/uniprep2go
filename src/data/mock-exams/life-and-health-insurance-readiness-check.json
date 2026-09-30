@@ -7,7 +7,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Employer-sponsored account funded pre-tax for eligible expenses, often subject to use-it-or-lose-it rules with limited carryover/grace options."
+        "text": "Employer-sponsored, pre-tax account for eligible medical expenses; largely use-it-or-lose-it each plan year."
       },
       {
         "id": "b",
@@ -73,15 +73,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Cost sharing percentage after deductible."
+        "text": "Cost-sharing percentage the insured pays after the deductible is met."
       },
       {
         "id": "b",
-        "text": "Fixed dollar amount paid for covered service."
+        "text": "Fixed dollar amount the insured pays for a covered service, such as a visit."
       },
       {
         "id": "c",
-        "text": "Health condition existing before policy effective date; treatment varies by law and policy type"
+        "text": "A health condition that existed before the policy's effective date."
       },
       {
         "id": "d",
@@ -91,8 +91,8 @@
     "correctOptionId": "c",
     "explanation": "Health condition existing before policy effective date; treatment varies by law and policy type. Example: Diabetes diagnosed before application.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Health condition existing before policy effective date; treatment varies by law and policy type”.",
-      "b": "Not the best answer here; the right answer is “Health condition existing before policy effective date; treatment varies by law and policy type”.",
+      "a": "That describes coinsurance.",
+      "b": "That describes a copayment.",
       "d": "Not the best answer here; the right answer is “Health condition existing before policy effective date; treatment varies by law and policy type”."
     },
     "difficulty": "medium",
@@ -375,23 +375,23 @@
       },
       {
         "id": "b",
-        "text": "Hospital inpatient room-and-board as Part A’s primary focus"
+        "text": "Hospital inpatient room and board, skilled nursing, and hospice (the Part A core)"
       },
       {
         "id": "c",
-        "text": "Prescription drugs under Part D"
+        "text": "Outpatient prescription drugs purchased through a private stand-alone drug plan"
       },
       {
         "id": "d",
-        "text": "Long-term custodial nursing home care in all cases"
+        "text": "Long-term custodial nursing home care for as long as the beneficiary needs it"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Part B is medical insurance—doctors, outpatient, many preventive services, and DME—distinct from Part A hospital and Part D drugs.",
     "distractorExplanations": {
-      "b": "Inpatient hospital is primarily Part A territory.",
-      "c": "Part D is the drug benefit, not Part B’s core definition.",
-      "d": "Custodial long-term care is generally not a Medicare Part B promise."
+      "b": "Inpatient hospital, skilled nursing, and hospice care are Medicare Part A benefits.",
+      "c": "Stand-alone prescription drug plans are Medicare Part D.",
+      "d": "Medicare does not cover long-term custodial care."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (life_health_400_authored.csv, INS-HEALTH). · Local QA repair (stems/distractors)"
@@ -478,7 +478,7 @@
       },
       {
         "id": "c",
-        "text": "Term insurance with level death benefit during term; premium may be level or change depending on policy"
+        "text": "Term coverage whose death benefit stays level for the whole term"
       },
       {
         "id": "d",
@@ -635,27 +635,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Guaranteed cash value growth like whole life"
+        "text": "Permanent coverage with guaranteed cash value growth, like whole life"
       },
       {
         "id": "b",
-        "text": "Only disability income benefits"
+        "text": "Monthly disability income if the insured cannot work due to illness"
       },
       {
         "id": "c",
-        "text": "Unlimited policy loans from day one"
+        "text": "A savings account with policy loans available from the first day"
       },
       {
         "id": "d",
-        "text": "Pure death benefit coverage for a specified period without cash value"
+        "text": "Pure death benefit protection for a set period, with no cash value"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Term is temporary coverage with no savings component.",
     "distractorExplanations": {
-      "a": "Cash value is permanent product feature.",
-      "b": "DI is separate product.",
-      "c": "Term lacks cash value to borrow against."
+      "a": "Guaranteed cash value belongs to permanent insurance such as whole life, not term.",
+      "b": "Replacing income during disability is disability income insurance.",
+      "c": "Term has no cash value, so it has nothing to borrow against."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -672,23 +672,23 @@
       },
       {
         "id": "b",
-        "text": "Any stranger with no financial relationship"
+        "text": "Any two people, even strangers with no financial or family relationship"
       },
       {
         "id": "c",
-        "text": "Only corporations and governments"
+        "text": "The insured and the insurer's underwriting department at issue"
       },
       {
         "id": "d",
-        "text": "The agent and the underwriter"
+        "text": "The writing agent and the underwriter at the time of the claim"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Insurable interest prevents wagering on others' lives.",
     "distractorExplanations": {
-      "b": "Strangers generally cannot insure another's life.",
-      "c": "Individuals also qualify with interest.",
-      "d": "Not the required relationship."
+      "b": "Strangers lack insurable interest; allowing it would turn insurance into a wager.",
+      "c": "The insurer's underwriters are not the parties who need an insurable interest.",
+      "d": "The agent and underwriter are not parties who must have an insurable interest in the insured."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -767,27 +767,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Whole life combines a permanent death benefit with cash-value accumulation; term is temporary pure protection"
+        "text": "Whole life is permanent with cash value; term is temporary pure protection"
       },
       {
         "id": "b",
-        "text": "Whole life never pays a death benefit"
+        "text": "Whole life pays a death benefit only if the insured dies before age 65"
       },
       {
         "id": "c",
-        "text": "Term always builds guaranteed cash value faster than whole life"
+        "text": "Term always builds guaranteed cash value faster than whole life does"
       },
       {
         "id": "d",
-        "text": "Whole life can only be issued as group employer coverage"
+        "text": "Whole life is available only as group coverage through an employer"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Whole life is permanent with cash value; term provides coverage for a period and typically has no cash value.",
     "distractorExplanations": {
-      "b": "Whole life is designed to pay a death benefit.",
-      "c": "Level term generally does not build cash value like whole life.",
-      "d": "Whole life is commonly individual as well as group contexts."
+      "b": "Whole life pays whenever death occurs while the policy is in force, typically to age 100 or 121.",
+      "c": "Term insurance builds no cash value.",
+      "d": "Whole life is commonly sold as individual coverage."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -800,27 +800,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Insurer's ability to contest the policy after it has been in force ~2 years"
+        "text": "The insurer's right to contest the policy after ~2 years in force"
       },
       {
         "id": "b",
-        "text": "Premium payments"
+        "text": "The insurer's right to raise premiums after the policy is issued"
       },
       {
         "id": "c",
-        "text": "Beneficiary changes after death"
+        "text": "The owner's right to change beneficiaries once the insured has died"
       },
       {
         "id": "d",
-        "text": "All medical underwriting before application"
+        "text": "The owner's right to cancel the policy during the free-look period"
       }
     ],
     "correctOptionId": "a",
     "explanation": "After contestability period, insurer cannot void except for limited reasons.",
     "distractorExplanations": {
-      "b": "Premiums continue per contract.",
-      "c": "Beneficiary designated while alive.",
-      "d": "Underwriting occurs at issue."
+      "b": "Premium guarantees are set by the policy, not by the incontestability clause.",
+      "c": "Beneficiary rights vest at death; this is unrelated to incontestability.",
+      "d": "Cancelling for a refund is the free-look provision."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -833,7 +833,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Premiums that decrease to zero after one year"
+        "text": "Premiums that start high and decrease to zero after the first year"
       },
       {
         "id": "b",
@@ -841,19 +841,19 @@
       },
       {
         "id": "c",
-        "text": "No death benefit until age 100"
+        "text": "A death benefit that is payable only if the insured reaches age 100"
       },
       {
         "id": "d",
-        "text": "Only accidental death coverage"
+        "text": "Coverage limited to accidental death, with premiums fixed for life"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Graded premium helps affordability early with scheduled increases.",
     "distractorExplanations": {
-      "a": "Premiums don't vanish.",
-      "c": "Death benefit from start.",
-      "d": "Full life coverage typical."
+      "a": "Graded premium policies start low and increase; premiums do not drop to zero.",
+      "c": "The death benefit is payable at death while in force, not only at age 100.",
+      "d": "Graded premium whole life covers death from any cause, not only accidents."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -899,15 +899,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Converting to disability insurance automatically"
+        "text": "Converting the policy's cash value into disability income coverage"
       },
       {
         "id": "b",
-        "text": "Eliminating all coverage with no value"
+        "text": "Surrendering the policy and forfeiting all accumulated cash value"
       },
       {
         "id": "c",
-        "text": "Increasing death benefit without payment"
+        "text": "Keeping the full death benefit for a limited term with no premiums"
       },
       {
         "id": "d",
@@ -917,9 +917,9 @@
     "correctOptionId": "d",
     "explanation": "Reduced paid-up uses cash value to buy smaller paid-up policy.",
     "distractorExplanations": {
-      "a": "Different product.",
-      "b": "Surrender is separate option.",
-      "c": "Requires no additional premium for increase."
+      "a": "Nonforfeiture options do not convert life coverage into disability income.",
+      "b": "Nonforfeiture laws exist precisely so the owner does not forfeit accumulated cash value.",
+      "c": "Full face amount for a limited period is the extended term option."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -932,27 +932,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Statistical death rates by characteristics such as age (and often sex) in insured populations"
+        "text": "Death rates by age (and often sex) observed in insured populations"
       },
       {
         "id": "b",
-        "text": "Only equity market total returns"
+        "text": "Historical total returns of the insurer's general account investments"
       },
       {
         "id": "c",
-        "text": "Only homeowners fire-loss frequencies"
+        "text": "Frequency and severity of property losses by construction type"
       },
       {
         "id": "d",
-        "text": "Agent monthly production quotas"
+        "text": "Rates of sickness and disability by age, used for health insurance"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Mortality tables summarize expected death rates used to price life insurance risk.",
     "distractorExplanations": {
-      "b": "Market returns inform investments, not mortality tables.",
-      "c": "Property loss tables are casualty pricing tools.",
-      "d": "Sales quotas are management metrics, not mortality data."
+      "b": "Investment returns affect pricing but are not what a mortality table measures.",
+      "c": "Property loss data is used in property insurance, not life mortality tables.",
+      "d": "Sickness and disability rates are morbidity tables."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -965,27 +965,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Medical records ordered from the applicant’s physician to assess insurability"
+        "text": "Medical records from the applicant's physician, used to assess insurability"
       },
       {
         "id": "b",
-        "text": "The agent’s sales illustration"
+        "text": "The agent's written summary of the applicant's answers and lifestyle"
       },
       {
         "id": "c",
-        "text": "Proof of homeownership for a dwelling policy"
+        "text": "A consumer reporting agency's report on the applicant's character and habits"
       },
       {
         "id": "d",
-        "text": "The beneficiary designation form"
+        "text": "Results of the paramedical exam performed by a contracted examiner"
       }
     ],
     "correctOptionId": "a",
     "explanation": "An APS is clinical information from the applicant’s doctor used when the application/medical exam needs more detail.",
     "distractorExplanations": {
-      "b": "Illustrations are sales tools, not physician records.",
-      "c": "Property ownership proof is a P&C concept.",
-      "d": "Beneficiary forms name payees; they are not APS records."
+      "b": "The agent's report is a field underwriting document, not an APS.",
+      "c": "A third-party report on character and habits is an inspection (consumer) report.",
+      "d": "A paramedical exam is performed by the insurer's examiner, not the applicant's own physician."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -998,27 +998,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Life insurance death benefits"
+        "text": "Life insurance pricing based on death rates at each age"
       },
       {
         "id": "b",
-        "text": "Auto collision frequency exclusively in all cases"
+        "text": "Auto collision frequency by driver age and vehicle type"
       },
       {
         "id": "c",
-        "text": "Disability and health insurance predicting sickness/injury incidence"
+        "text": "Disability and health insurance, predicting sickness and injury rates"
       },
       {
         "id": "d",
-        "text": "Investment portfolio allocation"
+        "text": "Asset allocation of the insurer's investment portfolio"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Morbidity measures illness/disability, not death alone.",
     "distractorExplanations": {
-      "a": "Mortality for life.",
-      "b": "Actuarial auto uses claim freq/sev.",
-      "d": "Investment separate."
+      "a": "Death rates by age are mortality tables.",
+      "b": "Auto loss frequency is property and casualty rating data.",
+      "d": "Portfolio allocation is an investment decision, not a morbidity table use."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1031,27 +1031,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only healthy people buy insurance"
+        "text": "Insurers decline applicants based on race or national origin"
       },
       {
         "id": "b",
-        "text": "Insurers randomly cancel all policies annually"
+        "text": "Healthy people buy more coverage than they need to reduce taxes"
       },
       {
         "id": "c",
-        "text": "Agents rebate premiums legally"
+        "text": "Agents steer clients toward the insurer paying the highest commission"
       },
       {
         "id": "d",
-        "text": "Higher-risk individuals seek insurance more than lower-risk individuals"
+        "text": "Higher-risk people seek or keep coverage more than lower-risk people"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Adverse selection threatens pool balance without underwriting.",
     "distractorExplanations": {
-      "a": "Opposite problem.",
-      "b": "Not random cancellation.",
-      "c": "Rebating illegal."
+      "a": "That is unfair discrimination, which is prohibited; it is not anti-selection.",
+      "b": "Anti-selection is about higher-risk people seeking coverage, not healthy people over-buying.",
+      "c": "Commission-driven steering is an ethics issue, not anti-selection."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1097,27 +1097,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Agent's marketing budget"
+        "text": "The share of each premium the agent keeps as commission"
       },
       {
         "id": "b",
-        "text": "Maximum loss amount the company keeps before reinsurance applies"
+        "text": "The maximum loss the insurer keeps before reinsurance applies"
       },
       {
         "id": "c",
-        "text": "Beneficiary's share of death benefit"
+        "text": "The percentage of claims the insurer pays within 30 days"
       },
       {
         "id": "d",
-        "text": "State premium tax rate"
+        "text": "The minimum capital a state requires the insurer to hold"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Retention defines self-insured exposure before ceding to reinsurer.",
     "distractorExplanations": {
-      "a": "Corporate risk measure.",
-      "c": "Policy benefit.",
-      "d": "Tax not retention."
+      "a": "Agent commission is unrelated to how much risk the insurer retains.",
+      "c": "Claim payment speed is a service measure, not a retention limit.",
+      "d": "Minimum capital is a solvency requirement, not a retention limit."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1328,27 +1328,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ownership rights (and sometimes beneficiary) to another party"
+        "text": "Ownership rights in the policy to another party"
       },
       {
         "id": "b",
-        "text": "Only the agent's commission"
+        "text": "The agent's right to renewal commissions on the policy"
       },
       {
         "id": "c",
-        "text": "State insurance department authority"
+        "text": "The insurer's obligation to a state guaranty association"
       },
       {
         "id": "d",
-        "text": "Automatic tax exemption for all transfers"
+        "text": "The insured's medical history to a new insurer for underwriting"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Absolute assignment transfers ownership; collateral assignment limited.",
     "distractorExplanations": {
-      "b": "Policy rights, not commission.",
-      "c": "Regulatory body unrelated.",
-      "d": "Tax depends on transaction."
+      "b": "Agent commissions are not policy ownership rights and are not assigned by the owner.",
+      "c": "Guaranty association obligations belong to insurers, not to policy assignments.",
+      "d": "Assignment transfers policy rights, not medical records."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1361,27 +1361,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Loan interest to reduce death benefit"
+        "text": "Policy loan interest to reduce the outstanding death benefit"
       },
       {
         "id": "b",
-        "text": "Dividends to purchase additional paid-up whole life insurance"
+        "text": "Dividends to buy additional paid-up whole life insurance"
       },
       {
         "id": "c",
-        "text": "Surrender charges to fund term coverage"
+        "text": "Surrender charges to buy a one-year term insurance rider"
       },
       {
         "id": "d",
-        "text": "State guaranty fund contributions"
+        "text": "Premium waivers to extend coverage during a disability"
       }
     ],
     "correctOptionId": "b",
     "explanation": "PUA rider buys extra permanent insurance with dividends.",
     "distractorExplanations": {
-      "a": "Dividends purchase insurance.",
-      "c": "Different mechanism.",
-      "d": "Guaranty fund is insolvency protection."
+      "a": "Loan interest reduces values; paid-up additions increase coverage.",
+      "c": "Buying one-year term with dividends is the one-year term dividend option, and surrender charges are not used.",
+      "d": "Continuing coverage during disability is the waiver of premium rider."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1394,27 +1394,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The first insured dies"
+        "text": "The first of the two insureds dies, leaving the survivor"
       },
       {
         "id": "b",
-        "text": "Premium payments stop"
+        "text": "Either insured becomes disabled and cannot pay premiums"
       },
       {
         "id": "c",
-        "text": "The second of two insureds dies, often used in estate planning"
+        "text": "The second of the two insureds dies; often used for estate taxes"
       },
       {
         "id": "d",
-        "text": "Cash value exceeds $1 million automatically"
+        "text": "The policy's cash value reaches the face amount at maturity"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Survivorship policy funds estate tax at second death.",
     "distractorExplanations": {
-      "a": "First-to-die pays earlier.",
-      "b": "Death triggers benefit.",
-      "d": "Not automatic trigger."
+      "a": "Paying at the first death describes a first-to-die (joint life) policy.",
+      "b": "Disability of an insured does not trigger a life insurance death benefit.",
+      "d": "Cash value reaching face amount is policy endowment, not a survivorship death benefit."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1592,27 +1592,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Are strictly complied with; breach may void coverage regardless of materiality"
+        "text": "Must be strictly complied with; a breach can void coverage"
       },
       {
         "id": "b",
-        "text": "Never affect claim payment"
+        "text": "Are statements believed true to the best of the applicant's knowledge"
       },
       {
         "id": "c",
-        "text": "Apply only to life insurance dividends"
+        "text": "Apply only to the payment of dividends on participating policies"
       },
       {
         "id": "d",
-        "text": "Are optional oral promises"
+        "text": "Are oral promises by the agent that are not part of the contract"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Warranty breach historically voids policy; representations require materiality.",
     "distractorExplanations": {
-      "b": "Warranties matter.",
-      "c": "All lines.",
-      "d": "Written policy terms."
+      "b": "Statements true to the best of the applicant's knowledge are representations.",
+      "c": "Warranties are not limited to policy dividends.",
+      "d": "Warranties are part of the contract, not oral agent promises."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1658,27 +1658,27 @@
     "options": [
       {
         "id": "a",
-        "text": "No documentation or client acknowledgment ever"
+        "text": "No paperwork, as long as the client verbally agrees to the change"
       },
       {
         "id": "b",
-        "text": "Automatic approval by prior insurer"
+        "text": "Written approval from the existing insurer before the new policy issues"
       },
       {
         "id": "c",
-        "text": "Disclosure forms comparing existing and proposed coverage per state regulations"
+        "text": "Disclosure forms comparing existing and proposed coverage, per state rules"
       },
       {
         "id": "d",
-        "text": "Only verbal consent from agent"
+        "text": "The agent to wait until the old policy lapses before taking an application"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Replacement regulations protect consumers from unnecessary churn.",
     "distractorExplanations": {
-      "a": "Required notices.",
-      "b": "New underwriting applies.",
-      "d": "Written disclosure required."
+      "a": "Replacement rules require written disclosure and acknowledgment, not verbal agreement.",
+      "b": "The existing insurer is notified, but its approval is not required.",
+      "d": "Letting the old policy lapse first could leave the client uninsured; rules require disclosure, not a lapse."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1691,27 +1691,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Legal comparative shopping with full disclosure"
+        "text": "Comparing policies side by side with full and accurate disclosure"
       },
       {
         "id": "b",
-        "text": "Reinsurance between insurers"
+        "text": "Transferring part of a risk from one insurer to another insurer"
       },
       {
         "id": "c",
-        "text": "Actuarial calculation of mortality"
+        "text": "Offering a client part of the commission to induce a sale"
       },
       {
         "id": "d",
-        "text": "Inducing replacement of a policy by misrepresentation or incomplete comparison"
+        "text": "Inducing a policy replacement through misrepresentation"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Twisting is prohibited unfair trade practice.",
     "distractorExplanations": {
-      "a": "Proper replacement uses disclosure.",
-      "b": "Different concept.",
-      "c": "Actuarial science."
+      "a": "An accurate, fully disclosed comparison is legitimate, not twisting.",
+      "b": "Transferring risk between insurers is reinsurance.",
+      "c": "Sharing commission to induce a sale is rebating."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1724,27 +1724,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Application/issue for life; at time of loss for property"
+        "text": "At issue for life insurance; at the time of loss for property"
       },
       {
         "id": "b",
-        "text": "Only at claim payment for all lines"
+        "text": "At claim payment only, for every line of insurance"
       },
       {
         "id": "c",
-        "text": "Never; insurance is a wager always allowed"
+        "text": "At policy surrender or maturity, for life insurance"
       },
       {
         "id": "d",
-        "text": "Policy surrender"
+        "text": "At both issue and death for life, never for property"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Life: interest at inception; property: at loss (and often at inception)",
     "distractorExplanations": {
-      "b": "Timing differs by line.",
-      "c": "Wager policies prohibited.",
-      "d": "Unrelated timing."
+      "b": "Timing differs by line: life at issue, property at the time of loss.",
+      "c": "Life insurable interest is required at issue, not at surrender or maturity.",
+      "d": "Life insurable interest need not exist at death, and property requires it at the time of loss."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1757,27 +1757,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Replaces the entire policy with new terms"
+        "text": "Replaces the underlying policy with new terms for the holder"
       },
       {
         "id": "b",
-        "text": "Summarizes coverage for a party but does not amend the policy contract"
+        "text": "Summarizes coverage but does not change the policy contract"
       },
       {
         "id": "c",
-        "text": "Is only issued by federal courts"
+        "text": "Extends coverage limits beyond those stated in the policy"
       },
       {
         "id": "d",
-        "text": "Guarantees unlimited coverage beyond policy limits"
+        "text": "Is issued by the state insurance department to prove licensing"
       }
     ],
     "correctOptionId": "b",
     "explanation": "COI is evidence of coverage; policy governs terms.",
     "distractorExplanations": {
-      "a": "Policy is contract.",
-      "c": "Issued by insurer/agent.",
-      "d": "Cannot expand limits."
+      "a": "A certificate evidences coverage; it does not replace or amend the policy.",
+      "c": "A certificate cannot grant more coverage than the policy provides.",
+      "d": "Certificates of insurance are issued by insurers or agents, not the state regulator."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1823,27 +1823,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Free lifetime healthcare after any job loss"
+        "text": "Free lifetime health coverage after any voluntary or involuntary job loss"
       },
       {
         "id": "b",
-        "text": "Only Medicare enrollment instead of private coverage"
+        "text": "Automatic Medicare enrollment in place of employer group coverage"
       },
       {
         "id": "c",
-        "text": "Unlimited duration with no premium increase ever"
+        "text": "Unlimited continuation of group coverage at the employee's old premium"
       },
       {
         "id": "d",
-        "text": "Former employees to keep group health coverage temporarily by paying full premium"
+        "text": "Former employees to keep group health coverage temporarily at their own cost"
       }
     ],
     "correctOptionId": "d",
     "explanation": "COBRA extends group coverage 18-36 months typically at employee cost.",
     "distractorExplanations": {
-      "a": "Not free.",
-      "b": "Separate from Medicare eligibility.",
-      "c": "Limited duration."
+      "a": "COBRA is temporary and the former employee pays the premium.",
+      "b": "COBRA continues the employer group plan; it is not Medicare enrollment.",
+      "c": "COBRA is time-limited (typically 18–36 months) and the person pays up to 102% of the full premium."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1889,27 +1889,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The agent's commission"
+        "text": "The fixed amount paid each time the insured visits a doctor"
       },
       {
         "id": "b",
-        "text": "Amount the insured pays before plan begins sharing costs"
+        "text": "The amount the insured pays before the plan starts sharing costs"
       },
       {
         "id": "c",
-        "text": "Maximum out-of-pocket"
+        "text": "The most the insured pays for covered care in a plan year"
       },
       {
         "id": "d",
-        "text": "Premium tax credit from IRS"
+        "text": "The percentage of costs shared with the insurer after coverage begins"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Deductible is initial self-pay threshold.",
     "distractorExplanations": {
-      "a": "Agent compensation.",
-      "c": "MOOP is separate limit.",
-      "d": "Subsidy is different."
+      "a": "A fixed amount per visit is a copayment.",
+      "c": "The annual cap on insured spending is the out-of-pocket maximum.",
+      "d": "Percentage cost sharing after the deductible is coinsurance."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1922,27 +1922,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Are mandatory for all insurers"
+        "text": "Are required for all individual policies during the first 12 months"
       },
       {
         "id": "b",
-        "text": "Apply only to Medicare Part A"
+        "text": "Apply only when the applicant had a gap in coverage over 63 days"
       },
       {
         "id": "c",
-        "text": "Are prohibited for plan years beginning on/after 2014 in compliant markets"
+        "text": "Are prohibited in ACA-compliant plans for plan years since 2014"
       },
       {
         "id": "d",
-        "text": "Allow lifetime unlimited exclusions"
+        "text": "May be applied for life to any condition diagnosed before enrollment"
       }
     ],
     "correctOptionId": "c",
     "explanation": "ACA banned pre-existing condition exclusions in individual/small group.",
     "distractorExplanations": {
-      "a": "Opposite post-ACA.",
-      "b": "ACA individual market rule.",
-      "d": "Prohibited."
+      "a": "The ACA prohibits pre-existing condition exclusions; they are not required.",
+      "b": "The 63-day gap rule came from pre-ACA HIPAA portability, which the ACA superseded.",
+      "d": "Lifetime exclusions for pre-existing conditions are prohibited in ACA-compliant plans."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."

@@ -469,27 +469,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Levaquin. Class: Fluoroquinolone."
+        "text": "Generic: Oxycodone/APAP. Class: Opioid + APAP. Primary use: Moderate to severe pain."
       },
       {
         "id": "b",
-        "text": "Generic: Ibuprofen. Class: NSAID. Primary use: Pain, inflammation. Key note: GI/renal risk chronic use."
+        "text": "Generic: Ibuprofen. Class: NSAID. Primary use: Pain and inflammation."
       },
       {
         "id": "c",
-        "text": "Coumadin, Jantoven. Class: Vitamin K antagonist anticoagulant."
+        "text": "Generic: Tramadol. Class: Opioid analgesic. Primary use: Moderate pain."
       },
       {
         "id": "d",
-        "text": "Generic: Hydrocodone/APAP. Class: Opioid + APAP. Primary use: Moderate pain. Key note: Hydrocodone combination products are DEA Schedule II; no refills."
+        "text": "Generic: Hydrocodone/APAP. Class: Opioid + APAP. Primary use: Moderate pain (C-II)."
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Generic: Hydrocodone/APAP. Class: Opioid + APAP. Primary use: Moderate pain. Key note: Hydrocodone combination products are DEA Schedule II; no refills. Example: Prescription written for Norco.",
+    "explanation": "Norco is hydrocodone with acetaminophen (APAP), an opioid combination used for moderate pain. Hydrocodone combination products are DEA Schedule II, so refills are not allowed.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“What is a common brand name for Levofloxacin?”), not to this one.",
-      "b": "Not the best answer here; the right answer is “Generic: Hydrocodone/APAP. Class: Opioid + APAP. Primary use: Moderate pain. Key note: Hydrocodone combination products are DEA Schedule…”.",
-      "c": "Not the best answer here; the right answer is “Generic: Hydrocodone/APAP. Class: Opioid + APAP. Primary use: Moderate pain. Key note: Hydrocodone combination products are DEA Schedule…”."
+      "a": "Oxycodone/APAP is Percocet, not Norco.",
+      "b": "Ibuprofen is Motrin/Advil, an NSAID, not an opioid combination.",
+      "c": "Tramadol is Ultram, not Norco."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
@@ -733,27 +733,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Protonix. Class: PPI."
+        "text": "Generic: Pantoprazole. Class: PPI. Primary use: GERD. Key note: Take before breakfast."
       },
       {
         "id": "b",
-        "text": "Generic: Alendronate. Class: Bisphosphonate. Primary use: Osteoporosis. Key note: Take with full glass of water; remain upright ≥30 minutes; do not lie down after dose."
+        "text": "Generic: Alendronate. Class: Bisphosphonate. Primary use: Osteoporosis. Key note: Take upright with a full glass of water."
       },
       {
         "id": "c",
-        "text": "Lexapro. Class: SSRI."
+        "text": "Generic: Escitalopram. Class: SSRI. Primary use: Depression, GAD. Key note: Start low in elderly."
       },
       {
         "id": "d",
-        "text": "Generic: Famotidine. Class: H2 blocker. Primary use: GERD. Key note: Less acid suppression than PPI."
+        "text": "Generic: Famotidine. Class: H2 blocker. Primary use: GERD. Key note: Less acid suppression than a PPI."
       }
     ],
     "correctOptionId": "b",
     "explanation": "Generic: Alendronate. Class: Bisphosphonate. Primary use: Osteoporosis. Key note: Take with full glass of water; remain upright ≥30 minutes; do not lie down after dose. Example: Prescription written for Fosamax.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“What is a common brand name for Pantoprazole?”), not to this one.",
-      "c": "This is the answer to a different question (“What is a common brand name for Escitalopram?”), not to this one.",
-      "d": "This is the answer to a different question (“Pepcid — what is the generic name, drug class, and primary use?”), not to this one."
+      "a": "Pantoprazole is Protonix, not Fosamax.",
+      "c": "Escitalopram is Lexapro, not Fosamax.",
+      "d": "Famotidine is Pepcid, not Fosamax."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
@@ -865,15 +865,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Lopressor (tartrate, immediate release); Toprol XL (succinate, extended release). Class: Beta-blocker."
+        "text": "Generic: Metoprolol. Class: Beta-blocker. Primary use: Hypertension, angina. Key note: Do not stop abruptly."
       },
       {
         "id": "b",
-        "text": "Generic: Metformin. Class: Biguanide. Primary use: Type 2 diabetes. Key note: Hold or adjust per eGFR and iodinated contrast protocol per labeling."
+        "text": "Generic: Metformin. Class: Biguanide. Primary use: Type 2 diabetes. Key note: Hold around iodinated contrast per protocol."
       },
       {
         "id": "c",
-        "text": "Macrobid. Class: Nitrofuran antibiotic."
+        "text": "Generic: Nitrofurantoin. Class: Nitrofuran antibiotic. Primary use: Uncomplicated UTI. Key note: Take with food."
       },
       {
         "id": "d",
@@ -883,9 +883,9 @@
     "correctOptionId": "b",
     "explanation": "Generic: Metformin. Class: Biguanide. Primary use: Type 2 diabetes. Key note: Hold or adjust per eGFR and iodinated contrast protocol per labeling. Example: Prescription written for Glucophage.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Generic: Metformin. Class: Biguanide. Primary use: Type 2 diabetes. Key note: Hold or adjust per eGFR and iodinated contrast protocol per…”.",
-      "c": "Not the best answer here; the right answer is “Generic: Metformin. Class: Biguanide. Primary use: Type 2 diabetes. Key note: Hold or adjust per eGFR and iodinated contrast protocol per…”.",
-      "d": "Not the best answer here; the right answer is “Generic: Metformin. Class: Biguanide. Primary use: Type 2 diabetes. Key note: Hold or adjust per eGFR and iodinated contrast protocol per…”."
+      "a": "Metoprolol is Lopressor / Toprol XL, not Glucophage.",
+      "c": "Nitrofurantoin is Macrobid, not Glucophage.",
+      "d": "Spironolactone is Aldactone, not Glucophage."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
@@ -1492,27 +1492,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Supply chain traceability for Rx drugs."
+        "text": "High abuse potential; no refills allowed; examples: oxycodone, fentanyl, amphetamine salts."
       },
       {
         "id": "b",
-        "text": "Safe handling PPE for hazardous drugs."
+        "text": "Lower abuse potential than C-III; up to 5 refills in 6 months; examples: alprazolam, tramadol."
       },
       {
         "id": "c",
-        "text": "Moderate abuse potential; up to 5 refills in 6 months if authorized on Rx (federal). Examples: ketamine; combination products with ≤90 mg codeine per dosage unit."
+        "text": "Moderate abuse potential; up to 5 refills in 6 months; examples: ketamine, testosterone, codeine ≤90 mg/unit combos."
       },
       {
         "id": "d",
-        "text": "Look-alike sound-alike; tall man lettering."
+        "text": "No accepted medical use in the US; cannot be dispensed; examples: heroin, LSD."
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Federally, Schedule III drugs have moderate abuse potential and, if the prescriber authorizes refills, may be refilled up to five times within six months of the issue date. Typical examples include ketamine and combination products with no more than 90 mg of codeine per dosage unit. Schedule II has no refills; Schedule IV/V have different refill and abuse-potential rules. This is independent PTCE practice, not a PTCB exam item.",
+    "explanation": "Schedule III drugs have moderate-to-low potential for physical dependence. Federal law allows up to 5 refills within 6 months if the prescriber authorizes them. Examples include ketamine, anabolic steroids such as testosterone, and products with no more than 90 mg of codeine per dosage unit.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“Pharmacy law: DSCSA?”), not to this one.",
-      "b": "No PPE chemo.",
-      "d": "Not the best answer here; the right answer is “Moderate abuse potential; up to 5 refills in 6 months if authorized on Rx (federal). Examples: ketamine; combination products with ≤90 mg…”."
+      "a": "That describes Schedule II: high abuse potential and no refills.",
+      "b": "That describes Schedule IV, which has lower abuse potential than Schedule III.",
+      "d": "That describes Schedule I: no accepted medical use in the US."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, FEDERAL-LAW). · Local short-stem expansion"
@@ -2317,27 +2317,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Days = qty ÷ (doses per day)."
+        "text": "Grams of drug per 100 g of product; 1% = 1 g/100 g."
       },
       {
         "id": "b",
-        "text": "Grams drug per 100 mL solution; 1% w/v = 1 g/100 mL."
+        "text": "Grams of drug per 100 mL of solution; 1% w/v = 1 g/100 mL."
       },
       {
         "id": "c",
-        "text": "Grams drug per 100 g product."
+        "text": "Milliliters of drug per 100 mL of solution; 1% = 1 mL/100 mL."
       },
       {
         "id": "d",
-        "text": "Add labeled diluent for final mg/mL."
+        "text": "Milligrams of drug per 1 mL of solution; 1% = 1 mg/mL."
       }
     ],
     "correctOptionId": "b",
     "explanation": "Grams drug per 100 mL solution; 1% w/v = 1 g/100 mL. Example: 5% dextrose.",
     "distractorExplanations": {
-      "a": "Forget frequency.",
-      "c": "Using volume incorrectly.",
-      "d": "Wrong diluent volume."
+      "a": "That is percent weight-in-weight (w/w), used for ointments and creams.",
+      "c": "That is percent volume-in-volume (v/v), used for liquids mixed with liquids.",
+      "d": "1% w/v is 1 g per 100 mL, which equals 10 mg/mL, not 1 mg/mL."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PHARM-MATH). · Local short-stem expansion"
@@ -2482,27 +2482,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Not more than"
+        "text": "(Volume × minutes) ÷ drop factor."
       },
       {
         "id": "b",
-        "text": "As needed"
+        "text": "Volume ÷ (drop factor × minutes)."
       },
       {
         "id": "c",
-        "text": "Milliliter"
+        "text": "(Volume ÷ hours) × drop factor."
       },
       {
         "id": "d",
-        "text": "(Volume×drop factor)÷minutes; use given factor."
+        "text": "(Volume × drop factor) ÷ minutes."
       }
     ],
     "correctOptionId": "d",
     "explanation": "(Volume×drop factor)÷minutes; use given factor. Example: Exam provides factor.",
     "distractorExplanations": {
-      "a": "Similar abbreviation confusion.",
-      "b": "Similar abbreviation confusion.",
-      "c": "Similar abbreviation confusion."
+      "a": "Minutes belong in the denominator and the drop factor in the numerator.",
+      "b": "The drop factor multiplies the volume; it does not divide it.",
+      "c": "That gives drops per hour; divide by 60 to get drops per minute."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PHARM-MATH). · Local short-stem expansion"
@@ -2680,27 +2680,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Add labeled diluent for final mg/mL."
+        "text": "Add the labeled volume of the labeled diluent to reach the stated mg/mL."
       },
       {
         "id": "b",
-        "text": "Right eye"
+        "text": "Add any convenient volume of sterile water, then label the final mg/mL."
       },
       {
         "id": "c",
-        "text": "Before meals"
+        "text": "Fill the vial completely with diluent so no air space remains inside."
       },
       {
         "id": "d",
-        "text": "Every hour"
+        "text": "Inject the dry powder directly into the patient's IV fluid bag."
       }
     ],
     "correctOptionId": "a",
     "explanation": "Add labeled diluent for final mg/mL. Example: Antibiotic vials.",
     "distractorExplanations": {
-      "b": "Similar abbreviation confusion.",
-      "c": "Similar abbreviation confusion.",
-      "d": "Similar abbreviation confusion."
+      "b": "The diluent volume must follow the label; a different volume changes the concentration.",
+      "c": "Filling the vial ignores the labeled volume and produces the wrong concentration.",
+      "d": "Powder is reconstituted in its vial with the labeled diluent before any further dilution."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PHARM-MATH). · Local short-stem expansion"
@@ -2911,27 +2911,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Days = qty ÷ (doses per day)."
+        "text": "Review claims data after dispensing to find prescribing trends."
       },
       {
         "id": "b",
-        "text": "Screen interactions before dispensing."
+        "text": "Screen for interactions and duplications before dispensing."
       },
       {
         "id": "c",
-        "text": "No refill"
+        "text": "Monitor the patient's therapy while the drug is being taken."
       },
       {
         "id": "d",
-        "text": "Dispense as written"
+        "text": "Count controlled-substance inventory at least every two years."
       }
     ],
     "correctOptionId": "b",
     "explanation": "Screen interactions before dispensing.",
     "distractorExplanations": {
-      "a": "Forget frequency.",
-      "c": "Similar abbreviation confusion.",
-      "d": "Similar abbreviation confusion."
+      "a": "Reviewing claims after dispensing is retrospective DUR.",
+      "c": "Monitoring during therapy is concurrent DUR.",
+      "d": "The biennial controlled-substance count is a DEA inventory rule, not DUR."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, ORDER-ENTRY). · Local short-stem expansion"

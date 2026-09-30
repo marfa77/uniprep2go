@@ -1,0 +1,574 @@
+{
+  "ptcb-pharmacy-technician-mock": {
+    "ptcb-pharmacy-technician-mock-015": {
+      "options": {
+        "a": "Generic: Oxycodone/APAP. Class: Opioid + APAP. Primary use: Moderate to severe pain.",
+        "b": "Generic: Ibuprofen. Class: NSAID. Primary use: Pain and inflammation.",
+        "c": "Generic: Tramadol. Class: Opioid analgesic. Primary use: Moderate pain.",
+        "d": "Generic: Hydrocodone/APAP. Class: Opioid + APAP. Primary use: Moderate pain (C-II)."
+      },
+      "explanation": "Norco is hydrocodone with acetaminophen (APAP), an opioid combination used for moderate pain. Hydrocodone combination products are DEA Schedule II, so refills are not allowed.",
+      "distractorExplanations": {
+        "a": "Oxycodone/APAP is Percocet, not Norco.",
+        "b": "Ibuprofen is Motrin/Advil, an NSAID, not an opioid combination.",
+        "c": "Tramadol is Ultram, not Norco."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-023": {
+      "options": {
+        "a": "Generic: Pantoprazole. Class: PPI. Primary use: GERD. Key note: Take before breakfast.",
+        "b": "Generic: Alendronate. Class: Bisphosphonate. Primary use: Osteoporosis. Key note: Take upright with a full glass of water.",
+        "c": "Generic: Escitalopram. Class: SSRI. Primary use: Depression, GAD. Key note: Start low in elderly.",
+        "d": "Generic: Famotidine. Class: H2 blocker. Primary use: GERD. Key note: Less acid suppression than a PPI."
+      },
+      "distractorExplanations": {
+        "a": "Pantoprazole is Protonix, not Fosamax.",
+        "c": "Escitalopram is Lexapro, not Fosamax.",
+        "d": "Famotidine is Pepcid, not Fosamax."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-027": {
+      "options": {
+        "a": "Generic: Metoprolol. Class: Beta-blocker. Primary use: Hypertension, angina. Key note: Do not stop abruptly.",
+        "b": "Generic: Metformin. Class: Biguanide. Primary use: Type 2 diabetes. Key note: Hold around iodinated contrast per protocol.",
+        "c": "Generic: Nitrofurantoin. Class: Nitrofuran antibiotic. Primary use: Uncomplicated UTI. Key note: Take with food.",
+        "d": "Generic: Spironolactone. Class: K-sparing diuretic. Primary use: HF, HTN. Key note: Hyperkalemia risk."
+      },
+      "distractorExplanations": {
+        "a": "Metoprolol is Lopressor / Toprol XL, not Glucophage.",
+        "c": "Nitrofurantoin is Macrobid, not Glucophage.",
+        "d": "Spironolactone is Aldactone, not Glucophage."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-046": {
+      "options": {
+        "a": "High abuse potential; no refills allowed; examples: oxycodone, fentanyl, amphetamine salts.",
+        "b": "Lower abuse potential than C-III; up to 5 refills in 6 months; examples: alprazolam, tramadol.",
+        "c": "Moderate abuse potential; up to 5 refills in 6 months; examples: ketamine, testosterone, codeine ≤90 mg/unit combos.",
+        "d": "No accepted medical use in the US; cannot be dispensed; examples: heroin, LSD."
+      },
+      "explanation": "Schedule III drugs have moderate-to-low potential for physical dependence. Federal law allows up to 5 refills within 6 months if the prescriber authorizes them. Examples include ketamine, anabolic steroids such as testosterone, and products with no more than 90 mg of codeine per dosage unit.",
+      "distractorExplanations": {
+        "a": "That describes Schedule II: high abuse potential and no refills.",
+        "b": "That describes Schedule IV, which has lower abuse potential than Schedule III.",
+        "d": "That describes Schedule I: no accepted medical use in the US."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-071": {
+      "options": {
+        "a": "Grams of drug per 100 g of product; 1% = 1 g/100 g.",
+        "b": "Grams of drug per 100 mL of solution; 1% w/v = 1 g/100 mL.",
+        "c": "Milliliters of drug per 100 mL of solution; 1% = 1 mL/100 mL.",
+        "d": "Milligrams of drug per 1 mL of solution; 1% = 1 mg/mL."
+      },
+      "distractorExplanations": {
+        "a": "That is percent weight-in-weight (w/w), used for ointments and creams.",
+        "c": "That is percent volume-in-volume (v/v), used for liquids mixed with liquids.",
+        "d": "1% w/v is 1 g per 100 mL, which equals 10 mg/mL, not 1 mg/mL."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-076": {
+      "options": {
+        "a": "(Volume × minutes) ÷ drop factor.",
+        "b": "Volume ÷ (drop factor × minutes).",
+        "c": "(Volume ÷ hours) × drop factor.",
+        "d": "(Volume × drop factor) ÷ minutes."
+      },
+      "distractorExplanations": {
+        "a": "Minutes belong in the denominator and the drop factor in the numerator.",
+        "b": "The drop factor multiplies the volume; it does not divide it.",
+        "c": "That gives drops per hour; divide by 60 to get drops per minute."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-082": {
+      "options": {
+        "a": "Add the labeled volume of the labeled diluent to reach the stated mg/mL.",
+        "b": "Add any convenient volume of sterile water, then label the final mg/mL.",
+        "c": "Fill the vial completely with diluent so no air space remains inside.",
+        "d": "Inject the dry powder directly into the patient's IV fluid bag."
+      },
+      "distractorExplanations": {
+        "b": "The diluent volume must follow the label; a different volume changes the concentration.",
+        "c": "Filling the vial ignores the labeled volume and produces the wrong concentration.",
+        "d": "Powder is reconstituted in its vial with the labeled diluent before any further dilution."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-089": {
+      "options": {
+        "a": "Review claims data after dispensing to find prescribing trends.",
+        "b": "Screen for interactions and duplications before dispensing.",
+        "c": "Monitor the patient's therapy while the drug is being taken.",
+        "d": "Count controlled-substance inventory at least every two years."
+      },
+      "distractorExplanations": {
+        "a": "Reviewing claims after dispensing is retrospective DUR.",
+        "c": "Monitoring during therapy is concurrent DUR.",
+        "d": "The biennial controlled-substance count is a DEA inventory rule, not DUR."
+      }
+    }
+  },
+  "series-63-readiness-check": {
+    "series-63-readiness-check-s63-agent-004": {
+      "options": {
+        "b": "Only the customer must notify the Administrator, and only within 24 hours of the change",
+        "c": "No filing is ever required if the agent moves directly to an affiliated bank or trust company",
+        "d": "Only FINRA Arbitration must be notified; the state Administrator is never told of terminations"
+      },
+      "distractorExplanations": {
+        "b": "Customers have no filing duty when an agent's association with a firm ends.",
+        "c": "Moving to an affiliate does not remove the prompt notice duty to the Administrator.",
+        "d": "The Administrator must be notified; FINRA arbitration is a dispute forum, not a registration notice."
+      }
+    },
+    "series-63-readiness-check-s63-agent-006": {
+      "options": {
+        "b": "Administrative staff may solicit freely as long as they are paid only a salary and no commissions",
+        "c": "Cold-calling to recommend stocks is allowed without registration if orders are limited to odd lots",
+        "d": "Registration is required only after the employee completes 50 solicitations in a calendar year"
+      },
+      "distractorExplanations": {
+        "b": "How the employee is paid does not matter; soliciting and recommending securities requires agent registration.",
+        "c": "Order size does not create an exclusion from agent registration.",
+        "d": "There is no 50-solicitation threshold; registration is required before soliciting."
+      }
+    },
+    "series-63-readiness-check-s63-ethics-013": {
+      "options": {
+        "d": "Intentional or reckless deception, misstatements, omissions, or schemes in securities dealings"
+      }
+    },
+    "series-63-readiness-check-s63-ia-002": {
+      "options": {
+        "a": "An adviser registered with the SEC, or excluded from state registration by federal preemption (typically due to AUM or adviser type).",
+        "c": "Any person in the business of advising others about securities for compensation, whether registered with a state or the SEC."
+      },
+      "distractorExplanations": {
+        "c": "That is the general definition of an investment adviser, not the federal covered subset."
+      }
+    }
+  },
+  "cfa-level-2-readiness-check": {
+    "cfa-level-2-readiness-check-economics-004": {
+      "options": {
+        "b": "Policy rate (primary tool), reserve requirements, open market operations, and forward guidance."
+      }
+    },
+    "cfa-level-2-readiness-check-corp-finance-003": {
+      "options": {
+        "d": "Dividend irrelevance (M&M), bird-in-hand (investors prefer certain dividends), and tax preference (investors prefer lower-taxed capital gains)."
+      }
+    },
+    "cfa-level-2-readiness-check-corp-finance-005": {
+      "options": {
+        "c": "Calendar (January), value (low P/B), size (small caps), momentum, and post-earnings drift: possible inefficiency or risk premia."
+      }
+    },
+    "cfa-level-2-readiness-check-equity-002": {
+      "prompt": "In a two-stage dividend discount model, how is the terminal value at the end of the high-growth stage typically estimated?",
+      "options": {
+        "a": "By discounting each high-growth dividend at the risk-free rate and adding the results together",
+        "b": "By applying the Gordon growth model at the end of the high-growth stage and discounting it back",
+        "c": "By multiplying the current dividend by the long-run growth rate, with no discounting required",
+        "d": "By using the book value of equity at the start of the forecast horizon as the terminal price"
+      },
+      "correctOptionId": "b",
+      "explanation": "In a two-stage DDM, each dividend in the high-growth stage is discounted individually. At the end of that stage the terminal value is estimated with the Gordon growth model, V_n = D_(n+1) / (r − g), and then discounted back to today at the required return on equity.",
+      "distractorExplanations": {
+        "a": "Dividends are discounted at the required return on equity, and summing them alone omits the terminal value.",
+        "c": "The terminal value uses D_(n+1) / (r − g) and must be discounted to the present.",
+        "d": "Book value is not the DDM terminal value; the model values expected future dividends."
+      }
+    },
+    "cfa-level-2-readiness-check-alternatives-001": {
+      "options": {
+        "a": "Relying on the manager's reported IRR without reviewing cash-flow timing",
+        "b": "Focusing on entry valuation multiples while ignoring the exit route",
+        "d": "Assuming LPs have the same governance rights as public shareholders"
+      },
+      "distractorExplanations": {
+        "a": "IRR depends on cash-flow timing and can be managed; due diligence checks the drivers behind it.",
+        "b": "Exit assumptions are central to private equity returns and must be tested, not ignored.",
+        "d": "LP rights are set by the partnership agreement and differ from public shareholder rights."
+      }
+    },
+    "cfa-level-2-readiness-check-alternatives-002": {
+      "options": {
+        "a": "Price-to-earnings on GAAP net income, including depreciation",
+        "c": "Modified duration of the REIT's unsecured bond issues",
+        "d": "Book value per share without marking properties to market"
+      },
+      "distractorExplanations": {
+        "a": "GAAP EPS is distorted by real estate depreciation, which is why FFO/AFFO are used.",
+        "c": "Bond duration measures the rate sensitivity of debt, not the equity value of a REIT.",
+        "d": "Book value uses depreciated historical cost; NAV marks properties to market."
+      }
+    },
+    "cfa-level-2-readiness-check-alternatives-003": {
+      "options": {
+        "b": "Generate predictable dividend streams similar to utility stocks",
+        "c": "Behave like investment-grade bonds with fixed coupons and maturities",
+        "d": "Have no storage, transport, or roll costs affecting futures returns"
+      },
+      "distractorExplanations": {
+        "b": "Physical commodities produce no dividends or other cash flows.",
+        "c": "Commodities have no coupons or maturity; their returns come from price, roll, and collateral yield.",
+        "d": "Storage costs and roll yield are major drivers of commodity futures returns."
+      }
+    },
+    "cfa-level-2-readiness-check-alternatives-004": {
+      "options": {
+        "a": "The underlying investment strategy and portfolio holdings",
+        "b": "The auditor and administrator appointed for each class",
+        "c": "The legal jurisdiction of the master fund's portfolio"
+      },
+      "distractorExplanations": {
+        "a": "Share classes of one fund hold the same portfolio; they differ in terms such as fees and liquidity.",
+        "b": "A fund uses one auditor and administrator across its share classes.",
+        "c": "All classes of a fund share the same master portfolio and its jurisdiction."
+      }
+    },
+    "cfa-level-2-readiness-check-alternatives-005": {
+      "options": {
+        "a": "Spot prices exceed futures prices, so the curve slopes downward",
+        "b": "Futures prices converge to zero as contracts approach expiry",
+        "c": "All maturities trade at one price regardless of storage cost",
+        "d": "Longer-dated futures trade above nearer-dated contracts and spot"
+      },
+      "distractorExplanations": {
+        "a": "A downward-sloping futures curve is backwardation.",
+        "b": "Futures converge to the spot price at expiry, not to zero.",
+        "c": "A flat curve is neither contango nor backwardation; storage costs usually push it upward."
+      }
+    },
+    "cfa-level-2-readiness-check-alternatives-006": {
+      "options": {
+        "b": "The best single month of historical returns in the pitch book",
+        "c": "Headline returns reported in the manager's marketing materials",
+        "d": "Peer-group rankings from the most recent calendar year alone"
+      },
+      "distractorExplanations": {
+        "b": "One strong month says nothing about risk, fees, or repeatable return drivers.",
+        "c": "Marketing returns are unaudited and selective; appraisal needs risk, liquidity, and fee analysis.",
+        "d": "A single year of peer rankings ignores risk, liquidity, and fees."
+      }
+    }
+  },
+  "life-and-health-insurance-readiness-check": {
+    "life-and-health-insurance-readiness-check-ins-health-001": {
+      "options": {
+        "a": "Employer-sponsored, pre-tax account for eligible medical expenses; largely use-it-or-lose-it each plan year."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-health-003": {
+      "options": {
+        "a": "Cost-sharing percentage the insured pays after the deductible is met.",
+        "b": "Fixed dollar amount the insured pays for a covered service, such as a visit.",
+        "c": "A health condition that existed before the policy's effective date."
+      },
+      "distractorExplanations": {
+        "a": "That describes coinsurance.",
+        "b": "That describes a copayment."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-health-012": {
+      "options": {
+        "b": "Hospital inpatient room and board, skilled nursing, and hospice (the Part A core)",
+        "c": "Outpatient prescription drugs purchased through a private stand-alone drug plan",
+        "d": "Long-term custodial nursing home care for as long as the beneficiary needs it"
+      },
+      "distractorExplanations": {
+        "b": "Inpatient hospital, skilled nursing, and hospice care are Medicare Part A benefits.",
+        "c": "Stand-alone prescription drug plans are Medicare Part D.",
+        "d": "Medicare does not cover long-term custodial care."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-life-basics-003": {
+      "options": {
+        "c": "Term coverage whose death benefit stays level for the whole term"
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-life-basics-008": {
+      "options": {
+        "a": "Permanent coverage with guaranteed cash value growth, like whole life",
+        "b": "Monthly disability income if the insured cannot work due to illness",
+        "c": "A savings account with policy loans available from the first day",
+        "d": "Pure death benefit protection for a set period, with no cash value"
+      },
+      "distractorExplanations": {
+        "a": "Guaranteed cash value belongs to permanent insurance such as whole life, not term.",
+        "b": "Replacing income during disability is disability income insurance.",
+        "c": "Term has no cash value, so it has nothing to borrow against."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-life-basics-009": {
+      "options": {
+        "b": "Any two people, even strangers with no financial or family relationship",
+        "c": "The insured and the insurer's underwriting department at issue",
+        "d": "The writing agent and the underwriter at the time of the claim"
+      },
+      "distractorExplanations": {
+        "b": "Strangers lack insurable interest; allowing it would turn insurance into a wager.",
+        "c": "The insurer's underwriters are not the parties who need an insurable interest.",
+        "d": "The agent and underwriter are not parties who must have an insurable interest in the insured."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-provisions-002": {
+      "options": {
+        "a": "Whole life is permanent with cash value; term is temporary pure protection",
+        "b": "Whole life pays a death benefit only if the insured dies before age 65",
+        "c": "Term always builds guaranteed cash value faster than whole life does",
+        "d": "Whole life is available only as group coverage through an employer"
+      },
+      "distractorExplanations": {
+        "b": "Whole life pays whenever death occurs while the policy is in force, typically to age 100 or 121.",
+        "c": "Term insurance builds no cash value.",
+        "d": "Whole life is commonly sold as individual coverage."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-provisions-003": {
+      "options": {
+        "a": "The insurer's right to contest the policy after ~2 years in force",
+        "b": "The insurer's right to raise premiums after the policy is issued",
+        "c": "The owner's right to change beneficiaries once the insured has died",
+        "d": "The owner's right to cancel the policy during the free-look period"
+      },
+      "distractorExplanations": {
+        "b": "Premium guarantees are set by the policy, not by the incontestability clause.",
+        "c": "Beneficiary rights vest at death; this is unrelated to incontestability.",
+        "d": "Cancelling for a refund is the free-look provision."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-provisions-004": {
+      "options": {
+        "a": "Premiums that start high and decrease to zero after the first year",
+        "c": "A death benefit that is payable only if the insured reaches age 100",
+        "d": "Coverage limited to accidental death, with premiums fixed for life"
+      },
+      "distractorExplanations": {
+        "a": "Graded premium policies start low and increase; premiums do not drop to zero.",
+        "c": "The death benefit is payable at death while in force, not only at age 100.",
+        "d": "Graded premium whole life covers death from any cause, not only accidents."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-provisions-006": {
+      "options": {
+        "a": "Converting the policy's cash value into disability income coverage",
+        "b": "Surrendering the policy and forfeiting all accumulated cash value",
+        "c": "Keeping the full death benefit for a limited term with no premiums"
+      },
+      "distractorExplanations": {
+        "a": "Nonforfeiture options do not convert life coverage into disability income.",
+        "b": "Nonforfeiture laws exist precisely so the owner does not forfeit accumulated cash value.",
+        "c": "Full face amount for a limited period is the extended term option."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-provisions-007": {
+      "options": {
+        "a": "Death rates by age (and often sex) observed in insured populations",
+        "b": "Historical total returns of the insurer's general account investments",
+        "c": "Frequency and severity of property losses by construction type",
+        "d": "Rates of sickness and disability by age, used for health insurance"
+      },
+      "distractorExplanations": {
+        "b": "Investment returns affect pricing but are not what a mortality table measures.",
+        "c": "Property loss data is used in property insurance, not life mortality tables.",
+        "d": "Sickness and disability rates are morbidity tables."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-provisions-008": {
+      "options": {
+        "a": "Medical records from the applicant's physician, used to assess insurability",
+        "b": "The agent's written summary of the applicant's answers and lifestyle",
+        "c": "A consumer reporting agency's report on the applicant's character and habits",
+        "d": "Results of the paramedical exam performed by a contracted examiner"
+      },
+      "distractorExplanations": {
+        "b": "The agent's report is a field underwriting document, not an APS.",
+        "c": "A third-party report on character and habits is an inspection (consumer) report.",
+        "d": "A paramedical exam is performed by the insurer's examiner, not the applicant's own physician."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-provisions-009": {
+      "options": {
+        "a": "Life insurance pricing based on death rates at each age",
+        "b": "Auto collision frequency by driver age and vehicle type",
+        "c": "Disability and health insurance, predicting sickness and injury rates",
+        "d": "Asset allocation of the insurer's investment portfolio"
+      },
+      "distractorExplanations": {
+        "a": "Death rates by age are mortality tables.",
+        "b": "Auto loss frequency is property and casualty rating data.",
+        "d": "Portfolio allocation is an investment decision, not a morbidity table use."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-provisions-010": {
+      "options": {
+        "a": "Insurers decline applicants based on race or national origin",
+        "b": "Healthy people buy more coverage than they need to reduce taxes",
+        "c": "Agents steer clients toward the insurer paying the highest commission",
+        "d": "Higher-risk people seek or keep coverage more than lower-risk people"
+      },
+      "distractorExplanations": {
+        "a": "That is unfair discrimination, which is prohibited; it is not anti-selection.",
+        "b": "Anti-selection is about higher-risk people seeking coverage, not healthy people over-buying.",
+        "c": "Commission-driven steering is an ethics issue, not anti-selection."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-general-002": {
+      "options": {
+        "a": "The share of each premium the agent keeps as commission",
+        "b": "The maximum loss the insurer keeps before reinsurance applies",
+        "c": "The percentage of claims the insurer pays within 30 days",
+        "d": "The minimum capital a state requires the insurer to hold"
+      },
+      "distractorExplanations": {
+        "a": "Agent commission is unrelated to how much risk the insurer retains.",
+        "c": "Claim payment speed is a service measure, not a retention limit.",
+        "d": "Minimum capital is a solvency requirement, not a retention limit."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-annuities-001": {
+      "options": {
+        "a": "Ownership rights in the policy to another party",
+        "b": "The agent's right to renewal commissions on the policy",
+        "c": "The insurer's obligation to a state guaranty association",
+        "d": "The insured's medical history to a new insurer for underwriting"
+      },
+      "distractorExplanations": {
+        "b": "Agent commissions are not policy ownership rights and are not assigned by the owner.",
+        "c": "Guaranty association obligations belong to insurers, not to policy assignments.",
+        "d": "Assignment transfers policy rights, not medical records."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-annuities-002": {
+      "options": {
+        "a": "Policy loan interest to reduce the outstanding death benefit",
+        "b": "Dividends to buy additional paid-up whole life insurance",
+        "c": "Surrender charges to buy a one-year term insurance rider",
+        "d": "Premium waivers to extend coverage during a disability"
+      },
+      "distractorExplanations": {
+        "a": "Loan interest reduces values; paid-up additions increase coverage.",
+        "c": "Buying one-year term with dividends is the one-year term dividend option, and surrender charges are not used.",
+        "d": "Continuing coverage during disability is the waiver of premium rider."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-annuities-003": {
+      "options": {
+        "a": "The first of the two insureds dies, leaving the survivor",
+        "b": "Either insured becomes disabled and cannot pay premiums",
+        "c": "The second of the two insureds dies; often used for estate taxes",
+        "d": "The policy's cash value reaches the face amount at maturity"
+      },
+      "distractorExplanations": {
+        "a": "Paying at the first death describes a first-to-die (joint life) policy.",
+        "b": "Disability of an insured does not trigger a life insurance death benefit.",
+        "d": "Cash value reaching face amount is policy endowment, not a survivorship death benefit."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-tax-regulation-002": {
+      "options": {
+        "a": "Must be strictly complied with; a breach can void coverage",
+        "b": "Are statements believed true to the best of the applicant's knowledge",
+        "c": "Apply only to the payment of dividends on participating policies",
+        "d": "Are oral promises by the agent that are not part of the contract"
+      },
+      "distractorExplanations": {
+        "b": "Statements true to the best of the applicant's knowledge are representations.",
+        "c": "Warranties are not limited to policy dividends.",
+        "d": "Warranties are part of the contract, not oral agent promises."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-tax-regulation-004": {
+      "options": {
+        "a": "No paperwork, as long as the client verbally agrees to the change",
+        "b": "Written approval from the existing insurer before the new policy issues",
+        "c": "Disclosure forms comparing existing and proposed coverage, per state rules",
+        "d": "The agent to wait until the old policy lapses before taking an application"
+      },
+      "distractorExplanations": {
+        "a": "Replacement rules require written disclosure and acknowledgment, not verbal agreement.",
+        "b": "The existing insurer is notified, but its approval is not required.",
+        "d": "Letting the old policy lapse first could leave the client uninsured; rules require disclosure, not a lapse."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-tax-regulation-005": {
+      "options": {
+        "a": "Comparing policies side by side with full and accurate disclosure",
+        "b": "Transferring part of a risk from one insurer to another insurer",
+        "c": "Offering a client part of the commission to induce a sale",
+        "d": "Inducing a policy replacement through misrepresentation"
+      },
+      "distractorExplanations": {
+        "a": "An accurate, fully disclosed comparison is legitimate, not twisting.",
+        "b": "Transferring risk between insurers is reinsurance.",
+        "c": "Sharing commission to induce a sale is rebating."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-tax-regulation-006": {
+      "options": {
+        "a": "At issue for life insurance; at the time of loss for property",
+        "b": "At claim payment only, for every line of insurance",
+        "c": "At policy surrender or maturity, for life insurance",
+        "d": "At both issue and death for life, never for property"
+      },
+      "distractorExplanations": {
+        "b": "Timing differs by line: life at issue, property at the time of loss.",
+        "c": "Life insurable interest is required at issue, not at surrender or maturity.",
+        "d": "Life insurable interest need not exist at death, and property requires it at the time of loss."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-tax-regulation-007": {
+      "options": {
+        "a": "Replaces the underlying policy with new terms for the holder",
+        "b": "Summarizes coverage but does not change the policy contract",
+        "c": "Extends coverage limits beyond those stated in the policy",
+        "d": "Is issued by the state insurance department to prove licensing"
+      },
+      "distractorExplanations": {
+        "a": "A certificate evidences coverage; it does not replace or amend the policy.",
+        "c": "A certificate cannot grant more coverage than the policy provides.",
+        "d": "Certificates of insurance are issued by insurers or agents, not the state regulator."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-disability-ltc-002": {
+      "options": {
+        "a": "Free lifetime health coverage after any voluntary or involuntary job loss",
+        "b": "Automatic Medicare enrollment in place of employer group coverage",
+        "c": "Unlimited continuation of group coverage at the employee's old premium",
+        "d": "Former employees to keep group health coverage temporarily at their own cost"
+      },
+      "distractorExplanations": {
+        "a": "COBRA is temporary and the former employee pays the premium.",
+        "b": "COBRA continues the employer group plan; it is not Medicare enrollment.",
+        "c": "COBRA is time-limited (typically 18–36 months) and the person pays up to 102% of the full premium."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-disability-ltc-004": {
+      "options": {
+        "a": "The fixed amount paid each time the insured visits a doctor",
+        "b": "The amount the insured pays before the plan starts sharing costs",
+        "c": "The most the insured pays for covered care in a plan year",
+        "d": "The percentage of costs shared with the insurer after coverage begins"
+      },
+      "distractorExplanations": {
+        "a": "A fixed amount per visit is a copayment.",
+        "c": "The annual cap on insured spending is the out-of-pocket maximum.",
+        "d": "Percentage cost sharing after the deductible is coinsurance."
+      }
+    },
+    "life-and-health-insurance-readiness-check-ins-disability-ltc-005": {
+      "options": {
+        "a": "Are required for all individual policies during the first 12 months",
+        "b": "Apply only when the applicant had a gap in coverage over 63 days",
+        "c": "Are prohibited in ACA-compliant plans for plan years since 2014",
+        "d": "May be applied for life to any condition diagnosed before enrollment"
+      },
+      "distractorExplanations": {
+        "a": "The ACA prohibits pre-existing condition exclusions; they are not required.",
+        "b": "The 63-day gap rule came from pre-ACA HIPAA portability, which the ACA superseded.",
+        "d": "Lifetime exclusions for pre-existing conditions are prohibited in ACA-compliant plans."
+      }
+    }
+  }
+}

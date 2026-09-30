@@ -1,0 +1,98 @@
+{
+  "gmat-focus-readiness-check": {
+    "gmat-focus-readiness-check-data-insights-056": {
+      "prompt": "A company manufactures three types of electronic devices: A, B, and C. The table shows the production cost per unit and the selling price per unit for each device. The company will sell a combined total of 500 units, and the number of Device B units sold will be twice the number of Device A units sold. Which of the following combinations of units sold for Device A, Device B, and Device C (in that order) produces the greatest total profit?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "100, 200, 200",
+        "b": "120, 240, 140",
+        "c": "80, 160, 260",
+        "d": "90, 180, 230"
+      },
+      "explanation": "Profit per unit is $30 for A, $40 for B, and $40 for C. With B = 2A and C = 500 − 3A, total profit = 30A + 40(2A) + 40(500 − 3A) = 20,000 − 10A. Profit is highest when A is smallest, so 80, 160, 260 gives $19,200.",
+      "distractorExplanations": {
+        "a": "100, 200, 200 gives 20,000 − 10(100) = $19,000, less than $19,200.",
+        "b": "120, 240, 140 gives 20,000 − 10(120) = $18,800, the lowest of the four.",
+        "d": "90, 180, 230 gives 20,000 − 10(90) = $19,100, $100 short of the best combination."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-065": {
+      "distractorExplanations": {
+        "a": "A perfect correlation needs every point on one straight line, but the sales gain per $5k of spend varies from $5k to $25k.",
+        "b": "The data show association, not cause, and months 3 and 4 have equal spend but different sales, so spend alone does not determine sales.",
+        "d": "Sales rise from $100k to $165k as spend triples, which is a clear positive pattern."
+      }
+    },
+    "gmat-focus-readiness-check-data-insights-066": {
+      "prompt": "A company is analyzing its quarterly sales data for two products, Product X and Product Y. The table below shows the sales (in thousands of dollars) for each product over four quarters. What is the average quarterly sales growth rate for Product Y from Quarter 1 to Quarter 4, expressed as a percentage?",
+      "options": {
+        "c": "9.14%"
+      },
+      "explanation": "Product Y's quarter-over-quarter growth rates are 88/80 − 1 = 10.00%, 95/88 − 1 ≈ 7.95%, and 104/95 − 1 ≈ 9.47%. Their average is (10.00 + 7.95 + 9.47) ÷ 3 ≈ 9.14%; the compound rate (104/80)^(1/3) − 1 also rounds to 9.14%.",
+      "distractorExplanations": {
+        "a": "7.50% divides the total 30% growth by four quarters, but there are only three growth periods.",
+        "b": "8.33% is below both the simple average and the compound rate of the three quarterly changes.",
+        "d": "9.58% overstates growth; the three quarterly rates average about 9.14%."
+      }
+    },
+    "gmat-focus-readiness-check-quant-049": {
+      "prompt": "In a certain sequence, each term after the first is obtained by doubling the previous term and then adding 3. If the fifth term is 173, what is the second term?",
+      "formula": "",
+      "correctOptionId": "b",
+      "options": {
+        "a": "8",
+        "b": "19",
+        "c": "22",
+        "d": "41"
+      },
+      "explanation": "Reverse the rule by subtracting 3 and then halving: a₄ = (173 − 3) ÷ 2 = 85, a₃ = (85 − 3) ÷ 2 = 41, a₂ = (41 − 3) ÷ 2 = 19. Check: 19 → 41 → 85 → 173.",
+      "distractorExplanations": {
+        "a": "8 is the first term, one backward step too far.",
+        "c": "22 undoes the steps in the wrong order: (41 + 3) ÷ 2 = 22.",
+        "d": "41 is the third term; one more backward step is needed."
+      }
+    }
+  },
+  "gre-readiness-check": {
+    "gre-readiness-check-quant-006": {
+      "options": {
+        "b": "15/34",
+        "d": "1/3"
+      },
+      "distractorExplanations": {
+        "b": "15/34 subtracts only two marbles from the total instead of three.",
+        "d": "1/3 = 11/33 is the probability of drawing a blue marble, not a green one."
+      }
+    },
+    "gre-readiness-check-quant-021": {
+      "options": {
+        "d": "1/3"
+      },
+      "distractorExplanations": {
+        "d": "1/3 = 12/36 ignores the two red marbles that were removed."
+      }
+    },
+    "gre-readiness-check-quant-039": {
+      "options": {
+        "a": "1/9",
+        "c": "1/8"
+      },
+      "explanation": "Three rolls give 6³ = 216 equally likely outcomes. The ordered triples summing to 10 come from {1,3,6}, {1,4,5}, {2,3,5} (6 orders each), and {2,2,6}, {2,4,4}, {3,3,4} (3 orders each): 18 + 9 = 27. So P = 27/216 = 1/8.",
+      "distractorExplanations": {
+        "a": "1/9 = 24/216 undercounts the favorable triples by three."
+      }
+    },
+    "gre-readiness-check-quant-057": {
+      "options": {
+        "b": "(4, 10)",
+        "c": "(6, 12)",
+        "d": "(10, 20)"
+      },
+      "distractorExplanations": {
+        "b": "On y = 2x + 1, x = 4 gives y = 9, not 10.",
+        "c": "On y = 2x + 1, x = 6 gives y = 13, not 12.",
+        "d": "On y = 2x + 1, x = 10 gives y = 21, not 20."
+      }
+    }
+  }
+}

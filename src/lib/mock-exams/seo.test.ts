@@ -16,7 +16,7 @@ describe("mock exam SEO", () => {
     expect(buildMockSeoDescription(servSafe!)).toContain("75%");
 
     expect(buildMockSeoTitle(sie!)).toContain("SIE Practice Test");
-    expect(buildMockSeoDescription(sie!)).toContain("75-question");
+    expect(buildMockSeoDescription(sie!)).toContain("75 timed questions");
   });
 
   it("exposes search-intent FAQs on the HTML page and in JSON-LD", () => {

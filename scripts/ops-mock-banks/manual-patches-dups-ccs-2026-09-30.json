@@ -1,0 +1,691 @@
+{
+  "aapc-ccs-readiness-check": {
+    "aapc-ccs-readiness-check-pcs-001": {
+      "topicId": "guidelines"
+    },
+    "aapc-ccs-readiness-check-pcs-003": {
+      "topicId": "guidelines"
+    },
+    "aapc-ccs-readiness-check-pcs-004": {
+      "topicId": "guidelines"
+    },
+    "aapc-ccs-readiness-check-pcs-005": {
+      "topicId": "guidelines"
+    },
+    "aapc-ccs-readiness-check-pcs-006": {
+      "topicId": "guidelines"
+    },
+    "aapc-ccs-readiness-check-pcs-007": {
+      "topicId": "guidelines"
+    },
+    "aapc-ccs-readiness-check-pcs-008": {
+      "topicId": "guidelines"
+    },
+    "aapc-ccs-readiness-check-pcs-009": {
+      "topicId": "guidelines"
+    },
+    "aapc-ccs-readiness-check-pcs-010": {
+      "topicId": "guidelines"
+    },
+    "aapc-ccs-readiness-check-icd-015": {
+      "topicId": "guidelines"
+    },
+    "aapc-ccs-readiness-check-compliance-006": {
+      "topicId": "guidelines"
+    },
+    "aapc-ccs-readiness-check-compliance-012": {
+      "topicId": "guidelines"
+    },
+    "aapc-ccs-readiness-check-pcs-015": {
+      "topicId": "icd"
+    },
+    "aapc-ccs-readiness-check-guidelines-001": {
+      "topicId": "guidelines",
+      "difficulty": "hard",
+      "prompt": "In the outpatient setting, the physician documents \"probable pneumonia\" for a patient with cough and fever. Per ICD-10-CM outpatient guidelines, you should code:",
+      "options": {
+        "a": "Pneumonia, as if the diagnosis were confirmed",
+        "b": "An observation Z code for suspected pneumonia",
+        "c": "The documented signs and symptoms (cough, fever)",
+        "d": "R69, illness, unspecified, until tests return"
+      },
+      "correctOptionId": "c",
+      "explanation": "In outpatient encounters, do not code diagnoses documented as probable, suspected, likely, or rule-out. Code to the highest degree of certainty, which here is the signs and symptoms. Coding uncertain diagnoses as confirmed applies only to inpatient admissions.",
+      "distractorExplanations": {
+        "a": "Coding an uncertain diagnosis as confirmed is the inpatient rule, not the outpatient rule.",
+        "d": "R69 is a nonspecific code; documented symptoms are more specific and required.",
+        "b": "Z03 observation codes are for a suspected condition that is ruled out with no signs or symptoms present."
+      }
+    },
+    "aapc-ccs-readiness-check-compliance-007": {
+      "topicId": "compliance",
+      "difficulty": "medium",
+      "prompt": "Which is a compliant physician query under AHIMA/ACDIS query practice guidance?",
+      "options": {
+        "a": "Stating the DRG payment increase if sepsis is documented",
+        "b": "Asking only \"Does the patient have acute respiratory failure? Yes/No\" for a new diagnosis",
+        "c": "Presenting clinical indicators with options including \"other\" or \"undetermined\"",
+        "d": "Asking the provider to add a diagnosis the coder believes is present"
+      },
+      "correctOptionId": "c",
+      "explanation": "Compliant queries cite clinical indicators from the record and offer clinically reasonable options, including other/undetermined. They must not lead the provider or mention financial impact.",
+      "distractorExplanations": {
+        "a": "Mentioning payment impact is leading and noncompliant.",
+        "d": "Coders cannot direct a diagnosis; the provider decides based on clinical judgment.",
+        "b": "Yes/no queries may not be used to introduce a new, undocumented diagnosis."
+      }
+    },
+    "aapc-ccs-readiness-check-compliance-010": {
+      "topicId": "compliance",
+      "difficulty": "medium",
+      "prompt": "A present on admission (POA) indicator of \"Y\" means the condition:",
+      "options": {
+        "a": "Developed after the inpatient admission order",
+        "b": "Lacked enough documentation to decide",
+        "c": "Could not be determined clinically by the provider",
+        "d": "Was present when the inpatient admission occurred"
+      },
+      "correctOptionId": "d",
+      "explanation": "Y = present at the time of inpatient admission, including conditions that developed during an outpatient encounter such as the ED before the admission order. N = not present, U = insufficient documentation, W = clinically undetermined.",
+      "distractorExplanations": {
+        "a": "A condition that developed after admission is reported as N.",
+        "c": "Clinically undetermined is W.",
+        "b": "Insufficient documentation is U."
+      }
+    },
+    "aapc-ccs-readiness-check-compliance-013": {
+      "topicId": "compliance",
+      "difficulty": "easy",
+      "prompt": "The main goal of a clinical documentation integrity (CDI) program is:",
+      "options": {
+        "a": "Replacing physician documentation with coder-written summaries",
+        "b": "Raising the case-mix index regardless of the patient's condition",
+        "c": "A complete, accurate record reflecting severity that supports correct coding",
+        "d": "Reducing the number of diagnoses reported on each claim"
+      },
+      "correctOptionId": "c",
+      "explanation": "CDI works with providers so the record accurately reflects the patient's severity of illness and risk of mortality, which supports correct code assignment, quality data, and compliant reimbursement.",
+      "distractorExplanations": {
+        "b": "Pursuing case-mix gains that are not clinically supported is a compliance risk.",
+        "d": "The goal is accuracy, not fewer (or more) codes.",
+        "a": "Only providers can document diagnoses; CDI clarifies, it does not replace."
+      }
+    },
+    "aapc-ccs-readiness-check-compliance-014": {
+      "topicId": "compliance",
+      "difficulty": "hard",
+      "prompt": "Under the Medicare HAC–POA program, a CMS-selected hospital-acquired condition that was NOT present on admission will:",
+      "options": {
+        "a": "Always move the case into a higher MS-DRG",
+        "b": "Be reported only as a Z code for tracking",
+        "c": "Be deleted from the claim before submission",
+        "d": "Not count as a CC/MCC to raise MS-DRG payment"
+      },
+      "correctOptionId": "d",
+      "explanation": "When a selected HAC (for example a stage 3 or 4 pressure ulcer or a catheter-associated UTI) has POA = N, it cannot act as a CC/MCC to raise the MS-DRG. The condition is still coded.",
+      "distractorExplanations": {
+        "a": "The policy prevents higher payment for these conditions when acquired in the hospital.",
+        "c": "The condition must still be coded and reported accurately.",
+        "b": "The condition keeps its own diagnosis code; it is not replaced by a Z code."
+      }
+    },
+    "aapc-ccs-readiness-check-guidelines-003": {
+      "topicId": "compliance",
+      "difficulty": "medium",
+      "prompt": "Cloned (copy-and-paste) documentation is a compliance risk mainly because it:",
+      "options": {
+        "a": "Always makes notes too short to support coding",
+        "b": "Forces coders to assign unspecified diagnosis codes",
+        "c": "Is prohibited in every EHR by federal software rules",
+        "d": "May not reflect the actual encounter and can support billing for services not performed"
+      },
+      "correctOptionId": "d",
+      "explanation": "Cloned notes can carry forward findings that were not present or services that were not performed. Medical necessity and service levels must be supported by documentation specific to each encounter.",
+      "distractorExplanations": {
+        "a": "Cloned notes are usually long, not short; the issue is accuracy.",
+        "c": "Copy-paste is not banned outright; it must be used responsibly and audited.",
+        "b": "Cloning does not force unspecified codes; it undermines the integrity of the record."
+      }
+    },
+    "aapc-ccs-readiness-check-guidelines-005": {
+      "topicId": "compliance",
+      "difficulty": "medium",
+      "prompt": "Why do hospitals screen employees and contractors against the OIG List of Excluded Individuals/Entities (LEIE)?",
+      "options": {
+        "a": "To verify that staff completed annual HIPAA training",
+        "b": "To confirm that providers hold a valid NPI number",
+        "c": "To avoid billing federal programs for items or services from excluded parties",
+        "d": "To check that coders passed a credentialing exam"
+      },
+      "correctOptionId": "c",
+      "explanation": "Federal health programs do not pay for items or services furnished, ordered, or directed by excluded individuals. Billing for them can lead to civil monetary penalties, so organizations screen at hire and periodically.",
+      "distractorExplanations": {
+        "a": "Training records are tracked separately from exclusion screening.",
+        "d": "Exam credentialing is verified with AHIMA or AAPC, not the LEIE.",
+        "b": "NPI verification uses NPPES, not the OIG exclusion list."
+      }
+    },
+    "aapc-ccs-readiness-check-icd-001": {
+      "topicId": "icd",
+      "difficulty": "medium",
+      "prompt": "In ICD-10-CM, an Excludes1 note means:",
+      "options": {
+        "a": "The two conditions are never coded together (mutually exclusive)",
+        "b": "The excluded condition may be coded additionally if present",
+        "c": "The excluded code must always be sequenced first",
+        "d": "The code requires an additional 7th character"
+      },
+      "correctOptionId": "a",
+      "explanation": "Excludes1 is a pure exclusion: the two codes cannot be reported together because the conditions cannot occur together, such as congenital and acquired forms of the same condition. Guidelines allow limited exceptions when the conditions are unrelated.",
+      "distractorExplanations": {
+        "c": "Sequencing instructions come from \"code first\" and \"use additional code\" notes.",
+        "d": "7th-character requirements are separate tabular instructions.",
+        "b": "\"May also be coded if present\" describes Excludes2."
+      }
+    },
+    "aapc-ccs-readiness-check-icd-002": {
+      "topicId": "icd",
+      "difficulty": "medium",
+      "prompt": "An Excludes2 note in ICD-10-CM indicates that:",
+      "options": {
+        "a": "The two conditions can never appear on the same claim",
+        "b": "The excluded condition is always a manifestation code",
+        "c": "The condition is not part of this code, but both may be coded if both are present",
+        "d": "The code is valid only for inpatient encounters"
+      },
+      "correctOptionId": "c",
+      "explanation": "Excludes2 means \"not included here.\" The excluded condition is not part of the code, but a patient can have both, so both codes may be reported when documented.",
+      "distractorExplanations": {
+        "a": "Never coding together describes Excludes1.",
+        "d": "Excludes notes apply in every setting.",
+        "b": "Excludes2 is not related to etiology/manifestation convention."
+      }
+    },
+    "aapc-ccs-readiness-check-icd-003": {
+      "topicId": "icd",
+      "difficulty": "medium",
+      "prompt": "For an ICD-10-CM injury code, the 7th character \"A\" is used when the patient is:",
+      "options": {
+        "a": "Seen by that provider for the first time only",
+        "b": "Seen only for routine healing and follow-up",
+        "c": "Treated for a late effect (sequela) of the injury",
+        "d": "Receiving active treatment for the injury"
+      },
+      "correctOptionId": "d",
+      "explanation": "A (initial encounter) means active treatment, such as surgery, an ED visit, or evaluation by a new physician. D is used for routine healing or recovery care, and S for sequelae.",
+      "distractorExplanations": {
+        "b": "Routine healing or follow-up care uses D (subsequent encounter).",
+        "c": "Late effects use S (sequela).",
+        "a": "\"A\" depends on active treatment, not on whether it is the provider's first visit."
+      }
+    },
+    "aapc-ccs-readiness-check-icd-004": {
+      "topicId": "icd",
+      "difficulty": "easy",
+      "prompt": "When an ICD-10-CM code needs a 7th character but has fewer than six characters, you should:",
+      "options": {
+        "a": "Add the placeholder \"X\" to fill the empty positions",
+        "b": "Report the code without the 7th character",
+        "c": "Add zeros to the end of the code",
+        "d": "Choose an unspecified code instead"
+      },
+      "correctOptionId": "a",
+      "explanation": "The placeholder X fills empty positions so the 7th character lands in the 7th position, for example T50.905A or S93.401A. Without it the code is invalid.",
+      "distractorExplanations": {
+        "c": "Zeros are not placeholders in ICD-10-CM.",
+        "d": "Specificity rules still require a valid, complete code.",
+        "b": "Omitting a required 7th character makes the code invalid."
+      }
+    },
+    "aapc-ccs-readiness-check-icd-005": {
+      "topicId": "icd",
+      "difficulty": "hard",
+      "prompt": "A manifestation code whose title includes \"in diseases classified elsewhere\" must be:",
+      "options": {
+        "a": "Sequenced first as the principal diagnosis",
+        "b": "Sequenced after the code for the underlying etiology",
+        "c": "Reported alone, without the underlying condition",
+        "d": "Reported only on outpatient claims"
+      },
+      "correctOptionId": "b",
+      "explanation": "Etiology/manifestation convention: code the underlying condition first, then the manifestation. Codes titled \"in diseases classified elsewhere\" can never be principal or first-listed.",
+      "distractorExplanations": {
+        "a": "These manifestation codes may never be principal or first-listed.",
+        "d": "The convention applies in all settings.",
+        "c": "The etiology code must always be reported with the manifestation."
+      }
+    },
+    "aapc-ccs-readiness-check-icd-006": {
+      "topicId": "icd",
+      "difficulty": "medium",
+      "prompt": "A patient has type 2 diabetes with diabetic chronic kidney disease, stage 3a. Correct ICD-10-CM coding is:",
+      "options": {
+        "a": "E11.9 plus N18.31",
+        "b": "N18.31 only, since CKD is the focus",
+        "c": "E11.22 plus N18.31",
+        "d": "E11.65 plus N18.9"
+      },
+      "correctOptionId": "c",
+      "explanation": "E11.22 is the combination code for type 2 diabetes with diabetic CKD; its \"use additional code\" note requires the CKD stage code (N18.31 for stage 3a).",
+      "distractorExplanations": {
+        "a": "E11.9 means diabetes without complications, which contradicts the documented CKD.",
+        "d": "E11.65 means diabetes with hyperglycemia, and N18.9 ignores the documented stage.",
+        "b": "The diabetes combination code is required to show the causal link."
+      }
+    },
+    "aapc-ccs-readiness-check-icd-007": {
+      "topicId": "icd",
+      "difficulty": "hard",
+      "prompt": "A patient has hypertension and stage 4 chronic kidney disease; the provider does not link them. Per ICD-10-CM guidelines:",
+      "options": {
+        "a": "Code I10 and N18.4 separately, since no link is documented",
+        "b": "Query the provider before assigning any code",
+        "c": "Assign I12.9 only, without a CKD stage code",
+        "d": "Assign I12.9 plus N18.4, because the link is presumed"
+      },
+      "correctOptionId": "d",
+      "explanation": "ICD-10-CM presumes a causal relationship between hypertension and CKD. Use I12.- (I12.9 for CKD stages 1–4) plus N18.- for the stage, unless the provider documents they are unrelated.",
+      "distractorExplanations": {
+        "a": "The \"with\" convention presumes the link, so separate I10 is incorrect.",
+        "c": "The I12 category instructs you to add the N18 stage code.",
+        "b": "A query is not needed because the classification presumes the link."
+      }
+    },
+    "aapc-ccs-readiness-check-icd-008": {
+      "topicId": "icd",
+      "difficulty": "hard",
+      "prompt": "A patient is admitted with sepsis due to a urinary tract infection; both are present on admission and meet the definition of principal diagnosis. Sequencing is:",
+      "options": {
+        "a": "Systemic infection code (e.g., A41.9) first, then N39.0",
+        "b": "UTI (N39.0) first, then the sepsis code",
+        "c": "R65.20 severe sepsis first, then the organism",
+        "d": "Either may be principal at the coder's discretion"
+      },
+      "correctOptionId": "a",
+      "explanation": "When sepsis and a localized infection are both present on admission, the systemic infection code is sequenced first, followed by the localized infection. R65.2- is never principal; it is added for severe sepsis.",
+      "distractorExplanations": {
+        "c": "R65.2- codes cannot be sequenced first.",
+        "d": "Guidelines give explicit sequencing for sepsis with a localized infection.",
+        "b": "The localized infection is secondary to the systemic infection code."
+      }
+    },
+    "aapc-ccs-readiness-check-icd-009": {
+      "topicId": "icd",
+      "difficulty": "easy",
+      "prompt": "In ICD-10-CM, the abbreviation NOS means:",
+      "options": {
+        "a": "Other specified; no separate code exists for the detail",
+        "b": "Not otherwise specified; the documentation lacks detail",
+        "c": "Not on schedule; the code is new this fiscal year",
+        "d": "Non-operative status; no procedure was performed"
+      },
+      "correctOptionId": "b",
+      "explanation": "NOS = not otherwise specified, meaning unspecified because the record lacks detail. NEC = not elsewhere classifiable, meaning the detail is documented but no specific code exists.",
+      "distractorExplanations": {
+        "a": "That definition describes NEC (other specified).",
+        "c": "NOS has nothing to do with code update schedules.",
+        "d": "NOS does not describe procedure status."
+      }
+    },
+    "aapc-ccs-readiness-check-icd-010": {
+      "topicId": "icd",
+      "difficulty": "medium",
+      "prompt": "Under UHDDS, the inpatient principal diagnosis is defined as the condition:",
+      "options": {
+        "a": "That was most expensive to treat during the stay",
+        "b": "Listed first on the emergency department record",
+        "c": "Established after study to be chiefly responsible for the admission",
+        "d": "With the highest relative weight among all diagnoses"
+      },
+      "correctOptionId": "c",
+      "explanation": "UHDDS defines principal diagnosis as \"that condition established after study to be chiefly responsible for occasioning the admission of the patient to the hospital for care.\"",
+      "distractorExplanations": {
+        "a": "Cost does not determine the principal diagnosis.",
+        "d": "Choosing by DRG weight rather than the definition is noncompliant.",
+        "b": "The ED's first-listed diagnosis may change after study."
+      }
+    },
+    "aapc-ccs-readiness-check-icd-011": {
+      "topicId": "icd",
+      "difficulty": "easy",
+      "prompt": "ICD-10-CM Z codes are used to report:",
+      "options": {
+        "a": "External causes of injury such as falls",
+        "b": "Procedures performed during an inpatient stay",
+        "c": "Only neoplasms of uncertain behavior",
+        "d": "Factors influencing health status and contact with health services"
+      },
+      "correctOptionId": "d",
+      "explanation": "Z codes (Z00–Z99) report reasons for encounters and factors such as screening, personal or family history, status (for example a pacemaker), aftercare, and follow-up.",
+      "distractorExplanations": {
+        "a": "External causes use V00–Y99.",
+        "c": "Neoplasms are in Chapter 2 (C00–D49).",
+        "b": "Inpatient procedures are coded in ICD-10-PCS."
+      }
+    },
+    "aapc-ccs-readiness-check-icd-012": {
+      "topicId": "icd",
+      "difficulty": "medium",
+      "prompt": "A patient has confirmed acute appendicitis with abdominal pain and nausea. How are the pain and nausea coded?",
+      "options": {
+        "a": "Not coded separately; they are routinely part of appendicitis",
+        "b": "Coded first, followed by the appendicitis code",
+        "c": "Coded only if they appear on the discharge summary",
+        "d": "Coded as secondary diagnoses to support severity"
+      },
+      "correctOptionId": "a",
+      "explanation": "Signs and symptoms routinely associated with a confirmed disease are not coded separately. Symptoms are coded only if they are not routinely part of the condition or no definitive diagnosis is established.",
+      "distractorExplanations": {
+        "c": "Where they are documented does not matter; integral symptoms are not coded.",
+        "d": "Coding integral symptoms adds redundant codes and is not allowed.",
+        "b": "Integral symptoms are never sequenced ahead of the confirmed diagnosis."
+      }
+    },
+    "aapc-ccs-readiness-check-icd-013": {
+      "topicId": "icd",
+      "difficulty": "medium",
+      "prompt": "A patient has the same condition in both the left and right sides, and ICD-10-CM provides a bilateral code. You should assign:",
+      "options": {
+        "a": "Separate right-side and left-side codes",
+        "b": "The bilateral code",
+        "c": "The unspecified-side code",
+        "d": "The right-side code only"
+      },
+      "correctOptionId": "b",
+      "explanation": "When a bilateral code exists and the condition affects both sides, assign the bilateral code. Separate right and left codes are used only when no bilateral option exists.",
+      "distractorExplanations": {
+        "a": "Separate codes are used only when no bilateral code is available.",
+        "c": "Unspecified laterality is wrong when both sides are documented.",
+        "d": "Coding one side omits documented information."
+      }
+    },
+    "aapc-ccs-readiness-check-icd-014": {
+      "topicId": "icd",
+      "difficulty": "medium",
+      "prompt": "A pregnant patient is treated for a condition that complicates the pregnancy. How are Chapter 15 (O00–O9A) codes sequenced?",
+      "options": {
+        "a": "After all other chapter codes",
+        "b": "Only when the patient is in labor",
+        "c": "They take sequencing priority over codes from other chapters",
+        "d": "Only on the newborn's record"
+      },
+      "correctOptionId": "c",
+      "explanation": "Chapter 15 codes have sequencing priority over other chapters. Codes from other chapters may be added for specificity. If the provider documents that the pregnancy is incidental, Z33.1 is used instead.",
+      "distractorExplanations": {
+        "a": "Obstetric codes take priority rather than coming last.",
+        "d": "Obstetric codes go on the mother's record, never the newborn's.",
+        "b": "Chapter 15 applies throughout the pregnancy and puerperium, not only during labor."
+      }
+    },
+    "aapc-ccs-readiness-check-guidelines-006": {
+      "topicId": "pcs",
+      "difficulty": "easy",
+      "prompt": "How many characters does every valid ICD-10-PCS code contain?",
+      "options": {
+        "a": "Five",
+        "b": "Six",
+        "c": "Three to seven",
+        "d": "Seven"
+      },
+      "correctOptionId": "d",
+      "explanation": "Every ICD-10-PCS code has exactly 7 alphanumeric characters. Each position has a defined meaning that depends on the section.",
+      "distractorExplanations": {
+        "a": "Five-character codes are CPT, not ICD-10-PCS.",
+        "b": "Six characters is incomplete; PCS always uses seven.",
+        "c": "Variable length (3–7) describes ICD-10-CM diagnosis codes."
+      }
+    },
+    "aapc-ccs-readiness-check-guidelines-007": {
+      "topicId": "pcs",
+      "difficulty": "easy",
+      "prompt": "In ICD-10-PCS, codes in the Medical and Surgical section begin with which first character?",
+      "options": {
+        "a": "0",
+        "b": "1",
+        "c": "B",
+        "d": "X"
+      },
+      "correctOptionId": "a",
+      "explanation": "The first character identifies the section; 0 = Medical and Surgical. For example, 1 = Obstetrics, B = Imaging, and X = New Technology.",
+      "distractorExplanations": {
+        "b": "1 is the Obstetrics section.",
+        "c": "B is the Imaging section.",
+        "d": "X is the New Technology section."
+      }
+    },
+    "aapc-ccs-readiness-check-guidelines-008": {
+      "topicId": "pcs",
+      "difficulty": "medium",
+      "prompt": "In a Medical and Surgical ICD-10-PCS code, the third character represents the:",
+      "options": {
+        "a": "Body part",
+        "b": "Approach",
+        "c": "Root operation",
+        "d": "Device"
+      },
+      "correctOptionId": "c",
+      "explanation": "Medical and Surgical character order: 1 section, 2 body system, 3 root operation, 4 body part, 5 approach, 6 device, 7 qualifier.",
+      "distractorExplanations": {
+        "a": "Body part is the 4th character.",
+        "b": "Approach is the 5th character.",
+        "d": "Device is the 6th character."
+      }
+    },
+    "aapc-ccs-readiness-check-guidelines-009": {
+      "topicId": "pcs",
+      "difficulty": "medium",
+      "prompt": "Which ICD-10-PCS root operation means cutting out or off, without replacement, only a portion of a body part?",
+      "options": {
+        "a": "Resection",
+        "b": "Detachment",
+        "c": "Extraction",
+        "d": "Excision"
+      },
+      "correctOptionId": "d",
+      "explanation": "Excision removes a portion of a body part. Resection removes all of a body part, and Extraction pulls out or off all or part of a body part by force.",
+      "distractorExplanations": {
+        "a": "Resection is removal of the entire body part.",
+        "c": "Extraction uses force (pulling or stripping), such as a tooth extraction.",
+        "b": "Detachment is cutting off all or part of an upper or lower extremity."
+      }
+    },
+    "aapc-ccs-readiness-check-guidelines-010": {
+      "topicId": "pcs",
+      "difficulty": "medium",
+      "prompt": "A laparoscopic cholecystectomy removes the entire gallbladder. The ICD-10-PCS root operation and approach are:",
+      "options": {
+        "a": "Resection, percutaneous endoscopic approach",
+        "b": "Excision, open approach",
+        "c": "Resection, open approach",
+        "d": "Extirpation, percutaneous approach"
+      },
+      "correctOptionId": "a",
+      "explanation": "Removing the whole gallbladder is Resection. Laparoscopic procedures use the percutaneous endoscopic approach (value 4). The code is 0FT44ZZ.",
+      "distractorExplanations": {
+        "c": "The root operation is right, but laparoscopy is percutaneous endoscopic, not open.",
+        "d": "Extirpation removes solid matter such as stones, not the organ.",
+        "b": "Excision is for a portion; laparoscopic is not open."
+      }
+    },
+    "aapc-ccs-readiness-check-guidelines-011": {
+      "topicId": "pcs",
+      "difficulty": "hard",
+      "prompt": "A calculus is removed intact from the renal pelvis. The correct ICD-10-PCS root operation is:",
+      "options": {
+        "a": "Drainage",
+        "b": "Extraction",
+        "c": "Extirpation",
+        "d": "Fragmentation"
+      },
+      "correctOptionId": "c",
+      "explanation": "Extirpation is taking or cutting out solid matter from a body part, such as stones, clots, or foreign bodies. Here the body part itself (renal pelvis) is not removed.",
+      "distractorExplanations": {
+        "a": "Drainage removes fluids or gases.",
+        "b": "Extraction removes all or part of a body part by force, not solid matter from within it.",
+        "d": "Fragmentation breaks solid matter into pieces without removing it."
+      }
+    },
+    "aapc-ccs-readiness-check-guidelines-012": {
+      "topicId": "pcs",
+      "difficulty": "medium",
+      "prompt": "Extracorporeal shock-wave lithotripsy (ESWL) of a ureteral stone, with fragments left to pass naturally, is coded to which root operation?",
+      "options": {
+        "a": "Extirpation",
+        "b": "Destruction",
+        "c": "Drainage",
+        "d": "Fragmentation"
+      },
+      "correctOptionId": "d",
+      "explanation": "Fragmentation breaks solid matter into pieces; the pieces may be passed or left in place. ESWL uses the External approach.",
+      "distractorExplanations": {
+        "a": "Extirpation requires the solid matter to be taken out.",
+        "c": "Drainage applies to fluids or gases.",
+        "b": "Destruction eradicates a body part itself, not solid matter within it."
+      }
+    },
+    "aapc-ccs-readiness-check-guidelines-013": {
+      "topicId": "pcs",
+      "difficulty": "medium",
+      "prompt": "Coronary artery bypass grafting (CABG) is coded in ICD-10-PCS to which root operation?",
+      "options": {
+        "a": "Bypass",
+        "b": "Replacement",
+        "c": "Dilation",
+        "d": "Supplement"
+      },
+      "correctOptionId": "a",
+      "explanation": "Bypass alters the route of passage of the contents of a tubular body part. CABG reroutes blood around the blocked coronary segment.",
+      "distractorExplanations": {
+        "b": "Replacement puts a device in place of all or part of a body part.",
+        "d": "Supplement reinforces or augments a body part with a device.",
+        "c": "Dilation expands a tubular body part's orifice or lumen, as in angioplasty."
+      }
+    },
+    "aapc-ccs-readiness-check-guidelines-014": {
+      "topicId": "pcs",
+      "difficulty": "medium",
+      "prompt": "A total hip arthroplasty with a prosthetic joint is coded in ICD-10-PCS to which root operation?",
+      "options": {
+        "a": "Supplement",
+        "b": "Reposition",
+        "c": "Replacement",
+        "d": "Insertion"
+      },
+      "correctOptionId": "c",
+      "explanation": "Replacement puts in a biological or synthetic material that takes the place of all or part of a body part. A total hip arthroplasty replaces the joint with a prosthesis.",
+      "distractorExplanations": {
+        "a": "Supplement reinforces a body part that remains in place.",
+        "b": "Reposition moves a body part to its normal location.",
+        "d": "Insertion places a nonbiological device that does not replace a body part."
+      }
+    },
+    "aapc-ccs-readiness-check-guidelines-015": {
+      "topicId": "pcs",
+      "difficulty": "easy",
+      "prompt": "When no device remains in the body after an ICD-10-PCS procedure, the 6th character (device) value is:",
+      "options": {
+        "a": "0",
+        "b": "X",
+        "c": "Y",
+        "d": "Z"
+      },
+      "correctOptionId": "d",
+      "explanation": "Z means No Device in the 6th character (and No Qualifier in the 7th). Devices are coded only when they remain after the procedure.",
+      "distractorExplanations": {
+        "a": "0 is a specific value in many tables, not \"no device.\"",
+        "b": "X as a 7th-character qualifier means Diagnostic.",
+        "c": "Y is used for \"other device\" in some tables, not for no device."
+      }
+    },
+    "aapc-ccs-readiness-check-pcs-002": {
+      "topicId": "pcs",
+      "difficulty": "medium",
+      "prompt": "In ICD-10-PCS, a biopsy performed as an excision is identified by which 7th-character qualifier?",
+      "options": {
+        "a": "Z (No Qualifier)",
+        "b": "3 (Laser Interstitial)",
+        "c": "0 (Allogeneic)",
+        "d": "X (Diagnostic)"
+      },
+      "correctOptionId": "d",
+      "explanation": "Diagnostic procedures such as biopsies use qualifier X in the 7th character, for example Excision with qualifier X for a needle or excisional biopsy.",
+      "distractorExplanations": {
+        "a": "Z means no qualifier, which is used for therapeutic excisions.",
+        "c": "Allogeneic describes donor tissue in transplant tables.",
+        "b": "Laser interstitial is a technique qualifier in specific tables."
+      }
+    },
+    "aapc-ccs-readiness-check-pcs-011": {
+      "topicId": "pcs",
+      "difficulty": "hard",
+      "prompt": "The same root operation is repeated at different body sites that have distinct values in the body-part character. Per ICD-10-PCS guidelines, you should:",
+      "options": {
+        "a": "Report a separate code for each distinct body-part value",
+        "b": "Report one code for the most significant site only",
+        "c": "Report a single \"multiple sites\" code",
+        "d": "Append a modifier to show multiple sites"
+      },
+      "correctOptionId": "a",
+      "explanation": "Guideline B3.2a: code multiple procedures separately when the same root operation is performed on different body parts defined by distinct values of the body-part character.",
+      "distractorExplanations": {
+        "c": "Distinct body-part values require separate codes.",
+        "d": "ICD-10-PCS does not use modifiers.",
+        "b": "Coding one site under-reports distinct procedures."
+      }
+    },
+    "aapc-ccs-readiness-check-pcs-012": {
+      "topicId": "pcs",
+      "difficulty": "hard",
+      "prompt": "A laparoscopic procedure is converted to open and completed through the open incision. Per ICD-10-PCS guidelines, code:",
+      "options": {
+        "a": "Only the laparoscopic (percutaneous endoscopic) procedure",
+        "b": "The open procedure plus a percutaneous endoscopic Inspection",
+        "c": "The open procedure only",
+        "d": "Both the full laparoscopic and full open procedures"
+      },
+      "correctOptionId": "b",
+      "explanation": "Guideline B3.2d: when the intended root operation is attempted by one approach and converted to another, code the completed procedure with its approach plus an Inspection for the abandoned approach.",
+      "distractorExplanations": {
+        "a": "The procedure was completed open, so coding only the laparoscopic approach is wrong.",
+        "c": "The laparoscopic attempt is captured as an Inspection, which is required.",
+        "d": "The procedure was performed once; the laparoscopic part is an Inspection only."
+      }
+    },
+    "aapc-ccs-readiness-check-pcs-013": {
+      "topicId": "pcs",
+      "difficulty": "medium",
+      "prompt": "Amputation of a finger through the proximal phalanx is coded to which ICD-10-PCS root operation?",
+      "options": {
+        "a": "Resection",
+        "b": "Excision",
+        "c": "Detachment",
+        "d": "Destruction"
+      },
+      "correctOptionId": "c",
+      "explanation": "Detachment is cutting off all or a portion of an upper or lower extremity, including fingers and toes. The qualifier specifies the level of amputation.",
+      "distractorExplanations": {
+        "a": "Resection is not used for extremity amputations.",
+        "b": "Excision removes a portion of a body part but is not used for amputations.",
+        "d": "Destruction eradicates tissue by energy, force, or agent; it does not cut off an extremity."
+      }
+    },
+    "aapc-ccs-readiness-check-pcs-014": {
+      "topicId": "pcs",
+      "difficulty": "medium",
+      "prompt": "In ICD-10-PCS, which approach value describes a procedure performed through a laparoscope inserted via a small skin puncture?",
+      "options": {
+        "a": "Open",
+        "b": "Percutaneous",
+        "c": "Via Natural or Artificial Opening",
+        "d": "Percutaneous Endoscopic"
+      },
+      "correctOptionId": "d",
+      "explanation": "Percutaneous Endoscopic (value 4) means entry through the skin or mucous membrane by puncture or minor incision, with instrumentation that allows visualization, as in laparoscopy.",
+      "distractorExplanations": {
+        "a": "Open means cutting through tissue to expose the site.",
+        "b": "Percutaneous without an endoscope has no visualization instrument.",
+        "c": "That approach enters through a natural orifice, such as the mouth or urethra."
+      }
+    }
+  }
+}
