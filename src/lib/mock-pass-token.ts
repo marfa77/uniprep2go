@@ -13,6 +13,11 @@ function secret(): string | null {
   return null;
 }
 
+/** Redeem can only issue a session when this is true (sensitive Vercel vars are not readable back). */
+export function isMockPassUnlockReady(): boolean {
+  return secret() !== null;
+}
+
 function timingSafeEqualHex(a: string, b: string): boolean {
   if (a.length !== b.length) return false;
   try {
